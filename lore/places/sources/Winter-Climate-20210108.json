@@ -7,11 +7,11 @@
   "selection": "One representative KMA station per region; owner chose representative-station daily minimum, not province minimum or mean. Metropolitan stations match city; provinces use Suwon, Chuncheon, Cheongju, Hongseong, Jeonju, Mokpo, Andong, Changwon, Jeju.",
   "metric": "daily minimum air temperature in Celsius; not apparent temperature or station-platform measurement",
   "application": {
-    "surface": "Use representative minimum for the matching province in the fictional perpetual winter.",
+    "surface": "Global perpetual winter remains the world premise. Use the historical daily minimum of −18.6°C at Seoul station 108 on 2021-01-08 as a design reference for Seoul surface and exposed-platform insulation, not a uniform global temperature or an automatic current temperature for every station, floor or space. Follow actual indoor heating, temperature and outside-air exposure; retain the existing intermediate/deep underground baselines and clothing rules. All 17 regional records remain private historical comparative research, not current outside-city weather or supply geography.",
     "intermediate_underground_c": [8, 18],
     "deep_underground_c": [18, 22],
     "underground_source": "fictional baseline, not observed station temperatures; do not add the regional surface offset one-for-one",
-    "resolution": "province only; no eup/myeon/dong assignment"
+    "resolution": "Global perpetual winter; current playable actors, events and geography remain inside Seoul. Historical observations do not automatically assign current temperatures to provinces, districts, dong, stations or floors. Distinguish exposed surface, intermediate and deep underground spaces and actual heating conditions."
   },
   "records": [
     {

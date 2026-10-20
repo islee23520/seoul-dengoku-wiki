@@ -1,10 +1,10 @@
 {
   "id": "person-0165",
   "name": "어태산",
-  "title": "열여섯 깃발 인준 보관인",
-  "position": "각국 인준 보관인 · 양구군 영주",
+  "title": "각국 인준 보관인",
+  "position": "각국 인준 보관인",
   "characterId": "K164",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "각국 인준일·사후 추인 증인 관리",
   "gender": "여성",
@@ -444,47 +444,23 @@
             "name": "어태산",
             "url": "/people/person-0165",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "각국 인준일·사후 추인 증인 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/215/items/0/ko",
-                  "quote": "생업: 각국 인준일·사후 추인 증인 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "깃발별 인준일을 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -492,73 +468,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/215/items/0/ko",
-                    "quote": "생업: 각국 인준일·사후 추인 증인 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "깃발별 인준일을 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "종로3가",
-              "type": "초소 영지",
-              "station": "종로3가",
-              "state": "S06",
-              "settlement": {
-                "name": "종로3가 정착지",
-                "type": "정착지",
-                "description": "종로3가 일대 고정 거점"
-              },
-              "note": "S06 종로3가 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -582,47 +513,23 @@
             "name": "어태산",
             "url": "/people/person-0165",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "각국 인준일·사후 추인 증인 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/215/items/0/ko",
-                  "quote": "생업: 각국 인준일·사후 추인 증인 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "깃발별 인준일을 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -630,141 +537,52 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/215/items/0/ko",
-                    "quote": "생업: 각국 인준일·사후 추인 증인 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "깃발별 인준일을 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "종로3가",
-              "type": "초소 영지",
-              "station": "종로3가",
-              "state": "S06",
-              "settlement": {
-                "name": "종로3가 정착지",
-                "type": "정착지",
-                "description": "종로3가 일대 고정 거점"
-              },
-              "note": "S06 종로3가 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-51800-S06",
-      "name": {
-        "ko": "양구군 공작령 직영지"
-      },
-      "holderPersonId": "K164",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "5180025000",
-          "name": "강원특별자치도 양구군 양구읍"
-        },
-        {
-          "id": "5180031500",
-          "name": "강원특별자치도 양구군 국토정중앙면"
-        },
-        {
-          "id": "5180032000",
-          "name": "강원특별자치도 양구군 동면"
-        },
-        {
-          "id": "5180033000",
-          "name": "강원특별자치도 양구군 방산면"
-        },
-        {
-          "id": "5180034000",
-          "name": "강원특별자치도 양구군 해안면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-51800-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-51800-S06",
-      "name": "양구군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K164",
-      "basis": "개막 행정 규모 그룹 51800(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "5180025000",
-        "5180031500",
-        "5180032000",
-        "5180033000",
-        "5180034000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-51800-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -778,18 +596,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "종로3가",
-    "type": "초소 영지",
-    "station": "종로3가",
-    "state": "S06",
-    "settlement": {
-      "name": "종로3가 정착지",
-      "type": "정착지",
-      "description": "종로3가 일대 고정 거점"
-    },
-    "note": "S06 종로3가 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -823,22 +629,22 @@
   },
   "fields": {
     "생업": "각국 인준일·사후 추인 증인 관리",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "각국 인준 보관인",
+    "소속": "서울특별시 지방공무원 조직",
+    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
+    "담당 업무": "각국 인준 보관인",
     "가치관": "권위 20 | 개방 −15 | 무력 −40 | 물질 −25 | 공동 0 | 원칙 65 | 공개 −20 | 자격 10 | 분산 −30 | 변혁 −35",
     "욕망": "갈망 25 | 독점 −30 | 위험 −40 | 과시 20 | 지속 0 | 지향 무성향 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 각국 인준 보관인 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "관직": "품계 주사. 직함은 각국 인준 보관인. 깃발별 인준일을 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다.",
+    "생애": "서울역 등기소에서 자랐다. 각국 인준 보관인 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 어태산의 인준일과 사후 추인 증인을 관리하는 일은 회현동의 업무와 이어진다.",
+    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 각국 인준 보관인.",
     "일화": "정유라 쪽에서 늦게 도착한 공동교섭 인준을 소급해 달라는 청구가 들어온다. 어태산은 윤서린이 맡긴 인준 함을 잠그고, 벽에 적힌 깃발별 인준일 옆에 당시 증인 두 명의 이름을 불러 다시 설 날을 잡는다.",
     "관계": "윤서린이 맡긴 건국 인준 함을 지키고, 조하린의 철제 함 습도와 보관 주기를 맞추며, 정유라의 공동교섭 인준은 날짜를 속이지 않는 한에서만 꺼낸다.",
     "야망": "각국의 인준 원본을 서울역 함에만 유효하게 남겨 정부의 인준이 사후 날인으로 팔리지 않게 한다.",
-    "공포": "인준 함이 강국의 보호 문장으로 덧칠되어 대한민국정부 헌장이 하청 문서가 되는 것.",
+    "공포": "인준 함이 강국의 보호 문장으로 덧칠되어 서울특별시 지방공무원 조직 헌장이 하청 문서가 되는 것.",
     "개입": "접힌 목록을 공개해 빚을 드러내거나, 함이 덧칠되기 전에 원본을 호송할 수 있다."
   },
-  "biography": "헌장 사본의 접힌 자국까지 기억하고, 늦게 온 인준을 소급하자고 하면 함을 잠근다. 예의는 지키되 날짜를 고치는 손은 용서하지 않는다.\n\n- 생업: 각국 인준일·사후 추인 증인 관리\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 각국 인준 보관인\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 각국 인준 보관인 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 주사. 직함은 각국 인준 보관인. 깃발별 인준일을 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다.\n\n**일화.** 정유라 쪽에서 늦게 도착한 공동교섭 인준을 소급해 달라는 청구가 들어온다. 어태산은 윤서린이 맡긴 인준 함을 잠그고, 벽에 적힌 깃발별 인준일 옆에 당시 증인 두 명의 이름을 불러 다시 설 날을 잡는다.\n\n**관계.** 윤서린이 맡긴 건국 인준 함을 지키고, 조하린의 철제 함 습도와 보관 주기를 맞추며, 정유라의 공동교섭 인준은 날짜를 속이지 않는 한에서만 꺼낸다.\n\n**야망.** 각국의 인준 원본을 서울역 함에만 유효하게 남겨 정부의 인준이 사후 날인으로 팔리지 않게 한다.\n\n**공포.** 인준 함이 강국의 보호 문장으로 덧칠되어 대한민국정부 헌장이 하청 문서가 되는 것.\n\n**개입.** 접힌 목록을 공개해 빚을 드러내거나, 함이 덧칠되기 전에 원본을 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −15 | 무력 −40 | 물질 −25 | 공동 0 | 원칙 65 | 공개 −20 | 자격 10 | 분산 −30 | 변혁 −35\n- 욕망: 갈망 25 | 독점 −30 | 위험 −40 | 과시 20 | 지속 0 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "헌장 사본의 접힌 자국까지 기억하고, 늦게 온 인준을 소급하자고 하면 함을 잠근다. 예의는 지키되 날짜를 고치는 손은 용서하지 않는다.\n\n- 생업: 각국 인준일·사후 추인 증인 관리\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 각국 인준 보관인\n**생애.** 서울역 등기소에서 자랐다. 각국 인준 보관인 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 어태산의 인준일과 사후 추인 증인을 관리하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 각국 인준 보관인.\n\n**일화.** 정유라 쪽에서 늦게 도착한 공동교섭 인준을 소급해 달라는 청구가 들어온다. 어태산은 윤서린이 맡긴 인준 함을 잠그고, 벽에 적힌 깃발별 인준일 옆에 당시 증인 두 명의 이름을 불러 다시 설 날을 잡는다.\n\n**관계.** 윤서린이 맡긴 건국 인준 함을 지키고, 조하린의 철제 함 습도와 보관 주기를 맞추며, 정유라의 공동교섭 인준은 날짜를 속이지 않는 한에서만 꺼낸다.\n\n**야망.** 각국의 인준 원본을 서울역 함에만 유효하게 남겨 정부의 인준이 사후 날인으로 팔리지 않게 한다.\n\n**공포.** 인준 함이 강국의 보호 문장으로 덧칠되어 서울특별시 지방공무원 조직 헌장이 하청 문서가 되는 것.\n\n**개입.** 접힌 목록을 공개해 빚을 드러내거나, 함이 덧칠되기 전에 원본을 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −15 | 무력 −40 | 물질 −25 | 공동 0 | 원칙 65 | 공개 −20 | 자격 10 | 분산 −30 | 변혁 −35\n- 욕망: 갈망 25 | 독점 −30 | 위험 −40 | 과시 20 | 지속 0 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-06"
   ],

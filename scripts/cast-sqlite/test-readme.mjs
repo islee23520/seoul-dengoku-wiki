@@ -6,6 +6,7 @@ import { tmpdir } from 'node:os';
 import { dirname, join, relative, resolve } from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
 import test from 'node:test';
+import { REFERENCE_HOLDER_PATHS } from './source-closure.mjs';
 import { fileURLToPath } from 'node:url';
 
 const toolRoot = dirname(fileURLToPath(import.meta.url));
@@ -45,6 +46,57 @@ function queryPerson(dbPath, personId, route) {
   return byId;
 }
 
+// Independently count source references and resolve their anchors from source bytes.
+const expectedReferenceCounts = (sourceRoot) => {
+  const counts = { 'json-pointer-verified': 0, 'json-pointer-unresolved': 0, 'verified-path-only': 0 };
+  const documents = new Map();
+  const document = path => {
+    if (!documents.has(path)) documents.set(path, path.endsWith('.json') ? JSON.parse(readFileSync(join(sourceRoot, path), 'utf8')) : null);
+    return documents.get(path);
+  };
+  const add = (path, anchor) => {
+    let target = document(path);
+    if (!path.endsWith('.json') || !anchor?.startsWith('/')) { counts['verified-path-only']++; return; }
+    assert.ok(!/~(?:[^01]|$)/u.test(anchor), anchor);
+    for (const key of anchor.slice(1).split('/').map(key => key.replaceAll('~1', '/').replaceAll('~0', '~'))) {
+      target = target !== null && typeof target === 'object' && Object.hasOwn(target, key) ? target[key] : undefined;
+    }
+    counts[target === undefined ? 'json-pointer-unresolved' : 'json-pointer-verified']++;
+  };
+  const ref = value => {
+    if (typeof value !== 'string') { add(value.path, value.anchor); return; }
+    const hash = value.indexOf('#');
+    add(hash < 0 ? value : value.slice(0, hash), hash < 0 ? null : value.slice(hash + 1));
+  };
+  for (const path of REFERENCE_HOLDER_PATHS) {
+    const source = document(path);
+    const visit = value => {
+      if (value === null || typeof value !== 'object') return;
+      for (const [key, child] of Object.entries(value)) {
+        if (key === 'sourceRef') ref(child);
+        if (key === 'sourceRefs') child.forEach(ref);
+        visit(child);
+      }
+    };
+    visit(source);
+    if (path === 'lore/relations/opening-office-appointments.json') {
+      for (const appointment of source.appointments) for (const evidence of appointment.current.evidence) add(evidence.path, evidence.jsonPointer);
+    }
+    if (path === 'lore/relations/relations.json') {
+      add(source.courtContract.sourcePath, source.courtContract.sourceAnchor);
+      for (const basis of source.ownerLieges.sourceBasis) add(basis.path, basis.anchor);
+    }
+    if (path === 'lore/relations/personal-holdings.json') {
+      for (const holding of source.holdings) for (const key of ['stationRef', 'facilityRef', 'landmarkRef']) {
+        const reference = holding[key];
+        if (reference?.sourcePath) add(reference.sourcePath, null);
+        if (reference?.siteSourcePath) add(reference.siteSourcePath, reference.siteAnchor);
+      }
+    }
+  }
+  return counts;
+};
+
 test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 실제로 동작한다', (t) => {
   assert.ok(existsSync(join(sourceRoot, 'lore/name-pools/person-id-registry.json')), 'README test는 이 위키 checkout의 기본 원천을 사용합니다.');
   const outputRoot = mkdtempSync(join(tmpdir(), 'cast-readme-'));
@@ -58,6 +110,10 @@ test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 
   const receiptPath = join(outputRoot, 'verify-full.json');
 
   // README의 기본 build: --source-root 없이 이 저장소 root를 원천으로 계산한다.
+  const referenceCounts = expectedReferenceCounts(sourceRoot);
+  const unresolvedReferences = referenceCounts['json-pointer-unresolved'];
+  const holdings = JSON.parse(readFileSync(join(sourceRoot, 'lore/relations/personal-holdings.json'), 'utf8'));
+  const nonowningContract = JSON.parse(readFileSync(join(sourceRoot, 'scripts/approved-daejeon-nonowning-rights.json'), 'utf8')).contract;
   const build = cli('build', ['--output', dbPath]);
   assert.equal(build.artifact_integrity, 'ok');
   assert.equal(build.counts.person, 1022, '현재 registry 인물 1,022명을 모두 적재합니다.');
@@ -78,15 +134,15 @@ test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 
   assert.equal(verification.official_issue_count, build.official_issue_count);
   assert.equal(verification.importer_issue_count, build.importer_issue_count);
   assert.equal(verification.excluded_source_count, build.excluded_source_count);
-  assert.equal(build.source_reference_unresolved_count, 11);
-  assert.equal(verification.source_reference_unresolved_count, 11);
-  assert.equal(verification.reference_closure, 'verified-with-unresolved-anchors');
+  assert.equal(build.source_reference_unresolved_count, unresolvedReferences);
+  assert.equal(verification.source_reference_unresolved_count, unresolvedReferences);
+  assert.equal(verification.reference_closure, unresolvedReferences ? 'verified-with-unresolved-anchors' : 'verified');
 
   const db = new DatabaseSync(dbPath, { readOnly: true });
   let personRow;
   let relationRow;
-  let supersededHolder;
-  let unresolvedHolder;
+  let retainedHolder;
+  let nonowningHolder;
   let genderPolicySummary;
   let researchSourceCount;
   let indexedPersonId;
@@ -97,8 +153,8 @@ test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 
   try {
     personRow = db.prepare('SELECT person_id, public_route FROM person ORDER BY publication_ordinal LIMIT 1').get();
     relationRow = db.prepare('SELECT from_person_id, to_person_id FROM relation ORDER BY row_ordinal LIMIT 1').get();
-    supersededHolder = db.prepare("SELECT holder_person_id FROM context_holding WHERE current_validity='superseded_outside_seoul' LIMIT 1").get();
-    unresolvedHolder = db.prepare("SELECT holder_person_id FROM context_holding WHERE current_validity='unresolved' LIMIT 1").get();
+    retainedHolder = db.prepare("SELECT holder_person_id FROM context_holding WHERE current_validity='current_seoul_evidenced' LIMIT 1").get();
+    nonowningHolder = db.prepare("SELECT holder_person_id FROM context_holding WHERE current_validity='current_seoul_nonowning' LIMIT 1").get();
     genderPolicySummary = db.prepare("SELECT COUNT(*) AS rows, SUM(population) AS declared_population, SUM(observed_population) AS observed_population, SUM(alignment_status='differs-current') AS differences FROM identity_gender_policy").get();
     researchSourceCount = db.prepare('SELECT COUNT(*) AS rows FROM identity_clan_research_source').get().rows;
     indexedPersonId = db.prepare('SELECT person_id FROM index_person WHERE person_id IS NOT NULL ORDER BY person_id LIMIT 1').get()?.person_id;
@@ -114,7 +170,7 @@ test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 
   assert.equal(researchSourceCount, 106, '가문 조사 원천 106건을 전역 typed table로 조회합니다.');
   assert.ok(indexedPersonId && feudalPersonId && eventPersonId, '공개 초안 색인·역사 봉건·조직 사건의 실제 조회 반례를 선택합니다.');
   assert.deepEqual({ ...excludedSummary }, { manifest_rows: 17, raw_overlap: 0 }, '비공개 제외 원천은 hash-only manifest에만 있어야 합니다.');
-  assert.deepEqual({ ...referenceSummary }, { pointer_verified: 7793, pointer_unresolved: 11, path_only: 33955 }, '가리킨 위치가 없는 JSON Pointer를 검증 완료나 path-only로 낮추지 않습니다.');
+  assert.deepEqual({ ...referenceSummary }, { pointer_verified: referenceCounts['json-pointer-verified'], pointer_unresolved: unresolvedReferences, path_only: referenceCounts['verified-path-only'] }, '가리킨 위치가 없는 JSON Pointer를 검증 완료나 path-only로 낮추지 않습니다.');
   const person = queryPerson(dbPath, personRow.person_id, personRow.public_route);
   assert.equal(person.person.person_id, personRow.person_id);
   assert.ok(person.current && person.historical && person.unresolved, 'current/historical/unresolved envelope를 분리합니다.');
@@ -162,13 +218,21 @@ test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 
   const privateRaw = cli('query', ['--db', dbPath, 'source', '--path', 'lore/name-pools/values-cast.json', '--include-bytes'], 1);
   assert.equal(privateRaw.error.code, 'E_ARGUMENTS');
 
-  assert.ok(supersededHolder?.holder_person_id, '서울 밖 historical holdings 반례가 있어야 합니다.');
-  const superseded = cli('query', ['--db', dbPath, 'person', '--id', supersededHolder.holder_person_id]);
-  assert.equal(superseded.current.holdings.length, 0, '서울 밖 confirmed 원행을 default current holdings에 포함하면 안 됩니다.');
-  assert.ok(superseded.historical.superseded_holdings.length > 0);
-  assert.ok(unresolvedHolder?.holder_person_id, '근거 미확정 holdings 반례가 있어야 합니다.');
-  const unresolved = cli('query', ['--db', dbPath, 'person', '--id', unresolvedHolder.holder_person_id]);
-  assert.ok(unresolved.unresolved.holdings.length > 0);
+  assert.ok(retainedHolder?.holder_person_id);
+  const retained = cli('query', ['--db', dbPath, 'person', '--id', retainedHolder.holder_person_id]);
+  assert.deepEqual(retained.current.holdings.map(row => row.holding_id).sort(), holdings.holdings.filter(row => row.holderPersonId === retainedHolder.holder_person_id && !nonowningContract.rights.some(right => right.holdingId === row.id)).map(row => row.id).sort());
+  assert.ok(retained.current.holdings.length > 0);
+  assert.deepEqual(retained.historical.superseded_holdings, []);
+  assert.deepEqual(retained.unresolved.holdings, []);
+  assert.ok(nonowningHolder?.holder_person_id);
+  const nonowning = cli('query', ['--db', dbPath, 'person', '--id', nonowningHolder.holder_person_id]);
+  const expectedRights = nonowningContract.rights.filter(row => row.holderPersonId === nonowningHolder.holder_person_id);
+  assert.deepEqual(nonowning.current.nonowning_rights.map(row => row.holding_id).sort(), expectedRights.map(row => row.holdingId).sort());
+  assert.ok(expectedRights.length > 0);
+  assert.ok(nonowning.current.nonowning_rights.every(row => row.direct_ownership === 0 && row.geographic_scope.counties.length > 0 && row.powers.length > 0));
+  assert.ok(nonowning.current.holdings.every(row => !expectedRights.some(right => right.holdingId === row.holding_id)));
+  assert.deepEqual(nonowning.historical.superseded_holdings, []);
+  assert.deepEqual(nonowning.unresolved.holdings, []);
 
   const cleanExpected = verification.source_quality === 'clean' && verification.official_check_status === 'checked';
   const clean = cli('verify', ['--db', dbPath, '--source-root', sourceRoot, '--require-clean'], cleanExpected ? 0 : 1);
@@ -185,8 +249,8 @@ test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 
   assert.equal(offline.complete_verification, false);
   assert.equal(offline.source_freshness, 'unchecked');
   assert.equal(offline.profile_rendering, 'unchecked');
-  assert.equal(offline.source_reference_unresolved_count, 11);
-  assert.equal(offline.reference_closure, 'stored-hashes-only-with-unresolved-anchors');
+  assert.equal(offline.source_reference_unresolved_count, unresolvedReferences);
+  assert.equal(offline.reference_closure, unresolvedReferences ? 'stored-hashes-only-with-unresolved-anchors' : 'stored-hashes-only');
 
   const readOnly = new DatabaseSync(copyPath, { readOnly: true });
   try {

@@ -72,7 +72,7 @@ function source(map, path, scope, tables) {
   const document = object(file.document, path), tense = localized(document.tense, `${path}.tense`)
   const sourceKind = str(object(document.source, `${path}.source`).kind, `${path}.source.kind`)
   const status = str(document.status, `${path}.status`)
-  if (document.domain !== 'characters' || sourceKind !== 'original-fiction' || status !== 'draft') fail('E_INDEX_SOURCE_CONTRACT', path)
+  if (document.domain !== 'characters' || sourceKind !== 'original-fiction' || !['draft', 'approved'].includes(status)) fail('E_INDEX_SOURCE_CONTRACT', path)
   tables.index_document.push({ source_id, document_id: str(document.id, `${path}.id`), logical_path: path,
     source_status: status, source_kind: sourceKind, tense_ko: tense[0], tense_en: tense[1], temporal_scope: scope })
   return { source_id, document }

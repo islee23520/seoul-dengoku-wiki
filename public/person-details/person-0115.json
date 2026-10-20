@@ -453,47 +453,23 @@
             "name": "기하겸",
             "url": "/people/person-0115",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "민병 당직·숙영 차단",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/291/items/1/ko",
-                  "quote": "생업: 민병 당직·숙영 차단"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/293/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -501,84 +477,34 @@
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/291/items/1/ko",
-                    "quote": "생업: 민병 당직·숙영 차단"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Interrogation",
                 "ko": "증인 대질",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/293/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 32,
-              "unspent": 43,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "청량리",
-              "type": "초소 영지",
-              "station": "청량리",
-              "state": "S04",
-              "settlement": {
-                "name": "청량리 정착지",
-                "type": "정착지",
-                "description": "청량리 일대 고정 거점"
-              },
-              "note": "S04 청량리 일대 관할 영지"
+              "unspent": 43
             }
           }
         }
@@ -602,47 +528,23 @@
             "name": "기하겸",
             "url": "/people/person-0115",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "민병 당직·숙영 차단",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/291/items/1/ko",
-                  "quote": "생업: 민병 당직·숙영 차단"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/293/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -650,84 +552,34 @@
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/291/items/1/ko",
-                    "quote": "생업: 민병 당직·숙영 차단"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Interrogation",
                 "ko": "증인 대질",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/293/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 32,
-              "unspent": 43,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "청량리",
-              "type": "초소 영지",
-              "station": "청량리",
-              "state": "S04",
-              "settlement": {
-                "name": "청량리 정착지",
-                "type": "정착지",
-                "description": "청량리 일대 고정 거점"
-              },
-              "note": "S04 청량리 일대 관할 영지"
+              "unspent": 43
             }
           }
         }
@@ -748,18 +600,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "청량리",
-    "type": "초소 영지",
-    "station": "청량리",
-    "state": "S04",
-    "settlement": {
-      "name": "청량리 정착지",
-      "type": "정착지",
-      "description": "청량리 일대 고정 거점"
-    },
-    "note": "S04 청량리 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -800,15 +640,15 @@
     "욕망": "갈망 0 | 독점 −25 | 위험 0 | 과시 10 | 지속 20 | 지향 이성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 보호군 파견 거부 민병 조장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 기하겸은 대합실 당직에서 자랐다. 기하겸은 교대 무단 결근 대체 당직으로 보호군 파견 거부 민병 조장 자리를 맡았다.\n- 기하겸의 보호군 파견 거부 민병 조장 업무는 성수1가1동과 연결된다.",
     "관직": "품계 교사. 직함은 보호군 파견 거부 민병 조장. 외부 장교의 충전과 숙영은 평의회 거부가 붙은 칸에서 막고, 민병 동원은 시민대표의 낮 추첨으로만 연다.",
-    "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 보호군 파견 거부 민병 조장 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 기하겸은 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 보호군 파견 거부 민병 조장 자리의 서명이 장부에 올랐다.",
     "관계": "김보람의 펌프수비 지휘 아래 민병 교대를 맞추고, 배우진의 보호군 파견안을 교량에서 거절하며, 암사 호송책 류가온의 통과 요청을 기록만 남기고 되돌린다.",
     "야망": "뚝섬 수비를 공방 민병과 펌프수비대의 이중 거부로 남겨, 동방사가 명목 후보를 앞세워 주둔하지 못하게 한다.",
-    "공포": "한 번의 교량 개방이 성수 공방을 보호구역으로 바꾸고, 거부 조장이 반란 수괴로 호적에 오르는 것.",
+    "공포": "기하겸은 한 번의 교량 개방이 성수 공방을 보호구역으로 바꾸고, 거부 조장이 반란 수괴로 호적에 오르는 상황을 두려워한다.",
     "개입": "민병 식량과 차단 물자를 구해 그의 거부를 유지하거나, 교량 사격의 선제 증거를 찾아 조장을 교체할 수 있다."
   },
-  "biography": "교량 쪽 장교 깃발을 구원으로 부르는 전령을 돌려보내고, 펌프수비의 야간 교대를 외부 지휘에 넘기지 않는다. 분노를 숨기되 차단 바리케이드는 거두지 않는다.\n\n- 소속: 명부교회\n- 생업: 민병 당직·숙영 차단\n- 품계: 교사\n- 직함: 보호군 파견 거부 민병 조장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 보호군 파견 거부 민병 조장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 교사. 직함은 보호군 파견 거부 민병 조장. 외부 장교의 충전과 숙영은 평의회 거부가 붙은 칸에서 막고, 민병 동원은 시민대표의 낮 추첨으로만 연다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 보호군 파견 거부 민병 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김보람의 펌프수비 지휘 아래 민병 교대를 맞추고, 배우진의 보호군 파견안을 교량에서 거절하며, 암사 호송책 류가온의 통과 요청을 기록만 남기고 되돌린다.\n\n**야망.** 뚝섬 수비를 공방 민병과 펌프수비대의 이중 거부로 남겨, 동방사가 명목 후보를 앞세워 주둔하지 못하게 한다.\n\n**공포.** 한 번의 교량 개방이 성수 공방을 보호구역으로 바꾸고, 거부 조장이 반란 수괴로 호적에 오르는 것.\n\n**개입.** 민병 식량과 차단 물자를 구해 그의 거부를 유지하거나, 교량 사격의 선제 증거를 찾아 조장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −25 | 물질 10 | 공동 35 | 원칙 10 | 공개 −30 | 자격 25 | 분산 20 | 변혁 0\n- 욕망: 갈망 0 | 독점 −25 | 위험 0 | 과시 10 | 지속 20 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "교량 쪽 장교 깃발을 구원으로 부르는 전령을 돌려보내고, 펌프수비의 야간 교대를 외부 지휘에 넘기지 않는다. 분노를 숨기되 차단 바리케이드는 거두지 않는다.\n\n- 소속: 명부교회\n- 생업: 민병 당직·숙영 차단\n- 품계: 교사\n- 직함: 보호군 파견 거부 민병 조장\n**생애.** 2126년 세대. 기하겸은 대합실 당직에서 자랐다. 기하겸은 교대 무단 결근 대체 당직으로 보호군 파견 거부 민병 조장 자리를 맡았다.\n- 기하겸의 보호군 파견 거부 민병 조장 업무는 성수1가1동과 연결된다.\n\n**관직.** 품계 교사. 직함은 보호군 파견 거부 민병 조장. 외부 장교의 충전과 숙영은 평의회 거부가 붙은 칸에서 막고, 민병 동원은 시민대표의 낮 추첨으로만 연다.\n\n**일화.** 2125년 기하겸은 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 보호군 파견 거부 민병 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김보람의 펌프수비 지휘 아래 민병 교대를 맞추고, 배우진의 보호군 파견안을 교량에서 거절하며, 암사 호송책 류가온의 통과 요청을 기록만 남기고 되돌린다.\n\n**야망.** 뚝섬 수비를 공방 민병과 펌프수비대의 이중 거부로 남겨, 동방사가 명목 후보를 앞세워 주둔하지 못하게 한다.\n\n**공포.** 기하겸은 한 번의 교량 개방이 성수 공방을 보호구역으로 바꾸고, 거부 조장이 반란 수괴로 호적에 오르는 상황을 두려워한다.\n\n**개입.** 민병 식량과 차단 물자를 구해 그의 거부를 유지하거나, 교량 사격의 선제 증거를 찾아 조장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −25 | 물질 10 | 공동 35 | 원칙 10 | 공개 −30 | 자격 25 | 분산 20 | 변혁 0\n- 욕망: 갈망 0 | 독점 −25 | 위험 0 | 과시 10 | 지속 20 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-04"
   ],

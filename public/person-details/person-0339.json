@@ -2,7 +2,7 @@
   "id": "person-0339",
   "name": "방미산",
   "title": "청량리 진료소 거점장, 은채윤의 실무 담당자",
-  "position": "청량리 진료소 전문의",
+  "position": "청량리 진료소 거점장, 은채윤의 실무 담당자",
   "characterId": "K338",
   "rank": "전문의",
   "commonTier": "T2",
@@ -444,52 +444,23 @@
             "name": "방미산",
             "url": "/people/person-0339",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "중증도 표·진료 소견 게시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/50/items/0/ko",
-                  "quote": "생업: 중증도 표·진료 소견 게시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/49/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "중증도 표와 진료 소견을 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단을 거친 뒤에만 침상을 연다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -497,116 +468,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 중증도 표·진료 소견 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "중증도 표와 진료 소견을 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단을 거친 뒤에만 침상을 연다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 중증도 표·진료 소견 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/49/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "First Aid/TL?",
                 "ko": "응급 처치·환자 이송",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 중증도 표·진료 소견 게시"
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "방미산 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S13 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       },
@@ -629,52 +525,23 @@
             "name": "방미산",
             "url": "/people/person-0339",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "중증도 표·진료 소견 게시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/50/items/0/ko",
-                  "quote": "생업: 중증도 표·진료 소견 게시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/49/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "중증도 표와 진료 소견을 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단을 거친 뒤에만 침상을 연다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -682,116 +549,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 중증도 표·진료 소견 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "중증도 표와 진료 소견을 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단을 거친 뒤에만 침상을 연다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 중증도 표·진료 소견 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/49/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "First Aid/TL?",
                 "ko": "응급 처치·환자 이송",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 중증도 표·진료 소견 게시"
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "방미산 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S13 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       }
@@ -812,7 +604,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -863,20 +654,20 @@
     "생업": "중증도 표·진료 소견 게시",
     "소속": "흰십자단",
     "품계": "전문의",
-    "직함": "청량리 진료소 전문의",
+    "직함": "청량리 진료소 거점장, 은채윤의 실무 담당자",
     "가치관": "권위 −15 | 개방 40 | 무력 −60 | 물질 −15 | 공동 25 | 원칙 40 | 공개 15 | 자격 25 | 분산 20 | 변혁 −5",
     "욕망": "갈망 15 | 독점 35 | 위험 20 | 과시 −15 | 지속 35 | 지향 양성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 청량리 진료소 전문의 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2084-01-16에 태어났다. 2126년 개막 현재 청량리 진료소 거점장, 은채윤의 실무 담당자 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 교대 무단 결근 대체 당직으로 열렸다.\n- 청량리동의 중증도 표·진료 소견 게시 창구가 방미산의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
     "관직": "품계 전문의. 직함은 청량리 진료소 전문의. 중증도 표와 진료 소견을 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단을 거친 뒤에만 침상을 연다.",
-    "일화": "제조 캡슐이 강국 보호창고 인장과 같다는 증언이 들어온 밤, 진료소 선반의 봉인 끈이 한 줄 풀어져 있었다.",
+    "일화": "제조 캡슐이 서울 내부 보호창고 인장과 같다는 증언이 들어온 밤, 진료소 선반의 봉인 끈이 한 줄 풀어져 있었다.",
     "관계": "은채윤의 지휘로 병상을 나누고, 방한울의 당직 원장을 문에 붙인다. 백온의 피난민을 중증도 순으로 받는다.",
-    "야망": "청량리 진료소를 서울 의료헌장의 현장 본문으로 남겨 강국 장교의 우선 치료가 문 앞에서 멈추게 한다.",
-    "공포": "가짜 해열제가 침상에서 쓰인 뒤 진료소가 보호창고 하청으로 찍히는 것.",
+    "야망": "청량리 진료소를 서울 의료헌장의 현장 본문으로 남겨 무장 당직 책임자의 우선 치료가 문 앞에서 멈추게 하려 한다.",
+    "공포": "가짜 해열제가 침상에서 쓰인 뒤 진료소가 보호창고 하청으로 찍히는 일을 두려워한다.",
     "개입": "선반 봉인을 복원하거나, 적군 부상자를 숨겨 헌장 위반 누명을 씌울 수 있다."
   },
-  "biography": "적의 부상도 중증도만으로 들이고, 진료소를 전리품 창구로 부르라는 쪽지를 찢는다. 진료 소견 표를 침상 발치에 붙인다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 중증도 표·진료 소견 게시\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 청량리 진료소 전문의\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 청량리 진료소 전문의 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 전문의. 직함은 청량리 진료소 전문의. 중증도 표와 진료 소견을 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단을 거친 뒤에만 침상을 연다.\n\n**일화.** 제조 캡슐이 강국 보호창고 인장과 같다는 증언이 들어온 밤, 진료소 선반의 봉인 끈이 한 줄 풀어져 있었다.\n\n**관계.** 은채윤의 지휘로 병상을 나누고, 방한울의 당직 원장을 문에 붙인다. 백온의 피난민을 중증도 순으로 받는다.\n\n**야망.** 청량리 진료소를 서울 의료헌장의 현장 본문으로 남겨 강국 장교의 우선 치료가 문 앞에서 멈추게 한다.\n\n**공포.** 가짜 해열제가 침상에서 쓰인 뒤 진료소가 보호창고 하청으로 찍히는 것.\n\n**개입.** 선반 봉인을 복원하거나, 적군 부상자를 숨겨 헌장 위반 누명을 씌울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 40 | 무력 −60 | 물질 −15 | 공동 25 | 원칙 40 | 공개 15 | 자격 25 | 분산 20 | 변혁 −5\n- 욕망: 갈망 15 | 독점 35 | 위험 20 | 과시 −15 | 지속 35 | 지향 양성 | 결합 다자\n:::",
+  "biography": "적의 부상도 중증도만으로 들이고, 진료소를 전리품 창구로 부르라는 쪽지를 찢는다. 진료 소견 표를 침상 발치에 붙인다.\n\n- 생업: 중증도 표·진료 소견 게시\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 청량리 진료소 거점장, 은채윤의 실무 담당자\n**생애.** 2084-01-16에 태어났다. 2126년 개막 현재 청량리 진료소 거점장, 은채윤의 실무 담당자 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 교대 무단 결근 대체 당직으로 열렸다.\n- 청량리동의 중증도 표·진료 소견 게시 창구가 방미산의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 전문의. 직함은 청량리 진료소 전문의. 중증도 표와 진료 소견을 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단을 거친 뒤에만 침상을 연다.\n\n**일화.** 제조 캡슐이 서울 내부 보호창고 인장과 같다는 증언이 들어온 밤, 진료소 선반의 봉인 끈이 한 줄 풀어져 있었다.\n\n**관계.** 은채윤의 지휘로 병상을 나누고, 방한울의 당직 원장을 문에 붙인다. 백온의 피난민을 중증도 순으로 받는다.\n\n**야망.** 청량리 진료소를 서울 의료헌장의 현장 본문으로 남겨 무장 당직 책임자의 우선 치료가 문 앞에서 멈추게 하려 한다.\n\n**공포.** 가짜 해열제가 침상에서 쓰인 뒤 진료소가 보호창고 하청으로 찍히는 일을 두려워한다.\n\n**개입.** 선반 봉인을 복원하거나, 적군 부상자를 숨겨 헌장 위반 누명을 씌울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 40 | 무력 −60 | 물질 −15 | 공동 25 | 원칙 40 | 공개 15 | 자격 25 | 분산 20 | 변혁 −5\n- 욕망: 갈망 15 | 독점 35 | 위험 20 | 과시 −15 | 지속 35 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-13"
   ],

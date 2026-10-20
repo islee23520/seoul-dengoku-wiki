@@ -1,6 +1,6 @@
 # 텍스트 코퍼스 도메인 정규화와 남은 범위
 
-2026-10-19 스키마 4는 아래 52개 문서의 `/data`를 전용 STRICT 관계형 테이블로 이관한다. `source_file`의 원본 바이트 SHA-256과 `source_record`의 JSON pointer를 외래 키로 연결하며, 원문 JSON을 변경하지 않는다. `text-data.mjs`의 재구성은 원문·범용 pointer 값을 읽지 않고 도메인 행만 사용한다. build 및 offline/full verify는 문서별 원래 `/data`와 깊은 JSON 동등성을 검사한다. `domain_sidecar_gap_paths`는 빈 배열이며, 새 키나 손실은 감사 실패다.
+스키마 5는 기존 텍스트 도메인 정규화에 현행 서울 권리·office-v2 매핑을 통합한다. `source_file`의 원본 바이트 SHA-256과 `source_record`의 JSON pointer를 외래 키로 연결하며, 원문 JSON을 변경하지 않는다. `text-data.mjs`의 재구성은 원문·범용 pointer 값을 읽지 않고 도메인 행만 사용한다. build 및 offline/full verify는 manifest에 열거된 문서별 원래 `/data`와 깊은 JSON 동등성을 검사하고, 새 키나 손실을 감사 실패로 처리한다. 아래 표는 기존 도메인 대응이며 정확한 현행 입력 집합과 수는 `text-corpus-manifest.mjs` 및 실행 receipt가 기준이다. 이 문서는 현재 checkout 전체 검증 성공 영수가 아니다.
 
 | 도메인 | 관계형 테이블 |
 | --- | --- |
@@ -23,7 +23,7 @@
 - `symptom`, `transmission`, `exchange`, `supply`, `tier`, `consequence`, `dependency`, `layer`, `opening_state`, `function`, `constraint`의 `__EXAMPLE__` 값은 TEXT로 보존하는 집필 예제이며 실행 효과가 아니다. 인물 예제의 unknown·undecided·not-applicable은 구별한다.
 - 연대기의 `order`와 배열 순서, 날짜의 status·value·reason을 따로 보존한다. `EVENT:Y2026` ID와 날짜 2030처럼 이름과 값이 다른 경우도 고치거나 유추하지 않는다.
 
-## 이관한 52개 문서
+## 기존 텍스트 도메인 문서 대응
 
 | 문서 | 전용 정규화한 `/data` 키 |
 | --- | --- |
@@ -82,11 +82,16 @@
 
 ## 현재 서울 배치와 권리
 
-이 코퍼스의 `current`는 현재 source snapshot이라는 분류이며 서울 배치 승인 완료가 아니다. 기존 `current-context.mjs`는 외부 영지 5건을 `superseded_outside_seoul`, 수여 근거가 부족한 영지 20건을 `unresolved`로 저장하며 현재 유효 영지는 0건이다. 지명이나 행정 경계만으로 현재 권리나 보유자를 만들지 않는다.
+텍스트 코퍼스의 `current`는 현재 source snapshot이라는 분류이며 서울 배치 승인 완료가 아니다. 구현된 `current-rights.mjs`는 고정 승인 패키지 해시·영수 digest/ref·보관 원행 해시와 정확한 후속 배열을 인증한다. `current-context.mjs`는 승인 원천 스냅숏의 보유 20건을 `current_seoul_evidenced`, 별도 비소유 권리 5건을 `current_seoul_nonowning`으로 매핑한다. 지명·정치 ID·행정 경계만으로 소유자를 만들지 않으며 비소유 권리의 `direct_ownership=0`, scope/counties와 순서 있는 powers는 별도 테이블에 남긴다.
 
-현재 서울 통합에는 승인된 위치·권리·관계·사건의 깨끗한 원천 변경, 인물 위치와 barony/county/duchy/kingdom/empire 계층 및 권리 매핑, field-coverage 계약과 mapper 갱신, 현재 위치·권리 검증, 새 DB 빌드가 필요하다. 원천의 본문·소유권·승인 상태를 이번 저장 작업에서 변경하지 않았다.
+현행 작위 42건·수여 31건·binding 7건·비영토 정치 정체성 158건은 `context_feudal_*`와 `context_political_identity*`에 매핑하고 `current.context`에서 조회한다. 지리 parent·정치 parent·개인 주군은 구분한다. `polity:daejeon`의 비영토 정치 정체성을 현행 서울 밖 영지로 오인하지 않는다. 미확정 가신단은 `unresolved.context.retinue_groups`로 반환하며 위치 승인이나 새 인물·토지를 만들지 않는다. 옛 작위·수여·개인 연결 외부 통제는 `scripts/historical-inputs/`의 보관 원천에서 `historical_*`로 읽고 현행 권리로 승격하지 않는다. 이 수들은 승인 패키지 스냅숏의 설명이며 가변 코퍼스 건수의 고정 기대값이 아니다.
+
+office-v2의 현재 결과 95건은 nullable position/rank, status와 evidence로 정규화한다. 현재 null을 history·카드 직함·common tier로 채우지 않으며 `historical.context.offices`로 이력을 분리한다. 검토된 projection 해시는 새 직책 승인 근거가 아니다. 대표 프로필은 첫 명시 `primary_detail_names` 일치 → 첫 state 카드 → 가장 긴 렌더링 한국어 본문 순이고 동률은 입력 순서를 유지한다. 안정 K ID·공개 route·변형 프로필·방향 있는 개인 관계를 보존한다.
+
+query·coverage·source-closure의 현행 계약도 구현되어 있다. coverage는 권리의 민감 필드를 실제 열에 연결하고 인증/원천 보존 전용 값의 제외를 명시한다. office evidence의 발생 pointer와 대상 `path/jsonPointer`를 분리하며, 참조 대상은 preserved birthday·Core까지 명시한 `REFERENCE_TARGET_PATHS` 고정 목록으로 제한한다. 실제 참조·미해결·field shape·문서 수는 실행 receipt에서 읽으며 과거 관측 합계를 재사용하지 않는다.
+
+루트 검증에서 지리 검사 4건 전체와 임시 커밋 원천 checkout의 full-verify 검사 8건 전체가 통과했다. 전체 28개 suite 실행은 총 267건 중 통과 259건·실패 4건·skip 4건이며, 실패는 원천 커밋 전 dirty Git source / HEAD manifest 불일치다. 남은 작업은 깨끗한 원천으로 스키마 5 정본 DB를 빌드하고 전체 suite를 검증한 뒤 전달하는 것이다. 스키마 2·3·4를 제자리 migration하지 않으며 임시 커밋 원천의 통과를 정본 DB 재빌드·전달 완료로 해석하지 않는다. 현재 위치·서사·관계·사건의 승인 범위, 권리 인증·source provenance와 `publication_admission: not-evaluated`·readiness는 별개이며 이 문서 변경은 원천 본문·소유권·승인을 바꾸지 않는다.
 
 ## 기존 원천 품질 문제
 
-기본 build/full verify는 `PASS_WITH_SOURCE_ISSUES`로 성공한다. 이 스냅숏은 importer issue 444건과 미해결 reference anchor 11건을 드러낸다. 공식 historical GURPS 검사는 현재 schema 미지원으로 `not_checked`이고 품질은 `unverified`다. `--require-clean` 성공이나 전체 원천 승인 완료를 주장하지 않는다.
-
+기본 build/full verify의 실제 종료 코드·품질 상태·importer issue와 미해결 reference anchor 수는 해당 실행 receipt로 판단한다. 과거 스냅숏의 성공이나 결함 합계를 현행 결과로 재사용하지 않는다. 공식 historical GURPS 검사는 현재 schema 미지원으로 `not_checked`이고 품질은 `unverified`다. 부분 매퍼·query·coverage 검사 성공을 full verify, `--require-clean` 성공 또는 전체 원천 승인 완료로 해석하지 않는다.

@@ -3,7 +3,7 @@
 //   PORT      listen port (default 8787)
 //   HOST      listen host (default 0.0.0.0)
 //   DATA_DIR  published wiki data root (default public/) holding person-details/, portrait-tokens/,
-//             opening-territories.json, confirmed-person-holdings.json, seoul-observed-geography.json,
+//             opening-territories.json (including geography.titles), confirmed-person-holdings.json,
 //             territorial-scale.json
 //   PUBLIC_ORIGIN  origin written into openapi.json servers (default https://sss.linalab.io)
 // Routes are served under both /wiki/api and /api.
@@ -20,7 +20,7 @@ const port = Number(process.env.PORT ?? 8787)
 const host = process.env.HOST ?? '0.0.0.0'
 const publicOrigin = process.env.PUBLIC_ORIGIN ?? 'https://sss.linalab.io'
 const prefixes = ['/wiki/api', '/api']
-const territoryFiles = ['opening-territories.json', 'confirmed-person-holdings.json', 'seoul-observed-geography.json', 'territorial-scale.json']
+const territoryFiles = ['opening-territories.json', 'confirmed-person-holdings.json', 'territorial-scale.json']
 
 let store = null
 let signature = ''
@@ -57,10 +57,27 @@ const etagOf = (text) => `"${createHash('sha256').update(text).digest('hex').sli
 async function load() {
   const next = await dataSignature()
   if (next === signature && store) return
-  const [details, tokens, opening, holdingsFile, geography, scale] = await Promise.all([
+  const [details, tokens, opening, holdingsFile, scale] = await Promise.all([
     readDirectory('person-details'), readDirectory('portrait-tokens'),
     ...territoryFiles.map((file) => readJson(resolve(dataDir, file))),
   ])
+  const geography = opening.geography
+  const counties = geography?.titles?.filter((title) => title.rank === 'county')
+  const parentIds = new Set(geography?.titles?.filter((title) => title.rank === 'duchy' || title.rank === 'empire').map((title) => title.id))
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(geography?.spatialDate ?? '')
+    || !/^\d{4}-\d{2}-\d{2}$/.test(geography?.currentDate ?? '')
+    || counties?.length !== 48 || new Set(counties.map((county) => county.id)).size !== 48
+    || counties.some((county) => !county.id?.startsWith('geography:county:seoul-constituency:')
+      || !parentIds.has(county.parentId) || typeof county.path !== 'string' || !county.path.trim()
+      || !Array.isArray(county.datedSlots) || !Array.isArray(county.currentSlots))) {
+    throw new Error('E_DATA_GEOGRAPHY: expected published Seoul geography with 48 counties and spatialDate/currentDate')
+  }
+  const geographySources = {
+    geographySource: 'opening-territories.json#geography.titles',
+    spatialDate: geography.spatialDate, currentDate: geography.currentDate,
+    attribution: opening.attribution, populationAttribution: opening.populationAttribution,
+    landmarkAttribution: opening.landmarkAttribution,
+  }
   const personByCharacter = new Map([...details.entries.values()].map((person) => [person.characterId, person]))
   const people = [...details.entries.values()].map((person) => ({
     personId: person.id, characterId: person.characterId, name: person.name, title: person.title, position: person.position,
@@ -78,13 +95,13 @@ async function load() {
       derivedSlots: Object.values(token.slots ?? {}).flatMap((group) => Object.values(group)).filter((slot) => slot?.derived).length,
     })),
     territories: {
-      meta: { schema: opening.schema, epoch: opening.epoch, projection: opening.projection, attribution: opening.attribution, populationAttribution: opening.populationAttribution, landmarkAttribution: opening.landmarkAttribution, holdingsSchema: holdingsFile.schema, openingYear: holdingsFile.openingYear, geographySchema: geography.schema, geographySourceEdition: geography.sourceEdition, geographyBaseDate: geography.baseDate },
-      opening, states, scale, lines: opening.lines, holdingsSummary: holdingsFile.summary, geographySources: geography.sources,
+      meta: { schema: opening.schema, epoch: opening.epoch, projection: opening.projection, attribution: opening.attribution, populationAttribution: opening.populationAttribution, landmarkAttribution: opening.landmarkAttribution, holdingsSchema: holdingsFile.schema, openingYear: holdingsFile.openingYear, geographySource: geographySources.geographySource, spatialDate: geography.spatialDate, currentDate: geography.currentDate },
+      opening, states, scale, lines: opening.lines, holdingsSummary: holdingsFile.summary, geographySources,
       collections: {
         hegemons: { rows: opening.hegemons, key: 'stateId' },
         states: { rows: opening.states, key: 'id' },
         regions: { rows: opening.regions, key: 'id', heavy: ['path'] },
-        counties: { rows: geography.counties, key: 'id', heavy: ['path'] },
+        counties: { rows: counties, key: 'id', heavy: ['path'] },
         stations: { rows: opening.stations, key: 'id' },
         landmarks: { rows: opening.landmarks, key: 'id' },
         vassals: { rows: opening.vassals, key: 'name' },
@@ -261,10 +278,11 @@ await load()
 const reload = () => { load().catch((error) => console.error('WIKI_API_RELOAD_FAILED', error)) }
 process.on('SIGHUP', reload)
 setInterval(reload, Number(process.env.RELOAD_INTERVAL_MS ?? 60000)).unref()
-createServer((request, response) => {
+const server = createServer((request, response) => {
   try { route(request, response) } catch (error) {
     if (error instanceof HttpError) return send(request, response, error.status, { error: { code: error.code, message: error.message } })
     console.error(error)
     send(request, response, 500, { error: { code: 'internal_error', message: 'request failed' } })
   }
-}).listen(port, host, () => console.log(`WIKI_API_LISTENING: http://${host}:${port}${prefixes[0]}`))
+})
+server.listen(port, host, () => console.log(`WIKI_API_LISTENING: http://${host}:${server.address().port}${prefixes[0]}`))

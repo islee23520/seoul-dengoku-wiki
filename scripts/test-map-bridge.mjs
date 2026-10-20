@@ -5,10 +5,12 @@ import { test } from 'vitest'
 import { createMapBridge, selectionAtUnityCoordinate, terrainStatus } from '../src/components/mapBridge.ts'
 import { stationAliases } from '../src/components/stationPresentation.ts'
 import { selectAtCoordinates } from '../src/components/mapCoordinateSelection.ts'
+import { outsideStationIds, STATION_BOUNDARY_PATH } from './station-catalog-geography.mjs'
+import { coordinateMap, outsideUnits, terrainFixture } from './fixtures/private-map-inputs.mjs'
 
 test('coordinate polygon parsing preserves the initial M vertex', () => {
   const map = { width: 10, height: 10, projection: { minEast: 0, maxEast: 10, minNorth: 0, maxNorth: 10 },
-    regions: [{ id: 'triangle', path: 'M0,0L10,0L0,10Z' }] }
+    regions: [], geography: { titles: [{ id: 'triangle', rank: 'county', path: 'M0,0L10,0L0,10Z' }] } }
   assert.deepEqual(selectAtCoordinates(1, 9, map, []), { kind: 'region', id: 'triangle' })
   assert.equal(selectAtCoordinates(9, 1, map, []), null)
 })
@@ -22,17 +24,21 @@ test('terrain status rejects unknown tiles and missing or forged source hashes',
   assert.equal(terrainStatus({ ...event, type: 'tiles-changed', sourceSha256: 'wrong' }, hashes, 'm1'), null)
 })
 
-test('all 334 source station IDs select exactly the 314 distinct displayed facilities', async () => {
+test('all admitted source station IDs select exactly their displayed facilities and outside2 cannot select', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const outside = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url), 'utf8'))
   const displayIds = new Set(data.stations.map(({ id }) => id))
-  const source = JSON.parse(await readFile(new URL('../snapshots/build-inputs/SeoulWorldGraph.json', import.meta.url), 'utf8'))
+  const archiveBytes = await readFile(new URL('../snapshots/build-inputs/SeoulWorldGraph.json', import.meta.url))
+  const source = JSON.parse(archiveBytes)
+  const aliases = JSON.parse(await readFile(new URL('../lore/places/Seoul-Station-Catalog.json', import.meta.url), 'utf8')).data.station_aliases
+  const excluded = new Set(outsideStationIds(archiveBytes, await readFile(new URL('../' + STATION_BOUNDARY_PATH, import.meta.url)), aliases))
+  assert.deepEqual([...excluded].sort(), ['광명사거리', '석수'])
+  const canonical = new Map(aliases.flatMap(entry => [entry.id, ...entry.aliases].map(id => [id, entry.id])))
   const members = new Map(data.stations.flatMap((station) => (station.memberIds ?? [station.id]).map((id) => [id, station.id])))
-  const gameIds = new Set(source.stations.map(({ id }) => id))
+  const gameIds = new Set(source.stations.filter(({ id }) => !excluded.has(canonical.get(id) ?? id)).map(({ id }) => id))
+  const expectedDisplayIds = new Set([...gameIds].map(id => canonical.get(id) ?? id))
   assert.deepEqual(new Set(members.keys()), gameIds)
-  assert.equal(data.stations.flatMap((station) => station.memberIds ?? [station.id]).length, 334)
-  assert.equal(displayIds.size, 314)
-  assert.equal(gameIds.size, 334)
+  assert.equal(data.stations.flatMap((station) => station.memberIds ?? [station.id]).length, gameIds.size)
+  assert.deepEqual(displayIds, expectedDisplayIds)
   const sent = []
   let receive = () => {}
   const selected = []
@@ -40,13 +46,22 @@ test('all 334 source station IDs select exactly the 314 distinct displayed facil
     send: (message) => sent.push(message),
     subscribe: (handler) => { receive = handler; return () => { receive = () => {} } },
   }
-  const bridge = createMapBridge({ ...data, outsideUnits: outside.units }, transport, (selection) => selected.push(selection))
+  const bridge = createMapBridge({ ...data, outsideUnits }, transport, (selection) => selected.push(selection))
   for (const id of gameIds) {
     const expected = members.get(id)
     receive({ type: 'selected', selection: { kind: 'station', id } })
     assert.deepEqual(selected[selected.length - 1], { kind: 'station', id: expected }, id)
   }
-  assert.equal(new Set(selected.map((selection) => selection?.id)).size, 314)
+  assert.equal(new Set(selected.map((selection) => selection?.id)).size, expectedDisplayIds.size)
+  const admittedSelections = selected.length
+  for (const id of excluded) {
+    assert.equal(members.has(id), false)
+    assert.equal(displayIds.has(id), false)
+    receive({ type: 'selected', selection: { kind: 'station', id } })
+    bridge.select({ kind: 'station', id })
+  }
+  assert.equal(selected.length, admittedSelections)
+  assert.deepEqual(sent, [])
   assert.equal(members.get('서울'), '서울역')
   assert.equal(members.get('신촌(지하)'), '신촌(지하)')
   receive({ type: 'selected', selection: { kind: 'station', id: '이수' } })
@@ -62,8 +77,7 @@ test('all 334 source station IDs select exactly the 314 distinct displayed facil
 
 test('selection preserves kind and stable ID; unknown or malformed messages cannot select', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const outside = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url), 'utf8'))
-  const catalog = { ...data, outsideUnits: outside.units }
+  const catalog = { ...data, geography: { titles: [{ id: 'geography:county:test' }] }, outsideUnits }
   const selected = []
   const sent = []
   let receive = () => {}
@@ -72,28 +86,28 @@ test('selection preserves kind and stable ID; unknown or malformed messages cann
     subscribe: (handler) => { receive = handler; return () => {} },
   }, (selection) => selected.push(selection))
   for (const [kind, id] of [
-    ['region', data.regions[0].id], ['state', data.states[0].id],
+    ['region', 'geography:county:test'], ['state', data.states[0].id],
     ['station', data.stations[0].id], ['segment', data.edges[0].id],
-    ['landmark', data.landmarks[0].id], ['vassal', data.vassals[0].name],
-    ['outside-unit', outside.units[0].id],
+    ['landmark', data.landmarks[0].id],
   ]) {
     const selection = { kind, id }
     bridge.select(selection)
     receive({ type: 'selected', selection })
     assert.deepEqual(selected[selected.length - 1], selection)
   }
-  assert.equal(sent.length, 7)
+  assert.equal(sent.length, 5)
   for (const message of [
     { type: 'selected', selection: { kind: 'station', id: 'nonexistent' } },
     { type: 'selected', selection: { kind: 'region', id: data.stations[0].id } },
     { type: 'selected', selection: { kind: 'unknown', id: data.regions[0].id } },
     { type: 'selected', selection: { kind: 'state', id: 7 } },
     { type: 'selected', selection: { kind: 'outside-unit', id: 'nonexistent' } },
+    { type: 'selected', selection: { kind: 'outside-unit', id: outsideUnits[0].id } },
     { type: 'other', selection: null },
   ]) receive(message)
   bridge.select({ kind: 'station', id: 'nonexistent' })
-  assert.equal(selected.length, 7)
-  assert.equal(sent.length, 7)
+  assert.equal(selected.length, 5)
+  assert.equal(sent.length, 5)
   receive({ type: 'selected', selection: null })
   bridge.select(null)
   assert.equal(selected[selected.length - 1], null)
@@ -118,16 +132,13 @@ test('disposing the bridge unsubscribes once and ignores late inbound and outbou
 })
 
 test('Unity terrain readiness validates pinned tile bytes but never becomes a wiki detail selection', async () => {
-  const manifest = JSON.parse(await readFile(new URL('../public/regional-terrain.json', import.meta.url), 'utf8'))
-  const tile = manifest.detailTiles.find((item) => item.key === '5-4')
+  const { manifest, manifestSha256 } = terrainFixture()
+  const tile = manifest.detailTiles[0]
   const hashes = new Map(manifest.detailTiles.map((item) => [item.key, item.sha256]))
-  const source = await readFile(new URL('../public/regional-terrain.json', import.meta.url))
-  const { createHash } = await import('node:crypto')
-  const manifestSha256 = createHash('sha256').update(source).digest('hex')
   const ready = { schema: 'janseon-wiki-map.v1', type: 'ready', projection: 'EPSG:5179',
-    selection: { kind: 'regional-terrain-tile', id: 'regional:5-4' },
+    selection: { kind: 'regional-terrain-tile', id: `regional:${tile.key}` },
     sourceSha256: tile.sha256, manifestSha256 }
-  assert.deepEqual(terrainStatus(ready, hashes, manifestSha256), { type: 'ready', tile: '5-4', sourceSha256: tile.sha256, manifestSha256 })
+  assert.deepEqual(terrainStatus(ready, hashes, manifestSha256), { type: 'ready', tile: tile.key, sourceSha256: tile.sha256, manifestSha256 })
   assert.equal(terrainStatus({ ...ready, sourceSha256: '0'.repeat(64) }, hashes, manifestSha256), null)
   assert.equal(terrainStatus({ ...ready, type: 'selection' }, hashes, manifestSha256), null)
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
@@ -141,18 +152,18 @@ test('Unity terrain readiness validates pinned tile bytes but never becomes a wi
   bridge.dispose()
 })
 
-test('Unity projected tile click resolves actual outside-unit ID only with pinned manifest and tile hashes', async () => {
-  const source = await readFile(new URL('../public/regional-terrain.json', import.meta.url))
-  const manifest = JSON.parse(source)
-  const { createHash } = await import('node:crypto')
-  const manifestSha = createHash('sha256').update(source).digest('hex')
-  const map = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const outside = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url), 'utf8')).units
-  const tile = manifest.detailTiles.find((item) => item.key === '5-4')
+test('Unity projected tile click rejects outside units even with pinned manifest and tile hashes', async () => {
+  const { manifest, manifestSha256: manifestSha } = terrainFixture()
+  const map = { ...coordinateMap, projection: { minEast: 0, maxEast: 100, minNorth: 300, maxNorth: 400 } }
+  const outside = outsideUnits
+  const tile = manifest.detailTiles[0]
   const click = { schema: 'janseon-wiki-map.v1', type: 'coordinate-selection', projection: 'EPSG:5179',
-    selection: { kind: 'regional-terrain-tile', id: 'regional:5-4' },
-    east: 962500, north: 1937500, sourceSha256: tile.sha256, manifestSha256: manifestSha }
-  assert.deepEqual(selectionAtUnityCoordinate(click, manifest, manifestSha, map, outside), { kind: 'outside-unit', id: '4113164000' })
+    selection: { kind: 'regional-terrain-tile', id: `regional:${tile.key}` },
+    east: 80, north: 320, sourceSha256: tile.sha256, manifestSha256: manifestSha }
+  const titled = { ...map, geography: { titles: [{ ...outside[0], rank: 'county' }] } }
+  assert.deepEqual(selectionAtUnityCoordinate(click, manifest, manifestSha, titled, outside), { kind: 'region', id: outside[0].id })
+  assert.equal(selectionAtUnityCoordinate({ ...click, sourceSha256: '0'.repeat(64) }, manifest, manifestSha, titled, outside), null)
+  assert.equal(selectionAtUnityCoordinate(click, manifest, manifestSha, map, outside), null)
   assert.equal(selectionAtUnityCoordinate({ ...click, sourceSha256: '0'.repeat(64) }, manifest, manifestSha, map, outside), null)
   assert.equal(selectionAtUnityCoordinate({ ...click, east: 900000 }, manifest, manifestSha, map, outside), null)
 })

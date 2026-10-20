@@ -314,7 +314,7 @@
         "sourceRefs": [
           {
             "path": "lore/characters/Core-Characters.json",
-            "anchor": "/content/40"
+            "anchor": "임하준-p2"
           }
         ]
       },
@@ -547,57 +547,23 @@
             "name": "임하준",
             "url": "/people/person-0086",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "펌프기술 총관",
-              "evidence": [
-                {
-                  "path": "lore/characters/Core-Characters.json",
-                  "pointer": "/content/36/text/ko",
-                  "quote": "생업 별명은 펌프기술 총관."
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/35/text/ko",
-                    "quote": "뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/35/text/ko",
-                    "quote": "실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/38/text/ko",
-                    "quote": "실종 전날 밤, 임하준은 펌프 세정 공정의 사본 함을 봉인하였다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -605,110 +571,40 @@
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/36/text/ko",
-                    "quote": "생업 별명은 펌프기술 총관."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/35/text/ko",
-                    "quote": "뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/35/text/ko",
-                    "quote": "실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/38/text/ko",
-                    "quote": "실종 전날 밤, 임하준은 펌프 세정 공정의 사본 함을 봉인하였다."
-                  }
-                ],
-                "cp": 4,
-                "level": 14
+                "level": 14,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/37/text/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 76,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 76,
-              "unspent": 0,
-              "total": 76
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "성수",
-              "type": "초소 영지",
-              "station": "성수",
-              "state": "S04",
-              "settlement": {
-                "name": "성수 정착지",
-                "type": "정착지",
-                "description": "성수 일대 고정 거점"
-              },
-              "note": "S04 성수 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -732,57 +628,23 @@
             "name": "임하준",
             "url": "/people/person-0086",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "펌프기술 총관",
-              "evidence": [
-                {
-                  "path": "lore/characters/Core-Characters.json",
-                  "pointer": "/content/36/text/ko",
-                  "quote": "생업 별명은 펌프기술 총관."
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/35/text/ko",
-                    "quote": "뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/35/text/ko",
-                    "quote": "실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/38/text/ko",
-                    "quote": "실종 전날 밤, 임하준은 펌프 세정 공정의 사본 함을 봉인하였다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -790,386 +652,59 @@
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/36/text/ko",
-                    "quote": "생업 별명은 펌프기술 총관."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/35/text/ko",
-                    "quote": "뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/35/text/ko",
-                    "quote": "실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/38/text/ko",
-                    "quote": "실종 전날 밤, 임하준은 펌프 세정 공정의 사본 함을 봉인하였다."
-                  }
-                ],
-                "cp": 4,
-                "level": 14
+                "level": 14,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/37/text/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 76,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 76,
-              "unspent": 0,
-              "total": 76
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "성수",
-              "type": "초소 영지",
-              "station": "성수",
-              "state": "S04",
-              "settlement": {
-                "name": "성수 정착지",
-                "type": "정착지",
-                "description": "성수 일대 고정 거점"
-              },
-              "note": "S04 성수 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [],
-  "subordinateHoldings": [
-    {
-      "id": "holding:opening-barony-gu-41461-S04",
-      "name": {
-        "ko": "처인구 남작령 직영지"
-      },
-      "holderPersonId": "K795",
-      "directLiegePersonId": "K086",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4146125000",
-          "name": "경기도 용인시처인구 포곡읍"
-        },
-        {
-          "id": "4146125300",
-          "name": "경기도 용인시처인구 모현읍"
-        },
-        {
-          "id": "4146125600",
-          "name": "경기도 용인시처인구 이동읍"
-        },
-        {
-          "id": "4146125900",
-          "name": "경기도 용인시처인구 남사읍"
-        },
-        {
-          "id": "4146126200",
-          "name": "경기도 용인시처인구 양지읍"
-        },
-        {
-          "id": "4146134000",
-          "name": "경기도 용인시처인구 원삼면"
-        },
-        {
-          "id": "4146135000",
-          "name": "경기도 용인시처인구 백암면"
-        },
-        {
-          "id": "4146151000",
-          "name": "경기도 용인시처인구 중앙동"
-        },
-        {
-          "id": "4146152500",
-          "name": "경기도 용인시처인구 역북동"
-        },
-        {
-          "id": "4146152600",
-          "name": "경기도 용인시처인구 삼가동"
-        },
-        {
-          "id": "4146153500",
-          "name": "경기도 용인시처인구 유림1동"
-        },
-        {
-          "id": "4146153600",
-          "name": "경기도 용인시처인구 유림2동"
-        },
-        {
-          "id": "4146154000",
-          "name": "경기도 용인시처인구 동부동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41461-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "안남늘",
-      "holderRoute": "/people/person-0795"
-    },
-    {
-      "id": "holding:opening-barony-gu-41463-S04",
-      "name": {
-        "ko": "기흥구 남작령 직영지"
-      },
-      "holderPersonId": "K795",
-      "directLiegePersonId": "K086",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4146351000",
-          "name": "경기도 용인시기흥구 신갈동"
-        },
-        {
-          "id": "4146351600",
-          "name": "경기도 용인시기흥구 영덕1동"
-        },
-        {
-          "id": "4146351700",
-          "name": "경기도 용인시기흥구 영덕2동"
-        },
-        {
-          "id": "4146352000",
-          "name": "경기도 용인시기흥구 구갈동"
-        },
-        {
-          "id": "4146353000",
-          "name": "경기도 용인시기흥구 상갈동"
-        },
-        {
-          "id": "4146353500",
-          "name": "경기도 용인시기흥구 보라동"
-        },
-        {
-          "id": "4146354000",
-          "name": "경기도 용인시기흥구 기흥동"
-        },
-        {
-          "id": "4146355000",
-          "name": "경기도 용인시기흥구 서농동"
-        },
-        {
-          "id": "4146356000",
-          "name": "경기도 용인시기흥구 구성동"
-        },
-        {
-          "id": "4146357000",
-          "name": "경기도 용인시기흥구 마북동"
-        },
-        {
-          "id": "4146357200",
-          "name": "경기도 용인시기흥구 동백1동"
-        },
-        {
-          "id": "4146357500",
-          "name": "경기도 용인시기흥구 동백2동"
-        },
-        {
-          "id": "4146357700",
-          "name": "경기도 용인시기흥구 동백3동"
-        },
-        {
-          "id": "4146358600",
-          "name": "경기도 용인시기흥구 상하동"
-        },
-        {
-          "id": "4146359000",
-          "name": "경기도 용인시기흥구 보정동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41463-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "안남늘",
-      "holderRoute": "/people/person-0795"
-    },
-    {
-      "id": "holding:opening-barony-gu-41465-S04",
-      "name": {
-        "ko": "수지구 남작령 직영지"
-      },
-      "holderPersonId": "K795",
-      "directLiegePersonId": "K086",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4146551000",
-          "name": "경기도 용인시수지구 풍덕천1동"
-        },
-        {
-          "id": "4146552000",
-          "name": "경기도 용인시수지구 풍덕천2동"
-        },
-        {
-          "id": "4146553000",
-          "name": "경기도 용인시수지구 신봉동"
-        },
-        {
-          "id": "4146554000",
-          "name": "경기도 용인시수지구 죽전1동"
-        },
-        {
-          "id": "4146555000",
-          "name": "경기도 용인시수지구 죽전2동"
-        },
-        {
-          "id": "4146555500",
-          "name": "경기도 용인시수지구 죽전3동"
-        },
-        {
-          "id": "4146556000",
-          "name": "경기도 용인시수지구 동천동"
-        },
-        {
-          "id": "4146557000",
-          "name": "경기도 용인시수지구 상현1동"
-        },
-        {
-          "id": "4146558000",
-          "name": "경기도 용인시수지구 상현2동"
-        },
-        {
-          "id": "4146558500",
-          "name": "경기도 용인시수지구 상현3동"
-        },
-        {
-          "id": "4146559000",
-          "name": "경기도 용인시수지구 성복동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41465-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "안남늘",
-      "holderRoute": "/people/person-0795"
-    }
-  ],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41460-S04",
-      "name": "용인시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K086",
-      "basis": "개막 행정 규모 그룹 41460(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S04",
-      "parentTitleId": "title:kingdom-s04",
-      "jurisdictionRefs": [
-        "4146125000",
-        "4146125300",
-        "4146125600",
-        "4146125900",
-        "4146126200",
-        "4146134000",
-        "4146135000",
-        "4146151000",
-        "4146152500",
-        "4146152600",
-        "4146153500",
-        "4146153600",
-        "4146154000",
-        "4146351000",
-        "4146351600",
-        "4146351700",
-        "4146352000",
-        "4146353000",
-        "4146353500",
-        "4146354000",
-        "4146355000",
-        "4146356000",
-        "4146357000",
-        "4146357200",
-        "4146357500",
-        "4146357700",
-        "4146358600",
-        "4146359000",
-        "4146551000",
-        "4146552000",
-        "4146553000",
-        "4146554000",
-        "4146555000",
-        "4146555500",
-        "4146556000",
-        "4146557000",
-        "4146558000",
-        "4146558500",
-        "4146559000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s04",
-        "name": "종교 연합 왕국",
-        "holderPersonId": "K423"
-      }
+      "politicalParentTitleId": "title:kingdom-s04",
+      "personalLieges": [],
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -1183,18 +718,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "성수",
-    "type": "초소 영지",
-    "station": "성수",
-    "state": "S04",
-    "settlement": {
-      "name": "성수 정착지",
-      "type": "정착지",
-      "description": "성수 일대 고정 거점"
-    },
-    "note": "S04 성수 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -1235,7 +758,7 @@
     "가문": "뚝섬열원가(HC04)의 전 수장 줄. 관리인은 박누리다. 실종 뒤에 키가 갈렸다.",
     "관계": "임초원의 양부. 오경재의 섭정이었다. 한재목·배우진·강민서의 급수 삼각의 한 점."
   },
-  "biography": "명부교회 전 당회장. 2125년 겨울 실종. 섭정으로 앉아 있던 사람.\n\n**생애.** 2126년 세대. 2119년 오씨 적장자 오경재가 미성년이었다. 장로들은 인준 투표로 임하준을 당회장에 앉혔다. 뚝섬 열원 당직에서 펌프 규격을 익힌 그는 양자 임초원에게 펌프 정비를 가르쳤으나 교육을 마치지 못했다. 2125년 겨울 임하준이 실종되었다. 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 임시 관리인은 박누리가 맡았다. 실종의 경위와 유언 3장의 내용은 정해지지 않았다.\n\n**관직.** 품계 당회장. 직함은 전 명부교회 당회장. 생업 별명은 펌프기술 총관. 2125년 겨울 이후 자리가 비어 있다.\n\n**일화.** 실종 전날 밤, 임하준은 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠가 유언 3장과 같이 접수되었다.\n\n**가문.** 뚝섬열원가(HC04)의 전 수장 줄. 관리인은 박누리다. 실종 뒤에 키가 갈렸다.\n\n**관계.** 임초원의 양부. 오경재의 섭정이었다. 한재목·배우진·강민서의 급수 삼각의 한 점.",
+  "biography": "명부교회 전 당회장. 섭정으로 앉았던 임하준은 2125년 겨울 실종되었다. 성수1가2동의 뚝섬 열원 당직과 봉인함 기록에 그가 실종되기 전 맡았던 일이 남아 있다.\n\n**생애.** 2126년 세대. 2119년 오씨 적장자 오경재가 미성년이었다. 장로들은 인준 투표로 임하준을 당회장에 앉혔다. 뚝섬 열원 당직에서 펌프 규격을 익힌 그는 양자 임초원에게 펌프 정비를 가르쳤으나 교육을 마치지 못했다. 2125년 겨울 임하준이 실종되었다. 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 임시 관리인은 박누리가 맡았다. 실종의 경위와 유언 3장의 내용은 정해지지 않았다.\n\n**관직.** 품계 당회장. 직함은 전 명부교회 당회장. 생업 별명은 펌프기술 총관. 2125년 겨울 이후 자리가 비어 있다.\n\n**일화.** 실종 전날 밤, 임하준은 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠가 유언 3장과 같이 접수되었다.\n\n**가문.** 뚝섬열원가(HC04)의 전 수장 줄. 관리인은 박누리다. 실종 뒤에 키가 갈렸다.\n\n**관계.** 임초원의 양부. 오경재의 섭정이었다. 한재목·배우진·강민서의 급수 삼각의 한 점.",
   "sources": [
     "Core-Characters"
   ],

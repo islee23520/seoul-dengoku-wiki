@@ -10,6 +10,10 @@ const contract = source.data.currentAffiliation
 const historicalRows = source.content.find(block => block.anchor === 'table').rows.map(row => ({ id: row[0].ko, name: row[1].ko }))
 const affiliations = currentAffiliations(contract, historicalRows)
 const territory = json('../public/opening-territories.json')
+const stationCatalog = json('../lore/places/Seoul-Station-Catalog.json')
+const approvedStationNames = new Set(stationCatalog.content.filter(block => block.kind === 'table').flatMap(block => block.rows.map(row => row[0].ko)))
+const canonicalStationIds = new Map(stationCatalog.data.station_aliases.flatMap(entry => [entry.id, ...entry.aliases].map(id => [id, entry.id])))
+const approvedStationIds = new Set(json('../snapshots/build-inputs/SeoulWorldGraph.json').stations.filter(station => approvedStationNames.has(station.nameKo)).map(station => canonicalStationIds.get(station.id) ?? station.id))
 
 test('current hegemons cover the sixteen immediate polities without inventing a union head', () => {
   const expected = Object.fromEntries(contract.hegemons.filter(head => head.kind === 'state').map(head => [head.stateId, approved.approvedStateMembership[head.name]]))
@@ -40,6 +44,16 @@ test('invalid missing duplicate and unknown affiliation memberships are rejected
   assert.throws(() => hegemonsForHolders(['S00'], affiliations), /E_HEGEMON_HOLDER/)
 })
 
+test('government base resolves the existing Cheong Wa Dae facility independently of its capital', () => {
+  const base = affiliations.get('S06').currentBase
+  assert.deepEqual(base, { kind: 'facility', landmarkId: 'cheong-wa-dae', name: '청와대' })
+  const facility = territory.landmarks.find(item => item.id === base.landmarkId)
+  assert.ok(facility)
+  assert.deepEqual(currentBasePoint(base, [], [facility]), { ...base, x: facility.x, y: facility.y })
+  assert.equal(territory.states.find(item => item.id === 'S06').capitalStationId, '광화문')
+  assert.ok(contract.hegemons.every(hegemon => typeof hegemon.centerRegion === 'string' && hegemon.centerRegion.length > 0))
+})
+
 test('neutral Namsan bureau holds three districts and its tower separately from its capital', () => {
   const state = territory.states.find(item => item.id === 'S08')
   const facility = territory.landmarks.find(item => item.id === 'n-seoul-tower')
@@ -57,7 +71,8 @@ test('neutral Namsan bureau holds three districts and its tower separately from 
 
 test('generated districts stations and segments retain immediate holders and project current hegemons', () => {
   assert.equal(territory.regions.length, 427)
-  assert.equal(territory.stations.length, 314)
+  assert.deepEqual(new Set(territory.stations.map(station => station.id)), approvedStationIds)
+  assert.equal(territory.stations.length, approvedStationIds.size)
   assert.equal(territory.regions.filter(region => region.polities.includes('S08')).length, 3)
   assert.equal(territory.stations.filter(station => station.control.polityIds.includes('S08')).length, 1)
   for (const region of territory.regions) { const enclave = ['1165052000','1165065100','1165051000','1165053000','1165053100'].some(id => region.id === 'region:' + id); assert.deepEqual(region.currentHegemons, enclave ? [{ kind: 'union', name: '종교 연합' }] : hegemonsForHolders(region.polities, affiliations)) }

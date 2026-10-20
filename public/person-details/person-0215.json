@@ -452,57 +452,23 @@
             "name": "단노을",
             "url": "/people/person-0215",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "야간 재고 이전 시각·중량 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/215/items/2/ko",
-                  "quote": "생업: 야간 재고 이전 시각·중량 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/214/text/ko",
-                    "quote": "부두 밧줄 소리로 무단 하역을 읽고, 밤사이에 칸을 옮기는 발소리를 재고 공개보다 정직하다고 본다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "이전 시각과 도착 중량을 자경 일지에 적고, 출발과 다른 무게는 전 칸 재검색의 근거로 삼는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "여름의 탁수와 가짜 약 직후 상인들이 재고를 밤사이에 옮기자 단노을은 부두 그늘에서 칸 번호를 모두 적었다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -510,94 +476,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/215/items/2/ko",
-                    "quote": "생업: 야간 재고 이전 시각·중량 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "이전 시각과 도착 중량을 자경 일지에 적고, 출발과 다른 무게는 전 칸 재검색의 근거로 삼는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "여름의 탁수와 가짜 약 직후 상인들이 재고를 밤사이에 옮기자 단노을은 부두 그늘에서 칸 번호를 모두 적었다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/214/text/ko",
-                    "quote": "부두 밧줄 소리로 무단 하역을 읽고, 밤사이에 칸을 옮기는 발소리를 재고 공개보다 정직하다고 본다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 76,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 76,
-              "unspent": 0,
-              "total": 76
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "성신여대입구",
-              "type": "초소 영지",
-              "station": "성신여대입구",
-              "state": "S08",
-              "settlement": {
-                "name": "성신여대입구 정착지",
-                "type": "정착지",
-                "description": "성신여대입구 일대 고정 거점"
-              },
-              "note": "S08 성신여대입구 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -621,57 +527,23 @@
             "name": "단노을",
             "url": "/people/person-0215",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "야간 재고 이전 시각·중량 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/215/items/2/ko",
-                  "quote": "생업: 야간 재고 이전 시각·중량 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/214/text/ko",
-                    "quote": "부두 밧줄 소리로 무단 하역을 읽고, 밤사이에 칸을 옮기는 발소리를 재고 공개보다 정직하다고 본다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "이전 시각과 도착 중량을 자경 일지에 적고, 출발과 다른 무게는 전 칸 재검색의 근거로 삼는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "여름의 탁수와 가짜 약 직후 상인들이 재고를 밤사이에 옮기자 단노을은 부두 그늘에서 칸 번호를 모두 적었다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -679,94 +551,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/215/items/2/ko",
-                    "quote": "생업: 야간 재고 이전 시각·중량 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "이전 시각과 도착 중량을 자경 일지에 적고, 출발과 다른 무게는 전 칸 재검색의 근거로 삼는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "여름의 탁수와 가짜 약 직후 상인들이 재고를 밤사이에 옮기자 단노을은 부두 그늘에서 칸 번호를 모두 적었다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/214/text/ko",
-                    "quote": "부두 밧줄 소리로 무단 하역을 읽고, 밤사이에 칸을 옮기는 발소리를 재고 공개보다 정직하다고 본다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 76,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 76,
-              "unspent": 0,
-              "total": 76
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "성신여대입구",
-              "type": "초소 영지",
-              "station": "성신여대입구",
-              "state": "S08",
-              "settlement": {
-                "name": "성신여대입구 정착지",
-                "type": "정착지",
-                "description": "성신여대입구 일대 고정 거점"
-              },
-              "note": "S08 성신여대입구 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -787,18 +599,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "성신여대입구",
-    "type": "초소 영지",
-    "station": "성신여대입구",
-    "state": "S08",
-    "settlement": {
-      "name": "성신여대입구 정착지",
-      "type": "정착지",
-      "description": "성신여대입구 일대 고정 거점"
-    },
-    "note": "S08 성신여대입구 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -839,15 +639,15 @@
     "욕망": "갈망 30 | 독점 −10 | 위험 −20 | 과시 −20 | 지속 −15 | 지향 동성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 탁수 재고 야간 이전 목격자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 탁수 재고 야간 이전 목격자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 단노을은 노량진1동에서 야간 재고 이전 시각·중량 기록 업무를 맡는다.",
     "관직": "품계 교도. 직함은 탁수 재고 야간 이전 목격자. 이전 시각과 도착 중량을 자경 일지에 적고, 출발과 다른 무게는 전 칸 재검색의 근거로 삼는다.",
-    "일화": "여름의 탁수와 가짜 약 직후 상인들이 재고를 밤사이에 옮기자 단노을은 부두 그늘에서 칸 번호를 모두 적었다.",
+    "일화": "탁수와 가짜 약 직후 상인들이 재고를 밤사이에 옮기자 단노을은 부두 그늘에서 칸 번호를 모두 적었다.",
     "관계": "서나연의 벽돌 각인이 밤에 바뀐 칸을 가리키고, 마솔의 칸 봉쇄를 목격으로 받치며, 지마루의 냉동기지 전력 배분이 끊긴 시각을 같은 줄에 둔다.",
     "야망": "탁수 직후 야간 이전의 경로를 공개 목격으로 남겨 얼음 원장이 종이쪼가리가 되기 전에 손을 가리키게 한다.",
     "공포": "목격이 호송권 비공개 경매의 흥정 재료가 되는 것.",
     "개입": "일지를 경매 전에 공개하거나, 목격자를 침묵시키려는 호송권 거래를 막을 수 있다."
   },
-  "biography": "부두 밧줄 소리로 무단 하역을 읽고, 밤사이에 칸을 옮기는 발소리를 재고 공개보다 정직하다고 본다. 신의가 강해 본 시각을 줄이지 않는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 야간 재고 이전 시각·중량 기록\n- 직함: 탁수 재고 야간 이전 목격자\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 탁수 재고 야간 이전 목격자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 교도. 직함은 탁수 재고 야간 이전 목격자. 이전 시각과 도착 중량을 자경 일지에 적고, 출발과 다른 무게는 전 칸 재검색의 근거로 삼는다.\n\n**일화.** 여름의 탁수와 가짜 약 직후 상인들이 재고를 밤사이에 옮기자 단노을은 부두 그늘에서 칸 번호를 모두 적었다.\n\n**관계.** 서나연의 벽돌 각인이 밤에 바뀐 칸을 가리키고, 마솔의 칸 봉쇄를 목격으로 받치며, 지마루의 냉동기지 전력 배분이 끊긴 시각을 같은 줄에 둔다.\n\n**야망.** 탁수 직후 야간 이전의 경로를 공개 목격으로 남겨 얼음 원장이 종이쪼가리가 되기 전에 손을 가리키게 한다.\n\n**공포.** 목격이 호송권 비공개 경매의 흥정 재료가 되는 것.\n\n**개입.** 일지를 경매 전에 공개하거나, 목격자를 침묵시키려는 호송권 거래를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 45 | 무력 −15 | 물질 65 | 공동 −20 | 원칙 −25 | 공개 10 | 자격 0 | 분산 15 | 변혁 20\n- 욕망: 갈망 30 | 독점 −10 | 위험 −20 | 과시 −20 | 지속 −15 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "부두 밧줄 소리로 무단 하역을 읽고, 밤사이에 칸을 옮기는 발소리를 재고 공개보다 정직하다고 본다. 신의가 강해 본 시각을 줄이지 않는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 야간 재고 이전 시각·중량 기록\n- 직함: 탁수 재고 야간 이전 목격자\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 탁수 재고 야간 이전 목격자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 단노을은 노량진1동에서 야간 재고 이전 시각·중량 기록 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 탁수 재고 야간 이전 목격자. 이전 시각과 도착 중량을 자경 일지에 적고, 출발과 다른 무게는 전 칸 재검색의 근거로 삼는다.\n\n**일화.** 탁수와 가짜 약 직후 상인들이 재고를 밤사이에 옮기자 단노을은 부두 그늘에서 칸 번호를 모두 적었다.\n\n**관계.** 서나연의 벽돌 각인이 밤에 바뀐 칸을 가리키고, 마솔의 칸 봉쇄를 목격으로 받치며, 지마루의 냉동기지 전력 배분이 끊긴 시각을 같은 줄에 둔다.\n\n**야망.** 탁수 직후 야간 이전의 경로를 공개 목격으로 남겨 얼음 원장이 종이쪼가리가 되기 전에 손을 가리키게 한다.\n\n**공포.** 목격이 호송권 비공개 경매의 흥정 재료가 되는 것.\n\n**개입.** 일지를 경매 전에 공개하거나, 목격자를 침묵시키려는 호송권 거래를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 45 | 무력 −15 | 물질 65 | 공동 −20 | 원칙 −25 | 공개 10 | 자격 0 | 분산 15 | 변혁 20\n- 욕망: 갈망 30 | 독점 −10 | 위험 −20 | 과시 −20 | 지속 −15 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-08"
   ],

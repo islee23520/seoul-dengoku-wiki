@@ -45,12 +45,22 @@ function commitFixture(root) {
 }
 
 test('manifest separates all fixed data sources and executable provenance', () => {
-  assert.equal(DATA_SOURCE_PATHS.length, 48);
+  assert.equal(DATA_SOURCE_PATHS.length, 56);
   assert.equal(SCRIPT_SOURCE_PATHS.length, 2);
   assert.deepEqual(REQUIRED_SOURCE_PATHS, [...new Set([...DATA_SOURCE_PATHS, ...SCRIPT_SOURCE_PATHS, ...TEXT_SOURCE_PATHS, 'lore/authoring.shared.schema.json'])].sort());
   assert.equal(new Set(REQUIRED_SOURCE_PATHS).size, REQUIRED_SOURCE_PATHS.length);
   assert.deepEqual(REQUIRED_SOURCE_PATHS, [...REQUIRED_SOURCE_PATHS].sort());
   assert.ok(DATA_SOURCE_PATHS.includes('lore/name-pools/clan-hangnyeol-tables.json'));
+  for (const path of [
+    'scripts/approved-seoul-rights-transition.json',
+    'scripts/approved-daejeon-nonowning-rights.json',
+    'scripts/approved-outside-current-retirement.json',
+    'scripts/historical-inputs/personal-holdings.json',
+    'scripts/historical-inputs/opening-feudal-allocation.json',
+    'scripts/historical-inputs/outside-control-2126.json',
+    'scripts/historical-inputs/outside-island-occupation.json',
+    'lore/regions/outside-island-occupation.json',
+  ]) assert.ok(DATA_SOURCE_PATHS.includes(path), path);
   for (const name of ['cast-birthdays', 'cast-birth-cohorts', 'cast-family-trees', 'cast-family-parent-status', 'cast-family-role-decisions', 'cast-household-relations', 'diaspora-family-lineages', 'household-humanoid-policy']) {
     assert.ok(DATA_SOURCE_PATHS.includes(`lore/name-pools/${name}.json`));
   }

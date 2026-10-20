@@ -2,7 +2,7 @@ CREATE TABLE index_document (
   source_id INTEGER PRIMARY KEY REFERENCES source_file(source_id),
   document_id TEXT NOT NULL UNIQUE,
   logical_path TEXT NOT NULL UNIQUE,
-  source_status TEXT NOT NULL CHECK (source_status = 'draft'),
+  source_status TEXT NOT NULL CHECK (source_status IN ('draft','approved')),
   source_kind TEXT NOT NULL CHECK (source_kind = 'original-fiction'),
   tense_ko TEXT NOT NULL,
   tense_en TEXT NOT NULL,

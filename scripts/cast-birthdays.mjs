@@ -4,7 +4,9 @@ import { createHash } from 'node:crypto'
 
 // Owner approved the numeric bands. This candidate pins their derived assignment
 // snapshot; its byte hash is computed evidence, not a separate human hash approval.
-const approvedCohortSha256 = '228400355890c3ea7a2364bd9b7032ed036fd3373d85e90699678a2ddcb2d06c'
+// Successor binding: .omo/private/seoul-migration/doc247-repin-20261019/successor.json
+// (921a4b46…) chained by .omo/private/seoul-migration/doc247-final-closure-20261019/source-successor.json
+const approvedCohortSha256 = 'b921694843a466dd807572b880a3b5019cf7892df3f1a3edbb5fcdb63bc182c7'
 const cohortText = await readFile(new URL('../lore/name-pools/cast-birth-cohorts.json', import.meta.url), 'utf8')
 export function assertBirthCohortContract(text) {
   if (createHash('sha256').update(text).digest('hex') !== approvedCohortSha256) throw new Error('E_BIRTH_COHORT_APPROVAL')

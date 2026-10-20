@@ -14,6 +14,7 @@ CREATE TABLE text_affiliation_hegemon (
   kind TEXT NOT NULL CHECK(kind IN ('state','union')),
   state_id TEXT REFERENCES state(state_id),
   name TEXT NOT NULL,
+  center_region TEXT NOT NULL,
   ai_position TEXT NOT NULL,
   color TEXT NOT NULL,
   UNIQUE(source_id,ordinal),
@@ -78,90 +79,135 @@ CREATE TABLE text_territorial (
   source_id INTEGER NOT NULL REFERENCES text_document(source_id),
   json_pointer TEXT NOT NULL,
   schema TEXT NOT NULL,
+  scope TEXT NOT NULL,
+  geographic_empire_id TEXT NOT NULL,
   scale_implies_personal_ownership INTEGER NOT NULL CHECK(scale_implies_personal_ownership IN (0,1)),
   scale_implies_title_rank INTEGER NOT NULL CHECK(scale_implies_title_rank IN (0,1)),
-  major_polities INTEGER NOT NULL CHECK(major_polities>=0),
-  whole_kingdom_controlled_by_one_polity INTEGER NOT NULL CHECK(whole_kingdom_controlled_by_one_polity IN (0,1)),
+  scale_implies_facility_access INTEGER NOT NULL CHECK(scale_implies_facility_access IN (0,1)),
+  slot_existence_implies_grant INTEGER NOT NULL CHECK(slot_existence_implies_grant IN (0,1)),
+  CHECK(schema='territorial-scale.v2'), CHECK(scope='seoul-only'),
   CHECK(json_pointer='/data/territorialScale'),
-  PRIMARY KEY(source_id),
-  FOREIGN KEY(source_id,json_pointer) REFERENCES source_record(source_id,json_pointer)
-) STRICT;
-
-CREATE TABLE text_territorial_regular (
-  source_id INTEGER NOT NULL REFERENCES text_document(source_id),
-  json_pointer TEXT NOT NULL,
-  province TEXT NOT NULL,
-  city TEXT NOT NULL,
-  county TEXT NOT NULL,
-  district TEXT NOT NULL,
-  direct_municipal_eup_myeon_dong TEXT NOT NULL,
-  eup_myeon_dong_within_gu TEXT NOT NULL,
-  component_implies_lower_title INTEGER NOT NULL CHECK(component_implies_lower_title IN (0,1)),
-  FOREIGN KEY(source_id) REFERENCES text_territorial(source_id),
-  PRIMARY KEY(source_id),
-  FOREIGN KEY(source_id,json_pointer) REFERENCES source_record(source_id,json_pointer)
-) STRICT;
-
-CREATE TABLE text_territorial_province (
-  source_id INTEGER NOT NULL REFERENCES text_document(source_id),
-  json_pointer TEXT NOT NULL,
-  ordinal INTEGER NOT NULL CHECK(ordinal>=0),
-  province_code TEXT NOT NULL,
-  UNIQUE(source_id,ordinal),
-  FOREIGN KEY(source_id) REFERENCES text_territorial_regular(source_id),
   PRIMARY KEY(source_id,json_pointer),
+  UNIQUE(source_id),
   FOREIGN KEY(source_id,json_pointer) REFERENCES source_record(source_id,json_pointer)
 ) STRICT;
 
-CREATE TABLE text_territorial_special_city (
+CREATE TABLE text_territorial_source (
+  source_id INTEGER NOT NULL REFERENCES text_document(source_id),
+  json_pointer TEXT NOT NULL,
+  path TEXT NOT NULL,
+  sha256 TEXT NOT NULL,
+  schema TEXT NOT NULL,
+  FOREIGN KEY(source_id) REFERENCES text_territorial(source_id),
+  PRIMARY KEY(source_id,json_pointer),
+  UNIQUE(source_id),
+  FOREIGN KEY(source_id,json_pointer) REFERENCES source_record(source_id,json_pointer)
+) STRICT;
+
+CREATE TABLE text_territorial_rank (
   source_id INTEGER NOT NULL REFERENCES text_document(source_id),
   json_pointer TEXT NOT NULL,
   ordinal INTEGER NOT NULL CHECK(ordinal>=0),
-  name TEXT NOT NULL,
-  english_name TEXT NOT NULL,
-  city TEXT NOT NULL,
-  district TEXT NOT NULL,
-  dong TEXT NOT NULL,
+  rank TEXT NOT NULL,
   UNIQUE(source_id,ordinal),
   FOREIGN KEY(source_id) REFERENCES text_territorial(source_id),
   PRIMARY KEY(source_id,json_pointer),
   FOREIGN KEY(source_id,json_pointer) REFERENCES source_record(source_id,json_pointer)
 ) STRICT;
 
-CREATE TABLE text_territorial_kingdom_container (
+CREATE TABLE text_territorial_level (
+  source_id INTEGER NOT NULL REFERENCES text_document(source_id),
+  json_pointer TEXT NOT NULL,
+  level TEXT NOT NULL,
+  source_pointer TEXT,
+  rank TEXT,
+  count INTEGER CHECK(count>=0),
+  partition_sha256 TEXT,
+  representation TEXT,
+  id_field TEXT,
+  parent_field TEXT,
+  UNIQUE(source_id,level), CHECK(level IN ('empire','kingdom','duchy','county','barony')), CHECK((level='barony' AND source_pointer IS NULL AND rank IS NULL AND count IS NULL AND partition_sha256 IS NULL AND representation IS NOT NULL AND id_field IS NOT NULL AND parent_field IS NOT NULL) OR (level!='barony' AND source_pointer IS NOT NULL AND rank=level AND count IS NOT NULL AND representation IS NULL AND id_field IS NULL AND parent_field IS NULL AND ((level='kingdom' AND partition_sha256 IS NOT NULL) OR (level!='kingdom' AND partition_sha256 IS NULL)))),
+  FOREIGN KEY(source_id) REFERENCES text_territorial(source_id),
+  PRIMARY KEY(source_id,json_pointer),
+  FOREIGN KEY(source_id,json_pointer) REFERENCES source_record(source_id,json_pointer)
+) STRICT;
+
+CREATE TABLE text_territorial_map (
+  source_id INTEGER NOT NULL REFERENCES text_document(source_id),
+  json_pointer TEXT NOT NULL,
+  minimum_polygon_rank TEXT NOT NULL,
+  barony_polygon INTEGER NOT NULL CHECK(barony_polygon IN (0,1)),
+  FOREIGN KEY(source_id) REFERENCES text_territorial(source_id),
+  PRIMARY KEY(source_id,json_pointer),
+  UNIQUE(source_id),
+  FOREIGN KEY(source_id,json_pointer) REFERENCES source_record(source_id,json_pointer)
+) STRICT;
+
+CREATE TABLE text_territorial_selectable_rank (
   source_id INTEGER NOT NULL REFERENCES text_document(source_id),
   json_pointer TEXT NOT NULL,
   ordinal INTEGER NOT NULL CHECK(ordinal>=0),
-  province_code TEXT NOT NULL,
-  name TEXT NOT NULL,
+  rank TEXT NOT NULL,
   UNIQUE(source_id,ordinal),
   FOREIGN KEY(source_id) REFERENCES text_territorial(source_id),
   PRIMARY KEY(source_id,json_pointer),
   FOREIGN KEY(source_id,json_pointer) REFERENCES source_record(source_id,json_pointer)
 ) STRICT;
 
-CREATE TABLE text_territorial_sejong (
+CREATE TABLE text_territorial_slot_edition (
   source_id INTEGER NOT NULL REFERENCES text_document(source_id),
   json_pointer TEXT NOT NULL,
-  province_code TEXT NOT NULL,
-  name TEXT NOT NULL,
-  english_name TEXT NOT NULL,
-  geographic_container_id TEXT NOT NULL,
-  city TEXT NOT NULL,
-  direct_eup_myeon_dong TEXT NOT NULL,
+  edition_kind TEXT NOT NULL,
+  source_pointer TEXT NOT NULL,
+  edition TEXT NOT NULL,
+  base_date TEXT,
+  administrative_candidate_date TEXT,
+  checked_at TEXT,
+  count INTEGER NOT NULL CHECK(count>=0),
+  geometry_verified INTEGER NOT NULL CHECK(geometry_verified IN (0,1)),
+  current_boundary_certification INTEGER CHECK(current_boundary_certification IN (0,1)),
+  UNIQUE(source_id,edition_kind), CHECK((edition_kind='dated' AND base_date IS NOT NULL AND administrative_candidate_date IS NULL AND checked_at IS NULL AND current_boundary_certification IS NOT NULL) OR (edition_kind='currentCorrespondence' AND base_date IS NULL AND administrative_candidate_date IS NOT NULL AND checked_at IS NOT NULL AND current_boundary_certification IS NULL)),
   FOREIGN KEY(source_id) REFERENCES text_territorial(source_id),
-  PRIMARY KEY(source_id),
+  PRIMARY KEY(source_id,json_pointer),
   FOREIGN KEY(source_id,json_pointer) REFERENCES source_record(source_id,json_pointer)
 ) STRICT;
 
-CREATE TABLE text_territorial_sejong_alias (
+CREATE TABLE text_territorial_parent (
+  source_id INTEGER NOT NULL REFERENCES text_document(source_id),
+  json_pointer TEXT NOT NULL,
+  source_field TEXT NOT NULL,
+  meaning TEXT NOT NULL,
+  political_liege_inference INTEGER NOT NULL CHECK(political_liege_inference IN (0,1)),
+  FOREIGN KEY(source_id) REFERENCES text_territorial(source_id),
+  PRIMARY KEY(source_id,json_pointer),
+  UNIQUE(source_id),
+  FOREIGN KEY(source_id,json_pointer) REFERENCES source_record(source_id,json_pointer)
+) STRICT;
+
+CREATE TABLE text_territorial_parent_exception (
   source_id INTEGER NOT NULL REFERENCES text_document(source_id),
   json_pointer TEXT NOT NULL,
   ordinal INTEGER NOT NULL CHECK(ordinal>=0),
-  alias TEXT NOT NULL,
+  title_id TEXT NOT NULL,
+  parent_title_id TEXT NOT NULL,
+  map_kingdom_title_id TEXT NOT NULL,
+  kind TEXT NOT NULL,
   UNIQUE(source_id,ordinal),
-  FOREIGN KEY(source_id) REFERENCES text_territorial_sejong(source_id),
+  FOREIGN KEY(source_id) REFERENCES text_territorial(source_id),
   PRIMARY KEY(source_id,json_pointer),
+  FOREIGN KEY(source_id,json_pointer) REFERENCES source_record(source_id,json_pointer)
+) STRICT;
+
+CREATE TABLE text_territorial_political_axis (
+  source_id INTEGER NOT NULL REFERENCES text_document(source_id),
+  json_pointer TEXT NOT NULL,
+  current_centers INTEGER NOT NULL CHECK(current_centers>=0),
+  geographic_kingdom_equivalence INTEGER NOT NULL CHECK(geographic_kingdom_equivalence IN (0,1)),
+  preserve_stable_political_identities INTEGER NOT NULL CHECK(preserve_stable_political_identities IN (0,1)),
+  preserve_nonterritorial_kingship INTEGER NOT NULL CHECK(preserve_nonterritorial_kingship IN (0,1)),
+  FOREIGN KEY(source_id) REFERENCES text_territorial(source_id),
+  PRIMARY KEY(source_id,json_pointer),
+  UNIQUE(source_id),
   FOREIGN KEY(source_id,json_pointer) REFERENCES source_record(source_id,json_pointer)
 ) STRICT;
 

@@ -6,7 +6,7 @@
   "categories": [
     "places"
   ],
-  "status": "draft",
+  "status": "approved",
   "tense": {
     "en": "past",
     "ko": "past"
@@ -29,12 +29,12 @@
   "locales": {
     "en": {
       "title": "The Structure of the World Map",
-      "summary": "Seoul's geographic truth was not the simple administrative map drawn flat from Jongno-gu to Gangdong-gu.",
+      "summary": "The Seoul map follows constituency counties, administrative-dong slots, autonomous districts, six geographic kingdoms and the citywide empire.",
       "tense": "past"
     },
     "ko": {
       "title": "세계 지도의 구성",
-      "summary": "서울의 지리적 진실은 종로구에서 강동구까지 평면에 그려진 단순한 행정 지도가 아니다.",
+      "summary": "서울 지도는 지역구 백작령, 행정동 슬롯, 자치구 공작령, 여섯 지리 왕국, 서울 전체 제국의 관할을 따라 구성된다.",
       "tense": "past"
     }
   },
@@ -60,8 +60,8 @@
       "kind": "paragraph",
       "anchor": "월드맵의-구조-p1",
       "text": {
-        "en": "An administrative map lays out Seoul from Jongno-gu to Gangdong-gu. The rail network has 315 stations reconciled from 334 observed name rows and the tunnels connecting them. Seoul Station, Sindorim, and Yeongdeungpo are major strongholds.",
-        "ko": "행정 지도는 서울을 종로구부터 강동구까지 평면에 그린다. 전철망에는 관측 명칭 334행을 대조한 역 315곳과 역을 잇는 터널이 있다. 서울역, 신도림, 영등포 등은 주요 거점이다."
+        "en": "Seoul's selectable map begins with congressional-district counties. Administrative-dong slots appear in each county's details; stations and their connecting passages form a separate movement layer. Seoul Station, Sindorim and Yeongdeungpo are named strongholds. The earlier wiki-map technical edition reconciled 334 observed-name rows into 315 station entries.",
+        "ko": "서울의 선택 지도는 국회의원 지역구 백작령에서 시작한다. 각 백작령 상세에는 행정동 슬롯을 표시하고, 역과 역을 잇는 통로는 별도의 이동층으로 다룬다. 서울역·신도림·영등포는 이름이 확인된 거점이다. 종전 위키 지도의 기술 판본은 관측 명칭 334행을 대조해 역 항목 315개를 기록했다."
       }
     },
     {
@@ -76,8 +76,8 @@
       "kind": "paragraph",
       "anchor": "월드맵의-구조-p2",
       "text": {
-        "en": "The geography that grounded the new age consisted of the 25 autonomous districts, the principal stations within them, the key facilities at their sides, and the spheres of the sixteen states. How buildings and facilities found new uses after the collapse was an important key to understanding the survivors' lives.",
-        "ko": "새로운 시대의 지리는 25개 자치구와 그 안의 주요 역, 주변의 주요 시설, 십육국의 권역으로 이루어진다. 건물과 시설은 붕괴 이후 쓰임이 바뀌었다."
+        "en": "The opening map covers Seoul. A constituency county is its smallest selectable polygon; administrative-dong barony slots appear in that county's details. Autonomous districts form duchies, the six approved geographic regions form kingdoms, and Seoul as a whole defines the empire's jurisdiction. Political affiliation and a holder's individual titles are recorded separately from that geographic nesting.",
+        "ko": "개막 지도는 서울을 담는다. 선택할 수 있는 최소 폴리곤은 지역구 백작령이며 그 상세에 행정동 남작령 슬롯을 둔다. 자치구는 공작령, 승인된 여섯 지리 권역은 왕국, 서울 전체는 제국의 관할이다. 정치 소속과 보유자의 개별 작위는 이 지리적 포함 관계와 따로 기록한다."
       }
     },
     {
@@ -97,40 +97,10 @@
             "text": "Related documents: "
           },
           {
-            "text": "Seoul and the Subway Layers",
-            "link": {
-              "domain": "places",
-              "slug": "World-and-Subway-Layers"
-            }
-          },
-          {
-            "text": ", "
-          },
-          {
-            "text": "the Sixteen States of Seoul",
+            "text": "The Sixteen States of Seoul",
             "link": {
               "domain": "factions",
               "slug": "Sixteen-States"
-            }
-          },
-          {
-            "text": ", "
-          },
-          {
-            "text": "Seoul region-setting data",
-            "link": {
-              "domain": "regions",
-              "slug": "README"
-            }
-          },
-          {
-            "text": ", "
-          },
-          {
-            "text": "the Seoul Station Catalog",
-            "link": {
-              "domain": "places",
-              "slug": "Seoul-Station-Catalog"
             }
           },
           {
@@ -162,40 +132,10 @@
             "text": "관련 문서: "
           },
           {
-            "text": "세계 지도",
-            "link": {
-              "domain": "places",
-              "slug": "World-and-Subway-Layers"
-            }
-          },
-          {
-            "text": ", "
-          },
-          {
             "text": "서울 십육국",
             "link": {
               "domain": "factions",
               "slug": "Sixteen-States"
-            }
-          },
-          {
-            "text": ", "
-          },
-          {
-            "text": "서울 지역 설정 데이터",
-            "link": {
-              "domain": "regions",
-              "slug": "README"
-            }
-          },
-          {
-            "text": ", "
-          },
-          {
-            "text": "서울 역 카탈로그",
-            "link": {
-              "domain": "places",
-              "slug": "Seoul-Station-Catalog"
             }
           },
           {
@@ -245,8 +185,8 @@
       "kind": "paragraph",
       "anchor": "자치구-25-p1",
       "text": {
-        "en": "The district names used the KOSTAT GeoJSON `properties.name` as they stood, and all twenty-five were present without omission.",
-        "ko": "구 이름은 KOSTAT GeoJSON `properties.name`을 그대로 쓴다. 스물다섯 구가 모두 세계 지도에 있다."
+        "en": "The district register names all twenty-five Seoul autonomous districts. The earlier KOSTAT comparison GeoJSON records its district names. The constituency and administrative-dong membership in the geographic title register follows its identified electoral and administrative editions; the polygon layer carries the verified spatial source edition.",
+        "ko": "구 명부에는 서울 자치구 스물다섯 곳의 이름이 담겨 있다. 종전 KOSTAT 비교 GeoJSON에는 당시의 구 이름이 실렸다. 지리 작위 원장의 지역구와 행정동 구성은 식별된 선거·행정 판본을 따르고, 폴리곤층은 검증된 공간 원천 판본에 결속된다."
       }
     },
     {
@@ -269,8 +209,8 @@
       "kind": "paragraph",
       "anchor": "자치구-25-p3",
       "text": {
-        "en": "These twenty-five remained the world map's core sectors, and the sixteen states laid their spheres over these districts. Yeongdeungpo-gu was not renamed the Water Compact, nor Jongno-gu the Republic of Korea Government.",
-        "ko": "이 25개가 세계 지도의 주요 구역으로 남는다. 십육국은 이 구 위에 권역을 얹는다. 영등포구를 수문국으로, 종로구를 대한민국정부로 바꿔 부르지 않는다."
+        "en": "The twenty-five autonomous districts form duchy jurisdictions. Constituency counties provide the smallest selectable polygons, and administrative-dong slots appear in each county's details. Counties crossing district boundaries have a direct geographic parent in the Seoul empire and kingdom-map membership in the approved partition. The six geographic kingdoms group the districts as Central, Northeast, Northwest, West, Southwest and Southeast; the empire encompasses Seoul. The political layer separately records three factions and neutral bodies. Holders and rights follow their individual title, slot, station and facility records.",
+        "ko": "스물다섯 자치구는 공작령의 관할이 된다. 선택할 수 있는 최소 폴리곤은 지역구 백작령이고 각 백작령 상세에는 행정동 슬롯이 실린다. 자치구 경계를 가로지르는 백작령은 서울 제국을 지리적 직속 상위 작위로 두고 승인된 권역의 왕국 지도에 속한다. 여섯 지리 왕국은 중앙·북동·북서·서부·남서·동남 왕국으로 자치구를 묶으며 제국의 관할은 서울 전체다. 정치층에는 세 세력과 중립 조직을 따로 표시한다. 보유자와 권리는 각각의 작위·슬롯·역·시설 기록을 따른다."
       }
     },
     {
@@ -294,8 +234,8 @@
       "kind": "paragraph",
       "anchor": "역-목록-p1",
       "text": {
-        "en": "The Seoul station catalog records 334 observed-name rows. The wiki map displays 315 stations after joining official subtitles and spelling variants. The outer metropolitan network extends beyond them. Names such as Seoul Station, City Hall, Gangnam, Jamsil, and Yeouido are still used for their strongholds.",
-        "ko": "서울 역 카탈로그에는 관측 명칭 334행이 실렸다. 공식 부제와 표기 차이를 합친 위키 지도에는 역 315곳이 표시된다. 외곽 광역망은 별도로 이어진다. 서울역, 시청, 강남, 잠실, 여의도 등의 이름은 각 거점을 부르는 데 쓰인다."
+        "en": "The earlier Seoul station catalog recorded 334 observed-name rows; after combining subtitles and spelling variants, its wiki-map edition displayed 315 stations. Those figures belong to that technical edition. Seoul Station, City Hall, Gangnam, Jamsil and Yeouido remain Seoul place names on the movement layer. Opening-map station membership follows the separately maintained Seoul station source.",
+        "ko": "종전 서울 역 카탈로그에는 관측 명칭 334행이 있었고, 부제와 표기 차이를 합친 당시 위키 지도에는 역 315곳이 표시되었다. 이 수는 그 기술 판본의 기록이다. 서울역·시청·강남·잠실·여의도는 서울 이동층의 지명이다. 개막 지도에 실리는 역은 별도로 관리하는 서울 역 원천의 위치를 따른다."
       }
     },
     {
@@ -310,8 +250,8 @@
       "kind": "paragraph",
       "anchor": "역-목록-p2",
       "text": {
-        "en": "Among the 315 Seoul stations on the wiki map, Gangnam-gu and Songpa-gu each have 23, while Geumcheon-gu has four. Major movement routes cross around Yeongdeungpo, Sindorim, and Guro.",
-        "ko": "위키 지도에 표시된 서울 역 315곳 가운데 강남구와 송파구에는 각각 23곳이 있고, 금천구에는 4곳이 있다. 영등포와 신도림, 구로 일대에서 주요 이동로가 교차한다."
+        "en": "The earlier 315-station wiki-map edition counted 23 stations each in Gangnam-gu and Songpa-gu and four in Geumcheon-gu. These are dated distribution figures. Movement routes around Yeongdeungpo, Sindorim and Guro are represented by Seoul-located nodes and passages in the current graph.",
+        "ko": "종전 역 315곳 위키 지도 판본에는 강남구와 송파구에 각각 23곳, 금천구에 4곳이 집계되었다. 이 수는 당시 분포의 기록이다. 현행 그래프에서는 서울 안의 역과 통로로 영등포·신도림·구로 일대의 이동로를 나타낸다."
       }
     },
     {
@@ -351,16 +291,16 @@
       "kind": "paragraph",
       "anchor": "주변-시설-p2",
       "text": {
-        "en": "The water-treatment plants stood at Yeongdeungpo, Ttukseom, Guui, and Amsa, and Gangbuk (Namyangju) and Gwangam (Hanam) also worked as principal water-pressure sources.",
-        "ko": "정수 시설은 영등포, 뚝섬, 구의, 암사에 있다. 강북(남양주)과 광암(하남)도 주요 급수 압력원이다."
+        "en": "The Seoul water-facility record lists Yeongdeungpo, Ttukseom, Guui and Amsa. The 2026 infrastructure record also preserves the Gangbuk plant in Namyangju and the Gwangam plant in Hanam.",
+        "ko": "서울의 정수 시설 기록에는 영등포·뚝섬·구의·암사가 있다. 2026년 시설 기록에는 남양주의 강북 정수장과 하남의 광암 정수장이 남아 있다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "주변-시설-p3",
       "text": {
-        "en": "The depots lay at Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo, and the outer depots at Jichuk, Dobong, Moran, and Gimpo were also key strongholds.",
-        "ko": "차량기지는 신정, 천왕, 방화, 군자, 고덕, 창동, 신내, 수서에 있다. 외곽의 지축, 도봉, 모란, 김포 기지도 중요한 거점이다."
+        "en": "The Seoul depot records locate Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae and Suseo. The map marks their locations; operators and partial rights are represented by their distinct facility records.",
+        "ko": "서울 차량기지 기록에는 신정·천왕·방화·군자·고덕·창동·신내·수서가 있다. 지도에는 기지의 위치가 나타나고 운영 주체와 부분 권리는 각 시설의 별도 기록에 남는다."
       }
     },
     {
@@ -384,38 +324,24 @@
       "anchor": "십육국을-구-위에-얹기",
       "depth": 2,
       "text": {
-        "en": "Laying the Sixteen States Over the Districts",
-        "ko": "십육국을 구 위에 얹기"
+        "en": "Political Centers and Geographic Jurisdictions",
+        "ko": "정치 중심과 지리 관할"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "십육국을-구-위에-얹기-p1-ko-label-11",
       "text": {
-        "en": "A. Basis of the spheres",
-        "ko": "가. 권역의 기준"
+        "en": "A. Three political centers and neutral organizations",
+        "ko": "가. 세 정치 중심과 중립 조직"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "십육국을-구-위에-얹기-p1",
       "text": {
-        "en": "The states did not replace the districts. `Sixteen-States.md` was the standard for the spheres' arms and key infrastructure. The Yeouido waterfront and the Ttukseom workshops, the Amsa treatment plant, and the Seoul Station records were read as the skeleton of the spheres.",
-        "ko": [
-          {
-            "text": "권역 문장과 핵심 인프라는 "
-          },
-          {
-            "text": "Sixteen-States.md",
-            "link": {
-              "domain": "factions",
-              "slug": "Sixteen-States"
-            }
-          },
-          {
-            "text": "가 기준이다. 국가는 구를 대체하지 않는다. 여의도 수변과 뚝섬 공방, 암사 정수, 서울역 기록이 권역의 뼈대로 읽힌다."
-          }
-        ]
+        "en": "The opening political map distinguishes the Government centered on Cheong Wa Dae in northern Seoul, the Gauge centered in the western area south of the Han, and the religious union centered in the Gangnam area south of the Han. The Central Intelligence Bureau remains independent and neutral. The sixteen founding-state identities continue through their recorded affiliations within the three factions or as neutral. Political centers mark the factions; title and facility registers record their respective holders and rights.",
+        "ko": "개막 정치 지도에는 강북 청와대를 중심으로 하는 대한민국정부, 한강 남쪽 서부를 중심으로 하는 규격맹, 강남 권역을 중심으로 하는 종교 연합을 나누어 표시한다. 중앙정보부는 독립된 중립 조직으로 남는다. 건국 당시 십육국의 정체성은 세 세력 안의 확인된 소속 또는 중립으로 이어진다. 정치 중심과 작위·시설의 보유자는 각각 정치층과 권리 원장에 기록된다."
       }
     },
     {
@@ -423,309 +349,241 @@
       "anchor": "십육국을-구-위에-얹기-table2",
       "columns": [
         {
-          "en": "State",
-          "ko": "국가"
+          "en": "Stable ID",
+          "ko": "안정 ID"
         },
         {
-          "en": "Grade",
-          "ko": "등급"
+          "en": "Continuing state identity",
+          "ko": "존속하는 국가 정체성"
         },
         {
-          "en": "Sphere",
-          "ko": "권역"
-        },
-        {
-          "en": "Key infrastructure",
-          "ko": "주요 인프라"
+          "en": "Opening affiliation",
+          "ko": "개막 소속"
         }
       ],
       "rows": [
         [
           {
-            "en": "The Sluice",
-            "ko": "수문국"
+            "en": "S06",
+            "ko": "S06"
           },
-          {
-            "en": "Great power",
-            "ko": "강국"
-          },
-          {
-            "en": "Yeongdeungpo–Yangcheon–western Yeouido waterfront axis",
-            "ko": "양평역 수도·양천 서부 급수축"
-          },
-          {
-            "en": "Yeongdeungpo treatment plant, Sinjeong depot, rail and Han River bridges",
-            "ko": "양평 제일수문·춘천 제이수문, 서부 급수 계약"
-          }
-        ],
-        [
-          {
-            "en": "The Gauge",
-            "ko": "규격맹"
-          },
-          {
-            "en": "Great power",
-            "ko": "강국"
-          },
-          {
-            "en": "Guro–Geumcheon industrial axis",
-            "ko": "구로·금천 산업축"
-          },
-          {
-            "en": "Manufacturing and repair, Cheonwang depot, southwestern outskirts",
-            "ko": "제조·수리, 천왕 차량기지, 남서 외곽"
-          }
-        ],
-        [
-          {
-            "en": "Taeuk Group",
-            "ko": "태욱그룹"
-          },
-          {
-            "en": "Great power",
-            "ko": "강국"
-          },
-          {
-            "en": "Yangjae–Seocho southern repair axis",
-            "ko": "양재·서초 남부 수리축"
-          },
-          {
-            "en": "Depot car bodies and rigging at Yangjae, surviving field humanoids, southern perimeter and outer links",
-            "ko": "양재 정비고의 차체·리깅, 현장 휴머노이드 잔존, 남부 시계·외곽 연결"
-          }
-        ],
-        [
-          {
-            "en": "Myeongbu Church",
-            "ko": "명부교회"
-          },
-          {
-            "en": "Lesser state",
-            "ko": "소국"
-          },
-          {
-            "en": "Samsung Station megachurch southern pulpit axis",
-            "ko": "삼성역 강단축"
-          },
-          {
-            "en": "Samsung Station church real estate, Yeonji-dong General Assembly registers and relief",
-            "ko": "삼성역 예배당·총회 명부·구휼"
-          }
-        ],
-        [
-          {
-            "en": "Eastern Command",
-            "ko": "동방사"
-          },
-          {
-            "en": "Great power",
-            "ko": "강국"
-          },
-          {
-            "en": "Gangdong–Amsa–Godeok eastern perimeter axis",
-            "ko": "강동·암사·고덕 동부 시계축"
-          },
-          {
-            "en": "Amsa treatment plant, Godeok depot, eastern bridges",
-            "ko": "암사 정수, 고덕 차량기지, 동부 교량"
-          }
-        ],
-        [
           {
             "en": "Government of the Republic of Korea",
             "ko": "대한민국정부"
           },
           {
-            "en": "Lesser state",
-            "ko": "강국"
-          },
-          {
-            "en": "Jongno–Jung-gu–Seoul Station axis",
-            "ko": "종로·중구·서울역축"
-          },
-          {
-            "en": "Administrative records, the Seoul Station emblem, central disaster medicine",
-            "ko": "긴급명령 기록, 도심 명부·배급, 도장·인지세, 청사 경비대"
+            "en": "Government",
+            "ko": "대한민국정부"
           }
         ],
         [
+          {
+            "en": "S01",
+            "ko": "S01"
+          },
+          {
+            "en": "The Sluice",
+            "ko": "수문국"
+          },
+          {
+            "en": "Gauge",
+            "ko": "규격맹"
+          }
+        ],
+        [
+          {
+            "en": "S02",
+            "ko": "S02"
+          },
+          {
+            "en": "The Gauge",
+            "ko": "규격맹"
+          },
+          {
+            "en": "Gauge",
+            "ko": "규격맹"
+          }
+        ],
+        [
+          {
+            "en": "S07",
+            "ko": "S07"
+          },
           {
             "en": "The Junction",
             "ko": "환적국"
           },
           {
-            "en": "Great power",
-            "ko": "강국"
-          },
-          {
-            "en": "Yongsan central transshipment axis",
-            "ko": "용산 중앙 환적축"
-          },
-          {
-            "en": "Central rail transshipment, garrison-fence labor contracts, strait and beyond-the-fence outside links",
-            "ko": "중앙 철도 환적, 주둔지 울타리 용역, 해협·울타리 외부 연결"
+            "en": "Government",
+            "ko": "대한민국정부"
           }
         ],
         [
           {
-            "en": "Central Intelligence Bureau",
-            "ko": "중앙정보부"
+            "en": "S05",
+            "ko": "S05"
           },
           {
-            "en": "Lesser state",
-            "ko": "소국"
+            "en": "Eastern Command",
+            "ko": "동방사"
           },
           {
-            "en": "Dongjak–northern Gwanak–Noryangjin market axis",
-            "ko": "흑석역 기술 보존권"
-          },
-          {
-            "en": "Fisheries wholesale, cold storage, southern gate and medicine",
-            "ko": "흑석 필사·상실 기술 검사와 출입 허가"
+            "en": "Government",
+            "ko": "대한민국정부"
           }
         ],
         [
+          {
+            "en": "S03",
+            "ko": "S03"
+          },
+          {
+            "en": "Taeuk Group",
+            "ko": "태욱그룹"
+          },
+          {
+            "en": "Gauge",
+            "ko": "규격맹"
+          }
+        ],
+        [
+          {
+            "en": "S09",
+            "ko": "S09"
+          },
           {
             "en": "Yeouido Investors' Association",
             "ko": "여의도출자연합회"
           },
           {
-            "en": "Lesser state",
-            "ko": "약국"
-          },
-          {
-            "en": "Western Yeouido waterfront axis",
-            "ko": "여의도 서부 수변축"
-          },
-          {
-            "en": "The Yeouido hall, investment ledgers and the cooling key, West Sea and financial outside links",
-            "ko": "여의도 회관, 출자 장부와 냉각 키, 서해·금융 외부 연결"
+            "en": "Gauge",
+            "ko": "규격맹"
           }
         ],
         [
           {
-            "en": "Anguk Order",
-            "ko": "안국총림"
+            "en": "S13",
+            "ko": "S13"
           },
-          {
-            "en": "Lesser state",
-            "ko": "소국"
-          },
-          {
-            "en": "Anguk Station Jogyesa central tablet axis",
-            "ko": "안국역 조계사 중앙 위패축"
-          },
-          {
-            "en": "Jogyesa and General Directorate tablets, temple rolls, rite calendar and relief",
-            "ko": "조계사·총무원 위패, 사원 대장, 제사 달력·구휼"
-          }
-        ],
-        [
-          {
-            "en": "Seongha Group",
-            "ko": "성하그룹"
-          },
-          {
-            "en": "Lesser state",
-            "ko": "소국"
-          },
-          {
-            "en": "Gangnam Station intersection southern commercial axis",
-            "ko": "강남역 사거리 남부 상업축"
-          },
-          {
-            "en": "Samsung Town, the Gangnam cooling key, southern-outskirts memory",
-            "ko": "삼성타운, 강남 냉각 키, 남부 외곽 기억"
-          }
-        ],
-        [
-          {
-            "en": "Sinnae Transport",
-            "ko": "신내운수"
-          },
-          {
-            "en": "Lesser state",
-            "ko": "약국"
-          },
-          {
-            "en": "Jungnang–Sinnae–Mangu northeastern transfer axis",
-            "ko": "중랑·신내·망우 동북 환승축"
-          },
-          {
-            "en": "Terminal transfers, depots, northeastern outskirts",
-            "ko": "말단 환승, 차량기지, 동북 외곽"
-          }
-        ],
-        [
           {
             "en": "White Cross",
             "ko": "흰십자단"
           },
           {
-            "en": "Lesser state",
-            "ko": "약국"
-          },
-          {
-            "en": "Dongdaemun–Cheongnyangni Jegi-dong market axis",
-            "ko": "동대문·청량리 제기동시장축"
-          },
-          {
-            "en": "The medicinal-herb market, eastern medicine, rail",
-            "ko": "약재시장, 동부 의료, 철도"
+            "en": "Government",
+            "ko": "대한민국정부"
           }
         ],
         [
+          {
+            "en": "S14",
+            "ko": "S14"
+          },
           {
             "en": "Achasan Gate",
             "ko": "아관사"
           },
           {
-            "en": "Lesser state",
-            "ko": "약국"
-          },
-          {
-            "en": "Gwangjin–Guui–Achasan eastern Han River gate",
-            "ko": "광진·구의·아차산 동부 한강 관문"
-          },
-          {
-            "en": "Guui treatment plant, Achasan, eastern bridges",
-            "ko": "구의 정수, 아차산, 동부 교량"
+            "en": "Government",
+            "ko": "대한민국정부"
           }
         ],
         [
+          {
+            "en": "S12",
+            "ko": "S12"
+          },
+          {
+            "en": "Sinnae Transport",
+            "ko": "신내운수"
+          },
+          {
+            "en": "Government",
+            "ko": "대한민국정부"
+          }
+        ],
+        [
+          {
+            "en": "S04",
+            "ko": "S04"
+          },
+          {
+            "en": "Myeongbu Church",
+            "ko": "명부교회"
+          },
+          {
+            "en": "Religious union",
+            "ko": "종교 연합"
+          }
+        ],
+        [
+          {
+            "en": "S15",
+            "ko": "S15"
+          },
           {
             "en": "Myeongdong Archdiocese",
             "ko": "명동대교구"
           },
           {
-            "en": "Lesser state",
-            "ko": "소국"
-          },
-          {
-            "en": "Myeongdong Station central altar axis",
-            "ko": "명동역 중앙 제대축"
-          },
-          {
-            "en": "Myeongdong Cathedral altar, accreditation of marriages, adoptions, and memorial rites, diocesan registers",
-            "ko": "명동성당 제대, 혼인·양자·위령 인준, 교구 명부"
+            "en": "Religious union",
+            "ko": "종교 연합"
           }
         ],
         [
+          {
+            "en": "S10",
+            "ko": "S10"
+          },
+          {
+            "en": "Anguk Order",
+            "ko": "안국총림"
+          },
+          {
+            "en": "Government",
+            "ko": "대한민국정부"
+          }
+        ],
+        [
+          {
+            "en": "S11",
+            "ko": "S11"
+          },
+          {
+            "en": "Seongha Group",
+            "ko": "성하그룹"
+          },
+          {
+            "en": "Government",
+            "ko": "대한민국정부"
+          }
+        ],
+        [
+          {
+            "en": "S08",
+            "ko": "S08"
+          },
+          {
+            "en": "Central Intelligence Bureau",
+            "ko": "중앙정보부"
+          },
+          {
+            "en": "Neutral",
+            "ko": "중립"
+          }
+        ],
+        [
+          {
+            "en": "S16",
+            "ko": "S16"
+          },
           {
             "en": "Jeongdong Federation",
             "ko": "정동노총"
           },
           {
-            "en": "Lesser state",
-            "ko": "소국"
-          },
-          {
-            "en": "City Hall Station Jeongdong central register axis",
-            "ko": "시청역 정동 중앙 명부축"
-          },
-          {
-            "en": "Strike rolls, City Hall Plaza gatherings, Jeongdong offices",
-            "ko": "파업 명부, 시청 앞 집결, 정동 사무실"
+            "en": "Religious union",
+            "ko": "종교 연합"
           }
         ]
       ]
@@ -734,24 +592,16 @@
       "kind": "paragraph",
       "anchor": "십육국을-구-위에-얹기-p3-ko-label-12",
       "text": {
-        "en": "B. Ownership and occupation",
-        "ko": "나. 소유와 점령"
+        "en": "B. Station use and separate rights",
+        "ko": "나. 역 사용과 별도 권리"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "십육국을-구-위에-얹기-p3",
       "text": {
-        "en": [
-          {
-            "text": "The opening map derives surface control at 311 stations from the territory register. City Hall has a separate shared-control record for the Government of the Republic of Korea and the Jeongdong Federation, with government security taking priority. Gwangmyeong Sageori, Daechi, and Seoksu lie outside the mapped surface regions; each station's interior has its own control record."
-          }
-        ],
-        "ko": [
-          {
-            "text": "개막 지도는 311개 역의 지표 통제를 영토 원장에서 가져온다. 시청역은 대한민국정부와 정동노총의 공동 통제를 별도 기록하며 청사 경비를 우선한다. 광명사거리·대치·석수역은 지표 영토 원장의 지도 범위 밖에 있다. 각 역의 내부 통제는 지표와 별도 기록을 따른다."
-          }
-        ]
+        "en": "The opening political layer follows the current affiliation record; station interiors and surface rights follow their separate records. At City Hall Station, the Government and the Jeongdong Federation share use; the Government Complex Seoul guard handles security and passage permits first under the station record. Holdings in nearby dong follow their own records. The earlier territory register contained 311 station surface-control entries as a technical record of that edition.",
+        "ko": "개막 정치층은 현재 소속 기록을 따르고, 역 내부와 지표의 권리는 각각의 원장에 기록된다. 시청역에서는 대한민국정부와 정동노총이 함께 역을 사용하며, 역 기록상 경비와 통행증 업무는 대한민국정부 청사 경비대가 우선 맡는다. 주변 동의 보유권은 각 동의 기록을 따른다. 종전 영토 원장에는 당시 역 지표 통제 항목 311건이 기술 집계로 실렸다."
       }
     },
     {

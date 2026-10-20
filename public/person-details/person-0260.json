@@ -227,7 +227,7 @@
         "timeline": [
           {
             "year": 2065,
-            "summary": "오현성은 대합실 당직에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "summary": "오현성은 대합실 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-10.json",
@@ -551,47 +551,23 @@
             "name": "두소",
             "url": "/people/person-0260",
             "state": "S10",
-            "method": "card-lexicon",
-            "role": {
-              "display": "통행 시각·신도 표 게시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-10.json",
-                  "pointer": "/content/6/items/0/ko",
-                  "quote": "생업: 통행 시각·신도 표 게시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/7/text/ko",
-                    "quote": "통행 시각과 신도 표를 같은 칠판에 적고, 무장 안내는 강태산의 정찰 보고 뒤에만 연다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -599,73 +575,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/6/items/0/ko",
-                    "quote": "생업: 통행 시각·신도 표 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/7/text/ko",
-                    "quote": "통행 시각과 신도 표를 같은 칠판에 적고, 무장 안내는 강태산의 정찰 보고 뒤에만 연다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 안국총림 규모",
-              "faction_scale": {
-                "state": "S10",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "용답",
-              "type": "초소 영지",
-              "station": "용답",
-              "state": "S10",
-              "settlement": {
-                "name": "용답 정착지",
-                "type": "정착지",
-                "description": "용답 일대 고정 거점"
-              },
-              "note": "S10 용답 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -689,47 +620,23 @@
             "name": "두소",
             "url": "/people/person-0260",
             "state": "S10",
-            "method": "card-lexicon",
-            "role": {
-              "display": "통행 시각·신도 표 게시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-10.json",
-                  "pointer": "/content/6/items/0/ko",
-                  "quote": "생업: 통행 시각·신도 표 게시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/7/text/ko",
-                    "quote": "통행 시각과 신도 표를 같은 칠판에 적고, 무장 안내는 강태산의 정찰 보고 뒤에만 연다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -737,73 +644,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/6/items/0/ko",
-                    "quote": "생업: 통행 시각·신도 표 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/7/text/ko",
-                    "quote": "통행 시각과 신도 표를 같은 칠판에 적고, 무장 안내는 강태산의 정찰 보고 뒤에만 연다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 안국총림 규모",
-              "faction_scale": {
-                "state": "S10",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "용답",
-              "type": "초소 영지",
-              "station": "용답",
-              "state": "S10",
-              "settlement": {
-                "name": "용답 정착지",
-                "type": "정착지",
-                "description": "용답 일대 고정 거점"
-              },
-              "note": "S10 용답 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -926,18 +788,6 @@
       "factor": 1.2
     }
   },
-  "territory": {
-    "fief_name": "용답",
-    "type": "초소 영지",
-    "station": "용답",
-    "state": "S10",
-    "settlement": {
-      "name": "용답 정착지",
-      "type": "정착지",
-      "description": "용답 일대 고정 거점"
-    },
-    "note": "S10 용답 일대 관할 영지"
-  },
   "wandering_force": null,
   "clan": {
     "id": "b450-b450-b989",
@@ -977,15 +827,15 @@
     "욕망": "갈망 10 | 독점 40 | 위험 40 | 과시 10 | 지속 40 | 지향 유동 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 통행 장부 수좌 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2087-10-13 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 통행 장부 수좌 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 두소의 통행 시각·신도 표 게시 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
     "관직": "품계 수좌. 직함은 통행 장부 수좌. 통행 시각과 신도 표를 같은 칠판에 적고, 무장 안내는 강태산의 정찰 보고 뒤에만 연다.",
     "일화": "암사 순찰대가 철표를 들고 안내 칠판 앞에 검문 줄을 치려고 했다.",
     "관계": "모봉의 산악 운송을 입구에서 받고, 복모의 우회로 표시를 이정표에 옮긴다. 용국의 순찰과 횃불 교대를 나눈다.",
-    "야망": "통행 장부를 총림의 공개 거점으로 남겨 동부 순찰이 숙영 입구를 검문소로 쓰지 못하게 한다.",
+    "야망": "통행 장부를 총림의 공개 거점으로 남겨 암사 순찰이 숙영 입구를 검문소로 쓰지 못하게 한다.",
     "공포": "안내 표지가 군사 호송 이정표로 덧칠되어 피난로가 지워지는 것.",
     "개입": "검문 줄을 거두거나, 안내 칠판의 원본 시각을 산중총회의 증언으로 남길 수 있다."
   },
-  "biography": "이정표를 깎는 칼보다 말로 길을 나누고, 보호비를 안내료로 바꾸는 사람을 길에서 내려보낸다. 눈 덮인 표지는 자랑하지 않고 손으로 닦는다.\n\n- 생업: 통행 시각·신도 표 게시\n- 소속: 안국총림\n- 품계: 수좌\n- 직함: 통행 장부 수좌\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 통행 장부 수좌 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 수좌. 직함은 통행 장부 수좌. 통행 시각과 신도 표를 같은 칠판에 적고, 무장 안내는 강태산의 정찰 보고 뒤에만 연다.\n\n**일화.** 암사 순찰대가 철표를 들고 안내 칠판 앞에 검문 줄을 치려고 했다.\n\n**관계.** 모봉의 산악 운송을 입구에서 받고, 복모의 우회로 표시를 이정표에 옮긴다. 용국의 순찰과 횃불 교대를 나눈다.\n\n**야망.** 통행 장부를 총림의 공개 거점으로 남겨 동부 순찰이 숙영 입구를 검문소로 쓰지 못하게 한다.\n\n**공포.** 안내 표지가 군사 호송 이정표로 덧칠되어 피난로가 지워지는 것.\n\n**개입.** 검문 줄을 거두거나, 안내 칠판의 원본 시각을 산중총회의 증언으로 남길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 55 | 무력 −40 | 물질 −25 | 공동 65 | 원칙 25 | 공개 25 | 자격 30 | 분산 45 | 변혁 5\n- 욕망: 갈망 10 | 독점 40 | 위험 40 | 과시 10 | 지속 40 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "이정표를 깎는 칼보다 말로 길을 나누고, 보호비를 안내료로 바꾸는 사람을 길에서 내려보낸다. 눈 덮인 표지는 자랑하지 않고 손으로 닦는다.\n\n- 생업: 통행 시각·신도 표 게시\n- 소속: 안국총림\n- 품계: 수좌\n- 직함: 통행 장부 수좌\n**생애.** 2087-10-13 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 통행 장부 수좌 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 두소의 통행 시각·신도 표 게시 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 수좌. 직함은 통행 장부 수좌. 통행 시각과 신도 표를 같은 칠판에 적고, 무장 안내는 강태산의 정찰 보고 뒤에만 연다.\n\n**일화.** 암사 순찰대가 철표를 들고 안내 칠판 앞에 검문 줄을 치려고 했다.\n\n**관계.** 모봉의 산악 운송을 입구에서 받고, 복모의 우회로 표시를 이정표에 옮긴다. 용국의 순찰과 횃불 교대를 나눈다.\n\n**야망.** 통행 장부를 총림의 공개 거점으로 남겨 암사 순찰이 숙영 입구를 검문소로 쓰지 못하게 한다.\n\n**공포.** 안내 표지가 군사 호송 이정표로 덧칠되어 피난로가 지워지는 것.\n\n**개입.** 검문 줄을 거두거나, 안내 칠판의 원본 시각을 산중총회의 증언으로 남길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 55 | 무력 −40 | 물질 −25 | 공동 65 | 원칙 25 | 공개 25 | 자격 30 | 분산 45 | 변혁 5\n- 욕망: 갈망 10 | 독점 40 | 위험 40 | 과시 10 | 지속 40 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-10"
   ],

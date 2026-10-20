@@ -2,9 +2,9 @@
   "id": "person-0032",
   "name": "이강묵",
   "title": "금천 경비대장",
-  "position": "금천 경비대장 · 군포시 영주",
+  "position": "금천 경비대장",
   "characterId": "K032",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "경비·순찰",
   "gender": "남성",
@@ -453,52 +453,23 @@
             "name": "이강묵",
             "url": "/people/person-0032",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "경비·순찰",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/93/items/1/ko",
-                  "quote": "생업: 경비·순찰"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/94/text/ko",
-                    "quote": "치안 실적을 거리 게시판에 공개하지만, 비상 동원 암호는 장교 수첩에만 남겨 길드 평의회를 우회한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -506,111 +477,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/94/text/ko",
-                    "quote": "치안 실적을 거리 게시판에 공개하지만, 비상 동원 암호는 장교 수첩에만 남겨 길드 평의회를 우회한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/93/items/1/ko",
-                    "quote": "생업: 경비·순찰"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/93/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "이강묵 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       },
@@ -633,52 +534,23 @@
             "name": "이강묵",
             "url": "/people/person-0032",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "경비·순찰",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/93/items/1/ko",
-                  "quote": "생업: 경비·순찰"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/94/text/ko",
-                    "quote": "치안 실적을 거리 게시판에 공개하지만, 비상 동원 암호는 장교 수첩에만 남겨 길드 평의회를 우회한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -686,213 +558,64 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/94/text/ko",
-                    "quote": "치안 실적을 거리 게시판에 공개하지만, 비상 동원 암호는 장교 수첩에만 남겨 길드 평의회를 우회한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/93/items/1/ko",
-                    "quote": "생업: 경비·순찰"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/93/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "이강묵 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-41410-S02",
-      "name": {
-        "ko": "군포시 공작령 직영지"
-      },
-      "holderPersonId": "K032",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4141051000",
-          "name": "경기도 군포시 군포1동"
-        },
-        {
-          "id": "4141052000",
-          "name": "경기도 군포시 군포2동"
-        },
-        {
-          "id": "4141054000",
-          "name": "경기도 군포시 산본1동"
-        },
-        {
-          "id": "4141055000",
-          "name": "경기도 군포시 산본2동"
-        },
-        {
-          "id": "4141056000",
-          "name": "경기도 군포시 금정동"
-        },
-        {
-          "id": "4141057000",
-          "name": "경기도 군포시 재궁동"
-        },
-        {
-          "id": "4141058000",
-          "name": "경기도 군포시 오금동"
-        },
-        {
-          "id": "4141059000",
-          "name": "경기도 군포시 수리동"
-        },
-        {
-          "id": "4141060000",
-          "name": "경기도 군포시 궁내동"
-        },
-        {
-          "id": "4141061000",
-          "name": "경기도 군포시 대야동"
-        },
-        {
-          "id": "4141062000",
-          "name": "경기도 군포시 광정동"
-        },
-        {
-          "id": "4141063000",
-          "name": "경기도 군포시 송부동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41410-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41410-S02",
-      "name": "군포시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K032",
-      "basis": "개막 행정 규모 그룹 41410(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "4141051000",
-        "4141052000",
-        "4141054000",
-        "4141055000",
-        "4141056000",
-        "4141057000",
-        "4141058000",
-        "4141059000",
-        "4141060000",
-        "4141061000",
-        "4141062000",
-        "4141063000"
+      "politicalParentTitleId": "title:kingdom-s02",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-41410-S02",
+          "directLiegePersonId": "K029"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -907,7 +630,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -959,11 +681,12 @@
     "생업": "경비·순찰",
     "품계": "조합원",
     "직함": "금천 경비대장",
+    "업무 위치": "가산동. 이강묵은 가산동 차단문 앞에서 야간 순찰 암호패와 공방 출입 기록을 맞춘다. 군수 물량의 별도 반출을 요구할 때에는 김나율의 시민권 명부를 맡은 채리울의 이중 계약과 부딪히고, 장석윤에게는 차단문 전술 기록을 돌린다.",
     "가치관": "권위 −30 | 개방 20 | 무력 −15 | 물질 30 | 공동 50 | 원칙 5 | 공개 30 | 자격 55 | 분산 15 | 변혁 30",
     "욕망": "갈망 40 | 독점 −20 | 위험 −30 | 과시 20 | 지속 −10 | 지향 동성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 금천 경비대장 자리는 야간 무단 도하 적발로 열렸다.",
+    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 금천 경비대장 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 가산동. 이강묵은 가산동 차단문 앞에서 야간 순찰 암호패와 공방 출입 기록을 맞춘다. 군수 물량의 별도 반출을 요구할 때에는 김나율의 시민권 명부를 맡은 채리울의 이중 계약과 부딪히고, 장석윤에게는 차단문 전술 기록을 돌린다.",
     "관직": "품계 조합원. 직함은 금천 경비대장. 치안 실적을 거리 게시판에 공개하지만, 비상 동원 암호는 장교 수첩에만 남겨 길드 평의회를 우회한다.",
     "일화": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 금천 경비대장 자리의 서명이 장부에 올랐다.",
     "관계": "강민서를 필요한 중재자로 보나 군수 독점에서는 경쟁하고, 암사 장교 장석윤과 차단문 전술을 거래하며, 김나율과는 명부를 둘러싼 원한이다.",
@@ -971,7 +694,7 @@
     "공포": "노동조합이 부품 출고를 멈춰 경비대가 빈 차단문만 지키다 외곽 약탈에 뚫리는 것.",
     "개입": "비밀 무기 생산 수첩을 길드 평의회에 넘기거나, 외곽 약탈을 함께 막아 그의 동원령을 정당화할 수 있다."
   },
-  "biography": "속도를 정의로 여기고, 토론이 길어지면 차단문부터 내린다. 부하 가족의 배급은 책임지되 조합 쪽 지연은 배신으로 읽는다.\n\n- 소속: 규격맹\n- 생업: 경비·순찰\n- 품계: 조합원\n- 직함: 금천 경비대장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 금천 경비대장 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 조합원. 직함은 금천 경비대장. 치안 실적을 거리 게시판에 공개하지만, 비상 동원 암호는 장교 수첩에만 남겨 길드 평의회를 우회한다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 금천 경비대장 자리의 서명이 장부에 올랐다.\n\n**관계.** 강민서를 필요한 중재자로 보나 군수 독점에서는 경쟁하고, 암사 장교 장석윤과 차단문 전술을 거래하며, 김나율과는 명부를 둘러싼 원한이다.\n\n**야망.** 작업반을 상시 공병대로 전환하고 수리 규격을 군수 우선으로 재편해 규격맹의 무력을 자신이 쥐게 한다.\n\n**공포.** 노동조합이 부품 출고를 멈춰 경비대가 빈 차단문만 지키다 외곽 약탈에 뚫리는 것.\n\n**개입.** 비밀 무기 생산 수첩을 길드 평의회에 넘기거나, 외곽 약탈을 함께 막아 그의 동원령을 정당화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 20 | 무력 −15 | 물질 30 | 공동 50 | 원칙 5 | 공개 30 | 자격 55 | 분산 15 | 변혁 30\n- 욕망: 갈망 40 | 독점 −20 | 위험 −30 | 과시 20 | 지속 −10 | 지향 동성 | 결합 다자\n:::",
+  "biography": "속도를 정의로 여기고, 토론이 길어지면 차단문부터 내린다. 부하 가족의 배급은 책임지되 조합 쪽 지연은 배신으로 읽는다.\n\n- 소속: 규격맹\n- 생업: 경비·순찰\n- 품계: 조합원\n- 직함: 금천 경비대장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 금천 경비대장 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 가산동. 이강묵은 가산동 차단문 앞에서 야간 순찰 암호패와 공방 출입 기록을 맞춘다. 군수 물량의 별도 반출을 요구할 때에는 김나율의 시민권 명부를 맡은 채리울의 이중 계약과 부딪히고, 장석윤에게는 차단문 전술 기록을 돌린다.\n\n**관직.** 품계 조합원. 직함은 금천 경비대장. 치안 실적을 거리 게시판에 공개하지만, 비상 동원 암호는 장교 수첩에만 남겨 길드 평의회를 우회한다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 금천 경비대장 자리의 서명이 장부에 올랐다.\n\n**관계.** 강민서를 필요한 중재자로 보나 군수 독점에서는 경쟁하고, 암사 장교 장석윤과 차단문 전술을 거래하며, 김나율과는 명부를 둘러싼 원한이다.\n\n**야망.** 작업반을 상시 공병대로 전환하고 수리 규격을 군수 우선으로 재편해 규격맹의 무력을 자신이 쥐게 한다.\n\n**공포.** 노동조합이 부품 출고를 멈춰 경비대가 빈 차단문만 지키다 외곽 약탈에 뚫리는 것.\n\n**개입.** 비밀 무기 생산 수첩을 길드 평의회에 넘기거나, 외곽 약탈을 함께 막아 그의 동원령을 정당화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 20 | 무력 −15 | 물질 30 | 공동 50 | 원칙 5 | 공개 30 | 자격 55 | 분산 15 | 변혁 30\n- 욕망: 갈망 40 | 독점 −20 | 위험 −30 | 과시 20 | 지속 −10 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-02"
   ],

@@ -444,47 +444,23 @@
             "name": "성달현",
             "url": "/people/person-0616",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "급수 배분 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/435/items/1/ko",
-                  "quote": "생업: 급수 배분 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/436/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -492,105 +468,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/435/items/1/ko",
-                    "quote": "생업: 급수 배분 당직"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/436/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/435/items/1/ko",
-                    "quote": "생업: 급수 배분 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/435/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "세류",
-              "type": "초소 영지",
-              "station": "세류",
-              "state": "S01",
-              "settlement": {
-                "name": "세류 정착지",
-                "type": "정착지",
-                "description": "세류 일대 고정 거점"
-              },
-              "note": "S01 세류 일대 관할 영지"
+              "unspent": 35
             }
           }
         }
@@ -614,47 +525,23 @@
             "name": "성달현",
             "url": "/people/person-0616",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "급수 배분 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/435/items/1/ko",
-                  "quote": "생업: 급수 배분 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/436/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -662,105 +549,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/435/items/1/ko",
-                    "quote": "생업: 급수 배분 당직"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/436/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/435/items/1/ko",
-                    "quote": "생업: 급수 배분 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/435/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "세류",
-              "type": "초소 영지",
-              "station": "세류",
-              "state": "S01",
-              "settlement": {
-                "name": "세류 정착지",
-                "type": "정착지",
-                "description": "세류 일대 고정 거점"
-              },
-              "note": "S01 세류 일대 관할 영지"
+              "unspent": 35
             }
           }
         }
@@ -781,18 +603,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "세류",
-    "type": "초소 영지",
-    "station": "세류",
-    "state": "S01",
-    "settlement": {
-      "name": "세류 정착지",
-      "type": "정착지",
-      "description": "세류 일대 고정 거점"
-    },
-    "note": "S01 세류 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -829,19 +639,20 @@
     "생업": "급수 배분 당직",
     "품계": "주사",
     "직함": "배급구역 서기",
+    "업무 위치": "신정2동. 성달현은 배급 합계와 수도꼭지 압력이 다른 골목을 표시해 이서담에게 보여 주고 신정2동 급수 인계에 올린다.",
     "가치관": "권위 50 | 개방 −15 | 무력 5 | 물질 45 | 공동 20 | 원칙 15 | 공개 20 | 자격 10 | 분산 −45 | 변혁 −30",
     "욕망": "갈망 0 | 독점 −10 | 위험 −5 | 과시 −5 | 지속 −20 | 지향 유동 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "관직": "품계 주사. 직함은 배급구역 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 성달현은 배급 합계와 수도꼭지 압력이 다른 골목을 표시해 이서담에게 보여 주고 신정2동 급수 인계에 올린다.",
+    "관직": "품계 주사. 직함은 배급구역 서기이다. 성달현은 배급 합계와 수도꼭지 압력이 다른 골목을 표시해 이서담에게 보여 주고 신정2동 급수 인계에 올린다.",
     "일화": "배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다.",
     "관계": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
     "야망": "배급구역 서기 자리에서 수문국의 장부를 끊기지 않게 잇는다.",
     "공포": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 주사\n- 직함: 배급구역 서기\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 주사. 직함은 배급구역 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다.\n\n**관계.** 이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.\n\n**야망.** 배급구역 서기 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −15 | 무력 5 | 물질 45 | 공동 20 | 원칙 15 | 공개 20 | 자격 10 | 분산 −45 | 변혁 −30\n- 욕망: 갈망 0 | 독점 −10 | 위험 −5 | 과시 −5 | 지속 −20 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 주사\n- 직함: 배급구역 서기\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 성달현은 배급 합계와 수도꼭지 압력이 다른 골목을 표시해 이서담에게 보여 주고 신정2동 급수 인계에 올린다.\n\n**관직.** 품계 주사. 직함은 배급구역 서기이다. 성달현은 배급 합계와 수도꼭지 압력이 다른 골목을 표시해 이서담에게 보여 주고 신정2동 급수 인계에 올린다.\n\n**일화.** 배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다.\n\n**관계.** 이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.\n\n**야망.** 배급구역 서기 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −15 | 무력 5 | 물질 45 | 공동 20 | 원칙 15 | 공개 20 | 자격 10 | 분산 −45 | 변혁 −30\n- 욕망: 갈망 0 | 독점 −10 | 위험 −5 | 과시 −5 | 지속 −20 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-01"
   ],

@@ -6,7 +6,7 @@
   "categories": [
     "ailments"
   ],
-  "status": "draft",
+  "status": "approved",
   "tense": {
     "en": "past",
     "ko": "past"
@@ -78,8 +78,9 @@
           {
             "text": "The Great Blackout",
             "link": {
-              "domain": "overview",
-              "slug": "World-Unbinding"
+              "domain": "chronology",
+              "slug": "Century-Annals",
+              "anchor": "2030년"
             }
           },
           {
@@ -93,8 +94,9 @@
           {
             "text": "대정전",
             "link": {
-              "domain": "overview",
-              "slug": "World-Unbinding"
+              "domain": "chronology",
+              "slug": "Century-Annals",
+              "anchor": "2030년"
             }
           },
           {
@@ -127,14 +129,14 @@
       "text": {
         "en": [
           {
-            "text": "The Scenario Timeline",
+            "text": "Seoul Subway States Timeline 2030–2126",
             "link": {
               "domain": "chronology",
-              "slug": "Scenario-Timeline"
+              "slug": "Century-Annals"
             }
           },
           {
-            "text": " did not treat nuclear war, climate collapse or plague as first causes of disease. In 2126, when a cough patient appeared in a concourse, the medical officer inspected the tanks, the medicine chests and the damp walls first. In summer, patients from turbid water and counterfeit medicine increased first. When water ran short, medical convoys ran late. When medicine ran short, trust in the ration windows fell."
+            "text": " describes illness in 2126: when a coughing patient appears in a concourse, the medical officer checks the tanks, medicine chests and damp walls. Turbid drinking water and counterfeit medicine increase the number of patients. When water runs short, medical convoys arrive late; when medicine runs short, trust in ration windows falls."
           }
         ],
         "ko": [
@@ -142,11 +144,11 @@
             "text": "연표",
             "link": {
               "domain": "chronology",
-              "slug": "Scenario-Timeline"
+              "slug": "Century-Annals"
             }
           },
           {
-            "text": "는 핵전쟁, 기후붕괴, 역병을 질병의 1차 원인으로 두지 않는다. 2126년 현재 대합실에서 기침 환자가 나오면 의무원은 수조와 약장과 젖은 벽을 먼저 점검한다. 여름에는 탁수와 가짜 약으로 인한 환자가 먼저 늘어난다. 급수가 부족하면 의료 호송이 늦어진다. 약품이 부족하면 배급 창구에 대한 신뢰가 떨어진다."
+            "text": "에서 이어지는 2126년의 질병은 대합실의 기침 환자를 살피는 의무원의 일에도 드러난다. 의무원은 수조와 약장, 젖은 벽을 살핀다. 식수에 탁수가 섞이거나 가짜 약이 유통되면 환자가 늘어난다. 급수가 부족하면 의료 호송이 늦어지고, 약품이 부족하면 배급 창구에 대한 신뢰가 떨어진다."
           }
         ]
       }
@@ -184,32 +186,12 @@
       "text": {
         "en": [
           {
-            "text": "In 2026, Seoul's drinking water came from a system that treated raw Han water and sent it through pipes. The Yeongdeungpo Arisu treatment center supplied Gangseo, Guro, Geumcheon and Yangcheon; Ttukseom supplied Seongdong, Jung-gu and Yongsan; Guui supplied Gwangjin, Jungnang and Dongdaemun; Amsa supplied Gangnam, Gangdong and the southern districts. The Gangbuk center was in Namyangju and the Gwangam center in Hanam. Both lay outside Seoul, beyond the easy control of "
-          },
-          {
-            "text": "the Sixteen States of Seoul",
-            "link": {
-              "domain": "factions",
-              "slug": "Sixteen-States"
-            }
-          },
-          {
-            "text": "."
+            "text": "In 2026, Seoul’s drinking water came from a system that treated raw Han River water and sent it through pipes. Yeongdeungpo Arisu waterworks supplied Gangseo, Guro, Geumcheon and Yangcheon; Ttukseom supplied Seongdong, Jung-gu and Yongsan; Guui supplied Gwangjin, Jungnang and Dongdaemun; Amsa supplied Gangnam, Gangdong and other southern districts. The Gangbuk plant was in Namyangju and the Gwangam plant in Hanam. Their locations and service areas remain in the 2026 infrastructure record."
           }
         ],
         "ko": [
           {
-            "text": "2026년 서울의 식수는 한강 원수를 정수하여 관으로 보내는 체계였다. 영등포아리수정수센터는 강서·구로·금천·양천에, 뚝섬은 성동·중구·용산에, 구의는 광진·중랑·동대문에, 암사는 강남·강동과 남부 여러 구에 물을 공급하였다. 강북정수센터는 남양주에, 광암정수센터는 하남에 있다. 두 곳은 서울 밖에 있어 "
-          },
-          {
-            "text": "서울 십육국",
-            "link": {
-              "domain": "factions",
-              "slug": "Sixteen-States"
-            }
-          },
-          {
-            "text": "의 통제가 미치기 어렵다."
+            "text": "2026년 서울의 식수는 한강 원수를 정수하여 관으로 보내는 체계였다. 영등포아리수정수센터는 강서·구로·금천·양천에, 뚝섬은 성동·중구·용산에, 구의는 광진·중랑·동대문에, 암사는 강남·강동과 남부 여러 구에 물을 공급하였다. 강북정수센터는 남양주에, 광암정수센터는 하남에 있었다. 두 정수장의 위치와 당시 급수 구역은 2026년 시설 기록에 남아 있다."
           }
         ]
       }
@@ -236,8 +218,8 @@
       "kind": "paragraph",
       "anchor": "수인병-p4",
       "text": {
-        "en": "On October 14, 2030, remote control failed at the Yeongdeungpo waterworks. The staff manually started the emergency generator and Han Jeonghun operated valves by hand. On November 6, Yeouido vault representatives supplied two generator parts.",
-        "ko": "2030년 10월 14일 영등포아리수정수센터의 원격 제어가 끊겼다. 당직자들은 비상발전기를 수동으로 기동하고 한정훈은 밸브를 수동으로 조작하였다. 11월 6일 여의도 금고층 대표들은 비상발전기 부품 2개를 정수센터에 건넸다."
+        "en": "On October 14, 2030, remote control failed at the Yeongdeungpo waterworks. The staff manually started the emergency generator and Han Jeonghun operated valves by hand. On November 6 of that year, two Yeouido vault representatives supplied two emergency-generator parts to the waterworks. The daily 06:00–12:00 duty to open the water-pipe valve toward Yeouido is a separate record dating from 2026.",
+        "ko": "2030년 10월 14일 영등포아리수정수센터의 원격 제어가 끊겼다. 당직자들은 비상발전기를 수동으로 기동하고 한정훈은 밸브를 수동으로 조작하였다. 그해 11월 6일 여의도 금고층 대표 2명이 비상발전기 부품 2개를 정수센터에 건넸다. 여의도 방향 송수관 밸브를 매일 06:00부터 12:00까지 여는 당직은 2026년부터의 별도 기록이다."
       }
     },
     {
@@ -290,7 +272,7 @@
       "text": {
         "en": [
           {
-            "text": "Station tanks raised carp, crucian carp and catfish (hereafter \"tank fish\"). The water that raised the tank fish and the drinking water were drawn from the same tank. When waste from the rearing cells mixed into the drinking water, the turbid water went into that evening's soup. Tank operation is recorded in "
+            "text": "Station tanks raised carp, crucian carp and catfish (hereafter \"tank fish\"). Water in the rearing cells was used for fish husbandry and water-quality tests; drinking water for the evening soup was tracked in a separate drinking-water ledger. If waste and feed from the rearing cells mixed into drinking water, it turned turbid, that evening’s water-quality inspection failed, and the risk of waterborne disease rose. The turbid water and failed inspection remained in that evening’s inspection record. Tank operation is recorded in "
           },
           {
             "text": "Food Culture",
@@ -315,7 +297,7 @@
         ],
         "ko": [
           {
-            "text": "역 수조에서는 잉어, 붕어, 메기(이하 '수조 농어'라 한다)를 기른다. 수조 농어를 기르는 물과 식수는 같은 수조에서 뜬다. 사육 칸의 배설물이 식수에 섞이면 탁한 물이 그날 저녁 국물에 쓰인다. 수조 운영은 "
+            "text": "역 수조에서는 잉어·붕어·메기를 기른다. 사육 칸의 물은 양어와 수질 검사에 쓰고, 저녁 국물에 쓰는 식수는 별도 식수 장부로 관리한다. 사육 칸의 배설물과 사료가 식수에 섞이면 물이 탁해지고 그날 저녁 수질 검사가 실패하며 수인병 위험이 커진다. 탁한 물과 검사 실패는 그날 저녁 검사 기록에 남는다. 수조 운영은 "
           },
           {
             "text": "식문화",
@@ -342,43 +324,17 @@
     },
     {
       "kind": "paragraph",
-      "anchor": "수인병-p9",
-      "text": {
-        "en": [
-          {
-            "text": "E. The first summer",
-            "strong": true
-          }
-        ],
-        "ko": [
-          {
-            "text": "마. 첫해 여름",
-            "strong": true
-          }
-        ]
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "수인병-p10",
-      "text": {
-        "en": "In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. Ryu Eunbi cut off all White Cross transactions at that auction. Jeong Hojun opened the seal of a sample in the Yangjae archive.",
-        "ko": "2124년 가짜 약 상자가 서울역 경매에 올랐다. 흰십자단 단장 류은비는 해당 경매 거래를 모두 끊었다. 태욱그룹 생명안전 연구책임자 정호준은 양재 서고에 들어온 표본의 봉인을 열었다."
-      }
-    },
-    {
-      "kind": "paragraph",
       "anchor": "수인병-p11",
       "text": {
         "en": [
           {
-            "text": "F. The Flood-Mold Breath Cluster",
+            "text": "E. The Flood-Mold Breath Cluster",
             "strong": true
           }
         ],
         "ko": [
           {
-            "text": "바. 침수곰팡이호흡단",
+            "text": "마. 침수곰팡이호흡단",
             "strong": true
           }
         ]
@@ -393,26 +349,18 @@
             "text": "The "
           },
           {
-            "text": "Flood-Mold Breath Cluster",
-            "link": {
-              "domain": "bestiary",
-              "slug": "groups/Hostile-Group-G10"
-            }
+            "text": "Flood-Mold Breath Cluster"
           },
           {
-            "text": " (hereafter \"the Cluster\") arose from repeated flooding in the Bukhansan Bogukmun corridor and the lower logistics warehouses of Garak and Jamsil. The name referred to an ecology and did not denote a social class. Wet concrete, the heat of grain and late ventilation increased the number of cough patients."
+            "text": " (hereafter \"the Cluster\") arose where flooding repeatedly wetted the Bukhansan Bogukmun corridor and the lower logistics warehouses of Garak and Jamsil. Wet concrete, heat from stored grain and delayed ventilation fostered mold; more people in those spaces developed coughs."
           }
         ],
         "ko": [
           {
-            "text": "침수곰팡이호흡단",
-            "link": {
-              "domain": "bestiary",
-              "slug": "groups/Hostile-Group-G10"
-            }
+            "text": "침수곰팡이호흡단"
           },
           {
-            "text": "(이하 '호흡단'이라 한다)은 북한산보국문 회랑과 가락·잠실의 하층 물류 창고에서 침수가 반복되며 생겨났다. 호흡단은 생태를 가리키는 이름이며 사회 계급을 뜻하지 않는다. 젖은 콘크리트, 곡물의 열기, 늦은 환기가 기침 환자를 늘린다."
+            "text": "(이하 '호흡단'이라 한다)은 북한산보국문 회랑과 가락·잠실의 하층 물류 창고가 거듭 침수된 곳에서 생겨났다. 젖은 콘크리트와 곡물의 열기, 늦은 환기가 곰팡이를 키웠고 그곳에서 기침하는 사람이 늘었다."
           }
         ]
       }
@@ -510,13 +458,13 @@
       "text": {
         "en": [
           {
-            "text": "D. Symptoms by case",
+            "text": "D. Damaged seals and the Yangjae sample",
             "strong": true
           }
         ],
         "ko": [
           {
-            "text": "라. 복용 사례별 증상",
+            "text": "라. 훼손 봉인과 양재 표본",
             "strong": true
           }
         ]
@@ -526,24 +474,8 @@
       "kind": "paragraph",
       "anchor": "비축약의-부작용-p8",
       "text": {
-        "en": "Medics screen out medicine with damaged seals or poor storage conditions before administering it. In 2124, Jeong Hojun opened the seal of a counterfeit medicine sample in the Yangjae archive.",
-        "ko": "의무원은 봉인이 훼손되거나 보관 상태가 나쁜 약을 투약 전에 가려낸다. 2124년 정호준은 양재 서고에 들어온 가짜 약 표본의 봉인을 열었다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "비축약의-부작용-p9",
-      "text": {
-        "en": "E. The 2124 counterfeit medicine auction",
-        "ko": "마. 2124년 가짜 약 경매"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "비축약의-부작용-p10",
-      "text": {
-        "en": "In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. White Cross leader Ryu Eunbi ended all of the group’s transactions at that auction.",
-        "ko": "2124년 가짜 약 상자가 서울역 경매에 올랐다. 흰십자단 단장 류은비는 해당 경매 거래를 모두 끊었다."
+        "en": "Medics screen out medicine with damaged seals or poor storage conditions before administering it. On the day of the 2124 Seoul Station auction, Jeong Hojun, life-safety research director of the Taewook Group, opened the seal of a counterfeit medicine sample in the Yangjae archive.",
+        "ko": "의무원은 봉인이 훼손되거나 보관 상태가 나쁜 약을 투약 전에 가려낸다. 2124년 서울역 경매가 열린 같은 날, 태욱그룹 생명안전 연구책임자 정호준은 양재 서고에 들어온 가짜 약 표본의 봉인을 열었다."
       }
     },
     {
@@ -603,7 +535,7 @@
       "kind": "paragraph",
       "anchor": "정전-뒤의-유해환경-p4",
       "text": {
-        "en": "An explorer put on breathing protection and a lamp before opening a deep tunnel. The trade zone's equipment list began with those two items. Mold grew on the same walls as asbestos. When quarters behind on the ventilation roster, the heat of ration grain and condensation-beaded drinking pipes came together in one block, coughs and stinging eyes appeared first.",
+        "en": "An explorer puts on respiratory protection and carries a lamp before opening a deep tunnel. These are the first two items on the work-area equipment list. Mold grows on the same walls as asbestos. When sleeping quarters with delayed ventilation, heat from stored ration grain and condensation on drinking-water pipes occur together in one area, coughs and stinging eyes appear first.",
         "ko": "탐사원은 심층 터널을 열기 전에 호흡보호구와 램프를 갖춘다. 생업 구역의 장비 목록 맨 앞은 이 두 가지다. 곰팡이는 석면과 같은 벽에서 자란다. 환기 순번이 밀린 숙영실, 배급 곡물의 열기, 결로가 맺힌 식수관이 한 구역에 모이면 기침과 눈 따가움이 먼저 나타난다."
       }
     },
@@ -611,8 +543,18 @@
       "kind": "paragraph",
       "anchor": "정전-뒤의-유해환경-p5",
       "text": {
-        "en": "C. Damp walls and ventilation",
-        "ko": "다. 젖은 벽과 환기"
+        "en": [
+          {
+            "text": "C. Damp walls and ventilation",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "다. 젖은 벽과 환기",
+            "strong": true
+          }
+        ]
       }
     },
     {
@@ -645,7 +587,7 @@
       "kind": "paragraph",
       "anchor": "정전-뒤의-유해환경-p8",
       "text": {
-        "en": "Coolant was kept off the drinking-water ledger. When the liquid left in depot heat exchangers, substation cooling loops and medical refrigerators stagnated, a film formed on the metal. The sensors then showed normal readings while the far branch pipes clogged. The field called that film the Coolant-Index Fungal Body.",
+        "en": "Coolant is not entered in the drinking-water ledger. If liquid left in depot heat exchangers, substation cooling loops and medical refrigerators pools, a film forms on metal surfaces. The sensors then show normal readings while distant branch pipes become clogged. Field workers call this film the Coolant-Index Fungal Body.",
         "ko": "냉각수는 식수 장부에 올리지 않는다. 차량기지 열교환기, 변전 냉각 루프, 의료 냉장고에 남은 액체가 고이면 금속 표면에 막이 생긴다. 이 경우 센서는 정상 수치를 표시하지만 먼 분기관은 막힌다. 현장에서는 이 막을 냉각수색인균체라고 부른다."
       }
     },
@@ -673,27 +615,23 @@
       "text": {
         "en": [
           {
-            "text": "The drinking-water and coolant ledgers were kept apart even in front of the "
+            "text": "The drinking-water and coolant ledgers are kept separately even around "
           },
           {
-            "text": "G19",
+            "text": "G19"
+          },
+          {
+            "text": " groups or "
+          },
+          {
+            "text": "The Arms and Technology of This Era",
             "link": {
-              "domain": "bestiary",
-              "slug": "groups/Hostile-Group-G19"
+              "domain": "goods",
+              "slug": "Era-Arms-and-Tech-Level"
             }
           },
           {
-            "text": " swarms or the equipment of "
-          },
-          {
-            "text": "the old technology",
-            "link": {
-              "domain": "technology",
-              "slug": "Lost-Technology-Lineage"
-            }
-          },
-          {
-            "text": ". When a watchman poured coolant into a tank, waterborne disease spread."
+            "text": " equipment. If a watch worker pours coolant into a tank, waterborne disease spreads."
           }
         ],
         "ko": [
@@ -701,11 +639,7 @@
             "text": "식수 장부와 냉각수 장부는 "
           },
           {
-            "text": "G19",
-            "link": {
-              "domain": "bestiary",
-              "slug": "groups/Hostile-Group-G19"
-            }
+            "text": "G19"
           },
           {
             "text": " 무리나 "
@@ -713,8 +647,8 @@
           {
             "text": "옛 기술",
             "link": {
-              "domain": "technology",
-              "slug": "Lost-Technology-Lineage"
+              "domain": "goods",
+              "slug": "Era-Arms-and-Tech-Level"
             }
           },
           {
@@ -747,28 +681,30 @@
       "text": {
         "en": [
           {
-            "text": "First floors south of the Han and along the tributaries were used as monsoon storage or left empty. Living quarters were on the third floor and above. The ration windows were moved into "
+            "text": "First floors south of the Han and along the tributaries are reserved for storage during flooding or left empty. Living quarters are on the third floor and above. The ration windows have been moved into "
           },
           {
-            "text": "buildings inside the embankment",
+            "text": "Treatment Plants and Sluices",
             "link": {
-              "domain": "places",
-              "slug": "Building-Reuse-Geography"
+              "domain": "structures",
+              "slug": "Structures",
+              "anchor": "정수장과-수문"
             }
           },
           {
-            "text": ". The medical officers' patients were mostly people who had slept on a wet first floor, used a special room full of asbestos dust as quarters, or washed in a coolant puddle."
+            "text": ". Medical officers’ patients are mostly people who slept on a wet first floor, used a special room with airborne asbestos dust as sleeping quarters, or washed in a coolant puddle."
           }
         ],
         "ko": [
           {
-            "text": "한강 이남의 1층과 지천 변은 우기 창고로 쓰이거나 비어 있다. 거주 구역은 3층 이상에 있다. 배급 창구는 "
+            "text": "한강 이남의 1층과 지천 변은 침수 때 쓰는 창고로 두거나 비워 둔다. 거주 구역은 3층 이상에 있다. 배급 창구는 "
           },
           {
             "text": "제방 안쪽 건물",
             "link": {
-              "domain": "places",
-              "slug": "Building-Reuse-Geography"
+              "domain": "structures",
+              "slug": "Structures",
+              "anchor": "정수장과-수문"
             }
           },
           {
@@ -801,14 +737,10 @@
       "text": {
         "en": [
           {
-            "text": "Machines",
-            "link": {
-              "domain": "people-and-machines",
-              "slug": "People-and-Machines"
-            }
+            "text": "Machines"
           },
           {
-            "text": " and people worked in the same air. Anyone who entered a "
+            "text": " and people work in the same air. Anyone entering a "
           },
           {
             "text": "station interior",
@@ -818,16 +750,12 @@
             }
           },
           {
-            "text": " whose ventilation and water supply had not been checked breathed contaminated air and touched contaminated water."
+            "text": " whose ventilation and water supply have not been checked breathes contaminated air and comes into contact with contaminated water."
           }
         ],
         "ko": [
           {
-            "text": "기계",
-            "link": {
-              "domain": "people-and-machines",
-              "slug": "People-and-Machines"
-            }
+            "text": "기계"
           },
           {
             "text": "와 사람은 같은 공기 속에서 작업한다. 환기와 급수가 확인되지 않은 "
@@ -873,8 +801,8 @@
             "ko": "한강 정수, 역 수조, 침수 터널"
           },
           {
-            "en": "Turbid water, diarrhea and dehydration, the mixing of tank aquaculture and drinking water",
-            "ko": "탁수, 설사와 탈수, 수조 농어와 식수의 섞임"
+            "en": "Turbid water, diarrhea and dehydration, the mixing of fish-rearing water and drinking water",
+            "ko": "탁수, 설사와 탈수, 양어수와 식수의 섞임"
           }
         ],
         [
@@ -887,7 +815,7 @@
             "ko": "필수의약품 잔존, 제기동 약재, 저온칸 분류"
           },
           {
-            "en": "Efficacy-less doses, counterfeit medicine, preparations cut from refrigeration",
+            "en": "Doses without effect, counterfeit medicine, preparations left without refrigeration",
             "ko": "효력 없는 복용, 가짜 약, 냉장 끊긴 제제"
           }
         ],

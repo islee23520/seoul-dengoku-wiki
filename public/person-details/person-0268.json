@@ -551,52 +551,23 @@
             "name": "단유진",
             "url": "/people/person-0268",
             "state": "S10",
-            "method": "card-lexicon",
-            "role": {
-              "display": "협의 문안·문중 표 결과 게시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-10.json",
-                  "pointer": "/content/237/items/0/ko",
-                  "quote": "생업: 협의 문안·문중 표 결과 게시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/238/text/ko",
-                    "quote": "문중 표 결과를 당일 숙영과 회의장에 동시에 붙이고, 매수 쪽지는 게시판에 그대로 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/239/text/ko",
-                    "quote": "단유진은 쪽지를 게시판에 붙여 공개하고, 문중 표 결과를 숙영과 회의장에 동시에 게시한 뒤 정유라의 공동교섭 좌석에 시민권 문안을 올린다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -604,78 +575,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/237/items/0/ko",
-                    "quote": "생업: 협의 문안·문중 표 결과 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/238/text/ko",
-                    "quote": "문중 표 결과를 당일 숙영과 회의장에 동시에 붙이고, 매수 쪽지는 게시판에 그대로 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/239/text/ko",
-                    "quote": "단유진은 쪽지를 게시판에 붙여 공개하고, 문중 표 결과를 숙영과 회의장에 동시에 게시한 뒤 정유라의 공동교섭 좌석에 시민권 문안을 올린다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 안국총림 규모",
-              "faction_scale": {
-                "state": "S10",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "동묘앞",
-              "type": "초소 영지",
-              "station": "동묘앞",
-              "state": "S10",
-              "settlement": {
-                "name": "동묘앞 정착지",
-                "type": "정착지",
-                "description": "동묘앞 일대 고정 거점"
-              },
-              "note": "S10 동묘앞 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
@@ -699,52 +620,23 @@
             "name": "단유진",
             "url": "/people/person-0268",
             "state": "S10",
-            "method": "card-lexicon",
-            "role": {
-              "display": "협의 문안·문중 표 결과 게시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-10.json",
-                  "pointer": "/content/237/items/0/ko",
-                  "quote": "생업: 협의 문안·문중 표 결과 게시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/238/text/ko",
-                    "quote": "문중 표 결과를 당일 숙영과 회의장에 동시에 붙이고, 매수 쪽지는 게시판에 그대로 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/239/text/ko",
-                    "quote": "단유진은 쪽지를 게시판에 붙여 공개하고, 문중 표 결과를 숙영과 회의장에 동시에 게시한 뒤 정유라의 공동교섭 좌석에 시민권 문안을 올린다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -752,78 +644,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/237/items/0/ko",
-                    "quote": "생업: 협의 문안·문중 표 결과 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/238/text/ko",
-                    "quote": "문중 표 결과를 당일 숙영과 회의장에 동시에 붙이고, 매수 쪽지는 게시판에 그대로 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/239/text/ko",
-                    "quote": "단유진은 쪽지를 게시판에 붙여 공개하고, 문중 표 결과를 숙영과 회의장에 동시에 게시한 뒤 정유라의 공동교섭 좌석에 시민권 문안을 올린다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 안국총림 규모",
-              "faction_scale": {
-                "state": "S10",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "동묘앞",
-              "type": "초소 영지",
-              "station": "동묘앞",
-              "state": "S10",
-              "settlement": {
-                "name": "동묘앞 정착지",
-                "type": "정착지",
-                "description": "동묘앞 일대 고정 거점"
-              },
-              "note": "S10 동묘앞 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
@@ -844,18 +686,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "동묘앞",
-    "type": "초소 영지",
-    "station": "동묘앞",
-    "state": "S10",
-    "settlement": {
-      "name": "동묘앞 정착지",
-      "type": "정착지",
-      "description": "동묘앞 일대 고정 거점"
-    },
-    "note": "S10 동묘앞 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -896,15 +726,15 @@
     "욕망": "갈망 −5 | 독점 0 | 위험 10 | 과시 10 | 지속 20 | 지향 동성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 협의 수행 행자 자리는 가짜 약 봉인으로 열렸다.",
+    "생애": "2087-07-31 출생, 2126년 개막에 활동했다. 제기동 의무소에서 자랐다. 협의 수행 행자 당직 기록에는 가짜 약 봉인으 일이 남아 있다.\n- 단유진의 협의 문안·문중 표 결과 게시 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
     "관직": "품계 행자. 직함은 협의 수행 행자. 문중 표 결과를 당일 숙영과 회의장에 동시에 붙이고, 매수 쪽지는 게시판에 그대로 남긴다.",
     "일화": "협의 자리에서 백온의 발언 차례 직전에 매수 쪽지 한 장이 수행 가방에 들어온다. 단유진은 쪽지를 게시판에 붙여 공개하고, 문중 표 결과를 숙영과 회의장에 동시에 게시한 뒤 정유라의 공동교섭 좌석에 시민권 문안을 올린다.",
     "관계": "백온의 회의 발언을 수행으로 받치고, 정유라의 공동교섭 좌석에 시민권 문안을 올리며, 소두의 가족 회의 전령로와 줄을 맞춘다.",
-    "야망": "협의에서 신도 명부를 공동교섭의 조항으로 올려 강국별 분할 복속이 신도 명부를 갈라놓지 못하게 한다.",
+    "야망": "협의에서 신도 명부를 공동교섭의 조항으로 올려 분할 복속이 신도 명부를 갈라놓지 못하게 한다.",
     "공포": "수행 가방이 군사호적 사본으로 바뀌어 회의 발언이 노동력 숫자로만 남는 것.",
     "개입": "매수 쪽지를 공개하거나, 신도 명부 초안 증인을 회의장까지 호송할 수 있다."
   },
-  "biography": "구두 구호 약속을 전령 원장에 옮기지 않으면 없던 일로 돌리고, 아이 이름을 숫자로 줄이는 기호를 쓰지 않는다. 따뜻하나 회의 쪽지는 차갑다.\n\n- 생업: 협의 문안·문중 표 결과 게시\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 협의 수행 행자\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 협의 수행 행자 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 행자. 직함은 협의 수행 행자. 문중 표 결과를 당일 숙영과 회의장에 동시에 붙이고, 매수 쪽지는 게시판에 그대로 남긴다.\n\n**일화.** 협의 자리에서 백온의 발언 차례 직전에 매수 쪽지 한 장이 수행 가방에 들어온다. 단유진은 쪽지를 게시판에 붙여 공개하고, 문중 표 결과를 숙영과 회의장에 동시에 게시한 뒤 정유라의 공동교섭 좌석에 시민권 문안을 올린다.\n\n**관계.** 백온의 회의 발언을 수행으로 받치고, 정유라의 공동교섭 좌석에 시민권 문안을 올리며, 소두의 가족 회의 전령로와 줄을 맞춘다.\n\n**야망.** 협의에서 신도 명부를 공동교섭의 조항으로 올려 강국별 분할 복속이 신도 명부를 갈라놓지 못하게 한다.\n\n**공포.** 수행 가방이 군사호적 사본으로 바뀌어 회의 발언이 노동력 숫자로만 남는 것.\n\n**개입.** 매수 쪽지를 공개하거나, 신도 명부 초안 증인을 회의장까지 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 75 | 무력 −35 | 물질 −15 | 공동 80 | 원칙 35 | 공개 25 | 자격 35 | 분산 40 | 변혁 10\n- 욕망: 갈망 −5 | 독점 0 | 위험 10 | 과시 10 | 지속 20 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "구두 구호 약속을 전령 원장에 옮기지 않으면 없던 일로 돌리고, 아이 이름을 숫자로 줄이는 기호를 쓰지 않는다. 따뜻하나 회의 쪽지는 차갑다.\n\n- 생업: 협의 문안·문중 표 결과 게시\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 협의 수행 행자\n**생애.** 2087-07-31 출생, 2126년 개막에 활동했다. 제기동 의무소에서 자랐다. 협의 수행 행자 당직 기록에는 가짜 약 봉인으 일이 남아 있다.\n- 단유진의 협의 문안·문중 표 결과 게시 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 행자. 직함은 협의 수행 행자. 문중 표 결과를 당일 숙영과 회의장에 동시에 붙이고, 매수 쪽지는 게시판에 그대로 남긴다.\n\n**일화.** 협의 자리에서 백온의 발언 차례 직전에 매수 쪽지 한 장이 수행 가방에 들어온다. 단유진은 쪽지를 게시판에 붙여 공개하고, 문중 표 결과를 숙영과 회의장에 동시에 게시한 뒤 정유라의 공동교섭 좌석에 시민권 문안을 올린다.\n\n**관계.** 백온의 회의 발언을 수행으로 받치고, 정유라의 공동교섭 좌석에 시민권 문안을 올리며, 소두의 가족 회의 전령로와 줄을 맞춘다.\n\n**야망.** 협의에서 신도 명부를 공동교섭의 조항으로 올려 분할 복속이 신도 명부를 갈라놓지 못하게 한다.\n\n**공포.** 수행 가방이 군사호적 사본으로 바뀌어 회의 발언이 노동력 숫자로만 남는 것.\n\n**개입.** 매수 쪽지를 공개하거나, 신도 명부 초안 증인을 회의장까지 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 75 | 무력 −35 | 물질 −15 | 공동 80 | 원칙 35 | 공개 25 | 자격 35 | 분산 40 | 변혁 10\n- 욕망: 갈망 −5 | 독점 0 | 위험 10 | 과시 10 | 지속 20 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-10"
   ],

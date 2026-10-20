@@ -10,7 +10,7 @@ import { buildCastDatabase, DEFAULT_SOURCE_ROOT } from './build.mjs';
 import { ENGINE_PRIVATE_SOURCE_PATHS } from './current-engine.mjs';
 import { EXCLUDED_SOURCE_PATHS } from './excluded-sources.mjs';
 import { REFERENCE_TARGET_PATHS } from './source-closure.mjs';
-import { REQUIRED_SOURCE_PATHS } from './sources.mjs';
+import { REQUIRED_SOURCE_PATHS, RETIRED_HISTORICAL_REFERENCE_PATHS } from './sources.mjs';
 import { verifyCastDatabase } from './verify.mjs';
 
 const git = (root, ...args) => execFileSync('git', ['-C', root, '-c', 'user.name=fixture', '-c', 'user.email=fixture@example.invalid', '-c', 'commit.gpgsign=false', ...args], { encoding: 'utf8', windowsHide: true, shell: false }).trim();
@@ -25,12 +25,24 @@ async function committedCorpus(t) {
     await rm(root, { recursive: true, force: true });
   });
   const sourceRoot = join(root, 'WIKI');
-  for (const logicalPath of INPUT_PATHS) {
+  const evidencePaths = new Set(INPUT_PATHS);
+  const gurps = JSON.parse(await readFile(join(DEFAULT_SOURCE_ROOT, 'lore/name-pools/gurps-cast.json'), 'utf8'));
+  const collect = value => {
+    if (value === null || typeof value !== 'object') return;
+    if (Object.hasOwn(value, 'path')) {
+      assert.equal(typeof value.path, 'string');
+      assert.ok(!value.path.startsWith('/') && !value.path.split('/').includes('..'));
+      if (!RETIRED_HISTORICAL_REFERENCE_PATHS.includes(value.path)) evidencePaths.add(value.path);
+    }
+    Object.values(value).forEach(collect);
+  };
+  collect(gurps);
+  for (const logicalPath of evidencePaths) {
     await mkdir(dirname(join(sourceRoot, logicalPath)), { recursive: true });
     await copyFile(join(DEFAULT_SOURCE_ROOT, logicalPath), join(sourceRoot, logicalPath));
   }
   execFileSync('git', ['init', '--quiet', sourceRoot], { windowsHide: true, shell: false });
-  git(sourceRoot, 'add', '--', ...INPUT_PATHS);
+  git(sourceRoot, 'add', '--', ...evidencePaths);
   git(sourceRoot, 'commit', '--quiet', '-m', 'source inputs');
   return { root, sourceRoot, head: () => git(sourceRoot, 'rev-parse', 'HEAD') };
 }

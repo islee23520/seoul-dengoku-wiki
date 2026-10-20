@@ -444,52 +444,23 @@
             "name": "순지민",
             "url": "/people/person-0269",
             "state": "S10",
-            "method": "card-lexicon",
-            "role": {
-              "display": "강제등록 이탈 기록·교대 분리 증언",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-10.json",
-                  "pointer": "/content/248/items/0/ko",
-                  "quote": "생업: 강제등록 이탈 기록·교대 분리 증언"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "이탈 시각과 남은 신도 이름을 같은 쪽지에 적고, 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 증언한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/250/text/ko",
-                    "quote": "가을의 북한산보국문 행렬에서 암사가 급수권과 복무 재등록을 묶자 순지민은 강제등록 줄에서 빠져나와 산길로 되돌아갔다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -497,78 +468,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/248/items/0/ko",
-                    "quote": "생업: 강제등록 이탈 기록·교대 분리 증언"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "이탈 시각과 남은 신도 이름을 같은 쪽지에 적고, 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 증언한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/250/text/ko",
-                    "quote": "가을의 북한산보국문 행렬에서 암사가 급수권과 복무 재등록을 묶자 순지민은 강제등록 줄에서 빠져나와 산길로 되돌아갔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 안국총림 규모",
-              "faction_scale": {
-                "state": "S10",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "신설동",
-              "type": "초소 영지",
-              "station": "신설동",
-              "state": "S10",
-              "settlement": {
-                "name": "신설동 정착지",
-                "type": "정착지",
-                "description": "신설동 일대 고정 거점"
-              },
-              "note": "S10 신설동 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
@@ -592,52 +513,23 @@
             "name": "순지민",
             "url": "/people/person-0269",
             "state": "S10",
-            "method": "card-lexicon",
-            "role": {
-              "display": "강제등록 이탈 기록·교대 분리 증언",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-10.json",
-                  "pointer": "/content/248/items/0/ko",
-                  "quote": "생업: 강제등록 이탈 기록·교대 분리 증언"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "이탈 시각과 남은 신도 이름을 같은 쪽지에 적고, 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 증언한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/250/text/ko",
-                    "quote": "가을의 북한산보국문 행렬에서 암사가 급수권과 복무 재등록을 묶자 순지민은 강제등록 줄에서 빠져나와 산길로 되돌아갔다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -645,78 +537,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/248/items/0/ko",
-                    "quote": "생업: 강제등록 이탈 기록·교대 분리 증언"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "이탈 시각과 남은 신도 이름을 같은 쪽지에 적고, 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 증언한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/250/text/ko",
-                    "quote": "가을의 북한산보국문 행렬에서 암사가 급수권과 복무 재등록을 묶자 순지민은 강제등록 줄에서 빠져나와 산길로 되돌아갔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 안국총림 규모",
-              "faction_scale": {
-                "state": "S10",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "신설동",
-              "type": "초소 영지",
-              "station": "신설동",
-              "state": "S10",
-              "settlement": {
-                "name": "신설동 정착지",
-                "type": "정착지",
-                "description": "신설동 일대 고정 거점"
-              },
-              "note": "S10 신설동 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
@@ -737,18 +579,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "신설동",
-    "type": "초소 영지",
-    "station": "신설동",
-    "state": "S10",
-    "settlement": {
-      "name": "신설동 정착지",
-      "type": "정착지",
-      "description": "신설동 일대 고정 거점"
-    },
-    "note": "S10 신설동 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -789,15 +619,15 @@
     "욕망": "갈망 30 | 독점 5 | 위험 10 | 과시 10 | 지속 30 | 지향 유동 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 강제등록 이탈 행자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2074-05-13 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 강제등록 이탈 행자 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 순지민의 강제등록 이탈 기록·교대 분리 증언 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 순지민의 강제등록 이탈 기록·교대 분리 증언 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
     "관직": "품계 행자. 직함은 강제등록 이탈 행자. 이탈 시각과 남은 신도 이름을 같은 쪽지에 적고, 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 증언한다.",
     "일화": "가을의 북한산보국문 행렬에서 암사가 급수권과 복무 재등록을 묶자 순지민은 강제등록 줄에서 빠져나와 산길로 되돌아갔다.",
     "관계": "오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고, 복모의 우회로로 숙영을 우회하며, 백온에게 이탈의 이유를 가족 회의에서 바친다.",
-    "야망": "강제등록 행렬에서 빠져나온 경로를 구출 사건으로 남겨 총림이 강국 용병이 되지 않게 한다.",
+    "야망": "강제등록 행렬에서 빠져나온 경로를 구출 사건으로 남겨 총림이 용병이 되지 않게 한다.",
     "공포": "이탈이 반란으로만 기록되어 남은 숙영이 보복 수색을 받는 것.",
     "개입": "이탈자를 숨겨 구출 사건을 열거나, 보복 수색의 명단을 산중총회에 펼칠 수 있다."
   },
-  "biography": "맹세와 생존이 충돌하면 오래 침묵한 뒤 행렬에서 한 걸음 빠진다. 충성스러우나 가족을 갈라놓는 철표 앞에서는 침묵을 깬다.\n\n- 생업: 강제등록 이탈 기록·교대 분리 증언\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 강제등록 이탈 행자\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 강제등록 이탈 행자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 행자. 직함은 강제등록 이탈 행자. 이탈 시각과 남은 신도 이름을 같은 쪽지에 적고, 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 증언한다.\n\n**일화.** 가을의 북한산보국문 행렬에서 암사가 급수권과 복무 재등록을 묶자 순지민은 강제등록 줄에서 빠져나와 산길로 되돌아갔다.\n\n**관계.** 오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고, 복모의 우회로로 숙영을 우회하며, 백온에게 이탈의 이유를 가족 회의에서 바친다.\n\n**야망.** 강제등록 행렬에서 빠져나온 경로를 구출 사건으로 남겨 총림이 강국 용병이 되지 않게 한다.\n\n**공포.** 이탈이 반란으로만 기록되어 남은 숙영이 보복 수색을 받는 것.\n\n**개입.** 이탈자를 숨겨 구출 사건을 열거나, 보복 수색의 명단을 산중총회에 펼칠 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 40 | 무력 −50 | 물질 −20 | 공동 60 | 원칙 35 | 공개 35 | 자격 35 | 분산 50 | 변혁 5\n- 욕망: 갈망 30 | 독점 5 | 위험 10 | 과시 10 | 지속 30 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "맹세와 생존이 충돌하면 오래 침묵한 뒤 행렬에서 한 걸음 빠진다. 충성스러우나 가족을 갈라놓는 철표 앞에서는 침묵을 깬다.\n\n- 생업: 강제등록 이탈 기록·교대 분리 증언\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 강제등록 이탈 행자\n**생애.** 2074-05-13 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 강제등록 이탈 행자 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 순지민의 강제등록 이탈 기록·교대 분리 증언 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 순지민의 강제등록 이탈 기록·교대 분리 증언 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 행자. 직함은 강제등록 이탈 행자. 이탈 시각과 남은 신도 이름을 같은 쪽지에 적고, 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 증언한다.\n\n**일화.** 가을의 북한산보국문 행렬에서 암사가 급수권과 복무 재등록을 묶자 순지민은 강제등록 줄에서 빠져나와 산길로 되돌아갔다.\n\n**관계.** 오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고, 복모의 우회로로 숙영을 우회하며, 백온에게 이탈의 이유를 가족 회의에서 바친다.\n\n**야망.** 강제등록 행렬에서 빠져나온 경로를 구출 사건으로 남겨 총림이 용병이 되지 않게 한다.\n\n**공포.** 이탈이 반란으로만 기록되어 남은 숙영이 보복 수색을 받는 것.\n\n**개입.** 이탈자를 숨겨 구출 사건을 열거나, 보복 수색의 명단을 산중총회에 펼칠 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 40 | 무력 −50 | 물질 −20 | 공동 60 | 원칙 35 | 공개 35 | 자격 35 | 분산 50 | 변혁 5\n- 욕망: 갈망 30 | 독점 5 | 위험 10 | 과시 10 | 지속 30 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-10"
   ],

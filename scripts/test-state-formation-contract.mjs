@@ -48,10 +48,20 @@ test('the independent WIKI ledgers bind the exact accepted GDD formation clause'
   assert.equal(contract.independentLedgers.gdd.ruleSource, 'canon/locales/ko-KR/rules/rules-factions-warfare-clauses.json')
   assert.equal(contract.independentLedgers.gdd.clause, 'r2.rwarfare-37')
   assert.ok(Array.isArray(holdings.holdings))
-  assert.equal(contract.sourceScope.openingStates.count, 16)
-  assert.equal(contract.sourceScope.openingStates.range, 'S01-S16')
-  assert.deepEqual(contract.sourceScope.openingIndependentPolities.map(polity => [polity.id, polity.sovereignPersonId]), [['polity:daejeon', 'K1008']])
-  assert.equal(contract.sourceScope.wholeKingdomAtOpening, true)
+  assert.equal(contract.schema, 'state-formation-contract.v2')
+  assert.equal(contract.sourceScope.historicalPoliticalIdentities.count, 16)
+  assert.equal(contract.sourceScope.historicalPoliticalIdentities.range, 'S01-S16')
+  assert.deepEqual(contract.sourceScope.currentPoliticalFactions, [
+    { name: '규격맹', centerRegion: '한강 이남 서부' },
+    { name: '대한민국정부', centerRegion: '청와대를 중심으로 한 강북' },
+    { name: '종교 연합', centerRegion: '한강 이남 강남지역' },
+  ])
+  assert.equal(contract.sourceScope.centersConferExclusiveGeographicOwnership, false)
+  assert.deepEqual(contract.sourceScope.currentIndependentPoliticalIdentities.map(({ id, sovereignPersonId, kind, rank, confersWholeGeographicKingdomOwnership }) =>
+    [id, sovereignPersonId, kind, rank, confersWholeGeographicKingdomOwnership]),
+  [['polity:daejeon', 'K1008', 'nonterritorial-political-identity', 'kingdom', false]])
+  assert.deepEqual(contract.sourceScope.geographicKingdoms, { partitionCount: 6, ownershipDeterminedByThisContract: false })
+  assert.equal(Object.hasOwn(contract.sourceScope, 'wholeKingdomAtOpening'), false)
 })
 
 test('normal and blocked transitions are distinct and unknown prerequisites remain held', () => {

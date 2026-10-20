@@ -45,7 +45,7 @@ function addSource(db) {
 
 test('creates every STRICT table with required indexes and connection pragmas', (t) => {
   const { db } = fixture(t);
-  assert.equal(SCHEMA_VERSION, 4);
+  assert.equal(SCHEMA_VERSION, 5);
   assert.equal(db.prepare('PRAGMA user_version').get().user_version, SCHEMA_VERSION);
   assert.equal(db.prepare('PRAGMA application_id').get().application_id, APPLICATION_ID);
   assert.equal(db.prepare('PRAGMA foreign_keys').get().foreign_keys, 1);

@@ -453,41 +453,23 @@
             "name": "순재민",
             "url": "/people/person-0216",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "호송칸 봉인·중량 재검색",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/226/items/2/ko",
-                  "quote": "생업: 호송칸 봉인·중량 재검색"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -495,84 +477,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/226/items/2/ko",
-                    "quote": "생업: 호송칸 봉인·중량 재검색"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/226/items/2/ko",
-                    "quote": "생업: 호송칸 봉인·중량 재검색"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 16,
-              "unspent": 59,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "보문",
-              "type": "초소 영지",
-              "station": "보문",
-              "state": "S08",
-              "settlement": {
-                "name": "보문 정착지",
-                "type": "정착지",
-                "description": "보문 일대 고정 거점"
-              },
-              "note": "S08 보문 일대 관할 영지"
+              "unspent": 59
             }
           }
         }
@@ -596,41 +528,23 @@
             "name": "순재민",
             "url": "/people/person-0216",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "호송칸 봉인·중량 재검색",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/226/items/2/ko",
-                  "quote": "생업: 호송칸 봉인·중량 재검색"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -638,84 +552,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/226/items/2/ko",
-                    "quote": "생업: 호송칸 봉인·중량 재검색"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/226/items/2/ko",
-                    "quote": "생업: 호송칸 봉인·중량 재검색"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 16,
-              "unspent": 59,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "보문",
-              "type": "초소 영지",
-              "station": "보문",
-              "state": "S08",
-              "settlement": {
-                "name": "보문 정착지",
-                "type": "정착지",
-                "description": "보문 일대 고정 거점"
-              },
-              "note": "S08 보문 일대 관할 영지"
+              "unspent": 59
             }
           }
         }
@@ -736,18 +600,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "보문",
-    "type": "초소 영지",
-    "station": "보문",
-    "state": "S08",
-    "settlement": {
-      "name": "보문 정착지",
-      "type": "정착지",
-      "description": "보문 일대 고정 거점"
-    },
-    "note": "S08 보문 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -788,7 +640,7 @@
     "욕망": "갈망 15 | 독점 15 | 위험 25 | 과시 −25 | 지속 30 | 지향 동성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송칸 봉인 상자 증인 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송칸 봉인 상자 증인 자리는 무표 출발 열차 저지로 열렸다.\n- 순재민은 노량진1동에서 호송칸 봉인·중량 재검색 업무를 맡는다.",
     "관직": "품계 교도. 직함은 호송칸 봉인 상자 증인. 경로와 무장은 출발 직전에만 확인하고, 봉인 상자가 나오면 전 칸을 다시 열어 중량을 맞춘다.",
     "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 호송칸 봉인 상자 증인 자리의 서명이 장부에 올랐다.",
     "관계": "신태산의 호송 반에서 상자를 증언하고, 나태경의 출항 저지를 현장에서 받치며, 배우진의 무기 칸이 시장 선단에 섞였는지 따진다.",
@@ -796,7 +648,7 @@
     "공포": "증언 뒤에 선단이 군수품을 실은 채로 출항해 중립시장 정통성이 하루 만에 무너지는 것.",
     "개입": "밀수 상자의 출처를 밝히거나, 호송을 강행해 증인의 중립을 시험할 수 있다."
   },
-  "biography": "호송 중 화물을 연 대원을 그날로 빼고, 암사 문장이 찍힌 상자를 중립의 적으로 부른다. 과묵하나 도착 중량이 다르면 선단을 세운다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 호송칸 봉인·중량 재검색\n- 직함: 호송칸 봉인 상자 증인\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송칸 봉인 상자 증인 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 교도. 직함은 호송칸 봉인 상자 증인. 경로와 무장은 출발 직전에만 확인하고, 봉인 상자가 나오면 전 칸을 다시 열어 중량을 맞춘다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 호송칸 봉인 상자 증인 자리의 서명이 장부에 올랐다.\n\n**관계.** 신태산의 호송 반에서 상자를 증언하고, 나태경의 출항 저지를 현장에서 받치며, 배우진의 무기 칸이 시장 선단에 섞였는지 따진다.\n\n**야망.** 노량진 호송칸의 밀수 봉인을 공동호송의 공개 죄목으로 올려 시장 자경이 보호비의 하청이 되지 않게 한다.\n\n**공포.** 증언 뒤에 선단이 군수품을 실은 채로 출항해 중립시장 정통성이 하루 만에 무너지는 것.\n\n**개입.** 밀수 상자의 출처를 밝히거나, 호송을 강행해 증인의 중립을 시험할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 30 | 무력 −20 | 물질 60 | 공동 −10 | 원칙 −25 | 공개 20 | 자격 −5 | 분산 20 | 변혁 20\n- 욕망: 갈망 15 | 독점 15 | 위험 25 | 과시 −25 | 지속 30 | 지향 동성 | 결합 다자\n:::",
+  "biography": "호송 중 화물을 연 대원을 그날로 빼고, 암사 문장이 찍힌 상자를 중립의 적으로 부른다. 과묵하나 도착 중량이 다르면 선단을 세운다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 호송칸 봉인·중량 재검색\n- 직함: 호송칸 봉인 상자 증인\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송칸 봉인 상자 증인 자리는 무표 출발 열차 저지로 열렸다.\n- 순재민은 노량진1동에서 호송칸 봉인·중량 재검색 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 호송칸 봉인 상자 증인. 경로와 무장은 출발 직전에만 확인하고, 봉인 상자가 나오면 전 칸을 다시 열어 중량을 맞춘다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 호송칸 봉인 상자 증인 자리의 서명이 장부에 올랐다.\n\n**관계.** 신태산의 호송 반에서 상자를 증언하고, 나태경의 출항 저지를 현장에서 받치며, 배우진의 무기 칸이 시장 선단에 섞였는지 따진다.\n\n**야망.** 노량진 호송칸의 밀수 봉인을 공동호송의 공개 죄목으로 올려 시장 자경이 보호비의 하청이 되지 않게 한다.\n\n**공포.** 증언 뒤에 선단이 군수품을 실은 채로 출항해 중립시장 정통성이 하루 만에 무너지는 것.\n\n**개입.** 밀수 상자의 출처를 밝히거나, 호송을 강행해 증인의 중립을 시험할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 30 | 무력 −20 | 물질 60 | 공동 −10 | 원칙 −25 | 공개 20 | 자격 −5 | 분산 20 | 변혁 20\n- 욕망: 갈망 15 | 독점 15 | 위험 25 | 과시 −25 | 지속 30 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-08"
   ],

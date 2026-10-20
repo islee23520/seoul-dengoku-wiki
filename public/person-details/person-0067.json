@@ -453,52 +453,23 @@
             "name": "구연재",
             "url": "/people/person-0067",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "인증화물 물류 거래",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/126/items/1/ko",
-                  "quote": "생업: 인증화물 물류 거래"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/127/text/ko",
-                    "quote": "운송 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 화차를 출발시키지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/128/text/ko",
-                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -506,95 +477,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/127/text/ko",
-                    "quote": "운송 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 화차를 출발시키지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/126/items/1/ko",
-                    "quote": "생업: 인증화물 물류 거래"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/128/text/ko",
-                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "구연재 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S03 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 19
+            }
           }
         }
       },
@@ -617,52 +528,23 @@
             "name": "구연재",
             "url": "/people/person-0067",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "인증화물 물류 거래",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/126/items/1/ko",
-                  "quote": "생업: 인증화물 물류 거래"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/127/text/ko",
-                    "quote": "운송 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 화차를 출발시키지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/128/text/ko",
-                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -670,95 +552,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/127/text/ko",
-                    "quote": "운송 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 화차를 출발시키지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/126/items/1/ko",
-                    "quote": "생업: 인증화물 물류 거래"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/128/text/ko",
-                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "구연재 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S03 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 19
+            }
           }
         }
       }
@@ -779,7 +601,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -831,19 +652,20 @@
     "생업": "인증화물 물류 거래",
     "품계": "대리",
     "직함": "마곡 인증화물 물류상",
+    "업무": "가양1동. 구연재는 마곡 인증 화물의 운송 사본을 서고 인수 기록과 맞추고 비공개 성능 조항이 남은 상자는 선적하지 않는다.",
     "가치관": "권위 −5 | 개방 20 | 무력 −35 | 물질 30 | 공동 −10 | 원칙 45 | 공개 30 | 자격 40 | 분산 5 | 변혁 5",
     "욕망": "갈망 −10 | 독점 15 | 위험 20 | 과시 −5 | 지속 40 | 지향 무성향 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 마곡 인증화물 물류상 자리는 저울 재점검 공개로 열렸다.",
+    "생애": "2126년 세대. 노량진 선창에서 자랐다. 구연재는 마곡 인증 화물의 운송 사본을 서고 인수 기록과 맞추고 비공개 성능 조항이 남은 상자는 선적하지 않는다.\n- 업무: 가양1동. 구연재는 마곡 인증 화물의 운송 사본을 서고 인수 기록과 맞추고 비공개 성능 조항이 남은 상자는 선적하지 않는다.",
     "관직": "품계 대리. 직함은 마곡 인증화물 물류상. 운송 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 화차를 출발시키지 않는다.",
-    "일화": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 이 일로 마곡 인증화물 물류상 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다.",
     "관계": "최은재의 인증 도장에 선적을 묶는 계약이고, 유민호의 중립 배차망에 화차를 올리며, 정유라의 기술공유 문장을 운송 조항에 끌어들인다.",
-    "야망": "의약·통신·펌프 인증 화물을 국가 소유가 아닌 공개 원장 운송으로 옮겨 공동기술원장의 실무 창구가 된다.",
+    "야망": "의약·통신·펌프 인증 화물을 공개 원장에 남는 운송으로 옮겨 공동기술원장의 실무 창구가 된다.",
     "공포": "인증을 보호비로 파는 폐쇄 연구파가 평의회를 장악해 물류가 다시 인질 시세표에 오르는 것.",
     "개입": "재현 실험의 원본 기록을 가져와 선적을 복구하거나, 비공개 조항을 숨긴 화주를 폭로할 수 있다."
   },
-  "biography": "상자 봉인 스티커를 흥정 밑천으로 쓰는 사람을 경멸하고, 성능표의 빈칸보다 현장의 고장난 펌프를 더 오래 본다. 실리를 말하되 비공개 조항이 있으면 선적을 거부한다.\n\n- 소속: 태욱그룹\n- 생업: 인증화물 물류 거래\n- 품계: 대리\n- 직함: 마곡 인증화물 물류상\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 마곡 인증화물 물류상 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 대리. 직함은 마곡 인증화물 물류상. 운송 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 화차를 출발시키지 않는다.\n\n**일화.** 2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 이 일로 마곡 인증화물 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 최은재의 인증 도장에 선적을 묶는 계약이고, 유민호의 중립 배차망에 화차를 올리며, 정유라의 기술공유 문장을 운송 조항에 끌어들인다.\n\n**야망.** 의약·통신·펌프 인증 화물을 국가 소유가 아닌 공개 원장 운송으로 옮겨 공동기술원장의 실무 창구가 된다.\n\n**공포.** 인증을 보호비로 파는 폐쇄 연구파가 평의회를 장악해 물류가 다시 인질 시세표에 오르는 것.\n\n**개입.** 재현 실험의 원본 기록을 가져와 선적을 복구하거나, 비공개 조항을 숨긴 화주를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −35 | 물질 30 | 공동 −10 | 원칙 45 | 공개 30 | 자격 40 | 분산 5 | 변혁 5\n- 욕망: 갈망 −10 | 독점 15 | 위험 20 | 과시 −5 | 지속 40 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "상자 봉인 스티커를 흥정 밑천으로 쓰는 사람을 경멸하고, 성능표의 빈칸보다 현장의 고장난 펌프를 더 오래 본다. 실리를 말하되 비공개 조항이 있으면 선적을 거부한다.\n\n- 소속: 태욱그룹\n- 생업: 인증화물 물류 거래\n- 품계: 대리\n- 직함: 마곡 인증화물 물류상\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 구연재는 마곡 인증 화물의 운송 사본을 서고 인수 기록과 맞추고 비공개 성능 조항이 남은 상자는 선적하지 않는다.\n- 업무: 가양1동. 구연재는 마곡 인증 화물의 운송 사본을 서고 인수 기록과 맞추고 비공개 성능 조항이 남은 상자는 선적하지 않는다.\n\n**관직.** 품계 대리. 직함은 마곡 인증화물 물류상. 운송 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 화차를 출발시키지 않는다.\n\n**일화.** 2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다.\n\n**관계.** 최은재의 인증 도장에 선적을 묶는 계약이고, 유민호의 중립 배차망에 화차를 올리며, 정유라의 기술공유 문장을 운송 조항에 끌어들인다.\n\n**야망.** 의약·통신·펌프 인증 화물을 공개 원장에 남는 운송으로 옮겨 공동기술원장의 실무 창구가 된다.\n\n**공포.** 인증을 보호비로 파는 폐쇄 연구파가 평의회를 장악해 물류가 다시 인질 시세표에 오르는 것.\n\n**개입.** 재현 실험의 원본 기록을 가져와 선적을 복구하거나, 비공개 조항을 숨긴 화주를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −35 | 물질 30 | 공동 −10 | 원칙 45 | 공개 30 | 자격 40 | 분산 5 | 변혁 5\n- 욕망: 갈망 −10 | 독점 15 | 위험 20 | 과시 −5 | 지속 40 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-03"
   ],

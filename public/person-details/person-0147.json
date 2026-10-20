@@ -2,9 +2,9 @@
   "id": "person-0147",
   "name": "조하린",
   "title": "문서고 사서",
-  "position": "문서고 사서 · 가평군 영주",
+  "position": "문서고 사서",
   "characterId": "K146",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "문서고 열쇠·열람 기록 관리",
   "gender": "여성",
@@ -551,47 +551,23 @@
             "name": "조하린",
             "url": "/people/person-0147",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "문서고 열쇠·열람 기록 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/50/items/0/ko",
-                  "quote": "생업: 문서고 열쇠·열람 기록 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "열람은 두 사서의 열쇠가 동시에 있어야 열고, 반출 시각을 분 단위로 벽에 적는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -599,79 +575,29 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 문서고 열쇠·열람 기록 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "열람은 두 사서의 열쇠가 동시에 있어야 열고, 반출 시각을 분 단위로 벽에 적는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "조하린 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 47
+            }
           }
         }
       },
@@ -694,47 +620,23 @@
             "name": "조하린",
             "url": "/people/person-0147",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "문서고 열쇠·열람 기록 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/50/items/0/ko",
-                  "quote": "생업: 문서고 열쇠·열람 기록 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "열람은 두 사서의 열쇠가 동시에 있어야 열고, 반출 시각을 분 단위로 벽에 적는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -742,151 +644,52 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 문서고 열쇠·열람 기록 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "열람은 두 사서의 열쇠가 동시에 있어야 열고, 반출 시각을 분 단위로 벽에 적는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "조하린 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 47
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-41820-S06",
-      "name": {
-        "ko": "가평군 공작령 직영지"
-      },
-      "holderPersonId": "K146",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "4182025000",
-          "name": "경기도 가평군 가평읍"
-        },
-        {
-          "id": "4182031000",
-          "name": "경기도 가평군 설악면"
-        },
-        {
-          "id": "4182032500",
-          "name": "경기도 가평군 청평면"
-        },
-        {
-          "id": "4182033000",
-          "name": "경기도 가평군 상면"
-        },
-        {
-          "id": "4182034500",
-          "name": "경기도 가평군 조종면"
-        },
-        {
-          "id": "4182035000",
-          "name": "경기도 가평군 북면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41820-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41820-S06",
-      "name": "가평군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K146",
-      "basis": "개막 행정 규모 그룹 41820(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "4182025000",
-        "4182031000",
-        "4182032500",
-        "4182033000",
-        "4182034500",
-        "4182035000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-41820-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -901,7 +704,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -950,22 +752,22 @@
   },
   "fields": {
     "생업": "문서고 열쇠·열람 기록 관리",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "문서고 사서",
+    "소속": "서울특별시 지방공무원 조직",
+    "직위·직급": "지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급",
+    "담당 업무": "문서고 사서",
     "가치관": "권위 15 | 개방 −20 | 무력 −25 | 물질 −40 | 공동 0 | 원칙 50 | 공개 −10 | 자격 10 | 분산 −25 | 변혁 −45",
     "욕망": "갈망 10 | 독점 −35 | 위험 10 | 과시 20 | 지속 35 | 지향 유동 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 문서고 사서 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "관직": "품계 주사. 직함은 문서고 사서. 열람은 두 사서의 열쇠가 동시에 있어야 열고, 반출 시각을 분 단위로 벽에 적는다.",
+    "생애": "서울역 등기소에서 자랐다. 문서고 사서 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 조하린의 문서고 열쇠와 열람 기록을 돌보는 일은 회현동의 업무와 이어진다.",
+    "공무원 직위·직급": "지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급. 담당 업무: 문서고 사서.",
     "일화": "세 유언장 접수 직후 문서고 제습기가 멈춰 먹지가 서로 들러붙기 시작했다.",
     "관계": "윤서린이 맡긴 임하준 유언 삼본을 직접 지킨다. 송재민에게 암호문 원본 보관 빚이 있고, 강예준의 심야 열람을 꺼린다.",
     "야망": "총관 유언과 수문헌장 초안을 같은 철제 함에 넣어 서울역을 서울 기록의 최종 보관소로 만든다.",
     "공포": "전력 배급이 끊긴 밤에 촛불이 문서고 한지를 태워 연속성이 재로 남는 것.",
     "개입": "제습 부품을 구하거나, 열람 장부에 없는 야간 출입을 폭로할 수 있다."
   },
-  "biography": "조용하고 집요하며 습도에 민감하다. 장부를 빌려 간 사람의 손때까지 기억한다.\n\n- 생업: 문서고 열쇠·열람 기록 관리\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 문서고 사서\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 문서고 사서 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 주사. 직함은 문서고 사서. 열람은 두 사서의 열쇠가 동시에 있어야 열고, 반출 시각을 분 단위로 벽에 적는다.\n\n**일화.** 세 유언장 접수 직후 문서고 제습기가 멈춰 먹지가 서로 들러붙기 시작했다.\n\n**관계.** 윤서린이 맡긴 임하준 유언 삼본을 직접 지킨다. 송재민에게 암호문 원본 보관 빚이 있고, 강예준의 심야 열람을 꺼린다.\n\n**야망.** 총관 유언과 수문헌장 초안을 같은 철제 함에 넣어 서울역을 서울 기록의 최종 보관소로 만든다.\n\n**공포.** 전력 배급이 끊긴 밤에 촛불이 문서고 한지를 태워 연속성이 재로 남는 것.\n\n**개입.** 제습 부품을 구하거나, 열람 장부에 없는 야간 출입을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −20 | 무력 −25 | 물질 −40 | 공동 0 | 원칙 50 | 공개 −10 | 자격 10 | 분산 −25 | 변혁 −45\n- 욕망: 갈망 10 | 독점 −35 | 위험 10 | 과시 20 | 지속 35 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "조용하고 집요하며 습도에 민감하다. 장부를 빌려 간 사람의 손때까지 기억한다.\n\n- 생업: 문서고 열쇠·열람 기록 관리\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급\n- 담당 업무: 문서고 사서\n**생애.** 서울역 등기소에서 자랐다. 문서고 사서 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 조하린의 문서고 열쇠와 열람 기록을 돌보는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급. 담당 업무: 문서고 사서.\n\n**일화.** 세 유언장 접수 직후 문서고 제습기가 멈춰 먹지가 서로 들러붙기 시작했다.\n\n**관계.** 윤서린이 맡긴 임하준 유언 삼본을 직접 지킨다. 송재민에게 암호문 원본 보관 빚이 있고, 강예준의 심야 열람을 꺼린다.\n\n**야망.** 총관 유언과 수문헌장 초안을 같은 철제 함에 넣어 서울역을 서울 기록의 최종 보관소로 만든다.\n\n**공포.** 전력 배급이 끊긴 밤에 촛불이 문서고 한지를 태워 연속성이 재로 남는 것.\n\n**개입.** 제습 부품을 구하거나, 열람 장부에 없는 야간 출입을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −20 | 무력 −25 | 물질 −40 | 공동 0 | 원칙 50 | 공개 −10 | 자격 10 | 분산 −25 | 변혁 −45\n- 욕망: 갈망 10 | 독점 −35 | 위험 10 | 과시 20 | 지속 35 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-06"
   ],

@@ -4,7 +4,7 @@
   "title": "서울역 서고기지 감독",
   "position": "서울역 서고기지 감독",
   "characterId": "K158",
-  "rank": "국장",
+  "rank": "미등록",
   "commonTier": "T4",
   "occupation": "서고 함 온도·열쇠 교대 감독",
   "gender": "여성",
@@ -560,52 +560,23 @@
             "name": "지한솔",
             "url": "/people/person-0159",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "서고 함 온도·열쇠 교대 감독",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/17/items/0/ko",
-                  "quote": "생업: 서고 함 온도·열쇠 교대 감독"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "함 온도와 열쇠 교대를 공개 칠판에 남기고, 군수 보관은 의료 이송 재고가 최저선을 넘을 때만 허용한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/19/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -613,105 +584,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/17/items/0/ko",
-                    "quote": "생업: 서고 함 온도·열쇠 교대 감독"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "함 온도와 열쇠 교대를 공개 칠판에 남기고, 군수 보관은 의료 이송 재고가 최저선을 넘을 때만 허용한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/19/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/17/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "회현",
-              "type": "초소 영지",
-              "station": "회현",
-              "state": "S06",
-              "settlement": {
-                "name": "회현 정착지",
-                "type": "정착지",
-                "description": "회현 일대 고정 거점"
-              },
-              "note": "S06 회현 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -735,52 +641,23 @@
             "name": "지한솔",
             "url": "/people/person-0159",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "서고 함 온도·열쇠 교대 감독",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/17/items/0/ko",
-                  "quote": "생업: 서고 함 온도·열쇠 교대 감독"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "함 온도와 열쇠 교대를 공개 칠판에 남기고, 군수 보관은 의료 이송 재고가 최저선을 넘을 때만 허용한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/19/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -788,193 +665,64 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/17/items/0/ko",
-                    "quote": "생업: 서고 함 온도·열쇠 교대 감독"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "함 온도와 열쇠 교대를 공개 칠판에 남기고, 군수 보관은 의료 이송 재고가 최저선을 넘을 때만 허용한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/19/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/17/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "회현",
-              "type": "초소 영지",
-              "station": "회현",
-              "state": "S06",
-              "settlement": {
-                "name": "회현 정착지",
-                "type": "정착지",
-                "description": "회현 일대 고정 거점"
-              },
-              "note": "S06 회현 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-51750-S06",
-      "name": {
-        "ko": "영월군 공작령 직영지"
-      },
-      "holderPersonId": "K158",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "5175025000",
-          "name": "강원특별자치도 영월군 영월읍"
-        },
-        {
-          "id": "5175025300",
-          "name": "강원특별자치도 영월군 상동읍"
-        },
-        {
-          "id": "5175031200",
-          "name": "강원특별자치도 영월군 산솔면"
-        },
-        {
-          "id": "5175032500",
-          "name": "강원특별자치도 영월군 김삿갓면"
-        },
-        {
-          "id": "5175033000",
-          "name": "강원특별자치도 영월군 북면"
-        },
-        {
-          "id": "5175034000",
-          "name": "강원특별자치도 영월군 남면"
-        },
-        {
-          "id": "5175035500",
-          "name": "강원특별자치도 영월군 한반도면"
-        },
-        {
-          "id": "5175036000",
-          "name": "강원특별자치도 영월군 주천면"
-        },
-        {
-          "id": "5175038000",
-          "name": "강원특별자치도 영월군 무릉도원면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-51750-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-51750-S06",
-      "name": "영월군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K158",
-      "basis": "개막 행정 규모 그룹 51750(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "5175025000",
-        "5175025300",
-        "5175031200",
-        "5175032500",
-        "5175033000",
-        "5175034000",
-        "5175035500",
-        "5175036000",
-        "5175038000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-51750-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -988,18 +736,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "회현",
-    "type": "초소 영지",
-    "station": "회현",
-    "state": "S06",
-    "settlement": {
-      "name": "회현 정착지",
-      "type": "정착지",
-      "description": "회현 일대 고정 거점"
-    },
-    "note": "S06 회현 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -1033,22 +769,22 @@
   },
   "fields": {
     "생업": "서고 함 온도·열쇠 교대 감독",
-    "소속": "대한민국정부",
-    "품계": "국장",
-    "직함": "서울역 서고기지 감독",
+    "소속": "서울특별시 지방공무원 조직",
+    "직위·직급": "서울특별시 기록관리 사업소 서고 담당 지방행정사무관(5급) 보직",
+    "담당 업무": "서울역 서고기지 감독",
     "가치관": "권위 20 | 개방 0 | 무력 −40 | 물질 −20 | 공동 10 | 원칙 50 | 공개 −30 | 자격 5 | 분산 −40 | 변혁 −50",
     "욕망": "갈망 −5 | 독점 20 | 위험 −15 | 과시 25 | 지속 −15 | 지향 무성향 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 서울역 서고기지 감독 자리는 탈선 직전 결함 보고로 열렸다.",
-    "관직": "품계 국장. 직함은 서울역 서고기지 감독. 함 온도와 열쇠 교대를 공개 칠판에 남기고, 군수 보관은 의료 이송 재고가 최저선을 넘을 때만 허용한다.",
+    "생애": "신정 차량기지에서 자랐다. 서울역 서고기지 감독 자리는 탈선 직전 결함 보고로 열렸다.\n- 지한솔이 맡는 서고 함의 온도와 열쇠 교대를 감독하는 일은 회현동의 업무와 이어진다.",
+    "공무원 직위·직급": "서울특별시 기록관리 사업소 서고 담당 지방행정사무관(5급) 보직. 담당 업무: 서울역 서고기지 감독.",
     "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 서울역 서고기지 감독 자리의 서명이 장부에 올랐다.",
     "관계": "조하린의 삼본 함을 기지에서 지키는 지휘를 받고, 지서윤의 제습 주기와 함 온도를 맞추며, 나선재의 봉쇄를 내부에서 받친다.",
     "야망": "서고기지의 함과 예비 용지를 기록 전용으로 고정해 서울역이 강국의 창고가 되지 않게 한다.",
     "공포": "전력 없는 밤에 함이 열리고, 그 공백을 보호권이 점령 보관으로 쓰는 것.",
     "개입": "대체 축전지를 구해 함 온도를 지키거나, 일지 조작을 폭로해 감독을 교체할 수 있다."
   },
-  "biography": "철제 함의 온도로 과부하를 읽고, 유언함보다 군수 보관에 칸을 내주라는 쪽지를 태운다. 과묵하고 반출 일지를 깎지 않는다.\n\n- 생업: 서고 함 온도·열쇠 교대 감독\n- 소속: 대한민국정부\n- 품계: 국장\n- 직함: 서울역 서고기지 감독\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 서울역 서고기지 감독 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 국장. 직함은 서울역 서고기지 감독. 함 온도와 열쇠 교대를 공개 칠판에 남기고, 군수 보관은 의료 이송 재고가 최저선을 넘을 때만 허용한다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 서울역 서고기지 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 조하린의 삼본 함을 기지에서 지키는 지휘를 받고, 지서윤의 제습 주기와 함 온도를 맞추며, 나선재의 봉쇄를 내부에서 받친다.\n\n**야망.** 서고기지의 함과 예비 용지를 기록 전용으로 고정해 서울역이 강국의 창고가 되지 않게 한다.\n\n**공포.** 전력 없는 밤에 함이 열리고, 그 공백을 보호권이 점령 보관으로 쓰는 것.\n\n**개입.** 대체 축전지를 구해 함 온도를 지키거나, 일지 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 0 | 무력 −40 | 물질 −20 | 공동 10 | 원칙 50 | 공개 −30 | 자격 5 | 분산 −40 | 변혁 −50\n- 욕망: 갈망 −5 | 독점 20 | 위험 −15 | 과시 25 | 지속 −15 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "철제 함의 온도로 과부하를 읽고, 유언함보다 군수 보관에 칸을 내주라는 쪽지를 태운다. 과묵하고 반출 일지를 깎지 않는다.\n\n- 생업: 서고 함 온도·열쇠 교대 감독\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 서울특별시 기록관리 사업소 서고 담당 지방행정사무관(5급) 보직\n- 담당 업무: 서울역 서고기지 감독\n**생애.** 신정 차량기지에서 자랐다. 서울역 서고기지 감독 자리는 탈선 직전 결함 보고로 열렸다.\n- 지한솔이 맡는 서고 함의 온도와 열쇠 교대를 감독하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 서울특별시 기록관리 사업소 서고 담당 지방행정사무관(5급) 보직. 담당 업무: 서울역 서고기지 감독.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 서울역 서고기지 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 조하린의 삼본 함을 기지에서 지키는 지휘를 받고, 지서윤의 제습 주기와 함 온도를 맞추며, 나선재의 봉쇄를 내부에서 받친다.\n\n**야망.** 서고기지의 함과 예비 용지를 기록 전용으로 고정해 서울역이 강국의 창고가 되지 않게 한다.\n\n**공포.** 전력 없는 밤에 함이 열리고, 그 공백을 보호권이 점령 보관으로 쓰는 것.\n\n**개입.** 대체 축전지를 구해 함 온도를 지키거나, 일지 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 0 | 무력 −40 | 물질 −20 | 공동 10 | 원칙 50 | 공개 −30 | 자격 5 | 분산 −40 | 변혁 −50\n- 욕망: 갈망 −5 | 독점 20 | 위험 −15 | 과시 25 | 지속 −15 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-06"
   ],

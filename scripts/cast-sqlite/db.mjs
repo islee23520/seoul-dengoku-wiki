@@ -2,7 +2,7 @@ import { closeSync, openSync, readFileSync, unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
 
-export const SCHEMA_VERSION = 4;
+export const SCHEMA_VERSION = 5;
 export const APPLICATION_ID = 0x57435351;
 const schemaPaths = Object.freeze([
   new URL('./schema.sql', import.meta.url),

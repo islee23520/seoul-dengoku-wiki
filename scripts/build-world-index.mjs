@@ -5,6 +5,7 @@ import { readFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
 
 import { renderLoreMarkdown } from './lore-json-render.mjs'
+import { stateNames } from './approved-organization-aliases.mjs'
 
 const readPage = (loreRoot, slug) => {
   const candidates = [join(loreRoot, `${slug}.json`)]
@@ -26,7 +27,7 @@ const cell = (row, prefix) => Object.entries(row).find(([key]) => key === prefix
 
 const publicStateName = (cell) => cell.replace(/\([^)]*\)/gu, '').trim()
 
-export function buildWorldIndex({ loreRoot }) {
+export function buildWorldIndex({ loreRoot, organizationAliases = new Map() }) {
   const core = readPage(loreRoot, 'Core-Characters')
   const sixteen = readPage(loreRoot, 'Sixteen-States')
   const lines = sixteen.split('\n')
@@ -47,7 +48,7 @@ export function buildWorldIndex({ loreRoot }) {
       : { '국명': cells[0] ?? '', '기원': cells[1] ?? '', '형태': cells[2] ?? '', '강국': cells[3] ?? '' }
     if (!row['국명'] || row['국명'] === '국명') return null
     const name = publicStateName(row['국명'])
-    const names = [name]
+    const names = stateNames(name, organizationAliases)
     const capital = (cell(row, '수도역') || cell(row, '중심역')).replace(/역$/u, '').trim()
     const ranked = leaderSections
       .map(([person, section]) => {
@@ -64,7 +65,6 @@ export function buildWorldIndex({ loreRoot }) {
       name,
       station: capital || '-',
       type: (cell(row, '정부') || cell(row, '형태') || '-').split(',')[0].trim(),
-      isPower: /강국/.test(cell(row, '등급') || cell(row, '강국')) ? '강국' : '약소',
       leader,
     }
   }).filter(Boolean)
@@ -102,9 +102,9 @@ export function buildWorldIndex({ loreRoot }) {
 
 ## 16국
 
-| 국명 | 중심역 | 형태 | 강국 | 수장 |
-|---|---|---|---|---|
-${states.map((state) => `| [${state.name}](Sixteen-States.html) | ${state.station} | ${state.type} | ${state.isPower} | ${state.leader} |`).join('\n')}
+| 국명 | 중심역 | 형태 | 수장 |
+|---|---|---|---|
+${states.map((state) => `| [${state.name}](Sixteen-States.html) | ${state.station} | ${state.type} | ${state.leader} |`).join('\n')}
 
 ## 최신 사건
 
@@ -119,6 +119,6 @@ ${sections.map(([label, href]) => `- [${label}](${href})`).join('\n')}
 const loreRootArg = process.argv[2]
 if (loreRootArg && process.argv[1] && basename(process.argv[1]) === 'build-world-index.mjs') {
   const index = buildWorldIndex({ loreRoot: loreRootArg })
-  const leaders = [...index.matchAll(/\| \[[^\]]+\]\([^)]+\) \| [^|]+ \| [^|]+ \| [^|]+ \| ([^|]+) \|/g)].map((match) => match[1].trim())
+  const leaders = [...index.matchAll(/\| \[[^\]]+\]\([^)]+\) \| [^|]+ \| [^|]+ \| ([^|]+) \|/g)].map((match) => match[1].trim())
   console.log(`Successfully built world index — 16 states, leaders: ${leaders.filter((leader) => leader !== '-').length}/16`)
 }

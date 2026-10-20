@@ -22,11 +22,16 @@ test('build receipt counts a future Seoul-evidenced holding instead of silently 
       { current_validity: 'current_seoul_evidenced' },
       { current_validity: 'superseded_outside_seoul' },
       { current_validity: 'unresolved' },
+      { current_validity: 'current_seoul_nonowning' },
     ],
+    context_feudal_title: [{}, {}], context_feudal_grant: [{}],
+    context_political_identity: [{}, {}, {}], context_outside_retirement: [{}, {}, {}, {}],
   });
   assert.deepEqual(alignment, {
     index_warnings: 0, gender_policy_drift: 0,
     holding_superseded: 1, holding_unresolved: 1, holding_current: 1,
+    holding_nonowning: 1, current_title_count: 2, current_grant_count: 1,
+    political_identity_count: 3, outside_retired_count: 4,
   });
 });
 

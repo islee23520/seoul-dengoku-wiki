@@ -281,9 +281,90 @@
     }
   ],
   "officialExtentStatus": "verified-for-pinned-spatial-edition",
-  "kingdomStatus": "pending",
+  "kingdomStatus": "approved",
   "mapMinimumRank": "county",
-  "mapTitleIds": [],
+  "mapTitleIds": [
+    "geography:empire:seoul",
+    "geography:duchy:11110",
+    "geography:duchy:11140",
+    "geography:duchy:11170",
+    "geography:duchy:11200",
+    "geography:duchy:11215",
+    "geography:duchy:11230",
+    "geography:duchy:11260",
+    "geography:duchy:11290",
+    "geography:duchy:11305",
+    "geography:duchy:11320",
+    "geography:duchy:11350",
+    "geography:duchy:11380",
+    "geography:duchy:11410",
+    "geography:duchy:11440",
+    "geography:duchy:11470",
+    "geography:duchy:11500",
+    "geography:duchy:11530",
+    "geography:duchy:11545",
+    "geography:duchy:11560",
+    "geography:duchy:11590",
+    "geography:duchy:11620",
+    "geography:duchy:11650",
+    "geography:duchy:11680",
+    "geography:duchy:11710",
+    "geography:duchy:11740",
+    "geography:county:seoul-constituency:종로구선거구",
+    "geography:county:seoul-constituency:중구성동구갑선거구",
+    "geography:county:seoul-constituency:중구성동구을선거구",
+    "geography:county:seoul-constituency:용산구선거구",
+    "geography:county:seoul-constituency:광진구갑선거구",
+    "geography:county:seoul-constituency:광진구을선거구",
+    "geography:county:seoul-constituency:동대문구갑선거구",
+    "geography:county:seoul-constituency:동대문구을선거구",
+    "geography:county:seoul-constituency:중랑구갑선거구",
+    "geography:county:seoul-constituency:중랑구을선거구",
+    "geography:county:seoul-constituency:성북구갑선거구",
+    "geography:county:seoul-constituency:성북구을선거구",
+    "geography:county:seoul-constituency:강북구갑선거구",
+    "geography:county:seoul-constituency:강북구을선거구",
+    "geography:county:seoul-constituency:도봉구갑선거구",
+    "geography:county:seoul-constituency:도봉구을선거구",
+    "geography:county:seoul-constituency:노원구갑선거구",
+    "geography:county:seoul-constituency:노원구을선거구",
+    "geography:county:seoul-constituency:은평구갑선거구",
+    "geography:county:seoul-constituency:은평구을선거구",
+    "geography:county:seoul-constituency:서대문구갑선거구",
+    "geography:county:seoul-constituency:서대문구을선거구",
+    "geography:county:seoul-constituency:마포구갑선거구",
+    "geography:county:seoul-constituency:마포구을선거구",
+    "geography:county:seoul-constituency:양천구갑선거구",
+    "geography:county:seoul-constituency:양천구을선거구",
+    "geography:county:seoul-constituency:강서구갑선거구",
+    "geography:county:seoul-constituency:강서구을선거구",
+    "geography:county:seoul-constituency:강서구병선거구",
+    "geography:county:seoul-constituency:구로구갑선거구",
+    "geography:county:seoul-constituency:구로구을선거구",
+    "geography:county:seoul-constituency:금천구선거구",
+    "geography:county:seoul-constituency:영등포구갑선거구",
+    "geography:county:seoul-constituency:영등포구을선거구",
+    "geography:county:seoul-constituency:동작구갑선거구",
+    "geography:county:seoul-constituency:동작구을선거구",
+    "geography:county:seoul-constituency:관악구갑선거구",
+    "geography:county:seoul-constituency:관악구을선거구",
+    "geography:county:seoul-constituency:서초구갑선거구",
+    "geography:county:seoul-constituency:서초구을선거구",
+    "geography:county:seoul-constituency:강남구갑선거구",
+    "geography:county:seoul-constituency:강남구을선거구",
+    "geography:county:seoul-constituency:강남구병선거구",
+    "geography:county:seoul-constituency:송파구갑선거구",
+    "geography:county:seoul-constituency:송파구을선거구",
+    "geography:county:seoul-constituency:송파구병선거구",
+    "geography:county:seoul-constituency:강동구갑선거구",
+    "geography:county:seoul-constituency:강동구을선거구",
+    "geography:kingdom:seoul:01",
+    "geography:kingdom:seoul:02",
+    "geography:kingdom:seoul:03",
+    "geography:kingdom:seoul:04",
+    "geography:kingdom:seoul:05",
+    "geography:kingdom:seoul:06"
+  ],
   "titles": [
     {
       "titleId": "geography:empire:seoul",
@@ -337,8 +418,8 @@
       "sourceRefs": [
         "nec-district-종로구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:01",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11140",
@@ -351,8 +432,8 @@
       "sourceRefs": [
         "nec-district-중구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:01",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11170",
@@ -365,8 +446,8 @@
       "sourceRefs": [
         "nec-district-용산구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:01",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11200",
@@ -379,8 +460,8 @@
       "sourceRefs": [
         "nec-district-성동구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:01",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11215",
@@ -393,8 +474,8 @@
       "sourceRefs": [
         "nec-district-광진구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:06",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11230",
@@ -407,8 +488,8 @@
       "sourceRefs": [
         "nec-district-동대문구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:02",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11260",
@@ -421,8 +502,8 @@
       "sourceRefs": [
         "nec-district-중랑구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:02",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11290",
@@ -435,8 +516,8 @@
       "sourceRefs": [
         "nec-district-성북구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:02",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11305",
@@ -449,8 +530,8 @@
       "sourceRefs": [
         "nec-district-강북구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:02",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11320",
@@ -463,8 +544,8 @@
       "sourceRefs": [
         "nec-district-도봉구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:02",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11350",
@@ -477,8 +558,8 @@
       "sourceRefs": [
         "nec-district-노원구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:02",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11380",
@@ -491,8 +572,8 @@
       "sourceRefs": [
         "nec-district-은평구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:03",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11410",
@@ -505,8 +586,8 @@
       "sourceRefs": [
         "nec-district-서대문구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:03",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11440",
@@ -519,8 +600,8 @@
       "sourceRefs": [
         "nec-district-마포구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:03",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11470",
@@ -533,8 +614,8 @@
       "sourceRefs": [
         "nec-district-양천구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:04",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11500",
@@ -547,8 +628,8 @@
       "sourceRefs": [
         "nec-district-강서구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:04",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11530",
@@ -561,8 +642,8 @@
       "sourceRefs": [
         "nec-district-구로구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:05",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11545",
@@ -575,8 +656,8 @@
       "sourceRefs": [
         "nec-district-금천구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:05",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11560",
@@ -589,8 +670,8 @@
       "sourceRefs": [
         "nec-district-영등포구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:04",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11590",
@@ -603,8 +684,8 @@
       "sourceRefs": [
         "nec-district-동작구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:05",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11620",
@@ -617,8 +698,8 @@
       "sourceRefs": [
         "nec-district-관악구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:05",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11650",
@@ -631,8 +712,8 @@
       "sourceRefs": [
         "nec-district-서초구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:06",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11680",
@@ -645,8 +726,8 @@
       "sourceRefs": [
         "nec-district-강남구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:06",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11710",
@@ -659,8 +740,8 @@
       "sourceRefs": [
         "nec-district-송파구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:06",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:duchy:11740",
@@ -673,8 +754,8 @@
       "sourceRefs": [
         "nec-district-강동구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:kingdom:seoul:06",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:종로구선거구",
@@ -689,8 +770,8 @@
         "nec-election-228525-pdf",
         "nec-district-종로구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11110",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:중구성동구갑선거구",
@@ -705,8 +786,8 @@
         "nec-election-228525-pdf",
         "nec-district-성동구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11200",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:중구성동구을선거구",
@@ -723,8 +804,9 @@
         "nec-district-성동구",
         "nec-district-중구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:empire:seoul",
+      "feudalParentStatus": "approved-geographic",
+      "geographicParentException": "cross-district-empire-direct"
     },
     {
       "titleId": "geography:county:seoul-constituency:용산구선거구",
@@ -739,8 +821,8 @@
         "nec-election-228525-pdf",
         "nec-district-용산구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11170",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:광진구갑선거구",
@@ -755,8 +837,8 @@
         "nec-election-228525-pdf",
         "nec-district-광진구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11215",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:광진구을선거구",
@@ -771,8 +853,8 @@
         "nec-election-228525-pdf",
         "nec-district-광진구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11215",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:동대문구갑선거구",
@@ -787,8 +869,8 @@
         "nec-election-228525-pdf",
         "nec-district-동대문구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11230",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:동대문구을선거구",
@@ -803,8 +885,8 @@
         "nec-election-228525-pdf",
         "nec-district-동대문구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11230",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:중랑구갑선거구",
@@ -819,8 +901,8 @@
         "nec-election-228525-pdf",
         "nec-district-중랑구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11260",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:중랑구을선거구",
@@ -835,8 +917,8 @@
         "nec-election-228525-pdf",
         "nec-district-중랑구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11260",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:성북구갑선거구",
@@ -851,8 +933,8 @@
         "nec-election-228525-pdf",
         "nec-district-성북구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11290",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:성북구을선거구",
@@ -867,8 +949,8 @@
         "nec-election-228525-pdf",
         "nec-district-성북구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11290",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:강북구갑선거구",
@@ -883,8 +965,8 @@
         "nec-election-228525-pdf",
         "nec-district-강북구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11305",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:강북구을선거구",
@@ -899,8 +981,8 @@
         "nec-election-228525-pdf",
         "nec-district-강북구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11305",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:도봉구갑선거구",
@@ -915,8 +997,8 @@
         "nec-election-228525-pdf",
         "nec-district-도봉구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11320",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:도봉구을선거구",
@@ -931,8 +1013,8 @@
         "nec-election-228525-pdf",
         "nec-district-도봉구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11320",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:노원구갑선거구",
@@ -947,8 +1029,8 @@
         "nec-election-228525-pdf",
         "nec-district-노원구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11350",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:노원구을선거구",
@@ -963,8 +1045,8 @@
         "nec-election-228525-pdf",
         "nec-district-노원구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11350",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:은평구갑선거구",
@@ -979,8 +1061,8 @@
         "nec-election-228525-pdf",
         "nec-district-은평구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11380",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:은평구을선거구",
@@ -995,8 +1077,8 @@
         "nec-election-228525-pdf",
         "nec-district-은평구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11380",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:서대문구갑선거구",
@@ -1011,8 +1093,8 @@
         "nec-election-228525-pdf",
         "nec-district-서대문구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11410",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:서대문구을선거구",
@@ -1027,8 +1109,8 @@
         "nec-election-228525-pdf",
         "nec-district-서대문구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11410",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:마포구갑선거구",
@@ -1043,8 +1125,8 @@
         "nec-election-228525-pdf",
         "nec-district-마포구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11440",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:마포구을선거구",
@@ -1059,8 +1141,8 @@
         "nec-election-228525-pdf",
         "nec-district-마포구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11440",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:양천구갑선거구",
@@ -1075,8 +1157,8 @@
         "nec-election-228525-pdf",
         "nec-district-양천구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11470",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:양천구을선거구",
@@ -1091,8 +1173,8 @@
         "nec-election-228525-pdf",
         "nec-district-양천구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11470",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:강서구갑선거구",
@@ -1107,8 +1189,8 @@
         "nec-election-228525-pdf",
         "nec-district-강서구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11500",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:강서구을선거구",
@@ -1123,8 +1205,8 @@
         "nec-election-228525-pdf",
         "nec-district-강서구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11500",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:강서구병선거구",
@@ -1139,8 +1221,8 @@
         "nec-election-228525-pdf",
         "nec-district-강서구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11500",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:구로구갑선거구",
@@ -1155,8 +1237,8 @@
         "nec-election-228525-pdf",
         "nec-district-구로구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11530",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:구로구을선거구",
@@ -1171,8 +1253,8 @@
         "nec-election-228525-pdf",
         "nec-district-구로구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11530",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:금천구선거구",
@@ -1187,8 +1269,8 @@
         "nec-election-228525-pdf",
         "nec-district-금천구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11545",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:영등포구갑선거구",
@@ -1203,8 +1285,8 @@
         "nec-election-228525-pdf",
         "nec-district-영등포구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11560",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:영등포구을선거구",
@@ -1219,8 +1301,8 @@
         "nec-election-228525-pdf",
         "nec-district-영등포구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11560",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:동작구갑선거구",
@@ -1235,8 +1317,8 @@
         "nec-election-228525-pdf",
         "nec-district-동작구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11590",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:동작구을선거구",
@@ -1251,8 +1333,8 @@
         "nec-election-228525-pdf",
         "nec-district-동작구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11590",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:관악구갑선거구",
@@ -1267,8 +1349,8 @@
         "nec-election-228525-pdf",
         "nec-district-관악구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11620",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:관악구을선거구",
@@ -1283,8 +1365,8 @@
         "nec-election-228525-pdf",
         "nec-district-관악구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11620",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:서초구갑선거구",
@@ -1299,8 +1381,8 @@
         "nec-election-228525-pdf",
         "nec-district-서초구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11650",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:서초구을선거구",
@@ -1315,8 +1397,8 @@
         "nec-election-228525-pdf",
         "nec-district-서초구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11650",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:강남구갑선거구",
@@ -1331,8 +1413,8 @@
         "nec-election-228525-pdf",
         "nec-district-강남구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11680",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:강남구을선거구",
@@ -1347,8 +1429,8 @@
         "nec-election-228525-pdf",
         "nec-district-강남구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11680",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:강남구병선거구",
@@ -1363,8 +1445,8 @@
         "nec-election-228525-pdf",
         "nec-district-강남구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11680",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:송파구갑선거구",
@@ -1379,8 +1461,8 @@
         "nec-election-228525-pdf",
         "nec-district-송파구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11710",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:송파구을선거구",
@@ -1395,8 +1477,8 @@
         "nec-election-228525-pdf",
         "nec-district-송파구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11710",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:송파구병선거구",
@@ -1411,8 +1493,8 @@
         "nec-election-228525-pdf",
         "nec-district-송파구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11710",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:강동구갑선거구",
@@ -1427,8 +1509,8 @@
         "nec-election-228525-pdf",
         "nec-district-강동구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11740",
+      "feudalParentStatus": "approved-geographic"
     },
     {
       "titleId": "geography:county:seoul-constituency:강동구을선거구",
@@ -1443,8 +1525,177 @@
         "nec-election-228525-pdf",
         "nec-district-강동구"
       ],
-      "feudalParentTitleId": null,
-      "feudalParentStatus": "pending"
+      "feudalParentTitleId": "geography:duchy:11740",
+      "feudalParentStatus": "approved-geographic"
+    },
+    {
+      "titleId": "geography:kingdom:seoul:01",
+      "rank": "kingdom",
+      "name": "중앙 왕국",
+      "jurisdictionRefs": [
+        "11110",
+        "11140",
+        "11170",
+        "11200"
+      ],
+      "sourcePointer": "/kingdoms/0",
+      "sourceRefs": [
+        ".omo/private/seoul-migration/task-8-kingdom-partition-proposal.json#/kingdoms/0"
+      ],
+      "feudalParentTitleId": "geography:empire:seoul",
+      "feudalParentStatus": "approved-geographic",
+      "countyTitleIds": [
+        "geography:county:seoul-constituency:종로구선거구",
+        "geography:county:seoul-constituency:중구성동구갑선거구",
+        "geography:county:seoul-constituency:중구성동구을선거구",
+        "geography:county:seoul-constituency:용산구선거구"
+      ],
+      "holderPersonId": null
+    },
+    {
+      "titleId": "geography:kingdom:seoul:02",
+      "rank": "kingdom",
+      "name": "북동 왕국",
+      "jurisdictionRefs": [
+        "11230",
+        "11260",
+        "11290",
+        "11305",
+        "11320",
+        "11350"
+      ],
+      "sourcePointer": "/kingdoms/1",
+      "sourceRefs": [
+        ".omo/private/seoul-migration/task-8-kingdom-partition-proposal.json#/kingdoms/1"
+      ],
+      "feudalParentTitleId": "geography:empire:seoul",
+      "feudalParentStatus": "approved-geographic",
+      "countyTitleIds": [
+        "geography:county:seoul-constituency:동대문구갑선거구",
+        "geography:county:seoul-constituency:동대문구을선거구",
+        "geography:county:seoul-constituency:중랑구갑선거구",
+        "geography:county:seoul-constituency:중랑구을선거구",
+        "geography:county:seoul-constituency:성북구갑선거구",
+        "geography:county:seoul-constituency:성북구을선거구",
+        "geography:county:seoul-constituency:강북구갑선거구",
+        "geography:county:seoul-constituency:강북구을선거구",
+        "geography:county:seoul-constituency:도봉구갑선거구",
+        "geography:county:seoul-constituency:도봉구을선거구",
+        "geography:county:seoul-constituency:노원구갑선거구",
+        "geography:county:seoul-constituency:노원구을선거구"
+      ],
+      "holderPersonId": null
+    },
+    {
+      "titleId": "geography:kingdom:seoul:03",
+      "rank": "kingdom",
+      "name": "북서 왕국",
+      "jurisdictionRefs": [
+        "11380",
+        "11410",
+        "11440"
+      ],
+      "sourcePointer": "/kingdoms/2",
+      "sourceRefs": [
+        ".omo/private/seoul-migration/task-8-kingdom-partition-proposal.json#/kingdoms/2"
+      ],
+      "feudalParentTitleId": "geography:empire:seoul",
+      "feudalParentStatus": "approved-geographic",
+      "countyTitleIds": [
+        "geography:county:seoul-constituency:은평구갑선거구",
+        "geography:county:seoul-constituency:은평구을선거구",
+        "geography:county:seoul-constituency:서대문구갑선거구",
+        "geography:county:seoul-constituency:서대문구을선거구",
+        "geography:county:seoul-constituency:마포구갑선거구",
+        "geography:county:seoul-constituency:마포구을선거구"
+      ],
+      "holderPersonId": null
+    },
+    {
+      "titleId": "geography:kingdom:seoul:04",
+      "rank": "kingdom",
+      "name": "서부 왕국",
+      "jurisdictionRefs": [
+        "11500",
+        "11470",
+        "11560"
+      ],
+      "sourcePointer": "/kingdoms/3",
+      "sourceRefs": [
+        ".omo/private/seoul-migration/task-8-kingdom-partition-proposal.json#/kingdoms/3"
+      ],
+      "feudalParentTitleId": "geography:empire:seoul",
+      "feudalParentStatus": "approved-geographic",
+      "countyTitleIds": [
+        "geography:county:seoul-constituency:양천구갑선거구",
+        "geography:county:seoul-constituency:양천구을선거구",
+        "geography:county:seoul-constituency:강서구갑선거구",
+        "geography:county:seoul-constituency:강서구을선거구",
+        "geography:county:seoul-constituency:강서구병선거구",
+        "geography:county:seoul-constituency:영등포구갑선거구",
+        "geography:county:seoul-constituency:영등포구을선거구"
+      ],
+      "holderPersonId": null
+    },
+    {
+      "titleId": "geography:kingdom:seoul:05",
+      "rank": "kingdom",
+      "name": "남서 왕국",
+      "jurisdictionRefs": [
+        "11530",
+        "11545",
+        "11590",
+        "11620"
+      ],
+      "sourcePointer": "/kingdoms/4",
+      "sourceRefs": [
+        ".omo/private/seoul-migration/task-8-kingdom-partition-proposal.json#/kingdoms/4"
+      ],
+      "feudalParentTitleId": "geography:empire:seoul",
+      "feudalParentStatus": "approved-geographic",
+      "countyTitleIds": [
+        "geography:county:seoul-constituency:구로구갑선거구",
+        "geography:county:seoul-constituency:구로구을선거구",
+        "geography:county:seoul-constituency:금천구선거구",
+        "geography:county:seoul-constituency:동작구갑선거구",
+        "geography:county:seoul-constituency:동작구을선거구",
+        "geography:county:seoul-constituency:관악구갑선거구",
+        "geography:county:seoul-constituency:관악구을선거구"
+      ],
+      "holderPersonId": null
+    },
+    {
+      "titleId": "geography:kingdom:seoul:06",
+      "rank": "kingdom",
+      "name": "동남 왕국",
+      "jurisdictionRefs": [
+        "11215",
+        "11650",
+        "11680",
+        "11710",
+        "11740"
+      ],
+      "sourcePointer": "/kingdoms/5",
+      "sourceRefs": [
+        ".omo/private/seoul-migration/task-8-kingdom-partition-proposal.json#/kingdoms/5"
+      ],
+      "feudalParentTitleId": "geography:empire:seoul",
+      "feudalParentStatus": "approved-geographic",
+      "countyTitleIds": [
+        "geography:county:seoul-constituency:광진구갑선거구",
+        "geography:county:seoul-constituency:광진구을선거구",
+        "geography:county:seoul-constituency:서초구갑선거구",
+        "geography:county:seoul-constituency:서초구을선거구",
+        "geography:county:seoul-constituency:강남구갑선거구",
+        "geography:county:seoul-constituency:강남구을선거구",
+        "geography:county:seoul-constituency:강남구병선거구",
+        "geography:county:seoul-constituency:송파구갑선거구",
+        "geography:county:seoul-constituency:송파구을선거구",
+        "geography:county:seoul-constituency:송파구병선거구",
+        "geography:county:seoul-constituency:강동구갑선거구",
+        "geography:county:seoul-constituency:강동구을선거구"
+      ],
+      "holderPersonId": null
     }
   ],
   "countySlots": [
@@ -27173,5 +27424,150 @@
         }
       ]
     }
-  ]
+  ],
+  "successor": {
+    "schema": "seoul-kingdom-successor.v1",
+    "batchId": "kingdom-partition-6",
+    "previousSha256": "a422097741d7da52e50b5774c0d47b79bc8fa5e43061c39535429cd8173ae0c1",
+    "beforeArchivePath": ".omo/private/seoul-migration/kingdom-partition-6/task2-before.json.gz.b64",
+    "proposal": {
+      "path": ".omo/private/seoul-migration/task-8-kingdom-partition-proposal.json",
+      "sha256": "8c64d3858c03dc5197eb5cfe0e802e8f41890e3754ba24cd8f22f5fa3c5854c4"
+    },
+    "approval": {
+      "path": ".omo/private/seoul-migration/owner-approvals-20261015.json",
+      "sha256": "bc3af8bb8f0b50436afc49a0153a510bbccb90ae872102bf1c3b950970013fb1"
+    },
+    "partitionSha256": "0b2327e3f5e23a4dff539272a747357f4909970ec4fa9234a2386b4faec1ddf5",
+    "crossDistrictParentPolicy": "empire-direct-geographic-parent-with-kingdom-map-membership",
+    "partition": [
+      {
+        "titleId": "geography:kingdom:seoul:01",
+        "proposalId": "proposal:kingdom:seoul:01",
+        "name": "중앙 왕국",
+        "jurisdictionRefs": [
+          "11110",
+          "11140",
+          "11170",
+          "11200"
+        ],
+        "countyTitleIds": [
+          "geography:county:seoul-constituency:종로구선거구",
+          "geography:county:seoul-constituency:중구성동구갑선거구",
+          "geography:county:seoul-constituency:중구성동구을선거구",
+          "geography:county:seoul-constituency:용산구선거구"
+        ]
+      },
+      {
+        "titleId": "geography:kingdom:seoul:02",
+        "proposalId": "proposal:kingdom:seoul:02",
+        "name": "북동 왕국",
+        "jurisdictionRefs": [
+          "11230",
+          "11260",
+          "11290",
+          "11305",
+          "11320",
+          "11350"
+        ],
+        "countyTitleIds": [
+          "geography:county:seoul-constituency:동대문구갑선거구",
+          "geography:county:seoul-constituency:동대문구을선거구",
+          "geography:county:seoul-constituency:중랑구갑선거구",
+          "geography:county:seoul-constituency:중랑구을선거구",
+          "geography:county:seoul-constituency:성북구갑선거구",
+          "geography:county:seoul-constituency:성북구을선거구",
+          "geography:county:seoul-constituency:강북구갑선거구",
+          "geography:county:seoul-constituency:강북구을선거구",
+          "geography:county:seoul-constituency:도봉구갑선거구",
+          "geography:county:seoul-constituency:도봉구을선거구",
+          "geography:county:seoul-constituency:노원구갑선거구",
+          "geography:county:seoul-constituency:노원구을선거구"
+        ]
+      },
+      {
+        "titleId": "geography:kingdom:seoul:03",
+        "proposalId": "proposal:kingdom:seoul:03",
+        "name": "북서 왕국",
+        "jurisdictionRefs": [
+          "11380",
+          "11410",
+          "11440"
+        ],
+        "countyTitleIds": [
+          "geography:county:seoul-constituency:은평구갑선거구",
+          "geography:county:seoul-constituency:은평구을선거구",
+          "geography:county:seoul-constituency:서대문구갑선거구",
+          "geography:county:seoul-constituency:서대문구을선거구",
+          "geography:county:seoul-constituency:마포구갑선거구",
+          "geography:county:seoul-constituency:마포구을선거구"
+        ]
+      },
+      {
+        "titleId": "geography:kingdom:seoul:04",
+        "proposalId": "proposal:kingdom:seoul:04",
+        "name": "서부 왕국",
+        "jurisdictionRefs": [
+          "11500",
+          "11470",
+          "11560"
+        ],
+        "countyTitleIds": [
+          "geography:county:seoul-constituency:양천구갑선거구",
+          "geography:county:seoul-constituency:양천구을선거구",
+          "geography:county:seoul-constituency:강서구갑선거구",
+          "geography:county:seoul-constituency:강서구을선거구",
+          "geography:county:seoul-constituency:강서구병선거구",
+          "geography:county:seoul-constituency:영등포구갑선거구",
+          "geography:county:seoul-constituency:영등포구을선거구"
+        ]
+      },
+      {
+        "titleId": "geography:kingdom:seoul:05",
+        "proposalId": "proposal:kingdom:seoul:05",
+        "name": "남서 왕국",
+        "jurisdictionRefs": [
+          "11530",
+          "11545",
+          "11590",
+          "11620"
+        ],
+        "countyTitleIds": [
+          "geography:county:seoul-constituency:구로구갑선거구",
+          "geography:county:seoul-constituency:구로구을선거구",
+          "geography:county:seoul-constituency:금천구선거구",
+          "geography:county:seoul-constituency:동작구갑선거구",
+          "geography:county:seoul-constituency:동작구을선거구",
+          "geography:county:seoul-constituency:관악구갑선거구",
+          "geography:county:seoul-constituency:관악구을선거구"
+        ]
+      },
+      {
+        "titleId": "geography:kingdom:seoul:06",
+        "proposalId": "proposal:kingdom:seoul:06",
+        "name": "동남 왕국",
+        "jurisdictionRefs": [
+          "11215",
+          "11650",
+          "11680",
+          "11710",
+          "11740"
+        ],
+        "countyTitleIds": [
+          "geography:county:seoul-constituency:광진구갑선거구",
+          "geography:county:seoul-constituency:광진구을선거구",
+          "geography:county:seoul-constituency:서초구갑선거구",
+          "geography:county:seoul-constituency:서초구을선거구",
+          "geography:county:seoul-constituency:강남구갑선거구",
+          "geography:county:seoul-constituency:강남구을선거구",
+          "geography:county:seoul-constituency:강남구병선거구",
+          "geography:county:seoul-constituency:송파구갑선거구",
+          "geography:county:seoul-constituency:송파구을선거구",
+          "geography:county:seoul-constituency:송파구병선거구",
+          "geography:county:seoul-constituency:강동구갑선거구",
+          "geography:county:seoul-constituency:강동구을선거구"
+        ]
+      }
+    ]
+  }
 }

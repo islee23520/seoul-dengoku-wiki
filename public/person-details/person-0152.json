@@ -1,10 +1,10 @@
 {
   "id": "person-0152",
   "name": "마도한",
-  "title": "서울역 공증사본 물류상",
-  "position": "강화 외곽·백령대청 해상 영주",
+  "title": "",
+  "position": "",
   "characterId": "K151",
-  "rank": "해상 영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "공증사본 계량·반출 관리",
   "gender": "남성",
@@ -452,47 +452,23 @@
             "name": "마도한",
             "url": "/people/person-0152",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "공증사본 계량·반출 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/105/items/0/ko",
-                  "quote": "생업: 공증사본 계량·반출 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "아침 저울과 반출 시각을 벽에 적고, 오서율의 증인란이 빈 사본은 선석에 들이지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -500,79 +476,29 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/105/items/0/ko",
-                    "quote": "생업: 공증사본 계량·반출 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "아침 저울과 반출 시각을 벽에 적고, 오서율의 증인란이 빈 사본은 선석에 들이지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "마도한 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 47
+            }
           }
         }
       },
@@ -595,47 +521,23 @@
             "name": "마도한",
             "url": "/people/person-0152",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "공증사본 계량·반출 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/105/items/0/ko",
-                  "quote": "생업: 공증사본 계량·반출 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "아침 저울과 반출 시각을 벽에 적고, 오서율의 증인란이 빈 사본은 선석에 들이지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -643,347 +545,67 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/105/items/0/ko",
-                    "quote": "생업: 공증사본 계량·반출 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "아침 저울과 반출 시각을 벽에 적고, 오서율의 증인란이 빈 사본은 선석에 들이지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "마도한 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 47
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-28710-S06",
-      "name": {
-        "ko": "강화군 공작령 직영지"
-      },
-      "holderPersonId": "K151",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "2871025000",
-          "name": "인천광역시 강화군 강화읍"
-        },
-        {
-          "id": "2871031000",
-          "name": "인천광역시 강화군 선원면"
-        },
-        {
-          "id": "2871032000",
-          "name": "인천광역시 강화군 불은면"
-        },
-        {
-          "id": "2871033000",
-          "name": "인천광역시 강화군 길상면"
-        },
-        {
-          "id": "2871034000",
-          "name": "인천광역시 강화군 화도면"
-        },
-        {
-          "id": "2871035000",
-          "name": "인천광역시 강화군 양도면"
-        },
-        {
-          "id": "2871036000",
-          "name": "인천광역시 강화군 내가면"
-        },
-        {
-          "id": "2871037000",
-          "name": "인천광역시 강화군 하점면"
-        },
-        {
-          "id": "2871038000",
-          "name": "인천광역시 강화군 양사면"
-        },
-        {
-          "id": "2871039000",
-          "name": "인천광역시 강화군 송해면"
-        },
-        {
-          "id": "2871040000",
-          "name": "인천광역시 강화군 교동면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-28710-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    },
-    {
-      "id": "holding:sea-K151",
-      "name": {
-        "ko": "강화 외곽·백령대청 해상 직영지"
-      },
-      "holderPersonId": "K151",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [],
-      "componentRefs": [
-        {
-          "unitId": "2815551000",
-          "componentIndex": 0
-        },
-        {
-          "unitId": "2815551000",
-          "componentIndex": 1
-        },
-        {
-          "unitId": "2815551000",
-          "componentIndex": 2
-        },
-        {
-          "unitId": "2815551000",
-          "componentIndex": 3
-        },
-        {
-          "unitId": "2815551000",
-          "componentIndex": 4
-        },
-        {
-          "unitId": "2815551000",
-          "componentIndex": 5
-        },
-        {
-          "unitId": "2815551000",
-          "componentIndex": 6
-        },
-        {
-          "unitId": "2815551000",
-          "componentIndex": 7
-        },
-        {
-          "unitId": "2815556000",
-          "componentIndex": 0
-        },
-        {
-          "unitId": "2815556000",
-          "componentIndex": 1
-        },
-        {
-          "unitId": "2815556000",
-          "componentIndex": 2
-        },
-        {
-          "unitId": "2815556000",
-          "componentIndex": 3
-        },
-        {
-          "unitId": "2815556000",
-          "componentIndex": 4
-        },
-        {
-          "unitId": "2815556000",
-          "componentIndex": 5
-        },
-        {
-          "unitId": "2815556000",
-          "componentIndex": 6
-        },
-        {
-          "unitId": "2815556000",
-          "componentIndex": 7
-        },
-        {
-          "unitId": "2871041000",
-          "componentIndex": 0
-        },
-        {
-          "unitId": "2871041000",
-          "componentIndex": 1
-        },
-        {
-          "unitId": "2871041000",
-          "componentIndex": 2
-        },
-        {
-          "unitId": "2871041000",
-          "componentIndex": 3
-        },
-        {
-          "unitId": "2871041000",
-          "componentIndex": 4
-        },
-        {
-          "unitId": "2871041000",
-          "componentIndex": 5
-        },
-        {
-          "unitId": "2871041000",
-          "componentIndex": 6
-        },
-        {
-          "unitId": "2871042000",
-          "componentIndex": 0
-        },
-        {
-          "unitId": "2871042000",
-          "componentIndex": 1
-        },
-        {
-          "unitId": "2871042000",
-          "componentIndex": 2
-        },
-        {
-          "unitId": "2871042000",
-          "componentIndex": 3
-        },
-        {
-          "unitId": "2871042000",
-          "componentIndex": 4
-        },
-        {
-          "unitId": "2871042000",
-          "componentIndex": 5
-        },
-        {
-          "unitId": "2871042000",
-          "componentIndex": 6
-        },
-        {
-          "unitId": "2871042000",
-          "componentIndex": 7
-        },
-        {
-          "unitId": "2872033000",
-          "componentIndex": 0
-        },
-        {
-          "unitId": "2872034000",
-          "componentIndex": 0
-        },
-        {
-          "unitId": "2872034000",
-          "componentIndex": 1
-        },
-        {
-          "unitId": "2872034000",
-          "componentIndex": 2
-        }
-      ],
-      "titleId": "title:barony-K151-sea",
-      "geometrySource": "lore/regions/outside-island-occupation.json",
-      "territorialScale": null,
-      "formalTitleRank": "barony"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:barony-K151-sea",
-      "name": "강화 외곽·백령대청 해상 남작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K151",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [],
-      "basis": "owner:call_wFGQ0sW3jxjHivoeN4XA1oom:sea_vassal_named_appointments 승인 (분할 단위는 componentRef로만 수여)",
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:sea-K151",
+          "directLiegePersonId": "K144"
+        }
+      ],
+      "directOwnership": false
     },
     {
       "id": "title:duchy-28710-S06",
-      "name": "강화군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K151",
-      "basis": "개막 행정 규모 그룹 28710(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "2871025000",
-        "2871031000",
-        "2871032000",
-        "2871033000",
-        "2871034000",
-        "2871035000",
-        "2871036000",
-        "2871037000",
-        "2871038000",
-        "2871039000",
-        "2871040000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-28710-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -998,7 +620,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -1047,22 +668,22 @@
   },
   "fields": {
     "생업": "공증사본 계량·반출 관리",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "서울역 공증사본 물류상",
+    "지위": "기능·생업 역할(정부 임용 아님)",
+    "공무원 직위·직급": "없음",
+    "생업 역할": "서울역 공증사본 물류상",
     "가치관": "권위 30 | 개방 −10 | 무력 −40 | 물질 −20 | 공동 20 | 원칙 35 | 공개 −10 | 자격 10 | 분산 −35 | 변혁 −50",
     "욕망": "갈망 −10 | 독점 −10 | 위험 −25 | 과시 −25 | 지속 30 | 지향 양성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 서울역 공증사본 물류상 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "관직": "품계 주사. 직함은 서울역 공증사본 물류상. 아침 저울과 반출 시각을 벽에 적고, 오서율의 증인란이 빈 사본은 선석에 들이지 않는다.",
-    "일화": "오서율의 증인란이 비고 무게마저 운송 장부와 어긋나는 사본 상자가 서울역 선석 앞에 선다. 마도한은 저울을 갈아 끼워 다시 달고, 반출 시각 옆에 차이를 적은 뒤 상자를 선석 밖에 둔다.",
+    "생애": "서울역 등기소에서 자랐다. 서울역 공증사본 물류상 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 마도한의 공증사본을 달고 반출 시각을 확인하는 일은 회현동의 업무와 이어진다.",
+    "업무": "직무상 품계는 주사. 생업상 직함은 서울역 공증사본 물류상. 아침 저울과 반출 시각을 벽에 적고, 오서율의 증인란이 빈 사본은 인계 구역에 들이지 않는다.",
+    "일화": "오서율의 증인란이 비고 무게마저 운송 장부와 어긋나는 사본 상자가 서울역 인계 구역 앞에 선다. 마도한은 저울을 갈아 끼워 다시 달고, 반출 시각 옆에 차이를 적은 뒤 상자를 인계 구역 밖에 둔다.",
     "관계": "오서율의 마른 인장만 운송하는 계약이고, 양해온의 전령 봉인과 순번을 나누며, 오해린의 결제권이 공증 운임을 삼키려 하면 경쟁한다.",
     "야망": "계승·급수·수리 조약을 공증 사본 운송 원장에만 유효하게 묶어 기록청이 실제 거부권을 갖게 한다.",
     "공포": "위조 유언 사본 한 장이 강국 호송칸에 실려 서울역이 도장 하청으로 전락하는 것.",
     "개입": "증인 호송을 맡아 사본 운송을 재개하거나, 장부 없는 야간 반출을 폭로할 수 있다."
   },
-  "biography": "인장이 마르기 전에 사본을 움직이는 사람을 위조로 부르고, 상자 무게가 장부와 다르면 즉시 저울을 갈아 끼운다. 흥정은 낮게 끝내고 구두 운임을 인정하지 않는다.\n\n- 생업: 공증사본 계량·반출 관리\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 서울역 공증사본 물류상\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 서울역 공증사본 물류상 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 주사. 직함은 서울역 공증사본 물류상. 아침 저울과 반출 시각을 벽에 적고, 오서율의 증인란이 빈 사본은 선석에 들이지 않는다.\n\n**일화.** 오서율의 증인란이 비고 무게마저 운송 장부와 어긋나는 사본 상자가 서울역 선석 앞에 선다. 마도한은 저울을 갈아 끼워 다시 달고, 반출 시각 옆에 차이를 적은 뒤 상자를 선석 밖에 둔다.\n\n**관계.** 오서율의 마른 인장만 운송하는 계약이고, 양해온의 전령 봉인과 순번을 나누며, 오해린의 결제권이 공증 운임을 삼키려 하면 경쟁한다.\n\n**야망.** 계승·급수·수리 조약을 공증 사본 운송 원장에만 유효하게 묶어 기록청이 실제 거부권을 갖게 한다.\n\n**공포.** 위조 유언 사본 한 장이 강국 호송칸에 실려 서울역이 도장 하청으로 전락하는 것.\n\n**개입.** 증인 호송을 맡아 사본 운송을 재개하거나, 장부 없는 야간 반출을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −10 | 무력 −40 | 물질 −20 | 공동 20 | 원칙 35 | 공개 −10 | 자격 10 | 분산 −35 | 변혁 −50\n- 욕망: 갈망 −10 | 독점 −10 | 위험 −25 | 과시 −25 | 지속 30 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "인장이 마르기 전에 사본을 움직이는 사람을 위조로 부르고, 상자 무게가 장부와 다르면 즉시 저울을 갈아 끼운다. 흥정은 낮게 끝내고 구두 운임을 인정하지 않는다.\n\n- 생업: 공증사본 계량·반출 관리\n- 지위: 기능·생업 역할(정부 임용 아님)\n- 공무원 직위·직급: 없음\n- 생업 역할: 서울역 공증사본 물류상\n**생애.** 서울역 등기소에서 자랐다. 서울역 공증사본 물류상 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 마도한의 공증사본을 달고 반출 시각을 확인하는 일은 회현동의 업무와 이어진다.\n\n**업무.** 직무상 품계는 주사. 생업상 직함은 서울역 공증사본 물류상. 아침 저울과 반출 시각을 벽에 적고, 오서율의 증인란이 빈 사본은 인계 구역에 들이지 않는다.\n\n**일화.** 오서율의 증인란이 비고 무게마저 운송 장부와 어긋나는 사본 상자가 서울역 인계 구역 앞에 선다. 마도한은 저울을 갈아 끼워 다시 달고, 반출 시각 옆에 차이를 적은 뒤 상자를 인계 구역 밖에 둔다.\n\n**관계.** 오서율의 마른 인장만 운송하는 계약이고, 양해온의 전령 봉인과 순번을 나누며, 오해린의 결제권이 공증 운임을 삼키려 하면 경쟁한다.\n\n**야망.** 계승·급수·수리 조약을 공증 사본 운송 원장에만 유효하게 묶어 기록청이 실제 거부권을 갖게 한다.\n\n**공포.** 위조 유언 사본 한 장이 강국 호송칸에 실려 서울역이 도장 하청으로 전락하는 것.\n\n**개입.** 증인 호송을 맡아 사본 운송을 재개하거나, 장부 없는 야간 반출을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −10 | 무력 −40 | 물질 −20 | 공동 20 | 원칙 35 | 공개 −10 | 자격 10 | 분산 −35 | 변혁 −50\n- 욕망: 갈망 −10 | 독점 −10 | 위험 −25 | 과시 −25 | 지속 30 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-06"
   ],

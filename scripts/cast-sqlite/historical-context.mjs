@@ -1,6 +1,6 @@
 const PATHS = Object.freeze({
-  allocation: 'lore/relations/opening-feudal-allocation.json',
-  outside: 'lore/regions/outside-control-2126.json',
+  allocation: 'scripts/historical-inputs/opening-feudal-allocation.json',
+  outside: 'scripts/historical-inputs/outside-control-2126.json',
   electoral: 'lore/regions/seoul-electoral-titles.json',
 })
 
@@ -136,7 +136,7 @@ function electoral(bundle, tables) {
   const schema = text(document.schema, 'electoral.schema')
   if (document.status !== 'inspection-only') fail('E_HISTORICAL_STAGING_STATUS', String(document.status))
   const titles = array(document.titles, 'electoral.titles')
-  if (titles.some((row) => Object.hasOwn(object(row, 'electoral.title'), 'holderPersonId'))) fail('E_HISTORICAL_STAGING_PERSON', 'electoral titles must remain unowned staging geography')
+  if (titles.some((row) => object(row, 'electoral.title').holderPersonId !== undefined && row.holderPersonId !== null)) fail('E_HISTORICAL_STAGING_PERSON', 'electoral titles must remain unowned staging geography')
   tables.historical_source_scope.push({ source_id, logical_path: PATHS.electoral, source_schema: schema,
     classification: 'inspection_only_no_person_right', record_count: titles.length, person_link_count: 0, json_pointer: '' })
 }

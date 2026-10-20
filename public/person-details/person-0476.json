@@ -348,8 +348,8 @@
           "en": "Anecdote. In the 2125 station fire he carried out the roster of lives first. By this deed the signature of the gate duty post rose into the ledger."
         },
         "stress": {
-          "ko": "공포. 관문 당직 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the gate duty duty post would stand empty and the State's passage would cuts the eastern gates and the vassal roads to Hanam, Namyangju, Uijeongbu and Yeoncheon. Changes in behavior or state effects are unconfirmed."
+          "ko": "공포. 관문 당직 당직이 비면 암사·고덕의 관문 통행과 급수 인계가 끊기는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That the gate duty duty post would stand empty and passage through the Amsa and Godeok gates and water-supply handovers would be interrupted. Changes in behavior or state effects are unconfirmed."
         },
         "relationship": {
           "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -372,8 +372,8 @@
           "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
         },
         "stress": {
-          "ko": "공포. 관문 당직 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the gate duty duty post would stand empty and the State's passage would cuts the eastern gates and the vassal roads to Hanam, Namyangju, Uijeongbu and Yeoncheon. The actual response is not yet recorded."
+          "ko": "공포. 관문 당직 당직이 비면 암사·고덕의 관문 통행과 급수 인계가 끊기는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That the gate duty duty post would stand empty and passage through the Amsa and Godeok gates and water-supply handovers would be interrupted. The actual response is not yet recorded."
         },
         "relationship": {
           "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -446,41 +446,23 @@
             "name": "신수빈",
             "url": "/people/person-0476",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "관문 인명 장부 보관",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/335/items/1/ko",
-                  "quote": "생업: 관문 인명 장부 보관"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -488,68 +470,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/335/items/1/ko",
-                    "quote": "생업: 관문 인명 장부 보관"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 8,
-              "unspent": 67,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "소사",
-              "type": "초소 영지",
-              "station": "소사",
-              "state": "S05",
-              "settlement": {
-                "name": "소사 정착지",
-                "type": "정착지",
-                "description": "소사 일대 고정 거점"
-              },
-              "note": "S05 소사 일대 관할 영지"
+              "unspent": 67
             }
           }
         }
@@ -573,47 +515,23 @@
             "name": "신수빈",
             "url": "/people/person-0476",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "관문 인명 장부 보관",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/335/items/1/ko",
-                  "quote": "생업: 관문 인명 장부 보관"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/336/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -621,73 +539,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/335/items/1/ko",
-                    "quote": "생업: 관문 인명 장부 보관"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/336/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "소사",
-              "type": "초소 영지",
-              "station": "소사",
-              "state": "S05",
-              "settlement": {
-                "name": "소사 정착지",
-                "type": "정착지",
-                "description": "소사 일대 고정 거점"
-              },
-              "note": "S05 소사 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -708,18 +581,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "소사",
-    "type": "초소 영지",
-    "station": "소사",
-    "state": "S05",
-    "settlement": {
-      "name": "소사 정착지",
-      "type": "정착지",
-      "description": "소사 일대 고정 거점"
-    },
-    "note": "S05 소사 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -759,16 +620,8 @@
     "가치관": "권위 70 | 개방 −40 | 무력 65 | 물질 25 | 공동 35 | 원칙 −15 | 공개 −40 | 자격 −20 | 분산 −55 | 변혁 −30",
     "욕망": "갈망 10 | 독점 5 | 위험 20 | 과시 −10 | 지속 40 | 지향 이성 | 결합 없음"
   },
-  "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 관문 당직 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "관직": "품계 병장. 직함은 관문 당직.",
-    "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 관문 당직 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "관문 당직 자리에서 동방사의 장부를 끊기지 않게 잇는다.",
-    "공포": "관문 당직 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 동방사\n- 생업: 관문 인명 장부 보관\n- 품계: 병장\n- 직함: 관문 당직\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 관문 당직 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 병장. 직함은 관문 당직.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 관문 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 관문 당직 자리에서 동방사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 관문 당직 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 70 | 개방 −40 | 무력 65 | 물질 25 | 공동 35 | 원칙 −15 | 공개 −40 | 자격 −20 | 분산 −55 | 변혁 −30\n- 욕망: 갈망 10 | 독점 5 | 위험 20 | 과시 −10 | 지속 40 | 지향 이성 | 결합 없음\n:::",
+  "sections": {},
+  "biography": "신수빈은 당직을 끊지 않고 장부로 인수인계를 확인한다.\n\n- 소속: 동방사\n- 생업: 관문 인명 장부 보관\n- 품계: 병장\n- 직함: 관문 당직\n생애. 신수빈은 3세대에 태어났다. 신수빈은 대합실 당직에서 자랐다. 신수빈의 관문 당직 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 신수빈은 암사2동과 연결된 업무에서 관문 인명 장부를 보관하고 당직에 인계한다.\n\n관직. 품계 병장. 직함은 관문 당직. 신수빈은 자신의 직위에 맡겨진 열쇠와 기록만 다음 당직자에게 넘기며 맡지 않은 권한은 행사하지 않는다.\n\n일화. 신수빈은 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다.\n\n관계. 신수빈은 같은 생활권 선배 당직과 인수인계로 이어져 있다.\n\n야망. 신수빈은 관문 당직 자리에서 동방사의 장부를 끊기지 않게 잇고자 한다.\n\n공포. 신수빈은 관문 당직이 비어 암사·고덕의 관문 통행과 급수 인계가 끊길까 두려워한다.\n\n개입. 당직 인수 증인을 세우거나 빈 열쇠를 폭로하여 신수빈의 당직 인수인계에 개입할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 70 | 개방 −40 | 무력 65 | 물질 25 | 공동 35 | 원칙 −15 | 공개 −40 | 자격 −20 | 분산 −55 | 변혁 −30\n- 욕망: 갈망 10 | 독점 5 | 위험 20 | 과시 −10 | 지속 40 | 지향 이성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-05"
   ],

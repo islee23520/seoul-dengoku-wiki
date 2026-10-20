@@ -1,8 +1,8 @@
 {
   "id": "person-0441",
   "name": "류동현",
-  "title": "전력장치 순찰대",
-  "position": "전력장치 순찰대 · 동작구 영주 · 아산 하위 영지 영주",
+  "title": "전력장치 순찰대 · 동작구 영주",
+  "position": "전력장치 순찰대 · 동작구 영주",
   "characterId": "K441",
   "rank": "영주",
   "commonTier": "T3",
@@ -446,52 +446,23 @@
             "name": "류동현",
             "url": "/people/person-0441",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "경비·순찰",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/313/items/1/ko",
-                  "quote": "생업: 경비·순찰"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/314/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/315/text/ko",
-                    "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -499,105 +470,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/314/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/315/text/ko",
-                    "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/313/items/1/ko",
-                    "quote": "생업: 경비·순찰"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/313/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "소사",
-              "type": "초소 영지",
-              "station": "소사",
-              "state": "S02",
-              "settlement": {
-                "name": "소사 정착지",
-                "type": "정착지",
-                "description": "소사 일대 고정 거점"
-              },
-              "note": "S02 소사 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -621,52 +527,23 @@
             "name": "류동현",
             "url": "/people/person-0441",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "경비·순찰",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/313/items/1/ko",
-                  "quote": "생업: 경비·순찰"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/314/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/315/text/ko",
-                    "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -674,111 +551,288 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/314/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/315/text/ko",
-                    "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/313/items/1/ko",
-                    "quote": "생업: 경비·순찰"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/313/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "소사",
-              "type": "초소 영지",
-              "station": "소사",
-              "state": "S02",
-              "settlement": {
-                "name": "소사 정착지",
-                "type": "정착지",
-                "description": "소사 일대 고정 거점"
-              },
-              "note": "S02 소사 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
       }
     ]
   },
+  "politicalIdentities": [
+    {
+      "id": "title:barony-chungcheong-4420025000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420025000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420025300",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420025300",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420031000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420031000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420035000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420035000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420036000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420036000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420037000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420037000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420038000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420038000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420039000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420039000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420040000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420040000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420041000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420041000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420057000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420057000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420058000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420058000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420059000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420059000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420060000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420060000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420061000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420061000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    },
+    {
+      "id": "title:barony-chungcheong-4420062000",
+      "kind": "nonterritorial-political-identity",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-4420062000",
+          "directLiegePersonId": "K998"
+        }
+      ],
+      "directOwnership": false
+    }
+  ],
   "confirmedHoldings": [
     {
       "id": "holding:opening-duchy-gu-11590-S02",
@@ -855,326 +909,6 @@
       "geometrySource": null,
       "territorialScale": null,
       "formalTitleRank": "duchy"
-    },
-    {
-      "id": "holding:chungcheong-4420025000",
-      "name": {
-        "ko": "충청남도 아산시 염치읍 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420025000",
-          "name": "충청남도 아산시 염치읍"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420025000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420025300",
-      "name": {
-        "ko": "충청남도 아산시 배방읍 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420025300",
-          "name": "충청남도 아산시 배방읍"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420025300",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420031000",
-      "name": {
-        "ko": "충청남도 아산시 송악면 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420031000",
-          "name": "충청남도 아산시 송악면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420031000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420035000",
-      "name": {
-        "ko": "충청남도 아산시 음봉면 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420035000",
-          "name": "충청남도 아산시 음봉면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420035000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420036000",
-      "name": {
-        "ko": "충청남도 아산시 둔포면 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420036000",
-          "name": "충청남도 아산시 둔포면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420036000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420037000",
-      "name": {
-        "ko": "충청남도 아산시 영인면 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420037000",
-          "name": "충청남도 아산시 영인면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420037000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420038000",
-      "name": {
-        "ko": "충청남도 아산시 인주면 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420038000",
-          "name": "충청남도 아산시 인주면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420038000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420039000",
-      "name": {
-        "ko": "충청남도 아산시 선장면 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420039000",
-          "name": "충청남도 아산시 선장면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420039000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420040000",
-      "name": {
-        "ko": "충청남도 아산시 도고면 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420040000",
-          "name": "충청남도 아산시 도고면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420040000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420041000",
-      "name": {
-        "ko": "충청남도 아산시 신창면 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420041000",
-          "name": "충청남도 아산시 신창면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420041000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420057000",
-      "name": {
-        "ko": "충청남도 아산시 온양1동 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420057000",
-          "name": "충청남도 아산시 온양1동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420057000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420058000",
-      "name": {
-        "ko": "충청남도 아산시 온양2동 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420058000",
-          "name": "충청남도 아산시 온양2동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420058000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420059000",
-      "name": {
-        "ko": "충청남도 아산시 온양3동 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420059000",
-          "name": "충청남도 아산시 온양3동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420059000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420060000",
-      "name": {
-        "ko": "충청남도 아산시 온양4동 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420060000",
-          "name": "충청남도 아산시 온양4동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420060000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420061000",
-      "name": {
-        "ko": "충청남도 아산시 온양5동 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420061000",
-          "name": "충청남도 아산시 온양5동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420061000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-4420062000",
-      "name": {
-        "ko": "충청남도 아산시 온양6동 봉신 영지"
-      },
-      "holderPersonId": "K441",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4420062000",
-          "name": "충청남도 아산시 온양6동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-4420062000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
     }
   ],
   "subordinateHoldings": [],
@@ -1209,278 +943,6 @@
         "name": "규격맹 왕국",
         "holderPersonId": "K029"
       }
-    },
-    {
-      "id": "title:barony-chungcheong-4420025000",
-      "name": "충청남도 아산시 염치읍 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420025000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420025300",
-      "name": "충청남도 아산시 배방읍 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420025300"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420031000",
-      "name": "충청남도 아산시 송악면 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420031000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420035000",
-      "name": "충청남도 아산시 음봉면 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420035000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420036000",
-      "name": "충청남도 아산시 둔포면 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420036000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420037000",
-      "name": "충청남도 아산시 영인면 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420037000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420038000",
-      "name": "충청남도 아산시 인주면 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420038000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420039000",
-      "name": "충청남도 아산시 선장면 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420039000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420040000",
-      "name": "충청남도 아산시 도고면 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420040000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420041000",
-      "name": "충청남도 아산시 신창면 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420041000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420057000",
-      "name": "충청남도 아산시 온양1동 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420057000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420058000",
-      "name": "충청남도 아산시 온양2동 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420058000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420059000",
-      "name": "충청남도 아산시 온양3동 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420059000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420060000",
-      "name": "충청남도 아산시 온양4동 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420060000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420061000",
-      "name": "충청남도 아산시 온양5동 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420061000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
-    },
-    {
-      "id": "title:barony-chungcheong-4420062000",
-      "name": "충청남도 아산시 온양6동 영지",
-      "rank": "barony",
-      "holderPersonId": "K441",
-      "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "4420062000"
-      ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
     }
   ],
   "unit": {
@@ -1496,18 +958,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "소사",
-    "type": "초소 영지",
-    "station": "소사",
-    "state": "S02",
-    "settlement": {
-      "name": "소사 정착지",
-      "type": "정착지",
-      "description": "소사 일대 고정 거점"
-    },
-    "note": "S02 소사 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -1544,19 +994,20 @@
     "생업": "경비·순찰",
     "품계": "조합원",
     "직함": "전력장치 순찰대",
+    "업무 위치": "오류2동. 류동현은 오류2동 제1분공방 전력장치의 순찰 기록을 이일섭에게 돌린다. 얼음에 막힌 인계 문 앞에서 전력 이상을 발견하면 경비 암호패와 발생 시각을 적되 곡물 재고와 배급 결정은 후계에게 남긴다.",
     "가치관": "권위 −10 | 개방 −10 | 무력 5 | 물질 35 | 공동 50 | 원칙 5 | 공개 20 | 자격 40 | 분산 25 | 변혁 10",
     "욕망": "갈망 45 | 독점 −30 | 위험 −25 | 과시 −20 | 지속 −5 | 지향 이성 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-    "관직": "품계 조합원. 직함은 전력장치 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 오류2동. 류동현은 오류2동 제1분공방 전력장치의 순찰 기록을 이일섭에게 돌린다. 얼음에 막힌 인계 문 앞에서 전력 이상을 발견하면 경비 암호패와 발생 시각을 적되 곡물 재고와 배급 결정은 후계에게 남긴다.",
+    "관직": "품계 조합원. 직함은 전력장치 순찰대. 얼음에 막힌 인계 문 앞에서 전력 이상을 발견하면 경비 암호패와 발생 시각을 적되 곡물 재고와 배급 결정은 후계에게 남긴다.",
     "일화": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "전력장치 순찰대 자리에서 규격맹의 장부를 끊기지 않게 잇는다.",
-    "공포": "전력장치 순찰대 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "관계": "류동현은 이일섭의 직속 경비로 전력장치 순찰과 이상 보고를 맡음.",
+    "야망": "류동현은 제1분공방의 전력 이상을 발생 시각과 경비 기록으로 남겨 이일섭에게 제때 보고하려 한다.",
+    "공포": "전력 이상을 제때 보고하지 못해 제1분공방의 경비 기록과 작업 구역 상태가 어긋나는 것.",
+    "개입": "플레이어는 류동현과 얼어붙은 인계 문 앞의 전력 이상 시각을 적어 이일섭에게 보고하거나 경비 암호패 기록을 대조할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 경비·순찰\n- 품계: 조합원\n- 직함: 전력장치 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 조합원. 직함은 전력장치 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 전력장치 순찰대 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 전력장치 순찰대 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 −10 | 무력 5 | 물질 35 | 공동 50 | 원칙 5 | 공개 20 | 자격 40 | 분산 25 | 변혁 10\n- 욕망: 갈망 45 | 독점 −30 | 위험 −25 | 과시 −20 | 지속 −5 | 지향 이성 | 결합 없음\n:::",
+  "biography": "류동현은 전력 이상을 보고하되 곡물 재고와 배급 판단은 이일섭의 몫으로 남긴다.\n\n- 소속: 규격맹\n- 생업: 경비·순찰\n- 품계: 조합원\n- 직함: 전력장치 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 오류2동. 류동현은 오류2동 제1분공방 전력장치의 순찰 기록을 이일섭에게 돌린다. 얼음에 막힌 인계 문 앞에서 전력 이상을 발견하면 경비 암호패와 발생 시각을 적되 곡물 재고와 배급 결정은 후계에게 남긴다.\n\n**관직.** 품계 조합원. 직함은 전력장치 순찰대. 얼음에 막힌 인계 문 앞에서 전력 이상을 발견하면 경비 암호패와 발생 시각을 적되 곡물 재고와 배급 결정은 후계에게 남긴다.\n\n**일화.** 2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 류동현은 이일섭의 직속 경비로 전력장치 순찰과 이상 보고를 맡음.\n\n**야망.** 류동현은 제1분공방의 전력 이상을 발생 시각과 경비 기록으로 남겨 이일섭에게 제때 보고하려 한다.\n\n**공포.** 전력 이상을 제때 보고하지 못해 제1분공방의 경비 기록과 작업 구역 상태가 어긋나는 것.\n\n**개입.** 플레이어는 류동현과 얼어붙은 인계 문 앞의 전력 이상 시각을 적어 이일섭에게 보고하거나 경비 암호패 기록을 대조할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 −10 | 무력 5 | 물질 35 | 공동 50 | 원칙 5 | 공개 20 | 자격 40 | 분산 25 | 변혁 10\n- 욕망: 갈망 45 | 독점 −30 | 위험 −25 | 과시 −20 | 지속 −5 | 지향 이성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-02"
   ],

@@ -560,47 +560,23 @@
             "name": "엄새울",
             "url": "/people/person-0025",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/28/items/1/ko",
-                  "quote": "생업: 대합실 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "골목 수질 쪽지를 매일 봉인해 정수공정에 보내고, 기준 미달이면 배급표 날인을 일제히 거둔다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -608,84 +584,34 @@
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/28/items/1/ko",
-                    "quote": "생업: 대합실 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "골목 수질 쪽지를 매일 봉인해 정수공정에 보내고, 기준 미달이면 배급표 날인을 일제히 거둔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "상갈",
-              "type": "초소 영지",
-              "station": "상갈",
-              "state": "S01",
-              "settlement": {
-                "name": "상갈 정착지",
-                "type": "정착지",
-                "description": "상갈 일대 고정 거점"
-              },
-              "note": "S01 상갈 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -709,47 +635,23 @@
             "name": "엄새울",
             "url": "/people/person-0025",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/28/items/1/ko",
-                  "quote": "생업: 대합실 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "골목 수질 쪽지를 매일 봉인해 정수공정에 보내고, 기준 미달이면 배급표 날인을 일제히 거둔다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -757,84 +659,34 @@
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/28/items/1/ko",
-                    "quote": "생업: 대합실 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "골목 수질 쪽지를 매일 봉인해 정수공정에 보내고, 기준 미달이면 배급표 날인을 일제히 거둔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "상갈",
-              "type": "초소 영지",
-              "station": "상갈",
-              "state": "S01",
-              "settlement": {
-                "name": "상갈 정착지",
-                "type": "정착지",
-                "description": "상갈 일대 고정 거점"
-              },
-              "note": "S01 상갈 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -855,18 +707,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "상갈",
-    "type": "초소 영지",
-    "station": "상갈",
-    "state": "S01",
-    "settlement": {
-      "name": "상갈 정착지",
-      "type": "정착지",
-      "description": "상갈 일대 고정 거점"
-    },
-    "note": "S01 상갈 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -903,11 +743,12 @@
     "생업": "대합실 당직",
     "품계": "구역장",
     "직함": "영등포 탁수 피해 구역 대표",
+    "업무 위치": "영등포동. 영등포동 골목을 도는 엄새울은 탁수 피해 쪽지를 봉인해 박누리에게 보내고 기준을 넘은 물을 계속 공급하라는 한재목의 독촉에 배급표 날인을 거둔다.",
     "가치관": "권위 30 | 개방 −5 | 무력 15 | 물질 25 | 공동 15 | 원칙 20 | 공개 5 | 자격 0 | 분산 −45 | 변혁 −25",
     "욕망": "갈망 45 | 독점 25 | 위험 10 | 과시 −10 | 지속 0 | 지향 양성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 영등포 탁수 피해 구역 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 영등포 탁수 피해 구역 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 영등포동. 영등포동 골목을 도는 엄새울은 탁수 피해 쪽지를 봉인해 박누리에게 보내고 기준을 넘은 물을 계속 공급하라는 한재목의 독촉에 배급표 날인을 거둔다.",
     "관직": "품계 구역장. 직함은 영등포 탁수 피해 구역 대표. 골목 수질 쪽지를 매일 봉인해 정수공정에 보내고, 기준 미달이면 배급표 날인을 일제히 거둔다.",
     "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 영등포 탁수 피해 구역 대표 자리의 서명이 장부에 올랐다.",
     "관계": "박누리의 밸브 잠금을 골목에서 받치고, 한재목의 공급 유지 지시와 충돌하며, 마곡의 고초윤에게 탁수 표본을 넘긴다.",
@@ -915,7 +756,7 @@
     "공포": "폭우 뒤 기준 초과가 하루만 숨겨져도 양천 저수조까지 오염되고, 그 공백을 보호계약이 메우는 것.",
     "개입": "봉인 표본을 마곡까지 호송해 그의 거부를 정당화하거나, 명부 부풀리기를 밝혀 대표 직을 흔들 수 있다."
   },
-  "biography": "수도꼭지에서 흙내가 나면 장부보다 먼저 골목을 돌고, 탁수를 해명으로 덮는 관리를 믿지 않는다. 아이 배급통이 비면 선출 군주 면담을 끊지 않는다.\n\n- 소속: 수문국\n- 생업: 대합실 당직\n- 품계: 구역장\n- 직함: 영등포 탁수 피해 구역 대표\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 영등포 탁수 피해 구역 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 구역장. 직함은 영등포 탁수 피해 구역 대표. 골목 수질 쪽지를 매일 봉인해 정수공정에 보내고, 기준 미달이면 배급표 날인을 일제히 거둔다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 영등포 탁수 피해 구역 대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 박누리의 밸브 잠금을 골목에서 받치고, 한재목의 공급 유지 지시와 충돌하며, 마곡의 고초윤에게 탁수 표본을 넘긴다.\n\n**야망.** 탁수 구간의 단수와 배상 급수를 피해 명부에 따라 자동으로 열리게 해, 검사 은폐가 배급 협상물로 쓰이지 않게 한다.\n\n**공포.** 폭우 뒤 기준 초과가 하루만 숨겨져도 양천 저수조까지 오염되고, 그 공백을 보호계약이 메우는 것.\n\n**개입.** 봉인 표본을 마곡까지 호송해 그의 거부를 정당화하거나, 명부 부풀리기를 밝혀 대표 직을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −5 | 무력 15 | 물질 25 | 공동 15 | 원칙 20 | 공개 5 | 자격 0 | 분산 −45 | 변혁 −25\n- 욕망: 갈망 45 | 독점 25 | 위험 10 | 과시 −10 | 지속 0 | 지향 양성 | 결합 비독점\n:::",
+  "biography": "수도꼭지에서 흙내가 나면 장부보다 먼저 골목을 돌고, 탁수를 해명으로 덮는 관리를 믿지 않는다. 아이 배급통이 비면 선출 군주 면담을 끊지 않는다.\n\n- 소속: 수문국\n- 생업: 대합실 당직\n- 품계: 구역장\n- 직함: 영등포 탁수 피해 구역 대표\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 영등포 탁수 피해 구역 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 영등포동. 영등포동 골목을 도는 엄새울은 탁수 피해 쪽지를 봉인해 박누리에게 보내고 기준을 넘은 물을 계속 공급하라는 한재목의 독촉에 배급표 날인을 거둔다.\n\n**관직.** 품계 구역장. 직함은 영등포 탁수 피해 구역 대표. 골목 수질 쪽지를 매일 봉인해 정수공정에 보내고, 기준 미달이면 배급표 날인을 일제히 거둔다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 영등포 탁수 피해 구역 대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 박누리의 밸브 잠금을 골목에서 받치고, 한재목의 공급 유지 지시와 충돌하며, 마곡의 고초윤에게 탁수 표본을 넘긴다.\n\n**야망.** 탁수 구간의 단수와 배상 급수를 피해 명부에 따라 자동으로 열리게 해, 검사 은폐가 배급 협상물로 쓰이지 않게 한다.\n\n**공포.** 폭우 뒤 기준 초과가 하루만 숨겨져도 양천 저수조까지 오염되고, 그 공백을 보호계약이 메우는 것.\n\n**개입.** 봉인 표본을 마곡까지 호송해 그의 거부를 정당화하거나, 명부 부풀리기를 밝혀 대표 직을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −5 | 무력 15 | 물질 25 | 공동 15 | 원칙 20 | 공개 5 | 자격 0 | 분산 −45 | 변혁 −25\n- 욕망: 갈망 45 | 독점 25 | 위험 10 | 과시 −10 | 지속 0 | 지향 양성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-01"
   ],

@@ -9,6 +9,10 @@ import { loadExcludedSourceFiles } from './excluded-sources.mjs';
 import { TEXT_SOURCE_PATHS } from './text-corpus-manifest.mjs';
 
 export const DATA_SOURCE_PATHS = Object.freeze([
+  'scripts/approved-seoul-rights-transition.json', 'scripts/approved-daejeon-nonowning-rights.json',
+  'scripts/approved-outside-current-retirement.json', 'scripts/historical-inputs/personal-holdings.json',
+  'scripts/historical-inputs/opening-feudal-allocation.json', 'scripts/historical-inputs/outside-control-2126.json',
+  'scripts/historical-inputs/outside-island-occupation.json', 'lore/regions/outside-island-occupation.json',
   ...['person-id-registry', 'values-cast', 'gender-cast', 'cast-hangnyeol', 'clan-hangnyeol-tables', 'gurps-cast'].map((name) => `lore/name-pools/${name}.json`),
   ...['cast-birthdays', 'cast-birth-cohorts', 'cast-family-trees', 'cast-family-parent-status', 'cast-family-role-decisions', 'cast-household-relations', 'diaspora-family-lineages', 'household-humanoid-policy'].map((name) => `lore/name-pools/${name}.json`),
   'lore/relations/relations.json', 'lore/relations/personal-holdings.json', 'lore/relations/opening-office-appointments.json', 'lore/name-pools/cast-prose-contacts.json',
@@ -227,7 +231,7 @@ async function verifyEvidencePaths(root, document) {
   for (const path of [...paths].sort()) {
     if (RETIRED_HISTORICAL_REFERENCE_PATHS.includes(path)) continue;
     await resolveTrustedSourcePath(root, path);
-    if (!DATA_SOURCE_PATHS.includes(path)) fail('E_SOURCE_MANIFEST', path);
+    if (!DATA_SOURCE_PATHS.includes(path) && !REFERENCE_TARGET_PATHS.includes(path)) fail('E_SOURCE_MANIFEST', path);
   }
 }
 export async function loadSourceBundle({ sourceRoot, runOfficialChecks = true }) {

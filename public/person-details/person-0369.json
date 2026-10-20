@@ -553,52 +553,23 @@
             "name": "범한들",
             "url": "/people/person-0369",
             "state": "S14",
-            "method": "card-lexicon",
-            "role": {
-              "display": "급수계약 만료 시각·잔량 표 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-14.json",
-                  "pointer": "/content/215/items/0/ko",
-                  "quote": "생업: 급수계약 만료 시각·잔량 표 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "만료 시각과 잔량 표를 같은 책에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -606,105 +577,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/215/items/0/ko",
-                    "quote": "생업: 급수계약 만료 시각·잔량 표 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "만료 시각과 잔량 표를 같은 책에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/215/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 아관사 규모",
-              "faction_scale": {
-                "state": "S14",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "사당",
-              "type": "초소 영지",
-              "station": "사당",
-              "state": "S14",
-              "settlement": {
-                "name": "사당 정착지",
-                "type": "정착지",
-                "description": "사당 일대 고정 거점"
-              },
-              "note": "S14 사당 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -728,52 +634,23 @@
             "name": "범한들",
             "url": "/people/person-0369",
             "state": "S14",
-            "method": "card-lexicon",
-            "role": {
-              "display": "급수계약 만료 시각·잔량 표 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-14.json",
-                  "pointer": "/content/215/items/0/ko",
-                  "quote": "생업: 급수계약 만료 시각·잔량 표 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "만료 시각과 잔량 표를 같은 책에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -781,105 +658,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/215/items/0/ko",
-                    "quote": "생업: 급수계약 만료 시각·잔량 표 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "만료 시각과 잔량 표를 같은 책에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/215/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 아관사 규모",
-              "faction_scale": {
-                "state": "S14",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "사당",
-              "type": "초소 영지",
-              "station": "사당",
-              "state": "S14",
-              "settlement": {
-                "name": "사당 정착지",
-                "type": "정착지",
-                "description": "사당 일대 고정 거점"
-              },
-              "note": "S14 사당 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -900,18 +712,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "사당",
-    "type": "초소 영지",
-    "station": "사당",
-    "state": "S14",
-    "settlement": {
-      "name": "사당 정착지",
-      "type": "정착지",
-      "description": "사당 일대 고정 거점"
-    },
-    "note": "S14 사당 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -952,15 +752,15 @@
     "욕망": "갈망 40 | 독점 25 | 위험 −20 | 과시 −20 | 지속 −15 | 지향 양성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 양군 급수계약 만료 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "관직": "품계 공동실무원. 직함은 양군 급수계약 만료 증인. 만료 시각과 잔량 표를 같은 책에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.",
-    "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 양군 급수계약 만료 증인 자리의 서명이 장부에 올랐다.",
+    "생애": "2096-08-04에 태어났다. 2126년 개막 현재 양군 급수계약 만료 증인 직무를 맡아 급수계약 만료 시각·잔량 표 대조 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 급수계약 만료 시각·잔량 표 대조 창구가 범한들의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
+    "관직": "품계 공동실무원. 직함은 양군 급수계약 만료 증인. 급수계약 만료 시각·잔량 표 대조 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
+    "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
     "관계": "곽민재의 급수 점검을 증인석에서 받치고, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다. 한재목의 서부 문안을 읽어 주되 날인은 미룬다.",
-    "야망": "구의 제한 급수의 종료 조건을 공개 증언으로 고정해 세 강국이 서로 다른 문안으로 관문을 쪼개지 못하게 한다.",
-    "공포": "자신이 서명한 증언이 집단 단수의 면죄부가 되는 것.",
-    "개입": "단수 조항을 뺀 수정본을 증인석에 올리거나, 증인이 받은 급수 사례를 원장에 올릴 수 있다."
+    "야망": "범한들은 양군 급수계약 만료 증인 직무에서 급수계약 만료 시각·잔량 표 대조 기록을 공개 인계표와 맞물리게 하려 한다.",
+    "공포": "양군 급수계약 만료 증인 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
+    "개입": "단수 조항을 뺀 수정본을 증인석에 올리거나, 증인이 받은 급수 사례를 원장에 올릴 수 있다. 범한들의 급수계약 만료 시각·잔량 표 대조 원장을 대조해 다음 인계의 증거를 세울 수 있다."
   },
-  "biography": "만료일을 손가락으로 세고, 구두로 보호 연장을 증언하자는 사신을 증인석에서 내려보낸다. 숫자는 믿되 빈칸 조항은 믿지 않는다.\n\n- 생업: 급수계약 만료 시각·잔량 표 대조\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 급수계약 만료 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 양군 급수계약 만료 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 공동실무원. 직함은 양군 급수계약 만료 증인. 만료 시각과 잔량 표를 같은 책에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 양군 급수계약 만료 증인 자리의 서명이 장부에 올랐다.\n\n**관계.** 곽민재의 급수 점검을 증인석에서 받치고, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다. 한재목의 서부 문안을 읽어 주되 날인은 미룬다.\n\n**야망.** 구의 제한 급수의 종료 조건을 공개 증언으로 고정해 세 강국이 서로 다른 문안으로 관문을 쪼개지 못하게 한다.\n\n**공포.** 자신이 서명한 증언이 집단 단수의 면죄부가 되는 것.\n\n**개입.** 단수 조항을 뺀 수정본을 증인석에 올리거나, 증인이 받은 급수 사례를 원장에 올릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −15 | 무력 35 | 물질 10 | 공동 20 | 원칙 0 | 공개 −15 | 자격 −20 | 분산 −15 | 변혁 −20\n- 욕망: 갈망 40 | 독점 25 | 위험 −20 | 과시 −20 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "범한들은 급수계약 만료 시각·잔량 표 대조 기록을 손에 익힌 아관사 양군 공동실무 인물이다. 만료일을 손가락으로 세고, 구두로 보호 연장을 증언하자는 사신을 증인석에서 내려보낸다. 숫자는 믿되 빈칸 조항은 믿지 않는다.\n\n- 생업: 급수계약 만료 시각·잔량 표 대조\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 급수계약 만료 증인\n**생애.** 2096-08-04에 태어났다. 2126년 개막 현재 양군 급수계약 만료 증인 직무를 맡아 급수계약 만료 시각·잔량 표 대조 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의3동의 급수계약 만료 시각·잔량 표 대조 창구가 범한들의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 공동실무원. 직함은 양군 급수계약 만료 증인. 급수계약 만료 시각·잔량 표 대조 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 곽민재의 급수 점검을 증인석에서 받치고, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다. 한재목의 서부 문안을 읽어 주되 날인은 미룬다.\n\n**야망.** 범한들은 양군 급수계약 만료 증인 직무에서 급수계약 만료 시각·잔량 표 대조 기록을 공개 인계표와 맞물리게 하려 한다.\n\n**공포.** 양군 급수계약 만료 증인 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 단수 조항을 뺀 수정본을 증인석에 올리거나, 증인이 받은 급수 사례를 원장에 올릴 수 있다. 범한들의 급수계약 만료 시각·잔량 표 대조 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −15 | 무력 35 | 물질 10 | 공동 20 | 원칙 0 | 공개 −15 | 자격 −20 | 분산 −15 | 변혁 −20\n- 욕망: 갈망 40 | 독점 25 | 위험 −20 | 과시 −20 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-14"
   ],

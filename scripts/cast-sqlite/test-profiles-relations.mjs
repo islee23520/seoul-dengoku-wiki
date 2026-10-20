@@ -70,7 +70,7 @@ test('profiles preserve variants, shallow boundaries, both locales, duplicate fi
   assert.ok(Object.isFrozen(output.profileFields) && output.profileFields.every(Object.isFrozen));
 });
 
-test('primary follows explicit names then longest rendered body and stable source insertion ties', () => {
+test('primary follows explicit names then first state card even when core is longer', () => {
   const input = fixture();
   file(input, statePaths[0]).document.content = [heading('인물 가람'), paragraph('same'), heading('인물 나래'), paragraph('n')];
   file(input, statePaths[1]).document.content = [heading('인물 가람'), paragraph('same')];
@@ -81,10 +81,28 @@ test('primary follows explicit names then longest rendered body and stable sourc
   assert.equal(output.profiles.find((row) => row.person_id === 'K001' && row.is_primary).source_id, 1);
   core.content[1] = paragraph('longest body');
   output = mapProfiles(input);
+  assert.equal(output.profiles.find((row) => row.person_id === 'K001' && row.is_primary).source_id, 1);
+  core.data.primary_detail_names = ['가람'];
+  output = mapProfiles(input);
   assert.equal(output.profiles.find((row) => row.person_id === 'K001' && row.is_primary).source_kind, 'core');
   file(input, statePaths[1]).document.data.primary_detail_names = ['가람'];
   output = mapProfiles(input);
   assert.equal(output.profiles.find((row) => row.person_id === 'K001' && row.is_primary).source_id, 2);
+});
+
+test('without explicit or state cards primary uses longest rendered body and stable source insertion ties', () => {
+  const input = fixture();
+  file(input, statePaths[0]).document.content = [heading('인물 나래'), paragraph('n')];
+  const core = file(input, profilePaths[16]).document;
+  const unaffiliated = file(input, profilePaths[17]).document;
+  core.content = [heading('가람', 2), paragraph('same')];
+  unaffiliated.content = [heading('인물 가람'), paragraph('same')];
+  input.bundle.files.reverse();
+  let output = mapProfiles(input);
+  assert.equal(output.profiles.find((row) => row.person_id === 'K001' && row.is_primary).source_kind, 'core');
+  unaffiliated.content[1] = paragraph('longest body');
+  output = mapProfiles(input);
+  assert.equal(output.profiles.find((row) => row.person_id === 'K001' && row.is_primary).source_kind, 'unaffiliated');
 });
 
 test('corridor ID cells and exact parenthesized name aliases join without fuzzy matching', () => {
@@ -270,7 +288,9 @@ if (process.env.CAST_SQLITE_SOURCE_ROOT) {
     let generatedCompared = 0;
     for (const person of identity.people) {
       const candidates = cards.get(person.name);
-      const selected = candidates.find((card) => card.primary) ?? [...candidates].sort((a, b) => b.body.length - a.body.length)[0];
+      const selected = candidates.find((card) => card.primary)
+        ?? candidates.find((card) => /^Cast-State-\d{2}$/u.test(card.source))
+        ?? [...candidates].sort((a, b) => b.body.length - a.body.length)[0];
       const headingText = selected.source === 'Core-Characters' ? person.name : `인물-${selected.heading}`;
       const anchor = selected.source === 'Diaspora-Corridors' ? headingText.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-') : headingText;
       const expected = `/world/${selected.source}#${anchor}`;

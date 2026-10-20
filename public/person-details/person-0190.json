@@ -531,57 +531,23 @@
             "name": "아나 포페스쿠",
             "url": "/people/person-0190",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "급수열차 점유 청구·정차 시간 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/215/items/2/ko",
-                  "quote": "생업: 급수열차 점유 청구·정차 시간 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/214/text/ko",
-                    "quote": "창 점유를 하루 더 달라는 쪽지를 사고처럼 받아 적고, 얼굴을 가린 급수차를 중계의 적으로 본다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "점유 연장 청구와 실제 정차 시간을 같은 벽에 쓰고, 편도만 온 열차는 증언에서 하루를 묶는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "아나 포페스쿠는 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -589,99 +555,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/215/items/2/ko",
-                    "quote": "생업: 급수열차 점유 청구·정차 시간 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/214/text/ko",
-                    "quote": "창 점유를 하루 더 달라는 쪽지를 사고처럼 받아 적고, 얼굴을 가린 급수차를 중계의 적으로 본다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "점유 연장 청구와 실제 정차 시간을 같은 벽에 쓰고, 편도만 온 열차는 증언에서 하루를 묶는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "아나 포페스쿠는 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/215/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 72,
-              "unspent": 3,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "범계",
-              "type": "초소 영지",
-              "station": "범계",
-              "state": "S07",
-              "settlement": {
-                "name": "범계 정착지",
-                "type": "정착지",
-                "description": "범계 일대 고정 거점"
-              },
-              "note": "S07 범계 일대 관할 영지"
+              "unspent": 3
             }
           }
         }
@@ -705,57 +606,23 @@
             "name": "아나 포페스쿠",
             "url": "/people/person-0190",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "급수열차 점유 청구·정차 시간 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/215/items/2/ko",
-                  "quote": "생업: 급수열차 점유 청구·정차 시간 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/214/text/ko",
-                    "quote": "창 점유를 하루 더 달라는 쪽지를 사고처럼 받아 적고, 얼굴을 가린 급수차를 중계의 적으로 본다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "점유 연장 청구와 실제 정차 시간을 같은 벽에 쓰고, 편도만 온 열차는 증언에서 하루를 묶는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "아나 포페스쿠는 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -763,99 +630,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/215/items/2/ko",
-                    "quote": "생업: 급수열차 점유 청구·정차 시간 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/214/text/ko",
-                    "quote": "창 점유를 하루 더 달라는 쪽지를 사고처럼 받아 적고, 얼굴을 가린 급수차를 중계의 적으로 본다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "점유 연장 청구와 실제 정차 시간을 같은 벽에 쓰고, 편도만 온 열차는 증언에서 하루를 묶는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "아나 포페스쿠는 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/215/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 72,
-              "unspent": 3,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "범계",
-              "type": "초소 영지",
-              "station": "범계",
-              "state": "S07",
-              "settlement": {
-                "name": "범계 정착지",
-                "type": "정착지",
-                "description": "범계 일대 고정 거점"
-              },
-              "note": "S07 범계 일대 관할 영지"
+              "unspent": 3
             }
           }
         }
@@ -876,18 +678,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "범계",
-    "type": "초소 영지",
-    "station": "범계",
-    "state": "S07",
-    "settlement": {
-      "name": "범계 정착지",
-      "type": "정착지",
-      "description": "범계 일대 고정 거점"
-    },
-    "note": "S07 범계 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": null,
@@ -924,7 +714,7 @@
     "욕망": "갈망 25 | 독점 −25 | 위험 −35 | 과시 15 | 지속 25 | 지향 무성향 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수열차 창 점유 증인 자리는 탁수 밤의 밸브 서명으로 열렸다. 아나 포페스쿠는 2084년에 태어났다. 루마니아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 영등포 정수 당직에서 자랐다. 2126년에는 급수열차 창 점유 증인 업무를 맡는다. 니콜라에 포페스쿠는 2030년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아나 포페스쿠의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 루마니아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
+    "생애": "2084년생인 아나 포페스쿠는 2126년 개막기에 급수열차 창 점유 증인 업무를 맡는다. 영등포 정수 당직에서 자랐다. 급수열차 창 점유 증인 업무는 탁수 밤의 밸브 서명을 계기로 시작됐다. 루마니아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 니콜라에 포페스쿠는 2030년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아나 포페스쿠의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 루마니아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 아나 포페스쿠의 급수열차 점유 청구·정차 시간 대조 업무는 한강로동과 연결된다.",
     "관직": "품계 주사. 직함은 급수열차 창 점유 증인. 점유 연장 청구와 실제 정차 시간을 같은 벽에 쓰고, 편도만 온 열차는 증언에서 하루를 묶는다.",
     "일화": "창 점유를 하루 더 달라는 쪽지를 단 채 편도로만 온 급수열차가 에바 노바코바의 배차판에 오른다. 아나 포페스쿠는 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다.",
     "관계": "에바 노바코바의 배차판에 증언을 붙이고, 박태겸의 중계 유지를 창 점유로 시험하며, 임초원을 태운 열차가 같은 창에 묶인 시각을 기억한다.",
@@ -932,7 +722,7 @@
     "공포": "자신의 증언이 서부 철도계약의 독점 밀약 도장이 되는 것.",
     "개입": "창 점유를 중재하거나, 독점 배차 밀약을 증인 진술과 함께 기록청에 넘길 수 있다."
   },
-  "biography": "창 점유를 하루 더 달라는 쪽지를 사고처럼 받아 적고, 얼굴을 가린 급수차를 중계의 적으로 본다. 말은 짧고 시각표는 길다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 급수열차 점유 청구·정차 시간 대조\n- 직함: 급수열차 창 점유 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수열차 창 점유 증인 자리는 탁수 밤의 밸브 서명으로 열렸다. 아나 포페스쿠는 2084년에 태어났다. 루마니아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 영등포 정수 당직에서 자랐다. 2126년에는 급수열차 창 점유 증인 업무를 맡는다. 니콜라에 포페스쿠는 2030년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아나 포페스쿠의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 루마니아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 급수열차 창 점유 증인. 점유 연장 청구와 실제 정차 시간을 같은 벽에 쓰고, 편도만 온 열차는 증언에서 하루를 묶는다.\n\n**일화.** 창 점유를 하루 더 달라는 쪽지를 단 채 편도로만 온 급수열차가 에바 노바코바의 배차판에 오른다. 아나 포페스쿠는 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다.\n\n**관계.** 에바 노바코바의 배차판에 증언을 붙이고, 박태겸의 중계 유지를 창 점유로 시험하며, 임초원을 태운 열차가 같은 창에 묶인 시각을 기억한다.\n\n**야망.** 급수열차의 창 점유를 공개 증언으로 묶어 수문헌장 밖의 중계가 독점 조항으로 빨려 들어가지 않게 한다.\n\n**공포.** 자신의 증언이 서부 철도계약의 독점 밀약 도장이 되는 것.\n\n**개입.** 창 점유를 중재하거나, 독점 배차 밀약을 증인 진술과 함께 기록청에 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 15 | 무력 −20 | 물질 25 | 공동 −15 | 원칙 −5 | 공개 −20 | 자격 30 | 분산 −10 | 변혁 5\n- 욕망: 갈망 25 | 독점 −25 | 위험 −35 | 과시 15 | 지속 25 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "창 점유를 하루 더 달라는 쪽지를 사고처럼 받아 적고, 얼굴을 가린 급수차를 중계의 적으로 본다. 말은 짧고 시각표는 길다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 급수열차 점유 청구·정차 시간 대조\n- 직함: 급수열차 창 점유 증인\n**생애.** 2084년생인 아나 포페스쿠는 2126년 개막기에 급수열차 창 점유 증인 업무를 맡는다. 영등포 정수 당직에서 자랐다. 급수열차 창 점유 증인 업무는 탁수 밤의 밸브 서명을 계기로 시작됐다. 루마니아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 니콜라에 포페스쿠는 2030년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아나 포페스쿠의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 루마니아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 아나 포페스쿠의 급수열차 점유 청구·정차 시간 대조 업무는 한강로동과 연결된다.\n\n**관직.** 품계 주사. 직함은 급수열차 창 점유 증인. 점유 연장 청구와 실제 정차 시간을 같은 벽에 쓰고, 편도만 온 열차는 증언에서 하루를 묶는다.\n\n**일화.** 창 점유를 하루 더 달라는 쪽지를 단 채 편도로만 온 급수열차가 에바 노바코바의 배차판에 오른다. 아나 포페스쿠는 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다.\n\n**관계.** 에바 노바코바의 배차판에 증언을 붙이고, 박태겸의 중계 유지를 창 점유로 시험하며, 임초원을 태운 열차가 같은 창에 묶인 시각을 기억한다.\n\n**야망.** 급수열차의 창 점유를 공개 증언으로 묶어 수문헌장 밖의 중계가 독점 조항으로 빨려 들어가지 않게 한다.\n\n**공포.** 자신의 증언이 서부 철도계약의 독점 밀약 도장이 되는 것.\n\n**개입.** 창 점유를 중재하거나, 독점 배차 밀약을 증인 진술과 함께 기록청에 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 15 | 무력 −20 | 물질 25 | 공동 −15 | 원칙 −5 | 공개 −20 | 자격 30 | 분산 −10 | 변혁 5\n- 욕망: 갈망 25 | 독점 −25 | 위험 −35 | 과시 15 | 지속 25 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],

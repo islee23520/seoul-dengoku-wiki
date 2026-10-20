@@ -11,6 +11,21 @@ export const preservedSheetSources = Object.freeze(Object.fromEntries(REVISIONS.
   Object.freeze({ root: ROOT, ledgerPath: join(ROOT, '..', revision + '.json') }),
 ])))
 
+// Public consumers do not consume the complete private issued record. Keep this
+// allowlist aligned with PersonDetailPage.parseGurpsSheet, never with source keys.
+export function projectPublicHistoricalRecord(record) {
+  const pick = (value, keys) => Object.fromEntries(keys.filter(key => Object.hasOwn(value, key)).map(key => [key, value[key]]))
+  return {
+    ...pick(record, ['id', 'name', 'url', 'state', 'personId', 'band']),
+    attributes: Object.fromEntries(['ST', 'DX', 'IQ', 'HT'].filter(key => record.attributes?.[key] != null)
+      .map(key => [key, pick(record.attributes[key], ['value', 'cp'])])),
+    traits: (record.traits ?? []).map(value => pick(value, ['name', 'kind', 'cp', 'rule'])),
+    skills: (record.skills ?? []).map(value => pick(value, ['name', 'ko', 'level', 'cp'])),
+    secondary: pick(record.secondary ?? {}, ['HP', 'FP', 'Will', 'Per', 'BasicSpeed', 'BasicMove', 'BasicLift', 'Dodge']),
+    cp: pick(record.cp ?? {}, ['total', 'attributes', 'advantages', 'disadvantages', 'skills', 'spent', 'unspent']),
+  }
+}
+
 export function loadPreservedPersonSheets(bindings = preservedSheetSources) {
   if (!bindings || typeof bindings !== 'object' || Array.isArray(bindings) ||
       Object.keys(bindings).length !== REVISIONS.length || REVISIONS.some(revision => {
@@ -50,6 +65,6 @@ export function projectPreservedPersonSheet(versions, identity) {
     }
     if (typeof record.state !== 'string' || !/^S(?:0[0-9]|1[0-6])$/u.test(record.state)) throw new Error('E_PERSON_SHEET_HISTORICAL_STATE')
     return { revision: version.revision, ledgerSha256: version.ledgerSha256, historicalState: record.state,
-      rules: structuredClone(version.rules), legacy: { operative: false, record: structuredClone(record) } }
+      rules: structuredClone(version.rules), legacy: { operative: false, record: projectPublicHistoricalRecord(record) } }
   }) }
 }

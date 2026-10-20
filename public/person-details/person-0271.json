@@ -454,52 +454,23 @@
             "name": "윤산호",
             "url": "/people/person-0271",
             "state": "S10",
-            "method": "card-lexicon",
-            "role": {
-              "display": "피난로 이정표·증서 대기열 안내",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-10.json",
-                  "pointer": "/content/666/items/0/ko",
-                  "quote": "생업: 피난로 이정표·증서 대기열 안내"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/667/text/ko",
-                    "quote": "혈연 증서가 없는 일행은 대기열로 보내고, 위조 의심은 장경 필사 당직에만 넘긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/668/text/ko",
-                    "quote": "윤산호는 손전등으로 이정표를 확인해 지워진 글자 옆에 쪽지를 붙이고, 일행을 대기열로 보낸 뒤 위조 의심 건은 장경 필사 당직에 넘긴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -507,89 +478,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/667/text/ko",
-                    "quote": "혈연 증서가 없는 일행은 대기열로 보내고, 위조 의심은 장경 필사 당직에만 넘긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/668/text/ko",
-                    "quote": "윤산호는 손전등으로 이정표를 확인해 지워진 글자 옆에 쪽지를 붙이고, 일행을 대기열로 보낸 뒤 위조 의심 건은 장경 필사 당직에 넘긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/666/items/0/ko",
-                    "quote": "생업: 피난로 이정표·증서 대기열 안내"
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 안국총림 규모",
-              "faction_scale": {
-                "state": "S10",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "성수",
-              "type": "초소 영지",
-              "station": "성수",
-              "state": "S10",
-              "settlement": {
-                "name": "성수 정착지",
-                "type": "정착지",
-                "description": "성수 일대 고정 거점"
-              },
-              "note": "S10 성수 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -613,52 +529,23 @@
             "name": "윤산호",
             "url": "/people/person-0271",
             "state": "S10",
-            "method": "card-lexicon",
-            "role": {
-              "display": "피난로 이정표·증서 대기열 안내",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-10.json",
-                  "pointer": "/content/666/items/0/ko",
-                  "quote": "생업: 피난로 이정표·증서 대기열 안내"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/667/text/ko",
-                    "quote": "혈연 증서가 없는 일행은 대기열로 보내고, 위조 의심은 장경 필사 당직에만 넘긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/668/text/ko",
-                    "quote": "윤산호는 손전등으로 이정표를 확인해 지워진 글자 옆에 쪽지를 붙이고, 일행을 대기열로 보낸 뒤 위조 의심 건은 장경 필사 당직에 넘긴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -666,89 +553,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/667/text/ko",
-                    "quote": "혈연 증서가 없는 일행은 대기열로 보내고, 위조 의심은 장경 필사 당직에만 넘긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/668/text/ko",
-                    "quote": "윤산호는 손전등으로 이정표를 확인해 지워진 글자 옆에 쪽지를 붙이고, 일행을 대기열로 보낸 뒤 위조 의심 건은 장경 필사 당직에 넘긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/666/items/0/ko",
-                    "quote": "생업: 피난로 이정표·증서 대기열 안내"
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 안국총림 규모",
-              "faction_scale": {
-                "state": "S10",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "성수",
-              "type": "초소 영지",
-              "station": "성수",
-              "state": "S10",
-              "settlement": {
-                "name": "성수 정착지",
-                "type": "정착지",
-                "description": "성수 일대 고정 거점"
-              },
-              "note": "S10 성수 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -769,18 +601,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "성수",
-    "type": "초소 영지",
-    "station": "성수",
-    "state": "S10",
-    "settlement": {
-      "name": "성수 정착지",
-      "type": "정착지",
-      "description": "성수 일대 고정 거점"
-    },
-    "note": "S10 성수 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -821,15 +641,15 @@
     "욕망": "갈망 20 | 독점 −15 | 위험 −20 | 과시 20 | 지속 15 | 지향 유동 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 보국문 피난 막사에서 자랐다. 피난로 안내 주지 자리는 고아 명부 줄로 열렸다.",
+    "생애": "2064-12-13 출생, 2126년 개막에 활동했다. 보국문 피난 막사에서 자랐다. 피난로 안내 주지 당직 기록에는 고아 명부 줄 일이 남아 있다.\n- 윤산호의 피난로 이정표·증서 대기열 안내 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 윤산호의 피난로 이정표·증서 대기열 안내 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
     "관직": "품계 주지. 직함은 피난로 안내 주지. 혈연 증서가 없는 일행은 대기열로 보내고, 위조 의심은 장경 필사 당직에만 넘긴다.",
     "일화": "피난로 이정표 하나의 글자가 지워진 밤, 혈연 증서 없는 일행이 그 길목에 모인다. 윤산호는 손전등으로 이정표를 확인해 지워진 글자 옆에 쪽지를 붙이고, 일행을 대기열로 보낸 뒤 위조 의심 건은 장경 필사 당직에 넘긴다.",
     "관계": "백온의 난민대표 명부와 맞물리되, 이정표 열쇠는 반장이 쥔다.",
-    "야망": "피난로 안내를 강국 호송 시각표에 묶지 않고, 신도 재결합 명부만으로 열리게 한다.",
+    "야망": "피난로 안내를 신도 재결합 명부와 서울 내부 안내 시각표에 맞춰 연다.",
     "공포": "안내 공백이 생기면 회랑이 검역 볼모의 줄이 되는 것.",
     "개입": "봉한 남쪽 길의 이유를 열거나, 명부 합류를 증언할 수 있다."
   },
-  "biography": "피난로 이정표를 손전등으로 확인하고, 지워진 글자는 새로 쓰지 않고 옆에 붙인다. 큰 약속은 하지 않는다.\n\n- 생업: 피난로 이정표·증서 대기열 안내\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 피난로 안내 주지\n**생애.** 2126년 세대. 보국문 피난 막사에서 자랐다. 피난로 안내 주지 자리는 고아 명부 줄로 열렸다.\n\n**관직.** 품계 주지. 직함은 피난로 안내 주지. 혈연 증서가 없는 일행은 대기열로 보내고, 위조 의심은 장경 필사 당직에만 넘긴다.\n\n**일화.** 피난로 이정표 하나의 글자가 지워진 밤, 혈연 증서 없는 일행이 그 길목에 모인다. 윤산호는 손전등으로 이정표를 확인해 지워진 글자 옆에 쪽지를 붙이고, 일행을 대기열로 보낸 뒤 위조 의심 건은 장경 필사 당직에 넘긴다.\n\n**관계.** 백온의 난민대표 명부와 맞물리되, 이정표 열쇠는 반장이 쥔다.\n\n**야망.** 피난로 안내를 강국 호송 시각표에 묶지 않고, 신도 재결합 명부만으로 열리게 한다.\n\n**공포.** 안내 공백이 생기면 회랑이 검역 볼모의 줄이 되는 것.\n\n**개입.** 봉한 남쪽 길의 이유를 열거나, 명부 합류를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 75 | 무력 −40 | 물질 −25 | 공동 80 | 원칙 20 | 공개 40 | 자격 30 | 분산 55 | 변혁 0\n- 욕망: 갈망 20 | 독점 −15 | 위험 −20 | 과시 20 | 지속 15 | 지향 유동 | 결합 단혼\n:::",
+  "biography": "피난로 이정표를 손전등으로 확인하고, 지워진 글자는 새로 쓰지 않고 옆에 붙인다. 큰 약속은 하지 않는다.\n\n- 생업: 피난로 이정표·증서 대기열 안내\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 피난로 안내 주지\n**생애.** 2064-12-13 출생, 2126년 개막에 활동했다. 보국문 피난 막사에서 자랐다. 피난로 안내 주지 당직 기록에는 고아 명부 줄 일이 남아 있다.\n- 윤산호의 피난로 이정표·증서 대기열 안내 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 윤산호의 피난로 이정표·증서 대기열 안내 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 주지. 직함은 피난로 안내 주지. 혈연 증서가 없는 일행은 대기열로 보내고, 위조 의심은 장경 필사 당직에만 넘긴다.\n\n**일화.** 피난로 이정표 하나의 글자가 지워진 밤, 혈연 증서 없는 일행이 그 길목에 모인다. 윤산호는 손전등으로 이정표를 확인해 지워진 글자 옆에 쪽지를 붙이고, 일행을 대기열로 보낸 뒤 위조 의심 건은 장경 필사 당직에 넘긴다.\n\n**관계.** 백온의 난민대표 명부와 맞물리되, 이정표 열쇠는 반장이 쥔다.\n\n**야망.** 피난로 안내를 신도 재결합 명부와 서울 내부 안내 시각표에 맞춰 연다.\n\n**공포.** 안내 공백이 생기면 회랑이 검역 볼모의 줄이 되는 것.\n\n**개입.** 봉한 남쪽 길의 이유를 열거나, 명부 합류를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 75 | 무력 −40 | 물질 −25 | 공동 80 | 원칙 20 | 공개 40 | 자격 30 | 분산 55 | 변혁 0\n- 욕망: 갈망 20 | 독점 −15 | 위험 −20 | 과시 20 | 지속 15 | 지향 유동 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-10"
   ],

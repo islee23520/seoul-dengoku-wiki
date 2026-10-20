@@ -86,13 +86,28 @@ test('SQLite rows roundtrip all actual documents and enforce provenance, state a
       "UPDATE text_governance SET source_id=999999",
       "UPDATE text_station SET json_pointer='/missing' WHERE ordinal=0",
       "UPDATE text_territorial SET scale_implies_title_rank=2",
-      "UPDATE text_territorial_regular SET component_implies_lower_title=2",
+      "UPDATE text_territorial_parent SET political_liege_inference=2",
+      "UPDATE text_territorial_slot_edition SET current_boundary_certification=0 WHERE edition_kind='currentCorrespondence'",
+      "UPDATE text_territorial_slot_edition SET base_date=NULL WHERE edition_kind='dated'",
+      "UPDATE text_territorial_level SET count=1 WHERE level='barony'",
+      "UPDATE text_territorial_level SET partition_sha256=NULL WHERE level='kingdom'",
+      "UPDATE text_territorial_political_axis SET current_centers='three'",
     ]) assert.throws(() => db.exec(sql), undefined, sql);
     assert.throws(() => db.exec('DELETE FROM source_file'));
     assert.throws(() => db.exec('DELETE FROM text_document'));
     for (const table of Object.keys(GEOGRAPHY_TABLE_COLUMNS)) assert.equal(db.prepare('PRAGMA table_list').all().find((row) => row.name === table).strict, 1);
     const hashes = db.prepare('SELECT DISTINCT s.source_id,s.sha256 FROM source_file s JOIN text_document d USING(source_id)').all();
     for (const hash of hashes) assert.equal(hash.sha256, files.find((file) => file.source_id === hash.source_id).sha256);
+    assert.deepEqual(db.prepare('SELECT edition_kind,count,geometry_verified,current_boundary_certification FROM text_territorial_slot_edition ORDER BY edition_kind').all().map((row) => ({ ...row })), [
+      { edition_kind: 'currentCorrespondence', count: 427, geometry_verified: 0, current_boundary_certification: null },
+      { edition_kind: 'dated', count: 426, geometry_verified: 1, current_boundary_certification: 0 },
+    ]);
+    const territorial = files.find((file) => file.document.data.territorialScale);
+    const restored = reconstructGeographyData({ tables, source_id: territorial.source_id }).territorialScale;
+    assert.equal(restored.geographicParent.politicalLiegeInference, false);
+    assert.equal(restored.politicalAxis.geographicKingdomEquivalence, false);
+    assert.equal(Object.hasOwn(restored.slotEditions.currentCorrespondence, 'currentBoundaryCertification'), false);
+    assert.equal(Object.hasOwn(restored.levels.barony, 'count'), false);
     console.log('Geography counts:', Object.fromEntries(Object.entries(mapped).map(([table, rows]) => [table, rows.length])));
   } finally { db.close(); }
 });
@@ -109,4 +124,20 @@ test('empty collections, optional service maps, pointer escaping and unrelated k
   const unknown = structuredClone(files.find((file) => file.document.data.territorialScale));
   unknown.document.data.territorialScale.inventedRight = true;
   assert.throws(() => mapGeographyData({ files: [unknown] }), { code: 'E_TEXT_GEOGRAPHY_SHAPE' });
+});
+
+test('current geography rejects unknown nested fields and scalar coercion', () => {
+  const original = files.find((file) => file.document.data.territorialScale);
+  for (const mutate of [
+    (t) => { t.levels.county.count = '48'; },
+    (t) => { t.levels.kingdom.partitionSha256 = null; },
+    (t) => { t.slotEditions.currentCorrespondence.currentBoundaryCertification = false; },
+    (t) => { t.slotEditions.dated.geometryVerified = 1; },
+    (t) => { t.geographicParent.inventedRight = true; },
+    (t) => { t.politicalAxis.currentCenters = '3'; },
+  ]) {
+    const file = structuredClone(original);
+    mutate(file.document.data.territorialScale);
+    assert.throws(() => mapGeographyData({ files: [file] }), { code: 'E_TEXT_GEOGRAPHY_SHAPE' });
+  }
 });

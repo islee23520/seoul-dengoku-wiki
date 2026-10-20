@@ -38,7 +38,7 @@ test('Given a fixed primary holder and JSON pointer target, when closure maps re
     logical_path: 'lore/World-Narrative-Atlas.json', sha256: 'a'.repeat(64), byte_length: 1,
     source_class: 'reference-hash-only',
   });
-  assert.equal(rows.reference_source.length, 34);
+  assert.equal(rows.reference_source.length, REFERENCE_TARGET_PATHS.length);
   assert.deepEqual(rows.source_reference, [{
     source_id: 1, json_pointer: '/people/0/sourceRefs/0', ordinal: 0,
     reference_logical_path: 'lore/World-Narrative-Atlas.json', reference_anchor: '/content/0',
@@ -114,6 +114,27 @@ test('Given a non-contract sourcePath string, when closure maps current context,
   assert.equal(rows.source_reference.length, 1);
 });
 
+test('Given office v2 evidence, when closure maps it, then the origin and target JSON pointers stay separate', () => {
+  const current = bundle();
+  current.files.find(entry => entry.logical_path === 'lore/relations/opening-office-appointments.json').document = {
+    schema: 'opening-office-appointments.v2',
+    appointments: [{ history: { commonTier: 'T4' }, current: { evidence: [
+      { path: 'lore/relations/opening-office-appointments.json', jsonPointer: '/appointments/0/history', kind: 'preserved-history' },
+    ] } }],
+  };
+  const rows = mapSourceClosureDomains({ bundle: current });
+  assert.deepEqual(rows.source_reference.find(row => row.source_id === 9), {
+    source_id: 9, json_pointer: '/appointments/0/current/evidence/0', ordinal: 0,
+    reference_logical_path: 'lore/relations/opening-office-appointments.json',
+    reference_anchor: '/appointments/0/history', anchor_verification: 'json-pointer-verified',
+  });
+  const evidence = current.files.find(entry => entry.source_id === 9).document.appointments[0].current.evidence[0];
+  evidence.jsonPointer = '/appointments/1/history';
+  assert.equal(mapSourceClosureDomains({ bundle: current }).source_reference.find(row => row.source_id === 9).anchor_verification, 'json-pointer-unresolved');
+  evidence.path = 'lore/unapproved.json';
+  assert.throws(() => mapSourceClosureDomains({ bundle: current }), { code: 'E_REFERENCE_ALLOWLIST' });
+});
+
 test('Given a direct source record, when closure DDL receives its reference, then STRICT foreign keys bind holder and hash-only target', async () => {
   const db = new DatabaseSync(':memory:', { enableForeignKeyConstraints: true });
   try {
@@ -137,7 +158,7 @@ test('Given a direct source record, when closure DDL receives its reference, the
   }
 });
 
-test('Given the current fixed family and context holders, when closure maps their actual source pointers, then it binds all 34 allowed target paths', async () => {
+test('Given the current fixed family and context holders, when closure maps their actual source pointers, then it binds the fixed target set and office evidence', async () => {
   const load = async (logical_path, source_id) => {
     const bytes = await readFile(logical_path);
     return {
@@ -151,11 +172,13 @@ test('Given the current fixed family and context holders, when closure maps thei
 
   const rows = mapSourceClosureDomains({ bundle: { files, referenceFiles } });
 
-  assert.equal(rows.source_reference.length, 41759);
+  assert.equal(rows.source_reference.length, 41873);
   assert.deepEqual(rows.reference_source.map((row) => row.logical_path), REFERENCE_TARGET_PATHS);
-  assert.equal(rows.source_reference.filter((row) => row.anchor_verification === 'json-pointer-verified').length, 7793);
-  assert.equal(rows.source_reference.filter((row) => row.anchor_verification === 'verified-path-only').length, 33955);
+  const office = files.find(file => file.logical_path === 'lore/relations/opening-office-appointments.json');
+  assert.equal(rows.source_reference.filter(row => row.source_id === office.source_id).length,
+    office.document.appointments.reduce((count, row) => count + row.current.evidence.length, 0));
+  assert.equal(rows.source_reference.filter((row) => row.anchor_verification === 'json-pointer-verified').length, 7915);
+  assert.equal(rows.source_reference.filter((row) => row.anchor_verification === 'verified-path-only').length, 33958);
   const unresolved = rows.source_reference.filter((row) => row.anchor_verification === 'json-pointer-unresolved');
-  assert.equal(unresolved.length, 11);
-  assert.ok(unresolved.some((row) => row.reference_logical_path === 'lore/chronology/Century-Annals.json' && row.reference_anchor === '/content/629'));
+  assert.deepEqual(unresolved, []);
 });

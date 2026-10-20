@@ -7,8 +7,8 @@ import { HISTORICAL_CONTEXT_TABLE_COLUMNS, mapHistoricalContext } from './histor
 import { parseDocument } from './sources.mjs'
 
 const PATHS = [
-  'lore/relations/opening-feudal-allocation.json',
-  'lore/regions/outside-control-2126.json',
+  'scripts/historical-inputs/opening-feudal-allocation.json',
+  'scripts/historical-inputs/outside-control-2126.json',
   'lore/regions/seoul-electoral-titles.json',
 ]
 

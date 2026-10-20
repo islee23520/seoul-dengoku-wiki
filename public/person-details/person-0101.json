@@ -2,7 +2,7 @@
   "id": "person-0101",
   "name": "표산하",
   "title": "공방평의회 전령",
-  "position": "당회 전령",
+  "position": "공방평의회 전령",
   "characterId": "K100",
   "rank": "교사",
   "commonTier": "T5",
@@ -568,47 +568,23 @@
             "name": "표산하",
             "url": "/people/person-0101",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유언 사본 봉함·전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/170/items/1/ko",
-                  "quote": "생업: 유언 사본 봉함·전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -616,89 +592,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/170/items/1/ko",
-                    "quote": "생업: 유언 사본 봉함·전달"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/170/items/1/ko",
-                    "quote": "생업: 유언 사본 봉함·전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "장안동",
-              "type": "초소 영지",
-              "station": "장안동",
-              "state": "S04",
-              "settlement": {
-                "name": "장안동 정착지",
-                "type": "정착지",
-                "description": "장안동 일대 고정 거점"
-              },
-              "note": "S04 장안동 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -722,47 +643,23 @@
             "name": "표산하",
             "url": "/people/person-0101",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유언 사본 봉함·전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/170/items/1/ko",
-                  "quote": "생업: 유언 사본 봉함·전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -770,89 +667,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/170/items/1/ko",
-                    "quote": "생업: 유언 사본 봉함·전달"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/170/items/1/ko",
-                    "quote": "생업: 유언 사본 봉함·전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "장안동",
-              "type": "초소 영지",
-              "station": "장안동",
-              "state": "S04",
-              "settlement": {
-                "name": "장안동 정착지",
-                "type": "정착지",
-                "description": "장안동 일대 고정 거점"
-              },
-              "note": "S04 장안동 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -873,18 +715,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "장안동",
-    "type": "초소 영지",
-    "station": "장안동",
-    "state": "S04",
-    "settlement": {
-      "name": "장안동 정착지",
-      "type": "정착지",
-      "description": "장안동 일대 고정 거점"
-    },
-    "note": "S04 장안동 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -920,20 +750,20 @@
     "소속": "명부교회",
     "생업": "유언 사본 봉함·전달",
     "품계": "교사",
-    "직함": "당회 전령",
+    "직함": "공방평의회 전령",
     "가치관": "권위 −20 | 개방 25 | 무력 −25 | 물질 20 | 공동 35 | 원칙 10 | 공개 −10 | 자격 40 | 분산 20 | 변혁 5",
     "욕망": "갈망 −5 | 독점 20 | 위험 −35 | 과시 30 | 지속 20 | 지향 양성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 당회 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "관직": "품계 교사. 직함은 당회 전령. 유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다.",
-    "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 당회 전령 자리의 서명이 장부에 올랐다.",
+    "생애": "2126년 세대. 표산하는 신내 환승 당직에서 자랐다. 표산하는 무표 출발 열차 저지로 공방평의회 전령 자리를 맡았다.\n- 표산하의 공방평의회 전령 업무는 성수2가3동과 연결된다.",
+    "관직": "품계 교사. 직함은 공방평의회 전령. 유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다.",
+    "일화": "2125년 표산하는 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 공방평의회 전령 자리의 서명이 장부에 올랐다.",
     "관계": "정가온의 감사 날인을 현장에서 배달하는 계약이고, 한소미의 공동통치안 문구를 다듬어 나르며, 윤서린에게 유언 사본을 넘기는 창구가 된다.",
     "야망": "세 장의 총관 유언과 정비일지를 평의회 원장에 나란히 배달해 기록청 인준 이전에도 공방이 해석의 주체가 되게 한다.",
-    "공포": "위조 유언 한 장이 진본으로 확정되어 전령 직위가 후계 전쟁 도구로 팔리는 것.",
+    "공포": "표산하는 위조 유언 한 장이 진본으로 확정되어 전령 직위가 후계 전쟁 도구로 팔리는 상황을 두려워한다.",
     "개입": "봉인 사본을 기록청까지 호송하거나, 전갈 날인을 위조한 자를 잡아 해석권을 한쪽에 몰아줄 수 있다."
   },
-  "biography": "문구의 날짜를 집요하게 대조하고, 구두 유언을 진본처럼 읽는 사람을 위조범의 이웃으로 본다. 봉인 끈이 느슨하면 출발하지 않는다.\n\n- 소속: 명부교회\n- 생업: 유언 사본 봉함·전달\n- 품계: 교사\n- 직함: 당회 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 당회 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 교사. 직함은 당회 전령. 유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 당회 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 정가온의 감사 날인을 현장에서 배달하는 계약이고, 한소미의 공동통치안 문구를 다듬어 나르며, 윤서린에게 유언 사본을 넘기는 창구가 된다.\n\n**야망.** 세 장의 총관 유언과 정비일지를 평의회 원장에 나란히 배달해 기록청 인준 이전에도 공방이 해석의 주체가 되게 한다.\n\n**공포.** 위조 유언 한 장이 진본으로 확정되어 전령 직위가 후계 전쟁 도구로 팔리는 것.\n\n**개입.** 봉인 사본을 기록청까지 호송하거나, 전갈 날인을 위조한 자를 잡아 해석권을 한쪽에 몰아줄 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 25 | 무력 −25 | 물질 20 | 공동 35 | 원칙 10 | 공개 −10 | 자격 40 | 분산 20 | 변혁 5\n- 욕망: 갈망 −5 | 독점 20 | 위험 −35 | 과시 30 | 지속 20 | 지향 양성 | 결합 비독점\n:::",
+  "biography": "문구의 날짜를 집요하게 대조하고, 구두 유언을 진본처럼 읽는 사람을 위조범의 이웃으로 본다. 봉인 끈이 느슨하면 출발하지 않는다.\n\n- 소속: 명부교회\n- 생업: 유언 사본 봉함·전달\n- 품계: 교사\n- 직함: 공방평의회 전령\n**생애.** 2126년 세대. 표산하는 신내 환승 당직에서 자랐다. 표산하는 무표 출발 열차 저지로 공방평의회 전령 자리를 맡았다.\n- 표산하의 공방평의회 전령 업무는 성수2가3동과 연결된다.\n\n**관직.** 품계 교사. 직함은 공방평의회 전령. 유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다.\n\n**일화.** 2125년 표산하는 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 공방평의회 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 정가온의 감사 날인을 현장에서 배달하는 계약이고, 한소미의 공동통치안 문구를 다듬어 나르며, 윤서린에게 유언 사본을 넘기는 창구가 된다.\n\n**야망.** 세 장의 총관 유언과 정비일지를 평의회 원장에 나란히 배달해 기록청 인준 이전에도 공방이 해석의 주체가 되게 한다.\n\n**공포.** 표산하는 위조 유언 한 장이 진본으로 확정되어 전령 직위가 후계 전쟁 도구로 팔리는 상황을 두려워한다.\n\n**개입.** 봉인 사본을 기록청까지 호송하거나, 전갈 날인을 위조한 자를 잡아 해석권을 한쪽에 몰아줄 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 25 | 무력 −25 | 물질 20 | 공동 35 | 원칙 10 | 공개 −10 | 자격 40 | 분산 20 | 변혁 5\n- 욕망: 갈망 −5 | 독점 20 | 위험 −35 | 과시 30 | 지속 20 | 지향 양성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-04"
   ],

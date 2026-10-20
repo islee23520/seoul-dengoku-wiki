@@ -51,8 +51,8 @@ const SHAPES = Object.freeze({
     "4fc98b6901ff0cce3715e72f0042c476a6c6452353aad0f8008aff851caed48d"
   ],
   "lore/characters/Cast-State-05.json": [
-    35,
-    "6902de07109281fbe6d42dda06c842399ae4eb974f54044619ab246c0bbacadd"
+    31,
+    "e8c2b6af6d8accf994ff0a930299c2d760433d1ffdcb2e8ac70c068424b31084"
   ],
   "lore/characters/Cast-State-06.json": [
     35,
@@ -100,7 +100,7 @@ const SHAPES = Object.freeze({
   ],
   "lore/characters/Cast-Unaffiliated.json": [
     31,
-    "95584d90c68c34da8b9d2cf5773d71663eca3ecc26c32e1632134f163191f9ed"
+    "37ab095348fc0614d3896ebf8e4f5b4f3227f807e0f1a766095fcc6ab93a9ecd"
   ],
   "lore/characters/Core-Characters.json": [
     37,
@@ -147,8 +147,8 @@ const SHAPES = Object.freeze({
     "712535b89963eb7088202126b64b1801d92d57195120efbc5fcc8b5b0f46c902"
   ],
   "lore/name-pools/cast-prose-contacts.json": [
-    6,
-    "127dfe66e629c94b410cc1677b0ffcd9577d67227f388948ae3542187a947578"
+    9,
+    "5cd443e8f95eb528a366b05b313669c45796d43699eafdcd34796726617048e3"
   ],
   "lore/name-pools/clan-hangnyeol-tables.json": [
     31,
@@ -163,12 +163,12 @@ const SHAPES = Object.freeze({
     "1582161d3a40adf714c8b24ccd19a41b2244600d9ad7c662fd9bbbbcec163cf9"
   ],
   "lore/name-pools/gurps-cast.json": [
-    202,
-    "1f549a9c977b381f175a3bf2567d4c0231b803a0dde260d3876982e727c7e629"
+    212,
+    "323cd8a00f94ddaf9925ab4b6781719d80ec674c4c21dfbadba4e83e0db4c875"
   ],
   "lore/name-pools/household-humanoid-policy.json": [
-    21,
-    "e0f4dfcb1fbf433c552b8315c9a93aa041abdf04ffe1f78c5b386d04685cea1d"
+    27,
+    "c80427c80c4e2de8c02f0bbf64ac714bd8d1e6d2acf0d9b1a1c0bfce1a681292"
   ],
   "lore/name-pools/person-id-registry.json": [
     12,
@@ -275,7 +275,7 @@ const FAMILY_RULES = Object.freeze(Object.fromEntries([
   [pool('cast-household-relations'), { mappings: [person('household_person', 'person_id', ['people']), person('household_humanoid_context', 'actor_id', ['existingHumanoidContext']), person('household_manifest', 'manifest_id', ['quantityContract', 'scope'])], exclusions: { schema: '규격', status: 'household_manifest 메타데이터' } }],
   [pool('diaspora-family-lineages'), { mappings: [person('diaspora_lineage', 'lineage_key', ['lineages'])], exclusions: { schema: '규격', sourceKind: '가족 메타데이터 테이블에서 보존', authorization: '가족 메타데이터 테이블에서 보존', collapseDate: '가족 메타데이터 테이블에서 보존', openingYear: '가족 메타데이터 테이블에서 보존', ageAsOf: '가족 메타데이터 테이블에서 보존', generationIntervalYears: '가족 메타데이터 테이블에서 보존', generationIntervalExceptions: '가족 세대 규칙', sourceDocument: '가족 메타데이터 테이블에서 보존' } }],
   [pool('household-humanoid-policy'), { mappings: [person('household_policy_value', 'policy_key', ['counts', 'tierQuotas', 'faithStates', 'faithEvidence', 'priority', 'unknownOrientation', 'knownOrientations', 'otherKnownOrientationGender', 'existingGender', 'facilityCustody', 'seedKey', 'sexualRelationship']), person('household_policy_political_position', 'position', ['politicalPositions'])], exclusions: { schema: '규격', approvalRef: '가족 메타데이터 테이블에서 보존', sourceRefs: 'household_policy_source에서 보존' } }],
-  [pool('cast-prose-contacts'), { mappings: [person('context_prose_contact', 'person_id', ['records'])], exclusions: { schemaVersion: '규격' } }],
+  [pool('cast-prose-contacts'), { mappings: [person('context_prose_contact', 'person_id', ['records'])], exclusions: { schemaVersion: '규격', status: '문서 편집 상태; 현행 승인으로 승격하지 않음', approvalStatus: '문서 승인 대기 표기; 인물별 승인으로 승격하지 않음', sourceNote: '출처 보존 설명' } }],
   [relation('relations'), { mappings: [person('context_court', 'court_id', ['courts']), person('context_direct_retainer', 'person_id', ['directRetainers']), person('context_owner_liege', 'person_id', ['ownerLieges']), person('context_court_membership', 'person_id', ['courtMemberships']), person('context_organization', 'organization_id', ['organizations']), person('context_event_link', 'event_id', ['eventLinks']), person('context_relation_contract', 'contract_id', ['courtContract'])], exclusions: { schema: '규격', note: '편집 설명', provisionalPeople: '발급 전 지역 ID는 현재 0건' } }],
   [relation('personal-holdings'), { mappings: [person('context_holding', 'holding_id', ['holdings']), person('context_polity', 'polity_id', ['polities']), person('context_retinue_group', 'retinue_group_id', ['retinueGroups']), person('context_opening_disposition', 'person_id', ['openingDispositions'])], exclusions: { schema: '규격', openingYear: 'context_holding.opening_year 등에 보존' } }],
   [relation('opening-office-appointments'), { mappings: [person('context_office_appointment', 'person_id', ['appointments'])], exclusions: { schema: '규격', openingYear: 'context_office_appointment.opening_year에 보존' } }],
@@ -295,8 +295,583 @@ const FAMILY_RULES = Object.freeze(Object.fromEntries([
   ...['lore/chronology/Century-Annals.json', 'lore/chronology/Scenario-Timeline.json'].map((path) => [path, { mappings: [], exclusions: { ...COMMON_DOCUMENT_EXCLUSION, content: '인물 카드의 참조 문서; 본 문서는 독립된 인물 장부가 아님' } }]),
 ]));
 
+// Reviewed current-rights leaf signatures and exact source-to-column targets.
+const RIGHTS_SHAPES = Object.freeze({
+  "scripts/approved-seoul-rights-transition.json": [55,"2c014198e090b37ec89a4983d0e43bff542e08980cddabbfb0cb5a659bd6a64a"],
+  "scripts/approved-daejeon-nonowning-rights.json": [25,"651152cada93eff64dc078d4e0c91aae8d3b8cefe15b1e75aa5db180e134ac01"],
+  "scripts/approved-outside-current-retirement.json": [12,"02068faf5514ef781f054e3cc98a7562cdb6c0a7158dc83000973ca1e7e5e978"],
+  "scripts/historical-inputs/personal-holdings.json": [56,"d4f264291c6e851b12c7f9196764e73f062883eb8c8b06cdfc143351e382755c"],
+  "scripts/historical-inputs/opening-feudal-allocation.json": [30,"3087de8476875a3245060f535990bad87da2001f5b32cbf71d10b75e9df7c7a9"],
+  "scripts/historical-inputs/outside-control-2126.json": [11,"8beb4d16a02215abe94994add12a6f0ff770bddda5cd901a17761bf57babbace"],
+  "scripts/historical-inputs/outside-island-occupation.json": [20,"8adcb44d44e0ccbeb8c14fd1ebb6ec812e2236fb107e7725215f247d1b4db081"],
+  "lore/regions/outside-island-occupation.json": [4,"e9d417bb70b0f1c919274783fc240adcc09314d316544879c5b649d6d56ee8a8"],
+  "lore/relations/personal-holdings.json": [69,"6fa5b5194be581bc9bca24d0979dbb1c04c5983d1c66f7e7d918970b40f61fd6"],
+  "lore/relations/opening-feudal-allocation.json": [42,"db80e05eed711c61131939b02c30fe79804a4a839a16ef208fdbe9ac5234e588"],
+  "lore/regions/outside-control-2126.json": [2,"2c015c80ebce0ae1e568e33cef4fed06d5aa51f9390e0617b38f4bd6cd7d1199"],
+  "lore/relations/opening-office-appointments.json": [27,"3b9f870f5be6c34637dcd95c7513042a353b722ded0f4331bb3925c754981929"],
+  "lore/regions/seoul-electoral-titles.json": [110,"9653a116d68c758e03e6714f9efbedc52486636a3621e2fab2ffe60e847fcb48"]
+});
+const RIGHTS_RULES = Object.freeze({
+  "scripts/approved-seoul-rights-transition.json": {
+    leafTargets: {
+      "/approvalReceiptSha256": ["context_rights_approval.receipt_sha256"],
+      "/approvalRef": ["context_rights_approval.approval_ref"],
+      "/nonowningPackageSha256": ["context_rights_approval.package_sha256"],
+      "/originalSources/allocation/path": ["context_rights_original_source.logical_path"],
+      "/originalSources/allocation/sha256": ["context_rights_original_source.expected_sha256"],
+      "/originalSources/existing/path": ["context_rights_original_source.logical_path"],
+      "/originalSources/existing/sha256": ["context_rights_original_source.expected_sha256"],
+      "/records/[]/currentId": ["context_rights_transition.current_id"],
+      "/records/[]/disposition": ["context_rights_transition.disposition"],
+      "/records/[]/oldId": ["context_rights_transition.old_id"],
+      "/records/[]/set": ["context_rights_transition.set_name"],
+      "/records/[]/sourceValueSha256": ["context_rights_transition.original_value_sha256"],
+      "/schema": ["context_rights_approval.source_schema"]
+    },
+    leafExclusions: {
+      "/polities/[]/authority/kind": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/polities/[]/authority/name": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/polities/[]/directOwnership": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/polities/[]/formalTitle": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/polities/[]/formalTitleRank": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/polities/[]/id": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/polities/[]/name/en": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/polities/[]/name/ko": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/polities/[]/office": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/polities/[]/politicalTitleId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/polities/[]/sovereignPersonId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/polities/[]/territorialScale": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/adminRefs/[]:empty": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/basis": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/capabilityPackageId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/directLiegePersonId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/directOwnership": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/formalTitleRank": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/geographicParentTitleId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/geographicScope/countyTitleIds/[]": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/geographicScope/duchyTitleId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/geographicScope/geographicEmpireId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/geographicScope/geographicKingdomId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/geographicScope/guRef": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/geographicTitleId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/geometrySource": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/holderPersonId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/holdingId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/id": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/jurisdictionRefs/[]": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/kind": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/liegeRelationshipKind": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/name": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/name/ko": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/parentTitleId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/personalLiegePersonId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/politicalParentTitleId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/powers/[]": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/rank": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/stateId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/territorialScale": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/records/[]/current/titleId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음"
+    },
+  },
+  "scripts/approved-daejeon-nonowning-rights.json": {
+    leafTargets: {
+      "/approval/messageRef": ["context_rights_approval.message_ref"],
+      "/approval/proposalSha256": ["context_rights_approval.proposal_sha256"],
+      "/approval/receiptSha256": ["context_rights_approval.receipt_sha256"],
+      "/contract/approvalRef": ["context_rights_approval.approval_ref"],
+      "/schema": ["context_rights_approval.source_schema"]
+    },
+    leafExclusions: {
+      "/activeRecordPolicy/activationDecisionIds": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/activeRecordPolicy/status": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/contract/capabilityPackageId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/politicalTitle/holderPersonId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/politicalTitle/id": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/politicalTitle/stateId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/proposalSha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/contract/rights/[]/geographicScope/countyTitleIds/[]": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/rights/[]/geographicScope/duchyTitleId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/rights/[]/geographicScope/geographicEmpireId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/rights/[]/geographicScope/geographicKingdomId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/rights/[]/geographicScope/guRef": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/rights/[]/holderPersonId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/rights/[]/holdingId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/rights/[]/personalLiegePersonId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/rights/[]/politicalParentTitleId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/rights/[]/stateId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/rights/[]/titleId": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음",
+      "/contract/schema": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/powers/[]": "인증 시 현행 successor와 대조하는 중복 계약값; 정규화는 현행 allocation/holdings 원천 source_id로만 기록하며 manifest 행으로 가장하지 않음"
+    },
+  },
+  "scripts/approved-outside-current-retirement.json": {
+    leafTargets: {
+      "/approvalReceipt/sha256": ["context_rights_approval.receipt_sha256"],
+      "/approvalRef": ["context_rights_approval.approval_ref"],
+      "/originalSources/control/path": ["context_rights_original_source.logical_path"],
+      "/originalSources/control/sha256": ["context_rights_original_source.expected_sha256"],
+      "/originalSources/islands/path": ["context_rights_original_source.logical_path"],
+      "/originalSources/islands/sha256": ["context_rights_original_source.expected_sha256"],
+      "/records/[]/approvalRef": ["context_outside_retirement.approval_ref"],
+      "/records/[]/recordKey": ["context_outside_retirement.record_key"],
+      "/records/[]/sourceValueSha256": ["context_outside_retirement.original_value_sha256"],
+      "/records/[]/status": ["context_outside_retirement.status"],
+      "/schema": ["context_rights_approval.source_schema"]
+    },
+    leafExclusions: {
+      "/approvalReceipt/path": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님"
+    },
+  },
+  "scripts/historical-inputs/personal-holdings.json": {
+    leafTargets: {
+
+    },
+    leafExclusions: {
+      "/holdings/[]/adminRefs/[]/id": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/adminRefs/[]/name": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/adminRefs/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증",
+      "/holdings/[]/designation/en": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/designation/ko": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/directLiegePersonId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/facilityRef/layerId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/facilityRef/layerName": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/facilityRef/siteAnchor": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/facilityRef/siteSourcePath": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/facilityRef/sourcePath": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/facilityRef/stationId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/facilityRef/stationIdentity/district": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/facilityRef/stationIdentity/lat": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/facilityRef/stationIdentity/lon": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/facilityRef/stationName": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/formalTitleRank": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/geometrySource": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/holderPersonId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/id": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/landmarkRef/landmarkId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/landmarkRef/sourcePath": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/name/en": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/name/ko": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/parentGeography": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/stateId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/stationRef/stationId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/stationRef/stationName": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/territorialScale": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/holdings/[]/wholeSeoulControl": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/openingDispositions/[]/approvalRef": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/openingDispositions/[]/personId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/openingDispositions/[]/status": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/openingYear": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/polities/[]/authority/kind": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/polities/[]/authority/name": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/polities/[]/formalTitle": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/polities/[]/formalTitleRank": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/polities/[]/id": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/polities/[]/name/en": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/polities/[]/name/ko": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/polities/[]/office": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/polities/[]/sovereignPersonId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/polities/[]/territorialScale": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/retinueGroups/[]/count": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/retinueGroups/[]/courtId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/retinueGroups/[]/duties/[]": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/retinueGroups/[]/formalTitle": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/retinueGroups/[]/holdingIds/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증",
+      "/retinueGroups/[]/id": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/retinueGroups/[]/liegePersonId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/retinueGroups/[]/name/en": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/retinueGroups/[]/name/ko": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/retinueGroups/[]/personhoodReview": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/retinueGroups/[]/technicalLimits/[]": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/schema": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음"
+    },
+  },
+  "scripts/historical-inputs/opening-feudal-allocation.json": {
+    leafTargets: {
+      "/existingTitleBindings/[]/holdingId": ["historical_feudal_binding.holding_id"],
+      "/existingTitleBindings/[]/liegeRelationshipKind": ["historical_feudal_binding.liege_relationship_kind"],
+      "/existingTitleBindings/[]/titleId": ["historical_feudal_binding.title_id"],
+      "/grants/[]/adminRefs/[]/id": ["historical_feudal_grant_admin.admin_unit_id"],
+      "/grants/[]/adminRefs/[]/name": ["historical_feudal_grant_admin.admin_unit_name"],
+      "/grants/[]/componentRefs/[]/componentIndex": ["historical_feudal_grant_component.component_index"],
+      "/grants/[]/componentRefs/[]/unitId": ["historical_feudal_grant_component.admin_unit_id"],
+      "/grants/[]/directLiegePersonId": ["historical_feudal_grant.liege_person_id"],
+      "/grants/[]/formalTitleRank": ["historical_feudal_grant.formal_title_rank"],
+      "/grants/[]/geometrySource": ["historical_feudal_grant.geometry_source"],
+      "/grants/[]/holderPersonId": ["historical_feudal_grant.holder_person_id"],
+      "/grants/[]/id": ["historical_feudal_grant.grant_id"],
+      "/grants/[]/name/ko": ["historical_feudal_grant.name_ko"],
+      "/grants/[]/stateId": ["historical_feudal_grant.polity_id"],
+      "/grants/[]/territorialScale": ["historical_feudal_grant.territorial_scale"],
+      "/grants/[]/titleId": ["historical_feudal_grant.title_id"],
+      "/titles/[]/holderPersonId": ["historical_feudal_title.holder_person_id"],
+      "/titles/[]/id": ["historical_feudal_title.title_id"],
+      "/titles/[]/jurisdictionRefs/[]": ["historical_feudal_jurisdiction.admin_unit_id"],
+      "/titles/[]/name": ["historical_feudal_title.name"],
+      "/titles/[]/parentTitleId": ["historical_feudal_title.parent_title_id"],
+      "/titles/[]/rank": ["historical_feudal_title.rank"],
+      "/titles/[]/stateId": ["historical_feudal_title.polity_id"]
+    },
+    leafExclusions: {
+      "/existingTitleBindings/[]/basis": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/grants/[]/adminRefs/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증",
+      "/grants/[]/componentRefs/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증",
+      "/openingYear": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/schema": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/titles/[]/basis": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/titles/[]/jurisdictionRefs/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증"
+    },
+  },
+  "scripts/historical-inputs/outside-control-2126.json": {
+    leafTargets: {
+      "/assignments/[]/authority/kind": ["historical_outside_person_control.authority_kind"],
+      "/assignments/[]/authority/name": ["historical_outside_person_control.authority_name"],
+      "/assignments/[]/authority/stateId": ["historical_outside_person_control.authority_state_id"],
+      "/assignments/[]/directLiegePersonId": ["historical_outside_person_control.liege_person_id"],
+      "/assignments/[]/holderPersonId": ["historical_outside_person_control.holder_person_id"],
+      "/assignments/[]/unitId": ["historical_outside_person_control.admin_unit_id"]
+    },
+    leafExclusions: {
+      "/assignments/[]/authority": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/assignments/[]/station": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/assignments/[]/vassal": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/basis": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/schema": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음"
+    },
+  },
+  "scripts/historical-inputs/outside-island-occupation.json": {
+    leafTargets: {
+
+    },
+    leafExclusions: {
+      "/geometrySource": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/geometrySourceSha256": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/openingDecision/anonymousComponentApprovalRef": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/openingDecision/authority/kind": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/openingDecision/authority/name": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/openingDecision/authority/stateId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/openingDecision/namedIslandApprovalRefs/[]": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/openingDecision/policy": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/schema": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/units/[]/components/[]/authority": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/units/[]/components/[]/authority/kind": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/units/[]/components/[]/authority/name": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/units/[]/components/[]/authority/stateId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/units/[]/components/[]/componentIndex": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/units/[]/components/[]/connection": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/units/[]/components/[]/location/[]": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/units/[]/components/[]/name": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/units/[]/components/[]/sources/[]": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/units/[]/pathSha256": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음",
+      "/units/[]/unitId": "보존 원본·인증 입력: 해당 필드는 독립 정규화 projection이 없으며 현행 권리로 승격하지 않음"
+    },
+  },
+  "lore/regions/outside-island-occupation.json": {
+    leafTargets: {
+
+    },
+    leafExclusions: {
+      "/geometrySource": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/geometrySourceSha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/schema": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/units/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증"
+    },
+  },
+  "lore/relations/personal-holdings.json": {
+    leafTargets: {
+      "/holdings/[]/capabilityPackageId": ["context_holding.capability_package_id"],
+      "/holdings/[]/designation/en": ["context_holding.designation_en"],
+      "/holdings/[]/designation/ko": ["context_holding.designation_ko"],
+      "/holdings/[]/directLiegePersonId": ["context_holding.direct_liege_person_id"],
+      "/holdings/[]/directOwnership": ["context_holding.direct_ownership"],
+      "/holdings/[]/formalTitleRank": ["context_holding.formal_title_rank"],
+      "/holdings/[]/geographicScope/countyTitleIds/[]": ["context_holding_scope_county.county_title_id"],
+      "/holdings/[]/geographicScope/duchyTitleId": ["context_holding_geographic_scope.duchy_title_id"],
+      "/holdings/[]/geographicScope/geographicEmpireId": ["context_holding_geographic_scope.empire_geography_id"],
+      "/holdings/[]/geographicScope/geographicKingdomId": ["context_holding_geographic_scope.kingdom_geography_id"],
+      "/holdings/[]/geographicScope/guRef": ["context_holding_geographic_scope.gu_ref"],
+      "/holdings/[]/geometrySource": ["context_holding.geometry_source"],
+      "/holdings/[]/holderPersonId": ["context_holding.holder_person_id"],
+      "/holdings/[]/id": ["context_holding.holding_id"],
+      "/holdings/[]/kind": ["context_holding.kind"],
+      "/holdings/[]/liegeRelationshipKind": ["context_holding.liege_relationship_kind"],
+      "/holdings/[]/name/en": ["context_holding.name_en"],
+      "/holdings/[]/name/ko": ["context_holding.name_ko"],
+      "/holdings/[]/parentGeography": ["context_holding.parent_geography"],
+      "/holdings/[]/powers/[]": ["context_holding_power.power"],
+      "/holdings/[]/stateId": ["context_holding.polity_id"],
+      "/holdings/[]/territorialScale": ["context_holding.territorial_scale"],
+      "/holdings/[]/titleId": ["context_holding.title_id"],
+      "/holdings/[]/wholeSeoulControl": ["context_holding.whole_seoul_control"],
+      "/openingDispositions/[]/approvalRef": ["context_opening_disposition.approval_ref"],
+      "/openingDispositions/[]/personId": ["context_opening_disposition.person_id"],
+      "/openingDispositions/[]/status": ["context_opening_disposition.status"],
+      "/polities/[]/authority/kind": ["context_polity.authority_kind"],
+      "/polities/[]/authority/name": ["context_polity.authority_name"],
+      "/polities/[]/directOwnership": ["context_polity.direct_ownership"],
+      "/polities/[]/formalTitle": ["context_polity.formal_title"],
+      "/polities/[]/formalTitleRank": ["context_polity.formal_title_rank"],
+      "/polities/[]/id": ["context_polity.polity_id"],
+      "/polities/[]/name/en": ["context_polity.name_en"],
+      "/polities/[]/name/ko": ["context_polity.name_ko"],
+      "/polities/[]/office": ["context_polity.office"],
+      "/polities/[]/politicalTitleId": ["context_polity.political_title_id"],
+      "/polities/[]/sovereignPersonId": ["context_polity.sovereign_person_id"],
+      "/polities/[]/territorialScale": ["context_polity.territorial_scale"],
+      "/holdings/[]/adminRefs/[]/id": ["context_holding_admin_ref.admin_id"],
+      "/holdings/[]/adminRefs/[]/name": ["context_holding_admin_ref.admin_name"],
+      "/holdings/[]/facilityRef/layerId": ["context_holding_reference.reference_id"],
+      "/holdings/[]/facilityRef/layerName": ["context_holding_reference.reference_name"],
+      "/holdings/[]/facilityRef/siteAnchor": ["context_holding_reference.reference_anchor"],
+      "/holdings/[]/facilityRef/siteSourcePath": ["context_holding_reference.site_source_path"],
+      "/holdings/[]/facilityRef/sourcePath": ["context_holding_reference.reference_source_path"],
+      "/holdings/[]/facilityRef/stationId": ["context_holding_reference.station_id"],
+      "/holdings/[]/facilityRef/stationIdentity/district": ["context_holding_reference.station_district"],
+      "/holdings/[]/facilityRef/stationIdentity/lat": ["context_holding_reference.station_lat"],
+      "/holdings/[]/facilityRef/stationIdentity/lon": ["context_holding_reference.station_lon"],
+      "/holdings/[]/facilityRef/stationName": ["context_holding_reference.station_name"],
+      "/holdings/[]/landmarkRef/landmarkId": ["context_holding_reference.reference_id"],
+      "/holdings/[]/landmarkRef/sourcePath": ["context_holding_reference.reference_source_path"],
+      "/holdings/[]/stationRef/stationId": ["context_holding_reference.station_id"],
+      "/holdings/[]/stationRef/stationName": ["context_holding_reference.station_name"],
+      "/openingYear": ["context_holding.opening_year"],
+      "/retinueGroups/[]/count": ["context_retinue_group.person_count"],
+      "/retinueGroups/[]/courtId": ["context_retinue_group.court_id"],
+      "/retinueGroups/[]/duties/[]": ["context_retinue_duty.duty"],
+      "/retinueGroups/[]/formalTitle": ["context_retinue_group.formal_title"],
+      "/retinueGroups/[]/id": ["context_retinue_group.retinue_group_id"],
+      "/retinueGroups/[]/liegePersonId": ["context_retinue_group.liege_person_id"],
+      "/retinueGroups/[]/name/en": ["context_retinue_group.name_en"],
+      "/retinueGroups/[]/name/ko": ["context_retinue_group.name_ko"],
+      "/retinueGroups/[]/personhoodReview": ["context_retinue_group.personhood_review"],
+      "/retinueGroups/[]/technicalLimits/[]": ["context_retinue_technical_limit.technical_limit"],
+      "/schema": ["context_holding.source_schema"]
+    },
+    leafExclusions: {
+      "/holdings/[]/adminRefs/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증",
+      "/retinueGroups/[]/holdingIds/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증"
+    },
+  },
+  "lore/relations/opening-feudal-allocation.json": {
+    leafTargets: {
+      "/politicalIdentities/[]/personalLieges/[]/holdingId": ["context_political_identity_liege.historical_holding_id"],
+      "/politicalIdentities/[]/personalLieges/[]/directLiegePersonId": ["context_political_identity_liege.liege_person_id"],
+      "/existingTitleBindings/[]/basis": ["context_feudal_binding.basis"],
+      "/existingTitleBindings/[]/holdingId": ["context_feudal_binding.holding_id"],
+      "/existingTitleBindings/[]/liegeRelationshipKind": ["context_feudal_binding.liege_relationship_kind"],
+      "/existingTitleBindings/[]/titleId": ["context_feudal_binding.title_id"],
+      "/grants/[]/adminRefs/[]/id": ["context_feudal_grant_admin.admin_unit_id"],
+      "/grants/[]/adminRefs/[]/name": ["context_feudal_grant_admin.admin_unit_name"],
+      "/grants/[]/directLiegePersonId": ["context_feudal_grant.liege_person_id"],
+      "/grants/[]/formalTitleRank": ["context_feudal_grant.formal_title_rank"],
+      "/grants/[]/geometrySource": ["context_feudal_grant.geometry_source"],
+      "/grants/[]/holderPersonId": ["context_feudal_grant.holder_person_id"],
+      "/grants/[]/id": ["context_feudal_grant.grant_id"],
+      "/grants/[]/name/ko": ["context_feudal_grant.name_ko"],
+      "/grants/[]/stateId": ["context_feudal_grant.polity_id"],
+      "/grants/[]/territorialScale": ["context_feudal_grant.territorial_scale"],
+      "/grants/[]/titleId": ["context_feudal_grant.title_id"],
+      "/politicalIdentities/[]/directOwnership": ["context_political_identity.direct_ownership"],
+      "/politicalIdentities/[]/holderPersonId": ["context_political_identity.holder_person_id"],
+      "/politicalIdentities/[]/id": ["context_political_identity.identity_id"],
+      "/politicalIdentities/[]/kind": ["context_political_identity.kind"],
+      "/politicalIdentities/[]/politicalParentTitleId": ["context_political_identity.political_parent_title_id"],
+      "/politicalIdentities/[]/rank": ["context_political_identity.rank"],
+      "/politicalIdentities/[]/stateId": ["context_political_identity.polity_id"],
+      "/titles/[]/basis": ["context_feudal_title.basis"],
+      "/titles/[]/directOwnership": ["context_feudal_title.direct_ownership"],
+      "/titles/[]/geographicParentTitleId": ["context_feudal_title.geographic_parent_title_id"],
+      "/titles/[]/geographicTitleId": ["context_feudal_title.geographic_title_id"],
+      "/titles/[]/holderPersonId": ["context_feudal_title.holder_person_id"],
+      "/titles/[]/id": ["context_feudal_title.title_id"],
+      "/titles/[]/jurisdictionRefs/[]": ["context_feudal_jurisdiction.admin_unit_id"],
+      "/titles/[]/kind": ["context_feudal_title.kind"],
+      "/titles/[]/name": ["context_feudal_title.name"],
+      "/titles/[]/parentTitleId": ["context_feudal_title.parent_title_id"],
+      "/titles/[]/personalLiegePersonId": ["context_feudal_title.personal_liege_person_id"],
+      "/titles/[]/politicalParentTitleId": ["context_feudal_title.political_parent_title_id"],
+      "/titles/[]/rank": ["context_feudal_title.rank"],
+      "/titles/[]/stateId": ["context_feudal_title.polity_id"]
+    },
+    leafExclusions: {
+      "/grants/[]/componentRefs/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증",
+      "/openingYear": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/politicalIdentities/[]/personalLieges/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증",
+      "/schema": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님"
+    },
+  },
+  "lore/regions/outside-control-2126.json": {
+    leafTargets: {
+
+    },
+    leafExclusions: {
+      "/assignments/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증",
+      "/schema": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님"
+    },
+  },
+  "lore/relations/opening-office-appointments.json": {
+    leafTargets: {
+      "/appointments/[]/current/commonTier": ["context_office_appointment.common_tier"],
+      "/appointments/[]/current/evidence/[]/jsonPointer": ["context_office_evidence.reference_pointer"],
+      "/appointments/[]/current/evidence/[]/kind": ["context_office_evidence.evidence_kind"],
+      "/appointments/[]/current/evidence/[]/path": ["context_office_evidence.reference_path"],
+      "/appointments/[]/current/position": ["context_office_appointment.position_ko","context_office_appointment.position_en"],
+      "/appointments/[]/current/position/en": ["context_office_appointment.position_en"],
+      "/appointments/[]/current/position/ko": ["context_office_appointment.position_ko"],
+      "/appointments/[]/current/rank": ["context_office_appointment.rank_ko","context_office_appointment.rank_en"],
+      "/appointments/[]/current/rank/en": ["context_office_appointment.rank_en"],
+      "/appointments/[]/current/rank/ko": ["context_office_appointment.rank_ko"],
+      "/appointments/[]/current/status": ["context_office_appointment.status"],
+      "/appointments/[]/history/approvalRef": ["context_office_history.approval_ref"],
+      "/appointments/[]/history/commonTier": ["context_office_history.common_tier"],
+      "/appointments/[]/history/personId": ["context_office_history.person_id"],
+      "/appointments/[]/history/position/en": ["context_office_history.position_en"],
+      "/appointments/[]/history/position/ko": ["context_office_history.position_ko"],
+      "/appointments/[]/history/rank/en": ["context_office_history.rank_en"],
+      "/appointments/[]/history/rank/ko": ["context_office_history.rank_ko"],
+      "/appointments/[]/history/stateId": ["context_office_history.polity_id"],
+      "/appointments/[]/personId": ["context_office_appointment.person_id"],
+      "/appointments/[]/stateId": ["context_office_appointment.polity_id"],
+      "/openingYear": ["context_office_appointment.opening_year"],
+      "/schema": ["context_office_appointment.source_schema"]
+    },
+    leafExclusions: {
+      "/contract/commonTier": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/contract/current": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/contract/history": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/contract/rights": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님"
+    },
+  },
+  "lore/regions/seoul-electoral-titles.json": {
+    leafTargets: {
+
+    },
+    leafExclusions: {
+      "/countySlots/[]/countyTitleId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/currentCorrespondenceSlotIds/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/dongId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/electoralDongId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/fragmentId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/geometryRefs/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/geometryVerified": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/historicalHoldingRefs/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증",
+      "/countySlots/[]/slots/[]/holderPersonId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/holdingRefs/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증",
+      "/countySlots/[]/slots/[]/jurisdictionGuRef": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/name": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/slotId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/sourceEdition": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/sourcePointer": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/sourceRefs/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/countySlots/[]/slots/[]/status": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/countyTitleId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/candidateGeometryRefs/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/dongId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/electoralDongId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/fragmentId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/geometryRefs/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증",
+      "/currentCorrespondenceSlots/[]/slots/[]/geometryVerified": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/historicalHoldingRefs/[]/id": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/historicalHoldingRefs/[]/jsonPointer": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/historicalHoldingRefs/[]/recordSha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/historicalHoldingRefs/[]/scopeKind": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/historicalHoldingRefs/[]/sourcePath": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/historicalHoldingRefs/[]/sourceSha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/historicalHoldingRefs/[]/status": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/holderPersonId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/holdingRefs/[]:empty": "빈 컨테이너: 정규화 자식 행 0건이며 형상 계약으로 비어 있음을 검증",
+      "/currentCorrespondenceSlots/[]/slots/[]/jurisdictionGuRef": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/name": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/slotId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/sourceEdition": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/sourcePointer": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/sourceRefs/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/currentCorrespondenceSlots/[]/slots/[]/status": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/currentCorrespondence/administrativeCandidateDate": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/currentCorrespondence/codeAndNameSourceRef": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/currentCorrespondence/geometryVerified": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/currentCorrespondence/id": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/currentCorrespondence/officialMembershipCheckedAt": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/currentCorrespondence/sourceRefs/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/currentLaw/appendixAmendedDate": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/currentLaw/appendixFileSeq": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/currentLaw/effectiveDate": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/currentLaw/id": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/currentLaw/lawNumber": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/currentLaw/promulgatedDate": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/currentLaw/sourceRefs/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/electoral/electionDate": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/electoral/id": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/electoral/seoulCompositionMatchesCurrentAppendix": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/editions/electoral/sourceRefs/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/evidence/census/path": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/evidence/census/sha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/evidence/membership/path": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/evidence/membership/sha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/evidence/rights/path": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/evidence/rights/sha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/evidence/spatial/path": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/evidence/spatial/sha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/kingdomStatus": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/mapMinimumRank": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/mapTitleIds/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/officialExtentStatus": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/schema": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/sourceRecords/[]/id": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/sourceRecords/[]/role": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/sourceRecords/[]/sha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/spatialSource/archiveSha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/spatialSource/authority": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/spatialSource/baseDate": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/spatialSource/current2026Geometry": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/spatialSource/edition": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/spatialSource/geometry/crs": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/spatialSource/geometry/features": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/spatialSource/geometry/path": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/spatialSource/geometry/sha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/spatialSource/legalSurveyCertification": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/status": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/approval/path": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/approval/sha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/batchId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/beforeArchivePath": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/crossDistrictParentPolicy": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/partition/[]/countyTitleIds/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/partition/[]/jurisdictionRefs/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/partition/[]/name": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/partition/[]/proposalId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/partition/[]/titleId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/partitionSha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/previousSha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/proposal/path": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/proposal/sha256": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/successor/schema": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/titles/[]/countyTitleIds/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/titles/[]/feudalParentStatus": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/titles/[]/feudalParentTitleId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/titles/[]/geographicParentException": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/titles/[]/holderPersonId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/titles/[]/jurisdictionRefs/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/titles/[]/name": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/titles/[]/rank": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/titles/[]/sourcePointer": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/titles/[]/sourceRefs/[]": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님",
+      "/titles/[]/titleId": "검토용 지리·문서 규격·설명 계약: 독립 인물 권리 정규화 대상 아님"
+    },
+  }
+});
+
 export const COVERAGE_CONTRACT = Object.freeze(Object.fromEntries(
-  Object.entries(SHAPES).map(([path, [leafCount, leafSha256]]) => [path, Object.freeze({ leafCount, leafSha256, ...FAMILY_RULES[path] })]),
+  Object.entries({ ...SHAPES, ...RIGHTS_SHAPES }).map(([path, [leafCount, leafSha256]]) => {
+    const rules = RIGHTS_RULES[path];
+    const mappings = rules ? Object.entries(rules.leafTargets).flatMap(([leaf, targets]) => targets.map((target) => {
+      const [table, column] = target.split('.');
+      return person(table, column, [leaf.split('/')[1]]);
+    })) : FAMILY_RULES[path].mappings;
+    return [path, Object.freeze({ leafCount, leafSha256, ...(rules ?? FAMILY_RULES[path]), mappings,
+      exclusions: rules ? {} : { ...FAMILY_RULES[path].exclusions,
+        ...(path === pool('gurps-cast') ? { provenance: '역사 장부의 출처·검토 설명; 현행 수치나 권리로 승격하지 않음' } : {}),
+        ...(path === pool('household-humanoid-policy') ? { politicalPositionContext: '정치 정체성·권리 한계 설명 및 인증 참조; 새 가구·영토·개인 권리 projection 없음' } : {}) } })];
+  }),
 ));
 
 function leafPatterns(value) {
@@ -326,6 +901,8 @@ export function assertDocumentShape(path, document) {
   const mapped = new Set(contract.mappings.flatMap((entry) => entry.roots));
   const excluded = contract.exclusions;
   for (const root of roots) {
+    if (contract.leafExclusions && paths.filter((leaf) => leaf.split('/')[1] === root)
+      .every((leaf) => Object.hasOwn(contract.leafTargets, leaf) || Object.hasOwn(contract.leafExclusions, leaf))) continue;
     if (!mapped.has(root) && !Object.hasOwn(excluded, root) && !Object.hasOwn(excluded, '*')) fail('E_COVERAGE_UNDECLARED_FAMILY', `${path}#/${root}`);
   }
   return Object.freeze({ path, leafPatterns: paths.length, mappedFamilies: mapped.size, excludedFamilies: roots.length - mapped.size });
@@ -400,9 +977,9 @@ export function fieldCoverageManifest(path, document) {
   const contract = COVERAGE_CONTRACT[path];
   return Object.freeze(leafPatterns(document).map((leafPattern) => {
     const root = leafPattern.split('/')[1];
-    const targets = nestedTargets(path, leafPattern) ?? contract.mappings.filter((mapping) => mapping.roots.includes(root))
+    const targets = contract.leafTargets ? contract.leafTargets[leafPattern] ?? [] : nestedTargets(path, leafPattern) ?? contract.mappings.filter((mapping) => mapping.roots.includes(root))
       .map((mapping) => `${mapping.table}.${mapping.column}`);
-    const exclusion = targets.length ? null : contract.exclusions[root] ?? contract.exclusions['*'];
+    const exclusion = targets.length ? null : contract.leafExclusions?.[leafPattern] ?? contract.exclusions[root] ?? contract.exclusions['*'];
     if (!targets.length && !exclusion) fail('E_COVERAGE_UNDECLARED_FAMILY', `${path}#${leafPattern}`);
     return Object.freeze({ logical_path: path, leaf_pattern: leafPattern,
       normalized_targets: Object.freeze(targets), exclusion_reason: exclusion });
@@ -459,7 +1036,10 @@ export function auditCoverageContract({ bundle, tables }) {
       const rows = tables[table];
       if (!Array.isArray(rows)) { missingEvidence.push(`${file.logical_path}: ${table} (table missing)`); continue; }
       const sourceRows = rows.filter((row) => !Object.hasOwn(row, 'source_id') || row.source_id === file.source_id);
-      if (!sourceRows.some((row) => row[column] !== null && row[column] !== undefined)) missingEvidence.push(`${file.logical_path}: ${target}`);
+      // Reviewed leaf contracts include authored NULL outcomes. A real row with
+      // the column is evidence; undefined/missing columns are never evidence.
+      if (!sourceRows.some((row) => contract.leafTargets ? Object.hasOwn(row, column) && row[column] !== undefined
+        : row[column] !== null && row[column] !== undefined)) missingEvidence.push(`${file.logical_path}: ${target}`);
     }
     sources.push(report);
   }

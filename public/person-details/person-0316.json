@@ -444,47 +444,23 @@
             "name": "범온결",
             "url": "/people/person-0316",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "외곽 관문 통과 시각·들것 수 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/215/items/0/ko",
-                  "quote": "생업: 외곽 관문 통과 시각·들것 수 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "통과 시각과 들것 수를 같은 원장에 적고, 암사 호위단의 검색은 의료조 날인 없이 증언에서 뺀다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -492,73 +468,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/215/items/0/ko",
-                    "quote": "생업: 외곽 관문 통과 시각·들것 수 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "통과 시각과 들것 수를 같은 원장에 적고, 암사 호위단의 검색은 의료조 날인 없이 증언에서 뺀다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "사릉",
-              "type": "초소 영지",
-              "station": "사릉",
-              "state": "S12",
-              "settlement": {
-                "name": "사릉 정착지",
-                "type": "정착지",
-                "description": "사릉 일대 고정 거점"
-              },
-              "note": "S12 사릉 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -582,47 +513,23 @@
             "name": "범온결",
             "url": "/people/person-0316",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "외곽 관문 통과 시각·들것 수 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/215/items/0/ko",
-                  "quote": "생업: 외곽 관문 통과 시각·들것 수 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "통과 시각과 들것 수를 같은 원장에 적고, 암사 호위단의 검색은 의료조 날인 없이 증언에서 뺀다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -630,73 +537,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/215/items/0/ko",
-                    "quote": "생업: 외곽 관문 통과 시각·들것 수 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "통과 시각과 들것 수를 같은 원장에 적고, 암사 호위단의 검색은 의료조 날인 없이 증언에서 뺀다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "사릉",
-              "type": "초소 영지",
-              "station": "사릉",
-              "state": "S12",
-              "settlement": {
-                "name": "사릉 정착지",
-                "type": "정착지",
-                "description": "사릉 일대 고정 거점"
-              },
-              "note": "S12 사릉 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -717,18 +579,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "사릉",
-    "type": "초소 영지",
-    "station": "사릉",
-    "state": "S12",
-    "settlement": {
-      "name": "사릉 정착지",
-      "type": "정착지",
-      "description": "사릉 일대 고정 거점"
-    },
-    "note": "S12 사릉 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -769,15 +619,15 @@
     "욕망": "갈망 15 | 독점 −30 | 위험 10 | 과시 −30 | 지속 −5 | 지향 양성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 북동 외곽 관문 통행 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2069-09-07에 태어났다. 대합실 당직에서 자랐다. 2126년 개막에는 북동 외곽 관문 통행 증인 당직을 맡으며, 직위 인수 기록에는 교대 무단 결근 대체 당직으로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 범온결의 외곽 관문 통과 시각·들것 수 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
     "관직": "품계 호송원. 직함은 북동 외곽 관문 통행 증인. 통과 시각과 들것 수를 같은 원장에 적고, 암사 호위단의 검색은 의료조 날인 없이 증언에서 뺀다.",
     "일화": "가을의 북한산보국문 행렬이 신내 승강장에 쌓이자 범온결은 통행 인원을 세며 강제 명부 창구가 열리는 것을 보았다.",
     "관계": "전미리의 환자 줄을 증인석에서 받치고, 백온의 남하 가족 명부를 대조한다. 감모의 당직실 쪽지가 사라지자 증언을 멈췄다.",
-    "야망": "남하 행렬의 통과 인원을 공개 증언으로 남겨 강제 복무 재등록이 승강장을 삼키지 못하게 한다.",
+    "야망": "남하 행렬의 통과 인원을 공개 증언으로 남겨 강제 복무 재등록이 승강장을 삼키지 못하게 하려 한다.",
     "공포": "자신이 센 가족 수가 동원 명부 칸의 숫자가 되는 것.",
     "개입": "증인 원장을 대표 회의로 가져가거나, 숫자를 군호에 넘기려는 손을 막을 수 있다."
   },
-  "biography": "줄의 얼굴을 세고 국적 표는 나중에 본다. 통행증을 군호로 바꾸라는 속삭임을 증인석에서 잘라 낸다.\n\n- 생업: 외곽 관문 통과 시각·들것 수 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 북동 외곽 관문 통행 증인\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 북동 외곽 관문 통행 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 호송원. 직함은 북동 외곽 관문 통행 증인. 통과 시각과 들것 수를 같은 원장에 적고, 암사 호위단의 검색은 의료조 날인 없이 증언에서 뺀다.\n\n**일화.** 가을의 북한산보국문 행렬이 신내 승강장에 쌓이자 범온결은 통행 인원을 세며 강제 명부 창구가 열리는 것을 보았다.\n\n**관계.** 전미리의 환자 줄을 증인석에서 받치고, 백온의 남하 가족 명부를 대조한다. 감모의 당직실 쪽지가 사라지자 증언을 멈췄다.\n\n**야망.** 남하 행렬의 통과 인원을 공개 증언으로 남겨 강제 복무 재등록이 승강장을 삼키지 못하게 한다.\n\n**공포.** 자신이 센 가족 수가 동원 명부 칸의 숫자가 되는 것.\n\n**개입.** 증인 원장을 대표 회의로 가져가거나, 숫자를 군호에 넘기려는 손을 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 45 | 무력 −20 | 물질 −5 | 공동 10 | 원칙 10 | 공개 20 | 자격 30 | 분산 50 | 변혁 0\n- 욕망: 갈망 15 | 독점 −30 | 위험 10 | 과시 −30 | 지속 −5 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "2069-09-07생인 범온결은 줄의 얼굴을 세고 국적 표는 나중에 본다. 통행증을 군호로 바꾸라는 속삭임을 증인석에서 잘라 낸다.\n\n- 생업: 외곽 관문 통과 시각·들것 수 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 북동 외곽 관문 통행 증인\n**생애.** 2069-09-07에 태어났다. 대합실 당직에서 자랐다. 2126년 개막에는 북동 외곽 관문 통행 증인 당직을 맡으며, 직위 인수 기록에는 교대 무단 결근 대체 당직으로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 범온결의 외곽 관문 통과 시각·들것 수 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 북동 외곽 관문 통행 증인. 통과 시각과 들것 수를 같은 원장에 적고, 암사 호위단의 검색은 의료조 날인 없이 증언에서 뺀다.\n\n**일화.** 가을의 북한산보국문 행렬이 신내 승강장에 쌓이자 범온결은 통행 인원을 세며 강제 명부 창구가 열리는 것을 보았다.\n\n**관계.** 전미리의 환자 줄을 증인석에서 받치고, 백온의 남하 가족 명부를 대조한다. 감모의 당직실 쪽지가 사라지자 증언을 멈췄다.\n\n**야망.** 남하 행렬의 통과 인원을 공개 증언으로 남겨 강제 복무 재등록이 승강장을 삼키지 못하게 하려 한다.\n\n**공포.** 자신이 센 가족 수가 동원 명부 칸의 숫자가 되는 것.\n\n**개입.** 증인 원장을 대표 회의로 가져가거나, 숫자를 군호에 넘기려는 손을 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 45 | 무력 −20 | 물질 −5 | 공동 10 | 원칙 10 | 공개 20 | 자격 30 | 분산 50 | 변혁 0\n- 욕망: 갈망 15 | 독점 −30 | 위험 10 | 과시 −30 | 지속 −5 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-12"
   ],

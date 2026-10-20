@@ -1,108 +1,110 @@
 import assert from 'node:assert/strict'
-import { readFileSync, readdirSync } from 'node:fs'
+import { createHash } from 'node:crypto'
+import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
-import { adminCatalog, cityHierarchy, buildAdminTerritorialScale, deriveParentIds, validateAdminTerritorialScale } from './admin-territorial-scale.mjs'
+import { buildAdminTerritorialScale, validateAdminTerritorialScale } from './admin-territorial-scale.mjs'
 
-const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
-const units = read('../public/outside-admin-units.json').units
-const regions = read('../public/opening-territories.json').regions
-const scale = read('../public/territorial-scale.json')
-const build = () => buildAdminTerritorialScale(units, regions, scale)
-const validate = output => validateAdminTerritorialScale(output, units, regions, scale)
+const geographyBytes = readFileSync(new URL('../lore/regions/seoul-electoral-titles.json', import.meta.url))
+const territorialScale = JSON.parse(readFileSync(new URL('../lore/offices/Offices-and-Ranks.json', import.meta.url))).data.territorialScale
+const inputs = { geographyBytes, territorialScale }
+const build = () => buildAdminTerritorialScale(inputs)
+const mutate = change => {
+  const geography = JSON.parse(geographyBytes)
+  change(geography)
+  return { geographyBytes: Buffer.from(JSON.stringify(geography)), territorialScale: {
+    ...territorialScale, geographicSource: { ...territorialScale.geographicSource,
+      sha256: 'pending' } } }
+}
+const withHash = input => {
+  input.territorialScale.geographicSource.sha256 = createHash('sha256').update(input.geographyBytes).digest('hex')
+  return input
+}
 
-test('projects independent confirmed scales from exact catalog parents without occupancy grants', () => {
-  const result = build()
-  const rows = new Map(result.rows.map(row => [row.adminId, row]))
-  validate(read('../public/admin-territorial-scale.json'))
-  assert.equal(rows.size, result.rows.length)
-  assert.deepEqual(deriveParentIds('1111051500'), { provinceId: '11', catalogParentId: '11110' })
-  assert.equal(rows.get('1111051500').parentAdminId, 'gu:11110')
-  for (const id of ['11', '28', '30', '36', '41', '43', '44', '51']) {
-    assert.equal(rows.get(id).comparisonScale, 'kingdom')
-    assert.equal(rows.get(id).status, 'projected')
-  }
-  assert.notEqual(rows.get('43').adminId, rows.get('44').adminId)
-  for (const entry of adminCatalog.units) {
-    const row = rows.get(entry.adminId)
-    assert.ok(row)
-    if (['11', '28', '30', '36'].includes(entry.provinceId)) {
-      assert.equal(row.status, 'projected')
-      assert.equal(row.comparisonScale, 'barony')
-      assert.equal(row.componentOnly, false)
-      assert.equal(row.parentAdminId, entry.provinceId === '36' ? '36' : entry.parentName.endsWith('구') ? 'gu:' + entry.parentId : entry.parentId)
-    } else if (['41', '43', '44', '51'].includes(entry.provinceId)) {
-      assert.equal(row.comparisonScale, entry.parentName.endsWith('구') ? 'component' : 'barony')
-      assert.equal(row.componentOnly, entry.parentName.endsWith('구'))
-      assert.equal(row.status, 'projected')
-    } else assert.equal(row.status, 'HOLD')
-  }
-  const contentDir = new URL('../lore/regions/content/', import.meta.url)
-  let count = 0
-  for (const file of readdirSync(contentDir).filter(name => name.endsWith('.json'))) {
-    const district = JSON.parse(readFileSync(new URL(file, contentDir), 'utf8'))
-    for (const region of district.regions) {
-      assert.equal(rows.get(region.region_id.replace('region:', '')).parentAdminId, district.district_id)
-      count++
-    }
-  }
-  assert.equal(count, 427)
-  assert.equal(cityHierarchy.rows.length, 30)
-  assert.equal(new Set(cityHierarchy.rows.map(row => row.parentCityId)).size, 10)
-  let generalDistrictLeaves = 0
-  for (const binding of cityHierarchy.rows) {
-    const district = rows.get('gu:' + binding.districtId)
-    const city = rows.get(binding.parentCityId)
-    assert.equal(district.parentAdminId, city.adminId)
-    assert.equal(district.comparisonScale, 'barony')
-    assert.equal(city.comparisonScale, 'duchy')
-    assert.equal(city.status, 'projected')
-    assert.equal(binding.moisIdentity.effectiveDate, '2026-07-01')
-    assert.equal(binding.moisIdentity.citySourceRow.code, binding.moisIdentity.cityCode10)
-    assert.deepEqual(binding.affectedLeafIds.slice().sort(), adminCatalog.units
-      .filter(row => row.parentId === binding.districtId).map(row => row.adminId).sort())
-    for (const id of binding.affectedLeafIds) {
-      assert.equal(rows.get(id).parentAdminId, district.adminId)
-      assert.equal(rows.get(id).status, 'projected')
-      generalDistrictLeaves++
-    }
-  }
-  assert.equal(generalDistrictLeaves, 373)
-  assert.equal(adminCatalog.units.filter(row => row.provinceId !== '28').length, 1684)
-  assert.equal(adminCatalog.units.filter(row => row.provinceId === '28').length, 158)
-  for (const row of result.rows) {
-    if (row.parentAdminId !== null) assert.ok(rows.has(row.parentAdminId))
-  }
-  assert.equal(result.held.length, 0)
-  assert.equal(result.rows.some(row => 'holderPersonId' in row || 'owner' in row || 'titleHolder' in row), false)
+test('projects authenticated Seoul titles and independent slot editions without rights', () => {
+  const output = build()
+  validateAdminTerritorialScale(output, inputs)
+  assert.equal(output.schema, 'admin-territorial-scale.v2')
+  assert.equal(output.titles.length, 80)
+  for (const [rank, count] of Object.entries({ empire: 1, kingdom: 6, duchy: 25, county: 48 }))
+    assert.equal(output.titles.filter(title => title.rank === rank).length, count)
+  assert.equal(output.slotEditions.dated.rows.length, 426)
+  assert.equal(output.slotEditions.currentCorrespondence.rows.length, 427)
+  assert.equal(output.slotEditions.currentCorrespondence.rows.every(row => !row.geometryVerified), true)
+  assert.equal(output.titles.some(row => 'holderPersonId' in row || 'owner' in row), false)
+  assert.equal(output.slotEditions.dated.rows.some(row => 'historicalHoldingRefs' in row), false)
+  const exception = output.titles.find(title => title.geographicParentException)
+  assert.equal(exception.geographicParentTitleId, 'geography:empire:seoul')
+  assert.ok(output.titles.find(title => title.titleId === 'geography:kingdom:seoul:01').mapCountyTitleIds.includes(exception.titleId))
+  const yongsin = output.slotEditions.dated.rows.find(row => row.dongId === 'electoral-dong:22:11230:용신동')
+  assert.ok(yongsin)
+  assert.equal(yongsin.currentCorrespondenceSlotIds.length, 2)
 })
 
-test('wrong Seoul district scale is rejected', () => {
-  const result = build()
-  result.rows.find(row => row.adminId === 'gu:11110').comparisonScale = 'barony'
-  assert.throws(() => validate(result), /E_ADMIN_SCALE:gu:11110/)
+test('rejects legacy signatures, descriptors and unauthenticated geography', () => {
+  assert.throws(() => buildAdminTerritorialScale([], [], territorialScale), /E_GEOGRAPHY_BYTES/)
+  assert.throws(() => buildAdminTerritorialScale({ geographyBytes, territorialScale: { ...structuredClone(territorialScale), schema: 'territorial-scale.v1' } }), /E_SCALE_SCHEMA/)
+  assert.throws(() => buildAdminTerritorialScale({ geographyBytes: Buffer.from('{}'), territorialScale }), /E_GEOGRAPHY_HASH/)
+  const wrong = structuredClone(territorialScale)
+  wrong.levels.kingdom.partitionSha256 = '0'.repeat(64)
+  assert.throws(() => buildAdminTerritorialScale({ geographyBytes, territorialScale: wrong }), /E_KINGDOM_APPROVAL/)
 })
 
-test('detached confirmed province child is rejected', () => {
-  const result = build()
-  const city = result.rows.find(row => row.parentAdminId === '43' && row.type === 'county')
-  assert.ok(city)
-  city.parentAdminId = null
-  assert.throws(() => validate(result), /E_ADMIN_PARENT/)
+test('builder and validator reject unknown descriptor fields and political geographic parents', () => {
+  const output = build()
+  for (const [change, error] of [
+    [scale => { scale.regularRegions = { rank: 'kingdom' } }, /E_SCALE_FIELDS/],
+    [scale => { scale.geographicSource.unapproved = true }, /E_GEOGRAPHY_SOURCE_FIELDS/],
+    [scale => { scale.levels.county.unapproved = true }, /E_LEVEL_FIELDS:county/],
+    [scale => { scale.slotEditions.dated.unapproved = true }, /E_SLOT_EDITION_FIELDS:dated/],
+    [scale => { scale.geographicParent.crossDistrictExceptions[0].unapproved = true }, /E_PARENT_EXCEPTIONS/],
+    [scale => { scale.geographicParent.meaning = 'political' }, /E_PARENT_MEANING/],
+  ]) {
+    const wrong = structuredClone(territorialScale)
+    change(wrong)
+    assert.throws(() => buildAdminTerritorialScale({ geographyBytes, territorialScale: wrong }), error)
+    assert.throws(() => validateAdminTerritorialScale(output, { geographyBytes, territorialScale: wrong }), error)
+  }
 })
 
-test('collapsed Chungcheong kingdom IDs and duplicate IDs are rejected', () => {
-  const result = build()
-  result.rows = result.rows.filter(row => row.adminId !== '44')
-  assert.throws(() => validate(result), /E_ADMIN_ID_SET/)
-  const duplicate = build()
-  duplicate.rows.find(row => row.adminId === '44').adminId = '43'
-  assert.throws(() => validate(duplicate), /E_ADMIN_DUPLICATE_OUTPUT_ID/)
+test('rejects title identity, parent, cycle, kingdom membership and map rank corruption', () => {
+  for (const change of [
+    g => g.titles.pop(),
+    g => { g.titles[1].titleId = g.titles[0].titleId },
+    g => { g.titles[1].feudalParentTitleId = 'geography:outside' },
+    g => { g.titles[1].feudalParentTitleId = g.titles[1].titleId },
+    g => { g.titles.find(t => t.rank === 'county' && !t.geographicParentException).feudalParentTitleId = 'geography:kingdom:seoul:01' },
+    g => { g.titles.find(t => t.rank === 'kingdom').jurisdictionRefs[0] = 'outside' },
+    g => { g.mapMinimumRank = 'barony' },
+    g => { g.titles.push({ ...g.titles[0], titleId: 'geography:outside' }) },
+    g => { g.successor.partition[0].countyTitleIds.pop() },
+    g => { g.titles.find(t => t.geographicParentException).geographicParentException = undefined },
+  ]) assert.throws(() => buildAdminTerritorialScale(withHash(mutate(change))))
+  const wrong = structuredClone(territorialScale)
+  wrong.map.selectableRanks.unshift('barony')
+  assert.throws(() => buildAdminTerritorialScale({ geographyBytes, territorialScale: wrong }), /E_MAP_CONTRACT/)
 })
 
-test('invented IDs and identity substitutions cannot enter the catalog projection', () => {
-  assert.throws(() => deriveParentIds('1111099999'), /E_ADMIN_ID/)
-  assert.throws(() => buildAdminTerritorialScale([], [{ id: 'region:1111099999', name: '가상동', district: '가상구' }], scale), /E_ADMIN_ID/)
-  assert.throws(() => buildAdminTerritorialScale([{ ...units[0], id: '4128757001' }], [], scale), /E_ADMIN_ID/)
-  assert.throws(() => buildAdminTerritorialScale([{ ...units[0], province: '알수없는도' }], [], scale), /E_ADMIN_IDENTITY/)
-  assert.throws(() => buildAdminTerritorialScale([units[0], units[0]], [], scale), /E_ADMIN_DUPLICATE_SOURCE_ID/)
+test('rejects slot omissions, duplication, wrong edition, fragments, geometry and correspondence', () => {
+  for (const change of [
+    g => g.countySlots[0].slots.pop(),
+    g => g.currentCorrespondenceSlots[0].slots.pop(),
+    g => g.countySlots[0].slots[1].slotId = g.countySlots[0].slots[0].slotId,
+    g => { g.countySlots[0].slots[0].jurisdictionGuRef = '99999' },
+    g => { g.countySlots[0].slots[0].fragmentId = 'fabricated' },
+    g => { g.currentCorrespondenceSlots[0].slots[0].geometryVerified = true },
+    g => { const row = g.countySlots.flatMap(group => group.slots).find(slot => slot.currentCorrespondenceSlotIds.length === 2); row.currentCorrespondenceSlotIds.pop() },
+    g => { g.countySlots[0].slots[0].currentCorrespondenceSlotIds = ['slot:outside'] },
+  ]) assert.throws(() => buildAdminTerritorialScale(withHash(mutate(change))))
+})
+
+test('validator rejects private fields, altered parent and edition rows', () => {
+  const output = build()
+  output.titles[0].holderPersonId = 'invented'
+  assert.throws(() => validateAdminTerritorialScale(output, inputs), /E_SCALE_PROJECTION/)
+  const parent = build()
+  parent.titles[1].geographicParentTitleId = null
+  assert.throws(() => validateAdminTerritorialScale(parent, inputs), /E_SCALE_PROJECTION/)
+  const edition = build()
+  edition.slotEditions.dated.rows.push(edition.slotEditions.currentCorrespondence.rows[0])
+  assert.throws(() => validateAdminTerritorialScale(edition, inputs), /E_SCALE_PROJECTION/)
 })

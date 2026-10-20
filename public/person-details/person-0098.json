@@ -2,9 +2,9 @@
   "id": "person-0098",
   "name": "구도영",
   "title": "성수 패킹운송 물류상",
-  "position": "성수 패킹운송 물류상 · 양평군 영주",
+  "position": "성수 패킹운송 물류상",
   "characterId": "K097",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "패킹 수상 운송",
   "gender": "남성",
@@ -452,47 +452,23 @@
             "name": "구도영",
             "url": "/people/person-0098",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "패킹 수상 운송",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/137/items/1/ko",
-                  "quote": "생업: 패킹 수상 운송"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/138/text/ko",
-                    "quote": "끈 매듭과 나룻배 시각을 선창 칠판에 적고, 군수 상자는 민수 패킹이 같은 배에 한 줄 실린 뒤에만 태운다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -500,90 +476,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/138/text/ko",
-                    "quote": "끈 매듭과 나룻배 시각을 선창 칠판에 적고, 군수 상자는 민수 패킹이 같은 배에 한 줄 실린 뒤에만 태운다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Boating/TL? (Unpowered)",
                 "ko": "수상 운송",
-                "attr": "DX",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/137/items/1/ko",
-                    "quote": "생업: 패킹 수상 운송"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "운행 중단 역사",
-              "camp": {
-                "name": "구도영 폐역 야영지",
-                "type": "야영지",
-                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       },
@@ -606,47 +527,23 @@
             "name": "구도영",
             "url": "/people/person-0098",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "패킹 수상 운송",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/137/items/1/ko",
-                  "quote": "생업: 패킹 수상 운송"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/138/text/ko",
-                    "quote": "끈 매듭과 나룻배 시각을 선창 칠판에 적고, 군수 상자는 민수 패킹이 같은 배에 한 줄 실린 뒤에만 태운다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -654,192 +551,58 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/138/text/ko",
-                    "quote": "끈 매듭과 나룻배 시각을 선창 칠판에 적고, 군수 상자는 민수 패킹이 같은 배에 한 줄 실린 뒤에만 태운다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Boating/TL? (Unpowered)",
                 "ko": "수상 운송",
-                "attr": "DX",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/137/items/1/ko",
-                    "quote": "생업: 패킹 수상 운송"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "운행 중단 역사",
-              "camp": {
-                "name": "구도영 폐역 야영지",
-                "type": "야영지",
-                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-41830-S04",
-      "name": {
-        "ko": "양평군 공작령 직영지"
-      },
-      "holderPersonId": "K097",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4183025000",
-          "name": "경기도 양평군 양평읍"
-        },
-        {
-          "id": "4183031000",
-          "name": "경기도 양평군 강상면"
-        },
-        {
-          "id": "4183032000",
-          "name": "경기도 양평군 강하면"
-        },
-        {
-          "id": "4183033000",
-          "name": "경기도 양평군 양서면"
-        },
-        {
-          "id": "4183034000",
-          "name": "경기도 양평군 옥천면"
-        },
-        {
-          "id": "4183035000",
-          "name": "경기도 양평군 서종면"
-        },
-        {
-          "id": "4183036000",
-          "name": "경기도 양평군 단월면"
-        },
-        {
-          "id": "4183037000",
-          "name": "경기도 양평군 청운면"
-        },
-        {
-          "id": "4183038000",
-          "name": "경기도 양평군 양동면"
-        },
-        {
-          "id": "4183039500",
-          "name": "경기도 양평군 지평면"
-        },
-        {
-          "id": "4183040000",
-          "name": "경기도 양평군 용문면"
-        },
-        {
-          "id": "4183041000",
-          "name": "경기도 양평군 개군면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41830-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41830-S04",
-      "name": "양평군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K097",
-      "basis": "개막 행정 규모 그룹 41830(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S04",
-      "parentTitleId": "title:kingdom-s04",
-      "jurisdictionRefs": [
-        "4183025000",
-        "4183031000",
-        "4183032000",
-        "4183033000",
-        "4183034000",
-        "4183035000",
-        "4183036000",
-        "4183037000",
-        "4183038000",
-        "4183039500",
-        "4183040000",
-        "4183041000"
+      "politicalParentTitleId": "title:kingdom-s04",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-41830-S04",
+          "directLiegePersonId": "K423"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s04",
-        "name": "종교 연합 왕국",
-        "holderPersonId": "K423"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -854,7 +617,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -910,15 +672,15 @@
     "욕망": "갈망 25 | 독점 −5 | 위험 35 | 과시 10 | 지속 20 | 지향 유동 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 성수 패킹운송 물류상 자리는 저울 재점검 공개로 열렸다.",
+    "생애": "2126년 세대. 구도영은 노량진 선창에서 자랐다. 구도영은 저울 재점검 공개로 성수 패킹운송 물류상 자리를 맡았다.\n- 구도영의 성수 패킹운송 물류상 업무는 성수2가1동과 연결된다.",
     "관직": "품계 교사. 직함은 성수 패킹운송 물류상. 끈 매듭과 나룻배 시각을 선창 칠판에 적고, 군수 상자는 민수 패킹이 같은 배에 한 줄 실린 뒤에만 태운다.",
     "일화": "동부 교량 통행세가 가죽 상자에 붙자 구도영은 패킹 끈만 구의 쪽 나룻배로 돌리고 군화는 성수 선창에 쌓아 두었다.",
     "관계": "유하은의 가죽 마감 시각에 맞춰 상자를 싣는 계약이고, 한소미의 공정 분할에서 패킹 끈 색을 나눈다. 임채원의 방호 원단 상자와 선창을 다투면서도 필터 패킹은 같은 배에 싣는다.",
     "야망": "끈 색이 다른 상자를 한 배에 태워, 물과 나사가 선창을 서로 붙잡지 못하게 한다.",
-    "공포": "군화 상자만 나룻배에 오르고 민수 패킹이 성수 선창에서 썩는 것.",
+    "공포": "구도영은 군화 상자만 나룻배에 오르고 민수 패킹이 성수 선창에서 썩는 상황을 두려워한다.",
     "개입": "통행세 없는 우회 배를 열거나, 선창에 쌓인 군화의 발주 쪽지를 칠판에 붙일 수 있다."
   },
-  "biography": "상자 끈의 매듭이 공방마다 다르면 출처를 묻지 않고 되돌려 보낸다. 나룻배 시각을 속이는 운송을 재치로 포장해도 저울 앞에서는 웃지 않는다.\n\n- 소속: 명부교회\n- 생업: 패킹 수상 운송\n- 품계: 교사\n- 직함: 성수 패킹운송 물류상\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 성수 패킹운송 물류상 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 교사. 직함은 성수 패킹운송 물류상. 끈 매듭과 나룻배 시각을 선창 칠판에 적고, 군수 상자는 민수 패킹이 같은 배에 한 줄 실린 뒤에만 태운다.\n\n**일화.** 동부 교량 통행세가 가죽 상자에 붙자 구도영은 패킹 끈만 구의 쪽 나룻배로 돌리고 군화는 성수 선창에 쌓아 두었다.\n\n**관계.** 유하은의 가죽 마감 시각에 맞춰 상자를 싣는 계약이고, 한소미의 공정 분할에서 패킹 끈 색을 나눈다. 임채원의 방호 원단 상자와 선창을 다투면서도 필터 패킹은 같은 배에 싣는다.\n\n**야망.** 끈 색이 다른 상자를 한 배에 태워, 물과 나사가 선창을 서로 붙잡지 못하게 한다.\n\n**공포.** 군화 상자만 나룻배에 오르고 민수 패킹이 성수 선창에서 썩는 것.\n\n**개입.** 통행세 없는 우회 배를 열거나, 선창에 쌓인 군화의 발주 쪽지를 칠판에 붙일 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −30 | 물질 50 | 공동 30 | 원칙 5 | 공개 −15 | 자격 40 | 분산 15 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −5 | 위험 35 | 과시 10 | 지속 20 | 지향 유동 | 결합 없음\n:::",
+  "biography": "상자 끈의 매듭이 공방마다 다르면 출처를 묻지 않고 되돌려 보낸다. 나룻배 시각을 속이는 운송을 재치로 포장해도 저울 앞에서는 웃지 않는다.\n\n- 소속: 명부교회\n- 생업: 패킹 수상 운송\n- 품계: 교사\n- 직함: 성수 패킹운송 물류상\n**생애.** 2126년 세대. 구도영은 노량진 선창에서 자랐다. 구도영은 저울 재점검 공개로 성수 패킹운송 물류상 자리를 맡았다.\n- 구도영의 성수 패킹운송 물류상 업무는 성수2가1동과 연결된다.\n\n**관직.** 품계 교사. 직함은 성수 패킹운송 물류상. 끈 매듭과 나룻배 시각을 선창 칠판에 적고, 군수 상자는 민수 패킹이 같은 배에 한 줄 실린 뒤에만 태운다.\n\n**일화.** 동부 교량 통행세가 가죽 상자에 붙자 구도영은 패킹 끈만 구의 쪽 나룻배로 돌리고 군화는 성수 선창에 쌓아 두었다.\n\n**관계.** 유하은의 가죽 마감 시각에 맞춰 상자를 싣는 계약이고, 한소미의 공정 분할에서 패킹 끈 색을 나눈다. 임채원의 방호 원단 상자와 선창을 다투면서도 필터 패킹은 같은 배에 싣는다.\n\n**야망.** 끈 색이 다른 상자를 한 배에 태워, 물과 나사가 선창을 서로 붙잡지 못하게 한다.\n\n**공포.** 구도영은 군화 상자만 나룻배에 오르고 민수 패킹이 성수 선창에서 썩는 상황을 두려워한다.\n\n**개입.** 통행세 없는 우회 배를 열거나, 선창에 쌓인 군화의 발주 쪽지를 칠판에 붙일 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −30 | 물질 50 | 공동 30 | 원칙 5 | 공개 −15 | 자격 40 | 분산 15 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −5 | 위험 35 | 과시 10 | 지속 20 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-04"
   ],

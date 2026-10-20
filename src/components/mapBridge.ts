@@ -7,6 +7,7 @@ export type WikiMapMessage = { type: 'select'; selection: MapSelection | null }
 export type UnityMapMessage = { type: 'selected'; selection: MapSelection | null }
 
 export type MapCatalog = {
+  geography?: { titles: Array<{ id: string }> }
   regions: Array<{ id: string }>
   states: Array<{ id: string }>
   stations: Array<{ id: string; memberIds?: readonly string[] }>
@@ -79,13 +80,13 @@ export function createMapBridge(catalog: MapCatalog, transport: MapTransport, on
     if (displayStations.has(primary)) gameToDisplay.set(alias, primary)
   }
   const ids: Record<MapSelectionKind, Set<string>> = {
-    region: new Set(catalog.regions.map(({ id }) => id)),
+    region: new Set(catalog.geography?.titles.map(({ id }) => id) ?? []),
     state: new Set(catalog.states.map(({ id }) => id)),
     station: displayStations,
     segment: new Set(catalog.edges.map(({ id }) => id)),
     landmark: new Set(catalog.landmarks.map(({ id }) => id)),
-    vassal: new Set(catalog.vassals.map(({ name }) => name)),
-    'outside-unit': new Set(catalog.outsideUnits.map(({ id }) => id)),
+    vassal: new Set(),
+    'outside-unit': new Set(),
   }
   const displaySelection = (value: unknown): MapSelection | null | undefined => {
     if (value === null) return null

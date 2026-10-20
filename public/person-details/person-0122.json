@@ -445,52 +445,23 @@
             "name": "최도윤",
             "url": "/people/person-0122",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "골목 배급표·시민 명부 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/16/items/1/ko",
-                  "quote": "생업: 골목 배급표·시민 명부 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/17/text/ko",
-                    "quote": "골목 배급표를 공개하고, 가족 단위 등록 거부 명단을 행정청에만 넘겨 동방사 수첩과 분리한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "최도윤은 배급표를 골목에 공개하고, 가족 단위 등록 거부 명단은 정소율의 행정청으로만 보내 동방사 수첩과 갈라 둔다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -498,100 +469,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/16/items/1/ko",
-                    "quote": "생업: 골목 배급표·시민 명부 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/17/text/ko",
-                    "quote": "골목 배급표를 공개하고, 가족 단위 등록 거부 명단을 행정청에만 넘겨 동방사 수첩과 분리한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "최도윤은 배급표를 골목에 공개하고, 가족 단위 등록 거부 명단은 정소율의 행정청으로만 보내 동방사 수첩과 갈라 둔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/16/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 52,
-              "unspent": 23,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "최도윤 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S05 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 23
+            }
           }
         }
       },
@@ -614,52 +520,23 @@
             "name": "최도윤",
             "url": "/people/person-0122",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "골목 배급표·시민 명부 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/16/items/1/ko",
-                  "quote": "생업: 골목 배급표·시민 명부 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/17/text/ko",
-                    "quote": "골목 배급표를 공개하고, 가족 단위 등록 거부 명단을 행정청에만 넘겨 동방사 수첩과 분리한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "최도윤은 배급표를 골목에 공개하고, 가족 단위 등록 거부 명단은 정소율의 행정청으로만 보내 동방사 수첩과 갈라 둔다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -667,100 +544,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/16/items/1/ko",
-                    "quote": "생업: 골목 배급표·시민 명부 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/17/text/ko",
-                    "quote": "골목 배급표를 공개하고, 가족 단위 등록 거부 명단을 행정청에만 넘겨 동방사 수첩과 분리한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "최도윤은 배급표를 골목에 공개하고, 가족 단위 등록 거부 명단은 정소율의 행정청으로만 보내 동방사 수첩과 갈라 둔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/16/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 52,
-              "unspent": 23,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "최도윤 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S05 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 23
+            }
           }
         }
       }
@@ -781,7 +593,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -837,15 +648,13 @@
     "욕망": "갈망 0 | 독점 −10 | 위험 −30 | 과시 −5 | 지속 30 | 지향 유동 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 동부 급수구역 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.",
     "관직": "품계 대대장. 직함은 동부 급수구역 시민대표. 골목 배급표를 공개하고, 가족 단위 등록 거부 명단을 행정청에만 넘겨 동방사 수첩과 분리한다.",
     "일화": "장석윤의 등록소가 동부 골목 배급표와 복무 명부를 한 묶음으로 넘기라고 요구한다. 최도윤은 배급표를 골목에 공개하고, 가족 단위 등록 거부 명단은 정소율의 행정청으로만 보내 동방사 수첩과 갈라 둔다.",
     "관계": "정소율에게 명부를 맡기는 보호체류에 가깝고, 백온의 독립 시민권 요구에 동맹이며, 장석윤의 등록소에는 깊은 원한이 있다.",
-    "야망": "보호계약 안에서도 급수 최저선과 가족 동반 이주를 행정 원장에 남겨, 동부 주민이 장교 호적의 숫자가 되지 않게 한다.",
-    "공포": "순찰대가 급수권을 복무계약과 묶어 북한산보국문으로 도망친 친척의 자리가 빈 배급표로 남는 것.",
+    "야망": "보호계약 안에서도 급수 최저선과 가족 동반 이주를 행정 원장에 남겨, 동부 주민이 장교 호적의 숫자가 되지 않게 한다.\n\n공포. 최도윤은 순찰대가 급수권을 복무계약과 묶어 북한산보국문으로 도망친 친척의 자리가 빈 배급표로 남는 일을 두려워한다.",
     "개입": "가족 명부를 행정 서고에서 되찾거나, 거부 명단을 장교에게 넘겨 대표를 숙청 위기로 몰 수 있다."
   },
-  "biography": "자비롭지만 가족 단위 배급이 복무 명부와 묶이는 순간 타협을 끊는다. 치안을 이유로 아이를 훈련장에 보내는 효율론을 거부한다.\n\n- 소속: 동방사\n- 생업: 골목 배급표·시민 명부 관리\n- 품계: 대대장\n- 직함: 동부 급수구역 시민대표\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 동부 급수구역 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 대대장. 직함은 동부 급수구역 시민대표. 골목 배급표를 공개하고, 가족 단위 등록 거부 명단을 행정청에만 넘겨 동방사 수첩과 분리한다.\n\n**일화.** 장석윤의 등록소가 동부 골목 배급표와 복무 명부를 한 묶음으로 넘기라고 요구한다. 최도윤은 배급표를 골목에 공개하고, 가족 단위 등록 거부 명단은 정소율의 행정청으로만 보내 동방사 수첩과 갈라 둔다.\n\n**관계.** 정소율에게 명부를 맡기는 보호체류에 가깝고, 백온의 독립 시민권 요구에 동맹이며, 장석윤의 등록소에는 깊은 원한이 있다.\n\n**야망.** 보호계약 안에서도 급수 최저선과 가족 동반 이주를 행정 원장에 남겨, 동부 주민이 장교 호적의 숫자가 되지 않게 한다.\n\n**공포.** 순찰대가 급수권을 복무계약과 묶어 북한산보국문으로 도망친 친척의 자리가 빈 배급표로 남는 것.\n\n**개입.** 가족 명부를 행정 서고에서 되찾거나, 거부 명단을 장교에게 넘겨 대표를 숙청 위기로 몰 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −45 | 무력 65 | 물질 20 | 공동 25 | 원칙 −25 | 공개 −50 | 자격 −30 | 분산 −40 | 변혁 −25\n- 욕망: 갈망 0 | 독점 −10 | 위험 −30 | 과시 −5 | 지속 30 | 지향 유동 | 결합 단혼\n:::",
+  "biography": "최도윤은 자비롭지만 가족 단위 배급이 복무 명부와 묶이는 순간 타협을 끊는다. 치안을 이유로 아이를 훈련장에 보내는 효율론을 거부한다.\n\n- 소속: 동방사\n- 생업: 골목 배급표·시민 명부 관리\n- 품계: 대대장\n- 직함: 동부 급수구역 시민대표\n생애. 최도윤은 3세대에 태어났다. 최도윤은 영등포 정수 당직에서 자랐다. 최도윤의 동부 급수구역 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 최도윤은 암사1동과 연결된 업무에서 골목 배급표를 공개하고 가족 등록 거부 명단을 행정 쪽에만 보관한다.\n\n**관직.** 품계 대대장. 직함은 동부 급수구역 시민대표. 골목 배급표를 공개하고, 가족 단위 등록 거부 명단을 행정청에만 넘겨 동방사 수첩과 분리한다.\n\n**일화.** 장석윤의 등록소가 동부 골목 배급표와 복무 명부를 한 묶음으로 넘기라고 요구한다. 최도윤은 배급표를 골목에 공개하고, 가족 단위 등록 거부 명단은 정소율의 행정청으로만 보내 동방사 수첩과 갈라 둔다.\n\n**관계.** 정소율에게 명부를 맡기는 보호체류에 가깝고, 백온의 독립 시민권 요구에 동맹이며, 장석윤의 등록소에는 깊은 원한이 있다.\n\n**야망.** 보호계약 안에서도 급수 최저선과 가족 동반 이주를 행정 원장에 남겨, 동부 주민이 장교 호적의 숫자가 되지 않게 한다.\n\n공포. 최도윤은 순찰대가 급수권을 복무계약과 묶어 북한산보국문으로 도망친 친척의 자리가 빈 배급표로 남는 일을 두려워한다.\n\n**개입.** 가족 명부를 행정 서고에서 되찾거나, 거부 명단을 장교에게 넘겨 대표를 숙청 위기로 몰 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −45 | 무력 65 | 물질 20 | 공동 25 | 원칙 −25 | 공개 −50 | 자격 −30 | 분산 −40 | 변혁 −25\n- 욕망: 갈망 0 | 독점 −10 | 위험 −30 | 과시 −5 | 지속 30 | 지향 유동 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-05"
   ],

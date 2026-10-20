@@ -228,7 +228,7 @@
         "timeline": [
           {
             "year": 2070,
-            "summary": "오승석은 영등포 정수 당직에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "summary": "오승석은 영등포 정수 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-01.json",
@@ -560,57 +560,23 @@
             "name": "장필규",
             "url": "/people/person-0007",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "계약 기록·감수",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/116/items/1/ko",
-                  "quote": "생업: 계약 기록·감수"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/115/text/ko",
-                    "quote": "숫자는 공개하되 해석은 자기 난외에 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/118/text/ko",
-                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -618,110 +584,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/116/items/1/ko",
-                    "quote": "생업: 계약 기록·감수"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/115/text/ko",
-                    "quote": "숫자는 공개하되 해석은 자기 난외에 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/118/text/ko",
-                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/116/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 76,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 76,
-              "unspent": 0,
-              "total": 76
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "인계동",
-              "type": "초소 영지",
-              "station": "인계동",
-              "state": "S01",
-              "settlement": {
-                "name": "인계동 정착지",
-                "type": "정착지",
-                "description": "인계동 일대 고정 거점"
-              },
-              "note": "S01 인계동 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -745,57 +641,23 @@
             "name": "장필규",
             "url": "/people/person-0007",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "계약 기록·감수",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/116/items/1/ko",
-                  "quote": "생업: 계약 기록·감수"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/115/text/ko",
-                    "quote": "숫자는 공개하되 해석은 자기 난외에 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/118/text/ko",
-                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -803,110 +665,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/116/items/1/ko",
-                    "quote": "생업: 계약 기록·감수"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/115/text/ko",
-                    "quote": "숫자는 공개하되 해석은 자기 난외에 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/118/text/ko",
-                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/116/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 76,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 76,
-              "unspent": 0,
-              "total": 76
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "인계동",
-              "type": "초소 영지",
-              "station": "인계동",
-              "state": "S01",
-              "settlement": {
-                "name": "인계동 정착지",
-                "type": "정착지",
-                "description": "인계동 일대 고정 거점"
-              },
-              "note": "S01 인계동 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -927,18 +719,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "인계동",
-    "type": "초소 영지",
-    "station": "인계동",
-    "state": "S01",
-    "settlement": {
-      "name": "인계동 정착지",
-      "type": "정착지",
-      "description": "인계동 일대 고정 거점"
-    },
-    "note": "S01 인계동 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -975,19 +755,20 @@
     "생업": "계약 기록·감수",
     "품계": "주사",
     "직함": "급수계약 감사관",
+    "업무 위치": "양평1동. 양평1동 계약 서기석에서 장필규는 배급구역 사본과 기록청 사본의 단수 조항을 대조하고 빠진 원장 때문에 이서담과 남은 해석권 다툼을 기록한다.",
     "가치관": "권위 60 | 개방 −5 | 무력 10 | 물질 40 | 공동 20 | 원칙 40 | 공개 20 | 자격 5 | 분산 −50 | 변혁 −30",
     "욕망": "갈망 30 | 독점 5 | 위험 −15 | 과시 −5 | 지속 0 | 지향 무성향 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 감사관 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 감사관 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 양평1동. 양평1동 계약 서기석에서 장필규는 배급구역 사본과 기록청 사본의 단수 조항을 대조하고 빠진 원장 때문에 이서담과 남은 해석권 다툼을 기록한다.",
     "관직": "품계 주사. 직함은 급수계약 감사관. 계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다.",
-    "일화": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 이 일로 급수계약 감사관 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 서울 서부 급수망의 저수조 방류량이 모자라자 장필규는 배급 대표와 밤새 원장을 대조하고 계약 감사 칸에 합의량을 기록했다.",
     "관계": "윤서린과는 계약 인준 사본을 교환하는 협력이나 해석권을 놓고 경쟁하고, 정유라와는 종료 조건 문구를 다투며, 이서담에게는 과거 원장 누락을 덮어준 빚을 지고 있다.",
     "야망": "서부 모든 급수·통행 계약의 종료 조건과 집단 단수 요건을 자신이 감수한 원장에만 유효하게 만든다.",
     "공포": "위조 배급표 한 장이 물 계약 전체를 무효로 만들어 감사실이 정치 도구로 몰락하는 것.",
     "개입": "위조 배급표를 찾아 그의 날인을 지키거나, 난외 해석 노트를 폭로해 단수 조항을 무력화할 수 있다."
   },
-  "biography": "문구의 빈칸을 집요하게 찾고, 구두 약속을 기록하지 않는 사람을 위반 소지가 있는 자로 본다. 숫자는 공개하되 해석은 자기 난외에 남긴다.\n\n- 소속: 수문국\n- 생업: 계약 기록·감수\n- 품계: 주사\n- 직함: 급수계약 감사관\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 감사관 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 주사. 직함은 급수계약 감사관. 계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다.\n\n**일화.** 2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 이 일로 급수계약 감사관 자리의 서명이 장부에 올랐다.\n\n**관계.** 윤서린과는 계약 인준 사본을 교환하는 협력이나 해석권을 놓고 경쟁하고, 정유라와는 종료 조건 문구를 다투며, 이서담에게는 과거 원장 누락을 덮어준 빚을 지고 있다.\n\n**야망.** 서부 모든 급수·통행 계약의 종료 조건과 집단 단수 요건을 자신이 감수한 원장에만 유효하게 만든다.\n\n**공포.** 위조 배급표 한 장이 물 계약 전체를 무효로 만들어 감사실이 정치 도구로 몰락하는 것.\n\n**개입.** 위조 배급표를 찾아 그의 날인을 지키거나, 난외 해석 노트를 폭로해 단수 조항을 무력화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −5 | 무력 10 | 물질 40 | 공동 20 | 원칙 40 | 공개 20 | 자격 5 | 분산 −50 | 변혁 −30\n- 욕망: 갈망 30 | 독점 5 | 위험 −15 | 과시 −5 | 지속 0 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "문구의 빈칸을 집요하게 찾고, 구두 약속을 기록하지 않는 사람을 위반 소지가 있는 자로 본다. 숫자는 공개하되 해석은 자기 난외에 남긴다.\n\n- 소속: 수문국\n- 생업: 계약 기록·감수\n- 품계: 주사\n- 직함: 급수계약 감사관\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 감사관 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 양평1동. 양평1동 계약 서기석에서 장필규는 배급구역 사본과 기록청 사본의 단수 조항을 대조하고 빠진 원장 때문에 이서담과 남은 해석권 다툼을 기록한다.\n\n**관직.** 품계 주사. 직함은 급수계약 감사관. 계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다.\n\n**일화.** 2125년 서울 서부 급수망의 저수조 방류량이 모자라자 장필규는 배급 대표와 밤새 원장을 대조하고 계약 감사 칸에 합의량을 기록했다.\n\n**관계.** 윤서린과는 계약 인준 사본을 교환하는 협력이나 해석권을 놓고 경쟁하고, 정유라와는 종료 조건 문구를 다투며, 이서담에게는 과거 원장 누락을 덮어준 빚을 지고 있다.\n\n**야망.** 서부 모든 급수·통행 계약의 종료 조건과 집단 단수 요건을 자신이 감수한 원장에만 유효하게 만든다.\n\n**공포.** 위조 배급표 한 장이 물 계약 전체를 무효로 만들어 감사실이 정치 도구로 몰락하는 것.\n\n**개입.** 위조 배급표를 찾아 그의 날인을 지키거나, 난외 해석 노트를 폭로해 단수 조항을 무력화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −5 | 무력 10 | 물질 40 | 공동 20 | 원칙 40 | 공개 20 | 자격 5 | 분산 −50 | 변혁 −30\n- 욕망: 갈망 30 | 독점 5 | 위험 −15 | 과시 −5 | 지속 0 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-01"
   ],

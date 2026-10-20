@@ -8,13 +8,13 @@
   "facts": {
     "gender": "남성",
     "genderUserLocked": false,
-    "role": "피난 환자 진료 수련의"
+    "role": "남하 피난 환자 대표"
   },
   "artProposal": {
     "face": "Adult man with a calm, restrained expression, faint expression lines",
     "hair": "short side-parted hair combed neatly",
-    "upper": "burgundy buttoned linen work coat over a turtleneck",
-    "outfit": "burgundy buttoned linen work coat over a turtleneck",
+    "upper": "burgundy short wool jacket with a stand collar",
+    "outfit": "burgundy short wool jacket with a stand collar",
     "palette": [
       "burgundy",
       "charcoal"
@@ -22,7 +22,7 @@
     "carriedWeapons": "none depicted; no ownership inferred",
     "lower": "charcoal high-waisted pleated trousers",
     "footwear": "laced leather walking shoes",
-    "accessories": "canvas medical satchel without markings"
+    "accessories": "duty whistle on a cord lanyard"
   },
   "style": {
     "styleId": "derived-cast-default-20261019",
@@ -179,7 +179,7 @@
         "derived": true
       },
       "upper": {
-        "value": "burgundy buttoned linen work coat over a turtleneck",
+        "value": "burgundy short wool jacket with a stand collar",
         "status": "derived-proposal",
         "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
         "derived": true
@@ -203,7 +203,7 @@
         "derived": true
       },
       "neckline": {
-        "value": "open coat collar over a rolled sweater neck",
+        "value": "buttoned shirt collar",
         "status": "derived-proposal",
         "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
         "derived": true
@@ -211,33 +211,33 @@
     },
     "accessories": {
       "description": {
-        "value": "canvas medical satchel without markings",
+        "value": "duty whistle on a cord lanyard",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "derived-20261019:occupation(duty)",
         "derived": true
       },
       "shape": {
-        "value": "flat rectangular satchel",
+        "value": "small cylindrical whistle",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "derived-20261019:occupation(duty)",
         "derived": true
       },
       "color": {
-        "value": "undyed canvas and brown leather",
+        "value": "dull brass",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "derived-20261019:occupation(duty)",
         "derived": true
       },
       "material": {
-        "value": "canvas, leather",
+        "value": "brass, cord",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "derived-20261019:occupation(duty)",
         "derived": true
       },
       "mounting": {
-        "value": "strap across the shoulder",
+        "value": "lanyard around the neck",
         "status": "derived-proposal",
-        "source": "derived-20261019:occupation(medic)",
+        "source": "derived-20261019:occupation(duty)",
         "derived": true
       }
     }
@@ -258,27 +258,27 @@
     "views": {
       "portrait": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석라온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; dark brown hair; short length. build: lean; skin: medium warm beige. upper garment: burgundy buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석라온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; dark brown hair; short length. build: lean; skin: medium warm beige. upper garment: burgundy short wool jacket with a stand collar; neckline: buttoned shirt collar. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "front": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석라온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; dark brown hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: burgundy buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: charcoal high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석라온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; dark brown hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: burgundy short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: charcoal high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "profile": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석라온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; dark brown hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: burgundy buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: charcoal high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석라온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; dark brown hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: burgundy short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: charcoal high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "side": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석라온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; dark brown hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: burgundy buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: charcoal high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석라온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; dark brown hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: burgundy short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: charcoal high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       },
       "back": {
         "size": "1024x1536",
-        "prompt": "Character design sheet illustration of 석라온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; dark brown hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: burgundy buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: charcoal high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "prompt": "Character design sheet illustration of 석라온, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: long oval; round dark brown eyes; straight and thick eyebrows; nose: short rounded tip; mouth: wide closed mouth; natural muted rose lips; facial hair: light stubble. short side-parted hair combed neatly; dark brown hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: burgundy short wool jacket with a stand collar; neckline: buttoned shirt collar; lower garment: charcoal high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: duty whistle on a cord lanyard; worn as lanyard around the neck. color palette: burgundy, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
         "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
       }
     }

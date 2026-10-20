@@ -50,7 +50,6 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   personSheet: unknown
   characterProfile?: PublicCharacterProfile
   unit?: { type: string; size: number; quality: string; composition: string[]; note: string } | null
-  territory?: { fief_name: string; type: string; station: string; state: string; settlement: { name: string; type: string; description: string }; note: string } | null
   wandering_force?: { type: string; size: number; current_location: string; camp: { name: string; type: string; description: string; facilities: string[]; pack_up_time: string }; note: string } | null
   clan: { id: string; name: string; crest: string } | null
   generation: string
@@ -363,7 +362,7 @@ export function PreservedPersonSheet({ payload, identity }: { readonly payload: 
       <p data-sheet-affiliation>현재 소속: {identity.state} · 이 판본의 소속: {String(selected.record.state)}</p>
       <GurpsSheet gurps={selected.sheet} />
       <details key={selected.revision} data-legacy-record>
-        <summary>역사 기록 전체 · 모든 필드와 근거</summary>
+        <summary>공개 역사 시트 필드</summary>
         <pre>{JSON.stringify(selected.record, null, 2)}</pre>
       </details>
     </div>}
@@ -571,14 +570,6 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
             </section>)}
           </section>}
           {!!detail.subordinateHoldings?.length && <section data-subordinate-holdings><h2>공작령 내 봉신 보유 영지</h2>{detail.subordinateHoldings.map(holding => <section key={holding.id}><h3>{holding.name.ko}</h3><p>보유 영주: <Link to={holding.holderRoute}>{holding.holderName}</Link></p><ul>{holding.adminRefs.map(ref => <li key={ref.id}>{ref.name}</li>)}</ul></section>)}</section>}
-          {!detail.confirmedHoldings?.length && detail.territory && <section className="gurps-territory">
-            <h2>영지</h2>
-            <p>{detail.territory.fief_name} · {detail.territory.type}</p>
-            <p>위치: {detail.territory.station} · {detail.territory.state}</p>
-            <p>{detail.territory.settlement.name} · {detail.territory.settlement.type}</p>
-            <p>{detail.territory.settlement.description}</p>
-            <p>{detail.territory.note}</p>
-          </section>}
           {detail.wandering_force && <section className="gurps-wandering">
             <h2>야영지와 유랑 부대</h2>
             <p>{detail.wandering_force.type} · {detail.wandering_force.size}명</p>

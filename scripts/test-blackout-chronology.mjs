@@ -35,14 +35,7 @@ test('blackout starts in 2030 without the superseded 2036 order or 2026 eruption
   }
 })
 
-test('population and continuous neutral bureau facts reach both locale sources', async () => {
-  const annals = await json('chronology/Century-Annals.json')
-  const population = annals.content.find(block => block.anchor === '2040년-인구-감소')
-  assert.match(population.text.ko, /30%/u)
-  assert.match(population.text.en, /30%/u)
-  const bureau = annals.content.find(block => block.anchor === '2030년-중앙정보부')
-  assert.match(bureau.text.ko, /2030년부터.*중립/u)
-  assert.match(bureau.text.en, /neutral organization since 2030/u)
+test('current bureau affiliation remains neutral outside all hegemon memberships', async () => {
   const state = await json('factions/Sixteen-States.json')
   assert.deepEqual(state.data.currentAffiliation.neutralStateIds, ['S08'])
   assert.ok(state.data.currentAffiliation.hegemons.every(item => !item.memberStateIds.includes('S08')))

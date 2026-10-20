@@ -2,9 +2,9 @@
   "id": "person-0747",
   "name": "윤북율",
   "title": "부품 물류상",
-  "position": "부품 물류상 · 음성군 영주",
+  "position": "부품 물류상",
   "characterId": "K747",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "부품 출고 검사",
   "gender": "남성",
@@ -454,52 +454,23 @@
             "name": "윤북율",
             "url": "/people/person-0747",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "부품 출고 검사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/522/items/1/ko",
-                  "quote": "생업: 부품 출고 검사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/523/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/524/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -507,105 +478,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/523/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/522/items/1/ko",
-                    "quote": "생업: 부품 출고 검사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/524/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/522/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "건대입구",
-              "type": "초소 영지",
-              "station": "건대입구",
-              "state": "S04",
-              "settlement": {
-                "name": "건대입구 정착지",
-                "type": "정착지",
-                "description": "건대입구 일대 고정 거점"
-              },
-              "note": "S04 건대입구 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -629,52 +535,23 @@
             "name": "윤북율",
             "url": "/people/person-0747",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "부품 출고 검사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/522/items/1/ko",
-                  "quote": "생업: 부품 출고 검사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/523/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/524/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -682,193 +559,64 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/523/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/522/items/1/ko",
-                    "quote": "생업: 부품 출고 검사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/524/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/522/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "건대입구",
-              "type": "초소 영지",
-              "station": "건대입구",
-              "state": "S04",
-              "settlement": {
-                "name": "건대입구 정착지",
-                "type": "정착지",
-                "description": "건대입구 일대 고정 거점"
-              },
-              "note": "S04 건대입구 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-43770-S04",
-      "name": {
-        "ko": "음성군 공작령 직영지"
-      },
-      "holderPersonId": "K747",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4377025000",
-          "name": "충청북도 음성군 음성읍"
-        },
-        {
-          "id": "4377025300",
-          "name": "충청북도 음성군 금왕읍"
-        },
-        {
-          "id": "4377025600",
-          "name": "충청북도 음성군 대소읍"
-        },
-        {
-          "id": "4377031000",
-          "name": "충청북도 음성군 소이면"
-        },
-        {
-          "id": "4377032000",
-          "name": "충청북도 음성군 원남면"
-        },
-        {
-          "id": "4377033000",
-          "name": "충청북도 음성군 맹동면"
-        },
-        {
-          "id": "4377035000",
-          "name": "충청북도 음성군 삼성면"
-        },
-        {
-          "id": "4377036000",
-          "name": "충청북도 음성군 생극면"
-        },
-        {
-          "id": "4377037000",
-          "name": "충청북도 음성군 감곡면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-43770-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-43770-S04",
-      "name": "음성군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K747",
-      "basis": "개막 행정 규모 그룹 43770(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S04",
-      "parentTitleId": "title:kingdom-s04",
-      "jurisdictionRefs": [
-        "4377025000",
-        "4377025300",
-        "4377025600",
-        "4377031000",
-        "4377032000",
-        "4377033000",
-        "4377035000",
-        "4377036000",
-        "4377037000"
+      "politicalParentTitleId": "title:kingdom-s04",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-43770-S04",
+          "directLiegePersonId": "K423"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s04",
-        "name": "종교 연합 왕국",
-        "holderPersonId": "K423"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -882,18 +630,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "건대입구",
-    "type": "초소 영지",
-    "station": "건대입구",
-    "state": "S04",
-    "settlement": {
-      "name": "건대입구 정착지",
-      "type": "정착지",
-      "description": "건대입구 일대 고정 거점"
-    },
-    "note": "S04 건대입구 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -934,15 +670,15 @@
     "욕망": "갈망 10 | 독점 0 | 위험 40 | 과시 20 | 지속 −5 | 지향 무성향 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
-    "관직": "품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-    "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.",
-    "공포": "부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "생애": "2126년 세대. 윤북율은 신정 차량기지에서 자랐다. 윤북율은 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 윤북율의 부품 물류상 업무는 성수2가1동과 연결된다.",
+    "관직": "윤북율은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
+    "일화": "2125년 윤북율은 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
+    "관계": "윤북율은 같은 생활권 선배 당직자와 인수인계로 묶인다.",
+    "야망": "윤북율은 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
+    "공포": "윤북율은 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
+    "개입": "윤북율은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 부품 출고 검사\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 5 | 무력 −25 | 물질 45 | 공동 20 | 원칙 0 | 공개 −25 | 자격 30 | 분산 25 | 변혁 −10\n- 욕망: 갈망 10 | 독점 0 | 위험 40 | 과시 20 | 지속 −5 | 지향 무성향 | 결합 다자\n:::",
+  "biography": "윤북율은 당직을 끊지 않는 쪽을 먼저 고른다. 윤북율은 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 부품 출고 검사\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 윤북율은 신정 차량기지에서 자랐다. 윤북율은 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 윤북율의 부품 물류상 업무는 성수2가1동과 연결된다.\n\n**관직.** 윤북율은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 윤북율은 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 윤북율은 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 윤북율은 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 윤북율은 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 윤북율은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 5 | 무력 −25 | 물질 45 | 공동 20 | 원칙 0 | 공개 −25 | 자격 30 | 분산 25 | 변혁 −10\n- 욕망: 갈망 10 | 독점 0 | 위험 40 | 과시 20 | 지속 −5 | 지향 무성향 | 결합 다자\n:::",
   "sources": [
     "Cast-State-04"
   ],

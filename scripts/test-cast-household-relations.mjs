@@ -35,6 +35,18 @@ test('actual Ilseob draft resolves parents, contracts and preserved facility cus
   assert.equal(projectCastHouseholdRelations(ledger, documents, 'K085').deficits.normalizedSocialContact, true)
 })
 
+test('preserved humanoid context accepts historical custody without assigning a current custodian', () => {
+  const historical = structuredClone(documents)
+  const atlas = historical.get('lore/World-Narrative-Atlas.json').data.atlas
+  const actor = atlas.synthetics.find(actor => actor.id === 'H04')
+  const custody = actor.relations.find(ref => ['custodian', 'historical_custodian'].includes(ref.kind))
+  custody.kind = 'historical_custodian'
+  assert.equal(validateCastHouseholdRelations(ledger, historical), ledger)
+  assert.equal(actor.relations.some(ref => ref.kind === 'custodian'), false)
+  custody.target = 'K998'
+  assert.throws(() => validateCastHouseholdRelations(ledger, historical), /E_HOUSEHOLD_H_CUSTODY/)
+})
+
 test('FK, source anchor, kin pointer, unrelated party and private appointments fail', () => {
   for (const [mutate, code] of [
     [d => { d.people[0].links[2].recipientId = 'K9999' }, 'E_HOUSEHOLD_RECIPIENT'],

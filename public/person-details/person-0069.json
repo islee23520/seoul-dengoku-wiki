@@ -551,52 +551,23 @@
             "name": "채봄",
             "url": "/people/person-0069",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "관문 순찰",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/148/items/1/ko",
-                  "quote": "생업: 관문 순찰"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/149/text/ko",
-                    "quote": "등잔이 꺼진 구간은 순찰 줄자로 다시 재고, 관문을 여는 호각은 깃발이 골목 입구로 돌아온 뒤에만 분다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "울타리 밖 수레가 연구 칸을 노리자 채봄은 등잔을 모두 밝히고 깃발만 먼저 내보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -604,111 +575,41 @@
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/148/items/1/ko",
-                    "quote": "생업: 관문 순찰"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "울타리 밖 수레가 연구 칸을 노리자 채봄은 등잔을 모두 밝히고 깃발만 먼저 내보냈다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/149/text/ko",
-                    "quote": "등잔이 꺼진 구간은 순찰 줄자로 다시 재고, 관문을 여는 호각은 깃발이 골목 입구로 돌아온 뒤에만 분다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/148/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐컨테이너 적치장",
-              "camp": {
-                "name": "채봄 컨테이너 야영지",
-                "type": "야영지",
-                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S03 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       },
@@ -731,52 +632,23 @@
             "name": "채봄",
             "url": "/people/person-0069",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "관문 순찰",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/148/items/1/ko",
-                  "quote": "생업: 관문 순찰"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/149/text/ko",
-                    "quote": "등잔이 꺼진 구간은 순찰 줄자로 다시 재고, 관문을 여는 호각은 깃발이 골목 입구로 돌아온 뒤에만 분다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "울타리 밖 수레가 연구 칸을 노리자 채봄은 등잔을 모두 밝히고 깃발만 먼저 내보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -784,111 +656,41 @@
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/148/items/1/ko",
-                    "quote": "생업: 관문 순찰"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "울타리 밖 수레가 연구 칸을 노리자 채봄은 등잔을 모두 밝히고 깃발만 먼저 내보냈다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/149/text/ko",
-                    "quote": "등잔이 꺼진 구간은 순찰 줄자로 다시 재고, 관문을 여는 호각은 깃발이 골목 입구로 돌아온 뒤에만 분다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/148/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐컨테이너 적치장",
-              "camp": {
-                "name": "채봄 컨테이너 야영지",
-                "type": "야영지",
-                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S03 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       }
@@ -909,7 +711,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -961,11 +762,12 @@
     "생업": "관문 순찰",
     "품계": "대리",
     "직함": "방화 관문 순찰대 조장",
+    "업무": "방화3동. 채봄은 방화 관문의 등잔 간격을 다시 재고 김도하의 주민 깃발이 골목에서 돌아오기 전에는 개방 호각을 불지 않는다.",
     "가치관": "권위 0 | 개방 5 | 무력 −5 | 물질 15 | 공동 0 | 원칙 50 | 공개 45 | 자격 35 | 분산 0 | 변혁 0",
     "욕망": "갈망 25 | 독점 40 | 위험 10 | 과시 −10 | 지속 5 | 지향 이성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 방화 관문 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.",
+    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 채봄은 방화 관문의 등잔 간격을 다시 재고 김도하의 주민 깃발이 골목에서 돌아오기 전에는 개방 호각을 불지 않는다.\n- 업무: 방화3동. 채봄은 방화 관문의 등잔 간격을 다시 재고 김도하의 주민 깃발이 골목에서 돌아오기 전에는 개방 호각을 불지 않는다.",
     "관직": "품계 대리. 직함은 방화 관문 순찰대 조장. 등잔이 꺼진 구간은 순찰 줄자로 다시 재고, 관문을 여는 호각은 깃발이 골목 입구로 돌아온 뒤에만 분다.",
     "일화": "울타리 밖 수레가 연구 칸을 노리자 채봄은 등잔을 모두 밝히고 깃발만 먼저 내보냈다.",
     "관계": "이봄결이 켠 봉쇄 등잔의 심지를 관문에서 이어 깎는 지휘를 받고, 김도하의 깃발이 골목에서 돌아올 때까지 호각을 참기로 맹세한다. 임시온의 봉함 쪽지가 관문에 닿기 전에는 등잔 줄을 늘리지 않는다.",
@@ -973,7 +775,7 @@
     "공포": "등잔이 꺼진 골목에서 깃발이 돌아오기 전에 연구동 빗장이 안에서 걸리는 것.",
     "개입": "울타리 바퀴 자국을 등잔 간격과 겹쳐 읽거나, 안에서 걸린 빗장의 순찰 줄을 주민 깃발 쪽에 펼 수 있다."
   },
-  "biography": "관문 등잔의 기름 높이로 순찰 간격을 정하고, 주민 깃발이 안 보이는 골목을 사고 구간으로 부른다. 대담함보다 등잔 심지를 먼저 깎는다.\n\n- 소속: 태욱그룹\n- 생업: 관문 순찰\n- 품계: 대리\n- 직함: 방화 관문 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 방화 관문 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 대리. 직함은 방화 관문 순찰대 조장. 등잔이 꺼진 구간은 순찰 줄자로 다시 재고, 관문을 여는 호각은 깃발이 골목 입구로 돌아온 뒤에만 분다.\n\n**일화.** 울타리 밖 수레가 연구 칸을 노리자 채봄은 등잔을 모두 밝히고 깃발만 먼저 내보냈다.\n\n**관계.** 이봄결이 켠 봉쇄 등잔의 심지를 관문에서 이어 깎는 지휘를 받고, 김도하의 깃발이 골목에서 돌아올 때까지 호각을 참기로 맹세한다. 임시온의 봉함 쪽지가 관문에 닿기 전에는 등잔 줄을 늘리지 않는다.\n\n**야망.** 등잔 간격으로 관문과 연구동 사이를 메워, 납치 수레가 깃발 사이로 새지 않게 한다.\n\n**공포.** 등잔이 꺼진 골목에서 깃발이 돌아오기 전에 연구동 빗장이 안에서 걸리는 것.\n\n**개입.** 울타리 바퀴 자국을 등잔 간격과 겹쳐 읽거나, 안에서 걸린 빗장의 순찰 줄을 주민 깃발 쪽에 펼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 5 | 무력 −5 | 물질 15 | 공동 0 | 원칙 50 | 공개 45 | 자격 35 | 분산 0 | 변혁 0\n- 욕망: 갈망 25 | 독점 40 | 위험 10 | 과시 −10 | 지속 5 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "관문 등잔의 기름 높이로 순찰 간격을 정하고, 주민 깃발이 안 보이는 골목을 사고 구간으로 부른다. 대담함보다 등잔 심지를 먼저 깎는다.\n\n- 소속: 태욱그룹\n- 생업: 관문 순찰\n- 품계: 대리\n- 직함: 방화 관문 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 채봄은 방화 관문의 등잔 간격을 다시 재고 김도하의 주민 깃발이 골목에서 돌아오기 전에는 개방 호각을 불지 않는다.\n- 업무: 방화3동. 채봄은 방화 관문의 등잔 간격을 다시 재고 김도하의 주민 깃발이 골목에서 돌아오기 전에는 개방 호각을 불지 않는다.\n\n**관직.** 품계 대리. 직함은 방화 관문 순찰대 조장. 등잔이 꺼진 구간은 순찰 줄자로 다시 재고, 관문을 여는 호각은 깃발이 골목 입구로 돌아온 뒤에만 분다.\n\n**일화.** 울타리 밖 수레가 연구 칸을 노리자 채봄은 등잔을 모두 밝히고 깃발만 먼저 내보냈다.\n\n**관계.** 이봄결이 켠 봉쇄 등잔의 심지를 관문에서 이어 깎는 지휘를 받고, 김도하의 깃발이 골목에서 돌아올 때까지 호각을 참기로 맹세한다. 임시온의 봉함 쪽지가 관문에 닿기 전에는 등잔 줄을 늘리지 않는다.\n\n**야망.** 등잔 간격으로 관문과 연구동 사이를 메워, 납치 수레가 깃발 사이로 새지 않게 한다.\n\n**공포.** 등잔이 꺼진 골목에서 깃발이 돌아오기 전에 연구동 빗장이 안에서 걸리는 것.\n\n**개입.** 울타리 바퀴 자국을 등잔 간격과 겹쳐 읽거나, 안에서 걸린 빗장의 순찰 줄을 주민 깃발 쪽에 펼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 5 | 무력 −5 | 물질 15 | 공동 0 | 원칙 50 | 공개 45 | 자격 35 | 분산 0 | 변혁 0\n- 욕망: 갈망 25 | 독점 40 | 위험 10 | 과시 −10 | 지속 5 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-03"
   ],

@@ -444,41 +444,23 @@
             "name": "감국",
             "url": "/people/person-0306",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "외곽 호송 인원·발포 권한 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/138/items/0/ko",
-                  "quote": "생업: 외곽 호송 인원·발포 권한 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -486,106 +468,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 외곽 호송 인원·발포 권한 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 외곽 호송 인원·발포 권한 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/138/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 20,
-              "unspent": 55,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "감국 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S12 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 55
+            }
           }
         }
       },
@@ -608,41 +525,23 @@
             "name": "감국",
             "url": "/people/person-0306",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "외곽 호송 인원·발포 권한 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/138/items/0/ko",
-                  "quote": "생업: 외곽 호송 인원·발포 권한 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -650,106 +549,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 외곽 호송 인원·발포 권한 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 외곽 호송 인원·발포 권한 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/138/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 20,
-              "unspent": 55,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "감국 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S12 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 55
+            }
           }
         }
       }
@@ -770,7 +604,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -826,15 +659,15 @@
     "욕망": "갈망 40 | 독점 −15 | 위험 −35 | 과시 20 | 지속 40 | 지향 동성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 동북 외곽로 순찰대, 하세온의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.",
+    "생애": "2082-07-04에 태어났다. 암사 경비 초소에서 자랐다. 2126년 개막에는 동북 외곽로 순찰대, 하세온의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 야간 무단 도하 적발로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 감국의 외곽 호송 인원·발포 권한 확인 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
     "관직": "품계 호송원. 직함은 동북 외곽로 순찰대, 하세온의 실무 담당자. 호송 인원을 의료칸과 화물칸에 섞어 두고, 발포 권한은 장세화의 봉인된 명령 전에는 주지 않는다.",
     "일화": "겨울 배차 조사 중 호송대가 암사 순찰열차와 망우 외곽에서 정면으로 마주쳤다.",
     "관계": "하세온의 지휘로 외곽로를 돌고, 문시온의 심사대 봉인을 길에서 확인한다. 배우진의 보호 검색을 순찰 원장에 남기지 않는다.",
-    "야망": "중립 호송의 외곽 순찰을 신내 호송대가 맡아 호송료 없는 동북 회랑의 실력을 증명한다.",
+    "야망": "중립 호송의 외곽 순찰을 신내 호송대가 맡아 호송료 없는 동북 회랑의 실력을 증명하려 한다.",
     "공포": "순찰이 암사 순찰열차와 마주쳐 교전 한 방으로 중립이 전쟁으로 바뀌는 것.",
     "개입": "교전을 피하도록 신호기를 전달하거나, 발포 명령을 위조한 쪽을 추적할 수 있다."
   },
-  "biography": "낙관적인 상관의 공백을 현장에서 메우고, 적은 병력으로 긴 열차를 지키는 침묵을 안다. 발포를 자랑하는 사람을 호송에서 내린다.\n\n- 생업: 외곽 호송 인원·발포 권한 확인\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 동북 외곽로 순찰대, 하세온의 실무 담당자\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동북 외곽로 순찰대, 하세온의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 호송원. 직함은 동북 외곽로 순찰대, 하세온의 실무 담당자. 호송 인원을 의료칸과 화물칸에 섞어 두고, 발포 권한은 장세화의 봉인된 명령 전에는 주지 않는다.\n\n**일화.** 겨울 배차 조사 중 호송대가 암사 순찰열차와 망우 외곽에서 정면으로 마주쳤다.\n\n**관계.** 하세온의 지휘로 외곽로를 돌고, 문시온의 심사대 봉인을 길에서 확인한다. 배우진의 보호 검색을 순찰 원장에 남기지 않는다.\n\n**야망.** 중립 호송의 외곽 순찰을 신내 호송대가 맡아 호송료 없는 동북 회랑의 실력을 증명한다.\n\n**공포.** 순찰이 암사 순찰열차와 마주쳐 교전 한 방으로 중립이 전쟁으로 바뀌는 것.\n\n**개입.** 교전을 피하도록 신호기를 전달하거나, 발포 명령을 위조한 쪽을 추적할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 35 | 무력 −15 | 물질 5 | 공동 20 | 원칙 0 | 공개 25 | 자격 20 | 분산 45 | 변혁 −5\n- 욕망: 갈망 40 | 독점 −15 | 위험 −35 | 과시 20 | 지속 40 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "2082-07-04생인 감국은 낙관적인 상관의 공백을 현장에서 메우고, 적은 병력으로 긴 열차를 지키는 침묵을 안다. 발포를 자랑하는 사람을 호송에서 내린다.\n\n- 생업: 외곽 호송 인원·발포 권한 확인\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 동북 외곽로 순찰대, 하세온의 실무 담당자\n**생애.** 2082-07-04에 태어났다. 암사 경비 초소에서 자랐다. 2126년 개막에는 동북 외곽로 순찰대, 하세온의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 야간 무단 도하 적발로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 감국의 외곽 호송 인원·발포 권한 확인 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 동북 외곽로 순찰대, 하세온의 실무 담당자. 호송 인원을 의료칸과 화물칸에 섞어 두고, 발포 권한은 장세화의 봉인된 명령 전에는 주지 않는다.\n\n**일화.** 겨울 배차 조사 중 호송대가 암사 순찰열차와 망우 외곽에서 정면으로 마주쳤다.\n\n**관계.** 하세온의 지휘로 외곽로를 돌고, 문시온의 심사대 봉인을 길에서 확인한다. 배우진의 보호 검색을 순찰 원장에 남기지 않는다.\n\n**야망.** 중립 호송의 외곽 순찰을 신내 호송대가 맡아 호송료 없는 동북 회랑의 실력을 증명하려 한다.\n\n**공포.** 순찰이 암사 순찰열차와 마주쳐 교전 한 방으로 중립이 전쟁으로 바뀌는 것.\n\n**개입.** 교전을 피하도록 신호기를 전달하거나, 발포 명령을 위조한 쪽을 추적할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 35 | 무력 −15 | 물질 5 | 공동 20 | 원칙 0 | 공개 25 | 자격 20 | 분산 45 | 변혁 −5\n- 욕망: 갈망 40 | 독점 −15 | 위험 −35 | 과시 20 | 지속 40 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-12"
   ],

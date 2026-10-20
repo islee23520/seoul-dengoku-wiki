@@ -166,12 +166,30 @@ function holdingRows(db, id, currentValidity) {
 
 function contextRows(db, id) {
   return {
-    courts: rows(db, "SELECT c.* FROM context_court c WHERE c.owner_person_id=? AND NOT EXISTS (SELECT 1 FROM context_polity p WHERE p.polity_id=c.polity_id AND p.current_validity='superseded_outside_seoul') ORDER BY c.court_id", id),
-    direct_retainer: one(db, "SELECT r.* FROM context_direct_retainer r JOIN context_court c USING(court_id) WHERE r.person_id=? AND NOT EXISTS (SELECT 1 FROM context_polity p WHERE p.polity_id=c.polity_id AND p.current_validity='superseded_outside_seoul')", id),
-    owner_liege: one(db, "SELECT l.* FROM context_owner_liege l WHERE l.person_id=? AND NOT EXISTS (SELECT 1 FROM context_court_membership m JOIN context_court c USING(court_id) JOIN context_polity p USING(polity_id) WHERE m.person_id=l.person_id AND p.current_validity='superseded_outside_seoul')", id),
-    court_membership: one(db, "SELECT m.* FROM context_court_membership m JOIN context_court c USING(court_id) WHERE m.person_id=? AND NOT EXISTS (SELECT 1 FROM context_polity p WHERE p.polity_id=c.polity_id AND p.current_validity='superseded_outside_seoul')", id),
+    courts: rows(db, 'SELECT * FROM context_court WHERE owner_person_id=? ORDER BY court_id', id),
+    direct_retainer: one(db, 'SELECT * FROM context_direct_retainer WHERE person_id=?', id),
+    owner_liege: one(db, 'SELECT * FROM context_owner_liege WHERE person_id=?', id),
+    court_membership: one(db, 'SELECT * FROM context_court_membership WHERE person_id=?', id),
     opening_disposition: one(db, 'SELECT * FROM context_opening_disposition WHERE person_id=?', id),
-    offices: rows(db, "SELECT o.* FROM context_office_appointment o WHERE o.person_id=? AND NOT EXISTS (SELECT 1 FROM context_polity p WHERE p.polity_id=o.polity_id AND p.current_validity='superseded_outside_seoul') ORDER BY o.polity_id,o.position_ko", id),
+    offices: rows(db, 'SELECT * FROM context_office_appointment WHERE person_id=? ORDER BY polity_id,position_ko', id).map((office) => ({
+      ...office,
+      evidence: rows(db, 'SELECT * FROM context_office_evidence WHERE person_id=? ORDER BY ordinal', id),
+    })),
+    titles: rows(db, 'SELECT * FROM context_feudal_title WHERE holder_person_id=? ORDER BY title_id', id).map((title) => ({
+      ...title,
+      jurisdictions: rows(db, 'SELECT * FROM context_feudal_jurisdiction WHERE title_id=? ORDER BY ordinal', title.title_id),
+    })),
+    grants: rows(db, 'SELECT * FROM context_feudal_grant WHERE holder_person_id=? ORDER BY grant_id', id).map((grant) => ({
+      ...grant,
+      admin_units: rows(db, 'SELECT * FROM context_feudal_grant_admin WHERE grant_id=? ORDER BY ordinal', grant.grant_id),
+      components: rows(db, 'SELECT * FROM context_feudal_grant_component WHERE grant_id=? ORDER BY ordinal', grant.grant_id),
+    })),
+    bindings: rows(db, 'SELECT b.* FROM context_feudal_binding b JOIN context_holding h USING(holding_id) WHERE h.holder_person_id=? ORDER BY b.holding_id', id),
+    political_identities: rows(db, 'SELECT * FROM context_political_identity WHERE holder_person_id=? ORDER BY identity_id', id).map((identity) => ({
+      ...identity,
+      personal_lieges: rows(db, 'SELECT * FROM context_political_identity_liege WHERE identity_id=? ORDER BY ordinal', identity.identity_id),
+    })),
+    polities: rows(db, "SELECT * FROM context_polity WHERE sovereign_person_id=? AND current_validity='current_nonterritorial' ORDER BY polity_id", id),
     event_links: rows(db, 'SELECT e.*,o.name AS organization_name,o.polity_id AS organization_polity_id,o.source_anchor AS organization_source_anchor FROM context_event_link e LEFT JOIN context_organization o USING(organization_id) WHERE e.person_id=? ORDER BY e.event_id,e.organization_id', id),
     prose_contacts: rows(db, 'SELECT * FROM context_prose_contact WHERE person_id=? ORDER BY recipient_person_id', id),
     issues: rows(db, 'SELECT * FROM context_issue WHERE person_id=? ORDER BY issue_id', id),
@@ -180,19 +198,18 @@ function contextRows(db, id) {
 
 function supersededContextRows(db, id) {
   return {
-    polities: rows(db, 'SELECT * FROM context_polity WHERE sovereign_person_id=? ORDER BY polity_id', id),
-    courts: rows(db, "SELECT c.* FROM context_court c JOIN context_polity p USING(polity_id) WHERE c.owner_person_id=? AND p.current_validity='superseded_outside_seoul' ORDER BY c.court_id", id),
-    direct_retainer: one(db, "SELECT r.* FROM context_direct_retainer r JOIN context_court c USING(court_id) JOIN context_polity p USING(polity_id) WHERE r.person_id=? AND p.current_validity='superseded_outside_seoul'", id),
-    owner_liege: one(db, "SELECT l.* FROM context_owner_liege l JOIN context_court_membership m USING(person_id) JOIN context_court c USING(court_id) JOIN context_polity p USING(polity_id) WHERE l.person_id=? AND p.current_validity='superseded_outside_seoul'", id),
-    court_membership: one(db, "SELECT m.* FROM context_court_membership m JOIN context_court c USING(court_id) JOIN context_polity p USING(polity_id) WHERE m.person_id=? AND p.current_validity='superseded_outside_seoul'", id),
-    offices: rows(db, "SELECT o.* FROM context_office_appointment o JOIN context_polity p USING(polity_id) WHERE o.person_id=? AND p.current_validity='superseded_outside_seoul' ORDER BY o.polity_id,o.position_ko", id),
-    retinue_groups: rows(db, 'SELECT * FROM context_retinue_group WHERE liege_person_id=? ORDER BY retinue_group_id', id).map((group) => ({
+    polities: rows(db, "SELECT * FROM context_polity WHERE sovereign_person_id=? AND current_validity='superseded_outside_seoul' ORDER BY polity_id", id),
+    retinue_groups: retinueRows(db, id, 'superseded_outside_seoul'),
+  };
+}
+
+function retinueRows(db, id, validity) {
+  return rows(db, 'SELECT * FROM context_retinue_group WHERE liege_person_id=? AND current_validity=? ORDER BY retinue_group_id', id, validity).map((group) => ({
       ...group,
       duties: rows(db, 'SELECT * FROM context_retinue_duty WHERE retinue_group_id=? ORDER BY ordinal', group.retinue_group_id),
       technical_limits: rows(db, 'SELECT * FROM context_retinue_technical_limit WHERE retinue_group_id=? ORDER BY ordinal', group.retinue_group_id),
       holdings: rows(db, 'SELECT * FROM context_retinue_holding WHERE retinue_group_id=? ORDER BY ordinal', group.retinue_group_id),
-    })),
-  };
+    }));
 }
 
 function historicalFeudalRows(db, id) {
@@ -222,8 +239,15 @@ export function queryPerson(options) {
       values: rows(db, 'SELECT v.*,a.axis_ordinal FROM person_value v JOIN value_axis a USING(axis_name) WHERE person_id=? ORDER BY a.axis_ordinal', id),
       desires: rows(db, 'SELECT d.*,a.axis_ordinal FROM person_desire d JOIN desire_axis a USING(axis_name) WHERE person_id=? ORDER BY a.axis_ordinal', id),
       gender: one(db, 'SELECT * FROM person_gender WHERE person_id=?', id), lineage: lineageRows(db, person), profiles: profileRows(db, id), source_indexes: sourceIndexRows(db, id), relations: relationRows(db, id, 'both'),
-      current: { engine: engineRows(db, id), birthday: one(db, 'SELECT * FROM family_birthday WHERE person_id=?', id), family: familyRows(db, id), household: householdRows(db, id), holdings: holdingRows(db, id, 'current_seoul_evidenced'), context: contextRows(db, id) },
-      historical: { gurps: historicalGurpsRows(db, id), superseded_holdings: holdingRows(db, id, 'superseded_outside_seoul'), superseded_context: supersededContextRows(db, id), feudal: historicalFeudalRows(db, id) }, unresolved: { holdings: holdingRows(db, id, 'unresolved') },
+      current: { engine: engineRows(db, id), birthday: one(db, 'SELECT * FROM family_birthday WHERE person_id=?', id), family: familyRows(db, id), household: householdRows(db, id), holdings: holdingRows(db, id, 'current_seoul_evidenced'), nonowning_rights: holdingRows(db, id, 'current_seoul_nonowning').map((holding) => ({
+        ...holding,
+        geographic_scope: (() => {
+          const scope = one(db, 'SELECT * FROM context_holding_geographic_scope WHERE holding_id=?', holding.holding_id);
+          return scope && { ...scope, counties: rows(db, 'SELECT * FROM context_holding_scope_county WHERE holding_id=? ORDER BY ordinal', holding.holding_id) };
+        })(),
+        powers: rows(db, 'SELECT * FROM context_holding_power WHERE holding_id=? ORDER BY ordinal', holding.holding_id),
+      })), context: contextRows(db, id) },
+      historical: { gurps: historicalGurpsRows(db, id), superseded_holdings: holdingRows(db, id, 'superseded_outside_seoul'), superseded_context: supersededContextRows(db, id), context: { offices: rows(db, 'SELECT * FROM context_office_history WHERE person_id=? ORDER BY polity_id', id) }, feudal: historicalFeudalRows(db, id) }, unresolved: { holdings: holdingRows(db, id, 'unresolved'), context: { retinue_groups: retinueRows(db, id, 'unresolved') } },
     };
   });
 }

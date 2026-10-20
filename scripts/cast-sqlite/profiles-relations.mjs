@@ -184,7 +184,9 @@ export function mapProfiles({ bundle, identity, renderLoreMarkdown }) {
   for (const person of identity.people) {
     const cards = candidates.get(person.person_id);
     if (!cards?.length) fail('E_PROFILE_COVERAGE', person.person_id);
-    const primary = cards.find((card) => card.explicit) ?? cards.reduce((best, card) => card.length > best.length ? card : best);
+    const primary = cards.find((card) => card.explicit)
+      ?? cards.find((card) => card.profile.source_kind === 'state')
+      ?? cards.reduce((best, card) => card.length > best.length ? card : best);
     primary.profile.is_primary = 1;
   }
   return freezeRows({ profiles, profileNodes, profileFields });

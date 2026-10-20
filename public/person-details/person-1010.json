@@ -19,10 +19,10 @@
   "ageAsOf": "2126-12-31",
   "sourceStatus": "owner-authored",
   "sourceRefs": [
-    "lore/characters/Core-Characters.json#/content/181",
-    "lore/characters/Core-Characters.json#/content/182",
-    "lore/characters/Core-Characters.json#/content/186",
-    "lore/characters/Core-Characters.json#/content/187",
+    "lore/characters/Core-Characters.json#/content/160",
+    "lore/characters/Core-Characters.json#/content/161",
+    "lore/characters/Core-Characters.json#/content/164",
+    "lore/characters/Core-Characters.json#/content/165",
     "lore/chronology/Century-Annals.json#/content/485",
     "lore/chronology/Scenario-Timeline.json#/content/19",
     "lore/chronology/Scenario-Timeline.json#/content/22",
@@ -101,7 +101,7 @@
             },
             {
               "path": "lore/characters/Core-Characters.json",
-              "anchor": "/content/181"
+              "anchor": "신준-p2"
             }
           ]
         },
@@ -583,93 +583,46 @@
             "name": "신준",
             "url": "/people/person-1010",
             "state": "S14",
-            "method": "card-lexicon",
-            "role": {
-              "display": "미등록",
-              "evidence": []
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
             "skills": [],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 0,
               "spent": 0,
-              "unspent": 75,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": true,
-            "unit": {
-              "type": "수행원",
-              "size": 2,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 소세력 S00 규모",
-              "faction_scale": {
-                "state": "S00",
-                "tier": "소세력",
-                "factor": 0.7
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 2,
-              "current_location": "고가도로 야영지",
-              "camp": {
-                "name": "신준 야영지",
-                "type": "야영지",
-                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
-            },
-            "territory": null
+              "unspent": 75
+            }
           }
         }
       },
@@ -692,93 +645,46 @@
             "name": "신준",
             "url": "/people/person-1010",
             "state": "S14",
-            "method": "card-lexicon",
-            "role": {
-              "display": "미등록",
-              "evidence": []
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
             "skills": [],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 0,
               "spent": 0,
-              "unspent": 75,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": true,
-            "unit": {
-              "type": "수행원",
-              "size": 2,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 소세력 S00 규모",
-              "faction_scale": {
-                "state": "S00",
-                "tier": "소세력",
-                "factor": 0.7
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 2,
-              "current_location": "고가도로 야영지",
-              "camp": {
-                "name": "신준 야영지",
-                "type": "야영지",
-                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
-            },
-            "territory": null
+              "unspent": 75
+            }
           }
         }
       }
@@ -799,7 +705,6 @@
       "factor": 0.7
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 2,
@@ -849,13 +754,13 @@
   },
   "fields": {},
   "sections": {
-    "생애": "신준은 신종목의 아들이다. 2120년 4월 아버지와 강남구청 생활권으로 옮겼다. 폐역 방송과 무전 잡음, 차량 진동이 겹치면 낡은 호출 리듬과 경로의 단편을 떠올린다. 신종목은 그 반응을 현장 기록과 대조하고 신준의 동의와 휴식을 확인한다.",
-    "관직": "품계 없음. 직함 없음.",
-    "일화": "신종목과 보호자는 신준의 동의와 휴식을 확인하고 돌봄을 교대한다.",
+    "생애": "신준은 폐역 방송·무전 잡음·차량 진동이 겹칠 때 낡은 호출 리듬과 경로의 단편을 떠올린다. 신종목과 보호자는 그 반응을 현장 기록과 대조하고 신준의 동의와 휴식을 먼저 확인한다.",
+    "관직": "품계 없음. 직함 없음. 논현2동의 돌봄·동의·휴식 생활 기준점이 신준의 거주 참고다. 이 거주 참고는 정확한 거주지·시설 경계·작위·영지·점유권을 정하지 않는다. 선정릉·수서 연락을 곁에서 접하지만 귀환망의 직무는 맡지 않는다.",
+    "일화": "신종목과 보호자는 신준의 동의와 휴식을 확인한 뒤 돌봄 시간을 교대하고, 그 확인 시각을 다음 보호자에게 인계한다.",
     "가문": "신종목의 아들이다.",
-    "관계": "신종목의 아들."
+    "관계": "신종목의 아들이며 보호자들의 돌봄·동의·휴식 인계에 참여한다."
   },
-  "biography": "소속: 아관사(S14). 신종목의 아들이다. 개막(2126) 시점에 열두 살이다.\n\n**생애.** 신준은 신종목의 아들이다. 2120년 4월 아버지와 강남구청 생활권으로 옮겼다. 폐역 방송과 무전 잡음, 차량 진동이 겹치면 낡은 호출 리듬과 경로의 단편을 떠올린다. 신종목은 그 반응을 현장 기록과 대조하고 신준의 동의와 휴식을 확인한다.\n\n**관직.** 품계 없음. 직함 없음.\n\n**일화.** 신종목과 보호자는 신준의 동의와 휴식을 확인하고 돌봄을 교대한다.\n\n**가문.** 신종목의 아들이다.\n\n**관계.** 신종목의 아들.",
+  "biography": "소속은 아관사(S14)이며 신종목의 아들이다. 2114-01-01에 태어나 2126년 개막 현재 열두 살이다.\n\n**생애.** 신준은 폐역 방송·무전 잡음·차량 진동이 겹칠 때 낡은 호출 리듬과 경로의 단편을 떠올린다. 신종목과 보호자는 그 반응을 현장 기록과 대조하고 신준의 동의와 휴식을 먼저 확인한다.\n\n**관직.** 품계 없음. 직함 없음. 논현2동의 돌봄·동의·휴식 생활 기준점이 신준의 거주 참고다. 이 거주 참고는 정확한 거주지·시설 경계·작위·영지·점유권을 정하지 않는다. 선정릉·수서 연락을 곁에서 접하지만 귀환망의 직무는 맡지 않는다.\n\n**일화.** 신종목과 보호자는 신준의 동의와 휴식을 확인한 뒤 돌봄 시간을 교대하고, 그 확인 시각을 다음 보호자에게 인계한다.\n\n**가문.** 신종목의 아들이다.\n\n**관계.** 신종목의 아들이며 보호자들의 돌봄·동의·휴식 인계에 참여한다.",
   "sources": [
     "Core-Characters"
   ],

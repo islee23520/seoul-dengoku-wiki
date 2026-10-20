@@ -454,8 +454,8 @@
       }
     ],
     "narrative": {
-      "ko": "진영 이름보다 열차가 서는 층을 먼저 묻고 다국어 통행증을 대조한다. 한 언어 통행증에는 승강기를 열지 않는다. 환적을 잇는 언어 실무가 무장이나 국가 통제권을 주지는 않는다.",
-      "en": "He asks which floor a train stops on before asking its faction and compares multilingual passes. He will not open the lift for a single-language pass. Language work connecting transfers confers neither arms nor state control."
+      "ko": "진영 이름보다 열차가 서는 층을 먼저 묻고 다국어 통행증을 대조한다. 용산 생활 화물의 손수레 배차에서 통역 누락을 없애려 한다. 외국어 통행 금지문이 붙으면 이태원 숙소에서 용산 인계 창구로 가는 해당 손수레 인계가 하루 멈추고, 언어 누락 통행증은 대조가 끝날 때까지 인계문을 열지 않는다. 이 실무는 무장이나 국가 통제권을 주지 않는다.",
+      "en": "He asks which floor a train stops on before asking its faction and compares multilingual passes. He seeks to eliminate missing interpretation in handcart dispatch for everyday cargo in Yongsan. A foreign-language passage ban stops the affected handcart handover from Itaewon lodging to the Yongsan counter for one day; a permit with missing languages keeps the handover door closed until cross-checking is complete. This work confers neither arms nor state control."
     },
     "health": {
       "status": "unassessed",
@@ -517,41 +517,23 @@
             "name": "아미라 카심",
             "url": "/people/person-1013",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "전령 (주), 물류상 (부)",
-              "evidence": [
-                {
-                  "path": "lore/factions/Diaspora-Corridors.json",
-                  "pointer": "/content/12/items/9/ko",
-                  "quote": "생업: 전령 (주), 물류상 (부)"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -559,127 +541,35 @@
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/12/items/9/ko",
-                    "quote": "생업: 전령 (주), 물류상 (부)"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/12/items/9/ko",
-                    "quote": "생업: 전령 (주), 물류상 (부)"
-                  }
-                ],
-                "cp": 4,
-                "level": 11
-              }
-            ],
-            "languages": [
-              {
-                "name": "영어",
-                "level": "Native",
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/12/items/8/ko",
-                    "quote": "언어: 영어·아랍어 일상, 한국어 통행 용어"
-                  }
-                ]
-              },
-              {
-                "name": "아랍어",
-                "level": null,
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/12/items/8/ko",
-                    "quote": "언어: 영어·아랍어 일상, 한국어 통행 용어"
-                  }
-                ]
-              },
-              {
-                "name": "한국어",
-                "level": null,
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/12/items/8/ko",
-                    "quote": "언어: 영어·아랍어 일상, 한국어 통행 용어"
-                  }
-                ]
+                "level": 11,
+                "cp": 4
               }
             ],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 12,
-              "unspent": 63,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 2,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 소세력 S00 규모",
-              "faction_scale": {
-                "state": "S00",
-                "tier": "소세력",
-                "factor": 0.7
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 2,
-              "current_location": "남부 유동 야영지",
-              "camp": {
-                "name": "아미라 카심 야영지",
-                "type": "야영지",
-                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
-            },
-            "territory": null
+              "unspent": 63
+            }
           }
         }
       },
@@ -702,41 +592,23 @@
             "name": "아미라 카심",
             "url": "/people/person-1013",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "전령 (주), 물류상 (부)",
-              "evidence": [
-                {
-                  "path": "lore/factions/Diaspora-Corridors.json",
-                  "pointer": "/content/12/items/9/ko",
-                  "quote": "생업: 전령 (주), 물류상 (부)"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -744,127 +616,35 @@
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/12/items/9/ko",
-                    "quote": "생업: 전령 (주), 물류상 (부)"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/12/items/9/ko",
-                    "quote": "생업: 전령 (주), 물류상 (부)"
-                  }
-                ],
-                "cp": 4,
-                "level": 11
-              }
-            ],
-            "languages": [
-              {
-                "name": "영어",
-                "level": "Native",
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/12/items/8/ko",
-                    "quote": "언어: 영어·아랍어 일상, 한국어 통행 용어"
-                  }
-                ]
-              },
-              {
-                "name": "아랍어",
-                "level": null,
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/12/items/8/ko",
-                    "quote": "언어: 영어·아랍어 일상, 한국어 통행 용어"
-                  }
-                ]
-              },
-              {
-                "name": "한국어",
-                "level": null,
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/12/items/8/ko",
-                    "quote": "언어: 영어·아랍어 일상, 한국어 통행 용어"
-                  }
-                ]
+                "level": 11,
+                "cp": 4
               }
             ],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 12,
-              "unspent": 63,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 2,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 소세력 S00 규모",
-              "faction_scale": {
-                "state": "S00",
-                "tier": "소세력",
-                "factor": 0.7
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 2,
-              "current_location": "남부 유동 야영지",
-              "camp": {
-                "name": "아미라 카심 야영지",
-                "type": "야영지",
-                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
-            },
-            "territory": null
+              "unspent": 63
+            }
           }
         }
       }
@@ -885,7 +665,6 @@
       "factor": 0.7
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 2,
@@ -949,14 +728,14 @@
     "징집 이력": "없음",
     "무장 접근": "없음. 통행증과 숙소 열쇠",
     "성격": "진영 이름을 먼저 말하지 않고, 열차가 서는 층부터 묻는다",
-    "개인 야망": "용산 환적에서 통역 없는 열차를 없앤다",
     "공포": "한 진영이 「외국어 통행 금지」를 걸어 골목 숙소를 봉인하는 것",
     "통치·교섭 방식": "통행증 언어가 하나면 승강기를 열지 않는다",
     "주요 관계": "박태겸의 배차 가문과 계약. 용산 울타리 용역 조엘 박과 협력",
-    "촉발 사건": "통행 금지어가 붙으면 용산 환적이 하루 멈춘다"
+    "거주지": "이태원 통행 골목 숙소 (이태원1동 배치 제안; 필지 미정). 위치 참조이며 소유권을 부여하지 않는다.",
+    "업무 위치": "용산역 대합실 생활 화물 인계·배급 창구 및 예약 화물 창고. 위치 참조이며 소유권을 부여하지 않는다."
   },
   "sections": {},
-  "biography": "- 성명: 아미라 카심. 이태원 통행증에는 Amira. 한글 장부 아미라\n- 캐릭터 ID: K1013\n- 출생지: 이태원\n- 성별: 남성\n- 품계: 없음\n- 가치관: 권위 0 | 개방 50 | 무력 −30 | 물질 0 | 공동 20 | 원칙 40 | 공개 20 | 자격 0 | 분산 20 | 변혁 30\n- 욕망: 갈망 40 | 독점 −20 | 위험 −20 | 과시 −10 | 지속 40 | 지향 양성 | 결합 단혼\n- 출신 공동체: 이태원 통행 골목. 붕괴 전 통역·숙박. 아미라 카심은 2084년 이태원에서 태어났다. 이라크 아랍계 통역·숙박 가계에서 영어와 아랍어를 익히고, 환적국 배차 창구에서 한국어 통행 용어와 다국어 통행증을 대조한다. 통행증에 한 언어만 적혀 있으면 승강기를 열지 않는다. 할리드 카심은 2030년 이태원에서 이태원 민간 통역·숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아미라 카심의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.\n- 언어: 영어·아랍어 일상, 한국어 통행 용어\n- 생업: 전령 (주), 물류상 (부)\n- 소속: 환적국(S07). 이태원 통행 골목. 환적국 배차 창구의 통역 용역\n- 직위: 다국어 통행증 판독\n- 징집 이력: 없음\n- 무장 접근: 없음. 통행증과 숙소 열쇠\n- 성격: 진영 이름을 먼저 말하지 않고, 열차가 서는 층부터 묻는다\n- 개인 야망: 용산 환적에서 통역 없는 열차를 없앤다\n- 공포: 한 진영이 「외국어 통행 금지」를 걸어 골목 숙소를 봉인하는 것\n- 통치·교섭 방식: 통행증 언어가 하나면 승강기를 열지 않는다\n- 주요 관계: 박태겸의 배차 가문과 계약. 용산 울타리 용역 조엘 박과 협력\n- 촉발 사건: 통행 금지어가 붙으면 용산 환적이 하루 멈춘다",
+  "biography": "- 성명: 아미라 카심. 이태원 통행증에는 Amira. 한글 장부 아미라\n- 캐릭터 ID: K1013\n- 출생지: 이태원\n- 성별: 남성\n- 품계: 없음\n- 가치관: 권위 0 | 개방 50 | 무력 −30 | 물질 0 | 공동 20 | 원칙 40 | 공개 20 | 자격 0 | 분산 20 | 변혁 30\n- 욕망: 갈망 40 | 독점 −20 | 위험 −20 | 과시 −10 | 지속 40 | 지향 양성 | 결합 단혼\n- 출신 공동체: 이태원 통행 골목. 붕괴 전 통역·숙박. 아미라 카심은 2084년 이태원에서 태어났다. 이라크 아랍계 통역·숙박 가계에서 영어와 아랍어를 익히고, 환적국 배차 창구에서 한국어 통행 용어와 다국어 통행증을 대조한다. 통행증에 한 언어만 적혀 있으면 승강기를 열지 않는다. 할리드 카심은 2030년 이태원에서 이태원 민간 통역·숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아미라 카심의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.\n- 언어: 영어·아랍어 일상, 한국어 통행 용어\n- 생업: 전령 (주), 물류상 (부)\n- 소속: 환적국(S07). 이태원 통행 골목. 환적국 배차 창구의 통역 용역\n- 직위: 다국어 통행증 판독\n- 징집 이력: 없음\n- 무장 접근: 없음. 통행증과 숙소 열쇠\n- 성격: 진영 이름을 먼저 말하지 않고, 열차가 서는 층부터 묻는다\n- 용산 생활 화물 인계에서 통역 없는 손수레 배차를 없앤다.\n- 공포: 한 진영이 「외국어 통행 금지」를 걸어 골목 숙소를 봉인하는 것\n- 통치·교섭 방식: 통행증 언어가 하나면 승강기를 열지 않는다\n- 주요 관계: 박태겸의 배차 가문과 계약. 용산 울타리 용역 조엘 박과 협력\n- 외국어 통행 금지문이 붙으면 이태원 숙소에서 용산 인계 창구로 가는 해당 손수레 인계가 하루 멈춘다. 언어 누락 통행증은 대조가 끝날 때까지 인계문을 열지 않는다.\n- 거주지: 이태원 통행 골목 숙소 (이태원1동 배치 제안; 필지 미정). 위치 참조이며 소유권을 부여하지 않는다.\n- 업무 위치: 용산역 대합실 생활 화물 인계·배급 창구 및 예약 화물 창고. 위치 참조이며 소유권을 부여하지 않는다.",
   "sources": [
     "Diaspora-Corridors"
   ],

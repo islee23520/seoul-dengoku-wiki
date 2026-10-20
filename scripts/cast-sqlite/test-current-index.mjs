@@ -50,13 +50,32 @@ test('unlisted display aliases and ambiguous registry names are never guessed', 
   assert.throws(() => mapIndexDomains(duplicate), { code: 'E_INDEX_AMBIGUOUS_NAME' })
 })
 
-test('changed table shape or source authority does not silently alter normalization', () => {
+test('authored draft and approved statuses are preserved without promoting index scope', () => {
+  const actual = fixture()
+  const baseline = mapIndexDomains(actual)
+  assert.deepEqual(baseline.index_document.map(row => row.source_status), actual.bundle.files.map(file => file.document.status))
+  for (const status of ['draft', 'approved']) {
+    const changed = fixture()
+    for (const file of changed.bundle.files) file.document.status = status
+    const rows = mapIndexDomains(changed)
+    assert.deepEqual(rows.index_document, baseline.index_document.map(row => ({ ...row, source_status: status })))
+    for (const table of Object.keys(INDEX_TABLE_COLUMNS).filter(table => table !== 'index_document')) {
+      assert.deepEqual(rows[table], baseline[table])
+    }
+  }
+})
+
+test('changed table shape or unsupported source contract does not silently alter normalization', () => {
   const width = fixture()
   width.bundle.files[1].document.content.find(block => block.kind === 'table').rows[0].pop()
   assert.throws(() => mapIndexDomains(width), { code: 'E_INDEX_ROW_WIDTH' })
-  const source = fixture()
-  source.bundle.files[1].document.status = 'approved'
-  assert.throws(() => mapIndexDomains(source), { code: 'E_INDEX_SOURCE_CONTRACT' })
+  for (const index of paths.keys()) {
+    for (const change of [{ status: 'unknown' }, { source: { kind: 'external-reference' } }, { domain: 'unknown' }]) {
+      const source = fixture()
+      Object.assign(source.bundle.files[index].document, change)
+      assert.throws(() => mapIndexDomains(source), { code: 'E_INDEX_SOURCE_CONTRACT' })
+    }
+  }
 })
 
 test('STRICT SQL schema accepts the full indexed corpus and preserves FK links', () => {

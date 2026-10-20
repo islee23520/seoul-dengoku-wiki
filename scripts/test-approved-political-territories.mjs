@@ -1,6 +1,9 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
+import { authenticateNonowningRights, loadApprovedRightsHistory, projectCatalogCurrentHoldings, projectCatalogOutsideOccupation, projectPersonHoldings } from './generate-catalog.mjs'
+import { projectHistoricalOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
+import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
 const approved = JSON.parse(readFileSync(new URL('./fixtures/approved-political-partition.json', import.meta.url), 'utf8'))
 const json = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
 
@@ -16,10 +19,11 @@ test('approved Seoul sovereignty covers 427 unchanged dong including all five en
   assert.equal(map.landmarks.find(site => site.id === 'n-seoul-tower').holderId, 'S08')
 })
 
-test('Daejeon grants cover all 82 units once with exact direct demesne and vassals', () => {
-  const ledger = json('lore/relations/personal-holdings.json')
-  const geometry = json('public/outside-admin-units.json')
-  const control = json('public/outside-control-2126.json')
+test('authenticated historical Daejeon grants cover all 82 units once with exact direct demesne and vassals', async () => {
+  const { historical } = await loadApprovedRightsHistory()
+  const ledger = historical.existing
+  const geometry = historical.outside
+  const control = historical.control
   const holdings = ledger.holdings.filter(holding => holding.stateId === 'polity:daejeon')
   const expected = { 동구: ['K1008', null, 16], 유성구: ['K1008', null, 13], 중구: ['K035', 'K1008', 17], 서구: ['K039', 'K1008', 24], 대덕구: ['K038', 'K1008', 12] }
   assert.equal(holdings.length, 5)
@@ -40,17 +44,71 @@ test('Daejeon grants cover all 82 units once with exact direct demesne and vassa
   assert.deepEqual([group.count, group.liegePersonId, group.holdingIds, group.formalTitle], [24, 'K1008', [], null])
   assert.deepEqual(group.duties, ['농업','지역 통신','보급','정비'])
   assert.equal(group.personhoodReview, 'individual')
-  const detail = json('public/person-details/person-1008.json')
-  assert.deepEqual(detail.retinueGroups, ledger.retinueGroups)
-  assert.deepEqual(detail.sovereignTitle, sovereign)
+  const current = json('lore/relations/personal-holdings.json')
+  assert.deepEqual(current.retinueGroups, ledger.retinueGroups)
+  const currentSovereign = current.polities.find(polity => polity.id === sovereign.id)
+  assert.deepEqual(currentSovereign, { ...sovereign, territorialScale: null, directOwnership: false, politicalTitleId: 'title:kingdom-daejeon' })
 })
 
+test('approved current rights retain Seoul property and only limited nonowning Daejeon jurisdiction', async () => {
+  const { historical } = await loadApprovedRightsHistory()
+  const people = json('lore/name-pools/gurps-cast.json').people
+  const seoul = json('public/opening-territories.json')
+  const currentControl = json('lore/regions/outside-control-2126.json')
+  const currentIslands = json('lore/regions/outside-island-occupation.json')
+  const control = await projectCatalogOutsideOccupation(currentControl, historical.outside, currentIslands)
+  assert.deepEqual(control.assignments, [])
+  const args = { people, seoul, control, outside: { ...historical.outside, islands: [] },
+    affiliation: json('lore/factions/Sixteen-States.json').data.currentAffiliation,
+    existing: json('lore/relations/personal-holdings.json'), allocation: json('lore/relations/opening-feudal-allocation.json') }
+  const context = { issuedById: new Map(people.map(person => [person.id, person])), territoryStates: seoul.states,
+    openingTerritories: seoul, projectedLandmarks: seoul.landmarks, stationInteriors: json('lore/regions/station-interiors.json'),
+    seoulGraph: json('snapshots/build-inputs/SeoulWorldGraph.json'), outsideGeometry: historical.outside,
+    repoRoot: new URL('../', import.meta.url).pathname, geography: json('lore/regions/seoul-electoral-titles.json') }
+  const original = projectHistoricalOpeningFeudalAllocation({ ...args, ...historical })
+  assert.equal(original.summary.coveredEntitlements, 1939)
+  const projected = await projectCatalogCurrentHoldings({ ...args, geographicScale: buildAdminTerritorialScale({
+    geographyBytes: readFileSync(new URL('../lore/regions/seoul-electoral-titles.json', import.meta.url)),
+    territorialScale: json('lore/offices/Offices-and-Ranks.json').data.territorialScale,
+  }) }, context)
+  assert.deepEqual([projected.summary.heldSeoulRegions, projected.summary.heldOutsideUnits, projected.summary.heldComponents,
+    projected.summary.unassignedComponents, projected.summary.coveredEntitlements], [427, 0, 0, 0, 427])
+  const direct = original.holdings.filter(row => !row.componentRefs?.length && row.adminRefs.every(ref => ref.id.startsWith('region:11')))
+  assert.equal(direct.length, 51)
+  assert.deepEqual(projected.holdings.filter(row => row.kind !== 'superior-jurisdiction'), direct)
+  const approval = authenticateNonowningRights(readFileSync(new URL('./approved-daejeon-nonowning-rights.json', import.meta.url)))
+  const jurisdictions = projected.holdings.filter(row => row.kind === 'superior-jurisdiction')
+  assert.equal(jurisdictions.length, 5)
+  for (const right of approval.contract.rights) {
+    const holding = jurisdictions.find(row => row.id === right.holdingId)
+    assert.deepEqual([holding.holderPersonId, holding.directLiegePersonId, holding.geographicScope],
+      [right.holderPersonId, right.personalLiegePersonId, right.geographicScope])
+    assert.deepEqual([holding.directOwnership, holding.adminRefs, holding.geometrySource, holding.capabilityPackageId, holding.powers],
+      [false, [], null, 'proposal:registry-notice-and-objection-v1', ['receive-holding-change-notice', 'lodge-nonbinding-registry-objection']])
+  }
+  for (const person of people) {
+    const view = projectPersonHoldings(projected, person.id, context.issuedById, people)
+    assert.deepEqual(view.confirmedHoldings, direct.filter(row => row.holderPersonId === person.id))
+    assert.ok((view.subordinateHoldings ?? []).every(row => row.kind !== 'superior-jurisdiction'))
+  }
+  const royal = projectPersonHoldings(projected, 'K1008', context.issuedById, people)
+  assert.deepEqual(royal.confirmedHoldings, [])
+  assert.equal(royal.subordinateHoldings, undefined)
+  assert.equal(royal.superiorJurisdictions.length, 2)
+  const revived = structuredClone(currentControl)
+  revived.assignments.push(structuredClone(historical.control.assignments[0]))
+  await assert.rejects(projectCatalogOutsideOccupation(revived, historical.outside, currentIslands), /E_OUTSIDE_RETIREMENT_CURRENT_CONTROL/)
+  const unknown = { ...args, ...structuredClone(historical) }
+  unknown.allocation.titles[0].jurisdictionRefs.push('region:unknown')
+  assert.throws(() => projectHistoricalOpeningFeudalAllocation(unknown), /E_TITLE_JURISDICTION:/)
+})
 
-test('outside authority matches the complete owner-approved city partition rather than matching totals', () => {
-  const units = json('public/outside-admin-units.json').units
-  const assignments = json('public/outside-control-2126.json').assignments
+test('authenticated historical outside authority matches the complete owner-approved city partition rather than matching totals', async () => {
+  const { historical } = await loadApprovedRightsHistory()
+  const units = historical.outside.units
+  const assignments = historical.control.assignments
   const cities = Object.values(approved.gyeonggiCities).flat()
-  const islandUnits = new Set(json(approved.source.correction.islandSource).units.map(unit => unit.unitId))
+  const islandUnits = new Set(historical.outside.islands.map(unit => unit.unitId))
   assert.equal(new Set(cities).size, 31)
   const expected = units.map(unit => {
     if (islandUnits.has(unit.id)) return [unit.id, null]
@@ -72,18 +130,21 @@ test('the exact baseline S08 region and station sets transfer completely to S02'
   assert.deepEqual(map.stations.filter(row => approved.oldS08.stationIds.includes(row.id)).map(row => [row.id, row.control.polityIds]).sort(), approved.oldS08.stationIds.map(id => [id, ['S02']]).sort())
 })
 
-test('external organizations retain identity while approved city corrections change their authority', () => {
+test('retired external markers preserve approved political identities without current property grants', async () => {
   const map = json('public/opening-territories.json')
-  const approvedMembership = new Map(Object.entries(approved.approvedStateMembership).flatMap(([name, ids]) => ids.map(id => [id, name])))
-  assert.equal(approved.priorVassals.length, 13)
-  assert.ok(approved.priorVassals.every(row => approvedMembership.has(row.suzerain)))
-  assert.deepEqual(map.vassals.map(row => row.name).sort(), approved.priorVassals.map(row => row.name).sort())
-  assert.equal(new Set(approved.conflictingExternalLinks).size, approved.conflictingExternalLinks.length)
-  assert.deepEqual(map.vassals.map(row => [row.name, row.authorityName, row.suzerain]).sort(), approved.externalDestinations.map(row => [row.name, row.authority, row.suzerain]).sort())
-  const changed = approved.priorVassals.filter(previous => {
-    const current = map.vassals.find(row => row.name === previous.name)
-    assert.ok(current, previous.name)
-    return approvedMembership.get(previous.suzerain) !== current.authorityName
-  }).map(row => row.name).sort()
-  assert.deepEqual(changed, [...approved.conflictingExternalLinks].sort())
+  assert.deepEqual(map.vassals, [])
+  const { historical, transition } = await loadApprovedRightsHistory()
+  const allocation = json('lore/relations/opening-feudal-allocation.json')
+  const retired = historical.allocation.titles.filter(title => transition.records.some(row =>
+    row.set === 'titles' && row.oldId === title.id && row.disposition === 'retired-current'))
+  assert.ok(retired.length > 0)
+  assert.deepEqual(allocation.politicalIdentities, retired.map(title => ({
+    id: title.id, kind: 'nonterritorial-political-identity', rank: title.rank,
+    holderPersonId: title.holderPersonId, stateId: title.stateId,
+    politicalParentTitleId: title.parentTitleId ?? null,
+    personalLieges: historical.allocation.grants.filter(grant => grant.titleId === title.id)
+      .map(grant => ({ holdingId: grant.id, directLiegePersonId: grant.directLiegePersonId })),
+    directOwnership: false,
+  })))
+  assert.ok(allocation.grants.every(grant => !retired.some(title => title.id === grant.titleId)))
 })

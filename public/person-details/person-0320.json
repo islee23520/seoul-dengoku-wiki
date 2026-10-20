@@ -444,52 +444,23 @@
             "name": "근솔이",
             "url": "/people/person-0320",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "시장 유찰 시각·최고가 게시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/248/items/0/ko",
-                  "quote": "생업: 시장 유찰 시각·최고가 게시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "유찰 시각과 최고가를 벽에 적고, 무기 문장이 찍힌 입찰서는 복용의 시장 게시 전까지 봉한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/250/text/ko",
-                    "quote": "근솔이는 입찰서를 봉해 복용의 시장 게시를 기다리게 하고, 유찰 시각과 최고가를 벽에 적은 다음 흥예나의 가락 유찰 원장과 품목을 비교한다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -497,94 +468,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/248/items/0/ko",
-                    "quote": "생업: 시장 유찰 시각·최고가 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "유찰 시각과 최고가를 벽에 적고, 무기 문장이 찍힌 입찰서는 복용의 시장 게시 전까지 봉한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/250/text/ko",
-                    "quote": "근솔이는 입찰서를 봉해 복용의 시장 게시를 기다리게 하고, 유찰 시각과 최고가를 벽에 적은 다음 흥예나의 가락 유찰 원장과 품목을 비교한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/248/items/0/ko",
-                    "quote": "생업: 시장 유찰 시각·최고가 게시"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "대성리",
-              "type": "초소 영지",
-              "station": "대성리",
-              "state": "S12",
-              "settlement": {
-                "name": "대성리 정착지",
-                "type": "정착지",
-                "description": "대성리 일대 고정 거점"
-              },
-              "note": "S12 대성리 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -608,52 +519,23 @@
             "name": "근솔이",
             "url": "/people/person-0320",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "시장 유찰 시각·최고가 게시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/248/items/0/ko",
-                  "quote": "생업: 시장 유찰 시각·최고가 게시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "유찰 시각과 최고가를 벽에 적고, 무기 문장이 찍힌 입찰서는 복용의 시장 게시 전까지 봉한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/250/text/ko",
-                    "quote": "근솔이는 입찰서를 봉해 복용의 시장 게시를 기다리게 하고, 유찰 시각과 최고가를 벽에 적은 다음 흥예나의 가락 유찰 원장과 품목을 비교한다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -661,94 +543,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/248/items/0/ko",
-                    "quote": "생업: 시장 유찰 시각·최고가 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "유찰 시각과 최고가를 벽에 적고, 무기 문장이 찍힌 입찰서는 복용의 시장 게시 전까지 봉한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/250/text/ko",
-                    "quote": "근솔이는 입찰서를 봉해 복용의 시장 게시를 기다리게 하고, 유찰 시각과 최고가를 벽에 적은 다음 흥예나의 가락 유찰 원장과 품목을 비교한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/248/items/0/ko",
-                    "quote": "생업: 시장 유찰 시각·최고가 게시"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "대성리",
-              "type": "초소 영지",
-              "station": "대성리",
-              "state": "S12",
-              "settlement": {
-                "name": "대성리 정착지",
-                "type": "정착지",
-                "description": "대성리 일대 고정 거점"
-              },
-              "note": "S12 대성리 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -769,18 +591,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "대성리",
-    "type": "초소 영지",
-    "station": "대성리",
-    "state": "S12",
-    "settlement": {
-      "name": "대성리 정착지",
-      "type": "정착지",
-      "description": "대성리 일대 고정 거점"
-    },
-    "note": "S12 대성리 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -821,15 +631,15 @@
     "욕망": "갈망 25 | 독점 −20 | 위험 −25 | 과시 30 | 지속 −10 | 지향 유동 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 중립시장 경매 유찰 관계자 자리는 저울 재점검 공개로 열렸다.",
+    "생애": "2085-02-01에 태어났다. 노량진 선창에서 자랐다. 2126년 개막에는 중립시장 경매 유찰 관계자 당직을 맡으며, 직위 인수 기록에는 저울 재점검 공개로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 근솔이의 시장 유찰 시각·최고가 게시 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
     "관직": "품계 호송원. 직함은 중립시장 경매 유찰 관계자. 유찰 시각과 최고가를 벽에 적고, 무기 문장이 찍힌 입찰서는 복용의 시장 게시 전까지 봉한다.",
     "일화": "무기 문장이 찍힌 입찰서가 유찰된 응급 물자 칸을 통째로 사겠다며 들어온다. 근솔이는 입찰서를 봉해 복용의 시장 게시를 기다리게 하고, 유찰 시각과 최고가를 벽에 적은 다음 흥예나의 가락 유찰 원장과 품목을 비교한다.",
     "관계": "복용의 중립시장 시세와 유찰 종을 맞추고, 흥예나의 가락 유찰 원장과 품목을 비교한다. 오해린의 시세 방송은 시장 시간에만 참고한다.",
-    "야망": "유찰된 응급 물자 칸을 공개 재경매로만 풀어 외부 선매가 바닥 시세를 통째로 사지 못하게 한다.",
+    "야망": "유찰된 응급 물자 칸을 공개 재경매로만 풀어 외부 선매가 바닥 시세를 통째로 사지 못하게 하려 한다.",
     "공포": "유찰 기록이 지워진 뒤 자신이 없는 낙찰의 보증인이 되는 것.",
     "개입": "유찰 원장을 공개해 선매를 막거나, 빈 저울에 외부 입찰을 앉힐 수 있다."
   },
-  "biography": "유찰 종소리보다 빈 저울을 오래 보고, 군수 문장 입찰을 시세로 포장하는 중개인을 쫓아낸다. 외상 장부를 사람 얼굴보다 먼저 읽는다.\n\n- 생업: 시장 유찰 시각·최고가 게시\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 중립시장 경매 유찰 관계자\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 중립시장 경매 유찰 관계자 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 호송원. 직함은 중립시장 경매 유찰 관계자. 유찰 시각과 최고가를 벽에 적고, 무기 문장이 찍힌 입찰서는 복용의 시장 게시 전까지 봉한다.\n\n**일화.** 무기 문장이 찍힌 입찰서가 유찰된 응급 물자 칸을 통째로 사겠다며 들어온다. 근솔이는 입찰서를 봉해 복용의 시장 게시를 기다리게 하고, 유찰 시각과 최고가를 벽에 적은 다음 흥예나의 가락 유찰 원장과 품목을 비교한다.\n\n**관계.** 복용의 중립시장 시세와 유찰 종을 맞추고, 흥예나의 가락 유찰 원장과 품목을 비교한다. 오해린의 시세 방송은 시장 시간에만 참고한다.\n\n**야망.** 유찰된 응급 물자 칸을 공개 재경매로만 풀어 외부 선매가 바닥 시세를 통째로 사지 못하게 한다.\n\n**공포.** 유찰 기록이 지워진 뒤 자신이 없는 낙찰의 보증인이 되는 것.\n\n**개입.** 유찰 원장을 공개해 선매를 막거나, 빈 저울에 외부 입찰을 앉힐 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −30 | 물질 10 | 공동 20 | 원칙 0 | 공개 15 | 자격 15 | 분산 35 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −20 | 위험 −25 | 과시 30 | 지속 −10 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "2085-02-01생인 근솔이는 유찰 종소리보다 빈 저울을 오래 보고, 군수 문장 입찰을 시세로 포장하는 중개인을 쫓아낸다. 외상 장부를 사람 얼굴보다 먼저 읽는다.\n\n- 생업: 시장 유찰 시각·최고가 게시\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 중립시장 경매 유찰 관계자\n**생애.** 2085-02-01에 태어났다. 노량진 선창에서 자랐다. 2126년 개막에는 중립시장 경매 유찰 관계자 당직을 맡으며, 직위 인수 기록에는 저울 재점검 공개로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 근솔이의 시장 유찰 시각·최고가 게시 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 중립시장 경매 유찰 관계자. 유찰 시각과 최고가를 벽에 적고, 무기 문장이 찍힌 입찰서는 복용의 시장 게시 전까지 봉한다.\n\n**일화.** 무기 문장이 찍힌 입찰서가 유찰된 응급 물자 칸을 통째로 사겠다며 들어온다. 근솔이는 입찰서를 봉해 복용의 시장 게시를 기다리게 하고, 유찰 시각과 최고가를 벽에 적은 다음 흥예나의 가락 유찰 원장과 품목을 비교한다.\n\n**관계.** 복용의 중립시장 시세와 유찰 종을 맞추고, 흥예나의 가락 유찰 원장과 품목을 비교한다. 오해린의 시세 방송은 시장 시간에만 참고한다.\n\n**야망.** 유찰된 응급 물자 칸을 공개 재경매로만 풀어 외부 선매가 바닥 시세를 통째로 사지 못하게 하려 한다.\n\n**공포.** 유찰 기록이 지워진 뒤 자신이 없는 낙찰의 보증인이 되는 것.\n\n**개입.** 유찰 원장을 공개해 선매를 막거나, 빈 저울에 외부 입찰을 앉힐 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −30 | 물질 10 | 공동 20 | 원칙 0 | 공개 15 | 자격 15 | 분산 35 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −20 | 위험 −25 | 과시 30 | 지속 −10 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-12"
   ],

@@ -29,12 +29,12 @@
   "locales": {
     "en": {
       "title": "Offices and Ranks",
-      "summary": "The titles of Seoul in 2126 were not game terms.",
+      "summary": "Office tiers and duties, political kingship, geographic titles and personal holdings are distinct in Seoul in 2126.",
       "tense": "past"
     },
     "ko": {
       "title": "관직",
-      "summary": "2126년 서울의 직함은 게임 용어가 아니다.",
+      "summary": "2126년 서울의 관직 품계와 직무, 정치적 왕격, 지리 작위와 개인 보유권을 구분한다.",
       "tense": "past"
     }
   },
@@ -70,8 +70,8 @@
       "kind": "paragraph",
       "anchor": "관직-p1",
       "text": {
-        "en": "The titles of Seoul in 2126 were not game terms. They were seats people in Korea understood in 2026, or seats Joseon had used before that. For a hand to open water and stamp the registers after the call mesh died, it had to hold rank.",
-        "ko": "2126년 서울의 직함은 2026년 한국의 기관 직제와 조선 관직에서 왔다. 호출망이 멈춘 뒤 수문을 열거나 명부에 서명하는 사람에게 품계를 매겼다."
+        "ko": "2126년 서울의 직함은 2026년 한국의 기관 직제와 조선 관직에서 왔다. 호출망이 멈춘 뒤 수문을 열거나 명부에 서명하는 사람에게 품계를 매겼다. 품계는 맡은 일을 구분하는 기준이며, 품계만으로 시설 사용이나 수문 개방 권한을 얻지는 않는다.",
+        "en": "The titles used in Seoul in 2126 came from Korean institutional offices in 2026 and older Joseon offices. After the call mesh stopped, people who opened sluices or signed registers were assigned grades. A grade distinguished their duties; it did not by itself authorize facility use or the opening of a sluice."
       }
     },
     {
@@ -96,8 +96,8 @@
       "kind": "paragraph",
       "anchor": "관직-p2",
       "text": {
-        "en": "The sixteen states used five office tiers, with titles differing by institution.",
-        "ko": "십육국은 다섯 층의 품계를 쓰며 직함은 나라별 기관에서 다르게 정하였다."
+        "ko": "십육국에서 이어진 기관은 다섯 층의 품계를 쓰며 직함은 기관마다 다르게 정하였다. 2126년의 세 정치 세력과 그 안에 존속한 전신국·봉신의 정체성은 이 관직 분류와 구분한다.",
+        "en": "Institutions inherited from the sixteen states used five office tiers, with different titles in each institution. The three political factions of 2126 and the identities of their surviving predecessor states and vassals were distinct from this classification of offices."
       }
     },
     {
@@ -122,8 +122,8 @@
       "kind": "paragraph",
       "anchor": "관직-p3",
       "text": {
-        "en": "There was no emperor tier. Seoul had no son of heaven. The heads of the sixteen states did not call one another king. What they called each other was the tier-1 title of that nation; only the layer the ledgers assigned was of king rank.",
-        "ko": "황제 층은 없다. 서울에 천자는 없다. 십육국 수장은 서로를 왕이라 부르지 않고 그 나라 티어 1의 직함으로 부른다. 장부에 매긴 층만 왕급이다."
+        "ko": "이 관직표에는 황제 직위를 두지 않는다. 십육국에서 이어진 수장은 서로를 왕이라 부르기보다 각 기관의 티어 1 직함으로 부른다. 기존의 왕격은 정치적 지위이며 지리 왕국 보유와 같지 않다. 서울 전체를 제국의 지리 관할로 정한 것은 황제 임명이나 서울의 통일 지배를 뜻하지 않는다.",
+        "en": "This table of offices contains no emperor post. Leaders inherited from the sixteen states address one another by their institutions’ tier-1 titles rather than as kings. Their existing royal grade is a political status, not ownership of a geographic kingdom. Defining all Seoul as the empire’s geographic jurisdiction neither appoints an emperor nor establishes unified rule over Seoul."
       }
     },
     {
@@ -157,8 +157,8 @@
       "kind": "paragraph",
       "anchor": "다섯-층-p1",
       "text": {
-        "en": "The baron, count, duke, king, and court figures of Crusader Kings were layers of land. The opening fixed those layers as tiers 1 through 5 and wrote the names apart only by form of government and institutional rank. The feudal operating houses read from stationmaster down to jusa clerk; the military governments from commander down to byeongjang; the theocracies from Moderator, archbishop, and spiritual director down to gyosa, gyowoo, and sindo; the commercial states from chairman, guild head, presiding chair, company president, or order head down to jikwon, johapwon, hosongwon, and hoewon.",
-        "ko": "다섯 층의 티어는 1부터 5까지이다. 봉건 운영가문은 역장부터 주사까지, 군정은 사령관부터 병장까지 직함을 쓴다. 신정의 티어 1은 당회장·대주교·방장 중 하나이며 티어 5는 교사·교우·신도 중 하나이다. 상업 국가의 티어 1은 회장·위원장·의장·사장·단장 중 하나이며 티어 5는 직원·조합원·호송원·회원 중 하나이다."
+        "ko": "다섯 층의 관직 티어는 1부터 5까지이며 영토의 다섯 단계와 별개다. 봉건 운영가문은 역장부터 주사까지, 군정은 사령관부터 병장까지 직함을 쓴다. 신정의 티어 1은 당회장·대주교·방장 중 하나이며 티어 5는 교사·교우·신도 중 하나이다. 상업 국가의 티어 1은 회장·위원장·의장·사장·단장 중 하나이며 티어 5는 직원·조합원·호송원·회원 중 하나이다. 이 직함은 기관의 업무와 승계를 설명하며 행정동 슬롯이나 지역구 전체를 자동으로 수여하지 않는다.",
+        "en": "The five office tiers run from 1 to 5 and are separate from the five geographic ranks. Feudal operating houses use titles from Stationmaster down to jusa clerk, and military administrations from Commander down to byeongjang sergeant. Theocratic tier-1 titles include Moderator, Archbishop and Spiritual Director, and tier-5 titles gyosa teacher, gyowu fellow and sindo lay believer. Commercial tier-1 titles include Chairman, Guild Head, Presiding Chair, Company President and Order Head, and tier-5 titles jikwon staff, johapwon unionist, hosongwon escort hand and hoewon member. These titles describe institutional duties and succession; they do not automatically grant an administrative-dong slot or an entire constituency."
       }
     },
     {
@@ -170,16 +170,16 @@
           "ko": "티어"
         },
         {
-          "en": "CK mapping",
-          "ko": "CK 대응"
+          "ko": "옛 비교 호칭",
+          "en": "Former comparison term"
         },
         {
           "en": "Old Joseon office",
           "ko": "옛 조선 관직"
         },
         {
-          "en": "Unit ruled",
-          "ko": "다스리는 단위"
+          "ko": "맡은 직무의 범위",
+          "en": "Scope of assigned duties"
         }
       ],
       "rows": [
@@ -197,8 +197,8 @@
             "ko": "수령"
           },
           {
-            "en": "One of the sixteen states",
-            "ko": "십육국 한 나라"
+            "ko": "기관의 수장 직무; 기존 정치적 왕격과 지리 왕국 보유는 별개",
+            "en": "Leadership of the institution; existing political kingship is separate from geographic kingdom ownership"
           }
         ],
         [
@@ -215,8 +215,8 @@
             "ko": "판서"
           },
           {
-            "en": "The great matters within a state — water, escort, registers, repair",
-            "ko": "나라 안의 큰 일 — 물·호위·명부·수리"
+            "ko": "기관의 주요 사안 — 물·호위·명부·수리; 공작령 수여와 별개",
+            "en": "Major institutional affairs — water, escort, registers and repair; separate from a duchy grant"
           }
         ],
         [
@@ -233,8 +233,8 @@
             "ko": "군수"
           },
           {
-            "en": "One gu, the living sphere of a great station",
-            "ko": "한 구, 큰 역 생활권"
+            "ko": "행정 직무의 범위; 지리 작위·역 전체 소유와 별개",
+            "en": "Scope of administrative duties; separate from geographic titles or ownership of an entire station"
           }
         ],
         [
@@ -251,8 +251,8 @@
             "ko": "현감"
           },
           {
-            "en": "One station, one sluice, one market",
-            "ko": "역 하나, 수문 하나, 시장 하나"
+            "ko": "역·수문·시장 등 단위 시설의 담당 업무; 남작령 슬롯 보유와 별개",
+            "en": "Assigned work at an individual station, sluice, market or other facility; separate from holding a barony slot"
           }
         ],
         [
@@ -269,8 +269,8 @@
             "ko": "참하"
           },
           {
-            "en": "No land. Signature and watch only",
-            "ko": "땅이 없다. 서명과 당직만 있다"
+            "ko": "토지를 수반하지 않는 서명·당직 업무; 개인의 별도 보유 기록은 따로 확인",
+            "en": "Landless signature and watch duties; any separate personal holding requires its own record"
           }
         ]
       ]
@@ -297,8 +297,8 @@
       "kind": "paragraph",
       "anchor": "다섯-층-p3",
       "text": {
-        "en": "Rulers held tier one, while facility staff held lower tiers. States used different titles for the same five levels.",
-        "ko": "수장은 티어 1이고 단일 시설의 당직은 아래 품계에 놓인다. 각국은 같은 다섯 층을 서로 다른 직함으로 불렀다."
+        "ko": "수장은 티어 1이고 단일 시설의 당직은 아래 품계에 놓인다. 각 기관은 같은 다섯 층을 서로 다른 직함으로 불렀다. 실제 업무와 서명·출입·시설 운영 권한은 해당 직무의 기록을 따른다. 티어가 같아도 권한이 같지는 않으며, 높은 티어라고 지리 작위나 토지를 자동으로 얻지는 않는다.",
+        "en": "Rulers held tier 1, while staff on duty at individual facilities held lower tiers. Each institution used its own titles for the same five levels. Actual duties and authority to sign, enter or operate a facility follow the record of the particular post. Equal tiers do not imply equal powers, and a higher tier does not automatically confer a geographic title or land."
       }
     },
     {
@@ -367,8 +367,8 @@
       "kind": "paragraph",
       "anchor": "대한민국정부-p1",
       "text": {
-        "en": "President—Minister—Vice Minister—Director General—jusa clerk. The ranks the Government Complex Seoul main building had used. The president at tier 1 was elected by the duty houses. Only the civil-service houses that had inherited the duty, generation after generation, held a vote. It was an aristocratic election that kept only the form of democracy. In 2126, Ministers, Vice Ministers, and Directors General divided the records, distribution, and approvals at Cheong Wa Dae and the affairs of districts and stations. The Government Complex Seoul main building handled security and passage at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga. The jusa clerk held no land. The government ruled Jongno and Jung-gu directly, and the duty houses fought over control of the city center and over the factions among themselves.",
-        "ko": "대통령, 장관, 차관, 국장, 주사는 정부서울청사 본관이 쓰던 직급이다. 티어 1인 대통령은 당직 가문들이 선거로 뽑는다. 대대로 당직을 세습한 공무원 가문만 표를 쥔다. 민주의 형식만 남은 귀족 선거다. 2126년 장관, 차관, 국장은 청와대의 기록·배급·인준과 구·역의 일을 나눠 맡았다. 정부서울청사 본관은 광화문·종로3가·을지로입구의 경비와 통행을 맡았다. 주사는 땅이 없다. 정부는 종로·중구를 직접 다스리고, 당직 가문들은 도심 통제와 내분을 주변으로 두고 싸운다."
+        "en": "President—Minister—Vice Minister—Director General—jusa clerk. The ranks the Government Complex Seoul main building had used. The president at tier 1 was elected by the duty houses. Only the civil-service houses that had inherited the duty, generation after generation, held a vote. It was an aristocratic election that kept only the form of democracy. In 2126, Ministers, Vice Ministers, and Directors General divided the records, distribution, and approvals at Cheong Wa Dae and the affairs of districts and stations. The Government Complex Seoul main building handled security and passage at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga. The jusa clerk held no land. Jongno and Jung-gu were the government's political center, and the duty houses fought over control of the city center and over the factions among themselves; that central role did not establish territorial ownership.",
+        "ko": "대통령, 장관, 차관, 국장, 주사는 정부서울청사 본관이 쓰던 직급이다. 티어 1인 대통령은 당직 가문들이 선거로 뽑는다. 대대로 당직을 세습한 공무원 가문만 표를 쥔다. 민주의 형식만 남은 귀족 선거다. 2126년 장관, 차관, 국장은 청와대의 기록·배급·인준과 구·역의 일을 나눠 맡았다. 정부서울청사 본관은 광화문·종로3가·을지로입구의 경비와 통행을 맡았다. 주사는 땅이 없다. 종로·중구는 정부의 정치 중심이고 당직 가문들은 도심 통제와 내분을 둘러싸고 싸우지만, 그 중심성은 영토 소유를 뜻하지 않는다."
       }
     },
     {
@@ -445,8 +445,8 @@
       "kind": "paragraph",
       "anchor": "동방사-아관사-p1",
       "text": {
-        "en": "Commander—Chief of Staff—Battalion Commander—Company Commander—byeongjang sergeant. The military ranks where the conscription remnants and the treatment watch were bound together. The Amsa Station commander read waterworks protection as emergency superintendence, and the Guui Station commander had still not gathered sluices and the Achasan outposts into one hand. The Chief of Staff bore the great matters within the state, the Battalion Commander the gu, the Company Commander one bridge or ridge, and the byeongjang the watch that carried a signature alone.",
-        "ko": "사령관, 참모장, 대대장, 중대장, 병장은 징집 잔존과 정수 당직이 묶인 군정 체제이다. 암사역 사령관은 상수 보호를 비상감독으로 수행한다. 2121년 공동 명령서에 동방사와 아관사의 구의 수문·아차산 관문 당직을 함께 적었다. 참모장은 국가 중요 사안을 통제하고, 대대장은 구 단위, 중대장은 교량이나 능선 단위, 병장은 서명 권한만 있는 당직을 담당한다."
+        "ko": "사령관, 참모장, 대대장, 중대장, 병장은 징집 잔존과 정수 당직이 묶인 군정 체제의 직함이다. 암사역 사령관은 상수 보호를 비상감독으로 수행한다. 2121년 공동 당직 기록에는 동방사와 아관사의 구의 수문·아차산 관문 당직을 함께 적었다. 이는 두 당직을 함께 기록한 사실이며, 통합 지휘권이나 재산권, 현재의 취수·급수·수문 운용 허가를 정하지 않는다. 참모장은 국가 중요 사안을, 대대장은 구 단위 업무를, 중대장은 교량이나 능선 단위 업무를, 병장은 서명 권한만 있는 당직을 담당한다. 이 업무 구분은 해당 구의 공작령이나 지역구 백작령을 수여하는 규칙이 아니다.",
+        "en": "Commander, Chief of Staff, Battalion Commander, Company Commander and byeongjang sergeant are the titles of a military administration that joined conscription remnants with treatment watch duties. The Amsa Station commander performs emergency supervision for waterworks protection. A joint duty record from 2121 listed Eastern Command’s and Achasan Gate’s duties at the Guui sluice and Achasan gate together. It records those duties together; it establishes neither unified command nor property rights, nor any present permission for water intake, water supply or sluice operation. The Chief of Staff handles major state affairs, the Battalion Commander duties at district scale, the Company Commander work at a bridge or ridge, and the byeongjang a watch carrying signature authority alone. This division of work does not grant the district’s duchy or a constituency county."
       }
     },
     {
@@ -585,7 +585,7 @@
       "kind": "paragraph",
       "anchor": "중앙정보부-p1",
       "text": {
-        "en": "Director—Examiner—Central Intelligence Bureaur—Technician—Visitor. These were the posts of the Central Intelligence Bureau, whose sign hung at Heukseok Station. The Director was selected by examination and controlled access to lost technology. Examiners handled major matters, Central Intelligence Bureaurs handled individual districts, and Technicians handled individual facilities. Visitors held no fief.",
+        "en": "Director—Examiner—Conservator—Technician—Visitor. These were posts of the Central Intelligence Bureau, whose sign hung at Heukseok Station. The Director was selected by examination and controlled access to lost technology. Examiners handled major matters, Conservators individual districts, and Technicians individual facilities. Visitors held no fief.",
         "ko": "원장, 심사관, 보존관, 기술원, 출입자 체제이다. 흑석역에 걸린 '중앙정보부' 간판의 직제이다. 원장은 시험으로 선출되며 상실 기술의 출입 허가를 통제한다. 심사관은 주요 사안, 보존관은 단위 구역, 기술원은 단위 시설을 담당하며, 출입자는 영지가 없다."
       }
     },
@@ -1078,7 +1078,7 @@
             "ko": "심사관"
           },
           {
-            "en": "Central Intelligence Bureaur / Senior Technician",
+            "en": "Conservator / Senior Technician",
             "ko": "보존관·수석기사"
           },
           {
@@ -1322,8 +1322,8 @@
           "ko": "티어"
         },
         {
-          "en": "CK mapping",
-          "ko": "CK 대응"
+          "ko": "옛 비교 호칭",
+          "en": "Former comparison term"
         },
         {
           "en": "Ground of substitution",
@@ -1345,8 +1345,8 @@
             "ko": "왕"
           },
           {
-            "en": "The chief of a county. The head-of-state cell of one of the sixteen states. Substituted by each nation's tier-1 title",
-            "ko": "고을 으뜸. 십육국 한 나라의 수장 칸. 나라별 티어1 직함으로 치환"
+            "ko": "고을 으뜸에서 빌린 수장 비교. 기관별 티어 1 직함으로 부르며 지리 왕국을 수여하지 않는다.",
+            "en": "A leadership analogy borrowed from the head of a locality. Each institution uses its tier-1 title; no geographic kingdom is granted."
           }
         ],
         [
@@ -1363,8 +1363,8 @@
             "ko": "공작"
           },
           {
-            "en": "The chief of a Six Boards office and the 2026 Bureau Head's approval. The cell of a state's great matters",
-            "ko": "육조 으뜸·2026 본부장 결재. 나라 안의 큰 일 칸"
+            "ko": "육조 으뜸과 본부장 결재에서 빌린 주요 사안 담당 비교. 공작령 보유와 별개다.",
+            "en": "An analogy for major-affairs responsibility drawn from a Six Boards chief and Bureau Head approval. It is separate from duchy ownership."
           }
         ],
         [
@@ -1381,8 +1381,8 @@
             "ko": "백작"
           },
           {
-            "en": "The seat that fed one gu. The living-sphere cell",
-            "ko": "한 구를 먹여 살리는 자리. 생활권 칸"
+            "ko": "생활권·구 단위 업무 담당의 비교. 구는 지리상 공작령이고 지역구는 백작령이지만 이 직무가 어느 작위도 자동 수여하지 않는다.",
+            "en": "An analogy for duties across a living sphere or district. A district is a geographic duchy and a constituency a county, but this duty automatically grants neither title."
           }
         ],
         [
@@ -1399,8 +1399,8 @@
             "ko": "남작"
           },
           {
-            "en": "One station, one sluice. The stronghold cell",
-            "ko": "역 하나·수문 하나. 거점 칸"
+            "ko": "역·수문 등 단위 시설 업무의 비교. 시설 담당과 행정동 남작령 슬롯의 보유를 구분한다.",
+            "en": "An analogy for work at an individual station, sluice or other facility. Responsibility for a facility is distinct from holding an administrative-dong barony slot."
           }
         ],
         [
@@ -1417,8 +1417,8 @@
             "ko": "궁정 인물"
           },
           {
-            "en": "A seat with no land and a signature only. The working-rank cell",
-            "ko": "땅이 없고 서명만 있는 자리. 실무 칸"
+            "ko": "토지를 수반하지 않는 서명·당직 실무의 비교. 궁정 인물이라는 분류는 별도 토지 보유의 근거가 아니다.",
+            "en": "An analogy for landless signature and watch work. Classification as a court figure is not evidence of a separate landholding."
           }
         ]
       ]
@@ -1515,8 +1515,8 @@
       "kind": "paragraph",
       "anchor": "작위와-생업-p1",
       "text": {
-        "en": "The sixteen states used their own institutional titles for their rulers.",
-        "ko": "2126년 세 국가 안에 존속한 전신국·봉신 수장의 직함은 대통령·군주·위원장·역장·사령관·당회장·회장·의장·방장·원장·대주교·사장·단장 가운데 나라별 직제에 따라 달랐다."
+        "en": "In 2126, the surviving predecessor-state and vassal leaders within the three political factions used institutional titles including President, Monarch, Guild Head, Stationmaster, Commander, Moderator, Chairman, Presiding Chair, Spiritual Director, Director, Archbishop, Company President and Order Head.",
+        "ko": "2126년 세 정치 세력 안에 존속한 전신국·봉신 수장의 직함은 대통령·군주·위원장·역장·사령관·당회장·회장·의장·방장·원장·대주교·사장·단장 가운데 세력별 직제에 따라 달랐다."
       }
     },
     {
@@ -1541,8 +1541,8 @@
       "kind": "paragraph",
       "anchor": "작위와-생업-p2",
       "text": {
-        "en": "A title took a station name plus senior or junior, and its grade followed the Goryeo ladder of state duke, commandery duke, county marquis, county earl, founding viscount, and county baron. Kingdom-level sovereignty has a royal grade. Min Woonggi holds the title Daejeon-seon and the office lord of Daejeon. Land without a station remained a holding, while a station was the strategic strongpoint. Inside one realm the ruler granted only lower titles, and a king-rank ruler held at most two duke-rank titles directly.",
-        "ko": "작위 이름은 역 이름에 선 또는 후를 붙였다. 등급은 고려의 국공·군공·현후·현백·개국자·현남을 따랐다. 왕국급 주권에는 왕격을 둔다. 대전의 민웅기는 대전선 작위와 대전 군주 직위를 가진다. 역이 없는 땅도 영지였고, 역은 전략 요충지였다. 한 나라 안에서 수장은 자신보다 낮은 작위만 나누어 주었고, 왕급 수장이 직접 가진 공작급 작위는 둘을 넘기지 않았다."
+        "ko": "역 이름에 선·후를 붙인 작위 이름과 고려의 국공·군공·현후·현백·개국자·현남 등급은 명명과 정치적 등급의 체계로 구분한다. 왕격도 지리 왕국의 보유와 같지 않다. 민웅기 K1008의 대전선은 서울 안에서 존속하는 독립적인 비영토 왕격 정치 작위이며, 대전 영토나 서울의 동남 지리 왕국을 소유한다는 뜻이 아니다. 승인된 강남·서초의 제한 관할은 보유권 변경 통지 수령과 비구속 정정 요청에 한정하며 징세·재판·군 지휘·시설 사용·거부권을 주지 않는다. 역이 없는 땅도 별도 보유 기록에 따르고, 역은 전략 요충지이되 역 이름만으로 토지나 시설 전체를 얻지는 않는다. 기존의 하위 작위 수여 원칙과 왕급 수장의 공작급 작위 직접 보유 상한 둘은 정치적 수여 규칙으로 구분하며, 그 규칙만으로 서울의 지리 작위나 개인 보유권을 새로 배정하지 않는다.",
+        "en": "Station names with seon or hu suffixes and the Goryeo grades of state duke, commandery duke, county marquis, county earl, founding viscount and county baron belong to systems of naming and political grade. Royal grade is not the same as holding a geographic kingdom. Min Woonggi K1008’s Daejeon-seon survives within Seoul as an independent nonterritorial king-rank political title; it conveys no ownership of Daejeon territory or Seoul’s southeastern geographic kingdom. His approved limited jurisdiction in Gangnam and Seocho is confined to receiving notices of holding changes and lodging nonbinding registry objections. It grants no taxation, judicial, military-command, facility-use or veto power. Land without a station also follows separate holding records; a station is a strategic strongpoint, but its name alone conveys neither land nor an entire facility. The existing principle of granting only lower titles and the limit of two directly held duke-rank titles for a king-rank ruler remain distinct political grant rules. Those rules alone allocate no new Seoul geographic title or personal holding."
       }
     },
     {
@@ -1558,40 +1558,40 @@
       "kind": "paragraph",
       "anchor": "영토의-규모와-행정단위-p1",
       "text": {
-        "ko": "충청북도와 충청남도는 각각 별도의 왕국 크기 영역이다. 경기도와 강원도의 도 단위도 왕국 크기로 비교한다. 이들 도의 시와 군은 같은 층위의 공국 크기 영역이며, 구는 남작령 크기이다. 구가 없는 시와 군에 직접 속한 읍·면·동은 남작령 크기이고, 구 안의 읍·면·동은 그 구를 이루는 부분이다. 서울특별시와 대전광역시는 도시 전체가 왕국 크기이며, 그 안의 구는 공국 크기, 동은 남작령 크기이다.",
-        "en": "Chungcheongbuk-do and Chungcheongnam-do are separate kingdom-sized areas. Gyeonggi and Gangwon provinces are also compared in size to kingdoms. Cities and counties within these provinces are peer duchy-sized areas, while gu are barony-sized. Eup, myeon, and dong directly under a city without gu or under a county are barony-sized; those within a gu are components of that gu. Seoul Special City and Daejeon Metropolitan City are each kingdom-sized; their gu are duchy-sized and their dong are barony-sized."
+        "ko": "현재 지리 계층은 서울 전체 제국, 승인된 여섯 복수 자치구 권역 왕국, 25개 자치구 공작령, 48개 국회의원 지역구 백작령, 행정동 남작령 슬롯의 다섯 단계다. 지도에서 표시·선택하는 최소 폴리곤은 백작령이며 남작령은 그 백작령 상세의 슬롯으로 관리한다. 지역구 경계가 자치구를 넘는 중구성동구을선거구는 한 구에 임의로 넣지 않고 제국 직접 지리 parent 예외와 중앙 왕국의 지도 소속을 함께 기록한다.",
+        "en": "The current geographic hierarchy has five ranks: the Seoul-wide empire, six approved multi-district geographic kingdoms, 25 autonomous-district duchies, 48 National Assembly constituency counties, and administrative-dong barony slots. The county is the smallest polygon displayed and selected on the map; baronies are slots in the county detail. Jung-gu–Seongdong-gu Eul constituency crosses district boundaries and is not arbitrarily assigned to one district: its direct geographic parent is the empire, while its map membership is in the Central Kingdom."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "영토의-규모와-행정단위-p2",
       "text": {
-        "ko": "영토는 행정단위의 크기로 분류하고, 개인 영지는 인물별로 기록된 보유 토지로 구분한다. 역 이름에 선·후를 붙이는 작위 이름과 고려식 작위 등급, 관직의 품계는 각각의 체계로 이어진다.",
-        "en": "Territory is classified by the size of administrative units, while personal holdings are the lands recorded for each individual. Station-based title names with senior or junior suffixes, Goryeo-style noble grades, and civil-office grades each follow their own system."
+        "ko": "지리 parent는 관할의 연결이고 실제 정치 주군·봉속은 별도 관계다. 관직 티어, 정치적 작위 등급, 개별 영지의 보유권도 서로 다른 기록을 따른다. 시설·역의 부분 보유를 행정동 슬롯이나 지역구 전체의 작위·소유로 확대하지 않는다. 슬롯의 존재는 개발이나 수여를 뜻하지 않으며 direct·vassal·unassigned 상태와 보유자는 확인된 권리 근거로만 기록한다.",
+        "en": "A geographic parent links jurisdictions; actual political lieges and vassalage are separate relationships. Office tier, political title grade and ownership of an individual holding also follow distinct records. Partial ownership of a facility or station is not expanded into a dong slot or title to an entire constituency. A slot’s existence establishes neither development nor a grant: its direct, vassal or unassigned status and holder require confirmed rights evidence."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "영토의-규모와-행정단위-p3",
       "text": {
-        "ko": "서울특별시는 왕국 크기의 영역이며, 개막에는 세 국가와 그 안의 봉신들이 나누어 지배한다. 각 국가의 지배 범위와 개인의 보유 토지는 해당 구·동 안에서 구분된다.",
-        "en": "Seoul Special City is a kingdom-sized area whose control is divided among the sixteen major polities at the opening. Each polity’s controlled area and each person’s held land are distinguished within the relevant districts and dong."
+        "ko": "서울 전체는 제국의 지리적 관할이다. 대한민국정부는 청와대를 중심으로 한 강북, 규격맹은 한강 이남 서부, 종교 연합은 한강 이남 강남지역을 중심 권역으로 삼는다. 이 중심은 모든 소속 인물의 거주지나 독점 소유 경계가 아니며, 세 정치 세력을 서울을 소유한 세 왕국으로 바꾸지 않는다. 강북은 강북구만을, 강남지역은 강남구만을 뜻하지 않는다. 서울 전체라는 제국 관할도 황제 보유자나 통일 지배를 정하지 않는다.",
+        "en": "All Seoul is the empire’s geographic jurisdiction. The Government of the Republic of Korea is centered on Cheong Wa Dae and the area north of the Han; the Gauge on the western area south of the Han; and the Religious Alliance on the Gangnam area south of the Han. These centers are neither the residence of every member nor exclusive ownership boundaries, and they do not turn the three political factions into three kingdoms that own Seoul. North of the Han is not limited to Gangbuk-gu, nor the Gangnam area to Gangnam-gu. The Seoul-wide empire jurisdiction likewise establishes neither an emperor holder nor unified rule."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "영토의-규모와-행정단위-세종",
       "text": {
-        "ko": "세종특별자치시는 하나의 왕국 크기 영역이며, 직접 속한 읍·면·동은 남작령 크기이다.",
-        "en": "Sejong Special Self-Governing City is one kingdom-sized area, and its directly subordinate eup, myeon, and dong are barony-sized."
+        "ko": "승인된 지리 왕국은 중앙(종로·중·용산·성동), 북동(동대문·중랑·성북·강북·도봉·노원), 북서(은평·서대문·마포), 서부(강서·양천·영등포), 남서(구로·금천·동작·관악), 동남(광진·서초·강남·송파·강동)이다. 여섯 권역은 25개 자치구를 중복·누락 없이 묶으며 기존 정치 ID나 수장을 대체하지 않는다. 지리 왕국의 보유자는 이 분할만으로 임명하지 않는다.",
+        "en": "The approved geographic kingdoms are Central (Jongno, Jung, Yongsan and Seongdong), Northeastern (Dongdaemun, Jungnang, Seongbuk, Gangbuk, Dobong and Nowon), Northwestern (Eunpyeong, Seodaemun and Mapo), Western (Gangseo, Yangcheon and Yeongdeungpo), Southwestern (Guro, Geumcheon, Dongjak and Gwanak), and Southeastern (Gwangjin, Seocho, Gangnam, Songpa and Gangdong). They partition all 25 autonomous districts without overlap or omission and replace neither existing political IDs nor leaders. The partition itself appoints no geographic kingdom holder."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "영토의-규모와-행정단위-인천",
       "text": {
-        "ko": "인천광역시 전체는 왕국 크기의 영역이며, 그 안의 구와 군은 공국 크기, 직접 속한 읍·면·동은 남작령 크기이다. 이 비교 규모는 개막 점유나 개인 소유를 자동으로 정하지 않는다. 섬의 보유 범위는 같은 행정구역 안에서도 섬별로 기록한다.",
-        "en": "Incheon Metropolitan City is a kingdom-sized area. Its districts and counties are duchy-sized, and their directly subordinate eup, myeon, and dong are barony-sized. These comparative scales do not automatically establish opening control or personal ownership. Island holdings are recorded separately even within the same administrative unit."
+        "ko": "판본을 섞지 않는다. 현재 결속한 2025년 6월 30일 SGIS 통계 경계 판본의 지역구 상세에는 행정동 슬롯 426개가 있다. 2026년 7월 1일 행정동을 2026년 10월 13일 확인한 지역구 구성에 대응한 목록은 427개이며, 이 대응 목록의 도형은 확인되지 않았다. 용신동의 신설동·용두동 대응을 포함한 판본별 연결을 보존하고 427개를 현재 공식 경계 검증이나 수여 완료로 표시하지 않는다. 한 행정동 전체가 한 지역구에 속하면 슬롯 하나이며 공식 경계가 나누는 경우 같은 동 ID와 fragment ID로 중복·누락 없는 분할을 기록한다.",
+        "en": "Editions are kept separate. County details for the bound SGIS statistical-boundary edition dated 30 June 2025 contain 426 administrative-dong slots. The correspondence list for administrative dongs dated 1 July 2026 and constituency composition checked on 13 October 2026 contains 427 slots; its geometry has not been verified. Edition links, including the correspondence from Yongsin-dong to Sinseol-dong and Yongdu-dong, are preserved. The 427 entries are not presented as certification of current official boundaries or completed grants. A whole administrative dong within one constituency forms one slot; where official boundaries split a dong, the same dong ID and fragment IDs record a partition without overlap or omission."
       }
     },
     {
@@ -1667,72 +1667,100 @@
   ],
   "data": {
     "territorialScale": {
-      "schema": "territorial-scale.v1",
-      "regularRegions": {
-        "provinceCodes": [
-          "41",
-          "43",
-          "44",
-          "51"
-        ],
-        "province": "kingdom",
-        "city": "duchy",
-        "county": "duchy",
-        "district": "barony",
-        "directMunicipalEupMyeonDong": "barony",
-        "eupMyeonDongWithinGu": "component",
-        "componentImpliesLowerTitle": false
+      "schema": "territorial-scale.v2",
+      "scope": "seoul-only",
+      "geographicSource": {
+        "path": "lore/regions/seoul-electoral-titles.json",
+        "sha256": "372734e77019d0e544ded29f90e1b35b8a8c3a3cfff305c295c2bd83a6b64eef",
+        "schema": "seoul-geography-staging.v1"
       },
-      "specialCities": [
-        {
-          "name": "서울특별시",
-          "englishName": "Seoul Special City",
-          "city": "kingdom",
-          "district": "duchy",
-          "dong": "barony"
-        },
-        {
-          "name": "대전광역시",
-          "englishName": "Daejeon Metropolitan City",
-          "city": "kingdom",
-          "district": "duchy",
-          "dong": "barony"
-        },
-        {
-          "name": "인천광역시",
-          "englishName": "Incheon Metropolitan City",
-          "city": "kingdom",
-          "district": "duchy",
-          "dong": "barony"
-        }
+      "geographicEmpireId": "geography:empire:seoul",
+      "rankOrder": [
+        "empire",
+        "kingdom",
+        "duchy",
+        "county",
+        "barony"
       ],
+      "levels": {
+        "empire": {
+          "sourcePointer": "/titles",
+          "rank": "empire",
+          "count": 1
+        },
+        "kingdom": {
+          "sourcePointer": "/titles",
+          "rank": "kingdom",
+          "count": 6,
+          "partitionSha256": "0b2327e3f5e23a4dff539272a747357f4909970ec4fa9234a2386b4faec1ddf5"
+        },
+        "duchy": {
+          "sourcePointer": "/titles",
+          "rank": "duchy",
+          "count": 25
+        },
+        "county": {
+          "sourcePointer": "/titles",
+          "rank": "county",
+          "count": 48
+        },
+        "barony": {
+          "representation": "county-detail-slot",
+          "idField": "slotId",
+          "parentField": "countyTitleId"
+        }
+      },
+      "map": {
+        "minimumPolygonRank": "county",
+        "selectableRanks": [
+          "county",
+          "duchy",
+          "kingdom",
+          "empire"
+        ],
+        "baronyPolygon": false
+      },
+      "slotEditions": {
+        "dated": {
+          "sourcePointer": "/countySlots",
+          "edition": "sgis-20250630",
+          "baseDate": "2025-06-30",
+          "count": 426,
+          "geometryVerified": true,
+          "currentBoundaryCertification": false
+        },
+        "currentCorrespondence": {
+          "sourcePointer": "/currentCorrespondenceSlots",
+          "edition": "seoul-dong-correspondence-20260701-checked20261013",
+          "administrativeCandidateDate": "2026-07-01",
+          "checkedAt": "2026-10-13T15:21:47.014Z",
+          "count": 427,
+          "geometryVerified": false
+        }
+      },
+      "geographicParent": {
+        "sourceField": "feudalParentTitleId",
+        "meaning": "geographic-only",
+        "politicalLiegeInference": false,
+        "crossDistrictExceptions": [
+          {
+            "titleId": "geography:county:seoul-constituency:중구성동구을선거구",
+            "parentTitleId": "geography:empire:seoul",
+            "mapKingdomTitleId": "geography:kingdom:seoul:01",
+            "kind": "cross-district-empire-direct"
+          }
+        ]
+      },
+      "politicalAxis": {
+        "currentCenters": 3,
+        "geographicKingdomEquivalence": false,
+        "preserveStablePoliticalIdentities": true,
+        "preserveNonterritorialKingship": true
+      },
       "scaleImpliesPersonalOwnership": false,
       "scaleImpliesTitleRank": false,
-      "seoulControl": {
-        "majorPolities": 16,
-        "wholeKingdomControlledByOnePolity": false
-      },
-      "separateKingdomContainers": [
-        {
-          "provinceCode": "43",
-          "name": "충청북도"
-        },
-        {
-          "provinceCode": "44",
-          "name": "충청남도"
-        }
-      ],
-      "sejong": {
-        "provinceCode": "36",
-        "name": "세종특별자치시",
-        "englishName": "Sejong Special Self-Governing City",
-        "geographicContainerId": "admin:36",
-        "city": "kingdom",
-        "directEupMyeonDong": "barony",
-        "sourceAliases": [
-          "admin-city:36:세종시"
-        ]
-      }
+      "scaleImpliesFacilityAccess": false,
+      "slotExistenceImpliesGrant": false
     }
   }
 }

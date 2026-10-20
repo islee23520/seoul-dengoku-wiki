@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from 'node:fs'
+import { existsSync, readFileSync, realpathSync } from 'node:fs'
 import { spawnSync } from 'node:child_process'
 import { dirname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -6,7 +6,18 @@ import { fileURLToPath } from 'node:url'
 import { coinedPhraseFailures, findBannedTerms, retiredFormFailures } from './gate.mjs'
 import { ledger } from './lore-json-validate-ledger.mjs'
 
-const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
+const args = process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url) ? process.argv.slice(2) : []
+const rootIndex = args.indexOf('--root')
+const fixtureRoot = rootIndex < 0 ? null : args[rootIndex + 1]
+if (rootIndex >= 0) {
+  const candidate = fixtureRoot && resolve(fixtureRoot)
+  const gitRoot = candidate && existsSync(candidate) && spawnSync('git', ['rev-parse', '--show-toplevel'], { cwd: candidate, encoding: 'utf8' })
+  if (!candidate || !existsSync(join(candidate, 'lore')) || !existsSync(join(candidate, 'scripts/lore-json-schema.py')) || gitRoot?.status !== 0 || realpathSync(gitRoot.stdout.trim()) !== realpathSync(candidate)) {
+    console.error('Usage: node scripts/lore-json-validate.mjs [--root <git-repository>] [--strict | --base <ref> | <authoring.json>...]')
+    process.exit(2)
+  }
+}
+const root = fixtureRoot ? resolve(fixtureRoot) : resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const loreRoot = join(root, 'lore')
 const schemaRunner = join(root, 'scripts/lore-json-schema.py')
 // A schema check that stalls fails with its file label instead of hanging the run (#279).
@@ -273,11 +284,11 @@ function report(failures, summary) {
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  const args = process.argv.slice(2)
-  const strict = args.includes('--strict')
-  const baseIndex = args.indexOf('--base')
-  const base = baseIndex >= 0 ? args[baseIndex + 1] : 'origin/main'
-  const files = args.filter((arg, index) => arg !== '--strict' && (baseIndex < 0 || (index !== baseIndex && index !== baseIndex + 1)))
+  const cliArgs = args.filter((_, index) => rootIndex < 0 || (index !== rootIndex && index !== rootIndex + 1))
+  const strict = cliArgs.includes('--strict')
+  const baseIndex = cliArgs.indexOf('--base')
+  const base = baseIndex >= 0 ? cliArgs[baseIndex + 1] : 'origin/main'
+  const files = cliArgs.filter((arg, index) => arg !== '--strict' && (baseIndex < 0 || (index !== baseIndex && index !== baseIndex + 1)))
   if (baseIndex >= 0 && !base) {
     console.error('Usage: node scripts/lore-json-validate.mjs [--strict | --base <ref> | <authoring.json>...]')
     process.exitCode = 2

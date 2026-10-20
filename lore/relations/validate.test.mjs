@@ -1,9 +1,64 @@
 import { test } from "vitest";
 import assert from "node:assert/strict";
-import { loadDataset, resolveRelations, validate } from "./validate.mjs";
+import { loadDataset, resolveRelations, resolveVassals, validate } from "./validate.mjs";
 
 test("sourced canon relationships validate", () => {
   assert.deepEqual(validate(loadDataset()), []);
+});
+
+test("the four approved work-ledger cells keep historical parties separate from current ownership", () => {
+  const dataset = loadDataset();
+  assert.deepEqual(dataset.vassals.map(row => row.id), Array.from({ length: 13 }, (_, i) => `V${String(i + 1).padStart(2, "0")}`));
+  for (const [id, operatingStateId] of [["V02", "S01"], ["V08", "S05"], ["V11", "S03"]]) {
+    const row = dataset.vassals.find(row => row.id === id);
+    assert.equal(row.parentStateId, null);
+    assert.equal(row.operatingStateId, operatingStateId);
+    assert.equal(row.laterLedgerClassificationId, "union:religious");
+    assert.equal(row.relationKind, "historical-work-later-ledger");
+  }
+  assert.deepEqual(dataset.vassals[12], {
+    id: "V13", name: "환전지점", parentStateId: null, sourceAnchor: "table-2", sourceRow: 12,
+    relationKind: "internal-branch", operatingStateId: "S09",
+  });
+  assert.equal(dataset.vassals[0].parentStateId, "S06");
+  assert.equal(dataset.vassals[3].parentStateId, "S02");
+  assert.deepEqual(validate(dataset), []);
+  const forged = loadDataset();
+  forged.vassals[1].parentStateId = "union:religious";
+  assert.match(validate(forged).join("\n"), /V02: invalid current relation classification/);
+  const displaced = loadDataset();
+  displaced.vassals[1].sourceRow = 2;
+  assert.match(validate(displaced).join("\n"), /V02: source vassal row mismatch/);
+  for (const [id, change] of [
+    ["V02", { operatingStateId: "S02" }],
+    ["V08", { laterLedgerClassificationId: "S06" }],
+    ["V13", { parentStateId: "S09", relationKind: "current-vassal" }],
+    ["V01", { parentStateId: "S02" }],
+  ]) {
+    const forged = loadDataset();
+    Object.assign(forged.vassals.find(row => row.id === id), change);
+    assert.match(validate(forged).join("\n"), new RegExp(`${id}: source relation mismatch`));
+  }
+});
+
+test("vassal projection refuses malformed, unknown, misplaced and ambiguous narrative cells", () => {
+  for (const [relation, index] of [
+    ["수문국의 2097년 물길 업무; 종교 연합은 후대 장부 분류 추가", 1],
+    ["가상국의 2097년 물길 업무; 종교 연합은 후대 장부 분류", 1],
+    ["수문국의 2097년 물길 업무; 종교 연합은 후대 장부 분류", 7],
+    ["수문국의 2097년 물길 업무; 종교 연합은 현재 주군", 1],
+    ["대한민국정부와 규격맹", 0],
+    ["여의도출자연합회 내부 지점; 대한민국정부", 12],
+  ]) {
+    const dataset = loadDataset();
+    dataset.sources.stateSource.content.find(block => block.anchor === "table-2").rows[index][1].ko = relation;
+    const { vassals, errors } = resolveVassals(dataset.sources.stateSource, dataset.states);
+    assert.equal(vassals[index].parentStateId, null, relation);
+    assert.match(errors.join("\n"), /unrecognized present relation or original operating party/, relation);
+    dataset.vassals = vassals;
+    dataset.vassalErrors = errors;
+    assert.match(validate(dataset).join("\n"), /unrecognized present relation or original operating party/, relation);
+  }
 });
 
 test("approved S01 direct retainers resolve to three owner courts and unchanged command sources", () => {
@@ -81,9 +136,10 @@ test("approved owner lieges preserve eight existing edges and add five approved 
     { personId: "K033", liegePersonId: "K029", relationKind: "direct-liege", ownerTerm: "직속 주군" },
     ...["K035", "K039", "K038"].map(personId => ({ personId, liegePersonId: "K1008", relationKind: "direct-vassal", ownerTerm: "직속 가신" })),
   ]);
-  const sourceQuotes = ownerLieges.sourceBasis.map((basis) => basis.quote);
-  assert.ok(sourceQuotes.some((quote) => quote.includes("군주를 뽑고") && quote.includes("군주 자리에 앉았다")));
-  assert.ok(sourceQuotes.some((quote) => quote.includes("개막의 회장은 정서온이다")));
+  assert.deepEqual(ownerLieges.sourceBasis.map(({ path, anchor }) => ({ path, anchor })), [
+    { path: "lore/characters/Cast-State-01.json", anchor: "인물-한재목-p1" },
+    { path: "lore/characters/Cast-State-03.json", anchor: "인물-정호준-p1" },
+  ]);
   assert.ok(!ownerLieges.edges.some((edge) => ["K068", "K069", "K071", "K073", "K074", "K075"].includes(edge.personId)));
   assert.ok(!ownerLieges.edges.some((edge) => edge.liegePersonId === "K219"), "the S09 chair's existing command row must not be promoted by inference");
   assert.deepEqual(validate(dataset), []);

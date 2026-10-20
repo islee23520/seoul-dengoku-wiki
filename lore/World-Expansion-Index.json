@@ -4,16 +4,19 @@
   ],
   "content": [
     {
-      "anchor": "World-Expansion-Index-heading-0001",
+      "anchor": "World-Expansion-Index-generated-page-title-heading-1",
       "depth": 1,
       "kind": "heading",
+      "publicAnchors": [
+        "World-Expansion-Index-heading-0001"
+      ],
       "text": {
         "en": "World Expansion Index",
         "ko": "세계 확장 색인"
       }
     },
     {
-      "anchor": "World-Expansion-Index-list-0002",
+      "anchor": "World-Expansion-Index-generated-page-title-list-1",
       "items": [
         {
           "en": "Houses 32 / Theaters 5 / Synthetics 48",
@@ -27,11 +30,12 @@
       "kind": "list"
     },
     {
-      "anchor": "World-Expansion-Index-heading-0003",
+      "anchor": "World-Expansion-Index-generated-page-additional-people-heading-1",
       "depth": 2,
       "kind": "heading",
       "publicAnchors": [
-        "무소속"
+        "무소속",
+        "World-Expansion-Index-heading-0003"
       ],
       "text": {
         "en": "Additional people",
@@ -39,7 +43,7 @@
       }
     },
     {
-      "anchor": "World-Expansion-Index-table-0004",
+      "anchor": "World-Expansion-Index-generated-page-additional-people-table-1",
       "columns": [
         {
           "en": "Character ID",
@@ -5868,7 +5872,7 @@
             "ko": "iyen"
           },
           {
-            "en": "[I Yeon](/people/person-1004)",
+            "en": "[Iyen](/people/person-1004)",
             "ko": "[이연](/people/person-1004)"
           }
         ],
@@ -6075,11 +6079,11 @@
       "world-atlas-projections.v2"
     ],
     "original_anchor": "lore/World-Narrative-Atlas.json",
-    "original_hash": "d0f33167dea8c9415918fb169b0b6c252bb1009f4bfafbcbf68ca8af3c05944d"
+    "original_hash": "e8314a0a65c2fbaa2db47f8388b11b931840b2d2b24a2aeeb6299815888ee32c"
   },
   "slug": "World-Expansion-Index",
   "source": {
-    "hash": "d0f33167dea8c9415918fb169b0b6c252bb1009f4bfafbcbf68ca8af3c05944d",
+    "hash": "e8314a0a65c2fbaa2db47f8388b11b931840b2d2b24a2aeeb6299815888ee32c",
     "kind": "computed",
     "refs": [
       "lore/World-Narrative-Atlas.json",

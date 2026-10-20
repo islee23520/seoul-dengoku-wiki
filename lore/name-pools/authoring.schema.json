@@ -31,6 +31,6 @@
         }
       }
     },
-    {"if": {"properties": {"id": {"pattern": "^(?:DOC:|__EXAMPLE__)"}}}, "else": {"properties": {"data": {"required": ["entries"]}}}}
+    {"if": {"properties": {"id": {"pattern": "^DOC:"}}, "required": ["id"]}, "then": {"properties": {"data": {"required": ["entries"]}}}}
   ]
 }

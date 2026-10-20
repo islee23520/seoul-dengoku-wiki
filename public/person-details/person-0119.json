@@ -552,47 +552,23 @@
             "name": "장석윤",
             "url": "/people/person-0119",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "장교단 훈련·교관 수첩 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/71/items/1/ko",
-                  "quote": "생업: 장교단 훈련·교관 수첩 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/72/text/ko",
-                    "quote": "훈련 실적과 가족 배급을 함께 공개하지만, 비밀 결사 암호는 교관 수첩에만 남겨 공식 명령망을 우회한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -600,95 +576,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/71/items/1/ko",
-                    "quote": "생업: 장교단 훈련·교관 수첩 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/72/text/ko",
-                    "quote": "훈련 실적과 가족 배급을 함께 공개하지만, 비밀 결사 암호는 교관 수첩에만 남겨 공식 명령망을 우회한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Teaching",
                 "ko": "교습",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/71/items/1/ko",
-                    "quote": "생업: 장교단 훈련·교관 수첩 관리"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "장석윤 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S05 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       },
@@ -711,47 +627,23 @@
             "name": "장석윤",
             "url": "/people/person-0119",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "장교단 훈련·교관 수첩 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/71/items/1/ko",
-                  "quote": "생업: 장교단 훈련·교관 수첩 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/72/text/ko",
-                    "quote": "훈련 실적과 가족 배급을 함께 공개하지만, 비밀 결사 암호는 교관 수첩에만 남겨 공식 명령망을 우회한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -759,95 +651,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/71/items/1/ko",
-                    "quote": "생업: 장교단 훈련·교관 수첩 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/72/text/ko",
-                    "quote": "훈련 실적과 가족 배급을 함께 공개하지만, 비밀 결사 암호는 교관 수첩에만 남겨 공식 명령망을 우회한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Teaching",
                 "ko": "교습",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/71/items/1/ko",
-                    "quote": "생업: 장교단 훈련·교관 수첩 관리"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "장석윤 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S05 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       }
@@ -868,7 +700,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -924,15 +755,12 @@
     "욕망": "갈망 −5 | 독점 −15 | 위험 −10 | 과시 25 | 지속 −5 | 지향 동성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 고덕 장교단 교관 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "관직": "품계 병장. 직함은 고덕 장교단 교관. 훈련 실적과 가족 배급을 함께 공개하지만, 비밀 결사 암호는 교관 수첩에만 남겨 공식 명령망을 우회한다.",
-    "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 고덕 장교단 교관 자리의 서명이 장부에 올랐다.",
+    "관직": "품계 병장. 직함은 고덕 장교단 교관. 훈련 실적과 가족 배급을 함께 공개하지만, 비밀 결사 암호는 교관 수첩에만 남겨 공식 명령망을 우회한다.\n\n일화. 장석윤은 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다.",
     "관계": "김우찬의 작전표를 훈련으로 번역하는 지휘 관계이고, 서남 경비대장 이강묵과 차단문 전술을 거래하며, 백온의 가족 명부를 강제복무와 묶어 원한을 산다.",
-    "야망": "복구복무자를 장교단 호적에 올려 동부 약소국까지 동방사의 병력 풀로 만든다.",
-    "공포": "규격맹의 시민권 규격이 고덕 훈련장을 뚫고 들어와 장교 호적이 빈 명부가 되는 것.",
+    "야망": "복구복무자를 장교단 호적에 올려 동부 약소국까지 동방사의 병력 풀로 만든다.\n\n공포. 장석윤은 규격맹의 시민권 규격이 고덕 훈련장을 뚫고 들어와 장교 호적이 빈 명부가 되는 일을 두려워한다.",
     "개입": "교관 수첩의 결사 명단을 폭로하거나, 자발 복무 헌장 초안을 훈련장에 들여 호적 확대를 막을 수 있다."
   },
-  "biography": "부하를 가족처럼 책임지되 훈련 중 이탈은 용서하지 않는다. 부품 대신 복무 등록을 표준 교범에 넣고 싶어 한다.\n\n- 소속: 동방사\n- 생업: 장교단 훈련·교관 수첩 관리\n- 품계: 병장\n- 직함: 고덕 장교단 교관\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 고덕 장교단 교관 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 병장. 직함은 고덕 장교단 교관. 훈련 실적과 가족 배급을 함께 공개하지만, 비밀 결사 암호는 교관 수첩에만 남겨 공식 명령망을 우회한다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 고덕 장교단 교관 자리의 서명이 장부에 올랐다.\n\n**관계.** 김우찬의 작전표를 훈련으로 번역하는 지휘 관계이고, 서남 경비대장 이강묵과 차단문 전술을 거래하며, 백온의 가족 명부를 강제복무와 묶어 원한을 산다.\n\n**야망.** 복구복무자를 장교단 호적에 올려 동부 약소국까지 동방사의 병력 풀로 만든다.\n\n**공포.** 규격맹의 시민권 규격이 고덕 훈련장을 뚫고 들어와 장교 호적이 빈 명부가 되는 것.\n\n**개입.** 교관 수첩의 결사 명단을 폭로하거나, 자발 복무 헌장 초안을 훈련장에 들여 호적 확대를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −50 | 무력 70 | 물질 25 | 공동 35 | 원칙 −20 | 공개 −35 | 자격 −25 | 분산 −60 | 변혁 −25\n- 욕망: 갈망 −5 | 독점 −15 | 위험 −10 | 과시 25 | 지속 −5 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "장석윤은 부하를 가족처럼 책임지되 훈련 중 이탈은 용서하지 않는다. 부품 대신 복무 등록을 표준 교범에 넣고 싶어 한다.\n\n- 소속: 동방사\n- 생업: 장교단 훈련·교관 수첩 관리\n- 품계: 병장\n- 직함: 고덕 장교단 교관\n생애. 장석윤은 4세대에 태어났다. 장석윤은 대합실 당직에서 자랐다. 장석윤의 고덕 장교단 교관 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 장석윤은 고덕2동과 연결된 업무에서 장교단 훈련과 가족 배급을 다루되 비밀 교관 수첩은 따로 둔다.\n\n**관직.** 품계 병장. 직함은 고덕 장교단 교관. 훈련 실적과 가족 배급을 함께 공개하지만, 비밀 결사 암호는 교관 수첩에만 남겨 공식 명령망을 우회한다.\n\n일화. 장석윤은 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다.\n\n**관계.** 김우찬의 작전표를 훈련으로 번역하는 지휘 관계이고, 서남 경비대장 이강묵과 차단문 전술을 거래하며, 백온의 가족 명부를 강제복무와 묶어 원한을 산다.\n\n**야망.** 복구복무자를 장교단 호적에 올려 동부 약소국까지 동방사의 병력 풀로 만든다.\n\n공포. 장석윤은 규격맹의 시민권 규격이 고덕 훈련장을 뚫고 들어와 장교 호적이 빈 명부가 되는 일을 두려워한다.\n\n**개입.** 교관 수첩의 결사 명단을 폭로하거나, 자발 복무 헌장 초안을 훈련장에 들여 호적 확대를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −50 | 무력 70 | 물질 25 | 공동 35 | 원칙 −20 | 공개 −35 | 자격 −25 | 분산 −60 | 변혁 −25\n- 욕망: 갈망 −5 | 독점 −15 | 위험 −10 | 과시 25 | 지속 −5 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-05"
   ],

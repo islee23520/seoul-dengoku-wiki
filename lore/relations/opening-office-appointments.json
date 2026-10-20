@@ -1,1336 +1,3376 @@
 {
-  "schema": "opening-office-appointments.v1",
+  "schema": "opening-office-appointments.v2",
   "openingYear": 2126,
+  "contract": {
+    "history": "Original appointment fields are historical provenance, not a current office or a Seoul grant.",
+    "current": "Only current.position and current.rank are displayed; null means no verified current appointment, with no fallback to historical or card offices.",
+    "commonTier": "Preserved approved personal authority tier, independent of current territorial office or ownership.",
+    "rights": "Evidence references existing rights only. No new office, institution, territory, residence or grant is enacted by this projection."
+  },
   "appointments": [
     {
       "personId": "K423",
       "stateId": "S04",
-      "position": {
-        "ko": "종교 연합 왕 · 명부교회 당회장",
-        "en": "King of the religious union and Moderator of Myeongbu Church"
+      "history": {
+        "personId": "K423",
+        "stateId": "S04",
+        "position": {
+          "ko": "종교 연합 왕 · 명부교회 당회장",
+          "en": "King of the religious union and Moderator of Myeongbu Church"
+        },
+        "rank": {
+          "ko": "왕 · 당회장",
+          "en": "King and Moderator"
+        },
+        "commonTier": "T1",
+        "approvalRef": "owner:call_3UEeOQxXrDzuYt8E1BFfhRqe:religious_title_root"
       },
-      "rank": {
-        "ko": "왕 · 당회장",
-        "en": "King and Moderator"
-      },
-      "commonTier": "T1",
-      "approvalRef": "owner:call_3UEeOQxXrDzuYt8E1BFfhRqe:religious_title_root"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "종교 연합 왕 · 명부교회 당회장",
+          "en": "King of the religious union and Moderator of Myeongbu Church"
+        },
+        "rank": {
+          "ko": "왕 · 당회장",
+          "en": "King and Moderator"
+        },
+        "commonTier": "T1",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/0/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/28",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K151",
       "stateId": "S06",
-      "position": {
-        "ko": "강화 외곽·백령대청 해상 영주",
-        "en": "Maritime lord of outer Ganghwa and Baengnyeong–Daecheong"
+      "history": {
+        "personId": "K151",
+        "stateId": "S06",
+        "position": {
+          "ko": "강화 외곽·백령대청 해상 영주",
+          "en": "Maritime lord of outer Ganghwa and Baengnyeong–Daecheong"
+        },
+        "rank": {
+          "ko": "해상 영주",
+          "en": "Maritime lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_wFGQ0sW3jxjHivoeN4XA1oom:sea_vassal_named_appointments"
       },
-      "rank": {
-        "ko": "해상 영주",
-        "en": "Maritime lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_wFGQ0sW3jxjHivoeN4XA1oom:sea_vassal_named_appointments"
+      "current": {
+        "status": "unappointed",
+        "position": null,
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "scripts/approved-seoul-rights-transition.json",
+            "jsonPointer": "/records/0",
+            "kind": "retired-office"
+          },
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "jsonPointer": "/content/105/items/4/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K176",
       "stateId": "S07",
-      "position": {
-        "ko": "연평·장봉·덕적 해상 영주",
-        "en": "Maritime lord of Yeonpyeong, Jangbong and Deokjeok"
+      "history": {
+        "personId": "K176",
+        "stateId": "S07",
+        "position": {
+          "ko": "연평·장봉·덕적 해상 영주",
+          "en": "Maritime lord of Yeonpyeong, Jangbong and Deokjeok"
+        },
+        "rank": {
+          "ko": "해상 영주",
+          "en": "Maritime lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_wFGQ0sW3jxjHivoeN4XA1oom:sea_vassal_named_appointments"
       },
-      "rank": {
-        "ko": "해상 영주",
-        "en": "Maritime lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_wFGQ0sW3jxjHivoeN4XA1oom:sea_vassal_named_appointments"
+      "current": {
+        "status": "unappointed",
+        "position": null,
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "scripts/approved-seoul-rights-transition.json",
+            "jsonPointer": "/records/1",
+            "kind": "retired-office"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "jsonPointer": "/content/94/items/4/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K355",
       "stateId": "S14",
-      "position": {
-        "ko": "자월·측도 해상 영주",
-        "en": "Maritime lord of Jawol and Cheukdo"
+      "history": {
+        "personId": "K355",
+        "stateId": "S14",
+        "position": {
+          "ko": "자월·측도 해상 영주",
+          "en": "Maritime lord of Jawol and Cheukdo"
+        },
+        "rank": {
+          "ko": "해상 영주",
+          "en": "Maritime lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_wFGQ0sW3jxjHivoeN4XA1oom:sea_vassal_named_appointments"
       },
-      "rank": {
-        "ko": "해상 영주",
-        "en": "Maritime lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_wFGQ0sW3jxjHivoeN4XA1oom:sea_vassal_named_appointments"
+      "current": {
+        "status": "unappointed",
+        "position": null,
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "scripts/approved-seoul-rights-transition.json",
+            "jsonPointer": "/records/2",
+            "kind": "retired-office"
+          },
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "jsonPointer": "/content/116/items/4/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K1008",
       "stateId": "polity:daejeon",
-      "position": {
-        "ko": "대전 군주",
-        "en": "Lord of Daejeon"
+      "history": {
+        "personId": "K1008",
+        "stateId": "polity:daejeon",
+        "position": {
+          "ko": "대전 군주",
+          "en": "Lord of Daejeon"
+        },
+        "rank": {
+          "ko": "군주",
+          "en": "Sovereign"
+        },
+        "commonTier": "T1",
+        "approvalRef": "owner:call_M9laK9tNaQJ4r1j5y9FFQnVL:daejeon_office_promotions"
       },
-      "rank": {
-        "ko": "군주",
-        "en": "Sovereign"
-      },
-      "commonTier": "T1",
-      "approvalRef": "owner:call_M9laK9tNaQJ4r1j5y9FFQnVL:daejeon_office_promotions"
+      "current": {
+        "status": "nonterritorial-political-office",
+        "position": {
+          "ko": "독립 정치체 대전선 군주(왕격; 서울 영토 소유 아님)",
+          "en": "Sovereign of the independent Daejeon Line polity (king rank; no ownership of Seoul territory)"
+        },
+        "rank": {
+          "ko": "군주(왕격)",
+          "en": "Sovereign (king rank)"
+        },
+        "commonTier": "T1",
+        "evidence": [
+          {
+            "path": "scripts/approved-daejeon-nonowning-rights.json",
+            "jsonPointer": "/contract/politicalTitle",
+            "kind": "existing-political-office"
+          }
+        ]
+      }
     },
     {
       "personId": "K035",
       "stateId": "polity:daejeon",
-      "position": {
-        "ko": "대전 중구 영주",
-        "en": "Lord of Jung-gu, Daejeon"
+      "history": {
+        "personId": "K035",
+        "stateId": "polity:daejeon",
+        "position": {
+          "ko": "대전 중구 영주",
+          "en": "Lord of Jung-gu, Daejeon"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_M9laK9tNaQJ4r1j5y9FFQnVL:daejeon_office_promotions"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_M9laK9tNaQJ4r1j5y9FFQnVL:daejeon_office_promotions"
+      "current": {
+        "status": "nonowning-jurisdiction",
+        "position": {
+          "ko": "광진구 보유 변경 통지 수령·비구속 원장 정정 요청 담당",
+          "en": "Receives holding-change notices and lodges nonbinding registry objections for Gwangjin-gu"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "scripts/approved-daejeon-nonowning-rights.json",
+            "jsonPointer": "/contract/rights/2",
+            "kind": "existing-nonowning-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K039",
       "stateId": "polity:daejeon",
-      "position": {
-        "ko": "대전 서구 영주",
-        "en": "Lord of Seo-gu, Daejeon"
+      "history": {
+        "personId": "K039",
+        "stateId": "polity:daejeon",
+        "position": {
+          "ko": "대전 서구 영주",
+          "en": "Lord of Seo-gu, Daejeon"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_M9laK9tNaQJ4r1j5y9FFQnVL:daejeon_office_promotions"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_M9laK9tNaQJ4r1j5y9FFQnVL:daejeon_office_promotions"
+      "current": {
+        "status": "nonowning-jurisdiction",
+        "position": {
+          "ko": "송파구 보유 변경 통지 수령·비구속 원장 정정 요청 담당",
+          "en": "Receives holding-change notices and lodges nonbinding registry objections for Songpa-gu"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "scripts/approved-daejeon-nonowning-rights.json",
+            "jsonPointer": "/contract/rights/3",
+            "kind": "existing-nonowning-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K038",
       "stateId": "polity:daejeon",
-      "position": {
-        "ko": "대전 대덕구 영주",
-        "en": "Lord of Daedeok-gu, Daejeon"
+      "history": {
+        "personId": "K038",
+        "stateId": "polity:daejeon",
+        "position": {
+          "ko": "대전 대덕구 영주",
+          "en": "Lord of Daedeok-gu, Daejeon"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_M9laK9tNaQJ4r1j5y9FFQnVL:daejeon_office_promotions"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_M9laK9tNaQJ4r1j5y9FFQnVL:daejeon_office_promotions"
+      "current": {
+        "status": "nonowning-jurisdiction",
+        "position": {
+          "ko": "강동구 보유 변경 통지 수령·비구속 원장 정정 요청 담당",
+          "en": "Receives holding-change notices and lodges nonbinding registry objections for Gangdong-gu"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "scripts/approved-daejeon-nonowning-rights.json",
+            "jsonPointer": "/contract/rights/4",
+            "kind": "existing-nonowning-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K031",
       "stateId": "S02",
-      "position": {
-        "ko": "구로 노동조합 서기 · 시흥시 영주",
-        "en": "Territorial lord of 시흥시"
+      "history": {
+        "personId": "K031",
+        "stateId": "S02",
+        "position": {
+          "ko": "구로 노동조합 서기 · 시흥시 영주",
+          "en": "Territorial lord of 시흥시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "구로 노동조합 서기",
+          "en": "Guro labor-union secretary"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/8/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K032",
       "stateId": "S02",
-      "position": {
-        "ko": "금천 경비대장 · 군포시 영주",
-        "en": "Territorial lord of 군포시"
+      "history": {
+        "personId": "K032",
+        "stateId": "S02",
+        "position": {
+          "ko": "금천 경비대장 · 군포시 영주",
+          "en": "Territorial lord of 군포시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "금천 경비대장",
+          "en": "Geumcheon guard captain"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/9/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K034",
       "stateId": "S02",
-      "position": {
-        "ko": "공병 작업반장 · 의왕시 영주",
-        "en": "Territorial lord of 의왕시"
+      "history": {
+        "personId": "K034",
+        "stateId": "S02",
+        "position": {
+          "ko": "공병 작업반장 · 의왕시 영주",
+          "en": "Territorial lord of 의왕시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "공병 작업반장",
+          "en": "Engineering work-crew leader"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/10/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K040",
       "stateId": "S02",
-      "position": {
-        "ko": "금천 공방의무원 · 화성시 영주",
-        "en": "Territorial lord of 화성시"
+      "history": {
+        "personId": "K040",
+        "stateId": "S02",
+        "position": {
+          "ko": "금천 공방의무원 · 화성시 영주",
+          "en": "Territorial lord of 화성시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "금천 공방의무원",
+          "en": "Geumcheon workshop medic"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/11/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K042",
       "stateId": "S02",
-      "position": {
-        "ko": "제작규격 전령 · 공주시 영주",
-        "en": "Territorial lord of 공주시"
+      "history": {
+        "personId": "K042",
+        "stateId": "S02",
+        "position": {
+          "ko": "제작규격 전령 · 공주시 영주",
+          "en": "Territorial lord of 공주시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "제작규격 전령",
+          "en": "Production-standards messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/12/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K043",
       "stateId": "S02",
-      "position": {
-        "ko": "남서 외곽선로 탐사원 · 보령시 영주",
-        "en": "Territorial lord of 보령시"
+      "history": {
+        "personId": "K043",
+        "stateId": "S02",
+        "position": {
+          "ko": "남서 외곽선로 탐사원 · 보령시 영주",
+          "en": "Territorial lord of 보령시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "남서 외곽선로 탐사원",
+          "en": "Southwestern outer-track surveyor"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "jsonPointer": "/content/181/items/4/ko",
+            "kind": "existing-function"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "jsonPointer": "/content/182/text/ko/1/text",
+            "kind": "current-seoul-work-location"
+          }
+        ]
+      }
     },
     {
       "personId": "K044",
       "stateId": "S02",
-      "position": {
-        "ko": "숙련점수 원장 기록관 · 광명시 영주",
-        "en": "Territorial lord of 광명시"
+      "history": {
+        "personId": "K044",
+        "stateId": "S02",
+        "position": {
+          "ko": "숙련점수 원장 기록관 · 광명시 영주",
+          "en": "Territorial lord of 광명시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "숙련점수 원장 기록관",
+          "en": "Proficiency-score ledger keeper"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/14/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K047",
       "stateId": "S02",
-      "position": {
-        "ko": "금천 배급솥 시장 중개인 · 수원시 영주",
-        "en": "Territorial lord of 수원시"
+      "history": {
+        "personId": "K047",
+        "stateId": "S02",
+        "position": {
+          "ko": "금천 배급솥 시장 중개인 · 수원시 영주",
+          "en": "Territorial lord of 수원시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "금천 배급솥 시장 중개인",
+          "en": "Geumcheon ration-kitchen market broker"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/15/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K048",
       "stateId": "S02",
-      "position": {
-        "ko": "구로 분진진료소 의무장 · 논산시 영주",
-        "en": "Territorial lord of 논산시"
+      "history": {
+        "personId": "K048",
+        "stateId": "S02",
+        "position": {
+          "ko": "구로 분진진료소 의무장 · 논산시 영주",
+          "en": "Territorial lord of 논산시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "구로 분진진료소 의무장",
+          "en": "Guro dust clinic medical chief"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/16/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K050",
       "stateId": "S02",
-      "position": {
-        "ko": "가짜 펌프 부품 피해자 대표 · 평택시 영주",
-        "en": "Territorial lord of 평택시"
+      "history": {
+        "personId": "K050",
+        "stateId": "S02",
+        "position": {
+          "ko": "가짜 펌프 부품 피해자 대표 · 평택시 영주",
+          "en": "Territorial lord of 평택시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "가짜 펌프 부품 피해자 대표",
+          "en": "Representative of counterfeit pump-parts victims"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/17/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K051",
       "stateId": "S02",
-      "position": {
-        "ko": "복구복무 거부 증언 서기 · 당진시 영주",
-        "en": "Territorial lord of 당진시"
+      "history": {
+        "personId": "K051",
+        "stateId": "S02",
+        "position": {
+          "ko": "복구복무 거부 증언 서기 · 당진시 영주",
+          "en": "Territorial lord of 당진시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "복구복무 거부 증언 서기",
+          "en": "Clerk for testimony on refusal of restoration service"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/18/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K052",
       "stateId": "S02",
-      "position": {
-        "ko": "공신 보상 원장 서기 · 안산시 영주",
-        "en": "Territorial lord of 안산시"
+      "history": {
+        "personId": "K052",
+        "stateId": "S02",
+        "position": {
+          "ko": "공신 보상 원장 서기 · 안산시 영주",
+          "en": "Territorial lord of 안산시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "공신 보상 원장 서기",
+          "en": "Merit-reward ledger clerk"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/19/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K053",
       "stateId": "S02",
-      "position": {
-        "ko": "난민 수용 전령 · 금산군 영주",
-        "en": "Territorial lord of 금산군"
+      "history": {
+        "personId": "K053",
+        "stateId": "S02",
+        "position": {
+          "ko": "난민 수용 전령 · 금산군 영주",
+          "en": "Territorial lord of 금산군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "난민 수용 전령",
+          "en": "Refugee reception messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/20/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K054",
       "stateId": "S02",
-      "position": {
-        "ko": "후계시험 부품 감정 직공 · 부여군 영주",
-        "en": "Territorial lord of 부여군"
+      "history": {
+        "personId": "K054",
+        "stateId": "S02",
+        "position": {
+          "ko": "후계시험 부품 감정 직공 · 부여군 영주",
+          "en": "Territorial lord of 부여군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "후계시험 부품 감정 직공",
+          "en": "Craft worker assessing parts for the succession trial"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/21/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K055",
       "stateId": "S02",
-      "position": {
-        "ko": "제작헌장 전령 · 서천군 영주",
-        "en": "Territorial lord of 서천군"
+      "history": {
+        "personId": "K055",
+        "stateId": "S02",
+        "position": {
+          "ko": "제작헌장 전령 · 서천군 영주",
+          "en": "Territorial lord of 서천군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "제작헌장 전령",
+          "en": "Production-charter messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/22/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K056",
       "stateId": "S02",
-      "position": {
-        "ko": "제작 병참 · 청양군 영주",
-        "en": "Territorial lord of 청양군"
+      "history": {
+        "personId": "K056",
+        "stateId": "S02",
+        "position": {
+          "ko": "제작 병참 · 청양군 영주",
+          "en": "Territorial lord of 청양군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "제작 병참",
+          "en": "Production logistics worker"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/23/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K070",
       "stateId": "S03",
-      "position": {
-        "ko": "태욱그룹 회장 전령 · 서초구 영주",
-        "en": "Territorial lord of 서초구"
+      "history": {
+        "personId": "K070",
+        "stateId": "S03",
+        "position": {
+          "ko": "태욱그룹 회장 전령 · 서초구 영주",
+          "en": "Taewook Group chairman's messenger and lord of Seocho-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "태욱그룹 회장 전령 · 서초구 영주",
+          "en": "Taewook Group chairman's messenger and lord of Seocho-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/24/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/25",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K090",
       "stateId": "S04",
-      "position": {
-        "ko": "뚝섬 펌프수비대장 · 성남시 영주",
-        "en": "Territorial lord of 성남시"
+      "history": {
+        "personId": "K090",
+        "stateId": "S04",
+        "position": {
+          "ko": "뚝섬 펌프수비대장 · 성남시 영주",
+          "en": "Territorial lord of 성남시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "뚝섬 펌프수비대장",
+          "en": "Ttukseom pump guard captain"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/25/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K097",
       "stateId": "S04",
-      "position": {
-        "ko": "성수 패킹운송 물류상 · 양평군 영주",
-        "en": "Territorial lord of 양평군"
+      "history": {
+        "personId": "K097",
+        "stateId": "S04",
+        "position": {
+          "ko": "성수 패킹운송 물류상 · 양평군 영주",
+          "en": "Territorial lord of 양평군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "성수 패킹운송 물류상",
+          "en": "Seongsu packing-transport logistics trader"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/26/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K099",
       "stateId": "S04",
-      "position": {
-        "ko": "성동 교량 순찰대 조장 · 성동구 영주",
-        "en": "Territorial lord of 성동구"
+      "history": {
+        "personId": "K099",
+        "stateId": "S04",
+        "position": {
+          "ko": "성동 교량 순찰대 조장 · 성동구 영주",
+          "en": "Seongdong bridge patrol leader and lord of Seongdong-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "성동 교량 순찰대 조장 · 성동구 영주",
+          "en": "Seongdong bridge patrol leader and lord of Seongdong-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/27/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/4",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K1002",
       "stateId": "S02",
-      "position": {
-        "ko": "작업반 전령 · 홍성군 영주",
-        "en": "Territorial lord of 홍성군"
+      "history": {
+        "personId": "K1002",
+        "stateId": "S02",
+        "position": {
+          "ko": "작업반 전령 · 홍성군 영주",
+          "en": "Territorial lord of 홍성군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "작업반 전령",
+          "en": "Work-crew messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/28/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K1011",
       "stateId": "S02",
-      "position": {
-        "ko": "대림 이중장부 중개 · 과천시 영주",
-        "en": "Territorial lord of 과천시"
+      "history": {
+        "personId": "K1011",
+        "stateId": "S02",
+        "position": {
+          "ko": "대림 이중장부 중개 · 과천시 영주",
+          "en": "Territorial lord of 과천시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "대림 이중장부 중개",
+          "en": "Daerim double-ledger broker"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/29/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K1012",
       "stateId": "S02",
-      "position": {
-        "ko": "차단문 안쪽 야간 정비 조장 · 예산군 영주",
-        "en": "Territorial lord of 예산군"
+      "history": {
+        "personId": "K1012",
+        "stateId": "S02",
+        "position": {
+          "ko": "차단문 안쪽 야간 정비 조장 · 예산군 영주",
+          "en": "Territorial lord of 예산군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "차단문 안쪽 야간 정비 조장",
+          "en": "Night maintenance team leader inside the barrier gate"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/30/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K1016",
       "stateId": "S06",
-      "position": {
-        "ko": "동원 명부 서기 · 양주시 영주",
-        "en": "Territorial lord of 양주시"
+      "history": {
+        "personId": "K1016",
+        "stateId": "S06",
+        "position": {
+          "ko": "동원 명부 서기 · 양주시 영주",
+          "en": "Territorial lord of 양주시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "동원 명부 서기",
+          "en": "Mobilization roster clerk"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/31/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K1019",
       "stateId": "S06",
-      "position": {
-        "ko": "사본 관리인 — 여러 권역의 사본을 맞추고 개정 요청을 모아 김연규에게 전한다. · 포천시 영주",
-        "en": "Territorial lord of 포천시"
+      "history": {
+        "personId": "K1019",
+        "stateId": "S06",
+        "position": {
+          "ko": "사본 관리인 — 여러 권역의 사본을 맞추고 개정 요청을 모아 김연규에게 전한다. · 포천시 영주",
+          "en": "Territorial lord of 포천시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "사본 관리인 — 여러 권역의 사본을 맞추고 개정 요청을 모아 김연규에게 전한다.",
+          "en": "Copy keeper who reconciles copies across regions and gathers revision requests for Kim Yeongyu"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/32/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K105",
       "stateId": "S04",
-      "position": {
-        "ko": "성수 공방시장 경매사 · 하남시 영주",
-        "en": "Territorial lord of 하남시"
+      "history": {
+        "personId": "K105",
+        "stateId": "S04",
+        "position": {
+          "ko": "성수 공방시장 경매사 · 하남시 영주",
+          "en": "Territorial lord of 하남시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "성수 공방시장 경매사",
+          "en": "Seongsu workshop-market auctioneer"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/33/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K106",
       "stateId": "S04",
-      "position": {
-        "ko": "성동 골목의무소 원장 · 여주시 영주",
-        "en": "Territorial lord of 여주시"
+      "history": {
+        "personId": "K106",
+        "stateId": "S04",
+        "position": {
+          "ko": "성동 골목의무소 원장 · 여주시 영주",
+          "en": "Territorial lord of 여주시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "성동 골목의무소 원장",
+          "en": "Seongdong alley clinic director"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/34/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K108",
       "stateId": "S04",
-      "position": {
-        "ko": "뚝섬-신정 급수호송 열차 승무원 · 청주시 영주",
-        "en": "Territorial lord of 청주시"
+      "history": {
+        "personId": "K108",
+        "stateId": "S04",
+        "position": {
+          "ko": "뚝섬-신정 급수호송 열차 승무원 · 청주시 영주",
+          "en": "Territorial lord of 청주시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "뚝섬-신정 급수호송 열차 승무원",
+          "en": "Ttukseom–Sinjeong water-convoy train crew member"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/35/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K112",
       "stateId": "S04",
-      "position": {
-        "ko": "유언 증거 호송 전령 · 충주시 영주",
-        "en": "Territorial lord of 충주시"
+      "history": {
+        "personId": "K112",
+        "stateId": "S04",
+        "position": {
+          "ko": "유언 증거 호송 전령 · 충주시 영주",
+          "en": "Territorial lord of 충주시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "유언 증거 호송 전령",
+          "en": "Messenger escorting testament evidence"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/36/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K145",
       "stateId": "S06",
-      "position": {
-        "ko": "인준 심사관 · 연천군 영주",
-        "en": "Territorial lord of 연천군"
+      "history": {
+        "personId": "K145",
+        "stateId": "S06",
+        "position": {
+          "ko": "인준 심사관 · 연천군 영주",
+          "en": "Territorial lord of 연천군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "인준 심사관",
+          "en": "Ratification examiner"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/37/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K146",
       "stateId": "S06",
-      "position": {
-        "ko": "문서고 사서 · 가평군 영주",
-        "en": "Territorial lord of 가평군"
+      "history": {
+        "personId": "K146",
+        "stateId": "S06",
+        "position": {
+          "ko": "문서고 사서 · 가평군 영주",
+          "en": "Territorial lord of 가평군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "문서고 사서",
+          "en": "Archive librarian"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/38/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K147",
       "stateId": "S06",
-      "position": {
-        "ko": "의료이송 기록관 · 춘천시 영주",
-        "en": "Territorial lord of 춘천시"
+      "history": {
+        "personId": "K147",
+        "stateId": "S06",
+        "position": {
+          "ko": "의료이송 기록관 · 춘천시 영주",
+          "en": "Territorial lord of 춘천시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "의료이송 기록관",
+          "en": "Medical transfer records keeper"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/39/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K148",
       "stateId": "S06",
-      "position": {
-        "ko": "계약 공증관 · 원주시 영주",
-        "en": "Territorial lord of 원주시"
+      "history": {
+        "personId": "K148",
+        "stateId": "S06",
+        "position": {
+          "ko": "계약 공증관 · 원주시 영주",
+          "en": "Territorial lord of 원주시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "계약 공증관",
+          "en": "Contract notary"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/40/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K149",
       "stateId": "S06",
-      "position": {
-        "ko": "지도 복구 사서 · 강릉시 영주",
-        "en": "Territorial lord of 강릉시"
+      "history": {
+        "personId": "K149",
+        "stateId": "S06",
+        "position": {
+          "ko": "지도 복구 사서 · 강릉시 영주",
+          "en": "Territorial lord of 강릉시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "지도 복구 사서",
+          "en": "Map restoration librarian"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/41/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K150",
       "stateId": "S06",
-      "position": {
-        "ko": "서울역 문서고 제습 정비사 · 동해시 영주",
-        "en": "Territorial lord of 동해시"
+      "history": {
+        "personId": "K150",
+        "stateId": "S06",
+        "position": {
+          "ko": "서울역 문서고 제습 정비사 · 동해시 영주",
+          "en": "Territorial lord of 동해시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "서울역 문서고 제습 정비사",
+          "en": "Seoul Station archive dehumidification mechanic"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/42/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K152",
       "stateId": "S06",
-      "position": {
-        "ko": "서울역 의무실 의무원 · 태백시 영주",
-        "en": "Territorial lord of 태백시"
+      "history": {
+        "personId": "K152",
+        "stateId": "S06",
+        "position": {
+          "ko": "서울역 의무실 의무원 · 태백시 영주",
+          "en": "Territorial lord of 태백시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "서울역 의무실 의무원",
+          "en": "Seoul Station clinic medic"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/43/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K153",
       "stateId": "S06",
-      "position": {
-        "ko": "문서고 수비 순찰대 조장 · 의정부시 영주",
-        "en": "Territorial lord of 의정부시"
+      "history": {
+        "personId": "K153",
+        "stateId": "S06",
+        "position": {
+          "ko": "문서고 수비 순찰대 조장 · 의정부시 영주",
+          "en": "Territorial lord of 의정부시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "문서고 수비 순찰대 조장",
+          "en": "Archive guard patrol leader"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/44/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K154",
       "stateId": "S06",
-      "position": {
-        "ko": "인준 심사 전령 · 속초시 영주",
-        "en": "Territorial lord of 속초시"
+      "history": {
+        "personId": "K154",
+        "stateId": "S06",
+        "position": {
+          "ko": "인준 심사 전령 · 속초시 영주",
+          "en": "Territorial lord of 속초시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "인준 심사 전령",
+          "en": "Ratification review messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/45/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K155",
       "stateId": "S06",
-      "position": {
-        "ko": "북부 정수 배관 탐사원 · 삼척시 영주",
-        "en": "Territorial lord of 삼척시"
+      "history": {
+        "personId": "K155",
+        "stateId": "S06",
+        "position": {
+          "ko": "북부 정수 배관 탐사원 · 삼척시 영주",
+          "en": "Territorial lord of 삼척시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "북부 정수 배관 탐사원",
+          "en": "Northern water-treatment pipe surveyor"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/46/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K156",
       "stateId": "S06",
-      "position": {
-        "ko": "유언 필적 기록관 · 홍천군 영주",
-        "en": "Territorial lord of 홍천군"
+      "history": {
+        "personId": "K156",
+        "stateId": "S06",
+        "position": {
+          "ko": "유언 필적 기록관 · 홍천군 영주",
+          "en": "Territorial lord of 홍천군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "유언 필적 기록관",
+          "en": "Testament handwriting records keeper"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/47/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K159",
       "stateId": "S06",
-      "position": {
-        "ko": "종로 공증사본 시장 경매사 · 구리시 영주",
-        "en": "Territorial lord of 구리시"
+      "history": {
+        "personId": "K159",
+        "stateId": "S06",
+        "position": {
+          "ko": "종로 공증사본 시장 경매사 · 구리시 영주",
+          "en": "Territorial lord of 구리시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "종로 공증사본 시장 경매사",
+          "en": "Jongno notarized-copy market auctioneer"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/48/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K160",
       "stateId": "S06",
-      "position": {
-        "ko": "중앙 재난의료 조정 실무관 · 평창군 영주",
-        "en": "Territorial lord of 평창군"
+      "history": {
+        "personId": "K160",
+        "stateId": "S06",
+        "position": {
+          "ko": "중앙 재난의료 조정 실무관 · 평창군 영주",
+          "en": "Territorial lord of 평창군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "중앙 재난의료 조정 실무관",
+          "en": "Central disaster medical coordination officer"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/49/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K162",
       "stateId": "S06",
-      "position": {
-        "ko": "유언 검증 서기 · 철원군 영주",
-        "en": "Territorial lord of 철원군"
+      "history": {
+        "personId": "K162",
+        "stateId": "S06",
+        "position": {
+          "ko": "유언 검증 서기 · 철원군 영주",
+          "en": "Territorial lord of 철원군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "유언 검증 서기",
+          "en": "Testament verification clerk"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/50/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K163",
       "stateId": "S06",
-      "position": {
-        "ko": "급수계약 인준 청구 증인 · 화천군 영주",
-        "en": "Territorial lord of 화천군"
+      "history": {
+        "personId": "K163",
+        "stateId": "S06",
+        "position": {
+          "ko": "급수계약 인준 청구 증인 · 화천군 영주",
+          "en": "Territorial lord of 화천군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "급수계약 인준 청구 증인",
+          "en": "Witness to a water-supply contract ratification claim"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/51/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K164",
       "stateId": "S06",
-      "position": {
-        "ko": "각국 인준 보관인 · 양구군 영주",
-        "en": "Territorial lord of 양구군"
+      "history": {
+        "personId": "K164",
+        "stateId": "S06",
+        "position": {
+          "ko": "각국 인준 보관인 · 양구군 영주",
+          "en": "Territorial lord of 양구군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "각국 인준 보관인",
+          "en": "Keeper of the polities’ ratification records"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/52/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K165",
       "stateId": "S06",
-      "position": {
-        "ko": "공신 보상 명부 당사자 · 남양주시 영주",
-        "en": "Territorial lord of 남양주시"
+      "history": {
+        "personId": "K165",
+        "stateId": "S06",
+        "position": {
+          "ko": "공신 보상 명부 당사자 · 남양주시 영주",
+          "en": "Territorial lord of 남양주시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "공신 보상 명부 당사자",
+          "en": "Party listed in the merit-reward roster"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/53/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K166",
       "stateId": "S06",
-      "position": {
-        "ko": "대한민국정부 회의 기록 전령 · 인제군 영주",
-        "en": "Territorial lord of 인제군"
+      "history": {
+        "personId": "K166",
+        "stateId": "S06",
+        "position": {
+          "ko": "대한민국정부 회의 기록 전령 · 인제군 영주",
+          "en": "Territorial lord of 인제군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "대한민국정부 회의 기록 전령",
+          "en": "Republic of Korea Government meeting-records messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/54/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K167",
       "stateId": "S06",
-      "position": {
-        "ko": "비상권한 반환 증인 · 동두천시 영주",
-        "en": "Territorial lord of 동두천시"
+      "history": {
+        "personId": "K167",
+        "stateId": "S06",
+        "position": {
+          "ko": "비상권한 반환 증인 · 동두천시 영주",
+          "en": "Territorial lord of 동두천시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "비상권한 반환 증인",
+          "en": "Witness to the return of emergency powers"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/55/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K168",
       "stateId": "S06",
-      "position": {
-        "ko": "기록 공증 감사관 · 고성군 영주",
-        "en": "Territorial lord of 고성군"
+      "history": {
+        "personId": "K168",
+        "stateId": "S06",
+        "position": {
+          "ko": "기록 공증 감사관 · 고성군 영주",
+          "en": "Territorial lord of 고성군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "기록 공증 감사관",
+          "en": "Records notarization auditor"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/56/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K175",
       "stateId": "S07",
-      "position": {
-        "ko": "용산창 제동 정비사 · 용산구 영주",
-        "en": "Territorial lord of 용산구"
+      "history": {
+        "personId": "K175",
+        "stateId": "S07",
+        "position": {
+          "ko": "용산창 제동 정비사 · 용산구 영주",
+          "en": "Yongsan depot brake mechanic and lord of Yongsan-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "용산창 제동 정비사 · 용산구 영주",
+          "en": "Yongsan depot brake mechanic and lord of Yongsan-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/57/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/3",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K234",
       "stateId": "S09",
-      "position": {
-        "ko": "영종지점 환전 거점장 · 서대문구 영주",
-        "en": "Territorial lord of 서대문구"
+      "history": {
+        "personId": "K234",
+        "stateId": "S09",
+        "position": {
+          "ko": "환전 기록 담당 서기 · 서대문구 영주",
+          "en": "Exchange-records clerk and lord of Seodaemun-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "환전 기록 담당 서기 · 서대문구 영주",
+          "en": "Exchange-records clerk and lord of Seodaemun-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/58/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/14",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K235",
       "stateId": "S09",
-      "position": {
-        "ko": "출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 · 마포구 영주",
-        "en": "Territorial lord of 마포구"
+      "history": {
+        "personId": "K235",
+        "stateId": "S09",
+        "position": {
+          "ko": "출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 · 마포구 영주",
+          "en": "Investment council secretariat officer serving O Haneul and lord of Mapo-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 · 마포구 영주",
+          "en": "Investment council secretariat officer serving O Haneul and lord of Mapo-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/59/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/16",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K285",
       "stateId": "S11",
-      "position": {
-        "ko": "강남역 북문 호송 거점장 · 노원구 영주",
-        "en": "Territorial lord of 노원구"
+      "history": {
+        "personId": "K285",
+        "stateId": "S11",
+        "position": {
+          "ko": "강남역 북문 호송 거점장 · 노원구 영주",
+          "en": "Gangnam Station north-gate convoy coordinator and lord of Nowon-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "강남역 북문 호송 거점장 · 노원구 영주",
+          "en": "Gangnam Station north-gate convoy coordinator and lord of Nowon-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/60/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/11",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K286",
       "stateId": "S11",
-      "position": {
-        "ko": "강남역 사택 급수 거점장, 서진아의 실무 담당자 · 서초구 영주",
-        "en": "Territorial lord of 서초구"
+      "history": {
+        "personId": "K286",
+        "stateId": "S11",
+        "position": {
+          "ko": "강남역 사택 급수 거점장, 서진아의 실무 담당자 · 서초구 영주",
+          "en": "Gangnam Station staff-housing water coordinator serving Seo Jina and lord of Seocho-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "강남역 사택 급수 거점장, 서진아의 실무 담당자 · 서초구 영주",
+          "en": "Gangnam Station staff-housing water coordinator serving Seo Jina and lord of Seocho-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/61/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/26",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K363",
       "stateId": "S14",
-      "position": {
-        "ko": "양군 관문 통과 시장 거점장 · 광진구 영주",
-        "en": "Territorial lord of 광진구"
+      "history": {
+        "personId": "K363",
+        "stateId": "S14",
+        "position": {
+          "ko": "양군 관문 통과 시장 거점장 · 광진구 영주",
+          "en": "Yanggun gate passage-market coordinator and lord of Gwangjin-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "양군 관문 통과 시장 거점장 · 광진구 영주",
+          "en": "Yanggun gate passage-market coordinator and lord of Gwangjin-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/62/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/5",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K405",
       "stateId": "S16",
-      "position": {
-        "ko": "정동 계약서 공동운송장 물류상, 하서진의 실무 담당자 · 강남구 영주",
-        "en": "Territorial lord of 강남구"
+      "history": {
+        "personId": "K405",
+        "stateId": "S16",
+        "position": {
+          "ko": "정동 계약서 공동운송장 물류상, 하서진의 실무 담당자 · 강남구 영주",
+          "en": "Jeongdong contract and joint-waybill logistics officer serving Ha Seojin and lord of Gangnam-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "정동 계약서 공동운송장 물류상, 하서진의 실무 담당자 · 강남구 영주",
+          "en": "Jeongdong contract and joint-waybill logistics officer serving Ha Seojin and lord of Gangnam-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/63/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/29",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K406",
       "stateId": "S16",
-      "position": {
-        "ko": "협약 회의 의무소 거점 의무원 · 서초구 영주",
-        "en": "Territorial lord of 서초구"
+      "history": {
+        "personId": "K406",
+        "stateId": "S16",
+        "position": {
+          "ko": "협약 회의 의무소 거점 의무원 · 서초구 영주",
+          "en": "Agreement-meeting clinic officer and lord of Seocho-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "협약 회의 의무소 거점 의무원 · 서초구 영주",
+          "en": "Agreement-meeting clinic officer and lord of Seocho-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/64/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/27",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K425",
       "stateId": "S02",
-      "position": {
-        "ko": "작업반 전령 · 태안군 영주 · 세종 하위 영지 영주",
-        "en": "Territorial lord of 태안군; subordinate territorial lord in Sejong"
+      "history": {
+        "personId": "K425",
+        "stateId": "S02",
+        "position": {
+          "ko": "작업반 전령 · 태안군 영주 · 세종 하위 영지 영주",
+          "en": "Territorial lord of 태안군; subordinate territorial lord in Sejong"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments;owner:2026-10-11:duchy-internal-vassal-grants"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments;owner:2026-10-11:duchy-internal-vassal-grants"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "작업반 전령",
+          "en": "Work-crew messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/65/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K429",
       "stateId": "S06",
-      "position": {
-        "ko": "증언 탐사원 · 양양군 영주",
-        "en": "Territorial lord of 양양군"
+      "history": {
+        "personId": "K429",
+        "stateId": "S06",
+        "position": {
+          "ko": "증언 탐사원 · 양양군 영주",
+          "en": "Territorial lord of 양양군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "증언 탐사원",
+          "en": "Testimony investigator"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/66/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K441",
       "stateId": "S02",
-      "position": {
-        "ko": "전력장치 순찰대 · 동작구 영주 · 아산 하위 영지 영주",
-        "en": "Territorial lord of 동작구; subordinate territorial lord in Asan"
+      "history": {
+        "personId": "K441",
+        "stateId": "S02",
+        "position": {
+          "ko": "전력장치 순찰대 · 동작구 영주 · 아산 하위 영지 영주",
+          "en": "Territorial lord of 동작구; subordinate territorial lord in Asan"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments;owner:2026-10-11:duchy-internal-vassal-grants"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments;owner:2026-10-11:duchy-internal-vassal-grants"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "전력장치 순찰대 · 동작구 영주",
+          "en": "Power-equipment patrol member and lord of Dongjak-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/67/history/position/ko",
+            "kind": "existing-function"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/23",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K443",
       "stateId": "S04",
-      "position": {
-        "ko": "공방 전령 · 제천시 영주",
-        "en": "Territorial lord of 제천시"
+      "history": {
+        "personId": "K443",
+        "stateId": "S04",
+        "position": {
+          "ko": "공방 전령 · 제천시 영주",
+          "en": "Territorial lord of 제천시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "공방 전령",
+          "en": "Workshop messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/68/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K445",
       "stateId": "S06",
-      "position": {
-        "ko": "사본 전령 · 중구 영주",
-        "en": "Territorial lord of 중구"
+      "history": {
+        "personId": "K445",
+        "stateId": "S06",
+        "position": {
+          "ko": "사본 전령 · 중구 영주",
+          "en": "Copy messenger and lord of Jung-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "사본 전령 · 중구 영주",
+          "en": "Copy messenger and lord of Jung-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/69/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/2",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K457",
       "stateId": "S02",
-      "position": {
-        "ko": "복구복무 기록관 · 관악구 영주",
-        "en": "Territorial lord of 관악구"
+      "history": {
+        "personId": "K457",
+        "stateId": "S02",
+        "position": {
+          "ko": "복구복무 기록관 · 관악구 영주",
+          "en": "Restoration-service records officer and lord of Gwanak-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "복구복무 기록관 · 관악구 영주",
+          "en": "Restoration-service records officer and lord of Gwanak-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/70/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/24",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K459",
       "stateId": "S04",
-      "position": {
-        "ko": "부품 물류상 · 보은군 영주",
-        "en": "Territorial lord of 보은군"
+      "history": {
+        "personId": "K459",
+        "stateId": "S04",
+        "position": {
+          "ko": "부품 물류상 · 보은군 영주",
+          "en": "Territorial lord of 보은군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "부품 물류상",
+          "en": "Parts logistics trader"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/71/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K461",
       "stateId": "S06",
-      "position": {
-        "ko": "인준 기록관 · 서대문구 영주",
-        "en": "Territorial lord of 서대문구"
+      "history": {
+        "personId": "K461",
+        "stateId": "S06",
+        "position": {
+          "ko": "인준 기록관 · 서대문구 영주",
+          "en": "Ratification records officer and lord of Seodaemun-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "retained-office",
+        "position": {
+          "ko": "인준 기록관 · 서대문구 영주",
+          "en": "Ratification records officer and lord of Seodaemun-gu"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/72/history",
+            "kind": "approved-retained-office"
+          },
+          {
+            "path": "lore/relations/opening-feudal-allocation.json",
+            "jsonPointer": "/titles/13",
+            "kind": "existing-right"
+          }
+        ]
+      }
     },
     {
       "personId": "K473",
       "stateId": "S02",
-      "position": {
-        "ko": "작업반 전령 · 장안구 영주",
-        "en": "Territorial lord of 장안구"
+      "history": {
+        "personId": "K473",
+        "stateId": "S02",
+        "position": {
+          "ko": "작업반 전령 · 장안구 영주",
+          "en": "Territorial lord of 장안구"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "작업반 전령",
+          "en": "Work-crew messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/73/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K477",
       "stateId": "S06",
-      "position": {
-        "ko": "증언 탐사원 · 제물포구 영주",
-        "en": "Territorial lord of 제물포구"
+      "history": {
+        "personId": "K477",
+        "stateId": "S06",
+        "position": {
+          "ko": "증언 탐사원 · 제물포구 영주",
+          "en": "Territorial lord of 제물포구"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "증언 탐사원",
+          "en": "Testimony investigator"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/74/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K493",
       "stateId": "S06",
-      "position": {
-        "ko": "사본 전령 · 영종구 영주",
-        "en": "Territorial lord of 영종구"
+      "history": {
+        "personId": "K493",
+        "stateId": "S06",
+        "position": {
+          "ko": "사본 전령 · 영종구 영주",
+          "en": "Territorial lord of 영종구"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "사본 전령",
+          "en": "Copy messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/75/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K507",
       "stateId": "S04",
-      "position": {
-        "ko": "부품 물류상 · 옥천군 영주",
-        "en": "Territorial lord of 옥천군"
+      "history": {
+        "personId": "K507",
+        "stateId": "S04",
+        "position": {
+          "ko": "부품 물류상 · 옥천군 영주",
+          "en": "Territorial lord of 옥천군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "부품 물류상",
+          "en": "Parts logistics trader"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/76/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K509",
       "stateId": "S06",
-      "position": {
-        "ko": "인준 기록관 · 미추홀구 영주",
-        "en": "Territorial lord of 미추홀구"
+      "history": {
+        "personId": "K509",
+        "stateId": "S06",
+        "position": {
+          "ko": "인준 기록관 · 미추홀구 영주",
+          "en": "Territorial lord of 미추홀구"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "인준 기록관",
+          "en": "Ratification records keeper"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/77/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K525",
       "stateId": "S06",
-      "position": {
-        "ko": "증언 탐사원 · 연수구 영주",
-        "en": "Territorial lord of 연수구"
+      "history": {
+        "personId": "K525",
+        "stateId": "S06",
+        "position": {
+          "ko": "증언 탐사원 · 연수구 영주",
+          "en": "Territorial lord of 연수구"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "증언 탐사원",
+          "en": "Testimony investigator"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/78/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K541",
       "stateId": "S06",
-      "position": {
-        "ko": "사본 전령 · 파주시 영주",
-        "en": "Territorial lord of 파주시"
+      "history": {
+        "personId": "K541",
+        "stateId": "S06",
+        "position": {
+          "ko": "사본 전령 · 파주시 영주",
+          "en": "Territorial lord of 파주시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "사본 전령",
+          "en": "Copy messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/79/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K555",
       "stateId": "S04",
-      "position": {
-        "ko": "부품 물류상 · 영동군 영주",
-        "en": "Territorial lord of 영동군"
+      "history": {
+        "personId": "K555",
+        "stateId": "S04",
+        "position": {
+          "ko": "부품 물류상 · 영동군 영주",
+          "en": "Territorial lord of 영동군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "부품 물류상",
+          "en": "Parts logistics trader"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/80/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K557",
       "stateId": "S06",
-      "position": {
-        "ko": "인준 기록관 · 남동구 영주",
-        "en": "Territorial lord of 남동구"
+      "history": {
+        "personId": "K557",
+        "stateId": "S06",
+        "position": {
+          "ko": "인준 기록관 · 남동구 영주",
+          "en": "Territorial lord of 남동구"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "인준 기록관",
+          "en": "Ratification records keeper"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/81/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K573",
       "stateId": "S06",
-      "position": {
-        "ko": "증언 탐사원 · 부평구 영주",
-        "en": "Territorial lord of 부평구"
+      "history": {
+        "personId": "K573",
+        "stateId": "S06",
+        "position": {
+          "ko": "증언 탐사원 · 부평구 영주",
+          "en": "Territorial lord of 부평구"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "증언 탐사원",
+          "en": "Testimony investigator"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/82/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K589",
       "stateId": "S06",
-      "position": {
-        "ko": "사본 전령 · 계양구 영주",
-        "en": "Territorial lord of 계양구"
+      "history": {
+        "personId": "K589",
+        "stateId": "S06",
+        "position": {
+          "ko": "사본 전령 · 계양구 영주",
+          "en": "Territorial lord of 계양구"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "사본 전령",
+          "en": "Copy messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/83/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K603",
       "stateId": "S04",
-      "position": {
-        "ko": "부품 물류상 · 증평군 영주",
-        "en": "Territorial lord of 증평군"
+      "history": {
+        "personId": "K603",
+        "stateId": "S04",
+        "position": {
+          "ko": "부품 물류상 · 증평군 영주",
+          "en": "Territorial lord of 증평군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "부품 물류상",
+          "en": "Parts logistics trader"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/84/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K605",
       "stateId": "S06",
-      "position": {
-        "ko": "인준 기록관 · 서해구 영주",
-        "en": "Territorial lord of 서해구"
+      "history": {
+        "personId": "K605",
+        "stateId": "S06",
+        "position": {
+          "ko": "인준 기록관 · 서해구 영주",
+          "en": "Territorial lord of 서해구"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "인준 기록관",
+          "en": "Ratification records keeper"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/85/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K621",
       "stateId": "S06",
-      "position": {
-        "ko": "증언 탐사원 · 검단구 영주",
-        "en": "Territorial lord of 검단구"
+      "history": {
+        "personId": "K621",
+        "stateId": "S06",
+        "position": {
+          "ko": "증언 탐사원 · 검단구 영주",
+          "en": "Territorial lord of 검단구"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "증언 탐사원",
+          "en": "Testimony investigator"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/86/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K637",
       "stateId": "S06",
-      "position": {
-        "ko": "사본 전령 · 덕양구 영주",
-        "en": "Territorial lord of 덕양구"
+      "history": {
+        "personId": "K637",
+        "stateId": "S06",
+        "position": {
+          "ko": "사본 전령 · 덕양구 영주",
+          "en": "Territorial lord of 덕양구"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "사본 전령",
+          "en": "Copy messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/87/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K651",
       "stateId": "S04",
-      "position": {
-        "ko": "부품 물류상 · 진천군 영주",
-        "en": "Territorial lord of 진천군"
+      "history": {
+        "personId": "K651",
+        "stateId": "S04",
+        "position": {
+          "ko": "부품 물류상 · 진천군 영주",
+          "en": "Territorial lord of 진천군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "부품 물류상",
+          "en": "Parts logistics trader"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/88/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K699",
       "stateId": "S04",
-      "position": {
-        "ko": "부품 물류상 · 괴산군 영주",
-        "en": "Territorial lord of 괴산군"
+      "history": {
+        "personId": "K699",
+        "stateId": "S04",
+        "position": {
+          "ko": "부품 물류상 · 괴산군 영주",
+          "en": "Territorial lord of 괴산군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "부품 물류상",
+          "en": "Parts logistics trader"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/89/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K747",
       "stateId": "S04",
-      "position": {
-        "ko": "부품 물류상 · 음성군 영주",
-        "en": "Territorial lord of 음성군"
+      "history": {
+        "personId": "K747",
+        "stateId": "S04",
+        "position": {
+          "ko": "부품 물류상 · 음성군 영주",
+          "en": "Territorial lord of 음성군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "부품 물류상",
+          "en": "Parts logistics trader"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/90/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K779",
       "stateId": "S04",
-      "position": {
-        "ko": "공방 전령 · 단양군 영주",
-        "en": "Territorial lord of 단양군"
+      "history": {
+        "personId": "K779",
+        "stateId": "S04",
+        "position": {
+          "ko": "공방 전령 · 단양군 영주",
+          "en": "Territorial lord of 단양군"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "공방 전령",
+          "en": "Workshop messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/91/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K781",
       "stateId": "S06",
-      "position": {
-        "ko": "사본 전령 · 김포시 영주",
-        "en": "Territorial lord of 김포시"
+      "history": {
+        "personId": "K781",
+        "stateId": "S06",
+        "position": {
+          "ko": "사본 전령 · 김포시 영주",
+          "en": "Territorial lord of 김포시"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "사본 전령",
+          "en": "Copy messenger"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/92/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K795",
       "stateId": "S04",
-      "position": {
-        "ko": "부품 물류상 · 수정구 영주",
-        "en": "Territorial lord of 수정구"
+      "history": {
+        "personId": "K795",
+        "stateId": "S04",
+        "position": {
+          "ko": "부품 물류상 · 수정구 영주",
+          "en": "Territorial lord of 수정구"
+        },
+        "rank": {
+          "ko": "영주",
+          "en": "Territorial lord"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
       },
-      "rank": {
-        "ko": "영주",
-        "en": "Territorial lord"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:call_gMDk9yvmIRgdTMDQr7gsDWIT:new_holder_land_appointments"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "부품 물류상",
+          "en": "Parts logistics trader"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/93/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     },
     {
       "personId": "K998",
       "stateId": "S02",
-      "position": {
-        "ko": "충청권 공작 · 세종·아산·천안 영주 · 제1분공방 이씨 가문 후계",
-        "en": "Duke of the Chungcheong domain, lord of Sejong, Asan and Cheonan, and heir of the First Branch Workshop Lee family"
+      "history": {
+        "personId": "K998",
+        "stateId": "S02",
+        "position": {
+          "ko": "충청권 공작 · 세종·아산·천안 영주 · 제1분공방 이씨 가문 후계",
+          "en": "Duke of the Chungcheong domain, lord of Sejong, Asan and Cheonan, and heir of the First Branch Workshop Lee family"
+        },
+        "rank": {
+          "ko": "공작",
+          "en": "Duke"
+        },
+        "commonTier": "T3",
+        "approvalRef": "owner:2026-10-11:lee-ilsup-sejong-asan-cheonan-duchy"
       },
-      "rank": {
-        "ko": "공작",
-        "en": "Duke"
-      },
-      "commonTier": "T3",
-      "approvalRef": "owner:2026-10-11:lee-ilsup-sejong-asan-cheonan-duchy"
+      "current": {
+        "status": "existing-function",
+        "position": {
+          "ko": "제1분공방 이씨 가문 후계",
+          "en": "Heir of the First Branch Workshop Lee family"
+        },
+        "rank": null,
+        "commonTier": "T3",
+        "evidence": [
+          {
+            "path": "lore/relations/opening-office-appointments.json",
+            "jsonPointer": "/appointments/94/history/position/ko",
+            "kind": "existing-function"
+          }
+        ]
+      }
     }
   ]
 }

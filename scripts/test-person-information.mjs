@@ -1,4 +1,5 @@
 import { preservedSheetSources } from './preserved-person-sheet.mjs'
+import { assertPublicSheetRecord } from './public-sheet-test-expectation.mjs'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
@@ -51,7 +52,7 @@ async function withSelectedDetail(detail, check) {
     })
     assert.equal(host.querySelector('[data-selected-revision]')?.dataset.selectedRevision, revision)
     assert.equal(host.querySelector('[data-legacy-operative]')?.dataset.legacyOperative, 'false')
-    assert.deepEqual(JSON.parse(host.querySelector('[data-legacy-record] pre').textContent), sources.get(revision).find((row) => row.id === detail.characterId))
+    assertPublicSheetRecord(JSON.parse(host.querySelector('[data-legacy-record] pre').textContent), sources.get(revision).find((row) => row.id === detail.characterId))
     await check(host)
   } finally {
     await act(async () => reactRoot.unmount())
@@ -109,14 +110,14 @@ test('generated person sheets preserve every issued identity and numeric field w
       const selected = selectPreservedSheet(detail.personSheet, { id: detail.characterId, personId: detail.id, name: detail.name, state: detail.state }, key)
       assert.ok(selected.ok, `${row.id}:${key}:${JSON.stringify(selected)}`)
       assert.equal(selected.revision, key)
-      assert.deepEqual(selected.record, records.find((record) => record.id === row.id), `${row.id}:${key}`)
+      assertPublicSheetRecord(selected.record, records.find((record) => record.id === row.id))
     }
   }
   const offset = issued.find((row) => row.id === 'K088')
   assert.equal(detailFor(offset).gurps.personId, 'person-0089')
 })
 
-for (const key of ['unit', 'territory', 'wandering_force']) {
+for (const key of ['unit', 'wandering_force']) {
   test(`generated person ${key} preserves each existing ledger value and absence`, () => {
     for (const row of issued) assert.deepEqual(detailFor(row)[key], row[key], `${row.id}:${key}`)
   })
@@ -136,8 +137,7 @@ for (const id of ['K007', 'K1003', 'K088']) {
       assert.ok(unit?.textContent.includes(`${row.unit.size}명`))
       for (const value of [row.unit.type, row.unit.quality, row.unit.note, ...row.unit.composition]) assert.ok(unit.textContent.includes(value))
       const territory = document.querySelector('.gurps-territory')
-      assert.equal(Boolean(territory), Boolean(row.territory))
-      if (row.territory) for (const value of [row.territory.fief_name, row.territory.station, row.territory.settlement.name, row.territory.settlement.description]) assert.ok(territory.textContent.includes(value))
+      assert.equal(territory, null)
       const camp = document.querySelector('.gurps-wandering')
       assert.equal(Boolean(camp), Boolean(row.wandering_force))
       if (row.wandering_force) for (const value of [row.wandering_force.current_location, row.wandering_force.camp.name, row.wandering_force.camp.description, row.wandering_force.camp.pack_up_time, ...row.wandering_force.camp.facilities]) assert.ok(camp.textContent.includes(value))
@@ -156,7 +156,7 @@ test('generated-to-person-page integration exposes all four information classes'
       assert.equal(document.querySelector('.cp-number')?.textContent, String(row.cp.total))
     })
   }
-  assert.deepEqual(selectors, new Set(['.gurps-sheet', '.gurps-unit', '.gurps-territory', '.gurps-wandering']))
+  assert.deepEqual(selectors, new Set(['.gurps-sheet', '.gurps-unit', '.gurps-wandering']))
 })
 
 test('unissued holdings remain absent on the generated person page', async () => {

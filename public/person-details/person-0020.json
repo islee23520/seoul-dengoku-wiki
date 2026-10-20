@@ -560,52 +560,23 @@
             "name": "진세빈",
             "url": "/people/person-0020",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "이동 진료",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/226/items/1/ko",
-                  "quote": "생업: 이동 진료"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "골목별 설사·탈수 게시판을 운영하고, 단수 예고가 뜨면 임바다의 대표 연서로 저수조 옆 진료를 연다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/228/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -613,78 +584,28 @@
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/226/items/1/ko",
-                    "quote": "생업: 이동 진료"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "골목별 설사·탈수 게시판을 운영하고, 단수 예고가 뜨면 임바다의 대표 연서로 저수조 옆 진료를 연다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/228/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "본송",
-              "type": "초소 영지",
-              "station": "본송",
-              "state": "S01",
-              "settlement": {
-                "name": "본송 정착지",
-                "type": "정착지",
-                "description": "본송 일대 고정 거점"
-              },
-              "note": "S01 본송 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
@@ -708,52 +629,23 @@
             "name": "진세빈",
             "url": "/people/person-0020",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "이동 진료",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/226/items/1/ko",
-                  "quote": "생업: 이동 진료"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "골목별 설사·탈수 게시판을 운영하고, 단수 예고가 뜨면 임바다의 대표 연서로 저수조 옆 진료를 연다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/228/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -761,78 +653,28 @@
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/226/items/1/ko",
-                    "quote": "생업: 이동 진료"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "골목별 설사·탈수 게시판을 운영하고, 단수 예고가 뜨면 임바다의 대표 연서로 저수조 옆 진료를 연다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/228/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "본송",
-              "type": "초소 영지",
-              "station": "본송",
-              "state": "S01",
-              "settlement": {
-                "name": "본송 정착지",
-                "type": "정착지",
-                "description": "본송 일대 고정 거점"
-              },
-              "note": "S01 본송 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
@@ -853,18 +695,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "본송",
-    "type": "초소 영지",
-    "station": "본송",
-    "state": "S01",
-    "settlement": {
-      "name": "본송 정착지",
-      "type": "정착지",
-      "description": "본송 일대 고정 거점"
-    },
-    "note": "S01 본송 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -901,11 +731,12 @@
     "생업": "이동 진료",
     "품계": "주사",
     "직함": "양천 이동의무차 반장",
+    "업무 위치": "신정2동. 진세빈은 신정2동에서 이동의무차의 순회 명부를 인계받아 설사·탈수 환자가 있는 골목을 돌고 임바다의 연서가 닿으면 저수조 옆에 진료를 연다.",
     "가치관": "권위 50 | 개방 0 | 무력 −5 | 물질 20 | 공동 10 | 원칙 40 | 공개 20 | 자격 5 | 분산 −60 | 변혁 −30",
     "욕망": "갈망 5 | 독점 35 | 위험 0 | 과시 −5 | 지속 15 | 지향 동성 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 양천 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.",
+    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 양천 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.\n- 업무 위치: 신정2동. 진세빈은 신정2동에서 이동의무차의 순회 명부를 인계받아 설사·탈수 환자가 있는 골목을 돌고 임바다의 연서가 닿으면 저수조 옆에 진료를 연다.",
     "관직": "품계 주사. 직함은 양천 이동의무차 반장. 골목별 설사·탈수 게시판을 운영하고, 단수 예고가 뜨면 임바다의 대표 연서로 저수조 옆 진료를 연다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 양천 이동의무차 반장 자리의 서명이 장부에 올랐다.",
     "관계": "임바다의 시민 급수권 맹세를 현장에서 집행하고, 진하겸의 선창 봉쇄가 길어지면 환자를 양천으로 받으며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
@@ -913,7 +744,7 @@
     "공포": "재난 구역 환자가 난민 명부로만 남아 북한산보국문으로 떠밀리고 의무차가 호송 감옥이 되는 것.",
     "개입": "시약 상자를 호송해 골목 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다."
   },
-  "biography": "골목 수도꼭지가 마르면 진료 순서를 가족 단위로 바꾸고, 효율을 이유로 한 골목을 건너뛰라는 말을 모욕으로 듣는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.\n\n- 소속: 수문국\n- 생업: 이동 진료\n- 품계: 주사\n- 직함: 양천 이동의무차 반장\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 양천 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 주사. 직함은 양천 이동의무차 반장. 골목별 설사·탈수 게시판을 운영하고, 단수 예고가 뜨면 임바다의 대표 연서로 저수조 옆 진료를 연다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 양천 이동의무차 반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 임바다의 시민 급수권 맹세를 현장에서 집행하고, 진하겸의 선창 봉쇄가 길어지면 환자를 양천으로 받으며, 백온의 가족 명부와 이동 진료 명단을 교환한다.\n\n**야망.** 집단 단수 대상 골목에도 이동 의무차가 들어가게 해 시민 급수권의 의료 최저선을 물 계약에 못 박는다.\n\n**공포.** 재난 구역 환자가 난민 명부로만 남아 북한산보국문으로 떠밀리고 의무차가 호송 감옥이 되는 것.\n\n**개입.** 시약 상자를 호송해 골목 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 0 | 무력 −5 | 물질 20 | 공동 10 | 원칙 40 | 공개 20 | 자격 5 | 분산 −60 | 변혁 −30\n- 욕망: 갈망 5 | 독점 35 | 위험 0 | 과시 −5 | 지속 15 | 지향 동성 | 결합 없음\n:::",
+  "biography": "골목 수도꼭지가 마르면 진료 순서를 가족 단위로 바꾸고, 효율을 이유로 한 골목을 건너뛰라는 말을 모욕으로 듣는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.\n\n- 소속: 수문국\n- 생업: 이동 진료\n- 품계: 주사\n- 직함: 양천 이동의무차 반장\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 양천 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.\n- 업무 위치: 신정2동. 진세빈은 신정2동에서 이동의무차의 순회 명부를 인계받아 설사·탈수 환자가 있는 골목을 돌고 임바다의 연서가 닿으면 저수조 옆에 진료를 연다.\n\n**관직.** 품계 주사. 직함은 양천 이동의무차 반장. 골목별 설사·탈수 게시판을 운영하고, 단수 예고가 뜨면 임바다의 대표 연서로 저수조 옆 진료를 연다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 양천 이동의무차 반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 임바다의 시민 급수권 맹세를 현장에서 집행하고, 진하겸의 선창 봉쇄가 길어지면 환자를 양천으로 받으며, 백온의 가족 명부와 이동 진료 명단을 교환한다.\n\n**야망.** 집단 단수 대상 골목에도 이동 의무차가 들어가게 해 시민 급수권의 의료 최저선을 물 계약에 못 박는다.\n\n**공포.** 재난 구역 환자가 난민 명부로만 남아 북한산보국문으로 떠밀리고 의무차가 호송 감옥이 되는 것.\n\n**개입.** 시약 상자를 호송해 골목 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 0 | 무력 −5 | 물질 20 | 공동 10 | 원칙 40 | 공개 20 | 자격 5 | 분산 −60 | 변혁 −30\n- 욕망: 갈망 5 | 독점 35 | 위험 0 | 과시 −5 | 지속 15 | 지향 동성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-01"
   ],

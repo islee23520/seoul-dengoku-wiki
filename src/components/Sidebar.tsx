@@ -27,7 +27,6 @@ const sections: { title: string; items: SidebarItem[] }[] = [
     { label: '본관 가문', to: wikiLinks.families, spa: true },
     { label: '서울 십육국', to: wikiLinks.states, spa: true },
     { label: '세계 지도', to: wikiLinks.subway, spa: true },
-    { label: '서울 관찰 지리', to: '/geography', spa: true },
     { label: '갱신 이력', to: '/updates', spa: true },
   ]},
   { title: '도구', items: [

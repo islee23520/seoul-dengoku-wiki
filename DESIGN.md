@@ -136,9 +136,3 @@ Reference: authenticated campaign.html Region interaction. Retain its lower-left
 ## 12. 독자 인물 profile (2026-10-12)
 
 인물 본문의 정본 상세 뒤에 역량 표, 숙련 표, 특성 설명과 신체 상태를 표시한다. 기존 wiki-table-wrap·person-data-table·본문 제목·details를 재사용하고 새 색·간격·그림자를 추가하지 않는다. 역량은 기본값과 최종값을 별도 열로 비교한다. 숙련은 소수 첫째 자리로 표시한다. 특성은 행동·스트레스·관계와 수치 효과를 이름과 함께 읽는다. 신체는 부위별 손상·기능을 분리하며 미평가 상태를 정상으로 표시하지 않는다. 공개 profile에는 soul과 역사 비교를 표시하지 않는다. 표만 자체 가로 스크롤하며 모바일 본문을 밀지 않는다.
-
-## 13. 서울 관찰 지리 (2026-10-14)
-
-`GeographyPage`는 기존 ArticlePage 헤더·본문과 wiki 토큰을 재사용하는 list-detail 화면이다. 서울 백작령 폴리곤 지도와 상세를 데스크톱 두 열, 1024px 미만 한 열로 배치하며 문서 본문이 스크롤을 소유한다. 지도는 정사각형 frame으로 폭에 맞추고 각 열은 minmax(0, …)로 줄어든다. 375px에서도 출처 URL·SHA-256과 슬롯 식별자는 줄바꿈한다. 새 색·그림자·모션은 없다.
-
-상태는 loading, error/다시 불러오기, loaded/선택 전, selected다. 폴리곤은 클릭·Enter·Space로 선택하며 native select가 동일한 선택 대안이다. 선택은 면색과 aria-pressed, 상세 제목으로 함께 표시하고 모든 제어에 focus-visible 표시를 둔다. 행정동 슬롯은 상세 목록만 제공하며 지도 hit target이 아니다. 고정 SGIS 2025년 6월 30일 통계 판본과 공개 출처·해시를 표시하고 최신 행정 경계나 인물·정치·권리 승인으로 해석하지 않는다. 기존 게시·승인 보류 상태는 유지한다.

@@ -554,57 +554,23 @@
             "name": "박파윤",
             "url": "/people/person-0934",
             "state": "S15",
-            "method": "card-lexicon",
-            "role": {
-              "display": "선거 기록·인수인계 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-15.json",
-                  "pointer": "/content/600/items/0/ko",
-                  "quote": "생업: 선거 기록·인수인계 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/601/text/ko",
-                    "quote": "사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/602/text/ko",
-                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/602/text/ko",
-                    "quote": "명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -612,94 +578,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/600/items/0/ko",
-                    "quote": "생업: 선거 기록·인수인계 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/601/text/ko",
-                    "quote": "사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/602/text/ko",
-                    "quote": "명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/602/text/ko",
-                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
-                  }
-                ],
-                "cp": 4,
-                "level": 14
+                "level": 14,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 72,
-              "unspent": 3,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
-              "faction_scale": {
-                "state": "S15",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "동대입구",
-              "type": "초소 영지",
-              "station": "동대입구",
-              "state": "S15",
-              "settlement": {
-                "name": "동대입구 정착지",
-                "type": "정착지",
-                "description": "동대입구 일대 고정 거점"
-              },
-              "note": "S15 동대입구 일대 관할 영지"
+              "unspent": 3
             }
           }
         }
@@ -723,57 +629,23 @@
             "name": "박파윤",
             "url": "/people/person-0934",
             "state": "S15",
-            "method": "card-lexicon",
-            "role": {
-              "display": "선거 기록·인수인계 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-15.json",
-                  "pointer": "/content/600/items/0/ko",
-                  "quote": "생업: 선거 기록·인수인계 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/601/text/ko",
-                    "quote": "사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/602/text/ko",
-                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/602/text/ko",
-                    "quote": "명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -781,94 +653,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/600/items/0/ko",
-                    "quote": "생업: 선거 기록·인수인계 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/601/text/ko",
-                    "quote": "사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/602/text/ko",
-                    "quote": "명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/602/text/ko",
-                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
-                  }
-                ],
-                "cp": 4,
-                "level": 14
+                "level": 14,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 72,
-              "unspent": 3,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
-              "faction_scale": {
-                "state": "S15",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "동대입구",
-              "type": "초소 영지",
-              "station": "동대입구",
-              "state": "S15",
-              "settlement": {
-                "name": "동대입구 정착지",
-                "type": "정착지",
-                "description": "동대입구 일대 고정 거점"
-              },
-              "note": "S15 동대입구 일대 관할 영지"
+              "unspent": 3
             }
           }
         }
@@ -889,18 +701,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "동대입구",
-    "type": "초소 영지",
-    "station": "동대입구",
-    "state": "S15",
-    "settlement": {
-      "name": "동대입구 정착지",
-      "type": "정착지",
-      "description": "동대입구 일대 고정 거점"
-    },
-    "note": "S15 동대입구 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -941,15 +741,15 @@
     "욕망": "갈망 40 | 독점 −50 | 위험 10 | 과시 50 | 지속 10 | 지향 유동 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 선거 기록 서기 일을 맡았다.",
-    "관직": "품계 교우. 직함은 명동역 선거 기록 서기. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.",
-    "일화": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다.",
+    "생애": "2090-09-25에 태어난 박파윤은 영구 겨울의 명동역 교구청에서 명동역 선거 기록 서기 일을 맡는다. 선거 기록·인수인계 기록 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 박파윤은 명동 행정동의 명동역 교구청에서 명동역 선거 기록 서기 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
+    "관직": "품계 교우. 직함은 명동역 선거 기록 서기. 선거 기록·인수인계 기록 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
+    "일화": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
     "야망": "교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.",
     "공포": "다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 선거 기록 서기 장부의 서명이 사라지는 것.",
     "개입": "명동역 선거 기록 서기의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다."
   },
-  "biography": "박파윤은 명동역 선거 기록 서기 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 선거 기록·인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 선거 기록 서기\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 선거 기록 서기 일을 맡았다.\n\n**관직.** 품계 교우. 직함은 명동역 선거 기록 서기. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 선거 기록 서기 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 선거 기록 서기의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 0 | 물질 80 | 공동 −20 | 원칙 −50 | 공개 −10 | 자격 5 | 분산 5 | 변혁 −10\n- 욕망: 갈망 40 | 독점 −50 | 위험 10 | 과시 50 | 지속 10 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "박파윤은 명동역 선거 기록 서기 업무에서 선거 기록·인수인계 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 선거 기록·인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 선거 기록 서기\n**생애.** 2090-09-25에 태어난 박파윤은 영구 겨울의 명동역 교구청에서 명동역 선거 기록 서기 일을 맡는다. 선거 기록·인수인계 기록 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 박파윤은 명동 행정동의 명동역 교구청에서 명동역 선거 기록 서기 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 교우. 직함은 명동역 선거 기록 서기. 선거 기록·인수인계 기록 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 선거 기록 서기 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 선거 기록 서기의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 0 | 물질 80 | 공동 −20 | 원칙 −50 | 공개 −10 | 자격 5 | 분산 5 | 변혁 −10\n- 욕망: 갈망 40 | 독점 −50 | 위험 10 | 과시 50 | 지속 10 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-15"
   ],

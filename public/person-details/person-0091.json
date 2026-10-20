@@ -2,9 +2,9 @@
   "id": "person-0091",
   "name": "김보람",
   "title": "뚝섬 펌프수비대장",
-  "position": "뚝섬 펌프수비대장 · 성남시 영주",
+  "position": "뚝섬 펌프수비대장",
   "characterId": "K090",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "펌프실 경비·출입 통제",
   "gender": "여성",
@@ -454,47 +454,23 @@
             "name": "김보람",
             "url": "/people/person-0091",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "펌프실 경비·출입 통제",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/93/items/1/ko",
-                  "quote": "생업: 펌프실 경비·출입 통제"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -502,122 +478,47 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/93/items/1/ko",
-                    "quote": "생업: 펌프실 경비·출입 통제"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/93/items/1/ko",
-                    "quote": "생업: 펌프실 경비·출입 통제"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/93/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 44,
-              "unspent": 31,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "김보람 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 31
+            }
           }
         }
       },
@@ -640,47 +541,23 @@
             "name": "김보람",
             "url": "/people/person-0091",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "펌프실 경비·출입 통제",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/93/items/1/ko",
-                  "quote": "생업: 펌프실 경비·출입 통제"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -688,452 +565,65 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/93/items/1/ko",
-                    "quote": "생업: 펌프실 경비·출입 통제"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/93/items/1/ko",
-                    "quote": "생업: 펌프실 경비·출입 통제"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/93/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 44,
-              "unspent": 31,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "김보람 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 31
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [],
-  "subordinateHoldings": [
-    {
-      "id": "holding:opening-barony-gu-41131-S04",
-      "name": {
-        "ko": "수정구 남작령 직영지"
-      },
-      "holderPersonId": "K795",
-      "directLiegePersonId": "K090",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4113151000",
-          "name": "경기도 성남시수정구 신흥1동"
-        },
-        {
-          "id": "4113152000",
-          "name": "경기도 성남시수정구 신흥2동"
-        },
-        {
-          "id": "4113153000",
-          "name": "경기도 성남시수정구 신흥3동"
-        },
-        {
-          "id": "4113154000",
-          "name": "경기도 성남시수정구 태평1동"
-        },
-        {
-          "id": "4113155000",
-          "name": "경기도 성남시수정구 태평2동"
-        },
-        {
-          "id": "4113156000",
-          "name": "경기도 성남시수정구 태평3동"
-        },
-        {
-          "id": "4113156100",
-          "name": "경기도 성남시수정구 태평4동"
-        },
-        {
-          "id": "4113157000",
-          "name": "경기도 성남시수정구 수진1동"
-        },
-        {
-          "id": "4113158000",
-          "name": "경기도 성남시수정구 수진2동"
-        },
-        {
-          "id": "4113159000",
-          "name": "경기도 성남시수정구 단대동"
-        },
-        {
-          "id": "4113160000",
-          "name": "경기도 성남시수정구 산성동"
-        },
-        {
-          "id": "4113161000",
-          "name": "경기도 성남시수정구 양지동"
-        },
-        {
-          "id": "4113162000",
-          "name": "경기도 성남시수정구 복정동"
-        },
-        {
-          "id": "4113162500",
-          "name": "경기도 성남시수정구 위례동"
-        },
-        {
-          "id": "4113163000",
-          "name": "경기도 성남시수정구 신촌동"
-        },
-        {
-          "id": "4113164000",
-          "name": "경기도 성남시수정구 고등동"
-        },
-        {
-          "id": "4113165000",
-          "name": "경기도 성남시수정구 시흥동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41131-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "안남늘",
-      "holderRoute": "/people/person-0795"
-    },
-    {
-      "id": "holding:opening-barony-gu-41133-S04",
-      "name": {
-        "ko": "중원구 남작령 직영지"
-      },
-      "holderPersonId": "K795",
-      "directLiegePersonId": "K090",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4113351000",
-          "name": "경기도 성남시중원구 성남동"
-        },
-        {
-          "id": "4113352500",
-          "name": "경기도 성남시중원구 중앙동"
-        },
-        {
-          "id": "4113353000",
-          "name": "경기도 성남시중원구 금광1동"
-        },
-        {
-          "id": "4113354000",
-          "name": "경기도 성남시중원구 금광2동"
-        },
-        {
-          "id": "4113355000",
-          "name": "경기도 성남시중원구 은행1동"
-        },
-        {
-          "id": "4113356000",
-          "name": "경기도 성남시중원구 은행2동"
-        },
-        {
-          "id": "4113357000",
-          "name": "경기도 성남시중원구 상대원1동"
-        },
-        {
-          "id": "4113358000",
-          "name": "경기도 성남시중원구 상대원2동"
-        },
-        {
-          "id": "4113359000",
-          "name": "경기도 성남시중원구 상대원3동"
-        },
-        {
-          "id": "4113366000",
-          "name": "경기도 성남시중원구 하대원동"
-        },
-        {
-          "id": "4113367000",
-          "name": "경기도 성남시중원구 도촌동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41133-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "안남늘",
-      "holderRoute": "/people/person-0795"
-    },
-    {
-      "id": "holding:opening-barony-gu-41135-S04",
-      "name": {
-        "ko": "분당구 남작령 직영지"
-      },
-      "holderPersonId": "K795",
-      "directLiegePersonId": "K090",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4113551000",
-          "name": "경기도 성남시분당구 분당동"
-        },
-        {
-          "id": "4113552000",
-          "name": "경기도 성남시분당구 수내1동"
-        },
-        {
-          "id": "4113553000",
-          "name": "경기도 성남시분당구 수내2동"
-        },
-        {
-          "id": "4113554000",
-          "name": "경기도 성남시분당구 수내3동"
-        },
-        {
-          "id": "4113554500",
-          "name": "경기도 성남시분당구 정자동"
-        },
-        {
-          "id": "4113555000",
-          "name": "경기도 성남시분당구 정자1동"
-        },
-        {
-          "id": "4113556000",
-          "name": "경기도 성남시분당구 정자2동"
-        },
-        {
-          "id": "4113557000",
-          "name": "경기도 성남시분당구 정자3동"
-        },
-        {
-          "id": "4113558000",
-          "name": "경기도 성남시분당구 서현1동"
-        },
-        {
-          "id": "4113559000",
-          "name": "경기도 성남시분당구 서현2동"
-        },
-        {
-          "id": "4113560000",
-          "name": "경기도 성남시분당구 이매1동"
-        },
-        {
-          "id": "4113561000",
-          "name": "경기도 성남시분당구 이매2동"
-        },
-        {
-          "id": "4113562000",
-          "name": "경기도 성남시분당구 야탑1동"
-        },
-        {
-          "id": "4113563000",
-          "name": "경기도 성남시분당구 야탑2동"
-        },
-        {
-          "id": "4113564000",
-          "name": "경기도 성남시분당구 야탑3동"
-        },
-        {
-          "id": "4113565000",
-          "name": "경기도 성남시분당구 판교동"
-        },
-        {
-          "id": "4113565500",
-          "name": "경기도 성남시분당구 삼평동"
-        },
-        {
-          "id": "4113565700",
-          "name": "경기도 성남시분당구 백현동"
-        },
-        {
-          "id": "4113566200",
-          "name": "경기도 성남시분당구 금곡동"
-        },
-        {
-          "id": "4113566500",
-          "name": "경기도 성남시분당구 구미1동"
-        },
-        {
-          "id": "4113567000",
-          "name": "경기도 성남시분당구 구미동"
-        },
-        {
-          "id": "4113568000",
-          "name": "경기도 성남시분당구 운중동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41135-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "안남늘",
-      "holderRoute": "/people/person-0795"
-    }
-  ],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41130-S04",
-      "name": "성남시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K090",
-      "basis": "개막 행정 규모 그룹 41130(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S04",
-      "parentTitleId": "title:kingdom-s04",
-      "jurisdictionRefs": [
-        "4113151000",
-        "4113152000",
-        "4113153000",
-        "4113154000",
-        "4113155000",
-        "4113156000",
-        "4113156100",
-        "4113157000",
-        "4113158000",
-        "4113159000",
-        "4113160000",
-        "4113161000",
-        "4113162000",
-        "4113162500",
-        "4113163000",
-        "4113164000",
-        "4113165000",
-        "4113351000",
-        "4113352500",
-        "4113353000",
-        "4113354000",
-        "4113355000",
-        "4113356000",
-        "4113357000",
-        "4113358000",
-        "4113359000",
-        "4113366000",
-        "4113367000",
-        "4113551000",
-        "4113552000",
-        "4113553000",
-        "4113554000",
-        "4113554500",
-        "4113555000",
-        "4113556000",
-        "4113557000",
-        "4113558000",
-        "4113559000",
-        "4113560000",
-        "4113561000",
-        "4113562000",
-        "4113563000",
-        "4113564000",
-        "4113565000",
-        "4113565500",
-        "4113565700",
-        "4113566200",
-        "4113566500",
-        "4113567000",
-        "4113568000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s04",
-        "name": "종교 연합 왕국",
-        "holderPersonId": "K423"
-      }
+      "politicalParentTitleId": "title:kingdom-s04",
+      "personalLieges": [],
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -1148,7 +638,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -1204,15 +693,15 @@
     "욕망": "갈망 0 | 독점 5 | 위험 55 | 과시 25 | 지속 −5 | 지향 유동 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 뚝섬 펌프수비대장 자리는 탈선 직전 결함 보고로 열렸다.",
+    "생애": "2126년 세대. 김보람은 신정 차량기지에서 자랐다. 김보람은 탈선 직전 결함 보고로 뚝섬 펌프수비대장 자리를 맡았다.\n- 김보람의 뚝섬 펌프수비대장 업무는 성수1가2동과 연결된다.",
     "관직": "품계 교사. 직함은 뚝섬 펌프수비대장. 주간은 당회와 교대 명부를 공유하고, 야간 펌프실 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.",
-    "일화": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 뚝섬 펌프수비대장 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 김보람은 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 뚝섬 펌프수비대장 자리의 서명이 장부에 올랐다.",
     "관계": "한소미의 평의회 연서를 주간에 따르지만 야간 지휘는 나누지 않고, 최나래의 기동 정비조와 교량 순찰을 맹세로 나누며, 임하준 실종을 자신의 경비 실패로 여긴다.",
     "야망": "정수 펌프와 동부 교량 접근을 수비대 단독 봉쇄권으로 묶어, 후계가 누가 되든 물이 무력의 볼모가 되지 않게 한다.",
-    "공포": "암사 보호군이 점검 공백을 구원으로 위장해 펌프실에 주둔하는 것.",
+    "공포": "김보람은 암사 보호군이 점검 공백을 구원으로 위장해 펌프실에 주둔하는 상황을 두려워한다.",
     "개입": "외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 수비대 암호패 유출을 밝혀 대장을 교체하게 할 수 있다."
   },
-  "biography": "신의가 강하고 직선적이며 펌프실의 진동이 바뀌면 회의를 중단시킨다. 수비를 보호군 명목으로 내주라는 제안을 배신으로 본다.\n\n- 소속: 명부교회\n- 생업: 펌프실 경비·출입 통제\n- 품계: 교사\n- 직함: 뚝섬 펌프수비대장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 뚝섬 펌프수비대장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 뚝섬 펌프수비대장. 주간은 당회와 교대 명부를 공유하고, 야간 펌프실 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 뚝섬 펌프수비대장 자리의 서명이 장부에 올랐다.\n\n**관계.** 한소미의 평의회 연서를 주간에 따르지만 야간 지휘는 나누지 않고, 최나래의 기동 정비조와 교량 순찰을 맹세로 나누며, 임하준 실종을 자신의 경비 실패로 여긴다.\n\n**야망.** 정수 펌프와 동부 교량 접근을 수비대 단독 봉쇄권으로 묶어, 후계가 누가 되든 물이 무력의 볼모가 되지 않게 한다.\n\n**공포.** 암사 보호군이 점검 공백을 구원으로 위장해 펌프실에 주둔하는 것.\n\n**개입.** 외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 수비대 암호패 유출을 밝혀 대장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 −10 | 무력 −10 | 물질 30 | 공동 30 | 원칙 5 | 공개 −20 | 자격 50 | 분산 15 | 변혁 5\n- 욕망: 갈망 0 | 독점 5 | 위험 55 | 과시 25 | 지속 −5 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "신의가 강하고 직선적이며 펌프실의 진동이 바뀌면 회의를 중단시킨다. 수비를 보호군 명목으로 내주라는 제안을 배신으로 본다.\n\n- 소속: 명부교회\n- 생업: 펌프실 경비·출입 통제\n- 품계: 교사\n- 직함: 뚝섬 펌프수비대장\n**생애.** 2126년 세대. 김보람은 신정 차량기지에서 자랐다. 김보람은 탈선 직전 결함 보고로 뚝섬 펌프수비대장 자리를 맡았다.\n- 김보람의 뚝섬 펌프수비대장 업무는 성수1가2동과 연결된다.\n\n**관직.** 품계 교사. 직함은 뚝섬 펌프수비대장. 주간은 당회와 교대 명부를 공유하고, 야간 펌프실 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.\n\n**일화.** 2125년 김보람은 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 뚝섬 펌프수비대장 자리의 서명이 장부에 올랐다.\n\n**관계.** 한소미의 평의회 연서를 주간에 따르지만 야간 지휘는 나누지 않고, 최나래의 기동 정비조와 교량 순찰을 맹세로 나누며, 임하준 실종을 자신의 경비 실패로 여긴다.\n\n**야망.** 정수 펌프와 동부 교량 접근을 수비대 단독 봉쇄권으로 묶어, 후계가 누가 되든 물이 무력의 볼모가 되지 않게 한다.\n\n**공포.** 김보람은 암사 보호군이 점검 공백을 구원으로 위장해 펌프실에 주둔하는 상황을 두려워한다.\n\n**개입.** 외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 수비대 암호패 유출을 밝혀 대장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 −10 | 무력 −10 | 물질 30 | 공동 30 | 원칙 5 | 공개 −20 | 자격 50 | 분산 15 | 변혁 5\n- 욕망: 갈망 0 | 독점 5 | 위험 55 | 과시 25 | 지속 −5 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-04"
   ],

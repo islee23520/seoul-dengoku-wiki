@@ -230,6 +230,11 @@ export function summarizeCurrentSourceAlignment(tables) {
     holding_superseded: tables.context_holding.filter((row) => row.current_validity === 'superseded_outside_seoul').length,
     holding_unresolved: tables.context_holding.filter((row) => row.current_validity === 'unresolved').length,
     holding_current: tables.context_holding.filter((row) => row.current_validity === 'current_seoul_evidenced').length,
+    holding_nonowning: tables.context_holding.filter((row) => row.current_validity === 'current_seoul_nonowning').length,
+    current_title_count: tables.context_feudal_title.length,
+    current_grant_count: tables.context_feudal_grant.length,
+    political_identity_count: tables.context_political_identity.length,
+    outside_retired_count: tables.context_outside_retirement.length,
   };
 }
 

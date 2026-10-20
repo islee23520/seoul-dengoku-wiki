@@ -13,9 +13,10 @@ const repoRoot = join(scriptDir, '..')
 const ledger = JSON.parse(readFileSync(join(repoRoot, 'lore/editorial/Naming-Ledger.json'), 'utf8'))
 const canon = (path) => JSON.parse(readFileSync(join(repoRoot, path), 'utf8'))
 const referenceDir = [
+  process.env.SEOUL_KENSHI_ROOT && join(process.env.SEOUL_KENSHI_ROOT, 'RESEARCH', 'canon-reference'),
   join(scriptDir, '..', '..', 'RESEARCH', 'canon-reference'),
   join(scriptDir, '..', '..', '..', 'RESEARCH', 'canon-reference'),
-].find((path) => { try { return statSync(path).isDirectory() } catch { return false } })
+].filter(Boolean).find((path) => { try { return statSync(path).isDirectory() } catch { return false } })
 
 function makeDisposableInventory(count) {
   const dir = mkdtempSync(join(tmpdir(), 'gate-ref-inv-'))
@@ -348,6 +349,24 @@ function gateProbe(fixture) {
   if (run.error) throw run.error
   return { status: run.status, output: `${run.stdout}\n${run.stderr}` }
 }
+
+test('production asset gate distinguishes module identifiers from literal copy even in lib paths', () => {
+  const file = `dist/assets/lib/${readdirSync(join(repoRoot, 'dist/assets/lib')).find((name) => /^mermaid\.core-.*\.js$/.test(name))}`
+  const identifier = gateProbe({ file, append: '\nconst OmO = 1; console.log(OmO);\n' })
+  assert.equal(identifier.status, 0, identifier.output)
+  for (const append of [
+    '\nconsole.log("OmO");\n',
+    '\nconsole.log(`OmO`);\n',
+    '\nconsole.log(`OmO ${1}`);\n',
+    '\ndocument.body.textContent = "OmO";\n',
+    '\nconst tooltip = "assets/lib/chunk-IMKFNOWR-BayOmOWx.js";\n',
+    '\nconsole.log("\\u004fmO");\n',
+  ]) {
+    const result = gateProbe({ file, append })
+    assert.equal(result.status, 1, `${append}: ${result.output}`)
+    assert.ok(result.output.includes(`FAIL retired-form: ${file} contains "OmO"`), result.output)
+  }
+})
 
 test('production gate reports visible map, timeline, state, and person-label markers', () => {
   for (const [fixture, fragment] of [

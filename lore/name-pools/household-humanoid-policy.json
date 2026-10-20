@@ -42,6 +42,18 @@
   "facilityCustody": "not-household; preserve without authorizing new household service",
   "seedKey": "household-humanoid-gender:v1 + supplied seed + permanent owner K ID + stable role key",
   "sexualRelationship": "not implied by household labor or gender preference",
+  "politicalPositionContext": {
+    "polity:daejeon": {
+      "kind": "nonterritorial-political-identity",
+      "currentScope": "서울 안에서 유지되는 정치 정체성과 개인별 심사 기준이며, 현재 대전광역시 영토·거점·통치권의 존속이나 대응 영토를 뜻하지 않는다.",
+      "rightsBasis": {
+        "path": "scripts/approved-daejeon-nonowning-rights.json",
+        "jsonPointer": "/contract",
+        "approvalRef": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD"
+      },
+      "rightsLimit": "승인된 권리는 서울 보유 변경 통지 수령과 비구속 원장 정정 요청뿐이며, 영토 소유나 새 가신·가구 배치를 승인하지 않는다."
+    }
+  },
   "politicalPositions": {
     "S02": "partnership",
     "S06": "control",

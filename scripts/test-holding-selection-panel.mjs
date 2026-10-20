@@ -75,24 +75,18 @@ const componentOnlyHolding = {
   ],
 }
 
-test('component-only holding renders counted components with real or unitId:index labels', () => {
+test('component-only holding rejects barony-level public map selection with E_MAP_GRANULARITY', () => {
   const dom = new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null,
     createElement(HoldingSelectionPanel, { holding: componentOnlyHolding, openingYear: ledger.openingYear, selectedRegionId: 'unit:test-a', onSelectRegion() {} }))))
   try {
     const document = dom.window.document
     assert.equal(document.querySelector('[data-selected-holding]')?.getAttribute('data-selected-holding'), componentOnlyHolding.id)
-    assert.equal(document.querySelector('[role="alert"]'), null)
-    const text = document.body.textContent
-    assert.match(text, /2개 구성 요소/u)
-    assert.ok(text.includes('보유 구성 요소'))
-    assert.ok(!text.includes('보유 행정구역'))
-    const buttons = [...document.querySelectorAll('.campaign-holding-regions button')]
-    assert.deepEqual(buttons.map(node => node.textContent), ['unit:test-a:0', '테스트 구성 명칭'])
-    assert.deepEqual(buttons.map(node => node.getAttribute('aria-pressed')), ['true', 'false'])
+    assert.match(document.querySelector('[role="alert"]').textContent, /E_MAP_GRANULARITY/u)
+    assert.equal(document.querySelectorAll('button').length, 0)
   } finally { dom.window.close() }
 })
 
-test('component buttons forward unitId to onSelectRegion', async () => {
+test('component selections never forward an outside unit', async () => {
   const dom = new JSDOM('<!doctype html><html><body><div id="root"></div></body></html>', { url: 'https://holding-panel.test/' })
   globalThis.window = dom.window
   globalThis.document = dom.window.document
@@ -104,12 +98,8 @@ test('component buttons forward unitId to onSelectRegion', async () => {
       root.render(createElement(MemoryRouter, null,
         createElement(HoldingSelectionPanel, { holding: componentOnlyHolding, openingYear: ledger.openingYear, selectedRegionId: '', onSelectRegion: id => calls.push(id) })))
     })
-    const buttons = [...dom.window.document.querySelectorAll('.campaign-holding-regions button')]
-    assert.equal(buttons.length, 2)
-    await act(async () => { buttons[0].dispatchEvent(new dom.window.MouseEvent('click', { bubbles: true })) })
-    assert.deepEqual(calls, ['unit:test-a'])
-    await act(async () => { buttons[1].dispatchEvent(new dom.window.MouseEvent('click', { bubbles: true })) })
-    assert.deepEqual(calls, ['unit:test-a', 'unit:test-b'])
+    assert.equal(dom.window.document.querySelectorAll('.campaign-holding-regions button').length, 0)
+    assert.deepEqual(calls, [])
   } finally {
     await act(async () => { root.unmount() })
     dom.window.close()
@@ -119,7 +109,7 @@ test('component buttons forward unitId to onSelectRegion', async () => {
   }
 })
 
-test('component selection preserves the exact index within one administrative unit', async () => {
+test('component index cannot become a public map selection', async () => {
   const dom = new JSDOM('<!doctype html><html><body><div id="root"></div></body></html>', { url: 'https://holding-panel.test/' })
   globalThis.window = dom.window
   globalThis.document = dom.window.document
@@ -130,15 +120,12 @@ test('component selection preserves the exact index within one administrative un
   try {
     await act(async () => {
       root.render(createElement(MemoryRouter, null, createElement(HoldingSelectionPanel, {
-        holding, openingYear: ledger.openingYear, selectedRegionId: 'unit:test-a', selectedComponentIndex: 3,
-        onSelectRegion() { assert.fail('component selection must preserve the index') },
-        onSelectComponent: (unitId, index) => calls.push([unitId, index]),
+        holding, openingYear: ledger.openingYear, selectedRegionId: 'unit:test-a',
+        onSelectRegion: (id) => calls.push(id),
       })))
     })
-    const buttons = [...dom.window.document.querySelectorAll('.campaign-holding-regions button')]
-    assert.deepEqual(buttons.map(button => button.getAttribute('aria-pressed')), ['false', 'true'])
-    await act(async () => { buttons[1].dispatchEvent(new dom.window.MouseEvent('click', { bubbles: true })) })
-    assert.deepEqual(calls, [['unit:test-a', 3]])
+    assert.equal(dom.window.document.querySelectorAll('.campaign-holding-regions button').length, 0)
+    assert.deepEqual(calls, [])
   } finally {
     await act(async () => { root.unmount() })
     dom.window.close()
@@ -152,7 +139,7 @@ const fixtureTitles = [
   { id: 'title:fixture-duke', name: '테스트 공작', rank: '공작' },
   { id: 'title:fixture-count', name: '테스트 백작', rank: '백작', holderPersonId: baseHolding.holderPersonId, stateId: baseHolding.stateId, parentTitleId: 'title:fixture-duke', jurisdictionRefs: ['unit:test-a'] },
 ]
-const titledHolding = { ...componentOnlyHolding, id: 'fixture:titled', titleId: 'title:fixture-count' }
+const titledHolding = { ...baseHolding, id: 'fixture:titled', titleId: 'title:fixture-count' }
 
 test('titleId resolves through optional titles prop showing name, rank and parent', () => {
   const dom = new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null,
@@ -189,8 +176,8 @@ test('existing ledger holdings without any metadata keep the 행정구역 labels
     const document = dom.window.document
     assert.equal(document.querySelector('[role="alert"]'), null)
     const text = document.body.textContent
-    assert.ok(text.includes(`${baseHolding.adminRefs.length}개 행정구역`))
-    assert.ok(text.includes('보유 행정구역'))
+    assert.ok(text.includes(`${baseHolding.adminRefs.length}개 서울 행정구역 참조`))
+    assert.ok(text.includes('보유 서울 행정구역 참조'))
     assert.ok(!text.includes('개 동'))
     assert.ok(!text.includes('보유 구성 요소'))
     assert.ok(!text.includes('작위 등급'))

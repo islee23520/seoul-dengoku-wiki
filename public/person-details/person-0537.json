@@ -553,52 +553,23 @@
             "name": "차차환",
             "url": "/people/person-0537",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "경비·순찰",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/379/items/1/ko",
-                  "quote": "생업: 경비·순찰"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/380/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/381/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -606,105 +577,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/380/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/379/items/1/ko",
-                    "quote": "생업: 경비·순찰"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/381/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/379/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "갈산",
-              "type": "초소 영지",
-              "station": "갈산",
-              "state": "S02",
-              "settlement": {
-                "name": "갈산 정착지",
-                "type": "정착지",
-                "description": "갈산 일대 고정 거점"
-              },
-              "note": "S02 갈산 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -728,52 +634,23 @@
             "name": "차차환",
             "url": "/people/person-0537",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "경비·순찰",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/379/items/1/ko",
-                  "quote": "생업: 경비·순찰"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/380/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/381/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -781,105 +658,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/380/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/379/items/1/ko",
-                    "quote": "생업: 경비·순찰"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/381/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/379/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "갈산",
-              "type": "초소 영지",
-              "station": "갈산",
-              "state": "S02",
-              "settlement": {
-                "name": "갈산 정착지",
-                "type": "정착지",
-                "description": "갈산 일대 고정 거점"
-              },
-              "note": "S02 갈산 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -900,18 +712,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "갈산",
-    "type": "초소 영지",
-    "station": "갈산",
-    "state": "S02",
-    "settlement": {
-      "name": "갈산 정착지",
-      "type": "정착지",
-      "description": "갈산 일대 고정 거점"
-    },
-    "note": "S02 갈산 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -948,19 +748,20 @@
     "생업": "경비·순찰",
     "품계": "조합원",
     "직함": "전력장치 순찰대",
+    "업무 위치": "구로3동. 차차환은 구로3동 전력간선 순찰에서 결빙 비탈길의 수상한 발자국을 발견한다. 변주아의 민가 회로 점검반이 지나기 전에 접근을 막고 출입 기록과 위치를 이강묵의 야간 당직으로 돌린다.",
     "가치관": "권위 −15 | 개방 10 | 무력 15 | 물질 45 | 공동 45 | 원칙 15 | 공개 35 | 자격 50 | 분산 20 | 변혁 10",
     "욕망": "갈망 25 | 독점 −10 | 위험 5 | 과시 −10 | 지속 30 | 지향 무성향 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-    "관직": "품계 조합원. 직함은 전력장치 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-    "일화": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "전력장치 순찰대 자리에서 규격맹의 장부를 끊기지 않게 잇는다.",
-    "공포": "전력장치 순찰대 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 구로3동. 차차환은 구로3동 전력간선 순찰에서 결빙 비탈길의 수상한 발자국을 발견한다. 변주아의 민가 회로 점검반이 지나기 전에 접근을 막고 출입 기록과 위치를 이강묵의 야간 당직으로 돌린다.",
+    "관직": "품계 조합원. 직함은 전력장치 순찰대. 변주아의 민가 회로 점검반이 지나기 전에 접근을 막고 출입 기록과 위치를 이강묵의 야간 당직으로 돌린다.",
+    "일화": "2125년 구로3동 전력장치로 이어진 결빙 비탈길에서 매복 흔적을 먼저 읽고 점검 인원을 돌려 피해를 막았다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.",
+    "관계": "차차환은 전력장치 순찰에서 매복 흔적을 읽으면 이강묵에게 접근 위치를 알린다. 이강묵은 해당 길목의 경비와 출입을 확인해 설비 주변에서 실제 침투가 이어지는지 살핀다.",
+    "야망": "차차환은 결빙 비탈의 매복 흔적을 표시해 민가 회로 점검반이 위험 구간에 들기 전에 막으려 한다.",
+    "공포": "매복 흔적의 위치가 늦게 전해져 이강묵의 경비가 위험 길목을 지나치는 것.",
+    "개입": "플레이어는 차차환과 발자국 위치를 확인하고 점검반을 돌리거나 출입 기록을 이강묵의 야간 당직에 보낼 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 경비·순찰\n- 품계: 조합원\n- 직함: 전력장치 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 조합원. 직함은 전력장치 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 전력장치 순찰대 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 전력장치 순찰대 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 10 | 무력 15 | 물질 45 | 공동 45 | 원칙 15 | 공개 35 | 자격 50 | 분산 20 | 변혁 10\n- 욕망: 갈망 25 | 독점 −10 | 위험 5 | 과시 −10 | 지속 30 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "차차환은 전력 고장을 찾는 점검반보다 결빙 비탈의 접근 위험을 먼저 알린다.\n\n- 소속: 규격맹\n- 생업: 경비·순찰\n- 품계: 조합원\n- 직함: 전력장치 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 구로3동. 차차환은 구로3동 전력간선 순찰에서 결빙 비탈길의 수상한 발자국을 발견한다. 변주아의 민가 회로 점검반이 지나기 전에 접근을 막고 출입 기록과 위치를 이강묵의 야간 당직으로 돌린다.\n\n**관직.** 품계 조합원. 직함은 전력장치 순찰대. 변주아의 민가 회로 점검반이 지나기 전에 접근을 막고 출입 기록과 위치를 이강묵의 야간 당직으로 돌린다.\n\n**일화.** 2125년 구로3동 전력장치로 이어진 결빙 비탈길에서 매복 흔적을 먼저 읽고 점검 인원을 돌려 피해를 막았다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 차차환은 전력장치 순찰에서 매복 흔적을 읽으면 이강묵에게 접근 위치를 알린다. 이강묵은 해당 길목의 경비와 출입을 확인해 설비 주변에서 실제 침투가 이어지는지 살핀다.\n\n**야망.** 차차환은 결빙 비탈의 매복 흔적을 표시해 민가 회로 점검반이 위험 구간에 들기 전에 막으려 한다.\n\n**공포.** 매복 흔적의 위치가 늦게 전해져 이강묵의 경비가 위험 길목을 지나치는 것.\n\n**개입.** 플레이어는 차차환과 발자국 위치를 확인하고 점검반을 돌리거나 출입 기록을 이강묵의 야간 당직에 보낼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 10 | 무력 15 | 물질 45 | 공동 45 | 원칙 15 | 공개 35 | 자격 50 | 분산 20 | 변혁 10\n- 욕망: 갈망 25 | 독점 −10 | 위험 5 | 과시 −10 | 지속 30 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-02"
   ],

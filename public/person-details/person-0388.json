@@ -556,47 +556,23 @@
             "name": "천솔빛",
             "url": "/people/person-0388",
             "state": "S15",
-            "method": "card-lexicon",
-            "role": {
-              "display": "인준 명부 대조·선거 보좌",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-15.json",
-                  "pointer": "/content/28/items/0/ko",
-                  "quote": "생업: 인준 명부 대조·선거 보좌"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/30/text/ko",
-                    "quote": "명동역 인준 명부 수사의 기록에 당시의 증언을 남겼다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -604,73 +580,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/28/items/0/ko",
-                    "quote": "생업: 인준 명부 대조·선거 보좌"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/30/text/ko",
-                    "quote": "명동역 인준 명부 수사의 기록에 당시의 증언을 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
-              "faction_scale": {
-                "state": "S15",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "회현",
-              "type": "초소 영지",
-              "station": "회현",
-              "state": "S15",
-              "settlement": {
-                "name": "회현 정착지",
-                "type": "정착지",
-                "description": "회현 일대 고정 거점"
-              },
-              "note": "S15 회현 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -694,47 +625,23 @@
             "name": "천솔빛",
             "url": "/people/person-0388",
             "state": "S15",
-            "method": "card-lexicon",
-            "role": {
-              "display": "인준 명부 대조·선거 보좌",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-15.json",
-                  "pointer": "/content/28/items/0/ko",
-                  "quote": "생업: 인준 명부 대조·선거 보좌"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/30/text/ko",
-                    "quote": "명동역 인준 명부 수사의 기록에 당시의 증언을 남겼다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -742,73 +649,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/28/items/0/ko",
-                    "quote": "생업: 인준 명부 대조·선거 보좌"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/30/text/ko",
-                    "quote": "명동역 인준 명부 수사의 기록에 당시의 증언을 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
-              "faction_scale": {
-                "state": "S15",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "회현",
-              "type": "초소 영지",
-              "station": "회현",
-              "state": "S15",
-              "settlement": {
-                "name": "회현 정착지",
-                "type": "정착지",
-                "description": "회현 일대 고정 거점"
-              },
-              "note": "S15 회현 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -829,18 +691,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "회현",
-    "type": "초소 영지",
-    "station": "회현",
-    "state": "S15",
-    "settlement": {
-      "name": "회현 정착지",
-      "type": "정착지",
-      "description": "회현 일대 고정 거점"
-    },
-    "note": "S15 회현 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -881,15 +731,15 @@
     "욕망": "갈망 −5 | 독점 25 | 위험 −40 | 과시 25 | 지속 35 | 지향 동성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 수사 일을 맡았다.",
-    "관직": "품계 수사. 직함은 명동역 인준 명부 수사. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.",
-    "일화": "가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메우고, 상인회의가 배급 중단을 요구하자 천솔빛은 광장 원장을 내리지 않았다. 명동역 인준 명부 수사의 기록에 당시의 증언을 남겼다.",
+    "생애": "2090-03-28에 태어난 천솔빛은 영구 겨울의 명동역 교구청에서 명동역 인준 명부 수사 일을 맡는다. 인준 명부 대조·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 천솔빛은 명동 행정동의 명동역 교구청에서 명동역 인준 명부 수사 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
+    "관직": "품계 수사. 직함은 명동역 인준 명부 수사. 인준 명부 대조·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
+    "일화": "가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메우고, 상인회의가 배급 중단을 요구하자 천솔빛은 광장 원장을 내리지 않았다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
     "관계": "전나경의 지휘로 광장 줄을 집행하고, 방늘재의 진료 막과 대기열을 나눈다. 백온의 남하 가족에게 임시표를 준다.",
     "야망": "사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
     "공포": "사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
     "개입": "사제단 소집 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
   },
-  "biography": "천솔빛은 명동역 인준 명부 수사 일을 맡는다. 사제단 소집 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 인준 명부 대조·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 수사\n- 직함: 명동역 인준 명부 수사\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 수사 일을 맡았다.\n\n**관직.** 품계 수사. 직함은 명동역 인준 명부 수사. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메우고, 상인회의가 배급 중단을 요구하자 천솔빛은 광장 원장을 내리지 않았다. 명동역 인준 명부 수사의 기록에 당시의 증언을 남겼다.\n\n**관계.** 전나경의 지휘로 광장 줄을 집행하고, 방늘재의 진료 막과 대기열을 나눈다. 백온의 남하 가족에게 임시표를 준다.\n\n**야망.** 사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 사제단 소집 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 35 | 무력 −5 | 물질 50 | 공동 −5 | 원칙 −40 | 공개 −10 | 자격 0 | 분산 5 | 변혁 0\n- 욕망: 갈망 −5 | 독점 25 | 위험 −40 | 과시 25 | 지속 35 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "천솔빛은 명동역 인준 명부 수사 업무에서 인준 명부 대조·선거 보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 인준 명부 대조·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 수사\n- 직함: 명동역 인준 명부 수사\n**생애.** 2090-03-28에 태어난 천솔빛은 영구 겨울의 명동역 교구청에서 명동역 인준 명부 수사 일을 맡는다. 인준 명부 대조·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 천솔빛은 명동 행정동의 명동역 교구청에서 명동역 인준 명부 수사 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수사. 직함은 명동역 인준 명부 수사. 인준 명부 대조·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메우고, 상인회의가 배급 중단을 요구하자 천솔빛은 광장 원장을 내리지 않았다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 전나경의 지휘로 광장 줄을 집행하고, 방늘재의 진료 막과 대기열을 나눈다. 백온의 남하 가족에게 임시표를 준다.\n\n**야망.** 사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 사제단 소집 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 35 | 무력 −5 | 물질 50 | 공동 −5 | 원칙 −40 | 공개 −10 | 자격 0 | 분산 5 | 변혁 0\n- 욕망: 갈망 −5 | 독점 25 | 위험 −40 | 과시 25 | 지속 35 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-15"
   ],

@@ -1,4 +1,4 @@
-import { mkdir, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises'
+import { mkdir, readdir, readFile, stat } from 'node:fs/promises'
 import { basename, dirname, extname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import proj4 from 'proj4'
@@ -10,105 +10,107 @@ import { atlasPeopleContext } from './atlas-people-context.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { publicHouseContent } from './public-house-content.mjs'
 import { buildWorldIndex } from './build-world-index.mjs'
-import { categoryEntities, categoryIndex, loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
+import { loadApprovedOrganizationAliases } from './approved-organization-aliases.mjs'
+import { categoryEntities, categoryIndex, loadCategoryRegistry, publishedRegistrationErrors, registeredCategories } from './category-registration.mjs'
 import { latestUpdates } from './update-history.mjs'
 import { wikiPublicationManifest } from './publication-manifest.mjs'
 import { localizedDocuments } from './localized-documents.mjs'
 import { glossaryDocument } from './glossary-document.mjs'
 import { validatedDensities } from './region-density.mjs'
 import { approvedDocuments, publishedDocuments } from './catalog-admission.mjs'
-import { buildTimelineYears, koText } from './timeline-overview.mjs'
-import { articleFeedbackRecord, personFeedbackRecord, privateCatalog } from './feedback-source-catalog.mjs'
-import { loadDataset, validate as validateRelations } from '../lore/relations/validate.mjs'
-import { validateHoldingFacility } from './holding-facility.mjs'
-import { validateOpeningDispositions } from './personal-holdings.mjs'
+import { projectSeoulCurrentTimeline, koText } from './timeline-overview.mjs'
+import { loadTimelineReviewAuthority } from './timeline-review-authority.mjs'
+import { articleFeedbackRecord, privateCatalog } from './feedback-source-catalog.mjs'
 import { regularLineGraph } from './regular-line-graph.mjs'
-import { regionalLineGraph } from './regional-line-graph.mjs'
-import { parsePersonRightsPermissions } from './person-rights-permissions.mjs'
-import { loadCastBirthdays } from './cast-birthdays.mjs'
-import { loadHouseholdSourceDocuments, validateCastHouseholdRelations } from './cast-household-relations.mjs'
-import { loadCastFamilyTrees, projectFamilyTree, projectClanFamilyTree } from './cast-family-trees.mjs'
+import { projectClanFamilyTree } from './cast-family-trees.mjs'
 import { projectNonKoreanFamilies } from './non-korean-family-catalog.mjs'
-import { currentAffiliations, hegemonsForHolders, currentBasePoint, territoryLabel } from './current-affiliation.mjs'
-import { projectOutsideOccupation } from './outside-occupation.mjs'
-import { projectOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
+import { hegemonsForHolders, currentBasePoint, territoryLabel } from './current-affiliation.mjs'
 import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
-import { loadPreservedPersonSheets, projectPreservedPersonSheet } from './preserved-person-sheet.mjs'
-import { loadCharacterProfiles } from './validate-character-profiles.mjs'
-import { publicCharacterProfile } from './character-profile.mjs'
+import { loadPersonDetailSources, produceFromPersonDetailSources, projectPersonStateInputs, projectPersonHoldingsInputs } from './person-detail-inputs.mjs'
+export { authenticateNonowningRights, projectCatalogOutsideOccupation, projectCatalogHoldings, loadApprovedRightsHistory, projectCatalogCurrentHoldings, currentOfficeAppointments } from './person-detail-inputs.mjs'
+import { authenticateNonowningRights, projectCatalogOutsideOccupation, loadApprovedRightsHistory, currentOfficeAppointments } from './person-detail-inputs.mjs'
+export { projectPersonHoldings } from './person-detail-production.mjs'
+import { generatorStage, requireGenerationPublication } from './generate-release.mjs'
+import { loadScopeInput } from './check-seoul-scope.mjs'
+import { admitPublicPersonDetails, loadPersonDetailMappingAuthority } from './public-person-detail-admission.mjs'
+import { manifestForPublicFiles, publishPublicAssets, verifiedLegacyManifest } from './seoul-public-assets.mjs'
+import { projectGeographicTitles, projectPhysicalRail } from '../src/components/geographicTitleMap.mjs'
+import { execFile } from 'node:child_process'
+import { promisify } from 'node:util'
+import { loadStationCatalogGeography, loadOutsideStationIds } from './station-catalog-geography.mjs'
 
+export async function projectCatalogTimeline(centuryAnnalsDocument, relatedTimelineDocuments) {
+  const sourcePath = 'lore/chronology/Century-Annals.json'
+  const sourceBytes = await readFile(centuryAnnalsDocument.path)
+  return projectSeoulCurrentTimeline(centuryAnnalsDocument.value.content, relatedTimelineDocuments, {
+    sourcePath, sourceBytes, review: await loadTimelineReviewAuthority(),
+  })
+}
+
+export function relatedTimelineDocuments(text, territoryStates, peopleSource) {
+  const related = [{ title: '서울전국 연표 2030–2126', route: '/world/Century-Annals' }]
+  const add = (title, route) => { if (!related.some((entry) => entry.route === route)) related.push({ title, route }) }
+  if (territoryStates.some((state) => text.includes(state.id) || text.includes(state.name)) || /열여섯|십육국|국호/u.test(text)) add('서울 십육국', '/world/Sixteen-States')
+  if (/HC\d{2}|HP\d{2}|가문|총수|본관|항렬|법인 후계/u.test(text)) add('가문', '/world/Chaebol-Houses-and-Century-Factions')
+  if (/교회|성당|불교|원불교|예배|신정|위령|신앙|종단|교구/u.test(text)) add('신앙과 문화의 분열', '/world/Faith-Culture-Schism')
+  if (/휴머노이드|기술|무구|인가 서버|공장|제작|배터리|전지|도면|정비/u.test(text)) add('이 시대의 기술과 무구', '/world/Era-Arms-and-Tech-Level')
+  if (peopleSource.some((person) => text.includes(person.name))) add('등장인물 전체', '/people')
+  return related
+}
+
+export function stateTimelineEvents(content, timelineYears, territoryStates) {
+  const stateEvents = new Map(territoryStates.map((state) => [state.name, []]))
+  const currentEventIds = new Set(timelineYears.flatMap((entry) => entry.events.map((event) => event.id)))
+  let eventYear = null
+  for (const block of content) {
+    if (block.kind === 'heading' && block.depth <= 3) {
+      const year = block.depth === 3 ? Number(koText(block.text.ko).match(/^((?:20|21)\d{2})년$/u)?.[1]) : NaN
+      eventYear = Number.isInteger(year) ? year : null
+    }
+    if (eventYear === null || block.kind !== 'paragraph' || !currentEventIds.has(block.anchor)) continue
+    const text = koText(block.text.ko)
+    for (const state of territoryStates) {
+      if (text.includes(state.name)) stateEvents.get(state.name).push({ year: eventYear, text, sourceRoute: `/world/Century-Annals#${eventYear}년` })
+    }
+  }
+  return stateEvents
+}
+
+
+export async function writePublicPersonDetails(details, scopeInput, writeDetail, mappingAuthority) {
+  mappingAuthority ??= await loadPersonDetailMappingAuthority()
+  admitPublicPersonDetails(details, scopeInput, mappingAuthority)
+  for (const detail of details) await writeDetail(detail)
+}
+
+
+// Importing the real validators in tests must never run the publishing pipeline.
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
+const publicationReview = await requireGenerationPublication(projectRoot)
+const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(repoRoot, 'lore'))
+const geographyBytes = await readFile(resolve(loreRoot, 'regions/seoul-electoral-titles.json'))
+const territorialScale = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8')).data.territorialScale
+const geographicScale = buildAdminTerritorialScale({ geographyBytes, territorialScale })
+const geography = JSON.parse(geographyBytes.toString())
+const { root: outputRoot, writeFile } = await generatorStage(projectRoot)
+const nonowningApprovalBytes = await readFile(new URL('./approved-daejeon-nonowning-rights.json', import.meta.url))
+authenticateNonowningRights(nonowningApprovalBytes)
 // Fail before touching generated output when either revision is unbound or invalid.
-const preservedSheets = loadPreservedPersonSheets()
-const characterProfiles = await loadCharacterProfiles(projectRoot)
-const worldJsonRoot = resolve(projectRoot, 'src/generated/world')
-const worldEnJsonRoot = resolve(projectRoot, 'src/generated/world-en')
-const generatedRoot = resolve(projectRoot, 'src/generated')
-const privateGeneratedRoot = resolve(projectRoot, 'src/generated-private')
-const publicRoot = resolve(projectRoot, 'public')
+const worldJsonRoot = resolve(outputRoot, 'src/generated/world')
+const worldEnJsonRoot = resolve(outputRoot, 'src/generated/world-en')
+const generatedRoot = resolve(outputRoot, 'src/generated')
+const privateGeneratedRoot = resolve(outputRoot, 'src/generated-private')
+const publicRoot = resolve(outputRoot, 'public')
+const publicAssetsManifestPath = resolve(privateGeneratedRoot, 'public-assets-manifest.json')
+const previousPublicAssets = await readFile(publicAssetsManifestPath, 'utf8').then(JSON.parse, error => {
+  if (error.code === 'ENOENT') return verifiedLegacyManifest(projectRoot)
+  throw error
+})
 const domains = ['world']
-const wikiAssetTarget = resolve(publicRoot, 'wiki-assets')
 const normalizeTitle = (markdown, fallback) =>
   markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
-
-const publicStateName = (cell) => cell.replace(/\([^)]*\)/gu, '').trim()
-
-const splitCells = (line) => line.split('|').slice(1, -1).map((cell) => cell.trim())
-
-const rowCell = (row, prefix) => Object.entries(row).find(([key]) => key === prefix || key.startsWith(prefix))?.[1] ?? ''
-
-const tableRows = (markdown) => {
-  const lines = markdown.split('\n')
-  const start = lines.findIndex((line) => line.startsWith('|') && !/^\|\s*---/.test(line))
-  if (start < 0) return []
-  const block = []
-  for (const line of lines.slice(start)) {
-    if (!line.startsWith('|')) break
-    if (!/^\|\s*---/.test(line)) block.push(line)
-  }
-  const header = /국명|ID/.test(block[0] ?? '') ? splitCells(block.shift()) : null
-  return block.map((line) => {
-    const cells = splitCells(line)
-    return header
-      ? Object.fromEntries(header.map((column, index) => [column, cells[index] ?? '']))
-      : { '국명': cells[0] ?? '', '기원': cells[1] ?? '', '형태': cells[2] ?? '', '강국': cells[3] ?? '', '원인': cells[4] ?? '' }
-  }).filter((row) => row['국명'] && row['국명'] !== '국명')
-}
-
-const parseStateRows = (markdown) => {
-  const rows = tableRows(markdown).map((row) => {
-    const idCell = row.ID ?? row['식별자'] ?? ''
-    const id = idCell.match(/S(?:0[1-9]|1[0-6])/u)?.[0]
-    const capital = (rowCell(row, '수도역') || rowCell(row, '중심역')).replace(/역$/u, '').trim()
-    const rawName = row['국명']
-    return {
-      id,
-      name: publicStateName(rawName),
-      names: [publicStateName(rawName)],
-      government: rowCell(row, '정부') || rowCell(row, '형태'),
-      power: (rowCell(row, '등급') || rowCell(row, '강국')).split(',')[0].trim(),
-      cause: rowCell(row, '주요 관계') || rowCell(row, '원인') || rowCell(row, '인과') || rowCell(row, '유래'),
-      capital,
-    }
-  })
-  if (rows.length !== 16 || rows.some((row) => !row.name || !row.id) || new Set(rows.map((row) => row.id)).size !== 16) throw new Error(`E_STATE_TABLE:${rows.length}`)
-  if (rows.some((row) => !row.capital)) throw new Error(`E_STATE_CAPITAL:${rows.filter((row) => !row.capital).map((row) => row.name).join(',')}`)
-  return rows
-}
-
-const leaderForNames = (markdown, names) => {
-  if (!markdown) return ''
-  const ranked = []
-  for (const match of markdown.matchAll(/^## ([^\n]+)\n\n([\s\S]*?)(?=\n## |$)/gm)) {
-    const intro = match[2].split('\n', 1)[0]
-    const introHit = names.some((candidate) => candidate && (intro.startsWith(candidate) || intro.includes(`${candidate} `)))
-    const bodyHit = names.some((candidate) => candidate && match[2].includes(candidate))
-    if (introHit || bodyHit) ranked.push({ person: match[1].trim(), score: introHit ? 2 : 1 })
-  }
-  ranked.sort((left, right) => right.score - left.score)
-  return ranked[0]?.person ?? ''
-}
 
 const githubBlob = 'https://github.com/islee23520/seoul-dengoku/blob/main/'
 const wikiBlob = 'https://github.com/islee23520/seoul-dengoku-wiki/blob/main/'
@@ -184,16 +186,11 @@ const walkLoreJson = async (dir, acc = []) => {
 
 const categoryRegistry = await loadCategoryRegistry(resolve(dirname(fileURLToPath(import.meta.url)), 'category-registry.json'))
 
-await rm(resolve(projectRoot, 'src/content'), { recursive: true, force: true })
-await rm(worldJsonRoot, { recursive: true, force: true })
 await mkdir(worldJsonRoot, { recursive: true })
-await rm(worldEnJsonRoot, { recursive: true, force: true })
 await mkdir(worldEnJsonRoot, { recursive: true })
 await mkdir(generatedRoot, { recursive: true })
 await mkdir(publicRoot, { recursive: true })
-await rm(wikiAssetTarget, { recursive: true, force: true })
 
-const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(repoRoot, 'lore'))
 const atlasPeople = await atlasPeopleContext(loreRoot)
 await materializeWorldAtlas({
   atlasPath: resolve(loreRoot, 'World-Narrative-Atlas.json'),
@@ -202,16 +199,16 @@ await materializeWorldAtlas({
   peopleContext: atlasPeople,
 })
 const jsonPages = await walkLoreJson(loreRoot)
-const publishedRoutes = new Set(publishedDocuments(await approvedDocuments(loreRoot)).map(({ route }) => route))
-const categoryErrors = jsonPages.flatMap((page) => registrationErrors(page.value, categoryRegistry, basename(page.path)))
+const publishedRoutes = new Set(publishedDocuments(await approvedDocuments(loreRoot), publicationReview).map(({ route }) => route))
+const categoryErrors = publishedRegistrationErrors(jsonPages.map((page) => ({ ...page, name: basename(page.path) })), publishedRoutes, categoryRegistry)
 if (categoryErrors.length) throw new Error(categoryErrors.join('\n'))
 const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
 const pagesBySlug = new Map(jsonPages.map((page) => [page.slug, page]))
-const peopleSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
-const lineageByName = new Map(JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-hangnyeol.json'), 'utf8')).people.map((person) => [person.name, person]))
 const glossaryPath = resolve(loreRoot, 'glossary.json')
 const glossaryPage = { path: glossaryPath, slug: 'Glossary', value: glossaryDocument(JSON.parse(await readFile(glossaryPath, 'utf8'))) }
-const worldIndex = buildWorldIndex({ loreRoot, readFile: (path) => readFile(path, 'utf8') })
+// Approved public nomenclature for a fictional organization grounds the same state leader.
+const organizationAliases = await loadApprovedOrganizationAliases(projectRoot)
+const worldIndex = buildWorldIndex({ loreRoot, organizationAliases })
 
 const renderedBySlug = new Map()
 for (const page of jsonPages) {
@@ -233,6 +230,9 @@ for (const slug of renderedBySlug.keys()) {
   if (!category || !categoryRegistry.categories.some((entry) => entry.id === category)) throw new Error(`E_CATEGORY_PROJECTION:${slug}`)
   categoriesBySlug.set(slug, [category])
 }
+const personSources = await loadPersonDetailSources({ repoRoot, loreRoot, pagesBySlug, renderedBySlug, atlasPeople })
+const { peopleSource, lineageByName, issuedById, issuedIdByName,
+  familyGraph, originalHoldings, officeAppointmentSource } = personSources
 
 // The source decides the locales: a JSON authoring document publishes ko and en from one file,
 // a Markdown-only corpus publishes its Korean body alone.
@@ -256,7 +256,7 @@ for (const domain of domains) {
   }
 }
 
-const publicationManifest = await wikiPublicationManifest({ loreRoot, documents, registry: categoryRegistry })
+const publicationManifest = await wikiPublicationManifest({ loreRoot, documents, registry: categoryRegistry, publicationReview })
 const routeBySlug = new Map()
 for (const document of documents) {
   routeBySlug.set(`${document.domain}:${document.slug}`, document.route)
@@ -335,40 +335,9 @@ const updateHistory = JSON.parse(await readFile(resolve(projectRoot, 'data/updat
 const wikiUpdates = latestUpdates(updateHistory.updates)
 await writeFile(resolve(generatedRoot, 'wikiUpdates.ts'), `export type WikiUpdate = { readonly date: string; readonly sequence: number; readonly title: string; readonly category: string; readonly status: string; readonly source: string; readonly route: string }\n\nexport const wikiUpdateHistory = ${JSON.stringify(updateHistory.updates, null, 2)} as const satisfies readonly WikiUpdate[]\n\nexport const wikiUpdates = ${JSON.stringify(wikiUpdates, null, 2)} as const satisfies readonly WikiUpdate[]\n`)
 
-const stateSource = renderedBySlug.get('Sixteen-States')
-const officesSource = renderedBySlug.get('Offices-and-Ranks')
-if (!stateSource || !officesSource) throw new Error('E_STATE_OR_OFFICE_PAGE_MISSING')
-if (!pagesBySlug.get('Sixteen-States')?.value.source?.refs?.includes('lore/factions/Sixteen-States.md')) throw new Error('E_STATE_CANON_PROVENANCE')
-const officeTable = officesSource.match(/\| 국가 \| 티어1 \|[\s\S]*?(?=\n## )/)?.[0] ?? ''
-const stateRows = parseStateRows(stateSource)
-const affiliations = currentAffiliations(pagesBySlug.get('Sixteen-States').value.data.currentAffiliation, stateRows)
-const coreCharacters = renderedBySlug.get('Core-Characters')
-const stateIdByName = new Map(stateRows.map((row) => [row.name, row.id]))
-const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
-  .filter((match) => match[1].trim() !== '국가')
-  .map((match) => [stateIdByName.get(match[1].trim()) ?? match[1].trim(), match.slice(2).map((cell) => cell.split('·').map((rank) => rank.trim()))]))
-if (tiersByState.size !== 16) throw new Error(`E_OFFICE_TIER_COVERAGE:${tiersByState.size}`)
-const stateCatalog = stateRows.map((row) => ({
-  slug: row.id.toLowerCase(),
-  id: row.id,
-  name: affiliations.get(row.id).currentName,
-  currentHegemon: affiliations.get(row.id).currentHegemon,
-  currentBase: affiliations.get(row.id).currentBase,
-  currentExclusiveDistricts: affiliations.get(row.id).currentExclusiveDistricts,
-  government: row.government,
-  power: row.power,
-  cause: row.cause,
-  ruler: row.id === 'S04'
-    ? (() => { const name = coreCharacters.match(/2126년 당회장 자리는 ([가-힣]{2,4})가 앉았다\./u)?.[1]; if (!name) throw new Error('E_S04_OPENING_RULER'); return name })()
-    : row.government.match(/(?:^|[,，]\s*)회장 ([가-힣]{2,4})(?:$|[,，\s])/u)?.[1] ?? leaderForNames(coreCharacters, row.names),
-  capital: row.capital,
-  capitalName: row.capital,
-}))
+const { stateSource, stateRows, stateCatalog, stateNameById, tiersByState, affiliations, stateIdByName } = projectPersonStateInputs(renderedBySlug, pagesBySlug, { organizationAliases })
 await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type CurrentHegemon = { readonly kind: 'state'; readonly stateId: string; readonly name: string } | { readonly kind: 'union'; readonly name: string } | { readonly kind: 'neutral'; readonly name: string }\nexport type CurrentBase = { readonly kind: 'station'; readonly stationId: string; readonly name: string } | { readonly kind: 'facility'; readonly landmarkId: string; readonly name: string }\nexport type StateRecord = { currentHegemon: CurrentHegemon; currentBase: CurrentBase; currentExclusiveDistricts: 'none' | 'immediate-holdings'; slug: string; id: string; name: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
 
-const genderSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/gender-cast.json'), 'utf8')).people
-const genderByName = new Map(genderSource.map((person) => [person.name, person]))
-const stateNameById = new Map(stateCatalog.map((state) => [state.slug.toUpperCase(), state.name]))
 const regionAtlasSource = await readFile(process.env.WIKI_REGION_ATLAS_PATH || await resolveOutside('TOOL/tools/regions/data/atlas-data.js'), 'utf8')
 const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
 const populationSource = JSON.parse(await readFile(resolve(loreRoot, 'regions/sources/population-2026-08.json'), 'utf8'))
@@ -435,8 +404,6 @@ const mapPoint = ([x, y]) => [
   Number(((x - mapBounds.minX) / (mapBounds.maxX - mapBounds.minX) * mapWidth).toFixed(2)),
   Number(((mapBounds.maxY - y) / (mapBounds.maxY - mapBounds.minY) * mapHeight).toFixed(2)),
 ]
-const regionalBoundaries = JSON.parse(await readFile(resolve(publicRoot, 'regional-boundaries.json'), 'utf8'))
-const boundaryByCity = new Map(regionalBoundaries.map((entry) => [entry.city, entry]))
 const geometryPath = (geometry) => geometryRings(geometry).map((ring) => {
   const points = simplifyRing(ring).map(mapPoint)
   return points.map(([x, y], index) => `${index === 0 ? 'M' : 'L'}${x},${y}`).join(' ') + ' Z'
@@ -454,13 +421,18 @@ const capitalNameByState = new Map(stateRows.map((row) => [row.id, row.capital.r
 if (capitalNameByState.size !== 16) throw new Error(`E_CAPITAL_CANON_COVERAGE:${capitalNameByState.size}`)
 const stationById = new Map(seoulGraph.stations.map((station) => [station.id, station]))
 const stationCatalog = JSON.parse(await readFile(resolve(loreRoot, 'places/Seoul-Station-Catalog.json'), 'utf8'))
+await loadStationCatalogGeography(projectRoot, { catalog: stationCatalog })
 const approvedStationAliases = stationCatalog.data.station_aliases
 const canonicalBySourceId = new Map(approvedStationAliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
 if (canonicalBySourceId.size !== approvedStationAliases.reduce((count, entry) => count + 1 + entry.aliases.length, 0) || [...canonicalBySourceId.keys()].some((id) => !stationById.has(id))) throw new Error('E_STATION_ALIAS_SOURCE')
 const canonicalStationId = (id) => canonicalBySourceId.get(id) ?? id
-const regularGraph = regularLineGraph(regularLineSource, seoulGraph.stations.map((station) => canonicalStationId(station.id)))
-await mkdir(resolve(projectRoot, '.omo/evidence/station-line-facts'), { recursive: true })
-await writeFile(resolve(projectRoot, '.omo/evidence/station-line-facts/adjacency-coverage.json'), JSON.stringify({
+const excludedStationIds = await loadOutsideStationIds(projectRoot, { stationAliases: approvedStationAliases })
+const excludedStations = new Set(excludedStationIds)
+const regularGraph = regularLineGraph(regularLineSource,
+  seoulGraph.stations.map((station) => canonicalStationId(station.id)).filter(id => !excludedStations.has(id)),
+  { excludedStationIds })
+await mkdir(resolve(outputRoot, '.omo/evidence/station-line-facts'), { recursive: true })
+await writeFile(resolve(outputRoot, '.omo/evidence/station-line-facts/adjacency-coverage.json'), JSON.stringify({
   sourceUrl: regularLineSource.source.url,
   sourceSha256: regularLineSource.source.sha256,
   generatedEdges: regularGraph.edges.length,
@@ -522,7 +494,10 @@ const sourceMapStations = seoulGraph.stations.map((station) => {
     },
   }
 })
-const mapStations = sourceMapStations.filter((station) => canonicalStationId(station.id) === station.id).map((station) => {
+// The archived graph mislabeled Seoksu/Gwangmyeongsageori as Seoul districts;
+// their coordinates are in Anyang/Gwangmyeong. Remove incident hops, never bridge.
+const mapStations = sourceMapStations.filter((station) => canonicalStationId(station.id) === station.id
+  && !['석수', '광명사거리'].includes(station.id)).map((station) => {
   const identity = approvedStationAliases.find((entry) => entry.id === station.id)
   if (!identity) return station
   const memberIds = [identity.id, ...identity.aliases]
@@ -548,13 +523,6 @@ const mapStations = sourceMapStations.filter((station) => canonicalStationId(sta
   }
 })
 for (const station of mapStations) station.control.currentHegemons = hegemonsForHolders(station.control.polityIds, affiliations)
-const regionalBindings = JSON.parse(await readFile(resolve(loreRoot, 'places/regional-station-bindings.json'), 'utf8'))
-const officialRegionalGraph = regionalLineGraph(regularLineSource, regionalBindings, mapStations)
-await writeFile(resolve(publicRoot, 'regular-regional-connections.json'), JSON.stringify({
-  schema: 'regular-regional-connections.v1',
-  source: regularLineSource.source,
-  ...officialRegionalGraph,
-}, null, 2))
 const majorStationIds = mapStations.filter((station) => station.degree >= 7 || capitalStationIds.has(station.id)).map((station) => station.id).sort((left, right) => left.localeCompare(right, 'ko'))
 const stationControlById = new Map(mapStations.map((station) => [station.id, station.control]))
 const segmentControlOverrides = new Map((stationControlLedger.segmentOverrides ?? []).map((entry) => [entry.segmentId, entry]))
@@ -586,7 +554,9 @@ const passage2126 = (edge, control) => {
   if (crossesHan(edge.a, edge.b)) return passageDecisions.get(id) ?? 'unknown'
   return control.status === 'held' ? 'open' : control.status === 'contested' ? 'checkpoint' : 'unknown'
 }
-const projectedEdges = regularGraph.edges.map((edge) => ({ a: edge.a, b: edge.b, lineIds: edge.lineIds, sourceCodes: edge.sourceCodes }))
+const admittedStationIds = new Set(mapStations.map(station => station.id))
+const projectedEdges = regularGraph.edges.filter(edge => admittedStationIds.has(edge.a) && admittedStationIds.has(edge.b))
+  .map((edge) => ({ a: edge.a, b: edge.b, lineIds: edge.lineIds, sourceCodes: edge.sourceCodes }))
 const mapEdges = projectedEdges.filter((edge, index) => edge.a !== edge.b && projectedEdges.findIndex((other) => other.a === edge.a && other.b === edge.b && other.lineIds.join(',') === edge.lineIds.join(',')) === index).map((edge) => {
   const id = `segment:${edge.a}~${edge.b}`
   const control = segmentControl(id, stationControlById.get(edge.a), stationControlById.get(edge.b))
@@ -668,82 +638,25 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
     capitalY: capital.y,
   }
 })
-const vassalsTableMatch = stateSource.match(/\| 속국 \| 본국 \|[\s\S]*?(?=\n\n|$)/)?.[0] ?? ''
-const vassalsRows = [...vassalsTableMatch.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
-  .map((match) => match.slice(1).map((cell) => cell.trim()))
-  .filter(([name]) => name !== '속국' && !name.startsWith('---'))
-
-const anchorRules = {
-  '경기도(고양)': '3호선 대화 방면',
-  '제일수문(양평)': '경의중앙 지평 방면',
-  '제이수문(춘천)': '경춘선',
-  '제1분공방(천안·아산, 이씨)': '1호선 남단',
-  '제2분공방(시흥)': '서해선 시흥 방면',
-  '제1종착(인천)': '1호선 인천',
-  '제2종착(파주)': '경의중앙 문산',
-  '제1경비지구(하남)': '5호선 하남',
-  '제2경비지구(남양주)': '경춘선 남양주 방면',
-  '제3경비지구(의정부·연천)': '1호선 북단·7호선 장암',
-  '태욱중공업 성남사업장': '신분당/8호선',
-  '태욱중공업 수원사업장': '수인분당',
-  '영종지점(영종)': '공항철도'
-}
-const vassalLineIds = {
-  '경기도(고양)': '4-3', '제일수문(양평)': 'K', '제이수문(춘천)': 'G',
-  '제1분공방(천안·아산, 이씨)': '2-1', '제2분공방(시흥)': 'SH',
-  '제1종착(인천)': '2-1', '제2종착(파주)': 'K',
-  '제1경비지구(하남)': '6-5', '제2경비지구(남양주)': 'G',
-  '제3경비지구(의정부·연천)': '2-1', '태욱중공업 성남사업장': 'S',
-  '태욱중공업 수원사업장': 'B', '영종지점(영종)': 'A',
-}
-
-const cityRules = {
-  '경기도(고양)': '고양',
-  '제일수문(양평)': '양평',
-  '제이수문(춘천)': '춘천',
-  '제1분공방(천안·아산, 이씨)': '천안·아산',
-  '제2분공방(시흥)': '시흥',
-  '제1종착(인천)': '인천',
-  '제2종착(파주)': '파주',
-  '제1경비지구(하남)': '하남',
-  '제2경비지구(남양주)': '남양주',
-  '제3경비지구(의정부·연천)': '의정부·연천',
-  '태욱중공업 성남사업장': '성남',
-  '태욱중공업 수원사업장': '수원',
-  '영종지점(영종)': '영종'
-}
-
-const mapVassalName = (rawName) => {
-  if (rawName === '제1분공방(천안·아산, 이씨)') return '제1분공방'
-  const match = rawName.match(/^([^(]+)\(/)
-  return match ? match[1] : rawName
-}
-
-const vassals = vassalsRows.map(([rawName, suzerainName, founded, duty]) => {
-  const suzerainId = stateIdByName.get(suzerainName) ?? (suzerainName === '종교 연합' ? 'union:religious' : null)
-  if (!suzerainId) throw new Error(`E_VASSAL_SUZERAIN_NOT_FOUND:${suzerainName}`)
-  const city = cityRules[rawName] || rawName
-  const boundary = boundaryByCity.get(city)
-  if (!boundary) throw new Error(`E_VASSAL_BOUNDARY:${city}`)
-  const [x, y] = mapPoint(boundary.centroid)
-  return {
-    name: mapVassalName(rawName),
-    city,
-    suzerain: suzerainId,
-    authorityName: suzerainName,
-    founded,
-    duty,
-    anchor: anchorRules[rawName],
-    lineId: vassalLineIds[rawName],
-    x, y,
-    east: boundary.centroid[0], north: boundary.centroid[1],
-    coordinateStatus: 'surveyed',
-    coordinateSource: 'vuski/admdongkor ver20260701 (CC BY 4.0; KOSTAT SGIS)'
-  }
-})
-if (vassals.length !== 13 || vassals.some((vassal) => !vassal.anchor || !officialLineData.lines[vassal.lineId])) throw new Error('E_VASSAL_LINE_ANCHOR')
+// Outside vassals no longer exist in the current world (owner decision 2026-10-15,
+// .omo/evidence/seoul-lock/owner-all-vassals-inside-seoul-20261015.md). Vassalage is
+// projected through approved Seoul title holdings, so the map carries no outside markers.
+const vassals = []
 
 const openingTerritories = {
+  physicalRail: projectPhysicalRail(
+    JSON.parse((await promisify(execFile)('python3', [resolve(projectRoot, 'scripts/physical_rail.py')], { maxBuffer: 64 * 1024 * 1024 })).stdout),
+    (longitude, latitude) => proj4('EPSG:4326', 'EPSG:5179', [longitude, latitude]),
+  ),
+  geography: projectGeographicTitles(
+    geography,
+    JSON.parse(await readFile(resolve(projectRoot, 'data/geography/boundaries/seoul-sgis-20250630.geojson'), 'utf8')),
+    (longitude, latitude) => {
+      const [east, north] = proj4('EPSG:4326', 'EPSG:5179', [longitude, latitude])
+      return [(east - mapBounds.minX) / (mapBounds.maxX - mapBounds.minX) * mapWidth,
+        (mapBounds.maxY - north) / (mapBounds.maxY - mapBounds.minY) * mapHeight]
+    },
+  ),
   hegemons: pagesBySlug.get('Sixteen-States').value.data.currentAffiliation.hegemons,
   schema: 'seoul-opening-territories.v1',
   epoch: regionAtlas.fictional_epoch,
@@ -780,45 +693,33 @@ const openingTerritories = {
   }),
 }
 await writeFile(resolve(publicRoot, 'opening-territories.json'), `${JSON.stringify(openingTerritories)}\n`)
+// Preserve observed underground geometry while projecting its index bindings
+// onto the admitted Seoul-only hop set. Never bridge a removed outside hop.
+const underground = JSON.parse(await readFile(resolve(publicRoot, 'underground-detail.json'), 'utf8'))
+const previousTerritories = JSON.parse(await readFile(resolve(projectRoot, 'public/opening-territories.json'), 'utf8'))
+const edgeIndex = new Map(mapEdges.map((edge, index) => [edge.id, index]))
+underground.stations = Object.fromEntries(Object.entries(underground.stations).filter(([id]) => admittedStationIds.has(id)))
+underground.paths = underground.paths.flatMap(path => {
+  const oldEdge = previousTerritories.edges[path.edge]
+  const index = oldEdge && edgeIndex.get(oldEdge.id)
+  return index === undefined ? [] : [{ ...path, edge: index }]
+})
+await writeFile(resolve(publicRoot, 'underground-detail.json'), `${JSON.stringify(underground)}\n`)
 
-const outsideGeometry = JSON.parse(await readFile(resolve(publicRoot, 'outside-admin-units.json'), 'utf8'))
+const outsideGeometry = (await loadApprovedRightsHistory()).historical.outside
 const outsideControl = JSON.parse(await readFile(resolve(loreRoot, 'regions/outside-control-2126.json'), 'utf8'))
 const outsideIslands = JSON.parse(await readFile(resolve(loreRoot, 'regions/outside-island-occupation.json'), 'utf8'))
-const projectedOutsideControl = projectOutsideOccupation(outsideControl, outsideGeometry, outsideIslands)
-await writeFile(resolve(publicRoot, 'outside-control-2126.json'), JSON.stringify(projectedOutsideControl, null, 2) + '\n')
+const projectedOutsideControl = await projectCatalogOutsideOccupation(outsideControl, outsideGeometry, outsideIslands)
 
 const centuryAnnalsSource = renderedBySlug.get('Century-Annals')
 if (!centuryAnnalsSource) throw new Error('E_CENTURY_ANNALS_MISSING')
 const centuryAnnalsDocument = pagesBySlug.get('Century-Annals')?.value
-const relatedTimelineDocuments = (text, hasTheaterChronicle = false) => {
-  const related = [{ title: '서울전국 연표 2030–2126', route: '/world/Century-Annals' }]
-  const add = (title, route) => { if (!related.some((entry) => entry.route === route)) related.push({ title, route }) }
-  if (territoryStates.some((state) => text.includes(state.id) || text.includes(state.name)) || /열여섯|십육국|국호/u.test(text)) add('서울 십육국', '/world/Sixteen-States')
-  if (/HC\d{2}|HP\d{2}|가문|총수|본관|항렬|법인 후계/u.test(text)) add('가문', '/world/Chaebol-Houses-and-Century-Factions')
-  if (/교회|성당|불교|원불교|예배|신정|위령|신앙|종단|교구/u.test(text)) add('신앙과 문화의 분열', '/world/Faith-Culture-Schism')
-  if (/휴머노이드|기술|무구|인가 서버|공장|제작|배터리|전지|도면|정비/u.test(text)) add('이 시대의 기술과 무구', '/world/Era-Arms-and-Tech-Level')
-  if (hasTheaterChronicle || /XT0[1-5]|외부전구|임진|서해|대한해협|두만강|인천신탁|바깥/u.test(text)) add('바깥', '/world/External-Theaters')
-  if (peopleSource.some((person) => text.includes(person.name))) add('등장인물 전체', '/people')
-  return related
-}
-const timelineYears = buildTimelineYears(centuryAnnalsDocument?.content ?? [], relatedTimelineDocuments)
+const timelineYears = await projectCatalogTimeline(pagesBySlug.get('Century-Annals'), (text) => relatedTimelineDocuments(text, territoryStates, peopleSource))
 const emptyYears = timelineYears.filter((entry) => entry.summary.length === 0).map((entry) => entry.year)
 if (timelineYears.length === 0 || timelineYears[0]?.year !== 2030 || timelineYears.at(-1)?.year > 2126 || emptyYears.length > 0) {
   throw new Error(`E_TIMELINE_YEAR_COVERAGE:${timelineYears.length}:${timelineYears[0]?.year}:${timelineYears.at(-1)?.year}:${emptyYears.join(',')}`)
 }
-const stateEvents = new Map(territoryStates.map((state) => [state.name, []]))
-let eventYear = null
-for (const block of centuryAnnalsDocument.content) {
-  if (block.kind === 'heading' && block.depth <= 3) {
-    const year = block.depth === 3 ? Number(koText(block.text.ko).match(/^((?:20|21)\d{2})년$/u)?.[1]) : NaN
-    eventYear = Number.isInteger(year) ? year : null
-  }
-  if (eventYear === null || block.kind !== 'paragraph') continue
-  const text = koText(block.text.ko)
-  for (const state of territoryStates) {
-    if (text.includes(state.name)) stateEvents.get(state.name).push({ year: eventYear, text, sourceRoute: `/world/Century-Annals#${eventYear}년` })
-  }
-}
+const stateEvents = stateTimelineEvents(centuryAnnalsDocument.content, timelineYears, territoryStates)
 for (const state of territoryStates) {
   state.chronology = stateEvents.get(state.name)
   if (state.chronology.length === 0) throw new Error(`E_STATE_CHRONOLOGY_EMPTY:${state.id}`)
@@ -826,325 +727,31 @@ for (const state of territoryStates) {
 await writeFile(resolve(publicRoot, 'opening-territories.json'), `${JSON.stringify(openingTerritories)}\n`)
 await writeFile(resolve(publicRoot, 'timeline-overview.json'), `${JSON.stringify({ schema: 'seoul-timeline-overview.v1', years: timelineYears, states: territoryStates }, null, 2)}\n`)
 
-const personCards = new Map()
-const addPersonCards = (text, file, pattern) => {
-  // Heading aliases belong to the following heading, not the preceding card.
-  const headings = [...text.matchAll(pattern)].map((heading) => ({
-    heading,
-    start: text.slice(0, heading.index).match(/(?:\n<a id="[\p{L}\p{N}_-]+"><\/a>\n*)+$/u)?.index ?? heading.index,
-  }))
-  for (let index = 0; index < headings.length; index += 1) {
-    const { heading } = headings[index]
-    const name = heading[1].trim()
-    if (name === '부록 — 가치관 숫자' || name === '인물 카드') continue
-    const nextPerson = headings[index + 1]?.start ?? -1
-    const nextSection = file === 'Cast-Unaffiliated.md' ? text.indexOf('\n## ', heading.index + heading[0].length) : -1
-    const boundaries = [nextPerson, nextSection].filter((position) => position >= 0)
-    const nextHeading = boundaries.length ? Math.min(...boundaries) : -1
-    const body = text.slice(heading.index + heading[0].length, nextHeading >= 0 ? nextHeading : text.length).trim()
-    const cards = personCards.get(name) ?? []
-    const slug = file.replace('.md', '')
-    cards.push({ file: slug, body, primary: pagesBySlug.get(slug)?.value.data?.primary_detail_names?.includes(name) ?? false })
-    personCards.set(name, cards)
-  }
-}
-for (let index = 1; index <= 16; index += 1) {
-  const file = `Cast-State-${String(index).padStart(2, '0')}.md`
-  const text = renderedBySlug.get(basename(file, '.md'))
-  if (!text) throw new Error(`E_CAST_PAGE_MISSING:${file}`)
-  addPersonCards(text, file, /^### 인물 (.+)$/gm)
-}
-for (const [file, pattern] of [['Core-Characters.md', /^## (?!인물 목록$)(.+)$/gm], ['Cast-Unaffiliated.md', /^### 인물 (.+)$/gm]]) {
-  const text = renderedBySlug.get(basename(file, '.md'))
-  if (!text) throw new Error(`E_CAST_PAGE_MISSING:${file}`)
-  addPersonCards(text, file, pattern)
-}
-const corridorText = renderedBySlug.get('Diaspora-Corridors')
-if (!corridorText) throw new Error('E_CORRIDOR_PAGE_MISSING')
-const corridorNames = ['린샤오메이', '팜반득', '아미라 카심', '조엘 박', '나르기즈 유수포바', '최일석']
-const corridorHeadings = [...corridorText.matchAll(/^### 인물 (.+)$/gm)]
-for (const [index, heading] of corridorHeadings.entries()) {
-  const name = corridorNames.find((candidate) => heading[1] === candidate || heading[1].startsWith(`${candidate} (`))
-  if (!name) continue
-  const end = corridorHeadings[index + 1]?.index ?? corridorText.length
-  const body = corridorText.slice(heading.index + heading[0].length, end).trim()
-  const cards = personCards.get(name) ?? []
-  cards.push({ file: 'Diaspora-Corridors', body, heading: heading[1] })
-  personCards.set(name, cards)
-}
-const relationText = renderedBySlug.get('Cast-Relations')
-if (!relationText) throw new Error('E_CAST_RELATIONS_MISSING')
-const relations = [...relationText.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
-  .map((match) => ({ from: match[1].trim(), type: match[2].trim(), to: match[3].trim(), basis: match[4].trim() }))
-  .filter((relation) => relation.from !== '인물' && !relation.from.startsWith('---'))
-const courtDataset = loadDataset()
-const courtErrors = validateRelations(courtDataset)
-if (courtErrors.length) throw new Error(`E_COURT_RELATIONS:${courtErrors.join('; ')}`)
-const issuedById = new Map(courtDataset.people.map((person) => [person.id, person]))
-let personalHoldings = JSON.parse(await readFile(resolve(loreRoot, 'relations/personal-holdings.json'), 'utf8'))
-const openingDispositions = validateOpeningDispositions(personalHoldings, courtDataset.people)
+let personalHoldings = originalHoldings
 const daejeonPolities = personalHoldings.polities.filter(polity => polity.id === 'polity:daejeon')
 if (daejeonPolities.length !== 1) throw new Error('E_DAEJEON_POLITY_ID')
 await writeFile(resolve(generatedRoot, 'politicalCatalog.ts'), 'export const politicalCatalog = ' + JSON.stringify({ hegemons: sixteenStatesLore.data.currentAffiliation.hegemons, daejeon: daejeonPolities[0] }, null, 2) + ' as const\n')
-const territorialScale = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8')).data.territorialScale
 await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(territorialScale, null, 2) + String.fromCharCode(10))
-await writeFile(resolve(publicRoot, 'admin-territorial-scale.json'), JSON.stringify(buildAdminTerritorialScale(outsideGeometry.units, openingTerritories.regions, territorialScale)) + '\n')
-const stationInteriors = JSON.parse(await readFile(resolve(loreRoot, 'regions/station-interiors.json'), 'utf8'))
-for (const holding of personalHoldings.holdings) {
-  const rulerState = territoryStates.find(state => state.id === holding.stateId && state.ruler === issuedById.get(holding.holderPersonId)?.name)
-  const independentPolity = personalHoldings.polities.find(polity => polity.id === holding.stateId && polity.sovereignPersonId === holding.holderPersonId)
-  if (!issuedById.has(holding.holderPersonId) || (holding.directLiegePersonId === null ? !rulerState && !independentPolity : !issuedById.has(holding.directLiegePersonId)) || (!holding.stationRef && !holding.facilityRef && !holding.landmarkRef && !holding.adminRefs.length)) throw new Error('E_PERSON_HOLDING:' + holding.id)
-  if (holding.stationRef) {
-    const station = openingTerritories.stations.find(station => station.id === holding.stationRef.stationId)
-    if (!rulerState || holding.directLiegePersonId !== null || rulerState.capitalStationId !== holding.stationRef.stationId || station?.name !== holding.stationRef.stationName || !station.control.polityIds.includes(holding.stateId) || holding.adminRefs.length || holding.facilityRef || holding.geometrySource !== null || holding.territorialScale !== null || holding.formalTitleRank !== null) throw new Error('E_CAPITAL_HOLDING:' + holding.id)
-  }
-  if (holding.landmarkRef) {
-    const landmark = projectedLandmarks.find(site => site.id === holding.landmarkRef.landmarkId)
-    if (!landmark || landmark.holderId !== holding.stateId || holding.landmarkRef.sourcePath !== 'lore/places/landmark-roles.json' || holding.stationRef || holding.facilityRef || holding.adminRefs.length) throw new Error('E_HOLDING_LANDMARK:' + holding.id)
-  }
-  if (holding.facilityRef) {
-    await validateHoldingFacility(holding, stationInteriors, repoRoot)
-    const ref = holding.facilityRef
-    const station = seoulGraph.stations.find(station => station.id === (ref.stationId ?? ref.stationName))
-    if (!station || station.nameKo !== ref.stationName || station.district !== ref.stationIdentity.district || Number(station.lat.toFixed(5)) !== ref.stationIdentity.lat || Number(station.lon.toFixed(5)) !== ref.stationIdentity.lon) throw new Error('E_HOLDING_STATION_ID:' + holding.id)
-  }
-  for (const ref of holding.adminRefs) {
-    const region = (holding.geometrySource === 'outside-admin-units.units' ? outsideGeometry.units : openingTerritories.regions).find(region => region.id === ref.id)
-    if (!region || region.name !== ref.name) throw new Error('E_HOLDING_ADMIN_REF:' + holding.id + ':' + ref.id)
-  }
-}
-const openingAllocation = JSON.parse(await readFile(resolve(loreRoot, 'relations/opening-feudal-allocation.json'), 'utf8'))
-personalHoldings = projectOpeningFeudalAllocation({
-  allocation: openingAllocation, existing: personalHoldings,
-  people: peopleSource.map(person => ({ id: courtDataset.people.find(issued => issued.name === person.name)?.id, name: person.name, state: person.state })),
-  seoul: openingTerritories,
-  outside: { ...outsideGeometry, islands: projectedOutsideControl.assignments.filter(unit => unit.components).map(unit => ({ unitId: unit.unitId, components: unit.components })) },
-  control: projectedOutsideControl, affiliation: sixteenStatesLore.data.currentAffiliation,
-  scale: buildAdminTerritorialScale(outsideGeometry.units, openingTerritories.regions, territorialScale),
+personalHoldings = await projectPersonHoldingsInputs(personSources, {
+  repoRoot, territoryStates, openingTerritories, projectedLandmarks, seoulGraph, outsideGeometry,
+  projectedOutsideControl, affiliation: sixteenStatesLore.data.currentAffiliation, geography, geographicScale,
 })
 await writeFile(resolve(publicRoot, 'confirmed-person-holdings.json'), JSON.stringify(personalHoldings, null, 2) + String.fromCharCode(10))
-const issuedIdByName = new Map(courtDataset.people.map((person) => [person.name, person.id]))
-const birthdayRoster = courtDataset.sources.registry.persons
-const birthdayNames = new Set(peopleSource.map((person) => person.name))
-if (birthdayNames.size !== peopleSource.length || birthdayRoster.length !== peopleSource.length || birthdayRoster.some((person) => !birthdayNames.has(person.name))) throw new Error('E_BIRTH_ROSTER_COVERAGE')
-const birthdaysById = await loadCastBirthdays(loreRoot, birthdayRoster)
-const familyGraph = await loadCastFamilyTrees(loreRoot, birthdayRoster, { birthdays: birthdaysById, resolveRegisteredPeople: true })
-const householdLedger = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-household-relations.json'), 'utf8'))
-validateCastHouseholdRelations(householdLedger, await loadHouseholdSourceDocuments(repoRoot, householdLedger))
-const householdsById = new Map(householdLedger.people.map(person => [person.personId, {
-  personFaith: person.household.personFaith.status,
-  houseFaith: person.household.houseFaith.status,
-  humanoidAdmission: person.household.humanoidAdmission,
-}]))
-const proseContacts = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-prose-contacts.json'), 'utf8'))
-const proseContactsById = new Map()
-const seenProseContacts = new Set()
-for (const contact of proseContacts.records) {
-  const key = `${contact.personId}:${contact.recipientId}`
-  if (!issuedById.has(contact.personId) || !issuedById.has(contact.recipientId) || contact.personId === contact.recipientId || seenProseContacts.has(key) || contact.kind !== 'existing-prose-contact' || !/^lore\/(?:characters|factions)\/[^/]+\.json$/.test(contact.sourceRef.path)) throw new Error(`E_PROSE_CONTACT_ID:${key}`)
-  seenProseContacts.add(key)
-  const document = JSON.parse(await readFile(resolve(repoRoot, contact.sourceRef.path), 'utf8'))
-  const source = document.content.find(block => block.anchor === contact.sourceRef.anchor)
-  const value = source?.kind === 'list' ? source.items.find(item => typeof item.ko === 'string' && item.ko.startsWith('주요 관계:'))?.ko : source?.text?.ko
-  const basis = typeof value === 'string' ? value : Array.isArray(value) ? value.filter(part => !part.strong).map(part => part.text).join('') : ''
-  if (!contact.sourceRef.anchor.startsWith(`인물-${issuedById.get(contact.personId).name.replaceAll(' ', '-')}-`) || !basis.includes(issuedById.get(contact.recipientId).name)) throw new Error(`E_PROSE_CONTACT_SOURCE:${key}`)
-  const outgoing = proseContactsById.get(contact.personId) ?? []
-  outgoing.push({ recipientId: contact.recipientId, recipientName: issuedById.get(contact.recipientId).name, basis: basis.trim(), sourceRef: contact.sourceRef })
-  proseContactsById.set(contact.personId, outgoing)
-  const incoming = proseContactsById.get(contact.recipientId) ?? []
-  incoming.push({ recipientId: contact.personId, recipientName: issuedById.get(contact.personId).name, basis: basis.trim(), sourceRef: contact.sourceRef })
-  proseContactsById.set(contact.recipientId, incoming)
-}
-const parentStatuses = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-family-parent-status.json'), 'utf8')).records
-const parentStatusById = new Map()
-for (const record of parentStatuses) {
-  if (parentStatusById.has(record.personId) || !issuedById.has(record.personId) || !['biological-parents-unrecorded', 'maternal-parent-unrecorded'].includes(record.status) || !familyGraph.edges.some(edge => edge.to === record.personId && edge.from === record.knownParentId && edge.type === record.knownRelationship)) throw new Error(`E_PARENT_STATUS:${record.personId}`)
-  if (record.sourceRef?.path !== 'lore/characters/Core-Characters.json') throw new Error(`E_PARENT_STATUS_SOURCE:${record.personId}`)
-  const source = JSON.parse(await readFile(resolve(repoRoot, record.sourceRef.path), 'utf8'))
-  if (!source.content?.some(block => block.anchor === record.sourceRef.anchor)) throw new Error(`E_PARENT_STATUS_SOURCE:${record.personId}`)
-  parentStatusById.set(record.personId, record.status)
-}
-const personRightsPermissions = parsePersonRightsPermissions(
-  JSON.parse(await readFile(resolve(repoRoot, 'person-rights-permissions.json'), 'utf8')), courtDataset.people,
-)
-const retainersById = new Map(courtDataset.config.directRetainers.map((row) => [row.personId, row]))
-const membershipsById = new Map(courtDataset.config.courtMemberships.memberships.map((row) => [row.personId, row]))
-const courtMembersByOwner = new Map(courtDataset.config.courts.map((court) => [court.ownerPersonId,
-  [...courtDataset.config.directRetainers, ...courtDataset.config.courtMemberships.memberships].filter((row) => row.courtId === court.id)]))
-const ownerLiegeByPerson = new Map(courtDataset.config.ownerLieges?.edges?.map((row) => [row.personId, row]) ?? [])
-const officeAppointmentSource = JSON.parse(await readFile(resolve(loreRoot, 'relations/opening-office-appointments.json'), 'utf8'))
-const officeAppointments = new Map()
-for (const row of officeAppointmentSource.appointments) {
-  if (officeAppointments.has(row.personId) || !issuedById.has(row.personId) || !/^T[1-5]$/u.test(row.commonTier) || !row.position?.ko || !row.position?.en || !row.rank?.ko || !row.rank?.en || !row.approvalRef) throw new Error('E_OPENING_OFFICE:' + row.personId)
-  officeAppointments.set(row.personId, row)
-}
-const parseCardSections = (body) => {
-  const sections = {}
-  const matches = [...body.matchAll(/\*\*([^*]+?)\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*#{2,3}\s|\n\s*:::|$)/g)]
-  for (const match of matches) sections[match[1].trim()] = match[2].trim()
-  return sections
-}
-const parseCardFields = (body) => Object.fromEntries(
-  [...body.matchAll(/^- ([^:\n]+):\s*(.+)$/gm)].map((match) => [match[1].trim(), match[2].trim()]),
-)
-const primaryCard = (person) => {
-  const cards = personCards.get(person.name) ?? []
-  const selected = cards.find((card) => card.primary)
-  if (selected) return selected
-  return [...cards].sort((left, right) => right.body.length - left.body.length)[0]
-}
-const personDetailsRoot = resolve(publicRoot, 'person-details')
-await rm(personDetailsRoot, { recursive: true, force: true })
-await mkdir(personDetailsRoot, { recursive: true })
-const peopleCatalog = peopleSource.map((person, index) => {
-  const cards = personCards.get(person.name) ?? []
-  const primary = primaryCard(person)
-  const fields = parseCardFields(primary?.body ?? '')
-  const sections = parseCardSections(primary?.body ?? '')
-  const source = primary?.file ?? 'Cast-Index'
-  const heading = source === 'Core-Characters' ? person.name : `인물-${primary?.heading ?? person.name}`
-  const anchor = source === 'Diaspora-Corridors'
-    ? heading.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
-    : heading
-  const office = sections['관직'] ?? ''
-  const appointment = officeAppointments.get(issuedIdByName.get(person.name))
-  if (appointment && appointment.stateId !== person.state) throw new Error('E_OPENING_OFFICE_STATE:' + appointment.personId)
-  const position = appointment?.position.ko ?? fields['직함'] ?? fields['직위'] ?? office.match(/직함은 ([^.]+)\./u)?.[1]?.trim() ?? person.title
-  const rank = appointment?.rank.ko ?? fields['품계'] ?? office.match(/품계 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
-  const occupation = fields['생업'] ?? cards.map((card) => parseCardFields(card.body)['생업']).find(Boolean) ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
-  const stateTiers = tiersByState.get(person.state)
-  const tierIndex = stateTiers?.findIndex((ranks) => ranks.includes(rank)) ?? -1
-  const commonTier = appointment?.commonTier ?? (person.state === 'polity:daejeon' || person.state === 'S00' || source === 'Cast-Unaffiliated' || source === 'Diaspora-Corridors' || /^품계 없음\./u.test(office) ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : '')
-  return {
-    id: `person-${String(index + 1).padStart(4, '0')}`,
-    name: person.name,
-    title: person.title,
-    position,
-    characterId: issuedIdByName.get(person.name),
-    rank,
-    commonTier,
-    occupation,
-    gender: genderByName.get(person.name)?.gender ?? (() => { throw new Error(`E_PERSON_GENDER_MISSING:${person.name}`) })(),
-    stage: person.stage,
-    state: person.state,
-    stateName: stateNameById.get(person.state) ?? person.state_name,
-    sourceRoute: `/world/${source}#${anchor}`,
-    detailRoute: [...atlasPeople.routes.values()].find((route) => route.name === person.name).detailRoute,
-  }
+const officeAppointments = currentOfficeAppointments(officeAppointmentSource, issuedById)
+const { peopleCatalog, personDetails, retainerGraph, familyDetailRoutes, personFeedbackRecords } = await produceFromPersonDetailSources(personSources, {
+  personalHoldings, stateNameById, tiersByState, officeAppointments,
 })
-const catalogByName = new Map(peopleCatalog.map((person) => [person.name, person]))
-const familyDetailRoutes = new Map(birthdayRoster.map((person) => [person.id, catalogByName.get(person.name).detailRoute]))
-const graphPerson = (id) => {
-  const issued = issuedById.get(id)
-  const person = issued && catalogByName.get(issued.name)
-  if (!person || person.name !== issued.name) throw new Error(`E_RETAINER_GRAPH_PERSON:${id}`)
-  return { id, name: person.name, state: person.state, detailRoute: person.detailRoute }
-}
-const graphCourts = courtDataset.config.courts
-const graphRetainers = courtDataset.config.directRetainers
-const graphOwnerLieges = courtDataset.config.ownerLieges?.edges ?? []
-const graphIds = new Set(graphCourts.map((court) => court.ownerPersonId))
-for (const holding of personalHoldings.holdings) graphIds.add(holding.holderPersonId)
-for (const row of graphRetainers) {
-  graphIds.add(row.personId)
-  graphIds.add(row.liegePersonId)
-}
-for (const row of graphOwnerLieges) {
-  graphIds.add(row.personId)
-  graphIds.add(row.liegePersonId)
-}
-const retainerGraph = {
-  groups: personalHoldings.retinueGroups,
-  nodes: [...graphIds].map(graphPerson),
-  edges: [
-    ...graphRetainers.map(({ personId, liegePersonId, courtId }) =>
-      ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })),
-    ...graphOwnerLieges.map(({ personId, liegePersonId, relationKind, ownerTerm }) =>
-      ({ fromPersonId: personId, toPersonId: liegePersonId, courtId: membershipsById.get(personId)?.courtId ?? null, relationKind, ownerTerm })),
-  ],
-  courts: graphCourts.map(({ id, ownerPersonId, stateId }) => ({ id, ownerPersonId, stateId })),
-}
+feedbackRecords.push(...personFeedbackRecords)
 await writeFile(resolve(generatedRoot, 'retainerGraph.ts'), `export const retainerGraph = ${JSON.stringify(retainerGraph, null, 2)} as const\n`)
-const issuedSheets = JSON.parse(await readFile(resolve(repoRoot, 'lore/name-pools/gurps-cast.json'), 'utf8')).people
-const sheetById = new Map(issuedSheets.map((sheet) => [sheet.id, sheet]))
-if (sheetById.size !== issuedSheets.length) throw new Error('E_PERSON_SHEET_DUPLICATE_ID')
-for (const person of peopleCatalog) {
-  const ledger = peopleSource.find((candidate) => candidate.name === person.name)
-  const cards = personCards.get(person.name) ?? []
-  const primary = primaryCard(ledger)
-  const body = primary?.body ?? ''
-  const sourceEnvelope = pagesBySlug.get(primary?.file)?.value
-  if (!sourceEnvelope || !primary) throw new Error(`E_PERSON_FEEDBACK_SOURCE:${person.id}`)
-  const lineage = lineageByName.get(person.name)
-  const issuedId = issuedIdByName.get(person.name)
-  if (!lineage) throw new Error(`E_PERSON_LINEAGE_MISSING:${person.name}`)
-  const sheet = sheetById.get(issuedId)
-  if (!sheet || sheet.name !== person.name || sheet.url !== person.detailRoute) throw new Error(`E_PERSON_SHEET_IDENTITY:${issuedId}:${person.id}`)
-  const detail = {
-    ...person,
-    ...birthdaysById.get(issuedId),
-    familyTree: { ...projectFamilyTree(familyGraph, issuedId, familyDetailRoutes), parentStatus: parentStatusById.get(issuedId) ?? null },
-    proseContacts: proseContactsById.get(issuedId) ?? [],
-    household: householdsById.get(issuedId),
-    ...(personRightsPermissions.has(issuedId) ? { rightsPermissions: personRightsPermissions.get(issuedId) } : {}),
-    gurps: { id: issuedId, personId: person.id },
-    characterProfile: publicCharacterProfile(characterProfiles.get(issuedId)),
-    personSheet: projectPreservedPersonSheet(preservedSheets, {
-      id: issuedId, personId: person.id, name: person.name, state: person.state, url: person.detailRoute,
-    }),
-    confirmedHoldings: personalHoldings.holdings.filter(holding => holding.holderPersonId === issuedId),
-    ...(personalHoldings.titles.some(title => title.holderPersonId === issuedId && title.rank === 'duchy') ? {
-      subordinateHoldings: personalHoldings.holdings.filter(holding => holding.holderPersonId !== issuedId && personalHoldings.titles.some(title => title.id === holding.titleId && personalHoldings.titles.some(parent => parent.id === title.parentTitleId && parent.holderPersonId === issuedId))).map(holding => ({ ...holding,
-        holderName: issuedById.get(holding.holderPersonId).name,
-        holderRoute: `/people/person-${String(peopleSource.findIndex(person => person.name === issuedById.get(holding.holderPersonId).name) + 1).padStart(4, '0')}`,
-      })),
-    } : {}),
-    ...(personalHoldings.titles.some(title => title.holderPersonId === issuedId) ? {
-      openingTitles: personalHoldings.titles.filter(title => title.holderPersonId === issuedId).map(title => ({ ...title,
-        parentTitle: title.parentTitleId ? (() => { const parent = personalHoldings.titles.find(parent => parent.id === title.parentTitleId); return { id: parent.id, name: parent.name, holderPersonId: parent.holderPersonId } })() : null,
-      })),
-    } : {}),
-    ...(personalHoldings.polities.some(polity => polity.sovereignPersonId === issuedId) ? { sovereignTitle: personalHoldings.polities.find(polity => polity.sovereignPersonId === issuedId) } : {}),
-    ...(personalHoldings.retinueGroups.some(group => group.liegePersonId === issuedId) ? { retinueGroups: personalHoldings.retinueGroups.filter(group => group.liegePersonId === issuedId) } : {}),
-    ...(openingDispositions.has(issuedId) ? { openingDisposition: openingDispositions.get(issuedId) } : {}),
-    unit: sheet.unit,
-    territory: sheet.territory,
-    wandering_force: sheet.wandering_force,
-    clan: lineage.clan && lineage.namingConvention !== 'non-korean-lineage' ? { id: lineage.base_clan ?? lineage.clan, name: `${lineage.bongwan} ${lineage.surname}씨`, crest: `clan-crests/${lineage.base_clan ?? lineage.clan}.svg` } : null,
-    generation: ledger.generation,
-    minors: ledger.minors,
-    sourceKind: ledger.source,
-    locked: ledger.locked,
-    values: ledger.values,
-    desire: ledger.desire,
-    fields: parseCardFields(body),
-    sections: parseCardSections(body),
-    biography: body,
-    sources: cards.map((card) => card.file),
-    ...(retainersById.has(issuedId) ? (() => {
-      const row = retainersById.get(issuedId)
-      return { directLiege: { personId: row.liegePersonId, name: issuedById.get(row.liegePersonId).name,
-        courtId: row.courtId, effectiveYear: courtDataset.config.courtContract.effectiveYear } }
-    })() : ownerLiegeByPerson.has(issuedId) ? (() => {
-      const row = ownerLiegeByPerson.get(issuedId)
-      return { directLiege: { personId: row.liegePersonId, name: issuedById.get(row.liegePersonId).name,
-        relationKind: row.relationKind, ownerTerm: row.ownerTerm,
-        ...(membershipsById.has(issuedId) ? { courtId: membershipsById.get(issuedId).courtId } : {}),
-        effectiveYear: courtDataset.config.ownerLieges.effectiveYear } }
-    })() : {}),
-    ...(courtMembersByOwner.has(issuedId) ? {
-      court: { id: `court:${issuedId}`,
-        members: courtMembersByOwner.get(issuedId).map((row) =>
-          ({ personId: row.personId, name: issuedById.get(row.personId).name })) },
-    } : {}),
-    relations: {
-      outgoing: relations.filter((relation) => relation.from === person.name),
-      incoming: relations.filter((relation) => relation.to === person.name),
-    },
-  }
-  await writeFile(resolve(personDetailsRoot, `${person.id}.json`), `${JSON.stringify(detail, null, 2)}\n`)
-  feedbackRecords.push(personFeedbackRecord({ envelope: sourceEnvelope, personId: person.id, route: person.detailRoute, headingText: primary.file === 'Core-Characters' ? person.name : `인물 ${primary.heading ?? person.name}`, locale: 'ko', sections: detail.sections }))
-}
+const personDetailsRoot = resolve(publicRoot, 'person-details')
+const { stdout: gitCommonDir } = await promisify(execFile)('git', ['-C', projectRoot, 'rev-parse', '--path-format=absolute', '--git-common-dir'])
+const scopeInput = await loadScopeInput({ root: projectRoot,
+  baselinePath: resolve(dirname(gitCommonDir.trim()), '.omo/private/seoul-migration/baseline.json') })
+if (scopeInput.error) throw Object.assign(new Error(scopeInput.error.errors[0].code), scopeInput.error.errors[0])
+await writePublicPersonDetails(personDetails, scopeInput, async detail => {
+  await mkdir(personDetailsRoot, { recursive: true })
+  await writeFile(resolve(personDetailsRoot, `${detail.id}.json`), `${JSON.stringify(detail, null, 2)}\n`)
+})
 await mkdir(privateGeneratedRoot, { recursive: true })
 await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.ko.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'ko')))}\n`)
 await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.en.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'en')))}\n`)
@@ -1218,7 +825,6 @@ await writeFile(resolve(generatedRoot, 'clanFamilyCatalog.ts'), `export const cl
 
 // Each clan detail page owns the complete genealogy of its issued members: one lazily fetched JSON per clan.
 const clanTreeRoot = resolve(publicRoot, 'family-trees')
-await rm(clanTreeRoot, { recursive: true, force: true })
 await mkdir(clanTreeRoot, { recursive: true })
 const personByIssuedId = new Map(peopleCatalog.map((person) => [issuedIdByName.get(person.name), person]))
 // Affiliation derives from the current state contract (currentHegemon), never a hard-coded state-to-hegemon list.
@@ -1264,5 +870,17 @@ for (const file of await readdir(resolve(publicRoot, 'portrait-tokens'))) {
   } else token.facts.role = person.position
   await writeFile(path, JSON.stringify(token, null, 2) + '\n')
 }
+await publishPublicAssets({ publicRoot, manifestPath: publicAssetsManifestPath,
+  writeManifest: writeFile,
+  previous: previousPublicAssets,
+  generated: manifestForPublicFiles([
+    'wiki-contract.json', 'opening-territories.json', 'timeline-overview.json',
+    'territorial-scale.json', 'confirmed-person-holdings.json',
+    ...peopleCatalog.map(person => `person-details/${person.id}.json`),
+    ...clanFamilyCatalogOut.filter(family => family.members.length).map(family => `family-trees/${family.id}.json`),
+  ]),
+  stage: async () => {}, // Private transaction only; the release coordinator owns live promotion.
+})
 console.log(`
 WIKI_CATALOG_GENERATED: ${documents.length} documents at ${relative(repoRoot, worldJsonRoot)}`)
+}

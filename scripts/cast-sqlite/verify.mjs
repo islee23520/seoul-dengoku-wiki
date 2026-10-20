@@ -309,6 +309,11 @@ export async function verifyCastDatabase({ dbPath, sourceRoot, requireClean = fa
       holding_superseded: db.prepare("SELECT count(*) AS n FROM context_holding WHERE current_validity='superseded_outside_seoul'").get().n,
       holding_unresolved: db.prepare("SELECT count(*) AS n FROM context_holding WHERE current_validity='unresolved'").get().n,
       holding_current: db.prepare("SELECT count(*) AS n FROM context_holding WHERE current_validity='current_seoul_evidenced'").get().n,
+      holding_nonowning: db.prepare("SELECT count(*) AS n FROM context_holding WHERE current_validity='current_seoul_nonowning'").get().n,
+      current_title_count: db.prepare('SELECT count(*) AS n FROM context_feudal_title').get().n,
+      current_grant_count: db.prepare('SELECT count(*) AS n FROM context_feudal_grant').get().n,
+      political_identity_count: db.prepare('SELECT count(*) AS n FROM context_political_identity').get().n,
+      outside_retired_count: db.prepare('SELECT count(*) AS n FROM context_outside_retirement').get().n,
     };
     const counts = Object.fromEntries(tableNames.map((table) => [table, db.prepare(`SELECT count(*) AS n FROM ${quote(table)}`).get().n]));
     for (const table of tableNames) if (counts[table] !== expected[table]) fail('E_ROW_COUNT', `${table}: 메타데이터=${expected[table]}, 실제 데이터=${counts[table]}`);

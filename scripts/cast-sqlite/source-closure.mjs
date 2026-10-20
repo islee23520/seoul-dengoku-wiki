@@ -31,6 +31,12 @@ export const REFERENCE_TARGET_PATHS = Object.freeze([
   'lore/regions/content/11560.json',
   'lore/regions/station-interiors.json',
   'lore/relations/relations.json',
+  'lore/relations/opening-feudal-allocation.json',
+  'lore/relations/opening-office-appointments.json',
+  'scripts/approved-seoul-rights-transition.json',
+  'scripts/approved-daejeon-nonowning-rights.json',
+  'vendor/issued-history/corpus/lore/name-pools/cast-birthdays.json',
+  'vendor/issued-history/corpus/lore/characters/Core-Characters.json',
 ].sort());
 
 export const SOURCE_CLOSURE_TABLE_COLUMNS = Object.freeze({
@@ -158,6 +164,21 @@ function addDeclaredReference({ source_id, json_pointer, source_path, source_anc
 }
 
 function collectContextReferences(logical_path, document, source_id, rows, targetFiles) {
+  if (logical_path === 'lore/relations/opening-office-appointments.json' && document.schema === 'opening-office-appointments.v2') {
+    if (!Array.isArray(document.appointments)) fail('E_REFERENCE_ARRAY', '/appointments');
+    for (const [appointment, value] of document.appointments.entries()) {
+      const current = object(object(value, `/appointments/${appointment}`).current, `/appointments/${appointment}/current`);
+      if (!Array.isArray(current.evidence)) fail('E_REFERENCE_ARRAY', `/appointments/${appointment}/current/evidence`);
+      for (const [ordinal, value] of current.evidence.entries()) {
+        const json_pointer = `/appointments/${appointment}/current/evidence/${ordinal}`;
+        const evidence = object(value, json_pointer);
+        text(evidence.kind, `${json_pointer}/kind`);
+        addReference({ source_id, json_pointer, ordinal,
+          ref: { source_path: parsePath(text(evidence.path, `${json_pointer}/path`)),
+            source_anchor: text(evidence.jsonPointer, `${json_pointer}/jsonPointer`) }, rows, targetFiles });
+      }
+    }
+  }
   if (logical_path === 'lore/relations/relations.json') {
     if (Object.hasOwn(document, 'courtContract')) {
       const contract = object(document.courtContract, 'courtContract');

@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict'
+import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
 import { fromMarkdown } from 'mdast-util-from-markdown'
@@ -12,18 +13,36 @@ const world = JSON.parse(readFileSync(new URL('../lore/places/World-and-Subway-L
 const clothing = JSON.parse(readFileSync(new URL('../lore/characters/Characters-Factions-and-Professions.json', import.meta.url), 'utf8'))
 const parse = (markdown) => fromMarkdown(markdown, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] })
 
+test('all 17 KMA observations remain unchanged historical research, separate from the current Seoul table', () => {
+  // Verified against recordDispositions in station-climate-v2-applied-20261015.
+  assert.equal(climate.records.length, 17)
+  assert.equal(new Set(climate.records.map((record) => record.region_code_2021)).size, 17)
+  assert.equal(createHash('sha256').update(JSON.stringify(climate.records)).digest('hex'), 'c1eb8d9c30d15cb8871dad391873a9fd12b2251773863093ddaceba170218840')
+  for (const record of climate.records) {
+    const url = new URL(record.source_url)
+    assert.equal(url.protocol, 'https:')
+    assert.equal(url.hostname, 'www.weather.go.kr')
+    assert.equal(Number(url.searchParams.get('stn')), record.station_id)
+    assert.equal(`${url.searchParams.get('yy')}-${url.searchParams.get('mm').padStart(2, '0')}-08`, record.date)
+    assert.equal(record.date, climate.date)
+    assert.ok(record.minimum_c <= record.mean_c && record.mean_c <= record.maximum_c)
+    assert.match(record.source_sha256, /^[a-f0-9]{64}$/u)
+  }
+})
+
 for (const locale of ['ko', 'en']) {
-  test(`the published regional climate table preserves each observation and source URL (${locale})`, () => {
+  test(`the current climate table renders only the Seoul historical daily-minimum reference and source URL (${locale})`, () => {
     const table = world.content.find((block) => block.anchor === '시도별-지상-기온표')
     const rendered = parse(renderLoreMarkdown({ ...world, content: [table] }, locale)).children[0]
     assert.equal(rendered.type, 'table')
-    assert.equal(rendered.children.length - 1, climate.records.length)
-    assert.equal(new Set(climate.records.map((record) => record.region_code_2021)).size, 17)
-    const byRegion = new Map(climate.records.map((record) => [record[`region_${locale}`], record]))
+    assert.equal(rendered.children.length - 1, 1)
+    const record = climate.records.find((record) => record.region_code_2021 === '11')
+    assert.equal(record.station_id, 108)
+    assert.equal(record.date, '2021-01-08')
+    assert.equal(record.minimum_c, -18.6)
     for (const row of rendered.children.slice(1)) {
       const [region, station, minimum] = row.children
-      const record = byRegion.get(toString(region))
-      assert.ok(record, toString(region))
+      assert.equal(toString(region), record[`region_${locale}`])
       assert.equal(Number(toString(minimum).replace('−', '-').replace(/℃|°C/u, '')), record.minimum_c)
       assert.equal(station.children[0].url, record.source_url)
       assert.ok(toString(station).includes(`(${record.station_id})`))
@@ -35,9 +54,7 @@ for (const locale of ['ko', 'en']) {
       assert.equal(record.date, climate.date)
       assert.ok(record.minimum_c <= record.mean_c && record.mean_c <= record.maximum_c)
       assert.match(record.source_sha256, /^[a-f0-9]{64}$/u)
-      byRegion.delete(toString(region))
     }
-    assert.equal(byRegion.size, 0)
   })
 
   test(`underground ranges survive Markdown rendering as the authored text (${locale})`, () => {

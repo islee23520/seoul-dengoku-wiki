@@ -524,7 +524,7 @@
         "sourceRefs": [
           {
             "path": "lore/characters/Core-Characters.json",
-            "anchor": "/content/40"
+            "anchor": "임하준-p2"
           }
         ]
       },
@@ -891,47 +891,23 @@
             "name": "박세린",
             "url": "/people/person-0090",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "펌프 부품 보관·출고 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/82/items/1/ko",
-                  "quote": "생업: 펌프 부품 보관·출고 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -939,111 +915,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/82/items/1/ko",
-                    "quote": "생업: 펌프 부품 보관·출고 관리"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/82/items/1/ko",
-                    "quote": "생업: 펌프 부품 보관·출고 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/82/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "운행 중단 역사",
-              "camp": {
-                "name": "박세린 폐역 야영지",
-                "type": "야영지",
-                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 35
+            }
           }
         }
       },
@@ -1066,47 +972,23 @@
             "name": "박세린",
             "url": "/people/person-0090",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "펌프 부품 보관·출고 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/82/items/1/ko",
-                  "quote": "생업: 펌프 부품 보관·출고 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -1114,111 +996,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/82/items/1/ko",
-                    "quote": "생업: 펌프 부품 보관·출고 관리"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/82/items/1/ko",
-                    "quote": "생업: 펌프 부품 보관·출고 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/82/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "운행 중단 역사",
-              "camp": {
-                "name": "박세린 폐역 야영지",
-                "type": "야영지",
-                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 35
+            }
           }
         }
       }
@@ -1239,7 +1051,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -1295,15 +1106,15 @@
     "욕망": "갈망 −5 | 독점 −30 | 위험 −35 | 과시 −25 | 지속 0 | 지향 이성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 펌프기술가문 대행 자리는 탈선 직전 결함 보고로 열렸다.",
+    "생애": "2126년 세대. 박세린은 신정 차량기지에서 자랐다. 박세린은 탈선 직전 결함 보고로 펌프기술가문 대행 자리를 맡았다.\n- 박세린의 펌프기술가문 대행 업무는 성수2가3동과 연결된다.",
     "관직": "품계 교사. 직함은 펌프기술가문 대행. 가문 공방의 핵심 나사를 별도 창고에 두고, 평의회 연서가 있어도 가문 원로의 도장이 없으면 출고하지 않는다.",
-    "일화": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 펌프기술가문 대행 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 박세린은 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 펌프기술가문 대행 자리의 서명이 장부에 올랐다.",
     "관계": "임하준의 친족 공정을 지키는 후견을 자처하고, 한소미와는 후계 원한이며, 배우진이 동방사 명목 후보로 가문을 부를 때 유혹과 공포를 동시에 느낀다.",
     "야망": "임하준의 혈연 가까운 공정을 가문 원장으로 되찾아, 양자가 아닌 기술가문이 다음 총관을 지명하게 한다.",
-    "공포": "임초원이 마곡의 제자로만 인정받아 뚝섬의 펌프 주권이 공동기술원장에 흡수되는 것.",
+    "공포": "박세린은 임초원이 마곡의 제자로만 인정받아 뚝섬의 펌프 주권이 공동기술원장에 흡수되는 상황을 두려워한다.",
     "개입": "가문 키의 진위를 감정해 대행의 해석권을 세우거나, 별도 창고의 밀반출을 폭로해 가문 지명을 실격시킬 수 있다."
   },
-  "biography": "신중하고 예의를 지키지만 가문의 공구 일련번호를 계약보다 오래 믿는다. 공개 설계를 도둑질로 부르는 버릇이 있다.\n\n- 소속: 명부교회\n- 생업: 펌프 부품 보관·출고 관리\n- 품계: 교사\n- 직함: 펌프기술가문 대행\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 펌프기술가문 대행 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 펌프기술가문 대행. 가문 공방의 핵심 나사를 별도 창고에 두고, 평의회 연서가 있어도 가문 원로의 도장이 없으면 출고하지 않는다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 펌프기술가문 대행 자리의 서명이 장부에 올랐다.\n\n**관계.** 임하준의 친족 공정을 지키는 후견을 자처하고, 한소미와는 후계 원한이며, 배우진이 동방사 명목 후보로 가문을 부를 때 유혹과 공포를 동시에 느낀다.\n\n**야망.** 임하준의 혈연 가까운 공정을 가문 원장으로 되찾아, 양자가 아닌 기술가문이 다음 총관을 지명하게 한다.\n\n**공포.** 임초원이 마곡의 제자로만 인정받아 뚝섬의 펌프 주권이 공동기술원장에 흡수되는 것.\n\n**개입.** 가문 키의 진위를 감정해 대행의 해석권을 세우거나, 별도 창고의 밀반출을 폭로해 가문 지명을 실격시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 10 | 무력 −20 | 물질 35 | 공동 20 | 원칙 5 | 공개 −20 | 자격 55 | 분산 30 | 변혁 5\n- 욕망: 갈망 −5 | 독점 −30 | 위험 −35 | 과시 −25 | 지속 0 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "신중하고 예의를 지키지만 가문의 공구 일련번호를 계약보다 오래 믿는다. 공개 설계를 도둑질로 부르는 버릇이 있다.\n\n- 소속: 명부교회\n- 생업: 펌프 부품 보관·출고 관리\n- 품계: 교사\n- 직함: 펌프기술가문 대행\n**생애.** 2126년 세대. 박세린은 신정 차량기지에서 자랐다. 박세린은 탈선 직전 결함 보고로 펌프기술가문 대행 자리를 맡았다.\n- 박세린의 펌프기술가문 대행 업무는 성수2가3동과 연결된다.\n\n**관직.** 품계 교사. 직함은 펌프기술가문 대행. 가문 공방의 핵심 나사를 별도 창고에 두고, 평의회 연서가 있어도 가문 원로의 도장이 없으면 출고하지 않는다.\n\n**일화.** 2125년 박세린은 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 펌프기술가문 대행 자리의 서명이 장부에 올랐다.\n\n**관계.** 임하준의 친족 공정을 지키는 후견을 자처하고, 한소미와는 후계 원한이며, 배우진이 동방사 명목 후보로 가문을 부를 때 유혹과 공포를 동시에 느낀다.\n\n**야망.** 임하준의 혈연 가까운 공정을 가문 원장으로 되찾아, 양자가 아닌 기술가문이 다음 총관을 지명하게 한다.\n\n**공포.** 박세린은 임초원이 마곡의 제자로만 인정받아 뚝섬의 펌프 주권이 공동기술원장에 흡수되는 상황을 두려워한다.\n\n**개입.** 가문 키의 진위를 감정해 대행의 해석권을 세우거나, 별도 창고의 밀반출을 폭로해 가문 지명을 실격시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 10 | 무력 −20 | 물질 35 | 공동 20 | 원칙 5 | 공개 −20 | 자격 55 | 분산 30 | 변혁 5\n- 욕망: 갈망 −5 | 독점 −30 | 위험 −35 | 과시 −25 | 지속 0 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-04"
   ],

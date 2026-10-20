@@ -3,19 +3,33 @@ import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { regionalLineGraph } from './regional-line-graph.mjs'
 
-test('published regional graph preserves every resolved ordinary pair and reports every unresolved pair', async () => {
+test('private regional graph preserves every resolved ordinary pair and reports every unresolved pair', async () => {
   const json = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'))
   const source = await json('../lore/places/regular-line-adjacency.json')
   const bindings = await json('../lore/places/regional-station-bindings.json')
-  const seoul = await json('../public/opening-territories.json')
-  const published = await json('../public/regular-regional-connections.json')
+  const seoul = await json('../snapshots/build-inputs/SeoulWorldGraph.json')
+  // This is a private schematic coordinate plane; only code-to-ID adjacency is
+  // under test. Geographic clipping belongs to the authenticated map projector.
+  const stations = seoul.stations.map(({ id, lon, lat }) => ({ id, x: lon, y: lat }))
   for (const binding of bindings.bindings) {
     const records = source.lines.flatMap((line) => line.paths.flat().filter((station) => station.code === binding.stationCode).map((station) => ({ station, lineId: line.id === '1-GA-1' ? '1-GA' : line.id })))
     assert.ok(records.some(({ station, lineId }) => station.name === binding.officialName && station.uid === binding.interchangeUid && lineId === binding.lineId), binding.stationCode)
   }
-  const expected = regionalLineGraph(source, bindings, seoul.stations)
-  assert.deepEqual(published.edges, expected.edges)
-  assert.deepEqual(published.unresolved, expected.unresolved)
+  const published = regionalLineGraph(source, bindings, stations)
+  const endpointId = code => source.stationIdsByCode[code] ?? (() => {
+    const binding = bindings.bindings.find(item => item.stationCode === code)
+    return binding ? `official:${binding.interchangeUid}` : null
+  })()
+  const expectedPairs = new Set()
+  const unresolved = []
+  for (const line of source.lines) for (const path of line.paths) for (let i = 1; i < path.length; i += 1) {
+    const lineId = line.id === '1-GA-1' ? '1-GA' : line.id
+    const a = endpointId(path[i - 1].code), b = endpointId(path[i].code)
+    if (!a || !b) unresolved.push({ lineId, codes: [path[i - 1].code, path[i].code] })
+    else if (a !== b) expectedPairs.add(`${lineId}/${[a, b].sort().join('~')}`)
+  }
+  assert.deepEqual(new Set(published.edges.map(edge => edge.id)), expectedPairs)
+  assert.deepEqual(published.unresolved, unresolved)
   assert.deepEqual(published.unresolved, [])
   assert.equal(new Set(published.edges.map((edge) => edge.id)).size, published.edges.length)
   const sinchon = published.edges.filter((edge) => [edge.a.id, edge.b.id].includes('official:1252'))

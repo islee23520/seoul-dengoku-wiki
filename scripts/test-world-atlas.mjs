@@ -69,6 +69,75 @@ test('renderer returns the exact 34 canonical JSON destinations', () => {
   }
 })
 
+test('owned atlas anchors survive unrelated insertions and deletions without duplicate projection IDs', () => {
+  const page = 'Operating-Houses.json'
+  const original = projections[page]
+  const owned = atlas.houses[0].prose
+  const surviving = owned[1]
+  const originalBlock = original.content.find((node) => node.anchor === surviving.anchor)
+  assert.deepEqual(originalBlock.text, surviving.text)
+
+  for (const edit of ['insert', 'delete']) {
+    const changed = structuredClone(source)
+    const prose = changed.data.atlas.houses[0].prose
+    if (edit === 'insert') prose.splice(1, 0, {
+      kind: 'paragraph', anchor: 'wna-houses-fixture-unrelated',
+      text: { en: 'An unrelated note.', ko: '무관한 기록.' },
+    })
+    else prose.splice(0, 1)
+    const rendered = projectionsFromAtlas(changed, 'fixture-hash')[page]
+    const actual = rendered.content.find((node) => node.anchor === surviving.anchor)
+    assert.deepEqual(actual.text, originalBlock.text, edit)
+    assert.equal(rendered.content.filter((node) => node.anchor === surviving.anchor).length, 1, edit)
+    const ids = rendered.content.flatMap((node) => [node.anchor, ...(node.publicAnchors ?? [])])
+    assert.equal(ids.length, new Set(ids).size, edit)
+  }
+})
+
+test('synthetic titles append only missing locale callsigns without changing heading identities', () => {
+  const page = 'Synthetic-Actors.json'
+  const identity = (document) => document.content.filter(node => node.kind === 'heading')
+    .map(({ anchor, publicAnchors }) => ({ anchor, publicAnchors }))
+  const cases = [
+    { en: 'Fixture', ko: '시험' },
+    { en: 'Fixture (Signal)', ko: '시험 (신호)' },
+    { en: 'Fixture (Signal)', ko: '시험' },
+    { en: 'Fixture', ko: '시험 (신호)' },
+    { en: 'Fixture (Other)', ko: '시험 (다름)' },
+    { en: 'Fixture (Signal) duty', ko: '시험 (신호) 업무' },
+  ]
+  for (const displayName of cases) {
+    const changed = structuredClone(source)
+    const actor = changed.data.atlas.synthetics[0]
+    actor.display_name = displayName
+    actor.callsign = { en: 'Signal', ko: '신호' }
+    const rendered = projectionsFromAtlas(changed, 'fixture-hash')[page]
+    const heading = rendered.content.find(node => node.anchor === `Synthetic-Actors-generated-${actor.id}-title-heading-1`)
+    for (const locale of ['en', 'ko']) {
+      const suffix = ` (${actor.callsign[locale]})`
+      const expected = displayName[locale].endsWith(suffix) ? displayName[locale] : displayName[locale] + suffix
+      assert.equal(heading.text[locale], `${actor.id} · ${expected}`)
+      const markdown = renderLoreMarkdown(rendered, locale)
+      assert.ok(markdown.includes(`## ${actor.id} · ${expected}`))
+      for (const alias of [heading.anchor, ...heading.publicAnchors]) assert.ok(markdown.includes(`<a id="${alias}"></a>`))
+    }
+    assert.deepEqual(identity(rendered), identity(projections[page]))
+  }
+})
+
+test('owned headings retain the existing reader alias alongside their source identity', () => {
+  const entry = Object.values(atlas.monster_contents).flatMap((batch) => batch.entries).find((item) => item.prose.some((node) => node.kind === 'heading'))
+  const heading = entry.prose.find((node) => node.kind === 'heading')
+  const page = projections[`bestiary/groups/Hostile-Group-${entry.group_id}.json`]
+  const projected = page.content.find((node) => node.anchor === heading.anchor)
+  assert.ok(projected.publicAnchors.some((id) => /^Hostile-Group-G\d+-heading-\d+$/u.test(id)))
+  for (const locale of ['ko', 'en']) {
+    const markdown = renderLoreMarkdown(page, locale)
+    assert.ok(markdown.includes(`<a id="${heading.anchor}"></a>`), locale)
+    assert.ok(markdown.includes(`<a id="${projected.publicAnchors[0]}"></a>`), locale)
+  }
+})
+
 test('published house bodies omit private source classification in both locales', async () => {
   // Given: the atlas's 32 houses and their derived projection still carry private provenance.
   const houses = atlas.houses
@@ -82,7 +151,20 @@ test('published house bodies omit private source classification in both locales'
   // When: the actual catalog consumer emits both localized public articles.
   for (const folder of ['world', 'world-en']) {
     const locale = folder === 'world' ? 'ko' : 'en'
-    const page = JSON.parse(await readFile(join(worktree, `src/generated/${folder}/Operating-Houses.json`), 'utf8'))
+    const published = JSON.parse(await readFile(join(worktree, `src/generated/${folder}/Operating-Houses.json`), 'utf8'))
+    // Render the changed projection through the real publication normalization without writing generated data.
+    const localized = localizedDocuments({
+      domain: 'world', slug: projection.slug, json: projection,
+      renderJson: (document, language) => renderLoreMarkdown(publicHouseContent(document), language),
+    }).find((item) => item.locale === locale)
+    const page = {
+      ...published,
+      route: localized.route,
+      reviewText: localized.markdown,
+      blocks: fromMarkdown(localized.markdown.replace(/^#\s+.+\n+/m, ''), {
+        extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()],
+      }).children,
+    }
     const reader = JSON.stringify(page.blocks)
     // Then: only the known metadata item is absent; all other structured content survives.
     assert.ok(!reader.includes('original-fiction'), folder)
@@ -101,7 +183,7 @@ test('published house bodies omit private source classification in both locales'
       const { position: _position, ...rest } = node
       return { ...rest, ...(node.children ? { children: node.children.map(withoutPositions) } : {}) }
     }
-    assert.deepEqual(page.blocks, expectedBlocks.map(withoutPositions), folder)
+    assert.deepEqual(page.blocks.map(withoutPositions), expectedBlocks.map(withoutPositions), folder)
     const html = renderToStaticMarkup(createElement(DocumentContent, { content: fromWikiBlocks(page.blocks), locale }))
     const rendered = new JSDOM(html).window.document
     assert.equal(page.route, locale === 'ko' ? '/world/Operating-Houses' : '/en/world/Operating-Houses')
@@ -298,4 +380,45 @@ test('check reports stale, missing, unexpected, misplaced and Markdown twins tog
 
 test('materializer rejects paths outside the projection vocabulary', async () => {
   await assert.rejects(materializeWorldAtlas({ atlasPath: candidatePath, outDir: evidenceRoot, projection: '../World-Narrative-Atlas.json' }), /E_PROJECTION_NAME/)
+})
+
+test('generated headings and their published aliases survive unrelated owned prose edits', () => {
+  const original = projections['Operating-Houses.json']
+  const target = original.content.find((node) => node.kind === 'heading' && node.depth === 3)
+  for (const edit of ['insert', 'delete']) {
+    const changed = structuredClone(source)
+    const prose = changed.data.atlas.houses[0].prose
+    if (edit === 'insert') prose.unshift({ kind: 'paragraph', anchor: 'wna-fixture-earlier', text: { en: 'Earlier note.', ko: '앞선 기록.' } })
+    else prose.shift()
+    const actual = projectionsFromAtlas(changed, 'fixture-hash')['Operating-Houses.json'].content.find((node) => node.kind === 'heading' && node.depth === 3)
+    assert.equal(actual.anchor, target.anchor, edit)
+    assert.deepEqual(actual.publicAnchors, target.publicAnchors, edit)
+  }
+})
+
+test('historical index heading coordinate belongs to its historical scenario, not the reflow occupant', () => {
+  const page = projections['bestiary/Hostile-Ecology-Index.json']
+  const historical = page.content.find((node) => node.publicAnchors?.includes('Hostile-Ecology-Index-heading-0254'))
+  assert.ok(historical)
+  assert.match(historical.text.en, /^G06-SC2 /u)
+  assert.equal(historical.anchor, 'Hostile-Ecology-Index-generated-G06-SC2-title-heading-1')
+  const occupant = page.content.find((node) => node.text?.en?.startsWith?.('G06-SC3 '))
+  assert.ok(!occupant.publicAnchors?.includes('Hostile-Ecology-Index-heading-0254'))
+})
+
+test('renamed scenario preserves published natural fragments and current structured aliases', () => {
+  const changed = structuredClone(source)
+  const group = changed.data.atlas.hostile_groups.find((item) => item.id === 'G07')
+  group.scenario_outlines[2].title = { en: 'The Dangsan Cold Handover Compartment', ko: '당산 냉동 인계 칸' }
+  const page = projectionsFromAtlas(changed, 'fixture-hash')['bestiary/groups/Hostile-Group-G07.json']
+  const heading = page.content.find((node) => node.text?.en?.startsWith?.('G07-SC3 '))
+  for (const id of ['g07-sc3-서해곡창-냉동-칸', 'g07-sc3-당산-냉동-인계-칸']) assert.ok(heading.publicAnchors.includes(id), id)
+  for (const locale of ['ko', 'en']) assert.ok(renderLoreMarkdown(page, locale).includes('<a id="g07-sc3-서해곡창-냉동-칸"></a>'), locale)
+})
+
+test('renderer rejects a source alias that steals a different heading identity', () => {
+  const changed = structuredClone(source)
+  const entry = Object.values(changed.data.atlas.monster_contents).flatMap((batch) => batch.entries).find((item) => item.prose.some((node) => node.kind === 'heading'))
+  entry.prose.find((node) => node.kind === 'heading').publicAnchors = ['Hostile-Group-G01-heading-0001']
+  assert.throws(() => projectionsFromAtlas(changed, 'fixture-hash'), /E_ATLAS_RENDER: duplicate anchor/u)
 })

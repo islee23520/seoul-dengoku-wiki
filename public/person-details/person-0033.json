@@ -560,47 +560,23 @@
             "name": "박소언",
             "url": "/people/person-0033",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/16/items/1/ko",
-                  "quote": "생업: 대합실 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -608,90 +584,35 @@
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/16/items/1/ko",
-                    "quote": "생업: 대합실 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 11
+                "level": 11,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 32,
-              "unspent": 43,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "운행 중단 역사",
-              "camp": {
-                "name": "박소언 폐역 야영지",
-                "type": "야영지",
-                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 43
+            }
           }
         }
       },
@@ -714,47 +635,23 @@
             "name": "박소언",
             "url": "/people/person-0033",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/16/items/1/ko",
-                  "quote": "생업: 대합실 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -762,307 +659,53 @@
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/16/items/1/ko",
-                    "quote": "생업: 대합실 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 11
+                "level": 11,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 32,
-              "unspent": 43,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "운행 중단 역사",
-              "camp": {
-                "name": "박소언 폐역 야영지",
-                "type": "야영지",
-                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 43
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [],
-  "subordinateHoldings": [
-    {
-      "id": "holding:opening-barony-gu-41171-S02",
-      "name": {
-        "ko": "만안구 남작령 직영지"
-      },
-      "holderPersonId": "K473",
-      "directLiegePersonId": "K033",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4117151000",
-          "name": "경기도 안양시만안구 안양1동"
-        },
-        {
-          "id": "4117152000",
-          "name": "경기도 안양시만안구 안양2동"
-        },
-        {
-          "id": "4117153000",
-          "name": "경기도 안양시만안구 안양3동"
-        },
-        {
-          "id": "4117154000",
-          "name": "경기도 안양시만안구 안양4동"
-        },
-        {
-          "id": "4117155000",
-          "name": "경기도 안양시만안구 안양5동"
-        },
-        {
-          "id": "4117156000",
-          "name": "경기도 안양시만안구 안양6동"
-        },
-        {
-          "id": "4117157000",
-          "name": "경기도 안양시만안구 안양7동"
-        },
-        {
-          "id": "4117158200",
-          "name": "경기도 안양시만안구 명학동"
-        },
-        {
-          "id": "4117158300",
-          "name": "경기도 안양시만안구 병목안동"
-        },
-        {
-          "id": "4117159000",
-          "name": "경기도 안양시만안구 석수1동"
-        },
-        {
-          "id": "4117160000",
-          "name": "경기도 안양시만안구 석수2동"
-        },
-        {
-          "id": "4117161100",
-          "name": "경기도 안양시만안구 충훈동"
-        },
-        {
-          "id": "4117164000",
-          "name": "경기도 안양시만안구 박달동"
-        },
-        {
-          "id": "4117165000",
-          "name": "경기도 안양시만안구 호현동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41171-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "한현우",
-      "holderRoute": "/people/person-0473"
-    },
-    {
-      "id": "holding:opening-barony-gu-41173-S02",
-      "name": {
-        "ko": "동안구 남작령 직영지"
-      },
-      "holderPersonId": "K473",
-      "directLiegePersonId": "K033",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4117351000",
-          "name": "경기도 안양시동안구 비산1동"
-        },
-        {
-          "id": "4117352000",
-          "name": "경기도 안양시동안구 비산2동"
-        },
-        {
-          "id": "4117353000",
-          "name": "경기도 안양시동안구 비산3동"
-        },
-        {
-          "id": "4117354000",
-          "name": "경기도 안양시동안구 부흥동"
-        },
-        {
-          "id": "4117354600",
-          "name": "경기도 안양시동안구 달안동"
-        },
-        {
-          "id": "4117355200",
-          "name": "경기도 안양시동안구 관양동"
-        },
-        {
-          "id": "4117355900",
-          "name": "경기도 안양시동안구 인덕원동"
-        },
-        {
-          "id": "4117356600",
-          "name": "경기도 안양시동안구 부림동"
-        },
-        {
-          "id": "4117357000",
-          "name": "경기도 안양시동안구 평촌동"
-        },
-        {
-          "id": "4117357600",
-          "name": "경기도 안양시동안구 평안동"
-        },
-        {
-          "id": "4117357800",
-          "name": "경기도 안양시동안구 귀인동"
-        },
-        {
-          "id": "4117358000",
-          "name": "경기도 안양시동안구 호계1동"
-        },
-        {
-          "id": "4117359000",
-          "name": "경기도 안양시동안구 호계2동"
-        },
-        {
-          "id": "4117360000",
-          "name": "경기도 안양시동안구 호계3동"
-        },
-        {
-          "id": "4117361000",
-          "name": "경기도 안양시동안구 범계동"
-        },
-        {
-          "id": "4117362000",
-          "name": "경기도 안양시동안구 신촌동"
-        },
-        {
-          "id": "4117363000",
-          "name": "경기도 안양시동안구 갈산동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41173-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "한현우",
-      "holderRoute": "/people/person-0473"
-    }
-  ],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41170-S02",
-      "name": "안양시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K033",
-      "basis": "개막 행정 규모 그룹 41170(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "4117151000",
-        "4117152000",
-        "4117153000",
-        "4117154000",
-        "4117155000",
-        "4117156000",
-        "4117157000",
-        "4117158200",
-        "4117158300",
-        "4117159000",
-        "4117160000",
-        "4117161100",
-        "4117164000",
-        "4117165000",
-        "4117351000",
-        "4117352000",
-        "4117353000",
-        "4117354000",
-        "4117354600",
-        "4117355200",
-        "4117355900",
-        "4117356600",
-        "4117357000",
-        "4117357600",
-        "4117357800",
-        "4117358000",
-        "4117359000",
-        "4117360000",
-        "4117361000",
-        "4117362000",
-        "4117363000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "politicalParentTitleId": "title:kingdom-s02",
+      "personalLieges": [],
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -1077,7 +720,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -1129,11 +771,12 @@
     "생업": "대합실 당직",
     "품계": "이사",
     "직함": "구로 건물조합 대표",
+    "업무 위치": "구로3동. 박소언은 구로3동 건물조합의 지붕과 민가 전력 수리 신청을 모아 추첨 순서를 밝힌다. 최다인이 공병을 먼저 차출하려 하면 다음 교대가 쓸 자재를 따로 적고 한지온의 저수조 배급표를 보고 낙찰 공방의 작업 순서를 정한다.",
     "가치관": "권위 −55 | 개방 15 | 무력 −5 | 물질 35 | 공동 40 | 원칙 0 | 공개 30 | 자격 45 | 분산 40 | 변혁 15",
     "욕망": "갈망 40 | 독점 −40 | 위험 30 | 과시 −20 | 지속 −15 | 지향 무성향 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 구로 건물조합 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 구로 건물조합 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로3동. 박소언은 구로3동 건물조합의 지붕과 민가 전력 수리 신청을 모아 추첨 순서를 밝힌다. 최다인이 공병을 먼저 차출하려 하면 다음 교대가 쓸 자재를 따로 적고 한지온의 저수조 배급표를 보고 낙찰 공방의 작업 순서를 정한다.",
     "관직": "품계 이사. 직함은 구로 건물조합 대표. 전력 장치와 펌프 설치를 건물 단위로 공개 입찰하고, 낙찰 공방은 숙련 점수를 노동조합과 공유해야 한다.",
     "일화": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 구로 건물조합 대표 자리의 서명이 장부에 올랐다.",
     "관계": "강민서의 공정 분할을 건물 쪽에서 받쳐 주는 동맹이고, 한지온의 원수 배급표에 의존하며, 최다인의 공병 차출이 지붕 공사를 빼앗을 때 충돌한다.",
@@ -1141,7 +784,7 @@
     "공포": "자체 원수가 끊긴 뒤 건물 저수조가 마르면 조합원이 수문국 급수계약의 볼모가 되는 것.",
     "개입": "대체 저수 펌프를 구해 봉인을 풀거나, 입찰 담합 장부를 폭로해 조합 추첨을 다시 열 수 있다."
   },
-  "biography": "실리를 즐기되 지붕과 전력 간선의 안전을 흥정거리로 삼지 않는다. 숙련공보다 거주 표를 얕보는 사람을 오래 기억한다.\n\n- 소속: 규격맹\n- 생업: 대합실 당직\n- 품계: 이사\n- 직함: 구로 건물조합 대표\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구로 건물조합 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 이사. 직함은 구로 건물조합 대표. 전력 장치와 펌프 설치를 건물 단위로 공개 입찰하고, 낙찰 공방은 숙련 점수를 노동조합과 공유해야 한다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 구로 건물조합 대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 강민서의 공정 분할을 건물 쪽에서 받쳐 주는 동맹이고, 한지온의 원수 배급표에 의존하며, 최다인의 공병 차출이 지붕 공사를 빼앗을 때 충돌한다.\n\n**야망.** 공방 건물과 주거 쉘의 수리 순서를 조합 추첨으로 고정해, 군수 작업반이 민가 전력을 선점하지 못하게 한다.\n\n**공포.** 자체 원수가 끊긴 뒤 건물 저수조가 마르면 조합원이 수문국 급수계약의 볼모가 되는 것.\n\n**개입.** 대체 저수 펌프를 구해 봉인을 풀거나, 입찰 담합 장부를 폭로해 조합 추첨을 다시 열 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −55 | 개방 15 | 무력 −5 | 물질 35 | 공동 40 | 원칙 0 | 공개 30 | 자격 45 | 분산 40 | 변혁 15\n- 욕망: 갈망 40 | 독점 −40 | 위험 30 | 과시 −20 | 지속 −15 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "실리를 즐기되 지붕과 전력 간선의 안전을 흥정거리로 삼지 않는다. 숙련공보다 거주 표를 얕보는 사람을 오래 기억한다.\n\n- 소속: 규격맹\n- 생업: 대합실 당직\n- 품계: 이사\n- 직함: 구로 건물조합 대표\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구로 건물조합 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로3동. 박소언은 구로3동 건물조합의 지붕과 민가 전력 수리 신청을 모아 추첨 순서를 밝힌다. 최다인이 공병을 먼저 차출하려 하면 다음 교대가 쓸 자재를 따로 적고 한지온의 저수조 배급표를 보고 낙찰 공방의 작업 순서를 정한다.\n\n**관직.** 품계 이사. 직함은 구로 건물조합 대표. 전력 장치와 펌프 설치를 건물 단위로 공개 입찰하고, 낙찰 공방은 숙련 점수를 노동조합과 공유해야 한다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 구로 건물조합 대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 강민서의 공정 분할을 건물 쪽에서 받쳐 주는 동맹이고, 한지온의 원수 배급표에 의존하며, 최다인의 공병 차출이 지붕 공사를 빼앗을 때 충돌한다.\n\n**야망.** 공방 건물과 주거 쉘의 수리 순서를 조합 추첨으로 고정해, 군수 작업반이 민가 전력을 선점하지 못하게 한다.\n\n**공포.** 자체 원수가 끊긴 뒤 건물 저수조가 마르면 조합원이 수문국 급수계약의 볼모가 되는 것.\n\n**개입.** 대체 저수 펌프를 구해 봉인을 풀거나, 입찰 담합 장부를 폭로해 조합 추첨을 다시 열 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −55 | 개방 15 | 무력 −5 | 물질 35 | 공동 40 | 원칙 0 | 공개 30 | 자격 45 | 분산 40 | 변혁 15\n- 욕망: 갈망 40 | 독점 −40 | 위험 30 | 과시 −20 | 지속 −15 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-02"
   ],

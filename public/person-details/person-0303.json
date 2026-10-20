@@ -552,52 +552,23 @@
             "name": "소두감",
             "url": "/people/person-0303",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유치선 배차표·정비 일지 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/105/items/0/ko",
-                  "quote": "생업: 유치선 배차표·정비 일지 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/107/text/ko",
-                    "quote": "의료열차에서 암사제 무기가 나오자 유치선 정비창을 봉쇄하고 출고 스위치를 잠갔다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -605,116 +576,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/105/items/0/ko",
-                    "quote": "생업: 유치선 배차표·정비 일지 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/107/text/ko",
-                    "quote": "의료열차에서 암사제 무기가 나오자 유치선 정비창을 봉쇄하고 출고 스위치를 잠갔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/105/items/0/ko",
-                    "quote": "생업: 유치선 배차표·정비 일지 대조"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/105/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "소두감 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S12 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       },
@@ -737,52 +633,23 @@
             "name": "소두감",
             "url": "/people/person-0303",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유치선 배차표·정비 일지 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/105/items/0/ko",
-                  "quote": "생업: 유치선 배차표·정비 일지 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/107/text/ko",
-                    "quote": "의료열차에서 암사제 무기가 나오자 유치선 정비창을 봉쇄하고 출고 스위치를 잠갔다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -790,116 +657,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/105/items/0/ko",
-                    "quote": "생업: 유치선 배차표·정비 일지 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/107/text/ko",
-                    "quote": "의료열차에서 암사제 무기가 나오자 유치선 정비창을 봉쇄하고 출고 스위치를 잠갔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/105/items/0/ko",
-                    "quote": "생업: 유치선 배차표·정비 일지 대조"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/105/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "소두감 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S12 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       }
@@ -920,7 +712,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -976,15 +767,15 @@
     "욕망": "갈망 15 | 독점 30 | 위험 −35 | 과시 −25 | 지속 20 | 지향 동성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 유치선 정비사, 안도한의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.",
+    "생애": "2101-11-10에 태어났다. 신정 차량기지에서 자랐다. 2126년 개막에는 유치선 정비사, 안도한의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 탈선 직전 결함 보고로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 소두감의 유치선 배차표·정비 일지 대조 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
     "관직": "품계 호송원. 직함은 유치선 정비사, 안도한의 실무 담당자. 배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다.",
     "일화": "의료열차에서 암사제 무기가 나오자 유치선 정비창을 봉쇄하고 출고 스위치를 잠갔다.",
     "관계": "안도한의 배차 실무를 유치선에서 받고, 국소의 기지 당직과 공구를 나눈다. 이홍원의 북부 차륜 교환 시각에 맞춰 연결기를 손본다.",
-    "야망": "신내 기지 유치선의 정비를 배차조 단독이 아니라 정비 서명과 함께 열어, 중립 호송 약정의 실제 시각표를 현장 공구로 지탱한다.",
+    "야망": "신내 기지 유치선의 정비를 배차조 단독이 아니라 정비 서명과 함께 열어, 중립 호송 약정의 실제 시각표를 현장 공구로 지탱하려 한다.",
     "공포": "정비 안 된 칸이 의료열차로 나가 신내운수가 창동과 암사 사이 하역장으로 떨어지는 것.",
     "개입": "봉쇄된 유치선의 실제 화물을 확인하거나, 정비 서명을 위조한 출고를 폭로할 수 있다."
   },
-  "biography": "시각표의 빈칸을 참지 못하고, 제동과 연결기를 건너뛴 출고를 모욕처럼 기억한다. 말단 노선의 지연을 정치 순위로 포장하는 말을 거부한다.\n\n- 생업: 유치선 배차표·정비 일지 대조\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 유치선 정비사, 안도한의 실무 담당자\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 유치선 정비사, 안도한의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 호송원. 직함은 유치선 정비사, 안도한의 실무 담당자. 배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다.\n\n**일화.** 의료열차에서 암사제 무기가 나오자 유치선 정비창을 봉쇄하고 출고 스위치를 잠갔다.\n\n**관계.** 안도한의 배차 실무를 유치선에서 받고, 국소의 기지 당직과 공구를 나눈다. 이홍원의 북부 차륜 교환 시각에 맞춰 연결기를 손본다.\n\n**야망.** 신내 기지 유치선의 정비를 배차조 단독이 아니라 정비 서명과 함께 열어, 중립 호송 약정의 실제 시각표를 현장 공구로 지탱한다.\n\n**공포.** 정비 안 된 칸이 의료열차로 나가 신내운수가 창동과 암사 사이 하역장으로 떨어지는 것.\n\n**개입.** 봉쇄된 유치선의 실제 화물을 확인하거나, 정비 서명을 위조한 출고를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −25 | 물질 15 | 공동 20 | 원칙 5 | 공개 30 | 자격 30 | 분산 40 | 변혁 −5\n- 욕망: 갈망 15 | 독점 30 | 위험 −35 | 과시 −25 | 지속 20 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "2101-11-10생인 소두감은 시각표의 빈칸을 참지 못하고, 제동과 연결기를 건너뛴 출고를 모욕처럼 기억한다. 말단 노선의 지연을 정치 순위로 포장하는 말을 거부한다.\n\n- 생업: 유치선 배차표·정비 일지 대조\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 유치선 정비사, 안도한의 실무 담당자\n**생애.** 2101-11-10에 태어났다. 신정 차량기지에서 자랐다. 2126년 개막에는 유치선 정비사, 안도한의 실무 담당자 당직을 맡으며, 직위 인수 기록에는 탈선 직전 결함 보고로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 소두감의 유치선 배차표·정비 일지 대조 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 유치선 정비사, 안도한의 실무 담당자. 배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다.\n\n**일화.** 의료열차에서 암사제 무기가 나오자 유치선 정비창을 봉쇄하고 출고 스위치를 잠갔다.\n\n**관계.** 안도한의 배차 실무를 유치선에서 받고, 국소의 기지 당직과 공구를 나눈다. 이홍원의 북부 차륜 교환 시각에 맞춰 연결기를 손본다.\n\n**야망.** 신내 기지 유치선의 정비를 배차조 단독이 아니라 정비 서명과 함께 열어, 중립 호송 약정의 실제 시각표를 현장 공구로 지탱하려 한다.\n\n**공포.** 정비 안 된 칸이 의료열차로 나가 신내운수가 창동과 암사 사이 하역장으로 떨어지는 것.\n\n**개입.** 봉쇄된 유치선의 실제 화물을 확인하거나, 정비 서명을 위조한 출고를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −25 | 물질 15 | 공동 20 | 원칙 5 | 공개 30 | 자격 30 | 분산 40 | 변혁 −5\n- 욕망: 갈망 15 | 독점 30 | 위험 −35 | 과시 −25 | 지속 20 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-12"
   ],

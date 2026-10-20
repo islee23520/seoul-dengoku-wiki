@@ -8,10 +8,58 @@ import { fileURLToPath } from 'node:url';
 import { test } from 'node:test';
 import { applySchema, openReadOnly, openWritableNew } from './db.mjs';
 import { buildCastDatabase } from './build.mjs';
+import { CONTEXT_TABLE_COLUMNS, mapContextDomains } from './current-context.mjs';
+import { RIGHTS_PATHS } from './current-rights.mjs';
+import { HISTORICAL_CONTEXT_TABLE_COLUMNS, mapHistoricalContext } from './historical-context.mjs';
+import { mapIdentityDomains } from './identity-values.mjs';
+import { parseDocument } from './sources.mjs';
 import * as query from './query.mjs';
 
 const cli = fileURLToPath(new URL('./query.mjs', import.meta.url));
 const digest = (path) => createHash('sha256').update(readFileSync(path)).digest('hex');
+
+function rightsFixture(t) {
+  const root = fileURLToPath(new URL('../..', import.meta.url));
+  const offices = JSON.parse(readFileSync(join(root, 'lore/relations/opening-office-appointments.json'), 'utf8'));
+  const paths = [...new Set([
+    ...Object.values(RIGHTS_PATHS),
+    ...['person-id-registry', 'values-cast', 'gender-cast', 'cast-hangnyeol', 'clan-hangnyeol-tables', 'gurps-cast'].map((name) => `lore/name-pools/${name}.json`),
+    'lore/relations/relations.json', 'lore/relations/personal-holdings.json', 'lore/relations/opening-office-appointments.json',
+    'lore/name-pools/cast-prose-contacts.json', 'lore/regions/seoul-electoral-titles.json',
+    ...offices.appointments.flatMap((row) => row.current.evidence.map((ref) => ref.path)),
+  ])];
+  const bundle = { files: paths.map((logical_path, index) => {
+    const raw_bytes = readFileSync(join(root, logical_path));
+    return { source_id: index + 1, logical_path, raw_bytes, byte_length: raw_bytes.length,
+      sha256: createHash('sha256').update(raw_bytes).digest('hex'), ...parseDocument(raw_bytes.toString('utf8')) };
+  }) };
+  bundle.records = bundle.files.flatMap((file) => file.records.map((record) => ({ source_id: file.source_id, ...record })));
+  const identity = mapIdentityDomains(bundle);
+  const current = mapContextDomains({ bundle, identity });
+  const historical = mapHistoricalContext({ bundle, identity });
+  const directory = mkdtempSync(join(tmpdir(), 'cast-query-rights-'));
+  const dbPath = join(directory, 'rights.sqlite');
+  const db = openWritableNew(dbPath);
+  t.after(() => { if (db.isOpen) db.close(); rmSync(directory, { recursive: true }); });
+  applySchema(db);
+  const insert = (table, row) => db.prepare(`INSERT INTO ${table} (${Object.keys(row).join(',')}) VALUES (${Object.keys(row).map(() => '?').join(',')})`).run(...Object.values(row));
+  db.exec('BEGIN');
+  for (const row of identity.states) insert('state', row);
+  for (const row of identity.stateLabels) insert('state_label', row);
+  for (const row of identity.people) insert('person', row);
+  for (const file of bundle.files) {
+    insert('source_file', { source_id: file.source_id, logical_path: file.logical_path, media_type: 'application/json', sha256: file.sha256, byte_length: file.byte_length, raw_bytes: file.raw_bytes });
+  }
+  for (const record of bundle.records) insert('source_record', record);
+  for (const [columns, tables] of [[CONTEXT_TABLE_COLUMNS, current], [HISTORICAL_CONTEXT_TABLE_COLUMNS, historical]]) {
+    for (const [table, names] of Object.entries(columns)) for (const row of tables[table]) insert(table, Object.fromEntries(names.map((name) => [name, row[name]])));
+  }
+  db.exec('COMMIT');
+  assert.equal(db.prepare('PRAGMA integrity_check').get().integrity_check, 'ok');
+  assert.deepEqual(db.prepare('PRAGMA foreign_key_check').all(), []);
+  db.close();
+  return { dbPath, directory, identity, bundle, current };
+}
 
 function fixture(t) {
   const directory = mkdtempSync(join(tmpdir(), 'cast-query-'));
@@ -54,9 +102,6 @@ function fixture(t) {
   insert('household_court_retainer_source', { court_id: 'household-fixture', person_id: 'K001', source_row: 0, retainer_json_pointer: '/people/0', ordinal: 0, source_path: 'lore/name-pools/values-cast.json', source_anchor: '/people/0', source_id: 1, json_pointer: '/people/0' });
   insert('household_humanoid_context', { actor_id: 'H01', custodian_person_id: 'K088', steward_house_id: 'household-fixture', scope: 'fixture', assignment_action: 'recorded', source_id: 1, json_pointer: '/people/0' });
   insert('household_humanoid_context_source', { actor_id: 'H01', ordinal: 0, source_path: 'lore/name-pools/values-cast.json', source_anchor: '/people/0', source_id: 1, json_pointer: '/people/0' });
-  insert('context_holding', { holding_id: 'holding-current', name_ko: '서울 확인 보유', holder_person_id: 'K088', polity_id: 'polity:seoul', current_validity: 'current_seoul_evidenced', canon_status: 'current_seoul_evidenced', authority_date: '2026-10-13', authority_ref: 'fixture', source_schema: 'fixture', opening_year: 2126, source_id: 1, json_pointer: '/people/0' });
-  insert('context_holding', { holding_id: 'holding-superseded', name_ko: '외부 폐기 보유', holder_person_id: 'K088', polity_id: 'polity:daejeon', current_validity: 'superseded_outside_seoul', canon_status: 'superseded_outside_seoul', authority_date: '2026-10-13', authority_ref: 'fixture', source_schema: 'fixture', opening_year: 2126, source_id: 1, json_pointer: '/people/0' });
-  insert('context_holding', { holding_id: 'holding-unresolved', name_ko: '증거 미확인 보유', holder_person_id: 'K088', polity_id: 'polity:seoul', current_validity: 'unresolved', canon_status: 'unresolved', authority_date: '2026-10-13', authority_ref: 'fixture', source_schema: 'fixture', opening_year: 2126, source_id: 1, json_pointer: '/people/0' });
   insert('context_organization', { organization_id: 'O01', name: '현재 조직', source_anchor: 'fixture', catalog_status: 'current-catalog-input', source_id: 1, json_pointer: '/people/0' });
   insert('context_event_link', { event_id: 'event-1', person_id: 'K088', organization_id: 'O01', catalog_status: 'current-catalog-input', source_id: 1, json_pointer: '/people/0' });
   insert('context_polity', { polity_id: 'polity:daejeon', name_ko: '대전', sovereign_person_id: 'K088', territorial_scale: 'regional', formal_title: '옛 군주', formal_title_rank: 'old', office: 'old', authority_kind: 'person', authority_name: '선우', current_validity: 'superseded_outside_seoul', source_schema: 'fixture', opening_year: 2126, source_id: 1, json_pointer: '/people/0' });
@@ -121,6 +166,76 @@ test('provides the four read-only query API entry points', () => {
   for (const name of ['queryPerson', 'queryRelations', 'queryIssues', 'querySource']) assert.equal(typeof query[name], 'function', name);
 });
 
+test('authenticated schema five corpus separates retained holdings, nonowning scope, political context and office history', (t) => {
+  // Given: real approved source bytes mapped through authentication, with issued identities and routes.
+  const f = rightsFixture(t);
+  const beforeHash = digest(f.dbPath);
+  const beforeMtime = statSync(f.dbPath).mtimeMs;
+  // When: each person is queried through the public read-only API.
+  const results = f.identity.people.map((person) => query.queryPerson({ dbPath: f.dbPath, id: person.person_id }));
+  const person = (id) => results.find((row) => row.person.person_id === id);
+  // Then: no identity or route is regenerated, and rights categories remain distinct.
+  assert.equal(results.length, 1022);
+  assert.deepEqual(results.map(({ person: row }) => [row.person_id, row.public_route]), f.identity.people.map((row) => [row.person_id, row.public_route]));
+  assert.equal(results.reduce((sum, row) => sum + row.current.holdings.length, 0), 20);
+  assert.equal(results.reduce((sum, row) => sum + row.current.nonowning_rights.length, 0), 5);
+  assert.equal(results.reduce((sum, row) => sum + row.current.context.titles.length, 0), 42);
+  assert.equal(results.reduce((sum, row) => sum + row.current.context.grants.length, 0), 31);
+  assert.equal(results.reduce((sum, row) => sum + row.current.context.bindings.length, 0), 7);
+  assert.equal(results.reduce((sum, row) => sum + row.current.context.political_identities.length, 0), 158);
+  const nonowning = results.flatMap((row) => row.current.nonowning_rights);
+  assert.equal(nonowning.reduce((sum, row) => sum + row.geographic_scope.counties.length, 0), 12);
+  for (const right of nonowning) {
+    const source = f.bundle.files.find((file) => file.logical_path === 'lore/relations/personal-holdings.json').document.holdings.find((row) => row.id === right.holding_id);
+    assert.equal(right.direct_ownership, 0);
+    assert.equal(right.kind, 'superior-jurisdiction');
+    assert.equal(right.title_id, source.titleId);
+    assert.equal(right.capability_package_id, source.capabilityPackageId);
+    assert.deepEqual(right.powers.map((row) => row.power), source.powers);
+    assert.deepEqual(right.geographic_scope.counties.map((row) => row.county_title_id), source.geographicScope.countyTitleIds);
+    assert.deepEqual(right.admin_refs, []);
+  }
+  for (const [id, count, liege] of [['K1008', 2, null], ['K035', 1, 'K1008'], ['K039', 1, 'K1008'], ['K038', 1, 'K1008']]) {
+    const result = person(id);
+    assert.equal(result.current.nonowning_rights.length, count);
+    assert.ok(result.current.nonowning_rights.every((row) => row.direct_liege_person_id === liege));
+    assert.deepEqual(result.current.holdings, []);
+    assert.deepEqual(result.historical.superseded_context.polities, []);
+    assert.deepEqual(result.historical.superseded_context.retinue_groups, []);
+    assert.ok(result.current.context.bindings.length >= count);
+    if (liege) assert.equal(result.current.context.owner_liege.liege_person_id, liege);
+  }
+  const king = person('K1008');
+  assert.equal(king.current.context.polities[0].current_validity, 'current_nonterritorial');
+  assert.equal(king.current.context.polities[0].territorial_scale, null);
+  assert.equal(king.current.context.polities[0].direct_ownership, 0);
+  assert.ok(king.current.context.titles.some((row) => row.title_id === 'title:kingdom-daejeon'));
+  assert.equal(king.current.context.offices[0].status, 'nonterritorial-political-office');
+  assert.equal(king.unresolved.context.retinue_groups[0].person_count, 24);
+  assert.equal(king.unresolved.context.retinue_groups[0].duties.length, 4);
+  assert.deepEqual(king.unresolved.context.retinue_groups[0].holdings, []);
+  assert.ok(king.current.context.courts.length);
+  for (const id of ['K151', 'K176', 'K355']) {
+    const result = person(id);
+    assert.equal(result.current.context.offices[0].status, 'unappointed');
+    assert.equal(result.current.context.offices[0].position_ko, null);
+    assert.equal(result.current.context.offices[0].rank_ko, null);
+    assert.ok(result.historical.context.offices[0].position_ko);
+    assert.ok(result.current.context.political_identities.length);
+    assert.ok(result.historical.feudal.titles.length);
+    assert.deepEqual(result.current.context.grants, []);
+  }
+  for (const result of results) for (const office of result.current.context.offices) {
+    assert.deepEqual(office.evidence, f.current.context_office_evidence.filter((row) => row.person_id === result.person.person_id));
+    assert.ok(office.evidence.length);
+  }
+  assert.equal(results.reduce((sum, row) => sum + row.historical.feudal.titles.length, 0), 200);
+  assert.equal(results.reduce((sum, row) => sum + row.historical.feudal.grants.length, 0), 179);
+  assert.equal(digest(f.dbPath), beforeHash);
+  assert.equal(statSync(f.dbPath).mtimeMs, beforeMtime);
+  assert.deepEqual(readdirSync(f.directory), ['rights.sqlite']);
+});
+
 test('person ID and publication route return the same complete normalized domains', (t) => {
   const f = fixture(t);
   const result = query.queryPerson({ dbPath: f.dbPath, id: 'K088' });
@@ -162,7 +277,7 @@ test('person ID and publication route return the same complete normalized domain
   assert.equal(result.historical.gurps.languages[0].level, null);
   assert.equal(result.historical.gurps.evidence[0].json_pointer, '/people/0/name');
   assert.equal(Object.hasOwn(result, 'gurps'), false);
-  assert.deepEqual(Object.keys(result.current), ['engine', 'birthday', 'family', 'household', 'holdings', 'context']);
+  assert.deepEqual(Object.keys(result.current), ['engine', 'birthday', 'family', 'household', 'holdings', 'nonowning_rights', 'context']);
   assert.equal(result.current.engine.profile.person_id, 'K088');
   assert.equal(Object.hasOwn(result.current.engine.profile, 'authored_status'), false);
   assert.equal(Object.hasOwn(result.current.engine.profile, 'owner_approved'), false);
@@ -175,19 +290,18 @@ test('person ID and publication route return the same complete normalized domain
   assert.equal(result.current.family.role_decisions[0].sources[0].source_anchor, '/people/0');
   assert.equal(result.current.household.courts[0].retainers[0].sources[0].source_anchor, '/people/0');
   assert.equal(result.current.household.humanoid_context[0].sources[0].source_anchor, '/people/0');
-  assert.equal(result.current.holdings[0].holding_id, 'holding-current');
-  assert.equal(result.current.holdings[0].current_validity, 'current_seoul_evidenced');
-  assert.deepEqual(result.current.context.courts, []);
+  assert.deepEqual(result.current.holdings, []);
+  assert.deepEqual(result.current.nonowning_rights, []);
+  assert.equal(result.current.context.courts[0].court_id, 'court-old');
   assert.equal(result.current.context.event_links[0].organization_name, '현재 조직');
-  assert.deepEqual(result.historical.superseded_holdings.map((row) => row.holding_id), ['holding-superseded']);
-  assert.equal(result.historical.superseded_context.courts[0].court_id, 'court-old');
+  assert.deepEqual(result.historical.superseded_holdings, []);
+  assert.equal(result.historical.superseded_context.polities[0].polity_id, 'polity:daejeon');
   assert.equal(result.historical.superseded_context.retinue_groups[0].duties[0].duty, '옛 임무');
   assert.equal(result.historical.feudal.titles[0].jurisdictions[0].admin_unit_id, 'old-unit');
   assert.equal(result.historical.feudal.grants[0].admin_units[0].admin_unit_name, '옛 행정구역');
   const oldVassal = query.queryPerson({ dbPath: f.dbPath, id: 'K001' });
-  assert.equal(oldVassal.current.context.owner_liege, null);
-  assert.equal(oldVassal.historical.superseded_context.owner_liege.liege_person_id, 'K088');
-  assert.deepEqual(result.unresolved.holdings.map((row) => row.holding_id), ['holding-unresolved']);
+  assert.equal(oldVassal.current.context.owner_liege.liege_person_id, 'K088');
+  assert.deepEqual(result.unresolved.holdings, []);
 });
 
 test('relations keep directed rows, source order, and blank grounds without reverse synthesis', (t) => {
@@ -264,12 +378,8 @@ test('actual current SQLite query separates normalized current data, historical 
 
   const db = openReadOnly(dbPath);
   const mismatch = db.prepare("SELECT person_id,public_route FROM person WHERE public_route<>('/people/person-' || printf('%04d',CAST(substr(person_id,2) AS INTEGER))) ORDER BY person_id LIMIT 1").get();
-  const superseded = db.prepare("SELECT holder_person_id FROM context_holding WHERE current_validity='superseded_outside_seoul' ORDER BY holding_id LIMIT 1").get();
-  const unresolved = db.prepare("SELECT holder_person_id FROM context_holding WHERE current_validity='unresolved' ORDER BY holding_id LIMIT 1").get();
   db.close();
   assert.ok(mismatch, 'K ID suffix and public route must remain independently normalized');
-  assert.ok(superseded, 'actual corpus must retain a superseded holding counterexample');
-  assert.ok(unresolved, 'actual corpus must retain an unresolved holding counterexample');
 
   const beforeHash = digest(dbPath);
   const beforeMtime = statSync(dbPath).mtimeMs;
@@ -295,29 +405,33 @@ test('actual current SQLite query separates normalized current data, historical 
   assert.ok(nonKorean.lineage.source_clan_refs[0].source_ref);
   assert.equal(JSON.stringify(nonKorean.current.engine).includes('profile-batches'), false);
   const indexedAlias = query.queryPerson({ dbPath, id: 'K1011' });
-  assert.ok(indexedAlias.source_indexes.corridor.some((row) => row.match_status === 'documented_display_alias' && row.source_status === 'draft'));
+  const corridorSource = JSON.parse(readFileSync(join(sourceRoot, 'lore/characters/Cast-Corridors-Index.json'), 'utf8'));
+  assert.ok(indexedAlias.source_indexes.corridor.some((row) => row.match_status === 'documented_display_alias' && row.source_status === corridorSource.status));
   const unmatchedIndex = query.queryIssues({ dbPath, dataset: 'index' }).source_indexes;
   assert.ok(unmatchedIndex.unmatched_cast.some((row) => row.name_ko === '오도윤' && row.person_id === null));
   const eventPerson = query.queryPerson({ dbPath, id: 'K1007' });
   assert.ok(eventPerson.current.context.event_links.some((row) => row.organization_id === 'O01'));
   const outsidePerson = query.queryPerson({ dbPath, id: 'K1008' });
-  assert.ok(outsidePerson.historical.superseded_context.polities.some((row) => row.polity_id === 'polity:daejeon'));
-  assert.ok(outsidePerson.historical.superseded_context.retinue_groups.some((row) => row.current_validity === 'superseded_outside_seoul'));
-  assert.ok(outsidePerson.current.context.courts.every((row) => row.polity_id !== 'polity:daejeon'));
+  assert.ok(outsidePerson.current.context.polities.some((row) => row.polity_id === 'polity:daejeon'));
+  assert.deepEqual(outsidePerson.historical.superseded_context.polities, []);
+  assert.deepEqual(outsidePerson.historical.superseded_context.retinue_groups, []);
+  assert.equal(outsidePerson.unresolved.context.retinue_groups[0].person_count, 24);
+  assert.equal(outsidePerson.current.nonowning_rights.length, 2);
+  assert.ok(outsidePerson.current.context.courts.some((row) => row.polity_id === 'polity:daejeon'));
   const oldVassal = query.queryPerson({ dbPath, id: 'K035' });
-  assert.equal(oldVassal.current.context.owner_liege, null);
-  assert.equal(oldVassal.historical.superseded_context.owner_liege.liege_person_id, 'K1008');
+  assert.equal(oldVassal.current.context.owner_liege.liege_person_id, 'K1008');
+  assert.equal(oldVassal.current.nonowning_rights.length, 1);
   const historicalDb = openReadOnly(dbPath);
   const feudalHolder = historicalDb.prepare('SELECT holder_person_id FROM historical_feudal_title ORDER BY title_id LIMIT 1').get();
   historicalDb.close();
   assert.ok(feudalHolder);
   assert.ok(query.queryPerson({ dbPath, id: feudalHolder.holder_person_id }).historical.feudal.titles.length > 0);
-  const supersededPerson = query.queryPerson({ dbPath, id: superseded.holder_person_id });
-  assert.ok(supersededPerson.historical.superseded_holdings.length > 0);
-  assert.ok(supersededPerson.current.holdings.every((holding) => holding.current_validity === 'current_seoul_evidenced'));
-  const unresolvedPerson = query.queryPerson({ dbPath, id: unresolved.holder_person_id });
-  assert.ok(unresolvedPerson.unresolved.holdings.length > 0);
-  assert.ok(unresolvedPerson.unresolved.holdings.every((holding) => holding.current_validity === 'unresolved'));
+  const unappointed = query.queryPerson({ dbPath, id: 'K151' });
+  assert.equal(unappointed.current.context.offices[0].position_ko, null);
+  assert.equal(unappointed.current.context.offices[0].rank_ko, null);
+  assert.ok(unappointed.historical.context.offices[0].position_ko);
+  assert.ok(unappointed.historical.feudal.titles.length);
+  assert.deepEqual(unappointed.current.context.grants, []);
   assert.throws(() => query.queryPerson({ dbPath, id: "K1022' OR 1=1--" }), { code: 'E_PERSON_NOT_FOUND' });
   assert.throws(() => query.querySource({ dbPath, path: 'lore/editorial/profile-batches/special.json' }), { code: 'E_SOURCE_NOT_FOUND' });
   assert.throws(() => query.querySource({ dbPath, path: 'lore/name-pools/values-cast.json', includeBytes: true }), { code: 'E_ARGUMENTS' });

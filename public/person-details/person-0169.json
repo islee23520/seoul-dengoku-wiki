@@ -2,9 +2,9 @@
   "id": "person-0169",
   "name": "조이록",
   "title": "기록 공증 감사관",
-  "position": "기록 공증 감사관 · 고성군 영주",
+  "position": "기록 공증 감사관",
   "characterId": "K168",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "원본 해시 확인·사본 공증 감사",
   "gender": "여성",
@@ -561,52 +561,23 @@
             "name": "조이록",
             "url": "/people/person-0169",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "원본 해시 확인·사본 공증 감사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/655/items/0/ko",
-                  "quote": "생업: 원본 해시 확인·사본 공증 감사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/656/text/ko",
-                    "quote": "사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/657/text/ko",
-                    "quote": "조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -614,94 +585,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/655/items/0/ko",
-                    "quote": "생업: 원본 해시 확인·사본 공증 감사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/656/text/ko",
-                    "quote": "사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/657/text/ko",
-                    "quote": "조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Accounting",
                 "ko": "회계·감사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/655/items/0/ko",
-                    "quote": "생업: 원본 해시 확인·사본 공증 감사"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "회현",
-              "type": "초소 영지",
-              "station": "회현",
-              "state": "S06",
-              "settlement": {
-                "name": "회현 정착지",
-                "type": "정착지",
-                "description": "회현 일대 고정 거점"
-              },
-              "note": "S06 회현 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -725,52 +636,23 @@
             "name": "조이록",
             "url": "/people/person-0169",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "원본 해시 확인·사본 공증 감사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/655/items/0/ko",
-                  "quote": "생업: 원본 해시 확인·사본 공증 감사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/656/text/ko",
-                    "quote": "사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/657/text/ko",
-                    "quote": "조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -778,162 +660,58 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/655/items/0/ko",
-                    "quote": "생업: 원본 해시 확인·사본 공증 감사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/656/text/ko",
-                    "quote": "사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/657/text/ko",
-                    "quote": "조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Accounting",
                 "ko": "회계·감사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/655/items/0/ko",
-                    "quote": "생업: 원본 해시 확인·사본 공증 감사"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "회현",
-              "type": "초소 영지",
-              "station": "회현",
-              "state": "S06",
-              "settlement": {
-                "name": "회현 정착지",
-                "type": "정착지",
-                "description": "회현 일대 고정 거점"
-              },
-              "note": "S06 회현 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-51820-S06",
-      "name": {
-        "ko": "고성군 공작령 직영지"
-      },
-      "holderPersonId": "K168",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "5182025000",
-          "name": "강원특별자치도 고성군 간성읍"
-        },
-        {
-          "id": "5182025300",
-          "name": "강원특별자치도 고성군 거진읍"
-        },
-        {
-          "id": "5182031000",
-          "name": "강원특별자치도 고성군 현내면"
-        },
-        {
-          "id": "5182032000",
-          "name": "강원특별자치도 고성군 죽왕면"
-        },
-        {
-          "id": "5182033000",
-          "name": "강원특별자치도 고성군 토성면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-51820-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-51820-S06",
-      "name": "고성군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K168",
-      "basis": "개막 행정 규모 그룹 51820(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "5182025000",
-        "5182025300",
-        "5182031000",
-        "5182032000",
-        "5182033000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-51820-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -947,18 +725,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "회현",
-    "type": "초소 영지",
-    "station": "회현",
-    "state": "S06",
-    "settlement": {
-      "name": "회현 정착지",
-      "type": "정착지",
-      "description": "회현 일대 고정 거점"
-    },
-    "note": "S06 회현 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -992,22 +758,22 @@
   },
   "fields": {
     "생업": "원본 해시 확인·사본 공증 감사",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "기록 공증 감사관",
+    "소속": "서울특별시 지방공무원 조직",
+    "직위·직급": "행정안전부 국가기록원 기록관리부·기록관리정책과 기능에 대응하는 서울특별시 기록관리 감사 담당 지방행정사무관(5급) 보직",
+    "담당 업무": "기록 공증 감사관",
     "가치관": "권위 25 | 개방 −5 | 무력 −30 | 물질 −40 | 공동 15 | 원칙 60 | 공개 −15 | 자격 10 | 분산 −30 | 변혁 −50",
     "욕망": "갈망 20 | 독점 25 | 위험 35 | 과시 −45 | 지속 −15 | 지향 양성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 기록 공증 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "관직": "품계 주사. 직함은 기록 공증 감사관. 사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다.",
+    "생애": "서울역 등기소에서 자랐다. 기록 공증 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 조이록의 원본 해시를 확인하고 사본 공증을 감사하는 일은 회현동의 업무와 이어진다.",
+    "공무원 직위·직급": "행정안전부 국가기록원 기록관리부·기록관리정책과 기능에 대응하는 서울특별시 기록관리 감사 담당 지방행정사무관(5급) 보직. 담당 업무: 기록 공증 감사관.",
     "일화": "잉크가 번진 공증 도장을 단 사본이 원본 해시 두 개를 달고 감사대에 오른다. 조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다.",
     "관계": "윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.",
     "야망": "기록 공증을 청장 단독 서명이 아니라 감사·서기 교차 날인으로 고정한다.",
     "공포": "번진 도장이 유효한 인준처럼 유통되는 것.",
     "개입": "잠긴 두 해시 중 원본을 가리키거나, 열람 범위를 넓힐 수 있다."
   },
-  "biography": "공증 도장의 잉크가 번진 자리는 통과시키지 않는다. 큰 인준보다 한 장의 원본 해시를 지킨다.\n\n- 생업: 원본 해시 확인·사본 공증 감사\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 기록 공증 감사관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 기록 공증 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 주사. 직함은 기록 공증 감사관. 사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다.\n\n**일화.** 잉크가 번진 공증 도장을 단 사본이 원본 해시 두 개를 달고 감사대에 오른다. 조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다.\n\n**관계.** 윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.\n\n**야망.** 기록 공증을 청장 단독 서명이 아니라 감사·서기 교차 날인으로 고정한다.\n\n**공포.** 번진 도장이 유효한 인준처럼 유통되는 것.\n\n**개입.** 잠긴 두 해시 중 원본을 가리키거나, 열람 범위를 넓힐 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 −5 | 무력 −30 | 물질 −40 | 공동 15 | 원칙 60 | 공개 −15 | 자격 10 | 분산 −30 | 변혁 −50\n- 욕망: 갈망 20 | 독점 25 | 위험 35 | 과시 −45 | 지속 −15 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "공증 도장의 잉크가 번진 자리는 통과시키지 않는다. 큰 인준보다 한 장의 원본 해시를 지킨다.\n\n- 생업: 원본 해시 확인·사본 공증 감사\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 행정안전부 국가기록원 기록관리부·기록관리정책과 기능에 대응하는 서울특별시 기록관리 감사 담당 지방행정사무관(5급) 보직\n- 담당 업무: 기록 공증 감사관\n**생애.** 서울역 등기소에서 자랐다. 기록 공증 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 조이록의 원본 해시를 확인하고 사본 공증을 감사하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 행정안전부 국가기록원 기록관리부·기록관리정책과 기능에 대응하는 서울특별시 기록관리 감사 담당 지방행정사무관(5급) 보직. 담당 업무: 기록 공증 감사관.\n\n**일화.** 잉크가 번진 공증 도장을 단 사본이 원본 해시 두 개를 달고 감사대에 오른다. 조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다.\n\n**관계.** 윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.\n\n**야망.** 기록 공증을 청장 단독 서명이 아니라 감사·서기 교차 날인으로 고정한다.\n\n**공포.** 번진 도장이 유효한 인준처럼 유통되는 것.\n\n**개입.** 잠긴 두 해시 중 원본을 가리키거나, 열람 범위를 넓힐 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 −5 | 무력 −30 | 물질 −40 | 공동 15 | 원칙 60 | 공개 −15 | 자격 10 | 분산 −30 | 변혁 −50\n- 욕망: 갈망 20 | 독점 25 | 위험 35 | 과시 −45 | 지속 −15 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-06"
   ],

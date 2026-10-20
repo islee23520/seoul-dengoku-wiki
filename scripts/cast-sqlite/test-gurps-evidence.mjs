@@ -216,7 +216,7 @@ test('full corpus preserves all typed historical GURPS branches and provenance',
     return { source_id: index + 1, logical_path, raw_bytes, document: logical_path.endsWith('.json') ? JSON.parse(raw_bytes.toString('utf8')) : null };
   });
   const mapped = mapGurps({ bundle: { files }, identity: { people: registry.persons.map((person) => ({ person_id: person.id, name: person.name })) } });
-  assert.deepEqual([mapped.gurpsProfiles.length, mapped.attributes.length, mapped.secondary.length, mapped.skills.length, mapped.traits.length, mapped.languages.length], [1022, 4088, 8176, 2283, 4, 20]);
+  assert.deepEqual([mapped.gurpsProfiles.length, mapped.attributes.length, mapped.secondary.length, mapped.skills.length, mapped.traits.length, mapped.languages.length], [1022, 4088, 8176, document.people.reduce((count, person) => count + person.skills.length, 0), 4, 20]);
   assert.deepEqual([mapped.advantages.length, mapped.disadvantages.length, mapped.territories.length, mapped.units.length, mapped.unitComposition.length, mapped.wanderingForces.length, mapped.wanderingFacilities.length, mapped.traitBoundaries.length], [21, 10, 809, 1017, 1021, 208, 624, 4]);
   const byId = new Map(mapped.gurpsProfiles.map((row) => [row.person_id, row]));
   for (const [personOrdinal, person] of document.people.entries()) {

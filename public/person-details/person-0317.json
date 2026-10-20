@@ -551,47 +551,23 @@
             "name": "창다흰",
             "url": "/people/person-0317",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "약재 복용 시각·열 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/226/items/0/ko",
-                  "quote": "생업: 약재 복용 시각·열 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "복용 시각과 열 기록을 같은 책에 겹치고, 원산지 말목이 없는 상자는 대표 날인 없이 내리지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -599,89 +575,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/226/items/0/ko",
-                    "quote": "생업: 약재 복용 시각·열 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "복용 시각과 열 기록을 같은 책에 겹치고, 원산지 말목이 없는 상자는 대표 날인 없이 내리지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/226/items/0/ko",
-                    "quote": "생업: 약재 복용 시각·열 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "금곡",
-              "type": "초소 영지",
-              "station": "금곡",
-              "state": "S12",
-              "settlement": {
-                "name": "금곡 정착지",
-                "type": "정착지",
-                "description": "금곡 일대 고정 거점"
-              },
-              "note": "S12 금곡 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -705,47 +626,23 @@
             "name": "창다흰",
             "url": "/people/person-0317",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "약재 복용 시각·열 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/226/items/0/ko",
-                  "quote": "생업: 약재 복용 시각·열 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "복용 시각과 열 기록을 같은 책에 겹치고, 원산지 말목이 없는 상자는 대표 날인 없이 내리지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -753,89 +650,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/226/items/0/ko",
-                    "quote": "생업: 약재 복용 시각·열 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "복용 시각과 열 기록을 같은 책에 겹치고, 원산지 말목이 없는 상자는 대표 날인 없이 내리지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/226/items/0/ko",
-                    "quote": "생업: 약재 복용 시각·열 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "금곡",
-              "type": "초소 영지",
-              "station": "금곡",
-              "state": "S12",
-              "settlement": {
-                "name": "금곡 정착지",
-                "type": "정착지",
-                "description": "금곡 일대 고정 거점"
-              },
-              "note": "S12 금곡 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -856,18 +698,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "금곡",
-    "type": "초소 영지",
-    "station": "금곡",
-    "state": "S12",
-    "settlement": {
-      "name": "금곡 정착지",
-      "type": "정착지",
-      "description": "금곡 일대 고정 거점"
-    },
-    "note": "S12 금곡 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -908,15 +738,15 @@
     "욕망": "갈망 −5 | 독점 5 | 위험 −10 | 과시 5 | 지속 −15 | 지향 양성 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 약재 오염 이송 피해자 대표 자리는 가짜 약 봉인으로 열렸다.",
+    "생애": "2096-01-24에 태어났다. 제기동 의무소에서 자랐다. 2126년 개막에는 약재 오염 이송 피해자 대표 당직을 맡으며, 직위 인수 기록에는 가짜 약 봉인으로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 창다흰의 약재 복용 시각·열 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
     "관직": "품계 호송원. 직함은 약재 오염 이송 피해자 대표. 복용 시각과 열 기록을 같은 책에 겹치고, 원산지 말목이 없는 상자는 대표 날인 없이 내리지 않는다.",
     "일화": "여름의 탁수와 가짜 약이 퍼진 주간에 창다흰의 가족이 신내 의료열차에서 해열제를 먹고 쓰러졌다.",
     "관계": "전미리의 중증도 표에 피해자 줄을 올리고, 매하루의 제기동 피해 원장과 이름을 맞춘다. 류은비의 치료 원칙을 이송칸의 마지막 기준으로 둔다.",
-    "야망": "오염 약으로 쓰러진 이송 명단을 공개 피해 원장으로 묶어 가짜 약이 다시 환승칸에 타지 못하게 한다.",
+    "야망": "오염 약으로 쓰러진 이송 명단을 공개 피해 원장으로 묶어 가짜 약이 다시 환승칸에 타지 못하게 하려 한다.",
     "공포": "피해자 명단이 외부 구매 장부로 팔려 자신이 은폐의 얼굴이 되는 것.",
     "개입": "오염 약 상자를 압수해 원장을 채우거나, 피해자 대표를 은폐 거래에 끌어들일 수 있다."
   },
-  "biography": "해열제 쓴맛을 아직도 혀에 남기고, 포장만 깨끗한 약을 들것에 올리지 않는다. 온화하나 열 곡선이 어긋나면 자리에서 일어나지 않는다.\n\n- 생업: 약재 복용 시각·열 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 약재 오염 이송 피해자 대표\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 약재 오염 이송 피해자 대표 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 호송원. 직함은 약재 오염 이송 피해자 대표. 복용 시각과 열 기록을 같은 책에 겹치고, 원산지 말목이 없는 상자는 대표 날인 없이 내리지 않는다.\n\n**일화.** 여름의 탁수와 가짜 약이 퍼진 주간에 창다흰의 가족이 신내 의료열차에서 해열제를 먹고 쓰러졌다.\n\n**관계.** 전미리의 중증도 표에 피해자 줄을 올리고, 매하루의 제기동 피해 원장과 이름을 맞춘다. 류은비의 치료 원칙을 이송칸의 마지막 기준으로 둔다.\n\n**야망.** 오염 약으로 쓰러진 이송 명단을 공개 피해 원장으로 묶어 가짜 약이 다시 환승칸에 타지 못하게 한다.\n\n**공포.** 피해자 명단이 외부 구매 장부로 팔려 자신이 은폐의 얼굴이 되는 것.\n\n**개입.** 오염 약 상자를 압수해 원장을 채우거나, 피해자 대표를 은폐 거래에 끌어들일 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 50 | 무력 −30 | 물질 0 | 공동 15 | 원칙 0 | 공개 20 | 자격 10 | 분산 60 | 변혁 0\n- 욕망: 갈망 −5 | 독점 5 | 위험 −10 | 과시 5 | 지속 −15 | 지향 양성 | 결합 없음\n:::",
+  "biography": "2096-01-24생인 창다흰은 해열제 쓴맛을 아직도 혀에 남기고, 포장만 깨끗한 약을 들것에 올리지 않는다. 온화하나 열 곡선이 어긋나면 자리에서 일어나지 않는다.\n\n- 생업: 약재 복용 시각·열 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 약재 오염 이송 피해자 대표\n**생애.** 2096-01-24에 태어났다. 제기동 의무소에서 자랐다. 2126년 개막에는 약재 오염 이송 피해자 대표 당직을 맡으며, 직위 인수 기록에는 가짜 약 봉인으로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 창다흰의 약재 복용 시각·열 기록 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 약재 오염 이송 피해자 대표. 복용 시각과 열 기록을 같은 책에 겹치고, 원산지 말목이 없는 상자는 대표 날인 없이 내리지 않는다.\n\n**일화.** 여름의 탁수와 가짜 약이 퍼진 주간에 창다흰의 가족이 신내 의료열차에서 해열제를 먹고 쓰러졌다.\n\n**관계.** 전미리의 중증도 표에 피해자 줄을 올리고, 매하루의 제기동 피해 원장과 이름을 맞춘다. 류은비의 치료 원칙을 이송칸의 마지막 기준으로 둔다.\n\n**야망.** 오염 약으로 쓰러진 이송 명단을 공개 피해 원장으로 묶어 가짜 약이 다시 환승칸에 타지 못하게 하려 한다.\n\n**공포.** 피해자 명단이 외부 구매 장부로 팔려 자신이 은폐의 얼굴이 되는 것.\n\n**개입.** 오염 약 상자를 압수해 원장을 채우거나, 피해자 대표를 은폐 거래에 끌어들일 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 50 | 무력 −30 | 물질 0 | 공동 15 | 원칙 0 | 공개 20 | 자격 10 | 분산 60 | 변혁 0\n- 욕망: 갈망 −5 | 독점 5 | 위험 −10 | 과시 5 | 지속 −15 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-12"
   ],

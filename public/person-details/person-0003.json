@@ -82,7 +82,7 @@
         "timeline": [
           {
             "year": 2072,
-            "summary": "김승석은 영등포 정수 당직에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "summary": "김승석은 영등포 정수 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-01.json",
@@ -453,52 +453,23 @@
             "name": "김태운",
             "url": "/people/person-0003",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "수문 경비",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/83/items/1/ko",
-                  "quote": "생업: 수문 경비"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -506,122 +477,47 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/83/items/1/ko",
-                    "quote": "생업: 수문 경비"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/83/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "김태운 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S01 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       },
@@ -644,52 +540,23 @@
             "name": "김태운",
             "url": "/people/person-0003",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "수문 경비",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/83/items/1/ko",
-                  "quote": "생업: 수문 경비"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -697,122 +564,47 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/83/items/1/ko",
-                    "quote": "생업: 수문 경비"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/83/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "김태운 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S01 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       }
@@ -837,7 +629,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -889,11 +680,12 @@
     "생업": "수문 경비",
     "품계": "주사",
     "직함": "수문경비대장",
+    "업무 위치": "당산2동. 당산2동 교량 보고를 받는 김태운은 야간 도하 기록과 수압 시험에서 표시한 누수 이음매를 맞대어 다음 수문 경비 교대를 정한다.",
     "가치관": "권위 55 | 개방 −15 | 무력 10 | 물질 30 | 공동 10 | 원칙 20 | 공개 10 | 자격 −10 | 분산 −50 | 변혁 −20",
     "욕망": "갈망 15 | 독점 30 | 위험 −5 | 과시 25 | 지속 10 | 지향 이성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 수문경비대장 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 수문경비대장 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 당산2동. 당산2동 교량 보고를 받는 김태운은 야간 도하 기록과 수압 시험에서 표시한 누수 이음매를 맞대어 다음 수문 경비 교대를 정한다.",
     "관직": "품계 주사. 직함은 수문경비대장. 개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다.",
     "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 수문경비대장 자리의 서명이 장부에 올랐다.",
     "관계": "한재목의 수문 지휘를 받으며, 최한결의 장갑 보수열차와 차단 부품을 계약으로 나누고, 암사 참모 김우찬과는 한강 수문 전술에서 경쟁한다.",
@@ -901,7 +693,7 @@
     "공포": "수문 한 기가 폭파되거나 무단 개방되어 영등포 정수가 한순간에 오염되는 것.",
     "개입": "수문 폭파 위협의 진원을 밝혀 그의 경계를 풀거나, 암호패를 위조한 밀항 증거를 넘겨 대장을 교체하게 할 수 있다."
   },
-  "biography": "규율에 기대 잠을 줄이고, 수문 나사의 녹보다 무단 도하를 먼저 의심한다. 부하의 급수표가 밀리면 자신이 야간 당직을 선다.\n\n- 소속: 수문국\n- 생업: 수문 경비\n- 품계: 주사\n- 직함: 수문경비대장\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 수문경비대장 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 주사. 직함은 수문경비대장. 개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 수문경비대장 자리의 서명이 장부에 올랐다.\n\n**관계.** 한재목의 수문 지휘를 받으며, 최한결의 장갑 보수열차와 차단 부품을 계약으로 나누고, 암사 참모 김우찬과는 한강 수문 전술에서 경쟁한다.\n\n**야망.** 한강 서부 수문과 교량을 경비대 단일 지휘 아래 묶어 물 계약의 무력 보증인이 된다.\n\n**공포.** 수문 한 기가 폭파되거나 무단 개방되어 영등포 정수가 한순간에 오염되는 것.\n\n**개입.** 수문 폭파 위협의 진원을 밝혀 그의 경계를 풀거나, 암호패를 위조한 밀항 증거를 넘겨 대장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −15 | 무력 10 | 물질 30 | 공동 10 | 원칙 20 | 공개 10 | 자격 −10 | 분산 −50 | 변혁 −20\n- 욕망: 갈망 15 | 독점 30 | 위험 −5 | 과시 25 | 지속 10 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "규율에 기대 잠을 줄이고, 수문 나사의 녹보다 무단 도하를 먼저 의심한다. 부하의 급수표가 밀리면 자신이 야간 당직을 선다.\n\n- 소속: 수문국\n- 생업: 수문 경비\n- 품계: 주사\n- 직함: 수문경비대장\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 수문경비대장 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 당산2동. 당산2동 교량 보고를 받는 김태운은 야간 도하 기록과 수압 시험에서 표시한 누수 이음매를 맞대어 다음 수문 경비 교대를 정한다.\n\n**관직.** 품계 주사. 직함은 수문경비대장. 개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 수문경비대장 자리의 서명이 장부에 올랐다.\n\n**관계.** 한재목의 수문 지휘를 받으며, 최한결의 장갑 보수열차와 차단 부품을 계약으로 나누고, 암사 참모 김우찬과는 한강 수문 전술에서 경쟁한다.\n\n**야망.** 한강 서부 수문과 교량을 경비대 단일 지휘 아래 묶어 물 계약의 무력 보증인이 된다.\n\n**공포.** 수문 한 기가 폭파되거나 무단 개방되어 영등포 정수가 한순간에 오염되는 것.\n\n**개입.** 수문 폭파 위협의 진원을 밝혀 그의 경계를 풀거나, 암호패를 위조한 밀항 증거를 넘겨 대장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −15 | 무력 10 | 물질 30 | 공동 10 | 원칙 20 | 공개 10 | 자격 −10 | 분산 −50 | 변혁 −20\n- 욕망: 갈망 15 | 독점 30 | 위험 −5 | 과시 25 | 지속 10 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-01"
   ],
