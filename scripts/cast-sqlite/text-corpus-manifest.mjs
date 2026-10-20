@@ -2,6 +2,7 @@
 export const TEXT_DOCUMENT_MANIFEST = Object.freeze([
   Object.freeze({ logical_path: 'lore/Operating-Houses.json', corpus_kind: 'current' }),
   Object.freeze({ logical_path: 'lore/Regional-Physical-AI-Arcs.json', corpus_kind: 'current' }),
+  Object.freeze({ logical_path: 'lore/Research-Sources.json', corpus_kind: 'current' }),
   Object.freeze({ logical_path: 'lore/Synthetic-Actors.json', corpus_kind: 'current' }),
   Object.freeze({ logical_path: 'lore/World-Expansion-Index.json', corpus_kind: 'current' }),
   Object.freeze({ logical_path: 'lore/World-Narrative-Atlas.json', corpus_kind: 'current' }),
