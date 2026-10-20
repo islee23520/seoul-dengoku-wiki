@@ -2,13 +2,14 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import portraitCatalog from '../../portrait-catalog.json'
 import { peopleCatalog } from '../generated/peopleCatalog'
+import { fetchPortraitToken, portraitPromptApiUrl, portraitTokenApiUrl, portraitTokenStaticUrl } from '../portraitTokenApi'
 import { cameraViews, composePortraitPrompt, editedPortraitToken, localCharacterArguments, mangaStyles, portraitPromptYAML, publicChoices, type PortraitToken, type PromptOverrides } from './portraitPrompt'
 
 export default function PortraitPromptPanel() {
   const [searchParams, setSearchParams] = useSearchParams()
   const requestedPerson = searchParams.get('person')
   const [personId, setPersonId] = useState(peopleCatalog.find(entry => entry.id === requestedPerson)?.id ?? portraitCatalog.entries[0]?.personId ?? '')
-  const hasToken = portraitCatalog.entries.some(entry => entry.personId === personId)
+  const hasToken = peopleCatalog.some(entry => entry.id === personId)
   const [token, setToken] = useState<PortraitToken | null>(null)
   const [tokenError, setTokenError] = useState('')
   const [tokenAttempt, setTokenAttempt] = useState(0)
@@ -30,13 +31,13 @@ export default function PortraitPromptPanel() {
   }, [])
   useEffect(() => {
     const load = async () => {
-      const tokens: PortraitToken[] = []
+      const loaded: PortraitToken[] = []
       for (const person of portraitCatalog.entries) {
-        const response = await fetch(`${import.meta.env.BASE_URL}portrait-tokens/${person.personId}.json`)
-        if (response.ok) tokens.push(await response.json() as PortraitToken)
+        const item = await fetchPortraitToken<PortraitToken>(person.personId).catch(() => null)
+        if (item) loaded.push(item)
       }
-      setHairOptions([...new Set(tokens.map((item) => item.artProposal.hair))])
-      setUpperOptions([...new Set(tokens.map((item) => item.artProposal.upper))])
+      setHairOptions([...new Set(loaded.map((item) => item.artProposal.hair))])
+      setUpperOptions([...new Set(loaded.map((item) => item.artProposal.upper))])
     }
     void load()
   }, [])
@@ -45,10 +46,9 @@ export default function PortraitPromptPanel() {
     setToken(null)
     setTokenError('')
     if (!hasToken) return () => { active = false }
-    fetch(`${import.meta.env.BASE_URL}portrait-tokens/${personId}.json`)
-      .then((response) => { if (!response.ok) throw new Error('토큰을 불러올 수 없습니다.'); return response.json() })
-      .then((value: PortraitToken) => {
-        const identity = portraitCatalog.entries.find(entry => entry.personId === personId)
+    fetchPortraitToken<PortraitToken>(personId)
+      .then((value) => {
+        const identity = peopleCatalog.find(entry => entry.id === personId)
         if (!identity || value.personId !== personId || value.characterId !== identity.characterId || value.name !== identity.name) throw new Error('인물 토큰 출처가 일치하지 않습니다.')
         if (active) setToken(value)
       })
@@ -101,7 +101,14 @@ export default function PortraitPromptPanel() {
       link.click()
       URL.revokeObjectURL(url)
     }}>편집 초안 토큰 다운로드</button>
-    {hasToken && <p><a href={`${import.meta.env.BASE_URL}portrait-tokens/${personId}.json`} download={`${personId}.json`}>원본 인물 토큰 다운로드</a></p>}
+    {hasToken && <p><a href={portraitTokenStaticUrl(personId)} download={`${personId}.json`}>원본 인물 토큰 다운로드</a> · <a href={portraitTokenApiUrl(personId)}>토큰 API</a> · <a href={portraitPromptApiUrl(personId, view)}>텍스트 투 이미지 프롬프트 API</a></p>}
+    {token?.textToImage?.views[view] && <details open>
+      <summary>텍스트 투 이미지 프롬프트 ({token.textToImage.model} · {token.textToImage.views[view].size} · 투명 배경)</summary>
+      <p>derived 표시가 붙은 칸은 생업·티어·성별·나이에서 파생한 미승인 제안값이다.</p>
+      <pre>{token.textToImage.views[view].prompt}</pre>
+      <p>네거티브 프롬프트</p>
+      <pre>{token.textToImage.views[view].negativePrompt}</pre>
+    </details>}
     <details>
       <summary>로컬 CLI · Skill · MCP 연결</summary>
       <p>편집 초안 토큰에는 머리·상의·하의·신발과 성별·연령·분위기가 들어갑니다. 원본 토큰은 유지하며 아래 명령은 사용자 로컬에서 실행합니다.</p>

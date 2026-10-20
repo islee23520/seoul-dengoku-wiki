@@ -70,6 +70,9 @@ test('unlisted files, private chunks and missing artifacts fail', async () => {
     [{ 'assets/lib/Cast-Profile-Contract.json': '{}' }, [], /E_ARTIFACT_UNLISTED: assets\/lib\/Cast-Profile-Contract\.json/],
     [{ 'assets/lib/nested/katex-AbCd1234.js': '' }, [], /E_ARTIFACT_UNLISTED: assets\/lib\/nested\/katex-AbCd1234\.js/],
     [{}, ['opening-territories.json'], /E_ARTIFACT_MISSING: opening-territories\.json/],
+    [{ 'regional-terrain.json': '{}' }, [], /E_ARTIFACT_UNLISTED: regional-terrain\.json/],
+    [{ 'regional-terrain-tiles/0-0.bin': '' }, [], /E_ARTIFACT_UNLISTED: regional-terrain-tiles\/0-0\.bin/],
+    [{}, ['seoul-terrain-clip.json'], /E_ARTIFACT_MISSING: seoul-terrain-clip\.json/],
     [{}, ['state-flags/S01.webp'], /E_ARTIFACT_MISSING: state-flags\//],
     [{}, ['portrait-reviews/person-0001.json'], /E_ARTIFACT_MISSING: portrait-reviews\//],
   ]

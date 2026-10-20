@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-0327",
+  "characterId": "K326",
+  "name": "남호성",
+  "stateId": "S13",
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": false,
+    "role": "의무호송 전문의"
+  },
+  "artProposal": {
+    "face": "Adult man with a calm, restrained expression, faint expression lines",
+    "hair": "very short buzz-cut hair",
+    "upper": "khaki double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, under a heavy wool greatcoat with a raised collar for surface cold",
+    "outfit": "khaki double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, under a heavy wool greatcoat with a raised collar for surface cold",
+    "palette": [
+      "khaki",
+      "charcoal",
+      "rust brown"
+    ],
+    "carriedWeapons": "none depicted; no ownership inferred",
+    "lower": "charcoal high-waisted pleated trousers",
+    "footwear": "polished leather knee boots",
+    "accessories": "plain brass pocket watch on a short chain"
+  },
+  "style": {
+    "styleId": "derived-cast-default-20261019",
+    "referenceSha256": null,
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
+  },
+  "image": null,
+  "references": null,
+  "variantId": null,
+  "imageReview": null,
+  "identity": {
+    "characterId": "K326",
+    "name": "남호성",
+    "ethnicity": {
+      "value": "unconfirmed; art default East Asian appearance",
+      "status": "derived-proposal",
+      "source": "derived-20261019:art-default-origin-unconfirmed",
+      "derived": true
+    },
+    "origin": {
+      "value": "unconfirmed",
+      "status": "unknown",
+      "source": null
+    },
+    "gender": "남성",
+    "ageCategory": "adult",
+    "age": 37,
+    "ageAsOf": "2126-12-31"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "Adult man with a calm, restrained expression, faint expression lines",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      },
+      "faceShape": {
+        "value": "oval",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      },
+      "eyeShape": {
+        "value": "upturned almond",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyebrowShape": {
+        "value": "straight and thick",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "lipColor": {
+        "value": "natural muted rose",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "mouthShape": {
+        "value": "wide closed mouth",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "noseShape": {
+        "value": "straight bridge with a soft tip",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "beardShape": {
+        "value": "clean shaven",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "very short buzz-cut hair",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "shape": {
+        "value": "very short buzz-cut hair",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "color": {
+        "value": "black",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage+age",
+        "derived": true
+      },
+      "length": {
+        "value": "very short",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      }
+    },
+    "body": {
+      "build": {
+        "value": "slim",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation",
+        "derived": true
+      },
+      "weight": {
+        "value": "average for build",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "height": {
+        "value": "average adult male height",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "bustSize": {
+        "value": "flat chest",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "skin": {
+        "value": "light warm beige",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": "fur-lined ear-flap cap",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
+      },
+      "upper": {
+        "value": "khaki double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, under a heavy wool greatcoat with a raised collar for surface cold",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
+      },
+      "lower": {
+        "value": "charcoal high-waisted pleated trousers",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
+      },
+      "footwear": {
+        "value": "polished leather knee boots",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
+      },
+      "marks": {
+        "value": "none visible",
+        "status": "derived-proposal",
+        "source": "derived-20261019:no-insignia-rule",
+        "derived": true
+      },
+      "neckline": {
+        "value": "buttoned high shirt collar",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": "plain brass pocket watch on a short chain",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      },
+      "shape": {
+        "value": "round watch with a fine chain",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      },
+      "color": {
+        "value": "aged brass",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      },
+      "material": {
+        "value": "brass",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      },
+      "mounting": {
+        "value": "chain clipped to the waistcoat or jacket buttonhole",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
+  },
+  "textToImage": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5",
+    "defaultStyle": "yokoyama-b",
+    "views": {
+      "portrait": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 남호성, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: slim; skin: light warm beige. headwear: fur-lined ear-flap cap; upper garment: khaki double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned high shirt collar. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: khaki, charcoal, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "front": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 남호성, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: slim; skin: light warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: khaki double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned high shirt collar; lower garment: charcoal high-waisted pleated trousers; footwear: polished leather knee boots. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: khaki, charcoal, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "profile": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 남호성, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: slim; skin: light warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: khaki double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned high shirt collar; lower garment: charcoal high-waisted pleated trousers; footwear: polished leather knee boots. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: khaki, charcoal, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "side": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 남호성, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: slim; skin: light warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: khaki double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned high shirt collar; lower garment: charcoal high-waisted pleated trousers; footwear: polished leather knee boots. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: khaki, charcoal, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "back": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 남호성, an East Asian man, in his thirties. Adult man with a calm, restrained expression, faint expression lines; face shape: oval; upturned almond dark brown eyes; straight and thick eyebrows; nose: straight bridge with a soft tip; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. very short buzz-cut hair; black hair; very short length. build: slim; skin: light warm beige; average adult male height. headwear: fur-lined ear-flap cap; upper garment: khaki double-breasted wool suit jacket with wide peaked lapels over a high-collared shirt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: buttoned high shirt collar; lower garment: charcoal high-waisted pleated trousers; footwear: polished leather knee boots. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: khaki, charcoal, rust brown. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      }
+    }
+  }
+}
