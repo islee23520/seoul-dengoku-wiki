@@ -31,6 +31,22 @@ const projectionHash = '88fa87546e656d961005cd9aa1e35855ebdf18ff72d459f1bee3f42d
 const exec = promisify(execFile)
 const git = async (cwd, ...args) => (await exec('git', args, { cwd, encoding: 'buffer', maxBuffer: 8 * 1024 * 1024 })).stdout
 
+it('projection preimages use sealed SQLite historical evidence without a Git checkout and still reject wrong bytes', async () => {
+  const historical = inputBundle.inputs.readBytes.readHistorical
+  const bytes = await historical(revision, projectionPath, root)
+  const sealedRoot = resolve(tmpdir(), 'projection-no-git-repository')
+  const reader = Object.assign(async () => { throw new Error('current source read forbidden') }, {
+    readHistorical: async (selectedRevision, path, repository) => {
+      expect([selectedRevision, path, repository]).toEqual([revision, projectionPath, sealedRoot])
+      return bytes
+    },
+  })
+  expect(await readProjectionPredecessor(sealedRoot, projectionPath, projectionHash, 'E_PROJECTION_BEFORE_HASH', reader)).toEqual(bytes)
+  reader.readHistorical = async () => Buffer.from('changed historical evidence')
+  await expect(readProjectionPredecessor(sealedRoot, projectionPath, projectionHash, 'E_PROJECTION_BEFORE_HASH', reader))
+    .rejects.toThrow('E_PROJECTION_BEFORE_HASH')
+})
+
 describe('fixed historical predecessor references', () => {
   it('keeps alias and projection preimages after HEAD advances and rejects replaced historical bytes', async () => {
     const directory = await mkdtemp(resolve(tmpdir(), 'seoul-fixed-predecessor-'))
