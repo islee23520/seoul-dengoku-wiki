@@ -1,6 +1,7 @@
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { openReadOnly } from './db.mjs';
+import { readCiaCurrentRights } from './cia-current-rights.mjs';
 
 const fail = (code, message) => { throw Object.assign(new Error(message), { code }); };
 const rows = (db, sql, ...bindings) => db.prepare(sql).all(...bindings).map((row) => ({ ...row }));
@@ -165,6 +166,7 @@ function holdingRows(db, id, currentValidity) {
 }
 
 function contextRows(db, id) {
+  const current = readCiaCurrentRights(db);
   return {
     courts: rows(db, 'SELECT * FROM context_court WHERE owner_person_id=? ORDER BY court_id', id),
     direct_retainer: one(db, 'SELECT * FROM context_direct_retainer WHERE person_id=?', id),
@@ -175,11 +177,11 @@ function contextRows(db, id) {
       ...office,
       evidence: rows(db, 'SELECT * FROM context_office_evidence WHERE person_id=? ORDER BY ordinal', id),
     })),
-    titles: rows(db, 'SELECT * FROM context_feudal_title WHERE holder_person_id=? ORDER BY title_id', id).map((title) => ({
+    titles: rows(db, 'SELECT * FROM context_feudal_title WHERE holder_person_id=? ORDER BY title_id', id).filter(row => row.title_id !== current?.retiredTitleId).map((title) => ({
       ...title,
       jurisdictions: rows(db, 'SELECT * FROM context_feudal_jurisdiction WHERE title_id=? ORDER BY ordinal', title.title_id),
     })),
-    grants: rows(db, 'SELECT * FROM context_feudal_grant WHERE holder_person_id=? ORDER BY grant_id', id).map((grant) => ({
+    grants: rows(db, 'SELECT * FROM context_feudal_grant WHERE holder_person_id=? ORDER BY grant_id', id).filter(row => row.grant_id !== current?.retiredGrantId).map((grant) => ({
       ...grant,
       admin_units: rows(db, 'SELECT * FROM context_feudal_grant_admin WHERE grant_id=? ORDER BY ordinal', grant.grant_id),
       components: rows(db, 'SELECT * FROM context_feudal_grant_component WHERE grant_id=? ORDER BY ordinal', grant.grant_id),

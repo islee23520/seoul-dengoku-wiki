@@ -10,7 +10,9 @@ import { loadCiaFacilityProjection } from './cia-facility-projection-input.mjs'
 import { projectCiaFacilityHoldings } from './cia-facility-publication.mjs'
 import { relative } from 'node:path'
 const approved = JSON.parse(readFileSync(new URL('./fixtures/approved-political-partition.json', import.meta.url), 'utf8'))
-const json = path => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
+const json = path => path === 'lore/relations/opening-feudal-allocation.json'
+  ? JSON.parse(readSourceArchive(path))
+  : path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
 
 test('approved Seoul sovereignty preserves all dong and limits CIA control to the tower facility', () => {
   const map = json('public/opening-territories.json')

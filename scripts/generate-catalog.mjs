@@ -470,7 +470,7 @@ const ciaFacilityProjection = await loadCiaFacilityProjection(repoRoot, sourceRe
 let regionContentById = new Map()
 typedCatalogSource(db => {
     for (const [logicalPath, expectedSourceHash] of Object.entries(REGION_CONTENT_SOURCE_HASHES)) {
-      const district = readRegionContentDocument(db, { logicalPath, expectedSourceHash })
+      const district = readRegionContentDocument(db, { logicalPath, expectedSourceHash, predecessor: true })
       for (const region of district.regions) regionContentById.set(region.region_id, region.content)
     }
 })

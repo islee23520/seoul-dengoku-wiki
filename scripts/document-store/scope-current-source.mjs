@@ -60,7 +60,7 @@ import { EDITORIAL_ENVELOPE_SOURCE_HASHES } from './editorial-envelope-documents
 // Identity is selected independently from SQLite's document inventory, never
 // from the approval contract. A recognized typed source cannot fall back.
 export function readScopeCurrentSource({ db, logicalPath, expectedSha256, editorialProfiles, soulAssignments,
-  soulCandidates, soulReview, soulBatches, openingSample, editorialEnvelopes, snapshotDocuments }) {
+  soulCandidates, soulReview, soulBatches, openingSample, editorialEnvelopes, snapshotDocuments, predecessor = false }) {
   for (const [pins, store] of [[SOUL_CANDIDATE_SOURCE_HASHES, soulCandidates],
     [SOUL_REVIEW_SOURCE_HASHES, soulReview], [SOUL_BATCH_SOURCE_HASHES, soulBatches],
     [OPENING_SAMPLE_SOURCE_HASHES, openingSample], [EDITORIAL_ENVELOPE_SOURCE_HASHES, editorialEnvelopes]]) {
@@ -173,7 +173,7 @@ export function readScopeCurrentSource({ db, logicalPath, expectedSha256, editor
   if (Object.hasOwn(NAME_POOL_SOURCE_HASHES, logicalPath))
     return readNamePoolDocument(db, { logicalPath, expectedSourceHash: expectedSha256 });
   if (Object.hasOwn(REGION_CONTENT_SOURCE_HASHES, logicalPath))
-    return readRegionContentDocument(db, { logicalPath, expectedSourceHash: expectedSha256 });
+    return readRegionContentDocument(db, { logicalPath, expectedSourceHash: expectedSha256, predecessor });
   if (logicalPath === 'lore/editorial/Soul-Assignments.json') {
     if (expectedSha256 !== SOUL_ASSIGNMENT_SOURCE_SHA256) throw new Error('E_SCOPE_DB_SOURCE_HASH');
     if (!soulAssignments) throw new Error('E_SCOPE_PRIVATE_SOUL_REQUIRED');
@@ -214,7 +214,7 @@ export function readScopeCurrentSource({ db, logicalPath, expectedSha256, editor
     return readGeographyStore(db);
   }
   if (logicalPath === 'lore/regions/station-interiors.json') return readStationInteriorInputs(db, { expectedSourceHash: expectedSha256 });
-  if (logicalPath === 'lore/relations/opening-feudal-allocation.json') return readFeudalAllocationInputs(db, { expectedSourceHash: expectedSha256 });
+  if (logicalPath === 'lore/relations/opening-feudal-allocation.json') return readFeudalAllocationInputs(db, { expectedSourceHash: expectedSha256, predecessor });
   const census = Object.entries(CENSUS_DOCUMENT_PINS).find(([, pin]) => pin.path === logicalPath);
   if (census) {
     if (expectedSha256 !== census[1].sourceSha256) throw new Error('E_SCOPE_DB_SOURCE_HASH');

@@ -68,7 +68,7 @@ export async function loadPersonDetailSources({ db, inputSubset, expectedSourceH
   if (inputSubset === 'interiors') return { stationInteriors: readStationInteriorInputs(db,
     expectedSourceHashes === undefined ? {} : { expectedSourceHash: expectedSourceHashes['lore/regions/station-interiors.json'] }) };
   if (inputSubset === 'allocation') return { openingAllocation: readFeudalAllocationInputs(db,
-    expectedSourceHashes === undefined ? {} : { expectedSourceHash: expectedSourceHashes['lore/relations/opening-feudal-allocation.json'] }) };
+    { predecessor: true, ...(expectedSourceHashes === undefined ? {} : { expectedSourceHash: expectedSourceHashes['lore/relations/opening-feudal-allocation.json'] }) }) };
   if (inputSubset === 'offices') return { officeAppointmentSource: readOfficeAppointmentInputs(db,
     expectedSourceHashes === undefined ? {} : { expectedSourceHash: expectedSourceHashes['lore/relations/opening-office-appointments.json'] }) };
   if (inputSubset === 'holdings') {

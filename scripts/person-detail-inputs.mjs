@@ -310,7 +310,7 @@ export async function projectPersonHoldingsInputs(sources, { repoRoot, territory
 
 export async function loadPersonHoldingsContext(sources, { repoRoot, stateRows, stateCatalog }) {
   const bytesFor = sources.bytesFor ?? (async path => readSourceArchive(path, undefined, process.env.WIKI_DOCUMENT_DB ?? resolve(repoRoot, 'data/canonical/wiki-cast.sqlite')))
-  const read = async path => readCanonicalDocument(path, { databasePath: process.env.WIKI_DOCUMENT_DB ?? resolve(repoRoot, 'data/canonical/wiki-cast.sqlite') })
+  const read = async path => readCanonicalDocument(path, { predecessor: true, databasePath: process.env.WIKI_DOCUMENT_DB ?? resolve(repoRoot, 'data/canonical/wiki-cast.sqlite') })
   const lore = path => read(`lore/${path}`)
   const snapshotManifest = await read('snapshots/build-inputs/source-manifest.json')
   const snapshot = async name => {

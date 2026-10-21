@@ -9,7 +9,7 @@ import { readPermissionStore } from './permission-store.mjs'
 
 // Logical document names identify typed domains, not files or archived bodies.
 // Unsupported sources fail in the domain dispatcher; archives are never a fallback.
-export function readCanonicalDocument(logicalPath, { databasePath = process.env.WIKI_DOCUMENT_DB
+export function readCanonicalDocument(logicalPath, { predecessor = false, databasePath = process.env.WIKI_DOCUMENT_DB
   ?? fileURLToPath(new URL('../../data/canonical/wiki-cast.sqlite', import.meta.url)) } = {}) {
   if (isPrivateCurrentDocument(logicalPath)) return readPrivateCurrentDocument(logicalPath)
   const db = openReadOnly(databasePath)
@@ -24,6 +24,6 @@ export function readCanonicalDocument(logicalPath, { databasePath = process.env.
       corpusKind: identity.corpus_kind, visibility: 'internal' })
     const source = db.prepare('SELECT sha256 FROM source_file WHERE logical_path=?').get(logicalPath)
     if (!source) throw new Error(`E_CANONICAL_DOCUMENT_IDENTITY:${logicalPath}`)
-    return readScopeCurrentSource({ db, logicalPath, expectedSha256: source.sha256 })
+    return readScopeCurrentSource({ db, logicalPath, expectedSha256: source.sha256, predecessor })
   } finally { db.close() }
 }

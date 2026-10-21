@@ -8,10 +8,12 @@ import { ledger } from './lore-json-validate-ledger.mjs'
 import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
 import { listDocuments } from './cast-sqlite/document-read.mjs'
+import { isPrivateCurrentDocument } from './document-store/private-current-document.mjs'
 
 const args = process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url) ? process.argv.slice(2) : []
 const rootIndex = args.indexOf('--root')
 const fixtureRoot = rootIndex < 0 ? null : args[rootIndex + 1]
+const publicOnly = args.includes('--public')
 if (rootIndex >= 0) {
   const candidate = fixtureRoot && resolve(fixtureRoot)
   const gitRoot = candidate && existsSync(candidate) && spawnSync('git', ['rev-parse', '--show-toplevel'], { cwd: candidate, encoding: 'utf8' })
@@ -315,7 +317,7 @@ function report(failures, summary) {
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  const cliArgs = args.filter((_, index) => rootIndex < 0 || (index !== rootIndex && index !== rootIndex + 1))
+  const cliArgs = args.filter((arg, index) => arg !== '--public' && (rootIndex < 0 || (index !== rootIndex && index !== rootIndex + 1)))
   const strict = cliArgs.includes('--strict')
   const baseIndex = cliArgs.indexOf('--base')
   const base = baseIndex >= 0 ? cliArgs[baseIndex + 1] : 'origin/main'
@@ -326,7 +328,8 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   } else if (files.length) {
     report(validate(files.map((file) => resolve(file))), `${files.length} lore JSON document(s)`)
   } else if (strict) {
-    const authoring = loreFiles().filter((path) => path.endsWith('.json') && isAuthoring(path))
+    const authoring = loreFiles().filter((path) => path.endsWith('.json')
+      && (!publicOnly || !isPrivateCurrentDocument(path)) && isAuthoring(path))
     const unmigrated = unmigratedMarkdown(authoring)
     report([
       ...validate(authoring.map((path) => join(root, path))),

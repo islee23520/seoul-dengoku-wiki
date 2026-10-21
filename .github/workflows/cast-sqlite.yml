@@ -29,5 +29,5 @@ jobs:
       - name: Install dependencies
         run: npm ci --ignore-scripts
 
-      - name: Test cast SQLite
-        run: npm run test:cast-sqlite
+      - name: Verify current public SQLite authority
+        run: npm run cast:verify -- --db data/canonical/wiki-cast.sqlite

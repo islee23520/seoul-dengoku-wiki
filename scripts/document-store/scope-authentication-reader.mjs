@@ -20,7 +20,7 @@ export function scopeAuthenticationReader({ db, evidenceStore, root, bindings, h
     if (currentSourceHashes.has(logicalPath) && !(snapshot && verified.has(logicalPath))) {
       const expectedSha256 = currentSourceHashes.get(logicalPath);
       if (createHash('sha256').update(bytes).digest('hex') !== expectedSha256) throw Error('E_SCOPE_AUTHENTICATION_SOURCE_PIN');
-      const actual = readScopeCurrentSource({ db, logicalPath, expectedSha256, ...privateStores,
+      const actual = readScopeCurrentSource({ db, logicalPath, expectedSha256, ...privateStores, predecessor: true,
         ...(snapshot ? { snapshotDocuments } : {}) });
       const original = logicalPath.endsWith('.json') ? JSON.parse(bytes) : Buffer.from(bytes).toString('utf8');
       if (!isDeepStrictEqual(actual, original) || JSON.stringify(actual) !== JSON.stringify(original))

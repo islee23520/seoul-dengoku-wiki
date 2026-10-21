@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
+import { currentFeudalAllocation } from './cia-current-rights.mjs';
 
 export const FEUDAL_ALLOCATION_SOURCE_HASH = '21d7663507b896a43d70fc459f662376780b477b5c2078af100b2d42bbe7079d';
 const logicalPath = 'lore/relations/opening-feudal-allocation.json';
@@ -88,7 +89,7 @@ function orderedDocument(db, value) {
 }
 
 // SELECT-only runtime. No source file, archive record, JSON parsing or migration.
-export function readFeudalAllocationInputs(db, { expectedSourceHash = FEUDAL_ALLOCATION_SOURCE_HASH } = {}) {
+export function readFeudalAllocationInputs(db, { expectedSourceHash = FEUDAL_ALLOCATION_SOURCE_HASH, predecessor = false } = {}) {
   try {
     const receipts = db.prepare('SELECT * FROM feudal_allocation_input_import').all();
     if (receipts.length !== 1 || expectedSourceHash !== FEUDAL_ALLOCATION_SOURCE_HASH
@@ -97,7 +98,7 @@ export function readFeudalAllocationInputs(db, { expectedSourceHash = FEUDAL_ALL
     if (digest(data) !== m.domain_sha256) fail('typed domain digest');
     const result = orderedDocument(db, candidate(db, data, m.source_id));
     if (digest(result) !== m.document_sha256) fail('document digest');
-    return result;
+    return predecessor ? result : currentFeudalAllocation(db, result);
   } catch (error) { if (error.code === 'E_FEUDAL_ALLOCATION_INPUT') throw error; fail(error.message); }
 }
 

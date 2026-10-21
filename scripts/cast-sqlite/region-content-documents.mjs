@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import { currentRegionContent } from './cia-current-rights.mjs';
 
 export const REGION_CONTENT_SOURCE_HASHES = Object.freeze({
   "lore/regions/content/11110.json": "e61839e5bb3cfa94858a7548b462ba6c6a8367a473446b4307a18c7360346e9c",
@@ -165,7 +166,7 @@ export function initializeRegionContentDocuments(db, { schemaSql, sources, actor
 }
 
 /** SELECT-only reconstruction from typed tables; no archive, filesystem or JSON.parse. */
-export function readRegionContentDocument(db, { logicalPath, expectedSourceHash } = {}) {
+export function readRegionContentDocument(db, { logicalPath, expectedSourceHash, predecessor = false } = {}) {
   try {
     if (!Object.hasOwn(REGION_CONTENT_SOURCE_HASHES,logicalPath) || expectedSourceHash !== REGION_CONTENT_SOURCE_HASHES[logicalPath]) fail('explicit fixed path/hash required');
     const rows = table => db.prepare('SELECT * FROM ' + table + ' WHERE logical_path=?').all(logicalPath);
@@ -214,7 +215,7 @@ export function readRegionContentDocument(db, { logicalPath, expectedSourceHash 
     if (keys.size || Object.values(remaining).some(m => m.size)) fail('unconsumed rows');
     validate(document,'document');
     if (hash(JSON.stringify(document)) !== REGION_CONTENT_DOCUMENT_HASHES[logicalPath]) fail('complete document digest');
-    return document;
+    return predecessor ? document : currentRegionContent(db, document);
   } catch (error) {
     if (error.code === 'E_REGION_CONTENT_DOCUMENT') throw error;
     fail(error.message);
