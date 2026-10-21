@@ -34,9 +34,11 @@ const fail = (code, path) => { throw new Error(`${code}:${path}`) }
 const requireHash = (bytes, expected, code, path) => { if (sha256(bytes) !== expected) fail(code, path) }
 const pointer = (value, path) => path === '' ? value : path.split('/').slice(1).reduce((at, token) => at[token.replaceAll('~1', '/').replaceAll('~0', '~')], value)
 
-export async function readProjectionPredecessor(root, path, expectedSha256, code = 'E_PROJECTION_BEFORE_HASH') {
-  const { stdout } = await execFileAsync('git', ['show', `e9c12a43728a599c371d373088e177a446ff5051:${path}`], { cwd: root, encoding: 'buffer', maxBuffer: 8 * 1024 * 1024 })
-  const before = Buffer.from(stdout)
+export async function readProjectionPredecessor(root, path, expectedSha256, code = 'E_PROJECTION_BEFORE_HASH', reader = readFile) {
+  const revision = 'e9c12a43728a599c371d373088e177a446ff5051'
+  const before = reader.readHistorical
+    ? Buffer.from(await reader.readHistorical(revision, path, root))
+    : Buffer.from((await execFileAsync('git', ['show', `${revision}:${path}`], { cwd: root, encoding: 'buffer', maxBuffer: 8 * 1024 * 1024 })).stdout)
   requireHash(before, expectedSha256, code, path)
   return before
 }
@@ -44,7 +46,7 @@ export async function readProjectionPredecessor(root, path, expectedSha256, code
 async function externalTheatersPreimage(root, readBytes) {
   const path = 'lore/factions/External-Theaters.json'
   const before = await readProjectionPredecessor(root, path,
-    '85502259693e436ff38abec65fb98034a0533c6279dfed75475ae8f785da0e39', 'E_PROJECTION_PREIMAGE')
+    '85502259693e436ff38abec65fb98034a0533c6279dfed75475ae8f785da0e39', 'E_PROJECTION_PREIMAGE', readBytes)
   const packet = JSON.parse(await load(root, '.omo/private/seoul-migration/daejeon-four-applied-staging/combined-packet.json', readBytes))
   const value = JSON.parse(before)
   for (const operation of packet.operations.filter(row => row.file === path)) {
@@ -82,7 +84,7 @@ export async function materializeProjectionRefresh(root, { readBytes = readFile 
     const current = await load(root, row.path, readBytes)
     requireHash(current, row.afterSha256, 'E_PROJECTION_AFTER_HASH', row.path)
     const before = row.path === 'lore/factions/External-Theaters.json'
-      ? await externalTheatersPreimage(root, readBytes) : await readProjectionPredecessor(root, row.path, row.beforeSha256)
+      ? await externalTheatersPreimage(root, readBytes) : await readProjectionPredecessor(root, row.path, row.beforeSha256, 'E_PROJECTION_BEFORE_HASH', readBytes)
     requireHash(before, row.beforeSha256, 'E_PROJECTION_BEFORE_HASH', row.path)
     sources.push({ sourcePath: row.path, beforeSha256: row.beforeSha256, afterSha256: row.afterSha256,
       beforeBytes: before.length, afterBytes: current.length, changed: true, sealed: false })
