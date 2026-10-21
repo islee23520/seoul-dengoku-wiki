@@ -1,13 +1,10 @@
-import { existsSync, readFileSync } from 'node:fs'
-import { join } from 'node:path'
-import { fileURLToPath } from 'node:url'
 import { test } from 'vitest'
 import assert from 'node:assert/strict'
+import { readCanonicalAuthoringSchemas } from './cast-sqlite/authoring-schema-documents.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 
-const repoRoot = join(fileURLToPath(new URL('.', import.meta.url)), '..')
-const readJson = (path) => JSON.parse(readFileSync(join(repoRoot, path), 'utf8'))
-const ledger = readJson('lore/editorial/Naming-Ledger.json')
-const schema = readJson('lore/editorial/Naming-Ledger.schema.json')
+const ledger = readCanonicalDocument('lore/editorial/Naming-Ledger.json')
+const schema = readCanonicalAuthoringSchemas()['lore/editorial/Naming-Ledger.schema.json']
 
 // RFC 6901: '#/a/b' walks keys and array indexes; '~1' is '/' and '~0' is '~'.
 function resolvePointer(document, pointer) {
@@ -19,16 +16,19 @@ function resolvePointer(document, pointer) {
   return node
 }
 
-// A source must name an existing lore file; a '#' fragment must resolve as a JSON pointer in that file,
-// and the resolved block (or the whole file when there is no fragment) must contain every named term.
+// Source paths are document identities; fragments must resolve in the typed document.
 export function sourceFailures(source, terms = []) {
   const [path, pointer] = source.split('#')
-  if (!existsSync(join(repoRoot, path))) return [`missing file: ${source}`]
-  const text = readFileSync(join(repoRoot, path), 'utf8')
+  let document
+  try { document = readCanonicalDocument(path) } catch (error) {
+    if (error.message === `E_CANONICAL_DOCUMENT_IDENTITY:${path}`) return [`missing file: ${source}`]
+    throw error
+  }
+  const text = typeof document === 'string' ? document : JSON.stringify(document)
   let block = text
   if (pointer !== undefined) {
     if (!path.endsWith('.json') || !pointer.startsWith('/')) return [`not a JSON pointer: ${source}`]
-    const node = resolvePointer(JSON.parse(text), pointer)
+    const node = resolvePointer(document, pointer)
     if (node === undefined) return [`missing pointer: ${source}`]
     block = JSON.stringify(node)
   }

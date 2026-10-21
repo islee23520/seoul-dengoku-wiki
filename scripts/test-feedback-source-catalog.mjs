@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { mkdtemp, readFile, rm } from 'node:fs/promises'
 import { spawn } from 'node:child_process'
@@ -98,7 +99,7 @@ test('standalone entities remain atomic full-token segments', () => {
 })
 
 test('actual scalar person entity keeps canonical base offsets and CommonMark replacement semantics', async () => {
- const envelope=JSON.parse(await readFile(resolve('lore/characters/Cast-State-11.json'),'utf8')),detail=JSON.parse(await readFile(resolve('public/person-details/person-0273.json'),'utf8'))
+ const envelope=readCanonicalDocument('lore/characters/Cast-State-11.json'),detail=JSON.parse(await readFile(resolve('public/person-details/person-0273.json'),'utf8'))
  const index=envelope.content.findIndex(block=>block.anchor==='인물-송하율-list2'),item=envelope.content[index].items.findIndex(value=>typeof value.ko==='string'&&value.ko.includes('**생애.** ')),source=envelope.content[index].items[item].ko
  const marker='**생애.** ',start=source.indexOf(marker)+marker.length,sourceBase=Array.from(source.slice(0,start)).length
  assert.ok(start>=marker.length);assert.equal(source.slice(start),detail.sections['생애'].split('\n')[0])
@@ -161,7 +162,7 @@ test('person section spans adjacent rich-text runs with exact code-point provena
 })
 
 test('actual Shin Jun office section preserves current canonical rich-text runs in source order', async () => {
- const envelope=JSON.parse(await readFile(resolve('lore/characters/Core-Characters.json'),'utf8'))
+ const envelope=readCanonicalDocument('lore/characters/Core-Characters.json')
  const index=envelope.content.findIndex(block=>block.anchor==='신준-p3'),office=envelope.content[index].text.ko
  const section=office.slice(1).map(run=>run.text).join('').trim()
  const leaf=personFeedbackRecord({envelope,personId:'person-1010',route:'/people/person-1010',headingAnchor:'신준',locale:'ko',sections:{관직:section}}).leaves.find(value=>value.blockAnchor==='section:관직')
@@ -192,7 +193,7 @@ test('actual generated article and person leaves match renderer HTML surfaces an
 test('actual publication transforms and person surfaces exactly match current generated readers', async () => {
   const catalog=JSON.parse(await readFile(resolve('src/generated-private/feedback-selectable-views.ko.json'),'utf8'))
   const states=catalog.documents['DOC:Sixteen-States'],statesLeaves=states.revisions[states.currentRevision].leaves
-  const stateSource=JSON.parse(await readFile(resolve('lore/factions/Sixteen-States.json'),'utf8'));assert.equal(statesLeaves.find((leaf)=>leaf.leafId==='table:cell:15:5').text,stateSource.content.find(block=>block.anchor==='table').rows[14][5].ko)
+  const stateSource=readCanonicalDocument('lore/factions/Sixteen-States.json');assert.equal(statesLeaves.find((leaf)=>leaf.leafId==='table:cell:15:5').text,stateSource.content.find(block=>block.anchor==='table').rows[14][5].ko)
   const houses=catalog.documents['DOC:Operating-Houses'],houseLeaves=houses.revisions[houses.currentRevision].leaves
   assert.equal(houseLeaves.some((leaf)=>leaf.text.includes('출처층: original-fiction')),false)
   assert.equal(catalog.documents['DOC:Glossary'],undefined)
@@ -212,7 +213,7 @@ test('every emitted current catalog span resolves to a canonical JSON pointer an
  const resolvePointer=(root,path)=>path.split('/').slice(1).reduce((value,part)=>value?.[part.replaceAll('~1','/').replaceAll('~0','~')],root)
  for(const [documentId,document] of Object.entries(catalog.documents)){
   let source
-  if(documentId.startsWith('PERSON:')){const detail=JSON.parse(await readFile(resolve(`public/person-details/${documentId.slice(7)}.json`),'utf8')),slug=detail.sourceRoute.split('/').at(-1).split('#')[0],path=slug==='Diaspora-Corridors'?`lore/factions/${slug}.json`:`lore/characters/${slug}.json`;source=sources.get(slug)??JSON.parse(await readFile(resolve(path),'utf8'));sources.set(slug,source)}else{const slug=document.route.split('/').at(-1);const files={ 'Sixteen-States':'lore/factions/Sixteen-States.json','Operating-Houses':'lore/Operating-Houses.json' };if(files[slug])source=JSON.parse(await readFile(resolve(files[slug]),'utf8'));else continue}
+  if(documentId.startsWith('PERSON:')){const detail=JSON.parse(await readFile(resolve(`public/person-details/${documentId.slice(7)}.json`),'utf8')),slug=detail.sourceRoute.split('/').at(-1).split('#')[0],path=slug==='Diaspora-Corridors'?`lore/factions/${slug}.json`:`lore/characters/${slug}.json`;source=sources.get(slug)??readCanonicalDocument(path);sources.set(slug,source)}else{const slug=document.route.split('/').at(-1);const files={ 'Sixteen-States':'lore/factions/Sixteen-States.json','Operating-Houses':'lore/Operating-Houses.json' };if(files[slug])source=readCanonicalDocument(files[slug]);else continue}
   for(const leaf of document.revisions[document.currentRevision].leaves)for(const span of leaf.sourceSegments){assert.equal(span.path.includes('#'),false,`${documentId}:${span.path}`);const value=resolvePointer(source,span.path);assert.equal(typeof value,'string',`${documentId}:${span.path}`);assert.ok(span.start>=0&&span.end<=Array.from(value).length&&span.start<span.end,`${documentId}:${span.path}:${span.start}-${span.end}`)}
  }
 })
@@ -223,7 +224,7 @@ test('actual person order, hidden-section filtering and duplicate source provena
  const detail=JSON.parse(await readFile(resolve('public/person-details/person-0002.json'),'utf8'))
  assert.deepEqual(sections,PERSON_SECTION_ORDER.filter((label)=>detail.sections[label]))
  const hidden=catalog.documents['PERSON:person-0998'],hiddenLeaves=hidden.revisions[hidden.currentRevision].leaves;assert.equal(hiddenLeaves.some((leaf)=>leaf.blockAnchor==='section:신념'),false)
- const envelope=JSON.parse(await readFile(resolve('lore/characters/Cast-State-01.json'),'utf8')),mutatedDetail=structuredClone(detail),listIndex=envelope.content.findIndex(block=>block.anchor==='인물-이서담-list2'),officeIndex=envelope.content.findIndex(block=>block.anchor==='인물-이서담-p3'),lifeItem=envelope.content[listIndex].items.findIndex(item=>Array.isArray(item.ko)&&item.ko.some(run=>run.strong&&run.text==='생애.')),lifeRun=envelope.content[listIndex].items[lifeItem].ko.findIndex(run=>run.strong&&run.text==='생애.')+1,lifeText=envelope.content[listIndex].items[lifeItem].ko[lifeRun].text.trim()
+ const envelope=readCanonicalDocument('lore/characters/Cast-State-01.json'),mutatedDetail=structuredClone(detail),listIndex=envelope.content.findIndex(block=>block.anchor==='인물-이서담-list2'),officeIndex=envelope.content.findIndex(block=>block.anchor==='인물-이서담-p3'),lifeItem=envelope.content[listIndex].items.findIndex(item=>Array.isArray(item.ko)&&item.ko.some(run=>run.strong&&run.text==='생애.')),lifeRun=envelope.content[listIndex].items[lifeItem].ko.findIndex(run=>run.strong&&run.text==='생애.')+1,lifeText=envelope.content[listIndex].items[lifeItem].ko[lifeRun].text.trim()
  assert.equal(lifeText,detail.sections['생애'].split('\n')[0]);envelope.content[officeIndex].text.ko[1].text=` ${lifeText}`;mutatedDetail.sections['관직']=lifeText
  const duplicate=personFeedbackRecord({envelope,personId:detail.id,route:detail.detailRoute,headingText:`인물 ${detail.name}`,locale:'ko',sections:mutatedDetail.sections}),life=duplicate.leaves.find((leaf)=>leaf.leafId==='section:생애:paragraph:0'),office=duplicate.leaves.find((leaf)=>leaf.leafId==='section:관직:paragraph:0')
  assert.equal(life.text,office.text);assert.equal(life.sourceSegments[0].path,`/content/${listIndex}/items/${lifeItem}/ko/${lifeRun}/text`);assert.equal(office.sourceSegments[0].path,`/content/${officeIndex}/text/ko/1/text`)
@@ -272,7 +273,7 @@ test('actual generated private catalog validates through the confirmed U3 HTTP p
   const submit = async (value, key) => fetch(`${base}/api/feedback/submissions`, { method: 'POST', headers: { cookie, 'x-csrf-token': authBody.csrfToken, 'idempotency-key': key, 'content-type': 'application/json' }, body: JSON.stringify({ anchor: value, body: 'catalog integration', reason: '기타' }) })
   assert.equal((await submit(anchor, 'catalog-valid')).status, 201)
   const states=catalog.documents['DOC:Sixteen-States'],statesLeaf=states.revisions[states.currentRevision].leaves.find((value)=>value.leafId==='table:cell:15:5');const statesAnchor={schemaVersion:'feedback-anchor.v1',documentId:states.documentId,route:states.route,locale:'ko',sourceRevision:states.currentRevision,selections:[{blockAnchor:statesLeaf.blockAnchor,blockKind:statesLeaf.blockKind,leafId:statesLeaf.leafId,exactQuote:statesLeaf.text,prefix:'',suffix:'',range:{start:0,end:Array.from(statesLeaf.text).length,unit:'unicode-code-point'},sourceSpans:statesLeaf.sourceSegments.map(({path,start,end,unit})=>({path,start,end,unit}))}]};assert.equal((await submit(statesAnchor,'catalog-states-date')).status,201)
-  const changed=JSON.parse(await readFile(resolve('lore/factions/Sixteen-States.json'),'utf8'));changed.content.find(block=>block.anchor==='table').rows[14][5].ko+=' 변경';const staleFromMutation=structuredClone(statesAnchor);staleFromMutation.sourceRevision=canonicalRevision(changed);const changedResponse=await submit(staleFromMutation,'catalog-source-mutated');assert.equal(changedResponse.status,422);assert.equal((await changedResponse.json()).error.code,'source-changed')
+  const changed=readCanonicalDocument('lore/factions/Sixteen-States.json');changed.content.find(block=>block.anchor==='table').rows[14][5].ko+=' 변경';const staleFromMutation=structuredClone(statesAnchor);staleFromMutation.sourceRevision=canonicalRevision(changed);const changedResponse=await submit(staleFromMutation,'catalog-source-mutated');assert.equal(changedResponse.status,422);assert.equal((await changedResponse.json()).error.code,'source-changed')
   const wrong = structuredClone(anchor); wrong.selections[0].sourceSpans[0].end += 1
   assert.equal((await submit(wrong, 'catalog-wrong')).status, 422)
   const stale = structuredClone(anchor); stale.sourceRevision = 'f'.repeat(64)

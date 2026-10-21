@@ -1,18 +1,23 @@
-import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { createHash } from 'node:crypto'
+import { fileURLToPath } from 'node:url'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readBirthCohortDocument, BIRTH_COHORT_SOURCE_HASH } from './cast-sqlite/birth-cohort-document.mjs'
+import { readPersonBirthdayInputs } from './cast-sqlite/person-inputs.mjs'
 
 // Owner approved the numeric bands. This candidate pins their derived assignment
 // snapshot; its byte hash is computed evidence, not a separate human hash approval.
 // Successor binding: .omo/private/seoul-migration/doc247-repin-20261019/successor.json
 // (921a4b46…) chained by .omo/private/seoul-migration/doc247-final-closure-20261019/source-successor.json
 const approvedCohortSha256 = 'b921694843a466dd807572b880a3b5019cf7892df3f1a3edbb5fcdb63bc182c7'
-const cohortText = await readFile(new URL('../lore/name-pools/cast-birth-cohorts.json', import.meta.url), 'utf8')
 export function assertBirthCohortContract(text) {
   if (createHash('sha256').update(text).digest('hex') !== approvedCohortSha256) throw new Error('E_BIRTH_COHORT_APPROVAL')
 }
-assertBirthCohortContract(cohortText)
-const cohortContract = JSON.parse(cohortText)
+const cohortContract = (() => {
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? fileURLToPath(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url)))
+  try { return readBirthCohortDocument(db, { expectedSourceHash: BIRTH_COHORT_SOURCE_HASH }) }
+  finally { db.close() }
+})()
 const assignedCohorts = new Map(cohortContract.assignments.map((entry) => [entry.personId, cohortContract.cohorts.find((cohort) => cohort.id === entry.cohort)]))
 
 const record = (value) => value !== null && typeof value === 'object' && !Array.isArray(value)
@@ -69,7 +74,13 @@ export function validateCastBirthdays(ledger, roster, { enforceAssignedCohort = 
   return births
 }
 
-export async function loadCastBirthdays(loreRoot, roster) {
-  const ledger = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-birthdays.json'), 'utf8'))
-  return validateCastBirthdays(ledger, roster, { enforceAssignedCohort: true })
+export async function loadCastBirthdays(loreRoot, roster, { ledger } = {}) {
+  if (ledger !== undefined) return validateCastBirthdays(ledger, roster, { enforceAssignedCohort: true })
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(loreRoot, '../data/canonical/wiki-cast.sqlite'))
+  try {
+    const { birthdayRoster, birthdaysById } = readPersonBirthdayInputs(db)
+    const names = new Map(birthdayRoster.map(person => [person.id, person.name]))
+    for (const person of roster) if (names.get(person.id) !== person.name) throw new Error(`E_BIRTH_IDENTITY:${person.id}:${person.name}`)
+    return new Map(roster.map(person => [person.id, birthdaysById.get(person.id)]))
+  } finally { db.close() }
 }

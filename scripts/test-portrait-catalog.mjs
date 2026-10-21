@@ -3,10 +3,14 @@ import { createHash } from 'node:crypto'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { portraitReviewFailures, generationEvidencePaths } from './portrait-public-boundary.mjs'
+import { loadPortraitDocuments } from './portrait-source-documents.mjs'
+import { fileURLToPath } from 'node:url'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+
+const portraitDocuments = () => loadPortraitDocuments(fileURLToPath(new URL('../', import.meta.url)))
 
 test('approved selection binds registered identities and prior image hashes', async () => {
-  const selection = JSON.parse(await readFile(new URL('../portrait-approved-selection.json', import.meta.url), 'utf8'))
-  const catalog = JSON.parse(await readFile(new URL('../portrait-catalog.json', import.meta.url), 'utf8'))
+  const { selection, catalog } = portraitDocuments()
   assert.equal(new Set(selection.records.map(row => row.personId)).size, selection.records.length)
   assert.equal(catalog.styleSource, 'public/portrait-tokens/{personId}.json')
   assert.equal(catalog.styleId, undefined)
@@ -25,12 +29,10 @@ test('approved selection binds registered identities and prior image hashes', as
 })
 
 test('portrait properties and immutable images follow the registered portrait catalog', async () => {
-  const catalog = JSON.parse(await readFile(new URL('../portrait-catalog.json', import.meta.url), 'utf8'))
-  const selection = JSON.parse(await readFile(new URL('../portrait-approved-selection.json', import.meta.url), 'utf8'))
+  const { catalog, selection, properties } = portraitDocuments()
   const selectedIds = new Set(selection.records.map(row => row.personId))
-  const properties = JSON.parse(await readFile(new URL('../portrait-properties.json', import.meta.url), 'utf8'))
-  const genders = JSON.parse(await readFile(new URL('../lore/name-pools/gender-cast.json', import.meta.url), 'utf8')).people
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8')).persons
+  const genders = readCanonicalDocument('lore/name-pools/gender-cast.json').people
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json').persons
   assert.ok(catalog.entries.length > 0)
   assert.equal(new Set(catalog.entries.map(entry => entry.personId)).size, catalog.entries.length)
   const iyen = catalog.entries.find(entry => entry.characterId === 'K1004')

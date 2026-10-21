@@ -1,25 +1,12 @@
 // World index for /world/. Leaders come from Core-Characters; the 16-state table from
 // Sixteen-States; the event feed from Scenario-Timeline. Pages authored as JSON are rendered
 // first so this does not read deleted wiki-source Markdown.
-import { readFileSync } from 'node:fs'
-import { basename, join } from 'node:path'
+import { resolve } from 'node:path'
 
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { stateNames } from './approved-organization-aliases.mjs'
-
-const readPage = (loreRoot, slug) => {
-  const candidates = [join(loreRoot, `${slug}.json`)]
-  const domains = ['characters', 'factions', 'chronology', 'overview', 'people-and-machines', 'places', 'offices', 'goods', 'structures', 'technology', 'ailments', 'culture', 'economy']
-  for (const domain of domains) candidates.push(join(loreRoot, domain, `${slug}.json`))
-  for (const path of candidates) {
-    let text
-    try { text = readFileSync(path, 'utf8') } catch { continue }
-    const document = JSON.parse(text)
-    if (!document || !Array.isArray(document.content)) continue
-    return renderLoreMarkdown(document, 'ko', (_domain, linked) => `${linked}.md`)
-  }
-  throw new Error(`E_WORLD_INDEX_SOURCE:${slug}`)
-}
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readCatalogPages } from './cast-sqlite/catalog-pages.mjs'
 
 const columnMap = (header) => header.split('|').slice(1, -1).map((cell) => cell.trim())
 
@@ -27,9 +14,21 @@ const cell = (row, prefix) => Object.entries(row).find(([key]) => key === prefix
 
 const publicStateName = (cell) => cell.replace(/\([^)]*\)/gu, '').trim()
 
-export function buildWorldIndex({ loreRoot, organizationAliases = new Map() }) {
-  const core = readPage(loreRoot, 'Core-Characters')
-  const sixteen = readPage(loreRoot, 'Sixteen-States')
+export function buildWorldIndex({ loreRoot, organizationAliases = new Map(), db,
+  dbPath = process.env.WIKI_DOCUMENT_DB ?? resolve(loreRoot, '../data/canonical/wiki-cast.sqlite') }) {
+  let pages
+  if (db || dbPath !== undefined) {
+    const connection = db ?? openReadOnly(dbPath)
+    try { pages = new Map(readCatalogPages(connection).map(({ slug, value }) => [slug, value])) }
+    finally { if (!db) connection.close() }
+  }
+  const source = (slug) => {
+    const document = pages.get(slug)
+    if (!document || !Array.isArray(document.content)) throw new Error(`E_WORLD_INDEX_SOURCE:${slug}`)
+    return renderLoreMarkdown(document, 'ko', (_domain, linked) => `${linked}.md`)
+  }
+  const core = source('Core-Characters')
+  const sixteen = source('Sixteen-States')
   const lines = sixteen.split('\n')
   const tableStart = lines.findIndex((line) => line.startsWith('|') && !/^\|\s*---/.test(line))
   if (tableStart < 0) throw new Error('E_WORLD_INDEX_TABLE')
@@ -72,7 +71,7 @@ export function buildWorldIndex({ loreRoot, organizationAliases = new Map() }) {
   const ungrounded = states.filter((state) => state.leader === '-').map((state) => state.name)
   if (ungrounded.length > 0) throw new Error(`E_WORLD_INDEX_LEADERS:${ungrounded.join(',')}`)
 
-  const timeline = readPage(loreRoot, 'Scenario-Timeline')
+  const timeline = source('Scenario-Timeline')
   let inFence = false
   const events = []
   for (const line of timeline.split('\n')) {

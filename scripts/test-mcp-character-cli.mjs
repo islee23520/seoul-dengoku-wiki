@@ -27,7 +27,7 @@ test('configured version store requires both sealed file paths and verifies thei
   for (const wrong of [
     { ...config, CHARACTER_PARENT_PIN_SOURCE: config.CHARACTER_POPULATED_SOURCE },
     { ...config, CHARACTER_POPULATED_SOURCE: config.CHARACTER_PARENT_PIN_SOURCE },
-    { ...config, CHARACTER_POPULATED_SOURCE: fileURLToPath(new URL('./issued-preservation-baseline.json', import.meta.url)) },
+    { ...config, CHARACTER_POPULATED_SOURCE: fileURLToPath(new URL('../package.json', import.meta.url)) },
   ]) assert.throws(() => configuredVersionStore(wrong), error => error.status === 503 && error.message === 'E_SOURCE_HASH')
   assert.throws(() => configuredVersionStore({ ...config, CHARACTER_PARENT_PIN_SOURCE: root + '/.omo/evidence/original-api/nonexistent-sealed-source.json' }), error => error.code === 'ENOENT')
   for (const [index, path] of Object.values(config).entries()) assert.deepEqual(await readFile(path), sources.get(REVISIONS[index]))

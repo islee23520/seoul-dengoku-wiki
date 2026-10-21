@@ -11,29 +11,19 @@
 //
 // 실행
 // - 검증: npm run test:person-id
-// - 생성: node lore/name-pools/verify-person-id-candidates.mjs --write [--force]
-//   (생성은 values-cast.json을 절대 고치지 않는다. 출력이 이미 있는 파일과 다르면 --force가 필요하다.)
+// - --write [--force]는 SQLite 저작 계약과 호환되지 않아 거부한다.
 //
 // 파괴 검사(mutations)는 RED-provable 이다: 검증 규칙이 없으면 아래 변이 테스트 자체가 실패한다.
 
 import { test } from "vitest";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
-import { execFileSync } from "node:child_process";
-import { fileURLToPath } from "node:url";
-import path from "node:path";
-import { readRendered } from "../../scripts/lore-read-rendered.mjs";
+import { readSourceArchive } from "../../scripts/cast-sqlite/source-archive.mjs";
+import { renderLoreMarkdown } from "../../scripts/lore-json-render.mjs";
 import { personIdValuesHash } from "./person-id-values-successor.mjs";
 
-const HERE = path.dirname(fileURLToPath(import.meta.url));
-const REPO = path.resolve(HERE, "..", "..");
-const VALUES_PATH = path.join(REPO, "lore", "name-pools", "values-cast.json");
-const ATLAS_PATH = path.join(REPO, "lore", "World-Narrative-Atlas.json");
-const LORE_DIR = path.join(REPO, "lore");
-// 인물 명부는 저작 JSON을 렌더해 읽는다 (Markdown 쌍둥이에 기대지 않는다).
-const readCharacters = (slug) => readRendered(LORE_DIR, "characters", slug);
-const TABLE_PATH = path.join(HERE, "person-id-candidates.json");
+// Issuance replay reads original bytes, never the reduced current roster.
+const readCharacters = (slug) => renderLoreMarkdown(JSON.parse(readSourceArchive(`lore/characters/${slug}.json`)), "ko");
 
 export const SCHEMA = "wiki-person-id-candidates.v1";
 export const FROZEN = { existingK: 422, candidates: 600, total: 1022 };
@@ -72,9 +62,9 @@ export function extractJsonArrayOnce(text, key) {
 }
 
 export function loadContext() {
-  const valuesBytes = readFileSync(VALUES_PATH);
+  const valuesBytes = readSourceArchive("lore/name-pools/values-cast.json");
   const valuesJson = JSON.parse(valuesBytes.toString("utf8"));
-  const atlasText = readFileSync(ATLAS_PATH, "utf8");
+  const atlasText = readSourceArchive("lore/World-Narrative-Atlas.json").toString("utf8");
   const humans = JSON.parse(atlasText).data.atlas.humans.map((h) => ({ ...h, name: h.name.ko }));
   const coreText = readCharacters("Core-Characters");
   const coreNames = [...coreText.matchAll(/^## (.+)$/gm)]
@@ -248,9 +238,9 @@ export function validateTable(table, ctx) {
 const CLI_WRITE = process.argv.includes("--write");
 
 if (!CLI_WRITE) {
-  assert.ok(existsSync(TABLE_PATH), "person-id-candidates.json이 있어야 한다 (먼저 --write로 생성한다)");
   const ctx = loadContext();
-  const committedBytes = readFileSync(TABLE_PATH, "utf8");
+  const committedBytes = readSourceArchive("lore/name-pools/person-id-candidates.json", "e208daf90927feeb9a04ac096190987a16903ab809e2265545fef9b968e30034").toString("utf8");
+  assert.ok(committedBytes.length, "person-id-candidates.json archive가 있어야 한다");
   const committed = JSON.parse(committedBytes);
   const regen1 = buildTable(ctx, committed.baseCommit);
   const regen2 = buildTable(ctx, committed.baseCommit);
@@ -341,21 +331,6 @@ test("(e) inputSha256이 인증된 values-cast 발급 선행본 해시와 같다
 // ---- CLI: --write ----
 
 if (CLI_WRITE) {
-  const head = execFileSync("git", ["-C", REPO, "rev-parse", "HEAD"], { encoding: "utf8" }).trim();
-  const fresh = serializeTable(buildTable(loadContext(), head));
-  if (existsSync(TABLE_PATH)) {
-    const current = readFileSync(TABLE_PATH, "utf8");
-    if (current === fresh) {
-      console.log("person-id-candidates.json이 이미 최신이다");
-    } else if (process.argv.includes("--force")) {
-      writeFileSync(TABLE_PATH, fresh);
-      console.log(`person-id-candidates.json을 강제 갱신했다 (sha256 ${sha256Hex(Buffer.from(fresh, "utf8"))})`);
-    } else {
-      console.error("출력이 이미 있는 파일과 다르다. 확인 후 --force로 갱신한다.");
-      process.exitCode = 1;
-    }
-  } else {
-    writeFileSync(TABLE_PATH, fresh);
-    console.log(`person-id-candidates.json을 생성했다 (sha256 ${sha256Hex(Buffer.from(fresh, "utf8"))})`);
-  }
+  console.error("E_IDENTITY_ISSUANCE_DB_ONLY: archived issuance is immutable; --write cannot author current SQLite candidates or recreate JSON.");
+  process.exitCode = 1;
 }

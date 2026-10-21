@@ -1,11 +1,11 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
-import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { correctedRailStations } from '../src/components/railStationCorrections.ts'
 
 test('every sourced regional interchange has one marker and retains its exact official line set', async () => {
-  const source = JSON.parse(await readFile(new URL('../lore/places/rail-station-identities.json', import.meta.url), 'utf8'))
-  const corrections = JSON.parse(await readFile(new URL('../lore/places/rail-station-corrections.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/places/rail-station-identities.json')
+  const corrections = readCanonicalDocument('lore/places/rail-station-corrections.json')
   // Exercise every approved observed member, not the retired, already-corrected
   // public rail output. Empty incoming memberships must be replaced by identity.
   const stations = source.groups.flatMap(identity => identity.members.map(member => ({ name: identity.name, ...member, lineIds: [] })))

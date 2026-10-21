@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
@@ -6,7 +7,7 @@ import { authenticateStationCatalogSuccessor, STATION_BEFORE, STATION_AFTER } fr
 import { createHash } from 'node:crypto'
 import { STATION_CATALOG_PATH, STATION_BOUNDARY_PATH, validateStationCatalogGeography } from './station-catalog-geography.mjs'
 
-const catalog = JSON.parse(await readFile(new URL('../' + STATION_CATALOG_PATH, import.meta.url)))
+const catalog = readCanonicalDocument(STATION_CATALOG_PATH)
 const boundary = await readFile(new URL('../' + STATION_BOUNDARY_PATH, import.meta.url))
 test('corrected catalog covers all coordinates and preserves all alias groups and surface Sinchon', () => {
   assert.equal(validateStationCatalogGeography(catalog, boundary).rowCount, 333)

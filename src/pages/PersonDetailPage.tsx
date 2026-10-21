@@ -3,7 +3,7 @@ import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { peopleCatalog } from '../generated/peopleCatalog'
-import portraitCatalog from '../../portrait-catalog.json'
+import { portraitSourceCatalog as portraitCatalog } from '../generated/portraitSourceCatalog'
 import { portraitPromptApiUrl, portraitTokenApiUrl } from '../portraitTokenApi'
 import FeedbackComposer from '../components/FeedbackComposer'
 import { FeedbackSurface } from '../components/FeedbackSurface'
@@ -11,8 +11,7 @@ import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
 import type { PersonRightsPermissions, PermissionStatus } from '../personRightsPermissions'
 import type { FamilyTreeData } from '../components/FamilyTree'
 import { nonKoreanFamilyCatalog } from '../generated/nonKoreanFamilyCatalog'
-import nameChanges from '../../scripts/person-sheet-name-changes.json'
-import preservationBaseline from '../../scripts/issued-preservation-baseline.json'
+import { personSheetNameChanges as nameChanges, preservationBaseline } from '../generated/personSheetSources'
 
 type Relation = { from: string; type: string; to: string; basis: string }
 type ProfileText = { readonly ko: string; readonly en: string }

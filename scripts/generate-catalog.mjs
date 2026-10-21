@@ -5,13 +5,15 @@ import proj4 from 'proj4'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
-import { materializeWorldAtlas } from './materialize-world-atlas.mjs'
+import { materializeWorldAtlas } from './cast-sqlite/atlas-materializer.mjs'
 import { atlasPeopleContext } from './atlas-people-context.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { publicHouseContent } from './public-house-content.mjs'
+import { publicOfficeContent } from './public-office-content.mjs'
+import { publicMapContent } from './public-map-content.mjs'
 import { buildWorldIndex } from './build-world-index.mjs'
 import { loadApprovedOrganizationAliases } from './approved-organization-aliases.mjs'
-import { categoryEntities, categoryIndex, loadCategoryRegistry, publishedRegistrationErrors, registeredCategories } from './category-registration.mjs'
+import { categoryEntities, categoryIndex, publishedRegistrationErrors, registeredCategories } from './category-registration.mjs'
 import { latestUpdates } from './update-history.mjs'
 import { wikiPublicationManifest } from './publication-manifest.mjs'
 import { localizedDocuments } from './localized-documents.mjs'
@@ -25,25 +27,64 @@ import { regularLineGraph } from './regular-line-graph.mjs'
 import { projectClanFamilyTree } from './cast-family-trees.mjs'
 import { projectNonKoreanFamilies } from './non-korean-family-catalog.mjs'
 import { hegemonsForHolders, currentBasePoint, territoryLabel } from './current-affiliation.mjs'
-import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
-import { loadPersonDetailSources, produceFromPersonDetailSources, projectPersonStateInputs, projectPersonHoldingsInputs } from './person-detail-inputs.mjs'
+import { buildAdminTerritorialScale, buildAdminTerritorialScaleFromDb } from './admin-territorial-scale.mjs'
+import { produceFromPersonDetailSources, projectPersonStateInputs, projectPersonHoldingsInputs } from './person-detail-inputs.mjs'
 export { authenticateNonowningRights, projectCatalogOutsideOccupation, projectCatalogHoldings, loadApprovedRightsHistory, projectCatalogCurrentHoldings, currentOfficeAppointments } from './person-detail-inputs.mjs'
 import { authenticateNonowningRights, projectCatalogOutsideOccupation, loadApprovedRightsHistory, currentOfficeAppointments } from './person-detail-inputs.mjs'
 export { projectPersonHoldings } from './person-detail-production.mjs'
 import { generatorStage, requireGenerationPublication } from './generate-release.mjs'
 import { loadScopeInput } from './check-seoul-scope.mjs'
-import { admitPublicPersonDetails, loadPersonDetailMappingAuthority } from './public-person-detail-admission.mjs'
+import { admitPublicPersonDetails, loadPersonDetailMappingAuthority, loadDatabasePersonDetailMappingAuthority } from './public-person-detail-admission.mjs'
 import { manifestForPublicFiles, publishPublicAssets, verifiedLegacyManifest } from './seoul-public-assets.mjs'
-import { projectGeographicTitles, projectPhysicalRail } from '../src/components/geographicTitleMap.mjs'
+import { projectGeographicTitles, publicGeographicScope, publicTerritorialScale } from '../src/components/geographicTitleMap.mjs'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
+import { isDeepStrictEqual } from 'node:util'
 import { loadStationCatalogGeography, loadOutsideStationIds } from './station-catalog-geography.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readBoundaryGeometries } from './cast-sqlite/boundary-geometries.mjs'
+import { readPhysicalRail } from './cast-sqlite/physical-rail.mjs'
+import { readCatalogPages, readCatalogGlossary } from './cast-sqlite/catalog-pages.mjs'
+import { loadDatabasePersonProductionInputs, loadMigratedPersonInputs } from './cast-sqlite/person-detail-inputs.mjs'
+import { loadCharacterProfiles } from './validate-character-profiles.mjs'
+import { authenticatePersonalTierProvenance } from './personal-tier-provenance.mjs'
+import { retirementProsePredecessorReader } from './retirement-prose-successor.mjs'
+import { loadCiaFacilityProjection } from './cia-facility-projection-input.mjs'
+import { projectCiaFacilityRegions, projectCiaFacilityHoldings, projectCiaFacilityPersonDetails } from './cia-facility-publication.mjs'
+import { personFeedbackRecord } from './feedback-source-catalog.mjs'
+import { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } from './document-store/evidence.mjs'
+import { openEditorialProfiles, INTERNAL_PROFILE_CAPABILITY, EDITORIAL_PROFILE_SOURCE_HASHES } from './document-store/editorial-profile.mjs'
+import { readPublicCharacterProfileInputs } from './cast-sqlite/profile-inputs.mjs'
+import { preserveReceiptOrder, orderDocumentKeys } from './cast-sqlite/document-key-order.mjs'
+import { readPortraitDocuments } from './cast-sqlite/portrait-store.mjs'
+import { readGeographyStore } from './cast-sqlite/geography-store.mjs'
+import { readEvidenceDocumentReference } from './cast-sqlite/evidence-document-reference.mjs'
+import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
+import { readRetirementProse, projectRetirementProse } from './cast-sqlite/retirement-prose.mjs'
+import { projectActiveRoster, projectActivePersonIndex } from './person-roster-projection.mjs'
+import { readCatalogMetadata, CATEGORY_REGISTRY_PATH, OFFICIAL_SEOUL_LINES_PATH, UPDATE_HISTORY_PATH } from './cast-sqlite/catalog-metadata.mjs'
+import { readPopulationDocument, POPULATION_SOURCE_HASH } from './cast-sqlite/population-document.mjs'
+import { readWorldGraphDocument, WORLD_GRAPH_SOURCE_HASH } from './cast-sqlite/world-graph-document.mjs'
+import { readRailSourceDocument, RAIL_SOURCE_HASHES } from './cast-sqlite/rail-source-documents.mjs'
+import { readRegionContentDocument, REGION_CONTENT_SOURCE_HASHES } from './cast-sqlite/region-content-documents.mjs'
+import { readCreativeNameDocument, CREATIVE_NAME_SOURCE_HASH } from './cast-sqlite/creative-name-document.mjs'
+import { readLandmarkRoleDocument, LANDMARK_ROLE_SOURCE_HASH } from './cast-sqlite/landmark-role-document.mjs'
+import { readClanCatalogDocument, CLAN_CATALOG_SOURCE_HASH } from './cast-sqlite/clan-catalog-document.mjs'
+import { readRetiredTerritoryDocuments, RETIRED_TERRITORY_SOURCE_HASHES } from './cast-sqlite/retired-territory-documents.mjs'
+import { readRegionAtlasData, REGION_ATLAS_SOURCE_HASH } from './cast-sqlite/region-atlas-document.mjs'
 
-export async function projectCatalogTimeline(centuryAnnalsDocument, relatedTimelineDocuments) {
+export const publicCatalogContent = (document, activeIds, activeRoutes) => projectActivePersonIndex(publicMapContent(publicOfficeContent(publicHouseContent(document))), activeIds, activeRoutes)
+
+export async function projectCatalogTimeline(centuryAnnalsDocument, relatedTimelineDocuments, readBytes = readFile) {
   const sourcePath = 'lore/chronology/Century-Annals.json'
-  const sourceBytes = await readFile(centuryAnnalsDocument.path)
-  return projectSeoulCurrentTimeline(centuryAnnalsDocument.value.content, relatedTimelineDocuments, {
-    sourcePath, sourceBytes, review: await loadTimelineReviewAuthority(),
+  const sourceBytes = await readBytes(centuryAnnalsDocument.path)
+  const content = centuryAnnalsDocument.value.content
+  const sourceContent = JSON.parse(sourceBytes.toString()).content
+  if (!isDeepStrictEqual(content, sourceContent)) throw new Error('E_TIMELINE_SOURCE_AUTHORITY')
+  // Historical receipt hashes use JSON insertion order. Preserve that evidence
+  // order without substituting archived values for the typed DB content.
+  return projectSeoulCurrentTimeline(preserveReceiptOrder(content, sourceContent), relatedTimelineDocuments, {
+    sourcePath, sourceBytes, review: await loadTimelineReviewAuthority(readBytes),
   })
 }
 
@@ -83,19 +124,59 @@ export async function writePublicPersonDetails(details, scopeInput, writeDetail,
   for (const detail of details) await writeDetail(detail)
 }
 
+export function publicJurisdictionReferences(rows) {
+  return rows.map(row => ({ ...row,
+    ...(row.geographicScope ? { geographicScope: publicGeographicScope(row.geographicScope) } : {}),
+    ...(row.jurisdiction?.countyTitleIds ? { jurisdiction: publicGeographicScope(row.jurisdiction) } : {}),
+  }))
+}
+
 
 // Importing the real validators in tests must never run the publishing pipeline.
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
+if (!process.env.WIKI_DOCUMENT_DB) {
+  const environment = JSON.parse(await readFile(resolve(projectRoot,
+    '.omo/private/seoul-migration/sqlite-authority-20261021/build-environment.json'), 'utf8'))
+  for (const [key, value] of Object.entries(environment)) {
+    if (!/^WIKI_[A-Z_]+$/u.test(key) || typeof value !== 'string') throw new Error('E_PUBLICATION_DATABASE_CONFIG')
+    process.env[key] ??= value
+  }
+}
+const typedCatalogSource = (read) => {
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite'))
+  try { return read(db) } finally { db.close() }
+}
+const catalogMetadata = (() => {
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite'))
+  try { return readCatalogMetadata(db) } finally { db.close() }
+})()
 const publicationReview = await requireGenerationPublication(projectRoot)
+const sourceDatabaseBundle = process.env.WIKI_PUBLICATION_DATABASE_CONFIG
+  ? await (await import('./document-store/publication-database-inputs.mjs')).openPublicationDatabaseInputs(projectRoot,
+    JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))) : null
+const sourceRead = async (path, encoding) => {
+  const target = path instanceof URL ? fileURLToPath(path) : path
+  const bytes = sourceDatabaseBundle ? await sourceDatabaseBundle.inputs.readBytes(target) : await readFile(target)
+  return encoding === 'utf8' ? Buffer.from(bytes).toString('utf8') : bytes
+}
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(repoRoot, 'lore'))
-const geographyBytes = await readFile(resolve(loreRoot, 'regions/seoul-electoral-titles.json'))
-const territorialScale = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8')).data.territorialScale
-const geographicScale = buildAdminTerritorialScale({ geographyBytes, territorialScale })
-const geography = JSON.parse(geographyBytes.toString())
+let geography, territorialScale, geographicScale
+{
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
+  try {
+    db.exec('BEGIN')
+    geographicScale = buildAdminTerritorialScaleFromDb(db)
+    geography = readGeographyStore(db)
+    const offices = readEvidenceDocumentReference(db, { logicalPath: 'lore/offices/Offices-and-Ranks.json',
+      expectedSha256: '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e' })
+    territorialScale = orderDocumentKeys(db, offices.sourceId, offices.document).data.territorialScale
+    db.exec('COMMIT')
+  } finally { db.close() }
+}
 const { root: outputRoot, writeFile } = await generatorStage(projectRoot)
-const nonowningApprovalBytes = await readFile(new URL('./approved-daejeon-nonowning-rights.json', import.meta.url))
+const nonowningApprovalBytes = await sourceRead(new URL('./approved-daejeon-nonowning-rights.json', import.meta.url))
 authenticateNonowningRights(nonowningApprovalBytes)
 // Fail before touching generated output when either revision is unbound or invalid.
 const worldJsonRoot = resolve(outputRoot, 'src/generated/world')
@@ -150,65 +231,36 @@ const normalizeMarkdown = (markdown, domain, routeBySlug) => stripProjectionHead
   .replace(/<NavBox[\s\S]*?<\/NavBox>/g, ''))
   .replace(/\]\(([^)]+)\)/g, (_full, href) => `](${rewriteRelativeHref(href, domain, routeBySlug)})`)
 
-const firstExisting = async (candidates) => {
-  for (const candidate of candidates) {
-    try {
-      if ((await stat(candidate)).isFile()) return candidate
-    } catch {}
-  }
-  throw new Error(`E_SOURCE_MISSING:${candidates.join('|')}`)
-}
 
-const snapshotRoot = process.env.WIKI_SNAPSHOT_ROOT ?? resolve(repoRoot, 'snapshots/build-inputs')
-const outsideRoots = process.env.SEOUL_KENSHI_ROOT ? [process.env.SEOUL_KENSHI_ROOT] : []
-const resolveOutside = (relativePath) => firstExisting([
-  resolve(snapshotRoot, relativePath.split('/').pop()),
-  ...outsideRoots.map((root) => resolve(root, relativePath)),
-])
-
-const loreJsonDocument = (value) => value && typeof value === 'object' && !Array.isArray(value) && typeof value.domain === 'string' && Array.isArray(value.content)
-
-const walkLoreJson = async (dir, acc = []) => {
-  for (const entry of await readdir(dir, { withFileTypes: true })) {
-    if (entry.name.startsWith('.')) continue
-    const path = join(dir, entry.name)
-    if (entry.isDirectory()) {
-      if (['name-pools', 'regions', 'editorial', 'sources'].includes(entry.name)) continue
-      await walkLoreJson(path, acc)
-      continue
-    }
-    if (!entry.isFile() || !entry.name.endsWith('.json') || entry.name.startsWith('authoring.')) continue
-    const value = JSON.parse(await readFile(path, 'utf8'))
-    if (loreJsonDocument(value)) acc.push({ path, value, slug: basename(entry.name, '.json') })
-  }
-  return acc
-}
-
-const categoryRegistry = await loadCategoryRegistry(resolve(dirname(fileURLToPath(import.meta.url)), 'category-registry.json'))
+const categoryRegistry = catalogMetadata[CATEGORY_REGISTRY_PATH]
 
 await mkdir(worldJsonRoot, { recursive: true })
 await mkdir(worldEnJsonRoot, { recursive: true })
 await mkdir(generatedRoot, { recursive: true })
 await mkdir(publicRoot, { recursive: true })
 
-const atlasPeople = await atlasPeopleContext(loreRoot)
+const articleDatabasePath = process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite')
+const atlasPeople = await atlasPeopleContext(loreRoot, { dbPath: articleDatabasePath })
 await materializeWorldAtlas({
   atlasPath: resolve(loreRoot, 'World-Narrative-Atlas.json'),
   outDir: loreRoot,
   check: true,
   peopleContext: atlasPeople,
+  dbPath: articleDatabasePath,
 })
-const jsonPages = await walkLoreJson(loreRoot)
-const publishedRoutes = new Set(publishedDocuments(await approvedDocuments(loreRoot), publicationReview).map(({ route }) => route))
+const jsonPages = typedCatalogSource(db => readCatalogPages(db)
+  .map(page => ({ ...page, path: resolve(projectRoot, page.path) })))
+const publishedRoutes = new Set(publishedDocuments(await approvedDocuments(loreRoot, { categoryRegistry, dbPath: articleDatabasePath }), publicationReview).map(({ route }) => route))
 const categoryErrors = publishedRegistrationErrors(jsonPages.map((page) => ({ ...page, name: basename(page.path) })), publishedRoutes, categoryRegistry)
 if (categoryErrors.length) throw new Error(categoryErrors.join('\n'))
 const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
 const pagesBySlug = new Map(jsonPages.map((page) => [page.slug, page]))
 const glossaryPath = resolve(loreRoot, 'glossary.json')
-const glossaryPage = { path: glossaryPath, slug: 'Glossary', value: glossaryDocument(JSON.parse(await readFile(glossaryPath, 'utf8'))) }
+const glossaryEntries = typedCatalogSource(db => readCatalogGlossary(db))
+const glossaryPage = { path: glossaryPath, slug: 'Glossary', value: glossaryDocument(glossaryEntries) }
 // Approved public nomenclature for a fictional organization grounds the same state leader.
-const organizationAliases = await loadApprovedOrganizationAliases(projectRoot)
-const worldIndex = buildWorldIndex({ loreRoot, organizationAliases })
+const organizationAliases = await loadApprovedOrganizationAliases(projectRoot, sourceRead)
+const worldIndex = buildWorldIndex({ loreRoot, organizationAliases, dbPath: articleDatabasePath })
 
 const renderedBySlug = new Map()
 for (const page of jsonPages) {
@@ -230,7 +282,32 @@ for (const slug of renderedBySlug.keys()) {
   if (!category || !categoryRegistry.categories.some((entry) => entry.id === category)) throw new Error(`E_CATEGORY_PROJECTION:${slug}`)
   categoriesBySlug.set(slug, [category])
 }
-const personSources = await loadPersonDetailSources({ repoRoot, loreRoot, pagesBySlug, renderedBySlug, atlasPeople })
+const personSources = process.env.WIKI_DOCUMENT_DB ? await (async () => {
+  if (!process.env.WIKI_TIER_EVIDENCE_DB || !process.env.WIKI_TIER_HISTORY_DB) throw new Error('E_PERSON_EVIDENCE_DATABASE_REQUIRED')
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
+  const evidenceStore = openEvidenceStore(process.env.WIKI_TIER_EVIDENCE_DB, { capability: INTERNAL_EVIDENCE_CAPABILITY })
+  const historyStore = openEvidenceStore(process.env.WIKI_TIER_HISTORY_DB, { capability: INTERNAL_EVIDENCE_CAPABILITY })
+  try {
+    db.exec('BEGIN')
+    const inputs = await loadDatabasePersonProductionInputs({ db, repoRoot,
+      editorialProfileDb: process.env.WIKI_EDITORIAL_PROFILE_DB, soulAssignmentDb: process.env.WIKI_SOUL_ASSIGNMENT_DB,
+      evidenceStore, historyStore })
+    // These already-typed page Maps also contain the computed Glossary/index.
+    inputs.pagesBySlug = pagesBySlug
+    inputs.renderedBySlug = renderedBySlug
+    db.exec('COMMIT')
+    return inputs
+  } finally { historyStore.close(); evidenceStore.close(); db.close() }
+})() : await (async () => {
+  const db = openReadOnly(articleDatabasePath)
+  try {
+    const inputs = await loadMigratedPersonInputs({ db, repoRoot })
+    return { ...inputs, pagesBySlug, renderedBySlug,
+      characterProfiles: await loadCharacterProfiles(repoRoot),
+      personalTierPreservation: await authenticatePersonalTierProvenance(repoRoot,
+        await retirementProsePredecessorReader(repoRoot, readFile)), personFeedbackRecord }
+  } finally { db.close() }
+})()
 const { peopleSource, lineageByName, issuedById, issuedIdByName,
   familyGraph, originalHoldings, officeAppointmentSource } = personSources
 
@@ -238,15 +315,28 @@ const { peopleSource, lineageByName, issuedById, issuedIdByName,
 // a Markdown-only corpus publishes its Korean body alone.
 const documents = []
 const englishDocuments = []
+const rosterDatabasePath = process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite')
+const activePersonIds = (() => {
+  const db = openReadOnly(rosterDatabasePath)
+  try {
+    if (!db.prepare("SELECT 1 FROM sqlite_schema WHERE name='person_disposition'").get()) return undefined
+    return new Set([...readPersonDisposition(db)].filter(([, row]) => row.status === 'active').map(([id]) => id))
+  } finally { db.close() }
+})()
+const activePersonRoutes = activePersonIds ? new Set([...activePersonIds]
+  .map(id => atlasPeople.routes.get(id)?.detailRoute).filter(Boolean)) : undefined
+const currentProseChanges = typedCatalogSource(db => db.prepare("SELECT 1 FROM sqlite_schema WHERE name='retirement_prose'").get()
+  ? readRetirementProse(db) : [])
 for (const domain of domains) {
   for (const slug of [...renderedBySlug.keys()].filter((slug) => publishedRoutes.has(`/world/${slug === 'index' ? '' : slug}`)).sort((left, right) => left.localeCompare(right))) {
     const page = pagesBySlug.get(slug)
     for (const document of localizedDocuments({
       domain,
       slug,
-      json: page?.value,
+      json: page ? publicCatalogContent(projectRetirementProse(page.value, relative(projectRoot, page.path), currentProseChanges),
+        activePersonIds, activePersonRoutes) : undefined,
       markdown: page ? undefined : renderedBySlug.get(slug),
-      renderJson: (value, locale) => renderLoreMarkdown(publicHouseContent(value), locale, (_domain, target) => `${target}.md`),
+      renderJson: (value, locale) => renderLoreMarkdown(value, locale, (_domain, target) => `${target}.md`),
       titleFallback: normalizeTitle,
     })) {
       const entry = { ...document, categories: categoriesBySlug.get(slug) ?? [], name: `${slug}.md` }
@@ -286,8 +376,9 @@ for (const document of documents) await writeDocument(worldJsonRoot, document, r
 for (const document of englishDocuments) await writeDocument(worldEnJsonRoot, document, englishRouteBySlug)
 
 const feedbackRecords = [...documents, ...englishDocuments].flatMap((document) => {
-  const envelope = pagesBySlug.get(document.slug)?.value
-  return envelope && envelope.id !== 'DOC:Glossary' ? [articleFeedbackRecord({ envelope, route: document.route, locale: document.locale, blocks: publishedBlocks.get(`${document.locale}:${document.slug}`) })] : []
+  const original = pagesBySlug.get(document.slug)?.value
+  const envelope = original ? publicCatalogContent(original) : original
+  return envelope && envelope.id !== 'DOC:Glossary' ? [articleFeedbackRecord({ envelope, sourceEnvelope: original, route: document.route, locale: document.locale, blocks: publishedBlocks.get(`${document.locale}:${document.slug}`) })] : []
 })
 
 const lines = [
@@ -331,21 +422,27 @@ await writeFile(resolve(publicRoot, 'wiki-contract.json'), `${JSON.stringify({
   englishDocuments: englishDocuments.map(({ domain, slug, route, title }) => ({ domain, slug, route, title })),
 }, null, 2)}\n`)
 
-const updateHistory = JSON.parse(await readFile(resolve(projectRoot, 'data/update-history.json'), 'utf8'))
+const updateHistory = catalogMetadata[UPDATE_HISTORY_PATH]
 const wikiUpdates = latestUpdates(updateHistory.updates)
 await writeFile(resolve(generatedRoot, 'wikiUpdates.ts'), `export type WikiUpdate = { readonly date: string; readonly sequence: number; readonly title: string; readonly category: string; readonly status: string; readonly source: string; readonly route: string }\n\nexport const wikiUpdateHistory = ${JSON.stringify(updateHistory.updates, null, 2)} as const satisfies readonly WikiUpdate[]\n\nexport const wikiUpdates = ${JSON.stringify(wikiUpdates, null, 2)} as const satisfies readonly WikiUpdate[]\n`)
 
 const { stateSource, stateRows, stateCatalog, stateNameById, tiersByState, affiliations, stateIdByName } = projectPersonStateInputs(renderedBySlug, pagesBySlug, { organizationAliases })
 await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type CurrentHegemon = { readonly kind: 'state'; readonly stateId: string; readonly name: string } | { readonly kind: 'union'; readonly name: string } | { readonly kind: 'neutral'; readonly name: string }\nexport type CurrentBase = { readonly kind: 'station'; readonly stationId: string; readonly name: string } | { readonly kind: 'facility'; readonly landmarkId: string; readonly name: string }\nexport type StateRecord = { currentHegemon: CurrentHegemon; currentBase: CurrentBase; currentExclusiveDistricts: 'none' | 'immediate-holdings'; slug: string; id: string; name: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
 
-const regionAtlasSource = await readFile(process.env.WIKI_REGION_ATLAS_PATH || await resolveOutside('TOOL/tools/regions/data/atlas-data.js'), 'utf8')
-const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
-const populationSource = JSON.parse(await readFile(resolve(loreRoot, 'regions/sources/population-2026-08.json'), 'utf8'))
+const regionAtlas = typedCatalogSource(db => readRegionAtlasData(db, { expectedSourceHash: REGION_ATLAS_SOURCE_HASH }))
+const populationSource = typedCatalogSource(db => readPopulationDocument(db, { expectedSourceHash: POPULATION_SOURCE_HASH }))
 const densityByDong = validatedDensities(regionAtlas.regions, populationSource)
-const seoulGraph = JSON.parse(await readFile(await resolveOutside('GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
-const officialLineData = JSON.parse(await readFile(resolve(projectRoot, 'scripts/official-seoul-lines.json'), 'utf8'))
-const regularLineSource = JSON.parse(await readFile(resolve(loreRoot, 'places/regular-line-adjacency.json'), 'utf8'))
-const sixteenStatesLore = JSON.parse(await readFile(resolve(loreRoot, 'factions/Sixteen-States.json'), 'utf8'))
+const seoulGraph = typedCatalogSource(db => readWorldGraphDocument(db, { expectedSourceHash: WORLD_GRAPH_SOURCE_HASH }))
+const officialLineData = catalogMetadata[OFFICIAL_SEOUL_LINES_PATH]
+const regularLineSource = typedCatalogSource(db => readRailSourceDocument(db, { logicalPath: 'lore/places/regular-line-adjacency.json', expectedSourceHash: RAIL_SOURCE_HASHES['lore/places/regular-line-adjacency.json'] }))
+await writeFile(resolve(generatedRoot, 'railStationSources.ts'),
+  '// Generated from typed SQLite domains by generate-catalog.mjs.\n'
+  + 'export const railStationSource = ' + JSON.stringify(typedCatalogSource(db => readRailSourceDocument(db, {
+    logicalPath: 'lore/places/rail-station-corrections.json', expectedSourceHash: RAIL_SOURCE_HASHES['lore/places/rail-station-corrections.json'],
+  }))) + '\nexport const railStationIdentities = ' + JSON.stringify(typedCatalogSource(db => readRailSourceDocument(db, {
+    logicalPath: 'lore/places/rail-station-identities.json', expectedSourceHash: RAIL_SOURCE_HASHES['lore/places/rail-station-identities.json'],
+  }))) + '\n')
+const sixteenStatesLore = pagesBySlug.get('Sixteen-States').value
 const stateTable = sixteenStatesLore.content.find((block) => block.anchor === 'table')
 if (!stateTable || stateTable.kind !== 'table' || stateTable.rows.length !== 16) throw new Error('E_STATE_DETAIL_TABLE')
 const stateDetails = new Map(stateTable.rows.map((row) => [row[0].ko, {
@@ -360,7 +457,7 @@ const relationByStateName = new Map(relationTable.rows.map(([state, relation]) =
   if (!['복속', '보좌', '독립'].includes(relation.ko)) throw new Error(`E_GOV_RELATION:${state.ko}:${relation.ko}`)
   return [state.ko, relation.ko]
 }))
-const stationControlLedger = JSON.parse(await readFile(resolve(loreRoot, 'places/station-control-overrides.json'), 'utf8'))
+const stationControlLedger = typedCatalogSource(db => readRailSourceDocument(db, { logicalPath: 'lore/places/station-control-overrides.json', expectedSourceHash: RAIL_SOURCE_HASHES['lore/places/station-control-overrides.json'] }))
 const stationControlOverrides = new Map(stationControlLedger.overrides.map((entry) => [entry.stationId, entry]))
 if (stationControlOverrides.size !== stationControlLedger.overrides.length) throw new Error('E_STATION_CONTROL_DUPLICATE')
 for (const entry of stationControlLedger.overrides) {
@@ -369,15 +466,19 @@ for (const entry of stationControlLedger.overrides) {
 }
 proj4.defs('EPSG:5179', '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +units=m +no_defs')
 
-const regionContentById = new Map()
-for (const entry of await readdir(resolve(loreRoot, 'regions/content'), { withFileTypes: true })) {
-  if (!entry.isFile() || !/^\d{5}\.json$/u.test(entry.name)) continue
-  const district = JSON.parse(await readFile(resolve(loreRoot, 'regions/content', entry.name), 'utf8'))
-  for (const region of district.regions) regionContentById.set(region.region_id, region.content)
-}
+const ciaFacilityProjection = await loadCiaFacilityProjection(repoRoot, sourceRead)
+let regionContentById = new Map()
+typedCatalogSource(db => {
+    for (const [logicalPath, expectedSourceHash] of Object.entries(REGION_CONTENT_SOURCE_HASHES)) {
+      const district = readRegionContentDocument(db, { logicalPath, expectedSourceHash })
+      for (const region of district.regions) regionContentById.set(region.region_id, region.content)
+    }
+})
 if (regionContentById.size !== 427) throw new Error(`E_REGION_CONTENT_COVERAGE:${regionContentById.size}`)
+const predecessorRegionContentById = regionContentById
+regionContentById = projectCiaFacilityRegions(regionContentById, ciaFacilityProjection.correction)
 const surfaceHolders = (content) => content?.territory?.holders.map((holder) => holder.polity) ?? []
-const creativeNameLedger = JSON.parse(await readFile(await resolveOutside('RESEARCH/verification/creative-name-normalization.json'), 'utf8'))
+const creativeNameLedger = typedCatalogSource(db => readCreativeNameDocument(db, { expectedSourceHash: CREATIVE_NAME_SOURCE_HASH }))
 const normalizePublicNames = (text) => {
   let normalized = text
   for (const entry of [...creativeNameLedger.replacements].sort((left, right) => right.old.length - left.old.length)) {
@@ -420,13 +521,24 @@ const pointInPolygon = ([x, y], points) => {
 const capitalNameByState = new Map(stateRows.map((row) => [row.id, row.capital.replace(/역$/u, '')]))
 if (capitalNameByState.size !== 16) throw new Error(`E_CAPITAL_CANON_COVERAGE:${capitalNameByState.size}`)
 const stationById = new Map(seoulGraph.stations.map((station) => [station.id, station]))
-const stationCatalog = JSON.parse(await readFile(resolve(loreRoot, 'places/Seoul-Station-Catalog.json'), 'utf8'))
-await loadStationCatalogGeography(projectRoot, { catalog: stationCatalog })
+const stationCatalog = pagesBySlug.get('Seoul-Station-Catalog').value
+let stationEvidenceBundle
+if (process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
+  const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
+  stationEvidenceBundle = await openPublicationDatabaseInputs(projectRoot,
+    JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8')))
+}
+let excludedStationIds
+try {
+  await loadStationCatalogGeography(projectRoot, { catalog: stationCatalog,
+    ...(stationEvidenceBundle ? { readBytes: stationEvidenceBundle.inputs.readBytes } : {}) })
+  excludedStationIds = await loadOutsideStationIds(projectRoot, { stationAliases: stationCatalog.data.station_aliases,
+    ...(stationEvidenceBundle ? { readBytes: stationEvidenceBundle.inputs.readBytes } : {}) })
+} finally { stationEvidenceBundle?.close() }
 const approvedStationAliases = stationCatalog.data.station_aliases
 const canonicalBySourceId = new Map(approvedStationAliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
 if (canonicalBySourceId.size !== approvedStationAliases.reduce((count, entry) => count + 1 + entry.aliases.length, 0) || [...canonicalBySourceId.keys()].some((id) => !stationById.has(id))) throw new Error('E_STATION_ALIAS_SOURCE')
 const canonicalStationId = (id) => canonicalBySourceId.get(id) ?? id
-const excludedStationIds = await loadOutsideStationIds(projectRoot, { stationAliases: approvedStationAliases })
 const excludedStations = new Set(excludedStationIds)
 const regularGraph = regularLineGraph(regularLineSource,
   seoulGraph.stations.map((station) => canonicalStationId(station.id)).filter(id => !excludedStations.has(id)),
@@ -584,7 +696,7 @@ const polygonMetrics = (points) => {
     y: Number((weightedY / (3 * twiceArea)).toFixed(2)),
   }
 }
-const landmarkLedger = JSON.parse(await readFile(resolve(loreRoot, 'places/landmark-roles.json'), 'utf8'))
+const landmarkLedger = typedCatalogSource(db => readLandmarkRoleDocument(db, { expectedSourceHash: LANDMARK_ROLE_SOURCE_HASH }))
 const projectedLandmarks = landmarkLedger.sites.map((site) => {
   const region = regionAtlas.regions.find((entry) => entry.id === site.regionId)
   if (!region || !stateNameById.has(site.holderId)) throw new Error(`E_LANDMARK_OWNER:${site.id}`)
@@ -644,13 +756,10 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
 const vassals = []
 
 const openingTerritories = {
-  physicalRail: projectPhysicalRail(
-    JSON.parse((await promisify(execFile)('python3', [resolve(projectRoot, 'scripts/physical_rail.py')], { maxBuffer: 64 * 1024 * 1024 })).stdout),
-    (longitude, latitude) => proj4('EPSG:4326', 'EPSG:5179', [longitude, latitude]),
-  ),
+  physicalRail: typedCatalogSource(db => readPhysicalRail(db)),
   geography: projectGeographicTitles(
     geography,
-    JSON.parse(await readFile(resolve(projectRoot, 'data/geography/boundaries/seoul-sgis-20250630.geojson'), 'utf8')),
+    typedCatalogSource(db => readBoundaryGeometries(db)),
     (longitude, latitude) => {
       const [east, north] = proj4('EPSG:4326', 'EPSG:5179', [longitude, latitude])
       return [(east - mapBounds.minX) / (mapBounds.maxX - mapBounds.minX) * mapWidth,
@@ -706,15 +815,43 @@ underground.paths = underground.paths.flatMap(path => {
 })
 await writeFile(resolve(publicRoot, 'underground-detail.json'), `${JSON.stringify(underground)}\n`)
 
-const outsideGeometry = (await loadApprovedRightsHistory()).historical.outside
-const outsideControl = JSON.parse(await readFile(resolve(loreRoot, 'regions/outside-control-2126.json'), 'utf8'))
-const outsideIslands = JSON.parse(await readFile(resolve(loreRoot, 'regions/outside-island-occupation.json'), 'utf8'))
-const projectedOutsideControl = await projectCatalogOutsideOccupation(outsideControl, outsideGeometry, outsideIslands)
+const historicalRightsBytes = typedCatalogSource(db => Object.fromEntries(Object.entries({
+  approval: 'scripts/approved-seoul-rights-transition.json',
+  existing: 'scripts/historical-inputs/personal-holdings.json',
+  allocation: 'scripts/historical-inputs/opening-feudal-allocation.json',
+  control: 'scripts/historical-inputs/outside-control-2126.json',
+  islands: 'scripts/historical-inputs/outside-island-occupation.json',
+  geometry: 'scripts/historical-inputs/outside-admin-units.json',
+  scale: 'scripts/historical-inputs/admin-territorial-scale.json',
+  nonowning: 'scripts/approved-daejeon-nonowning-rights.json',
+  retirement: 'scripts/approved-outside-current-retirement.json',
+}).map(([key, path]) => {
+  const row = db.prepare('SELECT raw_bytes FROM source_file WHERE logical_path=?').get(path)
+  if (!row) throw new Error(`E_CATALOG_RIGHTS_SOURCE:${path}`)
+  return [key, Buffer.from(row.raw_bytes)]
+})))
+const outsideGeometry = (await loadApprovedRightsHistory(historicalRightsBytes)).historical.outside
+const outsideControl = typedCatalogSource(db => readRetiredTerritoryDocuments(db, { logicalPath: 'lore/regions/outside-control-2126.json', expectedSourceHash: RETIRED_TERRITORY_SOURCE_HASHES['lore/regions/outside-control-2126.json'] }))
+const outsideIslands = typedCatalogSource(db => readRetiredTerritoryDocuments(db, { logicalPath: 'lore/regions/outside-island-occupation.json', expectedSourceHash: RETIRED_TERRITORY_SOURCE_HASHES['lore/regions/outside-island-occupation.json'] }))
+const projectedOutsideControl = await projectCatalogOutsideOccupation(outsideControl, outsideGeometry, outsideIslands,
+  { approval: historicalRightsBytes.retirement, control: historicalRightsBytes.control, islands: historicalRightsBytes.islands })
 
 const centuryAnnalsSource = renderedBySlug.get('Century-Annals')
 if (!centuryAnnalsSource) throw new Error('E_CENTURY_ANNALS_MISSING')
 const centuryAnnalsDocument = pagesBySlug.get('Century-Annals')?.value
-const timelineYears = await projectCatalogTimeline(pagesBySlug.get('Century-Annals'), (text) => relatedTimelineDocuments(text, territoryStates, peopleSource))
+let timelineDatabaseBundle
+let timelineRead = readFile
+if (process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
+  const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))
+  const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
+  timelineDatabaseBundle = await openPublicationDatabaseInputs(projectRoot, config)
+  timelineRead = timelineDatabaseBundle.inputs.readBytes
+}
+let timelineYears
+try {
+  timelineYears = await projectCatalogTimeline(pagesBySlug.get('Century-Annals'),
+    (text) => relatedTimelineDocuments(text, territoryStates, peopleSource), timelineRead)
+} finally { timelineDatabaseBundle?.close() }
 const emptyYears = timelineYears.filter((entry) => entry.summary.length === 0).map((entry) => entry.year)
 if (timelineYears.length === 0 || timelineYears[0]?.year !== 2030 || timelineYears.at(-1)?.year > 2126 || emptyYears.length > 0) {
   throw new Error(`E_TIMELINE_YEAR_COVERAGE:${timelineYears.length}:${timelineYears[0]?.year}:${timelineYears.at(-1)?.year}:${emptyYears.join(',')}`)
@@ -731,31 +868,105 @@ let personalHoldings = originalHoldings
 const daejeonPolities = personalHoldings.polities.filter(polity => polity.id === 'polity:daejeon')
 if (daejeonPolities.length !== 1) throw new Error('E_DAEJEON_POLITY_ID')
 await writeFile(resolve(generatedRoot, 'politicalCatalog.ts'), 'export const politicalCatalog = ' + JSON.stringify({ hegemons: sixteenStatesLore.data.currentAffiliation.hegemons, daejeon: daejeonPolities[0] }, null, 2) + ' as const\n')
-await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(territorialScale, null, 2) + String.fromCharCode(10))
+await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(publicTerritorialScale(territorialScale), null, 2) + String.fromCharCode(10))
 personalHoldings = await projectPersonHoldingsInputs(personSources, {
-  repoRoot, territoryStates, openingTerritories, projectedLandmarks, seoulGraph, outsideGeometry,
+  repoRoot, territoryStates, openingTerritories: { ...openingTerritories,
+    regions: openingTerritories.regions.map(region => ({ ...region,
+      polities: surfaceHolders(predecessorRegionContentById.get(region.id)),
+    })),
+  }, projectedLandmarks, seoulGraph, outsideGeometry,
   projectedOutsideControl, affiliation: sixteenStatesLore.data.currentAffiliation, geography, geographicScale,
+  historyBytes: historicalRightsBytes,
 })
-await writeFile(resolve(publicRoot, 'confirmed-person-holdings.json'), JSON.stringify(personalHoldings, null, 2) + String.fromCharCode(10))
+const currentPersonalHoldings = projectCiaFacilityHoldings(personalHoldings, ciaFacilityProjection.correction)
+await writeFile(resolve(publicRoot, 'confirmed-person-holdings.json'), JSON.stringify({ ...currentPersonalHoldings,
+  titles: publicJurisdictionReferences(currentPersonalHoldings.titles), holdings: publicJurisdictionReferences(currentPersonalHoldings.holdings),
+}, null, 2) + String.fromCharCode(10))
 const officeAppointments = currentOfficeAppointments(officeAppointmentSource, issuedById)
-const { peopleCatalog, personDetails, retainerGraph, familyDetailRoutes, personFeedbackRecords } = await produceFromPersonDetailSources(personSources, {
+let { peopleCatalog, personDetails, retainerGraph, familyDetailRoutes, personFeedbackRecords } = await produceFromPersonDetailSources(personSources, {
   personalHoldings, stateNameById, tiersByState, officeAppointments,
 })
+if (process.env.WIKI_DOCUMENT_DB) {
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
+  try {
+    db.exec('BEGIN')
+    const profiles = readPublicCharacterProfileInputs(db)
+    for (const detail of personDetails) {
+      const profile = profiles.get(detail.characterId)
+      if (!profile || !isDeepStrictEqual(detail.characterProfile, profile)) throw new Error(`E_PERSON_DB_PROFILE_PARITY:${detail.characterId}`)
+      detail.characterProfile = profile
+    }
+    db.exec('COMMIT')
+  } finally { db.close() }
+}
+const personDetailsRoot = resolve(publicRoot, 'person-details')
+let scopeInput
+if (process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
+  const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))
+  const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
+  const bundle = await openPublicationDatabaseInputs(projectRoot, config)
+  try { scopeInput = await loadScopeInput({ root: projectRoot, ...bundle.inputs, currentFacility: false }) }
+  finally { bundle.close() }
+} else {
+  const { stdout: gitCommonDir } = await promisify(execFile)('git', ['-C', projectRoot, 'rev-parse', '--path-format=absolute', '--git-common-dir'])
+  scopeInput = await loadScopeInput({ root: projectRoot,
+    baselinePath: resolve(dirname(gitCommonDir.trim()), '.omo/private/seoul-migration/baseline.json'), currentFacility: false })
+}
+if (scopeInput.error) throw Object.assign(new Error(scopeInput.error.errors[0].code), scopeInput.error.errors[0])
+const databaseMappingAuthority = process.env.WIKI_DOCUMENT_DB ? await (async () => {
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
+  const stores = {}
+  let editorialProfiles
+  try {
+    for (const [key, variable] of Object.entries({ evidenceStore: 'WIKI_TIER_EVIDENCE_DB', historyStore: 'WIKI_TIER_HISTORY_DB',
+      originalMappingStore: 'WIKI_MAPPING_ORIGINAL_DB', finalMappingStore: 'WIKI_MAPPING_FINAL_DB', sourceStore: 'WIKI_MAPPING_SOURCES_DB' })) {
+      if (!process.env[variable]) throw new Error(`E_PERSON_EVIDENCE_DATABASE_REQUIRED:${variable}`)
+      stores[key] = openEvidenceStore(process.env[variable], { capability: INTERNAL_EVIDENCE_CAPABILITY })
+    }
+    editorialProfiles = openEditorialProfiles(process.env.WIKI_EDITORIAL_PROFILE_DB,
+      { capability: INTERNAL_PROFILE_CAPABILITY, expectedSourceHashes: EDITORIAL_PROFILE_SOURCE_HASHES })
+    db.exec('BEGIN')
+    const authority = await loadDatabasePersonDetailMappingAuthority({ db, ...stores, editorialProfiles })
+    db.exec('COMMIT')
+    return authority
+  } finally { editorialProfiles?.close(); Object.values(stores).forEach(store => store.close()); db.close() }
+})() : undefined
+// Authenticate the preserved original projection before applying the separate
+// owner-approved current-roster retirement. Never shrink the mapping denominator.
+admitPublicPersonDetails(personDetails, scopeInput, databaseMappingAuthority)
+personDetails = projectCiaFacilityPersonDetails(personDetails, personalHoldings, ciaFacilityProjection.correction)
+if (activePersonIds) {
+  const db = openReadOnly(rosterDatabasePath)
+  try {
+    if (db.prepare("SELECT 1 FROM sqlite_schema WHERE name='person_disposition'").get()) {
+      ;({ peopleCatalog, personDetails, retainerGraph, familyDetailRoutes, personFeedbackRecords } = projectActiveRoster(
+        { peopleCatalog, personDetails, retainerGraph, familyDetailRoutes, personFeedbackRecords }, readPersonDisposition(db),
+        db.prepare("SELECT 1 FROM sqlite_schema WHERE name='retirement_prose'").get() ? readRetirementProse(db) : []))
+    }
+  } finally { db.close() }
+}
 feedbackRecords.push(...personFeedbackRecords)
 await writeFile(resolve(generatedRoot, 'retainerGraph.ts'), `export const retainerGraph = ${JSON.stringify(retainerGraph, null, 2)} as const\n`)
-const personDetailsRoot = resolve(publicRoot, 'person-details')
-const { stdout: gitCommonDir } = await promisify(execFile)('git', ['-C', projectRoot, 'rev-parse', '--path-format=absolute', '--git-common-dir'])
-const scopeInput = await loadScopeInput({ root: projectRoot,
-  baselinePath: resolve(dirname(gitCommonDir.trim()), '.omo/private/seoul-migration/baseline.json') })
-if (scopeInput.error) throw Object.assign(new Error(scopeInput.error.errors[0].code), scopeInput.error.errors[0])
-await writePublicPersonDetails(personDetails, scopeInput, async detail => {
+const writePersonDetail = async detail => {
   await mkdir(personDetailsRoot, { recursive: true })
-  await writeFile(resolve(personDetailsRoot, `${detail.id}.json`), `${JSON.stringify(detail, null, 2)}\n`)
-})
+  await writeFile(resolve(personDetailsRoot, `${detail.id}.json`), `${JSON.stringify({ ...detail,
+    ...(detail.superiorJurisdictions ? { superiorJurisdictions: publicJurisdictionReferences(detail.superiorJurisdictions) } : {}),
+    ...(detail.publicJurisdictions ? { publicJurisdictions: publicJurisdictionReferences(detail.publicJurisdictions) } : {}),
+  }, null, 2)}\n`)
+}
+for (const detail of personDetails) await writePersonDetail(detail)
 await mkdir(privateGeneratedRoot, { recursive: true })
 await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.ko.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'ko')))}\n`)
 await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.en.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'en')))}\n`)
-const portraitRegistry = JSON.parse(await readFile(resolve(repoRoot, 'portrait-catalog.json'), 'utf8'))
+const portraitRegistry = (() => {
+    const db = openReadOnly(process.env.WIKI_PORTRAIT_DB ?? articleDatabasePath)
+    try {
+      db.exec('BEGIN')
+      const catalog = readPortraitDocuments(db).catalog
+      db.exec('COMMIT')
+      return catalog
+    } finally { db.close() }
+  })()
 const portraitIdentities = portraitRegistry.entries.map((entry) => {
   const person = peopleCatalog.find((person) => person.id === entry.personId)
   if (!person || person.name !== entry.name || issuedIdByName.get(person.name) !== entry.characterId) throw new Error(`E_PORTRAIT_IDENTITY:${entry.personId}`)
@@ -774,8 +985,7 @@ await writeFile(resolve(generatedRoot, 'peopleCatalog.ts'), `export const people
 // The home page reads only the count, so it gets its own module and does not bundle the catalog.
 await writeFile(resolve(generatedRoot, 'peopleCount.ts'), `export const peopleCount = ${peopleCatalog.length}\n`)
 
-const clanTablesText = await readFile(resolve(repoRoot, 'lore/name-pools/clan-hangnyeol-tables.json'), 'utf8')
-const clanTables = JSON.parse(clanTablesText)
+const clanTables = typedCatalogSource(db => readClanCatalogDocument(db, { expectedSourceHash: CLAN_CATALOG_SOURCE_HASH }))
 const crestIndexText = await readFile(resolve(publicRoot, 'clan-crests/index.json'), 'utf8')
 const crestIndex = JSON.parse(crestIndexText)
 const branchesByBase = new Map()
@@ -844,7 +1054,10 @@ for (const family of clanFamilyCatalogOut) {
     if (!issuedId) throw new Error(`E_CLAN_TREE_SEED:${family.id}:${member.name}`)
     return issuedId
   })
-  const tree = projectClanFamilyTree(familyGraph, seedIds, familyDetailRoutes)
+  const activeFamilyNodes = familyGraph.nodes.filter(node => !node.personId || personByIssuedId.has(node.personId))
+  const activeFamilyIds = new Set(activeFamilyNodes.map(node => node.id))
+  const tree = projectClanFamilyTree({ ...familyGraph, nodes: activeFamilyNodes,
+    edges: familyGraph.edges.filter(edge => activeFamilyIds.has(edge.from) && activeFamilyIds.has(edge.to)) }, seedIds, familyDetailRoutes)
   const nodes = tree.nodes.map((node) => {
     if (!node.personId) return node
     const person = personByIssuedId.get(node.personId)
@@ -862,6 +1075,7 @@ for (const file of await readdir(resolve(publicRoot, 'portrait-tokens'))) {
   const path = resolve(publicRoot, 'portrait-tokens', file)
   const token = JSON.parse(await readFile(path, 'utf8'))
   const person = peopleCatalog.find(person => person.id === token.personId)
+  if (!person && rosterRetirementApplied) continue
   if (!person || person.name !== token.name) throw new Error('E_PORTRAIT_CANON_IDENTITY:' + file)
   // Approved portraits must carry a canonical role; derived art-proposal tokens may have none yet.
   if (typeof person.position !== 'string' || !person.position.trim()) {
@@ -883,4 +1097,5 @@ await publishPublicAssets({ publicRoot, manifestPath: publicAssetsManifestPath,
 })
 console.log(`
 WIKI_CATALOG_GENERATED: ${documents.length} documents at ${relative(repoRoot, worldJsonRoot)}`)
+sourceDatabaseBundle?.close()
 }

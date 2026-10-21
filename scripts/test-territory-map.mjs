@@ -1,4 +1,6 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { createHash } from 'node:crypto'
 import { readFile, readdir } from 'node:fs/promises'
 import React, { act } from 'react'
@@ -14,16 +16,17 @@ import { loadOutsideStationIds } from './station-catalog-geography.mjs'
 import { projectOutsideOccupation } from './outside-occupation.mjs'
 import { projectCatalogOutsideOccupation } from './generate-catalog.mjs'
 import OpeningTerritoryMap, { clampSeoulViewBox } from '../src/components/OpeningTerritoryMap.tsx'
-import { titlesAtRank, validateGeographicMap } from '../src/components/geographicTitleMap.mjs'
+import { titlesAtRank, validateGeographicMap, publicGeographicScope } from '../src/components/geographicTitleMap.mjs'
 
-test('map rejects independent barony rank with E_MAP_GRANULARITY', () => {
+test('map rejects independent barony rank with E_MAP_GRANULARITY', async () => {
   assert.throws(() => titlesAtRank({ titles: [] }, 'barony'), /E_MAP_GRANULARITY/u)
-  assert.throws(() => validateGeographicMap({ titles: [{ id: 'barony:fixture', rank: 'barony' }] }), /E_MAP_GRANULARITY/u)
+  const { geography } = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  assert.throws(() => validateGeographicMap({ ...geography, titles: [...geography.titles, { id: 'barony:fixture', rank: 'barony' }] }), /E_MAP_GRANULARITY/u)
 })
 
 test('baked hegemons preserve canonical membership exactly once for every holder', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const source = JSON.parse(await readFile(new URL('../lore/factions/Sixteen-States.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/factions/Sixteen-States.json')
   assert.deepEqual(data.hegemons, source.data.currentAffiliation.hegemons)
   const members = [...data.hegemons.flatMap(hegemon => hegemon.memberStateIds), ...source.data.currentAffiliation.neutralStateIds]
   assert.equal(data.hegemons.length, 3)
@@ -34,7 +37,7 @@ test('baked hegemons preserve canonical membership exactly once for every holder
 
 test('legacy exclusive count measures single-state surface assignments, not title rights', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const source = JSON.parse(await readFile(new URL('../lore/factions/Sixteen-States.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/factions/Sixteen-States.json')
   const affinity = new Map(source.data.currentAffiliation.states.map(state => [state.stateId, state.currentExclusiveDistricts]))
   for (const state of data.states) {
     const expected = affinity.get(state.id) === 'none' ? 0 : data.regions.filter(region => region.polities.length === 1 && region.polities[0] === state.id).length
@@ -44,9 +47,9 @@ test('legacy exclusive count measures single-state surface assignments, not titl
 
 test('movement edges equal official physical hops and never surface adjacency', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const source = JSON.parse(await readFile(new URL('../lore/places/regular-line-adjacency.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/places/regular-line-adjacency.json')
   const key = (edge) => `${[edge.a, edge.b].sort().join('|')}/${[...edge.lineIds].sort().join(',')}`
-  const catalog = JSON.parse(await readFile(new URL('../lore/places/Seoul-Station-Catalog.json', import.meta.url), 'utf8'))
+  const catalog = readCanonicalDocument('lore/places/Seoul-Station-Catalog.json')
   const excludedStationIds = await loadOutsideStationIds(new URL('../', import.meta.url).pathname,
     { stationAliases: catalog.data.station_aliases })
   const official = regularLineGraph(source, data.stations.map((station) => station.id), { excludedStationIds })
@@ -169,7 +172,7 @@ test('surface rail uses only published physical geometry and the detail panel st
 
 test('projected density covers all 427 source codes and preserves the unrounded area formula', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const source = JSON.parse(await readFile(new URL('../lore/regions/sources/population-2026-08.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/regions/sources/population-2026-08.json')
   const values = validatedDensities(data.regions, source)
   const byId = new Map(data.regions.map((region) => [region.id, region]))
   assert.equal(byId.size, 427)
@@ -186,7 +189,7 @@ test('projected density covers all 427 source codes and preserves the unrounded 
 })
 
 test('density validation rejects a code that is not in the pinned atlas', async () => {
-  const source = JSON.parse(await readFile(new URL('../lore/regions/sources/population-2026-08.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/regions/sources/population-2026-08.json')
   const regions = Object.keys(source.density2126ByDong).map((code) => ({ id: `region:${code}` }))
   regions[0] = { id: 'region:9999999999' }
   assert.throws(() => validatedDensities(regions, source), /E_REGION_POPULATION_COVERAGE/u)
@@ -201,8 +204,8 @@ test('outside observed boundaries preserve historical controls while authenticat
   assert.equal(new Set(outside.units.map((unit) => unit.id)).size, 1415)
   assert.deepEqual(Object.fromEntries(['경기도', '강원특별자치도', '충청북도', '충청남도', '인천광역시', '대전광역시', '세종특별자치시'].map((province) => [province, outside.units.filter((unit) => unit.province === province).length])), { 경기도: 602, 강원특별자치도: 188, 충청북도: 153, 충청남도: 208, 인천광역시: 158, 대전광역시: 82, 세종특별자치시: 24 })
   assert.ok(outside.units.every((unit) => unit.path.startsWith('M') && unit.holder2126 === null))
-  const source = JSON.parse(await readFile(new URL('../lore/regions/outside-control-2126.json', import.meta.url), 'utf8'))
-  const islands = JSON.parse(await readFile(new URL('../lore/regions/outside-island-occupation.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/regions/outside-control-2126.json')
+  const islands = readCanonicalDocument('lore/regions/outside-island-occupation.json')
   const bytes = {
     approval: await readFile(new URL('./approved-outside-current-retirement.json', import.meta.url)),
     control: await readFile(new URL('./historical-inputs/outside-control-2126.json', import.meta.url)),
@@ -265,7 +268,7 @@ test('alternate labels share one displayed station while graph nodes and edges r
     assert.equal(displayed.some((candidate) => candidate.id === aliasId), false, aliasId)
   }
   const isu = displayed.find((station) => station.id === '총신대입구(이수)')
-  const catalog = JSON.parse(await readFile(new URL('../lore/places/Seoul-Station-Catalog.json', import.meta.url), 'utf8'))
+  const catalog = readCanonicalDocument('lore/places/Seoul-Station-Catalog.json')
   const approved = catalog.data.station_aliases.find((station) => station.id === '총신대입구(이수)')
   assert.deepEqual(new Set(isu.memberIds), new Set([approved.id, ...approved.aliases]))
   assert.deepEqual(isu.names, [approved.id])
@@ -296,7 +299,7 @@ test('alternate labels share one displayed station while graph nodes and edges r
 
 test('approved landmark roles project to surveyed facilities without changing surrounding dong ownership', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const source = JSON.parse(await readFile(new URL('../lore/places/landmark-roles.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/places/landmark-roles.json')
   assert.equal(data.landmarks.length, 19)
   assert.deepEqual(data.landmarks.map((site) => site.id), source.sites.map((site) => site.id))
   const byRegion = new Map(data.regions.map((region) => [region.id, region]))
@@ -363,7 +366,7 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   assert.ok(data.edges.every((edge) => Array.isArray(edge.lineIds)))
   assert.ok(data.stations.every((station) => ['derived-from-surface', 'outside-surface-atlas', 'control-delta'].includes(station.control?.source)))
   assert.ok(data.stations.every((station) => Object.hasOwn(station.control, 'deltaId')))
-  const overrideIds = new Set(JSON.parse(await readFile(new URL('../lore/places/station-control-overrides.json', import.meta.url), 'utf8')).overrides.map(row => row.stationId))
+  const overrideIds = new Set(readCanonicalDocument('lore/places/station-control-overrides.json').overrides.map(row => row.stationId))
   assert.deepEqual(data.stations.filter(station => station.control.source === 'control-delta').map(station => station.id).sort(), data.stations.filter(station => overrideIds.has(station.id)).map(station => station.id).sort())
   assert.ok(data.stations.filter((station) => station.control?.source === 'outside-surface-atlas').every((station) => station.control.status === 'unknown'))
   assert.ok(data.stations.every((station) => station.control?.hierarchy?.stationManager.endsWith('역장')))
@@ -408,7 +411,7 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
 
 test('the City Hall control ledger separates Government guard priority from the S16 capital and roll', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const ledger = JSON.parse(await readFile(new URL('../lore/places/station-control-overrides.json', import.meta.url), 'utf8'))
+  const ledger = readCanonicalDocument('lore/places/station-control-overrides.json')
   const cityHall = data.stations.find((station) => station.id === '시청')
   const delta = ledger.overrides.find((entry) => entry.stationId === '시청')
   assert.deepEqual(cityHall.control.polityIds, delta.polityIds)
@@ -481,7 +484,7 @@ test('northern and regional rail assets are retired in favor of verified Seoul p
 
 test('government relations come from the canon table and use only defined terms or null', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const canon = JSON.parse(await readFile(new URL('../lore/factions/Sixteen-States.json', import.meta.url), 'utf8'))
+  const canon = readCanonicalDocument('lore/factions/Sixteen-States.json')
   const relations = new Map(canon.content.find((block) => block.anchor === 'table-gov-relations').rows.map((row) => [row[0].ko, row[1].ko]))
   for (const state of data.states) {
     assert.ok(state.relation === null || ['복속', '보좌', '독립'].includes(state.relation), state.id)
@@ -491,8 +494,8 @@ test('government relations come from the canon table and use only defined terms 
 
 test('all map states project founding, government, foreign relations and dated annals from canon', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const states = JSON.parse(await readFile(new URL('../lore/factions/Sixteen-States.json', import.meta.url), 'utf8'))
-  const annals = JSON.parse(await readFile(new URL('../lore/chronology/Century-Annals.json', import.meta.url), 'utf8'))
+  const states = readCanonicalDocument('lore/factions/Sixteen-States.json')
+  const annals = readCanonicalDocument('lore/chronology/Century-Annals.json')
   const rows = new Map(states.content.find((node) => node.anchor === 'table').rows.map((row) => [row[0].ko, row]))
   const prose = new Set(annals.content.filter((node) => node.kind === 'paragraph').map((node) => typeof node.text?.ko === 'string' ? node.text.ko : node.text?.ko?.map((run) => run.text).join('')))
   for (const state of data.states) {
@@ -637,7 +640,7 @@ test('offline underground asset preserves observed depths, unknowns and graph me
 
 test('between-station segments are underground units with a rule-derived control and occupation-based 2126 passage', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const ledger = JSON.parse(await readFile(new URL('../lore/places/station-control-overrides.json', import.meta.url), 'utf8'))
+  const ledger = readCanonicalDocument('lore/places/station-control-overrides.json')
   const stationById = new Map(data.stations.map((station) => [station.id, station]))
   const segmentDeltas = new Map((ledger.segmentOverrides ?? []).map((entry) => [entry.segmentId, entry]))
   assert.equal(data.edges.length, 381)
@@ -698,7 +701,7 @@ test('surface and underground territory are separate flat views switched explici
 
 
 test('published current rights contain no outside claims and preserve exact approved Seoul successors', async () => {
-  const json = async path => JSON.parse(await readFile(new URL('../' + path, import.meta.url), 'utf8'))
+  const json = async path => path.startsWith('lore/') ? readCanonicalDocument(path) : JSON.parse(await readFile(new URL('../' + path, import.meta.url), 'utf8'))
   for (const file of ['outside-admin-units.json', 'outside-control-2126.json']) await assert.rejects(readFile(new URL('../public/' + file, import.meta.url)), { code: 'ENOENT' })
   const control = await json('lore/regions/outside-control-2126.json')
   const holdings = await json('public/confirmed-person-holdings.json')
@@ -721,7 +724,7 @@ test('published current rights contain no outside claims and preserve exact appr
     assert.equal(row.holderPersonId, right.holderPersonId)
     assert.equal(row.directLiegePersonId, right.personalLiegePersonId)
     assert.equal(row.titleId, right.titleId)
-    assert.deepEqual(row.geographicScope, right.geographicScope)
+    assert.deepEqual(row.geographicScope, publicGeographicScope(right.geographicScope))
     assert.deepEqual(row.powers, approval.powers)
     assert.deepEqual(row.adminRefs, [])
     assert.equal(row.directOwnership, false)

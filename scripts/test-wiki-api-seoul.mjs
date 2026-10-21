@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { spawn } from 'node:child_process'
@@ -7,6 +8,7 @@ import { mkdtemp, readFile, readdir, rm, symlink, writeFile, access } from 'node
 import { tmpdir } from 'node:os'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { projectGeographicTitles } from '../src/components/geographicTitleMap.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const published = join(root, 'public')
@@ -118,6 +120,27 @@ test('published Seoul API starts without excluded geography and preserves public
   assert.deepEqual(await (await fetch(`${new URL(response.url).origin}/api/health`)).json(), health)
 })
 
+test('opaque public county identifiers load and remain addressable through the API', { timeout: 40000 }, async t => {
+  const directory = await mkdtemp(join(tmpdir(), 'wiki-api-public-counties-'))
+  t.after(() => rm(directory, { recursive: true, force: true }))
+  for (const name of ['person-details', 'portrait-tokens', 'confirmed-person-holdings.json', 'territorial-scale.json']) {
+    await symlink(join(published, name), join(directory, name))
+  }
+  const geography = projectGeographicTitles(
+    readCanonicalDocument('lore/regions/seoul-electoral-titles.json'),
+    JSON.parse(await readFile(join(root, 'data/geography/boundaries/seoul-sgis-20250630.geojson'), 'utf8')),
+    (x, y) => [x, y],
+  )
+  await writeFile(join(directory, 'opening-territories.json'), JSON.stringify({ ...opening, geography }))
+  const get = await start(t, directory)
+  const response = await (await get('/territories/counties?geometry=1&limit=2000')).json()
+  assert.equal(response.total, 48)
+  assert.doesNotMatch(JSON.stringify(response), /constituency|electoral|election|선거구/iu)
+  const county = response.items[0]
+  assert.match(county.id, /^geography:county:[0-9a-f]{16}$/u)
+  assert.deepEqual(await (await get(`/territories/counties/${encodeURIComponent(county.id)}`)).json(), county)
+})
+
 test('missing and invalid admitted geography fail before HTTP listening', { timeout: 40000 }, async t => {
   const directory = await mkdtemp(join(tmpdir(), 'wiki-api-seoul-'))
   t.after(() => rm(directory, { recursive: true, force: true }))
@@ -127,7 +150,7 @@ test('missing and invalid admitted geography fail before HTTP listening', { time
   for (const [name, geography] of [
     ['missing', undefined],
     ['empty', { ...opening.geography, titles: [] }],
-    ['outside', { ...opening.geography, titles: opening.geography.titles.map(title => title.rank === 'county' ? { ...title, id: title.id.replace('seoul-constituency:', 'busan-constituency:') } : title) }],
+    ['outside', { ...opening.geography, titles: opening.geography.titles.map(title => title.rank === 'county' ? { ...title, id: 'geography:county:outside' } : title) }],
     ['undated', { ...opening.geography, spatialDate: null }],
   ]) {
     await t.test(name, async subtest => {

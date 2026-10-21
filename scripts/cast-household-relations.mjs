@@ -1,5 +1,5 @@
-import { readFile } from 'node:fs/promises'
 import { resolve, relative, isAbsolute } from 'node:path'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { validateExistingHouseholdCounts } from './household-humanoid-policy.mjs'
 import { validateCastFamilyTrees } from './cast-family-trees.mjs'
 
@@ -14,7 +14,7 @@ export async function loadHouseholdSourceDocuments(root, ledger) {
   for (const path of paths) {
     const local = relative(root, resolve(root, path))
     if (isAbsolute(path) || local.startsWith('..') || !path.startsWith('lore/')) fail('E_HOUSEHOLD_SOURCE_PATH', path)
-    documents.set(path, JSON.parse(await readFile(resolve(root, path), 'utf8')))
+    documents.set(path, readCanonicalDocument(path, { databasePath: process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite') }))
   }
   return documents
 }

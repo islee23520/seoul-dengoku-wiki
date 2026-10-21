@@ -1,3 +1,5 @@
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 // opening-feudal-allocation.v1 배분 검증 계약 테스트 — 작은 고정 fixture만 사용한다.
 // 입력 점유·규모 상태는 전부 fixture가 넘겨주는 값이며 모듈이 개수를 알고 있지 않음을 함께 확인한다.
 import assert from 'node:assert/strict'
@@ -9,12 +11,12 @@ import { loadApprovedRightsHistory, projectCatalogCurrentHoldings, projectCatalo
 import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
 
 const activeScale = () => buildAdminTerritorialScale({
-  geographyBytes: readFileSync(new URL('../lore/regions/seoul-electoral-titles.json', import.meta.url)),
-  territorialScale: JSON.parse(readFileSync(new URL('../lore/offices/Offices-and-Ranks.json', import.meta.url), 'utf8')).data.territorialScale,
+  geographyBytes: readSourceArchive('lore/regions/seoul-electoral-titles.json', '372734e77019d0e544ded29f90e1b35b8a8c3a3cfff305c295c2bd83a6b64eef'),
+  territorialScale: readCanonicalDocument('lore/offices/Offices-and-Ranks.json').data.territorialScale,
 })
 
 test('canonical allocation reproduces every published holding and person title', async () => {
-  const json = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
+  const json = path => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
   const seoul = json('public/opening-territories.json')
   const geometry = (await loadApprovedRightsHistory()).historical.outside
   const issued = json('lore/name-pools/gurps-cast.json').people
@@ -88,7 +90,7 @@ test('current accepts v2 and rejects v1 or legacy scale without inferring proper
 
 const heldAuthority = { kind: 'state', stateId: 'S01', name: '한강왕국' }
 test('authenticated historical rights retain exact Daejeon neutrality and island component grants', async () => {
-  const json = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
+  const json = path => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
   const { historical } = await loadApprovedRightsHistory()
   const geometry = historical.outside
   const projected = projectOpeningFeudalAllocation({ ...historical,

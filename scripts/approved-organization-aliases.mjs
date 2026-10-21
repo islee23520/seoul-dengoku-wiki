@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
 import { resolve } from 'node:path'
+import { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } from './document-store/evidence.mjs'
 
 // Owner decision "중앙정보부=국가정보원 대응" (office-rank retrofit, 2026-10-17): a
 // fictional organization keeps its ledger name while approved cards may name it
@@ -27,10 +28,21 @@ export function organizationAliases(proposalBytes, approval) {
   return aliases
 }
 
-export async function loadApprovedOrganizationAliases(root) {
+export async function loadApprovedOrganizationAliases(root, reader = readFile) {
+  if (reader === readFile) {
+    const store = openEvidenceStore(resolve(root,
+      '.omo/private/seoul-migration/sqlite-authority-20261021/scope-atlas-reader-capture-20261021.sqlite'),
+    { capability: INTERNAL_EVIDENCE_CAPABILITY })
+    try {
+      return organizationAliases(store.getEvidence('scope-read:' + proposalPath,
+        'da361fc618c2ab82d67e01f7ced773fadc8189bc75194c5aaa3a6e6d5ca43fc0'),
+      JSON.parse(store.getEvidence('scope-read:' + approvalPath,
+        '422c993948878163b4f198c016abeb83421604677ac978cb71962bdbff3899b3')))
+    } finally { store.close() }
+  }
   const [proposalBytes, approvalText] = await Promise.all([
-    readFile(resolve(root, proposalPath)),
-    readFile(resolve(root, approvalPath), 'utf8'),
+    reader(resolve(root, proposalPath)),
+    reader(resolve(root, approvalPath), 'utf8'),
   ])
   return organizationAliases(proposalBytes, JSON.parse(approvalText))
 }

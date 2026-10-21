@@ -1,3 +1,4 @@
+import { readSourceArchive } from './source-archive.mjs';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
@@ -9,10 +10,10 @@ import { CHARACTER_EXAMPLE_TABLE_COLUMNS, mapCharacterExampleData, reconstructCh
 
 const logical_path = 'lore/characters/authoring.example.json';
 const source_id = TEXT_DOCUMENT_MANIFEST.findIndex((entry) => entry.logical_path === logical_path) + 1;
-const raw_bytes = readFileSync(new URL(`../../${logical_path}`, import.meta.url));
+const raw_bytes = readSourceArchive(logical_path);
 const file = { ...TEXT_DOCUMENT_MANIFEST[source_id - 1], source_id, raw_bytes, sha256: sha256(raw_bytes),
   document: JSON.parse(raw_bytes), content_policy: 'local-corpus' };
-const registry = JSON.parse(readFileSync(new URL('../../lore/name-pools/values-cast.json', import.meta.url)));
+const registry = JSON.parse(readSourceArchive('lore/name-pools/values-cast.json'));
 const map = (f = file) => mapCharacterExampleData({ files: [f] });
 const reconstruct = (tables) => reconstructCharacterExampleData({ tables, source_id });
 function insert(db, table, columns, rows) {

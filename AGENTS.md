@@ -4,3 +4,5 @@
 - Work on a dedicated branch and deliver changes through a pull request to `main`; the owner alone merges it.
 - Use Korean conventional-commit messages for independently verified changes.
 - Do not push directly to `main` or rewrite shared history.
+- 재사용성이 불가능한 테스트 스크립트는 작성하지 않는다. 데이터 이관은 먼저 완료한 뒤 이관 결과를 검토하며, 기존 검증 도구를 우선 사용한다.
+- 미정 항목은 AI가 원천·기존 설정·외부 자료를 적극 조사해 근거와 구체적인 후보를 마련하고, 사용자 판단이 필요한 부분은 질문해 끝까지 확정한다. 미정으로 표시하거나 최종 보고에 나열하는 것만으로 완료하지 않으며, 답변 전에는 후보를 승인된 설정으로 기록하지 않는다.

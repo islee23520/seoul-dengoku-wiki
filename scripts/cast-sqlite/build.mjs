@@ -1,5 +1,6 @@
 import { randomBytes } from 'node:crypto';
-import { link, lstat, mkdir, readFile, realpath, rename, unlink } from 'node:fs/promises';
+import { copyFile, link, lstat, readFile, realpath, unlink } from 'node:fs/promises';
+import { constants } from 'node:fs';
 import { basename, dirname, isAbsolute, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { DATA_SOURCE_PATHS, SCRIPT_SOURCE_PATHS, loadSourceBundle, loadTrustedRenderer, resolveTrustedSourcePath, sha256 } from './sources.mjs';
@@ -16,6 +17,7 @@ import { auditCoverageContract } from './coverage-contract.mjs';
 import { SOURCE_CLOSURE_TABLE_COLUMNS, mapSourceClosureDomains } from './source-closure.mjs';
 import { EXCLUDED_SOURCE_TABLE_COLUMNS, mapExcludedSourceDomains } from './excluded-sources.mjs';
 import { TEXT_CORPUS_TABLE_COLUMNS, mapTextCorpus, auditTextCorpus } from './text-corpus.mjs';
+import { reviewCurrentAuthority, assertNoAuthoritySidecars } from './current-authority.mjs';
 
 export const GENERATOR_VERSION = '1.0.0';
 export const DEFAULT_SOURCE_ROOT = resolve(fileURLToPath(new URL('../..', import.meta.url)));
@@ -102,8 +104,8 @@ async function preflightOutput(sourceRoot, outputPath) {
   if (typeof outputPath !== 'string' || outputPath.trim() === '') fail('E_BUILD_OPTIONS', 'outputPath가 필요합니다.');
   const output = resolve(outputPath);
   const canonical = isCanonicalCastOutput(sourceRoot, output);
-  if (!canonical) await requireAbsent(output);
-  if (canonical) await mkdir(dirname(output), { recursive: true });
+  if (canonical) fail('E_AUTHORITY_OUTPUT', '저작 정본은 출력 대상이 아닙니다. 새 경로를 지정하세요.');
+  await requireAbsent(output);
   let directory;
   try {
     directory = await realpath(dirname(output));
@@ -244,6 +246,40 @@ export async function buildCastDatabase({ sourceRoot, outputPath, requireClean =
   const effectiveSourceRoot = sourceRoot ?? DEFAULT_SOURCE_ROOT;
   const output = await preflightOutput(effectiveSourceRoot, outputPath);
   const { SCHEMA_VERSION, applySchema, openReadOnly, openWritableNew, runIntegrityChecks, withTransaction } = await import('./db.mjs');
+  let authorityPath;
+  try { authorityPath = await resolveTrustedSourcePath(effectiveSourceRoot, CANONICAL_CAST_DATABASE); }
+  catch (error) { if (error.code !== 'E_SOURCE_MISSING') throw error; }
+  if (authorityPath) {
+    await assertNoAuthoritySidecars(authorityPath);
+    const before = sha256(await readFile(authorityPath));
+    const authority = openReadOnly(authorityPath);
+    let review;
+    try { review = reviewCurrentAuthority(authority, { requireClean }); }
+    finally { authority.close(); }
+    const temp = resolve(dirname(output), `.${basename(output)}.export-${randomBytes(16).toString('hex')}.tmp`);
+    let ownsTemp = false;
+    try {
+      await copyFile(authorityPath, temp, constants.COPYFILE_EXCL);
+      ownsTemp = true;
+      const bytes = await readFile(temp);
+      await assertNoAuthoritySidecars(authorityPath);
+      if (sha256(bytes) !== before || sha256(await readFile(authorityPath)) !== before) fail('E_DB_CHANGED', '내보내기 도중 정본이 변경되었습니다.');
+      const exported = openReadOnly(temp);
+      try { reviewCurrentAuthority(exported, { requireClean }); }
+      finally { exported.close(); }
+      try { await link(temp, output); }
+      catch (cause) {
+        if (cause.code === 'EEXIST') fail('E_OUTPUT_EXISTS', '기존 출력을 보존했습니다.', cause);
+        fail('E_OUTPUT_PUBLISH', '배타적 hard-link 내보내기에 실패했습니다.', cause);
+      }
+      return { ...review, mode: 'current-authority-export', sha256: before, byte_length: bytes.length };
+    } finally { if (ownsTemp) await removeOwnTemp(temp); }
+  }
+  // Only an explicit, separate fixture may replay the legacy import. A missing
+  // production authority is never reconstructed from predecessor JSON.
+  if (sourceRoot === undefined || resolve(effectiveSourceRoot) === DEFAULT_SOURCE_ROOT) {
+    fail('E_AUTHORITY_MISSING', '현재 저작 SQLite 정본이 없습니다. JSON에서 재생성하지 않습니다.');
+  }
   const bundle = await loadSourceBundle({ sourceRoot: effectiveSourceRoot });
   const renderer = await loadTrustedRenderer({ sourceRoot: effectiveSourceRoot, bundle });
   const identity = mapIdentityDomains(bundle);
@@ -269,8 +305,7 @@ export async function buildCastDatabase({ sourceRoot, outputPath, requireClean =
   const degraded = officialIssueCount > 0 || importerIssueCount > 0 || tables.source_check_run.some((run) => run.exit_code !== 0);
   if (requireClean && (degraded || bundle.officialChecks.length === 0)) fail('E_SOURCE_QUALITY', `공식 검사 ${bundle.officialChecks.length === 0 ? '미실행(현재 스키마 미지원)' : officialIssueCount + '건'}, importer 검사 ${importerIssueCount}건(참조 앵커 미확인 ${sourceReferenceUnresolvedCount}건 포함)입니다.`);
   await assertSnapshot(effectiveSourceRoot, bundle);
-  const canonical = isCanonicalCastOutput(effectiveSourceRoot, output);
-  if (!canonical) await requireAbsent(output);
+  await requireAbsent(output);
   const temp = resolve(dirname(output), `.${basename(output)}.build-${randomBytes(16).toString('hex')}.tmp`);
   let db;
   let ownsTemp = false;
@@ -294,8 +329,7 @@ export async function buildCastDatabase({ sourceRoot, outputPath, requireClean =
     await assertSnapshot(effectiveSourceRoot, bundle);
     const bytes = await readFile(temp);
     const digest = sha256(bytes);
-    if (canonical) await rename(temp, output);
-    else try { await link(temp, output); }
+    try { await link(temp, output); }
     catch (cause) {
       if (cause.code === 'EEXIST') fail('E_OUTPUT_EXISTS', '게시 직전에 출력 경로가 생성되었습니다. 기존 파일을 보존했습니다.', cause);
       fail('E_OUTPUT_PUBLISH', '배타적 hard-link 게시에 실패했습니다.', cause);
@@ -348,7 +382,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   try {
     const args = process.argv.slice(2);
     if (args.length === 1 && args[0] === '--help') {
-      console.log('Usage: node build.mjs --output <new.sqlite> [--source-root <absolute WIKI path>] [--require-clean]\nsource-root 생략 시 이 스크립트가 속한 위키 저장소를 사용합니다. 기존 출력은 보존합니다.');
+      console.log('Usage: node build.mjs --output <new.sqlite> [--source-root <absolute WIKI path>] [--require-clean]\n현재 SQLite 정본을 새 외부 경로에 내보냅니다. 정본과 기존 출력은 교체하지 않습니다. --require-clean은 원래 import 품질 gate이며 현재 공개 승인이 아닙니다. 명시한 별도 non-authority fixture만 이전 importer를 사용합니다.');
     } else console.log(JSON.stringify(await buildCastDatabase(cliOptions(args)), null, 2));
   } catch (error) { console.error(error.message); process.exitCode = 1; }
 }

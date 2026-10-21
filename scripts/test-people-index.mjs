@@ -1,8 +1,23 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { test } from 'vitest'
 import { readRendered } from './lore-read-rendered.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
+
+function readRosterSelection() {
+  const db = openReadOnly(resolve(import.meta.dirname, '../data/canonical/wiki-cast.sqlite'))
+  try {
+    const dispositions = readPersonDisposition(db)
+    const people = db.prepare('SELECT person_id AS id,name FROM person ORDER BY person_id').all()
+    return {
+      kept: people.filter(person => dispositions.get(person.id).status === 'active'),
+      removed: people.filter(person => dispositions.get(person.id).status === 'retired-current'),
+    }
+  } finally { db.close() }
+}
 
 test('all canonical people are indexed and linked to a canon card', async () => {
   const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
@@ -10,17 +25,29 @@ test('all canonical people are indexed and linked to a canon card', async () => 
   const names = [...catalog.matchAll(/"name": "([^"]+)"/g)].map((match) => match[1])
   const sourceRoutes = [...catalog.matchAll(/"sourceRoute": "([^"]+)"/g)].map((match) => match[1])
   const detailRoutes = [...catalog.matchAll(/"detailRoute": "([^"]+)"/g)].map((match) => match[1])
-  assert.equal(count, 1022)
+  const selection = readRosterSelection()
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  const keptIds = new Set(selection.kept.map(person => person.id))
+  const removedIds = new Set(selection.removed.map(person => person.id))
+  assert.equal(keptIds.size, 511)
+  assert.equal(removedIds.size, 511)
+  assert.ok([...keptIds].every(id => !removedIds.has(id)))
+  assert.deepEqual([...keptIds, ...removedIds].sort(), registry.persons.map(person => person.id).sort())
+  const expectedNames = selection.kept.map(person => person.name).sort()
+  const sheets = readCanonicalDocument('lore/name-pools/gurps-cast.json')
+  const expectedRoutes = sheets.people.filter(person => keptIds.has(person.id)).map(person => person.url).sort()
+  assert.equal(count, keptIds.size)
   const countModule = await readFile(new URL('../src/generated/peopleCount.ts', import.meta.url), 'utf8')
   assert.equal(Number(countModule.match(/peopleCount = (\d+)/)?.[1]), count)
-  assert.equal(names.length, 1022)
-  assert.equal(new Set(names).size, 1022)
-  assert.equal(sourceRoutes.length, 1022)
-  assert.equal(detailRoutes.length, 1022)
-  assert.equal(new Set(detailRoutes).size, 1022)
+  assert.deepEqual([...names].sort(), expectedNames)
+  assert.equal(new Set(names).size, keptIds.size)
+  assert.equal(sourceRoutes.length, keptIds.size)
+  assert.equal(detailRoutes.length, keptIds.size)
+  assert.equal(new Set(detailRoutes).size, keptIds.size)
+  assert.deepEqual([...detailRoutes].sort(), expectedRoutes)
   assert.ok(sourceRoutes.every((route) => route.startsWith('/world/') && route.includes('#')))
   const genders = [...catalog.matchAll(/"gender": "([^"]+)"/g)].map((match) => match[1])
-  assert.equal(genders.length, 1022)
+  assert.equal(genders.length, keptIds.size)
   assert.ok(genders.every((gender) => gender === '여성' || gender === '남성'))
   assert.equal(sourceRoutes.filter((route) => route.startsWith('/world/Core-Characters#인물-')).length, 0)
   for (const route of sourceRoutes) {
@@ -44,7 +71,7 @@ test('people search route is linked from wiki navigation', async () => {
   assert.match(links, /characters: '\/people'/)
 })
 
-test('the atlas projection links all eight unaffiliated people through the generated catalog', async () => {
+test('the atlas projection links only retained additional people through the generated catalog', async () => {
   const page = JSON.parse(await readFile(new URL('../src/generated/world/World-Expansion-Index.json', import.meta.url), 'utf8'))
   const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
   const links = []
@@ -53,8 +80,11 @@ test('the atlas projection links all eight unaffiliated people through the gener
     for (const child of node.children ?? []) visit(child)
   }
   page.blocks.forEach(visit)
-  const atlas = JSON.parse(await readFile(new URL('../lore/World-Narrative-Atlas.json', import.meta.url), 'utf8')).data.atlas
-  assert.deepEqual(links.map((link) => link.url), Object.values(atlas.additional_people).map(person => person.detail_route))
+  const atlas = readCanonicalDocument('lore/World-Narrative-Atlas.json').data.atlas
+  const selection = readRosterSelection()
+  const keptIds = new Set(selection.kept.map(person => person.id))
+  assert.deepEqual(links.map((link) => link.url), Object.entries(atlas.additional_people)
+    .filter(([id]) => keptIds.has(id)).map(([, person]) => person.detail_route))
   for (const link of links) {
     assert.ok(catalog.includes('"detailRoute": "' + link.url + '"'), link.url)
     const id = link.url.split('/').at(-1)

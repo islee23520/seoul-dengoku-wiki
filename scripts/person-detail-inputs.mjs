@@ -1,19 +1,8 @@
-import { readFile, readdir } from 'node:fs/promises'
-import { basename, resolve } from 'node:path'
-import { renderLoreMarkdown } from './lore-json-render.mjs'
+import { readFile } from 'node:fs/promises'
+import { resolve } from 'node:path'
 import { stateNames } from './approved-organization-aliases.mjs'
-import { atlasPeopleContext } from './atlas-people-context.mjs'
-import { loadDataset, validate as validateRelations } from '../lore/relations/validate.mjs'
-import { validateOpeningDispositions } from './personal-holdings.mjs'
-import { loadCastBirthdays } from './cast-birthdays.mjs'
-import { loadCastFamilyTrees } from './cast-family-trees.mjs'
-import { loadHouseholdSourceDocuments, validateCastHouseholdRelations } from './cast-household-relations.mjs'
-import { parsePersonRightsPermissions } from './person-rights-permissions.mjs'
-import { loadPreservedPersonSheets } from './preserved-person-sheet.mjs'
-import { loadCharacterProfiles } from './validate-character-profiles.mjs'
-import { personFeedbackRecord } from './feedback-source-catalog.mjs'
 import { producePersonDetails } from './person-detail-production.mjs'
-import { authenticatePersonalTierProvenance, assertPersonalTierPreservation } from './personal-tier-provenance.mjs'
+import { assertPersonalTierPreservation } from './personal-tier-provenance.mjs'
 import { currentAffiliations } from './current-affiliation.mjs'
 import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
 import proj4 from 'proj4'
@@ -21,6 +10,9 @@ import { createHash } from 'node:crypto'
 import { validateHoldingFacility } from './holding-facility.mjs'
 import { projectOutsideOccupation } from './outside-occupation.mjs'
 import { projectOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
+import { REGION_CONTENT_SOURCE_HASHES } from './cast-sqlite/region-content-documents.mjs'
 
 const NONOWNING_APPROVAL_SHA256 = '44a49cbb8341d87214ebeef9d9e303cb5591f7c9c50327016516a7627b5eb2b8'
 
@@ -278,182 +270,24 @@ export function currentOfficeAppointments(source, issuedById) {
   return appointments
 }
 
-export async function loadPersonDetailSources({ repoRoot, loreRoot = resolve(repoRoot, 'lore'), pagesBySlug, renderedBySlug, atlasPeople } = {}) {
+export async function loadPersonDetailSources({ repoRoot } = {}) {
   repoRoot = resolve(repoRoot)
-  const personalTierPreservation = await authenticatePersonalTierProvenance(repoRoot)
-  const sourceBytes = new Map()
-  const record = (path, bytes) => {
-    const first = sourceBytes.get(path)
-    if (first && !first.equals(bytes)) throw new Error('E_PERSON_CAPTURE_SOURCE_DRIFT:' + path)
-    sourceBytes.set(path, bytes)
-  }
-  const bytesFor = async path => {
-    const bytes = await readFile(resolve(repoRoot, path))
-    record(path, bytes)
-    return bytes
-  }
-  const json = async path => JSON.parse((await bytesFor(path)).toString())
-  if (!pagesBySlug || !renderedBySlug) {
-    pagesBySlug = new Map()
-    renderedBySlug = new Map()
-    const walk = async dir => {
-      for (const entry of await readdir(dir, { withFileTypes: true })) {
-        if (entry.name.startsWith('.')) continue
-        const path = resolve(dir, entry.name)
-        if (entry.isDirectory()) {
-          if (!['name-pools', 'regions', 'editorial', 'sources'].includes(entry.name)) await walk(path)
-        } else if (entry.isFile() && entry.name.endsWith('.json') && !entry.name.startsWith('authoring.')) {
-          const value = await json(path.slice(repoRoot.length + 1))
-          if (value && typeof value.domain === 'string' && Array.isArray(value.content)) {
-            const slug = basename(path, '.json')
-            pagesBySlug.set(slug, { path, value, slug })
-            renderedBySlug.set(slug, renderLoreMarkdown(value, 'ko', (_domain, target) => `${target}.md`))
-          }
-        }
-      }
-    }
-    await walk(loreRoot)
-  }
-  if (!atlasPeople) {
-    for (const name of ['person-id-registry', 'person-id-candidates', 'values-cast', 'gurps-cast']) await bytesFor(`lore/name-pools/${name}.json`)
-    atlasPeople = await atlasPeopleContext(loreRoot)
-  }
-  const peopleSource = (await json('lore/name-pools/values-cast.json')).people
-  const lineageByName = new Map((await json('lore/name-pools/cast-hangnyeol.json')).people.map(person => [person.name, person]))
-  const genderByName = new Map((await json('lore/name-pools/gender-cast.json')).people.map(person => [person.name, person]))
-  const personCards = new Map()
-  const addPersonCards = (text, file, pattern) => {
-    const headings = [...text.matchAll(pattern)].map(heading => ({
-      heading,
-      start: text.slice(0, heading.index).match(/(?:\n<a id="[\p{L}\p{N}_-]+"><\/a>\n*)+$/u)?.index ?? heading.index,
-    }))
-    for (let index = 0; index < headings.length; index += 1) {
-      const { heading } = headings[index]
-      const name = heading[1].trim()
-      if (name === '부록 — 가치관 숫자' || name === '인물 카드') continue
-      const nextPerson = headings[index + 1]?.start ?? -1
-      const nextSection = file === 'Cast-Unaffiliated.md' ? text.indexOf('\n## ', heading.index + heading[0].length) : -1
-      const boundaries = [nextPerson, nextSection].filter(position => position >= 0)
-      const nextHeading = boundaries.length ? Math.min(...boundaries) : -1
-      const body = text.slice(heading.index + heading[0].length, nextHeading >= 0 ? nextHeading : text.length).trim()
-      const cards = personCards.get(name) ?? []
-      const slug = file.replace('.md', '')
-      cards.push({ file: slug, body, primary: pagesBySlug.get(slug)?.value.data?.primary_detail_names?.includes(name) ?? false })
-      personCards.set(name, cards)
-    }
-  }
-  for (let index = 1; index <= 16; index += 1) {
-    const file = `Cast-State-${String(index).padStart(2, '0')}.md`
-    const text = renderedBySlug.get(basename(file, '.md'))
-    if (!text) throw new Error(`E_CAST_PAGE_MISSING:${file}`)
-    addPersonCards(text, file, /^### 인물 (.+)$/gm)
-  }
-  for (const [file, pattern] of [['Core-Characters.md', /^## (?!인물 목록$)(.+)$/gm], ['Cast-Unaffiliated.md', /^### 인물 (.+)$/gm]]) {
-    const text = renderedBySlug.get(basename(file, '.md'))
-    if (!text) throw new Error(`E_CAST_PAGE_MISSING:${file}`)
-    addPersonCards(text, file, pattern)
-  }
-  const corridorText = renderedBySlug.get('Diaspora-Corridors')
-  if (!corridorText) throw new Error('E_CORRIDOR_PAGE_MISSING')
-  const corridorNames = ['린샤오메이', '팜반득', '아미라 카심', '조엘 박', '나르기즈 유수포바', '최일석']
-  const corridorHeadings = [...corridorText.matchAll(/^### 인물 (.+)$/gm)]
-  for (const [index, heading] of corridorHeadings.entries()) {
-    const name = corridorNames.find(candidate => heading[1] === candidate || heading[1].startsWith(`${candidate} (`))
-    if (!name) continue
-    const end = corridorHeadings[index + 1]?.index ?? corridorText.length
-    const body = corridorText.slice(heading.index + heading[0].length, end).trim()
-    const cards = personCards.get(name) ?? []
-    cards.push({ file: 'Diaspora-Corridors', body, heading: heading[1] })
-    personCards.set(name, cards)
-  }
-  const relationText = renderedBySlug.get('Cast-Relations')
-  if (!relationText) throw new Error('E_CAST_RELATIONS_MISSING')
-  const relations = [...relationText.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
-    .map(match => ({ from: match[1].trim(), type: match[2].trim(), to: match[3].trim(), basis: match[4].trim() }))
-    .filter(relation => relation.from !== '인물' && !relation.from.startsWith('---'))
-  for (const path of ['lore/relations/relations.json', 'lore/factions/Sixteen-States.json',
-    'lore/characters/Cast-Relations.json', 'lore/characters/Cast-Index.json',
-    'lore/name-pools/person-id-registry.json', 'lore/name-pools/values-cast.json',
-    'lore/chronology/Century-Annals.json', 'lore/relations/personal-holdings.json']) await bytesFor(path)
-  // loadDataset optionally reads this archive when it exists; missing is its defined empty archive.
-  try { await bytesFor('lore/editorial/seoul-narrative-census-events.json') } catch (error) { if (error.code !== 'ENOENT') throw error }
-  const courtDataset = loadDataset()
-  const courtErrors = validateRelations(courtDataset)
-  if (courtErrors.length) throw new Error(`E_COURT_RELATIONS:${courtErrors.join('; ')}`)
-  const issuedById = new Map(courtDataset.people.map(person => [person.id, person]))
-  const originalHoldings = await json('lore/relations/personal-holdings.json')
-  const openingDispositions = validateOpeningDispositions(originalHoldings, courtDataset.people)
-  const issuedIdByName = new Map(courtDataset.people.map(person => [person.name, person.id]))
-  const birthdayRoster = courtDataset.sources.registry.persons
-  const birthdayNames = new Set(peopleSource.map(person => person.name))
-  if (birthdayNames.size !== peopleSource.length || birthdayRoster.length !== peopleSource.length || birthdayRoster.some(person => !birthdayNames.has(person.name))) throw new Error('E_BIRTH_ROSTER_COVERAGE')
-  for (const name of ['cast-birth-cohorts', 'cast-birthdays', 'cast-family-trees',
-    'diaspora-family-lineages', 'cast-family-role-decisions', 'clan-hangnyeol-tables']) await bytesFor(`lore/name-pools/${name}.json`)
-  const birthdaysById = await loadCastBirthdays(loreRoot, birthdayRoster)
-  const familyGraph = await loadCastFamilyTrees(loreRoot, birthdayRoster, { birthdays: birthdaysById, resolveRegisteredPeople: true })
-  const householdLedger = await json('lore/name-pools/cast-household-relations.json')
-  const householdPaths = new Set(['lore/name-pools/person-id-registry.json', 'lore/name-pools/cast-family-trees.json',
-    'lore/name-pools/diaspora-family-lineages.json', 'lore/World-Narrative-Atlas.json',
-    'lore/relations/relations.json', 'lore/characters/Cast-Relations.json'])
-  for (const person of householdLedger.people) for (const ref of [...person.sourceRefs,
-    ...person.links.flatMap(link => link.sourceRefs), ...person.knownLinks.flatMap(link => link.sourceRefs),
-    ...person.household.personFaith.sourceRefs, ...person.household.houseFaith.sourceRefs]) householdPaths.add(ref.path)
-  for (const row of householdLedger.existingHumanoidContext) for (const ref of row.sourceRefs) householdPaths.add(ref.path)
-  // The nested loader validates path confinement; do not open untrusted reference paths before it does.
-  validateCastHouseholdRelations(householdLedger, await loadHouseholdSourceDocuments(repoRoot, householdLedger))
-  for (const path of householdPaths) await bytesFor(path)
-  const householdsById = new Map(householdLedger.people.map(person => [person.personId, {
-    personFaith: person.household.personFaith.status,
-    houseFaith: person.household.houseFaith.status,
-    humanoidAdmission: person.household.humanoidAdmission,
-  }]))
-  const proseContacts = await json('lore/name-pools/cast-prose-contacts.json')
-  const proseContactsById = new Map()
-  const seenProseContacts = new Set()
-  for (const contact of proseContacts.records) {
-    const key = `${contact.personId}:${contact.recipientId}`
-    if (!issuedById.has(contact.personId) || !issuedById.has(contact.recipientId) || contact.personId === contact.recipientId || seenProseContacts.has(key) || contact.kind !== 'existing-prose-contact' || !/^lore\/(?:characters|factions)\/[^/]+\.json$/.test(contact.sourceRef.path)) throw new Error(`E_PROSE_CONTACT_ID:${key}`)
-    seenProseContacts.add(key)
-    const document = await json(contact.sourceRef.path)
-    const source = document.content.find(block => block.anchor === contact.sourceRef.anchor)
-    const value = source?.kind === 'list' ? source.items.find(item => typeof item.ko === 'string' && item.ko.startsWith('주요 관계:'))?.ko : source?.text?.ko
-    const basis = typeof value === 'string' ? value : Array.isArray(value) ? value.filter(part => !part.strong).map(part => part.text).join('') : ''
-    if (!contact.sourceRef.anchor.startsWith(`인물-${issuedById.get(contact.personId).name.replaceAll(' ', '-')}-`) || !basis.includes(issuedById.get(contact.recipientId).name)) throw new Error(`E_PROSE_CONTACT_SOURCE:${key}`)
-    const outgoing = proseContactsById.get(contact.personId) ?? []
-    outgoing.push({ recipientId: contact.recipientId, recipientName: issuedById.get(contact.recipientId).name, basis: basis.trim(), sourceRef: contact.sourceRef })
-    proseContactsById.set(contact.personId, outgoing)
-    const incoming = proseContactsById.get(contact.recipientId) ?? []
-    incoming.push({ recipientId: contact.personId, recipientName: issuedById.get(contact.personId).name, basis: basis.trim(), sourceRef: contact.sourceRef })
-    proseContactsById.set(contact.recipientId, incoming)
-  }
-  const parentStatuses = (await json('lore/name-pools/cast-family-parent-status.json')).records
-  const parentStatusById = new Map()
-  for (const record of parentStatuses) {
-    if (parentStatusById.has(record.personId) || !issuedById.has(record.personId) || !['biological-parents-unrecorded', 'maternal-parent-unrecorded'].includes(record.status) || !familyGraph.edges.some(edge => edge.to === record.personId && edge.from === record.knownParentId && edge.type === record.knownRelationship)) throw new Error(`E_PARENT_STATUS:${record.personId}`)
-    if (record.sourceRef?.path !== 'lore/characters/Core-Characters.json') throw new Error(`E_PARENT_STATUS_SOURCE:${record.personId}`)
-    const source = await json(record.sourceRef.path)
-    if (!source.content?.some(block => block.anchor === record.sourceRef.anchor)) throw new Error(`E_PARENT_STATUS_SOURCE:${record.personId}`)
-    parentStatusById.set(record.personId, record.status)
-  }
-  const personRightsPermissions = parsePersonRightsPermissions(await json('person-rights-permissions.json'), courtDataset.people)
-  const officeAppointmentSource = await json('lore/relations/opening-office-appointments.json')
-  const issuedSheets = (await json('lore/name-pools/gurps-cast.json')).people
-  const profileFiles = (await readdir(resolve(repoRoot, 'lore/editorial/profile-batches'))).filter(name => name.endsWith('.json')).sort()
-  for (const name of profileFiles) await bytesFor(`lore/editorial/profile-batches/${name}`)
-  await bytesFor('lore/editorial/Soul-Assignments.json')
-  const profiles = await loadCharacterProfiles(repoRoot)
-  const issuedBaseline = await json('scripts/issued-preservation-baseline.json')
-  await bytesFor('scripts/person-sheet-name-changes.json')
-  for (const revision of Object.keys(issuedBaseline.revisions)) await bytesFor(`vendor/issued-history/${revision}.json`)
-  for (const path of Object.keys(issuedBaseline.sourceHashes)) await bytesFor(`vendor/issued-history/corpus/${path}`)
-  const preservedSheets = loadPreservedPersonSheets()
-  return { peopleSource, personCards, pagesBySlug, renderedBySlug, issuedIdByName, issuedById, genderByName,
-    atlasPeople, birthdayRoster, courtDataset, issuedSheets, lineageByName, birthdaysById, familyGraph,
-    parentStatusById, proseContactsById, householdsById, personRightsPermissions,
-    characterProfiles: profiles, preservedSheets, personalTierPreservation,
-    openingDispositions, relations, personFeedbackRecord, originalHoldings, officeAppointmentSource,
-    openingAllocation: await json('lore/relations/opening-feudal-allocation.json'),
-    stationInteriors: await json('lore/regions/station-interiors.json'), sourceBytes, bytesFor, record }
+  const { openReadOnly } = await import('./cast-sqlite/db.mjs')
+  const { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } = await import('./document-store/evidence.mjs')
+  const { loadDatabasePersonProductionInputs } = await import('./cast-sqlite/person-detail-inputs.mjs')
+  const directory = resolve(repoRoot, '.omo/private/seoul-migration/sqlite-authority-20261021')
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(repoRoot, 'data/canonical/wiki-cast.sqlite'))
+  const handles = [db]
+  try {
+    const options = { capability: INTERNAL_EVIDENCE_CAPABILITY }
+    const evidenceStore = openEvidenceStore(process.env.WIKI_TIER_EVIDENCE_DB ?? resolve(directory, 'person-tier-dependencies-evidence-20261020.sqlite'), options)
+    handles.push(evidenceStore)
+    const historyStore = openEvidenceStore(process.env.WIKI_TIER_HISTORY_DB ?? resolve(directory, 'person-tier-history-evidence-20261020.sqlite'), options)
+    handles.push(historyStore)
+    return await loadDatabasePersonProductionInputs({ db, repoRoot, evidenceStore, historyStore,
+      editorialProfileDb: process.env.WIKI_EDITORIAL_PROFILE_DB ?? resolve(directory, 'editorial-profiles.sqlite'),
+      soulAssignmentDb: process.env.WIKI_SOUL_ASSIGNMENT_DB ?? resolve(directory, 'soul-assignments.sqlite') })
+  } finally { for (const handle of handles.reverse()) handle.close() }
 }
 
 export async function produceFromPersonDetailSources(sources, { personalHoldings, stateNameById, tiersByState, officeAppointments }) {
@@ -475,8 +309,8 @@ export async function projectPersonHoldingsInputs(sources, { repoRoot, territory
 }
 
 export async function loadPersonHoldingsContext(sources, { repoRoot, stateRows, stateCatalog }) {
-  const { bytesFor } = sources
-  const read = async path => JSON.parse((await bytesFor(path)).toString())
+  const bytesFor = sources.bytesFor ?? (async path => readSourceArchive(path, undefined, process.env.WIKI_DOCUMENT_DB ?? resolve(repoRoot, 'data/canonical/wiki-cast.sqlite')))
+  const read = async path => readCanonicalDocument(path, { databasePath: process.env.WIKI_DOCUMENT_DB ?? resolve(repoRoot, 'data/canonical/wiki-cast.sqlite') })
   const lore = path => read(`lore/${path}`)
   const snapshotManifest = await read('snapshots/build-inputs/source-manifest.json')
   const snapshot = async name => {
@@ -494,9 +328,8 @@ export async function loadPersonHoldingsContext(sources, { repoRoot, stateRows, 
   const geography = JSON.parse(geographyBytes.toString())
   const sixteenStatesLore = await lore('factions/Sixteen-States.json')
   const regionContentById = new Map()
-  for (const entry of await readdir(resolve(repoRoot, 'lore/regions/content'), { withFileTypes: true })) {
-    if (!entry.isFile() || !/^\d{5}\.json$/u.test(entry.name)) continue
-    const district = await lore(`regions/content/${entry.name}`)
+  for (const path of Object.keys(REGION_CONTENT_SOURCE_HASHES)) {
+    const district = await read(path)
     for (const region of district.regions) regionContentById.set(region.region_id, region.content)
   }
   if (regionContentById.size !== 427) throw new Error(`E_REGION_CONTENT_COVERAGE:${regionContentById.size}`)

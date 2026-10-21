@@ -1,11 +1,11 @@
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
-import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
 import { buildAdminTerritorialScale, validateAdminTerritorialScale } from './admin-territorial-scale.mjs'
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
 
-const geographyBytes = readFileSync(new URL('../lore/regions/seoul-electoral-titles.json', import.meta.url))
-const territorialScale = JSON.parse(readFileSync(new URL('../lore/offices/Offices-and-Ranks.json', import.meta.url))).data.territorialScale
+const geographyBytes = readSourceArchive('lore/regions/seoul-electoral-titles.json', '372734e77019d0e544ded29f90e1b35b8a8c3a3cfff305c295c2bd83a6b64eef')
+const territorialScale = JSON.parse(readSourceArchive('lore/offices/Offices-and-Ranks.json', '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e')).data.territorialScale
 const inputs = { geographyBytes, territorialScale }
 const build = () => buildAdminTerritorialScale(inputs)
 const mutate = change => {

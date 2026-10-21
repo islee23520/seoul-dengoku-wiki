@@ -2,6 +2,8 @@ import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { createHash } from 'node:crypto'
 import { selectedSource, sourceSha256 } from './project-outside-admin-units.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
 
 export const STATION_CATALOG_PATH = 'lore/places/Seoul-Station-Catalog.json'
 export const STATION_BOUNDARY_PATH = 'data/geography/boundaries/admdongkor-20260701.geojson'
@@ -81,7 +83,7 @@ export function validateStationCatalogGeography(catalog, boundaryBytes) {
 }
 
 export async function loadStationCatalogGeography(root, { catalog, readBytes = readFile } = {}) {
-  catalog ??= JSON.parse(await readBytes(resolve(root, STATION_CATALOG_PATH)))
+  catalog ??= readCanonicalDocument(STATION_CATALOG_PATH, { databasePath: process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite') })
   return validateStationCatalogGeography(catalog, await readBytes(resolve(root, STATION_BOUNDARY_PATH)))
 }
 
@@ -98,6 +100,7 @@ export function outsideStationIds(archiveBytes, boundaryBytes, stationAliases) {
 }
 
 export async function loadOutsideStationIds(root, { stationAliases, readBytes = readFile } = {}) {
-  return outsideStationIds(await readBytes(resolve(root, STATION_ARCHIVE_PATH)),
+  return outsideStationIds(readSourceArchive(STATION_ARCHIVE_PATH, stationArchiveSha256,
+    process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite')),
     await readBytes(resolve(root, STATION_BOUNDARY_PATH)), stationAliases)
 }

@@ -1,3 +1,4 @@
+import { loadSheetMetadata } from './cast-sqlite/sheet-metadata.mjs'
 import assert from 'node:assert/strict'
 import { once } from 'node:events'
 import { readFile } from 'node:fs/promises'
@@ -11,7 +12,7 @@ export const test = process.env.ORIGINAL_API_NODE_TEST === '1'
   ? (name, body, timeout = 30000) => runner.test(name, { timeout }, body) : runner.test
 export const root = fileURLToPath(new URL('..', import.meta.url))
 export const hash = bytes => createHash('sha256').update(bytes).digest('hex')
-export const baseline = JSON.parse(await readFile(new URL('./issued-preservation-baseline.json', import.meta.url), 'utf8'))
+export const baseline = loadSheetMetadata().baseline
 // Committed sealed inputs work in a source archive without Git or environment setup.
 export const sources = new Map(await Promise.all(REVISIONS.map(async revision => {
   const bytes = await readFile(new URL('../vendor/issued-history/' + revision + '.json', import.meta.url))

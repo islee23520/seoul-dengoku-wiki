@@ -8,10 +8,18 @@ import { gfm } from 'micromark-extension-gfm'
 import { approvedDocuments, publishedDocuments, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
 import { personRouteFailures } from './person-publication-contract.mjs'
 import { requireSeoulPublication } from './check-seoul-scope.mjs'
-import { buildAdminTerritorialScale, validateAdminTerritorialScale } from './admin-territorial-scale.mjs'
+import { buildAdminTerritorialScale, validateAdminTerritorialScale, buildAdminTerritorialScaleFromDb } from './admin-territorial-scale.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readGeographyStore } from './cast-sqlite/geography-store.mjs'
+import { readEvidenceDocumentReference } from './cast-sqlite/evidence-document-reference.mjs'
+import { orderDocumentKeys } from './cast-sqlite/document-key-order.mjs'
 import { validatePublishedGeographyMap } from './published-geography-map.mjs'
+import { publicTerritorialScale } from '../src/components/geographicTitleMap.mjs'
+import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
+import { readAtlasIdentity, readAtlasValuesDocument } from './cast-sqlite/atlas-identity.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
+process.env.WIKI_DOCUMENT_DB ??= resolve(projectRoot, 'data/canonical/wiki-cast.sqlite')
 const publicationReview = await requireSeoulPublication(projectRoot)
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(projectRoot, 'lore'))
 const domains = ['world']
@@ -53,30 +61,55 @@ try {
 }
 
 const failures = []
-const offices = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8'))
-const geographyBytes = await readFile(resolve(loreRoot, 'regions/seoul-electoral-titles.json'))
 try {
-  const descriptor = offices.data.territorialScale
-  const geographicScale = buildAdminTerritorialScale({ geographyBytes, territorialScale: descriptor })
-  validateAdminTerritorialScale(geographicScale, { geographyBytes, territorialScale: descriptor })
+  let descriptor, geographicScale, geography
+  if (process.env.WIKI_DOCUMENT_DB) {
+    const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
+    try {
+      db.exec('BEGIN')
+      geographicScale = buildAdminTerritorialScaleFromDb(db)
+      geography = readGeographyStore(db)
+      const offices = readEvidenceDocumentReference(db, { logicalPath: 'lore/offices/Offices-and-Ranks.json',
+        expectedSha256: '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e' })
+      descriptor = orderDocumentKeys(db, offices.sourceId, offices.document).data.territorialScale
+      db.exec('COMMIT')
+    } finally { db.close() }
+  } else {
+    const offices = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8'))
+    const geographyBytes = await readFile(resolve(loreRoot, 'regions/seoul-electoral-titles.json'))
+    descriptor = offices.data.territorialScale
+    geographicScale = buildAdminTerritorialScale({ geographyBytes, territorialScale: descriptor })
+    validateAdminTerritorialScale(geographicScale, { geographyBytes, territorialScale: descriptor })
+    geography = JSON.parse(geographyBytes.toString())
+  }
   const publishedDescriptor = JSON.parse(await readFile(resolve(projectRoot, 'public/territorial-scale.json'), 'utf8'))
-  if (JSON.stringify(publishedDescriptor) !== JSON.stringify(descriptor)) failures.push('territorial-scale-descriptor-drift')
+  if (JSON.stringify(publishedDescriptor) !== JSON.stringify(publicTerritorialScale(descriptor))) failures.push('territorial-scale-descriptor-drift')
   const map = JSON.parse(await readFile(resolve(projectRoot, 'public/opening-territories.json'), 'utf8')).geography
-  validatePublishedGeographyMap(map, JSON.parse(geographyBytes.toString()), geographicScale)
+  validatePublishedGeographyMap(map, geography, geographicScale)
 } catch (error) {
   failures.push('territorial-scale-contract:' + error.message)
 }
 const approved = publishedDocuments(await approvedDocuments(loreRoot), publicationReview)
 const peopleSource = await readFile(resolve(projectRoot, 'src/generated/peopleCatalog.ts'), 'utf8')
 const people = JSON.parse(peopleSource.split('export const peopleCatalog = ')[1].split(' as const')[0])
-const sourcePeople = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
-const issued = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/person-id-registry.json'), 'utf8')).persons
+const { sourcePeople, issued } = (() => {
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
+  try { return { sourcePeople: readAtlasValuesDocument(db).people, issued: readAtlasIdentity(db).registry.persons } }
+  finally { db.close() }
+})()
 const detailRoot = resolve(projectRoot, 'public/person-details')
 const details = new Map()
 for (const name of (await readdir(detailRoot)).filter((name) => extname(name) === '.json')) {
   details.set(basename(name, '.json'), JSON.parse(await readFile(resolve(detailRoot, name), 'utf8')))
 }
-failures.push(...personRouteFailures(people, details, sourcePeople, issued))
+let dispositions
+{
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite'))
+  try {
+    if (db.prepare("SELECT 1 FROM sqlite_schema WHERE name='person_disposition'").get()) dispositions = readPersonDisposition(db)
+  } finally { db.close() }
+}
+failures.push(...personRouteFailures(people, details, sourcePeople, issued, dispositions))
 const expectedRoutes = approved.map(({ route }) => route)
 const expectedEnglishRoutes = approved.filter(({ source }) => source.endsWith('.json')).map(({ route }) => `/en${route}`)
 const publishedRoutes = documents.map(({ route }) => route).sort()

@@ -25,9 +25,10 @@ test('output in the read-only source tree is rejected before writing', async () 
     outputPath: join(DEFAULT_SOURCE_ROOT, 'forbidden-cast-test.sqlite') }), { code: 'E_OUTPUT_SOURCE_ROOT' });
 });
 
-test('only the canonical database path is allowed inside the source tree', () => {
+test('the canonical identity is recognized but authoring output cannot overwrite it', async () => {
   assert.equal(isCanonicalCastOutput(DEFAULT_SOURCE_ROOT, join(DEFAULT_SOURCE_ROOT, CANONICAL_CAST_DATABASE)), true);
   assert.equal(isCanonicalCastOutput(DEFAULT_SOURCE_ROOT, join(DEFAULT_SOURCE_ROOT, 'forbidden-cast-test.sqlite')), false);
+  await assert.rejects(buildCastDatabase({ outputPath: join(DEFAULT_SOURCE_ROOT, CANONICAL_CAST_DATABASE) }), { code: 'E_AUTHORITY_OUTPUT' });
 });
 
 test('runtime preflight rejects unsupported Node before source access', () => {

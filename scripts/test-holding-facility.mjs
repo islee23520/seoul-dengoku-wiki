@@ -1,11 +1,12 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
-import { mkdir, mkdtemp, readFile, rm, symlink } from 'node:fs/promises'
+import { mkdir, mkdtemp, readFile, rm, symlink, writeFile } from 'node:fs/promises'
 import { join, resolve } from 'node:path'
 import { test } from 'vitest'
 import { validateHoldingFacility } from './holding-facility.mjs'
 
 const root = resolve(import.meta.dirname, '..')
-const read = async file => JSON.parse(await readFile(resolve(root, file), 'utf8'))
+const read = async file => file.startsWith('lore/') ? readCanonicalDocument(file) : JSON.parse(await readFile(resolve(root, file), 'utf8'))
 const interiors = await read('lore/regions/station-interiors.json')
 const holding = (await read('lore/relations/personal-holdings.json')).holdings.find(row => row.facilityRef)
 
@@ -64,7 +65,9 @@ test('지역 원천 root 밖으로 나가는 symlink를 거부한다', async () 
   const temp = await mkdtemp(join(scratch, 'fixture-'))
   try {
     await mkdir(resolve(temp, 'lore/regions/content'), { recursive: true })
-    await symlink(resolve(root, 'lore/regions/content/11560.json'), resolve(temp, 'lore/regions/content/escape.json'))
+    const outside = resolve(temp, 'outside.json')
+    await writeFile(outside, JSON.stringify(readCanonicalDocument('lore/regions/content/11560.json')))
+    await symlink(outside, resolve(temp, 'lore/regions/content/escape.json'))
     const candidate = structuredClone(holding)
     candidate.facilityRef.siteSourcePath = 'lore/regions/content/escape.json'
     await assert.rejects(validateHoldingFacility(candidate, interiors, temp), /E_HOLDING_SOURCE_PATH/)

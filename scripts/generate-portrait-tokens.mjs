@@ -9,6 +9,10 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { generatorStage, requireGenerationPublication } from './generate-release.mjs'
 import { textToImageBlock } from '../server/portrait-text-to-image.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readPortraitGenderInputs } from './cast-sqlite/portrait-gender-input.mjs'
+import { readPortraitFamilyInputs } from './cast-sqlite/portrait-family-input.mjs'
+import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
 
 export async function generatePortraitTokens(root) {
   const { root: stageRoot, writeFile } = await generatorStage(root)
@@ -17,10 +21,15 @@ export async function generatePortraitTokens(root) {
   const DERIVED = 'derived-proposal'
   const DERIVED_DATE = '20261019'
 
-  const json = async (path) => JSON.parse(await readFile(resolve(root, path), 'utf8'))
-  const genders = new Map((await json('lore/name-pools/gender-cast.json')).people.map((row) => [row.name, row]))
-  const nonKorean = JSON.parse((await readFile(resolve(stageRoot, 'src/generated/nonKoreanFamilyCatalog.ts'), 'utf8')).replace(/^export const nonKoreanFamilyCatalog = /, '').replace(/ as const\s*$/, ''))
-  const familyByPerson = new Map(nonKorean.flatMap((family) => family.members.map((member) => [member.id, family])))
+  const tokenDatabasePath = process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite')
+  const genders = (() => {
+      const db = openReadOnly(tokenDatabasePath)
+      try { return readPortraitGenderInputs(db) } finally { db.close() }
+    })()
+  const familyByPerson = (() => {
+      const db = openReadOnly(tokenDatabasePath)
+      try { return readPortraitFamilyInputs(db) } finally { db.close() }
+    })()
 
   const pick = (personId, key, list) => list[createHash('sha256').update(`${personId}:${key}`).digest().readUInt32BE(0) % list.length]
   const derived = (value, basis) => ({ value, status: DERIVED, source: `derived-${DERIVED_DATE}:${basis}`, derived: true })
@@ -180,10 +189,17 @@ export async function generatePortraitTokens(root) {
   await mkdir(tokenRoot, { recursive: true })
   const detailFiles = (await readdir(detailRoot)).filter((file) => /^person-[0-9]{4}\.json$/.test(file)).sort()
   const existing = new Set((await readdir(tokenRoot)).filter((file) => file.endsWith('.json')))
+  const dispositions = (() => {
+    const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite'))
+    try {
+      return db.prepare("SELECT 1 FROM sqlite_schema WHERE name='person_disposition'").get() ? readPersonDisposition(db) : null
+    } finally { db.close() }
+  })()
   const stats = { created: 0, completed: 0, total: 0 }
 
   for (const file of detailFiles) {
     const detail = JSON.parse(await readFile(resolve(detailRoot, file), 'utf8'))
+    if (dispositions?.get(detail.characterId)?.status === 'retired-current') continue
     const heritage = heritageOf(detail)
     const previous = existing.has(file) ? JSON.parse(await readFile(resolve(tokenRoot, file), 'utf8')) : null
     const fresh = deriveSlots(detail, heritage, previous?.artProposal?.palette, Boolean(previous?.image?.sha256))

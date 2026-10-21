@@ -5,11 +5,12 @@ import { test } from 'vitest'
 import { readRendered } from '../../scripts/lore-read-rendered.mjs'
 import { regularLineGraph } from '../../scripts/regular-line-graph.mjs'
 import { loadOutsideStationIds } from '../../scripts/station-catalog-geography.mjs'
+import { readCanonicalDocument } from '../../scripts/cast-sqlite/canonical-document.mjs'
 
 const places = import.meta.dirname
-const candidate = JSON.parse(readFileSync(resolve(places, 'Station-Alias-Candidates.json'), 'utf8'))
-const catalogData = JSON.parse(readFileSync(resolve(places, 'Seoul-Station-Catalog.json'), 'utf8'))
-const interiors = JSON.parse(readFileSync(resolve(places, '../regions/station-interiors.json'), 'utf8'))
+const candidate = readCanonicalDocument('lore/places/Station-Alias-Candidates.json')
+const catalogData = readCanonicalDocument('lore/places/Seoul-Station-Catalog.json')
+const interiors = readCanonicalDocument('lore/regions/station-interiors.json')
 const projected = JSON.parse(readFileSync(resolve(places, '../../public/opening-territories.json'), 'utf8'))
 const catalog = readRendered(resolve(places, '..'), 'places', 'Seoul-Station-Catalog')
 const rows = [...catalog.matchAll(/^\| ([^|]+) \| [^|]* \| 37\.[^|]* \| 12[^|]* \|[^|]*\|$/gmu)].map((match) => match[1])
@@ -54,7 +55,7 @@ test('Isu identity is approved while both observed platforms and four graph neig
 
 test('Seoul observed platforms exclude its separately recorded airport and Gyeongui service', () => {
   const seoul = catalogData.data.station_aliases.find((station) => station.id === '서울역')
-  const services = JSON.parse(readFileSync(resolve(places, '../../scripts/official-seoul-lines.json'), 'utf8')).stations
+  const services = readCanonicalDocument('scripts/official-seoul-lines.json').stations
   for (const id of [seoul.id, ...seoul.aliases]) {
     assert.deepEqual(seoul.observed_lines[id], interiors.stations.find((station) => station.name === id).observed_levels.lines.map((line) => line.line))
     assert.deepEqual(seoul.observed_lines[id], ['1', '4'])
@@ -109,7 +110,7 @@ test('four reviewed subtitle pairs preserve their observed platforms in one map 
 test('all approved subtitles project one node without losing observed lines or movement neighbors', async () => {
   const canonicalId = new Map(catalogData.data.station_aliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
   const original = JSON.parse(readFileSync(resolve(places, '../../snapshots/build-inputs/SeoulWorldGraph.json'), 'utf8'))
-  const physicalSource = JSON.parse(readFileSync(resolve(places, 'regular-line-adjacency.json'), 'utf8'))
+  const physicalSource = readCanonicalDocument('lore/places/regular-line-adjacency.json')
   const approvedStationIds = new Set(original.stations.filter(station => approvedNames.has(station.nameKo)).map(station => canonicalId.get(station.id) ?? station.id))
   const excludedStationIds = await loadOutsideStationIds(resolve(places, '../..'), { stationAliases: catalogData.data.station_aliases })
   assert.deepEqual(excludedStationIds.slice().sort(), ['광명사거리', '석수'])

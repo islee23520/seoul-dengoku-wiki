@@ -7,6 +7,9 @@ import { projectionsFromAtlas } from './world-atlas-render.mjs'
 import { PROJECTION_PATHS, PROJECTION_PATH_SET, canonicalJson } from './world-atlas-schema.mjs'
 import { atlasPeopleContext } from './atlas-people-context.mjs'
 import { verifyAtlasPeople } from './world-atlas-verify.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { listDocuments } from './cast-sqlite/document-read.mjs'
 
 const atlasGeneratedName = /^(?:Operating-Houses|Regional-Physical-AI-Arcs|Synthetic-Actors|World-Expansion-Index|World-Relation-Ledger|External-Theaters|Hostile-Ecology-Index|Hostile-Group-G\d{2}|Unexpected-Atlas|Monster-Batch-.+|Story-Batch-.+|(?:Monster|Story)-Batch-Manifest)\.(?:json|md)$/u
 
@@ -32,11 +35,17 @@ function expectedOutputs(document, sourceHash) {
 
 async function checkOutputs(outDir, expected, selected) {
   const failures = []
-  const actual = await filesUnder(outDir)
+  const current = resolve(outDir) === fileURLToPath(new URL('../lore', import.meta.url))
+  let actual
+  if (current) {
+    const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? fileURLToPath(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url)))
+    try { actual = listDocuments(db, { corpusKind: 'current', visibility: 'internal' }).map((identity) => identity.logical_path).filter((path) => path.startsWith('lore/')).map((path) => path.slice(5)) }
+    finally { db.close() }
+  } else actual = await filesUnder(outDir)
   const targets = selected ? [selected] : PROJECTION_PATHS
   for (const path of targets) {
     let body
-    try { body = await readFile(join(outDir, path), 'utf8') } catch { failures.push(`E_PROJECTION_MISSING:${path}`); continue }
+    try { body = current ? canonicalJson(readCanonicalDocument(`lore/${path}`)) : await readFile(join(outDir, path), 'utf8') } catch { failures.push(`E_PROJECTION_MISSING:${path}`); continue }
     if (body !== expected[path]) failures.push(`E_PROJECTION_STALE:${path}`)
   }
   for (const path of actual) {
@@ -71,13 +80,21 @@ async function writeOutputs(outDir, expected, selected) {
 
 export async function materializeWorldAtlas({ atlasPath, outDir, projection, check = false, peopleContext }) {
   if (projection && !PROJECTION_PATH_SET.has(projection)) throw new Error(`E_PROJECTION_NAME:${projection}`)
-  const text = await readFile(atlasPath, 'utf8')
+  const canonicalAtlasPath = fileURLToPath(new URL('../lore/World-Narrative-Atlas.json', import.meta.url))
+  const current = resolve(atlasPath) === canonicalAtlasPath
+  const databasePath = process.env.WIKI_DOCUMENT_DB ?? fileURLToPath(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url))
+  const text = current ? JSON.stringify(readCanonicalDocument('lore/World-Narrative-Atlas.json', { databasePath })) : await readFile(atlasPath, 'utf8')
   const parsed = parseWorldAtlas(text)
   if (!parsed.ok) throw new Error(parsed.error)
   const context = peopleContext ?? await atlasPeopleContext(dirname(atlasPath))
   const { failures } = verifyAtlasPeople(parsed.value.data.atlas, context)
   if (failures.length) throw new Error(failures.join('\n'))
-  const atlasHash = sha256Text(text)
+  let atlasHash
+  if (current) {
+    const db = openReadOnly(databasePath)
+    try { atlasHash = db.prepare('SELECT sha256 FROM source_file WHERE logical_path=?').get('lore/World-Narrative-Atlas.json').sha256 }
+    finally { db.close() }
+  } else atlasHash = sha256Text(text)
   const expected = expectedOutputs(parsed.value, atlasHash)
   if (check) await checkOutputs(outDir, expected, projection)
   else await writeOutputs(outDir, expected, projection)

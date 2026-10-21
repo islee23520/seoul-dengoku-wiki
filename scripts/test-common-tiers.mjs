@@ -1,3 +1,11 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
+const activeIds = (() => {
+  const db = openReadOnly(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url).pathname)
+  try { return new Set([...readPersonDisposition(db)].filter(([, row]) => row.status === 'active').map(([id]) => id)) }
+  finally { db.close() }
+})()
 import assert from 'node:assert/strict'
 import { readdir, readFile } from 'node:fs/promises'
 import { test } from 'vitest'
@@ -62,7 +70,7 @@ test('authenticated personal tiers preserve all 1022 baseline projections and th
 test('authenticated personal tier input rejects missing maps and substituted identities or source blocks', async () => {
   const root = new URL('../', import.meta.url).pathname
   const preservation = await authenticatePersonalTierProvenance(root)
-  const envelope = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-06.json', import.meta.url), 'utf8'))
+  const envelope = readCanonicalDocument('lore/characters/Cast-State-06.json')
   const input = { personId: 'K157', publicId: 'person-0158', name: '설다흰', stateId: 'S06', source: 'Cast-State-06', envelope }
   assert.equal(preservedPersonalTier(input, preservation), 'T4')
   for (const map of [undefined, new Map(), new Map([...preservation].slice(1))]) {
@@ -81,8 +89,8 @@ test('authenticated personal tier input rejects missing maps and substituted ide
 test('all registered people have a common T1-T5 tier', async () => {
   const root = new URL('../public/person-details/', import.meta.url)
   const files = (await readdir(root)).filter((name) => name.endsWith('.json'))
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
-  assert.equal(files.length, registry.persons.length)
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  assert.equal(files.length, registry.persons.filter(person => activeIds.has(person.id)).length)
   for (const file of files) {
     const person = JSON.parse(await readFile(new URL(file, root), 'utf8'))
     assert.match(person.commonTier, /^T[1-5]$/u, file)
@@ -97,23 +105,28 @@ test('people page filters by common tier and not by position', async () => {
 })
 
 test('typed current appointments retain every person and personal tier without reviving historical offices', async () => {
-  const source = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/relations/opening-office-appointments.json')
   const appointments = source.appointments
-  const people = JSON.parse(await readFile(new URL('../lore/name-pools/gurps-cast.json', import.meta.url), 'utf8')).people
+  const people = readCanonicalDocument('lore/name-pools/gurps-cast.json').people
   const current = currentOfficeAppointments(source, new Map(people.map(person => [person.id, person])))
   const projected = people.map(person => ({ ...person, ...(current.get(person.id) ?? {}) }))
   assert.equal(appointments.length, 95)
   assert.equal(current.size, 95)
   assert.equal(projected.length, 1022)
   assert.deepEqual(projected.map(person => person.id), people.map(person => person.id))
-  const allocation = JSON.parse(await readFile(new URL('../lore/relations/opening-feudal-allocation.json', import.meta.url), 'utf8'))
+  const allocation = readCanonicalDocument('lore/relations/opening-feudal-allocation.json')
   const retained = appointments.filter(row => row.current.status === 'retained-office')
   assert.equal(retained.length, 15)
   assert.equal(appointments.filter(row => row.current.status === 'unappointed').length, 3)
   for (const row of appointments) {
     const person = people.find(person => person.id === row.personId)
     assert.ok(person)
-    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${person.url.split('/').pop()}.json`, import.meta.url), 'utf8'))
+    const detailPath = new URL(`../public/person-details/${person.url.split('/').pop()}.json`, import.meta.url)
+    if (!activeIds.has(person.id)) {
+      await assert.rejects(readFile(detailPath), { code: 'ENOENT' })
+      continue
+    }
+    const detail = JSON.parse(await readFile(detailPath, 'utf8'))
     assert.equal(detail.characterId, row.personId)
     assert.equal(detail.commonTier, row.history.commonTier)
     const projection = current.get(row.personId)
@@ -146,8 +159,8 @@ test('typed current appointments retain every person and personal tier without r
 
 
 test('current appointment validation rejects ambiguous legacy, missing evidence and invented rank projections', async () => {
-  const source = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url), 'utf8'))
-  const people = JSON.parse(await readFile(new URL('../lore/name-pools/gurps-cast.json', import.meta.url), 'utf8')).people
+  const source = readCanonicalDocument('lore/relations/opening-office-appointments.json')
+  const people = readCanonicalDocument('lore/name-pools/gurps-cast.json').people
   const issued = new Map(people.map(person => [person.id, person]))
   for (const mutate of [
     draft => { draft.schema = 'opening-office-appointments.v1' },

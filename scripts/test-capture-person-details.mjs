@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
 import { mkdtemp, readFile, rm } from 'node:fs/promises'
@@ -70,7 +71,7 @@ test('capture refuses missing, duplicate, and substituted issued or public IDs',
 })
 
 test('shared state and office projection reads the current raw lore sources', async () => {
-  const source = async path => JSON.parse(await readFile(new URL(`../lore/${path}`, import.meta.url), 'utf8'))
+  const source = async path => readCanonicalDocument(`lore/${path}`)
   const statePage = await source('factions/Sixteen-States.json')
   const pages = new Map([['Sixteen-States', { value: statePage }]])
   const rendered = new Map([['Sixteen-States', renderLoreMarkdown(statePage, 'ko')],

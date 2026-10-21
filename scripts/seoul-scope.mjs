@@ -2,6 +2,7 @@ import { createHash } from 'node:crypto'
 import { isAuthenticatedPublicationReview } from './seoul-census.mjs'
 import { validateNationalDressDocuments } from './national-dress-admission-successor.mjs'
 import { MAIN_DOC_ROWS, validateMainDocDocuments } from './main-doc-admission-successor.mjs'
+import { CIA_FACILITY_BATCH, ciaFacilityScopeContext } from './cia-facility-rights-successor.mjs'
 
 export const SEOUL_SCOPE_SCHEMA = 'seoul-scope.v1'
 export const BASELINE_SHA256 = '2a8af6a497839dcc5abb2059697ef8f504b061013a89cbc2bd812c89b2810223'
@@ -755,10 +756,13 @@ export function validateSeoulScope(input, { mode = 'publication', batchId = null
   try {
     requireValue(['inspection', 'migration', 'publication'].includes(mode) && (mode === 'migration' ? text(batchId) : batchId === null), 'E_SCOPE_INPUT', '/mode')
     shape(input, ['contract', 'baseline', 'baselineSha256', 'current', 'boundary', 'archiveHashes', 'sourceHashes', 'review', 'batches', 'geography', 'facts', 'refs', 'edges'], '/input')
-    const { contract, baseline, current, boundary, archiveHashes, sourceHashes, review, batches, geography, facts, refs, edges } = input
+    const { contract, baseline, current, boundary, archiveHashes, review, batches, geography, facts, refs, edges } = input
     requireValue(baseline?.schema === 'seoul-pre-edit-baseline.v1' && baseline.immutable === true, 'E_ARCHIVE_HASH', '/baseline')
     requireValue(baseline.archives && baseline.currentEntitySets && baseline.identitySetHashes && Array.isArray(baseline.files), 'E_ARCHIVE_HASH', '/baseline')
-    shape(current, ['entitySets', 'documentPaths', ...['rights', 'rightsTransition', 'createdDocuments', 'technicalDocuments', 'successorDocuments', 'publicationReview'].filter(key => Object.hasOwn(current, key))], '/current')
+    shape(current, ['entitySets', 'documentPaths', ...['rights', 'rightsTransition', 'ciaFacilitySuccessor', 'createdDocuments', 'technicalDocuments', 'successorDocuments', 'publicationReview'].filter(key => Object.hasOwn(current, key))], '/current')
+    const cia = current.ciaFacilitySuccessor === undefined ? null : ciaFacilityScopeContext(input)
+    const sourceHashes = cia?.reviewSourceHashes ?? input.sourceHashes
+    const batchContract = cia?.batchContract ?? contract
     requireValue(current.entitySets && archiveHashes && sourceHashes, 'E_SCOPE_SHAPE', '/input')
     for (const set of ENTITY_SETS) list(current.entitySets[set], `/current/${set}`)
     list(current.documentPaths, '/current/documentPaths')
@@ -770,13 +774,14 @@ export function validateSeoulScope(input, { mode = 'publication', batchId = null
     requireValue(contract.boundarySource.sha256 === boundary.sha256 && contract.boundarySource.path === boundary.path && contract.boundarySource.edition === boundary.edition, 'E_SCOPE_GEOMETRY', '/boundarySource')
     list(contract.entities, '/entities').forEach(row => shape(row, ['id', 'kind', 'sourcePath', 'status', 'locationRefs', 'jurisdictionRefs', 'basis', 'batchId'], '/entities'))
     const entityByKey = unique(contract.entities, row => `${row.kind}:${row.id}`, '/entities')
+    const batchEntityByKey = cia ? new Map(batchContract.entities.map(row => [`${row.kind}:${row.id}`, row])) : entityByKey
     const personIds = new Set(baseline.currentEntitySets.persons)
     const expectedEntities = {
       person: baseline.currentEntitySets.persons, title: baseline.currentEntitySets.titles,
       holding: [...baseline.currentEntitySets.holdings, ...baseline.currentEntitySets.grants],
       state: [...baseline.currentEntitySets.states, ...baseline.currentEntitySets.polities], event: baseline.currentEntitySets.events,
     }
-    const transition = authenticateRightsTransition(baseline, current.rightsTransition, sourceHashes)
+    const transition = cia?.transition ?? authenticateRightsTransition(baseline, current.rightsTransition, sourceHashes)
     const currentTargets = transition.entitySets
     for (const set of ENTITY_SETS) {
       const code = set === 'persons' ? 'E_CENSUS_PERSON' : 'E_CENSUS_RIGHT'
@@ -805,7 +810,8 @@ export function validateSeoulScope(input, { mode = 'publication', batchId = null
       strings(row.locationRefs, '/entities/locationRefs'); strings(row.jurisdictionRefs, '/entities/jurisdictionRefs')
       requireValue(row.status !== 'preserved', row.kind === 'person' ? 'E_CENSUS_PERSON' : 'E_CENSUS_RIGHT', '/entities/status', row.id)
       if (row.status === 'retired') requireValue(text(row.basis), 'E_SCOPE_ADMISSION', '/entities/basis', row.id)
-      if (selected(row)) requireValue(row.status === 'active', 'E_SCOPE_PENDING', '/entities/status', row.id)
+      if (selected(row)) requireValue(row.status === 'active' || cia && row.batchId === CIA_FACILITY_BATCH
+        && row.status === 'retired', 'E_SCOPE_PENDING', '/entities/status', row.id)
       if (row.status !== 'active') continue
       requireValue(text(row.basis) && text(row.batchId), 'E_SCOPE_ADMISSION', '/entities/basis', row.id)
       if (row.kind === 'person') requireValue(row.locationRefs.length > 0, 'E_SCOPE_LOCATION', '/entities/locationRefs', row.id)
@@ -822,7 +828,8 @@ export function validateSeoulScope(input, { mode = 'publication', batchId = null
       const bulkRetirement = ['relations', 'courts'].includes(row.set) && row.targetIds.length === 0
         && row.batchId === RELATION_COURT_BULK_RETIREMENT.batchId && row.basis === RELATION_COURT_BULK_RETIREMENT.basis
       if (row.status === 'retired') requireValue(bulkRetirement || retirement && row.targetIds.length === 0
-        && row.batchId === 'approved-rights-transition' && row.basis === 'authenticated retired-current mapping; no current Seoul successor',
+        && (retirement.batchId === CIA_FACILITY_BATCH ? cia && row.batchId === CIA_FACILITY_BATCH && row.basis === retirement.decisionRef
+          : row.batchId === 'approved-rights-transition' && row.basis === 'authenticated retired-current mapping; no current Seoul successor'),
       row.set === 'persons' ? 'E_CENSUS_PERSON' : 'E_CENSUS_RIGHT', '/dispositions/retirement', row.id)
       else requireValue(!retirement, 'E_CENSUS_RIGHT', '/dispositions/retirement', row.id)
       if (selected(row)) requireValue(row.status === 'active' || row.status === 'retired', 'E_SCOPE_PENDING', '/dispositions/status', row.id)
@@ -969,20 +976,20 @@ export function validateSeoulScope(input, { mode = 'publication', batchId = null
         && row.currentSha256 === sourceHashes[document.sourcePath]
         && document.reviewReceipt?.currentSha256 === row.currentSha256
         && document.reviewReceipt.evidencePath === row.receipt.approvalRef)) : []
-    const requiredBatches = new Set([...contract.entities, ...contract.documents, ...contract.dispositions]
+    const requiredBatches = new Set([...batchContract.entities, ...batchContract.documents, ...batchContract.dispositions]
       .filter(row => row.status === 'active').map(row => row.batchId))
-    if (mode === 'migration') requiredBatches.add(batchId)
+    if (mode === 'migration' && !(cia && batchId === CIA_FACILITY_BATCH)) requiredBatches.add(batchId)
     const batchIndex = unique(list(batches, '/batches'), row => row.id, '/batches', 'E_APPROVAL_BATCH')
-    const reviewBatches = new Set(mode === 'migration' ? [batchId] : requiredBatches)
+    const reviewBatches = new Set(mode === 'migration' && !(cia && batchId === CIA_FACILITY_BATCH) ? [batchId] : requiredBatches)
     for (const id of requiredBatches) {
       const batch = batchIndex.get(id)
       requireValue(batch, 'E_APPROVAL_BATCH', '/batches', id)
       shape(batch, ['id', 'proposal', 'approval', 'articleSample', 'cardSample', 'entityKeys', 'documentPaths', 'dispositionKeys', 'dependencyBatchIds'], '/batches')
       checkApproval(batch.approval, 'batch-allocation', id, proposalHash(batch.proposal), '/batches/approval')
       requireValue(proposalHash(batch.proposal) === proposalHash({
-        entities: contract.entities.filter(row => row.batchId === id),
-        documents: contract.documents.filter(row => row.batchId === id),
-        dispositions: contract.dispositions.filter(row => row.batchId === id),
+        entities: batchContract.entities.filter(row => row.batchId === id),
+        documents: batchContract.documents.filter(row => row.batchId === id),
+        dispositions: batchContract.dispositions.filter(row => row.batchId === id),
         geography,
       }), 'E_APPROVAL_BATCH', '/batches/proposal', id)
       for (const [key, kind] of [['articleSample', 'article-style'], ['cardSample', 'card-style']]) {
@@ -990,15 +997,15 @@ export function validateSeoulScope(input, { mode = 'publication', batchId = null
         requireValue(text(batch[key].body), 'E_APPROVAL_BATCH', `/batches/${key}`, id)
         checkApproval(batch[key].approval, kind, id, sha256(batch[key].body), `/batches/${key}/approval`)
       }
-      exact(batch.entityKeys, contract.entities.filter(row => row.batchId === id).map(row => `${row.kind}:${row.id}`), 'E_APPROVAL_BATCH', '/batches/entityKeys')
+      exact(batch.entityKeys, batchContract.entities.filter(row => row.batchId === id).map(row => `${row.kind}:${row.id}`), 'E_APPROVAL_BATCH', '/batches/entityKeys')
       exact(batch.documentPaths, contract.documents.filter(row => row.batchId === id && row.status === 'active')
         .map(row => row.sourcePath), 'E_APPROVAL_BATCH', '/batches/documentPaths')
-      exact(batch.dispositionKeys, contract.dispositions.filter(row => row.batchId === id).map(row => JSON.stringify([row.set, row.id])), 'E_APPROVAL_BATCH', '/batches/dispositionKeys')
+      exact(batch.dispositionKeys, batchContract.dispositions.filter(row => row.batchId === id).map(row => JSON.stringify([row.set, row.id])), 'E_APPROVAL_BATCH', '/batches/dispositionKeys')
       for (const dependency of strings(batch.dependencyBatchIds, '/batches/dependencyBatchIds')) requireValue(requiredBatches.has(dependency), 'E_APPROVAL_BATCH', '/batches/dependencyBatchIds', dependency)
-      for (const key of batch.entityKeys) requireValue(entityByKey.get(key)?.status === 'active', 'E_SCOPE_PENDING', '/batches/entityKeys', key)
+      for (const key of batch.entityKeys) requireValue(batchEntityByKey.get(key)?.status === 'active', 'E_SCOPE_PENDING', '/batches/entityKeys', key)
       for (const path of batch.documentPaths) requireValue(contract.documents.find(row => row.sourcePath === path)?.status === 'active', 'E_SCOPE_PENDING', '/batches/documentPaths', path)
       for (const key of batch.dispositionKeys) {
-        const disposition = contract.dispositions.find(row => JSON.stringify([row.set, row.id]) === key)
+        const disposition = batchContract.dispositions.find(row => JSON.stringify([row.set, row.id]) === key)
         requireValue(disposition?.status === 'active' || disposition?.status === 'retired'
           && id === 'approved-rights-transition' && transition.retired.has(key),
         'E_SCOPE_PENDING', '/batches/dispositionKeys', key)

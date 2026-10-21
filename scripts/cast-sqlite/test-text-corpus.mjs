@@ -9,13 +9,18 @@ import { loadSourceBundle, REQUIRED_SOURCE_PATHS } from './sources.mjs';
 import { EXCLUDED_SOURCE_PATHS } from './excluded-sources.mjs';
 import { ENGINE_PRIVATE_SOURCE_PATHS } from './current-engine.mjs';
 import { TEXT_DATA_TABLE_COLUMNS, reconstructTextData } from './text-data.mjs';
+import { openReadOnly } from './db.mjs';
+import { readSourceArchive } from './source-archive.mjs';
 
 const root = resolve(new URL('../..', import.meta.url).pathname);
 test('manifest equals independently discovered committed non-private renderer envelopes and text sources', () => {
-  const tracked = execFileSync('git', ['-C', root, 'ls-files', '-z', '--', 'lore'], { encoding: 'utf8' }).split('\0').filter(Boolean);
+  const inventory = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite'));
+  let tracked;
+  try { tracked = inventory.prepare("SELECT logical_path FROM source_file WHERE logical_path LIKE 'lore/%'").all().map(row => row.logical_path); }
+  finally { inventory.close(); }
   const readable = tracked.filter((path) => !path.startsWith('lore/editorial/'));
   const documents = readable.filter((path) => path.endsWith('.json')).filter((path) => {
-    const document = JSON.parse(readFileSync(resolve(root, path), 'utf8'));
+    const document = JSON.parse(readSourceArchive(path));
     return document.version === 1 && typeof document.domain === 'string' && Array.isArray(document.content);
   });
   const lines = ['WORLD_BUILDING_GUIDE.md', ...readable.filter((path) => /\.(md|csv)$/u.test(path) && !path.endsWith('/AGENTS.md'))];

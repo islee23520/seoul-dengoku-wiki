@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { createHash } from 'node:crypto'
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
 
 export const CLIMATE_SOURCE = 'lore/characters/Characters-Factions-and-Professions.json'
 export const CLIMATE_RECEIPT = '.omo/private/seoul-migration/climate-link-successor-20261019/receipt.json'
@@ -12,10 +13,12 @@ const check = (condition, path) => { if (!condition) throw Object.assign(new Err
 
 // Reverse only the four reviewed link additions, preserving immutable approvals.
 export async function authenticateClimateLinkSuccessor(root, reader = readFile) {
+  const databasePath = process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite')
   const raw = await reader(resolve(root, CLIMATE_RECEIPT))
   check(hash(raw) === CLIMATE_RECEIPT_SHA256, CLIMATE_RECEIPT)
   const receipt = JSON.parse(raw)
-  const current = Buffer.from(await reader(resolve(root, CLIMATE_SOURCE)))
+  const current = reader === readFile ? readSourceArchive(CLIMATE_SOURCE, CLIMATE_AFTER, databasePath)
+    : Buffer.from(await reader(resolve(root, CLIMATE_SOURCE)))
   check(receipt.schema === 'climate-link-successor.v1' && receipt.sourcePath === CLIMATE_SOURCE
     && receipt.beforeSha256 === CLIMATE_BEFORE && receipt.afterSha256 === CLIMATE_AFTER
     && receipt.edits.length === 4 && hash(current) === CLIMATE_AFTER
@@ -35,11 +38,14 @@ export async function authenticateClimateLinkSuccessor(root, reader = readFile) 
 
 export async function climateLinkPredecessorReader(root, reader = readFile) {
   let current
-  try { current = await reader(resolve(root, CLIMATE_SOURCE)) }
+  try { current = reader === readFile
+    ? readSourceArchive(CLIMATE_SOURCE, CLIMATE_AFTER, process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite'))
+    : await reader(resolve(root, CLIMATE_SOURCE)) }
   catch (error) { if (error.code !== 'ENOENT') throw error }
   if (!current || hash(current) !== CLIMATE_AFTER) return reader
   const successor = await authenticateClimateLinkSuccessor(root, reader)
   const predecessor = async path => resolve(path) === resolve(root, CLIMATE_SOURCE) ? successor.before : reader(path)
   predecessor.appliedDiskOverrides = new Map(reader.appliedDiskOverrides ?? [])
+  predecessor.readHistorical = reader.readHistorical
   return predecessor
 }

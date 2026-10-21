@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
@@ -7,7 +8,7 @@ import { MemoryRouter } from 'react-router-dom'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
 
-const json = async path => JSON.parse(await readFile(new URL('../' + path, import.meta.url), 'utf8'))
+const json = async path => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(await readFile(new URL('../' + path, import.meta.url), 'utf8'))
 
 test('adjacent renamed heading keeps its world alias without changing either person biography', async () => {
   const document = await json('lore/characters/Cast-State-08.json')

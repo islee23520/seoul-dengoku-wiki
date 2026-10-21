@@ -5,24 +5,37 @@ import { join, resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { publicPortraitReview, publicPortraitSelection, publicPortraitStringFailures } from './portrait-public-boundary.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 
 const root = fileURLToPath(new URL('../', import.meta.url))
 const hash = bytes => createHash('sha256').update(bytes).digest('hex')
+const verification = Symbol('verified portrait plan')
+
+export function verifyPortraitRegistration(source, wikiRoot, documents) {
+  return registerApprovedPortraits(source, wikiRoot, { [verification]: documents })
+}
+
+export function verifyPortraitReplacement(source, wikiRoot, documents, selection) {
+  return applyApprovedPortraitSelection(source, wikiRoot, { [verification]: documents, selection })
+}
 
 // This imports an already approved exact image; it does not evaluate artwork.
-export async function registerApprovedPortraits(sourceManifestPath, wikiRoot = root) {
+export async function registerApprovedPortraits(sourceManifestPath, wikiRoot = root, options = {}) {
+  if (options.db) return (await import('./cast-sqlite/portrait-store.mjs')).appendAlreadyApprovedPortrait(options.db, { ...options, operation: 'registration', sourceManifestPath, wikiRoot })
+  if (!options[verification] && resolve(wikiRoot) === resolve(root)) throw new Error('E_PORTRAIT_SQLITE_REQUIRED')
   const json = async path => JSON.parse(await readFile(join(wikiRoot, path), 'utf8'))
   const manifestBytes = await readFile(sourceManifestPath)
   const manifest = JSON.parse(manifestBytes)
   assert.ok(Array.isArray(manifest.newPortraits))
-  const catalogBytes = await readFile(join(wikiRoot, 'portrait-catalog.json'))
-  const selectionBytes = await readFile(join(wikiRoot, 'portrait-approved-selection.json'))
-  const propertiesBytes = await readFile(join(wikiRoot, 'portrait-properties.json'))
+  const documents = options[verification]
+  const catalogBytes = documents ? Buffer.from(JSON.stringify(documents.catalog)) : await readFile(join(wikiRoot, 'portrait-catalog.json'))
+  const selectionBytes = documents ? Buffer.from(JSON.stringify(documents.selection)) : await readFile(join(wikiRoot, 'portrait-approved-selection.json'))
+  const propertiesBytes = documents ? Buffer.from(JSON.stringify(documents.properties)) : await readFile(join(wikiRoot, 'portrait-properties.json'))
   const catalog = JSON.parse(catalogBytes)
   const selection = publicPortraitSelection(JSON.parse(selectionBytes))
   const properties = JSON.parse(propertiesBytes)
-  const registry = (await json('lore/name-pools/person-id-registry.json')).persons
-  const genders = (await json('lore/name-pools/gender-cast.json')).people
+  const registry = (resolve(wikiRoot) === resolve(root) ? readCanonicalDocument('lore/name-pools/person-id-registry.json') : await json('lore/name-pools/person-id-registry.json')).persons
+  const genders = (resolve(wikiRoot) === resolve(root) ? readCanonicalDocument('lore/name-pools/gender-cast.json') : await json('lore/name-pools/gender-cast.json')).people
   const updates = []
   for (const row of manifest.newPortraits) {
     assert.match(row.personId, /^person-[0-9]{4}$/)
@@ -97,6 +110,17 @@ export async function registerApprovedPortraits(sourceManifestPath, wikiRoot = r
     updates.push({ row, privateFiles, token, review })
   }
   publicPortraitSelection(selection)
+  if (documents) {
+    for (const { row, token } of updates) {
+      catalog.entries.push({ personId: row.personId, characterId: row.characterId, name: row.name, stateId: token.stateId, approval: token.approval, imageSha256: row.imageSHA })
+      properties.entries[row.personId] = { face: token.artProposal.face, hair: token.artProposal.hair, upper: token.artProposal.upper }
+    }
+    return { documents: { catalog, properties, selection }, files: updates.flatMap(({ row, privateFiles, token, review }) => [
+      { path: `public/portraits/${row.personId}.png`, bytes: privateFiles.imagePath },
+      { path: `public/portrait-tokens/${row.personId}.json`, bytes: Buffer.from(JSON.stringify(token, null, 2) + '\n') },
+      { path: `public/portrait-reviews/${row.personId}.json`, bytes: Buffer.from(JSON.stringify(review, null, 2) + '\n') },
+    ]), evidence: [{ kind: 'manifest', bytes: manifestBytes }, ...updates.flatMap(({ row, privateFiles }) => Object.entries(privateFiles).map(([kind, bytes]) => ({ kind: row.personId + '/' + kind, bytes })))], count: updates.length }
+  }
   // All identities, source bytes and public projections are validated before writes.
   const archive = join(wikiRoot, '.omo/evidence/approved-portrait-registration')
   await mkdir(archive, { recursive: true })
@@ -115,16 +139,19 @@ export async function registerApprovedPortraits(sourceManifestPath, wikiRoot = r
   return updates.length
 }
 
-export async function applyApprovedPortraitSelection(sourceManifestPath, wikiRoot = root) {
+export async function applyApprovedPortraitSelection(sourceManifestPath, wikiRoot = root, options = {}) {
+  if (options.db) return (await import('./cast-sqlite/portrait-store.mjs')).appendAlreadyApprovedPortrait(options.db, { ...options, operation: 'replacement', sourceManifestPath, wikiRoot })
+  if (!options[verification] && resolve(wikiRoot) === resolve(root)) throw new Error('E_PORTRAIT_SQLITE_REQUIRED')
   const json = async path => JSON.parse(await readFile(join(wikiRoot, path), 'utf8'))
-  const selection = await json('portrait-approved-selection.json')
+  const documents = options[verification]
+  const selection = documents ? structuredClone(options.selection) : await json('portrait-approved-selection.json')
   const publicSelection = publicPortraitSelection(selection)
   assert.equal(selection.status, 'approved-selection-awaiting-asset-application')
-  const selectionBytes = await readFile(join(wikiRoot, 'portrait-approved-selection.json'))
+  const selectionBytes = documents ? Buffer.from(JSON.stringify(selection)) : await readFile(join(wikiRoot, 'portrait-approved-selection.json'))
   const manifestBytes = await readFile(sourceManifestPath)
   const manifest = JSON.parse(manifestBytes)
-  const catalog = await json('portrait-catalog.json')
-  const registry = (await json('lore/name-pools/person-id-registry.json')).persons
+  const catalog = documents ? structuredClone(documents.catalog) : await json('portrait-catalog.json')
+  const registry = (resolve(wikiRoot) === resolve(root) ? readCanonicalDocument('lore/name-pools/person-id-registry.json') : await json('lore/name-pools/person-id-registry.json')).persons
   assert.ok(Array.isArray(manifest))
   const selectedSources = new Map()
   const selectedIds = new Set()
@@ -178,7 +205,7 @@ export async function applyApprovedPortraitSelection(sourceManifestPath, wikiRoo
       const token = await json('public/portrait-tokens/' + row.personId + '.json')
       assert.equal(token.image.sha256, row.imageSha256)
       assert.deepEqual(publicPortraitStringFailures(token, 'token'), [], 'E_PORTRAIT_PUBLIC_SCHEMA: token strings')
-      updates.push({ row, entry, imagePath, reviewBytes, token, review, publicReview })
+      updates.push({ row, entry, previous, imagePath, reviewBytes, token, review, publicReview })
       continue
     }
     assert.ok(['localized-alpha-edit', 'body-improvement'].includes(row.operation))
@@ -202,7 +229,20 @@ export async function applyApprovedPortraitSelection(sourceManifestPath, wikiRoo
       ...(row.operation === 'body-improvement' ? { generationRequest: source.generationReceipt.request, generationReceipt: source.generationReceipt } : {}),
       previousImageReview: review, canonPromotion: false, final3dPortraitContractSatisfied: false,
     }
-    updates.push({ row, entry, bytes, imagePath, reviewBytes, token: nextToken, review: nextReview, publicReview: publicPortraitReview(nextReview) })
+    updates.push({ row, entry, bytes, previous, imagePath, reviewBytes, token: nextToken, review: nextReview, publicReview: publicPortraitReview(nextReview) })
+  }
+  if (documents) {
+    for (const update of updates) update.entry.imageSha256 = update.row.imageSha256
+    publicSelection.status = 'approved-selection-applied-to-worktree'
+    return { documents: { catalog, properties: documents.properties, selection: publicSelection }, files: updates.flatMap(update => [
+      ...(update.bytes ? [{ path: update.imagePath, bytes: update.bytes }] : []),
+      { path: `public/portrait-tokens/${update.row.personId}.json`, bytes: Buffer.from(JSON.stringify(update.token, null, 2) + '\n') },
+      { path: `public/portrait-reviews/${update.row.personId}.json`, bytes: Buffer.from(JSON.stringify(update.publicReview, null, 2) + '\n') },
+    ]), evidence: [{ kind: 'selection', bytes: selectionBytes }, { kind: 'manifest', bytes: manifestBytes }, ...updates.flatMap(update => [
+      { kind: update.row.personId + '/review', bytes: update.reviewBytes },
+      { kind: update.row.personId + '/next-review', bytes: Buffer.from(JSON.stringify(update.review)) },
+      ...(update.previous ? [{ kind: update.row.personId + '/previous-image', bytes: update.previous }] : []),
+    ])], count: updates.filter(update => update.bytes).length }
   }
   // Validate all selected identities and bytes before importing any replacement.
   const archive = join(wikiRoot, '.omo/evidence/approved-portrait-history-20261003')

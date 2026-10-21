@@ -1,5 +1,4 @@
-import source from '../../lore/places/rail-station-corrections.json'
-import identities from '../../lore/places/rail-station-identities.json'
+import { railStationSource as source, railStationIdentities as identities } from '../generated/railStationSources'
 
 export function correctedRailStations<T extends { name: string; east: number; north: number; lineIds: string[] }>(stations: T[]): T[] {
   const corrected = stations.map((station) => {

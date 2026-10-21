@@ -24,12 +24,13 @@ import { JSDOM } from 'jsdom'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { localizedDocuments } from './localized-documents.mjs'
 import { publicHouseContent } from './public-house-content.mjs'
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
 
 const worktree = resolve(new URL('..', import.meta.url).pathname)
 // Scratch output for materializer tests lives in a per-run temporary directory, never in lore.
 const evidenceRoot = await mkdtemp(join(tmpdir(), 'wiki-world-atlas-'))
 const candidatePath = join(worktree, 'lore/World-Narrative-Atlas.json')
-const sourceText = await readFile(candidatePath, 'utf8')
+const sourceText = readSourceArchive('lore/World-Narrative-Atlas.json').toString('utf8')
 const parsed = parseWorldAtlas(sourceText)
 assert.equal(parsed.ok, true, parsed.error)
 const source = parsed.value

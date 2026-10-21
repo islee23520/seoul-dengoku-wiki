@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict'
-import { readFile } from 'node:fs/promises'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { test } from 'vitest'
 
 test('GTX projects preserve sourced branches separately from opening movement rights', async () => {
-  const source = JSON.parse(await readFile(new URL('../lore/places/gtx-project-connections.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/places/gtx-project-connections.json')
   const projects = new Map(source.projects.map((project) => [project.id, project]))
   assert.equal(projects.size, source.projects.length)
   for (const id of ['GTX-A', 'GTX-B', 'GTX-C', 'GTX-D', 'GTX-E', 'GTX-F', 'GTX-A-extension', 'GTX-B-extension', 'GTX-C-extension']) assert.ok(projects.has(id), id)

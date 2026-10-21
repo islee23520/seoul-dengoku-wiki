@@ -5,6 +5,7 @@ import { DatabaseSync } from 'node:sqlite'
 import test from 'node:test'
 import { HISTORICAL_CONTEXT_TABLE_COLUMNS, mapHistoricalContext } from './historical-context.mjs'
 import { parseDocument } from './sources.mjs'
+import { readSourceArchive } from './source-archive.mjs'
 
 const PATHS = [
   'scripts/historical-inputs/opening-feudal-allocation.json',
@@ -14,9 +15,9 @@ const PATHS = [
 
 async function corpus() {
   const root = resolve(import.meta.dirname, '..', '..')
-  const registry = JSON.parse(await readFile(resolve(root, 'lore/name-pools/person-id-registry.json')))
+  const registry = JSON.parse(readSourceArchive('lore/name-pools/person-id-registry.json'))
   const files = await Promise.all(PATHS.map(async (logical_path, ordinal) => {
-    const text = await readFile(resolve(root, logical_path), 'utf8')
+    const text = readSourceArchive(logical_path).toString('utf8')
     return { source_id: ordinal + 1, logical_path, ...parseDocument(text) }
   }))
   return { bundle: { files }, identity: { people: registry.persons.map(({ id, name }) => ({ person_id: id, name })) } }

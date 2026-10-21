@@ -1,24 +1,35 @@
 import assert from 'node:assert/strict'
-import { chmodSync, copyFileSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { chmodSync, copyFileSync, existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
 import { spawn, spawnSync } from 'node:child_process'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import { test } from 'vitest'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { listDocuments } from './cast-sqlite/document-read.mjs'
 
 const root = resolve(import.meta.dirname, '..')
 const evidence = join(root, '.omo/evidence/lore-wiki-issues-sweep/task-10f')
-const example = JSON.parse(readFileSync(join(root, 'lore/ailments/authoring.example.json'), 'utf8'))
-const rootExample = JSON.parse(readFileSync(join(root, 'lore/authoring.example.json'), 'utf8'))
-const chronologyExample = JSON.parse(readFileSync(join(root, 'lore/chronology/authoring.example.json'), 'utf8'))
+const example = readCanonicalDocument('lore/ailments/authoring.example.json')
+const rootExample = readCanonicalDocument('lore/authoring.example.json')
+const chronologyExample = readCanonicalDocument('lore/chronology/authoring.example.json')
 const run = (...files) => spawnSync(process.execPath, [join(root, 'scripts/lore-json-validate.mjs'), ...files], { cwd: root, encoding: 'utf8' })
 function isolatedFixture() {
   const isolatedRoot = mkdtempSync(join(tmpdir(), 'isolated-lore-'))
   const tracked = spawnSync('git', ['ls-files', '-z', '--', 'lore'], { cwd: root, encoding: 'utf8' })
   assert.equal(tracked.status, 0, tracked.stderr)
-  const paths = [...tracked.stdout.split('\0').filter(Boolean), 'scripts/lore-json-schema.py']
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? join(root, 'data/canonical/wiki-cast.sqlite'))
+  let documents
+  try { documents = ['current', 'example'].flatMap((corpusKind) => listDocuments(db, { corpusKind, visibility: 'internal' })).filter((identity) => identity.logical_path.startsWith('lore/')) }
+  finally { db.close() }
+  const paths = [...tracked.stdout.split('\0').filter((path) => path && existsSync(join(root, path))), 'scripts/lore-json-schema.py']
   for (const path of paths) {
     mkdirSync(join(isolatedRoot, path, '..'), { recursive: true })
     copyFileSync(join(root, path), join(isolatedRoot, path))
+  }
+  for (const { logical_path: path } of documents) {
+    mkdirSync(join(isolatedRoot, path, '..'), { recursive: true })
+    writeFileSync(join(isolatedRoot, path), JSON.stringify(readCanonicalDocument(path)))
   }
   const initialized = spawnSync('git', ['init', '-q', isolatedRoot], { encoding: 'utf8' })
   assert.equal(initialized.status, 0, initialized.stderr)

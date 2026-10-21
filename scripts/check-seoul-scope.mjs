@@ -16,6 +16,7 @@ import { authenticateClimateLinkSuccessor, CLIMATE_SOURCE, CLIMATE_BEFORE, CLIMA
 import { authenticateTimelineWharfSuccessor, TIMELINE_SOURCE, TIMELINE_BEFORE, TIMELINE_AFTER, TIMELINE_RECEIPT } from './timeline-wharf-successor.mjs'
 import { authenticateNationalDressAdmission } from './national-dress-admission-successor.mjs'
 import { authenticateMainDocAdmission } from './main-doc-admission-successor.mjs'
+import { SCOPE_SOURCE_DIRECTORIES } from './document-store/scope-directory-inventory.mjs'
 import { BASELINE_SHA256, RELATION_COURT_BULK_RETIREMENT, RELATION_COURT_DISPOSITION, STAGING_GEOGRAPHY_PATH, STAGING_GEOGRAPHY_SCHEMA, STAGING_SOURCES, TECHNICAL_DOCUMENT, baselineDocuments, materializeRelationCourtBulkRetirement, materializeRelationCourtDispositions, materializeRetiredRightsDispositions, proposalHash, sha256, validateSeoulScope } from './seoul-scope.mjs'
 import { materializePersonReviewReconciliation } from './seoul-person-review-reconciliation.mjs'
 import { CENSUS_PATHS, loadAndValidateCensus, loadAppliedBatches, validatorPredecessorReader } from './seoul-census.mjs'
@@ -54,9 +55,42 @@ export function refreshTechnicalExcludedDocument(document, batches, beforeSha256
   }
 }
 
-export async function loadScopeInput({ root, baselinePath, fixture = false, mode = 'publication', batchId = null }) {
-  if (!fixture) await loadStationCatalogGeography(root)
-  const diskRead = (await import('node:fs/promises')).readFile
+export async function discoverScopeDocuments(root, documentPaths, readDirectory = readdir) {
+  // Inventory comes from storage, independently of contract/public admission.
+  // A supplied storage inventory never retries filesystem discovery on failure.
+  const excluded = new Set(['lore/editorial/Seoul-Scope-Contract.json', STAGING_GEOGRAPHY_PATH, ...CENSUS_PATHS]);
+  const paths = new Set(documentPaths);
+  async function discover(directory) {
+    for (const entry of await readDirectory(resolve(root, directory), { withFileTypes: true })) {
+      const path = `${directory}/${entry.name}`;
+      if (entry.isDirectory()) await discover(path);
+      else if (entry.isFile() && !paths.has(path) && !excluded.has(path)) {
+        paths.add(path);
+        documentPaths.push(path);
+      }
+    }
+  }
+  for (const directory of SCOPE_SOURCE_DIRECTORIES) await discover(directory);
+}
+
+export async function loadScopeInput({ root, baselinePath, fixture = false, mode = 'publication', batchId = null, readBytes, db, readDirectory, currentFacility = true }) {
+  if (!fixture && !readBytes && mode !== 'migration') {
+    const configPath = process.env.WIKI_PUBLICATION_DATABASE_CONFIG
+      ?? resolve(root, '.omo/private/seoul-migration/sqlite-authority-20261021/publication-config.json')
+    const config = JSON.parse(await (await import('node:fs/promises')).readFile(configPath, 'utf8'))
+    const bundle = await (await import('./document-store/publication-database-inputs.mjs')).openPublicationDatabaseInputs(root, config)
+    try { return await loadScopeInput({ root, baselinePath: baselinePath ?? bundle.inputs.baselinePath,
+      fixture, mode, batchId, currentFacility, ...bundle.inputs }) }
+    finally { bundle.close() }
+  }
+  const currentRead = readBytes ?? (await import('node:fs/promises')).readFile
+  // Validate the sealed pre-retirement corpus with its original approvals.
+  // Current roster/prose disposition is a separate explicit DB projection.
+  const diskRead = fixture ? currentRead : await (await import('./retirement-prose-successor.mjs'))
+    .retirementProsePredecessorReader(root, currentRead)
+  const json = async path => JSON.parse(await diskRead(path))
+  const sourceHash = readBytes ? async path => sha256(await diskRead(path)) : hashFile
+  if (!fixture) await loadStationCatalogGeography(root, { readBytes: diskRead })
   const technicalRead = fixture ? diskRead : await validatorPredecessorReader(root, diskRead)
   const climate = fixture ? null : await authenticateClimateLinkSuccessor(root, diskRead)
   const timeline = fixture ? null : await authenticateTimelineWharfSuccessor(root, diskRead)
@@ -73,6 +107,7 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
     const bytes = await technicalRead(path)
     return options === 'utf8' ? bytes.toString() : bytes
   }
+  readFile.readHistorical = technicalRead.readHistorical
   const baselineBytes = await readFile(baselinePath)
   const baseline = JSON.parse(baselineBytes)
   if (!fixture && sha256(baselineBytes) !== BASELINE_SHA256) return { error: { ok: false, errors: [{ code: 'E_ARCHIVE_HASH', path: baselinePath, id: '' }] } }
@@ -83,12 +118,13 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
   // doc247 receipts. Real publication always authenticates the receipts below.
   if (fixture) {
     const archiveHashes = {}
-    for (const [name, archive] of Object.entries(baseline.archives)) archiveHashes[name] = await hashFile(resolve(dirname(baselinePath), archive.path))
+    for (const [name, archive] of Object.entries(baseline.archives)) archiveHashes[name] = await sourceHash(resolve(dirname(baselinePath), archive.path))
     const sourceHashes = {}
-    for (const path of baselineDocuments(baseline)) sourceHashes[path] = await hashFile(resolve(root, path))
+    for (const path of baselineDocuments(baseline)) sourceHashes[path] = await sourceHash(resolve(root, path))
     return { ...await json(resolve(root, 'scope-input.json')), baseline, baselineSha256: sha256(baselineBytes), contract, archiveHashes, sourceHashes }
   }
   const reviewRead = async path => k176 && resolve(path) === resolve(root, K176_SOURCE) ? k176.before : readFile(path)
+  reviewRead.readHistorical = readFile.readHistorical
   const closureReceipt = await authenticateClosureReceipt(root, readFile)
   const preReceiptWaveContract = structuredClone(contract)
   for (const row of preReceiptWaveContract.documents.filter(row => [DOC247_RECEIPT_WAVE_BATCH_ID, DOC247_FINAL_BATCH_ID].includes(row.batchId)))
@@ -117,16 +153,19 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
     || JSON.stringify(narrativeReview) !== JSON.stringify(reconciliation.review))
     return { error: { ok: false, errors: [{ code: 'E_REVIEW_COVERAGE', path: '/personReviewReconciliation', id: '' }] } }
   const archiveHashes = {}
-  for (const [name, archive] of Object.entries(baseline.archives)) archiveHashes[name] = await hashFile(resolve(dirname(baselinePath), archive.path))
+  for (const [name, archive] of Object.entries(baseline.archives)) archiveHashes[name] = await sourceHash(resolve(dirname(baselinePath), archive.path))
   const sourceHashes = {}
   for (const path of baselineDocuments(baseline)) {
-    try { sourceHashes[path] = await hashFile(resolve(root, path)) }
+    try { sourceHashes[path] = await sourceHash(resolve(root, path)) }
     catch (error) { if (error.code !== 'ENOENT') throw error }
   }
   if (fixture) return { ...await json(resolve(root, 'scope-input.json')), baseline, baselineSha256: sha256(baselineBytes), contract, archiveHashes, sourceHashes }
 
-  const { loadDataset } = await import(pathToFileURL(resolve(root, 'lore/relations/validate.mjs')))
-  const dataset = loadDataset()
+  const dataset = db
+    ? (await (await import('./cast-sqlite/person-detail-inputs.mjs')).loadPersonDetailSources({
+      db, repoRoot: root, inputSubset: 'court',
+    })).courtDataset
+    : (await import(pathToFileURL(resolve(root, 'lore/relations/validate.mjs')))).loadDataset()
   const allocation = await json(resolve(root, 'lore/relations/opening-feudal-allocation.json'))
   const holdings = await json(resolve(root, 'lore/relations/personal-holdings.json'))
   const entitySets = {
@@ -142,14 +181,7 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
     documentPaths.push(admission.row.sourcePath)
   }
   // A new authored file is not silently admitted. The contract itself is metadata, not a lore document.
-  async function discover(directory) {
-    for (const entry of await readdir(resolve(root, directory), { withFileTypes: true })) {
-      const path = `${directory}/${entry.name}`
-      if (entry.isDirectory()) await discover(path)
-      else if (entry.isFile() && !documentPaths.includes(path) && !['lore/editorial/Seoul-Scope-Contract.json', STAGING_GEOGRAPHY_PATH, ...CENSUS_PATHS].includes(path)) documentPaths.push(path)
-    }
-  }
-  for (const directory of ['lore', 'docs', 'scripts/data', 'snapshots/build-inputs', 'vendor/issued-history']) await discover(directory)
+  await discoverScopeDocuments(root, documentPaths, readDirectory)
   const boundaryPath = contract.boundarySource.path
   const boundaryBytes = await readFile(resolve(root, boundaryPath))
   const boundary = { path: boundaryPath, edition: 'admdongkor-20260701', sha256: sha256(boundaryBytes) }
@@ -191,7 +223,7 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
       sources[kind] = { ...source, body }
     }
     const spatial = JSON.parse(sources.spatial.body)
-    if (await hashFile(resolve(root, spatial.geometry.path)) !== spatial.geometry.sha256) return { error: { ok: false, errors: [{ code: 'E_SCOPE_GEOMETRY', path: spatial.geometry.path, id: spatial.edition }] } }
+    if (await sourceHash(resolve(root, spatial.geometry.path)) !== spatial.geometry.sha256) return { error: { ok: false, errors: [{ code: 'E_SCOPE_GEOMETRY', path: spatial.geometry.path, id: spatial.edition }] } }
     const official = await json(resolve(root, spatial.geometry.path))
     const features = official.features
     const expected = [...spatial.dongs, ...spatial.counties, ...spatial.gu, spatial.city]
@@ -296,7 +328,7 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
     batch.approval = { ...batch.approval, bodySha256: proposalHash(batch.proposal),
       messageRef: '.omo/private/seoul-migration/k176-label-successor-20261019/owner-decision.json' }
     sourceHashes[K176_SOURCE] = K176_AFTER
-    census.publicationReview = await refreshK176PublicationReview(census.publicationReview, root)
+    census.publicationReview = await refreshK176PublicationReview(census.publicationReview, root, diskRead)
   }
   if (wording) {
     for (const file of wording.files.values()) {
@@ -311,7 +343,7 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
       batch.approval = { ...batch.approval, bodySha256: proposalHash(batch.proposal), messageRef: WORDING_RECEIPT }
       sourceHashes[file.sourcePath] = file.afterSha256
     }
-    census.publicationReview = await refreshReviewWordingPublicationReview(census.publicationReview, root)
+    census.publicationReview = await refreshReviewWordingPublicationReview(census.publicationReview, root, diskRead)
   }
   if (stationSuccessor) {
     const document = contract.documents.find(row => row.sourcePath === STATION_CATALOG_PATH)
@@ -324,7 +356,7 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
     proposedDocument.reviewReceipt.currentSha256 = STATION_AFTER
     batch.approval = { ...batch.approval, bodySha256: proposalHash(batch.proposal), messageRef: STATION_RECEIPT }
     sourceHashes[STATION_CATALOG_PATH] = STATION_AFTER
-    census.publicationReview = await refreshStationCatalogPublicationReview(census.publicationReview, root)
+    census.publicationReview = await refreshStationCatalogPublicationReview(census.publicationReview, root, diskRead)
   }
   if (climate) {
     const document = contract.documents.find(row => row.sourcePath === CLIMATE_SOURCE)
@@ -337,7 +369,7 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
     proposed.reviewReceipt.currentSha256 = CLIMATE_AFTER
     batch.approval = { ...batch.approval, bodySha256: proposalHash(batch.proposal), messageRef: CLIMATE_RECEIPT }
     sourceHashes[CLIMATE_SOURCE] = CLIMATE_AFTER
-    census.publicationReview = await refreshClimateLinkPublicationReview(census.publicationReview, root)
+    census.publicationReview = await refreshClimateLinkPublicationReview(census.publicationReview, root, diskRead)
   }
   if (timeline) {
     const document = contract.documents.find(row => row.sourcePath === TIMELINE_SOURCE)
@@ -350,7 +382,7 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
     proposed.reviewReceipt.currentSha256 = TIMELINE_AFTER
     batch.approval = { ...batch.approval, bodySha256: proposalHash(batch.proposal), messageRef: TIMELINE_RECEIPT }
     sourceHashes[TIMELINE_SOURCE] = TIMELINE_AFTER
-    census.publicationReview = await refreshTimelineWharfPublicationReview(census.publicationReview, root)
+    census.publicationReview = await refreshTimelineWharfPublicationReview(census.publicationReview, root, diskRead)
   }
   for (const sourcePath of ['lore/relations/validate.mjs', 'lore/places/test-station-alias-candidates.mjs',
     'lore/name-pools/issue-person-ids.mjs', 'lore/name-pools/verify-person-id-candidates.mjs', 'lore/name-pools/verify-person-id-registry.mjs']) {
@@ -374,9 +406,9 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
     sourceHashes[sourcePath] = sha256(current)
   }
   census.publicationReview = await refreshTechnicalCodePublicationReview(census.publicationReview, root, diskRead)
-  sourceHashes[TECHNICAL_DOCUMENT.sourcePath] = await hashFile(resolve(root, TECHNICAL_DOCUMENT.sourcePath))
+  sourceHashes[TECHNICAL_DOCUMENT.sourcePath] = await sourceHash(resolve(root, TECHNICAL_DOCUMENT.sourcePath))
   context.review = census.review
-  for (const document of census.createdDocuments) sourceHashes[document.sourcePath] = await hashFile(resolve(root, document.sourcePath))
+  for (const document of census.createdDocuments) sourceHashes[document.sourcePath] = await sourceHash(resolve(root, document.sourcePath))
   if (census.rightsTransition) {
     const materialized = materializeRetiredRightsDispositions(contract, baseline, census.rightsTransition, sourceHashes)
     if (JSON.stringify(contract) !== JSON.stringify(materialized)) return { error: { ok: false, errors: [{ code: 'E_CENSUS_RIGHT', path: '/dispositions/retirement', id: '' }] } }
@@ -413,10 +445,21 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
       bodySha256: sha256(noProse), messageRef: RELATION_COURT_DISPOSITION.receipt.path } },
     entityKeys: [], documentPaths: [], dispositionKeys: relationCourtProposal.dispositions.map(row => JSON.stringify([row.set, row.id])), dependencyBatchIds: [],
   })
-  return { contract, baseline, baselineSha256: sha256(baselineBytes), current: { entitySets, documentPaths, rights,
+  const predecessorInput = { contract, baseline, baselineSha256: sha256(baselineBytes), current: { entitySets, documentPaths, rights,
     ...(census.rightsTransition ? { rightsTransition: census.rightsTransition } : {}), createdDocuments: census.createdDocuments,
     technicalDocuments: [TECHNICAL_DOCUMENT], successorDocuments: census.successorDocuments, publicationReview: census.publicationReview }, boundary,
     archiveHashes, sourceHashes, ...context, dependencies: census.dependencies, dependencyReport: census.dependencyReport }
+  if (!currentFacility) return predecessorInput
+  const { loadCiaFacilityProjection, CIA_FACILITY_OWNER_BYTES, CIA_FACILITY_SOURCE_PATHS } = await import('./cia-facility-projection-input.mjs')
+  const { authenticateCiaFacilityRights, applyCiaFacilityScopeSuccessor } = await import('./cia-facility-rights-successor.mjs')
+  const projection = await loadCiaFacilityProjection(root, diskRead)
+  projection.predecessorBytes.contract = Buffer.from(await diskRead(resolve(root, 'lore/editorial/Seoul-Scope-Contract.json')))
+  const currentSourceHashes = { ...sourceHashes }
+  for (const [key, path] of Object.entries(CIA_FACILITY_SOURCE_PATHS)) currentSourceHashes[path] = sha256(projection.currentBytes[key])
+  const successor = authenticateCiaFacilityRights({ baseline, rightsTransition: predecessorInput.current.rightsTransition,
+    decisionBytes: CIA_FACILITY_OWNER_BYTES, predecessorBytes: projection.predecessorBytes,
+    currentBytes: projection.currentBytes, sourceHashes: currentSourceHashes })
+  return applyCiaFacilityScopeSuccessor(predecessorInput, successor)
 }
 
 export async function runScopeCli(argv) {
@@ -450,6 +493,16 @@ export async function runScopeCli(argv) {
       // Staging uses the same source-root format. It cannot write public outputs.
       options.root = stage
     }
+    let databaseBundle
+    if (!options.fixture && options.mode !== 'migration') {
+      const configPath = process.env.WIKI_PUBLICATION_DATABASE_CONFIG
+        ?? resolve(options.root, '.omo/private/seoul-migration/sqlite-authority-20261021/publication-config.json')
+      const config = JSON.parse(await (await import('node:fs/promises')).readFile(configPath, 'utf8'))
+      databaseBundle = await (await import('./document-store/publication-database-inputs.mjs'))
+        .openPublicationDatabaseInputs(options.root, config)
+    }
+    try {
+    if (databaseBundle) Object.assign(options, databaseBundle.inputs)
     const input = await loadScopeInput(options)
     const { dependencyReport, dependencies, ...scopeInput } = input
     let result = input.error ?? validateSeoulScope(scopeInput, { mode: options.mode, batchId: options.batchId })
@@ -459,6 +512,7 @@ export async function runScopeCli(argv) {
     }
     return dependencyReport && (result.ok || options.mode === 'inspection')
       ? { ...result, dependencyReport, publicationReview: scopeInput.current.publicationReview } : result
+    } finally { databaseBundle?.close() }
   } catch (error) {
     if (error.code?.startsWith('E_')) return { ok: false, errors: [{ code: error.code, path: error.path, id: error.id ?? '' }] }
     return inputError(error.path ?? '/input', error.code ?? error.name)
@@ -467,7 +521,20 @@ export async function runScopeCli(argv) {
 
 // Both generation entry points call this before their first public/generated
 // write. Pending preparation never authorizes even a partial public generation.
-export async function requireSeoulPublication(root) {
+export async function requireSeoulPublication(root, databaseInputs) {
+  if (databaseInputs !== undefined) {
+    const keys = ['db', 'baselinePath', 'readBytes', 'readDirectory']
+    if (!databaseInputs || Object.keys(databaseInputs).length !== keys.length
+      || keys.some(key => !Object.hasOwn(databaseInputs, key))
+      || !databaseInputs.db || typeof databaseInputs.baselinePath !== 'string'
+      || typeof databaseInputs.readBytes !== 'function' || typeof databaseInputs.readDirectory !== 'function')
+      throw Object.assign(new Error('E_SCOPE_DATABASE_INPUT'), { code: 'E_SCOPE_DATABASE_INPUT' })
+    const input = await loadScopeInput({ root, ...databaseInputs, mode: 'publication' })
+    const { dependencyReport, dependencies, ...scopeInput } = input
+    const result = input.error ?? validateSeoulScope(scopeInput, { mode: 'publication' })
+    if (!result.ok) throw Object.assign(new Error(JSON.stringify(result)), result.errors[0])
+    return scopeInput.current.publicationReview
+  }
   const result = await runScopeCli(['--root', root])
   if (!result.ok) throw Object.assign(new Error(JSON.stringify(result)), result.errors[0])
   return result.publicationReview

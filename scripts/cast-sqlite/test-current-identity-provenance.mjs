@@ -5,6 +5,7 @@ import test from 'node:test';
 import { DatabaseSync } from 'node:sqlite';
 import { IDENTITY_PROVENANCE_TABLE_COLUMNS, mapIdentityProvenance } from './current-identity-provenance.mjs';
 import { parseDocument } from './sources.mjs';
+import { readSourceArchive } from './source-archive.mjs';
 
 const NAMES = ['person-id-registry', 'gender-cast', 'clan-hangnyeol-tables', 'cast-hangnyeol'];
 
@@ -12,7 +13,7 @@ async function corpus() {
   const root = resolve(import.meta.dirname, '..', '..');
   const files = await Promise.all(NAMES.map(async (name, index) => {
     const logical_path = `lore/name-pools/${name}.json`;
-    const { document, records } = parseDocument(await readFile(resolve(root, logical_path), 'utf8'));
+    const { document, records } = parseDocument(readSourceArchive(logical_path).toString('utf8'));
     return { source_id: index + 1, logical_path, document, records };
   }));
   return { files };

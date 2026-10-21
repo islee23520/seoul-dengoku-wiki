@@ -5,6 +5,7 @@ import { DatabaseSync } from 'node:sqlite';
 import test from 'node:test';
 
 import { mapSourceClosureDomains, REFERENCE_TARGET_PATHS } from './source-closure.mjs';
+import { readSourceArchive } from './source-archive.mjs';
 
 const HOLDER_PATHS = [
   'lore/name-pools/cast-birthdays.json',
@@ -160,7 +161,7 @@ test('Given a direct source record, when closure DDL receives its reference, the
 
 test('Given the current fixed family and context holders, when closure maps their actual source pointers, then it binds the fixed target set and office evidence', async () => {
   const load = async (logical_path, source_id) => {
-    const bytes = await readFile(logical_path);
+    const bytes = readSourceArchive(logical_path);
     return {
       logical_path, source_id, sha256: createHash('sha256').update(bytes).digest('hex'), byte_length: bytes.length,
       document: logical_path.endsWith('.json') ? JSON.parse(bytes) : null,

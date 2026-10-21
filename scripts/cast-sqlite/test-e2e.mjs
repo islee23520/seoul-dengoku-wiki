@@ -10,16 +10,18 @@ import { buildCastDatabase, DEFAULT_SOURCE_ROOT } from './build.mjs';
 import { verifyCastDatabase } from './verify.mjs';
 import { DATA_SOURCE_PATHS, sha256 } from './sources.mjs';
 import { TEXT_DATA_TABLE_COLUMNS, reconstructTextData } from './text-data.mjs';
+import { readSourceArchive } from './source-archive.mjs';
+import { snapshotActualCorpus } from './fixtures.mjs';
 
 const count = (db, table) => db.prepare(`SELECT count(*) AS n FROM ${table}`).get().n;
-const readJson = async (logicalPath) => JSON.parse(await readFile(join(DEFAULT_SOURCE_ROOT, logicalPath), 'utf8'));
+const readJson = async (logicalPath) => JSON.parse(readSourceArchive(logicalPath));
 
 // Independently count source references and resolve their anchors from source bytes.
 const expectedReferenceCounts = (sourceRoot) => {
   const counts = { 'json-pointer-verified': 0, 'json-pointer-unresolved': 0, 'verified-path-only': 0 };
   const documents = new Map();
   const document = path => {
-    if (!documents.has(path)) documents.set(path, path.endsWith('.json') ? JSON.parse(readFileSync(join(sourceRoot, path), 'utf8')) : null);
+    if (!documents.has(path)) documents.set(path, path.endsWith('.json') ? JSON.parse(readSourceArchive(path)) : null);
     return documents.get(path);
   };
   const add = (path, anchor) => {
@@ -72,6 +74,8 @@ test('the complete wiki corpus builds and verifies as an independent read-only S
     await rm(root, { recursive: true, force: true });
   });
   const dbPath = join(root, 'wiki-cast.sqlite');
+  const historicalInput = await snapshotActualCorpus(t);
+  const sourceRoot = historicalInput.sourceRoot;
   const [registry, values, gender, birthdays, family, diaspora, holdings, gurps] = await Promise.all([
     readJson('lore/name-pools/person-id-registry.json'),
     readJson('lore/name-pools/values-cast.json'),
@@ -92,7 +96,7 @@ test('the complete wiki corpus builds and verifies as an independent read-only S
   const familyNodeIds = new Set(family.nodes.map((node) => node.id));
   const supplementalNodes = diasporaMembers.filter((member) => !familyNodeIds.has(member.key)).length;
   const supplementalEdges = diasporaMembers.reduce((total, member) => total + member.parentKeys.length, 0);
-  const sourceTexts = new Map(await Promise.all(DATA_SOURCE_PATHS.map(async (path) => [path, await readFile(join(DEFAULT_SOURCE_ROOT, path), 'utf8')])));
+  const sourceTexts = new Map(DATA_SOURCE_PATHS.map(path => [path, readSourceArchive(path).toString('utf8')]));
   const expectedGurpsIssues = [];
   // Compute citation failures from source bytes, independently of the importer and receipt.
   const inspectEvidence = (value, pointer, personId) => {
@@ -138,13 +142,13 @@ test('the complete wiki corpus builds and verifies as an independent read-only S
   const nonowning = holdingTransitions.filter(row => row.disposition === 'approved-nonowning').length;
   assert.equal(retained + nonowning, holdings.holdings.length);
 
-  const built = await buildCastDatabase({ sourceRoot: DEFAULT_SOURCE_ROOT, outputPath: dbPath });
+  const built = await buildCastDatabase({ sourceRoot, outputPath: dbPath });
   const originalSha256 = sha256(await readFile(dbPath));
   const originalMtimeMs = (await stat(dbPath)).mtimeMs;
   assert.equal(built.sha256, originalSha256);
   assert.equal(built.counts.person, expectedPeople);
   const secondPath = join(root, 'second.sqlite');
-  const second = await buildCastDatabase({ sourceRoot: DEFAULT_SOURCE_ROOT, outputPath: secondPath });
+  const second = await buildCastDatabase({ sourceRoot, outputPath: secondPath });
   assert.equal(second.sha256, built.sha256);
   assert.equal(sha256(await readFile(secondPath)), originalSha256, 'same source snapshot must generate identical SQLite bytes');
   const db = new DatabaseSync(dbPath, { readOnly: true });
@@ -189,7 +193,7 @@ test('the complete wiki corpus builds and verifies as an independent read-only S
   assert.equal(offline.reference_closure, unresolvedReferences ? 'stored-hashes-only-with-unresolved-anchors' : 'stored-hashes-only');
   assert.equal(offline.source_reference_unresolved_count, unresolvedReferences);
   const receiptPath = join(root, 'verification.json');
-  const full = await verifyCastDatabase({ dbPath, sourceRoot: DEFAULT_SOURCE_ROOT, receiptPath });
+  const full = await verifyCastDatabase({ dbPath, sourceRoot, receiptPath });
   assert.equal(full.artifact_integrity, 'ok');
   assert.equal(full.complete_verification, true);
   assert.equal(full.source_freshness, 'current');
@@ -213,8 +217,8 @@ test('the complete wiki corpus builds and verifies as an independent read-only S
   assert.equal(full.sha256, originalSha256);
   assert.equal(full.counts.person, expectedPeople);
   assert.deepEqual(JSON.parse(await readFile(receiptPath, 'utf8')), full);
-  await assert.rejects(verifyCastDatabase({ dbPath, sourceRoot: DEFAULT_SOURCE_ROOT, receiptPath }), { code: 'E_RECEIPT_EXISTS' });
-  await assert.rejects(verifyCastDatabase({ dbPath, sourceRoot: DEFAULT_SOURCE_ROOT, requireClean: true }), { code: 'E_SOURCE_QUALITY' });
+  await assert.rejects(verifyCastDatabase({ dbPath, sourceRoot, receiptPath }), { code: 'E_RECEIPT_EXISTS' });
+  await assert.rejects(verifyCastDatabase({ dbPath, sourceRoot, requireClean: true }), { code: 'E_SOURCE_QUALITY' });
   for (const [name, sql, code] of [
     ['raw', "UPDATE source_file SET raw_bytes=zeroblob(byte_length) WHERE logical_path='WORLD_BUILDING_GUIDE.md'", 'E_SOURCE_RAW'],
     ['identity', "UPDATE person_value SET value=CASE WHEN value=0 THEN 1 ELSE 0 END WHERE person_id=(SELECT person_id FROM person_value LIMIT 1) AND axis_name=(SELECT axis_name FROM person_value LIMIT 1)", 'E_SOURCE_FIDELITY'],

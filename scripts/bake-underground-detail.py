@@ -8,6 +8,7 @@ import argparse
 import csv
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 
 import osmium
@@ -42,7 +43,12 @@ def main():
     args = parser.parse_args()
     depth_file, operation_file = args.cache / 'depth.csv', args.cache / 'operations.csv'
     catalog = json.loads((ROOT / 'public/opening-territories.json').read_text())
-    alias_catalog = json.loads((ROOT / 'lore/places/Seoul-Station-Catalog.json').read_text())
+    alias_catalog = json.loads(subprocess.check_output([
+        'node', '--input-type=module', '-e',
+        "import { readCanonicalDocument } from './scripts/cast-sqlite/canonical-document.mjs'; "
+        "process.stdout.write(JSON.stringify(readCanonicalDocument(process.argv[1])));",
+        'lore/places/Seoul-Station-Catalog.json',
+    ], cwd=ROOT))
     source_by_station_line = {
         (station_id, LINE_IDS[line]): source.split('(')[0]
         for entry in alias_catalog['data']['station_aliases']
@@ -51,7 +57,12 @@ def main():
         if source != '총신대입구 (이수)'
         for line in observed if line in LINE_IDS
     }
-    official = json.loads((ROOT / 'scripts/official-seoul-lines.json').read_text())
+    official = json.loads(subprocess.check_output([
+        'node', '--input-type=module', '-e',
+        "import { readCanonicalDocument } from './scripts/cast-sqlite/canonical-document.mjs'; "
+        "process.stdout.write(JSON.stringify(readCanonicalDocument(process.argv[1])));",
+        'scripts/official-seoul-lines.json',
+    ], cwd=ROOT))
     import re
     aliases = dict(re.findall(r"'([^']+)': '([^']+)'", (ROOT / 'src/components/stationPresentation.ts').read_text()))
     depths = {(name_key(row['역명']), LINE_IDS[row['호선']]): row for row in rows(depth_file) if row['호선'] in LINE_IDS}

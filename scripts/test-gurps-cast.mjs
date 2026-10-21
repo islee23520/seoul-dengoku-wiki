@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 // Preserved legacy records are checked against independent sealed hashes, not formulas.
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
@@ -16,7 +17,7 @@ const find = (d, id) => d.people.find((p) => p.id === id)
 const sample = doc.people.find((p) => p.method === 'card-lexicon' && p.attributes.IQ.value === 11 && p.skills.length >= 2)
 const sampleIndex = doc.people.indexOf(sample)
 
-const family = JSON.parse(readFileSync(join(ROOT, 'lore/name-pools/cast-family-trees.json'), 'utf8'))
+const family = readCanonicalDocument('lore/name-pools/cast-family-trees.json')
 const ancestors = [
   ['K081', 'FH-K081-P-03', '류원택', '1988-03-15', 'lore/characters/Cast-State-03.json', '/content/260/text/ko'],
   ['K320', 'FH-K320-P-03', '흥승호', '1999-03-20', 'lore/characters/Cast-State-12.json', '/content/261/text/ko'],
@@ -32,7 +33,7 @@ for (const [id, actorId, name, birthDate, path, pointer] of ancestors) {
     assert.equal(actor.timeline[0].year, 2026)
     assert.ok(actor.birthDate < '2026-01-01')
     assert.ok(actor.deathDate === null || actor.deathDate >= '2026-12-31')
-    const source = JSON.parse(readFileSync(join(ROOT, path), 'utf8'))
+    const source = readCanonicalDocument(path)
     const block = source.content[Number(pointer.split('/')[2])]
     assert.ok(actor.timeline[0].sourceRefs.some((ref) => ref.path === path && ref.anchor === block.anchor))
     assert.ok(block.text.ko[1].text.includes(name))
@@ -72,7 +73,7 @@ for (const [id, actorId, name, birthDate, path, pointer] of ancestors) {
 
   for (const receiver of [id, 'K082']) for (const field of ['ability', 'skill']) {
     test(`${id} ancestor citation is rejected in ${receiver} ${field} by actor identity`, () => {
-      const source = JSON.parse(readFileSync(join(ROOT, path), 'utf8'))
+      const source = readCanonicalDocument(path)
       const citation = { path, pointer, quote: G.pointerGet(source, pointer)[1].text.trim() }
       assert.ok(G.quoteHolds(ROOT, citation))
       const mutant = structuredClone(doc)

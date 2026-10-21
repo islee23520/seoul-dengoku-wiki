@@ -13,6 +13,7 @@ const nativeFiles = [
   'scripts/test-soul-assignments.mjs',
 ]
 const familyFile = 'scripts/test-family-catalog.mjs'
+const parentNativeFiles = [...nativeFiles, 'scripts/test-wiki-api-seoul.mjs', 'scripts/test-wiki-document-api.mjs']
 const vitestFiles = [
   familyFile,
   'scripts/test-state-formation-contract.mjs',
@@ -52,6 +53,7 @@ test('parent npm test generates and runs the full Vitest and native suites', () 
   assert.deepEqual(scripts['test:parent'].split(' && '), [
     'npm run generate',
     'vitest run',
-    `node --test ${nativeFiles.join(' ')}`,
+    `node --test ${parentNativeFiles.join(' ')}`,
   ])
+  for (const file of parentNativeFiles) assert.equal(included(file, config.test), false, file)
 })

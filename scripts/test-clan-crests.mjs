@@ -3,12 +3,19 @@ import { readFile, readdir } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
 import { test } from 'node:test'
 import { LAYOUTS, MOTIFS, assignCrests, renderCrest } from './clan-crest.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readClanCatalogDocument, CLAN_CATALOG_SOURCE_HASH } from './cast-sqlite/clan-catalog-document.mjs'
 
 const root = new URL('../', import.meta.url)
-const tables = JSON.parse(await readFile(new URL('lore/name-pools/clan-hangnyeol-tables.json', root), 'utf8'))
+const { tables, manifest } = (() => {
+  const db = openReadOnly(new URL('data/canonical/wiki-cast.sqlite', root).pathname)
+  try {
+    return { tables: readClanCatalogDocument(db, { expectedSourceHash: CLAN_CATALOG_SOURCE_HASH }),
+      manifest: { motifs: db.prepare('SELECT clan,surname,bongwan,motif,reference FROM clan_crest_motif ORDER BY ordinal').all() } }
+  } finally { db.close() }
+})()
 const clans = tables.clans.filter((clan) => !clan.id.includes('-agreed-'))
 const assigned = assignCrests(clans.map((clan) => clan.id))
-const manifest = JSON.parse(await readFile(new URL('assets/clan-crest-motifs.json', root), 'utf8'))
 const researched = new Map(manifest.motifs.map((row) => [row.clan, row]))
 const selected = [
   { id: 'c774-c804-c758-674e', surname: '이', bongwan: '전의', source: 'selected', sha256: '748efdbd7bc111c230ae57d32285630312b35df2258abf6952d8cad36db3b01a' },

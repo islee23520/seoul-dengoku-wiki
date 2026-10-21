@@ -1,3 +1,4 @@
+import { readSourceArchive } from './source-archive.mjs';
 import assert from 'node:assert/strict';
 import { readFileSync, mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
@@ -10,12 +11,12 @@ import { ATLAS_TABLE_COLUMNS, mapAtlasData, reconstructAtlasData } from './text-
 
 const paths = ['lore/World-Narrative-Atlas.json', 'lore/authoring.example.json'];
 const files = paths.map((logical_path, index) => {
-  const raw_bytes = readFileSync(new URL('../../' + logical_path, import.meta.url));
+  const raw_bytes = readSourceArchive(logical_path);
   return { source_id: index + 1, logical_path, raw_bytes, sha256: sha256(raw_bytes), document: JSON.parse(raw_bytes),
     corpus_kind: index ? 'example' : 'current', content_policy: 'local-corpus' };
 });
-const registry = JSON.parse(readFileSync(new URL('../../lore/name-pools/person-id-registry.json', import.meta.url)));
-const values = JSON.parse(readFileSync(new URL('../../lore/name-pools/values-cast.json', import.meta.url)));
+const registry = JSON.parse(readSourceArchive('lore/name-pools/person-id-registry.json'));
+const values = JSON.parse(readSourceArchive('lore/name-pools/values-cast.json'));
 const bundle = { files: [{ logical_path: 'lore/name-pools/person-id-registry.json', document: registry },
   { logical_path: 'lore/name-pools/values-cast.json', document: values }] };
 const expected = (document) => Object.fromEntries(['atlas', 'registry'].filter((key) => Object.hasOwn(document.data, key)).map((key) => [key, document.data[key]]));

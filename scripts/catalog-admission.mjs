@@ -4,6 +4,8 @@ import { glossaryDocument } from './glossary-document.mjs'
 import { loadCategoryRegistry, registrationErrors } from './category-registration.mjs'
 import { isAuthenticatedPublicationReview } from './seoul-census.mjs'
 import { sha256 } from './seoul-scope.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readCatalogPages, readCatalogGlossary } from './cast-sqlite/catalog-pages.mjs'
 
 export const readerFields = ['slug', 'title', 'route', 'reviewText', 'blocks']
 export const catalogFields = ['domain', 'slug', 'route', 'title']
@@ -71,10 +73,15 @@ const defaultAtlasCheck = async (options) => {
 
 // Match the publisher's lore JSON selection. The atlas source and projections use
 // the ordinary JSON path, but only after the materializer verifies the committed set.
-export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasCheck, includeWorldIndex = true } = {}) {
-  const categoryRegistry = await loadCategoryRegistry(new URL('./category-registry.json', import.meta.url))
+export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasCheck, includeWorldIndex = true,
+  db, dbPath = process.env.WIKI_DOCUMENT_DB, categoryRegistry: suppliedCategoryRegistry } = {}) {
+  dbPath ??= resolve(loreRoot, '../data/canonical/wiki-cast.sqlite')
+  const categoryRegistry = suppliedCategoryRegistry ?? await loadCategoryRegistry(new URL('./category-registry.json', import.meta.url))
   const atlasPath = resolve(loreRoot, 'World-Narrative-Atlas.json')
-  await checkAtlas({ atlasPath, outDir: loreRoot, check: true })
+  if (db || dbPath !== undefined) {
+    const { materializeWorldAtlas } = await import('./cast-sqlite/atlas-materializer.mjs')
+    await materializeWorldAtlas({ atlasPath, outDir: loreRoot, check: true, db, dbPath })
+  } else await checkAtlas({ atlasPath, outDir: loreRoot, check: true })
   const slugs = new Set()
   const documents = []
   const add = (slug, source, id, sources) => {
@@ -107,17 +114,39 @@ export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasChe
       }
     }
   }
-  await walk(loreRoot)
+  if (db || dbPath !== undefined) {
+    const connection = db ?? openReadOnly(dbPath)
+    try {
+      for (const page of readCatalogPages(connection)) {
+        const sourcePath = page.path.slice('lore/'.length)
+        const identity = connection.prepare('SELECT sha256 FROM source_file WHERE logical_path=?').get(page.path)
+        add(page.slug, page.path, atlasPathSet.has(sourcePath) ? `wiki:${page.slug}` : page.value.id,
+          [{ source: page.path, currentSha256: identity.sha256, approved: page.value.status === 'approved',
+            categoryErrors: page.value.status === 'approved' ? [] : registrationErrors({ ...page.value, slug: page.slug }, categoryRegistry, basename(page.path)) }])
+        slugs.add(page.slug)
+      }
+    } finally { if (!db) connection.close() }
+  } else await walk(loreRoot)
 
   if (!includeWorldIndex) return documents.sort((left, right) => left.route < right.route ? -1 : left.route > right.route ? 1 : 0)
   // The Glossary page is generated from the term dictionary, so the dictionary must build it.
-  const glossaryBytes = await readFile(join(loreRoot, 'glossary.json'))
-  glossaryDocument(JSON.parse(glossaryBytes.toString()))
+  let glossarySha256
+  if (db || dbPath !== undefined) {
+    const connection = db ?? openReadOnly(dbPath)
+    try {
+      glossaryDocument(readCatalogGlossary(connection))
+      glossarySha256 = connection.prepare('SELECT sha256 FROM glossary_archive WHERE singleton=1').get().sha256
+    } finally { if (!db) connection.close() }
+  } else {
+    const glossaryBytes = await readFile(join(loreRoot, 'glossary.json'))
+    glossaryDocument(JSON.parse(glossaryBytes.toString()))
+    glossarySha256 = sha256(glossaryBytes)
+  }
   for (const slug of ['Glossary', 'index']) {
     if (slugs.has(slug)) throw new Error(`E_PUBLISH_SOURCE_COLLISION:${slug}`)
     slugs.add(slug)
     const sources = slug === 'Glossary'
-      ? [{ source: 'lore/glossary.json', currentSha256: sha256(glossaryBytes), approved: true }]
+      ? [{ source: 'lore/glossary.json', currentSha256: glossarySha256, approved: true }]
       : ['Core-Characters', 'Sixteen-States', 'Scenario-Timeline'].map(dependency =>
         documents.find(row => row.route === `/world/${dependency}`))
         .flatMap(document => document ? discoveredSources.get(document) : [null])

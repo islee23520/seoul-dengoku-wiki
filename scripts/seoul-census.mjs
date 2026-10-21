@@ -16,7 +16,7 @@ import { BATCH_ID as PROJECTION_REFRESH_BATCH_ID, DIRECTORY as PROJECTION_REFRES
   EXPECTED as PROJECTION_REFRESH_EXPECTED, materializeProjectionRefresh } from './projection-refresh-successor.mjs'
 import { authenticateRepinSuccessor, materializeOfficesPredecessor } from '../.omo/private/seoul-migration/doc247-repin-20261019/materialize-repins.mjs'
 import { BATCH_ID as ATLAS_FIX_SUCCESSOR_BATCH_ID, DIRECTORY as ATLAS_FIX_SUCCESSOR_DIRECTORY,
-  materializeAtlasFixSuccessor } from '../.omo/private/seoul-migration/doc247-atlas-fix-20261019/materialize-successor.mjs'
+   materializeAtlasFixSuccessor } from './atlas-fix-materializer.mjs'
 import { BATCH_ID as DOC247_FINAL_BATCH_ID, RECEIPTS_PATH as DOC247_FINAL_RECEIPTS_PATH,
   SUCCESSOR_PATH as DOC247_FINAL_SUCCESSOR_PATH, authenticateFinalClosure } from '../.omo/private/seoul-migration/doc247-final-closure-20261019/materialize.mjs'
 import { DIRECTORY as FINAL_FIVE_DIRECTORY, REVIEWED_AT as FINAL_FIVE_REVIEWED_AT, SOURCES as FINAL_FIVE_SOURCES,
@@ -506,6 +506,7 @@ const appliedAuthenticationScope = new AsyncLocalStorage()
 // Technical URL/path interoperability only. The predecessor receipt stays pinned;
 // both complete byte hashes and the single reverse edit must agree.
 export async function validatorPredecessorReader(root, reader = readFile) {
+  const readHistorical = reader.readHistorical
   const issuerBindings = [
     ['issue-person-ids.mjs', '224dedd3b4eb709fd270ccc515e68f7a118ef6d96ed6eef81b0f6eb1a64a4651', '823ddd506e15b3bd70ee1b1343f0980b38fab756c0567ca4ebb76eb861124c80'],
     ['verify-person-id-candidates.mjs', 'd4d530841978265b39cd8108c35af9b1d003bfefd416083dfa22315e31fc94d0', '044f632039b0f785ef5ab398d7a7af5e75a79c8b70c91e38ef4ce9235028d31f'],
@@ -545,19 +546,23 @@ export async function validatorPredecessorReader(root, reader = readFile) {
     reader = requested => issuerBefore.get(resolve(requested)) ?? original(requested)
     reader.appliedDiskOverrides = new Map(original.appliedDiskOverrides ?? [])
     reader.currentAuthorityReader = original.currentAuthorityReader
+    reader.readHistorical = readHistorical
   }
   const aliasPath = resolve(root, 'lore/places/test-station-alias-candidates.mjs')
   let alias
   try { alias = await reader(aliasPath) } catch (error) { if (error.code !== 'ENOENT') throw error }
   if (alias && sha256(alias) === '916bb07d96ca2194595c4d2005d4f517b5eceb03e4fee69fcfe80795b5297e7b') {
-    const before = (await promisify(execFile)('git', ['-C', root, 'show', 'e9c12a43728a599c371d373088e177a446ff5051:lore/places/test-station-alias-candidates.mjs'],
-      { encoding: 'buffer', maxBuffer: 64 * 1024 * 1024 })).stdout
+    const before = readHistorical
+      ? await readHistorical('e9c12a43728a599c371d373088e177a446ff5051', 'lore/places/test-station-alias-candidates.mjs', root)
+      : (await promisify(execFile)('git', ['-C', root, 'show', 'e9c12a43728a599c371d373088e177a446ff5051:lore/places/test-station-alias-candidates.mjs'],
+        { encoding: 'buffer', maxBuffer: 64 * 1024 * 1024 })).stdout
     check(sha256(before) === '18fc455a69d053b742b2c6611456e80594aea45c857e3eafe9eb2b3e066ba256',
       'E_REVIEW_HASH', 'lore/places/test-station-alias-candidates.mjs')
     const original = reader
     reader = requested => resolve(requested) === aliasPath ? before : original(requested)
     reader.appliedDiskOverrides = new Map(original.appliedDiskOverrides ?? [])
     reader.currentAuthorityReader = original.currentAuthorityReader
+    reader.readHistorical = readHistorical
   }
   const path = resolve(root, 'lore/relations/validate.mjs')
   let bytes
@@ -570,6 +575,8 @@ export async function validatorPredecessorReader(root, reader = readFile) {
     'E_REVIEW_HASH', 'lore/relations/validate.mjs')
   const predecessor = requested => resolve(requested) === path ? before : reader(requested)
   predecessor.appliedDiskOverrides = new Map(reader.appliedDiskOverrides ?? [])
+  predecessor.currentAuthorityReader = reader.currentAuthorityReader
+  predecessor.readHistorical = readHistorical
   return predecessor
 }
 async function loadFinalSuccessor(root, readBytes = readFile) {
@@ -618,9 +625,9 @@ export async function refreshTechnicalCodePublicationReview(review, root, readBy
   return result
 }
 
-export async function refreshStationCatalogPublicationReview(review, root) {
+export async function refreshStationCatalogPublicationReview(review, root, readBytes = readFile) {
   const { authenticateStationCatalogSuccessor, STATION_RECEIPT, STATION_BEFORE, STATION_AFTER } = await import('./station-catalog-scope-successor.mjs')
-  const successor = await authenticateStationCatalogSuccessor(root)
+  const successor = await authenticateStationCatalogSuccessor(root, readBytes)
   check(authenticatedPublicationReviews.has(review), 'E_PUBLICATION_REVIEW_AUTHORITY', STATION_RECEIPT)
   const result = structuredClone(review)
   const row = result.documents.find(row => row.sourcePath === successor.receipt.sourcePath)
@@ -633,10 +640,10 @@ export async function refreshStationCatalogPublicationReview(review, root) {
   return result
 }
 
-export async function refreshClimateLinkPublicationReview(review, root) {
+export async function refreshClimateLinkPublicationReview(review, root, readBytes = readFile) {
   const { authenticateClimateLinkSuccessor, CLIMATE_SOURCE, CLIMATE_BEFORE, CLIMATE_AFTER,
     CLIMATE_RECEIPT, CLIMATE_RECEIPT_SHA256 } = await import('./climate-link-successor.mjs')
-  await authenticateClimateLinkSuccessor(root)
+  await authenticateClimateLinkSuccessor(root, readBytes)
   check(authenticatedPublicationReviews.has(review), 'E_PUBLICATION_REVIEW_AUTHORITY', CLIMATE_RECEIPT)
   const result = structuredClone(review)
   const row = result.documents.find(row => row.sourcePath === CLIMATE_SOURCE)
@@ -649,11 +656,11 @@ export async function refreshClimateLinkPublicationReview(review, root) {
   return result
 }
 
-export async function refreshTimelineWharfPublicationReview(review, root) {
+export async function refreshTimelineWharfPublicationReview(review, root, readBytes = readFile) {
   const { authenticateTimelineWharfSuccessor, authenticateTimelineWharfPublicationReview, TIMELINE_SOURCE, TIMELINE_BEFORE,
     TIMELINE_AFTER, TIMELINE_RECEIPT, TIMELINE_REVIEW, TIMELINE_REVIEW_SHA256 } = await import('./timeline-wharf-successor.mjs')
-  await authenticateTimelineWharfSuccessor(root)
-  await authenticateTimelineWharfPublicationReview(root)
+  await authenticateTimelineWharfSuccessor(root, readBytes)
+  await authenticateTimelineWharfPublicationReview(root, readBytes)
   check(authenticatedPublicationReviews.has(review), 'E_PUBLICATION_REVIEW_AUTHORITY', TIMELINE_RECEIPT)
   const result = structuredClone(review)
   const row = result.documents.find(row => row.sourcePath === TIMELINE_SOURCE)
@@ -666,9 +673,9 @@ export async function refreshTimelineWharfPublicationReview(review, root) {
   return result
 }
 
-export async function refreshReviewWordingPublicationReview(review, root) {
+export async function refreshReviewWordingPublicationReview(review, root, readBytes = readFile) {
   const { authenticateReviewWordingSuccessor, WORDING_RECEIPT } = await import('./review-wording-successor.mjs')
-  const successor = await authenticateReviewWordingSuccessor(root)
+  const successor = await authenticateReviewWordingSuccessor(root, readBytes)
   check(authenticatedPublicationReviews.has(review), 'E_PUBLICATION_REVIEW_AUTHORITY', WORDING_RECEIPT)
   const result = structuredClone(review)
   for (const file of successor.files.values()) {
@@ -683,9 +690,9 @@ export async function refreshReviewWordingPublicationReview(review, root) {
   return result
 }
 
-export async function refreshK176PublicationReview(review, root) {
+export async function refreshK176PublicationReview(review, root, readBytes = readFile) {
   const { authenticateK176LabelSuccessor, K176_SOURCE: sourcePath, K176_BEFORE: beforeSha256, K176_AFTER: afterSha256, K176_DIRECTORY } = await import('./k176-label-successor.mjs')
-  const successor = await authenticateK176LabelSuccessor(root)
+  const successor = await authenticateK176LabelSuccessor(root, readBytes)
   check(successor, 'E_REVIEW_HASH', sourcePath)
   check(authenticatedPublicationReviews.has(review), 'E_PUBLICATION_REVIEW_AUTHORITY', sourcePath)
   const result = structuredClone(review)
@@ -1015,9 +1022,12 @@ const recordReference = (sources, path, jsonPointer) => {
 
 // This receipt binds the current 223 keys, not the audit's older 242-key set.
 // Targets remain external or historical provenance, never authored documents.
-export async function loadRequiredProvenance(root, sources, readBytes = readFile, readGit = async binding =>
-  (await promisify(execFile)('git', ['-C', binding.repositoryRoot, 'show', `${binding.revision}:${binding.path}`],
-    { encoding: 'buffer', maxBuffer: 64 * 1024 * 1024 })).stdout) {
+export async function loadRequiredProvenance(root, sources, readBytes = readFile, readGit) {
+  const readHistorical = readBytes.readHistorical
+  readGit ??= readHistorical
+    ? binding => readHistorical(binding.revision, binding.path, binding.repositoryRoot)
+    : async binding => (await promisify(execFile)('git', ['-C', binding.repositoryRoot, 'show', `${binding.revision}:${binding.path}`],
+      { encoding: 'buffer', maxBuffer: 64 * 1024 * 1024 })).stdout
   readBytes = await validatorPredecessorReader(root, readBytes)
   const { stationCatalogPredecessorReader } = await import('./station-catalog-scope-successor.mjs')
   const { reviewWordingPredecessorReader } = await import('./review-wording-successor.mjs')
@@ -2622,9 +2632,12 @@ async function completedSourcePacket(model, readBytes, root) {
   return JSON.parse(bytes)
 }
 
-async function historicalSourceBytes(path, expectedHash, readBytes, root, readGit = async binding =>
-  (await promisify(execFile)('git', ['-C', binding.repositoryRoot, 'show', `${binding.revision}:${binding.path}`],
-    { encoding: 'buffer', maxBuffer: 64 * 1024 * 1024 })).stdout) {
+async function historicalSourceBytes(path, expectedHash, readBytes, root, readGit) {
+  const readHistorical = readBytes.readHistorical
+  readGit ??= readHistorical
+    ? binding => readHistorical(binding.revision, binding.path, binding.repositoryRoot)
+    : async binding => (await promisify(execFile)('git', ['-C', binding.repositoryRoot, 'show', `${binding.revision}:${binding.path}`],
+      { encoding: 'buffer', maxBuffer: 64 * 1024 * 1024 })).stdout
   let current = await readBytes(resolve(root, path))
   if (sha256(current) === expectedHash) return current
   const finalSuccessor = (await loadFinalSuccessor(root, readBytes)).transitions.find(row => row.path === path)
@@ -3398,8 +3411,10 @@ async function validateVassalCodeSuccessor(batch, packetBytes, manifest, readByt
   const codeSuccessor = repin.transitions.find(row => row.path === path)
   check(sha256(live) === binding.afterSha256 || (codeSuccessor?.beforeSha256 === binding.afterSha256
     && codeSuccessor.afterSha256 === sha256(live)), 'E_REVIEW_HASH', path)
-  const originalBytes = (await promisify(execFile)('git', ['-C', root, 'show', `${original.revision}:${path}`],
-    { encoding: 'buffer', maxBuffer: 1024 * 1024 })).stdout
+  const originalBytes = readBytes.readHistorical
+    ? Buffer.from(await readBytes.readHistorical(original.revision, path, root))
+    : (await promisify(execFile)('git', ['-C', root, 'show', `${original.revision}:${path}`],
+      { encoding: 'buffer', maxBuffer: 1024 * 1024 })).stdout
   check(sha256(originalBytes) === original.sha256 && originalBytes.length === 14912,
     'E_ARCHIVE_HASH', path)
   const marker = '  const events = chronicle.content.filter((block) => block.kind === "paragraph")\n'
@@ -7709,6 +7724,7 @@ export async function loadAppliedBatches(readFileImpl = readFile, root = '.') {
     readFileImpl = async path => resolve(path) === resolve(root, K176_SOURCE) ? successor.before : originalReader(path)
     appliedAuthorityReaders.set(readFileImpl, appliedAuthorityReaders.get(originalReader) ?? originalReader)
     readFileImpl.appliedDiskOverrides = new Map(originalReader.appliedDiskOverrides ?? [])
+    readFileImpl.readHistorical = originalReader.readHistorical
   }
   if (!currentAuthority && !inheritedAuthority) appliedAuthorityReaders.set(readFileImpl, readFileImpl)
   const authorityReader = appliedAuthorityReaders.get(readFileImpl) ?? readFileImpl
@@ -7721,6 +7737,7 @@ export async function loadAppliedBatches(readFileImpl = readFile, root = '.') {
   let finalBytes
   const invocationReader = requested => resolve(requested) === finalPath
     ? finalBytes ??= Promise.resolve(authorityReader(requested)) : authorityReader(requested)
+  invocationReader.readHistorical = authorityReader.readHistorical
   appliedAuthorityReaders.set(readFileImpl, invocationReader)
   return appliedAuthenticationScope.run({ root: resolve(root), reader: invocationReader }, async () => {
     let registryBytes
@@ -7743,10 +7760,11 @@ async function loadAppliedBatchesInScope(readFileImpl, root) {
     appliedAuthorityReaders.set(reader, appliedAuthorityReaders.get(readFileImpl) ?? readFileImpl)
     return Object.assign(reader, {
       appliedDiskOverrides: new Map([...(readFileImpl.appliedDiskOverrides ?? []), ...(reader.appliedDiskOverrides ?? [])]),
+      readHistorical: readFileImpl.readHistorical,
     })
   }
   if (registry.batches.length === 111 && registry.batches[110]?.approvalModel === ATLAS_FIX_SUCCESSOR_BATCH_ID) {
-    const materialized = await materializeAtlasFixSuccessor(root)
+    const materialized = await materializeAtlasFixSuccessor(root, appliedAuthorityReaders.get(readFileImpl) ?? readFileImpl)
     const prefix = { ...registry, batches: registry.batches.slice(0, 110) }
     const prefixBytes = Buffer.from(JSON.stringify(prefix, null, 2) + '\n')
     const transitionByPath = new Map(materialized.sourceBeforeAfter.sources.map(row => [row.sourcePath, row]))
@@ -8463,6 +8481,7 @@ async function loadAppliedBatchesInScope(readFileImpl, root) {
       if (batch.approvalModel !== STYLE_V4_SOURCE.id && styleBefore.has(path)) return styleBefore.get(path)
       return batch.approvalModel === S03_REVIEWED_SOURCE.id ? readFileImpl(path) : s03Before.get(path) ?? readFileImpl(path)
     }
+    readBatchBytes.readHistorical = readFileImpl.readHistorical
     appliedAuthorityReaders.set(readBatchBytes, appliedAuthorityReaders.get(readFileImpl) ?? readFileImpl)
     check(batch.state === 'applied' && typeof batch.batchId === 'string' && batch.batchId.trim().length > 0 && Array.isArray(batch.personIds) && Array.isArray(batch.approvals)
       && /^[a-f0-9]{64}$/.test(batch.packetSha256), 'E_SCOPE_SHAPE', '/applied/batch', batch.batchId)
@@ -9348,6 +9367,15 @@ export async function loadTask2Geography(root, readBytes = readFile) {
 }
 
 export async function loadAndValidateCensus({ root, baseline, baselineSha256, contract, batches, review: machineReview, reviewEvidence = {}, mode = 'publication', batchId = null, readBytes = readFile, syncProducts = null, nationalDress = null }) {
+  if (readBytes === readFile && mode !== 'migration') {
+    const configPath = process.env.WIKI_PUBLICATION_DATABASE_CONFIG
+      ?? resolve(root, '.omo/private/seoul-migration/sqlite-authority-20261021/publication-config.json')
+    const config = JSON.parse(await readFile(configPath, 'utf8'))
+    const bundle = await (await import('./document-store/publication-database-inputs.mjs')).openPublicationDatabaseInputs(root, config)
+    try { return await loadAndValidateCensus({ root, baseline, baselineSha256, contract, batches,
+      review: machineReview, reviewEvidence, mode, batchId, readBytes: bundle.inputs.readBytes, syncProducts, nationalDress }) }
+    finally { bundle.close() }
+  }
   nationalDress ??= await authenticateNationalDressAdmission(root, baseline, readBytes)
   const { climateLinkPredecessorReader } = await import('./climate-link-successor.mjs')
   readBytes = await climateLinkPredecessorReader(root, readBytes)
@@ -9367,6 +9395,7 @@ export async function loadAndValidateCensus({ root, baseline, baselineSha256, co
   const appliedReader = Object.assign(async requested => readBytes(requested), {
     appliedDiskOverrides: new Map(repin.transitions.map(row => [row.path, row.afterSha256])),
     currentAuthorityReader: readBytes,
+    readHistorical: readBytes.readHistorical,
   })
   const appliedBatches = await loadAppliedBatches(appliedReader, root)
   const ledger = await load(CENSUS_PATHS[0]); const review = await load(CENSUS_PATHS[1])

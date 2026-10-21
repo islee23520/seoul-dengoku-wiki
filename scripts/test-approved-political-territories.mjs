@@ -1,21 +1,28 @@
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
 import { authenticateNonowningRights, loadApprovedRightsHistory, projectCatalogCurrentHoldings, projectCatalogOutsideOccupation, projectPersonHoldings } from './generate-catalog.mjs'
 import { projectHistoricalOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
 import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
+import { loadCiaFacilityProjection } from './cia-facility-projection-input.mjs'
+import { projectCiaFacilityHoldings } from './cia-facility-publication.mjs'
+import { relative } from 'node:path'
 const approved = JSON.parse(readFileSync(new URL('./fixtures/approved-political-partition.json', import.meta.url), 'utf8'))
-const json = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
+const json = path => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
 
-test('approved Seoul sovereignty covers 427 unchanged dong including all five enclaves', () => {
+test('approved Seoul sovereignty preserves all dong and limits CIA control to the tower facility', () => {
   const map = json('public/opening-territories.json')
-  const expectedHolders = approved.seoulBaseline.map(row => [row.id, approved.namsan.includes(row.id) ? 'S08' : row.holder === 'S08' ? 'S02' : row.holder]).sort()
+  const expectedHolders = approved.seoulBaseline.map(row => [row.id, approved.namsan.includes(row.id) ? undefined : row.holder === 'S08' ? 'S02' : row.holder]).sort()
   assert.equal(new Set(map.regions.map(row => row.id)).size, 427)
   assert.deepEqual(map.regions.map(row => [row.id, row.polities[0]]).sort(), expectedHolders)
-  assert.ok(map.regions.every(row => row.polities.length === 1 && row.currentHegemons.length === 1))
-  assert.deepEqual(Object.fromEntries(['규격맹', '대한민국정부', '종교 연합', '중립'].map(name => [name, map.regions.filter(region => region.currentHegemons.some(hegemon => hegemon.name === name)).length])), { 규격맹: 142, 대한민국정부: 198, '종교 연합': 84, 중립: 3 })
+  assert.ok(map.regions.every(row => row.polities.length === (approved.namsan.includes(row.id) ? 0 : 1)
+    && row.currentHegemons.length === row.polities.length))
+  assert.deepEqual(Object.fromEntries(['규격맹', '대한민국정부', '종교 연합', '중립'].map(name => [name, map.regions.filter(region => region.currentHegemons.some(hegemon => hegemon.name === name)).length])), { 규격맹: 142, 대한민국정부: 198, '종교 연합': 84, 중립: 0 })
   for (const code of ['1165052000','1165065100','1165051000','1165053000','1165053100']) assert.deepEqual(map.regions.find(region => region.id === 'region:' + code).currentHegemons, [{kind:'union',name:'종교 연합'}])
-  assert.deepEqual(map.regions.filter(region => region.polities.includes('S08')).map(region => region.id).sort(), ['1117051000','1117052000','1117066000'].map(code => 'region:' + code))
+  assert.deepEqual(map.regions.filter(region => region.polities.includes('S08')), [])
+  assert.deepEqual(map.regions.filter(region => !region.polities.length).map(region => region.id).sort(), ['1117051000','1117052000','1117066000'].map(code => 'region:' + code))
   assert.equal(map.landmarks.find(site => site.id === 'n-seoul-tower').holderId, 'S08')
 })
 
@@ -54,6 +61,13 @@ test('approved current rights retain Seoul property and only limited nonowning D
   const { historical } = await loadApprovedRightsHistory()
   const people = json('lore/name-pools/gurps-cast.json').people
   const seoul = json('public/opening-territories.json')
+  const currentSeoul = structuredClone(seoul)
+  // Historical replay retains its original three-dong jurisdiction. Apply the
+  // later facility-only decision only after authenticating that predecessor.
+  for (const region of seoul.regions.filter(row => approved.namsan.includes(row.id))) {
+    region.polities = ['S08']
+    region.currentHegemons = [{ kind: 'neutral', name: '중립' }]
+  }
   const currentControl = json('lore/regions/outside-control-2126.json')
   const currentIslands = json('lore/regions/outside-island-occupation.json')
   const control = await projectCatalogOutsideOccupation(currentControl, historical.outside, currentIslands)
@@ -67,14 +81,20 @@ test('approved current rights retain Seoul property and only limited nonowning D
     repoRoot: new URL('../', import.meta.url).pathname, geography: json('lore/regions/seoul-electoral-titles.json') }
   const original = projectHistoricalOpeningFeudalAllocation({ ...args, ...historical })
   assert.equal(original.summary.coveredEntitlements, 1939)
-  const projected = await projectCatalogCurrentHoldings({ ...args, geographicScale: buildAdminTerritorialScale({
-    geographyBytes: readFileSync(new URL('../lore/regions/seoul-electoral-titles.json', import.meta.url)),
+  const predecessor = await projectCatalogCurrentHoldings({ ...args, geographicScale: buildAdminTerritorialScale({
+    geographyBytes: readSourceArchive('lore/regions/seoul-electoral-titles.json', '372734e77019d0e544ded29f90e1b35b8a8c3a3cfff305c295c2bd83a6b64eef'),
     territorialScale: json('lore/offices/Offices-and-Ranks.json').data.territorialScale,
   }) }, context)
+  const root = new URL('../', import.meta.url).pathname
+  const { correction } = await loadCiaFacilityProjection(root, path => readSourceArchive(relative(root, path)))
+  const projected = projectCiaFacilityHoldings(predecessor, correction)
   assert.deepEqual([projected.summary.heldSeoulRegions, projected.summary.heldOutsideUnits, projected.summary.heldComponents,
-    projected.summary.unassignedComponents, projected.summary.coveredEntitlements], [427, 0, 0, 0, 427])
-  const direct = original.holdings.filter(row => !row.componentRefs?.length && row.adminRefs.every(ref => ref.id.startsWith('region:11')))
-  assert.equal(direct.length, 51)
+    projected.summary.unassignedComponents, projected.summary.coveredEntitlements], [424, 0, 0, 0, 424])
+  assert.equal(currentSeoul.regions.filter(row => row.polities.length).length, projected.summary.heldSeoulRegions)
+  const historicalDirect = original.holdings.filter(row => !row.componentRefs?.length && row.adminRefs.every(ref => ref.id.startsWith('region:11')))
+  const direct = historicalDirect.filter(row => row.id !== correction.retiredGrantId)
+  assert.equal(historicalDirect.length, 51)
+  assert.equal(direct.length, 50)
   assert.deepEqual(projected.holdings.filter(row => row.kind !== 'superior-jurisdiction'), direct)
   const approval = authenticateNonowningRights(readFileSync(new URL('./approved-daejeon-nonowning-rights.json', import.meta.url)))
   const jurisdictions = projected.holdings.filter(row => row.kind === 'superior-jurisdiction')

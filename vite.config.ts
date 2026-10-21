@@ -11,7 +11,10 @@ export default defineConfig({
   server: {
     port: 5174,
     watch: { ignored: ['**/.omo/**'] },
-    proxy: { '/wiki/api': 'http://127.0.0.1:8787' },
+    proxy: {
+      '/wiki/api/documents': 'http://127.0.0.1:8788',
+      '/wiki/api': 'http://127.0.0.1:8787',
+    },
   },
   build: {
     rolldownOptions: {

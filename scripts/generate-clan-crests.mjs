@@ -4,15 +4,23 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { assignCrests, renderCrest } from './clan-crest.mjs'
 import { generatorStage, requireGenerationPublication } from './generate-release.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readClanCatalogDocument, CLAN_CATALOG_SOURCE_HASH } from './cast-sqlite/clan-catalog-document.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 await requireGenerationPublication(root)
 const { root: outputRoot, writeFile } = await generatorStage(root)
 const outDir = join(outputRoot, 'public', 'clan-crests')
-const tables = JSON.parse(await readFile(join(root, 'lore/name-pools/clan-hangnyeol-tables.json'), 'utf8'))
+const { tables, motifs } = (() => {
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? join(root, 'data/canonical/wiki-cast.sqlite'))
+  try {
+    return { tables: readClanCatalogDocument(db, { expectedSourceHash: CLAN_CATALOG_SOURCE_HASH }),
+      motifs: new Map(db.prepare('SELECT clan,surname,bongwan,motif,reference FROM clan_crest_motif ORDER BY ordinal')
+        .all().map(row => [row.clan, row])) }
+  } finally { db.close() }
+})()
 const clans = tables.clans.filter((clan) => !clan.id.includes('-agreed-'))
 const assigned = assignCrests(clans.map((clan) => clan.id))
-const motifs = new Map(JSON.parse(await readFile(join(root, 'assets', 'clan-crest-motifs.json'), 'utf8')).motifs.map((row) => [row.clan, row]))
 const selected = new Map([
   ['c774-c804-c758-674e', '748efdbd7bc111c230ae57d32285630312b35df2258abf6952d8cad36db3b01a'],
   ['goryeong-shin', 'faccdb8a017eef79666f85bf2f4af6232b8d459f4115fe974ac0568c958441e8'],

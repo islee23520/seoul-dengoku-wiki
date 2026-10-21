@@ -1,3 +1,4 @@
+import { readSourceArchive } from './source-archive.mjs';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
@@ -9,9 +10,9 @@ import { SIMPLE_TABLE_COLUMNS, mapSimpleData, reconstructSimpleData } from './te
 
 const root = new URL('../../', import.meta.url);
 const files = TEXT_DOCUMENT_MANIFEST.map(({ logical_path }, index) => ({ source_id: index + 1, logical_path,
-  document: JSON.parse(readFileSync(new URL(logical_path, root), 'utf8')) }));
+  document: JSON.parse(readSourceArchive(logical_path)) }));
 const registry = { logical_path: 'lore/name-pools/person-id-registry.json',
-  document: JSON.parse(readFileSync(new URL('lore/name-pools/person-id-registry.json', root), 'utf8')) };
+  document: JSON.parse(readSourceArchive('lore/name-pools/person-id-registry.json')) };
 const bundle = { files: [...files, registry] };
 const keys = ['symptom', 'transmission', 'exchange', 'supply', 'tier', 'consequence', 'dependency', 'layer',
   'opening_state', 'function', 'constraint', 'primary_detail_names', 'sequence', 'entries'];

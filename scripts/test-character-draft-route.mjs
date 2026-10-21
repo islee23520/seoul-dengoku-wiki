@@ -1,7 +1,25 @@
 // @vitest-environment jsdom
+import { afterAll as closeInputFixture } from 'vitest'
+import { readFile as readInputConfig } from 'node:fs/promises'
+const inputRoot = new URL('../', import.meta.url).pathname
+const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
+const inputConfig = JSON.parse(await readInputConfig(process.env.WIKI_PUBLICATION_DATABASE_CONFIG ?? new URL('../.omo/private/seoul-migration/sqlite-authority-20261021/publication-config.json', import.meta.url), 'utf8'))
+const inputBundle = await openPublicationDatabaseInputs(inputRoot, inputConfig)
+const inputCapture = JSON.parse(await readInputConfig(inputConfig.captureReceiptPath))
+const inputBytes = new Map()
+for (const { logicalPath } of inputCapture.bindings.filter(row => row.logicalPath.startsWith('lore/')))
+  inputBytes.set(inputRoot + logicalPath, await inputBundle.inputs.readBytes(inputRoot + logicalPath))
+const readFileSync = (path, encoding) => {
+  const absolute = path instanceof URL ? path.pathname : path
+  if (!absolute.startsWith(inputRoot + 'lore/')) return readDiskFileSync(path, encoding)
+  if (!inputBytes.has(absolute)) throw Object.assign(new Error('missing source: ' + absolute), { code: 'ENOENT' })
+  const bytes = Buffer.from(inputBytes.get(absolute))
+  return encoding === 'utf8' ? bytes.toString() : bytes
+}
+closeInputFixture(() => inputBundle.close())
 import assert from 'node:assert/strict'
 import { createHash, webcrypto } from 'node:crypto'
-import { readFileSync } from 'node:fs'
+import { readFileSync as readDiskFileSync } from 'node:fs'
 import { readFile } from 'node:fs/promises'
 import { createElement } from 'react'
 import { createRoot } from 'react-dom/client'

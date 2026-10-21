@@ -3,9 +3,10 @@ import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import { loadHouseholdSourceDocuments, validateCastHouseholdRelations, projectCastHouseholdRelations } from './cast-household-relations.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 
 const root = fileURLToPath(new URL('../', import.meta.url))
-const ledger = JSON.parse(await readFile(new URL('../lore/name-pools/cast-household-relations.json', import.meta.url), 'utf8'))
+const ledger = readCanonicalDocument('lore/name-pools/cast-household-relations.json')
 const documents = await loadHouseholdSourceDocuments(root, ledger)
 
 test('imported diaspora parents remain source-bound in household projections', () => {

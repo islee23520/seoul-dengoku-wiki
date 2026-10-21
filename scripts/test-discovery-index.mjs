@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readdir, readFile } from 'node:fs/promises'
 import { test } from 'vitest'
@@ -88,7 +89,7 @@ test('category entries use authored Korean titles when pages have no top heading
   const source = await readFile(new URL('../src/generated/categoryIndex.ts', import.meta.url), 'utf8')
   const index = JSON.parse(source.split('export const categoryIndex = ')[1].split(' as const satisfies')[0])
   const characters = index.categories.find(({ id }) => id === 'characters')
-  const page = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-01.json', import.meta.url), 'utf8'))
+  const page = readCanonicalDocument('lore/characters/Cast-State-01.json')
   assert.equal(characters.documents.some(({ slug }) => slug === 'Cast-State-01'), false)
   const { renderLoreMarkdown } = await import('./lore-json-render.mjs')
   const { categoryIndex } = await import('./category-registration.mjs')

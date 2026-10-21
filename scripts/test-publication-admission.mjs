@@ -1,5 +1,6 @@
+import { afterAll } from 'vitest'
 import assert from 'node:assert/strict'
-import { mkdtemp, mkdir, readFile, rm, writeFile } from 'node:fs/promises'
+import { mkdtemp, mkdir, readFile as readDiskFile, rm, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { resolve } from 'node:path'
 import { gunzipSync } from 'node:zlib'
@@ -89,6 +90,18 @@ test('every wikiLinks target resolves to a published article or registered appli
   const routes = new Set([...appRoutes, ...wikiCatalog.map(row => row.route), ...wikiEnglishCatalog.map(row => row.route)])
   for (const [name, route] of Object.entries(wikiLinks)) assert.ok(routes.has(route), `${name}: ${route}`)
 })
+
+const inputRoot = new URL('../', import.meta.url).pathname
+const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
+const inputConfig = JSON.parse(await readDiskFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG ?? new URL('../.omo/private/seoul-migration/sqlite-authority-20261021/publication-config.json', import.meta.url), 'utf8'))
+const inputBundle = await openPublicationDatabaseInputs(inputRoot, inputConfig)
+const readFile = async (path, encoding) => {
+  const absolute = path instanceof URL ? path.pathname : path
+  if (!absolute.startsWith(inputRoot + 'lore/') && !String(path).startsWith('lore/')) return readDiskFile(path, encoding)
+  const bytes = await inputBundle.inputs.readBytes(absolute.startsWith(inputRoot) ? absolute : new URL('../' + path, import.meta.url).pathname)
+  return encoding === 'utf8' ? bytes.toString() : bytes
+}
+afterAll(() => inputBundle.close())
 
 const roots = []
 test('authenticated document scope does not require entity allocation or complete publication', async () => {

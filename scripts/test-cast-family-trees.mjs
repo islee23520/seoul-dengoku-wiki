@@ -3,6 +3,7 @@ import { readFile, mkdtemp, mkdir, writeFile, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { test } from 'vitest'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
@@ -13,7 +14,7 @@ import { importDiasporaFamilies, loadCastFamilyTrees, projectFamilyTree, validat
 const sourceRefs = [{ path: 'lore/characters/Core-Characters.json' }]
 
 test('all final foreign lane decisions preserve named endpoints and distinguish authoring from source proof', async () => {
-  const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
+  const decisions = readCanonicalDocument('lore/name-pools/cast-family-role-decisions.json')
   const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
   assert.equal(decisions.finalOwnerAuthoredRoles.length, 385)
   for (const mapping of decisions.finalOwnerAuthoredRoles) {
@@ -28,7 +29,7 @@ test('all final foreign lane decisions preserve named endpoints and distinguish 
 
 
 test('applies all approved external ancestors without changing dates or given names', async () => {
-  const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
+  const decisions = readCanonicalDocument('lore/name-pools/cast-family-role-decisions.json')
   const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
   for (const approved of decisions.approvedExternalMaternalAncestors) {
     const node = graph.nodes.find(node => node.id === approved.nodeId)
@@ -68,7 +69,7 @@ test('rejects conflicting identities sharing the same stable node ID', () => {
 
 
 test('preserves role-only mappings without inventing historical clans', async () => {
-  const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
+  const decisions = readCanonicalDocument('lore/name-pools/cast-family-role-decisions.json')
   const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
   for (const mapping of decisions.ownerAuthoredRoleOnly) {
     assert.equal(graph.edges.find(edge => edge.id === mapping.edgeId).parentRole, mapping.parentRole)
@@ -80,7 +81,7 @@ test('preserves role-only mappings without inventing historical clans', async ()
 
 test('propagates Jinyang Jeong through two existing single-parent ancestor edges', async () => {
   const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
-  const hang = JSON.parse(await readFile(new URL('../lore/name-pools/cast-hangnyeol.json', import.meta.url), 'utf8'))
+  const hang = readCanonicalDocument('lore/name-pools/cast-hangnyeol.json')
   const issued = hang.people.find(person => person.name === '정서온')
   const expected = { surname: issued.surname, bongwan: issued.bongwan, clan: issued.clan }
   for (const [from, to] of [['FH-K1005-X정일환-01', 'FH-EX-JEONG-ILHWAN'], ['FH-K1005-X정일환-02', 'FH-K1005-X정일환-01']]) {
@@ -92,14 +93,14 @@ test('propagates Jinyang Jeong through two existing single-parent ancestor edges
 })
 
 test.each(['applied-paternal-contract', 'explicit-diaspora-father', 'explicit-annals-father', 'complementary-maternal', 'owner-derived-maternal', 'owner-derived-lee-backpropagation'])('binds corrected %s roles to existing source pointers', async (category) => {
-  const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
+  const decisions = readCanonicalDocument('lore/name-pools/cast-family-role-decisions.json')
   const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
   const corrections = decisions.sourceBoundRoleCorrections.filter(row => row.category === category)
   assert.ok(corrections.length)
   for (const correction of corrections) {
     assert.equal(graph.edges.find(edge => edge.id === correction.edgeId)?.parentRole, correction.after)
     for (const ref of correction.sourceRefs.filter(ref => ref.anchor.startsWith('/'))) {
-      const document = JSON.parse(await readFile(new URL('../' + ref.path, import.meta.url), 'utf8'))
+      const document = readCanonicalDocument(ref.path)
       const value = ref.anchor.slice(1).split('/').reduce((current, part) => current?.[part], document)
       assert.notEqual(value, undefined, correction.edgeId + ':' + ref.anchor)
     }
@@ -108,7 +109,7 @@ test.each(['applied-paternal-contract', 'explicit-diaspora-father', 'explicit-an
 
 
 test('source-bound corrections preserve all nineteen roles through the real loader', async () => {
-  const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
+  const decisions = readCanonicalDocument('lore/name-pools/cast-family-role-decisions.json')
   const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
   for (const correction of decisions.sourceBoundRoleCorrections) {
     assert.equal(graph.edges.find(edge => edge.id === correction.edgeId)?.parentRole, correction.after, correction.edgeId)
@@ -129,10 +130,10 @@ test('rejects conflicting paternal clan across a historical generation', () => {
 })
 
 test('rejects reintroduced same surname on an owner-corrected derived pair', async () => {
-  const authored = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-trees.json', import.meta.url), 'utf8'))
-  const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
-  const diaspora = JSON.parse(await readFile(new URL('../lore/name-pools/diaspora-family-lineages.json', import.meta.url), 'utf8'))
-  const hang = JSON.parse(await readFile(new URL('../lore/name-pools/cast-hangnyeol.json', import.meta.url), 'utf8'))
+  const authored = readCanonicalDocument('lore/name-pools/cast-family-trees.json')
+  const decisions = readCanonicalDocument('lore/name-pools/cast-family-role-decisions.json')
+  const diaspora = readCanonicalDocument('lore/name-pools/diaspora-family-lineages.json')
+  const hang = readCanonicalDocument('lore/name-pools/cast-hangnyeol.json')
   const pair = decisions.maternalCorrections[0]
   authored.nodes.find((entry) => entry.id === pair.motherId).lineage.surname = pair.fatherLine.surname
   // Keep the newly authored maternal paternal chain consistent so this fixture isolates co-parent surname rejection.
@@ -140,7 +141,7 @@ test('rejects reintroduced same surname on an owner-corrected derived pair', asy
   assert.throws(() => validateCastFamilyTrees(authored, registry, { diaspora, roleDecisions: decisions, lineages: new Map(hang.people.map((person) => [person.name, person])) }), /E_FAMILY_SAME_SURNAME/)
 })
 
-const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8')).persons
+const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json').persons
 const roster = registry.filter((person) => ['신종목', '신준', '임하준', '임초원', '이연'].includes(person.name))
 const id = (name) => roster.find((person) => person.name === name).id
 const node = (id, name, birthDate, kind = 'person') => ({ id, personId: kind === 'historical' ? null : id, name, kind, birthDate, deathDate: null, status: 'preserved', sourceRefs,
@@ -233,7 +234,7 @@ test('authoritative registered name and birth edits resolve through the real loa
     await writeFile(join(root, 'name-pools/clan-hangnyeol-tables.json'), JSON.stringify({ clans: [] }))
     await writeFile(join(root, 'name-pools/cast-family-role-decisions.json'), JSON.stringify({ derivedParentRoles: [], maternalCorrections: [] }))
     const ledger = fixture()
-    const canonicalBirths = JSON.parse(await readFile(new URL('../lore/name-pools/cast-birthdays.json', import.meta.url), 'utf8')).people
+    const canonicalBirths = readCanonicalDocument('lore/name-pools/cast-birthdays.json').people
     for (const node of ledger.nodes) if (node.personId) node.birthDate = canonicalBirths.find((entry) => entry.id === node.personId).birthDate
     const issued = structuredClone(roster)
     const personId = id('신준')
@@ -244,7 +245,12 @@ test('authoritative registered name and birth edits resolve through the real loa
     })) }
     await writeFile(join(root, 'name-pools/cast-family-trees.json'), JSON.stringify(ledger))
     await writeFile(join(root, 'name-pools/cast-birthdays.json'), JSON.stringify(birthdays))
-    const graph = await loadCastFamilyTrees(root, issued)
+    const loadFixture = async () => loadCastFamilyTrees(root, issued, { documents: {
+      ledger: JSON.parse(await readFile(join(root, 'name-pools/cast-family-trees.json'), 'utf8')),
+      birthdays: JSON.parse(await readFile(join(root, 'name-pools/cast-birthdays.json'), 'utf8')),
+      hangnyeol: { people: [] }, roleDecisions: { derivedParentRoles: [], maternalCorrections: [] }, clans: [],
+    } })
+    const graph = await loadFixture()
     const node = graph.nodes.find((entry) => entry.id === personId)
     assert.equal(node.name, '정본 변경 이름')
     assert.equal(node.birthDate, '2111-02-03')
@@ -256,29 +262,29 @@ test('authoritative registered name and birth edits resolve through the real loa
     const eventConflict = structuredClone(ledger)
     eventConflict.nodes.find((entry) => entry.id === personId).timeline[0].year = 2110
     await writeFile(join(root, 'name-pools/cast-family-trees.json'), JSON.stringify(eventConflict))
-    await assert.rejects(loadCastFamilyTrees(root, issued), /E_FAMILY_EVENT_LIFETIME/)
+    await assert.rejects(loadFixture(), /E_FAMILY_EVENT_LIFETIME/)
     await writeFile(join(root, 'name-pools/cast-family-trees.json'), JSON.stringify(ledger))
     for (const type of ['biological', 'adoptive']) {
       const removed = structuredClone(ledger)
       removed.edges = removed.edges.filter((edge) => !(edge.type === type && ['K1009', 'K086'].includes(edge.from)))
       await writeFile(join(root, 'name-pools/cast-family-trees.json'), JSON.stringify(removed))
-      await assert.rejects(loadCastFamilyTrees(root, issued), /E_FAMILY_PRESERVED_EDGE/)
+      await assert.rejects(loadFixture(), /E_FAMILY_PRESERVED_EDGE/)
     }
     await writeFile(join(root, 'name-pools/cast-family-trees.json'), JSON.stringify(ledger))
     birthdays.people.find((person) => person.id === personId).birthDate = '2087-01-01'
     await writeFile(join(root, 'name-pools/cast-birthdays.json'), JSON.stringify(birthdays))
-    await assert.rejects(loadCastFamilyTrees(root, issued), /E_FAMILY_PARENT_BIRTH/)
+    await assert.rejects(loadFixture(), /E_FAMILY_PARENT_BIRTH/)
     birthdays.people.find((person) => person.id === personId).birthDate = '2086-12-31'
     await writeFile(join(root, 'name-pools/cast-birthdays.json'), JSON.stringify(birthdays))
-    await assert.rejects(loadCastFamilyTrees(root, issued), /E_BIRTH_COHORT_RANGE/)
+    await assert.rejects(loadFixture(), /E_BIRTH_COHORT_RANGE/)
   } finally { await rm(root, { recursive: true, force: true }) }
 })
 
 test('imports both diaspora families from their single canonical ledger and rejects duplicates', async () => {
-  const diaspora = JSON.parse(await readFile(new URL('../lore/name-pools/diaspora-family-lineages.json', import.meta.url), 'utf8'))
+  const diaspora = readCanonicalDocument('lore/name-pools/diaspora-family-lineages.json')
   const imported = importDiasporaFamilies(diaspora)
   const diasporaRoster = registry.filter((person) => diaspora.lineages.some((line) => line.currentPersonId === person.id))
-  const authored = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-trees.json', import.meta.url), 'utf8'))
+  const authored = readCanonicalDocument('lore/name-pools/cast-family-trees.json')
   const importedIds = new Set(imported.nodes.map(node => node.id))
   const requiredAncestors = new Set(imported.edges.filter(edge => !importedIds.has(edge.from)).map(edge => edge.from))
   let added = true

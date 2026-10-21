@@ -62,5 +62,6 @@ export async function reviewWordingPredecessorReader(root, reader = readFile) {
   const successor = await authenticateReviewWordingSuccessor(root, reader)
   const predecessor = async path => successor.files.get(resolve(path))?.before ?? reader(path)
   predecessor.appliedDiskOverrides = new Map(reader.appliedDiskOverrides ?? [])
+  predecessor.readHistorical = reader.readHistorical
   return predecessor
 }

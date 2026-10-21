@@ -1,3 +1,4 @@
+import { readSourceArchive } from './source-archive.mjs';
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
 import { resolve, basename } from 'node:path';
@@ -193,9 +194,9 @@ if (process.env.CAST_SQLITE_SOURCE_ROOT) {
   test('actual corpus: all profiles, source routes, bilingual field values and all directed relations match source', async (t) => {
     const sourceRoot = resolve(process.env.CAST_SQLITE_SOURCE_ROOT);
     const paths = [...profilePaths, relationPath];
-    const files = await Promise.all(paths.map(async (logical_path, index) => ({ source_id: index + 1, logical_path, document: JSON.parse(await readFile(resolve(sourceRoot, logical_path), 'utf8')) })));
-    const registry = JSON.parse(await readFile(resolve(sourceRoot, 'lore/name-pools/person-id-registry.json'), 'utf8'));
-    const values = JSON.parse(await readFile(resolve(sourceRoot, 'lore/name-pools/values-cast.json'), 'utf8'));
+    const files = await Promise.all(paths.map(async (logical_path, index) => ({ source_id: index + 1, logical_path, document: JSON.parse(readSourceArchive(logical_path).toString('utf8')) })));
+    const registry = JSON.parse(readSourceArchive('lore/name-pools/person-id-registry.json').toString('utf8'));
+    const values = JSON.parse(readSourceArchive('lore/name-pools/values-cast.json').toString('utf8'));
     const names = new Map(registry.persons.map((person) => [person.name, person.id]));
     const identity = { people: values.people.map((person, index) => ({ person_id: names.get(person.name), name: person.name, public_key: `person-${String(index + 1).padStart(4, '0')}` })) };
     const { renderLoreMarkdown } = await import(pathToFileURL(resolve(sourceRoot, 'scripts/lore-json-render.mjs')).href);

@@ -61,10 +61,17 @@ export async function authenticateMainDocAdmission(root, baseline, reader = read
     const bytes = Buffer.from(await reader(resolve(root, pin.sourcePath)))
     check(hash(bytes) === pin.sha256 && bytes.length === pin.byteLength
       && createHash('sha1').update(Buffer.concat([Buffer.from(`blob ${bytes.length}\0`), bytes])).digest('hex') === pin.blob, pin.sourcePath)
-    const git = promisify(execFile)
-    const sourceBlob = await git('git', ['-C', root, 'rev-parse', pin.sourceCommit + ':' + pin.sourcePath])
-    const mainBlob = await git('git', ['-C', root, 'rev-parse', registration.mainCommit + ':' + pin.sourcePath])
-    check(sourceBlob.stdout.trim() === pin.blob && mainBlob.stdout.trim() === pin.mainBlob, pin.sourcePath)
+    if (reader.readHistorical) {
+      const blobHash = bytes => createHash('sha1').update(Buffer.concat([Buffer.from(`blob ${bytes.length}\0`), bytes])).digest('hex')
+      const source = Buffer.from(await reader.readHistorical(pin.sourceCommit, pin.sourcePath, root))
+      const main = Buffer.from(await reader.readHistorical(registration.mainCommit, pin.sourcePath, root))
+      check(blobHash(source) === pin.blob && blobHash(main) === pin.mainBlob, pin.sourcePath)
+    } else {
+      const git = promisify(execFile)
+      const sourceBlob = await git('git', ['-C', root, 'rev-parse', pin.sourceCommit + ':' + pin.sourcePath])
+      const mainBlob = await git('git', ['-C', root, 'rev-parse', registration.mainCommit + ':' + pin.sourcePath])
+      check(sourceBlob.stdout.trim() === pin.blob && mainBlob.stdout.trim() === pin.mainBlob, pin.sourcePath)
+    }
     const admission = { row: MAIN_DOC_ROWS[index], source: { bytes, sha256: pin.sha256, value: null }, pin, registration }
     authenticated.add(admission)
     admissions.push(admission)
