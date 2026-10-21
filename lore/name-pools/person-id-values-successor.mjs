@@ -1,9 +1,8 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { readFileSync } from "node:fs";
+import { readSourceArchive } from "../../scripts/cast-sqlite/source-archive.mjs";
 import { gunzipSync } from "node:zlib";
 
-const ROOT = new URL("../../", import.meta.url);
 const SOURCE = "lore/name-pools/values-cast.json";
 const PREDECESSOR = "1bc77ccc7d261ee2dade3c1433d26ea5ae1054c5f7fa9e1f6a0f34e9348d929a";
 const SUCCESSOR = "19a30e156065f6c2f59b3d2ea7b0226e887ea60d610b70d10e588937407620e2";
@@ -11,7 +10,7 @@ const BATCH = "owner-recommendations-records";
 const PACKET = ".omo/private/seoul-migration/post62-registration-20261015/" + BATCH + "/application-packet.json";
 const PACKET_SHA = "e4cd6884d35a75e600ed5187651fcff8d0eb7b8ee05528e24b24037f42b82b18";
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
-const readEvidence = (relative) => readFileSync(new URL(relative, ROOT));
+const readEvidence = (relative) => readSourceArchive(relative);
 
 // Preserve the issuance preimage only for the exact authenticated, note-only successor.
 // The reader is injectable so evidence mutations never touch the live private registry.

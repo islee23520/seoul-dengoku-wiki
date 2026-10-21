@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
@@ -8,9 +9,9 @@ import { loadPreservedPersonSheets } from './preserved-person-sheet.mjs'
 
 test('the shared producer preserves office precedence, historical sheets, full rights and absent fields without output IO', async () => {
   const root = new URL('../', import.meta.url)
-  const registry = JSON.parse(await readFile(new URL('lore/name-pools/person-id-registry.json', root), 'utf8')).persons
-  const values = JSON.parse(await readFile(new URL('lore/name-pools/values-cast.json', root), 'utf8')).people
-  const sheets = JSON.parse(await readFile(new URL('lore/name-pools/gurps-cast.json', root), 'utf8')).people
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json').persons
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
+  const sheets = readCanonicalDocument('lore/name-pools/gurps-cast.json').people
   const chosen = [0, 1].map(index => ({ issued: registry[index], ledger: values.find(row => row.name === registry[index].name) }))
   assert.ok(chosen.every(({ ledger }) => ledger))
   const peopleSource = chosen.map(({ ledger }, index) => {

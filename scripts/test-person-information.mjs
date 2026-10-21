@@ -1,3 +1,5 @@
+import { loadSheetMetadata } from './cast-sqlite/sheet-metadata.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { preservedSheetSources } from './preserved-person-sheet.mjs'
 import { assertPublicSheetRecord } from './public-sheet-test-expectation.mjs'
 import assert from 'node:assert/strict'
@@ -12,11 +14,11 @@ import { MemoryRouter } from 'react-router-dom'
 import { JSDOM } from 'jsdom'
 import { PersonDetailContent, PreservedPersonSheet, selectPreservedSheet } from '../src/pages/PersonDetailPage.tsx'
 
-const read = (path) => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
+const read = (path) => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
 const issued = read('../lore/name-pools/gurps-cast.json').people
 const revision = '5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4'
 const roots = preservedSheetSources
-const baseline = read('./issued-preservation-baseline.json')
+const baseline = loadSheetMetadata().baseline
 assert.deepEqual(Object.keys(roots ?? {}).sort(), Object.keys(baseline.revisions).sort())
 const sources = new Map(Object.keys(baseline.revisions).map((key) => {
   const bytes = readFileSync(roots[key].ledgerPath)

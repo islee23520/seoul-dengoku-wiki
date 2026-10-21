@@ -67,5 +67,6 @@ export async function timelineWharfPredecessorReader(root, reader = readFile) {
   const successor = await authenticateTimelineWharfSuccessor(root, reader)
   const predecessor = async path => resolve(path) === resolve(root, TIMELINE_SOURCE) ? successor.before : reader(path)
   predecessor.appliedDiskOverrides = new Map(reader.appliedDiskOverrides ?? [])
+  predecessor.readHistorical = reader.readHistorical
   return predecessor
 }

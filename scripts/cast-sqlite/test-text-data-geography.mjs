@@ -5,11 +5,12 @@ import test from 'node:test';
 import { flattenJson, sha256 } from './sources.mjs';
 import { TEXT_DOCUMENT_MANIFEST } from './text-corpus-manifest.mjs';
 import { GEOGRAPHY_TABLE_COLUMNS, mapGeographyData, reconstructGeographyData } from './text-data-geography.mjs';
+import { readSourceArchive } from './source-archive.mjs';
 
 const keys = ['currentAffiliation', 'governance', 'territorialScale', 'station_aliases'];
 const relevant = (data) => Object.fromEntries(Object.entries(data).filter(([key]) => keys.includes(key)));
 const files = TEXT_DOCUMENT_MANIFEST.map((entry, index) => {
-  const bytes = readFileSync(new URL('../../' + entry.logical_path, import.meta.url));
+  const bytes = readSourceArchive(entry.logical_path);
   return { ...entry, source_id: index + 1, sha256: sha256(bytes), bytes, document: JSON.parse(bytes), content_policy: 'local-corpus' };
 }).filter((file) => Object.keys(relevant(file.document.data)).length);
 

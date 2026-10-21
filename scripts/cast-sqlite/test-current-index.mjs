@@ -3,9 +3,10 @@ import { readFileSync } from 'node:fs'
 import { DatabaseSync } from 'node:sqlite'
 import test from 'node:test'
 import { INDEX_TABLE_COLUMNS, mapIndexDomains } from './current-index.mjs'
+import { readSourceArchive } from './source-archive.mjs'
 
 const root = new URL('../..', import.meta.url)
-const read = path => JSON.parse(readFileSync(new URL(path, root), 'utf8'))
+const read = path => JSON.parse(readSourceArchive(path))
 const identities = read('lore/name-pools/person-id-registry.json').persons.map(({ id, name }) => ({ person_id: id, name }))
 const paths = ['Cast-Index-S4', 'Cast-Index', 'Cast-Corridors-Index']
 const fixture = () => ({

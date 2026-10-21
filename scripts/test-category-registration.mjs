@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { existsSync } from 'node:fs'
 import { readFile, readdir } from 'node:fs/promises'
@@ -18,7 +19,7 @@ test('entity paths create nested branches while preserving document registration
 
 test('canonical entities retain source identities and omit faith and candidate equipment', async () => {
   const paths = ['World-Narrative-Atlas', 'culture/Food-Culture', 'technology/Lost-Technology-Lineage']
-  const pages = await Promise.all(paths.map(async (path) => ({ path: `lore/${path}.json`, slug: path.split('/').at(-1), value: JSON.parse(await readFile(new URL(`../lore/${path}.json`, import.meta.url), 'utf8')) })))
+  const pages = await Promise.all(paths.map(async (path) => ({ path: `lore/${path}.json`, slug: path.split('/').at(-1), value: readCanonicalDocument(`lore/${path}.json`) })))
   const documents = [...pages.map((page) => ({ slug: page.slug, route: `/world/${page.slug}` })), ...Array.from({ length: 26 }, (_, i) => ({ slug: `Hostile-Group-G${String(i + 1).padStart(2, '0')}`, route: `/world/Hostile-Group-G${String(i + 1).padStart(2, '0')}` }))]
   const entities = categoryEntities(pages, documents)
   assert.equal(entities.filter((item) => item.category === 'bestiary').length, 250)
@@ -154,21 +155,7 @@ test('all authenticated published JSON documents satisfy their category template
   const registry = await loadCategoryRegistry(registryPath)
   const published = publishedDocuments(await approvedDocuments(join(root, 'lore')), await requireSeoulPublication(root))
   const publishedSources = new Set(published.map(document => resolve(root, document.source)))
-  const ignored = new Set(['name-pools', 'regions', 'editorial', 'sources'])
-  const walk = async (dir) => {
-    const pages = []
-    for (const entry of await readdir(dir, { withFileTypes: true })) {
-      if (entry.name.startsWith('.')) continue
-      const path = join(dir, entry.name)
-      if (entry.isDirectory() && !ignored.has(entry.name)) pages.push(...await walk(path))
-      else if (entry.isFile() && entry.name.endsWith('.json') && !entry.name.startsWith('authoring.')) {
-        const page = JSON.parse(await readFile(path, 'utf8'))
-        if (page && typeof page.domain === 'string' && Array.isArray(page.content)) pages.push({ path, page })
-      }
-    }
-    return pages
-  }
-  const pages = (await walk(join(root, 'lore'))).filter(({ path }) => publishedSources.has(path))
+  const pages = published.map(({ source }) => ({ path: join(root, source), page: readCanonicalDocument(source) }))
   assert.ok(pages.length > 0)
   for (const { path, page } of pages) {
     assert.deepEqual(registrationErrors(page, registry, basename(path)), [], path)
@@ -189,7 +176,7 @@ test('the generated index covers all published documents, including projections'
 
 test('categories declared on an existing page must remain in the known registry', async () => {
   const registry = await loadCategoryRegistry(registryPath)
-  const page = JSON.parse(await readFile(join(root, 'lore/culture/Food-Culture.json'), 'utf8'))
+  const page = readCanonicalDocument('lore/culture/Food-Culture.json')
   assert.deepEqual(page.categories, ['culture'])
   assert.deepEqual(registrationErrors(page, registry, 'Food-Culture.json'), [])
   assert.deepEqual(registrationErrors({ ...page, categories: ['unregistered'] }, registry, 'Food-Culture.json'), [

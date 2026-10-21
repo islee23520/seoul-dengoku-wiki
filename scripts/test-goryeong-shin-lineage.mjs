@@ -1,9 +1,10 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 
 const root = new URL('../', import.meta.url)
-const lineage = JSON.parse(await readFile(new URL('lore/name-pools/cast-hangnyeol.json', root), 'utf8'))
+const lineage = readCanonicalDocument('lore/name-pools/cast-hangnyeol.json')
 const generated = await readFile(new URL('src/generated/clanFamilyCatalog.ts', root), 'utf8')
 const families = JSON.parse(generated.replace(/^export const clanFamilyCatalog = /u, '').replace(/ as const\s*$/u, ''))
 const people = [

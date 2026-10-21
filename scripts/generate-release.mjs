@@ -17,8 +17,17 @@ const evidenceName = '.omo/evidence/station-line-facts/adjacency-coverage.json'
 const outputRoots = ['public', 'src/generated', 'src/generated-private']
 const absent = error => { if (error.code === 'ENOENT') return null; throw error }
 
-export async function requireGenerationPublication(root) {
-  const review = await requireSeoulPublication(root)
+export async function requireGenerationPublication(root, databaseInputs) {
+  if (databaseInputs === undefined && process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
+    const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))
+    if (process.env.WIKI_DOCUMENT_DB && resolve(process.env.WIKI_DOCUMENT_DB) !== resolve(config.databasePath))
+      throw new Error('E_PUBLICATION_DATABASE_IDENTITY')
+    const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
+    const bundle = await openPublicationDatabaseInputs(root, config)
+    try { return await requireGenerationPublication(root, bundle.inputs) }
+    finally { bundle.close() }
+  }
+  const review = await requireSeoulPublication(root, databaseInputs)
   if (!review?.complete || review.semanticReview !== 'reviewed') throw new Error('E_PUBLICATION_REVIEW_PENDING')
   return review
 }
@@ -313,6 +322,23 @@ export async function runRelease({ root, gate = requireGenerationPublication, st
     const stageRoot = join(transaction, 'stage')
     const before = await inventory(root)
     const previousFiles = await previousGeneration(root, before, ownership)
+    const databaseInputs = [...new Set(['WIKI_DOCUMENT_DB', 'WIKI_PORTRAIT_DB',
+      'WIKI_EDITORIAL_PROFILE_DB', 'WIKI_SOUL_ASSIGNMENT_DB',
+      'WIKI_TIER_EVIDENCE_DB', 'WIKI_TIER_HISTORY_DB', 'WIKI_MAPPING_ORIGINAL_DB',
+      'WIKI_MAPPING_FINAL_DB', 'WIKI_MAPPING_SOURCES_DB', 'WIKI_PUBLICATION_DATABASE_CONFIG'].map(key => process.env[key]).filter(Boolean))]
+    if (process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
+      const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))
+      const capture = JSON.parse(await readFile(config.captureReceiptPath, 'utf8'))
+      databaseInputs.push(...[config.databasePath, config.bootstrapReceiptPath, config.captureReceiptPath,
+        capture.databasePath, config.editorialDatabasePath, ...Object.values(config.privateStores)]
+        .filter(path => path && !databaseInputs.includes(path)))
+    }
+    const databaseHashes = new Map()
+    for (const path of databaseInputs) {
+      const value = createHash('sha256')
+      for await (const bytes of createReadStream(path)) value.update(bytes)
+      databaseHashes.set(path, value.digest('hex'))
+    }
     await mkdir(transaction, { mode: 0o700 })
     let journal
     try {
@@ -335,6 +361,7 @@ export async function runRelease({ root, gate = requireGenerationPublication, st
         await run([process.execPath, 'scripts/generate-clan-crests.mjs'], env)
         await checkpoint('crest')
         await run([process.execPath, 'scripts/generate-catalog.mjs'], env)
+        await run([process.execPath, 'scripts/generate-portrait-source-catalog.mjs'], env)
         await run([process.execPath, 'scripts/generate-portrait-tokens.mjs'], env)
       }
       const records = await readFile(join(transaction, 'outputs.jsonl'), 'utf8').catch(absent)
@@ -378,6 +405,11 @@ export async function runRelease({ root, gate = requireGenerationPublication, st
       }
       // Re-check approval after all expensive staging and before live mutation.
       await gate(root)
+      for (const [path, expected] of databaseHashes) {
+        const value = createHash('sha256')
+        for await (const bytes of createReadStream(path)) value.update(bytes)
+        if (value.digest('hex') !== expected) throw new Error('E_RELEASE_DATABASE_CHANGED:' + path)
+      }
       journal = { schema: 1, state: 'prepared', files, intent: null }
       await durableJson(join(transaction, 'journal.json'), journal)
       await checkpoint('prepared')
@@ -418,6 +450,14 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
   const args = process.argv.slice(2)
   if (args.length > 1 || args.length && !['--build', '--recover'].includes(args[0])) throw new Error('E_RELEASE_ARGUMENT')
+  if (args[0] !== '--recover' && !process.env.WIKI_DOCUMENT_DB) {
+    const environment = JSON.parse(await readFile(join(root,
+      '.omo/private/seoul-migration/sqlite-authority-20261021/build-environment.json'), 'utf8'))
+    for (const [key, value] of Object.entries(environment)) {
+      if (!/^WIKI_[A-Z_]+$/u.test(key) || typeof value !== 'string') throw new Error('E_PUBLICATION_DATABASE_CONFIG')
+      process.env[key] ??= value
+    }
+  }
   if (args[0] === '--recover') await recoverRelease({ root })
   else await runRelease({ root, consume: args[0] === '--build' ? async run => {
     await run([process.execPath, 'node_modules/typescript/bin/tsc', '-b'])

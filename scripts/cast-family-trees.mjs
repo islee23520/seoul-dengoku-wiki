@@ -1,6 +1,11 @@
-import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { ageInYears, loadCastBirthdays } from './cast-birthdays.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readFamilySourceDocument } from './cast-sqlite/family-source-document.mjs'
+import { readDiasporaLineageDocument, DIASPORA_LINEAGE_SOURCE_HASH } from './cast-sqlite/diaspora-lineage-document.mjs'
+import { readFamilyRoleDocument } from './cast-sqlite/family-role-document.mjs'
+import { readPersonIdentityInputs } from './cast-sqlite/person-identity-inputs.mjs'
+import { readClanCatalogDocument, CLAN_CATALOG_SOURCE_HASH } from './cast-sqlite/clan-catalog-document.mjs'
 
 const text = (value) => typeof value === 'string' && value.trim().length > 0
 const record = (value) => value !== null && typeof value === 'object' && !Array.isArray(value)
@@ -162,17 +167,29 @@ export function validateCastFamilyTrees(ledger, roster, { diaspora, birthdays, p
 }
 
 export async function loadCastFamilyTrees(loreRoot, roster, options = {}) {
-  const ledger = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-family-trees.json'), 'utf8'))
+  if (options.documents !== undefined) {
+    const { ledger, diaspora, birthdays, hangnyeol, roleDecisions, clans } = options.documents
+    for (const node of ledger.nodes.filter(entry => entry.lineage)) {
+      if (!clans.some(clan => clan.id === node.lineage.clan && clan.surname === node.lineage.surname && clan.bongwan === node.lineage.bongwan)) fail('E_FAMILY_CLAN', node.id)
+    }
+    return validateCastFamilyTrees(ledger, roster, { ...options, diaspora,
+      birthdays: await loadCastBirthdays(loreRoot, roster, { ledger: birthdays }),
+      lineages: new Map(hangnyeol.people.map(person => [person.name, person])), roleDecisions, resolveRegisteredPeople: true })
+  }
+  const db = openReadOnly(options.documentDb ?? process.env.WIKI_DOCUMENT_DB ?? resolve(loreRoot, '../data/canonical/wiki-cast.sqlite'))
+  try {
+  const ledger = readFamilySourceDocument(db)
   const diaspora = ledger.imports?.some((entry) => entry.path === diasporaPath)
-    ? JSON.parse(await readFile(resolve(loreRoot, 'name-pools/diaspora-family-lineages.json'), 'utf8')) : undefined
+    ? readDiasporaLineageDocument(db, { expectedSourceHash: DIASPORA_LINEAGE_SOURCE_HASH }) : undefined
   const birthdays = options.birthdays ?? await loadCastBirthdays(loreRoot, roster)
-  const hangnyeol = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-hangnyeol.json'), 'utf8'))
-  const roleDecisions = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-family-role-decisions.json'), 'utf8'))
-  const clans = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/clan-hangnyeol-tables.json'), 'utf8')).clans
+  const { lineageByName } = readPersonIdentityInputs(db)
+  const roleDecisions = readFamilyRoleDocument(db)
+  const clans = readClanCatalogDocument(db, { expectedSourceHash: CLAN_CATALOG_SOURCE_HASH }).clans
   for (const node of ledger.nodes.filter((entry) => entry.lineage)) {
     if (!clans.some((clan) => clan.id === node.lineage.clan && clan.surname === node.lineage.surname && clan.bongwan === node.lineage.bongwan)) fail('E_FAMILY_CLAN', node.id)
   }
-  return validateCastFamilyTrees(ledger, roster, { ...options, diaspora, birthdays, lineages: new Map(hangnyeol.people.map((person) => [person.name, person])), roleDecisions, resolveRegisteredPeople: true })
+  return validateCastFamilyTrees(ledger, roster, { ...options, diaspora, birthdays, lineages: lineageByName, roleDecisions, resolveRegisteredPeople: true })
+  } finally { db.close() }
 }
 
 export function projectFamilyTree(graph, personId, detailRoutes) {

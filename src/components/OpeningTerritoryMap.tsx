@@ -5,7 +5,7 @@ import { segmentPointerChoices } from './segmentPointerSelection'
 import HoldingSelectionPanel, { type ConfirmedHoldings, personById as holdingPersonById } from './HoldingSelectionPanel'
 import type { CurrentHegemon, CurrentBase } from '../generated/stateCatalog'
 import './OpeningTerritoryMap.css'
-import { titlesAtRank, validateGeographicMap, resolveGeographicTitle, resolveGeographicSelection, geographicTitleColor, type GeographicTitles, type GeographicRank } from './geographicTitleMap.mjs'
+import { titlesAtRank, validateGeographicMap, resolveGeographicTitle, resolveGeographicSelection, geographicTitleColor, geographicPoliticalAffiliation, type GeographicTitles, type GeographicRank } from './geographicTitleMap.mjs'
 
 type State = { currentHegemon: CurrentHegemon; currentBase: CurrentBase & { x: number; y: number }; currentExclusiveDistrictCount: number; id: string; name: string; slug: string; government: string; power: string; relation: string | null; ruler: string; religion: string; capitalStationId: string; capitalRegionId: string; capitalX: number; capitalY: number }
 type Region = { currentHegemons: CurrentHegemon[]; id: string; name: string; district: string; path: string; polities: string[]; status: string; openingState: string; summary: string; stationCount: number; density2126: number }
@@ -187,10 +187,10 @@ export default function OpeningTerritoryMap() {
   ] : null, [data])
   const segmentColor = (control: { status: string; polityIds: string[] }) => control.status === 'held' ? states.get(control.polityIds[0])?.color ?? unassignedColor : control.status === 'contested' ? contestedColor : unassignedColor
   const politicalTitle = (title: GeographicTitles['titles'][number]) => {
-    const dongIds = new Set(title.countyIds.flatMap((countyId) => resolveGeographicTitle(data!.geography, countyId)?.currentSlots.map((slot) => slot.dongId) ?? []))
-    const names = new Set(data!.regions.filter((region) => dongIds.has(region.id)).flatMap((region) => region.currentHegemons.map((hegemon) => hegemon.name)))
-    if (names.size !== 1) return { name: '중립', color: unassignedColor }
-    const name = [...names][0]
+    const affiliation = geographicPoliticalAffiliation(title, data!.geography, data!.regions)
+    if (affiliation.kind === 'mixed') return { name: `혼재 (${affiliation.names.join(' · ')})`, color: contestedColor }
+    if (affiliation.kind === 'unknown') return { name: '정치 관할 미확인', color: unassignedColor }
+    const name = affiliation.names[0]
     return { name, color: data!.hegemons.find((hegemon) => hegemon.name === name)?.color ?? unassignedColor }
   }
   const selectTitle = (id: string | null) => {
@@ -407,7 +407,7 @@ export default function OpeningTerritoryMap() {
         {selectedLandmarkData && <section><p className="wiki-domain-label">주요 시설</p><h3>{selectedLandmarkData.name}</h3><p>{selectedLandmarkData.role}</p><p>{selectedLandmarkData.detail}</p></section>}
       </aside>}
     </div></div>
-    {mode === 'political' && <div className="territory-legend" aria-label="서울 정치 권역 범례">{[...data.hegemons.map((hegemon) => ({ name: hegemon.name, color: hegemon.color })), { name: '중립', color: unassignedColor }].map((entry) => <span key={entry.name}><span className="territory-legend-swatch" style={{ backgroundColor: entry.color }} /><span>{entry.name}</span></span>)}</div>}
+    {mode === 'political' && <div className="territory-legend" aria-label="서울 정치 권역 범례">{[...data.hegemons.map((hegemon) => ({ name: hegemon.name, color: hegemon.color })), { name: '중립', color: unassignedColor }, { name: '혼재', color: contestedColor }].map((entry) => <span key={entry.name}><span className="territory-legend-swatch" style={{ backgroundColor: entry.color }} /><span>{entry.name}</span></span>)}</div>}
     <p className="wiki-domain-label">{data.epoch.label} · {data.attribution} · 지리 작위 경계 {data.geography.spatialDate}{showRail && data.physicalRail ? ` · ${data.physicalRail.attribution}` : ''}</p>
   </section>
 }

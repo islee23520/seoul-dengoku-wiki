@@ -1,21 +1,42 @@
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
 import { validateOpeningDispositions } from './personal-holdings.mjs'
-import { authenticateNonowningRights, loadApprovedRightsHistory, projectCatalogCurrentHoldings, projectCatalogHoldings, projectCatalogOutsideOccupation, projectPersonHoldings } from './generate-catalog.mjs'
+import { authenticateNonowningRights, loadApprovedRightsHistory, projectCatalogCurrentHoldings, projectCatalogHoldings, projectCatalogOutsideOccupation, projectPersonHoldings, publicJurisdictionReferences } from './generate-catalog.mjs'
 import { projectHistoricalOpeningFeudalAllocation, validateApprovedRightsTransition } from './opening-feudal-allocation.mjs'
 import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
+import { loadCiaFacilityProjection } from './cia-facility-projection-input.mjs'
+import { projectCiaFacilityHoldings } from './cia-facility-publication.mjs'
 
-const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
+const read = path => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
+const publishedRights = current => ({ ...current, titles: publicJurisdictionReferences(current.titles), holdings: publicJurisdictionReferences(current.holdings) })
+const activePersonIds = (() => {
+  const db = openReadOnly(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url).pathname)
+  try { return new Set([...readPersonDisposition(db)].filter(([, row]) => row.status === 'active').map(([id]) => id)) }
+  finally { db.close() }
+})()
+const currentFacilityRights = async predecessor => {
+  const { correction } = await loadCiaFacilityProjection(new URL('../', import.meta.url).pathname,
+    async path => readFileSync(path))
+  return projectCiaFacilityHoldings(predecessor, correction)
+}
 
 // Bounded real-consumer replay. Existing map/scale snapshots are inputs, not public acceptance.
 async function currentRightsFixture(candidate = false) {
   const people = read('../lore/name-pools/gurps-cast.json').people
-  const seoul = read('../public/opening-territories.json')
+  const publishedSeoul = read('../public/opening-territories.json')
+  const district = read('../lore/regions/content/11170.json')
+  const predecessorControls = new Map(district.regions.map(row => [row.region_id, row.content.territory.holders.map(holder => holder.polity)]))
+  const seoul = { ...publishedSeoul, regions: publishedSeoul.regions.map(region => predecessorControls.has(region.id)
+    ? { ...region, polities: predecessorControls.get(region.id) } : region) }
   const history = await loadApprovedRightsHistory()
   const geometry = history.historical.outside
   const args = { people, seoul, geographicScale: buildAdminTerritorialScale({
-    geographyBytes: readFileSync(new URL('../lore/regions/seoul-electoral-titles.json', import.meta.url)),
+    geographyBytes: readSourceArchive('lore/regions/seoul-electoral-titles.json', '372734e77019d0e544ded29f90e1b35b8a8c3a3cfff305c295c2bd83a6b64eef'),
     territorialScale: read('../lore/offices/Offices-and-Ranks.json').data.territorialScale,
   }),
     affiliation: read('../lore/factions/Sixteen-States.json').data.currentAffiliation,
@@ -141,7 +162,7 @@ const catalogFixture = (nonowning = true) => {
   const args = {
     people, affiliation: { hegemons: [] }, control: { assignments: [] }, outside: { units: [], islands: [] },
     geographicScale: buildAdminTerritorialScale({
-      geographyBytes: readFileSync(new URL('../lore/regions/seoul-electoral-titles.json', import.meta.url)),
+      geographyBytes: readSourceArchive('lore/regions/seoul-electoral-titles.json', '372734e77019d0e544ded29f90e1b35b8a8c3a3cfff305c295c2bd83a6b64eef'),
       territorialScale: read('../lore/offices/Offices-and-Ranks.json').data.territorialScale,
     }),
     seoul: { regions: [{ id: 'region:1168051000', name: '신사동', polities: ['S01'] }], stations: [] },
@@ -312,17 +333,18 @@ test('only the three owner-approved opening dispositions distinguish personal la
     approvalRef: 'owner:call_woKhJUVDwBZTeAyXJI9RXhGc:s01_holding_' + personId.toLowerCase(),
   })))
   const dispositions = validateOpeningDispositions(ledger, people)
-  for (const person of people) {
+  const currentHoldings = await currentFacilityRights(projected)
+  for (const person of people.filter(person => activePersonIds.has(person.id))) {
     const detail = read('../public/person-details/' + person.url.split('/').at(-1) + '.json')
     assert.deepEqual(detail.openingDisposition, dispositions.get(person.id))
     assert.equal(Object.hasOwn(detail, 'territory'), false, person.id)
-    const rights = projectPersonHoldings(projected, person.id, context.issuedById, people)
+    const rights = projectPersonHoldings(currentHoldings, person.id, context.issuedById, people)
     assert.deepEqual(detail.confirmedHoldings, rights.confirmedHoldings)
-    assert.deepEqual(detail.superiorJurisdictions ?? [], rights.superiorJurisdictions ?? [])
+    assert.deepEqual(detail.superiorJurisdictions ?? [], publicJurisdictionReferences(rights.superiorJurisdictions ?? []))
     assert.deepEqual(detail.politicalIdentities ?? [], rights.politicalIdentities ?? [])
   }
   assert.equal(dispositions.has('K006'), false)
-  assert.deepEqual(read('../public/confirmed-person-holdings.json'), projected)
+  assert.deepEqual(read('../public/confirmed-person-holdings.json'), publishedRights(currentHoldings))
 })
 
 test('opening disposition boundary rejects invalid people, duplicate decisions, and contradictory approved holdings', () => {
@@ -383,7 +405,7 @@ test('Saetgang concourse holding preserves the exact facility and direct liege w
   assert.equal(detail.directLiege.personId, 'K222')
   assert.deepEqual(detail.confirmedHoldings, [holding])
   const { args, context } = await currentRightsFixture()
-  assert.deepEqual(read('../public/confirmed-person-holdings.json'), await projectCatalogCurrentHoldings(args, context))
+  assert.deepEqual(read('../public/confirmed-person-holdings.json'), publishedRights(await currentFacilityRights(await projectCatalogCurrentHoldings(args, context))))
 })
 
 test('confirmed Yangcheon holding joins exact admin geometry and stays separate from proposal territory', async () => {
@@ -393,14 +415,14 @@ test('confirmed Yangcheon holding joins exact admin geometry and stays separate 
   const source = read('../lore/name-pools/gurps-cast.json').people
   const holding = ledger.holdings.find(row => row.id === 'holding:yangcheon')
   const { args, context } = await currentRightsFixture()
-  const current = await projectCatalogCurrentHoldings(args, context)
-  assert.deepEqual(projected, current)
+  const current = await currentFacilityRights(await projectCatalogCurrentHoldings(args, context))
+  assert.deepEqual(projected, publishedRights(current))
   assert.equal(holding.holderPersonId, 'K002')
   assert.equal(holding.directLiegePersonId, 'K001')
   const expected = map.regions.filter(row => row.district === '양천구').map(row => ({ id: row.id, name: row.name }))
   assert.equal(expected.length, 18)
   assert.deepEqual(holding.adminRefs, expected)
-  for (const person of source) {
+  for (const person of source.filter(person => activePersonIds.has(person.id))) {
     const detail = read('../public/person-details/' + person.url.split('/').at(-1) + '.json')
     assert.equal(Object.hasOwn(detail, 'territory'), false, person.id)
     assert.deepEqual(detail.confirmedHoldings, current.holdings.filter(row => row.holderPersonId === person.id && row.kind !== 'superior-jurisdiction'))

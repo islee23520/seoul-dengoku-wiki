@@ -1,4 +1,4 @@
-import nameChanges from '../../scripts/person-sheet-name-changes.json'
+import { personSheetNameChanges as nameChanges } from '../generated/personSheetSources'
 import { HISTORICAL_RULES_VERSION, LEGACY_REVISIONS, ORIGINAL_PROFILE_ID, ORIGINAL_RULES_VERSION, PERSONAL_FIELDS, TRAIT_FIELDS } from '../data/original-trpg-options'
 import { draftProfileFailures, emptyDraftProfile, pendingFormulas } from '../../scripts/character-profile-draft.mjs'
 import type { DraftProfile } from '../../scripts/character-profile-draft.mjs'

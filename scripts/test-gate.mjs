@@ -5,13 +5,14 @@ import { fileURLToPath } from 'node:url'
 import { test } from 'vitest'
 import assert from 'node:assert/strict'
 import { spawnSync } from 'node:child_process'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 
 import { EXPECTED_REFERENCE_EXCLUSIONS, apiDeclaredFields, apiVisibleFields, coinedPhraseFailures, editorialMarkerFailures, findBannedTerms, generatedArray, htmlMetadata, pageFailures, personVisibleFields, privateLinkFailures, ravelenExclusionFailures, referenceExclusionFailures, retiredFormFailures, tableReviewRows, uiTooltipFields, visibleFieldFailures } from './gate.mjs'
 
 const scriptDir = fileURLToPath(new URL('.', import.meta.url))
 const repoRoot = join(scriptDir, '..')
-const ledger = JSON.parse(readFileSync(join(repoRoot, 'lore/editorial/Naming-Ledger.json'), 'utf8'))
-const canon = (path) => JSON.parse(readFileSync(join(repoRoot, path), 'utf8'))
+const ledger = readCanonicalDocument('lore/editorial/Naming-Ledger.json')
+const canon = path => readCanonicalDocument(path)
 const referenceDir = [
   process.env.SEOUL_KENSHI_ROOT && join(process.env.SEOUL_KENSHI_ROOT, 'RESEARCH', 'canon-reference'),
   join(scriptDir, '..', '..', 'RESEARCH', 'canon-reference'),

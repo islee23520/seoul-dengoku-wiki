@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
-import { readFile, readdir, stat } from 'node:fs/promises'
+import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { DatabaseSync } from 'node:sqlite'
 import test from 'node:test'
@@ -10,6 +10,9 @@ import {
   mapEngineDomains,
 } from './current-engine.mjs'
 import { publicCharacterProfile } from '../character-profile.mjs'
+import { openEditorialProfiles, INTERNAL_PROFILE_CAPABILITY, EDITORIAL_PROFILE_SOURCE_HASHES } from '../document-store/editorial-profile.mjs'
+import { openReadOnly } from './db.mjs'
+import { readAtlasIdentity } from './atlas-identity.mjs'
 
 const abilityIds = ['leadership', 'strategy', 'negotiation', 'management', 'insight', 'learning', 'prowess', 'endurance']
 const bodyPartIds = ['left-arm', 'right-arm', 'left-leg', 'right-leg', 'head', 'torso']
@@ -144,16 +147,25 @@ test('source and identity boundaries reject drift without exposing source values
 
 test('actual authored corpus maps exactly and inserts into STRICT SQLite with no privacy leak', async (t) => {
   const root = resolve(import.meta.dirname, '..', '..')
-  const registry = JSON.parse(await readFile(resolve(root, 'lore/name-pools/person-id-registry.json'), 'utf8'))
-  const engineFiles = await Promise.all(ENGINE_PRIVATE_SOURCE_PATHS.map(async (logical_path) => {
-    const bytes = await readFile(resolve(root, logical_path))
-    return {
-      logical_path,
-      document: JSON.parse(bytes.toString('utf8')),
-      sha256: createHash('sha256').update(bytes).digest('hex'),
-      byte_length: (await stat(resolve(root, logical_path))).size,
-    }
-  }))
+  const identity = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite'))
+  let registry
+  try { registry = readAtlasIdentity(identity).registry } finally { identity.close() }
+  const profileDatabase = process.env.WIKI_EDITORIAL_PROFILE_DB
+    ?? resolve(root, '.omo/private/seoul-migration/sqlite-authority-20261021/editorial-profiles.sqlite')
+  const profiles = openEditorialProfiles(profileDatabase, {
+    capability: INTERNAL_PROFILE_CAPABILITY, expectedSourceHashes: EDITORIAL_PROFILE_SOURCE_HASHES,
+  })
+  let engineFiles
+  try {
+    const documents = new Map(profiles.readBatches().map(({ logicalPath, batch }) => [logicalPath, batch]))
+    const archive = new DatabaseSync(profileDatabase, { readOnly: true })
+    try {
+      engineFiles = ENGINE_PRIVATE_SOURCE_PATHS.map(logical_path => {
+        const source = archive.prepare('SELECT sha256,length(raw_bytes) AS byte_length FROM editorial_archive WHERE logical_path=?').get(logical_path)
+        return { logical_path, document: documents.get(logical_path), sha256: source.sha256, byte_length: source.byte_length }
+      })
+    } finally { archive.close() }
+  } finally { profiles.close() }
   const output = mapEngineDomains({
     bundle: { engineFiles },
     identity: { people: registry.persons.map(({ id, name }) => ({ person_id: id, name })) },

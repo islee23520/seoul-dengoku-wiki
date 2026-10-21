@@ -3,9 +3,12 @@ import { createHash } from 'node:crypto'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { makeArtSourcePacket, resolveArtPerson } from '../src/pages/personArtSource'
+import { loadPortraitDocuments } from './portrait-source-documents.mjs'
+import { fileURLToPath } from 'node:url'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 
 test('art handoff follows the published person identity rather than the K number', async () => {
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-0145.json', import.meta.url), 'utf8'))
   const entry = registry.persons.find((person) => person.id === 'K144')
   const catalog = [{ id: detail.id, name: detail.name, detailRoute: detail.detailRoute }]
@@ -33,8 +36,8 @@ test('art packet rejects mismatched detail data', () => {
 })
 
 test('every published portrait token matches the current person identity and authored gender', async () => {
-  const catalog = JSON.parse(await readFile(new URL('../portrait-catalog.json', import.meta.url), 'utf8'))
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const { catalog } = loadPortraitDocuments(fileURLToPath(new URL('../', import.meta.url)))
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
   for (const entry of catalog.entries) {
     const token = JSON.parse(await readFile(new URL(`../public/portrait-tokens/${entry.personId}.json`, import.meta.url), 'utf8'))
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${entry.personId}.json`, import.meta.url), 'utf8'))

@@ -20,6 +20,7 @@ import { SOURCE_CLOSURE_TABLE_COLUMNS, mapSourceClosureDomains } from './source-
 import { EXCLUDED_SOURCE_PATHS, EXCLUDED_SOURCE_TABLE_COLUMNS, mapExcludedSourceDomains } from './excluded-sources.mjs';
 import { mapReferenceAnchorIssues } from './build.mjs';
 import { TEXT_CORPUS_TABLE_COLUMNS, mapTextCorpus, auditTextCorpus } from './text-corpus.mjs';
+import { reviewCurrentAuthority } from './current-authority.mjs';
 
 const IDENTITY_TABLES = {
   states: 'state', stateLabels: 'state_label', people: 'person', aliases: 'person_alias',
@@ -261,6 +262,13 @@ export async function verifyCastDatabase({ dbPath, sourceRoot, requireClean = fa
   try {
     db = openReadOnly(path);
     db.exec('BEGIN');
+    if (db.prepare("SELECT 1 FROM sqlite_schema WHERE type='table' AND name='document_authority'").get()) {
+      receipt = { ...reviewCurrentAuthority(db, { requireClean }), sha256: before };
+    } else {
+    if (path === resolve(fileURLToPath(new URL('../../data/canonical/wiki-cast.sqlite', import.meta.url)))
+      || (sourceRoot && path === resolve(sourceRoot, 'data/canonical/wiki-cast.sqlite'))) {
+      fail('E_AUTHORITY_MISSING', '저작 정본에 문서 권위 계약이 없습니다. 이전 JSON으로 검증하지 않습니다.');
+    }
     const integrity = runIntegrityChecks(db);
     const tableNames = checkSchema(db);
     const { metadata, expected } = checkMetadata(db, tableNames);
@@ -339,13 +347,14 @@ export async function verifyCastDatabase({ dbPath, sourceRoot, requireClean = fa
       counts, coverage, source_git_commit: metadata.source_git_commit, source_git_head: complete ? bundle.sourceRevision : null, source_set_sha256: metadata.source_set_sha256,
       sha256: before, included_domains: INCLUDED, excluded_domains: EXCLUDED,
     };
+    }
   } catch (error) {
     if (error.errcode === 11 || error.errcode === 26) fail('E_DB_INTEGRITY', error.message);
     throw error;
   } finally { if (db?.isOpen) db.close(); }
   await checkSidecars(path);
   if (sha256(await readFile(path)) !== before) fail('E_DB_CHANGED', '검증 도중 DB 파일이 변경되었습니다.');
-  if (requireClean && (receipt.source_quality !== 'clean' || receipt.official_check_status !== 'checked')) fail('E_SOURCE_QUALITY', `historical GURPS 공식 검사 ${receipt.official_check_status === 'not_checked' ? '미실행(현재 스키마 미지원)' : receipt.official_issue_count + '건'}; importer 독립 검사 ${receipt.importer_issue_count}건(참조 앵커 미확인 ${receipt.source_reference_unresolved_count}건 포함). 현재 도메인 owner approval을 판정하는 옵션이 아닙니다.`);
+  if (receipt.mode !== 'current-authority' && requireClean && (receipt.source_quality !== 'clean' || receipt.official_check_status !== 'checked')) fail('E_SOURCE_QUALITY', `historical GURPS 공식 검사 ${receipt.official_check_status === 'not_checked' ? '미실행(현재 스키마 미지원)' : receipt.official_issue_count + '건'}; importer 독립 검사 ${receipt.importer_issue_count}건(참조 앵커 미확인 ${receipt.source_reference_unresolved_count}건 포함). 현재 도메인 owner approval을 판정하는 옵션이 아닙니다.`);
   if (receiptPath !== undefined) {
     try { await writeFile(resolve(receiptPath), `${JSON.stringify(receipt, null, 2)}\n`, { flag: 'wx', encoding: 'utf8' }); }
     catch (error) { if (error.code === 'EEXIST') fail('E_RECEIPT_EXISTS', receiptPath); throw error; }
@@ -373,7 +382,7 @@ function parseArgs(args) {
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   try {
     if (process.argv.length === 3 && process.argv[2] === '--help') {
-      console.log('사용법: node verify.mjs --db <파일> [--source-root <WIKI 절대경로>] [--receipt <새 JSON 경로>] [--require-clean] [--check-raw]\n원본 경로를 생략하면 오프라인 점검입니다. --require-clean은 historical GURPS 이슈 gate이며 현재 도메인 owner approval 판정이 아닙니다.');
+      console.log('사용법: node verify.mjs --db <파일> [--source-root <WIKI 절대경로>] [--receipt <새 JSON 경로>] [--require-clean] [--check-raw]\n현재 정본은 읽기 전용 typed head와 저장된 승인 일관성을 검사하며 JSON을 재수입하지 않습니다. --check-raw는 호환 옵션이며 현재 정본의 archive replay를 수행하지 않습니다. --require-clean은 원래 import 품질 gate이며 현재 owner approval 판정이 아닙니다.');
     } else console.log(JSON.stringify(await verifyCastDatabase(parseArgs(process.argv.slice(2))), null, 2));
   } catch (error) {
     console.error(JSON.stringify({ status: 'FAIL', code: error.code ?? 'E_VERIFY', message: error.message }));

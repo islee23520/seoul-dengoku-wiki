@@ -1,9 +1,10 @@
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { readCanonicalDocument } from "../../scripts/cast-sqlite/canonical-document.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
-const source = (file) => JSON.parse(readFileSync(path.join(HERE, "..", file), "utf8"));
+const source = file => readCanonicalDocument(`lore/${file}`);
 const ko = (cell) => cell.ko;
 
 export function resolveRelations(relationSource, people) {
@@ -67,7 +68,7 @@ export function resolveVassals(stateSource, states) {
 }
 
 export function loadDataset() {
-  const config = JSON.parse(readFileSync(path.join(HERE, "relations.json"), "utf8"));
+  const config = readCanonicalDocument('lore/relations/relations.json');
   const stateSource = source("factions/Sixteen-States.json");
   const relationSource = source("characters/Cast-Relations.json");
   const castIndex = source("characters/Cast-Index.json");
@@ -88,7 +89,7 @@ export function loadDataset() {
   // same anchor, even if an approved revision no longer opens with the date.
   const archivedEvents = (() => {
     try {
-      const eventIds = JSON.parse(readFileSync(path.join(HERE, "..", "editorial", "seoul-narrative-census-events.json"), "utf8")).eventIds ?? [];
+      const eventIds = readCanonicalDocument('lore/editorial/seoul-narrative-census-events.json').eventIds ?? [];
       if (!Array.isArray(eventIds)) throw new TypeError("eventIds must be an array");
       return eventIds;
     } catch (error) {

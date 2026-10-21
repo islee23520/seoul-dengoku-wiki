@@ -4,9 +4,12 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
 import test from 'node:test';
+import fs from 'node:fs';
+import { syncBuiltinESMExports } from 'node:module';
 import { flattenJson, sha256 } from './sources.mjs';
 import { renderLoreMarkdown } from '../lore-json-render.mjs';
 import { mapTextCorpusDocuments, TEXT_CORPUS_DOCUMENTS_TABLE_COLUMNS } from './text-corpus-documents.mjs';
+import { readCanonicalAuthoringSchemas } from './authoring-schema-documents.mjs';
 
 const leaf = (ko, en = ko) => ({ ko, en });
 function document(slug = 'Page') {
@@ -29,6 +32,21 @@ function document(slug = 'Page') {
 const file = (source_id, d = document(), corpus_kind = 'current') => ({ source_id, document: d, corpus_kind, content_policy: 'local-corpus' });
 const map = (...files) => mapTextCorpusDocuments({ files });
 const link = (slug, anchor, domain = 'test') => ({ text: 'link', link: { domain, slug, ...(anchor ? { anchor } : {}) } });
+
+test('caller-supplied schema definitions map and reject invalid envelopes without reading a schema file', () => {
+  const definitions = readCanonicalAuthoringSchemas()['lore/authoring.shared.schema.json'].$defs;
+  const input = file(1);
+  const expected = map(input);
+  const read = fs.readFileSync, parse = JSON.parse;
+  try {
+    fs.readFileSync = JSON.parse = () => { throw new Error('schema file fallback forbidden'); };
+    syncBuiltinESMExports();
+    assert.deepEqual(mapTextCorpusDocuments({ files: [input], definitions }), expected);
+    const invalid = structuredClone(input);
+    invalid.document.content[0].depth = 99;
+    assert.throws(() => mapTextCorpusDocuments({ files: [invalid], definitions }), { code: 'E_TEXT_DOCUMENT_SHAPE' });
+  } finally { fs.readFileSync = read; JSON.parse = parse; syncBuiltinESMExports(); }
+});
 
 test('all seven kinds retain locale text, runs, list start, ragged rows and empty cells without mutation', () => {
   const input = file(1);

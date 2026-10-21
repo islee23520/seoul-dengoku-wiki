@@ -1,3 +1,5 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+import { REGION_CONTENT_SOURCE_HASHES } from './cast-sqlite/region-content-documents.mjs'
 import assert from 'node:assert/strict'
 import { readFile, readdir } from 'node:fs/promises'
 import { test } from 'vitest'
@@ -10,9 +12,8 @@ const { resolveLegacyRegionRoute, resolveRegionSelection, worldRegionMapRoute } 
 const map = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
 
 test('every authored region ID selects its map record', async () => {
-  const content = new URL('../lore/regions/content/', import.meta.url)
-  const ids = (await Promise.all((await readdir(content)).filter((name) => /^\d{5}\.json$/u.test(name)).map(async (name) => {
-    const district = JSON.parse(await readFile(new URL(name, content), 'utf8'))
+  const ids = (await Promise.all(Object.keys(REGION_CONTENT_SOURCE_HASHES).map(async (path) => {
+    const district = readCanonicalDocument(path)
     return district.regions.map((region) => region.region_id)
   }))).flat()
   assert.equal(ids.length, 427)
@@ -59,7 +60,7 @@ test('legacy region URL forms lead to the map with the requested dong selected',
   }
   visit(tree)
   assert.ok(queryEffect, 'the map query selection effect exists')
-  const staging = JSON.parse(await readFile(new URL('../lore/regions/seoul-electoral-titles.json', import.meta.url)))
+  const staging = readCanonicalDocument('lore/regions/seoul-electoral-titles.json')
   const boundaries = JSON.parse(await readFile(new URL('../data/geography/boundaries/seoul-sgis-20250630.geojson', import.meta.url)))
   const geography = projectGeographicTitles(staging, boundaries, (x, y) => [x, y])
   const callback = new Function('data', 'requestedRegion', 'resolveGeographicSelection', 'setTitleId', 'setRank', 'setDetailOpen', `return (${queryEffect.getText(tree)})()`)

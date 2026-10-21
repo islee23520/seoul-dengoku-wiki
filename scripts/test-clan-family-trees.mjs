@@ -1,8 +1,9 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFile, readdir } from 'node:fs/promises'
 import { test } from 'vitest'
 
-const readJson = async (path) => JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'))
+const readJson = async (path) => path.startsWith('lore/') ? readCanonicalDocument(path) : JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'))
 const readGenerated = async (name) => {
   const raw = await readFile(new URL(`../src/generated/${name}.ts`, import.meta.url), 'utf8')
   const body = raw.slice(raw.indexOf(`export const ${name}`))

@@ -8,16 +8,14 @@ clone:
   git:
     image: woodpeckerci/plugin-git:2
     settings:
-      lfs: false
+      lfs: true
 
 steps:
-  - name: lore-json
-    image: node:22-bookworm-slim
+  - name: sqlite-authority
+    image: node:26-bookworm-slim
     commands:
+      - node deploy/check-lfs-inputs.mjs
       - apt-get update
       - apt-get install -y --no-install-recommends python3 python3-pip ca-certificates git
-      - python3 -m pip install --break-system-packages jsonschema
       - npm ci --ignore-scripts
-      - git fetch --no-tags --depth=1 origin +refs/heads/main:refs/remotes/origin/main
-      - npm run test:lore-json
-      - node scripts/lore-json-validate.mjs
+      - npm run cast:verify -- --db data/canonical/wiki-cast.sqlite

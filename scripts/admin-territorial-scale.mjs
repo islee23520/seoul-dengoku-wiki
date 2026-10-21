@@ -1,5 +1,8 @@
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
+import { readDocument } from './cast-sqlite/document-read.mjs'
+import { orderDocumentKeys } from './cast-sqlite/document-key-order.mjs'
+import { readGeographyStore } from './cast-sqlite/geography-store.mjs'
 
 const sha256 = value => createHash('sha256').update(value).digest('hex')
 const ranks = ['empire', 'kingdom', 'duchy', 'county', 'barony']
@@ -17,6 +20,38 @@ const sameSet = (actual, expected, code) => {
 
 export function buildAdminTerritorialScale({ geographyBytes, territorialScale } = {}) {
   assert.ok(Buffer.isBuffer(geographyBytes) || typeof geographyBytes === 'string', 'E_GEOGRAPHY_BYTES')
+  return buildScale({ geography: JSON.parse(geographyBytes.toString()),
+    geographySha256: sha256(geographyBytes), territorialScale })
+}
+
+// The caller owns the connection. Source paths identify metadata, never files.
+export function buildAdminTerritorialScaleFromDb(db) {
+  const sources = db.prepare('SELECT source_id,sha256 FROM source_file WHERE logical_path=?')
+    .all('lore/regions/seoul-electoral-titles.json')
+  assert.equal(sources.length, 1, 'E_GEOGRAPHY_SOURCE')
+  const identities = db.prepare(`SELECT s.source_id,s.sha256,r.parent_revision,r.algorithm
+    FROM source_file s JOIN text_document d USING(source_id)
+    JOIN document_head h USING(source_id)
+    JOIN document_revision r ON r.source_id=h.source_id AND r.revision_id=h.revision_id
+    JOIN document_revision_seal z ON z.revision_id=r.revision_id
+    WHERE s.logical_path=? AND d.document_id=? AND d.domain='offices' AND d.corpus_kind='current'`)
+    .all('lore/offices/Offices-and-Ranks.json', 'DOC:Offices-and-Ranks')
+  assert.equal(identities.length, 1, 'E_SCALE_DOCUMENT_AUTHORITY')
+  const identity = identities[0]
+  assert.equal(identity.sha256, '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e', 'E_SCALE_DOCUMENT_SOURCE')
+  assert.equal(identity.parent_revision, null, 'E_SCALE_DOCUMENT_REVISION')
+  assert.equal(identity.algorithm, 'typed-envelope-v1', 'E_SCALE_DOCUMENT_REVISION')
+  // Public reads require current-reviewed exact admission at the sealed head and
+  // verify its full typed semantic digest, including unsupported-data omissions.
+  const document = readDocument(db, { documentId: 'DOC:Offices-and-Ranks',
+    domain: 'offices', corpusKind: 'current', visibility: 'public' })
+  assert.ok(document, 'E_SCALE_DOCUMENT_REVIEW')
+  const ordered = orderDocumentKeys(db, identity.source_id, document)
+  return buildScale({ geography: readGeographyStore(db), geographySha256: sources[0].sha256,
+    territorialScale: ordered.data.territorialScale })
+}
+
+function buildScale({ geography, geographySha256, territorialScale }) {
   exactKeys(territorialScale, ['schema', 'scope', 'geographicSource', 'geographicEmpireId',
     'rankOrder', 'levels', 'map', 'slotEditions', 'geographicParent', 'politicalAxis',
     'scaleImpliesPersonalOwnership', 'scaleImpliesTitleRank', 'scaleImpliesFacilityAccess',
@@ -43,9 +78,7 @@ export function buildAdminTerritorialScale({ geographyBytes, territorialScale } 
   assert.equal(territorialScale.geographicSource.path, 'lore/regions/seoul-electoral-titles.json', 'E_GEOGRAPHY_PATH')
   assert.equal(territorialScale.geographicSource.schema, 'seoul-geography-staging.v1', 'E_GEOGRAPHY_SCHEMA')
   assert.equal(territorialScale.geographicSource.sha256, '372734e77019d0e544ded29f90e1b35b8a8c3a3cfff305c295c2bd83a6b64eef', 'E_GEOGRAPHY_APPROVAL')
-  const geographySha256 = sha256(geographyBytes)
   assert.equal(geographySha256, territorialScale.geographicSource.sha256, 'E_GEOGRAPHY_HASH')
-  const geography = JSON.parse(geographyBytes.toString())
   assert.equal(geography.schema, territorialScale.geographicSource.schema, 'E_GEOGRAPHY_SCHEMA')
   assert.equal(geography.kingdomStatus, 'approved', 'E_KINGDOM_STATUS')
   assert.equal(territorialScale.levels.kingdom.partitionSha256, '0b2327e3f5e23a4dff539272a747357f4909970ec4fa9234a2386b4faec1ddf5', 'E_KINGDOM_APPROVAL')

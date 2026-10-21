@@ -11,6 +11,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import subprocess
 import sys
 from dataclasses import dataclass
 from collections import Counter
@@ -119,6 +120,18 @@ def checked_bytes(path: Path, digest: str) -> bytes:
     if hashlib.sha256(data).hexdigest() != digest:
         raise RailEvidenceError("E_RAIL_SOURCE_HASH:" + str(path))
     return data
+
+
+def sqlite_document(logical_path: str, digest: str | None = None) -> dict:
+    """Read typed current inputs or exact pinned historical evidence in memory."""
+    module = "source-archive" if digest is not None else "canonical-document"
+    reader = "readSourceArchive" if digest is not None else "readCanonicalDocument"
+    result = "readSourceArchive(process.argv[1], process.argv[2])" if digest is not None else "JSON.stringify(readCanonicalDocument(process.argv[1]))"
+    return json.loads(subprocess.check_output([
+        "node", "--input-type=module", "-e",
+        f"import {{ {reader} }} from './scripts/cast-sqlite/{module}.mjs'; process.stdout.write({result});",
+        logical_path, *([digest] if digest is not None else []),
+    ], cwd=ROOT))
 
 
 def seoul_boundary() -> Polygon | MultiPolygon:
@@ -503,8 +516,8 @@ def classify_pair(pair: AdjacentPair, line_name: str, stops: StopCandidates,
 
 def private_witness_inventory() -> dict:
     """Classify every mapped official adjacent record without changing published edges."""
-    source = json.loads(checked_bytes(ROOT / "lore/places/regular-line-adjacency.json", OFFICIAL_SHA))
-    original = json.loads(checked_bytes(ROOT / "snapshots/build-inputs/SeoulWorldGraph.json", ORIGINAL_SHA))
+    source = sqlite_document("lore/places/regular-line-adjacency.json")
+    original = sqlite_document("snapshots/build-inputs/SeoulWorldGraph.json", ORIGINAL_SHA)
     aliases = original["aliases"]
     original_ids = {station["id"] for station in original["stations"]}
     requested: dict[str, set[str]] = {}
@@ -598,11 +611,11 @@ class WitnessSources:
 
 def load_witness_sources() -> WitnessSources:
     """Read receipt bytes and replay their observations against the pinned actual PBF."""
-    directory = ROOT / ".omo/private/seoul-migration/physical-rail-multiway-witness-20261015"
-    inventory = json.loads(checked_bytes(directory / "inventory.json", INVENTORY_SHA))
-    audit = json.loads(checked_bytes(directory / "independent.json", AUDIT_SHA))
-    official = json.loads(checked_bytes(ROOT / "lore/places/regular-line-adjacency.json", OFFICIAL_SHA))
-    original = json.loads(checked_bytes(ROOT / "snapshots/build-inputs/SeoulWorldGraph.json", ORIGINAL_SHA))
+    directory = ".omo/private/seoul-migration/physical-rail-multiway-witness-20261015"
+    inventory = sqlite_document(directory + "/inventory.json", INVENTORY_SHA)
+    audit = sqlite_document(directory + "/independent.json", AUDIT_SHA)
+    official = sqlite_document("lore/places/regular-line-adjacency.json")
+    original = sqlite_document("snapshots/build-inputs/SeoulWorldGraph.json", ORIGINAL_SHA)
     expected = {"boundary": BOUNDARY_SHA, "osm": OSM_SHA, "official": OFFICIAL_SHA, "original": ORIGINAL_SHA}
     if (audit["sourceSha256"] != expected or audit["verdict"] != "bounded-PASS"
         or any(inventory[key + "Sha256"] != value for key, value in expected.items())):
@@ -748,7 +761,7 @@ if __name__ == "__main__":
         inventory["schema"] = "private-physical-rail-multiway-witness-candidates.v1"
         inventory["statusCounts"] = {status: sum(row["status"] == status for row in inventory["records"])
                                      for status in sorted({row["status"] for row in inventory["records"]})}
-        original = json.loads(checked_bytes(ROOT / "snapshots/build-inputs/SeoulWorldGraph.json", ORIGINAL_SHA))
+        original = sqlite_document("snapshots/build-inputs/SeoulWorldGraph.json", ORIGINAL_SHA)
         original_pairs = {frozenset((edge["a"], edge["b"])) for edge in original["edges"]}
         inventory["originalAdjacencyMatches"] = sum(frozenset(row["stationIds"]) in original_pairs
                                                     for row in inventory["records"])

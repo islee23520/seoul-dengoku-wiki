@@ -1,3 +1,5 @@
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
@@ -7,10 +9,10 @@ import { outsideStationIds, STATION_BOUNDARY_PATH } from './station-catalog-geog
 const station = (code) => ({ code, name: code })
 
 test('generated Seoul segments equal the complete mapped official adjacent pairs', async () => {
-  const source = JSON.parse(await readFile(new URL('../lore/places/regular-line-adjacency.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/places/regular-line-adjacency.json')
   const map = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const catalog = JSON.parse(await readFile(new URL('../lore/places/Seoul-Station-Catalog.json', import.meta.url), 'utf8'))
-  const original = JSON.parse(await readFile(new URL('../snapshots/build-inputs/SeoulWorldGraph.json', import.meta.url), 'utf8'))
+  const catalog = readCanonicalDocument('lore/places/Seoul-Station-Catalog.json')
+  const original = JSON.parse(readSourceArchive('snapshots/build-inputs/SeoulWorldGraph.json', '46985afccc2d3f2b5e4e3152254d30bc023d0688d63745a951a9be0f6ebf097d'))
   const approvedNames = new Set(catalog.content.filter(block => block.kind === 'table').flatMap(block => block.rows.map(row => row[0].ko)))
   const canonicalId = new Map(catalog.data.station_aliases.flatMap(entry => [entry.id, ...entry.aliases].map(id => [id, entry.id])))
   const approvedIds = new Set(original.stations.filter(station => approvedNames.has(station.nameKo)).map(station => canonicalId.get(station.id) ?? station.id))
@@ -103,9 +105,9 @@ test('exact station codes keep namesakes separate and unify confirmed interchang
 })
 
 test('outside exclusions authenticate both archive and Seoul boundary rather than missing allowed membership', async () => {
-  const archiveBytes = await readFile(new URL('../snapshots/build-inputs/SeoulWorldGraph.json', import.meta.url))
+  const archiveBytes = readSourceArchive('snapshots/build-inputs/SeoulWorldGraph.json', '46985afccc2d3f2b5e4e3152254d30bc023d0688d63745a951a9be0f6ebf097d')
   const boundaryBytes = await readFile(new URL('../' + STATION_BOUNDARY_PATH, import.meta.url))
-  const catalog = JSON.parse(await readFile(new URL('../lore/places/Seoul-Station-Catalog.json', import.meta.url), 'utf8'))
+  const catalog = readCanonicalDocument('lore/places/Seoul-Station-Catalog.json')
   const aliases = catalog.data.station_aliases
   assert.deepEqual(outsideStationIds(archiveBytes, boundaryBytes, aliases).sort(), ['광명사거리', '석수'])
   assert.throws(() => outsideStationIds(Buffer.concat([archiveBytes, Buffer.from(' ')]), boundaryBytes, aliases), /E_STATION_ARCHIVE_HASH/)

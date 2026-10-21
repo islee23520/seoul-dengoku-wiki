@@ -6,6 +6,17 @@ import { createRoot } from 'react-dom/client'
 import { MemoryRouter } from 'react-router-dom'
 import { test, vi } from 'vitest'
 import GeographyPage from '../src/pages/GeographyPage.tsx'
+import { execFile } from 'node:child_process'
+import { promisify } from 'node:util'
+import { pathToFileURL } from 'node:url'
+import { resolve } from 'node:path'
+
+// This excluded reference surface is not a published asset. Exercise its actual
+// producer in memory rather than requiring a forbidden public JSON file.
+const producerUrl = pathToFileURL(resolve('scripts/seoul-observed-geography.mjs')).href
+const { stdout: observedBytes } = await promisify(execFile)(process.execPath, ['--input-type=module', '-e',
+  `import { buildObservedGeography, readObservedSources } from ${JSON.stringify(producerUrl)}; console.log(JSON.stringify(buildObservedGeography(await readObservedSources())));`], { maxBuffer: 32 * 1024 * 1024 })
+const observedFixture = JSON.parse(observedBytes)
 
 function nextMutation(host, predicate) {
   return new Promise((resolve, reject) => {
@@ -27,7 +38,7 @@ async function mount() {
 }
 
 test('real React county click, Enter, Space and select share selection; slots never become map targets', async () => {
-  const data = JSON.parse(await readFile('public/seoul-observed-geography.json', 'utf8'))
+  const data = structuredClone(observedFixture)
   let deliver
   const fetch = vi.fn(() => new Promise(resolve => { deliver = resolve }))
   vi.stubGlobal('fetch', fetch)
@@ -67,7 +78,7 @@ test('real React county click, Enter, Space and select share selection; slots ne
 })
 
 test.each(['http', 'network', 'schema', 'edition', 'shape'])('load failure %s is visible and retry renders actual geography', async failure => {
-  const data = JSON.parse(await readFile('public/seoul-observed-geography.json', 'utf8'))
+  const data = structuredClone(observedFixture)
   const fetch = vi.fn()
   if (failure === 'network') fetch.mockRejectedValueOnce(new Error('offline'))
   else fetch.mockResolvedValueOnce({ ok: failure !== 'http', status: 503, json: async () => failure === 'schema' ? { ...data, schema: 'unexpected' } : failure === 'edition' ? { ...data, sourceEdition: 'sgis-20260101' } : failure === 'shape' ? { ...data, counties: null } : data })
@@ -87,7 +98,7 @@ test.each(['http', 'network', 'schema', 'edition', 'shape'])('load failure %s is
 })
 
 test('split slots preserve fragment identity only in detail and unmount aborts the request', async () => {
-  const data = JSON.parse(await readFile('public/seoul-observed-geography.json', 'utf8'))
+  const data = structuredClone(observedFixture)
   const county = data.counties[0]
   data.counties = [{ ...county, slots: [{ ...county.slots[0], fragmentId: 'fragment-fixture' }] }]
   const fetch = vi.fn(async () => ({ ok: true, json: async () => data }))

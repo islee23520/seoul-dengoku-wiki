@@ -1,13 +1,50 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
-import { projectGeographicTitles, titlesAtRank, resolveGeographicTitle, resolveGeographicSelection, geographicTitleColor, projectPhysicalRail } from '../src/components/geographicTitleMap.mjs'
+import { projectGeographicTitles, titlesAtRank, resolveGeographicTitle, resolveGeographicSelection, geographicTitleColor, projectPhysicalRail, publicGeographicId, publicGeographicSlot, validateGeographicMap } from '../src/components/geographicTitleMap.mjs'
 import { selectAtCoordinates } from '../src/components/mapCoordinateSelection.ts'
 import { createMapBridge } from '../src/components/mapBridge.ts'
 
-const staging = JSON.parse(await readFile(new URL('../lore/regions/seoul-electoral-titles.json', import.meta.url)))
+const staging = readCanonicalDocument('lore/regions/seoul-electoral-titles.json')
 const boundaries = JSON.parse(await readFile(new URL('../data/geography/boundaries/seoul-sgis-20250630.geojson', import.meta.url)))
 const geography = projectGeographicTitles(staging, boundaries, (x, y) => [x, y])
+
+test('public identifiers preserve every geometry and slot without publishing partition references', () => {
+  validateGeographicMap(geography)
+  assert.doesNotMatch(JSON.stringify(geography), /constituency|electoral|election|선거구/iu)
+  assert.equal(new Set(geography.titles.map(title => title.id)).size, 80)
+  const path = geometry => (geometry.type === 'Polygon' ? [geometry.coordinates] : geometry.coordinates)
+    .map(polygon => polygon.map(ring => ring.map(([x, y], index) => `${index ? 'L' : 'M'}${x},${y}`).join(' ') + ' Z').join(' ')).join(' ')
+  for (const source of staging.titles) {
+    const id = source.rank === 'county' ? publicGeographicId(source.titleId, 'county') : source.titleId
+    const title = resolveGeographicTitle(geography, id)
+    assert.ok(title)
+    for (const [publicKey, sourceKey] of [['datedSlots', 'countySlots'], ['currentSlots', 'currentCorrespondenceSlots']]) {
+      const slots = staging[sourceKey].find(row => row.countyTitleId === source.titleId)?.slots ?? []
+      assert.equal(title[publicKey].length, slots.length)
+      slots.forEach((slot, index) => {
+        const output = title[publicKey][index]
+        assert.deepEqual([output.name, output.status, output.holderPersonId, output.geometryVerified], [slot.name, slot.status, slot.holderPersonId, slot.geometryVerified])
+        if (slot.dongId.startsWith('region:')) assert.equal(output.dongId, slot.dongId)
+        else assert.match(output.dongId, /^geography:historical-slot:[0-9a-f]{16}$/u)
+      })
+    }
+    if (source.rank === 'duchy') {
+      assert.equal(title.path, boundaries.features.filter(feature => feature.properties.kind === 'dong' && source.jurisdictionRefs.includes(feature.properties.guId)).map(feature => path(feature.geometry)).join(' '))
+    } else {
+      const countyIds = source.rank === 'county' ? [source.titleId] : source.rank === 'kingdom' ? source.countyTitleIds : staging.titles.filter(row => row.rank === 'county').map(row => row.titleId)
+      assert.deepEqual(title.countyIds, countyIds.map(id => publicGeographicId(id, 'county')))
+      assert.equal(title.path, countyIds.map(id => path(boundaries.features.find(feature => feature.id === id).geometry)).join(' '))
+    }
+  }
+  const fragment = publicGeographicSlot({ ...staging.countySlots[0].slots[0], fragmentId: 'electoral-fragment:private' })
+  assert.match(fragment.fragmentId, /^geography:fragment:[0-9a-f]{16}$/u)
+  assert.throws(() => publicGeographicSlot({ ...staging.countySlots[0].slots[0], dongId: 'region:4113164000' }), /E_MAP_SCOPE/u)
+  const forged = structuredClone(geography)
+  forged.titles.find(title => title.rank === 'county').name = '선거구'
+  assert.throws(() => validateGeographicMap(forged), /E_MAP_SCOPE/u)
+})
 
 test('physical rail projects independent authenticated pieces without inventing line or station bindings', () => {
   const subset = {

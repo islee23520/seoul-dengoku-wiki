@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
-import { DocumentContent, type WikiBlock } from '@seoul-dengoku/document-renderer'
+import { DocumentContent } from '@seoul-dengoku/document-renderer'
 import { Breadcrumbs, PageHeader, StateNotice, TableOfContents, TableViewport } from '@seoul-dengoku/shared-web-ui'
 import { wikiCatalog, wikiEnglishCatalog, type WikiDomain } from '../generated/wikiCatalog'
 import { resolveLegacyRegionRoute, resolveLegacyWorldRoute, resolveWikiContentHref } from '../wikiRouting'
@@ -9,6 +9,7 @@ import { wikiAnchorHref } from '../sharedCategories'
 import FeedbackComposer from '../components/FeedbackComposer'
 import { FeedbackSurface } from '../components/FeedbackSurface'
 import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
+import { createDocumentController, type DocumentState } from '../documentApi'
 
 const OpeningTerritoryMap = lazy(() => import('../components/OpeningTerritoryMap'))
 const TimelineOverview = lazy(() => import('../components/TimelineOverview'))
@@ -17,23 +18,18 @@ const loadMermaid = () => import('mermaid')
 
 type WikiLocale = 'ko' | 'en'
 
-type GeneratedArticle = { blocks: WikiBlock[] }
-
-const worldModules = {
-  ko: import.meta.glob<GeneratedArticle>('../generated/world/*.json', { import: 'default' }),
-  en: import.meta.glob<GeneratedArticle>('../generated/world-en/*.json', { import: 'default' }),
-}
-const modulePrefix = { ko: '../generated/world/', en: '../generated/world-en/' }
 const catalogs = { ko: wikiCatalog, en: wikiEnglishCatalog }
 
 const labels = {
   ko: {
     breadcrumbs: '현재 위치', home: '대문', world: '세계관', site: '서울:전국 공식 위키', badge: '세계관 문서',
     loading: '문서를 불러오고 있습니다.', table: '본문 표', contents: '문서 목차', otherLocale: 'English',
+    error: '문서를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.',
   },
   en: {
     breadcrumbs: 'You are here', home: 'Main page', world: 'World', site: 'Seoul Subway States Official Wiki', badge: 'World document',
     loading: 'Loading the document.', table: 'Article table', contents: 'Contents', otherLocale: '한국어',
+    error: 'The document could not be loaded. Please try again later.',
   },
 } as const
 
@@ -52,36 +48,21 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
   const wikiDocument = catalogs[locale].find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug)
   const koreanDocument = wikiCatalog.find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug)
   const alternate = (locale === 'ko' ? wikiEnglishCatalog : wikiCatalog).find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug)
-  const [blocks, setBlocks] = useState<WikiBlock[] | null>(null)
+  const [documentState, setDocumentState] = useState<DocumentState | null>(null)
+  const documentController = useRef<ReturnType<typeof createDocumentController> | null>(null)
+  if (!documentController.current) documentController.current = createDocumentController(setDocumentState)
+  // A new route must never render the previous route's body, even before its effect runs.
+  const current = documentState?.slug === normalizedSlug && documentState.locale === locale ? documentState : null
+  const apiDocument = current?.status === 'ready' ? current.document : null
+  const blocks = apiDocument?.blocks ?? null
   const feedbackState = useFeedbackDocument(pathname, locale)
   const feedback = feedbackState.status === 'ready' ? feedbackState.document : null
   const proseRef = useRef<HTMLDivElement>(null)
   const [feedbackBound, setFeedbackBound] = useState(false)
-  // Keyed by slug: a legacy slug that fails to load must not fail its redirect target on the next render.
-  const [failedSlug, setFailedSlug] = useState<string | null>(null)
-  const loadFailed = failedSlug === normalizedSlug
-
   useEffect(() => {
-    let active = true
-    const load = worldModules[locale][`${modulePrefix[locale]}${normalizedSlug}.json`]
-    setBlocks(null)
-    setFailedSlug(null)
-    if (!load) {
-      setFailedSlug(normalizedSlug)
-      return () => { active = false }
-    }
-    void load().then((content) => {
-      if (active) setBlocks(Array.isArray(content.blocks) ? content.blocks : null)
-      if (active && !Array.isArray(content.blocks)) setFailedSlug(normalizedSlug)
-    }).catch((error: unknown) => {
-      if (error instanceof Error) {
-        if (active) setFailedSlug(normalizedSlug)
-        console.error(error.message)
-        return
-      }
-      throw error
-    })
-    return () => { active = false }
+    const controller = documentController.current!
+    void controller.load(normalizedSlug, locale)
+    return () => controller.dispose()
   }, [domain, locale, normalizedSlug])
 
   useEffect(() => {
@@ -107,10 +88,10 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
   }, [locale])
 
   useEffect(() => {
-    if (!wikiDocument) return
-    window.document.title = `${wikiDocument.title} | ${text.site}`
+    if (!apiDocument) return
+    window.document.title = `${apiDocument.title} | ${text.site}`
     return () => { document.title = '서울:전국 — 공식 위키' }
-  }, [wikiDocument, text.site])
+  }, [apiDocument, text.site])
 
   const content = useMemo(() => blocks ? wikiArticleContent(blocks) : [], [blocks])
   const sectionLinks = useMemo(() => content.filter(({ node }) => node.type === 'heading' && [2, 3].includes(node.depth ?? 0))
@@ -120,24 +101,25 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
   if (legacyRoute) return <Navigate to={`${legacyRoute}${hash}`} replace />
   if (legacyRegionRoute) return <Navigate to={legacyRegionRoute} replace />
   // A Markdown-only corpus has no English page; its Korean page is the published one.
-  if (locale !== 'ko' && !wikiDocument && koreanDocument) return <Navigate to={`${koreanDocument.route}${hash}`} replace />
-  if (!wikiDocument || loadFailed) return <Navigate to={`/${domain}/`} replace />
-  if (!blocks) {
+  if (current?.status === 'not-found' && locale !== 'ko' && !wikiDocument && koreanDocument) return <Navigate to={`${koreanDocument.route}${hash}`} replace />
+  if (current?.status === 'not-found') return <Navigate to={`/${domain}/`} replace />
+  if (current?.status === 'error') return <StateNotice state="error" message={text.error} />
+  if (!apiDocument) {
     return <StateNotice state="loading" message={text.loading} />
   }
 
   return (
-    <article lang={locale} id={wikiHeadingId(wikiDocument.title)}>
+    <article lang={locale} id={wikiHeadingId(apiDocument.title)}>
       <Breadcrumbs
         label={text.breadcrumbs}
         resolveHref={wikiAnchorHref}
         items={[
           { title: text.home, href: '/' },
           { title: text.world, href: '/world/' },
-          { title: wikiDocument.title },
+          { title: apiDocument.title },
         ]}
       />
-      <PageHeader kicker={`${text.site} · ${domain}`} title={wikiDocument.title} badge={text.badge} />
+      <PageHeader kicker={`${text.site} · ${domain}`} title={apiDocument.title} badge={text.badge} />
       {alternate && <p className="wiki-locale-switch"><Link to={alternate.route} hrefLang={locale === 'ko' ? 'en' : 'ko'}>{text.otherLocale}</Link></p>}
 
       {domain === 'world' && normalizedSlug === 'World-and-Subway-Layers' && <Suspense fallback={<StateNotice state="loading" message="2126 시점 영토 지도를 준비하고 있습니다." />}><OpeningTerritoryMap /></Suspense>}

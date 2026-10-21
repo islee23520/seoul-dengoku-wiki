@@ -1,14 +1,66 @@
+import { afterAll } from 'vitest'
 import { test } from 'vitest'
 import assert from 'node:assert/strict'
-import { readFile } from 'node:fs/promises'
+import { readFile as readDiskFile } from 'node:fs/promises'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { authenticateMainDocAdmission, MAIN_DOC_ROWS, MAIN_DOC_SOURCES, MAIN_DOC_REGISTRATION, mainDocPreservationReceipt, validateMainDocDocuments, validateMainDocExtraction } from './main-doc-admission-successor.mjs'
 import { extractCensusSources, extractCurrentCategories } from './seoul-census.mjs'
 import { coverageKey } from './seoul-scope.mjs'
+import { execFile } from 'node:child_process'
+import { promisify } from 'node:util'
+import childProcess from 'node:child_process'
+import { syncBuiltinESMExports } from 'node:module'
+
+const inputRoot = new URL('../', import.meta.url).pathname
+const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
+const inputConfig = JSON.parse(await readDiskFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG ?? new URL('../.omo/private/seoul-migration/sqlite-authority-20261021/publication-config.json', import.meta.url), 'utf8'))
+const inputBundle = await openPublicationDatabaseInputs(inputRoot, inputConfig)
+const readFile = async (path, encoding) => {
+  const absolute = path instanceof URL ? path.pathname : path
+  if (!absolute.startsWith(inputRoot + 'lore/') && !String(path).startsWith('lore/')) return readDiskFile(path, encoding)
+  const bytes = await inputBundle.inputs.readBytes(absolute.startsWith(inputRoot) ? absolute : new URL('../' + path, import.meta.url).pathname)
+  return encoding === 'utf8' ? bytes.toString() : bytes
+}
+afterAll(() => inputBundle.close())
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const empty = () => ({ leaves: [], blocks: [], headings: [], cards: [], markdown: [], lines: [] })
+
+test('historical reader verifies source and main blob identities and rejects substituted bytes', async () => {
+  const reader = path => readFile(path)
+  const requests = []
+  const captured = new Map()
+  reader.readHistorical = async (revision, path, repositoryRoot) => {
+    requests.push([revision, path, repositoryRoot])
+    const bytes = (await promisify(execFile)('git', ['--no-replace-objects', '-C', repositoryRoot, 'show', `${revision}:${path}`],
+      { encoding: 'buffer', maxBuffer: 1024 * 1024 })).stdout
+    captured.set(JSON.stringify([revision, path, repositoryRoot]), bytes)
+    return bytes
+  }
+  const admissions = await authenticateMainDocAdmission(root, { files: [] }, reader)
+  assert.equal(admissions.length, 5)
+  assert.equal(requests.length, 10)
+  assert.ok(requests.every(([, , repository]) => repository === root))
+  const originalExecFile = childProcess.execFile
+  try {
+    childProcess.execFile = () => { throw Error('registration subprocess forbidden') }
+    syncBuiltinESMExports()
+    reader.readHistorical = async (...args) => {
+      const bytes = captured.get(JSON.stringify(args))
+      assert.ok(bytes, 'uncaptured historical tuple')
+      return bytes
+    }
+    assert.equal((await authenticateMainDocAdmission(root, { files: [] }, reader)).length, 5)
+  } finally {
+    childProcess.execFile = originalExecFile
+    syncBuiltinESMExports()
+  }
+  reader.readHistorical = async () => Buffer.from('substituted historical blob')
+  await assert.rejects(authenticateMainDocAdmission(root, { files: [] }, reader), { code: 'E_REVIEW_HASH' })
+  reader.readHistorical = async () => { throw Object.assign(Error('missing historical blob'), { code: 'ENOENT' }) }
+  await assert.rejects(authenticateMainDocAdmission(root, { files: [] }, reader), { code: 'ENOENT' })
+})
 
 test('closed operational documents retain all exact physical lines without original keys or approval', async () => {
   const admissions = await authenticateMainDocAdmission(root, { files: [] })

@@ -1,19 +1,30 @@
-import { readFile, readdir } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import { resolve } from 'node:path'
 import { profileRosterFailures } from './character-profile.mjs'
 
-export async function loadCharacterProfiles(root) {
-  const directory = resolve(root, 'lore/editorial/profile-batches')
-  const files = (await readdir(directory)).filter(name => name.endsWith('.json')).sort()
-  const profiles = []
-  for (const file of files) {
-    const batch = JSON.parse(await readFile(resolve(directory, file), 'utf8'))
-    if (!Array.isArray(batch.profiles)) throw new Error(`E_PROFILE_BATCH:${file}`)
-    profiles.push(...batch.profiles)
-  }
-  const registry = JSON.parse(await readFile(resolve(root, 'lore/name-pools/person-id-registry.json'), 'utf8'))
-  const assignments = JSON.parse(await readFile(resolve(root, 'lore/editorial/Soul-Assignments.json'), 'utf8'))
+export async function loadCharacterProfiles(root, {
+  documentDb = process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite'),
+  editorialProfileDb = process.env.WIKI_EDITORIAL_PROFILE_DB
+    ?? resolve(root, '.omo/private/seoul-migration/sqlite-authority-20261021/editorial-profiles.sqlite'),
+  soulAssignmentDb = process.env.WIKI_SOUL_ASSIGNMENT_DB
+    ?? resolve(root, '.omo/private/seoul-migration/sqlite-authority-20261021/soul-assignments.sqlite'),
+} = {}) {
+  if (!documentDb || !editorialProfileDb || !soulAssignmentDb) throw new Error('E_PERSON_PRIVATE_DATABASE_REQUIRED')
+  const { readEditorialProfileInputs } = await import('./cast-sqlite/person-detail-inputs.mjs')
+  const profiles = [...(await readEditorialProfileInputs(editorialProfileDb)).values()]
+  const registry = await (async () => {
+      const { openReadOnly } = await import('./cast-sqlite/db.mjs')
+      const { readAtlasIdentity } = await import('./cast-sqlite/atlas-identity.mjs')
+      const db = openReadOnly(documentDb)
+      try { return readAtlasIdentity(db).registry } finally { db.close() }
+    })()
+  const assignments = await (async () => {
+      const { openSoulAssignments, INTERNAL_SOUL_CAPABILITY, SOUL_ASSIGNMENT_SOURCE_SHA256 } = await import('./document-store/soul-assignment.mjs')
+      const store = openSoulAssignments(soulAssignmentDb, {
+        capability: INTERNAL_SOUL_CAPABILITY, expectedSha256: SOUL_ASSIGNMENT_SOURCE_SHA256, view: 'approved',
+      })
+      try { return store.readDocument() } finally { store.close() }
+    })()
   const failures = profileRosterFailures(profiles, registry, assignments)
   if (failures.length) throw new Error(failures.join('\n'))
   return new Map(profiles.map(profile => [profile.personId, profile]))

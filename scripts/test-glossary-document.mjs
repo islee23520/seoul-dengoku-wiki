@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
@@ -7,7 +8,7 @@ import { glossaryDocument, glossarySections } from './glossary-document.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 
 const wikiRoot = resolve(import.meta.dirname, '..')
-const entries = JSON.parse(readFileSync(resolve(wikiRoot, 'lore/glossary.json'), 'utf8'))
+const entries = readCanonicalDocument('lore/glossary.json')
 const render = (locale, value = entries) => renderLoreMarkdown(glossaryDocument(value), locale, (_domain, slug) => `${slug}.md`)
 const entry = (overrides = {}) => ({
   term_id: 'fixture-01',

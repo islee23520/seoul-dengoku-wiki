@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { test } from 'vitest'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
@@ -62,7 +63,7 @@ test('facility custody remains distinct and existing household conflicts are rep
 })
 
 test('existing court and retainer contract rejects additions, removals and same-count reassignment', () => {
-  const baseline = JSON.parse(readFileSync(new URL('../lore/relations/relations.json', import.meta.url), 'utf8'))
+  const baseline = readCanonicalDocument('lore/relations/relations.json')
   assert.deepEqual(validateExistingHouseholdCounts(baseline, structuredClone(baseline)), [])
   const reordered = structuredClone(baseline)
   reordered.courts.reverse()
@@ -83,13 +84,13 @@ test('existing court and retainer contract rejects additions, removals and same-
 
 test('policy canon source anchors resolve in the parent-authored document', () => {
   for (const ref of householdHumanoidPolicy.sourceRefs) {
-    const source = JSON.parse(readFileSync(new URL('../' + ref.path, import.meta.url), 'utf8'))
+    const source = readCanonicalDocument(ref.path)
     assert.ok(source.content.some(block => block.anchor === ref.anchor), ref.anchor)
   }
 })
 
 test('actual existing H identities, custody and gender cannot be reassigned or removed', () => {
-  const atlas = JSON.parse(readFileSync(new URL('../lore/World-Narrative-Atlas.json', import.meta.url), 'utf8'))
+  const atlas = readCanonicalDocument('lore/World-Narrative-Atlas.json')
   const baseline = atlas.data.atlas.synthetics.filter(actor => actor.cls === 'H')
   assert.deepEqual(validateExistingHumanoidAssignments(baseline, structuredClone(baseline)), [])
   for (const field of ['gender', 'house_id', 'relations']) {

@@ -1,13 +1,13 @@
 import assert from 'node:assert/strict'
-import { readFile } from 'node:fs/promises'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
 import { test } from 'vitest'
 import { regionalLineGraph } from './regional-line-graph.mjs'
 
 test('private regional graph preserves every resolved ordinary pair and reports every unresolved pair', async () => {
-  const json = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'))
-  const source = await json('../lore/places/regular-line-adjacency.json')
-  const bindings = await json('../lore/places/regional-station-bindings.json')
-  const seoul = await json('../snapshots/build-inputs/SeoulWorldGraph.json')
+  const source = readCanonicalDocument('lore/places/regular-line-adjacency.json')
+  const bindings = readCanonicalDocument('lore/places/regional-station-bindings.json')
+  const seoul = JSON.parse(readSourceArchive('snapshots/build-inputs/SeoulWorldGraph.json', '46985afccc2d3f2b5e4e3152254d30bc023d0688d63745a951a9be0f6ebf097d'))
   // This is a private schematic coordinate plane; only code-to-ID adjacency is
   // under test. Geographic clipping belongs to the authenticated map projector.
   const stations = seoul.stations.map(({ id, lon, lat }) => ({ id, x: lon, y: lat }))

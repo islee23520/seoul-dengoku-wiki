@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict'
+import { publicGeographicId, publicCountyName, publicGeographicSlot, validateGeographicMap } from '../src/components/geographicTitleMap.mjs'
 
 const exactKeys = (value, keys) => {
   assert.ok(value && typeof value === 'object' && !Array.isArray(value), 'E_MAP_FIELDS')
@@ -8,21 +9,19 @@ const exactKeys = (value, keys) => {
 // Geometry belongs to the map producer; this boundary checks every published
 // non-geometric field against the authenticated geography and v2 scale projection.
 export function validatePublishedGeographyMap(map, geography, scale) {
+  validateGeographicMap(map)
   exactKeys(map, ['spatialDate', 'currentDate', 'titles'])
   assert.equal(map.spatialDate, scale.slotEditions.dated.baseDate, 'E_MAP_SPATIAL_DATE')
   assert.equal(map.currentDate, scale.slotEditions.currentCorrespondence.administrativeCandidateDate, 'E_MAP_CURRENT_DATE')
   assert.ok(Array.isArray(map.titles), 'E_MAP_TITLES')
   const counties = scale.titles.filter(title => title.rank === 'county')
   const sourceById = new Map(geography.titles.map(title => [title.titleId, title]))
-  const slots = (groups, titleId) => (groups.find(group => group.countyTitleId === titleId)?.slots ?? []).map(slot => ({
-    id: slot.slotId, name: slot.name, dongId: slot.dongId,
-    fragmentId: slot.fragmentId, status: slot.status, holderPersonId: slot.holderPersonId,
-    geometryVerified: slot.geometryVerified,
-  }))
+  const publicIds = new Map(scale.titles.map(title => [title.titleId, title.rank === 'county' ? publicGeographicId(title.titleId, 'county') : title.titleId]))
+  const slots = (groups, titleId) => (groups.find(group => group.countyTitleId === titleId)?.slots ?? []).map(publicGeographicSlot)
   const expected = scale.titles.map(title => ({
-    id: title.titleId, rank: title.rank, name: title.name, parentId: title.geographicParentTitleId,
-    countyIds: title.rank === 'county' ? [title.titleId] : title.rank === 'kingdom' ? title.mapCountyTitleIds
-      : counties.filter(county => county.jurisdictionRefs.some(gu => title.jurisdictionRefs.includes(gu))).map(county => county.titleId),
+    id: publicIds.get(title.titleId), rank: title.rank, name: title.rank === 'county' ? publicCountyName(title.name) : title.name, parentId: publicIds.get(title.geographicParentTitleId) ?? null,
+    countyIds: (title.rank === 'county' ? [title.titleId] : title.rank === 'kingdom' ? title.mapCountyTitleIds
+      : counties.filter(county => county.jurisdictionRefs.some(gu => title.jurisdictionRefs.includes(gu))).map(county => county.titleId)).map(id => publicIds.get(id)),
     holderPersonId: sourceById.get(title.titleId).holderPersonId ?? null,
     datedSlots: slots(geography.countySlots, title.titleId),
     currentSlots: slots(geography.currentCorrespondenceSlots, title.titleId),

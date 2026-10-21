@@ -1,3 +1,4 @@
+import { loadSheetMetadata } from './cast-sqlite/sheet-metadata.mjs'
 import { preservedSheetSources } from './preserved-person-sheet.mjs'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
@@ -15,7 +16,7 @@ import { loadPreservedPersonSheets, projectPreservedPersonSheet, projectPublicHi
 
 const roots = preservedSheetSources
 const versions = loadPreservedPersonSheets(roots)
-const baseline = JSON.parse(readFileSync(new URL('./issued-preservation-baseline.json', import.meta.url), 'utf8'))
+const baseline = loadSheetMetadata().baseline
 const source = new Map(REVISIONS.map(revision => {
   const bytes = readFileSync(roots[revision].ledgerPath)
   assert.equal(createHash('sha256').update(bytes).digest('hex'), baseline.revisions[revision].ledgerSha256)

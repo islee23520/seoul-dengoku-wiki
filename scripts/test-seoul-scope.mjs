@@ -1,11 +1,13 @@
+import { afterAll } from 'vitest'
 import assert from 'node:assert/strict'
-import { mkdtemp, mkdir, readFile, rm, writeFile } from 'node:fs/promises'
+import { mkdtemp, mkdir, readFile as readDiskFile, rm, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { execFile, spawn } from 'node:child_process'
 import { promisify } from 'node:util'
 import { gunzipSync, gzipSync } from 'node:zlib'
 import { test } from 'vitest'
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
 import { ENTITY_SETS, KINGDOM_SUCCESSOR_BINDING, RELATION_COURT_BULK_RETIREMENT, RELATION_COURT_DISPOSITION, STAGING_GEOGRAPHY_SCHEMA, STAGING_SOURCES, approvedKingdomGeography, authenticateRightsTransition, baselineDocuments, canonicalProposal, checkStagingGeography, materializeRelationCourtBulkRetirement, materializeRelationCourtDispositions, materializeRetiredRightsDispositions, proposalHash, publicationGeography, selectedScopeRow, sha256, stagingGeography, validateSeoulScope } from './seoul-scope.mjs'
 import { TASK2_BINDING, loadAppliedBatches, loadTask2Geography, compareCensusCategories, createDependencyResolver, dependencyDispositions, documentReviewReceipts, extractDependencies, extractCurrentCategories, extractEntityRecords, isAuthenticatedPublicationReview, loadRequiredProvenance, materializeIndependentReview, validateCensusProducts, validateDependencyClosure, validateDocumentPublicationReview, validateIndependentReview, walkCensus } from './seoul-census.mjs'
 import { projectPrivateSeoulScope } from './seoul-private-projection.mjs'
@@ -23,6 +25,18 @@ import { BATCH_ID as DOC247_FINAL_BATCH_ID, COHORT_PATH as DOC247_FINAL_COHORT_P
   REGION_HASHES as DOC247_FINAL_REGION_HASHES, REGION_REVIEW as DOC247_FINAL_REGION_REVIEW,
   SUCCESSOR_PATH as DOC247_FINAL_SUCCESSOR_PATH, TECHNICAL_REVIEW_PATH as DOC247_FINAL_TECHNICAL_REVIEW_PATH,
   authenticateFinalClosure, buildFinalClosure, materializeFinalClosureContract } from '../.omo/private/seoul-migration/doc247-final-closure-20261019/materialize.mjs'
+
+const inputRoot = new URL('../', import.meta.url).pathname
+const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
+const inputConfig = JSON.parse(await readDiskFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG ?? new URL('../.omo/private/seoul-migration/sqlite-authority-20261021/publication-config.json', import.meta.url), 'utf8'))
+const inputBundle = await openPublicationDatabaseInputs(inputRoot, inputConfig)
+const readFile = async (path, encoding) => {
+  const absolute = path instanceof URL ? path.pathname : path
+  if (!absolute.startsWith(inputRoot + 'lore/') && !String(path).startsWith('lore/')) return readDiskFile(path, encoding)
+  const bytes = await inputBundle.inputs.readBytes(absolute.startsWith(inputRoot) ? absolute : new URL('../' + path, import.meta.url).pathname)
+  return encoding === 'utf8' ? bytes.toString() : bytes
+}
+afterAll(() => inputBundle.close())
 
 const sourcePath = 'lore/current.json'
 const sealedPath = 'vendor/issued-history/old.json'
@@ -49,7 +63,7 @@ const authenticateReceiptWave = async (root, options = {}) => authenticateHistor
   { ...options, readBytes: await historicalReceiptReader(root, options.readBytes) })
 
 test('complete new-source inventory has only the exact excluded issuer helper and authenticated dress registration', async () => {
-  const { readdir } = await import('node:fs/promises')
+  const readdir = inputBundle.inputs.readDirectory
   const root = resolve(fileURLToPath(new URL('..', import.meta.url)))
   const baselineBytes = await readFile(resolve(root, '.omo/private/seoul-migration/baseline.json'))
   const baseline = JSON.parse(baselineBytes)
@@ -2101,7 +2115,8 @@ for (const mutation of ['authentic', 'tampered', 'missing']) {
       if (binding.path === region) assert.equal(sha256(bytes), 'f68e0906488a59b07b100e1d6db351f750c48b481c515c809e5768a99740d5f2')
       return bytes
     }
-    const result = loadRequiredProvenance(provenanceRoot, sources, reader, readGit)
+    reader.readHistorical = (revision, path, repositoryRoot) => readGit({ revision, path, repositoryRoot })
+    const result = loadRequiredProvenance(provenanceRoot, sources, reader)
     if (mutation === 'authentic') {
       const resolved = await result
       const removed = [...resolved].filter(([key]) => JSON.parse(key)[0] === region)
@@ -2480,7 +2495,7 @@ async function supportingContractFixture() {
   for (const path of ['lore/offices/Offices-and-Ranks.json', 'lore/offices/authoring.schema.json',
     'lore/relations/opening-office-appointments.json', 'lore/regions/seoul-electoral-titles.json',
     'scripts/approved-seoul-rights-transition.json', 'scripts/approved-daejeon-nonowning-rights.json']) {
-    const bytes = await readFile(new URL('../' + path, import.meta.url))
+    const bytes = readSourceArchive(path)
     const record = { bytes, sha256: sha256(bytes), value: JSON.parse(bytes) }
     ;(path === 'lore/regions/seoul-electoral-titles.json' || path.startsWith('scripts/') ? provenance : sources).set(path, record)
   }

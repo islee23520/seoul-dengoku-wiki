@@ -1,5 +1,6 @@
+import { afterAll } from 'vitest'
 import { describe, expect, it } from 'vitest'
-import { readFile } from 'node:fs/promises'
+import { readFile as readDiskFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
@@ -9,6 +10,18 @@ import { stationCatalogPredecessorReader } from './station-catalog-scope-success
 import { sha256 } from './seoul-scope.mjs'
 import { loadAppliedBatches } from './seoul-census.mjs'
 import { buildSeoulScopeActivationCandidates } from './seoul-scope-activation-candidates.mjs'
+
+const inputRoot = new URL('../', import.meta.url).pathname
+const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
+const inputConfig = JSON.parse(await readDiskFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG ?? new URL('../.omo/private/seoul-migration/sqlite-authority-20261021/publication-config.json', import.meta.url), 'utf8'))
+const inputBundle = await openPublicationDatabaseInputs(inputRoot, inputConfig)
+const readFile = async (path, encoding) => {
+  const absolute = path instanceof URL ? path.pathname : path
+  if (!absolute.startsWith(inputRoot + 'lore/') && !String(path).startsWith('lore/')) return readDiskFile(path, encoding)
+  const bytes = await inputBundle.inputs.readBytes(absolute.startsWith(inputRoot) ? absolute : new URL('../' + path, import.meta.url).pathname)
+  return encoding === 'utf8' ? bytes.toString() : bytes
+}
+afterAll(() => inputBundle.close())
 
 const root = resolve(import.meta.dirname, '..')
 const registryPath = '.omo/private/seoul-migration/applied-batches.json'

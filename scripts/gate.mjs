@@ -6,6 +6,9 @@ import { dirname, join, relative, sep } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import ts from 'typescript'
 import { fromWikiBlocks } from '@seoul-dengoku/document-renderer'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readCatalogMetadataDocument, CATEGORY_REGISTRY_PATH, UPDATE_HISTORY_PATH } from './cast-sqlite/catalog-metadata.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 const wikiRoot = join(scriptDir, '..')
@@ -18,7 +21,7 @@ const referenceDir = [process.env.SEOUL_KENSHI_ROOT && join(process.env.SEOUL_KE
 
 const BANNED_TERMS = ['Kenshi', 'Underrail', 'Gunner', 'clone', '복제']
 const COINED_PHRASES = ['창세 구술', '창세 이야기', '구술로만', '창세의 첫 줄', '창세의 첫 급수협약', '창세는 햇수 없는 구술']
-const namingLedger = JSON.parse(readFileSync(join(repoRoot, 'lore/editorial/Naming-Ledger.json'), 'utf8'))
+const namingLedger = readCanonicalDocument('lore/editorial/Naming-Ledger.json')
 // Korean attaches particles (라벨렌의, 라벨렌을), so the Hangul form matches without a trailing boundary.
 const RAVELEN_REFERENCE = /(?<![\p{L}\p{N}_])ravelen(?![\p{L}\p{N}_])|라벨렌/iu
 export const EXPECTED_REFERENCE_EXCLUSIONS = 20
@@ -461,7 +464,12 @@ function main() {
     if (typeof person.id !== 'string' || typeof person.name !== 'string') throw new Error(`E_PERSON_CONSUMER:/people/${index}`)
     for (const field of ['name', 'title', 'position', 'rank', 'occupation', 'gender', 'stateName', 'stage']) failures.push(...visibleFieldFailures(person[field], `src/generated/peopleCatalog.ts#/people/${index}/${field}`))
   }
-  const categoryRegistry = JSON.parse(readFileSync(join(wikiRoot, 'scripts/category-registry.json'), 'utf8'))
+  const metadataDb = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? join(wikiRoot, 'data/canonical/wiki-cast.sqlite'))
+  let categoryRegistry, history
+  try {
+    categoryRegistry = readCatalogMetadataDocument(metadataDb, CATEGORY_REGISTRY_PATH)
+    history = readCatalogMetadataDocument(metadataDb, UPDATE_HISTORY_PATH)
+  } finally { metadataDb.close() }
   const categorySource = readFileSync(join(wikiRoot, 'src/generated/categoryIndex.ts'), 'utf8')
   const categoryAst = ts.createSourceFile('categoryIndex.ts', categorySource, ts.ScriptTarget.Latest, true, ts.ScriptKind.TS)
   const categoryDeclaration = categoryAst.statements.filter(ts.isVariableStatement).flatMap((entry) => [...entry.declarationList.declarations])
@@ -474,7 +482,6 @@ function main() {
     if (category.id !== consumed?.id || category.label !== consumed.label || category.summary !== consumed.summary) throw new Error(`E_CATEGORY_CONSUMER:/categories/${index}`)
     for (const field of ['label', 'summary']) failures.push(...visibleFieldFailures(consumed[field], `src/generated/categoryIndex.ts#/categories/${index}/${field}`))
   }
-  const history = JSON.parse(readFileSync(join(wikiRoot, 'data/update-history.json'), 'utf8'))
   history.updates.forEach((update, index) => {
     for (const field of ['title', 'category', 'status', 'source']) failures.push(...visibleFieldFailures(update[field], `data/update-history.json#/updates/${index}/${field}`))
   })
@@ -524,7 +531,7 @@ function main() {
     })
     year.relatedDocuments.forEach((document, documentIndex) => failures.push(...visibleFieldFailures(document.title, `public/timeline-overview.json#/years/${index}/relatedDocuments/${documentIndex}/title`)))
   })
-  const gurps = JSON.parse(readFileSync(join(wikiRoot, 'lore/name-pools/gurps-cast.json'), 'utf8'))
+  const gurps = readCanonicalDocument('lore/name-pools/gurps-cast.json')
   for (const person of gurps.people) {
     // API source coverage is kept separately from article reviewText receipts.
     for (const [field, value] of apiDeclaredFields(person, `api/characters/${person.url?.split('/').at(-1) ?? person.id}`)) failures.push(...visibleFieldFailures(value, field))

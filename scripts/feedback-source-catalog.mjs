@@ -3,6 +3,9 @@ import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
 import { canonicalJson } from './world-atlas-schema.mjs'
+import { publicHouseContent } from './public-house-content.mjs'
+import { publicOfficeContent, officeProjection } from './public-office-content.mjs'
+import { publicMapContent, mapProjection } from './public-map-content.mjs'
 
 const length = (value) => Array.from(value).length
 export const canonicalRevision = (value) => createHash('sha256').update(canonicalJson(value)).digest('hex')
@@ -110,9 +113,45 @@ function alignPublishedLeaves(sourceLeaves,blocks){
  return out
 }
 
-export function articleFeedbackRecord({ envelope, route, locale, blocks }) {
-  const authored=articleLeaves(envelope,locale)
-  return { documentId: envelope.id, route, locale, sourceRevision: canonicalRevision(envelope), selector: 'p, h2, h3, h4, h5, h6, blockquote, pre, li, th, td', leaves: blocks ? alignPublishedLeaves(authored,blocks) : authored }
+function projectedArticleLeaves(envelope, sourceEnvelope, locale) {
+  const approved = publicMapContent(publicOfficeContent(publicHouseContent(sourceEnvelope)))
+  if (canonicalRevision(approved) !== canonicalRevision(envelope)) throw new Error('E_FEEDBACK_PROJECTION_MISMATCH')
+  const sourceLeaves = articleLeaves(sourceEnvelope, locale)
+  return articleLeaves(envelope, locale).map((published) => {
+    const projectedIndex = envelope.content.findIndex(block => block.anchor === published.blockAnchor)
+    const sourceIndex = sourceEnvelope.content.findIndex(block => block.anchor === published.blockAnchor)
+    const sourceBlock = sourceEnvelope.content[sourceIndex], projectedBlock = envelope.content[projectedIndex]
+    if (sourceIndex < 0) throw new Error(`E_FEEDBACK_PROJECTION_SOURCE:${published.leafId}`)
+    let sourceLeafId = published.leafId
+    if (sourceBlock.kind === 'list') {
+      const itemIndex = Number(published.leafId.split(':').at(-1))
+      // The house projection removes only item 2 of the generated metadata list.
+      const removed = sourceBlock.items.length !== projectedBlock.items.length
+      sourceLeafId = `${published.blockAnchor}:item:${itemIndex + (removed && itemIndex >= 2 ? 1 : 0)}`
+    }
+    const original = sourceLeaves.find(leaf => leaf.leafId === sourceLeafId)
+    if (!original) throw new Error(`E_FEEDBACK_PROJECTION_SOURCE:${published.leafId}`)
+    if (original.text === published.text) return { ...published, sourceSegments: original.sourceSegments }
+    const officeIndex = officeProjection.replacements.findIndex(row => row.anchor === published.blockAnchor && row.locale === locale && (row.row === undefined ? published.leafId.endsWith(':text') : published.leafId === `${row.anchor}:cell:${row.row + 1}:${row.column}`))
+    const mapIndex = mapProjection.blocks.findIndex(row => row.anchor === published.blockAnchor && row.after?.[locale] !== undefined)
+    const rule = sourceEnvelope.slug === officeProjection.slug && officeIndex >= 0
+      ? { file: 'scripts/public-office-content.json', pointer: `/replacements/${officeIndex}`, before: officeProjection.replacements[officeIndex].before, after: officeProjection.replacements[officeIndex].after }
+      : sourceEnvelope.slug === mapProjection.slug && mapIndex >= 0
+        ? { file: 'scripts/public-map-content.json', pointer: `/blocks/${mapIndex}`, before: mapProjection.blocks[mapIndex].before[locale], after: mapProjection.blocks[mapIndex].after[locale] }
+        : null
+    const sourcePath = original.sourceSegments[0]?.path, projectedPath = published.sourceSegments[0]?.path
+    const at = (value, path) => path.split('/').slice(1).reduce((node, key) => node?.[key], value)
+    if (!rule || at(sourceEnvelope, sourcePath) !== rule.before || at(envelope, projectedPath) !== rule.after) throw new Error(`E_FEEDBACK_PROJECTION_RULE:${published.leafId}`)
+    // The private catalog is the approval boundary. Bind the exact rule and pins;
+    // any visible subrange selects this original replacement span once, atomically.
+    const projection = { file: rule.file, pointer: rule.pointer, before: { path: sourcePath, text: rule.before }, after: { path: projectedPath, text: rule.after }, visibleText: published.text, revision: canonicalRevision(envelope) }
+    return { ...published, projection: { ...projection, hash: canonicalRevision(projection) }, sourceSegments: [{ kind: 'approved-projection', path: sourcePath, start: 0, end: length(rule.before), unit: 'unicode-code-point', textStart: 0, textEnd: length(published.text), visibleText: published.text }] }
+  })
+}
+
+export function articleFeedbackRecord({ envelope, sourceEnvelope = envelope, route, locale, blocks }) {
+  const authored=sourceEnvelope === envelope ? articleLeaves(envelope,locale) : projectedArticleLeaves(envelope,sourceEnvelope,locale)
+  return { documentId: sourceEnvelope.id, route, locale, sourceRevision: canonicalRevision(sourceEnvelope), selector: 'p, h2, h3, h4, h5, h6, blockquote, pre, li, th, td', leaves: blocks ? alignPublishedLeaves(authored,blocks) : authored }
 }
 
 

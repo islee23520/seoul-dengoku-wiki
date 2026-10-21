@@ -1,11 +1,12 @@
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
-import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 
 test('current rail catalog preserves 332 Seoul rows and only surface Sinchon, with all 610 historical nodes archived unchanged', async () => {
-  const page = JSON.parse(await readFile(new URL('../lore/places/Seoul-Station-Catalog.json', import.meta.url), 'utf8'))
-  const sourceBytes = await readFile(new URL('../lore/places/connected-rail-stations.json', import.meta.url))
+  const page = readCanonicalDocument('lore/places/Seoul-Station-Catalog.json')
+  const sourceBytes = readSourceArchive('lore/places/connected-rail-stations.json', 'c0f1e2fb5b24dfc0e64469c64c268dfd5a2ab3af4dc9c46925509fc4df68fd0d')
   const source = JSON.parse(sourceBytes)
   const seoul = page.content.filter((block) => block.kind === 'table').slice(0, -1).flatMap((block) => block.rows)
   const connected = page.content.at(-1).rows

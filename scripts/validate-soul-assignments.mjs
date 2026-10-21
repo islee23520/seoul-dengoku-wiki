@@ -1,6 +1,8 @@
-import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { openSoulAssignments, INTERNAL_SOUL_CAPABILITY, SOUL_ASSIGNMENT_SOURCE_SHA256 } from './document-store/soul-assignment.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readAtlasIdentity } from './cast-sqlite/atlas-identity.mjs'
 
 const candidatePeriods = new Set([
   'japanese-sengoku',
@@ -83,8 +85,16 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   try {
     const args = process.argv.slice(2)
     if (args.some((arg) => arg !== '--complete')) throw new Error('Usage: node scripts/validate-soul-assignments.mjs [--complete]')
-    const ledger = JSON.parse(await readFile(new URL('../lore/editorial/Soul-Assignments.json', import.meta.url), 'utf8'))
-    const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+    const root = resolve(import.meta.dirname, '..')
+    const souls = openSoulAssignments(process.env.WIKI_SOUL_ASSIGNMENT_DB
+      ?? resolve(root, '.omo/private/seoul-migration/sqlite-authority-20261021/soul-assignments.sqlite'), {
+      capability: INTERNAL_SOUL_CAPABILITY, expectedSha256: SOUL_ASSIGNMENT_SOURCE_SHA256,
+    })
+    let ledger
+    try { ledger = souls.readDocument() } finally { souls.close() }
+    const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite'))
+    let registry
+    try { registry = readAtlasIdentity(db).registry } finally { db.close() }
     const failures = validateSoulAssignments(ledger, registry, { complete: args.includes('--complete') })
     process.exitCode = failures.length ? 1 : 0
     if (failures.length) console.error(`SOUL_ASSIGNMENTS_FAIL (${failures.length}):\n${failures.join('\n')}`)

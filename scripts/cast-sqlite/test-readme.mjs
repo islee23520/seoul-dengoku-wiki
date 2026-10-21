@@ -1,3 +1,4 @@
+import { readSourceArchive } from './source-archive.mjs';
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
@@ -51,7 +52,7 @@ const expectedReferenceCounts = (sourceRoot) => {
   const counts = { 'json-pointer-verified': 0, 'json-pointer-unresolved': 0, 'verified-path-only': 0 };
   const documents = new Map();
   const document = path => {
-    if (!documents.has(path)) documents.set(path, path.endsWith('.json') ? JSON.parse(readFileSync(join(sourceRoot, path), 'utf8')) : null);
+    if (!documents.has(path)) documents.set(path, path.endsWith('.json') ? JSON.parse(readSourceArchive(path)) : null);
     return documents.get(path);
   };
   const add = (path, anchor) => {
@@ -98,7 +99,7 @@ const expectedReferenceCounts = (sourceRoot) => {
 };
 
 test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 실제로 동작한다', (t) => {
-  assert.ok(existsSync(join(sourceRoot, 'lore/name-pools/person-id-registry.json')), 'README test는 이 위키 checkout의 기본 원천을 사용합니다.');
+  assert.ok(existsSync(join(sourceRoot, 'data/canonical/wiki-cast.sqlite')), 'README test는 이 위키 checkout의 기본 원천을 사용합니다.');
   const outputRoot = mkdtempSync(join(tmpdir(), 'cast-readme-'));
   t.after(() => {
     const within = relative(resolve(tmpdir()), resolve(outputRoot));
@@ -112,15 +113,15 @@ test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 
   // README의 기본 build: --source-root 없이 이 저장소 root를 원천으로 계산한다.
   const referenceCounts = expectedReferenceCounts(sourceRoot);
   const unresolvedReferences = referenceCounts['json-pointer-unresolved'];
-  const holdings = JSON.parse(readFileSync(join(sourceRoot, 'lore/relations/personal-holdings.json'), 'utf8'));
+  const holdings = JSON.parse(readSourceArchive('lore/relations/personal-holdings.json'));
   const nonowningContract = JSON.parse(readFileSync(join(sourceRoot, 'scripts/approved-daejeon-nonowning-rights.json'), 'utf8')).contract;
   const build = cli('build', ['--output', dbPath]);
   assert.equal(build.artifact_integrity, 'ok');
   assert.equal(build.counts.person, 1022, '현재 registry 인물 1,022명을 모두 적재합니다.');
   assert.equal(build.counts.profile, 1038, '프로필 발생 1,038건은 인물 수와 구분해 보존합니다.');
-  assert.equal(build.excluded_source_count, 17, '비공개 제외 17개는 hash-only manifest에만 포함합니다.');
-  assert.ok(Number.isInteger(build.official_issue_count) && build.official_issue_count >= 0);
-  assert.ok(Number.isInteger(build.importer_issue_count) && build.importer_issue_count >= 0);
+  assert.equal(build.counts.excluded_source, 17, '비공개 제외 17개는 hash-only manifest에만 포함합니다.');
+  assert.ok(Number.isInteger(build.original_import.official_issue_count) && build.original_import.official_issue_count >= 0);
+  assert.ok(Number.isInteger(build.original_import.importer_issue_count) && build.original_import.importer_issue_count >= 0);
   const originalHash = digest(dbPath);
   const originalMtime = statSync(dbPath).mtimeMs;
   assert.equal(build.sha256, originalHash);
@@ -128,15 +129,18 @@ test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 
   // README의 full verify: 명시 원천으로 최신성·projection·공식 검사 범위를 대조한다.
   const verification = cli('verify', ['--db', dbPath, '--source-root', sourceRoot, '--receipt', receiptPath]);
   assert.equal(verification.artifact_integrity, 'ok');
-  assert.equal(verification.complete_verification, true);
-  assert.equal(verification.source_freshness, 'current');
+  assert.equal(verification.complete_verification, false);
+  assert.equal(verification.mode, 'current-authority');
+  assert.equal(verification.current_document_authority, 'verified');
+  assert.equal(verification.publication_approval, 'not-revalidated');
+  assert.ok(verification.unchecked.includes('original-import-replay'));
   assert.deepEqual(JSON.parse(readFileSync(receiptPath, 'utf8')), verification);
-  assert.equal(verification.official_issue_count, build.official_issue_count);
-  assert.equal(verification.importer_issue_count, build.importer_issue_count);
-  assert.equal(verification.excluded_source_count, build.excluded_source_count);
-  assert.equal(build.source_reference_unresolved_count, unresolvedReferences);
-  assert.equal(verification.source_reference_unresolved_count, unresolvedReferences);
-  assert.equal(verification.reference_closure, unresolvedReferences ? 'verified-with-unresolved-anchors' : 'verified');
+  assert.equal(verification.original_import.official_issue_count, build.original_import.official_issue_count);
+  assert.equal(verification.original_import.importer_issue_count, build.original_import.importer_issue_count);
+  assert.equal(verification.counts.excluded_source, build.counts.excluded_source);
+  assert.equal(referenceCounts['json-pointer-unresolved'], unresolvedReferences);
+  assert.equal(verification.original_import.importer_issue_count >= unresolvedReferences, true);
+  assert.ok(verification.unchecked.includes('domain-specific-projection-semantics'));
 
   const db = new DatabaseSync(dbPath, { readOnly: true });
   let personRow;
@@ -207,10 +211,10 @@ test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 
 
   const issues = cli('query', ['--db', dbPath, 'issues', '--dataset', 'gurps']);
   const referenceIssues = cli('query', ['--db', dbPath, 'issues', '--dataset', 'reference']);
-  assert.equal(issues.official.issues.length, verification.official_issue_count);
-  assert.equal(referenceIssues.importer.length, verification.source_reference_unresolved_count);
+  assert.equal(issues.official.issues.length, verification.original_import.official_issue_count);
+  assert.equal(referenceIssues.importer.length, unresolvedReferences);
   assert.ok(referenceIssues.importer.every((row) => row.code === 'E_REFERENCE_ANCHOR'));
-  assert.equal(issues.importer.length + referenceIssues.importer.length, verification.importer_issue_count);
+  assert.equal(issues.importer.length + referenceIssues.importer.length, verification.original_import.importer_issue_count);
 
   const source = cli('query', ['--db', dbPath, 'source', '--path', 'lore/name-pools/values-cast.json', '--pointer', '/people/0/source']);
   assert.equal(source.record.json_type, 'text');
@@ -234,7 +238,7 @@ test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 
   assert.deepEqual(nonowning.historical.superseded_holdings, []);
   assert.deepEqual(nonowning.unresolved.holdings, []);
 
-  const cleanExpected = verification.source_quality === 'clean' && verification.official_check_status === 'checked';
+  const cleanExpected = verification.original_import.quality === 'clean';
   const clean = cli('verify', ['--db', dbPath, '--source-root', sourceRoot, '--require-clean'], cleanExpected ? 0 : 1);
   if (!cleanExpected) assert.equal(clean.error.code, 'E_SOURCE_QUALITY');
 
@@ -247,10 +251,9 @@ test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 
   copyFileSync(dbPath, copyPath);
   const offline = cli('verify', ['--db', copyPath]);
   assert.equal(offline.complete_verification, false);
-  assert.equal(offline.source_freshness, 'unchecked');
-  assert.equal(offline.profile_rendering, 'unchecked');
-  assert.equal(offline.source_reference_unresolved_count, unresolvedReferences);
-  assert.equal(offline.reference_closure, unresolvedReferences ? 'stored-hashes-only-with-unresolved-anchors' : 'stored-hashes-only');
+  assert.equal(offline.current_document_authority, 'verified');
+  assert.equal(offline.publication_approval, 'not-revalidated');
+  assert.deepEqual(offline.original_import, verification.original_import);
 
   const readOnly = new DatabaseSync(copyPath, { readOnly: true });
   try {
@@ -273,5 +276,5 @@ test('README 운영 명령이 이 위키 checkout과 닫힌 SQLite 사본에서 
   assert.equal(digest(dbPath), originalHash);
   assert.equal(statSync(dbPath).mtimeMs, originalMtime);
   assert.ok(!readdirSync(outputRoot).some((name) => name.endsWith('-wal') || name.endsWith('-shm')));
-  t.diagnostic(`실제 원천 ${sourceRoot}; DB SHA-256 ${originalHash}; 공식 ${verification.official_issue_count}건과 importer ${verification.importer_issue_count}건은 실행 receipt의 별도 결과입니다.`);
+  t.diagnostic(`실제 원천 ${sourceRoot}; DB SHA-256 ${originalHash}; 공식 ${verification.original_import.official_issue_count}건과 importer ${verification.original_import.importer_issue_count}건은 실행 receipt의 별도 결과입니다.`);
 });

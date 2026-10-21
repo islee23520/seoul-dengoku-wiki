@@ -1,5 +1,23 @@
+import { afterAll as closeInputFixture } from 'vitest'
+import { readFile as readInputConfig } from 'node:fs/promises'
+const inputRoot = new URL('../', import.meta.url).pathname
+const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
+const inputConfig = JSON.parse(await readInputConfig(process.env.WIKI_PUBLICATION_DATABASE_CONFIG ?? new URL('../.omo/private/seoul-migration/sqlite-authority-20261021/publication-config.json', import.meta.url), 'utf8'))
+const inputBundle = await openPublicationDatabaseInputs(inputRoot, inputConfig)
+const inputCapture = JSON.parse(await readInputConfig(inputConfig.captureReceiptPath))
+const inputBytes = new Map()
+for (const { logicalPath } of inputCapture.bindings.filter(row => row.logicalPath.startsWith('lore/')))
+  inputBytes.set(inputRoot + logicalPath, await inputBundle.inputs.readBytes(inputRoot + logicalPath))
+const readFileSync = (path, encoding) => {
+  const absolute = path instanceof URL ? path.pathname : path
+  if (!absolute.startsWith(inputRoot + 'lore/')) return readDiskFileSync(path, encoding)
+  if (!inputBytes.has(absolute)) throw Object.assign(new Error('missing source: ' + absolute), { code: 'ENOENT' })
+  const bytes = Buffer.from(inputBytes.get(absolute))
+  return encoding === 'utf8' ? bytes.toString() : bytes
+}
+closeInputFixture(() => inputBundle.close())
 import { afterAll, describe, expect, it } from 'vitest'
-import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync, cpSync } from 'node:fs'
+import { mkdirSync, mkdtempSync, readFileSync as readDiskFileSync, rmSync, writeFileSync, cpSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { resolve, relative } from 'node:path'
 import { createHash } from 'node:crypto'
@@ -9,6 +27,8 @@ import { rightsTransitionTargets } from './seoul-scope.mjs'
 import { reviewWordingPredecessorReader } from './review-wording-successor.mjs'
 import { k176PredecessorReader } from './k176-label-successor.mjs'
 import { stationCatalogPredecessorReader } from './station-catalog-scope-successor.mjs'
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
+import { CAST_BACKFILL_SOURCE_HASH } from './cast-sqlite/cast-backfill-document.mjs'
 import { materializeOfficesPredecessor } from '../.omo/private/seoul-migration/doc247-repin-20261019/materialize-repins.mjs'
 
 const root = mkdtempSync(resolve(tmpdir(), 'seoul-two-track-'))
@@ -1436,7 +1456,8 @@ async function loadHistoricalFixture(actualRoot, batches, files) {
   }
   for (const [path, expected] of finalHashes) if (files.has(path) && digest(files.get(path)) !== expected)
     throw Object.assign(new Error('E_REVIEW_HASH'), { path })
-  const authority = async path => files.get(resolve(path)) ?? readFileSync(path)
+  const authority = async path => files.get(resolve(path)) ?? (relative(actualRoot, resolve(path)) === 'lore/name-pools/cast-backfill-draft.json'
+    ? readSourceArchive('lore/name-pools/cast-backfill-draft.json', CAST_BACKFILL_SOURCE_HASH) : readFileSync(path))
   let predecessor = await stationCatalogPredecessorReader(actualRoot, authority)
   predecessor = await reviewWordingPredecessorReader(actualRoot, predecessor)
   predecessor = await k176PredecessorReader(actualRoot, predecessor)
@@ -1444,7 +1465,9 @@ async function loadHistoricalFixture(actualRoot, batches, files) {
   const reader = async path => {
     const projected = historical(path)
     if (files.has(resolve(path))) return projected
-    return digest(projected) === digest(readFileSync(path)) ? predecessor(path) : projected
+    const live = relative(actualRoot, resolve(path)) === 'lore/name-pools/cast-backfill-draft.json'
+      ? readSourceArchive('lore/name-pools/cast-backfill-draft.json', CAST_BACKFILL_SOURCE_HASH) : readFileSync(path)
+    return digest(projected) === digest(live) ? predecessor(path) : projected
   }
   reader.currentAuthorityReader = predecessor
   return loadAppliedBatches(reader, actualRoot)
@@ -1547,7 +1570,8 @@ function historicalFixtureBytes(actualRoot, batches, files) {
   return path => {
     const absolute = resolve(actualRoot, path)
     if (files.has(absolute)) return files.get(absolute)
-    const live = readFileSync(absolute)
+    const live = relative(actualRoot, absolute) === 'lore/name-pools/cast-backfill-draft.json'
+      ? readSourceArchive('lore/name-pools/cast-backfill-draft.json', CAST_BACKFILL_SOURCE_HASH) : readFileSync(absolute)
     const sourcePath = relative(actualRoot, absolute)
     const expected = final.get(sourcePath)
     if (!expected && sourcePath === 'lore/characters/Cast-State-14.json'
@@ -1999,7 +2023,8 @@ describe('Q2v2 exact28 source contract', () => {
     const registry = JSON.parse(readFileSync(resolve(actualRoot, registryPath)))
     const batches = registry.batches.filter(row => row.batchId === 'sixteen-states-Q2-v2-28')
     const files = new Map()
-    const bytes = path => files.get(resolve(actualRoot, path)) ?? readFileSync(resolve(actualRoot, path))
+    const bytes = path => files.get(resolve(actualRoot, path)) ?? (path === 'lore/name-pools/cast-backfill-draft.json'
+      ? readSourceArchive(path, CAST_BACKFILL_SOURCE_HASH) : readFileSync(resolve(actualRoot, path)))
     const setJSON = (path, value) => files.set(resolve(actualRoot, path), Buffer.from(JSON.stringify(value)))
     const load = () => { setJSON(registryPath, { schema: registry.schema, batches }); return loadHistoricalFixture(actualRoot, batches, files) }
     return { batches, files, bytes, setJSON, load }

@@ -5,9 +5,11 @@
 // Category templates validate source metadata and content structure before publishing.
 // Public pages never receive the private template text.
 import { readFile } from 'node:fs/promises'
-import { basename, dirname, join } from 'node:path'
+import { basename, dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { headingId } from './lore-json-render.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readCatalogMetadataDocument, CATEGORY_REGISTRY_PATH } from './cast-sqlite/catalog-metadata.mjs'
 
 const ko = (leaf) => typeof leaf === 'string' ? leaf : Array.isArray(leaf) ? leaf.map((run) => run.text).join('') : ko(leaf?.ko ?? '')
 
@@ -103,7 +105,11 @@ const verifiedAtlasProjection = (document) =>
   document.provenance?.history?.includes('world-atlas-projections.v2')
 
 export async function loadCategoryRegistry(registryPath) {
-  const registry = JSON.parse(await readFile(registryPath, 'utf8'))
+  const path = registryPath instanceof URL ? fileURLToPath(registryPath) : resolve(registryPath)
+  const registry = path === fileURLToPath(new URL('./category-registry.json', import.meta.url)) ? (() => {
+    const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? fileURLToPath(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url)))
+    try { return readCatalogMetadataDocument(db, CATEGORY_REGISTRY_PATH) } finally { db.close() }
+  })() : JSON.parse(await readFile(registryPath, 'utf8'))
   const categories = registry.categories ?? []
   const ids = categories.map((category) => category.id)
   if (new Set(ids).size !== ids.length) throw new Error('E_CATEGORY_REGISTRY_DUPLICATE')

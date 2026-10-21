@@ -3,16 +3,20 @@ import { createHash } from 'node:crypto'
 import { readFile, writeFile, copyFile, mkdir } from 'node:fs/promises'
 import { basename, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { loadPortraitDocuments } from './portrait-source-documents.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 
 const wikiRoot = fileURLToPath(new URL('../', import.meta.url))
 const sha = bytes => createHash('sha256').update(bytes).digest('hex')
 
 export async function preflightPortraitCandidates(evidenceRoot, root = wikiRoot) {
   const json = async path => JSON.parse(await readFile(join(root, path), 'utf8'))
-  const catalog = await json('portrait-catalog.json')
-  const registry = (await json('lore/name-pools/person-id-registry.json')).persons
-  const genders = (await json('lore/name-pools/gender-cast.json')).people
-  const properties = (await json('portrait-properties.json')).entries
+  const current = resolve(root) === resolve(wikiRoot)
+  const { catalog, properties: propertyDocument } = current ? loadPortraitDocuments(root)
+    : { catalog: await json('portrait-catalog.json'), properties: await json('portrait-properties.json') }
+  const registry = (current ? readCanonicalDocument('lore/name-pools/person-id-registry.json') : await json('lore/name-pools/person-id-registry.json')).persons
+  const genders = (current ? readCanonicalDocument('lore/name-pools/gender-cast.json') : await json('lore/name-pools/gender-cast.json')).people
+  const properties = propertyDocument.entries
   const plan = []
   for (const group of ['recommended', 'rulers']) {
     const manifest = JSON.parse(await readFile(join(evidenceRoot, group, 'manifest.json'), 'utf8'))

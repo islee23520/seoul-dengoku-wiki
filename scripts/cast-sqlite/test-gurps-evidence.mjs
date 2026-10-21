@@ -1,3 +1,4 @@
+import { readSourceArchive } from './source-archive.mjs';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync } from 'node:fs';
@@ -203,16 +204,16 @@ test('rejects malformed newly normalized historical values and ambiguous difficu
 
 test('full corpus preserves all typed historical GURPS branches and provenance', { skip: !process.env.CAST_SQLITE_SOURCE_ROOT }, () => {
   const root = process.env.CAST_SQLITE_SOURCE_ROOT;
-  const document = JSON.parse(readFileSync(join(root, GURPS_PATH), 'utf8'));
-  const registry = JSON.parse(readFileSync(join(root, 'lore/name-pools/person-id-registry.json'), 'utf8'));
+  const document = JSON.parse(readSourceArchive(GURPS_PATH).toString('utf8'));
+  const registry = JSON.parse(readSourceArchive('lore/name-pools/person-id-registry.json').toString('utf8'));
   const paths = new Set([GURPS_PATH]);
   for (const person of document.people) {
     for (const item of [person.role, ...Object.values(person.attributes), ...person.traits, ...person.skills, ...person.languages]) {
       for (const evidence of item.evidence ?? []) if (evidence.path) paths.add(evidence.path);
     }
   }
-  const files = [...paths].sort().filter((logical_path) => existsSync(join(root, logical_path))).map((logical_path, index) => {
-    const raw_bytes = readFileSync(join(root, logical_path));
+  const files = [...paths].sort().map((logical_path, index) => {
+    const raw_bytes = readSourceArchive(logical_path);
     return { source_id: index + 1, logical_path, raw_bytes, document: logical_path.endsWith('.json') ? JSON.parse(raw_bytes.toString('utf8')) : null };
   });
   const mapped = mapGurps({ bundle: { files }, identity: { people: registry.persons.map((person) => ({ person_id: person.id, name: person.name })) } });

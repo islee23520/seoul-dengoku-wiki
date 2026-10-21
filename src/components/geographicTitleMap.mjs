@@ -1,17 +1,47 @@
 // This projection is deliberately a field allowlist: staging contains private
 // evidence and historical rights which must never enter the browser payload.
+export function publicGeographicId(id, kind) {
+  let hash = 0xcbf29ce484222325n
+  for (const byte of new TextEncoder().encode(id)) hash = BigInt.asUintN(64, (hash ^ BigInt(byte)) * 0x100000001b3n)
+  return `geography:${kind}:${hash.toString(16).padStart(16, '0')}`
+}
+
+export const publicCountyName = name => name.replace(/선거구$/u, ' 백작령')
+
+export function publicGeographicScope(scope) {
+  return { ...scope, countyTitleIds: scope.countyTitleIds.map(id => publicGeographicId(id, 'county')) }
+}
+
+export function publicTerritorialScale(scale) {
+  const { path, ...source } = scale.geographicSource
+  return {
+    ...scale, geographicSource: source,
+    geographicParent: { ...scale.geographicParent,
+      crossDistrictExceptions: scale.geographicParent.crossDistrictExceptions.map(row => ({ ...row, titleId: publicGeographicId(row.titleId, 'county') })),
+    },
+  }
+}
+
+export function publicGeographicSlot(slot) {
+  const ordinary = /^region:11\d{8}$/u.test(slot.dongId)
+  const dongId = ordinary ? slot.dongId : publicGeographicId(slot.dongId, 'historical-slot')
+  if (!ordinary && dongId !== 'geography:historical-slot:39d9cf6109eae533') throw new Error('E_MAP_SCOPE')
+  return {
+    id: ordinary ? slot.slotId : publicGeographicId(slot.slotId, 'slot'),
+    name: slot.name, dongId,
+    fragmentId: slot.fragmentId ? publicGeographicId(slot.fragmentId, 'fragment') : null,
+    status: slot.status, holderPersonId: slot.holderPersonId, geometryVerified: slot.geometryVerified,
+  }
+}
+
 export function projectGeographicTitles(staging, boundaries, project) {
   const path = geometry => {
     const polygons = geometry.type === 'Polygon' ? [geometry.coordinates] : geometry.coordinates
     return polygons.map(polygon => polygon.map(ring => ring.map(([x, y], index) => `${index ? 'L' : 'M'}${project(x, y).join(',')}`).join(' ') + ' Z').join(' ')).join(' ')
   }
   const geometryById = new Map(boundaries.features.map(feature => [feature.id, feature]))
-  const slots = rows => rows.map(slot => ({
-    id: slot.slotId, name: slot.name, dongId: slot.dongId,
-    fragmentId: slot.fragmentId, status: slot.status, holderPersonId: slot.holderPersonId,
-    geometryVerified: slot.geometryVerified,
-  }))
   const counties = staging.titles.filter(title => title.rank === 'county')
+  const publicIds = new Map(staging.titles.map(title => [title.titleId, title.rank === 'county' ? publicGeographicId(title.titleId, 'county') : title.titleId]))
   const titles = staging.titles.map(title => {
     const countyIds = title.rank === 'county' ? [title.titleId] : title.rank === 'kingdom' ? title.countyTitleIds
       : counties.filter(county => county.jurisdictionRefs.some(gu => title.jurisdictionRefs.includes(gu))).map(county => county.titleId)
@@ -23,11 +53,11 @@ export function projectGeographicTitles(staging, boundaries, project) {
       return path(feature.geometry)
     })
     return {
-      id: title.titleId, rank: title.rank, name: title.name,
-      parentId: title.feudalParentTitleId, countyIds, path: paths.join(' '),
+      id: publicIds.get(title.titleId), rank: title.rank, name: title.rank === 'county' ? publicCountyName(title.name) : title.name,
+      parentId: publicIds.get(title.feudalParentTitleId) ?? null, countyIds: countyIds.map(id => publicIds.get(id)), path: paths.join(' '),
       holderPersonId: title.holderPersonId ?? null,
-      datedSlots: slots(staging.countySlots.find(row => row.countyTitleId === title.titleId)?.slots ?? []),
-      currentSlots: slots(staging.currentCorrespondenceSlots.find(row => row.countyTitleId === title.titleId)?.slots ?? []),
+      datedSlots: (staging.countySlots.find(row => row.countyTitleId === title.titleId)?.slots ?? []).map(publicGeographicSlot),
+      currentSlots: (staging.currentCorrespondenceSlots.find(row => row.countyTitleId === title.titleId)?.slots ?? []).map(publicGeographicSlot),
     }
   })
   return { spatialDate: staging.spatialSource.baseDate, currentDate: staging.editions.currentCorrespondence.administrativeCandidateDate, titles }
@@ -38,18 +68,29 @@ export function titlesAtRank(geography, rank) {
   return geography.titles.filter(title => title.rank === rank)
 }
 
+// A mixed county is not neutral territory. Missing evidence is distinct from both.
+export function geographicPoliticalAffiliation(title, geography, regions) {
+  const dongIds = new Set(title.countyIds.flatMap(id =>
+    resolveGeographicTitle(geography, id)?.currentSlots.map(slot => slot.dongId) ?? []))
+  const names = [...new Set(regions.filter(region => dongIds.has(region.id))
+    .flatMap(region => region.currentHegemons.map(hegemon => hegemon.name)))].sort()
+  return { kind: names.length === 0 ? 'unknown' : names.length > 1 ? 'mixed' : 'single', names }
+}
+
 export function validateGeographicMap(geography) {
   const ids = new Set(geography.titles.map(title => title.id))
   const counties = new Set(titlesAtRank(geography, 'county').map(title => title.id))
+  if (ids.size !== geography.titles.length || ['county', 'duchy', 'kingdom', 'empire'].some((rank, index) => titlesAtRank(geography, rank).length !== [48, 25, 6, 1][index])
+    || /선거구|constituency|electoral|election/iu.test(JSON.stringify(geography))) throw new Error('E_MAP_SCOPE')
   for (const title of geography.titles) {
     if (!['county', 'duchy', 'kingdom', 'empire'].includes(title.rank)) throw new Error('E_MAP_GRANULARITY')
     const validId = title.rank === 'empire' ? title.id === 'geography:empire:seoul'
       : title.rank === 'kingdom' ? /^geography:kingdom:seoul:0[1-6]$/u.test(title.id)
       : title.rank === 'duchy' ? /^geography:duchy:11\d{3}$/u.test(title.id)
-      : /^geography:county:seoul-constituency:.+선거구$/u.test(title.id)
+      : /^geography:county:[0-9a-f]{16}$/u.test(title.id)
     if (!validId || (title.parentId && !ids.has(title.parentId))
       || title.countyIds.some(id => !counties.has(id))
-      || [...title.datedSlots, ...title.currentSlots].some(slot => !/^region:11\d{8}$/u.test(slot.dongId) && slot.dongId !== 'electoral-dong:22:11230:용신동')) throw new Error('E_MAP_SCOPE')
+      || [...title.datedSlots, ...title.currentSlots].some(slot => !/^region:11\d{8}$/u.test(slot.dongId) && slot.dongId !== 'geography:historical-slot:39d9cf6109eae533')) throw new Error('E_MAP_SCOPE')
   }
 }
 

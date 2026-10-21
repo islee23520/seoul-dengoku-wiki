@@ -6,6 +6,7 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { JSDOM } from 'jsdom'
 import { PersonPermissions } from '../src/pages/PersonDetailPage.tsx'
 import { parsePersonRightsPermissions } from './person-rights-permissions.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 
 const issued = [{ id: 'K998', name: 'same-name' }, { id: 'K999', name: 'same-name' }]
 const missing = () => ({ status: 'not-recorded', uses: [] })
@@ -116,8 +117,8 @@ test('prior-license conditions stay bound to covered source and scope without gr
 })
 
 test('actual canonical registry publishes current confirmed grants without future or external grants', async () => {
-  const actual = JSON.parse(await readFile(new URL('../person-rights-permissions.json', import.meta.url), 'utf8'))
-  const issued = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8')).persons
+  const actual = readCanonicalDocument('person-rights-permissions.json')
+  const issued = readCanonicalDocument('lore/name-pools/person-id-registry.json').persons
   const parsed = parsePersonRightsPermissions(actual, issued)
   const published = []
   for (const id of ['person-0998', 'person-1007', 'person-1008', 'person-1003', 'person-1009', 'person-1019', 'person-0001']) {

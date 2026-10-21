@@ -67,7 +67,7 @@ async function load() {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(geography?.spatialDate ?? '')
     || !/^\d{4}-\d{2}-\d{2}$/.test(geography?.currentDate ?? '')
     || counties?.length !== 48 || new Set(counties.map((county) => county.id)).size !== 48
-    || counties.some((county) => !county.id?.startsWith('geography:county:seoul-constituency:')
+    || counties.some((county) => !/^geography:county:[0-9a-f]{16}$/u.test(county.id ?? '')
       || !parentIds.has(county.parentId) || typeof county.path !== 'string' || !county.path.trim()
       || !Array.isArray(county.datedSlots) || !Array.isArray(county.currentSlots))) {
     throw new Error('E_DATA_GEOGRAPHY: expected published Seoul geography with 48 counties and spatialDate/currentDate')

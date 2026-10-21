@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { createHash } from 'node:crypto'
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
 import { STATION_CATALOG_PATH, loadStationCatalogGeography } from './station-catalog-geography.mjs'
 
 export const STATION_RECEIPT = '.omo/private/seoul-migration/station-catalog-scope-successor-20261019/receipt.json'
@@ -13,10 +14,12 @@ const check = (condition, path) => { if (!condition) throw Object.assign(new Err
 // Preserve immutable receipts by reconstructing their exact predecessor in memory.
 // The new receipt explicitly supersedes the old erroneous geographic conclusion.
 export async function authenticateStationCatalogSuccessor(root, reader = readFile) {
+  const databasePath = process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite')
   const raw = await reader(resolve(root, STATION_RECEIPT))
   check(hash(raw) === receiptSha256, STATION_RECEIPT)
   const receipt = JSON.parse(raw)
-  const current = Buffer.from(await reader(resolve(root, STATION_CATALOG_PATH)))
+  const current = reader === readFile ? readSourceArchive(STATION_CATALOG_PATH, STATION_AFTER, databasePath)
+    : Buffer.from(await reader(resolve(root, STATION_CATALOG_PATH)))
   check(hash(current) === STATION_AFTER && receipt.beforeSha256 === STATION_BEFORE
     && receipt.afterSha256 === STATION_AFTER && receipt.edits.length === 12, STATION_CATALOG_PATH)
   let before = current.toString()
@@ -31,11 +34,14 @@ export async function authenticateStationCatalogSuccessor(root, reader = readFil
 
 export async function stationCatalogPredecessorReader(root, reader = readFile) {
   let current
-  try { current = await reader(resolve(root, STATION_CATALOG_PATH)) }
+  try { current = reader === readFile
+    ? readSourceArchive(STATION_CATALOG_PATH, STATION_AFTER, process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite'))
+    : await reader(resolve(root, STATION_CATALOG_PATH)) }
   catch (error) { if (error.code !== 'ENOENT') throw error }
   if (!current || hash(current) !== STATION_AFTER) return reader
   const successor = await authenticateStationCatalogSuccessor(root, reader)
   const predecessor = async path => resolve(path) === resolve(root, STATION_CATALOG_PATH) ? successor.before : reader(path)
   predecessor.appliedDiskOverrides = new Map(reader.appliedDiskOverrides ?? [])
+  predecessor.readHistorical = reader.readHistorical
   return predecessor
 }

@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
@@ -90,8 +91,8 @@ test('two recorded biological parents form adjacent pairs with one shared descen
 })
 
 test('source adoption and unknown-parent states stay distinct without invented nodes', async () => {
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8')).persons
-  const statuses = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-parent-status.json', import.meta.url), 'utf8')).records
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json').persons
+  const statuses = readCanonicalDocument('lore/name-pools/cast-family-parent-status.json').records
   const files = JSON.parse((await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')).split(' as const')[0].replace('export const peopleCatalog = ', ''))
   for (const record of statuses) {
     const name = registry.find((person) => person.id === record.personId).name

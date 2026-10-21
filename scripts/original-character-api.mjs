@@ -4,7 +4,8 @@ import { characterRulesVersion, draftAbilityIds, draftBodyPartIds, draftProfileF
 
 // Private authoring contract, not a game-observer projection. Never mount this
 // store or its responses in public exports. No legacy value is an original rating.
-const baseline = JSON.parse(readFileSync(new URL('./issued-preservation-baseline.json', import.meta.url), 'utf8'))
+import { loadSheetMetadata } from './cast-sqlite/sheet-metadata.mjs'
+const { baseline } = loadSheetMetadata()
 export const REVISIONS = Object.freeze(Object.keys(baseline.revisions))
 export const RULES_VERSION = characterRulesVersion
 export const PROFILE = Object.freeze({ abilities: draftAbilityIds, base: { minimum: 0, maximum: 20, integer: true },

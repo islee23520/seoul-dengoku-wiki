@@ -1,8 +1,9 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 
-const json = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'))
+const json = async (path) => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'))
 
 test('K1018 retains its stable route and approved identity across published and authoring records', async () => {
   const registry = await json('../lore/name-pools/person-id-registry.json')

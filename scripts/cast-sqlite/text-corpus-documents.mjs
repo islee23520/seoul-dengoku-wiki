@@ -1,8 +1,6 @@
-import { readFileSync } from 'node:fs';
 import { isDeepStrictEqual } from 'node:util';
 import { headingId } from '../lore-json-render.mjs';
-
-const definitions = JSON.parse(readFileSync(new URL('../../lore/authoring.shared.schema.json', import.meta.url), 'utf8')).$defs;
+import { readCanonicalAuthoringSchemas } from './authoring-schema-documents.mjs';
 
 export const TEXT_CORPUS_DOCUMENTS_TABLE_COLUMNS = Object.freeze(Object.fromEntries(Object.entries({
   text_document: 'source_id json_pointer corpus_kind version domain document_id slug status tense_ko tense_en source_kind source_hash original_anchor original_hash data_pointer',
@@ -26,8 +24,8 @@ const plain = (value) => value !== null && typeof value === 'object' && !Array.i
 
 // Interpret the vocabulary used by the shared authoring schema, rather than maintaining
 // a second, subtly stricter document contract. Domain-specific data stays in source_record.
-function valid(value, schema) {
-  if (schema.$ref) return valid(value, definitions[schema.$ref.split('/').at(-1)]);
+function valid(value, schema, definitions) {
+  if (schema.$ref) return valid(value, definitions[schema.$ref.split('/').at(-1)], definitions);
   if (own(schema, 'const') && !isDeepStrictEqual(value, schema.const)) return false;
   if (schema.enum && !schema.enum.some((item) => isDeepStrictEqual(value, item))) return false;
   if (schema.type) {
@@ -41,18 +39,18 @@ function valid(value, schema) {
   if (Array.isArray(value)) {
     if (schema.minItems !== undefined && value.length < schema.minItems) return false;
     if (schema.uniqueItems && value.some((item, index) => value.slice(0, index).some((other) => isDeepStrictEqual(item, other)))) return false;
-    if (schema.items && !value.every((item) => valid(item, schema.items))) return false;
+    if (schema.items && !value.every((item) => valid(item, schema.items, definitions))) return false;
   }
   if (plain(value)) {
     if (schema.required?.some((key) => !own(value, key))) return false;
     if (schema.additionalProperties === false && Object.keys(value).some((key) => !own(schema.properties ?? {}, key))) return false;
-    if (Object.entries(schema.properties ?? {}).some(([key, child]) => own(value, key) && !valid(value[key], child))) return false;
+    if (Object.entries(schema.properties ?? {}).some(([key, child]) => own(value, key) && !valid(value[key], child, definitions))) return false;
   }
-  if (schema.oneOf && schema.oneOf.filter((child) => valid(value, child)).length !== 1) return false;
-  if (schema.anyOf && !schema.anyOf.some((child) => valid(value, child))) return false;
-  if (schema.allOf && !schema.allOf.every((child) => valid(value, child))) return false;
-  if (schema.not && valid(value, schema.not)) return false;
-  if (schema.if && !valid(value, valid(value, schema.if) ? schema.then ?? {} : schema.else ?? {})) return false;
+  if (schema.oneOf && schema.oneOf.filter((child) => valid(value, child, definitions)).length !== 1) return false;
+  if (schema.anyOf && !schema.anyOf.some((child) => valid(value, child, definitions))) return false;
+  if (schema.allOf && !schema.allOf.every((child) => valid(value, child, definitions))) return false;
+  if (schema.not && valid(value, schema.not, definitions)) return false;
+  if (schema.if && !valid(value, valid(value, schema.if, definitions) ? schema.then ?? {} : schema.else ?? {}, definitions)) return false;
   return true;
 }
 
@@ -61,7 +59,7 @@ function valid(value, schema) {
  * Returned table-keyed frozen rows are inserted in TEXT_CORPUS_DOCUMENTS_TABLE_COLUMNS order.
  * Link resolution is a second pass and never crosses corpus_kind, including historical revisions.
  */
-export function mapTextCorpusDocuments({ files }) {
+export function mapTextCorpusDocuments({ files, definitions = readCanonicalAuthoringSchemas()['lore/authoring.shared.schema.json'].$defs }) {
   if (!Array.isArray(files)) fail('E_TEXT_DOCUMENT_INPUT', 'files must be an array');
   const tables = Object.fromEntries(Object.keys(TEXT_CORPUS_DOCUMENTS_TABLE_COLUMNS).map((table) => [table, []]));
   const sources = new Set();
@@ -70,7 +68,7 @@ export function mapTextCorpusDocuments({ files }) {
   for (const file of files) {
     if (!plain(file) || !Number.isSafeInteger(file.source_id) || !['current', 'historical', 'example'].includes(file.corpus_kind)) fail('E_TEXT_DOCUMENT_INPUT', 'source_id and corpus_kind required');
     if (file.content_policy !== 'local-corpus') fail('E_TEXT_DOCUMENT_POLICY', `source ${file.source_id} is not admitted for local corpus storage`);
-    if (!valid(file.document, definitions.envelope)) fail('E_TEXT_DOCUMENT_SHAPE', `source ${file.source_id}: invalid version 1 authoring envelope`);
+    if (!valid(file.document, definitions.envelope, definitions)) fail('E_TEXT_DOCUMENT_SHAPE', `source ${file.source_id}: invalid version 1 authoring envelope`);
     if (sources.has(file.source_id)) fail('E_TEXT_DOCUMENT_DUPLICATE_SOURCE', String(file.source_id));
     sources.add(file.source_id);
     const d = file.document;
