@@ -54,7 +54,7 @@ export async function openPublicationDatabaseInputs(root, config) {
     }
     if (typeof config.privateStores.soulAssignments !== 'string' || !isAbsolute(config.privateStores.soulAssignments)) throw Error('E_PUBLICATION_PRIVATE_DATABASE');
     privateStores.soulAssignments = openSoulAssignments(config.privateStores.soulAssignments, {
-      capability: INTERNAL_SOUL_CAPABILITY, scope: 'internal', expectedSha256: SOUL_ASSIGNMENT_SOURCE_SHA256 });
+      capability: INTERNAL_SOUL_CAPABILITY, scope: 'internal', expectedSha256: SOUL_ASSIGNMENT_SOURCE_SHA256, view: 'approved' });
     handles.push(privateStores.soulAssignments);
     const bindings = new Map(), externalBindings = new Map();
     for (const row of capture.bindings) {

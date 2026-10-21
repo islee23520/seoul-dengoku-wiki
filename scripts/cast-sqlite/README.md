@@ -33,6 +33,8 @@ Git checkout만으로 LFS 실체가 준비됐다고 가정하지 않는다. 작�
 
 현재 document-cli의 지원 범위는 문서 편집이다. 인물 수치·권리·직책·가계·Soul 등 임의의 도메인을 같은 명령으로 수정할 수 있다고 약속하지 않는다. 필요한 변경을 기존 typed 명령으로 표현할 수 없다면 지원 범위를 확인하고 별도 구현·검토 대상으로 기록한다. 임의 SQL 쓰기로 지원되지 않는 편집 계약을 우회하지 않는다.
 
+비공개 Soul 배정은 별도 `scripts/document-store/soul-assignment-cli.mjs`로 편집한다. `init-edits --db <path> --actor <actor> --reason <reason>`는 mode `600`인 기존 DB에 개정 저장소를 명시적으로 추가한다. `read`와 `revision`은 현재 head를 읽으며, `replace`는 `--person-id`, `--expected-revision`, `--actor`, `--reason`과 stdin의 완전한 typed assignment를 받는다. 편집은 `draft`이고 `approvalRef`를 허용하지 않는다. 원본 승인 revision `0`, 안정 ID 1,022개와 과거 개정은 보존한다. 별도 검토 전까지 게시 인증은 명시적인 `view: 'approved'`로 원래 승인 스냅샷만 읽는다.
+
 ## 문서 편집과 revision 이력
 
 1. document-cli의 list/read로 대상의 논리 ID, 현재 head, 문서 상태와 내용을 확인한다.

@@ -3,11 +3,12 @@ import { closeSync, openSync, readFileSync, statSync, unlinkSync } from 'node:fs
 import { DatabaseSync } from 'node:sqlite';
 import { validateSoulAssignments } from '../validate-soul-assignments.mjs';
 
-// Internal snapshot only: initialization records supplied approval evidence, never grants approval.
+// Private authoring: imports retain approval evidence; edits only create drafts.
 export const INTERNAL_SOUL_CAPABILITY = Symbol('internal Soul-Assignments');
 export const SOUL_ASSIGNMENT_SOURCE_SHA256 = '695638585da68178204cfb94c77f87653207d7f28e82c948015500fc5a70c002';
 const APPLICATION_ID = 0x57534f55;
 const schema = readFileSync(new URL('./soul-assignment.sql', import.meta.url), 'utf8');
+const editSchema = readFileSync(new URL('./soul-assignment-edit.sql', import.meta.url), 'utf8');
 const definitions = {
   "document": {
     "schema": "text",
@@ -114,15 +115,19 @@ const quote = name => '"' + name + '"';
 function authorize({capability,scope='internal'}) {
   if (capability !== INTERNAL_SOUL_CAPABILITY || scope !== 'internal') fail('E_PRIVATE');
 }
-function writeDomain(db, domain, key, parent, ordinal, value) {
+function writeDomain(db, domain, key, parent, ordinal, value, revisionId) {
   const def = definitions[domain];
+  function insert(columns, values) {
+    if (revisionId !== undefined) { columns.push('revision_id'); values.push(revisionId); }
+    db.prepare('INSERT INTO '+table(domain)+' ('+columns.map(quote).join(',')+') VALUES ('+columns.map(()=>'?').join(',')+')').run(...values);
+  }
   if (domain==='historical_source' && typeof value==='string') {
-    db.prepare('INSERT INTO soul_historical_source (row_key,parent_key,ordinal,field_order,url,source_kind) VALUES (?,?,?,?,?,?)').run(key,parent,ordinal,'',value,'url');
+    insert(['row_key','parent_key','ordinal','field_order','url','source_kind'],[key,parent,ordinal,'',value,'url']);
     return;
   }
   if (typeof def === 'string') {
     if (typeof value !== 'string') fail('E_SOUL_SHAPE');
-    db.prepare('INSERT INTO '+table(domain)+' VALUES (?,?,?,?,?)').run(key,parent,ordinal,'value',value);
+    insert(['row_key','parent_key','ordinal','field_order','value'],[key,parent,ordinal,'value',value]);
     return;
   }
   if (!value || typeof value !== 'object' || Array.isArray(value)) fail('E_SOUL_SHAPE');
@@ -142,21 +147,22 @@ function writeDomain(db, domain, key, parent, ordinal, value) {
   })];
   if (domain==='assignment') { columns.push('counter_kind'); values.push(!Object.hasOwn(value,'counterEvidence')?null:Array.isArray(value.counterEvidence)?'array':'text'); }
   if (domain==='historical_source') { columns.push('source_kind'); values.push('record'); }
-  db.prepare('INSERT INTO '+table(domain)+' ('+columns.map(quote).join(',')+') VALUES ('+columns.map(()=>'?').join(',')+')').run(...values);
+  insert(columns,values);
   for (const field of keys) {
     const type=def[field], v=value[field], childKey=key+'/'+field;
     const items=Array.isArray(type)?type[0]:type==='counter'&&Array.isArray(v)?'counter_item':null;
     if (items) {
       if (!Array.isArray(v)) fail('E_SOUL_SHAPE');
-      v.forEach((item,i)=>writeDomain(db,items,childKey+'/'+i,childKey,i,item));
-    } else if (!scalar(type) && type!=='counter') writeDomain(db,type,childKey,key,0,v);
+      v.forEach((item,i)=>writeDomain(db,items,childKey+'/'+i,childKey,i,item,revisionId));
+    } else if (!scalar(type) && type!=='counter') writeDomain(db,type,childKey,key,0,v,revisionId);
   }
 }
 function readDocument(db, revision) {
   const visited = new Map();
   function domainValue(domain,key,parent,ordinal) {
     const row=db.prepare('SELECT * FROM '+table(domain)+' WHERE row_key=?').get(key);
-    if (!row || row.parent_key!==parent || row.ordinal!==ordinal) fail('E_SOUL_INTEGRITY');
+    if (!row || row.parent_key!==parent || row.ordinal!==ordinal
+      || (revision.revision_id!==undefined && row.revision_id!==revision.revision_id)) fail('E_SOUL_INTEGRITY');
     const seen=visited.get(domain) ?? new Set();
     if (seen.has(key)) fail('E_SOUL_INTEGRITY');
     seen.add(key);visited.set(domain,seen);
@@ -176,8 +182,14 @@ function readDocument(db, revision) {
     }
     return result;
   }
-  const document=domainValue('document','document','root',0);
-  for(const domain of Object.keys(definitions)) if(db.prepare('SELECT count(*) AS n FROM '+table(domain)).get().n!==(visited.get(domain)?.size??0))fail('E_SOUL_INTEGRITY');
+  const prefix=revision.revision_id>0?'revision/'+revision.revision_id+'/':'';
+  const document=domainValue('document',prefix+'document',prefix+'root',0);
+  for(const domain of Object.keys(definitions)) {
+    const count=revision.revision_id===undefined
+      ? db.prepare('SELECT count(*) AS n FROM '+table(domain)).get().n
+      : db.prepare('SELECT count(*) AS n FROM '+table(domain)+' WHERE revision_id=?').get(revision.revision_id).n;
+    if(count!==(visited.get(domain)?.size??0))fail('E_SOUL_INTEGRITY');
+  }
   const identities=db.prepare('SELECT person_id FROM soul_identity ORDER BY person_id').all().map(r=>r.person_id);
   const actual=document.assignments.map(a=>a.personId).sort();
   if (sha(JSON.stringify(document))!==revision.snapshot_sha256 || document.assignments.length!==revision.assignment_count || JSON.stringify(identities)!==JSON.stringify(actual)) fail('E_SOUL_INTEGRITY');
@@ -186,7 +198,7 @@ function readDocument(db, revision) {
 
 /** Caller supplies exact approved bytes and their expected digest in memory.
  * No logical source path is opened; the archived bytes are immutable evidence only.
- * The one imported revision is a read-only snapshot, not an authoring authority.
+ * The imported revision remains immutable after the separate edit-schema migration.
  */
 export function initializeSoulAssignments(path, options={}) {
   authorize(options);
@@ -217,20 +229,126 @@ export function initializeSoulAssignments(path, options={}) {
   }
 }
 
-export function openSoulAssignments(path, options={}) {
+function openDatabase(path, options, readOnly=true) {
   authorize(options);
   if((statSync(path).mode&0o777)!==0o600)fail('E_PRIVATE_MODE');
-  const db=new DatabaseSync(path,{readOnly:true,enableForeignKeyConstraints:true});
+  const db=new DatabaseSync(path,{readOnly,enableForeignKeyConstraints:true});
   try {
-    if(db.prepare('PRAGMA application_id').get().application_id!==APPLICATION_ID||db.prepare('PRAGMA user_version').get().user_version!==1)fail('E_SCHEMA');
+    if(db.prepare('PRAGMA application_id').get().application_id!==APPLICATION_ID||![1,2].includes(db.prepare('PRAGMA user_version').get().user_version))fail('E_SCHEMA');
     const revision=db.prepare('SELECT * FROM soul_revision').all();
     if(revision.length!==1||revision[0].singleton!==1||revision[0].source_sha256!==options.expectedSha256)fail('E_SOUL_HASH');
-    db.exec('PRAGMA query_only=ON');
+    if(readOnly)db.exec('PRAGMA query_only=ON');
   }catch(error){db.close();throw error;}
-  function read() {
+  return db;
+}
+
+function audit({actor,reason}) {
+  if(typeof actor!=='string'||!actor.trim()||typeof reason!=='string'||!reason.trim())fail('E_SOUL_AUDIT');
+}
+
+function revisionRecord(db, selection) {
+  if(selection!==undefined&&(!Number.isSafeInteger(selection)||selection<0))fail('E_SOUL_REVISION');
+  if(db.prepare('PRAGMA user_version').get().user_version===1) {
+    if(selection!==undefined&&selection!==0)fail('E_SOUL_REVISION');
+    return {...db.prepare('SELECT * FROM soul_revision WHERE singleton=1').get(),revision_id:0,parent_revision:null,status:'imported'};
+  }
+  const id=selection??db.prepare('SELECT revision_id FROM soul_head WHERE singleton=1').get()?.revision_id;
+  const revision=db.prepare('SELECT * FROM soul_edit_revision WHERE revision_id=?').get(id??null);
+  if(!revision)fail('E_SOUL_REVISION');
+  return revision;
+}
+
+function readSnapshot(db, selection) {
+  const revision=revisionRecord(db,selection);
+  const legacy=db.prepare('PRAGMA user_version').get().user_version===1;
+  const document=readDocument(db,legacy?{...revision,revision_id:undefined}:revision);
+  return {revision,document};
+}
+
+/** Explicit writable migration. Reads never initialize or migrate a database. */
+export function initializeSoulAssignmentEdits(path, options={}) {
+  authorize(options);audit(options);
+  const db=openDatabase(path,options,false);
+  try {
+    db.exec('BEGIN IMMEDIATE');
+    if(db.prepare('PRAGMA user_version').get().user_version!==1)fail('E_SOUL_EDIT_SCHEMA_EXISTS');
+    const original=readSnapshot(db,0);
+    db.exec(editSchema);
+    db.prepare('INSERT INTO soul_edit_revision VALUES (0,NULL,?,?,?,?,?,?,?,?)').run(
+      original.revision.source_sha256,original.revision.snapshot_sha256,original.revision.assignment_count,
+      'imported',original.revision.actor,original.revision.reason,original.revision.initialized_at,null);
+    db.prepare('INSERT INTO soul_edit_initialization VALUES (1,?,?,?)').run(options.actor,options.reason,new Date().toISOString());
+    for(const domain of Object.keys(definitions)) {
+      const name=table(domain);
+      db.exec('ALTER TABLE '+name+' ADD COLUMN revision_id INTEGER NOT NULL DEFAULT 0 CHECK(revision_id>=0)');
+      db.exec('CREATE INDEX '+name+'_revision ON '+name+'(revision_id)');
+      db.exec(`CREATE TRIGGER ${name}_no_update BEFORE UPDATE ON ${name} BEGIN SELECT RAISE(ABORT,'immutable soul revision'); END;
+        CREATE TRIGGER ${name}_no_delete BEFORE DELETE ON ${name} BEGIN SELECT RAISE(ABORT,'immutable soul revision'); END;
+        CREATE TRIGGER ${name}_revision_insert BEFORE INSERT ON ${name} BEGIN
+          SELECT CASE WHEN NOT EXISTS (SELECT 1 FROM soul_edit_revision WHERE revision_id=NEW.revision_id)
+            OR NEW.revision_id<=COALESCE((SELECT revision_id FROM soul_head WHERE singleton=1),0)
+            THEN RAISE(ABORT,'sealed soul revision') END;
+        END;`);
+    }
+    db.exec('INSERT INTO soul_head VALUES (1,0); PRAGMA user_version=2');
+    readSnapshot(db,0);
+    db.exec('COMMIT');
+    return original.revision;
+  } catch(error) { if(db.isTransaction)db.exec('ROLLBACK');throw error; }
+  finally { db.close(); }
+}
+
+/** Replace one existing person's typed assignment. This API cannot grant approval. */
+export function replaceSoulAssignment(path, options={}) {
+  authorize(options);audit(options);
+  const {personId,expectedRevision,assignment}=options;
+  if(!Number.isSafeInteger(expectedRevision)||expectedRevision<0)fail('E_SOUL_REVISION');
+  if(typeof personId!=='string'||!personId.trim())fail('E_SOUL_IDENTITY');
+  if(!assignment||typeof assignment!=='object'||Array.isArray(assignment))fail('E_SOUL_SHAPE');
+  if(assignment.status!=='draft'||Object.hasOwn(assignment,'approvalRef'))fail('E_SOUL_APPROVAL');
+  const db=openDatabase(path,options,false);
+  try {
+    db.exec('BEGIN IMMEDIATE');
+    if(db.prepare('PRAGMA user_version').get().user_version!==2)fail('E_SOUL_EDIT_SCHEMA_REQUIRED');
+    const current=readSnapshot(db);
+    if(current.revision.revision_id!==expectedRevision)fail('E_SOUL_CONFLICT');
+    const index=current.document.assignments.findIndex(a=>a.personId===personId);
+    if(index<0||assignment.personId!==personId||assignment.name!==current.document.assignments[index].name)fail('E_SOUL_IDENTITY');
+    const document=current.document;
+    document.assignments[index]=assignment;
+    document.status='draft';
+    const registry={totalPeople:1022,persons:db.prepare('SELECT "personId" AS id,name FROM soul_assignment WHERE revision_id=0 ORDER BY ordinal').all()};
+    if(validateSoulAssignments(document,registry,{complete:true}).length)fail('E_SOUL_SHAPE');
+    const id=expectedRevision+1;
+    if(!Number.isSafeInteger(id))fail('E_SOUL_REVISION');
+    db.prepare('INSERT INTO soul_edit_revision VALUES (?,?,?,?,?,?,?,?,?,?)').run(
+      id,expectedRevision,current.revision.source_sha256,sha(JSON.stringify(document)),1022,
+      'draft',options.actor,options.reason,new Date().toISOString(),personId);
+    writeDomain(db,'document','revision/'+id+'/document','revision/'+id+'/root',0,document,id);
+    readSnapshot(db,id);
+    const updated=db.prepare('UPDATE soul_head SET revision_id=? WHERE singleton=1 AND revision_id=?').run(id,expectedRevision);
+    if(updated.changes!==1)fail('E_SOUL_CONFLICT');
+    const revision=revisionRecord(db,id);
+    db.exec('COMMIT');
+    return revision;
+  } catch(error) { if(db.isTransaction)db.exec('ROLLBACK');throw error; }
+  finally { db.close(); }
+}
+
+/** Current head by default; view:'approved' explicitly pins the imported typed snapshot. */
+export function openSoulAssignments(path, options={}) {
+  const view=options.view??'current';
+  authorize(options);
+  if(!['current','approved'].includes(view))fail('E_SOUL_VIEW');
+  const db=openDatabase(path,options);
+  function read({revision}={}) {
+    if(view==='approved'&&revision!==undefined&&revision!==0)fail('E_SOUL_REVISION');
     db.exec('BEGIN');
-    try {const document=readDocument(db,db.prepare('SELECT * FROM soul_revision WHERE singleton=1').get());db.exec('COMMIT');return document;}
+    try {const snapshot=readSnapshot(db,view==='approved'?0:revision);db.exec('COMMIT');return snapshot;}
     catch(error){if(db.isTransaction)db.exec('ROLLBACK');throw error;}
   }
-  return Object.freeze({close:()=>db.close(),readDocument:read,readAssignmentMap:()=>new Map(read().assignments.map(a=>[a.personId,a]))});
+  return Object.freeze({close:()=>db.close(),readSnapshot:read,
+    readRevision:revision=>read({revision}).revision,
+    readDocument:selection=>read(selection).document,
+    readAssignmentMap:()=>new Map(read().document.assignments.map(a=>[a.personId,a]))});
 }

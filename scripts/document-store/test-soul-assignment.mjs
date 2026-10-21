@@ -11,7 +11,7 @@ import { profileRosterFailures } from '../character-profile.mjs';
 import { validateSoulAssignments } from '../validate-soul-assignments.mjs';
 import { openDocumentStore } from './store.mjs';
 import { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } from './evidence.mjs';
-import { initializeSoulAssignments, openSoulAssignments, INTERNAL_SOUL_CAPABILITY, SOUL_ASSIGNMENT_SOURCE_SHA256 } from './soul-assignment.mjs';
+import { initializeSoulAssignments, initializeSoulAssignmentEdits, replaceSoulAssignment, openSoulAssignments, INTERNAL_SOUL_CAPABILITY, SOUL_ASSIGNMENT_SOURCE_SHA256 } from './soul-assignment.mjs';
 import { openReadOnly } from '../cast-sqlite/db.mjs';
 import { readAtlasIdentity } from '../cast-sqlite/atlas-identity.mjs';
 
@@ -38,6 +38,41 @@ function fixture(t) {
   t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));
   return join(dir,'private.sqlite');
 }
+
+test('private edits preserve imported approval and prior typed revisions while stale and invalid changes roll back', t => {
+  const path = fixture(t);
+  initializeSoulAssignments(path, init);
+  initializeSoulAssignmentEdits(path, { ...options, actor: 'editor', reason: 'Enable private authoring' });
+  const replacement = structuredClone(original.assignments[0]);
+  replacement.status = 'draft';
+  delete replacement.approvalRef;
+  const edit = { ...options, personId: replacement.personId, expectedRevision: 0,
+    actor: 'editor', reason: 'Private draft revision', assignment: replacement };
+  assert.equal(replaceSoulAssignment(path, edit).revision_id, 1);
+  const current = openSoulAssignments(path, options);
+  const approved = openSoulAssignments(path, { ...options, view: 'approved' });
+  try {
+    assert.deepEqual(approved.readDocument(), original);
+    assert.deepEqual(current.readDocument({ revision: 0 }), original);
+    assert.equal(current.readRevision().revision_id, 1);
+    assert.equal(current.readDocument().status, 'draft');
+    assert.deepEqual(current.readAssignmentMap().get(replacement.personId), replacement);
+    assert.throws(() => replaceSoulAssignment(path, edit), { code: 'E_SOUL_CONFLICT' });
+    const bytes = fs.readFileSync(path);
+    assert.throws(() => replaceSoulAssignment(path, { ...edit, expectedRevision: 1,
+      assignment: { ...replacement, unknownField: 'invalid' } }), { code: 'E_SOUL_UNKNOWN_FIELD' });
+    assert.deepEqual(fs.readFileSync(path), bytes);
+    assert.throws(() => replaceSoulAssignment(path, { ...edit, expectedRevision: 1,
+      assignment: { ...replacement, approvalRef: 'not-approved' } }), { code: 'E_SOUL_APPROVAL' });
+    assert.equal(replaceSoulAssignment(path, { ...edit, expectedRevision: 1, reason: 'Second private draft' }).revision_id, 2);
+    assert.equal(current.readRevision(1).revision_id, 1);
+    assert.equal(current.readRevision().revision_id, 2);
+    assert.deepEqual(approved.readDocument(), original);
+  } finally { current.close(); approved.close(); }
+  const archive = new DatabaseSync(path, { readOnly: true });
+  try { assert.deepEqual(Buffer.from(archive.prepare('SELECT raw_bytes FROM soul_archive').get().raw_bytes), approvedBytes); }
+  finally { archive.close(); }
+});
 
 test('complete actual document round-trips in exact JSON order from typed rows after reopen without JSON parsing or source reads',t=>{
   const path=fixture(t);

@@ -51,7 +51,7 @@ export async function loadDatabasePersonProductionInputs({ db, repoRoot, editori
   const inputs = await loadMigratedPersonInputs({ db, repoRoot });
   const characterProfiles = await readEditorialProfileInputs(editorialProfileDb);
   const souls = openSoulAssignments(soulAssignmentDb, { capability: INTERNAL_SOUL_CAPABILITY,
-    expectedSha256: SOUL_ASSIGNMENT_SOURCE_SHA256 });
+    expectedSha256: SOUL_ASSIGNMENT_SOURCE_SHA256, view: 'approved' });
   try {
     const failures = profileRosterFailures([...characterProfiles.values()], inputs.atlasPeople.registry, souls.readDocument());
     if (failures.length) throw new Error(failures.join('\n'));

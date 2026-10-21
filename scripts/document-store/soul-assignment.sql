@@ -1,4 +1,5 @@
--- Private, read-only Soul-Assignments snapshot. Named domain tables, no JSON authority.
+-- Private initial Soul-Assignments snapshot. Named domain tables, no JSON authority.
+-- The explicit soul-assignment-edit.sql migration adds immutable draft revisions.
 CREATE TABLE soul_revision (singleton INTEGER PRIMARY KEY CHECK(singleton=1), source_sha256 TEXT NOT NULL, snapshot_sha256 TEXT NOT NULL, assignment_count INTEGER NOT NULL, actor TEXT NOT NULL, reason TEXT NOT NULL, initialized_at TEXT NOT NULL) STRICT;
 CREATE TABLE soul_archive (singleton INTEGER PRIMARY KEY CHECK(singleton=1), sha256 TEXT NOT NULL, raw_bytes BLOB NOT NULL) STRICT;
 CREATE TRIGGER soul_archive_no_update BEFORE UPDATE ON soul_archive BEGIN SELECT RAISE(ABORT,'immutable soul evidence'); END;
