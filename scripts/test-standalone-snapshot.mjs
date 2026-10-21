@@ -48,7 +48,7 @@ describe('standalone pure holdings snapshot inputs', () => {
         import { readSourceArchive } from ${JSON.stringify(new URL('./cast-sqlite/source-archive.mjs', import.meta.url).href)};
         const root = ${JSON.stringify(root)};
         const read = path => readFile(resolve(root, path));
-        const json = async path => path.startsWith('lore/') ? readCanonicalDocument(path) : JSON.parse(await read(path));
+        const json = async path => path.startsWith('lore/') ? readCanonicalDocument(path, { predecessor: true }) : JSON.parse(await read(path));
         const courtDataset = loadDataset();
         const errors = validate(courtDataset);
         if (errors.length) throw new Error(errors.join('; '));
