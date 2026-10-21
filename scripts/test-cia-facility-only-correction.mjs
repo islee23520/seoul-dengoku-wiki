@@ -11,6 +11,8 @@ import { test } from 'vitest';
 import { CIA_FACILITY_DECISION, correctCiaFacilityFootprint, authenticateCiaFacilityCorrection,
   isAuthenticatedCiaFacilityCorrection, materializeCiaFacilityContract } from './cia-facility-only-correction.mjs';
 import { CIA_FACILITY_OWNER_BYTES } from './cia-facility-projection-input.mjs';
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs';
+import { queryPerson } from './cast-sqlite/query.mjs';
 
 const json = path => JSON.parse(archived(path));
 const original = {
@@ -19,6 +21,23 @@ const original = {
   district: json('lore/regions/content/11170.json'),
   decisionRef: CIA_FACILITY_DECISION,
 };
+
+test('persisted current rights exclude the retired duchy while predecessor domains remain available', () => {
+  const allocation = readCanonicalDocument('lore/relations/opening-feudal-allocation.json');
+  assert.deepEqual(allocation.titles.filter(row => row.stateId === 'S08'), []);
+  assert.deepEqual(allocation.grants.filter(row => row.stateId === 'S08'), []);
+  const district = readCanonicalDocument('lore/regions/content/11170.json');
+  for (const id of ['region:1117051000', 'region:1117052000', 'region:1117066000']) {
+    const territory = district.regions.find(row => row.region_id === id).content.territory;
+    assert.equal(territory.status, 'unassigned');
+    assert.deepEqual(territory.holders, []);
+  }
+  const person = queryPerson({ dbPath: new URL('../data/canonical/wiki-cast.sqlite', import.meta.url).pathname, id: 'K194' });
+  assert.deepEqual(person.current.context.titles, []);
+  assert.deepEqual(person.current.context.grants, []);
+  assert.equal(person.current.holdings.find(row => row.holding_id === 'holding:capital-s08').holder_person_id, 'K194');
+  assert.equal(original.allocation.titles.filter(row => row.id === 'title:duchy-s08').length, 1);
+});
 
 test('owner decision authenticates only exact predecessor bytes and the complete facility-only successor', () => {
   const decisionBytes = CIA_FACILITY_OWNER_BYTES;

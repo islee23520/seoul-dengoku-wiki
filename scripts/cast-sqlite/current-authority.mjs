@@ -4,6 +4,7 @@ import { APPLICATION_ID, SCHEMA_VERSION, runIntegrityChecks } from './db.mjs';
 import { readDocument } from './document-read.mjs';
 import { EXCLUDED_SOURCE_PATHS } from './excluded-sources.mjs';
 import { ENGINE_PRIVATE_SOURCE_PATHS } from './current-engine.mjs';
+import { readCiaCurrentRights } from './cia-current-rights.mjs';
 
 const fail = (code, detail) => { throw Object.assign(new Error(`${code}: ${detail}`), { code }); };
 const quote = (name) => `"${name.replaceAll('"', '""')}"`;
@@ -30,6 +31,7 @@ export function reviewCurrentAuthority(db, { requireClean = false } = {}) {
     || db.prepare('PRAGMA user_version').get().user_version !== SCHEMA_VERSION
     || db.prepare('PRAGMA query_only').get().query_only !== 1) fail('E_AUTHORITY_DATABASE', 'compatible read-only database required');
   const integrity = runIntegrityChecks(db);
+  readCiaCurrentRights(db);
   const tables = db.prepare('PRAGMA table_list').all().filter((row) => row.schema === 'main' && !row.name.startsWith('sqlite_'));
   if (tables.some((row) => row.type !== 'table' || row.strict !== 1)) fail('E_AUTHORITY_SCHEMA', 'STRICT typed tables required');
   for (const table of ['document_authority', 'document_head', 'document_revision', 'document_revision_seal', 'text_document', 'source_file', 'excluded_source']) {
