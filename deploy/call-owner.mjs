@@ -1,7 +1,7 @@
 import { resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
 
-const timeoutMs = 35 * 60 * 1000
+const timeoutMs = 125 * 60 * 1000
 const maxLineLength = 64 * 1024
 const maxResponseBytes = 8 * 1024 * 1024
 
