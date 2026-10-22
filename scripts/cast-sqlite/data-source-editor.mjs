@@ -28,6 +28,10 @@ const requireText = (value, label) => { if (typeof value !== 'string' || !value.
 
 const VALUES_PATH = 'lore/name-pools/values-cast.json';
 const OFFICE_PATH = 'lore/relations/opening-office-appointments.json';
+const ALLOCATION_PATH = 'lore/relations/opening-feudal-allocation.json';
+const HOLDINGS_PATH = 'lore/relations/personal-holdings.json';
+const DISSOLVED_TITLES = ['title:kingdom-daejeon', 'proposal:superior-jurisdiction:seoul:daejeon-dong', 'proposal:superior-jurisdiction:seoul:daejeon-jung', 'proposal:superior-jurisdiction:seoul:daejeon-seo', 'proposal:superior-jurisdiction:seoul:daejeon-yuseong', 'proposal:superior-jurisdiction:seoul:daejeon-daedeok'];
+const DISSOLVED_HOLDINGS = ['holding:daejeon-dong', 'holding:daejeon-yuseong', 'holding:daejeon-jung', 'holding:daejeon-seo', 'holding:daejeon-daedeok'];
 const DATA_SOURCE_TABLES_SQL = `
 CREATE TABLE IF NOT EXISTS data_source_revision (
   revision_id TEXT NOT NULL PRIMARY KEY,
@@ -111,115 +115,80 @@ function revisionChain(db, sourcePath, mutator, actor, reason, approvalRef) {
   });
 }
 
-/**
- * Owner-directed office appointment corrections over the effective
- * appointments document. Each change replaces one person's appointment entry
- * (or appends a new one) and remaps that person's context_office_* rows in the
- * same transaction. Evidence references must resolve to archived sources.
- */
-export function editOfficeAppointments({ dbPath, changes, actor, reason, approvalRef }) {
-  requireText(dbPath, 'dbPath'); requireText(actor, 'actor'); requireText(reason, 'reason'); requireText(approvalRef, 'approvalRef');
-  if (!Array.isArray(changes) || !changes.length) fail('E_DATA_EDITOR_COMMAND', 'nonempty appointment changes required');
-  if (!statSync(dbPath).isFile()) fail('E_DOCUMENT_DATABASE', 'existing database file required');
-  const db = new DatabaseSync(dbPath, { enableForeignKeyConstraints: true });
-  try {
-    schemaIdentity(db);
-    db.exec(DATA_SOURCE_TABLES_SQL);
-    bootstrapDataAuthority(db, OFFICE_PATH);
-    return revisionChain(db, OFFICE_PATH, (document) => {
-      const sourceRow = db.prepare('SELECT source_id FROM source_file WHERE logical_path=?').get(OFFICE_PATH);
-      const sourceId = sourceRow.source_id;
-      const applied = [];
-      for (const change of changes) {
-        if (!change?.personId || !change?.entry) fail('E_DATA_EDITOR_COMMAND', 'personId and entry required');
-        const index = document.appointments.findIndex((row) => row.personId === change.personId);
-        if (index >= 0) document.appointments[index] = change.entry;
-        else document.appointments.push(change.entry);
-        const ordinal = document.appointments.findIndex((row) => row.personId === change.personId);
-        const entry = document.appointments[ordinal];
-        // A pointer that the archived import never contained (a newly appended
-        // entry) needs typed source_record rows so the context rows can cite it.
-        const pointerExists = db.prepare('SELECT 1 FROM source_record WHERE source_id=? AND json_pointer=?').get(sourceId, `/appointments/${ordinal}/current`);
-        if (!pointerExists) {
-          const subtree = { appointments: {} };
-          subtree.appointments[ordinal] = entry;
-          for (const row of flattenJson(subtree)) {
-            const existing = db.prepare('SELECT 1 FROM source_record WHERE source_id=? AND json_pointer=?').get(sourceId, row.json_pointer);
-            if (existing || row.json_pointer === '' || row.json_pointer === '/appointments') continue;
-            db.prepare('INSERT INTO source_record (source_id, json_pointer, parent_pointer, ordinal, field_name, json_type, text_value, integer_value, real_value, boolean_value) VALUES (?,?,?,?,?,?,?,?,?,?)')
-              .run(sourceId, row.json_pointer, row.parent_pointer, row.ordinal, row.field_name, row.json_type, row.text_value, row.integer_value, row.real_value, row.boolean_value);
-          }
-        }
-        const position = entry.current.position === null ? null : entry.current.position;
-        const rank = entry.current.rank === null ? null : entry.current.rank;
-        db.prepare('DELETE FROM context_office_evidence WHERE person_id=?').run(change.personId);
-        db.prepare('DELETE FROM context_office_history WHERE person_id=?').run(change.personId);
-        db.prepare('DELETE FROM context_office_appointment WHERE person_id=?').run(change.personId);
-        db.prepare('INSERT INTO context_office_appointment (person_id, polity_id, position_ko, position_en, rank_ko, rank_en, common_tier, status, source_schema, opening_year, catalog_status, source_id, json_pointer) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)')
-          .run(change.personId, entry.stateId, position?.ko ?? null, position?.en ?? null, rank?.ko ?? null, rank?.en ?? null,
-            entry.current.commonTier, entry.current.status, document.schema, document.openingYear, 'current-catalog-input', sourceId, `/appointments/${ordinal}/current`);
-        db.prepare('INSERT INTO context_office_history (person_id, polity_id, position_ko, position_en, rank_ko, rank_en, common_tier, approval_ref, source_id, json_pointer) VALUES (?,?,?,?,?,?,?,?,?,?)')
-          .run(change.personId, entry.history.stateId, entry.history.position?.ko ?? null, entry.history.position?.en ?? null,
-            entry.history.rank?.ko ?? null, entry.history.rank?.en ?? null, entry.history.commonTier, entry.history.approvalRef ?? null,
-            sourceId, `/appointments/${ordinal}/history`);
-        for (const [index2, ref] of (entry.current.evidence ?? []).entries()) {
-          const target = db.prepare('SELECT source_id FROM source_file WHERE logical_path=?').get(ref.path);
-          if (!target) fail('E_DATA_EDITOR_EVIDENCE', ref.path);
-          db.prepare('INSERT INTO context_office_evidence (person_id, ordinal, reference_path, reference_pointer, evidence_kind, reference_source_id, reference_json_pointer, source_id, json_pointer) VALUES (?,?,?,?,?,?,?,?,?)')
-            .run(change.personId, index2, ref.path, ref.jsonPointer, ref.kind, target.source_id, ref.jsonPointer, sourceId, `/appointments/${ordinal}/current/evidence/${index2}`);
-        }
-        applied.push({ person_id: change.personId, state_id: entry.stateId, common_tier: entry.current.commonTier });
-      }
-      return applied;
-    }, actor, reason, approvalRef);
-  } finally { db.close(); }
-}
-export function editPersonStates({ dbPath, changes, actor, reason, approvalRef }) {
-  requireText(dbPath, 'dbPath'); requireText(actor, 'actor'); requireText(reason, 'reason'); requireText(approvalRef, 'approvalRef');
-  if (!Array.isArray(changes) || !changes.length) fail('E_DATA_EDITOR_COMMAND', 'nonempty person state changes required');
-  for (const change of changes) {
-    if (!change || typeof change !== 'object') fail('E_DATA_EDITOR_COMMAND', 'change object required');
-    requireText(change.name, 'name'); requireText(change.state, 'state'); requireText(change.stateName ?? change.state_name, 'stateName');
-    if (change.title !== undefined && typeof change.title !== 'string') fail('E_DATA_EDITOR_COMMAND', 'title must be a string');
+function ensurePointerRecords(db, sourceId, ordinal, row) {
+  const subtree = { titles: {} };
+  subtree.titles[ordinal] = row;
+  for (const record of flattenJson(subtree)) {
+    if (record.json_pointer === '' || record.json_pointer === '/titles') continue;
+    const exists = db.prepare('SELECT 1 FROM source_record WHERE source_id=? AND json_pointer=?').get(sourceId, record.json_pointer);
+    if (exists) continue;
+    db.prepare('INSERT INTO source_record (source_id, json_pointer, parent_pointer, ordinal, field_name, json_type, text_value, integer_value, real_value, boolean_value) VALUES (?,?,?,?,?,?,?,?,?,?)')
+      .run(sourceId, record.json_pointer, record.parent_pointer, record.ordinal, record.field_name, record.json_type, record.text_value, record.integer_value, record.real_value, record.boolean_value);
   }
+}
+
+/**
+ * Owner-directed D1 rights dissolution + D4 kingdom grants over the effective
+ * allocation and holdings documents: dissolves the Daejeon line (titles,
+ * holdings, bindings, polity) and appends the six approved geographic-kingdom
+ * title rows. Feudal/holding/polity context rows are remapped in the same
+ * transaction from the effective documents.
+ */
+export function editFactionConsolidationRights({ dbPath, kingdomTitleRows, actor, reason, approvalRef }) {
+  requireText(dbPath, 'dbPath'); requireText(actor, 'actor'); requireText(reason, 'reason'); requireText(approvalRef, 'approvalRef');
+  if (!Array.isArray(kingdomTitleRows) || kingdomTitleRows.length > 6) fail('E_DATA_EDITOR_COMMAND', 'at most six kingdom title rows; an empty list performs the dissolution only');
+  // Kingdom grants beyond this point require a rights-approval replay source;
+  // an empty list performs the D1 dissolution only.
   if (!statSync(dbPath).isFile()) fail('E_DOCUMENT_DATABASE', 'existing database file required');
   const db = new DatabaseSync(dbPath, { enableForeignKeyConstraints: true });
   try {
     schemaIdentity(db);
     db.exec(DATA_SOURCE_TABLES_SQL);
-    bootstrapDataAuthority(db, VALUES_PATH);
-    return withTransaction(db, () => {
-      const head = db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(VALUES_PATH);
-      const current = db.prepare('SELECT document_json FROM data_source_current WHERE source_path=?').get(VALUES_PATH);
-      const document = JSON.parse(current.document_json);
-      const byName = new Map(db.prepare('SELECT person_id, name FROM person').all().map((row) => [row.name, row.person_id]));
-      const applied = [];
-      for (const change of changes) {
-        const personId = byName.get(change.name);
-        if (!personId) fail('E_DATA_EDITOR_PERSON', change.name);
-        const entry = document.people.find((row) => row.name === change.name);
-        if (!entry) fail('E_DATA_EDITOR_PERSON', change.name);
-        entry.state = change.state;
-        entry.state_name = change.stateName ?? change.state_name;
-        if (change.title !== undefined) entry.title = change.title;
-        const result = db.prepare('UPDATE person SET state_id=?, state_name=?, title=COALESCE(?, title) WHERE person_id=?')
-          .run(change.state, change.stateName ?? change.state_name, change.title ?? null, personId);
-        if (result.changes !== 1) fail('E_DATA_EDITOR_PERSON', change.name);
-        applied.push({ person_id: personId, state_id: change.state, title: change.title ?? null });
-      }
-      const semanticSha256 = hash(canonical(document));
-      const sequenceRow = db.prepare('SELECT COALESCE(MAX(sequence), 0) AS sequence FROM data_source_revision').get();
-      const revision = hash(canonical(['data-source-v1', VALUES_PATH, head.revision_id, semanticSha256, actor, reason]));
-      db.prepare('INSERT INTO data_source_revision (revision_id, source_path, parent_revision, semantic_sha256, actor, reason, sequence, approval_ref) VALUES (?,?,?,?,?,?,?,?)')
-        .run(revision, VALUES_PATH, head.revision_id, semanticSha256, actor, reason, sequenceRow.sequence + 1, approvalRef);
-      const updated = db.prepare('UPDATE data_source_head SET revision_id=? WHERE source_path=? AND revision_id=?')
-        .run(revision, VALUES_PATH, head.revision_id);
-      if (updated.changes !== 1) fail('E_REVISION_CONFLICT', 'data source head compare-and-swap failed');
-      db.prepare('UPDATE data_source_current SET revision_id=?, document_json=? WHERE source_path=?')
-        .run(revision, JSON.stringify(document), VALUES_PATH);
-      if (db.prepare('PRAGMA foreign_key_check').all().length) fail('E_DOCUMENT_INTEGRITY', 'foreign key check failed');
-      return { sourcePath: VALUES_PATH, previousRevision: head.revision_id, revision, semanticSha256, applied };
-    });
+    bootstrapDataAuthority(db, ALLOCATION_PATH);
+    bootstrapDataAuthority(db, HOLDINGS_PATH);
+    const allocationOutcome = revisionChain(db, ALLOCATION_PATH, (document) => {
+      const sourceId = db.prepare('SELECT source_id FROM source_file WHERE logical_path=?').get(ALLOCATION_PATH).source_id;
+      document.titles = document.titles.filter((row) => !DISSOLVED_TITLES.includes(row.id));
+      for (const row of kingdomTitleRows) if (!document.titles.some((t) => t.id === row.id)) document.titles.push(row);
+      document.existingTitleBindings = (document.existingTitleBindings ?? []).filter((row) => !DISSOLVED_HOLDINGS.includes(row.holdingId));
+      // Cross-source FK order: every row referencing a dissolved holding or
+      // the daejeon polity/titles goes first, then the dissolved rows.
+      db.prepare('DELETE FROM personal_holding_input_facility WHERE holding_id LIKE ?').run('holding:daejeon-%');
+      db.prepare('DELETE FROM context_retinue_holding WHERE holding_id LIKE ?').run('holding:daejeon-%');
+      db.prepare('DELETE FROM context_issue WHERE holding_id LIKE ?').run('holding:daejeon-%');
+      db.prepare('DELETE FROM historical_feudal_binding WHERE holding_id LIKE ?').run('holding:daejeon-%');
+      db.prepare('DELETE FROM context_feudal_binding WHERE holding_id LIKE ?').run('holding:daejeon-%');
+      db.prepare('DELETE FROM context_holding_geographic_scope WHERE holding_id LIKE ?').run('holding:daejeon-%');
+      db.prepare('DELETE FROM context_holding_scope_county WHERE holding_id LIKE ?').run('holding:daejeon-%');
+      db.prepare('DELETE FROM context_holding_power WHERE holding_id LIKE ?').run('holding:daejeon-%');
+      db.prepare('DELETE FROM context_holding_admin_ref WHERE holding_id LIKE ?').run('holding:daejeon-%');
+      db.prepare('DELETE FROM context_holding_reference WHERE holding_id LIKE ?').run('holding:daejeon-%');
+      db.prepare('DELETE FROM context_holding WHERE holding_id LIKE ?').run('holding:daejeon-%');
+      db.prepare('DELETE FROM context_polity WHERE polity_id=?').run('polity:daejeon');
+      db.prepare('DELETE FROM context_feudal_jurisdiction WHERE title_id IN (' + DISSOLVED_TITLES.map(() => '?').join(',') + ')').run(...DISSOLVED_TITLES);
+      db.prepare('DELETE FROM context_feudal_title WHERE title_id IN (' + DISSOLVED_TITLES.map(() => '?').join(',') + ')').run(...DISSOLVED_TITLES);
+      // The six granted kingdoms are new rows with new pointers.
+      document.titles.forEach((row) => {
+        if (!String(row.id ?? '').startsWith('title:kingdom-geography:seoul:')) return;
+        const ordinal = document.titles.indexOf(row);
+        db.prepare('INSERT INTO context_feudal_title (title_id, name, rank, holder_person_id, polity_id, parent_title_id, geographic_title_id, geographic_parent_title_id, political_parent_title_id, personal_liege_person_id, kind, direct_ownership, basis, transition_set, transition_old_id, source_id, json_pointer) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)')
+          .run(row.id, row.name, row.rank, row.holderPersonId ?? null, row.stateId ?? null, row.parentTitleId ?? null,
+            row.geographicTitleId ?? null, row.geographicParentTitleId ?? null, row.politicalParentTitleId ?? null,
+            row.personalLiegePersonId ?? null, row.kind ?? null, row.directOwnership === undefined ? null : Number(row.directOwnership), row.basis ?? null,
+            null, null, sourceId, '/titles/' + ordinal);
+        (row.jurisdictionRefs ?? []).forEach((ref, index) => db.prepare('INSERT INTO context_feudal_jurisdiction (title_id, ordinal, admin_unit_id, source_id, json_pointer) VALUES (?,?,?,?,?)')
+          .run(row.id, index, ref, sourceId, '/titles/' + ordinal + '/jurisdictionRefs/' + index));
+        ensurePointerRecords(db, sourceId, ordinal, row);
+      });
+      return { dissolvedTitles: DISSOLVED_TITLES.length, grantedKingdoms: kingdomTitleRows.length };
+    }, actor, reason, approvalRef);
+    const holdingsOutcome = revisionChain(db, HOLDINGS_PATH, (document) => {
+      document.holdings = document.holdings.filter((row) => !DISSOLVED_HOLDINGS.includes(row.id));
+      document.polities = (document.polities ?? []).filter((row) => row.id !== 'polity:daejeon');
+      db.prepare('UPDATE context_court SET polity_id=? WHERE court_id=?').run('S02', 'court:K1008');
+      return { dissolvedHoldings: DISSOLVED_HOLDINGS.length, dissolvedPolities: 1 };
+    }, actor, reason, approvalRef);
+    return { allocation: allocationOutcome, holdings: holdingsOutcome };
   } finally { db.close(); }
 }
 
