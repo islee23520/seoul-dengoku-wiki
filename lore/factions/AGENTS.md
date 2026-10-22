@@ -1,28 +1,38 @@
-# LORE/factions — polity canon: the sixteen states and their edges
-
-Earned its file: score ~8 (S01–S16 ids are verifier-enforced in region content; `Sixteen-States.json` is the target of all 427 canon_refs (written as `Sixteen-States.md`, which the link checker resolves to the JSON) and self-declares 정본 in its InfoBox; org numbers keyed HC/HP/XT live in `../name-pools/values-orgs.json`); distinct domain — the political map over the geography data.
+# lore/factions — 정치 주체와 연결 원천
 
 ## OVERVIEW
-The sixteen states S01–S16, their ruling houses and chaebol origins, plus overlays that are deliberately not states: diaspora corridors and external theaters. Diplomacy and conscription rules live in GDD `rules/Rules-FactionsWarfare`.
+안정 정치 ID, 지도자·가문·회랑 서사를 관리하며 지리 작위와 구분한다.
 
 ## WHERE TO LOOK
-| Task | Location |
-|------|----------|
-| The 16 states S01–S16 | `Sixteen-States.json` — InfoBox-declared 정본; 6 강국 (대한민국정부·수문국·규격맹·환적국·동방사·태욱그룹), 4 약국, 6 소국; forms 봉건·군정·신정·상업 |
-| Houses / chaebol origins | `Chaebol-Houses-and-Century-Factions.json` — families lease infrastructure to states; chaebol-origin states are the hereditary exception (상호가 국호) |
-| External theaters XT01–XT05 | `External-Theaters.json` — Seoul-side corridors and authored peninsula connections; read-only projection of World-Narrative-Atlas (edit via the atlas, parent contract) |
-| Diaspora corridors | `Diaspora-Corridors.json` — life-belt overlay on the 16 states; new people still satisfy the cast card contract (`../characters/Cast-Profile-Contract.md`) |
+| 작업 | 위치 |
+|---|---|
+| S01–S16 정치 명부 | `Sixteen-States.json` |
+| 가문·기업계 기원 | `Chaebol-Houses-and-Century-Factions.json` |
+| 공동체·회랑 | `Diaspora-Corridors.json` |
+| Atlas 연결 투영 | `External-Theaters.json` |
+| 조직 가치·정책 수치 | `../name-pools/values-orgs.json` |
+| 관직·호칭 | `../offices/Offices-and-Ranks.json` |
+| 현재 봉속·궁정·보유권 | `../relations/relations.json`, `../relations/personal-holdings.json` |
 
 ## CONVENTIONS
-- `polity_contexts` in `../regions/content/` must be S01–S16 (`verify_region_atlas.py` rejects anything else); corridors, remnants, and XT ids never qualify as polities.
-- Leader titles come from each state's 2026 real-institution job titles (`../offices/Offices-and-Ranks.json`); the tier ladder is identical across the 16, only names differ — 봉건 wording like 남작 never appears in the ledgers.
-- `External-Theaters.json` prose is a read-only projection of World-Narrative-Atlas — never hand-edit it; change the atlas and re-project (parent contract).
-- From chaebol history only 승계 습관 crosses into canon (who qualifies, how it splits, who custodies); real conglomerate names/logos stay out except where 상호=국호 canon already fixes it.
+- 선정 점수 3: 구조화 원천 비율 2 + 자체 schema 1. update mode에서 정치 ID 경계 안내를 유지한다.
+- S01–S16은 기존 정치 ID다. 현재 세 정치 세력·중립 지도 및 지리 왕국의 개수와 같다고 간주하지 않는다.
+- `../relations/validate.mjs`는 국가 ID·등급·명부 관계를 교차 검증한다.
+- 대한민국정부·규격맹·종교 연합의 중심 권역은 각 구성원의 주거지나 전역 독점 소유를 뜻하지 않는다.
+- 가문 승계는 자격·분할·보관의 원문과 승인 기록을 따른다.
+- 회랑은 생활권·관계 망이며 자동으로 추가 국가가 되지 않는다.
+- 기존 지도자·왕격·정치 ID를 공간 규모만으로 강등하거나 합치지 않는다.
+- `External-Theaters.json`의 변경은 Atlas 원천으로 돌아가 처리한다.
 
 ## ANTI-PATTERNS
-- Diaspora corridors never become a 17th state; conscription remnants are not 4 new independent states.
-- Never write the 16 states as a one-ethnicity roster — the corridors exist because pre-collapse Seoul wasn't one (대림·가리봉·이태원·동대문·구로·용산 belts).
-- Military service history is never inferred from gender or name; post-collapse enlistment also exists.
-- Troop and ammunition numbers for the conscription remnants are deliberately undecided — don't fix them in canon pages.
-- External theaters: never assert crimes of real current regimes or institutions. Distinguish authored peninsula and Tsushima events from unconfirmed overseas reports. A witness to one harbor does not establish the condition of an entire country; Seoul-side procedures do not establish a continuous physical route.
-- Foreign-design borrowings (CK tiers, etc.) import structure only, never proper nouns.
+- 옛 외부 전역 파일명과 XT ID를 서울 밖 현재 활동 공간의 근거로 쓰지 않는다.
+- 서울 밖 사건·통신을 소문이나 미확인 보고로 바꾸어 공개에 남기지 않는다.
+- 지리 parent를 정치 주군으로, 중심 권역을 개별 작위 수여로 자동 변환하지 않는다.
+- 회랑·징집 잔존 조직을 새 독립국으로 승격하지 않는다.
+- 성별·이름만으로 병역을 부여하지 않는다. 붕괴 뒤 입대와 붕괴 전 복무를 구분한다.
+- 원문에서 미정인 병력·탄약 수를 고정하지 않는다.
+- 국가별 인물을 한 민족으로 단순화하지 않는다.
+- 옛 ‘모든 국가의 동일 호칭 사다리’ 문장을 현재 작위 계약보다 우선하지 않는다.
+
+## COMMANDS
+루트 `npm run test:states`, `npm run test:region-routes`, `npm run test:lore-links`로 관련 표면을 확인한다.

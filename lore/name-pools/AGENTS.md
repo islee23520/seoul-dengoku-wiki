@@ -1,37 +1,38 @@
-# LORE/name-pools — machine-verified naming and values datasets
-
-Earned its file: score ~8 (87% structured data, own schema contract `hangnyeol-schema.md`, cross-repo centrality — consumed by LORE/characters, TOOL/tools/cast, wiki gates); distinct domain — sourced, audited JSON datasets rather than prose.
+# lore/name-pools — 이름·신원·가계·가치 데이터
 
 ## OVERVIEW
-JSON datasets feeding character naming (surnames, 본관, 항렬), the numeric values canon for the 1001 cast, and generated roster/backfill drafts; one contract doc defines required fields and checks.
+인물의 영구 ID, 명명 출처, 생일·가계와 가치관 수치를 보관하는 구조화 데이터 도메인이다.
 
 ## WHERE TO LOOK
-| Task | Location |
-|------|----------|
-| Data contract (required fields, check rules) | `hangnyeol-schema.md` — when doc and verifier code disagree, the code is canonical |
-| 본관/항렬 canon chain | `surnames-bongwan.json` (517 surnames, 413 본관; must be a superset of `surnames.json`) → `clans-hangnyeol.json` (10) → `clan-hangnyeol-tables.json` (170 clans) → `hangnyeol-systems.json` (9 systems) → per-person application in `cast-hangnyeol.json` (1001 cast; statuses `unconfirmed`/`unused`) |
-| Simple name pools | `surnames.json` (40 one-syllable surnames), `given-male.json`, `given-female.json` — used by heir generation and the random roster |
-| Numeric canon for the cast | `values-cast.json` — schema `janseon.values.cast.v2`, 1010 people (18 주요 locked + 3 주요 신규, 101 S1, 200 S2, 110 S3, 578 S4), 10 value axes + 7 desire axes, −100..100 |
-| Org values | `values-orgs.json` — schema `janseon.values.orgs.v1`, 37 orgs (HC/HP/XT), same 10 value axes + 9 policy domains |
-| Name-collision check | `existing-names.json` — every already-used given name |
-| Unvetted candidates | `roster-100.json` — Nemotron-Personas-Korea sample, seed 90421 |
-| Draft card backfill | `cast-backfill-draft.json` / `.md` — 422 rows, name-hash-seeded, deterministic stamp 2026-09-12 |
+| 작업 | 위치 |
+|---|---|
+| 영구 ID 발급·승계 | `person-id-registry.json`, `issue-person-ids.mjs`, `person-id-values-successor.mjs` |
+| 후보 신원 | `person-id-candidates.json`, `verify-person-id-candidates.mjs` |
+| registry 검증 | `verify-person-id-registry.mjs` |
+| 본관·항렬 계약 | `hangnyeol-schema.md`, `surnames-bongwan.json`, `clan-hangnyeol-tables.json`, `cast-hangnyeol.json` |
+| 단순 이름 풀·중복 | `surnames.json`, `given-male.json`, `given-female.json`, `existing-names.json` |
+| 생일·세대·가계 | `cast-birthdays.json`, `cast-birth-cohorts.json`, `cast-family-*.json` |
+| 수치 정본 | `values-cast.json`, `values-orgs.json` |
+| 검토 전 산출물 | `roster-100.json`, `cast-backfill-draft.*` |
 
 ## CONVENTIONS
-- Sourced datasets carry `{id, schema, note, sources[]}`; each source is `{id, url, accessed, quote, evidence, live_check}` with all fields filled. `quote` must be copied verbatim from the URL — summary/translation/rewrite is not a quote. `evidence` points into `RESEARCH/verification/hangnyeol/raw/*.md`; the verifier opens that file and matches the quote (whitespace-normalized). Unresolvable `sources: ["<id>"]` references fail.
-- `live_check` re-opens URLs independently: `verbatim_ok` / `artifact_corrected` additionally require `record_id` + `live_check_ref` into `raw/_verify-*.md`, and the declared verdict must equal the report's table cell exactly (not a substring). `live_verified%` and `sourced%` measure different things.
-- Population figures are citable data: a row carrying a number needs a source quote containing that number.
-- Generators and their tests live in `TOOL/tools/cast/` (`hangnyeol_names.py`, `bongwan_assignment.py`, `fill_values.py`, `expand_cast_to_1000.py`, `generate_backfill_draft.py`, `generate_nemotron_roster.py` + `test_*` files).
+- 선정 점수 8: 파일 수 3 + 구조화 원천 비율 2 + 자체 계약 1 + LSP 대상 실행 모듈의 심볼 밀도 2. 명명·신원 발급이라는 독립 도메인이다.
+- 항렬 원천의 `id`·`schema`·`note`·`sources`를 유지한다. 실제 검증 코드와 설명이 충돌하면 판정 구현을 확인한다.
+- 출처는 URL·접근일·원문 인용·evidence·live_check를 연결한다. 번역·요약은 원문 인용이 아니다.
+- 인구 수치를 담은 행에는 그 숫자를 포함하는 출처 인용이 필요하다.
+- `live_verified%`와 `sourced%`는 다르다. `record_id`·`live_check_ref`와 보고서의 정확한 판정을 연결한다.
+- registry 순서·안정 ID와 표시 이름을 구분한다. 과거 1001명·1010명 안내로 현재 분모를 덮어쓰지 않는다.
+- 가계의 친생·입양·역할 결정과 본문의 관계를 함께 대조한다.
+- 옛 `gurps-cast.json` 값은 새 인물 시스템의 자동 변환 원천이 아니다.
 
 ## ANTI-PATTERNS
-- A claim refuted by live re-check is removed from the dataset — never re-labeled `artifact_corrected` to pass the gate.
-- `roster-100.json` is CC BY 4.0: redistribution requires NVIDIA attribution, dataset URL, version, original row UUIDs, and transformation notes; `source_uuid` alone is not provenance. Synthetic personas are never treated as real-person facts.
-- `cast-backfill-draft.*` rows become canon only after a human marks ✓ or corrects them — never paste them into `LORE/characters/Cast-State-*` or the indexes directly.
-- Canonical script path casing is `TOOL/…` and `RESEARCH/…` (git); the schema doc's `Tool/…`/`Research/…` spellings only resolve on case-insensitive checkouts.
+- 재확인으로 반박된 주장을 `artifact_corrected`로 바꿔 통과시키지 않는다.
+- `roster-100.json`의 합성 persona를 실존 인물 사실로 취급하지 않는다.
+- 해당 CC BY 4.0 자료 재배포 때 NVIDIA·dataset URL·판본·원본 UUID·변환 내용을 남긴다. `source_uuid` 하나로 출처를 대신하지 않는다.
+- backfill 초안을 검토 없이 `characters/Cast-State-*`나 색인에 붙이지 않는다.
+- 옛 `TOOL/`·`RESEARCH/` 생성기와 검증기를 현재 checkout에 존재한다고 가정하지 않는다.
+- 후보 발급·원문 등록·검토 승인·공개 게시를 한 단계로 처리하지 않는다.
 
 ## COMMANDS
-```bash
-node TOOL/tools/wiki/verify-hangnyeol.mjs          # data contract (add --cast for per-person application)
-node TOOL/tools/wiki/test-verify-hangnyeol.mjs     # verifier unit tests
-python3 TOOL/tools/cast/test_hangnyeol_names.py    # naming generator tests
-```
+루트 `npm run test:person-id`는 두 `verify-person-id-*.mjs`를 실행한다.
+파생 조회 데이터 변경은 `npm run test:cast-sqlite`, `npm run cast:verify`와 연결한다.

@@ -1,47 +1,38 @@
-# LORE/regions — 427-dong region content data and its pipeline
-
-Earned its file: score ~13 (33 files, 94% structured JSON, own README + sources ledger with pinned hashes, consumed by TOOL/tools/regions pipeline and GDD view layer); distinct domain — authored game data over observed GIS sources, separate from the prose canon.
+# lore/regions — 지역 내용·경계·작위 원천
 
 ## OVERVIEW
-Final authored content for Seoul's 427 행정동 (2026-07-01 boundaries): 25 gu JSON files, the 334-station opening-day interior ledger, and the pinned boundary/source records that regenerate the region atlas.
+선택 경계의 동별 저작 데이터와 역 내부 상태, 선거구 작위·공간 출처를 관리한다.
 
 ## WHERE TO LOOK
-| Task | Location |
-|------|----------|
-| Unit, dates, licenses, checksums | `README.md` (Korean) — unit is the 427 dong, as_of 2026-09-12, admdongkor boundary SHA-256-pinned (CC BY 4.0 / 공공누리 1유형), OSM ODbL |
-| One gu's authored dong content | `content/<구코드>.json` (11110=종로구 … 11740), schema `seoul-region-content.v1` |
-| Station interiors (334) | `station-interiors.json`, schema `station-interior.v1`; built by `TOOL/tools/regions/fill_station_interiors.py` |
-| Boundary choice + comparison | `sources/selection.json`, `sources/boundary-comparison.json`; raw geojson is gitignored but present on disk |
-| Observed floor-count joins | `sources/observed-levels-join.md` — 265/334 observed (OA-11572 CSV, OSM, 위키백과); 69 remain empty |
-| Pipeline code | `TOOL/tools/regions/` — prepare_boundary, build_region_atlas, assemble_region_content, verify_region_atlas, check_authored_district, tests |
-| Evidence + map build input | `.omo/evidence/seoul-regions/` (regenerated, ~291MB); official-wiki map input at `TOOL/tools/regions/data/atlas-data.js` |
+| 작업 | 위치 |
+|---|---|
+| 단위·판본·라이선스 | `README.md`, `sources/selection.json` |
+| 동별 내용 | `content/<구 코드>.json` |
+| 역별 내부 상태 | `station-interiors.json` |
+| 선거구 작위·슬롯 | `seoul-electoral-titles.json` |
+| 경계 비교·층수 근거 | `sources/boundary-comparison.json`, `sources/observed-levels-join.md` |
+| 지도 기사 | `../places/World-and-Subway-Layers.json` |
+| 보유권·정치 연결 | `../relations/personal-holdings.json` |
+| 서울 범위·재배치 승인 | `../editorial/Seoul-Scope-Contract.json`, `../editorial/Seoul-Relocation-Ledger.json` |
 
 ## CONVENTIONS
-- Provenance split per dong: places/tags observed; boundary/area/affiliation computed (EPSG:5179); post-collapse inhabitants and events fiction. `source_kind: original-fiction` + `fictional_epoch: opening-day` — verifier-enforced.
-- Verifier-required content keys: title, summary, inhabitants, livelihood, production, shortages, hazard, action, opening_state, connections, uncertainty, anchor_refs, canon_refs, polity_contexts. `buildings` is 1–4 rows: `role` core-station|support (observed use 역 ⇒ core-station), `river` ∈ hangang-north/hangang-south/tributary/inland, `anchor_ref` must be one of that dong's local anchors.
-- `polity_contexts` ⊆ S01–S16 (`verify_region_atlas.py` allowed_polities). `anchor_refs` are OSM ids (`osm:node|way|relation:<id>`).
-- Area denominator is the 427 dong; the 334 stations are the movement graph, not an area roster. The union area 606,223,725.0069752㎡ must survive regeneration.
-- The region assembler writes official-wiki map input to `TOOL/tools/regions/data/atlas-data.js`; it does not create a separate public region viewer.
-- All 427 `canon_refs` in content still carry the `docs/game-logic/…` prefix; `verify_region_atlas.py` resolves each ref against the repo root and emits `invalid_canon_reference` (docs/ no longer exists). Fixing means rewriting refs to `LORE/…` (or restoring a docs alias) — decide once, not per file.
+- 선정 점수 6: 파일 수 3 + 구조화 원천 비율 2 + 자체 schema 1. 기존 공간 원천 경계를 update mode에서 유지한다.
+- 기존 동 데이터는 2026-07-01 선택 경계의 427동·25구 판본이다. 최신 공식 경계 인증으로 부르지 않는다.
+- 원래 선택 합집합은 606,223,725.0069752㎡다. 이 판본 재생성 시 범위 보존을 확인한다.
+- 위치·태그는 관측, 경계·면적·소속은 계산, 붕괴 뒤 주민·사건은 창작으로 구분한다.
+- `anchor_refs`는 OSM 객체를, `canon_refs`는 설정 원천을 연결한다.
+- `content.buildings`의 core-station·support 역할은 건물 재사용 계약과 맞춘다.
+- 경계·선거구 판본을 바꿀 때 기존 427동 수나 옛 구역표를 새 슬롯 분모로 고정하지 않는다.
+- 원본 지리 번들은 루트 `data/geography/`에 있다. 파일별 provenance는 그 manifest를 따른다.
 
 ## ANTI-PATTERNS
-- Never invent observed values: the 69 stations without a floor-count source stay empty ("키 없이 받은 출처만 붙인다"); nearest-building joins are wrong-building errors.
-- Boundary adjacency alone never creates a movement edge; same-name facilities are never merged into one; unnamed OSM objects stay in the ledger.
-- OSM tags alone never assert an institution's opening-day operation; never borrow another gu's facility by name alone.
-- Style score and character count are not content verdicts; `.omo/evidence/` existing is not completion.
-- Do not advance next-spring will / autumn procession / winter arms-train events to opening day (opening = 임하준 실종 + 중앙 계약 만료 only).
+- 미관측 층수는 비워 둔다. 가장 가까운 다른 건물의 관측값을 붙이지 않는다.
+- 경계 인접성만으로 이동 간선을 만들거나 같은 이름의 시설을 합치지 않는다.
+- OSM 태그만으로 개막 가동을 확정하지 않는다. 다른 구의 시설을 이름만 보고 가져오지 않는다.
+- 다음 봄 유언장·가을 행렬·겨울 무기열차를 개막 사건으로 앞당기지 않는다.
+- `outside-*.json` 파일명이나 과거 extended_coverage 기록을 서울 밖 현재 세계의 승인으로 쓰지 않는다.
+- `.omo/evidence/`의 존재나 문장 길이·점수만으로 지역 서사 완료를 판정하지 않는다.
 
 ## COMMANDS
-```bash
-python3 TOOL/tools/regions/prepare_boundary.py                  # pinned-URL fetch, saves only on SHA-256 match
-python3 -m unittest discover -s TOOL/tools/regions -p 'test_*.py'
-python3 TOOL/tools/regions/build_region_atlas.py --as-of 2026-09-12 \
-  --source-root ../seoul-kenshi-data/seoul-geography-20260830 \
-  --boundary LORE/regions/sources/admdongkor-20260701.geojson \
-  --output .omo/evidence/seoul-regions/atlas.json
-python3 TOOL/tools/regions/assemble_region_content.py \
-  --atlas .omo/evidence/seoul-regions/atlas.json \
-  --content-dir LORE/regions/content --map-data TOOL/tools/regions/data/atlas-data.js
-python3 TOOL/tools/regions/verify_region_atlas.py --atlas .omo/evidence/seoul-regions/atlas.json
-```
-Atlas rebuild needs the external sibling bundle `../seoul-kenshi-data/seoul-geography-20260830` (outside the repo; not present on this checkout).
+루트 `npm run test:lore-json`, `npm run test:region-routes`, `npm run test:territory-map`을 사용한다.
+옛 `TOOL/tools/regions/` Python 도구는 이 작업트리에 없다. JSON 검증을 공간 원자료 독립 재생성과 같다고 보고하지 않는다.
