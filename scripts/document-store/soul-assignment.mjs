@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
-import { closeSync, openSync, readFileSync, statSync, unlinkSync } from 'node:fs';
+import { closeSync, openSync, readFileSync, unlinkSync } from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
+import { assertPrivateFilePermissions } from './private-file-permissions.mjs';
 import { validateSoulAssignments } from '../validate-soul-assignments.mjs';
 
 // Private authoring: imports retain approval evidence; edits only create drafts.
@@ -231,7 +232,7 @@ export function initializeSoulAssignments(path, options={}) {
 
 function openDatabase(path, options, readOnly=true) {
   authorize(options);
-  if((statSync(path).mode&0o777)!==0o600)fail('E_PRIVATE_MODE');
+  assertPrivateFilePermissions(path);
   const db=new DatabaseSync(path,{readOnly,enableForeignKeyConstraints:true});
   try {
     if(db.prepare('PRAGMA application_id').get().application_id!==APPLICATION_ID||![1,2].includes(db.prepare('PRAGMA user_version').get().user_version))fail('E_SCHEMA');

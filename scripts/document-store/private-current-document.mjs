@@ -1,4 +1,4 @@
-import { statSync } from 'node:fs'
+import { assertPrivateFilePermissions } from './private-file-permissions.mjs'
 import { fileURLToPath } from 'node:url'
 import { resolve } from 'node:path'
 import { DatabaseSync } from 'node:sqlite'
@@ -45,7 +45,7 @@ export function readPrivateCurrentDocument(logicalPath) {
   if (!isPrivateCurrentDocument(logicalPath)) throw new Error(`E_PRIVATE_DOCUMENT_IDENTITY:${logicalPath}`)
   if (Object.hasOwn(censusPins, logicalPath) || Object.hasOwn(editorialReaders, logicalPath) || logicalPath === 'lore/editorial/Seoul-Scope-Contract.json') {
     const path = process.env.WIKI_EDITORIAL_DB ?? resolve(directory, 'editorial.sqlite')
-    if ((statSync(path).mode & 0o777) !== 0o600) throw new Error('E_PRIVATE_MODE')
+    assertPrivateFilePermissions(path)
     const db = new DatabaseSync(path, { readOnly: true })
     try {
       if (db.prepare('PRAGMA application_id').get().application_id !== 1464157266
