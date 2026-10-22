@@ -309,17 +309,38 @@ test('default mode checks changed files plus the migration ledger; strict mode f
   }
 })
 
-test('a Markdown file next to its JSON authoring document fails in default and strict mode', () => {
-  const clean = run()
-  assert.equal(clean.status, 0, clean.stderr)
-  // Data JSON beside a task 10c Markdown file (for example the naming ledger) is not an authoring source.
-  assert.doesNotMatch(run('--strict').stderr, /E_MARKDOWN_TWIN/u)
-  const { isolatedRoot, run: runIsolated } = isolatedFixture()
+test('a Markdown file next to its JSON authoring document fails in default and strict mode', async () => {
+  const { isolatedRoot } = isolatedFixture()
   const twin = join(isolatedRoot, 'lore/culture/Food-Culture.md')
+  // These four full validations are independent. Await every close before removing the fixture.
+  const runAsync = (...files) => new Promise((done) => {
+    const child = spawn(process.execPath, [join(root, 'scripts/lore-json-validate.mjs'), ...files], { cwd: root })
+    let stdout = ''
+    let stderr = ''
+    let error
+    child.stdout.on('data', (chunk) => { stdout += chunk })
+    child.stderr.on('data', (chunk) => { stderr += chunk })
+    child.on('error', (cause) => { error = cause })
+    child.on('close', (status, signal) => done({ status, signal, stdout, stderr, error }))
+  })
   try {
     assert.ok(!existsSync(twin), 'Food-Culture.md must not be committed next to its JSON source')
     writeFileSync(twin, '# twin\n')
-    for (const result of [runIsolated(), runIsolated('--strict')]) {
+    const base = spawnSync('git', ['write-tree'], { cwd: isolatedRoot, encoding: 'utf8' })
+    assert.equal(base.status, 0, base.stderr)
+    const fixtureArgs = ['--root', isolatedRoot, '--base', base.stdout.trim()]
+    const [clean, strict, ...twins] = await Promise.all([
+      runAsync(), runAsync('--strict'), runAsync(...fixtureArgs), runAsync(...fixtureArgs, '--strict'),
+    ])
+    for (const result of [clean, strict, ...twins]) {
+      assert.equal(result.error, undefined)
+      assert.equal(result.signal, null)
+    }
+    assert.equal(clean.status, 0, clean.stderr)
+    assert.equal(strict.status, 0, strict.stderr)
+    // Data JSON beside a task 10c Markdown file is not an authoring source.
+    assert.doesNotMatch(strict.stderr, /E_MARKDOWN_TWIN/u)
+    for (const result of twins) {
       assert.equal(result.status, 1, result.stderr || result.stdout)
       assert.match(result.stderr, /^E_MARKDOWN_TWIN: lore\/culture\/Food-Culture\.md: /mu, result.stderr)
     }
