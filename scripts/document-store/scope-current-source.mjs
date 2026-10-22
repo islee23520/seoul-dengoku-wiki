@@ -56,6 +56,74 @@ import { readEditorialDecisionDocuments, EDITORIAL_DECISION_SOURCE_HASHES } from
 import { readRelationProposalDocument } from '../cast-sqlite/relation-proposal-document.mjs';
 import { readEditorialVerificationDocument, EDITORIAL_VERIFICATION_DOCUMENT_HASH } from '../cast-sqlite/editorial-verification-document.mjs';
 import { EDITORIAL_ENVELOPE_SOURCE_HASHES } from './editorial-envelope-documents.mjs';
+import { readApprovedDataSource } from '../cast-sqlite/data-source-editor.mjs';
+import { isDeepStrictEqual } from 'node:util';
+
+// Independently reviewed source revisions (Task10/12/13), separate from the
+// renderer-envelope heads below. Each semantic pin bounds the complete delta.
+export const PUBLICATION_DATA_SUCCESSORS = Object.freeze({
+  'lore/name-pools/values-cast.json': ['19a30e156065f6c2f59b3d2ea7b0226e887ea60d610b70d10e588937407620e2', '5750d72c1c7533e0cf9b59c11448c8d777c54f0f5758ef0fbe8cbe25c092265c'],
+  'lore/relations/opening-office-appointments.json': ['de70382bed6464c5b2651f71ab7e13cc710512dbd1e0422a1c6b78980041a794', '3b93a14de55b66f2ba38c6461df57608c42011a992628f57bf73a546e2aff3a8'],
+  'lore/relations/opening-feudal-allocation.json': ['21d7663507b896a43d70fc459f662376780b477b5c2078af100b2d42bbe7079d', 'aa32254621831b189587024f2748dc1f78f93a1a448e4e5be15beb6ace8b12e9'],
+  'lore/relations/personal-holdings.json': ['1801d7bb8d27af743f74ea447d4f7be782b9d8ba7ba5b37af4d0c6f2b6329a12', '77a0cc273441857a892822319f610d5630eb0801f70b7e633c303db7868f32e3'],
+  'lore/relations/relations.json': ['6a0a48a6540c16a848de8e14caa1d8df628eeceab5465c454afdbfdb5fa8a3c2', '438c00ccd559a398980b6619e08d9a0d2f49f1f6bcd0df2b8b970a44c68caeb2'],
+});
+
+export function authenticatePublicationDataSuccessor(db, logicalPath, expectedSha256, actual, original) {
+  if (!Object.hasOwn(PUBLICATION_DATA_SUCCESSORS, logicalPath)) return false;
+  if (!db.prepare("SELECT 1 FROM sqlite_schema WHERE name='data_source_head'").get()
+    || !db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(logicalPath)) return false;
+  const [archive, semantic] = PUBLICATION_DATA_SUCCESSORS[logicalPath];
+  if (expectedSha256 !== archive) throw Error('E_PUBLICATION_DATA_SOURCE_PIN');
+  const approved = readApprovedDataSource(db, logicalPath, semantic, archive);
+  if (!isDeepStrictEqual(actual, approved)) throw Error('E_PUBLICATION_DATA_TYPED_MISMATCH');
+  if (logicalPath === 'lore/relations/relations.json') {
+    const predecessor = structuredClone(approved);
+    if (predecessor.courts[13]?.id !== 'court:K1008' || predecessor.courts[13].stateId !== 'S02')
+      throw Error('E_PUBLICATION_DATA_DELTA');
+    predecessor.courts[13].stateId = 'polity:daejeon';
+    if (!isDeepStrictEqual(predecessor, original)) throw Error('E_PUBLICATION_DATA_DELTA');
+  }
+  return true;
+}
+
+// Owner-approved current heads, independent of the immutable archive byte pins.
+// These pairs authorize only this exact delta for private publication evidence;
+// they do not grant public document admission or change historical review bytes.
+export const PUBLICATION_SUCCESSOR_APPROVAL = Object.freeze({
+  receiptPath: '.omo/private/seoul-migration/faction-consolidation-20261022/receipt.json',
+  receiptSha256: '97b1d7dbd2631682b2214eb03a1478ef2085af2618d08739001ebe33cd2f8df3',
+  decisionPath: 'scripts/approved-seoul-faction-consolidation-20261022.json',
+  decisionSha256: 'd0378abb6ef9578a847c133247faabb06d758b968d35f1193b4e4feb83701c54',
+  approvalRef: 'owner:seoul-faction-consolidation-20261022',
+});
+export const PUBLICATION_SUCCESSOR_HEADS = Object.freeze({
+  'lore/characters/Cast-State-02.json': Object.freeze({
+    revision: '69390d278551ed403ffda3bc5e1b785194f418a2c79c28a778c3e164521a9a3d',
+    semanticSha256: '267c93362591269f26477dd6fbadd1a6d15922238b2439a7ab094f7fa9c0a7a8',
+    sourceSha256: '2dd50da979a8b3f9d1f3a2123adc765a9e9d35eac2240f0e149aac187e3c33ea',
+  }),
+  'lore/characters/Cast-Unaffiliated.json': Object.freeze({
+    revision: '0846f24df1c95b5ddbb2656e1bbb7617b0bb1ffd3c1980c11c4a34d80c7f77e0',
+    semanticSha256: '0ebb4c3d9a774bb712a470da32fdf2b21d190913912b78922564a4e670cd04d1',
+    sourceSha256: '5b1a3af2d7621c9ece2ae01bd9ec1878f2232c1e0b31db0df80798ad8f66829a',
+  }),
+  'lore/characters/Core-Characters.json': Object.freeze({
+    revision: '3edea828b052e69596d35ba410929425b1870925f1ee5b4ad5c9fe72eb133a22',
+    semanticSha256: 'a05f4bd6d9d0a246f1092d2b60ee7f0d0e5faf1ac151411e6bbfd6d7ecbcd905',
+    sourceSha256: '911c7f9ca1a24d1c803a4c952ff972cc0482be74d6f277419b14734512e56dc4',
+  }),
+  'lore/factions/Sixteen-States.json': Object.freeze({
+    revision: '1e7bcf057b554cf6b52ea50dd5645da515b0513f04a30adcb5f461e3af462474',
+    semanticSha256: '8d43c418de8b4318240ea066ba0fdf9e75430e2723fbfa272d48653fb352f415',
+    sourceSha256: '73b19e6af00df16fb06adfbaab7c386aea6930ff01587dd6a0dc69fbae557a3c',
+  }),
+  'lore/offices/Offices-and-Ranks.json': Object.freeze({
+    revision: '57dee91f3739def14183a2d378f5fadcd3b2812acc357004a7c158673c690442',
+    semanticSha256: 'ccec975b94492c8bb8e7ce232a6a21d2da0cd3d15078401be3a22fd15ae83e37',
+    sourceSha256: '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e',
+  }),
+});
 
 // Identity is selected independently from SQLite's document inventory, never
 // from the approval contract. A recognized typed source cannot fall back.
@@ -233,7 +301,14 @@ export function readScopeCurrentSource({ db, logicalPath, expectedSha256, editor
   if (documents.length > 1) throw new Error('E_SCOPE_DB_SOURCE_DUPLICATE');
   if (documents.length === 1) {
     if (documents[0].sha256 !== expectedSha256) throw new Error('E_SCOPE_DB_SOURCE_HASH');
-    const reference = readEvidenceDocumentReference(db, { logicalPath, expectedSha256 });
+    const approved = PUBLICATION_SUCCESSOR_HEADS[logicalPath];
+    const head = approved && db.prepare(`SELECT r.parent_revision FROM document_head h
+      JOIN document_revision r USING(source_id,revision_id) WHERE h.source_id=?`).get(documents[0].source_id);
+    const successor = head && head.parent_revision !== null ? approved : undefined;
+    const reference = readEvidenceDocumentReference(db, { logicalPath, expectedSha256,
+      ...(successor ? { expectedSemanticSha256: successor.semanticSha256 } : {}) });
+    if (successor && (expectedSha256 !== successor.sourceSha256 || reference.revision !== successor.revision))
+      throw new Error('E_SCOPE_DB_SOURCE_STALE');
     return orderDocumentKeys(db, reference.sourceId, reference.document);
   }
   return readPersonMappingCurrentSource(db, logicalPath, expectedSha256, { editorialProfiles });

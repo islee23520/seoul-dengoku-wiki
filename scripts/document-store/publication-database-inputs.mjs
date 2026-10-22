@@ -5,6 +5,7 @@ import { DatabaseSync } from 'node:sqlite';
 import { fileURLToPath } from 'node:url';
 import { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } from './evidence.mjs';
 import { scopeAuthenticationReader } from './scope-authentication-reader.mjs';
+import { PUBLICATION_SUCCESSOR_APPROVAL, PUBLICATION_SUCCESSOR_HEADS, PUBLICATION_DATA_SUCCESSORS } from './scope-current-source.mjs';
 import { scopeDirectoryReader } from './scope-directory-inventory.mjs';
 import { readScopeContract } from '../cast-sqlite/scope-contract-store.mjs';
 import { openEditorialProfiles, INTERNAL_PROFILE_CAPABILITY, EDITORIAL_PROFILE_SOURCE_HASHES } from './editorial-profile.mjs';
@@ -38,6 +39,24 @@ export async function openPublicationDatabaseInputs(root, config) {
     // One immutable read snapshot per publication authentication. This keeps
     // repeated source requests consistent without reconstructing typed rows again.
     db.exec('PRAGMA query_only=ON; BEGIN');
+    const successors = db.prepare(`SELECT s.logical_path FROM source_file s
+      JOIN document_head h USING(source_id) JOIN document_revision r USING(source_id,revision_id)
+      WHERE r.parent_revision IS NOT NULL`).all().filter(row => Object.hasOwn(PUBLICATION_SUCCESSOR_HEADS, row.logical_path));
+    const dataSuccessors = db.prepare("SELECT 1 FROM sqlite_schema WHERE name='data_source_head'").get()
+      ? db.prepare('SELECT source_path FROM data_source_head').all().filter(row => Object.hasOwn(PUBLICATION_DATA_SUCCESSORS, row.source_path)) : [];
+    if (successors.length || dataSuccessors.length) {
+      const proof = PUBLICATION_SUCCESSOR_APPROVAL;
+      const receiptBytes = await readFile(resolve(root, proof.receiptPath));
+      const decisionBytes = await readFile(resolve(root, proof.decisionPath));
+      if (createHash('sha256').update(receiptBytes).digest('hex') !== proof.receiptSha256
+        || createHash('sha256').update(decisionBytes).digest('hex') !== proof.decisionSha256)
+        throw Error('E_PUBLICATION_SUCCESSOR_APPROVAL');
+      const receipt = JSON.parse(receiptBytes), decision = JSON.parse(decisionBytes);
+      if (receipt.schema !== 'faction-consolidation-successor.v2'
+        || receipt.authority.approvalRef !== proof.approvalRef || decision.approvalRef !== proof.approvalRef
+        || successors.some(row => receipt.files.filter(file => file.sourcePath === row.logical_path).length !== 1))
+        throw Error('E_PUBLICATION_SUCCESSOR_APPROVAL');
+    }
     const evidenceStore = openEvidenceStore(capture.databasePath, { capability: INTERNAL_EVIDENCE_CAPABILITY }); handles.push(evidenceStore);
     const privateStores = {};
     for (const [key, open, capability, pins] of [

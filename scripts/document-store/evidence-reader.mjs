@@ -8,7 +8,7 @@ export function evidenceReader(store, { root, bindings, historicalBindings = new
     const absolutePath = resolve(path);
     const external = externalBindings.get(absolutePath);
     if (external) return store.getEvidence(external.identity, external.sha256);
-    const logicalPath = relative(base, resolve(path));
+    const logicalPath = relative(base, resolve(path)).split('\\').join('/');
     if (!logicalPath || logicalPath.startsWith('../')) throw new Error('E_EVIDENCE_READER_PATH');
     const binding = bindings.get(logicalPath);
     if (!binding && missingPaths.has(logicalPath)) throw Object.assign(new Error(`Missing captured input: ${logicalPath}`), { code: 'ENOENT' });
