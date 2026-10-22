@@ -1,8 +1,9 @@
 import assert from 'node:assert/strict'
-import { chmodSync, copyFileSync, existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
+import { copyFileSync, existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
 import { spawn, spawnSync } from 'node:child_process'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
+import { pathToFileURL } from 'node:url'
 import { test } from 'vitest'
 import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
@@ -61,6 +62,28 @@ test('the eighteen domain examples and a published page pass', () => {
   }
   const published = run('lore/ailments/Ailments.json')
   assert.equal(published.status, 0, published.stderr)
+})
+
+test('domain directories accept nested native paths and reject a different domain', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'lore-domain-'))
+  try {
+    mkdirSync(join(dir, 'scripts'), { recursive: true })
+    copyFileSync(join(root, 'scripts/lore-json-schema.py'), join(dir, 'scripts/lore-json-schema.py'))
+    const initialized = spawnSync('git', ['init', '-q', dir], { encoding: 'utf8' })
+    assert.equal(initialized.status, 0, initialized.stderr)
+    for (const [directory, status] of [['ailments', 0], ['ailments/groups', 0], ['bestiary/groups', 1]]) {
+      const parent = join(dir, 'lore', directory)
+      mkdirSync(parent, { recursive: true })
+      const file = join(parent, 'authoring.example.json')
+      writeFileSync(file, JSON.stringify(example))
+      const result = run('--root', dir, file)
+      assert.equal(result.status, status, `${directory}: ${result.stderr}`)
+      if (status === 1) assert.match(result.stderr, /^E_DOMAIN: lore\/bestiary\/groups\/authoring\.example\.json: domain does not match directory$/mu)
+      else assert.doesNotMatch(result.stderr, /E_DOMAIN/)
+    }
+  } finally {
+    rmSync(dir, { recursive: true, force: true })
+  }
 })
 
 test('WNA-001 accepts the closed world-narrative-atlas.v3 contract', () => {
@@ -322,16 +345,33 @@ test('a stalled schema check fails with its file label instead of hanging', () =
   mkdirSync(evidence, { recursive: true })
   const dir = mkdtempSync(join(evidence, 'stalled-schema-'))
   try {
-    const python = join(dir, 'python3')
-    writeFileSync(python, '#!/bin/sh\nexec sleep 30\n')
-    chmodSync(python, 0o755)
-    const result = spawnSync(process.execPath, [join(root, 'scripts/lore-json-validate.mjs'), 'lore/ailments/Ailments.json'], {
+    const preload = join(dir, 'stalled-schema.mjs')
+    // Replace only Python's process, not spawnSync's timeout/error handling.
+    writeFileSync(preload, `
+      import assert from 'node:assert/strict'
+      import childProcess from 'node:child_process'
+      import { syncBuiltinESMExports } from 'node:module'
+      const spawnSync = childProcess.spawnSync
+      childProcess.spawnSync = (command, args, options) => {
+        if (command !== 'python3') return spawnSync(command, args, options)
+        const result = spawnSync(process.execPath, ['-e',
+          "process.stdout.write('fixture-ready'); Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0)"
+        ], options)
+        assert.equal(result.stdout, 'fixture-ready', 'the stalled process must start')
+        assert.equal(result.error?.code, 'ETIMEDOUT')
+        process.stderr.write('fixture: ETIMEDOUT\\n')
+        return result
+      }
+      syncBuiltinESMExports()
+    `)
+    const result = spawnSync(process.execPath, ['--import', pathToFileURL(preload).href, join(root, 'scripts/lore-json-validate.mjs'), 'lore/ailments/Ailments.json'], {
       cwd: root, encoding: 'utf8', timeout: 20000,
-      env: { ...process.env, PATH: `${dir}:${process.env.PATH}`, LORE_JSON_SCHEMA_TIMEOUT_MS: '500' },
+      env: { ...process.env, LORE_JSON_SCHEMA_TIMEOUT_MS: '2000' },
     })
     assert.equal(result.error, undefined, 'the validator itself hung')
     assert.equal(result.status, 1, result.stdout)
-    assert.match(result.stderr, /^E_SCHEMA: lore\/ailments\/Ailments\.json: schema check did not finish within 500 ms$/mu)
+    assert.match(result.stderr, /^fixture: ETIMEDOUT$/mu)
+    assert.match(result.stderr, /^E_SCHEMA: lore\/ailments\/Ailments\.json: schema check did not finish within 2000 ms$/mu)
   } finally {
     rmSync(dir, { recursive: true, force: true })
   }

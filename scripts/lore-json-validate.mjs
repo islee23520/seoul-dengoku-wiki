@@ -189,7 +189,7 @@ function validate(files) {
       failures.push(`E_JSON: ${file}: ${error.message}`)
       continue
     }
-    const label = relative(root, file)
+    const label = relative(root, file).replaceAll('\\', '/')
     failures.push(...localeBindingFailures(document, label))
     failures.push(...atlasFailures(document, label))
     const domain = document?.domain
@@ -212,7 +212,7 @@ function validate(files) {
       else map.set(key, label)
     }
     const ownDir = dirname(file)
-    const directory = relative(loreRoot, ownDir)
+    const directory = relative(loreRoot, ownDir).replaceAll('\\', '/')
     if (!directory.startsWith('..') && directory.split('/')[0] !== (domain === 'root' ? '' : domain)) failures.push(`E_DOMAIN: ${label}: domain does not match directory`)
     const anchors = new Set()
     for (const node of nodesIn(document)) {
