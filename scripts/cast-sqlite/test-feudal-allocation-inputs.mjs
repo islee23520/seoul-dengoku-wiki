@@ -9,24 +9,27 @@ import { DatabaseSync } from 'node:sqlite';
 import { FEUDAL_ALLOCATION_SOURCE_HASH, initializeFeudalAllocationInputs, readFeudalAllocationInputs } from './feudal-allocation-inputs.mjs';
 import { loadPersonDetailSources as loadDbInputs } from './person-detail-inputs.mjs';
 import { readSourceArchive } from './source-archive.mjs';
+import { readApprovedDataSource } from './data-source-editor.mjs';
 
 if (process.env.ALLOCATION_CURRENT_DB) {
-  test('approved allocation current source reconstructs six kingdoms and rejects drift', async t => {
+  test('approved allocation current source matches authenticated rows and rejects drift', async t => {
     const directory = await mkdtemp(join(tmpdir(), 'allocation-current-'));
     const path = join(directory, 'owned.sqlite');
     await copyFile(process.env.ALLOCATION_CURRENT_DB, path);
     const db = new DatabaseSync(path);
     t.after(async () => { db.close(); await rm(directory, { recursive: true }); });
+    const expected = readApprovedDataSource(db, 'lore/relations/opening-feudal-allocation.json',
+      'aa32254621831b189587024f2748dc1f78f93a1a448e4e5be15beb6ace8b12e9', FEUDAL_ALLOCATION_SOURCE_HASH);
     const actual = readFeudalAllocationInputs(db, { predecessor: true });
-    assert.equal(actual.titles.filter(row => row.id.startsWith('title:kingdom-geography:seoul:')).length, 6);
+    assert.deepEqual(actual, expected);
     assert.ok(!actual.titles.some(row => row.id === 'title:kingdom-daejeon'));
     assert.ok(!actual.existingTitleBindings.some(row => row.holdingId.startsWith('holding:daejeon-')));
     const current = readFeudalAllocationInputs(db);
     assert.ok(!current.titles.some(row => row.id === 'title:duchy-s08'));
     for (const sql of [
-      "UPDATE context_feudal_title SET holder_person_id='K998' WHERE title_id='title:kingdom-geography:seoul:01'",
-      "UPDATE context_feudal_title SET kind='invented' WHERE title_id='title:kingdom-geography:seoul:01'",
-      "DELETE FROM context_feudal_title WHERE title_id='title:kingdom-geography:seoul:06'",
+      "UPDATE context_feudal_title SET holder_person_id=(SELECT person_id FROM person WHERE person_id<>context_feudal_title.holder_person_id ORDER BY person_id LIMIT 1) WHERE rowid=(SELECT min(rowid) FROM context_feudal_title)",
+      "UPDATE context_feudal_title SET kind='invented' WHERE rowid=(SELECT min(rowid) FROM context_feudal_title)",
+      "DELETE FROM context_feudal_title WHERE rowid=(SELECT max(rowid) FROM context_feudal_title)",
       "UPDATE data_source_revision SET approval_ref='unapproved' WHERE source_path='lore/relations/opening-feudal-allocation.json' AND parent_revision IS NOT NULL",
       "UPDATE data_source_revision SET reason='tampered' WHERE source_path='lore/relations/opening-feudal-allocation.json' AND parent_revision IS NULL",
       "UPDATE data_source_current SET document_json='{}' WHERE source_path='lore/relations/opening-feudal-allocation.json'",

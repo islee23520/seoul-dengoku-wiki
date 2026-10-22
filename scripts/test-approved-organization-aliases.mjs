@@ -34,17 +34,21 @@ test('state actor projection requires approved alias and matching current avatar
   const rendered = new Map([...pages].map(([slug, page]) => [slug, renderLoreMarkdown(page.value, 'ko')]))
   const bytes = proposal(mapping)
   const aliases = organizationAliases(bytes, approval(bytes))
-  const project = (core, organizationAliases = aliases) => projectPersonStateInputs(
-    new Map([...rendered, ['Core-Characters', core]]), pages, { organizationAliases }).stateCatalog.find(row => row.id === 'S08').ruler
-  assert.equal(project(rendered.get('Core-Characters')), '오해린')
-  const unrelated = '## 무관인\n\n국가정보원 직원이며 오해린을 만났다.\n\n'
-  assert.equal(project(unrelated + rendered.get('Core-Characters')), '오해린')
-  const withoutActor = rendered.get('Core-Characters').replace(/^## 오해린\n\n[\s\S]*?(?=\n## |$)/mu, unrelated)
-  assert.equal(project(withoutActor), '')
-  assert.equal(project(rendered.get('Core-Characters'), new Map()), '')
-  assert.equal(project(rendered.get('Core-Characters'), new Map([['중앙정보부', ['관계없는조직']]])), '')
-  const wrongActor = rendered.get('Core-Characters').replace('## 오해린\n', '## 무관인\n')
-  assert.equal(project(wrongActor), '')
+  for (const actor of ['가나인', '다라인']) {
+    const stateSource = rendered.get('Sixteen-States').replace(/현재 아바타 [가-힣]{2,4}/gu, `현재 아바타 ${actor}`)
+    const project = (core, organizationAliases = aliases) => projectPersonStateInputs(
+      new Map([...rendered, ['Sixteen-States', stateSource], ['Core-Characters',
+        `2126년 당회장 자리는 마바인가 앉았다.\n\n${core}`]]), pages, { organizationAliases }).stateCatalog.find(row => row.id === 'S08').ruler
+    const core = `## ${actor}\n\n국가정보원 소속이며 현재 아바타는 ${actor}이다.\n\n`
+    const unrelated = `## 무관인\n\n국가정보원 직원이며 ${actor}을 만났다.\n\n`
+    assert.equal(project(core), actor)
+    assert.equal(project(unrelated + core), actor)
+    assert.equal(project(unrelated), '')
+    assert.equal(project(core, new Map()), '')
+    assert.equal(project(core, new Map([['중앙정보부', ['관계없는조직']]])), '')
+    assert.equal(project(core.replace(`## ${actor}\n`, '## 무관인\n')), '')
+    assert.equal(project(core.replace(`현재 아바타는 ${actor}이다`, '일반 직원이다')), '')
+  }
 })
 
 test('historical rights people context authenticates predecessor affiliations and rejects substitutions', () => {
@@ -66,11 +70,15 @@ test('historical rights people context authenticates predecessor affiliations an
 
 test('the repository proposal authenticates and grounds the 중앙정보부 leader through 국가정보원 cards', async () => {
   const root = fileURLToPath(new URL('..', import.meta.url))
-  const aliases = await loadApprovedOrganizationAliases(root)
+  const aliases = await loadApprovedOrganizationAliases(process.env.WIKI_ORGANIZATION_ALIAS_ROOT ?? root)
   assert.deepEqual(aliases.get('중앙정보부'), ['국가정보원'])
   const index = buildWorldIndex({ loreRoot: fileURLToPath(new URL('../lore', import.meta.url)), organizationAliases: aliases })
   const stateRows = index.split('\n').filter(line => /^\| \[/.test(line)).map(line => line.split('|').slice(1, -1).map(cell => cell.trim()))
   assert.equal(stateRows.length, 16)
   assert.ok(stateRows.every(row => row.length === 4))
-  assert.equal(stateRows.find(row => row[0] === '[중앙정보부](Sixteen-States.html)')[3], '오해린')
+  const states = renderLoreMarkdown(readCanonicalDocument('lore/factions/Sixteen-States.json'), 'ko')
+  const state = states.split('\n').find(line => /^\| S08 \|/u.test(line))
+  const actor = state?.match(/현재 아바타 ([가-힣]{2,4})(?:$|[,，\s|])/u)?.[1]
+  assert.ok(actor, 'approved state row must identify its current avatar')
+  assert.equal(stateRows.find(row => row[0] === '[중앙정보부](Sixteen-States.html)')[3], actor)
 })

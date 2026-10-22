@@ -10,6 +10,30 @@ import { OFFICE_APPOINTMENT_SOURCE_HASH, initializeOfficeAppointmentInputs, read
 import { loadPersonDetailSources as loadDbInputs } from './person-detail-inputs.mjs';
 import { readSourceArchive } from './source-archive.mjs';
 import { currentOfficeAppointments } from '../person-detail-inputs.mjs';
+import { readApprovedDataSource } from './data-source-editor.mjs';
+
+test('valid appointment sets and tiers may change while malformed inputs reject', () => {
+  const issued = new Map(['fixture-a', 'fixture-b'].map(id => [id, {}]));
+  const appointment = (personId, commonTier) => ({ personId, stateId: 'S01',
+    history: { personId, stateId: 'S01', position: { ko: '직책', en: 'Office' },
+      rank: { ko: '직급', en: 'Rank' }, commonTier, approvalRef: 'fixture-approval' },
+    current: { status: 'existing-function', position: { ko: '직무', en: 'Function' }, rank: null,
+      commonTier, evidence: [{ kind: 'existing-function', path: 'fixture.json', jsonPointer: '/function' }] } });
+  for (const rows of [[appointment('fixture-a', 'T1')], [appointment('fixture-b', 'T5'), appointment('fixture-a', 'T3')]]) {
+    const source = { schema: 'opening-office-appointments.v2', appointments: rows };
+    assert.deepEqual([...currentOfficeAppointments(source, issued).keys()], rows.map(row => row.personId));
+    assert.deepEqual([...currentOfficeAppointments(source, issued).values()].map(row => row.commonTier), rows.map(row => row.current.commonTier));
+    for (const mutate of [
+      value => { value.appointments[0].current.commonTier = 'T6'; },
+      value => { value.appointments[0].history.personId = 'wrong-person'; },
+      value => { value.appointments.push(structuredClone(value.appointments[0])); },
+    ]) {
+      const malformed = structuredClone(source);
+      mutate(malformed);
+      assert.throws(() => currentOfficeAppointments(malformed, issued), /E_OPENING_OFFICE/u);
+    }
+  }
+});
 
 if (process.env.OFFICE_CURRENT_DB) {
   test('approved office source preserves history and rejects typed and chain tampering', async t => {
@@ -18,24 +42,25 @@ if (process.env.OFFICE_CURRENT_DB) {
     await copyFile(process.env.OFFICE_CURRENT_DB, path);
     const db = new DatabaseSync(path);
     t.after(async () => { db.close(); await rm(directory, { recursive: true }); });
+    const expected = readApprovedDataSource(db, 'lore/relations/opening-office-appointments.json',
+      '3b93a14de55b66f2ba38c6461df57608c42011a992628f57bf73a546e2aff3a8', OFFICE_APPOINTMENT_SOURCE_HASH);
     const actual = readOfficeAppointmentInputs(db);
-    const lee = actual.appointments.find(row => row.personId === 'K998');
-    assert.equal(lee.current.commonTier, 'T2'); assert.equal(lee.history.commonTier, 'T3');
-    assert.equal(actual.appointments.find(row => row.personId === 'K1003').stateId, 'S02');
+    assert.deepEqual(actual, expected);
     const issued = new Map(db.prepare('SELECT person_id FROM person').all().map(row => [row.person_id, row]));
     const offices = currentOfficeAppointments(actual, issued);
-    assert.equal(offices.get('K998').commonTier, 'T2');
-    assert.equal(offices.get('K1003').stateId, 'S02');
+    assert.deepEqual([...offices.values()], expected.appointments.map(({ personId, stateId, current }) => ({
+      personId, stateId, position: current.position?.ko ?? '', rank: current.rank?.ko ?? '', commonTier: current.commonTier,
+    })));
     assert.throws(() => currentOfficeAppointments(structuredClone(actual), issued), /E_OPENING_OFFICE/u);
     const altered = readOfficeAppointmentInputs(db);
-    altered.appointments.find(row => row.personId === 'K998').current.commonTier = 'T1';
+    altered.appointments[0].current.commonTier = altered.appointments[0].current.commonTier === 'T1' ? 'T2' : 'T1';
     assert.throws(() => currentOfficeAppointments(altered, issued), /E_OPENING_OFFICE/u);
     const unknown = readOfficeAppointmentInputs(db);
     unknown.appointments[0].current.status = 'invented-status';
     assert.throws(() => currentOfficeAppointments(unknown, issued), /E_OPENING_OFFICE/u);
     for (const sql of [
-      "UPDATE context_office_appointment SET common_tier='T1' WHERE person_id='K998'",
-      "UPDATE context_office_history SET common_tier='T2' WHERE person_id='K998'",
+      "UPDATE context_office_appointment SET common_tier=CASE common_tier WHEN 'T1' THEN 'T2' ELSE 'T1' END WHERE rowid=(SELECT min(rowid) FROM context_office_appointment)",
+      "UPDATE context_office_history SET common_tier=CASE common_tier WHEN 'T1' THEN 'T2' ELSE 'T1' END WHERE rowid=(SELECT min(rowid) FROM context_office_history)",
       "UPDATE data_source_revision SET approval_ref='unapproved' WHERE source_path='lore/relations/opening-office-appointments.json' AND parent_revision IS NOT NULL",
       "UPDATE data_source_revision SET reason='tampered' WHERE source_path='lore/relations/opening-office-appointments.json' AND parent_revision IS NULL",
       "UPDATE data_source_current SET document_json='{}' WHERE source_path='lore/relations/opening-office-appointments.json'",
