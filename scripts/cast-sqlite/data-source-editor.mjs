@@ -30,6 +30,8 @@ const VALUES_PATH = 'lore/name-pools/values-cast.json';
 const OFFICE_PATH = 'lore/relations/opening-office-appointments.json';
 const ALLOCATION_PATH = 'lore/relations/opening-feudal-allocation.json';
 const HOLDINGS_PATH = 'lore/relations/personal-holdings.json';
+const RELATIONS_PATH = 'lore/relations/relations.json';
+const CONSOLIDATION_APPROVAL = 'scripts/approved-seoul-faction-consolidation-20261022.json';
 const DISSOLVED_TITLES = ['title:kingdom-daejeon', 'proposal:superior-jurisdiction:seoul:daejeon-dong', 'proposal:superior-jurisdiction:seoul:daejeon-jung', 'proposal:superior-jurisdiction:seoul:daejeon-seo', 'proposal:superior-jurisdiction:seoul:daejeon-yuseong', 'proposal:superior-jurisdiction:seoul:daejeon-daedeok'];
 const DISSOLVED_HOLDINGS = ['holding:daejeon-dong', 'holding:daejeon-yuseong', 'holding:daejeon-jung', 'holding:daejeon-seo', 'holding:daejeon-daedeok'];
 const DATA_SOURCE_TABLES_SQL = `
@@ -70,7 +72,7 @@ function bootstrapDataAuthority(db, sourcePath) {
   if (existing) return existing.revision_id;
   const document = loadArchivedDocument(db, sourcePath);
   const semanticSha256 = hash(canonical(document));
-  return withTransaction(db, () => {
+  const initialize = () => {
     const head = db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(sourcePath);
     if (head) return head.revision_id;
     const sequence = 0;
@@ -80,7 +82,8 @@ function bootstrapDataAuthority(db, sourcePath) {
     db.prepare('INSERT INTO data_source_head (source_path, revision_id, archived_sha256) VALUES (?,?,?)').run(sourcePath, revision, archived.sha256);
     db.prepare('INSERT INTO data_source_current (source_path, revision_id, document_json) VALUES (?,?,?)').run(sourcePath, revision, JSON.stringify(document));
     return revision;
-  });
+  };
+  return db.isTransaction ? initialize() : withTransaction(db, initialize);
 }
 
 // The archived bytes live in source_file; the byte column name is read from the
@@ -95,7 +98,7 @@ function loadArchivedDocument(db, sourcePath) {
 }
 
 function revisionChain(db, sourcePath, mutator, actor, reason, approvalRef) {
-  return withTransaction(db, () => {
+  const revise = () => {
     const head = db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(sourcePath);
     const current = db.prepare('SELECT document_json FROM data_source_current WHERE source_path=?').get(sourcePath);
     const document = JSON.parse(current.document_json);
@@ -112,7 +115,57 @@ function revisionChain(db, sourcePath, mutator, actor, reason, approvalRef) {
       .run(revision, JSON.stringify(document), sourcePath);
     if (db.prepare('PRAGMA foreign_key_check').all().length) fail('E_DOCUMENT_INTEGRITY', 'foreign key check failed');
     return { sourcePath, previousRevision: head.revision_id, revision, semanticSha256, outcome };
-  });
+  };
+  return db.isTransaction ? revise() : withTransaction(db, revise);
+}
+
+// The caller's reviewed semantic pin is independent of mutable DB receipts.
+export function readApprovedDataSource(db, sourcePath, expectedSemanticSha256, expectedArchiveSha256) {
+  const head = db.prepare('SELECT * FROM data_source_head WHERE source_path=?').get(sourcePath);
+  const current = db.prepare('SELECT * FROM data_source_current WHERE source_path=?').get(sourcePath);
+  const archived = db.prepare('SELECT sha256,raw_bytes FROM source_file WHERE logical_path=?').get(sourcePath);
+  if (!head || !current || !archived || head.revision_id !== current.revision_id
+    || head.archived_sha256 !== expectedArchiveSha256 || archived.sha256 !== expectedArchiveSha256
+    || hash(archived.raw_bytes) !== expectedArchiveSha256) fail('E_DATA_SOURCE_INTEGRITY', sourcePath);
+  const document = JSON.parse(current.document_json);
+  if (hash(canonical(document)) !== expectedSemanticSha256) fail('E_DATA_SOURCE_INTEGRITY', 'current semantic pin');
+  let id = head.revision_id, sequence = Infinity;
+  const seen = new Set();
+  while (id !== null) {
+    if (seen.has(id)) fail('E_DATA_SOURCE_INTEGRITY', 'revision cycle');
+    seen.add(id);
+    const r = db.prepare('SELECT * FROM data_source_revision WHERE revision_id=?').get(id);
+    if (!r || r.source_path !== sourcePath || r.sequence >= sequence
+      || hash(canonical(['data-source-v1', sourcePath, r.parent_revision, r.semantic_sha256, r.actor, r.reason])) !== id
+      || (id === head.revision_id && r.semantic_sha256 !== expectedSemanticSha256)
+      || (r.parent_revision === null ? r.approval_ref !== 'archived' || r.sequence !== 0
+        || r.semantic_sha256 !== hash(canonical(JSON.parse(Buffer.from(archived.raw_bytes).toString('utf8'))))
+        : r.approval_ref !== CONSOLIDATION_APPROVAL)) fail('E_DATA_SOURCE_INTEGRITY', 'revision chain');
+    sequence = r.sequence;
+    id = r.parent_revision;
+  }
+  return document;
+}
+
+// Exact D1 repair, also used inside the rights transaction below. Never edits
+// archived relation bytes or the historical import receipt.
+export function editConsolidationCourt(db, { actor, reason, approvalRef }) {
+  requireText(actor, 'actor'); requireText(reason, 'reason');
+  if (approvalRef !== CONSOLIDATION_APPROVAL) fail('E_DATA_EDITOR_ARGUMENT', 'consolidation approval');
+  const edit = () => {
+    db.exec(DATA_SOURCE_TABLES_SQL);
+    bootstrapDataAuthority(db, RELATIONS_PATH);
+    return revisionChain(db, RELATIONS_PATH, document => {
+      const court = document.courts[13];
+      if (court?.id !== 'court:K1008' || court.stateId !== 'polity:daejeon') fail('E_DATA_EDITOR_COMMAND', 'D1 court predecessor');
+      court.stateId = 'S02';
+      const changed = db.prepare('UPDATE context_court SET polity_id=? WHERE court_id=? AND polity_id IN (?,?)')
+        .run('S02', court.id, 'polity:daejeon', 'S02');
+      if (changed.changes !== 1) fail('E_DATA_EDITOR_COMMAND', 'D1 court identity');
+      return { courtId: court.id, stateId: court.stateId };
+    }, actor, reason, approvalRef);
+  };
+  return db.isTransaction ? edit() : withTransaction(db, edit);
 }
 
 function ensurePointerRecords(db, sourceId, ordinal, row) {
@@ -143,9 +196,11 @@ export function editFactionConsolidationRights({ dbPath, kingdomTitleRows, actor
   const db = new DatabaseSync(dbPath, { enableForeignKeyConstraints: true });
   try {
     schemaIdentity(db);
+    return withTransaction(db, () => {
     db.exec(DATA_SOURCE_TABLES_SQL);
     bootstrapDataAuthority(db, ALLOCATION_PATH);
     bootstrapDataAuthority(db, HOLDINGS_PATH);
+    const relationsOutcome = editConsolidationCourt(db, { actor, reason, approvalRef });
     const allocationOutcome = revisionChain(db, ALLOCATION_PATH, (document) => {
       const sourceId = db.prepare('SELECT source_id FROM source_file WHERE logical_path=?').get(ALLOCATION_PATH).source_id;
       document.titles = document.titles.filter((row) => !DISSOLVED_TITLES.includes(row.id));
@@ -207,10 +262,10 @@ export function editFactionConsolidationRights({ dbPath, kingdomTitleRows, actor
     const holdingsOutcome = revisionChain(db, HOLDINGS_PATH, (document) => {
       document.holdings = document.holdings.filter((row) => !DISSOLVED_HOLDINGS.includes(row.id));
       document.polities = (document.polities ?? []).filter((row) => row.id !== 'polity:daejeon');
-      db.prepare('UPDATE context_court SET polity_id=? WHERE court_id=?').run('S02', 'court:K1008');
       return { dissolvedHoldings: DISSOLVED_HOLDINGS.length, dissolvedPolities: 1 };
     }, actor, reason, approvalRef);
-    return { allocation: allocationOutcome, holdings: holdingsOutcome };
+    return { allocation: allocationOutcome, holdings: holdingsOutcome, relations: relationsOutcome };
+    });
   } finally { db.close(); }
 }
 

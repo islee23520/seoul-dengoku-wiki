@@ -9,6 +9,45 @@ import { DatabaseSync } from 'node:sqlite';
 import { OFFICE_APPOINTMENT_SOURCE_HASH, initializeOfficeAppointmentInputs, readOfficeAppointmentInputs } from './office-appointment-inputs.mjs';
 import { loadPersonDetailSources as loadDbInputs } from './person-detail-inputs.mjs';
 import { readSourceArchive } from './source-archive.mjs';
+import { currentOfficeAppointments } from '../person-detail-inputs.mjs';
+
+if (process.env.OFFICE_CURRENT_DB) {
+  test('approved office source preserves history and rejects typed and chain tampering', async t => {
+    const directory = await mkdtemp(join(tmpdir(), 'office-current-'));
+    const path = join(directory, 'owned.sqlite');
+    await copyFile(process.env.OFFICE_CURRENT_DB, path);
+    const db = new DatabaseSync(path);
+    t.after(async () => { db.close(); await rm(directory, { recursive: true }); });
+    const actual = readOfficeAppointmentInputs(db);
+    const lee = actual.appointments.find(row => row.personId === 'K998');
+    assert.equal(lee.current.commonTier, 'T2'); assert.equal(lee.history.commonTier, 'T3');
+    assert.equal(actual.appointments.find(row => row.personId === 'K1003').stateId, 'S02');
+    const issued = new Map(db.prepare('SELECT person_id FROM person').all().map(row => [row.person_id, row]));
+    const offices = currentOfficeAppointments(actual, issued);
+    assert.equal(offices.get('K998').commonTier, 'T2');
+    assert.equal(offices.get('K1003').stateId, 'S02');
+    assert.throws(() => currentOfficeAppointments(structuredClone(actual), issued), /E_OPENING_OFFICE/u);
+    const altered = readOfficeAppointmentInputs(db);
+    altered.appointments.find(row => row.personId === 'K998').current.commonTier = 'T1';
+    assert.throws(() => currentOfficeAppointments(altered, issued), /E_OPENING_OFFICE/u);
+    const unknown = readOfficeAppointmentInputs(db);
+    unknown.appointments[0].current.status = 'invented-status';
+    assert.throws(() => currentOfficeAppointments(unknown, issued), /E_OPENING_OFFICE/u);
+    for (const sql of [
+      "UPDATE context_office_appointment SET common_tier='T1' WHERE person_id='K998'",
+      "UPDATE context_office_history SET common_tier='T2' WHERE person_id='K998'",
+      "UPDATE data_source_revision SET approval_ref='unapproved' WHERE source_path='lore/relations/opening-office-appointments.json' AND parent_revision IS NOT NULL",
+      "UPDATE data_source_revision SET reason='tampered' WHERE source_path='lore/relations/opening-office-appointments.json' AND parent_revision IS NULL",
+      "UPDATE data_source_current SET document_json='{}' WHERE source_path='lore/relations/opening-office-appointments.json'",
+    ]) {
+      db.exec('BEGIN');
+      try { db.exec(sql); assert.throws(() => readOfficeAppointmentInputs(db), { code: 'E_OFFICE_APPOINTMENT_INPUT' }); }
+      finally { db.exec('ROLLBACK'); }
+    }
+    assert.deepEqual(readOfficeAppointmentInputs(db), actual);
+    assert.deepEqual(db.prepare('PRAGMA foreign_key_check').all(), []);
+  });
+} else {
 
 const authority = '/tmp/seoul-document-authority-20261020/bootstrap-court-complete-20261020.sqlite';
 const dir = await mkdtemp(join(tmpdir(), 'office-appointment-inputs-'));
@@ -137,3 +176,4 @@ test('initializer rolls back all new tables on typed divergence or injected unkn
 test('original authority bytes remain unchanged', async () => {
   assert.equal(hash(await readFile(authority)), authorityHash);
 });
+}

@@ -13,6 +13,7 @@ import { projectOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
 import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
 import { REGION_CONTENT_SOURCE_HASHES } from './cast-sqlite/region-content-documents.mjs'
+import { isApprovedCurrentOfficeSource } from './cast-sqlite/office-appointment-inputs.mjs'
 
 const NONOWNING_APPROVAL_SHA256 = '44a49cbb8341d87214ebeef9d9e303cb5591f7c9c50327016516a7627b5eb2b8'
 
@@ -241,6 +242,7 @@ export async function projectCatalogCurrentHoldings(args, context, sourceBytes) 
 
 export function currentOfficeAppointments(source, issuedById) {
   if (source.schema !== 'opening-office-appointments.v2') throw new Error('E_OPENING_OFFICE_SCHEMA')
+  const approvedCurrent = isApprovedCurrentOfficeSource(source)
   const appointments = new Map()
   const paired = value => value && typeof value.ko === 'string' && value.ko.trim() && typeof value.en === 'string' && value.en.trim()
   for (const row of source.appointments) {
@@ -248,20 +250,20 @@ export function currentOfficeAppointments(source, issuedById) {
     const office = ['retained-office', 'nonterritorial-political-office'].includes(current?.status)
     const unappointed = current?.status === 'unappointed'
     if (appointments.has(row.personId) || !issuedById.has(row.personId)
-      || history?.personId !== row.personId || history.stateId !== row.stateId
+      || history?.personId !== row.personId || (!approvedCurrent && history.stateId !== row.stateId)
       || !paired(history.position) || !paired(history.rank) || !history.approvalRef
       || !['retained-office', 'nonterritorial-political-office', 'nonowning-jurisdiction', 'existing-function', 'unappointed'].includes(current?.status)
-      || !/^T[1-5]$/u.test(current.commonTier) || current.commonTier !== history.commonTier
+      || !/^T[1-5]$/u.test(current.commonTier) || (!approvedCurrent && current.commonTier !== history.commonTier)
       || (unappointed ? current.position !== null : !paired(current.position))
       || (office ? !paired(current.rank) : current.rank !== null)
       || !Array.isArray(current.evidence) || current.evidence.length === 0
       || (current.status === 'retained-office' && !current.evidence.some(ref => ref.kind === 'existing-right'))
       || (current.status === 'nonterritorial-political-office' && !current.evidence.some(ref => ref.kind === 'existing-political-office'))
       || (current.status === 'nonowning-jurisdiction' && !current.evidence.some(ref => ref.kind === 'existing-nonowning-right'))
-      || (current.status === 'existing-function' && !current.evidence.some(ref => ref.kind === 'existing-function'))
+      || (current.status === 'existing-function' && !current.evidence.some(ref => ref.kind === 'existing-function' || (approvedCurrent && ref.kind === 'card-affiliation')))
       || (unappointed && !current.evidence.some(ref => ref.kind === 'retired-office'))
       // current-seoul-work-location: approved Seoul work-location pointer (doc247-regions-fix-20261019 review row 23 via the final-closure successor).
-      || current.evidence.some(ref => !['approved-retained-office', 'existing-right', 'existing-political-office', 'existing-nonowning-right', 'existing-function', 'retired-office', 'current-seoul-work-location'].includes(ref.kind)
+      || current.evidence.some(ref => !['approved-retained-office', 'existing-right', 'existing-political-office', 'existing-nonowning-right', 'existing-function', 'retired-office', 'current-seoul-work-location', ...(approvedCurrent ? ['card-affiliation'] : [])].includes(ref.kind)
         || typeof ref.path !== 'string' || !ref.path.endsWith('.json') || !ref.jsonPointer?.startsWith('/')))
       throw new Error('E_OPENING_OFFICE:' + row.personId)
     appointments.set(row.personId, { personId: row.personId, stateId: row.stateId,

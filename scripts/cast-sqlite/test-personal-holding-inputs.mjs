@@ -11,6 +11,32 @@ import { loadPersonDetailSources as loadDbInputs } from './person-detail-inputs.
 import { validateOpeningDispositions } from '../personal-holdings.mjs';
 import { readSourceArchive } from './source-archive.mjs';
 
+if (process.env.HOLDINGS_CURRENT_DB) {
+  test('approved holdings current chain rejects typed and approval drift on owned copies', async t => {
+    const directory = await mkdtemp(join(tmpdir(), 'holdings-current-'));
+    const path = join(directory, 'owned.sqlite');
+    await copyFile(process.env.HOLDINGS_CURRENT_DB, path);
+    const db = new DatabaseSync(path);
+    t.after(async () => { db.close(); await rm(directory, { recursive: true }); });
+    const actual = readPersonalHoldingInputs(db);
+    assert.ok(!actual.holdings.some(row => row.id.startsWith('holding:daejeon-')));
+    assert.ok(!actual.polities.some(row => row.id === 'polity:daejeon'));
+    for (const sql of [
+      "UPDATE context_holding SET name_ko=name_ko||' drift' WHERE rowid=(SELECT min(rowid) FROM context_holding)",
+      "UPDATE context_holding SET kind='invented' WHERE rowid=(SELECT min(rowid) FROM context_holding)",
+      "UPDATE data_source_revision SET approval_ref='unapproved' WHERE source_path='lore/relations/personal-holdings.json' AND parent_revision IS NOT NULL",
+      "UPDATE data_source_revision SET reason='tampered' WHERE source_path='lore/relations/personal-holdings.json' AND parent_revision IS NULL",
+      "UPDATE data_source_current SET document_json='{}' WHERE source_path='lore/relations/personal-holdings.json'",
+    ]) {
+      db.exec('BEGIN');
+      try { db.exec(sql); assert.throws(() => readPersonalHoldingInputs(db), { code: 'E_PERSONAL_HOLDING_INPUT' }); }
+      finally { db.exec('ROLLBACK'); }
+    }
+    assert.deepEqual(readPersonalHoldingInputs(db), actual);
+    assert.deepEqual(db.prepare('PRAGMA foreign_key_check').all(), []);
+  });
+} else {
+
 const authority = process.env.PERSONAL_HOLDING_TEST_DB ?? '/tmp/seoul-document-authority-20261020/bootstrap-court-complete-20261020.sqlite';
 const dir = await mkdtemp(join(tmpdir(), 'personal-holding-inputs-'));
 after(() => rm(dir, { recursive: true, force: true }));
@@ -119,3 +145,4 @@ test('initializer authenticates pinned bytes, actor, reason and one-time transac
     assert.equal(broken.prepare('SELECT name_ko FROM context_holding WHERE rowid=1').get().name_ko.endsWith(' divergence'), true);
   } finally { broken.close(); }
 });
+}
