@@ -141,6 +141,40 @@ function collectFields({ file, profile, renderLoreMarkdown }) {
   return fields;
 }
 
+/** Recomputes one file's profiles; node_start inclusive, node_end exclusive. Single-file form of mapProfiles for domain editors. */
+export function mapSingleFileProfiles({ file, kind, byName, renderLoreMarkdown }) {
+  if (typeof renderLoreMarkdown !== 'function') fail('E_PROFILE_RENDERER', 'trusted renderer required');
+  const content = file.document.content;
+  const profiles = [];
+  const profileNodes = [];
+  const profileFields = [];
+  let ordinal = 0;
+  for (let start = 0; start < content.length; start += 1) {
+    const node = content[start];
+    if (node.kind !== 'heading' || node.depth !== (kind === 'core' ? 2 : 3)) continue;
+    const headingKo = textLeaf(node.text.ko, 'E_PROFILE_TEXT');
+    const name = kind === 'core' ? headingKo : headingKo.match(/^인물 (.+)$/u)?.[1];
+    if (!name || (kind === 'core' && !byName.has(name))) continue;
+    const person = byName.get(name);
+    if (!person) fail('E_PROFILE_ORPHAN', `${file.logical_path}:${name}`);
+    const end = profileEnd(content, start);
+    const profile = {
+      profile_id: null,
+      person_id: person.person_id, source_id: file.source_id,
+      heading_pointer: `/content/${start}`, source_kind: kind, source_ordinal: ordinal++,
+      heading_depth: node.depth, anchor: profileAnchor(kind, person.name, headingKo),
+      heading_ko: headingKo, heading_en: textLeaf(node.text.en, 'E_PROFILE_TEXT'),
+      node_start: start, node_end: end, is_primary: 0,
+    };
+    profiles.push(profile);
+    for (let index = start; index < end; index += 1) {
+      profileNodes.push({ profile_id: null, node_ordinal: index - start, source_id: file.source_id, json_pointer: `/content/${index}` });
+    }
+    profileFields.push(...collectFields({ file, profile, renderLoreMarkdown }));
+  }
+  return { profiles, profileNodes, profileFields };
+}
+
 /** Maps every authored card; node_start is inclusive and node_end exclusive. */
 export function mapProfiles({ bundle, identity, renderLoreMarkdown }) {
   if (typeof renderLoreMarkdown !== 'function') fail('E_PROFILE_RENDERER', 'trusted renderer required');

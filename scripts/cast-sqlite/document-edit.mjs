@@ -101,14 +101,14 @@ function exactKeys(command, keys) {
 }
 
 /** Existing-file only; never creates an empty authority, imports sources or rebuilds domains. */
-export function editDocument({ dbPath, documentId, corpusKind, domain, expectedRevision, actor, reason, changes }) {
+export function editDocument({ dbPath, documentId, corpusKind, domain, expectedRevision, actor, reason, changes, dependentEditors }) {
   if (!statSync(dbPath).isFile()) fail('E_DOCUMENT_DATABASE', 'existing database file required');
   const db = new DatabaseSync(dbPath, { enableForeignKeyConstraints: true });
-  try { return editDocumentOnConnection(db, { documentId, corpusKind, domain, expectedRevision, actor, reason, changes }); }
+  try { return editDocumentOnConnection(db, { documentId, corpusKind, domain, expectedRevision, actor, reason, changes, dependentEditors }); }
   finally { db.close(); }
 }
 
-export function editDocumentOnConnection(db, { documentId, corpusKind, domain, expectedRevision, actor, reason, changes }) {
+export function editDocumentOnConnection(db, { documentId, corpusKind, domain, expectedRevision, actor, reason, changes, dependentEditors }) {
   schemaIdentity(db); requireText(actor); requireText(reason);
   if (!Array.isArray(changes) || !changes.length) fail('E_DOCUMENT_COMMAND', 'nonempty typed commands required');
   try { return withTransaction(db, () => {
@@ -126,8 +126,9 @@ export function editDocumentOnConnection(db, { documentId, corpusKind, domain, e
     const dependencies = db.prepare("SELECT name FROM sqlite_schema WHERE type='table' AND name NOT LIKE 'sqlite_%'").all()
       .map((r) => r.name).filter((table) => !tables.includes(table) && !table.startsWith('document_')
         && !['source_file', 'source_record', 'article_route'].includes(table) && columns(db, table).includes('source_id'));
+    const handled = dependentEditors?.handledTables ?? []
     for (const table of dependencies) {
-      if (db.prepare(`SELECT 1 FROM ${table} WHERE source_id=? LIMIT 1`).get(sourceId)) fail('E_DOCUMENT_DOMAIN_EDITOR_REQUIRED', `dependent ${table} requires its typed editor`);
+      if (!handled.includes(table) && db.prepare(`SELECT 1 FROM ${table} WHERE source_id=? LIMIT 1`).get(sourceId)) fail('E_DOCUMENT_DOMAIN_EDITOR_REQUIRED', `dependent ${table} requires its typed editor`);
     }
     const structural = changes.some((c) => ['insertNode', 'deleteNode', 'reorderNodes'].includes(c?.type));
     if (structural && db.prepare('SELECT version FROM document_authority').get().version !== 2) {
@@ -135,6 +136,7 @@ export function editDocumentOnConnection(db, { documentId, corpusKind, domain, e
     }
     for (const command of changes) applyCommand(db, sourceId, command);
     if (structural) resolveStructuralLinks(db, sourceId);
+    if (dependentEditors?.sync) dependentEditors.sync(db, sourceId);
     const candidate = readDocument(db, { documentId, corpusKind, domain, visibility: 'internal' });
     if (digest(candidate) === digest(document)) fail('E_DOCUMENT_NO_CHANGE', 'commands do not change content');
     // Approval is never inherited from an old body, including metadata-only edits.
