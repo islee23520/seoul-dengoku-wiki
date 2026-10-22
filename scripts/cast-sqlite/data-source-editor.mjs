@@ -167,6 +167,28 @@ export function editFactionConsolidationRights({ dbPath, kingdomTitleRows, actor
       db.prepare('DELETE FROM context_polity WHERE polity_id=?').run('polity:daejeon');
       db.prepare('DELETE FROM context_feudal_jurisdiction WHERE title_id IN (' + DISSOLVED_TITLES.map(() => '?').join(',') + ')').run(...DISSOLVED_TITLES);
       db.prepare('DELETE FROM context_feudal_title WHERE title_id IN (' + DISSOLVED_TITLES.map(() => '?').join(',') + ')').run(...DISSOLVED_TITLES);
+      // Register the decision record as a sealed rights-approval source so
+      // new grants can cite it through the transition chain.
+      const decisionPath = 'scripts/approved-seoul-faction-consolidation-20261022.json';
+      const decisionBytes = readFileSync(new URL('../..' + '/' + decisionPath, import.meta.url));
+      const decisionDoc = JSON.parse(decisionBytes.toString('utf8'));
+      let decisionSourceId = db.prepare('SELECT source_id FROM source_file WHERE logical_path=?').get(decisionPath)?.source_id;
+      if (!decisionSourceId) {
+        const maxId = db.prepare('SELECT COALESCE(MAX(source_id), 0) AS m FROM source_file').get().m;
+        decisionSourceId = maxId + 1;
+        db.prepare('INSERT INTO source_file (source_id, logical_path, media_type, sha256, byte_length, raw_bytes) VALUES (?,?,?,?,?,?)')
+          .run(decisionSourceId, decisionPath, 'application/json', hash(decisionBytes), decisionBytes.length, decisionBytes);
+        for (const record of flattenJson(decisionDoc)) {
+          db.prepare('INSERT INTO source_record (source_id, json_pointer, parent_pointer, ordinal, field_name, json_type, text_value, integer_value, real_value, boolean_value) VALUES (?,?,?,?,?,?,?,?,?,?)')
+            .run(decisionSourceId, record.json_pointer, record.parent_pointer, record.ordinal, record.field_name, record.json_type, record.text_value, record.integer_value, record.real_value, record.boolean_value);
+        }
+        db.prepare('INSERT INTO context_rights_approval (approval_id, source_schema, approval_ref, receipt_sha256, message_ref, proposal_sha256, package_sha256, source_id, json_pointer) VALUES (?,?,?,?,?,?,?,?,?)')
+          .run(decisionPath, decisionDoc.schema, decisionDoc.approvalRef ?? 'owner:seoul-faction-consolidation-20261022', hash(decisionBytes), null, null, null, decisionSourceId, '');
+      }
+      for (const [ordinal, row] of kingdomTitleRows.entries()) {
+        db.prepare('INSERT OR IGNORE INTO context_rights_transition (set_name, old_id, original_value_sha256, disposition, current_id, approval_id, source_ordinal, original_source_id, original_json_pointer, source_id, json_pointer) VALUES (?,?,?,?,?,?,?,?,?,?,?)')
+          .run('titles', row.id, hash(canonical(row)), 'retained-current', row.id, decisionPath, ordinal, decisionSourceId, '/kingdomTitleRows/' + ordinal, decisionSourceId, '/kingdomTitleRows/' + ordinal);
+      }
       // The six granted kingdoms are new rows with new pointers.
       document.titles.forEach((row) => {
         if (!String(row.id ?? '').startsWith('title:kingdom-geography:seoul:')) return;
@@ -175,7 +197,7 @@ export function editFactionConsolidationRights({ dbPath, kingdomTitleRows, actor
           .run(row.id, row.name, row.rank, row.holderPersonId ?? null, row.stateId ?? null, row.parentTitleId ?? null,
             row.geographicTitleId ?? null, row.geographicParentTitleId ?? null, row.politicalParentTitleId ?? null,
             row.personalLiegePersonId ?? null, row.kind ?? null, row.directOwnership === undefined ? null : Number(row.directOwnership), row.basis ?? null,
-            null, null, sourceId, '/titles/' + ordinal);
+            'titles', row.id, sourceId, '/titles/' + ordinal);
         (row.jurisdictionRefs ?? []).forEach((ref, index) => db.prepare('INSERT INTO context_feudal_jurisdiction (title_id, ordinal, admin_unit_id, source_id, json_pointer) VALUES (?,?,?,?,?)')
           .run(row.id, index, ref, sourceId, '/titles/' + ordinal + '/jurisdictionRefs/' + index));
         ensurePointerRecords(db, sourceId, ordinal, row);
