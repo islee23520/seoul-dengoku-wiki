@@ -12,7 +12,55 @@ import { loadDatabasePersonProductionInputs } from '../cast-sqlite/person-detail
 import './editorial-profile.mjs';
 import { loadPersonDetailSources as loadLegacyInputs } from '../person-detail-inputs.mjs';
 
-test('closed DB replay preserves branded83tiers and current typed role bindings without filesystem reads', {
+test('sealed predecessor replay survives a current successor but rejects history tamper', {
+  skip: !process.env.PERSON_TIER_CURRENT_DB,
+}, async t => {
+  const { tmpdir } = await import('node:os');
+  const { join } = await import('node:path');
+  const { DatabaseSync } = await import('node:sqlite');
+  const directory = await fsp.mkdtemp(join(tmpdir(), 'tier-predecessor-'));
+  const path = join(directory, 'owned.sqlite');
+  await fsp.copyFile(process.env.PERSON_TIER_CURRENT_DB, path);
+  const db = new DatabaseSync(path);
+  const options = { capability: INTERNAL_EVIDENCE_CAPABILITY };
+  const evidenceStore = openEvidenceStore(process.env.WIKI_TIER_EVIDENCE_DB, options);
+  const historyStore = openEvidenceStore(process.env.WIKI_TIER_HISTORY_DB, options);
+  t.after(async () => { evidenceStore.close(); historyStore.close(); db.close(); await fsp.rm(directory, { recursive: true }); });
+  const actual = await replayDatabasePersonalTiers({ db, evidenceStore, historyStore });
+  assert.equal(actual.size, 83);
+  assert.equal(assertPersonalTierPreservation(actual), actual);
+  const core = db.prepare('SELECT source_id FROM source_file WHERE logical_path=?').get('lore/characters/Core-Characters.json').source_id;
+  const head = db.prepare('SELECT r.parent_revision FROM document_head h JOIN document_revision r USING(revision_id) WHERE h.source_id=?').get(core);
+  assert.ok(head.parent_revision, 'real current successor present');
+  const changedCurrent = { prepare(sql) {
+    if (sql.includes('FROM document_head')) throw new Error('historical proof consulted current head');
+    return db.prepare(sql);
+  } };
+  const replay = await replayDatabasePersonalTiers({ db: changedCurrent, evidenceStore, historyStore });
+  assert.deepEqual([...replay], [...actual]);
+  const tampered = { prepare(sql) {
+    const statement = db.prepare(sql);
+    if (sql.includes('document_revision_text_document_slot')) return { all: (...args) => statement.all(...args).map(row =>
+      row.representation === 'string' ? { ...row, text: row.text + ' historical tamper' } : row) };
+    return statement;
+  } };
+  await assert.rejects(replayDatabasePersonalTiers({ db: tampered, evidenceStore, historyStore }), /E_PERSON_TIER_HISTORY_INTEGRITY/u);
+  const wrongArchive = { prepare(sql) {
+    const statement = db.prepare(sql);
+    if (sql.includes('s.raw_bytes')) return { all: (...args) => statement.all(...args).map(row => ({ ...row, raw_bytes: Buffer.from('{}') })) };
+    return statement;
+  } };
+  await assert.rejects(replayDatabasePersonalTiers({ db: wrongArchive, evidenceStore, historyStore }), /E_PERSON_TIER_HISTORY_REFERENCE/u);
+  const wrongSnapshot = { getEvidence(identity, hash) {
+    const bytes = evidenceStore.getEvidence(identity, hash);
+    if (identity === 'tier-proof:lore/characters/Core-Characters.json') return Buffer.from('{}');
+    return bytes;
+  } };
+  await assert.rejects(replayDatabasePersonalTiers({ db, evidenceStore: wrongSnapshot, historyStore }), /E_PERSON_TIER_TYPED_MISMATCH/u);
+  assert.throws(() => assertPersonalTierPreservation(new Map(actual)));
+});
+
+test('closed DB replay preserves branded83tiers and sealed predecessor role bindings without filesystem reads', {
   skip: !process.env.PERSON_TIER_REPLAY_DB,
 }, async () => {
   const root = new URL('../..', import.meta.url).pathname;
@@ -82,11 +130,11 @@ test('closed DB replay preserves branded83tiers and current typed role bindings 
     await assert.rejects(replayDatabasePersonalTiers({ db, evidenceStore, historyStore: wrongRevision }), /missing historical revision/u);
     const changedTyped = { prepare(sql) {
       const statement = db.prepare(sql);
-      if (/FROM text_document_slot WHERE/u.test(sql)) return { all: (...args) => statement.all(...args).map(row =>
+      if (/document_revision_text_document_slot/u.test(sql)) return { all: (...args) => statement.all(...args).map(row =>
         row.representation === 'string' ? { ...row, text: row.text + ' changed' } : row) };
       return statement;
     } };
-    await assert.rejects(replayDatabasePersonalTiers({ db: changedTyped, evidenceStore, historyStore }), /E_REFERENCE_INTEGRITY/u);
+    await assert.rejects(replayDatabasePersonalTiers({ db: changedTyped, evidenceStore, historyStore }), /E_PERSON_TIER_HISTORY_INTEGRITY/u);
     db.exec('COMMIT');
   } finally {
     [fs.readFileSync, fs.readFile, fsp.readFile, fsp.readdir] = saved;
