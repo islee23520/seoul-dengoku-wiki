@@ -9,7 +9,9 @@ import proj4 from 'proj4'
 import { createHash } from 'node:crypto'
 import { validateHoldingFacility } from './holding-facility.mjs'
 import { projectOutsideOccupation } from './outside-occupation.mjs'
-import { projectOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
+import { composeConsolidationTransition, projectOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readApprovedDataSource } from './cast-sqlite/data-source-editor.mjs'
 import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
 import { REGION_CONTENT_SOURCE_HASHES } from './cast-sqlite/region-content-documents.mjs'
@@ -62,12 +64,14 @@ const parseStateRows = (markdown) => {
   return rows
 }
 
-const leaderForNames = (markdown, names) => {
+const leaderForNames = (markdown, names, currentActor) => {
   if (!markdown) return ''
   const ranked = []
   for (const match of markdown.matchAll(/^## ([^\n]+)\n\n([\s\S]*?)(?=\n## |$)/gm)) {
     const intro = match[2].split('\n', 1)[0]
     const introHit = names.some((candidate) => candidate && (intro.startsWith(candidate) || intro.includes(`${candidate} `)))
+    if (currentActor && (match[1].trim() !== currentActor || !introHit
+      || !intro.includes(`현재 아바타는 ${currentActor}이다`))) continue
     const bodyHit = names.some((candidate) => candidate && match[2].includes(candidate))
     if (introHit || bodyHit) ranked.push({ person: match[1].trim(), score: introHit ? 2 : 1 })
   }
@@ -101,7 +105,8 @@ const stateCatalog = stateRows.map((row) => ({
   cause: row.cause,
   ruler: row.id === 'S04'
     ? (() => { const name = coreCharacters.match(/2126년 당회장 자리는 ([가-힣]{2,4})가 앉았다\./u)?.[1]; if (!name) throw new Error('E_S04_OPENING_RULER'); return name })()
-    : row.government.match(/(?:^|[,，]\s*)회장 ([가-힣]{2,4})(?:$|[,，\s])/u)?.[1] ?? leaderForNames(coreCharacters, row.names),
+    : row.government.match(/(?:^|[,，]\s*)회장 ([가-힣]{2,4})(?:$|[,，\s])/u)?.[1] ?? leaderForNames(coreCharacters, row.names,
+      row.government.match(/현재 아바타 ([가-힣]{2,4})(?:$|[,，\s])/u)?.[1]),
   capital: row.capital,
   capitalName: row.capital,
 }))
@@ -230,13 +235,50 @@ export async function loadApprovedRightsHistory(sourceBytes) {
 }
 
 // Production current rights must pass both full history and exact disposition.
+export function historicalRightsPeopleContext(bytes = {
+  values: readSourceArchive('lore/name-pools/values-cast.json', '19a30e156065f6c2f59b3d2ea7b0226e887ea60d610b70d10e588937407620e2'),
+  registry: readSourceArchive('lore/name-pools/person-id-registry.json', 'c02b435da25b09a2c388b694a656242e150de9d169da9fb59c21f6880ac4a63a'),
+  states: readSourceArchive('lore/factions/Sixteen-States.json', '73b19e6af00df16fb06adfbaab7c386aea6930ff01587dd6a0dc69fbae557a3c'),
+}) {
+  const pins = { values: '19a30e156065f6c2f59b3d2ea7b0226e887ea60d610b70d10e588937407620e2',
+    registry: 'c02b435da25b09a2c388b694a656242e150de9d169da9fb59c21f6880ac4a63a',
+    states: '73b19e6af00df16fb06adfbaab7c386aea6930ff01587dd6a0dc69fbae557a3c' }
+  for (const [key, pin] of Object.entries(pins)) if (!(bytes[key] instanceof Uint8Array)
+    || createHash('sha256').update(bytes[key]).digest('hex') !== pin) throw new Error('E_HISTORICAL_PEOPLE_HASH:' + key)
+  const values = JSON.parse(Buffer.from(bytes.values).toString()), registry = JSON.parse(Buffer.from(bytes.registry).toString())
+  const ids = new Map(registry.persons.map(person => [person.name, person.id]))
+  const people = values.people.map(person => ({ id: ids.get(person.name), name: person.name, state: person.state }))
+  if (people.length !== registry.persons.length || people.some(person => !person.id)
+    || new Set(people.map(person => person.id)).size !== people.length) throw new Error('E_HISTORICAL_PEOPLE_IDENTITY')
+  return { people, affiliation: JSON.parse(Buffer.from(bytes.states).toString()).data.currentAffiliation }
+}
+
 export async function projectCatalogCurrentHoldings(args, context, sourceBytes) {
   if (args.rightsTransition !== undefined || args.historicalRights !== undefined) throw new Error('E_CATALOG_RIGHTS_ARGUMENT')
   if (args.scale !== undefined || args.geographicScale?.schema !== 'admin-territorial-scale.v2') throw new Error('E_CATALOG_GEOGRAPHIC_SCALE')
   const { transition, historical } = await loadApprovedRightsHistory(sourceBytes)
   const { geographicScale, ...historicalContext } = args
+  const historicalPeople = historicalRightsPeopleContext()
+  const historicalRights = { ...historicalContext, ...historical, ...historicalPeople, nonowningRights: undefined }
+  const predecessor = { ...args, ...historicalPeople,
+    existing: JSON.parse(readSourceArchive('lore/relations/personal-holdings.json', '1801d7bb8d27af743f74ea447d4f7be782b9d8ba7ba5b37af4d0c6f2b6329a12')),
+    allocation: JSON.parse(readSourceArchive('lore/relations/opening-feudal-allocation.json', '21d7663507b896a43d70fc459f662376780b477b5c2078af100b2d42bbe7079d')) }
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(context.repoRoot, 'data/canonical/wiki-cast.sqlite'))
+  let consolidationTransition
+  try {
+    if (db.prepare('SELECT 1 FROM data_source_head WHERE source_path=?').get('lore/relations/opening-feudal-allocation.json')) {
+      const same = (a, b) => JSON.stringify(a) === JSON.stringify(b)
+      const existing = readApprovedDataSource(db, 'lore/relations/personal-holdings.json', '77a0cc273441857a892822319f610d5630eb0801f70b7e633c303db7868f32e3', '1801d7bb8d27af743f74ea447d4f7be782b9d8ba7ba5b37af4d0c6f2b6329a12')
+      const allocation = readApprovedDataSource(db, 'lore/relations/opening-feudal-allocation.json', 'aa32254621831b189587024f2748dc1f78f93a1a448e4e5be15beb6ace8b12e9', '21d7663507b896a43d70fc459f662376780b477b5c2078af100b2d42bbe7079d')
+      const values = readApprovedDataSource(db, 'lore/name-pools/values-cast.json', '5750d72c1c7533e0cf9b59c11448c8d777c54f0f5758ef0fbe8cbe25c092265c', '19a30e156065f6c2f59b3d2ea7b0226e887ea60d610b70d10e588937407620e2')
+      if (!same(args.existing, existing) || !same(args.allocation, allocation)
+        || !same(args.people.map(({ name, state }) => ({ name, state })), values.people.map(({ name, state }) => ({ name, state })))) throw new Error('E_CONSOLIDATION_SOURCE')
+      consolidationTransition = composeConsolidationTransition(args, predecessor, historicalRights, transition,
+        readSourceArchive('scripts/approved-seoul-faction-consolidation-20261022.json', 'd0378abb6ef9578a847c133247faabb06d758b968d35f1193b4e4feb83701c54'))
+    }
+  } finally { db.close() }
   return projectCatalogHoldings({ ...args, rightsTransition: transition,
-    historicalRights: { ...historicalContext, ...historical, nonowningRights: undefined },
+    historicalRights, ...(consolidationTransition ? { consolidationTransition } : {}),
   }, context, sourceBytes?.nonowning)
 }
 

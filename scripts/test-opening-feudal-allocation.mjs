@@ -4,10 +4,11 @@ import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 // 입력 점유·규모 상태는 전부 fixture가 넘겨주는 값이며 모듈이 개수를 알고 있지 않음을 함께 확인한다.
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
+import { createHash } from 'node:crypto'
 import { test } from 'vitest'
 import { projectHistoricalOpeningFeudalAllocation as projectOpeningFeudalAllocation,
-  projectOpeningFeudalAllocation as projectCurrentOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
-import { loadApprovedRightsHistory, projectCatalogCurrentHoldings, projectCatalogOutsideOccupation } from './generate-catalog.mjs'
+  composeConsolidationTransition, projectOpeningFeudalAllocation as projectCurrentOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
+import { loadApprovedRightsHistory, projectCatalogCurrentHoldings, projectCatalogOutsideOccupation } from './person-detail-inputs.mjs'
 import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
 
 const activeScale = () => buildAdminTerritorialScale({
@@ -228,6 +229,64 @@ const fixture = () => ({
   control: structuredClone(control),
   affiliation: structuredClone(hegemons),
   scale: structuredClone(scale),
+})
+
+test('two-stage consolidation preserves predecessor checks and rejects changed approval delta and token', () => {
+  const historical = fixture()
+  historical.outside = { units: [], islands: [] }
+  historical.control = { assignments: [] }
+  historical.scale.rows = historical.scale.rows.filter(row => row.adminId.startsWith('region:'))
+  historical.allocation.titles = historical.allocation.titles.slice(0, 3)
+  historical.allocation.titles[0].jurisdictionRefs = ['region:1111051500', 'region:1111053000']
+  historical.allocation.titles[2].jurisdictionRefs = ['region:1111053000']
+  historical.allocation.grants = historical.allocation.grants.slice(0, 1)
+  const transition = { schema: 'approved-seoul-rights-transition.v1', polities: historical.existing.polities, records: [] }
+  for (const set of ['titles', 'grants', 'holdings', 'existingTitleBindings']) {
+    for (const row of (set === 'holdings' ? historical.existing : historical.allocation)[set]) {
+      const id = set === 'existingTitleBindings' ? row.holdingId : row.id
+      transition.records.push({ set, oldId: id, currentId: id, disposition: 'retained-current',
+        sourceValueSha256: createHash('sha256').update(JSON.stringify(row)).digest('hex') })
+    }
+  }
+  const { scale, ...predecessor } = structuredClone(historical)
+  predecessor.allocation.politicalIdentities = []
+  const decision = readSourceArchive('scripts/approved-seoul-faction-consolidation-20261022.json')
+  const current = structuredClone(predecessor)
+  current.allocation.titles.push(...JSON.parse(decision).kingdomTitleRows)
+  const token = composeConsolidationTransition(current, predecessor, historical, transition, decision)
+  assert.ok(token)
+  const { scale: ignoredScale, ...currentHistorical } = current
+  const geography = activeScale()
+  const accepted = structuredClone(currentHistorical)
+  const approved = JSON.parse(decision).kingdomTitleRows
+  accepted.people.push(...approved.filter(title => !accepted.people.some(person => person.id === title.holderPersonId))
+    .map(title => ({ id: title.holderPersonId, name: title.holderPersonId, state: title.stateId })))
+  const historicalWithHolders = structuredClone(historical)
+  historicalWithHolders.people = structuredClone(accepted.people)
+  const predecessorWithHolders = structuredClone(predecessor)
+  predecessorWithHolders.people = structuredClone(accepted.people)
+  const acceptedToken = composeConsolidationTransition(accepted, predecessorWithHolders, historicalWithHolders, transition, decision)
+  const projected = projectCurrentOpeningFeudalAllocation({ ...accepted, geographicScale: geography, consolidationTransition: acceptedToken })
+  assert.deepEqual(projected.titles.filter(title => title.geographicTitleId), approved)
+  assert.equal(projected.holdings.length, 2, 'geographic titles do not add property holdings')
+  for (const change of [{ geographicTitleId: 'geography:kingdom:unapproved' }, { holderPersonId: 'K003' },
+    { rank: 'empire' }, { directOwnership: true }, { parentTitleId: 'title:kingdom-han' }]) {
+    const injected = structuredClone(accepted)
+    Object.assign(injected.allocation.titles.find(title => title.id === approved[0].id), change)
+    assert.throws(() => composeConsolidationTransition(injected, predecessorWithHolders, historicalWithHolders, transition, decision), /E_CONSOLIDATION_DELTA:allocation/)
+    assert.throws(() => projectCurrentOpeningFeudalAllocation({ ...injected, geographicScale: geography, consolidationTransition: acceptedToken }), /E_CONSOLIDATION_COMPOSITION/)
+  }
+  const wrongGeography = structuredClone(geography)
+  wrongGeography.titles.find(title => title.titleId === approved[0].geographicTitleId).rank = 'duchy'
+  assert.throws(() => projectCurrentOpeningFeudalAllocation({ ...accepted, geographicScale: wrongGeography, consolidationTransition: acceptedToken }), /E_GEOGRAPHIC_KINGDOM/)
+  assert.throws(() => composeConsolidationTransition(current, predecessor, historical, transition, Buffer.from('{}')), /E_CONSOLIDATION_APPROVAL/)
+  const wrong = structuredClone(current); wrong.people[0].state = 'S16'
+  assert.throws(() => composeConsolidationTransition(wrong, predecessor, historical, transition, decision), /E_CONSOLIDATION_DELTA:people/)
+  const badPredecessor = structuredClone(predecessor); badPredecessor.existing.holdings.pop()
+  assert.throws(() => composeConsolidationTransition(current, badPredecessor, historical, transition, decision), /E_TRANSITION_CURRENT_EXISTING/)
+  const badTransition = structuredClone(transition); badTransition.records.pop()
+  assert.throws(() => composeConsolidationTransition(current, predecessor, historical, badTransition, decision), /E_TRANSITION_COVERAGE/)
+  assert.throws(() => projectCurrentOpeningFeudalAllocation({ ...current, geographicScale: activeScale(), consolidationTransition: {} }), /E_CONSOLIDATION_COMPOSITION/)
 })
 
 const throws = (mutate, code) => {
