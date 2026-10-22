@@ -23,8 +23,14 @@ export const PERSON_CONTACT_INPUT_SOURCE_HASHES = Object.freeze({
 
 const fail = (code, detail) => { throw Object.assign(new Error(`${code}: ${detail}`), { code }); };
 
+// Current sealed prose approval, separate from immutable archive byte identities.
+export const PERSON_CONTACT_INPUT_SEMANTIC_HASHES = Object.freeze({
+  'lore/characters/Core-Characters.json': 'a05f4bd6d9d0a246f1092d2b60ee7f0d0e5faf1ac151411e6bbfd6d7ecbcd905',
+});
+
 /** Caller-owned connection; sparse production Maps, never new relationships or file IO. */
-export function readPersonContactInputs(db, { expectedSourceHashes = PERSON_CONTACT_INPUT_SOURCE_HASHES } = {}) {
+export function readPersonContactInputs(db, { expectedSourceHashes = PERSON_CONTACT_INPUT_SOURCE_HASHES,
+  expectedSemanticHashes = PERSON_CONTACT_INPUT_SEMANTIC_HASHES } = {}) {
   const sources = new Map();
   for (const [path, hash] of Object.entries(PERSON_CONTACT_INPUT_SOURCE_HASHES)) {
     if (expectedSourceHashes?.[path] !== hash) fail('E_PERSON_CONTACT_STALE', path);
@@ -40,7 +46,8 @@ export function readPersonContactInputs(db, { expectedSourceHashes = PERSON_CONT
   const document = path => {
     if (!sources.has(path)) fail('E_PERSON_CONTACT_SOURCE', path);
     if (!documents.has(path)) {
-      const evidence = readEvidenceDocumentReference(db, { logicalPath: path, expectedSha256: expectedSourceHashes[path] });
+      const evidence = readEvidenceDocumentReference(db, { logicalPath: path, expectedSha256: expectedSourceHashes[path],
+        expectedSemanticSha256: expectedSemanticHashes?.[path] });
       documents.set(path, orderDocumentKeys(db, evidence.sourceId, evidence.document));
     }
     return documents.get(path);
