@@ -2,7 +2,7 @@ import { resolve, relative } from 'node:path';
 import { isDeepStrictEqual } from 'node:util';
 import { createHash } from 'node:crypto';
 import { evidenceReader } from './evidence-reader.mjs';
-import { readScopeCurrentSource, PUBLICATION_SUCCESSOR_HEADS, authenticatePublicationDataSuccessor } from './scope-current-source.mjs';
+import { readScopeCurrentSource, PUBLICATION_SUCCESSOR_HEADS, PUBLICATION_EXACT_BODIES, authenticatePublicationDataSuccessor } from './scope-current-source.mjs';
 
 // Immutable receipts authenticate exact bytes, including original whitespace.
 // Current document values MUST independently reconstruct from typed authority;
@@ -27,11 +27,15 @@ export function scopeAuthenticationReader({ db, evidenceStore, root, bindings, h
       const head = approved && db.prepare(`SELECT h.revision_id FROM document_head h
         JOIN source_file s USING(source_id) WHERE s.logical_path=?`).get(logicalPath);
       const successor = head?.revision_id === approved?.revision ? approved : undefined;
+      const exact = PUBLICATION_EXACT_BODIES[logicalPath];
+      const exactHead = exact && db.prepare(`SELECT h.revision_id FROM document_head h
+        JOIN source_file s USING(source_id) WHERE s.logical_path=?`).get(logicalPath);
+      const exactSuccessor = exact !== undefined && exactHead?.revision_id === exact.revision;
       const dataSuccessor = authenticatePublicationDataSuccessor(db, logicalPath, expectedSha256, actual, original);
       // The exact archive/current pair is independently pinned. The current head
       // was reconstructed and integrity-checked above; old bytes remain evidence
       // for the legacy review, never a replacement for the current authored body.
-      if (dataSuccessor ? false : successor ? expectedSha256 !== successor.sourceSha256
+      if (exactSuccessor ? expectedSha256 !== exact.sourceSha256 : dataSuccessor ? false : successor ? expectedSha256 !== successor.sourceSha256
         : !isDeepStrictEqual(actual, original) || JSON.stringify(actual) !== JSON.stringify(original))
         throw Object.assign(Error('E_SCOPE_AUTHENTICATION_TYPED_MISMATCH'), { logicalPath });
       if (snapshot) verified.add(logicalPath);

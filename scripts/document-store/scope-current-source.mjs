@@ -58,6 +58,67 @@ import { readEditorialVerificationDocument, EDITORIAL_VERIFICATION_DOCUMENT_HASH
 import { EDITORIAL_ENVELOPE_SOURCE_HASHES } from './editorial-envelope-documents.mjs';
 import { readApprovedDataSource } from '../cast-sqlite/data-source-editor.mjs';
 import { isDeepStrictEqual } from 'node:util';
+import { readDocumentRevision } from '../cast-sqlite/document-edit.mjs';
+import { authenticateExactBodyApproval } from './publication-database-inputs.mjs';
+import { fileURLToPath } from 'node:url';
+
+export const PUBLICATION_EXACT_BODY_APPROVAL = Object.freeze({
+  receiptPath: '.omo/evidence/fcd/approved-body-apply/receipt.json',
+  receiptSha256: '857d84a1e693f120faf9b83612db06ce87e577ca11f28547fbd6d43f240f1df4',
+  approvalPath: 'scripts/approved-document-bodies-20261023.json',
+  approvalSha256: 'a774009ea295fe7de381590ca1cb00a99393bbe8265cb82eecad831ae80b1b78',
+  manifestPath: '.omo/evidence/fcd/domain-proposal/manifest.json',
+  manifestSha256: 'c11753202e39313d70d410e9621682171b2c94e808527100d5f2fe5bf80920c0',
+});
+export const PUBLICATION_EXACT_BODIES = Object.freeze({
+  'lore/characters/Cast-Relations.json': Object.freeze({
+    documentId: 'DOC:Cast-Relations', domain: 'characters', file: 'Cast-Relations.after.json',
+    revision: '0befd45d2ddc810e39ef431dbe2a8d4632a349ddfec17626d6959889428a7842',
+    predecessor: 'd0aee1c4ab12eb202c65d2b98e8cbae04b669d73dd2ce4ca83162fd983565acb',
+    predecessorSemantic: 'd2c13b591fb376424fb4914b32822c1a96ab16fe5b5ebe7aecad318f6a7b214e',
+    semanticSha256: '30c628a8f920d5ed98e0196f90f71100fb61b13e3ab2aaea0fba7f1aa351c388',
+    byteSha256: 'a42b5fc1a265f1c61339f3ba81130f74cfe704394e479d676fca55e4f013b2b7',
+    sourceSha256: '80cb4c4f38ba089621904adc347091f53891a76658f964507eb677414d052a07',
+  }),
+  'lore/offices/Offices-and-Ranks.json': Object.freeze({
+    documentId: 'DOC:Offices-and-Ranks', domain: 'offices', file: 'Offices-and-Ranks.after.json',
+    revision: '22acb2f7a5959a94e3c734d8abaf3b386c5ce42f726b8dd82c393e8c0d126e80',
+    predecessor: '57dee91f3739def14183a2d378f5fadcd3b2812acc357004a7c158673c690442',
+    predecessorSemantic: 'ccec975b94492c8bb8e7ce232a6a21d2da0cd3d15078401be3a22fd15ae83e37',
+    semanticSha256: '85fd4951e1b8c20048c3f8523d85f70c6ef5a92c64e37dbdf98efd5168d05fcd',
+    byteSha256: '5c0e6d9cb726946efd9db00ece503cef5985e532abd7a575aa0756b86d16aea8',
+    sourceSha256: '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e',
+  }),
+});
+const canonicalBody = value => Array.isArray(value) ? `[${value.map(canonicalBody).join(',')}]`
+  : value !== null && typeof value === 'object'
+    ? `{${Object.keys(value).sort().map(key => `${JSON.stringify(key)}:${canonicalBody(value[key])}`).join(',')}}`
+    : JSON.stringify(value);
+const bodyDigest = value => createHash('sha256').update(canonicalBody(value)).digest('hex');
+
+function readExactApprovedBody(db, logicalPath, expectedSha256, approvedBodies) {
+  const pin = PUBLICATION_EXACT_BODIES[logicalPath];
+  approvedBodies ??= authenticateExactBodyApproval(process.env.PUBLICATION_NEW_BODY_ROOT
+    ?? fileURLToPath(new URL('../../', import.meta.url)));
+  const approved = approvedBodies.get(logicalPath);
+  if (!approved || bodyDigest(approved) !== pin.semanticSha256) throw Error('E_PUBLICATION_EXACT_BODY_REQUIRED');
+  const reference = readEvidenceDocumentReference(db, { logicalPath, expectedSha256, expectedSemanticSha256: pin.semanticSha256 });
+  const head = db.prepare(`SELECT r.* FROM document_head h JOIN document_revision r USING(source_id,revision_id)
+    JOIN document_revision_seal z USING(revision_id) WHERE h.source_id=?`).get(reference.sourceId);
+  const parent = db.prepare(`SELECT r.* FROM document_revision r JOIN document_revision_seal z USING(revision_id)
+    WHERE r.revision_id=?`).get(pin.predecessor);
+  if (expectedSha256 !== pin.sourceSha256 || reference.revision !== pin.revision
+    || head?.parent_revision !== pin.predecessor || parent?.source_id !== reference.sourceId
+    || parent.semantic_sha256 !== pin.predecessorSemantic || parent.algorithm !== 'typed-envelope-v1'
+    || parent.sequence >= head.sequence
+    || bodyDigest(['typed-envelope-v1', reference.sourceId, head.parent_revision, head.semantic_sha256, head.actor, head.reason]) !== pin.revision)
+    throw Error('E_PUBLICATION_EXACT_BODY_CHAIN');
+  const predecessor = readDocumentRevision(db, { revision: pin.predecessor, documentId: pin.documentId,
+    domain: pin.domain, corpusKind: 'current' });
+  if (bodyDigest(predecessor) !== pin.predecessorSemantic) throw Error('E_PUBLICATION_EXACT_BODY_CHAIN');
+  // approvedStructure contributes order only after complete typed equality.
+  return orderDocumentKeys(db, reference.sourceId, reference.document, { approvedStructure: approved });
+}
 
 // Independently reviewed source revisions (Task10/12/13), separate from the
 // renderer-envelope heads below. Each semantic pin bounds the complete delta.
@@ -128,7 +189,11 @@ export const PUBLICATION_SUCCESSOR_HEADS = Object.freeze({
 // Identity is selected independently from SQLite's document inventory, never
 // from the approval contract. A recognized typed source cannot fall back.
 export function readScopeCurrentSource({ db, logicalPath, expectedSha256, editorialProfiles, soulAssignments,
-  soulCandidates, soulReview, soulBatches, openingSample, editorialEnvelopes, snapshotDocuments, predecessor = false }) {
+  soulCandidates, soulReview, soulBatches, openingSample, editorialEnvelopes, approvedBodies, snapshotDocuments, predecessor = false }) {
+  const exact = PUBLICATION_EXACT_BODIES[logicalPath];
+  if (exact && db.prepare(`SELECT h.revision_id FROM document_head h JOIN source_file s USING(source_id)
+    WHERE s.logical_path=?`).get(logicalPath)?.revision_id === exact.revision)
+    return readExactApprovedBody(db, logicalPath, expectedSha256, approvedBodies);
   for (const [pins, store] of [[SOUL_CANDIDATE_SOURCE_HASHES, soulCandidates],
     [SOUL_REVIEW_SOURCE_HASHES, soulReview], [SOUL_BATCH_SOURCE_HASHES, soulBatches],
     [OPENING_SAMPLE_SOURCE_HASHES, openingSample], [EDITORIAL_ENVELOPE_SOURCE_HASHES, editorialEnvelopes]]) {

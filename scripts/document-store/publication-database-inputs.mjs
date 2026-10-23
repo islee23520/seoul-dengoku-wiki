@@ -1,11 +1,13 @@
 import { readFile } from 'node:fs/promises';
+import { readFileSync } from 'node:fs';
 import { resolve, isAbsolute } from 'node:path';
 import { createHash } from 'node:crypto';
 import { DatabaseSync } from 'node:sqlite';
 import { fileURLToPath } from 'node:url';
 import { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } from './evidence.mjs';
 import { scopeAuthenticationReader } from './scope-authentication-reader.mjs';
-import { PUBLICATION_SUCCESSOR_APPROVAL, PUBLICATION_SUCCESSOR_HEADS, PUBLICATION_DATA_SUCCESSORS } from './scope-current-source.mjs';
+import { PUBLICATION_SUCCESSOR_APPROVAL, PUBLICATION_SUCCESSOR_HEADS, PUBLICATION_DATA_SUCCESSORS,
+  PUBLICATION_EXACT_BODY_APPROVAL, PUBLICATION_EXACT_BODIES } from './scope-current-source.mjs';
 import { scopeDirectoryReader } from './scope-directory-inventory.mjs';
 import { readScopeContract } from '../cast-sqlite/scope-contract-store.mjs';
 import { openEditorialProfiles, INTERNAL_PROFILE_CAPABILITY, EDITORIAL_PROFILE_SOURCE_HASHES } from './editorial-profile.mjs';
@@ -15,6 +17,36 @@ import { openSoulReviewDocuments, INTERNAL_REVIEW_CAPABILITY, SOUL_REVIEW_SOURCE
 import { openSoulBatchDocuments, INTERNAL_BATCHES_CAPABILITY, SOUL_BATCH_SOURCE_HASHES } from './soul-batch-documents.mjs';
 import { openOpeningSampleDocuments, INTERNAL_OPENING_SAMPLE_CAPABILITY, OPENING_SAMPLE_SOURCE_HASHES } from './opening-sample-documents.mjs';
 import { openEditorialEnvelopeDocuments, INTERNAL_EDITORIAL_ENVELOPE_CAPABILITY, EDITORIAL_ENVELOPE_SOURCE_HASHES } from './editorial-envelope-documents.mjs';
+
+export function authenticateExactBodyApproval(root, readBytes = readFileSync) {
+  const proof = PUBLICATION_EXACT_BODY_APPROVAL;
+  const readPinned = (path, sha256) => {
+    const base = path === proof.approvalPath ? fileURLToPath(new URL('../../', import.meta.url)) : root;
+    const bytes = readBytes(resolve(base, path));
+    if (createHash('sha256').update(bytes).digest('hex') !== sha256) throw Error('E_PUBLICATION_EXACT_BODY_APPROVAL');
+    return JSON.parse(bytes);
+  };
+  const receipt = readPinned(proof.receiptPath, proof.receiptSha256);
+  const approval = readPinned(proof.approvalPath, proof.approvalSha256);
+  const manifest = readPinned(proof.manifestPath, proof.manifestSha256);
+  if (approval.actualUserAnswer !== 'approve_pending_bodies: 두 본문 승인 (Recommended)'
+    || approval.voteEvidence?.event !== 'required-exact-body-approved-resume' || approval.voteEvidence.line !== 466
+    || receipt.approval?.sha256 !== proof.approvalSha256 || approval.proposalManifestSha256 !== proof.manifestSha256)
+    throw Error('E_PUBLICATION_EXACT_BODY_APPROVAL');
+  const bodies = new Map();
+  for (const [logicalPath, pin] of Object.entries(PUBLICATION_EXACT_BODIES)) {
+    const row = manifest.documents.find(row => row.logicalPath === logicalPath);
+    const vote = approval.documents.find(row => row.id === pin.documentId);
+    const applied = receipt.result.find(row => row.documentId === pin.documentId);
+    if (row?.sourceArchiveSha256 !== pin.sourceSha256 || row.after?.byteSha256 !== pin.byteSha256
+      || row.after?.expectedStoredSemanticSha256 !== pin.semanticSha256 || row.predecessorRevision !== pin.predecessor
+      || vote?.byteSha256 !== pin.byteSha256 || vote.semanticSha256 !== pin.semanticSha256 || vote.predecessor !== pin.predecessor
+      || applied?.revision !== pin.revision || applied.previousRevision !== pin.predecessor || applied.semanticSha256 !== pin.semanticSha256)
+      throw Error('E_PUBLICATION_EXACT_BODY_APPROVAL');
+    bodies.set(logicalPath, readPinned(`.omo/evidence/fcd/domain-proposal/${pin.file}`, pin.byteSha256));
+  }
+  return bodies;
+}
 
 // Explicit machine-local inputs. No document source path is opened here.
 // Receipt files select evidence identities; existing authenticators still decide
@@ -39,6 +71,9 @@ export async function openPublicationDatabaseInputs(root, config) {
     // One immutable read snapshot per publication authentication. This keeps
     // repeated source requests consistent without reconstructing typed rows again.
     db.exec('PRAGMA query_only=ON; BEGIN');
+    const exactHeads = db.prepare(`SELECT s.logical_path,h.revision_id FROM source_file s
+      JOIN document_head h USING(source_id)`).all().filter(row => PUBLICATION_EXACT_BODIES[row.logical_path]?.revision === row.revision_id);
+    const approvedBodies = exactHeads.length ? authenticateExactBodyApproval(root) : undefined;
     const successors = db.prepare(`SELECT s.logical_path FROM source_file s
       JOIN document_head h USING(source_id) JOIN document_revision r USING(source_id,revision_id)
       WHERE r.parent_revision IS NOT NULL`).all().filter(row => Object.hasOwn(PUBLICATION_SUCCESSOR_HEADS, row.logical_path));
@@ -90,7 +125,7 @@ export async function openPublicationDatabaseInputs(root, config) {
       currentSourceHashes.set(row.sourcePath, binding.sha256);
     }
     const sealed = scopeAuthenticationReader({ db, evidenceStore, root, bindings, externalBindings, historicalBindings,
-      missingPaths: new Set(capture.missingPaths), currentSourceHashes, ...privateStores });
+      missingPaths: new Set(capture.missingPaths), currentSourceHashes, approvedBodies, ...privateStores });
     const archives = new Map(capture.externalArchives.map(row => [resolve(row.path), row]));
     const readBytes = async path => {
       path = path instanceof URL ? fileURLToPath(path) : path;

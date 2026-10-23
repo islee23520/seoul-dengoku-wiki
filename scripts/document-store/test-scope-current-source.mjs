@@ -6,7 +6,8 @@ import fsp from 'node:fs/promises';
 import { syncBuiltinESMExports } from 'node:module';
 import { openReadOnly } from '../cast-sqlite/db.mjs';
 import { readSourceArchive } from '../cast-sqlite/source-archive.mjs';
-import { readScopeCurrentSource, PUBLICATION_SUCCESSOR_HEADS, PUBLICATION_DATA_SUCCESSORS, authenticatePublicationDataSuccessor } from './scope-current-source.mjs';
+import { readScopeCurrentSource, PUBLICATION_SUCCESSOR_HEADS, PUBLICATION_DATA_SUCCESSORS, PUBLICATION_EXACT_BODIES, authenticatePublicationDataSuccessor } from './scope-current-source.mjs';
+import { authenticateExactBodyApproval } from './publication-database-inputs.mjs';
 import { SCOPE_CONTRACT_SOURCE_SHA256 } from '../cast-sqlite/scope-contract-store.mjs';
 import { CENSUS_DOCUMENT_PINS } from '../cast-sqlite/census-document-store.mjs';
 import { STATION_INTERIOR_SOURCE_HASH } from '../cast-sqlite/station-interior-inputs.mjs';
@@ -46,6 +47,38 @@ import { UNIT_PROPOSAL_SOURCE_HASH } from '../cast-sqlite/unit-proposal-document
 import { NPC_PROPOSAL_SOURCE_HASH } from '../cast-sqlite/npc-proposal-document.mjs';
 import { scopeAuthenticationReader } from './scope-authentication-reader.mjs';
 
+test('exact approved whole bodies reject receipt, body, predecessor and chain drift', {
+  skip: !process.env.PUBLICATION_NEW_BODY_ROOT || !process.env.PUBLICATION_SUCCESSOR_DB,
+}, async () => {
+  const approvedBodies = await authenticateExactBodyApproval(process.env.PUBLICATION_NEW_BODY_ROOT);
+  const db = openReadOnly(process.env.PUBLICATION_SUCCESSOR_DB);
+  try {
+    for (const [logicalPath, pin] of Object.entries(PUBLICATION_EXACT_BODIES)) {
+      const select = { db, logicalPath, expectedSha256: pin.sourceSha256, approvedBodies };
+      assert.deepEqual(readScopeCurrentSource(select), approvedBodies.get(logicalPath));
+      const badBodies = new Map(approvedBodies);
+      const changed = structuredClone(badBodies.get(logicalPath)); changed.locales.en.summary += ' unauthorized';
+      badBodies.set(logicalPath, changed);
+      assert.throws(() => readScopeCurrentSource({ ...select, approvedBodies: badBodies }), /E_PUBLICATION_EXACT_BODY_REQUIRED/u);
+      for (const field of ['parent_revision', 'reason']) {
+        const wrong = { prepare(sql) {
+          const stmt = db.prepare(sql);
+          if (sql.includes('SELECT r.* FROM document_head')) return { get: (...args) => ({ ...stmt.get(...args), [field]: 'wrong' }) };
+          return stmt;
+        } };
+        assert.throws(() => readScopeCurrentSource({ ...select, db: wrong }), /E_PUBLICATION_EXACT_BODY_CHAIN/u);
+      }
+      const raw = Buffer.from(db.prepare('SELECT raw_bytes FROM source_file WHERE logical_path=?').get(logicalPath).raw_bytes);
+      const read = scopeAuthenticationReader({ db, root: '/exact', approvedBodies,
+        evidenceStore: { getEvidence() { return raw; } }, bindings: new Map([[logicalPath, { identity: logicalPath, sha256: pin.sourceSha256 }]]),
+        currentSourceHashes: new Map([[logicalPath, pin.sourceSha256]]) });
+      assert.deepEqual(await read(`/exact/${logicalPath}`), raw);
+    }
+    assert.throws(() => authenticateExactBodyApproval(process.env.PUBLICATION_NEW_BODY_ROOT,
+      () => Buffer.from('{}')), /E_PUBLICATION_EXACT_BODY_APPROVAL/u);
+  } finally { db.close(); }
+});
+
 test('publication data successors authenticate each exact delta, parent chain and approval without replacing historical bytes', {
   skip: !process.env.PUBLICATION_SUCCESSOR_DB,
 }, async () => {
@@ -83,10 +116,12 @@ test('publication data successors authenticate each exact delta, parent chain an
 
 test('approved publication successor heads require the exact archive, revision and semantic tuple', {
   skip: !process.env.PUBLICATION_SUCCESSOR_DB,
-}, () => {
+}, async () => {
   const db = openReadOnly(process.env.PUBLICATION_SUCCESSOR_DB);
+  const approvedBodies = process.env.PUBLICATION_NEW_BODY_ROOT ? await authenticateExactBodyApproval(process.env.PUBLICATION_NEW_BODY_ROOT) : undefined;
   try {
     for (const [logicalPath, pin] of Object.entries(PUBLICATION_SUCCESSOR_HEADS)) {
+      if (approvedBodies?.has(logicalPath)) continue;
       const selection = { logicalPath, expectedSha256: pin.sourceSha256 };
       assert.ok(readScopeCurrentSource({ db, ...selection }).id);
       assert.throws(() => readScopeCurrentSource({ db, ...selection, expectedSha256: '0'.repeat(64) }),
@@ -117,8 +152,10 @@ test('successor evidence validates current typed bodies while preserving exact l
   skip: !process.env.PUBLICATION_SUCCESSOR_DB,
 }, async () => {
   const db = openReadOnly(process.env.PUBLICATION_SUCCESSOR_DB);
+  const approvedBodies = process.env.PUBLICATION_NEW_BODY_ROOT ? await authenticateExactBodyApproval(process.env.PUBLICATION_NEW_BODY_ROOT) : undefined;
   try {
     for (const [logicalPath, pin] of Object.entries(PUBLICATION_SUCCESSOR_HEADS)) {
+      if (approvedBodies?.has(logicalPath)) continue;
       const bytes = Buffer.from(db.prepare('SELECT raw_bytes FROM source_file WHERE logical_path=?').get(logicalPath).raw_bytes);
       const options = { db, root: '/publication-evidence',
         evidenceStore: { getEvidence() { return bytes; } },

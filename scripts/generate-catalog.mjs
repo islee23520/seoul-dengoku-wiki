@@ -55,10 +55,10 @@ import { personFeedbackRecord } from './feedback-source-catalog.mjs'
 import { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } from './document-store/evidence.mjs'
 import { openEditorialProfiles, INTERNAL_PROFILE_CAPABILITY, EDITORIAL_PROFILE_SOURCE_HASHES } from './document-store/editorial-profile.mjs'
 import { readPublicCharacterProfileInputs } from './cast-sqlite/profile-inputs.mjs'
-import { preserveReceiptOrder, orderDocumentKeys } from './cast-sqlite/document-key-order.mjs'
+import { preserveReceiptOrder } from './cast-sqlite/document-key-order.mjs'
 import { readPortraitDocuments } from './cast-sqlite/portrait-store.mjs'
 import { readGeographyStore } from './cast-sqlite/geography-store.mjs'
-import { readEvidenceDocumentReference } from './cast-sqlite/evidence-document-reference.mjs'
+import { readScopeCurrentSource } from './document-store/scope-current-source.mjs'
 import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
 import { readRetirementProse, projectRetirementProse } from './cast-sqlite/retirement-prose.mjs'
 import { projectActiveRoster, projectActivePersonIndex } from './person-roster-projection.mjs'
@@ -169,9 +169,9 @@ let geography, territorialScale, geographicScale
     db.exec('BEGIN')
     geographicScale = buildAdminTerritorialScaleFromDb(db)
     geography = readGeographyStore(db)
-    const offices = readEvidenceDocumentReference(db, { logicalPath: 'lore/offices/Offices-and-Ranks.json',
+    const offices = readScopeCurrentSource({ db, logicalPath: 'lore/offices/Offices-and-Ranks.json',
       expectedSha256: '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e' })
-    territorialScale = orderDocumentKeys(db, offices.sourceId, offices.document).data.territorialScale
+    territorialScale = offices.data.territorialScale
     db.exec('COMMIT')
   } finally { db.close() }
 }
