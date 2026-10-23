@@ -12,7 +12,7 @@ import { mapTextCorpusDocuments } from './text-corpus-documents.mjs';
 import { mapTextData } from './text-data.mjs';
 import { readDocument } from './document-read.mjs';
 import { renderLoreMarkdown } from '../lore-json-render.mjs';
-import { initializeDocumentAuthority, editDocument, editDocumentOnConnection, readDocumentRevision } from './document-edit.mjs';
+import { initializeDocumentAuthority, editDocument, editDocumentOnConnection, editDocumentsOnConnection, readDocumentRevision } from './document-edit.mjs';
 
 const selection = { documentId: 'fixture', corpusKind: 'example', visibility: 'internal' };
 const original = () => ({ version: 1, domain: 'technology', id: 'fixture', slug: 'Fixture', status: 'approved',
@@ -69,6 +69,33 @@ const command = { type: 'setText', nodeId: 'stable', slot: 'text/ko', value: 'af
 const edit = (f, changes = [command], expectedRevision = f.revision) => editDocumentOnConnection(f.db,
   { ...selection, expectedRevision, actor: 'author', reason: 'typed edit', changes });
 const typedOnly = (db) => ({ prepare(sql) { assert.doesNotMatch(sql, /\bsource_record\b|\braw_bytes\b/iu); return db.prepare(sql); } });
+
+test('bounded row append preserves old coordinates and rolls back malformed, stale and wrong-body edits', t => {
+  const document = original();
+  const cell = { ko: 'cell', en: 'cell' };
+  document.content.push({ kind: 'table', anchor: 'table', columns: [cell], rows: [[cell]] });
+  const f = fixture(t, { document });
+  const append = { type: 'appendTableRow', nodeId: 'table', expectedRows: 1, row: [{ ko: 'new', en: 'new' }] };
+  const snapshot = () => Object.fromEntries(['source_record', 'text_document_table_row', 'text_document_table_cell', 'text_document_slot', 'document_head', 'document_revision']
+    .map(table => [table, f.db.prepare(`SELECT * FROM ${table} ORDER BY rowid`).all()]));
+  const before = snapshot();
+  for (const bad of [{ ...append, expectedRows: 0 }, { ...append, row: [] }, { ...append, row: [{ ko: 'missing' }] },
+    { ...append, row: [{ ko: [{ text: 'run' }], en: 'scalar' }] }, { ...append, unexpected: true }]) {
+    assert.throws(() => edit(f, [bad]), { code: 'E_DOCUMENT_COMMAND' });
+    assert.deepEqual(snapshot(), before);
+  }
+  assert.throws(() => editDocumentOnConnection(f.db, { ...selection, expectedRevision: f.revision, actor: 'test', reason: 'wrong-body', changes: [append], expectedSemanticSha256: 'bad' }), { code: 'E_DOCUMENT_EXPECTED_BODY' });
+  assert.deepEqual(snapshot(), before);
+  const options = { ...selection, expectedRevision: f.revision, actor: 'test', reason: 'batch', changes: [append] };
+  assert.throws(() => editDocumentsOnConnection(f.db, [options, { ...options, expectedRevision: 'stale' }]), { code: 'E_REVISION_CONFLICT' });
+  assert.deepEqual(snapshot(), before);
+  const result = edit(f, [append]);
+  assert.deepEqual(readDocument(f.db, selection).content.at(-1).rows, [[cell], append.row]);
+  assert.deepEqual(readDocumentRevision(typedOnly(f.db), { ...selection, revision: f.revision }), document);
+  assert.deepEqual(readDocumentRevision(typedOnly(f.db), { ...selection, revision: result.revision }), readDocument(f.db, selection));
+  assert.throws(() => edit(f, [append]), { code: 'E_REVISION_CONFLICT' });
+  assert.deepEqual(f.db.prepare('PRAGMA foreign_key_check').all(), []);
+});
 
 test('real typed authoring survives reopen; old normalized revision renders without archive or JSON', (t) => {
   const f = fixture(t);

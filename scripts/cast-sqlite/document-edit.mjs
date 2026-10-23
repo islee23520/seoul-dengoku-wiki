@@ -108,10 +108,20 @@ export function editDocument({ dbPath, documentId, corpusKind, domain, expectedR
   finally { db.close(); }
 }
 
-export function editDocumentOnConnection(db, { documentId, corpusKind, domain, expectedRevision, actor, reason, changes, dependentEditors }) {
+export function editDocumentOnConnection(db, options) {
+  return editDocumentInTransaction(db, options, withTransaction);
+}
+
+/** Multiple sealed revisions and their dependent projections commit or roll back together. */
+export function editDocumentsOnConnection(db, edits) {
+  if (!Array.isArray(edits) || !edits.length) fail('E_DOCUMENT_COMMAND', 'nonempty edits required');
+  return withTransaction(db, () => edits.map((options) => editDocumentInTransaction(db, options, (_, fn) => fn())));
+}
+
+function editDocumentInTransaction(db, { documentId, corpusKind, domain, expectedRevision, actor, reason, changes, dependentEditors, expectedSemanticSha256 }, transact) {
   schemaIdentity(db); requireText(actor); requireText(reason);
   if (!Array.isArray(changes) || !changes.length) fail('E_DOCUMENT_COMMAND', 'nonempty typed commands required');
-  try { return withTransaction(db, () => {
+  try { return transact(db, () => {
     const document = readDocument(db, { documentId, corpusKind, domain, visibility: 'internal' });
     if (!document) fail('E_DOCUMENT_NOT_FOUND', 'document absent');
     const sourceId = document.readMetadata.source_id;
@@ -130,7 +140,7 @@ export function editDocumentOnConnection(db, { documentId, corpusKind, domain, e
     for (const table of dependencies) {
       if (!handled.includes(table) && db.prepare(`SELECT 1 FROM ${table} WHERE source_id=? LIMIT 1`).get(sourceId)) fail('E_DOCUMENT_DOMAIN_EDITOR_REQUIRED', `dependent ${table} requires its typed editor`);
     }
-    const structural = changes.some((c) => ['insertNode', 'deleteNode', 'reorderNodes'].includes(c?.type));
+    const structural = changes.some((c) => ['insertNode', 'deleteNode', 'reorderNodes', 'appendTableRow'].includes(c?.type));
     if (structural && db.prepare('SELECT version FROM document_authority').get().version !== 2) {
       upgradeStructuralAuthority(db, tables, readFileSync(new URL('./document-authority.sql', import.meta.url), 'utf8'));
     }
@@ -142,6 +152,9 @@ export function editDocumentOnConnection(db, { documentId, corpusKind, domain, e
     // Approval is never inherited from an old body, including metadata-only edits.
     db.prepare("UPDATE text_document SET status='draft' WHERE source_id=?").run(sourceId);
     const semanticSha256 = digest(readDocument(db, { documentId, corpusKind, domain, visibility: 'internal' }));
+    if (expectedSemanticSha256 !== undefined && semanticSha256 !== expectedSemanticSha256) {
+      fail('E_DOCUMENT_EXPECTED_BODY', 'typed result differs from exact approved semantic hash');
+    }
     const sequence = db.prepare('SELECT sequence FROM document_authority WHERE singleton=1').get().sequence + 1;
     const revision = hash(canonical(['typed-envelope-v1', sourceId, head.revision_id, semanticSha256, actor, reason]));
     recordRevision(db, { sourceId, revision, parent: head.revision_id, semanticSha256, actor, reason, sequence });
@@ -175,7 +188,7 @@ function applyCommand(db, sourceId, command) {
       if (result.changes !== 1) fail('E_DOCUMENT_COMMAND', 'existing typed domain text field required');
       break;
     }
-    case 'insertNode': case 'deleteNode': case 'reorderNodes':
+    case 'insertNode': case 'deleteNode': case 'reorderNodes': case 'appendTableRow':
       applyStructuralCommand(db, sourceId, command); break;
     case 'setLocale': {
       exactKeys(command, ['type', 'locale', 'field', 'value']);
