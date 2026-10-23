@@ -59,7 +59,7 @@ import { EDITORIAL_ENVELOPE_SOURCE_HASHES } from './editorial-envelope-documents
 import { readApprovedDataSource } from '../cast-sqlite/data-source-editor.mjs';
 import { isDeepStrictEqual } from 'node:util';
 import { readDocumentRevision } from '../cast-sqlite/document-edit.mjs';
-import { authenticateExactBodyApproval } from './publication-database-inputs.mjs';
+import { authenticateExactBodyApproval, authenticateAtlasDraftApproval } from './publication-database-inputs.mjs';
 import { fileURLToPath } from 'node:url';
 
 export const PUBLICATION_EXACT_BODY_APPROVAL = Object.freeze({
@@ -95,6 +95,47 @@ const canonicalBody = value => Array.isArray(value) ? `[${value.map(canonicalBod
     ? `{${Object.keys(value).sort().map(key => `${JSON.stringify(key)}:${canonicalBody(value[key])}`).join(',')}}`
     : JSON.stringify(value);
 const bodyDigest = value => createHash('sha256').update(canonicalBody(value)).digest('hex');
+
+// Separate internal draft approval; never extend the historical two-body receipt.
+export const ATLAS_DRAFT_APPROVAL = Object.freeze({
+  logicalPath: 'lore/World-Narrative-Atlas.json',
+  approvalPath: 'scripts/approved-atlas-affiliations-20261023.json',
+  approvalSha256: 'c8dc75a69957a680221c6501fb2dbf67bad074576f73686edddb4d2ebcf9fc35',
+  revision: '938b5651c1d0acf32647a5a0c489c8ae568026d06e3430c1b1b6675aa87d9e86',
+  predecessor: '343cc396ce017934e15f863226b8b69c96a57bb7ee7d76cf650abed25b139dae',
+  predecessorSemantic: '22e53460aba0b3f9a4a0b221b3c3b2437aa2f04ff355ae72bb9bcf68549dd7ad',
+  semanticSha256: '16ab8236e117ee9ee697700e085e23ef5efcb786182b2f04d6c473088130e337',
+  byteSha256: '423472bc2a7ce3a7aa719f15db60e00c68e66d8ad5d23816e2de1bb021214597',
+  sourceSha256: 'e8314a0a65c2fbaa2db47f8388b11b931840b2d2b24a2aeeb6299815888ee32c',
+});
+
+function readApprovedAtlasDraft(db, expectedSha256) {
+  const pin = ATLAS_DRAFT_APPROVAL;
+  authenticateAtlasDraftApproval();
+  if (expectedSha256 !== pin.sourceSha256) throw Error('E_ATLAS_DRAFT_SOURCE_PIN');
+  const reference = readEvidenceDocumentReference(db, { logicalPath: pin.logicalPath, expectedSha256,
+    expectedSemanticSha256: pin.semanticSha256 });
+  const head = db.prepare(`SELECT r.* FROM document_head h JOIN document_revision r USING(source_id,revision_id)
+    JOIN document_revision_seal z USING(revision_id) WHERE h.source_id=?`).get(reference.sourceId);
+  const parent = db.prepare(`SELECT r.* FROM document_revision r JOIN document_revision_seal z USING(revision_id)
+    WHERE r.revision_id=?`).get(pin.predecessor);
+  if (reference.sourceId !== 8 || reference.revision !== pin.revision || head?.parent_revision !== pin.predecessor
+    || parent?.source_id !== reference.sourceId || parent.semantic_sha256 !== pin.predecessorSemantic
+    || parent.algorithm !== 'typed-envelope-v1' || parent.sequence >= head.sequence
+    || bodyDigest(['typed-envelope-v1', reference.sourceId, head.parent_revision, head.semantic_sha256, head.actor, head.reason]) !== pin.revision)
+    throw Error('E_ATLAS_DRAFT_CHAIN');
+  const predecessor = readDocumentRevision(db, { revision: pin.predecessor, documentId: 'WNA-001', domain: 'root', corpusKind: 'current' });
+  if (bodyDigest(predecessor) !== pin.predecessorSemantic) throw Error('E_ATLAS_DRAFT_CHAIN');
+  // Reconstruct the entire expected delta from sealed typed history, not a body oracle.
+  predecessor.data.atlas.additional_people.K1003.national_state_id = 'S02';
+  predecessor.data.atlas.additional_people.K1008.national_state_id = 'S02';
+  predecessor.status = 'draft';
+  if (!isDeepStrictEqual(predecessor, reference.document)) throw Error('E_ATLAS_DRAFT_DELTA');
+  const document = orderDocumentKeys(db, reference.sourceId, reference.document);
+  if (createHash('sha256').update(JSON.stringify(document, null, 2) + '\n').digest('hex') !== pin.byteSha256)
+    throw Error('E_ATLAS_DRAFT_BODY');
+  return document;
+}
 
 function readExactApprovedBody(db, logicalPath, expectedSha256, approvedBodies) {
   const pin = PUBLICATION_EXACT_BODIES[logicalPath];
@@ -190,6 +231,11 @@ export const PUBLICATION_SUCCESSOR_HEADS = Object.freeze({
 // from the approval contract. A recognized typed source cannot fall back.
 export function readScopeCurrentSource({ db, logicalPath, expectedSha256, editorialProfiles, soulAssignments,
   soulCandidates, soulReview, soulBatches, openingSample, editorialEnvelopes, approvedBodies, snapshotDocuments, predecessor = false }) {
+  if (logicalPath === ATLAS_DRAFT_APPROVAL.logicalPath) {
+    const head = db.prepare(`SELECT h.revision_id FROM document_head h JOIN source_file s USING(source_id)
+      WHERE s.logical_path=?`).get(logicalPath);
+    if (head && head.revision_id !== ATLAS_DRAFT_APPROVAL.predecessor) return readApprovedAtlasDraft(db, expectedSha256);
+  }
   const exact = PUBLICATION_EXACT_BODIES[logicalPath];
   if (exact && db.prepare(`SELECT h.revision_id FROM document_head h JOIN source_file s USING(source_id)
     WHERE s.logical_path=?`).get(logicalPath)?.revision_id === exact.revision)

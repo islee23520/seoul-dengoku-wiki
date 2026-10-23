@@ -47,6 +47,56 @@ import { UNIT_PROPOSAL_SOURCE_HASH } from '../cast-sqlite/unit-proposal-document
 import { NPC_PROPOSAL_SOURCE_HASH } from '../cast-sqlite/npc-proposal-document.mjs';
 import { scopeAuthenticationReader } from './scope-authentication-reader.mjs';
 
+test('exact approved Atlas draft authenticates current typed body while preserving historical bytes', {
+  skip: !process.env.PUBLICATION_SUCCESSOR_DB,
+}, async () => {
+  const db = openReadOnly(process.env.PUBLICATION_SUCCESSOR_DB);
+  const logicalPath = 'lore/World-Narrative-Atlas.json';
+  const expectedSha256 = 'e8314a0a65c2fbaa2db47f8388b11b931840b2d2b24a2aeeb6299815888ee32c';
+  const selection = { db, logicalPath, expectedSha256 };
+  const saved = fs.readFileSync;
+  try {
+    const raw = Buffer.from(db.prepare('SELECT raw_bytes FROM source_file WHERE logical_path=?').get(logicalPath).raw_bytes);
+    const actual = readScopeCurrentSource(selection);
+    assert.equal(actual.status, 'draft');
+    for (const id of ['K1003', 'K1008']) assert.equal(actual.data.atlas.additional_people[id].national_state_id, 'S02');
+    assert.equal(createHash('sha256').update(JSON.stringify(actual, null, 2) + '\n').digest('hex'),
+      '423472bc2a7ce3a7aa719f15db60e00c68e66d8ad5d23816e2de1bb021214597');
+    const read = scopeAuthenticationReader({ db, root: '/atlas',
+      evidenceStore: { getEvidence() { return raw; } },
+      bindings: new Map([[logicalPath, { identity: logicalPath, sha256: expectedSha256 }]]),
+      currentSourceHashes: new Map([[logicalPath, expectedSha256]]) });
+    assert.deepEqual(await read(`/atlas/${logicalPath}`), raw);
+    for (const missing of [false, true]) {
+      fs.readFileSync = (...args) => {
+        if (String(args[0]).endsWith('approved-atlas-affiliations-20261023.json')) {
+          if (missing) throw Object.assign(Error('missing approval'), { code: 'ENOENT' });
+          return Buffer.from('{}');
+        }
+        return saved(...args);
+      };
+      syncBuiltinESMExports();
+      assert.throws(() => readScopeCurrentSource(selection), missing ? /missing approval/u : /E_ATLAS_DRAFT_APPROVAL/u);
+    }
+    fs.readFileSync = saved; syncBuiltinESMExports();
+    for (const [needle, method, mutate] of [
+      ['SELECT r.* FROM document_head', 'get', row => ({ ...row, reason: 'unauthorized' })],
+      ['SELECT r.* FROM document_head', 'get', row => ({ ...row, parent_revision: '0'.repeat(64) })],
+      ['SELECT s.source_id,s.sha256,d.document_id', 'all', rows => rows.map(row => ({ ...row, revision_id: '0'.repeat(64) }))],
+      ['SELECT * FROM text_atlas_additional_people WHERE', 'all', rows => rows.map(row => row.person_ref === 'K1003' ? { ...row, national_state_id: 'S01' } : row)],
+      ['SELECT * FROM text_document_locale WHERE', 'all', rows => rows.map(row => ({ ...row, title: row.title + ' unauthorized' }))],
+    ]) {
+      const changed = { prepare(sql) {
+        const stmt = db.prepare(sql);
+        return sql.includes(needle) ? { [method]: (...args) => mutate(stmt[method](...args)) } : stmt;
+      } };
+      assert.throws(() => readScopeCurrentSource({ ...selection, db: changed }),
+        /E_ATLAS_DRAFT_CHAIN|E_REFERENCE_INTEGRITY/u, needle);
+    }
+    assert.throws(() => readScopeCurrentSource({ ...selection, expectedSha256: '0'.repeat(64) }), /E_ATLAS_DRAFT_SOURCE_PIN/u);
+  } finally { fs.readFileSync = saved; syncBuiltinESMExports(); db.close(); }
+});
+
 test('exact approved whole bodies reject receipt, body, predecessor and chain drift', {
   skip: !process.env.PUBLICATION_NEW_BODY_ROOT || !process.env.PUBLICATION_SUCCESSOR_DB,
 }, async () => {

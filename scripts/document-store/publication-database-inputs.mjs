@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } from './evidence.mjs';
 import { scopeAuthenticationReader } from './scope-authentication-reader.mjs';
 import { PUBLICATION_SUCCESSOR_APPROVAL, PUBLICATION_SUCCESSOR_HEADS, PUBLICATION_DATA_SUCCESSORS,
-  PUBLICATION_EXACT_BODY_APPROVAL, PUBLICATION_EXACT_BODIES } from './scope-current-source.mjs';
+  PUBLICATION_EXACT_BODY_APPROVAL, PUBLICATION_EXACT_BODIES, ATLAS_DRAFT_APPROVAL } from './scope-current-source.mjs';
 import { scopeDirectoryReader } from './scope-directory-inventory.mjs';
 import { readScopeContract } from '../cast-sqlite/scope-contract-store.mjs';
 import { openEditorialProfiles, INTERNAL_PROFILE_CAPABILITY, EDITORIAL_PROFILE_SOURCE_HASHES } from './editorial-profile.mjs';
@@ -17,6 +17,17 @@ import { openSoulReviewDocuments, INTERNAL_REVIEW_CAPABILITY, SOUL_REVIEW_SOURCE
 import { openSoulBatchDocuments, INTERNAL_BATCHES_CAPABILITY, SOUL_BATCH_SOURCE_HASHES } from './soul-batch-documents.mjs';
 import { openOpeningSampleDocuments, INTERNAL_OPENING_SAMPLE_CAPABILITY, OPENING_SAMPLE_SOURCE_HASHES } from './opening-sample-documents.mjs';
 import { openEditorialEnvelopeDocuments, INTERNAL_EDITORIAL_ENVELOPE_CAPABILITY, EDITORIAL_ENVELOPE_SOURCE_HASHES } from './editorial-envelope-documents.mjs';
+
+export function authenticateAtlasDraftApproval() {
+  const pin = ATLAS_DRAFT_APPROVAL;
+  const bytes = readFileSync(new URL(`../../${pin.approvalPath}`, import.meta.url));
+  if (createHash('sha256').update(bytes).digest('hex') !== pin.approvalSha256) throw Error('E_ATLAS_DRAFT_APPROVAL');
+  const approval = JSON.parse(bytes);
+  if (approval.kind !== 'owner-exact-atlas-draft-approval' || approval.status !== 'approved-for-typed-draft-application'
+    || approval.documentId !== 'WNA-001' || approval.predecessor !== pin.predecessor
+    || approval.byteSha256 !== pin.byteSha256 || approval.semanticSha256 !== pin.semanticSha256)
+    throw Error('E_ATLAS_DRAFT_APPROVAL');
+}
 
 export function authenticateExactBodyApproval(root, readBytes = readFileSync) {
   const proof = PUBLICATION_EXACT_BODY_APPROVAL;
