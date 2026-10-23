@@ -78,7 +78,7 @@ export function reviewCurrentAuthority(db, { requireClean = false } = {}) {
       JOIN document_revision r USING(source_id,revision_id) LEFT JOIN document_head h USING(source_id)`).all();
     for (const admission of admissions) {
       if (admission.source_path !== admission.logical_path || admission.source_sha256 !== admission.sha256
-        || admission.semantic_sha256 !== admission.revision_sha256 || admission.parent_revision !== null
+        || admission.semantic_sha256 !== admission.revision_sha256
         || admission.algorithm !== 'typed-envelope-v1' || admission.corpus_kind !== 'current'
         || admission.classification !== 'current-reviewed' || admission.reason !== 'approved-exact-review'
         || !/^[a-f0-9]{64}$/u.test(admission.receipt_sha256) || !admission.receipt_path.trim() || !admission.approval_ref.trim()) {

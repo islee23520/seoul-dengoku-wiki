@@ -183,10 +183,29 @@ test('HTTP fails closed for private, unadmitted, incomplete, historical, stale a
   assert.equal((await fetch(`${base}/world/Stale`)).status, 200);
   // Editing preserves the route but invalidates admission for the new head.
   const staleRoute = f.db.prepare('SELECT * FROM article_route WHERE source_id=6').get();
-  editDocumentOnConnection(f.db, { documentId: 'id-Stale', domain: 'technology', corpusKind: 'current',
+  const edited = editDocumentOnConnection(f.db, { documentId: 'id-Stale', domain: 'technology', corpusKind: 'current',
     expectedRevision: f.revisions.find((entry) => entry.sourceId === 6).revision, actor: 'fixture', reason: 'stale receipt test',
     changes: [{ type: 'setText', nodeId: 'paragraph', slot: 'text/ko', value: 'changed' }] });
   assert.deepEqual(f.db.prepare('SELECT * FROM article_route WHERE source_id=6').get(), staleRoute);
+  assert.equal((await fetch(`${base}/world/Stale`)).status, 404);
+  assert.equal((await (await fetch(base)).json()).length, 3);
+  // Explicit SQL fixture admission is not a production approval. It proves
+  // the HTTP reader consumes only the exact admitted current revision.
+  const prior = f.db.prepare('SELECT * FROM document_publication_admission WHERE source_id=6').get();
+  const head = f.db.prepare('SELECT semantic_sha256 FROM document_revision WHERE revision_id=?').get(edited.revision);
+  f.db.prepare('INSERT INTO document_publication_admission VALUES(?,?,?,?,?,?,?,?,?,?,?)').run(6, edited.revision,
+    prior.source_path, prior.source_sha256, head.semantic_sha256, prior.classification, prior.reason,
+    'successor-fixture-review', 'd'.repeat(64), 'fixture-only-not-authority', '2026-10-20T00:00:00Z');
+  for (const locale of ['ko', 'en']) {
+    const response = await fetch(`${base}/world/Stale?locale=${locale}`);
+    assert.equal(response.status, 200);
+    const body = await response.json();
+    if (locale === 'ko') assert.match(body.reviewText, /changed/u);
+    assert.doesNotMatch(JSON.stringify(body), /SECRET-|raw_bytes|source_record/u);
+  }
+  editDocumentOnConnection(f.db, { documentId: 'id-Stale', domain: 'technology', corpusKind: 'current',
+    expectedRevision: edited.revision, actor: 'fixture', reason: 'next unreviewed edit',
+    changes: [{ type: 'setText', nodeId: 'paragraph', slot: 'text/ko', value: 'not admitted' }] });
   assert.equal((await fetch(`${base}/world/Stale`)).status, 404);
   assert.equal((await (await fetch(base)).json()).length, 3);
 });

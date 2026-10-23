@@ -118,16 +118,26 @@ test('SQL fixture: authenticated draft admission is distinct from private/exclud
   assert.deepEqual(listDocuments(safe(f.db), { corpusKind: 'historical' }), []);
 });
 
-test('SQL fixture: typed edits invalidate old receipt and cannot reuse import review', (t) => {
+test('SQL fixture: each edited head needs its own exact admission and a later edit invalidates it', (t) => {
   const f = fixture(t);
   const values = sqlAdmission(f);
   const edited = editDocumentOnConnection(f.db, { ...selection, expectedRevision: f.revision, actor: 'author', reason: 'edit',
     changes: [{ type: 'setText', nodeId: 'stable', slot: 'text/ko', value: 'after' }] });
   assert.equal(readDocument(safe(f.db), selection), null);
   const { semantic_sha256 } = f.db.prepare('SELECT semantic_sha256 FROM document_revision WHERE revision_id=?').get(edited.revision);
-  values[1] = edited.revision; values[4] = semantic_sha256;
+  values[1] = edited.revision;
   assert.throws(() => f.db.prepare('INSERT INTO document_publication_admission VALUES(?,?,?,?,?,?,?,?,?,?,?)').run(...values), /publication snapshot mismatch/u);
-  assert.equal(f.db.prepare('SELECT count(*) n FROM document_publication_admission').get().n, 1);
+  values[4] = semantic_sha256;
+  // This explicit SQL fixture establishes storage/read behavior only. The
+  // production import-review recorder still cannot authorize an edited head.
+  values[7] = 'exact-successor-fixture'; values[8] = 'd'.repeat(64);
+  f.db.prepare('INSERT INTO document_publication_admission VALUES(?,?,?,?,?,?,?,?,?,?,?)').run(...values);
+  assert.equal(readDocument(safe(f.db), selection).content[0].text.ko, 'after');
+  assert.equal(f.db.prepare('SELECT count(*) n FROM document_publication_admission').get().n, 2);
+  editDocumentOnConnection(f.db, { ...selection, expectedRevision: edited.revision, actor: 'author', reason: 'later edit',
+    changes: [{ type: 'setText', nodeId: 'stable', slot: 'text/ko', value: 'later' }] });
+  assert.equal(readDocument(safe(f.db), selection), null);
+  assert.deepEqual(listDocuments(safe(f.db), { corpusKind: 'current' }), []);
 });
 
 test('production authenticated review integration (explicit expensive opt-in)', { skip: process.env.DOCUMENT_ADMISSION_AUTHENTICATED !== '1' }, async (t) => {
