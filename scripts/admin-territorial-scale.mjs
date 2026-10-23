@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto'
 import { readDocument } from './cast-sqlite/document-read.mjs'
 import { orderDocumentKeys } from './cast-sqlite/document-key-order.mjs'
 import { readGeographyStore } from './cast-sqlite/geography-store.mjs'
+import { readScopeCurrentSource } from './document-store/scope-current-source.mjs'
 
 const sha256 = value => createHash('sha256').update(value).digest('hex')
 const ranks = ['empire', 'kingdom', 'duchy', 'county', 'barony']
@@ -39,8 +40,15 @@ export function buildAdminTerritorialScaleFromDb(db) {
   assert.equal(identities.length, 1, 'E_SCALE_DOCUMENT_AUTHORITY')
   const identity = identities[0]
   assert.equal(identity.sha256, '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e', 'E_SCALE_DOCUMENT_SOURCE')
-  assert.equal(identity.parent_revision, null, 'E_SCALE_DOCUMENT_REVISION')
   assert.equal(identity.algorithm, 'typed-envelope-v1', 'E_SCALE_DOCUMENT_REVISION')
+  if (identity.parent_revision !== null) {
+    // Archive bytes remain historical authority. A successor needs the existing
+    // independently approved exact head and full typed semantic verification.
+    const document = readScopeCurrentSource({ db,
+      logicalPath: 'lore/offices/Offices-and-Ranks.json', expectedSha256: identity.sha256 })
+    return buildScale({ geography: readGeographyStore(db), geographySha256: sources[0].sha256,
+      territorialScale: document.data.territorialScale })
+  }
   // Public reads require current-reviewed exact admission at the sealed head and
   // verify its full typed semantic digest, including unsupported-data omissions.
   const document = readDocument(db, { documentId: 'DOC:Offices-and-Ranks',
