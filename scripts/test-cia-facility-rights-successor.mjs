@@ -1,9 +1,13 @@
 import { readSourceArchive } from './cast-sqlite/source-archive.mjs';
 import { readPrivateSourceArchive } from './document-store/private-source-archive.mjs';
+import { DatabaseSync } from 'node:sqlite';
+import { fileURLToPath } from 'node:url';
+import { resolve } from 'node:path';
+import { authenticateExactBodyApproval } from './document-store/publication-database-inputs.mjs';
 const archivePins = { allocation: '21d7663507b896a43d70fc459f662376780b477b5c2078af100b2d42bbe7079d', holdings: '1801d7bb8d27af743f74ea447d4f7be782b9d8ba7ba5b37af4d0c6f2b6329a12', district: '4d4372a151ea3b5b3750f4209009850786878a9a1b0f03d6263b82f713be39e3', contract: '383d14c96312dcfd849cb9906b3ff16f4c2bc4c9f8ee0b93816a6d2aad333fd8' };
 const archived = path => {
   const key = Object.entries({ allocation: 'lore/relations/opening-feudal-allocation.json', holdings: 'lore/relations/personal-holdings.json', district: 'lore/regions/content/11170.json', contract: 'lore/editorial/Seoul-Scope-Contract.json' }).find(([, logicalPath]) => logicalPath === path)?.[0];
-  return key === 'contract' ? readPrivateSourceArchive(new URL('../', import.meta.url).pathname, path, archivePins[key]) : readSourceArchive(path, archivePins[key]);
+  return key === 'contract' ? readPrivateSourceArchive(process.env.PUBLICATION_NEW_BODY_ROOT ?? fileURLToPath(new URL('../', import.meta.url)), path, archivePins[key]) : readSourceArchive(path, archivePins[key]);
 };
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -11,10 +15,12 @@ import { createHash } from 'node:crypto';
 import { test } from 'vitest';
 import { authenticateRightsTransition, validateSeoulScope, proposalHash } from './seoul-scope.mjs';
 import { correctCiaFacilityFootprint, CIA_FACILITY_DECISION } from './cia-facility-only-correction.mjs';
-import { authenticateCiaFacilityRights, applyCiaFacilityScopeSuccessor, ciaFacilityScopeContext } from './cia-facility-rights-successor.mjs';
+import { authenticateCiaFacilityRights, applyCiaFacilityScopeSuccessor, ciaFacilityScopeContext,
+  authenticateApprovedCommandRelation, composeApprovedCommandRelation, APPROVED_COMMAND_RELATION } from './cia-facility-rights-successor.mjs';
 import { CIA_FACILITY_OWNER_BYTES } from './cia-facility-projection-input.mjs';
 
-const read = path => path.startsWith('lore/') ? archived(path) : readFileSync(new URL('../' + path, import.meta.url));
+const read = path => path.startsWith('lore/') ? archived(path) : readFileSync(path.startsWith('.omo/') && process.env.PUBLICATION_NEW_BODY_ROOT
+  ? resolve(process.env.PUBLICATION_NEW_BODY_ROOT, path) : new URL('../' + path, import.meta.url));
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const paths = { allocation: 'lore/relations/opening-feudal-allocation.json',
   holdings: 'lore/relations/personal-holdings.json', district: 'lore/regions/content/11170.json' };
@@ -97,6 +103,41 @@ test('facility retirement composes with the real immutable 306-right transition 
   assert.deepEqual(input, inputBefore);
   assert.deepEqual(validateSeoulScope(applied, { mode: 'inspection' }), { ok: true, errors: [] });
   assert.deepEqual(ciaFacilityScopeContext(applied).batchContract, input.contract);
+  if (process.env.PUBLICATION_SUCCESSOR_DB && process.env.PUBLICATION_NEW_BODY_ROOT) {
+    const db = new DatabaseSync(process.env.PUBLICATION_SUCCESSOR_DB, { readOnly: true });
+    try {
+      const proof = authenticateApprovedCommandRelation({ db, root: process.env.PUBLICATION_NEW_BODY_ROOT });
+      const approved = authenticateExactBodyApproval(process.env.PUBLICATION_NEW_BODY_ROOT).get('lore/characters/Cast-Relations.json');
+      const commandIds = approved.content.filter(block => block.kind === 'table')
+        .flatMap(block => block.rows.map((_, i) => `R:${block.anchor}:${i + 1}`));
+      const commandInput = { ...input, current: { ...input.current,
+        entitySets: { ...input.current.entitySets, relations: commandIds } } };
+      const composed = composeApprovedCommandRelation(commandInput, result, proof);
+      assert.deepEqual(validateSeoulScope(composed, { mode: 'inspection' }), { ok: true, errors: [] });
+      assert.deepEqual(composed.current.entitySets.titles, applied.current.entitySets.titles);
+      assert.deepEqual(composed.current.entitySets.grants, applied.current.entitySets.grants);
+      assert.deepEqual(composed.contract, applied.contract);
+      assert.deepEqual(composed.current.entitySets.relations, commandInput.current.entitySets.relations);
+      assert.throws(() => composeApprovedCommandRelation(commandInput, result, { ...proof }), /E_CIA_FACILITY_RIGHTS/u);
+      for (const ids of [commandInput.current.entitySets.relations.slice(0, -1),
+        [...commandInput.current.entitySets.relations, 'R:extra:1'], [...commandInput.current.entitySets.relations].reverse()]) {
+        assert.throws(() => composeApprovedCommandRelation({ ...commandInput, current: { ...commandInput.current,
+          entitySets: { ...commandInput.current.entitySets, relations: ids } } }, result, proof), /E_CIA_FACILITY_RIGHTS/u);
+      }
+      for (const changed of [{ from_person_id: 'K001' }, { type_ko: '계약' }]) {
+        const view = { prepare(sql) {
+          const statement = db.prepare(sql);
+          if (sql.includes("FROM relation WHERE relation_id='relation-1389'")) return { get: () => ({ ...statement.get(), ...changed }) };
+          return statement;
+        } };
+        assert.throws(() => authenticateApprovedCommandRelation({ db: view, root: process.env.PUBLICATION_NEW_BODY_ROOT }), /E_CIA_FACILITY_RIGHTS/u);
+      }
+      assert.throws(() => authenticateApprovedCommandRelation({ db, root: '/wrong-proof' }), /ENOENT/u);
+      const altered = { ...composed, current: { ...composed.current, entitySets: { ...composed.current.entitySets,
+        relations: composed.current.entitySets.relations.filter(id => id !== APPROVED_COMMAND_RELATION) } } };
+      assert.throws(() => ciaFacilityScopeContext(altered), /E_CIA_FACILITY_RIGHTS/u);
+    } finally { db.close(); }
+  }
   assert.equal(applied.current.rights.length, input.current.rights.length - 1);
   assert.equal(applied.contract.entities.length, input.contract.entities.length);
   assert.equal(applied.contract.dispositions.length, input.contract.dispositions.length);
