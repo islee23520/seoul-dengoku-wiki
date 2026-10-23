@@ -23,7 +23,7 @@ const original = () => ({ version: 1, domain: 'technology', id: 'fixture', slug:
     { kind: 'list', anchor: 'list', ordered: true, start: 0, items: [{ ko: [{ text: 'one', strong: true }, { text: 'two', href: 'https://example.org' }], en: 'item' }] }],
   data: { constraint: 'typed immutable domain' } });
 
-function fixture(t, { document = original(), companions = [], legacy = false } = {}) {
+function fixture(t, { document = original(), companions = [], legacy = false, corpusKind = 'example', people = [], states = [] } = {}) {
   const directory = mkdtempSync(join(tmpdir(), 'document-edit-'));
   const dbPath = join(directory, 'authority.sqlite');
   const db = new DatabaseSync(dbPath, { enableForeignKeyConstraints: true });
@@ -36,15 +36,20 @@ function fixture(t, { document = original(), companions = [], legacy = false } =
     for (const row of rows) statement.run(...names.map((name) => row[name]));
   };
   const bytes = Buffer.from('immutable non-JSON archive');
+  for (const state of states) db.prepare('INSERT INTO state(state_id) VALUES (?)').run(state);
+  people.forEach((person, i) => db.prepare(`INSERT INTO person
+    (person_id,name,publication_ordinal,public_key,public_route,state_id,minors,values_source_ordinal) VALUES (?,?,?,?,?,?,0,?)`)
+    .run(person.id, person.id, i + 1, person.id, `/people/${person.id}`, person.state, i));
   const files = [document, ...companions].map((d, i) => {
     const source_id = i + 1;
     const logical_path = `/does-not-exist-${source_id}.json`;
     db.prepare('INSERT INTO source_file VALUES(?,?,?,?,?,?)').run(source_id, logical_path, 'application/json', sha256(bytes), bytes.length, bytes);
     insert('source_record', flattenJson(d).map((r) => ({ source_id, ...r })));
-    return { source_id, document: d, logical_path, corpus_kind: 'example', content_policy: 'local-corpus' };
+    return { source_id, document: d, logical_path, corpus_kind: corpusKind, content_policy: 'local-corpus' };
   });
   for (const [table, rows] of Object.entries(mapTextCorpusDocuments({ files }))) insert(table, rows);
-  const bundle = { files: [{ logical_path: 'lore/name-pools/person-id-registry.json', document: { persons: [] } }, ...files] };
+  const bundle = { files: [{ logical_path: 'lore/name-pools/person-id-registry.json', document: { persons: people } },
+    { logical_path: 'lore/name-pools/values-cast.json', document: { people: states.map(state => ({ state })) } }, ...files] };
   for (const [table, rows] of Object.entries(mapTextData({ files, bundle }))) insert(table, rows);
   assert.throws(() => initializeDocumentAuthority(db, { actor: 'test', reason: 'import', validatedSourceIds: [] }), { code: 'E_DOCUMENT_ATTESTATION' });
   // Emulate the old authority DDL: revision-local keys, but FKs still target current rows.
@@ -69,6 +74,75 @@ const command = { type: 'setText', nodeId: 'stable', slot: 'text/ko', value: 'af
 const edit = (f, changes = [command], expectedRevision = f.revision) => editDocumentOnConnection(f.db,
   { ...selection, expectedRevision, actor: 'author', reason: 'typed edit', changes });
 const typedOnly = (db) => ({ prepare(sql) { assert.doesNotMatch(sql, /\bsource_record\b|\braw_bytes\b/iu); return db.prepare(sql); } });
+
+test('Atlas additional-person state commands preserve identity and sealed history and roll back as one edit', t => {
+  const document = { ...original(), id: 'WNA-001', domain: 'root', data: { atlas: { additional_people: {
+    'fixture-a': { character_id: 'preserved-alias', national_state_id: null, detail_route: '/people/a' },
+    'fixture-b': { character_id: 'other-alias', national_state_id: 'old-state', detail_route: '/people/b' },
+  } } } };
+  const f = fixture(t, { document, corpusKind: 'current', states: ['old-state', 'new-state'],
+    people: [{ id: 'fixture-a', state: 'new-state' }, { id: 'fixture-b', state: 'new-state' }] });
+  const selected = { documentId: document.id, domain: document.domain, corpusKind: 'current', visibility: 'internal' };
+  const changes = [null, 'old-state'].map((expectedStateId, i) => ({ type: 'setAtlasAdditionalPersonState',
+    personId: ['fixture-a', 'fixture-b'][i], expectedStateId, stateId: 'new-state' }));
+  const apply = (commands = changes, options = {}) => editDocumentOnConnection(f.db,
+    { ...selected, expectedRevision: f.revision, actor: 'test', reason: 'Atlas affiliation', changes: commands, ...options });
+  const snapshot = () => Object.fromEntries(f.db.prepare("SELECT name FROM sqlite_schema WHERE type='table' AND name NOT LIKE 'sqlite_%' ORDER BY name").all()
+    .map(({ name }) => [name, f.db.prepare(`SELECT * FROM ${name} ORDER BY rowid`).all().map(row => ({ ...row }))]));
+  const before = snapshot();
+  for (const bad of [
+    { ...changes[1], personId: 'missing' }, { ...changes[1], personId: 'preserved-alias' },
+    { ...changes[1], expectedStateId: null }, { ...changes[1], expectedStateId: 1 },
+    { ...changes[1], stateId: 'missing' }, { ...changes[1], stateId: 'old-state' },
+    { ...changes[1], stateId: null }, { ...changes[1], unexpected: true },
+  ]) {
+    assert.throws(() => apply([changes[0], bad]), { code: 'E_DOCUMENT_COMMAND' });
+    assert.deepEqual(snapshot(), before);
+  }
+  assert.throws(() => apply(changes, { expectedRevision: 'stale' }), { code: 'E_REVISION_CONFLICT' });
+  assert.throws(() => apply(changes, { expectedSemanticSha256: 'wrong whole-body hash' }), { code: 'E_DOCUMENT_EXPECTED_BODY' });
+  assert.deepEqual(snapshot(), before);
+  for (const [column, value, restored] of [['person_ref', 'fixture-b', 'fixture-a'], ['state_ref', 'old-state', null],
+    ['national_state_id__type', 'string', 'null']]) {
+    f.db.prepare(`UPDATE text_atlas_additional_people SET ${column}=? WHERE member_key='fixture-a'`).run(value);
+    const corrupted = snapshot();
+    assert.throws(() => apply(), { code: 'E_DOCUMENT_COMMAND' });
+    assert.deepEqual(snapshot(), corrupted);
+    f.db.prepare(`UPDATE text_atlas_additional_people SET ${column}=? WHERE member_key='fixture-a'`)
+      .run(restored);
+  }
+  const result = apply();
+  const expected = structuredClone(document); expected.status = 'draft';
+  for (const person of Object.values(expected.data.atlas.additional_people)) person.national_state_id = 'new-state';
+  assert.deepEqual(readDocument(typedOnly(f.db), selected), expected);
+  assert.deepEqual(readDocumentRevision(typedOnly(f.db), { ...selected, revision: f.revision }), document);
+  assert.deepEqual(readDocumentRevision(typedOnly(f.db), { ...selected, revision: result.revision }), expected);
+  const after = snapshot();
+  for (const [table, rows] of Object.entries(before)) {
+    if (table.startsWith('document_revision')) assert.deepEqual(after[table].filter(row => row.revision_id !== result.revision), rows);
+    else if (!['text_document', 'text_atlas_additional_people', 'document_head', 'document_authority'].includes(table)) assert.deepEqual(after[table], rows);
+  }
+  assert.deepEqual(after.text_atlas_additional_people, before.text_atlas_additional_people.map(row => ({ ...row,
+    national_state_id: 'new-state', national_state_id__type: 'string', state_ref: 'new-state' })));
+  assert.equal(after.document_head[0].public_admission, 'unrecorded');
+  assert.equal(after.document_head[0].revision_id, result.revision);
+  assert.equal(after.document_revision.find(row => row.revision_id === result.revision).parent_revision, f.revision);
+  assert.equal(after.document_authority[0].sequence, before.document_authority[0].sequence + 1);
+  assert.throws(() => apply(), { code: 'E_REVISION_CONFLICT' });
+  assert.deepEqual(snapshot(), after);
+  assert.deepEqual(f.db.prepare('PRAGMA foreign_key_check').all(), []);
+});
+
+test('Atlas affiliation command rejects other document identities, domains and corpora', t => {
+  for (const [id, domain, corpusKind] of [['other', 'root', 'current'], ['WNA-001', 'technology', 'current'], ['WNA-001', 'root', 'example']]) {
+    const document = { ...original(), id, domain, data: {} };
+    const f = fixture(t, { document, corpusKind });
+    assert.throws(() => editDocumentOnConnection(f.db, { documentId: id, domain, corpusKind, expectedRevision: f.revision,
+      actor: 'test', reason: 'wrong Atlas selection', changes: [{ type: 'setAtlasAdditionalPersonState',
+        personId: 'fixture-a', expectedStateId: null, stateId: 'new-state' }] }), { code: 'E_DOCUMENT_COMMAND' });
+    assert.deepEqual(readDocument(f.db, { documentId: id, domain, corpusKind, visibility: 'internal' }), document);
+  }
+});
 
 test('bounded row append preserves old coordinates and rolls back malformed, stale and wrong-body edits', t => {
   const document = original();

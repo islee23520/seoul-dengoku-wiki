@@ -172,6 +172,29 @@ function editDocumentInTransaction(db, { documentId, corpusKind, domain, expecte
 
 function applyCommand(db, sourceId, command) {
   switch (command?.type) {
+    case 'setAtlasAdditionalPersonState': {
+      exactKeys(command, ['type', 'personId', 'expectedStateId', 'stateId']);
+      requireText(command.personId); requireText(command.stateId);
+      if (command.expectedStateId !== null) requireText(command.expectedStateId);
+      const identity = db.prepare('SELECT document_id,domain,corpus_kind FROM text_document WHERE source_id=?').get(sourceId);
+      if (identity.document_id !== 'WNA-001' || identity.domain !== 'root' || identity.corpus_kind !== 'current') {
+        fail('E_DOCUMENT_COMMAND', 'current root Atlas required');
+      }
+      const rows = db.prepare('SELECT * FROM text_atlas_additional_people WHERE source_id=? AND member_key=?').all(sourceId, command.personId);
+      const row = rows[0];
+      if (rows.length !== 1 || row.person_ref !== command.personId || row.national_state_id !== command.expectedStateId
+        || row.national_state_id__type !== (command.expectedStateId === null ? 'null' : 'string')
+        || row.state_ref !== command.expectedStateId) {
+        fail('E_DOCUMENT_COMMAND', 'existing Atlas person and consistent expected affiliation required');
+      }
+      if (!db.prepare('SELECT 1 FROM state WHERE state_id=?').get(command.stateId)
+        || !db.prepare('SELECT 1 FROM person WHERE person_id=? AND state_id=?').get(command.personId, command.stateId)) {
+        fail('E_DOCUMENT_COMMAND', 'registered state matching current person affiliation required');
+      }
+      db.prepare("UPDATE text_atlas_additional_people SET national_state_id=?,national_state_id__type='string',state_ref=? WHERE source_id=? AND row_key=?")
+        .run(command.stateId, command.stateId, sourceId, row.row_key);
+      break;
+    }
     case 'setDomainText': {
       exactKeys(command, ['type', 'field', 'value']);
       const { domain } = db.prepare('SELECT domain FROM text_document WHERE source_id=?').get(sourceId);
