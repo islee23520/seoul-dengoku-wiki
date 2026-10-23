@@ -1,6 +1,47 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import { test } from 'vitest'
+import { createElement } from 'react'
+import { renderToStaticMarkup } from 'react-dom/server'
+import { MemoryRouter } from 'react-router-dom'
+import { JSDOM } from 'jsdom'
+import { createServer } from 'vite'
+import react from '@vitejs/plugin-react'
+import { test, vi } from 'vitest'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+import { projectPoliticalCatalog } from './generate-catalog.mjs'
+
+// These CLI-only gates load private release modules, not the catalog projection.
+vi.mock('./seoul-census.mjs', () => ({}))
+vi.mock('./check-seoul-scope.mjs', () => ({}))
+
+test('political catalog projects current hegemons without a retired polity requirement', () => {
+  const { data: { currentAffiliation } } = readCanonicalDocument('lore/factions/Sixteen-States.json')
+  const personalHoldings = readCanonicalDocument('lore/relations/personal-holdings.json')
+
+  const catalog = projectPoliticalCatalog(currentAffiliation, personalHoldings)
+
+  assert.deepEqual(catalog, { hegemons: currentAffiliation.hegemons })
+})
+
+test('states page renders the actual generated catalogs without reconstructing their memberships', async () => {
+  const server = await createServer({
+    configFile: false, server: { middlewareMode: true },
+    plugins: [react()],
+  })
+  try {
+    const { stateCatalog } = await server.ssrLoadModule('/src/generated/stateCatalog.ts')
+    const { politicalCatalog } = await server.ssrLoadModule('/src/generated/politicalCatalog.ts')
+    const { default: StatesPage } = await server.ssrLoadModule('/src/pages/StatesPage.tsx')
+
+    const dom = new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null, createElement(StatesPage))))
+    try {
+      const document = dom.window.document
+      for (const hegemon of politicalCatalog.hegemons) assert.ok(document.querySelector(`section[aria-label="${hegemon.name}"]`))
+      const routes = [...document.querySelectorAll('a')].map(link => link.getAttribute('href'))
+      for (const state of stateCatalog) assert.ok(routes.includes(`/states/${state.slug}`), state.id)
+    } finally { dom.window.close() }
+  } finally { await server.close() }
+})
 
 test('sixteen states expose sixteen unique detail routes', async () => {
   const source = await readFile(new URL('../src/pages/StatesPage.tsx', import.meta.url), 'utf8')
@@ -28,9 +69,13 @@ test('state detail reads Seoul territory and preserves source vassal description
   assert.equal(territory.states.length, 16)
   assert.deepEqual(territory.vassals, [])
   assert.equal(territory.regions.length, 427)
+  const stateIds = new Set(territory.states.map(state => state.id))
+  assert.equal(stateIds.size, territory.states.length)
+  for (const region of territory.regions) {
+    for (const polityId of region.polities) assert.ok(stateIds.has(polityId), `${region.id}:${polityId}`)
+  }
   for (const state of territory.states) {
     assert.ok(state.chronology.length > 0, state.id)
-    assert.ok(territory.regions.some((region) => region.polities.includes(state.id)), state.id)
     assert.equal(typeof state.vassals, 'string', state.id)
   }
 })
