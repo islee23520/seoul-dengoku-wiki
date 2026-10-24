@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdtempSync, rmSync } from 'node:fs';
+import { mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { DatabaseSync } from 'node:sqlite';
@@ -9,6 +9,7 @@ import { flattenJson, sha256 } from './sources.mjs';
 import { mapTextCorpusDocuments } from './text-corpus-documents.mjs';
 import { mapTextData } from './text-data.mjs';
 import { readDocument, listDocuments } from './document-read.mjs';
+import { initializeDocumentAuthority } from './document-edit.mjs';
 import { renderLoreMarkdown } from '../lore-json-render.mjs';
 
 const leaf = (ko, en = ko) => ({ ko, en });
@@ -102,6 +103,90 @@ test('public reads exclude draft/excluded/private identities and fail closed wit
   db.exec('DELETE FROM excluded_source');
   assert.throws(() => listDocuments(db, { corpusKind: 'current' }), (error) => error.code === 'E_DOCUMENT_SCHEMA_GAP' && error.schemaGaps[0].code === 'publication-admission-unrecorded');
   assert.throws(() => readDocument(db, { documentId: privateDoc.id, corpusKind: 'current' }), { code: 'E_DOCUMENT_SCHEMA_GAP' });
+});
+
+test('exact selectors preserve ambiguity, corpus isolation, exclusion metadata and genuine misses', (t) => {
+  const current = document('Shared');
+  current.id = "shared' OR 1=1 --";
+  const culture = { ...document('Culture'), id: current.id, domain: 'culture', data: { transmission: 'fixture' } };
+  const historical = { ...document('Historical'), id: current.id };
+  const example = { ...document('Example'), id: current.id };
+  const db = fixture(t, [file(1, current), file(2, culture), file(3, historical, 'historical'), file(4, example, 'example')]);
+  db.prepare('INSERT INTO excluded_source VALUES (?,?,?,?)').run('/nonexistent/database-only-2.json', 'b'.repeat(64), 0, 'private-soul-historical-motif');
+  const safe = typedOnly(db);
+  // An omitted/undefined domain binds SQL NULL; explicit null remains an invalid selector.
+  for (const selector of [internal(current.id), { ...internal(current.id), domain: undefined },
+    { documentId: current.id, corpusKind: 'current' }]) {
+    assert.throws(() => readDocument(safe, selector), { code: 'E_DOCUMENT_AMBIGUOUS' });
+  }
+  assert.throws(() => readDocument(safe, { ...internal(current.id), domain: null }), { code: 'E_ARGUMENTS' });
+  for (const [expected, corpus, domain, sourceId, excluded] of [
+    [current, 'current', 'technology', 1, 0], [culture, 'current', 'culture', 2, 1],
+    [historical, 'historical', undefined, 3, 0], [example, 'example', undefined, 4, 0],
+  ]) {
+    const result = readDocument(safe, internal(expected.id, corpus, domain));
+    assert.deepEqual(result, expected);
+    assert.deepEqual(result.readMetadata, {
+      ...listDocuments(safe, { corpusKind: corpus, domain, visibility: 'internal' }).find(row => row.source_id === sourceId),
+      schemaGaps: result.readMetadata.schemaGaps,
+    });
+    assert.equal(result.readMetadata.excluded, excluded);
+  }
+  for (const [corpusKind, domain] of [['current', 'culture'], ['historical', undefined], ['example', undefined]]) {
+    assert.equal(readDocument(safe, { documentId: current.id, corpusKind, domain }), null);
+  }
+  assert.throws(() => readDocument(safe, { documentId: current.id, corpusKind: 'current', domain: 'technology' }), { code: 'E_DOCUMENT_SCHEMA_GAP' });
+  for (const visibility of ['internal', 'public']) {
+    for (const [documentId, domain] of [['missing', undefined], [current.id, 'absent-domain']]) {
+      assert.equal(readDocument(safe, { documentId, domain, corpusKind: 'current', visibility }), null);
+    }
+  }
+});
+
+test('readDocument binds document identity in SQL before materializing selector rows', (t) => {
+  const expected = document('Selected');
+  expected.id = "selected' OR 1=1 --";
+  const db = fixture(t, [file(1, expected), file(2, document('Unrelated'))]);
+  let selections = 0;
+  const guarded = { prepare(sql) {
+    assert.doesNotMatch(sql, /\bsource_record\b|\braw_bytes\b/iu);
+    const statement = db.prepare(sql);
+    if (!/\bJOIN source_file s USING\(source_id\)/u.test(sql)) return statement;
+    selections += 1;
+    assert.match(sql, /\bd\.document_id\s*=\s*\?/u);
+    return { all(...bindings) {
+      assert.ok(bindings.includes(expected.id));
+      const result = statement.all(...bindings);
+      assert.deepEqual(result.map(row => row.document_id), [expected.id]);
+      return result;
+    } };
+  } };
+  assert.deepEqual(readDocument(guarded, internal(expected.id)), expected);
+  assert.equal(selections, 1);
+  assert.equal(listDocuments(db, { corpusKind: 'current', visibility: 'internal' }).length, 2);
+});
+
+test('exact public selectors retain sealed admission, semantic digest and current head checks', (t) => {
+  const expected = document('Admitted');
+  const db = fixture(t, [file(1, expected)]);
+  const [{ revision }] = initializeDocumentAuthority(db, { actor: 'test', reason: 'validated fixture', validatedSourceIds: [1] });
+  // Storage fixture only; this does not authenticate a production approval.
+  db.exec(readFileSync(new URL('./document-admission.sql', import.meta.url), 'utf8'));
+  const source = db.prepare('SELECT logical_path,sha256 FROM source_file WHERE source_id=1').get();
+  const { semantic_sha256 } = db.prepare('SELECT semantic_sha256 FROM document_revision WHERE revision_id=?').get(revision);
+  db.prepare('INSERT INTO document_publication_admission VALUES(?,?,?,?,?,?,?,?,?,?,?)').run(1, revision,
+    source.logical_path, source.sha256, semantic_sha256, 'current-reviewed', 'approved-exact-review',
+    'fixture-receipt', 'b'.repeat(64), 'fixture-owner', '2026-10-23T00:00:00Z');
+  const selector = { documentId: expected.id, corpusKind: 'current', domain: expected.domain };
+  assert.deepEqual(readDocument(typedOnly(db), selector), expected);
+  assert.equal(listDocuments(typedOnly(db), { corpusKind: 'current' }).length, 1);
+  db.exec("UPDATE text_document_locale SET summary='drift' WHERE locale='ko'");
+  assert.equal(readDocument(typedOnly(db), selector), null);
+  db.prepare("UPDATE text_document_locale SET summary=? WHERE locale='ko'").run(expected.locales.ko.summary);
+  assert.deepEqual(readDocument(typedOnly(db), selector), expected);
+  db.exec('DELETE FROM document_head');
+  assert.equal(readDocument(typedOnly(db), selector), null);
+  assert.deepEqual(readDocument(typedOnly(db), { ...selector, visibility: 'internal' }), expected);
 });
 
 test('missing typed tables and inconsistent runs report a schema gap instead of a partial envelope', (t) => {
