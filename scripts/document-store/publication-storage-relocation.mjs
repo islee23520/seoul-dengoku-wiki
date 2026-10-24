@@ -5,7 +5,10 @@ import { isAbsolute, resolve } from 'node:path';
 
 // Preserved seoul-wiki-sqlite-provision.v1 manifest, not a caller-supplied
 // assertion of approval. New snapshots require a separately reviewed anchor.
-export const PUBLICATION_PROVISION_SHA256 = '05e82ab71c0d970304d7f319170047e7b924f71467cdac6edae280fb75f98a92';
+// 2026-10-24 data-currency advance: 11904 bytes, five added receipt rows and
+// refreshed publicDatabase identity. Previous 10210-byte anchor:
+// 05e82ab71c0d970304d7f319170047e7b924f71467cdac6edae280fb75f98a92.
+export const PUBLICATION_PROVISION_SHA256 = '22b906bb4b859c6877795112c36c1fe5e26bb09d47887427b83a5fc4bdf6265a';
 
 const fail = code => { throw Error(`E_PUBLICATION_RELOCATION_${code}`); };
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
