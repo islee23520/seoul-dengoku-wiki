@@ -1,0 +1,26 @@
+{
+  "kind": "owner-exact-s08-article-draft-approval",
+  "status": "approved-for-typed-draft-application",
+  "session": "01a16763-7f15-7bc9-9982-264003159353",
+  "questionCall": "call_B4rRa3xaO9UGGA08XghMKYxv",
+  "actualAnswer": "기사 S08 문장: 시설 한정으로 수정 (Recommended)",
+  "documentId": "DOC:Sixteen-States",
+  "predecessor": "1e7bcf057b554cf6b52ea50dd5645da515b0513f04a30adcb5f461e3af462474",
+  "revision": "e6068bd3321de8b142db54adb8f92501296cf269b75682191596aa8c349faa4b",
+  "semanticSha256": "79ec7c8b148500dfb835b8b1032f14701525c96041ecb7c0f43274c222338734",
+  "changes": [
+    {
+      "nodeId": "current-s08",
+      "slot": "text/ko",
+      "before": "중앙정보부는 남산타워와 용산2가동·후암동·이태원2동을 다스리며 수도역은 녹사평이다.",
+      "after": "중앙정보부는 남산타워 시설을 관할하며 수도역은 녹사평이다."
+    },
+    {
+      "nodeId": "current-s08",
+      "slot": "text/en",
+      "before": "The bureau holds N Seoul Tower, Yongsan 2-ga, Huam and Itaewon 2 dong, with Noksapyeong as its capital station.",
+      "after": "The bureau administers the N Seoul Tower facility, with Noksapyeong as its capital station."
+    }
+  ],
+  "scope": "Exact bilingual facility-only article wording through the sealed typed editor; no public document admission or Atlas publication."
+}

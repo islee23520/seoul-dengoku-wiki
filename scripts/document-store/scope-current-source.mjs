@@ -61,6 +61,44 @@ import { isDeepStrictEqual } from 'node:util';
 import { readDocumentRevision } from '../cast-sqlite/document-edit.mjs';
 import { authenticateExactBodyApproval, authenticateAtlasDraftApproval } from './publication-database-inputs.mjs';
 import { fileURLToPath } from 'node:url';
+import { readFileSync } from 'node:fs';
+
+export const S08_WORDING_REVISION = 'e6068bd3321de8b142db54adb8f92501296cf269b75682191596aa8c349faa4b';
+
+function readApprovedS08Wording(db, expectedSha256) {
+  const bytes = readFileSync(new URL('../approved-s08-article-wording-20261024.json', import.meta.url));
+  if (createHash('sha256').update(bytes).digest('hex') !== '80d131f88ce5b5441afc22912d7607fec2a5a92aec387e598fb208e733a22040')
+    throw Error('E_S08_WORDING_APPROVAL');
+  const approval = JSON.parse(bytes);
+  const pin = PUBLICATION_SUCCESSOR_HEADS['lore/factions/Sixteen-States.json'];
+  if (approval.kind !== 'owner-exact-s08-article-draft-approval' || approval.status !== 'approved-for-typed-draft-application'
+    || approval.actualAnswer !== '기사 S08 문장: 시설 한정으로 수정 (Recommended)'
+    || approval.predecessor !== pin.revision || approval.revision !== S08_WORDING_REVISION || expectedSha256 !== pin.sourceSha256)
+    throw Error('E_S08_WORDING_APPROVAL');
+  const reference = readEvidenceDocumentReference(db, { logicalPath: 'lore/factions/Sixteen-States.json', expectedSha256,
+    expectedSemanticSha256: approval.semanticSha256 });
+  const head = db.prepare(`SELECT r.* FROM document_head h JOIN document_revision r USING(source_id,revision_id)
+    JOIN document_revision_seal z USING(revision_id) WHERE h.source_id=?`).get(reference.sourceId);
+  const parent = db.prepare(`SELECT r.* FROM document_revision r JOIN document_revision_seal z USING(revision_id)
+    WHERE r.revision_id=?`).get(pin.revision);
+  if (reference.sourceId !== 84 || reference.revision !== approval.revision || head?.parent_revision !== pin.revision
+    || parent?.source_id !== reference.sourceId || parent.semantic_sha256 !== pin.semanticSha256
+    || parent.algorithm !== 'typed-envelope-v1' || parent.sequence >= head.sequence
+    || bodyDigest(['typed-envelope-v1', reference.sourceId, head.parent_revision, head.semantic_sha256, head.actor, head.reason]) !== approval.revision)
+    throw Error('E_S08_WORDING_CHAIN');
+  const predecessor = readDocumentRevision(db, { revision: pin.revision, documentId: approval.documentId,
+    domain: 'factions', corpusKind: 'current' });
+  if (bodyDigest(predecessor) !== pin.semanticSha256) throw Error('E_S08_WORDING_CHAIN');
+  for (const change of approval.changes) {
+    const locale = change.slot.slice('text/'.length);
+    const text = predecessor.content.find(node => node.anchor === change.nodeId)?.text;
+    if (!text || typeof text[locale] !== 'string' || text[locale].split(change.before).length !== 2)
+      throw Error('E_S08_WORDING_DELTA');
+    text[locale] = text[locale].replace(change.before, change.after);
+  }
+  if (!isDeepStrictEqual(predecessor, reference.document)) throw Error('E_S08_WORDING_DELTA');
+  return orderDocumentKeys(db, reference.sourceId, reference.document);
+}
 
 export const PUBLICATION_EXACT_BODY_APPROVAL = Object.freeze({
   receiptPath: '.omo/evidence/fcd/approved-body-apply/receipt.json',
@@ -231,6 +269,12 @@ export const PUBLICATION_SUCCESSOR_HEADS = Object.freeze({
 // from the approval contract. A recognized typed source cannot fall back.
 export function readScopeCurrentSource({ db, logicalPath, expectedSha256, editorialProfiles, soulAssignments,
   soulCandidates, soulReview, soulBatches, openingSample, editorialEnvelopes, approvedBodies, snapshotDocuments, predecessor = false }) {
+  if (logicalPath === 'lore/factions/Sixteen-States.json') {
+    const head = db.prepare(`SELECT h.revision_id FROM document_head h JOIN source_file s USING(source_id)
+      WHERE s.logical_path=?`).get(logicalPath);
+    if (head && head.revision_id !== PUBLICATION_SUCCESSOR_HEADS[logicalPath].revision)
+      return readApprovedS08Wording(db, expectedSha256);
+  }
   if (logicalPath === ATLAS_DRAFT_APPROVAL.logicalPath) {
     const head = db.prepare(`SELECT h.revision_id FROM document_head h JOIN source_file s USING(source_id)
       WHERE s.logical_path=?`).get(logicalPath);

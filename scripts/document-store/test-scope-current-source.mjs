@@ -47,6 +47,43 @@ import { UNIT_PROPOSAL_SOURCE_HASH } from '../cast-sqlite/unit-proposal-document
 import { NPC_PROPOSAL_SOURCE_HASH } from '../cast-sqlite/npc-proposal-document.mjs';
 import { scopeAuthenticationReader } from './scope-authentication-reader.mjs';
 
+test('approved article wording authenticates its sealed successor and rejects chain or body drift', {
+  skip: !process.env.S08_WORDING_DB,
+}, async () => {
+  const db = openReadOnly(process.env.S08_WORDING_DB);
+  const selection = { logicalPath: 'lore/factions/Sixteen-States.json',
+    expectedSha256: PUBLICATION_SUCCESSOR_HEADS['lore/factions/Sixteen-States.json'].sourceSha256 };
+  try {
+    const current = readScopeCurrentSource({ db, ...selection });
+    assert.equal(current.id, 'DOC:Sixteen-States');
+    const raw = Buffer.from(db.prepare('SELECT raw_bytes FROM source_file WHERE logical_path=?').get(selection.logicalPath).raw_bytes);
+    const historical = scopeAuthenticationReader({ db, root: '/s08-review',
+      evidenceStore: { getEvidence() { return raw; } },
+      bindings: new Map([[selection.logicalPath, { identity: selection.logicalPath, sha256: selection.expectedSha256 }]]),
+      currentSourceHashes: new Map([[selection.logicalPath, selection.expectedSha256]]) });
+    assert.deepEqual(await historical(`/s08-review/${selection.logicalPath}`), raw);
+    assert.throws(() => readScopeCurrentSource({ db, ...selection, expectedSha256: '0'.repeat(64) }), /E_S08_WORDING_APPROVAL/u);
+    for (const [needle, method, mutate, code] of [
+      ['SELECT r.* FROM document_head', 'get', row => ({ ...row, parent_revision: '0'.repeat(64) }), 'E_S08_WORDING_CHAIN'],
+      ['SELECT r.* FROM document_head', 'get', row => ({ ...row, reason: row.reason + ' unauthorized' }), 'E_S08_WORDING_CHAIN'],
+      ['SELECT * FROM text_document_locale WHERE', 'all', rows => rows.map(row => ({ ...row, title: row.title + ' unauthorized' })), 'E_REFERENCE_INTEGRITY'],
+    ]) {
+      const changed = { prepare(sql) {
+        const statement = db.prepare(sql);
+        return sql.includes(needle) ? { [method]: (...args) => mutate(statement[method](...args)) } : statement;
+      } };
+      assert.throws(() => readScopeCurrentSource({ db: changed, ...selection }), { message: code });
+    }
+    const before = fs.readFileSync;
+    try {
+      fs.readFileSync = (...args) => String(args[0]).endsWith('approved-s08-article-wording-20261024.json')
+        ? Buffer.from('{}') : before(...args);
+      syncBuiltinESMExports();
+      assert.throws(() => readScopeCurrentSource({ db, ...selection }), /E_S08_WORDING_APPROVAL/u);
+    } finally { fs.readFileSync = before; syncBuiltinESMExports(); }
+  } finally { db.close(); }
+});
+
 test('exact approved Atlas draft authenticates current typed body while preserving historical bytes', {
   skip: !process.env.PUBLICATION_SUCCESSOR_DB,
 }, async () => {
@@ -175,16 +212,16 @@ test('approved publication successor heads require the exact archive, revision a
       const selection = { logicalPath, expectedSha256: pin.sourceSha256 };
       assert.ok(readScopeCurrentSource({ db, ...selection }).id);
       assert.throws(() => readScopeCurrentSource({ db, ...selection, expectedSha256: '0'.repeat(64) }),
-        /E_SCOPE_DB_SOURCE_HASH/u);
+        /E_SCOPE_DB_SOURCE_HASH|E_S08_WORDING_APPROVAL/u);
       for (const field of ['revision_id', 'semantic_sha256']) {
         const changed = { prepare(sql) {
           const statement = db.prepare(sql);
-          if (sql.includes('JOIN document_revision_seal')) return { all: (...args) =>
+          if (sql.includes('SELECT s.source_id,s.sha256,d.document_id')) return { all: (...args) =>
             statement.all(...args).map(row => ({ ...row, [field]: '0'.repeat(64) })) };
           return statement;
         } };
         assert.throws(() => readScopeCurrentSource({ db: changed, ...selection }),
-          /E_REFERENCE_STALE|E_SCOPE_DB_SOURCE_STALE/u);
+          /E_REFERENCE_STALE|E_SCOPE_DB_SOURCE_STALE|E_S08_WORDING_CHAIN/u);
       }
       const changedBody = { prepare(sql) {
         const statement = db.prepare(sql);
@@ -214,7 +251,7 @@ test('successor evidence validates current typed bodies while preserving exact l
       assert.deepEqual(await scopeAuthenticationReader(options)(`/publication-evidence/${logicalPath}`), bytes);
       const changed = { prepare(sql) {
         const statement = db.prepare(sql);
-        if (sql.includes('JOIN document_revision_seal')) return { all: (...args) =>
+        if (sql.includes('SELECT s.source_id,s.sha256,d.document_id')) return { all: (...args) =>
           statement.all(...args).map(row => ({ ...row, semantic_sha256: '0'.repeat(64) })) };
         return statement;
       } };
