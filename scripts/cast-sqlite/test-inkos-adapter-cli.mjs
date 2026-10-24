@@ -8,6 +8,7 @@ import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { createInkosAdapterFixture } from './inkos-adapter-fixture.mjs';
 import { editDocument } from './document-edit.mjs';
+import { openReadOnly } from './db.mjs';
 
 const cli = fileURLToPath(new URL('../inkos-adapter/cli.mjs', import.meta.url));
 const evidencePath = fileURLToPath(new URL('../../.omo/evidence/inkos-adapter-followup/cli-proof.json', import.meta.url));
@@ -43,9 +44,16 @@ test('offline CLI proof: real export, collect and prepare-draft with adversarial
     return fields;
   };
 
-  for (const variant of ['happy', 'changed-head', 'forged-approval', 'one-byte-return', 'bad-flags', 'bad-json']) {
+  for (const variant of ['happy', 'happy-v1', 'changed-head', 'forged-approval', 'one-byte-return', 'bad-flags', 'bad-json']) {
     await t.test(variant, () => {
-      const f = createInkosAdapterFixture({ parent: fs.realpathSync(tmpdir()) });
+      const f = createInkosAdapterFixture({ parent: fs.realpathSync(tmpdir()), authorityVersion: variant === 'happy-v1' ? 1 : 2 });
+      const authoritySnapshot = () => {
+        const db = openReadOnly(f.dbPath);
+        try {
+          return { userVersion: db.prepare('PRAGMA user_version').get(),
+            authority: db.prepare('SELECT * FROM document_authority ORDER BY singleton').all() };
+        } finally { db.close(); }
+      };
       const record = { variant, fixture: { factory: 'createInkosAdapterFixture', directory: f.directory,
         dbPath: f.dbPath, authorityVersion: f.authorityVersion, selection: f.selection, sources: f.sources }, steps: [] };
       proof.scenarios.push(record);
@@ -57,6 +65,7 @@ test('offline CLI proof: real export, collect and prepare-draft with adversarial
         fs.mkdirSync(host);
         fs.writeFileSync(selection, JSON.stringify(f.selection));
         record.dbBeforeSha256 = fileHash(f.dbPath);
+        if (variant.startsWith('happy')) record.authorityBefore = authoritySnapshot();
         const packet = run(record, f.directory, ['export', '--db', f.dbPath, '--selection', selection,
           '--trusted-root', host, '--worker-out', join(f.directory, 'worker')]);
         assert.deepEqual(JSON.parse(fs.readFileSync(packet.manifestPath)).sources, f.sources);
@@ -81,6 +90,8 @@ test('offline CLI proof: real export, collect and prepare-draft with adversarial
           assert.equal(receipt.ownerApproval, false);
           assert.equal(receipt.candidateSha256, record.candidateBeforeSha256);
           record.receiptSha256 = fileHash(collected.receiptPath);
+          assert.equal(collected.receiptSha256, record.receiptSha256);
+          assert.equal(collected.receiptSha256, fileHash(join(f.directory, 'collected.json')));
           assert.equal(fileHash(f.dbPath), record.dbBeforeSha256);
           if (variant === 'one-byte-return') {
             fs.appendFileSync(candidatePath, ' ');
@@ -114,14 +125,23 @@ test('offline CLI proof: real export, collect and prepare-draft with adversarial
             expected.status = 'draft';
             expected.content[0].text.ko = paragraph;
             assert.deepEqual(prepared.preview, expected);
-            assert.deepEqual(JSON.parse(fs.readFileSync(out)), prepared);
+            const { previewFileSha256, ...envelope } = prepared;
+            assert.deepEqual(JSON.parse(fs.readFileSync(out)), envelope);
             record.previewSha256 = fileHash(out);
+            assert.equal(previewFileSha256, record.previewSha256);
           }
           assert.equal(fileHash(f.dbPath), record.dbBeforePrepareSha256);
           assert.equal(fileHash(collected.receiptPath), record.receiptSha256);
         }
         record.candidateAfterSha256 = fileHash(candidatePath);
         record.dbAfterSha256 = fileHash(f.dbPath);
+        if (variant.startsWith('happy')) {
+          record.authorityAfter = authoritySnapshot();
+          assert.equal(record.authorityBefore.authority.length, 1);
+          assert.equal(record.authorityBefore.authority[0].version, f.authorityVersion);
+          assert.deepEqual(record.authorityAfter, record.authorityBefore);
+          console.log(`authority v${f.authorityVersion}: PRAGMA user_version and document_authority rows unchanged after full CLI chain (read-only snapshots)`);
+        }
         assert.equal(record.dbAfterSha256, record.staleInjection?.dbAfterSha256 ?? record.dbBeforeSha256);
         if (variant === 'one-byte-return') assert.notEqual(record.candidateAfterSha256, record.candidateBeforeSha256);
         else assert.equal(record.candidateAfterSha256, record.candidateBeforeSha256);

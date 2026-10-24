@@ -46,5 +46,5 @@ export function collectCandidate({ trustedRoot, packetId, candidatePath }) {
     } catch { fail('E_ADAPTER_CONFLICT', 'existing receipt is not verified identical'); }
   }
   if (!readHostFile(receiptPath, bytes.length).equals(bytes)) fail('E_ADAPTER_CONFLICT', 'receipt verification failed');
-  return { candidateId, receiptPath };
+  return { candidateId, receiptPath, receiptSha256: sha256Bytes(bytes) };
 }

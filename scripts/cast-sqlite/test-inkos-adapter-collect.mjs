@@ -39,6 +39,7 @@ test('trusted source linkage, exact hashes, candidate-only injection and immutab
   const f = fixture(t);
   const result = collectCandidate(f.options);
   const bytes = fs.readFileSync(result.receiptPath);
+  assert.equal(result.receiptSha256, hash(result.receiptPath));
   const receipt = JSON.parse(bytes);
   const manifest = JSON.parse(fs.readFileSync(f.manifestPath));
   assert.deepEqual(receipt.sources, f.sources);

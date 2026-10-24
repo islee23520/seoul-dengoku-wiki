@@ -51,7 +51,14 @@ export function runCli(argv) {
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  try { console.log(JSON.stringify(runCli(process.argv.slice(2)))); }
+  try {
+    const result = runCli(process.argv.slice(2));
+    // prepare-draft writes this exact canonical envelope; keep its byte hash
+    // in stdout only, outside the file being hashed and the reusable API.
+    const output = process.argv[2] === 'prepare-draft'
+      ? { ...result, previewFileSha256: sha256Bytes(Buffer.from(canonicalJson(result))) } : result;
+    console.log(JSON.stringify(output));
+  }
   catch (error) {
     console.error(JSON.stringify({ code: error.code?.startsWith('E_ADAPTER_') ? error.code : 'E_ADAPTER_IO', message: error.message }));
     process.exitCode = 1;

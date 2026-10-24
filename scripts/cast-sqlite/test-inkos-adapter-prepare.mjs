@@ -41,6 +41,7 @@ function fixture(t, authorityVersion = 2, replacementText = '합성 대체 문�
   const candidate = { version: 1, packetId: packet.packetId, inputDigest: packet.inputDigest, targetKey: 'source-1', replacementText, citations: [{ sourceKey: 'source-2', anchor: 'paragraph' }] };
   fs.writeFileSync(candidatePath, JSON.stringify(candidate));
   const collected = success(['collect', '--trusted-root', trustedRoot, '--packet-id', packet.packetId, '--candidate', candidatePath, '--db', f.dbPath, '--out', join(f.directory, 'collected.json')]);
+  assert.equal(collected.receiptSha256, hash(fs.readFileSync(collected.receiptPath)));
   const out = join(f.directory, 'preview.json');
   return { ...f, ...packet, ...collected, candidate, candidatePath, trustedRoot, initialHash, out,
     args: ['prepare-draft', '--trusted-root', trustedRoot, '--candidate-id', collected.candidateId, '--db', f.dbPath, '--out', out] };
@@ -70,7 +71,9 @@ for (const version of [1, 2]) test(`full v${version} preview matches independent
   assert.equal(actual.orderedCommandsSha256, hash(canonical(commands)));
   assert.equal(actual.fullPreviewSha256, hash(canonical(expected)));
   assert.equal(actual.ownerApproval, false);
-  assert.deepEqual(JSON.parse(fs.readFileSync(f.out)), actual);
+  const { previewFileSha256, ...envelope } = actual;
+  assert.equal(previewFileSha256, hash(fs.readFileSync(f.out)));
+  assert.deepEqual(JSON.parse(fs.readFileSync(f.out)), envelope);
   assert.equal(fs.existsSync(join(f.directory, 'injected')), false);
   assert.equal(hash(fs.readFileSync(f.dbPath)), f.initialHash);
   console.log(JSON.stringify({ authorityVersion: version, expectedRevision: actual.expectedRevision,
