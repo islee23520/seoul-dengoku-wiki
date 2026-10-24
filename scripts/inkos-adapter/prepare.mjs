@@ -1,21 +1,21 @@
 import fs from 'node:fs';
-import { dirname, join, sep } from 'node:path';
+import { join } from 'node:path';
 import { openReadOnly } from '../cast-sqlite/db.mjs';
 import { readDocument } from '../cast-sqlite/document-read.mjs';
 import { canonicalJson, digestJson, fail, LIMITS, parseCandidate, parseHostManifest, parseStrictJson, sha256Bytes } from './contracts.mjs';
-import { createImmutableFile, hostPath, readHostFile } from './io.mjs';
+import { createImmutableFile, directories, hostPath, readHostFile } from './io.mjs';
 
 /** Host index entries are created by CLI collection, never supplied by a worker.
  * No receipt-provided path is interpreted. All DB reads share one snapshot. */
 export function prepareDraft({ trustedRoot, candidateId, dbPath, out }) {
   if (typeof candidateId !== 'string' || !/^[a-f0-9]{64}$/u.test(candidateId)) fail('E_ADAPTER_SCHEMA', 'candidate digest required');
   const root = hostPath(trustedRoot);
-  const index = parseStrictJson(readHostFile(join(root, 'index', `${candidateId}.json`)));
+  const index = parseStrictJson(readHostFile(join(root, 'index', `${candidateId}.json`), undefined, root));
   if (index.candidateId !== candidateId || index.version !== 1) fail('E_ADAPTER_BINDING', 'trusted index mismatch');
-  const receiptBytes = readHostFile(index.receiptPath);
+  const receiptBytes = readHostFile(index.receiptPath, undefined, root);
   if (sha256Bytes(receiptBytes) !== index.receiptSha256) fail('E_ADAPTER_BINDING', 'receipt bytes changed');
   const receipt = parseStrictJson(receiptBytes);
-  const manifest = parseHostManifest(readHostFile(join(root, 'packets', index.packetId, 'manifest.json')));
+  const manifest = parseHostManifest(readHostFile(join(root, 'packets', index.packetId, 'manifest.json'), undefined, root));
   const db = openReadOnly(hostPath(dbPath));
   let target, candidate, candidateFd;
   try {
@@ -24,18 +24,12 @@ export function prepareDraft({ trustedRoot, candidateId, dbPath, out }) {
     // Reuse the landed bounded path/filesystem validation before retaining a
     // descriptor. Rechecks below never reopen the candidate by pathname.
     const entry = fs.lstatSync(candidatePath, { bigint: true });
-    const candidateBytes = readHostFile(candidatePath);
+    const candidateBytes = readHostFile(candidatePath, undefined, root);
     candidateFd = fs.openSync(candidatePath, fs.constants.O_RDONLY | fs.constants.O_NOFOLLOW | fs.constants.O_NONBLOCK);
     const baseline = fs.fstatSync(candidateFd, { bigint: true });
     const same = (a, b) => ['dev', 'ino', 'size', 'mtimeNs', 'ctimeNs', 'nlink'].every(key => a[key] === b[key]);
     if (!baseline.isFile() || baseline.nlink !== 1n || !same(entry, baseline)) fail('E_ADAPTER_BINDING', 'candidate changed before descriptor retention');
-    const parents = [];
-    for (let parent = dirname(candidatePath); ; parent = dirname(parent)) {
-      const stat = fs.lstatSync(parent, { bigint: true });
-      if (!stat.isDirectory() || stat.isSymbolicLink()) fail('E_ADAPTER_BINDING', 'candidate parent changed');
-      parents.push([parent, stat]);
-      if (parent === sep) break;
-    }
+    const parents = directories(candidatePath, root);
     const revalidateCandidate = () => {
       try {
         if (!same(baseline, fs.fstatSync(candidateFd, { bigint: true }))) fail('E_ADAPTER_BINDING', 'candidate descriptor changed');
@@ -52,7 +46,8 @@ export function prepareDraft({ trustedRoot, candidateId, dbPath, out }) {
           || sha256Bytes(bytes.subarray(0, length)) !== sha256Bytes(candidateBytes)) fail('E_ADAPTER_BINDING', 'candidate bytes or path changed');
         for (const [parent, before] of parents) {
           const after = fs.lstatSync(parent, { bigint: true });
-          if (!after.isDirectory() || before.dev !== after.dev || before.ino !== after.ino) fail('E_ADAPTER_BINDING', 'candidate parent changed');
+          if (!after.isDirectory() || after.isSymbolicLink() || before.dev !== after.dev || before.ino !== after.ino
+            || before.ctimeNs !== after.ctimeNs) fail('E_ADAPTER_BINDING', 'candidate parent changed');
         }
       } catch { fail('E_ADAPTER_BINDING', 'candidate integrity changed'); }
     };
@@ -114,6 +109,6 @@ export function prepareDraft({ trustedRoot, candidateId, dbPath, out }) {
   const result = { version: 1, status: 'draft', ownerApproval: false, candidateId,
     expectedRevision: receipt.target.revision, replacementSha256: receipt.replacementSha256,
     orderedCommandsSha256: digestJson(commands), fullPreviewSha256: digestJson(preview), commands, preview };
-  createImmutableFile(out, Buffer.from(canonicalJson(result)));
+  createImmutableFile(out, Buffer.from(canonicalJson(result)), root);
   return result;
 }

@@ -151,7 +151,7 @@ for (const restored of [false, true]) test(`output parent swap ${restored ? 'res
     return fd;
   });
   try {
-    assert.throws(() => createImmutableFile(output, Buffer.from('fourteen bytes')), { code: 'E_ADAPTER_PATH' });
+    assert.throws(() => createImmutableFile(output, Buffer.from('fourteen bytes'), f.directory), { code: 'E_ADAPTER_PATH' });
   } finally { mock.mock.restore(); }
   assert.equal(triggered, true);
   assert.equal(process.cwd(), cwd);
@@ -163,6 +163,35 @@ for (const restored of [false, true]) test(`output parent swap ${restored ? 'res
   assert.equal(fs.readFileSync(join(host, 'canary'), 'utf8'), 'host bytes');
   assert.equal(fs.lstatSync(parent).isSymbolicLink(), !restored);
   console.log(`output swap ${restored ? 'restored' : 'left'}: E_ADAPTER_PATH; foreign receipt absent; host inode/canary intact`);
+});
+
+for (const boundary of ['directory open', 'output open', 'output write']) test(`collect tolerates outside tmpdir churn at ${boundary}`, t => {
+  const f = fixture(t);
+  const method = boundary === 'output write' ? 'writeFileSync' : 'openSync';
+  const original = fs[method];
+  let churned = false;
+  const mock = t.mock.method(fs, method, (...args) => {
+    const result = original(...args);
+    const matches = boundary === 'directory open' ? args[0] === join(f.options.trustedRoot, 'candidates')
+      : boundary === 'output open' ? typeof args[0] === 'string' && args[0].endsWith('.json') && !args[0].includes('/')
+        : typeof args[0] === 'number';
+    if (!churned && matches) {
+      churned = true;
+      const sibling = fs.mkdtempSync(join(fs.realpathSync(tmpdir()), 'inkos-outside-churn-'));
+      try { assert.equal(fs.statSync(sibling).isDirectory(), true); }
+      finally { fs.rmdirSync(sibling); }
+    }
+    return result;
+  });
+  let result;
+  try { result = collectCandidate(f.options); }
+  finally { mock.mock.restore(); }
+  assert.equal(churned, true);
+  assert.equal(hash(result.receiptPath), result.receiptSha256);
+  const receipt = JSON.parse(fs.readFileSync(result.receiptPath));
+  assert.equal(receipt.replacementText, f.candidate.replacementText);
+  assert.equal(receipt.status, 'candidate-only');
+  assert.equal(receipt.ownerApproval, false);
 });
 
 test('two real processes contend from an IPC barrier and preserve existing receipt bytes', async t => {

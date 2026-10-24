@@ -35,18 +35,18 @@ export function runCli(argv) {
   if (command === 'prepare-draft') return prepareDraft({ trustedRoot, candidateId: options['candidate-id'], dbPath: options.db, out: options.out });
   const candidatePath = hostPath(options.candidate);
   const result = collectCandidate({ trustedRoot, packetId: options['packet-id'], candidatePath });
-  const bytes = readHostFile(result.receiptPath);
+  const bytes = readHostFile(result.receiptPath, undefined, trustedRoot);
   const index = { version: 1, candidateId: result.candidateId, packetId: options['packet-id'], candidatePath,
     receiptPath: result.receiptPath, receiptSha256: sha256Bytes(bytes) };
-  ensureHostDirectory(join(trustedRoot, 'index'));
+  ensureHostDirectory(join(trustedRoot, 'index'), trustedRoot);
   const indexPath = join(trustedRoot, 'index', `${result.candidateId}.json`);
   const indexBytes = Buffer.from(canonicalJson(index));
-  try { createImmutableFile(indexPath, indexBytes); }
+  try { createImmutableFile(indexPath, indexBytes, trustedRoot); }
   catch (error) {
     if (error.code !== 'E_ADAPTER_CONFLICT') throw error;
-    if (!readHostFile(indexPath).equals(indexBytes)) fail('E_ADAPTER_CONFLICT', 'trusted index differs');
+    if (!readHostFile(indexPath, undefined, trustedRoot).equals(indexBytes)) fail('E_ADAPTER_CONFLICT', 'trusted index differs');
   }
-  createImmutableFile(options.out, bytes);
+  createImmutableFile(options.out, bytes, trustedRoot);
   return result;
 }
 

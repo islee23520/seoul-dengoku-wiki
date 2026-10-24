@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import { basename, dirname, join, resolve, sep } from 'node:path';
+import { basename, dirname, resolve, sep } from 'node:path';
 import { fail, LIMITS } from './contracts.mjs';
 
 const inode = (a, b) => a.dev === b.dev && a.ino === b.ino;
@@ -11,10 +11,21 @@ export function hostPath(value) {
   return resolve(value);
 }
 
-function directories(path) {
-  let current = sep;
-  return dirname(path).split(sep).filter(Boolean).map(part => {
-    current = join(current, part);
+export function directories(path, trustedRoot) {
+  // External candidate/output paths are also host-designated. Retain their
+  // branch below the common host directory, but not its shared ancestors.
+  const boundary = trustedRoot === undefined ? sep : hostPath(trustedRoot);
+  const parent = dirname(path);
+  let start = boundary;
+  while (start !== sep && parent !== start && !parent.startsWith(start + sep)) start = dirname(start);
+  const paths = [];
+  for (let current = parent; ; current = dirname(current)) {
+    if (trustedRoot !== undefined && start !== boundary && current === start && current !== parent) break;
+    paths.unshift(current);
+    if (current === start) break;
+  }
+  if (trustedRoot !== undefined && start !== boundary) paths.unshift(boundary);
+  return paths.map(current => {
     const stat = fs.lstatSync(current, { bigint: true });
     if (!stat.isDirectory() || stat.isSymbolicLink()) fail('E_ADAPTER_PATH', 'non-symlink directory required');
     // Explicit local filesystem allowlist: APFS/HFS, ext, tmpfs, overlay, XFS,
@@ -36,11 +47,11 @@ function pathError(error) {
 }
 
 /** Bytes are bounded and read only from the descriptor validated by fstat. */
-export function readHostFile(value, maximum = LIMITS.fileBytes) {
+export function readHostFile(value, maximum = LIMITS.fileBytes, trustedRoot) {
   const path = hostPath(value);
   let fd;
   try {
-    const parents = directories(path);
+    const parents = directories(path, trustedRoot);
     const entry = fs.lstatSync(path, { bigint: true });
     if (!entry.isFile() || entry.nlink !== 1n) fail('E_ADAPTER_PATH', 'single-link regular file required');
     fd = fs.openSync(path, fs.constants.O_RDONLY | fs.constants.O_NOFOLLOW | fs.constants.O_NONBLOCK);
@@ -63,9 +74,9 @@ export function readHostFile(value, maximum = LIMITS.fileBytes) {
   finally { if (fd !== undefined) fs.closeSync(fd); }
 }
 
-export function ensureHostDirectory(value) {
+export function ensureHostDirectory(value, trustedRoot) {
   const path = hostPath(value);
-  const parents = directories(path);
+  const parents = directories(path, trustedRoot);
   try { fs.mkdirSync(path, { mode: 0o700 }); }
   catch (error) { if (error.code !== 'EEXIST') pathError(error); }
   const stat = fs.lstatSync(path);
@@ -76,13 +87,13 @@ export function ensureHostDirectory(value) {
 /** Synchronous cwd pinning supplies a directory-relative create on Node without
  * openat. Once verified, cwd remains attached to that directory inode even if
  * its pathname is renamed or replaced. Never yield while cwd is pinned. */
-export function createImmutableFile(value, bytes) {
+export function createImmutableFile(value, bytes, trustedRoot) {
   const path = hostPath(value);
   const originalCwd = process.cwd();
   const name = basename(path);
   let fd, directoryFd, pinned = false, owned;
   try {
-    const parents = directories(path);
+    const parents = directories(path, trustedRoot);
     directoryFd = fs.openSync(dirname(path), fs.constants.O_RDONLY | fs.constants.O_DIRECTORY | fs.constants.O_NOFOLLOW);
     const directory = fs.fstatSync(directoryFd, { bigint: true });
     if (!directory.isDirectory() || !inode(directory, parents.at(-1)[1])) fail('E_ADAPTER_PATH', 'output directory swapped');

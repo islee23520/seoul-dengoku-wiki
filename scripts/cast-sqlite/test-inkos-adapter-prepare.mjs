@@ -148,6 +148,61 @@ for (const boundary of ['BEGIN', 'first DB read', 'COMMIT']) test(`candidate mut
     rejected: 'E_ADAPTER_BINDING', preview: 'ENOENT', onlySideEffect: boundary === 'COMMIT' ? 'candidate replaced' : 'candidate trailing space',
     dbBefore: before[f.dbPath], dbAfter: hash(fs.readFileSync(f.dbPath)) }));
 });
+for (const boundary of ['BEGIN', 'first DB read', 'COMMIT']) test(`prepare tolerates outside tmpdir churn at ${boundary}`, t => {
+  const f = fixture(t);
+  const method = boundary === 'first DB read' ? 'prepare' : 'exec';
+  const original = DatabaseSync.prototype[method];
+  let churned = false;
+  const mock = t.mock.method(DatabaseSync.prototype, method, function (sql) {
+    if (sql === (boundary === 'first DB read' ? 'SELECT version FROM document_authority' : boundary)) {
+      assert.equal(churned, false);
+      churned = true;
+      const sibling = fs.mkdtempSync(join(fs.realpathSync(tmpdir()), 'inkos-outside-churn-'));
+      try { assert.equal(fs.statSync(sibling).isDirectory(), true); }
+      finally { fs.rmdirSync(sibling); }
+    }
+    return original.call(this, sql);
+  });
+  let result;
+  try { result = prepareDraft({ trustedRoot: f.trustedRoot, candidateId: f.candidateId, dbPath: f.dbPath, out: f.out }); }
+  finally { mock.mock.restore(); }
+  assert.equal(churned, true);
+  assert.equal(DatabaseSync.prototype[method], original);
+  assert.deepEqual(JSON.parse(fs.readFileSync(f.out)), result);
+  const expected = structuredClone(f.documents[0]);
+  expected.content[0].text.ko = f.candidate.replacementText;
+  expected.status = 'draft';
+  assert.deepEqual(result.preview, expected);
+  assert.equal(result.fullPreviewSha256, hash(canonical(expected)));
+  assert.equal(hash(fs.readFileSync(f.dbPath)), f.initialHash);
+});
+
+test('candidate directory inside trusted root swapped away and back at first DB read rejects', t => {
+  const f = fixture(t);
+  const directory = join(f.trustedRoot, 'returns'); fs.mkdirSync(directory);
+  const candidatePath = join(directory, 'return.json'); fs.renameSync(f.candidatePath, candidatePath);
+  const indexPath = join(f.trustedRoot, 'index', `${f.candidateId}.json`);
+  const index = JSON.parse(fs.readFileSync(indexPath));
+  fs.writeFileSync(indexPath, JSON.stringify({ ...index, candidatePath }));
+  const original = DatabaseSync.prototype.prepare;
+  let swapped = false;
+  const mock = t.mock.method(DatabaseSync.prototype, 'prepare', function (sql) {
+    if (sql === 'SELECT version FROM document_authority') {
+      swapped = true;
+      fs.renameSync(directory, directory + '.moved');
+      fs.renameSync(directory + '.moved', directory);
+    }
+    return original.call(this, sql);
+  });
+  try {
+    assert.throws(() => prepareDraft({ trustedRoot: f.trustedRoot, candidateId: f.candidateId,
+      dbPath: f.dbPath, out: f.out }), { code: 'E_ADAPTER_BINDING' });
+  } finally { mock.mock.restore(); }
+  assert.equal(swapped, true);
+  assert.equal(fs.existsSync(f.out), false);
+  assert.equal(hash(fs.readFileSync(f.dbPath)), f.initialHash);
+});
+
 test('unsupported anchor change rejects rather than projecting structural edits', t => {
   const f = fixture(t, 2, '합성 문단 <a id="new-anchor"></a>');
   rejected(f, 'E_ADAPTER_UNSUPPORTED_CHANGE');
