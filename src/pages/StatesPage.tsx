@@ -17,7 +17,7 @@ export default function StatesPage() {
       <p><strong>중심 권역</strong> · {hegemon.centerRegion}</p><p><strong>AI·휴머노이드</strong> · {hegemon.aiPosition}</p>
       <SortableTable headers={['소속 세력', '거점', '수장', '정부 형태']} rows={stateCatalog.filter(state => state.currentHegemon.name === hegemon.name).map(state => [{ text: state.name, link: stateRoute(state.slug) }, state.currentBase.name, state.ruler, state.government])} />
     </section>)}
-    <section className="wiki-prose"><h2>중립 중앙정보부</h2><p>남산타워와 용산2가동·후암동·이태원2동을 다스린다. 수도역은 녹사평이며 중앙정보부 AI의 현재 아바타는 오해린이다.</p><p><Link to="/states/s08">중앙정보부 보기</Link></p></section>
+    <section className="wiki-prose"><h2>중립 중앙정보부</h2><p>남산타워 시설을 관할한다. 수도역은 녹사평이며 중앙정보부 AI의 현재 아바타는 오해린이다.</p><p><Link to="/states/s08">중앙정보부 보기</Link></p></section>
     <NavBox title="국가와 영지 둘러보기" groups={[...hegemons.map(hegemon => ({ label: hegemon.name, links: stateCatalog.filter(state => state.currentHegemon.name === hegemon.name).map(state => ({ label: state.name, to: stateRoute(state.slug) })) })), { label: '중립', links: [{ label: '중앙정보부', to: '/states/s08' }] }]} />
   </article>
 }
