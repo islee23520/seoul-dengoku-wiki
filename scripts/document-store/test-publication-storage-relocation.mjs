@@ -5,7 +5,7 @@ import { mkdtemp, readFile, realpath, rename, rm, symlink, writeFile } from 'nod
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
-import { verifyPublicationRelocation } from './publication-storage-relocation.mjs';
+import { PUBLICATION_PROVISION_SHA256, verifyPublicationRelocation } from './publication-storage-relocation.mjs';
 import { openPublicationDatabaseInputs } from './publication-database-inputs.mjs';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -90,6 +90,32 @@ test('relocation authenticates an archive beyond 1 MiB and rejects same-length n
 
 test('production loader does not accept a caller-created manifest even with matching file hashes', async t => {
   const f = await fixture(t);
+  await assert.rejects(openPublicationDatabaseInputs(f.directory, f.config), /E_PUBLICATION_RELOCATION_ANCHOR/u);
+});
+
+test('manifest currency advance rejects the previous anchor without relaxing verification', async t => {
+  assert.equal(PUBLICATION_PROVISION_SHA256, '22b906bb4b859c6877795112c36c1fe5e26bb09d47887427b83a5fc4bdf6265a');
+  const f = await fixture(t);
+  const previousFixturePin = hash(f.manifestBytes);
+  const current = JSON.parse(f.manifestBytes);
+  const db = new DatabaseSync(f.config.databasePath);
+  db.exec("UPDATE identity SET value='current-authority'");
+  db.close();
+  const databaseBytes = await readFile(f.config.databasePath);
+  current.publicDatabase.size = databaseBytes.length;
+  current.publicDatabase.sha256 = hash(databaseBytes);
+  for (let index = 0; index < 5; index++) current.files.push({
+    target: `/original/private/advance-${index}.receipt.json`, kind: 'receipt',
+    size: 0, sha256: hash(Buffer.alloc(0)),
+  });
+  const currentBytes = Buffer.from(JSON.stringify(current) + '\n');
+  await writeFile(f.config.relocation.provisionManifestPath, currentBytes);
+  for (const stalePin of [previousFixturePin, '05e82ab71c0d970304d7f319170047e7b924f71467cdac6edae280fb75f98a92'])
+    await assert.rejects(verifyPublicationRelocation(f.config, f.bootstrapBytes, f.captureBytes, stalePin),
+      /E_PUBLICATION_RELOCATION_ANCHOR/u);
+  const relocation = await verifyPublicationRelocation(f.config, f.bootstrapBytes, f.captureBytes, hash(currentBytes));
+  relocation.assertUnchanged();
+  // The production pin is not caller-selectable, even for internally valid fixtures.
   await assert.rejects(openPublicationDatabaseInputs(f.directory, f.config), /E_PUBLICATION_RELOCATION_ANCHOR/u);
 });
 
