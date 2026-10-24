@@ -11,6 +11,35 @@ import { loadDataset, validate } from '../../lore/relations/validate.mjs';
 import { loadPersonDetailSources as loadDbInputs } from './person-detail-inputs.mjs';
 import { readSourceArchive } from './source-archive.mjs';
 import { readCanonicalDocument } from './canonical-document.mjs';
+import { editConsolidationCourt } from './data-source-editor.mjs';
+
+if (process.env.RELATION_CURRENT_DB) {
+  test('approved current relation source rejects typed and revision drift and editor rollback is atomic', t => {
+    const directory = mkdtempSync(join(tmpdir(), 'relation-current-'));
+    const path = join(directory, 'owned.sqlite');
+    copyFileSync(process.env.RELATION_CURRENT_DB, path);
+    const db = new DatabaseSync(path); db.exec('PRAGMA foreign_keys=ON');
+    t.after(() => { db.close(); rmSync(directory, { recursive: true }); });
+    assert.equal(readRelationConfig(db).courts[13].stateId, 'S02');
+    const baseline = db.prepare('SELECT * FROM data_source_revision').all();
+    for (const sql of [
+      "UPDATE context_court SET polity_id='S01' WHERE court_id='court:K1008'",
+      "UPDATE data_source_revision SET approval_ref='unapproved' WHERE source_path='lore/relations/relations.json' AND parent_revision IS NOT NULL",
+      "UPDATE data_source_revision SET reason='tampered' WHERE source_path='lore/relations/relations.json' AND parent_revision IS NULL",
+      "UPDATE data_source_current SET document_json='{}' WHERE source_path='lore/relations/relations.json'",
+    ]) {
+      db.exec('BEGIN');
+      try { db.exec(sql); assert.throws(() => readRelationConfig(db)); }
+      finally { db.exec('ROLLBACK'); }
+    }
+    assert.throws(() => editConsolidationCourt(db, { actor: 'test', reason: 'duplicate must rollback',
+      approvalRef: 'scripts/approved-seoul-faction-consolidation-20261022.json' }), /D1 court predecessor/u);
+    assert.equal(db.isTransaction, false);
+    assert.deepEqual(db.prepare('SELECT * FROM data_source_revision').all(), baseline);
+    assert.deepEqual(db.prepare('PRAGMA foreign_key_check').all(), []);
+    assert.equal(readRelationConfig(db).courts[13].stateId, 'S02');
+  });
+} else {
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const approvedBytes = readSourceArchive('lore/relations/relations.json');
@@ -109,3 +138,4 @@ test('missing rows, stale sources and mismatched caller pins fail closed', t => 
   assert.throws(() => readRelationConfig(identityView(rows => rows.map(row => ({ ...row, sha256: '0'.repeat(64) })))), { code: 'E_RELATION_INPUT_STALE' });
   assert.throws(() => readRelationConfig(identityView(() => [])), { code: 'E_RELATION_INPUT_MISSING' });
 });
+}

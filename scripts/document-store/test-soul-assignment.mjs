@@ -14,6 +14,8 @@ import { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } from './evidence.mjs'
 import { initializeSoulAssignments, initializeSoulAssignmentEdits, replaceSoulAssignment, openSoulAssignments, INTERNAL_SOUL_CAPABILITY, SOUL_ASSIGNMENT_SOURCE_SHA256 } from './soul-assignment.mjs';
 import { openReadOnly } from '../cast-sqlite/db.mjs';
 import { readAtlasIdentity } from '../cast-sqlite/atlas-identity.mjs';
+import { assertPrivateFilePermissions } from './private-file-permissions.mjs';
+import { setPrivateFixturePermissions } from '../fixtures/private-file-permissions.mjs';
 
 const repo = new URL('../../',import.meta.url);
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -36,6 +38,7 @@ const init = {...options,approvedBytes,actor:'soul-snapshot-test',reason:'explic
 function fixture(t) {
   const dir=fs.mkdtempSync(join(tmpdir(),'soul-assignment-'));
   t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));
+  setPrivateFixturePermissions(dir,{directory:true});
   return join(dir,'private.sqlite');
 }
 
@@ -79,7 +82,7 @@ test('complete actual document round-trips in exact JSON order from typed rows a
   assert.equal(sha(approvedBytes),SOUL_ASSIGNMENT_SOURCE_SHA256);
   assert.equal(original.assignments.length,1022);
   initializeSoulAssignments(path,init);
-  assert.equal(fs.statSync(path).mode&0o777,0o600);
+  assertPrivateFilePermissions(path);
   const store=openSoulAssignments(path,options);
   assert.deepEqual(store.readDocument(),original);
   store.close();
@@ -135,7 +138,7 @@ test('private capability, hash, audit, exclusive initialization and mode boundar
   assert.throws(()=>initializeSoulAssignments(path,init),{code:'EEXIST'});
   assert.throws(()=>openSoulAssignments(path,{...options,expectedSha256:'0'.repeat(64)}),{code:'E_SOUL_HASH'});
   assert.throws(()=>openSoulAssignments(path,{capability:INTERNAL_SOUL_CAPABILITY}),{code:'E_SOUL_HASH'});
-  fs.chmodSync(path,0o644);
+  setPrivateFixturePermissions(path,{broad:true});
   assert.throws(()=>openSoulAssignments(path,options),{code:'E_PRIVATE_MODE'});
 });
 

@@ -7,14 +7,17 @@ const canonical = value => Array.isArray(value) ? `[${value.map(canonical).join(
     : JSON.stringify(value);
 const fail = code => { throw Object.assign(new Error(code), { code }); };
 
-/** Resolve a sealed historical source pin to its unchanged typed envelope revision.
+/** Resolve an archive byte pin to an authenticated typed envelope revision.
  * Logical paths are exact database identities, never filesystem paths. A later
- * revision cannot inherit an old byte-hash approval. This is internal evidence
+ * revision requires a separately approved semantic pin; it cannot inherit an
+ * old byte-hash approval. This is internal evidence
  * resolution, not publication admission or a replacement for review evaluation.
  */
-export function readEvidenceDocumentReference(db, { logicalPath, expectedSha256 } = {}) {
+export function readEvidenceDocumentReference(db, { logicalPath, expectedSha256, expectedSemanticSha256 } = {}) {
   if (typeof logicalPath !== 'string' || !logicalPath
-    || typeof expectedSha256 !== 'string' || !/^[0-9a-f]{64}$/u.test(expectedSha256)) fail('E_REFERENCE_ARGUMENT');
+    || typeof expectedSha256 !== 'string' || !/^[0-9a-f]{64}$/u.test(expectedSha256)
+    || (expectedSemanticSha256 !== undefined && (typeof expectedSemanticSha256 !== 'string'
+      || !/^[0-9a-f]{64}$/u.test(expectedSemanticSha256)))) fail('E_REFERENCE_ARGUMENT');
   const identities = db.prepare(`SELECT s.source_id,s.sha256,d.document_id,d.domain,d.corpus_kind,
     r.revision_id,r.parent_revision,r.semantic_sha256,r.algorithm
     FROM source_file s JOIN text_document d USING(source_id)
@@ -25,7 +28,9 @@ export function readEvidenceDocumentReference(db, { logicalPath, expectedSha256 
   if (identities.length !== 1) fail('E_REFERENCE_AUTHORITY');
   const identity = identities[0];
   if (identity.sha256 !== expectedSha256) fail('E_REFERENCE_SOURCE_HASH');
-  if (identity.parent_revision !== null || identity.algorithm !== 'typed-envelope-v1') fail('E_REFERENCE_STALE');
+  if (identity.algorithm !== 'typed-envelope-v1'
+    || (identity.parent_revision !== null && expectedSemanticSha256 === undefined)
+    || (expectedSemanticSha256 !== undefined && expectedSemanticSha256 !== identity.semantic_sha256)) fail('E_REFERENCE_STALE');
   const document = readDocument(db, { documentId: identity.document_id, domain: identity.domain,
     corpusKind: identity.corpus_kind, visibility: 'internal' });
   const digest = createHash('sha256').update(canonical(document)).digest('hex');

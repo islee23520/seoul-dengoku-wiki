@@ -34,7 +34,7 @@ import { authenticateNonowningRights, projectCatalogOutsideOccupation, loadAppro
 export { projectPersonHoldings } from './person-detail-production.mjs'
 import { generatorStage, requireGenerationPublication } from './generate-release.mjs'
 import { loadScopeInput } from './check-seoul-scope.mjs'
-import { admitPublicPersonDetails, loadPersonDetailMappingAuthority, loadDatabasePersonDetailMappingAuthority } from './public-person-detail-admission.mjs'
+import { admitPublicPersonDetails } from './public-person-detail-admission.mjs'
 import { manifestForPublicFiles, publishPublicAssets, verifiedLegacyManifest } from './seoul-public-assets.mjs'
 import { projectGeographicTitles, publicGeographicScope, publicTerritorialScale } from '../src/components/geographicTitleMap.mjs'
 import { execFile } from 'node:child_process'
@@ -53,12 +53,11 @@ import { loadCiaFacilityProjection } from './cia-facility-projection-input.mjs'
 import { projectCiaFacilityRegions, projectCiaFacilityHoldings, projectCiaFacilityPersonDetails } from './cia-facility-publication.mjs'
 import { personFeedbackRecord } from './feedback-source-catalog.mjs'
 import { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } from './document-store/evidence.mjs'
-import { openEditorialProfiles, INTERNAL_PROFILE_CAPABILITY, EDITORIAL_PROFILE_SOURCE_HASHES } from './document-store/editorial-profile.mjs'
 import { readPublicCharacterProfileInputs } from './cast-sqlite/profile-inputs.mjs'
-import { preserveReceiptOrder, orderDocumentKeys } from './cast-sqlite/document-key-order.mjs'
+import { preserveReceiptOrder } from './cast-sqlite/document-key-order.mjs'
 import { readPortraitDocuments } from './cast-sqlite/portrait-store.mjs'
 import { readGeographyStore } from './cast-sqlite/geography-store.mjs'
-import { readEvidenceDocumentReference } from './cast-sqlite/evidence-document-reference.mjs'
+import { readScopeCurrentSource } from './document-store/scope-current-source.mjs'
 import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
 import { readRetirementProse, projectRetirementProse } from './cast-sqlite/retirement-prose.mjs'
 import { projectActiveRoster, projectActivePersonIndex } from './person-roster-projection.mjs'
@@ -74,6 +73,10 @@ import { readRetiredTerritoryDocuments, RETIRED_TERRITORY_SOURCE_HASHES } from '
 import { readRegionAtlasData, REGION_ATLAS_SOURCE_HASH } from './cast-sqlite/region-atlas-document.mjs'
 
 export const publicCatalogContent = (document, activeIds, activeRoutes) => projectActivePersonIndex(publicMapContent(publicOfficeContent(publicHouseContent(document))), activeIds, activeRoutes)
+
+export function projectPoliticalCatalog(currentAffiliation) {
+  return { hegemons: currentAffiliation.hegemons }
+}
 
 export async function projectCatalogTimeline(centuryAnnalsDocument, relatedTimelineDocuments, readBytes = readFile) {
   const sourcePath = 'lore/chronology/Century-Annals.json'
@@ -118,9 +121,8 @@ export function stateTimelineEvents(content, timelineYears, territoryStates) {
 }
 
 
-export async function writePublicPersonDetails(details, scopeInput, writeDetail, mappingAuthority) {
-  mappingAuthority ??= await loadPersonDetailMappingAuthority()
-  admitPublicPersonDetails(details, scopeInput, mappingAuthority)
+export async function writePublicPersonDetails(details, scopeInput, writeDetail) {
+  admitPublicPersonDetails(details, scopeInput)
   for (const detail of details) await writeDetail(detail)
 }
 
@@ -169,9 +171,9 @@ let geography, territorialScale, geographicScale
     db.exec('BEGIN')
     geographicScale = buildAdminTerritorialScaleFromDb(db)
     geography = readGeographyStore(db)
-    const offices = readEvidenceDocumentReference(db, { logicalPath: 'lore/offices/Offices-and-Ranks.json',
+    const offices = readScopeCurrentSource({ db, logicalPath: 'lore/offices/Offices-and-Ranks.json',
       expectedSha256: '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e' })
-    territorialScale = orderDocumentKeys(db, offices.sourceId, offices.document).data.territorialScale
+    territorialScale = offices.data.territorialScale
     db.exec('COMMIT')
   } finally { db.close() }
 }
@@ -865,9 +867,7 @@ await writeFile(resolve(publicRoot, 'opening-territories.json'), `${JSON.stringi
 await writeFile(resolve(publicRoot, 'timeline-overview.json'), `${JSON.stringify({ schema: 'seoul-timeline-overview.v1', years: timelineYears, states: territoryStates }, null, 2)}\n`)
 
 let personalHoldings = originalHoldings
-const daejeonPolities = personalHoldings.polities.filter(polity => polity.id === 'polity:daejeon')
-if (daejeonPolities.length !== 1) throw new Error('E_DAEJEON_POLITY_ID')
-await writeFile(resolve(generatedRoot, 'politicalCatalog.ts'), 'export const politicalCatalog = ' + JSON.stringify({ hegemons: sixteenStatesLore.data.currentAffiliation.hegemons, daejeon: daejeonPolities[0] }, null, 2) + ' as const\n')
+await writeFile(resolve(generatedRoot, 'politicalCatalog.ts'), 'export const politicalCatalog = ' + JSON.stringify(projectPoliticalCatalog(sixteenStatesLore.data.currentAffiliation), null, 2) + ' as const\n')
 await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(publicTerritorialScale(territorialScale), null, 2) + String.fromCharCode(10))
 personalHoldings = await projectPersonHoldingsInputs(personSources, {
   repoRoot, territoryStates, openingTerritories: { ...openingTerritories,
@@ -900,41 +900,24 @@ if (process.env.WIKI_DOCUMENT_DB) {
   } finally { db.close() }
 }
 const personDetailsRoot = resolve(publicRoot, 'person-details')
+personDetails = projectCiaFacilityPersonDetails(personDetails, personalHoldings, ciaFacilityProjection.correction)
 let scopeInput
 if (process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
   const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))
   const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
   const bundle = await openPublicationDatabaseInputs(projectRoot, config)
-  try { scopeInput = await loadScopeInput({ root: projectRoot, ...bundle.inputs, currentFacility: false }) }
+  try { scopeInput = await loadScopeInput({ root: projectRoot, ...bundle.inputs }) }
   finally { bundle.close() }
 } else {
   const { stdout: gitCommonDir } = await promisify(execFile)('git', ['-C', projectRoot, 'rev-parse', '--path-format=absolute', '--git-common-dir'])
   scopeInput = await loadScopeInput({ root: projectRoot,
-    baselinePath: resolve(dirname(gitCommonDir.trim()), '.omo/private/seoul-migration/baseline.json'), currentFacility: false })
+    baselinePath: resolve(dirname(gitCommonDir.trim()), '.omo/private/seoul-migration/baseline.json') })
 }
 if (scopeInput.error) throw Object.assign(new Error(scopeInput.error.errors[0].code), scopeInput.error.errors[0])
-const databaseMappingAuthority = process.env.WIKI_DOCUMENT_DB ? await (async () => {
-  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
-  const stores = {}
-  let editorialProfiles
-  try {
-    for (const [key, variable] of Object.entries({ evidenceStore: 'WIKI_TIER_EVIDENCE_DB', historyStore: 'WIKI_TIER_HISTORY_DB',
-      originalMappingStore: 'WIKI_MAPPING_ORIGINAL_DB', finalMappingStore: 'WIKI_MAPPING_FINAL_DB', sourceStore: 'WIKI_MAPPING_SOURCES_DB' })) {
-      if (!process.env[variable]) throw new Error(`E_PERSON_EVIDENCE_DATABASE_REQUIRED:${variable}`)
-      stores[key] = openEvidenceStore(process.env[variable], { capability: INTERNAL_EVIDENCE_CAPABILITY })
-    }
-    editorialProfiles = openEditorialProfiles(process.env.WIKI_EDITORIAL_PROFILE_DB,
-      { capability: INTERNAL_PROFILE_CAPABILITY, expectedSourceHashes: EDITORIAL_PROFILE_SOURCE_HASHES })
-    db.exec('BEGIN')
-    const authority = await loadDatabasePersonDetailMappingAuthority({ db, ...stores, editorialProfiles })
-    db.exec('COMMIT')
-    return authority
-  } finally { editorialProfiles?.close(); Object.values(stores).forEach(store => store.close()); db.close() }
-})() : undefined
-// Authenticate the preserved original projection before applying the separate
-// owner-approved current-roster retirement. Never shrink the mapping denominator.
-admitPublicPersonDetails(personDetails, scopeInput, databaseMappingAuthority)
-personDetails = projectCiaFacilityPersonDetails(personDetails, personalHoldings, ciaFacilityProjection.correction)
+// Validate structure, references, privacy and the independent human publication
+// review before applying the separately approved active-roster projection.
+// Historical field-mapping output is preserved for audit, not a content lock.
+admitPublicPersonDetails(personDetails, scopeInput)
 if (activePersonIds) {
   const db = openReadOnly(rosterDatabasePath)
   try {

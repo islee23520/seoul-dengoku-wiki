@@ -221,22 +221,24 @@ export async function loadDatabasePersonDetailMappingAuthority({ db, evidenceSto
   const { verifyPersonMappingCurrentSources } = await import('./document-store/person-mapping-current-source.mjs')
   const { assertBaselinePersonalTiers } = await import('./personal-tier-provenance.mjs')
   const original = APPROVED_DETAIL_MAPPING_RECEIPTS[0]
-  originalMappingStore.getEvidence(original.path, original.sha256)
-  finalMappingStore.getEvidence('scripts/public-legacy-projection-receipt.json',
-    'c987c8144d805310ef8e95b3ace429cd942704a36fd0a00a5ce1cce9a6c60ab7')
+  check(sha256(originalMappingStore.getEvidence(original.path, original.sha256)) === original.sha256,
+    'E_REVIEW_HASH', original.path)
+  const omissionSha256 = 'c987c8144d805310ef8e95b3ace429cd942704a36fd0a00a5ce1cce9a6c60ab7'
+  check(sha256(finalMappingStore.getEvidence('scripts/public-legacy-projection-receipt.json', omissionSha256)) === omissionSha256,
+    'E_REVIEW_HASH', 'scripts/public-legacy-projection-receipt.json')
   const receiptSha256 = '5f8f5cc0d7a0dfd2d24f5a379ccf11b8bdc18d61fa875a27aaf060759726df96'
   const receiptBytes = finalMappingStore.getEvidence('person-detail-mapping:final:20261020', receiptSha256).toString('utf8')
   check(sha256(receiptBytes) === receiptSha256, 'E_REVIEW_HASH', mappingPath)
   const receipt = JSON.parse(receiptBytes)
   const tiers = await replayDatabasePersonalTiers({ db, evidenceStore, historyStore })
   assertBaselinePersonalTiers(tiers, receipt.details)
-  verifyPersonMappingCurrentSources({ db, sourceHashes: receipt.sourceHashes, sourceStore, editorialProfiles })
   const sources = {}
   for (const [path, hash] of Object.entries(receipt.sourceHashes)) {
     check(sourcePath(path), 'E_SCOPE_SHAPE', path)
     sources[path] = sourceStore.getEvidence(`mapping-source:${path}`, hash).toString('utf8')
   }
   validateParsedPersonDetailFieldMappings(receipt.details, receipt, { receiptSha256, sources })
+  verifyPersonMappingCurrentSources({ db, sourceHashes: receipt.sourceHashes, sourceStore, editorialProfiles })
   const authority = Object.freeze({ receiptBytes, receiptSha256, sources: Object.freeze(sources) })
   authenticatedMappingAuthorities.add(authority)
   return authority
@@ -245,9 +247,10 @@ export async function loadDatabasePersonDetailMappingAuthority({ db, evidenceSto
 /**
  * Full-detail admission, never a projection or a sanitization step.
  * Returns the original complete details only under independently authenticated
- * document, Seoul-scope and full-detail source-to-field review.
+ * document and Seoul-scope review. Historical output receipts are audit data,
+ * not expected current document content (TESTING.md).
  */
-export function admitPublicPersonDetails(details, scopeInput, mappingAuthority) {
+export function admitPublicPersonDetails(details, scopeInput) {
   const ids = scopeInput?.baseline?.currentEntitySets?.persons
   const current = scopeInput?.current?.entitySets?.persons
   const entities = scopeInput?.contract?.entities
@@ -265,6 +268,15 @@ export function admitPublicPersonDetails(details, scopeInput, mappingAuthority) 
   exact(active, ids, '/person-details/dispositions')
   const rights = new Map((scopeInput.current.rights ?? []).map(row => [row.id, row]))
   const holdings = new Map(entities.filter(row => row.kind === 'holding' && row.status === 'active').map(row => [row.id, row]))
+  const assertPublicFields = (value, path, id) => {
+    if (value === null || typeof value !== 'object') return
+    for (const [key, child] of Object.entries(value)) {
+      const pointer = `${path}/${escapePointer(key)}`
+      check(!/^(?:souls?|soulAssignments|soulCandidates|historicalMotif)$/iu.test(key),
+        'E_SCOPE_PROJECTION', pointer, id)
+      assertPublicFields(child, pointer, id)
+    }
+  }
   const assertRefs = (values, path, id) => {
     check(Array.isArray(values), 'E_SCOPE_PROJECTION', path, id)
     for (const ref of values) {
@@ -330,10 +342,16 @@ export function admitPublicPersonDetails(details, scopeInput, mappingAuthority) 
     }
     for (const field of Object.keys(detail)) check(requiredFields.includes(field) || optionalFields.includes(field),
       'E_SCOPE_SHAPE', `/person-details/${field}`, id)
+    assertPublicFields(detail, '/person-details', id)
     for (const field of requiredFields) check(Object.hasOwn(detail, field),
       'E_REVIEW_COVERAGE', `/person-details/${field}`, id)
     for (const field of ['fields', 'sections', 'values', 'desire', 'gurps', 'personSheet', 'relations']) {
       check(record(detail[field]), 'E_SCOPE_SHAPE', `/person-details/${field}`, id)
+    }
+    for (const variant of detail.personSheet.variants ?? []) {
+      const historical = variant?.legacy?.record
+      check(record(historical) && JSON.stringify(historical) === JSON.stringify(projectPublicHistoricalRecord(historical)),
+        'E_SCOPE_PROJECTION', '/personSheet/variants/legacy/record', id)
     }
     check(typeof detail.biography === 'string' && detail.biography.trim().length > 0,
       'E_REVIEW_COVERAGE', '/person-details/biography', id)
@@ -348,6 +366,5 @@ export function admitPublicPersonDetails(details, scopeInput, mappingAuthority) 
   const { dependencies, dependencyReport, ...publicationInput } = scopeInput
   const result = validateSeoulScope(publicationInput, { mode: 'publication' })
   if (!result.ok) throw Object.assign(new Error(result.errors[0].code), result.errors[0])
-  assertApprovedPersonDetailMappingReceipt(mappingAuthority, details)
   return details
 }

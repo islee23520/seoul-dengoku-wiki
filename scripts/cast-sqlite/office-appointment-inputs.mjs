@@ -1,11 +1,15 @@
 import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
+import { readApprovedDataSource } from './data-source-editor.mjs';
 
 export const OFFICE_APPOINTMENT_SOURCE_HASH = 'de70382bed6464c5b2651f71ab7e13cc710512dbd1e0422a1c6b78980041a794';
 const logicalPath = 'lore/relations/opening-office-appointments.json';
 const fail = detail => { throw Object.assign(new Error(`E_OFFICE_APPOINTMENT_INPUT: ${detail}`), { code: 'E_OFFICE_APPOINTMENT_INPUT' }); };
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const digest = value => hash(JSON.stringify(value));
+const approvedCurrentSources = new WeakMap();
+export const isApprovedCurrentOfficeSource = source => approvedCurrentSources.has(source)
+  && approvedCurrentSources.get(source) === digest(source);
 const tables = ['context_office_appointment', 'context_office_history', 'context_office_evidence'];
 
 function domains(db, sourceId) {
@@ -67,6 +71,15 @@ export function readOfficeAppointmentInputs(db, { expectedSourceHash = OFFICE_AP
     const receipts = db.prepare('SELECT * FROM office_appointment_input_import').all();
     if (receipts.length !== 1 || expectedSourceHash !== OFFICE_APPOINTMENT_SOURCE_HASH || receipts[0].source_sha256 !== expectedSourceHash) fail('source receipt');
     const m = receipts[0], data = domains(db, m.source_id);
+    if (db.prepare("SELECT name FROM sqlite_schema WHERE name='data_source_head'").get()
+      && db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(logicalPath)) {
+      const approved = readApprovedDataSource(db, logicalPath,
+        '3b93a14de55b66f2ba38c6461df57608c42011a992628f57bf73a546e2aff3a8', expectedSourceHash);
+      const result = candidate(db, data);
+      if (!isDeepStrictEqual(result, approved)) fail('approved revision projection');
+      approvedCurrentSources.set(result, digest(result));
+      return result;
+    }
     if (digest(data) !== m.domain_sha256) fail('typed domain digest');
     const result = orderedDocument(db, candidate(db, data));
     if (digest(result) !== m.document_sha256) fail('document digest');

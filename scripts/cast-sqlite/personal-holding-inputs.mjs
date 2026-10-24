@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
+import { readApprovedDataSource } from './data-source-editor.mjs';
 
 export const PERSONAL_HOLDING_SOURCE_HASH = '1801d7bb8d27af743f74ea447d4f7be782b9d8ba7ba5b37af4d0c6f2b6329a12';
 const logicalPath = 'lore/relations/personal-holdings.json';
@@ -75,7 +76,7 @@ function candidate(db, data) {
   return document;
 }
 
-function orderedDocument(db, value) {
+function orderedDocument(db, value, current = false) {
   const groups = new Map();
   for (const r of db.prepare('SELECT * FROM personal_holding_input_key ORDER BY object_path,ordinal').all()) {
     if (!groups.has(r.object_path)) groups.set(r.object_path, []);
@@ -86,6 +87,9 @@ function orderedDocument(db, value) {
     if (v === null || typeof v !== 'object') return v;
     const keys = groups.get(path);
     if (!keys) fail(`${path}:missing keys`);
+    if (current && Object.keys(v).some(key => !keys.some(row => row.key === key)
+      && v[key] !== null && !(Array.isArray(v[key]) && v[key].length === 0)
+      && !(v[key] && typeof v[key] === 'object' && !Array.isArray(v[key]) && Object.values(v[key]).every(child => child === null)))) fail(`${path}:unapproved field`);
     groups.delete(path);
     return Object.fromEntries(keys.map((r, i) => {
       if (r.ordinal !== i || !Object.hasOwn(v, r.key) || v[r.key] === undefined || ![0, 1].includes(r.is_null) || (r.is_null && v[r.key] !== null)) fail(`${path}:${r.key}:presence`);
@@ -93,7 +97,7 @@ function orderedDocument(db, value) {
     }));
   };
   const result = visit(value, '');
-  if (groups.size) fail('unconsumed keys');
+  if (groups.size && (!current || [...groups.keys()].some(path => !/^\/(?:holdings\/(?:20|21|22|23|24)|polities\/0)(?:\/|$)/u.test(path)))) fail('unconsumed keys');
   return result;
 }
 
@@ -103,6 +107,14 @@ export function readPersonalHoldingInputs(db, { expectedSourceHash = PERSONAL_HO
     const receipts = db.prepare('SELECT * FROM personal_holding_input_import').all();
     if (receipts.length !== 1 || expectedSourceHash !== PERSONAL_HOLDING_SOURCE_HASH || receipts[0].source_sha256 !== expectedSourceHash) fail('source receipt');
     const m = receipts[0], domainsNow = domains(db, m.source_id);
+    if (db.prepare("SELECT name FROM sqlite_schema WHERE name='data_source_head'").get()
+      && db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(logicalPath)) {
+      const approved = readApprovedDataSource(db, logicalPath,
+        '77a0cc273441857a892822319f610d5630eb0801f70b7e633c303db7868f32e3', expectedSourceHash);
+      const result = orderedDocument(db, candidate(db, domainsNow.data), true);
+      if (!isDeepStrictEqual(result, approved)) fail('approved revision projection');
+      return result;
+    }
     if (digest(domainsNow) !== m.domain_sha256) fail('typed domain digest');
     const result = orderedDocument(db, candidate(db, domainsNow.data));
     if (digest(result) !== m.document_sha256) fail('document digest');

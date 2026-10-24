@@ -1,5 +1,5 @@
 import { readFile, readdir, stat } from 'node:fs/promises'
-import { basename, dirname, extname, join, relative, resolve } from 'node:path'
+import { basename, dirname, extname, join, relative, resolve, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
@@ -20,9 +20,9 @@ const typedTargets = new Map()
 const exists = async path => {
   path = resolve(path)
   if (currentDocuments.has(path) || typedTargets.has(path)) return true
-  if (path.startsWith(lore + '/') && path.endsWith('.json')) {
+  if (path.startsWith(lore + sep) && path.endsWith('.json')) {
     try {
-      typedTargets.set(path, readCanonicalDocument(relative(repo, path)))
+      typedTargets.set(path, readCanonicalDocument(relative(repo, path).split(sep).join('/')))
       return true
     } catch (error) {
       if (!/^E_CANONICAL_DOCUMENT_IDENTITY:|^E_SCOPE_DB_SOURCE_UNSUPPORTED/u.test(error.message)) throw error
@@ -44,7 +44,7 @@ const privatePages = new Set(['Cast-Profile-Contract', 'Cast-Registration-Templa
 async function anchors(path) {
   if (headingCache.has(path)) return headingCache.get(path)
   const text = extname(path) === '.json'
-    ? renderLoreMarkdown(typedTargets.get(resolve(path)) ?? (currentDocuments.has(resolve(path)) ? readCanonicalDocument(relative(repo, path)) : JSON.parse(await readFile(path, 'utf8'))), 'ko')
+    ? renderLoreMarkdown(typedTargets.get(resolve(path)) ?? (currentDocuments.has(resolve(path)) ? readCanonicalDocument(relative(repo, path).split(sep).join('/')) : JSON.parse(await readFile(path, 'utf8'))), 'ko')
     : await readFile(path, 'utf8')
   const ids = new Set()
   walk(parse(text), (node) => {
@@ -79,7 +79,7 @@ export async function loreLinkFailures() {
     if (extname(path) === '.md') {
       const json = path.slice(0, -3) + '.json'
       if (await exists(json)) {
-        const value = typedTargets.get(resolve(json)) ?? (currentDocuments.has(resolve(json)) ? readCanonicalDocument(relative(repo, json)) : JSON.parse(await readFile(json, 'utf8')))
+        const value = typedTargets.get(resolve(json)) ?? (currentDocuments.has(resolve(json)) ? readCanonicalDocument(relative(repo, json).split(sep).join('/')) : JSON.parse(await readFile(json, 'utf8')))
         if (Array.isArray(value.content) && value.domain) return json
       }
     }
@@ -125,7 +125,7 @@ export async function loreLinkFailures() {
       walk(parse(await readFile(file, 'utf8')), (node) => { if (node.type === 'link' || node.type === 'image') links.push(node.url) })
       for (const href of links) await check(href, file)
     } else {
-      const json = currentDocuments.has(resolve(file)) ? readCanonicalDocument(relative(repo, file)) : JSON.parse(await readFile(file, 'utf8'))
+      const json = currentDocuments.has(resolve(file)) ? readCanonicalDocument(relative(repo, file).split(sep).join('/')) : JSON.parse(await readFile(file, 'utf8'))
       const references = []
       function scan(value) {
         if (Array.isArray(value)) { value.forEach(scan); return }

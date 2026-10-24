@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
 import { currentFeudalAllocation } from './cia-current-rights.mjs';
+import { readApprovedDataSource } from './data-source-editor.mjs';
 
 export const FEUDAL_ALLOCATION_SOURCE_HASH = '21d7663507b896a43d70fc459f662376780b477b5c2078af100b2d42bbe7079d';
 const logicalPath = 'lore/relations/opening-feudal-allocation.json';
@@ -20,14 +21,21 @@ function domains(db) {
     [table, db.prepare(`SELECT * FROM ${table} ORDER BY rowid`).all()]));
 }
 
-function candidate(db, data, sourceId) {
+function candidate(db, data, sourceId, approved) {
   const used = new Set();
   const rows = (table, filter = () => true) => data[table].filter(filter).sort((a, b) =>
     (a.ordinal ?? Number(a.json_pointer.split('/').at(-1))) - (b.ordinal ?? Number(b.json_pointer.split('/').at(-1))))
     .map(row => { if (row.source_id !== sourceId) fail(`${table}:source`); used.add(row); return row; });
   const ordered = (table, path) => rows(table).map((r, i) => {
-    if (r.json_pointer !== `/${path}/${i}`) fail(`${table}:order`);
+    if (!approved && r.json_pointer !== `/${path}/${i}`) fail(`${table}:order`);
     return r;
+  }).sort((a, b) => {
+    if (!approved) return 0;
+    const key = path === 'titles' ? 'title_id' : path === 'grants' ? 'grant_id' : path === 'politicalIdentities' ? 'identity_id' : 'holding_id';
+    const identity = path === 'existingTitleBindings' ? 'holdingId' : 'id';
+    const index = row => approved[path].findIndex(value => value[identity] === row[key]);
+    if (index(a) < 0 || index(b) < 0) fail(`${table}:approved identity`);
+    return index(a) - index(b);
   });
   const child = (table, id, key, path) => rows(table, r => r[key] === id).map((r, i) => {
     if (r.ordinal !== i || r.json_pointer !== `${path}/${i}`) fail(`${table}:child order`);
@@ -95,6 +103,26 @@ export function readFeudalAllocationInputs(db, { expectedSourceHash = FEUDAL_ALL
     if (receipts.length !== 1 || expectedSourceHash !== FEUDAL_ALLOCATION_SOURCE_HASH
       || receipts[0].source_sha256 !== expectedSourceHash) fail('source receipt');
     const m = receipts[0], data = domains(db);
+    if (db.prepare("SELECT name FROM sqlite_schema WHERE name='data_source_head'").get()
+      && db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(logicalPath)) {
+      const approved = readApprovedDataSource(db, logicalPath,
+        'aa32254621831b189587024f2748dc1f78f93a1a448e4e5be15beb6ace8b12e9', expectedSourceHash);
+      const typed = candidate(db, data, m.source_id, approved);
+      const present = (value, shape) => {
+        if (Array.isArray(shape)) {
+          if (!Array.isArray(value) || value.length !== shape.length) fail('approved array coverage');
+          return value.map((row, i) => present(row, shape[i]));
+        }
+        if (shape === null || typeof shape !== 'object') return value;
+        if (!value || typeof value !== 'object') fail('approved object');
+        for (const key of Object.keys(value)) if (!Object.hasOwn(shape, key)
+          && value[key] !== null && !(Array.isArray(value[key]) && value[key].length === 0)) fail('unapproved typed field');
+        return Object.fromEntries(Object.keys(shape).map(key => [key, present(value[key], shape[key])]));
+      };
+      const result = present(typed, approved);
+      if (!isDeepStrictEqual(result, approved)) fail('approved revision projection');
+      return predecessor ? result : currentFeudalAllocation(db, result);
+    }
     if (digest(data) !== m.domain_sha256) fail('typed domain digest');
     const result = orderedDocument(db, candidate(db, data, m.source_id));
     if (digest(result) !== m.document_sha256) fail('document digest');

@@ -451,7 +451,8 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
     archiveHashes, sourceHashes, ...context, dependencies: census.dependencies, dependencyReport: census.dependencyReport }
   if (!currentFacility) return predecessorInput
   const { loadCiaFacilityProjection, CIA_FACILITY_OWNER_BYTES, CIA_FACILITY_SOURCE_PATHS } = await import('./cia-facility-projection-input.mjs')
-  const { authenticateCiaFacilityRights, applyCiaFacilityScopeSuccessor } = await import('./cia-facility-rights-successor.mjs')
+  const { authenticateCiaFacilityRights, applyCiaFacilityScopeSuccessor,
+    authenticateApprovedCommandRelation, composeApprovedCommandRelation } = await import('./cia-facility-rights-successor.mjs')
   const projection = await loadCiaFacilityProjection(root, diskRead)
   projection.predecessorBytes.contract = Buffer.from(await diskRead(resolve(root, 'lore/editorial/Seoul-Scope-Contract.json')))
   const currentSourceHashes = { ...sourceHashes }
@@ -459,6 +460,8 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
   const successor = authenticateCiaFacilityRights({ baseline, rightsTransition: predecessorInput.current.rightsTransition,
     decisionBytes: CIA_FACILITY_OWNER_BYTES, predecessorBytes: projection.predecessorBytes,
     currentBytes: projection.currentBytes, sourceHashes: currentSourceHashes })
+  if (db && predecessorInput.current.entitySets.relations.includes('R:관계-원장-table3:749'))
+    return composeApprovedCommandRelation(predecessorInput, successor, authenticateApprovedCommandRelation({ db, root }))
   return applyCiaFacilityScopeSuccessor(predecessorInput, successor)
 }
 

@@ -45,3 +45,18 @@ test('failed key-order adoption rolls back schema and permits a clean retry', ()
     assert.deepEqual(orderDocumentKeys(db, 1, { a: 2 }), { a: 2 });
   } finally { db.close(); }
 });
+
+test('explicit approved successor order requires exact typed equality and retains import order', () => {
+  const db = new DatabaseSync(':memory:');
+  try {
+    db.exec('CREATE TABLE text_document(source_id INTEGER PRIMARY KEY); INSERT INTO text_document VALUES(1)');
+    initializeDocumentKeyOrder(db, [{ sourceId: 1, document: { content: [{ z: 1, a: 2 }] } }]);
+    const archive = db.prepare('SELECT * FROM document_key_order').all();
+    const typed = { content: [{ a: 2, z: 1 }, { a: 3, z: 4 }] };
+    const approvedStructure = { content: [{ z: 1, a: 2 }, { z: 4, a: 3 }] };
+    assert.throws(() => orderDocumentKeys(db, 1, typed), /E_DOCUMENT_KEY_ORDER/);
+    assert.equal(JSON.stringify(orderDocumentKeys(db, 1, typed, { approvedStructure })), JSON.stringify(approvedStructure));
+    assert.throws(() => orderDocumentKeys(db, 1, typed, { approvedStructure: { content: [] } }), /E_RECEIPT_VALUE_MISMATCH/);
+    assert.deepEqual(db.prepare('SELECT * FROM document_key_order').all(), archive);
+  } finally { db.close(); }
+});

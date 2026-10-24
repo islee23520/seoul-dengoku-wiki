@@ -2,7 +2,7 @@ import { resolve, relative } from 'node:path';
 import { isDeepStrictEqual } from 'node:util';
 import { createHash } from 'node:crypto';
 import { evidenceReader } from './evidence-reader.mjs';
-import { readScopeCurrentSource } from './scope-current-source.mjs';
+import { readScopeCurrentSource, PUBLICATION_SUCCESSOR_HEADS, PUBLICATION_EXACT_BODIES, ATLAS_DRAFT_APPROVAL, S08_WORDING_REVISION, authenticatePublicationDataSuccessor } from './scope-current-source.mjs';
 
 // Immutable receipts authenticate exact bytes, including original whitespace.
 // Current document values MUST independently reconstruct from typed authority;
@@ -14,7 +14,7 @@ export function scopeAuthenticationReader({ db, evidenceStore, root, bindings, h
   const verified = new Set();
   const snapshotDocuments = new Map();
   const reader = async path => {
-    const logicalPath = relative(base, resolve(path));
+    const logicalPath = relative(base, resolve(path)).split('\\').join('/');
     const bytes = await evidence(path);
     const snapshot = db.isTransaction && db.prepare('PRAGMA query_only').get().query_only === 1;
     if (currentSourceHashes.has(logicalPath) && !(snapshot && verified.has(logicalPath))) {
@@ -23,8 +23,25 @@ export function scopeAuthenticationReader({ db, evidenceStore, root, bindings, h
       const actual = readScopeCurrentSource({ db, logicalPath, expectedSha256, ...privateStores, predecessor: true,
         ...(snapshot ? { snapshotDocuments } : {}) });
       const original = logicalPath.endsWith('.json') ? JSON.parse(bytes) : Buffer.from(bytes).toString('utf8');
-      if (!isDeepStrictEqual(actual, original) || JSON.stringify(actual) !== JSON.stringify(original))
-        throw Error('E_SCOPE_AUTHENTICATION_TYPED_MISMATCH');
+      const approved = PUBLICATION_SUCCESSOR_HEADS[logicalPath];
+      const head = approved && db.prepare(`SELECT h.revision_id FROM document_head h
+        JOIN source_file s USING(source_id) WHERE s.logical_path=?`).get(logicalPath);
+      const successor = head?.revision_id === approved?.revision ? approved : undefined;
+      const s08Wording = logicalPath === 'lore/factions/Sixteen-States.json' && head?.revision_id === S08_WORDING_REVISION;
+      const exact = PUBLICATION_EXACT_BODIES[logicalPath];
+      const exactHead = exact && db.prepare(`SELECT h.revision_id FROM document_head h
+        JOIN source_file s USING(source_id) WHERE s.logical_path=?`).get(logicalPath);
+      const exactSuccessor = exact !== undefined && exactHead?.revision_id === exact.revision;
+      const dataSuccessor = authenticatePublicationDataSuccessor(db, logicalPath, expectedSha256, actual, original);
+      const atlasDraft = logicalPath === ATLAS_DRAFT_APPROVAL.logicalPath && actual.status === 'draft';
+      // The exact archive/current pair is independently pinned. The current head
+      // was reconstructed and integrity-checked above; old bytes remain evidence
+      // for the legacy review, never a replacement for the current authored body.
+      if (atlasDraft ? expectedSha256 !== ATLAS_DRAFT_APPROVAL.sourceSha256
+        : s08Wording ? expectedSha256 !== approved.sourceSha256
+        : exactSuccessor ? expectedSha256 !== exact.sourceSha256 : dataSuccessor ? false : successor ? expectedSha256 !== successor.sourceSha256
+        : !isDeepStrictEqual(actual, original) || JSON.stringify(actual) !== JSON.stringify(original))
+        throw Object.assign(Error('E_SCOPE_AUTHENTICATION_TYPED_MISMATCH'), { logicalPath });
       if (snapshot) verified.add(logicalPath);
     }
     return bytes;

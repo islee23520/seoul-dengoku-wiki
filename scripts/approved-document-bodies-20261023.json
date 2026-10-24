@@ -1,0 +1,31 @@
+{
+  "kind": "owner-exact-body-approval-successor",
+  "status": "approved-for-typed-draft-application",
+  "recordedBy": "st_01a1663c",
+  "rootSession": "01a163d7-7a46-7167-b246-abb88b6895b8",
+  "actualUserAnswer": "approve_pending_bodies: 두 본문 승인 (Recommended)",
+  "voteEvidence": {
+    "path": ".omo/ulw-execute/ledger.jsonl",
+    "line": 466,
+    "event": "required-exact-body-approved-resume",
+    "checkpointOpenedAt": "2026-10-23T00:51:39.909Z"
+  },
+  "proposalManifest": ".omo/evidence/fcd/domain-proposal/manifest.json",
+  "proposalManifestSha256": "c11753202e39313d70d410e9621682171b2c94e808527100d5f2fe5bf80920c0",
+  "proposalReviewSha256": "9adb9051a2edf33448cf4b079aeba787ffd7a30842bd979624c2103b3560fb57",
+  "documents": [
+    {
+      "id": "DOC:Cast-Relations",
+      "byteSha256": "a42b5fc1a265f1c61339f3ba81130f74cfe704394e479d676fca55e4f013b2b7",
+      "semanticSha256": "30c628a8f920d5ed98e0196f90f71100fb61b13e3ab2aaea0fba7f1aa351c388",
+      "predecessor": "d0aee1c4ab12eb202c65d2b98e8cbae04b669d73dd2ce4ca83162fd983565acb"
+    },
+    {
+      "id": "DOC:Offices-and-Ranks",
+      "byteSha256": "5c0e6d9cb726946efd9db00ece503cef5985e532abd7a575aa0756b86d16aea8",
+      "semanticSha256": "85fd4951e1b8c20048c3f8523d85f70c6ef5a92c64e37dbdf98efd5168d05fcd",
+      "predecessor": "57dee91f3739def14183a2d378f5fadcd3b2812acc357004a7c158673c690442"
+    }
+  ],
+  "scope": "Exact two typed draft successor bodies and bounded relation projection. Original approval and proposal artifacts remain unchanged. This approval does not claim implementation, publication, generation or final delivery."
+}
