@@ -69,8 +69,12 @@ export function listDocuments(db, selector) {
  * Never consult source_record, raw_bytes, source files, or materialized JSON. */
 export function readDocument(db, selector) {
   options(selector, true);
-  const identities = listDocuments(db, { ...selector, visibility: 'internal' })
-    .filter((row) => row.document_id === selector.documentId);
+  const identities = rows(db, `SELECT d.source_id,d.document_id,d.domain,d.slug,d.status,d.corpus_kind,
+    s.logical_path,s.sha256,s.byte_length,
+    EXISTS(SELECT 1 FROM excluded_source e WHERE e.logical_path=s.logical_path) AS excluded
+    FROM text_document d JOIN source_file s USING(source_id)
+    WHERE d.corpus_kind=? AND (? IS NULL OR d.domain=?) AND d.document_id=?
+    ORDER BY d.domain,d.slug,d.source_id`, selector.corpusKind, selector.domain ?? null, selector.domain ?? null, selector.documentId);
   if (!identities.length) return null;
   if (identities.length !== 1) fail('E_DOCUMENT_AMBIGUOUS', 'documentId is not unique in this corpus; specify domain');
   const identity = identities[0];
