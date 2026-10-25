@@ -42,6 +42,30 @@ Every `npm run test:*` script is a separate test group. Pull requests to `main` 
 
 ## Character creation tools
 
+### Owner's InkOS fork
+
+`vendor/seoul-dengoku-inkos` is a Git submodule of [the owner's fork](https://github.com/islee23520/seoul-dengoku-inkos), pinned to `730b9490690650ea41ac01035bce3f8040b0c067` on `korean-support`. This keeps third-party code beside the existing vendored packages, outside wiki source and publication inputs. The branch will be repointed to `master` separately after the Korean changes ship there; installation always uses the committed pin, not the latest remote branch.
+
+Requires Node.js >=22.16.0, Git and npm. No global InkOS or pnpm installation is needed:
+
+```sh
+npm run inkos:install                     # initialize pin, pnpm 10 frozen install and build
+npm run inkos -- --help
+npm run inkos -- --version
+npm run test:inkos                        # installed pin, CLI and scratch Korean project smoke check
+```
+
+Create InkOS projects outside the wiki checkout. The wrapper preserves the caller's working directory, including when npm selects this repository using `--prefix`:
+
+```sh
+cd /path/to/separate-writing-directory
+npm --prefix /path/to/seoul-dengoku-wiki run inkos -- init --lang ko
+```
+
+InkOS runs as a separate process. Do not give it `data/canonical/wiki-cast.sqlite` or private databases to read or write. It does not participate in wiki generation, approval, publication or deployment. The existing [candidate-only, read-only database adapter](scripts/inkos-adapter/README.md) remains the boundary; this integration does not connect InkOS directly to it or change its approval rules. LLM configuration remains global at `~/.inkos/.env`; never commit credentials. Help, version and project initialization do not require model calls.
+
+GitHub Actions keeps its default non-recursive checkout. Woodpecker explicitly disables recursive submodule cloning for CI and deployment; the runtime Dockerfile copies only the required `vendor/*.tgz` packages, never the InkOS source or build.
+
 Character creation sheets and portrait generation tools are maintained in [seoul-dengoku-tools](https://github.com/islee23520/seoul-dengoku-tools), not in a sibling checkout required by this wiki. Reference the [character sheet tool](https://github.com/islee23520/seoul-dengoku-tools/tree/main/TOOL/tools/sheet-local) and [portrait generation tools](https://github.com/islee23520/seoul-dengoku-tools/tree/main/TOOL/avatar-gen/portrait) through their remote GitHub URLs. The wiki owns the character canon and published sheets; the tools repository owns their authoring tools.
 
 ## Contributing

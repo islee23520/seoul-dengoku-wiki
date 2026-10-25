@@ -58,6 +58,7 @@ seoul-dengoku-wiki/
 - Vite base는 `/wiki/`, `@`는 `src`, dev port는 5174다. `/wiki/api/documents`는 8788, 나머지 `/wiki/api`는 8787로 proxy한다.
 - 공개 문서 저작은 SQLite-first다. `.json` 이름은 DB 논리 ID이며 공개 JSON은 생성물이다. 편집 절차는 `lore/AUTHORING-JSON.md`를 따른다.
 - `@seoul-dengoku/document-renderer`, `@seoul-dengoku/shared-web-ui`는 `vendor/*.tgz` 의존성이다.
+- `vendor/seoul-dengoku-inkos`는 소유자의 InkOS 포크 서브모듈이다. `npm run inkos:install`로 고정 commit을 pnpm 10으로 설치·빌드하고 `npm run inkos -- --help`로 실행한다. 별도 작업 디렉터리에서 별도 프로세스로 사용하며 공개 정본·비공개 DB를 읽거나 쓰도록 연결하지 않는다. `scripts/inkos-adapter/README.md`의 후보 전용·읽기 전용 경계는 그대로 유지한다. 위키 검사·생성·배포 입력에 포크를 포함하지 않는다.
 - `npm test`는 제한된 suite다. 전체 Vitest와 추가 Node 검사는 `npm run test:parent`가 실행한다.
 - 아래 기존 소유자 정책은 원문 그대로 유지하며 계속 적용한다.
 

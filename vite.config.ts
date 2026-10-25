@@ -10,7 +10,7 @@ export default defineConfig({
   },
   server: {
     port: 5174,
-    watch: { ignored: ['**/.omo/**'] },
+    watch: { ignored: ['**/.omo/**', '**/vendor/seoul-dengoku-inkos/**'] },
     proxy: {
       '/wiki/api/documents': 'http://127.0.0.1:8788',
       '/wiki/api': 'http://127.0.0.1:8787',

@@ -4,6 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "inkos:install": "node scripts/inkos-install.mjs",
+    "inkos": "node scripts/inkos.mjs",
+    "test:inkos": "node --test scripts/test-inkos.mjs",
     "dev": "vite",
     "generate": "node scripts/generate-release.mjs",
     "generate:portrait-tokens": "node scripts/generate-portrait-tokens.mjs",
