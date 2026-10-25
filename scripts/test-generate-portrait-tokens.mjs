@@ -102,6 +102,32 @@ test('completed portrait staging followed by failure preserves every live input 
   } finally { await rm(f.root, { recursive: true, force: true }) }
 })
 
+test('existing token stateId follows the current person detail after a state move', async () => {
+  const f = await fixture()
+  try {
+    const file = [...f.originals.keys()][0]
+    const previous = f.originals.get(file)
+    const movedState = 'S99'
+    assert.notEqual(previous.stateId, movedState)
+    await runRelease({ root: f.root, gate, ownership: f.ownership, stage: async context => {
+      const detail = { ...f.details.get(file), state: movedState }
+      await context.write('public/person-details/' + file, JSON.stringify(detail))
+      await context.run([process.execPath, '--input-type=module', '-e',
+        `import { generatePortraitTokens } from ${JSON.stringify(generator)}; await generatePortraitTokens(${JSON.stringify(f.root)})`])
+    } })
+    const next = JSON.parse(await readFile(join(f.root, tokenPath(file)), 'utf8'))
+    assert.equal(next.stateId, movedState)
+    assert.equal(next.personId, previous.personId)
+    assert.equal(next.name, previous.name)
+    for (const key of ['approval', 'image', 'style', 'imageReview', 'references', 'variantId']) if (key in previous) assert.deepEqual(next[key], previous[key], file + ':' + key)
+    for (const [group, slots] of Object.entries(previous.slots ?? {})) {
+      for (const [key, slot] of Object.entries(slots)) {
+        if (slot.value != null && slot.status !== 'unknown' && slot.status !== 'derived-proposal') assert.deepEqual(next.slots[group][key], slot, file + ':' + group + '.' + key)
+      }
+    }
+  } finally { await rm(f.root, { recursive: true, force: true }) }
+})
+
 test('portrait worker rejects direct live-output use before reading or writing inputs', async () => {
   const root = await mkdtemp(join(tmpdir(), 'portrait-token-no-stage-'))
   try {
