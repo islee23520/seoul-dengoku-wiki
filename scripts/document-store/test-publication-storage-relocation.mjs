@@ -94,7 +94,7 @@ test('production loader does not accept a caller-created manifest even with matc
 });
 
 test('manifest currency advance rejects the previous anchor without relaxing verification', async t => {
-  assert.equal(PUBLICATION_PROVISION_SHA256, '22b906bb4b859c6877795112c36c1fe5e26bb09d47887427b83a5fc4bdf6265a');
+  assert.equal(PUBLICATION_PROVISION_SHA256, '40c1a496cf76753dcef703996debfe9cc8f796483ae299cb8b91d4aecbba9782');
   const f = await fixture(t);
   const previousFixturePin = hash(f.manifestBytes);
   const current = JSON.parse(f.manifestBytes);
