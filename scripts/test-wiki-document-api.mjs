@@ -202,12 +202,19 @@ test('HTTP fails closed for private, unadmitted, incomplete, historical, stale a
     const body = await response.json();
     if (locale === 'ko') assert.match(body.reviewText, /changed/u);
     assert.doesNotMatch(JSON.stringify(body), /SECRET-|raw_bytes|source_record/u);
+    const list = await (await fetch(`${base}?locale=${locale}`)).json();
+    assert.ok(list.some(entry => entry.route === `${locale === 'ko' ? '' : '/en'}/world/Stale`));
   }
   editDocumentOnConnection(f.db, { documentId: 'id-Stale', domain: 'technology', corpusKind: 'current',
     expectedRevision: edited.revision, actor: 'fixture', reason: 'next unreviewed edit',
     changes: [{ type: 'setText', nodeId: 'paragraph', slot: 'text/ko', value: 'not admitted' }] });
   assert.equal((await fetch(`${base}/world/Stale`)).status, 404);
   assert.equal((await (await fetch(base)).json()).length, 3);
+  for (const locale of ['ko', 'en']) {
+    assert.equal((await fetch(`${base}/world/Stale?locale=${locale}`)).status, 404);
+    const list = await (await fetch(`${base}?locale=${locale}`)).json();
+    assert.equal(list.some(entry => entry.route.endsWith('/world/Stale')), false);
+  }
 });
 
 test('request boundary rejects malformed locales, SQL, raw archives, paths and write methods', async (t) => {
