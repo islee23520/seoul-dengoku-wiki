@@ -4,6 +4,7 @@
 인물·조직의 가치 축, 종교 분화, 음식·복식과 구전 원천을 관리한다.
 
 ## WHERE TO LOOK
+아래 `.json` 이름은 SQLite 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
 | 작업 | 위치 |
 |---|---|
 | 가치관·욕망·정책 정의 | `Values-and-Policy-Scales.json` |
@@ -15,7 +16,7 @@
 | 개막 시점·구전 제목 | `../chronology/Scenario-Timeline.json` |
 
 ## CONVENTIONS
-- 선정 점수 3: 구조화 원천 비율 2 + 자체 schema 1. update mode의 기존 문화 계약 경계를 유지한다.
+- 도메인별 과거 자료와 현재 head·승인 상태를 대조하며, 삭제된 JSON 원천을 다시 만들지 않는다.
 - 가치관 축은 `−100..100`이며 음수는 U+2212다. 0과 미확인을 구분한다.
 - 가치관·욕망·정책의 축 개수는 정의 문서와 각 수치 schema를 대조한다. 과거 안내의 개수를 일괄 적용하지 않는다.
 - 지도자가 바뀌면 조직의 헌장 수치를 재검토한다. 국가 성격을 영구 고정하지 않는다.

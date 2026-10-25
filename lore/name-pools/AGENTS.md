@@ -4,6 +4,7 @@
 인물의 영구 ID, 명명 출처, 생일·가계와 가치관 수치를 보관하는 구조화 데이터 도메인이다.
 
 ## WHERE TO LOOK
+아래 `.json` 이름은 SQLite 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
 | 작업 | 위치 |
 |---|---|
 | 영구 ID 발급·승계 | `person-id-registry.json`, `issue-person-ids.mjs`, `person-id-values-successor.mjs` |
@@ -16,7 +17,7 @@
 | 검토 전 산출물 | `roster-100.json`, `cast-backfill-draft.*` |
 
 ## CONVENTIONS
-- 선정 점수 8: 파일 수 3 + 구조화 원천 비율 2 + 자체 계약 1 + LSP 대상 실행 모듈의 심볼 밀도 2. 명명·신원 발급이라는 독립 도메인이다.
+- 도메인별 과거 자료와 현재 head·승인 상태를 대조하며, 삭제된 JSON 원천을 다시 만들지 않는다.
 - 항렬 원천의 `id`·`schema`·`note`·`sources`를 유지한다. 실제 검증 코드와 설명이 충돌하면 판정 구현을 확인한다.
 - 출처는 URL·접근일·원문 인용·evidence·live_check를 연결한다. 번역·요약은 원문 인용이 아니다.
 - 인구 수치를 담은 행에는 그 숫자를 포함하는 출처 인용이 필요하다.

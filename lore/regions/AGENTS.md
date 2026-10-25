@@ -4,6 +4,7 @@
 선택 경계의 동별 저작 데이터와 역 내부 상태, 선거구 작위·공간 출처를 관리한다.
 
 ## WHERE TO LOOK
+아래 `.json` 이름은 SQLite 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
 | 작업 | 위치 |
 |---|---|
 | 단위·판본·라이선스 | `README.md`, `sources/selection.json` |
@@ -16,7 +17,7 @@
 | 서울 범위·재배치 승인 | `../editorial/Seoul-Scope-Contract.json`, `../editorial/Seoul-Relocation-Ledger.json` |
 
 ## CONVENTIONS
-- 선정 점수 6: 파일 수 3 + 구조화 원천 비율 2 + 자체 schema 1. 기존 공간 원천 경계를 update mode에서 유지한다.
+- 도메인별 과거 자료와 현재 head·승인 상태를 대조하며, 삭제된 JSON 원천을 다시 만들지 않는다.
 - 기존 동 데이터는 2026-07-01 선택 경계의 427동·25구 판본이다. 최신 공식 경계 인증으로 부르지 않는다.
 - 원래 선택 합집합은 606,223,725.0069752㎡다. 이 판본 재생성 시 범위 보존을 확인한다.
 - 위치·태그는 관측, 경계·면적·소속은 계산, 붕괴 뒤 주민·사건은 창작으로 구분한다.

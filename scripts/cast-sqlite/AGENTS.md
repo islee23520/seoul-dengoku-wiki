@@ -1,42 +1,42 @@
 # 인물 SQLite 작업 지침
 
 ## OVERVIEW
-인물 원천의 정규화 저장본과 typed document reader를 다룬다. 점수 9이며 319개 파일의 독립 SQLite 도메인이다.
+공개 SQLite 저작 정본과 typed document reader·편집·외부 export를 다룬다. 삭제된 JSON에서 정본을 재구축하지 않는다.
 
 ## WHERE TO LOOK
 | 작업 | 위치 | 계약 |
 | --- | --- | --- |
 | 사용법·제한 | `README.md`, `TEXT-CORPUS-GAPS.md` | current·historical·unresolved와 지원 범위 |
-| CLI 생성 | `build.mjs` | 입력 snapshot, 출력 위치, mapper orchestration |
+| 문서 편집·외부 export | `document-cli.mjs`, `build.mjs` | 정본 head·revision, checkout 밖 새 출력 |
 | 연결·schema | `db.mjs`, `schema.sql`, `current-*.sql` | 버전, application_id, 외래 키 |
-| 입력 봉인 | `sources.mjs`, `source-archive.mjs` | HEAD 바이트, tracking, 경로·해시 |
+| 과거 입력 봉인 | `sources.mjs`, `source-archive.mjs` | 과거 provenance이며 현재 저작 권위가 아님 |
 | 도메인 매핑 | `current-*.mjs`, `*-document.mjs` | typed 열과 원천 포인터 |
 | 텍스트 원천 | `text-corpus-manifest.mjs`, `text-corpus.mjs`, `text-data.mjs` | 열거된 corpus, 복원 일치성 |
 | 편입·누락 검사 | `coverage-contract.mjs`, `source-closure.mjs` | coverage와 승인 분리 |
-| 조회·검증 | `query.mjs`, `verify.mjs` | DB 단독 검사와 원천 포함 검사 |
+| 조회·검증 | `query.mjs`, `verify.mjs`, `current-authority.mjs` | 현재 SQLite storage·head·privacy |
 
 ## CONVENTIONS
 - Node.js 24.15.0 이상과 내장 `node:sqlite`의 `DatabaseSync`를 사용한다.
 - `db.mjs`의 `SCHEMA_VERSION`은 5, `APPLICATION_ID`는 `0x57435351`이다.
 - 도메인 mapper의 열 목록, SQL schema, 저장·복원·검증 코드를 함께 대조한다.
-- `DATA_SOURCE_PATHS`, `SCRIPT_SOURCE_PATHS`, text manifest로 입력을 명시한다. 디렉터리 탐색으로 입력 집합을 늘리지 않는다.
-- 원천 checkout의 관련 입력은 Git HEAD 바이트와 일치해야 한다. 관련 없는 수정은 dirty 검사 대상이 아니다.
-- 원천 내부 출력은 `data/canonical/wiki-cast.sqlite`만 허용한다. 임시 DB는 checkout 밖의 새 경로를 사용한다.
-- 정본 경로는 재빌드 교체가 가능하다. 다른 출력과 receipt는 기존 경로를 덮어쓰지 않는다.
+- 현재 정본 계약은 `README.md`와 루트 `lore/AUTHORING-JSON.md`를 따른다. 과거 source manifest를 현재 파일 입력 목록으로 쓰지 않는다.
+- 조회·편집·생성은 SQLite 현재 head를 기준으로 한다. 삭제된 JSON이나 Git blob 대조로 현재성 검사를 대체하지 않는다.
+- `data/canonical/wiki-cast.sqlite`는 출력 대상이 아니다. export는 checkout 밖 아직 없는 경로로만 한다.
+- 정본은 지원되는 typed CLI로 편집한다. export 파일로 정본을 덮어쓰거나 임의 SQL로 편집 계약을 우회하지 않는다.
 - `withTransaction()` callback은 동기식이다. 중첩 transaction과 Promise 반환을 허용하지 않는다.
-- schema 2·3·4 DB를 제자리 migration하지 않는다. 승인된 원천에서 새 schema 5 DB를 만든다.
+- 과거 schema DB를 현행 정본으로 승격하거나 새 DB로 재구축하지 않는다. 버전·이력 계약은 현재 reader와 README를 확인한다.
 - `local-corpus`와 renderer anchor의 `published`는 공개 승인 판정이 아니다.
 
 ## COMMANDS
 저장소 루트에서 실행하며 옵션 예시는 README를 따른다.
 ```bash
-npm run cast:build -- --output data/canonical/wiki-cast.sqlite
+npm run cast:build -- --output /tmp/wiki-cast-new.sqlite
 npm run cast:query -- --db data/canonical/wiki-cast.sqlite person --id K1022
 npm run cast:verify -- --db data/canonical/wiki-cast.sqlite
 npm run test:cast-sqlite
 npm run test:cast-sqlite:readme
 ```
-원천 포함 full verify는 `--source-root`를 추가한다. DB 단독 verify는 원천 최신성을 증명하지 않는다.
+`cast:verify`는 현재 SQLite storage·head·privacy를 읽기 전용 검사한다. 과거 JSON freshness·offline/full 구분은 현행 검증 계약이 아니다.
 
 ## ANTI-PATTERNS
 - DB 생성·복사·검증 성공을 owner approval, 공개, 배포, 게임 구현 승인으로 표시하지 않는다.

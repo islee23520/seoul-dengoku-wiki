@@ -4,6 +4,7 @@
 인물 카드·국가별 명부·관계 원문·공개 등록 계약을 관리한다.
 
 ## WHERE TO LOOK
+아래 `.json` 이름은 SQLite 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
 | 작업 | 위치 |
 |---|---|
 | 인물 색인·게시 장부 | `Cast-Index.json`, `Cast-Index-S4.json` |
@@ -15,12 +16,12 @@
 | 새 profile 계약 | `../editorial/Character-System-Contract.json` |
 
 ## CONVENTIONS
-- 선정 점수 6: 파일 수 3 + 구조화 원천 비율 2 + 자체 schema 1. 기존 인물 등록 경계를 update mode에서 보존한다.
+- 도메인별 과거 자료와 현재 head·승인 상태를 대조하며, 삭제된 JSON 원천을 다시 만들지 않는다.
 - `### 인물 <이름>` 아래 계약 칸, 정치 칸, 생애·관직·훈련·일화·가문·관계·야망·공포·개입 산문을 둔다.
 - 실제 훈련은 서사 근거가 있을 때만 기록한다. 카드 계약의 옛 GURPS 설명은 신규 profile 산식이 아니다.
 - 칸 표시는 (원문 사실)·(창작 제안)·(자동 파생값)·(미확인)을 구분한다.
 - 장부 숫자 부록은 본문이 아닌 metadata다. 가치관·욕망은 `../name-pools/values-cast.json`과 맞춘다.
-- 생년월일은 `cast-birthdays.json`, 만 나이 기준은 `2126-12-31`이다. 개막 월일을 임의 생성하지 않는다.
+- 생년월일의 논리 ID는 `../name-pools/cast-birthdays.json`, 만 나이 기준은 `2126-12-31`이다. 개막 월일을 임의 생성하지 않는다.
 - 2026년 사건은 당시 살아 있던 선대와 연결하고 친생·입양·가계 연대를 대조한다.
 - 음수는 이웃 카드와 같은 `−`(U+2212)를 사용한다.
 - 무소속 카드의 `캐릭터 ID` 계약과 전 인물 영구 registry ID를 혼동하지 않는다. 기존 국가 카드에 표시 칸을 일괄 소급하지 않는다.

@@ -17,12 +17,12 @@
 | 정본 계약·편집 절차 | `lore/AUTHORING-JSON.md`, `WORLD_BUILDING_GUIDE.md` |
 | 현재 검증 경로 | `scripts/lore-json-validate.mjs --strict`(현재·예시 문서를 SQLite에서 읽는다), `scripts/gate.mjs`, cast-sqlite 검증 슈트 |
 | 코퍼스 목차 | `README.md`(한국어 상대 링크) |
-| 하위 도메인 지침 | `bestiary/`, `characters/`, `factions/`, `places/`, `regions/`, `relations/`, `culture/`, `name-pools/` 각 `AGENTS.md` |
+| 하위 도메인 지침 | `bestiary/`, `characters/`, `factions/`, `places/`, `regions/`, `culture/`, `name-pools/` 각 `AGENTS.md`; 관계 검증은 `relations/validate.mjs` |
 | 구 레지스트리 지표 | 적대 집단 G01–G26, 운영 가문 HC01–HC22/HP01–HP10, 합성체 H/F/V01–16, 외부 극장 XT01–XT05, 배치 Mxxx/Bxxx — 논리 식별자 체계로 존속 |
 
 ## 규약
 
-- 엔티티 ID는 영구적이고 다시 매기지 않는다. 인물 `K001`–`K412`(명부 행 순서), 국가 `S01`–`S16`, 집단·가문·합성체는 위 표의 접두어를 따른다. 은퇴·보존 표기는 ID 변경이 아니다.
+- 엔티티 ID는 영구적이고 다시 매기지 않는다. 인물 현재 분모·보존 ID는 SQLite disposition과 `lore/AUTHORING-JSON.md`를 확인한다. `K001`–`K412` 같은 옛 범위나 명부 행 순서로 ID를 부여하지 않는다.
 - 산문 계약: 한국어 3인칭 제한한다체 서사, 합니다체 안내. `source_kind`는 사실·추론·허구를 구분하고 단락마다 인과는 하나만 둔다.
 - 저작 상태 구분: 확정·초안·제안·보존은 서로 다른 상태고, 공개 렌더·검증 통과는 승인 증거가 아니다(가이드 증거 위계 준수).
 

@@ -4,6 +4,7 @@
 서울 지도 기사, 역 식별·연결·별칭과 건물 재사용 계약을 관리한다.
 
 ## WHERE TO LOOK
+아래 `.json` 이름은 SQLite 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
 | 작업 | 위치 |
 |---|---|
 | 현행 지도 기사·수직 환경 | `World-and-Subway-Layers.json` |
@@ -15,10 +16,10 @@
 | 철도 연결 | `connected-rail-stations.json`, `regular-line-adjacency.json`, `gtx-project-connections.json` |
 | 역 바인딩·지배 예외 | `regional-station-bindings.json`, `station-control-overrides.json` |
 | 별칭 후보 | `Station-Alias-Candidates.json`, `test-station-alias-candidates.mjs` |
-| 겨울 기후 근거 | `sources/` |
+| 겨울 기후 근거 | DB에 보존된 출처·provenance와 루트 `data/geography/` |
 
 ## CONVENTIONS
-- 선정 점수 5: 구조화 원천 비율 2 + 자체 schema 1 + 실행 모듈 심볼 밀도 2. 기존 지도 원천 경계를 update mode에서 유지한다.
+- 도메인별 과거 자료와 현재 head·승인 상태를 대조하며, 삭제된 JSON 원천을 다시 만들지 않는다.
 - 334역은 기존 이동 그래프 목록, 427동은 선택 판본의 면적 분모다. 최신 작위 슬롯 수로 서로 대체하지 않는다.
 - 역·층·터널 연결과 행정·작위 폴리곤을 별도 모델로 다룬다.
 - 역별 개막 내부 상태는 `../regions/station-interiors.json`과 연결한다.

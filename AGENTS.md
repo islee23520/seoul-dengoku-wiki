@@ -1,21 +1,21 @@
 # PROJECT KNOWLEDGE BASE
 
 **Generated:** 2026-10-22
-**Commit / Branch:** 3f870385451b / research/s08-preview-st01a15a59
+**Snapshot:** 3f870385451b 기준 초안; 현재 경로·계약은 아래 정본 문서와 구현을 확인한다.
 
 ## OVERVIEW
-서울 내부 세계를 다루는 대전략·TRPG 기반 CRPG 위키다. JSON 원천과 승인된 공개 투영을 React 18·Vite·TypeScript 화면, Node API, SQLite 조회 계층이 소비한다.
+서울 내부 세계를 다루는 대전략·TRPG 기반 CRPG 위키다. SQLite 저작 정본과 승인된 공개 투영을 React 18·Vite·TypeScript 화면, Node API, SQLite 조회 계층이 소비한다.
 
 ## STRUCTURE
 ```text
 seoul-dengoku-wiki/
 ├── WORLD_BUILDING_GUIDE.md  # 현행 집필·승인 기준
-├── lore/                   # Atlas·인물·정치·지리 JSON 원천
+├── lore/                   # SQLite 논리 문서의 도메인 지침
 ├── src/                    # 화면과 generated/·generated-private/ 투영
 ├── scripts/                # 승인·생성·조회·검증 파이프라인
 ├── server/                 # 읽기 전용 공개 JSON·문서 API
 ├── deploy/                 # 외부 owner 호출과 배포 계약
-├── data/                   # 지리 입력·갱신 기록·로컬 정본 DB
+├── data/                   # 지리 입력·갱신 기록·공개 정본 DB
 ├── public/                 # 공개 생성 JSON과 이미지·정적 asset 혼재
 ├── snapshots/build-inputs/ # 외부 commit/hash 고정 입력
 ├── assets/                 # 문장 모티프 JSON·SVG 원본
@@ -23,7 +23,7 @@ seoul-dengoku-wiki/
 └── .omo/                   # 비공개 작업·증거·임시 자료
 ```
 - `public/`, `src/generated/`, `src/generated-private/`: `npm run generate`로 공개 승인 검사 후 재생성한다.
-- `data/canonical/wiki-cast.sqlite`: `npm run cast:build`로 재빌드한다. `data/geography/`와 갱신 기록은 일괄 생성 출력이 아니다.
+- `data/canonical/wiki-cast.sqlite`가 저작 정본이다. `cast:build`는 checkout 밖 새 경로로 export하며 정본 덮어쓰기를 거부한다.
 - `snapshots/build-inputs/`: 고정 입력이며 `npm run generate`의 소비 대상이다. 이 명령이 외부 원본을 다시 수집한다고 해석하지 않는다.
 - `.omo/`: 공개 배포 제외. `/init-deep`는 지침·snapshot 갱신 진입점이며 `init-deep/{reports,digests}`는 완료 후 제거한다.
 
@@ -31,9 +31,9 @@ seoul-dengoku-wiki/
 | 작업 | 위치 | 경계 |
 | --- | --- | --- |
 | 세계관 집필·검토 | `WORLD_BUILDING_GUIDE.md`, `lore/AGENTS.md` | 현행 승인본 우선 |
-| Atlas 본문 투영 | `lore/World-Narrative-Atlas.json`, `scripts/world-atlas-render.mjs` | Atlas 소유 문서는 원천에서 수정 |
-| 인물 신원·등록 | `lore/characters/Cast-Profile-Contract.md`, `lore/name-pools/person-id-registry.json` | 공개 본문과 발급 원장 구분 |
-| 작위·보유권 | `lore/regions/seoul-electoral-titles.json`, `lore/relations/personal-holdings.json` | 정치 ID와 지리 작위 분리 |
+| Atlas 본문 투영 | SQLite 논리 ID `lore/World-Narrative-Atlas.json`, `scripts/world-atlas-render.mjs` | 정본 편집은 `lore/AUTHORING-JSON.md` 준수 |
+| 인물 신원·등록 | `lore/characters/Cast-Profile-Contract.md`, `lore/name-pools/AGENTS.md` | SQLite 논리 원장과 공개 본문 구분 |
+| 작위·보유권 | `lore/regions/AGENTS.md`, `scripts/cast-sqlite/README.md` | 논리 ID·정치 ID·지리 작위 분리 |
 | 화면·라우팅 | `src/main.tsx`, `src/App.tsx`, `src/AGENTS.md` | BrowserRouter basename `/wiki` |
 | 기사 본문 | `src/pages/ArticlePage.tsx` | locale별 generated JSON glob |
 | 공개 생성·승격 | `scripts/generate-release.mjs`, `scripts/AGENTS.md` | stage·journal·publication admission |
@@ -43,21 +43,20 @@ seoul-dengoku-wiki/
 | 배포·허용 산출물 | `deploy/README.md`, `artifact-allowlist.json` | 외부 owner가 release·rollback 수행 |
 
 ## CODE MAP
-Refs는 선언 제외 LSP 관측치다. TS 프로젝트 범위와 JS 전역 탐색 범위가 같다고 가정하지 않는다.
+현재 심볼 위치·호출자는 LSP와 구현에서 확인한다. 과거 스캔의 줄 번호·참조 수는 현재 계약이 아니다.
 
-| Symbol | Type | Location | Refs | 역할 |
-| --- | --- | --- | --- | --- |
-| `sha256` | function-valued constant | `scripts/seoul-scope.mjs:66` | 777 | scope·승인 원천 무결성 |
-| `openReadOnly` | function | `scripts/cast-sqlite/db.mjs:86` | 10 | schema·application_id 검사 |
-| `resolveRelations` | function | `lore/relations/validate.mjs:9` | 3 | 관계 양끝 이름·영구 ID 해석 |
-| `resolveVassals` | function | `lore/relations/validate.mjs:32` | 4 | 현행 봉속과 과거 업무 구분 |
-| `toWikiPath` | exported const function | `src/wikiRouting.ts:8` | 1 | native href의 `/wiki` 처리 |
-| `createMapBridge` | function | `src/components/mapBridge.ts:73` | 3 | 지도 transport 수명·선택 관리 |
-| `CharacterProfile` | component | `src/pages/PersonDetailPage.tsx:92` | 1 | 공개 현재 인물 수치 표시 |
+| 영역 | 현재 구현 |
+| --- | --- |
+| SQLite 문서 list/read/edit | `scripts/cast-sqlite/document-cli.mjs` |
+| 공개 정본 검증 | `scripts/cast-sqlite/current-authority.mjs` |
+| 관계 검증 | `lore/relations/validate.mjs` |
+| 지도 transport | `src/components/mapBridge.ts` |
+| 공개 인물 상세 | `src/pages/PersonDetailPage.tsx` |
+| 편집 초안 adapter | `scripts/inkos-adapter/README.md` |
 
 ## CONVENTIONS
-- Vite base는 `/wiki/`, `@`는 `src`, dev port는 5174다. `/wiki/api`는 `127.0.0.1:8787`로 proxy한다.
-- 공개 문서 본문은 JSON-first다. README와 비공개 계약 Markdown까지 금지하는 규칙은 아니다.
+- Vite base는 `/wiki/`, `@`는 `src`, dev port는 5174다. `/wiki/api/documents`는 8788, 나머지 `/wiki/api`는 8787로 proxy한다.
+- 공개 문서 저작은 SQLite-first다. `.json` 이름은 DB 논리 ID이며 공개 JSON은 생성물이다. 편집 절차는 `lore/AUTHORING-JSON.md`를 따른다.
 - `@seoul-dengoku/document-renderer`, `@seoul-dengoku/shared-web-ui`는 `vendor/*.tgz` 의존성이다.
 - `npm test`는 제한된 suite다. 전체 Vitest와 추가 Node 검사는 `npm run test:parent`가 실행한다.
 - 아래 기존 소유자 정책은 원문 그대로 유지하며 계속 적용한다.
@@ -77,7 +76,7 @@ Refs는 선언 제외 LSP 관측치다. TS 프로젝트 범위와 JS 전역 탐�
 - MongoDB 파생 조회물을 역방향으로 편집해 lore 원천에 반영하지 않는다.
 
 ## UNIQUE STYLES
-- 인물 수치 계약은 `lore/editorial/Character-System-Contract.json`이다. current/history와 미확인 값을 구분한다.
+- 인물 수치 계약의 논리 ID는 `lore/editorial/Character-System-Contract.json`이다. 비공개 editorial·Soul DB는 `WORLD_BUILDING_GUIDE.md`의 별도 경로를 따른다.
 - 정치 ID·정치 세력·지리 왕국·작위 보유권은 서로 다른 계약이며 자동 대응시키지 않는다.
 - 기사 본문은 현재 locale별 generated JSON을 읽는다. 문서 API의 존재만으로 전면 API 렌더링이라고 설명하지 않는다.
 
@@ -91,7 +90,7 @@ npm test
 npm run test:parent
 npm run test:lore-json
 npm run test:cast-sqlite
-npm run cast:build
+npm run cast:build -- --output /tmp/wiki-cast-new.sqlite
 npm run cast:verify
 npm run test:contract
 npm run check:artifacts
@@ -102,6 +101,6 @@ node server/wiki-api.mjs
 ## NOTES
 - release lock은 Python `fcntl.flock`을 사용한다. Windows에서 generate/build의 즉시 실행 가능성을 단정하지 않는다.
 - release lock은 협조하는 generate/build만 보호한다. 생성 중 dev·직접 tsc/vite reader를 중지한다.
-- cast-sqlite는 Node.js >=24.15.0이 필요하다. 임시 DB는 checkout 밖 새 경로에 두며 정본 DB 경로만 재빌드 교체한다.
-- lore CI는 Node 22, SQLite CI는 24.15.0, Woodpecker는 26을 사용한다. 과거 배포 README의 버전보다 현행 workflow를 확인한다.
+- cast-sqlite는 Node.js >=24.15.0이 필요하다. export는 checkout 밖 아직 없는 경로만 허용하며 SQLite 정본을 재빌드 교체하지 않는다.
+- lore·SQLite CI와 Woodpecker는 현재 Node 26을 사용한다. 버전 변경 시 현행 workflow를 확인한다.
 - build/gate/test는 MongoDB 없이 동작한다. API 기본값은 `PORT=8787`, `HOST=0.0.0.0`, `DATA_DIR=public/`다.

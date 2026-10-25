@@ -4,6 +4,7 @@
 안정 정치 ID, 지도자·가문·회랑 서사를 관리하며 지리 작위와 구분한다.
 
 ## WHERE TO LOOK
+아래 `.json` 이름은 SQLite 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
 | 작업 | 위치 |
 |---|---|
 | S01–S16 정치 명부 | `Sixteen-States.json` |
@@ -15,7 +16,7 @@
 | 현재 봉속·궁정·보유권 | `../relations/relations.json`, `../relations/personal-holdings.json` |
 
 ## CONVENTIONS
-- 선정 점수 3: 구조화 원천 비율 2 + 자체 schema 1. update mode에서 정치 ID 경계 안내를 유지한다.
+- 도메인별 과거 자료와 현재 head·승인 상태를 대조하며, 삭제된 JSON 원천을 다시 만들지 않는다.
 - S01–S16은 기존 정치 ID다. 현재 세 정치 세력·중립 지도 및 지리 왕국의 개수와 같다고 간주하지 않는다.
 - `../relations/validate.mjs`는 국가 ID·등급·명부 관계를 교차 검증한다.
 - 대한민국정부·규격맹·종교 연합의 중심 권역은 각 구성원의 주거지나 전역 독점 소유를 뜻하지 않는다.
