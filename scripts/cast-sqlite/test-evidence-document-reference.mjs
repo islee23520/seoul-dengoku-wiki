@@ -8,6 +8,7 @@ import { mapTextData } from './text-data.mjs';
 import { readDocument } from './document-read.mjs';
 import { flattenJson } from './sources.mjs';
 import { readEvidenceDocumentReference } from './evidence-document-reference.mjs';
+import { scopeAuthenticationReader } from '../document-store/scope-authentication-reader.mjs';
 
 test('reference arguments reject before touching storage', () => {
   const db = { prepare() { throw new Error('unexpected storage access'); } };
@@ -92,7 +93,22 @@ test('only an independently pinned sealed successor resolves, with typed integri
     assert.throws(() => readEvidenceDocumentReference(guarded, pin), { code: 'E_REFERENCE_INTEGRITY' });
     db.exec('ROLLBACK; DELETE FROM document_revision_seal');
     assert.throws(() => readEvidenceDocumentReference(guarded, pin), { code: 'E_REFERENCE_AUTHORITY' });
+    db.exec("INSERT INTO document_revision_seal VALUES('successor'); UPDATE document_revision SET parent_revision=NULL");
+    assert.deepEqual(readEvidenceDocumentReference(guarded, { logicalPath: 'source', expectedSha256 }).document, document);
   } finally { db.close(); }
+});
+
+test('historical evidence not selected as current remains byte exact through the caller', async () => {
+  // Given: a receipt outside the independently selected current-source set.
+  const bytes = Buffer.from('{ "historical": true }\n');
+  const sha256 = createHash('sha256').update(bytes).digest('hex');
+  const reader = scopeAuthenticationReader({ root: '/fixture',
+    db: { prepare() { throw Error('no current document query expected'); } },
+    evidenceStore: { getEvidence(identity, pin) {
+      assert.equal(identity, 'receipt'); assert.equal(pin, sha256); return bytes;
+    } }, bindings: new Map([['review.json', { identity: 'receipt', sha256 }]]), currentSourceHashes: new Map() });
+  // When / Then: the actual caller returns the original bytes, not reconstructed JSON.
+  assert.deepEqual(await reader('/fixture/review.json'), bytes);
 });
 
 test('actual unchanged typed documents resolve source pins without archive reads', {

@@ -1,4 +1,5 @@
 import { readEvidenceDocumentReference } from '../cast-sqlite/evidence-document-reference.mjs';
+import { readReferenceSuccessor } from './reference-successor-reader.mjs';
 import { orderDocumentKeys } from '../cast-sqlite/document-key-order.mjs';
 import { readPersonMappingCurrentSource } from './person-mapping-current-source.mjs';
 import { readScopeContract, SCOPE_CONTRACT_SOURCE_SHA256 } from '../cast-sqlite/scope-contract-store.mjs';
@@ -58,146 +59,9 @@ import { readEditorialVerificationDocument, EDITORIAL_VERIFICATION_DOCUMENT_HASH
 import { EDITORIAL_ENVELOPE_SOURCE_HASHES } from './editorial-envelope-documents.mjs';
 import { readApprovedDataSource } from '../cast-sqlite/data-source-editor.mjs';
 import { isDeepStrictEqual } from 'node:util';
-import { readDocumentRevision } from '../cast-sqlite/document-edit.mjs';
-import { authenticateExactBodyApproval, authenticateAtlasDraftApproval } from './publication-database-inputs.mjs';
-import { fileURLToPath } from 'node:url';
-import { readFileSync } from 'node:fs';
-
-export const S08_WORDING_REVISION = 'e6068bd3321de8b142db54adb8f92501296cf269b75682191596aa8c349faa4b';
-
-function readApprovedS08Wording(db, expectedSha256) {
-  const bytes = readFileSync(new URL('../approved-s08-article-wording-20261024.json', import.meta.url));
-  if (createHash('sha256').update(bytes).digest('hex') !== '80d131f88ce5b5441afc22912d7607fec2a5a92aec387e598fb208e733a22040')
-    throw Error('E_S08_WORDING_APPROVAL');
-  const approval = JSON.parse(bytes);
-  const pin = PUBLICATION_SUCCESSOR_HEADS['lore/factions/Sixteen-States.json'];
-  if (approval.kind !== 'owner-exact-s08-article-draft-approval' || approval.status !== 'approved-for-typed-draft-application'
-    || approval.actualAnswer !== '기사 S08 문장: 시설 한정으로 수정 (Recommended)'
-    || approval.predecessor !== pin.revision || approval.revision !== S08_WORDING_REVISION || expectedSha256 !== pin.sourceSha256)
-    throw Error('E_S08_WORDING_APPROVAL');
-  const reference = readEvidenceDocumentReference(db, { logicalPath: 'lore/factions/Sixteen-States.json', expectedSha256,
-    expectedSemanticSha256: approval.semanticSha256 });
-  const head = db.prepare(`SELECT r.* FROM document_head h JOIN document_revision r USING(source_id,revision_id)
-    JOIN document_revision_seal z USING(revision_id) WHERE h.source_id=?`).get(reference.sourceId);
-  const parent = db.prepare(`SELECT r.* FROM document_revision r JOIN document_revision_seal z USING(revision_id)
-    WHERE r.revision_id=?`).get(pin.revision);
-  if (reference.sourceId !== 84 || reference.revision !== approval.revision || head?.parent_revision !== pin.revision
-    || parent?.source_id !== reference.sourceId || parent.semantic_sha256 !== pin.semanticSha256
-    || parent.algorithm !== 'typed-envelope-v1' || parent.sequence >= head.sequence
-    || bodyDigest(['typed-envelope-v1', reference.sourceId, head.parent_revision, head.semantic_sha256, head.actor, head.reason]) !== approval.revision)
-    throw Error('E_S08_WORDING_CHAIN');
-  const predecessor = readDocumentRevision(db, { revision: pin.revision, documentId: approval.documentId,
-    domain: 'factions', corpusKind: 'current' });
-  if (bodyDigest(predecessor) !== pin.semanticSha256) throw Error('E_S08_WORDING_CHAIN');
-  for (const change of approval.changes) {
-    const locale = change.slot.slice('text/'.length);
-    const text = predecessor.content.find(node => node.anchor === change.nodeId)?.text;
-    if (!text || typeof text[locale] !== 'string' || text[locale].split(change.before).length !== 2)
-      throw Error('E_S08_WORDING_DELTA');
-    text[locale] = text[locale].replace(change.before, change.after);
-  }
-  if (!isDeepStrictEqual(predecessor, reference.document)) throw Error('E_S08_WORDING_DELTA');
-  return orderDocumentKeys(db, reference.sourceId, reference.document);
-}
-
-export const PUBLICATION_EXACT_BODY_APPROVAL = Object.freeze({
-  receiptPath: '.omo/evidence/fcd/approved-body-apply/receipt.json',
-  receiptSha256: '857d84a1e693f120faf9b83612db06ce87e577ca11f28547fbd6d43f240f1df4',
-  approvalPath: 'scripts/approved-document-bodies-20261023.json',
-  approvalSha256: 'a774009ea295fe7de381590ca1cb00a99393bbe8265cb82eecad831ae80b1b78',
-  manifestPath: '.omo/evidence/fcd/domain-proposal/manifest.json',
-  manifestSha256: 'c11753202e39313d70d410e9621682171b2c94e808527100d5f2fe5bf80920c0',
-});
-export const PUBLICATION_EXACT_BODIES = Object.freeze({
-  'lore/characters/Cast-Relations.json': Object.freeze({
-    documentId: 'DOC:Cast-Relations', domain: 'characters', file: 'Cast-Relations.after.json',
-    revision: '0befd45d2ddc810e39ef431dbe2a8d4632a349ddfec17626d6959889428a7842',
-    predecessor: 'd0aee1c4ab12eb202c65d2b98e8cbae04b669d73dd2ce4ca83162fd983565acb',
-    predecessorSemantic: 'd2c13b591fb376424fb4914b32822c1a96ab16fe5b5ebe7aecad318f6a7b214e',
-    semanticSha256: '30c628a8f920d5ed98e0196f90f71100fb61b13e3ab2aaea0fba7f1aa351c388',
-    byteSha256: 'a42b5fc1a265f1c61339f3ba81130f74cfe704394e479d676fca55e4f013b2b7',
-    sourceSha256: '80cb4c4f38ba089621904adc347091f53891a76658f964507eb677414d052a07',
-  }),
-  'lore/offices/Offices-and-Ranks.json': Object.freeze({
-    documentId: 'DOC:Offices-and-Ranks', domain: 'offices', file: 'Offices-and-Ranks.after.json',
-    revision: '22acb2f7a5959a94e3c734d8abaf3b386c5ce42f726b8dd82c393e8c0d126e80',
-    predecessor: '57dee91f3739def14183a2d378f5fadcd3b2812acc357004a7c158673c690442',
-    predecessorSemantic: 'ccec975b94492c8bb8e7ce232a6a21d2da0cd3d15078401be3a22fd15ae83e37',
-    semanticSha256: '85fd4951e1b8c20048c3f8523d85f70c6ef5a92c64e37dbdf98efd5168d05fcd',
-    byteSha256: '5c0e6d9cb726946efd9db00ece503cef5985e532abd7a575aa0756b86d16aea8',
-    sourceSha256: '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e',
-  }),
-});
-const canonicalBody = value => Array.isArray(value) ? `[${value.map(canonicalBody).join(',')}]`
-  : value !== null && typeof value === 'object'
-    ? `{${Object.keys(value).sort().map(key => `${JSON.stringify(key)}:${canonicalBody(value[key])}`).join(',')}}`
-    : JSON.stringify(value);
-const bodyDigest = value => createHash('sha256').update(canonicalBody(value)).digest('hex');
-
-// Separate internal draft approval; never extend the historical two-body receipt.
-export const ATLAS_DRAFT_APPROVAL = Object.freeze({
-  logicalPath: 'lore/World-Narrative-Atlas.json',
-  approvalPath: 'scripts/approved-atlas-affiliations-20261023.json',
-  approvalSha256: 'c8dc75a69957a680221c6501fb2dbf67bad074576f73686edddb4d2ebcf9fc35',
-  revision: '938b5651c1d0acf32647a5a0c489c8ae568026d06e3430c1b1b6675aa87d9e86',
-  predecessor: '343cc396ce017934e15f863226b8b69c96a57bb7ee7d76cf650abed25b139dae',
-  predecessorSemantic: '22e53460aba0b3f9a4a0b221b3c3b2437aa2f04ff355ae72bb9bcf68549dd7ad',
-  semanticSha256: '16ab8236e117ee9ee697700e085e23ef5efcb786182b2f04d6c473088130e337',
-  byteSha256: '423472bc2a7ce3a7aa719f15db60e00c68e66d8ad5d23816e2de1bb021214597',
-  sourceSha256: 'e8314a0a65c2fbaa2db47f8388b11b931840b2d2b24a2aeeb6299815888ee32c',
-});
-
-function readApprovedAtlasDraft(db, expectedSha256) {
-  const pin = ATLAS_DRAFT_APPROVAL;
-  authenticateAtlasDraftApproval();
-  if (expectedSha256 !== pin.sourceSha256) throw Error('E_ATLAS_DRAFT_SOURCE_PIN');
-  const reference = readEvidenceDocumentReference(db, { logicalPath: pin.logicalPath, expectedSha256,
-    expectedSemanticSha256: pin.semanticSha256 });
-  const head = db.prepare(`SELECT r.* FROM document_head h JOIN document_revision r USING(source_id,revision_id)
-    JOIN document_revision_seal z USING(revision_id) WHERE h.source_id=?`).get(reference.sourceId);
-  const parent = db.prepare(`SELECT r.* FROM document_revision r JOIN document_revision_seal z USING(revision_id)
-    WHERE r.revision_id=?`).get(pin.predecessor);
-  if (reference.sourceId !== 8 || reference.revision !== pin.revision || head?.parent_revision !== pin.predecessor
-    || parent?.source_id !== reference.sourceId || parent.semantic_sha256 !== pin.predecessorSemantic
-    || parent.algorithm !== 'typed-envelope-v1' || parent.sequence >= head.sequence
-    || bodyDigest(['typed-envelope-v1', reference.sourceId, head.parent_revision, head.semantic_sha256, head.actor, head.reason]) !== pin.revision)
-    throw Error('E_ATLAS_DRAFT_CHAIN');
-  const predecessor = readDocumentRevision(db, { revision: pin.predecessor, documentId: 'WNA-001', domain: 'root', corpusKind: 'current' });
-  if (bodyDigest(predecessor) !== pin.predecessorSemantic) throw Error('E_ATLAS_DRAFT_CHAIN');
-  // Reconstruct the entire expected delta from sealed typed history, not a body oracle.
-  predecessor.data.atlas.additional_people.K1003.national_state_id = 'S02';
-  predecessor.data.atlas.additional_people.K1008.national_state_id = 'S02';
-  predecessor.status = 'draft';
-  if (!isDeepStrictEqual(predecessor, reference.document)) throw Error('E_ATLAS_DRAFT_DELTA');
-  const document = orderDocumentKeys(db, reference.sourceId, reference.document);
-  if (createHash('sha256').update(JSON.stringify(document, null, 2) + '\n').digest('hex') !== pin.byteSha256)
-    throw Error('E_ATLAS_DRAFT_BODY');
-  return document;
-}
-
-function readExactApprovedBody(db, logicalPath, expectedSha256, approvedBodies) {
-  const pin = PUBLICATION_EXACT_BODIES[logicalPath];
-  approvedBodies ??= authenticateExactBodyApproval(process.env.PUBLICATION_NEW_BODY_ROOT
-    ?? fileURLToPath(new URL('../../', import.meta.url)));
-  const approved = approvedBodies.get(logicalPath);
-  if (!approved || bodyDigest(approved) !== pin.semanticSha256) throw Error('E_PUBLICATION_EXACT_BODY_REQUIRED');
-  const reference = readEvidenceDocumentReference(db, { logicalPath, expectedSha256, expectedSemanticSha256: pin.semanticSha256 });
-  const head = db.prepare(`SELECT r.* FROM document_head h JOIN document_revision r USING(source_id,revision_id)
-    JOIN document_revision_seal z USING(revision_id) WHERE h.source_id=?`).get(reference.sourceId);
-  const parent = db.prepare(`SELECT r.* FROM document_revision r JOIN document_revision_seal z USING(revision_id)
-    WHERE r.revision_id=?`).get(pin.predecessor);
-  if (expectedSha256 !== pin.sourceSha256 || reference.revision !== pin.revision
-    || head?.parent_revision !== pin.predecessor || parent?.source_id !== reference.sourceId
-    || parent.semantic_sha256 !== pin.predecessorSemantic || parent.algorithm !== 'typed-envelope-v1'
-    || parent.sequence >= head.sequence
-    || bodyDigest(['typed-envelope-v1', reference.sourceId, head.parent_revision, head.semantic_sha256, head.actor, head.reason]) !== pin.revision)
-    throw Error('E_PUBLICATION_EXACT_BODY_CHAIN');
-  const predecessor = readDocumentRevision(db, { revision: pin.predecessor, documentId: pin.documentId,
-    domain: pin.domain, corpusKind: 'current' });
-  if (bodyDigest(predecessor) !== pin.predecessorSemantic) throw Error('E_PUBLICATION_EXACT_BODY_CHAIN');
-  // approvedStructure contributes order only after complete typed equality.
-  return orderDocumentKeys(db, reference.sourceId, reference.document, { approvedStructure: approved });
-}
+export { PUBLICATION_SUCCESSOR_APPROVAL, PUBLICATION_SUCCESSOR_HEADS, PUBLICATION_EXACT_BODY_APPROVAL,
+  PUBLICATION_EXACT_BODIES, ATLAS_DRAFT_APPROVAL } from './reference-successor-approval.mjs';
+export { S08_WORDING_REVISION } from './reference-successor-reader.mjs';
 
 // Independently reviewed source revisions (Task10/12/13), separate from the
 // renderer-envelope heads below. Each semantic pin bounds the complete delta.
@@ -227,63 +91,10 @@ export function authenticatePublicationDataSuccessor(db, logicalPath, expectedSh
   return true;
 }
 
-// Owner-approved current heads, independent of the immutable archive byte pins.
-// These pairs authorize only this exact delta for private publication evidence;
-// they do not grant public document admission or change historical review bytes.
-export const PUBLICATION_SUCCESSOR_APPROVAL = Object.freeze({
-  receiptPath: '.omo/private/seoul-migration/faction-consolidation-20261022/receipt.json',
-  receiptSha256: '97b1d7dbd2631682b2214eb03a1478ef2085af2618d08739001ebe33cd2f8df3',
-  decisionPath: 'scripts/approved-seoul-faction-consolidation-20261022.json',
-  decisionSha256: 'd0378abb6ef9578a847c133247faabb06d758b968d35f1193b4e4feb83701c54',
-  approvalRef: 'owner:seoul-faction-consolidation-20261022',
-});
-export const PUBLICATION_SUCCESSOR_HEADS = Object.freeze({
-  'lore/characters/Cast-State-02.json': Object.freeze({
-    revision: '69390d278551ed403ffda3bc5e1b785194f418a2c79c28a778c3e164521a9a3d',
-    semanticSha256: '267c93362591269f26477dd6fbadd1a6d15922238b2439a7ab094f7fa9c0a7a8',
-    sourceSha256: '2dd50da979a8b3f9d1f3a2123adc765a9e9d35eac2240f0e149aac187e3c33ea',
-  }),
-  'lore/characters/Cast-Unaffiliated.json': Object.freeze({
-    revision: '0846f24df1c95b5ddbb2656e1bbb7617b0bb1ffd3c1980c11c4a34d80c7f77e0',
-    semanticSha256: '0ebb4c3d9a774bb712a470da32fdf2b21d190913912b78922564a4e670cd04d1',
-    sourceSha256: '5b1a3af2d7621c9ece2ae01bd9ec1878f2232c1e0b31db0df80798ad8f66829a',
-  }),
-  'lore/characters/Core-Characters.json': Object.freeze({
-    revision: '3edea828b052e69596d35ba410929425b1870925f1ee5b4ad5c9fe72eb133a22',
-    semanticSha256: 'a05f4bd6d9d0a246f1092d2b60ee7f0d0e5faf1ac151411e6bbfd6d7ecbcd905',
-    sourceSha256: '911c7f9ca1a24d1c803a4c952ff972cc0482be74d6f277419b14734512e56dc4',
-  }),
-  'lore/factions/Sixteen-States.json': Object.freeze({
-    revision: '1e7bcf057b554cf6b52ea50dd5645da515b0513f04a30adcb5f461e3af462474',
-    semanticSha256: '8d43c418de8b4318240ea066ba0fdf9e75430e2723fbfa272d48653fb352f415',
-    sourceSha256: '73b19e6af00df16fb06adfbaab7c386aea6930ff01587dd6a0dc69fbae557a3c',
-  }),
-  'lore/offices/Offices-and-Ranks.json': Object.freeze({
-    revision: '57dee91f3739def14183a2d378f5fadcd3b2812acc357004a7c158673c690442',
-    semanticSha256: 'ccec975b94492c8bb8e7ce232a6a21d2da0cd3d15078401be3a22fd15ae83e37',
-    sourceSha256: '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e',
-  }),
-});
-
 // Identity is selected independently from SQLite's document inventory, never
 // from the approval contract. A recognized typed source cannot fall back.
 export function readScopeCurrentSource({ db, logicalPath, expectedSha256, editorialProfiles, soulAssignments,
-  soulCandidates, soulReview, soulBatches, openingSample, editorialEnvelopes, approvedBodies, snapshotDocuments, predecessor = false }) {
-  if (logicalPath === 'lore/factions/Sixteen-States.json') {
-    const head = db.prepare(`SELECT h.revision_id FROM document_head h JOIN source_file s USING(source_id)
-      WHERE s.logical_path=?`).get(logicalPath);
-    if (head && head.revision_id !== PUBLICATION_SUCCESSOR_HEADS[logicalPath].revision)
-      return readApprovedS08Wording(db, expectedSha256);
-  }
-  if (logicalPath === ATLAS_DRAFT_APPROVAL.logicalPath) {
-    const head = db.prepare(`SELECT h.revision_id FROM document_head h JOIN source_file s USING(source_id)
-      WHERE s.logical_path=?`).get(logicalPath);
-    if (head && head.revision_id !== ATLAS_DRAFT_APPROVAL.predecessor) return readApprovedAtlasDraft(db, expectedSha256);
-  }
-  const exact = PUBLICATION_EXACT_BODIES[logicalPath];
-  if (exact && db.prepare(`SELECT h.revision_id FROM document_head h JOIN source_file s USING(source_id)
-    WHERE s.logical_path=?`).get(logicalPath)?.revision_id === exact.revision)
-    return readExactApprovedBody(db, logicalPath, expectedSha256, approvedBodies);
+  soulCandidates, soulReview, soulBatches, openingSample, editorialEnvelopes, snapshotDocuments, predecessor = false }) {
   for (const [pins, store] of [[SOUL_CANDIDATE_SOURCE_HASHES, soulCandidates],
     [SOUL_REVIEW_SOURCE_HASHES, soulReview], [SOUL_BATCH_SOURCE_HASHES, soulBatches],
     [OPENING_SAMPLE_SOURCE_HASHES, openingSample], [EDITORIAL_ENVELOPE_SOURCE_HASHES, editorialEnvelopes]]) {
@@ -456,14 +267,9 @@ export function readScopeCurrentSource({ db, logicalPath, expectedSha256, editor
   if (documents.length > 1) throw new Error('E_SCOPE_DB_SOURCE_DUPLICATE');
   if (documents.length === 1) {
     if (documents[0].sha256 !== expectedSha256) throw new Error('E_SCOPE_DB_SOURCE_HASH');
-    const approved = PUBLICATION_SUCCESSOR_HEADS[logicalPath];
-    const head = approved && db.prepare(`SELECT r.parent_revision FROM document_head h
-      JOIN document_revision r USING(source_id,revision_id) WHERE h.source_id=?`).get(documents[0].source_id);
-    const successor = head && head.parent_revision !== null ? approved : undefined;
-    const reference = readEvidenceDocumentReference(db, { logicalPath, expectedSha256,
-      ...(successor ? { expectedSemanticSha256: successor.semanticSha256 } : {}) });
-    if (successor && (expectedSha256 !== successor.sourceSha256 || reference.revision !== successor.revision))
-      throw new Error('E_SCOPE_DB_SOURCE_STALE');
+    const successor = readReferenceSuccessor(db, { logicalPath, expectedSha256 });
+    if (successor !== null) return successor;
+    const reference = readEvidenceDocumentReference(db, { logicalPath, expectedSha256 });
     return orderDocumentKeys(db, reference.sourceId, reference.document);
   }
   return readPersonMappingCurrentSource(db, logicalPath, expectedSha256, { editorialProfiles });

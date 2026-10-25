@@ -2,7 +2,9 @@ import { resolve, relative } from 'node:path';
 import { isDeepStrictEqual } from 'node:util';
 import { createHash } from 'node:crypto';
 import { evidenceReader } from './evidence-reader.mjs';
-import { readScopeCurrentSource, PUBLICATION_SUCCESSOR_HEADS, PUBLICATION_EXACT_BODIES, ATLAS_DRAFT_APPROVAL, S08_WORDING_REVISION, authenticatePublicationDataSuccessor } from './scope-current-source.mjs';
+import { readScopeCurrentSource, authenticatePublicationDataSuccessor } from './scope-current-source.mjs';
+import { readReferenceSuccessor } from './reference-successor-reader.mjs';
+import { RELATION_SUCCESSOR, verifyRelationHistoricalProjection } from '../cast-sqlite/relation-successor.mjs';
 
 // Immutable receipts authenticate exact bytes, including original whitespace.
 // Current document values MUST independently reconstruct from typed authority;
@@ -20,28 +22,19 @@ export function scopeAuthenticationReader({ db, evidenceStore, root, bindings, h
     if (currentSourceHashes.has(logicalPath) && !(snapshot && verified.has(logicalPath))) {
       const expectedSha256 = currentSourceHashes.get(logicalPath);
       if (createHash('sha256').update(bytes).digest('hex') !== expectedSha256) throw Error('E_SCOPE_AUTHENTICATION_SOURCE_PIN');
-      const actual = readScopeCurrentSource({ db, logicalPath, expectedSha256, ...privateStores, predecessor: true,
+      const successor = readReferenceSuccessor(db, { logicalPath, expectedSha256 });
+      const actual = successor ?? readScopeCurrentSource({ db, logicalPath, expectedSha256, ...privateStores, predecessor: true,
         ...(snapshot ? { snapshotDocuments } : {}) });
       const original = logicalPath.endsWith('.json') ? JSON.parse(bytes) : Buffer.from(bytes).toString('utf8');
-      const approved = PUBLICATION_SUCCESSOR_HEADS[logicalPath];
-      const head = approved && db.prepare(`SELECT h.revision_id FROM document_head h
-        JOIN source_file s USING(source_id) WHERE s.logical_path=?`).get(logicalPath);
-      const successor = head?.revision_id === approved?.revision ? approved : undefined;
-      const s08Wording = logicalPath === 'lore/factions/Sixteen-States.json' && head?.revision_id === S08_WORDING_REVISION;
-      const exact = PUBLICATION_EXACT_BODIES[logicalPath];
-      const exactHead = exact && db.prepare(`SELECT h.revision_id FROM document_head h
-        JOIN source_file s USING(source_id) WHERE s.logical_path=?`).get(logicalPath);
-      const exactSuccessor = exact !== undefined && exactHead?.revision_id === exact.revision;
-      const dataSuccessor = authenticatePublicationDataSuccessor(db, logicalPath, expectedSha256, actual, original);
-      const atlasDraft = logicalPath === ATLAS_DRAFT_APPROVAL.logicalPath && actual.status === 'draft';
-      // The exact archive/current pair is independently pinned. The current head
-      // was reconstructed and integrity-checked above; old bytes remain evidence
-      // for the legacy review, never a replacement for the current authored body.
-      if (atlasDraft ? expectedSha256 !== ATLAS_DRAFT_APPROVAL.sourceSha256
-        : s08Wording ? expectedSha256 !== approved.sourceSha256
-        : exactSuccessor ? expectedSha256 !== exact.sourceSha256 : dataSuccessor ? false : successor ? expectedSha256 !== successor.sourceSha256
-        : !isDeepStrictEqual(actual, original) || JSON.stringify(actual) !== JSON.stringify(original))
-        throw Object.assign(Error('E_SCOPE_AUTHENTICATION_TYPED_MISMATCH'), { logicalPath });
+      const relationSuccessor = logicalPath === RELATION_SUCCESSOR.logicalPath && successor === null
+        && db.prepare("SELECT 1 FROM sqlite_schema WHERE name='data_source_head'").get()
+        && db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(logicalPath);
+      // PR606 data successors (values-cast, office, feudal, holdings) keep their own pinned delta proof.
+      const dataSuccessor = successor === null && !relationSuccessor
+        && authenticatePublicationDataSuccessor(db, logicalPath, expectedSha256, actual, original);
+      if (relationSuccessor) verifyRelationHistoricalProjection(actual, original);
+      else if (successor === null && !dataSuccessor && (!isDeepStrictEqual(actual, original) || JSON.stringify(actual) !== JSON.stringify(original)))
+        throw Error('E_SCOPE_AUTHENTICATION_TYPED_MISMATCH');
       if (snapshot) verified.add(logicalPath);
     }
     return bytes;

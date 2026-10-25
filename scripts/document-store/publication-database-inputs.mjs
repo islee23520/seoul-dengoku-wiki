@@ -1,5 +1,4 @@
 import { readFile } from 'node:fs/promises';
-import { readFileSync } from 'node:fs';
 import { resolve, isAbsolute } from 'node:path';
 import { createHash } from 'node:crypto';
 import { DatabaseSync } from 'node:sqlite';
@@ -7,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } from './evidence.mjs';
 import { scopeAuthenticationReader } from './scope-authentication-reader.mjs';
 import { PUBLICATION_SUCCESSOR_APPROVAL, PUBLICATION_SUCCESSOR_HEADS, PUBLICATION_DATA_SUCCESSORS,
-  PUBLICATION_EXACT_BODY_APPROVAL, PUBLICATION_EXACT_BODIES, ATLAS_DRAFT_APPROVAL } from './scope-current-source.mjs';
+  PUBLICATION_EXACT_BODIES } from './scope-current-source.mjs';
 import { scopeDirectoryReader } from './scope-directory-inventory.mjs';
 import { readScopeContract } from '../cast-sqlite/scope-contract-store.mjs';
 import { openEditorialProfiles, INTERNAL_PROFILE_CAPABILITY, EDITORIAL_PROFILE_SOURCE_HASHES } from './editorial-profile.mjs';
@@ -19,46 +18,7 @@ import { openOpeningSampleDocuments, INTERNAL_OPENING_SAMPLE_CAPABILITY, OPENING
 import { openEditorialEnvelopeDocuments, INTERNAL_EDITORIAL_ENVELOPE_CAPABILITY, EDITORIAL_ENVELOPE_SOURCE_HASHES } from './editorial-envelope-documents.mjs';
 import { verifyPublicationRelocation, PUBLICATION_PROVISION_SHA256 } from './publication-storage-relocation.mjs';
 
-export function authenticateAtlasDraftApproval() {
-  const pin = ATLAS_DRAFT_APPROVAL;
-  const bytes = readFileSync(new URL(`../../${pin.approvalPath}`, import.meta.url));
-  if (createHash('sha256').update(bytes).digest('hex') !== pin.approvalSha256) throw Error('E_ATLAS_DRAFT_APPROVAL');
-  const approval = JSON.parse(bytes);
-  if (approval.kind !== 'owner-exact-atlas-draft-approval' || approval.status !== 'approved-for-typed-draft-application'
-    || approval.documentId !== 'WNA-001' || approval.predecessor !== pin.predecessor
-    || approval.byteSha256 !== pin.byteSha256 || approval.semanticSha256 !== pin.semanticSha256)
-    throw Error('E_ATLAS_DRAFT_APPROVAL');
-}
-
-export function authenticateExactBodyApproval(root, readBytes = readFileSync) {
-  const proof = PUBLICATION_EXACT_BODY_APPROVAL;
-  const readPinned = (path, sha256) => {
-    const base = path === proof.approvalPath ? fileURLToPath(new URL('../../', import.meta.url)) : root;
-    const bytes = readBytes(resolve(base, path));
-    if (createHash('sha256').update(bytes).digest('hex') !== sha256) throw Error('E_PUBLICATION_EXACT_BODY_APPROVAL');
-    return JSON.parse(bytes);
-  };
-  const receipt = readPinned(proof.receiptPath, proof.receiptSha256);
-  const approval = readPinned(proof.approvalPath, proof.approvalSha256);
-  const manifest = readPinned(proof.manifestPath, proof.manifestSha256);
-  if (approval.actualUserAnswer !== 'approve_pending_bodies: 두 본문 승인 (Recommended)'
-    || approval.voteEvidence?.event !== 'required-exact-body-approved-resume' || approval.voteEvidence.line !== 466
-    || receipt.approval?.sha256 !== proof.approvalSha256 || approval.proposalManifestSha256 !== proof.manifestSha256)
-    throw Error('E_PUBLICATION_EXACT_BODY_APPROVAL');
-  const bodies = new Map();
-  for (const [logicalPath, pin] of Object.entries(PUBLICATION_EXACT_BODIES)) {
-    const row = manifest.documents.find(row => row.logicalPath === logicalPath);
-    const vote = approval.documents.find(row => row.id === pin.documentId);
-    const applied = receipt.result.find(row => row.documentId === pin.documentId);
-    if (row?.sourceArchiveSha256 !== pin.sourceSha256 || row.after?.byteSha256 !== pin.byteSha256
-      || row.after?.expectedStoredSemanticSha256 !== pin.semanticSha256 || row.predecessorRevision !== pin.predecessor
-      || vote?.byteSha256 !== pin.byteSha256 || vote.semanticSha256 !== pin.semanticSha256 || vote.predecessor !== pin.predecessor
-      || applied?.revision !== pin.revision || applied.previousRevision !== pin.predecessor || applied.semanticSha256 !== pin.semanticSha256)
-      throw Error('E_PUBLICATION_EXACT_BODY_APPROVAL');
-    bodies.set(logicalPath, readPinned(`.omo/evidence/fcd/domain-proposal/${pin.file}`, pin.byteSha256));
-  }
-  return bodies;
-}
+export { authenticateAtlasDraftApproval, authenticateExactBodyApproval } from './reference-successor-approval.mjs';
 
 // Explicit machine-local inputs. No document source path is opened here.
 // Receipt files select evidence identities; existing authenticators still decide

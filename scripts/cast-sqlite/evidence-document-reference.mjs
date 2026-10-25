@@ -7,10 +7,9 @@ const canonical = value => Array.isArray(value) ? `[${value.map(canonical).join(
     : JSON.stringify(value);
 const fail = code => { throw Object.assign(new Error(code), { code }); };
 
-/** Resolve an archive byte pin to an authenticated typed envelope revision.
+/** Resolve a historical source pin to an independently authenticated typed revision.
  * Logical paths are exact database identities, never filesystem paths. A later
- * revision requires a separately approved semantic pin; it cannot inherit an
- * old byte-hash approval. This is internal evidence
+ * revision needs its own semantic approval; an old byte pin alone is insufficient. This is internal evidence
  * resolution, not publication admission or a replacement for review evaluation.
  */
 export function readEvidenceDocumentReference(db, { logicalPath, expectedSha256, expectedSemanticSha256 } = {}) {
