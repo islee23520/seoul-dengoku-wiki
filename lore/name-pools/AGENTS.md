@@ -36,4 +36,4 @@
 
 ## COMMANDS
 루트 `npm run test:person-id`는 두 `verify-person-id-*.mjs`를 실행한다.
-파생 조회 데이터 변경은 `npm run test:cast-sqlite`, `npm run cast:verify`와 연결한다.
+파생 조회 데이터 변경은 `npm run test:cast-sqlite`, `npm run cast:verify -- --db data/canonical/wiki-cast.sqlite`와 연결한다.

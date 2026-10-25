@@ -28,6 +28,7 @@
 
 ## COMMANDS
 이 하위 디렉터리 전용 npm alias는 없다. 저장소 루트에서 Node test runner로 해당 검사를 선택한다.
+`test-store.mjs`는 합성 fixture만 사용한다. 나머지 아래 검사는 비공개 SQLite 원천·봉인 자료가 해당 checkout의 가이드 지정 경로에 준비되어야 하며, 공개 checkout만으로 통과한다고 가정하지 않는다.
 ```bash
 node --test scripts/document-store/test-store.mjs
 node --test scripts/document-store/test-publication-database-inputs.mjs

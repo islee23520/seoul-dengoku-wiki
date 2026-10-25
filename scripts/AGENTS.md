@@ -30,6 +30,7 @@
 
 ## COMMANDS
 저장소 루트에서 변경 영역에 해당하는 명령을 선택한다.
+로어 schema 검사는 Python `jsonschema`가 필요하다. 생성물·dist·비공개 승인 원천을 읽는 검사는 해당 입력이 준비된 checkout에서 실행하며, 누락 오류를 검사 통과로 보고하지 않는다.
 ```bash
 npm run generate
 npm run build

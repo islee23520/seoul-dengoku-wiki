@@ -35,7 +35,7 @@ seoul-dengoku-wiki/
 | 인물 신원·등록 | `lore/characters/Cast-Profile-Contract.md`, `lore/name-pools/AGENTS.md` | SQLite 논리 원장과 공개 본문 구분 |
 | 작위·보유권 | `lore/regions/AGENTS.md`, `scripts/cast-sqlite/README.md` | 논리 ID·정치 ID·지리 작위 분리 |
 | 화면·라우팅 | `src/main.tsx`, `src/App.tsx`, `src/AGENTS.md` | BrowserRouter basename `/wiki` |
-| 기사 본문 | `src/pages/ArticlePage.tsx` | locale별 generated JSON glob |
+| 기사 본문 | `src/pages/ArticlePage.tsx`, `src/documentApi.ts` | 문서 API의 locale별 blocks; 생성 catalog는 탐색 metadata |
 | 공개 생성·승격 | `scripts/generate-release.mjs`, `scripts/AGENTS.md` | stage·journal·publication admission |
 | 인물 DB | `scripts/cast-sqlite/AGENTS.md` | schema 5, typed read-only reader |
 | 비공개 문서·승인 | `scripts/document-store/AGENTS.md` | private store·receipt·pinned reader |
@@ -78,9 +78,10 @@ seoul-dengoku-wiki/
 ## UNIQUE STYLES
 - 인물 수치 계약의 논리 ID는 `lore/editorial/Character-System-Contract.json`이다. 비공개 editorial·Soul DB는 `WORLD_BUILDING_GUIDE.md`의 별도 경로를 따른다.
 - 정치 ID·정치 세력·지리 왕국·작위 보유권은 서로 다른 계약이며 자동 대응시키지 않는다.
-- 기사 본문은 현재 locale별 generated JSON을 읽는다. 문서 API의 존재만으로 전면 API 렌더링이라고 설명하지 않는다.
+- 기사 본문은 문서 API에서 slug·locale별 blocks를 받아 렌더한다. 생성된 `wikiCatalog`·`wikiEnglishCatalog`는 문서 선택·언어 전환용 metadata이며 본문 로딩 경로와 별개다.
 
 ## COMMANDS
+검사별로 생성 카탈로그·dist·비공개 승인 원천이 필요할 수 있다. 아래 명령의 존재가 공개 checkout만으로 전부 통과함을 뜻하지 않는다. 로어 schema 검사는 Python `jsonschema`도 필요하다.
 ```bash
 npm ci --ignore-scripts
 npm run dev
@@ -91,7 +92,7 @@ npm run test:parent
 npm run test:lore-json
 npm run test:cast-sqlite
 npm run cast:build -- --output /tmp/wiki-cast-new.sqlite
-npm run cast:verify
+npm run cast:verify -- --db data/canonical/wiki-cast.sqlite
 npm run test:contract
 npm run check:artifacts
 node --test deploy/test-*.mjs
