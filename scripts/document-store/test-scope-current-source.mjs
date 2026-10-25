@@ -62,10 +62,10 @@ test('approved article wording authenticates its sealed successor and rejects ch
       bindings: new Map([[selection.logicalPath, { identity: selection.logicalPath, sha256: selection.expectedSha256 }]]),
       currentSourceHashes: new Map([[selection.logicalPath, selection.expectedSha256]]) });
     assert.deepEqual(await historical(`/s08-review/${selection.logicalPath}`), raw);
-    assert.throws(() => readScopeCurrentSource({ db, ...selection, expectedSha256: '0'.repeat(64) }), /E_S08_WORDING_APPROVAL/u);
+    assert.throws(() => readScopeCurrentSource({ db, ...selection, expectedSha256: '0'.repeat(64) }), /E_SCOPE_DB_SOURCE_HASH/u);
     for (const [needle, method, mutate, code] of [
-      ['SELECT r.* FROM document_head', 'get', row => ({ ...row, parent_revision: '0'.repeat(64) }), 'E_S08_WORDING_CHAIN'],
-      ['SELECT r.* FROM document_head', 'get', row => ({ ...row, reason: row.reason + ' unauthorized' }), 'E_S08_WORDING_CHAIN'],
+      ['SELECT r.* FROM document_head', 'get', row => ({ ...row, parent_revision: '0'.repeat(64) }), 'E_REFERENCE_SUCCESSOR_CHAIN'],
+      ['SELECT r.* FROM document_head', 'get', row => ({ ...row, reason: row.reason + ' unauthorized' }), 'E_REFERENCE_SUCCESSOR_CHAIN'],
       ['SELECT * FROM text_document_locale WHERE', 'all', rows => rows.map(row => ({ ...row, title: row.title + ' unauthorized' })), 'E_REFERENCE_INTEGRITY'],
     ]) {
       const changed = { prepare(sql) {
@@ -128,9 +128,9 @@ test('exact approved Atlas draft authenticates current typed body while preservi
         return sql.includes(needle) ? { [method]: (...args) => mutate(stmt[method](...args)) } : stmt;
       } };
       assert.throws(() => readScopeCurrentSource({ ...selection, db: changed }),
-        /E_ATLAS_DRAFT_CHAIN|E_REFERENCE_INTEGRITY/u, needle);
+        /E_REFERENCE_SUCCESSOR_CHAIN|E_ATLAS_DRAFT_CHAIN|E_REFERENCE_INTEGRITY/u, needle);
     }
-    assert.throws(() => readScopeCurrentSource({ ...selection, expectedSha256: '0'.repeat(64) }), /E_ATLAS_DRAFT_SOURCE_PIN/u);
+    assert.throws(() => readScopeCurrentSource({ ...selection, expectedSha256: '0'.repeat(64) }), /E_SCOPE_DB_SOURCE_HASH/u);
   } finally { fs.readFileSync = saved; syncBuiltinESMExports(); db.close(); }
 });
 
