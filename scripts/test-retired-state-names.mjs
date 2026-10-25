@@ -5,20 +5,21 @@ import { tmpdir } from 'node:os'
 import { dirname, join } from 'node:path'
 import { test } from 'vitest'
 import { checkRetiredStateNames, retiredStateOffsets } from './check-retired-state-names.mjs'
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
 
 const repo = new URL('../', import.meta.url)
 const snapshotPath = 'snapshots/build-inputs/creative-name-normalization.json'
 const snapshotBytes = readFileSync(new URL(snapshotPath, repo))
 const manifests = ['scripts/issued-preservation-baseline.json', 'snapshots/build-inputs/source-manifest.json']
 function preservedFixture(directory) {
-  const issued = JSON.parse(readFileSync(new URL(manifests[0], repo), 'utf8'))
+  const issued = JSON.parse(readSourceArchive(manifests[0]))
   const snapshot = JSON.parse(readFileSync(new URL(manifests[1], repo), 'utf8'))
   const paths = [...manifests, ...Object.keys(issued.revisions).map(revision => `vendor/issued-history/${revision}.json`),
     ...Object.keys(issued.sourceHashes).map(path => `vendor/issued-history/corpus/${path}`),
     ...snapshot.files.map(row => `snapshots/build-inputs/${row.path}`)]
   for (const path of paths) {
     mkdirSync(dirname(join(directory, path)), { recursive: true })
-    writeFileSync(join(directory, path), readFileSync(new URL(path, repo)))
+    writeFileSync(join(directory, path), path === manifests[0] ? readSourceArchive(path) : readFileSync(new URL(path, repo)))
   }
   return paths.length - manifests.length
 }

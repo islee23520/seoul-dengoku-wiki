@@ -8,8 +8,7 @@
 
 import { test } from "vitest";
 import assert from "node:assert/strict";
-import { readFileSync, existsSync } from "node:fs";
-import { fileURLToPath } from "node:url";
+import { readSourceArchive } from "../../scripts/cast-sqlite/source-archive.mjs";
 import {
   SCHEMA,
   APPROVED,
@@ -22,17 +21,12 @@ import {
   serializeRegistry,
   validateRegistry,
 } from "./issue-person-ids.mjs";
-import path from "node:path";
 import { personIdValuesHash } from "./person-id-values-successor.mjs";
-
-const HERE = path.dirname(fileURLToPath(import.meta.url));
-const REGISTRY_PATH = path.join(HERE, "person-id-registry.json");
-
-assert.ok(existsSync(REGISTRY_PATH), "person-id-registry.json이 있어야 한다 (먼저 --write로 생성한다)");
 
 // 승인각 해시가 어긋나면 loadApprovedContext가 던진다 → 테스트 수집 자체가 실패한다 (fail closed).
 const ctx = loadApprovedContext();
-const committedBytes = readFileSync(REGISTRY_PATH, "utf8");
+const committedBytes = readSourceArchive("lore/name-pools/person-id-registry.json", "c02b435da25b09a2c388b694a656242e150de9d169da9fb59c21f6880ac4a63a").toString("utf8");
+assert.ok(committedBytes.length, "person-id-registry.json archive가 있어야 한다");
 const committed = JSON.parse(committedBytes);
 
 test("(a) 승인각 입력에서 재생성한 레지스트리가 커밋된 파일과 바이트 단위로 같다", () => {
@@ -151,8 +145,7 @@ test("fail closed — successor note 또는 명부의 추가 변이는 거부한
 });
 
 test("fail closed — successor 증명의 변조·누락·등록 삭제를 거부한다", () => {
-  const root = path.resolve(HERE, "../..");
-  const readProof = (relative) => readFileSync(path.join(root, relative));
+  const readProof = (relative) => readSourceArchive(relative);
   const visited = [];
   personIdValuesHash(ctx.valuesBytes, (relative) => {
     visited.push(relative);

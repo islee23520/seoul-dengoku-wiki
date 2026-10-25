@@ -5,6 +5,9 @@ import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { listDocuments } from './cast-sqlite/document-read.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 
 const repo = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const lore = resolve(repo, 'lore')
@@ -12,7 +15,21 @@ const parse = (text) => fromMarkdown(text, { extensions: [gfm()], mdastExtension
 const walk = (node, visit) => { visit(node); for (const child of node.children ?? []) walk(child, visit) }
 const plain = (node) => node.value ?? (node.children ?? []).map(plain).join('')
 const slug = (text) => text.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
-const exists = async (path) => { try { return (await stat(path)).isFile() } catch { return false } }
+const currentDocuments = new Set()
+const typedTargets = new Map()
+const exists = async path => {
+  path = resolve(path)
+  if (currentDocuments.has(path) || typedTargets.has(path)) return true
+  if (path.startsWith(lore + '/') && path.endsWith('.json')) {
+    try {
+      typedTargets.set(path, readCanonicalDocument(relative(repo, path)))
+      return true
+    } catch (error) {
+      if (!/^E_CANONICAL_DOCUMENT_IDENTITY:|^E_SCOPE_DB_SOURCE_UNSUPPORTED/u.test(error.message)) throw error
+    }
+  }
+  try { return (await stat(path)).isFile() } catch { return false }
+}
 const files = []
 async function collect(dir) {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
@@ -27,7 +44,7 @@ const privatePages = new Set(['Cast-Profile-Contract', 'Cast-Registration-Templa
 async function anchors(path) {
   if (headingCache.has(path)) return headingCache.get(path)
   const text = extname(path) === '.json'
-    ? renderLoreMarkdown(JSON.parse(await readFile(path, 'utf8')), 'ko')
+    ? renderLoreMarkdown(typedTargets.get(resolve(path)) ?? (currentDocuments.has(resolve(path)) ? readCanonicalDocument(relative(repo, path)) : JSON.parse(await readFile(path, 'utf8'))), 'ko')
     : await readFile(path, 'utf8')
   const ids = new Set()
   walk(parse(text), (node) => {
@@ -48,13 +65,21 @@ async function anchors(path) {
 export async function loreLinkFailures() {
   files.length = 0
   headingCache.clear()
+  currentDocuments.clear()
+  typedTargets.clear()
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(repo, 'data/canonical/wiki-cast.sqlite'))
+  try {
+    for (const corpusKind of ['current', 'example']) for (const identity of listDocuments(db, { corpusKind, visibility: 'internal' }))
+      currentDocuments.add(resolve(repo, identity.logical_path))
+  } finally { db.close() }
   await collect(lore)
+  for (const path of currentDocuments) if (!files.includes(path)) files.push(path)
   const failures = []
   async function targetFor(path) {
     if (extname(path) === '.md') {
       const json = path.slice(0, -3) + '.json'
       if (await exists(json)) {
-        const value = JSON.parse(await readFile(json, 'utf8'))
+        const value = typedTargets.get(resolve(json)) ?? (currentDocuments.has(resolve(json)) ? readCanonicalDocument(relative(repo, json)) : JSON.parse(await readFile(json, 'utf8')))
         if (Array.isArray(value.content) && value.domain) return json
       }
     }
@@ -100,7 +125,7 @@ export async function loreLinkFailures() {
       walk(parse(await readFile(file, 'utf8')), (node) => { if (node.type === 'link' || node.type === 'image') links.push(node.url) })
       for (const href of links) await check(href, file)
     } else {
-      const json = JSON.parse(await readFile(file, 'utf8'))
+      const json = currentDocuments.has(resolve(file)) ? readCanonicalDocument(relative(repo, file)) : JSON.parse(await readFile(file, 'utf8'))
       const references = []
       function scan(value) {
         if (Array.isArray(value)) { value.forEach(scan); return }

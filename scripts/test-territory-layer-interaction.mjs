@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 // @vitest-environment jsdom
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -7,10 +8,10 @@ import { test, vi } from 'vitest'
 import { MemoryRouter } from 'react-router-dom'
 import OpeningTerritoryMap from '../src/components/OpeningTerritoryMap.tsx'
 import { projectGeographicTitles } from '../src/components/geographicTitleMap.mjs'
-import { geographicTitleColor } from '../src/components/geographicTitleMap.mjs'
+import { geographicTitleColor, publicGeographicId, publicGeographicSlot } from '../src/components/geographicTitleMap.mjs'
 
 test('each rank spreads its title hues around the palette without sequential ID collisions', async () => {
-  const source = JSON.parse(await readFile('lore/regions/seoul-electoral-titles.json', 'utf8'))
+  const source = readCanonicalDocument('lore/regions/seoul-electoral-titles.json')
   for (const rank of ['county', 'duchy', 'kingdom']) {
     const ids = source.titles.filter(title => title.rank === rank).map(title => title.titleId)
     const hues = ids.map(id => Number(geographicTitleColor(id, ids).match(/hsl\((\d+)/u)[1]))
@@ -42,7 +43,7 @@ test('map buttons and arrow keys pan within Seoul bounds and Escape closes detai
 
 async function mountMap(initialEntries = ['/'], mutate = () => {}) {
   const data = JSON.parse(await readFile('public/opening-territories.json', 'utf8'))
-  const staging = JSON.parse(await readFile('lore/regions/seoul-electoral-titles.json', 'utf8'))
+  const staging = readCanonicalDocument('lore/regions/seoul-electoral-titles.json')
   const boundaries = JSON.parse(await readFile('data/geography/boundaries/seoul-sgis-20250630.geojson', 'utf8'))
   const geography = projectGeographicTitles(staging, boundaries, (longitude, latitude) => {
     const x = (longitude - data.projection.minEast) / (data.projection.maxEast - data.projection.minEast) * data.width
@@ -101,8 +102,10 @@ test('political mode exposes only 48 Seoul counties and the three factions plus 
     const counties = [...host.querySelectorAll('[data-title-rank="county"]')]
     assert.equal(counties.length, 48)
     assert.equal(host.querySelectorAll('[data-vassal-marker], [data-outside-unit], .territory-faction-flag').length, 0)
-    assert.deepEqual(new Set(counties.map(path => path.getAttribute('data-political-affiliation'))), new Set(['규격맹', '대한민국정부', '종교 연합', '중립']))
-    assert.deepEqual([...host.querySelectorAll('[aria-label="서울 정치 권역 범례"] > span > span:last-child')].map(node => node.textContent), ['규격맹', '대한민국정부', '종교 연합', '중립'])
+    assert.deepEqual(new Set(counties.map(path => path.getAttribute('data-political-affiliation'))), new Set(['규격맹', '대한민국정부', '종교 연합', '혼재 (규격맹 · 대한민국정부)', '혼재 (대한민국정부 · 종교 연합)', '혼재 (대한민국정부 · 중립)']))
+    assert.equal(counties.filter(path => path.getAttribute('data-political-affiliation')?.startsWith('혼재')).length, 4)
+    assert.equal(counties.filter(path => path.getAttribute('data-political-affiliation') === '중립').length, 0)
+    assert.deepEqual([...host.querySelectorAll('[aria-label="서울 정치 권역 범례"] > span > span:last-child')].map(node => node.textContent), ['규격맹', '대한민국정부', '종교 연합', '중립', '혼재'])
     assert.equal(host.querySelector('[aria-label="지리 작위 등급"]'), null)
   } finally { await unmount() }
 })
@@ -190,13 +193,13 @@ test('external title payload fails closed even when valid county counts remain',
 test('county slot fields match independent source facts through all four rank stages', async () => {
   const { host, unmount } = await mountMap()
   try {
-    const source = JSON.parse(await readFile('lore/regions/seoul-electoral-titles.json', 'utf8'))
+    const source = readCanonicalDocument('lore/regions/seoul-electoral-titles.json')
     const county = source.countySlots[0]
     await act(async () => { [...host.querySelectorAll('.territory-mode-toggle button')].find(button => button.textContent === '작위·영주 지도').click() })
-    await act(async () => { host.querySelector(`[data-title-id="${county.countyTitleId}"]`).dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
+    await act(async () => { host.querySelector(`[data-title-id="${publicGeographicId(county.countyTitleId, 'county')}"]`).dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
     const current = source.currentCorrespondenceSlots.find(row => row.countyTitleId === county.countyTitleId)
     for (const slot of [...county.slots, ...current.slots]) {
-      const rendered = host.querySelector(`[data-barony-slot="${slot.slotId}"]`)
+      const rendered = host.querySelector(`[data-barony-slot="${publicGeographicSlot(slot).id}"]`)
       assert.ok(rendered)
       assert.ok(rendered.textContent.includes(slot.name))
       assert.equal(rendered.dataset.slotStatus, slot.status)

@@ -6,6 +6,7 @@ import test from 'node:test';
 import { DatabaseSync } from 'node:sqlite';
 import { FAMILY_TABLE_COLUMNS, mapFamilyDomains } from './current-family.mjs';
 import { parseDocument } from './sources.mjs';
+import { readSourceArchive } from './source-archive.mjs';
 
 const FAMILY_SOURCES = Object.freeze([
   'cast-birthdays',
@@ -20,10 +21,10 @@ const FAMILY_SOURCES = Object.freeze([
 
 async function corpus() {
   const root = resolve(import.meta.dirname, '..', '..');
-  const registry = JSON.parse(await readFile(resolve(root, 'lore/name-pools/person-id-registry.json'), 'utf8'));
+  const registry = JSON.parse(readSourceArchive('lore/name-pools/person-id-registry.json'));
   const files = await Promise.all(FAMILY_SOURCES.map(async (name, index) => {
     const logical_path = `lore/name-pools/${name}.json`;
-    const raw_bytes = await readFile(resolve(root, logical_path));
+    const raw_bytes = readSourceArchive(logical_path);
     const parsed = parseDocument(raw_bytes.toString('utf8'));
     return {
       source_id: index + 1,

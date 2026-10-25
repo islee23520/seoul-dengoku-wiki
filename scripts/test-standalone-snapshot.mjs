@@ -44,9 +44,11 @@ describe('standalone pure holdings snapshot inputs', () => {
         import { loadApprovedOrganizationAliases } from ${JSON.stringify(new URL('./approved-organization-aliases.mjs', import.meta.url).href)};
         import { loadDataset, validate } from ${JSON.stringify(new URL('../lore/relations/validate.mjs', import.meta.url).href)};
         import { renderLoreMarkdown } from ${JSON.stringify(new URL('./lore-json-render.mjs', import.meta.url).href)};
+        import { readCanonicalDocument } from ${JSON.stringify(new URL('./cast-sqlite/canonical-document.mjs', import.meta.url).href)};
+        import { readSourceArchive } from ${JSON.stringify(new URL('./cast-sqlite/source-archive.mjs', import.meta.url).href)};
         const root = ${JSON.stringify(root)};
         const read = path => readFile(resolve(root, path));
-        const json = async path => JSON.parse(await read(path));
+        const json = async path => path.startsWith('lore/') ? readCanonicalDocument(path, { predecessor: true }) : JSON.parse(await read(path));
         const courtDataset = loadDataset();
         const errors = validate(courtDataset);
         if (errors.length) throw new Error(errors.join('; '));
@@ -71,7 +73,7 @@ describe('standalone pure holdings snapshot inputs', () => {
             if (process.argv[1] && path.endsWith('/SeoulWorldGraph.json')) await readFile(process.argv[1]);
             return readFile(resolve(${JSON.stringify(scratch)}, path.slice('snapshots/build-inputs/'.length)));
           }
-          return read(path);
+          return readSourceArchive(path);
         };
         const context = await loadPersonHoldingsContext(sources, { repoRoot: root,
           ...projectPersonStateInputs(rendered, pages, { organizationAliases }) });
@@ -80,6 +82,11 @@ describe('standalone pure holdings snapshot inputs', () => {
       const allowed = [resolve(root, 'scripts'), resolve(root, 'lore'), resolve(root, 'vendor'),
         await realpath(resolve(root, 'node_modules')), resolve(root, 'package.json'),
         resolve(root, proposalPath), resolve(root, approvalPath),
+        resolve(root, 'data/canonical/wiki-cast.sqlite'),
+        resolve(root, '.omo/private/seoul-migration/sqlite-authority-20261021/editorial.sqlite'),
+        await realpath(resolve(root, '.omo/private/seoul-migration/sqlite-authority-20261021/editorial.sqlite')),
+        resolve(root, '.omo/private/seoul-migration/sqlite-authority-20261021/scope-atlas-reader-capture-20261021.sqlite'),
+        await realpath(resolve(root, '.omo/private/seoul-migration/sqlite-authority-20261021/scope-atlas-reader-capture-20261021.sqlite')),
         manifestPath, ...snapshotPaths]
       const args = ['--permission', ...allowed.map(path => '--allow-fs-read=' + path), '--input-type=module', '-e', code]
       const options = { cwd: root, encoding: 'utf8', timeout: 30000, killSignal: 'SIGKILL',

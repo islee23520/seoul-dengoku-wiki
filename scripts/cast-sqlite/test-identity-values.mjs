@@ -1,3 +1,4 @@
+import { readSourceArchive } from './source-archive.mjs';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -167,7 +168,7 @@ for (const [description, code, mutate] of invalidCases) {
 }
 
 test('maps the approved full corpus with exact counts and the K088 route counterexample', { skip: !process.env.CAST_SQLITE_SOURCE_ROOT }, () => {
-  const bundle = { files: sourceNames.map((name, index) => ({ source_id: index + 1, logical_path: `lore/name-pools/${name}.json`, document: JSON.parse(readFileSync(join(process.env.CAST_SQLITE_SOURCE_ROOT, 'lore/name-pools', `${name}.json`), 'utf8')) })) };
+  const bundle = { files: sourceNames.map((name, index) => ({ source_id: index + 1, logical_path: `lore/name-pools/${name}.json`, document: JSON.parse(readSourceArchive(`lore/name-pools/${name}.json`).toString('utf8')) })) };
   const rows = mapIdentityDomains(bundle);
   assert.equal(rows.people.length, 1022);
   assert.equal(new Set(rows.people.map(person => person.person_id)).size, 1022);

@@ -1,0 +1,27 @@
+-- Private initial Soul-Assignments snapshot. Named domain tables, no JSON authority.
+-- The explicit soul-assignment-edit.sql migration adds immutable draft revisions.
+CREATE TABLE soul_revision (singleton INTEGER PRIMARY KEY CHECK(singleton=1), source_sha256 TEXT NOT NULL, snapshot_sha256 TEXT NOT NULL, assignment_count INTEGER NOT NULL, actor TEXT NOT NULL, reason TEXT NOT NULL, initialized_at TEXT NOT NULL) STRICT;
+CREATE TABLE soul_archive (singleton INTEGER PRIMARY KEY CHECK(singleton=1), sha256 TEXT NOT NULL, raw_bytes BLOB NOT NULL) STRICT;
+CREATE TRIGGER soul_archive_no_update BEFORE UPDATE ON soul_archive BEGIN SELECT RAISE(ABORT,'immutable soul evidence'); END;
+CREATE TRIGGER soul_archive_no_delete BEFORE DELETE ON soul_archive BEGIN SELECT RAISE(ABORT,'immutable soul evidence'); END;
+CREATE TABLE soul_identity (person_id TEXT PRIMARY KEY NOT NULL) STRICT;
+CREATE TABLE soul_document (row_key TEXT PRIMARY KEY NOT NULL, parent_key TEXT NOT NULL, ordinal INTEGER NOT NULL CHECK(ordinal>=0), field_order TEXT NOT NULL, "schema" TEXT, "status" TEXT, "visibility" TEXT, "maximumSoulsPerPerson" INTEGER, "assignmentPolicy" TEXT, "interpretationPolicy" TEXT, "sourceRegistry" TEXT, "pending" TEXT, UNIQUE(parent_key,ordinal)) STRICT;
+CREATE INDEX soul_document_parent ON soul_document(parent_key,ordinal);
+CREATE TABLE soul_coverage (row_key TEXT PRIMARY KEY NOT NULL, parent_key TEXT NOT NULL, ordinal INTEGER NOT NULL CHECK(ordinal>=0), field_order TEXT NOT NULL, "registeredPeople" INTEGER, "assignedPeople" INTEGER, "complete" INTEGER CHECK("complete" IN (0,1)), UNIQUE(parent_key,ordinal)) STRICT;
+CREATE INDEX soul_coverage_parent ON soul_coverage(parent_key,ordinal);
+CREATE TABLE soul_assignment (row_key TEXT PRIMARY KEY NOT NULL, parent_key TEXT NOT NULL, ordinal INTEGER NOT NULL CHECK(ordinal>=0), field_order TEXT NOT NULL, "personId" TEXT, "name" TEXT, "status" TEXT, "narrativeRationale" TEXT, "counterEvidence" TEXT, "evidenceStrength" TEXT, "duplicateRationale" TEXT, "approvalRef" TEXT, counter_kind TEXT CHECK(counter_kind IN ('text','array')), UNIQUE(parent_key,ordinal)) STRICT;
+CREATE INDEX soul_assignment_parent ON soul_assignment(parent_key,ordinal);
+CREATE TABLE soul_soul (row_key TEXT PRIMARY KEY NOT NULL, parent_key TEXT NOT NULL, ordinal INTEGER NOT NULL CHECK(ordinal>=0), field_order TEXT NOT NULL, "id" TEXT, "name" TEXT, "period" TEXT, "sourceKind" TEXT, "interpretation" TEXT, UNIQUE(parent_key,ordinal)) STRICT;
+CREATE INDEX soul_soul_parent ON soul_soul(parent_key,ordinal);
+CREATE TABLE soul_evidence (row_key TEXT PRIMARY KEY NOT NULL, parent_key TEXT NOT NULL, ordinal INTEGER NOT NULL CHECK(ordinal>=0), field_order TEXT NOT NULL, "path" TEXT, "anchor" TEXT, "quote" TEXT, "sourcePointer" TEXT, "sourceSelector" TEXT, "currentFactAuthority" INTEGER CHECK("currentFactAuthority" IN (0,1)), UNIQUE(parent_key,ordinal)) STRICT;
+CREATE INDEX soul_evidence_parent ON soul_evidence(parent_key,ordinal);
+CREATE TABLE soul_comparison (row_key TEXT PRIMARY KEY NOT NULL, parent_key TEXT NOT NULL, ordinal INTEGER NOT NULL CHECK(ordinal>=0), field_order TEXT NOT NULL, "candidatePath" TEXT, "candidateId" TEXT, "sourceKind" TEXT, "careerSummary" TEXT, "interpretation" TEXT, "path" TEXT, "interpretiveScope" TEXT, "candidateLedger" TEXT, "interpretationOnly" INTEGER CHECK("interpretationOnly" IN (0,1)), "primarySourcesVerified" INTEGER CHECK("primarySourcesVerified" IN (0,1)), "anchor" TEXT, "narrativeFit" TEXT, UNIQUE(parent_key,ordinal)) STRICT;
+CREATE INDEX soul_comparison_parent ON soul_comparison(parent_key,ordinal);
+CREATE TABLE soul_historical_source (row_key TEXT PRIMARY KEY NOT NULL, parent_key TEXT NOT NULL, ordinal INTEGER NOT NULL CHECK(ordinal>=0), field_order TEXT NOT NULL, "url" TEXT, "sourceType" TEXT, "accessMethod" TEXT, "accessedOn" TEXT, source_kind TEXT NOT NULL CHECK(source_kind IN ('url','record')), UNIQUE(parent_key,ordinal)) STRICT;
+CREATE INDEX soul_historical_source_parent ON soul_historical_source(parent_key,ordinal);
+CREATE TABLE soul_candidate_period (row_key TEXT PRIMARY KEY NOT NULL, parent_key TEXT NOT NULL, ordinal INTEGER NOT NULL CHECK(ordinal>=0), field_order TEXT NOT NULL, "value" TEXT NOT NULL, UNIQUE(parent_key,ordinal)) STRICT;
+CREATE INDEX soul_candidate_period_parent ON soul_candidate_period(parent_key,ordinal);
+CREATE TABLE soul_comparison_limitation (row_key TEXT PRIMARY KEY NOT NULL, parent_key TEXT NOT NULL, ordinal INTEGER NOT NULL CHECK(ordinal>=0), field_order TEXT NOT NULL, "value" TEXT NOT NULL, UNIQUE(parent_key,ordinal)) STRICT;
+CREATE INDEX soul_comparison_limitation_parent ON soul_comparison_limitation(parent_key,ordinal);
+CREATE TABLE soul_counter_item (row_key TEXT PRIMARY KEY NOT NULL, parent_key TEXT NOT NULL, ordinal INTEGER NOT NULL CHECK(ordinal>=0), field_order TEXT NOT NULL, "value" TEXT NOT NULL, UNIQUE(parent_key,ordinal)) STRICT;
+CREATE INDEX soul_counter_item_parent ON soul_counter_item(parent_key,ordinal);

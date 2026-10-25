@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import portraitCatalog from '../../portrait-catalog.json'
+import { portraitSourceCatalog as portraitCatalog } from '../generated/portraitSourceCatalog'
 import { peopleCatalog } from '../generated/peopleCatalog'
 import { fetchPortraitToken, portraitPromptApiUrl, portraitTokenApiUrl, portraitTokenStaticUrl } from '../portraitTokenApi'
 import { cameraViews, composePortraitPrompt, editedPortraitToken, localCharacterArguments, mangaStyles, portraitPromptYAML, publicChoices, type PortraitToken, type PromptOverrides } from './portraitPrompt'
@@ -8,7 +8,7 @@ import { cameraViews, composePortraitPrompt, editedPortraitToken, localCharacter
 export default function PortraitPromptPanel() {
   const [searchParams, setSearchParams] = useSearchParams()
   const requestedPerson = searchParams.get('person')
-  const [personId, setPersonId] = useState(peopleCatalog.find(entry => entry.id === requestedPerson)?.id ?? portraitCatalog.entries[0]?.personId ?? '')
+  const [personId, setPersonId] = useState<string>(peopleCatalog.find(entry => entry.id === requestedPerson)?.id ?? portraitCatalog.entries[0]?.personId ?? '')
   const hasToken = peopleCatalog.some(entry => entry.id === personId)
   const [token, setToken] = useState<PortraitToken | null>(null)
   const [tokenError, setTokenError] = useState('')

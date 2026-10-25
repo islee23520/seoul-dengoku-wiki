@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 // @vitest-environment jsdom
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -129,7 +130,7 @@ test.each([
   ['person-1003', 'K1003', '인물-조재표-p1-expanded-4'],
   ['person-1004', 'K1004', '인물-이연-p1-expanded-5'],
 ])('full reader sections and biography bind distinct guard occurrences for %s', async (id, issuedId, blockAnchor) => {
-  const envelope = JSON.parse(await readFile('lore/characters/Cast-Unaffiliated.json', 'utf8'))
+  const envelope = readCanonicalDocument('lore/characters/Cast-Unaffiliated.json')
   const detail = JSON.parse(await readFile(`public/person-details/${id}.json`, 'utf8'))
   assert.equal(detail.gurps.id, issuedId)
   const blockIndex = envelope.content.findIndex((block) => block.anchor === blockAnchor)

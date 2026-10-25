@@ -3,6 +3,7 @@ import { execFileSync } from 'node:child_process'
 import { readFileSync, readdirSync, existsSync } from 'node:fs'
 import { resolve, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
 
 const root = fileURLToPath(new URL('../', import.meta.url))
 // These seals bind the existing preservation declarations, not arbitrary manifests
@@ -38,8 +39,9 @@ export function checkRetiredStateNames(directory = root) {
   for (const path of ['src/generated', 'src/generated-private', 'public', 'dist']) collect(resolve(directory, path))
   const preserved = []
   for (const manifest of historyManifests) {
-    if (!files.has(manifest.path)) continue
-    const manifestBytes = readFileSync(resolve(directory, manifest.path))
+    if (!files.has(manifest.path) && !(resolve(directory) === resolve(root) && manifest.path === 'scripts/issued-preservation-baseline.json')) continue
+    const manifestBytes = resolve(directory) === resolve(root) && manifest.path === 'scripts/issued-preservation-baseline.json'
+      ? readSourceArchive(manifest.path, manifest.sha256) : readFileSync(resolve(directory, manifest.path))
     if (sha256(manifestBytes) !== manifest.sha256) throw new Error('E_RETIRED_HISTORY_MANIFEST_HASH:' + manifest.path)
     for (const [path, expected] of manifest.entries(JSON.parse(manifestBytes.toString('utf8')))) {
       const bytes = readFileSync(resolve(directory, path))

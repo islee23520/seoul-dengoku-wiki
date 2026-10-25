@@ -5,8 +5,13 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { ENGINE_PRIVATE_SOURCE_PATHS } from './current-engine.mjs';
 import { REFERENCE_TARGET_PATHS } from './source-closure.mjs';
-import { loadExcludedSourceFiles } from './excluded-sources.mjs';
+import { loadExcludedSourceFiles, EXCLUDED_SOURCE_MANIFEST } from './excluded-sources.mjs';
 import { TEXT_SOURCE_PATHS } from './text-corpus-manifest.mjs';
+import { existsSync } from 'node:fs';
+import { openReadOnly } from './db.mjs';
+import { readSourceArchive } from './source-archive.mjs';
+import { readPrivateSourceArchive } from '../document-store/private-source-archive.mjs';
+import { EDITORIAL_PROFILE_SOURCE_HASHES as privateProfilePins } from '../document-store/editorial-profile.mjs';
 
 export const DATA_SOURCE_PATHS = Object.freeze([
   'scripts/approved-seoul-rights-transition.json', 'scripts/approved-daejeon-nonowning-rights.json',
@@ -30,6 +35,15 @@ export const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex'
 const fail = (code, message) => { throw Object.assign(new Error(`${code}: ${message}`), { code }); };
 const escapePointer = (key) => key.replace(/~/g, '~0').replace(/\//g, '~1');
 const environment = () => ({ ...Object.fromEntries(Object.entries(process.env).filter(([key]) => /^(PATH|SYSTEMROOT|WINDIR|TEMP|TMP|HOME|USERPROFILE|LANG|LC_ALL)$/i.test(key))), GIT_NO_REPLACE_OBJECTS: '1' });
+
+const authorityPath = root => resolve(root, 'data/canonical/wiki-cast.sqlite');
+const hasDocumentAuthority = root => existsSync(authorityPath(root));
+// This module replays the original import only. Runtime current documents use
+// the typed dispatcher, never this archived source bundle or source_record.
+async function importSourceBytes(root, logicalPath) {
+  if (hasDocumentAuthority(root)) return readSourceArchive(logicalPath, undefined, authorityPath(root));
+  return readFile(await resolveTrustedSourcePath(root, logicalPath));
+}
 
 export async function resolveTrustedSourceRoot(sourceRoot) {
   if (typeof sourceRoot !== 'string' || !isAbsolute(sourceRoot)) fail('E_SOURCE_ROOT', 'sourceRoot must be an absolute WIKI directory');
@@ -147,6 +161,19 @@ function run(command, args, cwd) {
 }
 
 async function verifySnapshot(root, files) {
+  if (hasDocumentAuthority(root)) {
+    const db = openReadOnly(authorityPath(root));
+    try {
+      for (const file of files) {
+        const source = db.prepare('SELECT sha256 FROM source_file WHERE logical_path=?').get(file.logical_path)
+          ?? db.prepare('SELECT sha256 FROM reference_source WHERE logical_path=?').get(file.logical_path)
+          ?? db.prepare('SELECT sha256 FROM excluded_source WHERE logical_path=?').get(file.logical_path)
+          ?? db.prepare('SELECT source_sha256 AS sha256 FROM current_engine_source WHERE logical_path=?').get(file.logical_path);
+        if (!source || source.sha256 !== file.sha256) fail('E_SOURCE_CHANGED', file.logical_path);
+      }
+    } finally { db.close(); }
+    return;
+  }
   for (const file of files) {
     const path = await resolveTrustedSourcePath(root, file.logical_path);
     if (sha256(await readFile(path)) !== file.sha256) fail('E_SOURCE_CHANGED', file.logical_path);
@@ -154,6 +181,9 @@ async function verifySnapshot(root, files) {
 }
 
 async function verifyGitInputs(root, files, sourceRevision) {
+  // A sealed historical import is bound to its stored source revision, not the
+  // current Git tree from which the old JSON files have been removed.
+  if (hasDocumentAuthority(root)) return;
   const paths = [...new Set(files.map((file) => file.logical_path))].sort();
   const pathspecs = paths.map((path) => `:(literal)${path}`);
   const objectFormat = sourceRevision.length === 40 ? 'sha1' : sourceRevision.length === 64 ? 'sha256' : null;
@@ -193,8 +223,9 @@ async function verifyGitInputs(root, files, sourceRevision) {
 
 async function loadPrivateEngineFiles(root) {
   return Promise.all(ENGINE_PRIVATE_SOURCE_PATHS.map(async (logical_path) => {
-    const path = await resolveTrustedSourcePath(root, logical_path);
-    const rawBytes = await readFile(path);
+    const rawBytes = hasDocumentAuthority(root)
+      ? readPrivateSourceArchive(root, logical_path, privateProfilePins[logical_path])
+      : await readFile(await resolveTrustedSourcePath(root, logical_path));
     let text;
     try { text = new TextDecoder('utf-8', { fatal: true, ignoreBOM: true }).decode(rawBytes); } catch { fail('E_SOURCE_UTF8', logical_path); }
     const document = parseDocument(text).document;
@@ -205,8 +236,7 @@ async function loadPrivateEngineFiles(root) {
 async function loadReferenceFiles(root) {
   const extraPaths = REFERENCE_TARGET_PATHS.filter((logicalPath) => !REQUIRED_SOURCE_PATHS.includes(logicalPath));
   return Promise.all(extraPaths.map(async (logical_path) => {
-    const path = await resolveTrustedSourcePath(root, logical_path);
-    const rawBytes = await readFile(path);
+    const rawBytes = await importSourceBytes(root, logical_path);
     let document = null;
     if (logical_path.endsWith('.json')) {
       let text;
@@ -230,21 +260,25 @@ async function verifyEvidencePaths(root, document) {
   visit(document);
   for (const path of [...paths].sort()) {
     if (RETIRED_HISTORICAL_REFERENCE_PATHS.includes(path)) continue;
-    await resolveTrustedSourcePath(root, path);
     if (!DATA_SOURCE_PATHS.includes(path) && !REFERENCE_TARGET_PATHS.includes(path)) fail('E_SOURCE_MANIFEST', path);
+    if (!hasDocumentAuthority(root)) await resolveTrustedSourcePath(root, path);
   }
 }
 export async function loadSourceBundle({ sourceRoot, runOfficialChecks = true }) {
   if (typeof runOfficialChecks !== 'boolean') fail('E_SOURCE_OPTIONS', 'runOfficialChecks must be boolean');
   const root = await resolveTrustedSourceRoot(sourceRoot);
   const revision = run('git', ['-C', root, 'rev-parse', 'HEAD'], root);
-  const sourceRevision = revision.stdout.trim();
+  let sourceRevision = revision.stdout.trim();
   if (revision.exitCode !== 0 || !/^[a-f0-9]{40,64}$/u.test(sourceRevision)) fail('E_SOURCE_REVISION', 'source root has no Git HEAD');
+  if (hasDocumentAuthority(root)) {
+    const db = openReadOnly(authorityPath(root));
+    try { sourceRevision = db.prepare("SELECT value FROM build_metadata WHERE key='source_git_commit'").get().value; }
+    finally { db.close(); }
+  }
   const files = [];
   const records = [];
   for (const logical_path of REQUIRED_SOURCE_PATHS) {
-    const path = await resolveTrustedSourcePath(root, logical_path);
-    const raw_bytes = await readFile(path);
+    const raw_bytes = await importSourceBytes(root, logical_path);
     let text;
     try { text = new TextDecoder('utf-8', { fatal: true, ignoreBOM: true }).decode(raw_bytes); } catch { fail('E_SOURCE_UTF8', logical_path); }
     const parsed = logical_path.endsWith('.json') ? parseDocument(text) : { document: null, records: [] };
@@ -256,21 +290,26 @@ export async function loadSourceBundle({ sourceRoot, runOfficialChecks = true })
   await verifyEvidencePaths(root, files.find((file) => file.logical_path === 'lore/name-pools/gurps-cast.json').document);
   const referenceFiles = Object.freeze(await loadReferenceFiles(root));
   const engineFiles = Object.freeze(await loadPrivateEngineFiles(root));
-  const excludedFiles = await loadExcludedSourceFiles({ sourceRoot: root, resolveTrustedSourcePath, sha256 });
+  const excludedFiles = hasDocumentAuthority(root) ? (() => {
+    const db = openReadOnly(authorityPath(root));
+    try { return Object.freeze(EXCLUDED_SOURCE_MANIFEST.map(entry => Object.freeze({ ...entry,
+      ...db.prepare('SELECT sha256,byte_length FROM excluded_source WHERE logical_path=?').get(entry.logical_path) }))); }
+    finally { db.close(); }
+  })() : await loadExcludedSourceFiles({ sourceRoot: root, resolveTrustedSourcePath, sha256 });
   const allInputs = [...files, ...referenceFiles, ...engineFiles, ...excludedFiles];
   await verifySnapshot(root, allInputs);
   await verifyGitInputs(root, allInputs, sourceRevision);
   const sourceSetSha256 = sha256([...files, ...referenceFiles, ...excludedFiles].sort((a, b) => a.logical_path.localeCompare(b.logical_path)).map((file) => `${file.logical_path}\0${file.sha256}\n`).join(''));
   const officialChecks = [];
   const gurpsSchema = files.find((file) => file.logical_path === 'lore/name-pools/gurps-cast.json').document.schema;
-  if (runOfficialChecks && gurpsSchema !== 'wiki-gurps-cast.v1') {
+  if (runOfficialChecks && gurpsSchema !== 'wiki-gurps-cast.v1' && !hasDocumentAuthority(root)) {
     const script = await resolveTrustedSourcePath(root, 'scripts/gurps-cast.mjs');
     await verifySnapshot(root, allInputs);
     officialChecks.push(Object.freeze({ checkName: 'gurps-cast', ...run(process.execPath, [script, '--check', '--revision', sourceRevision], root) }));
   }
   await verifySnapshot(root, allInputs);
   await verifyGitInputs(root, allInputs, sourceRevision);
-  if (run('git', ['-C', root, 'rev-parse', 'HEAD'], root).stdout.trim() !== sourceRevision) fail('E_SOURCE_CHANGED', 'Git HEAD changed while loading');
+  if (!hasDocumentAuthority(root) && run('git', ['-C', root, 'rev-parse', 'HEAD'], root).stdout.trim() !== sourceRevision) fail('E_SOURCE_CHANGED', 'Git HEAD changed while loading');
   return Object.freeze({ sourceRevision, sourceSetSha256, files: Object.freeze(files), records: Object.freeze(records), referenceFiles, engineFiles, excludedFiles, officialChecks: Object.freeze(officialChecks) });
 }
 

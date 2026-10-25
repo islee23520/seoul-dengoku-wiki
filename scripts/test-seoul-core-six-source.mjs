@@ -1,9 +1,22 @@
+import { afterAll } from 'vitest'
 import assert from 'node:assert/strict'
-import { readFile } from 'node:fs/promises'
+import { readFile as readDiskFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { test } from 'vitest'
 import { loadAppliedBatches } from './seoul-census.mjs'
+
+const inputRoot = new URL('../', import.meta.url).pathname
+const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
+const inputConfig = JSON.parse(await readDiskFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG ?? new URL('../.omo/private/seoul-migration/sqlite-authority-20261021/publication-config.json', import.meta.url), 'utf8'))
+const inputBundle = await openPublicationDatabaseInputs(inputRoot, inputConfig)
+const readFile = async (path, encoding) => {
+  const absolute = path instanceof URL ? path.pathname : path
+  if (!absolute.startsWith(inputRoot + 'lore/') && !String(path).startsWith('lore/')) return readDiskFile(path, encoding)
+  const bytes = await inputBundle.inputs.readBytes(absolute.startsWith(inputRoot) ? absolute : new URL('../' + path, import.meta.url).pathname)
+  return encoding === 'utf8' ? bytes.toString() : bytes
+}
+afterAll(() => inputBundle.close())
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const packetPath = '.omo/private/seoul-migration/core-six-reviewed-source-application-20261015/application-packet.json'

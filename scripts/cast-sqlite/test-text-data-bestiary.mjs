@@ -6,11 +6,12 @@ import { flattenJson, sha256 } from './sources.mjs';
 import { TEXT_DOCUMENT_MANIFEST } from './text-corpus-manifest.mjs';
 import { mapTextCorpusDocuments, TEXT_CORPUS_DOCUMENTS_TABLE_COLUMNS } from './text-corpus-documents.mjs';
 import { BESTIARY_TABLE_COLUMNS, mapBestiaryData, reconstructBestiaryData } from './text-data-bestiary.mjs';
+import { readSourceArchive } from './source-archive.mjs';
 
 // Preserve manifest/bundle source numbering, including gaps between bestiary files.
 const files = TEXT_DOCUMENT_MANIFEST.flatMap((entry, index) => {
   if (!entry.logical_path.startsWith('lore/bestiary/')) return [];
-  const raw_bytes = readFileSync(new URL(`../../${entry.logical_path}`, import.meta.url));
+  const raw_bytes = readSourceArchive(entry.logical_path);
   return [{ ...entry, source_id: index + 1, raw_bytes, sha256: sha256(raw_bytes),
     document: JSON.parse(raw_bytes), content_policy: 'local-corpus' }];
 });

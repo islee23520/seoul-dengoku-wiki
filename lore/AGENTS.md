@@ -1,38 +1,35 @@
-# lore — 세계 설정 원천
+# LORE 루트 코퍼스 — SQLite 정본과 논리 식별자
 
-## OVERVIEW
-Atlas의 기계 레지스트리와 도메인별 JSON 저작 원천을 관리한다.
+별개 도메인이다. 루트 계약과 하위 도메인별 `AGENTS.md`를 함께 읽는다.
 
-## STRUCTURE
-- `characters/`・`name-pools/`: 인물 본문·영구 ID·명명·가계·수치 원장.
-- `factions/`・`relations/`: 정치 주체와 인물·주종·사건 연결.
-- `places/`・`regions/`: 지도·역·행정구역·영지 원천.
-- `culture/`・`chronology/`: 생활문화·연대·개막 조건.
-- `bestiary/`: Atlas에서 생성하는 생태·변이 도감.
-- `editorial/`: 비공개 계약·승인·soul·재배치·본문 검토.
+## 개요
 
-## WHERE TO LOOK
-| 작업 | 원천 |
-|---|---|
-| Atlas와 투영 | `World-Narrative-Atlas.json`, `Operating-Houses.json`, `Synthetic-Actors.json` |
-| 서사·관계 투영 | `Regional-Physical-AI-Arcs.json`, `World-Relation-Ledger.json`, `World-Expansion-Index.json` |
-| 저작 형식 | `AUTHORING-JSON.md`, `authoring*.schema.json`, 각 도메인 schema |
-| 목차·용어 | `README.md`, `glossary.json` |
-| 현재 인물·서울 계약 | `editorial/Character-System-Contract.json`, `editorial/Seoul-Scope-Contract.json` |
+2026-10-22 이관으로 `lore/`의 물리적 JSON 원천 파일은 모두 제거됐다. 저작 정본은 `lore/AUTHORING-JSON.md` 계약대로 Git-LFS로 관리하는 `data/canonical/wiki-cast.sqlite`다. 조회·편집·생성은 이 정본을 기준으로 하고, 전용 브랜치에서 작업해 PR로 제안하며 main 병합은 소유자만 한다.
 
-## CONVENTIONS
-- 선정 점수 10: 파일 수 3 + 하위 디렉터리 2 + 구조화 원천 비율 2 + 자체 schema 1 + LSP 심볼 밀도 2. JSON은 이 저장소의 저작 코드로 계산한다.
-- Atlas 투영은 원천과 `original_anchor`·`original_hash`를 연결한다. 도메인 원천과 생성 뷰의 소유권을 구분한다.
-- 본문은 한국어 한다체, 안내는 합니다체다. 구조 키는 영어이며 `연결` 필드는 교차 참조에 사용한다.
-- 문서 JSON의 Markdown 본문은 빌드 때 렌더한다. 원천과 동명인 공개 Markdown 사본은 `E_MARKDOWN_TWIN` 대상이다. 계약·README 같은 관리 Markdown과 구분한다.
-- 현재 인물 수를 옛 K001–K412나 1001명 설명에서 추정하지 말고 `name-pools/person-id-registry.json`을 확인한다.
+문서·출처 기록에 남아 있는 `lore/.../*.json` 이름은 DB 안의 논리적 문서 식별자 또는 provenance지, 디스크에서 다시 읽어야 할 입력 파일이 아니다. 생성된 공개 JSON은 SQLite에서 내보낸 출력물이므로 직접 고쳐 저작 원천으로 쓰지 않는다.
 
-## ANTI-PATTERNS
-- Atlas 투영을 직접 수정하지 않는다. `scripts/materialize-world-atlas.mjs`와 `scripts/world-atlas-render.mjs`가 생성 경계다.
-- 실존 기업의 로고·제품·현직 임원을 창작 범죄의 소재로 추가하지 않는다.
-- 합성체에 전지성·무한 에너지·완전한 장기 기억·전체망 접근·담당 구역 밖 시설 제어를 부여하지 않는다.
-- `editorial/`의 역사 모티브와 비공개 검토 자료를 공개 원천으로 복사하지 않는다.
+이 디렉터리에 남은 `.md`는 지침·목록 문서(이 파일, `AUTHORING-JSON.md`, `README.md`, 하위 도메인 `AGENTS.md`)다.
 
-## COMMANDS
-루트에서 `npm run test:lore-json`, `npm run test:lore-render`, `npm run test:lore-links`, `npm run test:atlas`를 변경 범위에 맞춰 실행한다.
-`npm run generate`와 `npm run build`는 게시용 데이터를 생성한다. 생성 성공은 설정 승인과 별개다.
+## 어디를 볼 것인가
+
+| 과제 | 위치 |
+|------|------|
+| 정본 계약·편집 절차 | `lore/AUTHORING-JSON.md`, `WORLD_BUILDING_GUIDE.md` |
+| 현재 검증 경로 | `scripts/lore-json-validate.mjs --strict`(현재·예시 문서를 SQLite에서 읽는다), `scripts/gate.mjs`, cast-sqlite 검증 슈트 |
+| 코퍼스 목차 | `README.md`(한국어 상대 링크) |
+| 하위 도메인 지침 | `bestiary/`, `characters/`, `factions/`, `places/`, `regions/`, `relations/`, `culture/`, `name-pools/` 각 `AGENTS.md` |
+| 구 레지스트리 지표 | 적대 집단 G01–G26, 운영 가문 HC01–HC22/HP01–HP10, 합성체 H/F/V01–16, 외부 극장 XT01–XT05, 배치 Mxxx/Bxxx — 논리 식별자 체계로 존속 |
+
+## 규약
+
+- 엔티티 ID는 영구적이고 다시 매기지 않는다. 인물 `K001`–`K412`(명부 행 순서), 국가 `S01`–`S16`, 집단·가문·합성체는 위 표의 접두어를 따른다. 은퇴·보존 표기는 ID 변경이 아니다.
+- 산문 계약: 한국어 3인칭 제한한다체 서사, 합니다체 안내. `source_kind`는 사실·추론·허구를 구분하고 단락마다 인과는 하나만 둔다.
+- 저작 상태 구분: 확정·초안·제안·보존은 서로 다른 상태고, 공개 렌더·검증 통과는 승인 증거가 아니다(가이드 증거 위계 준수).
+
+## 안티패턴
+
+- DB를 우회해 논리 식별자나 provenance를 디스크 파일로 재구성하지 않는다. 편집은 SQLite 정본 경로로만.
+- 실존 기업명·로고·슬로건·제품·현직 임원을 허구에 넣지 않고, 실존 기관을 허구적 범죄의 주체로 쓰지 않는다.
+- 합성체: 전지적 서술·무한 에너지·장기 완전 기억·전망 네트워크 접근·배정 밖 시설 제어 금지.
+- 아틀라스 확장 시 혼합 형태를 유지한다: 한국어 서사 산문, 영어 구조 용어, 교차 참조는 논리 식별자로.
+- 모든 고유명칭은 명명 원장의 승인본을 따른다.

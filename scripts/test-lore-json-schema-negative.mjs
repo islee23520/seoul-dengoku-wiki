@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { mkdtempSync, readFileSync, rmSync, writeFileSync, mkdirSync } from 'node:fs'
 import { spawnSync } from 'node:child_process'
@@ -6,7 +7,7 @@ import { test } from 'vitest'
 
 const root = resolve(import.meta.dirname, '..')
 const evidence = join(root, '.omo/evidence/lore-wiki-issues-sweep/T10e')
-const load = (domain) => JSON.parse(readFileSync(join(root, 'lore', domain === 'root' ? '' : domain, 'authoring.example.json'), 'utf8'))
+const load = (domain) => readCanonicalDocument(`lore/${domain === 'root' ? '' : domain + '/'}authoring.example.json`)
 const run = (file) => spawnSync(process.execPath, [join(root, 'scripts/lore-json-validate.mjs'), file], { cwd: root, encoding: 'utf8' })
 const leaf = { en: 'Example', ko: '예시' }
 const node = (kind, fields) => ({ kind, anchor: 'extra-block', ...fields })
@@ -16,7 +17,7 @@ test('hegemon center regions are required nonblank strings and unknown keys stay
   const dir = mkdtempSync(join(evidence, 'center-region-'))
   try {
     const document = load('factions')
-    document.data.currentAffiliation = JSON.parse(readFileSync(join(root, 'lore/factions/Sixteen-States.json'), 'utf8')).data.currentAffiliation
+    document.data.currentAffiliation = readCanonicalDocument('lore/factions/Sixteen-States.json').data.currentAffiliation
     const file = join(dir, 'authoring.example.json')
     writeFileSync(file, JSON.stringify(document))
     const valid = run(file)

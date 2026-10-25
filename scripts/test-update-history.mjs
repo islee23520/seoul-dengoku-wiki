@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
@@ -5,6 +6,8 @@ import { test } from 'vitest'
 import { latestUpdates } from './update-history.mjs'
 import { publicHouseContent } from './public-house-content.mjs'
 import { approvedDocuments } from './catalog-admission.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readCatalogMetadataDocument, UPDATE_HISTORY_PATH } from './cast-sqlite/catalog-metadata.mjs'
 
 test('latest updates sorts newest entries first and returns only five', () => {
   const entries = [
@@ -20,7 +23,9 @@ test('latest updates sorts newest entries first and returns only five', () => {
 })
 
 test('wiki update ledger contains the five confirmed changes and Home renders generated updates', async () => {
-  const ledger = JSON.parse(await readFile(new URL('../data/update-history.json', import.meta.url), 'utf8'))
+  const db = openReadOnly(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url).pathname)
+  let ledger
+  try { ledger = readCatalogMetadataDocument(db, UPDATE_HISTORY_PATH) } finally { db.close() }
   const home = await readFile(new URL('../src/pages/HomePage.tsx', import.meta.url), 'utf8')
   const generated = await readFile(new URL('../src/generated/wikiUpdates.ts', import.meta.url), 'utf8')
   const titles = ledger.updates.map((entry) => entry.title)
@@ -75,7 +80,7 @@ test('reader catalog excludes authoring documents and strips only projection hea
   const outsideHeader = [...Array(12).fill(''), ...projectionLines.slice(9)].join('\n')
   assert.ok(stripProjectionHeader(outsideHeader).includes('이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.'))
 
-  const sourceDocument = JSON.parse(await readFile(new URL('../lore/Operating-Houses.json', import.meta.url), 'utf8'))
+  const sourceDocument = readCanonicalDocument('lore/Operating-Houses.json')
   const projected = publicHouseContent(sourceDocument)
   const sourceLayerItems = (document) => document.content.flatMap((node) => node.items ?? [])
     .filter((item) => item.en === 'Source layer: original-fiction' && item.ko === '출처층: original-fiction')

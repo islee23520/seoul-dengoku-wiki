@@ -1,3 +1,4 @@
+import { loadSheetMetadata } from './cast-sqlite/sheet-metadata.mjs'
 import { preservedSheetSources } from './preserved-person-sheet.mjs'
 import { assertPublicSheetRecord } from './public-sheet-test-expectation.mjs'
 import assert from 'node:assert/strict'
@@ -18,7 +19,7 @@ const approved = [
 
 const revision = '5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4'
 const roots = preservedSheetSources
-const baseline = JSON.parse(await readFile(new URL('./issued-preservation-baseline.json', import.meta.url), 'utf8'))
+const baseline = loadSheetMetadata().baseline
 assert.deepEqual(Object.keys(roots ?? {}).sort(), Object.keys(baseline.revisions).sort())
 const bytes = await readFile(roots[revision].ledgerPath)
 assert.equal(createHash('sha256').update(bytes).digest('hex'), baseline.revisions[revision].ledgerSha256)

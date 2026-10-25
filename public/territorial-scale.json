@@ -2,7 +2,6 @@
   "schema": "territorial-scale.v2",
   "scope": "seoul-only",
   "geographicSource": {
-    "path": "lore/regions/seoul-electoral-titles.json",
     "sha256": "372734e77019d0e544ded29f90e1b35b8a8c3a3cfff305c295c2bd83a6b64eef",
     "schema": "seoul-geography-staging.v1"
   },
@@ -76,7 +75,7 @@
     "politicalLiegeInference": false,
     "crossDistrictExceptions": [
       {
-        "titleId": "geography:county:seoul-constituency:중구성동구을선거구",
+        "titleId": "geography:county:07ff0f90b5e79a78",
         "parentTitleId": "geography:empire:seoul",
         "mapKingdomTitleId": "geography:kingdom:seoul:01",
         "kind": "cross-district-empire-direct"

@@ -120,6 +120,59 @@ test('successful release preserves unknown files and captures all output roots',
   for (const path of Object.keys(before).filter(path => !generated.includes(path))) assert.equal(retired[path], before[path])
 })
 
+for (const databaseVariable of ['WIKI_PORTRAIT_DB', 'WIKI_TIER_EVIDENCE_DB', 'WIKI_TIER_HISTORY_DB',
+  'WIKI_MAPPING_ORIGINAL_DB', 'WIKI_MAPPING_FINAL_DB', 'WIKI_MAPPING_SOURCES_DB']) {
+test(`${databaseVariable} changes during staging prevent promotion of mixed input revisions`, async t => {
+  const options = await fixture(t)
+  const path = join(options.root, 'input.sqlite')
+  await writeFile(path, 'initial database bytes')
+  const previous = process.env[databaseVariable]
+  process.env[databaseVariable] = path
+  try {
+    const before = await live(options.root)
+    await assert.rejects(runRelease({ ...options, stage: async context => {
+      await stageAll(context)
+      await writeFile(path, 'changed database bytes')
+    } }), /E_RELEASE_DATABASE_CHANGED/)
+    assert.deepEqual(await live(options.root), before)
+    await runRelease({ ...options, stage: stageAll })
+    assert.equal((await live(options.root))[generated[0]], 'new:' + generated[0])
+  } finally {
+    if (previous === undefined) delete process.env[databaseVariable]
+    else process.env[databaseVariable] = previous
+  }
+})
+}
+
+for (const changedInput of ['config', 'bootstrap', 'capture', 'evidence', 'private']) {
+test(`publication ${changedInput} input changes during staging prevent mixed approval promotion`, async t => {
+  const options = await fixture(t)
+  const paths = Object.fromEntries(['config', 'bootstrap', 'capture', 'evidence', 'private', 'authority']
+    .map(name => [name, join(options.root, name + '.input')]))
+  await writeFile(paths.authority, 'authority bytes')
+  await writeFile(paths.bootstrap, 'bootstrap receipt')
+  await writeFile(paths.evidence, 'evidence bytes')
+  await writeFile(paths.private, 'private bytes')
+  await writeFile(paths.capture, JSON.stringify({ databasePath: paths.evidence }))
+  await writeFile(paths.config, JSON.stringify({ databasePath: paths.authority,
+    bootstrapReceiptPath: paths.bootstrap, captureReceiptPath: paths.capture,
+    privateStores: { sample: paths.private } }))
+  const previous = process.env.WIKI_PUBLICATION_DATABASE_CONFIG
+  process.env.WIKI_PUBLICATION_DATABASE_CONFIG = paths.config
+  try {
+    const before = await live(options.root)
+    await assert.rejects(runRelease({ ...options, stage: async context => {
+      await stageAll(context)
+      await writeFile(paths[changedInput], 'changed input bytes')
+    } }), /E_RELEASE_DATABASE_CHANGED/)
+    assert.deepEqual(await live(options.root), before)
+  } finally {
+    if (previous === undefined) delete process.env.WIKI_PUBLICATION_DATABASE_CONFIG
+    else process.env.WIKI_PUBLICATION_DATABASE_CONFIG = previous
+  }
+})
+}
+
 test('unowned collisions and edited prior outputs abort without overwrites', async t => {
   const options = await fixture(t)
   const before = await live(options.root)

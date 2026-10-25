@@ -1,3 +1,4 @@
+import { loadSheetMetadata } from './cast-sqlite/sheet-metadata.mjs'
 // Explicit maintenance command. Normal generation reads only the committed files.
 // Import exact historical bytes; never derive or rebaseline historical allocations.
 import { execFileSync } from 'node:child_process'
@@ -7,7 +8,7 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const baseline = JSON.parse(readFileSync(resolve(root, 'scripts/issued-preservation-baseline.json'), 'utf8'))
+const baseline = loadSheetMetadata().baseline
 const corpusRevision = '5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4'
 const entries = [
   ...Object.entries(baseline.revisions).map(([revision, seal]) => ({ revision, source: 'lore/name-pools/gurps-cast.json', target: revision + '.json', hash: seal.ledgerSha256 })),

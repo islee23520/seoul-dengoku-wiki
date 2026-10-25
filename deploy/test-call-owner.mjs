@@ -91,7 +91,7 @@ for (const key of ['url', 'token', 'sha']) test(`requires ${key} before sending 
   await assert.rejects(callOwner({ ...options, [key]: '', fetchImpl: () => assert.fail('request must not be sent') }), /E_DEPLOY_ENV/)
 })
 
-for (const phase of ['headers', 'body']) test(`35-minute deadline aborts stalled ${phase}`, async (context) => {
+for (const phase of ['headers', 'body']) test(`125-minute deadline aborts stalled ${phase}`, async (context) => {
   context.mock.timers.enable({ apis: ['setTimeout'] })
   let started
   const ready = new Promise(resolve => { started = resolve })
@@ -112,7 +112,7 @@ for (const phase of ['headers', 'body']) test(`35-minute deadline aborts stalled
   const result = callOwner({ ...options, fetchImpl })
   const rejected = assert.rejects(result, /E_DEPLOY_TIMEOUT/)
   await ready
-  context.mock.timers.tick(35 * 60 * 1000 - 1)
+  context.mock.timers.tick(125 * 60 * 1000 - 1)
   assert.equal(signal.aborted, false)
   context.mock.timers.tick(1)
   await rejected

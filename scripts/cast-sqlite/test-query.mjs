@@ -1,3 +1,4 @@
+import { readSourceArchive } from './source-archive.mjs';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
@@ -20,7 +21,7 @@ const digest = (path) => createHash('sha256').update(readFileSync(path)).digest(
 
 function rightsFixture(t) {
   const root = fileURLToPath(new URL('../..', import.meta.url));
-  const offices = JSON.parse(readFileSync(join(root, 'lore/relations/opening-office-appointments.json'), 'utf8'));
+  const offices = JSON.parse(readSourceArchive('lore/relations/opening-office-appointments.json').toString('utf8'));
   const paths = [...new Set([
     ...Object.values(RIGHTS_PATHS),
     ...['person-id-registry', 'values-cast', 'gender-cast', 'cast-hangnyeol', 'clan-hangnyeol-tables', 'gurps-cast'].map((name) => `lore/name-pools/${name}.json`),
@@ -29,7 +30,7 @@ function rightsFixture(t) {
     ...offices.appointments.flatMap((row) => row.current.evidence.map((ref) => ref.path)),
   ])];
   const bundle = { files: paths.map((logical_path, index) => {
-    const raw_bytes = readFileSync(join(root, logical_path));
+    const raw_bytes = readSourceArchive(logical_path);
     return { source_id: index + 1, logical_path, raw_bytes, byte_length: raw_bytes.length,
       sha256: createHash('sha256').update(raw_bytes).digest('hex'), ...parseDocument(raw_bytes.toString('utf8')) };
   }) };
@@ -405,7 +406,7 @@ test('actual current SQLite query separates normalized current data, historical 
   assert.ok(nonKorean.lineage.source_clan_refs[0].source_ref);
   assert.equal(JSON.stringify(nonKorean.current.engine).includes('profile-batches'), false);
   const indexedAlias = query.queryPerson({ dbPath, id: 'K1011' });
-  const corridorSource = JSON.parse(readFileSync(join(sourceRoot, 'lore/characters/Cast-Corridors-Index.json'), 'utf8'));
+  const corridorSource = JSON.parse(readSourceArchive('lore/characters/Cast-Corridors-Index.json').toString('utf8'));
   assert.ok(indexedAlias.source_indexes.corridor.some((row) => row.match_status === 'documented_display_alias' && row.source_status === corridorSource.status));
   const unmatchedIndex = query.queryIssues({ dbPath, dataset: 'index' }).source_indexes;
   assert.ok(unmatchedIndex.unmatched_cast.some((row) => row.name_ko === '오도윤' && row.person_id === null));

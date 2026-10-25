@@ -6,8 +6,12 @@ import { DATA_SOURCE_PATHS, parseDocument, REQUIRED_SOURCE_PATHS } from './sourc
 import { ENGINE_PRIVATE_SOURCE_PATHS } from './current-engine.mjs';
 import { CONTEXT_TABLE_COLUMNS, mapContextDomains } from './current-context.mjs';
 import { HISTORICAL_CONTEXT_TABLE_COLUMNS, mapHistoricalContext } from './historical-context.mjs';
+import { readSourceArchive } from './source-archive.mjs';
+import { readPrivateSourceArchive } from '../document-store/private-source-archive.mjs';
+import { EDITORIAL_PROFILE_SOURCE_HASHES } from '../document-store/editorial-profile.mjs';
 
-const source = (path) => JSON.parse(readFileSync(new URL(`../../${path}`, import.meta.url), 'utf8'));
+const source = path => JSON.parse(Object.hasOwn(EDITORIAL_PROFILE_SOURCE_HASHES, path)
+  ? readPrivateSourceArchive(new URL('../../', import.meta.url).pathname, path, EDITORIAL_PROFILE_SOURCE_HASHES[path]) : readSourceArchive(path));
 
 test('원천 JSON의 새 필드 경로는 선언되지 않으면 실패한다', () => {
   const path = 'lore/name-pools/person-id-registry.json';
@@ -138,7 +142,7 @@ function currentCoverageInput() {
   // domains below are the real authenticated corpus mapper output, not stubs.
   const files = REQUIRED_SOURCE_PATHS.map((logical_path, index) => {
     if (!Object.hasOwn(COVERAGE_CONTRACT, logical_path)) return { source_id: index + 1, logical_path, document: null, records: [] };
-    const raw_bytes = readFileSync(new URL(`../../${logical_path}`, import.meta.url));
+    const raw_bytes = readSourceArchive(logical_path);
     const parsed = logical_path.endsWith('.json') ? parseDocument(raw_bytes.toString('utf8')) : { document: null, records: [] };
     return { source_id: index + 1, logical_path, raw_bytes, ...parsed };
   });

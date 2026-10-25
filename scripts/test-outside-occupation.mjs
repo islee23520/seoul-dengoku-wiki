@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
@@ -5,7 +6,7 @@ import { test } from 'vitest'
 import { projectOutsideOccupation } from './outside-occupation.mjs'
 import { projectCatalogOutsideOccupation } from './generate-catalog.mjs'
 
-const json = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
+const json = path => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
 const control = json('scripts/historical-inputs/outside-control-2126.json')
 const geometryBytes = readFileSync(new URL('./historical-inputs/outside-admin-units.json', import.meta.url))
 assert.equal(createHash('sha256').update(geometryBytes).digest('hex'), 'dd23944da5f558e9d772a4b2d41963f46de555680677f1e838e73447497556c6')

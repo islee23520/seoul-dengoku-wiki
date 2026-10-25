@@ -11,7 +11,8 @@ export const OUT = 'lore/name-pools/gurps-cast.json'
 export const SCHEMA = 'wiki-preserved-cast.v1'
 const REGISTRY = 'lore/name-pools/person-id-registry.json'
 const VALUES = 'lore/name-pools/values-cast.json'
-const baseline = JSON.parse(readFileSync(new URL('./issued-preservation-baseline.json', import.meta.url), 'utf8'))
+import { loadSheetMetadata } from './cast-sqlite/sheet-metadata.mjs'
+const { baseline } = loadSheetMetadata()
 export const REVISIONS = Object.freeze(Object.keys(baseline.revisions))
 export const APPROVED_HASHES = Object.freeze({ [VALUES]: baseline.sourceHashes[VALUES], [REGISTRY]: baseline.sourceHashes[REGISTRY] })
 export const APPROVED_EXCEPTIONS = {

@@ -7,6 +7,7 @@ import test from 'node:test'
 import { CONTEXT_TABLE_COLUMNS, mapContextDomains } from './current-context.mjs'
 import { RIGHTS_PATHS } from './current-rights.mjs'
 import { parseDocument } from './sources.mjs'
+import { readSourceArchive } from './source-archive.mjs'
 
 const CONTEXT_PATHS = Object.freeze([
   'lore/relations/relations.json',
@@ -17,11 +18,11 @@ const CONTEXT_PATHS = Object.freeze([
 
 async function corpus() {
   const root = resolve(import.meta.dirname, '..', '..')
-  const registry = JSON.parse(await readFile(resolve(root, 'lore/name-pools/person-id-registry.json'), 'utf8'))
-  const offices = JSON.parse(await readFile(resolve(root, 'lore/relations/opening-office-appointments.json')))
+  const registry = JSON.parse(readSourceArchive('lore/name-pools/person-id-registry.json'))
+  const offices = JSON.parse(readSourceArchive('lore/relations/opening-office-appointments.json'))
   const paths = [...new Set([...CONTEXT_PATHS, ...Object.values(RIGHTS_PATHS), ...offices.appointments.flatMap(row => row.current.evidence.map(ref => ref.path))])]
   const files = await Promise.all(paths.map(async (logical_path, index) => {
-    const raw_bytes = await readFile(resolve(root, logical_path))
+    const raw_bytes = readSourceArchive(logical_path)
     const parsed = parseDocument(raw_bytes.toString('utf8'))
     return { source_id: index + 1, logical_path, document: parsed.document, records: parsed.records,
       sha256: createHash('sha256').update(raw_bytes).digest('hex'), byte_length: raw_bytes.length, raw_bytes }

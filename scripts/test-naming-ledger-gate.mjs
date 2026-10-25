@@ -1,8 +1,9 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import test from 'node:test'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 
-const ledger = JSON.parse(await readFile(new URL('../lore/editorial/Naming-Ledger.json', import.meta.url), 'utf8'))
+const ledger = readCanonicalDocument('lore/editorial/Naming-Ledger.json')
 
 test('live naming categories have unique state identities and nonempty office and title names', () => {
   assert.equal(ledger.states.length, 16)

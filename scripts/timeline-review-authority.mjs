@@ -141,17 +141,17 @@ export function validateTimelineReviewProvenance({ sourceBytes, receiptBytes, in
 }
 
 /**
- * Reads this checkout's current annals and code-owned receipt pins only. There
- * is no caller-supplied root, reader, evidence, predicate, or pin injection.
+ * Reads this checkout's current annals and code-owned receipt pins only.
+ * An explicit storage reader changes I/O, never the paths or approval pins.
  * @returns {Promise<TimelineReviewAuthority>}
  */
-export async function loadTimelineReviewAuthority() {
-  const sourceBytes = await readFile(new URL(`../${SOURCE_PATH}`, import.meta.url))
+export async function loadTimelineReviewAuthority(readBytes = readFile) {
+  const sourceBytes = await readBytes(new URL(`../${SOURCE_PATH}`, import.meta.url))
   const evidence = []
-  for (const pin of APPROVED_EVENT_REVIEW_RECEIPTS) evidence.push({ path: pin.path, body: await readFile(new URL(`../${pin.path}`, import.meta.url)) })
+  for (const pin of APPROVED_EVENT_REVIEW_RECEIPTS) evidence.push({ path: pin.path, body: await readBytes(new URL(`../${pin.path}`, import.meta.url)) })
   validateTimelineReviewProvenance({ sourceBytes, receiptBytes: evidence[0].body,
-    independentBytes: await readFile(new URL(`../${REVIEW_PROOF.path}`, import.meta.url)),
-    ownerBytes: await readFile(new URL(`../${OWNER_APPROVAL.path}`, import.meta.url)) })
+    independentBytes: await readBytes(new URL(`../${REVIEW_PROOF.path}`, import.meta.url)),
+    ownerBytes: await readBytes(new URL(`../${OWNER_APPROVAL.path}`, import.meta.url)) })
   const review = validateTimelineReviewReceipt({ sourcePath: SOURCE_PATH, sourceBytes, pins: APPROVED_EVENT_REVIEW_RECEIPTS, evidence })
   for (const event of review.events) Object.freeze(event)
   Object.freeze(review.events)

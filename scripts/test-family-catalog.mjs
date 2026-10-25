@@ -6,13 +6,14 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
 import FamiliesPage from '../src/pages/FamiliesPage.tsx'
 import { projectNonKoreanFamilies } from './non-korean-family-catalog.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 
-const json = async (path) => JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'))
+const json = async path => path.startsWith('lore/') ? readCanonicalDocument(path) : JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'))
 const generatedCatalog = async (name) => JSON.parse((await readFile(new URL(`../src/generated/${name}.ts`, import.meta.url), 'utf8'))
   .replace(new RegExp(`^export const ${name} = `), '').replace(/ as const\s*$/u, ''))
 
 test('family catalog preserves base clans, inferred branches, crest IDs and person links', async () => {
-  const source = JSON.parse(await readFile(new URL('../lore/name-pools/clan-hangnyeol-tables.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/name-pools/clan-hangnyeol-tables.json')
   const crests = JSON.parse(await readFile(new URL('../public/clan-crests/index.json', import.meta.url), 'utf8'))
   const generated = await readFile(new URL('../src/generated/clanFamilyCatalog.ts', import.meta.url), 'utf8')
   const catalog = JSON.parse(generated.replace(/^export const clanFamilyCatalog = /u, '').replace(/ as const\s*$/u, ''))
@@ -108,7 +109,7 @@ test('separate non-Korean families preserve every approved key and all cast rema
 })
 
 test('Jeonui Lee has one family and retains its four people and generation facts', async () => {
-  const source = JSON.parse(await readFile(new URL('../lore/name-pools/cast-hangnyeol.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/name-pools/cast-hangnyeol.json')
   const generated = await readFile(new URL('../src/generated/clanFamilyCatalog.ts', import.meta.url), 'utf8')
   const catalog = JSON.parse(generated.replace(/^export const clanFamilyCatalog = /u, '').replace(/ as const\s*$/u, ''))
   const id = 'c774-c804-c758-674e'

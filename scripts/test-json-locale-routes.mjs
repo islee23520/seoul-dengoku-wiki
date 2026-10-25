@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { existsSync, readFileSync } from 'node:fs'
 import { mkdir, mkdtemp, readFile, writeFile } from 'node:fs/promises'
@@ -11,7 +12,7 @@ import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { pageFailures, privateLinkFailures } from './gate.mjs'
 
 const wikiRoot = resolve(import.meta.dirname, '..')
-const source = JSON.parse(readFileSync(resolve(wikiRoot, 'lore/culture/Food-Culture.json'), 'utf8'))
+const source = readCanonicalDocument('lore/culture/Food-Culture.json')
 const renderJson = (value, locale) => renderLoreMarkdown(value, locale, (_domain, slug) => `${slug}.md`)
 const titleFallback = (markdown, slug) => markdown.match(/^#\s+(.+)$/m)?.[1] ?? slug
 const fixtureDocument = ({ id, slug, domain = 'root', categories, sourceKind = 'computed' }) => ({

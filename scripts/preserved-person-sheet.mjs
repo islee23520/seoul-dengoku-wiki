@@ -2,8 +2,8 @@ import { build, ROOT, REVISIONS } from './gurps-cast.mjs'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
-const nameChanges = JSON.parse(readFileSync(new URL('./person-sheet-name-changes.json', import.meta.url), 'utf8'))
-const baseline = JSON.parse(readFileSync(new URL('./issued-preservation-baseline.json', import.meta.url), 'utf8'))
+import { loadSheetMetadata } from './cast-sqlite/sheet-metadata.mjs'
+const { nameChanges, baseline } = loadSheetMetadata()
 
 // Both inputs ship with the repository. No environment, Git history or network is
 // needed during a standard build. Explicit injection is reserved for validation.

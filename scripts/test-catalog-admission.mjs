@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { existsSync } from 'node:fs'
 import { access, mkdir, mkdtemp, readdir, readFile, writeFile } from 'node:fs/promises'
@@ -126,8 +127,8 @@ test('cast authoring sources remain available but their articles retire from bot
 test('each consolidated person route resolves to its own generated detail', async () => {
   const catalog = await readFile(resolve(wikiRoot, 'src/generated/peopleCatalog.ts'), 'utf8')
   const people = JSON.parse(catalog.split('export const peopleCatalog = ')[1].split(' as const')[0])
-  const sourcePeople = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
-  const issued = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/person-id-registry.json'), 'utf8')).persons
+  const sourcePeople = readCanonicalDocument('lore/name-pools/values-cast.json').people
+  const issued = readCanonicalDocument('lore/name-pools/person-id-registry.json').persons
   const detailRoot = resolve(wikiRoot, 'public/person-details')
   const details = new Map()
   for (const name of (await readdir(detailRoot)).filter((name) => name.endsWith('.json'))) {
@@ -175,7 +176,7 @@ test('the publication manifest matches admitted identities, generated readers an
     assert.deepEqual(routes, index.categories.find(({ id }) => id === category.id).documents.map(({ route }) => route).sort())
   }
   for (const document of manifest.documents) {
-    await access(resolve(wikiRoot, document.source))
+    readCanonicalDocument(document.source)
     const page = JSON.parse(await readFile(resolve(wikiRoot, document.contentRef), 'utf8'))
     assert.equal(page.route, document.route)
     assert.equal(page.title, document.title)

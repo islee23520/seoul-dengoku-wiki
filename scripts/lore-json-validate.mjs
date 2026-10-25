@@ -5,10 +5,15 @@ import { fileURLToPath } from 'node:url'
 
 import { coinedPhraseFailures, findBannedTerms, retiredFormFailures } from './gate.mjs'
 import { ledger } from './lore-json-validate-ledger.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { listDocuments } from './cast-sqlite/document-read.mjs'
+import { isPrivateCurrentDocument } from './document-store/private-current-document.mjs'
 
 const args = process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url) ? process.argv.slice(2) : []
 const rootIndex = args.indexOf('--root')
 const fixtureRoot = rootIndex < 0 ? null : args[rootIndex + 1]
+const publicOnly = args.includes('--public')
 if (rootIndex >= 0) {
   const candidate = fixtureRoot && resolve(fixtureRoot)
   const gitRoot = candidate && existsSync(candidate) && spawnSync('git', ['rev-parse', '--show-toplevel'], { cwd: candidate, encoding: 'utf8' })
@@ -18,8 +23,28 @@ if (rootIndex >= 0) {
   }
 }
 const root = fixtureRoot ? resolve(fixtureRoot) : resolve(dirname(fileURLToPath(import.meta.url)), '..')
+const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const loreRoot = join(root, 'lore')
-const schemaRunner = join(root, 'scripts/lore-json-schema.py')
+const schemaRunner = join(repositoryRoot, 'scripts/lore-json-schema.py')
+let canonicalPaths
+function currentPaths() {
+  if (!canonicalPaths) {
+    const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? join(repositoryRoot, 'data/canonical/wiki-cast.sqlite'))
+    try {
+      canonicalPaths = new Set(['current', 'example'].flatMap((corpusKind) =>
+        listDocuments(db, { corpusKind, visibility: 'internal' }).map((identity) => identity.logical_path)))
+    } finally { db.close() }
+  }
+  return canonicalPaths
+}
+
+function readInput(file) {
+  const logicalPath = relative(repositoryRoot, file).replaceAll('\\', '/')
+  if (logicalPath.startsWith('lore/') && !scratch(logicalPath)) return readCanonicalDocument(logicalPath)
+  const fixturePath = relative(root, file).replaceAll('\\', '/')
+  if (fixtureRoot && !existsSync(file) && currentPaths().has(fixturePath)) return readCanonicalDocument(fixturePath)
+  return JSON.parse(readFileSync(file, 'utf8'))
+}
 // A schema check that stalls fails with its file label instead of hanging the run (#279).
 const schemaTimeout = Number(process.env.LORE_JSON_SCHEMA_TIMEOUT_MS) || 60000
 const excluded = new Set(['M007', 'B017', 'B020'])
@@ -160,7 +185,7 @@ function validate(files) {
   const ids = new Map()
   for (const file of files) {
     let document
-    try { document = JSON.parse(readFileSync(file, 'utf8')) } catch (error) {
+    try { document = readInput(file) } catch (error) {
       failures.push(`E_JSON: ${file}: ${error.message}`)
       continue
     }
@@ -168,9 +193,9 @@ function validate(files) {
     failures.push(...localeBindingFailures(document, label))
     failures.push(...atlasFailures(document, label))
     const domain = document?.domain
-    // The runner reads the document from its path; its standard input is closed so it can never wait on a pipe (#279).
-    const schema = spawnSync('python3', [schemaRunner, domain ?? '', file], {
-      stdio: ['ignore', 'pipe', 'pipe'], encoding: 'utf8', timeout: schemaTimeout, killSignal: 'SIGKILL',
+    // The already selected typed document is passed explicitly; spawnSync closes this bounded input.
+    const schema = spawnSync('python3', [schemaRunner, domain ?? '', '--stdin'], {
+      input: JSON.stringify(document), encoding: 'utf8', timeout: schemaTimeout, killSignal: 'SIGKILL',
     })
     if (schema.error?.code === 'ETIMEDOUT') {
       failures.push(`E_SCHEMA: ${label}: schema check did not finish within ${schemaTimeout} ms`)
@@ -222,9 +247,13 @@ function validate(files) {
             const { domain, slug, anchor } = run.link
             const target = join(loreRoot, domain === 'root' ? '' : domain, `${slug}.json`)
             const markdown = join(loreRoot, domain === 'root' ? '' : domain, `${slug}.md`)
-            if (privatePages.has(slug) || (!existsSync(target) && !existsSync(markdown))) failures.push(`E_LINK: ${label}: ${domain}/${slug} does not exist or is private`)
-            else if (anchor && existsSync(target)) {
-              const targetDocument = documents.get(`${domain}/${slug}`)?.document ?? JSON.parse(readFileSync(target, 'utf8'))
+            const logicalTarget = `lore/${domain === 'root' ? '' : `${domain}/`}${slug}.json`
+            const typedTarget = currentPaths().has(logicalTarget)
+            const fixtureTarget = Boolean(fixtureRoot || scratch(logicalTarget)) && existsSync(target)
+            const fixtureMarkdown = Boolean(fixtureRoot || scratch(logicalTarget)) && existsSync(markdown)
+            if (privatePages.has(slug) || (!typedTarget && !fixtureTarget && !fixtureMarkdown)) failures.push(`E_LINK: ${label}: ${domain}/${slug} does not exist or is private`)
+            else if (anchor && (typedTarget || fixtureTarget)) {
+              const targetDocument = documents.get(`${domain}/${slug}`)?.document ?? (typedTarget ? readCanonicalDocument(logicalTarget) : readInput(target))
               if (!nodesIn(targetDocument).some((block) => block.anchor === anchor || block.publicAnchors?.includes(anchor))) failures.push(`E_LINK: ${label}: ${domain}/${slug}#${anchor} does not exist`)
             }
           }
@@ -244,8 +273,9 @@ function git(...args) {
 // An authoring document is a lore JSON object with the envelope's locale/content body; region data, name pools,
 // the glossary and the schema files are other data contracts. Unparseable lore JSON is kept so it fails as E_JSON.
 function isAuthoring(path) {
+  if (!fixtureRoot && path.endsWith('.json')) return currentPaths().has(path)
   let value
-  try { value = JSON.parse(readFileSync(join(root, path), 'utf8')) } catch { return true }
+  try { value = readInput(join(root, path)) } catch { return true }
   return Boolean(value) && typeof value === 'object' && !Array.isArray(value) && !('$schema' in value)
     && ('locales' in value || Array.isArray(value.content))
 }
@@ -254,8 +284,11 @@ function isAuthoring(path) {
 // (for example the link checker's transient fixtures), never authoring documents.
 const scratch = (path) => path.split('/').some((part) => part.startsWith('.'))
 
-const loreFiles = () => git('ls-files', '--cached', '--others', '--exclude-standard', '--', 'lore')
-  .filter((path) => !scratch(path) && existsSync(join(root, path)))
+const loreFiles = () => [...new Set([
+  ...currentPaths(),
+  ...git('ls-files', '--cached', '--others', '--exclude-standard', '--', 'lore')
+    .filter((path) => existsSync(join(root, path))),
+])].filter((path) => path.startsWith('lore/') && !scratch(path))
 
 function unmigratedMarkdown(authoring) {
   const migrated = new Set(authoring)
@@ -284,7 +317,7 @@ function report(failures, summary) {
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  const cliArgs = args.filter((_, index) => rootIndex < 0 || (index !== rootIndex && index !== rootIndex + 1))
+  const cliArgs = args.filter((arg, index) => arg !== '--public' && (rootIndex < 0 || (index !== rootIndex && index !== rootIndex + 1)))
   const strict = cliArgs.includes('--strict')
   const baseIndex = cliArgs.indexOf('--base')
   const base = baseIndex >= 0 ? cliArgs[baseIndex + 1] : 'origin/main'
@@ -295,7 +328,8 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   } else if (files.length) {
     report(validate(files.map((file) => resolve(file))), `${files.length} lore JSON document(s)`)
   } else if (strict) {
-    const authoring = loreFiles().filter((path) => path.endsWith('.json') && isAuthoring(path))
+    const authoring = loreFiles().filter((path) => path.endsWith('.json')
+      && (!publicOnly || !isPrivateCurrentDocument(path)) && isAuthoring(path))
     const unmigrated = unmigratedMarkdown(authoring)
     report([
       ...validate(authoring.map((path) => join(root, path))),

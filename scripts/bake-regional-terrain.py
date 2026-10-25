@@ -282,12 +282,18 @@ def network(cache):
             for (_, a), (_, b) in zip(entries, entries[1:]):
                 if math.dist(a, b) < 18000:
                     paths.append({"lineId": lid, "points": [a, b]})
-    corrections = json.loads((Path(__file__).resolve().parents[1] / "lore/places/rail-station-corrections.json").read_text())["corrections"]
+    documents = json.loads(subprocess.check_output([
+        "node", "--input-type=module", "-e",
+        "import { readCanonicalDocument } from './scripts/cast-sqlite/canonical-document.mjs'; "
+        "process.stdout.write(JSON.stringify(process.argv.slice(1).map(path => readCanonicalDocument(path))));",
+        "lore/places/rail-station-corrections.json", "lore/places/rail-station-identities.json",
+    ], cwd=Path(__file__).resolve().parents[1]))
+    corrections = documents[0]["corrections"]
     for station in station_list:
         for correction in corrections:
             if all(station[field] == correction[field] for field in ("name", "east", "north")):
                 station["lineIds"] = correction["lineIds"]
-    identities = json.loads((Path(__file__).resolve().parents[1] / "lore/places/rail-station-identities.json").read_text())["groups"]
+    identities = documents[1]["groups"]
     unique_stations = []
     seen_uids = set()
     for station in station_list:

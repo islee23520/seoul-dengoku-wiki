@@ -1,19 +1,21 @@
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
 import { currentAffiliations, hegemonsForHolders, currentBasePoint, territoryLabel } from './current-affiliation.mjs'
 
-const json = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
+const json = path => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
 const source = json('../lore/factions/Sixteen-States.json')
 const approved = json('./fixtures/approved-political-partition.json')
 const contract = source.data.currentAffiliation
 const historicalRows = source.content.find(block => block.anchor === 'table').rows.map(row => ({ id: row[0].ko, name: row[1].ko }))
 const affiliations = currentAffiliations(contract, historicalRows)
 const territory = json('../public/opening-territories.json')
-const stationCatalog = json('../lore/places/Seoul-Station-Catalog.json')
+const stationCatalog = readCanonicalDocument('lore/places/Seoul-Station-Catalog.json')
 const approvedStationNames = new Set(stationCatalog.content.filter(block => block.kind === 'table').flatMap(block => block.rows.map(row => row[0].ko)))
 const canonicalStationIds = new Map(stationCatalog.data.station_aliases.flatMap(entry => [entry.id, ...entry.aliases].map(id => [id, entry.id])))
-const approvedStationIds = new Set(json('../snapshots/build-inputs/SeoulWorldGraph.json').stations.filter(station => approvedStationNames.has(station.nameKo)).map(station => canonicalStationIds.get(station.id) ?? station.id))
+const approvedStationIds = new Set(JSON.parse(readSourceArchive('snapshots/build-inputs/SeoulWorldGraph.json', '46985afccc2d3f2b5e4e3152254d30bc023d0688d63745a951a9be0f6ebf097d')).stations.filter(station => approvedStationNames.has(station.nameKo)).map(station => canonicalStationIds.get(station.id) ?? station.id))
 
 test('current hegemons cover the sixteen immediate polities without inventing a union head', () => {
   const expected = Object.fromEntries(contract.hegemons.filter(head => head.kind === 'state').map(head => [head.stateId, approved.approvedStateMembership[head.name]]))

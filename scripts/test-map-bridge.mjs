@@ -1,3 +1,5 @@
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
@@ -27,9 +29,9 @@ test('terrain status rejects unknown tiles and missing or forged source hashes',
 test('all admitted source station IDs select exactly their displayed facilities and outside2 cannot select', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const displayIds = new Set(data.stations.map(({ id }) => id))
-  const archiveBytes = await readFile(new URL('../snapshots/build-inputs/SeoulWorldGraph.json', import.meta.url))
+  const archiveBytes = readSourceArchive('snapshots/build-inputs/SeoulWorldGraph.json', '46985afccc2d3f2b5e4e3152254d30bc023d0688d63745a951a9be0f6ebf097d')
   const source = JSON.parse(archiveBytes)
-  const aliases = JSON.parse(await readFile(new URL('../lore/places/Seoul-Station-Catalog.json', import.meta.url), 'utf8')).data.station_aliases
+  const aliases = readCanonicalDocument('lore/places/Seoul-Station-Catalog.json').data.station_aliases
   const excluded = new Set(outsideStationIds(archiveBytes, await readFile(new URL('../' + STATION_BOUNDARY_PATH, import.meta.url)), aliases))
   assert.deepEqual([...excluded].sort(), ['광명사거리', '석수'])
   const canonical = new Map(aliases.flatMap(entry => [entry.id, ...entry.aliases].map(id => [id, entry.id])))

@@ -3,15 +3,16 @@ import { readFile, mkdtemp, mkdir, writeFile, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { test } from 'vitest'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { ageInYears, assertBirthCohortContract, loadCastBirthdays, validateCastBirthdays } from './cast-birthdays.mjs'
 
-const roster = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8')).persons
+const roster = readCanonicalDocument('lore/name-pools/person-id-registry.json').persons
 const fixture = () => ({ schemaVersion: 1, ageAsOf: '2126-12-31', people: roster.map(({ id, name }) =>
   ({ id, name, birthDate: '2100-03-01', sourceStatus: 'owner-authored', sourceRefs: ['owner:test-fixture'] })) })
 
 test('approved assigned cohort endpoints accept and cross-band edits reject without reassignment', async () => {
-  const source = JSON.parse(await readFile(new URL('../lore/name-pools/cast-birthdays.json', import.meta.url), 'utf8'))
-  const contract = JSON.parse(await readFile(new URL('../lore/name-pools/cast-birth-cohorts.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/name-pools/cast-birthdays.json')
+  const contract = readCanonicalDocument('lore/name-pools/cast-birth-cohorts.json')
   for (const cohort of contract.cohorts) {
     const assignment = contract.assignments.find((entry) => entry.cohort === cohort.id)
     if (!assignment) continue
@@ -28,7 +29,7 @@ test('approved assigned cohort endpoints accept and cross-band edits reject with
       try {
         await mkdir(join(root, 'name-pools'))
         await writeFile(join(root, 'name-pools/cast-birthdays.json'), JSON.stringify(ledger))
-        await assert.rejects(loadCastBirthdays(root, roster), /E_BIRTH_COHORT_RANGE/)
+        await assert.rejects(loadCastBirthdays(root, roster, { ledger: JSON.parse(await readFile(join(root, 'name-pools/cast-birthdays.json'), 'utf8')) }), /E_BIRTH_COHORT_RANGE/)
       } finally { await rm(root, { recursive: true, force: true }) }
     }
   }
@@ -43,9 +44,9 @@ test('approved assigned cohort endpoints accept and cross-band edits reject with
 })
 
 test('diaspora birthday sources resolve to the same permanent identity card', async () => {
-  const ledger = JSON.parse(await readFile(new URL('../lore/name-pools/cast-birthdays.json', import.meta.url), 'utf8'))
-  const document = JSON.parse(await readFile(new URL('../lore/factions/Diaspora-Corridors.json', import.meta.url), 'utf8'))
-  const families = JSON.parse(await readFile(new URL('../lore/name-pools/diaspora-family-lineages.json', import.meta.url), 'utf8'))
+  const ledger = readCanonicalDocument('lore/name-pools/cast-birthdays.json')
+  const document = readCanonicalDocument('lore/factions/Diaspora-Corridors.json')
+  const families = readCanonicalDocument('lore/name-pools/diaspora-family-lineages.json')
   for (const person of ledger.people.filter(row => /^K101[1-6]$/u.test(row.id))) {
     const refs = person.sourceRefs.filter(ref => ref.startsWith('lore/factions/Diaspora-Corridors.json#/'))
     if (person.sourceRefs.includes('lore/name-pools/diaspora-family-lineages.json')) {

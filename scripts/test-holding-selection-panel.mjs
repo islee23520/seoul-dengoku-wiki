@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
@@ -58,7 +59,7 @@ for (const id of ['holding:yangcheon', 'holding:saetgang-concourse']) {
   })
 }
 
-const baseHolding = JSON.parse(readFileSync(new URL('../lore/relations/personal-holdings.json', import.meta.url), 'utf8')).holdings.find(row => row.id === 'holding:yangcheon')
+const baseHolding = readCanonicalDocument('lore/relations/personal-holdings.json').holdings.find(row => row.id === 'holding:yangcheon')
 
 const componentOnlyHolding = {
   id: 'fixture:component-islands',

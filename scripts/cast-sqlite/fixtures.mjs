@@ -1,12 +1,29 @@
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { copyFile, mkdir, mkdtemp, readFile, realpath, rm } from 'node:fs/promises';
+import { copyFile, mkdir, mkdtemp, readFile, realpath, rm, writeFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { dirname, isAbsolute, join, relative, resolve } from 'node:path';
 import { DATA_SOURCE_PATHS, REQUIRED_SOURCE_PATHS, parseDocument, sha256 } from './sources.mjs';
 import { ENGINE_PRIVATE_SOURCE_PATHS } from './current-engine.mjs';
 import { REFERENCE_TARGET_PATHS } from './source-closure.mjs';
 import { EXCLUDED_SOURCE_PATHS } from './excluded-sources.mjs';
+import { openReadOnly } from './db.mjs';
+import { readSourceArchive } from './source-archive.mjs';
+import { readPrivateSourceArchive } from '../document-store/private-source-archive.mjs';
+
+export function historicalFixtureBytes(sourceRoot, logicalPath) {
+  const db = openReadOnly(join(sourceRoot, 'data/canonical/wiki-cast.sqlite'));
+  try {
+    if (logicalPath.startsWith('lore/editorial/')) {
+      const pin = db.prepare('SELECT sha256 FROM excluded_source WHERE logical_path=?').get(logicalPath)
+        ?? db.prepare('SELECT source_sha256 AS sha256 FROM current_engine_source WHERE logical_path=?').get(logicalPath);
+      if (!pin) throw new Error(`E_FIXTURE_SOURCE:${logicalPath}`);
+      return readPrivateSourceArchive(sourceRoot, logicalPath, pin.sha256);
+    }
+    return readSourceArchive(logicalPath, undefined, join(sourceRoot, 'data/canonical/wiki-cast.sqlite'));
+  } finally { db.close(); }
+}
 
 const pool = name => `lore/name-pools/${name}.json`;
 const leaf = text => ({ ko: text, en: text });
@@ -59,12 +76,14 @@ export async function sandbox(t) {
 }
 
 export async function sourceDigests(sourceRoot) {
-  return Promise.all([...new Set([...REQUIRED_SOURCE_PATHS, ...REFERENCE_TARGET_PATHS, ...ENGINE_PRIVATE_SOURCE_PATHS, ...EXCLUDED_SOURCE_PATHS])].map(async path => [path, sha256(await readFile(join(sourceRoot, path)))]));
+  const authority = existsSync(join(sourceRoot, 'data/canonical/wiki-cast.sqlite'));
+  return Promise.all([...new Set([...REQUIRED_SOURCE_PATHS, ...REFERENCE_TARGET_PATHS, ...ENGINE_PRIVATE_SOURCE_PATHS, ...EXCLUDED_SOURCE_PATHS])].map(async path => [path,
+    sha256(authority ? historicalFixtureBytes(sourceRoot, path) : await readFile(join(sourceRoot, path)))]));
 }
 
 /** Ephemeral exact-byte test snapshot, with real source scripts and no committed corpus copy. */
 export async function snapshotActualCorpus(t) {
-  const approvedRoot = resolve(process.env.CAST_SQLITE_SOURCE_ROOT);
+  const approvedRoot = resolve(process.env.CAST_SQLITE_SOURCE_ROOT ?? new URL('../..', import.meta.url).pathname);
   const originalDigests = await sourceDigests(approvedRoot);
   const root = await sandbox(t);
   const sourceRoot = join(root, 'WIKI');
@@ -72,7 +91,7 @@ export async function snapshotActualCorpus(t) {
   for (const logicalPath of inputPaths) {
     const target = join(sourceRoot, logicalPath);
     await mkdir(dirname(target), { recursive: true });
-    await copyFile(join(approvedRoot, logicalPath), target);
+    await writeFile(target, historicalFixtureBytes(approvedRoot, logicalPath), { flag: 'wx' });
   }
   assert.deepEqual(await sourceDigests(sourceRoot), originalDigests);
   execFileSync('git', ['init', '--quiet', sourceRoot], { windowsHide: true, shell: false });

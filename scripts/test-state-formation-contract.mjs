@@ -1,9 +1,10 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
 
-const readJson = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
+const readJson = path => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
 const hash = bytes => createHash('sha256').update(bytes).digest('hex')
 const contract = readJson('../lore/relations/state-formation-contract.json')
 const holdings = readJson('../lore/relations/personal-holdings.json')

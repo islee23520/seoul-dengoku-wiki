@@ -46,5 +46,6 @@ export async function k176PredecessorReader(root, reader = readFile) {
   const successor = await authenticateK176LabelSuccessor(root, reader)
   const predecessor = async path => resolve(path) === resolve(root, K176_SOURCE) ? successor.before : reader(path)
   predecessor.appliedDiskOverrides = new Map(reader.appliedDiskOverrides ?? [])
+  predecessor.readHistorical = reader.readHistorical
   return predecessor
 }

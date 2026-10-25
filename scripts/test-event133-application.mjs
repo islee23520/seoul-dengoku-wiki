@@ -1,11 +1,25 @@
+import { openPublicationDatabaseInputs } from './document-store/publication-database-inputs.mjs'
 import assert from 'node:assert/strict'
-import { mkdtemp, cp, readFile, writeFile, rm } from 'node:fs/promises'
+import { mkdtemp, mkdir, cp, readFile, writeFile, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import { test } from 'vitest'
 import { ROOT, materialize, PACKET, CANDIDATE } from './event133-application.mjs'
 
-const fixture = async (root) => { for (const path of ['lore/editorial/Seoul-Scope-Contract.json','lore/editorial/Seoul-Narrative-Review.json','lore/chronology/Century-Annals.json','.omo/private/seoul-migration/event-disposition-proposal-v2-20261018']) await cp(resolve(ROOT,path),resolve(root,path),{recursive:true}); await cp(resolve(ROOT,`${PACKET}/owner-decision.json`),resolve(root,`${PACKET}/owner-decision.json`),{recursive:true}); return root }
+const fixture = async (root) => {
+  const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG ?? resolve(ROOT, '.omo/private/seoul-migration/sqlite-authority-20261021/publication-config.json'), 'utf8'))
+  const bundle = await openPublicationDatabaseInputs(ROOT, config)
+  try {
+    for (const path of ['lore/editorial/Seoul-Scope-Contract.json','lore/editorial/Seoul-Narrative-Review.json','lore/chronology/Century-Annals.json','.omo/private/seoul-migration/event-disposition-proposal-v2-20261018']) {
+      if (path.startsWith('lore/')) {
+        await mkdir(resolve(root,path,'..'),{recursive:true})
+        await writeFile(resolve(root,path), await bundle.inputs.readBytes(resolve(ROOT,path)))
+      } else await cp(resolve(ROOT,path),resolve(root,path),{recursive:true})
+    }
+    await cp(resolve(ROOT,`${PACKET}/owner-decision.json`),resolve(root,`${PACKET}/owner-decision.json`),{recursive:true})
+    return root
+  } finally { bundle.close() }
+}
 
 test('event133 application preserves counts and rejects forged inputs', async () => {
   const root = await mkdtemp(join(tmpdir(), 'event133-'))

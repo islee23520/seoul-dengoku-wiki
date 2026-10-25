@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readdir, readFile } from 'node:fs/promises'
 import { test } from 'vitest'
@@ -7,13 +8,27 @@ import { MemoryRouter } from 'react-router-dom'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { CharacterProfile, PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
 import { externalToponymHits } from './current-person-geography.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
+import { readRetirementProse, projectRetirementProse } from './cast-sqlite/retirement-prose.mjs'
+import { personGeographyVocabulary as vocabulary } from './fixtures/current-person-geography-vocabulary.mjs'
+
+const rosterDb = openReadOnly(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url).pathname)
+const retirementProse = readRetirementProse(rosterDb)
+const dispositions = (() => {
+  try { return readPersonDisposition(rosterDb) } finally { rosterDb.close() }
+})()
+const activeIds = new Set([...dispositions].filter(([, row]) => row.status === 'active').map(([id]) => id))
+const issuedPeople = readCanonicalDocument('lore/name-pools/person-id-registry.json').persons
+const idByName = new Map(issuedPeople.map(({ id, name }) => [name, id]))
+const sourceValues = readCanonicalDocument('lore/name-pools/values-cast.json').people
+const detailRouteByName = new Map(sourceValues.map(({ name }, index) => [name, `person-${String(index + 1).padStart(4, '0')}`]))
 
 test('public current locations and holdings contain no external vocabulary after Seoul names are excluded', async () => {
-  const { vocabulary } = JSON.parse(await readFile(new URL('../.omo/evidence/seoul-lock/task-4-narrowed.json', import.meta.url), 'utf8'))
   assert.ok(vocabulary.internal.length > 0 && vocabulary.external.length > 0)
   const hits = []
   const files = (await readdir(new URL('../public/person-details/', import.meta.url))).filter(name => name.endsWith('.json'))
-  assert.equal(files.length, 1022)
+  assert.equal(files.length, activeIds.size)
   for (const file of files) {
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${file}`, import.meta.url), 'utf8'))
     assert.equal(Object.hasOwn(detail, 'territory'), false, detail.characterId)
@@ -56,7 +71,7 @@ test('every public person profile matches the validated editorial projection wit
   const root = new URL('../', import.meta.url).pathname
   const profiles = await loadCharacterProfiles(root)
   const files = (await readdir(new URL('../public/person-details/', import.meta.url))).filter(name => name.endsWith('.json'))
-  assert.equal(files.length, profiles.size)
+  assert.equal(files.length, activeIds.size)
   for (const file of files) {
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${file}`, import.meta.url), 'utf8'))
     const expected = publicCharacterProfile(profiles.get(detail.characterId))
@@ -67,13 +82,14 @@ test('every public person profile matches the validated editorial projection wit
 })
 
 test('existing prose contacts bind both generated identities to the same source record', async () => {
-  const ledger = JSON.parse(await readFile(new URL('../lore/name-pools/cast-prose-contacts.json', import.meta.url), 'utf8'))
+  const ledger = readCanonicalDocument('lore/name-pools/cast-prose-contacts.json')
   const byId = new Map()
   for (const file of (await readdir(new URL('../public/person-details/', import.meta.url))).filter(name => name.endsWith('.json'))) {
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${file}`, import.meta.url), 'utf8'))
     byId.set(detail.gurps.id, detail)
   }
-  for (const record of ledger.records) {
+  for (const detail of byId.values()) assert.ok(detail.proseContacts.every(contact => activeIds.has(contact.recipientId)), detail.gurps.id)
+  for (const record of ledger.records.filter(record => activeIds.has(record.personId) && activeIds.has(record.recipientId))) {
     const left = byId.get(record.personId), right = byId.get(record.recipientId)
     assert.ok(left && right, record.personId)
     for (const [detail, recipientId] of [[left, record.recipientId], [right, record.personId]]) {
@@ -87,14 +103,14 @@ test('existing prose contacts bind both generated identities to the same source 
 
 const sourcePages = new Map()
 test('generated household admission preserves source faith and Christian exclusions', async () => {
-  const ledger = JSON.parse(await readFile(new URL('../lore/name-pools/cast-household-relations.json', import.meta.url), 'utf8'))
+  const ledger = readCanonicalDocument('lore/name-pools/cast-household-relations.json')
   const records = new Map()
   for (const file of (await readdir(new URL('../public/person-details/', import.meta.url))).filter(name => name.endsWith('.json'))) {
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${file}`, import.meta.url), 'utf8'))
     records.set(detail.gurps.id, detail)
   }
-  assert.equal(records.size, ledger.people.length)
-  for (const person of ledger.people) {
+  assert.equal(records.size, activeIds.size)
+  for (const person of ledger.people.filter(person => activeIds.has(person.personId))) {
     assert.deepEqual(records.get(person.personId).household, {
       personFaith: person.household.personFaith.status,
       houseFaith: person.household.houseFaith.status,
@@ -112,7 +128,8 @@ const selectedCard = async (name) => {
   const candidates = []
   for (const slug of cardSources) {
     if (!sourcePages.has(slug)) {
-      const document = JSON.parse(await readFile(new URL(`../lore/characters/${slug}.json`, import.meta.url), 'utf8'))
+      const path = `lore/characters/${slug}.json`
+      const document = projectRetirementProse(readCanonicalDocument(path), path, retirementProse)
       sourcePages.set(slug, { document, primary: document.data?.primary_detail_names ?? [] })
     }
     const source = sourcePages.get(slug)
@@ -129,7 +146,7 @@ const selectedCard = async (name) => {
     ?? candidates.sort((a, b) => b.body.trim().length - a.body.trim().length)[0]
 }
 const assertCanonicalSource = async (detail, id) => {
-  const issued = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const issued = readCanonicalDocument('lore/name-pools/person-id-registry.json')
     .persons.find((person) => person.id === id || person.name === id)
   assert.equal(detail.name, issued?.name, id)
   const card = await selectedCard(issued.name)
@@ -144,11 +161,11 @@ const assertCanonicalSource = async (detail, id) => {
 
 test('S01 court projection retains exact approved direct lieges and owner memberships', async () => {
   const approved = [
-    ['K002', 'K904 K568 K616 K712 K856 K952 K1001 K424 K520 K760 K808 K664 K472'],
-    ['K017', 'K504 K744 K600 K552 K456 K840 K888 K648 K936 K984 K792 K696'],
-    ['K003', 'K968 K440 K728 K488 K920 K536 K824 K776 K632 K872 K584 K680'],
+    ['K002', 'K568 K616 K712 K952 K1001 K424 K520 K760 K472'],
+    ['K017', 'K600'],
+    ['K003', 'K728 K920'],
   ]
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
   const details = new Map()
   for (const file of (await readdir(new URL('../public/person-details/', import.meta.url))).filter((name) => name.endsWith('.json'))) {
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${file}`, import.meta.url), 'utf8'))
@@ -183,11 +200,11 @@ test('S01 court projection retains exact approved direct lieges and owner member
     }
   }
   checkProjection(person)
-  assert.equal(expectedMembers.size, 37)
+  assert.equal(expectedMembers.size, 12)
   assert.equal(expectedOwners.size, 3)
-  assert.ok(expectedMembers.has(person('K872').name))
+  assert.ok(expectedMembers.has(person('K568').name))
   assert.ok(!expectedMembers.has(person('K272').name))
-  assert.equal(details.size, 1022)
+  assert.equal(details.size, activeIds.size)
   const s01OwnerLieges = new Set(['K002', 'K017', 'K003', 'K004', 'K005'])
   const issuedIdByName = new Map(registry.persons.map((entry) => [entry.name, entry.id]))
   for (const detail of details.values()) {
@@ -197,29 +214,29 @@ test('S01 court projection retains exact approved direct lieges and owner member
     if (detail.state === 'S01' && !expectedOwners.has(detail.name) && !['K001', 'K009'].includes(issuedId)) assert.equal(detail.court, undefined, detail.name)
   }
   const withoutLiege = new Map(details)
-  withoutLiege.set(person('K904').name, { ...person('K904'), directLiege: undefined })
-  assert.throws(() => checkProjection((id) => withoutLiege.get(registry.persons.find((entry) => entry.id === id).name)), /K904/)
+  withoutLiege.set(person('K568').name, { ...person('K568'), directLiege: undefined })
+  assert.throws(() => checkProjection((id) => withoutLiege.get(registry.persons.find((entry) => entry.id === id).name)), /K568/)
   const wrongLiege = new Map(details)
-  wrongLiege.set(person('K904').name, { ...person('K904'), directLiege: { ...person('K904').directLiege, personId: 'K003' } })
-  assert.throws(() => checkProjection((id) => wrongLiege.get(registry.persons.find((entry) => entry.id === id).name)), /K904/)
+  wrongLiege.set(person('K568').name, { ...person('K568'), directLiege: { ...person('K568').directLiege, personId: 'K003' } })
+  assert.throws(() => checkProjection((id) => wrongLiege.get(registry.persons.find((entry) => entry.id === id).name)), /K568/)
   const wrongMember = new Map(details)
   wrongMember.set(person('K002').name, { ...person('K002'), court: { ...person('K002').court,
-    members: person('K002').court.members.map((member) => member.personId === 'K904' ? { ...member, personId: 'K272' } : member) } })
+    members: person('K002').court.members.map((member) => member.personId === 'K568' ? { ...member, personId: 'K272' } : member) } })
   assert.throws(() => checkProjection((id) => wrongMember.get(registry.persons.find((entry) => entry.id === id).name)), /K002/)
   const missingMember = new Map(details)
   missingMember.set(person('K002').name, { ...person('K002'), court: { ...person('K002').court,
-    members: person('K002').court.members.filter((member) => member.personId !== 'K904') } })
+    members: person('K002').court.members.filter((member) => member.personId !== 'K568') } })
   assert.throws(() => checkProjection((id) => missingMember.get(registry.persons.find((entry) => entry.id === id).name)), /K002/)
 })
 
 test('S02/S03 court projection retains exact approved direct lieges and owner memberships', async () => {
   const approved = [
     ['K032', 'K041'], ['K037', 'K047'], ['K033', 'K049'], ['K058', 'K068'],
-    ['K060', 'K069 K071'], ['K061', 'K073 K075'], ['K062', 'K074'],
+    ['K060', 'K069'], ['K061', 'K073'], ['K062', 'K074'],
     ['K998', 'K425 K441'],
   ]
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8'))
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json')
   const catalogText = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
   const catalog = JSON.parse(catalogText.slice('export const peopleCatalog = '.length, catalogText.indexOf(' as const\n')))
   const issuedById = new Map(registry.persons.map((person) => [person.id, person]))
@@ -264,9 +281,9 @@ test('S02/S03 court projection retains exact approved direct lieges and owner me
     }
   }
   check(person)
-  assert.equal(expectedMembers.size, 11)
+  assert.equal(expectedMembers.size, 9)
   assert.equal(expectedOwners.size, 8)
-  assert.equal(details.size, 1022)
+  assert.equal(details.size, activeIds.size)
   const s03OwnerLieges = new Set(['K058', 'K060', 'K061', 'K062', 'K233', 'K032', 'K037', 'K033', 'K035', 'K039', 'K038'])
   for (const detail of details.values()) {
     if (detail.state !== 'S01' && !expectedMembers.has(detail.id) && !s03OwnerLieges.has(detail.gurps.id))
@@ -278,7 +295,7 @@ test('S02/S03 court projection retains exact approved direct lieges and owner me
   assert.throws(() => check((id) => person(id, omitted)), /K041/)
   const wrongCourt = new Map(details)
   wrongCourt.set(person('K060').id, { ...person('K060'), court: { ...person('K060').court,
-    members: person('K060').court.members.filter((member) => member.personId !== 'K071') } })
+    members: person('K060').court.members.filter((member) => member.personId !== 'K069') } })
   assert.throws(() => check((id) => person(id, wrongCourt)), /K060/)
   const wrongIdentity = new Map(details)
   wrongIdentity.set(person('K041').id, { ...person('K041'), name: issuedById.get('K194').name })
@@ -302,9 +319,9 @@ test('S02/S03 court projection retains exact approved direct lieges and owner me
 })
 
 test('owner-liege edges project one directLiege with independently approved court membership', async () => {
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
   const issuedById = new Map(registry.persons.map((entry) => [entry.id, entry]))
-  const sheets = JSON.parse(await readFile(new URL('../lore/name-pools/gurps-cast.json', import.meta.url), 'utf8'))
+  const sheets = readCanonicalDocument('lore/name-pools/gurps-cast.json')
   const fileFor = (id) => `${sheets.people.find((sheet) => sheet.id === id).url.replace('/people/', '')}.json`
   const read = async (id) => JSON.parse(await readFile(new URL(`../public/person-details/${fileFor(id)}`, import.meta.url), 'utf8'))
   const expected = [
@@ -337,7 +354,7 @@ test('owner-liege edges project one directLiege with independently approved cour
   }
   const k003 = await read('K003')
   assert.deepEqual(k003.court.members.map(row => row.personId),
-    ['K968', 'K440', 'K728', 'K488', 'K920', 'K536', 'K824', 'K776', 'K632', 'K872', 'K584', 'K680'])
+    ['K728', 'K920'])
   for (const personId of ['K003', 'K004', 'K005']) {
     const detail = await read(personId)
     const html = renderToStaticMarkup(createElement(MemoryRouter, null,
@@ -347,7 +364,7 @@ test('owner-liege edges project one directLiege with independently approved cour
     assert.ok(html.includes(`data-person-id="${detail.id}"`), personId)
     for (const member of detail.court?.members ?? []) assert.ok(html.includes(member.name), member.personId)
   }
-  const s03RetainerCourts = { K068: 'K058', K069: 'K060', K071: 'K060', K073: 'K061', K074: 'K062', K075: 'K061' }
+  const s03RetainerCourts = { K068: 'K058', K069: 'K060', K073: 'K061', K074: 'K062' }
   for (const [excluded, owner] of Object.entries(s03RetainerCourts)) {
     const detail = await read(excluded)
     assert.equal(detail.directLiege?.relationKind, undefined, excluded)
@@ -357,14 +374,19 @@ test('owner-liege edges project one directLiege with independently approved cour
 })
 
 test('all canonical people expose unique detail routes and structured data', async () => {
+  assert.equal(issuedPeople.length, 1022)
+  assert.equal(activeIds.size, 511)
+  assert.equal([...dispositions.values()].filter(row => row.status === 'retired-current').length, 511)
   const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
   const routes = [...catalog.matchAll(/"detailRoute": "([^"]+)"/g)].map((match) => match[1])
   const detailRoot = new URL('../public/person-details/', import.meta.url)
   const names = (await readdir(detailRoot)).filter((name) => name.endsWith('.json'))
-  assert.equal(routes.length, 1022)
-  assert.equal(new Set(routes).size, 1022)
+  assert.equal(routes.length, activeIds.size)
+  assert.equal(new Set(routes).size, activeIds.size)
   assert.ok(routes.every((route) => /^\/people\/person-\d{4}$/u.test(route)))
-  assert.equal(names.length, 1022)
+  assert.equal(names.length, activeIds.size)
+  const expectedFiles = issuedPeople.filter(person => activeIds.has(person.id)).map(person => `${detailRouteByName.get(person.name)}.json`).sort()
+  assert.deepEqual(names.sort(), expectedFiles)
   for (const name of names) {
     const detail = JSON.parse(await readFile(new URL(name, detailRoot), 'utf8'))
     assert.ok(detail.biography.length > 0, name)
@@ -372,7 +394,7 @@ test('all canonical people expose unique detail routes and structured data', asy
       assert.match(detail.clan.crest, /^clan-crests\/[a-z0-9-]+\.svg$/u, name)
       assert.ok((await readFile(new URL(`../public/${detail.clan.crest}`, import.meta.url), 'utf8')).includes('<svg'), name)
     } else {
-      const lineage = JSON.parse(await readFile(new URL('../lore/name-pools/cast-hangnyeol.json', import.meta.url), 'utf8'))
+      const lineage = readCanonicalDocument('lore/name-pools/cast-hangnyeol.json')
         .people.find((person) => person.name === detail.name)
       assert.ok(lineage, name)
       if (lineage.namingConvention === 'non-korean-lineage') {
@@ -395,12 +417,12 @@ test('all canonical people expose unique detail routes and structured data', asy
       assert.equal(detail.desire.지향, null, name)
       assert.equal(detail.desire.결합, null, name)
     } else {
-      const offices = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url)))
+      const offices = readCanonicalDocument('lore/relations/opening-office-appointments.json')
       const current = offices.appointments.find(row => row.personId === detail.characterId)?.current
       if (current?.status === 'unappointed') assert.equal(detail.position, '', name)
       else assert.ok(detail.position.length > 0, name)
     }
-    const appointment = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url), 'utf8'))
+    const appointment = readCanonicalDocument('lore/relations/opening-office-appointments.json')
       .appointments.find(row => row.personId === detail.characterId)
     if (appointment?.current.rank === null) assert.equal(detail.rank, '', name)
     else assert.ok(detail.rank.length > 0, name)
@@ -410,13 +432,14 @@ test('all canonical people expose unique detail routes and structured data', asy
 
 test('thirteen S01 ration clerks have owner-approved command ties to I Seodam', async () => {
   const names = ['임달나', '백산석', '성달현', '한북우', '김빛호', '문숲민', '곽가현', '이민석', '송재현', '고늘진', '노솔호', '이하석', '임건우']
+  const retainedNames = names.filter(name => activeIds.has(idByName.get(name)))
   const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
   const details = new Map()
   for (const match of catalog.matchAll(/"id": "(person-\d{4})",\s*"name": "([^"]+)"/gu)) {
-    if (names.includes(match[2])) details.set(match[2], match[1])
+    if (retainedNames.includes(match[2])) details.set(match[2], match[1])
   }
-  assert.equal(details.size, names.length)
-  for (const name of names) {
+  assert.equal(details.size, retainedNames.length)
+  for (const name of retainedNames) {
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${details.get(name)}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.relations.outgoing.filter((edge) => edge.to === '이서담' && edge.type === '지휘').length, 1, name)
   }
@@ -424,13 +447,14 @@ test('thirteen S01 ration clerks have owner-approved command ties to I Seodam', 
 
 test('twelve S01 concourse explorers have owner-approved command ties to Byeon Goun', async () => {
   const names = ['이늘민', '최아아', '송하지', '임서나', '성수현', '양자태', '성하현', '백차래', '정남준', '안구민', '신차민', '차자원']
+  const retainedNames = names.filter(name => activeIds.has(idByName.get(name)))
   const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
   const details = new Map()
   for (const match of catalog.matchAll(/"id": "(person-\d{4})",\s*"name": "([^"]+)"/gu)) {
-    if (names.includes(match[2])) details.set(match[2], match[1])
+    if (retainedNames.includes(match[2])) details.set(match[2], match[1])
   }
-  assert.equal(details.size, names.length)
-  for (const name of names) {
+  assert.equal(details.size, retainedNames.length)
+  for (const name of retainedNames) {
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${details.get(name)}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.relations.outgoing.filter((edge) => edge.to === '변고운' && edge.type === '지휘').length, 1, name)
   }
@@ -438,13 +462,14 @@ test('twelve S01 concourse explorers have owner-approved command ties to Byeon G
 
 test('twelve S01 bridge couriers have owner-approved command ties to Kim Taeun', async () => {
   const names = ['민차현', '송은지', '허바우', '백미래', '남아은', '성사현', '조바원', '구람희', '임람나', '안새민', '이다민', '송다지']
+  const retainedNames = names.filter(name => activeIds.has(idByName.get(name)))
   const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
   const details = new Map()
   for (const match of catalog.matchAll(/"id": "(person-\d{4})",\s*"name": "([^"]+)"/gu)) {
-    if (names.includes(match[2])) details.set(match[2], match[1])
+    if (retainedNames.includes(match[2])) details.set(match[2], match[1])
   }
-  assert.equal(details.size, names.length)
-  for (const name of names) {
+  assert.equal(details.size, retainedNames.length)
+  for (const name of retainedNames) {
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${details.get(name)}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.relations.outgoing.filter((edge) => edge.to === '김태운' && edge.type === '지휘').length, 1, name)
   }
@@ -452,7 +477,7 @@ test('twelve S01 bridge couriers have owner-approved command ties to Kim Taeun',
 
 test('Oh Haerin keeps the owner-confirmed female identity', async () => {
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-0195.json', import.meta.url), 'utf8'))
-  const ledger = JSON.parse(await readFile(new URL('../lore/name-pools/gender-cast.json', import.meta.url), 'utf8'))
+  const ledger = readCanonicalDocument('lore/name-pools/gender-cast.json')
   const gender = ledger.people.find((person) => person.name === '오해린')
   assert.equal(detail.name, '오해린')
   assert.equal(detail.gender, '여성')
@@ -461,8 +486,8 @@ test('Oh Haerin keeps the owner-confirmed female identity', async () => {
 })
 
 test('S01 issued cards retain an explicit occupation and canonical source in person details', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-01.json', import.meta.url), 'utf8'))
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const document = readCanonicalDocument('lore/characters/Cast-State-01.json')
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
   const issued = new Set(registry.persons.map((person) => person.name))
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: block.text.ko.replace(/^인물 /u, ''), index }]
@@ -481,6 +506,10 @@ test('S01 issued cards retain an explicit occupation and canonical source in per
       .map((item) => typeof item.ko === 'string' ? item.ko : item.ko.map((run) => run.text).join(''))
       .find((item) => item.startsWith('생업: '))?.slice(4)
     assert.ok(occupation && occupation !== '미등록', heading.name)
+    if (!activeIds.has(idByName.get(heading.name))) {
+      assert.equal(details.has(heading.name), false, heading.name)
+      continue
+    }
     const detail = details.get(heading.name)
     assert.ok(detail, heading.name)
     assert.equal(detail.occupation, occupation, heading.name)
@@ -490,8 +519,8 @@ test('S01 issued cards retain an explicit occupation and canonical source in per
 })
 
 test('S02 issued cards retain distinct bilingual livelihoods and their canonical source', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-02.json', import.meta.url), 'utf8'))
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const document = readCanonicalDocument('lore/characters/Cast-State-02.json')
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
   const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: block.text.ko.replace(/^인물 /u, ''), index }]
@@ -510,7 +539,8 @@ test('S02 issued cards retain distinct bilingual livelihoods and their canonical
     assert.notEqual(livelihood, '미등록', heading.name)
     const title = fields.find((item) => typeof item.ko === 'string' && item.ko.startsWith('직함: '))?.ko.slice(4)
     assert.notEqual(livelihood, title, heading.name)
-    const detail = JSON.parse(await readFile(new URL(`../public/person-details/person-${id.slice(1).padStart(4, '0')}.json`, import.meta.url), 'utf8'))
+    if (!activeIds.has(id)) continue
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${detailRouteByName.get(heading.name)}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.name, heading.name)
     assert.equal(detail.occupation, livelihood, heading.name)
     assert.equal(detail.fields['생업'], livelihood, heading.name)
@@ -519,8 +549,8 @@ test('S02 issued cards retain distinct bilingual livelihoods and their canonical
 })
 
 test('all currently issued S03 cards retain bilingual livelihoods distinct from office and canonical source', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-03.json', import.meta.url), 'utf8'))
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const document = readCanonicalDocument('lore/characters/Cast-State-03.json')
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
   const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: block.text.ko.replace(/^인물 /u, ''), index }]
@@ -540,6 +570,7 @@ test('all currently issued S03 cards retain bilingual livelihoods distinct from 
     assert.notEqual(livelihood, '미등록', heading.name)
     const title = fields.find((item) => typeof item.ko === 'string' && item.ko.startsWith('직함: '))?.ko.slice(4)
     assert.notEqual(livelihood, title, heading.name)
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/person-${id.slice(1).padStart(4, '0')}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.name, heading.name)
     assert.equal(detail.occupation, livelihood, heading.name)
@@ -549,11 +580,11 @@ test('all currently issued S03 cards retain bilingual livelihoods distinct from 
 })
 
 test('all 64 issued S04 K IDs retain sourced bilingual livelihoods and canonical sources', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-04.json', import.meta.url), 'utf8'))
+  const document = readCanonicalDocument('lore/characters/Cast-State-04.json')
   const markdown = renderLoreMarkdown(document, 'ko')
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
   const idByName = new Map(registry.persons.map(({ id, name }) => [name, id]))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const detailIndexByName = new Map(values.map(({ name }, index) => [name, index + 1]))
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: block.text.ko.replace(/^인물 /u, ''), index }]
@@ -580,6 +611,7 @@ test('all 64 issued S04 K IDs retain sourced bilingual livelihoods and canonical
     const detailIndex = detailIndexByName.get(heading.name)
     assert.ok(detailIndex, id)
     const detailId = `person-${String(detailIndex).padStart(4, '0')}`
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${detailId}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.id, detailId, id)
     assert.equal(detail.name, heading.name, id)
@@ -591,11 +623,11 @@ test('all 64 issued S04 K IDs retain sourced bilingual livelihoods and canonical
 })
 
 test('all 65 issued S05 cards retain bilingual livelihoods and their canonical sources', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-05.json', import.meta.url), 'utf8'))
+  const document = readCanonicalDocument('lore/characters/Cast-State-05.json')
   const markdown = renderLoreMarkdown(document, 'ko')
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
   const idByName = new Map(registry.persons.map(({ id, name }) => [name, id]))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const detailIndexByName = new Map(values.map(({ name }, index) => [name, index + 1]))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const baeDetail = JSON.parse(await readFile(new URL('../public/person-details/person-0116.json', import.meta.url), 'utf8'))
@@ -630,6 +662,7 @@ test('all 65 issued S05 cards retain bilingual livelihoods and their canonical s
     const detailIndex = detailIndexByName.get(heading.name)
     assert.ok(detailIndex, id)
     const detailId = `person-${String(detailIndex).padStart(4, '0')}`
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${detailId}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.id, detailId, id)
     assert.equal(detail.name, heading.name, id)
@@ -643,12 +676,12 @@ test('all 65 issued S05 cards retain bilingual livelihoods and their canonical s
 })
 
 test('all 61 issued S06 cards retain bilingual livelihoods and their canonical sources', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-06.json', import.meta.url), 'utf8'))
+  const document = readCanonicalDocument('lore/characters/Cast-State-06.json')
   const markdown = renderLoreMarkdown(document, 'ko')
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const { currentOfficeAppointments } = await import('./person-detail-inputs.mjs')
-  const officeSource = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url), 'utf8'))
+  const officeSource = readCanonicalDocument('lore/relations/opening-office-appointments.json')
   const appointments = currentOfficeAppointments(officeSource, new Map(registry.persons.map(person => [person.id, person])))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
@@ -676,6 +709,7 @@ test('all 61 issued S06 cards retain bilingual livelihoods and their canonical s
       ? [valueIndex + 1] : [])
     assert.equal(detailMatches.length, 1, id)
     const detailId = `person-${String(detailMatches[0]).padStart(4, '0')}`
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${detailId}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.id, detailId, id)
     assert.equal(detail.name, heading.name, id)
@@ -699,12 +733,12 @@ test('all 61 issued S06 cards retain bilingual livelihoods and their canonical s
 })
 
 test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and canonical sources', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-07.json', import.meta.url), 'utf8'))
+  const document = readCanonicalDocument('lore/characters/Cast-State-07.json')
   const markdown = renderLoreMarkdown(document, 'ko')
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const { currentOfficeAppointments } = await import('./person-detail-inputs.mjs')
-  const officeSource = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url), 'utf8'))
+  const officeSource = readCanonicalDocument('lore/relations/opening-office-appointments.json')
   const appointments = currentOfficeAppointments(officeSource, new Map(registry.persons.map(person => [person.id, person])))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
@@ -732,6 +766,7 @@ test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and canonical
       ? [valueIndex + 1] : [])
     assert.equal(detailMatches.length, 1, id)
     const detailId = `person-${String(detailMatches[0]).padStart(4, '0')}`
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${detailId}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.id, detailId, id)
     assert.equal(detail.name, heading.name, id)
@@ -750,10 +785,10 @@ test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and canonical
 })
 
 test('all 61 issued S08 K IDs retain sourced bilingual livelihoods and canonical sources', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-08.json', import.meta.url), 'utf8'))
+  const document = readCanonicalDocument('lore/characters/Cast-State-08.json')
   const markdown = renderLoreMarkdown(document, 'ko')
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }] : [])
@@ -779,6 +814,7 @@ test('all 61 issued S08 K IDs retain sourced bilingual livelihoods and canonical
       ? [valueIndex + 1] : [])
     assert.equal(detailMatches.length, 1, id)
     const detailId = `person-${String(detailMatches[0]).padStart(4, '0')}`
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${detailId}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.id, detailId, id)
     assert.equal(detail.name, heading.name, id)
@@ -793,9 +829,9 @@ test('all 61 issued S08 K IDs retain sourced bilingual livelihoods and canonical
 })
 
 test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and canonical sources', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-09.json', import.meta.url), 'utf8'))
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const document = readCanonicalDocument('lore/characters/Cast-State-09.json')
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }] : [])
@@ -822,6 +858,7 @@ test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and canon
       ? [valueIndex + 1] : [])
     assert.equal(detailMatches.length, 1, id)
     const detailId = `person-${String(detailMatches[0]).padStart(4, '0')}`
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${detailId}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.id, detailId, id)
     assert.equal(detail.name, heading.name, id)
@@ -830,7 +867,7 @@ test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and canon
     if (id === 'K219') {
       assert.equal(detail.sourceRoute, '/world/Core-Characters#최지우', id)
       const core = sourcePages.get('Core-Characters')?.document
-        ?? JSON.parse(await readFile(new URL('../lore/characters/Core-Characters.json', import.meta.url), 'utf8'))
+        ?? readCanonicalDocument('lore/characters/Core-Characters.json')
       assert.ok(core.data.primary_detail_names.includes(heading.name), id)
     } else {
       assert.equal(detail.fields['생업'], occupation, id)
@@ -843,9 +880,9 @@ test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and canon
 })
 
 test('S10 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-10.json', import.meta.url), 'utf8'))
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const document = readCanonicalDocument('lore/characters/Cast-State-10.json')
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
@@ -865,6 +902,7 @@ test('S10 issued cards retain card-backed bilingual livelihoods and canonical so
     assert.ok(livelihood && livelihood !== '미등록', id)
     const detailIndex = values.findIndex((person) => person.name === heading.name && person.state === 'S10')
     assert.ok(detailIndex >= 0, id)
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/person-${String(detailIndex + 1).padStart(4, '0')}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.name, heading.name, id)
     assert.equal(detail.occupation, livelihood, id)
@@ -877,9 +915,9 @@ test('S10 issued cards retain card-backed bilingual livelihoods and canonical so
 })
 
 test('S11 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-11.json', import.meta.url), 'utf8'))
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const document = readCanonicalDocument('lore/characters/Cast-State-11.json')
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
@@ -899,6 +937,7 @@ test('S11 issued cards retain card-backed bilingual livelihoods and canonical so
     assert.ok(livelihood && livelihood !== '미등록', id)
     const detailIndex = values.findIndex((person) => person.name === heading.name && person.state === 'S11')
     assert.ok(detailIndex >= 0, id)
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/person-${String(detailIndex + 1).padStart(4, '0')}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.name, heading.name, id)
     assert.equal(detail.occupation, livelihood, id)
@@ -911,9 +950,9 @@ test('S11 issued cards retain card-backed bilingual livelihoods and canonical so
 })
 
 test('S12 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-12.json', import.meta.url), 'utf8'))
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const document = readCanonicalDocument('lore/characters/Cast-State-12.json')
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
@@ -933,6 +972,7 @@ test('S12 issued cards retain card-backed bilingual livelihoods and canonical so
     assert.ok(livelihood && livelihood !== '미등록', id)
     const detailIndex = values.findIndex((person) => person.name === heading.name && person.state === 'S12')
     assert.ok(detailIndex >= 0, id)
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/person-${String(detailIndex + 1).padStart(4, '0')}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.name, heading.name, id)
     assert.equal(detail.occupation, livelihood, id)
@@ -945,9 +985,9 @@ test('S12 issued cards retain card-backed bilingual livelihoods and canonical so
 })
 
 test('S13 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-13.json', import.meta.url), 'utf8'))
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const document = readCanonicalDocument('lore/characters/Cast-State-13.json')
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
@@ -967,6 +1007,7 @@ test('S13 issued cards retain card-backed bilingual livelihoods and canonical so
     assert.ok(livelihood && livelihood !== '미등록', id)
     const detailIndex = values.findIndex((person) => person.name === heading.name && person.state === 'S13')
     assert.ok(detailIndex >= 0, id)
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/person-${String(detailIndex + 1).padStart(4, '0')}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.name, heading.name, id)
     assert.equal(detail.occupation, livelihood, id)
@@ -979,9 +1020,9 @@ test('S13 issued cards retain card-backed bilingual livelihoods and canonical so
 })
 
 test('S14 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-14.json', import.meta.url), 'utf8'))
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const document = readCanonicalDocument('lore/characters/Cast-State-14.json')
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
@@ -1001,6 +1042,7 @@ test('S14 issued cards retain card-backed bilingual livelihoods and canonical so
     assert.ok(livelihood && livelihood !== '미등록', id)
     const detailIndex = values.findIndex((person) => person.name === heading.name && person.state === 'S14')
     assert.ok(detailIndex >= 0, id)
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/person-${String(detailIndex + 1).padStart(4, '0')}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.name, heading.name, id)
     assert.equal(detail.occupation, livelihood, id)
@@ -1010,7 +1052,7 @@ test('S14 issued cards retain card-backed bilingual livelihoods and canonical so
     assert.doesNotMatch(detail.sections['훈련'] ?? '', /생업:/u, id)
   }
   assert.equal(seen.size, 61)
-  const core = JSON.parse(await readFile(new URL('../lore/characters/Core-Characters.json', import.meta.url), 'utf8'))
+  const core = readCanonicalDocument('lore/characters/Core-Characters.json')
   const coreTak = core.content.find((block) => block.anchor === '탁서윤-p3')
   assert.match(plain(coreTak.text.ko), /생업 별명은 ([^.]+)\./u)
   const takDetail = JSON.parse(await readFile(new URL('../public/person-details/person-1006.json', import.meta.url), 'utf8'))
@@ -1020,9 +1062,9 @@ test('S14 issued cards retain card-backed bilingual livelihoods and canonical so
 })
 
 test('S15 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-15.json', import.meta.url), 'utf8'))
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const document = readCanonicalDocument('lore/characters/Cast-State-15.json')
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
@@ -1042,6 +1084,7 @@ test('S15 issued cards retain card-backed bilingual livelihoods and canonical so
     assert.ok(livelihood && livelihood !== '미등록', id)
     const detailIndex = values.findIndex((person) => person.name === heading.name && person.state === 'S15')
     assert.ok(detailIndex >= 0, id)
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/person-${String(detailIndex + 1).padStart(4, '0')}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.name, heading.name, id)
     assert.equal(detail.occupation, livelihood, id)
@@ -1054,9 +1097,9 @@ test('S15 issued cards retain card-backed bilingual livelihoods and canonical so
 })
 
 test('S16 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
-  const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-16.json', import.meta.url), 'utf8'))
-  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
-  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const document = readCanonicalDocument('lore/characters/Cast-State-16.json')
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json')
+  const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
@@ -1076,6 +1119,7 @@ test('S16 issued cards retain card-backed bilingual livelihoods and canonical so
     assert.ok(livelihood && livelihood !== '미등록', id)
     const detailIndex = values.findIndex((person) => person.name === heading.name && person.state === 'S16')
     assert.ok(detailIndex >= 0, id)
+    if (!activeIds.has(id)) continue
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/person-${String(detailIndex + 1).padStart(4, '0')}.json`, import.meta.url), 'utf8'))
     assert.equal(detail.name, heading.name, id)
     assert.equal(detail.occupation, livelihood, id)
@@ -1163,7 +1207,7 @@ test('Shin Jongmok has an opening objective grounded in his return-net work', as
 })
 
 test('Shin Jongmok exposes the directed bayonet skill without inferred equipment or rank', async () => {
-  const source = JSON.parse(await readFile(new URL('../lore/characters/Core-Characters.json', import.meta.url), 'utf8'))
+  const source = readCanonicalDocument('lore/characters/Core-Characters.json')
   const training = source.content.find((block) => block.anchor === '신종목-p4')
   assert.ok(training && training.anchor === '신종목-p4')
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1009.json', import.meta.url), 'utf8'))
@@ -1171,7 +1215,7 @@ test('Shin Jongmok exposes the directed bayonet skill without inferred equipment
   const sourceTraining = training.text.ko.slice(1).map(run => run.text).join('').trim()
   assert.equal(detail.sections['훈련'], sourceTraining)
   assert.doesNotMatch(detail.sections['훈련'], /총기 접근|탄약 접근|복무 이력|계급 부여/u)
-  const officeSource = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url)))
+  const officeSource = readCanonicalDocument('lore/relations/opening-office-appointments.json')
   const office = officeSource.appointments.find(row => row.personId === 'K1009')
   if (office) assert.equal(detail.rank, office.current.rank?.ko ?? '')
   else assert.match(detail.rank, /^(?:없음|미등록)$/u)
@@ -1192,7 +1236,7 @@ test('K998 keeps his detail route after relocation to the First Branch Workshop'
   assert.equal(detail.name, '이일섭')
   assert.equal(detail.state, 'S02')
   assert.equal(detail.title, '제1분공방 이씨 가문 후계')
-  const offices = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url)))
+  const offices = readCanonicalDocument('lore/relations/opening-office-appointments.json')
   const appointment = offices.appointments.find(row => row.personId === 'K998')
   assert.equal(appointment.current.rank, null)
   assert.equal(detail.rank, '')

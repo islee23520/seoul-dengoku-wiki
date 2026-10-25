@@ -12,6 +12,7 @@ import { EXCLUDED_SOURCE_PATHS } from './excluded-sources.mjs';
 import { REFERENCE_TARGET_PATHS } from './source-closure.mjs';
 import { REQUIRED_SOURCE_PATHS, RETIRED_HISTORICAL_REFERENCE_PATHS } from './sources.mjs';
 import { verifyCastDatabase } from './verify.mjs';
+import { historicalFixtureBytes } from './fixtures.mjs';
 
 const git = (root, ...args) => execFileSync('git', ['-C', root, '-c', 'user.name=fixture', '-c', 'user.email=fixture@example.invalid', '-c', 'commit.gpgsign=false', ...args], { encoding: 'utf8', windowsHide: true, shell: false }).trim();
 const INPUT_PATHS = [...new Set([...REQUIRED_SOURCE_PATHS, ...REFERENCE_TARGET_PATHS, ...ENGINE_PRIVATE_SOURCE_PATHS, ...EXCLUDED_SOURCE_PATHS])].sort();
@@ -26,7 +27,7 @@ async function committedCorpus(t) {
   });
   const sourceRoot = join(root, 'WIKI');
   const evidencePaths = new Set(INPUT_PATHS);
-  const gurps = JSON.parse(await readFile(join(DEFAULT_SOURCE_ROOT, 'lore/name-pools/gurps-cast.json'), 'utf8'));
+  const gurps = JSON.parse(historicalFixtureBytes(DEFAULT_SOURCE_ROOT, 'lore/name-pools/gurps-cast.json'));
   const collect = value => {
     if (value === null || typeof value !== 'object') return;
     if (Object.hasOwn(value, 'path')) {
@@ -39,7 +40,7 @@ async function committedCorpus(t) {
   collect(gurps);
   for (const logicalPath of evidencePaths) {
     await mkdir(dirname(join(sourceRoot, logicalPath)), { recursive: true });
-    await copyFile(join(DEFAULT_SOURCE_ROOT, logicalPath), join(sourceRoot, logicalPath));
+    await writeFile(join(sourceRoot, logicalPath), historicalFixtureBytes(DEFAULT_SOURCE_ROOT, logicalPath));
   }
   execFileSync('git', ['init', '--quiet', sourceRoot], { windowsHide: true, shell: false });
   git(sourceRoot, 'add', '--', ...evidencePaths);

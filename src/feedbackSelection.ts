@@ -1,7 +1,8 @@
 export type PublicSourceSpan = { path: string; start: number; end: number; unit: 'unicode-code-point' }
 export type LiteralSourceSegment = PublicSourceSpan & { kind: 'literal'; textStart: number; textEnd: number }
 export type EntitySourceSegment = PublicSourceSpan & { kind: 'entity'; textStart: number; textEnd: number; visibleText: string }
-export type SourceSegment = LiteralSourceSegment | EntitySourceSegment
+export type ProjectionSourceSegment = PublicSourceSpan & { kind: 'approved-projection'; textStart: number; textEnd: number; visibleText: string }
+export type SourceSegment = LiteralSourceSegment | EntitySourceSegment | ProjectionSourceSegment
 export type SelectableTextLeaf = { leafId: string; blockAnchor: string; blockKind: string; text: string; sourceSegments: SourceSegment[] }
 export type FeedbackDocument = {
   schemaVersion: 'feedback-selectable-view.v1'
@@ -43,7 +44,7 @@ export function clipSourceSegments(leaf: SelectableTextLeaf, start: number, end:
     const overlapStart = Math.max(start, segment.textStart)
     const overlapEnd = Math.min(end, segment.textEnd)
     if (overlapStart >= overlapEnd) return []
-    if (segment.kind === 'entity') return [{ path: segment.path, start: segment.start, end: segment.end, unit: segment.unit }]
+    if (segment.kind === 'entity' || segment.kind === 'approved-projection') return [{ path: segment.path, start: segment.start, end: segment.end, unit: segment.unit }]
     return [{
       path: segment.path,
       start: segment.start + overlapStart - segment.textStart,

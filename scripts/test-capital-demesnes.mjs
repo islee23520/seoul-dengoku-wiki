@@ -1,3 +1,5 @@
+import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
@@ -9,7 +11,7 @@ import { loadApprovedRightsHistory, projectCatalogCurrentHoldings, projectCatalo
 import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
 import HoldingSelectionPanel from '../src/components/HoldingSelectionPanel.tsx'
 
-const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
+const read = path => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
 
 test('the producer rejects both self and other registered lieges on capital station holdings', async () => {
   const holdings = read('../lore/relations/personal-holdings.json')
@@ -23,7 +25,7 @@ test('the producer rejects both self and other registered lieges on capital stat
     allocation: read('../lore/relations/opening-feudal-allocation.json'),
     affiliation: read('../lore/factions/Sixteen-States.json').data.currentAffiliation,
     geographicScale: buildAdminTerritorialScale({
-      geographyBytes: readFileSync(new URL('../lore/regions/seoul-electoral-titles.json', import.meta.url)),
+      geographyBytes: readSourceArchive('lore/regions/seoul-electoral-titles.json', '372734e77019d0e544ded29f90e1b35b8a8c3a3cfff305c295c2bd83a6b64eef'),
       territorialScale: read('../lore/offices/Offices-and-Ranks.json').data.territorialScale,
     }) }
   const context = { issuedById: new Map(registry.persons.map(person => [person.id, person])),

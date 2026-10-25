@@ -474,9 +474,9 @@
         "duchyTitleId": "geography:duchy:11680",
         "guRef": "11680",
         "countyTitleIds": [
-          "geography:county:seoul-constituency:강남구갑선거구",
-          "geography:county:seoul-constituency:강남구을선거구",
-          "geography:county:seoul-constituency:강남구병선거구"
+          "geography:county:2de88369e480a7de",
+          "geography:county:588ef0f6ec944722",
+          "geography:county:98f9d95a2f5dd32e"
         ],
         "geographicKingdomId": "proposal:kingdom:seoul:06",
         "geographicEmpireId": "geography:empire:seoul"
@@ -507,8 +507,8 @@
         "duchyTitleId": "geography:duchy:11650",
         "guRef": "11650",
         "countyTitleIds": [
-          "geography:county:seoul-constituency:서초구갑선거구",
-          "geography:county:seoul-constituency:서초구을선거구"
+          "geography:county:39d747567d6e88c2",
+          "geography:county:be4c7c455504f6de"
         ],
         "geographicKingdomId": "proposal:kingdom:seoul:06",
         "geographicEmpireId": "geography:empire:seoul"
@@ -539,8 +539,8 @@
         "duchyTitleId": "geography:duchy:11215",
         "guRef": "11215",
         "countyTitleIds": [
-          "geography:county:seoul-constituency:광진구갑선거구",
-          "geography:county:seoul-constituency:광진구을선거구"
+          "geography:county:0b79048ae2439ad6",
+          "geography:county:f168b1729d8ebb4a"
         ],
         "geographicKingdomId": "proposal:kingdom:seoul:06",
         "geographicEmpireId": "geography:empire:seoul"
@@ -571,9 +571,9 @@
         "duchyTitleId": "geography:duchy:11710",
         "guRef": "11710",
         "countyTitleIds": [
-          "geography:county:seoul-constituency:송파구갑선거구",
-          "geography:county:seoul-constituency:송파구을선거구",
-          "geography:county:seoul-constituency:송파구병선거구"
+          "geography:county:51da9424e343abe6",
+          "geography:county:54fbc8d12568ed3a",
+          "geography:county:0cbcc7ce0af90476"
         ],
         "geographicKingdomId": "proposal:kingdom:seoul:06",
         "geographicEmpireId": "geography:empire:seoul"
@@ -604,8 +604,8 @@
         "duchyTitleId": "geography:duchy:11740",
         "guRef": "11740",
         "countyTitleIds": [
-          "geography:county:seoul-constituency:강동구갑선거구",
-          "geography:county:seoul-constituency:강동구을선거구"
+          "geography:county:66ce0170c095c75c",
+          "geography:county:e8196b72d07c4adc"
         ],
         "geographicKingdomId": "proposal:kingdom:seoul:06",
         "geographicEmpireId": "geography:empire:seoul"
@@ -2720,34 +2720,6 @@
       "geometrySource": null,
       "territorialScale": null,
       "formalTitleRank": "duchy"
-    },
-    {
-      "id": "holding:opening-duchy-s08-demesne",
-      "name": {
-        "ko": "중앙정보부 공작령 직영지"
-      },
-      "holderPersonId": "K194",
-      "directLiegePersonId": null,
-      "stateId": "S08",
-      "adminRefs": [
-        {
-          "id": "region:1117051000",
-          "name": "후암동"
-        },
-        {
-          "id": "region:1117052000",
-          "name": "용산2가동"
-        },
-        {
-          "id": "region:1117066000",
-          "name": "이태원2동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-s08",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
     }
   ],
   "polities": [
@@ -3643,20 +3615,6 @@
       "kind": "superior-jurisdiction",
       "directOwnership": false,
       "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD"
-    },
-    {
-      "id": "title:duchy-s08",
-      "name": "중앙정보부 공작령",
-      "rank": "duchy",
-      "holderPersonId": "K194",
-      "stateId": "S08",
-      "parentTitleId": null,
-      "jurisdictionRefs": [
-        "region:1117051000",
-        "region:1117052000",
-        "region:1117066000"
-      ],
-      "basis": "중립 국가는 왕을 새로 만들지 않는다(2026-10-11 사용자 승인)"
     },
     {
       "id": "title:kingdom-daejeon",
@@ -6452,14 +6410,14 @@
   ],
   "summary": {
     "existingHoldings": 25,
-    "newGrants": 31,
-    "holdings": 56,
-    "titles": 42,
+    "newGrants": 30,
+    "holdings": 55,
+    "titles": 41,
     "existingTitleBindings": 7,
-    "heldSeoulRegions": 427,
+    "heldSeoulRegions": 424,
     "heldOutsideUnits": 0,
     "heldComponents": 0,
     "unassignedComponents": 0,
-    "coveredEntitlements": 427
+    "coveredEntitlements": 424
   }
 }

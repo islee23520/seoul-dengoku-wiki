@@ -1,18 +1,18 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
 import assert from 'node:assert/strict'
 import { readdir, readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 
 const root = new URL('../lore/', import.meta.url)
-const json = async path => JSON.parse(await readFile(new URL(path, root), 'utf8'))
+const json = async path => readCanonicalDocument(`lore/${path}`)
 const strings = value => typeof value === 'string' ? [value] : value && typeof value === 'object' ? Object.entries(value).filter(([key]) => !['provenance', 'history'].includes(key)).flatMap(([, item]) => strings(item)) : []
-async function documents(directory = root) {
-  const out = []
-  for (const entry of await readdir(directory, { withFileTypes: true })) {
-    const path = new URL(entry.name + (entry.isDirectory() ? '/' : ''), directory)
-    if (entry.isDirectory()) out.push(...await documents(path))
-    else if (entry.name.endsWith('.json')) out.push({ path: path.pathname, value: JSON.parse(await readFile(path, 'utf8')) })
-  }
-  return out
+async function documents() {
+  const db = openReadOnly(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url).pathname)
+  try {
+    return db.prepare("SELECT logical_path FROM source_file WHERE logical_path LIKE 'lore/%.json' ORDER BY logical_path").all()
+      .map(row => ({ path: row.logical_path, value: readCanonicalDocument(row.logical_path) }))
+  } finally { db.close() }
 }
 
 test('blackout starts in 2030 without the superseded 2036 order or 2026 eruption', async () => {

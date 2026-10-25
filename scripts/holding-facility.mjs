@@ -1,19 +1,17 @@
-import { readFile, realpath } from 'node:fs/promises'
-import { isAbsolute, relative, resolve, sep } from 'node:path'
+import { isAbsolute, resolve } from 'node:path'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+import { REGION_CONTENT_SOURCE_HASHES } from './cast-sqlite/region-content-documents.mjs'
 
 export async function validateHoldingFacility(holding, stationInteriors, repoRoot) {
   const ref = holding.facilityRef
   const prefix = 'lore/regions/content/'
   if (isAbsolute(ref.siteSourcePath) || ref.siteSourcePath.includes('\\') ||
       ref.siteSourcePath.split('/').some(part => part === '..' || part === '.' || !part) ||
-      !ref.siteSourcePath.startsWith(prefix) || !ref.siteSourcePath.endsWith('.json'))
+      !ref.siteSourcePath.startsWith(prefix) || !ref.siteSourcePath.endsWith('.json') ||
+      !Object.hasOwn(REGION_CONTENT_SOURCE_HASHES, ref.siteSourcePath))
     throw new Error('E_HOLDING_SOURCE_PATH:' + holding.id)
-  const root = await realpath(resolve(repoRoot, prefix))
-  const file = await realpath(resolve(repoRoot, ref.siteSourcePath))
-  const confined = relative(root, file)
-  if (isAbsolute(confined) || confined === '..' || confined.startsWith('..' + sep))
-    throw new Error('E_HOLDING_SOURCE_PATH:' + holding.id)
-  const source = JSON.parse(await readFile(file, 'utf8'))
+  const source = readCanonicalDocument(ref.siteSourcePath, { databasePath: process.env.WIKI_DOCUMENT_DB
+    ?? resolve(repoRoot, 'data/canonical/wiki-cast.sqlite') })
   const sites = source.regions.flatMap(region => region.content.buildings)
     .filter(site => site.anchor_ref === ref.siteAnchor)
   const stations = stationInteriors.stations.filter(station =>

@@ -1,6 +1,18 @@
+import { afterAll as closeInputFixture } from 'vitest'
+const inputRoot = new URL('../', import.meta.url).pathname
+const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
+const inputConfig = JSON.parse(await readDiskFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG ?? new URL('../.omo/private/seoul-migration/sqlite-authority-20261021/publication-config.json', import.meta.url), 'utf8'))
+const inputBundle = await openPublicationDatabaseInputs(inputRoot, inputConfig)
+const readFile = async (path, encoding) => {
+  const absolute = path instanceof URL ? path.pathname : path
+  if (!absolute.startsWith(inputRoot + 'lore/')) return readDiskFile(path, encoding)
+  const bytes = await inputBundle.inputs.readBytes(absolute)
+  return encoding === 'utf8' ? bytes.toString() : bytes
+}
+closeInputFixture(() => inputBundle.close())
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
-import { readFile } from 'node:fs/promises'
+import { readFile as readDiskFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { projectSeoulCurrentTimeline } from './timeline-overview.mjs'
 import { loadTimelineReviewAuthority, validateTimelineReviewProvenance, validateTimelineReviewReceipt } from './timeline-review-authority.mjs'
@@ -161,8 +173,26 @@ test('catalog timeline consumer requires code-owned event reviews for the raw cu
   const value = JSON.parse(await readFile(path))
   let relatedCalls = 0
   const related = () => { relatedCalls += 1; return [] }
-  await projectCatalogTimeline({ path, value }, related)
+  const originalProjection = await projectCatalogTimeline({ path, value }, related)
   assert.ok(relatedCalls > 0)
+  const captured = new Map()
+  const capture = async requested => {
+    const bytes = await readFile(requested)
+    captured.set(String(requested), bytes)
+    return bytes
+  }
+  assert.deepEqual(await projectCatalogTimeline({ path, value }, related, capture), originalProjection)
+  const sealedPath = new URL('file:///sealed-annals-input.json')
+  const sealed = async requested => {
+    if (String(requested) === String(sealedPath)) return captured.get(String(path))
+    assert.ok(captured.has(String(requested)), 'uncaptured timeline input')
+    return captured.get(String(requested))
+  }
+  assert.deepEqual(await projectCatalogTimeline({ path: sealedPath, value }, related, sealed), originalProjection)
+  const reordered = value => Array.isArray(value) ? value.map(reordered)
+    : value !== null && typeof value === 'object'
+      ? Object.fromEntries(Object.entries(value).reverse().map(([key, entry]) => [key, reordered(entry)])) : value
+  assert.deepEqual(await projectCatalogTimeline({ path, value: reordered(value) }, related), originalProjection)
   relatedCalls = 0
   await assert.rejects(projectCatalogTimeline({ path, value: { ...value, content: value.content.slice(1) } }, related), /E_TIMELINE_SOURCE_AUTHORITY/)
   assert.equal(relatedCalls, 0)

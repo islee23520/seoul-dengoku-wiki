@@ -17,23 +17,16 @@
 //
 // 실행
 // - 검사: node lore/name-pools/issue-person-ids.mjs --check   (인자 없으면 --check)
-// - 생성: node lore/name-pools/issue-person-ids.mjs --write [--force]
-//   (생성은 values-cast.json / person-id-candidates.json을 절대 고치지 않는다.)
+// - --write [--force]는 SQLite 저작 계약과 호환되지 않아 거부한다.
 //
 // 파괴 검사(mutations)는 verify-person-id-registry.mjs가 담당한다 (RED-provable).
 
 import { createHash } from "node:crypto";
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readSourceArchive } from "../../scripts/cast-sqlite/source-archive.mjs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-import { readRendered } from "../../scripts/lore-read-rendered.mjs";
+import { renderLoreMarkdown } from "../../scripts/lore-json-render.mjs";
 import { personIdValuesHash } from "./person-id-values-successor.mjs";
-
-const HERE = path.dirname(fileURLToPath(import.meta.url));
-const REPO = path.resolve(HERE, "..", "..");
-const VALUES_PATH = path.join(REPO, "lore", "name-pools", "values-cast.json");
-const CANDIDATES_PATH = path.join(REPO, "lore", "name-pools", "person-id-candidates.json");
-const REGISTRY_PATH = path.join(HERE, "person-id-registry.json");
 
 export const SCHEMA = "wiki-person-id-registry.v1";
 export const APPROVED = {
@@ -85,15 +78,15 @@ export function loadStableNonKIds(text) {
 }
 
 export function loadApprovedContext() {
-  const valuesBytes = readFileSync(VALUES_PATH);
-  const candidatesBytes = readFileSync(CANDIDATES_PATH);
+  const valuesBytes = readSourceArchive("lore/name-pools/values-cast.json");
+  const candidatesBytes = readSourceArchive("lore/name-pools/person-id-candidates.json", APPROVED.candidatesSha256);
   const problems = assertApprovedHashes({ valuesBytes, candidatesBytes });
   if (problems.length) throw new Error(problems.join("; "));
   return {
     valuesBytes,
     candidatesBytes,
     candidatesJson: JSON.parse(candidatesBytes.toString("utf8")),
-    aliasMap: loadStableNonKIds(readRendered(path.join(REPO, "lore"), "characters", "Cast-Unaffiliated")),
+    aliasMap: loadStableNonKIds(renderLoreMarkdown(JSON.parse(readSourceArchive("lore/characters/Cast-Unaffiliated.json")), "ko")),
   };
 }
 
@@ -243,20 +236,9 @@ if (invokedAsMain) {
     if (ctx) {
       const fresh = serializeRegistry(buildRegistry(ctx));
       if (WRITE) {
-        if (existsSync(REGISTRY_PATH) && readFileSync(REGISTRY_PATH, "utf8") === fresh) {
-          console.log("person-id-registry.json이 이미 승인각 재생성과 바이트 단위로 같다");
-        } else if (existsSync(REGISTRY_PATH) && !args.includes("--force")) {
-          console.error("출력이 이미 있는 파일과 다르다. 확인 후 --force로 갱신한다.");
-          process.exitCode = 1;
-        } else {
-          const existed = existsSync(REGISTRY_PATH);
-          writeFileSync(REGISTRY_PATH, fresh);
-          console.log(`person-id-registry.json을 ${existed ? "강제 갱신" : "생성"}했다 (sha256 ${sha256Hex(Buffer.from(fresh, "utf8"))})`);
-        }
-      } else if (!existsSync(REGISTRY_PATH)) {
-        console.error("person-id-registry.json이 없다. 먼저 --write로 생성한다.");
+        console.error("E_IDENTITY_ISSUANCE_DB_ONLY: archived issuance is immutable; --write cannot author the current SQLite registry or recreate JSON.");
         process.exitCode = 1;
-      } else if (readFileSync(REGISTRY_PATH, "utf8") === fresh) {
+      } else if (readSourceArchive("lore/name-pools/person-id-registry.json", "c02b435da25b09a2c388b694a656242e150de9d169da9fb59c21f6880ac4a63a").toString("utf8") === fresh) {
         console.log(`person-id-registry.json이 승인각 재생성과 바이트 단위로 같다 (sha256 ${sha256Hex(Buffer.from(fresh, "utf8"))})`);
       } else {
         console.error("재생성 결과가 커밋된 person-id-registry.json과 다르다.");

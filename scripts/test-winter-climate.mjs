@@ -1,6 +1,6 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
-import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
@@ -8,9 +8,9 @@ import { gfm } from 'micromark-extension-gfm'
 import { toString } from 'mdast-util-to-string'
 import { renderLoreMarkdown, headingId } from './lore-json-render.mjs'
 
-const climate = JSON.parse(readFileSync(new URL('../lore/places/sources/Winter-Climate-20210108.json', import.meta.url), 'utf8'))
-const world = JSON.parse(readFileSync(new URL('../lore/places/World-and-Subway-Layers.json', import.meta.url), 'utf8'))
-const clothing = JSON.parse(readFileSync(new URL('../lore/characters/Characters-Factions-and-Professions.json', import.meta.url), 'utf8'))
+const climate = readCanonicalDocument('lore/places/sources/Winter-Climate-20210108.json')
+const world = readCanonicalDocument('lore/places/World-and-Subway-Layers.json')
+const clothing = readCanonicalDocument('lore/characters/Characters-Factions-and-Professions.json')
 const parse = (markdown) => fromMarkdown(markdown, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] })
 
 test('all 17 KMA observations remain unchanged historical research, separate from the current Seoul table', () => {

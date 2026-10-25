@@ -1,3 +1,4 @@
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 // @vitest-environment jsdom
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
@@ -12,7 +13,7 @@ const expected = [["K1008","민웅기","polity:daejeon","대전"],["K1009","신�
 // Personal authority tiers survive retirement of external territorial offices.
 // The remaining cards have no appointed office and retain T5 regardless of national affiliation.
 const expectedTiers = { K1008: 'T1', K1009: 'T5', K1010: 'T5', K1011: 'T3', K1012: 'T3', K1013: 'T5', K1014: 'T5', K1015: 'T5', K1016: 'T3', K1018: 'T5', K1019: 'T3', K1020: 'T5', K1022: 'T5' }
-const json = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
+const json = path => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
 test('approved opening countries retain issued identity and actual Aside state', async () => {
   globalThis.IS_REACT_ACT_ENVIRONMENT = true
   const values = json('lore/name-pools/values-cast.json').people

@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url'
 import { test } from 'vitest'
 import { generatePortraitTokens } from './generate-portrait-tokens.mjs'
 import { runRelease } from './generate-release.mjs'
+import { loadPortraitDocuments } from './portrait-source-documents.mjs'
 
 const project = fileURLToPath(new URL('../', import.meta.url))
 const generator = new URL('./generate-portrait-tokens.mjs', import.meta.url).href
@@ -23,7 +24,7 @@ async function fixture() {
   const root = await mkdtemp(join(tmpdir(), 'portrait-token-release-'))
   const before = new Map()
   const originals = new Map()
-  const registry = JSON.parse(await readFile(join(project, 'portrait-catalog.json'), 'utf8'))
+  const { catalog: registry } = loadPortraitDocuments(project)
   const files = registry.entries.map(entry => entry.personId + '.json').sort()
   assert.equal(files.length, 25)
   for (const file of files) {

@@ -1,6 +1,5 @@
 import assert from 'node:assert/strict'
-import { readdirSync, readFileSync, statSync } from 'node:fs'
-import { join, resolve } from 'node:path'
+import { resolve } from 'node:path'
 import { test } from 'vitest'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
@@ -8,22 +7,20 @@ import { toString } from 'mdast-util-to-string'
 import { gfm } from 'micromark-extension-gfm'
 
 import { renderLoreMarkdown } from './lore-json-render.mjs'
+import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { listDocuments } from './cast-sqlite/document-read.mjs'
 
 const loreRoot = resolve(import.meta.dirname, '../lore')
 const parse = (markdown) => fromMarkdown(markdown, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] })
 
-function loreDocuments(dir = loreRoot) {
-  const out = []
-  for (const name of readdirSync(dir).sort()) {
-    if (name.startsWith('.')) continue // tool scratch such as the link checker's fixtures, never a document
-    const path = join(dir, name)
-    if (statSync(path).isDirectory()) out.push(...loreDocuments(path))
-    else if (name.endsWith('.json') && !name.startsWith('authoring.')) {
-      const document = JSON.parse(readFileSync(path, 'utf8'))
-      if (document && typeof document === 'object' && Array.isArray(document.content) && document.domain) out.push({ path, document })
-    }
-  }
-  return out
+function loreDocuments() {
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(loreRoot, '../data/canonical/wiki-cast.sqlite'))
+  try {
+    return listDocuments(db, { corpusKind: 'current', visibility: 'internal' })
+      .filter((identity) => identity.logical_path.startsWith('lore/') && !identity.logical_path.split('/').at(-1).startsWith('authoring.'))
+      .map((identity) => ({ path: identity.logical_path, document: readCanonicalDocument(identity.logical_path) }))
+  } finally { db.close() }
 }
 
 // The visible text a reader sees for one JSON leaf: its runs' text, parsed as inline Markdown.
@@ -87,9 +84,9 @@ test('the corpus has lore JSON documents to render', () => {
 })
 
 test('published hangnyeol counts match the clan register and issued cast', () => {
-  const clan = JSON.parse(readFileSync(join(loreRoot, 'name-pools/cast-hangnyeol.json'), 'utf8'))
-  const cast = JSON.parse(readFileSync(join(loreRoot, 'name-pools/values-cast.json'), 'utf8'))
-  const page = JSON.parse(readFileSync(join(loreRoot, 'characters/Hangnyeol-and-Bon-gwan.json'), 'utf8'))
+  const clan = readCanonicalDocument('lore/name-pools/cast-hangnyeol.json')
+  const cast = readCanonicalDocument('lore/name-pools/values-cast.json')
+  const page = readCanonicalDocument('lore/characters/Hangnyeol-and-Bon-gwan.json')
   const names = new Set(cast.people.map((person) => person.name))
   const assigned = new Set(clan.people.map((person) => person.name))
   assert.equal(names.size, cast.people.length)
@@ -106,7 +103,7 @@ test('published hangnyeol counts match the clan register and issued cast', () =>
 })
 
 test('state-name years agree across the Korean and English table cells', () => {
-  const page = JSON.parse(readFileSync(join(loreRoot, 'factions/Sixteen-States.json'), 'utf8'))
+  const page = readCanonicalDocument('lore/factions/Sixteen-States.json')
   const table = page.content.find((block) => block.kind === 'table' && block.columns[0].ko === 'ID')
   assert.ok(table)
   assert.equal(table.rows.length, 16)

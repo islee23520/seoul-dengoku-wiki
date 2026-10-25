@@ -1,4 +1,6 @@
 import { readFile } from 'node:fs/promises'
+import { createReadStream } from 'node:fs'
+import { createHash } from 'node:crypto'
 import { sha256, validateSeoulScope } from './seoul-scope.mjs'
 import { isAuthenticatedPublicationReview } from './seoul-census.mjs'
 import { materializePublicLegacyProjectionMapping } from './public-legacy-projection-successor.mjs'
@@ -56,6 +58,12 @@ export function validatePersonDetailFieldMappings(details, receiptBytes, evidenc
   check(typeof receiptBytes === 'string' && digest(evidence?.receiptSha256)
     && sha256(receiptBytes) === evidence.receiptSha256, 'E_REVIEW_HASH', mappingPath)
   const receipt = JSON.parse(receiptBytes)
+  return validateParsedPersonDetailFieldMappings(details, receipt, evidence)
+}
+
+// Private entry point for the loader, which has already verified the exact
+// successor bytes. Do not retain a second 528 MB receipt object during validation.
+function validateParsedPersonDetailFieldMappings(details, receipt, evidence) {
   check(record(receipt) && receipt.schema === 'person-detail-field-mappings.v2'
     && Object.keys(receipt).sort().join('|') === ['schema', 'reviewer', 'approvalRef', 'reviewedAt', 'sourceHashes', 'details', 'fieldMappings'].sort().join('|')
     && typeof receipt.reviewer === 'string' && receipt.reviewer.trim() !== ''
@@ -100,7 +108,7 @@ export function validatePersonDetailFieldMappings(details, receiptBytes, evidenc
     return indexed
   }
   for (const [id, fields] of indexDetails(receipt.details)) expected.set(id, fields)
-  const actual = indexDetails(details)
+  const actual = details === receipt.details ? expected : indexDetails(details)
   check([...expected.keys()].every(id => actual.has(id)), 'E_CENSUS_PERSON', mappingPath)
   const parsedSources = new Map()
   const verifiedBindings = new Set()
@@ -179,8 +187,9 @@ export async function loadPersonDetailMappingAuthority() {
   const pin = APPROVED_DETAIL_MAPPING_RECEIPTS[0]
   check(typeof pin.path === 'string' && /^\.omo\/private\/seoul-migration\/[a-zA-Z0-9][a-zA-Z0-9._/-]*\.json$/.test(pin.path)
     && !pin.path.split('/').includes('..') && digest(pin.sha256), 'E_REVIEW_COVERAGE', mappingPath)
-  const predecessorBytes = await readFile(new URL(`../${pin.path}`, import.meta.url), 'utf8')
-  check(sha256(predecessorBytes) === pin.sha256, 'E_REVIEW_HASH', pin.path)
+  const predecessorHash = createHash('sha256')
+  for await (const chunk of createReadStream(new URL(`../${pin.path}`, import.meta.url))) predecessorHash.update(chunk)
+  check(predecessorHash.digest('hex') === pin.sha256, 'E_REVIEW_HASH', pin.path)
   const successor = await materializePublicLegacyProjectionMapping(fileURLToPath(new URL('../', import.meta.url)))
   const successorSha256 = '5f8f5cc0d7a0dfd2d24f5a379ccf11b8bdc18d61fa875a27aaf060759726df96'
   check(successor.sha256 === successorSha256, 'E_REVIEW_HASH', mappingPath)
@@ -192,7 +201,7 @@ export async function loadPersonDetailMappingAuthority() {
     check(sourcePath(path), 'E_SCOPE_SHAPE', path)
     sources[path] = await readFile(new URL(`../${path}`, import.meta.url), 'utf8')
   }
-  validatePersonDetailFieldMappings(receipt.details, receiptBytes, { receiptSha256: successorSha256, sources })
+  validateParsedPersonDetailFieldMappings(receipt.details, receipt, { receiptSha256: successorSha256, sources })
   const authority = Object.freeze({ receiptBytes, receiptSha256: successorSha256,
     sources: Object.freeze(sources) })
   authenticatedMappingAuthorities.add(authority)
@@ -202,6 +211,35 @@ export async function loadPersonDetailMappingAuthority() {
 export function assertApprovedPersonDetailMappingReceipt(authority, details) {
   check(authenticatedMappingAuthorities.has(authority), 'E_REVIEW_COVERAGE', mappingPath)
   return validatePersonDetailFieldMappings(details, authority.receiptBytes, authority)
+}
+
+// Closed DB evidence replay. Archived snapshots authenticate the receipt;
+// every current source must independently match typed current authority.
+export async function loadDatabasePersonDetailMappingAuthority({ db, evidenceStore, historyStore,
+  originalMappingStore, finalMappingStore, sourceStore, editorialProfiles }) {
+  const { replayDatabasePersonalTiers } = await import('./document-store/person-tier-replay.mjs')
+  const { verifyPersonMappingCurrentSources } = await import('./document-store/person-mapping-current-source.mjs')
+  const { assertBaselinePersonalTiers } = await import('./personal-tier-provenance.mjs')
+  const original = APPROVED_DETAIL_MAPPING_RECEIPTS[0]
+  originalMappingStore.getEvidence(original.path, original.sha256)
+  finalMappingStore.getEvidence('scripts/public-legacy-projection-receipt.json',
+    'c987c8144d805310ef8e95b3ace429cd942704a36fd0a00a5ce1cce9a6c60ab7')
+  const receiptSha256 = '5f8f5cc0d7a0dfd2d24f5a379ccf11b8bdc18d61fa875a27aaf060759726df96'
+  const receiptBytes = finalMappingStore.getEvidence('person-detail-mapping:final:20261020', receiptSha256).toString('utf8')
+  check(sha256(receiptBytes) === receiptSha256, 'E_REVIEW_HASH', mappingPath)
+  const receipt = JSON.parse(receiptBytes)
+  const tiers = await replayDatabasePersonalTiers({ db, evidenceStore, historyStore })
+  assertBaselinePersonalTiers(tiers, receipt.details)
+  verifyPersonMappingCurrentSources({ db, sourceHashes: receipt.sourceHashes, sourceStore, editorialProfiles })
+  const sources = {}
+  for (const [path, hash] of Object.entries(receipt.sourceHashes)) {
+    check(sourcePath(path), 'E_SCOPE_SHAPE', path)
+    sources[path] = sourceStore.getEvidence(`mapping-source:${path}`, hash).toString('utf8')
+  }
+  validateParsedPersonDetailFieldMappings(receipt.details, receipt, { receiptSha256, sources })
+  const authority = Object.freeze({ receiptBytes, receiptSha256, sources: Object.freeze(sources) })
+  authenticatedMappingAuthorities.add(authority)
+  return authority
 }
 
 /**

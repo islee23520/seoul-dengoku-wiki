@@ -1,99 +1,98 @@
-# 위키 저장소 전용 인물 SQLite 사용 안내
+# 위키 저장소 SQLite 정본 사용 안내
 
-## Local text corpus (schema version 5)
+## 현재 저작 권위와 작업 상태
 
-The immutable `text-corpus-manifest.mjs` enumerates non-private renderer envelopes and Markdown/CSV authoring sources. Build adds their exact bytes to `source_file` and JSON pointers to `source_record`; no runtime directory discovery widens the input set. The existing Git HEAD byte, tracking, symlink, snapshot and recorded-revision checks apply to every added source.
+공개 편집 정본은 Git LFS로 관리하는 `data/canonical/wiki-cast.sqlite`다. 이 DB는 JSON 원천에서 다시 만드는 캐시가 아니라 현재의 저작 권위다. 조회·문서 편집·생성은 이 SQLite 정본을 기준으로 한다.
 
-`text_document` and its twelve child tables normalize envelopes, locales, nodes, lists, tables, runs, renderer anchors and links. `text_line_document` and `text_line` preserve physical Markdown/CSV/JavaScript lines byte-for-byte, including CR and terminal LF. The JavaScript rows cover the two existing provenance scripts and are not JavaScript semantic parsing. The former standalone line mapper's `text_document` key is now `text_line_document`.
+- 물리적인 lore JSON 원천 파일은 모두 제거됐다. 문서·출처 기록에 남아 있는 `lore/.../*.json` 이름은 DB 안의 논리적 문서 식별자 또는 provenance이며, 디스크에서 다시 읽어야 할 입력 파일이 아니다.
+- 현재 envelope head는 예시를 포함해 99개다. 예시는 실제 게시 문서와 구별한다.
+- 원래 인물 ID 1,022개는 보존돼 있다. 현재 인물 511명은 disposition을 통해 구분한다. 보존 ID 수, 현재 인물 수, 프로필 수, 문서 수는 서로 다른 분모다.
+- 비공개 editorial·Soul 저장소는 `.omo/private/seoul-migration/sqlite-authority-20261021` 아래에 별도로 둔다. 비공개 저장소 파일은 mode `600`으로 관리하며 Git이나 공개 배포물에 넣지 않는다.
+- 생성된 공개 JSON은 SQLite에서 내보낸 출력물이다. 직접 고쳐 저작 원천으로 사용하지 않는다.
+- 정식 릴리스 생성과 로컬 TypeScript·Vite 빌드는 종료 코드 0으로 완료됐다. 공개 원격 배포는 아직 대기 중이며, 검증 완료는 소유자 승인을 뜻하지 않는다.
 
-The document mapper requires `content_policy: 'local-corpus'`, not `public`. Draft, approved and excluded statuses remain literal authored values. `corpus_kind` separates current-source, historical and example documents; links never resolve across those corpora. Here current-source means the source snapshot, not satisfaction of the Seoul approval policy. The anchor column `published` means renderer-visible anchor only, not publication admission. No source is promoted to canon by storage or link resolution. Editorial/soul files remain outside both raw and normalized text tables; their existing hash-only/projection contracts are unchanged.
+DB의 존재, export 성공, 검증 통과, 렌더링 완료, 공개 배포, 게임 구현, 소유자 승인은 서로 다른 상태다. 현재 저장 상태를 확인하는 검증을 새로운 게시 승인으로 해석하지 않는다.
 
-Build and offline/full verify return `text_corpus`: document, line-document, physical-line, missing-source, authored-status and corpus counts. Counts derive from the enumerated manifest, independently checked against tracked source documents by tests. Verify remaps all text and domain tables from stored bytes and rejects tampered rows even offline. `text-data.mjs` reconstructs document `/data` from explicit typed domain columns and ordered child tables and checks equality with source JSON. `domain_sidecar_normalization: complete` is limited to the enumerated renderer envelopes, while `publication_admission: not-evaluated` remains separate. Other standalone JSON domains, generated catalogues, geography/LFS binaries and private editorial documents remain outside this text increment. The existing person/family/engine field-coverage contract remains independent.
+## 준비
 
-Schema 5 implements authenticated current-Seoul rights, office-v2, query, field-coverage and source-closure mapping. Those mappings do not establish every person's current location or narrative readiness. Schema versions 2, 3 and 4 are not migrated in place: use a clean admitted source checkout, build a new version-5 artifact, then run offline and source-including full verify. The clean-source full suite passed all 274 tests with zero failures or skips. The canonical artifact was refreshed from approved source commit b047449f5b9249b4c3fd46a6ac983c9157602f06 and tracked by 04fce5fff18d61c7f68d625900e130b09c1d2626. Offline, full and post-commit full verification passed; source freshness is current. PASS_WITH_SOURCE_ISSUES still reports the existing index warnings, gender-policy drift and unsupported official historical-GURPS check honestly. Remote delivery and latest-main integration remain separate work.
+프로젝트 실행에는 Node.js 24.15.0 이상을 사용한다. SQLite 접근은 Node 내장 기능을 이용한다. 일반 SQLite 도구로 닫힌 DB를 읽을 때에는 Node가 필요하지 않다.
 
-The domain/table map, uninterpreted source fields, current-Seoul mapping gaps, and source-quality limitations are listed in [TEXT-CORPUS-GAPS.md](TEXT-CORPUS-GAPS.md).
+Git checkout만으로 LFS 실체가 준비됐다고 가정하지 않는다. 작업 전에 `data/canonical/wiki-cast.sqlite`가 LFS 포인터 텍스트가 아닌 실제 SQLite 파일인지 확인한다. 정본이 없거나 열리지 않으면 중단한다. 삭제된 JSON을 복원하거나 디렉터리를 검색해 대체 정본을 만들지 않는다.
 
-이 도구는 이 저장소의 인물 원천을 서버 없이 SQLite 파일 하나로 생성, 조회, 검증합니다. `build`는 현재 checkout의 원천을 읽어 새 DB를 만들고, `query`는 DB만 읽으며, `verify`는 DB 단독의 부분 검증 또는 원천을 포함한 전체 검증을 수행합니다. 원천 JSON은 고치지 않습니다. 저장소 정본 DB만 같은 경로로 다시 빌드할 때 교체합니다.
+작업은 전용 브랜치와 PR로 제안하며 main 병합은 소유자만 한다. 공개 DB 변경과 비공개 저장소 변경은 보관·검토·배포 경계를 분리한다.
 
-영문 용어는 다음 뜻으로 사용합니다.
+## 저작·생성·검증의 역할
 
-- **current (현행)**: 최신 서울 범위와 공개 projection 기준을 만족해 현재 조회에 포함되는 자료입니다.
-- **historical (역사 보존)**: 이전 GURPS 또는 최신 현재 사실로 승격되지 않는 보존 자료입니다.
-- **unresolved (미확정)**: 현재성 또는 승인 근거가 부족한 자료입니다.
-- **source provenance (원천 계보)**: 어떤 원천 경로·포인터·해시에서 온 값인지 나타내는 정보입니다.
-- **allowlist projection (허용 목록 투영본)**: 비공개 원천에서 공개가 허용된 필드만 골라 만든 값입니다.
+| 기능 | 현재 역할 | 하지 않는 일 |
+| --- | --- | --- |
+| document-cli | 문서 list/read/edit, stdin을 통한 typed 편집 명령, 불변 revision 이력과 draft invalidation | 모든 도메인에 대한 범용 쓰기 API를 제공한다고 보장하지 않음 |
+| `cast:query` | DB를 읽어 인물·관계·출처·품질 정보를 조회 | 역관계·누락값·새 승인 사실을 만들지 않음 |
+| `cast:build` | SQLite 권위에서 새 외부 경로로 export | 정본 덮어쓰기, 권위 부재 시 JSON 재구축 |
+| `cast:verify` | 읽기 전용으로 현재 storage·head·privacy 계약을 검증 | 새 게시 승인, 서사 적합성 또는 미검토 의미의 승인 |
+| 정식 생성 | SQLite 권위에서 공개 산출물을 생성 | 출력 JSON을 저작 원천으로 승격 |
 
-이 DB의 생성·복사는 공개, 배포, 게임 구현, owner approval(소유자 승인)을 뜻하지 않습니다.
+현재 document-cli의 지원 범위는 문서 편집이다. 인물 수치·권리·직책·가계·Soul 등 임의의 도메인을 같은 명령으로 수정할 수 있다고 약속하지 않는다. 필요한 변경을 기존 typed 명령으로 표현할 수 없다면 지원 범위를 확인하고 별도 구현·검토 대상으로 기록한다. 임의 SQL 쓰기로 지원되지 않는 편집 계약을 우회하지 않는다.
 
-## 저장소 정본
+비공개 Soul 배정은 별도 `scripts/document-store/soul-assignment-cli.mjs`로 편집한다. `init-edits --db <path> --actor <actor> --reason <reason>`는 mode `600`인 기존 DB에 개정 저장소를 명시적으로 추가한다. `read`와 `revision`은 현재 head를 읽으며, `replace`는 `--person-id`, `--expected-revision`, `--actor`, `--reason`과 stdin의 완전한 typed assignment를 받는다. 편집은 `draft`이고 `approvalRef`를 허용하지 않는다. 원본 승인 revision `0`, 안정 ID 1,022개와 과거 개정은 보존한다. 별도 검토 전까지 게시 인증은 명시적인 `view: 'approved'`로 원래 승인 스냅샷만 읽는다.
 
-텍스트 원천을 정규화한 추적 파일은 `data/canonical/wiki-cast.sqlite`입니다. 인물 JSON은 집필 원천으로 남고, 이 파일이 로컬에서 조회하는 정규화 저장본입니다. 호스팅 데이터베이스로 옮기기 전까지 이 파일을 Git에 둡니다. 이 경로로 다시 빌드하면 그 파일만 교체하며, 이전 바이트는 Git 이력에 남습니다. 다른 저장소 안 경로는 계속 거부합니다. DB는 빌드 시점의 HEAD를 `source_git_commit`으로 기록하고, 그 DB를 추적하는 커밋은 입력 파일을 바꾸지 않으므로 커밋 뒤에도 full verify를 그대로 통과합니다.
+## 문서 편집과 revision 이력
 
-```powershell
-npm run cast:build -- --output "data/canonical/wiki-cast.sqlite"
-```
+1. document-cli의 list/read로 대상의 논리 ID, 현재 head, 문서 상태와 내용을 확인한다.
+2. 공개 문서인지 비공개 운영 자료인지 구분하고, 적용 지시와 승인 범위를 확인한다.
+3. 기존 CLI가 지원하는 typed 편집 명령을 stdin으로 전달한다. 정확한 명령 형식은 현재 CLI의 도움말과 구현 계약을 따른다. JSON 파일을 새로 만들거나 생성 JSON을 수정하는 방식으로 대체하지 않는다.
+4. edit 후 새 head와 revision 이력, 변경 본문을 다시 읽는다. 이전 revision은 덮어쓰거나 삭제하지 않는다.
+5. 편집으로 인한 draft invalidation을 확인한다. 이전 본문에 대한 검토·승인을 변경된 본문에 자동 승계하지 않는다.
+6. 정본을 읽기 전용으로 검증하고, 별도로 정식 생성 결과와 필요한 본문·게시 검토를 확인한다.
 
-## 준비와 단독 실행
+논리적 `.json` 이름은 이 과정에서 문서 식별 및 과거 출처 연결에 계속 사용할 수 있다. 그 이름이 남아 있다는 이유로 해당 물리 파일을 다시 만들 필요는 없다. revision 이력과 출처 provenance는 서로 다른 정보다. 과거 JSON의 경로·pointer·해시는 당시 입력의 계보이며, 현재 문서 head를 대신하지 않는다.
 
-Node.js 24.15.0 이상과 이 위키 저장소 checkout이 필요합니다. SQLite는 Node 내장 기능을 사용하므로 `npm install`이나 다른 저장소, `TOOL` 경로, 상위 checkout이 필요하지 않습니다. 일반 SQLite 도구로 결과 파일만 읽을 때는 Node와 원천 checkout도 필요하지 않습니다.
+## 외부 export
 
-다음은 저장소 루트에서 실행하는 PowerShell 예시입니다. `build`에 `--source-root`를 생략했으므로 스크립트 위치에서 계산한 **이 저장소 루트**가 원천입니다. 작업 디렉터리의 부모나 형제 저장소를 검색하지 않습니다.
+`cast:build`라는 명령 이름은 유지되지만, 현재 동작은 SQLite 권위의 외부 export다. 새 출력 경로는 checkout 밖에 있어야 하며 아직 존재하지 않아야 한다. 정본 경로를 대상으로 실행하지 않는다.
+
+다음은 저장소 루트에서 실행하는 PowerShell 예시다.
 
 ```powershell
 $castOut = Join-Path ([System.IO.Path]::GetTempPath()) ('wiki-cast-' + [guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $castOut | Out-Null
 $castDb = Join-Path $castOut 'wiki-cast.sqlite'
-$castReceipt = Join-Path $castOut 'verify-full.json'
-$castSource = (Get-Location).Path
 
+npm run cast:verify -- --db 'data/canonical/wiki-cast.sqlite'
 npm run cast:build -- --output "$castDb"
-npm run cast:verify -- --db "$castDb" --source-root "$castSource" --receipt "$castReceipt"
-```
-
-`--output`과 `--receipt`는 존재하지 않는 새 경로여야 합니다. 같은 경로를 다시 쓰면 `E_OUTPUT_EXISTS` 또는 `E_RECEIPT_EXISTS`로 실패하며 기존 파일의 바이트는 보존됩니다. 저장소 안에 둔 수 있는 DB는 `data/canonical/wiki-cast.sqlite` 하나입니다. 위 예시처럼 임시 복사본은 checkout 밖에 두며, 검증 영수와 임시 복사본은 Git, `public/`, `dist/`, 생성 카탈로그에 넣지 않습니다.
-
-다른 신뢰할 수 있는 위키 checkout을 명시적으로 읽어야 할 때만 `build`에도 절대 경로를 지정합니다.
-
-```powershell
-$castOtherDb = Join-Path $castOut 'wiki-cast-other.sqlite'
-npm run cast:build -- --source-root 'D:/trusted/seoul-dengoku-wiki' --output "$castOtherDb"
-```
-
-빌드와 원천 포함 검증은 실제로 읽는 모든 입력 파일이 해당 위키 checkout의 Git HEAD와 일치해야 합니다. 필요한 원천이 미커밋 상태이거나 Git 추적에서 제외되면 `E_SOURCE_DIRTY`로 거부합니다. 관련 없는 파일의 수정은 검사 범위에 포함하지 않습니다.
-
-## 검증 상태를 읽는 법
-
-원천을 지정한 verify는 DB 무결성, source revision·해시, 원천 보존 또는 projection 계보, 현재 profile 재계산을 확인하는 전체 원천 검증입니다. 공식 검사기가 현재 원천 schema를 지원하지 않으면 이를 실행한 것처럼 표시하지 않고 `not_checked`로 기록합니다. full verify는 DB에 기록된 `source_git_commit`이 원천 checkout의 현재 HEAD이거나 그 조상 커밋인지 확인하고, DB가 읽은 모든 입력 파일의 현재 바이트를 그 커밋에 기록된 Git blob과 직접 대조합니다. 현재 HEAD와 같을 필요는 없으므로 정본 DB를 커밋하는 것처럼 입력 파일을 바꾸지 않은 후속 커밋이 있어도 이전 DB는 그대로 통과하며, receipt의 `source_git_head`가 실제로 대조한 HEAD를 보여 줍니다. 입력 파일이 바뀐 커밋 뒤에는 `E_SOURCE_STALE`로, 기록된 커밋이 이 이력에 없거나 커밋 객체가 아니거나 그 커밋의 입력 blob이 현재 원천과 다르면 `E_SOURCE_REVISION`으로 거부하므로 새 DB를 빌드해야 합니다. `--source-root`를 생략하면 DB 내부 구조와 저장된 계보만 확인하는 offline(오프라인) 부분 검증이며, 원천 최신성·현재 renderer·공식 검사를 보장하지 않습니다.
-
-```powershell
-# 닫힌 DB 파일만 받은 소비자의 부분 검증
 npm run cast:verify -- --db "$castDb"
-
-# 원천 품질 gate. 공식 historical GURPS 검사가 미지원·미실행이면 엄격히 실패합니다.
-npm run cast:verify -- --db "$castDb" --source-root "$castSource" --require-clean
 ```
 
-receipt와 JSON 출력은 다음 판단을 분리합니다.
+`cast:build`는 `data/canonical/wiki-cast.sqlite` 덮어쓰기를 거부한다. SQLite 권위가 없을 때 삭제된 JSON으로 재구축하는 동작도 거부한다. 정본을 고치기 위해 export 파일을 정본 위에 복사하는 절차를 사용하지 않는다.
 
-| 판단 | 의미 | 승인과의 관계 |
+다른 checkout을 명시적으로 지정하는 실행에서도 입력 권위는 그 checkout의 SQLite다. `--source-root` 같은 기존 옵션을 JSON 원천 탐색이나 JSON freshness 검사의 의미로 설명하지 않는다. 실제 지원 옵션과 오류 코드는 현재 명령 도움말·실행 결과를 따른다.
+
+임시 DB·검증 영수·로그는 Git, `public/`, `dist/`, 생성 카탈로그에 넣지 않는다. 비공개 저장소를 export 입력의 공개 문서 집합에 섞지 않는다.
+
+## 검증 결과를 읽는 법
+
+`cast:verify`는 현재 DB를 읽기 전용으로 열어 storage·head·privacy 계약을 검증한다. 검증 중 정본이나 이력을 변경하지 않는다. 세부 검사와 건수는 실제 실행 결과로 확인하고 과거 receipt의 성공·실패를 재사용하지 않는다.
+
+| 판단 | 의미 | 별도로 남는 판단 |
 | --- | --- | --- |
-| artifact integrity (산출물 무결성) | SQLite 구조, 외래 키, 파일·계보 검사가 정상인지 | 원천의 사실성 또는 승인 증명 아님 |
-| current import completeness (현행 적재 완전성) | 현재 registry와 공개 projection이 정해진 적재 계약에 맞는지 | draft·미검토 상태를 승인으로 바꾸지 않음 |
-| historical GURPS quality (역사 GURPS 품질) | 공식 검사 상태와 독립 importer 검사 결과를 분리. 공식 검사가 불가능하면 `unverified` | current engine·owner approval과 독립 |
-| approval readiness / unconfirmed (승인 준비도·미확인) | 공개 projection의 `source_present`·`issued`와 별개로 승인 근거가 확인되지 않은 상태 | `source_present`, `issued`, clean 결과는 owner approval이 아님 |
+| 저장 무결성 | 현재 구현이 검사하는 SQLite 구조·참조·저장 계약의 일관성 | 설정의 사실성·서사 적합성 |
+| head 일관성 | 현재 문서 head와 revision 저장 관계의 일관성 | 해당 본문에 대한 소유자 승인 |
+| privacy | 공개 저장 범위와 비공개 제외 계약 검사 | 모든 외부 배포물에 대한 별도 검토 |
+| 현재 disposition | 보존 ID와 현재 분류의 구별 | 개별 위치·권리·사건·수치의 승인 |
+| 생성 결과 | 실제 완료된 생성 실행의 결과 | 원격 게시·게임 구현·최종 검토 |
 
-현재 `wiki-gurps-cast.v1`에는 기존 공식 historical GURPS 검사기가 대응하지 않습니다. 따라서 현재 원천 receipt의 `official_check_status`는 `not_checked`, `official_check_reason`은 `unsupported-current-schema`, `historical_gurps_quality`는 `unverified`입니다. 공식 검사 issue 0건은 '문제 없음'이 아니라 '검사하지 못함'을 뜻합니다. 독립 importer 검사에서는 현재 스냅숏의 역사적 근거·형식 품질 문제를 별도로 찾습니다. 실제 `importer_issue_count`는 매 실행 receipt에서 확인하며 구 138건이나 새 관측치를 코드의 고정 기대값으로 쓰지 않습니다. 두 검사 결과를 합산해 독립 결함 수로 표현하지 않습니다. 현재 스냅숏의 건수는 매 실행 receipt의 `importer_issue_count`와 `source_reference_unresolved_count`에서 확인합니다.
+검사하지 않은 의미·번역·역사 근거·게시 준비도는 미검사 또는 미검토로 남긴다. schema 통과나 issue 0건을 의미 검토 완료로 바꾸지 않는다. 현재 99개 head와 원래 ID 1,022개·현재 511명은 저장 상태 설명이지 게시 승인 수가 아니다.
 
-현재 원천 스냅숏에는 경로와 인용문이 없는 GURPS 속성 근거 메모가 12행 있습니다(K998·K1007·K1008 각 4행). 원문 메모는 `uncited-note`로 보존하고 `E_GURPS_EVIDENCE_UNCITED` 품질 이슈로 드러냅니다. 이를 검증된 인용 근거로 바꾸거나 빌드 중 조용히 버리지 않습니다. 향후 원천이 바뀔 수 있으므로 검사 코드는 이 수를 고정 상수로 취급하지 않습니다.
+이전 JSON 원천 방식의 `source_git_commit`, Git blob 대조, JSON freshness, offline/full 구분에 관한 과거 receipt는 당시 검증의 기록이다. 현재 SQLite 권위를 삭제된 JSON과 다시 대조하거나, 오래됐다는 이유로 JSON에서 정본을 재빌드하는 운영 지침으로 사용하지 않는다.
 
-성별 정책 원천의 17개 주별 선언 인구 합은 1,016명으로, 현재 registry·인물 원천의 1,022명과 다릅니다. 주별 선언 인구 또는 여성·남성 수가 현재 실제 배정과 다른 정책 행은 상태를 구별해 읽어야 합니다. 과거 정책 수치를 현재 인물 분모로 사용하거나, 이 차이를 인물 누락 또는 소유자 승인으로 해석하지 않습니다.
+과거 공식 historical GURPS 검사에서 기록한 `not_checked`·`unsupported-current-schema`·`unverified`도 당시 검사 범위를 나타낸다. 현재 검사기가 실제 실행됐다는 증거 없이 `checked`나 성공으로 바꾸지 않는다. importer 검사와 공식 검사 결과를 합산해 독립 결함 수로 제시하지 않는다.
 
-기본 build/verify는 원천 문제를 숨기지 않고 DB 무결성과 원천 품질을 함께 출력합니다. `--require-clean`은 독립 importer issue가 없고 공식 historical 검사도 `checked`인 경우에만 성공합니다. 현재 원천처럼 공식 검사가 지원되지 않으면 `E_SOURCE_QUALITY`로 실패합니다. 이 옵션은 현행 draft·unreviewed 자료를 owner-approved로 판정하지 않습니다.
+## ID·현재 분모·공개 주소
 
-## K ID, 공개 주소, 현재 도메인 조회
+K ID는 안정 결합 키다. 공개 순번과 route는 별도 값이며 K ID 숫자에서 계산하지 않는다. 원래 ID 1,022개를 보존하면서 disposition으로 현재 511명을 구분한다. 현재 집합 밖에 있다는 사실은 ID 삭제나 과거 기록 삭제를 뜻하지 않는다.
 
-K ID는 안정 결합 키이고 publication ordinal(공개 순번)과 웹 주소는 별도 값입니다. route는 K ID 숫자에서 계산하지 않습니다. build와 원천 포함 verify는 registry, `values-cast.json`의 실제 공개 순번, `gurps-cast.json` 각 sheet의 `url`을 전수 대조합니다. 같은 인원 수여도 `sheet.url`만 변조하면 실패합니다. 기존 공개 카탈로그의 별도 생성·최신성 검사는 이 SQLite 도구의 범위 밖입니다.
+전체 보존 인물의 조회와 현재 집합의 조회를 혼동하지 않는다. 현재 인원 수를 셀 때에는 현재 disposition 계약을 적용한다. 프로필·관계·직책·작위·수여 행 수를 사람 수에 더하지 않는다. 서울 재배치 검토에서 외부 위치를 가진 인물을 임의로 제외하거나 역사-only로 바꾸어 검토 분모를 줄여서는 안 된다. 현재 disposition과 그 변경 근거는 별도로 읽어야 한다.
+
+다음 조회는 DB를 읽는 기존 명령의 예다.
 
 ```powershell
 npm run cast:query -- --db "$castDb" person --id K1022
@@ -106,97 +105,92 @@ npm run cast:query -- --db "$castDb" issues --dataset index
 npm run cast:query -- --db "$castDb" source --path lore/name-pools/values-cast.json --pointer /people/0/source
 ```
 
-첫 두 `person` 명령은 같은 JSON envelope를 반환합니다. envelope의 최상위 `person`, `state`, `aliases`, `values`, `desires`, `gender`, `lineage`, `profiles`, `source_indexes`, `relations`는 원천의 방향·순서·상태와 source provenance를 보존합니다. `relations`의 incoming/outgoing은 원본 방향을 보여 주며 역관계나 동치 관계를 자동 생성하지 않습니다. `source_indexes`는 `cast`와 `corridor` 색인의 authored draft·approved 상태와 기존 temporal scope를 보존하며 이를 현재 권리·게시 준비도 승인으로 승격하지 않습니다.
+마지막 예시의 `.json` 경로는 DB에 남은 논리적 provenance 식별자다. 해당 파일이 디스크에 존재한다는 뜻이 아니다. `source` 조회는 metadata와 RFC 6901 pointer의 typed record를 확인하는 용도이며 raw byte 다운로드 기능이 아니다. private raw를 노출하는 endpoint로 사용하지 않는다.
 
-공개 서술의 모든 변형은 `profiles` 배열에 별도로 보존하므로 한 사람에 프로필 하나만 있다고 가정해 JOIN하면 자료가 빠집니다. 대표 프로필은 첫 `primary_detail_names` 명시 일치 → 첫 state 카드 → 렌더링한 한국어 본문이 가장 긴 카드 순으로 선택하며, 길이가 같으면 원천 입력 순서를 유지합니다. 관계의 빈 근거도 지어내지 않고 그대로 반환합니다. 인물·프로필·node·field·관계의 실제 건수는 해당 실행 결과에서 확인합니다.
+## 인물 envelope와 관계 해석
 
-현재 draft index에는 registry ID와 명확히 연결되지 않는 `오도윤` 1행과, 원문 요약의 무소속 5명·실제 표 11명 사이의 차이가 있습니다. `issues --dataset index`에서 불일치·미연결 행을 확인합니다. 원문 이름·행은 보존하고 임의로 다른 인물에 붙이지 않습니다.
+인물 결과의 `person`, `state`, `aliases`, `values`, `desires`, `gender`, `lineage`, `profiles`, `source_indexes`, `relations`는 서로 다른 자료군이다. 원문 방향·순서·상태와 provenance를 구분해 읽는다.
 
-`person`의 도메인 구분은 다음과 같습니다.
+- `relations`의 incoming/outgoing은 기록된 방향이다. 역관계나 동치 관계를 자동 생성하지 않는다. 빈 근거도 지어내지 않는다.
+- 한 사람에게 공개 서술 변형이 여러 개 있을 수 있다. `profiles`를 단일 행으로 가정해 JOIN하면 자료가 빠진다.
+- 대표 프로필 선택은 명시적 `primary_detail_names` 일치, state 카드, 렌더링한 한국어 본문 길이 순의 기존 규칙을 따른다. 동률에서는 입력 순서를 유지한다. 대표 선택은 승인 우선순위가 아니다.
+- `source_indexes`의 draft·approved와 temporal scope는 해당 색인의 authored 상태다. 현재 권리나 게시 준비도 승인이 아니다.
+- 미연결 색인 이름은 임의로 다른 K ID에 붙이지 않는다. 과거 `오도윤` 미연결 행과 요약·표 인원 차이 같은 관측은 현재 issue 결과와 다시 대조한다.
 
-| envelope 경로 | 뜻 | 해석 규칙 |
+| envelope 경로 | 뜻과 주의점 |
+| --- | --- |
+| `current.engine` | 공개 허용 역량·숙련·특성·효과·신체·질병·서사와 provenance. Soul·역사 모티브·비공개 profile 상태나 승인 원문을 포함하지 않음 |
+| `current.birthday`, `current.family`, `current.household` | 생일·가계·가구. draft·source-projection 상태를 승인으로 승격하지 않음 |
+| `current.context` | 궁정·주군·가신·직책·사건·접촉 등. 지리 parent, 정치 parent, 개인 주군을 구별 |
+| `current.holdings` | `current_seoul_evidenced`로 구분한 보유. 역·시설·landmark 참조는 토지 전체나 작위 전체의 소유가 아님 |
+| `current.nonowning_rights` | `current_seoul_nonowning` 비소유 권리. 지리 범위와 순서 있는 powers를 소유권으로 바꾸지 않음 |
+| `historical.gurps` | 봉인된 과거 GURPS. 현행 8역량으로 자동 변환하지 않음 |
+| `historical.superseded_holdings`, `historical.superseded_context`, `historical.feudal` | 대체된 보유·정치·봉건 기록. 새 서울 권리의 근거로 자동 재사용하지 않음 |
+| `historical.context.offices` | 과거 직책. 현재 null 직책을 이력으로 채우지 않음 |
+| `unresolved.holdings`, `unresolved.context.retinue_groups` | 미확정 보유·가신단. 위치·권리·승인이 확인됐다는 뜻이 아님 |
+
+`current`는 해당 조회 계약의 현행 영역을 뜻한다. 그 안의 모든 필드가 독립 검토·게시 승인을 마쳤다는 뜻은 아니다. `historical`은 당시 상태의 보존이고 `unresolved`는 현재성 또는 근거가 해결되지 않은 상태다.
+
+과거 권리 패키지의 보유 20건·비소유 권리 5건, 작위 42건·수여 31건·binding 7건·정치 정체성 158건, office-v2 95건 등의 수치는 당시 매핑 설명이다. 현재 결과의 고정 기대값이나 승인 총수로 사용하지 않는다. `unappointed`의 null은 그대로 읽고 이력·카드 직함·common tier에서 보충하지 않는다.
+
+## 테이블과 provenance의 보존 경계
+
+정확한 열·FK·제약은 현재 DB schema와 구현 계약을 확인한다. 문서 revision/head와 기존 인물 도메인 조회 테이블은 구별한다. 다음은 조회 목적을 이해하기 위한 주요 대응이다.
+
+| 자료군 | 주요 테이블 계열 | 해석 경계 |
 | --- | --- | --- |
-| `current.engine` | 공개 허용 current profile | 8 abilities, skills, traits/effects, health/body/disease, narrative와 pointer·provenance만 포함. private profile status, owner approval, soul, 역사 모티브는 포함하지 않음 |
-| `current.birthday`, `current.family`, `current.household`, `current.context` | 생일·가계·가구·현행 문맥 | `current.context`는 `courts`, `direct_retainer`, `owner_liege`, `court_membership`, `opening_disposition`, `offices`, `prose_contacts`, `event_links`, `issues` 등을 원문 방향으로 반환. draft, source-projection, source status를 current 사실이나 승인으로 승격하지 않음 |
-| `current.holdings` | 서울에서 근거가 확인된 현행 보유 | `current_validity='current_seoul_evidenced'`만 포함. 역·시설·landmark의 참조는 토지·작위 전체 권리를 뜻하지 않음 |
-| `current.nonowning_rights` | 승인된 별도 비소유 권리 | `current_seoul_nonowning`만 포함. `geographic_scope.counties`와 `powers`는 원천 순서를 보존하며 지리 범위를 소유권으로 바꾸지 않음 |
-| `historical.gurps` | 봉인된 과거 GURPS | 영지·부대·유랑 세력·장단점/효과와 근거를 당시 상태로 보존. 현행 8역량으로 변환하거나 current approval을 부여하지 않음 |
-| `historical.superseded_holdings` | 서울 밖이라 현행에서 대체된 보유 원행 | 기본 current holdings에 섞이지 않음 |
-| `historical.superseded_context`, `historical.feudal` | 실제 superseded 정치체·가신단과 보관 원천의 옛 봉건 배정 | `superseded_context`는 실제 `superseded_outside_seoul` 행만 포함. archived title/grant/outside person control을 현행 권리로 승격하지 않음 |
-| `historical.context.offices`, `unresolved.context.retinue_groups` | 별도 직책 이력과 위치 미확정 가신단 | 과거 직책을 현재 빈 값의 대체값으로 쓰지 않으며, 가신단을 현재 위치 승인으로 해석하지 않음 |
-| `unresolved.holdings` | 새 서울 수여 근거가 없는 보유 원행 | `confirmed` 원천 상태나 카탈로그 검증만으로 current/approval로 바꾸지 않음 |
+| 인물·프로필·관계 | `person`, `person_alias`, `profile`, `profile_node`, `profile_field`, `relation`, `relation_type` | 안정 ID·route·순서·방향 보존 |
+| 공개 색인 | `index_document`, `index_section`, `index_person`, `index_corridor_person`, `index_issue` | authored 상태와 현재 승인 분리 |
+| 가치·욕망·성별·혈통 | `person_value`, `person_desire`, `person_gender`, `person_lineage`, `person_lineage_source_clan`, `lineage_node`, `lineage_parent` | nullable 참조를 새 인물이나 한국식 가문으로 만들지 않음 |
+| 전역 신원·정책·조사 | `identity_registry_provenance`, `identity_gender_provenance`, `identity_gender_policy`, `identity_clan_research_source`, `identity_lineage_provenance` | 정책·조사 계보는 개인별 수치 승인과 다름 |
+| 생일·가계·가구 | `family_*`, `household_*`, `diaspora_*` | 원천 상태와 가족·가구 관계의 방향 보존 |
+| 현행 문맥·권리·직책 | `context_*` | current validity, authority, 권리 전환, 비소유 범위, 현재 직책과 이력을 구별 |
+| 보관 정치·권리 | `historical_*` | superseded 자료를 현재 권리로 승격하지 않음 |
+| 공개 엔진 | `current_engine_source`, `current_profile`, `ability`, `skill`, `trait`, `effect`, `health`, `body`, `disease`, `narrative` | 공개 허용 projection만 저장·노출 |
+| 출처·품질 | `source_file`, `source_record`, `reference_source`, `source_reference`, `excluded_source`, `source_check_run`, `source_check_issue`, `quality_issue` | 과거 provenance와 현재 권위를 구별 |
+| 본문·행 보존 | `text_document` 및 자식 테이블, `text_line_document`, `text_line` | 정규화 본문과 보존 행의 역할을 구별. 현재 편집에는 document-cli head 사용 |
 
-검토한 승인 원천에서 보유 20건은 정확한 승인 전환과 원행·후속 행 대조를 거쳐 `current_seoul_evidenced`로, 비소유 권리 5건은 `current_seoul_nonowning`으로 매핑합니다. 후자의 `direct_ownership=0`, 지리 범위와 순서 있는 권능은 별도로 보존하며 지명·좌표·정치 ID만으로 소유를 인정하지 않습니다. `current.context`에는 현행 작위 42건, 수여 31건, binding 7건, 비영토 정치 정체성 158건과 비영토 정치체가 각각 노출됩니다. 지리 parent·정치 parent·개인 주군은 별개이며 이 행들을 독립 영토 수나 인원 수로 합산하지 않습니다. 이 수는 승인 패키지 스냅숏 설명이지 가변 원천의 고정 검사 기대값이 아닙니다.
+과거 text corpus는 본문 노드·목록·표·run·앵커·링크를 정규화하고 Markdown/CSV/일부 JavaScript의 물리 행을 보존했다. JavaScript 행 보존은 의미 파싱이 아니다. `corpus_kind`의 current-source·historical·example 구분과 renderer-visible `published` 앵커는 각각 자료 분류와 표시 가능성을 뜻하며 게시 허가가 아니다.
 
-office-v2의 현재 결과 95건은 `current.context.offices`의 status·nullable position/rank·순서 있는 evidence로 읽습니다. 명시적 `unappointed`의 null은 그대로 반환하며 history·카드 직함·common tier에서 보충하지 않습니다. 이력은 `historical.context.offices`로 분리합니다. 검토된 office projection 바이트를 확인하는 계약은 새 직책 수여나 owner approval이 아닙니다. K151/K176/K355는 현재 null 직책과 별도 이력을, K1008은 비영토 정치체와 비소유 권리 및 미확정 가신단을 구별해 조회할 수 있는 사례입니다. 안정 K ID·공개 route·개인 관계 방향은 보존하며 권리 인증을 위치·서사·게시 준비도 승인으로 확대하지 않습니다.
+과거 source manifest의 primary raw, reference hash-only, private-engine hash-only, excluded hash-only 구분은 보존된 계보의 범위를 설명한다. hash-only 기록만으로 원문 BLOB을 복구할 수 없으며 무손실 백업도 아니다. 기존 JSON pointer는 당시 대상과 발생 위치를 구별해 읽는다. 논리 경로나 pointer가 있다고 해서 임의 디렉터리·URL·비공개 저장소를 탐색하지 않는다.
 
-`source`는 metadata와 RFC 6901 pointer의 typed record를 검사하는 용도입니다. raw byte 반환 기능은 제공하지 않습니다. `--include-bytes`는 `E_ARGUMENTS`로 실패합니다. private engine 원천은 전역 `source_file`/`source_record`에 없고, `current.engine`에는 hash·projection metadata만 연결됩니다.
+새 편집의 권위는 현재 head다. 과거 입력 바이트를 현재 head와 같게 만들기 위해 이력이나 원본 archive를 고치지 않는다. 삭제된 물리 JSON을 복원해 과거 `REQUIRED_SOURCE_PATHS` 또는 manifest를 충족시키는 절차도 사용하지 않는다.
 
-## 테이블 대응과 보존 경계
+## 비공개 editorial·Soul 경계
 
-`schema.sql`, `current-family.sql`, `current-engine.sql`, `current-context.sql`, `current-index.sql`, `historical-context.sql`, `current-identity-provenance.sql`, `source-closure.sql`, `excluded-sources.sql`이 정확한 열·FK·제약의 기준입니다. 아래 표는 조회 목적별 대응입니다.
+비공개 editorial·Soul의 실제 저장 위치는 `.omo/private/seoul-migration/sqlite-authority-20261021`이다. 파일은 mode `600`으로 유지하고 Git·공개 DB·공개 JSON·브라우저 번들·공개 로그에 넣지 않는다. 과거 `lore/editorial/Character-System-Contract.json`, `Soul-Assignments.json`, `Soul-Candidates.json` 등의 이름은 논리적 계약·출처 이름일 뿐 현재 물리 경로가 아니다.
 
-| 자료군 | 주요 테이블 | 보존·공개 경계 |
-| --- | --- | --- |
-| 공통 인물·프로필·관계 | `person`, `person_alias`, `profile`, `profile_node`, `profile_field`, `relation`, `relation_type` | K ID, route, 원문 순서와 방향을 보존. 누락값을 0 또는 역관계로 채우지 않음 |
-| 공개 인물 색인 | `index_document`, `index_state_label`, `index_section`, `index_person`, `index_corridor_person`, `index_issue` | 한영 필드, authored draft·approved 상태·기존 temporal scope·원문 출처 보존. 색인 상태를 current rights/readiness 승인으로 해석하지 않음 |
-| 가치·욕망·성별·혈통 | `value_axis`, `person_value`, `desire_axis`, `person_desire`, `person_gender`, `person_lineage`, `person_lineage_source_clan`, `lineage_node`, `lineage_parent` | nullable `lineage_node.person_id`는 registry 밖 참조이며 새 인물로 만들지 않음. 비한국계는 한국식 clan FK를 NULL로 두고 원본 lineage reference와 `namingConventionSource`를 보존 |
-| 전역 신원·성별 정책·가문 조사 계보 | `identity_registry_provenance`, `identity_gender_provenance`, `identity_gender_category`, `identity_gender_policy`, `identity_clan_catalog_provenance`, `identity_clan_research_source`, `identity_lineage_provenance` | 사람별 `person` 결과에 복제하지 않고 SQL로 읽는 원천 정책·조사 사실. registry 승인 기록도 개별 인물 수치 승인으로 확대하지 않음 |
-| 생일·가계·가구 | `family_birthday`, `family_birth_cohort_assignment`, `family_node`, `family_edge`, `household_manifest`, `household_person`, `household_link`, `household_court`, `diaspora_lineage`, `diaspora_member`, `household_policy_value` | family/household의 draft·source-projection·source status는 원문 상태이며 approval이 아님 |
-| 현행 관계·보유·직책 | `context_court`, `context_direct_retainer`, `context_owner_liege`, `context_court_membership`, `context_organization`, `context_event_link`, `context_holding`, `context_holding_admin_ref`, `context_holding_reference`, `context_opening_disposition`, `context_office_appointment`, `context_prose_contact`, `context_issue` | 관계·contact는 direction을 보존. `context_holding`의 `current_validity`, `canon_status`, authority 열을 읽고 부분 역·시설·landmark 참조를 토지·작위로 확대하지 않음 |
-| 현행 권리·전환 근거 | `context_rights_approval`, `context_rights_original_source`, `context_rights_transition`, `context_outside_retirement`, `context_feudal_title`, `context_feudal_jurisdiction`, `context_feudal_grant`, `context_feudal_grant_admin`, `context_feudal_grant_component`, `context_feudal_binding`, `context_political_identity`, `context_political_identity_liege` | 고정 승인 패키지·보관 원행·정확한 후속 행을 인증. 정치 정체성 존속은 토지 수여가 아님 |
-| 비소유 범위·직책 이력 | `context_holding_geographic_scope`, `context_holding_scope_county`, `context_holding_power`, `context_office_history`, `context_office_evidence` | 지리 범위와 허용 권능, 현재 직책 근거와 과거 직책을 분리. null 현재 값을 이력으로 채우지 않음 |
-| 역사 정치·권리 | `historical_source_scope`, `historical_feudal_title`, `historical_feudal_jurisdiction`, `historical_feudal_grant`, `historical_feudal_grant_admin`, `historical_feudal_grant_component`, `historical_feudal_binding`, `historical_outside_person_control` | 보관 원천을 superseded 상태로 별도 보존하며 현행 서울 권리로 올리지 않음 |
-| 정치체·가신단 분류 | `context_polity`, `context_retinue_group` | 정치체의 `current_nonterritorial`과 실제 superseded, 가신단의 unresolved를 구분. 정치 ID만으로 개인 관계를 역사 분류하거나 위치 승인하지 않음 |
-| 현재 엔진 | `current_engine_source`, `current_profile`, `ability`, `skill`, `trait`, `effect`, `health`, `body`, `disease`, `narrative` | private 원문 bytes, document, soul, soulRevisionRef, historicalMotif, basis, evidence, private profile status를 저장하지 않음 |
-| 출처·품질 | `source_file`, `source_record`, `reference_source`, `source_reference`, `excluded_source`, `source_check_run`, `source_check_issue`, `quality_issue` | primary raw은 typed record·BLOB으로 검증. reference hash-only의 대상 해시와 검증 범위를 별도 보존. private-engine·excluded hash-only는 원문 복구 대상이 아님 |
+공개 엔진에는 허용된 역량·숙련·특성·신체·질병·근거 서사만 투영한다. Soul, 역사 모티브, 비공개 basis/evidence, private profile 상태와 승인 원문을 함께 싣지 않는다. 공개에 허용된 hash·projection metadata와 비공개 원문은 구별한다.
 
-source manifest는 네 종류를 구분합니다. primary raw(완전 원문 검증), reference hash-only(고정된 참조 경로·해시와 검증 가능한 pointer), private-engine hash-only(허용된 engine source path·hash·public projection 계보), excluded hash-only(비공개 editorial 원천의 경로·해시·바이트 길이·제외 사유)입니다. reference closure는 가구 `sourceRef(s)`, context `sourcePath`·`sourceBasis.path`, 시설 `siteSourcePath`, office-v2 `current.evidence[].path/jsonPointer`를 명시적으로 수집합니다. evidence 발생 pointer와 대상 pointer는 별개입니다. `source-closure.mjs`의 고정 `REFERENCE_TARGET_PATHS`가 기준이며, 현재 목록은 preserved birthday와 Core 원천까지 포함한 40개 경로입니다. primary에 이미 있는 경로는 재사용하며 임의 디렉터리나 URL을 탐색하지 않습니다. JSON Pointer 검증·의미상 anchor의 path-only·미해결 pointer를 구별하고 미해결에는 `E_REFERENCE_ANCHOR`를 남깁니다. 실제 참조·검증·미해결 건수와 `reference_closure` 상태는 매 실행 receipt에서 확인하며 과거 합계를 고정 기대값으로 쓰지 않습니다. offline 검증은 저장 해시·바이트에서의 검증이며 원천 최신성을 보장하지 않습니다. hash-only 대상은 해당 기록만으로 원본 BLOB을 복구할 수 없어 무손실 백업이 아닙니다.
+과거 excluded 경로 17개나 engine batch 9개 같은 수치는 당시 제외 계약의 기록이다. 현재 비공개 저장소 전체의 개수·완전성·권한 검사를 대신하지 않는다. 과거 검토 baseline이나 `batches=[]`, `approvals=[]`였던 장부도 새 서울 수여 승인으로 사용할 수 없다.
 
-primary raw의 정확한 입력 집합은 `sources.mjs`의 `REQUIRED_SOURCE_PATHS`입니다. 인물·정책·현행 권리 JSON, 승인 전환·비소유·외부 권리 폐기 manifest, `scripts/historical-inputs/` 보관 원천, 고정 Markdown·스크립트와 텍스트 manifest의 합집합을 중복 제거합니다. coverage는 실제 정규화 열과 명시적 제외를 검사하며, 보관 holdings/island와 승인 payload의 인증·바이트 보존을 별도 정규화 행이라고 주장하지 않습니다. Markdown·스크립트는 비JSON 범위로 검사합니다. reference target과 primary raw의 겹치는 경로를 독립 파일 수로 합산하지 않습니다.
+## 품질 문제와 역사 기록
 
-`excluded_source`는 고정된 **17개** 비공개 editorial 경로만 기록합니다. 인물 시스템 계약 1, 비공개 샘플 1, 서울 범위 검토 2, 승인 대기 이전 장부 1, soul·역사 모티브 12개입니다. 이들의 raw bytes·typed `source_record`·개인별 권리 행을 DB에 넣지 않습니다. 특히 이전 장부는 people 1,022건·old rights 2,021건을 담지만 `batches=[]`, `approvals=[]`로 승인된 현재 서울 권리의 근거가 아닙니다. 별도 `Seoul-Scope-Contract`의 entities 1,634/dispositions 3,043도 검토용 baseline입니다. 공개 허용 current engine profile batch 9개의 hash-only 계보는 `current_engine_source`에 별도로 연결되며 이 17개와 경로가 겹치지 않습니다.
+과거에 관측된 GURPS의 `uncited-note`, 성별 정책의 선언 인구 1,016명과 보존 registry 1,022명의 차이, 미연결 색인, 미해결 pointer는 숨기거나 임의 보정하지 않는다. 다만 옛 건수를 현재 검사 결과로 재사용하지 않는다. 현재 511명이라는 disposition 분모를 과거 정책 선언이나 registry 분모에 대입해서도 안 된다.
 
-receipt의 `excluded_source_count=17`과 `source_set_sha256`에는 이 17개 경로의 해시도 묶여 있습니다. 비공개 원천 바이트가 달라지면 전체 원천 대조에서 변경을 감지하지만 DB 파일만으로 비공개 내용을 복원할 수는 없습니다.
+비한국계 혈통의 한국식 clan FK가 NULL인 것은 원본 참조를 버렸다는 뜻이 아니다. `person_lineage_source_clan`과 naming convention provenance를 함께 읽는다. 과거 62명·59개 원본 참조·303개 한국식 clan이라는 스냅숏 수는 현재 고정 검증값이 아니다.
 
-공개 옛 봉건 배정은 위 비공개 제외와 다릅니다. 보관 allocation의 작위·수여·관할·binding과 보관 외부 통제의 인물 연결 행은 `historical_*`에 superseded로 보존하며 비인물 통제를 개인 권리로 연결하지 않습니다. 서울 선거구 검토 원천은 holder 없는 inspection-only scope로만 표시합니다. 어느 행도 새 서울 수여나 현재 소유 승인을 뜻하지 않으며 실제 건수는 실행 결과에서 확인합니다.
+새 오류를 조사할 때에는 현재 head·도메인 행·보존 provenance·승인 기록을 구분해 대조한다. 미확인을 0·성공·금지로 대체하지 않고, 수정 가능한 문제는 조사해 고치며 사용자 판단이 필요한 사항은 근거 있는 대안을 제시한다.
 
-`cast-hangnyeol`의 비한국계 인물은 현재 62명이며 원본 `clan` 참조는 서로 다른 59개 ID를 사용합니다. 한국식 canonical `clan` 303개와 별개입니다. 이 62명의 `person_lineage.clan_id`는 NULL이고, 원본 reference는 `person_lineage_source_clan`에 62행으로 남습니다. `naming_convention`, `naming_source_character_id`, `naming_source_path`, `naming_source_basis`는 이름 규칙의 원천을 설명합니다. `person K014` 조회에서는 `lineage.source_clan_refs`로 원본 참조를 읽을 수 있습니다. 기존 공개 카탈로그가 이 인물들에게 한국식 `detail.clan`을 표시하지 않는 의미를 유지합니다.
+## 닫힌 사본의 읽기 전용 SQL
 
-이 SQLite 검증은 mapper, 관계 원천 validator, 새 normalized DB의 계약만 다룹니다. 기존 public generated projection의 stale/divergence 또는 별도 common-tiers 실행 상태는 이 DB의 입력·출력 검증 범위가 아니며, 이 도구가 해당 생성물을 재생성하거나 고치지 않습니다.
-
-## 닫힌 파일을 복사해 SQL로 읽기
-
-build가 끝난 뒤 결과는 `DELETE` journal mode의 닫힌 DB입니다. `-wal`·`-shm` sidecar를 함께 옮길 필요가 없습니다.
+export가 완료돼 닫힌 파일을 받은 뒤 사본을 읽는다. 실행 중인 정본 파일을 무조건 복사해 일관된 백업이라고 가정하지 않는다. 공개 export의 journal 상태와 sidecar 필요 여부는 실제 산출물에서 확인한다.
 
 ```powershell
 $castCopy = Join-Path $castOut 'wiki-cast-copy.sqlite'
 Copy-Item -LiteralPath $castDb -Destination $castCopy
 
-# sqlite3 CLI가 설치된 경우
 sqlite3 -readonly -json "$castCopy" "SELECT person_id,name,public_route FROM person WHERE person_id='K1022';"
-
-# 개인별 출력에 반복하지 않는 전역 정책·조사 계보
 sqlite3 -readonly -json "$castCopy" "SELECT state_id,population,observed_population,female_count,observed_female_count,alignment_status FROM identity_gender_policy ORDER BY state_id;"
 sqlite3 -readonly -json "$castCopy" "SELECT research_source_id,source_url,accessed_on,live_check FROM identity_clan_research_source ORDER BY ordinal;"
 
-# 원천 없는 소비자의 부분 검증
 npm run cast:verify -- --db "$castCopy"
 ```
 
-SQLite CLI가 없으면 `node:sqlite` 또는 읽기 전용 모드의 SQLite 도구로 열어도 됩니다. 쓰기 시도는 거부되어야 하며, 사본의 해시는 build한 원본 DB와 같아야 합니다.
+첫 SQL은 보존된 ID 행을 조회하는 예이며 현재 511명에 포함되는지 판정하는 쿼리가 아니다. 현재 인원 집계에는 disposition을 적용한다. 정책의 `population`은 선언값, `observed_population`은 해당 저장 계약의 관측값이다. `differs-current`는 차이이지 인물 누락·승인 판정이 아니다. SQL 조회 결과도 최신 의미 검토를 대신하지 않는다.
 
-위 정책 SQL의 `population`은 과거 원천의 선언값, `observed_population`은 현재 적재 인물에서 계산한 값입니다. `alignment_status='differs-current'`는 정책 원천과 현재 배정의 차이를 뜻하며 인물 누락이나 승인 판정이 아닙니다. `identity_registry_provenance.approval_scope='registry-source-event-only'`, `identity_gender_provenance.decision_scope='category-and-assignment-policy-only'`도 개인별 owner approval이 아닙니다.
+## 검증·생성 보고
 
-## 자동 검증
+자동 검증 명령은 현재 구현과 테스트 목록을 확인해 실행한다. 기존 `test:cast-sqlite`와 `test:cast-sqlite:readme`의 과거 결과나 JSON 재빌드 시나리오를 이번 SQLite-only 흐름의 성공 증거로 인용하지 않는다. 실제로 실행한 명령·종료 코드·영수·head 또는 DB 식별 정보·검사 범위를 기록한다.
 
-```powershell
-npm run test:cast-sqlite
-npm run test:cast-sqlite:readme
-```
-
-`test:cast-sqlite`는 Node test runner를 `--test-concurrency=1`로 실행해 여러 전체 적재가 동시에 메모리를 쓰지 않게 합니다. `test:cast-sqlite:readme`는 문구 정규식 검사가 아니라 임시 새 경로에서 README 순서대로 default build → source 포함 full verify → K ID/route/current·historical·unresolved 조회 → private raw endpoint 거부 → 사본 read-only SQL → source 생략 offline verify를 실제로 실행합니다. 출력 DB·receipt·로그는 테스트 종료 후 임시 경로에서 정리됩니다.
-
-SQLite 구조 검사에는 `STRICT` 테이블, 복합 외래 키, `application_id`/`user_version`의 읽기 전용 재개방, 쓰기 거부 뒤 파일 해시·수정시각 불변, 동시 쓰기 시 `SQLITE_BUSY`와 재시도, 전체 `integrity_check`와 `foreign_key_check`가 포함됩니다. 파일을 복사한 뒤에도 읽기 전용으로 열어 검증하고, 출처에 관한 결론은 반드시 원천을 지정한 full verify receipt에서 확인하세요. 큰 원천의 전체 검사는 시간이 걸릴 수 있으므로 운영 시 완료 코드와 receipt를 함께 보관합니다.
-
-정규화 범위 검사는 포함 JSON과 비공개 engine batch의 field shape를 고정된 `coverage-contract.mjs` 계약에 대조합니다. 현행 권리·지리/정치 parent·개인 주군·비소유 scope/powers·office current/history/evidence는 실제 열로 명시적으로 연결합니다. 공개 자료에는 해당 정규화 테이블·열·행이 있거나 문서화한 제외 사유가 있어야 합니다. 비공개 batch는 shape의 건수와 해시만 검증하며 비공개 필드 이름·경로·값을 DB, receipt, CLI에 내보내지 않습니다. 새 원천 경로나 선언되지 않은 필드 모양은 실패합니다. 원문 바이트 보존이나 인증 전용 입력을 정규화 행의 증거로 세지 않으며, 최종 판단에는 실제 build/verify와 각 도메인별 전수 행 대조도 필요합니다.
+문서에는 새 테스트 수, 전체 통과, source freshness, 원격 반영 또는 소유자 승인을 만들어 적지 않는다. 현재 정식 생성은 실행 중이며 성공은 아직 입증되지 않았다. 최종 보고는 저장 검증, 의미 검토, 생성 완료, 게시 확인, 게임 구현, 승인 상태를 각각 분리한다.

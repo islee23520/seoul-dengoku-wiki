@@ -23,7 +23,7 @@ test('sealed version store rejects missing, swapped and tampered revisions and s
 })
 
 test('real HTTP reads preserve every person, route, legacy number and citation in both revisions', async () => {
-  const ledgerPath = new URL('../lore/name-pools/gurps-cast.json', import.meta.url)
+  const ledgerPath = new URL('../data/canonical/wiki-cast.sqlite', import.meta.url)
   const before = await readFile(ledgerPath)
   await live({ versionStore: store }, async request => {
     for (const selected of REVISIONS) {
@@ -64,7 +64,7 @@ test('real HTTP reads preserve every person, route, legacy number and citation i
 }, 120000)
 
 test('real HTTP authoring returns usable unreviewed candidates without changing historical sheets', async () => {
-  const before = await readFile(new URL('../lore/name-pools/gurps-cast.json', import.meta.url))
+  const before = await readFile(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url))
   await live({ versionStore: store }, async request => {
     const input = proposal()
     const created = await request(pathFor('/api/characters'), json(input))
@@ -102,7 +102,7 @@ test('real HTTP authoring returns usable unreviewed candidates without changing 
     assert.equal((await request(pathFor('/api/settlements/test/generate-npcs'), json(batch))).status, 400)
     assert.equal((await request(pathFor('/api/settlements/test/npcs'))).status, 200)
   })
-  assert.deepEqual(await readFile(new URL('../lore/name-pools/gurps-cast.json', import.meta.url)), before)
+  assert.deepEqual(await readFile(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url)), before)
 })
 
 const mutations = [
