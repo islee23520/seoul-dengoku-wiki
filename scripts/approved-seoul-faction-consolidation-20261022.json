@@ -1,0 +1,124 @@
+{
+  "schema": "approved-seoul-faction-consolidation.v1",
+  "approvalRef": "owner:seoul-faction-consolidation-20261022",
+  "receivedAt": "2026-10-22",
+  "directiveVerbatim": "make all remaining 민웅기 and all 대전 related 인물 전부 서울로 세력을 옮기고 서울외 인물이 있으면 안됨 조재표 should be part of 규격맹 also 신종목 is under 고서준 영토의 작귀 배분을 진행해줘 이일섭 shoudl have its tier baseacd approporiate titles and 작위 also 품계 is diffrent with 작위 but 품계 not be ininitated the 품계 follows 대한민국 정부 공무원 계급표 and this project has too much 불필요한 test scripts should make the test script writting rules for the porject wise",
+  "decisions": [
+    {
+      "id": "D1",
+      "subject": "대전 정치체 해소",
+      "decision": "polity:daejeon·title:kingdom-daejeon·대전계 상위관할 5건(holding:daejeon-*)을 해소한다. 민웅기(K1008)·장우석(K035)·허다온(K038)·구찬솔(K039) 전원을 규격맹(S02)으로 세력 이동한다. 민웅기의 왕격은 규격맹 봉신의 개인 정치 등급으로 보존한다(2116년 봉신화 선례).",
+      "basis": "사용자 지시 2026-10-22 '전부 서울로 세력을 옮기고 서울외 인물이 있으면 안됨' + 4인 전원이 구로·천왕·오류2동 규격맹 조합 체계에서 근무 중인 기존 사실"
+    },
+    {
+      "id": "D2",
+      "subject": "조재표(K1003)",
+      "decision": "소속을 무소속에서 규격맹 조합원(귀환 일행 지휘자)으로 바꾼다. 봉건 작위 없음은 유지한다.",
+      "basis": "사용자 지시 '조재표 should be part of 규격맹'"
+    },
+    {
+      "id": "D3",
+      "subject": "신종목(K1009)",
+      "decision": "아관사(S14) 관문사령관 고서준(K348)의 산하로 둔다. 지휘 관계를 카드와 관계 장부에 반영한다.",
+      "basis": "사용자 지시 '신종목 is under 고서준'"
+    },
+    {
+      "id": "D4",
+      "subject": "지리 왕국 작위 배분",
+      "decision": "geography:kingdom:seoul:01=K144(대한민국정부), 02=K296(신내운수), 03=K245(안국총림), 04=K001(수문국), 05=K029(규격맹), 06=K423(종교 연합). 제국(서울)은 공석을 유지한다.",
+      "basis": "사용자 지시 '영토의 작귀 배분을 진행해줘' + 각 왕국의 기존 승인 수도·공작령 보유·중심 권역 대응"
+    },
+    {
+      "id": "D5",
+      "subject": "이일섭(K998) commonTier",
+      "decision": "commonTier T3→T2. 칭호가 공작(티어2)이므로 보존 개인 권위 티어도 T2로 정정한다.",
+      "basis": "사용자 지시 'tier based on appropriate titles and 작위' + 관직 옛호칭 표(티어2=공작)"
+    },
+    {
+      "id": "D6",
+      "subject": "품계 체계",
+      "decision": "품계는 작위(지리 5단계)·기관 직함과 구분되는 개인 등급 축으로 유지(폐지하지 않음)하며 대한민국 정부 공무원 계급표(고위공무원단 가·나·다·라급, 1급 이사관~9급 서기보)를 표준으로 삼는다. 다섯 층 직제 티어의 상당 계급 대응표를 관직 문서에 둔다.",
+      "basis": "사용자 지시 '품계 is diffrent with 작위 but 품계 not be eliminated, 품계 follows 대한민국 정부 공무원 계급표' + 국가공무원법 제4조 계급 구분"
+    },
+    {
+      "id": "D7",
+      "subject": "테스트 스크립트 규칙",
+      "decision": "프로젝트 공통 테스트 스크립트 작성 규칙 문서(TESTING.md)를 신설하고 CONTRIBUTING에서 참조한다.",
+      "basis": "사용자 지시 'too much 불필요한 test scripts — make the test script writing rules'"
+    }
+  ],
+  "touchedFiles": [
+    "lore/relations/opening-feudal-allocation.json",
+    "lore/relations/personal-holdings.json",
+    "lore/relations/opening-office-appointments.json",
+    "lore/characters/Cast-State-02.json",
+    "lore/characters/Cast-Unaffiliated.json",
+    "lore/characters/Core-Characters.json",
+    "lore/characters/Cast-Index.json",
+    "lore/characters/Cast-Relations.json",
+    "lore/factions/Sixteen-States.json",
+    "lore/offices/Offices-and-Ranks.json",
+    "lore/regions/seoul-electoral-titles.json",
+    "TESTING.md",
+    "CONTRIBUTING.md",
+    "lore/relations/state-formation-contract.json",
+    "lore/World-Narrative-Atlas.json",
+    "lore/relations/relations.json"
+  ],
+  "kingdomTitleRows": [
+    {
+      "id": "title:kingdom-geography:seoul:01",
+      "name": "중앙 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K144",
+      "stateId": "S06",
+      "geographicTitleId": "geography:kingdom:seoul:01",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 대한민국정부 대통령. 청와대·광화문 중심의 강북 권역과 종로 공작령 보유 근거."
+    },
+    {
+      "id": "title:kingdom-geography:seoul:02",
+      "name": "북동 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K296",
+      "stateId": "S12",
+      "geographicTitleId": "geography:kingdom:seoul:02",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 신내운수 사장. 북동 왕국 안 유일한 국가 수도 신내역(노원) 직영지 보유 근거."
+    },
+    {
+      "id": "title:kingdom-geography:seoul:03",
+      "name": "북서 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K245",
+      "stateId": "S10",
+      "geographicTitleId": "geography:kingdom:seoul:03",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 안국총림 방장. 북서 왕국 세 자치구 가운데 은평·서대문 공작령 보유 근거."
+    },
+    {
+      "id": "title:kingdom-geography:seoul:04",
+      "name": "서부 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K001",
+      "stateId": "S01",
+      "geographicTitleId": "geography:kingdom:seoul:04",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 수문국 군주. 서부 왕국 세 자치구 가운데 영등포·양천 공작령 보유 근거."
+    },
+    {
+      "id": "title:kingdom-geography:seoul:05",
+      "name": "남서 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K029",
+      "stateId": "S02",
+      "geographicTitleId": "geography:kingdom:seoul:05",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 규격맹 위원장. 남서 왕국 네 자치구 전체에 걸친 규격맹 공작령과 왕국 s02 보유 근거."
+    },
+    {
+      "id": "title:kingdom-geography:seoul:06",
+      "name": "동남 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K423",
+      "stateId": "S04",
+      "geographicTitleId": "geography:kingdom:seoul:06",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 종교 연합 왕. 강남 공작령과 왕국 s04 보유, 종교 연합의 강남 중심 권역 근거."
+    }
+  ]
+}
