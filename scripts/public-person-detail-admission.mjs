@@ -23,6 +23,10 @@ const optionalFields = ['birthDate', 'birthday', 'age', 'ageAsOf', 'sourceStatus
   'confirmedHoldings', 'subordinateHoldings', 'superiorJurisdictions', 'openingTitles',
   'sovereignTitle', 'retinueGroups', 'openingDisposition', 'unit', 'territory',
   'wandering_force', 'directLiege', 'court', 'politicalIdentities', 'locked']
+// Archived mapping receipts retain their original contract; current publication
+// no longer exposes GURPS sheets or their detached unit/camp projections.
+const currentRequiredFields = requiredFields.filter(field => !['gurps', 'personSheet'].includes(field))
+const currentOptionalFields = optionalFields.filter(field => !['unit', 'territory', 'wandering_force'].includes(field))
 
 // Code-owned exact technical mapping receipts; semantic authority remains in
 // the separately authenticated publication review checked during admission.
@@ -340,18 +344,13 @@ export function admitPublicPersonDetails(details, scopeInput) {
         }
       }
     }
-    for (const field of Object.keys(detail)) check(requiredFields.includes(field) || optionalFields.includes(field),
+    for (const field of Object.keys(detail)) check(currentRequiredFields.includes(field) || currentOptionalFields.includes(field),
       'E_SCOPE_SHAPE', `/person-details/${field}`, id)
     assertPublicFields(detail, '/person-details', id)
-    for (const field of requiredFields) check(Object.hasOwn(detail, field),
+    for (const field of currentRequiredFields) check(Object.hasOwn(detail, field),
       'E_REVIEW_COVERAGE', `/person-details/${field}`, id)
-    for (const field of ['fields', 'sections', 'values', 'desire', 'gurps', 'personSheet', 'relations']) {
+    for (const field of ['fields', 'sections', 'values', 'desire', 'relations']) {
       check(record(detail[field]), 'E_SCOPE_SHAPE', `/person-details/${field}`, id)
-    }
-    for (const variant of detail.personSheet.variants ?? []) {
-      const historical = variant?.legacy?.record
-      check(record(historical) && JSON.stringify(historical) === JSON.stringify(projectPublicHistoricalRecord(historical)),
-        'E_SCOPE_PROJECTION', '/personSheet/variants/legacy/record', id)
     }
     check(typeof detail.biography === 'string' && detail.biography.trim().length > 0,
       'E_REVIEW_COVERAGE', '/person-details/biography', id)

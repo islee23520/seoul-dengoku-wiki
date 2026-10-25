@@ -11,7 +11,6 @@ import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
 import type { PersonRightsPermissions, PermissionStatus } from '../personRightsPermissions'
 import type { FamilyTreeData } from '../components/FamilyTree'
 import { nonKoreanFamilyCatalog } from '../generated/nonKoreanFamilyCatalog'
-import { personSheetNameChanges as nameChanges, preservationBaseline } from '../generated/personSheetSources'
 
 type Relation = { from: string; type: string; to: string; basis: string }
 type ProfileText = { readonly ko: string; readonly en: string }
@@ -45,11 +44,7 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   openingTitles?: readonly { id: string; name: string; rank: string; parentTitle: { name: string; holderPersonId: string } | null }[]
   sovereignTitle?: { formalTitle: string; formalTitleRank: string; office: string } | null
   retinueGroups?: readonly { id: string; name: { ko: string }; count: number; duties: readonly string[] }[]
-  gurps: { readonly id: string; readonly personId: string }
-  personSheet: unknown
   characterProfile?: PublicCharacterProfile
-  unit?: { type: string; size: number; quality: string; composition: string[]; note: string } | null
-  wandering_force?: { type: string; size: number; current_location: string; camp: { name: string; type: string; description: string; facilities: string[]; pack_up_time: string }; note: string } | null
   clan: { id: string; name: string; crest: string } | null
   generation: string
   minors: boolean
@@ -129,242 +124,6 @@ export function PersonPermissions({ permissions }: { readonly permissions?: Pers
       })}
     </tbody></table></div>
     <p data-external-reuse-permission="required">외부 2차 창작에서 이 인물의 이름이나 초상을 사용하려면 실제 인물에게 별도 허가를 받아야 합니다. 프로젝트의 사용 허가와 콘텐츠 라이선스에는 외부 창작자의 이름·초상 사용 허가가 포함되지 않습니다.</p>
-  </section>
-}
-
-type SheetAttr = { value?: number; cp?: number }
-type SheetTrait = { name: string; kind: string; cp?: number; rule?: string }
-type SheetSkill = { name?: string; ko?: string; level?: number; cp?: number }
-type SheetCp = { total?: number; attributes?: number; advantages?: number; disadvantages?: number; skills?: number; spent?: number; unspent?: number }
-type SheetSecondary = { HP?: number; FP?: number; Will?: number; Per?: number; BasicSpeed?: number; BasicMove?: number; BasicLift?: number; Dodge?: number }
-
-export type GurpsSheetData = {
-  band: string | null
-  attributes: Partial<Record<'ST' | 'DX' | 'IQ' | 'HT', SheetAttr>>
-  traits: SheetTrait[]
-  skills: SheetSkill[]
-  cp: SheetCp
-  secondary: SheetSecondary
-}
-
-export type GurpsParseResult = { ok: true; sheet: GurpsSheetData } | { ok: false; error: string }
-
-const isRecord = (value: unknown): value is Record<string, unknown> =>
-  typeof value === 'object' && value !== null && !Array.isArray(value)
-const isNumber = (value: unknown): value is number => typeof value === 'number' && Number.isFinite(value)
-
-function pickNumbers(label: string, raw: unknown, keys: readonly string[]): Record<string, number> | string {
-  if (raw === undefined || raw === null) return {}
-  if (!isRecord(raw)) return `${label}가 객체가 아니다`
-  for (const key of keys) {
-    const value = raw[key]
-    if (value !== undefined && value !== null && !isNumber(value)) return `${label}.${key}가 숫자가 아니다`
-  }
-  return Object.fromEntries(keys.filter((key) => isNumber(raw[key])).map((key) => [key, raw[key] as number]))
-}
-
-// 신원은 scripts/mcp-character-server.mjs의 matchesCharacter와 같다: personId 일치 또는 url === '/people/' + 요청 ID.
-// K 번호에서 route 순번을 추측하지 않는다. 예: person-0089는 K088이다.
-export function parseGurpsSheet(payload: unknown, personId: string): GurpsParseResult {
-  const reject = (error: string): GurpsParseResult => ({ ok: false, error })
-  if (!isRecord(payload)) return reject('시트 응답이 객체가 아니다')
-  if (payload.url !== '/people/' + personId || (payload.personId !== undefined && payload.personId !== personId)) return reject('시트 신원이 요청한 인물과 다르다')
-
-  const band = payload.band === undefined || payload.band === null ? null : typeof payload.band === 'string' ? payload.band : undefined
-  if (band === undefined) return reject('band가 문자열이 아니다')
-
-  const attributes: GurpsSheetData['attributes'] = {}
-  if (payload.attributes !== undefined && payload.attributes !== null) {
-    if (!isRecord(payload.attributes)) return reject('attributes가 객체가 아니다')
-    for (const key of ['ST', 'DX', 'IQ', 'HT'] as const) {
-      const raw = payload.attributes[key]
-      if (raw === undefined || raw === null) continue
-      if (!isRecord(raw)) return reject(`attributes.${key}가 객체가 아니다`)
-      if (raw.value !== undefined && !isNumber(raw.value)) return reject(`attributes.${key}.value가 숫자가 아니다`)
-      if (raw.cp !== undefined && !isNumber(raw.cp)) return reject(`attributes.${key}.cp가 숫자가 아니다`)
-      attributes[key] = { value: raw.value as number | undefined, cp: raw.cp as number | undefined }
-    }
-  }
-
-  const traits: SheetTrait[] = []
-  if (payload.traits !== undefined && payload.traits !== null) {
-    if (!Array.isArray(payload.traits)) return reject('traits가 배열이 아니다')
-    for (const entry of payload.traits) {
-      if (!isRecord(entry)) return reject('traits 항목이 객체가 아니다')
-      if (typeof entry.name !== 'string') return reject('traits 항목의 name이 문자열이 아니다')
-      if (entry.kind !== undefined && typeof entry.kind !== 'string') return reject('traits 항목의 kind가 문자열이 아니다')
-      if (entry.cp !== undefined && !isNumber(entry.cp)) return reject('traits 항목의 cp가 숫자가 아니다')
-      traits.push({
-        name: entry.name,
-        kind: typeof entry.kind === 'string' ? entry.kind : '',
-        cp: entry.cp as number | undefined,
-        rule: typeof entry.rule === 'string' ? entry.rule : undefined,
-      })
-    }
-  }
-
-  const skills: SheetSkill[] = []
-  if (payload.skills !== undefined && payload.skills !== null) {
-    if (!Array.isArray(payload.skills)) return reject('skills가 배열이 아니다')
-    for (const entry of payload.skills) {
-      if (!isRecord(entry)) return reject('skills 항목이 객체가 아니다')
-      if (entry.name !== undefined && typeof entry.name !== 'string') return reject('skills 항목의 name이 문자열이 아니다')
-      if (entry.ko !== undefined && typeof entry.ko !== 'string') return reject('skills 항목의 ko가 문자열이 아니다')
-      if (entry.level !== undefined && !isNumber(entry.level)) return reject('skills 항목의 level이 숫자가 아니다')
-      if (entry.cp !== undefined && !isNumber(entry.cp)) return reject('skills 항목의 cp가 숫자가 아니다')
-      skills.push({
-        name: entry.name as string | undefined,
-        ko: entry.ko as string | undefined,
-        level: entry.level as number | undefined,
-        cp: entry.cp as number | undefined,
-      })
-    }
-  }
-
-  const cp = pickNumbers('cp', payload.cp, ['total', 'attributes', 'advantages', 'disadvantages', 'skills', 'spent', 'unspent'])
-  if (typeof cp === 'string') return reject(cp)
-  const secondary = pickNumbers('secondary', payload.secondary, ['HP', 'FP', 'Will', 'Per', 'BasicSpeed', 'BasicMove', 'BasicLift', 'Dodge'])
-  if (typeof secondary === 'string') return reject(secondary)
-
-  return { ok: true, sheet: { band, attributes, traits, skills, cp: cp as SheetCp, secondary: secondary as SheetSecondary } }
-}
-
-export function GurpsSheet({ gurps }: { gurps: GurpsSheetData }): JSX.Element {
-  const attrs = gurps.attributes
-
-  const cp = gurps.cp
-  const skills = gurps.skills
-  const advantages = gurps.traits.filter((trait) => trait.kind === 'advantage')
-  const disadvantages = gurps.traits.filter((trait) => trait.kind === 'disadvantage')
-  const secondary = gurps.secondary
-  const band = gurps.band
-
-  return (
-    <section className="gurps-sheet">
-      <h3>역사 시트 · 읽기 전용</h3>
-      <p>ST·DX·IQ·HT·CP는 보존된 옛 필드명입니다. 아래 값은 새 규칙의 등급이나 계산식이 아닙니다.</p>
-      <div className="gurps-cp-total">
-        <span className="cp-number">{cp.total ?? '—'}</span>
-        <span className="cp-label">CP</span>
-        {band && <span className="cp-note">{band}</span>}
-      </div>
-      <div className="gurps-cp-breakdown">
-        <h4>기록된 CP 내역</h4>
-        <div className="cp-row"><span>능력치</span><span>{cp.attributes ?? '—'} CP</span></div>
-        <div className="cp-row"><span>장점</span><span>{cp.advantages ?? '—'} CP</span></div>
-        <div className="cp-row"><span>단점</span><span>{cp.disadvantages ?? '—'} CP</span></div>
-        <div className="cp-row"><span>기술</span><span>{cp.skills ?? '—'} CP</span></div>
-        <div className="cp-row" data-legacy-field="cp.spent"><span>사용</span><span>{cp.spent ?? '—'} CP</span></div>
-        <div className="cp-row"><span>미사용</span><span>{cp.unspent ?? '—'} CP</span></div>
-        <div className="cp-row cp-sum"><span>합계</span><span>{cp.total ?? '—'} CP</span></div>
-      </div>
-      {advantages.length > 0 && (
-        <div className="gurps-advantages">
-          <h3>장점</h3>
-          {advantages.map((adv, i) => (
-            <div key={i} className="adv-row">
-              <span className="adv-name">{adv.name}</span>
-              <span className="adv-cp">{adv.cp} CP</span>
-            </div>
-          ))}
-        </div>
-      )}
-      {disadvantages.length > 0 && (
-        <div className="gurps-disadvantages">
-          <h3>단점</h3>
-          {disadvantages.map((d, i) => (
-            <div key={i} className="adv-row">
-              <span className="adv-name">{d.name}</span>
-              <span className="adv-cp">{d.cp} CP</span>
-            </div>
-          ))}
-        </div>
-      )}
-      <div className="gurps-attrs">
-        {(['ST', 'DX', 'IQ', 'HT'] as const).map(key => {
-          const a = attrs[key]
-          if (!a) return null
-          return (
-            <div key={key} className="gurps-attr">
-              <span className="attr-key">{key}</span>
-              <span className="attr-value">{a.value ?? '—'}{a?.cp != null ? <small className="attr-cp"> ({a.cp} CP)</small> : null}</span>
-            </div>
-          )
-        })}
-      </div>
-      <div className="gurps-derived">
-        <h3>기록된 보조 수치</h3>
-        {(['HP', 'FP', 'Will', 'Per', 'BasicSpeed', 'BasicMove', 'BasicLift', 'Dodge'] as const).map(key =>
-          <div className="derived-row" key={key} data-legacy-field={'secondary.' + key}><span>{key}</span><span>{secondary[key] ?? '—'}</span></div>)}
-      </div>
-      {skills.length > 0 && (
-        <div className="gurps-skills">
-          <h3>기술</h3>
-          {skills.map((s, i) => (
-            <div key={i} className="skill-row">
-              <span className="skill-name">{s.ko || s.name}</span>
-              <span className="skill-level">{s.level ?? '—'}{s.cp != null ? <small className="skill-cp"> ({s.cp} CP)</small> : null}</span>
-            </div>
-          ))}
-        </div>
-      )}
-    </section>
-  )
-}
-
-type SheetIdentity = { readonly id: string; readonly personId: string; readonly name: string; readonly state: string }
-type PreservedSelection = { readonly ok: true; readonly sheet: GurpsSheetData; readonly record: Readonly<Record<string, unknown>>; readonly revision: string }
-  | { readonly ok: false; readonly error: string }
-const sheetRevisions = Object.entries(preservationBaseline.revisions)
-const defaultSheetRevision = '5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4'
-
-export function selectPreservedSheet(payload: unknown, identity: SheetIdentity, revision: string): PreservedSelection {
-  const reject = (error: string): PreservedSelection => ({ ok: false, error })
-  if (!sheetRevisions.some(([key]) => key === revision)) return reject('E_EXPLICIT_REVISION')
-  if (!isRecord(payload) || payload.schema !== 'wiki-person-sheet.v1' || !Array.isArray(payload.variants) || payload.variants.length !== sheetRevisions.length) return reject('E_PERSON_SHEET_REVISIONS')
-  if (payload.currentState !== identity.state) return reject('E_PERSON_SHEET_CURRENT_STATE')
-  let selected: PreservedSelection = reject('E_PERSON_SHEET_REVISIONS')
-  for (const [key, seal] of sheetRevisions) {
-    const variants = payload.variants.filter((value: unknown) => isRecord(value) && value.revision === key)
-    if (variants.length !== 1) return reject('E_PERSON_SHEET_REVISIONS')
-    const variant: unknown = variants[0]
-    if (!isRecord(variant) || variant.ledgerSha256 !== seal.ledgerSha256 || !isRecord(variant.legacy) || variant.legacy.operative !== false || !isRecord(variant.legacy.record)) return reject('E_PERSON_SHEET_LEGACY')
-    const rules = variant.rules
-    if (!isRecord(rules) || rules.sourceRevision !== key || rules.rulesVersion !== 'seoul.opposed-d10.v1' || rules.resolution !== 'opposed-d10' || rules.numericAdoption !== false || rules.originalRatings !== null || rules.legacyValues !== 'immutable-not-d10-ratings') return reject('E_PERSON_SHEET_RULES')
-    const record = variant.legacy.record
-    const nameChange = (nameChanges as Record<string, { personId: string; historicalName: string; currentName: string }>)[identity.id]
-    const nameMatches = record.name === identity.name || (nameChange?.personId === identity.personId && nameChange.historicalName === record.name && nameChange.currentName === identity.name)
-    if (record.id !== identity.id || !nameMatches || record.url !== '/people/' + identity.personId || (record.personId !== undefined && record.personId !== identity.personId)) return reject('E_PERSON_SHEET_IDENTITY')
-    if (typeof record.state !== 'string' || variant.historicalState !== record.state) return reject('E_PERSON_SHEET_HISTORICAL_STATE')
-    const parsed = parseGurpsSheet(record, identity.personId)
-    if (!parsed.ok) return reject(parsed.error)
-    if (key === revision) selected = { ok: true, sheet: parsed.sheet, record, revision }
-  }
-  return selected
-}
-
-export function PreservedPersonSheet({ payload, identity }: { readonly payload: unknown; readonly identity: SheetIdentity }): JSX.Element {
-  const [revision, setRevision] = useState(defaultSheetRevision)
-  const selected = selectPreservedSheet(payload, identity, revision)
-  return <section className="person-data-section" data-person-sheet>
-    <h2>인물 시트</h2>
-    <p data-original-ratings="historical">아래는 보존된 역사 시트입니다. 현재 역량·숙련·특성은 위의 새 인물 profile을 따르며, 역사 수치를 새 규칙으로 환산하지 않습니다.</p>
-    <div className="people-filters">
-      <label htmlFor={'sheet-revision-' + identity.personId}>역사 시트 리비전</label>
-      <select id={'sheet-revision-' + identity.personId} value={revision} onChange={event => setRevision(event.currentTarget.value)}>
-        {sheetRevisions.map(([key]) => <option key={key} value={key}>{key.slice(0, 8)}</option>)}
-      </select>
-    </div>
-    {selected && !selected.ok && <p role="alert">시트를 표시할 수 없습니다. 원본 결속을 확인하세요. ({selected.error})</p>}
-    {selected?.ok && <div data-selected-revision={selected.revision} data-legacy-operative="false">
-      <p>원본 리비전: <code>{selected.revision}</code></p>
-      <p data-sheet-affiliation>현재 소속: {identity.state} · 이 판본의 소속: {String(selected.record.state)}</p>
-      <GurpsSheet gurps={selected.sheet} />
-      <details key={selected.revision} data-legacy-record>
-        <summary>공개 역사 시트 필드</summary>
-        <pre>{JSON.stringify(selected.record, null, 2)}</pre>
-      </details>
-    </div>}
   </section>
 }
 
@@ -460,8 +219,7 @@ export default function PersonDetailPage() {
       })
       .then((person) => {
         if (person.id !== summary.id || person.name !== summary.name || person.state !== summary.state ||
-            person.characterId !== summary.characterId || person.detailRoute !== summary.detailRoute ||
-            person.gurps?.id !== summary.characterId || person.gurps?.personId !== summary.id) throw new Error('E_PERSON_DETAIL_IDENTITY')
+            person.characterId !== summary.characterId || person.detailRoute !== summary.detailRoute) throw new Error('E_PERSON_DETAIL_IDENTITY')
         if (active) setDetail(person)
       })
       .catch(() => { if (active) setFailed(true) })
@@ -548,13 +306,6 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
           {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} onBound={setFeedbackBound}>{canonicalProse}</FeedbackSurface> : <><PersonSections sections={detail.sections} /><details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details></>}
 
           {detail.characterProfile && <CharacterProfile profile={detail.characterProfile} />}
-          <PreservedPersonSheet key={personId} payload={detail.personSheet} identity={{ id: detail.characterId, personId, name: detail.name, state: detail.state }} />
-          {detail.unit && <section className="gurps-unit">
-            <h2>부대</h2>
-            <p>{detail.unit.type} · {detail.unit.size}명 · {detail.unit.quality}</p>
-            <p>편성: {detail.unit.composition.join(', ')}</p>
-            <p>{detail.unit.note}</p>
-          </section>}
           {detail.sovereignTitle && <DataTable title="작위와 직위" rows={[["작위", detail.sovereignTitle.formalTitle], ["등급", detail.sovereignTitle.formalTitleRank], ["직위", detail.sovereignTitle.office]]} />}
           {!!detail.openingTitles?.length && <section data-opening-titles><h2>개막 영토 작위와 상위 관할</h2>{detail.confirmedHoldings?.some(holding => holding.liegeRelationshipKind === 'preserved-personal-service') && <p>기존 인적 봉사 주군 관계와 영토 작위의 상위 관할은 별개입니다. 기존 인적 관계는 그대로 보존합니다.</p>}{detail.openingTitles.map(title => <DataTable key={title.id} title={title.name} rows={[["작위 등급", title.rank], ["상위 작위", title.parentTitle?.name ?? '독립'], ["영토 작위 상위 보유자", title.parentTitle?.holderPersonId ?? '없음']]} />)}</section>}
           {detail.retinueGroups?.map(group => <section key={group.id} data-retinue-group={group.id}><h2>{group.name.ko}</h2><p>{group.count}기 · 민웅기 직속</p><p>{group.duties.join(' · ')}</p></section>)}
@@ -569,16 +320,6 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
             </section>)}
           </section>}
           {!!detail.subordinateHoldings?.length && <section data-subordinate-holdings><h2>공작령 내 봉신 보유 영지</h2>{detail.subordinateHoldings.map(holding => <section key={holding.id}><h3>{holding.name.ko}</h3><p>보유 영주: <Link to={holding.holderRoute}>{holding.holderName}</Link></p><ul>{holding.adminRefs.map(ref => <li key={ref.id}>{ref.name}</li>)}</ul></section>)}</section>}
-          {detail.wandering_force && <section className="gurps-wandering">
-            <h2>야영지와 유랑 부대</h2>
-            <p>{detail.wandering_force.type} · {detail.wandering_force.size}명</p>
-            <p>현재 위치: {detail.wandering_force.current_location}</p>
-            <p>{detail.wandering_force.camp.name} · {detail.wandering_force.camp.type}</p>
-            <p>{detail.wandering_force.camp.description}</p>
-            <p>시설: {detail.wandering_force.camp.facilities.join(', ')}</p>
-            <p>철수 준비: {detail.wandering_force.camp.pack_up_time}</p>
-            <p>{detail.wandering_force.note}</p>
-          </section>}
           <ValuesDesireSection detail={detail} />
 
           <p><Link to={detail.sourceRoute}>정본 원문 위치로 이동</Link></p>

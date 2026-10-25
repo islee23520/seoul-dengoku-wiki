@@ -1,25 +1,7 @@
 // @vitest-environment jsdom
-import { afterAll as closeInputFixture } from 'vitest'
-import { readFile as readInputConfig } from 'node:fs/promises'
-const inputRoot = new URL('../', import.meta.url).pathname
-const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
-const inputConfig = JSON.parse(await readInputConfig(process.env.WIKI_PUBLICATION_DATABASE_CONFIG ?? new URL('../.omo/private/seoul-migration/sqlite-authority-20261021/publication-config.json', import.meta.url), 'utf8'))
-const inputBundle = await openPublicationDatabaseInputs(inputRoot, inputConfig)
-const inputCapture = JSON.parse(await readInputConfig(inputConfig.captureReceiptPath))
-const inputBytes = new Map()
-for (const { logicalPath } of inputCapture.bindings.filter(row => row.logicalPath.startsWith('lore/')))
-  inputBytes.set(inputRoot + logicalPath, await inputBundle.inputs.readBytes(inputRoot + logicalPath))
-const readFileSync = (path, encoding) => {
-  const absolute = path instanceof URL ? path.pathname : path
-  if (!absolute.startsWith(inputRoot + 'lore/')) return readDiskFileSync(path, encoding)
-  if (!inputBytes.has(absolute)) throw Object.assign(new Error('missing source: ' + absolute), { code: 'ENOENT' })
-  const bytes = Buffer.from(inputBytes.get(absolute))
-  return encoding === 'utf8' ? bytes.toString() : bytes
-}
-closeInputFixture(() => inputBundle.close())
 import assert from 'node:assert/strict'
-import { createHash, webcrypto } from 'node:crypto'
-import { readFileSync as readDiskFileSync } from 'node:fs'
+import { createHash } from 'node:crypto'
+import { readFileSync } from 'node:fs'
 import { readFile } from 'node:fs/promises'
 import { createElement } from 'react'
 import { createRoot } from 'react-dom/client'
@@ -28,9 +10,6 @@ import { MemoryRouter } from 'react-router-dom'
 import { test, vi } from 'vitest'
 import CharacterDraftPage from '../src/pages/CharacterDraftPage.tsx'
 import { peopleCatalog } from '../src/generated/peopleCatalog.ts'
-import gurpsCast from '../vendor/issued-history/5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4.json'
-import { createDraftLegacyStore } from '../src/pages/characterDraftExport'
-import { LEGACY_REVISIONS } from '../src/data/original-trpg-options'
 
 import { emptyDraftProfile } from './character-profile-draft.mjs'
 
@@ -47,10 +26,9 @@ test('character draft route is public and stays distinct from issued person deta
   assert.doesNotMatch(page, /sheet-local|issue-person-ids|localStorage|sessionStorage/u)
 })
 
-test.each(LEGACY_REVISIONS)('default mounted page loads and exports actual generated $revision without injected store', async ({ revision }) => {
+test('default mounted page loads personal context and exports current profile', async () => {
   globalThis.IS_REACT_ACT_ENVIRONMENT = true
   const detail = JSON.parse(readFileSync(repo('public/person-details/person-1007.json'), 'utf8'))
-  const variant = detail.personSheet.variants.find(item => item.revision === revision)
   const requests = []
   vi.stubGlobal('fetch', async (input, init) => {
     requests.push({ url: String(input), method: init?.method ?? 'GET' })
@@ -68,10 +46,6 @@ test.each(LEGACY_REVISIONS)('default mounted page loads and exports actual gener
   try {
     await act(async () => root.render(createElement(MemoryRouter, { initialEntries: [`/people/draft?person=${detail.id}`] }, createElement(CharacterDraftPage))))
     const button = [...host.querySelectorAll('button')].find(item => item.textContent === '초안 내보내기')
-    assert.equal(button.disabled, true)
-    assert.equal(requests.length, 0)
-    const select = host.querySelector('select[aria-label="원본 개정"]')
-    await act(async () => { select.value = revision; select.dispatchEvent(new Event('change', { bubbles: true })) })
     assert.equal(button.disabled, false)
     assert.equal(host.querySelector('input[aria-label="생일"]').value, detail.birthDate)
     assert.equal(host.querySelector('input[aria-label="인물 단계"]').value, detail.stage)
@@ -83,9 +57,9 @@ test.each(LEGACY_REVISIONS)('default mounted page loads and exports actual gener
       reader.onerror = () => reject(reader.error)
       reader.readAsText(downloads[0])
     }))
-    assert.equal(exported.revision, revision)
-    assert.deepEqual(exported.legacy.person, variant.legacy.record)
-    assert.deepEqual(exported.legacy.projection, variant)
+    assert.equal(exported.personId, detail.id)
+    assert.equal(exported.personal.name, detail.name)
+    assert.equal(exported.profileSource.sourceRevision, null)
     assert.deepEqual(exported.characterProfile, emptyDraftProfile())
     assert.deepEqual(requests, [{ url: `${import.meta.env.BASE_URL}person-details/${detail.id}.json`, method: 'GET' }])
   } finally {
@@ -99,22 +73,12 @@ test.each(LEGACY_REVISIONS)('default mounted page loads and exports actual gener
 
 test('mounted draft export downloads the edit without canon writes or id issuance', async () => {
   globalThis.IS_REACT_ACT_ENVIRONMENT = true
-  vi.stubGlobal('crypto', webcrypto)
-  const seeded = gurpsCast.people.find((person) => {
-    const id = person.url?.split('/').at(-1)
-    return id && peopleCatalog.some((entry) => entry.id === id && entry.name === person.name)
-  })
-  assert.ok(seeded)
-  const personId = seeded.url.split('/').at(-1)
-  const catalogEntry = peopleCatalog.find((entry) => entry.id === personId)
-  const revision = LEGACY_REVISIONS[1].revision
-  const legacyStore = await createDraftLegacyStore(new Map([[revision, readFileSync(repo('vendor/issued-history/5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4.json'), 'utf8')]]))
+  const catalogEntry = peopleCatalog[0]
+  const personId = catalogEntry.id
   const canonPaths = [
-    'lore/name-pools/gurps-cast.json',
     'src/generated/peopleCatalog.ts',
     'src/pages/CharacterDraftPage.tsx',
     'src/pages/characterDraftExport.ts',
-    'lore/name-pools/issue-person-ids.mjs',
   ]
   const canonBefore = new Map(canonPaths.map((path) => {
     const bytes = readFileSync(repo(path))
@@ -168,15 +132,10 @@ test('mounted draft export downloads the edit without canon writes or id issuanc
   const root = createRoot(host)
   try {
     await act(async () => {
-      root.render(createElement(MemoryRouter, { initialEntries: [`/people/draft?person=${personId}`] }, createElement(CharacterDraftPage, { legacyStore })))
+      root.render(createElement(MemoryRouter, { initialEntries: [`/people/draft?person=${personId}`] }, createElement(CharacterDraftPage)))
     })
     const exportButton = [...host.querySelectorAll('button')].find((button) => button.textContent === '초안 내보내기')
-    assert.equal(exportButton.disabled, true)
-    const revisionSelect = host.querySelector('select[aria-label="원본 개정"]')
-    await act(async () => {
-      revisionSelect.value = revision
-      revisionSelect.dispatchEvent(new Event('change', { bubbles: true }))
-    })
+    assert.equal(exportButton.disabled, false)
     const name = host.querySelector('input[placeholder="이름 입력"]')
     assert.equal(name.value, catalogEntry.name)
     const valueSetter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set
@@ -213,8 +172,6 @@ test('mounted draft export downloads the edit without canon writes or id issuanc
     }))
     assert.equal(exported.personId, personId)
     assert.equal(exported.personal.name, '초안 수정 이름')
-    assert.deepEqual(exported.legacy.person, seeded)
-    assert.equal(exported.revision, revision)
     assert.equal(exported.rulesVersion, 'seoul-character-system-contract.v1')
     assert.deepEqual(exported.characterProfile.abilities.prowess, { base: 20, effective: 100 })
     assert.deepEqual(exported.characterProfile.abilities.leadership, { base: null, effective: null })
@@ -233,14 +190,14 @@ test('mounted draft export downloads the edit without canon writes or id issuanc
       assert.deepEqual([...bytes], [...before.bytes])
     }
     await act(async () => {
-      revisionSelect.value = LEGACY_REVISIONS[0].revision
-      revisionSelect.dispatchEvent(new Event('change', { bubbles: true }))
+      const personSelect = host.querySelector('select[aria-label="기존 인물"]')
+      personSelect.value = ''
+      personSelect.dispatchEvent(new Event('change', { bubbles: true }))
     })
-    assert.equal(exportButton.disabled, true)
-    assert.ok(host.querySelector('[role="alert"]').textContent.includes('E_VERSION_STORE_BINDING'))
-    assert.equal(host.querySelector('details'), null)
+    assert.equal(exportButton.disabled, false)
+    assert.equal(name.value, '')
     await act(async () => exportButton.click())
-    assert.equal(downloads.length, 1)
+    assert.equal(downloads.length, 2)
   } finally {
     await act(async () => root.unmount())
     host.remove()

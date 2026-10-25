@@ -47,29 +47,8 @@ for (const [id, actorId, name, birthDate, path, pointer] of ancestors) {
     }
   })
 
-  test(`${id}: generated detail renders the surviving descendant allocation`, async () => {
-    const { createElement } = await import('react')
-    const { renderToStaticMarkup } = await import('react-dom/server')
-    const { GurpsSheet, selectPreservedSheet } = await import('../src/pages/PersonDetailPage.tsx')
-    const sheet = find(doc, id)
-    const routeId = sheet.url.split('/').pop()
-    const detail = JSON.parse(readFileSync(new URL('../public/person-details/' + routeId + '.json', import.meta.url), 'utf8'))
-    const selected = selectPreservedSheet(detail.personSheet, { id, personId: routeId, name: sheet.name, state: sheet.state }, REVISION)
-    assert.equal(selected.ok, true)
-    const { assertPublicSheetRecord } = await import('./public-sheet-test-expectation.mjs')
-    assertPublicSheetRecord(selected.record, sheet)
-    assert.deepEqual(selected.sheet.cp, sheet.cp)
-    const html = renderToStaticMarkup(createElement(GurpsSheet, { gurps: selected.sheet }))
-    const administration = selected.sheet.skills.find((skill) => skill.name === 'Administration')
-    assert.ok(administration)
-    const label = renderToStaticMarkup(createElement('span', { className: 'skill-name' }, administration.ko || administration.name))
-    assert.ok(html.includes(label))
-    if (id === 'K320') {
-      assert.ok(!selected.sheet.skills.some((skill) => skill.name === 'Leadership'))
-      const leadershipLabel = renderToStaticMarkup(createElement('span', { className: 'skill-name' }, '지휘'))
-      assert.ok(!html.includes(leadershipLabel))
-    }
-  })
+  // Retired: public descendant CP/skill rendering. Public historical sheets no
+  // longer exist; the sealed descendant allocation and citation guards above and below remain active.
 
   for (const receiver of [id, 'K082']) for (const field of ['ability', 'skill']) {
     test(`${id} ancestor citation is rejected in ${receiver} ${field} by actor identity`, () => {

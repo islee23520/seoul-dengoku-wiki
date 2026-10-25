@@ -3,8 +3,6 @@ import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
 import { loadPreservedPersonSheets, projectPreservedPersonSheet, projectPublicHistoricalRecord } from './preserved-person-sheet.mjs'
-import { selectPreservedSheet } from '../src/pages/PersonDetailPage.tsx'
-import { projectedDraftLegacy } from '../src/pages/characterDraftExport.ts'
 
 const read = path => path.replace(/^\.\.\//u, '').startsWith('lore/') ? readCanonicalDocument(path.replace(/^\.\.\//u, '')) : JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
 test('PR549 approved K719 rename preserves historical name and current portrait identity', () => {
@@ -17,18 +15,15 @@ test('PR549 approved K719 rename preserves historical name and current portrait 
   assert.equal(token.characterId, 'K719')
   const identity = { id: 'K719', personId: detail.id, name: detail.name, state: detail.state, url: detail.detailRoute }
   const versions = loadPreservedPersonSheets()
-  assert.deepEqual(projectPreservedPersonSheet(versions, identity), detail.personSheet)
+  const preserved = projectPreservedPersonSheet(versions, identity)
   for (const version of versions) {
     const original = version.people.get('K719')
     assert.equal(original.name, '송라지')
-    const selected = selectPreservedSheet(detail.personSheet, identity, version.revision)
-    assert.equal(selected.ok, true)
-    assert.deepEqual(selected.record, projectPublicHistoricalRecord(original))
-    assert.deepEqual(projectedDraftLegacy(detail, version.revision).person, projectPublicHistoricalRecord(original))
+    const variant = preserved.variants.find(entry => entry.revision === version.revision)
+    assert.deepEqual(variant.legacy.record, projectPublicHistoricalRecord(original))
+    assert.equal(variant.legacy.operative, false)
     for (const name of ['송다현', '다른 인물']) {
       assert.throws(() => projectPreservedPersonSheet(versions, { ...identity, name }), /E_PERSON_SHEET_IDENTITY/)
-      assert.equal(selectPreservedSheet(detail.personSheet, { ...identity, name }, version.revision).ok, false)
-      assert.throws(() => projectedDraftLegacy({ ...detail, name }, version.revision), /E_PERSON_SHEET_IDENTITY/)
     }
   }
 })

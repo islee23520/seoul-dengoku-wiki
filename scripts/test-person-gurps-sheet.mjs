@@ -1,164 +1,96 @@
-import { loadSheetMetadata } from './cast-sqlite/sheet-metadata.mjs'
-import { preservedSheetSources } from './preserved-person-sheet.mjs'
 import assert from 'node:assert/strict'
-import { readFileSync } from 'node:fs'
-import { join } from 'node:path'
-import { URL } from 'node:url'
-import { createHash } from 'node:crypto'
 import { test } from 'vitest'
 import { JSDOM } from 'jsdom'
-import React, { act } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
-import { GurpsSheet, parseGurpsSheet, PreservedPersonSheet, selectPreservedSheet } from '../src/pages/PersonDetailPage.tsx'
-import { build, REVISIONS, numericFields } from './gurps-cast.mjs'
-import { loadPreservedPersonSheets, projectPreservedPersonSheet, projectPublicHistoricalRecord } from './preserved-person-sheet.mjs'
+import { CharacterProfile } from '../src/pages/PersonDetailPage.tsx'
+import { abilityIds } from './character-profile.mjs'
 
-const roots = preservedSheetSources
-const versions = loadPreservedPersonSheets(roots)
-const baseline = loadSheetMetadata().baseline
-const source = new Map(REVISIONS.map(revision => {
-  const bytes = readFileSync(roots[revision].ledgerPath)
-  assert.equal(createHash('sha256').update(bytes).digest('hex'), baseline.revisions[revision].ledgerSha256)
-  return [revision, JSON.parse(bytes).people]
-}))
-const identity = record => ({ id: record.id, name: record.name, state: record.state, personId: record.url.split('/').pop(), url: record.url })
-const sheetFor = record => projectPreservedPersonSheet(versions, identity(record))
-const parse = record => {
-  const result = parseGurpsSheet(record, identity(record).personId)
-  assert.ok(result.ok, JSON.stringify(result))
-  return result.sheet
-}
-const markup = sheet => renderToStaticMarkup(React.createElement(GurpsSheet, { gurps: sheet }))
-const dom = html => new JSDOM(html).window.document.body
-
-test('explicit source bindings reject omission, aliases, missing variants and swapped sealed ledgers', () => {
-  assert.throws(() => build(), /E_EXPLICIT_REVISION/)
-  for (const input of [null, {}, { latest: roots[REVISIONS[0]] }, { [REVISIONS[0]]: roots[REVISIONS[0]] }])
-    assert.throws(() => loadPreservedPersonSheets(input), /E_PERSON_SHEET_BINDING/)
-  assert.throws(() => loadPreservedPersonSheets({ [REVISIONS[0]]: roots[REVISIONS[1]], [REVISIONS[1]]: roots[REVISIONS[0]] }), /E_SOURCE_HASH/)
+const text = (ko) => ({ ko, en: ko })
+const fixture = () => ({
+  abilities: Object.fromEntries(abilityIds.map((id, index) => [id, { base: index + 1, effective: index + 11 }])),
+  skills: [{ id: 'repair', name: text('정비'), rating: 0 }, { id: 'escort', name: text('호위'), rating: 99.9 }],
+  traits: [{ id: 'watchful', name: text('경계'), description: text('출입을 확인한다.'), behavior: text('기록을 대조한다.'), stress: text('중복 확인한다.'), relationship: text('연락을 유지한다.'), effects: [{ ability: 'insight', delta: 10 }] }],
+  narrative: text('출입과 연락을 담당한다.'),
+  health: { status: 'assessed', bodyParts: ['left-arm', 'right-arm', 'left-leg', 'right-leg', 'head', 'torso'].map((id, index) => ({ id, severity: index === 0 ? 'minor' : null, function: index === 0 ? 'limited' : null })), diseases: [{ id: 'condition-1', progression: 'stable' }, { id: 'condition-2', progression: null }] },
 })
+const render = (profile) => new JSDOM(renderToStaticMarkup(createElement(CharacterProfile, { profile })))
 
-for (const revision of REVISIONS) {
-  test(revision + ': actual generated catalog preserves every immutable person field and number', () => {
-    const expected = source.get(revision)
-    const produced = build(roots[revision].root, revision, roots[revision].ledgerPath).doc.people
-    assert.deepEqual(produced, expected)
-    const actual = expected.map(record => {
-      const historicalIdentity = identity(record)
-      const ident = { ...historicalIdentity }
-      const detail = JSON.parse(readFileSync(new URL('../public/person-details/' + ident.personId + '.json', import.meta.url), 'utf8'))
-      assert.deepEqual(detail.gurps, { id: record.id, personId: ident.personId })
-      assert.equal(detail.id, ident.personId)
-      assert.equal(detail.characterId, ident.id)
-      if (record.id === 'K719') assert.equal(detail.name, '송도현')
-      else assert.equal(detail.name, ident.name)
-      ident.name = detail.name
-      ident.state = detail.state
-      const selected = selectPreservedSheet(detail.personSheet, ident, revision)
-      assert.ok(selected.ok, record.id + ':' + JSON.stringify(selected))
-      assert.deepEqual(selected.record, projectPublicHistoricalRecord(record))
-      assert.deepEqual(selected.sheet.secondary, record.secondary)
-      assert.deepEqual(selected.sheet.cp, record.cp)
-      return selected.record
-    })
-    assert.equal(actual.length, 1022)
-    assert.deepEqual(numericFields(actual), numericFields(expected.map(projectPublicHistoricalRecord)))
-    assert.equal(numericFields(produced).length, baseline.revisions[revision].numericFieldCount)
-  })
-}
-
-test('projection snapshots input and guards K ID, name, state and stable route independently', () => {
-  const record = source.get(REVISIONS[0]).find(p => p.id === 'K088')
-  const ident = identity(record)
-  assert.equal(ident.personId, 'person-0089')
-  for (const mutant of [{ id: 'K089' }, { name: 'wrong' }, { url: '/people/person-0088' }, { personId: 'person-0088' }])
-    assert.throws(() => projectPreservedPersonSheet(versions, { ...ident, ...mutant }), /E_PERSON_SHEET_(IDENTITY|ROUTE)/)
-  const projected = sheetFor(record)
-  projected.variants[0].legacy.record.secondary.BasicMove = -100
-  assert.deepEqual(sheetFor(record).variants[0].legacy.record, projectPublicHistoricalRecord(record))
-  assert.deepEqual(versions[0].people.get(record.id), record)
-})
-
-test('public projection excludes source-only fields for every person without mutating sealed originals', () => {
-  for (const version of versions) {
-    const originalBytes = readFileSync(roots[version.revision].ledgerPath)
-    const before = structuredClone([...version.people.values()])
-    assert.equal(before.length, 1022)
-    for (const record of before) {
-      const projected = sheetFor(record).variants.find(row => row.revision === version.revision).legacy.record
-      assert.deepEqual(projected, projectPublicHistoricalRecord(record))
-      for (const field of ['unit', 'territory', 'wandering_force', 'evidence']) assert.equal(Object.hasOwn(projected, field), false)
-      assert.deepEqual(parse(projected), parse(record))
-    }
-    assert.deepEqual([...version.people.values()], before)
-    assert.deepEqual(readFileSync(roots[version.revision].ledgerPath), originalBytes)
-    assert.deepEqual(before, source.get(version.revision))
-  }
-})
-
-test('runtime selector rejects wrong identities, ambiguous revisions and operative adoption', () => {
-  const record = source.get(REVISIONS[0]).find(p => p.id === 'K088')
-  const ident = identity(record)
-  for (const revision of ['', 'latest', 'unknown']) assert.equal(selectPreservedSheet(sheetFor(record), ident, revision).ok, false)
-  for (const change of [
-    p => { p.variants.pop() }, p => { p.variants[1] = p.variants[0] },
-    p => { p.variants[0].ledgerSha256 = '0'.repeat(64) },
-    p => { p.variants[0].legacy.operative = true },
-    p => { p.variants[0].rules.originalRatings = { ST: 11 } },
-    p => { p.variants[0].rules.numericAdoption = true },
-    p => { p.variants[0].rules.sourceRevision = REVISIONS[1] },
-    ...['id', 'name', 'state', 'url', 'personId'].map(key => p => { p.variants[0].legacy.record[key] = 'wrong' }),
-  ]) {
-    const payload = sheetFor(record)
-    change(payload)
-    assert.equal(selectPreservedSheet(payload, ident, REVISIONS[1]).ok, false)
-  }
-})
-
-test('readable summary renders issued secondary and CP values without recalculation', () => {
-  const record = source.get(REVISIONS[1]).find(p => p.id === 'K1003')
-  const changed = { ...record, secondary: { ...record.secondary, BasicSpeed: 4.25, Dodge: 8, BasicMove: 3, BasicLift: 17.2 }, cp: { ...record.cp, spent: 219 } }
-  const host = dom(markup(parse(changed)))
-  for (const [key, value] of Object.entries(changed.secondary))
-    assert.equal(host.querySelector('[data-legacy-field="secondary.' + key + '"] span:nth-child(2)').textContent, String(value))
-  assert.equal(host.querySelector('[data-legacy-field="cp.spent"] span:nth-child(2)').textContent, '219 CP')
-  assert.equal(parseGurpsSheet({ ...record, traits: {} }, identity(record).personId).ok, false)
-  assert.equal(parseGurpsSheet({ ...record, personId: 'wrong' }, identity(record).personId).ok, false)
-  assert.equal(parseGurpsSheet(null, identity(record).personId).ok, false)
-  const sparse = parse({ url: record.url, attributes: {}, traits: [], skills: [], cp: {}, secondary: {} })
-  assert.deepEqual(sparse.secondary, {})
-  assert.deepEqual(sparse.cp, {})
-})
-
-test('mounted person selector shows preserved stats immediately and keeps both complete revisions without assigning ratings', async () => {
-  const browser = new JSDOM('<!doctype html><html><body></body></html>')
-  const previousWindow = globalThis.window, previousDocument = globalThis.document
-  globalThis.window = browser.window
-  globalThis.document = browser.window.document
-  globalThis.IS_REACT_ACT_ENVIRONMENT = true
-  const record = source.get(REVISIONS[0]).find(p => p.id === 'K1008')
-  const ident = identity(record), payload = sheetFor(record)
-  const host = document.createElement('div'), reactRoot = createRoot(host)
+test('current profile renders every base and effective ability without recalculation', () => {
+  const profile = fixture()
+  profile.abilities.leadership = { base: 0, effective: 100 }
+  profile.abilities.endurance = { base: 20, effective: 0 }
+  const before = structuredClone(profile)
+  const dom = render(profile)
   try {
-    await act(async () => { reactRoot.render(React.createElement(PreservedPersonSheet, { payload, identity: ident })) })
-    const select = host.querySelector('select')
-    assert.equal(select.value, REVISIONS.at(-1))
-    assert.equal(host.querySelector('[data-selected-revision]').dataset.selectedRevision, REVISIONS.at(-1))
-    assert.ok(host.querySelector('.gurps-sheet'))
-    assert.deepEqual([...select.options].map(option => option.value), REVISIONS)
-    for (const revision of REVISIONS) {
-      await act(async () => { select.value = revision; select.dispatchEvent(new browser.window.Event('change', { bubbles: true })) })
-      assert.equal(host.querySelector('[data-selected-revision]').dataset.selectedRevision, revision)
-      assert.equal(host.querySelector('[data-legacy-operative]').dataset.legacyOperative, 'false')
-      assert.deepEqual(JSON.parse(host.querySelector('[data-legacy-record] pre').textContent), projectPublicHistoricalRecord(source.get(revision).find(p => p.id === record.id)))
-      assert.equal(host.querySelector('[data-original-ratings]').dataset.originalRatings, 'historical')
-      assert.equal(host.querySelector('input'), null)
+    const panel = dom.window.document.querySelector('[data-character-profile]')
+    assert.ok(panel)
+    const rows = [...panel.querySelector('table').tBodies[0].rows]
+    assert.equal(rows.length, abilityIds.length)
+    assert.ok(rows.every((row) => row.querySelector('th[scope="row"]')))
+    assert.deepEqual(rows.map((row) => [...row.querySelectorAll('td')].map((cell) => Number(cell.textContent))), abilityIds.map((id) => [profile.abilities[id].base, profile.abilities[id].effective]))
+    assert.deepEqual(profile, before)
+  } finally { dom.window.close() }
+})
+
+test('current profile preserves skill endpoints, trait details and signed effects', () => {
+  const profile = fixture()
+  profile.traits[0].effects.push({ ability: 'endurance', delta: -2 })
+  profile.traits.push({ ...profile.traits[0], id: 'steady', name: text('침착'), effects: [] })
+  const dom = render(profile)
+  try {
+    const panel = dom.window.document.querySelector('[data-character-profile]')
+    assert.equal(panel.querySelector(':scope > p').textContent, profile.narrative.ko)
+    const skills = panel.querySelectorAll('table')[1]
+    assert.deepEqual([...skills.tBodies[0].rows].map((row) => [row.querySelector('th').textContent, row.querySelector('td').textContent]), profile.skills.map((skill) => [skill.name.ko, skill.rating.toFixed(1)]))
+    const traits = [...panel.querySelectorAll(':scope > section')]
+    assert.equal(traits.length, profile.traits.length)
+    for (const [index, trait] of profile.traits.entries()) {
+      assert.equal(traits[index].querySelector('h4').textContent, trait.name.ko)
+      assert.equal(traits[index].querySelector('p').textContent, trait.description.ko)
+      assert.deepEqual([...traits[index].querySelectorAll('dd')].map((node) => node.textContent), [trait.behavior.ko, trait.stress.ko, trait.relationship.ko])
+      assert.equal(traits[index].querySelectorAll('p').length, trait.effects.length ? 2 : 1)
     }
-  } finally {
-    await act(async () => reactRoot.unmount())
-    globalThis.window = previousWindow
-    globalThis.document = previousDocument
-    browser.window.close()
-  }
+    const effects = traits[0].querySelector('p:last-child').textContent
+    assert.deepEqual(effects.match(/[+-]\d+/gu), ['+10', '-2'])
+  } finally { dom.window.close() }
+})
+
+test('current profile keeps assessed and unknown body states distinct and renders disease progressions', () => {
+  const profile = fixture()
+  const dom = render(profile)
+  try {
+    const health = dom.window.document.querySelector('[data-character-profile] details')
+    assert.equal(health.querySelector('p').textContent, profile.health.status)
+    const rows = [...health.querySelector('table').tBodies[0].rows]
+    assert.equal(rows.length, profile.health.bodyParts.length)
+    assert.deepEqual([...rows[0].querySelectorAll('td')].map((cell) => cell.textContent), [profile.health.bodyParts[0].severity, profile.health.bodyParts[0].function])
+    const unknown = [...rows[1].querySelectorAll('td')].map((cell) => cell.textContent)
+    assert.ok(unknown.every((value) => value.length > 0 && value !== '0'))
+    for (const row of rows.slice(1)) assert.deepEqual([...row.querySelectorAll('td')].map((cell) => cell.textContent), unknown)
+    const diseases = [...health.querySelectorAll('li')]
+    assert.equal(diseases.length, profile.health.diseases.length)
+    for (const [index, disease] of profile.health.diseases.entries()) {
+      assert.ok(diseases[index].textContent.includes(disease.id))
+      if (disease.progression) assert.ok(diseases[index].textContent.includes(disease.progression))
+      else assert.ok(diseases[index].textContent.endsWith(unknown[0]))
+    }
+  } finally { dom.window.close() }
+})
+
+test('empty skill and trait records keep abilities and body records available', () => {
+  const profile = fixture()
+  profile.skills = []
+  profile.traits = []
+  profile.health.status = 'unassessed'
+  profile.health.diseases = []
+  const dom = render(profile)
+  try {
+    const panel = dom.window.document.querySelector('[data-character-profile]')
+    assert.equal(panel.querySelectorAll('table').length, 2)
+    assert.equal(panel.querySelector('table').tBodies[0].rows.length, abilityIds.length)
+    assert.equal(panel.querySelector('details table').tBodies[0].rows.length, profile.health.bodyParts.length)
+    assert.equal(panel.querySelectorAll(':scope > section').length, 0)
+    assert.equal(panel.querySelector('details li'), null)
+  } finally { dom.window.close() }
 })
