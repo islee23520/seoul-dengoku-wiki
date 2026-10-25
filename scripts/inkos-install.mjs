@@ -17,6 +17,7 @@ function run(command, args, cwd) {
 
 run('git', ['submodule', 'update', '--init', '--', 'vendor/seoul-dengoku-inkos'], root)
 // Use npm's JS entry point on Windows too, without a shell or a global pnpm dependency.
-for (const args of [['install', '--frozen-lockfile'], ['build']]) {
+// Keep the fork's locked Node types visible before TypeScript reaches the wiki's newer types.
+for (const args of [['install', '--frozen-lockfile', '--public-hoist-pattern=@types/node'], ['build']]) {
   run(process.execPath, [process.env.npm_execpath, 'exec', '--yes', '--package=pnpm@10', '--', 'pnpm', ...args], fork)
 }
