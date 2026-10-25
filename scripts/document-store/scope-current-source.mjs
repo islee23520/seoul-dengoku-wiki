@@ -1,4 +1,5 @@
 import { readEvidenceDocumentReference } from '../cast-sqlite/evidence-document-reference.mjs';
+import { readReferenceSuccessor } from './reference-successor-reader.mjs';
 import { orderDocumentKeys } from '../cast-sqlite/document-key-order.mjs';
 import { readPersonMappingCurrentSource } from './person-mapping-current-source.mjs';
 import { readScopeContract, SCOPE_CONTRACT_SOURCE_SHA256 } from '../cast-sqlite/scope-contract-store.mjs';
@@ -233,6 +234,8 @@ export function readScopeCurrentSource({ db, logicalPath, expectedSha256, editor
   if (documents.length > 1) throw new Error('E_SCOPE_DB_SOURCE_DUPLICATE');
   if (documents.length === 1) {
     if (documents[0].sha256 !== expectedSha256) throw new Error('E_SCOPE_DB_SOURCE_HASH');
+    const successor = readReferenceSuccessor(db, { logicalPath, expectedSha256 });
+    if (successor !== null) return successor;
     const reference = readEvidenceDocumentReference(db, { logicalPath, expectedSha256 });
     return orderDocumentKeys(db, reference.sourceId, reference.document);
   }
