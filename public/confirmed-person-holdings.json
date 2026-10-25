@@ -460,168 +460,6 @@
       "formalTitleRank": null
     },
     {
-      "id": "holding:daejeon-dong",
-      "kind": "superior-jurisdiction",
-      "name": {
-        "ko": "강남구 상위 관할권"
-      },
-      "holderPersonId": "K1008",
-      "stateId": "polity:daejeon",
-      "directLiegePersonId": null,
-      "liegeRelationshipKind": "preserved-personal-service",
-      "titleId": "proposal:superior-jurisdiction:seoul:daejeon-dong",
-      "geographicScope": {
-        "duchyTitleId": "geography:duchy:11680",
-        "guRef": "11680",
-        "countyTitleIds": [
-          "geography:county:2de88369e480a7de",
-          "geography:county:588ef0f6ec944722",
-          "geography:county:98f9d95a2f5dd32e"
-        ],
-        "geographicKingdomId": "proposal:kingdom:seoul:06",
-        "geographicEmpireId": "geography:empire:seoul"
-      },
-      "territorialScale": "duchy",
-      "formalTitleRank": null,
-      "adminRefs": [],
-      "geometrySource": null,
-      "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
-      "directOwnership": false,
-      "powers": [
-        "receive-holding-change-notice",
-        "lodge-nonbinding-registry-objection"
-      ]
-    },
-    {
-      "id": "holding:daejeon-yuseong",
-      "kind": "superior-jurisdiction",
-      "name": {
-        "ko": "서초구 상위 관할권"
-      },
-      "holderPersonId": "K1008",
-      "stateId": "polity:daejeon",
-      "directLiegePersonId": null,
-      "liegeRelationshipKind": "preserved-personal-service",
-      "titleId": "proposal:superior-jurisdiction:seoul:daejeon-yuseong",
-      "geographicScope": {
-        "duchyTitleId": "geography:duchy:11650",
-        "guRef": "11650",
-        "countyTitleIds": [
-          "geography:county:39d747567d6e88c2",
-          "geography:county:be4c7c455504f6de"
-        ],
-        "geographicKingdomId": "proposal:kingdom:seoul:06",
-        "geographicEmpireId": "geography:empire:seoul"
-      },
-      "territorialScale": "duchy",
-      "formalTitleRank": null,
-      "adminRefs": [],
-      "geometrySource": null,
-      "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
-      "directOwnership": false,
-      "powers": [
-        "receive-holding-change-notice",
-        "lodge-nonbinding-registry-objection"
-      ]
-    },
-    {
-      "id": "holding:daejeon-jung",
-      "kind": "superior-jurisdiction",
-      "name": {
-        "ko": "광진구 상위 관할권"
-      },
-      "holderPersonId": "K035",
-      "stateId": "polity:daejeon",
-      "directLiegePersonId": "K1008",
-      "liegeRelationshipKind": "preserved-personal-service",
-      "titleId": "proposal:superior-jurisdiction:seoul:daejeon-jung",
-      "geographicScope": {
-        "duchyTitleId": "geography:duchy:11215",
-        "guRef": "11215",
-        "countyTitleIds": [
-          "geography:county:0b79048ae2439ad6",
-          "geography:county:f168b1729d8ebb4a"
-        ],
-        "geographicKingdomId": "proposal:kingdom:seoul:06",
-        "geographicEmpireId": "geography:empire:seoul"
-      },
-      "territorialScale": "duchy",
-      "formalTitleRank": null,
-      "adminRefs": [],
-      "geometrySource": null,
-      "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
-      "directOwnership": false,
-      "powers": [
-        "receive-holding-change-notice",
-        "lodge-nonbinding-registry-objection"
-      ]
-    },
-    {
-      "id": "holding:daejeon-seo",
-      "kind": "superior-jurisdiction",
-      "name": {
-        "ko": "송파구 상위 관할권"
-      },
-      "holderPersonId": "K039",
-      "stateId": "polity:daejeon",
-      "directLiegePersonId": "K1008",
-      "liegeRelationshipKind": "preserved-personal-service",
-      "titleId": "proposal:superior-jurisdiction:seoul:daejeon-seo",
-      "geographicScope": {
-        "duchyTitleId": "geography:duchy:11710",
-        "guRef": "11710",
-        "countyTitleIds": [
-          "geography:county:51da9424e343abe6",
-          "geography:county:54fbc8d12568ed3a",
-          "geography:county:0cbcc7ce0af90476"
-        ],
-        "geographicKingdomId": "proposal:kingdom:seoul:06",
-        "geographicEmpireId": "geography:empire:seoul"
-      },
-      "territorialScale": "duchy",
-      "formalTitleRank": null,
-      "adminRefs": [],
-      "geometrySource": null,
-      "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
-      "directOwnership": false,
-      "powers": [
-        "receive-holding-change-notice",
-        "lodge-nonbinding-registry-objection"
-      ]
-    },
-    {
-      "id": "holding:daejeon-daedeok",
-      "kind": "superior-jurisdiction",
-      "name": {
-        "ko": "강동구 상위 관할권"
-      },
-      "holderPersonId": "K038",
-      "stateId": "polity:daejeon",
-      "directLiegePersonId": "K1008",
-      "liegeRelationshipKind": "preserved-personal-service",
-      "titleId": "proposal:superior-jurisdiction:seoul:daejeon-daedeok",
-      "geographicScope": {
-        "duchyTitleId": "geography:duchy:11740",
-        "guRef": "11740",
-        "countyTitleIds": [
-          "geography:county:66ce0170c095c75c",
-          "geography:county:e8196b72d07c4adc"
-        ],
-        "geographicKingdomId": "proposal:kingdom:seoul:06",
-        "geographicEmpireId": "geography:empire:seoul"
-      },
-      "territorialScale": "duchy",
-      "formalTitleRank": null,
-      "adminRefs": [],
-      "geometrySource": null,
-      "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
-      "directOwnership": false,
-      "powers": [
-        "receive-holding-change-notice",
-        "lodge-nonbinding-registry-objection"
-      ]
-    },
-    {
       "id": "holding:opening-duchy-gu-11110-S06",
       "name": {
         "ko": "종로구 공작령 직영지"
@@ -2722,26 +2560,7 @@
       "formalTitleRank": "duchy"
     }
   ],
-  "polities": [
-    {
-      "id": "polity:daejeon",
-      "name": {
-        "ko": "대전",
-        "en": "Daejeon"
-      },
-      "sovereignPersonId": "K1008",
-      "territorialScale": null,
-      "formalTitle": "대전선",
-      "formalTitleRank": "왕격",
-      "office": "대전 군주",
-      "authority": {
-        "kind": "neutral",
-        "name": "대전"
-      },
-      "directOwnership": false,
-      "politicalTitleId": "title:kingdom-daejeon"
-    }
-  ],
+  "polities": [],
   "retinueGroups": [
     {
       "id": "retinue:K1008:humanoids",
@@ -3547,88 +3366,6 @@
       ]
     },
     {
-      "id": "proposal:superior-jurisdiction:seoul:daejeon-dong",
-      "name": "강남구 상위 관할",
-      "rank": "duchy",
-      "holderPersonId": "K1008",
-      "stateId": "polity:daejeon",
-      "geographicTitleId": "geography:duchy:11680",
-      "geographicParentTitleId": "proposal:kingdom:seoul:06",
-      "politicalParentTitleId": "title:kingdom-daejeon",
-      "personalLiegePersonId": null,
-      "kind": "superior-jurisdiction",
-      "directOwnership": false,
-      "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD"
-    },
-    {
-      "id": "proposal:superior-jurisdiction:seoul:daejeon-jung",
-      "name": "광진구 상위 관할",
-      "rank": "duchy",
-      "holderPersonId": "K035",
-      "stateId": "polity:daejeon",
-      "geographicTitleId": "geography:duchy:11215",
-      "geographicParentTitleId": "proposal:kingdom:seoul:06",
-      "politicalParentTitleId": "title:kingdom-daejeon",
-      "personalLiegePersonId": "K1008",
-      "kind": "superior-jurisdiction",
-      "directOwnership": false,
-      "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD"
-    },
-    {
-      "id": "proposal:superior-jurisdiction:seoul:daejeon-seo",
-      "name": "송파구 상위 관할",
-      "rank": "duchy",
-      "holderPersonId": "K039",
-      "stateId": "polity:daejeon",
-      "geographicTitleId": "geography:duchy:11710",
-      "geographicParentTitleId": "proposal:kingdom:seoul:06",
-      "politicalParentTitleId": "title:kingdom-daejeon",
-      "personalLiegePersonId": "K1008",
-      "kind": "superior-jurisdiction",
-      "directOwnership": false,
-      "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD"
-    },
-    {
-      "id": "proposal:superior-jurisdiction:seoul:daejeon-yuseong",
-      "name": "서초구 상위 관할",
-      "rank": "duchy",
-      "holderPersonId": "K1008",
-      "stateId": "polity:daejeon",
-      "geographicTitleId": "geography:duchy:11650",
-      "geographicParentTitleId": "proposal:kingdom:seoul:06",
-      "politicalParentTitleId": "title:kingdom-daejeon",
-      "personalLiegePersonId": null,
-      "kind": "superior-jurisdiction",
-      "directOwnership": false,
-      "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD"
-    },
-    {
-      "id": "proposal:superior-jurisdiction:seoul:daejeon-daedeok",
-      "name": "강동구 상위 관할",
-      "rank": "duchy",
-      "holderPersonId": "K038",
-      "stateId": "polity:daejeon",
-      "geographicTitleId": "geography:duchy:11740",
-      "geographicParentTitleId": "proposal:kingdom:seoul:06",
-      "politicalParentTitleId": "title:kingdom-daejeon",
-      "personalLiegePersonId": "K1008",
-      "kind": "superior-jurisdiction",
-      "directOwnership": false,
-      "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD"
-    },
-    {
-      "id": "title:kingdom-daejeon",
-      "name": "대전선",
-      "rank": "kingdom",
-      "holderPersonId": "K1008",
-      "stateId": "polity:daejeon",
-      "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD",
-      "kind": "nonterritorial-political-title",
-      "directOwnership": false,
-      "politicalParentTitleId": null,
-      "personalLiegePersonId": null
-    },
-    {
       "id": "title:kingdom-s02",
       "name": "규격맹 왕국",
       "rank": "kingdom",
@@ -4084,6 +3821,60 @@
         "region:1174070000"
       ],
       "basis": "개막 왕국 루트 결정(2026-10-11 사용자 승인)"
+    },
+    {
+      "id": "title:kingdom-geography:seoul:01",
+      "name": "중앙 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K144",
+      "stateId": "S06",
+      "geographicTitleId": "geography:kingdom:seoul:01",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 대한민국정부 대통령. 청와대·광화문 중심의 강북 권역과 종로 공작령 보유 근거."
+    },
+    {
+      "id": "title:kingdom-geography:seoul:02",
+      "name": "북동 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K296",
+      "stateId": "S12",
+      "geographicTitleId": "geography:kingdom:seoul:02",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 신내운수 사장. 북동 왕국 안 유일한 국가 수도 신내역(노원) 직영지 보유 근거."
+    },
+    {
+      "id": "title:kingdom-geography:seoul:03",
+      "name": "북서 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K245",
+      "stateId": "S10",
+      "geographicTitleId": "geography:kingdom:seoul:03",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 안국총림 방장. 북서 왕국 세 자치구 가운데 은평·서대문 공작령 보유 근거."
+    },
+    {
+      "id": "title:kingdom-geography:seoul:04",
+      "name": "서부 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K001",
+      "stateId": "S01",
+      "geographicTitleId": "geography:kingdom:seoul:04",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 수문국 군주. 서부 왕국 세 자치구 가운데 영등포·양천 공작령 보유 근거."
+    },
+    {
+      "id": "title:kingdom-geography:seoul:05",
+      "name": "남서 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K029",
+      "stateId": "S02",
+      "geographicTitleId": "geography:kingdom:seoul:05",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 규격맹 위원장. 남서 왕국 네 자치구 전체에 걸친 규격맹 공작령과 왕국 s02 보유 근거."
+    },
+    {
+      "id": "title:kingdom-geography:seoul:06",
+      "name": "동남 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K423",
+      "stateId": "S04",
+      "geographicTitleId": "geography:kingdom:seoul:06",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 종교 연합 왕. 강남 공작령과 왕국 s04 보유, 종교 연합의 강남 중심 권역 근거."
     }
   ],
   "politicalIdentities": [
@@ -6409,11 +6200,11 @@
     }
   ],
   "summary": {
-    "existingHoldings": 25,
+    "existingHoldings": 20,
     "newGrants": 30,
-    "holdings": 55,
+    "holdings": 50,
     "titles": 41,
-    "existingTitleBindings": 7,
+    "existingTitleBindings": 2,
     "heldSeoulRegions": 424,
     "heldOutsideUnits": 0,
     "heldComponents": 0,

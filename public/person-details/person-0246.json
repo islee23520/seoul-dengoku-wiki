@@ -688,6 +688,18 @@
       "formalTitleRank": null
     }
   ],
+  "openingTitles": [
+    {
+      "id": "title:kingdom-geography:seoul:03",
+      "name": "북서 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K245",
+      "stateId": "S10",
+      "geographicTitleId": "geography:kingdom:seoul:03",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 안국총림 방장. 북서 왕국 세 자치구 가운데 은평·서대문 공작령 보유 근거.",
+      "parentTitle": null
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,
