@@ -11,6 +11,7 @@ export default defineConfig({
     exclude: [
       'node_modules/**',
       'dist/**',
+      'scripts/test-inkos.mjs', // Opt-in fork smoke check: npm run inkos:install && npm run test:inkos.
       'scripts/test-character-profile.mjs',
       'scripts/test-clan-crests.mjs',
       'scripts/test-generate-release.mjs',

@@ -3,7 +3,7 @@ WORKDIR /app
 # The owner creates a closed context containing only tracked runtime modules,
 # locked dependencies and the selected commit's hydrated public database.
 COPY package.json package-lock.json ./
-COPY vendor/ ./vendor/
+COPY vendor/*.tgz ./vendor/
 RUN npm ci --omit=dev --ignore-scripts --no-audit --no-fund && npm cache clean --force
 COPY server/ ./server/
 COPY scripts/ ./scripts/
