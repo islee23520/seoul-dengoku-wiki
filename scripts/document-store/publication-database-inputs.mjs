@@ -18,6 +18,7 @@ import { openOpeningSampleDocuments, INTERNAL_OPENING_SAMPLE_CAPABILITY, OPENING
 import { openEditorialEnvelopeDocuments, INTERNAL_EDITORIAL_ENVELOPE_CAPABILITY, EDITORIAL_ENVELOPE_SOURCE_HASHES } from './editorial-envelope-documents.mjs';
 import { verifyPublicationRelocation, PUBLICATION_PROVISION_SHA256 } from './publication-storage-relocation.mjs';
 
+import { authenticateExactBodyApproval } from './reference-successor-approval.mjs';
 export { authenticateAtlasDraftApproval, authenticateExactBodyApproval } from './reference-successor-approval.mjs';
 
 // Explicit machine-local inputs. No document source path is opened here.
