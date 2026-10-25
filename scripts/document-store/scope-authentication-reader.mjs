@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { evidenceReader } from './evidence-reader.mjs';
 import { readScopeCurrentSource } from './scope-current-source.mjs';
 import { readReferenceSuccessor } from './reference-successor-reader.mjs';
+import { RELATION_SUCCESSOR, verifyRelationHistoricalProjection } from '../cast-sqlite/relation-successor.mjs';
 
 // Immutable receipts authenticate exact bytes, including original whitespace.
 // Current document values MUST independently reconstruct from typed authority;
@@ -25,7 +26,11 @@ export function scopeAuthenticationReader({ db, evidenceStore, root, bindings, h
       const actual = successor ?? readScopeCurrentSource({ db, logicalPath, expectedSha256, ...privateStores, predecessor: true,
         ...(snapshot ? { snapshotDocuments } : {}) });
       const original = logicalPath.endsWith('.json') ? JSON.parse(bytes) : Buffer.from(bytes).toString('utf8');
-      if (successor === null && (!isDeepStrictEqual(actual, original) || JSON.stringify(actual) !== JSON.stringify(original)))
+      const relationSuccessor = logicalPath === RELATION_SUCCESSOR.logicalPath && successor === null
+        && db.prepare("SELECT 1 FROM sqlite_schema WHERE name='data_source_head'").get()
+        && db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(logicalPath);
+      if (relationSuccessor) verifyRelationHistoricalProjection(actual, original);
+      else if (successor === null && (!isDeepStrictEqual(actual, original) || JSON.stringify(actual) !== JSON.stringify(original)))
         throw Error('E_SCOPE_AUTHENTICATION_TYPED_MISMATCH');
       if (snapshot) verified.add(logicalPath);
     }
