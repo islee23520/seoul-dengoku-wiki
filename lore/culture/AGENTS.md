@@ -1,32 +1,38 @@
-# LORE/culture — values scales, faith, martial paths, food, oral canon
-
-Earned its file: score ~8 (defines the 10 value + 5 desire axes that `../name-pools/values-cast.json` / `values-orgs.json` store; the approved nine-category martial ledger; own no-real-denominations rule); distinct domain — the soft-canon layer over the polity map.
+# lore/culture — 가치관·신앙·생활문화
 
 ## OVERVIEW
-`Martial-Paths.json` and its public KO/EN article were deleted by the owner on 2026-10-13. Older martial-ledger references below are historical directory context, not current authoring authority. Do not recreate the article. Current character abilities and actual training follow WORLD_BUILDING_GUIDE.md and the editorial Character-System-Contract.
-The value/policy scale system behind cast and org numbers, the faith schism, the approved martial ledger, food/distribution culture, and the oral creation story.
+인물·조직의 가치 축, 종교 분화, 음식·복식과 구전 원천을 관리한다.
 
 ## WHERE TO LOOK
-| Task | Location |
-|------|----------|
-| 10 person value axes + 5 desire axes + org policy slots | `Values-and-Policy-Scales.json` — the numeric ledger lives in `../name-pools/values-cast.json` / `values-orgs.json` |
-| Faith schism | `Faith-Culture-Schism.json` — 2026 religious makeup sourced (Pew 2010); five campaign axes that change rules |
-| Food / distribution | `Food-Culture.json` — station-window rations first; numbers continue into GDD `rules/Rules-EconomyLogistics` |
-| Oral creation story | `Oral-Stories.json` — 대정전 canon; the five oral titles are locked by `../chronology/Scenario-Timeline.json` |
+아래 `.json` 이름은 SQLite 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
+| 작업 | 위치 |
+|---|---|
+| 가치관·욕망·정책 정의 | `Values-and-Policy-Scales.json` |
+| 실제 인물·조직 수치 | `../name-pools/values-cast.json`, `../name-pools/values-orgs.json` |
+| 신앙·의례·분화 | `Faith-Culture-Schism.json` |
+| 음식·급수·배급 | `Food-Culture.json` |
+| 복식·몸단장 | `National-Dress-and-Grooming.json` |
+| 대정전 구전 | `Oral-Stories.json` |
+| 개막 시점·구전 제목 | `../chronology/Scenario-Timeline.json` |
 
 ## CONVENTIONS
-- Scales span −100..100 (− is U+2212, matching cast cards); 0 means not yet tipped on that axis. New persons/orgs never go up with axis cells empty.
-- Leader change ⇒ charter numbers re-reviewed; fixed national personalities are banned (game rule in GDD `rules/Rules-FactionsWarfare`).
-- Faith grows from events (blackout nights, opened sluices, deaths at the platform edge), never from a 총재 decree; occupying a gu does not change temperament.
-- The three locked theocratic state names remain real institution successors. S08 is the neutral Central Intelligence Bureau at Namsan, not a fourth theocracy. Do not add living clergy, denomination logos, local 노회 names or extra religious states; wreckage rites and splinter names remain fiction.
-- Design borrowings (Stellaris ethics pairs, EU4 policy slots) import mechanics only — never proper nouns, iconography, or event text.
-- Food canon keeps the water-first-then-rice habit; the ration chain 영등포 정수 당직 → 신정 기지 밥솔 → 암사 호위 hands off to GDD `rules/Rules-EconomyLogistics`.
+- 도메인별 과거 자료와 현재 head·승인 상태를 대조하며, 삭제된 JSON 원천을 다시 만들지 않는다.
+- 가치관 축은 `−100..100`이며 음수는 U+2212다. 0과 미확인을 구분한다.
+- 가치관·욕망·정책의 축 개수는 정의 문서와 각 수치 schema를 대조한다. 과거 안내의 개수를 일괄 적용하지 않는다.
+- 지도자가 바뀌면 조직의 헌장 수치를 재검토한다. 국가 성격을 영구 고정하지 않는다.
+- 신앙의 변화는 정전의 밤·수문 개방·죽음 같은 사건과 연결한다. 총재 명령이나 구 점유만으로 기질이 바뀌지 않는다.
+- 물을 먼저 확보하고 밥을 짓는 생활 순서를 보존한다.
+- 배급 연결은 영등포 정수 당직·신정 기지 밥솔·암사 호위의 원문과 대조한다.
 
 ## ANTI-PATTERNS
-- Recordkeeping and seal approval stay administrative work, not martial arts. Do not add a school to restore an eight-school or four-facility count. A new personal art needs its own approved basic→ascended pair inside the nine categories, with a 2026 origin, transmission, equipment, failure condition, and Patina review. Patina review is a workflow prerequisite, not owner or semantic acceptance by itself. The art is not created by lifting a cap in this file.
-- `개방 무공` is its own approved branch, taught inside 안국총림 on a line separate from 소림. It is not a religion, not one of the nine categories, and not the missing ninth or tenth school of an older eight-school count. `환승계` is an independent mobile mutual-aid/information network and is not a school either.
-- Before editing this domain, read the repository-wide [worldbuilding guide](../../WORLD_BUILDING_GUIDE.md). Its explicit current boundary keeps 총림의 개방 전수와 타구봉법 separate from 소림 전수, treats 환승계 as an independent network, and records 신종목 as a 총검술 user without inferring teacher, military history, equipment, or grade.
-- Don't fill the 422 cast ages from these tables — the no-age canon lives in `../characters/`.
-- `Oral-Stories.json` collects existing testimony and seats only — no new plotlines there; founder-ledger names are never the same body as opening-day persons.
-- No sexual narratives involving minors (restated here from the cast contract).
-- No resurrecting 2026 brand names at the ration windows (상호 부활 금지); habits survive, trade names don't.
+- `Martial-Paths.json`과 삭제된 KO/EN 공개 기사를 재생성하지 않는다. 삭제 결정일은 2026-10-13이다.
+- 옛 개방·소림 전수 보존, 아홉 분류, 기본·상승 쌍을 현행 문화 계약으로 복원하지 않는다.
+- 환승계의 상호부조·쉼터·배급·기록 기능을 무협 전수와 같은 것으로 취급하지 않는다.
+- 기존 종교 조직명을 근거로 새 종교 국가를 자동 생성하지 않는다. S08 중앙정보국을 추가 신정국으로 바꾸지 않는다.
+- 현존 성직자·교단 로고·지역 노회 이름을 창작 분파에 추가하지 않는다.
+- 다른 작품의 기제는 비교 자료이며 고유명·도상·이벤트 문구를 가져오지 않는다.
+- 구전집에 새 사건을 만들거나 선대 창립자를 개막 인물과 동일인으로 합치지 않는다.
+- 배급 창구에 2026년 상표를 부활시키지 않는다. 생활 습관과 상호는 다르다.
+
+## COMMANDS
+문화 원천 변경은 루트 `npm run test:lore-json`과 `npm run test:lore-links`로 확인한다.
