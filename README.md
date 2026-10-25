@@ -44,7 +44,7 @@ Every `npm run test:*` script is a separate test group. Pull requests to `main` 
 
 ### Owner's InkOS fork
 
-`vendor/seoul-dengoku-inkos` is a Git submodule of [the owner's fork](https://github.com/islee23520/seoul-dengoku-inkos), pinned to `730b9490690650ea41ac01035bce3f8040b0c067` on `korean-support`. This keeps third-party code beside the existing vendored packages, outside wiki source and publication inputs. The branch will be repointed to `master` separately after the Korean changes ship there; installation always uses the committed pin, not the latest remote branch.
+`vendor/seoul-dengoku-inkos` is a Git submodule of [the owner's fork](https://github.com/islee23520/seoul-dengoku-inkos), pinned to `3d64cb3b796f0d49c023069840c0b4be54ff97dd` on `master` (the merged Korean support). This keeps third-party code beside the existing vendored packages, outside wiki source and publication inputs. Installation always uses the committed pin, not the latest remote branch.
 
 Requires Node.js >=22.16.0, Git and npm. No global InkOS or pnpm installation is needed:
 

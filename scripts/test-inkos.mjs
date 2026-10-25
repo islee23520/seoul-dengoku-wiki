@@ -19,7 +19,7 @@ test('installed fork matches the committed submodule pin and owner remote', () =
   const pin = git(['ls-files', '--stage', '--', 'vendor/seoul-dengoku-inkos']).split(/\s+/)[1]
   assert.equal(git(['-C', fork, 'rev-parse', 'HEAD']), pin)
   assert.equal(git(['config', '-f', '.gitmodules', '--get', 'submodule.vendor/seoul-dengoku-inkos.url']), 'https://github.com/islee23520/seoul-dengoku-inkos')
-  assert.equal(git(['config', '-f', '.gitmodules', '--get', 'submodule.vendor/seoul-dengoku-inkos.branch']), 'korean-support')
+  assert.equal(git(['config', '-f', '.gitmodules', '--get', 'submodule.vendor/seoul-dengoku-inkos.branch']), 'master')
 })
 
 test('fork CLI forwards arguments and initializes Korean projects in the caller directory', t => {
