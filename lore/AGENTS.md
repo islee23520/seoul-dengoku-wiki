@@ -1,33 +1,35 @@
-# LORE root corpus — atlas canon and read-only projections
+# LORE 루트 코퍼스 — SQLite 정본과 논리 식별자
 
-Earned its file: score 17 (root canon and domain data, canon→projection architecture feeding the wiki tool); distinct domain — single-source canon plus generated projections. Subdirectories are separate domains with their own AGENTS.md.
+별개 도메인이다. 루트 계약과 하위 도메인별 `AGENTS.md`를 함께 읽는다.
 
-## OVERVIEW
-The root atlas (`World-Narrative-Atlas.json`) owns machine registries and generated projections. Domain subdirectories hold the JSON authoring sources; each page's Markdown is rendered from its JSON at build time and is never committed (a `.md` beside its `.json` fails `E_MARKDOWN_TWIN`). Some have their own AGENTS.md, and `README.md` is the Korean TOC.
+## 개요
 
-## WHERE TO LOOK
-| Task | Location |
-|------|----------|
-| Change atlas registry facts | `World-Narrative-Atlas.json`; edit generated pages only through the renderer |
-| Corpus TOC | `README.md` (Korean, relative links, links into all subdirs) |
-| Hostile groups G01–G26 | `bestiary/Hostile-Ecology-Index.json` → `bestiary/groups/Hostile-Group-Gxx.json`; each group page owns ecology, scenarios and every GxxEyy entry |
-| Bestiary entries `GxxEyy` | Group pages contain all 250 authored entries (human groups G07–G12 and infected stages G19–G24 keep three each); Mxxx remains source provenance inside each entry and no batch body page is published |
-| Steward houses | `Operating-Houses.json` (corporate HC01–HC22 + civic HP01–HP10) |
-| Synthetics | `Synthetic-Actors.json` (humanoid H / facility F / mobile V, 16 each) |
-| Narrative arcs | `Regional-Physical-AI-Arcs.json` (`ARC-*` three-act outlines per house/region) |
-| Relation edges | `World-Relation-Ledger.json` (`operates_in`, `pressures`, `custodied_by`, rivalry/partnership rows) |
-| Expansion counters | `World-Expansion-Index.json` (9-line count summary) |
+2026-10-22 이관으로 `lore/`의 물리적 JSON 원천 파일은 모두 제거됐다. 저작 정본은 `lore/AUTHORING-JSON.md` 계약대로 Git-LFS로 관리하는 `data/canonical/wiki-cast.sqlite`다. 조회·편집·생성은 이 정본을 기준으로 하고, 전용 브랜치에서 작업해 PR로 제안하며 main 병합은 소유자만 한다.
 
-## CONVENTIONS
-- Every projection is a generated JSON envelope whose provenance carries `original_anchor: lore/World-Narrative-Atlas.json` and the atlas `original_hash`; the atlas machine registries (e.g. `monster_contents`) are canon and the split pages are views of them.
-- Projection rendering and checking live in `scripts/` (`generate-catalog.mjs`, `world-atlas-render.mjs`, `gate.mjs`); the hash names the atlas Markdown that was rendered.
-- Entity IDs are permanent, never renumbered: humans `K001–K412` (Cast-Index row order), states `S01–S16`, houses `HCxx`/`HPxx`, external theaters `XT01–XT05`, synthetics `H/F/V01–16`, hostile groups `G01–G26` (G27 retired), entities `GxxEyy`, batches `Mxxx`/`Bxxx`.
-- Atlas prose contract: Korean 3rd-person limited 한다체 narrative, 합니다체 guidance; `source_kind` separates fact / inference / fiction; one cause-effect per paragraph.
+문서·출처 기록에 남아 있는 `lore/.../*.json` 이름은 DB 안의 논리적 문서 식별자 또는 provenance지, 디스크에서 다시 읽어야 할 입력 파일이 아니다. 생성된 공개 JSON은 SQLite에서 내보낸 출력물이므로 직접 고쳐 저작 원천으로 쓰지 않는다.
 
-## ANTI-PATTERNS
-- Never hand-edit a projection (`bestiary/**`, `Operating-Houses.json`, `Synthetic-Actors.json`, `Regional-Physical-AI-Arcs.json`, `World-Relation-Ledger.json`, `World-Expansion-Index.json`). Edit the atlas, then re-project via the wiki tool.
-- M007's ten reserved IDs remain deliberately unwritten in the WNA registry. No `Monster-Batch-*.md` projection exists.
-- No real company names, logos, slogans, products, or current executives in fiction; no real institution as the subject of fictional crime.
-- Synthetics: no omniscient narration, no infinite energy, no long-term complete memory, no full network access, no facility control outside the assigned sector.
-- Keep the mixed shape when extending the atlas: Korean narrative prose, English structural terms, JSON `연결` fields for cross-links.
-- Every proper name and displayed term follows [Korean terminology and naming](/design/Korean-Terminology-and-Naming). The rule covers states, organizations, houses, offices, people, martial schools, technology, goods, places, events and UI/data display names—not only martial arts.
+이 디렉터리에 남은 `.md`는 지침·목록 문서(이 파일, `AUTHORING-JSON.md`, `README.md`, 하위 도메인 `AGENTS.md`)다.
+
+## 어디를 볼 것인가
+
+| 과제 | 위치 |
+|------|------|
+| 정본 계약·편집 절차 | `lore/AUTHORING-JSON.md`, `WORLD_BUILDING_GUIDE.md` |
+| 현재 검증 경로 | `scripts/lore-json-validate.mjs --strict`(현재·예시 문서를 SQLite에서 읽는다), `scripts/gate.mjs`, cast-sqlite 검증 슈트 |
+| 코퍼스 목차 | `README.md`(한국어 상대 링크) |
+| 하위 도메인 지침 | `bestiary/`, `characters/`, `factions/`, `places/`, `regions/`, `relations/`, `culture/`, `name-pools/` 각 `AGENTS.md` |
+| 구 레지스트리 지표 | 적대 집단 G01–G26, 운영 가문 HC01–HC22/HP01–HP10, 합성체 H/F/V01–16, 외부 극장 XT01–XT05, 배치 Mxxx/Bxxx — 논리 식별자 체계로 존속 |
+
+## 규약
+
+- 엔티티 ID는 영구적이고 다시 매기지 않는다. 인물 `K001`–`K412`(명부 행 순서), 국가 `S01`–`S16`, 집단·가문·합성체는 위 표의 접두어를 따른다. 은퇴·보존 표기는 ID 변경이 아니다.
+- 산문 계약: 한국어 3인칭 제한한다체 서사, 합니다체 안내. `source_kind`는 사실·추론·허구를 구분하고 단락마다 인과는 하나만 둔다.
+- 저작 상태 구분: 확정·초안·제안·보존은 서로 다른 상태고, 공개 렌더·검증 통과는 승인 증거가 아니다(가이드 증거 위계 준수).
+
+## 안티패턴
+
+- DB를 우회해 논리 식별자나 provenance를 디스크 파일로 재구성하지 않는다. 편집은 SQLite 정본 경로로만.
+- 실존 기업명·로고·슬로건·제품·현직 임원을 허구에 넣지 않고, 실존 기관을 허구적 범죄의 주체로 쓰지 않는다.
+- 합성체: 전지적 서술·무한 에너지·장기 완전 기억·전망 네트워크 접근·배정 밖 시설 제어 금지.
+- 아틀라스 확장 시 혼합 형태를 유지한다: 한국어 서사 산문, 영어 구조 용어, 교차 참조는 논리 식별자로.
+- 모든 고유명칭은 명명 원장의 승인본을 따른다.
