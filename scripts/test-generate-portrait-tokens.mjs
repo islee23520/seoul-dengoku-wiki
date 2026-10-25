@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
+import { existsSync } from 'node:fs'
 import { mkdtemp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { dirname, join } from 'node:path'
@@ -8,12 +9,16 @@ import { test } from 'vitest'
 import { generatePortraitTokens } from './generate-portrait-tokens.mjs'
 import { runRelease } from './generate-release.mjs'
 import { loadPortraitDocuments } from './portrait-source-documents.mjs'
+import { openReadOnly } from './cast-sqlite/db.mjs'
+import { readPortraitFamilyInputs } from './cast-sqlite/portrait-family-input.mjs'
 
 const project = fileURLToPath(new URL('../', import.meta.url))
 const generator = new URL('./generate-portrait-tokens.mjs', import.meta.url).href
 const digest = bytes => createHash('sha256').update(bytes).digest('hex')
 const gate = async () => ({ complete: true, semanticReview: 'reviewed' })
 const tokenPath = file => 'public/portrait-tokens/' + file
+const databasePath = process.env.WIKI_DOCUMENT_DB ?? join(project, 'data/canonical/wiki-cast.sqlite')
+const worker = `process.env.WIKI_DOCUMENT_DB = ${JSON.stringify(databasePath)}; import { generatePortraitTokens } from ${JSON.stringify(generator)};`
 
 async function put(root, path, bytes) {
   await mkdir(dirname(join(root, path)), { recursive: true })
@@ -32,16 +37,21 @@ async function fixture() {
     originals.set(file, JSON.parse(bytes))
     before.set(tokenPath(file), bytes)
   }
-  const newcomer = 'person-0002.json'
+  const db = openReadOnly(databasePath)
+  let newcomer
+  try {
+    const family = [...readPortraitFamilyInputs(db)].find(([id, row]) =>
+      /\b(?:Adeyemi|Mensah|Ndiaye) 가계/u.test(row.basis)
+      && !files.includes(id + '.json') && existsSync(join(project, 'public/person-details', id + '.json')))
+    assert.ok(family, 'SQLite family fixture without an approved portrait')
+    newcomer = family[0] + '.json'
+  } finally { db.close() }
   assert.ok(!files.includes(newcomer))
   const details = new Map()
   for (const file of [...files, newcomer]) {
     const bytes = await readFile(join(project, 'public/person-details', file), 'utf8')
     before.set('public/person-details/' + file, bytes)
     details.set(file, JSON.parse(bytes))
-  }
-  for (const path of ['lore/name-pools/gender-cast.json', 'src/generated/nonKoreanFamilyCatalog.ts']) {
-    before.set(path, await readFile(join(project, path), 'utf8'))
   }
   for (const [path, bytes] of before) await put(root, path, bytes)
   return { root, before, originals, details, newcomer,
@@ -51,16 +61,14 @@ async function fixture() {
 async function stageTokens(fixture, context) {
   const detail = { ...fixture.details.get(fixture.newcomer), age: 27, position: null, occupation: '의료 당직', fields: {} }
   await context.write('public/person-details/' + fixture.newcomer, JSON.stringify(detail))
-  const family = [{ basis: 'Mensah 가계', members: [{ id: detail.id }] }]
-  await context.write('src/generated/nonKoreanFamilyCatalog.ts', 'export const nonKoreanFamilyCatalog = ' + JSON.stringify(family) + ' as const\n')
   await context.run([process.execPath, '--input-type=module', '-e',
-    `import { generatePortraitTokens } from ${JSON.stringify(generator)}; await generatePortraitTokens(${JSON.stringify(fixture.root)})`])
+    `${worker} await generatePortraitTokens(${JSON.stringify(fixture.root)})`])
   for (const [path, bytes] of fixture.before) assert.equal(await readFile(join(fixture.root, path), 'utf8'), bytes)
   const records = (await readFile(join(fixture.root, '.generate-release-transaction/outputs.jsonl'), 'utf8')).trim().split('\n').map(JSON.parse)
   assert.deepEqual(records.sort(), [...fixture.originals.keys(), fixture.newcomer].map(tokenPath).sort())
 }
 
-test('portrait worker reads staged details and family catalog, journals every token and preserves all 25 authored approvals', async () => {
+test('portrait worker reads staged details and SQLite family inputs, journals every token and preserves all 25 authored approvals', async () => {
   const f = await fixture()
   try {
     await runRelease({ root: f.root, gate, ownership: f.ownership, stage: context => stageTokens(f, context) })
@@ -113,7 +121,7 @@ test('existing token stateId follows the current person detail after a state mov
       const detail = { ...f.details.get(file), state: movedState }
       await context.write('public/person-details/' + file, JSON.stringify(detail))
       await context.run([process.execPath, '--input-type=module', '-e',
-        `import { generatePortraitTokens } from ${JSON.stringify(generator)}; await generatePortraitTokens(${JSON.stringify(f.root)})`])
+        `${worker} await generatePortraitTokens(${JSON.stringify(f.root)})`])
     } })
     const next = JSON.parse(await readFile(join(f.root, tokenPath(file)), 'utf8'))
     assert.equal(next.stateId, movedState)
