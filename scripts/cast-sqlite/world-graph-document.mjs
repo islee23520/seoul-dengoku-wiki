@@ -103,14 +103,19 @@ function presence(owner, key) {
   return ['value', owner[key]];
 }
 
-function officialSource(value, label) {
-  if (!sameKeys(value, OFFICIAL_KEYS) || ![value.url, value.retrievedAt, value.sha256, value.scope].every(text)) {
+function officialSource(value, label, ordered = true) {
+  if (!(ordered ? sameKeys(value, OFFICIAL_KEYS) : value && typeof value === 'object' && !Array.isArray(value)
+    && Object.keys(value).length === OFFICIAL_KEYS.length && OFFICIAL_KEYS.every(key => Object.hasOwn(value, key)))
+    || ![value.url, value.retrievedAt, value.sha256, value.scope].every(text)) {
     fail('E_WORLD_GRAPH_SHAPE', label);
   }
   return value;
 }
 
-function inspect(document) {
+function inspect(document, ordered = true) {
+  const sameKeys = (value, keys) => value && typeof value === 'object' && !Array.isArray(value)
+    && Object.keys(value).length === keys.length && keys.every((key, index) =>
+      Object.hasOwn(value, key) && (!ordered || Object.keys(value)[index] === key));
   if (!sameKeys(document, ROOT_KEYS)) fail('E_WORLD_GRAPH_SHAPE', 'root');
   if (!text(document.schema)) fail('E_WORLD_GRAPH_SHAPE', 'schema');
   stringList(document.districts, 'districts');
@@ -132,7 +137,7 @@ function inspect(document) {
   const rail = document.source.railAdjacency;
   if (!sameKeys(rail, RAIL_KEYS)) fail('E_WORLD_GRAPH_SHAPE', 'railAdjacency');
   if (![rail.revision, rail.WikiCommit, rail.scope].every(text)) fail('E_WORLD_GRAPH_SHAPE', 'rail text');
-  officialSource(rail.officialSource, 'officialSource');
+  officialSource(rail.officialSource, 'officialSource', ordered);
   if (!Array.isArray(rail.replacements) || !Array.isArray(rail.excluded) || !Array.isArray(rail.hubIdentities)) {
     fail('E_WORLD_GRAPH_SHAPE', 'rail lists');
   }
@@ -143,7 +148,7 @@ function inspect(document) {
     if (!text(replacement.status) || !text(replacement.lineId) || !text(replacement.physicalEvidenceBoundary)) fail('E_WORLD_GRAPH_SHAPE', 'replacement text');
     stringList(replacement.chain, 'replacement chain');
     stringList(replacement.officialCodes, 'replacement codes');
-    officialSource(replacement.source, 'replacement source');
+    officialSource(replacement.source, 'replacement source', ordered);
   }
   for (const excluded of rail.excluded) {
     if (!excluded || typeof excluded !== 'object' || Array.isArray(excluded)) fail('E_WORLD_GRAPH_SHAPE', 'excluded');
@@ -187,6 +192,33 @@ function inspect(document) {
       if (!integer(evidence.pathIndex) || !integer(evidence.stationIndex)) fail('E_WORLD_GRAPH_SHAPE', 'hub evidence index');
     }
   }
+}
+
+// Pure native-document boundary for an explicitly supplied release. This does
+// not authenticate source data or grant publication permission.
+export function validateWorldGraphProjection(document) {
+  inspect(document, false);
+  if (document.schema !== 'seoul-world-graph-v2') fail('E_WORLD_GRAPH_SHAPE', 'schema');
+  const districts = new Set(document.districts);
+  const stations = new Set(document.stations.map(station => station.id));
+  if (!stations.size || stations.size !== document.stations.length || districts.size !== document.districts.length)
+    fail('E_WORLD_GRAPH_SHAPE', 'duplicate or empty inventory');
+  const stationRef = id => { if (!stations.has(id)) fail('E_WORLD_GRAPH_SHAPE', 'station reference'); };
+  for (const station of document.stations) {
+    if (!station.id || !districts.has(station.district) || station.lat < -90 || station.lat > 90
+      || station.lon < -180 || station.lon > 180) fail('E_WORLD_GRAPH_SHAPE', 'station identity/coordinate');
+  }
+  const pairs = new Set();
+  for (const edge of document.edges) {
+    stationRef(edge.a); stationRef(edge.b);
+    const pair = JSON.stringify([edge.a, edge.b].sort());
+    if (edge.a === edge.b || pairs.has(pair)) fail('E_WORLD_GRAPH_SHAPE', 'duplicate/self edge');
+    pairs.add(pair);
+  }
+  Object.values(document.aliases).forEach(stationRef);
+  for (const row of document.source.railAdjacency.replacements) row.chain.forEach(stationRef);
+  for (const row of document.source.railAdjacency.hubIdentities) row.permanentIds.forEach(stationRef);
+  return structuredClone(document);
 }
 
 function insert(db, table, row) {

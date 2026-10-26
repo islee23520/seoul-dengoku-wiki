@@ -63,7 +63,7 @@ import { readRetirementProse, projectRetirementProse } from './cast-sqlite/retir
 import { projectActiveRoster, projectActivePersonIndex } from './person-roster-projection.mjs'
 import { readCatalogMetadata, CATEGORY_REGISTRY_PATH, OFFICIAL_SEOUL_LINES_PATH, UPDATE_HISTORY_PATH } from './cast-sqlite/catalog-metadata.mjs'
 import { readPopulationDocument, POPULATION_SOURCE_HASH } from './cast-sqlite/population-document.mjs'
-import { readWorldGraphDocument, WORLD_GRAPH_SOURCE_HASH } from './cast-sqlite/world-graph-document.mjs'
+import { catalogWorldGraph, catalogMovementGraph, catalogPublicEdges } from './catalog-map-graph.mjs'
 import { readRailSourceDocument, RAIL_SOURCE_HASHES } from './cast-sqlite/rail-source-documents.mjs'
 import { readRegionContentDocument, REGION_CONTENT_SOURCE_HASHES } from './cast-sqlite/region-content-documents.mjs'
 import { readCreativeNameDocument, CREATIVE_NAME_SOURCE_HASH } from './cast-sqlite/creative-name-document.mjs'
@@ -71,6 +71,7 @@ import { readLandmarkRoleDocument, LANDMARK_ROLE_SOURCE_HASH } from './cast-sqli
 import { readClanCatalogDocument, CLAN_CATALOG_SOURCE_HASH } from './cast-sqlite/clan-catalog-document.mjs'
 import { readRetiredTerritoryDocuments, RETIRED_TERRITORY_SOURCE_HASHES } from './cast-sqlite/retired-territory-documents.mjs'
 import { readRegionAtlasData, REGION_ATLAS_SOURCE_HASH } from './cast-sqlite/region-atlas-document.mjs'
+import { loadMapDataInput } from './map-data-input.mjs'
 
 export const publicCatalogContent = (document, activeIds, activeRoutes) => projectActivePersonIndex(publicMapContent(publicOfficeContent(publicHouseContent(document))), activeIds, activeRoutes)
 
@@ -138,6 +139,7 @@ export function publicJurisdictionReferences(rows) {
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
+const mapInput = process.env.WIKI_MAP_RELEASE_REQUEST === undefined ? null : await loadMapDataInput(process.env.WIKI_MAP_RELEASE_REQUEST)
 if (!process.env.WIKI_DOCUMENT_DB) {
   const environment = JSON.parse(await readFile(resolve(projectRoot,
     '.omo/private/seoul-migration/sqlite-authority-20261021/build-environment.json'), 'utf8'))
@@ -434,7 +436,7 @@ await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type CurrentH
 const regionAtlas = typedCatalogSource(db => readRegionAtlasData(db, { expectedSourceHash: REGION_ATLAS_SOURCE_HASH }))
 const populationSource = typedCatalogSource(db => readPopulationDocument(db, { expectedSourceHash: POPULATION_SOURCE_HASH }))
 const densityByDong = validatedDensities(regionAtlas.regions, populationSource)
-const seoulGraph = typedCatalogSource(db => readWorldGraphDocument(db, { expectedSourceHash: WORLD_GRAPH_SOURCE_HASH }))
+const seoulGraph = catalogWorldGraph(mapInput, typedCatalogSource)
 const officialLineData = catalogMetadata[OFFICIAL_SEOUL_LINES_PATH]
 const regularLineSource = typedCatalogSource(db => readRailSourceDocument(db, { logicalPath: 'lore/places/regular-line-adjacency.json', expectedSourceHash: RAIL_SOURCE_HASHES['lore/places/regular-line-adjacency.json'] }))
 await writeFile(resolve(generatedRoot, 'railStationSources.ts'),
@@ -542,9 +544,9 @@ const canonicalBySourceId = new Map(approvedStationAliases.flatMap((entry) => [e
 if (canonicalBySourceId.size !== approvedStationAliases.reduce((count, entry) => count + 1 + entry.aliases.length, 0) || [...canonicalBySourceId.keys()].some((id) => !stationById.has(id))) throw new Error('E_STATION_ALIAS_SOURCE')
 const canonicalStationId = (id) => canonicalBySourceId.get(id) ?? id
 const excludedStations = new Set(excludedStationIds)
-const regularGraph = regularLineGraph(regularLineSource,
+const regularGraph = catalogMovementGraph(mapInput, regularLineGraph(regularLineSource,
   seoulGraph.stations.map((station) => canonicalStationId(station.id)).filter(id => !excludedStations.has(id)),
-  { excludedStationIds })
+  { excludedStationIds }), canonicalStationId, excludedStationIds)
 await mkdir(resolve(outputRoot, '.omo/evidence/station-line-facts'), { recursive: true })
 await writeFile(resolve(outputRoot, '.omo/evidence/station-line-facts/adjacency-coverage.json'), JSON.stringify({
   sourceUrl: regularLineSource.source.url,
@@ -669,13 +671,7 @@ const passage2126 = (edge, control) => {
   return control.status === 'held' ? 'open' : control.status === 'contested' ? 'checkpoint' : 'unknown'
 }
 const admittedStationIds = new Set(mapStations.map(station => station.id))
-const projectedEdges = regularGraph.edges.filter(edge => admittedStationIds.has(edge.a) && admittedStationIds.has(edge.b))
-  .map((edge) => ({ a: edge.a, b: edge.b, lineIds: edge.lineIds, sourceCodes: edge.sourceCodes }))
-const mapEdges = projectedEdges.filter((edge, index) => edge.a !== edge.b && projectedEdges.findIndex((other) => other.a === edge.a && other.b === edge.b && other.lineIds.join(',') === edge.lineIds.join(',')) === index).map((edge) => {
-  const id = `segment:${edge.a}~${edge.b}`
-  const control = segmentControl(id, stationControlById.get(edge.a), stationControlById.get(edge.b))
-  return { ...edge, id, control: { ...control, currentHegemons: hegemonsForHolders(control.polityIds, affiliations) }, passage2126: passage2126(edge, control) }
-})
+const mapEdges = catalogPublicEdges(regularGraph, admittedStationIds, stationControlById, segmentControl, hegemonsForHolders, affiliations, passage2126)
 for (const segmentId of segmentControlOverrides.keys()) if (!mapEdges.some((edge) => edge.id === segmentId)) throw new Error(`E_SEGMENT_CONTROL_UNKNOWN_SEGMENT:${segmentId}`)
 for (const segmentId of passageDecisions.keys()) if (!mapEdges.some((edge) => edge.id === segmentId && crossesHan(edge.a, edge.b))) throw new Error(`E_PASSAGE_DECISION_NOT_HAN_CROSSING:${segmentId}`)
 const polygonMetrics = (points) => {

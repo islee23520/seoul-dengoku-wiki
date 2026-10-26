@@ -5,7 +5,7 @@ import { spawn } from 'node:child_process'
 import { createInterface } from 'node:readline'
 import { dirname, join, relative, resolve, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { requireSeoulPublication } from './check-seoul-scope.mjs'
+import { loadMapDataInput } from './map-data-input.mjs'
 
 // Fixed-path readers cannot observe a cross-directory atomic swap. This is a
 // recoverable command boundary, not filesystem-wide atomicity. Only cooperating
@@ -18,6 +18,7 @@ const outputRoots = ['public', 'src/generated', 'src/generated-private']
 const absent = error => { if (error.code === 'ENOENT') return null; throw error }
 
 export async function requireGenerationPublication(root, databaseInputs) {
+  const { requireSeoulPublication } = await import('./check-seoul-scope.mjs')
   if (databaseInputs === undefined && process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
     const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))
     if (process.env.WIKI_DOCUMENT_DB && resolve(process.env.WIKI_DOCUMENT_DB) !== resolve(config.databasePath))
@@ -306,7 +307,8 @@ async function previousGeneration(root, before, ownership) {
   return files
 }
 
-export async function runRelease({ root, gate = requireGenerationPublication, stage, consume, checkpoint = async () => {}, ownership = trackedHash }) {
+export async function runRelease({ root, gate = requireGenerationPublication, stage, consume, checkpoint = async () => {}, ownership = trackedHash,
+  mapRequestPath = process.env.WIKI_MAP_RELEASE_REQUEST }) {
   root = resolve(root)
   // Without a journal, pending approval must not even create a lock. A journal
   // permits only recovery before authorization, never staging or publication.
@@ -316,6 +318,8 @@ export async function runRelease({ root, gate = requireGenerationPublication, st
     // or interrupted a release since the read-only probe above.
     if (await hasRecoveryJournal(root)) await recover(root, checkpoint)
     await gate(root)
+    const mapInput = mapRequestPath === undefined ? null : await loadMapDataInput(mapRequestPath)
+    await mapInput?.recheck()
     // Unjournaled staging cleanup is allowed only after publication permission.
     await recover(root, checkpoint)
     const transaction = join(root, transactionName)
@@ -346,7 +350,8 @@ export async function runRelease({ root, gate = requireGenerationPublication, st
       for (const path of Object.keys(before)) await copy(join(root, path), join(stageRoot, path))
       const token = createHash('sha256').update(`${process.pid}:${process.hrtime.bigint()}`).digest('hex')
       await durableJson(join(transaction, 'context.json'), { token })
-      const env = { ...process.env, WIKI_GENERATION_STAGE: stageRoot, WIKI_GENERATION_TOKEN: token }
+      const env = { ...process.env, WIKI_GENERATION_STAGE: stageRoot, WIKI_GENERATION_TOKEN: token,
+        ...(mapInput ? { WIKI_MAP_RELEASE_REQUEST: mapRequestPath } : {}) }
       const written = new Set()
       const write = async (path, bytes) => {
         outputPath(path)
@@ -356,7 +361,7 @@ export async function runRelease({ root, gate = requireGenerationPublication, st
         try { await handle.writeFile(bytes) } finally { await handle.close() }
         written.add(path)
       }
-      if (stage) await stage({ root: stageRoot, write, run: command => run(command, env) })
+      if (stage) await stage({ root: stageRoot, write, run: command => run(command, env), mapInput })
       else {
         await run([process.execPath, 'scripts/generate-clan-crests.mjs'], env)
         await checkpoint('crest')
@@ -364,6 +369,7 @@ export async function runRelease({ root, gate = requireGenerationPublication, st
         await run([process.execPath, 'scripts/generate-portrait-source-catalog.mjs'], env)
         await run([process.execPath, 'scripts/generate-portrait-tokens.mjs'], env)
       }
+      if (mapInput) await write('src/generated-private/map-input-receipt.json', JSON.stringify(mapInput.receipt) + '\n')
       const records = await readFile(join(transaction, 'outputs.jsonl'), 'utf8').catch(absent)
       for (const line of (records ?? '').split('\n').filter(Boolean)) written.add(outputPath(JSON.parse(line)))
       for (const [path, expected] of previousFiles) {
@@ -405,6 +411,7 @@ export async function runRelease({ root, gate = requireGenerationPublication, st
       }
       // Re-check approval after all expensive staging and before live mutation.
       await gate(root)
+      await mapInput?.recheck()
       for (const [path, expected] of databaseHashes) {
         const value = createHash('sha256')
         for await (const bytes of createReadStream(path)) value.update(bytes)
