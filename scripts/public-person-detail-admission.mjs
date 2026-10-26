@@ -252,7 +252,7 @@ export async function loadDatabasePersonDetailMappingAuthority({ db, evidenceSto
  * Full-detail admission, never a projection or a sanitization step.
  * Returns the original complete details only under independently authenticated
  * document and Seoul-scope review. Historical output receipts are audit data,
- * not expected current document content (TESTING.md).
+ * not expected current document content.
  */
 export function admitPublicPersonDetails(details, scopeInput) {
   const ids = scopeInput?.baseline?.currentEntitySets?.persons

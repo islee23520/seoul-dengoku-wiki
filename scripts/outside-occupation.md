@@ -12,7 +12,6 @@ Regenerate and check from the WIKI root:
 
 ```sh
 npm run generate
-npx vitest run scripts/test-outside-occupation.mjs scripts/test-current-affiliation.mjs scripts/test-approved-political-territories.mjs scripts/test-territory-map.mjs scripts/test-territory-layer-interaction.mjs
 npm test
 npm run build
 node scripts/gate.mjs

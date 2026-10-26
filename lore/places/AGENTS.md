@@ -36,4 +36,4 @@
 - 동명이역을 이름만으로 합치거나 교차 도메인 링크를 경로 이동 뒤 방치하지 않는다.
 
 ## COMMANDS
-루트 `npm run test:region-routes`, `npm run test:territory-map`, `npm run test:lore-json`으로 관련 원천을 검증한다.
+변경 후 실제 지역·지도 화면과 정본 조회 결과를 확인한다. 테스트 스위트는 제거되었다.

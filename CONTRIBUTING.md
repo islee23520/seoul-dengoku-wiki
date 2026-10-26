@@ -1,10 +1,10 @@
 # Contributing
 
-Pull requests targeting `main` run the lore JSON validator tests and changed-file lore JSON validation through the Lore PR checks workflow. The wiki build and `test:gate` need parent-repository inputs, so they run in the parent repository's CI on the pinned tuple.
+The test workflows have been removed. Build and data verification still require the configured parent-repository inputs and publication sources.
 
 ## Testing rules
 
-Before adding any test script, read [TESTING.md](TESTING.md) — the project-wide rules that keep one-off verification scripts out of the committed suite.
+Test suites and test scripts were removed by owner decision (2026-10-26). Do not add new test scripts; verify data with the cast authority check and the generate gate, and keep one-off verification out of the committed tree.
 
 ## Historical person sheets
 
@@ -14,4 +14,4 @@ The exact revisions are `ce173686bcba220cd2a7dedfb5c78b941bf3c151` and `5f34d92d
 
 Current person details are regenerated from `lore/`. Stable issued IDs, names and routes bind a historical sheet to a current person. `personSheet.currentState` is checked against current canon; each variant's `historicalState` is checked against its sealed record. Historical affiliation is never required to equal current affiliation. Historical records and numbers remain unchanged and nonoperative; selecting a revision does not assign new opposed-d10 ratings.
 
-Run the focused conversion regressions with `npx vitest run scripts/test-preserved-current-canon.mjs scripts/test-person-gurps-sheet.mjs scripts/test-character-draft-export.mjs scripts/test-character-draft-route.mjs scripts/test-mcp-character-server.mjs scripts/test-gurps-cast.mjs scripts/test-gurps-approved-exceptions.mjs scripts/test-person-information.mjs scripts/test-core3-approved-attributes.mjs scripts/test-six-approved-attributes.mjs`. Run `node scripts/check-preserved-generation.mjs` to exercise the standard build without sheet-specific environment variables and verify a second standard generation is byte-identical.
+Run `node scripts/check-preserved-generation.mjs` to exercise the standard build without sheet-specific environment variables and verify a second standard generation is byte-identical.

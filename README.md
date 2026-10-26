@@ -11,7 +11,7 @@ Every public document is authored once as bilingual JSON (Korean and English sid
 | `lore/` | Authoring sources, one JSON document per page, grouped by domain (`characters/`, `factions/`, `culture/`, `places/`, `bestiary/`, …). `lore/World-Narrative-Atlas.json` is the machine registry from which the 34 atlas projection pages are generated. |
 | `lore/authoring*.schema.json`, `lore/AUTHORING-JSON.md` | The JSON authoring contract and its schemas. |
 | `lore/editorial/` | Internal editorial rules and ledgers. They are not published. |
-| `scripts/` | Catalog generation, atlas materialization, validators, the publication gate and their tests. |
+| `scripts/` | Catalog generation, atlas materialization, validators and the publication gate. |
 | `src/` | The React wiki application. `src/generated/` is build output. |
 | `docs/editorial/` | Dated editorial records (audits, studies). They are historical records, not rules. |
 
@@ -34,11 +34,10 @@ A few build inputs (for example the creative-name normalization ledger) live out
 node scripts/lore-json-validate.mjs            # changed files plus the migration ledger
 node scripts/lore-json-validate.mjs --strict   # every lore document
 node scripts/materialize-world-atlas.mjs --atlas lore/World-Narrative-Atlas.json --out lore --check
-npm run test:lore-json
-npm run test:gate
+npm run cast:verify -- --db data/canonical/wiki-cast.sqlite
 ```
 
-Every `npm run test:*` script is a separate test group. Pull requests to `main` run the lore JSON checks in CI (`.github/workflows/lore-pr-checks.yml`).
+Test suites were removed by owner decision (2026-10-26); data integrity is verified with the cast authority check and the generate gate.
 
 ## Character creation tools
 
@@ -52,7 +51,6 @@ Requires Node.js >=22.16.0, Git and npm. No global InkOS or pnpm installation is
 npm run inkos:install                     # initialize pin, pnpm 10 frozen install and build
 npm run inkos -- --help
 npm run inkos -- --version
-npm run test:inkos                        # installed pin, CLI and scratch Korean project smoke check
 ```
 
 Create InkOS projects outside the wiki checkout. The wrapper preserves the caller's working directory, including when npm selects this repository using `--prefix`:

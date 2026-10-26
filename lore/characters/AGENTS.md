@@ -34,5 +34,5 @@
 - 미성년 성적 서사를 작성하지 않는다. 브랜치에 본문이 있다는 이유로 게시 승인을 얻은 것으로 처리하지 않는다.
 
 ## COMMANDS
-루트에서 `npm run test:people`, `npm run test:person-details`, `npm run test:person-id`를 실행한다.
+테스트 스위트는 제거되었다. 변경 후 실제 인물 화면과 정본 조회 결과를 확인한다.
 옛 `TOOL/tools/wiki/verify-cast.mjs`는 이 작업트리의 현행 검증 경로가 아니다.

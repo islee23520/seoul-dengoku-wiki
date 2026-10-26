@@ -36,4 +36,4 @@
 - 옛 ‘모든 국가의 동일 호칭 사다리’ 문장을 현재 작위 계약보다 우선하지 않는다.
 
 ## COMMANDS
-루트 `npm run test:states`, `npm run test:region-routes`, `npm run test:lore-links`로 관련 표면을 확인한다.
+변경 후 실제 국가·지역 화면과 정본 조회 결과를 확인한다. 테스트 스위트는 제거되었다.
