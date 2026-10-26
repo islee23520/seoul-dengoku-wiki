@@ -304,9 +304,11 @@ async function fkSweep(client, log) {
     const parent = await relInfo(fk.confrelid);
     const ccols = fk.conkey.map((a) => child.colByAttnum.get(a));
     const pcols = fk.confkey.map((a) => parent.colByAttnum.get(a));
-    // MATCH SIMPLE: 자식 키 전부 non-NULL인 행만 검사한다.
-    const nullGuard = `(${ccols.map((c) => `c.${q(c)}`).join(', ')}) IS NOT NULL`;
-    const join = pcols.map((p, i) => `p.${q(p)} IS NOT DISTINCT FROM c.${q(ccols[i])}`).join(' AND ');
+    // MATCH SIMPLE: 자식 키 전부 non-NULL인 행만 검사한다. 부모 측은 일반 '=' 조인으로
+    // PG 참조무결성 의미론(NULL 부모 키는 매치 아님)을 그대로 쓴다 — IS NOT DISTINCT FROM는
+    // 해시 안티조인 대신 중첩루프+조인필터 계획으로 퇴화해 대형 테이블에서 수천 배 느리다.
+    const nullGuard = ccols.map((c) => `c.${q(c)} IS NOT NULL`).join(' AND ');
+    const join = pcols.map((p, i) => `p.${q(p)} = c.${q(ccols[i])}`).join(' AND ');
     const sql = `SELECT count(*) AS n FROM ONLY ${q(child.schema)}.${q(child.name)} AS c
                  WHERE ${nullGuard} AND NOT EXISTS (
                    SELECT 1 FROM ONLY ${q(parent.schema)}.${q(parent.name)} AS p WHERE ${join})`;
@@ -416,6 +418,7 @@ async function main() {
   try {
     await client.query('SET statement_timeout = 0');
     await client.query('SET extra_float_digits = 3'); // REAL 왕복 정확 십진 표기
+    await client.query("SET work_mem = '64MB'"); // FK 안티조인 해시 빌드용(세션 로컬)
     await client.query('BEGIN ISOLATION LEVEL REPEATABLE READ'); // 대사 중 스냅샷 고정
 
     // wiki_private: 온디맨드 스토어(물리 파일 없음, 소유자 확인) — 아카이브 비교 대상 아님. 테이블 수만 보고.
