@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Migration-owned wiki.meta records migration identifiers separately from source rows.
-// It is excluded from the 1006-table source comparison; Todo 5 compares these values directly.
+// --metadata-only is development recovery only; production always records metadata with the full load.
+// Recovery identifiers are trusted only after Todo 5's full-content reconciliation passes.
 import { createHash } from 'node:crypto';
 import { createReadStream } from 'node:fs';
 import { readFile } from 'node:fs/promises';
@@ -60,6 +60,18 @@ async function main() {
   try {
     await client.query('SET statement_timeout = 0');
     const metadataOnly = process.argv.includes('--metadata-only');
+    if (metadataOnly) {
+      for (const table of inventory.sources.canonical.tables) {
+        active = table.name;
+        const sourceCount = Number(db.prepare(`SELECT count(*) AS count FROM ${quote(table.name)}`).get().count);
+        const target = await client.query(`SELECT count(*) AS count FROM wiki.${quote(table.pg_name)}`);
+        if (sourceCount !== table.row_count || Number(target.rows[0].count) !== sourceCount) {
+          console.error(`LOAD FAILED table=${active}: metadata-only row count mismatch ${table.name}: source=${sourceCount}, inventory=${table.row_count}, target=${target.rows[0].count}`);
+          process.exitCode = 1;
+          return;
+        }
+      }
+    }
     await client.query('BEGIN');
     try {
       if (!metadataOnly) for (const table of inventory.sources.canonical.tables) {
@@ -82,7 +94,7 @@ async function main() {
         if (count !== table.row_count) fail(`row count mismatch ${table.name}: ${count} != ${table.row_count}`);
         process.stdout.write(`COPY ${table.name}: ${count} rows\n`);
       }
-      if (!metadataOnly) {
+    if (!metadataOnly) {
         active = 'constraints.sql';
         await applySql(client, resolve(SCHEMA_DIR, 'constraints.sql'));
         const fks = await client.query("SELECT n.nspname, c.relname, con.conname FROM pg_constraint con JOIN pg_class c ON c.oid=con.conrelid JOIN pg_namespace n ON n.oid=c.relnamespace WHERE con.contype='f' AND NOT con.convalidated AND n.nspname IN ('wiki','wiki_private') ORDER BY n.nspname,c.relname,con.conname");
