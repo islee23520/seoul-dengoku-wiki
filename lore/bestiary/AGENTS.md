@@ -11,7 +11,7 @@ Atlas의 생태 레지스트리를 집단별 읽기 전용 JSON으로 나누는 
 | 집단별 생태·시나리오·개체 | `groups/Hostile-Group-Gxx.json` |
 | 실제 수정 원천 | `../World-Narrative-Atlas.json` |
 | 재생성 구현 | 루트 `scripts/materialize-world-atlas.mjs` |
-| 투영 계약 검증 | 루트 `scripts/test-world-atlas.mjs` |
+| 투영 확인 | 루트 `scripts/materialize-world-atlas.mjs --check` |
 
 ## CONVENTIONS
 - 도메인별 과거 자료와 현재 head·승인 상태를 대조하며, 삭제된 JSON 원천을 다시 만들지 않는다.
@@ -31,4 +31,3 @@ Atlas의 생태 레지스트리를 집단별 읽기 전용 JSON으로 나누는 
 
 ## COMMANDS
 `node scripts/materialize-world-atlas.mjs --atlas lore/World-Narrative-Atlas.json --out lore --check`
-`npm run test:atlas`

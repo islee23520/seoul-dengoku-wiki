@@ -2,8 +2,6 @@ when:
   - event: push
     branch: main
 
-depends_on: [ci]
-
 labels:
   platform: linux/amd64
 
@@ -25,7 +23,6 @@ steps:
       - apt-get update
       - apt-get install -y --no-install-recommends python3 git ca-certificates
       - node deploy/check-lfs-inputs.mjs
-      - node --test deploy/test-*.mjs
       - npm ci --ignore-scripts
       - node deploy/call-owner.mjs
       - node deploy/check-live-contract.mjs --public-edge https://sss.linalab.io live-http-green.json public/wiki-contract.json

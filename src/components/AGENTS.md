@@ -32,6 +32,4 @@
 - 제보의 화면 텍스트와 원천 span 대응을 DOM 문자열 추측으로 대체하지 않는다.
 
 ## 검증 연결
-- 지도 변경은 루트 `npm run test:territory-map`과 관련 `scripts/test-*.mjs` 범위를 확인한다.
-- 가계도·가문 데이터 연결은 `npm run test:families`, 인물 연결은 `npm run test:person-details`를 대조한다.
-- 제보 원천 매핑 변경은 `npm run test:feedback-catalog`의 생성물 계약과 함께 확인한다.
+- 지도·가계도·인물·제보 변경은 실제 화면과 생성 데이터 계약을 대조한다. 테스트 스위트는 제거되었으며 새 테스트 스크립트는 작성하지 않는다.

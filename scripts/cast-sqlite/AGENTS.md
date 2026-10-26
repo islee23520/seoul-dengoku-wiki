@@ -33,8 +33,6 @@
 npm run cast:build -- --output /tmp/wiki-cast-new.sqlite
 npm run cast:query -- --db data/canonical/wiki-cast.sqlite person --id K1022
 npm run cast:verify -- --db data/canonical/wiki-cast.sqlite
-npm run test:cast-sqlite
-npm run test:cast-sqlite:readme
 ```
 `cast:verify`는 현재 SQLite storage·head·privacy를 읽기 전용 검사한다. 과거 JSON freshness·offline/full 구분은 현행 검증 계약이 아니다.
 

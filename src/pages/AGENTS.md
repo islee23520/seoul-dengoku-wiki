@@ -33,6 +33,4 @@
 - 아트 API의 권한 상태와 공개 초상화 존재를 동일한 허가로 간주하지 않는다.
 
 ## 검증 연결
-- 인물 화면은 `npm run test:person-details`, 목록은 `npm run test:people`을 확인한다.
-- 기사 route 변경은 `test:states`, `test:legacy-routes`, `test:region-routes`, `test:json-locale-routes` 중 해당 범위를 실행한다.
-- 렌더링 계약 변경은 `test:document-renderer`, 분류는 `test:categories`와 연결된다.
+- 인물·목록·기사 route·렌더링·분류 변경은 실제 화면과 문서 API 응답을 확인한다. 테스트 스위트는 제거되었으며 새 테스트 스크립트는 작성하지 않는다.

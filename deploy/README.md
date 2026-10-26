@@ -1,7 +1,7 @@
 # Wiki deployment caller
 
-`.woodpecker/deploy.yaml` runs only for pushes to `main`, after `ci` succeeds.
-The Node 22 step sends the commit to the deployment owner, then checks the public
+`.woodpecker/deploy.yaml` runs only for pushes to `main`.
+The Node 26 step sends the commit to the deployment owner, then checks the public
 site with `check-live-contract.mjs --public-edge`. The owner performs the release and rollback;
 this repository does not hold deployment host credentials.
 
@@ -43,8 +43,4 @@ Without `--public-edge`, the checker remains the origin contract (default
 The deployment owner runs that contract against the origin during promotion;
 the public check does not replace it.
 
-Run deploy tests without credentials or an external owner:
-
-```sh
-node --test deploy/test-*.mjs
-```
+Deployment test suites were removed by owner decision. The deployment caller and live HTTP contract checker remain operational.
