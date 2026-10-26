@@ -15,6 +15,7 @@
     "cast:build": "node scripts/cast-sqlite/build.mjs",
     "cast:query": "node scripts/cast-sqlite/query.mjs",
     "cast:verify": "node scripts/cast-sqlite/verify.mjs",
+    "cast:pg-verify": "node scripts/postgres-migration/reconcile.mjs",
     "db:load": "node scripts/mongo-load.mjs",
     "report:feedback-catalog": "node scripts/feedback-source-catalog-report.mjs"
   },
