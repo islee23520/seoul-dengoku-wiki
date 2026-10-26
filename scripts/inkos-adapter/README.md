@@ -244,3 +244,20 @@
 - SQLite 정본 쓰기 및 초안 반영 명령 연결
 - 다중 문서 읽기 집합 검증과 편집을 하나의 쓰기 트랜잭션으로 묶는 read-set 트랜잭션 확장
 - 작업자 OS 격리 구축 및 실제 외부 모델·프로바이더 전송
+
+## 9. 회귀 시험 실행
+
+`test-inkos-adapter-*.mjs` 6종(`contracts`, `export`, `collect`, `prepare`, `attacks`, `cli`)은 순수 `node:test`로 실행되며 npm 스크립트나 vitest에 의존하지 않는다(PR #625 이후 저장소 원칙 유지).
+
+```sh
+node --test --test-concurrency=1 scripts/cast-sqlite/test-inkos-adapter-contracts.mjs \
+  scripts/cast-sqlite/test-inkos-adapter-export.mjs \
+  scripts/cast-sqlite/test-inkos-adapter-collect.mjs \
+  scripts/cast-sqlite/test-inkos-adapter-prepare.mjs \
+  scripts/cast-sqlite/test-inkos-adapter-attacks.mjs \
+  scripts/cast-sqlite/test-inkos-adapter-cli.mjs
+```
+
+- 직렬 실행(`--test-concurrency=1`)을 권장한다. `io.mjs`의 조상 ctime 검사가 공유 임시 디렉터리의 무관한 동시 생성에도 반응해 병렬 실행에서 `E_ADAPTER_PATH` 오탐이 발생할 수 있다(F2/F4 residual).
+- `test-inkos-adapter-cli.mjs`는 실행 시 `.omo/evidence/inkos-adapter-followup/cli-proof.json`을 재생성한다(재사용 가능 진단 산출물).
+- 6종은 어댑터 경계만 다룬다. `test-document-*.mjs` 등 기반 계약 시험은 PR #625에서 삭제돼 이 복원 범위 밖이다.
