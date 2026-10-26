@@ -18,7 +18,7 @@ export const syntheticDocument = (id = 'SYN-target') => ({ version: 1, domain: '
 
 /** Storage-only synthetic admission, never a production approval issuer. Caller
  * owns cleanup; every database is created beneath a fresh owned directory. */
-export function createInkosAdapterFixture({ parent = tmpdir(), authorityVersion = 2 } = {}) {
+export function createInkosAdapterFixture({ parent = tmpdir(), authorityVersion = 2, mixedStructure = false } = {}) {
   if (![1, 2].includes(authorityVersion)) throw new TypeError('authorityVersion must be 1 or 2');
   const directory = mkdtempSync(join(parent, 'inkos-adapter-'));
   const dbPath = join(directory, 'synthetic.sqlite');
@@ -32,7 +32,13 @@ export function createInkosAdapterFixture({ parent = tmpdir(), authorityVersion 
       const statement = db.prepare(`INSERT INTO ${table}(${names}) VALUES(${names.map(() => '?')})`);
       for (const row of rows) statement.run(...names.map(name => row[name]));
     };
-    const documents = [syntheticDocument(), syntheticDocument('SYN-context')];
+    const target = syntheticDocument();
+    if (mixedStructure) target.content = [
+      { kind: 'heading', anchor: '개요-h1', depth: 1, text: { ko: '개요', en: 'Overview' } },
+      { kind: 'list', anchor: '개요-list', items: [{ ko: [{ text: '합성 목록 항목' }], en: [{ text: 'Synthetic list item' }] }] },
+      ...target.content,
+    ];
+    const documents = [target, syntheticDocument('SYN-context')];
     const files = documents.map((document, i) => {
       const source_id = i + 1;
       const logical_path = `/synthetic-unopened/${document.id}.json`;

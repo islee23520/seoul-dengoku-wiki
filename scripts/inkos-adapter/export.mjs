@@ -56,10 +56,13 @@ export function exportPacket({ dbPath, selection, trustedRoot, workerOut }) {
       if (tuple.domain !== 'technology') fail('E_ADAPTER_UNSUPPORTED', 'unsupported document domain');
       const document = readDocument(db, { corpusKind: tuple.corpusKind, domain: tuple.domain, documentId: tuple.documentId, visibility: 'public' });
       if (!document) fail('E_ADAPTER_PUBLIC', 'selected document is not currently publicly admitted');
-      const excerpts = document.content.map(node => {
-        if (node.kind !== 'paragraph' || typeof node.text?.ko !== 'string') fail('E_ADAPTER_UNSUPPORTED', 'paragraph/string structure required');
-        return { anchor: node.anchor, text: node.text.ko };
-      });
+      const excerpts = [];
+      for (const node of document.content) {
+        // Mixed-structure documents (headings, lists, tables) are publicly admitted
+        // as a whole; the worker bundle carries only stable Korean string paragraph
+        // slots, so non-paragraph nodes are skipped instead of rejected.
+        if (node.kind === 'paragraph' && typeof node.text?.ko === 'string') excerpts.push({ anchor: node.anchor, text: node.text.ko });
+      }
       if (index === 0 && !excerpts.some(excerpt => excerpt.anchor === tuple.anchor)) fail('E_ADAPTER_UNSUPPORTED', 'existing Korean paragraph anchor required');
       const sourceId = document.readMetadata.source_id;
       const head = db.prepare(`SELECT r.revision_id,r.semantic_sha256 FROM document_head h

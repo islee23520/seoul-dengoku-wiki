@@ -52,7 +52,7 @@
 
 | 하위 명령 | 필수 플래그 | 동작 요약 |
 | --- | --- | --- |
-| `export` | `--db DB --selection SEL --trusted-root HOST --worker-out WORKER` | `SEL`에서 선택한 `current`/`technology`/한국어 문단 읽기 집합이 공개 허용 상태인지 단일 읽기 스냅숏으로 확인한 뒤, `HOST/packets/<packetId>/`에 `manifest.json`과 `bundle.json`을, 새 디렉터리 `WORKER/`에 `bundle.json`을 배타 생성한다. |
+| `export` | `--db DB --selection SEL --trusted-root HOST --worker-out WORKER` | `SEL`에서 선택한 `current`/`technology` 읽기 집합이 공개 허용 상태인지 단일 읽기 스냅샷으로 확인한 뒤, 안정 한국어 문단 슬롯의 `{ anchor, text }` 발췌만 담은 `bundle.json`을 만들어 `HOST/packets/<packetId>/`에 `manifest.json`과 함께, 새 디렉터리 `WORKER/`에 배타 생성한다. 혼합 구조(heading·목록·표 포함) 문서에서는 문단 노드만 발췌하고 비문단 노드는 건너뛴다. |
 | `collect` | `--trusted-root HOST --packet-id PID --candidate RETURN --db DB --out CANDIDATE` | 호스트가 지정한 `RETURN` 파일을 `O_NOFOLLOW` 단일 링크 일반 파일로 읽어 `HOST/packets/<PID>/manifest.json` 및 `bundle.json`과 대조하고, 불변 영수증(`HOST/candidates/<candidateId>.json`), 신뢰 인덱스(`HOST/index/<candidateId>.json`), 호출자 사본(`CANDIDATE`)을 기록한다. |
 | `prepare-draft` | `--trusted-root HOST --candidate-id CID --db DB --out PREVIEW` | `HOST/index/<CID>.json`을 통해 영수증·매니페스트·원본 후보 파일 디스크립터를 고정하고, `DB`의 단일 읽기 스냅숏에서 권한 버전과 전체 읽기 집합의 head·의미 해시·공개 허용 다이제스트를 재검증한 뒤, 대상 한국어 문단 슬롯 하나만 교체한 `status: "draft"` 미리보기를 `PREVIEW`에 배타 생성한다. |
 | `--help` | (추가 인자 없음) | 지원 명령 목록과 운영 경계 문자열을 JSON으로 출력한다. |
@@ -94,7 +94,7 @@
 | `E_ADAPTER_PUBLIC` | `export.mjs` | 선택 문서가 현재 공개 허용(`document_publication_admission`) 상태가 아니거나 봉인된 의미 해시와 일치하지 않음. |
 | `E_ADAPTER_SCHEMA` | `contracts.mjs`, `collect.mjs`, `prepare.mjs` | 버전, UUID v4, 64자 소문자 SHA-256, 불투명 토큰, 허용 필드 집합, 프로토타입·배열 밀도 등 계약 스키마 위반. |
 | `E_ADAPTER_STALE` | `prepare.mjs` | 내보내기 이후 DB의 `authorityVersion`, 공개 허용 여부, 문서 head `revision`, `semanticSha256`, `admissionDigest` 중 하나라도 변경됨. |
-| `E_ADAPTER_UNSUPPORTED` | `export.mjs`, `io.mjs` | 지원하지 않는 문서 도메인(`technology` 외)·문단 외 구조, 또는 `O_NOFOLLOW`/허용 로컬 파일시스템 요건 미충족. |
+| `E_ADAPTER_UNSUPPORTED` | `export.mjs`, `io.mjs` | 지원하지 않는 문서 도메인(`technology` 외)·대상 앵커가 안정 한국어 문단 슬롯이 아닌 경우, 또는 `O_NOFOLLOW`/허용 로컬 파일시스템 요건 미충족. |
 | `E_ADAPTER_UNSUPPORTED_CHANGE` | `prepare.mjs` | 대상 슬롯이 기존 안정 한국어 문단 문자열이 아니거나 인라인 앵커(`<a id="..."></a>`) 목록을 변경하려 함. |
 
 ## 7. 호스트 매니페스트와 후보 영수증 대응 예시 (T6 실증 기록 기준)
@@ -247,7 +247,7 @@
 
 ## 9. 회귀 시험 실행
 
-`test-inkos-adapter-*.mjs` 6종(`contracts`, `export`, `collect`, `prepare`, `attacks`, `cli`)은 순수 `node:test`로 실행되며 npm 스크립트나 vitest에 의존하지 않는다(PR #625 이후 저장소 원칙 유지).
+`test-inkos-adapter-*.mjs` 7종(`contracts`, `export`, `collect`, `prepare`, `attacks`, `cli`, `mixed-structure`)은 순수 `node:test`로 실행되며 npm 스크립트나 vitest에 의존하지 않는다(PR #625 이후 저장소 원칙 유지).
 
 ```sh
 node --test --test-concurrency=1 scripts/cast-sqlite/test-inkos-adapter-contracts.mjs \
@@ -255,9 +255,10 @@ node --test --test-concurrency=1 scripts/cast-sqlite/test-inkos-adapter-contract
   scripts/cast-sqlite/test-inkos-adapter-collect.mjs \
   scripts/cast-sqlite/test-inkos-adapter-prepare.mjs \
   scripts/cast-sqlite/test-inkos-adapter-attacks.mjs \
-  scripts/cast-sqlite/test-inkos-adapter-cli.mjs
+  scripts/cast-sqlite/test-inkos-adapter-cli.mjs \
+  scripts/cast-sqlite/test-inkos-adapter-mixed-structure.mjs
 ```
 
 - 직렬 실행(`--test-concurrency=1`)을 권장한다. `io.mjs`의 조상 ctime 검사가 공유 임시 디렉터리의 무관한 동시 생성에도 반응해 병렬 실행에서 `E_ADAPTER_PATH` 오탐이 발생할 수 있다(F2/F4 residual).
 - `test-inkos-adapter-cli.mjs`는 실행 시 `.omo/evidence/inkos-adapter-followup/cli-proof.json`을 재생성한다(재사용 가능 진단 산출물).
-- 6종은 어댑터 경계만 다룬다. `test-document-*.mjs` 등 기반 계약 시험은 PR #625에서 삭제돼 이 복원 범위 밖이다.
+- 7종은 어댑터 경계만 다룬다. `test-document-*.mjs` 등 기반 계약 시험은 PR #625에서 삭제돼 이 복원 범위 밖이다.
