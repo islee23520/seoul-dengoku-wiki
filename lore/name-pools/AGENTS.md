@@ -8,8 +8,8 @@
 | 작업 | 위치 |
 |---|---|
 | 영구 ID 발급·승계 | `person-id-registry.json`, `issue-person-ids.mjs`, `person-id-values-successor.mjs` |
-| 후보 신원 | `person-id-candidates.json`, `verify-person-id-candidates.mjs` |
-| registry 검증 | `verify-person-id-registry.mjs` |
+| 후보 신원 | SQLite 논리 문서 `person-id-candidates.json` |
+| registry 조회 | `issue-person-ids.mjs`, `person-id-values-successor.mjs` |
 | 본관·항렬 계약 | `hangnyeol-schema.md`, `surnames-bongwan.json`, `clan-hangnyeol-tables.json`, `cast-hangnyeol.json` |
 | 단순 이름 풀·중복 | `surnames.json`, `given-male.json`, `given-female.json`, `existing-names.json` |
 | 생일·세대·가계 | `cast-birthdays.json`, `cast-birth-cohorts.json`, `cast-family-*.json` |
@@ -35,5 +35,4 @@
 - 후보 발급·원문 등록·검토 승인·공개 게시를 한 단계로 처리하지 않는다.
 
 ## COMMANDS
-루트 `npm run test:person-id`는 두 `verify-person-id-*.mjs`를 실행한다.
-파생 조회 데이터 변경은 `npm run test:cast-sqlite`, `npm run cast:verify -- --db data/canonical/wiki-cast.sqlite`와 연결한다.
+테스트 스위트는 제거되었다. 파생 조회 데이터 변경은 `npm run cast:verify -- --db data/canonical/wiki-cast.sqlite`와 실제 조회 결과로 확인한다.

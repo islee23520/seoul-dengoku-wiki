@@ -59,7 +59,7 @@ seoul-dengoku-wiki/
 - 공개 문서 저작은 SQLite-first다. `.json` 이름은 DB 논리 ID이며 공개 JSON은 생성물이다. 편집 절차는 `lore/AUTHORING-JSON.md`를 따른다.
 - `@seoul-dengoku/document-renderer`, `@seoul-dengoku/shared-web-ui`는 `vendor/*.tgz` 의존성이다.
 - `vendor/seoul-dengoku-inkos`는 소유자의 InkOS 포크 서브모듈이다. `npm run inkos:install`로 고정 commit을 pnpm 10으로 설치·빌드하고 `npm run inkos -- --help`로 실행한다. 별도 작업 디렉터리에서 별도 프로세스로 사용하며 공개 정본·비공개 DB를 읽거나 쓰도록 연결하지 않는다. `scripts/inkos-adapter/README.md`의 후보 전용·읽기 전용 경계는 그대로 유지한다. 위키 검사·생성·배포 입력에 포크를 포함하지 않는다.
-- `npm test`는 제한된 suite다. 전체 Vitest와 추가 Node 검사는 `npm run test:parent`가 실행한다.
+- 테스트 스위트는 제거되었다(2026-10-26 소유자 결정). 데이터 검증은 `npm run cast:verify`와 `npm run generate` 게이트가 담당한다.
 - 아래 기존 소유자 정책은 원문 그대로 유지하며 계속 적용한다.
 
 - 세계관·인물·세력·무공·아이템·대사·위키를 작성·수정·검토하기 전에 [WORLD_BUILDING_GUIDE.md](WORLD_BUILDING_GUIDE.md)를 끝까지 읽는다. 이 지침은 이 저장소의 집필·기여 표면에 적용하며, 최신 사용자·디렉터 지시와 승인 상태를 함께 대조한다. 무공 분류는 그 가이드와 명명 원장의 승인본을 따르고, 옛 여덟 유파·여섯 분류·현장 별칭 문장으로 되돌리지 않는다.
@@ -88,15 +88,9 @@ npm ci --ignore-scripts
 npm run dev
 npm run generate
 npm run build
-npm test
-npm run test:parent
-npm run test:lore-json
-npm run test:cast-sqlite
 npm run cast:build -- --output /tmp/wiki-cast-new.sqlite
 npm run cast:verify -- --db data/canonical/wiki-cast.sqlite
-npm run test:contract
 npm run check:artifacts
-node --test deploy/test-*.mjs
 node server/wiki-api.mjs
 ```
 
@@ -104,5 +98,5 @@ node server/wiki-api.mjs
 - release lock은 Python `fcntl.flock`을 사용한다. Windows에서 generate/build의 즉시 실행 가능성을 단정하지 않는다.
 - release lock은 협조하는 generate/build만 보호한다. 생성 중 dev·직접 tsc/vite reader를 중지한다.
 - cast-sqlite는 Node.js >=24.15.0이 필요하다. export는 checkout 밖 아직 없는 경로만 허용하며 SQLite 정본을 재빌드 교체하지 않는다.
-- lore·SQLite CI와 Woodpecker는 현재 Node 26을 사용한다. 버전 변경 시 현행 workflow를 확인한다.
-- build/gate/test는 MongoDB 없이 동작한다. API 기본값은 `PORT=8787`, `HOST=0.0.0.0`, `DATA_DIR=public/`다.
+- Woodpecker 배포는 현재 Node 26을 사용한다. 버전 변경 시 현행 workflow를 확인한다.
+- build/gate는 MongoDB 없이 동작한다. API 기본값은 `PORT=8787`, `HOST=0.0.0.0`, `DATA_DIR=public/`다.

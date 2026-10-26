@@ -21,7 +21,7 @@ OSM 자료는 `© OpenStreetMap contributors`, ODbL 1.0 조건을 유지한다. 
 
 - `content/<구 코드>.json`: 해당 구에 속한 모든 동의 최종 저작 내용. 다른 구의 시설을 이름만 보고 가져오지 않는다.
 - 이 작업트리에는 옛 공간·객체 원장 생성 도구(`TOOL/tools/regions/`)와 `WIKI/` 별도 저장소가 없다. 아래 과거 명령은 여기서 실행 가능한 현행 검증 절차가 아니다.
-- 현행 지도 원천은 [`../places/World-and-Subway-Layers.json`](../places/World-and-Subway-Layers.json)이며, 지역 JSON의 저장소 내 검증은 루트에서 `npm run test:lore-json`으로 수행한다.
+- 현행 지도 원천은 [`../places/World-and-Subway-Layers.json`](../places/World-and-Subway-Layers.json)이며, 원천 변경은 기존 데이터 검증 도구와 실제 생성 결과로 확인한다.
 - 공간 생성물과 검증 기록: `.omo/evidence/seoul-regions/`. 이 폴더의 존재만으로 콘텐츠 완료를 판단하지 않는다.
 
 각 동은 주민·생업, 산출/입력/부족, 위험, 개막 상태, 이웃과의 관계, 플레이어 행동/비용/결과/대가, **건물 재사용**을 가진다. 건물 칸은 `content.buildings`다. 강·구·동 규칙은 [강·구·동 건물 재사용](../places/Building-Reuse-Geography.json)이 정본이다. 장소와 태그는 관측, 경계·소속·면적은 계산, 붕괴 뒤 주민과 사건은 창작이다. OSM 태그만으로 기관의 현재 가동을 말하지 않는다.
@@ -35,7 +35,7 @@ OSM 자료는 `© OpenStreetMap contributors`, ODbL 1.0 조건을 유지한다. 
 원자료의 태그 있는 node와 모든 way/relation을 처리 원장에 남긴다. 이름 없는 객체도 남기고, 같은 이름을 한 시설로 합치지 않는다. 후보는 내부 할당, 외부, 도형 미완성 격리 중 하나로 기록한다. 선택 자료를 다 처리한 것과 현실 시설을 확인한 것은 별개다.
 
 ```bash
-npm run test:lore-json
+node scripts/lore-json-validate.mjs --public --strict
 ```
 
 옛 `prepare_boundary.py`·`build_region_atlas.py`·`assemble_region_content.py`·`verify_region_atlas.py` 절차는 이 작업트리 밖의 과거 도구 기록이다. 그 도구나 입력 번들이 다시 제공되기 전에는 재생성 가능하다고 주장하지 않는다. 현행 검증은 JSON 구문·스키마·링크 계약을 검사하며, 공간 원자료의 독립 재생성이나 서사 적합성 검토를 대신하지 않는다.

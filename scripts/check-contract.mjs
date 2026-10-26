@@ -11,8 +11,7 @@ import { requireSeoulPublication } from './check-seoul-scope.mjs'
 import { buildAdminTerritorialScale, validateAdminTerritorialScale, buildAdminTerritorialScaleFromDb } from './admin-territorial-scale.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
 import { readGeographyStore } from './cast-sqlite/geography-store.mjs'
-import { readEvidenceDocumentReference } from './cast-sqlite/evidence-document-reference.mjs'
-import { orderDocumentKeys } from './cast-sqlite/document-key-order.mjs'
+import { readScopeCurrentSource } from './document-store/scope-current-source.mjs'
 import { validatePublishedGeographyMap } from './published-geography-map.mjs'
 import { publicTerritorialScale } from '../src/components/geographicTitleMap.mjs'
 import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
@@ -69,9 +68,9 @@ try {
       db.exec('BEGIN')
       geographicScale = buildAdminTerritorialScaleFromDb(db)
       geography = readGeographyStore(db)
-      const offices = readEvidenceDocumentReference(db, { logicalPath: 'lore/offices/Offices-and-Ranks.json',
+      const offices = readScopeCurrentSource({ db, logicalPath: 'lore/offices/Offices-and-Ranks.json',
         expectedSha256: '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e' })
-      descriptor = orderDocumentKeys(db, offices.sourceId, offices.document).data.territorialScale
+      descriptor = offices.data.territorialScale
       db.exec('COMMIT')
     } finally { db.close() }
   } else {

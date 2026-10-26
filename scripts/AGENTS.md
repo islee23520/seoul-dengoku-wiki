@@ -25,7 +25,7 @@
 - `public/`, `src/generated/`, `src/generated-private/`의 변경은 stage·journal 계약을 함께 확인한다.
 - 원천 해시·승인 receipt·현재성·공개 편입은 별도 판단이다. materialize 성공을 승인으로 취급하지 않는다.
 - `historical-inputs/`의 보존 자료를 현재 서울 자료의 자동 대체재로 쓰지 않는다.
-- 테스트는 같은 디렉터리의 `test-*.mjs`에 둔다. Vitest와 `node:test`가 혼재하므로 `package.json`의 실행기를 확인한다.
+- 소유자 결정으로 테스트 스위트를 제거했다. 새 테스트 스크립트를 작성하지 않고 기존 데이터 검증 도구와 실제 실행 결과를 사용한다.
 - Python GIS 도구는 각 파일의 실행·의존성 선언을 확인한다. release lock broker는 `python3`와 `fcntl.flock`을 사용한다.
 
 ## COMMANDS
@@ -34,13 +34,7 @@
 ```bash
 npm run generate
 npm run build
-npm run test:lore-json
-npm run test:admission
-npm run test:gate
-npm run test:person-details
-npm run test:territory-map
-npm run check:artifacts
-npm run test:parent
+npm run cast:verify -- --db data/canonical/wiki-cast.sqlite
 ```
 
 ## ANTI-PATTERNS
@@ -48,4 +42,4 @@ npm run test:parent
 - pending review를 임의 receipt나 hash 갱신으로 통과시키지 않는다. 승인 인증기의 실패 원인을 확인한다.
 - `.generate-release-transaction`의 journal을 충돌 해결 대신 삭제하거나 제3자의 수정본을 덮어쓰지 않는다.
 - 편집·영혼·증거 원천을 공개 catalog나 브라우저 payload에 섞지 않는다.
-- 전체 `test-*.mjs`를 한 실행기로 가정하지 않는다. `npm test`는 `test:parent`의 전체 검사와 범위가 다르다.
+- 삭제된 테스트 명령을 CI나 문서에 다시 등록하지 않는다.

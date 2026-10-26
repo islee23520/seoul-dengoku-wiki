@@ -13,6 +13,28 @@ const KING_DIRECT_SAMEHOLDER_DUCHY_CAP = 2
 const NONOWNING_POWERS = ['receive-holding-change-notice', 'lodge-nonbinding-registry-objection']
 
 const fail = message => { throw new Error(message) }
+const composedTransitions = new WeakMap()
+const rightsDigest = args => createHash('sha256').update(JSON.stringify([args.existing, args.allocation, args.people, args.affiliation, args.seoul, args.outside, args.control])).digest('hex')
+
+export function composeConsolidationTransition(current, predecessor, historical, transition, decisionBytes) {
+  if (!(decisionBytes instanceof Uint8Array) || createHash('sha256').update(decisionBytes).digest('hex') !== 'd0378abb6ef9578a847c133247faabb06d758b968d35f1193b4e4feb83701c54') fail('E_CONSOLIDATION_APPROVAL')
+  validateApprovedRightsTransition(predecessor, historical, transition)
+  const decision = JSON.parse(Buffer.from(decisionBytes).toString())
+  const expected = structuredClone({ existing: predecessor.existing, allocation: predecessor.allocation, people: predecessor.people })
+  const retiredHoldings = new Set(['holding:daejeon-dong', 'holding:daejeon-yuseong', 'holding:daejeon-jung', 'holding:daejeon-seo', 'holding:daejeon-daedeok'])
+  const retiredTitles = new Set(['title:kingdom-daejeon', 'proposal:superior-jurisdiction:seoul:daejeon-dong', 'proposal:superior-jurisdiction:seoul:daejeon-jung', 'proposal:superior-jurisdiction:seoul:daejeon-seo', 'proposal:superior-jurisdiction:seoul:daejeon-yuseong', 'proposal:superior-jurisdiction:seoul:daejeon-daedeok'])
+  expected.existing.holdings = expected.existing.holdings.filter(row => !retiredHoldings.has(row.id))
+  expected.existing.polities = expected.existing.polities.filter(row => row.id !== 'polity:daejeon')
+  expected.allocation.titles = expected.allocation.titles.filter(row => !retiredTitles.has(row.id)).concat(decision.kingdomTitleRows)
+  expected.allocation.existingTitleBindings = expected.allocation.existingTitleBindings.filter(row => !retiredHoldings.has(row.holdingId))
+  const moved = new Set(['K035', 'K038', 'K039', 'K1008', 'K1003'])
+  for (const person of expected.people) if (moved.has(person.id)) person.state = 'S02'
+  for (const key of ['existing', 'allocation', 'people']) if (!isDeepStrictEqual(current[key], expected[key])) fail('E_CONSOLIDATION_DELTA:' + key)
+  if (!isDeepStrictEqual(current.affiliation, predecessor.affiliation)) fail('E_CONSOLIDATION_DELTA:affiliation')
+  const token = Object.freeze({})
+  composedTransitions.set(token, { digest: rightsDigest(current), geographicTitles: structuredClone(decision.kingdomTitleRows) })
+  return token
+}
 
 function requireObject(value, code) {
   if (!value || typeof value !== 'object' || Array.isArray(value)) fail(code)
@@ -332,6 +354,14 @@ function validateTitles(allocation, ctx) {
     const stateId = requireString(title.stateId, 'E_TITLE_SHAPE:' + id)
     requireString(title.basis, 'E_TITLE_BASIS:' + id)
     checkRealmMembership(ctx.membership, holder, stateId, 'E_TITLE_MEMBERSHIP:' + id)
+    const geographicApproval = ctx.geographicTitles?.find(row => row.id === id)
+    if (geographicApproval) {
+      const geography = ctx.geographic?.byId.get(title.geographicTitleId)
+      if (!isDeepStrictEqual(title, geographicApproval) || title.rank !== 'kingdom'
+        || geography?.rank !== 'kingdom') fail('E_GEOGRAPHIC_KINGDOM:' + id)
+      byId.set(id, title)
+      continue
+    }
     if (recordKind(title, true) !== 'direct-property') {
       validateNonowningTitle(title, ctx)
       byId.set(id, title)
@@ -636,7 +666,9 @@ export function projectOpeningFeudalAllocation(args) {
 
 function projectRightsAllocation(args, historicalScaleRows, geographic = null) {
   const { allocation, existing, people, seoul, outside, control, affiliation } = requireObject(args, 'E_ARGS_SHAPE')
-  if (args.rightsTransition !== undefined) validateApprovedRightsTransition(args, args.historicalRights, args.rightsTransition)
+  if (args.consolidationTransition !== undefined) {
+    if (composedTransitions.get(args.consolidationTransition)?.digest !== rightsDigest(args)) fail('E_CONSOLIDATION_COMPOSITION')
+  } else if (args.rightsTransition !== undefined) validateApprovedRightsTransition(args, args.historicalRights, args.rightsTransition)
   else if (allocation?.politicalIdentities !== undefined && !historicalScaleRows) fail('E_TRANSITION_REQUIRED')
   requireObject(allocation, 'E_ALLOCATION_SHAPE')
   if (allocation.schema !== OPENING_FEUDAL_ALLOCATION_SCHEMA) fail('E_ALLOCATION_SCHEMA:' + allocation.schema)
@@ -647,6 +679,7 @@ function projectRightsAllocation(args, historicalScaleRows, geographic = null) {
   const ctx = {
     existing,
     geographic,
+    geographicTitles: composedTransitions.get(args.consolidationTransition)?.geographicTitles,
     historicalScaleRows,
     nonowningRights: buildNonowningRights(args.nonowningRights),
     peopleById: buildPeopleIndex(people),

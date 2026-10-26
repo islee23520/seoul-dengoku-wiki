@@ -101,17 +101,27 @@ function exactKeys(command, keys) {
 }
 
 /** Existing-file only; never creates an empty authority, imports sources or rebuilds domains. */
-export function editDocument({ dbPath, documentId, corpusKind, domain, expectedRevision, actor, reason, changes }) {
+export function editDocument({ dbPath, documentId, corpusKind, domain, expectedRevision, actor, reason, changes, dependentEditors }) {
   if (!statSync(dbPath).isFile()) fail('E_DOCUMENT_DATABASE', 'existing database file required');
   const db = new DatabaseSync(dbPath, { enableForeignKeyConstraints: true });
-  try { return editDocumentOnConnection(db, { documentId, corpusKind, domain, expectedRevision, actor, reason, changes }); }
+  try { return editDocumentOnConnection(db, { documentId, corpusKind, domain, expectedRevision, actor, reason, changes, dependentEditors }); }
   finally { db.close(); }
 }
 
-export function editDocumentOnConnection(db, { documentId, corpusKind, domain, expectedRevision, actor, reason, changes }) {
+export function editDocumentOnConnection(db, options) {
+  return editDocumentInTransaction(db, options, withTransaction);
+}
+
+/** Multiple sealed revisions and their dependent projections commit or roll back together. */
+export function editDocumentsOnConnection(db, edits) {
+  if (!Array.isArray(edits) || !edits.length) fail('E_DOCUMENT_COMMAND', 'nonempty edits required');
+  return withTransaction(db, () => edits.map((options) => editDocumentInTransaction(db, options, (_, fn) => fn())));
+}
+
+function editDocumentInTransaction(db, { documentId, corpusKind, domain, expectedRevision, actor, reason, changes, dependentEditors, expectedSemanticSha256 }, transact) {
   schemaIdentity(db); requireText(actor); requireText(reason);
   if (!Array.isArray(changes) || !changes.length) fail('E_DOCUMENT_COMMAND', 'nonempty typed commands required');
-  try { return withTransaction(db, () => {
+  try { return transact(db, () => {
     const document = readDocument(db, { documentId, corpusKind, domain, visibility: 'internal' });
     if (!document) fail('E_DOCUMENT_NOT_FOUND', 'document absent');
     const sourceId = document.readMetadata.source_id;
@@ -126,20 +136,25 @@ export function editDocumentOnConnection(db, { documentId, corpusKind, domain, e
     const dependencies = db.prepare("SELECT name FROM sqlite_schema WHERE type='table' AND name NOT LIKE 'sqlite_%'").all()
       .map((r) => r.name).filter((table) => !tables.includes(table) && !table.startsWith('document_')
         && !['source_file', 'source_record', 'article_route'].includes(table) && columns(db, table).includes('source_id'));
+    const handled = dependentEditors?.handledTables ?? []
     for (const table of dependencies) {
-      if (db.prepare(`SELECT 1 FROM ${table} WHERE source_id=? LIMIT 1`).get(sourceId)) fail('E_DOCUMENT_DOMAIN_EDITOR_REQUIRED', `dependent ${table} requires its typed editor`);
+      if (!handled.includes(table) && db.prepare(`SELECT 1 FROM ${table} WHERE source_id=? LIMIT 1`).get(sourceId)) fail('E_DOCUMENT_DOMAIN_EDITOR_REQUIRED', `dependent ${table} requires its typed editor`);
     }
-    const structural = changes.some((c) => ['insertNode', 'deleteNode', 'reorderNodes'].includes(c?.type));
+    const structural = changes.some((c) => ['insertNode', 'deleteNode', 'reorderNodes', 'appendTableRow'].includes(c?.type));
     if (structural && db.prepare('SELECT version FROM document_authority').get().version !== 2) {
       upgradeStructuralAuthority(db, tables, readFileSync(new URL('./document-authority.sql', import.meta.url), 'utf8'));
     }
     for (const command of changes) applyCommand(db, sourceId, command);
     if (structural) resolveStructuralLinks(db, sourceId);
+    if (dependentEditors?.sync) dependentEditors.sync(db, sourceId);
     const candidate = readDocument(db, { documentId, corpusKind, domain, visibility: 'internal' });
     if (digest(candidate) === digest(document)) fail('E_DOCUMENT_NO_CHANGE', 'commands do not change content');
     // Approval is never inherited from an old body, including metadata-only edits.
     db.prepare("UPDATE text_document SET status='draft' WHERE source_id=?").run(sourceId);
     const semanticSha256 = digest(readDocument(db, { documentId, corpusKind, domain, visibility: 'internal' }));
+    if (expectedSemanticSha256 !== undefined && semanticSha256 !== expectedSemanticSha256) {
+      fail('E_DOCUMENT_EXPECTED_BODY', 'typed result differs from exact approved semantic hash');
+    }
     const sequence = db.prepare('SELECT sequence FROM document_authority WHERE singleton=1').get().sequence + 1;
     const revision = hash(canonical(['typed-envelope-v1', sourceId, head.revision_id, semanticSha256, actor, reason]));
     recordRevision(db, { sourceId, revision, parent: head.revision_id, semanticSha256, actor, reason, sequence });
@@ -157,6 +172,29 @@ export function editDocumentOnConnection(db, { documentId, corpusKind, domain, e
 
 function applyCommand(db, sourceId, command) {
   switch (command?.type) {
+    case 'setAtlasAdditionalPersonState': {
+      exactKeys(command, ['type', 'personId', 'expectedStateId', 'stateId']);
+      requireText(command.personId); requireText(command.stateId);
+      if (command.expectedStateId !== null) requireText(command.expectedStateId);
+      const identity = db.prepare('SELECT document_id,domain,corpus_kind FROM text_document WHERE source_id=?').get(sourceId);
+      if (identity.document_id !== 'WNA-001' || identity.domain !== 'root' || identity.corpus_kind !== 'current') {
+        fail('E_DOCUMENT_COMMAND', 'current root Atlas required');
+      }
+      const rows = db.prepare('SELECT * FROM text_atlas_additional_people WHERE source_id=? AND member_key=?').all(sourceId, command.personId);
+      const row = rows[0];
+      if (rows.length !== 1 || row.person_ref !== command.personId || row.national_state_id !== command.expectedStateId
+        || row.national_state_id__type !== (command.expectedStateId === null ? 'null' : 'string')
+        || row.state_ref !== command.expectedStateId) {
+        fail('E_DOCUMENT_COMMAND', 'existing Atlas person and consistent expected affiliation required');
+      }
+      if (!db.prepare('SELECT 1 FROM state WHERE state_id=?').get(command.stateId)
+        || !db.prepare('SELECT 1 FROM person WHERE person_id=? AND state_id=?').get(command.personId, command.stateId)) {
+        fail('E_DOCUMENT_COMMAND', 'registered state matching current person affiliation required');
+      }
+      db.prepare("UPDATE text_atlas_additional_people SET national_state_id=?,national_state_id__type='string',state_ref=? WHERE source_id=? AND row_key=?")
+        .run(command.stateId, command.stateId, sourceId, row.row_key);
+      break;
+    }
     case 'setDomainText': {
       exactKeys(command, ['type', 'field', 'value']);
       const { domain } = db.prepare('SELECT domain FROM text_document WHERE source_id=?').get(sourceId);
@@ -173,7 +211,7 @@ function applyCommand(db, sourceId, command) {
       if (result.changes !== 1) fail('E_DOCUMENT_COMMAND', 'existing typed domain text field required');
       break;
     }
-    case 'insertNode': case 'deleteNode': case 'reorderNodes':
+    case 'insertNode': case 'deleteNode': case 'reorderNodes': case 'appendTableRow':
       applyStructuralCommand(db, sourceId, command); break;
     case 'setLocale': {
       exactKeys(command, ['type', 'locale', 'field', 'value']);

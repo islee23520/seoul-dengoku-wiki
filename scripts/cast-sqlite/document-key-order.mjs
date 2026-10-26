@@ -40,7 +40,10 @@ export function initializeDocumentKeyOrder(db, documents) {
   });
 }
 
-export function orderDocumentKeys(db, sourceId, document) {
+export function orderDocumentKeys(db, sourceId, document, { approvedStructure } = {}) {
+  // Successor structure is explicit authority, never a fallback source of values.
+  // This leaves the immutable imported key-order archive untouched.
+  if (approvedStructure !== undefined) return preserveReceiptOrder(document, approvedStructure);
   const groups = new Map();
   for (const row of db.prepare('SELECT * FROM document_key_order WHERE source_id=? ORDER BY object_pointer,ordinal').all(sourceId)) {
     if (!groups.has(row.object_pointer)) groups.set(row.object_pointer, []);

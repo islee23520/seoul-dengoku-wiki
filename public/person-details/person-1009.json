@@ -472,10 +472,6 @@
       "evidenceRef": "owner-current-subject-permissions-20261003"
     }
   },
-  "gurps": {
-    "id": "K1009",
-    "personId": "person-1009"
-  },
   "characterProfile": {
     "abilities": {
       "leadership": {
@@ -641,277 +637,7 @@
       "diseases": []
     }
   },
-  "personSheet": {
-    "schema": "wiki-person-sheet.v1",
-    "currentState": "S14",
-    "variants": [
-      {
-        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
-        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
-        "historicalState": "S14",
-        "rules": {
-          "rulesVersion": "seoul.opposed-d10.v1",
-          "resolution": "opposed-d10",
-          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
-          "numericAdoption": false,
-          "legacyValues": "immutable-not-d10-ratings",
-          "originalRatings": null
-        },
-        "legacy": {
-          "operative": false,
-          "record": {
-            "id": "K1009",
-            "name": "신종목",
-            "url": "/people/person-1009",
-            "state": "S14",
-            "band": "주역·강자",
-            "attributes": {
-              "ST": {
-                "value": 13,
-                "cp": 30
-              },
-              "DX": {
-                "value": 15,
-                "cp": 100
-              },
-              "IQ": {
-                "value": 15,
-                "cp": 100
-              },
-              "HT": {
-                "value": 14,
-                "cp": 40
-              }
-            },
-            "traits": [
-              {
-                "name": "Combat Reflexes",
-                "kind": "advantage",
-                "cp": 15,
-                "rule": "combat-reflexes"
-              }
-            ],
-            "skills": [
-              {
-                "name": "Spear (fixed bayonet)",
-                "ko": "총검술",
-                "level": 16,
-                "cp": 12
-              },
-              {
-                "name": "Electronics Operation/TL? (Communications)",
-                "ko": "무전 운용",
-                "level": 14,
-                "cp": 8
-              },
-              {
-                "name": "Area Knowledge (강남구청 생활권·귀환망 12곳)",
-                "ko": "지역 지식",
-                "level": 15,
-                "cp": 8
-              },
-              {
-                "name": "Scrounging",
-                "ko": "현장 회수",
-                "level": 15,
-                "cp": 8
-              },
-              {
-                "name": "Diplomacy",
-                "ko": "교섭(주민 동의)",
-                "level": 13,
-                "cp": 8
-              },
-              {
-                "name": "Navigation/TL? (Land)",
-                "ko": "길찾기(지상)",
-                "level": 14,
-                "cp": 8
-              },
-              {
-                "name": "Leadership",
-                "ko": "지휘(피난민 귀환)",
-                "level": 13,
-                "cp": 4
-              },
-              {
-                "name": "Observation",
-                "ko": "관찰(호위)",
-                "level": 13,
-                "cp": 4
-              },
-              {
-                "name": "Hiking",
-                "ko": "장거리 도보",
-                "level": 12,
-                "cp": 2
-              }
-            ],
-            "secondary": {
-              "HP": 13,
-              "FP": 14,
-              "Will": 15,
-              "Per": 15,
-              "BasicSpeed": 7.25,
-              "BasicMove": 7,
-              "BasicLift": 34,
-              "Dodge": 11
-            },
-            "cp": {
-              "total": 347,
-              "attributes": 270,
-              "advantages": 15,
-              "disadvantages": 0,
-              "skills": 62,
-              "spent": 347,
-              "unspent": 0
-            }
-          }
-        }
-      },
-      {
-        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
-        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
-        "historicalState": "S14",
-        "rules": {
-          "rulesVersion": "seoul.opposed-d10.v1",
-          "resolution": "opposed-d10",
-          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
-          "numericAdoption": false,
-          "legacyValues": "immutable-not-d10-ratings",
-          "originalRatings": null
-        },
-        "legacy": {
-          "operative": false,
-          "record": {
-            "id": "K1009",
-            "name": "신종목",
-            "url": "/people/person-1009",
-            "state": "S14",
-            "band": "주역·강자",
-            "attributes": {
-              "ST": {
-                "value": 13,
-                "cp": 30
-              },
-              "DX": {
-                "value": 15,
-                "cp": 100
-              },
-              "IQ": {
-                "value": 15,
-                "cp": 100
-              },
-              "HT": {
-                "value": 14,
-                "cp": 40
-              }
-            },
-            "traits": [
-              {
-                "name": "Combat Reflexes",
-                "kind": "advantage",
-                "cp": 15,
-                "rule": "combat-reflexes"
-              }
-            ],
-            "skills": [
-              {
-                "name": "Spear (fixed bayonet)",
-                "ko": "총검술",
-                "level": 16,
-                "cp": 12
-              },
-              {
-                "name": "Electronics Operation/TL? (Communications)",
-                "ko": "무전 운용",
-                "level": 14,
-                "cp": 8
-              },
-              {
-                "name": "Area Knowledge (강남구청 생활권·귀환망 12곳)",
-                "ko": "지역 지식",
-                "level": 15,
-                "cp": 8
-              },
-              {
-                "name": "Scrounging",
-                "ko": "현장 회수",
-                "level": 15,
-                "cp": 8
-              },
-              {
-                "name": "Diplomacy",
-                "ko": "교섭(주민 동의)",
-                "level": 13,
-                "cp": 8
-              },
-              {
-                "name": "Navigation/TL? (Land)",
-                "ko": "길찾기(지상)",
-                "level": 14,
-                "cp": 8
-              },
-              {
-                "name": "Leadership",
-                "ko": "지휘(피난민 귀환)",
-                "level": 13,
-                "cp": 4
-              },
-              {
-                "name": "Observation",
-                "ko": "관찰(호위)",
-                "level": 13,
-                "cp": 4
-              },
-              {
-                "name": "Hiking",
-                "ko": "장거리 도보",
-                "level": 12,
-                "cp": 2
-              }
-            ],
-            "secondary": {
-              "HP": 13,
-              "FP": 14,
-              "Will": 15,
-              "Per": 15,
-              "BasicSpeed": 7.25,
-              "BasicMove": 7,
-              "BasicLift": 34,
-              "Dodge": 11
-            },
-            "cp": {
-              "total": 347,
-              "attributes": 270,
-              "advantages": 15,
-              "disadvantages": 0,
-              "skills": 62,
-              "spent": 347,
-              "unspent": 0
-            }
-          }
-        }
-      }
-    ]
-  },
   "confirmedHoldings": [],
-  "unit": {
-    "type": "신종목 인솔대",
-    "size": 25,
-    "quality": "정예",
-    "composition": [
-      "총검병",
-      "경비병"
-    ],
-    "note": "신종목 인솔 전투부대",
-    "faction_scale": {
-      "state": "S06",
-      "tier": "강세력",
-      "factor": 1.2
-    }
-  },
-  "wandering_force": null,
   "clan": {
     "id": "goryeong-shin",
     "name": "고령 신씨",
@@ -948,10 +674,10 @@
     "관직": "품계 없음. 귀환망 현장 계약자이며 전직은 동방사 특수회수반 선임 공작원이다. 생업은 호위·탐사 계약·무전 송신이고 호출부호는 백야다.",
     "훈련": "확인된 총검 훈련 기록이 있다.",
     "일화": "수리한 무전기로 옛 호출부호를 송신하며 미귀환자 연락을 기다리는 주민과 당직을 나눈다. 이동식 중계 장비를 들일 때 현장 회수 기록과 주민 동의서를 같은 인계철에 묶는다.",
-    "관계": "아들 신준을 돌보고 배우진의 동방사에서 물러난 기록을 보존한다. 민웅기와는 서울 내부 귀환합성국의 정비 기록·대체 경로·현장 회수·주민 동의를 나누어 맡는다.",
+    "관계": "아들 신준을 돌보고 배우진의 동방사에서 물러난 기록을 보존하며, 산하 지휘관은 아관사 관문사령관 고서준이다. 민웅기와는 서울 내부 귀환합성국의 정비 기록·대체 경로·현장 회수·주민 동의를 나누어 맡는다.",
     "야망": "귀환망을 넓혀 미귀환자의 응답을 받으려 한다. 주민 연락 기록과 중계기의 인계는 현장 회수 기록·주민 동의와 함께 묶고, 신준의 동의와 휴식을 해치는 당직에는 아들을 참여시키지 않으려 한다."
   },
-  "biography": "소속은 아관사(S14)다. 신종목의 논현2동 호위·탐사 계약·무전 송신 창구가 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다. 호출부호 백야로 선정릉·수서 연락을 잇고, 서울 내부에서 민웅기와 귀환합성국의 현장 회수·주민 동의·정비 기록·대체 경로를 나눈다.\n\n**생애.** 2087-09-18에 태어났다. 2119년 11월 동방사 특수회수반 선임 공작원으로 명부 밖 피난민의 귀환을 맡았고, 보고서에는 명령 불복종·지급품 손실·퇴로를 지킨 반원의 실종 처리가 남았다. 2120년 4월 특수회수반에서 물러난 뒤 아들 신준과 강남구청 인근 생활권에서 지냈다. 이는 강남구 공무원 임용이나 직급을 뜻하지 않는다. 2126년 개막 현재 수리한 무전기로 옛 호출부호를 송신하며 귀환망 당직을 잇는다.\n\n**관직.** 품계 없음. 귀환망 현장 계약자이며 전직은 동방사 특수회수반 선임 공작원이다. 생업은 호위·탐사 계약·무전 송신이고 호출부호는 백야다.\n\n**훈련.** 확인된 총검 훈련 기록이 있다.\n\n**일화.** 수리한 무전기로 옛 호출부호를 송신하며 미귀환자 연락을 기다리는 주민과 당직을 나눈다. 이동식 중계 장비를 들일 때 현장 회수 기록과 주민 동의서를 같은 인계철에 묶는다.\n\n**관계.** 아들 신준을 돌보고 배우진의 동방사에서 물러난 기록을 보존한다. 민웅기와는 서울 내부 귀환합성국의 정비 기록·대체 경로·현장 회수·주민 동의를 나누어 맡는다.\n\n**야망.** 귀환망을 넓혀 미귀환자의 응답을 받으려 한다. 주민 연락 기록과 중계기의 인계는 현장 회수 기록·주민 동의와 함께 묶고, 신준의 동의와 휴식을 해치는 당직에는 아들을 참여시키지 않으려 한다.",
+  "biography": "소속은 아관사(S14)이며 관문사령관 고서준의 산하다. 신종목의 논현2동 호위·탐사 계약·무전 송신 창구가 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다. 호출부호 백야로 선정릉·수서 연락을 잇고, 서울 내부에서 민웅기와 귀환합성국의 현장 회수·주민 동의·정비 기록·대체 경로를 나눈다.\n\n**생애.** 2087-09-18에 태어났다. 2119년 11월 동방사 특수회수반 선임 공작원으로 명부 밖 피난민의 귀환을 맡았고, 보고서에는 명령 불복종·지급품 손실·퇴로를 지킨 반원의 실종 처리가 남았다. 2120년 4월 특수회수반에서 물러난 뒤 아들 신준과 강남구청 인근 생활권에서 지냈다. 이는 강남구 공무원 임용이나 직급을 뜻하지 않는다. 2126년 개막 현재 수리한 무전기로 옛 호출부호를 송신하며 귀환망 당직을 잇는다.\n\n**관직.** 품계 없음. 귀환망 현장 계약자이며 전직은 동방사 특수회수반 선임 공작원이다. 생업은 호위·탐사 계약·무전 송신이고 호출부호는 백야다.\n\n**훈련.** 확인된 총검 훈련 기록이 있다.\n\n**일화.** 수리한 무전기로 옛 호출부호를 송신하며 미귀환자 연락을 기다리는 주민과 당직을 나눈다. 이동식 중계 장비를 들일 때 현장 회수 기록과 주민 동의서를 같은 인계철에 묶는다.\n\n**관계.** 아들 신준을 돌보고 배우진의 동방사에서 물러난 기록을 보존하며, 산하 지휘관은 아관사 관문사령관 고서준이다. 민웅기와는 서울 내부 귀환합성국의 정비 기록·대체 경로·현장 회수·주민 동의를 나누어 맡는다.\n\n**야망.** 귀환망을 넓혀 미귀환자의 응답을 받으려 한다. 주민 연락 기록과 중계기의 인계는 현장 회수 기록·주민 동의와 함께 묶고, 신준의 동의와 휴식을 해치는 당직에는 아들을 참여시키지 않으려 한다.",
   "sources": [
     "Core-Characters"
   ],
@@ -974,6 +700,12 @@
         "type": "계약",
         "to": "민웅기",
         "basis": "민웅기와 신종목은 서울 내부에서 귀환합성국의 정비 기록·대체 경로와 현장 회수·주민 동의를 나눈다. 떠남·낙향을 분업의 원인으로 삼지 않는다."
+      },
+      {
+        "from": "신종목",
+        "type": "지휘",
+        "to": "고서준",
+        "basis": "아관사 관문사령관 고서준의 산하"
       }
     ],
     "incoming": [

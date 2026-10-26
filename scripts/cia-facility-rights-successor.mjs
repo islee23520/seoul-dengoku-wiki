@@ -2,6 +2,9 @@ import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
 import { authenticateRightsTransition } from './seoul-scope.mjs';
 import { authenticateCiaFacilityCorrection, materializeCiaFacilityContract, CIA_FACILITY_DECISION } from './cia-facility-only-correction.mjs';
+import { authenticateExactBodyApproval } from './document-store/publication-database-inputs.mjs';
+import { PUBLICATION_EXACT_BODIES, readScopeCurrentSource } from './document-store/scope-current-source.mjs';
+import { readDocumentRevision } from './cast-sqlite/document-edit.mjs';
 
 const paths = {
   allocation: 'lore/relations/opening-feudal-allocation.json',
@@ -13,6 +16,49 @@ const fail = () => { throw Object.assign(new Error('E_CIA_FACILITY_RIGHTS'), { c
 export const CIA_FACILITY_BATCH = 'cia-facility-only-20261021';
 const authenticated = new WeakMap();
 const contractPin = '383d14c96312dcfd849cb9906b3ff16f4c2bc4c9f8ee0b93816a6d2aad333fd8';
+const commandRelations = new WeakMap();
+export const APPROVED_COMMAND_RELATION = 'R:관계-원장-table3:749';
+
+export function authenticateApprovedCommandRelation({ db, root }) {
+  const path = 'lore/characters/Cast-Relations.json', pin = PUBLICATION_EXACT_BODIES[path];
+  const bodies = authenticateExactBodyApproval(root);
+  const current = readScopeCurrentSource({ db, logicalPath: path, expectedSha256: pin.sourceSha256, approvedBodies: bodies });
+  const predecessor = readDocumentRevision(db, { revision: pin.predecessor, documentId: pin.documentId,
+    domain: pin.domain, corpusKind: 'current' });
+  const restored = structuredClone(current);
+  const table = restored.content[1];
+  if (table?.anchor !== '관계-원장-table3' || table.rows.length !== 749) fail();
+  const [row] = table.rows.splice(748, 1);
+  if (!isDeepStrictEqual(restored, predecessor) || row[1]?.ko !== '지휘' || row[1]?.en !== 'command') fail();
+  const projection = db.prepare(`SELECT relation_id,from_person_id,to_person_id,type_ko,type_en,json_pointer
+    FROM relation WHERE relation_id='relation-1389'`).get();
+  if (!projection || projection.from_person_id !== 'K1009' || projection.to_person_id !== 'K348'
+    || projection.type_ko !== '지휘' || projection.type_en !== 'command' || projection.json_pointer !== '/content/1/rows/748') fail();
+  const ids = document => document.content.filter(block => block.kind === 'table')
+    .flatMap(block => block.rows.map((_, i) => `R:${block.anchor}:${i + 1}`));
+  const proof = Object.freeze({ id: APPROVED_COMMAND_RELATION });
+  commandRelations.set(proof, { before: ids(predecessor), after: ids(current) });
+  return proof;
+}
+
+// Historical CIA guards see the exact predecessor. Only after their successful
+// authentication is the separately approved command relation composed back in.
+export function composeApprovedCommandRelation(input, successor, proof) {
+  const relation = commandRelations.get(proof);
+  if (!relation || !isDeepStrictEqual(input.current.entitySets.relations, relation.after)) fail();
+  const predecessor = { ...input, current: { ...input.current,
+    entitySets: { ...input.current.entitySets, relations: relation.before } } };
+  const applied = applyCiaFacilityScopeSuccessor(predecessor, successor);
+  const state = authenticatedState(successor, input.baseline, input.current.rightsTransition);
+  if (applied.contract.dispositions.some(row => row.set === 'relations' && row.id === proof.id)) fail();
+  const composed = Object.freeze({ ...successor,
+    entitySets: { ...successor.entitySets, relations: [...relation.after] } });
+  authenticated.set(composed, { ...state, snapshot: structuredClone(composed), commandRelation: relation });
+  const result = { ...applied, current: { ...applied.current,
+    entitySets: { ...applied.current.entitySets, relations: [...relation.after] }, ciaFacilitySuccessor: composed } };
+  ciaFacilityScopeContext(result);
+  return result;
+}
 
 // Compose, never reinterpret, the original 306 retirements with the owner's
 // later facility-only decision. Historical transition bodies remain unchanged.
@@ -91,6 +137,8 @@ export function applyCiaFacilityScopeSuccessor(input, successor) {
 export function ciaFacilityScopeContext(input) {
   const successor = input.current.ciaFacilitySuccessor;
   const state = authenticatedState(successor, input.baseline, input.current.rightsTransition);
+  if (state.commandRelation && (!isDeepStrictEqual(input.current.entitySets.relations, state.commandRelation.after)
+    || input.contract.dispositions.some(row => row.set === 'relations' && row.id === APPROVED_COMMAND_RELATION))) fail();
   if (Object.entries(state.afterHashes).some(([path, digest]) => input.sourceHashes[path] !== digest)) fail();
   const batchContract = { ...input.contract };
   for (const collection of ['entities', 'dispositions']) {

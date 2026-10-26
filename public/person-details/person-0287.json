@@ -390,10 +390,6 @@
     "houseFaith": "unknown",
     "humanoidAdmission": "deferred"
   },
-  "gurps": {
-    "id": "K286",
-    "personId": "person-0287"
-  },
   "characterProfile": {
     "abilities": {
       "leadership": {
@@ -530,174 +526,6 @@
       "diseases": []
     }
   },
-  "personSheet": {
-    "schema": "wiki-person-sheet.v1",
-    "currentState": "S11",
-    "variants": [
-      {
-        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
-        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
-        "historicalState": "S11",
-        "rules": {
-          "rulesVersion": "seoul.opposed-d10.v1",
-          "resolution": "opposed-d10",
-          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
-          "numericAdoption": false,
-          "legacyValues": "immutable-not-d10-ratings",
-          "originalRatings": null
-        },
-        "legacy": {
-          "operative": false,
-          "record": {
-            "id": "K286",
-            "name": "모복",
-            "url": "/people/person-0287",
-            "state": "S11",
-            "band": "일반 인물",
-            "attributes": {
-              "ST": {
-                "value": 10,
-                "cp": 0
-              },
-              "DX": {
-                "value": 10,
-                "cp": 0
-              },
-              "IQ": {
-                "value": 10,
-                "cp": 0
-              },
-              "HT": {
-                "value": 10,
-                "cp": 0
-              }
-            },
-            "traits": [],
-            "skills": [
-              {
-                "name": "Administration",
-                "ko": "행정·기록",
-                "level": 12,
-                "cp": 8
-              },
-              {
-                "name": "Diplomacy",
-                "ko": "교섭·조정",
-                "level": 11,
-                "cp": 8
-              },
-              {
-                "name": "Breath Control",
-                "ko": "호흡 수련(심법)",
-                "level": 10,
-                "cp": 4
-              }
-            ],
-            "secondary": {
-              "HP": 10,
-              "FP": 10,
-              "Will": 10,
-              "Per": 10,
-              "BasicSpeed": 5,
-              "BasicMove": 5,
-              "BasicLift": 20,
-              "Dodge": 8
-            },
-            "cp": {
-              "total": 75,
-              "attributes": 0,
-              "advantages": 0,
-              "disadvantages": 0,
-              "skills": 20,
-              "spent": 20,
-              "unspent": 55
-            }
-          }
-        }
-      },
-      {
-        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
-        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
-        "historicalState": "S11",
-        "rules": {
-          "rulesVersion": "seoul.opposed-d10.v1",
-          "resolution": "opposed-d10",
-          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
-          "numericAdoption": false,
-          "legacyValues": "immutable-not-d10-ratings",
-          "originalRatings": null
-        },
-        "legacy": {
-          "operative": false,
-          "record": {
-            "id": "K286",
-            "name": "모복",
-            "url": "/people/person-0287",
-            "state": "S11",
-            "band": "일반 인물",
-            "attributes": {
-              "ST": {
-                "value": 10,
-                "cp": 0
-              },
-              "DX": {
-                "value": 10,
-                "cp": 0
-              },
-              "IQ": {
-                "value": 10,
-                "cp": 0
-              },
-              "HT": {
-                "value": 10,
-                "cp": 0
-              }
-            },
-            "traits": [],
-            "skills": [
-              {
-                "name": "Administration",
-                "ko": "행정·기록",
-                "level": 12,
-                "cp": 8
-              },
-              {
-                "name": "Diplomacy",
-                "ko": "교섭·조정",
-                "level": 11,
-                "cp": 8
-              },
-              {
-                "name": "Breath Control",
-                "ko": "호흡 수련(심법)",
-                "level": 10,
-                "cp": 4
-              }
-            ],
-            "secondary": {
-              "HP": 10,
-              "FP": 10,
-              "Will": 10,
-              "Per": 10,
-              "BasicSpeed": 5,
-              "BasicMove": 5,
-              "BasicLift": 20,
-              "Dodge": 8
-            },
-            "cp": {
-              "total": 75,
-              "attributes": 0,
-              "advantages": 0,
-              "disadvantages": 0,
-              "skills": 20,
-              "spent": 20,
-              "unspent": 55
-            }
-          }
-        }
-      }
-    ]
-  },
   "confirmedHoldings": [
     {
       "id": "holding:opening-duchy-gu-11650-S11",
@@ -750,21 +578,6 @@
       }
     }
   ],
-  "unit": {
-    "type": "수행원",
-    "size": 4,
-    "quality": "일반",
-    "composition": [
-      "수행원"
-    ],
-    "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-    "faction_scale": {
-      "state": "S11",
-      "tier": "강세력",
-      "factor": 1.2
-    }
-  },
-  "wandering_force": null,
   "clan": {
     "id": "baa8-d568-d3c9",
     "name": "함평 모씨",

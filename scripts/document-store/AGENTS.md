@@ -24,17 +24,10 @@
 - `readPrivateCurrentDocument()`는 허용된 논리 경로를 정확한 DB와 pin으로 결합한다.
 - private DB의 mode·application_id·user_version 검사를 보존한다. 환경 변수 override도 같은 검사를 따른다.
 - reader가 반환하는 handle은 `finally`에서 닫는다. publication 입력의 `close()`는 열린 handle 전체를 정리한다.
-- 새 문서군은 대응 `.mjs`, `.sql`, `test-*.mjs`의 저장·복원·권한 검사를 함께 확인한다.
+- 새 문서군은 대응 `.mjs`, `.sql`의 저장·복원·권한을 실제 데이터 조회로 확인한다. 새 테스트 스크립트는 작성하지 않는다.
 
 ## COMMANDS
-이 하위 디렉터리 전용 npm alias는 없다. 저장소 루트에서 Node test runner로 해당 검사를 선택한다.
-`test-store.mjs`는 합성 fixture만 사용한다. 나머지 아래 검사는 비공개 SQLite 원천·봉인 자료가 해당 checkout의 가이드 지정 경로에 준비되어야 하며, 공개 checkout만으로 통과한다고 가정하지 않는다.
-```bash
-node --test scripts/document-store/test-store.mjs
-node --test scripts/document-store/test-publication-database-inputs.mjs
-node --test scripts/document-store/test-scope-authentication-reader.mjs
-node --test scripts/document-store/test-soul-assignment.mjs
-```
+테스트 스위트는 제거되었다. 비공개 원천·봉인 자료는 가이드 지정 경로에서 확인하며, 공개 checkout만으로 검증할 수 있다고 가정하지 않는다.
 capture·bootstrap CLI의 경로·actor·reason 인수는 해당 진입 파일에서 확인한다.
 
 ## ANTI-PATTERNS

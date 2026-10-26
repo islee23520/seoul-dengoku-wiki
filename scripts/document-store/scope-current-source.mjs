@@ -57,6 +57,39 @@ import { readEditorialDecisionDocuments, EDITORIAL_DECISION_SOURCE_HASHES } from
 import { readRelationProposalDocument } from '../cast-sqlite/relation-proposal-document.mjs';
 import { readEditorialVerificationDocument, EDITORIAL_VERIFICATION_DOCUMENT_HASH } from '../cast-sqlite/editorial-verification-document.mjs';
 import { EDITORIAL_ENVELOPE_SOURCE_HASHES } from './editorial-envelope-documents.mjs';
+import { readApprovedDataSource } from '../cast-sqlite/data-source-editor.mjs';
+import { isDeepStrictEqual } from 'node:util';
+export { PUBLICATION_SUCCESSOR_APPROVAL, PUBLICATION_SUCCESSOR_HEADS, PUBLICATION_EXACT_BODY_APPROVAL,
+  PUBLICATION_EXACT_BODIES, ATLAS_DRAFT_APPROVAL } from './reference-successor-approval.mjs';
+export { S08_WORDING_REVISION } from './reference-successor-reader.mjs';
+
+// Independently reviewed source revisions (Task10/12/13), separate from the
+// renderer-envelope heads below. Each semantic pin bounds the complete delta.
+export const PUBLICATION_DATA_SUCCESSORS = Object.freeze({
+  'lore/name-pools/values-cast.json': ['19a30e156065f6c2f59b3d2ea7b0226e887ea60d610b70d10e588937407620e2', '5750d72c1c7533e0cf9b59c11448c8d777c54f0f5758ef0fbe8cbe25c092265c'],
+  'lore/relations/opening-office-appointments.json': ['de70382bed6464c5b2651f71ab7e13cc710512dbd1e0422a1c6b78980041a794', '3b93a14de55b66f2ba38c6461df57608c42011a992628f57bf73a546e2aff3a8'],
+  'lore/relations/opening-feudal-allocation.json': ['21d7663507b896a43d70fc459f662376780b477b5c2078af100b2d42bbe7079d', 'aa32254621831b189587024f2748dc1f78f93a1a448e4e5be15beb6ace8b12e9'],
+  'lore/relations/personal-holdings.json': ['1801d7bb8d27af743f74ea447d4f7be782b9d8ba7ba5b37af4d0c6f2b6329a12', '77a0cc273441857a892822319f610d5630eb0801f70b7e633c303db7868f32e3'],
+  'lore/relations/relations.json': ['6a0a48a6540c16a848de8e14caa1d8df628eeceab5465c454afdbfdb5fa8a3c2', '438c00ccd559a398980b6619e08d9a0d2f49f1f6bcd0df2b8b970a44c68caeb2'],
+});
+
+export function authenticatePublicationDataSuccessor(db, logicalPath, expectedSha256, actual, original) {
+  if (!Object.hasOwn(PUBLICATION_DATA_SUCCESSORS, logicalPath)) return false;
+  if (!db.prepare("SELECT 1 FROM sqlite_schema WHERE name='data_source_head'").get()
+    || !db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(logicalPath)) return false;
+  const [archive, semantic] = PUBLICATION_DATA_SUCCESSORS[logicalPath];
+  if (expectedSha256 !== archive) throw Error('E_PUBLICATION_DATA_SOURCE_PIN');
+  const approved = readApprovedDataSource(db, logicalPath, semantic, archive);
+  if (!isDeepStrictEqual(actual, approved)) throw Error('E_PUBLICATION_DATA_TYPED_MISMATCH');
+  if (logicalPath === 'lore/relations/relations.json') {
+    const predecessor = structuredClone(approved);
+    if (predecessor.courts[13]?.id !== 'court:K1008' || predecessor.courts[13].stateId !== 'S02')
+      throw Error('E_PUBLICATION_DATA_DELTA');
+    predecessor.courts[13].stateId = 'polity:daejeon';
+    if (!isDeepStrictEqual(predecessor, original)) throw Error('E_PUBLICATION_DATA_DELTA');
+  }
+  return true;
+}
 
 // Identity is selected independently from SQLite's document inventory, never
 // from the approval contract. A recognized typed source cannot fall back.

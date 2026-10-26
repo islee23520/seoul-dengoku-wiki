@@ -1,6 +1,5 @@
 import { projectFamilyTree } from './cast-family-trees.mjs'
 import { publicCharacterProfile } from './character-profile.mjs'
-import { projectPreservedPersonSheet } from './preserved-person-sheet.mjs'
 import { createHash } from 'node:crypto'
 
 // The caller authenticates this map before production; current source bindings
@@ -74,7 +73,7 @@ export function producePersonDetails({ peopleSource, personCards, pagesBySlug, o
   issuedIdByName, issuedById, genderByName, stateNameById, tiersByState, atlasPeople,
   birthdayRoster, courtDataset, personalHoldings, issuedSheets, lineageByName,
   birthdaysById, familyGraph, parentStatusById, proseContactsById, householdsById,
-  personRightsPermissions, characterProfiles, preservedSheets, openingDispositions,
+  personRightsPermissions, characterProfiles, openingDispositions,
   relations, personFeedbackRecord, personalTierPreservation }) {
   const peopleCatalog = peopleSource.map((person, index) => {
     const cards = personCards.get(person.name) ?? []
@@ -175,17 +174,11 @@ export function producePersonDetails({ peopleSource, personCards, pagesBySlug, o
       proseContacts: proseContactsById.get(issuedId) ?? [],
       household: householdsById.get(issuedId),
       ...(personRightsPermissions.has(issuedId) ? { rightsPermissions: personRightsPermissions.get(issuedId) } : {}),
-      gurps: { id: issuedId, personId: person.id },
       characterProfile: publicCharacterProfile(characterProfiles.get(issuedId)),
-      personSheet: projectPreservedPersonSheet(preservedSheets, {
-        id: issuedId, personId: person.id, name: person.name, state: person.state, url: person.detailRoute,
-      }),
       ...projectPersonHoldings(personalHoldings, issuedId, issuedById, peopleSource),
       ...(personalHoldings.polities.some(polity => polity.sovereignPersonId === issuedId) ? { sovereignTitle: personalHoldings.polities.find(polity => polity.sovereignPersonId === issuedId) } : {}),
       ...(personalHoldings.retinueGroups.some(group => group.liegePersonId === issuedId) ? { retinueGroups: personalHoldings.retinueGroups.filter(group => group.liegePersonId === issuedId) } : {}),
       ...(openingDispositions.has(issuedId) ? { openingDisposition: openingDispositions.get(issuedId) } : {}),
-      ...(sheet.unit !== undefined ? { unit: sheet.unit } : {}),
-      ...(sheet.wandering_force !== undefined ? { wandering_force: sheet.wandering_force } : {}),
       clan: lineage.clan && lineage.namingConvention !== 'non-korean-lineage' ? { id: lineage.base_clan ?? lineage.clan, name: `${lineage.bongwan} ${lineage.surname}씨`, crest: `clan-crests/${lineage.base_clan ?? lineage.clan}.svg` } : null,
       generation: ledger.generation,
       minors: ledger.minors,

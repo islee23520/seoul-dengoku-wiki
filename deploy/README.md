@@ -1,7 +1,41 @@
 # Wiki deployment caller
 
-`.woodpecker/deploy.yaml` runs only for pushes to `main`, after `ci` succeeds.
-The Node 22 step sends the commit to the deployment owner, then checks the public
+## wiki-postgres 운영 PostgreSQL (desktop-bo514et)
+
+운영 단일 PostgreSQL 17 클러스터는 desktop-bo514et의 통합 compose
+(`E:\git\seoul-dengoku-web\docker-compose.yml`, 프로젝트 `seoul-dengoku-web`)에
+`wiki-postgres` 서비스로 상주한다. 서비스 정의는
+`deploy/docker-compose.wiki-postgres.yml`(스니펫 복사본)과 동일하다.
+
+- 이미지 `postgres:17`, DB `seoul`, 컨테이너 슈퍼유저 `wiki_owner`.
+- named volume `seoul-pgdata`(프로젝트 접두사 `seoul-dengoku-web_seoul-pgdata`).
+- 네트워크는 통합 compose 기본값(`seoul-dengoku-web_default`, external).
+- **5432 publish 금지** — docker 네트워크 내부 전용이며 외부에서 접근 불가해야 한다.
+- healthcheck: `pg_isready -U wiki_owner`(30s 간격).
+- 비밀번호는 프로젝트 루트 `.env`의 `WIKI_POSTGRES_PASSWORD`(커밋 금지).
+
+호스트 적용 절차(운영자, lazyssh/desktop-bo514et):
+
+1. `E:\git\seoul-dengoku-web\docker-compose.yml`를 백업한다
+   (`docker-compose.before-wiki-postgres.yml`). 기존 web/tunnel/wiki-api 서비스와
+   cloudflared 터널 블록은 절대 수정하지 않고, 서비스·volumes 블록만 추가한다.
+2. 프로젝트 루트 `.env`에 `WIKI_POSTGRES_PASSWORD`를 설정한다.
+3. `docker compose config --quiet`으로 검증한 뒤
+   `docker compose up -d wiki-postgres`로 기동한다(기존 서비스 재시작 없음).
+4. 역할·스키마 부트스트랩은 `scripts/postgres-migration/bootstrap-roles.sql`을
+   `docker exec -i wiki-postgres psql -U wiki_owner -d postgres`로 적용한다
+   (컨테이너 슈퍼유저가 wiki_owner이므로 `-U postgres`가 아니다).
+   스키마 `wiki`/`wiki_private`/`orbat`과 역할 4종이 생성된다.
+5. 확인: `docker exec wiki-postgres pg_isready -U wiki_owner` → accepting,
+   `docker ps --filter name=wiki-postgres --format '{{.Status}}'` → Up (healthy).
+
+야간 백업: Windows 작업 스케줄러 작업 `wiki-postgres-nightly-dump`(매일 03:30)가
+`E:\git\seoul-dengoku-web\pg-backup.cmd`를 실행해 `pg_dump -U wiki_owner -d seoul`을
+`E:\git\seoul-dengoku-web\backups\seoul-latest.sql`에 저장하고 같은 디렉터리에
+`seoul-latest.sql.sha256`을 기록한다.
+
+`.woodpecker/deploy.yaml` runs only for pushes to `main`.
+The Node 26 step sends the commit to the deployment owner, then checks the public
 site with `check-live-contract.mjs --public-edge`. The owner performs the release and rollback;
 this repository does not hold deployment host credentials.
 
@@ -43,8 +77,4 @@ Without `--public-edge`, the checker remains the origin contract (default
 The deployment owner runs that contract against the origin during promotion;
 the public check does not replace it.
 
-Run deploy tests without credentials or an external owner:
-
-```sh
-node --test deploy/test-*.mjs
-```
+Deployment test suites were removed by owner decision. The deployment caller and live HTTP contract checker remain operational.
