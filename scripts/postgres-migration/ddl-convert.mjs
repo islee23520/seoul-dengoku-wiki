@@ -369,13 +369,15 @@ function convertTriggers(db, tableName, schemaQual, renameMap = null, knownTable
     const events = t.events.map((e) => (e === 'UPDATE' && /UPDATE\s+OF/i.test(r.sql) ? fail(`UPDATE OF 미지원: ${t.name}`) : e)).join(' OR ');
     // PG trigger WHEN disallows subqueries; rewrite exact source relation names before moving it into the function.
     const when = t.when ? rewriteGuardTableRefs(t.when.replace(/\n/g, ' '), renameMap, knownTableNames ?? [tableName]) : null;
-    const whenGuard = when ? `  IF (${when}) THEN\n    ${body}\n  END IF;\n` : '';
+    const bodyLines = when
+      ? [`  IF (${when}) THEN`, `    ${body}`, `  END IF;`]
+      : [`  ${body}`];
     return {
       name: t.name,
       sql: [
         `CREATE FUNCTION ${schemaQual}.${quoteIdent(fnName)}() RETURNS trigger LANGUAGE plpgsql SET search_path = ${schemaQual}, pg_temp AS $guard$`,
         `BEGIN`,
-        ...(whenGuard ? [whenGuard.trimEnd()] : []),
+        ...bodyLines,
         ...(alwaysRaises ? [] : [`  IF TG_OP = 'DELETE' THEN RETURN OLD; END IF;`, `  RETURN NEW;`]),
         `END`,
         `$guard$;`,
