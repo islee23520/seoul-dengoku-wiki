@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-// --metadata-only is development recovery only; production always records metadata with the full load.
-// Recovery identifiers are trusted only after Todo 5's full-content reconciliation passes.
+// --metadata-only is development recovery only: it re-verifies row counts, then converges
+// wiki.meta to the pinned generation commit (metadata.json code_commit), never runtime git HEAD.
+// Runtime HEAD is recorded informationally in wiki.meta.loader_commit and is never compared.
 import { createHash } from 'node:crypto';
 import { createReadStream } from 'node:fs';
 import { readFile } from 'node:fs/promises';
@@ -114,9 +115,17 @@ async function main() {
         loaded_at timestamptz NOT NULL DEFAULT now(),
         PRIMARY KEY (migration_id)
       )`);
-      await client.query(`INSERT INTO wiki.meta (code_commit,source_sha256,schema_version,migration_id)
-        VALUES ($1,$2,$3,$4) ON CONFLICT (migration_id) DO NOTHING`,
-        [execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8' }).trim(), meta.source_sha256, meta.schema_version, meta.migration_id]);
+      await client.query('ALTER TABLE wiki.meta ADD COLUMN IF NOT EXISTS loader_commit text');
+      const loaderCommit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8' }).trim();
+      const insert = `INSERT INTO wiki.meta (code_commit,source_sha256,schema_version,migration_id,loader_commit)
+        VALUES ($1,$2,$3,$4,$5)`;
+      const values = [meta.code_commit, meta.source_sha256, meta.schema_version, meta.migration_id, loaderCommit];
+      if (metadataOnly) {
+        await client.query(`${insert} ON CONFLICT (migration_id) DO UPDATE SET
+          code_commit = EXCLUDED.code_commit, source_sha256 = EXCLUDED.source_sha256, schema_version = EXCLUDED.schema_version, loader_commit = EXCLUDED.loader_commit`, values);
+      } else {
+        await client.query(`${insert} ON CONFLICT (migration_id) DO NOTHING`, values);
+      }
       await client.query('COMMIT');
     } catch (error) {
       try { await client.query('ROLLBACK'); } catch { /* connection failure: ROLLBACK is unavailable */ }
