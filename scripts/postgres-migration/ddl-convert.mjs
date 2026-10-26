@@ -111,9 +111,20 @@ function mapDefault(expr) {
   fail(`미지원 DEFAULT 식: ${e}`);
 }
 
+// Guard SQL is machine-emitted; rewrite exact known table names only in relation-reference positions.
+function rewriteGuardTableRefs(sql, renameMap, tableNames) {
+  if (!renameMap) return sql;
+  const known = new Set(tableNames);
+  return sql.replace(/\b(FROM|JOIN|INTO|UPDATE)\s+("[^"]+"|[\w]+)/gi, (all, keyword, token) => {
+    const name = unquoteIdent(token);
+    if (!known.has(name)) return all;
+    return `${keyword} ${quoteIdent(renameMap[name] ?? name)}`;
+  });
+}
+
 // 트리거 본문 → plpgsql 함수 본문 (두 가지 기계 패턴만 허용)
-function convertTriggerBody(body) {
-  const b = body.trim().replace(/;$/, '');
+function convertTriggerBody(body, renameMap, tableNames) {
+  const b = rewriteGuardTableRefs(body.trim().replace(/;$/, ''), renameMap, tableNames);
   const raise = b.match(/^SELECT\s+RAISE\((?:ABORT|FAIL)\s*,\s*('(?:[^']|'')*')\)$/i);
   if (raise) return `RAISE EXCEPTION ${raise[1]};`;
   const caseForm = b.match(/^SELECT\s+CASE\s+WHEN\s+([\s\S]+?)\s+THEN\s+RAISE\((?:ABORT|FAIL)\s*,\s*('(?:[^']|'')*')\)\s+END$/i);
@@ -343,29 +354,29 @@ function convertIndexes(db, tableName, schemaQual) {
       void all;
       return `CREATE ${uniq ?? ''}INDEX ${pgIdent(unquoteIdent(idxName))}`;
     });
-    // 테이블 참조를 schema-qualified로 치환: ON <tbl> → ON schema.<tbl>
     return sql.replace(/(\bON\s+)("[^"]+"|[\w]+)/i, (all, on, tbl) => `${on}${schemaQual}.${tbl}`) + ';';
   });
 }
 
-function convertTriggers(db, tableName, schemaQual, renameMap = null) {
+function convertTriggers(db, tableName, schemaQual, renameMap = null, knownTableNames = null) {
   const rows = db.prepare("SELECT name, sql FROM sqlite_master WHERE type='trigger' AND tbl_name=?").all(tableName);
   return rows.map((r) => {
     const t = parseTrigger(r.sql);
     const pgTable = renameMap?.[t.table] ?? t.table;
     const fnName = hashIdent(`guard_${t.name}`);
-    const body = convertTriggerBody(t.body);
+    const body = convertTriggerBody(t.body, renameMap, knownTableNames ?? [tableName]);
+    const alwaysRaises = /^RAISE EXCEPTION\b/.test(body) && !t.when && !/^IF\b/.test(body);
     const events = t.events.map((e) => (e === 'UPDATE' && /UPDATE\s+OF/i.test(r.sql) ? fail(`UPDATE OF 미지원: ${t.name}`) : e)).join(' OR ');
-    // PG 트리거 WHEN 절은 서브쿼리를 허용하지 않으므로 조건을 가드 함수 본문으로 이동
-    const whenGuard = t.when ? `  IF NOT (${t.when.replace(/\n/g, ' ')}) THEN\n    RETURN NULL;\n  END IF;\n` : '';
+    // PG trigger WHEN disallows subqueries; rewrite exact source relation names before moving it into the function.
+    const when = t.when ? rewriteGuardTableRefs(t.when.replace(/\n/g, ' '), renameMap, knownTableNames ?? [tableName]) : null;
+    const whenGuard = when ? `  IF (${when}) THEN\n    ${body}\n  END IF;\n` : '';
     return {
       name: t.name,
       sql: [
-        `CREATE FUNCTION ${schemaQual}.${quoteIdent(fnName)}() RETURNS trigger LANGUAGE plpgsql AS $guard$`,
+        `CREATE FUNCTION ${schemaQual}.${quoteIdent(fnName)}() RETURNS trigger LANGUAGE plpgsql SET search_path = ${schemaQual}, pg_temp AS $guard$`,
         `BEGIN`,
         ...(whenGuard ? [whenGuard.trimEnd()] : []),
-        `  ${body}`,
-        `  RETURN NULL;`,
+        ...(alwaysRaises ? [] : [`  IF TG_OP = 'DELETE' THEN RETURN OLD; END IF;`, `  RETURN NEW;`]),
         `END`,
         `$guard$;`,
         `CREATE TRIGGER ${quoteIdent(hashIdent(t.name))} ${t.time} ${events} ON ${schemaQual}.${quoteIdent(pgTable)}`,
@@ -429,7 +440,8 @@ function main() {
     t.fkSql = t.fks.map((f) => fkToSql(t, f, 'wiki', (ref) => wikiPk[ref] ?? fail(`FK 참조 테이블 없음: ${ref}`)));
   const wikiFks = wikiTables.flatMap((t) => t.fkSql);
   const wikiIndexes = tableNames.flatMap((n) => convertIndexes(canonical, n, 'wiki'));
-  const wikiGuards = tableNames.flatMap((n) => convertTriggers(canonical, n, 'wiki'));
+  const wikiRenameMap = Object.fromEntries(wikiTables.map((t) => [t.sourceName, t.name]));
+  const wikiGuards = tableNames.flatMap((n) => convertTriggers(canonical, n, 'wiki', wikiRenameMap, tableNames));
 
   // --- wiki_private.* 변환 (SQL 모듈 → 메모리 SQLite → 동일 PRAGMA 경로)
   const privateTables = [];
@@ -447,7 +459,7 @@ function main() {
     const tables = names.map((n) => convertTable(db, n, 'wiki_private', renameMap?.[n] ?? n));
     for (const t of tables) // 스토어 내부 FK 참조도 리네임 반영
       for (const f of t.fks) f.refTable = renameMap?.[f.refTable] ?? f.refTable;
-    const guards = names.flatMap((n) => convertTriggers(db, n, 'wiki_private', renameMap));
+    const guards = names.flatMap((n) => convertTriggers(db, n, 'wiki_private', renameMap, names));
     const storePk = Object.fromEntries(names.map((n, i) => [pgNames[i], pkColsOf(db, n)]));
     for (const t of tables)
       t.fkSql = t.fks.map((f) => fkToSql(t, f, 'wiki_private', (ref) => storePk[ref] ?? fail(`FK 참조 테이블 없음 (${store.key}): ${ref}`)));
