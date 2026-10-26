@@ -8,7 +8,10 @@ import { isAbsolute, resolve } from 'node:path';
 // 2026-10-24 data-currency advance: 11904 bytes, five added receipt rows and
 // refreshed publicDatabase identity. Previous 10210-byte anchor:
 // 05e82ab71c0d970304d7f319170047e7b924f71467cdac6edae280fb75f98a92.
-export const PUBLICATION_PROVISION_SHA256 = '22b906bb4b859c6877795112c36c1fe5e26bb09d47887427b83a5fc4bdf6265a';
+// 2026-10-25 owner-approved article admissions: same 32 rows, publicDatabase
+// identity only (a3c3edc3). Previous 11904-byte anchor:
+// 22b906bb4b859c6877795112c36c1fe5e26bb09d47887427b83a5fc4bdf6265a.
+export const PUBLICATION_PROVISION_SHA256 = '40c1a496cf76753dcef703996debfe9cc8f796483ae299cb8b91d4aecbba9782';
 
 const fail = code => { throw Error(`E_PUBLICATION_RELOCATION_${code}`); };
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');

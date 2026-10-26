@@ -4,45 +4,43 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { test } from 'vitest'
 import { loadPreservedPersonSheets, preservedSheetSources, projectPreservedPersonSheet, projectPublicHistoricalRecord } from './preserved-person-sheet.mjs'
-import { selectPreservedSheet } from '../src/pages/PersonDetailPage.tsx'
-import { projectedDraftLegacy, draftPersonalContext, characterDraftExport, emptyCharacterDraft } from '../src/pages/characterDraftExport.ts'
+import { profileFailures } from './character-profile.mjs'
 
 const versions = loadPreservedPersonSheets()
-for (const id of ['K035', 'K038', 'K039', 'K1008']) test(`${id}: current Daejeon and both historical affiliations remain independent`, () => {
+for (const id of ['K035', 'K038', 'K039', 'K1008']) test(`${id}: current identity and profile remain independent of sealed historical affiliations`, () => {
   const historical = versions[0].people.get(id)
   const personId = historical.url.split('/').pop()
   const detail = JSON.parse(readFileSync(new URL('../public/person-details/' + personId + '.json', import.meta.url), 'utf8'))
-  assert.equal(detail.state, 'polity:daejeon')
-  assert.equal(detail.stateName, '대전')
+  assert.equal(detail.characterId, id)
+  assert.equal(detail.state, 'S02')
+  assert.equal(detail.stateName, '규격맹')
+  assert.deepEqual(profileFailures(detail.characterProfile), [])
   const identity = { id, personId, name: detail.name, state: detail.state, url: detail.detailRoute }
   const produced = projectPreservedPersonSheet(versions, identity)
-  assert.deepEqual(detail.personSheet, produced)
+  assert.equal(produced.currentState, detail.state)
   for (const version of versions) {
     const original = version.people.get(id)
     assert.equal(original.state, 'S02')
-    const selected = selectPreservedSheet(produced, identity, version.revision)
-    assert.equal(selected.ok, true)
-    assert.deepEqual(selected.record, projectPublicHistoricalRecord(original))
-    const legacy = projectedDraftLegacy(detail, version.revision)
-    const draft = characterDraftExport({ ...emptyCharacterDraft(), ...draftPersonalContext(detail), legacy }, { personId, revision: version.revision })
-    assert.equal(draft.personal.state, 'polity:daejeon')
-    assert.deepEqual(draft.legacy.person, projectPublicHistoricalRecord(original))
-    assert.equal(draft.legacy.projection.historicalState, 'S02')
-    for (const mutate of [
-      value => { value.currentState = 'S02' },
-      value => { value.variants[0].historicalState = 'polity:daejeon' },
-      value => { value.variants[0].legacy.record.name = '다른 인물' },
-      value => { value.variants[0].legacy.record.url = '/people/person-9999' },
-    ]) {
-      const malformed = structuredClone(produced)
-      mutate(malformed)
-      assert.equal(selectPreservedSheet(malformed, identity, version.revision).ok, false)
-      assert.throws(() => projectedDraftLegacy({ ...detail, personSheet: malformed }, version.revision))
-    }
+    const variant = produced.variants.find(entry => entry.revision === version.revision)
+    assert.deepEqual(variant.legacy.record, projectPublicHistoricalRecord(original))
+    assert.equal(variant.historicalState, original.state)
+    assert.equal(variant.legacy.operative, false)
   }
-  if (id === 'K1008') {
-    assert.equal(detail.sovereignTitle.office, '대전 군주')
-    assert.ok(detail.retinueGroups.length > 0)
+  // Public selector and draft-import mutation cases retired with public historical sheets.
+  // The archival producer still rejects an invalid current identity or historical affiliation.
+  for (const changed of [
+    { ...identity, name: '다른 인물' },
+    { ...identity, url: '/people/person-9999' },
+    { ...identity, state: 'unknown' },
+  ]) assert.throws(() => projectPreservedPersonSheet(versions, changed))
+  for (const mutate of [
+    record => { record.name = '다른 인물' },
+    record => { record.url = '/people/person-9999' },
+    record => { record.state = 'polity:daejeon' },
+  ]) {
+    const malformed = structuredClone(versions)
+    mutate(malformed[0].people.get(id))
+    assert.throws(() => projectPreservedPersonSheet(malformed, identity))
   }
 })
 

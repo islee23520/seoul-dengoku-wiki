@@ -241,6 +241,9 @@ export async function generatePortraitTokens(root) {
     // Older tokens predate the identity, slots or generationContract sections; add only what is absent.
     const token = previous ? { ...template, ...previous, identity: { ...template.identity, ...previous.identity }, slots: previous.slots ?? {} } : template
     token.facts.role = detail.position?.trim() || null
+    // Current-state identity must follow the live detail; the previous-token merge
+    // above would otherwise preserve a retired polity indefinitely.
+    token.stateId = template.stateId
     token.identity.age = typeof detail.age === 'number' ? detail.age : null
     token.identity.ageAsOf = detail.ageAsOf ?? null
     const proposal = token.artProposal

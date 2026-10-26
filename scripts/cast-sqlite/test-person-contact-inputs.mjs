@@ -6,7 +6,7 @@ import { syncBuiltinESMExports } from 'node:module';
 import { DatabaseSync } from 'node:sqlite';
 import { fileURLToPath } from 'node:url';
 import { readSourceArchive } from './source-archive.mjs';
-import { PERSON_CONTACT_INPUT_SOURCE_HASHES, readPersonContactInputs } from './person-contact-inputs.mjs';
+import { PERSON_CONTACT_INPUT_SOURCE_HASHES, PERSON_CONTACT_INPUT_SEMANTIC_HASHES, readPersonContactInputs } from './person-contact-inputs.mjs';
 import { loadPersonDetailSources as loadDbInputs } from './person-detail-inputs.mjs';
 
 const repoRoot = fileURLToPath(new URL('../..', import.meta.url));
@@ -84,6 +84,23 @@ test('missing sources and unsupported or changed hashes reject', t => {
     assert.throws(() => readPersonContactInputs(guarded(db, (sql, rows, args) => /SELECT source_id,sha256 FROM source_file/u.test(sql) && args[0] === path ? [] : rows)), { code: 'E_PERSON_CONTACT_MISSING' });
     assert.throws(() => readPersonContactInputs(guarded(db, (sql, rows, args) => /SELECT source_id,sha256 FROM source_file/u.test(sql) && args[0] === path ? rows.map(row => ({ ...row, sha256: '0'.repeat(64) })) : rows)), { code: 'E_PERSON_CONTACT_STALE' });
   }
+});
+
+test('current contact prose requires its separately fixed semantic approval', t => {
+  const db = open(t);
+  const corePath = 'lore/characters/Core-Characters.json';
+  const connection = guarded(db, (sql, rows, args) => {
+    if (sql.includes('r.parent_revision,r.semantic_sha256,r.algorithm') && args[0] === corePath) {
+      return rows.map(row => ({ ...row, parent_revision: 'successor-parent',
+        semantic_sha256: PERSON_CONTACT_INPUT_SEMANTIC_HASHES[corePath] }));
+    }
+    return rows;
+  });
+  for (const expectedSemanticHashes of [{}, { [corePath]: '0'.repeat(64) }]) {
+    assert.throws(() => readPersonContactInputs(connection, { expectedSemanticHashes }), { code: 'E_REFERENCE_STALE' });
+  }
+  assert.throws(() => readPersonContactInputs(connection, { expectedSemanticHashes: { [corePath]: 'malformed' } }),
+    { code: 'E_REFERENCE_ARGUMENT' });
 });
 
 for (const table of ['family_parent_status', 'context_prose_contact']) {

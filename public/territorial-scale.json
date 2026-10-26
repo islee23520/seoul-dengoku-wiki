@@ -14,6 +14,21 @@
     "barony"
   ],
   "levels": {
+    "barony": {
+      "representation": "county-detail-slot",
+      "idField": "slotId",
+      "parentField": "countyTitleId"
+    },
+    "county": {
+      "sourcePointer": "/titles",
+      "rank": "county",
+      "count": 48
+    },
+    "duchy": {
+      "sourcePointer": "/titles",
+      "rank": "duchy",
+      "count": 25
+    },
     "empire": {
       "sourcePointer": "/titles",
       "rank": "empire",
@@ -24,21 +39,6 @@
       "rank": "kingdom",
       "count": 6,
       "partitionSha256": "0b2327e3f5e23a4dff539272a747357f4909970ec4fa9234a2386b4faec1ddf5"
-    },
-    "duchy": {
-      "sourcePointer": "/titles",
-      "rank": "duchy",
-      "count": 25
-    },
-    "county": {
-      "sourcePointer": "/titles",
-      "rank": "county",
-      "count": 48
-    },
-    "barony": {
-      "representation": "county-detail-slot",
-      "idField": "slotId",
-      "parentField": "countyTitleId"
     }
   },
   "map": {
@@ -52,14 +52,6 @@
     "baronyPolygon": false
   },
   "slotEditions": {
-    "dated": {
-      "sourcePointer": "/countySlots",
-      "edition": "sgis-20250630",
-      "baseDate": "2025-06-30",
-      "count": 426,
-      "geometryVerified": true,
-      "currentBoundaryCertification": false
-    },
     "currentCorrespondence": {
       "sourcePointer": "/currentCorrespondenceSlots",
       "edition": "seoul-dong-correspondence-20260701-checked20261013",
@@ -67,6 +59,14 @@
       "checkedAt": "2026-10-13T15:21:47.014Z",
       "count": 427,
       "geometryVerified": false
+    },
+    "dated": {
+      "sourcePointer": "/countySlots",
+      "edition": "sgis-20250630",
+      "baseDate": "2025-06-30",
+      "currentBoundaryCertification": false,
+      "count": 426,
+      "geometryVerified": true
     }
   },
   "geographicParent": {

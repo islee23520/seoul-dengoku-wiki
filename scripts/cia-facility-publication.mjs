@@ -14,8 +14,8 @@ const one = (rows, id) => {
 };
 
 // Project the producer's actual public shape, not the source allocation shape.
-// Retain the original object for the 1022-detail field-mapping admission; pass
-// this result only to public holdings output, never to the old detail producer.
+// The detail producer still consumes the predecessor allocation; both public
+// holdings and details apply the authenticated facility correction before admission.
 export function projectCiaFacilityHoldings(personalHoldings, proof) {
   authorize(proof);
   const title = one(personalHoldings.titles, titleId);
@@ -70,9 +70,8 @@ export function projectCiaFacilityRegionDocuments(documents, proof) {
       ? { ...row, content: projected.get(row.region_id) } : row) } : document);
 }
 
-// Call only AFTER admitPublicPersonDetails(original1022, predecessorScope,
-// mappingAuthority). This is a pure post-admission projection, like the roster
-// retirement projection; it must not be sent back through the old field mapping.
+// Apply the authenticated correction before admitting details against the current
+// scope. Historical field mappings do not define current publication content.
 export function projectCiaFacilityPersonDetails(personDetails, personalHoldings, proof) {
   projectCiaFacilityHoldings(personalHoldings, proof);
   const leader = personDetails.filter(row => row.characterId === 'K194');

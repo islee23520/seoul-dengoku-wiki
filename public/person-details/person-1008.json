@@ -1,16 +1,16 @@
 {
   "id": "person-1008",
   "name": "민웅기",
-  "title": "독립 정치체 대전선 군주(왕격; 서울 영토 소유 아님)",
-  "position": "독립 정치체 대전선 군주(왕격; 서울 영토 소유 아님)",
+  "title": "규격맹 봉신 · 통신 정비·배분 담당(전 대전선 군주, 왕격 보존)",
+  "position": "규격맹 봉신 · 통신 정비·배분 담당(전 대전선 군주, 왕격 보존)",
   "characterId": "K1008",
-  "rank": "군주(왕격)",
+  "rank": "",
   "commonTier": "T1",
   "occupation": "주 통신 정비사 / 부 고물·철물 수리",
   "gender": "남성",
   "stage": "S1",
-  "state": "polity:daejeon",
-  "stateName": "대전",
+  "state": "S02",
+  "stateName": "규격맹",
   "sourceRoute": "/world/Cast-Unaffiliated#인물-민웅기",
   "detailRoute": "/people/person-1008",
   "birthDate": "2094-10-08",
@@ -410,10 +410,6 @@
       "evidenceRef": "owner-current-subject-permissions-20261003"
     }
   },
-  "gurps": {
-    "id": "K1008",
-    "personId": "person-1008"
-  },
   "characterProfile": {
     "abilities": {
       "leadership": {
@@ -571,369 +567,7 @@
       "diseases": []
     }
   },
-  "personSheet": {
-    "schema": "wiki-person-sheet.v1",
-    "currentState": "polity:daejeon",
-    "variants": [
-      {
-        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
-        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
-        "historicalState": "S02",
-        "rules": {
-          "rulesVersion": "seoul.opposed-d10.v1",
-          "resolution": "opposed-d10",
-          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
-          "numericAdoption": false,
-          "legacyValues": "immutable-not-d10-ratings",
-          "originalRatings": null
-        },
-        "legacy": {
-          "operative": false,
-          "record": {
-            "id": "K1008",
-            "name": "민웅기",
-            "url": "/people/person-1008",
-            "state": "S02",
-            "band": "주역·강자",
-            "attributes": {
-              "ST": {
-                "value": 10,
-                "cp": 0
-              },
-              "DX": {
-                "value": 14,
-                "cp": 80
-              },
-              "IQ": {
-                "value": 20,
-                "cp": 200
-              },
-              "HT": {
-                "value": 11,
-                "cp": 10
-              }
-            },
-            "traits": [],
-            "skills": [
-              {
-                "name": "전략",
-                "level": 16,
-                "cp": 8
-              },
-              {
-                "name": "정치",
-                "level": 15,
-                "cp": 4
-              },
-              {
-                "name": "외교",
-                "level": 14,
-                "cp": 2
-              },
-              {
-                "name": "지휘",
-                "level": 15,
-                "cp": 8
-              },
-              {
-                "name": "전술",
-                "level": 14,
-                "cp": 4
-              },
-              {
-                "name": "처세",
-                "level": 14,
-                "cp": 4
-              },
-              {
-                "name": "장검",
-                "level": 13,
-                "cp": 8
-              },
-              {
-                "name": "차량 운전",
-                "level": 13,
-                "cp": 8
-              },
-              {
-                "name": "정비",
-                "level": 14,
-                "cp": 4
-              },
-              {
-                "name": "생활·사회 잡기술",
-                "level": 13,
-                "cp": 45
-              }
-            ],
-            "secondary": {
-              "HP": 10,
-              "FP": 11,
-              "Will": 20,
-              "Per": 20,
-              "BasicSpeed": 6.25,
-              "BasicMove": 6,
-              "BasicLift": 20,
-              "Dodge": 10
-            },
-            "cp": {
-              "total": 429,
-              "attributes": 290,
-              "advantages": 69,
-              "disadvantages": -25,
-              "skills": 95,
-              "spent": 429,
-              "unspent": 0
-            }
-          }
-        }
-      },
-      {
-        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
-        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
-        "historicalState": "S02",
-        "rules": {
-          "rulesVersion": "seoul.opposed-d10.v1",
-          "resolution": "opposed-d10",
-          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
-          "numericAdoption": false,
-          "legacyValues": "immutable-not-d10-ratings",
-          "originalRatings": null
-        },
-        "legacy": {
-          "operative": false,
-          "record": {
-            "id": "K1008",
-            "name": "민웅기",
-            "url": "/people/person-1008",
-            "state": "S02",
-            "band": "주역·강자",
-            "attributes": {
-              "ST": {
-                "value": 10,
-                "cp": 0
-              },
-              "DX": {
-                "value": 14,
-                "cp": 80
-              },
-              "IQ": {
-                "value": 20,
-                "cp": 200
-              },
-              "HT": {
-                "value": 11,
-                "cp": 10
-              }
-            },
-            "traits": [],
-            "skills": [
-              {
-                "name": "전략",
-                "level": 16,
-                "cp": 8
-              },
-              {
-                "name": "정치",
-                "level": 15,
-                "cp": 4
-              },
-              {
-                "name": "외교",
-                "level": 14,
-                "cp": 2
-              },
-              {
-                "name": "지휘",
-                "level": 15,
-                "cp": 8
-              },
-              {
-                "name": "전술",
-                "level": 14,
-                "cp": 4
-              },
-              {
-                "name": "처세",
-                "level": 14,
-                "cp": 4
-              },
-              {
-                "name": "장검",
-                "level": 13,
-                "cp": 8
-              },
-              {
-                "name": "차량 운전",
-                "level": 13,
-                "cp": 8
-              },
-              {
-                "name": "정비",
-                "level": 14,
-                "cp": 4
-              },
-              {
-                "name": "생활·사회 잡기술",
-                "level": 13,
-                "cp": 45
-              }
-            ],
-            "secondary": {
-              "HP": 10,
-              "FP": 11,
-              "Will": 20,
-              "Per": 20,
-              "BasicSpeed": 6.25,
-              "BasicMove": 6,
-              "BasicLift": 20,
-              "Dodge": 10
-            },
-            "cp": {
-              "total": 429,
-              "attributes": 290,
-              "advantages": 69,
-              "disadvantages": -25,
-              "skills": 95,
-              "spent": 429,
-              "unspent": 0
-            }
-          }
-        }
-      }
-    ]
-  },
   "confirmedHoldings": [],
-  "superiorJurisdictions": [
-    {
-      "id": "holding:daejeon-dong",
-      "kind": "superior-jurisdiction",
-      "name": {
-        "ko": "강남구 상위 관할권"
-      },
-      "holderPersonId": "K1008",
-      "stateId": "polity:daejeon",
-      "directLiegePersonId": null,
-      "liegeRelationshipKind": "preserved-personal-service",
-      "titleId": "proposal:superior-jurisdiction:seoul:daejeon-dong",
-      "geographicScope": {
-        "duchyTitleId": "geography:duchy:11680",
-        "guRef": "11680",
-        "countyTitleIds": [
-          "geography:county:2de88369e480a7de",
-          "geography:county:588ef0f6ec944722",
-          "geography:county:98f9d95a2f5dd32e"
-        ],
-        "geographicKingdomId": "proposal:kingdom:seoul:06",
-        "geographicEmpireId": "geography:empire:seoul"
-      },
-      "territorialScale": "duchy",
-      "formalTitleRank": null,
-      "adminRefs": [],
-      "geometrySource": null,
-      "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
-      "directOwnership": false,
-      "powers": [
-        "receive-holding-change-notice",
-        "lodge-nonbinding-registry-objection"
-      ]
-    },
-    {
-      "id": "holding:daejeon-yuseong",
-      "kind": "superior-jurisdiction",
-      "name": {
-        "ko": "서초구 상위 관할권"
-      },
-      "holderPersonId": "K1008",
-      "stateId": "polity:daejeon",
-      "directLiegePersonId": null,
-      "liegeRelationshipKind": "preserved-personal-service",
-      "titleId": "proposal:superior-jurisdiction:seoul:daejeon-yuseong",
-      "geographicScope": {
-        "duchyTitleId": "geography:duchy:11650",
-        "guRef": "11650",
-        "countyTitleIds": [
-          "geography:county:39d747567d6e88c2",
-          "geography:county:be4c7c455504f6de"
-        ],
-        "geographicKingdomId": "proposal:kingdom:seoul:06",
-        "geographicEmpireId": "geography:empire:seoul"
-      },
-      "territorialScale": "duchy",
-      "formalTitleRank": null,
-      "adminRefs": [],
-      "geometrySource": null,
-      "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
-      "directOwnership": false,
-      "powers": [
-        "receive-holding-change-notice",
-        "lodge-nonbinding-registry-objection"
-      ]
-    }
-  ],
-  "openingTitles": [
-    {
-      "id": "proposal:superior-jurisdiction:seoul:daejeon-dong",
-      "name": "강남구 상위 관할",
-      "rank": "duchy",
-      "holderPersonId": "K1008",
-      "stateId": "polity:daejeon",
-      "geographicTitleId": "geography:duchy:11680",
-      "geographicParentTitleId": "proposal:kingdom:seoul:06",
-      "politicalParentTitleId": "title:kingdom-daejeon",
-      "personalLiegePersonId": null,
-      "kind": "superior-jurisdiction",
-      "directOwnership": false,
-      "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD",
-      "parentTitle": null
-    },
-    {
-      "id": "proposal:superior-jurisdiction:seoul:daejeon-yuseong",
-      "name": "서초구 상위 관할",
-      "rank": "duchy",
-      "holderPersonId": "K1008",
-      "stateId": "polity:daejeon",
-      "geographicTitleId": "geography:duchy:11650",
-      "geographicParentTitleId": "proposal:kingdom:seoul:06",
-      "politicalParentTitleId": "title:kingdom-daejeon",
-      "personalLiegePersonId": null,
-      "kind": "superior-jurisdiction",
-      "directOwnership": false,
-      "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD",
-      "parentTitle": null
-    },
-    {
-      "id": "title:kingdom-daejeon",
-      "name": "대전선",
-      "rank": "kingdom",
-      "holderPersonId": "K1008",
-      "stateId": "polity:daejeon",
-      "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD",
-      "kind": "nonterritorial-political-title",
-      "directOwnership": false,
-      "politicalParentTitleId": null,
-      "personalLiegePersonId": null,
-      "parentTitle": null
-    }
-  ],
-  "sovereignTitle": {
-    "id": "polity:daejeon",
-    "name": {
-      "ko": "대전",
-      "en": "Daejeon"
-    },
-    "sovereignPersonId": "K1008",
-    "territorialScale": null,
-    "formalTitle": "대전선",
-    "formalTitleRank": "왕격",
-    "office": "대전 군주",
-    "authority": {
-      "kind": "neutral",
-      "name": "대전"
-    },
-    "directOwnership": false,
-    "politicalTitleId": "title:kingdom-daejeon"
-  },
   "retinueGroups": [
     {
       "id": "retinue:K1008:humanoids",
@@ -960,8 +594,6 @@
       "formalTitle": null
     }
   ],
-  "unit": null,
-  "wandering_force": null,
   "clan": {
     "id": "bbfc-c5ec-d765-9594",
     "name": "여흥 민씨",
@@ -1000,8 +632,8 @@
     "생년월일": "2094-10-08",
     "언어": "한국어",
     "생업": "주 통신 정비사 / 부 고물·철물 수리",
-    "소속": "서울 내부의 보존 정치 정체성인 중립 대전",
-    "민간·공동체 직무": "대전 군주. 작위는 대전선이며 등급은 왕격이다 대한민국 정부 관직이나 봉건 품계가 아니다.",
+    "소속": "규격맹 봉신(전 중립 대전; 2026-10-22 세력 이동)",
+    "민간·공동체 직무": "통신 정비·배분 담당. 전직 대전 군주(대전선·왕격)는 2026-10-22 세력 이동으로 해소되었고 왕격은 규격맹 봉신의 개인 정치 등급으로 보존된다. 대한민국 정부 관직이나 봉건 작위가 아니다.",
     "성격": "끊긴 연락의 종료 판정을 서두르지 않고 주민에게 연결 비용을 설명한다",
     "개인 야망": "수서 생활권에서 공동 경작과 배분을 주민과 협의해 물자를 두고 다투지 않아도 되는 길을 만든다. 경작지·경작권·수확량은 확정하지 않는다.",
     "공포": "자동 종료 규칙이 침묵 중인 생존자를 장부에서 지우는 일",
@@ -1014,7 +646,7 @@
   "sections": {
     "훈련": "유도. 통신 장비 정비와는 별도로 익혔다."
   },
-  "biography": "- 성명: 민웅기\n- 캐릭터 ID: K1008\n- 기여자: [minpeter](https://github.com/minpeter)\n- 출신 공동체: 서울 내부 강남구청·수서 생활권\n- 생년월일: 2094-10-08\n- 언어: 한국어\n- 생업: 주 통신 정비사 / 부 고물·철물 수리\n- 소속: 서울 내부의 보존 정치 정체성인 중립 대전\n- 민간·공동체 직무: 대전 군주. 작위는 대전선이며 등급은 왕격이다 대한민국 정부 관직이나 봉건 품계가 아니다.\n- 성격: 끊긴 연락의 종료 판정을 서두르지 않고 주민에게 연결 비용을 설명한다\n- 개인 야망: 수서 생활권에서 공동 경작과 배분을 주민과 협의해 물자를 두고 다투지 않아도 되는 길을 만든다. 경작지·경작권·수확량은 확정하지 않는다.\n- 공포: 자동 종료 규칙이 침묵 중인 생존자를 장부에서 지우는 일\n- 통치 방식: 농업과 물자 배분을 주민과 협의한다\n- 관계: 김연규는 민웅기의 선배다\n- 촉발 사건: 수서의 주민 배분 협의에서 생활 전력·경작 도구 수리에 남길 부품과 중계기에 쓸 부품의 순서가 충돌한다.\n- 플레이어 개입: 주민과 배분 순서를 협의하도록 돕거나 서울 내부 부품 인계를 돕는다. 한쪽 수리가 늦어지고 민웅기는 추가 당직을 거절할 수 있다.\n- 거주·업무 위치: 수서동 행정동 범위 거주, 수서역 대합실의 생활 화물 인계·배급 창구 업무. 주택·침상 권리와 독점 점유를 부여하지 않으며 서울 작위·영지 수여나 무토지 확정이 아니다.\n\n민웅기는 처음부터 서울 내부에서 통신 정비와 주민 배분을 맡아 왔다. 강남구청 생활권의 귀환망 정비와 수서 생활권의 수리·공동 경작 배분을 병행하며, 연결 비용과 식량 순서를 주민과 협의한다. 종료 처리한 연락처에서 다시 응답이 왔을 때 시각과 전력 사용량을 기록한 행동을 보존한다. 개막에 관직을 버리고 대전으로 옮겼다는 사건과 서울 복귀 요구는 삭제한다. 대전 군주·대전선·왕격 및 세 직속 관계는 정치 정체성으로 보존하며 서울 영지 범위로 확정하지 않는다. 가신단 24기의 제한된 농업·지역 통신·보급·정비 기능과 개별 인격 심사는 보존하되 서울 내부 업무로 개정한다.\n\n훈련. 유도. 통신 장비 정비와는 별도로 익혔다.",
+  "biography": "- 성명: 민웅기\n- 캐릭터 ID: K1008\n- 기여자: [minpeter](https://github.com/minpeter)\n- 출신 공동체: 서울 내부 강남구청·수서 생활권\n- 생년월일: 2094-10-08\n- 언어: 한국어\n- 생업: 주 통신 정비사 / 부 고물·철물 수리\n- 소속: 규격맹 봉신(전 중립 대전; 2026-10-22 세력 이동)\n- 민간·공동체 직무: 통신 정비·배분 담당. 전직 대전 군주(대전선·왕격)는 2026-10-22 세력 이동으로 해소되었고 왕격은 규격맹 봉신의 개인 정치 등급으로 보존된다. 대한민국 정부 관직이나 봉건 작위가 아니다.\n- 성격: 끊긴 연락의 종료 판정을 서두르지 않고 주민에게 연결 비용을 설명한다\n- 개인 야망: 수서 생활권에서 공동 경작과 배분을 주민과 협의해 물자를 두고 다투지 않아도 되는 길을 만든다. 경작지·경작권·수확량은 확정하지 않는다.\n- 공포: 자동 종료 규칙이 침묵 중인 생존자를 장부에서 지우는 일\n- 통치 방식: 농업과 물자 배분을 주민과 협의한다\n- 관계: 김연규는 민웅기의 선배다\n- 촉발 사건: 수서의 주민 배분 협의에서 생활 전력·경작 도구 수리에 남길 부품과 중계기에 쓸 부품의 순서가 충돌한다.\n- 플레이어 개입: 주민과 배분 순서를 협의하도록 돕거나 서울 내부 부품 인계를 돕는다. 한쪽 수리가 늦어지고 민웅기는 추가 당직을 거절할 수 있다.\n- 거주·업무 위치: 수서동 행정동 범위 거주, 수서역 대합실의 생활 화물 인계·배급 창구 업무. 주택·침상 권리와 독점 점유를 부여하지 않으며 서울 작위·영지 수여나 무토지 확정이 아니다.\n\n민웅기는 처음부터 서울 내부에서 통신 정비와 주민 배분을 맡아 왔다. 강남구청 생활권의 귀환망 정비와 수서 생활권의 수리·공동 경작 배분을 병행하며, 연결 비용과 식량 순서를 주민과 협의한다. 종료 처리한 연락처에서 다시 응답이 왔을 때 시각과 전력 사용량을 기록한 행동을 보존한다. 개막에 관직을 버리고 대전으로 옮겼다는 사건과 서울 복귀 요구는 삭제한다. 대전 군주·대전선은 2026-10-22 규격맹 세력 이동으로 해소하고, 왕격은 규격맹 봉신의 개인 정치 등급으로 보존한다. 세 직속 관계(장우석·허다온·구찬솔)는 규격맹 조합 안에서 보존하며 서울 영지 범위로 확정하지 않는다. 가신단 24기의 제한된 농업·지역 통신·보급·정비 기능과 개별 인격 심사는 보존하되 서울 내부 업무로 개정한다.\n\n훈련. 유도. 통신 장비 정비와는 별도로 익혔다.",
   "sources": [
     "Cast-Unaffiliated"
   ],

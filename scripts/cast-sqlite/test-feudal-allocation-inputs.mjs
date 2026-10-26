@@ -9,6 +9,40 @@ import { DatabaseSync } from 'node:sqlite';
 import { FEUDAL_ALLOCATION_SOURCE_HASH, initializeFeudalAllocationInputs, readFeudalAllocationInputs } from './feudal-allocation-inputs.mjs';
 import { loadPersonDetailSources as loadDbInputs } from './person-detail-inputs.mjs';
 import { readSourceArchive } from './source-archive.mjs';
+import { readApprovedDataSource } from './data-source-editor.mjs';
+
+if (process.env.ALLOCATION_CURRENT_DB) {
+  test('approved allocation current source matches authenticated rows and rejects drift', async t => {
+    const directory = await mkdtemp(join(tmpdir(), 'allocation-current-'));
+    const path = join(directory, 'owned.sqlite');
+    await copyFile(process.env.ALLOCATION_CURRENT_DB, path);
+    const db = new DatabaseSync(path);
+    t.after(async () => { db.close(); await rm(directory, { recursive: true }); });
+    const expected = readApprovedDataSource(db, 'lore/relations/opening-feudal-allocation.json',
+      'aa32254621831b189587024f2748dc1f78f93a1a448e4e5be15beb6ace8b12e9', FEUDAL_ALLOCATION_SOURCE_HASH);
+    const actual = readFeudalAllocationInputs(db, { predecessor: true });
+    assert.deepEqual(actual, expected);
+    assert.ok(!actual.titles.some(row => row.id === 'title:kingdom-daejeon'));
+    assert.ok(!actual.existingTitleBindings.some(row => row.holdingId.startsWith('holding:daejeon-')));
+    const current = readFeudalAllocationInputs(db);
+    assert.ok(!current.titles.some(row => row.id === 'title:duchy-s08'));
+    for (const sql of [
+      "UPDATE context_feudal_title SET holder_person_id=(SELECT person_id FROM person WHERE person_id<>context_feudal_title.holder_person_id ORDER BY person_id LIMIT 1) WHERE rowid=(SELECT min(rowid) FROM context_feudal_title)",
+      "UPDATE context_feudal_title SET kind='invented' WHERE rowid=(SELECT min(rowid) FROM context_feudal_title)",
+      "DELETE FROM context_feudal_title WHERE rowid=(SELECT max(rowid) FROM context_feudal_title)",
+      "UPDATE data_source_revision SET approval_ref='unapproved' WHERE source_path='lore/relations/opening-feudal-allocation.json' AND parent_revision IS NOT NULL",
+      "UPDATE data_source_revision SET reason='tampered' WHERE source_path='lore/relations/opening-feudal-allocation.json' AND parent_revision IS NULL",
+      "UPDATE data_source_current SET document_json='{}' WHERE source_path='lore/relations/opening-feudal-allocation.json'",
+    ]) {
+      db.exec('BEGIN');
+      try { db.exec(sql); assert.throws(() => readFeudalAllocationInputs(db), { code: 'E_FEUDAL_ALLOCATION_INPUT' }); }
+      finally { db.exec('ROLLBACK'); }
+    }
+    assert.throws(() => readFeudalAllocationInputs(db, { expectedSourceHash: '0'.repeat(64) }), { code: 'E_FEUDAL_ALLOCATION_INPUT' });
+    assert.deepEqual(readFeudalAllocationInputs(db, { predecessor: true }), actual);
+    assert.deepEqual(db.prepare('PRAGMA foreign_key_check').all(), []);
+  });
+} else {
 
 const authority = process.env.FEUDAL_ALLOCATION_TEST_DB ?? '/tmp/seoul-document-authority-20261020/bootstrap-personal-holdings-20261020.sqlite';
 const dir = await mkdtemp(join(tmpdir(), 'feudal-allocation-inputs-'));
@@ -150,3 +184,4 @@ test('authority database bytes remain unchanged', async () => {
   assert.equal(hash(await readFile(authority)), authorityBefore);
   console.log(`FEUDAL_ALLOCATION_AUTHORITY_UNCHANGED ${authorityBefore}`);
 });
+}

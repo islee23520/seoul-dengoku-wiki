@@ -2,6 +2,10 @@
 
 Pull requests targeting `main` run the lore JSON validator tests and changed-file lore JSON validation through the Lore PR checks workflow. The wiki build and `test:gate` need parent-repository inputs, so they run in the parent repository's CI on the pinned tuple.
 
+## Testing rules
+
+Before adding any test script, read [TESTING.md](TESTING.md) — the project-wide rules that keep one-off verification scripts out of the committed suite.
+
 ## Historical person sheets
 
 `npm run generate` and `npm run build` load both historical sheets from the committed `vendor/issued-history/` inputs. No `WIKI_PERSON_SHEET_SOURCES`, historical Git checkout, network fetch, or private evidence directory is required. The existing parent inputs still come from the parent checkout or `SEOUL_KENSHI_ROOT` when this Wiki is in a standalone worktree.

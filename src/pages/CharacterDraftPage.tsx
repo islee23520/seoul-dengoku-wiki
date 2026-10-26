@@ -1,16 +1,15 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { peopleCatalog } from '../generated/peopleCatalog'
-import { LEGACY_REVISIONS, ORIGINAL_CAPABILITIES, ORIGINAL_RULES_VERSION, PERSONAL_FIELDS, TRAIT_FIELDS } from '../data/original-trpg-options'
-import { characterDraftExport, draftPersonalContext, draftProblems, emptyCharacterDraft, legacyRevision, projectedDraftLegacy } from './characterDraftExport'
-import type { LegacyStore, PersonalKey } from './characterDraftExport'
+import { ORIGINAL_CAPABILITIES, ORIGINAL_RULES_VERSION, PERSONAL_FIELDS, TRAIT_FIELDS } from '../data/original-trpg-options'
+import { characterDraftExport, draftPersonalContext, draftProblems, emptyCharacterDraft } from './characterDraftExport'
+import type { PersonalKey } from './characterDraftExport'
 import { parseDraftProfile } from '../../scripts/character-profile-draft.mjs'
 import './CharacterDraftPage.css'
 
-export default function CharacterDraftPage({ legacyStore }: { readonly legacyStore?: LegacyStore } = {}) {
+export default function CharacterDraftPage() {
   const [searchParams] = useSearchParams()
   const [sheet, setSheet] = useState(emptyCharacterDraft)
-  const [revision, setRevision] = useState('')
   const [selectedCharId, setSelectedCharId] = useState('')
   const [searchQuery, setSearchQuery] = useState('')
   const [loadedSelection, setLoadedSelection] = useState('')
@@ -19,9 +18,8 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
   const [exportError, setExportError] = useState('')
   const [profileError, setProfileError] = useState('')
   const [profileText, setProfileText] = useState('')
-  const selectionKey = `${revision}:${selectedCharId}`
   const problems = draftProblems(sheet)
-  const canExport = Boolean(revision) && !loading && !profileError && (!selectedCharId || loadedSelection === selectionKey) && problems.length === 0
+  const canExport = !loading && !profileError && (!selectedCharId || loadedSelection === selectedCharId) && problems.length === 0
   const characters = useMemo(() => {
     const q = searchQuery.trim().toLowerCase()
     return peopleCatalog.filter(person => !q || person.name.toLowerCase().includes(q) || person.stateName.toLowerCase().includes(q))
@@ -35,7 +33,7 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
   useEffect(() => {
     const controller = new AbortController()
     setLoadedSelection(''); setLoadError(''); setExportError(''); setProfileError(''); setProfileText(''); setSheet(emptyCharacterDraft())
-    if (!selectedCharId || !revision) { setLoading(false); return () => controller.abort() }
+    if (!selectedCharId) { setLoading(false); return () => controller.abort() }
     setLoading(true)
     void (async () => {
       try {
@@ -44,12 +42,10 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
         if (!res.ok) throw new Error('인물 정보를 불러오지 못했습니다.')
         const data: unknown = await res.json()
         if (!data || typeof data !== 'object' || !('id' in data) || data.id !== selectedCharId || !('name' in data) || data.name !== expected?.name) throw new Error('인물 정보의 ID와 이름이 일치하지 않습니다.')
-        const legacy = legacyStore ? legacyStore.read(legacyRevision(revision), selectedCharId) : projectedDraftLegacy(data, revision)
-        if (legacyStore && legacy.person.name !== expected?.name) throw new Error('원본과 인물 목록의 이름이 일치하지 않습니다.')
         const personal = draftPersonalContext(data)
         if (controller.signal.aborted) return
-        setSheet({ ...emptyCharacterDraft(), ...personal, legacy })
-        setLoadedSelection(selectionKey)
+        setSheet({ ...emptyCharacterDraft(), ...personal })
+        setLoadedSelection(selectedCharId)
       } catch (error) {
         if (!controller.signal.aborted) setLoadError(error instanceof Error ? error.message : '인물 조회 실패')
       } finally {
@@ -57,7 +53,7 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
       }
     })()
     return () => controller.abort()
-  }, [selectedCharId, revision, legacyStore, selectionKey])
+  }, [selectedCharId])
 
   function setPersonal(key: PersonalKey, value: string) {
     setSheet(previous => ({ ...previous, [key]: value }))
@@ -79,7 +75,7 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
   function download() {
     if (!canExport) return
     try {
-      const exported = characterDraftExport(sheet, { personId: selectedCharId, revision })
+      const exported = characterDraftExport(sheet, { personId: selectedCharId })
       const url = URL.createObjectURL(new Blob([JSON.stringify(exported, null, 2)], { type: 'application/json' }))
       const link = document.createElement('a')
       link.href = url; link.download = 'character-original-draft.json'; link.click()
@@ -95,14 +91,7 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
     {selectedCharId && <p><Link to={`/tools/character-art?person=${encodeURIComponent(selectedCharId)}`}>선택 인물의 아트 작업 도구</Link></p>}
 
     <section className="draft-charselect">
-      <h2>기존 인물과 원본 개정</h2>
-      <label>원본 개정
-        <select aria-label="원본 개정" value={revision} onChange={event => setRevision(event.target.value)}>
-          <option value="">— 개정을 명시적으로 선택 —</option>
-          {LEGACY_REVISIONS.map(item => <option key={item.revision} value={item.revision}>{item.label} · {item.revision}</option>)}
-        </select>
-      </label>
-      <p>기준 원본 ce173686… / 추가 기록 원본 5f34d92d…는 서로 다른 기록입니다.</p>
+      <h2>기존 인물</h2>
       <div className="charselect-row">
         <input aria-label="인물 검색" placeholder="이름 또는 국가로 검색..." value={searchQuery} onChange={event => setSearchQuery(event.target.value)} className="charselect-search" />
         <select aria-label="기존 인물" value={selectedCharId} onChange={event => setSelectedCharId(event.target.value)} className="charselect-dropdown">
@@ -112,15 +101,9 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
         {loading && <span role="status">불러오는 중...</span>}
       </div>
       {loadError && <p role="alert">{loadError}</p>}
-      {revision && <p>선택 개정: <code>{revision}</code></p>}
     </section>
 
-    {sheet.legacy && <details>
-      <summary>원본 전체 기록 · 읽기 전용 · 새 평가로 환산하지 않음</summary>
-      <pre>{JSON.stringify(sheet.legacy, null, 2)}</pre>
-    </details>}
-
-    <fieldset disabled={loading || Boolean(selectedCharId && loadedSelection !== selectionKey)}>
+    <fieldset disabled={loading || Boolean(selectedCharId && loadedSelection !== selectedCharId)}>
       <section className="draft-basic">
         <h2>개인 문맥</h2>
         <div className="form-grid">

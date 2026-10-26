@@ -162,7 +162,31 @@ export function resolveStructuralLinks(db, sourceId) {
 
 export function applyStructuralCommand(db, sourceId, command) {
   const before = nodes(db, sourceId);
-  if (command.type === 'insertNode') {
+  if (command.type === 'appendTableRow') {
+    shape(command, ['type', 'nodeId', 'expectedRows', 'row']);
+    const node = before.find((r) => r.anchor === command.nodeId);
+    if (!node || node.kind !== 'table') fail('existing table node required');
+    const rows = db.prepare('SELECT ordinal FROM text_document_table_row WHERE source_id=? AND node_pointer=? ORDER BY ordinal').all(sourceId, node.json_pointer);
+    if (!Number.isSafeInteger(command.expectedRows) || command.expectedRows < 0
+      || rows.length !== command.expectedRows || rows.some((r, i) => r.ordinal !== i)) fail('table row count differs');
+    const width = db.prepare("SELECT count(*) n FROM text_document_table_cell WHERE source_id=? AND node_pointer=? AND cell_kind='column'").get(sourceId, node.json_pointer).n;
+    if (!array(command.row) || command.row.length !== width) fail('row must match table width');
+    command.row.forEach((value) => leaf(value, { empty: true, scalar: true }));
+    const pointer = `${node.json_pointer}/rows/${rows.length}`;
+    const emit = (table, p, fields) => {
+      db.prepare(`INSERT INTO source_record
+        (source_id,json_pointer,parent_pointer,ordinal,field_name,json_type) VALUES (?,?,NULL,0,NULL,'null')`).run(sourceId, p);
+      insert(db, table, { source_id: sourceId, json_pointer: p, ...fields });
+    };
+    emit('text_document_table_row', pointer, { node_pointer: node.json_pointer, ordinal: rows.length });
+    command.row.forEach((value, ordinal) => {
+      const p = `${pointer}/${ordinal}`;
+      emit('text_document_table_cell', p, { node_pointer: node.json_pointer, row_pointer: pointer, cell_kind: 'body', ordinal });
+      for (const locale of ['ko', 'en']) emit('text_document_slot', `${p}/${locale}`, {
+        node_pointer: node.json_pointer, locale, representation: 'string', text: value[locale],
+      });
+    });
+  } else if (command.type === 'insertNode') {
     shape(command, ['type', 'index', 'node']);
     if (!Number.isSafeInteger(command.index) || command.index < 0 || command.index > before.length) fail('invalid insertion index');
     const pointer = insertNode(db, sourceId, command.node, Math.max(-1, ...before.map((r) => r.ordinal)) + 1);

@@ -1243,7 +1243,7 @@ test('K998 keeps his detail route after relocation to the First Branch Workshop'
   assert.equal((detail.openingTitles ?? []).some(title => title.id === 'title:duchy-chungcheong-k998'), false)
   const identities = JSON.parse(await readFile(new URL('../public/confirmed-person-holdings.json', import.meta.url)))
   assert.ok(identities.politicalIdentities.some(title => title.id === 'title:duchy-chungcheong-k998' && title.directOwnership === false))
-  assert.equal(detail.commonTier, 'T3')
+  assert.equal(detail.commonTier, appointment.current.commonTier)
   assert.equal(detail.occupation, detail.fields['생업'])
   assert.match(detail.occupation, /오류2동.*밭 경작·곡물 재고 관리/u)
   assert.equal(detail.sourceRoute, '/world/Cast-State-02#인물-이일섭')

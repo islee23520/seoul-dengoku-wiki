@@ -3,12 +3,11 @@ import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { producePersonDetails } from './person-detail-production.mjs'
-import { authenticatePersonalTierProvenance } from './personal-tier-provenance.mjs'
-import { loadCharacterProfiles } from './validate-character-profiles.mjs'
-import { loadPreservedPersonSheets } from './preserved-person-sheet.mjs'
+import { loadPersonDetailSources } from './person-detail-inputs.mjs'
 
-test('the shared producer preserves office precedence, historical sheets, full rights and absent fields without output IO', async () => {
+test('the shared producer preserves office precedence, current profiles, full rights and absent fields without output IO', async () => {
   const root = new URL('../', import.meta.url)
+  const sources = await loadPersonDetailSources({ repoRoot: root.pathname })
   const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json').persons
   const values = readCanonicalDocument('lore/name-pools/values-cast.json').people
   const sheets = readCanonicalDocument('lore/name-pools/gurps-cast.json').people
@@ -32,7 +31,7 @@ test('the shared producer preserves office precedence, historical sheets, full r
   const personalHoldings = { holdings: [right], titles: [title], polities: [], retinueGroups: [] }
   const calls = []
   const result = producePersonDetails({
-    personalTierPreservation: await authenticatePersonalTierProvenance(root.pathname),
+    personalTierPreservation: sources.personalTierPreservation,
     peopleSource, personCards: new Map([[first.issued.name, [firstCard]], [second.issued.name, [secondCard]]]),
     pagesBySlug: new Map([['Cast-State-01', { value: { id: 'source:first' } }], ['Core-Characters', { value: { id: 'source:second' } }]]),
     officeAppointments: new Map([[first.issued.id, { personId: first.issued.id, stateId: first.ledger.state,
@@ -48,7 +47,7 @@ test('the shared producer preserves office precedence, historical sheets, full r
     lineageByName: new Map(chosen.map(({ issued }) => [issued.name, { clan: null }])),
     birthdaysById: new Map(), familyGraph: { nodes: [], edges: [] }, parentStatusById: new Map(),
     proseContactsById: new Map(), householdsById: new Map(), personRightsPermissions: new Map(),
-    characterProfiles: await loadCharacterProfiles(root.pathname), preservedSheets: loadPreservedPersonSheets(),
+    characterProfiles: sources.characterProfiles,
     openingDispositions: new Map(), relations: [],
     personFeedbackRecord: input => { calls.push(input); return { personId: input.personId, sections: input.sections } },
   })
@@ -69,13 +68,11 @@ test('the shared producer preserves office precedence, historical sheets, full r
   assert.equal(Object.hasOwn(b, 'openingTitles'), false)
   assert.equal(Object.hasOwn(b, 'rightsPermissions'), false)
   assert.equal(Object.hasOwn(b, 'directLiege'), false)
-  assert.equal(Object.hasOwn(b, 'unit'), b.unit !== undefined)
   assert.equal(Object.hasOwn(a, 'territory'), false)
   assert.equal(Object.hasOwn(b, 'territory'), false)
-  assert.equal(Object.hasOwn(b, 'wandering_force'), b.wandering_force !== undefined)
-  assert.equal(JSON.stringify(b).includes('"unit"'), b.unit !== undefined)
-  assert.equal(a.personSheet.variants.length, 2)
-  assert.ok(a.personSheet.variants.every(variant => variant.legacy.operative === false))
+  assert.ok(a.characterProfile.abilities)
+  assert.ok(Array.isArray(a.characterProfile.skills))
+  assert.ok(Array.isArray(a.characterProfile.traits))
   assert.deepEqual(calls.map(row => row.personId), ['person-0001', 'person-0002'])
   assert.deepEqual(result.personFeedbackRecords.map(row => row.sections), result.personDetails.map(row => row.sections))
   assert.deepEqual(a.relations, { outgoing: [], incoming: [] })

@@ -289,10 +289,6 @@
     "houseFaith": "unknown",
     "humanoidAdmission": "deferred"
   },
-  "gurps": {
-    "id": "K001",
-    "personId": "person-0001"
-  },
   "characterProfile": {
     "abilities": {
       "leadership": {
@@ -404,186 +400,6 @@
       ],
       "diseases": []
     }
-  },
-  "personSheet": {
-    "schema": "wiki-person-sheet.v1",
-    "currentState": "S01",
-    "variants": [
-      {
-        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
-        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
-        "historicalState": "S01",
-        "rules": {
-          "rulesVersion": "seoul.opposed-d10.v1",
-          "resolution": "opposed-d10",
-          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
-          "numericAdoption": false,
-          "legacyValues": "immutable-not-d10-ratings",
-          "originalRatings": null
-        },
-        "legacy": {
-          "operative": false,
-          "record": {
-            "id": "K001",
-            "name": "한재목",
-            "url": "/people/person-0001",
-            "state": "S01",
-            "band": "일반 인물",
-            "attributes": {
-              "ST": {
-                "value": 10,
-                "cp": 0
-              },
-              "DX": {
-                "value": 10,
-                "cp": 0
-              },
-              "IQ": {
-                "value": 12,
-                "cp": 40
-              },
-              "HT": {
-                "value": 10,
-                "cp": 0
-              }
-            },
-            "traits": [],
-            "skills": [
-              {
-                "name": "Administration",
-                "ko": "행정·기록",
-                "level": 14,
-                "cp": 8
-              },
-              {
-                "name": "Observation",
-                "ko": "관찰(경비·순찰)",
-                "level": 14,
-                "cp": 8
-              },
-              {
-                "name": "Politics",
-                "ko": "정치(선거·표 모으기)",
-                "level": 13,
-                "cp": 4
-              },
-              {
-                "name": "Breath Control",
-                "ko": "호흡 수련(심법)",
-                "level": 10,
-                "cp": 4
-              }
-            ],
-            "secondary": {
-              "HP": 10,
-              "FP": 10,
-              "Will": 12,
-              "Per": 12,
-              "BasicSpeed": 5,
-              "BasicMove": 5,
-              "BasicLift": 20,
-              "Dodge": 8
-            },
-            "cp": {
-              "total": 75,
-              "attributes": 40,
-              "advantages": 0,
-              "disadvantages": 0,
-              "skills": 24,
-              "spent": 64,
-              "unspent": 11
-            }
-          }
-        }
-      },
-      {
-        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
-        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
-        "historicalState": "S01",
-        "rules": {
-          "rulesVersion": "seoul.opposed-d10.v1",
-          "resolution": "opposed-d10",
-          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
-          "numericAdoption": false,
-          "legacyValues": "immutable-not-d10-ratings",
-          "originalRatings": null
-        },
-        "legacy": {
-          "operative": false,
-          "record": {
-            "id": "K001",
-            "name": "한재목",
-            "url": "/people/person-0001",
-            "state": "S01",
-            "band": "일반 인물",
-            "attributes": {
-              "ST": {
-                "value": 10,
-                "cp": 0
-              },
-              "DX": {
-                "value": 10,
-                "cp": 0
-              },
-              "IQ": {
-                "value": 12,
-                "cp": 40
-              },
-              "HT": {
-                "value": 10,
-                "cp": 0
-              }
-            },
-            "traits": [],
-            "skills": [
-              {
-                "name": "Administration",
-                "ko": "행정·기록",
-                "level": 14,
-                "cp": 8
-              },
-              {
-                "name": "Observation",
-                "ko": "관찰(경비·순찰)",
-                "level": 14,
-                "cp": 8
-              },
-              {
-                "name": "Politics",
-                "ko": "정치(선거·표 모으기)",
-                "level": 13,
-                "cp": 4
-              },
-              {
-                "name": "Breath Control",
-                "ko": "호흡 수련(심법)",
-                "level": 10,
-                "cp": 4
-              }
-            ],
-            "secondary": {
-              "HP": 10,
-              "FP": 10,
-              "Will": 12,
-              "Per": 12,
-              "BasicSpeed": 5,
-              "BasicMove": 5,
-              "BasicLift": 20,
-              "Dodge": 8
-            },
-            "cp": {
-              "total": 75,
-              "attributes": 40,
-              "advantages": 0,
-              "disadvantages": 0,
-              "skills": 24,
-              "spent": 64,
-              "unspent": 11
-            }
-          }
-        }
-      }
-    ]
   },
   "confirmedHoldings": [
     {
@@ -749,39 +565,18 @@
         "name": "규격맹 왕국",
         "holderPersonId": "K029"
       }
+    },
+    {
+      "id": "title:kingdom-geography:seoul:04",
+      "name": "서부 왕국",
+      "rank": "kingdom",
+      "holderPersonId": "K001",
+      "stateId": "S01",
+      "geographicTitleId": "geography:kingdom:seoul:04",
+      "basis": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 수문국 군주. 서부 왕국 세 자치구 가운데 영등포·양천 공작령 보유 근거.",
+      "parentTitle": null
     }
   ],
-  "unit": {
-    "type": "수행원",
-    "size": 4,
-    "quality": "일반",
-    "composition": [
-      "수행원"
-    ],
-    "note": "개인 수행 요원 — 강세력 수문국 규모",
-    "faction_scale": {
-      "state": "S01",
-      "tier": "강세력",
-      "factor": 1.2
-    }
-  },
-  "wandering_force": {
-    "type": "무소속 유랑 부대",
-    "size": 4,
-    "current_location": "한강 둔치",
-    "camp": {
-      "name": "한재목 한강변 야영지",
-      "type": "야영지",
-      "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-      "facilities": [
-        "야전 숙소",
-        "취사 시설",
-        "무기 보관소"
-      ],
-      "pack_up_time": "반나절"
-    },
-    "note": "S01 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-  },
   "clan": {
     "id": "d55c-ccad-c8fc",
     "name": "청주 한씨",

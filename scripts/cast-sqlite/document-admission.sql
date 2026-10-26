@@ -20,7 +20,7 @@ WHEN NOT EXISTS (
   JOIN document_revision_seal z USING(revision_id)
   JOIN source_file s USING(source_id) JOIN text_document d USING(source_id)
   WHERE h.source_id=NEW.source_id AND h.revision_id=NEW.revision_id
-    AND r.semantic_sha256=NEW.semantic_sha256 AND r.parent_revision IS NULL
+    AND r.semantic_sha256=NEW.semantic_sha256
     AND r.algorithm='typed-envelope-v1' AND s.logical_path=NEW.source_path
     AND s.sha256=NEW.source_sha256 AND d.corpus_kind='current'
     AND d.status IN ('approved','draft')

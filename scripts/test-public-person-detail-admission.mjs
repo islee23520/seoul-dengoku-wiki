@@ -2,10 +2,10 @@ import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { sha256 } from './seoul-scope.mjs'
-import { admitPublicPersonDetails, assertApprovedPersonDetailMappingReceipt, loadPersonDetailMappingAuthority, validatePersonDetailFieldMappings } from './public-person-detail-admission.mjs'
+import { admitPublicPersonDetails, assertApprovedPersonDetailMappingReceipt, validatePersonDetailFieldMappings } from './public-person-detail-admission.mjs'
 import { writePublicPersonDetails } from './generate-catalog.mjs'
 
-const fixture = () => {
+const fixture = (historical = false) => {
   const ids = Array.from({ length: 1022 }, (_, index) => `K${String(index + 1).padStart(3, '0')}`)
   const ref = 'region:seoul'
   return {
@@ -13,8 +13,9 @@ const fixture = () => {
       const id = `person-${String(index + 1).padStart(4, '0')}`
       return { id, characterId, name: `Person ${index}`, detailRoute: `/people/${id}`,
         title: '', position: '', rank: '', commonTier: '', occupation: '', gender: '', stage: '',
-        state: 'S00', stateName: '', sourceRoute: '/world/fixture', gurps: { id: characterId, personId: id },
-        personSheet: {}, clan: null, generation: 'opening', minors: false, sourceKind: 'fixture', locked: false,
+        state: 'S00', stateName: '', sourceRoute: '/world/fixture',
+        ...(historical ? { gurps: { id: characterId, personId: id }, personSheet: {} } : {}),
+        clan: null, generation: 'opening', minors: false, sourceKind: 'fixture', locked: false,
         values: {}, desire: {}, fields: {}, sections: { biography: 'Fixture current biography' },
         biography: 'Fixture current biography', sources: ['fixture'], relations: { outgoing: [], incoming: [] } }
     }),
@@ -35,6 +36,18 @@ test('all 1022 complete details remain unpublished and unmodified without authen
   assert.deepEqual(details, original)
 })
 
+test('a claimed mapping successor cannot replace independent publication review', () => {
+  const { details, scope } = fixture()
+  const original = structuredClone(details)
+  const claimedSuccessor = { predecessor: 'person-detail-mapping:final:20261020',
+    details: structuredClone(details), dependencies: [], changes: [] }
+  assert.throws(() => admitPublicPersonDetails(details, scope, claimedSuccessor),
+    { code: 'E_SCOPE_PENDING', path: '/current/publicationReview' })
+  assert.throws(() => assertApprovedPersonDetailMappingReceipt(claimedSuccessor, details),
+    { code: 'E_REVIEW_COVERAGE' })
+  assert.deepEqual(details, original)
+})
+
 test('an ID-only payload cannot masquerade as complete public details', () => {
   // Given the old skinny projection contract with all 1022 IDs.
   const { details, scope } = fixture()
@@ -43,7 +56,7 @@ test('an ID-only payload cannot masquerade as complete public details', () => {
   assert.throws(() => admitPublicPersonDetails(skinny, scope), { code: 'E_REVIEW_COVERAGE', path: '/person-details/title' })
 })
 
-test.each(['biography', 'sections', 'fields', 'relations', 'personSheet'])('omitted %s cannot pass with all original IDs', field => {
+test.each(['biography', 'sections', 'fields', 'relations'])('omitted %s cannot pass with all original IDs', field => {
   // Given a payload that silently drops one page field.
   const { details, scope } = fixture()
   delete details[0][field]
@@ -155,7 +168,7 @@ test('old direct JSON with an outside holding cannot be republished as a skinny 
 
 // Immutable independent source mocks for the pure comparison, never admission.
 // They are created before any candidate exists and never rebuilt from a mutation.
-const approvedFixture = fixture().details
+const approvedFixture = fixture(true).details
 const fiveRights = [
   ['K1008', 'holding:daejeon-dong'], ['K1008', 'holding:daejeon-yuseong'],
   ['K035', 'holding:daejeon-jung'], ['K039', 'holding:daejeon-seo'], ['K038', 'holding:daejeon-daedeok'],
@@ -245,13 +258,43 @@ test('pure full-field comparison covers 1022 unchanged details but grants no pub
   assert.throws(() => admitPublicPersonDetails(productionDetails, scope), { code: 'E_SCOPE_PENDING' })
 })
 
-test('production loader authenticates all 1022 details and caller clones cannot mint authority', async () => {
-  const authority = await loadPersonDetailMappingAuthority()
-  const details = JSON.parse(authority.receiptBytes).details
-  assert.equal(details.length, 1022)
-  assert.equal(assertApprovedPersonDetailMappingReceipt(authority, details), true)
-  const clone = structuredClone({ receiptBytes: mappingReceipt, ...mappingEvidence })
-  assert.throws(() => assertApprovedPersonDetailMappingReceipt(clone, candidate()), { code: 'E_REVIEW_COVERAGE' })
+test('admission uses the supplied roster rather than a historical output count', () => {
+  const { details, scope } = fixture()
+  details.splice(3)
+  const ids = details.map(row => row.characterId)
+  scope.baseline.currentEntitySets.persons = ids
+  scope.current.entitySets.persons = [...ids]
+  scope.contract.entities = scope.contract.entities.filter(row => ids.includes(row.id))
+  scope.contract.dispositions = scope.contract.dispositions.filter(row => ids.includes(row.id))
+  // All structural checks pass for this small independent roster. Content and
+  // historical output values cannot substitute for the human publication review.
+  assert.throws(() => admitPublicPersonDetails(details, scope),
+    { code: 'E_SCOPE_PENDING', path: '/current/publicationReview' })
+  details.pop()
+  assert.throws(() => admitPublicPersonDetails(details, scope), { code: 'E_CENSUS_PERSON' })
+})
+
+test('admission rejects private historical fields independently of output mapping receipts', () => {
+  const { details, scope } = fixture()
+  details[0].personSheet = { variants: [{ legacy: { record: { evidence: 'private' } } }] }
+  assert.throws(() => admitPublicPersonDetails(details, scope),
+    { code: 'E_SCOPE_SHAPE', path: '/person-details/personSheet', id: details[0].characterId })
+})
+
+test.each(['values', 'relations'])('admission rejects nested soul data in %s without changing the candidate', field => {
+  const { details, scope } = fixture()
+  details[0][field].nested = [{ souls: ['private assignment'] }]
+  const original = structuredClone(details)
+  assert.throws(() => admitPublicPersonDetails(details, scope),
+    { code: 'E_SCOPE_PROJECTION', path: `/person-details/${field}/nested/0/souls`, id: details[0].characterId })
+  assert.deepEqual(details, original)
+})
+
+test.each(['soulAssignments', 'soulCandidates', 'historicalMotif'])('admission rejects nested private %s metadata', key => {
+  const { details, scope } = fixture()
+  details[0].values[key] = 'private metadata'
+  assert.throws(() => admitPublicPersonDetails(details, scope),
+    { code: 'E_SCOPE_PROJECTION', path: `/person-details/values/${key}`, id: details[0].characterId })
 })
 
 test('production detail writer rejects missing semantic authority before any detail write', async () => {

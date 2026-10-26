@@ -3,6 +3,19 @@ import { mkdir, writeFile, rm } from 'node:fs/promises'
 import { test } from 'vitest'
 import { loreLinkFailures } from './check-lore-links.mjs'
 
+test('native paths resolve canonical JSON identities and their logical Markdown anchors', async () => {
+  const fixture = new URL('../lore/.link-check-canonical.md', import.meta.url)
+  await writeFile(fixture, '[json](culture/Values-and-Policy-Scales.json)\n[anchor](culture/Values-and-Policy-Scales.md#does-not-exist)\n[typed](editorial/Naming-Ledger.json)\n')
+  try {
+    const failures = (await loreLinkFailures()).filter((failure) => failure.includes('.link-check-canonical.md'))
+    assert.deepEqual(failures.map((failure) => failure.slice(failure.indexOf(': ') + 2)), [
+      'missing anchor culture/Values-and-Policy-Scales.md#does-not-exist',
+    ])
+  } finally {
+    await rm(fixture, { force: true })
+  }
+})
+
 test('lore checker rejects a missing file and a missing anchor', async () => {
   const fixture = new URL('../lore/.link-check-fixture.md', import.meta.url)
   await writeFile(fixture, '[file](does-not-exist.md)\n\n[anchor](README.md#does-not-exist)\n')

@@ -1,8 +1,9 @@
 import assert from 'node:assert/strict'
-import { chmodSync, copyFileSync, existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
+import { copyFileSync, existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
 import { spawn, spawnSync } from 'node:child_process'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
+import { pathToFileURL } from 'node:url'
 import { test } from 'vitest'
 import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
@@ -61,6 +62,28 @@ test('the eighteen domain examples and a published page pass', () => {
   }
   const published = run('lore/ailments/Ailments.json')
   assert.equal(published.status, 0, published.stderr)
+})
+
+test('domain directories accept nested native paths and reject a different domain', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'lore-domain-'))
+  try {
+    mkdirSync(join(dir, 'scripts'), { recursive: true })
+    copyFileSync(join(root, 'scripts/lore-json-schema.py'), join(dir, 'scripts/lore-json-schema.py'))
+    const initialized = spawnSync('git', ['init', '-q', dir], { encoding: 'utf8' })
+    assert.equal(initialized.status, 0, initialized.stderr)
+    for (const [directory, status] of [['ailments', 0], ['ailments/groups', 0], ['bestiary/groups', 1]]) {
+      const parent = join(dir, 'lore', directory)
+      mkdirSync(parent, { recursive: true })
+      const file = join(parent, 'authoring.example.json')
+      writeFileSync(file, JSON.stringify(example))
+      const result = run('--root', dir, file)
+      assert.equal(result.status, status, `${directory}: ${result.stderr}`)
+      if (status === 1) assert.match(result.stderr, /^E_DOMAIN: lore\/bestiary\/groups\/authoring\.example\.json: domain does not match directory$/mu)
+      else assert.doesNotMatch(result.stderr, /E_DOMAIN/)
+    }
+  } finally {
+    rmSync(dir, { recursive: true, force: true })
+  }
 })
 
 test('WNA-001 accepts the closed world-narrative-atlas.v3 contract', () => {
@@ -286,17 +309,38 @@ test('default mode checks changed files plus the migration ledger; strict mode f
   }
 })
 
-test('a Markdown file next to its JSON authoring document fails in default and strict mode', () => {
-  const clean = run()
-  assert.equal(clean.status, 0, clean.stderr)
-  // Data JSON beside a task 10c Markdown file (for example the naming ledger) is not an authoring source.
-  assert.doesNotMatch(run('--strict').stderr, /E_MARKDOWN_TWIN/u)
-  const { isolatedRoot, run: runIsolated } = isolatedFixture()
+test('a Markdown file next to its JSON authoring document fails in default and strict mode', async () => {
+  const { isolatedRoot } = isolatedFixture()
   const twin = join(isolatedRoot, 'lore/culture/Food-Culture.md')
+  // These four full validations are independent. Await every close before removing the fixture.
+  const runAsync = (...files) => new Promise((done) => {
+    const child = spawn(process.execPath, [join(root, 'scripts/lore-json-validate.mjs'), ...files], { cwd: root })
+    let stdout = ''
+    let stderr = ''
+    let error
+    child.stdout.on('data', (chunk) => { stdout += chunk })
+    child.stderr.on('data', (chunk) => { stderr += chunk })
+    child.on('error', (cause) => { error = cause })
+    child.on('close', (status, signal) => done({ status, signal, stdout, stderr, error }))
+  })
   try {
     assert.ok(!existsSync(twin), 'Food-Culture.md must not be committed next to its JSON source')
     writeFileSync(twin, '# twin\n')
-    for (const result of [runIsolated(), runIsolated('--strict')]) {
+    const base = spawnSync('git', ['write-tree'], { cwd: isolatedRoot, encoding: 'utf8' })
+    assert.equal(base.status, 0, base.stderr)
+    const fixtureArgs = ['--root', isolatedRoot, '--base', base.stdout.trim()]
+    const [clean, strict, ...twins] = await Promise.all([
+      runAsync(), runAsync('--strict'), runAsync(...fixtureArgs), runAsync(...fixtureArgs, '--strict'),
+    ])
+    for (const result of [clean, strict, ...twins]) {
+      assert.equal(result.error, undefined)
+      assert.equal(result.signal, null)
+    }
+    assert.equal(clean.status, 0, clean.stderr)
+    assert.equal(strict.status, 0, strict.stderr)
+    // Data JSON beside a task 10c Markdown file is not an authoring source.
+    assert.doesNotMatch(strict.stderr, /E_MARKDOWN_TWIN/u)
+    for (const result of twins) {
       assert.equal(result.status, 1, result.stderr || result.stdout)
       assert.match(result.stderr, /^E_MARKDOWN_TWIN: lore\/culture\/Food-Culture\.md: /mu, result.stderr)
     }
@@ -322,16 +366,33 @@ test('a stalled schema check fails with its file label instead of hanging', () =
   mkdirSync(evidence, { recursive: true })
   const dir = mkdtempSync(join(evidence, 'stalled-schema-'))
   try {
-    const python = join(dir, 'python3')
-    writeFileSync(python, '#!/bin/sh\nexec sleep 30\n')
-    chmodSync(python, 0o755)
-    const result = spawnSync(process.execPath, [join(root, 'scripts/lore-json-validate.mjs'), 'lore/ailments/Ailments.json'], {
+    const preload = join(dir, 'stalled-schema.mjs')
+    // Replace only Python's process, not spawnSync's timeout/error handling.
+    writeFileSync(preload, `
+      import assert from 'node:assert/strict'
+      import childProcess from 'node:child_process'
+      import { syncBuiltinESMExports } from 'node:module'
+      const spawnSync = childProcess.spawnSync
+      childProcess.spawnSync = (command, args, options) => {
+        if (command !== 'python3') return spawnSync(command, args, options)
+        const result = spawnSync(process.execPath, ['-e',
+          "process.stdout.write('fixture-ready'); Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0)"
+        ], options)
+        assert.equal(result.stdout, 'fixture-ready', 'the stalled process must start')
+        assert.equal(result.error?.code, 'ETIMEDOUT')
+        process.stderr.write('fixture: ETIMEDOUT\\n')
+        return result
+      }
+      syncBuiltinESMExports()
+    `)
+    const result = spawnSync(process.execPath, ['--import', pathToFileURL(preload).href, join(root, 'scripts/lore-json-validate.mjs'), 'lore/ailments/Ailments.json'], {
       cwd: root, encoding: 'utf8', timeout: 20000,
-      env: { ...process.env, PATH: `${dir}:${process.env.PATH}`, LORE_JSON_SCHEMA_TIMEOUT_MS: '500' },
+      env: { ...process.env, LORE_JSON_SCHEMA_TIMEOUT_MS: '2000' },
     })
     assert.equal(result.error, undefined, 'the validator itself hung')
     assert.equal(result.status, 1, result.stdout)
-    assert.match(result.stderr, /^E_SCHEMA: lore\/ailments\/Ailments\.json: schema check did not finish within 500 ms$/mu)
+    assert.match(result.stderr, /^fixture: ETIMEDOUT$/mu)
+    assert.match(result.stderr, /^E_SCHEMA: lore\/ailments\/Ailments\.json: schema check did not finish within 2000 ms$/mu)
   } finally {
     rmSync(dir, { recursive: true, force: true })
   }

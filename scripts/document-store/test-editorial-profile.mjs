@@ -15,6 +15,8 @@ import { readEditorialProfileInputs } from '../cast-sqlite/person-detail-inputs.
 import { loadCharacterProfiles } from '../validate-character-profiles.mjs';
 import { fileURLToPath } from 'node:url';
 import { openSoulAssignments, INTERNAL_SOUL_CAPABILITY, SOUL_ASSIGNMENT_SOURCE_SHA256 } from './soul-assignment.mjs';
+import { assertPrivateFilePermissions } from './private-file-permissions.mjs';
+import { setPrivateFixturePermissions } from '../fixtures/private-file-permissions.mjs';
 
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const repo = new URL('../../', import.meta.url);
@@ -42,13 +44,14 @@ const init = { ...options, batches, actor:'profile-snapshot-test', reason:'expli
 function fixture(t) {
   const dir=fs.mkdtempSync(join(tmpdir(),'editorial-profiles-'));
   t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));
+  setPrivateFixturePermissions(dir,{directory:true});
   return join(dir,'private.sqlite');
 }
 
 test('all nine actual batches and 1022 complete profiles round-trip from typed SQLite without JSON or source files',async t=>{
   const path=fixture(t);
   initializeEditorialProfiles(path,init);
-  assert.equal(fs.statSync(path).mode&0o777,0o600);
+  assertPrivateFilePermissions(path);
   const store=openEditorialProfiles(path,options);
   assert.deepEqual(store.readBatches(),originals);
   store.close();
@@ -139,9 +142,9 @@ test('explicit pins, private capabilities, unknown fields and atomic rollback fa
   assert.throws(()=>initializeEditorialProfiles(path,init),{code:'EEXIST'});
   assert.throws(()=>openEditorialProfiles(path,{...options,expectedSourceHashes:stale}),{code:'E_PROFILE_PINS'});
   assert.throws(()=>openEditorialProfiles(path,{...options,scope:'public'}),{code:'E_PRIVATE'});
-  fs.chmodSync(path,0o644);
+  setPrivateFixturePermissions(path,{broad:true});
   assert.throws(()=>openEditorialProfiles(path,options),{code:'E_PRIVATE_MODE'});
-  fs.chmodSync(path,0o600);
+  setPrivateFixturePermissions(path);
   const db=new DatabaseSync(path);
   db.exec("DELETE FROM editorial_soul WHERE row_key=(SELECT row_key FROM editorial_soul ORDER BY row_key DESC LIMIT 1)");db.close();
   const reader=openEditorialProfiles(path,options);

@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
-import { closeSync, openSync, readFileSync, statSync, unlinkSync } from 'node:fs';
+import { closeSync, openSync, readFileSync, unlinkSync } from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
+import { assertPrivateFilePermissions } from './private-file-permissions.mjs';
 import { abilityIds, profileFailures } from '../character-profile.mjs';
 import { PROFILE_INPUT_SOURCE_HASHES } from '../cast-sqlite/profile-inputs.mjs';
 
@@ -121,7 +122,7 @@ export function initializeEditorialProfiles(path,{capability,scope='internal',ba
 
 export function openEditorialProfiles(path,{capability,scope='internal',expectedSourceHashes}={}) {
   if(capability!==INTERNAL_PROFILE_CAPABILITY||scope!=='internal')fail('E_PRIVATE');
-  if((statSync(path).mode&0o777)!==0o600)fail('E_PRIVATE_MODE');
+  assertPrivateFilePermissions(path);
   const db=new DatabaseSync(path,{readOnly:true,enableForeignKeyConstraints:true});
   try {
     if(db.prepare('PRAGMA application_id').get().application_id!==APP||db.prepare('PRAGMA user_version').get().user_version!==1)fail('E_SCHEMA');

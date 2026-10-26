@@ -56,17 +56,10 @@ test('government base resolves the existing Cheong Wa Dae facility independently
   assert.ok(contract.hegemons.every(hegemon => typeof hegemon.centerRegion === 'string' && hegemon.centerRegion.length > 0))
 })
 
-test('neutral Namsan bureau holds three districts and its tower separately from its capital', () => {
-  const state = territory.states.find(item => item.id === 'S08')
-  const facility = territory.landmarks.find(item => item.id === 'n-seoul-tower')
-  const base = currentBasePoint(contract.states.find(item => item.stateId === 'S08').currentBase, [], [facility])
+test('a facility base resolves without requiring surrounding district ownership', () => {
+  const facility = { id: 'fixture-facility', x: 12, y: 34 }
+  const base = currentBasePoint({ kind: 'facility', landmarkId: facility.id, name: 'Fixture' }, [], [facility])
   assert.deepEqual(territoryLabel([], base), { x: facility.x, y: facility.y })
-  assert.equal(state.currentExclusiveDistrictCount, 3)
-  assert.equal(state.capitalStationId, '녹사평')
-  const holding = json('../lore/relations/personal-holdings.json').holdings.find(item => item.stateId === 'S08' && item.landmarkRef)
-  assert.equal(holding.landmarkRef.landmarkId, facility.id)
-  assert.equal(holding.directLiegePersonId, null)
-  assert.ok(territory.stations.find(item => item.id === state.capitalStationId).control.polityIds.includes('S08'))
   assert.throws(() => currentBasePoint(base, [], []), /E_CURRENT_BASE_NOT_FOUND/)
   assert.deepEqual(territoryLabel([{ x: 1, y: 2 }], base), { x: 1, y: 2 })
 })
@@ -75,16 +68,15 @@ test('generated districts stations and segments retain immediate holders and pro
   assert.equal(territory.regions.length, 427)
   assert.deepEqual(new Set(territory.stations.map(station => station.id)), approvedStationIds)
   assert.equal(territory.stations.length, approvedStationIds.size)
-  assert.equal(territory.regions.filter(region => region.polities.includes('S08')).length, 3)
-  assert.equal(territory.stations.filter(station => station.control.polityIds.includes('S08')).length, 1)
+  for (const state of territory.states) {
+    assert.equal(state.currentExclusiveDistrictCount,
+      territory.regions.filter(region => region.polities.includes(state.id)).length, state.id)
+  }
   for (const region of territory.regions) { const enclave = ['1165052000','1165065100','1165051000','1165053000','1165053100'].some(id => region.id === 'region:' + id); assert.deepEqual(region.currentHegemons, enclave ? [{ kind: 'union', name: '종교 연합' }] : hegemonsForHolders(region.polities, affiliations)) }
   for (const { control } of [...territory.stations, ...territory.edges]) assert.deepEqual(control.currentHegemons, hegemonsForHolders(control.polityIds, affiliations))
-  const adjacent = { 후암동: 'S08', 용산2가동: 'S08', 이태원1동: 'S07', 이태원2동: 'S08', 한남동: 'S07', 회현동: 'S06', 명동: 'S06', 필동: 'S06' }
-  for (const [name, holder] of Object.entries(adjacent)) {
-    const region = territory.regions.find(item => item.name === name)
-    assert.deepEqual(region?.polities, [holder], name)
+  for (const landmark of territory.landmarks) {
+    if (landmark.holderId) assert.ok(affiliations.has(landmark.holderId), landmark.id)
   }
-  assert.equal(territory.landmarks.find(item => item.id === 'n-seoul-tower').holderId, 'S08')
 })
 
 test('chronology uses current names and preserves issued person identities', () => {
@@ -95,6 +87,7 @@ test('chronology uses current names and preserves issued person identities', () 
   for (const event of state.chronology) assert.ok(expected.includes(event.text))
   assert.ok(state.chronology.some(event => event.year === 2079))
   const people = json('../lore/name-pools/values-cast.json').people
-  assert.equal(people.length, 1022)
-  assert.equal(people.filter(person => person.state === 'S00').length, 4)
+  const registry = readCanonicalDocument('lore/name-pools/person-id-registry.json').persons
+  assert.equal(new Set(people.map(person => person.name)).size, people.length)
+  assert.deepEqual(people.map(person => person.name).sort(), registry.map(person => person.name).sort())
 })

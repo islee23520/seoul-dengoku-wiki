@@ -17,7 +17,7 @@ function publicDocument(db, identity) {
     JOIN document_revision r USING(source_id,revision_id) JOIN document_revision_seal z USING(revision_id)
     WHERE a.source_id=? AND a.source_path=? AND a.source_sha256=?
       AND a.semantic_sha256=r.semantic_sha256 AND r.algorithm='typed-envelope-v1'
-      AND r.parent_revision IS NULL AND a.classification='current-reviewed' AND a.reason='approved-exact-review'`,
+      AND a.classification='current-reviewed' AND a.reason='approved-exact-review'`,
   identity.source_id, identity.logical_path, identity.sha256);
   if (!admission) return null;
   const document = readDocument(db, { documentId: identity.document_id, corpusKind: identity.corpus_kind, domain: identity.domain, visibility: 'internal' });

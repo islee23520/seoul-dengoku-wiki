@@ -9,6 +9,37 @@ import { openReadOnly } from './db.mjs';
 import { readCatalogPages, readCatalogGlossary } from './catalog-pages.mjs';
 import { readSourceArchive } from './source-archive.mjs';
 
+test('approved structural catalog successors require authenticated whole typed equality', {
+  skip: !process.env.PUBLICATION_SUCCESSOR_DB || !process.env.PUBLICATION_NEW_BODY_ROOT,
+}, () => {
+  const db = openReadOnly(process.env.PUBLICATION_SUCCESSOR_DB);
+  try {
+    const pages = readCatalogPages(db);
+    for (const slug of ['Cast-Relations', 'Offices-and-Ranks']) {
+      assert.ok(pages.find(page => page.slug === slug)?.value.content.length);
+    }
+    const drift = { prepare(sql) {
+      const statement = db.prepare(sql);
+      if (sql.includes('SELECT * FROM text_document_slot WHERE')) return { all: (...args) =>
+        statement.all(...args).map((row, i) => !i && row.source_id === 47 ? { ...row, text: 'unapproved' } : row) };
+      return statement;
+    } };
+    assert.throws(() => readCatalogPages(drift), /E_REFERENCE_INTEGRITY|E_DOCUMENT_SCHEMA_GAP/u);
+    const stale = { prepare(sql) {
+      const statement = db.prepare(sql);
+      if (sql.includes('JOIN document_revision_seal') && sql.includes('WHERE s.logical_path=?')) return {
+        all: (...args) => statement.all(...args).map(row => ({ ...row, semantic_sha256: '0'.repeat(64) })) };
+      return statement;
+    } };
+    assert.throws(() => readCatalogPages(stale), /E_REFERENCE_STALE/u);
+    const previous = process.env.PUBLICATION_NEW_BODY_ROOT;
+    try {
+      process.env.PUBLICATION_NEW_BODY_ROOT = '/unapproved-structure';
+      assert.throws(() => readCatalogPages(db), /ENOENT/u);
+    } finally { process.env.PUBLICATION_NEW_BODY_ROOT = previous; }
+  } finally { db.close(); }
+});
+
 test('actual generator pages reconstruct exactly from typed revisions, not source archives', {
   skip: !process.env.EVIDENCE_DOCUMENT_DB,
 }, () => {
