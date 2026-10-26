@@ -5,6 +5,7 @@ import { evidenceReader } from './evidence-reader.mjs';
 import { readScopeCurrentSource, authenticatePublicationDataSuccessor } from './scope-current-source.mjs';
 import { readReferenceSuccessor } from './reference-successor-reader.mjs';
 import { RELATION_SUCCESSOR, verifyRelationHistoricalProjection } from '../cast-sqlite/relation-successor.mjs';
+import { VALUES_SUCCESSOR, readApprovedValuesSuccessor, verifyValuesHistoricalProjection } from '../cast-sqlite/values-successor.mjs';
 
 // Immutable receipts authenticate exact bytes, including original whitespace.
 // Current document values MUST independently reconstruct from typed authority;
@@ -30,9 +31,12 @@ export function scopeAuthenticationReader({ db, evidenceStore, root, bindings, h
         && db.prepare("SELECT 1 FROM sqlite_schema WHERE name='data_source_head'").get()
         && db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(logicalPath);
       // PR606 data successors (values-cast, office, feudal, holdings) keep their own pinned delta proof.
-      const dataSuccessor = successor === null && !relationSuccessor
+      const dataSuccessor = successor === null && !relationSuccessor && logicalPath !== VALUES_SUCCESSOR.logicalPath
         && authenticatePublicationDataSuccessor(db, logicalPath, expectedSha256, actual, original);
       if (relationSuccessor) verifyRelationHistoricalProjection(actual, original);
+      else if (logicalPath === VALUES_SUCCESSOR.logicalPath
+        && readApprovedValuesSuccessor(db, { projection: actual, sourceSha256: expectedSha256 }) !== null)
+        verifyValuesHistoricalProjection(actual, original);
       else if (successor === null && !dataSuccessor && (!isDeepStrictEqual(actual, original) || JSON.stringify(actual) !== JSON.stringify(original)))
         throw Error('E_SCOPE_AUTHENTICATION_TYPED_MISMATCH');
       if (snapshot) verified.add(logicalPath);
