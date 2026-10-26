@@ -3,7 +3,8 @@ import { createReadStream, existsSync, lstatSync, readFileSync, realpathSync, mk
 import { isAbsolute, resolve, dirname, basename, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { openReadOnly } from './cast-sqlite/db.mjs';
-import { readAffiliationIdentityInputs } from './cast-sqlite/map-identity-inputs.mjs';
+import { readAffiliationIdentityInputs, readInternalAffiliationIdentityInputs } from './cast-sqlite/map-identity-inputs.mjs';
+import { readInternalIdentityDomain } from './internal-identity-provider.mjs';
 
 // Reviewed public members of seoul-wiki-sqlite-provision.v1, manifest SHA
 // 05e82ab71c0d970304d7f319170047e7b924f71467cdac6edae280fb75f98a92.
@@ -19,11 +20,13 @@ const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const encode = value => `${JSON.stringify(value, null, 2)}\n`;
 
 export function validateIdentityRequest(request) {
-  const keys = ['schema', 'databasePath', 'bootstrapReceiptPath', 'outputDirectory'];
+  const internal = request?.schema === 'wiki-internal-map-identity-request.v1';
+  const keys = ['schema', 'databasePath', 'bootstrapReceiptPath', 'outputDirectory', ...(internal ? ['selectionId', 'evidencePath'] : [])];
   if (!request || Array.isArray(request) || typeof request !== 'object'
     || Object.keys(request).length !== keys.length || keys.some(key => !Object.hasOwn(request, key))
-    || request.schema !== 'wiki-map-identity-request.v1'
-    || keys.slice(1).some(key => typeof request[key] !== 'string' || !isAbsolute(request[key]) || resolve(request[key]) !== request[key]))
+    || !['wiki-map-identity-request.v1', 'wiki-internal-map-identity-request.v1'].includes(request.schema)
+    || internal && (typeof request.selectionId !== 'string' || !request.selectionId)
+    || keys.filter(key => key !== 'schema' && key !== 'selectionId').some(key => typeof request[key] !== 'string' || !isAbsolute(request[key]) || resolve(request[key]) !== request[key]))
     fail('E_IDENTITY_REQUEST', 'expected exact wiki-map-identity-request.v1 with absolute normalized paths');
   return request;
 }
@@ -48,42 +51,50 @@ async function fileHash(path) {
  * return only approved minimal fields. Tests register synthetic providers/pins;
  * the production CLI below has neither a dynamic loader nor a pin override.
  */
-export function createIdentityExporter({ pins, providers }) {
+export function createIdentityExporter({ pins, providers, selections = {} }) {
   return async request => {
     validateIdentityRequest(request);
+    const internal = request.schema === 'wiki-internal-map-identity-request.v1';
+    const selected = internal && Object.hasOwn(selections, request.selectionId) ? selections[request.selectionId] : null;
+    if (internal && !selected) fail('E_IDENTITY_SELECTION_UNAVAILABLE', 'no accepted internal successor binding');
+    const sourcePins = selected ?? pins;
     const { databasePath, bootstrapReceiptPath, outputDirectory } = request;
     const beforeDb = fingerprint(databasePath, true);
     const beforeReceipt = fingerprint(bootstrapReceiptPath);
+    const beforeEvidence = internal ? fingerprint(request.evidencePath) : null;
+    const evidenceBytes = internal ? readFileSync(request.evidencePath, 'utf8') : null;
     const bootstrapBytes = readFileSync(bootstrapReceiptPath);
-    if (hash(bootstrapBytes) !== pins.bootstrapReceiptSha256 || await fileHash(databasePath) !== pins.databaseSha256)
+    if (hash(bootstrapBytes) !== sourcePins.bootstrapReceiptSha256 || await fileHash(databasePath) !== sourcePins.databaseSha256)
       fail('E_IDENTITY_SNAPSHOT', 'untrusted database or bootstrap receipt bytes');
     const unchanged = () => {
       if (fingerprint(databasePath, true) !== beforeDb || fingerprint(bootstrapReceiptPath) !== beforeReceipt)
         fail('E_IDENTITY_SNAPSHOT', 'input changed during export');
+      if (internal && fingerprint(request.evidencePath) !== beforeEvidence) fail('E_IDENTITY_SNAPSHOT', 'evidence changed during export');
     };
     unchanged();
     const db = openReadOnly(databasePath);
     let snapshot;
     try {
       db.exec('PRAGMA query_only=ON; BEGIN');
-      const affiliation = readAffiliationIdentityInputs(db);
+      const affiliation = internal ? readInternalAffiliationIdentityInputs(db, selected.affiliation) : readAffiliationIdentityInputs(db);
       const diagnostics = { states: affiliation.states.length, hegemons: affiliation.hegemons.length,
         unresolvedUnions: affiliation.hegemons.filter(row => row.resolution === 'unresolved-source-binding').length };
       const provider = providers.get('person-polity');
-      if (!provider) fail('E_IDENTITY_DOMAIN_MISSING', 'person-polity', diagnostics);
+      if (!internal && !provider) fail('E_IDENTITY_DOMAIN_MISSING', 'person-polity', diagnostics);
       // Only SELECT is exposed to domain adapters; no connection/write capability.
       const reader = Object.freeze({ prepare(sql) {
         if (!/^SELECT\s/iu.test(sql)) fail('E_IDENTITY_PROVIDER', 'SELECT-only provider');
         return db.prepare(sql);
       } });
-      const domain = provider(reader, affiliation);
+      const domain = internal ? readInternalIdentityDomain(reader, affiliation, selected, evidenceBytes) : provider(reader, affiliation);
       if (!domain || domain.complete !== true || !Array.isArray(domain.persons) || !Array.isArray(domain.polities)
         || !Array.isArray(domain.blocs) || !Array.isArray(domain.fieldProvenance))
         fail('E_IDENTITY_DOMAIN_MISSING', 'person-polity', diagnostics);
       if (domain.requiresAffiliation !== false && diagnostics.unresolvedUnions)
         fail('E_IDENTITY_UNRESOLVED_UNION', 'required affiliation has unresolved-source-binding', diagnostics);
       snapshot = { schema: 'wiki-map-identities.v1', visibility: 'protected',
-        verification: 'trusted-snapshot/sealed-admitted-revision-projection',
+        verification: internal ? 'trusted-snapshot/internal-approved-successor-projection' : 'trusted-snapshot/sealed-admitted-revision-projection',
+        ...(internal ? { scope: 'internal-approved-successor', publicAdmission: false } : {}),
         persons: domain.persons, polities: domain.polities, blocs: domain.blocs, fieldProvenance: domain.fieldProvenance };
       db.exec('COMMIT');
     } finally {
@@ -93,7 +104,9 @@ export function createIdentityExporter({ pins, providers }) {
     unchanged();
     const identityBytes = encode(snapshot);
     const receipt = { schema: 'wiki-map-identity-receipt.v1', verification: snapshot.verification,
-      databaseSha256: pins.databaseSha256, bootstrapReceiptSha256: pins.bootstrapReceiptSha256,
+      databaseSha256: sourcePins.databaseSha256, bootstrapReceiptSha256: sourcePins.bootstrapReceiptSha256,
+      ...(internal ? { scope: 'internal-approved-successor', publicAdmission: false, selectionId: request.selectionId,
+        evidenceSha256: selected.evidenceSha256, affiliation: selected.affiliation, approvalRef: selected.approvalRef } : {}),
       identitySha256: hash(identityBytes), fieldProvenanceSha256: hash(encode(snapshot.fieldProvenance)),
       counts: { persons: snapshot.persons.length, polities: snapshot.polities.length, blocs: snapshot.blocs.length } };
     // A sibling stage makes the pair visible together; never replace existing output.
@@ -111,7 +124,8 @@ export function createIdentityExporter({ pins, providers }) {
   };
 }
 
-export const exportMapIdentities = createIdentityExporter({ pins: snapshotPins, providers: new Map() });
+export const exportMapIdentities = createIdentityExporter({ pins: snapshotPins, providers: new Map(),
+  selections: JSON.parse(readFileSync(new URL('./internal-identity-selections.json', import.meta.url), 'utf8')) });
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   try {

@@ -11,9 +11,28 @@ const fail = detail => { throw Object.assign(new Error(`E_AFFILIATION_IDENTITY: 
  * Union source records remain explicitly unresolved until that separate reviewed
  * binding exists; they must not be treated as complete required-affiliation output.
  */
-export function readAffiliationIdentityInputs(db) {
+export function readAffiliationIdentityInputs(db) { return readIdentityInputs(db); }
+
+// Only the exporter supplies an independently code-enrolled selected source.
+export function readInternalAffiliationIdentityInputs(db, selected) {
+  if (!selected || !selected.parentRevision) fail('missing selected successor');
+  return readIdentityInputs(db, selected);
+}
+
+function readIdentityInputs(db, selected) {
   const all = (sql, ...bindings) => db.prepare(sql).all(...bindings).map(row => ({ ...row }));
-  const identities = all(`SELECT d.source_id,d.document_id,d.domain,d.corpus_kind,d.status,
+  const identities = selected ? all(`SELECT d.source_id,d.document_id,d.domain,d.corpus_kind,d.status,
+    s.logical_path,s.sha256,h.revision_id,r.semantic_sha256,r.parent_revision,r.algorithm
+    FROM text_document d JOIN source_file s USING(source_id)
+    JOIN document_head h USING(source_id) JOIN document_revision r USING(source_id,revision_id)
+    JOIN document_revision_seal z USING(revision_id)
+    WHERE d.source_id=? AND d.document_id='DOC:Sixteen-States' AND d.domain='factions'
+      AND d.corpus_kind='current' AND d.status IN ('approved','draft')
+      AND s.logical_path=? AND s.sha256=? AND r.revision_id=? AND r.semantic_sha256=?
+      AND r.parent_revision=? AND r.algorithm='typed-envelope-v1'
+      AND NOT EXISTS(SELECT 1 FROM excluded_source e WHERE e.logical_path=s.logical_path)`,
+  selected.sourceId, sourcePath, selected.sourceSha256, selected.revisionId, selected.semanticSha256, selected.parentRevision)
+    : all(`SELECT d.source_id,d.document_id,d.domain,d.corpus_kind,d.status,
     s.logical_path,s.sha256,h.revision_id,r.semantic_sha256,r.algorithm,
     a.classification,a.reason,a.receipt_sha256,a.approval_ref
     FROM text_document d JOIN source_file s USING(source_id)
@@ -90,6 +109,6 @@ export function readAffiliationIdentityInputs(db) {
       sourcePointer: row.json_pointer, affiliation: memberships.get(row.state_id) };
   });
   if (seen.size !== known.size || memberships.size !== known.size) fail('affiliation coverage');
-  return { source, verification: 'trusted-snapshot/sealed-admitted-revision-projection', hegemons, states,
+  return { source, verification: selected ? 'trusted-snapshot/internal-approved-successor-projection' : 'trusted-snapshot/sealed-admitted-revision-projection', hegemons, states,
     neutralStateIds: slice.text_affiliation_neutral.map(row => row.state_id) };
 }
