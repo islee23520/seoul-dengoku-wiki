@@ -1,0 +1,35 @@
+# wiki-postgres — 운영 PostgreSQL 17 서비스 정의 (통합 compose 스니펫)
+#
+# 적용 대상: desktop-bo514et `E:\git\seoul-dengoku-web\docker-compose.yml`
+# (name: seoul-dengoku-web, 외부 네트워크 seoul-dengoku-web_default).
+# 이 파일은 repo에 커밋되는 정의 복사본이며, 호스트 적용 절차는
+# deploy/README.md의 "wiki-postgres 운영 PostgreSQL" 절을 따른다.
+#
+# 규칙:
+#   - 5432는 publish하지 않는다. docker 네트워크 내부 전용(외부 노출 금지).
+#   - 기존 web/tunnel/wiki-api 서비스와 cloudflared 터널은 절대 건드리지 않는다.
+#   - 비밀번호는 프로젝트 루트 .env의 WIKI_POSTGRES_PASSWORD에서 읽는다(.env는 커밋 금지).
+
+services:
+  wiki-postgres:
+    image: postgres:17
+    container_name: wiki-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: seoul
+      POSTGRES_USER: wiki_owner
+      POSTGRES_PASSWORD: ${WIKI_POSTGRES_PASSWORD:?WIKI_POSTGRES_PASSWORD required}
+    volumes:
+      - seoul-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U wiki_owner"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+    networks:
+      default:
+        aliases:
+          - wiki-postgres
+
+volumes:
+  seoul-pgdata:
