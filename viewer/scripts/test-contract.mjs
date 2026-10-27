@@ -29,6 +29,20 @@ test('GDD catalog exposes canonical documents and current data summaries', async
   assert.deepEqual(contract.datasets.map((dataset) => dataset.records), [cast.people.length, genders.people.length, 37, 334, stationControl.overrides.length, 334, 427])
 })
 
+test('generated document hrefs keep canonical wiki routes and other link boundaries', async () => {
+  const projectRoot = resolve(import.meta.dirname, '..')
+  const proposal = await readFile(resolve(projectRoot, 'src/content/proposals/Narrative-Direction.md'), 'utf8')
+  const links = [...proposal.matchAll(/\]\(([^)]+)\)/g)].map((match) => match[1])
+  assert.ok(links.includes('/wiki/world/Faith-Culture-Schism'))
+  assert.ok(links.includes('/wiki/people/person-0087'))
+  assert.ok(!links.some((href) => href.includes('/blob/main/../wiki/')))
+  const reference = await readFile(resolve(projectRoot, 'src/content/design/Game-References.md'), 'utf8')
+  const referenceLinks = [...reference.matchAll(/\]\(([^)]+)\)/g)].map((match) => match[1])
+  assert.ok(referenceLinks.includes('/references/Ref-Crusader-Kings-3'))
+  assert.ok(referenceLinks.includes('https://interfaceingame.com/'))
+  assert.ok(!links.some((href) => /^(?:javascript:|data:|\/\/)/i.test(href)))
+})
+
 test('the publication manifest equals the public canon source set and generated content', async () => {
   const projectRoot = resolve(import.meta.dirname, '..')
   const gddRoot = process.env.GDD_ROOT ?? resolve(projectRoot, '..')
