@@ -12,6 +12,9 @@
     "id": "doc.Rules-Battle",
     "blockIds": [
       "source.b1",
+      "overhaul.20261027.heading",
+      "overhaul.20261027.disposition",
+      "overhaul.20261027.chapter",
       "sp1.20261003.override",
       "source.b2",
       "source.b3",
@@ -102,6 +105,38 @@
       ]
     },
     {
+      "id": "overhaul.20261027.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이관 판정 — 보존 조항과 역사 범위"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.disposition",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "판정: 삭제·전면 흡수하지 않고 기존 상세 조항을 보존한다. SP-1.0.0 override와 결정 12–15 마커는 유지한다. 공유 세계·최대 참가자·동시 턴·온라인 대행 부분은 역사 범위이며 현행 실행 전제가 아니다. 개편 장은 근거 계층을 소유하고 이 문서는 기존 승인 세부의 추적 원장이다. 충돌 시 SP-1.0.0 및 최신 제품 권한을 따른다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.chapter",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "주 대응 장",
+          "targetDocumentId": "doc.War-and-Personal-Resolution"
+        }
+      ]
+    },
+    {
       "id": "sp1.20261003.override",
       "kind": "paragraph",
       "inlines": [
@@ -118,7 +153,7 @@
         [
           {
             "kind": "text",
-            "text": "출처: [전투](Realtime-Formation-Card-Battle.md), [전략·전투 왕복](Strategy-Battle-Roundtrip.md), [전쟁·공성](Warfare-and-Sieges.md) — 현재 목표와 2026-09-07 카드 전투 POC 기록을 구분한다."
+            "text": "출처: [전투](Personal-Resolution-Battle.md), [전략·전투 왕복](Strategy-Battle-Roundtrip.md), [전쟁·공성](Warfare-and-Sieges.md) — 현재 목표와 2026-09-07 카드 전투 POC 기록을 구분한다."
           }
         ]
       ]
@@ -992,7 +1027,7 @@
         [
           {
             "kind": "text",
-            "text": "기본 개인 능력·기술·공격 3d6·능동 방어·DR·피해 유형·부상 기준을 출발점으로, 서울:전국 독자 계산식을 개인 명중·방어·피해·부상, 지휘·보급·전장 상황 보정, 부대 집계 판정 세 범위에 모두 설계한다(소유자 확정). 실제 함수·계수·적용 채널은 미정이며 [개인 판정 전투](Realtime-Formation-Card-Battle.md)의 단일 결과 원장과 중복 피해 금지를 따른다."
+            "text": "기본 개인 능력·기술·공격 3d6·능동 방어·DR·피해 유형·부상 기준을 출발점으로, 서울:전국 독자 계산식을 개인 명중·방어·피해·부상, 지휘·보급·전장 상황 보정, 부대 집계 판정 세 범위에 모두 설계한다(소유자 확정). 실제 함수·계수·적용 채널은 미정이며 [개인 판정 전투](Personal-Resolution-Battle.md)의 단일 결과 원장과 중복 피해 금지를 따른다."
           }
         ],
         [
@@ -1675,7 +1710,7 @@
         [
           {
             "kind": "text",
-            "text": "[전투](Realtime-Formation-Card-Battle.md) — 현재 개인 판정 전투, 카메라, 종료 상태와 카드 전투 POC 역사."
+            "text": "[전투](Personal-Resolution-Battle.md) — 현재 개인 판정 전투, 카메라, 종료 상태와 카드 전투 POC 역사."
           }
         ],
         [

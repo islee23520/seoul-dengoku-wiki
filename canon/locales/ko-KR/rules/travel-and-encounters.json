@@ -12,6 +12,9 @@
     "id": "doc.Travel-and-Encounters",
     "blockIds": [
       "source.b1",
+      "overhaul.20261027.heading",
+      "overhaul.20261027.layers",
+      "overhaul.20261027.chapter",
       "source.b2",
       "source.b3",
       "source.b4",
@@ -42,6 +45,38 @@
         {
           "kind": "text",
           "text": "이동과 조우"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "삼층 근거와 현행 계약"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.layers",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실은 승인 SP-1.0.0·결정 12–15·제품 권한과 아래 현행 장이 인용한 GAME 소스에 한정한다. 기존 설계 가정 수치는 구현값이나 승인 밸런스로 승격하지 않는다. CK3 참조는 별도 장의 file:line 근거이며 서울 규칙이 아니다. 제품 권한: 미결정 시간·동맹·정복·소유권·밸런스 정책은 제도 미정이다. 아래 상세는 보존하되 공유 세계/온라인 대행은 SP-1.0.0의 역사 대체 범위로 읽는다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.chapter",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "현행 근거·미결정 상세",
+          "targetDocumentId": "doc.Travel-Activities-and-Landless"
         }
       ]
     },
@@ -92,7 +127,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "각 전략 분대는 독립 원정이며 [영웅 분대와 시간 기반 전략 이동](Hero-Squads-and-Simultaneous-Turns.md)의 시간 기반 이동·태세·통제권 규칙을 따릅니다. 플레이어가 여러 분대를 소유해도 조우와 결과 정산은 분대마다 따로 소유합니다."
+          "text": "각 전략 분대는 독립 원정이며 [영웅 분대와 시간 기반 전략 이동](Hero-Squads-and-Time-Based-Movement.md)의 시간 기반 이동·태세·통제권 규칙을 따릅니다. 플레이어가 여러 분대를 소유해도 조우와 결과 정산은 분대마다 따로 소유합니다."
         }
       ]
     },

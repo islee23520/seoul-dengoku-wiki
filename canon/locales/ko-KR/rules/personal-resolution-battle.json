@@ -3,15 +3,16 @@
   "locale": "ko-KR",
   "status": "accepted",
   "source": {
-    "path": "rules/Realtime-Formation-Card-Battle.md",
+    "path": "rules/Personal-Resolution-Battle.md",
     "lineStart": 1,
     "lineEnd": 70,
     "sha256": "2c0404868aed070288ffbf83fe43f15ee069a52ada31d619cc89c178ca405733"
   },
   "document": {
-    "id": "doc.Realtime-Formation-Card-Battle",
+    "id": "doc.Personal-Resolution-Battle",
     "blockIds": [
       "source.b1",
+      "overhaul.20261027.rename",
       "sp1.20261003.override",
       "source.b3",
       "r3.resolution",
@@ -56,6 +57,16 @@
         {
           "kind": "text",
           "text": "개인 판정 전투"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.rename",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "개칭 이관: 역사 POC·동시 전략 턴 명칭을 현행 개인 판정 전투·시간 기반 이동 명칭으로 폐기했다. 아래 승인 조항과 SP-1.0.0 우선 범위는 보존한다. CH5/CH6의 삼층 표기와 제품 권한이 과거 공유 세계 조항보다 우선한다."
         }
       ]
     },

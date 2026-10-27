@@ -12,6 +12,9 @@
     "id": "doc.mechanism-design-index-d07",
     "blockIds": [
       "source.b1",
+      "overhaul.20261027.heading",
+      "overhaul.20261027.authority",
+      "overhaul.20261027.chapter",
       "source.b2",
       "source.b3",
       "source.b6",
@@ -127,6 +130,38 @@
         {
           "kind": "text",
           "text": "D07 관계·기억·충성·평가 — 독자용 설계 문서"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "게임 로직 개편 정합 경계"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 문서는 기존 제안 상태를 유지한다. 산식·표·청사진은 서울의 구현 사실이나 승인 수치가 아니다. 아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다. 깊이조사의 불일치 총계·씨족 산식은 채택하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.chapter",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "대응 장과 확인된 근거",
+          "targetDocumentId": "doc.Relationships-Houses-and-Intrigue"
         }
       ]
     },

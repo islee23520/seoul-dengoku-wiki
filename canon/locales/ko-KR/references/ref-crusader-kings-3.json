@@ -12,6 +12,12 @@
     "id": "doc.Ref-Crusader-Kings-3",
     "blockIds": [
       "source.b1",
+      "overhaul.20261027.receipts",
+      "overhaul.20261027.verdict",
+      "overhaul.20261027.portability",
+      "overhaul.20261027.heading",
+      "overhaul.20261027.scope",
+      "overhaul.20261027.chapter",
       "source.b2",
       "source.b3",
       "source.b4",
@@ -166,7 +172,28 @@
       "source.b147",
       "source.b148",
       "source.b149",
-      "source.b150"
+      "source.b150",
+      "overhaul.20261027.digest0",
+      "overhaul.20261027.digest1",
+      "overhaul.20261027.digest2",
+      "overhaul.20261027.digest3",
+      "overhaul.20261027.digest4",
+      "overhaul.20261027.digest5",
+      "overhaul.20261027.digest6",
+      "overhaul.20261027.digest7",
+      "overhaul.20261027.digest8",
+      "overhaul.20261027.digest9",
+      "overhaul.20261027.digest10",
+      "overhaul.20261027.digest11",
+      "overhaul.20261027.digest12",
+      "overhaul.20261027.digest13",
+      "overhaul.20261027.digest14",
+      "overhaul.20261027.digest15",
+      "overhaul.20261027.digest16",
+      "overhaul.20261027.digest17",
+      "overhaul.20261027.digest18",
+      "overhaul.20261027.verified-counts-heading",
+      "overhaul.20261027.verified-counts"
     ]
   },
   "blocks": [
@@ -180,6 +207,69 @@
             "text": "[!NOTE]"
           }
         ]
+      ]
+    },
+    {
+      "id": "overhaul.20261027.receipts",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "참조 영수증 식별 — 빌드 의존 아님"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.verdict",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "최신 독립 검증: depth-verification-20261027.md:1855-1900(§9)은 정정된 depth-01/02/03 및 gap inventory의 정적 근거를 synthesis 입력 PASS로 판정한다. 최초 FAIL 이력은 보존한다. depth-04는 제한된 정적 충실도 PASS다. 이는 전체 게임플레이 의미·런타임 인과·설치 무결성·전투 피해식·Ghidra 원프로젝트 메타데이터 복원을 보증하지 않는다. 아래 참조는 CK3 구조 참고일 뿐 서울 제품 권한이 아니며 불일치했던 총계·코핑 효과·씨족 산식·유산 비용을 서울 규칙으로 채택하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.portability",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제품 원천은 https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/AGENTS.md 및 같은 revision의 GAME/Backend 경로로 연결한다. CK3 조사 영수증은 개인정보 없는 아래 파일명·해시로 식별하며 로컬 형제 저장소나 ignored evidence 디렉터리를 materialize/build 선행조건으로 사용하지 않는다. 저작권 게임 파일·바이너리 원문은 반입하지 않는다. 재현 영수증 위치를 모르는 독자는 검증 한계를 이 정본에서 읽을 수 있다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2026-10-27 코드 해부 참조 경계"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.scope",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-culture.md:165-207 및 internal-architecture-synthesis.md:117-126을 참조한다. 설치본 무결성·전체 실행 순서·핫리로드·명령의 멀티/리플레이 재사용은 미입증이다. CK3 수치는 서울 규칙이 아니다. 깊이조사 총계·씨족 산식은 독립검증 불일치 상태의 요약을 채택하지 않는다. depth-04-war-and-binary.md:1317-1426,1628-1635의 큐는 제출/삽입이며 실제 소비 루프·피해식은 미복원이다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.chapter",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "서울 사실/제품 권한과의 분리 계약",
+          "targetDocumentId": "doc.Game-Logic-Principles"
+        }
       ]
     },
     {
@@ -3008,6 +3098,217 @@
         {
           "kind": "text",
           "text": "**검증 결론:** 요청된 열 개 시스템 영역과 구체 사례·비용·상호작용은 모두 서술했지만, 신뢰 수준은 균일하지 않다. 현재 패치의 계승법 의견 표, 전투 엔진 수식, 25개 유산의 완전 효과, 계책 개편 수치, 씨족 세금 공식, 문화 가격·기간, 신앙 비용식, 해당 지역 촉매·종결 조건은 **미확인**이다. 이 문서는 구조와 검증 경계를 갖춘 한국어 메커니즘 참고서이며, 전 항목이 현행 원문으로 검증된 위키의 대체물이라는 주장은 하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest0",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "mechanics-01-time-and-pulse.md SHA-256 a67925c5d8780dcaf03c7d162b06b3096769567d9504737258315dcd34b34d4a"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest1",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "mechanics-02-character-rpg.md SHA-256 ca66a95e4ac73b6d95efd27fcbc439838215c5ee4064bfb9a5d5dccfb543791f"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "mechanics-03-schemes.md SHA-256 491d9c27af0b2d32e8e1fa8729e0af1c7939d4c41438a3d04792030cce44d26b"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "mechanics-04-war-and-combat.md SHA-256 dfddb8ef212ef62a259338632c4b0361fc24ab9ee9baa65661106231ecf114ff"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "mechanics-05-economy.md SHA-256 a5f23758233bb0bdf217fe574c67d5f7905a84ed692e0e22e24954550f5a87b0"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "mechanics-06-vassals-court-council.md SHA-256 b860d4ab3e60e74a11439411612648a6ce9db58eb7a740009e6b673bc6855c7b"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest6",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "mechanics-07-succession.md SHA-256 4807e6c06e8007253dc1c8f816eecf6c3fda69cae1f1848a920ab1c5d6077521"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest7",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "mechanics-08-faith-culture.md SHA-256 186ca78a70e324498733fd924d6f8ed45277809deae21e5fb29e3d5f845a58ef"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "defines-catalog.md SHA-256 7f4e6f1755db94de2aa55d60148b9ea695a6a7a2822491de32a24ee3f2221aba"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest9",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "internal-architecture-synthesis.md SHA-256 558926b1adf13fd7dc902060b291be1df0416ff16ca082691bfb0a98ce512d96"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest10",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "seoul-applicability-code-20261027.md SHA-256 f386e740ce87a960d575cd9b108bae6b36d838ea6ab3ccb63617de406d63586e"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest11",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "decompilation-index.md SHA-256 0d6eacbc0d75f817403efc891ddf75ea9b911ce6966e3c52900c40ceca72255b"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest12",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "binary-rea-04-decompiled.md SHA-256 678011abd0d178dfaa80f57d75da5f0d3e2f819824f537110ce6c9fb565566d3"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest13",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "depth-01-social-intrigue.md SHA-256 b38b662295062c15185b1752878af3811190d8f2b738a34a7b8dc566110b333d"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest14",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "depth-02-power-structures.md SHA-256 1c54e97d3e54597dc1f995ad662083bebf65f86bfd57dd538c06b44bab93a81b"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest15",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "depth-03-activities-travel-landless.md SHA-256 b4efa5f4b18cfe3ae09540b1467200ce047ba7c37d7cda5d86118201ca2691cf"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest16",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "depth-04-war-and-binary.md SHA-256 8c7f12c49ac4103543861b6b47de844d3dbf25de7898b3720ecd26b9bf73f83c"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest17",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "depth-verification-20261027.md SHA-256 804c0d3d7fe0ac01565de4ecef1f8b11edc4ae6f5f33df8bff56f6008117c04a"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.digest18",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "depth-correction-receipt-20261027.md SHA-256 8daa588f8d6d236789442e6bdaad7eb762e49d12d1a8968ad0ea206ac8956117"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.verified-counts-heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정정 후 독립 검증 참조 수량"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.verified-counts",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "depth-verification-20261027.md:1865-1888: 훅48·비밀19·의견직속1624/재귀1630·crime의견72, 유산22트랙/처음5개6250(전체 기해금 기준), 4단계 법군7, intents20txt/travel events24txt/POI19+PAM1=20, 기본계약36선언. 씨족 역량0..4의 누적add 승수1/3/6/10/15, 세.02/.06/.12/.20/.30·징집.04/.12/.24/.40/.60은 정적 기저 산술이며 런타임 측정이 아니다. CB126/MAA111은 depth-04의 구조 추출 수량이다. 선언수·파일수·구조독해·효과전수독해를 동일시하지 않고 모든 CK3 수량을 서울 권위로 복사하지 않는다."
         }
       ]
     }

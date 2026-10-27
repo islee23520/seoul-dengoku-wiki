@@ -12,6 +12,9 @@
     "id": "doc.Unity-Architecture",
     "blockIds": [
       "source.b1",
+      "overhaul.20261027.heading",
+      "overhaul.20261027.chapter",
+      "overhaul.20261027.authority",
       "sp1.20261003.override",
       "source.b3",
       "source.b4",
@@ -37,6 +40,38 @@
         {
           "kind": "text",
           "text": "유니티 구조"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현행 구현 권한 매핑"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.chapter",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "CH11 구현 매핑 — 현행 제품/소스 근거",
+          "targetDocumentId": "doc.Implementation-Mapping"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/AGENTS.md#L64-L76 의 Core/Data/Foundation·직렬화 참조·uGUI·host client 시뮬레이션·휘발성 Backend 계약을 따른다. 아래 과거 청사진을 출하 사실로 해석하지 않는다. CK3 참조: internal-architecture-synthesis.md:95-104의 데이터 분리와 직렬화는 기법 사례이며 핫리로드·멀티/리플레이 소비를 입증하지 않는다. 제품 권한: 새로운 저장소·계정 서비스·세계 펄스·디버그 기능은 승인 없이 추가하지 않는다."
         }
       ]
     },

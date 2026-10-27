@@ -4,14 +4,17 @@ import { resolve } from 'node:path'
 import assert from 'node:assert/strict'
 import { test } from 'vitest'
 import { isAppRoute, proposalRoutes, toPublicHref } from '../src/manifest.ts'
+import { categoryForPage, loadGddSources } from './catalog-admission.mjs'
 
 const projectRoot = resolve(import.meta.dirname, '..')
 const gddRoot = process.env.GDD_ROOT ?? resolve(projectRoot, '..')
-const expected = JSON.parse(await readFile(new URL('./fixtures/publication-sources.json', import.meta.url), 'utf8'))
+const historical = JSON.parse(await readFile(new URL('./fixtures/publication-sources.json', import.meta.url), 'utf8'))
+const canonicalSources = await loadGddSources(gddRoot)
+const expected = await Promise.all([...canonicalSources.entries()].map(async ([page, entry]) => ({ page, ...entry, status: JSON.parse(await readFile(resolve(gddRoot, entry.source), 'utf8')).status, route: '/' + categoryForPage(page).id + '/' + page.split('/').at(-1).replace(/\.md$/, ''), latest21: historical.some((old) => old.id === entry.id && old.latest21) })))
 const manifest = JSON.parse(await readFile(resolve(projectRoot, 'src/generated/publication-manifest.json'), 'utf8'))
 const contract = JSON.parse(await readFile(resolve(projectRoot, 'src/generated/gdd-contract.json'), 'utf8'))
 
-test('manifest equals all current exact source identities and routes', () => {
+test('manifest equals the current canonical source identities and routes', () => {
   const identities = manifest.documents.filter(({ source }) => source.startsWith('canon/')).map(({ source, id, route }) => ({ source, id, route }))
   assert.deepEqual(identities.sort((a, b) => a.source.localeCompare(b.source)), expected.map(({ source, id, route }) => ({ source, id, route })).sort((a, b) => a.source.localeCompare(b.source)))
 })

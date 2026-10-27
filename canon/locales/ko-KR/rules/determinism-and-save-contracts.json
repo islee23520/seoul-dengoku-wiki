@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "rules/Determinism-and-Save-Contracts.md",
+    "lineStart": 1,
+    "lineEnd": 28,
+    "sha256": "1bf11cc21455c7824af22cf796b7283880b024dfdc157370a8a829fef09bdc31"
+  },
+  "document": {
+    "id": "doc.Determinism-and-Save-Contracts",
+    "blockIds": [
+      "ch.title",
+      "ch.authority",
+      "ch.provenance",
+      "ch.sp",
+      "ch.s0",
+      "ch.p0",
+      "ch.s1",
+      "ch.p1",
+      "ch.s2",
+      "ch.p2",
+      "ch.s3",
+      "ch.p3",
+      "ch.decisions",
+      "ch.terms",
+      "overhaul.20261027.contract-map",
+      "overhaul.20261027.supersession",
+      "overhaul.20261027.move",
+      "overhaul.20261027.battle",
+      "overhaul.20261027.handoff",
+      "overhaul.20261027.gates"
+    ],
+    "terminalLineFeeds": 2
+  },
+  "blocks": [
+    {
+      "id": "ch.title",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CH10 결정론·세이브"
+        }
+      ]
+    },
+    {
+      "id": "ch.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다. 참조 게임의 제도·수치를 서울 규칙으로 승격하지 않는다. 승인 계약은 구현 완료를 뜻하지 않으며 SP-1.0.0의 대체 범위가 과거 공유 세계 조항보다 우선한다."
+        }
+      ]
+    },
+    {
+      "id": "ch.provenance",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "외부 제품 원천: https://github.com/islee23520/seoul-dengoku/tree/main (측정 revision 3e3c03349eafaaf88347d119a4bdd0c6d44abc53; 인용은 고정 revision URL 사용). CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다. 해당 설치본의 무결성은 미검증이다. 출처 경로와 식별자는 조사 표기이며 게임 UI 표시명이 아니다."
+        }
+      ]
+    },
+    {
+      "id": "ch.sp",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "상위 계약: 싱글플레이 상세 기획",
+          "targetDocumentId": "doc.Singleplayer-Design-SP-1-0-0"
+        }
+      ]
+    },
+    {
+      "id": "ch.s0",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "10.1 같은 선택과 같은 결과"
+        }
+      ]
+    },
+    {
+      "id": "ch.p0",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Core/DeterministicCore.cs#L276-L337 의 목적별 난수는 Peek 무부작용·Consume 해당 스트림 전진·Clone/Fingerprint를 분리한다. CampaignTurnDomain.cs:131-165,186-213은 무변이 계획·누락 명령 auto-hold·표준 타이브레이크를 제공한다. 미리보기로 난수·상태를 소비하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s1",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "10.2 초기 시드와 진행 저장"
+        }
+      ]
+    },
+    {
+      "id": "ch.p1",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Core/Opening/CampaignWorldState.cs#L24-L35 의 CWS1·버전 1·32바이트 다이제스트는 세계 팩트 저장 범위이며 난수·이벤트·조우 영수증을 포함하지 않는다. 전체 캠페인 저장 완성을 주장하지 않는다. SeoulCampaignSession.cs:10,24-46은 재임포트 신규 세션 적용 및 시드 판본·해시·지오메트리 핀 불일치 거절이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s2",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "10.3 손상·버전·정확히 한 번"
+        }
+      ]
+    },
+    {
+      "id": "ch.p2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/AGENTS.md#L72 의 손상·미지원 저장은 명시 실패다. https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Core/SettlementDomain.cs#L394-L499 의 중복 정산 거절·고정 순서·규칙 판본 포함 영수증 해시를 보존한다. 제품 권한: 이후 저장 포맷·이행·버전 지원 정책은 제도 미정이며 자동 복구나 조용한 기본값을 발명하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "10.4 계보·서명과 CK3 반면교사"
+        }
+      ]
+    },
+    {
+      "id": "ch.p3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: ADR-008의 계보·체크포인트·서명 계약을 참조하며 다시 작성하지 않는다. CK3 참조: save-structure.md와 internal-architecture-synthesis.md:74,100-104의 다중 레이아웃·명령 직렬화는 운영 비용·국소 코덱 사례다. 레이아웃 차이 원인과 멀티/리플레이 소비 경로는 미입증이다. 확인 대화상자의 immediate 변이는 순수 프리뷰와 구별하는 반면교사이며 서울 기능으로 옮기지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.decisions",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "제품 결정 원장 — 미결정은 소유자 권한",
+          "targetDocumentId": "doc.Open-Decisions"
+        }
+      ]
+    },
+    {
+      "id": "ch.terms",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "한국어 표기와 명명 규칙",
+          "targetDocumentId": "doc.Korean-Terminology-and-Naming"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.contract-map",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "보존 계약과 결정 번호의 소유"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.supersession",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제품 결정 13(개인 판정 전투)·14(시간 기반 전략 이동)·15(가변 정원)은 아래 승인 규칙 문서에 보존된 소유자 결정이다. 메커니즘 D13/D14/D15 시트 번호와 다른 이름공간이며 제안 시트를 승인하지 않는다. SP-1.0.0은 공유 세계·참가자·호스트·점유·온라인 대행 조항을 역사 범위로 대체하고 실제 이동·현장 참가·권한·단일 정산·저장 오류 계약을 유지한다. pw-01은 전쟁 개시 임계 제안이지 승인된 제품 결정 번호가 아니다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.move",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "결정 14·15 및 영웅 클래스 승인 원장",
+          "targetDocumentId": "doc.Hero-Squads-and-Time-Based-Movement"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.battle",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "결정 13·15 및 개인·상황·집계 계산 책임",
+          "targetDocumentId": "doc.Personal-Resolution-Battle"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.handoff",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미확정 통합의 실행 게이트"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.gates",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "전략 시간 환산은 미결정 원장 OD-MOVE와 제품 권한에 종속된다. Estate WorldSeconds→세계 Tick 정합이 닫히기 전 생산·이동·활동을 하나의 주기라고 가정한 통합을 확정하지 않는다. CWS1은 세계 팩트 범위이므로 목적별 난수·사건·영수증을 포함한 전체 캠페인 복구 완료를 주장하지 않는다. 저장 포맷/버전 지원과 계보 복구 경계는 ADR-008·미결정 원장 OD-SESS 및 제품 권한의 결정 게이트이며 새 이행 기본값을 발명하지 않는다. 이 게이트는 기존 구현을 중단시키는 새 게임 규칙이 아니라 미확정 의미를 구현 완료로 승격하지 말라는 문서 경계다."
+        }
+      ]
+    }
+  ]
+}

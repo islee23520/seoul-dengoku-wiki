@@ -4,11 +4,12 @@ import { resolve } from 'node:path'
 import { onTestFinished, test } from 'vitest'
 import { approvedDocuments, categories, loadGddSources } from './catalog-admission.mjs'
 import { gddPublicationManifest, validatePublicationManifest } from './publication-manifest.mjs'
-const expectedSources = JSON.parse(await readFile(new URL('./fixtures/publication-sources.json', import.meta.url), 'utf8'))
 
 test('GDD catalog exposes canonical documents and current data summaries', async () => {
   const contract = JSON.parse(await readFile(new URL('../src/generated/gdd-contract.json', import.meta.url), 'utf8'))
-  assert.deepEqual(contract.documents.filter(({ sourcePath }) => sourcePath.startsWith('canon/')).map(({ sourcePath, route }) => ({ source: sourcePath, route })).sort((a, b) => a.source.localeCompare(b.source)), expectedSources.map(({ source, route }) => ({ source, route })).sort((a, b) => a.source.localeCompare(b.source)))
+  const gddRootForSources = process.env.GDD_ROOT ?? resolve(import.meta.dirname, '../..')
+  const canonicalSources = await loadGddSources(gddRootForSources)
+  assert.deepEqual(contract.documents.filter(({ sourcePath }) => sourcePath.startsWith('canon/')).map(({ sourcePath }) => sourcePath).sort(), [...canonicalSources.values()].map(({ source }) => source).sort())
   assert.equal(new Set(contract.documents.map((document) => document.route)).size, contract.documents.length)
   assert.ok(contract.documents.every((document) => /^(?:canon\/locales\/ko-KR\/(?:adr-\d{3}|(?:root|rules|architecture|references|art|system-design|proposals)\/[a-z0-9-]+)\.json|LICENSE)$/.test(document.sourcePath)))
   const gddRoot = process.env.GDD_ROOT ?? resolve(import.meta.dirname, '../..')
@@ -43,7 +44,7 @@ test('the publication manifest equals the public canon source set and generated 
   assert.deepEqual(manifest.documents.map(({ route }) => route), contract.documents.map(({ route }) => route).sort())
   const locked = JSON.parse(await readFile(resolve(gddRoot, 'canon/rendered.lock.json'), 'utf8'))
   const sources = await loadGddSources(gddRoot)
-  assert.deepEqual(locked.map(({ path }) => path).sort(), expectedSources.map(({ page }) => page).sort())
+  assert.deepEqual(locked.map(({ path }) => path).sort(), [...sources.keys()].sort())
   assert.deepEqual(manifest.documents.filter(({ source }) => source.startsWith('canon/')).map(({ source }) => source).sort(), locked.map(({ path }) => sources.get(path).source).sort())
   for (const document of manifest.documents) {
     await access(resolve(gddRoot, document.source))

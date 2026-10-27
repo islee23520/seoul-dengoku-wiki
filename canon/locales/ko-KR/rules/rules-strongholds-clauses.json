@@ -12,6 +12,9 @@
     "id": "doc.Rules-Strongholds",
     "blockIds": [
       "source.b1",
+      "overhaul.20261027.heading",
+      "overhaul.20261027.disposition",
+      "overhaul.20261027.chapter",
       "source.b2",
       "source.b3",
       "source.b4",
@@ -85,6 +88,38 @@
         {
           "kind": "text",
           "text": "거점과 영토 규칙"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이관 판정 — 보존 조항과 역사 범위"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.disposition",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "판정: 삭제·전면 흡수하지 않고 기존 상세 조항을 보존한다. SP-1.0.0 override와 결정 12–15 마커는 유지한다. 공유 세계·최대 참가자·동시 턴·온라인 대행 부분은 역사 범위이며 현행 실행 전제가 아니다. 개편 장은 근거 계층을 소유하고 이 문서는 기존 승인 세부의 추적 원장이다. 충돌 시 SP-1.0.0 및 최신 제품 권한을 따른다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.chapter",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "주 대응 장",
+          "targetDocumentId": "doc.Power-and-Institutions"
         }
       ]
     },

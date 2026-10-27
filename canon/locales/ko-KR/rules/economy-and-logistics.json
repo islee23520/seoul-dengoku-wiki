@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "rules/Economy-and-Logistics.md",
+    "lineStart": 1,
+    "lineEnd": 28,
+    "sha256": "e0e9649edad02b070bcd418720cfc35b7f27173a6f3110b9258d87322e090b98"
+  },
+  "document": {
+    "id": "doc.Economy-and-Logistics",
+    "blockIds": [
+      "ch.title",
+      "ch.authority",
+      "ch.provenance",
+      "ch.sp",
+      "ch.s0",
+      "ch.p0",
+      "ch.s1",
+      "ch.p1",
+      "ch.s2",
+      "ch.p2",
+      "ch.s3",
+      "ch.p3",
+      "ch.decisions",
+      "ch.terms",
+      "overhaul.20261027.contract-map",
+      "overhaul.20261027.supersession",
+      "overhaul.20261027.move",
+      "overhaul.20261027.battle",
+      "overhaul.20261027.economy",
+      "overhaul.20261027.logistics"
+    ],
+    "terminalLineFeeds": 2
+  },
+  "blocks": [
+    {
+      "id": "ch.title",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CH4 경제·물류"
+        }
+      ]
+    },
+    {
+      "id": "ch.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다. 참조 게임의 제도·수치를 서울 규칙으로 승격하지 않는다. 승인 계약은 구현 완료를 뜻하지 않으며 SP-1.0.0의 대체 범위가 과거 공유 세계 조항보다 우선한다."
+        }
+      ]
+    },
+    {
+      "id": "ch.provenance",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "외부 제품 원천: https://github.com/islee23520/seoul-dengoku/tree/main (측정 revision 3e3c03349eafaaf88347d119a4bdd0c6d44abc53; 인용은 고정 revision URL 사용). CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다. 해당 설치본의 무결성은 미검증이다. 출처 경로와 식별자는 조사 표기이며 게임 UI 표시명이 아니다."
+        }
+      ]
+    },
+    {
+      "id": "ch.sp",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "상위 계약: 싱글플레이 상세 기획",
+          "targetDocumentId": "doc.Singleplayer-Design-SP-1-0-0"
+        }
+      ]
+    },
+    {
+      "id": "ch.s0",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "4.1 노동·인구·고용·배급"
+        }
+      ]
+    },
+    {
+      "id": "ch.p0",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: 승인 SP-1.0.0과 경제·물류 조항의 노동 자격·예약·개인 보존·배급 도착/마감 순서를 유지한다. 인물·장비·노동을 자원 한 숫자로 자동 대체하지 않는다. 제품 권한: 새 노동 효율·급여·소비량·마감 간격은 제도 미정이며 기존 승인 조항의 예외를 임의 추가하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s1",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "4.2 생산·건설·자원"
+        }
+      ]
+    },
+    {
+      "id": "ch.p1",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/AGENTS.md#L67-L71 의 저작 데이터→검증된 불변 카탈로그→Core 소비를 따른다. GAME/Assets/Janseon/Data/Authoring/BattleSetupDefinition.cs:10-25와 Data/Validation/GameDataCatalogValidator.cs:30-32는 규칙 판본과 rule-drift 검증의 코드 사례다. CK3 참조: mechanics-05-economy.md:54-98의 비용 계산 분리·건물 완료 훅은 저작 관례다. CK3 건물 비용을 서울 가격으로 복사하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s2",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "4.3 자산·채무·상속·인도"
+        }
+      ]
+    },
+    {
+      "id": "ch.p2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: 정착지는 재산이지 신규 작위가 아니다(https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Foundation/Presentation/SeoulCampaignSession.cs#L68). 자산 사용·인도는 SP-1.0.0의 자격→예약→실행→영수증 경계로 읽는다. CK3 참조: mechanics-05-economy.md:100-156은 보유 유형과 수정자·통제·발전도 재료의 분리를 보인다. 실제 월 정산 순서·반올림은 미노출이다. 제품 권한: 서울 채무·상속·생산 수치의 확장 정책은 제도 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "4.4 물류·고립·과확장"
+        }
+      ]
+    },
+    {
+      "id": "ch.p3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: 기존 warfare-and-sieges의 보급·고립·과확장 공유 척도는 설계 가정과 승인 부분을 구분하여 참조한다. 부대 규모는 결정 15의 가변 정원과 인원 보존을 따른다. CK3 참조: mechanics-05-economy.md:118-153의 통제 보간과 성장 재료는 곡선 구조 사례일 뿐 서울 세율·과확장 벌칙이 아니다. 제품 권한: 수송 처리량·고립 손실·기준 기간·제작비 전부는 승인된 저작값 외 제도 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.decisions",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "제품 결정 원장 — 미결정은 소유자 권한",
+          "targetDocumentId": "doc.Open-Decisions"
+        }
+      ]
+    },
+    {
+      "id": "ch.terms",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "한국어 표기와 명명 규칙",
+          "targetDocumentId": "doc.Korean-Terminology-and-Naming"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.contract-map",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "보존 계약과 결정 번호의 소유"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.supersession",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제품 결정 13(개인 판정 전투)·14(시간 기반 전략 이동)·15(가변 정원)은 아래 승인 규칙 문서에 보존된 소유자 결정이다. 메커니즘 D13/D14/D15 시트 번호와 다른 이름공간이며 제안 시트를 승인하지 않는다. SP-1.0.0은 공유 세계·참가자·호스트·점유·온라인 대행 조항을 역사 범위로 대체하고 실제 이동·현장 참가·권한·단일 정산·저장 오류 계약을 유지한다. pw-01은 전쟁 개시 임계 제안이지 승인된 제품 결정 번호가 아니다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.move",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "결정 14·15 및 영웅 클래스 승인 원장",
+          "targetDocumentId": "doc.Hero-Squads-and-Time-Based-Movement"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.battle",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "결정 13·15 및 개인·상황·집계 계산 책임",
+          "targetDocumentId": "doc.Personal-Resolution-Battle"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.economy",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "노동·예약·배급 도착/마감·인도 보존 조항",
+          "targetDocumentId": "doc.Rules-EconomyLogistics"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.logistics",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "공성·보급 공유 척도와 설계 가정",
+          "targetDocumentId": "doc.Warfare-and-Sieges"
+        }
+      ]
+    }
+  ]
+}

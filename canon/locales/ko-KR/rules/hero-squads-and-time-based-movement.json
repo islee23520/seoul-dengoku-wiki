@@ -3,15 +3,16 @@
   "locale": "ko-KR",
   "status": "accepted",
   "source": {
-    "path": "rules/Hero-Squads-and-Simultaneous-Turns.md",
+    "path": "rules/Hero-Squads-and-Time-Based-Movement.md",
     "lineStart": 1,
     "lineEnd": 105,
     "sha256": "3bd57c0dbaee7da56e8bdbdf43889033a292d4874bbd9a747a771174c7d2d988"
   },
   "document": {
-    "id": "doc.Hero-Squads-and-Simultaneous-Turns",
+    "id": "doc.Hero-Squads-and-Time-Based-Movement",
     "blockIds": [
       "source.b1",
+      "overhaul.20261027.rename",
       "sp1.20261003.override",
       "source.b2",
       "source.b3",
@@ -55,6 +56,16 @@
         {
           "kind": "text",
           "text": "영웅 분대와 시간 기반 전략 이동"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.rename",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "개칭 이관: 역사 POC·동시 전략 턴 명칭을 현행 개인 판정 전투·시간 기반 이동 명칭으로 폐기했다. 아래 승인 조항과 SP-1.0.0 우선 범위는 보존한다. CH5/CH6의 삼층 표기와 제품 권한이 과거 공유 세계 조항보다 우선한다."
         }
       ]
     },

@@ -12,6 +12,9 @@
     "id": "doc.Ref-Mechanism-Index",
     "blockIds": [
       "source.b1",
+      "overhaul.20261027.heading",
+      "overhaul.20261027.scope",
+      "overhaul.20261027.chapter",
       "integration.20261006.entry",
       "source.b2",
       "source.b3",
@@ -197,6 +200,38 @@
             "text": "[!NOTE]"
           }
         ]
+      ]
+    },
+    {
+      "id": "overhaul.20261027.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2026-10-27 코드 해부 참조 경계"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.scope",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-culture.md:165-207 및 internal-architecture-synthesis.md:117-126을 참조한다. 설치본 무결성·전체 실행 순서·핫리로드·명령의 멀티/리플레이 재사용은 미입증이다. CK3 수치는 서울 규칙이 아니다. 깊이조사 총계·씨족 산식은 독립검증 불일치 상태의 요약을 채택하지 않는다. depth-04-war-and-binary.md:1317-1426,1628-1635의 큐는 제출/삽입이며 실제 소비 루프·피해식은 미복원이다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.chapter",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "서울 사실/제품 권한과의 분리 계약",
+          "targetDocumentId": "doc.Game-Logic-Principles"
+        }
       ]
     },
     {

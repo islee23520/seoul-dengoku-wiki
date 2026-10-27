@@ -12,6 +12,9 @@
     "id": "doc.Mechanism-D10",
     "blockIds": [
       "d10.b1",
+      "overhaul.20261027.heading",
+      "overhaul.20261027.authority",
+      "overhaul.20261027.chapter",
       "d10.b2",
       "d10.b3",
       "d10.b4",
@@ -33,6 +36,38 @@
         {
           "kind": "text",
           "text": "D10 작위·권리·명분·인준 작동 계약과 공식 시트"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "게임 로직 개편 정합 경계"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 문서는 기존 제안 상태를 유지한다. 산식·표·청사진은 서울의 구현 사실이나 승인 수치가 아니다. 아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다. 깊이조사의 불일치 총계·씨족 산식은 채택하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.chapter",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "대응 장과 확인된 근거",
+          "targetDocumentId": "doc.Power-and-Institutions"
         }
       ]
     },
