@@ -62,6 +62,7 @@ const publicationManifest = await gddPublicationManifest({ gddRoot, pagesRoot: g
 const routeBySource = new Map(documents.map((document) => [document.sourcePath, document.route]))
 const normalizeHref = async (href, source) => {
   if (href.startsWith('#') || href.startsWith('http://') || href.startsWith('https://') || href.startsWith('mailto:')) return href
+  if (/^\/wiki\/(?:world\/[A-Za-z0-9-]+|people\/person-\d+)(?:#[A-Za-z0-9-]+)?$/.test(href)) return href
   const [pathPart, hash = ''] = href.split('#', 2)
   const resolved = relative(gddPagesRoot, resolve(dirname(source), pathPart)).replaceAll('\\', '/')
   if (resolved.startsWith('../LORE/') && resolved.endsWith('.md')) return `/world/${basename(resolved, '.md')}${hash ? `#${hash}` : ''}`
