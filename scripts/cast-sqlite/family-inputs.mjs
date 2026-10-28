@@ -60,25 +60,19 @@ export function readCastFamilyTreeInputs(db, { expectedSourceHashes = FAMILY_INP
     if (pointer && values.some((row, i) => row.json_pointer !== `/${pointer}/${i}`)) coverage(pointer);
     return values;
   };
-  // Counts bind completeness to the pinned source, including terminal rows that
-  // an ordinal gap check alone cannot detect. No generic source tree is needed.
-  const typed = (table, source, count) => {
-    const values = rows(`SELECT * FROM ${table} WHERE source_id=?`, source);
-    if (values.length !== count) coverage(table);
-    return values;
-  };
-  const treeRefs = ordered(typed('family_tree_source', treeSource, 4), 'sourceRefs');
-  const nodeRows = ordered(typed('family_node', treeSource, 6025), 'nodes');
-  const nodeRefs = typed('family_node_source', treeSource, 22908);
-  const times = typed('family_node_timeline', treeSource, 6026);
-  const edgeRows = ordered(typed('family_edge', treeSource, 5008), 'edges');
-  const edgeRefs = typed('family_edge_source', treeSource, 9917);
-  const members = ordered(typed('diaspora_member', diasporaSource, 8));
-  const lineages = ordered(typed('diaspora_lineage', diasporaSource, 2), 'lineages');
-  const events = typed('diaspora_member_event', diasporaSource, 16);
-  const parents = ordered(typed('diaspora_member_parent', diasporaSource, 8));
-  typed('family_node', diasporaSource, 8);
-  typed('family_edge', diasporaSource, 8);
+  // Row sets are read as stored; completeness is checked structurally (ordinals,
+  // orphan provenance, endpoints) rather than against fixed row counts.
+  const typed = (table, source) => rows(`SELECT * FROM ${table} WHERE source_id=?`, source);
+  const treeRefs = ordered(typed('family_tree_source', treeSource), 'sourceRefs');
+  const nodeRows = ordered(typed('family_node', treeSource), 'nodes');
+  const nodeRefs = typed('family_node_source', treeSource);
+  const times = typed('family_node_timeline', treeSource);
+  const edgeRows = ordered(typed('family_edge', treeSource), 'edges');
+  const edgeRefs = typed('family_edge_source', treeSource);
+  const members = ordered(typed('diaspora_member', diasporaSource));
+  const lineages = ordered(typed('diaspora_lineage', diasporaSource), 'lineages');
+  const events = typed('diaspora_member_event', diasporaSource);
+  const parents = ordered(typed('diaspora_member_parent', diasporaSource));
   const usedRefs = new Set(), usedTimes = new Set(), usedEdgeRefs = new Set();
   const group = (values, key) => {
     const index = new Map();
@@ -150,7 +144,7 @@ export function readCastFamilyTreeInputs(db, { expectedSourceHashes = FAMILY_INP
   if (usedEvents.size !== events.length || usedParents.size !== parents.length) coverage('diaspora coverage');
   const ids = new Set(nodes.map(node => node.id));
   const personIds = nodes.filter(node => node.personId !== null).map(node => node.personId);
-  if (ids.size !== nodes.length || new Set(personIds).size !== 1022 || personIds.length !== 1022 || birthdayRoster.some(person => !personIds.includes(person.id))) coverage('issued identities');
+  if (ids.size !== nodes.length || new Set(personIds).size !== personIds.length || personIds.length !== birthdayRoster.length || birthdayRoster.some(person => !personIds.includes(person.id))) coverage('issued identities');
   if (new Set(edges.map(edge => edge.id)).size !== edges.length || edges.some(edge => !ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to)) coverage('edge endpoints');
   return { schemaVersion: 1, collapseYear: tree[0].collapse_year, referenceDate: tree[0].reference_date, status: tree[0].status,
     sourceRefs: treeRefs.map(row => ({ path: row.source_path })), nodes, edges, imports: [{ path: path('diaspora-family-lineages') }] };

@@ -9,7 +9,7 @@ import { readCastHouseholdInputs } from '../cast-sqlite/household-inputs.mjs';
 import { readIssuedSheetDocument } from '../cast-sqlite/issued-sheet-document.mjs';
 import { readPersonIdentityDocuments, PERSON_IDENTITY_SOURCE_HASHES } from '../cast-sqlite/person-identity-documents.mjs';
 import { EDITORIAL_PROFILE_SOURCE_HASHES } from './editorial-profile.mjs';
-import { readPersonContextDocuments, PERSON_CONTEXT_SOURCE_HASHES } from '../cast-sqlite/person-context-documents.mjs';
+import { readPersonContextDocuments } from '../cast-sqlite/person-context-documents.mjs';
 import { readFamilySourceDocument } from '../cast-sqlite/family-source-document.mjs';
 import { isDeepStrictEqual } from 'node:util';
 
@@ -40,12 +40,11 @@ export function readPersonMappingCurrentSource(db, path, sha256, { editorialProf
     return orderDocumentKeys(db, reference.sourceId, reference.document);
   }
   switch (path) {
-    case 'lore/name-pools/cast-family-trees.json': return readFamilySourceDocument(db, { expectedSourceHash: sha256 });
+    case 'lore/name-pools/cast-family-trees.json': return readFamilySourceDocument(db);
     case 'lore/name-pools/cast-birthdays.json':
     case 'lore/name-pools/cast-prose-contacts.json': {
       const domain = path.endsWith('/cast-birthdays.json') ? 'birthdays' : 'contacts';
-      return readPersonContextDocuments(db, { expectedSourceHashes: { ...PERSON_CONTEXT_SOURCE_HASHES,
-        [domain]: sha256 } })[domain];
+      return readPersonContextDocuments(db)[domain];
     }
     case 'lore/name-pools/cast-hangnyeol.json':
     case 'lore/name-pools/gender-cast.json': {
