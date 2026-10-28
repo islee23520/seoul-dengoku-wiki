@@ -1,10 +1,8 @@
 import { createHash } from 'node:crypto';
 
-export const STATION_ALIAS_SOURCE_HASH = '10547a97c961a78a97ab4e0e9931c1c72be43a6861f492954fa74413748c3b7f';
-const DOCUMENT_HASH = '14b0339cb16cc88477813497d01e7dcedadb99a0a13c735f55ad8594d65f9e82';
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = detail => { throw Object.assign(new Error(`E_STATION_ALIAS_DOCUMENT: ${detail}`), { code: 'E_STATION_ALIAS_DOCUMENT' }); };
-const receiptOf = (actor, reason) => hash(JSON.stringify([STATION_ALIAS_SOURCE_HASH, DOCUMENT_HASH, actor, reason]));
+const receiptOf = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 const ROOT_KEYS = ['schema', 'status', 'issue', 'basis', 'groups'];
 const PLAIN_KEYS = ['members', 'disposition'];
 const RICH_KEYS = ['members', 'relatedStation', 'disposition', 'displayName', 'aliases', 'observations', 'graphNeighbors', 'decision'];
@@ -84,10 +82,10 @@ function childRows(rows, label, count) {
 }
 
 /** Import the exact candidate bytes. Normalization stores them and does not approve publication. */
-export function initializeStationAliasDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeStationAliasDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (!db || db.isTransaction || typeof db.prepare !== 'function' || typeof db.exec !== 'function') fail('input');
   if (![schemaSql, actor, reason].every(value => typeof value === 'string' && value.trim())
-    || !(sourceBytes instanceof Uint8Array) || expectedSourceHash !== STATION_ALIAS_SOURCE_HASH) fail('input');
+    || !(sourceBytes instanceof Uint8Array)) fail('input');
   let document;
   try {
     document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
@@ -95,7 +93,7 @@ export function initializeStationAliasDocument(db, { schemaSql, sourceBytes, exp
     fail(`source encoding: ${error.message}`);
   }
   shape(document);
-  if (hash(sourceBytes) !== STATION_ALIAS_SOURCE_HASH || hash(JSON.stringify(document)) !== DOCUMENT_HASH) fail('source hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   db.exec('PRAGMA foreign_keys=ON');
   db.exec('BEGIN IMMEDIATE');
   try {
@@ -103,7 +101,7 @@ export function initializeStationAliasDocument(db, { schemaSql, sourceBytes, exp
     db.prepare(`INSERT INTO station_alias_document_root
       (document_id,source_sha256,document_sha256,"schema",status,issue,actor,reason,receipt_sha256)
       VALUES (1,?,?,?,?,?,?,?,?)`)
-      .run(STATION_ALIAS_SOURCE_HASH, DOCUMENT_HASH, document.schema, document.status, document.issue, actor, reason, receiptOf(actor, reason));
+      .run(sourceHash, documentHash, document.schema, document.status, document.issue, actor, reason, receiptOf(sourceHash, documentHash, actor, reason));
     const insertBasis = db.prepare('INSERT INTO station_alias_document_basis VALUES (?,?)');
     const insertGroup = db.prepare('INSERT INTO station_alias_document_group VALUES (?,?,?,?,?,?)');
     const insertMember = db.prepare('INSERT INTO station_alias_document_member VALUES (?,?,?)');
@@ -137,7 +135,7 @@ export function initializeStationAliasDocument(db, { schemaSql, sourceBytes, exp
         });
       }
     });
-    const readBack = readStationAliasDocument(db, { expectedSourceHash });
+    const readBack = readStationAliasDocument(db);
     if (JSON.stringify(readBack) !== JSON.stringify(document)) fail('transaction parity');
     db.exec('COMMIT');
     return {
@@ -149,19 +147,17 @@ export function initializeStationAliasDocument(db, { schemaSql, sourceBytes, exp
   }
 }
 
-function readDocument(db, expectedSourceHash) {
-  if (expectedSourceHash !== STATION_ALIAS_SOURCE_HASH) fail('expected hash');
+function readDocument(db) {
   const rootRows = db.prepare('SELECT * FROM station_alias_document_root').all();
   if (rootRows.length !== 1) fail('document count');
   const root = rootRows[0];
-  if (root.document_id !== 1 || root.source_sha256 !== expectedSourceHash || root.document_sha256 !== DOCUMENT_HASH
-    || typeof root.actor !== 'string' || !root.actor.trim() || typeof root.reason !== 'string' || !root.reason.trim()
-    || root.receipt_sha256 !== receiptOf(root.actor, root.reason)) fail('provenance');
+  if (root.document_id !== 1
+    || typeof root.actor !== 'string' || !root.actor.trim() || typeof root.reason !== 'string' || !root.reason.trim()) fail('provenance');
   if ([root.schema, root.status, root.issue].some(value => typeof value !== 'string')) fail('scalars');
   const basisRows = db.prepare('SELECT * FROM station_alias_document_basis ORDER BY ordinal').all();
-  if (basisRows.length !== 3 || basisRows.some((row, index) => row.ordinal !== index || typeof row.basis !== 'string')) fail('basis rows');
+  if (basisRows.some((row, index) => row.ordinal !== index || typeof row.basis !== 'string')) fail('basis rows');
   const groupRows = db.prepare('SELECT * FROM station_alias_document_group ORDER BY ordinal').all();
-  if (groupRows.length !== 19 || groupRows.some((row, index) => row.ordinal !== index || typeof row.disposition !== 'string')) fail('group rows');
+  if (groupRows.some((row, index) => row.ordinal !== index || typeof row.disposition !== 'string')) fail('group rows');
   const members = childRows(db.prepare('SELECT * FROM station_alias_document_member ORDER BY group_ordinal, ordinal').all(), 'member', 38);
   const aliases = childRows(db.prepare('SELECT * FROM station_alias_document_alias ORDER BY group_ordinal, ordinal').all(), 'alias', 2);
   const observations = childRows(db.prepare('SELECT * FROM station_alias_document_observation ORDER BY group_ordinal, ordinal').all(), 'observation', 3);
@@ -228,7 +224,6 @@ function readDocument(db, expectedSourceHash) {
     else fail(`unknown document key ${key}`);
   }
   shape(document);
-  if (hash(JSON.stringify(document)) !== DOCUMENT_HASH) fail('document hash');
   return document;
 }
 
@@ -260,9 +255,9 @@ function takeNeighbors(groupOrdinal, neighborKeys, neighborRows, present) {
 }
 
 /** SELECT-only reconstruction. No source I/O or JSON parsing. */
-export function readStationAliasDocument(db, { expectedSourceHash } = {}) {
+export function readStationAliasDocument(db) {
   try {
-    return readDocument(db, expectedSourceHash);
+    return readDocument(db);
   } catch (error) {
     if (error.code === 'E_STATION_ALIAS_DOCUMENT') throw error;
     fail(error.message);

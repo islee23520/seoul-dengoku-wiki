@@ -2,7 +2,6 @@ import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
 import { withTransaction } from './db.mjs';
-import { readApprovedRelationSuccessor } from './relation-successor.mjs';
 import { resolveRelations, resolveVassals } from '../../lore/relations/validate.mjs';
 
 const logicalPath = 'lore/relations/relations.json';
@@ -142,10 +141,10 @@ export function readRelationConfig(db, { expectedSha256 } = {}) {
     eventLinks: ordered('context_event_link', 'eventLinks').map(row => ({ eventId: row.event_id, personId: row.person_id, ...(row.organization_id === null ? {} : { organizationId: row.organization_id }) })),
   };
   validateShape(config);
-  const successor = readApprovedRelationSuccessor(db, {
-    projection: config, sourceSha256: m.sha256, bootstrapDigest: m.config_digest,
-  });
-  if (successor !== null) return config;
+  // A current editable head for relations.json supersedes the archived import digest.
+  const edited = db.prepare("SELECT 1 FROM sqlite_schema WHERE name='data_source_head'").get()
+    && db.prepare("SELECT 1 FROM data_source_head WHERE source_path='lore/relations/relations.json'").get();
+  if (edited) return config;
   if (digest(config) !== m.config_digest) fail('E_RELATION_INPUT_COVERAGE', 'config digest');
   return config;
 }

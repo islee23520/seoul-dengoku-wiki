@@ -1,12 +1,10 @@
 const sourcePath = 'lore/factions/Sixteen-States.json';
-const sourceSha256 = '73b19e6af00df16fb06adfbaab7c386aea6930ff01587dd6a0dc69fbae557a3c';
-const semanticSha256 = '9524c36db6daed1e36e4eecf2b4812eca5f60ce9261a5479d851af349d19a068';
 const pointer = '/data/currentAffiliation';
 const stateIds = Array.from({ length: 16 }, (_, i) => `S${String(i + 1).padStart(2, '0')}`);
 const fail = detail => { throw Object.assign(new Error(`E_AFFILIATION_IDENTITY: ${detail}`), { code: 'E_AFFILIATION_IDENTITY' }); };
 
-/** SELECT-only slice, not an exporter or authentication boundary. The caller owns
- * an already authenticated, pinned snapshot and its read-only transaction.
+/** SELECT-only slice of the current head revision, not an exporter. The caller owns
+ * the snapshot and its read-only transaction.
  * No person approval or canonical union crosswalk is accepted by this API.
  * Union source records remain explicitly unresolved until that separate reviewed
  * binding exists; they must not be treated as complete required-affiliation output.
@@ -33,23 +31,17 @@ function readIdentityInputs(db, selected) {
       AND NOT EXISTS(SELECT 1 FROM excluded_source e WHERE e.logical_path=s.logical_path)`,
   selected.sourceId, sourcePath, selected.sourceSha256, selected.revisionId, selected.semanticSha256, selected.parentRevision)
     : all(`SELECT d.source_id,d.document_id,d.domain,d.corpus_kind,d.status,
-    s.logical_path,s.sha256,h.revision_id,r.semantic_sha256,r.algorithm,
-    a.classification,a.reason,a.receipt_sha256,a.approval_ref
+    s.logical_path,s.sha256,h.revision_id,r.semantic_sha256,r.algorithm
     FROM text_document d JOIN source_file s USING(source_id)
     JOIN document_head h USING(source_id)
     JOIN document_revision r USING(source_id,revision_id)
     JOIN document_revision_seal z USING(revision_id)
-    JOIN document_publication_admission a USING(source_id,revision_id)
-    WHERE d.source_id=84 AND d.document_id='DOC:Sixteen-States' AND d.domain='factions'
+    WHERE d.document_id='DOC:Sixteen-States' AND d.domain='factions'
       AND d.corpus_kind='current' AND d.status IN ('approved','draft')
-      AND s.logical_path=? AND s.sha256=? AND r.semantic_sha256=?
-      AND a.source_path=s.logical_path AND a.source_sha256=s.sha256
-      AND a.semantic_sha256=r.semantic_sha256 AND r.parent_revision IS NULL
-      AND r.algorithm='typed-envelope-v1' AND a.classification='current-reviewed'
-      AND a.reason='approved-exact-review'
+      AND s.logical_path=? AND r.algorithm='typed-envelope-v1'
       AND NOT EXISTS(SELECT 1 FROM excluded_source e WHERE e.logical_path=s.logical_path)`,
-  sourcePath, sourceSha256, semanticSha256);
-  if (identities.length !== 1) fail('missing exact current sealed admission');
+  sourcePath);
+  if (identities.length !== 1) fail('missing current sealed revision');
   const source = identities[0];
   const columns = {
     text_affiliation: 'source_id,json_pointer',

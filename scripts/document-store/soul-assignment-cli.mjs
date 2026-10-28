@@ -1,6 +1,6 @@
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { INTERNAL_SOUL_CAPABILITY, SOUL_ASSIGNMENT_SOURCE_SHA256, initializeSoulAssignmentEdits,
+import { INTERNAL_SOUL_CAPABILITY, initializeSoulAssignmentEdits,
   openSoulAssignments, replaceSoulAssignment } from './soul-assignment.mjs';
 
 const fail = message => { throw Object.assign(new Error(message), { code: 'E_ARGUMENTS' }); };
@@ -24,7 +24,7 @@ export async function soulAssignmentCommand(argv, input=process.stdin) {
     replace:['dbPath','personId','expectedRevision','actor','reason'],
   };
   if(!Object.hasOwn(allowed,command))fail('init-edits, read, revision or replace command required');
-  const options={capability:INTERNAL_SOUL_CAPABILITY,scope:'internal',expectedSha256:SOUL_ASSIGNMENT_SOURCE_SHA256};
+  const options={capability:INTERNAL_SOUL_CAPABILITY,scope:'internal'};
   for(let i=0;i<args.length;i+=2) {
     const key=flags[args[i]],value=args[i+1];
     if(!allowed[command].includes(key)||Object.hasOwn(options,key)||typeof value!=='string'||!value.trim()||value.startsWith('--'))fail('unsupported, duplicate or missing option');

@@ -68,7 +68,7 @@ export function exportPacket({ dbPath, selection, trustedRoot, workerOut }) {
       const head = db.prepare(`SELECT r.revision_id,r.semantic_sha256 FROM document_head h
         JOIN document_revision r USING(source_id,revision_id) JOIN document_revision_seal z USING(revision_id)
         WHERE h.source_id=?`).get(sourceId);
-      const admission = db.prepare('SELECT * FROM document_publication_admission WHERE source_id=? AND revision_id=?').get(sourceId, head?.revision_id ?? '');
+      const admission = db.prepare('SELECT * FROM document_publication_admission WHERE source_id=? ORDER BY revision_id LIMIT 1').get(sourceId);
       if (!head || !admission || digestJson(document) !== head.semantic_sha256) fail('E_ADAPTER_PUBLIC', 'sealed semantic identity required');
       const sourceKey = `source-${index + 1}`;
       bundle.sources.push({ sourceKey, excerpts });

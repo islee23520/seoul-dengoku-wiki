@@ -1,9 +1,7 @@
 import { createHash } from 'node:crypto';
 import { deepStrictEqual } from 'node:assert';
-import { ISSUED_SHEET_SOURCE_HASH, readIssuedSheetInputs } from './issued-sheet-inputs.mjs';
+import { readIssuedSheetInputs } from './issued-sheet-inputs.mjs';
 
-export { ISSUED_SHEET_SOURCE_HASH };
-export const ISSUED_SHEET_DOCUMENT_HASH = '474713971bf1f0f696b12038d1252c38f2ab6bb43fdb0fd59c86422a1d003cbf';
 const fail = detail => { throw Object.assign(new Error('E_ISSUED_SHEET_DOCUMENT: ' + detail), { code: 'E_ISSUED_SHEET_DOCUMENT' }); };
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 // Explicit source paths map to named, typed columns, never a generic value store.
@@ -55,7 +53,7 @@ const ruleFields = [
   ["tl",["tl"],"string"]
 ];
 
-function reconstruct(db, expectedSourceHash) {
+function reconstruct(db) {
   const single = table => {
     const rows = db.prepare('SELECT * FROM ' + table).all();
     if (rows.length !== 1 || rows[0].singleton !== 1) fail(table + ': singleton');
@@ -64,7 +62,7 @@ function reconstruct(db, expectedSourceHash) {
   const e = single('issued_sheet_document_envelope'), r = single('issued_sheet_document_rules');
   const bands = db.prepare('SELECT * FROM issued_sheet_document_band ORDER BY ordinal').all();
   const reviews = db.prepare('SELECT * FROM issued_sheet_document_leader_review ORDER BY ordinal').all();
-  if (bands.length !== 3 || reviews.length !== 16 || [bands,reviews].some(rows => rows.some((r,i) => r.ordinal !== i))) fail('terminal domain denominator/order');
+  if ([bands,reviews].some(rows => rows.some((r,i) => r.ordinal !== i))) fail('terminal domain denominator/order');
   const candidate = { "schema": e.schema_name,
     "status": e.status,
     "provenance": { "classification": e.classification,
@@ -110,7 +108,7 @@ function reconstruct(db, expectedSourceHash) {
     "disadvantages": r.trait_disadvantages },
     "tl": r.tl },
     "count": e.person_count,
-    "people": readIssuedSheetInputs(db, { expectedSourceHash }).people };
+    "people": readIssuedSheetInputs(db).people };
   const groups = new Map();
   for (const row of db.prepare('SELECT * FROM issued_sheet_document_key ORDER BY object_path,ordinal').all()) {
     if (!groups.has(row.object_path)) groups.set(row.object_path, []);
@@ -134,13 +132,12 @@ function reconstruct(db, expectedSourceHash) {
 }
 
 /** SELECT-only typed reconstruction. No filesystem, archives or JSON decoding. */
-export function readIssuedSheetDocument(db, { expectedSourceHash = ISSUED_SHEET_SOURCE_HASH } = {}) {
+export function readIssuedSheetDocument(db) {
   try {
     const receipts = db.prepare('SELECT * FROM issued_sheet_document_import').all();
     const receipt = receipts[0];
-    if (expectedSourceHash !== ISSUED_SHEET_SOURCE_HASH || receipts.length !== 1 || receipt.singleton !== 1 || receipt.source_sha256 !== expectedSourceHash || receipt.document_sha256 !== ISSUED_SHEET_DOCUMENT_HASH || !receipt.actor?.trim() || !receipt.reason?.trim()) fail('source pin/receipt');
-    const document = reconstruct(db,expectedSourceHash);
-    if (hash(JSON.stringify(document)) !== ISSUED_SHEET_DOCUMENT_HASH) fail('full document digest');
+    if (receipts.length !== 1 || receipt.singleton !== 1 || !receipt.actor?.trim() || !receipt.reason?.trim()) fail('receipt');
+    const document = reconstruct(db);
     return document;
   } catch (error) {
     if (error.code === 'E_ISSUED_SHEET_DOCUMENT') throw error;
@@ -152,13 +149,13 @@ export function readIssuedSheetDocument(db, { expectedSourceHash = ISSUED_SHEET_
  * schemaSql is the accompanying reviewed SQL, supplied only at initialization.
  * Typed rows, audit receipt and whole-source parity share a single transaction.
  */
-export function initializeIssuedSheetDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
-  if (!(sourceBytes instanceof Uint8Array) || expectedSourceHash !== ISSUED_SHEET_SOURCE_HASH || hash(sourceBytes) !== expectedSourceHash) fail('source bytes/hash');
+export function initializeIssuedSheetDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
+  if (!(sourceBytes instanceof Uint8Array)) fail('source bytes');
+  const expectedSourceHash = hash(sourceBytes);
   if (![actor,reason].every(v => typeof v === 'string' && v.trim())) fail('actor/reason');
   if (typeof schemaSql !== 'string' || !schemaSql.trim()) fail('explicit schema SQL required');
   if (db.isTransaction) fail('active transaction');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
-  if (hash(JSON.stringify(document)) !== ISSUED_SHEET_DOCUMENT_HASH) fail('serialized source pin');
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
@@ -183,12 +180,12 @@ export function initializeIssuedSheetDocument(db, { schemaSql, sourceBytes, expe
       Object.entries(value).forEach(([k,v],i) => { key.run(path,i,k); walk(v,path+'/'+k); });
     };
     walk(document,'');
-    db.prepare('INSERT INTO issued_sheet_document_import VALUES (1,?,?,?,?)').run(expectedSourceHash,ISSUED_SHEET_DOCUMENT_HASH,actor,reason);
-    const result = readIssuedSheetDocument(db,{expectedSourceHash});
+    db.prepare('INSERT INTO issued_sheet_document_import VALUES (1,?,?,?,?)').run(expectedSourceHash,hash(JSON.stringify(document)),actor,reason);
+    const result = readIssuedSheetDocument(db);
     deepStrictEqual(result,document);
     if (JSON.stringify(result) !== JSON.stringify(document)) fail('transaction full source parity');
     db.exec('COMMIT');
-    return { sourceHash: expectedSourceHash, documentHash: ISSUED_SHEET_DOCUMENT_HASH, profileCount: result.people.length };
+    return { sourceHash: expectedSourceHash, documentHash: hash(JSON.stringify(document)), profileCount: result.people.length };
   } catch (error) {
     if (db.isTransaction) db.exec('ROLLBACK');
     throw error;

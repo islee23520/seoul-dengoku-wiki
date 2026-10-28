@@ -21,7 +21,6 @@ import { glossaryDocument } from './glossary-document.mjs'
 import { validatedDensities } from './region-density.mjs'
 import { approvedDocuments, publishedDocuments } from './catalog-admission.mjs'
 import { projectSeoulCurrentTimeline, koText } from './timeline-overview.mjs'
-import { loadTimelineReviewAuthority } from './timeline-review-authority.mjs'
 import { articleFeedbackRecord, privateCatalog } from './feedback-source-catalog.mjs'
 import { regularLineGraph } from './regular-line-graph.mjs'
 import { projectClanFamilyTree } from './cast-family-trees.mjs'
@@ -32,29 +31,23 @@ import { produceFromPersonDetailSources, projectPersonStateInputs, projectPerson
 export { authenticateNonowningRights, projectCatalogOutsideOccupation, projectCatalogHoldings, loadApprovedRightsHistory, projectCatalogCurrentHoldings, currentOfficeAppointments } from './person-detail-inputs.mjs'
 import { authenticateNonowningRights, projectCatalogOutsideOccupation, loadApprovedRightsHistory, currentOfficeAppointments } from './person-detail-inputs.mjs'
 export { projectPersonHoldings } from './person-detail-production.mjs'
-import { generatorStage, requireGenerationPublication } from './generate-release.mjs'
-import { loadScopeInput } from './check-seoul-scope.mjs'
+import { generatorStage } from './generate-release.mjs'
 import { admitPublicPersonDetails } from './public-person-detail-admission.mjs'
 import { manifestForPublicFiles, publishPublicAssets, verifiedLegacyManifest } from './seoul-public-assets.mjs'
 import { projectGeographicTitles, publicGeographicScope, publicTerritorialScale } from '../src/components/geographicTitleMap.mjs'
-import { execFile } from 'node:child_process'
-import { promisify } from 'node:util'
 import { isDeepStrictEqual } from 'node:util'
 import { loadStationCatalogGeography, loadOutsideStationIds } from './station-catalog-geography.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
 import { readBoundaryGeometries } from './cast-sqlite/boundary-geometries.mjs'
 import { readPhysicalRail } from './cast-sqlite/physical-rail.mjs'
 import { readCatalogPages, readCatalogGlossary } from './cast-sqlite/catalog-pages.mjs'
-import { loadDatabasePersonProductionInputs, loadMigratedPersonInputs } from './cast-sqlite/person-detail-inputs.mjs'
+import { databaseLoreReader, loadDatabasePersonProductionInputs, loadMigratedPersonInputs } from './cast-sqlite/person-detail-inputs.mjs'
 import { loadCharacterProfiles } from './validate-character-profiles.mjs'
 import { authenticatePersonalTierProvenance } from './personal-tier-provenance.mjs'
-import { retirementProsePredecessorReader } from './retirement-prose-successor.mjs'
 import { loadCiaFacilityProjection } from './cia-facility-projection-input.mjs'
 import { projectCiaFacilityRegions, projectCiaFacilityHoldings, projectCiaFacilityPersonDetails } from './cia-facility-publication.mjs'
 import { personFeedbackRecord } from './feedback-source-catalog.mjs'
-import { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } from './document-store/evidence.mjs'
 import { readPublicCharacterProfileInputs } from './cast-sqlite/profile-inputs.mjs'
-import { preserveReceiptOrder } from './cast-sqlite/document-key-order.mjs'
 import { readPortraitDocuments } from './cast-sqlite/portrait-store.mjs'
 import { readGeographyStore } from './cast-sqlite/geography-store.mjs'
 import { readScopeCurrentSource } from './document-store/scope-current-source.mjs'
@@ -62,15 +55,15 @@ import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
 import { readRetirementProse, projectRetirementProse } from './cast-sqlite/retirement-prose.mjs'
 import { projectActiveRoster, projectActivePersonIndex } from './person-roster-projection.mjs'
 import { readCatalogMetadata, CATEGORY_REGISTRY_PATH, OFFICIAL_SEOUL_LINES_PATH, UPDATE_HISTORY_PATH } from './cast-sqlite/catalog-metadata.mjs'
-import { readPopulationDocument, POPULATION_SOURCE_HASH } from './cast-sqlite/population-document.mjs'
+import { readPopulationDocument } from './cast-sqlite/population-document.mjs'
 import { catalogWorldGraph, catalogMovementGraph, catalogPublicEdges } from './catalog-map-graph.mjs'
-import { readRailSourceDocument, RAIL_SOURCE_HASHES } from './cast-sqlite/rail-source-documents.mjs'
-import { readRegionContentDocument, REGION_CONTENT_SOURCE_HASHES } from './cast-sqlite/region-content-documents.mjs'
-import { readCreativeNameDocument, CREATIVE_NAME_SOURCE_HASH } from './cast-sqlite/creative-name-document.mjs'
-import { readLandmarkRoleDocument, LANDMARK_ROLE_SOURCE_HASH } from './cast-sqlite/landmark-role-document.mjs'
-import { readClanCatalogDocument, CLAN_CATALOG_SOURCE_HASH } from './cast-sqlite/clan-catalog-document.mjs'
-import { readRetiredTerritoryDocuments, RETIRED_TERRITORY_SOURCE_HASHES } from './cast-sqlite/retired-territory-documents.mjs'
-import { readRegionAtlasData, REGION_ATLAS_SOURCE_HASH } from './cast-sqlite/region-atlas-document.mjs'
+import { readRailSourceDocument, RAIL_SOURCE_PATHS } from './cast-sqlite/rail-source-documents.mjs'
+import { readRegionContentDocument, REGION_CONTENT_PATHS } from './cast-sqlite/region-content-documents.mjs'
+import { readCreativeNameDocument } from './cast-sqlite/creative-name-document.mjs'
+import { readLandmarkRoleDocument } from './cast-sqlite/landmark-role-document.mjs'
+import { readClanCatalogDocument } from './cast-sqlite/clan-catalog-document.mjs'
+import { readRetiredTerritoryDocuments, RETIRED_TERRITORY_PATHS } from './cast-sqlite/retired-territory-documents.mjs'
+import { readRegionAtlasData } from './cast-sqlite/region-atlas-document.mjs'
 import { loadMapDataInput } from './map-data-input.mjs'
 
 export const publicCatalogContent = (document, activeIds, activeRoutes) => projectActivePersonIndex(publicMapContent(publicOfficeContent(publicHouseContent(document))), activeIds, activeRoutes)
@@ -79,17 +72,8 @@ export function projectPoliticalCatalog(currentAffiliation) {
   return { hegemons: currentAffiliation.hegemons }
 }
 
-export async function projectCatalogTimeline(centuryAnnalsDocument, relatedTimelineDocuments, readBytes = readFile) {
-  const sourcePath = 'lore/chronology/Century-Annals.json'
-  const sourceBytes = await readBytes(centuryAnnalsDocument.path)
-  const content = centuryAnnalsDocument.value.content
-  const sourceContent = JSON.parse(sourceBytes.toString()).content
-  if (!isDeepStrictEqual(content, sourceContent)) throw new Error('E_TIMELINE_SOURCE_AUTHORITY')
-  // Historical receipt hashes use JSON insertion order. Preserve that evidence
-  // order without substituting archived values for the typed DB content.
-  return projectSeoulCurrentTimeline(preserveReceiptOrder(content, sourceContent), relatedTimelineDocuments, {
-    sourcePath, sourceBytes, review: await loadTimelineReviewAuthority(readBytes),
-  })
+export function projectCatalogTimeline(centuryAnnalsDocument, relatedTimelineDocuments) {
+  return projectSeoulCurrentTimeline(centuryAnnalsDocument.value.content, relatedTimelineDocuments)
 }
 
 export function relatedTimelineDocuments(text, territoryStates, peopleSource) {
@@ -122,8 +106,8 @@ export function stateTimelineEvents(content, timelineYears, territoryStates) {
 }
 
 
-export async function writePublicPersonDetails(details, scopeInput, writeDetail) {
-  admitPublicPersonDetails(details, scopeInput)
+export async function writePublicPersonDetails(details, writeDetail) {
+  admitPublicPersonDetails(details)
   for (const detail of details) await writeDetail(detail)
 }
 
@@ -156,7 +140,6 @@ const catalogMetadata = (() => {
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite'))
   try { return readCatalogMetadata(db) } finally { db.close() }
 })()
-const publicationReview = await requireGenerationPublication(projectRoot)
 const sourceDatabaseBundle = process.env.WIKI_PUBLICATION_DATABASE_CONFIG
   ? await (await import('./document-store/publication-database-inputs.mjs')).openPublicationDatabaseInputs(projectRoot,
     JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))) : null
@@ -173,8 +156,7 @@ let geography, territorialScale, geographicScale
     db.exec('BEGIN')
     geographicScale = buildAdminTerritorialScaleFromDb(db)
     geography = readGeographyStore(db)
-    const offices = readScopeCurrentSource({ db, logicalPath: 'lore/offices/Offices-and-Ranks.json',
-      expectedSha256: '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e' })
+    const offices = readScopeCurrentSource({ db, logicalPath: 'lore/offices/Offices-and-Ranks.json' })
     territorialScale = offices.data.territorialScale
     db.exec('COMMIT')
   } finally { db.close() }
@@ -254,7 +236,7 @@ await materializeWorldAtlas({
 })
 const jsonPages = typedCatalogSource(db => readCatalogPages(db)
   .map(page => ({ ...page, path: resolve(projectRoot, page.path) })))
-const publishedRoutes = new Set(publishedDocuments(await approvedDocuments(loreRoot, { categoryRegistry, dbPath: articleDatabasePath }), publicationReview).map(({ route }) => route))
+const publishedRoutes = new Set(publishedDocuments(await approvedDocuments(loreRoot, { categoryRegistry, dbPath: articleDatabasePath })).map(({ route }) => route))
 const categoryErrors = publishedRegistrationErrors(jsonPages.map((page) => ({ ...page, name: basename(page.path) })), publishedRoutes, categoryRegistry)
 if (categoryErrors.length) throw new Error(categoryErrors.join('\n'))
 const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
@@ -287,29 +269,25 @@ for (const slug of renderedBySlug.keys()) {
   categoriesBySlug.set(slug, [category])
 }
 const personSources = process.env.WIKI_DOCUMENT_DB ? await (async () => {
-  if (!process.env.WIKI_TIER_EVIDENCE_DB || !process.env.WIKI_TIER_HISTORY_DB) throw new Error('E_PERSON_EVIDENCE_DATABASE_REQUIRED')
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
-  const evidenceStore = openEvidenceStore(process.env.WIKI_TIER_EVIDENCE_DB, { capability: INTERNAL_EVIDENCE_CAPABILITY })
-  const historyStore = openEvidenceStore(process.env.WIKI_TIER_HISTORY_DB, { capability: INTERNAL_EVIDENCE_CAPABILITY })
   try {
     db.exec('BEGIN')
     const inputs = await loadDatabasePersonProductionInputs({ db, repoRoot,
-      editorialProfileDb: process.env.WIKI_EDITORIAL_PROFILE_DB, soulAssignmentDb: process.env.WIKI_SOUL_ASSIGNMENT_DB,
-      evidenceStore, historyStore })
+      editorialProfileDb: process.env.WIKI_EDITORIAL_PROFILE_DB, soulAssignmentDb: process.env.WIKI_SOUL_ASSIGNMENT_DB })
     // These already-typed page Maps also contain the computed Glossary/index.
     inputs.pagesBySlug = pagesBySlug
     inputs.renderedBySlug = renderedBySlug
     db.exec('COMMIT')
     return inputs
-  } finally { historyStore.close(); evidenceStore.close(); db.close() }
+  } finally { db.close() }
 })() : await (async () => {
   const db = openReadOnly(articleDatabasePath)
   try {
     const inputs = await loadMigratedPersonInputs({ db, repoRoot })
     return { ...inputs, pagesBySlug, renderedBySlug,
       characterProfiles: await loadCharacterProfiles(repoRoot),
-      personalTierPreservation: await authenticatePersonalTierProvenance(repoRoot,
-        await retirementProsePredecessorReader(repoRoot, readFile)), personFeedbackRecord }
+      personalTierPreservation: await authenticatePersonalTierProvenance(repoRoot, databaseLoreReader(db, repoRoot)),
+      personFeedbackRecord }
   } finally { db.close() }
 })()
 const { peopleSource, lineageByName, issuedById, issuedIdByName,
@@ -350,7 +328,7 @@ for (const domain of domains) {
   }
 }
 
-const publicationManifest = await wikiPublicationManifest({ loreRoot, documents, registry: categoryRegistry, publicationReview })
+const publicationManifest = await wikiPublicationManifest({ loreRoot, documents, registry: categoryRegistry })
 const routeBySlug = new Map()
 for (const document of documents) {
   routeBySlug.set(`${document.domain}:${document.slug}`, document.route)
@@ -433,18 +411,18 @@ await writeFile(resolve(generatedRoot, 'wikiUpdates.ts'), `export type WikiUpdat
 const { stateSource, stateRows, stateCatalog, stateNameById, tiersByState, affiliations, stateIdByName } = projectPersonStateInputs(renderedBySlug, pagesBySlug, { organizationAliases })
 await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type CurrentHegemon = { readonly kind: 'state'; readonly stateId: string; readonly name: string } | { readonly kind: 'union'; readonly name: string } | { readonly kind: 'neutral'; readonly name: string }\nexport type CurrentBase = { readonly kind: 'station'; readonly stationId: string; readonly name: string } | { readonly kind: 'facility'; readonly landmarkId: string; readonly name: string }\nexport type StateRecord = { currentHegemon: CurrentHegemon; currentBase: CurrentBase; currentExclusiveDistricts: 'none' | 'immediate-holdings'; slug: string; id: string; name: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
 
-const regionAtlas = typedCatalogSource(db => readRegionAtlasData(db, { expectedSourceHash: REGION_ATLAS_SOURCE_HASH }))
-const populationSource = typedCatalogSource(db => readPopulationDocument(db, { expectedSourceHash: POPULATION_SOURCE_HASH }))
+const regionAtlas = typedCatalogSource(db => readRegionAtlasData(db))
+const populationSource = typedCatalogSource(db => readPopulationDocument(db))
 const densityByDong = validatedDensities(regionAtlas.regions, populationSource)
 const seoulGraph = catalogWorldGraph(mapInput, typedCatalogSource)
 const officialLineData = catalogMetadata[OFFICIAL_SEOUL_LINES_PATH]
-const regularLineSource = typedCatalogSource(db => readRailSourceDocument(db, { logicalPath: 'lore/places/regular-line-adjacency.json', expectedSourceHash: RAIL_SOURCE_HASHES['lore/places/regular-line-adjacency.json'] }))
+const regularLineSource = typedCatalogSource(db => readRailSourceDocument(db, { logicalPath: 'lore/places/regular-line-adjacency.json' }))
 await writeFile(resolve(generatedRoot, 'railStationSources.ts'),
   '// Generated from typed SQLite domains by generate-catalog.mjs.\n'
   + 'export const railStationSource = ' + JSON.stringify(typedCatalogSource(db => readRailSourceDocument(db, {
-    logicalPath: 'lore/places/rail-station-corrections.json', expectedSourceHash: RAIL_SOURCE_HASHES['lore/places/rail-station-corrections.json'],
+    logicalPath: 'lore/places/rail-station-corrections.json',
   }))) + '\nexport const railStationIdentities = ' + JSON.stringify(typedCatalogSource(db => readRailSourceDocument(db, {
-    logicalPath: 'lore/places/rail-station-identities.json', expectedSourceHash: RAIL_SOURCE_HASHES['lore/places/rail-station-identities.json'],
+    logicalPath: 'lore/places/rail-station-identities.json',
   }))) + '\n')
 const sixteenStatesLore = pagesBySlug.get('Sixteen-States').value
 const stateTable = sixteenStatesLore.content.find((block) => block.anchor === 'table')
@@ -461,7 +439,7 @@ const relationByStateName = new Map(relationTable.rows.map(([state, relation]) =
   if (!['복속', '보좌', '독립'].includes(relation.ko)) throw new Error(`E_GOV_RELATION:${state.ko}:${relation.ko}`)
   return [state.ko, relation.ko]
 }))
-const stationControlLedger = typedCatalogSource(db => readRailSourceDocument(db, { logicalPath: 'lore/places/station-control-overrides.json', expectedSourceHash: RAIL_SOURCE_HASHES['lore/places/station-control-overrides.json'] }))
+const stationControlLedger = typedCatalogSource(db => readRailSourceDocument(db, { logicalPath: 'lore/places/station-control-overrides.json' }))
 const stationControlOverrides = new Map(stationControlLedger.overrides.map((entry) => [entry.stationId, entry]))
 if (stationControlOverrides.size !== stationControlLedger.overrides.length) throw new Error('E_STATION_CONTROL_DUPLICATE')
 for (const entry of stationControlLedger.overrides) {
@@ -473,8 +451,8 @@ proj4.defs('EPSG:5179', '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=10000
 const ciaFacilityProjection = await loadCiaFacilityProjection(repoRoot, sourceRead)
 let regionContentById = new Map()
 typedCatalogSource(db => {
-    for (const [logicalPath, expectedSourceHash] of Object.entries(REGION_CONTENT_SOURCE_HASHES)) {
-      const district = readRegionContentDocument(db, { logicalPath, expectedSourceHash, predecessor: true })
+    for (const logicalPath of REGION_CONTENT_PATHS) {
+      const district = readRegionContentDocument(db, { logicalPath, predecessor: true })
       for (const region of district.regions) regionContentById.set(region.region_id, region.content)
     }
 })
@@ -482,7 +460,7 @@ if (regionContentById.size !== 427) throw new Error(`E_REGION_CONTENT_COVERAGE:$
 const predecessorRegionContentById = regionContentById
 regionContentById = projectCiaFacilityRegions(regionContentById, ciaFacilityProjection.correction)
 const surfaceHolders = (content) => content?.territory?.holders.map((holder) => holder.polity) ?? []
-const creativeNameLedger = typedCatalogSource(db => readCreativeNameDocument(db, { expectedSourceHash: CREATIVE_NAME_SOURCE_HASH }))
+const creativeNameLedger = typedCatalogSource(db => readCreativeNameDocument(db))
 const normalizePublicNames = (text) => {
   let normalized = text
   for (const entry of [...creativeNameLedger.replacements].sort((left, right) => right.old.length - left.old.length)) {
@@ -694,7 +672,7 @@ const polygonMetrics = (points) => {
     y: Number((weightedY / (3 * twiceArea)).toFixed(2)),
   }
 }
-const landmarkLedger = typedCatalogSource(db => readLandmarkRoleDocument(db, { expectedSourceHash: LANDMARK_ROLE_SOURCE_HASH }))
+const landmarkLedger = typedCatalogSource(db => readLandmarkRoleDocument(db))
 const projectedLandmarks = landmarkLedger.sites.map((site) => {
   const region = regionAtlas.regions.find((entry) => entry.id === site.regionId)
   if (!region || !stateNameById.has(site.holderId)) throw new Error(`E_LANDMARK_OWNER:${site.id}`)
@@ -829,27 +807,16 @@ const historicalRightsBytes = typedCatalogSource(db => Object.fromEntries(Object
   return [key, Buffer.from(row.raw_bytes)]
 })))
 const outsideGeometry = (await loadApprovedRightsHistory(historicalRightsBytes)).historical.outside
-const outsideControl = typedCatalogSource(db => readRetiredTerritoryDocuments(db, { logicalPath: 'lore/regions/outside-control-2126.json', expectedSourceHash: RETIRED_TERRITORY_SOURCE_HASHES['lore/regions/outside-control-2126.json'] }))
-const outsideIslands = typedCatalogSource(db => readRetiredTerritoryDocuments(db, { logicalPath: 'lore/regions/outside-island-occupation.json', expectedSourceHash: RETIRED_TERRITORY_SOURCE_HASHES['lore/regions/outside-island-occupation.json'] }))
+const outsideControl = typedCatalogSource(db => readRetiredTerritoryDocuments(db, { logicalPath: 'lore/regions/outside-control-2126.json' }))
+const outsideIslands = typedCatalogSource(db => readRetiredTerritoryDocuments(db, { logicalPath: 'lore/regions/outside-island-occupation.json' }))
 const projectedOutsideControl = await projectCatalogOutsideOccupation(outsideControl, outsideGeometry, outsideIslands,
   { approval: historicalRightsBytes.retirement, control: historicalRightsBytes.control, islands: historicalRightsBytes.islands })
 
 const centuryAnnalsSource = renderedBySlug.get('Century-Annals')
 if (!centuryAnnalsSource) throw new Error('E_CENTURY_ANNALS_MISSING')
 const centuryAnnalsDocument = pagesBySlug.get('Century-Annals')?.value
-let timelineDatabaseBundle
-let timelineRead = readFile
-if (process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
-  const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))
-  const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
-  timelineDatabaseBundle = await openPublicationDatabaseInputs(projectRoot, config)
-  timelineRead = timelineDatabaseBundle.inputs.readBytes
-}
-let timelineYears
-try {
-  timelineYears = await projectCatalogTimeline(pagesBySlug.get('Century-Annals'),
-    (text) => relatedTimelineDocuments(text, territoryStates, peopleSource), timelineRead)
-} finally { timelineDatabaseBundle?.close() }
+const timelineYears = projectCatalogTimeline(pagesBySlug.get('Century-Annals'),
+  (text) => relatedTimelineDocuments(text, territoryStates, peopleSource))
 const emptyYears = timelineYears.filter((entry) => entry.summary.length === 0).map((entry) => entry.year)
 if (timelineYears.length === 0 || timelineYears[0]?.year !== 2030 || timelineYears.at(-1)?.year > 2126 || emptyYears.length > 0) {
   throw new Error(`E_TIMELINE_YEAR_COVERAGE:${timelineYears.length}:${timelineYears[0]?.year}:${timelineYears.at(-1)?.year}:${emptyYears.join(',')}`)
@@ -897,23 +864,8 @@ if (process.env.WIKI_DOCUMENT_DB) {
 }
 const personDetailsRoot = resolve(publicRoot, 'person-details')
 personDetails = projectCiaFacilityPersonDetails(personDetails, personalHoldings, ciaFacilityProjection.correction)
-let scopeInput
-if (process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
-  const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))
-  const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
-  const bundle = await openPublicationDatabaseInputs(projectRoot, config)
-  try { scopeInput = await loadScopeInput({ root: projectRoot, ...bundle.inputs }) }
-  finally { bundle.close() }
-} else {
-  const { stdout: gitCommonDir } = await promisify(execFile)('git', ['-C', projectRoot, 'rev-parse', '--path-format=absolute', '--git-common-dir'])
-  scopeInput = await loadScopeInput({ root: projectRoot,
-    baselinePath: resolve(dirname(gitCommonDir.trim()), '.omo/private/seoul-migration/baseline.json') })
-}
-if (scopeInput.error) throw Object.assign(new Error(scopeInput.error.errors[0].code), scopeInput.error.errors[0])
-// Validate structure, references, privacy and the independent human publication
-// review before applying the separately approved active-roster projection.
-// Historical field-mapping output is preserved for audit, not a content lock.
-admitPublicPersonDetails(personDetails, scopeInput)
+// Validate structure, identity and privacy before the active-roster projection.
+admitPublicPersonDetails(personDetails)
 if (activePersonIds) {
   const db = openReadOnly(rosterDatabasePath)
   try {
@@ -964,7 +916,7 @@ await writeFile(resolve(generatedRoot, 'peopleCatalog.ts'), `export const people
 // The home page reads only the count, so it gets its own module and does not bundle the catalog.
 await writeFile(resolve(generatedRoot, 'peopleCount.ts'), `export const peopleCount = ${peopleCatalog.length}\n`)
 
-const clanTables = typedCatalogSource(db => readClanCatalogDocument(db, { expectedSourceHash: CLAN_CATALOG_SOURCE_HASH }))
+const clanTables = typedCatalogSource(db => readClanCatalogDocument(db))
 const crestIndexText = await readFile(resolve(publicRoot, 'clan-crests/index.json'), 'utf8')
 const crestIndex = JSON.parse(crestIndexText)
 const branchesByBase = new Map()

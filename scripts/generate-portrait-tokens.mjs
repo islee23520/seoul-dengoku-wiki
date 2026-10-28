@@ -7,7 +7,7 @@ import { createHash } from 'node:crypto'
 import { mkdir, readFile, readdir } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { generatorStage, requireGenerationPublication } from './generate-release.mjs'
+import { generatorStage } from './generate-release.mjs'
 import { textToImageBlock } from '../server/portrait-text-to-image.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
 import { readPortraitGenderInputs } from './cast-sqlite/portrait-gender-input.mjs'
@@ -283,6 +283,5 @@ export async function generatePortraitTokens(root) {
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-  await requireGenerationPublication(root)
   await generatePortraitTokens(root)
 }

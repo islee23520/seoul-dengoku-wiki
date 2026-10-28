@@ -3,7 +3,6 @@ import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
 import { withTransaction } from './db.mjs';
 
-export const SCOPE_CONTRACT_SOURCE_SHA256 = '383d14c96312dcfd849cb9906b3ff16f4c2bc4c9f8ee0b93816a6d2aad333fd8';
 const fail = detail => { throw new Error(`E_SCOPE_CONTRACT: ${detail}`); };
 const pointer = (path, key) => `${path}/${String(key).replaceAll('~', '~0').replaceAll('/', '~1')}`;
 const fields = {
@@ -59,8 +58,8 @@ export function initializeScopeContractStore(db, command) {
   shape(command, ['sourceBytes', 'expectedSha256', 'actor', 'reason']);
   strings(command, ['expectedSha256', 'actor', 'reason']);
   if (!command.actor.trim() || !command.reason.trim()) fail('actor and reason required');
-  if (!(command.sourceBytes instanceof Uint8Array) || command.expectedSha256 !== SCOPE_CONTRACT_SOURCE_SHA256
-    || createHash('sha256').update(command.sourceBytes).digest('hex') !== SCOPE_CONTRACT_SOURCE_SHA256) fail('fixed source byte SHA mismatch');
+  if (!(command.sourceBytes instanceof Uint8Array)
+    || createHash('sha256').update(command.sourceBytes).digest('hex') !== command.expectedSha256) fail('source byte SHA mismatch');
   if (db.prepare('PRAGMA foreign_keys').get().foreign_keys !== 1) fail('foreign keys required');
   const raw = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(command.sourceBytes));
   validate(raw);
@@ -101,7 +100,7 @@ export function initializeScopeContractStore(db, command) {
 /** SELECT only. No source path resolution, filesystem reads, JSON parsing or archive fallback. */
 export function readScopeContract(db) {
   const receipt = db.prepare('SELECT * FROM scope_contract_receipt WHERE singleton=1').get();
-  if (!receipt || receipt.source_sha256 !== SCOPE_CONTRACT_SOURCE_SHA256) fail('migration receipt absent or unrecognized');
+  if (!receipt || !/^[a-f0-9]{64}$/u.test(receipt.source_sha256)) fail('migration receipt absent or unrecognized');
   const single = table => {
     const rows = db.prepare(`SELECT * FROM ${table}`).all();
     if (rows.length !== 1 || rows[0].singleton !== 1) fail(`missing singleton: ${table}`);

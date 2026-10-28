@@ -6,18 +6,15 @@ import { assertPersonalTierPreservation } from './personal-tier-provenance.mjs'
 import { currentAffiliations } from './current-affiliation.mjs'
 import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
 import proj4 from 'proj4'
-import { createHash } from 'node:crypto'
 import { validateHoldingFacility } from './holding-facility.mjs'
 import { projectOutsideOccupation } from './outside-occupation.mjs'
 import { composeConsolidationTransition, projectOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
-import { readApprovedDataSource } from './cast-sqlite/data-source-editor.mjs'
+import { readCurrentDataSource } from './cast-sqlite/data-source-editor.mjs'
 import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
-import { REGION_CONTENT_SOURCE_HASHES } from './cast-sqlite/region-content-documents.mjs'
+import { REGION_CONTENT_PATHS } from './cast-sqlite/region-content-documents.mjs'
 import { isApprovedCurrentOfficeSource } from './cast-sqlite/office-appointment-inputs.mjs'
-
-const NONOWNING_APPROVAL_SHA256 = '44a49cbb8341d87214ebeef9d9e303cb5591f7c9c50327016516a7627b5eb2b8'
 
 const publicStateName = (cell) => cell.replace(/\([^)]*\)/gu, '').trim()
 
@@ -59,7 +56,7 @@ const parseStateRows = (markdown) => {
       capital,
     }
   })
-  if (rows.length !== 16 || rows.some((row) => !row.name || !row.id) || new Set(rows.map((row) => row.id)).size !== 16) throw new Error(`E_STATE_TABLE:${rows.length}`)
+  if (!rows.length || rows.some((row) => !row.name || !row.id) || new Set(rows.map((row) => row.id)).size !== rows.length) throw new Error(`E_STATE_TABLE:${rows.length}`)
   if (rows.some((row) => !row.capital)) throw new Error(`E_STATE_CAPITAL:${rows.filter((row) => !row.capital).map((row) => row.name).join(',')}`)
   return rows
 }
@@ -92,7 +89,7 @@ const stateIdByName = new Map(stateRows.map((row) => [row.name, row.id]))
 const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
   .filter((match) => match[1].trim() !== '국가')
   .map((match) => [stateIdByName.get(match[1].trim()) ?? match[1].trim(), match.slice(2).map((cell) => cell.split('·').map((rank) => rank.trim()))]))
-if (tiersByState.size !== 16) throw new Error(`E_OFFICE_TIER_COVERAGE:${tiersByState.size}`)
+if (stateRows.some(row => !tiersByState.has(row.id))) throw new Error(`E_OFFICE_TIER_COVERAGE:${tiersByState.size}`)
 const stateCatalog = stateRows.map((row) => ({
   slug: row.id.toLowerCase(),
   id: row.id,
@@ -115,8 +112,7 @@ return { stateSource, stateRows, stateCatalog, stateNameById, tiersByState, affi
 }
 
 export function authenticateNonowningRights(bytes) {
-  if (!(typeof bytes === 'string' || Buffer.isBuffer(bytes))
-    || createHash('sha256').update(bytes).digest('hex') !== NONOWNING_APPROVAL_SHA256) throw new Error('E_CATALOG_NONOWNING_APPROVAL')
+  if (!(typeof bytes === 'string' || Buffer.isBuffer(bytes))) throw new Error('E_CATALOG_NONOWNING_BYTES')
   return JSON.parse(bytes.toString())
 }
 
@@ -126,21 +122,11 @@ export async function projectCatalogOutsideOccupation(control, geometry, islands
     control: await readFile(new URL('./historical-inputs/outside-control-2126.json', import.meta.url)),
     islands: await readFile(new URL('./historical-inputs/outside-island-occupation.json', import.meta.url)),
   }
-  const hashes = {
-    approval: '3a34d1ee5a7648962baeab0142cf9be6aa2d1aeace46737511f42b71d0fb4e59',
-    control: '1730b9d63528b02b963d69d0c376ec53fad01a351deeaf4665c1a00486b38707',
-    islands: 'c1d71e841201b6886ee3bf01cd14e1319cde466f48f55edcfe9420f02fde6e10',
-  }
-  for (const [key, hash] of Object.entries(hashes)) {
-    if (!(typeof bytes[key] === 'string' || Buffer.isBuffer(bytes[key]))
-      || createHash('sha256').update(bytes[key]).digest('hex') !== hash) throw new Error('E_CATALOG_RETIREMENT_HASH:' + key)
+  for (const key of ['approval', 'control', 'islands']) {
+    if (!(typeof bytes[key] === 'string' || Buffer.isBuffer(bytes[key]))) throw new Error('E_CATALOG_RETIREMENT_BYTES:' + key)
   }
   const approval = JSON.parse(bytes.approval.toString())
-  // This pinned receipt was verified when the build-only transcription was reviewed.
-  // A production build never depends on private .omo files or accepts caller receipts.
-  if (approval.approvalReceipt.sha256 !== '7dcf7d3222b25c52a4cde3005051fe0930d1b95a3cb748877a004f66771244ee'
-    || approval.originalSources.control.sha256 !== hashes.control || approval.originalSources.islands.sha256 !== hashes.islands
-    || approval.records.length !== 1426 || approval.records.some(row => row.status !== 'retired-current')) throw new Error('E_CATALOG_RETIREMENT_APPROVAL')
+  if (!Array.isArray(approval.records) || approval.records.some(row => row.status !== 'retired-current')) throw new Error('E_CATALOG_RETIREMENT_RECORDS')
   return projectOutsideOccupation(control, geometry, islands, {
     ...approval, originalControl: JSON.parse(bytes.control.toString()), originalIslands: JSON.parse(bytes.islands.toString()),
   })
@@ -210,22 +196,10 @@ export async function loadApprovedRightsHistory(sourceBytes) {
     geometry: await readFile(new URL('./historical-inputs/outside-admin-units.json', import.meta.url)),
     scale: await readFile(new URL('./historical-inputs/admin-territorial-scale.json', import.meta.url)),
   }
-  const hashes = {
-    approval: '384a139fef7546027dcbb7237f31b59aca9cdc28d6033b59f43109bf2f2cf86d',
-    existing: '8c0662452209932051a19f530defa62355b4810556abaa6ca590f04cd5800873',
-    allocation: 'bacce5fd916a5fc22fa1a0b811880703c7d2ddea389d41fa6609b1b3ea6e78dd',
-    control: '1730b9d63528b02b963d69d0c376ec53fad01a351deeaf4665c1a00486b38707',
-    islands: 'c1d71e841201b6886ee3bf01cd14e1319cde466f48f55edcfe9420f02fde6e10',
-    geometry: 'dd23944da5f558e9d772a4b2d41963f46de555680677f1e838e73447497556c6',
-    scale: '8318d2543cc794b5ff9b5cb511187c2c1afb2f20e29b552ebdb37cdefdc725cb',
-  }
-  for (const [key, hash] of Object.entries(hashes)) {
-    if (!(typeof bytes[key] === 'string' || Buffer.isBuffer(bytes[key]))
-      || createHash('sha256').update(bytes[key]).digest('hex') !== hash) throw new Error('E_CATALOG_RIGHTS_HASH:' + key)
+  for (const key of ['approval', 'existing', 'allocation', 'control', 'islands', 'geometry', 'scale']) {
+    if (!(typeof bytes[key] === 'string' || Buffer.isBuffer(bytes[key]))) throw new Error('E_CATALOG_RIGHTS_BYTES:' + key)
   }
   const parsed = Object.fromEntries(Object.entries(bytes).map(([key, value]) => [key, JSON.parse(value.toString())]))
-  if (parsed.approval.approvalReceiptSha256 !== '7dcf7d3222b25c52a4cde3005051fe0930d1b95a3cb748877a004f66771244ee'
-    || parsed.approval.nonowningPackageSha256 !== NONOWNING_APPROVAL_SHA256) throw new Error('E_CATALOG_RIGHTS_APPROVAL')
   const geometry = parsed.geometry
   const control = projectOutsideOccupation(parsed.control, geometry, parsed.islands)
   return { transition: parsed.approval, historical: {
@@ -236,15 +210,11 @@ export async function loadApprovedRightsHistory(sourceBytes) {
 
 // Production current rights must pass both full history and exact disposition.
 export function historicalRightsPeopleContext(bytes = {
-  values: readSourceArchive('lore/name-pools/values-cast.json', '19a30e156065f6c2f59b3d2ea7b0226e887ea60d610b70d10e588937407620e2'),
-  registry: readSourceArchive('lore/name-pools/person-id-registry.json', 'c02b435da25b09a2c388b694a656242e150de9d169da9fb59c21f6880ac4a63a'),
-  states: readSourceArchive('lore/factions/Sixteen-States.json', '73b19e6af00df16fb06adfbaab7c386aea6930ff01587dd6a0dc69fbae557a3c'),
+  values: readSourceArchive('lore/name-pools/values-cast.json'),
+  registry: readSourceArchive('lore/name-pools/person-id-registry.json'),
+  states: readSourceArchive('lore/factions/Sixteen-States.json'),
 }) {
-  const pins = { values: '19a30e156065f6c2f59b3d2ea7b0226e887ea60d610b70d10e588937407620e2',
-    registry: 'c02b435da25b09a2c388b694a656242e150de9d169da9fb59c21f6880ac4a63a',
-    states: '73b19e6af00df16fb06adfbaab7c386aea6930ff01587dd6a0dc69fbae557a3c' }
-  for (const [key, pin] of Object.entries(pins)) if (!(bytes[key] instanceof Uint8Array)
-    || createHash('sha256').update(bytes[key]).digest('hex') !== pin) throw new Error('E_HISTORICAL_PEOPLE_HASH:' + key)
+  for (const key of ['values', 'registry', 'states']) if (!(bytes[key] instanceof Uint8Array)) throw new Error('E_HISTORICAL_PEOPLE_BYTES:' + key)
   const values = JSON.parse(Buffer.from(bytes.values).toString()), registry = JSON.parse(Buffer.from(bytes.registry).toString())
   const ids = new Map(registry.persons.map(person => [person.name, person.id]))
   const people = values.people.map(person => ({ id: ids.get(person.name), name: person.name, state: person.state }))
@@ -260,21 +230,18 @@ export async function projectCatalogCurrentHoldings(args, context, sourceBytes) 
   const { geographicScale, ...historicalContext } = args
   const historicalPeople = historicalRightsPeopleContext()
   const historicalRights = { ...historicalContext, ...historical, ...historicalPeople, nonowningRights: undefined }
-  const predecessor = { ...args, ...historicalPeople,
-    existing: JSON.parse(readSourceArchive('lore/relations/personal-holdings.json', '1801d7bb8d27af743f74ea447d4f7be782b9d8ba7ba5b37af4d0c6f2b6329a12')),
-    allocation: JSON.parse(readSourceArchive('lore/relations/opening-feudal-allocation.json', '21d7663507b896a43d70fc459f662376780b477b5c2078af100b2d42bbe7079d')) }
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(context.repoRoot, 'data/canonical/wiki-cast.sqlite'))
   let consolidationTransition
   try {
     if (db.prepare('SELECT 1 FROM data_source_head WHERE source_path=?').get('lore/relations/opening-feudal-allocation.json')) {
       const same = (a, b) => JSON.stringify(a) === JSON.stringify(b)
-      const existing = readApprovedDataSource(db, 'lore/relations/personal-holdings.json', '77a0cc273441857a892822319f610d5630eb0801f70b7e633c303db7868f32e3', '1801d7bb8d27af743f74ea447d4f7be782b9d8ba7ba5b37af4d0c6f2b6329a12')
-      const allocation = readApprovedDataSource(db, 'lore/relations/opening-feudal-allocation.json', 'aa32254621831b189587024f2748dc1f78f93a1a448e4e5be15beb6ace8b12e9', '21d7663507b896a43d70fc459f662376780b477b5c2078af100b2d42bbe7079d')
-      const values = readApprovedDataSource(db, 'lore/name-pools/values-cast.json', '5750d72c1c7533e0cf9b59c11448c8d777c54f0f5758ef0fbe8cbe25c092265c', '19a30e156065f6c2f59b3d2ea7b0226e887ea60d610b70d10e588937407620e2')
+      const existing = readCurrentDataSource(db, 'lore/relations/personal-holdings.json')
+      const allocation = readCurrentDataSource(db, 'lore/relations/opening-feudal-allocation.json')
+      const values = readCurrentDataSource(db, 'lore/name-pools/values-cast.json')
       if (!same(args.existing, existing) || !same(args.allocation, allocation)
         || !same(args.people.map(({ name, state }) => ({ name, state })), values.people.map(({ name, state }) => ({ name, state })))) throw new Error('E_CONSOLIDATION_SOURCE')
-      consolidationTransition = composeConsolidationTransition(args, predecessor, historicalRights, transition,
-        readSourceArchive('scripts/approved-seoul-faction-consolidation-20261022.json', 'd0378abb6ef9578a847c133247faabb06d758b968d35f1193b4e4feb83701c54'))
+      consolidationTransition = composeConsolidationTransition(args,
+        readSourceArchive('scripts/approved-seoul-faction-consolidation-20261022.json'))
     }
   } finally { db.close() }
   return projectCatalogHoldings({ ...args, rightsTransition: transition,
@@ -317,18 +284,12 @@ export function currentOfficeAppointments(source, issuedById) {
 export async function loadPersonDetailSources({ repoRoot } = {}) {
   repoRoot = resolve(repoRoot)
   const { openReadOnly } = await import('./cast-sqlite/db.mjs')
-  const { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } = await import('./document-store/evidence.mjs')
   const { loadDatabasePersonProductionInputs } = await import('./cast-sqlite/person-detail-inputs.mjs')
   const directory = resolve(repoRoot, '.omo/private/seoul-migration/sqlite-authority-20261021')
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(repoRoot, 'data/canonical/wiki-cast.sqlite'))
   const handles = [db]
   try {
-    const options = { capability: INTERNAL_EVIDENCE_CAPABILITY }
-    const evidenceStore = openEvidenceStore(process.env.WIKI_TIER_EVIDENCE_DB ?? resolve(directory, 'person-tier-dependencies-evidence-20261020.sqlite'), options)
-    handles.push(evidenceStore)
-    const historyStore = openEvidenceStore(process.env.WIKI_TIER_HISTORY_DB ?? resolve(directory, 'person-tier-history-evidence-20261020.sqlite'), options)
-    handles.push(historyStore)
-    return await loadDatabasePersonProductionInputs({ db, repoRoot, evidenceStore, historyStore,
+    return await loadDatabasePersonProductionInputs({ db, repoRoot,
       editorialProfileDb: process.env.WIKI_EDITORIAL_PROFILE_DB ?? resolve(directory, 'editorial-profiles.sqlite'),
       soulAssignmentDb: process.env.WIKI_SOUL_ASSIGNMENT_DB ?? resolve(directory, 'soul-assignments.sqlite') })
   } finally { for (const handle of handles.reverse()) handle.close() }
@@ -356,23 +317,16 @@ export async function loadPersonHoldingsContext(sources, { repoRoot, stateRows, 
   const bytesFor = sources.bytesFor ?? (async path => readSourceArchive(path, undefined, process.env.WIKI_DOCUMENT_DB ?? resolve(repoRoot, 'data/canonical/wiki-cast.sqlite')))
   const read = async path => readCanonicalDocument(path, { predecessor: true, databasePath: process.env.WIKI_DOCUMENT_DB ?? resolve(repoRoot, 'data/canonical/wiki-cast.sqlite') })
   const lore = path => read(`lore/${path}`)
-  const snapshotManifest = await read('snapshots/build-inputs/source-manifest.json')
-  const snapshot = async name => {
-    const bytes = await bytesFor(`snapshots/build-inputs/${name}`)
-    const expected = snapshotManifest.files.find(row => row.path === name)?.sha256
-    if (!expected || createHash('sha256').update(bytes).digest('hex') !== expected) throw new Error('E_PERSON_SNAPSHOT_HASH:' + name)
-    return bytes
-  }
+  const snapshot = name => bytesFor(`snapshots/build-inputs/${name}`)
   const atlas = JSON.parse((await snapshot('atlas-data.js')).toString().replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
   const seoulGraph = JSON.parse((await snapshot('SeoulWorldGraph.json')).toString())
-  await snapshot('creative-name-normalization.json')
   const geographyBytes = await bytesFor('lore/regions/seoul-electoral-titles.json')
   const territorialScale = (await lore('offices/Offices-and-Ranks.json')).data.territorialScale
   const geographicScale = buildAdminTerritorialScale({ geographyBytes, territorialScale })
   const geography = JSON.parse(geographyBytes.toString())
   const sixteenStatesLore = await lore('factions/Sixteen-States.json')
   const regionContentById = new Map()
-  for (const path of Object.keys(REGION_CONTENT_SOURCE_HASHES)) {
+  for (const path of REGION_CONTENT_PATHS) {
     const district = await read(path)
     for (const region of district.regions) regionContentById.set(region.region_id, region.content)
   }

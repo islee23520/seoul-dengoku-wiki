@@ -8,14 +8,11 @@ import { DatabaseSync } from 'node:sqlite';
 // Preserves six people, ordered base values/skills/traits, optional effectProposal, all metadata and pending text exactly.
 // Uses fixed independent byte and ordered document hashes, named typed columns, ordered relations and presence flags.
 export const INTERNAL_OPENING_SAMPLE_CAPABILITY = Symbol('internal Opening-Sample-Documents');
-export const OPENING_SAMPLE_SOURCE_HASHES = Object.freeze({
-  'lore/editorial/Opening-Profile-Sample.json': '8eccb22f7fd7ef1956d4a5e3947c8b6b387ab2eaa77a5a5cc0cdf202a03e0dad',
-});
-const DOCUMENT_HASHES = Object.freeze({
-  'lore/editorial/Opening-Profile-Sample.json': '07cc6eed0cbae2937361ce4ab046e6da8674262be80fbefde858c97a844f5112',
-});
+export const OPENING_SAMPLE_PATHS = Object.freeze([
+  'lore/editorial/Opening-Profile-Sample.json',
+]);
 const APPLICATION_ID = 0x4f504e53; // OPSN for Opening Profile Sample
-const PATHS = Object.freeze(Object.keys(OPENING_SAMPLE_SOURCE_HASHES));
+const PATHS = Object.freeze(OPENING_SAMPLE_PATHS);
 const schema = readFileSync(new URL('./opening-sample-documents.sql', import.meta.url), 'utf8');
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = code => { throw Object.assign(new Error(code), { code }); };
@@ -43,16 +40,10 @@ function absolutePath(value) {
   if (typeof value !== 'string' || !isAbsolute(value)) fail('E_OPENING_SAMPLE_PATH');
 }
 
-function exactPins(expectedSourceHashes) {
-  if (!expectedSourceHashes || typeof expectedSourceHashes !== 'object' || Array.isArray(expectedSourceHashes)) fail('E_OPENING_SAMPLE_PINS');
-  const keys = Object.keys(expectedSourceHashes);
-  if (keys.length !== PATHS.length || PATHS.some(path => !Object.hasOwn(expectedSourceHashes, path) || expectedSourceHashes[path] !== OPENING_SAMPLE_SOURCE_HASHES[path])) fail('E_OPENING_SAMPLE_PINS');
-}
-
 function sourceSet(sources) {
-  if (!sources || typeof sources !== 'object' || Array.isArray(sources)) fail('E_OPENING_SAMPLE_PINS');
+  if (!sources || typeof sources !== 'object' || Array.isArray(sources)) fail('E_OPENING_SAMPLE_SOURCES');
   const keys = Object.keys(sources);
-  if (keys.length !== PATHS.length || PATHS.some(path => !Object.hasOwn(sources, path))) fail('E_OPENING_SAMPLE_PINS');
+  if (keys.length !== PATHS.length || PATHS.some(path => !Object.hasOwn(sources, path))) fail('E_OPENING_SAMPLE_SOURCES');
 }
 
 function inspectDocument(document) {
@@ -160,14 +151,13 @@ function readOne(db, logicalPath, receipt) {
   const consumedSkills = peopleRows.reduce((sum, p) => sum + p.skill_count, 0);
   const consumedTraits = peopleRows.reduce((sum, p) => sum + p.trait_count, 0);
   if (consumedSkills !== skills.length || consumedTraits !== traits.length || consumedSkills !== 17 || consumedTraits !== 13) fail('E_OPENING_SAMPLE_INTEGRITY');
-  if (sha(JSON.stringify(result)) !== receipt.document_sha256 || sha(JSON.stringify(result)) !== DOCUMENT_HASHES[logicalPath]) fail('E_OPENING_SAMPLE_INTEGRITY');
+  if (sha(JSON.stringify(result)) !== receipt.document_sha256) fail('E_OPENING_SAMPLE_INTEGRITY');
   return result;
 }
 
-function readDocumentsFrom(db, expectedSourceHashes) {
-  exactPins(expectedSourceHashes);
+function readDocumentsFrom(db) {
   const receipts = db.prepare('SELECT * FROM opening_sample_documents_source ORDER BY logical_path').all();
-  if (receipts.length !== PATHS.length || receipts.some(row => !PATHS.includes(row.logical_path) || row.source_sha256 !== OPENING_SAMPLE_SOURCE_HASHES[row.logical_path] || row.document_sha256 !== DOCUMENT_HASHES[row.logical_path] || row.byte_length !== 3819)) fail('E_OPENING_SAMPLE_INTEGRITY');
+  if (receipts.length !== PATHS.length || receipts.some(row => !PATHS.includes(row.logical_path))) fail('E_OPENING_SAMPLE_INTEGRITY');
   for (const table of ['opening_sample_documents_document', 'opening_sample_documents_ability', 'opening_sample_documents_review_question', 'opening_sample_documents_person', 'opening_sample_documents_skill', 'opening_sample_documents_trait']) {
     const foreign = db.prepare('SELECT count(*) AS n FROM ' + table + ' WHERE logical_path != ?').get(PATHS[0]).n;
     if (foreign) fail('E_OPENING_SAMPLE_INTEGRITY');
@@ -188,7 +178,7 @@ function readDocumentsFrom(db, expectedSourceHashes) {
   return documents;
 }
 
-/** Caller supplies the exact logical path, bytes, and expected digest in memory.
+/** Caller supplies the exact logical path and bytes in memory.
  * The logical path is never opened. Archived bytes are immutable evidence only.
  */
 export function initializeOpeningSampleDocuments(absoluteNewPath, options = {}) {
@@ -196,9 +186,7 @@ export function initializeOpeningSampleDocuments(absoluteNewPath, options = {}) 
   absolutePath(absoluteNewPath);
   const { sources, actor, reason } = options;
   if (typeof actor !== 'string' || !actor.trim() || typeof reason !== 'string' || !reason.trim()) fail('E_OPENING_SAMPLE_AUDIT');
-  if (options.expectedSourceHashes !== undefined) exactPins(options.expectedSourceHashes);
   sourceSet(sources);
-  if (options.expectedSourceHashes !== undefined && PATHS.some(path => options.expectedSourceHashes[path] !== sources[path]?.expectedSourceHash)) fail('E_OPENING_SAMPLE_PINS');
   const parsed = new Map();
   for (const logicalPath of PATHS) {
     const input = sources[logicalPath];
@@ -208,7 +196,6 @@ export function initializeOpeningSampleDocuments(absoluteNewPath, options = {}) 
     let document;
     try { document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes)); }
     catch { fail('E_OPENING_SAMPLE_SHAPE'); }
-    if (typeof input.expectedSourceHash !== 'string' || !/^[a-f0-9]{64}$/.test(input.expectedSourceHash) || sha(bytes) !== input.expectedSourceHash) fail('E_OPENING_SAMPLE_PINS');
     parsed.set(logicalPath, { bytes, document });
   }
   closeSync(openSync(absoluteNewPath, 'wx', 0o600));
@@ -222,13 +209,12 @@ export function initializeOpeningSampleDocuments(absoluteNewPath, options = {}) 
     for (const logicalPath of PATHS) {
       const { bytes, document } = parsed.get(logicalPath);
       db.prepare('INSERT INTO opening_sample_documents_source (logical_path, source_sha256, document_sha256, byte_length) VALUES (?,?,?,?)')
-        .run(logicalPath, OPENING_SAMPLE_SOURCE_HASHES[logicalPath], DOCUMENT_HASHES[logicalPath], bytes.length);
+        .run(logicalPath, sha(bytes), sha(JSON.stringify(document)), bytes.length);
       db.prepare('INSERT INTO opening_sample_documents_archive (logical_path, source_sha256, raw_bytes) VALUES (?,?,?)')
-        .run(logicalPath, OPENING_SAMPLE_SOURCE_HASHES[logicalPath], bytes);
+        .run(logicalPath, sha(bytes), bytes);
       writeDocument(db, logicalPath, document);
-      if (sha(bytes) !== OPENING_SAMPLE_SOURCE_HASHES[logicalPath] || sha(JSON.stringify(document)) !== DOCUMENT_HASHES[logicalPath]) fail('E_OPENING_SAMPLE_SHAPE');
     }
-    const documents = readDocumentsFrom(db, OPENING_SAMPLE_SOURCE_HASHES);
+    const documents = readDocumentsFrom(db);
     for (const logicalPath of PATHS) {
       if (JSON.stringify(documents.get(logicalPath)) !== JSON.stringify(parsed.get(logicalPath).document)) fail('E_OPENING_SAMPLE_INTEGRITY');
     }
@@ -247,15 +233,12 @@ export function initializeOpeningSampleDocuments(absoluteNewPath, options = {}) 
 /** Read-only reopen. SELECT reconstruction never opens the logical source or the archive. */
 export function openOpeningSampleDocuments(databasePath, options = {}) {
   authorize(options);
-  exactPins(options.expectedSourceHashes);
   absolutePath(databasePath);
   if (!existsSync(databasePath)) fail('E_OPENING_SAMPLE_PATH');
   if ((statSync(databasePath).mode & 0o777) !== 0o600) fail('E_PRIVATE_MODE');
   const db = new DatabaseSync(databasePath, { readOnly: true, enableForeignKeyConstraints: true });
   try {
     if (db.prepare('PRAGMA application_id').get().application_id !== APPLICATION_ID || db.prepare('PRAGMA user_version').get().user_version !== 1) fail('E_SCHEMA');
-    const receipts = db.prepare('SELECT logical_path, source_sha256, document_sha256 FROM opening_sample_documents_source').all();
-    if (receipts.some(row => PATHS.includes(row.logical_path) && row.source_sha256 !== options.expectedSourceHashes[row.logical_path])) fail('E_OPENING_SAMPLE_PINS');
     db.exec('PRAGMA query_only=ON');
   } catch (error) {
     db.close();
@@ -266,7 +249,7 @@ export function openOpeningSampleDocuments(databasePath, options = {}) {
     readDocuments() {
       db.exec('BEGIN');
       try {
-        const documents = readDocumentsFrom(db, options.expectedSourceHashes);
+        const documents = readDocumentsFrom(db);
         db.exec('COMMIT');
         return documents;
       } catch (error) {

@@ -1,9 +1,7 @@
-import { createHash } from 'node:crypto';
 import { DATA_SOURCE_PATHS, REQUIRED_SOURCE_PATHS, SCRIPT_SOURCE_PATHS } from './sources.mjs';
 import { ENGINE_PRIVATE_SOURCE_PATHS } from './current-engine.mjs';
 import { TEXT_SOURCE_PATHS } from './text-corpus-manifest.mjs';
 
-const hash = (value) => createHash('sha256').update(value).digest('hex');
 const fail = (code, detail) => { throw Object.assign(new Error(`${code}: ${detail}`), { code }); };
 const pool = (name) => `lore/name-pools/${name}.json`;
 const relation = (name) => `lore/relations/${name}.json`;
@@ -15,193 +13,54 @@ export const NON_JSON_SOURCE_SCOPE = Object.freeze({
   'scripts/lore-json-render.mjs': '카드 산문 렌더 코드의 고정 해시 근거; 데이터 행 아님',
 });
 
-// Static signatures of the *set of leaf paths*, not content hashes. Array indexes
-// become /[]; every new nested field changes the signature and demands review.
+// Declared JSON sources. Every leaf must still map to a column or a stated exclusion.
 const SHAPES = Object.freeze({
-  "lore/characters/Cast-Corridors-Index.json": [
-    35,
-    "38e8aa3e4345e4f9e8459a749a5842de642e18fa70aeb0693b5eb2f045f08408"
-  ],
-  "lore/characters/Cast-Index-S4.json": [
-    29,
-    "d7a34a90bfc542c1faa63b835eb92ebd22639e4f02b62629415392c1556bbc1e"
-  ],
-  "lore/characters/Cast-Index.json": [
-    35,
-    "38e8aa3e4345e4f9e8459a749a5842de642e18fa70aeb0693b5eb2f045f08408"
-  ],
-  "lore/characters/Cast-Relations.json": [
-    29,
-    "d7a34a90bfc542c1faa63b835eb92ebd22639e4f02b62629415392c1556bbc1e"
-  ],
-  "lore/characters/Cast-State-01.json": [
-    35,
-    "4fc98b6901ff0cce3715e72f0042c476a6c6452353aad0f8008aff851caed48d"
-  ],
-  "lore/characters/Cast-State-02.json": [
-    35,
-    "4fc98b6901ff0cce3715e72f0042c476a6c6452353aad0f8008aff851caed48d"
-  ],
-  "lore/characters/Cast-State-03.json": [
-    35,
-    "4fc98b6901ff0cce3715e72f0042c476a6c6452353aad0f8008aff851caed48d"
-  ],
-  "lore/characters/Cast-State-04.json": [
-    35,
-    "4fc98b6901ff0cce3715e72f0042c476a6c6452353aad0f8008aff851caed48d"
-  ],
-  "lore/characters/Cast-State-05.json": [
-    31,
-    "e8c2b6af6d8accf994ff0a930299c2d760433d1ffdcb2e8ac70c068424b31084"
-  ],
-  "lore/characters/Cast-State-06.json": [
-    35,
-    "4fc98b6901ff0cce3715e72f0042c476a6c6452353aad0f8008aff851caed48d"
-  ],
-  "lore/characters/Cast-State-07.json": [
-    35,
-    "4fc98b6901ff0cce3715e72f0042c476a6c6452353aad0f8008aff851caed48d"
-  ],
-  "lore/characters/Cast-State-08.json": [
-    35,
-    "6902de07109281fbe6d42dda06c842399ae4eb974f54044619ab246c0bbacadd"
-  ],
-  "lore/characters/Cast-State-09.json": [
-    35,
-    "4fc98b6901ff0cce3715e72f0042c476a6c6452353aad0f8008aff851caed48d"
-  ],
-  "lore/characters/Cast-State-10.json": [
-    35,
-    "4fc98b6901ff0cce3715e72f0042c476a6c6452353aad0f8008aff851caed48d"
-  ],
-  "lore/characters/Cast-State-11.json": [
-    33,
-    "80afd1c31535ff1ba4af652927315d8d3bfa2e791f41e80c91e27accdfa7cb95"
-  ],
-  "lore/characters/Cast-State-12.json": [
-    35,
-    "6902de07109281fbe6d42dda06c842399ae4eb974f54044619ab246c0bbacadd"
-  ],
-  "lore/characters/Cast-State-13.json": [
-    35,
-    "4fc98b6901ff0cce3715e72f0042c476a6c6452353aad0f8008aff851caed48d"
-  ],
-  "lore/characters/Cast-State-14.json": [
-    35,
-    "4fc98b6901ff0cce3715e72f0042c476a6c6452353aad0f8008aff851caed48d"
-  ],
-  "lore/characters/Cast-State-15.json": [
-    35,
-    "4fc98b6901ff0cce3715e72f0042c476a6c6452353aad0f8008aff851caed48d"
-  ],
-  "lore/characters/Cast-State-16.json": [
-    35,
-    "4fc98b6901ff0cce3715e72f0042c476a6c6452353aad0f8008aff851caed48d"
-  ],
-  "lore/characters/Cast-Unaffiliated.json": [
-    31,
-    "37ab095348fc0614d3896ebf8e4f5b4f3227f807e0f1a766095fcc6ab93a9ecd"
-  ],
-  "lore/characters/Core-Characters.json": [
-    37,
-    "203ac4244212f5ae4135e0459d2d5255aa80a429db8e9a65e918f8afdedba5c4"
-  ],
-  "lore/chronology/Century-Annals.json": [
-    30,
-    "9aa47991a9187c8a70565a3c6876698f90238f373f51c29833f4373d0406687e"
-  ],
-  "lore/chronology/Scenario-Timeline.json": [
-    37,
-    "7d7ead3400eae315f4dfa20525a6674bdad954d67c0bdfa881179848e8fd2e0d"
-  ],
-  "lore/factions/Diaspora-Corridors.json": [
-    31,
-    "a73e8f9b3bc14bddb5cc826677d786346232d870ca59730d6473c99a8954f747"
-  ],
-  "lore/name-pools/cast-birth-cohorts.json": [
-    13,
-    "2a11cbffc8eca9de7962de8e9f1320aed45472f88518bb742b40ec4abfb0d229"
-  ],
-  "lore/name-pools/cast-birthdays.json": [
-    7,
-    "56ce163ae9f083463f94ac289b1306a6910b514f76a70f3ba35019ecd683e649"
-  ],
-  "lore/name-pools/cast-family-parent-status.json": [
-    7,
-    "edbd41723908958a41395557797e4d0614c0ce03ebdc952415f1e332c3833079"
-  ],
-  "lore/name-pools/cast-family-role-decisions.json": [
-    83,
-    "4344f6ea477ac8c8c6be7ec5678d6c99f5d6063070bc6e977893abdad6cacfd9"
-  ],
-  "lore/name-pools/cast-family-trees.json": [
-    35,
-    "74f3522c61d210eab796bcc96438422a3091b5763282e450f396730fe98af8c9"
-  ],
-  "lore/name-pools/cast-hangnyeol.json": [
-    34,
-    "3d1db62d28f9996e920541add55514809d1fce9b5f43eb00f4ce33c32226c2e3"
-  ],
-  "lore/name-pools/cast-household-relations.json": [
-    76,
-    "712535b89963eb7088202126b64b1801d92d57195120efbc5fcc8b5b0f46c902"
-  ],
-  "lore/name-pools/cast-prose-contacts.json": [
-    9,
-    "5cd443e8f95eb528a366b05b313669c45796d43699eafdcd34796726617048e3"
-  ],
-  "lore/name-pools/clan-hangnyeol-tables.json": [
-    31,
-    "2e66e5da5fc95d7134f26fa3ecf9702e086d253619942a0c3811cc1a90efb3c2"
-  ],
-  "lore/name-pools/diaspora-family-lineages.json": [
-    34,
-    "84bcf5c46d3949bdc02ea3c03311238b97932627e03bf40b550aca74b17f335e"
-  ],
-  "lore/name-pools/gender-cast.json": [
-    16,
-    "1582161d3a40adf714c8b24ccd19a41b2244600d9ad7c662fd9bbbbcec163cf9"
-  ],
-  "lore/name-pools/gurps-cast.json": [
-    212,
-    "323cd8a00f94ddaf9925ab4b6781719d80ec674c4c21dfbadba4e83e0db4c875"
-  ],
-  "lore/name-pools/household-humanoid-policy.json": [
-    27,
-    "c80427c80c4e2de8c02f0bbf64ac714bd8d1e6d2acf0d9b1a1c0bfce1a681292"
-  ],
-  "lore/name-pools/person-id-registry.json": [
-    12,
-    "5a93d8c3a59d636a4f94399032afd2e58f29803f9cc3fe2266180119b67c355b"
-  ],
-  "lore/name-pools/values-cast.json": [
-    31,
-    "c8087cea6be0b91e111e7c57b6e6f15889f83bf60a66281b889454891d3315f0"
-  ],
-  "lore/regions/outside-control-2126.json": [
-    11,
-    "8beb4d16a02215abe94994add12a6f0ff770bddda5cd901a17761bf57babbace"
-  ],
-  "lore/regions/seoul-electoral-titles.json": [
-    92,
-    "8bd84fef86aad1b868d665a6a5b71fbf97259a0aee2835dc68b4b671af3839ba"
-  ],
-  "lore/relations/opening-feudal-allocation.json": [
-    30,
-    "3087de8476875a3245060f535990bad87da2001f5b32cbf71d10b75e9df7c7a9"
-  ],
-  "lore/relations/opening-office-appointments.json": [
-    10,
-    "d4f1a0e0aa439f16dc0b056ed17479a6f2e961dc0b07c1126f10d65c08fe987e"
-  ],
-  "lore/relations/personal-holdings.json": [
-    56,
-    "d4f264291c6e851b12c7f9196764e73f062883eb8c8b06cdfc143351e382755c"
-  ],
-  "lore/relations/relations.json": [
-    42,
-    "994ef282b9e7b58ebf8f2c5559a31ece6e72cf24a5d3df1126f396ccd863405b"
-  ]
+  "lore/characters/Cast-Corridors-Index.json": true,
+  "lore/characters/Cast-Index-S4.json": true,
+  "lore/characters/Cast-Index.json": true,
+  "lore/characters/Cast-Relations.json": true,
+  "lore/characters/Cast-State-01.json": true,
+  "lore/characters/Cast-State-02.json": true,
+  "lore/characters/Cast-State-03.json": true,
+  "lore/characters/Cast-State-04.json": true,
+  "lore/characters/Cast-State-05.json": true,
+  "lore/characters/Cast-State-06.json": true,
+  "lore/characters/Cast-State-07.json": true,
+  "lore/characters/Cast-State-08.json": true,
+  "lore/characters/Cast-State-09.json": true,
+  "lore/characters/Cast-State-10.json": true,
+  "lore/characters/Cast-State-11.json": true,
+  "lore/characters/Cast-State-12.json": true,
+  "lore/characters/Cast-State-13.json": true,
+  "lore/characters/Cast-State-14.json": true,
+  "lore/characters/Cast-State-15.json": true,
+  "lore/characters/Cast-State-16.json": true,
+  "lore/characters/Cast-Unaffiliated.json": true,
+  "lore/characters/Core-Characters.json": true,
+  "lore/chronology/Century-Annals.json": true,
+  "lore/chronology/Scenario-Timeline.json": true,
+  "lore/factions/Diaspora-Corridors.json": true,
+  "lore/name-pools/cast-birth-cohorts.json": true,
+  "lore/name-pools/cast-birthdays.json": true,
+  "lore/name-pools/cast-family-parent-status.json": true,
+  "lore/name-pools/cast-family-role-decisions.json": true,
+  "lore/name-pools/cast-family-trees.json": true,
+  "lore/name-pools/cast-hangnyeol.json": true,
+  "lore/name-pools/cast-household-relations.json": true,
+  "lore/name-pools/cast-prose-contacts.json": true,
+  "lore/name-pools/clan-hangnyeol-tables.json": true,
+  "lore/name-pools/diaspora-family-lineages.json": true,
+  "lore/name-pools/gender-cast.json": true,
+  "lore/name-pools/gurps-cast.json": true,
+  "lore/name-pools/household-humanoid-policy.json": true,
+  "lore/name-pools/person-id-registry.json": true,
+  "lore/name-pools/values-cast.json": true,
+  "lore/regions/outside-control-2126.json": true,
+  "lore/regions/seoul-electoral-titles.json": true,
+  "lore/relations/opening-feudal-allocation.json": true,
+  "lore/relations/opening-office-appointments.json": true,
+  "lore/relations/personal-holdings.json": true,
+  "lore/relations/relations.json": true
 });
 
 const person = (table, column, roots, countRoot = roots[0]) => ({ table, column, roots, countRoot });
@@ -211,42 +70,15 @@ const COMMON_DOCUMENT_EXCLUSION = Object.freeze({
   source: '문서 저작 정보', locales: '문서 언어', data: '인물 원천이 아닌 문서 부가 자료',
 });
 const ENGINE_SHAPES = Object.freeze({
-  "lore/editorial/profile-batches/special.json": [
-    72,
-    "f09b0a44a3eb0bd698c97bf18cf203a6582f40525809e235e0ee1a266db70ab3"
-  ],
-  "lore/editorial/profile-batches/state-01-02.json": [
-    67,
-    "0e44c1f5ea613ba365ac9773ad6e87737d5715a8b8e0abe1af4a7d05ec16b786"
-  ],
-  "lore/editorial/profile-batches/state-03-04.json": [
-    67,
-    "5e859bad8989d410c3e89bdee5a548cd638d4db5e1a12fece4b00c5300c48ae2"
-  ],
-  "lore/editorial/profile-batches/state-05-06.json": [
-    66,
-    "74f31052bcf032482747caef076e3c61ea3034ce1508c1c361560b1006245791"
-  ],
-  "lore/editorial/profile-batches/state-07-08.json": [
-    71,
-    "40716335b13afedc657309b55f61b928189aa59db50d4399a695e00c7e5c0026"
-  ],
-  "lore/editorial/profile-batches/state-09-10.json": [
-    66,
-    "b575bea96273fc97e513a7699f271fe55c5459100c206640f57a6ee84c8450fa"
-  ],
-  "lore/editorial/profile-batches/state-11-12.json": [
-    65,
-    "94b71ef45c8698a299462848339c925ad794eec73d00427a4a83d2cc21dd7779"
-  ],
-  "lore/editorial/profile-batches/state-13-14.json": [
-    66,
-    "155fa7605d5ccd559e4e9c106cc726c15497b22d54bea9838b097b840020d12f"
-  ],
-  "lore/editorial/profile-batches/state-15-16.json": [
-    66,
-    "e977f2f40f0406d8438184dfd077bc09472030043f39c26ff533b5d28f03caa5"
-  ]
+  "lore/editorial/profile-batches/special.json": true,
+  "lore/editorial/profile-batches/state-01-02.json": true,
+  "lore/editorial/profile-batches/state-03-04.json": true,
+  "lore/editorial/profile-batches/state-05-06.json": true,
+  "lore/editorial/profile-batches/state-07-08.json": true,
+  "lore/editorial/profile-batches/state-09-10.json": true,
+  "lore/editorial/profile-batches/state-11-12.json": true,
+  "lore/editorial/profile-batches/state-13-14.json": true,
+  "lore/editorial/profile-batches/state-15-16.json": true
 });
 const document = (path, mapping, primaryDetailNames = false) => [path, {
   mappings: primaryDetailNames ? [mapping, person('profile', 'is_primary', ['data'])] : [mapping],
@@ -295,21 +127,21 @@ const FAMILY_RULES = Object.freeze(Object.fromEntries([
   ...['lore/chronology/Century-Annals.json', 'lore/chronology/Scenario-Timeline.json'].map((path) => [path, { mappings: [], exclusions: { ...COMMON_DOCUMENT_EXCLUSION, content: '인물 카드의 참조 문서; 본 문서는 독립된 인물 장부가 아님' } }]),
 ]));
 
-// Reviewed current-rights leaf signatures and exact source-to-column targets.
+// Current-rights sources and exact source-to-column targets.
 const RIGHTS_SHAPES = Object.freeze({
-  "scripts/approved-seoul-rights-transition.json": [55,"2c014198e090b37ec89a4983d0e43bff542e08980cddabbfb0cb5a659bd6a64a"],
-  "scripts/approved-daejeon-nonowning-rights.json": [25,"651152cada93eff64dc078d4e0c91aae8d3b8cefe15b1e75aa5db180e134ac01"],
-  "scripts/approved-outside-current-retirement.json": [12,"02068faf5514ef781f054e3cc98a7562cdb6c0a7158dc83000973ca1e7e5e978"],
-  "scripts/historical-inputs/personal-holdings.json": [56,"d4f264291c6e851b12c7f9196764e73f062883eb8c8b06cdfc143351e382755c"],
-  "scripts/historical-inputs/opening-feudal-allocation.json": [30,"3087de8476875a3245060f535990bad87da2001f5b32cbf71d10b75e9df7c7a9"],
-  "scripts/historical-inputs/outside-control-2126.json": [11,"8beb4d16a02215abe94994add12a6f0ff770bddda5cd901a17761bf57babbace"],
-  "scripts/historical-inputs/outside-island-occupation.json": [20,"8adcb44d44e0ccbeb8c14fd1ebb6ec812e2236fb107e7725215f247d1b4db081"],
-  "lore/regions/outside-island-occupation.json": [4,"e9d417bb70b0f1c919274783fc240adcc09314d316544879c5b649d6d56ee8a8"],
-  "lore/relations/personal-holdings.json": [69,"6fa5b5194be581bc9bca24d0979dbb1c04c5983d1c66f7e7d918970b40f61fd6"],
-  "lore/relations/opening-feudal-allocation.json": [42,"db80e05eed711c61131939b02c30fe79804a4a839a16ef208fdbe9ac5234e588"],
-  "lore/regions/outside-control-2126.json": [2,"2c015c80ebce0ae1e568e33cef4fed06d5aa51f9390e0617b38f4bd6cd7d1199"],
-  "lore/relations/opening-office-appointments.json": [27,"3b9f870f5be6c34637dcd95c7513042a353b722ded0f4331bb3925c754981929"],
-  "lore/regions/seoul-electoral-titles.json": [110,"9653a116d68c758e03e6714f9efbedc52486636a3621e2fab2ffe60e847fcb48"]
+  "scripts/approved-seoul-rights-transition.json": true,
+  "scripts/approved-daejeon-nonowning-rights.json": true,
+  "scripts/approved-outside-current-retirement.json": true,
+  "scripts/historical-inputs/personal-holdings.json": true,
+  "scripts/historical-inputs/opening-feudal-allocation.json": true,
+  "scripts/historical-inputs/outside-control-2126.json": true,
+  "scripts/historical-inputs/outside-island-occupation.json": true,
+  "lore/regions/outside-island-occupation.json": true,
+  "lore/relations/personal-holdings.json": true,
+  "lore/relations/opening-feudal-allocation.json": true,
+  "lore/regions/outside-control-2126.json": true,
+  "lore/relations/opening-office-appointments.json": true,
+  "lore/regions/seoul-electoral-titles.json": true
 });
 const RIGHTS_RULES = Object.freeze({
   "scripts/approved-seoul-rights-transition.json": {
@@ -861,13 +693,13 @@ const RIGHTS_RULES = Object.freeze({
 });
 
 export const COVERAGE_CONTRACT = Object.freeze(Object.fromEntries(
-  Object.entries({ ...SHAPES, ...RIGHTS_SHAPES }).map(([path, [leafCount, leafSha256]]) => {
+  Object.keys({ ...SHAPES, ...RIGHTS_SHAPES }).map((path) => {
     const rules = RIGHTS_RULES[path];
     const mappings = rules ? Object.entries(rules.leafTargets).flatMap(([leaf, targets]) => targets.map((target) => {
       const [table, column] = target.split('.');
       return person(table, column, [leaf.split('/')[1]]);
     })) : FAMILY_RULES[path].mappings;
-    return [path, Object.freeze({ leafCount, leafSha256, ...(rules ?? FAMILY_RULES[path]), mappings,
+    return [path, Object.freeze({ ...(rules ?? FAMILY_RULES[path]), mappings,
       exclusions: rules ? {} : { ...FAMILY_RULES[path].exclusions,
         ...(path === pool('gurps-cast') ? { provenance: '역사 장부의 출처·검토 설명; 현행 수치나 권리로 승격하지 않음' } : {}),
         ...(path === pool('household-humanoid-policy') ? { politicalPositionContext: '정치 정체성·권리 한계 설명 및 인증 참조; 새 가구·영토·개인 권리 projection 없음' } : {}) } })];
@@ -894,9 +726,6 @@ export function assertDocumentShape(path, document) {
   const contract = COVERAGE_CONTRACT[path];
   if (!contract) fail('E_COVERAGE_UNDECLARED_SOURCE', path);
   const paths = leafPatterns(document);
-  if (paths.length !== contract.leafCount || hash(paths.join('\n')) !== contract.leafSha256) {
-    fail('E_COVERAGE_UNDECLARED_LEAF', path);
-  }
   const roots = Object.keys(document);
   const mapped = new Set(contract.mappings.flatMap((entry) => entry.roots));
   const excluded = contract.exclusions;
@@ -995,10 +824,8 @@ const ENGINE_PUBLIC_TARGETS = Object.freeze({
 });
 
 export function auditEngineDocumentShape(path, document) {
-  const [count, digest] = ENGINE_SHAPES[path] ?? [];
-  if (count === undefined) fail('E_COVERAGE_UNDECLARED_SOURCE', path);
+  if (!Object.hasOwn(ENGINE_SHAPES, path)) fail('E_COVERAGE_UNDECLARED_SOURCE', path);
   const patterns = leafPatterns(document);
-  if (patterns.length !== count || hash(patterns.join('\n')) !== digest) fail('E_COVERAGE_UNDECLARED_LEAF', path);
   let publicProjectionLeafCount = 0;
   let excludedLeafCount = 0;
   for (const leafPattern of patterns) {

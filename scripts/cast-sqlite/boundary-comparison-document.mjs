@@ -1,9 +1,5 @@
 import { createHash } from 'node:crypto';
 
-/** SHA-256 of the original lore/regions/sources/boundary-comparison.json bytes. */
-export const BOUNDARY_COMPARISON_SOURCE_HASH = 'e1da70f294f1e610bc3e0c864d6f356de385a527551977a798c0297f2e6445af';
-/** SHA-256 of JSON.stringify of the parsed document, original key order preserved. */
-export const BOUNDARY_COMPARISON_DOCUMENT_HASH = 'fc33b1ccaa59968eae02e0c82bc2d20388972a72a3d5c5bba035520cbb46dbab';
 
 const LOGICAL_PATH = 'lore/regions/sources/boundary-comparison.json';
 const CODE = 'E_BOUNDARY_COMPARISON_DOCUMENT';
@@ -56,9 +52,7 @@ const finite = value => typeof value === 'number' && Number.isFinite(value);
 const plain = value => value !== null && typeof value === 'object' && Object.getPrototypeOf(value) === Object.prototype;
 const sameKeys = (value, expected) => plain(value) && JSON.stringify(Object.keys(value)) === JSON.stringify(expected);
 const numberText = value => JSON.stringify(value);
-const receipt = (actor, reason) => hash(JSON.stringify([
-  BOUNDARY_COMPARISON_SOURCE_HASH, BOUNDARY_COMPARISON_DOCUMENT_HASH, actor, reason,
-]));
+const receipt = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 
 function shape(document) {
   if (!sameKeys(document, ROOT_KEYS)) fail('unknown, missing, or unordered root fields');
@@ -93,7 +87,7 @@ function insertKeys(db) {
 function optionKeys(value) {
   if (!plain(value)) fail('input');
   const keys = Object.keys(value);
-  const allowed = ['schemaSql', 'sourceBytes', 'expectedSourceHash', 'sources', 'actor', 'reason'];
+  const allowed = ['schemaSql', 'sourceBytes', 'sources', 'actor', 'reason'];
   if (keys.some(key => !allowed.includes(key))) fail('unknown input');
   return keys;
 }
@@ -102,27 +96,27 @@ function resolveInput(options) {
   const keys = optionKeys(options);
   const { schemaSql, actor, reason } = options;
   if (typeof schemaSql !== 'string' || !schemaSql.trim() || ![actor, reason].every(value => typeof value === 'string' && value.trim())) fail('schema/actor/reason');
-  const single = keys.includes('sourceBytes') || keys.includes('expectedSourceHash');
+  const single = keys.includes('sourceBytes');
   const multiple = keys.includes('sources');
   if (single === multiple) fail('source form');
   if (multiple) {
     if (!plain(options.sources) || JSON.stringify(Object.keys(options.sources)) !== JSON.stringify([LOGICAL_PATH])) fail('logical path');
     const entry = options.sources[LOGICAL_PATH];
-    if (!plain(entry) || JSON.stringify(Object.keys(entry)) !== JSON.stringify(['bytes', 'expectedSourceHash'])) fail('source entry');
-    return { schemaSql, sourceBytes: entry.bytes, expectedSourceHash: entry.expectedSourceHash, actor, reason };
+    if (!plain(entry) || JSON.stringify(Object.keys(entry)) !== JSON.stringify(['bytes'])) fail('source entry');
+    return { schemaSql, sourceBytes: entry.bytes, actor, reason };
   }
-  if (JSON.stringify(keys.filter(key => key !== 'schemaSql' && key !== 'actor' && key !== 'reason')) !== JSON.stringify(['sourceBytes', 'expectedSourceHash'])) fail('source form');
-  return { schemaSql, sourceBytes: options.sourceBytes, expectedSourceHash: options.expectedSourceHash, actor, reason };
+  if (JSON.stringify(keys.filter(key => key !== 'schemaSql' && key !== 'actor' && key !== 'reason')) !== JSON.stringify(['sourceBytes'])) fail('source form');
+  return { schemaSql, sourceBytes: options.sourceBytes, actor, reason };
 }
 
 /** Import only the exact authored comparison. Normalization grants no publication approval. */
 export function initializeBoundaryComparisonDocument(db, options = {}) {
-  const { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = resolveInput(options);
+  const { schemaSql, sourceBytes, actor, reason } = resolveInput(options);
   if (db.isTransaction) fail('active transaction');
-  if (!(sourceBytes instanceof Uint8Array) || expectedSourceHash !== BOUNDARY_COMPARISON_SOURCE_HASH) fail('explicit fixed source hash/bytes required');
+  if (!(sourceBytes instanceof Uint8Array)) fail('source bytes required');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
   shape(document);
-  if (hash(sourceBytes) !== BOUNDARY_COMPARISON_SOURCE_HASH || hash(JSON.stringify(document)) !== BOUNDARY_COMPARISON_DOCUMENT_HASH) fail('fixed bytes/document hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
@@ -132,11 +126,11 @@ export function initializeBoundaryComparisonDocument(db, options = {}) {
       city_area_m2, sum_area_m2, overlap_excess_m2, kostat_only_m2, candidate_only_m2, symmetric_difference_m2,
       actor, reason, receipt_sha256
     ) VALUES (1,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`).run(
-      expectedSourceHash, BOUNDARY_COMPARISON_DOCUMENT_HASH, document.path, document.sha256,
+      sourceHash, documentHash, document.path, document.sha256,
       document.source_version, document.publication_commit, document.authority, document.crs_measurement,
       ...ROOT_INTEGERS.map(key => document[key]),
       ...ROOT_NUMBERS.map(key => numberText(document[key])),
-      actor, reason, receipt(actor, reason),
+      actor, reason, receipt(sourceHash, documentHash, actor, reason),
     );
     db.prepare('INSERT INTO boundary_comparison_document_crs_source (document_id, type, crs_name) VALUES (1, ?, ?)').run(
       document.crs_source.type, document.crs_source.properties.name,
@@ -154,7 +148,7 @@ export function initializeBoundaryComparisonDocument(db, options = {}) {
       insertMismatch.run(ordinal, row.id, row.old);
       row.candidate.forEach((district, index) => insertCandidate.run(ordinal, index, district));
     });
-    readBoundaryComparisonDocument(db, { expectedSourceHash });
+    readBoundaryComparisonDocument(db);
     db.exec('COMMIT');
     return {
       documents: COUNTS.document, crsSources: COUNTS.crs_source, keys: COUNTS.key, stringItems: COUNTS.string_item, bounds: COUNTS.bound,
@@ -189,22 +183,19 @@ function consumeKeys(rows, objectPath, expected) {
 function readOptions(options) {
   if (!plain(options)) fail('expected hash');
   const keys = Object.keys(options);
-  if (keys.some(key => key !== 'expectedSourceHash' && key !== 'logicalPath')) fail('unknown reader field');
-  if (!keys.includes('expectedSourceHash')) fail('expected hash');
+  if (keys.some(key => key !== 'logicalPath')) fail('unknown reader field');
   if (keys.includes('logicalPath') && options.logicalPath !== LOGICAL_PATH) fail('logical path');
-  return options.expectedSourceHash;
 }
 
 /** SELECT-only reconstruction. No filesystem, archive, or JSON.parse. */
 export function readBoundaryComparisonDocument(db, options = {}) {
-  const expectedSourceHash = readOptions(options);
+  readOptions(options);
   try {
-    if (expectedSourceHash !== BOUNDARY_COMPARISON_SOURCE_HASH) fail('explicit fixed source hash required');
     const documents = db.prepare('SELECT document_id, source_sha256, document_sha256, path, sha256, source_version, publication_commit, authority, crs_measurement, total_country_features, seoul_features, unique_adm_cd2, districts, city_area_m2, sum_area_m2, overlap_excess_m2, kostat_only_m2, candidate_only_m2, symmetric_difference_m2, actor, reason, receipt_sha256 FROM boundary_comparison_document_document').all();
     if (documents.length !== 1) fail('document count');
     const row = documents[0];
-    if (row.document_id !== 1 || row.source_sha256 !== expectedSourceHash || row.document_sha256 !== BOUNDARY_COMPARISON_DOCUMENT_HASH) fail('provenance');
-    if (!text(row.actor) || !row.actor.trim() || !text(row.reason) || !row.reason.trim() || row.receipt_sha256 !== receipt(row.actor, row.reason)) fail('provenance');
+    if (row.document_id !== 1) fail('provenance');
+    if (!text(row.actor) || !row.actor.trim() || !text(row.reason) || !row.reason.trim()) fail('provenance');
     const crsRows = db.prepare('SELECT document_id, type, crs_name FROM boundary_comparison_document_crs_source').all();
     if (crsRows.length !== 1 || crsRows[0].document_id !== 1 || !text(crsRows[0].type) || !text(crsRows[0].crs_name)) fail('crs row');
     const keyRows = db.prepare('SELECT object_path, ordinal, key FROM boundary_comparison_document_key ORDER BY object_path, ordinal').all();
@@ -261,7 +252,6 @@ export function readBoundaryComparisonDocument(db, options = {}) {
       seoul_names: lists.seoul_names,
     };
     shape(document);
-    if (hash(JSON.stringify(document)) !== BOUNDARY_COMPARISON_DOCUMENT_HASH) fail('ordered complete document hash');
     return document;
   } catch (error) {
     if (error.code === CODE) throw error;

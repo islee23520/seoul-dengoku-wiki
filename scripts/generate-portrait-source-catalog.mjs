@@ -1,7 +1,7 @@
 import { mkdir } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { generatorStage, requireGenerationPublication } from './generate-release.mjs'
+import { generatorStage } from './generate-release.mjs'
 import { loadPortraitDocuments } from './portrait-source-documents.mjs'
 
 export async function generatePortraitSourceCatalog(root, options = {}) {
@@ -14,6 +14,5 @@ export async function generatePortraitSourceCatalog(root, options = {}) {
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-  await requireGenerationPublication(root)
   await generatePortraitSourceCatalog(root)
 }

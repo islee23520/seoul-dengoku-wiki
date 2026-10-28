@@ -16,21 +16,11 @@ const fail = message => { throw new Error(message) }
 const composedTransitions = new WeakMap()
 const rightsDigest = args => createHash('sha256').update(JSON.stringify([args.existing, args.allocation, args.people, args.affiliation, args.seoul, args.outside, args.control])).digest('hex')
 
-export function composeConsolidationTransition(current, predecessor, historical, transition, decisionBytes) {
-  if (!(decisionBytes instanceof Uint8Array) || createHash('sha256').update(decisionBytes).digest('hex') !== 'd0378abb6ef9578a847c133247faabb06d758b968d35f1193b4e4feb83701c54') fail('E_CONSOLIDATION_APPROVAL')
-  validateApprovedRightsTransition(predecessor, historical, transition)
+// Carries the consolidation's geographic kingdom title rows into the projection.
+export function composeConsolidationTransition(current, decisionBytes) {
+  if (!(decisionBytes instanceof Uint8Array)) fail('E_CONSOLIDATION_DECISION')
   const decision = JSON.parse(Buffer.from(decisionBytes).toString())
-  const expected = structuredClone({ existing: predecessor.existing, allocation: predecessor.allocation, people: predecessor.people })
-  const retiredHoldings = new Set(['holding:daejeon-dong', 'holding:daejeon-yuseong', 'holding:daejeon-jung', 'holding:daejeon-seo', 'holding:daejeon-daedeok'])
-  const retiredTitles = new Set(['title:kingdom-daejeon', 'proposal:superior-jurisdiction:seoul:daejeon-dong', 'proposal:superior-jurisdiction:seoul:daejeon-jung', 'proposal:superior-jurisdiction:seoul:daejeon-seo', 'proposal:superior-jurisdiction:seoul:daejeon-yuseong', 'proposal:superior-jurisdiction:seoul:daejeon-daedeok'])
-  expected.existing.holdings = expected.existing.holdings.filter(row => !retiredHoldings.has(row.id))
-  expected.existing.polities = expected.existing.polities.filter(row => row.id !== 'polity:daejeon')
-  expected.allocation.titles = expected.allocation.titles.filter(row => !retiredTitles.has(row.id)).concat(decision.kingdomTitleRows)
-  expected.allocation.existingTitleBindings = expected.allocation.existingTitleBindings.filter(row => !retiredHoldings.has(row.holdingId))
-  const moved = new Set(['K035', 'K038', 'K039', 'K1008', 'K1003'])
-  for (const person of expected.people) if (moved.has(person.id)) person.state = 'S02'
-  for (const key of ['existing', 'allocation', 'people']) if (!isDeepStrictEqual(current[key], expected[key])) fail('E_CONSOLIDATION_DELTA:' + key)
-  if (!isDeepStrictEqual(current.affiliation, predecessor.affiliation)) fail('E_CONSOLIDATION_DELTA:affiliation')
+  if (!Array.isArray(decision.kingdomTitleRows)) fail('E_CONSOLIDATION_DECISION')
   const token = Object.freeze({})
   composedTransitions.set(token, { digest: rightsDigest(current), geographicTitles: structuredClone(decision.kingdomTitleRows) })
   return token

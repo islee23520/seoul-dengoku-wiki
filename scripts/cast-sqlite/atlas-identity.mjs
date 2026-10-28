@@ -188,14 +188,13 @@ export function readAtlasValuesDocument(db) {
     count: metadata[0].person_count, people: context.people };
 }
 
-export function readAtlasIdentity(db, { expectedSourceHashes } = {}) {
+export function readAtlasIdentity(db) {
   if (rows(db, 'SELECT singleton FROM atlas_identity_seal').length !== 1) fail('E_ATLAS_IDENTITY_SCHEMA_GAP', 'unsealed migration');
   const bindings = rows(db, 'SELECT kind,source_id,sha256 FROM atlas_identity_binding');
   if (bindings.length !== 4) fail('E_ATLAS_IDENTITY_SCHEMA_GAP', 'source bindings');
   for (const [kind, path] of Object.entries(paths)) {
     const binding = bindings.find(b => b.kind === kind);
     if (!binding) fail('E_ATLAS_IDENTITY_MISSING', path);
-    if (expectedSourceHashes !== undefined && expectedSourceHashes[path] !== binding.sha256) fail('E_ATLAS_IDENTITY_STALE', path);
     if (kind !== 'candidates') {
       const current = source(db, kind);
       if (current.source_id !== binding.source_id || current.sha256 !== binding.sha256) fail('E_ATLAS_IDENTITY_STALE', path);

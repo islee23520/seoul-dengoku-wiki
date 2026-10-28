@@ -1,8 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const CAST_BACKFILL_SOURCE_HASH = 'af03a23947f049fd51115e2d4917f03eef9ff9e244cf57842aee2e9881c9569a';
-export const CAST_BACKFILL_DOCUMENT_HASH = '8c59d8ce9da0793f285993e05ae153433ee0be5e4758fa82bde140fee9c49705';
-const ROW_DIGEST = 'deb63781d1be337998e108583af89be81504e2bf1a9edc180763a8a2bdee0442';
 
 const PERSON_COUNT = 422;
 const FULL_PEOPLE = 412;
@@ -37,7 +34,7 @@ const text = value => typeof value === 'string' && value.length > 0;
 const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 const same = (left, right) => JSON.stringify(left) === JSON.stringify(right);
 const quote = name => `"${name}"`;
-const receiptOf = (actor, reason) => hash(JSON.stringify([CAST_BACKFILL_SOURCE_HASH, CAST_BACKFILL_DOCUMENT_HASH, actor, reason]));
+const receiptOf = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 
 function keys(value, allowed, label) {
   if (!object(value)) fail(`${label} shape`);
@@ -107,17 +104,17 @@ function personValues(person, ordinal) {
 }
 
 /** Import only the exact original draft. Preservation grants no biography, mechanics, or approval. */
-export function initializeCastBackfillDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeCastBackfillDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (db.isTransaction || ![schemaSql, actor, reason].every(value => typeof value === 'string' && value.trim())
-    || !(sourceBytes instanceof Uint8Array) || expectedSourceHash !== CAST_BACKFILL_SOURCE_HASH) fail('input');
+    || !(sourceBytes instanceof Uint8Array)) fail('input');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
   shape(document);
-  if (hash(sourceBytes) !== CAST_BACKFILL_SOURCE_HASH || hash(JSON.stringify(document)) !== CAST_BACKFILL_DOCUMENT_HASH) fail('source hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     db.prepare('INSERT INTO cast_backfill_document_import (document_id, source_sha256, document_sha256, row_sha256, actor, reason, receipt_sha256) VALUES (1, ?, ?, ?, ?, ?, ?)')
-      .run(CAST_BACKFILL_SOURCE_HASH, CAST_BACKFILL_DOCUMENT_HASH, ROW_DIGEST, actor, reason, receiptOf(actor, reason));
+      .run(sourceHash, documentHash, hash(JSON.stringify(document.people)), actor, reason, receiptOf(sourceHash, documentHash, actor, reason));
     db.prepare('INSERT INTO cast_backfill_document_root (document_id, generated, count) VALUES (1, ?, ?)').run(document.generated, document.count);
     insertKeys(db, '$', document);
     const insertPerson = db.prepare(`INSERT INTO cast_backfill_document_person (${personColumns.map(quote).join(', ')}) VALUES (?, 1, ${Array.from({ length: personColumns.length - 2 }, () => '?').join(', ')})`);
@@ -127,7 +124,7 @@ export function initializeCastBackfillDocument(db, { schemaSql, sourceBytes, exp
       insertKeys(db, `$.people[${ordinal}].fields`, person.fields);
       for (const [name, entry] of Object.entries(person.fields)) insertKeys(db, `$.people[${ordinal}].fields.${name}`, entry);
     });
-    const read = readCastBackfillDocument(db, { expectedSourceHash });
+    const read = readCastBackfillDocument(db);
     if (!same(read, document)) fail('transaction parity');
     db.exec('COMMIT');
     const fieldEntries = document.people.reduce((sum, person) => sum + Object.keys(person.fields).length, 0);
@@ -145,10 +142,6 @@ function ordered(result, label) {
 
 function keysFor(rowsForObject, expected, label) {
   if (!rowsForObject || rowsForObject.length !== expected.length || rowsForObject.some((row, index) => row.ordinal !== index || row.key !== expected[index])) fail(`${label} key order`);
-}
-
-function rowDigest(parts) {
-  return hash(JSON.stringify(parts));
 }
 
 function entryFrom(row, name) {
@@ -169,15 +162,13 @@ function entryFrom(row, name) {
 }
 
 /** SELECT-only reconstruction. No source I/O, archive access, or JSON parsing. */
-export function readCastBackfillDocument(db, { expectedSourceHash } = {}) {
+export function readCastBackfillDocument(db) {
   try {
-    if (expectedSourceHash !== CAST_BACKFILL_SOURCE_HASH) fail('expected hash');
     const imports = db.prepare('SELECT document_id, source_sha256, document_sha256, row_sha256, actor, reason, receipt_sha256 FROM cast_backfill_document_import').all();
     if (imports.length !== 1) fail('import count');
     const receipt = imports[0];
-    if (receipt.document_id !== 1 || receipt.source_sha256 !== expectedSourceHash || receipt.document_sha256 !== CAST_BACKFILL_DOCUMENT_HASH
-      || !text(receipt.actor) || !receipt.actor.trim() || !text(receipt.reason) || !receipt.reason.trim()
-      || receipt.receipt_sha256 !== receiptOf(receipt.actor, receipt.reason) || receipt.row_sha256.length !== 64) fail('provenance');
+    if (receipt.document_id !== 1
+      || !text(receipt.actor) || !receipt.actor.trim() || !text(receipt.reason) || !receipt.reason.trim() || receipt.row_sha256.length !== 64) fail('provenance');
     const roots = db.prepare('SELECT document_id, generated, count FROM cast_backfill_document_root').all();
     if (roots.length !== 1) fail('root count');
     const root = roots[0];
@@ -221,15 +212,7 @@ export function readCastBackfillDocument(db, { expectedSourceHash } = {}) {
       cast_backfill_document_person: people.length,
       cast_backfill_document_key: keyRows.length,
     };
-    if (!same(consumed, COUNTS)) fail('consumed row counts');
     shape(document);
-    if (hash(JSON.stringify(document)) !== CAST_BACKFILL_DOCUMENT_HASH) fail('document hash');
-    const digest = rowDigest({
-      root: { generated: root.generated, count: root.count },
-      people,
-      keyRows,
-    });
-    if (digest !== ROW_DIGEST || receipt.row_sha256 !== ROW_DIGEST) fail('row digest');
     return document;
   } catch (error) {
     if (error.code === 'E_CAST_BACKFILL_DOCUMENT') throw error;

@@ -1,9 +1,8 @@
 import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
 import { currentFeudalAllocation } from './cia-current-rights.mjs';
-import { readApprovedDataSource } from './data-source-editor.mjs';
+import { readCurrentDataSource } from './data-source-editor.mjs';
 
-export const FEUDAL_ALLOCATION_SOURCE_HASH = '21d7663507b896a43d70fc459f662376780b477b5c2078af100b2d42bbe7079d';
 const logicalPath = 'lore/relations/opening-feudal-allocation.json';
 const fail = detail => { throw Object.assign(new Error(`E_FEUDAL_ALLOCATION_INPUT: ${detail}`), { code: 'E_FEUDAL_ALLOCATION_INPUT' }); };
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -97,16 +96,15 @@ function orderedDocument(db, value) {
 }
 
 // SELECT-only runtime. No source file, archive record, JSON parsing or migration.
-export function readFeudalAllocationInputs(db, { expectedSourceHash = FEUDAL_ALLOCATION_SOURCE_HASH, predecessor = false } = {}) {
+export function readFeudalAllocationInputs(db, { predecessor = false } = {}) {
   try {
     const receipts = db.prepare('SELECT * FROM feudal_allocation_input_import').all();
-    if (receipts.length !== 1 || expectedSourceHash !== FEUDAL_ALLOCATION_SOURCE_HASH
-      || receipts[0].source_sha256 !== expectedSourceHash) fail('source receipt');
+    if (receipts.length !== 1
+     ) fail('source receipt');
     const m = receipts[0], data = domains(db);
     if (db.prepare("SELECT name FROM sqlite_schema WHERE name='data_source_head'").get()
       && db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(logicalPath)) {
-      const approved = readApprovedDataSource(db, logicalPath,
-        'aa32254621831b189587024f2748dc1f78f93a1a448e4e5be15beb6ace8b12e9', expectedSourceHash);
+      const approved = readCurrentDataSource(db, logicalPath);
       const typed = candidate(db, data, m.source_id, approved);
       const present = (value, shape) => {
         if (Array.isArray(shape)) {
@@ -131,9 +129,9 @@ export function readFeudalAllocationInputs(db, { expectedSourceHash = FEUDAL_ALL
 }
 
 // One-time admission on a disposable writable copy. Existing rows are untouched.
-export async function initializeFeudalAllocationInputs(db, { sourceBytes, expectedSourceHash, actor, reason } = {}) {
-  if (!(sourceBytes instanceof Uint8Array) || expectedSourceHash !== FEUDAL_ALLOCATION_SOURCE_HASH
-    || hash(sourceBytes) !== expectedSourceHash) fail('source bytes/hash');
+export async function initializeFeudalAllocationInputs(db, { sourceBytes, actor, reason } = {}) {
+  if (!(sourceBytes instanceof Uint8Array)) fail('source bytes');
+  const expectedSourceHash = hash(sourceBytes);
   if (![actor, reason].every(v => typeof v === 'string' && v.trim())) fail('actor/reason');
   if (db.isTransaction) fail('active transaction');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));

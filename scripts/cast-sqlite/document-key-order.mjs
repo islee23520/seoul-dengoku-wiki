@@ -1,18 +1,4 @@
 import { withTransaction } from './db.mjs';
-import { isDeepStrictEqual } from 'node:util';
-
-// Transitional dual-read boundary: values must already match. Only object and
-// Map insertion order comes from the authenticated predecessor shape.
-export function preserveReceiptOrder(typed, source) {
-  if (!isDeepStrictEqual(typed, source)) throw new Error('E_RECEIPT_VALUE_MISMATCH');
-  const visit = (value, shape) => value instanceof Map
-    ? new Map([...shape].map(([id, entry]) => [id, visit(value.get(id), entry)]))
-    : Array.isArray(value) ? value.map((entry, index) => visit(entry, shape[index]))
-      : value !== null && typeof value === 'object'
-        ? Object.fromEntries(Object.keys(shape).map(key => [key, visit(value[key], shape[key])]))
-        : value;
-  return visit(typed, source);
-}
 
 // Historical receipts hash JSON.stringify, including object insertion order.
 // Preserve that structural metadata separately from typed document values.
@@ -40,23 +26,20 @@ export function initializeDocumentKeyOrder(db, documents) {
   });
 }
 
-export function orderDocumentKeys(db, sourceId, document, { approvedStructure } = {}) {
-  // Successor structure is explicit authority, never a fallback source of values.
-  // This leaves the immutable imported key-order archive untouched.
-  if (approvedStructure !== undefined) return preserveReceiptOrder(document, approvedStructure);
+// Archived keys keep their imported order; keys added by later edits follow
+// in the edited document's own order. Removed keys are simply absent.
+export function orderDocumentKeys(db, sourceId, document) {
   const groups = new Map();
   for (const row of db.prepare('SELECT * FROM document_key_order WHERE source_id=? ORDER BY object_pointer,ordinal').all(sourceId)) {
     if (!groups.has(row.object_pointer)) groups.set(row.object_pointer, []);
-    groups.get(row.object_pointer).push(row);
+    groups.get(row.object_pointer).push(row.key);
   }
   const visit = (value, path) => {
     if (Array.isArray(value)) return value.map((entry, index) => visit(entry, pointer(path, index)));
     if (value === null || typeof value !== 'object') return value;
-    const keys = groups.get(path) ?? [];
-    if (keys.length !== Object.keys(value).length || keys.some((row, index) => row.ordinal !== index || !Object.hasOwn(value, row.key))) {
-      throw new Error(`E_DOCUMENT_KEY_ORDER:${sourceId}:${path}`);
-    }
-    return Object.fromEntries(keys.map(({ key }) => [key, visit(value[key], pointer(path, key))]));
+    const archived = (groups.get(path) ?? []).filter(key => Object.hasOwn(value, key));
+    const keys = [...archived, ...Object.keys(value).filter(key => !archived.includes(key))];
+    return Object.fromEntries(keys.map(key => [key, visit(value[key], pointer(path, key))]));
   };
   return visit(document, '');
 }

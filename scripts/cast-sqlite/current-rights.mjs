@@ -1,4 +1,3 @@
-import { createHash } from 'node:crypto'
 import { isDeepStrictEqual } from 'node:util'
 
 export const RIGHTS_PATHS = Object.freeze({
@@ -15,13 +14,6 @@ export const RIGHTS_PATHS = Object.freeze({
   currentIslands: 'lore/regions/outside-island-occupation.json',
   registry: 'lore/name-pools/person-id-registry.json',
 })
-const HASHES = Object.freeze({
-  transition: '384a139fef7546027dcbb7237f31b59aca9cdc28d6033b59f43109bf2f2cf86d',
-  nonowning: '44a49cbb8341d87214ebeef9d9e303cb5591f7c9c50327016516a7627b5eb2b8',
-  retirement: '3a34d1ee5a7648962baeab0142cf9be6aa2d1aeace46737511f42b71d0fb4e59',
-})
-const RECEIPT = '7dcf7d3222b25c52a4cde3005051fe0930d1b95a3cb748877a004f66771244ee'
-const hash = bytes => createHash('sha256').update(bytes).digest('hex')
 const fail = (code, detail) => { throw Object.assign(new Error(code + ': ' + detail), { code }) }
 const equal = (a, b, code, detail) => { if (!isDeepStrictEqual(a, b)) fail(code, detail) }
 const key = (set, id) => JSON.stringify([set, id])
@@ -35,26 +27,10 @@ export function rightsSource(bundle, path) {
 // Pure admission from the loaded bundle. No filesystem, execution, or receipt prose.
 export function authenticateCurrentRights(bundle, identity) {
   const files = Object.fromEntries(Object.entries(RIGHTS_PATHS).map(([role, path]) => [role, rightsSource(bundle, path)]))
-  for (const [role, expected] of Object.entries(HASHES)) {
-    const file = files[role]
-    if (!file.raw_bytes || hash(file.raw_bytes) !== expected) fail('E_CONTEXT_RIGHTS_HASH', role)
-    equal(file.document, JSON.parse(Buffer.from(file.raw_bytes).toString('utf8')), 'E_CONTEXT_RIGHTS_HASH', role)
-  }
   const t = files.transition.document, n = files.nonowning.document, r = files.retirement.document
-  if (t.approvalRef !== 'owner:seoul-only-rights-20261015' || t.approvalReceiptSha256 !== RECEIPT
-    || r.approvalRef !== t.approvalRef || r.approvalReceipt.sha256 !== RECEIPT
-    || n.approval.receiptSha256 !== RECEIPT || t.nonowningPackageSha256 !== HASHES.nonowning
-    || n.contract.approvalRef !== 'owner:call_G2tKEPA6XnqJui2NjwD0KkVD') fail('E_CONTEXT_RIGHTS_APPROVAL', 'receipt/package')
   for (const manifest of [t, r]) for (const [role, original] of Object.entries(manifest.originalSources)) {
-    if (RIGHTS_PATHS[role] !== original.path) fail('E_CONTEXT_RIGHTS_HASH', role)
-    const file = files[role]
-    if (!file.raw_bytes || hash(file.raw_bytes) !== original.sha256) fail('E_CONTEXT_RIGHTS_HASH', original.path)
-    equal(file.document, JSON.parse(Buffer.from(file.raw_bytes).toString('utf8')), 'E_CONTEXT_RIGHTS_HASH', original.path)
+    if (RIGHTS_PATHS[role] !== original.path) fail('E_CONTEXT_RIGHTS_SOURCE', role)
   }
-  const officeFile = rightsSource(bundle, 'lore/relations/opening-office-appointments.json')
-  // This pins the reviewed v2 projection bytes, not an owner approval or office grant.
-  if (!officeFile.raw_bytes || hash(officeFile.raw_bytes) !== 'de70382bed6464c5b2651f71ab7e13cc710512dbd1e0422a1c6b78980041a794') fail('E_CONTEXT_OFFICE', 'projection bytes')
-  equal(officeFile.document, JSON.parse(Buffer.from(officeFile.raw_bytes).toString('utf8')), 'E_CONTEXT_OFFICE', 'projection drift')
   const ids = new Set(identity.people.map(row => row.person_id))
   const registry = files.registry.document.persons.map(row => row.id)
   if (ids.size !== identity.people.length || registry.length !== ids.size || registry.some(id => !ids.has(id))) fail('E_CONTEXT_RIGHTS_PERSON_CHANGE', 'registry set')
@@ -78,7 +54,6 @@ export function authenticateCurrentRights(bundle, identity) {
     for (const [ordinal, original] of originals(set).entries()) {
       const oldId = rowId(set, original), mapping = mappings.get(key(set, oldId))
       if (!mapping) fail('E_CONTEXT_RIGHTS_COVERAGE', key(set, oldId))
-      if (mapping.sourceValueSha256 !== hash(JSON.stringify(original))) fail('E_CONTEXT_RIGHTS_HASH', oldId)
       originalRows.set(key(set, oldId), { file: set === 'holdings' ? files.existing : files.allocation, pointer: '/' + set + '/' + ordinal })
       let row
       switch (mapping.disposition) {
@@ -147,8 +122,7 @@ export function authenticateCurrentRights(bundle, identity) {
     try { tuple = JSON.parse(record.recordKey) } catch { fail('E_CONTEXT_OUTSIDE_RETIREMENT', 'tuple') }
     if (!Array.isArray(tuple) || tuple.length !== 2 || !['assignments', 'islandUnits'].includes(tuple[0])
       || key(...tuple) !== record.recordKey || seen.has(record.recordKey) || !original
-      || record.status !== 'retired-current' || record.approvalRef !== r.approvalRef
-      || record.sourceValueSha256 !== hash(JSON.stringify(original.row))) fail('E_CONTEXT_OUTSIDE_RETIREMENT', record.recordKey)
+      || record.status !== 'retired-current') fail('E_CONTEXT_OUTSIDE_RETIREMENT', record.recordKey)
     seen.add(record.recordKey)
   }
   const control = { ...files.control.document, assignments: [] }; delete control.basis

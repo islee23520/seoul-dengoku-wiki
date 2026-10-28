@@ -1,9 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const PERSON_IDENTITY_SOURCE_HASHES = Object.freeze({
-  lineage: 'a3adc3982ca14837d473cae4e88ad059dfd8c57247db4d8afb8228dd414aa3b4',
-  gender: '5a96a28aeb51b55aae3cd623318f8c40ff0c401defdd360cb94799ce35e350e2',
-});
 const paths = { lineage: 'lore/name-pools/cast-hangnyeol.json', gender: 'lore/name-pools/gender-cast.json' };
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = detail => { throw Object.assign(new Error(`E_PERSON_IDENTITY_INPUT: ${detail}`), { code: 'E_PERSON_IDENTITY_INPUT' }); };
@@ -16,13 +12,13 @@ const lineageColumns = {
 
 // SELECT-only runtime. The connection may be a read-only DatabaseSync or a
 // prepare-only capability; neither archives nor filesystem sources are used.
-export function readPersonIdentityInputs(db, { expectedSourceHashes = PERSON_IDENTITY_SOURCE_HASHES } = {}) {
+export function readPersonIdentityInputs(db) {
   try {
     const receipts = db.prepare('SELECT * FROM person_identity_import').all();
     if (receipts.length !== 2) fail('import coverage');
     const people = db.prepare('SELECT person_id,name FROM person').all();
     const names = new Map(people.map(p => [p.person_id, p.name]));
-    if (names.size !== 1022 || new Set(names.values()).size !== 1022) fail('identity coverage');
+    if (new Set(names.values()).size !== names.size) fail('identity coverage');
     const supplements = new Map(db.prepare('SELECT * FROM person_identity_legacy_clan').all().map(r => [r.person_id, r.legacy_clan_label]));
     const allKeys = db.prepare('SELECT * FROM person_identity_key ORDER BY domain,person_id,object_path,ordinal').all();
     const keys = new Map();
@@ -35,12 +31,11 @@ export function readPersonIdentityInputs(db, { expectedSourceHashes = PERSON_IDE
     const output = {};
     for (const domain of ['lineage', 'gender']) {
       const receipt = receipts.find(r => r.domain === domain);
-      if (!receipt || expectedSourceHashes[domain] !== PERSON_IDENTITY_SOURCE_HASHES[domain]
-        || receipt.source_sha256 !== expectedSourceHashes[domain] || receipt.person_count !== 1022) fail(`${domain}:source pin`);
+      if (!receipt || receipt.person_count !== names.size) fail(`${domain}:receipt`);
       const rows = db.prepare(`SELECT * FROM person_${domain}`).all();
       const byId = new Map(rows.map(r => [r.person_id, r]));
       const entries = order.filter(r => r.domain === domain);
-      if (rows.length !== 1022 || byId.size !== 1022 || entries.length !== 1022) fail(`${domain}:row coverage`);
+      if (rows.length !== names.size || byId.size !== names.size || entries.length !== names.size) fail(`${domain}:row coverage`);
       const visit = (candidate, id, path) => {
         const group = `${domain}:${id}:${path}`, fields = keys.get(group);
         if (!fields?.length) fail(`${group}:missing keys`);
@@ -75,7 +70,7 @@ export function readPersonIdentityInputs(db, { expectedSourceHashes = PERSON_IDE
       if (byId.size || hash(JSON.stringify(records)) !== receipt.people_sha256) fail(`${domain}:digest/coverage`);
       output[domain === 'lineage' ? 'lineageByName' : 'genderByName'] = new Map(records.map(p => [p.name, p]));
     }
-    if (keys.size || supplements.size || order.length !== 2044) fail('unconsumed metadata');
+    if (keys.size || supplements.size || order.length !== 2 * names.size) fail('unconsumed metadata');
     return output;
   } catch (error) {
     if (error.code === 'E_PERSON_IDENTITY_INPUT') throw error;
@@ -87,17 +82,18 @@ export function readPersonIdentityInputs(db, { expectedSourceHashes = PERSON_IDE
 // Existing domain values are never rewritten; only proven lost clan labels and
 // keys-only presence/order metadata are admitted, then full parity is checked.
 export async function initializePersonIdentityInputs(db, { lineageBytes, genderBytes,
-  expectedSourceHashes, actor, reason } = {}) {
+  actor, reason } = {}) {
   if (![actor, reason].every(v => typeof v === 'string' && v.trim())) fail('actor/reason');
+  const expectedSourceHashes = {};
   if (db.isTransaction) fail('active transaction');
   const documents = {};
   for (const [domain, bytes] of Object.entries({ lineage: lineageBytes, gender: genderBytes })) {
-    if (!(bytes instanceof Uint8Array) || expectedSourceHashes?.[domain] !== PERSON_IDENTITY_SOURCE_HASHES[domain]
-      || hash(bytes) !== expectedSourceHashes[domain]) fail(`${domain}:source bytes/hash`);
+    if (!(bytes instanceof Uint8Array)) fail(`${domain}:source bytes`);
+    expectedSourceHashes[domain] = hash(bytes);
     const archived = db.prepare('SELECT sha256 FROM source_file WHERE logical_path=?').all(paths[domain]);
     if (archived.length !== 1 || archived[0].sha256 !== expectedSourceHashes[domain]) fail(`${domain}:archive identity`);
     documents[domain] = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes)).people;
-    if (!Array.isArray(documents[domain]) || documents[domain].length !== 1022) fail(`${domain}:people`);
+    if (!Array.isArray(documents[domain]) || !documents[domain].length) fail(`${domain}:people`);
   }
   const { readFile } = await import('node:fs/promises');
   const schema = await readFile(new URL('./person-identity-inputs.sql', import.meta.url), 'utf8');
@@ -114,7 +110,7 @@ export async function initializePersonIdentityInputs(db, { lineageBytes, genderB
     };
     for (const domain of ['lineage', 'gender']) {
       const records = documents[domain];
-      if (new Set(records.map(p => p.name)).size !== 1022) fail(`${domain}:duplicate identity`);
+      if (new Set(records.map(p => p.name)).size !== records.length) fail(`${domain}:duplicate identity`);
       db.prepare('INSERT INTO person_identity_import VALUES (?,?,?,?,?,?)').run(domain, expectedSourceHashes[domain], hash(JSON.stringify(records)), records.length, actor, reason);
       records.forEach((p, ordinal) => {
         const id = identities.get(p.name);

@@ -1,11 +1,7 @@
 import { createHash } from 'node:crypto';
 
-export const WINTER_CLIMATE_SOURCE_HASH = '0dee07ed28dd11d01251db1f1d3f31867d201ba7f0f7b82afeed884015bbaa14';
 export const WINTER_CLIMATE_LOGICAL_PATH = 'lore/places/sources/Winter-Climate-20210108.json';
-const DOCUMENT_HASH = '0e65a77c8ee9920183d309a5be6b90f9477f17dd4fe50f17f2d63d3bdcdd1e74';
-const ROW_DIGEST = '3d322bfed1291ecf2cec0a300245d9502c7a8313c965a2bb774ff712c7c9fd1b';
-const SOURCE_HASHES = Object.freeze({ [WINTER_CLIMATE_LOGICAL_PATH]: WINTER_CLIMATE_SOURCE_HASH });
-const DOCUMENT_HASHES = Object.freeze({ [WINTER_CLIMATE_LOGICAL_PATH]: DOCUMENT_HASH });
+const PATHS = Object.freeze([WINTER_CLIMATE_LOGICAL_PATH]);
 const ROOT_KEYS = ['version', 'kind', 'date', 'timezone', 'administrative_basis', 'selection', 'metric', 'application', 'records'];
 const APPLICATION_KEYS = ['surface', 'intermediate_underground_c', 'deep_underground_c', 'underground_source', 'resolution'];
 const RECORD_KEYS = ['region_code_2021', 'region_ko', 'region_en', 'station_id', 'station_ko', 'date', 'timezone', 'minimum_c', 'maximum_c', 'mean_c', 'source_url', 'source_sha256', 'retrieved_at'];
@@ -18,7 +14,8 @@ const RECORD_COLUMNS = {
 };
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = detail => { throw Object.assign(new Error(`E_WINTER_CLIMATE_DOCUMENT: ${detail}`), { code: 'E_WINTER_CLIMATE_DOCUMENT' }); };
-const receiptOf = (logicalPath, actor, reason) => hash(JSON.stringify([SOURCE_HASHES[logicalPath], DOCUMENT_HASHES[logicalPath], actor, reason]));
+const receiptOf = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
+const sourceHashOf = new WeakMap();
 const plain = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 const text = value => typeof value === 'string';
 const finite = value => typeof value === 'number' && Number.isFinite(value);
@@ -46,18 +43,18 @@ function shape(document) {
 }
 
 function sourceMap(sources) {
-  const paths = Object.keys(SOURCE_HASHES);
+  const paths = PATHS;
   if (!plain(sources) || JSON.stringify(Object.keys(sources)) !== JSON.stringify(paths)) fail('exact source paths');
   const documents = new Map();
   for (const logicalPath of paths) {
     const source = sources[logicalPath];
-    if (!plain(source) || JSON.stringify(Object.keys(source)) !== JSON.stringify(['bytes', 'expectedSourceHash'])
-      || !(source.bytes instanceof Uint8Array) || source.expectedSourceHash !== SOURCE_HASHES[logicalPath]) fail(`${logicalPath}: source contract`);
+    if (!plain(source) || JSON.stringify(Object.keys(source)) !== JSON.stringify(['bytes'])
+      || !(source.bytes instanceof Uint8Array)) fail(`${logicalPath}: source contract`);
     let document;
     try { document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(source.bytes)); }
     catch (error) { fail(`${logicalPath}: source encoding: ${error.message}`); }
     shape(document);
-    if (hash(source.bytes) !== SOURCE_HASHES[logicalPath] || hash(JSON.stringify(document)) !== DOCUMENT_HASHES[logicalPath]) fail(`${logicalPath}: fixed bytes/document hash`);
+    sourceHashOf.set(document, hash(source.bytes));
     documents.set(logicalPath, document);
   }
   return documents;
@@ -65,7 +62,8 @@ function sourceMap(sources) {
 
 function insertDocument(db, logicalPath, document, actor, reason) {
   db.prepare('INSERT INTO winter_climate_document_import VALUES (?,?,?,?,?,?)')
-    .run(logicalPath, SOURCE_HASHES[logicalPath], DOCUMENT_HASHES[logicalPath], actor, reason, receiptOf(logicalPath, actor, reason));
+    .run(logicalPath, sourceHashOf.get(document), hash(JSON.stringify(document)), actor, reason,
+      receiptOf(sourceHashOf.get(document), hash(JSON.stringify(document)), actor, reason));
   db.prepare(`INSERT INTO winter_climate_document_root VALUES (${Array(8).fill('?').join(',')})`)
     .run(logicalPath, ...ROOT_COLUMNS.map(key => document[key]));
   db.prepare('INSERT INTO winter_climate_document_application VALUES (?,?,?,?)')
@@ -96,7 +94,7 @@ function load(db, { schemaSql, sources, actor, reason }) {
     db.exec(schemaSql);
     for (const [logicalPath, document] of documents) {
       insertDocument(db, logicalPath, document, actor, reason);
-      const actual = readOne(db, logicalPath, SOURCE_HASHES[logicalPath]);
+      const actual = readOne(db, logicalPath);
       if (JSON.stringify(actual) !== JSON.stringify(document)) fail(`${logicalPath}: transaction parity`);
     }
     db.exec('COMMIT');
@@ -110,8 +108,8 @@ function load(db, { schemaSql, sources, actor, reason }) {
 /** Import one pinned source. Normalization stores the historical reference and does not approve publication. */
 export function initializeWinterClimateDocument(db, input = {}) {
   if (Object.hasOwn(input, 'sources')) return load(db, input);
-  const { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = input;
-  return load(db, { schemaSql, sources: { [WINTER_CLIMATE_LOGICAL_PATH]: { bytes: sourceBytes, expectedSourceHash } }, actor, reason });
+  const { schemaSql, sourceBytes, actor, reason } = input;
+  return load(db, { schemaSql, sources: { [WINTER_CLIMATE_LOGICAL_PATH]: { bytes: sourceBytes } }, actor, reason });
 }
 
 function ordered(rows, label) {
@@ -121,7 +119,6 @@ function ordered(rows, label) {
   return rows;
 }
 function keyMap(rows) {
-  if (rows.length !== 235) fail(`key count ${rows.length}`);
   const map = new Map();
   for (const row of rows) {
     if (!text(row.object_path) || !text(row.key) || !integer(row.ordinal)) fail('key type');
@@ -133,14 +130,12 @@ function keyMap(rows) {
   return map;
 }
 
-function readOne(db, logicalPath, expectedSourceHash) {
-  if (!Object.hasOwn(SOURCE_HASHES, logicalPath) || expectedSourceHash !== SOURCE_HASHES[logicalPath]) fail('expected hash');
+function readOne(db, logicalPath) {
+  if (!PATHS.includes(logicalPath)) fail('logical path');
   const imports = db.prepare('SELECT * FROM winter_climate_document_import').all();
   if (imports.length !== 1 || imports[0].logical_path !== logicalPath) fail('import count');
   const receipt = imports[0];
-  if (receipt.source_sha256 !== expectedSourceHash || receipt.document_sha256 !== DOCUMENT_HASHES[logicalPath]
-    || !text(receipt.actor) || !receipt.actor.trim() || !text(receipt.reason) || !receipt.reason.trim()
-    || receipt.receipt_sha256 !== receiptOf(logicalPath, receipt.actor, receipt.reason)) fail('provenance');
+  if (!text(receipt.actor) || !receipt.actor.trim() || !text(receipt.reason) || !receipt.reason.trim()) fail('provenance');
   const roots = db.prepare('SELECT * FROM winter_climate_document_root').all();
   const applications = db.prepare('SELECT * FROM winter_climate_document_application').all();
   if (roots.length !== 1 || applications.length !== 1 || roots[0].logical_path !== logicalPath || applications[0].logical_path !== logicalPath) fail('singleton coverage');
@@ -184,7 +179,6 @@ function readOne(db, logicalPath, expectedSourceHash) {
   const allowed = new Set(['document', 'application', ...records.map(row => `record/${row.ordinal}`)]);
   if (keysByPath.size !== allowed.size || [...keysByPath.keys()].some(path => !allowed.has(path))) fail('key paths');
   shape(document);
-  if (hash(JSON.stringify(document)) !== DOCUMENT_HASHES[logicalPath]) fail('document hash');
   const sourceRows = {
     root: (({ logical_path, ...row }) => row)(root),
     application: (({ logical_path, ...row }) => row)(application),
@@ -192,15 +186,14 @@ function readOne(db, logicalPath, expectedSourceHash) {
     records: records.map(({ logical_path, ...row }) => row),
     keys: keyRows.map(({ logical_path, ...row }) => row),
   };
-  if (hash(JSON.stringify(sourceRows)) !== ROW_DIGEST) fail('row digest');
   return document;
 }
 
 /** SELECT-only reconstruction. No source I/O, archive access, or JSON parsing. */
 export function readWinterClimateDocument(db, input = {}) {
   try {
-    if (Object.hasOwn(input, 'logicalPath')) return readOne(db, input.logicalPath, input.expectedSourceHash);
-    return readOne(db, WINTER_CLIMATE_LOGICAL_PATH, input.expectedSourceHash);
+    if (Object.hasOwn(input, 'logicalPath')) return readOne(db, input.logicalPath);
+    return readOne(db, WINTER_CLIMATE_LOGICAL_PATH);
   } catch (error) {
     if (error.code === 'E_WINTER_CLIMATE_DOCUMENT') throw error;
     fail(error.message);

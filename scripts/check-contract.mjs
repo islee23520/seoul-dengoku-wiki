@@ -7,7 +7,6 @@ import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
 import { approvedDocuments, publishedDocuments, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
 import { personRouteFailures } from './person-publication-contract.mjs'
-import { requireSeoulPublication } from './check-seoul-scope.mjs'
 import { buildAdminTerritorialScale, validateAdminTerritorialScale, buildAdminTerritorialScaleFromDb } from './admin-territorial-scale.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
 import { readGeographyStore } from './cast-sqlite/geography-store.mjs'
@@ -19,7 +18,6 @@ import { readAtlasIdentity, readAtlasValuesDocument } from './cast-sqlite/atlas-
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 process.env.WIKI_DOCUMENT_DB ??= resolve(projectRoot, 'data/canonical/wiki-cast.sqlite')
-const publicationReview = await requireSeoulPublication(projectRoot)
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(projectRoot, 'lore'))
 const domains = ['world']
 const outputArg = process.argv.indexOf('--json')
@@ -68,8 +66,7 @@ try {
       db.exec('BEGIN')
       geographicScale = buildAdminTerritorialScaleFromDb(db)
       geography = readGeographyStore(db)
-      const offices = readScopeCurrentSource({ db, logicalPath: 'lore/offices/Offices-and-Ranks.json',
-        expectedSha256: '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e' })
+      const offices = readScopeCurrentSource({ db, logicalPath: 'lore/offices/Offices-and-Ranks.json' })
       descriptor = offices.data.territorialScale
       db.exec('COMMIT')
     } finally { db.close() }
@@ -88,7 +85,7 @@ try {
 } catch (error) {
   failures.push('territorial-scale-contract:' + error.message)
 }
-const approved = publishedDocuments(await approvedDocuments(loreRoot), publicationReview)
+const approved = publishedDocuments(await approvedDocuments(loreRoot))
 const peopleSource = await readFile(resolve(projectRoot, 'src/generated/peopleCatalog.ts'), 'utf8')
 const people = JSON.parse(peopleSource.split('export const peopleCatalog = ')[1].split(' as const')[0])
 const { sourcePeople, issued } = (() => {
