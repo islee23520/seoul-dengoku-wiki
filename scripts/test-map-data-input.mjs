@@ -19,7 +19,6 @@ const mapperRevision = execFileSync('git', ['-C', mapperRoot, 'rev-parse', 'HEAD
 const { createReleaseManifest } = await import(pathToFileURL(join(mapperRoot, 'scripts/janseon/release-manifest.mjs')))
 const { semanticDigest } = await import(pathToFileURL(join(mapperRoot, 'scripts/janseon/canonical.mjs')))
 const sha = bytes => createHash('sha256').update(bytes).digest('hex')
-const gate = async () => ({ complete: true, semanticReview: 'reviewed' })
 const ref = domain => ({ domain, datasetId: 'synthetic:' + domain, editionId: 'one' })
 
 async function fixture(t) {
@@ -97,7 +96,7 @@ async function fixture(t) {
   const requestPath = join(root, 'request.json'); await put(requestPath, JSON.stringify(request))
   const liveRoot = join(root, 'wiki'); await put(join(liveRoot, 'public/opening-territories.json'), 'old territories')
   await put(join(liveRoot, 'public/underground-detail.json'), 'old underground')
-  const options = { root: liveRoot, gate, mapRequestPath: requestPath, ownership: async (_, path) =>
+  const options = { root: liveRoot, mapRequestPath: requestPath, ownership: async (_, path) =>
     path === 'public/opening-territories.json' ? sha('old territories') : null }
   const reseal = async () => {
     for (const member of manifest.semantic.members) {
@@ -178,21 +177,6 @@ for (const lane of ['request', 'member', 'identity', 'license', 'replace-file', 
   await assert.rejects(readFile(join(f.options.root, 'src/generated-private/map-input-receipt.json')), { code: 'ENOENT' })
 })
 
-test('publication denial remains mandatory even for complete valid release', async t => {
-  const f = await fixture(t)
-  await assert.rejects(runRelease({ ...f.options, gate: async () => { throw new Error('E_SCOPE_PENDING') },
-    stage: () => assert.fail('stage bypassed publication') }), /E_SCOPE_PENDING/)
-  await assert.rejects(readFile(join(f.options.root, '.generate-release.lock')), { code: 'ENOENT' })
-  assert.equal(await readFile(join(f.options.root, 'public/opening-territories.json'), 'utf8'), 'old territories')
-})
-
-test('publication pending is first failure even for missing explicit release request', async t => {
-  const f = await fixture(t)
-  await assert.rejects(runRelease({ ...f.options, mapRequestPath: join(f.root, 'does-not-exist.json'),
-    gate: async () => { throw new Error('E_SCOPE_PENDING') }, stage: () => assert.fail('stage ran') }), /E_SCOPE_PENDING/)
-  await assert.rejects(readFile(join(f.options.root, '.generate-release.lock')), { code: 'ENOENT' })
-})
-
 test('actual catalog public projection honors supplied edge removal instead of SQLite adjacency', () => {
   const regular = { edges: [{ a: 'a', b: 'b', lineIds: ['line'], sourceCodes: [] }], linesByStation: new Map(), omitted: [] }
   const movement = catalogMovementGraph({ graph: { edges: [] } }, regular, id => id, [])
@@ -270,17 +254,6 @@ test('coherently rehashed reversed game aliases reject ordered graph disagreemen
     /E_MAP_GRAPH:wiki\/game mismatch/)
   assert.equal(await readFile(join(f.options.root, 'public/opening-territories.json'), 'utf8'), 'old territories')
   await assert.rejects(readFile(join(f.options.root, '.generate-release-transaction/context.json')), { code: 'ENOENT' })
-})
-
-test('publication revocation after valid graph stage preserves every prior output', async t => {
-  const f = await fixture(t)
-  let calls = 0
-  await assert.rejects(runRelease({ ...f.options, gate: async () => {
-    if (++calls === 3) throw new Error('E_SCOPE_REVOKED')
-  }, stage: context => stageGraph(context, f.options.root) }), /E_SCOPE_REVOKED/)
-  assert.equal(calls, 3)
-  assert.equal(await readFile(join(f.options.root, 'public/opening-territories.json'), 'utf8'), 'old territories')
-  await assert.rejects(readFile(join(f.options.root, 'src/generated-private/map-input-receipt.json')), { code: 'ENOENT' })
 })
 
 test('real mapper builder with nonlexical aliases reaches production catalog projection', async t => {

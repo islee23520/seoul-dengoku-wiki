@@ -12,11 +12,6 @@ const fail = detail => { throw Object.assign(new Error(`E_AFFILIATION_IDENTITY: 
 export function readAffiliationIdentityInputs(db) { return readIdentityInputs(db); }
 
 // Only the exporter supplies an independently code-enrolled selected source.
-export function readInternalAffiliationIdentityInputs(db, selected) {
-  if (!selected || !selected.parentRevision) fail('missing selected successor');
-  return readIdentityInputs(db, selected);
-}
-
 function readIdentityInputs(db, selected) {
   const all = (sql, ...bindings) => db.prepare(sql).all(...bindings).map(row => ({ ...row }));
   const identities = selected ? all(`SELECT d.source_id,d.document_id,d.domain,d.corpus_kind,d.status,
