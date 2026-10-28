@@ -13,7 +13,7 @@ flowchart LR
   DB[("data/canonical/wiki-cast.sqlite<br/>저작 정본 · LFS")]
   EDIT["document-cli.mjs<br/>list / read / edit"]
   VAL["lore-json-validate --strict<br/>cast:verify · test:gate"]
-  GEN["generate-release.mjs<br/>flock lock · journal · 승인 게이트"]
+  GEN["generate-release.mjs<br/>flock lock · journal"]
   PUB["public/ · src/generated/"]
   PRIV["src/generated-private/<br/>+ .omo/evidence"]
   API7["server/wiki-api.mjs :8787"]
@@ -78,7 +78,7 @@ WIKI_DOCUMENT_DB=... node server/wiki-document-api.mjs   # 문서 API(환경변�
 ## Code Conventions & Common Patterns
 
 - **SQLite-first 저작.** 문서·인물·세력 변경은 DB 편집으로. `public/`·`src/generated*` 직접 수정 금지.
-- **승인 게이트.** `generate-release.mjs`의 `requireGenerationPublication()`이 review `complete` + `semanticReview === 'reviewed'`를 요구(`E_PUBLICATION_REVIEW_PENDING`). `published`·`source_present`·`issued` 따위 개별 플래그로 공개 승인을 추론하지 않는다.
+- **승인 게이트 없음.** `generate-release.mjs`는 review·승인 상태를 요구하지 않는다(창작 자유도 확보를 위해 정본 해시 고정·고정 행 수·승인값·승인 체인 검증을 제거했다). 스키마·FK·구조 무결성·값 범위 검사와 release journal/inventory 변경 감지 해시는 유지한다.
 - **ESM + TypeScript strict.** `"type": "module"`, tsconfig 단일 파일(noEmit, bundler resolution, `@/*` → `src`). 네이밍: 컴포넌트 PascalCase(`ArticlePage.tsx`), 유틸 camelCase, 도메인 유틸은 `wiki*` 접두사(`wikiRouting.ts`, `wikiDocument.ts`).
 - **비동기·에러 패턴.** async/await + AbortController + request counter 가드, fire-and-forget은 `void controller.load(...)`. 로딩/오류/미발견 상태를 합치지 않고 명시적 union(`'ready'|'loading'|'not-found'|'error'`)으로 모델링. API 클라이언트는 typed error envelope 파싱(예: `FeedbackApiError`).
 - **린트·포맷터 부재.** ESLint/Prettier/Biome 없음 — 품질 장치는 tsc strict + 저장소 검사 스크립트(`check-contract`, `check-links`, `check-artifact-allowlist`, `lore-json-validate`).
@@ -103,7 +103,7 @@ WIKI_DOCUMENT_DB=... node server/wiki-document-api.mjs   # 문서 API(환경변�
 |`src/documentApi.ts`|문서 fetch controller(요청 검증·경합 가드)|
 |`src/pages/ArticlePage.tsx`, `src/pages/PersonDetailPage.tsx`|기사 본문·공개 인물 상세 대표 화면|
 |`src/components/mapBridge.ts`|Unity 지도 브리지 계약|
-|`scripts/generate-release.mjs`|정식 generate/build 경계(flock lock, journal, 승인 게이트, 원자적 쓰기)|
+|`scripts/generate-release.mjs`|정식 generate/build 경계(flock lock, journal, 원자적 쓰기)|
 |`scripts/generate-catalog.mjs`|generate worker. 직접 실행으로 live 출력 갱신·stage 우회 금지|
 |`scripts/cast-sqlite/document-cli.mjs`|SQLite 문서 list/read/edit|
 |`scripts/cast-sqlite/db.mjs`|SCHEMA_VERSION=5, APPLICATION_ID=0x57435351|

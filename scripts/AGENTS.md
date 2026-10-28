@@ -8,7 +8,6 @@
 | --- | --- | --- |
 | 생성·빌드 진입점 | `generate-release.mjs` | 공개 승인, lock, stage, journal, 승격·복구 |
 | 공개 카탈로그·인물 상세 | `generate-catalog.mjs`, `person-detail-inputs.mjs`, `person-detail-production.mjs` | 승인된 입력과 공개 필드 |
-| 서울 범위·검토 승인 | `check-seoul-scope.mjs`, `seoul-scope.mjs`, `seoul-census.mjs` | 원천 해시, batch, receipt 인증 |
 | 공개 편입 계약 | `catalog-admission.mjs`, `public-person-detail-admission.mjs` | draft와 publication 구별 |
 | JSON 렌더·검사 | `lore-json-render.mjs`, `lore-json-validate.mjs`, `check-lore-links.mjs` | 원천 schema, anchor, 링크 |
 | 지도·역·지형 | `physical_rail.py`, `bake-regional-terrain.py`, `station-catalog-geography.mjs` | 원천 지리와 공개 투영 구별 |
