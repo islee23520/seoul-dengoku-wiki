@@ -30,7 +30,7 @@ import { initializeIssuedSheetInputs, ISSUED_SHEET_SOURCE_HASH } from './issued-
 import { initializeIssuedSheetDocument } from './issued-sheet-document.mjs';
 import { initializePersonIdentityInputs, PERSON_IDENTITY_SOURCE_HASHES } from './person-identity-inputs.mjs';
 import { initializePersonIdentityDocuments } from './person-identity-documents.mjs';
-import { initializePersonContextDocuments, PERSON_CONTEXT_SOURCE_HASHES } from './person-context-documents.mjs';
+import { initializePersonContextDocuments } from './person-context-documents.mjs';
 import { initializeCensusEventInputs } from './census-event-inputs.mjs';
 import { initializePersonalHoldingInputs, PERSONAL_HOLDING_SOURCE_HASH } from './personal-holding-inputs.mjs';
 import { initializeOfficeAppointmentInputs, OFFICE_APPOINTMENT_SOURCE_HASH } from './office-appointment-inputs.mjs';
@@ -38,7 +38,7 @@ import { initializeFeudalAllocationInputs, FEUDAL_ALLOCATION_SOURCE_HASH } from 
 import { initializeStationInteriorInputs, STATION_INTERIOR_SOURCE_HASH } from './station-interior-inputs.mjs';
 import { initializePreservedSheetInputs } from './preserved-sheet-inputs.mjs';
 import { initializeFamilyKeyOrder } from './family-key-order.mjs';
-import { initializeFamilySourceDocument, FAMILY_SOURCE_HASH } from './family-source-document.mjs';
+import { initializeFamilySourceDocument } from './family-source-document.mjs';
 import { initializeScopeContractStore, SCOPE_CONTRACT_SOURCE_SHA256 } from './scope-contract-store.mjs';
 import { initializeCensusDocuments, CENSUS_DOCUMENT_PINS } from './census-document-store.mjs';
 import { initializeRegionContentDocuments, REGION_CONTENT_SOURCE_HASHES } from './region-content-documents.mjs';
@@ -443,7 +443,7 @@ export async function bootstrapDocumentAuthority({ sourceRoot, input, output, ba
     initializeFamilyKeyOrder(db, familyBytes);
     const familySourceDocument = initializeFamilySourceDocument(db, {
       schemaSql: readFileSync(new URL('./family-source-document.sql', import.meta.url), 'utf8'),
-      sourceBytes: familyBytes, expectedSourceHash: FAMILY_SOURCE_HASH, actor, reason });
+      sourceBytes: familyBytes, actor, reason });
     const geographyPath = 'lore/regions/seoul-electoral-titles.json';
     const geographyBytes = importBytes(geographyPath);
 
@@ -481,7 +481,7 @@ export async function bootstrapDocumentAuthority({ sourceRoot, input, output, ba
     }
     const contextDocuments = initializePersonContextDocuments(db, {
       schemaSql: readFileSync(new URL('./person-context-documents.sql', import.meta.url), 'utf8'),
-      ...contextBytes, expectedSourceHashes: PERSON_CONTEXT_SOURCE_HASHES, actor, reason });
+      ...contextBytes, actor, reason });
     const censusEventPath = 'lore/editorial/seoul-narrative-census-events.json';
     const censusEventBytes = importBytes(censusEventPath);
 

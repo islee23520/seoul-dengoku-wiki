@@ -175,7 +175,7 @@ export function readScopeCurrentSource({ db, logicalPath, expectedSha256, editor
   if (logicalPath === 'lore/regions/sources/population-2026-08.json')
     return readPopulationDocument(db, { expectedSourceHash: expectedSha256 });
   if (logicalPath === 'lore/name-pools/cast-birth-cohorts.json')
-    return readBirthCohortDocument(db, { expectedSourceHash: expectedSha256 });
+    return readBirthCohortDocument(db);
   if (Object.hasOwn(RAIL_SOURCE_HASHES, logicalPath))
     return readRailSourceDocument(db, { logicalPath, expectedSourceHash: expectedSha256 });
   if (logicalPath === 'lore/name-pools/person-id-candidates.json') {

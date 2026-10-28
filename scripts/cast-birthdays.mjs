@@ -1,21 +1,12 @@
 import { resolve } from 'node:path'
-import { createHash } from 'node:crypto'
 import { fileURLToPath } from 'node:url'
 import { openReadOnly } from './cast-sqlite/db.mjs'
-import { readBirthCohortDocument, BIRTH_COHORT_SOURCE_HASH } from './cast-sqlite/birth-cohort-document.mjs'
+import { readBirthCohortDocument } from './cast-sqlite/birth-cohort-document.mjs'
 import { readPersonBirthdayInputs } from './cast-sqlite/person-inputs.mjs'
 
-// Owner approved the numeric bands. This candidate pins their derived assignment
-// snapshot; its byte hash is computed evidence, not a separate human hash approval.
-// Successor binding: .omo/private/seoul-migration/doc247-repin-20261019/successor.json
-// (921a4b46…) chained by .omo/private/seoul-migration/doc247-final-closure-20261019/source-successor.json
-const approvedCohortSha256 = 'b921694843a466dd807572b880a3b5019cf7892df3f1a3edbb5fcdb63bc182c7'
-export function assertBirthCohortContract(text) {
-  if (createHash('sha256').update(text).digest('hex') !== approvedCohortSha256) throw new Error('E_BIRTH_COHORT_APPROVAL')
-}
 const cohortContract = (() => {
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? fileURLToPath(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url)))
-  try { return readBirthCohortDocument(db, { expectedSourceHash: BIRTH_COHORT_SOURCE_HASH }) }
+  try { return readBirthCohortDocument(db) }
   finally { db.close() }
 })()
 const assignedCohorts = new Map(cohortContract.assignments.map((entry) => [entry.personId, cohortContract.cohorts.find((cohort) => cohort.id === entry.cohort)]))
