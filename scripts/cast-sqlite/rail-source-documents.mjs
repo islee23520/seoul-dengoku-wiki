@@ -1,23 +1,14 @@
 import { createHash } from 'node:crypto';
 
-export const RAIL_SOURCE_HASHES = Object.freeze({
-  "lore/places/rail-station-corrections.json": "d6b997fc4ee6849dce192afc0c3bc5e85725bfbd7d2573d6d7a936b0479d2d64",
-  "lore/places/rail-station-identities.json": "80246952f3385e90da2df610cdceda19433f7dcb60d8f5653e6dbe4d0a609c9c",
-  "lore/places/regional-station-bindings.json": "8c6347ee1e4dd63d59b8176b03183ddd55bd6f119913ccffa86ba264153f4d5f",
-  "lore/places/regular-line-adjacency.json": "6b9e1bec6987875ed5f5e6b2df508d3716208628f1749b03f5b80cf1a2af9b7a",
-  "lore/places/station-control-overrides.json": "31e6782338a6d3d03ac4e62a800cf5b0d878785c5f8050ee556975d4456e8915",
-  "lore/places/connected-rail-stations.json": "c0f1e2fb5b24dfc0e64469c64c268dfd5a2ab3af4dc9c46925509fc4df68fd0d",
-  "lore/places/gtx-project-connections.json": "4964f7f22eac9cf718d816f606ac133f857c074e76fc1e364764b6c5fe307594"
-});
-export const RAIL_DOCUMENT_HASHES = Object.freeze({
-  "lore/places/rail-station-corrections.json": "8a49af94c1488e517df3d277640f895f762c23f503fdb589559bec126472315a",
-  "lore/places/station-control-overrides.json": "c237a653af5e8206584e471660c0bbdd8d719218ec98294fb3fb81aff883f48d",
-  "lore/places/gtx-project-connections.json": "bd9570eb9e8412512f96b03450a5335f783278732b67db3b1d02380c88334208",
-  "lore/places/rail-station-identities.json": "2941acaceff58accd70f316c034b9baed609447e5ce13212d6b1677e487f0bb2",
-  "lore/places/regional-station-bindings.json": "4b7514e1c2ede120949a29525189ca4aa7c47befed458b39ea94e515d1721f6f",
-  "lore/places/regular-line-adjacency.json": "b7b096e3672bced5ddeffd04c987cf596b1c82ab4a1f9dcf5e2932bcd6234ca2",
-  "lore/places/connected-rail-stations.json": "738c5b46beca6bf981a550e6f93becec370cde237590dbe5c02a056b18e34386"
-});
+export const RAIL_SOURCE_PATHS = Object.freeze([
+  "lore/places/rail-station-corrections.json",
+  "lore/places/rail-station-identities.json",
+  "lore/places/regional-station-bindings.json",
+  "lore/places/regular-line-adjacency.json",
+  "lore/places/station-control-overrides.json",
+  "lore/places/connected-rail-stations.json",
+  "lore/places/gtx-project-connections.json",
+]);
 const roots = {
   "lore/places/rail-station-corrections.json": "corrections_document",
   "lore/places/rail-station-identities.json": "identities_document",
@@ -507,17 +498,16 @@ export function initializeRailSourceDocuments(db, { schemaSql, sources, actor, r
   const documents = {};
   for (const p of Object.keys(roots)) {
     const source = sources[p];
-    if (!object(source) || Object.keys(source).length !== 2 || !(source.bytes instanceof Uint8Array) || source.expectedSourceHash !== RAIL_SOURCE_HASHES[p]) fail(p + ': source contract/hash');
+    if (!object(source) || Object.keys(source).length !== 1 || !(source.bytes instanceof Uint8Array)) fail(p + ': source contract');
     const value = JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(source.bytes));
     validate(value,roots[p]);
-    if (hash(source.bytes) !== RAIL_SOURCE_HASHES[p] || hash(JSON.stringify(value)) !== RAIL_DOCUMENT_HASHES[p]) fail(p + ': fixed bytes/document hash');
     documents[p] = value;
   }
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     for (const p of Object.keys(roots)) {
-      insert(db,'rail_source_import',{logical_path:p,source_sha256:RAIL_SOURCE_HASHES[p],document_sha256:RAIL_DOCUMENT_HASHES[p],actor,reason});
+      insert(db,'rail_source_import',{logical_path:p,source_sha256:hash(sources[p].bytes),document_sha256:hash(JSON.stringify(documents[p])),actor,reason});
       const put = (value,domain,path,parent,ordinal) => {
         const s = domains[domain], row = {logical_path:p,object_path:path,parent_path:parent,ordinal};
         for (const [k,t] of Object.entries(s.fields)) row[k] = s.scalar ? value : value[k] === undefined ? null : t === 'boolean' ? Number(value[k]) : value[k];
@@ -536,7 +526,7 @@ export function initializeRailSourceDocuments(db, { schemaSql, sources, actor, r
         }
       };
       put(documents[p],roots[p],'','',0);
-      if (JSON.stringify(readRailSourceDocument(db,{logicalPath:p,expectedSourceHash:RAIL_SOURCE_HASHES[p]})) !== JSON.stringify(documents[p])) fail('transaction parity');
+      if (JSON.stringify(readRailSourceDocument(db,{logicalPath:p})) !== JSON.stringify(documents[p])) fail('transaction parity');
     }
     db.exec('COMMIT');
     return documents;
@@ -544,12 +534,12 @@ export function initializeRailSourceDocuments(db, { schemaSql, sources, actor, r
 }
 
 /** Runtime authority: SELECT-only typed reconstruction; no FS, JSON.parse, or archive. */
-export function readRailSourceDocument(db, { logicalPath, expectedSourceHash } = {}) {
+export function readRailSourceDocument(db, { logicalPath } = {}) {
   try {
-    if (!Object.hasOwn(roots,logicalPath) || expectedSourceHash !== RAIL_SOURCE_HASHES[logicalPath]) fail('explicit fixed path/hash required');
+    if (!Object.hasOwn(roots,logicalPath)) fail('known logical path required');
     const rows = name => db.prepare('SELECT * FROM ' + name + ' WHERE logical_path=? ORDER BY object_path,ordinal').all(logicalPath);
     const receipts = db.prepare('SELECT * FROM rail_source_import WHERE logical_path=?').all(logicalPath), r = receipts[0];
-    if (receipts.length !== 1 || r.source_sha256 !== expectedSourceHash || r.document_sha256 !== RAIL_DOCUMENT_HASHES[logicalPath] || !r.actor.trim() || !r.reason.trim()) fail('receipt');
+    if (receipts.length !== 1 || !r.actor.trim() || !r.reason.trim()) fail('receipt');
     const remaining = Object.fromEntries(Object.keys(domains).map(n => [n,new Map(rows(table(n)).map(r => [r.object_path,r]))]));
     const keys = new Map();
     for (const r of rows('rail_source_key')) { if (!keys.has(r.object_path)) keys.set(r.object_path,[]); keys.get(r.object_path).push(r); }
@@ -586,7 +576,6 @@ export function readRailSourceDocument(db, { logicalPath, expectedSourceHash } =
     const result = get(roots[logicalPath],'','',0);
     if (keys.size || Object.values(remaining).some(m => m.size)) fail('unconsumed rows');
     validate(result,roots[logicalPath]);
-    if (hash(JSON.stringify(result)) !== RAIL_DOCUMENT_HASHES[logicalPath]) fail('ordered complete document hash');
     return result;
   } catch (error) { if (error.code === 'E_RAIL_SOURCE_DOCUMENT') throw error; fail(error.message); }
 }

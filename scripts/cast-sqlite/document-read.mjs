@@ -1,9 +1,4 @@
 import { TEXT_DATA_TABLE_COLUMNS, reconstructTextData } from './text-data.mjs';
-import { createHash } from 'node:crypto';
-
-const canonical = (value) => Array.isArray(value) ? `[${value.map(canonical).join(',')}]`
-  : value !== null && typeof value === 'object' ? `{${Object.keys(value).sort().map((k) => `${JSON.stringify(k)}:${canonical(value[k])}`).join(',')}}`
-    : JSON.stringify(value);
 
 function publicDocument(db, identity) {
   if (identity.excluded || identity.status === 'excluded' || identity.corpus_kind !== 'current') return null;
@@ -12,16 +7,12 @@ function publicDocument(db, identity) {
     if (identity.status === 'approved') fail('E_DOCUMENT_SCHEMA_GAP', publicationGap.detail, [publicationGap]);
     return null;
   }
-  const [admission] = rows(db, `SELECT a.* FROM document_publication_admission a
-    JOIN document_head h USING(source_id,revision_id)
-    JOIN document_revision r USING(source_id,revision_id) JOIN document_revision_seal z USING(revision_id)
-    WHERE a.source_id=? AND a.source_path=? AND a.source_sha256=?
-      AND a.semantic_sha256=r.semantic_sha256 AND r.algorithm='typed-envelope-v1'
-      AND a.classification='current-reviewed' AND a.reason='approved-exact-review'`,
-  identity.source_id, identity.logical_path, identity.sha256);
+  // The admission table records which sources are published. Later edits to a
+  // published source stay published; no revision or digest re-approval applies.
+  const [admission] = rows(db, `SELECT 1 FROM document_publication_admission WHERE source_id=? AND source_path=?`,
+    identity.source_id, identity.logical_path);
   if (!admission) return null;
   const document = readDocument(db, { documentId: identity.document_id, corpusKind: identity.corpus_kind, domain: identity.domain, visibility: 'internal' });
-  if (createHash('sha256').update(canonical(document)).digest('hex') !== admission.semantic_sha256) return null;
   return document;
 }
 

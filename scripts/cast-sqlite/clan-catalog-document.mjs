@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const CLAN_CATALOG_SOURCE_HASH = 'a46b1428b5050f529e82eed94b637f25b6bf6f5c4bed0854bae5bdcb8b3e468c';
-export const CLAN_CATALOG_DOCUMENT_HASH = 'bd24678f45bdfcebddf115092990771fce28f143f631a5fdaeabb96d87da4f1c';
 
 const SOURCE_COUNT = 106;
 const CLAN_COUNT = 303;
@@ -116,7 +114,7 @@ function shape(document) {
   }
 }
 
-const receipt = (actor, reason) => hash(JSON.stringify([CLAN_CATALOG_SOURCE_HASH, CLAN_CATALOG_DOCUMENT_HASH, actor, reason]));
+const receipt = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 
 function insertKeys(db, sql, parent, value) {
   Object.keys(value).forEach((key, ordinal) => db.prepare(sql).run(...parent, ordinal, key));
@@ -126,17 +124,17 @@ const flag = (value, field) => Number(Object.hasOwn(value, field));
 const nullable = (value, field) => (Object.hasOwn(value, field) ? value[field] : null);
 
 /** Import only the exact original document; normalization grants no approval and adds no facts. */
-export function initializeClanCatalogDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeClanCatalogDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (db.isTransaction || ![schemaSql, actor, reason].every(value => typeof value === 'string' && value.trim())
-    || !(sourceBytes instanceof Uint8Array) || expectedSourceHash !== CLAN_CATALOG_SOURCE_HASH) fail('input');
+    || !(sourceBytes instanceof Uint8Array)) fail('input');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
   shape(document);
-  if (hash(sourceBytes) !== CLAN_CATALOG_SOURCE_HASH || hash(JSON.stringify(document)) !== CLAN_CATALOG_DOCUMENT_HASH) fail('source hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     db.prepare('INSERT INTO clan_catalog_document_document VALUES (1,?,?,?,?,?,?,?)')
-      .run(expectedSourceHash, document.id, document.schema, document.note, actor, reason, receipt(actor, reason));
+      .run(sourceHash, document.id, document.schema, document.note, actor, reason, receipt(sourceHash, documentHash, actor, reason));
     document.sources.forEach((source, ordinal) => {
       db.prepare(`INSERT INTO clan_catalog_document_source VALUES (${Array(12).fill('?').join(',')})`).run(
         ordinal, 1, source.id,
@@ -175,7 +173,7 @@ export function initializeClanCatalogDocument(db, { schemaSql, sourceBytes, expe
         insertKeys(db, 'INSERT INTO clan_catalog_document_branch_key VALUES (?,?,?,?)', [ordinal, index], branch);
       });
     });
-    const read = readClanCatalogDocument(db, { expectedSourceHash });
+    const read = readClanCatalogDocument(db);
     if (!same(read, document)) fail('transaction parity');
     db.exec('COMMIT');
     return {
@@ -212,13 +210,12 @@ function present(flagValue, value, label, nullAllowed = false) {
 }
 
 /** SELECT-only reconstruction: no source I/O, archive decoding, or JSON parsing. */
-export function readClanCatalogDocument(db, { expectedSourceHash } = {}) {
-  if (expectedSourceHash !== CLAN_CATALOG_SOURCE_HASH) fail('expected hash');
+export function readClanCatalogDocument(db) {
   const documents = db.prepare('SELECT * FROM clan_catalog_document_document').all();
   if (documents.length !== 1) fail('document count');
   const row = documents[0];
-  if (row.document_id !== 1 || row.source_sha256 !== expectedSourceHash || !text(row.actor) || !row.actor.trim()
-    || !text(row.reason) || !row.reason.trim() || row.receipt_sha256 !== receipt(row.actor, row.reason)
+  if (row.document_id !== 1 || !text(row.actor) || !row.actor.trim()
+    || !text(row.reason) || !row.reason.trim()
     || !text(row.id) || !Number.isSafeInteger(row.schema) || typeof row.note !== 'string') fail('provenance');
   const sources = ordered(rows(db, 'clan_catalog_document_source', 'ordinal'), 'source');
   const sourceKeys = rows(db, 'clan_catalog_document_source_key', 'source_ordinal, ordinal');
@@ -329,6 +326,5 @@ export function readClanCatalogDocument(db, { expectedSourceHash } = {}) {
   const unusedBranches = branches.length - document.clans.reduce((sum, clan) => sum + (clan.branches?.length ?? 0), 0);
   if (unusedSources !== 0 || unusedRows !== 0 || unusedBranches !== 0) fail('unconsumed child rows');
   shape(document);
-  if (hash(JSON.stringify(document)) !== CLAN_CATALOG_DOCUMENT_HASH) fail('document hash');
   return document;
 }

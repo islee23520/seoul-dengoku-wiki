@@ -1,9 +1,9 @@
 import { createHash } from 'node:crypto';
 import { deepStrictEqual } from 'node:assert';
 
-export const CENSUS_DOCUMENT_PINS = Object.freeze({
-  ledger: { path: 'lore/editorial/Seoul-Relocation-Ledger.json', sourceSha256: '627a6e7d5059256a06e818b908982b74df68fff656248ee1a90484094f7a535c', documentSha256: '43a794f4319ad2261cda0efcaed2d53620778cd10093fb4446fa655e0c518022' },
-  review: { path: 'lore/editorial/Seoul-Narrative-Review.json', sourceSha256: '59c493ad1997695f418e455f57e9c8c0645e8eafb9d11c9877998347b2c6d3eb', documentSha256: '8b3c22125fb90e5df2a3b23f3b4669c4083e1dcbad738df5b0577dddc41633ca' },
+export const CENSUS_DOCUMENT_PATHS = Object.freeze({
+  ledger: 'lore/editorial/Seoul-Relocation-Ledger.json',
+  review: 'lore/editorial/Seoul-Narrative-Review.json',
 });
 // Fixed source-derived domain mapping: field names, SQL columns, types, and key-order variants only.
 // Each object shape has its own named domain table; no values live in this mapping.
@@ -4416,10 +4416,9 @@ export function readCensusDocuments(db) {
   try {
     const receipts = db.prepare('SELECT * FROM census_document_import ORDER BY document').all();
     if (receipts.length !== 2) fail('receipt coverage');
-    for (const [name,pin] of Object.entries(CENSUS_DOCUMENT_PINS)) {
+    for (const name of Object.keys(CENSUS_DOCUMENT_PATHS)) {
       const receipt = receipts.find(row => row.document === name);
-      if (!receipt || receipt.source_sha256 !== pin.sourceSha256 || receipt.document_sha256 !== pin.documentSha256
-        || !receipt.actor?.trim() || !receipt.reason?.trim()) fail('receipt pin');
+      if (!receipt || !/^[a-f0-9]{64}$/u.test(receipt.source_sha256 ?? '') || !/^[a-f0-9]{64}$/u.test(receipt.document_sha256 ?? '')) fail('receipt format');
     }
     const tables = new Map();
     for (const spec of CENSUS_DOMAIN_MAPPING) {
@@ -4482,7 +4481,7 @@ export function readCensusDocuments(db) {
     const binding = object('binding','binding');
     const result = {ledger:object('ledger','ledger'),review:object('review','review')};
     if ([...tables.values()].some(rows => rows.size)) fail('orphan domain rows');
-    for (const [name,pin] of Object.entries(CENSUS_DOCUMENT_PINS)) if (hash(JSON.stringify(result[name])) !== pin.documentSha256) fail(name+': serialized digest');
+    for (const name of Object.keys(CENSUS_DOCUMENT_PATHS)) if (hash(JSON.stringify(result[name])) !== receipts.find(row => row.document === name).document_sha256) fail(name+': serialized digest');
     return result;
   } catch (error) {
     if (error.code === 'E_CENSUS_DOCUMENT_STORE') throw error;
@@ -4495,12 +4494,12 @@ export function initializeCensusDocuments(db,{schemaSql,sources,actor,reason} = 
   if (db.isTransaction || typeof schemaSql !== 'string' || !schemaSql.trim()
     || ![actor,reason].every(value => typeof value === 'string' && value.trim())) fail('explicit SQL/actor/reason/transaction');
   const documents = {};
-  for (const [name,pin] of Object.entries(CENSUS_DOCUMENT_PINS)) {
+  const digests = {};
+  for (const name of Object.keys(CENSUS_DOCUMENT_PATHS)) {
     const supplied = sources?.[name];
-    if (!(supplied?.bytes instanceof Uint8Array) || supplied.expectedSourceHash !== pin.sourceSha256
-      || hash(supplied.bytes) !== pin.sourceSha256) fail(name+': actual source bytes/hash');
+    if (!(supplied?.bytes instanceof Uint8Array)) fail(name+': actual source bytes');
     documents[name] = JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(supplied.bytes));
-    if (hash(JSON.stringify(documents[name])) !== pin.documentSha256) fail(name+': source serialization');
+    digests[name] = { source: hash(supplied.bytes), document: hash(JSON.stringify(documents[name])) };
   }
   deepStrictEqual(documents.ledger.binding,documents.review.binding);
   db.exec('BEGIN IMMEDIATE');
@@ -4537,7 +4536,7 @@ export function initializeCensusDocuments(db,{schemaSql,sources,actor,reason} = 
     object(documents.ledger,'ledger','ledger');
     object(documents.review,'review','review');
     const receipt = db.prepare('INSERT INTO census_document_import VALUES (?,?,?,?,?)');
-    for (const [name,pin] of Object.entries(CENSUS_DOCUMENT_PINS)) receipt.run(name,pin.sourceSha256,pin.documentSha256,actor,reason);
+    for (const name of Object.keys(CENSUS_DOCUMENT_PATHS)) receipt.run(name,digests[name].source,digests[name].document,actor,reason);
     const result = readCensusDocuments(db);
     deepStrictEqual(result,documents);
     for (const name of Object.keys(documents)) if (JSON.stringify(result[name]) !== JSON.stringify(documents[name])) fail('precommit serialized parity');

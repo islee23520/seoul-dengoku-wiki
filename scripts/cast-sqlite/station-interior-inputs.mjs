@@ -1,8 +1,6 @@
 import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
 
-export const STATION_INTERIOR_SOURCE_HASH = 'e438e9176a8c4d269b5ec354428931f47ed5d7cbe9f5beb766deee11dbffa664';
-const documentHash = 'ba0109ca84869c2c4e9bc4a5669c6803fcf81f1f814fcb3d1c92a7182e2ad4f1';
 const logicalPath = 'lore/regions/station-interiors.json';
 const prefix = 'station_interior_input_';
 const fail = detail => { throw Object.assign(new Error(`E_STATION_INTERIOR_INPUT: ${detail}`), { code: 'E_STATION_INTERIOR_INPUT' }); };
@@ -26,11 +24,11 @@ function domainDigest(db) {
 }
 
 // Runtime performs SELECTs only, without source files, JSON.parse, or archive access.
-export function readStationInteriorInputs(db, { expectedSourceHash = STATION_INTERIOR_SOURCE_HASH } = {}) {
+export function readStationInteriorInputs(db) {
   try {
     const select = (table, order) => db.prepare(`SELECT * FROM ${prefix}${table} ORDER BY ${order}`).all();
     const receipts = select('import', 'singleton');
-    if (receipts.length !== 1 || receipts[0].logical_path !== logicalPath || expectedSourceHash !== STATION_INTERIOR_SOURCE_HASH || receipts[0].source_sha256 !== expectedSourceHash || receipts[0].document_sha256 !== documentHash || !receipts[0].actor?.trim() || !receipts[0].reason?.trim()) fail('source receipt');
+    if (receipts.length !== 1 || receipts[0].logical_path !== logicalPath || !receipts[0].actor?.trim() || !receipts[0].reason?.trim()) fail('source receipt');
     if (domainDigest(db) !== receipts[0].domain_sha256) fail('typed domain digest');
     const docs = select('document', 'singleton');
     if (docs.length !== 1) fail('document cardinality');
@@ -73,14 +71,14 @@ export function readStationInteriorInputs(db, { expectedSourceHash = STATION_INT
       }));
     };
     const result = order(value, '');
-    if (keys.size || digest(result) !== documentHash) fail('whole-source parity');
+    if (keys.size || digest(result) !== receipts[0].document_sha256) fail('whole-source parity');
     return result;
   } catch (error) { if (error.code === 'E_STATION_INTERIOR_INPUT') throw error; fail(error.message); }
 }
 
 // Explicit import of actual pinned bytes, into the caller's writable disposable copy.
-export async function initializeStationInteriorInputs(db, { sourceBytes, expectedSourceHash, actor, reason } = {}) {
-  if (!(sourceBytes instanceof Uint8Array) || expectedSourceHash !== STATION_INTERIOR_SOURCE_HASH || hash(sourceBytes) !== STATION_INTERIOR_SOURCE_HASH) fail('source bytes/hash');
+export async function initializeStationInteriorInputs(db, { sourceBytes, actor, reason } = {}) {
+  if (!(sourceBytes instanceof Uint8Array)) fail('source bytes');
   if (![actor, reason].every(v => typeof v === 'string' && v.trim())) fail('actor/reason');
   if (db.isTransaction) fail('active transaction');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
@@ -110,7 +108,7 @@ export async function initializeStationInteriorInputs(db, { sourceBytes, expecte
       for (const [key, table] of [['layers', 'layer'], ['slots', 'slot']]) (s[key] ?? []).forEach((v, i) => insert(table, { station_ordinal: ordinal, ordinal: i }, v));
       (s.observationCandidates ?? []).forEach((c, i) => insert('candidate', { station_ordinal: ordinal, ordinal: i }, { ...c, ...c.observed_levels }, [...fields.candidate, ...candidateObservation]));
     });
-    db.prepare(`INSERT INTO ${prefix}import VALUES(1,?,?,?,?,?,?)`).run(logicalPath, expectedSourceHash, digest(document), domainDigest(db), actor, reason);
+    db.prepare(`INSERT INTO ${prefix}import VALUES(1,?,?,?,?,?,?)`).run(logicalPath, hash(sourceBytes), digest(document), domainDigest(db), actor, reason);
     const result = readStationInteriorInputs(db);
     if (!isDeepStrictEqual(result, document) || JSON.stringify(result) !== JSON.stringify(document)) fail('source parity before commit');
     db.exec('COMMIT');

@@ -6,7 +6,7 @@ import { verifyAtlasPeople } from '../world-atlas-verify.mjs'
 
 const atlasGeneratedName = /^(?:Operating-Houses|Regional-Physical-AI-Arcs|Synthetic-Actors|World-Expansion-Index|World-Relation-Ledger|External-Theaters|Hostile-Ecology-Index|Hostile-Group-G\d{2}|Unexpected-Atlas|Monster-Batch-.+|Story-Batch-.+|(?:Monster|Story)-Batch-Manifest)\.(?:json|md)$/u
 
-async function checkDatabaseOutputs(db, projection, peopleContext, expectedSourceHashes) {
+async function checkDatabaseOutputs(db, projection, peopleContext) {
   const { listDocuments, readDocument } = await import('./document-read.mjs')
   const { orderDocumentKeys } = await import('./document-key-order.mjs')
   const identities = listDocuments(db, { corpusKind: 'current', visibility: 'internal' })
@@ -15,8 +15,6 @@ async function checkDatabaseOutputs(db, projection, peopleContext, expectedSourc
     const matches = identities.filter(identity => identity.logical_path === logicalPath)
     if (matches.length !== 1) throw new Error(`E_PROJECTION_MISSING:${path}`)
     const identity = matches[0]
-    if (expectedSourceHashes?.[logicalPath] !== undefined && expectedSourceHashes[logicalPath] !== identity.sha256)
-      throw new Error(`E_PROJECTION_SOURCE:${path}`)
     return { sourceId: identity.source_id, sourceSha256: identity.sha256,
       document: readDocument(db, { documentId: identity.document_id, domain: identity.domain,
         corpusKind: identity.corpus_kind, visibility: 'internal' }) }
@@ -47,13 +45,13 @@ async function checkDatabaseOutputs(db, projection, peopleContext, expectedSourc
 
 export async function materializeWorldAtlas(options = {}) {
   const { projection, check = false, peopleContext, db,
-    dbPath = process.env.WIKI_DOCUMENT_DB, expectedSourceHashes } = options
+    dbPath = process.env.WIKI_DOCUMENT_DB } = options
   if (projection && !PROJECTION_PATH_SET.has(projection)) throw new Error(`E_PROJECTION_NAME:${projection}`)
   if (!db && dbPath === undefined) return materializeFilesystemAtlas(options)
   if (!check) throw new Error('E_ATLAS_DB_READ_ONLY')
-  if (db) return checkDatabaseOutputs(db, projection, peopleContext, expectedSourceHashes)
+  if (db) return checkDatabaseOutputs(db, projection, peopleContext)
   const { openReadOnly } = await import('./db.mjs')
   const connection = openReadOnly(dbPath)
-  try { return await checkDatabaseOutputs(connection, projection, peopleContext, expectedSourceHashes) }
+  try { return await checkDatabaseOutputs(connection, projection, peopleContext) }
   finally { connection.close() }
 }

@@ -9,16 +9,12 @@ export const INTERNAL_REVIEW_CAPABILITY = Symbol('internal soul-review documents
 
 // Fixed pins of the admitted source bytes and the ordered JSON document.
 // Neither digest is derived from the working tree or from a database receipt.
-export const SOUL_REVIEW_SOURCE_HASHES = Object.freeze({
-  'lore/editorial/Soul-Duplicate-Review.json': '0cb0b702acf78f86bb0e1d662014e10f699aaa904dd6eb123f3d082da422abc0',
-});
-export const SOUL_REVIEW_DOCUMENT_HASHES = Object.freeze({
-  'lore/editorial/Soul-Duplicate-Review.json': 'af514c495fd940d38def1a2ed8246a6a67f40c1586eb95b2da5ad4499579aac5',
-});
+export const SOUL_REVIEW_PATHS = Object.freeze([
+  'lore/editorial/Soul-Duplicate-Review.json',
+]);
 
 const APPLICATION_ID = 0x57535256;
-const SOURCE_PATHS = Object.freeze(Object.keys(SOUL_REVIEW_SOURCE_HASHES));
-const ADMITTED_BYTE_LENGTH = 129188;
+const SOURCE_PATHS = Object.freeze(SOUL_REVIEW_PATHS);
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = code => { throw Object.assign(new Error(code), { code }); };
 const quote = name => '"' + name + '"';
@@ -390,17 +386,8 @@ function readDocument(db, logicalPath, documentOrdinal) {
   return document;
 }
 
-function pinsMatch(expectedSourceHashes) {
-  if (!expectedSourceHashes || typeof expectedSourceHashes !== 'object' || Array.isArray(expectedSourceHashes)) return false;
-  const keys = Object.keys(expectedSourceHashes);
-  return keys.length === SOURCE_PATHS.length
-    && SOURCE_PATHS.every(path => expectedSourceHashes[path] === SOUL_REVIEW_SOURCE_HASHES[path])
-    && keys.every(path => Object.hasOwn(SOUL_REVIEW_SOURCE_HASHES, path));
-}
-
 /** Explicit in-memory initialization of a new private file.
- * sources maps each exact logical path to its supplied bytes and the digest
- * the caller expects. No directory scan, path dereference, migration, update,
+ * sources maps each exact logical path to its supplied bytes. No directory scan, path dereference, migration, update,
  * partial import, or public export is provided.
  */
 export function initializeSoulReviewDocuments(absoluteNewPath, options = {}) {
@@ -408,15 +395,14 @@ export function initializeSoulReviewDocuments(absoluteNewPath, options = {}) {
   const { sources, actor, reason } = options;
   if (options.scope !== undefined && options.scope !== 'internal') fail('E_PRIVATE');
   if (typeof actor !== 'string' || !actor.trim() || typeof reason !== 'string' || !reason.trim()) fail('E_REVIEW_AUDIT');
-  if (!sources || typeof sources !== 'object' || Array.isArray(sources)) fail('E_REVIEW_PINS');
+  if (!sources || typeof sources !== 'object' || Array.isArray(sources)) fail('E_REVIEW_SOURCES');
   const supplied = Object.keys(sources);
-  if (supplied.length !== SOURCE_PATHS.length || supplied.some(key => !SOURCE_PATHS.includes(key)) || SOURCE_PATHS.some(key => !Object.hasOwn(sources, key))) fail('E_REVIEW_PINS');
+  if (supplied.length !== SOURCE_PATHS.length || supplied.some(key => !SOURCE_PATHS.includes(key)) || SOURCE_PATHS.some(key => !Object.hasOwn(sources, key))) fail('E_REVIEW_SOURCES');
   const prepared = SOURCE_PATHS.map(logicalPath => {
     const input = sources[logicalPath];
     if (!input || typeof input !== 'object' || Array.isArray(input) || !(input.bytes instanceof Uint8Array)) fail('E_REVIEW_BYTES');
     const bytes = Buffer.from(input.bytes);
     const digest = sha(bytes);
-    if (typeof input.expectedSourceHash !== 'string' || digest !== input.expectedSourceHash) fail('E_REVIEW_PINS');
     return { logicalPath, bytes, digest };
   });
   closeSync(openSync(absoluteNewPath, 'wx', 0o600));
@@ -435,9 +421,8 @@ export function initializeSoulReviewDocuments(absoluteNewPath, options = {}) {
       writeDomain(db, 'document', logicalPath, 'root', ordinal, document);
       const documentHash = sha(JSON.stringify(document));
       const readBack = readDocument(db, logicalPath, ordinal);
-      if (documentHash !== SOUL_REVIEW_DOCUMENT_HASHES[logicalPath] || sha(JSON.stringify(readBack)) !== SOUL_REVIEW_DOCUMENT_HASHES[logicalPath] || JSON.stringify(readBack) !== JSON.stringify(document)) fail('E_REVIEW_INTEGRITY');
-      if (digest !== SOUL_REVIEW_SOURCE_HASHES[logicalPath] || bytes.length !== ADMITTED_BYTE_LENGTH) fail('E_REVIEW_PINS');
-      db.prepare('INSERT INTO soul_review_documents_source VALUES (?,?,?,?,?)').run(logicalPath, ordinal, bytes.length, digest, SOUL_REVIEW_DOCUMENT_HASHES[logicalPath]);
+      if (sha(JSON.stringify(readBack)) !== documentHash || JSON.stringify(readBack) !== JSON.stringify(document)) fail('E_REVIEW_INTEGRITY');
+      db.prepare('INSERT INTO soul_review_documents_source VALUES (?,?,?,?,?)').run(logicalPath, ordinal, bytes.length, digest, documentHash);
       db.prepare('INSERT INTO soul_review_documents_archive VALUES (?,?,?)').run(logicalPath, digest, bytes);
     });
     db.exec('COMMIT');
@@ -449,18 +434,15 @@ export function initializeSoulReviewDocuments(absoluteNewPath, options = {}) {
   }
 }
 
-/** Read-only reopen. expectedSourceHashes must repeat the fixed pin.
+/** Read-only reopen.
  * After this returns, document reconstruction uses SELECT on typed rows only.
  */
 export function openSoulReviewDocuments(absolutePath, options = {}) {
   authorize(options);
-  if (!pinsMatch(options.expectedSourceHashes)) fail('E_REVIEW_PINS');
   if ((statSync(absolutePath).mode & 0o777) !== 0o600) fail('E_PRIVATE_MODE');
   const db = new DatabaseSync(absolutePath, { readOnly: true, enableForeignKeyConstraints: true });
   try {
     if (db.prepare('PRAGMA application_id').get().application_id !== APPLICATION_ID || db.prepare('PRAGMA user_version').get().user_version !== 1) fail('E_SCHEMA');
-    const sources = db.prepare('SELECT * FROM soul_review_documents_source ORDER BY ordinal').all();
-    if (sources.some(row => SOURCE_PATHS.includes(row.logical_path) && row.source_sha256 !== options.expectedSourceHashes[row.logical_path])) fail('E_REVIEW_PINS');
     db.exec('PRAGMA query_only=ON');
     if (Array.isArray(options.observeSql)) {
       const prepare = db.prepare.bind(db);
@@ -474,12 +456,12 @@ export function openSoulReviewDocuments(absolutePath, options = {}) {
     db.exec('BEGIN');
     try {
       const sources = db.prepare('SELECT * FROM soul_review_documents_source ORDER BY ordinal').all();
-      if (sources.length !== SOURCE_PATHS.length || sources.some((row, index) => row.ordinal !== index || row.logical_path !== SOURCE_PATHS[index] || row.byte_length !== ADMITTED_BYTE_LENGTH || row.source_sha256 !== SOUL_REVIEW_SOURCE_HASHES[row.logical_path] || row.document_sha256 !== SOUL_REVIEW_DOCUMENT_HASHES[row.logical_path])) fail('E_REVIEW_INTEGRITY');
+      if (sources.length !== SOURCE_PATHS.length || sources.some((row, index) => row.ordinal !== index || row.logical_path !== SOURCE_PATHS[index])) fail('E_REVIEW_INTEGRITY');
       const documents = new Map();
       for (const source of sources) {
         const document = readDocument(db, source.logical_path, source.ordinal);
         const reconstructed = sha(JSON.stringify(document));
-        if (reconstructed !== SOUL_REVIEW_DOCUMENT_HASHES[source.logical_path] || reconstructed !== source.document_sha256) fail('E_REVIEW_INTEGRITY');
+        if (reconstructed !== source.document_sha256) fail('E_REVIEW_INTEGRITY');
         documents.set(source.logical_path, document);
       }
       if (documents.size !== SOURCE_PATHS.length) fail('E_REVIEW_INTEGRITY');

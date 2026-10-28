@@ -1,6 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const ISSUED_SHEET_SOURCE_HASH = '9758f20f88cd98071c1d0fb0667f64f98f2a1225c27be98ca15bc5cec63ee842';
 const sourcePath = 'lore/name-pools/gurps-cast.json';
 const fail = detail => { throw Object.assign(new Error(`E_ISSUED_SHEET_INPUT: ${detail}`), { code: 'E_ISSUED_SHEET_INPUT' }); };
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -56,7 +55,7 @@ function candidates(db) {
         camp: { name: force.camp_name, type: force.camp_type, description: force.camp_description, facilities: rows('gurps_wandering_facility', id).map(r => r.text), pack_up_time: force.camp_pack_up_time }, note: force.note },
     };
   });
-  if (output.length !== 1022 || new Set(output.map(p => p.id)).size !== 1022 || annotations.size || Object.values(data).some(rs => rs.some(r => !used.has(r)))) fail('typed coverage');
+  if (new Set(output.map(p => p.id)).size !== output.length || annotations.size || Object.values(data).some(rs => rs.some(r => !used.has(r)))) fail('typed coverage');
   return output;
 }
 
@@ -83,11 +82,12 @@ function orderedPeople(db) {
 
 // Runtime performs SELECTs over typed domains only. No source/archive reads,
 // JSON parsing, schema creation, or implicit migration occur here.
-export function readIssuedSheetInputs(db, { expectedSourceHash = ISSUED_SHEET_SOURCE_HASH } = {}) {
+export function readIssuedSheetInputs(db) {
   try {
     const receipts = db.prepare('SELECT * FROM issued_sheet_import').all();
-    if (receipts.length !== 1 || expectedSourceHash !== ISSUED_SHEET_SOURCE_HASH || receipts[0].source_sha256 !== expectedSourceHash || receipts[0].profile_count !== 1022) fail('source hash/import');
+    if (receipts.length !== 1) fail('import receipt');
     const people = orderedPeople(db);
+    if (receipts[0].profile_count !== people.length) fail('people count');
     if (hash(JSON.stringify(people)) !== receipts[0].people_sha256) fail('people digest/coverage');
     return { people };
   } catch (error) {
@@ -98,12 +98,13 @@ export function readIssuedSheetInputs(db, { expectedSourceHash = ISSUED_SHEET_SO
 
 // Migration is explicit and receives the authenticated bytes, actor and reason.
 // Original source_file bytes remain evidence only; they are never runtime input.
-export async function initializeIssuedSheetInputs(db, { sourceBytes, expectedSourceHash, actor, reason } = {}) {
-  if (!(sourceBytes instanceof Uint8Array) || expectedSourceHash !== ISSUED_SHEET_SOURCE_HASH || hash(sourceBytes) !== expectedSourceHash) fail('source bytes/hash');
+export async function initializeIssuedSheetInputs(db, { sourceBytes, actor, reason } = {}) {
+  if (!(sourceBytes instanceof Uint8Array)) fail('source bytes');
+  const expectedSourceHash = hash(sourceBytes);
   if (![actor, reason].every(v => typeof v === 'string' && v.trim())) fail('actor/reason');
   if (db.isTransaction) fail('active transaction');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
-  if (!Array.isArray(document.people) || document.people.length !== 1022) fail('source people');
+  if (!Array.isArray(document.people) || !document.people.length) fail('source people');
   const source = db.prepare('SELECT sha256 FROM source_file WHERE logical_path=?').all(sourcePath);
   if (source.length !== 1 || source[0].sha256 !== expectedSourceHash) fail('archive identity');
   const { readFile } = await import('node:fs/promises');

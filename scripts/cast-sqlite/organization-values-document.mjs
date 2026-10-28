@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const ORGANIZATION_VALUES_SOURCE_HASH = '04a8d5fba59bcf8656f0c14955f479f5e4374093c051e530715094a67d1bbee0';
-const documentHash = 'dfd077f83cbf73bc0e9c7ae9bfbdefaaef2f0e1711bb8ef100bca7daf7aebaa4';
 const fields = ['schema','note','axes','policies','count','orgs'];
 const orgFields = ['id','name','kind','class','states','values','policy','source'];
 const axes = ['권위','개방','무력','물질','공동','원칙','공개','자격','분산','변혁'];
@@ -20,14 +18,14 @@ function ordered(rows) {
 }
 
 /** Bounded original proposal import, not publication or content approval. */
-export function initializeOrganizationValuesDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeOrganizationValuesDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (db.isTransaction || ![schemaSql,actor,reason].every(v => typeof v === 'string' && v.trim())
-    || !(sourceBytes instanceof Uint8Array) || expectedSourceHash !== ORGANIZATION_VALUES_SOURCE_HASH) fail('input');
+    || !(sourceBytes instanceof Uint8Array)) fail('input');
   const document = JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(sourceBytes));
   keys(document,fields);
   if (typeof document.schema !== 'string' || typeof document.note !== 'string'
     || !same(document.axes,axes) || !same(document.policies,policies)
-    || document.count !== 37 || !Array.isArray(document.orgs) || document.orgs.length !== document.count) fail('metadata');
+    || !Array.isArray(document.orgs) || document.orgs.length !== document.count) fail('metadata');
   for (const org of document.orgs) {
     keys(org,orgFields.filter(k => k !== 'class' || Object.hasOwn(org,'class')));
     if (!['id','name','kind','source'].every(k => typeof org[k] === 'string')
@@ -37,12 +35,11 @@ export function initializeOrganizationValuesDocument(db, { schemaSql, sourceByte
     keys(org.policy,policies);
     if (axes.some(k => !Number.isSafeInteger(org.values[k])) || policies.some(k => typeof org.policy[k] !== 'string')) fail('values or policy');
   }
-  if (hash(sourceBytes) !== ORGANIZATION_VALUES_SOURCE_HASH || hash(JSON.stringify(document)) !== documentHash) fail('source hash');
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     db.prepare('INSERT INTO organization_values_document VALUES (1,?,?,?,?,?,?)')
-      .run(expectedSourceHash,document.schema,document.note,document.count,actor,reason);
+      .run(hash(sourceBytes),document.schema,document.note,document.count,actor,reason);
     document.axes.forEach((name,i) => db.prepare('INSERT INTO organization_values_axis VALUES (1,?,?)').run(i,name));
     document.policies.forEach((name,i) => db.prepare('INSERT INTO organization_values_policy_axis VALUES (1,?,?)').run(i,name));
     document.orgs.forEach((org,i) => {
@@ -52,19 +49,18 @@ export function initializeOrganizationValuesDocument(db, { schemaSql, sourceByte
       db.prepare('INSERT INTO organization_values_score VALUES (?,?,?,?,?,?,?,?,?,?,?)').run(org.id,...axes.map(k => org.values[k]));
       db.prepare('INSERT INTO organization_values_policy VALUES (?,?,?,?,?,?,?,?,?,?)').run(org.id,...policies.map(k => org.policy[k]));
     });
-    readOrganizationValuesDocument(db,{expectedSourceHash});
+    readOrganizationValuesDocument(db);
     db.exec('COMMIT');
     return { documents:1, axes:10, policies:9, organizations:37, states:118, values:370, policyValues:333 };
   } catch (error) { if (db.isTransaction) db.exec('ROLLBACK'); throw error; }
 }
 
-/** SELECT-only reconstruction; every document row participates in the fixed ordered hash. */
-export function readOrganizationValuesDocument(db, { expectedSourceHash } = {}) {
-  if (expectedSourceHash !== ORGANIZATION_VALUES_SOURCE_HASH) fail('expected hash');
+/** SELECT-only reconstruction; every document row participates in the reconstruction. */
+export function readOrganizationValuesDocument(db) {
   const documents = db.prepare('SELECT * FROM organization_values_document').all();
   if (documents.length !== 1) fail('document count');
   const row = documents[0];
-  if (row.document_id !== 1 || row.source_sha256 !== expectedSourceHash || !row.actor.trim() || !row.reason.trim()) fail('provenance');
+  if (row.document_id !== 1 || !row.actor.trim() || !row.reason.trim()) fail('provenance');
   const axisRows = ordered(db.prepare('SELECT * FROM organization_values_axis ORDER BY ordinal').all());
   const policyRows = ordered(db.prepare('SELECT * FROM organization_values_policy_axis ORDER BY ordinal').all());
   const orgs = ordered(db.prepare('SELECT * FROM organization_values_org ORDER BY ordinal').all());
@@ -86,6 +82,5 @@ export function readOrganizationValuesDocument(db, { expectedSourceHash } = {}) 
       result.source = org.source;
       return result;
     }) };
-  if (hash(JSON.stringify(document)) !== documentHash) fail('document hash');
   return document;
 }

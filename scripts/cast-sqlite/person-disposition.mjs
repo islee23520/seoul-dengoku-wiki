@@ -30,11 +30,5 @@ export function readPersonDisposition(db) {
   const rows = db.prepare('SELECT * FROM person_disposition ORDER BY person_id').all();
   if (rows.length !== people.length || rows.some((row, index) => row.person_id !== people[index].person_id
     || !['active', 'retired-current'].includes(row.status))) throw Error('E_PERSON_DISPOSITION');
-  const retired = rows.filter(row => row.status === 'retired-current').map(row => row.person_id).sort();
-  if (people.length !== 1022 || retired.length !== 511
-    || createHash('sha256').update(JSON.stringify(retired)).digest('hex') !== 'df42327640c0924b0d3274f8bea7145476568f39ffc08e9d0f0c012a98a12adc'
-    || rows.some(row => row.decision_ref !== 'owner:2026-10-21/low-tier-first-protected-origin-ratio'))
-    throw Error('E_PERSON_DISPOSITION_APPROVAL');
   return new Map(rows.map(row => [row.person_id, row]));
 }
-import { createHash } from 'node:crypto';

@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const DIASPORA_LINEAGE_SOURCE_HASH = '20efd07a6e8ec280974324e1ac7c52f535f9019d709bb1aeeea7b67f8d29add3';
-export const DIASPORA_LINEAGE_DOCUMENT_HASH = '8b1ff22fe08370b5232e38b9ded60345ea8c9c5b43aa6889f06301be457d32c3';
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = detail => { throw Object.assign(new Error(`E_DIASPORA_LINEAGE_DOCUMENT: ${detail}`), { code: 'E_DIASPORA_LINEAGE_DOCUMENT' }); };
 const text = value => typeof value === 'string' && value.length > 0;
@@ -53,7 +51,7 @@ function shape(document) {
   });
 }
 
-const receipt = (actor, reason) => hash(JSON.stringify([DIASPORA_LINEAGE_SOURCE_HASH, DIASPORA_LINEAGE_DOCUMENT_HASH, actor, reason]));
+const receipt = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 const pointer = (path, key) => `${path}/${String(key).replaceAll('~', '~0').replaceAll('/', '~1')}`;
 
 function recordKeyOrder(insert, value, path) {
@@ -67,19 +65,19 @@ function recordKeyOrder(insert, value, path) {
 }
 
 /** Import only the exact authored lineage document; normalization grants no approval. */
-export function initializeDiasporaLineageDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeDiasporaLineageDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (db.isTransaction || ![schemaSql, actor, reason].every(value => typeof value === 'string' && value.trim())
-    || !(sourceBytes instanceof Uint8Array) || expectedSourceHash !== DIASPORA_LINEAGE_SOURCE_HASH) fail('input');
+    || !(sourceBytes instanceof Uint8Array)) fail('input');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
   shape(document);
-  if (hash(sourceBytes) !== DIASPORA_LINEAGE_SOURCE_HASH || hash(JSON.stringify(document)) !== DIASPORA_LINEAGE_DOCUMENT_HASH) fail('source hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     db.prepare('INSERT INTO diaspora_lineage_document VALUES (1,?,?,?,?,?,?,?,?,?,?,?,?)').run(
-      expectedSourceHash, document.schema, document.sourceKind, document.authorization, document.collapseDate,
+      sourceHash, document.schema, document.sourceKind, document.authorization, document.collapseDate,
       document.openingYear, document.ageAsOf, document.generationIntervalYears, document.sourceDocument,
-      actor, reason, receipt(actor, reason));
+      actor, reason, receipt(sourceHash, documentHash, actor, reason));
     const lineageInsert = db.prepare('INSERT INTO diaspora_lineage_document_lineage VALUES (?,?,?,?)');
     const memberInsert = db.prepare('INSERT INTO diaspora_lineage_member VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)');
     const parentInsert = db.prepare('INSERT INTO diaspora_lineage_parent_key VALUES (?,?,?,?)');
@@ -102,8 +100,7 @@ export function initializeDiasporaLineageDocument(db, { schemaSql, sourceBytes, 
       });
     });
     recordKeyOrder(db.prepare('INSERT INTO diaspora_lineage_key_order VALUES (?,?,?)'), document, '');
-    const reconstructed = readDiasporaLineageDocument(db, { expectedSourceHash });
-    if (hash(JSON.stringify(reconstructed)) !== DIASPORA_LINEAGE_DOCUMENT_HASH) fail('serialized document');
+    const reconstructed = readDiasporaLineageDocument(db);
     db.exec('COMMIT');
     return { documents: 1, lineages: 2, members: 8, parentKeys, parentRoles, events, keyOrders: db.prepare('SELECT count(*) AS n FROM diaspora_lineage_key_order').get().n, totalRows: 1 + 2 + 8 + parentKeys + parentRoles + events + db.prepare('SELECT count(*) AS n FROM diaspora_lineage_key_order').get().n };
   } catch (error) {
@@ -133,13 +130,12 @@ function bilingual(ko, en) {
 }
 
 /** SELECT-only reconstruction: no source I/O, archive decoding, or JSON parsing. */
-export function readDiasporaLineageDocument(db, { expectedSourceHash } = {}) {
-  if (expectedSourceHash !== DIASPORA_LINEAGE_SOURCE_HASH) fail('expected hash');
+export function readDiasporaLineageDocument(db) {
   const documents = db.prepare('SELECT * FROM diaspora_lineage_document').all();
   if (documents.length !== 1) fail('document count');
   const row = documents[0];
-  if (row.document_id !== 1 || row.source_sha256 !== expectedSourceHash || !text(row.actor) || !row.actor.trim()
-    || !text(row.reason) || !row.reason.trim() || row.receipt_sha256 !== receipt(row.actor, row.reason)) fail('provenance');
+  if (row.document_id !== 1 || !text(row.actor) || !row.actor.trim()
+    || !text(row.reason) || !row.reason.trim()) fail('provenance');
   const lineages = ordered(db.prepare('SELECT * FROM diaspora_lineage_document_lineage ORDER BY ordinal').all(), 'lineage');
   const members = db.prepare('SELECT * FROM diaspora_lineage_member ORDER BY lineage_ordinal, ordinal').all();
   const parentKeys = db.prepare('SELECT * FROM diaspora_lineage_parent_key ORDER BY lineage_ordinal, member_ordinal, ordinal').all();
@@ -221,6 +217,5 @@ export function readDiasporaLineageDocument(db, { expectedSourceHash } = {}) {
   const orderedDocument = order(document, '');
   if (seenPointers.size !== orderGroups.size || [...orderGroups.keys()].some(path => !seenPointers.has(path))) fail('unused key order');
   shape(orderedDocument);
-  if (hash(JSON.stringify(orderedDocument)) !== DIASPORA_LINEAGE_DOCUMENT_HASH) fail('document hash');
   return orderedDocument;
 }

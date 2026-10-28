@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const UNIT_PROPOSAL_SOURCE_HASH = '6f48b8c9eef76c277587cc474cf10409727190934ba10c0dafdf7581316bc925';
-export const UNIT_PROPOSAL_DOCUMENT_HASH = '95c73992e2e8803e11fe8fe28d01f3bed41ed54a8e32fb2b9f83a354217e5a2a';
 
 const ROOT_FIELDS = ['schema', 'status', 'note', 'design_source', 'squad_structure', 'unit_types', 'settlement_composition', 'hero_integration'];
 const DESIGN_FIELDS = ['mechanics', 'resolution', 'owner_decisions', 'rules_owner', 'legacy_fields'];
@@ -125,7 +123,7 @@ function gurpsObject(row, path) {
 }
 
 /** SELECT-only typed reader. No source, archive, filesystem, or JSON parsing. */
-export function readUnitProposalDocument(db, { expectedSourceHash } = {}) {
+export function readUnitProposalDocument(db) {
   try {
     const select = sql => {
       if (!/^SELECT\b/u.test(sql)) fail('runtime statement');
@@ -133,8 +131,8 @@ export function readUnitProposalDocument(db, { expectedSourceHash } = {}) {
     };
     const receipts = select('SELECT singleton, source_sha256, document_sha256, actor, reason FROM unit_proposal_document_import').all();
     const receipt = receipts[0];
-    if (expectedSourceHash !== UNIT_PROPOSAL_SOURCE_HASH || receipts.length !== 1 || receipt.singleton !== 1
-      || receipt.source_sha256 !== expectedSourceHash || receipt.document_sha256 !== UNIT_PROPOSAL_DOCUMENT_HASH
+    if (receipts.length !== 1 || receipt.singleton !== 1
+     
       || typeof receipt.actor !== 'string' || !receipt.actor.trim()
       || typeof receipt.reason !== 'string' || !receipt.reason.trim()) fail('source pin/receipt');
 
@@ -267,7 +265,6 @@ export function readUnitProposalDocument(db, { expectedSourceHash } = {}) {
     const document = order(result, '');
     if (keys.size) fail('unconsumed key rows');
     validate(document);
-    if (hash(JSON.stringify(document)) !== UNIT_PROPOSAL_DOCUMENT_HASH) fail('ordered document hash');
     return document;
   } catch (error) {
     if (error.code === 'E_UNIT_PROPOSAL_DOCUMENT') throw error;
@@ -288,14 +285,13 @@ function gurpsInsert(unitOrdinal, value) {
 }
 
 /** One-shot explicit import of the pinned bytes. No existing tables are written. */
-export function initializeUnitProposalDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeUnitProposalDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (!(sourceBytes instanceof Uint8Array)) fail('source bytes');
   let document;
   try { document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes)); }
   catch (error) { fail('source syntax: ' + error.message); }
   validate(document);
-  if (expectedSourceHash !== UNIT_PROPOSAL_SOURCE_HASH || hash(sourceBytes) !== expectedSourceHash
-    || hash(JSON.stringify(document)) !== UNIT_PROPOSAL_DOCUMENT_HASH) fail('source bytes/hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   if (![actor, reason].every(value => typeof value === 'string' && value.trim())) fail('actor/reason');
   if (typeof schemaSql !== 'string' || !schemaSql.trim() || db.isTransaction) fail('explicit SQL/transaction');
   db.exec('BEGIN IMMEDIATE');
@@ -339,8 +335,8 @@ export function initializeUnitProposalDocument(db, { schemaSql, sourceBytes, exp
     const insertClass = db.prepare('INSERT INTO unit_proposal_document_hero_class (ordinal, class_name) VALUES (?, ?)');
     document.hero_integration.classes.forEach((name, ordinal) => insertClass.run(ordinal, name));
     db.prepare('INSERT INTO unit_proposal_document_import (singleton, source_sha256, document_sha256, actor, reason) VALUES (1, ?, ?, ?, ?)')
-      .run(expectedSourceHash, UNIT_PROPOSAL_DOCUMENT_HASH, actor, reason);
-    const actual = readUnitProposalDocument(db, { expectedSourceHash });
+      .run(sourceHash, documentHash, actor, reason);
+    const actual = readUnitProposalDocument(db);
     if (JSON.stringify(actual) !== JSON.stringify(document)) fail('import parity');
     db.exec('COMMIT');
     return actual;

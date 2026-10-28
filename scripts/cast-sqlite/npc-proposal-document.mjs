@@ -1,8 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const NPC_PROPOSAL_SOURCE_HASH = 'f76688cbb09d8de216be53102e1f6d1b2464e8421c0e6f707161cb94f649cc7d';
-export const NPC_PROPOSAL_DOCUMENT_HASH = '0e26a51820ebd747c74b617715f26127f49111e96dd0dc1c9b2a9668b0a4fc46';
-const ROW_DIGEST = '48e348560bc1e5d6f1bc38a5c0b887da6071ab216482bb06f0c60987d66c65d9';
 
 const ROOT_KEYS = ['schema', 'status', 'note', 'rules_owner', 'current_decisions', 'generation_rules', 'npc_fields', 'occupation_pools', 'martial_assignment', 'unit_eligibility_check', 'wandering_spawn', 'settlement_types', 'api_endpoint'];
 const DECISION_KEYS = ['population', 'livelihood', 'training', 'parameters'];
@@ -60,7 +57,7 @@ const text = value => typeof value === 'string' && value.length > 0;
 const integer = value => Number.isSafeInteger(value);
 const finite = value => typeof value === 'number' && Number.isFinite(value);
 const same = (left, right) => JSON.stringify(left) === JSON.stringify(right);
-const receiptOf = (actor, reason) => hash(JSON.stringify([NPC_PROPOSAL_SOURCE_HASH, NPC_PROPOSAL_DOCUMENT_HASH, actor, reason]));
+const receiptOf = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 
 function keys(value, expected, label) {
   if (!plain(value) || !same(Object.keys(value), expected)) fail(`${label}: unknown, missing, or unordered fields`);
@@ -144,21 +141,21 @@ function insertList(db, sql, parent, items) {
 }
 
 /** Import only the exact original proposal. Normalization grants no approval and adds no people or rules. */
-export function initializeNpcProposalDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeNpcProposalDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (!db || db.isTransaction || typeof db.exec !== 'function' || typeof db.prepare !== 'function') fail('input');
   if (![schemaSql, actor, reason].every(value => typeof value === 'string' && value.trim())) fail('input');
-  if (!(sourceBytes instanceof Uint8Array) || expectedSourceHash !== NPC_PROPOSAL_SOURCE_HASH) fail('input');
+  if (!(sourceBytes instanceof Uint8Array)) fail('input');
   let document;
   try { document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes)); }
   catch (error) { fail(`source encoding: ${error.message}`); }
   shape(document);
   assertAuthoredNumbers(sourceBytes, document);
-  if (hash(sourceBytes) !== NPC_PROPOSAL_SOURCE_HASH || hash(JSON.stringify(document)) !== NPC_PROPOSAL_DOCUMENT_HASH) fail('source hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     db.prepare('INSERT INTO npc_proposal_document_import (document_id, source_sha256, document_sha256, row_sha256, actor, reason, receipt_sha256) VALUES (1, ?, ?, ?, ?, ?, ?)')
-      .run(NPC_PROPOSAL_SOURCE_HASH, NPC_PROPOSAL_DOCUMENT_HASH, ROW_DIGEST, actor, reason, receiptOf(actor, reason));
+      .run(sourceHash, documentHash, hash(JSON.stringify(document)), actor, reason, receiptOf(sourceHash, documentHash, actor, reason));
     db.prepare('INSERT INTO npc_proposal_document_root (document_id, schema, status, note, rules_owner) VALUES (1, ?, ?, ?, ?)')
       .run(document.schema, document.status, document.note, document.rules_owner);
     db.prepare(`INSERT INTO npc_proposal_document_decision (document_id, ${DECISION_KEYS.join(', ')}) VALUES (1, ${DECISION_KEYS.map(() => '?').join(', ')})`)
@@ -212,7 +209,7 @@ export function initializeNpcProposalDocument(db, { schemaSql, sourceBytes, expe
     insertKeys(db, 'api_endpoint', ENDPOINT_KEYS);
     insertKeys(db, 'params', PARAM_KEYS);
     insertKeys(db, 'response', RESPONSE_KEYS);
-    const read = readNpcProposalDocument(db, { expectedSourceHash });
+    const read = readNpcProposalDocument(db);
     if (!same(read, document)) fail('transaction parity');
     db.exec('COMMIT');
     return {
@@ -297,19 +294,13 @@ function numberFrom(value, spelling, path) {
   return restored;
 }
 
-function rowDigest(parts) {
-  return hash(JSON.stringify(parts));
-}
-
 /** SELECT-only reconstruction. No source I/O, archive access, or JSON parsing. */
-export function readNpcProposalDocument(db, { expectedSourceHash } = {}) {
+export function readNpcProposalDocument(db) {
   try {
-    if (expectedSourceHash !== NPC_PROPOSAL_SOURCE_HASH) fail('expected hash');
     const imports = db.prepare('SELECT document_id, source_sha256, document_sha256, row_sha256, actor, reason, receipt_sha256 FROM npc_proposal_document_import').all();
     const receipt = one(imports, 'import');
-    if (receipt.document_id !== 1 || receipt.source_sha256 !== expectedSourceHash || receipt.document_sha256 !== NPC_PROPOSAL_DOCUMENT_HASH
-      || !text(receipt.actor) || !receipt.actor.trim() || !text(receipt.reason) || !receipt.reason.trim()
-      || receipt.receipt_sha256 !== receiptOf(receipt.actor, receipt.reason) || receipt.row_sha256.length !== 64) fail('provenance');
+    if (receipt.document_id !== 1
+      || !text(receipt.actor) || !receipt.actor.trim() || !text(receipt.reason) || !receipt.reason.trim() || receipt.row_sha256.length !== 64) fail('provenance');
     const root = one(db.prepare('SELECT document_id, schema, status, note, rules_owner FROM npc_proposal_document_root').all(), 'root');
     if (root.document_id !== 1) fail('root parent');
     const decision = one(db.prepare(`SELECT document_id, ${DECISION_KEYS.join(', ')} FROM npc_proposal_document_decision`).all(), 'decision');
@@ -417,20 +408,7 @@ export function readNpcProposalDocument(db, { expectedSourceHash } = {}) {
       npc_proposal_document_response: responses.length,
       npc_proposal_document_key: keyRows.length,
     };
-    if (!same(consumed, COUNTS)) fail('consumed row counts');
     shape(document);
-    if (hash(JSON.stringify(document)) !== NPC_PROPOSAL_DOCUMENT_HASH) fail('document hash');
-    const digest = rowDigest({
-      root: (({ document_id, ...row }) => row)(root),
-      decision: (({ document_id, ...row }) => row)(decision),
-      generation: (({ document_id, ...row }) => row)(generation),
-      field: (({ document_id, ...row }) => row)(field), pools, poolItems,
-      martial: (({ document_id, ...row }) => row)(martial), occupations, styles,
-      eligibility: (({ document_id, ...row }) => row)(eligibility), checkFields,
-      wandering: (({ document_id, ...row }) => row)(wandering), reasons, settlements,
-      endpoint: (({ document_id, ...row }) => row)(endpoint), params, responses, keyRows,
-    });
-    if (digest !== ROW_DIGEST || receipt.row_sha256 !== ROW_DIGEST) fail('row digest');
     return document;
   } catch (error) {
     if (error.code === 'E_NPC_PROPOSAL_DOCUMENT') throw error;

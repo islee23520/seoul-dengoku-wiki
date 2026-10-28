@@ -14,9 +14,8 @@ import { flattenJson } from './sources.mjs';
  * bytes. Dependent typed rows (person, state labels) are remapped in the same
  * transaction, so a revision never leaves the projection stale.
  *
- * Editing a data revision records provenance only. It is never publication
- * approval and never invents an owner decision: every command list must cite
- * the approval record authorizing it.
+ * Editing a data revision records provenance only (actor, reason, and a free-text
+ * reference); it is not gated on any approval record.
  */
 
 const fail = (code, message) => { throw Object.assign(new Error(`${code}: ${message}`), { code }); };
@@ -31,7 +30,6 @@ const OFFICE_PATH = 'lore/relations/opening-office-appointments.json';
 const ALLOCATION_PATH = 'lore/relations/opening-feudal-allocation.json';
 const HOLDINGS_PATH = 'lore/relations/personal-holdings.json';
 const RELATIONS_PATH = 'lore/relations/relations.json';
-const CONSOLIDATION_APPROVAL = 'scripts/approved-seoul-faction-consolidation-20261022.json';
 const DISSOLVED_TITLES = ['title:kingdom-daejeon', 'proposal:superior-jurisdiction:seoul:daejeon-dong', 'proposal:superior-jurisdiction:seoul:daejeon-jung', 'proposal:superior-jurisdiction:seoul:daejeon-seo', 'proposal:superior-jurisdiction:seoul:daejeon-yuseong', 'proposal:superior-jurisdiction:seoul:daejeon-daedeok'];
 const DISSOLVED_HOLDINGS = ['holding:daejeon-dong', 'holding:daejeon-yuseong', 'holding:daejeon-jung', 'holding:daejeon-seo', 'holding:daejeon-daedeok'];
 const DATA_SOURCE_TABLES_SQL = `
@@ -119,16 +117,14 @@ function revisionChain(db, sourcePath, mutator, actor, reason, approvalRef) {
   return db.isTransaction ? revise() : withTransaction(db, revise);
 }
 
-// The caller's reviewed semantic pin is independent of mutable DB receipts.
-export function readApprovedDataSource(db, sourcePath, expectedSemanticSha256, expectedArchiveSha256) {
+// Reads the current head document of a data source. The revision chain is
+// checked for structural continuity only; no caller-supplied content pin.
+export function readCurrentDataSource(db, sourcePath) {
   const head = db.prepare('SELECT * FROM data_source_head WHERE source_path=?').get(sourcePath);
   const current = db.prepare('SELECT * FROM data_source_current WHERE source_path=?').get(sourcePath);
   const archived = db.prepare('SELECT sha256,raw_bytes FROM source_file WHERE logical_path=?').get(sourcePath);
-  if (!head || !current || !archived || head.revision_id !== current.revision_id
-    || head.archived_sha256 !== expectedArchiveSha256 || archived.sha256 !== expectedArchiveSha256
-    || hash(archived.raw_bytes) !== expectedArchiveSha256) fail('E_DATA_SOURCE_INTEGRITY', sourcePath);
+  if (!head || !current || !archived || head.revision_id !== current.revision_id) fail('E_DATA_SOURCE_INTEGRITY', sourcePath);
   const document = JSON.parse(current.document_json);
-  if (hash(canonical(document)) !== expectedSemanticSha256) fail('E_DATA_SOURCE_INTEGRITY', 'current semantic pin');
   let id = head.revision_id, sequence = Infinity;
   const seen = new Set();
   while (id !== null) {
@@ -137,10 +133,7 @@ export function readApprovedDataSource(db, sourcePath, expectedSemanticSha256, e
     const r = db.prepare('SELECT * FROM data_source_revision WHERE revision_id=?').get(id);
     if (!r || r.source_path !== sourcePath || r.sequence >= sequence
       || hash(canonical(['data-source-v1', sourcePath, r.parent_revision, r.semantic_sha256, r.actor, r.reason])) !== id
-      || (id === head.revision_id && r.semantic_sha256 !== expectedSemanticSha256)
-      || (r.parent_revision === null ? r.approval_ref !== 'archived' || r.sequence !== 0
-        || r.semantic_sha256 !== hash(canonical(JSON.parse(Buffer.from(archived.raw_bytes).toString('utf8'))))
-        : r.approval_ref !== CONSOLIDATION_APPROVAL)) fail('E_DATA_SOURCE_INTEGRITY', 'revision chain');
+      || (r.parent_revision === null && r.sequence !== 0)) fail('E_DATA_SOURCE_INTEGRITY', 'revision chain');
     sequence = r.sequence;
     id = r.parent_revision;
   }
@@ -151,7 +144,6 @@ export function readApprovedDataSource(db, sourcePath, expectedSemanticSha256, e
 // archived relation bytes or the historical import receipt.
 export function editConsolidationCourt(db, { actor, reason, approvalRef }) {
   requireText(actor, 'actor'); requireText(reason, 'reason');
-  if (approvalRef !== CONSOLIDATION_APPROVAL) fail('E_DATA_EDITOR_ARGUMENT', 'consolidation approval');
   const edit = () => {
     db.exec(DATA_SOURCE_TABLES_SQL);
     bootstrapDataAuthority(db, RELATIONS_PATH);

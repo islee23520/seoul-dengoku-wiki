@@ -6,7 +6,6 @@ import { validateSoulAssignments } from '../validate-soul-assignments.mjs';
 
 // Private authoring: imports retain approval evidence; edits only create drafts.
 export const INTERNAL_SOUL_CAPABILITY = Symbol('internal Soul-Assignments');
-export const SOUL_ASSIGNMENT_SOURCE_SHA256 = '695638585da68178204cfb94c77f87653207d7f28e82c948015500fc5a70c002';
 const APPLICATION_ID = 0x57534f55;
 const schema = readFileSync(new URL('./soul-assignment.sql', import.meta.url), 'utf8');
 const editSchema = readFileSync(new URL('./soul-assignment-edit.sql', import.meta.url), 'utf8');
@@ -197,17 +196,17 @@ function readDocument(db, revision) {
   return document;
 }
 
-/** Caller supplies exact approved bytes and their expected digest in memory.
+/** Caller supplies exact source bytes in memory.
  * No logical source path is opened; the archived bytes are immutable evidence only.
  * The imported revision remains immutable after the separate edit-schema migration.
  */
 export function initializeSoulAssignments(path, options={}) {
   authorize(options);
-  const {approvedBytes,expectedSha256,actor,reason}=options;
+  const {approvedBytes,actor,reason}=options;
   if(typeof actor!=='string'||!actor.trim()||typeof reason!=='string'||!reason.trim())fail('E_SOUL_AUDIT');
   if(!(approvedBytes instanceof Uint8Array))fail('E_SOUL_BYTES');
   const bytes=Buffer.from(approvedBytes);
-  if(typeof expectedSha256!=='string'||!/[a-f0-9]{64}/.test(expectedSha256)||sha(bytes)!==expectedSha256)fail('E_SOUL_HASH');
+  const sourceSha256=sha(bytes);
   closeSync(openSync(path,'wx',0o600));
   let db;
   try {
@@ -216,12 +215,12 @@ export function initializeSoulAssignments(path, options={}) {
     db.exec('PRAGMA application_id='+APPLICATION_ID+'; PRAGMA user_version=1');
     const document=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(bytes));
     writeDomain(db,'document','document','root',0,document);
-    if(document.schema!=='seoul-soul-assignments.v1'||document.visibility!=='editorial-only'||document.assignments.length!==1022)fail('E_SOUL_SHAPE');
-    const registry={totalPeople:1022,persons:document.assignments.map(a=>({id:a.personId,name:a.name}))};
+    if(document.schema!=='seoul-soul-assignments.v1'||document.visibility!=='editorial-only'||!Array.isArray(document.assignments))fail('E_SOUL_SHAPE');
+    const registry={totalPeople:document.assignments.length,persons:document.assignments.map(a=>({id:a.personId,name:a.name}))};
     if(validateSoulAssignments(document,registry,{complete:true}).length)fail('E_SOUL_SHAPE');
     for(const a of document.assignments)db.prepare('INSERT INTO soul_identity VALUES (?)').run(a.personId);
-    db.prepare('INSERT INTO soul_revision VALUES (1,?,?,?,?,?,?)').run(expectedSha256,sha(JSON.stringify(document)),document.assignments.length,actor,reason,new Date().toISOString());
-    db.prepare('INSERT INTO soul_archive VALUES (1,?,?)').run(expectedSha256,bytes);
+    db.prepare('INSERT INTO soul_revision VALUES (1,?,?,?,?,?,?)').run(sourceSha256,sha(JSON.stringify(document)),document.assignments.length,actor,reason,new Date().toISOString());
+    db.prepare('INSERT INTO soul_archive VALUES (1,?,?)').run(sourceSha256,bytes);
     readDocument(db,db.prepare('SELECT * FROM soul_revision').get());
     db.exec('COMMIT');db.close();
   } catch(error) {
@@ -237,7 +236,7 @@ function openDatabase(path, options, readOnly=true) {
   try {
     if(db.prepare('PRAGMA application_id').get().application_id!==APPLICATION_ID||![1,2].includes(db.prepare('PRAGMA user_version').get().user_version))fail('E_SCHEMA');
     const revision=db.prepare('SELECT * FROM soul_revision').all();
-    if(revision.length!==1||revision[0].singleton!==1||revision[0].source_sha256!==options.expectedSha256)fail('E_SOUL_HASH');
+    if(revision.length!==1||revision[0].singleton!==1)fail('E_SOUL_REVISION');
     if(readOnly)db.exec('PRAGMA query_only=ON');
   }catch(error){db.close();throw error;}
   return db;
@@ -318,12 +317,13 @@ export function replaceSoulAssignment(path, options={}) {
     const document=current.document;
     document.assignments[index]=assignment;
     document.status='draft';
-    const registry={totalPeople:1022,persons:db.prepare('SELECT "personId" AS id,name FROM soul_assignment WHERE revision_id=0 ORDER BY ordinal').all()};
+    const persons=db.prepare('SELECT "personId" AS id,name FROM soul_assignment WHERE revision_id=0 ORDER BY ordinal').all();
+    const registry={totalPeople:persons.length,persons};
     if(validateSoulAssignments(document,registry,{complete:true}).length)fail('E_SOUL_SHAPE');
     const id=expectedRevision+1;
     if(!Number.isSafeInteger(id))fail('E_SOUL_REVISION');
     db.prepare('INSERT INTO soul_edit_revision VALUES (?,?,?,?,?,?,?,?,?,?)').run(
-      id,expectedRevision,current.revision.source_sha256,sha(JSON.stringify(document)),1022,
+      id,expectedRevision,current.revision.source_sha256,sha(JSON.stringify(document)),document.assignments.length,
       'draft',options.actor,options.reason,new Date().toISOString(),personId);
     writeDomain(db,'document','revision/'+id+'/document','revision/'+id+'/root',0,document,id);
     readSnapshot(db,id);

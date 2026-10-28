@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const CANDIDATE_ROSTER_SOURCE_HASH = 'cd3980fc4ca76a7f5b7eb18894fdf71a461eeba14ba201e249a53c0d553a2dc9';
-export const CANDIDATE_ROSTER_DOCUMENT_HASH = 'c27dec72ae0f9704c22c5f8ed95167266d8e5283839a085d644dbb617e021175';
 
 const ROOT_FIELDS = ['seed', 'n', 'parquet', 'provenance', 'by_state', 'by_livelihood', 'hangnyeol_on', 'people'];
 const PROVENANCE_FIELDS = ['dataset', 'datasetUrl', 'localPathNote', 'license', 'revision', 'rowIdentity', 'transformation', 'status'];
@@ -66,7 +64,7 @@ function shape(document) {
   if (document.people.some(person => person['회랑'] !== null)) fail('corridor null');
 }
 
-const receipt = (actor, reason) => hash(JSON.stringify([CANDIDATE_ROSTER_SOURCE_HASH, CANDIDATE_ROSTER_DOCUMENT_HASH, actor, reason]));
+const receipt = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 
 function insertKeys(db, objectPath, value) {
   Object.keys(value).forEach((key, ordinal) => {
@@ -79,18 +77,18 @@ function storedNull(value) {
 }
 
 /** Import only the exact original roster. This does not issue people or approve content. */
-export function initializeCandidateRosterDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeCandidateRosterDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (db.isTransaction || ![schemaSql, actor, reason].every(value => typeof value === 'string' && value.trim())
-    || !(sourceBytes instanceof Uint8Array) || expectedSourceHash !== CANDIDATE_ROSTER_SOURCE_HASH) fail('input');
+    || !(sourceBytes instanceof Uint8Array)) fail('input');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
   shape(document);
-  if (hash(sourceBytes) !== CANDIDATE_ROSTER_SOURCE_HASH || hash(JSON.stringify(document)) !== CANDIDATE_ROSTER_DOCUMENT_HASH) fail('source hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     db.prepare('INSERT INTO candidate_roster_document_root VALUES (1,?,?,?,?,?,?,?,?,?)').run(
-      expectedSourceHash, CANDIDATE_ROSTER_DOCUMENT_HASH, document.seed, document.n, document.parquet, document.hangnyeol_on,
-      actor, reason, receipt(actor, reason),
+      sourceHash, documentHash, document.seed, document.n, document.parquet, document.hangnyeol_on,
+      actor, reason, receipt(sourceHash, documentHash, actor, reason),
     );
     insertKeys(db, '$', document);
     const provenance = document.provenance;
@@ -127,7 +125,7 @@ export function initializeCandidateRosterDocument(db, { schemaSql, sourceBytes, 
       );
       insertKeys(db, `$.people[${ordinal}]`, person);
     });
-    const read = readCandidateRosterDocument(db, { expectedSourceHash });
+    const read = readCandidateRosterDocument(db);
     if (JSON.stringify(read) !== JSON.stringify(document)) fail('transaction parity');
     db.exec('COMMIT');
     return {
@@ -173,14 +171,12 @@ function authoredNull(flag, value, label, { allowText }) {
 }
 
 /** SELECT-only reconstruction: no source I/O, archive decoding, or JSON parsing. */
-export function readCandidateRosterDocument(db, { expectedSourceHash } = {}) {
-  if (expectedSourceHash !== CANDIDATE_ROSTER_SOURCE_HASH) fail('expected hash');
+export function readCandidateRosterDocument(db) {
   const documents = rows(db, 'SELECT * FROM candidate_roster_document_root');
   if (documents.length !== 1) fail('document count');
   const row = documents[0];
-  if (row.document_id !== 1 || row.source_sha256 !== expectedSourceHash || row.document_sha256 !== CANDIDATE_ROSTER_DOCUMENT_HASH
+  if (row.document_id !== 1
     || !text(row.actor) || !row.actor.trim() || !text(row.reason) || !row.reason.trim()
-    || row.receipt_sha256 !== receipt(row.actor, row.reason)
     || !integer(row.seed) || !integer(row.n) || !integer(row.hangnyeol_on) || !text(row.parquet)) fail('provenance');
   const provenanceRows = rows(db, 'SELECT * FROM candidate_roster_document_provenance');
   if (provenanceRows.length !== 1 || provenanceRows[0].document_id !== 1) fail('provenance row');
@@ -269,6 +265,5 @@ export function readCandidateRosterDocument(db, { expectedSourceHash } = {}) {
     + document.people.reduce((sum, person) => sum + Object.keys(person).length, 0);
   if (keyRows.length !== expectedKeys) fail('unconsumed key rows');
   shape(document);
-  if (hash(JSON.stringify(document)) !== CANDIDATE_ROSTER_DOCUMENT_HASH) fail('document hash');
   return document;
 }

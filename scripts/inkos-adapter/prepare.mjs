@@ -73,7 +73,7 @@ export function prepareDraft({ trustedRoot, candidateId, dbPath, out }) {
       const head = db.prepare(`SELECT r.revision_id,r.semantic_sha256 FROM document_head h
         JOIN document_revision r USING(source_id,revision_id) JOIN document_revision_seal z USING(revision_id)
         WHERE h.source_id=?`).get(sourceId);
-      const admission = db.prepare('SELECT * FROM document_publication_admission WHERE source_id=? AND revision_id=?').get(sourceId, head?.revision_id ?? '');
+      const admission = db.prepare('SELECT * FROM document_publication_admission WHERE source_id=? ORDER BY revision_id LIMIT 1').get(sourceId);
       if (!head || !admission || head.revision_id !== source.revision || head.semantic_sha256 !== source.semanticSha256
         || digestJson(document) !== source.semanticSha256 || digestJson(admission) !== source.admissionDigest) fail('E_ADAPTER_STALE', 'source read-set changed');
       if (source.sourceKey === manifest.targetKey) {

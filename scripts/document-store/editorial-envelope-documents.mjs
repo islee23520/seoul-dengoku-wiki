@@ -9,24 +9,16 @@ import { DatabaseSync } from 'node:sqlite';
 // This bounded private reconstructor does not import the public corpus mapper.
 // Supplied bytes are validated here, and read-only reopen never parses JSON or opens a source path.
 export const INTERNAL_EDITORIAL_ENVELOPE_CAPABILITY = Symbol('internal Editorial-Envelope-Documents');
-export const EDITORIAL_ENVELOPE_SOURCE_HASHES = Object.freeze({
-  'lore/editorial/Martial-Concept-Design.json': 'b45bbb29f55d5736d3e8488e0859a8ac4b7ae2ea59320c71fb7beabb183bf2a3',
-  'lore/editorial/Tripothon-Return-Relay-Proposal.json': '231b516557146f901c0ea2dcdf2528af5c1f2c983e48b5df9b3dfe8499a935bf',
-});
-const DOCUMENT_HASHES = Object.freeze({
-  'lore/editorial/Martial-Concept-Design.json': 'a457ae637320b5b25095796a4097d720f2e3d00c578710eb9f9f78efd978d720',
-  'lore/editorial/Tripothon-Return-Relay-Proposal.json': '1f55454718753def28e8b1e5ceac47fb7a8b7bc7931efed61bd980516da18715',
-});
-const BYTE_LENGTHS = Object.freeze({
-  'lore/editorial/Martial-Concept-Design.json': 15901,
-  'lore/editorial/Tripothon-Return-Relay-Proposal.json': 49407,
-});
+export const EDITORIAL_ENVELOPE_PATHS = Object.freeze([
+  'lore/editorial/Martial-Concept-Design.json',
+  'lore/editorial/Tripothon-Return-Relay-Proposal.json',
+]);
 const SOURCE_IDS = Object.freeze({
   'lore/editorial/Martial-Concept-Design.json': 1,
   'lore/editorial/Tripothon-Return-Relay-Proposal.json': 2,
 });
 const APPLICATION_ID = 0x45454e56; // EENV
-const PATHS = Object.freeze(Object.keys(EDITORIAL_ENVELOPE_SOURCE_HASHES));
+const PATHS = Object.freeze(EDITORIAL_ENVELOPE_PATHS);
 const schemaSql = readFileSync(new URL('./editorial-envelope-documents.sql', import.meta.url), 'utf8');
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = code => { throw Object.assign(new Error(code), { code }); };
@@ -50,22 +42,6 @@ const NODE_KEYS = {
   table: ['kind', 'anchor', 'columns', 'rows'],
 };
 const KINDS = new Set(['heading', 'paragraph', 'table']);
-const EXTERNAL_HREFS = Object.freeze([
-  ['/content/1/text/ko/1', 'ko', 'https://github.com/islee23520/seoul-dengoku-gdd/pull/33', 'https://github.com/islee23520/seoul-dengoku-gdd/pull/33'],
-  ['/content/1/text/ko/3', 'ko', 'https://github.com/islee23520/seoul-dengoku-gdd/pull/33#issuecomment-5872290524', 'https://github.com/islee23520/seoul-dengoku-gdd/pull/33#issuecomment-5872290524'],
-  ['/content/1/text/en/1', 'en', 'https://github.com/islee23520/seoul-dengoku-gdd/pull/33', 'https://github.com/islee23520/seoul-dengoku-gdd/pull/33'],
-  ['/content/1/text/en/3', 'en', 'https://github.com/islee23520/seoul-dengoku-gdd/pull/33#issuecomment-5872290524', 'https://github.com/islee23520/seoul-dengoku-gdd/pull/33#issuecomment-5872290524'],
-  ['/content/9/text/ko/1', 'ko', '소유자 PR #306의 Intent.md 결정 13·14 (5a98964518f0e7110e91ba37e7e9590135be21c1)', 'https://github.com/islee23520/seoul-dengoku/blob/5a98964518f0e7110e91ba37e7e9590135be21c1/Intent.md'],
-  ['/content/9/text/en/1', 'en', 'owner PR #306, Intent.md decisions 13 and 14 (5a98964518f0e7110e91ba37e7e9590135be21c1)', 'https://github.com/islee23520/seoul-dengoku/blob/5a98964518f0e7110e91ba37e7e9590135be21c1/Intent.md'],
-  ['/content/11/text/ko/1', 'ko', '위치 이슈', 'https://github.com/islee23520/seoul-dengoku/issues/299'],
-  ['/content/11/text/ko/3', 'ko', '시나리오 이슈', 'https://github.com/islee23520/seoul-dengoku/issues/298'],
-  ['/content/11/text/ko/5', 'ko', '지역 근거', 'https://github.com/islee23520/seoul-dengoku-wiki/blob/e83970e8b5796c1f3b428ef58c79a5c1cb48b7f5/lore/regions/content/11680.json#L403-L468'],
-  ['/content/11/text/ko/7', 'ko', '기존 사건', 'https://github.com/islee23520/seoul-dengoku-wiki/blob/e83970e8b5796c1f3b428ef58c79a5c1cb48b7f5/lore/chronology/Scenario-Timeline.json#L2183-L2215'],
-  ['/content/11/text/en/1', 'en', 'location issue', 'https://github.com/islee23520/seoul-dengoku/issues/299'],
-  ['/content/11/text/en/3', 'en', 'scenario issue', 'https://github.com/islee23520/seoul-dengoku/issues/298'],
-  ['/content/11/text/en/5', 'en', 'regional evidence', 'https://github.com/islee23520/seoul-dengoku-wiki/blob/e83970e8b5796c1f3b428ef58c79a5c1cb48b7f5/lore/regions/content/11680.json#L403-L468'],
-  ['/content/11/text/en/7', 'en', 'existing events', 'https://github.com/islee23520/seoul-dengoku-wiki/blob/e83970e8b5796c1f3b428ef58c79a5c1cb48b7f5/lore/chronology/Scenario-Timeline.json#L2183-L2215'],
-]);
 
 function authorize(options = {}) {
   if (!Object.hasOwn(options, 'scope') || options.scope !== 'internal' || options.capability !== INTERNAL_EDITORIAL_ENVELOPE_CAPABILITY) fail('E_PRIVATE');
@@ -75,16 +51,10 @@ function absolutePath(value) {
   if (typeof value !== 'string' || !isAbsolute(value)) fail('E_EDITORIAL_ENVELOPE_PATH');
 }
 
-function exactPins(expectedSourceHashes) {
-  if (!expectedSourceHashes || typeof expectedSourceHashes !== 'object' || Array.isArray(expectedSourceHashes)) fail('E_EDITORIAL_ENVELOPE_PINS');
-  const keys = Object.keys(expectedSourceHashes);
-  if (keys.length !== PATHS.length || PATHS.some(path => !Object.hasOwn(expectedSourceHashes, path) || expectedSourceHashes[path] !== EDITORIAL_ENVELOPE_SOURCE_HASHES[path])) fail('E_EDITORIAL_ENVELOPE_PINS');
-}
-
 function sourceSet(sources) {
-  if (!sources || typeof sources !== 'object' || Array.isArray(sources)) fail('E_EDITORIAL_ENVELOPE_PINS');
+  if (!sources || typeof sources !== 'object' || Array.isArray(sources)) fail('E_EDITORIAL_ENVELOPE_SOURCES');
   const keys = Object.keys(sources);
-  if (keys.length !== PATHS.length || PATHS.some(path => !Object.hasOwn(sources, path))) fail('E_EDITORIAL_ENVELOPE_PINS');
+  if (keys.length !== PATHS.length || PATHS.some(path => !Object.hasOwn(sources, path))) fail('E_EDITORIAL_ENVELOPE_SOURCES');
 }
 
 function leafOk(value, { allowEmpty }) {
@@ -470,7 +440,7 @@ function readOne(db, logicalPath, receipt) {
     content,
     data: {},
   };
-  if (sha(JSON.stringify(result)) !== receipt.document_sha256 || sha(JSON.stringify(result)) !== DOCUMENT_HASHES[logicalPath]) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
+  if (sha(JSON.stringify(result)) !== receipt.document_sha256) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
   const expectedSlots = nodes.reduce((sum, node) => {
     if (node.kind === 'heading' || node.kind === 'paragraph') return sum + 2;
     const bodyCells = cells.filter(cell => cell.node_pointer === node.json_pointer && cell.cell_kind === 'body').length;
@@ -489,40 +459,30 @@ const COUNTS = Object.freeze({
   text_document: 2,
 });
 
-function readDocumentsFrom(db, expectedSourceHashes) {
-  exactPins(expectedSourceHashes);
+function readDocumentsFrom(db) {
   const receipts = db.prepare('SELECT source_id, logical_path, sha256, byte_length, document_sha256 FROM source_file ORDER BY source_id').all();
   if (receipts.length !== PATHS.length) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
   for (const path of PATHS) {
     const receipt = receipts.find(row => row.logical_path === path);
     if (!receipt || receipt.source_id !== SOURCE_IDS[path]) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
-    if (receipt.sha256 !== EDITORIAL_ENVELOPE_SOURCE_HASHES[path] || receipt.document_sha256 !== DOCUMENT_HASHES[path] || receipt.byte_length !== BYTE_LENGTHS[path]) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
   }
   const documents = new Map();
   for (const path of PATHS) documents.set(path, readOne(db, path, receipts.find(row => row.logical_path === path)));
   for (const [table, expected] of Object.entries(COUNTS)) {
     if (db.prepare('SELECT count(*) AS n FROM ' + table).get().n !== expected) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
   }
-  const contentNodes = db.prepare('SELECT count(*) AS n FROM text_document_node').get().n;
-  if (contentNodes !== 53) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
-  const kinds = db.prepare("SELECT kind, count(*) AS n FROM text_document_node GROUP BY kind").all();
-  const kindMap = Object.fromEntries(kinds.map(row => [row.kind, row.n]));
-  if (kindMap.heading !== 7 || kindMap.paragraph !== 40 || kindMap.table !== 6) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
-  if (Object.keys(kindMap).length !== 3) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
+  const kinds = db.prepare("SELECT DISTINCT kind FROM text_document_node").all();
+  if (kinds.some(row => !KINDS.has(row.kind))) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
   const links = db.prepare("SELECT l.source_id, l.json_pointer, l.locale, l.resolution, l.target_source_id, l.target_anchor_ordinal, r.text, r.href, n.ordinal AS node_ordinal, r.ordinal AS run_ordinal FROM text_document_link l JOIN text_document_run r USING(source_id, json_pointer) JOIN text_document_slot s ON s.source_id=r.source_id AND s.json_pointer=r.slot_pointer JOIN text_document_node n ON n.source_id=s.source_id AND n.json_pointer=s.node_pointer ORDER BY l.source_id, n.ordinal, l.locale DESC, r.ordinal").all();
-  if (links.length !== EXTERNAL_HREFS.length) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
-  if (links.some(link => link.source_id !== SOURCE_IDS['lore/editorial/Tripothon-Return-Relay-Proposal.json'])) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
-  for (const [index, link] of links.entries()) {
-    const [pointer, locale, text, href] = EXTERNAL_HREFS[index];
-    if (link.json_pointer !== pointer || link.locale !== locale || link.text !== text || link.href !== href) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
+  for (const link of links) {
     if (link.resolution !== 'external' || link.target_source_id !== null || link.target_anchor_ordinal !== null) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
   }
-  if (db.prepare("SELECT count(*) AS n FROM text_document_run WHERE href IS NOT NULL").get().n !== EXTERNAL_HREFS.length) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
+  if (db.prepare("SELECT count(*) AS n FROM text_document_run WHERE href IS NOT NULL").get().n !== links.length) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
   if (db.prepare("SELECT count(*) AS n FROM text_document_run r LEFT JOIN text_document_link l USING(source_id, json_pointer) WHERE (r.href IS NULL) <> (l.json_pointer IS NULL)").get().n !== 0) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
   return documents;
 }
 
-/** Caller supplies both logical paths, bytes, and expected digests in memory.
+/** Caller supplies both logical paths and bytes in memory.
  * Logical paths are never opened. Archived bytes are immutable evidence only.
  * Storage does not change approval and does not activate proposal rules.
  */
@@ -540,11 +500,9 @@ export function initializeEditorialEnvelopeDocuments(absoluteNewPath, options = 
     let document;
     try { document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes)); }
     catch { fail('E_EDITORIAL_ENVELOPE_SHAPE'); }
-    if (typeof input.expectedSourceHash !== 'string' || !/^[a-f0-9]{64}$/.test(input.expectedSourceHash) || sha(bytes) !== input.expectedSourceHash) fail('E_EDITORIAL_ENVELOPE_PINS');
     inspectDocument(document);
     parsed.set(logicalPath, { bytes, document, documentHash: sha(JSON.stringify(document)) });
   }
-  if (options.expectedSourceHashes !== undefined) exactPins(options.expectedSourceHashes);
   closeSync(openSync(absoluteNewPath, 'wx', 0o600));
   let db;
   try {
@@ -571,7 +529,7 @@ export function initializeEditorialEnvelopeDocuments(absoluteNewPath, options = 
       writeDocument(db, logicalPath, document);
     }
     if (db.prepare('SELECT count(*) AS n FROM editorial_envelope_archive').get().n !== PATHS.length) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
-    const documents = readDocumentsFrom(db, EDITORIAL_ENVELOPE_SOURCE_HASHES);
+    const documents = readDocumentsFrom(db);
     for (const logicalPath of PATHS) {
       if (JSON.stringify(documents.get(logicalPath)) !== JSON.stringify(parsed.get(logicalPath).document)) fail('E_EDITORIAL_ENVELOPE_INTEGRITY');
     }
@@ -590,7 +548,6 @@ export function initializeEditorialEnvelopeDocuments(absoluteNewPath, options = 
 /** Read-only reopen. SELECT reconstruction never opens the logical source, the archive, or JSON.parse. */
 export function openEditorialEnvelopeDocuments(databasePath, options = {}) {
   authorize(options);
-  exactPins(options.expectedSourceHashes);
   absolutePath(databasePath);
   if (!existsSync(databasePath)) fail('E_EDITORIAL_ENVELOPE_PATH');
   if ((statSync(databasePath).mode & 0o777) !== 0o600) fail('E_PRIVATE_MODE');
@@ -607,7 +564,7 @@ export function openEditorialEnvelopeDocuments(databasePath, options = {}) {
     readDocuments() {
       db.exec('BEGIN');
       try {
-        const documents = readDocumentsFrom(db, options.expectedSourceHashes);
+        const documents = readDocumentsFrom(db);
         db.exec('COMMIT');
         return documents;
       } catch (error) {

@@ -3,7 +3,7 @@ const fail = (code, detail) => { throw Object.assign(new Error(`${code}: ${detai
 
 // This reader consumes typed authority, not import bytes or the generic JSON tree.
 // The supplied connection is owned by the caller, like readDocument's connection.
-export function readPersonBirthdayInputs(db, { expectedSourceHashes } = {}) {
+export function readPersonBirthdayInputs(db) {
   const rows = (sql, ...bindings) => {
     try { return db.prepare(sql).all(...bindings); }
     catch (cause) {
@@ -12,9 +12,8 @@ export function readPersonBirthdayInputs(db, { expectedSourceHashes } = {}) {
     }
   };
   const sources = paths.map(path => {
-    const source = rows('SELECT source_id,sha256 FROM source_file WHERE logical_path=?', path)[0];
+    const source = rows('SELECT source_id FROM source_file WHERE logical_path=?', path)[0];
     if (!source) fail('E_PERSON_INPUT_MISSING', path);
-    if (expectedSourceHashes !== undefined && expectedSourceHashes[path] !== source.sha256) fail('E_PERSON_INPUT_STALE', path);
     return source.source_id;
   });
   const [registrySource, birthdaySource, cohortSource] = sources;

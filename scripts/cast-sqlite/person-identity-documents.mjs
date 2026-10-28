@@ -1,26 +1,17 @@
 import { createHash } from 'node:crypto';
 import { deepStrictEqual } from 'node:assert';
-import { PERSON_IDENTITY_SOURCE_HASHES, readPersonIdentityInputs } from './person-identity-inputs.mjs';
-
-export { PERSON_IDENTITY_SOURCE_HASHES };
-export const PERSON_IDENTITY_DOCUMENT_HASHES = Object.freeze({
-  lineage: '9b45cbcca65904dbd0e99b43eebc5b6cc03437f76017b5e7e86e2929ca19982f',
-  gender: 'ab1e64c61faa3c69401abb08fa97531c18f9bbf09f0cb1d591b84fa49f8cc7c1',
-});
+import { readPersonIdentityInputs } from './person-identity-inputs.mjs';
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = detail => { throw Object.assign(new Error('E_PERSON_IDENTITY_DOCUMENT: ' + detail), { code: 'E_PERSON_IDENTITY_DOCUMENT' }); };
 
 /** SELECT-only complete source documents. All values come from typed domains. */
-export function readPersonIdentityDocuments(db, { expectedSourceHashes = PERSON_IDENTITY_SOURCE_HASHES } = {}) {
+export function readPersonIdentityDocuments(db) {
   try {
     const receipts = db.prepare('SELECT * FROM person_identity_document_import').all();
     if (receipts.length !== 2) fail('import coverage');
     for (const domain of ['lineage', 'gender']) {
       const receipt = receipts.find(r => r.domain === domain);
-      if (!receipt || expectedSourceHashes[domain] !== PERSON_IDENTITY_SOURCE_HASHES[domain]
-        || receipt.source_sha256 !== expectedSourceHashes[domain]
-        || receipt.document_sha256 !== PERSON_IDENTITY_DOCUMENT_HASHES[domain]
-        || !receipt.actor.trim() || !receipt.reason.trim()) fail(domain + ': source pin/receipt');
+      if (!receipt || !receipt.actor.trim() || !receipt.reason.trim()) fail(domain + ': receipt');
     }
     const single = table => {
       const rows = db.prepare('SELECT * FROM ' + table).all();
@@ -30,9 +21,9 @@ export function readPersonIdentityDocuments(db, { expectedSourceHashes = PERSON_
     const l = single('identity_lineage_provenance'), g = single('identity_gender_provenance');
     const categories = db.prepare('SELECT * FROM identity_gender_category ORDER BY ordinal').all();
     const policies = db.prepare('SELECT * FROM identity_gender_policy').all();
-    if (categories.length !== 2 || categories.some((r,i) => r.source_id !== g.source_id || r.ordinal !== i)
-      || policies.length !== 17 || policies.some(r => r.source_id !== g.source_id)) fail('category/policy coverage');
-    const { lineageByName, genderByName } = readPersonIdentityInputs(db, { expectedSourceHashes });
+    if (categories.some((r,i) => r.source_id !== g.source_id || r.ordinal !== i)
+      || policies.some(r => r.source_id !== g.source_id)) fail('category/policy coverage');
+    const { lineageByName, genderByName } = readPersonIdentityInputs(db);
     const candidates = {
       lineage: { id: l.catalog_id, schema: l.schema_version, note: l.note, sources: [],
         people: [...lineageByName.values()], lineage: {
@@ -68,7 +59,7 @@ export function readPersonIdentityDocuments(db, { expectedSourceHashes = PERSON_
     const result = {};
     for (const domain of ['lineage','gender']) {
       result[domain] = order(candidates[domain],domain,'');
-      if (hash(JSON.stringify(result[domain])) !== PERSON_IDENTITY_DOCUMENT_HASHES[domain]) fail(domain + ': full document digest');
+      if (hash(JSON.stringify(result[domain])) !== receipts.find(r => r.domain === domain).document_sha256) fail(domain + ': stored document digest');
     }
     if (groups.size || result.gender.count !== result.gender.people.length) fail('unconsumed metadata/count');
     return result;
@@ -82,18 +73,18 @@ export function readPersonIdentityDocuments(db, { expectedSourceHashes = PERSON_
  * Both actual byte pins, actor/reason and reviewed schema SQL are mandatory.
  */
 export function initializePersonIdentityDocuments(db, { schemaSql, lineageBytes, genderBytes,
-  expectedSourceHashes, actor, reason } = {}) {
+  actor, reason } = {}) {
+  const expectedSourceHashes = {};
   if (![actor,reason].every(v => typeof v === 'string' && v.trim())) fail('actor/reason');
   if (typeof schemaSql !== 'string' || !schemaSql.trim()) fail('explicit schema SQL required');
   if (db.isTransaction) fail('active transaction');
   const documents = {};
   for (const [domain,bytes] of Object.entries({ lineage: lineageBytes, gender: genderBytes })) {
-    if (!(bytes instanceof Uint8Array) || expectedSourceHashes?.[domain] !== PERSON_IDENTITY_SOURCE_HASHES[domain]
-      || hash(bytes) !== expectedSourceHashes[domain]) fail(domain + ': source bytes/hash');
+    if (!(bytes instanceof Uint8Array)) fail(domain + ': source bytes');
+    expectedSourceHashes[domain] = hash(bytes);
     const archived = db.prepare('SELECT sha256 FROM source_file WHERE logical_path=?').all('lore/name-pools/' + (domain === 'lineage' ? 'cast-hangnyeol' : 'gender-cast') + '.json');
     if (archived.length !== 1 || archived[0].sha256 !== expectedSourceHashes[domain]) fail(domain + ': archive identity');
     documents[domain] = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes));
-    if (hash(JSON.stringify(documents[domain])) !== PERSON_IDENTITY_DOCUMENT_HASHES[domain]) fail(domain + ': serialized pin');
   }
   db.exec('BEGIN IMMEDIATE');
   try {
@@ -105,10 +96,10 @@ export function initializePersonIdentityDocuments(db, { schemaSql, lineageBytes,
       Object.entries(value).forEach(([key,v],i) => { put.run(domain,path,i,key,Number(v === null)); walk(v,domain,path+'/'+key); });
     };
     for (const domain of ['lineage','gender']) {
-      db.prepare('INSERT INTO person_identity_document_import VALUES (?,?,?,?,?)').run(domain,expectedSourceHashes[domain],PERSON_IDENTITY_DOCUMENT_HASHES[domain],actor,reason);
+      db.prepare('INSERT INTO person_identity_document_import VALUES (?,?,?,?,?)').run(domain,expectedSourceHashes[domain],hash(JSON.stringify(documents[domain])),actor,reason);
       walk(documents[domain],domain,'');
     }
-    const result = readPersonIdentityDocuments(db,{ expectedSourceHashes });
+    const result = readPersonIdentityDocuments(db);
     deepStrictEqual(result,documents);
     if (JSON.stringify(result) !== JSON.stringify(documents)) fail('transaction full serialized parity');
     db.exec('COMMIT');

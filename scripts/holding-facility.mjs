@@ -1,6 +1,6 @@
 import { isAbsolute, resolve } from 'node:path'
 import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
-import { REGION_CONTENT_SOURCE_HASHES } from './cast-sqlite/region-content-documents.mjs'
+import { REGION_CONTENT_PATHS } from './cast-sqlite/region-content-documents.mjs'
 
 export async function validateHoldingFacility(holding, stationInteriors, repoRoot) {
   const ref = holding.facilityRef
@@ -8,7 +8,7 @@ export async function validateHoldingFacility(holding, stationInteriors, repoRoo
   if (isAbsolute(ref.siteSourcePath) || ref.siteSourcePath.includes('\\') ||
       ref.siteSourcePath.split('/').some(part => part === '..' || part === '.' || !part) ||
       !ref.siteSourcePath.startsWith(prefix) || !ref.siteSourcePath.endsWith('.json') ||
-      !Object.hasOwn(REGION_CONTENT_SOURCE_HASHES, ref.siteSourcePath))
+      !REGION_CONTENT_PATHS.includes(ref.siteSourcePath))
     throw new Error('E_HOLDING_SOURCE_PATH:' + holding.id)
   const source = readCanonicalDocument(ref.siteSourcePath, { databasePath: process.env.WIKI_DOCUMENT_DB
     ?? resolve(repoRoot, 'data/canonical/wiki-cast.sqlite') })

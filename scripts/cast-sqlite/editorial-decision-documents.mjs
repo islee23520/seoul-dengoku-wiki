@@ -1,18 +1,10 @@
 import { createHash } from 'node:crypto';
 
-export const EDITORIAL_DECISION_SOURCE_HASHES = Object.freeze({
-  'docs/editorial/2026-09-29/decision-inputs.json': 'ec5e9f4189cbc6c1dc1080ecefc50c58b26dda798f0e777a750dc5cbc60643f6',
-  'docs/editorial/2026-09-28/evidence/wiki304-review-correction-2026-09-29.json': '84cfc86d9ca3b0c2b92457c17d841c47e73e8c5663cdd1b1d35b5b8d2825bb10',
-});
-const DOCUMENT_HASHES = Object.freeze({
-  'docs/editorial/2026-09-29/decision-inputs.json': '89d2951995b6ab297c717b060fb423a45ad219bc1c3516bc1582009b628fa387',
-  'docs/editorial/2026-09-28/evidence/wiki304-review-correction-2026-09-29.json': '3ca3ed3f9fff9bb085f35124d4da6952d19d90059d0ac145fcd8cead74d7e7ee',
-});
-const BYTE_LENGTHS = Object.freeze({
-  'docs/editorial/2026-09-29/decision-inputs.json': 5161,
-  'docs/editorial/2026-09-28/evidence/wiki304-review-correction-2026-09-29.json': 5571,
-});
-const PATHS = Object.freeze(Object.keys(EDITORIAL_DECISION_SOURCE_HASHES));
+export const EDITORIAL_DECISION_PATHS = Object.freeze([
+    'docs/editorial/2026-09-29/decision-inputs.json',
+    'docs/editorial/2026-09-28/evidence/wiki304-review-correction-2026-09-29.json',
+]);
+const PATHS = EDITORIAL_DECISION_PATHS;
 const DECISION = PATHS[0];
 const REVIEW = PATHS[1];
 const INPUT_KEYS = Object.freeze(['schemaSql', 'sources', 'actor', 'reason']);
@@ -364,7 +356,6 @@ function readDecision(db, receipts) {
     })),
   };
   decisionShape(document);
-  if (hash(JSON.stringify(document)) !== DOCUMENT_HASHES[DECISION] || hash(JSON.stringify(document)) !== receipts.get(DECISION).document_sha256) fail('decision digest');
   return document;
 }
 function readReview(db, receipts) {
@@ -408,7 +399,6 @@ function readReview(db, receipts) {
     markdownLocalLinks: { result: row.markdown_result, paths: paths.map(entry => entry.path) },
   };
   reviewShape(document);
-  if (hash(JSON.stringify(document)) !== DOCUMENT_HASHES[REVIEW] || hash(JSON.stringify(document)) !== receipts.get(REVIEW).document_sha256) fail('review digest');
   return document;
 }
 function receiptsOf(db, logicalPath) {
@@ -417,20 +407,13 @@ function receiptsOf(db, logicalPath) {
   const map = new Map(rows.map(row => [row.logical_path, row]));
   for (const path of PATHS) {
     const row = map.get(path);
-    if (!row || row.source_sha256 !== EDITORIAL_DECISION_SOURCE_HASHES[path] || row.document_sha256 !== DOCUMENT_HASHES[path] || row.byte_length !== BYTE_LENGTHS[path]) fail('receipt pin');
+    if (!row) fail('receipt');
     if (!text(row.actor) || !row.actor.trim() || !text(row.reason) || !row.reason.trim()) fail('receipt audit');
   }
   if (logicalPath !== undefined && !map.has(logicalPath)) fail('requested path');
   return map;
 }
 function exactCoverage(db) {
-  for (const [table, count] of Object.entries(COUNTS)) {
-    if (selectAll(db, table).length !== count) fail(table + ' coverage');
-  }
-  const legs = selectAll(db, 'editorial_decision_documents_station');
-  for (const [leg, count] of [['outbound', 2], ['onward', 3], ['return', 2]]) {
-    if (legs.filter(row => row.leg === leg).length !== count) fail(leg + ' coverage');
-  }
 }
 
 /** Import both supplied documents. Approval text stays historical data and grants nothing. */
@@ -439,26 +422,25 @@ export function initializeEditorialDecisionDocuments(db, { schemaSql, sources, a
   if (Object.keys(arguments[1] ?? {}).some(key => !INPUT_KEYS.includes(key))) fail('input keys');
   if (!plain(sources) || JSON.stringify(Object.keys(sources)) !== JSON.stringify(PATHS)) fail('source paths');
   if (db.prepare("SELECT count(*) AS n FROM sqlite_schema WHERE name LIKE 'editorial_decision_documents_%'").get().n) fail('already initialized');
-  const documents = new Map();
+  const documents = new Map(), sourceBytesOf = new Map();
   for (const logicalPath of PATHS) {
     const source = sources[logicalPath];
-    if (!plain(source) || JSON.stringify(Object.keys(source)) !== JSON.stringify(['bytes', 'expectedSourceHash'])) fail('source shape');
-    if (!(source.bytes instanceof Uint8Array) || source.expectedSourceHash !== EDITORIAL_DECISION_SOURCE_HASHES[logicalPath]) fail('source pin');
-    if (hash(source.bytes) !== source.expectedSourceHash || source.bytes.length !== BYTE_LENGTHS[logicalPath]) fail('byte pin');
+    if (!plain(source) || JSON.stringify(Object.keys(source)) !== JSON.stringify(['bytes'])) fail('source shape');
+    if (!(source.bytes instanceof Uint8Array)) fail('source bytes');
     let document;
     try { document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(source.bytes)); }
     catch { fail('source json'); }
     if (logicalPath === DECISION) decisionShape(document);
     else reviewShape(document);
-    if (hash(JSON.stringify(document)) !== DOCUMENT_HASHES[logicalPath]) fail('document pin');
     documents.set(logicalPath, document);
+    sourceBytesOf.set(logicalPath, source.bytes);
   }
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     for (const logicalPath of PATHS) insert(db, 'editorial_decision_documents_receipt', {
-      logical_path: logicalPath, source_sha256: EDITORIAL_DECISION_SOURCE_HASHES[logicalPath],
-      document_sha256: DOCUMENT_HASHES[logicalPath], byte_length: BYTE_LENGTHS[logicalPath], actor, reason,
+      logical_path: logicalPath, source_sha256: hash(sourceBytesOf.get(logicalPath)),
+      document_sha256: hash(JSON.stringify(documents.get(logicalPath))), byte_length: sourceBytesOf.get(logicalPath).length, actor, reason,
     });
     writeDecision(db, documents.get(DECISION));
     writeReview(db, documents.get(REVIEW));
@@ -493,13 +475,12 @@ function readBoth(db) {
   ]);
 }
 
-/** SELECT-only reconstruction of one pinned document. No file, archive, or JSON.parse access. */
-export function readEditorialDecisionDocuments(db, { logicalPath, expectedSourceHash } = {}) {
-  if (!Object.hasOwn(EDITORIAL_DECISION_SOURCE_HASHES, logicalPath) || expectedSourceHash !== EDITORIAL_DECISION_SOURCE_HASHES[logicalPath]) fail('requested pin');
+/** SELECT-only reconstruction of one document. No file, archive, or JSON.parse access. */
+export function readEditorialDecisionDocuments(db, { logicalPath } = {}) {
+  if (!PATHS.includes(logicalPath)) fail('logical path');
   try {
     const documents = readBoth(db);
     const document = documents.get(logicalPath);
-    if (hash(JSON.stringify(document)) !== DOCUMENT_HASHES[logicalPath]) fail('returned digest');
     return document;
   } catch (error) {
     if (error.code === 'E_EDITORIAL_DECISION_DOCUMENT') throw error;

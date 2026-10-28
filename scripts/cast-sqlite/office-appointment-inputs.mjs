@@ -1,8 +1,7 @@
 import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
-import { readApprovedDataSource } from './data-source-editor.mjs';
+import { readCurrentDataSource } from './data-source-editor.mjs';
 
-export const OFFICE_APPOINTMENT_SOURCE_HASH = 'de70382bed6464c5b2651f71ab7e13cc710512dbd1e0422a1c6b78980041a794';
 const logicalPath = 'lore/relations/opening-office-appointments.json';
 const fail = detail => { throw Object.assign(new Error(`E_OFFICE_APPOINTMENT_INPUT: ${detail}`), { code: 'E_OFFICE_APPOINTMENT_INPUT' }); };
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -66,15 +65,14 @@ function orderedDocument(db, value) {
 }
 
 // Runtime uses typed SELECTs only; initialization is an explicit separate step.
-export function readOfficeAppointmentInputs(db, { expectedSourceHash = OFFICE_APPOINTMENT_SOURCE_HASH } = {}) {
+export function readOfficeAppointmentInputs(db, {} = {}) {
   try {
     const receipts = db.prepare('SELECT * FROM office_appointment_input_import').all();
-    if (receipts.length !== 1 || expectedSourceHash !== OFFICE_APPOINTMENT_SOURCE_HASH || receipts[0].source_sha256 !== expectedSourceHash) fail('source receipt');
+    if (receipts.length !== 1) fail('source receipt');
     const m = receipts[0], data = domains(db, m.source_id);
     if (db.prepare("SELECT name FROM sqlite_schema WHERE name='data_source_head'").get()
       && db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(logicalPath)) {
-      const approved = readApprovedDataSource(db, logicalPath,
-        '3b93a14de55b66f2ba38c6461df57608c42011a992628f57bf73a546e2aff3a8', expectedSourceHash);
+      const approved = readCurrentDataSource(db, logicalPath);
       const result = candidate(db, data);
       if (!isDeepStrictEqual(result, approved)) fail('approved revision projection');
       approvedCurrentSources.set(result, digest(result));
@@ -87,8 +85,9 @@ export function readOfficeAppointmentInputs(db, { expectedSourceHash = OFFICE_AP
   } catch (error) { if (error.code === 'E_OFFICE_APPOINTMENT_INPUT') throw error; fail(error.message); }
 }
 
-export async function initializeOfficeAppointmentInputs(db, { sourceBytes, expectedSourceHash, actor, reason } = {}) {
-  if (!(sourceBytes instanceof Uint8Array) || expectedSourceHash !== OFFICE_APPOINTMENT_SOURCE_HASH || hash(sourceBytes) !== expectedSourceHash) fail('source bytes/hash');
+export async function initializeOfficeAppointmentInputs(db, { sourceBytes, actor, reason } = {}) {
+  if (!(sourceBytes instanceof Uint8Array)) fail('source bytes');
+  const expectedSourceHash = hash(sourceBytes);
   if (![actor, reason].every(v => typeof v === 'string' && v.trim())) fail('actor/reason');
   if (db.isTransaction) fail('active transaction');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));

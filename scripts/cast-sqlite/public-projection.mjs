@@ -1,25 +1,24 @@
 import { readFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 
-export const PUBLIC_PROJECTION_PINS = {
-  office: 'd0fbb1fcae047ca830832c9eff4ccd95cf4583a7ab7403ba90161ada4a8708da',
-  map: '6ea65e2c9702b41b35fb77dbb8263f4732f67092b8a8ef5b13eb914386b1f464',
-}
+export const PUBLIC_PROJECTION_KINDS = Object.freeze(['office', 'map'])
+const sha256 = bytes => createHash('sha256').update(bytes).digest('hex')
 
 // Migration of the two existing publication rules only; never invent wording or approval.
 export function initializePublicProjections(db, { sources, actor, reason }) {
   if (db.isTransaction || !actor || !reason) throw new Error('E_PUBLIC_PROJECTION_IMPORT')
-  const documents = Object.fromEntries(Object.entries(PUBLIC_PROJECTION_PINS).map(([kind, pin]) => {
+  const digests = {}
+  const documents = Object.fromEntries(PUBLIC_PROJECTION_KINDS.map(kind => {
     const bytes = sources[kind]
-    if (!(bytes instanceof Uint8Array) || createHash('sha256').update(bytes).digest('hex') !== pin)
-      throw new Error('E_PUBLIC_PROJECTION_IMPORT')
+    if (!(bytes instanceof Uint8Array)) throw new Error('E_PUBLIC_PROJECTION_IMPORT')
+    digests[kind] = sha256(bytes)
     return [kind, JSON.parse(Buffer.from(bytes))]
   }))
   db.exec('BEGIN IMMEDIATE')
   try {
     db.exec(readFileSync(new URL('./public-projection.sql', import.meta.url), 'utf8'))
     for (const [kind, document] of Object.entries(documents)) db.prepare('INSERT INTO public_projection_document VALUES(?,?,?,?,?,?)')
-      .run(kind, document.slug, document.removeAnchor ?? null, PUBLIC_PROJECTION_PINS[kind], actor, reason)
+      .run(kind, document.slug, document.removeAnchor ?? null, digests[kind], actor, reason)
     documents.office.replacements.forEach((row, ordinal) => db.prepare('INSERT INTO public_office_replacement VALUES(?,?,?,?,?,?,?)')
       .run(ordinal, row.anchor, row.locale, row.row ?? null, row.column ?? null, row.before, row.after))
     documents.map.summaries.forEach((row, ordinal) => db.prepare('INSERT INTO public_map_summary VALUES(?,?,?,?)')
@@ -34,9 +33,9 @@ export function initializePublicProjections(db, { sources, actor, reason }) {
 }
 
 export function readPublicProjection(db, kind) {
-  if (!Object.hasOwn(PUBLIC_PROJECTION_PINS, kind)) throw new Error('E_PUBLIC_PROJECTION_KIND')
+  if (!PUBLIC_PROJECTION_KINDS.includes(kind)) throw new Error('E_PUBLIC_PROJECTION_KIND')
   const root = db.prepare('SELECT * FROM public_projection_document WHERE kind=?').get(kind)
-  if (!root || root.source_sha256 !== PUBLIC_PROJECTION_PINS[kind]) throw new Error('E_PUBLIC_PROJECTION_SOURCE')
+  if (!root) throw new Error('E_PUBLIC_PROJECTION_SOURCE')
   if (kind === 'office') return { slug: root.slug, removeAnchor: root.remove_anchor,
     replacements: db.prepare('SELECT * FROM public_office_replacement ORDER BY ordinal').all().map(row => ({
       anchor: row.anchor, ...(row.row_number === null ? {} : { row: row.row_number, column: row.column_number }),

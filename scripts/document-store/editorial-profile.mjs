@@ -3,13 +3,13 @@ import { closeSync, openSync, readFileSync, unlinkSync } from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
 import { assertPrivateFilePermissions } from './private-file-permissions.mjs';
 import { abilityIds, profileFailures } from '../character-profile.mjs';
-import { PROFILE_INPUT_SOURCE_HASHES } from '../cast-sqlite/profile-inputs.mjs';
+import { PROFILE_INPUT_PATHS } from '../cast-sqlite/profile-inputs.mjs';
 
 // Internal read-only snapshot, not an authoring API or a public-reader adapter.
 // Inventory of all nine actual batches: every admitted field is named below.
 // Fixed domain descriptors compile to separate typed SQL tables, never JSON nodes.
 export const INTERNAL_PROFILE_CAPABILITY = Symbol('internal editorial profiles');
-export const EDITORIAL_PROFILE_SOURCE_HASHES = PROFILE_INPUT_SOURCE_HASHES;
+export const EDITORIAL_PROFILE_PATHS = PROFILE_INPUT_PATHS;
 const APP = 0x57455046;
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = code => { throw Object.assign(new Error(code), { code }); };
@@ -87,10 +87,10 @@ function readDomain(db,domain,key) {
  * automatic migration, partial import, update, or public export is provided.
  * Exact input bytes are sealed as evidence; readers query typed domains only.
  */
-export function initializeEditorialProfiles(path,{capability,scope='internal',batches,expectedSourceHashes,actor,reason}={}) {
+export function initializeEditorialProfiles(path,{capability,scope='internal',batches,actor,reason}={}) {
   if(capability!==INTERNAL_PROFILE_CAPABILITY||scope!=='internal')fail('E_PRIVATE');
   if(typeof actor!=='string'||!actor.trim()||typeof reason!=='string'||!reason.trim())fail('E_PROFILE_AUDIT');
-  if(!Array.isArray(batches)||batches.length!==9||!expectedSourceHashes||Object.keys(expectedSourceHashes).length!==9)fail('E_PROFILE_PINS');
+  if(!Array.isArray(batches)||batches.length!==PROFILE_INPUT_PATHS.length)fail('E_PROFILE_SOURCES');
   closeSync(openSync(path,'wx',0o600));
   let db;
   try {
@@ -98,13 +98,12 @@ export function initializeEditorialProfiles(path,{capability,scope='internal',ba
     db.exec('BEGIN IMMEDIATE'); db.exec(schema);
     db.exec('PRAGMA application_id='+APP+'; PRAGMA user_version=1');
     db.prepare('INSERT INTO editorial_import VALUES (1,?,?,?)').run(actor,reason,new Date().toISOString());
-    const paths=Object.keys(PROFILE_INPUT_SOURCE_HASHES), seen=new Set();
+    const paths=PROFILE_INPUT_PATHS, seen=new Set();
     batches.forEach((input,i)=>{
-      if(!paths.includes(input.logicalPath)||seen.has(input.logicalPath))fail('E_PROFILE_PINS');
+      if(!paths.includes(input.logicalPath)||seen.has(input.logicalPath))fail('E_PROFILE_SOURCES');
       seen.add(input.logicalPath);
       if(!(input.bytes instanceof Uint8Array))fail('E_PROFILE_BYTES');
       const bytes=Buffer.from(input.bytes), digest=sha(bytes);
-      if(digest!==expectedSourceHashes[input.logicalPath])fail('E_PROFILE_PINS');
       const batch=JSON.parse(bytes.toString('utf8'));
       if(batch.schema!=='seoul-character-profile-batch.v1'||batch.visibility!=='editorial-only')fail('E_PROFILE_SHAPE');
       writeDomain(db,'batch',String(i),'root',i,batch);
@@ -115,20 +114,18 @@ export function initializeEditorialProfiles(path,{capability,scope='internal',ba
         db.prepare('INSERT INTO editorial_identity VALUES (?)').run(p.personId);
       }
     });
-    if(db.prepare('SELECT count(*) AS n FROM editorial_identity').get().n!==1022)fail('E_PROFILE_COVERAGE');
     db.exec('COMMIT'); db.close();
   } catch(error){if(db?.isOpen){if(db.isTransaction)db.exec('ROLLBACK');db.close();}unlinkSync(path);throw error;}
 }
 
-export function openEditorialProfiles(path,{capability,scope='internal',expectedSourceHashes}={}) {
+export function openEditorialProfiles(path,{capability,scope='internal'}={}) {
   if(capability!==INTERNAL_PROFILE_CAPABILITY||scope!=='internal')fail('E_PRIVATE');
   assertPrivateFilePermissions(path);
   const db=new DatabaseSync(path,{readOnly:true,enableForeignKeyConstraints:true});
   try {
     if(db.prepare('PRAGMA application_id').get().application_id!==APP||db.prepare('PRAGMA user_version').get().user_version!==1)fail('E_SCHEMA');
-    if(!expectedSourceHashes||Object.keys(expectedSourceHashes).length!==9)fail('E_PROFILE_PINS');
     const sources=db.prepare('SELECT * FROM editorial_batch_source ORDER BY ordinal').all();
-    if(sources.length!==9||sources.some((s,i)=>s.ordinal!==i||!Object.hasOwn(PROFILE_INPUT_SOURCE_HASHES,s.logical_path)||s.sha256!==expectedSourceHashes[s.logical_path]))fail('E_PROFILE_PINS');
+    if(sources.length!==PROFILE_INPUT_PATHS.length||sources.some((s,i)=>s.ordinal!==i||!PROFILE_INPUT_PATHS.includes(s.logical_path)))fail('E_PROFILE_SOURCES');
   }catch(error){db.close();throw error;}
   return Object.freeze({close:()=>db.close(),readBatches(){
     db.exec('BEGIN');

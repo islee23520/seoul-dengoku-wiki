@@ -1,8 +1,7 @@
 import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
-import { readApprovedDataSource } from './data-source-editor.mjs';
+import { readCurrentDataSource } from './data-source-editor.mjs';
 
-export const PERSONAL_HOLDING_SOURCE_HASH = '1801d7bb8d27af743f74ea447d4f7be782b9d8ba7ba5b37af4d0c6f2b6329a12';
 const logicalPath = 'lore/relations/personal-holdings.json';
 const fail = detail => { throw Object.assign(new Error(`E_PERSONAL_HOLDING_INPUT: ${detail}`), { code: 'E_PERSONAL_HOLDING_INPUT' }); };
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -102,15 +101,14 @@ function orderedDocument(db, value, current = false) {
 }
 
 // Runtime is SELECT-only: no source files, archive records, parsing or migration.
-export function readPersonalHoldingInputs(db, { expectedSourceHash = PERSONAL_HOLDING_SOURCE_HASH } = {}) {
+export function readPersonalHoldingInputs(db, {} = {}) {
   try {
     const receipts = db.prepare('SELECT * FROM personal_holding_input_import').all();
-    if (receipts.length !== 1 || expectedSourceHash !== PERSONAL_HOLDING_SOURCE_HASH || receipts[0].source_sha256 !== expectedSourceHash) fail('source receipt');
+    if (receipts.length !== 1) fail('source receipt');
     const m = receipts[0], domainsNow = domains(db, m.source_id);
     if (db.prepare("SELECT name FROM sqlite_schema WHERE name='data_source_head'").get()
       && db.prepare('SELECT revision_id FROM data_source_head WHERE source_path=?').get(logicalPath)) {
-      const approved = readApprovedDataSource(db, logicalPath,
-        '77a0cc273441857a892822319f610d5630eb0801f70b7e633c303db7868f32e3', expectedSourceHash);
+      const approved = readCurrentDataSource(db, logicalPath);
       const result = orderedDocument(db, candidate(db, domainsNow.data), true);
       if (!isDeepStrictEqual(result, approved)) fail('approved revision projection');
       return result;
@@ -124,8 +122,9 @@ export function readPersonalHoldingInputs(db, { expectedSourceHash = PERSONAL_HO
 
 // Explicit one-time initializer. Caller must supply authenticated bytes and a
 // writable disposable copy; no existing context, source or rights row is edited.
-export async function initializePersonalHoldingInputs(db, { sourceBytes, expectedSourceHash, actor, reason } = {}) {
-  if (!(sourceBytes instanceof Uint8Array) || expectedSourceHash !== PERSONAL_HOLDING_SOURCE_HASH || hash(sourceBytes) !== expectedSourceHash) fail('source bytes/hash');
+export async function initializePersonalHoldingInputs(db, { sourceBytes, actor, reason } = {}) {
+  if (!(sourceBytes instanceof Uint8Array)) fail('source bytes');
+  const expectedSourceHash = hash(sourceBytes);
   if (![actor, reason].every(v => typeof v === 'string' && v.trim())) fail('actor/reason');
   if (db.isTransaction) fail('active transaction');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));

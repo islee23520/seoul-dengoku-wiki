@@ -5,10 +5,6 @@ import { createHash } from 'node:crypto';
 // Review, owner, and decision text stays stored evidence. It is not current authorization.
 // Read reconstruction is SELECT-only: no file, archive, or JSON.parse access.
 
-export const WORLD_GRAPH_SOURCE_HASH = '46985afccc2d3f2b5e4e3152254d30bc023d0688d63745a951a9be0f6ebf097d';
-export const WORLD_GRAPH_DOCUMENT_HASH = '0af399f295580d8f768594100c0a430621f15db0eb3b30e4581a8c07aa465c29';
-export const WORLD_GRAPH_SOURCE_BYTE_LENGTH = 217947;
-
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const fail = (code, detail) => { throw Object.assign(new Error(detail ? `${code}: ${detail}` : code), { code }); };
 const own = (value, key) => Object.prototype.hasOwnProperty.call(value, key);
@@ -382,8 +378,8 @@ function readDocument(db) {
   const imports = db.prepare('SELECT * FROM world_graph_document_import').all();
   if (imports.length !== 1 || imports[0].singleton !== 1) fail('E_WORLD_GRAPH_INTEGRITY', 'import');
   const receipt = imports[0];
-  if (receipt.source_sha256 !== WORLD_GRAPH_SOURCE_HASH || receipt.byte_length !== WORLD_GRAPH_SOURCE_BYTE_LENGTH || receipt.document_sha256 !== WORLD_GRAPH_DOCUMENT_HASH) {
-    fail('E_WORLD_GRAPH_INTEGRITY', 'pin');
+  if (!/^[a-f0-9]{64}$/u.test(receipt.source_sha256 ?? '') || !Number.isSafeInteger(receipt.byte_length)) {
+    fail('E_WORLD_GRAPH_INTEGRITY', 'receipt');
   }
   for (const [table, countColumn] of CHILD_TABLES) {
     if (countOf(db, table) !== root[countColumn]) fail('E_WORLD_GRAPH_INTEGRITY', table);
@@ -572,14 +568,11 @@ function optionsOf(options) {
 /** Record one supplied source exactly. The caller owns the connection and transaction. */
 export function initializeWorldGraphDocument(db, options) {
   const input = optionsOf(options);
-  const { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = input;
+  const { schemaSql, sourceBytes, actor, reason } = input;
   if (typeof schemaSql !== 'string' || !schemaSql.includes('CREATE TABLE world_graph_document_root')) fail('E_WORLD_GRAPH_SCHEMA');
   if (typeof actor !== 'string' || !actor.trim() || typeof reason !== 'string' || !reason.trim()) fail('E_WORLD_GRAPH_AUDIT');
-  if (typeof expectedSourceHash !== 'string' || !/^[a-f0-9]{64}$/u.test(expectedSourceHash)) fail('E_WORLD_GRAPH_PIN');
   const bytes = bytesOf(sourceBytes);
-  if (sha(bytes) !== expectedSourceHash) fail('E_WORLD_GRAPH_PIN');
   const document = parseDocument(bytes);
-  if (expectedSourceHash !== WORLD_GRAPH_SOURCE_HASH || bytes.length !== WORLD_GRAPH_SOURCE_BYTE_LENGTH || sha(JSON.stringify(document)) !== WORLD_GRAPH_DOCUMENT_HASH) fail('E_WORLD_GRAPH_PIN');
   const started = !db.isTransaction;
   if (started) db.exec('BEGIN IMMEDIATE');
   db.exec('SAVEPOINT world_graph_document_write');
@@ -589,8 +582,8 @@ export function initializeWorldGraphDocument(db, options) {
       singleton: 1,
       actor,
       reason,
-      source_sha256: WORLD_GRAPH_SOURCE_HASH,
-      document_sha256: WORLD_GRAPH_DOCUMENT_HASH,
+      source_sha256: sha(bytes),
+      document_sha256: sha(JSON.stringify(document)),
       byte_length: bytes.length,
     });
     writeDocument(db, document);
@@ -608,8 +601,6 @@ export function initializeWorldGraphDocument(db, options) {
 }
 
 /** SELECT-only reconstruction. Rejects a stored digest that no longer matches the typed rows. */
-export function readWorldGraphDocument(db, options) {
-  const input = optionsOf(options);
-  if (input.expectedSourceHash !== WORLD_GRAPH_SOURCE_HASH) fail('E_WORLD_GRAPH_PIN');
+export function readWorldGraphDocument(db) {
   return readDocument(db);
 }

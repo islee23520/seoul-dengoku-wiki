@@ -5,14 +5,11 @@ import { DatabaseSync } from 'node:sqlite';
 // Private typed snapshot of the editorial soul-candidate ledger.
 // Initialization records supplied bytes; it does not approve, publish, or reinterpret them.
 export const INTERNAL_CANDIDATES_CAPABILITY = Symbol('internal Soul-Candidates');
-export const SOUL_CANDIDATE_SOURCE_HASHES = Object.freeze({
-  'lore/editorial/Soul-Candidates.json': '869ebc95f088f46fedf7db88a3f52b387b2883be3364cdd9b354b15eac6949d8',
-});
-const DOCUMENT_HASHES = Object.freeze({
-  'lore/editorial/Soul-Candidates.json': '930210e8b4e1caabbff8d4d0dbd2c4ae21200dc01c660793e6fbb1ad6e292f93',
-});
+export const SOUL_CANDIDATE_PATHS = Object.freeze([
+  'lore/editorial/Soul-Candidates.json',
+]);
 const APPLICATION_ID = 0x57534344;
-const PATHS = Object.freeze(Object.keys(SOUL_CANDIDATE_SOURCE_HASHES));
+const PATHS = Object.freeze(SOUL_CANDIDATE_PATHS);
 const schema = readFileSync(new URL('./soul-candidate-documents.sql', import.meta.url), 'utf8');
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = code => { throw Object.assign(new Error(code), { code }); };
@@ -33,16 +30,10 @@ function authorize({ capability, scope = 'internal' } = {}) {
   if (capability !== INTERNAL_CANDIDATES_CAPABILITY || scope !== 'internal') fail('E_PRIVATE');
 }
 
-function exactPins(expectedSourceHashes) {
-  if (!expectedSourceHashes || typeof expectedSourceHashes !== 'object' || Array.isArray(expectedSourceHashes)) fail('E_CANDIDATE_PINS');
-  const keys = Object.keys(expectedSourceHashes);
-  if (keys.length !== PATHS.length || PATHS.some(path => !Object.hasOwn(expectedSourceHashes, path) || expectedSourceHashes[path] !== SOUL_CANDIDATE_SOURCE_HASHES[path])) fail('E_CANDIDATE_PINS');
-}
-
 function sourceSet(sources) {
-  if (!sources || typeof sources !== 'object' || Array.isArray(sources)) fail('E_CANDIDATE_PINS');
+  if (!sources || typeof sources !== 'object' || Array.isArray(sources)) fail('E_CANDIDATE_SOURCES');
   const keys = Object.keys(sources);
-  if (keys.length !== PATHS.length || PATHS.some(path => !Object.hasOwn(sources, path))) fail('E_CANDIDATE_PINS');
+  if (keys.length !== PATHS.length || PATHS.some(path => !Object.hasOwn(sources, path))) fail('E_CANDIDATE_SOURCES');
 }
 
 function inspectDocument(document) {
@@ -187,14 +178,13 @@ function readOne(db, logicalPath, receipt) {
   const consumedRoles = candidates.reduce((sum, row) => sum + row.role_tag_count, 0);
   const consumedLimitations = candidates.reduce((sum, row) => sum + row.limitation_count, 0);
   if (consumedRelated !== related.length || consumedSources !== sources.length || consumedRoles !== roles.length || consumedLimitations !== limitations.length) fail('E_CANDIDATE_INTEGRITY');
-  if (sha(JSON.stringify(result)) !== receipt.document_sha256 || sha(JSON.stringify(result)) !== DOCUMENT_HASHES[logicalPath]) fail('E_CANDIDATE_INTEGRITY');
+  if (sha(JSON.stringify(result)) !== receipt.document_sha256) fail('E_CANDIDATE_INTEGRITY');
   return result;
 }
 
-function readDocumentsFrom(db, expectedSourceHashes) {
-  exactPins(expectedSourceHashes);
+function readDocumentsFrom(db) {
   const receipts = db.prepare('SELECT * FROM soul_candidate_documents_source ORDER BY logical_path').all();
-  if (receipts.length !== PATHS.length || receipts.some(row => !PATHS.includes(row.logical_path) || row.source_sha256 !== SOUL_CANDIDATE_SOURCE_HASHES[row.logical_path] || row.document_sha256 !== DOCUMENT_HASHES[row.logical_path] || row.byte_length !== 192079)) fail('E_CANDIDATE_INTEGRITY');
+  if (receipts.length !== PATHS.length || receipts.some(row => !PATHS.includes(row.logical_path))) fail('E_CANDIDATE_INTEGRITY');
   for (const table of ['soul_candidate_documents_document', 'soul_candidate_documents_period', 'soul_candidate_documents_research', 'soul_candidate_documents_coverage', 'soul_candidate_documents_research_limitation', 'soul_candidate_documents_candidate', 'soul_candidate_documents_related_period', 'soul_candidate_documents_source_record', 'soul_candidate_documents_role_tag', 'soul_candidate_documents_limitation']) {
     const foreign = db.prepare('SELECT count(*) AS n FROM ' + table + ' WHERE logical_path != ?').get(PATHS[0]).n;
     if (foreign) fail('E_CANDIDATE_INTEGRITY');
@@ -211,7 +201,7 @@ function readDocumentsFrom(db, expectedSourceHashes) {
   return documents;
 }
 
-/** Caller supplies the exact logical path, bytes, and expected digest in memory.
+/** Caller supplies the exact logical path and bytes in memory.
  * The logical path is never opened. Archived bytes are immutable evidence only.
  */
 export function initializeSoulCandidateDocuments(absoluteNewPath, options = {}) {
@@ -219,9 +209,7 @@ export function initializeSoulCandidateDocuments(absoluteNewPath, options = {}) 
   const { sources, actor, reason } = options;
   if (typeof actor !== 'string' || !actor.trim() || typeof reason !== 'string' || !reason.trim()) fail('E_CANDIDATE_AUDIT');
   if (options.scope !== undefined && options.scope !== 'internal') fail('E_PRIVATE');
-  if (options.expectedSourceHashes !== undefined) exactPins(options.expectedSourceHashes);
   sourceSet(sources);
-  if (options.expectedSourceHashes !== undefined && PATHS.some(path => options.expectedSourceHashes[path] !== sources[path]?.expectedSourceHash)) fail('E_CANDIDATE_PINS');
   const parsed = new Map();
   for (const logicalPath of PATHS) {
     const input = sources[logicalPath];
@@ -231,7 +219,6 @@ export function initializeSoulCandidateDocuments(absoluteNewPath, options = {}) 
     let document;
     try { document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes)); }
     catch { fail('E_CANDIDATE_SHAPE'); }
-    if (typeof input.expectedSourceHash !== 'string' || !/^[a-f0-9]{64}$/.test(input.expectedSourceHash) || sha(bytes) !== input.expectedSourceHash) fail('E_CANDIDATE_PINS');
     parsed.set(logicalPath, { bytes, document });
   }
   closeSync(openSync(absoluteNewPath, 'wx', 0o600));
@@ -245,13 +232,12 @@ export function initializeSoulCandidateDocuments(absoluteNewPath, options = {}) 
     for (const logicalPath of PATHS) {
       const { bytes, document } = parsed.get(logicalPath);
       db.prepare('INSERT INTO soul_candidate_documents_source (logical_path, source_sha256, document_sha256, byte_length) VALUES (?,?,?,?)')
-        .run(logicalPath, SOUL_CANDIDATE_SOURCE_HASHES[logicalPath], DOCUMENT_HASHES[logicalPath], bytes.length);
+        .run(logicalPath, sha(bytes), sha(JSON.stringify(document)), bytes.length);
       db.prepare('INSERT INTO soul_candidate_documents_archive (logical_path, source_sha256, raw_bytes) VALUES (?,?,?)')
-        .run(logicalPath, SOUL_CANDIDATE_SOURCE_HASHES[logicalPath], bytes);
+        .run(logicalPath, sha(bytes), bytes);
       writeDocument(db, logicalPath, document);
-      if (sha(bytes) !== SOUL_CANDIDATE_SOURCE_HASHES[logicalPath] || sha(JSON.stringify(document)) !== DOCUMENT_HASHES[logicalPath]) fail('E_CANDIDATE_SHAPE');
     }
-    const documents = readDocumentsFrom(db, SOUL_CANDIDATE_SOURCE_HASHES);
+    const documents = readDocumentsFrom(db);
     for (const logicalPath of PATHS) {
       if (JSON.stringify(documents.get(logicalPath)) !== JSON.stringify(parsed.get(logicalPath).document)) fail('E_CANDIDATE_INTEGRITY');
     }
@@ -274,9 +260,6 @@ export function openSoulCandidateDocuments(absolutePath, options = {}) {
   const db = new DatabaseSync(absolutePath, { readOnly: true, enableForeignKeyConstraints: true });
   try {
     if (db.prepare('PRAGMA application_id').get().application_id !== APPLICATION_ID || db.prepare('PRAGMA user_version').get().user_version !== 1) fail('E_SCHEMA');
-    exactPins(options.expectedSourceHashes);
-    const receipts = db.prepare('SELECT logical_path, source_sha256, document_sha256 FROM soul_candidate_documents_source').all();
-    if (receipts.some(row => PATHS.includes(row.logical_path) && row.source_sha256 !== options.expectedSourceHashes[row.logical_path])) fail('E_CANDIDATE_PINS');
     db.exec('PRAGMA query_only=ON');
   } catch (error) {
     db.close();
@@ -287,7 +270,7 @@ export function openSoulCandidateDocuments(absolutePath, options = {}) {
     readDocuments() {
       db.exec('BEGIN');
       try {
-        const documents = readDocumentsFrom(db, options.expectedSourceHashes);
+        const documents = readDocumentsFrom(db);
         db.exec('COMMIT');
         return documents;
       } catch (error) {

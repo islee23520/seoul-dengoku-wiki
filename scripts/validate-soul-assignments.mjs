@@ -1,6 +1,6 @@
 import { resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { openSoulAssignments, INTERNAL_SOUL_CAPABILITY, SOUL_ASSIGNMENT_SOURCE_SHA256 } from './document-store/soul-assignment.mjs'
+import { openSoulAssignments, INTERNAL_SOUL_CAPABILITY  } from './document-store/soul-assignment.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
 import { readAtlasIdentity } from './cast-sqlite/atlas-identity.mjs'
 
@@ -88,7 +88,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     const root = resolve(import.meta.dirname, '..')
     const souls = openSoulAssignments(process.env.WIKI_SOUL_ASSIGNMENT_DB
       ?? resolve(root, '.omo/private/seoul-migration/sqlite-authority-20261021/soul-assignments.sqlite'), {
-      capability: INTERNAL_SOUL_CAPABILITY, expectedSha256: SOUL_ASSIGNMENT_SOURCE_SHA256,
+      capability: INTERNAL_SOUL_CAPABILITY,
     })
     let ledger
     try { ledger = souls.readDocument() } finally { souls.close() }

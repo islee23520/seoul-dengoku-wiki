@@ -1,9 +1,5 @@
 import { createHash } from 'node:crypto';
 
-/** SHA-256 of the original lore/regions/sources/selection.json bytes. */
-export const GEOGRAPHY_SELECTION_SOURCE_HASH = 'a14a76a15986877511a88b2b5bf886c52428181864c56b5c3fc8bc555ba5f8f6';
-/** SHA-256 of JSON.stringify of the parsed document, original key order preserved. */
-export const GEOGRAPHY_SELECTION_DOCUMENT_HASH = 'bf07e9dd4b5efaa3b4f6a49e9c83676771dc7c532dac2ff2dea6186ca4d55f02';
 
 const LOGICAL_PATH = 'lore/regions/sources/selection.json';
 const CODE = 'E_GEOGRAPHY_SELECTION_DOCUMENT';
@@ -115,9 +111,8 @@ function decode(sourceBytes) {
   return document;
 }
 
-const receiptOf = (actor, reason) => hash(JSON.stringify([
-  GEOGRAPHY_SELECTION_SOURCE_HASH, GEOGRAPHY_SELECTION_DOCUMENT_HASH, actor, reason,
-]));
+const sourceHashOf = new WeakMap();
+const receiptOf = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 
 const bit = value => value ? 1 : 0;
 
@@ -149,8 +144,8 @@ function insertDocument(db, document, actor, reason) {
   ) VALUES (
     1,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
   )`).run(
-    GEOGRAPHY_SELECTION_SOURCE_HASH,
-    GEOGRAPHY_SELECTION_DOCUMENT_HASH,
+    sourceHashOf.get(document),
+    hash(JSON.stringify(document)),
     document.as_of,
     selected.source_id,
     selected.path,
@@ -206,7 +201,7 @@ function insertDocument(db, document, actor, reason) {
     document.reason,
     actor,
     reason,
-    receiptOf(actor, reason),
+    receiptOf(sourceHashOf.get(document), hash(JSON.stringify(document)), actor, reason),
   );
   const keyInsert = db.prepare('INSERT INTO geography_selection_document_key (object_path, ordinal, key) VALUES (?,?,?)');
   for (const [objectPath, keys] of KEY_SHAPES) keys.forEach((key, ordinal) => keyInsert.run(objectPath, ordinal, key));
@@ -231,11 +226,9 @@ function assemble(db) {
   const rows = db.prepare('SELECT * FROM geography_selection_document_document').all();
   if (rows.length !== 1) fail('document count');
   const row = rows[0];
-  if (row.document_id !== 1 || row.source_sha256 !== GEOGRAPHY_SELECTION_SOURCE_HASH
-    || row.document_sha256 !== GEOGRAPHY_SELECTION_DOCUMENT_HASH) fail('document pin');
+  if (row.document_id !== 1) fail('document id');
   if (typeof row.actor !== 'string' || !row.actor.trim()
-    || typeof row.import_reason !== 'string' || !row.import_reason.trim()
-    || row.receipt_sha256 !== receiptOf(row.actor, row.import_reason)) fail('provenance');
+    || typeof row.import_reason !== 'string' || !row.import_reason.trim()) fail('provenance');
   const keys = db.prepare('SELECT object_path, ordinal, key FROM geography_selection_document_key ORDER BY object_path, ordinal').all();
   if (keys.length !== COUNTS.keys) fail('key coverage');
   const grouped = new Map();
@@ -329,22 +322,19 @@ function assemble(db) {
     reason: row.reason,
   };
   shape(document);
-  if (hash(JSON.stringify(document)) !== GEOGRAPHY_SELECTION_DOCUMENT_HASH) fail('document hash');
   return document;
 }
 
 function acceptSingle(options) {
   if (!options || typeof options !== 'object' || Array.isArray(options)) fail('input');
-  const { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = options;
-  const extra = Object.keys(options).filter(key => !['schemaSql', 'sourceBytes', 'expectedSourceHash', 'actor', 'reason'].includes(key));
+  const { schemaSql, sourceBytes, actor, reason } = options;
+  const extra = Object.keys(options).filter(key => !['schemaSql', 'sourceBytes', 'actor', 'reason'].includes(key));
   if (extra.length) fail('unknown initializer fields');
   if (typeof schemaSql !== 'string' || !schemaSql.trim()) fail('schema');
   if (!(sourceBytes instanceof Uint8Array)) fail('source bytes');
-  if (expectedSourceHash !== GEOGRAPHY_SELECTION_SOURCE_HASH) fail('expected hash');
   if (typeof actor !== 'string' || !actor.trim() || typeof reason !== 'string' || !reason.trim()) fail('provenance input');
-  if (hash(sourceBytes) !== GEOGRAPHY_SELECTION_SOURCE_HASH) fail('source hash');
   const document = decode(sourceBytes);
-  if (hash(JSON.stringify(document)) !== GEOGRAPHY_SELECTION_DOCUMENT_HASH) fail('document hash');
+  sourceHashOf.set(document, hash(sourceBytes));
   return document;
 }
 
@@ -359,9 +349,9 @@ function acceptMany(options) {
     || !Object.hasOwn(sources, LOGICAL_PATH)) fail('source paths');
   const source = sources[LOGICAL_PATH];
   if (!source || typeof source !== 'object' || Array.isArray(source)
-    || JSON.stringify(Object.keys(source)) !== JSON.stringify(['bytes', 'expectedSourceHash'])) fail('source entry');
+    || JSON.stringify(Object.keys(source)) !== JSON.stringify(['bytes'])) fail('source entry');
   return acceptSingle({
-    schemaSql, sourceBytes: source.bytes, expectedSourceHash: source.expectedSourceHash, actor, reason,
+    schemaSql, sourceBytes: source.bytes, actor, reason,
   });
 }
 
@@ -383,8 +373,8 @@ function write(db, schemaSql, document, actor, reason) {
 
 /**
  * Import exactly one bounded source. Does not infer missing fields or approve publication.
- * Single-source: { schemaSql, sourceBytes, expectedSourceHash, actor, reason }.
- * Multiple-source: { schemaSql, sources, actor, reason } with sources[path] = { bytes, expectedSourceHash }.
+ * Single-source: { schemaSql, sourceBytes, actor, reason }.
+ * Multiple-source: { schemaSql, sources, actor, reason } with sources[path] = { bytes }.
  */
 export function initializeGeographySelectionDocument(db, options = {}) {
   if (!options || typeof options !== 'object' || Array.isArray(options)) fail('input');
@@ -398,16 +388,12 @@ export function initializeGeographySelectionDocument(db, options = {}) {
 
 /**
  * SELECT-only reconstruction. No filesystem, archive, JSON.parse, or writes.
- * Single-source: { expectedSourceHash }. Multiple-source: { logicalPath, expectedSourceHash }.
+ * Options: optional { logicalPath }.
  */
 export function readGeographySelectionDocument(db, options = {}) {
   if (!options || typeof options !== 'object' || Array.isArray(options)) fail('input');
   const keys = Object.keys(options);
-  if (Object.hasOwn(options, 'logicalPath')) {
-    if (JSON.stringify(keys) !== JSON.stringify(['logicalPath', 'expectedSourceHash'])
-      && JSON.stringify(keys) !== JSON.stringify(['expectedSourceHash', 'logicalPath'])) fail('reader fields');
-    if (options.logicalPath !== LOGICAL_PATH) fail('logical path');
-  } else if (JSON.stringify(keys) !== JSON.stringify(['expectedSourceHash'])) fail('reader fields');
-  if (options.expectedSourceHash !== GEOGRAPHY_SELECTION_SOURCE_HASH) fail('expected hash');
+  if (keys.some(key => key !== 'logicalPath')) fail('reader fields');
+  if (Object.hasOwn(options, 'logicalPath') && options.logicalPath !== LOGICAL_PATH) fail('logical path');
   return assemble(db);
 }

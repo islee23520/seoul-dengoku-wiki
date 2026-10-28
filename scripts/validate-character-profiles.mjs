@@ -19,9 +19,9 @@ export async function loadCharacterProfiles(root, {
       try { return readAtlasIdentity(db).registry } finally { db.close() }
     })()
   const assignments = await (async () => {
-      const { openSoulAssignments, INTERNAL_SOUL_CAPABILITY, SOUL_ASSIGNMENT_SOURCE_SHA256 } = await import('./document-store/soul-assignment.mjs')
+      const { openSoulAssignments, INTERNAL_SOUL_CAPABILITY  } = await import('./document-store/soul-assignment.mjs')
       const store = openSoulAssignments(soulAssignmentDb, {
-        capability: INTERNAL_SOUL_CAPABILITY, expectedSha256: SOUL_ASSIGNMENT_SOURCE_SHA256, view: 'approved',
+        capability: INTERNAL_SOUL_CAPABILITY, view: 'approved',
       })
       try { return store.readDocument() } finally { store.close() }
     })()

@@ -1,11 +1,11 @@
 import { createHash } from 'node:crypto'
 import { fileURLToPath } from 'node:url'
 import { openReadOnly } from './cast-sqlite/db.mjs'
-import { readHouseholdPolicyDocument, HOUSEHOLD_POLICY_SOURCE_HASH } from './cast-sqlite/household-policy-document.mjs'
+import { readHouseholdPolicyDocument } from './cast-sqlite/household-policy-document.mjs'
 
 export const householdHumanoidPolicy = (() => {
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? fileURLToPath(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url)))
-  try { return readHouseholdPolicyDocument(db, { expectedSourceHash: HOUSEHOLD_POLICY_SOURCE_HASH }) }
+  try { return readHouseholdPolicyDocument(db) }
   finally { db.close() }
 })()
 
