@@ -10,26 +10,48 @@ import { fileURLToPath } from 'node:url'
 import { generatorStage } from './generate-release.mjs'
 import { textToImageBlock } from '../server/portrait-text-to-image.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
-import { readPortraitGenderInputs } from './cast-sqlite/portrait-gender-input.mjs'
-import { readPortraitFamilyInputs } from './cast-sqlite/portrait-family-input.mjs'
-import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
+import { createReader } from './cast-sqlite/db-pg.mjs'
+import { readPortraitGenderInputs, readPortraitGenderInputsAsync } from './cast-sqlite/portrait-gender-input.mjs'
+import { readPortraitFamilyInputs, readPortraitFamilyInputsAsync } from './cast-sqlite/portrait-family-input.mjs'
+import { readPersonDisposition, readPersonDispositionAsync } from './cast-sqlite/person-disposition.mjs'
 
+
+async function readSnapshotTransaction(reader, importSnapshot, fn) {
+  return reader.transaction(fn, { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
+}
 export async function generatePortraitTokens(root) {
   const { root: stageRoot, writeFile } = await generatorStage(root)
   const tokenRoot = resolve(stageRoot, 'public/portrait-tokens')
   const detailRoot = resolve(stageRoot, 'public/person-details')
   const DERIVED = 'derived-proposal'
   const DERIVED_DATE = '20261019'
-
   const tokenDatabasePath = process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite')
-  const genders = (() => {
-      const db = openReadOnly(tokenDatabasePath)
-      try { return readPortraitGenderInputs(db) } finally { db.close() }
-    })()
-  const familyByPerson = (() => {
-      const db = openReadOnly(tokenDatabasePath)
-      try { return readPortraitFamilyInputs(db) } finally { db.close() }
-    })()
+  const inputs = await (async () => {
+    if (process.env.WIKI_DOCUMENT_PG) {
+      const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+      try {
+        return await readSnapshotTransaction(reader, process.env.WIKI_GENERATION_SNAPSHOT, async (tx) => ({
+          genders: await readPortraitGenderInputsAsync(tx),
+          familyByPerson: await readPortraitFamilyInputsAsync(tx),
+          dispositions: await readPersonDispositionAsync(tx),
+        }))
+      } finally { await reader.close() }
+    }
+    const genderDb = openReadOnly(tokenDatabasePath)
+    let genders
+    try { genders = readPortraitGenderInputs(genderDb) } finally { genderDb.close() }
+    const familyDb = openReadOnly(tokenDatabasePath)
+    let familyByPerson
+    try { familyByPerson = readPortraitFamilyInputs(familyDb) } finally { familyDb.close() }
+    const dispositionDb = openReadOnly(tokenDatabasePath)
+    let dispositions
+    try {
+      dispositions = dispositionDb.prepare("SELECT 1 FROM sqlite_schema WHERE name='person_disposition'").get()
+        ? readPersonDisposition(dispositionDb) : null
+    } finally { dispositionDb.close() }
+    return { genders, familyByPerson, dispositions }
+  })()
+  const { genders, familyByPerson, dispositions } = inputs
 
   const pick = (personId, key, list) => list[createHash('sha256').update(`${personId}:${key}`).digest().readUInt32BE(0) % list.length]
   const derived = (value, basis) => ({ value, status: DERIVED, source: `derived-${DERIVED_DATE}:${basis}`, derived: true })
@@ -189,12 +211,6 @@ export async function generatePortraitTokens(root) {
   await mkdir(tokenRoot, { recursive: true })
   const detailFiles = (await readdir(detailRoot)).filter((file) => /^person-[0-9]{4}\.json$/.test(file)).sort()
   const existing = new Set((await readdir(tokenRoot)).filter((file) => file.endsWith('.json')))
-  const dispositions = (() => {
-    const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite'))
-    try {
-      return db.prepare("SELECT 1 FROM sqlite_schema WHERE name='person_disposition'").get() ? readPersonDisposition(db) : null
-    } finally { db.close() }
-  })()
   const stats = { created: 0, completed: 0, total: 0 }
 
   for (const file of detailFiles) {
