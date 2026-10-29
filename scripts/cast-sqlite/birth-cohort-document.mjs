@@ -1,4 +1,4 @@
-const metadataFields = ['schemaVersion','approvalRef','approvedOption','proposalSha256','baselineRevision','baselineBirthdaySha256','baselineRegistrySha256'];
+const metadataFields = ['schemaVersion', 'approvalRef', 'approvedOption', 'proposalSha256', 'baselineRevision', 'baselineBirthdaySha256', 'baselineRegistrySha256'];
 const fail = () => { throw new Error('E_BIRTH_COHORT_DOCUMENT'); };
 
 /** Entire original source from existing normalized family metadata and cohorts. */
@@ -10,19 +10,45 @@ export function readBirthCohortDocument(db) {
   if (metadata.length !== metadataFields.length) fail();
   const document = Object.fromEntries(metadataFields.map(field => {
     const row = metadata.find(r => r.field_name === field);
-    const numeric = ['schemaVersion','approvedOption'].includes(field);
-    if (!row || row.json_pointer !== '/'+field || row.value_kind !== (numeric ? 'number' : 'string')) fail();
-    return [field,numeric ? row.integer_value : row.text_value];
+    const numeric = ['schemaVersion', 'approvedOption'].includes(field);
+    if (!row || row.json_pointer !== '/' + field || row.value_kind !== (numeric ? 'number' : 'string')) fail();
+    return [field, numeric ? row.integer_value : row.text_value];
   }));
-  const ordered = (table,prefix) => {
-    const rows=db.prepare('SELECT * FROM '+table+' WHERE source_id=?').all(source.source_id)
-      .sort((a,b)=>Number(a.json_pointer.slice(prefix.length))-Number(b.json_pointer.slice(prefix.length)));
-    if (rows.some((r,i)=>r.json_pointer !== prefix+i)) fail();
+  const ordered = (table, prefix) => {
+    const rows = db.prepare('SELECT * FROM ' + table + ' WHERE source_id=?').all(source.source_id)
+      .sort((a, b) => Number(a.json_pointer.slice(prefix.length)) - Number(b.json_pointer.slice(prefix.length)));
+    if (rows.some((r, i) => r.json_pointer !== prefix + i)) fail();
     return rows;
   };
-  document.cohorts=ordered('family_birth_cohort','/cohorts/')
-    .map(r=>({id:r.cohort_id,startYear:r.start_year,endYear:r.end_year}));
-  document.assignments=ordered('family_birth_cohort_assignment','/assignments/')
-    .map(r=>({personId:r.person_id,baselineBirthDate:r.baseline_birth_date,cohort:r.cohort_id}));
+  document.cohorts = ordered('family_birth_cohort', '/cohorts/')
+    .map(r => ({ id: r.cohort_id, startYear: r.start_year, endYear: r.end_year }));
+  document.assignments = ordered('family_birth_cohort_assignment', '/assignments/')
+    .map(r => ({ personId: r.person_id, baselineBirthDate: r.baseline_birth_date, cohort: r.cohort_id }));
+  return document;
+}
+
+/** Async PostgreSQL twin with the same reconstruction and validation. */
+export async function readBirthCohortDocumentAsync(tx) {
+  const sources = await tx.all("SELECT source_id FROM wiki.source_file WHERE logical_path=?", ['lore/name-pools/cast-birth-cohorts.json']);
+  if (sources.length !== 1) fail();
+  const sourceId = sources[0].source_id;
+  const metadata = await tx.all('SELECT * FROM wiki.family_source_metadata WHERE source_id=?', [sourceId]);
+  if (metadata.length !== metadataFields.length) fail();
+  const document = Object.fromEntries(metadataFields.map(field => {
+    const row = metadata.find(r => r.field_name === field);
+    const numeric = ['schemaVersion', 'approvedOption'].includes(field);
+    if (!row || row.json_pointer !== '/' + field || row.value_kind !== (numeric ? 'number' : 'string')) fail();
+    return [field, numeric ? row.integer_value : row.text_value];
+  }));
+  const ordered = async (table, prefix) => {
+    const rows = await tx.all('SELECT * FROM wiki.' + table + ' WHERE source_id=?', [sourceId]);
+    rows.sort((a, b) => Number(a.json_pointer.slice(prefix.length)) - Number(b.json_pointer.slice(prefix.length)));
+    if (rows.some((r, i) => r.json_pointer !== prefix + i)) fail();
+    return rows;
+  };
+  document.cohorts = (await ordered('family_birth_cohort', '/cohorts/'))
+    .map(r => ({ id: r.cohort_id, startYear: r.start_year, endYear: r.end_year }));
+  document.assignments = (await ordered('family_birth_cohort_assignment', '/assignments/'))
+    .map(r => ({ personId: r.person_id, baselineBirthDate: r.baseline_birth_date, cohort: r.cohort_id }));
   return document;
 }

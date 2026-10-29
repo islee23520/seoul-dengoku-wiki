@@ -10,9 +10,10 @@ import { fileURLToPath } from 'node:url'
 import { generatorStage } from './generate-release.mjs'
 import { textToImageBlock } from '../server/portrait-text-to-image.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
-import { readPortraitGenderInputs } from './cast-sqlite/portrait-gender-input.mjs'
-import { readPortraitFamilyInputs } from './cast-sqlite/portrait-family-input.mjs'
-import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
+import { readPortraitGenderInputs, readPortraitGenderInputsAsync } from './cast-sqlite/portrait-gender-input.mjs'
+import { readPortraitFamilyInputs, readPortraitFamilyInputsAsync } from './cast-sqlite/portrait-family-input.mjs'
+import { readPersonDisposition, readPersonDispositionAsync } from './cast-sqlite/person-disposition.mjs'
+import { createReader } from './cast-sqlite/db-pg.mjs'
 
 export async function generatePortraitTokens(root) {
   const { root: stageRoot, writeFile } = await generatorStage(root)
@@ -22,14 +23,32 @@ export async function generatePortraitTokens(root) {
   const DERIVED_DATE = '20261019'
 
   const tokenDatabasePath = process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite')
-  const genders = (() => {
+  // PostgreSQL release sourcing: gender, family and disposition inputs share
+  // one read-only snapshot transaction (WIKI_GENERATION_SNAPSHOT when the
+  // release orchestrator exported one). SQLite callers keep the two short
+  // connections below unchanged.
+  let genders, familyByPerson, dispositionPresent = null, dispositions = null
+  if (process.env.WIKI_DOCUMENT_PG) {
+    const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+    const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
+    try {
+      await reader.transaction(async (tx) => {
+        genders = await readPortraitGenderInputsAsync(tx)
+        familyByPerson = await readPortraitFamilyInputsAsync(tx)
+        dispositionPresent = Boolean(await tx.get("SELECT 1 FROM information_schema.tables WHERE table_schema='wiki' AND table_name='person_disposition'"))
+        if (dispositionPresent) dispositions = await readPersonDispositionAsync(tx)
+      }, { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
+    } finally { await reader.close() }
+  } else {
+    genders = (() => {
       const db = openReadOnly(tokenDatabasePath)
       try { return readPortraitGenderInputs(db) } finally { db.close() }
     })()
-  const familyByPerson = (() => {
+    familyByPerson = (() => {
       const db = openReadOnly(tokenDatabasePath)
       try { return readPortraitFamilyInputs(db) } finally { db.close() }
     })()
+  }
 
   const pick = (personId, key, list) => list[createHash('sha256').update(`${personId}:${key}`).digest().readUInt32BE(0) % list.length]
   const derived = (value, basis) => ({ value, status: DERIVED, source: `derived-${DERIVED_DATE}:${basis}`, derived: true })
@@ -189,12 +208,14 @@ export async function generatePortraitTokens(root) {
   await mkdir(tokenRoot, { recursive: true })
   const detailFiles = (await readdir(detailRoot)).filter((file) => /^person-[0-9]{4}\.json$/.test(file)).sort()
   const existing = new Set((await readdir(tokenRoot)).filter((file) => file.endsWith('.json')))
-  const dispositions = (() => {
-    const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite'))
-    try {
-      return db.prepare("SELECT 1 FROM sqlite_schema WHERE name='person_disposition'").get() ? readPersonDisposition(db) : null
-    } finally { db.close() }
-  })()
+  if (!process.env.WIKI_DOCUMENT_PG) {
+    dispositions = (() => {
+      const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite'))
+      try {
+        return db.prepare("SELECT 1 FROM sqlite_schema WHERE name='person_disposition'").get() ? readPersonDisposition(db) : null
+      } finally { db.close() }
+    })()
+  }
   const stats = { created: 0, completed: 0, total: 0 }
 
   for (const file of detailFiles) {

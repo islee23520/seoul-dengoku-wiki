@@ -4,12 +4,15 @@ import { openReadOnly } from './cast-sqlite/db.mjs'
 import { readBirthCohortDocument } from './cast-sqlite/birth-cohort-document.mjs'
 import { readPersonBirthdayInputs } from './cast-sqlite/person-inputs.mjs'
 
-const cohortContract = (() => {
+let cohortContract
+let assignedCohorts
+function loadCohortContract() {
+  if (cohortContract !== undefined) return cohortContract
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? fileURLToPath(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url)))
-  try { return readBirthCohortDocument(db) }
+  try { cohortContract = readBirthCohortDocument(db) }
   finally { db.close() }
-})()
-const assignedCohorts = new Map(cohortContract.assignments.map((entry) => [entry.personId, cohortContract.cohorts.find((cohort) => cohort.id === entry.cohort)]))
+  return cohortContract
+}
 
 const record = (value) => value !== null && typeof value === 'object' && !Array.isArray(value)
 const text = (value) => typeof value === 'string' && value.trim().length > 0
@@ -52,12 +55,16 @@ export function validateCastBirthdays(ledger, roster, { enforceAssignedCohort = 
     if (!Array.isArray(person.sourceRefs) || !person.sourceRefs.length || !person.sourceRefs.every(text)) throw new Error(`E_BIRTH_SOURCE_REFS:${person.id}`)
     const age = ageInYears(person.birthDate, ledger.ageAsOf)
     if (enforceAssignedCohort) {
+      const contract = loadCohortContract()
+      if (assignedCohorts === undefined) assignedCohorts = new Map(contract.assignments.map((entry) => [entry.personId, contract.cohorts.find((cohort) => cohort.id === entry.cohort)]))
       const cohort = assignedCohorts.get(person.id)
       const year = Number(person.birthDate.slice(0, 4))
       if (!cohort || year < cohort.startYear || year > cohort.endYear) throw new Error(`E_BIRTH_COHORT_RANGE:${person.id}`)
     }
-    births.set(person.id, { birthDate: person.birthDate, birthday: person.birthDate.slice(5), age,
-      ageAsOf: ledger.ageAsOf, sourceStatus: person.sourceStatus, sourceRefs: [...person.sourceRefs] })
+    births.set(person.id, {
+      birthDate: person.birthDate, birthday: person.birthDate.slice(5), age,
+      ageAsOf: ledger.ageAsOf, sourceStatus: person.sourceStatus, sourceRefs: [...person.sourceRefs]
+    })
     names.add(person.name)
   }
   const missing = roster.filter((person) => !births.has(person.id)).map((person) => person.id)
