@@ -271,6 +271,14 @@ export async function buildAdminTerritorialScaleFromDbAsync(tx) {
  * read through the sealed evidence reference and archived-key reordered,
  * returning the ordered typed document (not a re-read). Unsupported fallbacks
  * (person mapping, duplicates, missing identities) fail closed. */
+export async function readOfficesTerritorialSourceAsync(tx) {
+  const rows = await tx.all(`SELECT s.source_id FROM wiki.source_file s JOIN wiki.text_document d ON d.source_id = s.source_id
+    WHERE s.logical_path = ? AND d.document_id = ? AND d.domain = 'offices' AND d.corpus_kind = 'current'`,
+  ['lore/offices/Offices-and-Ranks.json', 'DOC:Offices-and-Ranks']);
+  assert.equal(rows.length, 1, 'E_SCALE_DOCUMENT_AUTHORITY');
+  return await readOfficesScaleSourceAsync(tx, rows[0].source_id);
+}
+
 async function readOfficesScaleSourceAsync(tx, sourceId) {
   const lines = await tx.all(`SELECT 1 FROM wiki.text_line_document WHERE source_id = ?`, [sourceId]);
   if (lines.length > 1) throw new Error('E_SCOPE_SOURCE_DUPLICATE:offices');

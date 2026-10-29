@@ -166,7 +166,29 @@ const sourceRead = async (path, encoding) => {
 }
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(repoRoot, 'lore'))
 let geography, territorialScale, geographicScale
-{
+if (process.env.WIKI_DOCUMENT_PG) {
+  // PostgreSQL release sourcing: one worker-owned read-only transaction
+  // imports the release-exported snapshot for scale, geography and the
+  // offices territorial source together.
+  const { createReader } = await import('./cast-sqlite/db-pg.mjs')
+  const { buildAdminTerritorialScaleFromDbAsync } = await import('./admin-territorial-scale.mjs')
+  const { readOfficesTerritorialSourceAsync } = await import('./admin-territorial-scale.mjs')
+  const { readGeographyStoreAsync } = await import('./cast-sqlite/geography-store.mjs')
+  const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+  const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
+  try {
+    await reader.transaction(async (tx) => {
+      geographicScale = await buildAdminTerritorialScaleFromDbAsync(tx)
+      geography = await readGeographyStoreAsync(tx)
+      // Offices territorial source on PG: the sealed typed-envelope branch the
+      // async scale resolver already validates; the SQLite-only generic scope
+      // reader (private fallbacks) is intentionally not mirrored here — the
+      // resolver fails closed on anything but the bounded offices path.
+      const officesOrdered = await readOfficesTerritorialSourceAsync(tx)
+      territorialScale = officesOrdered.data.territorialScale
+    }, { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
+  } finally { await reader.close() }
+} else {
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
   try {
     db.exec('BEGIN')
