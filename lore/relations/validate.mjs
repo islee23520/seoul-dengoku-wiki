@@ -90,7 +90,7 @@ export function loadDataset(options = {}) {
   if (!Array.isArray(archivedEvents)) throw new TypeError("eventIds must be an array");
   const events = chronicle.content.filter((block) => block.kind === "paragraph")
     .flatMap((block) => {
-      const match = /^(\\d{4})년(?: (\\d{1,2})월(?: (\\d{1,2})일)?)?/.exec(block.text.ko);
+      const match = /^(\d{4})년(?: (\d{1,2})월(?: (\d{1,2})일)?)?/.exec(block.text.ko);
       if (!match) return archivedEvents.includes(`E:${block.anchor}`) ? [{ id: `E:${block.anchor}`, date: null, sourceAnchor: block.anchor }] : [];
       const date = [match[1], match[2], match[3]].filter(Boolean).map((part, index) => index ? part.padStart(2, "0") : part).join("-");
       return [{ id: `E:${block.anchor}`, date, sourceAnchor: block.anchor }];
@@ -282,15 +282,11 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     throw new Error("Usage: node lore/relations/validate.mjs [--private-pg <connection-string>]");
   }
   if (args.length) {
-    const { createReader } = await import("../../scripts/cast-sqlite/db-pg.mjs");
-    const { INTERNAL_PRIVATE_DOCUMENT_CAPABILITY, readPrivateCurrentDocument } = await import("../../scripts/document-store/private-current-document.mjs");
-    const db = createReader({ connectionString: args[1] });
-    try {
-      result = await db.transaction((privateDb) => run({
-        privateDb, privateReader: readPrivateCurrentDocument,
-        capability: INTERNAL_PRIVATE_DOCUMENT_CAPABILITY, connectionString: args[1]
-      }), { readOnly: true });
-    } finally { await db.close(); }
+    // 331c86165 shipped this mode importing a capability export that does not
+    // exist, and readPrivateCurrentDocument opens its own SQLite stores rather
+    // than the passed transaction. Reject explicitly until a real private
+    // PostgreSQL reader contract exists; never fall back silently.
+    throw new Error("E_PRIVATE_PG_UNSUPPORTED: --private-pg is not implemented; private PostgreSQL reads need a dedicated reader contract");
   } else result = await run({});
   const { dataset, errors } = result;
   if (errors.length) { console.error(errors.join("\n")); process.exitCode = 1; }
