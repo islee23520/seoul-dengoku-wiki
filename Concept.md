@@ -3,7 +3,10 @@
 ## 무엇을 만드는가
 서울 내부 세계 위키(seoul-dengoku-wiki)의 저장소다. SQLite 정본(`data/canonical/wiki-cast.sqlite`)에서 승인된 공개 투영을 생성하고, React SPA(`/wiki`)·읽기 전용 Node API가 이를 소비한다. 상세 계약은 루트 `AGENTS.md`("Repository Guidelines")와 `WORLD_BUILDING_GUIDE.md`가 정본이다.
 
-## 현재 모듈 (2026-10-27~)
+## 현재 작업 전환: PostgreSQL 원천 아카이브 소비자
+승인된 `.omp/plans/postgres-migration-remaining.md`의 Todo 8에 따라 `readSourceArchive` 호출자가 PostgreSQL 연결과 비동기 반환을 올바르게 사용하도록 전환한다. 기존 서울 정본과 승인·해시 검증은 보존하며 운영 전환 전 SQLite 아카이브를 유지한다. 실행 스택은 Node ESM 및 PostgreSQL `pg` 단일 연결·비동기 판독이다. 이전 InkOS 모듈은 아래 기록을 보존한다.
+
+## 이전 모듈 (2026-10-27~)
 **InkOS 어댑터 혼합 구조 지원** — `scripts/inkos-adapter/export.mjs`가 문단 전용 문서만 허용하는 제한(`E_ADAPTER_UNSUPPORTED`)으로 유일 공개 문서(`DOC:Lost-Technology-Lineage`, heading 17·list 2·paragraph 61)의 정본 왕복을 차단한다. 승인된 문서 전체가 공개 상태인 만큼, 워커 번들은 안정 한국어 문단 슬롯만 발췌하고 heading·목록·표 노드는 건너뛴다. 대상 앵커는 여전히 안정 한국어 문단이어야 하며, prepare 미리보기는 비(非)문단 노드를 원본 그대로 보존한다. 후보 전용·읽기 전용·`no-apply` 경계는 불변.
 
 ## 스택 메모

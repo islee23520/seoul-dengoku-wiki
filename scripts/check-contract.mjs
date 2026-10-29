@@ -1,4 +1,3 @@
-import { readdir, readFile, writeFile } from 'node:fs/promises'
 import { spawnSync } from 'node:child_process'
 import { basename, dirname, extname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -68,8 +67,10 @@ try {
       db.exec('BEGIN')
       geographicScale = buildAdminTerritorialScaleFromDb(db)
       geography = readGeographyStore(db)
-      const offices = readScopeCurrentSource({ db, logicalPath: 'lore/offices/Offices-and-Ranks.json',
-        expectedSha256: '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e' })
+      const offices = readScopeCurrentSource({
+        db, logicalPath: 'lore/offices/Offices-and-Ranks.json',
+        expectedSha256: '3119e1c4b6824921b7347fd13ad3387db224e2eabbd39a89884f9d98821d201e'
+      })
       descriptor = offices.data.territorialScale
       db.exec('COMMIT')
     } finally { db.close() }
