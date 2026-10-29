@@ -9,7 +9,7 @@
 - [ ] 검증된 모듈을 commit/push하고 main 대상 PR로 전달한다. 병합은 소유자만 수행한다.
 
 ## 현재 모듈: 생성 release PG 스냅숏 컨텍스트 + clan-crests worker (feat/pg-generation-snapshot-20261029)
-- [x] release 오케스트레이터가 WIKI_DOCUMENT_PG 시 REPEATABLE READ 스냅숏을 export해 전 worker에 환경 전달, exporter는 worker 종료까지 유지.
+- [x] release 오케스트레이터가 WIKI_DOCUMENT_PG 시 REPEATABLE READ 스냅숏을 export해 환경으로 전파(exporter는 worker 종료까지 유지). 단, 이 시점에 스냅숏을 소비하는 worker는 clan-crests 하나뿐이며 catalog·portrait 2종은 여전히 SQLite를 읽는다 — 전체 release PG 모드는 아직 실행 불가.
 - [x] db-pg transaction에 importSnapshot(SET TRANSACTION SNAPSHOT) 지원, 스냅숏 ID 형식 검증(하이픈 hex 실측 기준).
 - [x] clan-crests worker PG 전환: WIKI_DOCUMENT_PG 시 스냅숏 트랜잭션에서 readClanCatalogDocumentAsync+motif 판독. WIKI_DOCUMENT_DB SQLite 경로는 무변경 보존.
 - [x] 검증: 스냅숏 임포트 판독 == 일반 판독 == SQLite 판독(303 clan·106 source·15 motif·assignCrests 입력 완전 동일), 부모→자식 프로세스 스냅숏 전달 종단 확인.
