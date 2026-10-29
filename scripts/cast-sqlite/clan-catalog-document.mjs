@@ -210,22 +210,10 @@ function present(flagValue, value, label, nullAllowed = false) {
 }
 
 /** SELECT-only reconstruction: no source I/O, archive decoding, or JSON parsing. */
-export function readClanCatalogDocument(db) {
-  const documents = db.prepare('SELECT * FROM clan_catalog_document_document').all();
-  if (documents.length !== 1) fail('document count');
-  const row = documents[0];
+function reconstructClanCatalog({ row, sources, sourceKeys, clans, clanKeys, clanSources, hangnyeolRows, rowKeys, branches, branchKeys }) {
   if (row.document_id !== 1 || !text(row.actor) || !row.actor.trim()
     || !text(row.reason) || !row.reason.trim()
     || !text(row.id) || !Number.isSafeInteger(row.schema) || typeof row.note !== 'string') fail('provenance');
-  const sources = ordered(rows(db, 'clan_catalog_document_source', 'ordinal'), 'source');
-  const sourceKeys = rows(db, 'clan_catalog_document_source_key', 'source_ordinal, ordinal');
-  const clans = ordered(rows(db, 'clan_catalog_document_clan', 'ordinal'), 'clan');
-  const clanKeys = rows(db, 'clan_catalog_document_clan_key', 'clan_ordinal, ordinal');
-  const clanSources = rows(db, 'clan_catalog_document_clan_source', 'clan_ordinal, ordinal');
-  const hangnyeolRows = rows(db, 'clan_catalog_document_row', 'clan_ordinal, ordinal');
-  const rowKeys = rows(db, 'clan_catalog_document_row_key', 'clan_ordinal, row_ordinal, ordinal');
-  const branches = rows(db, 'clan_catalog_document_branch', 'clan_ordinal, ordinal');
-  const branchKeys = rows(db, 'clan_catalog_document_branch_key', 'clan_ordinal, branch_ordinal, ordinal');
   if (sources.some(source => source.document_id !== 1) || clans.some(clan => clan.document_id !== 1)) fail('parent');
   const sourceIds = new Set(sources.map(source => source.id));
   if (sourceIds.size !== sources.length) fail('source ids');
@@ -303,7 +291,7 @@ export function readClanCatalogDocument(db) {
     }),
   };
   const consumed = {
-    clan_catalog_document_document: documents.length,
+    clan_catalog_document_document: 1,
     clan_catalog_document_source: sources.length,
     clan_catalog_document_source_key: sourceKeys.length,
     clan_catalog_document_clan: clans.length,
@@ -327,4 +315,42 @@ export function readClanCatalogDocument(db) {
   if (unusedSources !== 0 || unusedRows !== 0 || unusedBranches !== 0) fail('unconsumed child rows');
   shape(document);
   return document;
+}
+export function readClanCatalogDocument(db) {
+  const documents = db.prepare('SELECT * FROM clan_catalog_document_document').all();
+  if (documents.length !== 1) fail('document count');
+  const row = documents[0];
+  return reconstructClanCatalog({
+    row,
+    sources: ordered(rows(db, 'clan_catalog_document_source', 'ordinal'), 'source'),
+    sourceKeys: rows(db, 'clan_catalog_document_source_key', 'source_ordinal, ordinal'),
+    clans: ordered(rows(db, 'clan_catalog_document_clan', 'ordinal'), 'clan'),
+    clanKeys: rows(db, 'clan_catalog_document_clan_key', 'clan_ordinal, ordinal'),
+    clanSources: rows(db, 'clan_catalog_document_clan_source', 'clan_ordinal, ordinal'),
+    hangnyeolRows: rows(db, 'clan_catalog_document_row', 'clan_ordinal, ordinal'),
+    rowKeys: rows(db, 'clan_catalog_document_row_key', 'clan_ordinal, row_ordinal, ordinal'),
+    branches: rows(db, 'clan_catalog_document_branch', 'clan_ordinal, ordinal'),
+    branchKeys: rows(db, 'clan_catalog_document_branch_key', 'clan_ordinal, branch_ordinal, ordinal'),
+  });
+}
+
+
+/** Async PostgreSQL twin of readClanCatalogDocument: identical validation and
+ * reconstruction, reading wiki.* tables through a db-pg transaction handle.
+ * The synchronous SQLite export above stays unchanged for SQLite callers. */
+export async function readClanCatalogDocumentAsync(db) {
+  const rowsAsync = (table, order) => db.all(`SELECT * FROM wiki.${table} ORDER BY ${order}`);
+  const documents = await db.all('SELECT * FROM wiki.clan_catalog_document_document');
+  if (documents.length !== 1) fail('document count');
+  const row = documents[0];
+  const sources = ordered(await rowsAsync('clan_catalog_document_source', 'ordinal'), 'source');
+  const sourceKeys = await rowsAsync('clan_catalog_document_source_key', 'source_ordinal, ordinal');
+  const clans = ordered(await rowsAsync('clan_catalog_document_clan', 'ordinal'), 'clan');
+  const clanKeys = await rowsAsync('clan_catalog_document_clan_key', 'clan_ordinal, ordinal');
+  const clanSources = await rowsAsync('clan_catalog_document_clan_source', 'clan_ordinal, ordinal');
+  const hangnyeolRows = await rowsAsync('clan_catalog_document_row', 'clan_ordinal, ordinal');
+  const rowKeys = await rowsAsync('clan_catalog_document_row_key', 'clan_ordinal, row_ordinal, ordinal');
+  const branches = await rowsAsync('clan_catalog_document_branch', 'clan_ordinal, ordinal');
+  const branchKeys = await rowsAsync('clan_catalog_document_branch_key', 'clan_ordinal, branch_ordinal, ordinal');
+  return reconstructClanCatalog({ row, sources, sourceKeys, clans, clanKeys, clanSources, hangnyeolRows, rowKeys, branches, branchKeys });
 }
