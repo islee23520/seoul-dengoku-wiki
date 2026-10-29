@@ -45,13 +45,23 @@ export function orderDocumentKeys(db, sourceId, document) {
 }
 
 
-/** Async PostgreSQL twin: identical ordering reconstruction over wiki.document_key_order. */
-export async function orderDocumentKeysAsync(tx, sourceId) {
-  const rows = await tx.all('SELECT json_pointer, ordinal, key FROM wiki.document_key_order WHERE source_id = ? ORDER BY json_pointer, ordinal', [sourceId]);
-  const byPointer = new Map();
+/** Async PostgreSQL twin of orderDocumentKeys: identical signature
+ * (tx, sourceId, document) and result — the recursively reordered document.
+ * Reads wiki.document_key_order (object_pointer column) and applies the same
+ * archived-first, appended-last ordering as the synchronous reader. */
+export async function orderDocumentKeysAsync(tx, sourceId, document) {
+  const rows = await tx.all('SELECT object_pointer, ordinal, key FROM wiki.document_key_order WHERE source_id = ? ORDER BY object_pointer, ordinal', [sourceId]);
+  const groups = new Map();
   for (const row of rows) {
-    if (!byPointer.has(row.json_pointer)) byPointer.set(row.json_pointer, []);
-    byPointer.get(row.json_pointer).push(row.key);
+    if (!groups.has(row.object_pointer)) groups.set(row.object_pointer, []);
+    groups.get(row.object_pointer).push(row.key);
   }
-  return byPointer;
+  const visit = (value, path) => {
+    if (Array.isArray(value)) return value.map((entry, index) => visit(entry, pointer(path, index)));
+    if (value === null || typeof value !== 'object') return value;
+    const archived = (groups.get(path) ?? []).filter(key => Object.hasOwn(value, key));
+    const keys = [...archived, ...Object.keys(value).filter(key => !archived.includes(key))];
+    return Object.fromEntries(keys.map(key => [key, visit(value[key], pointer(path, key))]));
+  };
+  return visit(document, '');
 }
