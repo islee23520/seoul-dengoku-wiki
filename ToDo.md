@@ -4,8 +4,8 @@
 
 ## 현재 모듈: PostgreSQL 문서 API 판독
 - [x] 최신 main의 문서·생성·데이터 API·프런트엔드 소비 경로와 승인 경계를 조사한다.
-- [ ] PostgreSQL 문서 API와 전이 판독기를 연결하고 main의 공개 정책과 기존 SQLite 호출자를 보존한다.
-- [ ] 일회용 PostgreSQL에서 reader 권한과 실제 HTTP 문서 응답을 검증한다. 운영 자격·권한 변경은 별도로 처리한다.
+- [x] PostgreSQL 문서 API와 전이 판독기를 연결하고 main의 공개 정책과 기존 SQLite 호출자를 보존한다. (e376cc6e9)
+- [x] 일회용 PostgreSQL에서 reader 권한과 실제 HTTP 문서 응답을 검증한다 — 전수 대사 PASS(1006 테이블·371만 행 SHA-256 동일), 목록·본문 ko/en·world/index가 순정 main SQLite API와 동일, SAVEPOINT 격리로 누락-schema 시나리오가 503가 아닌 문서별 제외로 동작(536450c81). 운영 자격·권한 변경은 별도로 처리한다.
 - [ ] 검증된 모듈을 commit/push하고 main 대상 PR로 전달한다. 병합은 소유자만 수행한다.
 
 ## 후속 모듈: 전체 PostgreSQL 전환
