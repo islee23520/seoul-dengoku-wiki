@@ -93,16 +93,50 @@ export function listGlossaryEntries(db, { visibility = 'public', revision } = {}
   return db.prepare(`SELECT * FROM glossary_term WHERE revision_id=? ${visibility === 'public' ? "AND status='fact-public'" : ''} ORDER BY ordinal`).all(selected).map(term => {
     const localized = Object.fromEntries(db.prepare('SELECT * FROM glossary_locale WHERE revision_id=? AND term_id=?').all(selected, term.term_id).map(row => [row.locale, row]));
     const aliases = locale => db.prepare('SELECT alias FROM glossary_alias WHERE revision_id=? AND term_id=? AND locale=? ORDER BY ordinal').all(selected, term.term_id, locale).map(row => row.alias);
-    return { term_id: term.term_id, display_name_ko: localized.ko.display_name, reader_definition_ko: localized.ko.reader_definition,
+    return {
+      term_id: term.term_id, display_name_ko: localized.ko.display_name, reader_definition_ko: localized.ko.reader_definition,
       display_name_en: localized.en.display_name, reader_definition_en: localized.en.reader_definition, category: term.category,
       owner_path: term.owner_document_identity, allowed_context: db.prepare('SELECT context FROM glossary_context WHERE revision_id=? AND term_id=? ORDER BY ordinal').all(selected, term.term_id).map(row => row.context),
-      aliases: aliases('ko'), aliases_en: aliases('en'), status: term.status };
+      aliases: aliases('ko'), aliases_en: aliases('en'), status: term.status
+    };
   });
 }
 
 export function readGlossaryEntry(db, termId, selection) {
   text(termId, 'termId');
   return listGlossaryEntries(db, selection).find(entry => entry.term_id === termId) ?? null;
+}
+
+/** PostgreSQL readers use the caller's reader or transaction; no SQLite fallback. */
+export async function readGlossaryHeadAsync(db) {
+  const row = (await db.query('SELECT r.* FROM wiki.glossary_head h JOIN wiki.glossary_revision r ON r.revision_id=h.revision_id WHERE h.singleton=1')).rows[0];
+  if (!row) fail('E_GLOSSARY_NOT_FOUND', 'glossary head absent');
+  return { revision: row.revision_id, parentRevision: row.parent_revision, sequence: row.sequence, contentSha256: row.content_sha256, actor: row.actor, reason: row.reason };
+}
+
+/** No path resolution, source import or archive parsing: every field comes from typed SQL rows. */
+export async function listGlossaryEntriesAsync(db, { visibility = 'public', revision } = {}) {
+  if (!['public', 'internal'].includes(visibility)) fail('E_GLOSSARY_VISIBILITY', visibility);
+  const selected = revision ?? (await readGlossaryHeadAsync(db)).revision;
+  if (!(await db.query('SELECT 1 FROM wiki.glossary_revision_seal WHERE revision_id=?', [selected])).rows.length) fail('E_GLOSSARY_REVISION', 'unknown sealed revision');
+  const terms = (await db.query(`SELECT * FROM wiki.glossary_term WHERE revision_id=? ${visibility === 'public' ? "AND status='fact-public'" : ''} ORDER BY ordinal`, [selected])).rows;
+  const entries = [];
+  for (const term of terms) {
+    const localized = Object.fromEntries((await db.query('SELECT * FROM wiki.glossary_locale WHERE revision_id=? AND term_id=?', [selected, term.term_id])).rows.map(row => [row.locale, row]));
+    const aliases = async locale => (await db.query('SELECT alias FROM wiki.glossary_alias WHERE revision_id=? AND term_id=? AND locale=? ORDER BY ordinal', [selected, term.term_id, locale])).rows.map(row => row.alias);
+    entries.push({
+      term_id: term.term_id, display_name_ko: localized.ko.display_name, reader_definition_ko: localized.ko.reader_definition,
+      display_name_en: localized.en.display_name, reader_definition_en: localized.en.reader_definition, category: term.category,
+      owner_path: term.owner_document_identity, allowed_context: (await db.query('SELECT context FROM wiki.glossary_context WHERE revision_id=? AND term_id=? ORDER BY ordinal', [selected, term.term_id])).rows.map(row => row.context),
+      aliases: await aliases('ko'), aliases_en: await aliases('en'), status: term.status
+    });
+  }
+  return entries;
+}
+
+export async function readGlossaryEntryAsync(db, termId, selection) {
+  text(termId, 'termId');
+  return (await listGlossaryEntriesAsync(db, selection)).find(entry => entry.term_id === termId) ?? null;
 }
 
 /** Full typed replacements for existing stable IDs only. Publication approval is not an edit command. */

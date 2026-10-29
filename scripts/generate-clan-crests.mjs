@@ -5,12 +5,29 @@ import { fileURLToPath } from 'node:url'
 import { assignCrests, renderCrest } from './clan-crest.mjs'
 import { generatorStage } from './generate-release.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
-import { readClanCatalogDocument } from './cast-sqlite/clan-catalog-document.mjs'
+import { readClanCatalogDocument, readClanCatalogDocumentAsync } from './cast-sqlite/clan-catalog-document.mjs'
+import { createReader } from './cast-sqlite/db-pg.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const { root: outputRoot, writeFile } = await generatorStage(root)
 const outDir = join(outputRoot, 'public', 'clan-crests')
-const { tables, motifs } = (() => {
+// PostgreSQL release sourcing: one read-only snapshot for the whole worker.
+// WIKI_GENERATION_SNAPSHOT (exported by the release orchestrator, if any)
+// pins every worker to one consistent read view; without it the worker still
+// reads PostgreSQL, just without a shared snapshot. SQLite remains the source
+// when WIKI_DOCUMENT_PG is unset (WIKI_DOCUMENT_DB callers keep working).
+const { tables, motifs } = await (async () => {
+  if (process.env.WIKI_DOCUMENT_PG) {
+    const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+    const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
+    try {
+      return await reader.transaction(async (tx) => ({
+        tables: await readClanCatalogDocumentAsync(tx),
+        motifs: new Map((await tx.all('SELECT clan,surname,bongwan,motif,reference FROM wiki.clan_crest_motif ORDER BY ordinal'))
+          .map(row => [row.clan, row])),
+      }), { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
+    } finally { await reader.close() }
+  }
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? join(root, 'data/canonical/wiki-cast.sqlite'))
   try {
     return { tables: readClanCatalogDocument(db),

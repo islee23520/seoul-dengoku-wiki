@@ -6,6 +6,7 @@ import { createInterface } from 'node:readline'
 import { dirname, join, relative, resolve, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { loadMapDataInput } from './map-data-input.mjs'
+import { createReader } from './cast-sqlite/db-pg.mjs'
 
 // Fixed-path readers cannot observe a cross-directory atomic swap. This is a
 // recoverable command boundary, not filesystem-wide atomicity. Only cooperating
@@ -301,6 +302,14 @@ export async function runRelease({ root, stage, consume, checkpoint = async () =
     const mapInput = mapRequestPath === undefined ? null : await loadMapDataInput(mapRequestPath)
     await mapInput?.recheck()
     await recover(root, checkpoint)
+    // PostgreSQL release sourcing is not complete yet: only clan-crests reads
+    // the exported snapshot while catalog and both portrait workers still
+    // read SQLite, which would mix sources or hit the checked-in LFS pointer.
+    // Reject before creating the transaction directory or staging anything;
+    // delete this guard when every generation worker is PostgreSQL-sourced.
+    if (process.env.WIKI_DOCUMENT_PG) {
+      throw Object.assign(new Error('E_RELEASE_PG_PARTIAL: catalog/portrait workers are not PostgreSQL-sourced yet; full PG generation is not runnable'), { code: 'E_RELEASE_PG_PARTIAL' })
+    }
     const transaction = join(root, transactionName)
     const stageRoot = join(transaction, 'stage')
     const before = await inventory(root)
@@ -342,11 +351,27 @@ export async function runRelease({ root, stage, consume, checkpoint = async () =
       }
       if (stage) await stage({ root: stageRoot, write, run: command => run(command, env), mapInput })
       else {
-        await run([process.execPath, 'scripts/generate-clan-crests.mjs'], env)
-        await checkpoint('crest')
-        await run([process.execPath, 'scripts/generate-catalog.mjs'], env)
-        await run([process.execPath, 'scripts/generate-portrait-source-catalog.mjs'], env)
-        await run([process.execPath, 'scripts/generate-portrait-tokens.mjs'], env)
+        // PostgreSQL release sourcing: export one REPEATABLE READ snapshot and
+        // hand its id to every worker so the whole release reads one view.
+        // The exporter stays open until all workers finish. SQLite releases
+        // (no WIKI_DOCUMENT_PG) skip this entirely.
+        let generationSnapshot = null
+        let snapshotReader = null
+        if (process.env.WIKI_DOCUMENT_PG) {
+          snapshotReader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+          generationSnapshot = await snapshotReader.exportSnapshot()
+          env.WIKI_GENERATION_SNAPSHOT = generationSnapshot.id
+        }
+        try {
+          await run([process.execPath, 'scripts/generate-clan-crests.mjs'], env)
+          await checkpoint('crest')
+          await run([process.execPath, 'scripts/generate-catalog.mjs'], env)
+          await run([process.execPath, 'scripts/generate-portrait-source-catalog.mjs'], env)
+          await run([process.execPath, 'scripts/generate-portrait-tokens.mjs'], env)
+        } finally {
+          await generationSnapshot?.release()
+          await snapshotReader?.close()
+        }
       }
       if (mapInput) await write('src/generated-private/map-input-receipt.json', JSON.stringify(mapInput.receipt) + '\n')
       const records = await readFile(join(transaction, 'outputs.jsonl'), 'utf8').catch(absent)

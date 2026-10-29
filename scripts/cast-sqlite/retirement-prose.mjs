@@ -39,8 +39,22 @@ export function readRetirementProse(db) {
     JOIN source_file s USING(source_id) ORDER BY s.logical_path,p.source_pointer`).all();
   if (rows.length !== 60 || rows.some(row => hash(row.predecessor_text) !== row.predecessor_sha256
     || hash(row.current_text) !== row.current_sha256)) throw Error('E_RETIREMENT_PROSE');
-  return rows.map(row => ({ path: row.path, pointer: row.source_pointer,
-    before: row.predecessor_text, after: row.current_text }));
+  return rows.map(row => ({
+    path: row.path, pointer: row.source_pointer,
+    before: row.predecessor_text, after: row.current_text
+  }));
+}
+
+// PostgreSQL companion; the predecessor/current integrity policy is unchanged.
+export async function readRetirementProseAsync(db) {
+  const rows = await db.all(`SELECT s.logical_path AS path,p.* FROM wiki.retirement_prose p
+    JOIN wiki.source_file s USING(source_id) ORDER BY s.logical_path,p.source_pointer`);
+  if (rows.length !== 60 || rows.some(row => hash(row.predecessor_text) !== row.predecessor_sha256
+    || hash(row.current_text) !== row.current_sha256)) throw Error('E_RETIREMENT_PROSE');
+  return rows.map(row => ({
+    path: row.path, pointer: row.source_pointer,
+    before: row.predecessor_text, after: row.current_text
+  }));
 }
 
 export function projectRetirementProse(document, path, changes) {

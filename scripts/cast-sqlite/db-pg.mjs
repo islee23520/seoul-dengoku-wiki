@@ -144,15 +144,18 @@ export function createReader({ connectionString = process.env.WIKI_DOCUMENT_PG, 
       { code: 'E_PG_CONFIG' },
     );
   }
-  if (role !== undefined && (!typeof role === 'string' || !ROLE_NAME.test(role))) {
+  if (role !== undefined && (typeof role !== 'string' || !ROLE_NAME.test(role))) {
     throw Object.assign(new Error(`E_PG_CONFIG: invalid role name ${JSON.stringify(role)}`), { code: 'E_PG_CONFIG' });
   }
   const pool = new pg.Pool(role ? { connectionString: url, options: `-c role=${role}` } : { connectionString: url });
 
   const base = methodsOn((sql, params) => pool.query(sql, params));
-  const transaction = async (fn, { readOnly = false, isolation = 'REPEATABLE READ' } = {}) => {
+  const transaction = async (fn, { readOnly = false, isolation = 'REPEATABLE READ', importSnapshot } = {}) => {
     if (!ISOLATION_LEVELS.has(isolation)) {
       throw Object.assign(new Error(`E_PG_ISOLATION: unknown isolation level ${JSON.stringify(isolation)}`), { code: 'E_PG_ISOLATION' });
+    }
+    if (importSnapshot !== undefined && (typeof importSnapshot !== 'string' || !/^[0-9A-F]+-[0-9A-F]+-[0-9]+$/i.test(importSnapshot))) {
+      throw Object.assign(new Error('E_PG_SNAPSHOT: importSnapshot must be a snapshot id string like 00000001-00000002-1'), { code: 'E_PG_SNAPSHOT' });
     }
     const client = await pool.connect();
     let begun = false;
@@ -160,6 +163,12 @@ export function createReader({ connectionString = process.env.WIKI_DOCUMENT_PG, 
     try {
       await client.query(`BEGIN ISOLATION LEVEL ${isolation}${readOnly ? ' READ ONLY' : ''}`);
       begun = true;
+      if (importSnapshot !== undefined) {
+        // Same consistent read view as the exporting transaction: the
+        // importer must SET TRANSACTION SNAPSHOT before its first query and
+        // stay inside this one transaction (PostgreSQL contract).
+        await client.query(`SET TRANSACTION SNAPSHOT '${importSnapshot}'`);
+      }
       const tx = { ...methodsOn((sql, params) => client.query(sql, params)),
         transaction: () => { throw Object.assign(new Error('E_PG_NESTED_TRANSACTION: lease one connection per transaction; nested transaction() is rejected'), { code: 'E_PG_NESTED_TRANSACTION' }); },
         isTransaction: true };
@@ -177,7 +186,26 @@ export function createReader({ connectionString = process.env.WIKI_DOCUMENT_PG, 
     }
   };
 
-  return { pool, ...base, transaction, close: () => pool.end() };
+  /** Export this pool's REPEATABLE READ snapshot id. The exporting
+   * transaction stays open (leased connection) until release() so other
+   * processes can SET TRANSACTION SNAPSHOT against the same read view. */
+  const exportSnapshot = async () => {
+    const client = await pool.connect();
+    let released = false;
+    await client.query('BEGIN ISOLATION LEVEL REPEATABLE READ READ ONLY');
+    const id = (await client.query('SELECT pg_export_snapshot() AS id')).rows[0].id;
+    return {
+      id,
+      release: async () => {
+        if (released) return;
+        released = true;
+        try { await client.query('ROLLBACK'); }
+        finally { client.release(); }
+      },
+    };
+  };
+
+  return { pool, ...base, transaction, exportSnapshot, close: () => pool.end() };
 }
 
 /** db.mjs 이름 호환 별칭 (기계적 import 치환용). 인자는 연결 문자열 또는 createReader 옵션 객체. */

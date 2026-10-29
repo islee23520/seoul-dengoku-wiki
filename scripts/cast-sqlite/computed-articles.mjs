@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
-import { listDocuments, readDocument } from './document-read.mjs';
-import { listGlossaryEntries, readGlossaryHead } from './glossary-store.mjs';
+import { listDocuments, readDocument, listDocumentsAsync, readDocumentAsync } from './document-read.mjs';
+import { listGlossaryEntries, readGlossaryHead, listGlossaryEntriesAsync, readGlossaryHeadAsync } from './glossary-store.mjs';
 import { glossaryDocument } from '../glossary-document.mjs';
 import { renderLoreMarkdown } from '../lore-json-render.mjs';
 
@@ -50,6 +50,52 @@ export function readComputedArticle(db, mapping, mappings, locale) {
   } catch (error) {
     if (/^E_(COMPUTED|GLOSSARY|DOCUMENT)/u.test(error.code ?? error.message)
       || error instanceof SyntaxError || /no such (table|column)/u.test(error.message)) return null;
+    throw error;
+  }
+}
+
+// PostgreSQL counterpart; admission and derivation checks match the synchronous reader.
+export async function readComputedArticleAsync(db, mapping, mappings, locale) {
+  try {
+    const metadata = JSON.parse(mapping.derivation_json);
+    if (metadata.version !== 1 || metadata.review !== 'authenticated-current-reviewed' || metadata.materialized !== false
+      || mapping.source_id !== null || !Array.isArray(metadata.sourceBindings)) return null;
+    const bindings = metadata.sourceBindings;
+    const link = (_domain, slug) => {
+      const targets = mappings.filter(entry => entry.slug === slug || entry.route.split('/').at(-1) === slug);
+      if (targets.length !== 1) throw new Error('E_COMPUTED_LINK');
+      return `${locale === 'ko' ? '' : '/en'}${targets[0].route}`;
+    };
+    if (mapping.derivation === 'computed-glossary') {
+      if (bindings.length !== 1 || bindings[0].sourcePath !== 'lore/glossary.json') return null;
+      if (!(await db.query("SELECT 1 FROM information_schema.tables WHERE table_schema='wiki' AND table_name='glossary_head'")).rows.length) return null;
+      const archive = (await db.query('SELECT sha256 FROM wiki.glossary_archive WHERE singleton=1')).rows[0];
+      const head = await readGlossaryHeadAsync(db);
+      if (archive?.sha256 !== bindings[0].sha256 || head.parentRevision !== null || head.sequence !== 0) return null;
+      const entries = await listGlossaryEntriesAsync(db, { visibility: 'internal' });
+      if (digest(entries) !== head.contentSha256) return null;
+      const document = glossaryDocument(entries.filter(entry => entry.status === 'fact-public'));
+      return { title: document.locales[locale].title, markdown: renderLoreMarkdown(document, locale, link) };
+    }
+    if (mapping.derivation !== 'computed-index' || bindings.length !== dependencies.length
+      || dependencies.some(path => bindings.filter(binding => binding.sourcePath === path).length !== 1)) return null;
+    const identities = await listDocumentsAsync(db, { corpusKind: 'current', visibility: 'internal' });
+    const documents = await Promise.all(dependencies.map(async path => {
+      const binding = bindings.find(entry => entry.sourcePath === path);
+      const candidates = identities.filter(entry => entry.logical_path === path && entry.sha256 === binding.sha256);
+      if (candidates.length !== 1) throw new Error('E_COMPUTED_DEPENDENCY');
+      const identity = candidates[0];
+      const document = await readDocumentAsync(db, { corpusKind: 'current', domain: identity.domain, documentId: identity.document_id });
+      if (!document) throw new Error('E_COMPUTED_DEPENDENCY');
+      return document;
+    }));
+    return worldIndex(documents, mappings, locale, link);
+  } catch (error) {
+    // A swallowed database error would leave the PostgreSQL transaction
+    // aborted (25P02) while the caller believes the read simply declined:
+    // rethrow DB/schema failures so the caller's savepoint can restore the
+    // transaction. Only pure derivation rejections stay null here.
+    if (/^E_COMPUTED/u.test(error.code ?? error.message) || error instanceof SyntaxError) return null;
     throw error;
   }
 }

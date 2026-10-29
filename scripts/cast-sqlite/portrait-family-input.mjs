@@ -11,6 +11,7 @@ export function readPortraitFamilyInputs(db) {
   return new Map(rows.map(row => [row.public_key, { basis: row.reason }]));
 }
 
+// PostgreSQL twin; retain the same authored basis and validation as SQLite.
 export async function readPortraitFamilyInputsAsync(db) {
   const rows = await db.all(`SELECT p.public_key,l.clan_id,l.reason
     FROM wiki.person p JOIN wiki.person_lineage l USING(person_id)

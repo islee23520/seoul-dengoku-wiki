@@ -205,79 +205,80 @@ export function readCatalogMetadataDocument(db, logicalPath, { expectedSourceHas
 }
 
 export function readCatalogMetadata(db) {
- /** PostgreSQL twin: the synchronous SQLite reader above remains unchanged. */
- export async function readCatalogMetadataDocumentAsync(db, logicalPath, { expectedSourceHash } = {}) {
-  try {
-   if (!CATALOG_METADATA_PATHS.includes(logicalPath)) fail('logical path');
-   if (expectedSourceHash !== undefined && !hashShape(expectedSourceHash)) fail('expected source hash');
-   const all = async (sql, ...bindings) => db.all(sql.replace(/\b(FROM|JOIN) (catalog_[a-z_]+)/gu, '$1 wiki.$2'), bindings);
-   const roots = await all('SELECT * FROM catalog_metadata_document WHERE logical_path=?', logicalPath);
-   if (roots.length !== 1) fail('document missing');
-   const root = roots[0];
-   if (!hashShape(root.source_sha256) || !hashShape(root.document_sha256)
-    || (expectedSourceHash !== undefined && root.source_sha256 !== expectedSourceHash)
-    || root.receipt_sha256 !== receipt(root)) fail('provenance');
-   text(root.actor, true); text(root.reason, true);
-   const keyRows = await all('SELECT * FROM catalog_metadata_key WHERE logical_path=? ORDER BY object_kind,owner_ordinal,ordinal', logicalPath);
-   let consumed = 0;
-   const ordered = (kind, owner, value) => {
-    const rows = keyRows.filter(row => row.object_kind === kind && row.owner_ordinal === owner);
-    if (rows.length !== Object.keys(value).length || rows.some((row, index) => row.ordinal !== index || !Object.hasOwn(value, row.key))) fail('key order');
-    consumed += rows.length;
-    return Object.fromEntries(rows.map(row => [row.key, value[row.key]]));
-   };
-   const rows = async table => db.all(`SELECT * FROM wiki.${table} ORDER BY ordinal`);
-   const sequence = values => {
-    if (values.some((row, index) => row.ordinal !== index)) fail('relational order');
-    return values;
-   };
-   const singleton = async table => {
-    const values = await db.all(`SELECT * FROM wiki.${table}`);
-    if (values.length !== 1 || values[0].singleton !== 1) fail('singleton');
-    return values[0];
-   };
-   let document;
-   if (logicalPath === CATEGORY_REGISTRY_PATH) {
-    const children = await db.all('SELECT * FROM wiki.catalog_category_required_kind ORDER BY category_ordinal,ordinal');
-    let used = 0;
-    const categories = sequence(await rows('catalog_category')).map(row => {
-     const kinds = sequence(children.filter(child => child.category_ordinal === row.ordinal));
-     used += kinds.length;
-     return ordered('category', row.ordinal, { id: row.id, label: row.label, summary: row.summary, requiredKinds: kinds.map(child => child.kind) });
-    });
-    if (used !== children.length) fail('orphan required kind');
-    document = { categories };
-   } else if (logicalPath === OFFICIAL_SEOUL_LINES_PATH) {
-    const meta = await singleton('catalog_official_line_metadata');
-    const lines = Object.fromEntries(sequence(await rows('catalog_official_line')).map(row => [row.id, ordered('line', row.ordinal, { name: row.name, color: row.color })]));
-    const children = await db.all('SELECT * FROM wiki.catalog_official_station_line ORDER BY station_name,ordinal');
-    let used = 0;
-    const stations = Object.fromEntries(sequence(await rows('catalog_official_station')).map(row => {
-     const memberships = sequence(children.filter(child => child.station_name === row.name));
-     used += memberships.length;
-     return [row.name, memberships.map(child => child.line_id)];
-    }));
-    if (used !== children.length) fail('orphan station line');
-    document = { schema: meta.schema, source: meta.source, capturedAt: meta.captured_at, note: meta.note, lines, stations };
-   } else {
-    const meta = await singleton('catalog_update_history');
-    const updates = sequence(await rows('catalog_update')).map(row => ordered('update', row.ordinal, Object.fromEntries(updateKeys.map(key => [key, row[key]]))));
-    document = { schema: meta.schema, updates };
-   }
-   document = ordered('root', 0, document);
-   if (consumed !== keyRows.length) fail('extra key rows');
-   shape(logicalPath, document);
-   if (digest(document) !== root.document_sha256) fail('document hash');
-   return document;
-  } catch (error) {
-   if (error.code === 'E_CATALOG_METADATA') throw error;
-   fail(`relational read: ${error.message}`);
-  }
- }
-
- export async function readCatalogMetadataAsync(db) {
-  const documents = await Promise.all(CATALOG_METADATA_PATHS.map(async path => [path, await readCatalogMetadataDocumentAsync(db, path)]));
-  return Object.fromEntries(documents);
- }
  return Object.fromEntries(CATALOG_METADATA_PATHS.map(path => [path, readCatalogMetadataDocument(db, path)]));
+}
+
+/** PostgreSQL twin: the synchronous SQLite reader above remains unchanged. */
+export async function readCatalogMetadataDocumentAsync(db, logicalPath, { expectedSourceHash } = {}) {
+ try {
+  if (!CATALOG_METADATA_PATHS.includes(logicalPath)) fail('logical path');
+  if (expectedSourceHash !== undefined && !hashShape(expectedSourceHash)) fail('expected source hash');
+  const all = async (sql, ...bindings) => db.all(sql.replace(/\b(FROM|JOIN) (catalog_[a-z_]+)/gu, '$1 wiki.$2'), bindings);
+  const roots = await all('SELECT * FROM catalog_metadata_document WHERE logical_path=?', logicalPath);
+  if (roots.length !== 1) fail('document missing');
+  const root = roots[0];
+  if (!hashShape(root.source_sha256) || !hashShape(root.document_sha256)
+   || (expectedSourceHash !== undefined && root.source_sha256 !== expectedSourceHash)
+   || root.receipt_sha256 !== receipt(root)) fail('provenance');
+  text(root.actor, true); text(root.reason, true);
+  const keyRows = await all('SELECT * FROM catalog_metadata_key WHERE logical_path=? ORDER BY object_kind,owner_ordinal,ordinal', logicalPath);
+  let consumed = 0;
+  const ordered = (kind, owner, value) => {
+   const rows = keyRows.filter(row => row.object_kind === kind && row.owner_ordinal === owner);
+   if (rows.length !== Object.keys(value).length || rows.some((row, index) => row.ordinal !== index || !Object.hasOwn(value, row.key))) fail('key order');
+   consumed += rows.length;
+   return Object.fromEntries(rows.map(row => [row.key, value[row.key]]));
+  };
+  const rows = async table => db.all(`SELECT * FROM wiki.${table} ORDER BY ordinal`);
+  const sequence = values => {
+   if (values.some((row, index) => row.ordinal !== index)) fail('relational order');
+   return values;
+  };
+  const singleton = async table => {
+   const values = await db.all(`SELECT * FROM wiki.${table}`);
+   if (values.length !== 1 || values[0].singleton !== 1) fail('singleton');
+   return values[0];
+  };
+  let document;
+  if (logicalPath === CATEGORY_REGISTRY_PATH) {
+   const children = await db.all('SELECT * FROM wiki.catalog_category_required_kind ORDER BY category_ordinal,ordinal');
+   let used = 0;
+   const categories = sequence(await rows('catalog_category')).map(row => {
+    const kinds = sequence(children.filter(child => child.category_ordinal === row.ordinal));
+    used += kinds.length;
+    return ordered('category', row.ordinal, { id: row.id, label: row.label, summary: row.summary, requiredKinds: kinds.map(child => child.kind) });
+   });
+   if (used !== children.length) fail('orphan required kind');
+   document = { categories };
+  } else if (logicalPath === OFFICIAL_SEOUL_LINES_PATH) {
+   const meta = await singleton('catalog_official_line_metadata');
+   const lines = Object.fromEntries(sequence(await rows('catalog_official_line')).map(row => [row.id, ordered('line', row.ordinal, { name: row.name, color: row.color })]));
+   const children = await db.all('SELECT * FROM wiki.catalog_official_station_line ORDER BY station_name,ordinal');
+   let used = 0;
+   const stations = Object.fromEntries(sequence(await rows('catalog_official_station')).map(row => {
+    const memberships = sequence(children.filter(child => child.station_name === row.name));
+    used += memberships.length;
+    return [row.name, memberships.map(child => child.line_id)];
+   }));
+   if (used !== children.length) fail('orphan station line');
+   document = { schema: meta.schema, source: meta.source, capturedAt: meta.captured_at, note: meta.note, lines, stations };
+  } else {
+   const meta = await singleton('catalog_update_history');
+   const updates = sequence(await rows('catalog_update')).map(row => ordered('update', row.ordinal, Object.fromEntries(updateKeys.map(key => [key, row[key]]))));
+   document = { schema: meta.schema, updates };
+  }
+  document = ordered('root', 0, document);
+  if (consumed !== keyRows.length) fail('extra key rows');
+  shape(logicalPath, document);
+  if (digest(document) !== root.document_sha256) fail('document hash');
+  return document;
+ } catch (error) {
+  if (error.code === 'E_CATALOG_METADATA') throw error;
+  fail(`relational read: ${error.message}`);
+ }
+}
+
+export async function readCatalogMetadataAsync(db) {
+ const documents = await Promise.all(CATALOG_METADATA_PATHS.map(async path => [path, await readCatalogMetadataDocumentAsync(db, path)]));
+ return Object.fromEntries(documents);
 }

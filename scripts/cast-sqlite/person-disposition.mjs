@@ -32,3 +32,12 @@ export function readPersonDisposition(db) {
     || !['active', 'retired-current'].includes(row.status))) throw Error('E_PERSON_DISPOSITION');
   return new Map(rows.map(row => [row.person_id, row]));
 }
+
+// PostgreSQL companion with the same complete-roster validation as SQLite.
+export async function readPersonDispositionAsync(db) {
+  const people = await db.all('SELECT person_id FROM wiki.person ORDER BY person_id');
+  const rows = await db.all('SELECT * FROM wiki.person_disposition ORDER BY person_id');
+  if (rows.length !== people.length || rows.some((row, index) => row.person_id !== people[index].person_id
+    || !['active', 'retired-current'].includes(row.status))) throw Error('E_PERSON_DISPOSITION');
+  return new Map(rows.map(row => [row.person_id, row]));
+}

@@ -103,8 +103,10 @@ export function initializeGeographyStore(db, command) {
     }
     document.sourceRecords.forEach((r, ordinal) => insert(db, 'geography_source_record', { ordinal, ...r }));
     document.titles.forEach((t, ordinal) => {
-      insert(db, 'geography_title', { ordinal, ...pick(t, titleFields), geographicParentException: t.geographicParentException ?? null,
-        hasCountyTitleIds: Number(Object.hasOwn(t, 'countyTitleIds')), hasHolderPersonId: Number(Object.hasOwn(t, 'holderPersonId')), holderPersonId: t.holderPersonId ?? null });
+      insert(db, 'geography_title', {
+        ordinal, ...pick(t, titleFields), geographicParentException: t.geographicParentException ?? null,
+        hasCountyTitleIds: Number(Object.hasOwn(t, 'countyTitleIds')), hasHolderPersonId: Number(Object.hasOwn(t, 'holderPersonId')), holderPersonId: t.holderPersonId ?? null
+      });
       refs(db, 'geography_title_jurisdiction', { titleId: t.titleId }, t.jurisdictionRefs);
       refs(db, 'geography_title_source', { titleId: t.titleId }, t.sourceRefs);
       refs(db, 'geography_title_county', { titleId: t.titleId }, t.countyTitleIds ?? []);
@@ -134,9 +136,11 @@ export function initializeGeographyStore(db, command) {
     for (const { name } of db.prepare("SELECT name FROM sqlite_schema WHERE type='table' AND name GLOB 'geography_*'").all()) {
       for (const operation of ['INSERT', 'UPDATE', 'DELETE']) db.exec(`CREATE TRIGGER ${name}_immutable_${operation} BEFORE ${operation} ON ${name} BEGIN SELECT RAISE(ABORT,'immutable geography authority'); END`);
     }
-    return { sourceSha256: command.expectedSha256, titles: document.titles.length,
+    return {
+      sourceSha256: command.expectedSha256, titles: document.titles.length,
       datedSlots: document.countySlots.reduce((n, c) => n + c.slots.length, 0),
-      currentSlots: document.currentCorrespondenceSlots.reduce((n, c) => n + c.slots.length, 0), editable: false };
+      currentSlots: document.currentCorrespondenceSlots.reduce((n, c) => n + c.slots.length, 0), editable: false
+    };
   });
 }
 
@@ -171,18 +175,89 @@ export function readGeographyStore(db) {
     countyTitleId: c.countyTitleId,
     slots: rows('geography_slot', { edition, countyTitleId: c.countyTitleId }).map(s => {
       const owner = { edition, slotId: s.slotId };
-      return { ...fields(s, slotFields), sourceRefs: references('geography_slot_source', owner), geometryRefs: references('geography_slot_geometry', owner),
+      return {
+        ...fields(s, slotFields), sourceRefs: references('geography_slot_source', owner), geometryRefs: references('geography_slot_geometry', owner),
         ...(edition === 'current' ? { candidateGeometryRefs: references('geography_slot_candidate_geometry', owner) }
           : { currentCorrespondenceSlotIds: references('geography_slot_correspondence', owner) }),
         historicalHoldingRefs: rows('geography_slot_historical_holding', owner).map(h => fields(h, holdingFields)),
-        holdingRefs: references('geography_slot_holding', owner) };
+        holdingRefs: references('geography_slot_holding', owner)
+      };
     }),
   }));
   document.spatialSource = { ...fields(one('geography_spatial'), spatialFields), geometry: fields(one('geography_spatial_geometry'), 'path sha256 crs features#') };
   document.successor = fields(one('geography_successor'), successorFields);
   for (const kind of ['proposal', 'approval']) document.successor[kind] = fields(db.prepare('SELECT * FROM geography_successor_pointer WHERE kind=?').get(kind), 'path sha256');
-  document.successor.partition = rows('geography_partition').map(p => ({ ...fields(p, 'titleId proposalId name'),
-    jurisdictionRefs: references('geography_partition_jurisdiction', { titleId: p.titleId }), countyTitleIds: references('geography_partition_county', { titleId: p.titleId }) }));
+  document.successor.partition = rows('geography_partition').map(p => ({
+    ...fields(p, 'titleId proposalId name'),
+    jurisdictionRefs: references('geography_partition_jurisdiction', { titleId: p.titleId }), countyTitleIds: references('geography_partition_county', { titleId: p.titleId })
+  }));
+  return document;
+}
+
+/** Async PostgreSQL twin; reconstructs the same relational authority through one transaction handle. */
+export async function readGeographyStoreAsync(tx) {
+  if (!await tx.get('SELECT 1 FROM wiki.geography_seal WHERE singleton=1')) fail('E_GEOGRAPHY_UNSEALED', 'sealed authority required');
+  const one = table => tx.get(`SELECT * FROM wiki.${table} WHERE singleton=1`);
+  const rows = (table, owner = {}) => {
+    const keys = Object.keys(owner);
+    return tx.all(`SELECT * FROM wiki.${table}${keys.length ? ` WHERE ${keys.map(k => `"${k}"=?`).join(' AND ')}` : ''} ORDER BY ordinal`, Object.values(owner));
+  };
+  const references = async (table, owner) => (await rows(table, owner)).map(r => r.ref);
+  const fields = (row, spec) => Object.fromEntries(tokens(spec).map(token => {
+    const key = fieldName(token); return [key, token.endsWith('!') ? Boolean(row[key]) : row[key]];
+  }));
+  const document = fields(await one('geography_metadata'), rootFields);
+  document.evidence = Object.fromEntries((await tx.all('SELECT * FROM wiki.geography_evidence')).map(e => [e.kind, fields(e, 'path sha256')]));
+  document.editions = {};
+  for (const [kind, spec] of Object.entries(editionFields)) document.editions[kind] = {
+    ...fields(await tx.get('SELECT * FROM wiki.geography_edition WHERE kind=?', [kind]), spec),
+    sourceRefs: await references('geography_edition_source', { kind }),
+  };
+  document.sourceRecords = (await rows('geography_source_record')).map(r => fields(r, 'id sha256 role'));
+  document.mapTitleIds = await references('geography_map_title');
+  document.titles = [];
+  for (const t of await rows('geography_title')) {
+    const owner = { titleId: t.titleId };
+    const result = {
+      ...fields(t, titleFields), jurisdictionRefs: await references('geography_title_jurisdiction', owner),
+      sourceRefs: await references('geography_title_source', owner)
+    };
+    if (t.geographicParentException !== null) result.geographicParentException = t.geographicParentException;
+    if (t.hasCountyTitleIds) result.countyTitleIds = await references('geography_title_county', owner);
+    if (t.hasHolderPersonId) result.holderPersonId = t.holderPersonId;
+    document.titles.push(result);
+  }
+  for (const [edition, key] of [['dated', 'countySlots'], ['current', 'currentCorrespondenceSlots']]) {
+    document[key] = [];
+    for (const c of await rows('geography_county', { edition })) {
+      const county = { countyTitleId: c.countyTitleId, slots: [] };
+      for (const s of await rows('geography_slot', { edition, countyTitleId: c.countyTitleId })) {
+        const owner = { edition, slotId: s.slotId };
+        county.slots.push({
+          ...fields(s, slotFields), sourceRefs: await references('geography_slot_source', owner),
+          geometryRefs: await references('geography_slot_geometry', owner),
+          ...(edition === 'current' ? { candidateGeometryRefs: await references('geography_slot_candidate_geometry', owner) }
+            : { currentCorrespondenceSlotIds: await references('geography_slot_correspondence', owner) }),
+          historicalHoldingRefs: (await rows('geography_slot_historical_holding', owner)).map(h => fields(h, holdingFields)),
+          holdingRefs: await references('geography_slot_holding', owner)
+        });
+      }
+      document[key].push(county);
+    }
+  }
+  document.spatialSource = {
+    ...fields(await one('geography_spatial'), spatialFields),
+    geometry: fields(await one('geography_spatial_geometry'), 'path sha256 crs features#')
+  };
+  document.successor = fields(await one('geography_successor'), successorFields);
+  for (const kind of ['proposal', 'approval']) document.successor[kind] = fields(
+    await tx.get('SELECT * FROM wiki.geography_successor_pointer WHERE kind=?', [kind]), 'path sha256');
+  document.successor.partition = [];
+  for (const p of await rows('geography_partition')) document.successor.partition.push({
+    ...fields(p, 'titleId proposalId name'),
+    jurisdictionRefs: await references('geography_partition_jurisdiction', { titleId: p.titleId }),
+    countyTitleIds: await references('geography_partition_county', { titleId: p.titleId })
+  });
   return document;
 }
 

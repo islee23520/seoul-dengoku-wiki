@@ -123,6 +123,56 @@ function typedRegistry(db, sourceId, roster) {
     totalPeople: metadata.total_people, existingKCount: metadata.existing_k_count, issuedCount: metadata.issued_count, persons
   };
 }
+function source(db, kind) {
+  const record = rows(db, 'SELECT source_id,sha256 FROM source_file WHERE logical_path=?', paths[kind])[0];
+  if (!record) fail('E_ATLAS_IDENTITY_MISSING', paths[kind]);
+  return record;
+}
+
+export function readAtlasValuesDocument(db) {
+  const context = readAtlasIdentity(db);
+  const metadata = rows(db, 'SELECT * FROM atlas_identity_values_metadata');
+  if (metadata.length !== 1 || metadata[0].person_count !== context.people.length) fail('E_ATLAS_IDENTITY_COVERAGE', 'values metadata');
+  return { schema: metadata[0].schema_name, note: metadata[0].note,
+    axes: ordered(rows(db, 'SELECT axis_name,axis_ordinal AS ordinal FROM value_axis ORDER BY axis_ordinal')).map(row => row.axis_name),
+    desire_axes: ordered(rows(db, 'SELECT axis_name,axis_ordinal AS ordinal FROM desire_axis ORDER BY axis_ordinal')).map(row => row.axis_name).filter(name => !['지향', '결합'].includes(name)),
+    count: metadata[0].person_count, people: context.people };
+}
+
+export function readAtlasIdentity(db) {
+  if (rows(db, 'SELECT singleton FROM atlas_identity_seal').length !== 1) fail('E_ATLAS_IDENTITY_SCHEMA_GAP', 'unsealed migration');
+  const bindings = rows(db, 'SELECT kind,source_id,sha256 FROM atlas_identity_binding');
+  if (bindings.length !== 4) fail('E_ATLAS_IDENTITY_SCHEMA_GAP', 'source bindings');
+  for (const [kind, path] of Object.entries(paths)) {
+    const binding = bindings.find(b => b.kind === kind);
+    if (!binding) fail('E_ATLAS_IDENTITY_MISSING', path);
+    if (kind !== 'candidates') {
+      const current = source(db, kind);
+      if (current.source_id !== binding.source_id || current.sha256 !== binding.sha256) fail('E_ATLAS_IDENTITY_STALE', path);
+    }
+  }
+  const registry = typedRegistry(db, bindings.find(b => b.kind === 'registry').source_id, rows(db, 'SELECT * FROM atlas_identity_registry_person ORDER BY ordinal'));
+  const c = rows(db, 'SELECT * FROM atlas_identity_candidate_metadata WHERE singleton=1')[0];
+  if (!c) fail('E_ATLAS_IDENTITY_SCHEMA_GAP', 'candidate metadata');
+  const candidates = { schema: c.schema_name, inputSha256: c.input_sha256, baseCommit: c.base_commit, totalPeople: c.total_people,
+    existingKCount: c.existing_k_count, candidateCount: c.candidate_count,
+    existingK: ordered(rows(db, 'SELECT * FROM atlas_identity_existing_k ORDER BY ordinal')).map(p => ({ id: p.id, name: p.name })),
+    candidates: ordered(rows(db, 'SELECT * FROM atlas_identity_candidate ORDER BY position'), 'position').map(p => ({ ordinal: p.ordinal, name: p.name, stage: p.stage, state: p.state, title: p.title, locked: Boolean(p.locked) })),
+    NOTES: ordered(rows(db, 'SELECT * FROM atlas_identity_note ORDER BY ordinal')).map(p => ({ type: p.type, name: p.name, detail: p.detail })) };
+  const { people, persons } = typedPeople(db);
+  const byId = new Map(persons.map(p => [p.person_id, p]));
+  const routeRows = ordered(rows(db, 'SELECT * FROM atlas_identity_route ORDER BY ordinal'));
+  const routes = new Map(), urls = new Set();
+  for (const p of routeRows) {
+    const person = byId.get(p.person_id);
+    if (!person || routes.has(p.person_id) || urls.has(person.public_route) || !/^\/people\/person-\d{4}$/u.test(person.public_route)) fail('E_ATLAS_PERSON_ROUTE', p.person_id);
+    routes.set(p.person_id, { name: person.name, detailRoute: person.public_route }); urls.add(person.public_route);
+  }
+  if (routes.size !== registry.totalPeople || people.length !== registry.totalPeople || candidates.totalPeople !== registry.totalPeople
+    || candidates.existingK.length !== c.existing_k_count || candidates.candidates.length !== c.candidate_count || candidates.NOTES.length !== c.note_count) fail('E_ATLAS_IDENTITY_COVERAGE', 'context');
+  return { registry, candidates, people, routes };
+}
+
 async function pgRows(db, sql, ...args) {
   try { return await db.all(sql, args); }
   catch (cause) {
@@ -195,147 +245,58 @@ export async function readAtlasValuesDocumentAsync(db) {
     count: metadata[0].person_count, people: context.people
   };
 }
-export async function readAtlasIdentityAsync(db) {
-  if ((await pgRows(db, 'SELECT singleton FROM wiki.atlas_identity_seal')).length !== 1) fail('E_ATLAS_IDENTITY_SCHEMA_GAP', 'unsealed migration');
-  const bindings = await pgRows(db, 'SELECT kind,source_id,sha256 FROM wiki.atlas_identity_binding');
-  if (bindings.length !== 4) fail('E_ATLAS_IDENTITY_SCHEMA_GAP', 'source bindings');
-  for (const [kind, path] of Object.entries(paths)) {
-    const binding = bindings.find(b => b.kind === kind);
-    if (!binding) fail('E_ATLAS_IDENTITY_MISSING', path);
-    if (kind !== 'candidates') {
-      const current = await sourceAsync(db, kind);
-      if (current.source_id !== binding.source_id || current.sha256 !== binding.sha256) fail('E_ATLAS_IDENTITY_STALE', path);
+
+/** Async PostgreSQL twin of readAtlasIdentity: preloads the same typed rows
+ * from wiki.* inside the caller's read-only transaction, then runs the
+ * unchanged synchronous reconstruction against a query-sheet view of them so
+ * validation and shape stay identical. */
+export async function readAtlasIdentityAsync(tx) {
+  // Fully explicit PostgreSQL execution of the same SQL the synchronous
+  // reader issues, materialized up-front so the unchanged synchronous
+  // reconstruction (with every ordered()/coverage/stale validation) runs
+  // against real PostgreSQL rows. No SQL is reimplemented: WHERE params,
+  // ORDER BY and SELECT aliases all come from PostgreSQL itself.
+  const rewrite = (sql) => sql.replace(/\b(FROM|JOIN)\s+((?!wiki\.)[a-z_][a-z_0-9]*)/gi, '$1 wiki.$2');
+  const preloaded = new Map();
+  const load = async (sql, params = []) => {
+    const key = sql + JSON.stringify(params);
+    if (!preloaded.has(key)) {
+      const rows = await tx.all(rewrite(sql), params);
+      preloaded.set(key, rows.map(row => ({ ...row })));
     }
-  }
-  const registry = await typedRegistryAsync(db, bindings.find(b => b.kind === 'registry').source_id,
-    await pgRows(db, 'SELECT * FROM wiki.atlas_identity_registry_person ORDER BY ordinal'));
-  const c = await db.get('SELECT * FROM wiki.atlas_identity_candidate_metadata WHERE singleton=1');
-  if (!c) fail('E_ATLAS_IDENTITY_SCHEMA_GAP', 'candidate metadata');
-  const candidates = {
-    schema: c.schema_name, inputSha256: c.input_sha256, baseCommit: c.base_commit, totalPeople: c.total_people,
-    existingKCount: c.existing_k_count, candidateCount: c.candidate_count,
-    existingK: ordered(await pgRows(db, 'SELECT * FROM wiki.atlas_identity_existing_k ORDER BY ordinal')).map(p => ({ id: p.id, name: p.name })),
-    candidates: ordered(await pgRows(db, 'SELECT * FROM wiki.atlas_identity_candidate ORDER BY position'), 'position').map(p => ({ ordinal: p.ordinal, name: p.name, stage: p.stage, state: p.state, title: p.title, locked: Boolean(p.locked) })),
-    NOTES: ordered(await pgRows(db, 'SELECT * FROM wiki.atlas_identity_note ORDER BY ordinal')).map(p => ({ type: p.type, name: p.name, detail: p.detail }))
+    return preloaded.get(key);
   };
-  const { people, persons } = await typedPeopleAsync(db);
-  const byId = new Map(persons.map(p => [p.person_id, p]));
-  const routeRows = ordered(await pgRows(db, 'SELECT * FROM wiki.atlas_identity_route ORDER BY ordinal'));
-  const routes = new Map(), urls = new Set();
-  for (const p of routeRows) {
-    const person = byId.get(p.person_id);
-    if (!person || routes.has(p.person_id) || urls.has(person.public_route) || !/^\/people\/person-\d{4}$/u.test(person.public_route)) fail('E_ATLAS_PERSON_ROUTE', p.person_id);
-    routes.set(p.person_id, { name: person.name, detailRoute: person.public_route }); urls.add(person.public_route);
+  // Bootstrap: bindings first so source ids resolve dynamically.
+  await load('SELECT singleton FROM atlas_identity_seal');
+  const bindings = await load('SELECT kind,source_id,sha256 FROM atlas_identity_binding');
+  const sources = new Map();
+  for (const path of Object.values(paths)) {
+    sources.set(path, (await load('SELECT source_id,sha256 FROM source_file WHERE logical_path=?', [path]))[0]);
   }
-  if (routes.size !== registry.totalPeople || people.length !== registry.totalPeople || candidates.totalPeople !== registry.totalPeople
-    || candidates.existingK.length !== c.existing_k_count || candidates.candidates.length !== c.candidate_count || candidates.NOTES.length !== c.note_count) fail('E_ATLAS_IDENTITY_COVERAGE', 'context');
-  return { registry, candidates, people, routes };
+  const registryId = bindings.find(b => b.kind === 'registry')?.source_id;
+  // Statement set issued by the sync reconstruction, in call order.
+  await load('SELECT * FROM identity_registry_provenance WHERE source_id=?', [registryId]);
+  await load('SELECT person_id,alias,alias_ordinal AS ordinal FROM person_alias ORDER BY person_id,alias_ordinal');
+  await load('SELECT person_id,name FROM person');
+  await load('SELECT * FROM atlas_identity_registry_person ORDER BY ordinal');
+  await load('SELECT * FROM atlas_identity_candidate_metadata WHERE singleton=1');
+  await load('SELECT * FROM atlas_identity_existing_k ORDER BY ordinal');
+  await load('SELECT * FROM atlas_identity_candidate ORDER BY position');
+  await load('SELECT * FROM atlas_identity_note ORDER BY ordinal');
+  await load('SELECT axis_name,axis_ordinal AS ordinal FROM value_axis ORDER BY axis_ordinal');
+  await load('SELECT axis_name,axis_ordinal AS ordinal,value_kind FROM desire_axis ORDER BY axis_ordinal');
+  await load('SELECT person_id,axis_name,value FROM person_value');
+  await load('SELECT person_id,axis_name,value_kind,integer_value,text_value FROM person_desire');
+  await load('SELECT *,values_source_ordinal AS ordinal FROM person ORDER BY values_source_ordinal');
+  await load('SELECT * FROM atlas_identity_route ORDER BY ordinal');
+  await load('SELECT * FROM atlas_identity_values_metadata');
+  const served = (sql, params = []) => {
+    const key = sql + JSON.stringify(params);
+    if (!preloaded.has(key)) throw new Error('E_ATLAS_ASYNC_STATEMENT_UNMATERIALIZED:' + sql);
+    return preloaded.get(key);
+  };
+  const sheet = { prepare(sql) {
+    return { all: (...params) => served(sql, params), get: (...params) => served(sql, params)[0] };
+  } };
+  return readAtlasIdentity(sheet);
 }
-function source(db, kind) {
-
-  /** Migration-only, explicit in-memory approved bytes; no filesystem source discovery. */
-  export function initializeAtlasIdentity(db, command) {
-    shape(command, 'actor reason registry candidates values gurps'); strings(command, 'actor reason');
-    if (!command.actor.trim() || !command.reason.trim()) fail('E_ATLAS_IDENTITY_PROVENANCE', 'actor/reason');
-    const documents = {}, archives = {};
-    for (const kind of Object.keys(paths)) {
-      const input = command[kind]; shape(input, 'approvedBytes expectedSha256');
-      if (!(input.approvedBytes instanceof Uint8Array) || !/^[a-f0-9]{64}$/u.test(input.expectedSha256) || hash(input.approvedBytes) !== input.expectedSha256) fail('E_ATLAS_IDENTITY_HASH', kind);
-      archives[kind] = Buffer.from(input.approvedBytes);
-      documents[kind] = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(archives[kind]));
-    }
-    validate(documents.registry, documents.candidates, documents.values, documents.gurps);
-    if (db.prepare('PRAGMA foreign_keys').get().foreign_keys !== 1) fail('E_ATLAS_IDENTITY_DATABASE', 'foreign keys required');
-    return withTransaction(db, () => {
-      if (db.prepare("SELECT 1 FROM sqlite_schema WHERE name='atlas_identity_archive'").get()) fail('E_ATLAS_IDENTITY_INITIALIZED', 'one-time migration');
-      const sources = Object.fromEntries(['registry', 'values', 'gurps'].map(kind => {
-        const row = source(db, kind);
-        if (row.sha256 !== command[kind].expectedSha256) fail('E_ATLAS_IDENTITY_STALE', paths[kind]);
-        return [kind, row];
-      }));
-      const registryRoster = documents.registry.persons.map((p, ordinal) => ({ ordinal, person_id: p.id, has_aliases: Number(Object.hasOwn(p, 'aliases')) }));
-      const same = (a, b, detail) => { if (!isDeepStrictEqual(a, b)) fail('E_ATLAS_IDENTITY_AUTHORITY', detail); };
-      same(typedRegistry(db, sources.registry.source_id, registryRoster), documents.registry, 'registry');
-      const { persons, people } = typedPeople(db);
-      same(people, documents.values.people, 'values');
-      const byId = new Map(persons.map(p => [p.person_id, p]));
-      if (documents.gurps.people.length !== persons.length || new Set(documents.gurps.people.map(p => p.id)).size !== persons.length) fail('E_ATLAS_IDENTITY_COVERAGE', 'routes');
-      for (const p of documents.gurps.people) {
-        const typed = byId.get(p.id);
-        if (!typed || typed.name !== p.name || typed.public_route !== p.url || !/^\/people\/person-\d{4}$/u.test(p.url)) fail('E_ATLAS_PERSON_ROUTE', p.id);
-      }
-      db.exec(readFileSync(new URL('./atlas-identity.sql', import.meta.url), 'utf8'));
-      insert(db, 'atlas_identity_values_metadata', {
-        singleton: 1, schema_name: documents.values.schema,
-        note: documents.values.note, person_count: documents.values.count
-      });
-      for (const kind of Object.keys(paths)) {
-        insert(db, 'atlas_identity_archive', { kind, logical_path: paths[kind], sha256: command[kind].expectedSha256, bytes: archives[kind], actor: command.actor, reason: command.reason });
-        insert(db, 'atlas_identity_binding', { kind, source_id: sources[kind]?.source_id ?? null, sha256: command[kind].expectedSha256 });
-      }
-      registryRoster.forEach(p => insert(db, 'atlas_identity_registry_person', p));
-      documents.gurps.people.forEach((p, ordinal) => insert(db, 'atlas_identity_route', { ordinal, person_id: p.id }));
-      const c = documents.candidates;
-      insert(db, 'atlas_identity_candidate_metadata', {
-        singleton: 1, schema_name: c.schema, input_sha256: c.inputSha256, base_commit: c.baseCommit,
-        total_people: c.totalPeople, existing_k_count: c.existingKCount, candidate_count: c.candidateCount, note_count: c.NOTES.length
-      });
-      c.existingK.forEach((p, ordinal) => insert(db, 'atlas_identity_existing_k', { ordinal, ...p }));
-      c.candidates.forEach((p, position) => insert(db, 'atlas_identity_candidate', { position, ...p, locked: Number(p.locked) }));
-      c.NOTES.forEach((p, ordinal) => insert(db, 'atlas_identity_note', { ordinal, ...p }));
-      insert(db, 'atlas_identity_seal', { singleton: 1 });
-      for (const { name } of db.prepare("SELECT name FROM sqlite_schema WHERE type='table' AND name GLOB 'atlas_identity_*'").all()) {
-        for (const operation of ['INSERT', 'UPDATE', 'DELETE']) db.exec(`CREATE TRIGGER ${name}_immutable_${operation} BEFORE ${operation} ON ${name} BEGIN SELECT RAISE(ABORT,'E_ATLAS_IDENTITY_IMMUTABLE'); END`);
-      }
-      return readAtlasIdentity(db);
-    });
-  }
-
-  /** Complete atlas context, reconstructed exclusively from typed domain columns. */
-  export function readAtlasValuesDocument(db) {
-    const context = readAtlasIdentity(db);
-    const metadata = rows(db, 'SELECT * FROM atlas_identity_values_metadata');
-    if (metadata.length !== 1 || metadata[0].person_count !== context.people.length) fail('E_ATLAS_IDENTITY_COVERAGE', 'values metadata');
-    return {
-      schema: metadata[0].schema_name, note: metadata[0].note,
-      axes: ordered(rows(db, 'SELECT axis_name,axis_ordinal AS ordinal FROM value_axis ORDER BY axis_ordinal')).map(row => row.axis_name),
-      desire_axes: ordered(rows(db, 'SELECT axis_name,axis_ordinal AS ordinal FROM desire_axis ORDER BY axis_ordinal')).map(row => row.axis_name).filter(name => !['지향', '결합'].includes(name)),
-      count: metadata[0].person_count, people: context.people
-    };
-  }
-
-  export function readAtlasIdentity(db) {
-    if (rows(db, 'SELECT singleton FROM atlas_identity_seal').length !== 1) fail('E_ATLAS_IDENTITY_SCHEMA_GAP', 'unsealed migration');
-    const bindings = rows(db, 'SELECT kind,source_id,sha256 FROM atlas_identity_binding');
-    if (bindings.length !== 4) fail('E_ATLAS_IDENTITY_SCHEMA_GAP', 'source bindings');
-    for (const [kind, path] of Object.entries(paths)) {
-      const binding = bindings.find(b => b.kind === kind);
-      if (!binding) fail('E_ATLAS_IDENTITY_MISSING', path);
-      if (kind !== 'candidates') {
-        const current = source(db, kind);
-        if (current.source_id !== binding.source_id || current.sha256 !== binding.sha256) fail('E_ATLAS_IDENTITY_STALE', path);
-      }
-    }
-    const registry = typedRegistry(db, bindings.find(b => b.kind === 'registry').source_id, rows(db, 'SELECT * FROM atlas_identity_registry_person ORDER BY ordinal'));
-    const c = rows(db, 'SELECT * FROM atlas_identity_candidate_metadata WHERE singleton=1')[0];
-    if (!c) fail('E_ATLAS_IDENTITY_SCHEMA_GAP', 'candidate metadata');
-    const candidates = {
-      schema: c.schema_name, inputSha256: c.input_sha256, baseCommit: c.base_commit, totalPeople: c.total_people,
-      existingKCount: c.existing_k_count, candidateCount: c.candidate_count,
-      existingK: ordered(rows(db, 'SELECT * FROM atlas_identity_existing_k ORDER BY ordinal')).map(p => ({ id: p.id, name: p.name })),
-      candidates: ordered(rows(db, 'SELECT * FROM atlas_identity_candidate ORDER BY position'), 'position').map(p => ({ ordinal: p.ordinal, name: p.name, stage: p.stage, state: p.state, title: p.title, locked: Boolean(p.locked) })),
-      NOTES: ordered(rows(db, 'SELECT * FROM atlas_identity_note ORDER BY ordinal')).map(p => ({ type: p.type, name: p.name, detail: p.detail }))
-    };
-    const { people, persons } = typedPeople(db);
-    const byId = new Map(persons.map(p => [p.person_id, p]));
-    const routeRows = ordered(rows(db, 'SELECT * FROM atlas_identity_route ORDER BY ordinal'));
-    const routes = new Map(), urls = new Set();
-    for (const p of routeRows) {
-      const person = byId.get(p.person_id);
-      if (!person || routes.has(p.person_id) || urls.has(person.public_route) || !/^\/people\/person-\d{4}$/u.test(person.public_route)) fail('E_ATLAS_PERSON_ROUTE', p.person_id);
-      routes.set(p.person_id, { name: person.name, detailRoute: person.public_route }); urls.add(person.public_route);
-    }
-    if (routes.size !== registry.totalPeople || people.length !== registry.totalPeople || candidates.totalPeople !== registry.totalPeople
-      || candidates.existingK.length !== c.existing_k_count || candidates.candidates.length !== c.candidate_count || candidates.NOTES.length !== c.note_count) fail('E_ATLAS_IDENTITY_COVERAGE', 'context');
-    return { registry, candidates, people, routes };
-  }

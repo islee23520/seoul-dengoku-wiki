@@ -78,3 +78,19 @@ The deployment owner runs that contract against the origin during promotion;
 the public check does not replace it.
 
 Deployment test suites were removed by owner decision. The deployment caller and live HTTP contract checker remain operational.
+
+## 문서 API 런타임 PostgreSQL 연결 (owner 주입)
+
+`server/wiki-document-api.mjs`는 런타임에 PostgreSQL만 읽는다(SQLite 폴백 없음). 배포 시
+owner가 다음을 **런타임 환경변수/시크릿으로** 주입해야 한다:
+
+- `WIKI_DOCUMENT_PG` — PostgreSQL 연결 URL(예: `postgresql://wiki_reader@…/seoul`).
+  이미지에 절어 들어가지 않는다(`deploy/wiki-document.Dockerfile` 참조).
+- 연결은 `wiki_reader` 역할 경계로 접속한다(`scripts/cast-sqlite/db-pg.mjs` `createReader`).
+  런타임 reader 로그인 프로비저닝은 `scripts/postgres-migration/runtime-reader-login.sql`이
+  owner 단계에서 수행한다. 이 저장소는 호스트 자격증명을 보유하지 않는다.
+- 기동 시 `wiki.meta`와 저장소 `scripts/postgres-migration/schema-pg/metadata.json`의
+  `schema_version`·`source_sha256`이 일치해야 하며, 불일치면 기동이 실패한다(fail-closed).
+
+owner 배포 파이프라인에서의 실제 주입은 아직 검증되지 않았다. 로컬 일회용
+PostgreSQL에서의 검증(전수 대사 PASS·HTTP 응답 동등성)만 완료된 상태다.
