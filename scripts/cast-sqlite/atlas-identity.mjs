@@ -228,25 +228,52 @@ export function readAtlasIdentity(db) {
  * unchanged synchronous reconstruction against a query-sheet view of them so
  * validation and shape stay identical. */
 export async function readAtlasIdentityAsync(tx) {
-  // Pre-materialize every statement the synchronous reconstruction issues,
-  // by executing the exact SQL (schema-qualified) against PostgreSQL. All
-  // WHERE/ORDER BY/alias semantics therefore come from PostgreSQL itself —
-  // no SQL reimplementation — and the unchanged sync reconstruction with all
-  // its validation runs against the cached rows.
+  // Fully explicit PostgreSQL execution of the same SQL the synchronous
+  // reader issues, materialized up-front so the unchanged synchronous
+  // reconstruction (with every ordered()/coverage/stale validation) runs
+  // against real PostgreSQL rows. No SQL is reimplemented: WHERE params,
+  // ORDER BY and SELECT aliases all come from PostgreSQL itself.
   const rewrite = (sql) => sql.replace(/\b(FROM|JOIN)\s+((?!wiki\.)[a-z_][a-z_0-9]*)/gi, '$1 wiki.$2');
-  const cache = new Map();
-  const rowsFor = (sql, params = []) => {
+  const preloaded = new Map();
+  const load = async (sql, params = []) => {
     const key = sql + JSON.stringify(params);
-    if (!cache.has(key)) cache.set(key, tx.all(rewrite(sql), params).then(rs => rs.map(r => ({ ...r }))));
-    return cache.get(key);
+    if (!preloaded.has(key)) {
+      const rows = await tx.all(rewrite(sql), params);
+      preloaded.set(key, rows.map(row => ({ ...row })));
+    }
+    return preloaded.get(key);
   };
-  const awaited = new Map();
-  const materialize = async (sql, params = []) => { const key = sql + JSON.stringify(params); awaited.set(key, await rowsFor(sql, params)); };
-  // Statement set used by readAtlasIdentity (see the sync source above).
-  await materialize('SELECT singleton FROM atlas_identity_seal');
-  await materialize('SELECT kind,source_id,sha256 FROM atlas_identity_binding');
-  for (const path of Object.values(paths)) await materialize('SELECT source_id,sha256 FROM source_file WHERE logical_path=?', [path]);
-  await materialize('SELECT * FROM identity_registry_provenance WHERE source_id=?', [104]); // resolved below after bindings load
-  return (await import('node:util')).callbackify(() => {})(), readAtlasIdentity(sheetOf(awaited));
+  // Bootstrap: bindings first so source ids resolve dynamically.
+  await load('SELECT singleton FROM atlas_identity_seal');
+  const bindings = await load('SELECT kind,source_id,sha256 FROM atlas_identity_binding');
+  const sources = new Map();
+  for (const path of Object.values(paths)) {
+    sources.set(path, (await load('SELECT source_id,sha256 FROM source_file WHERE logical_path=?', [path]))[0]);
+  }
+  const registryId = bindings.find(b => b.kind === 'registry')?.source_id;
+  // Statement set issued by the sync reconstruction, in call order.
+  await load('SELECT * FROM identity_registry_provenance WHERE source_id=?', [registryId]);
+  await load('SELECT person_id,alias,alias_ordinal AS ordinal FROM person_alias ORDER BY person_id,alias_ordinal');
+  await load('SELECT person_id,name FROM person');
+  await load('SELECT * FROM atlas_identity_registry_person ORDER BY ordinal');
+  await load('SELECT * FROM atlas_identity_candidate_metadata WHERE singleton=1');
+  await load('SELECT * FROM atlas_identity_existing_k ORDER BY ordinal');
+  await load('SELECT * FROM atlas_identity_candidate ORDER BY position');
+  await load('SELECT * FROM atlas_identity_note ORDER BY ordinal');
+  await load('SELECT axis_name,axis_ordinal AS ordinal FROM value_axis ORDER BY axis_ordinal');
+  await load('SELECT axis_name,axis_ordinal AS ordinal,value_kind FROM desire_axis ORDER BY axis_ordinal');
+  await load('SELECT person_id,axis_name,value FROM person_value');
+  await load('SELECT person_id,axis_name,value_kind,integer_value,text_value FROM person_desire');
+  await load('SELECT *,values_source_ordinal AS ordinal FROM person ORDER BY values_source_ordinal');
+  await load('SELECT * FROM atlas_identity_route ORDER BY ordinal');
+  await load('SELECT * FROM atlas_identity_values_metadata');
+  const served = (sql, params = []) => {
+    const key = sql + JSON.stringify(params);
+    if (!preloaded.has(key)) throw new Error('E_ATLAS_ASYNC_STATEMENT_UNMATERIALIZED:' + sql);
+    return preloaded.get(key);
+  };
+  const sheet = { prepare(sql) {
+    return { all: (...params) => served(sql, params), get: (...params) => served(sql, params)[0] };
+  } };
+  return readAtlasIdentity(sheet);
 }
-
