@@ -98,14 +98,30 @@ export function readPublicCharacterProfileInputs(db) {
  * caller's read-only transaction and runs the unchanged synchronous
  * reconstruction against a query-sheet view of them. */
 export async function readPublicCharacterProfileInputsAsync(tx) {
-  const from = /FROM\s+(?:wiki\.)?"?([a-z_0-9]+)"?/i;
-  const tableNames = new Set([...readPublicCharacterProfileInputs.toString().matchAll(/FROM\s+"?([a-z_0-9]+)"?/gi)].map(m => m[1]));
-  const data = {};
-  for (const table of tableNames) data[table] = await tx.all(`SELECT * FROM wiki.${table}`);
+  // Explicit materialization: run the reader's exact per-table SELECTs (with
+  // their column projections) against wiki.* on PostgreSQL, then hand the
+  // cached rows to the unchanged synchronous reconstruction. Column sets,
+  // ordering and coverage checks all come from the real query results.
+  const preloaded = new Map();
+  const load = async (sql, params = []) => {
+    const key = sql + JSON.stringify(params);
+    if (!preloaded.has(key)) {
+      const rows = await tx.all(sql.replace(/\b(FROM|JOIN)\s+((?!wiki\.)[a-z_][a-z_0-9]*)/gi, '$1 wiki.$2'), params);
+      preloaded.set(key, rows.map(row => ({ ...row })));
+    }
+    return preloaded.get(key);
+  };
+  await load('SELECT person_id FROM person');
+  for (const [table, columns] of Object.entries(ENGINE_TABLE_COLUMNS)) {
+    await load(`SELECT ${columns.join(',')} FROM ${table}`);
+  }
+  const served = (sql, params = []) => {
+    const key = sql + JSON.stringify(params);
+    if (!preloaded.has(key)) throw new Error('E_PROFILE_ASYNC_STATEMENT_UNMATERIALIZED:' + sql);
+    return preloaded.get(key);
+  };
   const sheet = { prepare(sql) {
-    const table = from.exec(sql)?.[1];
-    const rows = data[table] ?? [];
-    return { all: () => rows.map(r => ({ ...r })), get: () => rows[0] ? { ...rows[0] } : undefined };
+    return { all: (...params) => served(sql, params), get: (...params) => served(sql, params)[0] };
   } };
   return readPublicCharacterProfileInputs(sheet);
 }
