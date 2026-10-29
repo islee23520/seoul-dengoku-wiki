@@ -137,21 +137,6 @@ async function fixture(t) {
     request.manifestSha256 = sha(bytes)
     await put(requestPath, JSON.stringify(request))
   }
-  const reseal = async () => {
-    const graph = await catalogWorldGraph(input, () => { throw new Error('legacy graph fallback'); });
-    const bytes = await readFile(join(releaseRoot, member.path))
-    member.rawSha256 = sha(bytes); member.sizeBytes = bytes.length
-  }
-  budget.members = manifest.semantic.members.map(m => ({ path: m.path, maxBytes: m.sizeBytes }))
-  budget.maxTotalBytes = manifest.semantic.members.reduce((n, m) => n + m.sizeBytes, 0)
-  manifest.provenance.budgetReceipt = await store('budget', canonicalEncode(budget))
-  Object.assign(manifest, createReleaseManifest({ semantic: manifest.semantic, provenance: manifest.provenance }, { expectedTargets: ['wiki', 'game'], budget }))
-  const bytes = JSON.stringify(manifest)
-  await put(join(releaseRoot, 'release-manifest.json'), bytes)
-  Object.assign(request.lock, { mapReleaseId: manifest.mapReleaseId, deliveryReceiptId: manifest.deliveryReceiptId })
-  request.manifestSha256 = sha(bytes)
-  await put(requestPath, JSON.stringify(request))
-}
 return { root, graph, request, requestPath, manifest, options, put, reseal }
 }
 
@@ -195,7 +180,7 @@ for (const lane of ['member', 'identity', 'license', 'mixed-lock', 'partial', 'r
   if (lane === 'mixed-lock') { f.request.lock.deliveryReceiptId = '0'.repeat(64); await writeFile(f.requestPath, JSON.stringify(f.request)) }
   if (lane === 'partial') await rm(join(f.request.releaseRoot, 'game/terrain-manifest.json'))
   if (lane === 'reduced-graph') {
-    await assert.rejects(catalogWorldGraph(null, () => { throw new Error('legacy called'); }), /legacy called/)
+    assert.throws(() => catalogWorldGraph(null, () => { throw new Error('legacy called') }), /legacy called/)
     await writeFile(join(f.request.releaseRoot, 'game/world-graph.json'), JSON.stringify({ stations: f.graph.stations, edges: f.graph.edges }))
   }
   await assert.rejects(runRelease({ ...f.options, stage: () => assert.fail('stage ran') }))
@@ -219,11 +204,12 @@ for (const lane of ['request', 'member', 'identity', 'license', 'replace-file', 
 })
 
 test('actual catalog public projection honors supplied edge removal instead of SQLite adjacency', () => {
-  test('no-request catalog still uses the exact legacy typed read seam', async () =>
+  const regular = { edges: [{ a: 'a', b: 'b', lineIds: ['line'], sourceCodes: [] }], linesByStation: new Map(), omitted: [] }
   const movement = catalogMovementGraph({ graph: { edges: [] } }, regular, id => id, [])
-    const edges = catalogPublicEdges(movement, new Set(['a', 'b']), new Map(), () => ({ polityIds: [], status: 'unknown' }), () => [], {}, () => 'unknown')
-    assert.equal(await catalogWorldGraph(null, read => { called = typeof read === 'function'; return sentinel }), sentinel)
-  })
+  const edges = catalogPublicEdges(movement, new Set(['a', 'b']), new Map(), () => ({ polityIds: [], status: 'unknown' }), () => [], {}, () => 'unknown')
+  assert.deepEqual(edges, [])
+})
+
 
   test('staged production public projection publishes changed release edges and preserves no-request projection', async t => {
     const f = await fixture(t)
@@ -255,7 +241,7 @@ test('actual catalog public projection honors supplied edge removal instead of S
     assert.deepEqual(JSON.parse(await readFile(join(f.options.root, 'public/opening-territories.json'))).edges, expected)
   })
 
-  test('no-request catalog still uses the exact legacy typed read seam', () => {
+  test('no-request catalog still uses the exact legacy typed read seam', async () => {
     let called = false
     const sentinel = { legacy: true }
     assert.equal(await catalogWorldGraph(null, read => { called = typeof read === 'function'; return sentinel }), sentinel)
