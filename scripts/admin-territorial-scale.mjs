@@ -4,6 +4,10 @@ import { readDocument } from './cast-sqlite/document-read.mjs'
 import { orderDocumentKeys } from './cast-sqlite/document-key-order.mjs'
 import { readGeographyStore } from './cast-sqlite/geography-store.mjs'
 import { readScopeCurrentSource } from './document-store/scope-current-source.mjs'
+import { readDocumentAsync } from './cast-sqlite/document-read.mjs'
+import { orderDocumentKeysAsync } from './cast-sqlite/document-key-order.mjs'
+import { readGeographyStoreAsync } from './cast-sqlite/geography-store.mjs'
+import { readEvidenceDocumentReferenceAsync } from './cast-sqlite/evidence-document-reference-async.mjs'
 
 const sha256 = value => createHash('sha256').update(value).digest('hex')
 const ranks = ['empire', 'kingdom', 'duchy', 'county', 'barony']
@@ -226,4 +230,58 @@ export function validateAdminTerritorialScale(output, inputs) {
   const expected = buildAdminTerritorialScale(inputs)
   exactKeys(output, Object.keys(expected), 'E_SCALE_OUTPUT_FIELDS')
   assert.deepEqual(output, expected, 'E_SCALE_PROJECTION')
+}
+
+
+/** Async PostgreSQL twin of buildAdminTerritorialScaleFromDb. Same checks and
+ * buildScale reuse; reads run inside the caller-owned read-only transaction.
+ * The offices source resolver follows the sealed-head branch the synchronous
+ * reader takes for this document (parent_revision present): the offices typed
+ * path via text_line_document / readDocumentAsync internal, and unsupported
+ * fallbacks (person-mapping or missing offices identity) fail closed. */
+export async function buildAdminTerritorialScaleFromDbAsync(tx) {
+  const sources = await tx.all('SELECT source_id, sha256 FROM wiki.source_file WHERE logical_path = ?', ['lore/regions/seoul-electoral-titles.json']);
+  assert.equal(sources.length, 1, 'E_GEOGRAPHY_SOURCE');
+  const identities = await tx.all(`SELECT s.source_id, s.sha256, r.parent_revision, r.algorithm
+    FROM wiki.source_file s JOIN wiki.document_head h ON h.source_id = s.source_id
+    JOIN wiki.document_revision r ON r.source_id = h.source_id AND r.revision_id = h.revision_id
+    JOIN wiki.text_document d ON d.source_id = s.source_id
+    WHERE s.logical_path = ? AND d.document_id = ? AND d.domain = 'offices' AND d.corpus_kind = 'current'`,
+  ['lore/offices/Offices-and-Ranks.json', 'DOC:Offices-and-Ranks']);
+  assert.equal(identities.length, 1, 'E_SCALE_DOCUMENT_AUTHORITY');
+  const identity = identities[0];
+  assert.equal(identity.algorithm, 'typed-envelope-v1', 'E_SCALE_DOCUMENT_REVISION');
+  let territorialScale;
+  if (identity.parent_revision !== null) {
+    territorialScale = (await readOfficesScaleSourceAsync(tx, identity.source_id)).data.territorialScale;
+  } else {
+    const document = await readDocumentAsync(tx, { documentId: 'DOC:Offices-and-Ranks',
+      domain: 'offices', corpusKind: 'current', visibility: 'public' });
+    assert.ok(document, 'E_SCALE_DOCUMENT_REVIEW');
+    const ordered = await orderDocumentKeysAsync(tx, identity.source_id, document);
+    territorialScale = ordered.data.territorialScale;
+  }
+  return buildScale({ geography: await readGeographyStoreAsync(tx), geographySha256: sources[0].sha256,
+    territorialScale });
+}
+
+/** Offices-only sealed-head source: mirrors the synchronous reader's offices
+ * branch exactly — a unique text_line_document binding returns its text via
+ * readLineDocumentAsync; otherwise a unique current/example text_document is
+ * read through the sealed evidence reference and archived-key reordered,
+ * returning the ordered typed document (not a re-read). Unsupported fallbacks
+ * (person mapping, duplicates, missing identities) fail closed. */
+async function readOfficesScaleSourceAsync(tx, sourceId) {
+  const lines = await tx.all(`SELECT 1 FROM wiki.text_line_document WHERE source_id = ?`, [sourceId]);
+  if (lines.length > 1) throw new Error('E_SCOPE_SOURCE_DUPLICATE:offices');
+  if (lines.length === 1) {
+    const { readLineDocumentAsync } = await import('./cast-sqlite/line-document-store.mjs');
+    const line = await readLineDocumentAsync(tx, sourceId);
+    assert.ok(line, 'E_SCOPE_SOURCE_LINE');
+    return { data: null, lineText: line.text };
+  }
+  const identities = await tx.all(`SELECT 1 FROM wiki.text_document d WHERE d.source_id = ? AND d.corpus_kind IN ('current','example')`, [sourceId]);
+  if (identities.length !== 1) throw new Error('E_SCALE_OFFICES_FALLBACK_UNSUPPORTED: expected unique offices current document, person-mapping fallback is not supported in the PG reader');
+  const reference = await readEvidenceDocumentReferenceAsync(tx, sourceId);
+  return await orderDocumentKeysAsync(tx, reference.sourceId, reference.document);
 }

@@ -173,3 +173,39 @@ export function replaceLines(db, command) {
     return {sourceId,revision,previousRevision:expectedRevision};
   });
 }
+
+
+/** Async PostgreSQL twin of readLineDocument: identical adoption, policy,
+ * sealed-revision, row validation and content-hash checks over wiki.* tables
+ * inside the caller-owned read-only transaction. Internal-only visibility
+ * contract preserved (public still fails closed). */
+export async function readLineDocumentAsync(tx, sourceId, { revision, visibility = 'internal' } = {}) {
+  if (!['internal','public'].includes(visibility)) fail('E_LINE_VISIBILITY',visibility);
+  if (!Number.isSafeInteger(sourceId) || sourceId < 1) fail('E_LINE_SOURCE','positive source ID required');
+  const document = (await tx.all(`SELECT d.*, s.logical_path, s.media_type, s.sha256, s.byte_length
+    FROM wiki.text_line_document d JOIN wiki.source_file s ON s.source_id = d.source_id WHERE d.source_id = ?`, [sourceId]))[0];
+  if (!document || !paths.has(document.logical_path) || !(document.media_kind in media)
+    || !([media[document.media_kind], ...(document.media_kind === 'javascript-data' ? ['application/javascript'] : [])].includes(document.media_type))) {
+    fail('E_LINE_SOURCE','not an existing bounded typed line source');
+  }
+  const head = await tx.get('SELECT * FROM wiki.line_document_head WHERE source_id = ?', [sourceId]);
+  if (!head) fail('E_LINE_SOURCE','source not adopted');
+  const policy = await tx.get('SELECT * FROM wiki.line_document_policy WHERE source_id = ?', [sourceId]);
+  if (visibility === 'public') fail('E_LINE_ADMISSION','internal-only source; schema/privacy attestation and exact approval absent');
+  const selected = revision ?? head.revision_id;
+  const record = await tx.get(`SELECT r.* FROM wiki.line_document_revision r JOIN wiki.line_document_revision_seal z ON z.source_id = r.source_id AND z.revision_id = r.revision_id
+    WHERE r.source_id = ? AND r.revision_id = ?`, [sourceId, selected]);
+  if (!record) fail('E_LINE_REVISION','unknown sealed revision');
+  const current = selected === head.revision_id;
+  const lines = current ? await tx.all('SELECT * FROM wiki.text_line WHERE source_id = ? ORDER BY line_ordinal', [sourceId])
+    : await tx.all('SELECT source_id,line_ordinal,text,line_kind,heading_depth FROM wiki.line_document_revision_line WHERE source_id = ? AND revision_id = ? ORDER BY line_ordinal', [sourceId, selected]);
+  const metadata = current ? document : record;
+  const text = reconstruct(metadata, lines);
+  validateRows(metadata, lines, text);
+  if (hash(text) !== record.content_sha256) fail('E_LINE_INTEGRITY','revision hash mismatch');
+  return { sourceId, revision: selected, parentRevision: record.parent_revision, sequence: record.sequence,
+    text, lines, mediaKind: metadata.media_kind, endsWithNewline: Boolean(metadata.ends_with_newline), lineEnding: metadata.line_ending,
+    contentSha256: record.content_sha256, actor: record.actor, reason: record.reason,
+    usageKind: policy.usage_kind, privacy: policy.privacy, status: head.status, publicAdmission: head.public_admission,
+    schemaAttestation: head.schema_attestation, currentApprovalRef: head.current_approval_ref };
+}
