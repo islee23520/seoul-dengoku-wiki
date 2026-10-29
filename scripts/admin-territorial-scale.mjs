@@ -275,10 +275,10 @@ async function readOfficesScaleSourceAsync(tx, sourceId) {
   const lines = await tx.all(`SELECT 1 FROM wiki.text_line_document WHERE source_id = ?`, [sourceId]);
   if (lines.length > 1) throw new Error('E_SCOPE_SOURCE_DUPLICATE:offices');
   if (lines.length === 1) {
-    const { readLineDocumentAsync } = await import('./cast-sqlite/line-document-store.mjs');
-    const line = await readLineDocumentAsync(tx, sourceId);
-    assert.ok(line, 'E_SCOPE_SOURCE_LINE');
-    return { data: null, lineText: line.text };
+    // The synchronous scale reader dereferences .data.territorialScale on the
+    // returned source; a line source is plain text and can never satisfy it.
+    // Fail closed with the exact reason instead of returning a wrong shape.
+    throw new Error('E_SCALE_OFFICES_LINE_SOURCE_UNSUPPORTED: offices territorial scale requires a typed document, not a line source');
   }
   const identities = await tx.all(`SELECT 1 FROM wiki.text_document d WHERE d.source_id = ? AND d.corpus_kind IN ('current','example')`, [sourceId]);
   if (identities.length !== 1) throw new Error('E_SCALE_OFFICES_FALLBACK_UNSUPPORTED: expected unique offices current document, person-mapping fallback is not supported in the PG reader');
