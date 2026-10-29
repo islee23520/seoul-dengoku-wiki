@@ -54,7 +54,7 @@ import { readScopeCurrentSource } from './document-store/scope-current-source.mj
 import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
 import { readRetirementProse, projectRetirementProse } from './cast-sqlite/retirement-prose.mjs'
 import { projectActiveRoster, projectActivePersonIndex } from './person-roster-projection.mjs'
-import { readCatalogMetadata, CATEGORY_REGISTRY_PATH, OFFICIAL_SEOUL_LINES_PATH, UPDATE_HISTORY_PATH } from './cast-sqlite/catalog-metadata.mjs'
+import { readCatalogMetadata, readCatalogMetadataAsync, CATEGORY_REGISTRY_PATH, OFFICIAL_SEOUL_LINES_PATH, UPDATE_HISTORY_PATH } from './cast-sqlite/catalog-metadata.mjs'
 import { readPopulationDocument } from './cast-sqlite/population-document.mjs'
 import { catalogWorldGraph, catalogMovementGraph, catalogPublicEdges } from './catalog-map-graph.mjs'
 import { readRailSourceDocument, RAIL_SOURCE_PATHS } from './cast-sqlite/rail-source-documents.mjs'
@@ -124,7 +124,9 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
 const mapInput = process.env.WIKI_MAP_RELEASE_REQUEST === undefined ? null : await loadMapDataInput(process.env.WIKI_MAP_RELEASE_REQUEST)
-if (!process.env.WIKI_DOCUMENT_DB) {
+// PostgreSQL mode must not load the private SQLite build environment: it is
+// an SQLite-authority bootstrap input; a PG release reads no SQLite files.
+if (!process.env.WIKI_DOCUMENT_DB && !process.env.WIKI_DOCUMENT_PG) {
   const environment = JSON.parse(await readFile(resolve(projectRoot,
     '.omo/private/seoul-migration/sqlite-authority-20261021/build-environment.json'), 'utf8'))
   for (const [key, value] of Object.entries(environment)) {
@@ -136,10 +138,24 @@ const typedCatalogSource = (read) => {
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite'))
   try { return read(db) } finally { db.close() }
 }
-const catalogMetadata = (() => {
-  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite'))
-  try { return readCatalogMetadata(db) } finally { db.close() }
-})()
+// PostgreSQL release sourcing: metadata reads the release-exported snapshot
+// (WIKI_GENERATION_SNAPSHOT) in one worker-owned read-only transaction.
+// SQLite callers keep the original closure unchanged.
+const catalogMetadata = process.env.WIKI_DOCUMENT_PG
+  ? await (async () => {
+      const { createReader } = await import('./cast-sqlite/db-pg.mjs')
+      const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+      const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
+      try {
+        return await reader.transaction(tx => readCatalogMetadataAsync(tx), {
+          readOnly: true, ...(importSnapshot ? { importSnapshot } : {}),
+        })
+      } finally { await reader.close() }
+    })()
+  : (() => {
+      const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite'))
+      try { return readCatalogMetadata(db) } finally { db.close() }
+    })()
 const sourceDatabaseBundle = process.env.WIKI_PUBLICATION_DATABASE_CONFIG
   ? await (await import('./document-store/publication-database-inputs.mjs')).openPublicationDatabaseInputs(projectRoot,
     JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))) : null
