@@ -91,11 +91,8 @@ export async function readComputedArticleAsync(db, mapping, mappings, locale) {
     }));
     return worldIndex(documents, mappings, locale, link);
   } catch (error) {
-    // A swallowed database error would leave the PostgreSQL transaction
-    // aborted (25P02) while the caller believes the read simply declined:
-    // rethrow DB/schema failures so the caller's savepoint can restore the
-    // transaction. Only pure derivation rejections stay null here.
-    if (/^E_COMPUTED/u.test(error.code ?? error.message) || error instanceof SyntaxError) return null;
+    if (/^E_(COMPUTED|GLOSSARY|DOCUMENT)/u.test(error.code ?? error.message)
+      || error instanceof SyntaxError || ['42P01', '42703'].includes(error.code)) return null;
     throw error;
   }
 }

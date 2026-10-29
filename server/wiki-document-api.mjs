@@ -141,62 +141,24 @@ export async function createWikiDocumentServer({ pgUrl = process.env.WIKI_DOCUME
      }
      const admittedMappings = [];
      for (const identity of mappings) {
-      // A failing document must not abort the shared snapshot: unlike SQLite,
-      // a failed statement leaves a PostgreSQL transaction aborted (25P02), so
-      // each per-document read runs in a savepoint that is rolled back on the
-      // same schema-gap errors SQLite tolerated per document.
-      await tx.exec('SAVEPOINT document_read');
-      let succeeded = false;
       try {
        const document = await readDocumentAsync(tx, selector(identity));
        if (document && document.readMetadata.source_id === identity.source_id) {
         admittedMappings.push({ ...identity, titles: Object.fromEntries(['ko', 'en'].map(language => [language, document.locales[language].title])) });
         if (list || identity.route === `/${parts[4]}/${parts[5]}`) documents.push(renderDocument(document, locale, identity, mappings, currentRoster));
        }
-       succeeded = true;
       } catch (error) {
        // Missing typed slots/schema or an exact public projection mismatch
-       // cannot turn an incomplete envelope into a published article. The
-       // finally block restores the savepoint for every outcome — RELEASE on
-       // success, ROLLBACK TO + RELEASE on any error — so a rethrown error
-       // still leaves the transaction consistent and the snapshot usable.
+       // cannot turn an incomplete envelope into a published article.
        if (error.code !== 'E_DOCUMENT_SCHEMA_GAP' && error.code !== 'E_DOCUMENT_AMBIGUOUS'
         && !/^(E_OFFICE_PUBLIC_PROJECTION|E_MAP_PUBLIC_PROJECTION|E_LOCALE_MISSING):/u.test(error.message)) throw error;
-      } finally {
-       if (succeeded) await tx.exec('RELEASE SAVEPOINT document_read');
-       else {
-        await tx.exec('ROLLBACK TO SAVEPOINT document_read');
-        await tx.exec('RELEASE SAVEPOINT document_read');
-       }
       }
      }
      for (const mapping of routes.filter(row => ['computed-index', 'computed-glossary'].includes(row.derivation))) {
       if (!/^\/[\p{L}\p{N}_-]+\/[\p{L}\p{N}_-]*$/u.test(mapping.route)
        || (!list && mapping.route !== `/${parts[4]}/${parts[5]}`)) continue;
-      // Computed derivations read typed dependencies and may hit the same
-      // schema gaps; isolate each one so one bad derivation cannot abort the
-      // remaining snapshot.
-      await tx.exec('SAVEPOINT computed_read');
-      let computedOk = false;
-      try {
-       const computed = await readComputedArticleAsync(tx, mapping, admittedMappings, locale);
-       if (computed) documents.push(articleBody(computed.title, `${locale === 'ko' ? '' : '/en'}${mapping.route}`, computed.markdown, locale, admittedMappings));
-       computedOk = true;
-      } catch (error) {
-       // Same tolerance as the document loop: schema gaps decline this one
-       // computed article while the finally block restores the savepoint;
-       // anything else fails the request after restoration.
-       if (error.code !== 'E_DOCUMENT_SCHEMA_GAP' && error.code !== 'E_DOCUMENT_AMBIGUOUS'
-        && error.code !== 'E_GLOSSARY_NOT_FOUND' && error.code !== 'E_GLOSSARY_REVISION'
-        && !/^E_COMPUTED/u.test(error.code ?? error.message)
-        && !/^(E_OFFICE_PUBLIC_PROJECTION|E_MAP_PUBLIC_PROJECTION|E_LOCALE_MISSING):/u.test(error.message)) throw error;
-      } finally {
-       if (computedOk) await tx.exec('RELEASE SAVEPOINT computed_read');
-       else {
-        await tx.exec('ROLLBACK TO SAVEPOINT computed_read');
-        await tx.exec('RELEASE SAVEPOINT computed_read');
-       }
-      }
+      const computed = await readComputedArticleAsync(tx, mapping, admittedMappings, locale);
+      if (computed) documents.push(articleBody(computed.title, `${locale === 'ko' ? '' : '/en'}${mapping.route}`, computed.markdown, locale, admittedMappings));
      }
      return documents;
     }, { readOnly: true });

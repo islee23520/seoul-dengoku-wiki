@@ -47,9 +47,6 @@ export function readRetirementProse(db) {
 
 // PostgreSQL companion; the predecessor/current integrity policy is unchanged.
 export async function readRetirementProseAsync(db) {
-  // Optional table: absent retirement_prose means no replacements, matching
-  // the SQLite probe-and-default-[] generator behavior.
-  if (!(await db.get("SELECT 1 FROM information_schema.tables WHERE table_schema='wiki' AND table_name='retirement_prose'"))) return [];
   const rows = await db.all(`SELECT s.logical_path AS path,p.* FROM wiki.retirement_prose p
     JOIN wiki.source_file s USING(source_id) ORDER BY s.logical_path,p.source_pointer`);
   if (rows.length !== 60 || rows.some(row => hash(row.predecessor_text) !== row.predecessor_sha256
