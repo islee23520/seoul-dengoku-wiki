@@ -135,6 +135,13 @@ if (!process.env.WIKI_DOCUMENT_DB && !process.env.WIKI_DOCUMENT_PG) {
   }
 }
 const typedCatalogSource = (read) => {
+  // PostgreSQL mode is not yet complete for the typed reader family: this
+  // helper is SQLite-only. Fail fast instead of mixing SQLite reads into a
+  // PG-sourced generation run. Remove when every typed reader has a wired
+  // async PostgreSQL path.
+  if (process.env.WIKI_DOCUMENT_PG) {
+    throw Object.assign(new Error('E_CATALOG_TYPED_SOURCE_PG_UNCONVERTED: typedCatalogSource readers are not PostgreSQL-sourced yet; PG generation must not mix SQLite inputs'), { code: 'E_CATALOG_TYPED_SOURCE_PG_UNCONVERTED' })
+  }
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite'))
   try { return read(db) } finally { db.close() }
 }
