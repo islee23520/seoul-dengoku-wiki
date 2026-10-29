@@ -102,8 +102,10 @@ function keyOrder(db, kind, owner, object) {
   Object.keys(object).forEach((field, ordinal) => insert(db, 'portrait_key_order', { kind, owner, ordinal, field }));
 }
 function storeEvidence(db, table, owner, value) {
-  insert(db, table, { ...owner, value: value.value, status: value.status, source: value.source,
-    ...(table === 'portrait_slot_evidence' ? { hasUnit: Number(Object.hasOwn(value, 'unit')), unit: value.unit ?? null } : {}) });
+  insert(db, table, {
+    ...owner, value: value.value, status: value.status, source: value.source,
+    ...(table === 'portrait_slot_evidence' ? { hasUnit: Number(Object.hasOwn(value, 'unit')), unit: value.unit ?? null } : {})
+  });
 }
 
 /** One-time import from caller-owned memory. No paths or automatic source reads. */
@@ -127,12 +129,14 @@ export function initializePortraitStore(db, command) {
     for (const kind of kinds) {
       const s = sources[kind]; const d = docs[kind];
       insert(db, 'portrait_archive', { kind, bytes: s.bytes, sha256: s.expectedSha256, actor: s.actor, reason: s.reason });
-      insert(db, 'portrait_document', { kind, schemaVersion: d.schemaVersion, status: d.status,
+      insert(db, 'portrait_document', {
+        kind, schemaVersion: d.schemaVersion, status: d.status,
         styleSource: d.styleSource ?? null, canonPromotion: kind === 'selection' ? Number(d.canonPromotion) : null,
         final3dPortraitContractSatisfied: kind === 'selection' ? Number(d.final3dPortraitContractSatisfied) : null,
         previousVerdictsPreserved: kind === 'selection' ? Number(d.previousVerdictsPreserved) : null,
         entryCount: kind === 'selection' ? d.records.length : kind === 'catalog' ? d.entries.length : Object.keys(d.entries).length,
-        currentSha256: hash(JSON.stringify(d)) });
+        currentSha256: hash(JSON.stringify(d))
+      });
       keyOrder(db, kind, '', d);
     }
     const hasPerson = !!db.prepare("SELECT 1 FROM sqlite_schema WHERE type='table' AND name='person'").get();
@@ -170,9 +174,11 @@ export function initializePortraitStore(db, command) {
       });
     });
     docs.selection.records.forEach((s, ordinal) => {
-      insert(db, 'portrait_selection', { personId: s.personId, ordinal, imageSha256: s.imageSha256,
+      insert(db, 'portrait_selection', {
+        personId: s.personId, ordinal, imageSha256: s.imageSha256,
         hasPrevious: Number(Object.hasOwn(s, 'previousImageSha256')), previousImageSha256: s.previousImageSha256 ?? null,
-        verdict: s.verdict, operation: s.operation });
+        verdict: s.verdict, operation: s.operation
+      });
       keyOrder(db, 'selection', s.personId, s);
     });
     insert(db, 'portrait_seal', { singleton: 1, revision: 1 });
@@ -215,11 +221,13 @@ export function readPortraitDocuments(db) {
       if (p.hasIdentity) {
         const i = db.prepare('SELECT * FROM portrait_identity WHERE personId=?').get(p.personId);
         if (!i) fail('E_PORTRAIT_INCOMPLETE', 'identity');
-        value.identity = order(kind, p.personId + '/identity', { characterId: i.characterId, name: i.name, gender: i.gender, ageCategory: i.ageCategory,
-          ...Object.fromEntries(['ethnicity', 'origin'].map(field => [field, ev(p.personId + '/identity/' + field, db.prepare('SELECT * FROM portrait_identity_evidence WHERE personId=? AND field=?').get(p.personId, field))])) });
+        value.identity = order(kind, p.personId + '/identity', {
+          characterId: i.characterId, name: i.name, gender: i.gender, ageCategory: i.ageCategory,
+          ...Object.fromEntries(['ethnicity', 'origin'].map(field => [field, ev(p.personId + '/identity/' + field, db.prepare('SELECT * FROM portrait_identity_evidence WHERE personId=? AND field=?').get(p.personId, field))]))
+        });
       }
       if (p.hasSlots) value.slots = Object.fromEntries(db.prepare('SELECT * FROM portrait_slot_group WHERE personId=? ORDER BY ordinal').all(p.personId).map(g => [g.slot,
-        Object.fromEntries(db.prepare('SELECT * FROM portrait_slot_evidence WHERE personId=? AND slot=? ORDER BY ordinal').all(p.personId, g.slot).map(e => [e.field, ev(p.personId + '/slots/' + g.slot + '/' + e.field, e, true)]))]));
+      Object.fromEntries(db.prepare('SELECT * FROM portrait_slot_evidence WHERE personId=? AND slot=? ORDER BY ordinal').all(p.personId, g.slot).map(e => [e.field, ev(p.personId + '/slots/' + g.slot + '/' + e.field, e, true)]))]));
       return [p.personId, order(kind, p.personId, value)];
     }));
     if (kind === 'selection') body = db.prepare('SELECT s.*,p.characterId,p.name FROM portrait_selection s JOIN portrait_person p USING(personId) ORDER BY ordinal').all().map(s => order(kind, s.personId, {
@@ -228,13 +236,79 @@ export function readPortraitDocuments(db) {
     }));
     const size = kind === 'properties' ? Object.keys(body).length : body.length;
     if (size !== d.entryCount) fail('E_PORTRAIT_INCOMPLETE', kind + ' count');
-    docs[kind] = order(kind, '', { schemaVersion: d.schemaVersion, status: d.status,
+    docs[kind] = order(kind, '', {
+      schemaVersion: d.schemaVersion, status: d.status,
       ...(kind === 'catalog' ? { styleSource: d.styleSource } : {}),
-      ...(kind === 'selection' ? { canonPromotion: Boolean(d.canonPromotion), final3dPortraitContractSatisfied: Boolean(d.final3dPortraitContractSatisfied), previousVerdictsPreserved: Boolean(d.previousVerdictsPreserved), records: body } : { entries: body }) });
+      ...(kind === 'selection' ? { canonPromotion: Boolean(d.canonPromotion), final3dPortraitContractSatisfied: Boolean(d.final3dPortraitContractSatisfied), previousVerdictsPreserved: Boolean(d.previousVerdictsPreserved), records: body } : { entries: body })
+    });
     if (hash(JSON.stringify(docs[kind])) !== d.currentSha256) fail('E_PORTRAIT_INCOMPLETE', kind + ' digest');
   }
   validate(docs);
   return docs;
+}
+
+/** Async PostgreSQL twin of readPortraitDocuments with the same typed-row validation. */
+export async function readPortraitDocumentsAsync(db) {
+  const all = async sql => db.all(sql.replace(/\b(FROM|JOIN) (portrait_[a-z_]+)/gu, '$1 wiki.$2'))
+  const seal = await all('SELECT count(*) AS n FROM portrait_seal WHERE singleton=1 AND revision>=1')
+  if (seal[0]?.n !== 1) fail('E_PORTRAIT_INCOMPLETE', 'seal')
+  const keys = await all('SELECT kind,owner,ordinal,field FROM portrait_key_order ORDER BY kind,owner,ordinal')
+  const docs = {}
+  const ordered = (kind, owner, object) => {
+    const fields = keys.filter(row => row.kind === kind && row.owner === owner).map(row => row.field)
+    if (fields.length !== Object.keys(object).length || fields.some(field => !Object.hasOwn(object, field))) fail('E_PORTRAIT_INCOMPLETE', 'key order')
+    return Object.fromEntries(fields.map(field => [field, object[field]]))
+  }
+  const rows = Object.fromEntries(await Promise.all([
+    'portrait_document', 'portrait_catalog', 'portrait_person', 'portrait_properties', 'portrait_identity',
+    'portrait_identity_evidence', 'portrait_slot_group', 'portrait_slot_evidence', 'portrait_selection',
+  ].map(async table => [table, await all(`SELECT * FROM ${table}`)])))
+  const byId = (table, personId) => rows[table].filter(row => row.personId === personId)
+  const first = (table, personId) => byId(table, personId)[0]
+  const evidenceValue = (owner, row, unit = false) => {
+    if (!row) fail('E_PORTRAIT_INCOMPLETE', owner)
+    return ordered('properties', owner, { value: row.value, status: row.status, source: row.source, ...(unit && row.hasUnit ? { unit: row.unit } : {}) })
+  }
+  for (const kind of kinds) {
+    const d = rows.portrait_document.find(row => row.kind === kind)
+    if (!d) fail('E_PORTRAIT_INCOMPLETE', kind)
+    let body
+    if (kind === 'catalog') body = rows.portrait_catalog.sort((a, b) => a.ordinal - b.ordinal).map(c => {
+      const p = first('portrait_person', c.personId)
+      if (!p) fail('E_PORTRAIT_INCOMPLETE', 'person')
+      return ordered(kind, c.personId, { personId: c.personId, characterId: p.characterId, name: p.name, stateId: c.stateId, approval: c.approval, imageSha256: c.imageSha256 })
+    })
+    if (kind === 'properties') body = Object.fromEntries(rows.portrait_properties.sort((a, b) => a.ordinal - b.ordinal).map(p => {
+      const value = { face: p.face, hair: p.hair, upper: p.upper }
+      if (p.hasIdentity) {
+        const i = first('portrait_identity', p.personId)
+        if (!i) fail('E_PORTRAIT_INCOMPLETE', 'identity')
+        value.identity = ordered(kind, p.personId + '/identity', {
+          characterId: i.characterId, name: i.name, gender: i.gender, ageCategory: i.ageCategory,
+          ...Object.fromEntries(['ethnicity', 'origin'].map(field => [field, evidenceValue(p.personId + '/identity/' + field, rows.portrait_identity_evidence.find(r => r.personId === p.personId && r.field === field))]))
+        })
+      }
+      if (p.hasSlots) value.slots = Object.fromEntries(byId('portrait_slot_group', p.personId).sort((a, b) => a.ordinal - b.ordinal).map(g => [g.slot,
+      Object.fromEntries(byId('portrait_slot_evidence', p.personId).filter(e => e.slot === g.slot).sort((a, b) => a.ordinal - b.ordinal).map(e => [e.field, evidenceValue(p.personId + '/slots/' + g.slot + '/' + e.field, e, true)]))]))
+      return [p.personId, ordered(kind, p.personId, value)]
+    }))
+    if (kind === 'selection') body = rows.portrait_selection.sort((a, b) => a.ordinal - b.ordinal).map(s => {
+      const p = first('portrait_person', s.personId)
+      if (!p) fail('E_PORTRAIT_INCOMPLETE', 'person')
+      return ordered(kind, s.personId, {
+        personId: s.personId, characterId: p.characterId, name: p.name, imageSha256: s.imageSha256,
+        ...(s.hasPrevious ? { previousImageSha256: s.previousImageSha256 } : {}), verdict: s.verdict, operation: s.operation
+      })
+    })
+    if ((kind === 'properties' ? Object.keys(body).length : body.length) !== d.entryCount) fail('E_PORTRAIT_INCOMPLETE', kind + ' count')
+    docs[kind] = ordered(kind, '', {
+      schemaVersion: d.schemaVersion, status: d.status, ...(kind === 'catalog' ? { styleSource: d.styleSource } : {}),
+      ...(kind === 'selection' ? { canonPromotion: Boolean(d.canonPromotion), final3dPortraitContractSatisfied: Boolean(d.final3dPortraitContractSatisfied), previousVerdictsPreserved: Boolean(d.previousVerdictsPreserved), records: body } : { entries: body })
+    })
+    if (hash(JSON.stringify(docs[kind])) !== d.currentSha256) fail('E_PORTRAIT_INCOMPLETE', kind + ' digest')
+  }
+  validate(docs)
+  return docs
 }
 
 export function readPortraitArchive(db, kind) {
@@ -250,17 +324,19 @@ export function readPortraitRevision(db, revision) {
     || !db.prepare('SELECT 1 FROM portrait_revision WHERE revision=?').get(revision)) {
     fail('E_PORTRAIT_REVISION', 'unknown revision');
   }
-  const snapshotDb = { prepare(sql) {
-    if (sql.includes('FROM portrait_seal')) {
-      return { get: () => ({ n: 1 }) };
+  const snapshotDb = {
+    prepare(sql) {
+      if (sql.includes('FROM portrait_seal')) {
+        return { get: () => ({ n: 1 }) };
+      }
+      let query = sql;
+      for (const table of currentTables) {
+        query = query.replace(new RegExp(`\\b${table}\\b`, 'gu'),
+          `(SELECT * FROM ${table}_history WHERE revision=${revision})`);
+      }
+      return db.prepare(query);
     }
-    let query = sql;
-    for (const table of currentTables) {
-      query = query.replace(new RegExp(`\\b${table}\\b`, 'gu'),
-        `(SELECT * FROM ${table}_history WHERE revision=${revision})`);
-    }
-    return db.prepare(query);
-  } };
+  };
   return readPortraitDocuments(snapshotDb);
 }
 
