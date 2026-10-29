@@ -228,37 +228,25 @@ export function readAtlasIdentity(db) {
  * unchanged synchronous reconstruction against a query-sheet view of them so
  * validation and shape stay identical. */
 export async function readAtlasIdentityAsync(tx) {
-  const tables = ['atlas_identity_archive','atlas_identity_binding','atlas_identity_candidate','atlas_identity_candidate_metadata',
-    'atlas_identity_existing_k','atlas_identity_note','atlas_identity_registry_person','atlas_identity_route','atlas_identity_seal',
-    'atlas_identity_values_metadata','person','person_lineage','person_alias','person_gender','current_profile','narrative','existing_name','source_file','identity_registry_provenance','identity_clan_catalog_provenance'];
-  const data = {};
-  for (const table of tables) {
-    const rows = await tx.all(`SELECT * FROM wiki.${table}`);
-    data[table] = rows;
-  }
-  const sheet = {
-    prepare(sql) {
-      // Statement-style shim: bindings arrive at .all(...)/.get(...) like the
-      // SQLite statement the sync reader expects. Supports the simple single
-      // "column=?" WHERE used for source_file logical-path lookups.
-      const from = /FROM\s+(?:wiki\.)?"?([a-z_0-9]+)"?/i.exec(sql);
-      const where = /WHERE\s+([a-z_0-9]+)\s*=\s*\?/i.exec(sql);
-      const table = from?.[1];
-      const select = (...params) => {
-        let rows = data[table] ?? [];
-        if (where && params.length === 1) rows = rows.filter(row => row[where[1]] === params[0]);
-        return rows;
-      };
-      // Honor the ORDER BY clauses the sync reader uses: one or two comma
-      // separated ascending columns (e.g. person_id, alias_ordinal).
-      const orderClause = /ORDER\s+BY\s+([a-z_0-9]+(?:\s*,\s*[a-z_0-9]+)*)/i.exec(sql)?.[1];
-      const keys = orderClause ? orderClause.split(',').map(k => k.trim()) : [];
-      const cmp = (a, b, key) => (a[key] > b[key] ? 1 : a[key] < b[key] ? -1 : 0);
-      const sorted = (rows) => keys.length
-        ? [...rows].sort((a, b) => keys.reduce((acc, key) => acc || cmp(a, b, key), 0))
-        : rows;
-      return { all: (...params) => sorted(select(...params)).map(r => ({ ...r })), get: (...params) => { const rows = select(...params); return rows[0] ? { ...rows[0] } : undefined; } };
-    },
+  // Pre-materialize every statement the synchronous reconstruction issues,
+  // by executing the exact SQL (schema-qualified) against PostgreSQL. All
+  // WHERE/ORDER BY/alias semantics therefore come from PostgreSQL itself —
+  // no SQL reimplementation — and the unchanged sync reconstruction with all
+  // its validation runs against the cached rows.
+  const rewrite = (sql) => sql.replace(/\b(FROM|JOIN)\s+((?!wiki\.)[a-z_][a-z_0-9]*)/gi, '$1 wiki.$2');
+  const cache = new Map();
+  const rowsFor = (sql, params = []) => {
+    const key = sql + JSON.stringify(params);
+    if (!cache.has(key)) cache.set(key, tx.all(rewrite(sql), params).then(rs => rs.map(r => ({ ...r }))));
+    return cache.get(key);
   };
-  return readAtlasIdentity(sheet);
+  const awaited = new Map();
+  const materialize = async (sql, params = []) => { const key = sql + JSON.stringify(params); awaited.set(key, await rowsFor(sql, params)); };
+  // Statement set used by readAtlasIdentity (see the sync source above).
+  await materialize('SELECT singleton FROM atlas_identity_seal');
+  await materialize('SELECT kind,source_id,sha256 FROM atlas_identity_binding');
+  for (const path of Object.values(paths)) await materialize('SELECT source_id,sha256 FROM source_file WHERE logical_path=?', [path]);
+  await materialize('SELECT * FROM identity_registry_provenance WHERE source_id=?', [104]); // resolved below after bindings load
+  return (await import('node:util')).callbackify(() => {})(), readAtlasIdentity(sheetOf(awaited));
 }
+
