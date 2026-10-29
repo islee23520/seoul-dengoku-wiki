@@ -1,4 +1,3 @@
-import { readdir, readFile, writeFile } from 'node:fs/promises'
 import { spawnSync } from 'node:child_process'
 import { basename, dirname, extname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'

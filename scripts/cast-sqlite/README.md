@@ -158,11 +158,11 @@ npm run cast:query -- --db "$castDb" source --path lore/name-pools/values-cast.j
 
 ## 비공개 editorial·Soul 경계
 
-비공개 editorial·Soul의 실제 저장 위치는 `.omo/private/seoul-migration/sqlite-authority-20261021`이다. 파일은 mode `600`으로 유지하고 Git·공개 DB·공개 JSON·브라우저 번들·공개 로그에 넣지 않는다. 과거 `lore/editorial/Character-System-Contract.json`, `Soul-Assignments.json`, `Soul-Candidates.json` 등의 이름은 논리적 계약·출처 이름일 뿐 현재 물리 경로가 아니다.
-
+관계 검증기 `node lore/relations/validate.mjs --private-pg <connection-string>`는 공개 관계 자료와 `lore/editorial/seoul-narrative-census-events.json`의 비공개 event-ID ledger를 동일한 read-only PostgreSQL transaction에서 읽는다. 이 경로만 명시적으로 private capability를 주입한다. 인자 없는 검증은 private access를 허용하지 않아 `E_PRIVATE`로 실패하며, ledger를 파일·archive·환경 변수로 우회하지 않는다. 표준 출력은 집계 PASS만, 오류 출력은 오류만 담으며 ledger 본문·자격증명은 출력하지 않는다.
 공개 엔진에는 허용된 역량·숙련·특성·신체·질병·근거 서사만 투영한다. Soul, 역사 모티브, 비공개 basis/evidence, private profile 상태와 승인 원문을 함께 싣지 않는다. 공개에 허용된 hash·projection metadata와 비공개 원문은 구별한다.
 
 과거 excluded 경로 17개나 engine batch 9개 같은 수치는 당시 제외 계약의 기록이다. 현재 비공개 저장소 전체의 개수·완전성·권한 검사를 대신하지 않는다. 과거 검토 baseline이나 `batches=[]`, `approvals=[]`였던 장부도 새 서울 수여 승인으로 사용할 수 없다.
+
 
 ## 품질 문제와 역사 기록
 
