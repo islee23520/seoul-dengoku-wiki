@@ -15,13 +15,16 @@ import { readPortraitFamilyInputs, readPortraitFamilyInputsAsync } from './cast-
 import { readPersonDisposition, readPersonDispositionAsync } from './cast-sqlite/person-disposition.mjs'
 import { createReader } from './cast-sqlite/db-pg.mjs'
 
+
+async function readSnapshotTransaction(reader, importSnapshot, fn) {
+  return reader.transaction(fn, { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
+}
 export async function generatePortraitTokens(root) {
   const { root: stageRoot, writeFile } = await generatorStage(root)
   const tokenRoot = resolve(stageRoot, 'public/portrait-tokens')
   const detailRoot = resolve(stageRoot, 'public/person-details')
   const DERIVED = 'derived-proposal'
   const DERIVED_DATE = '20261019'
-
   const tokenDatabasePath = process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite')
   // PostgreSQL release sourcing: gender, family and disposition inputs share
   // one read-only snapshot transaction (WIKI_GENERATION_SNAPSHOT when the
