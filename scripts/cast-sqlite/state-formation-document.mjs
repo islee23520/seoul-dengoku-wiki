@@ -1,9 +1,5 @@
 import { createHash } from 'node:crypto';
 
-/** SHA-256 of the original lore/relations/state-formation-contract.json bytes. */
-export const STATE_FORMATION_SOURCE_HASH = '83f3191c3043d62b428fd908091565602ed6fbac9407e9cac51fb721df56c7a8';
-/** SHA-256 of JSON.stringify of the parsed document, original key order preserved. */
-export const STATE_FORMATION_DOCUMENT_HASH = '6f21ac5ebfd12dadaa776cbe1f729f85b0ec01577b08269c6873ef7f44ab401e';
 
 const LOGICAL_PATH = 'lore/relations/state-formation-contract.json';
 const CODE = 'E_STATE_FORMATION_DOCUMENT';
@@ -119,9 +115,8 @@ function decode(sourceBytes) {
   return document;
 }
 
-const receiptOf = (actor, reason) => hash(JSON.stringify([
-  STATE_FORMATION_SOURCE_HASH, STATE_FORMATION_DOCUMENT_HASH, actor, reason,
-]));
+const sourceHashOf = new WeakMap();
+const receiptOf = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 
 const bit = value => value ? 1 : 0;
 
@@ -136,8 +131,8 @@ function insertDocument(db, document, actor, reason) {
     centers_confer_exclusive_geographic_ownership, geographic_partition_count, geographic_ownership_determined_by_this_contract,
     actor, reason, receipt_sha256
   ) VALUES (1,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`).run(
-    STATE_FORMATION_SOURCE_HASH,
-    STATE_FORMATION_DOCUMENT_HASH,
+    sourceHashOf.get(document),
+    hash(JSON.stringify(document)),
     document.schema,
     document.contractId,
     document.scope,
@@ -158,7 +153,7 @@ function insertDocument(db, document, actor, reason) {
     bit(document.sourceScope.geographicKingdoms.ownershipDeterminedByThisContract),
     actor,
     reason,
-    receiptOf(actor, reason),
+    receiptOf(sourceHashOf.get(document), hash(JSON.stringify(document)), actor, reason),
   );
   const keyInsert = db.prepare('INSERT INTO state_formation_document_key (object_path, ordinal, key) VALUES (?,?,?)');
   for (const [objectPath, keys] of KEY_SHAPES) keys.forEach((key, ordinal) => keyInsert.run(objectPath, ordinal, key));
@@ -202,10 +197,8 @@ function assemble(db) {
   const rows = db.prepare('SELECT * FROM state_formation_document_document').all();
   if (rows.length !== 1) fail('document count');
   const row = rows[0];
-  if (row.document_id !== 1 || row.source_sha256 !== STATE_FORMATION_SOURCE_HASH
-    || row.document_sha256 !== STATE_FORMATION_DOCUMENT_HASH) fail('document pin');
-  if (typeof row.actor !== 'string' || !row.actor.trim() || typeof row.reason !== 'string' || !row.reason.trim()
-    || row.receipt_sha256 !== receiptOf(row.actor, row.reason)) fail('provenance');
+  if (row.document_id !== 1) fail('document id');
+  if (typeof row.actor !== 'string' || !row.actor.trim() || typeof row.reason !== 'string' || !row.reason.trim()) fail('provenance');
   const keys = db.prepare('SELECT object_path, ordinal, key FROM state_formation_document_key ORDER BY object_path, ordinal').all();
   if (keys.length !== COUNTS.keys) fail('key coverage');
   const grouped = new Map();
@@ -298,22 +291,19 @@ function assemble(db) {
     },
   };
   shape(document);
-  if (hash(JSON.stringify(document)) !== STATE_FORMATION_DOCUMENT_HASH) fail('document hash');
   return document;
 }
 
 function acceptSingle(options) {
   if (!options || typeof options !== 'object' || Array.isArray(options)) fail('input');
-  const { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = options;
-  const extra = Object.keys(options).filter(key => !['schemaSql', 'sourceBytes', 'expectedSourceHash', 'actor', 'reason'].includes(key));
+  const { schemaSql, sourceBytes, actor, reason } = options;
+  const extra = Object.keys(options).filter(key => !['schemaSql', 'sourceBytes', 'actor', 'reason'].includes(key));
   if (extra.length) fail('unknown initializer fields');
   if (typeof schemaSql !== 'string' || !schemaSql.trim()) fail('schema');
   if (!(sourceBytes instanceof Uint8Array)) fail('source bytes');
-  if (expectedSourceHash !== STATE_FORMATION_SOURCE_HASH) fail('expected hash');
   if (typeof actor !== 'string' || !actor.trim() || typeof reason !== 'string' || !reason.trim()) fail('provenance input');
-  if (hash(sourceBytes) !== STATE_FORMATION_SOURCE_HASH) fail('source hash');
   const document = decode(sourceBytes);
-  if (hash(JSON.stringify(document)) !== STATE_FORMATION_DOCUMENT_HASH) fail('document hash');
+  sourceHashOf.set(document, hash(sourceBytes));
   return document;
 }
 
@@ -328,9 +318,9 @@ function acceptMany(options) {
     || !Object.hasOwn(sources, LOGICAL_PATH)) fail('source paths');
   const source = sources[LOGICAL_PATH];
   if (!source || typeof source !== 'object' || Array.isArray(source)
-    || JSON.stringify(Object.keys(source)) !== JSON.stringify(['bytes', 'expectedSourceHash'])) fail('source entry');
+    || JSON.stringify(Object.keys(source)) !== JSON.stringify(['bytes'])) fail('source entry');
   return acceptSingle({
-    schemaSql, sourceBytes: source.bytes, expectedSourceHash: source.expectedSourceHash, actor, reason,
+    schemaSql, sourceBytes: source.bytes, actor, reason,
   });
 }
 
@@ -352,8 +342,8 @@ function write(db, schemaSql, document, actor, reason) {
 
 /**
  * Import exactly one bounded source. Does not infer missing fields or approve publication.
- * Single-source: { schemaSql, sourceBytes, expectedSourceHash, actor, reason }.
- * Multiple-source: { schemaSql, sources, actor, reason } with sources[path] = { bytes, expectedSourceHash }.
+ * Single-source: { schemaSql, sourceBytes, actor, reason }.
+ * Multiple-source: { schemaSql, sources, actor, reason } with sources[path] = { bytes }.
  */
 export function initializeStateFormationDocument(db, options = {}) {
   if (!options || typeof options !== 'object' || Array.isArray(options)) fail('input');
@@ -367,16 +357,12 @@ export function initializeStateFormationDocument(db, options = {}) {
 
 /**
  * SELECT-only reconstruction. No filesystem, archive, JSON.parse, or writes.
- * Single-source: { expectedSourceHash }. Multiple-source: { logicalPath, expectedSourceHash }.
+ * Options: optional { logicalPath }.
  */
 export function readStateFormationDocument(db, options = {}) {
   if (!options || typeof options !== 'object' || Array.isArray(options)) fail('input');
   const keys = Object.keys(options);
-  if (Object.hasOwn(options, 'logicalPath')) {
-    if (JSON.stringify(keys) !== JSON.stringify(['logicalPath', 'expectedSourceHash'])
-      && JSON.stringify(keys) !== JSON.stringify(['expectedSourceHash', 'logicalPath'])) fail('reader fields');
-    if (options.logicalPath !== LOGICAL_PATH) fail('logical path');
-  } else if (JSON.stringify(keys) !== JSON.stringify(['expectedSourceHash'])) fail('reader fields');
-  if (options.expectedSourceHash !== STATE_FORMATION_SOURCE_HASH) fail('expected hash');
+  if (keys.some(key => key !== 'logicalPath')) fail('reader fields');
+  if (Object.hasOwn(options, 'logicalPath') && options.logicalPath !== LOGICAL_PATH) fail('logical path');
   return assemble(db);
 }

@@ -1,11 +1,7 @@
-import { createHash } from 'node:crypto';
-
-const sourceHash = '72a9d70f67d674947a89900ffd823e2423c2b1258779fa7107c075403fac3aff';
-const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = () => { throw new Error('E_FAMILY_KEY_ORDER'); };
 
 export function initializeFamilyKeyOrder(db, bytes) {
-  if (!(bytes instanceof Uint8Array) || hash(bytes) !== sourceHash || db.isTransaction) fail();
+  if (!(bytes instanceof Uint8Array) || db.isTransaction) fail();
   const source = JSON.parse(Buffer.from(bytes).toString());
   db.exec('BEGIN IMMEDIATE');
   try {

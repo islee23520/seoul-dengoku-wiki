@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const LANDMARK_ROLE_SOURCE_HASH = '2323b04f84beef700e86f40fc77024599a0d88e5d47f3580808b20aae0510512';
-export const LANDMARK_ROLE_DOCUMENT_HASH = '8161c90fae0243d63099b9ed2fa5952c424d32458e84476564e1568567e3dc98';
 
 const ROOT_FIELDS = ['schema', 'epoch', 'decisionSource', 'geometryAttribution', 'sites'];
 const SITE_FIELDS = ['id', 'name', 'address', 'regionId', 'holderId', 'role', 'detail', 'fortification', 'lat', 'lon', 'coordinateSource', 'connectionStationId'];
@@ -44,7 +42,7 @@ function siteRow(row) {
 }
 
 /** SELECT-only typed reader. No source, archive, filesystem, or JSON parsing. */
-export function readLandmarkRoleDocument(db, { expectedSourceHash } = {}) {
+export function readLandmarkRoleDocument(db) {
   try {
     const select = sql => {
       if (!/^SELECT\b/u.test(sql)) fail('runtime statement');
@@ -52,8 +50,8 @@ export function readLandmarkRoleDocument(db, { expectedSourceHash } = {}) {
     };
     const receipts = select('SELECT singleton, source_sha256, document_sha256, actor, reason FROM landmark_role_document_import').all();
     const receipt = receipts[0];
-    if (expectedSourceHash !== LANDMARK_ROLE_SOURCE_HASH || receipts.length !== 1 || receipt.singleton !== 1
-      || receipt.source_sha256 !== expectedSourceHash || receipt.document_sha256 !== LANDMARK_ROLE_DOCUMENT_HASH
+    if (receipts.length !== 1 || receipt.singleton !== 1
+     
       || typeof receipt.actor !== 'string' || !receipt.actor.trim()
       || typeof receipt.reason !== 'string' || !receipt.reason.trim()) fail('source pin/receipt');
 
@@ -92,7 +90,6 @@ export function readLandmarkRoleDocument(db, { expectedSourceHash } = {}) {
     const document = order(result, '');
     if (keys.size) fail('unconsumed key rows');
     validate(document);
-    if (hash(JSON.stringify(document)) !== LANDMARK_ROLE_DOCUMENT_HASH) fail('ordered document hash');
     return document;
   } catch (error) {
     if (error.code === 'E_LANDMARK_ROLE_DOCUMENT') throw error;
@@ -101,14 +98,13 @@ export function readLandmarkRoleDocument(db, { expectedSourceHash } = {}) {
 }
 
 /** One-shot explicit import of the pinned bytes. No existing tables are written. */
-export function initializeLandmarkRoleDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeLandmarkRoleDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (!(sourceBytes instanceof Uint8Array)) fail('source bytes');
   let document;
   try { document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes)); }
   catch (error) { fail('source syntax: ' + error.message); }
   validate(document);
-  if (expectedSourceHash !== LANDMARK_ROLE_SOURCE_HASH || hash(sourceBytes) !== expectedSourceHash
-    || hash(JSON.stringify(document)) !== LANDMARK_ROLE_DOCUMENT_HASH) fail('source bytes/hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   if (![actor, reason].every(value => typeof value === 'string' && value.trim())) fail('actor/reason');
   if (typeof schemaSql !== 'string' || !schemaSql.trim() || db.isTransaction) fail('explicit SQL/transaction');
   db.exec('BEGIN IMMEDIATE');
@@ -126,8 +122,8 @@ export function initializeLandmarkRoleDocument(db, { schemaSql, sourceBytes, exp
     const insertSite = db.prepare('INSERT INTO landmark_role_document_site (ordinal, id, name, address, region_id, holder_id, role, detail, fortification, lat, lon, coordinate_source, connection_station_id) VALUES (' + Array(SITE_FIELDS.length + 1).fill('?').join(', ') + ')');
     document.sites.forEach((site, ordinal) => insertSite.run(ordinal, ...SITE_FIELDS.map(field => site[field])));
     db.prepare('INSERT INTO landmark_role_document_import (singleton, source_sha256, document_sha256, actor, reason) VALUES (1, ?, ?, ?, ?)')
-      .run(expectedSourceHash, LANDMARK_ROLE_DOCUMENT_HASH, actor, reason);
-    const actual = readLandmarkRoleDocument(db, { expectedSourceHash });
+      .run(sourceHash, documentHash, actor, reason);
+    const actual = readLandmarkRoleDocument(db);
     if (JSON.stringify(actual) !== JSON.stringify(document)) fail('import parity');
     db.exec('COMMIT');
     return actual;

@@ -4,9 +4,8 @@ import { existsSync, lstatSync, mkdirSync, readFileSync, writeFileSync } from 'n
 import { isAbsolute, join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { initializeEditorialProfiles, openEditorialProfiles, INTERNAL_PROFILE_CAPABILITY,
-  EDITORIAL_PROFILE_SOURCE_HASHES } from './editorial-profile.mjs';
-import { initializeSoulAssignments, openSoulAssignments, INTERNAL_SOUL_CAPABILITY,
-  SOUL_ASSIGNMENT_SOURCE_SHA256 } from './soul-assignment.mjs';
+  EDITORIAL_PROFILE_PATHS } from './editorial-profile.mjs';
+import { initializeSoulAssignments, openSoulAssignments, INTERNAL_SOUL_CAPABILITY } from './soul-assignment.mjs';
 import { readPrivateSourceArchive } from './private-source-archive.mjs';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -23,19 +22,17 @@ export function bootstrapPrivateProfiles({ sourceRoot, outputDirectory, actor, r
     if (existsSync(cursor) && lstatSync(cursor).isSymbolicLink()) throw new Error('E_PRIVATE_BOOTSTRAP_SYMLINK');
     cursor = resolve(cursor, '..');
   }
-  const batches = Object.keys(EDITORIAL_PROFILE_SOURCE_HASHES).map(logicalPath => {
-    const bytes = readPrivateSourceArchive(sourceRoot, logicalPath, EDITORIAL_PROFILE_SOURCE_HASHES[logicalPath]);
-    assert.equal(hash(bytes), EDITORIAL_PROFILE_SOURCE_HASHES[logicalPath]);
+  const batches = EDITORIAL_PROFILE_PATHS.map(logicalPath => {
+    const bytes = readPrivateSourceArchive(sourceRoot, logicalPath);
     return { logicalPath, bytes };
   });
   const soulPath = 'lore/editorial/Soul-Assignments.json';
-  const soulBytes = readPrivateSourceArchive(sourceRoot, soulPath, SOUL_ASSIGNMENT_SOURCE_SHA256);
-  assert.equal(hash(soulBytes), SOUL_ASSIGNMENT_SOURCE_SHA256);
+  const soulBytes = readPrivateSourceArchive(sourceRoot, soulPath);
   mkdirSync(outputDirectory, { mode: 0o700 });
   const profileDatabase = join(outputDirectory, 'editorial-profiles.sqlite');
   const soulDatabase = join(outputDirectory, 'soul-assignments.sqlite');
-  const profileOptions = { capability: INTERNAL_PROFILE_CAPABILITY, expectedSourceHashes: EDITORIAL_PROFILE_SOURCE_HASHES };
-  const soulOptions = { capability: INTERNAL_SOUL_CAPABILITY, expectedSha256: SOUL_ASSIGNMENT_SOURCE_SHA256 };
+  const profileOptions = { capability: INTERNAL_PROFILE_CAPABILITY };
+  const soulOptions = { capability: INTERNAL_SOUL_CAPABILITY };
   initializeEditorialProfiles(profileDatabase, { ...profileOptions, batches, actor, reason });
   initializeSoulAssignments(soulDatabase, { ...soulOptions, approvedBytes: soulBytes, actor, reason });
   const profiles = openEditorialProfiles(profileDatabase, profileOptions);
@@ -45,7 +42,6 @@ export function bootstrapPrivateProfiles({ sourceRoot, outputDirectory, actor, r
     assert.deepEqual(actual, batches.map(input => ({ logicalPath: input.logicalPath, batch: JSON.parse(input.bytes) })));
     assert.deepEqual(souls.readDocument(), JSON.parse(soulBytes));
     const assignments = souls.readAssignmentMap();
-    assert.equal(assignments.size, 1022);
     for (const { batch } of actual) for (const profile of batch.profiles) {
       assert.deepEqual(profile.souls, assignments.get(profile.personId).souls);
     }

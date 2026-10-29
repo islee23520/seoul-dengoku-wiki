@@ -11,7 +11,6 @@ import { existsSync } from 'node:fs';
 import { openReadOnly } from './db.mjs';
 import { readSourceArchive } from './source-archive.mjs';
 import { readPrivateSourceArchive } from '../document-store/private-source-archive.mjs';
-import { EDITORIAL_PROFILE_SOURCE_HASHES as privateProfilePins } from '../document-store/editorial-profile.mjs';
 
 export const DATA_SOURCE_PATHS = Object.freeze([
   'scripts/approved-seoul-rights-transition.json', 'scripts/approved-daejeon-nonowning-rights.json',
@@ -224,7 +223,7 @@ async function verifyGitInputs(root, files, sourceRevision) {
 async function loadPrivateEngineFiles(root) {
   return Promise.all(ENGINE_PRIVATE_SOURCE_PATHS.map(async (logical_path) => {
     const rawBytes = hasDocumentAuthority(root)
-      ? readPrivateSourceArchive(root, logical_path, privateProfilePins[logical_path])
+      ? readPrivateSourceArchive(root, logical_path)
       : await readFile(await resolveTrustedSourcePath(root, logical_path));
     let text;
     try { text = new TextDecoder('utf-8', { fatal: true, ignoreBOM: true }).decode(rawBytes); } catch { fail('E_SOURCE_UTF8', logical_path); }

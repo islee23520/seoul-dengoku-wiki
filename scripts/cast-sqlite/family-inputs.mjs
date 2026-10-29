@@ -2,20 +2,10 @@ import { readPersonBirthdayInputs } from './person-inputs.mjs';
 import { orderFamilyNodes } from './family-key-order.mjs';
 
 const path = name => `lore/name-pools/${name}.json`;
-// Bounded to this imported source identity. In particular, this version's import
-// envelope has one path-only entry and authored timelines have no date field.
-// Neither fact is represented by current-family.sql; accepting other hashes
-// would silently invent those fields. Callers may assert these same pins only.
-export const FAMILY_INPUT_SOURCE_HASHES = Object.freeze(Object.fromEntries([
-  ['person-id-registry', 'c02b435da25b09a2c388b694a656242e150de9d169da9fb59c21f6880ac4a63a'],
-  ['cast-birthdays', '195b524daf1592beec030f4ab500b5d99056d388ce34662cfedd9db68d26101b'],
-  ['cast-birth-cohorts', 'b921694843a466dd807572b880a3b5019cf7892df3f1a3edbb5fcdb63bc182c7'],
-  ['cast-family-trees', '72a9d70f67d674947a89900ffd823e2423c2b1258779fa7107c075403fac3aff'],
-  ['diaspora-family-lineages', '20efd07a6e8ec280974324e1ac7c52f535f9019d709bb1aeeea7b67f8d29add3'],
-  ['cast-family-role-decisions', 'ca3cce2a0ace5457cfa2f77e07e7e190c6afe226910f9127c8820511053a23f1'],
-  ['cast-hangnyeol', 'a3adc3982ca14837d473cae4e88ad059dfd8c57247db4d8afb8228dd414aa3b4'],
-  ['clan-hangnyeol-tables', 'a46b1428b5050f529e82eed94b637f25b6bf6f5c4bed0854bae5bdcb8b3e468c'],
-].map(([name, hash]) => [path(name), hash])));
+export const FAMILY_INPUT_PATHS = Object.freeze([
+  'person-id-registry', 'cast-birthdays', 'cast-birth-cohorts', 'cast-family-trees',
+  'diaspora-family-lineages', 'cast-family-role-decisions', 'cast-hangnyeol', 'clan-hangnyeol-tables',
+].map(path));
 
 const fail = (code, detail) => { throw Object.assign(new Error(`${code}: ${detail}`), { code }); };
 const coverage = detail => fail('E_FAMILY_INPUT_COVERAGE', detail);
@@ -23,7 +13,7 @@ const ref = row => ({ path: row.source_path, ...(row.source_anchor === null ? {}
 
 // Caller owns the connection. No source documents, generic JSON tree, or file IO.
 // The return value is loadCastFamilyTrees' graph, not the full person input bundle.
-export function readCastFamilyTreeInputs(db, { expectedSourceHashes = FAMILY_INPUT_SOURCE_HASHES, preserveSourceOrder = false } = {}) {
+export function readCastFamilyTreeInputs(db, { preserveSourceOrder = false } = {}) {
   const rows = (sql, ...args) => {
     try { return db.prepare(sql).all(...args); }
     catch (cause) {
@@ -32,11 +22,10 @@ export function readCastFamilyTreeInputs(db, { expectedSourceHashes = FAMILY_INP
     }
   };
   const sources = new Map();
-  for (const [logicalPath, hash] of Object.entries(FAMILY_INPUT_SOURCE_HASHES)) {
-    if (expectedSourceHashes?.[logicalPath] !== hash) fail('E_FAMILY_INPUT_STALE', logicalPath);
-    const source = rows('SELECT source_id,sha256,media_type FROM source_file WHERE logical_path=?', logicalPath);
+  for (const logicalPath of FAMILY_INPUT_PATHS) {
+    const source = rows('SELECT source_id,media_type FROM source_file WHERE logical_path=?', logicalPath);
     if (source.length !== 1) fail('E_FAMILY_INPUT_MISSING', logicalPath);
-    if (source[0].sha256 !== hash || source[0].media_type !== 'application/json') fail('E_FAMILY_INPUT_STALE', logicalPath);
+    if (source[0].media_type !== 'application/json') fail('E_FAMILY_INPUT_MEDIA_TYPE', logicalPath);
     sources.set(logicalPath, source[0].source_id);
   }
   const treeSource = sources.get(path('cast-family-trees'));
@@ -48,7 +37,7 @@ export function readCastFamilyTreeInputs(db, { expectedSourceHashes = FAMILY_INP
   }
   const tree = rows('SELECT tree_id,collapse_year,reference_date,status,json_pointer FROM family_tree WHERE source_id=?', treeSource);
   if (metadata.length !== 4 || tree.length !== 1 || tree[0].tree_id !== 'cast-family-trees' || tree[0].collapse_year !== 2030 || tree[0].reference_date !== '2126-12-31' || tree[0].status !== 'authored' || tree[0].json_pointer !== '') fail('E_FAMILY_INPUT_SCHEMA_GAP', 'tree metadata');
-  const { birthdayRoster, birthdaysById } = readPersonBirthdayInputs(db, { expectedSourceHashes });
+  const { birthdayRoster, birthdaysById } = readPersonBirthdayInputs(db);
   const people = new Map(birthdayRoster.map(person => [person.id, person]));
   const ordered = (values, pointer) => {
     values.sort((a, b) => {
@@ -60,25 +49,19 @@ export function readCastFamilyTreeInputs(db, { expectedSourceHashes = FAMILY_INP
     if (pointer && values.some((row, i) => row.json_pointer !== `/${pointer}/${i}`)) coverage(pointer);
     return values;
   };
-  // Counts bind completeness to the pinned source, including terminal rows that
-  // an ordinal gap check alone cannot detect. No generic source tree is needed.
-  const typed = (table, source, count) => {
-    const values = rows(`SELECT * FROM ${table} WHERE source_id=?`, source);
-    if (values.length !== count) coverage(table);
-    return values;
-  };
-  const treeRefs = ordered(typed('family_tree_source', treeSource, 4), 'sourceRefs');
-  const nodeRows = ordered(typed('family_node', treeSource, 6025), 'nodes');
-  const nodeRefs = typed('family_node_source', treeSource, 22908);
-  const times = typed('family_node_timeline', treeSource, 6026);
-  const edgeRows = ordered(typed('family_edge', treeSource, 5008), 'edges');
-  const edgeRefs = typed('family_edge_source', treeSource, 9917);
-  const members = ordered(typed('diaspora_member', diasporaSource, 8));
-  const lineages = ordered(typed('diaspora_lineage', diasporaSource, 2), 'lineages');
-  const events = typed('diaspora_member_event', diasporaSource, 16);
-  const parents = ordered(typed('diaspora_member_parent', diasporaSource, 8));
-  typed('family_node', diasporaSource, 8);
-  typed('family_edge', diasporaSource, 8);
+  // Row sets are read as stored; completeness is checked structurally (ordinals,
+  // orphan provenance, endpoints) rather than against fixed row counts.
+  const typed = (table, source) => rows(`SELECT * FROM ${table} WHERE source_id=?`, source);
+  const treeRefs = ordered(typed('family_tree_source', treeSource), 'sourceRefs');
+  const nodeRows = ordered(typed('family_node', treeSource), 'nodes');
+  const nodeRefs = typed('family_node_source', treeSource);
+  const times = typed('family_node_timeline', treeSource);
+  const edgeRows = ordered(typed('family_edge', treeSource), 'edges');
+  const edgeRefs = typed('family_edge_source', treeSource);
+  const members = ordered(typed('diaspora_member', diasporaSource));
+  const lineages = ordered(typed('diaspora_lineage', diasporaSource), 'lineages');
+  const events = typed('diaspora_member_event', diasporaSource);
+  const parents = ordered(typed('diaspora_member_parent', diasporaSource));
   const usedRefs = new Set(), usedTimes = new Set(), usedEdgeRefs = new Set();
   const group = (values, key) => {
     const index = new Map();
@@ -150,7 +133,7 @@ export function readCastFamilyTreeInputs(db, { expectedSourceHashes = FAMILY_INP
   if (usedEvents.size !== events.length || usedParents.size !== parents.length) coverage('diaspora coverage');
   const ids = new Set(nodes.map(node => node.id));
   const personIds = nodes.filter(node => node.personId !== null).map(node => node.personId);
-  if (ids.size !== nodes.length || new Set(personIds).size !== 1022 || personIds.length !== 1022 || birthdayRoster.some(person => !personIds.includes(person.id))) coverage('issued identities');
+  if (ids.size !== nodes.length || new Set(personIds).size !== personIds.length || personIds.length !== birthdayRoster.length || birthdayRoster.some(person => !personIds.includes(person.id))) coverage('issued identities');
   if (new Set(edges.map(edge => edge.id)).size !== edges.length || edges.some(edge => !ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to)) coverage('edge endpoints');
   return { schemaVersion: 1, collapseYear: tree[0].collapse_year, referenceDate: tree[0].reference_date, status: tree[0].status,
     sourceRefs: treeRefs.map(row => ({ path: row.source_path })), nodes, edges, imports: [{ path: path('diaspora-family-lineages') }] };

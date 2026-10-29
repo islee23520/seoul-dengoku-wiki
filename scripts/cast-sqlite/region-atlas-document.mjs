@@ -1,8 +1,6 @@
 import { createHash } from 'node:crypto';
 
 // Historical bytes are preserved; this module grants no current map admission.
-export const REGION_ATLAS_SOURCE_HASH = '89d559fc31ce0644e331c6a54b8cfc997bf482b05f7c940694ea68f4f304fdf1';
-export const REGION_ATLAS_OBJECT_HASH = '9bfacf21cd30d659182988f201f3603be01f1c0ee7eacedb2fd1b1f0111281e7';
 const PREFIX = 'window.SEOUL_REGION_ATLAS=';
 const SUFFIX = ';\n';
 const P = 'region_atlas_document_';
@@ -931,19 +929,18 @@ function tableNames() {
 }
 function options(input, keys) {
   if (!object(input) || Object.keys(input).length !== keys.length || keys.some(k=>!Object.hasOwn(input,k))) fail('explicit exact options');
-  if (input.expectedSourceHash !== REGION_ATLAS_SOURCE_HASH) fail('expected source pin');
 }
 /** One-shot import. JSON is parsed, never evaluated; numeric spellings go into named decimal columns. */
 export function initializeRegionAtlasDocument(db, input = {}) {
-  options(input,['schemaSql','sourceBytes','expectedSourceHash','actor','reason']);
+  options(input,['schemaSql','sourceBytes','actor','reason']);
   const {schemaSql,sourceBytes,actor,reason}=input;
   if (![schemaSql,actor,reason].every(v=>typeof v==='string' && v.trim()) || !(sourceBytes instanceof Uint8Array)) fail('schema/bytes/provenance');
   if (db.isTransaction) fail('active transaction');
-  if (hash(sourceBytes)!==REGION_ATLAS_SOURCE_HASH) fail('actual source byte pin');
+  const sourceHash = hash(sourceBytes);
   const source = new TextDecoder('utf-8',{fatal:true}).decode(sourceBytes);
   if (!source.startsWith(PREFIX) || !source.endsWith(SUFFIX)) fail('fixed assignment wrapper');
   const body=source.slice(PREFIX.length,-SUFFIX.length), data=JSON.parse(body);
-  if (hash(JSON.stringify(data))!==REGION_ATLAS_OBJECT_HASH) fail('ordered object pin');
+  const objectHash = hash(JSON.stringify(data));
   // Lex only JSON string and number tokens; quoted digits never become numeric spellings.
   const numbers = [];
   for (const match of body.matchAll(/"(?:\\.|[^"\\])*"|-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?/g)) if (match[0][0] !== '"') numbers.push(match[0]);
@@ -992,17 +989,17 @@ export function initializeRegionAtlasDocument(db, input = {}) {
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
-    insert('receipt',{id:1,source_sha256:REGION_ATLAS_SOURCE_HASH,object_sha256:REGION_ATLAS_OBJECT_HASH,actor,reason});
+    insert('receipt',{id:1,source_sha256:sourceHash,object_sha256:objectHash,actor,reason});
     put(data,'document',0,0);
-    if(readRegionAtlasDocument(db,{expectedSourceHash:REGION_ATLAS_SOURCE_HASH})!==source)fail('transaction byte parity');
+    if(readRegionAtlasDocument(db)!==source)fail('transaction byte parity');
     db.exec('COMMIT');
     return Object.fromEntries(tableNames().map(n=>[n,db.prepare('SELECT count(*) AS n FROM '+P+n).get().n]));
   }catch(error){if(db.isTransaction)db.exec('ROLLBACK');throw error;}
 }
 function reconstruct(db,input) {
-  options(input,['expectedSourceHash']);
+  if (input !== undefined && (!object(input) || Object.keys(input).length)) fail('explicit exact options');
   const receipts=db.prepare('SELECT * FROM '+P+'receipt').all(),r=receipts[0];
-  if(receipts.length!==1||r.id!==1||r.source_sha256!==REGION_ATLAS_SOURCE_HASH||r.object_sha256!==REGION_ATLAS_OBJECT_HASH||typeof r.actor!=='string'||!r.actor.trim()||typeof r.reason!=='string'||!r.reason.trim())fail('receipt/pins');
+  if(receipts.length!==1||r.id!==1||!/^[0-9a-f]{64}$/.test(r.source_sha256??'')||!/^[0-9a-f]{64}$/.test(r.object_sha256??'')||typeof r.actor!=='string'||!r.actor.trim()||typeof r.reason!=='string'||!r.reason.trim())fail('receipt');
   const groups=new Map();
   for(const name of tableNames()) {
     const parents=new Map();
@@ -1045,11 +1042,11 @@ function reconstruct(db,input) {
   const roots=take('document',0);if(roots.length!==1)fail('document root');
   const result=get('document',roots[0]);
   if([...groups.values()].some(g=>g.size))fail('extra/unconsumed rows');
-  if(hash(JSON.stringify(result.value))!==REGION_ATLAS_OBJECT_HASH)fail('independent full ordered object pin');
+  if(hash(JSON.stringify(result.value))!==r.object_sha256)fail('stored ordered object digest');
   const source=PREFIX+result.text+SUFFIX;
-  if(hash(source)!==REGION_ATLAS_SOURCE_HASH)fail('independent complete byte pin');
+  if(hash(source)!==r.source_sha256)fail('stored complete byte digest');
   return {data:result.value,source};
 }
-/** SELECT-only, no filesystem or JSON parser; verifies all stored rows against both fixed pins. */
+/** SELECT-only, no filesystem or JSON parser; verifies stored rows against the stored receipt digests. */
 export function readRegionAtlasDocument(db,input={}) { return reconstruct(db,input).source; }
 export function readRegionAtlasData(db,input={}) { return reconstruct(db,input).data; }

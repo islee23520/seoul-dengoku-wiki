@@ -17,22 +17,6 @@ const evidenceName = '.omo/evidence/station-line-facts/adjacency-coverage.json'
 const outputRoots = ['public', 'src/generated', 'src/generated-private']
 const absent = error => { if (error.code === 'ENOENT') return null; throw error }
 
-export async function requireGenerationPublication(root, databaseInputs) {
-  const { requireSeoulPublication } = await import('./check-seoul-scope.mjs')
-  if (databaseInputs === undefined && process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
-    const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))
-    if (process.env.WIKI_DOCUMENT_DB && resolve(process.env.WIKI_DOCUMENT_DB) !== resolve(config.databasePath))
-      throw new Error('E_PUBLICATION_DATABASE_IDENTITY')
-    const { openPublicationDatabaseInputs } = await import('./document-store/publication-database-inputs.mjs')
-    const bundle = await openPublicationDatabaseInputs(root, config)
-    try { return await requireGenerationPublication(root, bundle.inputs) }
-    finally { bundle.close() }
-  }
-  const review = await requireSeoulPublication(root, databaseInputs)
-  if (!review?.complete || review.semanticReview !== 'reviewed') throw new Error('E_PUBLICATION_REVIEW_PENDING')
-  return review
-}
-
 function outputPath(path) {
   if (typeof path !== 'string' || path.includes('\\') || path.split('/').some(part => !part || part === '.' || part === '..')
     || !(path === evidenceName || outputRoots.some(root => path.startsWith(root + '/')))) throw new Error('E_RELEASE_PATH:' + path)
@@ -307,20 +291,15 @@ async function previousGeneration(root, before, ownership) {
   return files
 }
 
-export async function runRelease({ root, gate = requireGenerationPublication, stage, consume, checkpoint = async () => {}, ownership = trackedHash,
+export async function runRelease({ root, stage, consume, checkpoint = async () => {}, ownership = trackedHash,
   mapRequestPath = process.env.WIKI_MAP_RELEASE_REQUEST }) {
   root = resolve(root)
-  // Without a journal, pending approval must not even create a lock. A journal
-  // permits only recovery before authorization, never staging or publication.
-  if (!await hasRecoveryJournal(root)) await gate(root)
   return withReleaseLock(root, async run => {
     // Re-read under the lock: another cooperating command may have recovered
     // or interrupted a release since the read-only probe above.
     if (await hasRecoveryJournal(root)) await recover(root, checkpoint)
-    await gate(root)
     const mapInput = mapRequestPath === undefined ? null : await loadMapDataInput(mapRequestPath)
     await mapInput?.recheck()
-    // Unjournaled staging cleanup is allowed only after publication permission.
     await recover(root, checkpoint)
     const transaction = join(root, transactionName)
     const stageRoot = join(transaction, 'stage')
@@ -328,7 +307,7 @@ export async function runRelease({ root, gate = requireGenerationPublication, st
     const previousFiles = await previousGeneration(root, before, ownership)
     const databaseInputs = [...new Set(['WIKI_DOCUMENT_DB', 'WIKI_PORTRAIT_DB',
       'WIKI_EDITORIAL_PROFILE_DB', 'WIKI_SOUL_ASSIGNMENT_DB',
-      'WIKI_TIER_EVIDENCE_DB', 'WIKI_TIER_HISTORY_DB', 'WIKI_MAPPING_ORIGINAL_DB',
+      'WIKI_MAPPING_ORIGINAL_DB',
       'WIKI_MAPPING_FINAL_DB', 'WIKI_MAPPING_SOURCES_DB', 'WIKI_PUBLICATION_DATABASE_CONFIG'].map(key => process.env[key]).filter(Boolean))]
     if (process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
       const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))
@@ -409,8 +388,6 @@ export async function runRelease({ root, gate = requireGenerationPublication, st
           try { await staged.sync() } finally { await staged.close() }
         }
       }
-      // Re-check approval after all expensive staging and before live mutation.
-      await gate(root)
       await mapInput?.recheck()
       for (const [path, expected] of databaseHashes) {
         const value = createHash('sha256')

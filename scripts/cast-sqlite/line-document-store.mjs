@@ -3,9 +3,9 @@ import { createHash } from 'node:crypto';
 import { withTransaction } from './db.mjs';
 import { mapTextCorpusLines } from './text-corpus-lines.mjs';
 import { TEXT_LINE_SOURCE_PATHS } from './text-corpus-manifest.mjs';
-import { ADDITIONAL_LINE_SOURCE_HASHES } from './additional-line-sources.mjs';
+import { ADDITIONAL_LINE_SOURCE_PATHS } from './additional-line-sources.mjs';
 
-const paths = new Set([...TEXT_LINE_SOURCE_PATHS, ...Object.keys(ADDITIONAL_LINE_SOURCE_HASHES), 'scripts/gurps-cast.mjs', 'scripts/lore-json-render.mjs']);
+const paths = new Set([...TEXT_LINE_SOURCE_PATHS, ...ADDITIONAL_LINE_SOURCE_PATHS, 'scripts/gurps-cast.mjs', 'scripts/lore-json-render.mjs']);
 const media = { markdown: 'text/markdown', csv: 'text/csv', 'javascript-data': 'text/javascript' };
 const fail = (code, detail) => { throw Object.assign(new Error(`${code}: ${detail}`), { code }); };
 const hash = text => createHash('sha256').update(text).digest('hex');

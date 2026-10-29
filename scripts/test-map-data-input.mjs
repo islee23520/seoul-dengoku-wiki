@@ -19,7 +19,6 @@ const mapperRevision = execFileSync('git', ['-C', mapperRoot, 'rev-parse', 'HEAD
 const { createReleaseManifest } = await import(pathToFileURL(join(mapperRoot, 'scripts/janseon/release-manifest.mjs')))
 const { semanticDigest } = await import(pathToFileURL(join(mapperRoot, 'scripts/janseon/canonical.mjs')))
 const sha = bytes => createHash('sha256').update(bytes).digest('hex')
-const gate = async () => ({ complete: true, semanticReview: 'reviewed' })
 const ref = domain => ({ domain, datasetId: 'synthetic:' + domain, editionId: 'one' })
 
 async function fixture(t) {
@@ -121,9 +120,22 @@ async function fixture(t) {
   const requestPath = join(root, 'request.json'); await put(requestPath, JSON.stringify(request))
   const liveRoot = join(root, 'wiki'); await put(join(liveRoot, 'public/opening-territories.json'), 'old territories')
   await put(join(liveRoot, 'public/underground-detail.json'), 'old underground')
-  const options = {
-    root: liveRoot, gate, mapRequestPath: requestPath, ownership: async (_, path) =>
-      path === 'public/opening-territories.json' ? sha('old territories') : null
+  const options = { root: liveRoot, mapRequestPath: requestPath, ownership: async (_, path) =>
+    path === 'public/opening-territories.json' ? sha('old territories') : null }
+  const reseal = async () => {
+    for (const member of manifest.semantic.members) {
+      const bytes = await readFile(join(releaseRoot, member.path))
+      member.rawSha256 = sha(bytes); member.sizeBytes = bytes.length
+    }
+    budget.members = manifest.semantic.members.map(m => ({ path: m.path, maxBytes: m.sizeBytes }))
+    budget.maxTotalBytes = manifest.semantic.members.reduce((n, m) => n + m.sizeBytes, 0)
+    manifest.provenance.budgetReceipt = await store('budget', canonicalEncode(budget))
+    Object.assign(manifest, createReleaseManifest({ semantic: manifest.semantic, provenance: manifest.provenance }, { expectedTargets: ['wiki', 'game'], budget }))
+    const bytes = JSON.stringify(manifest)
+    await put(join(releaseRoot, 'release-manifest.json'), bytes)
+    Object.assign(request.lock, { mapReleaseId: manifest.mapReleaseId, deliveryReceiptId: manifest.deliveryReceiptId })
+    request.manifestSha256 = sha(bytes)
+    await put(requestPath, JSON.stringify(request))
   }
   const reseal = async () => {
     const graph = await catalogWorldGraph(input, () => { throw new Error('legacy graph fallback'); });
@@ -204,25 +216,6 @@ for (const lane of ['request', 'member', 'identity', 'license', 'replace-file', 
   }), /E_MAP_DRIFT/)
   assert.equal(await readFile(join(f.options.root, 'public/opening-territories.json'), 'utf8'), 'old territories')
   await assert.rejects(readFile(join(f.options.root, 'src/generated-private/map-input-receipt.json')), { code: 'ENOENT' })
-})
-
-test('publication denial remains mandatory even for complete valid release', async t => {
-  const f = await fixture(t)
-  await assert.rejects(runRelease({
-    ...f.options, gate: async () => { throw new Error('E_SCOPE_PENDING') },
-    stage: () => assert.fail('stage bypassed publication')
-  }), /E_SCOPE_PENDING/)
-  await assert.rejects(readFile(join(f.options.root, '.generate-release.lock')), { code: 'ENOENT' })
-  assert.equal(await readFile(join(f.options.root, 'public/opening-territories.json'), 'utf8'), 'old territories')
-})
-
-test('publication pending is first failure even for missing explicit release request', async t => {
-  const f = await fixture(t)
-  await assert.rejects(runRelease({
-    ...f.options, mapRequestPath: join(f.root, 'does-not-exist.json'),
-    gate: async () => { throw new Error('E_SCOPE_PENDING') }, stage: () => assert.fail('stage ran')
-  }), /E_SCOPE_PENDING/)
-  await assert.rejects(readFile(join(f.options.root, '.generate-release.lock')), { code: 'ENOENT' })
 })
 
 test('actual catalog public projection honors supplied edge removal instead of SQLite adjacency', () => {
@@ -310,85 +303,58 @@ test('actual catalog public projection honors supplied edge removal instead of S
     await assert.rejects(readFile(join(f.options.root, '.generate-release-transaction/context.json')), { code: 'ENOENT' })
   })
 
-  test('publication revocation after valid graph stage preserves every prior output', async t => {
-    const f = await fixture(t)
-    let calls = 0
-    await assert.rejects(runRelease({
-      ...f.options, gate: async () => {
-        if (++calls === 3) throw new Error('E_SCOPE_REVOKED')
-      }, stage: context => stageGraph(context, f.options.root)
-    }), /E_SCOPE_REVOKED/)
-    assert.equal(calls, 3)
-    assert.equal(await readFile(join(f.options.root, 'public/opening-territories.json'), 'utf8'), 'old territories')
-    await assert.rejects(readFile(join(f.options.root, 'src/generated-private/map-input-receipt.json')), { code: 'ENOENT' })
-  })
-
-  test('real mapper builder with nonlexical aliases reaches production catalog projection', async t => {
-    const producerRoot = process.env.WIKI_MAP_PRODUCER_ROOT ?? mapperRoot
-    const fromProducer = name => import(pathToFileURL(join(producerRoot, 'scripts/janseon', name)))
-    const { fixture: commandFixture } = await fromProducer('command-store-fixture.mjs')
-    const { centralInputs } = await fromProducer('central-store-fixture.mjs')
-    const { readCommandReleaseSource } = await fromProducer('command-store.mjs')
-    const { buildMapRelease } = await fromProducer('build-map-release.mjs')
-    const { canonicalEncode } = await fromProducer('canonical.mjs')
-    const f = await fixture(t), input = centralInputs()
-    input.graph.document.aliases = { z: 'é', a: 'é' }
-    const graphBytes = Buffer.from(JSON.stringify(input.graph.document) + '\n')
-    Object.assign(input.graph.expectedBinding, { expected_source_sha256: sha(graphBytes), expected_document_sha256: sha(JSON.stringify(input.graph.document)), expected_byte_length: graphBytes.length })
-    Object.assign(input.graph.sourceReceipt, { source_sha256: sha(graphBytes), document_sha256: sha(JSON.stringify(input.graph.document)), byte_length: graphBytes.length })
-    const databasePath = join(f.root, 'builder.sqlite'), source = commandFixture(t, databasePath, input)
-    const current = readCommandReleaseSource(source.db, source.binding)
-    const reference = (domain, value) => ({ domain, datasetId: value.datasetId, editionId: value.editionId })
-    const sourceRows = [
-      { editionRef: reference('graph', current.central.graph), rowsSha256: semanticDigest(current.central.graph.document) },
-      { editionRef: reference('initial-state', current.authored), rowsSha256: semanticDigest(current.authored) },
-      { editionRef: reference('observed-geography', current.central.observedGeography), rowsSha256: semanticDigest(current.central.observedGeography.rows) },
-    ]
-    const contents = [current.central.graph.document, current.authored, current.central.observedGeography.rows]
-    const paths = f.manifest.semantic.members.map(m => m.path)
-    const migrationReceipt = { contentId: 'migration', sha256: sha(await readFile(f.request.sourceFiles.migration)) }
-    const budget = {
-      schema: 'janseon-map-release-budget.v1', migrationReceipt,
-      members: paths.map(path => ({ path, maxBytes: 1000000 })), maxTotalBytes: 9000000
-    }
-    const budgetBytes = canonicalEncode(budget)
-    await writeFile(f.request.sourceFiles.budget, budgetBytes)
-    f.request.sourceFiles.snapshot = databasePath
-    const provenance = {
-      ...f.manifest.provenance,
-      snapshot: { contentId: 'snapshot', databaseSha256: sha(await readFile(databasePath)), mapSemanticSha256: semanticDigest({ schema: 'janseon-release-map.v1', central: current.central.centralSemanticSha256, authored: current.authored.semanticSha256 }) },
-      budgetReceipt: { contentId: 'budget', sha256: sha(budgetBytes) }, sourceReceipts: sourceRows.map(row => ({
-        editionRef: row.editionRef,
-        receipt: { contentId: row.editionRef.domain, sha256: row.rowsSha256 }
-      }))
-    }
-    for (let i = 0; i < sourceRows.length; i++) await writeFile(f.request.sourceFiles[sourceRows[i].editionRef.domain], canonicalEncode(contents[i]))
-    const result = buildMapRelease({
-      databasePath, binding: source.binding, provenance,
-      context: { expectedTargets: ['wiki', 'game'], budget }, sourceRows, license: f.manifest.semantic.members[0].license
-    })
-    for (const [path, bytes] of Object.entries(result.members)) await writeFile(join(f.request.releaseRoot, path), bytes)
-    await writeFile(join(f.request.releaseRoot, 'release-manifest.json'), result.manifestBytes)
-    Object.assign(f.request, {
-      manifestSha256: sha(result.manifestBytes), lock: {
-        mapReleaseId: result.manifest.mapReleaseId,
-        deliveryReceiptId: result.manifest.deliveryReceiptId, sourceCommit: provenance.sourceCommit, exporterRevision: provenance.exporter.revision,
-        snapshotContentId: 'snapshot', databaseSha256: provenance.snapshot.databaseSha256, mapSemanticSha256: provenance.snapshot.mapSemanticSha256,
-        identitySnapshotSha256: result.manifest.semantic.identitySnapshotSha256
-      }
-    })
-    await writeFile(f.requestPath, JSON.stringify(f.request))
-    await runRelease({
-      ...f.options, stage: async ({ mapInput, write }) => {
-        const graph = await catalogWorldGraph(mapInput, () => assert.fail('legacy fallback'))
-        assert.deepEqual(Object.entries(graph.aliases), [['z', 'é'], ['a', 'é']])
-        const regular = { edges: [{ a: 'é', b: 'é', lineIds: ['line'], sourceCodes: [] }], linesByStation: new Map(), omitted: [] }
-        const movement = catalogMovementGraph(mapInput, regular, id => id, [])
-        const edges = catalogPublicEdges(movement, new Set(graph.stations.map(s => s.id)), new Map(),
-          () => ({ polityIds: [], status: 'unknown' }), () => [], {}, () => 'unknown')
-        await write('public/opening-territories.json', JSON.stringify({ edges }))
-      }
-    })
-    const published = JSON.parse(await readFile(join(f.options.root, 'public/opening-territories.json')))
-    assert.deepEqual(published.edges.map(({ a, b }) => [a, b]), [['é', 'é']])
-  })
+test('real mapper builder with nonlexical aliases reaches production catalog projection', async t => {
+  const producerRoot = process.env.WIKI_MAP_PRODUCER_ROOT ?? mapperRoot
+  const fromProducer = name => import(pathToFileURL(join(producerRoot, 'scripts/janseon', name)))
+  const { fixture: commandFixture } = await fromProducer('command-store-fixture.mjs')
+  const { centralInputs } = await fromProducer('central-store-fixture.mjs')
+  const { readCommandReleaseSource } = await fromProducer('command-store.mjs')
+  const { buildMapRelease } = await fromProducer('build-map-release.mjs')
+  const { canonicalEncode } = await fromProducer('canonical.mjs')
+  const f = await fixture(t), input = centralInputs()
+  input.graph.document.aliases = { z: 'é', a: 'é' }
+  const graphBytes = Buffer.from(JSON.stringify(input.graph.document) + '\n')
+  Object.assign(input.graph.expectedBinding, { expected_source_sha256: sha(graphBytes), expected_document_sha256: sha(JSON.stringify(input.graph.document)), expected_byte_length: graphBytes.length })
+  Object.assign(input.graph.sourceReceipt, { source_sha256: sha(graphBytes), document_sha256: sha(JSON.stringify(input.graph.document)), byte_length: graphBytes.length })
+  const databasePath = join(f.root, 'builder.sqlite'), source = commandFixture(t, databasePath, input)
+  const current = readCommandReleaseSource(source.db, source.binding)
+  const reference = (domain, value) => ({ domain, datasetId: value.datasetId, editionId: value.editionId })
+  const sourceRows = [
+    { editionRef: reference('graph', current.central.graph), rowsSha256: semanticDigest(current.central.graph.document) },
+    { editionRef: reference('initial-state', current.authored), rowsSha256: semanticDigest(current.authored) },
+    { editionRef: reference('observed-geography', current.central.observedGeography), rowsSha256: semanticDigest(current.central.observedGeography.rows) },
+  ]
+  const contents = [current.central.graph.document, current.authored, current.central.observedGeography.rows]
+  const paths = f.manifest.semantic.members.map(m => m.path)
+  const migrationReceipt = { contentId: 'migration', sha256: sha(await readFile(f.request.sourceFiles.migration)) }
+  const budget = { schema: 'janseon-map-release-budget.v1', migrationReceipt,
+    members: paths.map(path => ({ path, maxBytes: 1000000 })), maxTotalBytes: 9000000 }
+  const budgetBytes = canonicalEncode(budget)
+  await writeFile(f.request.sourceFiles.budget, budgetBytes)
+  f.request.sourceFiles.snapshot = databasePath
+  const provenance = { ...f.manifest.provenance,
+    snapshot: { contentId: 'snapshot', databaseSha256: sha(await readFile(databasePath)), mapSemanticSha256: semanticDigest({ schema: 'janseon-release-map.v1', central: current.central.centralSemanticSha256, authored: current.authored.semanticSha256 }) },
+    budgetReceipt: { contentId: 'budget', sha256: sha(budgetBytes) }, sourceReceipts: sourceRows.map(row => ({ editionRef: row.editionRef,
+      receipt: { contentId: row.editionRef.domain, sha256: row.rowsSha256 } })) }
+  for (let i = 0; i < sourceRows.length; i++) await writeFile(f.request.sourceFiles[sourceRows[i].editionRef.domain], canonicalEncode(contents[i]))
+  const result = buildMapRelease({ databasePath, binding: source.binding, provenance,
+    context: { expectedTargets: ['wiki', 'game'], budget }, sourceRows, license: f.manifest.semantic.members[0].license })
+  for (const [path, bytes] of Object.entries(result.members)) await writeFile(join(f.request.releaseRoot, path), bytes)
+  await writeFile(join(f.request.releaseRoot, 'release-manifest.json'), result.manifestBytes)
+  Object.assign(f.request, { manifestSha256: sha(result.manifestBytes), lock: { mapReleaseId: result.manifest.mapReleaseId,
+    deliveryReceiptId: result.manifest.deliveryReceiptId, sourceCommit: provenance.sourceCommit, exporterRevision: provenance.exporter.revision,
+    snapshotContentId: 'snapshot', databaseSha256: provenance.snapshot.databaseSha256, mapSemanticSha256: provenance.snapshot.mapSemanticSha256,
+    identitySnapshotSha256: result.manifest.semantic.identitySnapshotSha256 } })
+  await writeFile(f.requestPath, JSON.stringify(f.request))
+  await runRelease({ ...f.options, stage: async ({ mapInput, write }) => {
+    const graph = catalogWorldGraph(mapInput, () => assert.fail('legacy fallback'))
+    assert.deepEqual(Object.entries(graph.aliases), [['z', 'é'], ['a', 'é']])
+    const regular = { edges: [{ a: 'é', b: 'é', lineIds: ['line'], sourceCodes: [] }], linesByStation: new Map(), omitted: [] }
+    const movement = catalogMovementGraph(mapInput, regular, id => id, [])
+    const edges = catalogPublicEdges(movement, new Set(graph.stations.map(s => s.id)), new Map(),
+      () => ({ polityIds: [], status: 'unknown' }), () => [], {}, () => 'unknown')
+    await write('public/opening-territories.json', JSON.stringify({ edges }))
+  } })
+  const published = JSON.parse(await readFile(join(f.options.root, 'public/opening-territories.json')))
+  assert.deepEqual(published.edges.map(({ a, b }) => [a, b]), [['é', 'é']])
+})

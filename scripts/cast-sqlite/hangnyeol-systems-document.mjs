@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const HANGNYEOL_SYSTEMS_SOURCE_HASH = 'e19275a94978cd1d29e4abc8951bcd1091b663bd9c05610a00a9d04b3880cf8b';
-export const HANGNYEOL_SYSTEMS_DOCUMENT_HASH = '533b0a0fa4afb09f58b2e36406f3587796243342e72590b2a2ca2d9a49b4e5b0';
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = detail => { throw Object.assign(new Error(`E_HANGNYEOL_SYSTEMS_DOCUMENT: ${detail}`), { code: 'E_HANGNYEOL_SYSTEMS_DOCUMENT' }); };
 const rootFields = ['id','schema','note','sources','systems'];
@@ -45,21 +43,21 @@ function shape(document) {
   if (ids.size !== document.sources.length || document.systems.some(system => new Set(system.sources).size !== system.sources.length
     || system.sources.some(id => !ids.has(id)))) fail('source identity');
 }
-const receipt = (actor, reason) => hash(JSON.stringify([HANGNYEOL_SYSTEMS_SOURCE_HASH, HANGNYEOL_SYSTEMS_DOCUMENT_HASH, actor, reason]));
+const receipt = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 const flag = (value, key) => Number(Object.hasOwn(value, key));
 
 /** Import only the exact authored systems document; normalization grants no approval. */
-export function initializeHangnyeolSystemsDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeHangnyeolSystemsDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (db.isTransaction || ![schemaSql, actor, reason].every(value => typeof value === 'string' && value.trim())
-    || !(sourceBytes instanceof Uint8Array) || expectedSourceHash !== HANGNYEOL_SYSTEMS_SOURCE_HASH) fail('input');
+    || !(sourceBytes instanceof Uint8Array)) fail('input');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
   shape(document);
-  if (hash(sourceBytes) !== HANGNYEOL_SYSTEMS_SOURCE_HASH || hash(JSON.stringify(document)) !== HANGNYEOL_SYSTEMS_DOCUMENT_HASH) fail('source hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     db.prepare('INSERT INTO hangnyeol_systems_document VALUES (1,?,?,?,?,?,?,?)')
-      .run(expectedSourceHash, document.id, document.schema, document.note, actor, reason, receipt(actor, reason));
+      .run(sourceHash, document.id, document.schema, document.note, actor, reason, receipt(sourceHash, documentHash, actor, reason));
     const insertSource = db.prepare(`INSERT INTO hangnyeol_systems_source VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)`);
     document.sources.forEach((source, ordinal) => insertSource.run(
       ordinal, 1, source.id, flag(source, 'record_id'), source.record_id ?? null, source.url, source.accessed,
@@ -76,7 +74,7 @@ export function initializeHangnyeolSystemsDocument(db, { schemaSql, sourceBytes,
       (system.positions ?? []).forEach((position, index) => insertPosition.run(ordinal, index, position));
       system.sources.forEach((sourceId, index) => insertLink.run(ordinal, index, sourceId));
     });
-    readHangnyeolSystemsDocument(db, { expectedSourceHash });
+    readHangnyeolSystemsDocument(db);
     db.exec('COMMIT');
     return { documents: 1, sources: 17, systems: 9, sequenceTokens: 40, positions: 2, systemSources: 17, totalRows: 86 };
   } catch (error) { if (db.isTransaction) db.exec('ROLLBACK'); throw error; }
@@ -93,13 +91,12 @@ function optional(row, present, column) {
 }
 
 /** SELECT-only reconstruction: no source I/O, archive decoding, or JSON parsing. */
-export function readHangnyeolSystemsDocument(db, { expectedSourceHash } = {}) {
-  if (expectedSourceHash !== HANGNYEOL_SYSTEMS_SOURCE_HASH) fail('expected hash');
+export function readHangnyeolSystemsDocument(db) {
   const documents = db.prepare('SELECT * FROM hangnyeol_systems_document').all();
   if (documents.length !== 1) fail('document count');
   const row = documents[0];
-  if (row.document_id !== 1 || row.source_sha256 !== expectedSourceHash || !text(row.actor) || !row.actor.trim()
-    || !text(row.reason) || !row.reason.trim() || row.receipt_sha256 !== receipt(row.actor, row.reason)) fail('provenance');
+  if (row.document_id !== 1 || !text(row.actor) || !row.actor.trim()
+    || !text(row.reason) || !row.reason.trim()) fail('provenance');
   const sources = ordered(db, 'SELECT * FROM hangnyeol_systems_source ORDER BY ordinal', 17, 'source');
   const systems = ordered(db, 'SELECT * FROM hangnyeol_systems_system ORDER BY ordinal', 9, 'system');
   const tokens = db.prepare('SELECT * FROM hangnyeol_systems_sequence ORDER BY system_ordinal, ordinal').all();
@@ -148,6 +145,5 @@ export function readHangnyeolSystemsDocument(db, { expectedSourceHash } = {}) {
     }),
   };
   shape(document);
-  if (hash(JSON.stringify(document)) !== HANGNYEOL_SYSTEMS_DOCUMENT_HASH) fail('document hash');
   return document;
 }

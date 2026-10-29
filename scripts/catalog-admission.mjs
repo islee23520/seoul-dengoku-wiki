@@ -2,8 +2,6 @@ import { access, readdir, readFile } from 'node:fs/promises'
 import { basename, join, relative, resolve } from 'node:path'
 import { glossaryDocument } from './glossary-document.mjs'
 import { loadCategoryRegistry, registrationErrors } from './category-registration.mjs'
-import { isAuthenticatedPublicationReview } from './seoul-census.mjs'
-import { sha256 } from './seoul-scope.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
 import { readCatalogPages, readCatalogGlossary } from './cast-sqlite/catalog-pages.mjs'
 
@@ -30,30 +28,17 @@ const retiredCastArticle = /^Cast-State-\d+$|^Core-Characters$|^Cast-Unaffiliate
 const discoveredSources = new WeakMap()
 const fail = (code, source = '') => { throw Object.assign(new Error(`${code}:${source}`), { code, source }) }
 
-// Pure eligibility inspection also accepts synthetic validator results. Public
-// consumers must enter through publishedDocuments, which authenticates authority.
-/** @param {import('./seoul-census.mjs').PublicationReview} publicationReview */
-export function publicationEligible(document, publicationReview) {
+// Approved sources publish directly. Draft sources publish once category
+// registration is ready; approved sources still reach publication validation,
+// which must reject invalid metadata.
+export function publicationEligible(document) {
   const sources = discoveredSources.get(document)
   if (!sources || sources.length === 0) fail('E_PUBLICATION_DISCOVERY', document.source)
-  return sources.every(({ source, currentSha256, approved, categoryErrors }) => {
-    const decision = publicationReview.documents.find(row => row.sourcePath === source)
-    if (!decision) fail('E_REVIEW_COVERAGE', source)
-    if (decision.currentSha256 !== currentSha256) fail('E_REVIEW_HASH', source)
-    // Authenticated exact publication reviews may activate sources whose authoring
-    // status remains draft, but only once category registration is ready. Approved
-    // sources still reach publication validation, which must reject invalid metadata.
-    // Synthetic inspections cannot grant draft activation authority.
-    return (approved || categoryErrors.length === 0 && isAuthenticatedPublicationReview(publicationReview)) && decision.eligible && decision.classification === 'current-reviewed'
-      && decision.reason === 'approved-exact-review' && decision.receipt !== null
-  })
+  return sources.every(({ approved, categoryErrors }) => approved || categoryErrors.length === 0)
 }
 
-/** @param {import('./seoul-census.mjs').PublicationReview} publicationReview */
-export function publishedDocuments(documents, publicationReview) {
-  if (!isAuthenticatedPublicationReview(publicationReview)) fail('E_PUBLICATION_REVIEW_AUTHORITY')
-  if (!publicationReview.complete || publicationReview.semanticReview !== 'reviewed') fail('E_PUBLICATION_REVIEW_PENDING')
-  return documents.filter(document => publicationEligible(document, publicationReview)
+export function publishedDocuments(documents) {
+  return documents.filter(document => publicationEligible(document)
     && !retiredCastArticle.test(document.route.split('/').at(-1)))
 }
 
@@ -108,7 +93,7 @@ export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasChe
           if (await exists(resolve(loreRoot, twin))) throw new Error(`E_MARKDOWN_TWIN:${twin}`)
           const source = `lore/${sourcePath}`
           add(slug, source, atlasPathSet.has(sourcePath) ? `wiki:${slug}` : value.id,
-            [{ source, currentSha256: sha256(bytes), approved: value.status === 'approved',
+            [{ source, approved: value.status === 'approved',
               categoryErrors: value.status === 'approved' ? [] : registrationErrors({ ...value, slug }, categoryRegistry, entry.name) }])
         }
       }
@@ -119,9 +104,8 @@ export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasChe
     try {
       for (const page of readCatalogPages(connection)) {
         const sourcePath = page.path.slice('lore/'.length)
-        const identity = connection.prepare('SELECT sha256 FROM source_file WHERE logical_path=?').get(page.path)
         add(page.slug, page.path, atlasPathSet.has(sourcePath) ? `wiki:${page.slug}` : page.value.id,
-          [{ source: page.path, currentSha256: identity.sha256, approved: page.value.status === 'approved',
+          [{ source: page.path, approved: page.value.status === 'approved',
             categoryErrors: page.value.status === 'approved' ? [] : registrationErrors({ ...page.value, slug: page.slug }, categoryRegistry, basename(page.path)) }])
         slugs.add(page.slug)
       }
@@ -130,23 +114,19 @@ export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasChe
 
   if (!includeWorldIndex) return documents.sort((left, right) => left.route < right.route ? -1 : left.route > right.route ? 1 : 0)
   // The Glossary page is generated from the term dictionary, so the dictionary must build it.
-  let glossarySha256
   if (db || dbPath !== undefined) {
     const connection = db ?? openReadOnly(dbPath)
     try {
       glossaryDocument(readCatalogGlossary(connection))
-      glossarySha256 = connection.prepare('SELECT sha256 FROM glossary_archive WHERE singleton=1').get().sha256
     } finally { if (!db) connection.close() }
   } else {
-    const glossaryBytes = await readFile(join(loreRoot, 'glossary.json'))
-    glossaryDocument(JSON.parse(glossaryBytes.toString()))
-    glossarySha256 = sha256(glossaryBytes)
+    glossaryDocument(JSON.parse(await readFile(join(loreRoot, 'glossary.json'), 'utf8')))
   }
   for (const slug of ['Glossary', 'index']) {
     if (slugs.has(slug)) throw new Error(`E_PUBLISH_SOURCE_COLLISION:${slug}`)
     slugs.add(slug)
     const sources = slug === 'Glossary'
-      ? [{ source: 'lore/glossary.json', currentSha256: glossarySha256, approved: true }]
+      ? [{ source: 'lore/glossary.json', approved: true, categoryErrors: [] }]
       : ['Core-Characters', 'Sixteen-States', 'Scenario-Timeline'].map(dependency =>
         documents.find(row => row.route === `/world/${dependency}`))
         .flatMap(document => document ? discoveredSources.get(document) : [null])

@@ -2,10 +2,10 @@ import { resolve } from 'node:path'
 import { ageInYears, loadCastBirthdays } from './cast-birthdays.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
 import { readFamilySourceDocument } from './cast-sqlite/family-source-document.mjs'
-import { readDiasporaLineageDocument, DIASPORA_LINEAGE_SOURCE_HASH } from './cast-sqlite/diaspora-lineage-document.mjs'
+import { readDiasporaLineageDocument } from './cast-sqlite/diaspora-lineage-document.mjs'
 import { readFamilyRoleDocument } from './cast-sqlite/family-role-document.mjs'
 import { readPersonIdentityInputs } from './cast-sqlite/person-identity-inputs.mjs'
-import { readClanCatalogDocument, CLAN_CATALOG_SOURCE_HASH } from './cast-sqlite/clan-catalog-document.mjs'
+import { readClanCatalogDocument } from './cast-sqlite/clan-catalog-document.mjs'
 
 const text = (value) => typeof value === 'string' && value.trim().length > 0
 const record = (value) => value !== null && typeof value === 'object' && !Array.isArray(value)
@@ -180,11 +180,11 @@ export async function loadCastFamilyTrees(loreRoot, roster, options = {}) {
   try {
   const ledger = readFamilySourceDocument(db)
   const diaspora = ledger.imports?.some((entry) => entry.path === diasporaPath)
-    ? readDiasporaLineageDocument(db, { expectedSourceHash: DIASPORA_LINEAGE_SOURCE_HASH }) : undefined
+    ? readDiasporaLineageDocument(db) : undefined
   const birthdays = options.birthdays ?? await loadCastBirthdays(loreRoot, roster)
   const { lineageByName } = readPersonIdentityInputs(db)
   const roleDecisions = readFamilyRoleDocument(db)
-  const clans = readClanCatalogDocument(db, { expectedSourceHash: CLAN_CATALOG_SOURCE_HASH }).clans
+  const clans = readClanCatalogDocument(db).clans
   for (const node of ledger.nodes.filter((entry) => entry.lineage)) {
     if (!clans.some((clan) => clan.id === node.lineage.clan && clan.surname === node.lineage.surname && clan.bongwan === node.lineage.bongwan)) fail('E_FAMILY_CLAN', node.id)
   }

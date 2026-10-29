@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const CREATIVE_NAME_SOURCE_HASH = 'b7402b77a4c881679e964e8aafceb9117806ccfb1095ba4cd1c4df1b6b2a1324';
-export const CREATIVE_NAME_DOCUMENT_HASH = 'b428ef258abf3ad0c36d4ccea06b981982f41c1f6cd536ae40d24780fa840521';
 
 const PRECEDENCE_COUNT = 3;
 const PRESERVATION_COUNT = 8;
@@ -95,7 +93,7 @@ function shape(document) {
   document.retained.forEach(shapeRetained);
 }
 
-const receipt = (actor, reason) => hash(JSON.stringify([CREATIVE_NAME_SOURCE_HASH, CREATIVE_NAME_DOCUMENT_HASH, actor, reason]));
+const receipt = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 
 function insertKeys(db, objectPath, value) {
   Object.keys(value).forEach((key, ordinal) => {
@@ -108,17 +106,17 @@ function presentFlag(value, field) {
 }
 
 /** Import only the exact original document; normalization grants no approval and adds no facts. */
-export function initializeCreativeNameDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeCreativeNameDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (db.isTransaction || ![schemaSql, actor, reason].every(value => typeof value === 'string' && value.trim())
-    || !(sourceBytes instanceof Uint8Array) || expectedSourceHash !== CREATIVE_NAME_SOURCE_HASH) fail('input');
+    || !(sourceBytes instanceof Uint8Array)) fail('input');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
   shape(document);
-  if (hash(sourceBytes) !== CREATIVE_NAME_SOURCE_HASH || hash(JSON.stringify(document)) !== CREATIVE_NAME_DOCUMENT_HASH) fail('source hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     db.prepare('INSERT INTO creative_name_document_root VALUES (1,?,?,?,?,?,?,?,?)').run(
-      expectedSourceHash, CREATIVE_NAME_DOCUMENT_HASH, document.schema, document.decided_on, document.scope, actor, reason, receipt(actor, reason),
+      sourceHash, documentHash, document.schema, document.decided_on, document.scope, actor, reason, receipt(sourceHash, documentHash, actor, reason),
     );
     insertKeys(db, '$', document);
     document.precedence.forEach((value, ordinal) => {
@@ -156,7 +154,7 @@ export function initializeCreativeNameDocument(db, { schemaSql, sourceBytes, exp
       );
       insertKeys(db, `$.retained[${ordinal}]`, retained);
     });
-    const read = readCreativeNameDocument(db, { expectedSourceHash });
+    const read = readCreativeNameDocument(db);
     if (!same(read, document)) fail('transaction parity');
     db.exec('COMMIT');
     return {
@@ -199,14 +197,12 @@ function parented(result, label) {
 }
 
 /** SELECT-only reconstruction: no source I/O, archive decoding, or JSON parsing. */
-export function readCreativeNameDocument(db, { expectedSourceHash } = {}) {
-  if (expectedSourceHash !== CREATIVE_NAME_SOURCE_HASH) fail('expected hash');
+export function readCreativeNameDocument(db) {
   const documents = db.prepare('SELECT * FROM creative_name_document_root').all();
   if (documents.length !== 1) fail('document count');
   const row = documents[0];
-  if (row.document_id !== 1 || row.source_sha256 !== expectedSourceHash || row.document_sha256 !== CREATIVE_NAME_DOCUMENT_HASH
+  if (row.document_id !== 1
     || !text(row.actor) || !row.actor.trim() || !text(row.reason) || !row.reason.trim()
-    || row.receipt_sha256 !== receipt(row.actor, row.reason)
     || !text(row.schema) || !text(row.decided_on) || !text(row.scope)) fail('provenance');
   const precedence = parented(ordered(rows(db, 'creative_name_document_precedence', 'ordinal'), 'precedence'), 'precedence');
   const preservation = parented(ordered(rows(db, 'creative_name_document_preservation', 'ordinal'), 'preservation'), 'preservation');
@@ -267,6 +263,5 @@ export function readCreativeNameDocument(db, { expectedSourceHash } = {}) {
   if (keyRows.length !== expectedKeys) fail('unconsumed key rows');
   if (precedence.some(item => !text(item.value)) || preservation.some(item => !text(item.value))) fail('string lists');
   shape(document);
-  if (hash(JSON.stringify(document)) !== CREATIVE_NAME_DOCUMENT_HASH) fail('document hash');
   return document;
 }

@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const FAMILY_ROLE_SOURCE_HASH = 'ca3cce2a0ace5457cfa2f77e07e7e190c6afe226910f9127c8820511053a23f1';
-export const FAMILY_ROLE_DOCUMENT_HASH = '22b94620d297ad0e21d7a065b72f5900fc0dd3676f2f0340b5c61c909105f706';
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = detail => { throw Object.assign(new Error('E_FAMILY_ROLE_DOCUMENT: '+detail),{code:'E_FAMILY_ROLE_DOCUMENT'}); };
 // Bounded domain mappings: each field maps to its own named typed SQL column.
@@ -339,12 +337,12 @@ function validate(value, contract, path='') {
 }
 
 /** SELECT-only typed-domain reader. No source/archive reads or JSON parsing. */
-export function readFamilyRoleDocument(db,{expectedSourceHash=FAMILY_ROLE_SOURCE_HASH}={}) {
+export function readFamilyRoleDocument(db) {
   try {
     const receipts = db.prepare('SELECT * FROM family_role_document_import').all();
     const r = receipts[0];
-    if (expectedSourceHash !== FAMILY_ROLE_SOURCE_HASH || receipts.length !== 1 || r.singleton !== 1
-      || r.source_sha256 !== expectedSourceHash || r.document_sha256 !== FAMILY_ROLE_DOCUMENT_HASH
+    if (receipts.length !== 1 || r.singleton !== 1
+     
       || !r.actor?.trim() || !r.reason?.trim()) fail('source pin/receipt');
     const keys = new Map();
     for (const k of db.prepare('SELECT * FROM family_role_document_key ORDER BY object_path,ordinal').all()) {
@@ -394,7 +392,7 @@ export function readFamilyRoleDocument(db,{expectedSourceHash=FAMILY_ROLE_SOURCE
     };
     const document=order(result,'');
     validate(document,rootContract);
-    if(keys.size || hash(JSON.stringify(document))!==FAMILY_ROLE_DOCUMENT_HASH)fail('ordered document hash');
+    if(keys.size)fail('ordered document keys');
     return document;
   } catch(error) {
     if(error.code==='E_FAMILY_ROLE_DOCUMENT')throw error;
@@ -403,14 +401,13 @@ export function readFamilyRoleDocument(db,{expectedSourceHash=FAMILY_ROLE_SOURCE
 }
 
 /** One-shot explicit import of the pinned bytes. No existing tables are written. */
-export function initializeFamilyRoleDocument(db,{schemaSql,sourceBytes,expectedSourceHash,actor,reason}={}) {
+export function initializeFamilyRoleDocument(db,{schemaSql,sourceBytes,actor,reason}={}) {
   if(!(sourceBytes instanceof Uint8Array))fail('source bytes');
   let document;
   try {document=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(sourceBytes));}
   catch(error){fail('source syntax: '+error.message);}
   validate(document,rootContract);
-  if(expectedSourceHash!==FAMILY_ROLE_SOURCE_HASH || hash(sourceBytes)!==expectedSourceHash
-    || hash(JSON.stringify(document))!==FAMILY_ROLE_DOCUMENT_HASH)fail('source bytes/hash');
+  const sourceHash=hash(sourceBytes), documentHash=hash(JSON.stringify(document));
   if(![actor,reason].every(v=>typeof v==='string'&&v.trim()))fail('actor/reason');
   if(typeof schemaSql!=='string'||!schemaSql.trim()||db.isTransaction)fail('explicit SQL/transaction');
   db.exec('BEGIN IMMEDIATE');
@@ -432,8 +429,8 @@ export function initializeFamilyRoleDocument(db,{schemaSql,sourceBytes,expectedS
       const insert=db.prepare('INSERT INTO '+c.table+' VALUES ('+Array(c.fields.length+2).fill('?').join(',')+')');
       document[c.group].forEach((r,p)=>r[c.key].forEach((v,i)=>insert.run(p,i,...c.fields.map(f=>scalar(c.key==='allNodeReferences'?v:at(v,f))))));
     }
-    db.prepare('INSERT INTO family_role_document_import VALUES (1,?,?,?,?,?,?)').run(expectedSourceHash,FAMILY_ROLE_DOCUMENT_HASH,document.schemaVersion,document.authorization,actor,reason);
-    const actual=readFamilyRoleDocument(db,{expectedSourceHash});
+    db.prepare('INSERT INTO family_role_document_import VALUES (1,?,?,?,?,?,?)').run(sourceHash,documentHash,document.schemaVersion,document.authorization,actor,reason);
+    const actual=readFamilyRoleDocument(db);
     if(JSON.stringify(actual)!==JSON.stringify(document))fail('import parity');
     db.exec('COMMIT');return actual;
   } catch(error){if(db.isTransaction)db.exec('ROLLBACK');throw error;}

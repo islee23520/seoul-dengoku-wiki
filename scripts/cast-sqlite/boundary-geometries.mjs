@@ -5,7 +5,7 @@ const fields = { kind: 'kind', sourceEdition: 'source_edition', officialCode: 'o
 export function readBoundaryGeometries(db) {
   const source = db.prepare('SELECT * FROM boundary_geometry_source WHERE source_path=?')
     .get('data/geography/boundaries/seoul-sgis-20250630.geojson')
-  if (source?.sha256 !== '6a393cefb7cc257f001042acb8715e5d721b320e14eba723f15857197edaa5e4')
+  if (!source)
     throw new Error('E_BOUNDARY_GEOMETRY_SOURCE')
   const propertyRows = db.prepare('SELECT * FROM boundary_geometry_property ORDER BY feature_id,ordinal').all()
   const dongRows = db.prepare('SELECT * FROM boundary_geometry_dong ORDER BY feature_id,ordinal').all()

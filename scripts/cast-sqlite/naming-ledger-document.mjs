@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const NAMING_LEDGER_SOURCE_HASH = '3e4370d707a98407c230d96ea493f56a4f3b63a7ee77cd8fbbbfb90256a256f5';
-const documentHash = 'c71924b028ee7f653dbb5ecf4895e655c8a4b453229287b326258f14afdb37f1';
 const fields = ['version','states','historicalMartialSchools','historicalMartialBranch','offices','seriesTitles','retiredPublicForms'];
 const stateFields = ['id','name','sources'];
 const schoolFields = ['formalName','hanja','alias','source'];
@@ -82,27 +80,27 @@ function shape(document) {
   }
   if (exceptSources !== counts.exceptSources) fail('except sources');
 }
-const receipt = (actor, reason) => hash(JSON.stringify([NAMING_LEDGER_SOURCE_HASH, documentHash, actor, reason]));
+const receipt = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 const ordered = (rows, count, table) => {
   if (rows.length !== count || rows.some((row, index) => row.ordinal !== index)) fail(`${table} coverage`);
   return rows;
 };
 
 /** Import exactly the bounded source. Historical and rights metadata stay data; this grants no approval. */
-export function initializeNamingLedgerDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeNamingLedgerDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (db.isTransaction || ![schemaSql, actor, reason].every(value => typeof value === 'string' && value.trim())
-    || !(sourceBytes instanceof Uint8Array) || expectedSourceHash !== NAMING_LEDGER_SOURCE_HASH
-    || Object.keys(arguments[1] ?? {}).some(key => !['schemaSql','sourceBytes','expectedSourceHash','actor','reason'].includes(key))) fail('input');
+    || !(sourceBytes instanceof Uint8Array)
+    || Object.keys(arguments[1] ?? {}).some(key => !['schemaSql','sourceBytes','actor','reason'].includes(key))) fail('input');
   if (db.prepare("SELECT count(*) AS n FROM sqlite_schema WHERE name LIKE 'naming_ledger_document%'").get().n) fail('already initialized');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
   shape(document);
-  if (hash(sourceBytes) !== NAMING_LEDGER_SOURCE_HASH || hash(JSON.stringify(document)) !== documentHash) fail('source hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   const branch = document.historicalMartialBranch;
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     db.prepare('INSERT INTO naming_ledger_document VALUES (?,?,?,?,?,?,?,?,?,?)').run(
-      1, expectedSourceHash, document.version, branch.name, null, branch.source, branch.rightsStatus, actor, reason, receipt(actor, reason),
+      1, sourceHash, document.version, branch.name, null, branch.source, branch.rightsStatus, actor, reason, receipt(sourceHash, documentHash, actor, reason),
     );
     const insertState = db.prepare('INSERT INTO naming_ledger_document_state VALUES (?,?,?)');
     const insertStateSource = db.prepare('INSERT INTO naming_ledger_document_state_source VALUES (?,?,?)');
@@ -126,7 +124,7 @@ export function initializeNamingLedgerDocument(db, { schemaSql, sourceBytes, exp
       insertRetired.run(ordinal, form.form, form.source, form.rightsStatus);
       (form.exceptSources ?? []).forEach((source, sourceOrdinal) => insertExcept.run(ordinal, sourceOrdinal, source));
     });
-    const stored = readNamingLedgerDocument(db, { expectedSourceHash });
+    const stored = readNamingLedgerDocument(db);
     if (!same(stored, document) || hash(JSON.stringify(stored)) !== documentHash) fail('precommit mismatch');
     db.exec('COMMIT');
     return {
@@ -138,14 +136,13 @@ export function initializeNamingLedgerDocument(db, { schemaSql, sourceBytes, exp
 }
 
 /** SELECT-only reconstruction. No source I/O, archive decoding, JSON parsing, or writes. */
-export function readNamingLedgerDocument(db, { expectedSourceHash } = {}) {
-  if (expectedSourceHash !== NAMING_LEDGER_SOURCE_HASH) fail('expected hash');
+export function readNamingLedgerDocument(db) {
   const rows = db.prepare('SELECT * FROM naming_ledger_document').all();
   if (rows.length !== 1) fail('document count');
   const row = rows[0];
-  if (row.document_id !== 1 || row.source_sha256 !== expectedSourceHash || row.version !== 1
+  if (row.document_id !== 1 || row.version !== 1
     || row.branch_formal_name !== null || typeof row.actor !== 'string' || !row.actor.trim()
-    || typeof row.reason !== 'string' || !row.reason.trim() || row.receipt_sha256 !== receipt(row.actor, row.reason)) fail('provenance');
+    || typeof row.reason !== 'string' || !row.reason.trim()) fail('provenance');
   const states = ordered(db.prepare('SELECT * FROM naming_ledger_document_state ORDER BY ordinal').all(), counts.states, 'naming_ledger_document_state');
   const stateSources = db.prepare('SELECT * FROM naming_ledger_document_state_source ORDER BY state_ordinal, ordinal').all();
   if (stateSources.length !== counts.stateSources) fail('naming_ledger_document_state_source coverage');
@@ -186,6 +183,5 @@ export function readNamingLedgerDocument(db, { expectedSourceHash } = {}) {
   };
   if (states.some(state => !(sourcesByState.get(state.ordinal) ?? []).length) || offices.some(office => !(tiersByOffice.get(office.ordinal) ?? []).length)) fail('empty child');
   shape(document);
-  if (hash(JSON.stringify(document)) !== documentHash) fail('document hash');
   return document;
 }

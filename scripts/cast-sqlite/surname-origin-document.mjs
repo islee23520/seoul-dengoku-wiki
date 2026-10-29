@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const SURNAME_ORIGIN_SOURCE_HASH = '0ceaaba8a590f4c8ddb24631f08c26064bdb41fa0ea416527bfd5c5a36762bb8';
-export const SURNAME_ORIGIN_DOCUMENT_HASH = 'afc6af8af92fe0e00766c0fa4d03dfb34a6844ccde992ca1d8d3f0c85a1508ff';
 
 const SOURCE_COUNT = 517;
 const SURNAME_COUNT = 517;
@@ -97,7 +95,7 @@ function shape(document) {
   }
 }
 
-const receipt = (actor, reason) => hash(JSON.stringify([SURNAME_ORIGIN_SOURCE_HASH, SURNAME_ORIGIN_DOCUMENT_HASH, actor, reason]));
+const receipt = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 
 function insertKeys(db, sql, parent, value) {
   Object.keys(value).forEach((key, ordinal) => db.prepare(sql).run(...parent, ordinal, key));
@@ -108,17 +106,17 @@ function population(surname, field) {
 }
 
 /** Import only the exact original document; normalization grants no approval and adds no facts. */
-export function initializeSurnameOriginDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeSurnameOriginDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (db.isTransaction || ![schemaSql, actor, reason].every(value => typeof value === 'string' && value.trim())
-    || !(sourceBytes instanceof Uint8Array) || expectedSourceHash !== SURNAME_ORIGIN_SOURCE_HASH) fail('input');
+    || !(sourceBytes instanceof Uint8Array)) fail('input');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
   shape(document);
-  if (hash(sourceBytes) !== SURNAME_ORIGIN_SOURCE_HASH || hash(JSON.stringify(document)) !== SURNAME_ORIGIN_DOCUMENT_HASH) fail('source hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     db.prepare('INSERT INTO surname_origin_document VALUES (1,?,?,?,?,?,?,?)')
-      .run(expectedSourceHash, document.id, document.schema, document.note, actor, reason, receipt(actor, reason));
+      .run(sourceHash, document.id, document.schema, document.note, actor, reason, receipt(sourceHash, documentHash, actor, reason));
     document.sources.forEach((source, ordinal) => {
       db.prepare(`INSERT INTO surname_origin_source VALUES (${Array(12).fill('?').join(',')})`).run(
         ordinal, 1, source.id,
@@ -146,7 +144,7 @@ export function initializeSurnameOriginDocument(db, { schemaSql, sourceBytes, ex
         bongwan.sources.forEach((sourceId, sourceOrdinal) => db.prepare('INSERT INTO surname_origin_bongwan_source VALUES (?,?,?,?)').run(ordinal, index, sourceOrdinal, sourceId));
       });
     });
-    const read = readSurnameOriginDocument(db, { expectedSourceHash });
+    const read = readSurnameOriginDocument(db);
     if (!same(read, document)) fail('transaction parity');
     db.exec('COMMIT');
     return {
@@ -183,13 +181,12 @@ function present(flag, value, label, nullAllowed = false) {
 }
 
 /** SELECT-only reconstruction: no source I/O, archive decoding, or JSON parsing. */
-export function readSurnameOriginDocument(db, { expectedSourceHash } = {}) {
-  if (expectedSourceHash !== SURNAME_ORIGIN_SOURCE_HASH) fail('expected hash');
+export function readSurnameOriginDocument(db) {
   const documents = db.prepare('SELECT * FROM surname_origin_document').all();
   if (documents.length !== 1) fail('document count');
   const row = documents[0];
-  if (row.document_id !== 1 || row.source_sha256 !== expectedSourceHash || !text(row.actor) || !row.actor.trim()
-    || !text(row.reason) || !row.reason.trim() || row.receipt_sha256 !== receipt(row.actor, row.reason)
+  if (row.document_id !== 1 || !text(row.actor) || !row.actor.trim()
+    || !text(row.reason) || !row.reason.trim()
     || !text(row.id) || !Number.isSafeInteger(row.schema) || typeof row.note !== 'string') fail('provenance');
   const sources = ordered(rows(db, 'surname_origin_source', 'ordinal'), 'source');
   const sourceKeys = rows(db, 'surname_origin_source_key', 'source_ordinal, ordinal');
@@ -273,6 +270,5 @@ export function readSurnameOriginDocument(db, { expectedSourceHash } = {}) {
     + document.surnames.reduce((sum, surname) => sum + Object.keys(surname).length + surname.bongwan.reduce((inner, clan) => inner + Object.keys(clan).length, 0), 0);
   if (seenKeys !== expectedKeys) fail('unconsumed key rows');
   shape(document);
-  if (hash(JSON.stringify(document)) !== SURNAME_ORIGIN_DOCUMENT_HASH) fail('document hash');
   return document;
 }

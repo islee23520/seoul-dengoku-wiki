@@ -1,8 +1,8 @@
 import { readFile } from 'node:fs/promises';
 import { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } from './evidence.mjs';
-import { OPENING_SAMPLE_SOURCE_HASHES, INTERNAL_OPENING_SAMPLE_CAPABILITY,
+import { OPENING_SAMPLE_PATHS, INTERNAL_OPENING_SAMPLE_CAPABILITY,
   initializeOpeningSampleDocuments, openOpeningSampleDocuments } from './opening-sample-documents.mjs';
-import { EDITORIAL_ENVELOPE_SOURCE_HASHES, INTERNAL_EDITORIAL_ENVELOPE_CAPABILITY,
+import { EDITORIAL_ENVELOPE_PATHS, INTERNAL_EDITORIAL_ENVELOPE_CAPABILITY,
   initializeEditorialEnvelopeDocuments, openEditorialEnvelopeDocuments } from './editorial-envelope-documents.mjs';
 
 // Explicit offline bootstrap from sealed captured evidence, never source paths.
@@ -14,8 +14,8 @@ try {
   const bindings = new Map(receipt.bindings.map(row => [row.logicalPath, row]));
   const results = [];
   for (const [path, pins, capability, initialize, open] of [
-    [samplePath, OPENING_SAMPLE_SOURCE_HASHES, INTERNAL_OPENING_SAMPLE_CAPABILITY, initializeOpeningSampleDocuments, openOpeningSampleDocuments],
-    [envelopePath, EDITORIAL_ENVELOPE_SOURCE_HASHES, INTERNAL_EDITORIAL_ENVELOPE_CAPABILITY, initializeEditorialEnvelopeDocuments, openEditorialEnvelopeDocuments],
+    [samplePath, OPENING_SAMPLE_PATHS, INTERNAL_OPENING_SAMPLE_CAPABILITY, initializeOpeningSampleDocuments, openOpeningSampleDocuments],
+    [envelopePath, EDITORIAL_ENVELOPE_PATHS, INTERNAL_EDITORIAL_ENVELOPE_CAPABILITY, initializeEditorialEnvelopeDocuments, openEditorialEnvelopeDocuments],
   ]) {
     const sources = Object.fromEntries(Object.entries(pins).map(([logicalPath, expectedSourceHash]) => {
       const binding = bindings.get(logicalPath);

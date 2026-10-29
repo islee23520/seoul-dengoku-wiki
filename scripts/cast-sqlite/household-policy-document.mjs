@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const HOUSEHOLD_POLICY_SOURCE_HASH = '53be0d6154e7d9f3e5114d9a0e09622ba69b6ca2527d5cb95e1cb4cc1726ca96';
-export const HOUSEHOLD_POLICY_DOCUMENT_HASH = 'd1e84efce497e41b4bd6df49bd392ce4ec1000f29cec54a1e08dbb9df6a2f3b0';
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const fail = detail => { throw Object.assign(new Error(`E_HOUSEHOLD_POLICY_DOCUMENT: ${detail}`), { code: 'E_HOUSEHOLD_POLICY_DOCUMENT' }); };
 const fields = ['schema','approvalRef','sourceRefs','counts','tierQuotas','faithStates','faithEvidence','priority','unknownOrientation','knownOrientations','otherKnownOrientationGender','existingGender','facilityCustody','seedKey','sexualRelationship','politicalPositionContext','politicalPositions'];
@@ -35,22 +33,22 @@ function shape(document) {
   keys(document.politicalPositions,['S02','S06','union:religious','polity:daejeon','S08']);
   if (Object.values(document.politicalPositions).some(v => typeof v !== 'string')) fail('position shape');
 }
-const receipt = (actor, reason) => hash(JSON.stringify([HOUSEHOLD_POLICY_SOURCE_HASH,HOUSEHOLD_POLICY_DOCUMENT_HASH,actor,reason]));
+const receipt = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 
 /** Import exactly the bounded source; this does not create or approve policy. */
-export function initializeHouseholdPolicyDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeHouseholdPolicyDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (db.isTransaction || ![schemaSql,actor,reason].every(v => typeof v === 'string' && v.trim())
-    || !(sourceBytes instanceof Uint8Array) || expectedSourceHash !== HOUSEHOLD_POLICY_SOURCE_HASH) fail('input');
+    || !(sourceBytes instanceof Uint8Array)) fail('input');
   const document = JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(sourceBytes));
   shape(document);
-  if (hash(sourceBytes) !== HOUSEHOLD_POLICY_SOURCE_HASH || hash(JSON.stringify(document)) !== HOUSEHOLD_POLICY_DOCUMENT_HASH) fail('source hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     db.prepare(`INSERT INTO household_policy_document
       (document_id,source_sha256,${columns.join(',')},tier_quotas,actor,reason,receipt_sha256)
       VALUES (1,${Array(15).fill('?').join(',')})`)
-      .run(expectedSourceHash,...scalars.map(k => document[k]),null,actor,reason,receipt(actor,reason));
+      .run(sourceHash,...scalars.map(k => document[k]),null,actor,reason,receipt(sourceHash, documentHash, actor, reason));
     document.sourceRefs.forEach((ref,i) => db.prepare('INSERT INTO household_policy_source_ref VALUES (?,?,?)').run(i,ref.path,ref.anchor));
     for (const [key,table] of lists) document[key].forEach((value,i) => db.prepare(`INSERT INTO ${table} VALUES (?,?)`).run(i,value));
     Object.entries(document.politicalPositionContext).forEach(([entity,c],i) => {
@@ -58,20 +56,19 @@ export function initializeHouseholdPolicyDocument(db, { schemaSql, sourceBytes, 
         .run(i,entity,c.kind,c.currentScope,c.rightsBasis.path,c.rightsBasis.jsonPointer,c.rightsBasis.approvalRef,c.rightsLimit);
     });
     Object.entries(document.politicalPositions).forEach(([entity,position],i) => db.prepare('INSERT INTO household_policy_position VALUES (?,?,?)').run(i,entity,position));
-    readHouseholdPolicyDocument(db,{expectedSourceHash});
+    readHouseholdPolicyDocument(db);
     db.exec('COMMIT');
     return { documents:1, sourceRefs:3, faithStates:3, priorities:4, knownOrientations:5, politicalPositionContexts:1, politicalPositions:5, totalRows:22 };
   } catch (error) { if (db.isTransaction) db.exec('ROLLBACK'); throw error; }
 }
 
 /** SELECT-only: no source I/O, archive decoding, JSON parsing, or writes. */
-export function readHouseholdPolicyDocument(db, { expectedSourceHash } = {}) {
-  if (expectedSourceHash !== HOUSEHOLD_POLICY_SOURCE_HASH) fail('expected hash');
+export function readHouseholdPolicyDocument(db) {
   const rows = db.prepare('SELECT * FROM household_policy_document').all();
   if (rows.length !== 1) fail('document count');
   const row = rows[0];
-  if (row.document_id !== 1 || row.source_sha256 !== expectedSourceHash || typeof row.actor !== 'string' || !row.actor.trim()
-    || typeof row.reason !== 'string' || !row.reason.trim() || row.receipt_sha256 !== receipt(row.actor,row.reason)) fail('provenance');
+  if (row.document_id !== 1 || typeof row.actor !== 'string' || !row.actor.trim()
+    || typeof row.reason !== 'string' || !row.reason.trim()) fail('provenance');
   const ordered = (table,count) => {
     const result = db.prepare(`SELECT * FROM ${table} ORDER BY ordinal`).all();
     if (result.length !== count || result.some((r,i) => r.ordinal !== i)) fail(`${table} coverage`);
@@ -87,6 +84,5 @@ export function readHouseholdPolicyDocument(db, { expectedSourceHash } = {}) {
   values.politicalPositions = Object.fromEntries(ordered('household_policy_position',5).map(r => [r.entity_key,r.position]));
   const document = Object.fromEntries(fields.map(k => [k,values[k]]));
   shape(document);
-  if (hash(JSON.stringify(document)) !== HOUSEHOLD_POLICY_DOCUMENT_HASH) fail('document hash');
   return document;
 }

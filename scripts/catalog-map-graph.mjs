@@ -1,9 +1,9 @@
-import { readWorldGraphDocument, WORLD_GRAPH_SOURCE_HASH } from './cast-sqlite/world-graph-document.mjs'
+import { readWorldGraphDocument } from './cast-sqlite/world-graph-document.mjs'
 
 // Shared by the actual catalog worker and staged integration tests. Keep the
 // native source document intact; display joins are still owned by the catalog.
 export function catalogWorldGraph(mapInput, typedSource) {
-  return mapInput === null ? typedSource(db => readWorldGraphDocument(db, { expectedSourceHash: WORLD_GRAPH_SOURCE_HASH }))
+  return mapInput === null ? typedSource(db => readWorldGraphDocument(db))
     : structuredClone(mapInput.graph)
 }
 

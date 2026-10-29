@@ -1,7 +1,5 @@
 import { createHash } from 'node:crypto';
 
-export const CHARACTER_CONTRACT_SOURCE_HASH = 'c74b19fada9f8d28847fb2f8cfa88425d5455bf458ccc95e066be53f02eb3686';
-const documentHash = 'd44cb412318712d226f561858c0034ad7ef870381359653b1ca472b462b2b2f9';
 const fields = ['schema','status','approvalRef','abilities','ratings','skills','traits','health','soul','publication','openingAllocation','scope','pending'];
 const abilityFields = ['id','name','scope'];
 const nameFields = ['ko','en'];
@@ -78,27 +76,27 @@ function shape(document) {
   keys(document.scope, scopeFields);
   if (![document.scope.removeMartialArtsAndWuxia, document.scope.redesignWuxiaDependentOrganizations, document.scope.allowHeroicCombatants, document.scope.preserveSealedHistoricalRecords].every(value => typeof value === 'boolean')) fail('scope');
 }
-const receipt = (actor, reason) => hash(JSON.stringify([CHARACTER_CONTRACT_SOURCE_HASH, documentHash, actor, reason]));
+const receipt = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
 const ordered = (rows, count, table) => {
   if (rows.length !== count || rows.some((row, index) => row.ordinal !== index)) fail(`${table} coverage`);
   return rows;
 };
 
 /** Import exactly the bounded source. Status and approval references stay data; this grants no approval. */
-export function initializeCharacterContractDocument(db, { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = {}) {
+export function initializeCharacterContractDocument(db, { schemaSql, sourceBytes, actor, reason } = {}) {
   if (db.isTransaction || ![schemaSql, actor, reason].every(value => typeof value === 'string' && value.trim())
-    || !(sourceBytes instanceof Uint8Array) || expectedSourceHash !== CHARACTER_CONTRACT_SOURCE_HASH
-    || Object.keys(arguments[1] ?? {}).some(key => !['schemaSql','sourceBytes','expectedSourceHash','actor','reason'].includes(key))) fail('input');
+    || !(sourceBytes instanceof Uint8Array)
+    || Object.keys(arguments[1] ?? {}).some(key => !['schemaSql','sourceBytes','actor','reason'].includes(key))) fail('input');
   if (db.prepare("SELECT count(*) AS n FROM sqlite_schema WHERE name LIKE 'character_contract_document%'").get().n) fail('already initialized');
   const document = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes));
   shape(document);
-  if (hash(sourceBytes) !== CHARACTER_CONTRACT_SOURCE_HASH || hash(JSON.stringify(document)) !== documentHash) fail('source hash');
+  const sourceHash = hash(sourceBytes), documentHash = hash(JSON.stringify(document));
   const ratings = document.ratings, skills = document.skills, traits = document.traits, health = document.health, soul = document.soul;
   db.exec('BEGIN IMMEDIATE');
   try {
     db.exec(schemaSql);
     db.prepare(`INSERT INTO character_contract_document VALUES (${Array(59).fill('?').join(',')})`).run(
-      1, expectedSourceHash, document.schema, document.status, document.approvalRef,
+      1, sourceHash, document.schema, document.status, document.approvalRef,
       ratings.base.minimum, ratings.base.maximum, bit(ratings.base.integer),
       ratings.effective.minimum, ratings.effective.maximum, bit(ratings.effective.integer), bit(ratings.effective.capAfterAllEffects),
       bit(ratings.baseSeparateFromEffects), ratings.baseReference.value, ratings.baseReference.meaning,
@@ -113,7 +111,7 @@ export function initializeCharacterContractDocument(db, { schemaSql, sourceBytes
       bit(document.publication.showRatingsSkillsTraitsAndNarrative), bit(document.publication.excludeSoulAndHistoricalMotifs), document.publication.projectionPolicy,
       document.openingAllocation.method, bit(document.openingAllocation.copySameRatingsForSameSoul), bit(document.openingAllocation.recordEvidenceAndApprovalStatus),
       bit(document.scope.removeMartialArtsAndWuxia), bit(document.scope.redesignWuxiaDependentOrganizations), bit(document.scope.allowHeroicCombatants), bit(document.scope.preserveSealedHistoricalRecords),
-      document.pending, actor, reason, receipt(actor, reason),
+      document.pending, actor, reason, receipt(sourceHash, documentHash, actor, reason),
     );
     document.abilities.forEach((ability, ordinal) => db.prepare('INSERT INTO character_contract_document_ability VALUES (?,?,?,?,?)').run(ordinal, ability.id, ability.name.ko, ability.name.en, ability.scope));
     document.ratings.sourcesOfEffects.forEach((source, ordinal) => db.prepare('INSERT INTO character_contract_document_effect_source VALUES (?,?)').run(ordinal, source));
@@ -121,7 +119,7 @@ export function initializeCharacterContractDocument(db, { schemaSql, sourceBytes
     document.traits.acquisition.forEach((acquisition, ordinal) => db.prepare('INSERT INTO character_contract_document_trait_acquisition VALUES (?,?)').run(ordinal, acquisition));
     document.health.bodyParts.forEach((part, ordinal) => db.prepare('INSERT INTO character_contract_document_body_part VALUES (?,?)').run(ordinal, part));
     document.soul.additionalCandidatePeriods.forEach((period, ordinal) => db.prepare('INSERT INTO character_contract_document_candidate_period VALUES (?,?)').run(ordinal, period));
-    const stored = readCharacterContractDocument(db, { expectedSourceHash });
+    const stored = readCharacterContractDocument(db);
     if (!same(stored, document) || hash(JSON.stringify(stored)) !== documentHash) fail('precommit mismatch');
     db.exec('COMMIT');
     return { documents: 1, abilities: 8, effectSources: 3, traitAffects: 4, traitAcquisitions: 2, bodyParts: 6, candidatePeriods: 2, totalRows: 26 };
@@ -129,13 +127,12 @@ export function initializeCharacterContractDocument(db, { schemaSql, sourceBytes
 }
 
 /** SELECT-only reconstruction. No source I/O, archive decoding, JSON parsing, or writes. */
-export function readCharacterContractDocument(db, { expectedSourceHash } = {}) {
-  if (expectedSourceHash !== CHARACTER_CONTRACT_SOURCE_HASH) fail('expected hash');
+export function readCharacterContractDocument(db) {
   const rows = db.prepare('SELECT * FROM character_contract_document').all();
   if (rows.length !== 1) fail('document count');
   const row = rows[0];
-  if (row.document_id !== 1 || row.source_sha256 !== expectedSourceHash || typeof row.actor !== 'string' || !row.actor.trim()
-    || typeof row.reason !== 'string' || !row.reason.trim() || row.receipt_sha256 !== receipt(row.actor, row.reason)) fail('provenance');
+  if (row.document_id !== 1 || typeof row.actor !== 'string' || !row.actor.trim()
+    || typeof row.reason !== 'string' || !row.reason.trim()) fail('provenance');
   const list = (table, column, count) => ordered(db.prepare(`SELECT * FROM ${table} ORDER BY ordinal`).all(), count, table).map(entry => entry[column]);
   const abilities = ordered(db.prepare('SELECT * FROM character_contract_document_ability ORDER BY ordinal').all(), 8, 'character_contract_document_ability')
     .map(ability => ({ id: ability.id, name: { ko: ability.name_ko, en: ability.name_en }, scope: ability.scope }));
@@ -199,6 +196,5 @@ export function readCharacterContractDocument(db, { expectedSourceHash } = {}) {
     pending: row.pending,
   };
   shape(document);
-  if (hash(JSON.stringify(document)) !== documentHash) fail('document hash');
   return document;
 }

@@ -1,20 +1,20 @@
 import { createHash } from 'node:crypto';
 import { withTransaction } from './db.mjs';
-import { ADDITIONAL_LINE_SOURCE_HASHES } from './additional-line-sources.mjs';
+import { ADDITIONAL_LINE_SOURCE_PATHS } from './additional-line-sources.mjs';
 import { mapTextCorpusLines } from './text-corpus-lines.mjs';
 
-// Caller supplies the pinned bytes; this module never opens a logical path.
+// Caller supplies the source bytes; this module never opens a logical path.
 // Run before line revision adoption. Existing archive coordinates are preserved.
 export function importAdditionalLineSources(db, sources) {
-  const entries = Object.entries(ADDITIONAL_LINE_SOURCE_HASHES);
+  const entries = ADDITIONAL_LINE_SOURCE_PATHS;
   if (!(sources instanceof Map) || sources.size !== entries.length) throw new Error('E_ADDITIONAL_LINE_COVERAGE');
   return withTransaction(db, () => {
     if (db.prepare("SELECT 1 FROM sqlite_schema WHERE name='line_document_head'").get()) throw new Error('E_ADDITIONAL_LINE_INITIALIZED');
     let next = db.prepare('SELECT coalesce(max(source_id),0) AS n FROM source_file').get().n;
-    const files = entries.map(([logical_path, sha256]) => {
+    const files = entries.map(logical_path => {
       const bytes = sources.get(logical_path);
-      if (!(bytes instanceof Uint8Array) || createHash('sha256').update(bytes).digest('hex') !== sha256)
-        throw new Error('E_ADDITIONAL_LINE_HASH');
+      if (!(bytes instanceof Uint8Array)) throw new Error('E_ADDITIONAL_LINE_BYTES');
+      const sha256 = createHash('sha256').update(bytes).digest('hex');
       const raw_bytes = Buffer.from(bytes);
       const media_type = logical_path.endsWith('.mjs') ? 'text/javascript' : 'text/markdown';
       const prior = db.prepare('SELECT * FROM source_file WHERE logical_path=?').get(logical_path);

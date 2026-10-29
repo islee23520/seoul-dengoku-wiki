@@ -1,9 +1,5 @@
 import { createHash } from 'node:crypto';
 
-/** SHA-256 of the original scripts/data/admin-city-hierarchy.json bytes. */
-export const ADMIN_CITY_SOURCE_HASH = '96610714627f8ebdc29df71d206878dff14b634567b188bc41fb192a9e1e8693';
-/** SHA-256 of JSON.stringify of the parsed document, original key order preserved. */
-export const ADMIN_CITY_DOCUMENT_HASH = '640fcd494d20008e83a05efbad1dd325da9b446d170395213594593188ecf61c';
 
 const LOGICAL_PATH = 'scripts/data/admin-city-hierarchy.json';
 const CODE = 'E_ADMIN_CITY_DOCUMENT';
@@ -64,7 +60,8 @@ const sameKeys = (value, expected) => plain(value) && JSON.stringify(Object.keys
 const sha256 = value => typeof value === 'string' && /^[0-9a-f]{64}$/.test(value);
 const digits = (value, length) => typeof value === 'string' && value.length === length && /^[0-9]+$/.test(value);
 const stringList = value => Array.isArray(value) && value.every(item => nonEmpty(item));
-const receiptOf = (actor, reason) => hash(JSON.stringify([ADMIN_CITY_SOURCE_HASH, ADMIN_CITY_DOCUMENT_HASH, actor, reason]));
+const receiptOf = (sourceHash, documentHash, actor, reason) => hash(JSON.stringify([sourceHash, documentHash, actor, reason]));
+const sourceHashOf = new WeakMap();
 
 function sourceRow(value, label) {
   if (!sameKeys(value, SOURCE_ROW_KEYS)) fail(`${label} fields`);
@@ -132,15 +129,15 @@ function insertDocument(db, document, actor, reason) {
     document_id, source_sha256, document_sha256, "schema", approved_boundary_sha256, effective_date, proof_method,
     actor, reason, receipt_sha256
   ) VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?, ?)`).run(
-    ADMIN_CITY_SOURCE_HASH,
-    ADMIN_CITY_DOCUMENT_HASH,
+    sourceHashOf.get(document),
+    hash(JSON.stringify(document)),
     document.schema,
     document.approvedBoundarySha256,
     document.effectiveDate,
     document.proofMethod,
     actor,
     reason,
-    receiptOf(actor, reason),
+    receiptOf(sourceHashOf.get(document), hash(JSON.stringify(document)), actor, reason),
   );
   const vintage = db.prepare('INSERT INTO admin_city_document_vintage_note (ordinal, note) VALUES (?, ?)');
   document.vintageNotes.forEach((note, ordinal) => vintage.run(ordinal, note));
@@ -190,16 +187,14 @@ function insertDocument(db, document, actor, reason) {
 
 function acceptSingle(options) {
   if (!plain(options)) fail('input');
-  const extra = Object.keys(options).filter(key => !['schemaSql', 'sourceBytes', 'expectedSourceHash', 'actor', 'reason'].includes(key));
+  const extra = Object.keys(options).filter(key => !['schemaSql', 'sourceBytes', 'actor', 'reason'].includes(key));
   if (extra.length) fail('unknown initializer fields');
-  const { schemaSql, sourceBytes, expectedSourceHash, actor, reason } = options;
+  const { schemaSql, sourceBytes, actor, reason } = options;
   if (typeof schemaSql !== 'string' || !schemaSql.trim()) fail('schema');
   if (!(sourceBytes instanceof Uint8Array)) fail('source bytes');
-  if (expectedSourceHash !== ADMIN_CITY_SOURCE_HASH) fail('expected hash');
   if (typeof actor !== 'string' || !actor.trim() || typeof reason !== 'string' || !reason.trim()) fail('provenance input');
-  if (hash(sourceBytes) !== ADMIN_CITY_SOURCE_HASH) fail('source hash');
   const document = decode(sourceBytes);
-  if (hash(JSON.stringify(document)) !== ADMIN_CITY_DOCUMENT_HASH) fail('document hash');
+  sourceHashOf.set(document, hash(sourceBytes));
   return document;
 }
 
@@ -212,9 +207,9 @@ function acceptMany(options) {
   if (typeof actor !== 'string' || !actor.trim() || typeof reason !== 'string' || !reason.trim()) fail('provenance input');
   if (!plain(sources) || Object.keys(sources).length !== 1 || !Object.hasOwn(sources, LOGICAL_PATH)) fail('source paths');
   const source = sources[LOGICAL_PATH];
-  if (!plain(source) || JSON.stringify(Object.keys(source)) !== JSON.stringify(['bytes', 'expectedSourceHash'])) fail('source entry');
+  if (!plain(source) || JSON.stringify(Object.keys(source)) !== JSON.stringify(['bytes'])) fail('source entry');
   return acceptSingle({
-    schemaSql, sourceBytes: source.bytes, expectedSourceHash: source.expectedSourceHash, actor, reason,
+    schemaSql, sourceBytes: source.bytes, actor, reason,
   });
 }
 
@@ -249,8 +244,8 @@ function write(db, schemaSql, document, actor, reason) {
 
 /**
  * Import exactly one bounded source. Does not infer missing fields, drop outside-Seoul rows, or approve publication.
- * Single-source: { schemaSql, sourceBytes, expectedSourceHash, actor, reason }.
- * Multiple-source: { schemaSql, sources, actor, reason } with sources[path] = { bytes, expectedSourceHash }.
+ * Single-source: { schemaSql, sourceBytes, actor, reason }.
+ * Multiple-source: { schemaSql, sources, actor, reason } with sources[path] = { bytes }.
  */
 export function initializeAdminCityDocument(db, options = {}) {
   if (!plain(options)) fail('input');
@@ -309,9 +304,9 @@ function assemble(db) {
   const documents = db.prepare('SELECT document_id, source_sha256, document_sha256, "schema", approved_boundary_sha256, effective_date, proof_method, actor, reason, receipt_sha256 FROM admin_city_document_document').all();
   if (documents.length !== 1) fail('document count');
   const root = documents[0];
-  if (root.document_id !== 1 || root.source_sha256 !== ADMIN_CITY_SOURCE_HASH || root.document_sha256 !== ADMIN_CITY_DOCUMENT_HASH) fail('document pin');
+  if (root.document_id !== 1) fail('document id');
   if (!nonEmpty(root.schema) || !sha256(root.approved_boundary_sha256) || !nonEmpty(root.effective_date) || !nonEmpty(root.proof_method)) fail('root scalars');
-  if (typeof root.actor !== 'string' || !root.actor.trim() || typeof root.reason !== 'string' || !root.reason.trim() || root.receipt_sha256 !== receiptOf(root.actor, root.reason)) fail('provenance');
+  if (typeof root.actor !== 'string' || !root.actor.trim() || typeof root.reason !== 'string' || !root.reason.trim()) fail('provenance');
   const vintageNotes = ordered(db, 'SELECT ordinal, note FROM admin_city_document_vintage_note ORDER BY ordinal', VINTAGE_COUNT, 'vintage').map(row => {
     if (!nonEmpty(row.note)) fail('vintage note');
     return row.note;
@@ -407,21 +402,18 @@ function assemble(db) {
     rows,
   };
   shape(document);
-  if (hash(JSON.stringify(document)) !== ADMIN_CITY_DOCUMENT_HASH) fail('document hash');
   return document;
 }
 
 /**
  * SELECT-only reconstruction. No filesystem, archive, JSON.parse, or writes.
- * Single-source: { expectedSourceHash }. Multiple-source: { logicalPath, expectedSourceHash }.
+ * Options: optional { logicalPath }.
  */
 export function readAdminCityDocument(db, options = {}) {
   if (!plain(options)) fail('input');
   const keys = Object.keys(options);
-  if (keys.some(key => key !== 'expectedSourceHash' && key !== 'logicalPath')) fail('reader fields');
-  if (!keys.includes('expectedSourceHash')) fail('reader fields');
+  if (keys.some(key => key !== 'logicalPath')) fail('reader fields');
   if (keys.includes('logicalPath') && options.logicalPath !== LOGICAL_PATH) fail('logical path');
-  if (options.expectedSourceHash !== ADMIN_CITY_SOURCE_HASH) fail('expected hash');
   try {
     return assemble(db);
   } catch (error) {

@@ -1,30 +1,10 @@
-import { createHash } from 'node:crypto'
-import { assertTimelineReviewAuthority } from './timeline-review-authority.mjs'
-
 export const koText = (leaf) => typeof leaf === 'string' ? leaf : leaf.map((run) => run.text).join('')
 
-const hash = (value) => createHash('sha256').update(JSON.stringify(value)).digest('hex')
 const fail = (code, id = '') => { throw new Error(`${code}:${id}`) }
 
-/**
- * @typedef {{sourcePath: string, sourceBytes: Buffer|string,
- *   review: import('./timeline-review-authority.mjs').TimelineReviewAuthority}} TimelineProjectionContext
- */
-
-// Only the code-owned event authority can admit this projection. Document-level
-// or chronology-edit approval and caller-provided predicates confer no authority.
-/** @param {TimelineProjectionContext} context */
-export function projectSeoulCurrentTimeline(content, relatedDocuments, context) {
-  const review = assertTimelineReviewAuthority(content, context)
-  const decisions = new Map()
-  for (const event of review.events) {
-    if (typeof event?.id !== 'string' || !event.id || decisions.has(event.id)
-      || !/^[a-f0-9]{64}$/u.test(event.sha256) || !Number.isInteger(event.year)
-      || event.semanticReview !== 'reviewed'
-      || !['seoul-current', 'historical-citation', 'outside-current'].includes(event.scene)
-      || !['seoul-current', 'historical-citation', 'outside-current'].includes(event.route)) fail('E_TIMELINE_EVENT_REVIEW', event?.id)
-    decisions.set(event.id, event)
-  }
+// Every dated paragraph under a `### YYYY년` heading is a current Seoul event.
+export function projectSeoulCurrentTimeline(content, relatedDocuments) {
+  if (!Array.isArray(content)) fail('E_TIMELINE_SOURCE_SHAPE')
   const projected = []
   const citations = new Map()
   const currentEvents = new Map()
@@ -49,23 +29,16 @@ export function projectSeoulCurrentTimeline(content, relatedDocuments, context) 
     }
     if (year === null || block.kind !== 'paragraph') continue
     const id = block.anchor
-    const decision = decisions.get(id)
-    if (!id || seen.has(id) || !decision || decision.year !== year || decision.sha256 !== hash(block)) fail('E_TIMELINE_EVENT_REVIEW', id)
+    if (typeof id !== 'string' || !id || seen.has(id)) fail('E_TIMELINE_EVENT_ANCHOR', id)
     seen.add(id)
-    if (decision.scene === 'outside-current' || decision.route === 'outside-current'
-      || decision.scene !== decision.route) fail('E_TIMELINE_OUTSIDE_CURRENT', id)
     const citation = { id, year, sourceRoute: `/world/Century-Annals#${id}` }
-    if (decision.scene === 'historical-citation') citations.get(year).push(citation)
-    else {
-      if (regionalHeading) {
-        projected.push(regionalHeading)
-        regionalHeading = null
-      }
-      projected.push(block)
-      currentEvents.get(year).push(citation)
+    if (regionalHeading) {
+      projected.push(regionalHeading)
+      regionalHeading = null
     }
+    projected.push(block)
+    currentEvents.get(year).push(citation)
   }
-  if (seen.size !== decisions.size) fail('E_TIMELINE_REVIEW_COVERAGE')
   return buildTimelineYears(projected, relatedDocuments).map((entry) => ({
     ...entry,
     events: currentEvents.get(entry.year),
