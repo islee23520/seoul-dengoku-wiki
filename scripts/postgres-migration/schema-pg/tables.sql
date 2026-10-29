@@ -1,7 +1,7 @@
 -- tables.sql — CREATE TABLE + CREATE INDEX (wiki, wiki_private)
 -- 생성물: scripts/postgres-migration/ddl-convert.mjs (기계 변환, 수동 편집 금지)
--- source_sha256: a3c3edc3d73c4a2248963259e08fe4da2108fc82703079af0ed28dcc4b53a365
--- code_commit: 2326bf1df171f42dd9853d46ee0466a50bcd17e3
+-- source_sha256: 9e7bb6fc6b6638d16d020e4793c9042265a9e82a5363ba0bb462e5f4ecd7e0de
+-- code_commit: 1558452c3165f8eef0e53463708eb840d4ccc442
 -- 계약: apply.sql이 이 파일만 단일 트랜잭션으로 적용한다. 재실행은 비어 있는 새 DB에서만 유효하다(IF NOT EXISTS 없음 — 의도적 계약).
 
 CREATE SCHEMA IF NOT EXISTS wiki;

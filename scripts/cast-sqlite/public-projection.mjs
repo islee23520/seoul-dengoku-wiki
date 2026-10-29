@@ -36,16 +36,55 @@ export function readPublicProjection(db, kind) {
   if (!PUBLIC_PROJECTION_KINDS.includes(kind)) throw new Error('E_PUBLIC_PROJECTION_KIND')
   const root = db.prepare('SELECT * FROM public_projection_document WHERE kind=?').get(kind)
   if (!root) throw new Error('E_PUBLIC_PROJECTION_SOURCE')
-  if (kind === 'office') return { slug: root.slug, removeAnchor: root.remove_anchor,
+  if (kind === 'office') return {
+    slug: root.slug, removeAnchor: root.remove_anchor,
     replacements: db.prepare('SELECT * FROM public_office_replacement ORDER BY ordinal').all().map(row => ({
       anchor: row.anchor, ...(row.row_number === null ? {} : { row: row.row_number, column: row.column_number }),
       locale: row.locale, before: row.before_text, after: row.after_text,
-    })) }
-  return { slug: root.slug, summaries: db.prepare('SELECT * FROM public_map_summary ORDER BY ordinal').all()
-    .map(row => ({ locale: row.locale, before: row.before_text, after: row.after_text })),
-  blocks: db.prepare('SELECT * FROM public_map_block ORDER BY ordinal').all().map(row => {
-    const locales = db.prepare('SELECT * FROM public_map_block_locale WHERE block_ordinal=? ORDER BY ordinal').all(row.ordinal)
-    return { anchor: row.anchor, before: Object.fromEntries(locales.map(value => [value.locale, value.before_text])),
-      after: row.removed ? null : Object.fromEntries(locales.map(value => [value.locale, value.after_text])) }
-  }) }
+    }))
+  }
+  return {
+    slug: root.slug, summaries: db.prepare('SELECT * FROM public_map_summary ORDER BY ordinal').all()
+      .map(row => ({ locale: row.locale, before: row.before_text, after: row.after_text })),
+    blocks: db.prepare('SELECT * FROM public_map_block ORDER BY ordinal').all().map(row => {
+      const locales = db.prepare('SELECT * FROM public_map_block_locale WHERE block_ordinal=? ORDER BY ordinal').all(row.ordinal)
+      return {
+        anchor: row.anchor, before: Object.fromEntries(locales.map(value => [value.locale, value.before_text])),
+        after: row.removed ? null : Object.fromEntries(locales.map(value => [value.locale, value.after_text]))
+      }
+    })
+  }
+}
+
+// PostgreSQL companion; synchronous generation keeps readPublicProjection.
+export async function readPublicProjectionAsync(db, kind) {
+  if (!PUBLIC_PROJECTION_KINDS.includes(kind)) throw new Error('E_PUBLIC_PROJECTION_KIND')
+  const root = await db.get('SELECT * FROM wiki.public_projection_document WHERE kind=$1', [kind])
+  if (!root) throw new Error('E_PUBLIC_PROJECTION_SOURCE')
+  if (kind === 'office') return {
+    slug: root.slug, removeAnchor: root.remove_anchor,
+    replacements: (await db.all('SELECT * FROM wiki.public_office_replacement ORDER BY ordinal')).map(row => ({
+      anchor: row.anchor, ...(row.row_number === null ? {} : { row: row.row_number, column: row.column_number }),
+      locale: row.locale, before: row.before_text, after: row.after_text,
+    }))
+  }
+  const summaries = await db.all('SELECT * FROM wiki.public_map_summary ORDER BY ordinal')
+  const blocks = await db.all('SELECT * FROM wiki.public_map_block ORDER BY ordinal')
+  const locales = await db.all('SELECT * FROM wiki.public_map_block_locale ORDER BY block_ordinal,ordinal')
+  const localesByBlock = new Map()
+  for (const row of locales) {
+    if (!localesByBlock.has(row.block_ordinal)) localesByBlock.set(row.block_ordinal, [])
+    localesByBlock.get(row.block_ordinal).push(row)
+  }
+  return {
+    slug: root.slug,
+    summaries: summaries.map(row => ({ locale: row.locale, before: row.before_text, after: row.after_text })),
+    blocks: blocks.map(row => {
+      const values = localesByBlock.get(row.ordinal) ?? []
+      return {
+        anchor: row.anchor, before: Object.fromEntries(values.map(value => [value.locale, value.before_text])),
+        after: row.removed ? null : Object.fromEntries(values.map(value => [value.locale, value.after_text]))
+      }
+    })
+  }
 }

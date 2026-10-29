@@ -1,7 +1,7 @@
 -- constraints.sql — FK 제약 (NOT VALID, 데이터 적재 후 검증)
 -- 생성물: scripts/postgres-migration/ddl-convert.mjs (기계 변환, 수동 편집 금지)
--- source_sha256: a3c3edc3d73c4a2248963259e08fe4da2108fc82703079af0ed28dcc4b53a365
--- code_commit: 2326bf1df171f42dd9853d46ee0466a50bcd17e3
+-- source_sha256: 9e7bb6fc6b6638d16d020e4793c9042265a9e82a5363ba0bb462e5f4ecd7e0de
+-- code_commit: 1558452c3165f8eef0e53463708eb840d4ccc442
 -- 계약: 데이터 COPY 후 `ALTER TABLE ... VALIDATE CONSTRAINT`로 검증한다. tables.sql에는 FK가 의도적으로 없다.
 
 SET ROLE wiki_owner;

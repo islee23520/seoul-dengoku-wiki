@@ -1,10 +1,10 @@
 {
   "migration_id": "postgres-migration-20261026",
-  "generated_at": "2026-10-26T15:00:55.175Z",
+  "generated_at": "2026-10-29T13:12:52.160Z",
   "sources": {
     "canonical": {
-      "path": "data/canonical/wiki-cast.sqlite",
-      "sha256": "a3c3edc3d73c4a2248963259e08fe4da2108fc82703079af0ed28dcc4b53a365",
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku-wiki/data/canonical/wiki-cast.sqlite",
+      "sha256": "9e7bb6fc6b6638d16d020e4793c9042265a9e82a5363ba0bb462e5f4ecd7e0de",
       "application_id": 1464030033,
       "schema_version": 5,
       "table_count": 1006,
@@ -12819,7 +12819,7 @@
         {
           "name": "document_revision",
           "pg_name": "document_revision",
-          "row_count": 108,
+          "row_count": 109,
           "columns": [
             {
               "name": "revision_id",
@@ -13004,7 +13004,7 @@
         {
           "name": "document_revision_seal",
           "pg_name": "document_revision_seal",
-          "row_count": 108,
+          "row_count": 109,
           "columns": [
             {
               "name": "revision_id",
@@ -35601,7 +35601,7 @@
         {
           "name": "document_revision_text_document",
           "pg_name": "document_revision_text_document",
-          "row_count": 108,
+          "row_count": 109,
           "columns": [
             {
               "name": "revision_id",
@@ -35765,7 +35765,7 @@
         {
           "name": "document_revision_text_document_anchor",
           "pg_name": "document_revision_text_document_anchor",
-          "row_count": 52972,
+          "row_count": 53136,
           "columns": [
             {
               "name": "revision_id",
@@ -35893,7 +35893,7 @@
         {
           "name": "document_revision_text_document_category",
           "pg_name": "document_revision_text_document_category",
-          "row_count": 90,
+          "row_count": 91,
           "columns": [
             {
               "name": "revision_id",
@@ -35980,7 +35980,7 @@
         {
           "name": "document_revision_text_document_history",
           "pg_name": "document_revision_text_document_history",
-          "row_count": 180,
+          "row_count": 183,
           "columns": [
             {
               "name": "revision_id",
@@ -36236,7 +36236,7 @@
         {
           "name": "document_revision_text_document_list_item",
           "pg_name": "document_revision_text_document_list_item",
-          "row_count": 12503,
+          "row_count": 12694,
           "columns": [
             {
               "name": "revision_id",
@@ -36339,7 +36339,7 @@
         {
           "name": "document_revision_text_document_locale",
           "pg_name": "document_revision_text_document_locale",
-          "row_count": 216,
+          "row_count": 218,
           "columns": [
             {
               "name": "revision_id",
@@ -36438,7 +36438,7 @@
         {
           "name": "document_revision_text_document_node",
           "pg_name": "document_revision_text_document_node",
-          "row_count": 20445,
+          "row_count": 20512,
           "columns": [
             {
               "name": "revision_id",
@@ -36561,7 +36561,7 @@
         {
           "name": "document_revision_text_document_run",
           "pg_name": "document_revision_text_document_run",
-          "row_count": 33273,
+          "row_count": 33317,
           "columns": [
             {
               "name": "revision_id",
@@ -36700,7 +36700,7 @@
         {
           "name": "document_revision_text_document_slot",
           "pg_name": "document_revision_text_document_slot",
-          "row_count": 106370,
+          "row_count": 106858,
           "columns": [
             {
               "name": "revision_id",
@@ -36815,7 +36815,7 @@
         {
           "name": "document_revision_text_document_source_ref",
           "pg_name": "document_revision_text_document_source_ref",
-          "row_count": 181,
+          "row_count": 182,
           "columns": [
             {
               "name": "revision_id",
@@ -99662,7 +99662,7 @@
         "configured_path": {
           "env": "WIKI_EDITORIAL_DB",
           "default": "editorial.sqlite",
-          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/postgres-migration-wave2-20261026/editorial.sqlite",
+          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/pg-main-clean-20261029/editorial.sqlite",
           "exists": false
         },
         "schema_source_modules": [
@@ -99689,7 +99689,7 @@
         "configured_path": {
           "env": "WIKI_SOUL_ASSIGNMENT_DB",
           "default": "soul-assignments.sqlite",
-          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/postgres-migration-wave2-20261026/soul-assignments.sqlite",
+          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/pg-main-clean-20261029/soul-assignments.sqlite",
           "exists": false
         },
         "schema_source_modules": [
@@ -99723,7 +99723,7 @@
         "configured_path": {
           "env": "WIKI_EDITORIAL_PROFILE_DB",
           "default": "editorial-profiles.sqlite",
-          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/postgres-migration-wave2-20261026/editorial-profiles.sqlite",
+          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/pg-main-clean-20261029/editorial-profiles.sqlite",
           "exists": false
         },
         "schema_source_modules": [
@@ -99768,7 +99768,7 @@
         "configured_path": {
           "env": "WIKI_SOUL_CANDIDATE_DB",
           "default": "candidates.sqlite",
-          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/postgres-migration-wave2-20261026/candidates.sqlite",
+          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/pg-main-clean-20261029/candidates.sqlite",
           "exists": false
         },
         "schema_source_modules": [
@@ -99798,7 +99798,7 @@
         "configured_path": {
           "env": "WIKI_SOUL_REVIEW_DB",
           "default": "review.sqlite",
-          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/postgres-migration-wave2-20261026/review.sqlite",
+          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/pg-main-clean-20261029/review.sqlite",
           "exists": false
         },
         "schema_source_modules": [
@@ -99845,7 +99845,7 @@
         "configured_path": {
           "env": "WIKI_SOUL_BATCH_DB",
           "default": "batches.sqlite",
-          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/postgres-migration-wave2-20261026/batches.sqlite",
+          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/pg-main-clean-20261029/batches.sqlite",
           "exists": false
         },
         "schema_source_modules": [
@@ -99877,7 +99877,7 @@
         "configured_path": {
           "env": "WIKI_OPENING_SAMPLE_DB",
           "default": "captured-opening-sample-20261021.sqlite",
-          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/postgres-migration-wave2-20261026/captured-opening-sample-20261021.sqlite",
+          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/pg-main-clean-20261029/captured-opening-sample-20261021.sqlite",
           "exists": false
         },
         "schema_source_modules": [
@@ -99903,7 +99903,7 @@
         "configured_path": {
           "env": "WIKI_EDITORIAL_ENVELOPE_DB",
           "default": "captured-editorial-envelopes-20261021.sqlite",
-          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/postgres-migration-wave2-20261026/captured-editorial-envelopes-20261021.sqlite",
+          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/pg-main-clean-20261029/captured-editorial-envelopes-20261021.sqlite",
           "exists": false
         },
         "schema_source_modules": [
@@ -99953,7 +99953,7 @@
         "configured_path": {
           "env": null,
           "default": ".omo/private/seoul-migration/sqlite-authority-20261021/scope-atlas-reader-capture-20261021.sqlite",
-          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/postgres-migration-wave2-20261026/.omo/private/seoul-migration/sqlite-authority-20261021/scope-atlas-reader-capture-20261021.sqlite",
+          "resolved": "/Users/ilseoblee/workspace/seoul-dengoku-wiki-wt/pg-main-clean-20261029/.omo/private/seoul-migration/sqlite-authority-20261021/scope-atlas-reader-capture-20261021.sqlite",
           "exists": false
         },
         "schema_source_modules": [

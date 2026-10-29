@@ -1,7 +1,7 @@
 -- guards.sql — 불변 가드 트리거 (데이터 적재 후 설치)
 -- 생성물: scripts/postgres-migration/ddl-convert.mjs (기계 변환, 수동 편집 금지)
--- source_sha256: a3c3edc3d73c4a2248963259e08fe4da2108fc82703079af0ed28dcc4b53a365
--- code_commit: b122bdae73bcc9f10ea19d6c9f1da2d9d4e2e9fe
+-- source_sha256: 9e7bb6fc6b6638d16d020e4793c9042265a9e82a5363ba0bb462e5f4ecd7e0de
+-- code_commit: 1558452c3165f8eef0e53463708eb840d4ccc442
 -- 계약: SQLite 트리거를 plpgsql 가드 함수로 기계 변환한다. COPY 간섭을 피하기 위해 적재 후 설치한다.
 
 SET ROLE wiki_owner;

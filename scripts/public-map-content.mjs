@@ -1,15 +1,31 @@
 import { openReadOnly } from './cast-sqlite/db.mjs'
-import { readPublicProjection } from './cast-sqlite/public-projection.mjs'
+import { readPublicProjection, readPublicProjectionAsync } from './cast-sqlite/public-projection.mjs'
 import { fileURLToPath } from 'node:url'
 
-export const mapProjection = (() => {
+// Preserve property-style synchronous consumers without opening SQLite on import.
+// The API replaces this lazy binding with its PostgreSQL projection before use.
+function synchronousProjection() {
+  if (mapProjection !== lazyProjection) return mapProjection
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? fileURLToPath(new URL('../data/canonical/wiki-cast.sqlite', import.meta.url)))
-  try { return readPublicProjection(db, 'map') } finally { db.close() }
-})()
-const projection = mapProjection
+  try { mapProjection = readPublicProjection(db, 'map') } finally { db.close() }
+  return mapProjection
+}
+const lazyProjection = new Proxy({}, {
+  get: (_target, key) => Reflect.get(synchronousProjection(), key),
+  ownKeys: () => Reflect.ownKeys(synchronousProjection()),
+  getOwnPropertyDescriptor: (_target, key) => Reflect.getOwnPropertyDescriptor(synchronousProjection(), key),
+})
+export let mapProjection = lazyProjection
+
+/** Load once before serving. The live binding is process-wide, not per-server. */
+export async function loadMapProjection(db) {
+  mapProjection = await readPublicProjectionAsync(db, 'map')
+  return mapProjection
+}
 
 // Only the public reader boundary changes; approved authoring and its receipts stay intact.
 export function publicMapContent(document) {
+  const projection = mapProjection
   if (document.slug !== projection.slug) return document
   const result = structuredClone(document)
   for (const row of projection.summaries) {

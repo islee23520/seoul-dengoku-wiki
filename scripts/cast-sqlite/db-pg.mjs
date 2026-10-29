@@ -144,7 +144,7 @@ export function createReader({ connectionString = process.env.WIKI_DOCUMENT_PG, 
       { code: 'E_PG_CONFIG' },
     );
   }
-  if (role !== undefined && (!typeof role === 'string' || !ROLE_NAME.test(role))) {
+  if (role !== undefined && (typeof role !== 'string' || !ROLE_NAME.test(role))) {
     throw Object.assign(new Error(`E_PG_CONFIG: invalid role name ${JSON.stringify(role)}`), { code: 'E_PG_CONFIG' });
   }
   const pool = new pg.Pool(role ? { connectionString: url, options: `-c role=${role}` } : { connectionString: url });

@@ -2,7 +2,19 @@
 
 규칙: 한 번에 하나의 모듈. 현재 모듈만 진행하고, 로컬 검증 → commit/push → PR 순서로만 완료한다.
 
-## 현재 모듈: InkOS 어댑터 혼합 구조 지원 (feat/inkos-adapter-mixed-structure-20261027)
+## 현재 모듈: PostgreSQL 문서 API 판독
+- [x] 최신 main의 문서·생성·데이터 API·프런트엔드 소비 경로와 승인 경계를 조사한다.
+- [ ] PostgreSQL 문서 API와 전이 판독기를 연결하고 main의 공개 정책과 기존 SQLite 호출자를 보존한다.
+- [ ] 일회용 PostgreSQL에서 reader 권한과 실제 HTTP 문서 응답을 검증한다. 운영 자격·권한 변경은 별도로 처리한다.
+- [ ] 검증된 모듈을 commit/push하고 main 대상 PR로 전달한다. 병합은 소유자만 수행한다.
+
+## 후속 모듈: 전체 PostgreSQL 전환
+- [ ] 공통 typed reader 약 100개 파일과 private 입력을 비동기 PostgreSQL 계약으로 전환한다.
+- [ ] 생성 worker, release 일관된 snapshot, 저작 transaction 및 Python→Node 브리지를 전환한다.
+- [ ] 데이터 API·프런트엔드 공개 투영 경로와 기존 계약을 PostgreSQL 정본에 연결한다.
+- [ ] 현재 정본의 스키마·inventory·metadata 생성 및 대사를 검증하고 운영 reader 권한과 배포를 별도 적용한다.
+
+## 이전 모듈: InkOS 어댑터 혼합 구조 지원 (feat/inkos-adapter-mixed-structure-20261027)
 - [x] 브랜치 생성(`test/inkos-adapter-regression-20261026` 위에 스택 — PR #627 의존 명시)
 - [x] `export.mjs`: 문단 전용 거부 → 비문단 노드 skip + 대상 앵커 문단 요구 유지
 - [x] `inkos-adapter-fixture.mjs`: `mixedStructure` 옵션(heading+list 노드, 기본값 불변)
