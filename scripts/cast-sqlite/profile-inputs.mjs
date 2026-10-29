@@ -92,3 +92,20 @@ export function readPublicCharacterProfileInputs(db) {
   if (profiles.size !== ids.size || Object.entries(tables).some(([table, rows]) => table !== 'current_engine_source' && rows.some(row => !used.has(row)))) coverage('unconsumed rows');
   return profiles;
 }
+
+
+/** Async PostgreSQL twin: preloads the same typed rows from wiki.* inside the
+ * caller's read-only transaction and runs the unchanged synchronous
+ * reconstruction against a query-sheet view of them. */
+export async function readPublicCharacterProfileInputsAsync(tx) {
+  const from = /FROM\s+(?:wiki\.)?"?([a-z_0-9]+)"?/i;
+  const tableNames = new Set([...readPublicCharacterProfileInputs.toString().matchAll(/FROM\s+"?([a-z_0-9]+)"?/gi)].map(m => m[1]));
+  const data = {};
+  for (const table of tableNames) data[table] = await tx.all(`SELECT * FROM wiki.${table}`);
+  const sheet = { prepare(sql) {
+    const table = from.exec(sql)?.[1];
+    const rows = data[table] ?? [];
+    return { all: () => rows.map(r => ({ ...r })), get: () => rows[0] ? { ...rows[0] } : undefined };
+  } };
+  return readPublicCharacterProfileInputs(sheet);
+}

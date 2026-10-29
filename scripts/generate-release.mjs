@@ -302,6 +302,14 @@ export async function runRelease({ root, stage, consume, checkpoint = async () =
     const mapInput = mapRequestPath === undefined ? null : await loadMapDataInput(mapRequestPath)
     await mapInput?.recheck()
     await recover(root, checkpoint)
+    // PostgreSQL release sourcing is not complete yet: only clan-crests reads
+    // the exported snapshot while catalog and both portrait workers still
+    // read SQLite, which would mix sources or hit the checked-in LFS pointer.
+    // Reject before creating the transaction directory or staging anything;
+    // delete this guard when every generation worker is PostgreSQL-sourced.
+    if (process.env.WIKI_DOCUMENT_PG) {
+      throw Object.assign(new Error('E_RELEASE_PG_PARTIAL: catalog/portrait workers are not PostgreSQL-sourced yet; full PG generation is not runnable'), { code: 'E_RELEASE_PG_PARTIAL' })
+    }
     const transaction = join(root, transactionName)
     const stageRoot = join(transaction, 'stage')
     const before = await inventory(root)
@@ -350,13 +358,6 @@ export async function runRelease({ root, stage, consume, checkpoint = async () =
         let generationSnapshot = null
         let snapshotReader = null
         if (process.env.WIKI_DOCUMENT_PG) {
-          // Only clan-crests consumes the snapshot so far: catalog and both
-          // portrait workers still read SQLite, which would mix sources or hit
-          // the checked-in LFS pointer. Fail fast instead of half-sourcing a
-          // release; remove this guard as each worker is converted.
-          if (process.env.WIKI_ALLOW_PARTIAL_PG_GENERATION !== '1') {
-            throw Object.assign(new Error('E_RELEASE_PG_PARTIAL: catalog/portrait workers are not PostgreSQL-sourced yet; full PG generation is not runnable. Set WIKI_ALLOW_PARTIAL_PG_GENERATION=1 to override explicitly.'), { code: 'E_RELEASE_PG_PARTIAL' })
-          }
           snapshotReader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
           generationSnapshot = await snapshotReader.exportSnapshot()
           env.WIKI_GENERATION_SNAPSHOT = generationSnapshot.id

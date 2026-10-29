@@ -43,3 +43,15 @@ export function orderDocumentKeys(db, sourceId, document) {
   };
   return visit(document, '');
 }
+
+
+/** Async PostgreSQL twin: identical ordering reconstruction over wiki.document_key_order. */
+export async function orderDocumentKeysAsync(tx, sourceId) {
+  const rows = await tx.all('SELECT json_pointer, ordinal, key FROM wiki.document_key_order WHERE source_id = ? ORDER BY json_pointer, ordinal', [sourceId]);
+  const byPointer = new Map();
+  for (const row of rows) {
+    if (!byPointer.has(row.json_pointer)) byPointer.set(row.json_pointer, []);
+    byPointer.get(row.json_pointer).push(row.key);
+  }
+  return byPointer;
+}

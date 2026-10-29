@@ -221,3 +221,44 @@ export function readAtlasIdentity(db) {
     || candidates.existingK.length !== c.existing_k_count || candidates.candidates.length !== c.candidate_count || candidates.NOTES.length !== c.note_count) fail('E_ATLAS_IDENTITY_COVERAGE', 'context');
   return { registry, candidates, people, routes };
 }
+
+
+/** Async PostgreSQL twin of readAtlasIdentity: preloads the same typed rows
+ * from wiki.* inside the caller's read-only transaction, then runs the
+ * unchanged synchronous reconstruction against a query-sheet view of them so
+ * validation and shape stay identical. */
+export async function readAtlasIdentityAsync(tx) {
+  const tables = ['atlas_identity_archive','atlas_identity_binding','atlas_identity_candidate','atlas_identity_candidate_metadata',
+    'atlas_identity_existing_k','atlas_identity_note','atlas_identity_registry_person','atlas_identity_route','atlas_identity_seal',
+    'atlas_identity_values_metadata','person','person_lineage','person_alias','person_gender','current_profile','narrative','existing_name','source_file','identity_registry_provenance','identity_clan_catalog_provenance'];
+  const data = {};
+  for (const table of tables) {
+    const rows = await tx.all(`SELECT * FROM wiki.${table}`);
+    data[table] = rows;
+  }
+  const sheet = {
+    prepare(sql) {
+      // Statement-style shim: bindings arrive at .all(...)/.get(...) like the
+      // SQLite statement the sync reader expects. Supports the simple single
+      // "column=?" WHERE used for source_file logical-path lookups.
+      const from = /FROM\s+(?:wiki\.)?"?([a-z_0-9]+)"?/i.exec(sql);
+      const where = /WHERE\s+([a-z_0-9]+)\s*=\s*\?/i.exec(sql);
+      const table = from?.[1];
+      const select = (...params) => {
+        let rows = data[table] ?? [];
+        if (where && params.length === 1) rows = rows.filter(row => row[where[1]] === params[0]);
+        return rows;
+      };
+      // Honor the ORDER BY clauses the sync reader uses: one or two comma
+      // separated ascending columns (e.g. person_id, alias_ordinal).
+      const orderClause = /ORDER\s+BY\s+([a-z_0-9]+(?:\s*,\s*[a-z_0-9]+)*)/i.exec(sql)?.[1];
+      const keys = orderClause ? orderClause.split(',').map(k => k.trim()) : [];
+      const cmp = (a, b, key) => (a[key] > b[key] ? 1 : a[key] < b[key] ? -1 : 0);
+      const sorted = (rows) => keys.length
+        ? [...rows].sort((a, b) => keys.reduce((acc, key) => acc || cmp(a, b, key), 0))
+        : rows;
+      return { all: (...params) => sorted(select(...params)).map(r => ({ ...r })), get: (...params) => { const rows = select(...params); return rows[0] ? { ...rows[0] } : undefined; } };
+    },
+  };
+  return readAtlasIdentity(sheet);
+}

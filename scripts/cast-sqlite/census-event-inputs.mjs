@@ -14,9 +14,30 @@ export function readCensusEventDocument(db) {
     || metadata[0].schema_name !== 'seoul-narrative-census-events.v1' || metadata[0].visibility !== 'private'
     || rows.some((row, i) => row.ordinal !== i)
     || hash(JSON.stringify(rows.map(row => row.event_id))) !== metadata[0].event_ids_sha256) fail();
-  const document = { schema: metadata[0].schema_name, visibility: metadata[0].visibility,
-    description: metadata[0].description, eventIds: rows.map(row => row.event_id) };
+  const document = {
+    schema: metadata[0].schema_name, visibility: metadata[0].visibility,
+    description: metadata[0].description, eventIds: rows.map(row => row.event_id)
+  };
   return document;
+}
+
+/** Async PostgreSQL twin of the event identity reader. */
+export async function readCensusEventInputsAsync(tx) {
+  return (await readCensusEventDocumentAsync(tx)).eventIds;
+}
+
+/** Reconstructs and validates the private census event identity document from wiki.* rows. */
+export async function readCensusEventDocumentAsync(tx) {
+  const metadata = await tx.all('SELECT * FROM wiki.census_event_import');
+  const rows = await tx.all('SELECT ordinal,event_id FROM wiki.census_event_identity ORDER BY ordinal');
+  if (metadata.length !== 1 || metadata[0].singleton !== 1
+    || metadata[0].schema_name !== 'seoul-narrative-census-events.v1' || metadata[0].visibility !== 'private'
+    || rows.some((row, i) => row.ordinal !== i)
+    || hash(JSON.stringify(rows.map(row => row.event_id))) !== metadata[0].event_ids_sha256) fail();
+  return {
+    schema: metadata[0].schema_name, visibility: metadata[0].visibility,
+    description: metadata[0].description, eventIds: rows.map(row => row.event_id)
+  };
 }
 
 export function initializeCensusEventInputs(db, { bytes, actor, reason } = {}) {
