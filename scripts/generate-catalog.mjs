@@ -286,7 +286,26 @@ await mkdir(generatedRoot, { recursive: true })
 await mkdir(publicRoot, { recursive: true })
 
 const articleDatabasePath = process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite')
-const atlasPeople = await atlasPeopleContext(loreRoot, { dbPath: articleDatabasePath })
+const atlasPeople = process.env.WIKI_DOCUMENT_PG
+  ? await (async () => {
+      const { createReader } = await import('./cast-sqlite/db-pg.mjs')
+      const { readAtlasIdentityAsync } = await import('./cast-sqlite/atlas-identity.mjs')
+      const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+      const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
+      try {
+        // atlasPeopleContext returns the full readAtlasIdentity result;
+        // preserve the identical shape for the atlas materializer.
+        return await reader.transaction(tx => readAtlasIdentityAsync(tx),
+          { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
+      } finally { await reader.close() }
+    })()
+  : await atlasPeopleContext(loreRoot, { dbPath: articleDatabasePath })
+// The atlas check path is still SQLite-only (checkDatabaseOutputs uses
+// synchronous readers); a PG generation run must not silently open SQLite
+// here. Fail closed until the materializer gains an async PostgreSQL check.
+if (process.env.WIKI_DOCUMENT_PG) {
+  throw Object.assign(new Error('E_ATLAS_CHECK_PG_UNCONVERTED: materializeWorldAtlas check path is not PostgreSQL-sourced yet'), { code: 'E_ATLAS_CHECK_PG_UNCONVERTED' })
+}
 await materializeWorldAtlas({
   atlasPath: resolve(loreRoot, 'World-Narrative-Atlas.json'),
   outDir: loreRoot,
