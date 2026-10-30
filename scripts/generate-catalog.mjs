@@ -63,6 +63,7 @@ import { readCreativeNameDocument } from './cast-sqlite/creative-name-document.m
 import { readLandmarkRoleDocument } from './cast-sqlite/landmark-role-document.mjs'
 import { readClanCatalogDocument } from './cast-sqlite/clan-catalog-document.mjs'
 import { readRetiredTerritoryDocuments, RETIRED_TERRITORY_PATHS } from './cast-sqlite/retired-territory-documents.mjs'
+import { readSourceArchiveAsync } from './cast-sqlite/source-archive.mjs'
 import { readRegionAtlasData } from './cast-sqlite/region-atlas-document.mjs'
 import { loadMapDataInput } from './map-data-input.mjs'
 
@@ -949,8 +950,11 @@ underground.paths = underground.paths.flatMap(path => {
 })
 await writeFile(resolve(publicRoot, 'underground-detail.json'), `${JSON.stringify(underground)}\n`)
 
-typedSourcePgUnconverted('historical rights bytes read')
-const historicalRightsBytes = typedCatalogSource(db => Object.fromEntries(Object.entries({
+// Historical rights raw bytes: PG mode reads the same nine named
+// wiki.source_file paths through the archive twin (stored-sha256 check kept,
+// pin optional); missing rows keep E_CATALOG_RIGHTS_SOURCE while archive
+// integrity failures propagate as E_SOURCE_ARCHIVE.
+const HISTORICAL_RIGHTS_SOURCES = {
   approval: 'scripts/approved-seoul-rights-transition.json',
   existing: 'scripts/historical-inputs/personal-holdings.json',
   allocation: 'scripts/historical-inputs/opening-feudal-allocation.json',
@@ -960,11 +964,23 @@ const historicalRightsBytes = typedCatalogSource(db => Object.fromEntries(Object
   scale: 'scripts/historical-inputs/admin-territorial-scale.json',
   nonowning: 'scripts/approved-daejeon-nonowning-rights.json',
   retirement: 'scripts/approved-outside-current-retirement.json',
-}).map(([key, path]) => {
-  const row = db.prepare('SELECT raw_bytes FROM source_file WHERE logical_path=?').get(path)
-  if (!row) throw new Error(`E_CATALOG_RIGHTS_SOURCE:${path}`)
-  return [key, Buffer.from(row.raw_bytes)]
-})))
+}
+const historicalRightsBytes = process.env.WIKI_DOCUMENT_PG
+  ? await typedCatalogSourceAsync(async tx => Object.fromEntries(
+      await Promise.all(Object.entries(HISTORICAL_RIGHTS_SOURCES).map(async ([key, path]) => {
+        try {
+          return [key, await readSourceArchiveAsync(tx, path)]
+        } catch (error) {
+          if (error && error.missingSource) throw new Error(`E_CATALOG_RIGHTS_SOURCE:${path}`)
+          throw error
+        }
+      })),
+    ))
+  : typedCatalogSource(db => Object.fromEntries(Object.entries(HISTORICAL_RIGHTS_SOURCES).map(([key, path]) => {
+      const row = db.prepare('SELECT raw_bytes FROM source_file WHERE logical_path=?').get(path)
+      if (!row) throw new Error(`E_CATALOG_RIGHTS_SOURCE:${path}`)
+      return [key, Buffer.from(row.raw_bytes)]
+    })))
 const outsideGeometry = (await loadApprovedRightsHistory(historicalRightsBytes)).historical.outside
 const outsideControl = process.env.WIKI_DOCUMENT_PG
   ? await typedCatalogSourceAsync(tx => readRetiredTerritoryDocumentsAsync(tx, { logicalPath: 'lore/regions/outside-control-2126.json' }))
