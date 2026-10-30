@@ -11,7 +11,7 @@ import { readCatalogMetadataDocument, readCatalogMetadataDocumentAsync, CATEGORY
 import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
 import { readNamingLedgerDocument } from './cast-sqlite/naming-ledger-document.mjs'
 import { readIssuedSheetInputsAsync } from './cast-sqlite/issued-sheet-inputs.mjs'
-import { createReader } from './cast-sqlite/db-pg.mjs'
+import { createReader, hasPgConnection } from './cast-sqlite/db-pg.mjs'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 const wikiRoot = join(scriptDir, '..')
@@ -25,14 +25,14 @@ const referenceDir = [process.env.SEOUL_KENSHI_ROOT && join(process.env.SEOUL_KE
 const BANNED_TERMS = ['Kenshi', 'Underrail', 'Gunner', 'clone', '복제']
 const COINED_PHRASES = ['창세 구술', '창세 이야기', '구술로만', '창세의 첫 줄', '창세의 첫 급수협약', '창세는 햇수 없는 구술']
 async function pgSource(read) {
-  const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+  const reader = createReader({ role: 'wiki_reader' })
   const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
   try {
     return await reader.transaction(read, { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
   } finally { await reader.close() }
 }
 
-const namingLedger = process.env.WIKI_DOCUMENT_PG
+const namingLedger = hasPgConnection()
   ? await pgSource(async (tx) => {
     const queries = [
       'SELECT * FROM naming_ledger_document',
@@ -495,7 +495,7 @@ async function main() {
     for (const field of ['name', 'title', 'position', 'rank', 'occupation', 'gender', 'stateName', 'stage']) failures.push(...visibleFieldFailures(person[field], `src/generated/peopleCatalog.ts#/people/${index}/${field}`))
   }
   let categoryRegistry, history
-  if (process.env.WIKI_DOCUMENT_PG) {
+  if (hasPgConnection()) {
     ; ({ categoryRegistry, history } = await pgSource(async (tx) => ({
       categoryRegistry: await readCatalogMetadataDocumentAsync(tx, CATEGORY_REGISTRY_PATH),
       history: await readCatalogMetadataDocumentAsync(tx, UPDATE_HISTORY_PATH),
@@ -568,7 +568,7 @@ async function main() {
     })
     year.relatedDocuments.forEach((document, documentIndex) => failures.push(...visibleFieldFailures(document.title, `public/timeline-overview.json#/years/${index}/relatedDocuments/${documentIndex}/title`)))
   })
-  const gurps = process.env.WIKI_DOCUMENT_PG
+  const gurps = hasPgConnection()
     ? await pgSource(tx => readIssuedSheetInputsAsync(tx))
     : readCanonicalDocument('lore/name-pools/gurps-cast.json')
   for (const person of gurps.people) {

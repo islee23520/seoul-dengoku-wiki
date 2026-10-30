@@ -240,14 +240,18 @@ export function summarizeCurrentSourceAlignment(tables) {
   };
 }
 
-export async function buildCastDatabase({ sourceRoot, outputPath, requireClean = false } = {}) {
+export async function buildCastDatabase({ sourceRoot, dbPath, outputPath, requireClean = false } = {}) {
   requireRuntime();
   if (typeof requireClean !== 'boolean') fail('E_BUILD_OPTIONS', 'requireClean은 boolean이어야 합니다.');
+ if (dbPath !== undefined && (typeof dbPath !== 'string' || !dbPath.trim())) fail('E_BUILD_OPTIONS', '비어 있지 않은 SQLite archive 경로가 필요합니다.');
+ if (dbPath === undefined && (sourceRoot === undefined || resolve(sourceRoot) === DEFAULT_SOURCE_ROOT)) {
+  fail('E_BUILD_USAGE', 'SQLite 이관 archive를 --db <파일>로 명시하세요. 운영 저작과 생성은 PostgreSQL을 사용합니다.');
+ }
   const effectiveSourceRoot = sourceRoot ?? DEFAULT_SOURCE_ROOT;
   const output = await preflightOutput(effectiveSourceRoot, outputPath);
   const { SCHEMA_VERSION, applySchema, openReadOnly, openWritableNew, runIntegrityChecks, withTransaction } = await import('./db.mjs');
   let authorityPath;
-  try { authorityPath = await resolveTrustedSourcePath(effectiveSourceRoot, CANONICAL_CAST_DATABASE); }
+ try { authorityPath = dbPath === undefined ? await resolveTrustedSourcePath(effectiveSourceRoot, CANONICAL_CAST_DATABASE) : await realpath(dbPath); }
   catch (error) { if (error.code !== 'E_SOURCE_MISSING') throw error; }
   if (authorityPath) {
     await assertNoAuthoritySidecars(authorityPath);
@@ -343,9 +347,11 @@ export async function buildCastDatabase({ sourceRoot, outputPath, requireClean =
       current_source_alignment: currentSourceAlignment,
       coverage_contract_status: 'verified', text_corpus: textCorpus,
       excluded_source_count: tables.excluded_source.length,
-      coverage_contract: { source_count: coverageContract.sourceCount, leaf_pattern_count: coverageContract.leafPatternCount,
+   coverage_contract: {
+    source_count: coverageContract.sourceCount, leaf_pattern_count: coverageContract.leafPatternCount,
         private_source_count: coverageContract.privateSourceCount, private_leaf_pattern_count: coverageContract.privateLeafPatternCount,
-        sha256: sha256(JSON.stringify(coverageContract)) },
+    sha256: sha256(JSON.stringify(coverageContract))
+   },
       official_check_scope: 'historical-gurps-only',
       reference_closure: sourceReferenceUnresolvedCount ? 'verified-with-unresolved-anchors' : 'verified',
       source_reference_unresolved_count: sourceReferenceUnresolvedCount,
@@ -365,7 +371,7 @@ function cliOptions(args) {
   const options = {};
   for (let index = 0; index < args.length; index += 1) {
     const flag = args[index];
-    const name = { '--source-root': 'sourceRoot', '--output': 'outputPath', '--require-clean': 'requireClean' }[flag];
+  const name = { '--db': 'dbPath', '--source-root': 'sourceRoot', '--output': 'outputPath', '--require-clean': 'requireClean' }[flag];
     if (!name || Object.hasOwn(options, name)) fail('E_BUILD_USAGE', '지원하지 않거나 중복된 인자입니다. --help를 확인하세요.');
     if (name === 'requireClean') options[name] = true;
     else {
@@ -374,6 +380,7 @@ function cliOptions(args) {
       options[name] = value;
     }
   }
+ if (!options.dbPath || !options.dbPath.trim()) fail('E_BUILD_USAGE', 'SQLite 이관 archive를 --db <파일>로 명시하세요. 운영 저작과 생성은 PostgreSQL을 사용합니다.');
   if (!options.outputPath) fail('E_BUILD_USAGE', '--output이 필요합니다.');
   return options;
 }
@@ -382,7 +389,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   try {
     const args = process.argv.slice(2);
     if (args.length === 1 && args[0] === '--help') {
-      console.log('Usage: node build.mjs --output <new.sqlite> [--source-root <absolute WIKI path>] [--require-clean]\n현재 SQLite 정본을 새 외부 경로에 내보냅니다. 정본과 기존 출력은 교체하지 않습니다. --require-clean은 원래 import 품질 gate이며 현재 공개 승인이 아닙니다. 명시한 별도 non-authority fixture만 이전 importer를 사용합니다.');
+   console.log('Usage: node build.mjs --db <archive.sqlite> --output <new.sqlite> [--source-root <absolute WIKI path>] [--require-clean]\n명시한 SQLite 이관 archive를 새 외부 경로에 내보냅니다. 운영 저작과 생성은 PostgreSQL을 사용합니다. 기존 출력은 교체하지 않습니다. --require-clean은 원래 import 품질 gate이며 공개 승인이 아닙니다.');
     } else console.log(JSON.stringify(await buildCastDatabase(cliOptions(args)), null, 2));
   } catch (error) { console.error(error.message); process.exitCode = 1; }
 }

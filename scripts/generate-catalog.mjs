@@ -38,6 +38,7 @@ import { projectGeographicTitles, publicGeographicScope, publicTerritorialScale 
 import { isDeepStrictEqual } from 'node:util'
 import { loadStationCatalogGeography, loadOutsideStationIds, outsideStationIds, STATION_BOUNDARY_PATH } from './station-catalog-geography.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
+import { hasPgConnection, hasPrivatePgConnection } from './cast-sqlite/db-pg.mjs'
 import { readBoundaryGeometries, readBoundaryGeometriesAsync } from './cast-sqlite/boundary-geometries.mjs'
 import { readPhysicalRail, readPhysicalRailAsync } from './cast-sqlite/physical-rail.mjs'
 import { readCatalogPages, readCatalogPagesAsync, readCatalogGlossary, readCatalogGlossaryAsync } from './cast-sqlite/catalog-pages.mjs'
@@ -126,23 +127,17 @@ export function publicJurisdictionReferences(rows) {
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
  const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
  const repoRoot = projectRoot
- const mapInput = process.env.WIKI_MAP_RELEASE_REQUEST === undefined ? null : await loadMapDataInput(process.env.WIKI_MAP_RELEASE_REQUEST)
- // PostgreSQL mode must not load the private SQLite build environment: it is
- // an SQLite-authority bootstrap input; a PG release reads no SQLite files.
- if (!process.env.WIKI_DOCUMENT_DB && !process.env.WIKI_DOCUMENT_PG) {
-  const environment = JSON.parse(await readFile(resolve(projectRoot,
-   '.omo/private/seoul-migration/sqlite-authority-20261021/build-environment.json'), 'utf8'))
-  for (const [key, value] of Object.entries(environment)) {
-   if (!/^WIKI_[A-Z_]+$/u.test(key) || typeof value !== 'string') throw new Error('E_PUBLICATION_DATABASE_CONFIG')
-   process.env[key] ??= value
-  }
+ if (!hasPgConnection()) {
+  if (process.env.WIKI_MIGRATION_SQLITE !== '1') throw new Error('E_CATALOG_PG_REQUIRED: set WIKI_DOCUMENT_PG; SQLite diagnostics require WIKI_MIGRATION_SQLITE=1 and explicit WIKI_DOCUMENT_DB')
+  if (!process.env.WIKI_DOCUMENT_DB?.trim()) throw new Error('E_CATALOG_MIGRATION_SQLITE_DB_REQUIRED: set explicit WIKI_DOCUMENT_DB')
  }
+ const mapInput = process.env.WIKI_MAP_RELEASE_REQUEST === undefined ? null : await loadMapDataInput(process.env.WIKI_MAP_RELEASE_REQUEST)
  const typedCatalogSource = (read) => {
   // Migration-only SQLite branch. PG execution must use the snapshot helper.
-  if (process.env.WIKI_DOCUMENT_PG) {
+  if (hasPgConnection()) {
    throw Object.assign(new Error('E_CATALOG_TYPED_SOURCE_PG_UNCONVERTED: typedCatalogSource readers are not PostgreSQL-sourced yet; PG generation must not mix SQLite inputs'), { code: 'E_CATALOG_TYPED_SOURCE_PG_UNCONVERTED' })
   }
-  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite'))
+  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
   try { return read(db) } finally { db.close() }
  }
  // Async PostgreSQL counterpart of typedCatalogSource for a reader that already
@@ -150,11 +145,11 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
  // imports the release-exported snapshot. Synchronous SQLite callers are
  // unchanged; PG wiring migrates call sites to this helper family by family.
  const typedCatalogSourceAsync = async (readAsync) => {
-  if (!process.env.WIKI_DOCUMENT_PG) {
+  if (!hasPgConnection()) {
    throw Object.assign(new Error('E_CATALOG_ASYNC_PG_ONLY: typedCatalogSourceAsync requires WIKI_DOCUMENT_PG'), { code: 'E_CATALOG_ASYNC_PG_ONLY' })
   }
   const { createReader } = await import('./cast-sqlite/db-pg.mjs')
-  const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+  const reader = createReader({ role: 'wiki_reader' })
   const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
   try {
    return await reader.transaction(readAsync, { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
@@ -163,10 +158,10 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
  // PostgreSQL release sourcing: metadata reads the release-exported snapshot
  // (WIKI_GENERATION_SNAPSHOT) in one worker-owned read-only transaction.
  // SQLite callers keep the original closure unchanged.
- const catalogMetadata = process.env.WIKI_DOCUMENT_PG
+ const catalogMetadata = hasPgConnection()
   ? await (async () => {
    const { createReader } = await import('./cast-sqlite/db-pg.mjs')
-   const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+   const reader = createReader({ role: 'wiki_reader' })
    const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
    try {
     return await reader.transaction(tx => readCatalogMetadataAsync(tx), {
@@ -175,21 +170,21 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
    } finally { await reader.close() }
   })()
   : (() => {
-   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite'))
+   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
    try { return readCatalogMetadata(db) } finally { db.close() }
   })()
- if (process.env.WIKI_DOCUMENT_PG) await typedCatalogSourceAsync(async tx => {
+ if (hasPgConnection()) await typedCatalogSourceAsync(async tx => {
   await loadOfficeProjection(tx)
   await loadMapProjection(tx)
  })
- const sourceDatabaseBundle = !process.env.WIKI_DOCUMENT_PG && process.env.WIKI_PUBLICATION_DATABASE_CONFIG
+ const sourceDatabaseBundle = !hasPgConnection() && process.env.WIKI_PUBLICATION_DATABASE_CONFIG
   ? await (await import('./document-store/publication-database-inputs.mjs')).openPublicationDatabaseInputs(projectRoot,
    JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))) : null
  const pgArchivePaths = new Set(['scripts/approved-daejeon-nonowning-rights.json', ...Object.values(CIA_FACILITY_SOURCE_PATHS)])
  const sourceRead = async (path, encoding) => {
   const target = path instanceof URL ? fileURLToPath(path) : path
   let bytes
-  if (process.env.WIKI_DOCUMENT_PG) {
+  if (hasPgConnection()) {
    const logicalPath = relative(projectRoot, resolve(target)).split('\\').join('/')
    if (logicalPath === STATION_BOUNDARY_PATH) bytes = await readFile(resolve(projectRoot, STATION_BOUNDARY_PATH))
    else if (pgArchivePaths.has(logicalPath)) bytes = await typedCatalogSourceAsync(tx => readSourceArchiveAsync(tx, logicalPath))
@@ -199,7 +194,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
  }
  const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(repoRoot, 'lore'))
  let geography, territorialScale, geographicScale
- if (process.env.WIKI_DOCUMENT_PG) {
+ if (hasPgConnection()) {
   // PostgreSQL release sourcing: one worker-owned read-only transaction
   // imports the release-exported snapshot for scale, geography and the
   // offices territorial source together.
@@ -207,7 +202,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const { buildAdminTerritorialScaleFromDbAsync } = await import('./admin-territorial-scale.mjs')
   const { readOfficesTerritorialSourceAsync } = await import('./admin-territorial-scale.mjs')
   const { readGeographyStoreAsync } = await import('./cast-sqlite/geography-store.mjs')
-  const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+  const reader = createReader({ role: 'wiki_reader' })
   const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
   try {
    await reader.transaction(async (tx) => {
@@ -294,12 +289,12 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
  await mkdir(generatedRoot, { recursive: true })
  await mkdir(publicRoot, { recursive: true })
 
- const articleDatabasePath = process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite')
- let atlasPeople = process.env.WIKI_DOCUMENT_PG
+ const articleDatabasePath = process.env.WIKI_DOCUMENT_DB
+ let atlasPeople = hasPgConnection()
   ? await (async () => {
    const { createReader } = await import('./cast-sqlite/db-pg.mjs')
    const { readAtlasIdentityAsync } = await import('./cast-sqlite/atlas-identity.mjs')
-   const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+   const reader = createReader({ role: 'wiki_reader' })
    const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
    try {
     // atlasPeopleContext returns the full readAtlasIdentity result;
@@ -312,11 +307,11 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
  // PostgreSQL release sourcing: atlas identity and the materializer check
  // share one worker-owned read-only snapshot transaction (async twin path).
  // SQLite callers keep the original materializeWorldAtlas call unchanged.
- if (process.env.WIKI_DOCUMENT_PG) {
+ if (hasPgConnection()) {
   const { createReader } = await import('./cast-sqlite/db-pg.mjs')
   const { readAtlasIdentityAsync } = await import('./cast-sqlite/atlas-identity.mjs')
   const { materializeWorldAtlasAsync } = await import('./cast-sqlite/atlas-materializer.mjs')
-  const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+  const reader = createReader({ role: 'wiki_reader' })
   const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
   try {
    atlasPeople = await reader.transaction(tx => readAtlasIdentityAsync(tx),
@@ -333,12 +328,12 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
    dbPath: articleDatabasePath,
   })
  }
- const jsonPages = process.env.WIKI_DOCUMENT_PG
+ const jsonPages = hasPgConnection()
   ? (await typedCatalogSourceAsync(tx => readCatalogPagesAsync(tx)))
    .map(page => ({ ...page, path: resolve(projectRoot, page.path) }))
   : typedCatalogSource(db => readCatalogPages(db)
    .map(page => ({ ...page, path: resolve(projectRoot, page.path) })))
- const admittedDocuments = process.env.WIKI_DOCUMENT_PG
+ const admittedDocuments = hasPgConnection()
   ? await typedCatalogSourceAsync(tx => approvedDocumentsAsync(loreRoot, { tx, categoryRegistry }))
   : await approvedDocuments(loreRoot, { categoryRegistry, dbPath: articleDatabasePath })
  const publishedRoutes = new Set(publishedDocuments(admittedDocuments).map(({ route }) => route))
@@ -347,22 +342,21 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
  const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
  const pagesBySlug = new Map(jsonPages.map((page) => [page.slug, page]))
  const glossaryPath = resolve(loreRoot, 'glossary.json')
- const glossaryEntries = process.env.WIKI_DOCUMENT_PG
+ const glossaryEntries = hasPgConnection()
   ? await typedCatalogSourceAsync(tx => readCatalogGlossaryAsync(tx))
   : typedCatalogSource(db => readCatalogGlossary(db))
  const glossaryPage = { path: glossaryPath, slug: 'Glossary', value: glossaryDocument(glossaryEntries) }
  // Approved public nomenclature for a fictional organization grounds the same state leader.
- const organizationAliases = process.env.WIKI_DOCUMENT_PG ? await (async () => {
-  const connectionString = process.env.WIKI_GENERATION_PRIVATE_PG
-  if (!connectionString) throw Object.assign(new Error('E_GENERATION_PRIVATE_PG_REQUIRED: WIKI_GENERATION_PRIVATE_PG is required for organization aliases'), { code: 'E_GENERATION_PRIVATE_PG_REQUIRED' })
+ const organizationAliases = hasPgConnection() ? await (async () => {
+  if (!hasPrivatePgConnection()) throw Object.assign(new Error('E_GENERATION_PRIVATE_PG_REQUIRED: WIKI_GENERATION_PRIVATE_PG is required for organization aliases'), { code: 'E_GENERATION_PRIVATE_PG_REQUIRED' })
   const { createReader } = await import('./cast-sqlite/db-pg.mjs')
-  const reader = createReader({ connectionString, role: 'wiki_generation_reader' })
+  const reader = createReader({ role: 'wiki_generation_reader' })
   const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
   try {
    return await reader.transaction(tx => loadApprovedOrganizationAliasesAsync(tx), { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
   } finally { await reader.close() }
  })() : await loadApprovedOrganizationAliases(projectRoot, sourceRead)
- const worldIndex = process.env.WIKI_DOCUMENT_PG
+ const worldIndex = hasPgConnection()
   ? await (async () => {
    const { buildWorldIndexAsync } = await import('./build-world-index.mjs')
    return await typedCatalogSourceAsync(tx => buildWorldIndexAsync({ organizationAliases, tx }))
@@ -389,11 +383,10 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   if (!category || !categoryRegistry.categories.some((entry) => entry.id === category)) throw new Error(`E_CATEGORY_PROJECTION:${slug}`)
   categoriesBySlug.set(slug, [category])
  }
- const personSources = process.env.WIKI_DOCUMENT_PG ? await (async () => {
-  const connectionString = process.env.WIKI_GENERATION_PRIVATE_PG
-  if (!connectionString) throw Object.assign(new Error('E_GENERATION_PRIVATE_PG_REQUIRED: WIKI_GENERATION_PRIVATE_PG is required for PostgreSQL person inputs'), { code: 'E_GENERATION_PRIVATE_PG_REQUIRED' })
+ const personSources = hasPgConnection() ? await (async () => {
+  if (!hasPrivatePgConnection()) throw Object.assign(new Error('E_GENERATION_PRIVATE_PG_REQUIRED: WIKI_GENERATION_PRIVATE_PG is required for PostgreSQL person inputs'), { code: 'E_GENERATION_PRIVATE_PG_REQUIRED' })
   const { createReader } = await import('./cast-sqlite/db-pg.mjs')
-  const reader = createReader({ connectionString, role: 'wiki_generation_reader' })
+  const reader = createReader({ role: 'wiki_generation_reader' })
   const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
   try {
    const inputs = await typedCatalogSourceAsync(tx => reader.transaction(
@@ -434,8 +427,8 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   familyGraph, originalHoldings, officeAppointmentSource } = personSources
 
  const documents = []
- const rosterDatabasePath = process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite')
- const activePersonIds = process.env.WIKI_DOCUMENT_PG ? await typedCatalogSourceAsync(async tx => {
+ const rosterDatabasePath = process.env.WIKI_DOCUMENT_DB
+ const activePersonIds = hasPgConnection() ? await typedCatalogSourceAsync(async tx => {
   const present = await tx.get("SELECT 1 FROM information_schema.tables WHERE table_schema='wiki' AND table_name='person_disposition'")
   if (!present) return undefined
   return new Set([...(await readPersonDispositionAsync(tx))].filter(([, row]) => row.status === 'active').map(([id]) => id))
@@ -448,7 +441,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
  })()
  const activePersonRoutes = activePersonIds ? new Set([...activePersonIds]
   .map(id => atlasPeople.routes.get(id)?.detailRoute).filter(Boolean)) : undefined
- const currentProseChanges = process.env.WIKI_DOCUMENT_PG
+ const currentProseChanges = hasPgConnection()
   ? await (async () => {
    const { readRetirementProseAsync } = await import('./cast-sqlite/retirement-prose.mjs')
    return await typedCatalogSourceAsync(async (tx) => {
@@ -547,27 +540,27 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
  const { stateSource, stateRows, stateCatalog, stateNameById, tiersByState, affiliations, stateIdByName } = projectPersonStateInputs(renderedBySlug, pagesBySlug, { organizationAliases })
  await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type CurrentHegemon = { readonly kind: 'state'; readonly stateId: string; readonly name: string } | { readonly kind: 'union'; readonly name: string } | { readonly kind: 'neutral'; readonly name: string }\nexport type CurrentBase = { readonly kind: 'station'; readonly stationId: string; readonly name: string } | { readonly kind: 'facility'; readonly landmarkId: string; readonly name: string }\nexport type StateRecord = { currentHegemon: CurrentHegemon; currentBase: CurrentBase; currentExclusiveDistricts: 'none' | 'immediate-holdings'; slug: string; id: string; name: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
 
- const regionAtlas = process.env.WIKI_DOCUMENT_PG
+ const regionAtlas = hasPgConnection()
   ? await typedCatalogSourceAsync(tx => readRegionAtlasDataAsync(tx))
   : typedCatalogSource(db => readRegionAtlasData(db))
- const populationSource = process.env.WIKI_DOCUMENT_PG
+ const populationSource = hasPgConnection()
   ? await typedCatalogSourceAsync(tx => readPopulationDocumentAsync(tx))
   : typedCatalogSource(db => readPopulationDocument(db))
  const densityByDong = validatedDensities(regionAtlas.regions, populationSource)
- const seoulGraph = process.env.WIKI_DOCUMENT_PG && mapInput === null
+ const seoulGraph = hasPgConnection() && mapInput === null
   ? await typedCatalogSourceAsync(tx => readWorldGraphDocumentAsync(tx))
   : catalogWorldGraph(mapInput, typedCatalogSource)
  const officialLineData = catalogMetadata[OFFICIAL_SEOUL_LINES_PATH]
- const regularLineSource = process.env.WIKI_DOCUMENT_PG
+ const regularLineSource = hasPgConnection()
   ? await typedCatalogSourceAsync(tx => readRailSourceDocumentAsync(tx, { logicalPath: 'lore/places/regular-line-adjacency.json' }))
   : typedCatalogSource(db => readRailSourceDocument(db, { logicalPath: 'lore/places/regular-line-adjacency.json' }))
  await writeFile(resolve(generatedRoot, 'railStationSources.ts'),
   '// Generated from typed SQLite domains by generate-catalog.mjs.\n'
-  + 'export const railStationSource = ' + JSON.stringify(process.env.WIKI_DOCUMENT_PG
+  + 'export const railStationSource = ' + JSON.stringify(hasPgConnection()
    ? await typedCatalogSourceAsync(tx => readRailSourceDocumentAsync(tx, { logicalPath: 'lore/places/rail-station-corrections.json' }))
    : typedCatalogSource(db => readRailSourceDocument(db, {
     logicalPath: 'lore/places/rail-station-corrections.json',
-   }))) + '\nexport const railStationIdentities = ' + JSON.stringify(process.env.WIKI_DOCUMENT_PG
+   }))) + '\nexport const railStationIdentities = ' + JSON.stringify(hasPgConnection()
     ? await typedCatalogSourceAsync(tx => readRailSourceDocumentAsync(tx, { logicalPath: 'lore/places/rail-station-identities.json' }))
     : typedCatalogSource(db => readRailSourceDocument(db, {
      logicalPath: 'lore/places/rail-station-identities.json',
@@ -587,7 +580,7 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
   if (!['복속', '보좌', '독립'].includes(relation.ko)) throw new Error(`E_GOV_RELATION:${state.ko}:${relation.ko}`)
   return [state.ko, relation.ko]
  }))
- const stationControlLedger = process.env.WIKI_DOCUMENT_PG
+ const stationControlLedger = hasPgConnection()
   ? await typedCatalogSourceAsync(tx => readRailSourceDocumentAsync(tx, { logicalPath: 'lore/places/station-control-overrides.json' }))
   : typedCatalogSource(db => readRailSourceDocument(db, { logicalPath: 'lore/places/station-control-overrides.json' }))
  const stationControlOverrides = new Map(stationControlLedger.overrides.map((entry) => [entry.stationId, entry]))
@@ -600,7 +593,7 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
 
  const ciaFacilityProjection = await loadCiaFacilityProjection(repoRoot, sourceRead)
  let regionContentById = new Map()
- if (process.env.WIKI_DOCUMENT_PG) {
+ if (hasPgConnection()) {
   // One snapshot transaction preloads all 25 region-content documents.
   const { readRegionContentDocumentAsync } = await import('./cast-sqlite/region-content-documents.mjs')
   await typedCatalogSourceAsync(async (tx) => {
@@ -621,7 +614,7 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
  const predecessorRegionContentById = regionContentById
  regionContentById = projectCiaFacilityRegions(regionContentById, ciaFacilityProjection.correction)
  const surfaceHolders = (content) => content?.territory?.holders.map((holder) => holder.polity) ?? []
- const creativeNameLedger = process.env.WIKI_DOCUMENT_PG
+ const creativeNameLedger = hasPgConnection()
   ? await typedCatalogSourceAsync(tx => readCreativeNameDocumentAsync(tx))
   : typedCatalogSource(db => readCreativeNameDocument(db))
  const normalizePublicNames = (text) => {
@@ -668,7 +661,7 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
  const stationById = new Map(seoulGraph.stations.map((station) => [station.id, station]))
  const stationCatalog = pagesBySlug.get('Seoul-Station-Catalog').value
  let excludedStationIds
- if (process.env.WIKI_DOCUMENT_PG) {
+ if (hasPgConnection()) {
   const boundaryBytes = await sourceRead(resolve(projectRoot, STATION_BOUNDARY_PATH))
   await loadStationCatalogGeography(projectRoot, { catalog: stationCatalog, readBytes: async () => boundaryBytes })
   const graphBytes = await typedCatalogSourceAsync(tx => readSourceArchiveAsync(tx,
@@ -847,7 +840,7 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
    y: Number((weightedY / (3 * twiceArea)).toFixed(2)),
   }
  }
- const landmarkLedger = process.env.WIKI_DOCUMENT_PG
+ const landmarkLedger = hasPgConnection()
   ? await typedCatalogSourceAsync(tx => readLandmarkRoleDocumentAsync(tx))
   : typedCatalogSource(db => readLandmarkRoleDocument(db))
  const projectedLandmarks = landmarkLedger.sites.map((site) => {
@@ -909,12 +902,12 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
  const vassals = []
 
  const openingTerritories = {
-  physicalRail: process.env.WIKI_DOCUMENT_PG
+  physicalRail: hasPgConnection()
    ? await typedCatalogSourceAsync(tx => readPhysicalRailAsync(tx))
    : typedCatalogSource(db => readPhysicalRail(db)),
   geography: projectGeographicTitles(
    geography,
-   process.env.WIKI_DOCUMENT_PG
+   hasPgConnection()
     ? await typedCatalogSourceAsync(tx => readBoundaryGeometriesAsync(tx))
     : typedCatalogSource(db => readBoundaryGeometries(db)),
    (longitude, latitude) => {
@@ -984,7 +977,7 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
   nonowning: 'scripts/approved-daejeon-nonowning-rights.json',
   retirement: 'scripts/approved-outside-current-retirement.json',
  }
- const historicalRightsBytes = process.env.WIKI_DOCUMENT_PG
+ const historicalRightsBytes = hasPgConnection()
   ? await typedCatalogSourceAsync(async tx => Object.fromEntries(
    await Promise.all(Object.entries(HISTORICAL_RIGHTS_SOURCES).map(async ([key, path]) =>
     [key, await readSourceArchiveAsync(tx, path)])),
@@ -995,10 +988,10 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
    return [key, Buffer.from(row.raw_bytes)]
   })))
  const outsideGeometry = (await loadApprovedRightsHistory(historicalRightsBytes)).historical.outside
- const outsideControl = process.env.WIKI_DOCUMENT_PG
+ const outsideControl = hasPgConnection()
   ? await typedCatalogSourceAsync(tx => readRetiredTerritoryDocumentsAsync(tx, { logicalPath: 'lore/regions/outside-control-2126.json' }))
   : typedCatalogSource(db => readRetiredTerritoryDocuments(db, { logicalPath: 'lore/regions/outside-control-2126.json' }))
- const outsideIslands = process.env.WIKI_DOCUMENT_PG
+ const outsideIslands = hasPgConnection()
   ? await typedCatalogSourceAsync(tx => readRetiredTerritoryDocumentsAsync(tx, { logicalPath: 'lore/regions/outside-island-occupation.json' }))
   : typedCatalogSource(db => readRetiredTerritoryDocuments(db, { logicalPath: 'lore/regions/outside-island-occupation.json' }))
  const projectedOutsideControl = await projectCatalogOutsideOccupation(outsideControl, outsideGeometry, outsideIslands,
@@ -1035,7 +1028,7 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
   projectedOutsideControl, affiliation: sixteenStatesLore.data.currentAffiliation, geography, geographicScale,
   historyBytes: historicalRightsBytes,
  }
- personalHoldings = process.env.WIKI_DOCUMENT_PG
+ personalHoldings = hasPgConnection()
   ? await typedCatalogSourceAsync(tx => projectPersonHoldingsInputsAsync(tx, personSources, holdingsOptions))
   : await projectPersonHoldingsInputs(personSources, holdingsOptions)
  const currentPersonalHoldings = projectCiaFacilityHoldings(personalHoldings, ciaFacilityProjection.correction)
@@ -1047,7 +1040,7 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
  let { peopleCatalog, personDetails, retainerGraph, familyDetailRoutes, personFeedbackRecords } = await produceFromPersonDetailSources(personSources, {
   personalHoldings, stateNameById, tiersByState, officeAppointments,
  })
- if (process.env.WIKI_DOCUMENT_PG) {
+ if (hasPgConnection()) {
   const profiles = await typedCatalogSourceAsync(tx => readPublicCharacterProfileInputsAsync(tx))
   for (const detail of personDetails) {
    const profile = profiles.get(detail.characterId)
@@ -1055,7 +1048,7 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
    detail.characterProfile = profile
   }
  }
- if (!process.env.WIKI_DOCUMENT_PG && process.env.WIKI_DOCUMENT_DB) {
+ if (!hasPgConnection() && process.env.WIKI_DOCUMENT_DB) {
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
   try {
    db.exec('BEGIN')
@@ -1073,7 +1066,7 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
  // Validate structure, identity and privacy before the active-roster projection.
  admitPublicPersonDetails(personDetails)
  const unprojectedPeopleById = new Map(peopleCatalog.map(person => [person.id, person]))
- if (activePersonIds && process.env.WIKI_DOCUMENT_PG) {
+ if (activePersonIds && hasPgConnection()) {
   const disposition = await typedCatalogSourceAsync(tx => readPersonDispositionAsync(tx))
    ; ({ peopleCatalog, personDetails, retainerGraph, familyDetailRoutes, personFeedbackRecords } = projectActiveRoster(
     { peopleCatalog, personDetails, retainerGraph, familyDetailRoutes, personFeedbackRecords }, disposition, currentProseChanges))
@@ -1101,7 +1094,7 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
  await mkdir(privateGeneratedRoot, { recursive: true })
  await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.ko.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'ko')))}\n`)
  await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.en.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'en')))}\n`)
- const portraitRegistry = process.env.WIKI_DOCUMENT_PG
+ const portraitRegistry = hasPgConnection()
   ? (await typedCatalogSourceAsync(tx => readPortraitDocumentsAsync(tx))).catalog
   : (() => {
    const db = openReadOnly(process.env.WIKI_PORTRAIT_DB ?? articleDatabasePath)
@@ -1132,7 +1125,7 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
  // The home page reads only the count, so it gets its own module and does not bundle the catalog.
  await writeFile(resolve(generatedRoot, 'peopleCount.ts'), `export const peopleCount = ${peopleCatalog.length}\n`)
 
- const clanTables = process.env.WIKI_DOCUMENT_PG
+ const clanTables = hasPgConnection()
   ? await typedCatalogSourceAsync(tx => readClanCatalogDocumentAsync(tx))
   : typedCatalogSource(db => readClanCatalogDocument(db))
  const crestIndexText = await readFile(resolve(publicRoot, 'clan-crests/index.json'), 'utf8')

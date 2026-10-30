@@ -6,7 +6,7 @@ import { assignCrests, renderCrest } from './clan-crest.mjs'
 import { generatorStage } from './generate-release.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
 import { readClanCatalogDocument, readClanCatalogDocumentAsync } from './cast-sqlite/clan-catalog-document.mjs'
-import { createReader } from './cast-sqlite/db-pg.mjs'
+import { createReader, hasPgConnection } from './cast-sqlite/db-pg.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const { root: outputRoot, writeFile } = await generatorStage(root)
@@ -15,10 +15,10 @@ const outDir = join(outputRoot, 'public', 'clan-crests')
 // WIKI_GENERATION_SNAPSHOT (exported by the release orchestrator, if any)
 // pins every worker to one consistent read view; without it the worker still
 // reads PostgreSQL, just without a shared snapshot. SQLite remains the source
-// when WIKI_DOCUMENT_PG is unset (WIKI_DOCUMENT_DB callers keep working).
+// when neither WIKI_DOCUMENT_PG nor WIKI_DOCUMENT_PG_FILE is configured.
 const { tables, motifs } = await (async () => {
-  if (process.env.WIKI_DOCUMENT_PG) {
-    const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+  if (hasPgConnection()) {
+    const reader = createReader({ role: 'wiki_reader' })
     const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
     try {
       return await reader.transaction(async (tx) => ({
@@ -30,9 +30,11 @@ const { tables, motifs } = await (async () => {
   }
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? join(root, 'data/canonical/wiki-cast.sqlite'))
   try {
-    return { tables: readClanCatalogDocument(db),
+    return {
+      tables: readClanCatalogDocument(db),
       motifs: new Map(db.prepare('SELECT clan,surname,bongwan,motif,reference FROM clan_crest_motif ORDER BY ordinal')
-        .all().map(row => [row.clan, row])) }
+        .all().map(row => [row.clan, row]))
+    }
   } finally { db.close() }
 })()
 const clans = tables.clans.filter((clan) => !clan.id.includes('-agreed-'))

@@ -15,17 +15,17 @@ import { validatePublishedGeographyMap } from './published-geography-map.mjs'
 import { publicTerritorialScale } from '../src/components/geographicTitleMap.mjs'
 import { readPersonDisposition, readPersonDispositionAsync } from './cast-sqlite/person-disposition.mjs'
 import { readAtlasIdentity, readAtlasValuesDocument, readAtlasIdentityAsync, readAtlasValuesDocumentAsync } from './cast-sqlite/atlas-identity.mjs'
-import { createReader } from './cast-sqlite/db-pg.mjs'
+import { createReader, hasPgConnection } from './cast-sqlite/db-pg.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-if (!process.env.WIKI_DOCUMENT_PG) process.env.WIKI_DOCUMENT_DB ??= resolve(projectRoot, 'data/canonical/wiki-cast.sqlite')
+if (!hasPgConnection()) process.env.WIKI_DOCUMENT_DB ??= resolve(projectRoot, 'data/canonical/wiki-cast.sqlite')
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(projectRoot, 'lore'))
 const domains = ['world']
 const outputArg = process.argv.indexOf('--json')
 const outputPath = outputArg >= 0 ? process.argv[outputArg + 1] : null
 
 async function pgSource(read) {
-  const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+  const reader = createReader({ role: 'wiki_reader' })
   const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
   try {
     return await reader.transaction(read, { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
@@ -66,7 +66,7 @@ try {
 const failures = []
 try {
   let descriptor, geographicScale, geography
-  if (process.env.WIKI_DOCUMENT_PG) {
+  if (hasPgConnection()) {
     ({ descriptor, geographicScale, geography } = await pgSource(async (tx) => ({
       descriptor: (await readOfficesTerritorialSourceAsync(tx)).data.territorialScale,
       geographicScale: await buildAdminTerritorialScaleFromDbAsync(tx),
@@ -97,12 +97,12 @@ try {
 } catch (error) {
   failures.push('territorial-scale-contract:' + error.message)
 }
-const approved = publishedDocuments(process.env.WIKI_DOCUMENT_PG
+const approved = publishedDocuments(hasPgConnection()
   ? await pgSource(tx => approvedDocumentsAsync(loreRoot, { tx }))
   : await approvedDocuments(loreRoot))
 const peopleSource = await readFile(resolve(projectRoot, 'src/generated/peopleCatalog.ts'), 'utf8')
 const people = JSON.parse(peopleSource.split('export const peopleCatalog = ')[1].split(' as const')[0])
-const { sourcePeople, issued } = process.env.WIKI_DOCUMENT_PG
+const { sourcePeople, issued } = hasPgConnection()
   ? await pgSource(async (tx) => ({ sourcePeople: (await readAtlasValuesDocumentAsync(tx)).people, issued: (await readAtlasIdentityAsync(tx)).registry.persons }))
   : (() => {
     const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
@@ -115,7 +115,7 @@ for (const name of (await readdir(detailRoot)).filter((name) => extname(name) ==
   details.set(basename(name, '.json'), JSON.parse(await readFile(resolve(detailRoot, name), 'utf8')))
 }
 let dispositions
-if (process.env.WIKI_DOCUMENT_PG) {
+if (hasPgConnection()) {
   dispositions = await pgSource(async (tx) => (await tx.get("SELECT 1 FROM information_schema.tables WHERE table_schema='wiki' AND table_name='person_disposition'")) ? await readPersonDispositionAsync(tx) : undefined)
 } else {
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite'))
