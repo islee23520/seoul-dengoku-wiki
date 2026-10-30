@@ -55,3 +55,54 @@ export async function materializeWorldAtlas(options = {}) {
   try { return await checkDatabaseOutputs(connection, projection, peopleContext) }
   finally { connection.close() }
 }
+
+
+/** Async PostgreSQL twin of checkDatabaseOutputs: identical validation
+ * sequence (identity resolution, archived key ordering, atlas schema/people
+ * verification, projection staleness, unexpected lore files) using
+ * listDocumentsAsync/readDocumentAsync/orderDocumentKeysAsync inside the
+ * caller-owned read-only transaction. peopleContext must be supplied; the
+ * synchronous SQLite fallback is not silently substituted. */
+async function checkDatabaseOutputsAsync(tx, projection, peopleContext) {
+  const { listDocumentsAsync, readDocumentAsync } = await import('./document-read.mjs')
+  const { orderDocumentKeysAsync } = await import('./document-key-order.mjs')
+  const identities = await listDocumentsAsync(tx, { corpusKind: 'current', visibility: 'internal' })
+  const read = async (path) => {
+    const logicalPath = `lore/${path}`
+    const matches = identities.filter(identity => identity.logical_path === logicalPath)
+    if (matches.length !== 1) throw new Error(`E_PROJECTION_MISSING:${path}`)
+    const identity = matches[0]
+    return { sourceId: identity.source_id, sourceSha256: identity.sha256,
+      document: await readDocumentAsync(tx, { documentId: identity.document_id, domain: identity.domain,
+        corpusKind: identity.corpus_kind, visibility: 'internal' }) }
+  }
+  const { document: typedAtlas, sourceId, sourceSha256: atlasHash } = await read('World-Narrative-Atlas.json')
+  const document = await orderDocumentKeysAsync(tx, sourceId, typedAtlas)
+  if (document.id !== 'WNA-001' || document.data?.atlas?.schema !== ATLAS_SCHEMA) throw new Error('E_ATLAS_DATA')
+  if (!peopleContext) throw new Error('E_ATLAS_PEOPLE_CONTEXT_REQUIRED: async path needs an explicit peopleContext')
+  const { failures } = verifyAtlasPeople(document.data.atlas, peopleContext)
+  if (failures.length) throw new Error(failures.join('\n'))
+  const expected = projectionsFromAtlas(document, atlasHash)
+  const paths = Object.keys(expected)
+  if (paths.length !== PROJECTION_PATHS.length || paths.some(path => !PROJECTION_PATH_SET.has(path))) throw new Error('E_PROJECTION_SET')
+  for (const path of projection ? [projection] : PROJECTION_PATHS) {
+    if (canonicalJson((await read(path)).document) !== canonicalJson(expected[path])) throw new Error(`E_PROJECTION_STALE:${path}`)
+  }
+  for (const identity of identities) {
+    if (!identity.logical_path.startsWith('lore/')) continue
+    const path = identity.logical_path.slice(5)
+    const name = path.split('/').at(-1)
+    if (!atlasGeneratedName.test(name) || PROJECTION_PATH_SET.has(path)) continue
+    const misplaced = PROJECTION_PATHS.some(expectedPath => expectedPath.split('/').at(-1) === name)
+    throw new Error(`E_PROJECTION_${misplaced ? 'MISPLACED' : 'UNEXPECTED'}:${path}`)
+  }
+  return { atlasHash, projections: projection ? [projection] : [...PROJECTION_PATHS] }
+}
+
+/** PG-aware materialization: with tx, runs the async checker in the caller's
+ * snapshot transaction; otherwise the original SQLite behavior is unchanged. */
+export async function materializeWorldAtlasAsync(options = {}) {
+  const { tx, projection, peopleContext } = options
+  if (!tx || typeof tx.all !== 'function') throw new Error('E_ATLAS_ASYNC_TX_REQUIRED')
+  return await checkDatabaseOutputsAsync(tx, projection, peopleContext)
+}

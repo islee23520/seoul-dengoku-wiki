@@ -14,11 +14,14 @@ const cell = (row, prefix) => Object.entries(row).find(([key]) => key === prefix
 
 const publicStateName = (cell) => cell.replace(/\([^)]*\)/gu, '').trim()
 
-export function buildWorldIndex({ loreRoot, organizationAliases = new Map(), db,
-  dbPath = process.env.WIKI_DOCUMENT_DB ?? resolve(loreRoot, '../data/canonical/wiki-cast.sqlite') }) {
+export function buildWorldIndex({ loreRoot, organizationAliases = new Map(), db, pages: suppliedPages, dbPath }) {
   let pages
-  if (db || dbPath !== undefined) {
-    const connection = db ?? openReadOnly(dbPath)
+  if (suppliedPages) pages = suppliedPages
+  else {
+    // Preserve the original default resolution for callers that pass neither
+    // db nor dbPath explicitly (identical SQLite behavior).
+    const resolvedPath = dbPath ?? process.env.WIKI_DOCUMENT_DB ?? resolve(loreRoot, '../data/canonical/wiki-cast.sqlite')
+    const connection = db ?? openReadOnly(resolvedPath)
     try { pages = new Map(readCatalogPages(connection).map(({ slug, value }) => [slug, value])) }
     finally { if (!db) connection.close() }
   }
@@ -120,4 +123,17 @@ if (loreRootArg && process.argv[1] && basename(process.argv[1]) === 'build-world
   const index = buildWorldIndex({ loreRoot: loreRootArg })
   const leaders = [...index.matchAll(/\| \[[^\]]+\]\([^)]+\) \| [^|]+ \| [^|]+ \| ([^|]+) \|/g)].map((match) => match[1].trim())
   console.log(`Successfully built world index — 16 states, leaders: ${leaders.filter((leader) => leader !== '-').length}/16`)
+}
+
+
+/** Async PostgreSQL sourcing: catalog pages come from
+ * readCatalogPagesAsync inside the caller-owned read-only snapshot
+ * transaction; the pure index construction is reused unchanged via the
+ * injected pages map. */
+export async function buildWorldIndexAsync({ organizationAliases = new Map(), tx }) {
+  if (!tx || typeof tx.all !== 'function') throw new Error('E_WORLD_INDEX_ASYNC_TX_REQUIRED')
+  const { readCatalogPagesAsync } = await import('./cast-sqlite/catalog-pages.mjs')
+  const rows = await readCatalogPagesAsync(tx)
+  const pages = new Map(rows.map(({ slug, value }) => [slug, value]))
+  return buildWorldIndex({ loreRoot: undefined, organizationAliases, pages })
 }

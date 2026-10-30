@@ -55,3 +55,32 @@ export function currentRegionContent(db, document) {
     return { ...row, content: { ...row.content, territory } };
   }) };
 }
+
+
+/** Async PostgreSQL twin of readCiaCurrentRights: same existence probe
+ * (information_schema), same successor-row validation, inside the caller's
+ * read-only transaction. */
+export async function readCiaCurrentRightsAsync(tx) {
+  const present = await tx.get("SELECT 1 FROM information_schema.tables WHERE table_schema='wiki' AND table_name='current_right_retirement'");
+  if (!present) return null;
+  const retired = (await tx.all('SELECT * FROM wiki.current_right_retirement ORDER BY kind')).map(r => ({ ...r }));
+  const territory = (await tx.all('SELECT * FROM wiki.current_region_disposition ORDER BY region_id')).map(r => ({ ...r }));
+  if (retired.length !== 2 || !retired.some(row => row.kind === 'title' && row.right_id === title)
+    || !retired.some(row => row.kind === 'grant' && row.right_id === grant)
+    || territory.length !== 3 || territory.some((row, i) => row.region_id !== regions[i] || row.status !== 'unassigned')
+    || [...retired, ...territory].some(row => row.decision_ref !== decision || !row.actor.trim() || !row.reason.trim()))
+    throw Error('E_CIA_CURRENT_RIGHTS');
+  return { retiredTitleId: title, retiredGrantId: grant, regions, decisionRef: decision };
+}
+
+/** Async twin of currentRegionContent. */
+export async function currentRegionContentAsync(tx, document) {
+  const current = await readCiaCurrentRightsAsync(tx);
+  if (!current || document.district_id !== 'gu:11170') return document;
+  return { ...document, regions: document.regions.map(row => {
+    if (!current.regions.includes(row.region_id)) return row;
+    const territory = { ...row.content.territory, status: 'unassigned', holders: [] };
+    delete territory.authority;
+    return { ...row, content: { ...row.content, territory } };
+  }) };
+}

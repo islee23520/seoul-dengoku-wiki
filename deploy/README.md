@@ -94,3 +94,9 @@ owner가 다음을 **런타임 환경변수/시크릿으로** 주입해야 한�
 
 owner 배포 파이프라인에서의 실제 주입은 아직 검증되지 않았다. 로컬 일회용
 PostgreSQL에서의 검증(전수 대사 PASS·HTTP 응답 동등성)만 완료된 상태다.
+
+카탈로그 historical-rights 원문 9경로의 PostgreSQL reader 배선은 로컬에서
+검증했다(저장된 호출부 블록 추출 실행: SQLite 대비 바이트 동등,
+정답 핀 9/9·오답 핀 거부 9/9). 이는 전체 worker·staged release·운영 배포
+검증이 아니다. `E_RELEASE_PG_PARTIAL` 가드는 유지하며, 런타임 연결값을
+빌드 프로세스 전역 환경에 주입하지 않는다.
