@@ -375,6 +375,11 @@ export async function runRelease({ root, stage, consume, verifyOnly = false, che
           ...(generationSnapshot ? { WIKI_GENERATION_SNAPSHOT: generationSnapshot.id } : {}),
           ...(mapInput ? { WIKI_MAP_RELEASE_REQUEST: mapRequestPath } : {})
         }
+        // Workers run at root; keep relative protected paths bound to the
+        // invoking process directory without copying connection contents.
+        for (const key of ['WIKI_DOCUMENT_PG_FILE', 'WIKI_GENERATION_PRIVATE_PG_FILE']) {
+          if (process.env[key]) env[key] = resolve(process.env[key])
+        }
         const written = new Set()
         const write = async (path, bytes) => {
           outputPath(path)
