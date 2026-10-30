@@ -145,6 +145,21 @@ const typedCatalogSource = (read) => {
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite'))
   try { return read(db) } finally { db.close() }
 }
+// Async PostgreSQL counterpart of typedCatalogSource for a reader that already
+// has an *Async twin: runs inside one worker-owned read-only transaction that
+// imports the release-exported snapshot. Synchronous SQLite callers are
+// unchanged; PG wiring migrates call sites to this helper family by family.
+const typedCatalogSourceAsync = async (readAsync) => {
+  if (!process.env.WIKI_DOCUMENT_PG) {
+    throw Object.assign(new Error('E_CATALOG_ASYNC_PG_ONLY: typedCatalogSourceAsync requires WIKI_DOCUMENT_PG'), { code: 'E_CATALOG_ASYNC_PG_ONLY' })
+  }
+  const { createReader } = await import('./cast-sqlite/db-pg.mjs')
+  const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+  const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
+  try {
+    return await reader.transaction(readAsync, { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
+  } finally { await reader.close() }
+}
 // PostgreSQL release sourcing: metadata reads the release-exported snapshot
 // (WIKI_GENERATION_SNAPSHOT) in one worker-owned read-only transaction.
 // SQLite callers keep the original closure unchanged.
@@ -456,19 +471,29 @@ await writeFile(resolve(generatedRoot, 'wikiUpdates.ts'), `export type WikiUpdat
 const { stateSource, stateRows, stateCatalog, stateNameById, tiersByState, affiliations, stateIdByName } = projectPersonStateInputs(renderedBySlug, pagesBySlug, { organizationAliases })
 await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type CurrentHegemon = { readonly kind: 'state'; readonly stateId: string; readonly name: string } | { readonly kind: 'union'; readonly name: string } | { readonly kind: 'neutral'; readonly name: string }\nexport type CurrentBase = { readonly kind: 'station'; readonly stationId: string; readonly name: string } | { readonly kind: 'facility'; readonly landmarkId: string; readonly name: string }\nexport type StateRecord = { currentHegemon: CurrentHegemon; currentBase: CurrentBase; currentExclusiveDistricts: 'none' | 'immediate-holdings'; slug: string; id: string; name: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
 
-const regionAtlas = typedCatalogSource(db => readRegionAtlasData(db))
-const populationSource = typedCatalogSource(db => readPopulationDocument(db))
+const regionAtlas = process.env.WIKI_DOCUMENT_PG
+  ? await typedCatalogSourceAsync(tx => readRegionAtlasDataAsync(tx))
+  : typedCatalogSource(db => readRegionAtlasData(db))
+const populationSource = process.env.WIKI_DOCUMENT_PG
+  ? await typedCatalogSourceAsync(tx => readPopulationDocumentAsync(tx))
+  : typedCatalogSource(db => readPopulationDocument(db))
 const densityByDong = validatedDensities(regionAtlas.regions, populationSource)
 const seoulGraph = catalogWorldGraph(mapInput, typedCatalogSource)
 const officialLineData = catalogMetadata[OFFICIAL_SEOUL_LINES_PATH]
-const regularLineSource = typedCatalogSource(db => readRailSourceDocument(db, { logicalPath: 'lore/places/regular-line-adjacency.json' }))
+const regularLineSource = process.env.WIKI_DOCUMENT_PG
+  ? await typedCatalogSourceAsync(tx => readRailSourceDocumentAsync(tx, { logicalPath: 'lore/places/regular-line-adjacency.json' }))
+  : typedCatalogSource(db => readRailSourceDocument(db, { logicalPath: 'lore/places/regular-line-adjacency.json' }))
 await writeFile(resolve(generatedRoot, 'railStationSources.ts'),
   '// Generated from typed SQLite domains by generate-catalog.mjs.\n'
-  + 'export const railStationSource = ' + JSON.stringify(typedCatalogSource(db => readRailSourceDocument(db, {
-    logicalPath: 'lore/places/rail-station-corrections.json',
-  }))) + '\nexport const railStationIdentities = ' + JSON.stringify(typedCatalogSource(db => readRailSourceDocument(db, {
-    logicalPath: 'lore/places/rail-station-identities.json',
-  }))) + '\n')
+  + 'export const railStationSource = ' + JSON.stringify(process.env.WIKI_DOCUMENT_PG
+    ? await typedCatalogSourceAsync(tx => readRailSourceDocumentAsync(tx, { logicalPath: 'lore/places/rail-station-corrections.json' }))
+    : typedCatalogSource(db => readRailSourceDocument(db, {
+      logicalPath: 'lore/places/rail-station-corrections.json',
+    }))) + '\nexport const railStationIdentities = ' + JSON.stringify(process.env.WIKI_DOCUMENT_PG
+    ? await typedCatalogSourceAsync(tx => readRailSourceDocumentAsync(tx, { logicalPath: 'lore/places/rail-station-identities.json' }))
+    : typedCatalogSource(db => readRailSourceDocument(db, {
+      logicalPath: 'lore/places/rail-station-identities.json',
+    }))) + '\n')
 const sixteenStatesLore = pagesBySlug.get('Sixteen-States').value
 const stateTable = sixteenStatesLore.content.find((block) => block.anchor === 'table')
 if (!stateTable || stateTable.kind !== 'table' || stateTable.rows.length !== 16) throw new Error('E_STATE_DETAIL_TABLE')
@@ -484,7 +509,9 @@ const relationByStateName = new Map(relationTable.rows.map(([state, relation]) =
   if (!['복속', '보좌', '독립'].includes(relation.ko)) throw new Error(`E_GOV_RELATION:${state.ko}:${relation.ko}`)
   return [state.ko, relation.ko]
 }))
-const stationControlLedger = typedCatalogSource(db => readRailSourceDocument(db, { logicalPath: 'lore/places/station-control-overrides.json' }))
+const stationControlLedger = process.env.WIKI_DOCUMENT_PG
+  ? await typedCatalogSourceAsync(tx => readRailSourceDocumentAsync(tx, { logicalPath: 'lore/places/station-control-overrides.json' }))
+  : typedCatalogSource(db => readRailSourceDocument(db, { logicalPath: 'lore/places/station-control-overrides.json' }))
 const stationControlOverrides = new Map(stationControlLedger.overrides.map((entry) => [entry.stationId, entry]))
 if (stationControlOverrides.size !== stationControlLedger.overrides.length) throw new Error('E_STATION_CONTROL_DUPLICATE')
 for (const entry of stationControlLedger.overrides) {
@@ -505,7 +532,9 @@ if (regionContentById.size !== 427) throw new Error(`E_REGION_CONTENT_COVERAGE:$
 const predecessorRegionContentById = regionContentById
 regionContentById = projectCiaFacilityRegions(regionContentById, ciaFacilityProjection.correction)
 const surfaceHolders = (content) => content?.territory?.holders.map((holder) => holder.polity) ?? []
-const creativeNameLedger = typedCatalogSource(db => readCreativeNameDocument(db))
+const creativeNameLedger = process.env.WIKI_DOCUMENT_PG
+  ? await typedCatalogSourceAsync(tx => readCreativeNameDocumentAsync(tx))
+  : typedCatalogSource(db => readCreativeNameDocument(db))
 const normalizePublicNames = (text) => {
   let normalized = text
   for (const entry of [...creativeNameLedger.replacements].sort((left, right) => right.old.length - left.old.length)) {
@@ -717,7 +746,9 @@ const polygonMetrics = (points) => {
     y: Number((weightedY / (3 * twiceArea)).toFixed(2)),
   }
 }
-const landmarkLedger = typedCatalogSource(db => readLandmarkRoleDocument(db))
+const landmarkLedger = process.env.WIKI_DOCUMENT_PG
+  ? await typedCatalogSourceAsync(tx => readLandmarkRoleDocumentAsync(tx))
+  : typedCatalogSource(db => readLandmarkRoleDocument(db))
 const projectedLandmarks = landmarkLedger.sites.map((site) => {
   const region = regionAtlas.regions.find((entry) => entry.id === site.regionId)
   if (!region || !stateNameById.has(site.holderId)) throw new Error(`E_LANDMARK_OWNER:${site.id}`)
@@ -777,10 +808,14 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
 const vassals = []
 
 const openingTerritories = {
-  physicalRail: typedCatalogSource(db => readPhysicalRail(db)),
+  physicalRail: process.env.WIKI_DOCUMENT_PG
+    ? await typedCatalogSourceAsync(tx => readPhysicalRailAsync(tx))
+    : typedCatalogSource(db => readPhysicalRail(db)),
   geography: projectGeographicTitles(
     geography,
-    typedCatalogSource(db => readBoundaryGeometries(db)),
+    process.env.WIKI_DOCUMENT_PG
+      ? await typedCatalogSourceAsync(tx => readBoundaryGeometriesAsync(tx))
+      : typedCatalogSource(db => readBoundaryGeometries(db)),
     (longitude, latitude) => {
       const [east, north] = proj4('EPSG:4326', 'EPSG:5179', [longitude, latitude])
       return [(east - mapBounds.minX) / (mapBounds.maxX - mapBounds.minX) * mapWidth,
@@ -852,8 +887,12 @@ const historicalRightsBytes = typedCatalogSource(db => Object.fromEntries(Object
   return [key, Buffer.from(row.raw_bytes)]
 })))
 const outsideGeometry = (await loadApprovedRightsHistory(historicalRightsBytes)).historical.outside
-const outsideControl = typedCatalogSource(db => readRetiredTerritoryDocuments(db, { logicalPath: 'lore/regions/outside-control-2126.json' }))
-const outsideIslands = typedCatalogSource(db => readRetiredTerritoryDocuments(db, { logicalPath: 'lore/regions/outside-island-occupation.json' }))
+const outsideControl = process.env.WIKI_DOCUMENT_PG
+  ? await typedCatalogSourceAsync(tx => readRetiredTerritoryDocumentsAsync(tx, { logicalPath: 'lore/regions/outside-control-2126.json' }))
+  : typedCatalogSource(db => readRetiredTerritoryDocuments(db, { logicalPath: 'lore/regions/outside-control-2126.json' }))
+const outsideIslands = process.env.WIKI_DOCUMENT_PG
+  ? await typedCatalogSourceAsync(tx => readRetiredTerritoryDocumentsAsync(tx, { logicalPath: 'lore/regions/outside-island-occupation.json' }))
+  : typedCatalogSource(db => readRetiredTerritoryDocuments(db, { logicalPath: 'lore/regions/outside-island-occupation.json' }))
 const projectedOutsideControl = await projectCatalogOutsideOccupation(outsideControl, outsideGeometry, outsideIslands,
   { approval: historicalRightsBytes.retirement, control: historicalRightsBytes.control, islands: historicalRightsBytes.islands })
 
@@ -961,7 +1000,9 @@ await writeFile(resolve(generatedRoot, 'peopleCatalog.ts'), `export const people
 // The home page reads only the count, so it gets its own module and does not bundle the catalog.
 await writeFile(resolve(generatedRoot, 'peopleCount.ts'), `export const peopleCount = ${peopleCatalog.length}\n`)
 
-const clanTables = typedCatalogSource(db => readClanCatalogDocument(db))
+const clanTables = process.env.WIKI_DOCUMENT_PG
+  ? await typedCatalogSourceAsync(tx => readClanCatalogDocumentAsync(tx))
+  : typedCatalogSource(db => readClanCatalogDocument(db))
 const crestIndexText = await readFile(resolve(publicRoot, 'clan-crests/index.json'), 'utf8')
 const crestIndex = JSON.parse(crestIndexText)
 const branchesByBase = new Map()
