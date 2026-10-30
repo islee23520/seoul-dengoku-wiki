@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto';
 import { listDocuments, listDocumentsAsync, readDocument, readDocumentAsync } from './document-read.mjs';
 import { listGlossaryEntries, listGlossaryEntriesAsync, readGlossaryHead, readGlossaryHeadAsync } from './glossary-store.mjs';
 import { orderDocumentKeys, orderDocumentKeysAsync } from './document-key-order.mjs';
+import { catalogSourceEligible } from '../catalog-publication.mjs';
 
 
 const canonical = value => Array.isArray(value) ? `[${value.map(canonical).join(',')}]`
@@ -18,7 +19,7 @@ export async function readCatalogGlossaryAsync(tx) {
   const rows = await tx.all(sql, params);
   return { rows };
  };
-// PostgreSQL jsonb operators replace SQLite json_extract/json_array_length.
+ // PostgreSQL jsonb operators replace SQLite json_extract/json_array_length.
  const routes = await query(`SELECT (derivation_json::jsonb ->> 'version')::int AS version,
    derivation_json::jsonb ->> 'review' AS review,
    CASE WHEN derivation_json::jsonb ->> 'materialized' IN ('true','1') THEN 1 ELSE 0 END AS materialized,
@@ -45,9 +46,7 @@ export async function readCatalogGlossaryAsync(tx) {
 export async function readCatalogPagesAsync(tx) {
  const slugs = new Set();
  const identities = (await listDocumentsAsync(tx, { corpusKind: 'current', visibility: 'internal' }))
-  .filter(identity => /^lore\//u.test(identity.logical_path)
-   && !/^lore\/(?:name-pools|regions|editorial|sources)\//u.test(identity.logical_path)
-   && !basename(identity.logical_path).startsWith('authoring.'));
+  .filter(catalogSourceEligible);
  const pages = [];
  for (const identity of identities) {
   const slug = basename(identity.logical_path, '.json');
@@ -91,9 +90,7 @@ export function readCatalogGlossary(db) {
 export function readCatalogPages(db) {
  const slugs = new Set();
  return listDocuments(db, { corpusKind: 'current', visibility: 'internal' })
-  .filter(identity => /^lore\//u.test(identity.logical_path)
-   && !/^lore\/(?:name-pools|regions|editorial|sources)\//u.test(identity.logical_path)
-   && !basename(identity.logical_path).startsWith('authoring.'))
+  .filter(catalogSourceEligible)
   .map(identity => {
    const slug = basename(identity.logical_path, '.json');
    if (slugs.has(slug)) throw new Error(`E_DUPLICATE_LORE_SLUG:${slug}`);
