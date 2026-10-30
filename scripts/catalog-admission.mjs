@@ -3,7 +3,7 @@ import { basename, join, relative, resolve } from 'node:path'
 import { glossaryDocument } from './glossary-document.mjs'
 import { loadCategoryRegistry, registrationErrors } from './category-registration.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
-import { readCatalogPages, readCatalogGlossary } from './cast-sqlite/catalog-pages.mjs'
+import { readCatalogPages, readCatalogGlossary, readCatalogPagesAsync, readCatalogGlossaryAsync } from './cast-sqlite/catalog-pages.mjs'
 
 export const readerFields = ['slug', 'title', 'route', 'reviewText', 'blocks']
 export const catalogFields = ['domain', 'slug', 'route', 'title']
@@ -56,6 +56,39 @@ const defaultAtlasCheck = async (options) => {
   return materializeWorldAtlas(options)
 }
 
+const admissionDocuments = (categoryRegistry) => {
+  const slugs = new Set()
+  const documents = []
+  const add = (slug, source, id, sources) => {
+    const document = Object.freeze({ source, id, route: `/world/${slug === 'index' ? '' : slug}` })
+    discoveredSources.set(document, sources)
+    documents.push(document)
+  }
+  const addPage = (page) => {
+    const sourcePath = page.path.slice('lore/'.length)
+    add(page.slug, page.path, atlasPathSet.has(sourcePath) ? `wiki:${page.slug}` : page.value.id,
+      [{
+        source: page.path, approved: page.value.status === 'approved',
+        categoryErrors: page.value.status === 'approved' ? [] : registrationErrors({ ...page.value, slug: page.slug }, categoryRegistry, basename(page.path))
+      }])
+    slugs.add(page.slug)
+  }
+  const addWorldIndex = () => {
+    for (const slug of ['Glossary', 'index']) {
+      if (slugs.has(slug)) throw new Error(`E_PUBLISH_SOURCE_COLLISION:${slug}`)
+      slugs.add(slug)
+      const sources = slug === 'Glossary'
+        ? [{ source: 'lore/glossary.json', approved: true, categoryErrors: [] }]
+        : ['Core-Characters', 'Sixteen-States', 'Scenario-Timeline'].map(dependency =>
+          documents.find(row => row.route === `/world/${dependency}`))
+          .flatMap(document => document ? discoveredSources.get(document) : [null])
+      add(slug, slug === 'index' ? 'scripts/build-world-index.mjs' : 'lore/glossary.json', `wiki:${slug}`, sources.every(Boolean) ? sources : [])
+    }
+  }
+  const sorted = () => documents.sort((left, right) => left.route < right.route ? -1 : left.route > right.route ? 1 : 0)
+  return { slugs, add, addPage, addWorldIndex, sorted }
+}
+
 // Match the publisher's lore JSON selection. The atlas source and projections use
 // the ordinary JSON path, but only after the materializer verifies the committed set.
 export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasCheck, includeWorldIndex = true,
@@ -67,13 +100,7 @@ export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasChe
     const { materializeWorldAtlas } = await import('./cast-sqlite/atlas-materializer.mjs')
     await materializeWorldAtlas({ atlasPath, outDir: loreRoot, check: true, db, dbPath })
   } else await checkAtlas({ atlasPath, outDir: loreRoot, check: true })
-  const slugs = new Set()
-  const documents = []
-  const add = (slug, source, id, sources) => {
-    const document = Object.freeze({ source, id, route: `/world/${slug === 'index' ? '' : slug}` })
-    discoveredSources.set(document, sources)
-    documents.push(document)
-  }
+  const { slugs, add, addPage, addWorldIndex, sorted } = admissionDocuments(categoryRegistry)
   const walk = async (dir) => {
     for (const entry of await readdir(dir, { withFileTypes: true })) {
       if (entry.name.startsWith('.')) continue
@@ -93,8 +120,10 @@ export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasChe
           if (await exists(resolve(loreRoot, twin))) throw new Error(`E_MARKDOWN_TWIN:${twin}`)
           const source = `lore/${sourcePath}`
           add(slug, source, atlasPathSet.has(sourcePath) ? `wiki:${slug}` : value.id,
-            [{ source, approved: value.status === 'approved',
-              categoryErrors: value.status === 'approved' ? [] : registrationErrors({ ...value, slug }, categoryRegistry, entry.name) }])
+            [{
+              source, approved: value.status === 'approved',
+              categoryErrors: value.status === 'approved' ? [] : registrationErrors({ ...value, slug }, categoryRegistry, entry.name)
+            }])
         }
       }
     }
@@ -102,17 +131,11 @@ export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasChe
   if (db || dbPath !== undefined) {
     const connection = db ?? openReadOnly(dbPath)
     try {
-      for (const page of readCatalogPages(connection)) {
-        const sourcePath = page.path.slice('lore/'.length)
-        add(page.slug, page.path, atlasPathSet.has(sourcePath) ? `wiki:${page.slug}` : page.value.id,
-          [{ source: page.path, approved: page.value.status === 'approved',
-            categoryErrors: page.value.status === 'approved' ? [] : registrationErrors({ ...page.value, slug: page.slug }, categoryRegistry, basename(page.path)) }])
-        slugs.add(page.slug)
-      }
+      for (const page of readCatalogPages(connection)) addPage(page)
     } finally { if (!db) connection.close() }
   } else await walk(loreRoot)
 
-  if (!includeWorldIndex) return documents.sort((left, right) => left.route < right.route ? -1 : left.route > right.route ? 1 : 0)
+  if (!includeWorldIndex) return sorted()
   // The Glossary page is generated from the term dictionary, so the dictionary must build it.
   if (db || dbPath !== undefined) {
     const connection = db ?? openReadOnly(dbPath)
@@ -122,17 +145,32 @@ export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasChe
   } else {
     glossaryDocument(JSON.parse(await readFile(join(loreRoot, 'glossary.json'), 'utf8')))
   }
-  for (const slug of ['Glossary', 'index']) {
-    if (slugs.has(slug)) throw new Error(`E_PUBLISH_SOURCE_COLLISION:${slug}`)
-    slugs.add(slug)
-    const sources = slug === 'Glossary'
-      ? [{ source: 'lore/glossary.json', approved: true, categoryErrors: [] }]
-      : ['Core-Characters', 'Sixteen-States', 'Scenario-Timeline'].map(dependency =>
-        documents.find(row => row.route === `/world/${dependency}`))
-        .flatMap(document => document ? discoveredSources.get(document) : [null])
-    add(slug, slug === 'index' ? 'scripts/build-world-index.mjs' : 'lore/glossary.json', `wiki:${slug}`, sources.every(Boolean) ? sources : [])
+  addWorldIndex()
+  return sorted()
+}
+
+// PostgreSQL admission uses only the caller's snapshot transaction for source
+// discovery, atlas validation and the generated glossary's admission checks.
+export async function approvedDocumentsAsync(loreRoot, { tx, includeWorldIndex = true,
+  categoryRegistry: suppliedCategoryRegistry, peopleContext } = {}) {
+  if (!tx || typeof tx.all !== 'function') throw new Error('E_CATALOG_ADMISSION_ASYNC_TX_REQUIRED')
+  const { readCatalogMetadataDocumentAsync, CATEGORY_REGISTRY_PATH } = await import('./cast-sqlite/catalog-metadata.mjs')
+  const categoryRegistry = suppliedCategoryRegistry ?? await readCatalogMetadataDocumentAsync(tx, CATEGORY_REGISTRY_PATH)
+  const { materializeWorldAtlasAsync } = await import('./cast-sqlite/atlas-materializer.mjs')
+  if (!peopleContext) {
+    const { readAtlasIdentityAsync } = await import('./cast-sqlite/atlas-identity.mjs')
+    peopleContext = await readAtlasIdentityAsync(tx)
   }
-  return documents.sort((left, right) => left.route < right.route ? -1 : left.route > right.route ? 1 : 0)
+  await materializeWorldAtlasAsync({
+    tx, peopleContext,
+    atlasPath: resolve(loreRoot, 'World-Narrative-Atlas.json'), outDir: loreRoot, check: true
+  })
+  const { addPage, addWorldIndex, sorted } = admissionDocuments(categoryRegistry)
+  for (const page of await readCatalogPagesAsync(tx)) addPage(page)
+  if (!includeWorldIndex) return sorted()
+  glossaryDocument(await readCatalogGlossaryAsync(tx))
+  addWorldIndex()
+  return sorted()
 }
 
 export async function approvedRoutes(loreRoot) {

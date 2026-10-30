@@ -28,17 +28,23 @@ export function initializePermissionStore(db, command) {
     insert(db, 'permission_archive', { singleton: 1, bytes, sha256: command.expectedSha256, actor: command.actor, reason: command.reason });
     insert(db, 'permission_metadata', { singleton: 1, schema: raw.schema });
     Object.entries(raw.persons).forEach(([person_id, person], ordinal) => {
-      insert(db, 'permission_person', { person_id, ordinal, applicability: person.applicability, identity_basis_ref: person.identityBasisRef,
-        external_reuse_requires_separate_subject_permission: Number(person.externalReuseRequiresSeparateSubjectPermission) });
+      insert(db, 'permission_person', {
+        person_id, ordinal, applicability: person.applicability, identity_basis_ref: person.identityBasisRef,
+        external_reuse_requires_separate_subject_permission: Number(person.externalReuseRequiresSeparateSubjectPermission)
+      });
       for (const scope of ['nameUse', 'likenessUse']) {
         if (!Object.hasOwn(person, scope)) continue;
         const p = person[scope];
-        insert(db, 'permission_scope', { person_id, scope, is_null: Number(p === null), status: p?.status ?? null,
+        insert(db, 'permission_scope', {
+          person_id, scope, is_null: Number(p === null), status: p?.status ?? null,
           date: p?.date ?? null, recorded_on: p?.recordedOn ?? null, evidence_ref: p?.evidenceRef ?? null,
-          has_prior_licenses: Number(p !== null && Object.hasOwn(p, 'priorLicenses')) });
+          has_prior_licenses: Number(p !== null && Object.hasOwn(p, 'priorLicenses'))
+        });
         p?.uses.forEach((use, ordinal) => insert(db, 'permission_use', { person_id, scope, ordinal, use }));
-        p?.priorLicenses?.forEach((license, ordinal) => insert(db, 'permission_prior_license', { person_id, scope, ordinal,
-          source_ref: license.sourceRef, license_ref: license.licenseRef, conditions_ref: license.conditionsRef }));
+        p?.priorLicenses?.forEach((license, ordinal) => insert(db, 'permission_prior_license', {
+          person_id, scope, ordinal,
+          source_ref: license.sourceRef, license_ref: license.licenseRef, conditions_ref: license.conditionsRef
+        }));
       }
     });
     insert(db, 'permission_seal', { singleton: 1 });
@@ -54,14 +60,18 @@ export function readPermissionStore(db) {
   if (!db.prepare('SELECT 1 FROM permission_seal WHERE singleton=1').get()) fail('E_PERMISSION_UNINITIALIZED', 'sealed import required');
   const raw = { schema: db.prepare('SELECT schema FROM permission_metadata WHERE singleton=1').get().schema, persons: {} };
   for (const row of db.prepare('SELECT * FROM permission_person ORDER BY ordinal').all()) {
-    const person = { applicability: row.applicability, identityBasisRef: row.identity_basis_ref,
-      externalReuseRequiresSeparateSubjectPermission: Boolean(row.external_reuse_requires_separate_subject_permission) };
+    const person = {
+      applicability: row.applicability, identityBasisRef: row.identity_basis_ref,
+      externalReuseRequiresSeparateSubjectPermission: Boolean(row.external_reuse_requires_separate_subject_permission)
+    };
     for (const scope of ['nameUse', 'likenessUse']) {
       const p = db.prepare('SELECT * FROM permission_scope WHERE person_id=? AND scope=?').get(row.person_id, scope);
       if (!p) continue;
       if (p.is_null) { person[scope] = null; continue; }
-      const permission = { status: p.status,
-        uses: db.prepare('SELECT use FROM permission_use WHERE person_id=? AND scope=? ORDER BY ordinal').all(row.person_id, scope).map(r => r.use) };
+      const permission = {
+        status: p.status,
+        uses: db.prepare('SELECT use FROM permission_use WHERE person_id=? AND scope=? ORDER BY ordinal').all(row.person_id, scope).map(r => r.use)
+      };
       for (const [key, column] of [['date', 'date'], ['recordedOn', 'recorded_on'], ['evidenceRef', 'evidence_ref']]) if (p[column] !== null) permission[key] = p[column];
       if (p.has_prior_licenses) permission.priorLicenses = db.prepare('SELECT source_ref,license_ref,conditions_ref FROM permission_prior_license WHERE person_id=? AND scope=? ORDER BY ordinal').all(row.person_id, scope)
         .map(r => ({ sourceRef: r.source_ref, licenseRef: r.license_ref, conditionsRef: r.conditions_ref }));
@@ -75,6 +85,34 @@ export function readPermissionStore(db) {
 /** Retain the existing parser's Map contract, using identities issued by this DB. */
 export function readParsedPermissionStore(db) {
   return parsePersonRightsPermissions(readPermissionStore(db), issued(db));
+}
+
+/** PostgreSQL twin of the sealed typed reader and existing parser contract. */
+export async function readParsedPermissionStoreAsync(tx) {
+  if (!await tx.get('SELECT 1 FROM wiki.permission_seal WHERE singleton=1')) fail('E_PERMISSION_UNINITIALIZED', 'sealed import required');
+  const metadata = await tx.get('SELECT schema FROM wiki.permission_metadata WHERE singleton=1');
+  const raw = { schema: metadata.schema, persons: {} };
+  for (const row of await tx.all('SELECT * FROM wiki.permission_person ORDER BY ordinal')) {
+    const person = {
+      applicability: row.applicability, identityBasisRef: row.identity_basis_ref,
+      externalReuseRequiresSeparateSubjectPermission: Boolean(row.external_reuse_requires_separate_subject_permission)
+    };
+    for (const scope of ['nameUse', 'likenessUse']) {
+      const p = await tx.get('SELECT * FROM wiki.permission_scope WHERE person_id=? AND scope=?', [row.person_id, scope]);
+      if (!p) continue;
+      if (p.is_null) { person[scope] = null; continue; }
+      const permission = {
+        status: p.status,
+        uses: (await tx.all('SELECT use FROM wiki.permission_use WHERE person_id=? AND scope=? ORDER BY ordinal', [row.person_id, scope])).map(r => r.use)
+      };
+      for (const [key, column] of [['date', 'date'], ['recordedOn', 'recorded_on'], ['evidenceRef', 'evidence_ref']]) if (p[column] !== null) permission[key] = p[column];
+      if (p.has_prior_licenses) permission.priorLicenses = (await tx.all('SELECT source_ref,license_ref,conditions_ref FROM wiki.permission_prior_license WHERE person_id=? AND scope=? ORDER BY ordinal', [row.person_id, scope]))
+        .map(r => ({ sourceRef: r.source_ref, licenseRef: r.license_ref, conditionsRef: r.conditions_ref }));
+      person[scope] = permission;
+    }
+    raw.persons[row.person_id] = person;
+  }
+  return parsePersonRightsPermissions(raw, await tx.all('SELECT person_id AS id FROM wiki.person ORDER BY person_id'));
 }
 
 /** No editor is admitted: no grant minting, widening, history or admission mutation. */

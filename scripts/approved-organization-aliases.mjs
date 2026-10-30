@@ -1,11 +1,13 @@
 import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { openEvidenceStore, INTERNAL_EVIDENCE_CAPABILITY } from './document-store/evidence.mjs'
+import { readCapturedEvidenceBytesAsync } from './document-store/evidence-reader-pg.mjs'
 
 // A fictional organization keeps its ledger name while cards may name it by its
 // public 2026 identity (office-rank retrofit proposal, 2026-10-17). Leader
 // grounding that matches a state's name inside person cards also accepts it.
 export const proposalPath = '.omo/private/seoul-migration/office-rank-retrofit-proposal-20261017/proposal.json'
+const proposalSha256 = 'da361fc618c2ab82d67e01f7ced773fadc8189bc75194c5aaa3a6e6d5ca43fc0'
 
 export function organizationAliases(proposalBytes) {
   const proposal = JSON.parse(Buffer.from(proposalBytes).toString('utf8'))
@@ -23,13 +25,19 @@ export async function loadApprovedOrganizationAliases(root, reader = readFile) {
   if (reader === readFile) {
     const store = openEvidenceStore(resolve(root,
       '.omo/private/seoul-migration/sqlite-authority-20261021/scope-atlas-reader-capture-20261021.sqlite'),
-    { capability: INTERNAL_EVIDENCE_CAPABILITY })
+      { capability: INTERNAL_EVIDENCE_CAPABILITY })
     try {
-      return organizationAliases(store.getEvidence('scope-read:' + proposalPath,
-        'da361fc618c2ab82d67e01f7ced773fadc8189bc75194c5aaa3a6e6d5ca43fc0'))
+      return organizationAliases(store.getEvidence('scope-read:' + proposalPath, proposalSha256))
     } finally { store.close() }
   }
   return organizationAliases(await reader(resolve(root, proposalPath)))
+}
+
+// The caller owns the private PostgreSQL snapshot; the pinned capture remains
+// archival evidence and does not replace typed current-document authority.
+export async function loadApprovedOrganizationAliasesAsync(privateTx) {
+  return organizationAliases(await readCapturedEvidenceBytesAsync(privateTx, proposalPath,
+    { identity: 'scope-read:' + proposalPath, sha256: proposalSha256 }))
 }
 
 export const stateNames = (name, aliases) => [name, ...(aliases?.get(name) ?? [])]

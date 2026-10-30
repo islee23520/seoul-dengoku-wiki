@@ -1,3 +1,6 @@
+// Migration-only SQLite authoring implementation. Active CLI authoring uses
+// document-edit-pg.mjs; never pass a PostgreSQL transaction into these sync APIs.
+
 import { readFileSync, statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { DatabaseSync } from 'node:sqlite';

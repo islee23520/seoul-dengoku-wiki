@@ -604,3 +604,37 @@ export function initializeWorldGraphDocument(db, options) {
 export function readWorldGraphDocument(db) {
   return readDocument(db);
 }
+
+/** PostgreSQL twin. The caller owns the transaction and its release snapshot. */
+export async function readWorldGraphDocumentAsync(tx) {
+  const preloaded = new Map();
+  for (const table of WORLD_GRAPH_TABLES) {
+    let order = 'ordinal';
+    if (table === 'world_graph_document_import' || table === 'world_graph_document_root') order = '';
+    else if (/^world_graph_document_excluded_skipped_(?:code|station|name)$/u.test(table)) {
+      order = 'excluded_ordinal, skipped_ordinal, ordinal';
+    } else if (table.startsWith('world_graph_document_excluded_')) order = 'excluded_ordinal, ordinal';
+    else if (table.startsWith('world_graph_document_replacement_')) order = 'replacement_ordinal, ordinal';
+    else if (table.startsWith('world_graph_document_hub_')) order = 'hub_ordinal, ordinal';
+    const columns = table === 'world_graph_document_district' ? 'ordinal, name' : '*';
+    const suffix = table + (order ? ` ORDER BY ${order}` : '');
+    const sql = `SELECT ${columns} FROM ${suffix}`;
+    const rows = await tx.all(`SELECT ${columns} FROM wiki.${suffix}`);
+    preloaded.set(sql, rows);
+    preloaded.set(`SELECT count(*) AS n FROM ${table}`, [{ n: rows.length }]);
+  }
+  // PostgreSQL performs every projection and ordering; the unchanged reader
+  // enforces receipt, ordinal, consumed-row count, coordinate and digest checks.
+  const served = (sql, params) => {
+    if (params.length || !preloaded.has(sql)) fail('E_WORLD_GRAPH_INTEGRITY', 'unmaterialized statement');
+    return preloaded.get(sql);
+  };
+  return readDocument({
+    prepare(sql) {
+      return {
+        all: (...params) => served(sql, params),
+        get: (...params) => served(sql, params)[0],
+      };
+    },
+  });
+}

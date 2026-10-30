@@ -4,20 +4,20 @@
 
 ## Project Overview
 
-서울 내부 세계를 다루는 대전략·TRPG 기반 CRPG 위키. `data/canonical/wiki-cast.sqlite`(Git LFS, schema 5)가 유일한 저작 정본이고, 승인(publication admission)을 통과한 투영만 `public/`·`src/generated/` 공개 산출물이 되어 React 18 SPA(`/wiki`)과 읽기 전용 Node API가 소비한다. 집필·승인 기준은 `WORLD_BUILDING_GUIDE.md`, 편집 절차는 `lore/AUTHORING-JSON.md`이 정본이다.
+서울 내부 세계를 다루는 대전략·TRPG 기반 CRPG 위키. PostgreSQL `wiki`가 저작 정본 전환 대상이며 typed 문서 head·revision을 보유한다. 공개 생성물은 `public/`·`src/generated/`에 투영되어 React SPA와 읽기 전용 API가 소비한다. PG 문서 저작과 API는 SQLite 폴백이 없다. 격리 환경에서 SQLite·PG reader 및 전체 worker 출력 1,433개 대사와 일반 PG 빌드·검사가 통과했으나 정확한 SHA 기준 운영 후보 확인과 배포는 남아 있다. 집필·승인 기준은 `WORLD_BUILDING_GUIDE.md`, 편집 절차는 `lore/AUTHORING-JSON.md`을 따른다.
 
 ## Architecture & Data Flow
 
 ```mermaid
 flowchart LR
-  DB[("data/canonical/wiki-cast.sqlite<br/>저작 정본 · LFS")]
+  DB[("PostgreSQL wiki<br/>저작 정본 전환 대상")]
   EDIT["document-cli.mjs<br/>list / read / edit"]
-  VAL["lore-json-validate --strict<br/>cast:verify · test:gate"]
+  VAL["lore-json-validate --strict<br/>이관 대사 · 생성 검증"]
   GEN["generate-release.mjs<br/>flock lock · journal"]
   PUB["public/ · src/generated/"]
   PRIV["src/generated-private/<br/>+ .omo/evidence"]
   API7["server/wiki-api.mjs :8787"]
-  API8["server/wiki-document-api.mjs :8788<br/>(WIKI_DOCUMENT_DB 필수)"]
+  API8["server/wiki-document-api.mjs :8788<br/>(PostgreSQL 필수)"]
   SPA["React SPA /wiki<br/>src/main.tsx → src/App.tsx"]
   DIST["vite build → dist/"]
   ALLOW["check:artifacts<br/>(artifact-allowlist.json)"]
@@ -28,12 +28,14 @@ flowchart LR
   GEN --> PUB
   GEN --> PRIV
   PUB --> API7 --> SPA
-  PUB --> API8 --> SPA
+  DB --> API8 --> SPA
   PUB --> DIST --> ALLOW --> OWNER
 ```
 
 - **정본 → 생성물 단방향.** 물리적 lore JSON은 제거됐다. `.json` 이름은 DB 논리 ID/provenance일 뿐 실물 파일이 아닐 수 있다(예: `lore/World-Narrative-Atlas.json` = 논리 루트 문서 `WNA-001`, `lore/editorial/Character-System-Contract.json` = DB 내 typed 보존).
-- **화면 데이터 흐름:** `src/main.tsx`(BrowserRouter basename `/wiki`) → `src/App.tsx` 라우팅. 문서 본문은 `src/documentApi.ts`의 `fetchWikiDocument(slug, locale)` → `GET /wiki/api/documents/world/<slug>?locale=ko|en` → blocks → `DocumentContent`(`@seoul-dengoku/document-renderer`) 렌더. `src/generated/wikiCatalog.ts`의 `wikiCatalog`/`wikiEnglishCatalog`는 route 등록·문서 존재 확인·언어 전환용 metadata이며 본문 로딩 경로와 별개다.
+- **이관과 증거 구분.** 옛 SQLite는 이관·대사 입력이며 전환 후 운영 저작 정본이 아니다. 외부 SQLite archive 정리와 PG 내부 `wiki.source_file` 원천 바이트·해시, `source_record` provenance, 봉인 revision은 별개다. PG 역사 증거는 불변으로 보존하며 삭제·재작성하지 않는다.
+- **전환 게이트.** `--verify-pg`는 공개 `WIKI_DOCUMENT_PG`와 별도 비공개 `WIKI_GENERATION_PRIVATE_PG`를 사용해 stage만 검증하고 승격하지 않는다. 일반 PG 생성·빌드는 허용되며 메타데이터, PostgreSQL 스냅샷과 비공개 입력 스냅샷·출처 검증을 유지한다. 격리 환경의 통과는 운영 배포 완료를 뜻하지 않는다. 기존 SQLite 생성 경로가 남아 있어도 이관 완료 전 임시 경로다.
+- **화면 데이터 흐름:** `src/main.tsx`(BrowserRouter basename `/wiki`) → `src/App.tsx` 라우팅. 문서 본문은 `src/documentApi.ts` → `GET /wiki/api/documents/world/<slug>?locale=ko` → blocks → `DocumentContent` 렌더. 공개 본문은 한국어 전용이며 영어 카탈로그·영어 생성 문서는 폐기됐다.
 - **API:** dev에서 Vite proxy가 `/wiki/api/documents` → `127.0.0.1:8788`(문서 API), 나머지 `/wiki/api` → `127.0.0.1:8787`(데이터 API)로 보낸다. 문서 API와 generate worker(`scripts/generate-catalog.mjs`)는 동일한 `publicHouseContent`/`publicOfficeContent`/`renderLoreMarkdown` 렌더 체인을 공유한다.
 - **지도:** `src/components/mapBridge.ts`가 Unity/지도 플레이어와 `MapTransport {send, subscribe}` 메시지 브리지(schema `janseon-wiki-map.v1`, EPSG:5179, manifest·source SHA-256 검증). React 측은 `useMapBridge.ts`.
 - **상태 관리:** 전역 상태 라이브러리 없음. "controller factory + hook" 패턴 — `createDocumentController`(documentApi) → 페이지 ref 보관 + `useEffect` load/dispose, `createFeedbackViewController` → `hooks/useFeedbackDocument`. fetcher 주입(`fetcher: typeof fetch = fetch`), AbortController + request-id로 stale 응답 폐기.
@@ -42,12 +44,12 @@ flowchart LR
 
 |경로|용도|경계|
 |---|---|---|
-|`data/`|`canonical/wiki-cast.sqlite` 정본 + `geography/` 원본 번들|export는 checkout 밖 새 경로만, 임의 SQL 편집 금지|
+|`data/`|지리 원본 번들과 이전 SQLite 이관 입력|SQLite는 운영 저작 정본 아님; PG 역사 증거와 구별|
 |`lore/`|도메인 지침(하위 AGENTS.md 다수)·논리 ID 네임스페이스|저작 절차는 `lore/AUTHORING-JSON.md` 준수|
 |`src/`|React SPA. `pages/`, `components/`, `hooks/`|`src/generated*`은 생성물(gitignore)이라 직접 편집 금지|
 |`public/`|공개 생성 JSON·이미지(gitignore)|항상 `npm run generate`로 재생성|
 |`scripts/`|생성·검증·조회 파이프라인|정식 경계는 `generate-release.mjs`|
-|`server/`|읽기 전용 공개 API 2종|`wiki-document-api.mjs`는 `WIKI_DOCUMENT_DB` 필수|
+|`server/`|읽기 전용 공개 API 2종|문서 API는 `WIKI_DOCUMENT_PG` 또는 `WIKI_DOCUMENT_PG_FILE` 필수|
 |`deploy/`|외부 owner 호출·배포 계약(Woodpecker, Dockerfile, nginx, ps1)|저장소는 호스트 자격증명 미보유|
 |`snapshots/build-inputs/`|고정 외부 입력(atlas-data.js 등)|generate 소비 대상, 재수집 아님|
 |`.omo/`|비공개 작업·증거·editorial/Soul DB|git·공개 산출물에서 제외|
@@ -58,17 +60,17 @@ flowchart LR
 ```bash
 npm ci --ignore-scripts                                  # 표준 설치(postinstall 미실행)
 npm run dev                                              # Vite dev — http://localhost:5174/wiki
-npm run generate                                         # scripts/generate-release.mjs — 공개 생성물 재생성
-npm run build                                            # generate-release.mjs --build → dist/
-npm run cast:build -- --output /tmp/wiki-cast-new.sqlite # export — checkout 밖 경로만 허용
-npm run cast:verify -- --db data/canonical/wiki-cast.sqlite
+npm run generate                                         # release 진입점; PG 메타데이터·스냅샷 검증 필요
+npm run build                                            # release --build; 동일 PG 검증 경계 적용
+node scripts/generate-release.mjs --verify-pg             # PG 공개·비공개 연결 필요; stage 검증만
+# cast:pg-verify는 이관 입력 필요; --pg 인자 자격증명 노출에 주의
 npm run check:artifacts                                  # dist/ ↔ artifact-allowlist.json 대조
 node scripts/check-contract.mjs                          # 산출 계약 검사(npm 스크립트 없음 — 직접 실행)
 node scripts/lore-json-validate.mjs --strict             # 문서 스키마·로케일·블록·링크 검사
-node scripts/document-cli.mjs --db data/canonical/wiki-cast.sqlite list   # 정본 문서 조회
+node scripts/cast-sqlite/document-cli.mjs list --corpus current # WIKI_AUTHORING_PG 또는 WIKI_DOCUMENT_PG
 node --test --test-concurrency=1 scripts/cast-sqlite/test-inkos-adapter-*.mjs   # 어댑터 회귀(PR #627 병합 후)
 node server/wiki-api.mjs                                 # PORT=8787 HOST=0.0.0.0 DATA_DIR=public/
-WIKI_DOCUMENT_DB=... node server/wiki-document-api.mjs   # 문서 API(환경변수 필수)
+node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또는 WIKI_DOCUMENT_PG_FILE
 ```
 
 테스트 npm 스크립트(`npm test`, `test:parent`, `test:cast-sqlite` 등)는 PR #625에서 제거됐다. 검사·시험은 위처럼 직접 node 실행한다.
@@ -77,8 +79,8 @@ WIKI_DOCUMENT_DB=... node server/wiki-document-api.mjs   # 문서 API(환경변�
 
 ## Code Conventions & Common Patterns
 
-- **SQLite-first 저작.** 문서·인물·세력 변경은 DB 편집으로. `public/`·`src/generated*` 직접 수정 금지.
-- **승인 게이트 없음.** `generate-release.mjs`는 review·승인 상태를 요구하지 않는다(창작 자유도 확보를 위해 정본 해시 고정·고정 행 수·승인값·승인 체인 검증을 제거했다). 스키마·FK·구조 무결성·값 범위 검사와 release journal/inventory 변경 감지 해시는 유지한다.
+- **PostgreSQL 저작 전환.** 지원되는 typed CLI로 문서 변경; `public/`·`src/generated*` 직접 수정 금지. SQLite writer와 검사는 이관·대사용이며 PG 정본 편집 수단이 아니다.
+- **승인 경계.** 편집은 draft이며 기존 승인을 승계하지 않는다. 원천 승인·게시 편입·생성·배포는 별도 판단으로 보존하고, 실행된 검증 이상의 승인이나 배포를 주장하지 않는다.
 - **ESM + TypeScript strict.** `"type": "module"`, tsconfig 단일 파일(noEmit, bundler resolution, `@/*` → `src`). 네이밍: 컴포넌트 PascalCase(`ArticlePage.tsx`), 유틸 camelCase, 도메인 유틸은 `wiki*` 접두사(`wikiRouting.ts`, `wikiDocument.ts`).
 - **비동기·에러 패턴.** async/await + AbortController + request counter 가드, fire-and-forget은 `void controller.load(...)`. 로딩/오류/미발견 상태를 합치지 않고 명시적 union(`'ready'|'loading'|'not-found'|'error'`)으로 모델링. API 클라이언트는 typed error envelope 파싱(예: `FeedbackApiError`).
 - **린트·포맷터 부재.** ESLint/Prettier/Biome 없음 — 품질 장치는 tsc strict + 저장소 검사 스크립트(`check-contract`, `check-links`, `check-artifact-allowlist`, `lore-json-validate`).
@@ -105,9 +107,9 @@ WIKI_DOCUMENT_DB=... node server/wiki-document-api.mjs   # 문서 API(환경변�
 |`src/components/mapBridge.ts`|Unity 지도 브리지 계약|
 |`scripts/generate-release.mjs`|정식 generate/build 경계(flock lock, journal, 원자적 쓰기)|
 |`scripts/generate-catalog.mjs`|generate worker. 직접 실행으로 live 출력 갱신·stage 우회 금지|
-|`scripts/cast-sqlite/document-cli.mjs`|SQLite 문서 list/read/edit|
-|`scripts/cast-sqlite/db.mjs`|SCHEMA_VERSION=5, APPLICATION_ID=0x57435351|
-|`scripts/cast-sqlite/verify.mjs`, `current-authority.mjs`|정본 무결성·현재성 검증(`cast:verify`)|
+|`scripts/cast-sqlite/document-cli.mjs`|PostgreSQL 문서 list/read/edit; `--db` 및 SQLite 폴백 불가|
+|`scripts/cast-sqlite/db-pg.mjs`|PostgreSQL 비동기 reader; `db.mjs`는 SQLite 이관 도구|
+|`scripts/cast-sqlite/verify.mjs`, `scripts/postgres-migration/reconcile.mjs`|SQLite 이관 입력 검사·PG 대사; 운영 승인·배포 증명이 아님|
 |`scripts/document-store/`|비공개 문서·receipt·pinned reader|
 |`scripts/inkos-adapter/README.md`|InkOS 후보 전용·읽기 전용 경계|
 |`server/wiki-api.mjs`, `server/wiki-document-api.mjs`|공개 API|
@@ -130,4 +132,4 @@ WIKI_DOCUMENT_DB=... node server/wiki-document-api.mjs   # 문서 API(환경변�
 - **잔존 실행 회귀:** 승인 경계 어댑터 6종만 `node --test --test-concurrency=1 scripts/cast-sqlite/test-inkos-adapter-*.mjs`로 직접 실행한다(PR #627). InkOS 스모크 `scripts/test-inkos.mjs`는 PR #623 병합 후 master 고정 기대값으로 복원 예정. 직렬 실행 권고 — `io.mjs` 조상 ctime 검사가 병렬에서 `E_ADAPTER_PATH` 오탐을 낸다.
 - **품질 장치:** lint·포맷터 없음 — tsc strict + 검사 스크립트(`check-contract.mjs`, `check-links.mjs`, `check-artifact-allowlist.mjs`, `lore-json-validate.mjs`, `cast:verify` 등). 커버리지 설정 없음.
 - **CI:** `.woodpecker/deploy.yaml`만 존재 — `deploy/check-lfs-inputs.mjs` → `npm ci --ignore-scripts` → `deploy/call-owner.mjs`(외부 owner) → `deploy/check-live-contract.mjs --public-edge`.
-- **사전 조건:** generated catalog가 필요한 작업은 `npm run generate` 선행. Git LFS 입력(`data/canonical/wiki-cast.sqlite`, `public/portraits/person-1017.png`) 필수.
+- **사전 조건:** generated catalog가 필요한 작업은 생성 입력과 전환 게이트를 확인한다. 이관 대사에는 정확한 SQLite 실체와 PG 연결이 필요하다. Git LFS 입력은 실제 필요한 작업의 계약을 확인한다.

@@ -1,6 +1,6 @@
 import type { WikiBlock } from '@seoul-dengoku/document-renderer'
 
-type WikiLocale = 'ko' | 'en'
+type WikiLocale = 'ko'
 export type WikiApiDocument = { title: string; route: string; blocks: WikiBlock[]; reviewText: string }
 export type DocumentState = { slug: string; locale: WikiLocale } & (
   { status: 'ready'; document: WikiApiDocument } | { status: 'loading' | 'not-found' | 'error' }
@@ -20,7 +20,7 @@ const block = (value: unknown): value is WikiBlock => {
 }
 
 export async function fetchWikiDocument(slug: string, locale: WikiLocale, options: { signal?: AbortSignal; fetcher?: typeof fetch } = {}): Promise<WikiApiDocument | null> {
-  if (!/^[\p{L}\p{N}_-]+$/u.test(slug) || !['ko', 'en'].includes(locale)) throw new Error('Invalid document selector')
+  if (!/^[\p{L}\p{N}_-]+$/u.test(slug) || locale !== 'ko') throw new Error('Invalid document selector')
   const response = await (options.fetcher ?? fetch)(`/wiki/api/documents/world/${encodeURIComponent(slug)}?locale=${locale}`, {
     method: 'GET', credentials: 'same-origin', headers: { accept: 'application/json' }, signal: options.signal,
   })
@@ -28,7 +28,7 @@ export async function fetchWikiDocument(slug: string, locale: WikiLocale, option
   const body: unknown = await response.json()
   if (response.status === 404) return null
   if (!response.ok) throw new Error(`Document request failed (${response.status})`)
-  const route = `${locale === 'en' ? '/en' : ''}/world/${slug === 'index' ? '' : slug}`
+  const route = `/world/${slug === 'index' ? '' : slug}`
   if (!record(body) || typeof body.title !== 'string' || !body.title.trim() || body.route !== route
     || typeof body.reviewText !== 'string' || !Array.isArray(body.blocks) || !body.blocks.every(block)) throw new Error('Invalid document response')
   return body as WikiApiDocument

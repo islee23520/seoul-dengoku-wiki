@@ -1,38 +1,45 @@
 import { spawnSync } from 'node:child_process'
+import { readFile, readdir, writeFile } from 'node:fs/promises'
 import { basename, dirname, extname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
-import { approvedDocuments, publishedDocuments, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
+import { approvedDocuments, approvedDocumentsAsync, publishedDocuments, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
 import { personRouteFailures } from './person-publication-contract.mjs'
-import { buildAdminTerritorialScale, validateAdminTerritorialScale, buildAdminTerritorialScaleFromDb } from './admin-territorial-scale.mjs'
+import { buildAdminTerritorialScale, validateAdminTerritorialScale, buildAdminTerritorialScaleFromDb, buildAdminTerritorialScaleFromDbAsync, readOfficesTerritorialSourceAsync } from './admin-territorial-scale.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
-import { readGeographyStore } from './cast-sqlite/geography-store.mjs'
+import { readGeographyStore, readGeographyStoreAsync } from './cast-sqlite/geography-store.mjs'
 import { readScopeCurrentSource } from './document-store/scope-current-source.mjs'
 import { validatePublishedGeographyMap } from './published-geography-map.mjs'
 import { publicTerritorialScale } from '../src/components/geographicTitleMap.mjs'
-import { readPersonDisposition } from './cast-sqlite/person-disposition.mjs'
-import { readAtlasIdentity, readAtlasValuesDocument } from './cast-sqlite/atlas-identity.mjs'
+import { readPersonDisposition, readPersonDispositionAsync } from './cast-sqlite/person-disposition.mjs'
+import { readAtlasIdentity, readAtlasValuesDocument, readAtlasIdentityAsync, readAtlasValuesDocumentAsync } from './cast-sqlite/atlas-identity.mjs'
+import { createReader } from './cast-sqlite/db-pg.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-process.env.WIKI_DOCUMENT_DB ??= resolve(projectRoot, 'data/canonical/wiki-cast.sqlite')
+if (!process.env.WIKI_DOCUMENT_PG) process.env.WIKI_DOCUMENT_DB ??= resolve(projectRoot, 'data/canonical/wiki-cast.sqlite')
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(projectRoot, 'lore'))
 const domains = ['world']
 const outputArg = process.argv.indexOf('--json')
 const outputPath = outputArg >= 0 ? process.argv[outputArg + 1] : null
 
+async function pgSource(read) {
+  const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+  const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
+  try {
+    return await reader.transaction(read, { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
+  } finally { await reader.close() }
+}
+
 const documents = []
-const englishDocuments = []
 for (const domain of domains) {
-  for (const [folder, target] of [['world', documents], ['world-en', englishDocuments]]) {
-    const sourceDir = resolve(projectRoot, `src/generated/${folder}`)
-    const names = (await readdir(sourceDir)).filter((name) => extname(name) === '.json').sort()
-    for (const name of names) {
-      const page = JSON.parse(await readFile(resolve(sourceDir, name), 'utf8'))
-      const heading = page.title ?? basename(name, '.json')
-      target.push({ domain, slug: basename(name, '.json'), title: heading.trim(), route: page.route })
-    }
+  const sourceDir = resolve(projectRoot, 'src/generated/world')
+  const names = (await readdir(sourceDir)).filter((name) => extname(name) === '.json').sort()
+  for (const name of names) {
+    const page = JSON.parse(await readFile(resolve(sourceDir, name), 'utf8'))
+    const heading = page.title ?? basename(name, '.json')
+    documents.push({ domain, slug: basename(name, '.json'), title: heading.trim(), route: page.route })
   }
 }
 
@@ -59,7 +66,13 @@ try {
 const failures = []
 try {
   let descriptor, geographicScale, geography
-  if (process.env.WIKI_DOCUMENT_DB) {
+  if (process.env.WIKI_DOCUMENT_PG) {
+    ({ descriptor, geographicScale, geography } = await pgSource(async (tx) => ({
+      descriptor: (await readOfficesTerritorialSourceAsync(tx)).data.territorialScale,
+      geographicScale: await buildAdminTerritorialScaleFromDbAsync(tx),
+      geography: await readGeographyStoreAsync(tx),
+    })))
+  } else if (process.env.WIKI_DOCUMENT_DB) {
     const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
     try {
       db.exec('BEGIN')
@@ -84,21 +97,27 @@ try {
 } catch (error) {
   failures.push('territorial-scale-contract:' + error.message)
 }
-const approved = publishedDocuments(await approvedDocuments(loreRoot))
+const approved = publishedDocuments(process.env.WIKI_DOCUMENT_PG
+  ? await pgSource(tx => approvedDocumentsAsync(loreRoot, { tx }))
+  : await approvedDocuments(loreRoot))
 const peopleSource = await readFile(resolve(projectRoot, 'src/generated/peopleCatalog.ts'), 'utf8')
 const people = JSON.parse(peopleSource.split('export const peopleCatalog = ')[1].split(' as const')[0])
-const { sourcePeople, issued } = (() => {
-  const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
-  try { return { sourcePeople: readAtlasValuesDocument(db).people, issued: readAtlasIdentity(db).registry.persons } }
-  finally { db.close() }
-})()
+const { sourcePeople, issued } = process.env.WIKI_DOCUMENT_PG
+  ? await pgSource(async (tx) => ({ sourcePeople: (await readAtlasValuesDocumentAsync(tx)).people, issued: (await readAtlasIdentityAsync(tx)).registry.persons }))
+  : (() => {
+    const db = openReadOnly(process.env.WIKI_DOCUMENT_DB)
+    try { return { sourcePeople: readAtlasValuesDocument(db).people, issued: readAtlasIdentity(db).registry.persons } }
+    finally { db.close() }
+  })()
 const detailRoot = resolve(projectRoot, 'public/person-details')
 const details = new Map()
 for (const name of (await readdir(detailRoot)).filter((name) => extname(name) === '.json')) {
   details.set(basename(name, '.json'), JSON.parse(await readFile(resolve(detailRoot, name), 'utf8')))
 }
 let dispositions
-{
+if (process.env.WIKI_DOCUMENT_PG) {
+  dispositions = await pgSource(async (tx) => (await tx.get("SELECT 1 FROM information_schema.tables WHERE table_schema='wiki' AND table_name='person_disposition'")) ? await readPersonDispositionAsync(tx) : undefined)
+} else {
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite'))
   try {
     if (db.prepare("SELECT 1 FROM sqlite_schema WHERE name='person_disposition'").get()) dispositions = readPersonDisposition(db)
@@ -106,19 +125,19 @@ let dispositions
 }
 failures.push(...personRouteFailures(people, details, sourcePeople, issued, dispositions))
 const expectedRoutes = approved.map(({ route }) => route)
-const expectedEnglishRoutes = approved.filter(({ source }) => source.endsWith('.json')).map(({ route }) => `/en${route}`)
 const publishedRoutes = documents.map(({ route }) => route).sort()
-const publishedEnglishRoutes = englishDocuments.map(({ route }) => route).sort()
 if (JSON.stringify(publishedRoutes) !== JSON.stringify(expectedRoutes)) failures.push('published-routes-differ-from-approved-lore-set')
-if (JSON.stringify(publishedEnglishRoutes) !== JSON.stringify(expectedEnglishRoutes)) failures.push('published-english-routes-differ-from-approved-lore-set')
-const englishStart = catalogSource.indexOf('export const wikiEnglishCatalog')
 const routesIn = (source) => [...source.matchAll(/route: '([^']+)'/g)].map((match) => match[1]).sort()
-const catalogRoutes = routesIn(catalogSource.slice(0, englishStart))
-const englishCatalogRoutes = routesIn(catalogSource.slice(englishStart))
+const catalogRoutes = routesIn(catalogSource)
 if (JSON.stringify(catalogRoutes) !== JSON.stringify(expectedRoutes)) failures.push('catalog-routes-differ-from-approved-lore-set')
-if (JSON.stringify(englishCatalogRoutes) !== JSON.stringify(expectedEnglishRoutes)) failures.push('english-catalog-routes-differ-from-approved-lore-set')
+if (catalogSource.includes('wikiEnglishCatalog')) failures.push('unexpected-generated-english-catalog')
+const englishFiles = await readdir(resolve(projectRoot, 'src/generated/world-en'), { recursive: true, withFileTypes: true }).catch((error) => {
+  if (error.code === 'ENOENT') return []
+  throw error
+})
+if (englishFiles.some((entry) => !entry.isDirectory())) failures.push('unexpected-generated-english-files:src/generated/world-en')
 if (publicContract) {
-  if (unknownFields(publicContract, ['documents', 'englishDocuments']).length) failures.push(`public-contract-extra-fields:${unknownFields(publicContract, ['documents', 'englishDocuments']).join(',')}`)
+  if (unknownFields(publicContract, ['documents']).length) failures.push(`public-contract-extra-fields:${unknownFields(publicContract, ['documents']).join(',')}`)
   if (!Array.isArray(publicContract.documents)) failures.push('public-contract-documents-invalid')
   else {
     const contractRoutes = publicContract.documents.map((document) => document.route).sort()
@@ -128,38 +147,26 @@ if (publicContract) {
       if (extra.length) failures.push(`public-contract-document-extra-fields:${document.route}:${extra.join(',')}`)
     }
   }
-  if (!Array.isArray(publicContract.englishDocuments)) failures.push('public-contract-english-documents-invalid')
-  else {
-    const routes = publicContract.englishDocuments.map((document) => document.route).sort()
-    if (JSON.stringify(routes) !== JSON.stringify(expectedEnglishRoutes)) failures.push('public-contract-english-routes-differ-from-approved-lore-set')
-    for (const document of publicContract.englishDocuments) {
-      const extra = unknownFields(document, catalogFields)
-      if (extra.length) failures.push(`public-contract-english-document-extra-fields:${document.route}:${extra.join(',')}`)
-    }
-  }
 }
 const relations = spawnSync(process.execPath, [resolve(loreRoot, 'relations/validate.mjs')], { encoding: 'utf8' })
 if (relations.status !== 0) failures.push(`relation-contract:${(relations.stderr || relations.stdout || relations.error?.message || 'missing validator').trim()}`)
 if (documents.length === 0) failures.push('document-count:0')
 if (!appSource.includes('path="/:domain/:slug"')) failures.push('missing-react-document-route')
-if (!articleSource.includes('wikiCatalog')) failures.push('article-not-backed-by-catalog')
+if (!articleSource.includes('createDocumentController')) failures.push('article-not-backed-by-document-api')
+if (/<ArticlePage\b[^>]*\blocale=['"]en['"]/.test(appSource)) failures.push('unexpected-english-article-renderer')
 if (!catalogSource.includes('export const wikiCatalog')) failures.push('missing-generated-catalog')
-if (englishStart < 0) failures.push('missing-generated-english-catalog')
 if (!publicContract || publicContract.documents?.length !== documents.length) failures.push('missing-public-contract-manifest')
-if (!publicContract || publicContract.englishDocuments?.length !== englishDocuments.length) failures.push('missing-public-english-contract-manifest')
 if (/\.html['"]/.test(linksSource)) failures.push('legacy-html-links-in-react')
 if (!(await readFile(resolve(projectRoot, 'vite.config.ts'), 'utf8')).includes("base: '/wiki/'")) failures.push('missing-wiki-vite-base')
 
-for (const [pages, catalog, prefix] of [[documents, catalogSource.slice(0, englishStart), ''], [englishDocuments, catalogSource.slice(englishStart), '/en']]) {
-  for (const document of pages) {
-    const route = `${prefix}/${document.domain}/${document.slug === 'index' ? '' : document.slug}`
-    if (!catalog.includes(`route: '${route}'`)) failures.push(`missing-route:${route}`)
-    if (!catalog.includes(`title: ${JSON.stringify(document.title)}`)) failures.push(`missing-title:${route}`)
-  }
+for (const document of documents) {
+  const route = `/${document.domain}/${document.slug === 'index' ? '' : document.slug}`
+  if (!catalogSource.includes(`route: '${route}'`)) failures.push(`missing-route:${route}`)
+  if (!catalogSource.includes(`title: ${JSON.stringify(document.title)}`)) failures.push(`missing-title:${route}`)
 }
 
 for (const domain of domains) {
-  for (const [folder, prefix] of [['world', ''], ['world-en', '/en']]) {
+  for (const [folder, prefix] of [['world', '']]) {
     const contentDir = resolve(projectRoot, `src/generated/${folder}`)
     const names = (await readdir(contentDir)).filter((name) => extname(name) === '.json')
     for (const name of names) {

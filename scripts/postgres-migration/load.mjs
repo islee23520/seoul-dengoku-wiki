@@ -17,6 +17,21 @@ const copyFrom = copyStreams.from;
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const SCHEMA_DIR = resolve(ROOT, 'scripts/postgres-migration/schema-pg');
 const quote = (s) => `"${s.replaceAll('"', '""')}"`;
+// Only readers whose historical reconstruction depends on SQLite rowid order.
+// Tuple members are decimal integer or text strings, in declared primary-key order.
+const LEGACY_ROW_ORDER_KEYS = {
+  context_rights_approval: ['approval_id'],
+  context_rights_original_source: ['approval_id', 'role'],
+  context_rights_transition: ['set_name', 'old_id'],
+  context_feudal_binding: ['holding_id'],
+  context_feudal_title: ['title_id'],
+  context_feudal_jurisdiction: ['title_id', 'ordinal'],
+  context_feudal_grant: ['grant_id'],
+  context_feudal_grant_admin: ['grant_id', 'ordinal'],
+  context_feudal_grant_component: ['grant_id', 'ordinal'],
+  context_political_identity: ['identity_id'],
+  context_political_identity_liege: ['identity_id', 'ordinal'],
+};
 function fail(message) { throw new Error(message); }
 function options() {
   const args = process.argv.slice(2);
@@ -27,7 +42,7 @@ function options() {
 }
 async function sha256(path) {
   const hash = createHash('sha256');
-  await pipeline(createReadStream(path), async function* (source) { for await (const chunk of source) hash.update(chunk); });
+  await pipeline(createReadStream(path), async function*(source) { for await (const chunk of source) hash.update(chunk); });
   return hash.digest('hex');
 }
 function pgText(value, type) {
@@ -95,7 +110,40 @@ async function main() {
         if (count !== table.row_count) fail(`row count mismatch ${table.name}: ${count} != ${table.row_count}`);
         process.stdout.write(`COPY ${table.name}: ${count} rows\n`);
       }
-    if (!metadataOnly) {
+      if (!metadataOnly) {
+        active = 'wiki.legacy_row_order';
+        const tables = new Map(inventory.sources.canonical.tables.map(table => [table.name, table]));
+        const copy = client.query(copyFrom('COPY wiki.legacy_row_order (table_name,key_json,ordinal) FROM STDIN WITH (FORMAT text)'));
+        async function* rowOrders() {
+          for (const [name, keys] of Object.entries(LEGACY_ROW_ORDER_KEYS)) {
+            const table = tables.get(name);
+            if (!table || JSON.stringify(table.primary_key) !== JSON.stringify(keys)) fail(`legacy row order PK mismatch: ${name}`);
+            const columns = new Map(table.columns.map(column => [column.name, column]));
+            for (const key of keys) {
+              if (!['TEXT', 'INTEGER'].includes(columns.get(key)?.sqlite_type)) fail(`unsupported legacy row order PK type: ${name}.${key}`);
+            }
+            const rowid = ['rowid', '_rowid_', 'oid'].find(alias => !table.columns.some(column => column.name.toLowerCase() === alias));
+            if (!rowid) fail(`SQLite rowid is shadowed: ${name}`);
+            const stmt = db.prepare(`SELECT ${quote(rowid)} AS ${quote('__legacy_rowid')}, ${keys.map(quote).join(',')} FROM ${quote(name)} ORDER BY ${quote(rowid)}`);
+            stmt.setReadBigInts(true);
+            let count = 0;
+            for (const row of stmt.iterate()) {
+              const tuple = keys.map(key => {
+                const value = row[key];
+                const type = columns.get(key).sqlite_type;
+                if ((type === 'TEXT' && typeof value !== 'string') || (type === 'INTEGER' && typeof value !== 'bigint')) fail(`invalid legacy row order PK: ${name}.${key}`);
+                return String(value);
+              });
+              if (typeof row.__legacy_rowid !== 'bigint') fail(`missing SQLite rowid: ${name}`);
+              yield Buffer.from([pgText(name), pgText(JSON.stringify(tuple)), pgText(row.__legacy_rowid)].join('\t') + '\n');
+              count++;
+            }
+            if (count !== table.row_count) fail(`legacy row order count mismatch ${name}: ${count} != ${table.row_count}`);
+          }
+        }
+        await pipeline(rowOrders(), copy);
+      }
+      if (!metadataOnly) {
         active = 'constraints.sql';
         await applySql(client, resolve(SCHEMA_DIR, 'constraints.sql'));
         const fks = await client.query("SELECT n.nspname, c.relname, con.conname FROM pg_constraint con JOIN pg_class c ON c.oid=con.conrelid JOIN pg_namespace n ON n.oid=c.relnamespace WHERE con.contype='f' AND NOT con.convalidated AND n.nspname IN ('wiki','wiki_private') ORDER BY n.nspname,c.relname,con.conname");

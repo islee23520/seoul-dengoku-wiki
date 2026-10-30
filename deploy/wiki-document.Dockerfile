@@ -1,20 +1,18 @@
 FROM node:26-bookworm-slim@sha256:582460f614631b59b824ac6020533b9bf339c7fdf3a6d7db31abb6b4065f0212
 WORKDIR /app
-# The owner creates a closed context containing only tracked runtime modules,
-# locked dependencies and the selected commit's hydrated public database.
+# The owner creates a closed context containing tracked runtime modules,
+# locked dependencies and verified public projections. Canonical data is in PG.
 COPY package.json package-lock.json ./
 COPY vendor/*.tgz ./vendor/
 RUN npm ci --omit=dev --ignore-scripts --no-audit --no-fund && npm cache clean --force
 COPY server/ ./server/
 COPY scripts/ ./scripts/
-COPY data/canonical/wiki-cast.sqlite ./data/canonical/wiki-cast.sqlite
 COPY public/ ./public/
 COPY runtime-public-binding.json ./runtime-public-binding.json
-RUN chmod -R a+rX /app && chmod 0444 /app/data/canonical/wiki-cast.sqlite
+RUN chmod -R a+rX /app
 # The document API reads PostgreSQL only at runtime (no SQLite fallback):
-# the owner injects the WIKI_DOCUMENT_PG connection URL as a runtime
-# environment variable — it is never baked into the image. The sealed SQLite
-# archive copied above is kept as the migration reference copy only.
+# the owner supplies WIKI_DOCUMENT_PG_FILE pointing to a runtime secret.
+# The URL is never baked into the image or stored in container environment.
 ENV NODE_ENV=production HOST=0.0.0.0 DATA_DIR=/app/public
 USER node
 EXPOSE 8787 8788

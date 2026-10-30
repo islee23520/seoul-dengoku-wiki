@@ -54,11 +54,15 @@ export function readPersonIdentityInputs(db) {
         let candidate;
         if (domain === 'gender') {
           if (![0, 1, null].includes(row.user_locked)) fail(`${id}:gender lock`);
-          candidate = { name: names.get(id), state: row.state_id, gender: row.gender, source: row.assignment_source,
-            user_locked: row.user_locked === null ? null : Boolean(row.user_locked) };
+          candidate = {
+            name: names.get(id), state: row.state_id, gender: row.gender, source: row.assignment_source,
+            user_locked: row.user_locked === null ? null : Boolean(row.user_locked)
+          };
         } else {
-          candidate = { name: names.get(id), ...Object.fromEntries(Object.entries(lineageColumns).map(([key, column]) => [key, row[column]])),
-            namingConventionSource: { characterId: row.naming_source_character_id, path: row.naming_source_path, basis: row.naming_source_basis } };
+          candidate = {
+            name: names.get(id), ...Object.fromEntries(Object.entries(lineageColumns).map(([key, column]) => [key, row[column]])),
+            namingConventionSource: { characterId: row.naming_source_character_id, path: row.naming_source_path, basis: row.naming_source_basis }
+          };
           if (supplements.has(id)) {
             if (row.clan_id !== null || row.naming_convention !== 'non-korean-lineage') fail(`${id}:legacy clan domain`);
             candidate.clan = supplements.get(id);
@@ -72,6 +76,34 @@ export function readPersonIdentityInputs(db) {
     }
     if (keys.size || supplements.size || order.length !== 2 * names.size) fail('unconsumed metadata');
     return output;
+  } catch (error) {
+    if (error.code === 'E_PERSON_IDENTITY_INPUT') throw error;
+    fail(error.message);
+  }
+}
+
+/** PostgreSQL twin; retain the sync reader's complete receipt and digest checks. */
+export async function readPersonIdentityInputsAsync(tx) {
+  try {
+    const statements = [
+      'SELECT * FROM person_identity_import',
+      'SELECT person_id,name FROM person',
+      'SELECT * FROM person_identity_legacy_clan',
+      'SELECT * FROM person_identity_key ORDER BY domain,person_id,object_path,ordinal',
+      'SELECT * FROM person_identity_order ORDER BY domain,ordinal',
+      'SELECT * FROM person_lineage',
+      'SELECT * FROM person_gender',
+    ];
+    const sheet = new Map();
+    for (const sql of statements) {
+      sheet.set(sql, await tx.all(sql.replace(/\bFROM ([a-z_]+)/u, 'FROM wiki.$1')));
+    }
+    return readPersonIdentityInputs({
+      prepare(sql) {
+        if (!sheet.has(sql)) fail(`unmaterialized statement: ${sql}`);
+        return { all: () => sheet.get(sql) };
+      }
+    });
   } catch (error) {
     if (error.code === 'E_PERSON_IDENTITY_INPUT') throw error;
     fail(error.message);

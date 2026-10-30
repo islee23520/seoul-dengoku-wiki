@@ -53,9 +53,11 @@ export function readCastHouseholdInputs(db) {
   });
   const retainer = row => {
     used.add(row);
-    return { personId: row.person_id, liegePersonId: row.liege_person_id, courtId: row.court_id,
+    return {
+      personId: row.person_id, liegePersonId: row.liege_person_id, courtId: row.court_id,
       sourceRow: row.source_row, role: row.role,
-      sourceRefs: refs(retainerRefs.filter(ref => ref.retainer_json_pointer === row.json_pointer && ref.court_id === row.court_id && ref.person_id === row.person_id && ref.source_row === row.source_row), row.json_pointer) };
+      sourceRefs: refs(retainerRefs.filter(ref => ref.retainer_json_pointer === row.json_pointer && ref.court_id === row.court_id && ref.person_id === row.person_id && ref.source_row === row.source_row), row.json_pointer)
+    };
   };
   const result = {
     schema: metadata.find(row => row.field_name === 'schema').text_value,
@@ -77,23 +79,64 @@ export function readCastHouseholdInputs(db) {
       if (court) used.add(court);
       const direct = retainers.filter(entry => entry.json_pointer === `${base}/directRetainer`);
       if (direct.length > 1) coverage(base);
-      return { personId: row.person_id, name: row.name, sourceRefs: personSources('person', base),
-        household: { personFaith: { status: row.person_faith_status, sourceRefs: personSources('person-faith', `${base}/household/personFaith`) },
+      return {
+        personId: row.person_id, name: row.name, sourceRefs: personSources('person', base),
+        household: {
+          personFaith: { status: row.person_faith_status, sourceRefs: personSources('person-faith', `${base}/household/personFaith`) },
           houseFaith: { status: row.house_faith_status, sourceRefs: personSources('house-faith', `${base}/household/houseFaith`) },
-          humanoidAdmission: row.humanoid_admission, genderPreference: row.gender_preference, newPrivateRetainers: [], politicalPosition: row.political_position },
+          humanoidAdmission: row.humanoid_admission, genderPreference: row.gender_preference, newPrivateRetainers: [], politicalPosition: row.political_position
+        },
         links: personLinks('links'), knownLinks: personLinks('knownLinks'),
-        court: court ? { id: court.court_id, ownerPersonId: court.owner_person_id, stateId: court.state_id,
-          retainers: ordered(retainers.filter(entry => entry.court_id === court.court_id && entry.json_pointer.startsWith(`${base}/court/retainers/`)), `${base}/court/retainers`).map(retainer) } : null,
+        court: court ? {
+          id: court.court_id, ownerPersonId: court.owner_person_id, stateId: court.state_id,
+          retainers: ordered(retainers.filter(entry => entry.court_id === court.court_id && entry.json_pointer.startsWith(`${base}/court/retainers/`)), `${base}/court/retainers`).map(retainer)
+        } : null,
         directRetainer: direct.length ? retainer(direct[0]) : null,
-        deficits: { normalizedSocialContact: Boolean(row.normalized_social_contact), familyParent: Boolean(row.family_parent), faithUnresolved: Boolean(row.faith_unresolved),
-          privateRetainerStatus: row.private_retainer_status, backgroundContactAuthoring: row.background_contact_authoring } };
+        deficits: {
+          normalizedSocialContact: Boolean(row.normalized_social_contact), familyParent: Boolean(row.family_parent), faithUnresolved: Boolean(row.faith_unresolved),
+          privateRetainerStatus: row.private_retainer_status, backgroundContactAuthoring: row.background_contact_authoring
+        }
+      };
     }),
-    existingHumanoidContext: ordered(contexts, '/existingHumanoidContext').map(row => ({ actorId: row.actor_id, custodianPersonId: row.custodian_person_id,
+    existingHumanoidContext: ordered(contexts, '/existingHumanoidContext').map(row => ({
+      actorId: row.actor_id, custodianPersonId: row.custodian_person_id,
       stewardHouseId: row.steward_house_id, scope: row.scope, assignmentAction: row.assignment_action,
-      sourceRefs: refs(contextRefs.filter(ref => ref.actor_id === row.actor_id), row.json_pointer) })),
+      sourceRefs: refs(contextRefs.filter(ref => ref.actor_id === row.actor_id), row.json_pointer)
+    })),
   };
   result.scope.coveredPersonIds = result.people.map(person => person.personId);
   if (new Set(result.scope.coveredPersonIds).size !== result.people.length) coverage('stable person identities');
   if ([people, personRefs, links, linkRefs, courts, retainers, retainerRefs, contexts, contextRefs].flat().some(row => !used.has(row))) coverage('orphan typed rows');
   return result;
+}
+
+/** PostgreSQL twin with source-scoped typed tables and shared shape checks. */
+export async function readCastHouseholdInputsAsync(tx) {
+  try {
+    const sourceSql = 'SELECT source_id,sha256,media_type FROM source_file WHERE logical_path=?';
+    const sources = await tx.all('SELECT source_id,sha256,media_type FROM wiki.source_file WHERE logical_path=?', [SOURCE]);
+    if (sources.length !== 1) fail('E_HOUSEHOLD_INPUT_MISSING', SOURCE);
+    if (sources[0].media_type !== 'application/json') fail('E_HOUSEHOLD_INPUT_STALE', SOURCE);
+    const sourceId = sources[0].source_id;
+    const tables = new Map();
+    for (const table of ['family_source_metadata', 'household_manifest', 'household_person', 'household_person_source',
+      'household_link', 'household_link_source', 'household_court', 'household_court_retainer',
+      'household_court_retainer_source', 'household_humanoid_context', 'household_humanoid_context_source']) {
+      tables.set(`SELECT * FROM ${table} WHERE source_id=?`, await tx.all(`SELECT * FROM wiki.${table} WHERE source_id=?`, [sourceId]));
+    }
+    return readCastHouseholdInputs({
+      prepare(sql) {
+        return {
+          all: (...params) => {
+            if (sql === sourceSql && params.length === 1 && params[0] === SOURCE) return sources;
+            if (params.length === 1 && params[0] === sourceId && tables.has(sql)) return tables.get(sql);
+            fail('E_HOUSEHOLD_INPUT_SCHEMA_GAP', `unmaterialized statement: ${sql}`);
+          }
+        };
+      }
+    });
+  } catch (error) {
+    if (['42P01', '42703'].includes(error.code)) fail('E_HOUSEHOLD_INPUT_SCHEMA_GAP', error.message);
+    throw error;
+  }
 }

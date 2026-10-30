@@ -140,3 +140,41 @@ export function openEditorialProfiles(path,{capability,scope='internal'}={}) {
     }catch(error){if(db.isTransaction)db.exec('ROLLBACK');throw error;}
   }});
 }
+
+/** Read typed private profiles in the caller's PostgreSQL read-only transaction.
+ * The caller owns the transaction and its lifetime; this does not open or close it. */
+export async function openEditorialProfilesAsync(tx, { capability, scope = 'internal' } = {}) {
+ if (capability !== INTERNAL_PROFILE_CAPABILITY || scope !== 'internal') fail('E_PRIVATE');
+ if (!tx?.isTransaction || typeof tx.all !== 'function') fail('E_PRIVATE');
+ const sources = await tx.all('SELECT * FROM wiki_private.editorial_batch_source ORDER BY ordinal');
+ if (sources.length !== PROFILE_INPUT_PATHS.length || sources.some((s, i) => s.ordinal !== i || !PROFILE_INPUT_PATHS.includes(s.logical_path))) fail('E_PROFILE_SOURCES');
+ const domains = new Map();
+ for (const domain of Object.keys(definitions)) {
+  const rows = await tx.all('SELECT * FROM wiki_private.' + table(domain) + ' ORDER BY ordinal');
+  const byKey = new Map(), byParent = new Map();
+  for (const row of rows) {
+   byKey.set(row.row_key, row);
+   const siblings = byParent.get(row.parent_key) ?? [];
+   siblings.push(row); byParent.set(row.parent_key, siblings);
+  }
+  domains.set(table(domain), { byKey, byParent });
+ }
+ // Reuse the SQLite reconstruction and its integrity checks over materialized rows.
+ const sheet = {
+  prepare(sql) {
+   const match = /^SELECT (\*|row_key,ordinal) FROM (editorial_[a-z_]+) WHERE (row_key|parent_key)=\?(?: ORDER BY ordinal)?$/.exec(sql);
+   if (!match || !domains.has(match[2])) fail('E_PROFILE_INTEGRITY');
+   const { byKey, byParent } = domains.get(match[2]);
+   return { get: key => byKey.get(key), all: key => byParent.get(key) ?? [] };
+  }
+ };
+ return Object.freeze({
+  async readBatches() {
+   return sources.map(row => {
+    const batch = readDomain(sheet, 'batch', String(row.ordinal));
+    if (sha(JSON.stringify(batch)) !== row.snapshot_sha256 || batch.profiles.length !== row.profile_count) fail('E_PROFILE_INTEGRITY');
+    return { logicalPath: row.logical_path, batch };
+   });
+  }
+ });
+}

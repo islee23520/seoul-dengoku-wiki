@@ -1,8 +1,8 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
-import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
+import { Navigate, useLocation, useParams } from 'react-router-dom'
 import { DocumentContent } from '@seoul-dengoku/document-renderer'
 import { Breadcrumbs, PageHeader, StateNotice, TableOfContents, TableViewport } from '@seoul-dengoku/shared-web-ui'
-import { wikiCatalog, wikiEnglishCatalog, type WikiDomain } from '../generated/wikiCatalog'
+import type { WikiDomain } from '../generated/wikiCatalog'
 import { resolveLegacyRegionRoute, resolveLegacyWorldRoute, resolveWikiContentHref } from '../wikiRouting'
 import { wikiArticleContent, wikiBlockText, wikiHeadingId } from '../wikiDocument'
 import { wikiAnchorHref } from '../sharedCategories'
@@ -16,38 +16,24 @@ const TimelineOverview = lazy(() => import('../components/TimelineOverview'))
 // Mermaid is large, so it loads only when an article actually contains a diagram.
 const loadMermaid = () => import('mermaid')
 
-type WikiLocale = 'ko' | 'en'
-
-const catalogs = { ko: wikiCatalog, en: wikiEnglishCatalog }
-
-const labels = {
-  ko: {
-    breadcrumbs: '현재 위치', home: '대문', world: '세계관', site: '서울:전국 공식 위키', badge: '세계관 문서',
-    loading: '문서를 불러오고 있습니다.', table: '본문 표', contents: '문서 목차', otherLocale: 'English',
-    error: '문서를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.',
-  },
-  en: {
-    breadcrumbs: 'You are here', home: 'Main page', world: 'World', site: 'Seoul Subway States Official Wiki', badge: 'World document',
-    loading: 'Loading the document.', table: 'Article table', contents: 'Contents', otherLocale: '한국어',
-    error: 'The document could not be loaded. Please try again later.',
-  },
+const locale = 'ko' as const
+const text = {
+  breadcrumbs: '현재 위치', home: '대문', world: '세계관', site: '서울:전국 공식 위키', badge: '세계관 문서',
+  loading: '문서를 불러오고 있습니다.', table: '본문 표', contents: '문서 목차',
+  error: '문서를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.',
 } as const
 
 const isWikiDomain = (value: string | undefined): value is WikiDomain =>
   value === 'world'
 
-export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) {
+export default function ArticlePage() {
   const { domain, slug } = useParams()
   const { pathname, hash } = useLocation()
   if (!isWikiDomain(domain)) return <Navigate to="/" replace />
 
-  const text = labels[locale]
   const normalizedSlug = slug?.replace(/\.html$/, '') || 'index'
-  const legacyRoute = domain === 'world' && locale === 'ko' ? resolveLegacyWorldRoute(normalizedSlug) : undefined
-  const legacyRegionRoute = domain === 'world' && locale === 'ko' ? resolveLegacyRegionRoute(pathname) : undefined
-  const wikiDocument = catalogs[locale].find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug)
-  const koreanDocument = wikiCatalog.find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug)
-  const alternate = (locale === 'ko' ? wikiEnglishCatalog : wikiCatalog).find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug)
+  const legacyRoute = domain === 'world' ? resolveLegacyWorldRoute(normalizedSlug) : undefined
+  const legacyRegionRoute = domain === 'world' ? resolveLegacyRegionRoute(pathname) : undefined
   const [documentState, setDocumentState] = useState<DocumentState | null>(null)
   const documentController = useRef<ReturnType<typeof createDocumentController> | null>(null)
   if (!documentController.current) documentController.current = createDocumentController(setDocumentState)
@@ -81,12 +67,6 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
     }
   }, [blocks, pathname, hash])
 
-  // The page shell is Korean; an English article must announce its own language to assistive technology.
-  useEffect(() => {
-    document.documentElement.lang = locale
-    return () => { document.documentElement.lang = 'ko' }
-  }, [locale])
-
   useEffect(() => {
     if (!apiDocument) return
     window.document.title = `${apiDocument.title} | ${text.site}`
@@ -100,8 +80,6 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
 
   if (legacyRoute) return <Navigate to={`${legacyRoute}${hash}`} replace />
   if (legacyRegionRoute) return <Navigate to={legacyRegionRoute} replace />
-  // A Markdown-only corpus has no English page; its Korean page is the published one.
-  if (current?.status === 'not-found' && locale !== 'ko' && !wikiDocument && koreanDocument) return <Navigate to={`${koreanDocument.route}${hash}`} replace />
   if (current?.status === 'not-found') return <Navigate to={`/${domain}/`} replace />
   if (current?.status === 'error') return <StateNotice state="error" message={text.error} />
   if (!apiDocument) {
@@ -109,7 +87,7 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
   }
 
   return (
-    <article lang={locale} id={wikiHeadingId(apiDocument.title)}>
+    <article lang="ko" id={wikiHeadingId(apiDocument.title)}>
       <Breadcrumbs
         label={text.breadcrumbs}
         resolveHref={wikiAnchorHref}
@@ -120,11 +98,9 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
         ]}
       />
       <PageHeader kicker={`${text.site} · ${domain}`} title={apiDocument.title} badge={text.badge} />
-      {alternate && <p className="wiki-locale-switch"><Link to={alternate.route} hrefLang={locale === 'ko' ? 'en' : 'ko'}>{text.otherLocale}</Link></p>}
 
       {domain === 'world' && normalizedSlug === 'World-and-Subway-Layers' && <Suspense fallback={<StateNotice state="loading" message="2126 시점 영토 지도를 준비하고 있습니다." />}><OpeningTerritoryMap /></Suspense>}
-      {/* The year overview data and labels are Korean-only, so it belongs to the Korean page alone. */}
-      {locale === 'ko' && domain === 'world' && normalizedSlug === 'Scenario-Timeline' && <Suspense fallback={<StateNotice state="loading" message="연표 전체 줄거리를 준비하고 있습니다." />}><TimelineOverview /></Suspense>}
+      {domain === 'world' && normalizedSlug === 'Scenario-Timeline' && <Suspense fallback={<StateNotice state="loading" message="연표 전체 줄거리를 준비하고 있습니다." />}><TimelineOverview /></Suspense>}
 
       <div className="wiki-article-grid">
         {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} onBound={setFeedbackBound}><div className="wiki-prose">

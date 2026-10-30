@@ -8,9 +8,8 @@ const tables = ['person', 'gurps_profile', 'gurps_attribute', 'gurps_secondary',
   'gurps_disadvantage', 'gurps_territory', 'gurps_unit', 'gurps_unit_composition',
   'gurps_wandering_force', 'gurps_wandering_facility', 'evidence'];
 
-function candidates(db) {
-  const data = Object.fromEntries(tables.map(table => [table, db.prepare(`SELECT * FROM ${table}`).all()]));
-  const annotations = new Map(db.prepare('SELECT evidence_id,interpretation,provenance_note FROM issued_sheet_evidence_annotation').all().map(r => [r.evidence_id, r]));
+function candidates(data, annotationRows) {
+  const annotations = new Map(annotationRows.map(r => [r.evidence_id, r]));
   const used = new Set();
   const byPerson = Object.fromEntries(Object.entries(data).map(([table, records]) => {
     const index = new Map();
@@ -25,8 +24,10 @@ function candidates(db) {
   const ev = (id, kind, ordinal, key) => rows('evidence', id, r => r.subject_kind === kind && r.subject_ordinal === ordinal && r.subject_key === key).map(r => {
     const extra = annotations.get(r.evidence_id);
     if (extra) annotations.delete(r.evidence_id);
-    return { note: r.note_text, path: r.source_path, pointer: r.json_pointer, line: r.source_line, quote: r.quote,
-      interpretation: extra?.interpretation, provenanceNote: extra?.provenance_note };
+    return {
+      note: r.note_text, path: r.source_path, pointer: r.json_pointer, line: r.source_line, quote: r.quote,
+      interpretation: extra?.interpretation, provenanceNote: extra?.provenance_note
+    };
   });
   const output = data.gurps_profile.slice().sort((a, b) => Number(a.json_pointer.split('/').at(-1)) - Number(b.json_pointer.split('/').at(-1))).map((p, i) => {
     used.add(p);
@@ -34,12 +35,15 @@ function candidates(db) {
     const id = p.person_id, person = one('person', id);
     if (!person) fail(`${id}:identity`);
     const territory = one('gurps_territory', id), unit = one('gurps_unit', id), force = one('gurps_wandering_force', id);
-    return { id, name: person.name, url: p.url, state: p.state_id, method: p.method,
+    return {
+      id, name: person.name, url: p.url, state: p.state_id, method: p.method,
       role: { display: p.role_display, evidence: ev(id, 'role', null, 'role') },
       attributes: Object.fromEntries(rows('gurps_attribute', id).map(r => [r.attribute_code, { value: r.value, cp: r.cp, rule: r.rule, evidence: ev(id, 'attribute', r.ordinal, r.attribute_code) }])),
-      traits: rows('gurps_trait', id).map(r => ({ name: r.name, kind: r.kind, rule: r.rule, level: r.level, people: r.people, frequency: r.frequency, cp: r.cp, page: r.page, effect: r.effect,
+      traits: rows('gurps_trait', id).map(r => ({
+        name: r.name, kind: r.kind, rule: r.rule, level: r.level, people: r.people, frequency: r.frequency, cp: r.cp, page: r.page, effect: r.effect,
         reaction: { ordinaryObservers: r.reaction_ordinary_observers, observersAttractedToHerSex: r.reaction_attracted_observers, application: r.reaction_application },
-        applicationBoundaries: rows('gurps_trait_application_boundary', id, b => b.trait_ordinal === r.ordinal).map(b => b.text), evidence: ev(id, 'trait', r.ordinal, r.name) })),
+        applicationBoundaries: rows('gurps_trait_application_boundary', id, b => b.trait_ordinal === r.ordinal).map(b => b.text), evidence: ev(id, 'trait', r.ordinal, r.name)
+      })),
       skills: rows('gurps_skill', id).map(r => ({ name: r.name, ko: r.name_ko, attr: r.attribute_code, [r.difficulty_source]: r.difficulty, tier: r.tier, cp: r.cp, level: r.level, effect: r.effect, evidence: ev(id, 'skill', r.ordinal, r.name) })),
       languages: rows('gurps_language', id).map(r => ({ name: r.name, level: r.level, cp: r.cp, evidence: ev(id, 'language', r.ordinal, r.name) })),
       secondary: Object.fromEntries(rows('gurps_secondary', id).map(r => [r.stat_name, r.value])),
@@ -47,20 +51,25 @@ function candidates(db) {
       band: p.band, baseline: Boolean(p.baseline),
       advantages: rows('gurps_advantage', id).map(r => ({ name: r.name, cp: r.cp, effect: r.effect })),
       disadvantages: rows('gurps_disadvantage', id).map(r => ({ name: r.name, cp: r.cp, effect: r.effect })),
-      territory: territory && { fief_name: territory.fief_name, type: territory.type, station: territory.station, state: territory.state_id,
-        settlement: { name: territory.settlement_name, type: territory.settlement_type, description: territory.settlement_description }, note: territory.note },
-      unit: unit && { type: unit.type, size: unit.size, quality: unit.quality, composition: rows('gurps_unit_composition', id).map(r => r.text), note: unit.note,
-        faction_scale: { state: unit.scale_state_id, tier: unit.scale_tier, factor: unit.scale_factor } },
-      wandering_force: force && { type: force.type, size: force.size, current_location: force.current_location,
-        camp: { name: force.camp_name, type: force.camp_type, description: force.camp_description, facilities: rows('gurps_wandering_facility', id).map(r => r.text), pack_up_time: force.camp_pack_up_time }, note: force.note },
+      territory: territory && {
+        fief_name: territory.fief_name, type: territory.type, station: territory.station, state: territory.state_id,
+        settlement: { name: territory.settlement_name, type: territory.settlement_type, description: territory.settlement_description }, note: territory.note
+      },
+      unit: unit && {
+        type: unit.type, size: unit.size, quality: unit.quality, composition: rows('gurps_unit_composition', id).map(r => r.text), note: unit.note,
+        faction_scale: { state: unit.scale_state_id, tier: unit.scale_tier, factor: unit.scale_factor }
+      },
+      wandering_force: force && {
+        type: force.type, size: force.size, current_location: force.current_location,
+        camp: { name: force.camp_name, type: force.camp_type, description: force.camp_description, facilities: rows('gurps_wandering_facility', id).map(r => r.text), pack_up_time: force.camp_pack_up_time }, note: force.note
+      },
     };
   });
   if (new Set(output.map(p => p.id)).size !== output.length || annotations.size || Object.values(data).some(rs => rs.some(r => !used.has(r)))) fail('typed coverage');
   return output;
 }
 
-function orderedPeople(db) {
-  const keys = db.prepare('SELECT person_id,object_path,ordinal,key,is_null FROM issued_sheet_object_key ORDER BY person_id,object_path,ordinal').all();
+function orderedPeople(data, annotationRows, keys) {
   const groups = new Map();
   for (const r of keys) { const k = `${r.person_id}:${r.object_path}`; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(r); }
   const visit = (value, id, path) => {
@@ -75,9 +84,23 @@ function orderedPeople(db) {
       return [r.key, r.is_null ? null : visit(value[r.key], id, `${path}/${r.key}`)];
     }));
   };
-  const people = candidates(db).map(p => visit(p, p.id, ''));
+  const people = candidates(data, annotationRows).map(p => visit(p, p.id, ''));
   if (groups.size) fail('unconsumed object keys');
   return people;
+}
+
+function readOrderedPeople(db) {
+  const data = Object.fromEntries(tables.map(table => [table, db.prepare(`SELECT * FROM ${table}`).all()]));
+  const annotations = db.prepare('SELECT evidence_id,interpretation,provenance_note FROM issued_sheet_evidence_annotation').all();
+  const keys = db.prepare('SELECT person_id,object_path,ordinal,key,is_null FROM issued_sheet_object_key ORDER BY person_id,object_path,ordinal').all();
+  return orderedPeople(data, annotations, keys);
+}
+
+function validateIssuedPeople(receipts, people) {
+  if (receipts.length !== 1) fail('import receipt');
+  if (receipts[0].profile_count !== people.length) fail('people count');
+  if (hash(JSON.stringify(people)) !== receipts[0].people_sha256) fail('people digest/coverage');
+  return { people };
 }
 
 // Runtime performs SELECTs over typed domains only. No source/archive reads,
@@ -86,10 +109,22 @@ export function readIssuedSheetInputs(db) {
   try {
     const receipts = db.prepare('SELECT * FROM issued_sheet_import').all();
     if (receipts.length !== 1) fail('import receipt');
-    const people = orderedPeople(db);
-    if (receipts[0].profile_count !== people.length) fail('people count');
-    if (hash(JSON.stringify(people)) !== receipts[0].people_sha256) fail('people digest/coverage');
-    return { people };
+    return validateIssuedPeople(receipts, readOrderedPeople(db));
+  } catch (error) {
+    if (error.code === 'E_ISSUED_SHEET_INPUT') throw error;
+    fail(error.message);
+  }
+}
+
+export async function readIssuedSheetInputsAsync(tx) {
+  try {
+    const receipts = await tx.all('SELECT * FROM wiki.issued_sheet_import');
+    if (receipts.length !== 1) fail('import receipt');
+    const data = {};
+    for (const table of tables) data[table] = await tx.all(`SELECT * FROM wiki.${table}`);
+    const annotations = await tx.all('SELECT evidence_id,interpretation,provenance_note FROM wiki.issued_sheet_evidence_annotation');
+    const keys = await tx.all('SELECT person_id,object_path,ordinal,key,is_null FROM wiki.issued_sheet_object_key ORDER BY person_id,object_path,ordinal');
+    return validateIssuedPeople(receipts, orderedPeople(data, annotations, keys));
   } catch (error) {
     if (error.code === 'E_ISSUED_SHEET_INPUT') throw error;
     fail(error.message);
@@ -133,7 +168,7 @@ export async function initializeIssuedSheetInputs(db, { sourceBytes, actor, reas
       }
     };
     document.people.forEach(p => walk(p, p.id, ''));
-    const people = orderedPeople(db);
+    const people = readOrderedPeople(db);
     if (JSON.stringify(people) !== JSON.stringify(document.people)) fail('existing typed data differs or unsupported field');
     db.prepare('INSERT INTO issued_sheet_import VALUES (1,?,?,?,?,?)').run(expectedSourceHash, hash(JSON.stringify(people)), people.length, actor, reason);
     readIssuedSheetInputs(db);

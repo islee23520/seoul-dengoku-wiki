@@ -29,7 +29,7 @@ src/
 - Router basename은 `/wiki`다. Router 내부 경로와 native anchor의 `/wiki/...` href를 구분한다.
 - 같은 origin의 `/gdd/`, `/play/` 등 hub 경로는 위키 basename을 붙이지 않는다.
 - 기사 렌더링은 `@seoul-dengoku/document-renderer`, 공통 UI는 `@seoul-dengoku/shared-web-ui`를 사용한다.
-- 기사 본문은 `documentApi.ts`가 문서 API에서 slug·locale별 blocks를 받아 페이지에 제공한다. 생성된 `wikiCatalog`·`wikiEnglishCatalog` metadata는 문서 선택·언어 전환에 쓰며 본문과 별개다.
+- 기사 본문은 `documentApi.ts`가 문서 API에서 한국어 blocks를 받아 페이지에 제공한다. 생성된 `wikiCatalog` metadata는 문서 선택용이며 본문과 별개다. 영문 카탈로그·`/en` 공개 경로·언어 전환 UI는 제공하지 않는다.
 - 생성 변경은 루트의 `npm run generate`; 빌드는 `npm run build`로 생성 절차까지 수행한다.
 - 동작 검사는 `scripts/test-*.mjs`에 있다. 별도 `src/__tests__` 체계를 가정하지 않는다.
 

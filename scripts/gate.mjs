@@ -7,8 +7,11 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 import ts from 'typescript'
 import { fromWikiBlocks } from '@seoul-dengoku/document-renderer'
 import { openReadOnly } from './cast-sqlite/db.mjs'
-import { readCatalogMetadataDocument, CATEGORY_REGISTRY_PATH, UPDATE_HISTORY_PATH } from './cast-sqlite/catalog-metadata.mjs'
+import { readCatalogMetadataDocument, readCatalogMetadataDocumentAsync, CATEGORY_REGISTRY_PATH, UPDATE_HISTORY_PATH } from './cast-sqlite/catalog-metadata.mjs'
 import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
+import { readNamingLedgerDocument } from './cast-sqlite/naming-ledger-document.mjs'
+import { readIssuedSheetInputsAsync } from './cast-sqlite/issued-sheet-inputs.mjs'
+import { createReader } from './cast-sqlite/db-pg.mjs'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 const wikiRoot = join(scriptDir, '..')
@@ -21,7 +24,37 @@ const referenceDir = [process.env.SEOUL_KENSHI_ROOT && join(process.env.SEOUL_KE
 
 const BANNED_TERMS = ['Kenshi', 'Underrail', 'Gunner', 'clone', '복제']
 const COINED_PHRASES = ['창세 구술', '창세 이야기', '구술로만', '창세의 첫 줄', '창세의 첫 급수협약', '창세는 햇수 없는 구술']
-const namingLedger = readCanonicalDocument('lore/editorial/Naming-Ledger.json')
+async function pgSource(read) {
+  const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+  const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
+  try {
+    return await reader.transaction(read, { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
+  } finally { await reader.close() }
+}
+
+const namingLedger = process.env.WIKI_DOCUMENT_PG
+  ? await pgSource(async (tx) => {
+    const queries = [
+      'SELECT * FROM naming_ledger_document',
+      'SELECT * FROM naming_ledger_document_state ORDER BY ordinal',
+      'SELECT * FROM naming_ledger_document_state_source ORDER BY state_ordinal, ordinal',
+      'SELECT * FROM naming_ledger_document_school ORDER BY ordinal',
+      'SELECT * FROM naming_ledger_document_office ORDER BY ordinal',
+      'SELECT * FROM naming_ledger_document_office_tier ORDER BY office_ordinal, ordinal',
+      'SELECT * FROM naming_ledger_document_series ORDER BY ordinal',
+      'SELECT * FROM naming_ledger_document_retired_form ORDER BY ordinal',
+      'SELECT * FROM naming_ledger_document_retired_except ORDER BY form_ordinal, ordinal',
+    ]
+    const rows = new Map()
+    for (const query of queries) rows.set(query, await tx.all(query.replace('FROM ', 'FROM wiki.')))
+    return readNamingLedgerDocument({
+      prepare(query) {
+        if (!rows.has(query)) throw new Error(`E_NAMING_LEDGER_QUERY:${query}`)
+        return { all: () => rows.get(query) }
+      }
+    })
+  })
+  : readCanonicalDocument('lore/editorial/Naming-Ledger.json')
 // Korean attaches particles (라벨렌의, 라벨렌을), so the Hangul form matches without a trailing boundary.
 const RAVELEN_REFERENCE = /(?<![\p{L}\p{N}_])ravelen(?![\p{L}\p{N}_])|라벨렌/iu
 export const EXPECTED_REFERENCE_EXCLUSIONS = 20
@@ -105,7 +138,7 @@ export function ravelenExclusionFailures(text, source) {
 export function privateLinkFailures(href, source) {
   const path = href.split('#')[0].split('?')[0].replace(/\/$/, '')
   let stem = path.split('/').at(-1) ?? ''
-  try { stem = decodeURIComponent(stem) } catch {}
+  try { stem = decodeURIComponent(stem) } catch { }
   stem = stem.replace(/\.(?:md|json|html)$/i, '').toLowerCase()
   return EXCLUDED_STEMS.includes(stem) ? [`FAIL private-link: ${source} -> ${href}`] : []
 }
@@ -254,7 +287,7 @@ export function uiTooltipFields(source) {
   // 심볼 규명으로 참조→선언 묶음(스코프 반영). 같은 이름의 무관 지역 선언이 실제 소비 맵을 덮어쓰지 않게 한다.
   const host = {
     getSourceFile: (name) => name === fileName ? ts.createSourceFile(fileName, source, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX) : undefined,
-    writeFile: () => {},
+    writeFile: () => { },
     getCurrentDirectory: () => '/',
     getDirectories: () => [],
     fileExists: (name) => name === fileName,
@@ -399,7 +432,7 @@ function javascriptRetiredFormFailures(source, rel) {
   return [...failures]
 }
 
-function main() {
+async function main() {
   const failures = []
   if (!existsSync(distDir) || !statSync(distDir).isDirectory()) {
     console.error(`FAIL dist-missing: ${posixRel(wikiRoot, distDir)}`)
@@ -411,24 +444,21 @@ function main() {
   }
 
   const catalog = JSON.parse(readFileSync(join(wikiRoot, 'public/wiki-contract.json'), 'utf8'))
-  const englishDocuments = catalog.englishDocuments ?? []
-  const routes = new Set([...catalog.documents, ...englishDocuments].map((document) => document.route.replace(/\/$/, '') || '/'))
+  if ('englishDocuments' in catalog) failures.push('FAIL unexpected-english-contract: public/wiki-contract.json')
+  const routes = new Set(catalog.documents.map((document) => document.route.replace(/\/$/, '') || '/'))
   const pages = listFiles(contentDir).filter((file) => file.endsWith('.json')).sort()
   if (pages.length !== catalog.documents.length) {
     failures.push(`FAIL route-count: content ${pages.length} != contract ${catalog.documents.length}`)
   }
-  const englishPages = listFiles(englishContentDir).filter((file) => file.endsWith('.json')).sort()
-  if (englishPages.length !== englishDocuments.length) {
-    failures.push(`FAIL route-count: en content ${englishPages.length} != contract ${englishDocuments.length}`)
-  }
+  for (const file of listFiles(englishContentDir)) failures.push(`FAIL unexpected-english-content: ${posixRel(wikiRoot, file)}`)
 
-  for (const page of [...pages, ...englishPages]) {
+  for (const page of pages) {
     failures.push(...pageFailures(JSON.parse(readFileSync(page, 'utf8')), posixRel(wikiRoot, page), routes))
   }
 
   if (process.argv[2] === '--review-tables') {
     if (!process.argv[3]) throw new Error('E_REVIEW_OUTPUT_PATH')
-    const rows = [...pages, ...englishPages].flatMap((page) => tableReviewRows(JSON.parse(readFileSync(page, 'utf8')), posixRel(wikiRoot, page)))
+    const rows = pages.flatMap((page) => tableReviewRows(JSON.parse(readFileSync(page, 'utf8')), posixRel(wikiRoot, page)))
     writeFileSync(process.argv[3], `${JSON.stringify({ schema: 'wiki.table-review.v1', reviewStatus: 'unreviewed', rows }, null, 2)}\n`)
     console.log(`table-review cells: ${rows.length}; prose candidates: ${rows.filter((row) => row.kind === 'prose-candidate').length}`)
   }
@@ -464,12 +494,19 @@ function main() {
     if (typeof person.id !== 'string' || typeof person.name !== 'string') throw new Error(`E_PERSON_CONSUMER:/people/${index}`)
     for (const field of ['name', 'title', 'position', 'rank', 'occupation', 'gender', 'stateName', 'stage']) failures.push(...visibleFieldFailures(person[field], `src/generated/peopleCatalog.ts#/people/${index}/${field}`))
   }
-  const metadataDb = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? join(wikiRoot, 'data/canonical/wiki-cast.sqlite'))
   let categoryRegistry, history
-  try {
-    categoryRegistry = readCatalogMetadataDocument(metadataDb, CATEGORY_REGISTRY_PATH)
-    history = readCatalogMetadataDocument(metadataDb, UPDATE_HISTORY_PATH)
-  } finally { metadataDb.close() }
+  if (process.env.WIKI_DOCUMENT_PG) {
+    ; ({ categoryRegistry, history } = await pgSource(async (tx) => ({
+      categoryRegistry: await readCatalogMetadataDocumentAsync(tx, CATEGORY_REGISTRY_PATH),
+      history: await readCatalogMetadataDocumentAsync(tx, UPDATE_HISTORY_PATH),
+    })))
+  } else {
+    const metadataDb = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? join(wikiRoot, 'data/canonical/wiki-cast.sqlite'))
+    try {
+      categoryRegistry = readCatalogMetadataDocument(metadataDb, CATEGORY_REGISTRY_PATH)
+      history = readCatalogMetadataDocument(metadataDb, UPDATE_HISTORY_PATH)
+    } finally { metadataDb.close() }
+  }
   const categorySource = readFileSync(join(wikiRoot, 'src/generated/categoryIndex.ts'), 'utf8')
   const categoryAst = ts.createSourceFile('categoryIndex.ts', categorySource, ts.ScriptTarget.Latest, true, ts.ScriptKind.TS)
   const categoryDeclaration = categoryAst.statements.filter(ts.isVariableStatement).flatMap((entry) => [...entry.declarationList.declarations])
@@ -531,7 +568,9 @@ function main() {
     })
     year.relatedDocuments.forEach((document, documentIndex) => failures.push(...visibleFieldFailures(document.title, `public/timeline-overview.json#/years/${index}/relatedDocuments/${documentIndex}/title`)))
   })
-  const gurps = readCanonicalDocument('lore/name-pools/gurps-cast.json')
+  const gurps = process.env.WIKI_DOCUMENT_PG
+    ? await pgSource(tx => readIssuedSheetInputsAsync(tx))
+    : readCanonicalDocument('lore/name-pools/gurps-cast.json')
   for (const person of gurps.people) {
     // API source coverage is kept separately from article reviewText receipts.
     for (const [field, value] of apiDeclaredFields(person, `api/characters/${person.url?.split('/').at(-1) ?? person.id}`)) failures.push(...visibleFieldFailures(value, field))
@@ -546,7 +585,6 @@ function main() {
   failures.push(...referenceExclusionFailures(referenceDir))
 
   console.log(`section-count world: ${pages.length}`)
-  console.log(`section-count world-en: ${englishPages.length}`)
   console.log(`private-link failures: ${failures.filter((line) => line.includes('private-link')).length}`)
   console.log(`html-files: ${listFiles(distDir).filter((file) => file.endsWith('.html')).length}`)
   console.log(`banned-term failures: ${failures.filter((line) => line.includes('banned-term')).length}`)
@@ -562,4 +600,4 @@ function main() {
   console.log('gate: PASS')
 }
 
-if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) main()
+if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) await main()

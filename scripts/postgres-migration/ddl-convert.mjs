@@ -539,6 +539,14 @@ function main() {
     'CREATE SCHEMA IF NOT EXISTS wiki;',
     'ALTER SCHEMA wiki OWNER TO wiki_owner;',
     'SET ROLE wiki_owner;',
+    // Separate from canonical tables: actual SQLite rowid bound to the declared PK tuple.
+    `CREATE TABLE wiki.legacy_row_order (
+  table_name text NOT NULL,
+  key_json jsonb NOT NULL CHECK (jsonb_typeof(key_json) = 'array'),
+  ordinal bigint NOT NULL,
+  PRIMARY KEY (table_name, key_json),
+  UNIQUE (table_name, ordinal)
+);`,
     ...wikiTables.map((t) => t.createSql),
     ...wikiIndexes,
     'RESET ROLE;',

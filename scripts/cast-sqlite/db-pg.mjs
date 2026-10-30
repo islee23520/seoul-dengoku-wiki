@@ -27,10 +27,44 @@
 // 2^53 을 넘는 값은 조용한 정밀도 손실 대신 E_PG_INT64_UNSAFE로 실패한다.
 // bytea는 Buffer(Uint8Array 하위클래스)로 도착한다.
 
+import { createRequire } from 'node:module';
 import pg from 'pg';
 
 const ISOLATION_LEVELS = new Set(['READ COMMITTED', 'REPEATABLE READ', 'SERIALIZABLE']);
 const ROLE_NAME = /^[a-z_][a-z0-9_]*$/i;
+// Resolve the same parser pg uses, rather than maintaining a second URL/config
+// interpretation. Parse once and never pass connectionString to Pool: pg merges
+// its parsed fields over explicit config, including the startup role options.
+const parseConnectionString = createRequire(import.meta.resolve('pg'))('pg-connection-string').parse;
+const CONNECTION_OVERRIDES = new Set([
+  'user', 'password', 'host', 'port', 'options', 'role', 'session_authorization',
+  'connectionstring', '__proto__', 'prototype', 'constructor',
+]);
+
+function readerConnectionConfig(text, role) {
+  try {
+    if (/%(?![0-9a-f]{2})|[\u0000-\u001f\u007f]/i.test(text)) throw new Error();
+    // pg also supports a bare Unix socket path followed by a database name.
+    if (!text.startsWith('/')) {
+      const url = new URL(text);
+      if (!['postgres:', 'postgresql:', 'socket:'].includes(url.protocol) || url.hash) throw new Error();
+      for (const [key] of url.searchParams) {
+        if (!/^[a-z_][a-z0-9_]*$/i.test(key) || CONNECTION_OVERRIDES.has(key.toLowerCase())) throw new Error();
+      }
+    } else if (/[?#]/.test(text)) {
+      throw new Error();
+    }
+    const config = parseConnectionString(text);
+    // Defense against parser changes introducing another interpretation of a
+    // startup-options override. SSL fields remain exactly as pg parsed them.
+    if (Object.hasOwn(config, 'options') || Object.hasOwn(config, 'connectionString')) throw new Error();
+    return role === undefined ? { ...config } : { ...config, options: `-c role=${role}` };
+  } catch {
+    // Parser errors can contain credentials or SSL file paths; do not relay them.
+    throw Object.assign(new Error('E_PG_CONFIG: invalid PostgreSQL connection string or forbidden identity/startup override'), { code: 'E_PG_CONFIG' });
+  }
+}
+
 
 // int8 → Number. 모듈 로드 시 한 번 (node:pg 타입 파서는 프로세스 전역).
 pg.types.setTypeParser(20, (value) => {
@@ -147,7 +181,7 @@ export function createReader({ connectionString = process.env.WIKI_DOCUMENT_PG, 
   if (role !== undefined && (typeof role !== 'string' || !ROLE_NAME.test(role))) {
     throw Object.assign(new Error(`E_PG_CONFIG: invalid role name ${JSON.stringify(role)}`), { code: 'E_PG_CONFIG' });
   }
-  const pool = new pg.Pool(role ? { connectionString: url, options: `-c role=${role}` } : { connectionString: url });
+  const pool = new pg.Pool(readerConnectionConfig(url, role));
 
   const base = methodsOn((sql, params) => pool.query(sql, params));
   const transaction = async (fn, { readOnly = false, isolation = 'REPEATABLE READ', importSnapshot } = {}) => {

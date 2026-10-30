@@ -1,4 +1,4 @@
-import { readPersonBirthdayInputs } from './person-inputs.mjs';
+import { readPersonBirthdayInputs, readPersonBirthdayInputsAsync } from './person-inputs.mjs';
 import { orderFamilyNodes } from './family-key-order.mjs';
 
 const path = name => `lore/name-pools/${name}.json`;
@@ -14,6 +14,10 @@ const ref = row => ({ path: row.source_path, ...(row.source_anchor === null ? {}
 // Caller owns the connection. No source documents, generic JSON tree, or file IO.
 // The return value is loadCastFamilyTrees' graph, not the full person input bundle.
 export function readCastFamilyTreeInputs(db, { preserveSourceOrder = false } = {}) {
+  return reconstructCastFamilyTreeInputs(db, preserveSourceOrder, () => readPersonBirthdayInputs(db));
+}
+
+function reconstructCastFamilyTreeInputs(db, preserveSourceOrder, readBirthdays) {
   const rows = (sql, ...args) => {
     try { return db.prepare(sql).all(...args); }
     catch (cause) {
@@ -37,7 +41,7 @@ export function readCastFamilyTreeInputs(db, { preserveSourceOrder = false } = {
   }
   const tree = rows('SELECT tree_id,collapse_year,reference_date,status,json_pointer FROM family_tree WHERE source_id=?', treeSource);
   if (metadata.length !== 4 || tree.length !== 1 || tree[0].tree_id !== 'cast-family-trees' || tree[0].collapse_year !== 2030 || tree[0].reference_date !== '2126-12-31' || tree[0].status !== 'authored' || tree[0].json_pointer !== '') fail('E_FAMILY_INPUT_SCHEMA_GAP', 'tree metadata');
-  const { birthdayRoster, birthdaysById } = readPersonBirthdayInputs(db);
+  const { birthdayRoster, birthdaysById } = readBirthdays();
   const people = new Map(birthdayRoster.map(person => [person.id, person]));
   const ordered = (values, pointer) => {
     values.sort((a, b) => {
@@ -87,7 +91,8 @@ export function readCastFamilyTreeInputs(db, { preserveSourceOrder = false } = {
     if (!timeline.length || timeline.some((entry, i) => entry.ordinal !== i)) coverage(row.node_id);
     const person = people.get(row.person_id);
     if (row.person_id !== null && (!person || row.node_id !== row.person_id)) coverage(row.node_id);
-    return { id: row.node_id, personId: row.person_id, kind: row.node_kind,
+    return {
+      id: row.node_id, personId: row.person_id, kind: row.node_kind,
       name: person?.name ?? row.name, ...(row.name_en === null ? {} : { nameEn: row.name_en }),
       birthDate: person ? birthdaysById.get(row.person_id).birthDate : row.birth_date, deathDate: row.death_date,
       status: row.status, sourceRefs: nodeSources('node'),
@@ -100,9 +105,11 @@ export function readCastFamilyTreeInputs(db, { preserveSourceOrder = false } = {
     };
   });
   if (preserveSourceOrder) nodes = orderFamilyNodes(db, nodes);
-  const edges = edgeRows.map(row => ({ id: row.edge_id, from: row.from_node_id, to: row.to_node_id, type: row.edge_type,
+  const edges = edgeRows.map(row => ({
+    id: row.edge_id, from: row.from_node_id, to: row.to_node_id, type: row.edge_type,
     ...(row.parent_role === null ? {} : { parentRole: row.parent_role }), status: row.status,
-    sourceRefs: refs(edgeRefIndex.get(row.edge_id) ?? [], usedEdgeRefs) }));
+    sourceRefs: refs(edgeRefIndex.get(row.edge_id) ?? [], usedEdgeRefs)
+  }));
   if (usedRefs.size !== nodeRefs.length || usedTimes.size !== times.length || usedEdgeRefs.size !== edgeRefs.length) coverage('orphan provenance');
   const usedEvents = new Set(), usedParents = new Set();
   for (const lineage of lineages) {
@@ -115,18 +122,22 @@ export function readCastFamilyTreeInputs(db, { preserveSourceOrder = false } = {
       if (!memberEvents.length || memberEvents.some((event, i) => event.ordinal !== i)) coverage(member.member_key);
       const person = people.get(member.person_id);
       if (member.person_id !== null && (!person || member.member_key !== member.person_id)) coverage(member.member_key);
-      nodes.push({ id: member.member_key, personId: member.person_id, kind: person ? 'person' : 'historical', name: person?.name ?? member.name_ko,
+      nodes.push({
+        id: member.member_key, personId: member.person_id, kind: person ? 'person' : 'historical', name: person?.name ?? member.name_ko,
         birthDate: person ? birthdaysById.get(member.person_id).birthDate : member.birth_date, deathDate: null, status: 'preserved', sourceRefs,
         timeline: memberEvents.map(event => {
           usedEvents.add(event);
           return { year: event.event_year, ...(event.event_date ? { date: event.event_date } : {}), summary: member.timeline_ko, sourceRefs };
-        }) });
+        })
+      });
       const memberParents = parents.filter(parent => parent.member_key === member.member_key);
       for (const [i, parent] of memberParents.entries()) {
         if (parent.json_pointer !== `${member.json_pointer}/parentKeys/${i}`) coverage(member.member_key);
         usedParents.add(parent);
-        edges.push({ id: `${parent.parent_key}:${member.member_key}:biological`, from: parent.parent_key, to: member.member_key, type: 'biological',
-          ...(parent.parent_role === null ? {} : { parentRole: parent.parent_role }), status: 'preserved', sourceRefs });
+        edges.push({
+          id: `${parent.parent_key}:${member.member_key}:biological`, from: parent.parent_key, to: member.member_key, type: 'biological',
+          ...(parent.parent_role === null ? {} : { parentRole: parent.parent_role }), status: 'preserved', sourceRefs
+        });
       }
     }
   }
@@ -135,6 +146,54 @@ export function readCastFamilyTreeInputs(db, { preserveSourceOrder = false } = {
   const personIds = nodes.filter(node => node.personId !== null).map(node => node.personId);
   if (ids.size !== nodes.length || new Set(personIds).size !== personIds.length || personIds.length !== birthdayRoster.length || birthdayRoster.some(person => !personIds.includes(person.id))) coverage('issued identities');
   if (new Set(edges.map(edge => edge.id)).size !== edges.length || edges.some(edge => !ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to)) coverage('edge endpoints');
-  return { schemaVersion: 1, collapseYear: tree[0].collapse_year, referenceDate: tree[0].reference_date, status: tree[0].status,
-    sourceRefs: treeRefs.map(row => ({ path: row.source_path })), nodes, edges, imports: [{ path: path('diaspora-family-lineages') }] };
+  return {
+    schemaVersion: 1, collapseYear: tree[0].collapse_year, referenceDate: tree[0].reference_date, status: tree[0].status,
+    sourceRefs: treeRefs.map(row => ({ path: row.source_path })), nodes, edges, imports: [{ path: path('diaspora-family-lineages') }]
+  };
+}
+
+/** PostgreSQL twin using source-scoped typed rows and the shared reconstruction. */
+export async function readCastFamilyTreeInputsAsync(tx, { preserveSourceOrder = false } = {}) {
+  try {
+    const sheet = new Map();
+    const load = async (sql, params = []) => {
+      const result = await tx.all(sql.replace(/\bFROM\s+([a-z_]+)/gu, 'FROM wiki.$1'), params);
+      sheet.set(sql + JSON.stringify(params), result);
+      return result;
+    };
+    const sources = new Map();
+    for (const logicalPath of FAMILY_INPUT_PATHS) {
+      const rows = await load('SELECT source_id,media_type FROM source_file WHERE logical_path=?', [logicalPath]);
+      if (rows.length !== 1) fail('E_FAMILY_INPUT_MISSING', logicalPath);
+      if (rows[0].media_type !== 'application/json') fail('E_FAMILY_INPUT_MEDIA_TYPE', logicalPath);
+      sources.set(logicalPath, rows[0].source_id);
+    }
+    const tree = sources.get(path('cast-family-trees'));
+    const diaspora = sources.get(path('diaspora-family-lineages'));
+    await load('SELECT field_name,value_kind,text_value,integer_value FROM family_source_metadata WHERE source_id=?', [tree]);
+    await load('SELECT tree_id,collapse_year,reference_date,status,json_pointer FROM family_tree WHERE source_id=?', [tree]);
+    const birthdays = await readPersonBirthdayInputsAsync(tx);
+    for (const table of ['family_tree_source', 'family_node', 'family_node_source', 'family_node_timeline', 'family_edge', 'family_edge_source']) {
+      await load(`SELECT * FROM ${table} WHERE source_id=?`, [tree]);
+    }
+    for (const table of ['diaspora_member', 'diaspora_lineage', 'diaspora_member_event', 'diaspora_member_parent']) {
+      await load(`SELECT * FROM ${table} WHERE source_id=?`, [diaspora]);
+    }
+    if (preserveSourceOrder) await load('SELECT * FROM family_input_key_order ORDER BY node_id,object_path,ordinal');
+    const db = {
+      prepare(sql) {
+        return {
+          all: (...params) => {
+            const key = sql + JSON.stringify(params);
+            if (!sheet.has(key)) fail('E_FAMILY_INPUT_SCHEMA_GAP', `unmaterialized statement: ${sql}`);
+            return sheet.get(key);
+          }
+        };
+      }
+    };
+    return reconstructCastFamilyTreeInputs(db, preserveSourceOrder, () => birthdays);
+  } catch (error) {
+    if (['42P01', '42703'].includes(error.code)) fail('E_FAMILY_INPUT_SCHEMA_GAP', error.message);
+    throw error;
+  }
 }

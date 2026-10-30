@@ -3,8 +3,8 @@ import { approvedDocuments, publishedDocuments } from './catalog-admission.mjs'
 
 export { validatePublicationManifest }
 
-export async function wikiPublicationManifest({ loreRoot, documents, registry }) {
-  const admittedDocuments = publishedDocuments(await approvedDocuments(loreRoot))
+export async function wikiPublicationManifest({ loreRoot, documents, registry, approvedDocumentSet }) {
+  const admittedDocuments = publishedDocuments(approvedDocumentSet ?? await approvedDocuments(loreRoot, { categoryRegistry: registry }))
   const admittedByRoute = new Map(admittedDocuments.map((document) => [document.route, document]))
   for (const { route } of documents) {
     if (!admittedByRoute.has(route)) throw Object.assign(new Error(`E_PUBLICATION_SOURCE_UNPUBLISHED:${route}`), { code: 'E_PUBLICATION_SOURCE_UNPUBLISHED', route })

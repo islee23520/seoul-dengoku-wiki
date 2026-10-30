@@ -1,8 +1,5 @@
-// One authoring source becomes the published locale documents of one slug.
-// A JSON authoring document (lore/**/<Slug>.json) carries en and ko blocks, so it renders both locales.
-// A corpus that is still Markdown keeps its single Korean body. Korean keeps the unprefixed route,
-// so existing Korean URLs do not move; every other locale is published under /<locale>/.
-export const wikiLocales = ['ko', 'en']
+// Publish only Korean; other locales remain in the authoring source.
+export const wikiLocales = ['ko']
 export const defaultLocale = 'ko'
 
 export const localizedRoute = (locale, domain, slug) =>
