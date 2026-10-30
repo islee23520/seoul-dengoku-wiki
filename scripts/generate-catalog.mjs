@@ -329,7 +329,13 @@ const jsonPages = process.env.WIKI_DOCUMENT_PG
       .map(page => ({ ...page, path: resolve(projectRoot, page.path) }))
   : typedCatalogSource(db => readCatalogPages(db)
       .map(page => ({ ...page, path: resolve(projectRoot, page.path) })))
-const publishedRoutes = new Set(publishedDocuments(await approvedDocuments(loreRoot, { categoryRegistry, dbPath: articleDatabasePath })).map(({ route }) => route))
+// The atlas check already ran on the PG snapshot above; passing dbPath here
+// would re-open SQLite. In PG mode approvedDocuments runs its filesystem
+// walk only (no duplicate DB check), matching the already-verified state.
+const publishedRoutes = new Set(publishedDocuments(await approvedDocuments(loreRoot,
+  process.env.WIKI_DOCUMENT_PG
+    ? { categoryRegistry }
+    : { categoryRegistry, dbPath: articleDatabasePath })).map(({ route }) => route))
 const categoryErrors = publishedRegistrationErrors(jsonPages.map((page) => ({ ...page, name: basename(page.path) })), publishedRoutes, categoryRegistry)
 if (categoryErrors.length) throw new Error(categoryErrors.join('\n'))
 const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
@@ -341,7 +347,12 @@ const glossaryEntries = process.env.WIKI_DOCUMENT_PG
 const glossaryPage = { path: glossaryPath, slug: 'Glossary', value: glossaryDocument(glossaryEntries) }
 // Approved public nomenclature for a fictional organization grounds the same state leader.
 const organizationAliases = await loadApprovedOrganizationAliases(projectRoot, sourceRead)
-const worldIndex = buildWorldIndex({ loreRoot, organizationAliases, dbPath: articleDatabasePath })
+const worldIndex = process.env.WIKI_DOCUMENT_PG
+  ? await (async () => {
+      const { buildWorldIndexAsync } = await import('./build-world-index.mjs')
+      return await typedCatalogSourceAsync(tx => buildWorldIndexAsync({ organizationAliases, tx }))
+    })()
+  : buildWorldIndex({ loreRoot, organizationAliases, dbPath: articleDatabasePath })
 
 const renderedBySlug = new Map()
 for (const page of jsonPages) {
