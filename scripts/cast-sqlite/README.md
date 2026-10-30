@@ -2,7 +2,7 @@
 
 ## 저작 권위 전환과 작업 상태
 
-PostgreSQL `wiki`가 저작 정본 전환 대상이다. `document-cli.mjs`와 공개 문서 API는 PG 전용이며 SQLite 폴백이 없다. 옛 `data/canonical/wiki-cast.sqlite` 및 외부 SQLite archive는 이관·대사 입력일 뿐, 전환 후 운영 저작 정본이 아니다. 격리 환경에서 SQLite·PG reader와 전체 worker 출력 1,433개가 동등했고 일반 PG 빌드 및 계약·산출물·게이트 검사가 통과했다. 일반 PG 생성·빌드는 메타데이터와 스냅샷·비공개 출처 검증 아래 허용되지만, 정확한 SHA 기준 운영 후보 확인과 배포는 아직 남아 있다.
+PostgreSQL `wiki`가 현재 운영 저작 정본이다. `document-cli.mjs`와 공개 문서 API는 PG 전용이며 SQLite 폴백이 없다. 운영 승격은 커밋 `24f3c676f7df0b9903e02f4278ac65bf8fac688f`, run `20261030T150126Z-11560`에서 `deployed`로 확인됐다([운영 관측](../../deploy/README.md#운영-전환-관측-2026-10-30)). 추적 중인 `data/canonical/wiki-cast.sqlite` 및 외부 SQLite archive는 명시적 이관·대사 보존본이며 런타임 입력이나 운영 저작 정본이 아니다. 이 보존본과 이전 배포 롤백은 유지한다. 앞선 격리 환경의 SQLite·PG reader 및 전체 worker 출력 1,433개 동등성, 일반 PG 빌드·계약·산출물·게이트 통과는 별도의 이관 검증 기록이다. 일반 PG 생성·빌드의 메타데이터와 스냅샷·비공개 출처 검증은 계속 유지한다.
 
 - 물리적인 lore JSON 원천 파일은 모두 제거됐다. 문서·출처 기록에 남아 있는 `lore/.../*.json` 이름은 DB 안의 논리적 문서 식별자 또는 provenance이며, 디스크에서 다시 읽어야 할 입력 파일이 아니다.
 - 현재 envelope head는 예시를 포함해 99개다. 예시는 실제 게시 문서와 구별한다.

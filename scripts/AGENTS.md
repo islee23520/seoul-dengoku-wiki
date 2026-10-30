@@ -12,7 +12,7 @@
 | JSON 렌더·검사 | `lore-json-render.mjs`, `lore-json-validate.mjs`, `check-lore-links.mjs` | 원천 schema, anchor, 링크 |
 | 지도·역·지형 | `physical_rail.py`, `bake-regional-terrain.py`, `station-catalog-geography.mjs` | 원천 지리와 공개 투영 구별 |
 | 초상 | `generate-portrait-tokens.mjs`, `portrait-public-boundary.mjs` | 파생 token과 승인된 선택 구별 |
-| 정규화 인물 DB | `cast-sqlite/` | 하위 지침과 README 우선 |
+| PG 저작·정규화 인물 DB와 SQLite 이관 archive | `cast-sqlite/` | 운영 정본은 PG; SQLite 명시적 대사 전용, 하위 지침과 README 우선 |
 | 비공개 문서·증거 DB | `document-store/` | 내부 capability와 고정 identity |
 | 보조 입력 | `fixtures/`, `data/`, `historical-inputs/` | 검사 fixture·행정 자료·보존 입력 구별 |
 
@@ -30,6 +30,7 @@
 ## COMMANDS
 저장소 루트에서 변경 영역에 해당하는 명령을 선택한다.
 로어 schema 검사는 Python `jsonschema`가 필요하다. 생성물·dist·비공개 승인 원천을 읽는 검사는 해당 입력이 준비된 checkout에서 실행하며, 누락 오류를 검사 통과로 보고하지 않는다.
+운영 저작·생성은 PostgreSQL을 사용한다. 아래 `cast:verify --db`는 보존된 SQLite 이관·비교 archive의 명시적 검사이며 운영 검증이나 런타임 입력이 아니다.
 ```bash
 npm run generate
 npm run build
