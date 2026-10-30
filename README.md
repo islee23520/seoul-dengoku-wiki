@@ -8,6 +8,8 @@ PostgreSQL `wiki`는 저작 정본 전환 대상이며 현재 typed 레코드와
 
 SQLite files, including the former `data/canonical/wiki-cast.sqlite`, are migration/comparison inputs only, not an editable production authority. Retiring those files after the cutover does not authorize deleting PostgreSQL historical evidence: `wiki.source_file` bytes/hashes, `source_record` provenance and sealed revisions must remain immutable. Do not rewrite historical bytes to match edited heads.
 
+Generation and the document API share current-source and category-publication predicates. Category-ready drafts may be published under the existing catalog policy without changing their editorial approval status. Excluded sources, examples, private namespaces and retired cast articles are not published. Typed public routes derive from the selected document's logical filename; historical `article_route` and publication-admission rows do not freeze that route inventory. Computed index/glossary derivations retain their explicit stored bindings.
+
 ## Repository layout
 
 | Path | Contents |

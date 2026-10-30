@@ -1,12 +1,17 @@
 import { createServer } from 'node:http';
 import { constants } from 'node:fs';
 import { open, readFile } from 'node:fs/promises';
+import { basename } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { fromMarkdown } from 'mdast-util-from-markdown';
 import { gfmFromMarkdown } from 'mdast-util-gfm';
 import { gfm } from 'micromark-extension-gfm';
 import { createReader } from '../scripts/cast-sqlite/db-pg.mjs';
 import { listDocumentsAsync, readDocumentAsync } from '../scripts/cast-sqlite/document-read.mjs';
+import { orderDocumentKeysAsync } from '../scripts/cast-sqlite/document-key-order.mjs';
+import { readCatalogMetadataDocumentAsync, CATEGORY_REGISTRY_PATH } from '../scripts/cast-sqlite/catalog-metadata.mjs';
+import { admissionDocuments, publishedDocuments, catalogSourceEligible } from '../scripts/catalog-publication.mjs';
+import { registrationErrors } from '../scripts/category-publication.mjs';
 import { localizedDocuments } from '../scripts/localized-documents.mjs';
 import { renderLoreMarkdown } from '../scripts/lore-json-render.mjs';
 import { publicHouseContent } from '../scripts/public-house-content.mjs';
@@ -17,12 +22,8 @@ import { readPersonDispositionAsync } from '../scripts/cast-sqlite/person-dispos
 import { readRetirementProseAsync, projectRetirementProse } from '../scripts/cast-sqlite/retirement-prose.mjs';
 import { projectActivePersonIndex } from '../scripts/person-roster-projection.mjs';
 
-const selector = (identity) => ({
- corpusKind: 'current', domain: identity.domain,
- documentId: identity.document_id, visibility: 'public'
-});
 
-// The reviewed DB route is authoritative; an envelope slug is not a URL alias.
+// Routes are derived from the exact logical source names used by the catalog.
 function renderDocument(document, locale, mapping, mappings, currentRoster) {
  const current = currentRoster ? projectRetirementProse(document, mapping.logical_path, currentRoster.prose) : document;
  const projected = projectActivePersonIndex(publicMapContent(publicOfficeContent(publicHouseContent(current))),
@@ -41,7 +42,7 @@ function articleBody(title, route, markdown, mappings) {
   .replace(/\]\((?!\/|#|[a-z][a-z0-9+.-]*:)([^)#]+)\.md(#[^)]*)?\)/giu,
    (match, path, anchor = '') => {
     const targetSlug = path.split('/').at(-1);
-    const targets = mappings.filter((entry) => entry.slug === targetSlug);
+    const targets = mappings.filter((entry) => entry.slug === targetSlug || entry.route.split('/').at(-1) === targetSlug);
     if (targets.length !== 1) return match;
     return `](${targets[0].route}${anchor})`;
    });
@@ -131,8 +132,45 @@ export async function createWikiDocumentServer({ pgUrl = process.env.WIKI_DOCUME
     // byte-order route ordering (the database collation is not binary).
     const publicDocuments = await reader.transaction(async (tx) => {
      const documents = [];
-     const identities = await listDocumentsAsync(tx, { corpusKind: 'current', visibility: 'internal' });
-     const routes = (await tx.query('SELECT route,source_id,derivation,derivation_json FROM wiki.article_route ORDER BY route COLLATE "C"')).rows;
+     const identities = (await listDocumentsAsync(tx, { corpusKind: 'current', visibility: 'internal' })).filter(catalogSourceEligible);
+     const pages = [];
+     const slugs = new Set();
+     for (const identity of identities) {
+      const slug = basename(identity.logical_path, '.json');
+      if (slugs.has(slug)) throw new Error(`E_DUPLICATE_LORE_SLUG:${slug}`);
+      slugs.add(slug);
+      await tx.exec('SAVEPOINT candidate_read');
+      let succeeded = false;
+      try {
+       const document = await readDocumentAsync(tx, {
+        corpusKind: 'current', domain: identity.domain, documentId: identity.document_id, visibility: 'internal'
+       });
+       if (document && document.readMetadata.source_id === identity.source_id) {
+        pages.push({ path: identity.logical_path, slug, value: await orderDocumentKeysAsync(tx, identity.source_id, document) });
+       }
+       succeeded = true;
+      } catch (error) {
+       if (error.code !== 'E_DOCUMENT_SCHEMA_GAP' && error.code !== 'E_DOCUMENT_AMBIGUOUS') throw error;
+      } finally {
+       if (succeeded) await tx.exec('RELEASE SAVEPOINT candidate_read');
+       else {
+        await tx.exec('ROLLBACK TO SAVEPOINT candidate_read');
+        await tx.exec('RELEASE SAVEPOINT candidate_read');
+       }
+      }
+     }
+     const registry = await readCatalogMetadataDocumentAsync(tx, CATEGORY_REGISTRY_PATH);
+     const admission = admissionDocuments(registry);
+     for (const page of pages) admission.addPage(page);
+     admission.addWorldIndex();
+     const published = admission.sorted().flatMap(document => {
+      try { return publishedDocuments([document]); }
+      catch (error) {
+       if (error.code === 'E_PUBLICATION_DISCOVERY') return [];
+       throw error;
+      }
+     });
+     const routes = (await tx.query("SELECT route,source_id,derivation,derivation_json FROM wiki.article_route WHERE derivation IN ('computed-index', 'computed-glossary') ORDER BY route COLLATE \"C\"")).rows;
      let currentRoster;
      if (await tx.get("SELECT 1 FROM information_schema.tables WHERE table_schema='wiki' AND table_name='person_disposition'")) {
       const dispositions = await readPersonDispositionAsync(tx);
@@ -146,37 +184,23 @@ export async function createWikiDocumentServer({ pgUrl = process.env.WIKI_DOCUME
       };
      }
      const mappings = [];
-     for (const row of routes) {
-      if (row.derivation !== 'typed-envelope' || !/^\/[\p{L}\p{N}_-]+\/[\p{L}\p{N}_-]+$/u.test(row.route)
-       || routes.filter((entry) => entry.route === row.route || entry.source_id === row.source_id).length !== 1) continue;
-      const identity = identities.find((entry) => entry.source_id === row.source_id);
-      let metadata;
-      try { metadata = JSON.parse(row.derivation_json); } catch { continue; }
-      if (!identity || metadata.documentId !== identity.document_id || metadata.domain !== identity.domain
-       || metadata.envelopeSlug !== identity.slug || metadata.materialized !== true) continue;
-      mappings.push({ ...identity, route: row.route });
+     for (const publishedDocument of published) {
+      const page = pages.find(entry => entry.path === publishedDocument.source);
+      if (!page || registrationErrors(page.value, registry, page.slug).length) continue;
+      const matching = identities.filter(entry => entry.logical_path === page.path && entry.document_id === page.value.id && entry.domain === page.value.domain);
+      if (matching.length !== 1 || !/^\/world\/[\p{L}\p{N}_-]+$/u.test(publishedDocument.route)) continue;
+      mappings.push({ ...matching[0], route: publishedDocument.route, document: page.value });
      }
      const admittedMappings = [];
      for (const identity of mappings) {
-      // A failing document must not abort the shared snapshot: unlike SQLite,
-      // a failed statement leaves a PostgreSQL transaction aborted (25P02), so
-      // each per-document read runs in a savepoint that is rolled back on the
-      // same schema-gap errors SQLite tolerated per document.
       await tx.exec('SAVEPOINT document_read');
       let succeeded = false;
       try {
-       const document = await readDocumentAsync(tx, selector(identity));
-       if (document && document.readMetadata.source_id === identity.source_id) {
-        admittedMappings.push({ ...identity, titles: { ko: document.locales.ko.title } });
-        if (list || identity.route === `/${parts[4]}/${parts[5]}`) documents.push(renderDocument(document, locale, identity, mappings, currentRoster));
-       }
+       const document = identity.document;
+       admittedMappings.push({ ...identity, titles: { ko: document.locales.ko.title } });
+       if (list || identity.route === `/${parts[4]}/${parts[5]}`) documents.push(renderDocument(document, locale, identity, mappings, currentRoster));
        succeeded = true;
       } catch (error) {
-       // Missing typed slots/schema or an exact public projection mismatch
-       // cannot turn an incomplete envelope into a published article. The
-       // finally block restores the savepoint for every outcome — RELEASE on
-       // success, ROLLBACK TO + RELEASE on any error — so a rethrown error
-       // still leaves the transaction consistent and the snapshot usable.
        if (error.code !== 'E_DOCUMENT_SCHEMA_GAP' && error.code !== 'E_DOCUMENT_AMBIGUOUS'
         && !/^(E_OFFICE_PUBLIC_PROJECTION|E_MAP_PUBLIC_PROJECTION|E_LOCALE_MISSING):/u.test(error.message)) throw error;
       } finally {
@@ -188,7 +212,8 @@ export async function createWikiDocumentServer({ pgUrl = process.env.WIKI_DOCUME
       }
      }
      for (const mapping of routes.filter(row => ['computed-index', 'computed-glossary'].includes(row.derivation))) {
-      if (!/^\/[\p{L}\p{N}_-]+\/[\p{L}\p{N}_-]*$/u.test(mapping.route)
+      if (!published.some(document => document.route === mapping.route && document.source === (mapping.derivation === 'computed-glossary' ? 'lore/glossary.json' : 'scripts/build-world-index.mjs'))
+       || !/^\/[\p{L}\p{N}_-]+\/[\p{L}\p{N}_-]*$/u.test(mapping.route)
        || (!list && mapping.route !== `/${parts[4]}/${parts[5]}`)) continue;
       // Computed derivations read typed dependencies and may hit the same
       // schema gaps; isolate each one so one bad derivation cannot abort the

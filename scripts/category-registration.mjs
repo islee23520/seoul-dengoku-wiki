@@ -10,6 +10,8 @@ import { fileURLToPath } from 'node:url'
 import { headingId } from './lore-json-render.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
 import { readCatalogMetadataDocument, CATEGORY_REGISTRY_PATH } from './cast-sqlite/catalog-metadata.mjs'
+import { registeredCategories, registrationErrors } from './category-publication.mjs'
+export { registeredCategories, registrationErrors } from './category-publication.mjs'
 
 const ko = (leaf) => typeof leaf === 'string' ? leaf : Array.isArray(leaf) ? leaf.map((run) => run.text).join('') : ko(leaf?.ko ?? '')
 
@@ -37,11 +39,13 @@ export function categoryEntities(pages, documents) {
         const target = routes.get(`Hostile-Group-${group.id}`)
         if (!target) continue
         const role = ko(entry.bestiary?.battlefield_role ?? entry.role_class)
-        entities.push({ category: 'bestiary', id: entry.id, title: ko(entry.display_name), route: `${target}#${entry.id.toLowerCase()}`, source: `${page.path}#/data/atlas/monster_contents`, path: [
-          { id: `bestiary-${group.category}`, label: ecologyLabels[group.category] },
-          { id: `bestiary-${group.category}-${headingId(role)}`, label: role },
-          { id: `bestiary-${group.category}-${headingId(role)}-${group.id}`, label: ko(group.display_name) },
-        ] })
+        entities.push({
+          category: 'bestiary', id: entry.id, title: ko(entry.display_name), route: `${target}#${entry.id.toLowerCase()}`, source: `${page.path}#/data/atlas/monster_contents`, path: [
+            { id: `bestiary-${group.category}`, label: ecologyLabels[group.category] },
+            { id: `bestiary-${group.category}-${headingId(role)}`, label: role },
+            { id: `bestiary-${group.category}-${headingId(role)}-${group.id}`, label: ko(group.display_name) },
+          ]
+        })
       }
     }
     if (!['technology', 'goods', 'structures', 'people-and-machines', 'ailments'].includes(source.domain)) continue
@@ -86,23 +90,6 @@ export function categoryEntities(pages, documents) {
   return entities
 }
 
-const atlasProjectionSlugs = new Set([
-  'Operating-Houses',
-  'Regional-Physical-AI-Arcs',
-  'Synthetic-Actors',
-  'World-Expansion-Index',
-  'World-Relation-Ledger',
-  'External-Theaters',
-  'Hostile-Ecology-Index',
-  ...Array.from({ length: 26 }, (_, index) => `Hostile-Group-G${String(index + 1).padStart(2, '0')}`),
-])
-
-const verifiedAtlasProjection = (document) =>
-  atlasProjectionSlugs.has(document.slug) &&
-  document.source?.kind === 'computed' &&
-  document.source.refs?.includes('lore/World-Narrative-Atlas.json') &&
-  document.provenance?.original_anchor === 'lore/World-Narrative-Atlas.json' &&
-  document.provenance?.history?.includes('world-atlas-projections.v2')
 
 export async function loadCategoryRegistry(registryPath) {
   const path = registryPath instanceof URL ? fileURLToPath(registryPath) : resolve(registryPath)
@@ -122,13 +109,6 @@ export async function loadCategoryRegistry(registryPath) {
   return registry
 }
 
-export function registeredCategories(document, registry) {
-  const known = new Set(registry.categories.map((category) => category.id))
-  if (!Object.hasOwn(document, 'categories')) {
-    return known.has(document.domain) ? [document.domain] : []
-  }
-  return document.categories
-}
 
 // The publication review decides which lore documents readers see. Only those
 // must register; a held-back source (draft, pending review) is not an article
@@ -139,41 +119,6 @@ export function publishedRegistrationErrors(pages, publishedRoutes, registry) {
     .flatMap((page) => registrationErrors(page.value, registry, page.name ?? page.slug))
 }
 
-export function registrationErrors(document, registry, sourceName) {
-  const name = sourceName ?? document.slug ?? 'document'
-  const known = new Set(registry.categories.map((category) => category.id))
-  if (!known.has(document.domain) && document.domain !== 'root') {
-    return [`E_CATEGORY_DOMAIN:${name}:${document.domain ?? ''}`]
-  }
-  const categories = registeredCategories(document, registry)
-  if (!Array.isArray(categories) || categories.length === 0 || categories.some((id) => typeof id !== 'string' || id.length === 0)) {
-    return [`E_CATEGORY_SHAPE:${name}`]
-  }
-  if (new Set(categories).size !== categories.length) return [`E_CATEGORY_DUPLICATE:${name}`]
-  const unknown = categories.filter((id) => !known.has(id)).map((id) => `E_CATEGORY_UNKNOWN:${name}:${id}`)
-  if (unknown.length) return unknown
-  const errors = []
-  if (!document.locales?.ko?.title || !document.locales?.ko?.summary || !document.locales?.en?.title || !document.locales?.en?.summary) {
-    errors.push(`E_CATEGORY_LOCALES:${name}`)
-  }
-  if (!document.source?.kind || !Array.isArray(document.source.refs) || document.source.refs.length === 0 ||
-    document.source.refs.some((ref) => typeof ref !== 'string' || ref.length === 0)) {
-    errors.push(`E_CATEGORY_SOURCE:${name}`)
-  }
-  if (verifiedAtlasProjection(document)) {
-    if (!document.content.some((node) => node?.kind === 'heading')) {
-      errors.push(`E_CATEGORY_CONTENT:${name}:atlas-projection:heading`)
-    }
-    return errors
-  }
-  for (const id of categories) {
-    const category = registry.categories.find((entry) => entry.id === id)
-    for (const kind of category.requiredKinds) {
-      if (!document.content.some((node) => node?.kind === kind)) errors.push(`E_CATEGORY_CONTENT:${name}:${id}:${kind}`)
-    }
-  }
-  return errors
-}
 
 export function categoryIndex(documents, registry, entities = []) {
   const byId = new Map(registry.categories.map((category) => [category.id, {
