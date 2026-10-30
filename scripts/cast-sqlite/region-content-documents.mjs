@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { currentRegionContent } from './cia-current-rights.mjs';
+import { currentRegionContent, currentRegionContentAsync } from './cia-current-rights.mjs';
 
 export const REGION_CONTENT_PATHS = Object.freeze([
   "lore/regions/content/11110.json",
@@ -203,11 +203,15 @@ export async function readRegionContentDocumentAsync(tx, { logicalPath, predeces
   const receipts = await load('region_content_import');
   const receipt = receipts[0];
   if (receipts.length !== 1 || !receipt.actor.trim() || !receipt.reason.trim()) fail('receipt');
-  // Table set comes from the same domain registry the sync reader uses,
-  // plus the shared receipt/key tables it queries directly.
+  // Per-path domain tables plus receipt/key tables load filtered by
+  // logical_path; the global current-rights successor tables have no
+  // logical_path column and load unfiltered instead.
   const tableNames = [...new Set([...Object.values(domains).map(d => d.table), 'region_content_key', 'region_content_import'])];
   const data = {};
   for (const table of tableNames) data[table] = await load(table);
+  for (const table of ['current_right_retirement', 'current_region_disposition']) {
+    data[table] = (await tx.all('SELECT * FROM wiki.' + table)).map(r => ({ ...r }));
+  }
   // The sync reader queries by logical_path per domain table listed in
   // `domains`; serve those through a prepare-compatible sheet so the
   // unchanged reconstruction sees identical row sets.
@@ -220,6 +224,9 @@ export async function readRegionContentDocumentAsync(tx, { logicalPath, predeces
       return wantsPath && params.length === 1 ? rows.filter(r => r.logical_path === params[0]).map(r => ({ ...r })) : rows.map(r => ({ ...r }));
     } };
   } };
-  // Reuse the exact sync reconstruction (it re-reads each table via the sheet).
-  return readRegionContentDocument(sheet, { logicalPath, predecessor });
+  // Reuse the exact sync reconstruction (it re-reads each table via the
+  // sheet). The non-predecessor transform runs through the async
+  // current-rights twin so no synchronous prepare() reaches the PG tx.
+  const document = readRegionContentDocument(sheet, { logicalPath, predecessor: true });
+  return predecessor ? document : currentRegionContentAsync(tx, document);
 }
