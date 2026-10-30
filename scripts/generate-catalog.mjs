@@ -420,9 +420,17 @@ const activePersonIds = (() => {
 })()
 const activePersonRoutes = activePersonIds ? new Set([...activePersonIds]
   .map(id => atlasPeople.routes.get(id)?.detailRoute).filter(Boolean)) : undefined
-typedSourcePgUnconverted('retirement prose roster read')
-const currentProseChanges = typedCatalogSource(db => db.prepare("SELECT 1 FROM sqlite_schema WHERE name='retirement_prose'").get()
-  ? readRetirementProse(db) : [])
+const currentProseChanges = process.env.WIKI_DOCUMENT_PG
+  ? await (async () => {
+      const { readRetirementProseAsync } = await import('./cast-sqlite/retirement-prose.mjs')
+      return await typedCatalogSourceAsync(async (tx) => {
+        // Optional table probe mirrors the SQLite existence check; absent means no changes.
+        const present = await tx.get("SELECT 1 FROM information_schema.tables WHERE table_schema='wiki' AND table_name='retirement_prose'")
+        return present ? await readRetirementProseAsync(tx) : []
+      })
+    })()
+  : typedCatalogSource(db => db.prepare("SELECT 1 FROM sqlite_schema WHERE name='retirement_prose'").get()
+      ? readRetirementProse(db) : [])
 for (const domain of domains) {
   for (const slug of [...renderedBySlug.keys()].filter((slug) => publishedRoutes.has(`/world/${slug === 'index' ? '' : slug}`)).sort((left, right) => left.localeCompare(right))) {
     const page = pagesBySlug.get(slug)
@@ -581,13 +589,23 @@ proj4.defs('EPSG:5179', '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=10000
 
 const ciaFacilityProjection = await loadCiaFacilityProjection(repoRoot, sourceRead)
 let regionContentById = new Map()
-typedSourcePgUnconverted('region content document loop')
-typedCatalogSource(db => {
+if (process.env.WIKI_DOCUMENT_PG) {
+  // One snapshot transaction preloads all 25 region-content documents.
+  const { readRegionContentDocumentAsync } = await import('./cast-sqlite/region-content-documents.mjs')
+  await typedCatalogSourceAsync(async (tx) => {
+    for (const logicalPath of REGION_CONTENT_PATHS) {
+      const district = await readRegionContentDocumentAsync(tx, { logicalPath, predecessor: true })
+      for (const region of district.regions) regionContentById.set(region.region_id, region.content)
+    }
+  })
+} else {
+  typedCatalogSource(db => {
     for (const logicalPath of REGION_CONTENT_PATHS) {
       const district = readRegionContentDocument(db, { logicalPath, predecessor: true })
       for (const region of district.regions) regionContentById.set(region.region_id, region.content)
     }
-})
+  })
+}
 if (regionContentById.size !== 427) throw new Error(`E_REGION_CONTENT_COVERAGE:${regionContentById.size}`)
 const predecessorRegionContentById = regionContentById
 regionContentById = projectCiaFacilityRegions(regionContentById, ciaFacilityProjection.correction)

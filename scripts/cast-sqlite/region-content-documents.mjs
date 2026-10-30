@@ -190,3 +190,36 @@ export function readRegionContentDocument(db, { logicalPath, predecessor = false
     fail(error.message);
   }
 }
+
+
+/** Async PostgreSQL twin of readRegionContentDocument: preloads the same
+ * typed rows per logical path from wiki.* (schema-qualified), then runs the
+ * unchanged synchronous reconstruction — identical receipts/order/keys/null
+ * validation. The predecessor flag selects the same table set. */
+export async function readRegionContentDocumentAsync(tx, { logicalPath, predecessor = false } = {}) {
+  if (!REGION_CONTENT_PATHS.includes(logicalPath)) fail('known logical path required');
+  const load = async (table) => (await tx.all(
+    'SELECT * FROM wiki.' + table + ' WHERE logical_path = ?', [logicalPath])).map(r => ({ ...r }));
+  const receipts = await load('region_content_import');
+  const receipt = receipts[0];
+  if (receipts.length !== 1 || !receipt.actor.trim() || !receipt.reason.trim()) fail('receipt');
+  // Table set comes from the same domain registry the sync reader uses,
+  // plus the shared receipt/key tables it queries directly.
+  const tableNames = [...new Set([...Object.values(domains).map(d => d.table), 'region_content_key', 'region_content_import'])];
+  const data = {};
+  for (const table of tableNames) data[table] = await load(table);
+  // The sync reader queries by logical_path per domain table listed in
+  // `domains`; serve those through a prepare-compatible sheet so the
+  // unchanged reconstruction sees identical row sets.
+  const byTable = new Map(Object.entries(data));
+  const sheet = { prepare(sql) {
+    const table = /FROM\s+([a-z_]+)/i.exec(sql)?.[1];
+    const wantsPath = sql.includes('logical_path=?');
+    return { all: (...params) => {
+      const rows = byTable.get(table) ?? [];
+      return wantsPath && params.length === 1 ? rows.filter(r => r.logical_path === params[0]).map(r => ({ ...r })) : rows.map(r => ({ ...r }));
+    } };
+  } };
+  // Reuse the exact sync reconstruction (it re-reads each table via the sheet).
+  return readRegionContentDocument(sheet, { logicalPath, predecessor });
+}
