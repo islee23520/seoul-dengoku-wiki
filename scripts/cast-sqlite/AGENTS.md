@@ -1,7 +1,7 @@
 # 인물 SQLite 작업 지침
 
 ## OVERVIEW
-공개 SQLite 저작 정본과 typed document reader·편집·외부 export를 다룬다. 삭제된 JSON에서 정본을 재구축하지 않는다.
+PostgreSQL 저작 정본의 typed document reader·편집과 SQLite 이관 참조본의 검증·외부 export를 다룬다. 삭제된 JSON에서 정본을 재구축하지 않는다.
 
 ## WHERE TO LOOK
 | 작업 | 위치 | 계약 |
@@ -30,7 +30,7 @@
 ## COMMANDS
 저장소 루트에서 실행하며 옵션 예시는 README를 따른다.
 ```bash
-npm run cast:build -- --output /tmp/wiki-cast-new.sqlite
+npm run cast:build -- --db data/canonical/wiki-cast.sqlite --output /tmp/wiki-cast-new.sqlite
 npm run cast:query -- --db data/canonical/wiki-cast.sqlite person --id K1022
 npm run cast:verify -- --db data/canonical/wiki-cast.sqlite
 ```
