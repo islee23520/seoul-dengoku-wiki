@@ -19,14 +19,12 @@ export function readSourceArchive(logicalPath, expectedSha256, dbPath = process.
 /** Async PostgreSQL twin of readSourceArchive: same exact-path lookup over
  * wiki.source_file (raw_bytes arrives as bytea → Buffer), same stored
  * sha256 verification against recomputed bytes, same optional expectedSha256
- * pin. A missing row carries missingSource:true so callers can distinguish
- * absence from pin/integrity failures; caller owns the read-only transaction. */
+ * pin. Caller owns the read-only transaction. */
 export async function readSourceArchiveAsync(tx, logicalPath, expectedSha256) {
  if (!tx || typeof tx.all !== 'function') throw new Error(`E_SOURCE_ARCHIVE:${logicalPath}`)
  const rows = await tx.all('SELECT raw_bytes, sha256 FROM wiki.source_file WHERE logical_path = ?', [logicalPath])
  const source = rows[0]
- if (!source) throw Object.assign(new Error(`E_SOURCE_ARCHIVE:${logicalPath}`), { missingSource: true })
- if (expectedSha256 !== undefined && source.sha256 !== expectedSha256) throw new Error(`E_SOURCE_ARCHIVE:${logicalPath}`)
+ if (!source || (expectedSha256 !== undefined && source.sha256 !== expectedSha256)) throw new Error(`E_SOURCE_ARCHIVE:${logicalPath}`)
  const bytes = Buffer.from(source.raw_bytes)
  if (createHash('sha256').update(bytes).digest('hex') !== source.sha256)
   throw new Error(`E_SOURCE_ARCHIVE:${logicalPath}`)
