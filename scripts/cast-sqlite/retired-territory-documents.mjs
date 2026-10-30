@@ -203,3 +203,49 @@ export function readRetiredTerritoryDocuments(db, options = {}) {
     fail(error.message);
   }
 }
+
+/** PostgreSQL twin: materialize the exact SELECTs, then reuse every shell and coverage check. */
+export async function readRetiredTerritoryDocumentsAsync(tx, options = {}) {
+ try {
+  if (!tx || typeof tx.all !== 'function') fail('input');
+  const preloaded = new Map();
+  const load = async (sql, params = []) => {
+   const result = await tx.all(sql.replace(/\bFROM\s+(retired_territory_documents_[a-z_]+)/gu, 'FROM wiki.$1'), params);
+   preloaded.set(sql + JSON.stringify(params), result);
+   return result;
+  };
+  const { logicalPath } = options;
+  const imports = await load('SELECT * FROM retired_territory_documents_import ORDER BY logical_path');
+  let path = logicalPath;
+  if (path === undefined) {
+   if (Object.hasOwn(options, 'logicalPath') || imports.length !== 1) fail('single document required');
+   path = imports[0].logical_path;
+  }
+  if (!PATHS.includes(path)) fail('unknown source');
+  await load('SELECT count(*) AS n FROM retired_territory_documents_import');
+  await load('SELECT logical_path FROM retired_territory_documents_control');
+  await load('SELECT logical_path FROM retired_territory_documents_island');
+  await load('SELECT count(*) AS n FROM retired_territory_documents_key');
+  await load('SELECT object_path, ordinal, key, is_null FROM retired_territory_documents_key WHERE logical_path=? ORDER BY ordinal', [path]);
+  if (path === CONTROL) {
+   await load('SELECT schema FROM retired_territory_documents_control WHERE logical_path=?', [path]);
+  } else {
+   await load('SELECT schema, geometry_source, geometry_source_sha256 FROM retired_territory_documents_island WHERE logical_path=?', [path]);
+  }
+  const sheet = {
+   prepare(sql) {
+    return {
+     all: (...params) => {
+      const key = sql + JSON.stringify(params);
+      if (!preloaded.has(key)) fail(`unmaterialized statement ${sql}`);
+      return preloaded.get(key);
+     }
+    };
+   }
+  };
+  return readRetiredTerritoryDocuments(sheet, options);
+ } catch (error) {
+  if (error.code === 'E_RETIRED_TERRITORY_DOCUMENTS') throw error;
+  fail(error.message);
+ }
+}

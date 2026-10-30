@@ -51,7 +51,7 @@ export function readLandmarkRoleDocument(db) {
     const receipts = select('SELECT singleton, source_sha256, document_sha256, actor, reason FROM landmark_role_document_import').all();
     const receipt = receipts[0];
     if (receipts.length !== 1 || receipt.singleton !== 1
-     
+
       || typeof receipt.actor !== 'string' || !receipt.actor.trim()
       || typeof receipt.reason !== 'string' || !receipt.reason.trim()) fail('source pin/receipt');
 
@@ -91,6 +91,32 @@ export function readLandmarkRoleDocument(db) {
     if (keys.size) fail('unconsumed key rows');
     validate(document);
     return document;
+  } catch (error) {
+    if (error.code === 'E_LANDMARK_ROLE_DOCUMENT') throw error;
+    fail(error.message);
+  }
+}
+
+/** PostgreSQL twin: materialize typed rows, then reuse every synchronous validation. */
+export async function readLandmarkRoleDocumentAsync(tx) {
+  try {
+    const statements = [
+      'SELECT singleton, source_sha256, document_sha256, actor, reason FROM landmark_role_document_import',
+      'SELECT object_path, ordinal, key FROM landmark_role_document_key ORDER BY object_path, ordinal',
+      'SELECT singleton, schema, epoch, decision_source, geometry_attribution FROM landmark_role_document',
+      'SELECT ordinal, id, name, address, region_id, holder_id, role, detail, fortification, lat, lon, coordinate_source, connection_station_id FROM landmark_role_document_site ORDER BY ordinal',
+    ];
+    const preloaded = new Map();
+    for (const sql of statements) {
+      const result = await tx.all(sql.replace(/\bFROM (landmark_role_document\w*)/u, 'FROM wiki.$1'), []);
+      preloaded.set(sql, result.map(row => ({ ...row })));
+    }
+    return readLandmarkRoleDocument({
+      prepare(sql) {
+        if (!preloaded.has(sql)) fail('async statement unmaterialized: ' + sql);
+        return { all: () => preloaded.get(sql) };
+      }
+    });
   } catch (error) {
     if (error.code === 'E_LANDMARK_ROLE_DOCUMENT') throw error;
     fail(error.message);
