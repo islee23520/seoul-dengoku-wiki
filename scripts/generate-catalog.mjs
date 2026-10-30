@@ -149,6 +149,13 @@ const typedCatalogSource = (read) => {
 // has an *Async twin: runs inside one worker-owned read-only transaction that
 // imports the release-exported snapshot. Synchronous SQLite callers are
 // unchanged; PG wiring migrates call sites to this helper family by family.
+/** PG-mode hard stop for typed reads that have no async twin yet.
+ * Keeps a PG generation run from silently mixing SQLite into these paths. */
+const typedSourcePgUnconverted = (what) => {
+  if (process.env.WIKI_DOCUMENT_PG) {
+    throw Object.assign(new Error(`E_CATALOG_TYPED_SOURCE_PG_UNCONVERTED: ${what} has no async PostgreSQL path yet`), { code: 'E_CATALOG_TYPED_SOURCE_PG_UNCONVERTED' })
+  }
+}
 const typedCatalogSourceAsync = async (readAsync) => {
   if (!process.env.WIKI_DOCUMENT_PG) {
     throw Object.assign(new Error('E_CATALOG_ASYNC_PG_ONLY: typedCatalogSourceAsync requires WIKI_DOCUMENT_PG'), { code: 'E_CATALOG_ASYNC_PG_ONLY' })
@@ -413,6 +420,7 @@ const activePersonIds = (() => {
 })()
 const activePersonRoutes = activePersonIds ? new Set([...activePersonIds]
   .map(id => atlasPeople.routes.get(id)?.detailRoute).filter(Boolean)) : undefined
+typedSourcePgUnconverted('retirement prose roster read')
 const currentProseChanges = typedCatalogSource(db => db.prepare("SELECT 1 FROM sqlite_schema WHERE name='retirement_prose'").get()
   ? readRetirementProse(db) : [])
 for (const domain of domains) {
@@ -524,6 +532,11 @@ const populationSource = process.env.WIKI_DOCUMENT_PG
   ? await typedCatalogSourceAsync(tx => readPopulationDocumentAsync(tx))
   : typedCatalogSource(db => readPopulationDocument(db))
 const densityByDong = validatedDensities(regionAtlas.regions, populationSource)
+// The world-graph seam calls typedCatalogSource synchronously when mapInput
+// is null; PG runs must not reach it until the seam gains an async contract.
+if (process.env.WIKI_DOCUMENT_PG && mapInput === null) {
+  throw Object.assign(new Error('E_CATALOG_WORLD_GRAPH_PG_UNCONVERTED: catalogWorldGraph legacy typed seam has no async PostgreSQL path'), { code: 'E_CATALOG_WORLD_GRAPH_PG_UNCONVERTED' })
+}
 const seoulGraph = catalogWorldGraph(mapInput, typedCatalogSource)
 const officialLineData = catalogMetadata[OFFICIAL_SEOUL_LINES_PATH]
 const regularLineSource = process.env.WIKI_DOCUMENT_PG
@@ -568,6 +581,7 @@ proj4.defs('EPSG:5179', '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=10000
 
 const ciaFacilityProjection = await loadCiaFacilityProjection(repoRoot, sourceRead)
 let regionContentById = new Map()
+typedSourcePgUnconverted('region content document loop')
 typedCatalogSource(db => {
     for (const logicalPath of REGION_CONTENT_PATHS) {
       const district = readRegionContentDocument(db, { logicalPath, predecessor: true })
@@ -917,6 +931,7 @@ underground.paths = underground.paths.flatMap(path => {
 })
 await writeFile(resolve(publicRoot, 'underground-detail.json'), `${JSON.stringify(underground)}\n`)
 
+typedSourcePgUnconverted('historical rights bytes read')
 const historicalRightsBytes = typedCatalogSource(db => Object.fromEntries(Object.entries({
   approval: 'scripts/approved-seoul-rights-transition.json',
   existing: 'scripts/historical-inputs/personal-holdings.json',
