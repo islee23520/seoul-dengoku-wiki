@@ -1050,3 +1050,27 @@ function reconstruct(db,input) {
 /** SELECT-only, no filesystem or JSON parser; verifies stored rows against the stored receipt digests. */
 export function readRegionAtlasDocument(db,input={}) { return reconstruct(db,input).source; }
 export function readRegionAtlasData(db,input={}) { return reconstruct(db,input).data; }
+
+/** Async PostgreSQL twin: materializes the same ordered typed rows from wiki.*
+ * in the caller's transaction, then reuses every reconstruction and digest check. */
+export async function readRegionAtlasDataAsync(tx, input = {}) {
+ if (input !== undefined && (!object(input) || Object.keys(input).length)) fail('explicit exact options');
+ const preloaded = new Map();
+ const load = async (table, order = '') => {
+  const sql = 'SELECT * FROM ' + table + order;
+  preloaded.set(sql, await tx.all('SELECT * FROM wiki.' + table + order));
+ };
+ await load(P + 'receipt');
+ for (const name of tableNames()) await load(P + name, ' ORDER BY parent_id,ordinal');
+ const sheet = {
+  prepare(sql) {
+   return {
+    all() {
+     if (!preloaded.has(sql)) fail('async statement unmaterialized: ' + sql);
+     return preloaded.get(sql);
+    }
+   };
+  }
+ };
+ return readRegionAtlasData(sheet, input);
+}

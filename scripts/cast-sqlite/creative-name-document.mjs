@@ -265,3 +265,29 @@ export function readCreativeNameDocument(db) {
   shape(document);
   return document;
 }
+
+/** PostgreSQL twin: materialize typed rows, then reuse every synchronous validation. */
+export async function readCreativeNameDocumentAsync(tx) {
+  const tables = [
+    ['creative_name_document_root', 'document_id, source_sha256, document_sha256, schema, decided_on, scope, actor, reason, receipt_sha256', ''],
+    ['creative_name_document_precedence', 'ordinal, document_id, value', 'ordinal'],
+    ['creative_name_document_preservation', 'ordinal, document_id, value', 'ordinal'],
+    ['creative_name_document_reference', 'ordinal, document_id, label, url_present, url, path_present, path', 'ordinal'],
+    ['creative_name_document_replacement', 'ordinal, document_id, kind, id, old, new, anchor', 'ordinal'],
+    ['creative_name_document_pattern', 'ordinal, document_id, kind, id_present, id, old_present, old, pattern, new, anchor', 'ordinal'],
+    ['creative_name_document_retained', 'ordinal, document_id, kind, id, name, anchor', 'ordinal'],
+    ['creative_name_document_key', 'object_path, ordinal, key', 'object_path, ordinal'],
+  ];
+  const preloaded = new Map();
+  for (const [table, columns, order] of tables) {
+    const suffix = order ? ` ORDER BY ${order}` : '';
+    const result = await tx.all(`SELECT ${columns} FROM wiki.${table}${suffix}`, []);
+    preloaded.set(`SELECT * FROM ${table}${suffix}`, result.map(row => ({ ...row })));
+  }
+  return readCreativeNameDocument({
+    prepare(sql) {
+      if (!preloaded.has(sql)) fail('async statement unmaterialized: ' + sql);
+      return { all: () => preloaded.get(sql) };
+    }
+  });
+}

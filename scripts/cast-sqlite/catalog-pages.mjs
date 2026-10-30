@@ -12,16 +12,20 @@ const canonical = value => Array.isArray(value) ? `[${value.map(canonical).join(
 /** PostgreSQL twin. tx.all returns rows directly; preserve the SQLite admission contract. */
 export async function readCatalogGlossaryAsync(tx) {
  const query = async (sql, ...bindings) => {
-  const rows = await tx.all(sql, bindings);
+  // glossary-store async helpers pass one pre-built params array; accept both
+  // a single array argument and spread scalars without double-wrapping.
+  const params = bindings.length === 1 && Array.isArray(bindings[0]) ? bindings[0] : bindings;
+  const rows = await tx.all(sql, params);
   return { rows };
  };
- const routes = await query(`SELECT json_extract(derivation_json,'$.version') AS version,
-    json_extract(derivation_json,'$.review') AS review,
-    json_extract(derivation_json,'$.materialized') AS materialized,
-    json_array_length(derivation_json,'$.sourceBindings') AS binding_count,
-    json_extract(derivation_json,'$.sourceBindings[0].sourcePath') AS source_path,
-    json_extract(derivation_json,'$.sourceBindings[0].sha256') AS source_sha256
-    FROM wiki.article_route WHERE derivation='computed-glossary'`);
+// PostgreSQL jsonb operators replace SQLite json_extract/json_array_length.
+ const routes = await query(`SELECT (derivation_json::jsonb ->> 'version')::int AS version,
+   derivation_json::jsonb ->> 'review' AS review,
+   CASE WHEN derivation_json::jsonb ->> 'materialized' IN ('true','1') THEN 1 ELSE 0 END AS materialized,
+   jsonb_array_length(derivation_json::jsonb -> 'sourceBindings') AS binding_count,
+   derivation_json::jsonb #>> '{sourceBindings,0,sourcePath}' AS source_path,
+   derivation_json::jsonb #>> '{sourceBindings,0,sha256}' AS source_sha256
+   FROM wiki.article_route WHERE derivation='computed-glossary'`);
  if (routes.rows.length !== 1) throw new Error('E_GLOSSARY_DB_ADMISSION');
  const metadata = routes.rows[0];
  const archive = (await query('SELECT sha256 FROM wiki.glossary_archive WHERE singleton=1')).rows[0];

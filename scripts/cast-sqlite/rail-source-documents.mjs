@@ -579,3 +579,30 @@ export function readRailSourceDocument(db, { logicalPath } = {}) {
     return result;
   } catch (error) { if (error.code === 'E_RAIL_SOURCE_DOCUMENT') throw error; fail(error.message); }
 }
+
+/** PostgreSQL twin: materialize the same path-scoped SELECTs for reconstruction. */
+export async function readRailSourceDocumentAsync(tx, { logicalPath } = {}) {
+  try {
+    if (!Object.hasOwn(roots, logicalPath)) fail('known logical path required');
+    const preloaded = new Map();
+    const load = async sql => {
+      const rows = await tx.all(sql.replace(/\bFROM\s+(rail_source_[a-z_]+)/gu, 'FROM wiki.$1'), [logicalPath]);
+      preloaded.set(sql, rows);
+    };
+    await load('SELECT * FROM rail_source_import WHERE logical_path=?');
+    for (const name of [...Object.keys(domains).map(table), 'rail_source_key']) {
+      await load('SELECT * FROM ' + name + ' WHERE logical_path=? ORDER BY object_path,ordinal');
+    }
+    const sheet = {
+      prepare(sql) {
+        return {
+          all: (...params) => {
+            if (!preloaded.has(sql) || params.length !== 1 || params[0] !== logicalPath) fail('unmaterialized statement');
+            return preloaded.get(sql);
+          }
+        };
+      }
+    };
+    return readRailSourceDocument(sheet, { logicalPath });
+  } catch (error) { if (error.code === 'E_RAIL_SOURCE_DOCUMENT') throw error; fail(error.message); }
+}
