@@ -40,7 +40,7 @@ import { loadStationCatalogGeography, loadOutsideStationIds } from './station-ca
 import { openReadOnly } from './cast-sqlite/db.mjs'
 import { readBoundaryGeometries } from './cast-sqlite/boundary-geometries.mjs'
 import { readPhysicalRail } from './cast-sqlite/physical-rail.mjs'
-import { readCatalogPages, readCatalogGlossary } from './cast-sqlite/catalog-pages.mjs'
+import { readCatalogPages, readCatalogPagesAsync, readCatalogGlossary, readCatalogGlossaryAsync } from './cast-sqlite/catalog-pages.mjs'
 import { databaseLoreReader, loadDatabasePersonProductionInputs, loadMigratedPersonInputs } from './cast-sqlite/person-detail-inputs.mjs'
 import { loadCharacterProfiles } from './validate-character-profiles.mjs'
 import { authenticatePersonalTierProvenance } from './personal-tier-provenance.mjs'
@@ -294,15 +294,20 @@ await materializeWorldAtlas({
   peopleContext: atlasPeople,
   dbPath: articleDatabasePath,
 })
-const jsonPages = typedCatalogSource(db => readCatalogPages(db)
-  .map(page => ({ ...page, path: resolve(projectRoot, page.path) })))
+const jsonPages = process.env.WIKI_DOCUMENT_PG
+  ? (await typedCatalogSourceAsync(tx => readCatalogPagesAsync(tx)))
+      .map(page => ({ ...page, path: resolve(projectRoot, page.path) }))
+  : typedCatalogSource(db => readCatalogPages(db)
+      .map(page => ({ ...page, path: resolve(projectRoot, page.path) })))
 const publishedRoutes = new Set(publishedDocuments(await approvedDocuments(loreRoot, { categoryRegistry, dbPath: articleDatabasePath })).map(({ route }) => route))
 const categoryErrors = publishedRegistrationErrors(jsonPages.map((page) => ({ ...page, name: basename(page.path) })), publishedRoutes, categoryRegistry)
 if (categoryErrors.length) throw new Error(categoryErrors.join('\n'))
 const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
 const pagesBySlug = new Map(jsonPages.map((page) => [page.slug, page]))
 const glossaryPath = resolve(loreRoot, 'glossary.json')
-const glossaryEntries = typedCatalogSource(db => readCatalogGlossary(db))
+const glossaryEntries = process.env.WIKI_DOCUMENT_PG
+  ? await typedCatalogSourceAsync(tx => readCatalogGlossaryAsync(tx))
+  : typedCatalogSource(db => readCatalogGlossary(db))
 const glossaryPage = { path: glossaryPath, slug: 'Glossary', value: glossaryDocument(glossaryEntries) }
 // Approved public nomenclature for a fictional organization grounds the same state leader.
 const organizationAliases = await loadApprovedOrganizationAliases(projectRoot, sourceRead)
