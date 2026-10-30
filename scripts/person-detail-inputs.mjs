@@ -10,9 +10,9 @@ import { validateHoldingFacility } from './holding-facility.mjs'
 import { projectOutsideOccupation } from './outside-occupation.mjs'
 import { composeConsolidationTransition, projectOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
 import { openReadOnly } from './cast-sqlite/db.mjs'
-import { readCurrentDataSource } from './cast-sqlite/data-source-editor.mjs'
+import { readCurrentDataSource, readCurrentDataSourceAsync } from './cast-sqlite/data-source-editor.mjs'
 import { readCanonicalDocument } from './cast-sqlite/canonical-document.mjs'
-import { readSourceArchive } from './cast-sqlite/source-archive.mjs'
+import { readSourceArchive, readSourceArchiveAsync } from './cast-sqlite/source-archive.mjs'
 import { REGION_CONTENT_PATHS } from './cast-sqlite/region-content-documents.mjs'
 import { isApprovedCurrentOfficeSource } from './cast-sqlite/office-appointment-inputs.mjs'
 
@@ -77,38 +77,38 @@ const leaderForNames = (markdown, names, currentActor) => {
 }
 
 export function projectPersonStateInputs(renderedBySlug, pagesBySlug, { organizationAliases = new Map() } = {}) {
-const stateSource = renderedBySlug.get('Sixteen-States')
-const officesSource = renderedBySlug.get('Offices-and-Ranks')
-if (!stateSource || !officesSource) throw new Error('E_STATE_OR_OFFICE_PAGE_MISSING')
-if (!pagesBySlug.get('Sixteen-States')?.value.source?.refs?.includes('lore/factions/Sixteen-States.md')) throw new Error('E_STATE_CANON_PROVENANCE')
-const officeTable = officesSource.match(/\| 국가 \| 티어1 \|[\s\S]*?(?=\n## )/)?.[0] ?? ''
-const stateRows = parseStateRows(stateSource).map((row) => ({ ...row, names: stateNames(row.name, organizationAliases) }))
-const affiliations = currentAffiliations(pagesBySlug.get('Sixteen-States').value.data.currentAffiliation, stateRows)
-const coreCharacters = renderedBySlug.get('Core-Characters')
-const stateIdByName = new Map(stateRows.map((row) => [row.name, row.id]))
-const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
-  .filter((match) => match[1].trim() !== '국가')
-  .map((match) => [stateIdByName.get(match[1].trim()) ?? match[1].trim(), match.slice(2).map((cell) => cell.split('·').map((rank) => rank.trim()))]))
-if (stateRows.some(row => !tiersByState.has(row.id))) throw new Error(`E_OFFICE_TIER_COVERAGE:${tiersByState.size}`)
-const stateCatalog = stateRows.map((row) => ({
-  slug: row.id.toLowerCase(),
-  id: row.id,
-  name: affiliations.get(row.id).currentName,
-  currentHegemon: affiliations.get(row.id).currentHegemon,
-  currentBase: affiliations.get(row.id).currentBase,
-  currentExclusiveDistricts: affiliations.get(row.id).currentExclusiveDistricts,
-  government: row.government,
-  power: row.power,
-  cause: row.cause,
-  ruler: row.id === 'S04'
-    ? (() => { const name = coreCharacters.match(/2126년 당회장 자리는 ([가-힣]{2,4})가 앉았다\./u)?.[1]; if (!name) throw new Error('E_S04_OPENING_RULER'); return name })()
-    : row.government.match(/(?:^|[,，]\s*)회장 ([가-힣]{2,4})(?:$|[,，\s])/u)?.[1] ?? leaderForNames(coreCharacters, row.names,
-      row.government.match(/현재 아바타 ([가-힣]{2,4})(?:$|[,，\s])/u)?.[1]),
-  capital: row.capital,
-  capitalName: row.capital,
-}))
-const stateNameById = new Map(stateCatalog.map(state => [state.slug.toUpperCase(), state.name]))
-return { stateSource, stateRows, stateCatalog, stateNameById, tiersByState, affiliations, stateIdByName }
+  const stateSource = renderedBySlug.get('Sixteen-States')
+  const officesSource = renderedBySlug.get('Offices-and-Ranks')
+  if (!stateSource || !officesSource) throw new Error('E_STATE_OR_OFFICE_PAGE_MISSING')
+  if (!pagesBySlug.get('Sixteen-States')?.value.source?.refs?.includes('lore/factions/Sixteen-States.md')) throw new Error('E_STATE_CANON_PROVENANCE')
+  const officeTable = officesSource.match(/\| 국가 \| 티어1 \|[\s\S]*?(?=\n## )/)?.[0] ?? ''
+  const stateRows = parseStateRows(stateSource).map((row) => ({ ...row, names: stateNames(row.name, organizationAliases) }))
+  const affiliations = currentAffiliations(pagesBySlug.get('Sixteen-States').value.data.currentAffiliation, stateRows)
+  const coreCharacters = renderedBySlug.get('Core-Characters')
+  const stateIdByName = new Map(stateRows.map((row) => [row.name, row.id]))
+  const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
+    .filter((match) => match[1].trim() !== '국가')
+    .map((match) => [stateIdByName.get(match[1].trim()) ?? match[1].trim(), match.slice(2).map((cell) => cell.split('·').map((rank) => rank.trim()))]))
+  if (stateRows.some(row => !tiersByState.has(row.id))) throw new Error(`E_OFFICE_TIER_COVERAGE:${tiersByState.size}`)
+  const stateCatalog = stateRows.map((row) => ({
+    slug: row.id.toLowerCase(),
+    id: row.id,
+    name: affiliations.get(row.id).currentName,
+    currentHegemon: affiliations.get(row.id).currentHegemon,
+    currentBase: affiliations.get(row.id).currentBase,
+    currentExclusiveDistricts: affiliations.get(row.id).currentExclusiveDistricts,
+    government: row.government,
+    power: row.power,
+    cause: row.cause,
+    ruler: row.id === 'S04'
+      ? (() => { const name = coreCharacters.match(/2126년 당회장 자리는 ([가-힣]{2,4})가 앉았다\./u)?.[1]; if (!name) throw new Error('E_S04_OPENING_RULER'); return name })()
+      : row.government.match(/(?:^|[,，]\s*)회장 ([가-힣]{2,4})(?:$|[,，\s])/u)?.[1] ?? leaderForNames(coreCharacters, row.names,
+        row.government.match(/현재 아바타 ([가-힣]{2,4})(?:$|[,，\s])/u)?.[1]),
+    capital: row.capital,
+    capitalName: row.capital,
+  }))
+  const stateNameById = new Map(stateCatalog.map(state => [state.slug.toUpperCase(), state.name]))
+  return { stateSource, stateRows, stateCatalog, stateNameById, tiersByState, affiliations, stateIdByName }
 }
 
 export function authenticateNonowningRights(bytes) {
@@ -132,7 +132,7 @@ export async function projectCatalogOutsideOccupation(control, geometry, islands
   })
 }
 
-export async function projectCatalogHoldings(args, context, approvalBytes) {
+export async function projectCatalogHoldings(args, context, approvalBytes, { tx } = {}) {
   const approval = authenticateNonowningRights(approvalBytes ?? await readFile(new URL('./approved-daejeon-nonowning-rights.json', import.meta.url)))
   if (args.nonowningRights !== undefined) throw new Error('E_CATALOG_NONOWNING_ARGUMENT')
   const { existing: personalHoldings, allocation } = args
@@ -172,7 +172,7 @@ export async function projectCatalogHoldings(args, context, approvalBytes) {
       if (!landmark || landmark.holderId !== holding.stateId || holding.landmarkRef.sourcePath !== 'lore/places/landmark-roles.json' || holding.stationRef || holding.facilityRef || holding.adminRefs.length) throw new Error('E_HOLDING_LANDMARK:' + holding.id)
     }
     if (holding.facilityRef) {
-      await validateHoldingFacility(holding, stationInteriors, repoRoot)
+      await validateHoldingFacility(holding, stationInteriors, repoRoot, { tx })
       const ref = holding.facilityRef
       const station = seoulGraph.stations.find(station => station.id === (ref.stationId ?? ref.stationName))
       if (!station || station.nameKo !== ref.stationName || station.district !== ref.stationIdentity.district || Number(station.lat.toFixed(5)) !== ref.stationIdentity.lat || Number(station.lon.toFixed(5)) !== ref.stationIdentity.lon) throw new Error('E_HOLDING_STATION_ID:' + holding.id)
@@ -202,10 +202,12 @@ export async function loadApprovedRightsHistory(sourceBytes) {
   const parsed = Object.fromEntries(Object.entries(bytes).map(([key, value]) => [key, JSON.parse(value.toString())]))
   const geometry = parsed.geometry
   const control = projectOutsideOccupation(parsed.control, geometry, parsed.islands)
-  return { transition: parsed.approval, historical: {
-    existing: parsed.existing, allocation: parsed.allocation, control, scale: parsed.scale,
-    outside: { ...geometry, islands: control.assignments.filter(row => row.components).map(row => ({ unitId: row.unitId, components: row.components })) },
-  } }
+  return {
+    transition: parsed.approval, historical: {
+      existing: parsed.existing, allocation: parsed.allocation, control, scale: parsed.scale,
+      outside: { ...geometry, islands: control.assignments.filter(row => row.components).map(row => ({ unitId: row.unitId, components: row.components })) },
+    }
+  }
 }
 
 // Production current rights must pass both full history and exact disposition.
@@ -221,6 +223,15 @@ export function historicalRightsPeopleContext(bytes = {
   if (people.length !== registry.persons.length || people.some(person => !person.id)
     || new Set(people.map(person => person.id)).size !== people.length) throw new Error('E_HISTORICAL_PEOPLE_IDENTITY')
   return { people, affiliation: JSON.parse(Buffer.from(bytes.states).toString()).data.currentAffiliation }
+}
+
+export async function historicalRightsPeopleContextAsync(tx) {
+  const [values, registry, states] = await Promise.all([
+    readSourceArchiveAsync(tx, 'lore/name-pools/values-cast.json'),
+    readSourceArchiveAsync(tx, 'lore/name-pools/person-id-registry.json'),
+    readSourceArchiveAsync(tx, 'lore/factions/Sixteen-States.json'),
+  ])
+  return historicalRightsPeopleContext({ values, registry, states })
 }
 
 export async function projectCatalogCurrentHoldings(args, context, sourceBytes) {
@@ -244,9 +255,35 @@ export async function projectCatalogCurrentHoldings(args, context, sourceBytes) 
         readSourceArchive('scripts/approved-seoul-faction-consolidation-20261022.json'))
     }
   } finally { db.close() }
-  return projectCatalogHoldings({ ...args, rightsTransition: transition,
+  return projectCatalogHoldings({
+    ...args, rightsTransition: transition,
     historicalRights, ...(consolidationTransition ? { consolidationTransition } : {}),
   }, context, sourceBytes?.nonowning)
+}
+
+export async function projectCatalogCurrentHoldingsAsync(tx, args, context, sourceBytes) {
+  if (args.rightsTransition !== undefined || args.historicalRights !== undefined) throw new Error('E_CATALOG_RIGHTS_ARGUMENT')
+  if (args.scale !== undefined || args.geographicScale?.schema !== 'admin-territorial-scale.v2') throw new Error('E_CATALOG_GEOGRAPHIC_SCALE')
+  if (!sourceBytes || !(typeof sourceBytes.nonowning === 'string' || Buffer.isBuffer(sourceBytes.nonowning))) throw new Error('E_CATALOG_NONOWNING_BYTES')
+  const { transition, historical } = await loadApprovedRightsHistory(sourceBytes)
+  const { geographicScale, ...historicalContext } = args
+  const historicalPeople = await historicalRightsPeopleContextAsync(tx)
+  const historicalRights = { ...historicalContext, ...historical, ...historicalPeople, nonowningRights: undefined }
+  let consolidationTransition
+  if (await tx.get('SELECT 1 FROM wiki.data_source_head WHERE source_path=?', ['lore/relations/opening-feudal-allocation.json'])) {
+    const same = (a, b) => JSON.stringify(a) === JSON.stringify(b)
+    const existing = await readCurrentDataSourceAsync(tx, 'lore/relations/personal-holdings.json')
+    const allocation = await readCurrentDataSourceAsync(tx, 'lore/relations/opening-feudal-allocation.json')
+    const values = await readCurrentDataSourceAsync(tx, 'lore/name-pools/values-cast.json')
+    if (!same(args.existing, existing) || !same(args.allocation, allocation)
+      || !same(args.people.map(({ name, state }) => ({ name, state })), values.people.map(({ name, state }) => ({ name, state })))) throw new Error('E_CONSOLIDATION_SOURCE')
+    consolidationTransition = composeConsolidationTransition(args,
+      await readSourceArchiveAsync(tx, 'scripts/approved-seoul-faction-consolidation-20261022.json'))
+  }
+  return projectCatalogHoldings({
+    ...args, rightsTransition: transition,
+    historicalRights, ...(consolidationTransition ? { consolidationTransition } : {}),
+  }, context, sourceBytes.nonowning, { tx })
 }
 
 export function currentOfficeAppointments(source, issuedById) {
@@ -275,8 +312,10 @@ export function currentOfficeAppointments(source, issuedById) {
       || current.evidence.some(ref => !['approved-retained-office', 'existing-right', 'existing-political-office', 'existing-nonowning-right', 'existing-function', 'retired-office', 'current-seoul-work-location', ...(approvedCurrent ? ['card-affiliation'] : [])].includes(ref.kind)
         || typeof ref.path !== 'string' || !ref.path.endsWith('.json') || !ref.jsonPointer?.startsWith('/')))
       throw new Error('E_OPENING_OFFICE:' + row.personId)
-    appointments.set(row.personId, { personId: row.personId, stateId: row.stateId,
-      position: current.position?.ko ?? '', rank: current.rank?.ko ?? '', commonTier: current.commonTier })
+    appointments.set(row.personId, {
+      personId: row.personId, stateId: row.stateId,
+      position: current.position?.ko ?? '', rank: current.rank?.ko ?? '', commonTier: current.commonTier
+    })
   }
   return appointments
 }
@@ -289,9 +328,11 @@ export async function loadPersonDetailSources({ repoRoot } = {}) {
   const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(repoRoot, 'data/canonical/wiki-cast.sqlite'))
   const handles = [db]
   try {
-    return await loadDatabasePersonProductionInputs({ db, repoRoot,
+    return await loadDatabasePersonProductionInputs({
+      db, repoRoot,
       editorialProfileDb: process.env.WIKI_EDITORIAL_PROFILE_DB ?? resolve(directory, 'editorial-profiles.sqlite'),
-      soulAssignmentDb: process.env.WIKI_SOUL_ASSIGNMENT_DB ?? resolve(directory, 'soul-assignments.sqlite') })
+      soulAssignmentDb: process.env.WIKI_SOUL_ASSIGNMENT_DB ?? resolve(directory, 'soul-assignments.sqlite')
+    })
   } finally { for (const handle of handles.reverse()) handle.close() }
 }
 
@@ -300,17 +341,27 @@ export async function produceFromPersonDetailSources(sources, { personalHoldings
   return producePersonDetails({ ...sources, personalHoldings, stateNameById, tiersByState, officeAppointments })
 }
 
-export async function projectPersonHoldingsInputs(sources, { repoRoot, territoryStates, openingTerritories,
+function personHoldingsProjection(sources, { repoRoot, territoryStates, openingTerritories,
   projectedLandmarks, seoulGraph, outsideGeometry, projectedOutsideControl, affiliation, geography, geographicScale, historyBytes }) {
   const { peopleSource, courtDataset, issuedById, originalHoldings, openingAllocation, stationInteriors } = sources
-  return projectCatalogCurrentHoldings({
+  return [{
     allocation: openingAllocation, existing: originalHoldings,
     people: peopleSource.map(person => ({ id: courtDataset.people.find(issued => issued.name === person.name)?.id, name: person.name, state: person.state })),
     seoul: openingTerritories,
     outside: { ...outsideGeometry, islands: projectedOutsideControl.assignments.filter(unit => unit.components).map(unit => ({ unitId: unit.unitId, components: unit.components })) },
     control: projectedOutsideControl, affiliation, geographicScale,
-  }, { issuedById, territoryStates, openingTerritories, projectedLandmarks, stationInteriors,
-    seoulGraph, outsideGeometry, repoRoot, geography }, historyBytes)
+  }, {
+    issuedById, territoryStates, openingTerritories, projectedLandmarks, stationInteriors,
+    seoulGraph, outsideGeometry, repoRoot, geography
+  }, historyBytes]
+}
+
+export async function projectPersonHoldingsInputs(sources, options) {
+  return projectCatalogCurrentHoldings(...personHoldingsProjection(sources, options))
+}
+
+export async function projectPersonHoldingsInputsAsync(tx, sources, options) {
+  return projectCatalogCurrentHoldingsAsync(tx, ...personHoldingsProjection(sources, options))
 }
 
 export async function loadPersonHoldingsContext(sources, { repoRoot, stateRows, stateCatalog }) {
@@ -393,22 +444,28 @@ export async function loadPersonHoldingsContext(sources, { repoRoot, stateRows, 
   const territoryStates = stateCatalog.map(state => ({ id: state.id, ruler: state.ruler, capitalStationId: capitalStationIds.get(state.id) }))
   const projectedLandmarks = (await lore('places/landmark-roles.json')).sites
   const openingTerritories = { regions, stations }
-  const historyPaths = { approval: 'scripts/approved-seoul-rights-transition.json',
+  const historyPaths = {
+    approval: 'scripts/approved-seoul-rights-transition.json',
     existing: 'scripts/historical-inputs/personal-holdings.json',
     allocation: 'scripts/historical-inputs/opening-feudal-allocation.json',
     control: 'scripts/historical-inputs/outside-control-2126.json',
     islands: 'scripts/historical-inputs/outside-island-occupation.json',
     geometry: 'scripts/historical-inputs/outside-admin-units.json',
     scale: 'scripts/historical-inputs/admin-territorial-scale.json',
-    nonowning: 'scripts/approved-daejeon-nonowning-rights.json' }
+    nonowning: 'scripts/approved-daejeon-nonowning-rights.json'
+  }
   const historyBytes = Object.fromEntries(await Promise.all(Object.entries(historyPaths).map(async ([key, path]) => [key, await bytesFor(path)])))
   const outsideGeometry = (await loadApprovedRightsHistory(historyBytes)).historical.outside
-  const retirementPaths = { approval: 'scripts/approved-outside-current-retirement.json',
-    control: historyPaths.control, islands: historyPaths.islands }
+  const retirementPaths = {
+    approval: 'scripts/approved-outside-current-retirement.json',
+    control: historyPaths.control, islands: historyPaths.islands
+  }
   const retirementBytes = Object.fromEntries(await Promise.all(Object.entries(retirementPaths).map(async ([key, path]) => [key, await bytesFor(path)])))
   const projectedOutsideControl = await projectCatalogOutsideOccupation(await lore('regions/outside-control-2126.json'), outsideGeometry, await lore('regions/outside-island-occupation.json'), retirementBytes)
-  const personalHoldings = await projectPersonHoldingsInputs(sources, { repoRoot, territoryStates, openingTerritories,
+  const personalHoldings = await projectPersonHoldingsInputs(sources, {
+    repoRoot, territoryStates, openingTerritories,
     projectedLandmarks, seoulGraph, outsideGeometry, projectedOutsideControl,
-    affiliation: sixteenStatesLore.data.currentAffiliation, geography, geographicScale, historyBytes })
+    affiliation: sixteenStatesLore.data.currentAffiliation, geography, geographicScale, historyBytes
+  })
   return { personalHoldings, stateNameById, geographicScale, snapshotManifest }
 }

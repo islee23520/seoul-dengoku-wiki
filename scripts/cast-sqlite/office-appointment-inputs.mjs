@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
-import { readCurrentDataSource } from './data-source-editor.mjs';
+import { readCurrentDataSource, readCurrentDataSourceAsync } from './data-source-editor.mjs';
 
 const logicalPath = 'lore/relations/opening-office-appointments.json';
 const fail = detail => { throw Object.assign(new Error(`E_OFFICE_APPOINTMENT_INPUT: ${detail}`), { code: 'E_OFFICE_APPOINTMENT_INPUT' }); };
@@ -16,7 +16,10 @@ function domains(db, sourceId) {
 }
 
 function candidate(db, data) {
-  const contracts = db.prepare('SELECT * FROM office_appointment_input_contract').all();
+  return candidateFromRows(data, db.prepare('SELECT * FROM office_appointment_input_contract').all());
+}
+
+function candidateFromRows(data, contracts) {
   if (contracts.length !== 1) fail('contract metadata');
   const c = contracts[0], used = new Set();
   const localized = (row, prefix) => row[`${prefix}_ko`] === null && row[`${prefix}_en`] === null
@@ -33,18 +36,26 @@ function candidate(db, data) {
       used.add(e);
       return { path: e.reference_path, jsonPointer: e.reference_pointer, kind: e.evidence_kind };
     });
-    return { personId: r.person_id, stateId: r.polity_id,
+    return {
+      personId: r.person_id, stateId: r.polity_id,
       history: { personId: h.person_id, stateId: h.polity_id, position: localized(h, 'position'), rank: localized(h, 'rank'), commonTier: h.common_tier, approvalRef: h.approval_ref },
-      current: { status: r.status, position: localized(r, 'position'), rank: localized(r, 'rank'), commonTier: r.common_tier, evidence } };
+      current: { status: r.status, position: localized(r, 'position'), rank: localized(r, 'rank'), commonTier: r.common_tier, evidence }
+    };
   });
   if (data.context_office_history.some(r => !used.has(r)) || data.context_office_evidence.some(r => !used.has(r))) fail('unconsumed typed rows');
-  return { schema: first.source_schema, openingYear: first.opening_year,
-    contract: { history: c.history, current: c.current, commonTier: c.common_tier, rights: c.rights }, appointments };
+  return {
+    schema: first.source_schema, openingYear: first.opening_year,
+    contract: { history: c.history, current: c.current, commonTier: c.common_tier, rights: c.rights }, appointments
+  };
 }
 
 function orderedDocument(db, value) {
+  return orderedDocumentFromRows(value, db.prepare('SELECT * FROM office_appointment_input_key ORDER BY object_path,ordinal').all());
+}
+
+function orderedDocumentFromRows(value, keyRows) {
   const groups = new Map();
-  for (const r of db.prepare('SELECT * FROM office_appointment_input_key ORDER BY object_path,ordinal').all()) {
+  for (const r of keyRows) {
     if (!groups.has(r.object_path)) groups.set(r.object_path, []);
     groups.get(r.object_path).push(r);
   }
@@ -65,7 +76,7 @@ function orderedDocument(db, value) {
 }
 
 // Runtime uses typed SELECTs only; initialization is an explicit separate step.
-export function readOfficeAppointmentInputs(db, {} = {}) {
+export function readOfficeAppointmentInputs(db, { } = {}) {
   try {
     const receipts = db.prepare('SELECT * FROM office_appointment_input_import').all();
     if (receipts.length !== 1) fail('source receipt');
@@ -80,6 +91,31 @@ export function readOfficeAppointmentInputs(db, {} = {}) {
     }
     if (digest(data) !== m.domain_sha256) fail('typed domain digest');
     const result = orderedDocument(db, candidate(db, data));
+    if (digest(result) !== m.document_sha256) fail('document digest');
+    return result;
+  } catch (error) { if (error.code === 'E_OFFICE_APPOINTMENT_INPUT') throw error; fail(error.message); }
+}
+
+export async function readOfficeAppointmentInputsAsync(tx, { } = {}) {
+  try {
+    const receipts = await tx.all('SELECT * FROM wiki.office_appointment_input_import');
+    if (receipts.length !== 1) fail('source receipt');
+    const m = receipts[0];
+    const data = Object.fromEntries(await Promise.all(tables.map(async table =>
+      [table, await tx.all(`SELECT * FROM wiki.${table} WHERE source_id=? ORDER BY json_pointer`, [m.source_id])])));
+    const exists = await tx.get("SELECT 1 FROM information_schema.tables WHERE table_schema='wiki' AND table_name='data_source_head'");
+    const edited = exists && await tx.get('SELECT revision_id FROM wiki.data_source_head WHERE source_path=?', [logicalPath]);
+    const approved = edited ? await readCurrentDataSourceAsync(tx, logicalPath) : null;
+    if (!edited && digest(data) !== m.domain_sha256) fail('typed domain digest');
+    const contracts = await tx.all('SELECT * FROM wiki.office_appointment_input_contract');
+    let result = candidateFromRows(data, contracts);
+    if (edited) {
+      if (!isDeepStrictEqual(result, approved)) fail('approved revision projection');
+      approvedCurrentSources.set(result, digest(result));
+      return result;
+    }
+    const keys = await tx.all('SELECT * FROM wiki.office_appointment_input_key ORDER BY object_path,ordinal');
+    result = orderedDocumentFromRows(result, keys);
     if (digest(result) !== m.document_sha256) fail('document digest');
     return result;
   } catch (error) { if (error.code === 'E_OFFICE_APPOINTMENT_INPUT') throw error; fail(error.message); }

@@ -1,15 +1,15 @@
-# 위키 저장소 SQLite 정본 사용 안내
+# PostgreSQL 저작과 SQLite 이관 도구 안내
 
-## 현재 저작 권위와 작업 상태
+## 저작 권위 전환과 작업 상태
 
-공개 편집 정본은 Git LFS로 관리하는 `data/canonical/wiki-cast.sqlite`다. 이 DB는 JSON 원천에서 다시 만드는 캐시가 아니라 현재의 저작 권위다. 조회·문서 편집·생성은 이 SQLite 정본을 기준으로 한다.
+PostgreSQL `wiki`가 저작 정본 전환 대상이다. `document-cli.mjs`와 공개 문서 API는 PG 전용이며 SQLite 폴백이 없다. 옛 `data/canonical/wiki-cast.sqlite` 및 외부 SQLite archive는 이관·대사 입력일 뿐, 전환 후 운영 저작 정본이 아니다. 격리 환경에서 SQLite·PG reader와 전체 worker 출력 1,433개가 동등했고 일반 PG 빌드 및 계약·산출물·게이트 검사가 통과했다. 일반 PG 생성·빌드는 메타데이터와 스냅샷·비공개 출처 검증 아래 허용되지만, 정확한 SHA 기준 운영 후보 확인과 배포는 아직 남아 있다.
 
 - 물리적인 lore JSON 원천 파일은 모두 제거됐다. 문서·출처 기록에 남아 있는 `lore/.../*.json` 이름은 DB 안의 논리적 문서 식별자 또는 provenance이며, 디스크에서 다시 읽어야 할 입력 파일이 아니다.
 - 현재 envelope head는 예시를 포함해 99개다. 예시는 실제 게시 문서와 구별한다.
 - 원래 인물 ID 1,022개는 보존돼 있다. 현재 인물 511명은 disposition을 통해 구분한다. 보존 ID 수, 현재 인물 수, 프로필 수, 문서 수는 서로 다른 분모다.
-- 비공개 editorial·Soul 저장소는 `.omo/private/seoul-migration/sqlite-authority-20261021` 아래에 별도로 둔다. 비공개 저장소 파일은 mode `600`으로 관리하며 Git이나 공개 배포물에 넣지 않는다.
-- 생성된 공개 JSON은 SQLite에서 내보낸 출력물이다. 직접 고쳐 저작 원천으로 사용하지 않는다.
-- 정식 릴리스 생성과 로컬 TypeScript·Vite 빌드는 종료 코드 0으로 완료됐다. 공개 원격 배포는 아직 대기 중이며, 검증 완료는 소유자 승인을 뜻하지 않는다.
+- 비공개 editorial·Soul 데이터는 공개 데이터와 별도 권한 경계를 유지한다. 이관용 비공개 SQLite 파일은 Git이나 공개 배포물에 넣지 않는다.
+- 생성된 공개 JSON은 출력물이다. 직접 고쳐 저작 원천으로 사용하지 않는다.
+- 이관 검증, 생성 완료, 원격 배포와 소유자 승인은 각각 별도 상태다.
 
 DB의 존재, export 성공, 검증 통과, 렌더링 완료, 공개 배포, 게임 구현, 소유자 승인은 서로 다른 상태다. 현재 저장 상태를 확인하는 검증을 새로운 게시 승인으로 해석하지 않는다.
 
@@ -17,7 +17,7 @@ DB의 존재, export 성공, 검증 통과, 렌더링 완료, 공개 배포, 게
 
 프로젝트 실행에는 Node.js 24.15.0 이상을 사용한다. SQLite 접근은 Node 내장 기능을 이용한다. 일반 SQLite 도구로 닫힌 DB를 읽을 때에는 Node가 필요하지 않다.
 
-Git checkout만으로 LFS 실체가 준비됐다고 가정하지 않는다. 작업 전에 `data/canonical/wiki-cast.sqlite`가 LFS 포인터 텍스트가 아닌 실제 SQLite 파일인지 확인한다. 정본이 없거나 열리지 않으면 중단한다. 삭제된 JSON을 복원하거나 디렉터리를 검색해 대체 정본을 만들지 않는다.
+SQLite 이관·대사 작업에는 해당 캡처의 실제 SQLite 파일과 정확한 식별·해시가 필요하다. 파일이 없거나 열리지 않으면 중단한다. 삭제된 JSON이나 다른 파일로 대체 정본을 만들지 않는다. PG 저작·문서 API는 이 SQLite 파일을 요구하지 않는다.
 
 작업은 전용 브랜치와 PR로 제안하며 main 병합은 소유자만 한다. 공개 DB 변경과 비공개 저장소 변경은 보관·검토·배포 경계를 분리한다.
 
@@ -26,16 +26,31 @@ Git checkout만으로 LFS 실체가 준비됐다고 가정하지 않는다. 작�
 | 기능 | 현재 역할 | 하지 않는 일 |
 | --- | --- | --- |
 | document-cli | 문서 list/read/edit, stdin을 통한 typed 편집 명령, 불변 revision 이력과 draft invalidation | 모든 도메인에 대한 범용 쓰기 API를 제공한다고 보장하지 않음 |
-| `cast:query` | DB를 읽어 인물·관계·출처·품질 정보를 조회 | 역관계·누락값·새 승인 사실을 만들지 않음 |
-| `cast:build` | SQLite 권위에서 새 외부 경로로 export | 정본 덮어쓰기, 권위 부재 시 JSON 재구축 |
-| `cast:verify` | 읽기 전용으로 현재 storage·head·privacy 계약을 검증 | 새 게시 승인, 서사 적합성 또는 미검토 의미의 승인 |
-| 정식 생성 | SQLite 권위에서 공개 산출물을 생성 | 출력 JSON을 저작 원천으로 승격 |
+| `cast:query` | 이관 SQLite를 읽어 인물·관계·출처·품질 정보를 조회 | PG 운영 조회나 새 승인 사실을 대체하지 않음 |
+| `cast:build` | 이관 SQLite에서 새 외부 경로로 export | PG 정본 생성·덮어쓰기 |
+| `cast:verify` | 이관 SQLite의 storage·head·privacy 계약을 읽기 전용 검증 | PG 대사, 새 게시 승인, 의미 검토 |
+| 정식 생성 | 메타데이터와 스냅샷·비공개 출처 검증을 거치는 일반 PG release; `--verify-pg`는 stage 검증만 수행 | 출력 JSON을 저작 원천으로 승격하거나 배포를 증명하지 않음 |
 
 현재 document-cli의 지원 범위는 문서 편집이다. 인물 수치·권리·직책·가계·Soul 등 임의의 도메인을 같은 명령으로 수정할 수 있다고 약속하지 않는다. 필요한 변경을 기존 typed 명령으로 표현할 수 없다면 지원 범위를 확인하고 별도 구현·검토 대상으로 기록한다. 임의 SQL 쓰기로 지원되지 않는 편집 계약을 우회하지 않는다.
 
 비공개 Soul 배정은 별도 `scripts/document-store/soul-assignment-cli.mjs`로 편집한다. `init-edits --db <path> --actor <actor> --reason <reason>`는 mode `600`인 기존 DB에 개정 저장소를 명시적으로 추가한다. `read`와 `revision`은 현재 head를 읽으며, `replace`는 `--person-id`, `--expected-revision`, `--actor`, `--reason`과 stdin의 완전한 typed assignment를 받는다. 편집은 `draft`이고 `approvalRef`를 허용하지 않는다. 원본 승인 revision `0`, 안정 ID 1,022개와 과거 개정은 보존한다. 별도 검토 전까지 게시 인증은 명시적인 `view: 'approved'`로 원래 승인 스냅샷만 읽는다.
 
 ## 문서 편집과 revision 이력
+
+운영 `document-cli.mjs`는 PostgreSQL 전용이다. `WIKI_AUTHORING_PG`(미설정 시 `WIKI_DOCUMENT_PG`) 또는 명시적 `--pg <connection-url>`로 연결을 선택하며 `wiki_author` 역할을 사용한다. 비밀번호를 프로세스 인자에 노출하지 않도록 환경변수를 권장한다. `--db`는 오류이며 PG 연결 실패 시 SQLite로 대체하지 않는다. 기존 `document-edit.mjs`의 SQLite export는 migration tooling 전용이고, 운영 쓰기는 `document-edit-pg.mjs`의 비동기 typed SQL 구현을 사용한다.
+
+전용 저작 계정은 `scripts/postgres-migration/wiki-author-login.sql`로 제공한다. 비공개 superuser 세션에서 `WIKI_AUTHOR_PASSWORD` 환경변수를 설정하고 `psql -X -v ON_ERROR_STOP=1 --dbname=seoul --file=scripts/postgres-migration/wiki-author-login.sql`을 실행한다. SQL을 기록하는 proxy·audit 수집 경로에서는 실행하지 않는다. 로그인 `wiki_author_login`은 `NOINHERIT`이며 `wiki_author`로 명시적 `SET ROLE`한 연결만 저작 권한을 얻는다. runtime/generation 계정에는 membership을 부여하지 않는다. typed 본문 변경·좌표 추가·projection 갱신·revision INSERT만 허용하고, 과거 revision UPDATE/DELETE·승인 발급·private 접근·DDL은 허용하지 않는다. 역할·권한 사전 조건이 안전하지 않거나 비밀번호가 비면 transaction 전체가 실패한다.
+
+`edit`는 `--expected-revision`을 필수로 받는다. 선택적 `--expected-hash`는 편집 전 semantic SHA-256, `--expected-result-hash`는 draft 전환 후 결과 SHA-256을 검증한다. revision 충돌이나 hash 불일치는 전체 transaction을 rollback한다. 현재 head 검증, typed 변경과 종속 projection, draft 전환, 불변 revision snapshot·seal 기록, head CAS 및 전역 sequence 변경은 같은 transaction에 속한다. revision 읽기는 현재 본문이 아니라 봉인된 typed snapshot을 복원하며 저장 hash와 대조한다.
+
+인물 본문 전용 `character-document-editor.mjs` CLI도 같은 PG 연결과 `wiki_author` 역할을 사용한다. `--id`, `--revision`, `--actor`, `--reason`과 stdin의 명령 배열을 받으며 `setText`, `setRunText`, `setLocale`만 허용한다. 인물 profile projection과 evidence 검사는 같은 transaction에서 처리된다. 관계 표 추가는 `relation-document-editor-pg.mjs`의 `editRelationDocumentPgOnConnection(reader, options)` 또는 `editRelationDocumentPgInTransaction(tx, options)`를 사용하며 `appendTableRow`만 허용한다. 두 PG editor는 revision CAS와 선택적 현재·결과 semantic hash를 문서 writer에 전달한다. 구조 편집은 검증된 target-anchor FK와 node identity 불변 trigger가 없는 DB에서 실패하며 다른 문서의 링크 증명을 변경하지 않는다.
+
+```bash
+node scripts/cast-sqlite/document-cli.mjs --help
+node scripts/cast-sqlite/document-cli.mjs list --corpus current
+node scripts/cast-sqlite/document-cli.mjs read --corpus current --domain <domain> --id <documentId>
+```
+
 
 1. document-cli의 list/read로 대상의 논리 ID, 현재 head, 문서 상태와 내용을 확인한다.
 2. 공개 문서인지 비공개 운영 자료인지 구분하고, 적용 지시와 승인 범위를 확인한다.
@@ -46,9 +61,9 @@ Git checkout만으로 LFS 실체가 준비됐다고 가정하지 않는다. 작�
 
 논리적 `.json` 이름은 이 과정에서 문서 식별 및 과거 출처 연결에 계속 사용할 수 있다. 그 이름이 남아 있다는 이유로 해당 물리 파일을 다시 만들 필요는 없다. revision 이력과 출처 provenance는 서로 다른 정보다. 과거 JSON의 경로·pointer·해시는 당시 입력의 계보이며, 현재 문서 head를 대신하지 않는다.
 
-## 외부 export
+## 이관 SQLite 외부 export
 
-`cast:build`라는 명령 이름은 유지되지만, 현재 동작은 SQLite 권위의 외부 export다. 새 출력 경로는 checkout 밖에 있어야 하며 아직 존재하지 않아야 한다. 정본 경로를 대상으로 실행하지 않는다.
+`cast:build`는 이전 SQLite 입력의 외부 export 도구다. 새 출력 경로는 checkout 밖에 있어야 하며 아직 존재하지 않아야 한다. PG 백업이나 PG 저작 수단이 아니다.
 
 다음은 저장소 루트에서 실행하는 PowerShell 예시다.
 
@@ -62,15 +77,15 @@ npm run cast:build -- --output "$castDb"
 npm run cast:verify -- --db "$castDb"
 ```
 
-`cast:build`는 `data/canonical/wiki-cast.sqlite` 덮어쓰기를 거부한다. SQLite 권위가 없을 때 삭제된 JSON으로 재구축하는 동작도 거부한다. 정본을 고치기 위해 export 파일을 정본 위에 복사하는 절차를 사용하지 않는다.
+`cast:build`는 `data/canonical/wiki-cast.sqlite` 덮어쓰기를 거부하고 입력이 없을 때 삭제된 JSON으로 재구축하지 않는다. export 파일을 PG 정본이나 이전 입력 위에 복사하지 않는다.
 
-다른 checkout을 명시적으로 지정하는 실행에서도 입력 권위는 그 checkout의 SQLite다. `--source-root` 같은 기존 옵션을 JSON 원천 탐색이나 JSON freshness 검사의 의미로 설명하지 않는다. 실제 지원 옵션과 오류 코드는 현재 명령 도움말·실행 결과를 따른다.
+다른 checkout을 지정해도 SQLite export 입력에 관한 옵션이다. `--source-root`를 JSON 원천 탐색이나 JSON freshness 검사의 의미로 설명하지 않는다. 실제 지원 옵션과 오류 코드는 현재 명령 도움말·실행 결과를 따른다.
 
 임시 DB·검증 영수·로그는 Git, `public/`, `dist/`, 생성 카탈로그에 넣지 않는다. 비공개 저장소를 export 입력의 공개 문서 집합에 섞지 않는다.
 
 ## 검증 결과를 읽는 법
 
-`cast:verify`는 현재 DB를 읽기 전용으로 열어 storage·head·privacy 계약을 검증한다. 검증 중 정본이나 이력을 변경하지 않는다. 세부 검사와 건수는 실제 실행 결과로 확인하고 과거 receipt의 성공·실패를 재사용하지 않는다.
+`cast:verify`는 지정된 이관 SQLite를 읽기 전용으로 열어 storage·head·privacy 계약을 검증한다. PG 대사는 별도의 `cast:pg-verify`를 사용하며 이관 입력이 필요하다. 검증 중 이력을 변경하지 않고 실제 결과와 범위를 기록한다.
 
 | 판단 | 의미 | 별도로 남는 판단 |
 | --- | --- | --- |
@@ -82,7 +97,7 @@ npm run cast:verify -- --db "$castDb"
 
 검사하지 않은 의미·번역·역사 근거·게시 준비도는 미검사 또는 미검토로 남긴다. schema 통과나 issue 0건을 의미 검토 완료로 바꾸지 않는다. 현재 99개 head와 원래 ID 1,022개·현재 511명은 저장 상태 설명이지 게시 승인 수가 아니다.
 
-이전 JSON 원천 방식의 `source_git_commit`, Git blob 대조, JSON freshness, offline/full 구분에 관한 과거 receipt는 당시 검증의 기록이다. 현재 SQLite 권위를 삭제된 JSON과 다시 대조하거나, 오래됐다는 이유로 JSON에서 정본을 재빌드하는 운영 지침으로 사용하지 않는다.
+이전 JSON 원천 방식의 `source_git_commit`, Git blob 대조, JSON freshness, offline/full 구분에 관한 과거 receipt는 당시 검증의 기록이다. 삭제된 JSON과 다시 대조하거나 JSON에서 정본을 재빌드하는 운영 지침으로 사용하지 않는다.
 
 과거 공식 historical GURPS 검사에서 기록한 `not_checked`·`unsupported-current-schema`·`unverified`도 당시 검사 범위를 나타낸다. 현재 검사기가 실제 실행됐다는 증거 없이 `checked`나 성공으로 바꾸지 않는다. importer 검사와 공식 검사 결과를 합산해 독립 결함 수로 제시하지 않는다.
 
@@ -154,7 +169,7 @@ npm run cast:query -- --db "$castDb" source --path lore/name-pools/values-cast.j
 
 과거 source manifest의 primary raw, reference hash-only, private-engine hash-only, excluded hash-only 구분은 보존된 계보의 범위를 설명한다. hash-only 기록만으로 원문 BLOB을 복구할 수 없으며 무손실 백업도 아니다. 기존 JSON pointer는 당시 대상과 발생 위치를 구별해 읽는다. 논리 경로나 pointer가 있다고 해서 임의 디렉터리·URL·비공개 저장소를 탐색하지 않는다.
 
-새 편집의 권위는 현재 head다. 과거 입력 바이트를 현재 head와 같게 만들기 위해 이력이나 원본 archive를 고치지 않는다. 삭제된 물리 JSON을 복원해 과거 `REQUIRED_SOURCE_PATHS` 또는 manifest를 충족시키는 절차도 사용하지 않는다.
+새 편집의 권위는 PG 현재 head다. `wiki.source_file`에 보존된 원천 바이트·해시와 `wiki.source_record`의 provenance 및 봉인된 revision은 불변 역사 증거로 보존한다. SQLite 외부 archive의 전환 후 정리와 이 PG 증거는 별개이며, archive를 없애더라도 PG 증거를 삭제·수정하지 않는다. 과거 입력 바이트를 현재 head와 같게 만들기 위해 이력을 고치거나 삭제된 JSON을 복원하지 않는다.
 
 ## 비공개 editorial·Soul 경계
 
@@ -174,7 +189,7 @@ npm run cast:query -- --db "$castDb" source --path lore/name-pools/values-cast.j
 
 ## 닫힌 사본의 읽기 전용 SQL
 
-export가 완료돼 닫힌 파일을 받은 뒤 사본을 읽는다. 실행 중인 정본 파일을 무조건 복사해 일관된 백업이라고 가정하지 않는다. 공개 export의 journal 상태와 sidecar 필요 여부는 실제 산출물에서 확인한다.
+이관 export가 완료돼 닫힌 파일을 받은 뒤 사본을 읽는다. 실행 중인 DB 파일을 무조건 복사해 일관된 백업이라고 가정하지 않는다. export의 journal 상태와 sidecar 필요 여부는 실제 산출물에서 확인한다. 이 예시는 PG 백업 방법이 아니다.
 
 ```powershell
 $castCopy = Join-Path $castOut 'wiki-cast-copy.sqlite'
@@ -191,6 +206,6 @@ npm run cast:verify -- --db "$castCopy"
 
 ## 검증·생성 보고
 
-자동 검증 명령은 현재 구현과 테스트 목록을 확인해 실행한다. 기존 `test:cast-sqlite`와 `test:cast-sqlite:readme`의 과거 결과나 JSON 재빌드 시나리오를 이번 SQLite-only 흐름의 성공 증거로 인용하지 않는다. 실제로 실행한 명령·종료 코드·영수·head 또는 DB 식별 정보·검사 범위를 기록한다.
+자동 검증 명령은 현재 구현과 입력을 확인해 실행한다. 이관 SQLite 검사와 PG 대사, 실제 PG stage 검증을 구분하고 실행한 명령·종료 코드·식별 정보·검사 범위를 기록한다. 과거 결과를 현재 성공 증거로 재사용하지 않는다.
 
-문서에는 새 테스트 수, 전체 통과, source freshness, 원격 반영 또는 소유자 승인을 만들어 적지 않는다. 현재 정식 생성은 실행 중이며 성공은 아직 입증되지 않았다. 최종 보고는 저장 검증, 의미 검토, 생성 완료, 게시 확인, 게임 구현, 승인 상태를 각각 분리한다.
+문서에는 새 테스트 수, 전체 통과, source freshness, 원격 반영 또는 소유자 승인을 만들어 적지 않는다. 최종 보고는 저장 검증, 의미 검토, 생성 완료, 게시 확인, 게임 구현, 승인 상태를 각각 분리한다.

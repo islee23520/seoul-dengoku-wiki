@@ -1,5 +1,6 @@
 import { resolve } from 'node:path'
-export async function atlasPeopleContext(loreRoot, { db, dbPath = process.env.WIKI_DOCUMENT_DB ?? resolve(loreRoot, '../data/canonical/wiki-cast.sqlite') } = {}) {
+export async function atlasPeopleContext(loreRoot, { db, dbPath = process.env.WIKI_DOCUMENT_DB } = {}) {
+ if (!db && dbPath === undefined) dbPath = resolve(loreRoot, '../data/canonical/wiki-cast.sqlite')
  if (db || dbPath !== undefined) {
   const { readAtlasIdentity } = await import('./cast-sqlite/atlas-identity.mjs')
   if (db) return readAtlasIdentity(db)

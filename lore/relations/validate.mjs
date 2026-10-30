@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { readCanonicalDocument } from "../../scripts/cast-sqlite/canonical-document.mjs";
+import { loadRelationDatasetAsync } from "../../scripts/cast-sqlite/relation-inputs.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const source = (file, options) => readCanonicalDocument(`lore/${file}`, options);
@@ -102,6 +103,26 @@ export function loadDataset(options = {}) {
     sources: { stateSource, relationSource, castIndex, registry, values, chronicle },
   };
 }
+export async function loadDatasetAsync(tx, options = {}) {
+  const { readPersonCardInputsAsync } = await import('../../scripts/cast-sqlite/person-card-inputs.mjs');
+  const { readAtlasIdentityAsync, readAtlasValuesDocumentAsync } = await import('../../scripts/cast-sqlite/atlas-identity.mjs');
+  const { readPersonalHoldingInputsAsync } = await import('../../scripts/cast-sqlite/personal-holding-inputs.mjs');
+  const { pagesBySlug } = await readPersonCardInputsAsync(tx, { repoRoot: path.resolve(HERE, '../..') });
+  const inputs = {
+    registry: (await readAtlasIdentityAsync(tx)).registry,
+    values: await readAtlasValuesDocumentAsync(tx),
+    archivedEvents: options.archivedEvents ?? [],
+  };
+  for (const [key, slug] of Object.entries({ stateSource: 'Sixteen-States', relationSource: 'Cast-Relations', castIndex: 'Cast-Index', chronicle: 'Century-Annals' })) {
+    const page = pagesBySlug.get(slug);
+    if (!page) throw new Error(`E_RELATION_DATASET_INPUT: ${key}`);
+    inputs[key] = page.value;
+  }
+  const dataset = await loadRelationDatasetAsync({ tx, inputs });
+  dataset.sources.personalHoldings = await readPersonalHoldingInputsAsync(tx);
+  return dataset;
+}
+
 export function validate(dataset) {
   const errors = [];
   const { config, states, vassals, people, organizations, relations, events, eventLinks, sources } = dataset;
@@ -116,7 +137,7 @@ export function validate(dataset) {
     return ids;
   };
   const stateIds = unique(states, "states");
-  const polityIds = new Set([...stateIds, "union:religious", ...source("relations/personal-holdings.json").polities.map(polity => polity.id)]);
+  const polityIds = new Set([...stateIds, "union:religious", ...(sources.personalHoldings ?? source("relations/personal-holdings.json")).polities.map(polity => polity.id)]);
   const personIds = unique(people, "people");
   const peopleById = new Map(people.map((person) => [person.id, person]));
   const stateByPersonId = new Map(sources.registry.persons.map((person, index) => [person.id, sources.values.people[index]?.state]));
@@ -272,7 +293,16 @@ export function validate(dataset) {
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const run = async (options) => {
-    const dataset = await loadDataset(options);
+    const dataset = process.env.WIKI_DOCUMENT_PG
+      ? await (async () => {
+        const { createReader } = await import('../../scripts/cast-sqlite/db-pg.mjs');
+        const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' });
+        const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT;
+        try {
+          return await reader.transaction(tx => loadDatasetAsync(tx, options), { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) });
+        } finally { await reader.close(); }
+      })()
+      : loadDataset(options);
     const errors = validate(dataset);
     return { dataset, errors };
   };

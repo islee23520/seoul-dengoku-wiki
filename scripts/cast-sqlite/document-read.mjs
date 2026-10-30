@@ -226,3 +226,29 @@ export async function readDocumentAsync(db, selector) {
   identity.source_id));
  return reconstructDocument(identity, table => loaded.get(table));
 }
+
+/** Internal immutable typed snapshot; never substitutes current rows for history. */
+export async function readDocumentSnapshotAsync(db, selector, revision) {
+ options({ ...selector, visibility: 'internal' }, true);
+ const identities = await pgRows(db, `SELECT d.source_id,d.document_id,d.domain,d.slug,d.status,d.corpus_kind,
+    s.logical_path,s.sha256,s.byte_length,
+    EXISTS(SELECT 1 FROM wiki.excluded_source e WHERE e.logical_path=s.logical_path) AS excluded
+    FROM wiki.document_revision_text_document d JOIN wiki.source_file s USING(source_id)
+    JOIN wiki.document_revision_seal z ON z.revision_id=d.revision_id
+    WHERE d.revision_id=? AND d.corpus_kind=? AND (?::text IS NULL OR d.domain=?) AND d.document_id=?`,
+  revision, selector.corpusKind, selector.domain ?? null, selector.domain ?? null, selector.documentId);
+ if (identities.length !== 1) fail('E_DOCUMENT_REVISION', 'sealed revision does not match selected identity');
+ const identity = identities[0];
+ const loaded = new Map();
+ const tables = new Map([
+  ['text_document', 'json_pointer'], ['text_document_locale', 'locale'], ['text_document_slot', 'json_pointer'],
+  ['text_document_run', 'ordinal'], ['text_document_list_item', 'ordinal'], ['text_document_table_row', 'ordinal'],
+  ['text_document_table_cell', 'ordinal'], ['text_document_anchor', 'ordinal'], ['text_document_node', 'ordinal'],
+  ['text_document_category', 'ordinal'], ['text_document_source_ref', 'ordinal'], ['text_document_history', 'ordinal'],
+  ...Object.keys(TEXT_DATA_TABLE_COLUMNS).map(table => [table, 'json_pointer']),
+ ]);
+ for (const [table, order] of tables) loaded.set(table, await pgRows(db,
+  `SELECT * FROM wiki.document_revision_${table} WHERE revision_id=? AND source_id=? ORDER BY ${order}${order === 'ordinal' ? '' : ' COLLATE "C"'}`,
+  revision, identity.source_id));
+ return reconstructDocument(identity, table => loaded.get(table));
+}

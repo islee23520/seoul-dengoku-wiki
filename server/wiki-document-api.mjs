@@ -1,5 +1,6 @@
 import { createServer } from 'node:http';
-import { readFile } from 'node:fs/promises';
+import { constants } from 'node:fs';
+import { open, readFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import { fromMarkdown } from 'mdast-util-from-markdown';
 import { gfmFromMarkdown } from 'mdast-util-gfm';
@@ -32,17 +33,17 @@ function renderDocument(document, locale, mapping, mappings, currentRoster) {
   renderJson: (value, language) => renderLoreMarkdown(value, language, (_domain, slug) =>
    `lore/${value.domain === 'root' ? '' : `${value.domain}/`}${slug}.md`),
  }).find((entry) => entry.locale === locale);
- return articleBody(localized.title, `${locale === 'ko' ? '' : '/en'}${mapping.route}`, localized.markdown, locale, mappings);
+ return articleBody(localized.title, mapping.route, localized.markdown, mappings);
 }
 
-function articleBody(title, route, markdown, locale, mappings) {
+function articleBody(title, route, markdown, mappings) {
  const reviewText = markdown.replace(/^#\s+.+\n+/m, '')
   .replace(/\]\((?!\/|#|[a-z][a-z0-9+.-]*:)([^)#]+)\.md(#[^)]*)?\)/giu,
    (match, path, anchor = '') => {
     const targetSlug = path.split('/').at(-1);
     const targets = mappings.filter((entry) => entry.slug === targetSlug);
     if (targets.length !== 1) return match;
-    return `](${locale === 'ko' ? '' : '/en'}${targets[0].route}${anchor})`;
+    return `](${targets[0].route}${anchor})`;
    });
  const blocks = fromMarkdown(reviewText, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] }).children;
  const removePositions = (node) => {
@@ -68,8 +69,24 @@ async function assertReleaseMetadata(reader) {
  return meta;
 }
 
-export async function createWikiDocumentServer({ pgUrl = process.env.WIKI_DOCUMENT_PG, role = 'wiki_reader' } = {}) {
- if (typeof pgUrl !== 'string' || !pgUrl.trim()) throw new Error('WIKI_DOCUMENT_PG is required');
+export async function createWikiDocumentServer({ pgUrl = process.env.WIKI_DOCUMENT_PG,
+ pgFile = process.env.WIKI_DOCUMENT_PG_FILE, role = 'wiki_reader' } = {}) {
+ if (pgUrl !== undefined && pgFile !== undefined) throw new Error('Select exactly one document PG configuration source');
+ if (pgFile !== undefined) {
+  let handle;
+  try {
+   if (typeof pgFile !== 'string' || !pgFile) throw new Error();
+   handle = await open(pgFile, constants.O_RDONLY | constants.O_NOFOLLOW);
+   const info = await handle.stat();
+   if (!info.isFile() || (info.mode & 0o7777) !== 0o600
+    || typeof process.getuid !== 'function' || info.uid !== process.getuid()) throw new Error();
+   pgUrl = await handle.readFile('utf8');
+  } catch { throw new Error('Document PG file must be an owner-only regular file owned by the runtime user'); }
+  finally { await handle?.close(); }
+ }
+ if (typeof pgUrl !== 'string' || !pgUrl.trim() || /[\r\n\0]/u.test(pgUrl.trim()))
+  throw new Error('Document PG configuration is required and must be a single line');
+ pgUrl = pgUrl.trim();
  const reader = createReader({ connectionString: pgUrl, role });
  try {
   await assertReleaseMetadata(reader);
@@ -96,7 +113,7 @@ export async function createWikiDocumentServer({ pgUrl = process.env.WIKI_DOCUME
   if (request.method !== 'GET') { send(405, { error: 'Method not allowed' }); return; }
   const locales = url.searchParams.getAll('locale');
   if ([...url.searchParams.keys()].some((key) => key !== 'locale') || locales.length > 1
-   || (locales.length && !['ko', 'en'].includes(locales[0]))) {
+   || (locales.length && locales[0] !== 'ko')) {
    send(400, { error: 'Invalid request' }); return;
   }
   const locale = locales[0] ?? 'ko';
@@ -150,7 +167,7 @@ export async function createWikiDocumentServer({ pgUrl = process.env.WIKI_DOCUME
       try {
        const document = await readDocumentAsync(tx, selector(identity));
        if (document && document.readMetadata.source_id === identity.source_id) {
-        admittedMappings.push({ ...identity, titles: Object.fromEntries(['ko', 'en'].map(language => [language, document.locales[language].title])) });
+        admittedMappings.push({ ...identity, titles: { ko: document.locales.ko.title } });
         if (list || identity.route === `/${parts[4]}/${parts[5]}`) documents.push(renderDocument(document, locale, identity, mappings, currentRoster));
        }
        succeeded = true;
@@ -180,7 +197,7 @@ export async function createWikiDocumentServer({ pgUrl = process.env.WIKI_DOCUME
       let computedOk = false;
       try {
        const computed = await readComputedArticleAsync(tx, mapping, admittedMappings, locale);
-       if (computed) documents.push(articleBody(computed.title, `${locale === 'ko' ? '' : '/en'}${mapping.route}`, computed.markdown, locale, admittedMappings));
+       if (computed) documents.push(articleBody(computed.title, mapping.route, computed.markdown, admittedMappings));
        computedOk = true;
       } catch (error) {
        // Same tolerance as the document loop: schema gaps decline this one

@@ -38,21 +38,24 @@ export function readStationInteriorInputs(db) {
       if (r.ordinal !== i) fail(`${table}: ordinal`);
       used.add(r); return convert(r);
     });
-    const value = { ...pick(docs[0], fields.document), stations: rows.station.map((r, i) => {
-      if (r.ordinal !== i) fail('station ordinal');
-      const observations = rows.observation.filter(o => o.station_ordinal === i);
-      if (observations.length > 1) fail('observation cardinality');
-      const observation = observations[0];
-      if (observation) used.add(observation);
-      const lines = children('line', i, l => pick(l, fields.line));
-      if (!observation && lines.length) fail('orphan lines');
-      return { ...pick(r, fields.station),
-        observed_levels: observation ? { ...pick(observation, fields.observation), lines } : null,
-        layers: children('layer', i, l => pick(l, fields.layer)),
-        slots: children('slot', i, s => pick(s, fields.slot)),
-        observationCandidates: children('candidate', i, c => ({ ...pick(c, fields.candidate), observed_levels: pick(c, candidateObservation) })),
-      };
-    }) };
+    const value = {
+      ...pick(docs[0], fields.document), stations: rows.station.map((r, i) => {
+        if (r.ordinal !== i) fail('station ordinal');
+        const observations = rows.observation.filter(o => o.station_ordinal === i);
+        if (observations.length > 1) fail('observation cardinality');
+        const observation = observations[0];
+        if (observation) used.add(observation);
+        const lines = children('line', i, l => pick(l, fields.line));
+        if (!observation && lines.length) fail('orphan lines');
+        return {
+          ...pick(r, fields.station),
+          observed_levels: observation ? { ...pick(observation, fields.observation), lines } : null,
+          layers: children('layer', i, l => pick(l, fields.layer)),
+          slots: children('slot', i, s => pick(s, fields.slot)),
+          observationCandidates: children('candidate', i, c => ({ ...pick(c, fields.candidate), observed_levels: pick(c, candidateObservation) })),
+        };
+      })
+    };
     for (const table of ['observation', 'line', 'layer', 'slot', 'candidate']) if (rows[table].some(r => !used.has(r))) fail(`${table}: unconsumed rows`);
     const keys = new Map();
     for (const k of select('key', 'object_path,ordinal')) {
@@ -74,6 +77,32 @@ export function readStationInteriorInputs(db) {
     if (keys.size || digest(result) !== receipts[0].document_sha256) fail('whole-source parity');
     return result;
   } catch (error) { if (error.code === 'E_STATION_INTERIOR_INPUT') throw error; fail(error.message); }
+}
+
+/** PostgreSQL twin: load the same ordered typed rows and verify both digests. */
+export async function readStationInteriorInputsAsync(tx) {
+  try {
+    const sheet = new Map();
+    for (const [table, order] of [
+      ['import', 'singleton'], ['document', 'singleton'], ['station', 'ordinal'],
+      ['observation', 'station_ordinal'], ['line', 'station_ordinal,ordinal'],
+      ['layer', 'station_ordinal,ordinal'], ['slot', 'station_ordinal,ordinal'],
+      ['candidate', 'station_ordinal,ordinal'], ['key', 'object_path,ordinal'],
+    ]) {
+      const sql = `SELECT * FROM ${prefix}${table} ORDER BY ${order}`;
+      const pgOrder = table === 'key' ? 'object_path COLLATE "C",ordinal' : order;
+      sheet.set(sql, await tx.all(`SELECT * FROM wiki.${prefix}${table} ORDER BY ${pgOrder}`));
+    }
+    return readStationInteriorInputs({
+      prepare(sql) {
+        if (!sheet.has(sql)) fail(`unmaterialized statement: ${sql}`);
+        return { all: () => sheet.get(sql) };
+      }
+    });
+  } catch (error) {
+    if (error.code === 'E_STATION_INTERIOR_INPUT') throw error;
+    fail(error.message);
+  }
 }
 
 // Explicit import of actual pinned bytes, into the caller's writable disposable copy.

@@ -353,3 +353,54 @@ export function openSoulAssignments(path, options={}) {
     readDocument:selection=>read(selection).document,
     readAssignmentMap:()=>new Map(read().document.assignments.map(a=>[a.personId,a]))});
 }
+
+/** Read the imported approved snapshot on a caller-owned PostgreSQL transaction.
+ * PostgreSQL must not silently substitute the editable draft head. */
+export async function openSoulAssignmentsAsync(tx, options = {}) {
+ authorize(options);
+ const view = options.view ?? 'approved';
+ if (view !== 'approved') fail('E_SOUL_VIEW');
+ if (!tx?.isTransaction || typeof tx.all !== 'function') fail('E_PRIVATE');
+ const revisions = await tx.all('SELECT * FROM wiki_private.soul_revision');
+ if (revisions.length !== 1 || revisions[0].singleton !== 1) fail('E_SOUL_REVISION');
+ const columns = await tx.all("SELECT column_name FROM information_schema.columns WHERE table_schema='wiki_private' AND table_name='soul_document' AND column_name='revision_id'");
+ const migrated = columns.length === 1;
+ let revision;
+ if (migrated) {
+  const imported = await tx.all('SELECT * FROM wiki_private.soul_edit_revision WHERE revision_id=0');
+  if (imported.length !== 1 || imported[0].status !== 'imported') fail('E_SOUL_REVISION');
+  revision = imported[0];
+ } else revision = { ...revisions[0], revision_id: 0, parent_revision: null, status: 'imported' };
+ const domains = new Map();
+ for (const domain of Object.keys(definitions)) {
+  const rows = await tx.all('SELECT * FROM wiki_private.' + table(domain) + (migrated ? ' WHERE revision_id=0' : '') + ' ORDER BY ordinal');
+  const byKey = new Map(), byParent = new Map();
+  for (const row of rows) {
+   byKey.set(row.row_key, row);
+   const siblings = byParent.get(row.parent_key) ?? [];
+   siblings.push(row); byParent.set(row.parent_key, siblings);
+  }
+  domains.set(table(domain), { byKey, byParent, count: rows.length });
+ }
+ const identities = await tx.all('SELECT person_id FROM wiki_private.soul_identity ORDER BY person_id COLLATE "C"');
+ const sheet = {
+  prepare(sql) {
+   if (sql === 'SELECT person_id FROM soul_identity ORDER BY person_id') return { all: () => identities };
+   const match = /^SELECT (\*|row_key,ordinal|count\(\*\) AS n) FROM (soul_[a-z_]+)(?: WHERE (row_key|parent_key|revision_id)=\?(?: ORDER BY ordinal)?)?$/.exec(sql);
+   if (!match || !domains.has(match[2])) fail('E_SOUL_INTEGRITY');
+   const { byKey, byParent, count } = domains.get(match[2]);
+   return { get: key => match[1] === 'count(*) AS n' ? { n: count } : byKey.get(key), all: key => byParent.get(key) ?? [] };
+  }
+ };
+ function read({ revision: selection } = {}) {
+  if (selection !== undefined && selection !== 0) fail('E_SOUL_REVISION');
+  const document = readDocument(sheet, migrated ? revision : { ...revision, revision_id: undefined });
+  return { revision, document };
+ }
+ return Object.freeze({
+  async readSnapshot(selection) { return read(selection); },
+  async readRevision(selection) { return read({ revision: selection }).revision; },
+  async readDocument(selection) { return read(selection).document; },
+  async readAssignmentMap() { return new Map(read().document.assignments.map(a => [a.personId, a])); }
+ });
+}

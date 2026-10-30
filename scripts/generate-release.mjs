@@ -231,7 +231,7 @@ async function hasRecoveryJournal(root) {
   return true
 }
 
-export async function recoverRelease({ root, checkpoint = async () => {} }) {
+export async function recoverRelease({ root, checkpoint = async () => { } }) {
   root = resolve(root)
   // Restoring a prior release is not a new publication. With no journal this
   // command is read-only, even when an abandoned private stage still exists.
@@ -276,7 +276,7 @@ async function previousGeneration(root, before, ownership) {
       for (const row of value.documents ?? []) {
         if (!/^src\/generated\/world\/[^/]+\.json$/u.test(row.contentRef)) throw new Error('E_RELEASE_BOOTSTRAP')
         candidates.add(row.contentRef)
-        // localizedDocuments emits the same slug for each published locale.
+        // Retire previously owned English outputs during the Korean-only cutover.
         candidates.add(row.contentRef.replace('/world/', '/world-en/'))
       }
     } else {
@@ -292,174 +292,236 @@ async function previousGeneration(root, before, ownership) {
   return files
 }
 
-export async function runRelease({ root, stage, consume, checkpoint = async () => {}, ownership = trackedHash,
+export async function runRelease({ root, stage, consume, verifyOnly = false, checkpoint, ownership = trackedHash,
   mapRequestPath = process.env.WIKI_MAP_RELEASE_REQUEST }) {
   root = resolve(root)
+  if (verifyOnly && (stage || consume || checkpoint || ownership !== trackedHash)) throw new Error('E_RELEASE_VERIFY_OVERRIDE')
+  checkpoint ??= async () => { }
+  if (verifyOnly && !process.env.WIKI_DOCUMENT_PG) throw new Error('E_RELEASE_VERIFY_PG_REQUIRED')
+  if (verifyOnly && !process.env.WIKI_GENERATION_PRIVATE_PG) throw new Error('E_GENERATION_PRIVATE_PG_REQUIRED')
   return withReleaseLock(root, async run => {
-    // Re-read under the lock: another cooperating command may have recovered
-    // or interrupted a release since the read-only probe above.
-    if (await hasRecoveryJournal(root)) await recover(root, checkpoint)
+    // Verification must never recover or discard an earlier transaction: recovery
+    // can modify live outputs and an abandoned stage may contain diagnostics.
+    if (verifyOnly) {
+      if (await lstat(join(root, transactionName)).catch(absent)) throw new Error('E_RELEASE_TRANSACTION')
+    } else if (await hasRecoveryJournal(root)) await recover(root, checkpoint)
     const mapInput = mapRequestPath === undefined ? null : await loadMapDataInput(mapRequestPath)
     await mapInput?.recheck()
-    await recover(root, checkpoint)
-    // PostgreSQL release sourcing is not complete yet: only clan-crests reads
-    // the exported snapshot while catalog and both portrait workers still
-    // read SQLite, which would mix sources or hit the checked-in LFS pointer.
-    // Reject before creating the transaction directory or staging anything;
-    // delete this guard when every generation worker is PostgreSQL-sourced.
-    if (process.env.WIKI_DOCUMENT_PG) {
-      throw Object.assign(new Error('E_RELEASE_PG_PARTIAL: catalog/portrait workers are not PostgreSQL-sourced yet; full PG generation is not runnable'), { code: 'E_RELEASE_PG_PARTIAL' })
-    }
-    const transaction = join(root, transactionName)
-    const stageRoot = join(transaction, 'stage')
-    const before = await inventory(root)
-    const previousFiles = await previousGeneration(root, before, ownership)
-    const databaseInputs = [...new Set(['WIKI_DOCUMENT_DB', 'WIKI_PORTRAIT_DB',
-      'WIKI_EDITORIAL_PROFILE_DB', 'WIKI_SOUL_ASSIGNMENT_DB',
-      'WIKI_MAPPING_ORIGINAL_DB',
-      'WIKI_MAPPING_FINAL_DB', 'WIKI_MAPPING_SOURCES_DB', 'WIKI_PUBLICATION_DATABASE_CONFIG'].map(key => process.env[key]).filter(Boolean))]
-    if (process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
-      const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))
-      const capture = JSON.parse(await readFile(config.captureReceiptPath, 'utf8'))
-      databaseInputs.push(...[config.databasePath, config.bootstrapReceiptPath, config.captureReceiptPath,
-        capture.databasePath, config.editorialDatabasePath, ...Object.values(config.privateStores)]
-        .filter(path => path && !databaseInputs.includes(path)))
-    }
-    const databaseHashes = new Map()
-    for (const path of databaseInputs) {
-      const value = createHash('sha256')
-      for await (const bytes of createReadStream(path)) value.update(bytes)
-      databaseHashes.set(path, value.digest('hex'))
-    }
-    await mkdir(transaction, { mode: 0o700 })
-    let journal
+    if (!verifyOnly) await recover(root, checkpoint)
+    let snapshotReader
+    let generationSnapshot
     try {
-      await mkdir(stageRoot)
-      for (const path of Object.keys(before)) await copy(join(root, path), join(stageRoot, path))
-      const token = createHash('sha256').update(`${process.pid}:${process.hrtime.bigint()}`).digest('hex')
-      await durableJson(join(transaction, 'context.json'), { token })
-      const env = { ...process.env, WIKI_GENERATION_STAGE: stageRoot, WIKI_GENERATION_TOKEN: token,
-        ...(mapInput ? { WIKI_MAP_RELEASE_REQUEST: mapRequestPath } : {}) }
-      const written = new Set()
-      const write = async (path, bytes) => {
-        outputPath(path)
-        await regular(stageRoot, path)
-        await mkdir(dirname(join(stageRoot, path)), { recursive: true })
-        const handle = await open(join(stageRoot, path), 'w')
-        try { await handle.writeFile(bytes) } finally { await handle.close() }
-        written.add(path)
-      }
-      if (stage) await stage({ root: stageRoot, write, run: command => run(command, env), mapInput })
-      else {
-        // PostgreSQL release sourcing: export one REPEATABLE READ snapshot and
-        // hand its id to every worker so the whole release reads one view.
-        // The exporter stays open until all workers finish. SQLite releases
-        // (no WIKI_DOCUMENT_PG) skip this entirely.
-        let generationSnapshot = null
-        let snapshotReader = null
-        if (process.env.WIKI_DOCUMENT_PG) {
-          snapshotReader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
-          generationSnapshot = await snapshotReader.exportSnapshot()
-          env.WIKI_GENERATION_SNAPSHOT = generationSnapshot.id
-        }
+      let sourceBinding
+      let privateReceipts
+      if (process.env.WIKI_DOCUMENT_PG) {
+        const connectionString = process.env.WIKI_GENERATION_PRIVATE_PG
+        if (!connectionString) throw Object.assign(new Error('E_GENERATION_PRIVATE_PG_REQUIRED'), { code: 'E_GENERATION_PRIVATE_PG_REQUIRED' })
+        snapshotReader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+        generationSnapshot = await snapshotReader.exportSnapshot()
+        const expected = JSON.parse(await readFile(join(root, 'scripts/postgres-migration/schema-pg/metadata.json'), 'utf8'))
+        sourceBinding = await snapshotReader.transaction(async tx => {
+          const rows = await tx.all('SELECT source_sha256, schema_version FROM wiki.meta WHERE migration_id = $1', [expected.migration_id])
+          if (rows.length !== 1 || rows[0].source_sha256 !== expected.source_sha256
+            || Number(rows[0].schema_version) !== Number(expected.schema_version)) throw new Error('E_RELEASE_PG_METADATA')
+          const identity = await tx.all('SELECT current_database() AS database, (SELECT oid::text FROM pg_database WHERE datname = current_database()) AS database_oid')
+          return {
+            kind: 'postgresql', database: identity[0].database, databaseOid: identity[0].database_oid,
+            migrationId: expected.migration_id, sourceSha256: rows[0].source_sha256, schemaVersion: Number(rows[0].schema_version)
+          }
+        }, { readOnly: true, importSnapshot: generationSnapshot.id })
+        const privateReader = createReader({ connectionString, role: 'wiki_generation_reader' })
         try {
+          privateReceipts = await privateReader.transaction(async tx => {
+            const identity = await tx.all('SELECT current_database() AS database, (SELECT oid::text FROM pg_database WHERE datname = current_database()) AS database_oid')
+            if (identity[0].database !== sourceBinding.database || identity[0].database_oid !== sourceBinding.databaseOid) throw new Error('E_RELEASE_PG_DATABASE')
+            const editorial = await tx.all('SELECT ordinal, logical_path, sha256, snapshot_sha256, profile_count FROM wiki_private.editorial_batch_source ORDER BY ordinal')
+            const soul = await tx.all('SELECT singleton, source_sha256, snapshot_sha256, assignment_count FROM wiki_private.soul_revision ORDER BY singleton')
+            const columns = await tx.all("SELECT column_name FROM information_schema.columns WHERE table_schema='wiki_private' AND table_name='soul_document' AND column_name='revision_id'")
+            const imported = columns.length ? await tx.all('SELECT revision_id, source_sha256, snapshot_sha256, assignment_count, status FROM wiki_private.soul_edit_revision WHERE revision_id=0') : []
+            const scope = 'editorial_batch_source,soul_revision,soul_edit_revision:imported-if-migrated'
+            return { scope, sha256: createHash('sha256').update(JSON.stringify({ editorial, soul, imported })).digest('hex') }
+          }, { readOnly: true, importSnapshot: generationSnapshot.id })
+        } finally { await privateReader.close() }
+      }
+      const transaction = join(root, transactionName)
+      const stageRoot = join(transaction, 'stage')
+      const before = await inventory(root)
+      const previousFiles = await previousGeneration(root, before, ownership)
+      const databaseInputs = process.env.WIKI_DOCUMENT_PG ? [] : [...new Set(['WIKI_DOCUMENT_DB', 'WIKI_PORTRAIT_DB',
+        'WIKI_EDITORIAL_PROFILE_DB', 'WIKI_SOUL_ASSIGNMENT_DB',
+        'WIKI_MAPPING_ORIGINAL_DB',
+        'WIKI_MAPPING_FINAL_DB', 'WIKI_MAPPING_SOURCES_DB', 'WIKI_PUBLICATION_DATABASE_CONFIG'].map(key => process.env[key]).filter(Boolean))]
+      if (!process.env.WIKI_DOCUMENT_PG && process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
+        const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))
+        const capture = JSON.parse(await readFile(config.captureReceiptPath, 'utf8'))
+        databaseInputs.push(...[config.databasePath, config.bootstrapReceiptPath, config.captureReceiptPath,
+        capture.databasePath, config.editorialDatabasePath, ...Object.values(config.privateStores)]
+          .filter(path => path && !databaseInputs.includes(path)))
+      }
+      const databaseHashes = new Map()
+      for (const path of databaseInputs) {
+        const value = createHash('sha256')
+        for await (const bytes of createReadStream(path)) value.update(bytes)
+        databaseHashes.set(path, value.digest('hex'))
+      }
+      await mkdir(transaction, { mode: 0o700 })
+      let journal
+      try {
+        await mkdir(stageRoot)
+        for (const path of Object.keys(before)) await copy(join(root, path), join(stageRoot, path))
+        const token = createHash('sha256').update(`${process.pid}:${process.hrtime.bigint()}`).digest('hex')
+        await durableJson(join(transaction, 'context.json'), { token, ...(sourceBinding ? { sourceBinding } : {}) })
+        const env = {
+          ...process.env, WIKI_GENERATION_STAGE: stageRoot, WIKI_GENERATION_TOKEN: token,
+          ...(generationSnapshot ? { WIKI_GENERATION_SNAPSHOT: generationSnapshot.id } : {}),
+          ...(mapInput ? { WIKI_MAP_RELEASE_REQUEST: mapRequestPath } : {})
+        }
+        const written = new Set()
+        const write = async (path, bytes) => {
+          outputPath(path)
+          await regular(stageRoot, path)
+          await mkdir(dirname(join(stageRoot, path)), { recursive: true })
+          const handle = await open(join(stageRoot, path), 'w')
+          try { await handle.writeFile(bytes) } finally { await handle.close() }
+          written.add(path)
+        }
+        if (stage) await stage({ root: stageRoot, write, run: command => run(command, env), mapInput })
+        else {
           await run([process.execPath, 'scripts/generate-clan-crests.mjs'], env)
           await checkpoint('crest')
           await run([process.execPath, 'scripts/generate-catalog.mjs'], env)
           await run([process.execPath, 'scripts/generate-portrait-source-catalog.mjs'], env)
           await run([process.execPath, 'scripts/generate-portrait-tokens.mjs'], env)
-        } finally {
-          await generationSnapshot?.release()
-          await snapshotReader?.close()
         }
-      }
-      if (mapInput) await write('src/generated-private/map-input-receipt.json', JSON.stringify(mapInput.receipt) + '\n')
-      const records = await readFile(join(transaction, 'outputs.jsonl'), 'utf8').catch(absent)
-      for (const line of (records ?? '').split('\n').filter(Boolean)) written.add(outputPath(JSON.parse(line)))
-      for (const [path, expected] of previousFiles) {
-        if (written.has(path)) continue
-        if (before[path] !== expected) throw new Error('E_RELEASE_CONFLICT:' + path)
-        await unlink(join(stageRoot, path)).catch(absent)
-      }
-      const outputs = []
-      for (const path of [...written].sort()) {
-        const sha256 = await hash(stageRoot, path)
-        if (!sha256) throw new Error('E_RELEASE_OUTPUT_MISSING:' + path)
-        if (before[path] !== undefined && previousFiles.get(path) !== before[path]
-          && await ownership(root, path) !== before[path]) throw new Error('E_RELEASE_UNOWNED:' + path)
-        outputs.push({ path, sha256 })
-      }
-      await write(manifestName, JSON.stringify({ schema: 1, files: outputs }) + '\n')
-      const after = await inventory(stageRoot)
-      const files = [...new Set([...Object.keys(before), ...Object.keys(after)])].sort().flatMap(path => {
-        const old = before[path] ?? null
-        const next = after[path] ?? null
-        return old === next ? [] : [{ path, old, new: next }]
-      })
-      for (const row of files) {
-        if (await hash(root, row.path) !== row.old) throw new Error('E_RELEASE_CONFLICT:' + row.path)
-        if (row.old !== null && row.path !== manifestName && previousFiles.get(row.path) !== row.old
-          && await ownership(root, row.path) !== row.old) throw new Error('E_RELEASE_UNOWNED:' + row.path)
-        if (row.old !== null) {
-          await copy(join(root, row.path), join(transaction, 'old', row.path))
-          const backup = await open(join(transaction, 'old', row.path), 'r')
-          try { await backup.sync() } finally { await backup.close() }
-          for (let directory = dirname(join(transaction, 'old', row.path)); directory !== transaction; directory = dirname(directory)) {
-            await syncDirectory(directory)
+        if (mapInput) await write('src/generated-private/map-input-receipt.json', JSON.stringify(mapInput.receipt) + '\n')
+        const records = await readFile(join(transaction, 'outputs.jsonl'), 'utf8').catch(absent)
+        for (const line of (records ?? '').split('\n').filter(Boolean)) written.add(outputPath(JSON.parse(line)))
+        for (const [path, expected] of previousFiles) {
+          if (written.has(path)) continue
+          if (before[path] !== expected) throw new Error('E_RELEASE_CONFLICT:' + path)
+          await unlink(join(stageRoot, path)).catch(absent)
+        }
+        const outputs = []
+        for (const path of [...written].sort()) {
+          const sha256 = await hash(stageRoot, path)
+          if (!sha256) throw new Error('E_RELEASE_OUTPUT_MISSING:' + path)
+          if (before[path] !== undefined && previousFiles.get(path) !== before[path]
+            && await ownership(root, path) !== before[path]) throw new Error('E_RELEASE_UNOWNED:' + path)
+          outputs.push({ path, sha256 })
+        }
+        const generationProvenance = sourceBinding ? {
+          schema: 'wiki.pg-generation.v1', sourceBinding,
+          privateReceipts: { scope: privateReceipts.scope, sha256: privateReceipts.sha256 },
+          outputInventorySha256: createHash('sha256').update(JSON.stringify(outputs)).digest('hex'),
+        } : undefined
+        await write(manifestName, JSON.stringify({
+          schema: 1, files: outputs,
+          ...(generationProvenance ? { provenance: generationProvenance } : {})
+        }) + '\n')
+        const after = await inventory(stageRoot)
+        const files = [...new Set([...Object.keys(before), ...Object.keys(after)])].sort().flatMap(path => {
+          const old = before[path] ?? null
+          const next = after[path] ?? null
+          return old === next ? [] : [{ path, old, new: next }]
+        })
+        if (verifyOnly) {
+          // Check the same live ownership and source freshness preconditions as
+          // promotion, but do not create backups or write any live output.
+          for (const row of files) {
+            if (await hash(root, row.path) !== row.old) throw new Error('E_RELEASE_CONFLICT:' + row.path)
+            if (row.old !== null && row.path !== manifestName && previousFiles.get(row.path) !== row.old
+              && await ownership(root, row.path) !== row.old) throw new Error('E_RELEASE_UNOWNED:' + row.path)
+          }
+          await mapInput?.recheck()
+          const digest = createHash('sha256').update(JSON.stringify(Object.entries(after).sort(([a], [b]) => a < b ? -1 : a > b ? 1 : 0))).digest('hex')
+          const report = {
+            schema: 1, mode: 'verify-pg', status: 'passed', generatedCount: outputs.length,
+            inventoryCount: Object.keys(after).length, changedCount: files.length, inventorySha256: digest,
+            sourceSha256: sourceBinding.sourceSha256, privateReceiptsSha256: privateReceipts.sha256,
+            provenance: generationProvenance
+          }
+          console.log(JSON.stringify(report))
+          await rm(transaction, { recursive: true })
+          await syncDirectory(root)
+          return report
+        }
+        for (const row of files) {
+          if (await hash(root, row.path) !== row.old) throw new Error('E_RELEASE_CONFLICT:' + row.path)
+          if (row.old !== null && row.path !== manifestName && previousFiles.get(row.path) !== row.old
+            && await ownership(root, row.path) !== row.old) throw new Error('E_RELEASE_UNOWNED:' + row.path)
+          if (row.old !== null) {
+            await copy(join(root, row.path), join(transaction, 'old', row.path))
+            const backup = await open(join(transaction, 'old', row.path), 'r')
+            try { await backup.sync() } finally { await backup.close() }
+            for (let directory = dirname(join(transaction, 'old', row.path)); directory !== transaction; directory = dirname(directory)) {
+              await syncDirectory(directory)
+            }
+          }
+          if (row.new !== null) {
+            const staged = await open(join(stageRoot, row.path), 'r')
+            try { await staged.sync() } finally { await staged.close() }
           }
         }
-        if (row.new !== null) {
-          const staged = await open(join(stageRoot, row.path), 'r')
-          try { await staged.sync() } finally { await staged.close() }
+        await mapInput?.recheck()
+        for (const [path, expected] of databaseHashes) {
+          const value = createHash('sha256')
+          for await (const bytes of createReadStream(path)) value.update(bytes)
+          if (value.digest('hex') !== expected) throw new Error('E_RELEASE_DATABASE_CHANGED:' + path)
         }
-      }
-      await mapInput?.recheck()
-      for (const [path, expected] of databaseHashes) {
-        const value = createHash('sha256')
-        for await (const bytes of createReadStream(path)) value.update(bytes)
-        if (value.digest('hex') !== expected) throw new Error('E_RELEASE_DATABASE_CHANGED:' + path)
-      }
-      journal = { schema: 1, state: 'prepared', files, intent: null }
-      await durableJson(join(transaction, 'journal.json'), journal)
-      await checkpoint('prepared')
-      for (const row of files) {
-        if (await hash(root, row.path) !== row.old) throw new Error('E_RELEASE_CONFLICT:' + row.path)
-        journal.state = 'promoting'
-        journal.intent = { action: row.new === null ? 'retire' : 'replace', path: row.path }
+        journal = {
+          schema: 1, state: 'prepared', files, intent: null,
+          ...(sourceBinding ? { sourceBinding, privateReceipts } : {})
+        }
         await durableJson(join(transaction, 'journal.json'), journal)
-        await mkdir(dirname(join(root, row.path)), { recursive: true })
-        for (let directory = dirname(join(root, row.path)); directory !== root; directory = dirname(directory)) {
-          await syncDirectory(directory)
+        await checkpoint('prepared')
+        for (const row of files) {
+          if (await hash(root, row.path) !== row.old) throw new Error('E_RELEASE_CONFLICT:' + row.path)
+          journal.state = 'promoting'
+          journal.intent = { action: row.new === null ? 'retire' : 'replace', path: row.path }
+          await durableJson(join(transaction, 'journal.json'), journal)
+          await mkdir(dirname(join(root, row.path)), { recursive: true })
+          for (let directory = dirname(join(root, row.path)); directory !== root; directory = dirname(directory)) {
+            await syncDirectory(directory)
+          }
+          await syncDirectory(root)
+          if (row.new === null) await unlink(join(root, row.path))
+          else await rename(join(stageRoot, row.path), join(root, row.path))
+          await syncDirectory(dirname(join(root, row.path)))
+          await checkpoint('promotion', row.path)
         }
-        await syncDirectory(root)
-        if (row.new === null) await unlink(join(root, row.path))
-        else await rename(join(stageRoot, row.path), join(root, row.path))
-        await syncDirectory(dirname(join(root, row.path)))
-        await checkpoint('promotion', row.path)
+        journal.state = 'committed'
+        journal.intent = null
+        await durableJson(join(transaction, 'journal.json'), journal)
+        await checkpoint('committed')
+        await recover(root, checkpoint)
+      } catch (error) {
+        if (journal) {
+          try { await recover(root, checkpoint) }
+          catch (recoveryError) { throw new AggregateError([error, recoveryError], 'E_RELEASE_RECOVERY_REQUIRED') }
+        } else if (verifyOnly) {
+          // Retain the owned stage for diagnosis; never persist raw exceptions,
+          // connection details, private source rows, or worker output.
+          const code = typeof error.code === 'string' && /^E_[A-Z0-9_]+$/u.test(error.code)
+            ? error.code : /^E_[A-Z0-9_]+/u.exec(error.message ?? '')?.[0] ?? 'E_RELEASE_VERIFY_FAILED'
+          try { await durableJson(join(transaction, 'verify-report.json'), { schema: 1, mode: 'verify-pg', status: 'failed', code }) }
+          catch (reportError) { throw new AggregateError([error, reportError], 'E_RELEASE_VERIFY_REPORT') }
+        } else await rm(transaction, { recursive: true, force: true })
+        throw error
       }
-      journal.state = 'committed'
-      journal.intent = null
-      await durableJson(join(transaction, 'journal.json'), journal)
-      await checkpoint('committed')
-      await recover(root, checkpoint)
-    } catch (error) {
-      if (journal) {
-        try { await recover(root, checkpoint) }
-        catch (recoveryError) { throw new AggregateError([error, recoveryError], 'E_RELEASE_RECOVERY_REQUIRED') }
-      } else await rm(transaction, { recursive: true, force: true })
-      throw error
+      // The lock stays held during both TypeScript and Vite reads, including every
+      // worker subprocess. A compiler failure does not undo a committed release.
+      if (consume) await consume(run)
+    } finally {
+      try { await generationSnapshot?.release() } finally { await snapshotReader?.close() }
     }
-    // The lock stays held during both TypeScript and Vite reads, including every
-    // worker subprocess. A compiler failure does not undo a committed release.
-    if (consume) await consume(run)
   })
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
   const args = process.argv.slice(2)
-  if (args.length > 1 || args.length && !['--build', '--recover'].includes(args[0])) throw new Error('E_RELEASE_ARGUMENT')
-  if (args[0] !== '--recover' && !process.env.WIKI_DOCUMENT_DB) {
+  if (args.length > 1 || args.length && !['--build', '--recover', '--verify-pg'].includes(args[0])) throw new Error('E_RELEASE_ARGUMENT')
+  if (args[0] !== '--recover' && args[0] !== '--verify-pg' && !process.env.WIKI_DOCUMENT_DB && !process.env.WIKI_DOCUMENT_PG) {
     const environment = JSON.parse(await readFile(join(root,
       '.omo/private/seoul-migration/sqlite-authority-20261021/build-environment.json'), 'utf8'))
     for (const [key, value] of Object.entries(environment)) {
@@ -468,8 +530,10 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     }
   }
   if (args[0] === '--recover') await recoverRelease({ root })
-  else await runRelease({ root, consume: args[0] === '--build' ? async run => {
-    await run([process.execPath, 'node_modules/typescript/bin/tsc', '-b'])
-    await run([process.execPath, 'node_modules/vite/bin/vite.js', 'build'])
-  } : undefined })
+  else await runRelease({
+    root, verifyOnly: args[0] === '--verify-pg', consume: args[0] === '--build' ? async run => {
+      await run([process.execPath, 'node_modules/typescript/bin/tsc', '-b'])
+      await run([process.execPath, 'node_modules/vite/bin/vite.js', 'build'])
+    } : undefined
+  })
 }

@@ -2,42 +2,50 @@
 
 This repository holds the world canon ("lore") of **Seoul Subway States** (서울전국), a character-centered grand-strategy game set in the subway network of post-collapse Seoul, together with the React application that publishes it as the official wiki at <https://seoul-dengoku.linalab.io/wiki/>.
 
-Every public document is authored once as bilingual JSON (Korean and English side by side) and rendered into Korean and English pages. Generated files are never edited by hand.
+The public wiki renders Korean pages only. Generated files are never edited by hand; contract checks reject the retired English catalog and generated English documents.
+
+PostgreSQL `wiki`는 저작 정본 전환 대상이며 현재 typed 레코드와 문서 head를 보유한다. 비공개 editorial·Soul 데이터는 별도 `wiki_private` 권한 경계로 보호한다. 저작 CLI와 문서 API는 SQLite 폴백 없이 PostgreSQL을 사용한다. 격리 환경에서 SQLite·PG reader 대사와 전체 worker 출력 1,433개의 동등성을 확인했고, 일반 PG 빌드 및 `check-contract`·`check:artifacts`·게이트 검사가 통과했다. 이는 운영 전환 완료가 아니다. 정확한 커밋 SHA를 기준으로 한 운영 후보 확인과 배포는 남아 있다.
+
+SQLite files, including the former `data/canonical/wiki-cast.sqlite`, are migration/comparison inputs only, not an editable production authority. Retiring those files after the cutover does not authorize deleting PostgreSQL historical evidence: `wiki.source_file` bytes/hashes, `source_record` provenance and sealed revisions must remain immutable. Do not rewrite historical bytes to match edited heads.
 
 ## Repository layout
 
 | Path | Contents |
 |---|---|
-| `lore/` | Authoring sources, one JSON document per page, grouped by domain (`characters/`, `factions/`, `culture/`, `places/`, `bestiary/`, …). `lore/World-Narrative-Atlas.json` is the machine registry from which the 34 atlas projection pages are generated. |
-| `lore/authoring*.schema.json`, `lore/AUTHORING-JSON.md` | The JSON authoring contract and its schemas. |
-| `lore/editorial/` | Internal editorial rules and ledgers. They are not published. |
-| `scripts/` | Catalog generation, atlas materialization, validators and the publication gate. |
+| `lore/` | Domain guidance and logical document namespaces; historical `.json` paths identify database documents/provenance, not source files to recreate. |
+| `lore/authoring*.schema.json`, `lore/AUTHORING-JSON.md` | Typed document/envelope contract and editorial procedures. |
+| `lore/editorial/` | Editorial guidance; private source data is not published. |
+| `scripts/` | PG readers and authoring, generation, validators, and migration-only SQLite tooling. See `scripts/cast-sqlite/README.md`. |
 | `src/` | The React wiki application. `src/generated/` is build output. |
 | `docs/editorial/` | Dated editorial records (audits, studies). They are historical records, not rules. |
 
 ## Local build
 
-Requires Node.js 22 or newer.
+Requires Node.js 24.15.0 or newer for the retained SQLite migration tools; deployment uses Node 26. PostgreSQL connection secrets and private generation inputs must be supplied outside the repository.
 
 ```sh
-npm ci
+npm ci --ignore-scripts
 npm run dev          # local wiki with live reload
-npm run build        # generate the catalog, type-check, build dist/
-node scripts/gate.mjs   # scan the built site for banned terms, private links and broken links
+node scripts/cast-sqlite/document-cli.mjs list --corpus current # WIKI_AUTHORING_PG required (or WIKI_DOCUMENT_PG)
+node server/wiki-document-api.mjs # WIKI_DOCUMENT_PG or secure WIKI_DOCUMENT_PG_FILE required
+# Protected integration environment only; both WIKI_DOCUMENT_PG and WIKI_GENERATION_PRIVATE_PG required:
+node scripts/generate-release.mjs --verify-pg
 ```
+
+`--verify-pg`는 임시 stage에서 worker를 검증하며 live output 변경·승격·빌드를 수행하지 않는다. 정식 생성·빌드 진입점인 `npm run generate` / `npm run build`의 일반 PG 실행은 이제 허용된다. 메타데이터 검증, 단일 PostgreSQL 스냅샷 및 비공개 입력의 스냅샷·출처 검증은 그대로 유지한다. 이 검증을 우회하거나 SQLite 폴백으로 전환 성공을 주장하지 않는다. 격리 환경의 빌드·검사 통과와 정확한 SHA 기준 운영 배포 확인은 별도 게이트다.
 
 A few build inputs (for example the creative-name normalization ledger) live outside this repository. The generator looks for them in the directory named by `SEOUL_KENSHI_ROOT` or in the parent directories of this checkout.
 
 ## Checks
 
 ```sh
-node scripts/lore-json-validate.mjs            # changed files plus the migration ledger
-node scripts/lore-json-validate.mjs --strict   # every lore document
-node scripts/materialize-world-atlas.mjs --atlas lore/World-Narrative-Atlas.json --out lore --check
-npm run cast:verify -- --db data/canonical/wiki-cast.sqlite
+node scripts/lore-json-validate.mjs --strict   # document schema/content validation; not deployment proof
+node scripts/check-contract.mjs               # generated Korean-only publication contract
+# Migration-only reconciliation: consult scripts/postgres-migration/reconcile.mjs.
+# Its --pg argument can expose credentials in process arguments; use a protected environment.
 ```
 
-Test suites were removed by owner decision (2026-10-26); data integrity is verified with the cast authority check and the generate gate.
+Test suites were removed by owner decision (2026-10-26). Data reconciliation, generated-output checks, semantic review and deployment verification are separate; none grants source approval.
 
 ## Character creation tools
 
@@ -60,7 +68,7 @@ cd /path/to/separate-writing-directory
 npm --prefix /path/to/seoul-dengoku-wiki run inkos -- init --lang ko
 ```
 
-InkOS runs as a separate process. Do not give it `data/canonical/wiki-cast.sqlite` or private databases to read or write. It does not participate in wiki generation, approval, publication or deployment. The existing [candidate-only, read-only database adapter](scripts/inkos-adapter/README.md) remains the boundary; this integration does not connect InkOS directly to it or change its approval rules. LLM configuration remains global at `~/.inkos/.env`; never commit credentials. Help, version and project initialization do not require model calls.
+InkOS runs as a separate process. Do not give it PostgreSQL canonical/private credentials or SQLite migration databases to read or write. It does not participate in wiki generation, approval, publication or deployment. The existing [candidate-only, read-only database adapter](scripts/inkos-adapter/README.md) remains the boundary; this integration does not connect InkOS directly to it or change its approval rules. LLM configuration remains global at `~/.inkos/.env`; never commit credentials. Help, version and project initialization do not require model calls.
 
 GitHub Actions keeps its default non-recursive checkout. Woodpecker explicitly disables recursive submodule cloning for CI and deployment; the runtime Dockerfile copies only the required `vendor/*.tgz` packages, never the InkOS source or build.
 
@@ -69,8 +77,8 @@ Character creation sheets and portrait generation tools are maintained in [seoul
 ## Contributing
 
 1. Read [WORLD_BUILDING_GUIDE.md](WORLD_BUILDING_GUIDE.md) in full, then the `AGENTS.md` of the area you are editing.
-2. Proposals may be written in Korean or English. Before a change is merged, every narrative field carries both a Korean and an English value in the same JSON node.
-3. Edit the JSON source, never a generated page. For atlas pages, edit `lore/World-Narrative-Atlas.json` and regenerate the projections.
+2. Public narrative content is Korean-only; an English translation is not a publication prerequisite. Preserve historical multilingual evidence rather than rewriting it for the public locale policy.
+3. Edit supported typed PostgreSQL documents through `scripts/cast-sqlite/document-cli.mjs`, never generated pages or restored JSON source files. Edits create draft revisions and do not inherit approval. Atlas logical IDs likewise refer to database records, not JSON authoring files.
 4. Run the checks above and open a pull request from a dedicated branch. Only the owner merges into `main`.
 5. A card or story that uses a real person needs that person's recorded permission and a legal note before it is merged. Real companies, products, logos and current executives never appear in the fiction.
 
@@ -78,7 +86,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the CI details.
 
 ## 한국어 안내
 
-서울전국 공식 위키의 세계관 원천과 위키 앱을 관리하는 저장소입니다. 공개 본문은 `lore/`의 JSON 한 벌에 한국어와 영어를 함께 적고, 생성물은 손으로 고치지 않습니다. 편집 전에 [세계관 편집 지침](WORLD_BUILDING_GUIDE.md)을 끝까지 읽어 주세요.
+서울전국 공식 위키의 세계관 원천과 위키 앱을 관리하는 저장소입니다. 공개 본문은 한국어로 제공하며 생성물은 손으로 고치지 않습니다. 편집 전에 [세계관 편집 지침](WORLD_BUILDING_GUIDE.md)을 끝까지 읽어 주세요.
 
 ## License
 

@@ -1,7 +1,8 @@
-import { readPersonBirthdayInputs } from './person-inputs.mjs';
-import { readCastFamilyTreeInputs, FAMILY_INPUT_PATHS } from './family-inputs.mjs';
+import { readPersonBirthdayInputs, readPersonBirthdayInputsAsync } from './person-inputs.mjs';
+import { readCastFamilyTreeInputs, readCastFamilyTreeInputsAsync, FAMILY_INPUT_PATHS } from './family-inputs.mjs';
 import { readEvidenceDocumentReference } from './evidence-document-reference.mjs';
-import { orderDocumentKeys } from './document-key-order.mjs';
+import { readEvidenceDocumentReferenceAsync } from './evidence-document-reference-async.mjs';
+import { orderDocumentKeys, orderDocumentKeysAsync } from './document-key-order.mjs';
 
 export const PERSON_CONTACT_INPUT_PATHS = Object.freeze([
   ...FAMILY_INPUT_PATHS,
@@ -16,21 +17,27 @@ const fail = (code, detail) => { throw Object.assign(new Error(`${code}: ${detai
 
 /** Caller-owned connection; sparse production Maps, never new relationships or file IO. */
 export function readPersonContactInputs(db) {
+  return reconstructPersonContactInputs(db, () => readPersonBirthdayInputs(db), () => readCastFamilyTreeInputs(db), (path, sourceId) => {
+    const evidence = readEvidenceDocumentReference(db, { logicalPath: path });
+    return orderDocumentKeys(db, sourceId, evidence.document);
+  });
+}
+
+function reconstructPersonContactInputs(db, readBirthdays, readFamily, readDocument) {
   const sources = new Map();
   for (const path of PERSON_CONTACT_INPUT_PATHS) {
     const rows = db.prepare('SELECT source_id FROM source_file WHERE logical_path=?').all(path);
     if (rows.length !== 1) fail('E_PERSON_CONTACT_MISSING', path);
     sources.set(path, rows[0].source_id);
   }
-  const { birthdayRoster } = readPersonBirthdayInputs(db);
+  const { birthdayRoster } = readBirthdays();
   const people = new Map(birthdayRoster.map(person => [person.id, person]));
-  const familyGraph = readCastFamilyTreeInputs(db);
+  const familyGraph = readFamily();
   const documents = new Map();
   const document = path => {
     if (!sources.has(path)) fail('E_PERSON_CONTACT_SOURCE', path);
     if (!documents.has(path)) {
-      const evidence = readEvidenceDocumentReference(db, { logicalPath: path });
-      documents.set(path, orderDocumentKeys(db, evidence.sourceId, evidence.document));
+      documents.set(path, readDocument(path, sources.get(path)));
     }
     return documents.get(path);
   };
@@ -68,4 +75,44 @@ export function readPersonContactInputs(db) {
     }
   }
   return { parentStatusById, proseContactsById };
+}
+
+/** PostgreSQL twin: reconstruct only referenced evidence in the same transaction. */
+export async function readPersonContactInputsAsync(tx) {
+  const sourceSql = 'SELECT source_id FROM source_file WHERE logical_path=?';
+  const sources = new Map();
+  for (const path of PERSON_CONTACT_INPUT_PATHS) {
+    const rows = await tx.all('SELECT source_id FROM wiki.source_file WHERE logical_path=?', [path]);
+    if (rows.length !== 1) fail('E_PERSON_CONTACT_MISSING', path);
+    sources.set(path, rows);
+  }
+  const birthdays = await readPersonBirthdayInputsAsync(tx);
+  const family = await readCastFamilyTreeInputsAsync(tx);
+  const tables = new Map();
+  for (const table of ['family_parent_status', 'context_prose_contact']) {
+    const sql = `SELECT * FROM ${table} ORDER BY CAST(substr(json_pointer,10) AS INTEGER)`;
+    tables.set(sql, await tx.all(`SELECT * FROM wiki.${table} ORDER BY CAST(substr(json_pointer,10) AS INTEGER)`));
+  }
+  const documents = new Map();
+  for (const rows of tables.values()) for (const row of rows) {
+    const path = row.source_ref_path;
+    if (!sources.has(path)) fail('E_PERSON_CONTACT_SOURCE', path);
+    if (!documents.has(path)) {
+      const sourceId = sources.get(path)[0].source_id;
+      const evidence = await readEvidenceDocumentReferenceAsync(tx, sourceId);
+      documents.set(path, await orderDocumentKeysAsync(tx, sourceId, evidence.document));
+    }
+  }
+  const db = {
+    prepare(sql) {
+      return {
+        all: (...params) => {
+          if (sql === sourceSql && params.length === 1 && sources.has(params[0])) return sources.get(params[0]);
+          if (!params.length && tables.has(sql)) return tables.get(sql);
+          fail('E_PERSON_CONTACT_SOURCE', `unmaterialized statement: ${sql}`);
+        }
+      };
+    }
+  };
+  return reconstructPersonContactInputs(db, () => birthdays, () => family, path => documents.get(path));
 }

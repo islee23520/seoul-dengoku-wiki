@@ -22,6 +22,10 @@ const redirectRoutes = new Map([
   ['/system-design/regions/', '/wiki/world/World-and-Subway-Layers'],
 ])
 const failures = []
+if (catalogPath.endsWith('.json')) {
+  if ('englishDocuments' in JSON.parse(catalogSource)) failures.push('unexpected-english-contract')
+} else if (catalogSource.includes('wikiEnglishCatalog')) failures.push('unexpected-english-catalog')
+if (documents.some(({ route }) => route.startsWith('/en/'))) failures.push('unexpected-english-route')
 
 const checkReactRoute = async (route, expectedTitle) => {
   const response = await fetch(`${baseUrl}${route}`, { redirect: 'manual' })
@@ -52,7 +56,7 @@ for (const route of protectedRoutes) {
   const response = await fetch(`${baseUrl}${route}`, { redirect: 'manual' })
   if (![302, 303, 307].includes(response.status)) failures.push(`access-http:${response.status}:${route}`)
   let location
-  try { location = new URL(response.headers.get('location')) } catch {}
+  try { location = new URL(response.headers.get('location')) } catch { }
   if (!location || location.protocol !== 'https:' || location.hostname !== 'linalab.cloudflareaccess.com'
     || location.username || location.password
     || location.pathname !== `/cdn-cgi/access/login/${new URL(baseUrl).hostname}`) failures.push(`access-location:${route}`)

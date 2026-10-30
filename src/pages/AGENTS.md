@@ -19,9 +19,8 @@
 
 ## CONVENTIONS
 - 실제 라우트 등록과 lazy import는 `../App.tsx`에서 확인한다. 파일 존재만으로 노출 경로를 추정하지 않는다.
-- `ArticlePage`는 `documentApi.ts`를 통해 `/wiki/api/documents/world/<slug>?locale=<locale>`의 본문 blocks를 받아 렌더한다. 생성 catalog metadata는 문서 선택·언어 전환에 쓰며, Mermaid는 필요한 기사에서만 지연 로드한다.
-- 영문 기사는 해당 locale을 문서 언어와 article에 반영하고 화면을 떠날 때 기본 언어를 복원한다.
-- 한국어만 게시된 기사의 영문 접근은 기존 한국어 route로 이동한다. 없는 번역을 즉석에서 만들지 않는다.
+- `ArticlePage`는 `documentApi.ts`를 통해 `/wiki/api/documents/world/<slug>?locale=ko` 본문 blocks를 받아 렌더한다. 생성 catalog metadata는 문서 선택용이며, Mermaid는 필요한 기사에서만 지연 로드한다.
+- 공개 기사는 한국어만 제공한다. 영문 라우트·언어 전환 UI·즉석 번역을 추가하지 않는다.
 - 문서가 바뀔 때 이전 slug의 로드 실패나 비동기 결과가 새 기사 상태를 오염시키지 않게 한다.
 - `PersonDetailPage`의 공개 역량·권리·보유와 봉인된 역사 sheet는 서로 다른 상태와 자료다.
 - 제보 작성 UI는 문서 조회와 `FeedbackSurface` 바인딩이 준비된 뒤 노출한다.

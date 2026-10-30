@@ -19,9 +19,11 @@ steps:
       SEOUL_DEPLOY_URL: http://172.28.0.4:8080/api/deployments/seoul-wiki
       SEOUL_DEPLOY_TOKEN:
         from_secret: seoul_deploy_token
+    # PostgreSQL credentials are injected by the deployment owner, never CI.
     commands:
       - apt-get update
       - apt-get install -y --no-install-recommends python3 git ca-certificates
+      # Checks portrait LFS bytes and the PostgreSQL migration identity metadata.
       - node deploy/check-lfs-inputs.mjs
       - npm ci --ignore-scripts
       - node deploy/call-owner.mjs

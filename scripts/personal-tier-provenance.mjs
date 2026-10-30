@@ -3,6 +3,7 @@ import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { resolve } from 'node:path'
 import { createHash } from 'node:crypto'
+import { readCapturedEvidenceBytesAsync } from './document-store/evidence-reader-pg.mjs'
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex')
 const check = (condition, path) => { if (!condition) throw Object.assign(new Error('E_PERSON_TIER_PROVENANCE'), { code: 'E_PERSON_TIER_PROVENANCE', path }) }
@@ -12,6 +13,10 @@ const gitList = async (root, revision, path) => git(root, ['ls-tree', '--name-on
   .then(bytes => bytes.toString('utf8').split('\n').filter(Boolean))
 // Baseline commit whose published person details carry the preserved personal tiers.
 const revision = '6754735a88420f68830308658206c1e9b2d971a5'
+export const PERSONAL_TIER_BASELINE_REVISION = revision
+export const PERSONAL_TIER_BASELINE_MANIFEST_PATH = 'scripts/historical-inputs/personal-tier-baseline-6754735a.json'
+export const PERSONAL_TIER_BASELINE_MANIFEST_SHA256 = '0707b74bee2aabe59f149335098d24b00310c6c70789ced9364251357e20250d'
+export const personalTierBaselineIdentity = path => `personal-tier-baseline:${revision}:${path}`
 export const PERSONAL_TIER_PRESERVATION_IDS = Object.freeze('K157 K158 K161 K398 K399 K400 K401 K402 K403 K404 K407 K408 K409 K410 K411 K412 K413 K414 K415 K416 K417 K418 K419 K420 K421 K422 K439 K455 K471 K487 K503 K519 K535 K551 K567 K583 K599 K615 K631 K647 K653 K663 K669 K679 K685 K695 K701 K711 K717 K727 K733 K743 K749 K759 K765 K775 K791 K797 K807 K813 K823 K829 K839 K845 K855 K861 K871 K877 K887 K893 K903 K909 K919 K925 K935 K941 K951 K957 K967 K973 K983 K989 K1000'.split(' '))
 export function assertPersonalTierPreservation(map) {
   check(map instanceof Map && PERSONAL_TIER_PRESERVATION_IDS.every(id => map.has(id)), 'personalTierPreservation')
@@ -51,10 +56,44 @@ export async function authenticatePersonalTierProvenance(root, reader = readFile
       : 's16-unaffiliated-source-application-522:functional-community-role'
     const blocks = (old.state === 'S06' ? current06 : current16).content.filter(block => block.anchor === anchor || block.anchor.startsWith(anchor + '-'))
     check(blocks.length > 1, old.characterId + ':current-card')
-    const row = { personId: old.characterId, publicId: old.id, name: old.name, stateId: old.state, source, commonTier: old.commonTier,
-      provenance: { baselineDetailSha256: sha256, authority, currentRoleBlocks: blocks.map(block => ({ anchor: block.anchor, sha256: hash(JSON.stringify(block)) })) } }
+    const row = {
+      personId: old.characterId, publicId: old.id, name: old.name, stateId: old.state, source, commonTier: old.commonTier,
+      provenance: { baselineDetailSha256: sha256, authority, currentRoleBlocks: blocks.map(block => ({ anchor: block.anchor, sha256: hash(JSON.stringify(block)) })) }
+    }
     map.set(old.characterId, row)
   }
   return assertPersonalTierPreservation(map)
 }
 export const loadPersonalTierPreservation = authenticatePersonalTierProvenance
+
+// The sealed inventory binds every baseline path, Git blob and original byte
+// hash. Current lore remains supplied by the typed current-document reader.
+export async function authenticatePersonalTierProvenanceAsync(privateTx, root, reader) {
+  check(typeof reader === 'function', 'currentLoreReader')
+  const manifestBytes = await readCapturedEvidenceBytesAsync(privateTx, PERSONAL_TIER_BASELINE_MANIFEST_PATH, {
+    identity: personalTierBaselineIdentity(PERSONAL_TIER_BASELINE_MANIFEST_PATH),
+    sha256: PERSONAL_TIER_BASELINE_MANIFEST_SHA256,
+  })
+  const manifest = JSON.parse(manifestBytes)
+  check(manifest.schema === 'personal-tier-baseline.v1' && manifest.revision === revision
+    && Array.isArray(manifest.entries), 'baselineManifest')
+  const entries = new Map(manifest.entries.map(entry => [entry.path, entry]))
+  check(entries.size === manifest.entries.length, 'baselineManifestDuplicates')
+  const blobReader = async (_root, requestedRevision, path) => {
+    const entry = entries.get(path)
+    check(requestedRevision === revision && entry, 'baselinePath')
+    const identity = personalTierBaselineIdentity(path)
+    const rows = await privateTx.all(`SELECT kind, revision, git_revision, git_blob
+      FROM wiki_private.ev_evidence WHERE identity = ? AND logical_path = ?`, [identity, path])
+    check(rows.length === 1 && rows[0].kind === 'baseline' && rows[0].revision === revision
+      && rows[0].git_revision === revision && rows[0].git_blob === entry.gitBlob, 'baselineGitBinding')
+    const bytes = await readCapturedEvidenceBytesAsync(privateTx, path, { identity, sha256: entry.sha256 })
+    check(bytes.length === entry.byteLength, 'baselineByteLength')
+    return bytes
+  }
+  const listReader = async (_root, requestedRevision, path) => {
+    check(requestedRevision === revision && path === 'public/person-details', 'baselineDirectory')
+    return manifest.entries.filter(entry => entry.path.startsWith(path + '/')).map(entry => entry.path)
+  }
+  return authenticatePersonalTierProvenance(root, reader, blobReader, listReader)
+}

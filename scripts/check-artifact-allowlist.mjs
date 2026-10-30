@@ -105,7 +105,8 @@ export async function artifactFailures({ distRoot, allowlist, appSource, seoulPo
     seoulPolygons = boundary.features.find(feature => feature.id === 'geography:empire:seoul').geometry.coordinates
   }
   const contract = JSON.parse(await readFile(resolve(distRoot, 'wiki-contract.json'), 'utf8').catch(() => '{}'))
-  const documentSlugs = new Set([...(contract.documents ?? []), ...(contract.englishDocuments ?? [])].map(({ slug }) => slug))
+  if ('englishDocuments' in contract) failures.push('E_ARTIFACT_ENGLISH_CONTRACT: wiki-contract.json contains englishDocuments')
+  const documentSlugs = new Set((contract.documents ?? []).map(({ slug }) => slug))
   const appChunks = new Set(allowlist.assets.appChunks)
   const assetPattern = new RegExp(allowlist.assets.pattern, 'u')
   const rootFiles = new Set(allowlist.rootFiles)
