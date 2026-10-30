@@ -1,4 +1,4 @@
-# 인물 SQLite 작업 지침
+# PostgreSQL 저작·SQLite 이관 archive 작업 지침
 
 ## OVERVIEW
 PostgreSQL 저작 정본의 typed document reader·편집과 SQLite 이관 참조본의 검증·외부 export를 다룬다. 삭제된 JSON에서 정본을 재구축하지 않는다.
@@ -16,12 +16,12 @@ PostgreSQL 저작 정본의 typed document reader·편집과 SQLite 이관 참�
 | 조회·검증 | `query.mjs`, `verify.mjs`, `current-authority.mjs` | 현재 SQLite storage·head·privacy |
 
 ## CONVENTIONS
-- PG 전환 코드의 저작·공개 판독은 `db-pg.mjs`의 비동기 transaction을 사용한다. 실제 운영 승격은 배포 receipt로 확인한다. `node:sqlite`와 `db.mjs`는 이관·회귀·명시적 archive 판독 전용이다.
+- 운영 PG 저작·공개 판독은 `db-pg.mjs`의 비동기 transaction을 사용한다. 운영 승격 wiki SHA `24f3c676f7df0b9903e02f4278ac65bf8fac688f`, run `20261030T150126Z-11560`의 관측은 `deploy/README.md`에 기록한다. `node:sqlite`와 `db.mjs`는 이관·회귀·명시적 archive 판독 전용이다.
 - 이관 참조 SQLite의 `SCHEMA_VERSION`은 5, `APPLICATION_ID`는 `0x57435351`이다. PG는 migration metadata와 `wiki.meta`를 대조한다.
 - 도메인 mapper의 열 목록, SQL schema, 저장·복원·검증 코드를 함께 대조한다.
 - 현재 정본 계약은 `README.md`와 루트 `lore/AUTHORING-JSON.md`를 따른다. 과거 source manifest를 현재 파일 입력 목록으로 쓰지 않는다.
-- 전환 후 조회·편집·생성의 기준은 PostgreSQL 현재 head와 release snapshot이다. 배포 전 코드 전환을 운영 완료로 간주하지 않는다. 삭제된 JSON이나 Git blob 대조로 현재성 검사를 대체하지 않는다.
-- `data/canonical/wiki-cast.sqlite`는 이관 참조본이며 운영 출력 대상이 아니다. 이관 export는 checkout 밖 새 경로만 허용한다.
+- 조회·편집·생성의 기준은 PostgreSQL 현재 head와 release snapshot이다. 격리 대사와 운영 승격은 별도 증거다. 삭제된 JSON이나 Git blob 대조로 현재성 검사를 대체하지 않는다.
+- 추적 중인 `data/canonical/wiki-cast.sqlite`와 외부 SQLite는 명시적 이관·비교 archive로 보존하며 런타임 입력이나 운영 출력 대상이 아니다. 이전 배포 롤백과 PG 불변 역사도 유지한다. 이관 export는 checkout 밖 새 경로만 허용한다.
 - 정본은 지원되는 typed CLI로 편집한다. export 파일로 정본을 덮어쓰거나 임의 SQL로 편집 계약을 우회하지 않는다.
 - PG transaction callback은 비동기이며 동일 leased 연결을 사용한다. SQLite 이관용 `withTransaction()` callback만 동기식이고 중첩·Promise 반환을 금지한다.
 - 과거 schema DB를 현행 정본으로 승격하거나 새 DB로 재구축하지 않는다. 버전·이력 계약은 현재 reader와 README를 확인한다.
@@ -34,7 +34,7 @@ npm run cast:build -- --db data/canonical/wiki-cast.sqlite --output /tmp/wiki-ca
 npm run cast:query -- --db data/canonical/wiki-cast.sqlite person --id K1022
 npm run cast:verify -- --db data/canonical/wiki-cast.sqlite
 ```
-`cast:verify`는 현재 SQLite storage·head·privacy를 읽기 전용 검사한다. 과거 JSON freshness·offline/full 구분은 현행 검증 계약이 아니다.
+`cast:verify`는 지정한 SQLite archive의 storage·head·privacy를 읽기 전용 검사하며 PG 운영 상태 검증이 아니다. 과거 JSON freshness·offline/full 구분은 현행 검증 계약이 아니다.
 
 ## ANTI-PATTERNS
 - DB 생성·복사·검증 성공을 owner approval, 공개, 배포, 게임 구현 승인으로 표시하지 않는다.

@@ -1,5 +1,25 @@
 # Wiki deployment caller
 
+## 운영 전환 관측 (2026-10-30)
+
+PostgreSQL `wiki`가 현재 운영 저작 정본이다. owner `e941e9f`의 승격 run
+`20261030T150126Z-11560`은 wiki 커밋 `24f3c676f7df0b9903e02f4278ac65bf8fac688f`에 대해
+HTTP 200, outcome `deployed`를 반환했다. 배포 보고의 5개 단계는 모두 PASS이며
+canonical TSV 대사도 통과했다. 이 기록은 아래의 앞선 로컬·격리 환경 대사와 별개다.
+
+공개 관측은 health HTTP 200(인물 511·token 511), 문서 61개,
+`/wiki/api/documents/world/National-Dress-and-Grooming?locale=ko` HTTP 200(18 blocks), 영어 요청 HTTP 400, wiki shell HTTP 200이었다.
+런타임은 읽기 전용 비밀 파일 mount를 사용하며 raw PG URL 환경변수는 없었다.
+`/app/data/canonical/wiki-cast.sqlite` 실물은 런타임에 없었다. 다만 정적 import 때문에
+inventory에 SQLite 항목은 남아 있으므로 inventory까지 제거됐다고 해석하지 않는다.
+
+추적 중인 SQLite와 외부 SQLite는 명시적 이관·비교 archive로 보존하며 운영 런타임
+입력이나 편집 정본으로 사용하지 않는다. 이전 배포 롤백도 유지한다. 이 전환은
+archive 삭제나 PG `wiki.source_file` 원천 바이트·해시, `source_record` provenance,
+봉인 revision의 삭제·재작성을 허가하지 않는다. 운영 배포는 새 본문의 소유자 승인이나
+게임 구현 완료를 뜻하지 않는다.
+
+
 ## wiki-postgres 운영 PostgreSQL (desktop-bo514et)
 
 운영 단일 PostgreSQL 17 클러스터는 desktop-bo514et의 통합 compose
@@ -56,10 +76,10 @@ invalid response, HTTP error, missing terminal record, or 35-minute deadline
 fails the step. Responses are limited to 8 MiB total and 64 Ki characters per
 line. Neither upstream response text nor the token is logged.
 
-The catalog is not tracked. `npm ci --ignore-scripts` installs the generator's
-dependencies, and `node scripts/generate-catalog.mjs` creates it from repository
-lore and checked-in build snapshots. No full Vite build, crest generation, or
-observed-geography generation is needed for the HTTP check. The check command is:
+The catalog is not tracked. The owner creates it through the authenticated PostgreSQL
+release stage (`npm run generate` / `npm run build`) with protected public/private inputs;
+do not run the catalog worker directly against live output. The HTTP check consumes
+that generated catalog; it does not itself build or approve the release. The check command is:
 
 ```sh
 node deploy/check-live-contract.mjs --public-edge https://sss.linalab.io live-http-green.json src/generated/wikiCatalog.ts
@@ -129,7 +149,7 @@ unset WIKI_RUNTIME_READER_PASSWORD
 계획한 후 수행한다. owner는 `CI_SEOUL_DOCUMENT_PG_FILE`의 보호된 URL을 전용
 Docker 볼륨에 넣고 후보에 읽기 전용으로 마운트한다. URL은 컨테이너 환경변수가
 아니며 Docker 볼륨에는 평문으로 남으므로 daemon 접근을 제한한다. 파일 내용·URL을 출력하거나 커밋하지 않는다.
-후보 API의 공개 응답과 private 거부를 검증하기 전 기존 SQLite API를 전환하지 않는다.
+후보 API의 공개 응답과 private 거부를 검증한 뒤에만 운영을 전환한다. 위 운영 관측 이후에도 재배포 시 같은 경계를 유지하며, 이전 배포는 명시적 롤백으로 보존한다.
 
 일회용 PostgreSQL에서 parent 통합 검증 시 bootstrap을 적용한 다음 위 SQL을
 같은 임시 암호로 두 번 실행한다. 로그인으로 `SET ROLE wiki_reader`가 성공하고
@@ -144,8 +164,8 @@ Docker 볼륨에 넣고 후보에 읽기 전용으로 마운트한다. URL은 �
 검증했다(저장된 호출부 블록 추출 실행: SQLite 대비 바이트 동등,
 정답 핀 9/9·오답 핀 거부 9/9). 별도로 격리 환경에서 SQLite·PG reader와
 전체 worker 출력 1,433개의 동등성, 일반 PG 빌드 및 계약·산출물·게이트 검사
-통과를 확인했다. 이는 운영 배포 검증이 아니다. 정확한 커밋 SHA 기준 운영 후보
-확인과 배포는 남아 있으며, 런타임 연결값을 빌드 프로세스 전역 환경에 주입하지 않는다.
+통과를 확인했다. 이 격리 검증 자체는 운영 배포 검증이 아니다. 이후 정확한 SHA와
+run 기준 운영 승격은 위 운영 전환 관측에 별도로 기록했다. 런타임 연결값을 빌드 프로세스 전역 환경에 주입하지 않는다.
 
 ### 비공개 생성 reader 프로비저닝
 

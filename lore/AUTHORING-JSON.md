@@ -1,13 +1,13 @@
-# SQLite 작성 계약
+# PostgreSQL 작성 계약
 
-공개 편집 정본은 Git LFS로 관리하는 `data/canonical/wiki-cast.sqlite`다. 이 DB는 JSON 원천에서 다시 만드는 캐시가 아니라 현재의 저작 권위다. 조회·문서 편집·생성은 이 SQLite 정본을 기준으로 한다.
+공개 편집 정본은 현재 운영 PostgreSQL의 `wiki`다. 조회·문서 편집·생성은 PG 현재 head와 release snapshot을 기준으로 하며 저작 CLI와 문서 API는 SQLite 폴백이 없다. 운영 wiki 커밋 `24f3c676f7df0b9903e02f4278ac65bf8fac688f`, run `20261030T150126Z-11560`의 배포 관측은 `deploy/README.md`에 기록한다. 앞선 격리 reader·worker 대사는 별도 이관 증거다. Git LFS로 추적 중인 `data/canonical/wiki-cast.sqlite`와 외부 SQLite는 명시적 이관·비교 archive로 보존하며 런타임 입력이나 편집 정본이 아니다. 이전 배포 롤백과 PG 원천 바이트·해시·provenance·봉인 revision은 유지한다.
 
 - 물리적인 lore JSON 원천 파일은 모두 제거됐다. 문서·출처 기록에 남아 있는 `lore/.../*.json` 이름은 DB 안의 논리적 문서 식별자 또는 provenance이며, 디스크에서 다시 읽어야 할 입력 파일이 아니다.
 - 현재 envelope head는 예시를 포함해 99개다. 예시는 실제 게시 문서와 구별한다.
 - 원래 인물 ID 1,022개는 보존돼 있다. 현재 인물 511명은 disposition을 통해 구분한다. 보존 ID 수, 현재 인물 수, 프로필 수, 문서 수는 서로 다른 분모다.
-- 비공개 editorial·Soul 저장소는 `.omo/private/seoul-migration/sqlite-authority-20261021` 아래에 별도로 둔다. 비공개 저장소 파일은 mode `600`으로 관리하며 Git이나 공개 배포물에 넣지 않는다.
-- 생성된 공개 JSON은 SQLite에서 내보낸 출력물이다. 직접 고쳐 저작 원천으로 사용하지 않는다.
-- 정식 생성은 현재 실행 중이다. 완료·성공·원격 게시·소유자 승인이 입증된 상태로 기록하지 않는다.
+- 비공개 editorial·Soul 데이터는 `wiki_private`의 별도 권한 경계로 관리한다. 이전 `.omo/private/seoul-migration/sqlite-authority-20261021`의 SQLite는 이관 archive이며 운영 정본이 아니다. 비공개 archive·비밀 파일은 mode `600`으로 관리하며 Git이나 공개 배포물에 넣지 않는다.
+- 생성된 공개 JSON은 PG 정본의 출력물이다. 직접 고쳐 저작 원천으로 사용하지 않는다.
+- 생성·승인·원격 게시는 별도 상태다. 위 SHA/run의 운영 배포 관측을 새 revision의 소유자 승인이나 게임 구현 완료로 확대하지 않는다.
 
 DB의 존재, export 성공, 검증 통과, 렌더링 완료, 공개 배포, 게임 구현, 소유자 승인은 서로 다른 상태다. 현재 저장 상태를 확인하는 검증을 새로운 게시 승인으로 해석하지 않는다.
 
@@ -44,4 +44,4 @@ DB의 존재, export 성공, 검증 통과, 렌더링 완료, 공개 배포, 게
 논리적 `.json` 이름은 이 과정에서 문서 식별 및 과거 출처 연결에 계속 사용할 수 있다. 그 이름이 남아 있다는 이유로 해당 물리 파일을 다시 만들 필요는 없다. revision 이력과 출처 provenance는 서로 다른 정보다. 과거 JSON의 경로·pointer·해시는 당시 입력의 계보이며, 현재 문서 head를 대신하지 않는다.
 
 
-`node scripts/lore-json-validate.mjs --strict`는 SQLite에 등록된 current/example 문서를 읽어 영역 스키마와 로케일·블록·링크를 대조한다. `.json` 이름을 인자로 주어도 현재 저장소 문서는 DB에서 읽는다. 스키마 통과는 번역 의미나 게시 승인을 대신하지 않는다.
+`node scripts/lore-json-validate.mjs --strict`는 레거시 SQLite의 current/example 문서를 읽어 영역 스키마와 로케일·블록·링크를 대조하는 이관 진단 도구다. `.json` 이름을 인자로 주어도 이 경로는 SQLite 문서를 읽으며 현재 PG 정본을 검증하지 않는다. 이관 진단 통과를 PG 현재 head 검증이나 번역 의미·게시 승인으로 해석하지 않는다.
