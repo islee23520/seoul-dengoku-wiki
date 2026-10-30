@@ -286,7 +286,7 @@ await mkdir(generatedRoot, { recursive: true })
 await mkdir(publicRoot, { recursive: true })
 
 const articleDatabasePath = process.env.WIKI_DOCUMENT_DB ?? resolve(projectRoot, 'data/canonical/wiki-cast.sqlite')
-const atlasPeople = process.env.WIKI_DOCUMENT_PG
+let atlasPeople = process.env.WIKI_DOCUMENT_PG
   ? await (async () => {
       const { createReader } = await import('./cast-sqlite/db-pg.mjs')
       const { readAtlasIdentityAsync } = await import('./cast-sqlite/atlas-identity.mjs')
@@ -300,19 +300,30 @@ const atlasPeople = process.env.WIKI_DOCUMENT_PG
       } finally { await reader.close() }
     })()
   : await atlasPeopleContext(loreRoot, { dbPath: articleDatabasePath })
-// The atlas check path is still SQLite-only (checkDatabaseOutputs uses
-// synchronous readers); a PG generation run must not silently open SQLite
-// here. Fail closed until the materializer gains an async PostgreSQL check.
+// PostgreSQL release sourcing: atlas identity and the materializer check
+// share one worker-owned read-only snapshot transaction (async twin path).
+// SQLite callers keep the original materializeWorldAtlas call unchanged.
 if (process.env.WIKI_DOCUMENT_PG) {
-  throw Object.assign(new Error('E_ATLAS_CHECK_PG_UNCONVERTED: materializeWorldAtlas check path is not PostgreSQL-sourced yet'), { code: 'E_ATLAS_CHECK_PG_UNCONVERTED' })
+  const { createReader } = await import('./cast-sqlite/db-pg.mjs')
+  const { readAtlasIdentityAsync } = await import('./cast-sqlite/atlas-identity.mjs')
+  const { materializeWorldAtlasAsync } = await import('./cast-sqlite/atlas-materializer.mjs')
+  const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+  const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
+  try {
+    atlasPeople = await reader.transaction(tx => readAtlasIdentityAsync(tx),
+      { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
+    await reader.transaction(tx => materializeWorldAtlasAsync({ tx, peopleContext: atlasPeople }),
+      { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) })
+  } finally { await reader.close() }
+} else {
+  await materializeWorldAtlas({
+    atlasPath: resolve(loreRoot, 'World-Narrative-Atlas.json'),
+    outDir: loreRoot,
+    check: true,
+    peopleContext: atlasPeople,
+    dbPath: articleDatabasePath,
+  })
 }
-await materializeWorldAtlas({
-  atlasPath: resolve(loreRoot, 'World-Narrative-Atlas.json'),
-  outDir: loreRoot,
-  check: true,
-  peopleContext: atlasPeople,
-  dbPath: articleDatabasePath,
-})
 const jsonPages = process.env.WIKI_DOCUMENT_PG
   ? (await typedCatalogSourceAsync(tx => readCatalogPagesAsync(tx)))
       .map(page => ({ ...page, path: resolve(projectRoot, page.path) }))
