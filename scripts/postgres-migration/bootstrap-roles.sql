@@ -6,8 +6,8 @@
 --   운영(컨테이너, Todo 2): docker exec -i wiki-postgres psql -U postgres < scripts/postgres-migration/bootstrap-roles.sql
 --
 -- 역할 정책 (헤더 문서):
---   - 모든 역할은 NOLOGIN. 로그인/비밀번호는 운영 환경에서 별도로 부여한다
---     (ALTER ROLE wiki_reader LOGIN PASSWORD '…' — 이 파일에 넣지 않음).
+--   - 모든 역할은 NOLOGIN. 런타임 로그인은 별도 wiki_runtime_reader 역할로
+--     runtime-reader-login.sql에서 프로비저닝한다. wiki_reader는 NOLOGIN을 유지한다.
 --   - 개발(Mac)은 trust/peer 소켓 인증을 사용하므로 비밀번호가 필요 없다.
 --   - wiki_reader        : 공개 위키 읽기. wiki 스키마 USAGE + SELECT만.
 --   - wiki_owner         : wiki 스키마 소유자(DDL 포함 전 권한).

@@ -84,16 +84,61 @@ Deployment test suites were removed by owner decision. The deployment caller and
 `server/wiki-document-api.mjs`는 런타임에 PostgreSQL만 읽는다(SQLite 폴백 없음). 배포 시
 owner가 다음을 **런타임 환경변수/시크릿으로** 주입해야 한다:
 
-- `WIKI_DOCUMENT_PG` — PostgreSQL 연결 URL(예: `postgresql://wiki_reader@…/seoul`).
-  이미지에 절어 들어가지 않는다(`deploy/wiki-document.Dockerfile` 참조).
-- 연결은 `wiki_reader` 역할 경계로 접속한다(`scripts/cast-sqlite/db-pg.mjs` `createReader`).
-  런타임 reader 로그인 프로비저닝은 `scripts/postgres-migration/runtime-reader-login.sql`이
-  owner 단계에서 수행한다. 이 저장소는 호스트 자격증명을 보유하지 않는다.
+- `WIKI_DOCUMENT_PG` — `wiki_runtime_reader` 로그인용 PostgreSQL URL(예:
+  `postgresql://wiki_runtime_reader:<URL-encoded-password>@wiki-postgres:5432/seoul`).
+  비밀값을 예제처럼 문자 그대로 저장하거나 이미지·저장소에 넣지 않는다.
+- `wiki_reader`는 NOLOGIN이며 런타임은 별도 `wiki_runtime_reader`로 접속해
+  `db-pg.mjs`의 startup option으로 `wiki_reader` 역할을 적용한다. 로그인 역할은
+  해당 역할만 상속·전환할 수 있다. 이 저장소는 호스트 자격증명을 보유하지 않는다.
 - 기동 시 `wiki.meta`와 저장소 `scripts/postgres-migration/schema-pg/metadata.json`의
   `schema_version`·`source_sha256`이 일치해야 하며, 불일치면 기동이 실패한다(fail-closed).
 
-owner 배포 파이프라인에서의 실제 주입은 아직 검증되지 않았다. 로컬 일회용
-PostgreSQL에서의 검증(전수 대사 PASS·HTTP 응답 동등성)만 완료된 상태다.
+### 런타임 로그인 프로비저닝과 비밀 전달
+
+먼저 `bootstrap-roles.sql`과 schema/load를 적용한다. `wiki_reader`는 LOGIN으로
+바꾸지 않는다. 아래 스크립트는 PostgreSQL 17에서 `seoul` DB에 접속한 슈퍼유저가
+실행하며 트랜잭션으로 역할을 생성하거나 암호를 회전한다. 기존 로그인 역할의
+다른 역할 멤버십·소유권·직접 권한·역할 설정이나 위험 속성은 자동 제거하지 않고
+실패한다. 원인을 관리자 측에서 조사·정리한 뒤 재실행한다. `wiki_reader`의
+위험 속성, 상위 역할, 대표적인 쓰기·사설 권한도 거부한다. 전체 DB의 PUBLIC 및
+기존 역할 권한을 별도로 감사해야 한다. 이 스크립트는 권한 감사 전체를 대체하지 않는다.
+
+비밀 입력 전 psql echo와 해당 PostgreSQL 세션의 statement/duration/error SQL
+로깅을 끄며, 설정 권한이 없거나 감지 가능한 SQL 감사 확장 활성화 시 실패한다.
+프록시·외부 수집기·기타 SQL 감사 확장이 쿼리를 기록하지 않는 신뢰된 관리자
+경로를 사전에 확인한다. 다른 세션의 로깅 설정은 변경하지 않는다. 환경변수는
+같은 호스트의 권한 있는 프로세스에 노출될 수 있으므로 전용 관리자 세션을 쓰고
+shell xtrace, 세션 녹화, 명령 기록 및 터미널 캡처를 끈다. 암호는 secret manager에서
+비공개 입력으로 환경변수에 주입한다. 아래 입력 예시는 터미널에서 직접 실행하며
+값을 명령 인수, SQL 파일, 로그 또는 shell history에 넣지 않는다:
+
+```sh
+set +x
+stty -echo; printf 'Runtime reader password: ' >&2
+IFS= read -r WIKI_RUNTIME_READER_PASSWORD
+stty echo; printf '\n' >&2
+export WIKI_RUNTIME_READER_PASSWORD
+psql -X -v ON_ERROR_STOP=1 -d seoul -f scripts/postgres-migration/runtime-reader-login.sql
+unset WIKI_RUNTIME_READER_PASSWORD
+```
+
+관리자 접속은 별도로 안전하게 구성하고 암호를 psql 인수/URL에 넣지 않는다.
+네트워크를 통한다면 검증된 TLS와 신뢰된 경로가 필요하다. 오류가 발생해도
+환경변수를 해제하고, 감사 로그에 비밀이 기록됐을 가능성이 있으면 해당 비밀을
+폐기·회전한다. 재실행은 새 암호를 적용하므로 기존 API 연결의 재접속과 롤백을
+계획한 후 수행한다. owner의 `CI_SEOUL_DOCUMENT_PG_FILE`에는 URL 인코딩된
+암호를 포함한 URL을 접근 제한된 비밀 파일로 전달하고, owner가 런타임에만
+`WIKI_DOCUMENT_PG`로 주입한다. 파일 내용·URL을 출력하거나 커밋하지 않는다.
+후보 API의 공개 응답과 private 거부를 검증하기 전 기존 SQLite API를 전환하지 않는다.
+
+일회용 PostgreSQL에서 parent 통합 검증 시 bootstrap을 적용한 다음 위 SQL을
+같은 임시 암호로 두 번 실행한다. 로그인으로 `SET ROLE wiki_reader`가 성공하고
+공개 `wiki` SELECT가 가능해야 한다. `wiki_private` SELECT, `wiki` 쓰기,
+다른 역할로 `SET ROLE`, 슈퍼유저 작업은 각각 실패해야 한다. 별도로 `pg_roles`와
+`pg_auth_members`에서 NOLOGIN 경계·위험 속성·유일한 비관리 멤버십을 확인하고,
+다른 멤버십이나 직접 권한이 있는 오염된 로그인 역할을 거부하는지도 확인한다.
+실제 `db-pg` startup option과 문서 API도 동일한 disposable DB에서 검증한다.
+이 절의 절차 자체는 운영 적용이나 검증 완료를 의미하지 않는다.
 
 카탈로그 historical-rights 원문 9경로의 PostgreSQL reader 배선은 로컬에서
 검증했다(저장된 호출부 블록 추출 실행: SQLite 대비 바이트 동등,
