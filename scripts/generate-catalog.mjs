@@ -950,10 +950,7 @@ underground.paths = underground.paths.flatMap(path => {
 })
 await writeFile(resolve(publicRoot, 'underground-detail.json'), `${JSON.stringify(underground)}\n`)
 
-// Historical rights raw bytes: PG mode reads the same nine named
-// wiki.source_file paths through the archive twin (stored-sha256 check kept,
-// pin optional); missing rows keep E_CATALOG_RIGHTS_SOURCE while archive
-// integrity failures propagate as E_SOURCE_ARCHIVE.
+// PG archive lookup, pin and integrity failures propagate as E_SOURCE_ARCHIVE.
 const HISTORICAL_RIGHTS_SOURCES = {
   approval: 'scripts/approved-seoul-rights-transition.json',
   existing: 'scripts/historical-inputs/personal-holdings.json',
@@ -967,14 +964,8 @@ const HISTORICAL_RIGHTS_SOURCES = {
 }
 const historicalRightsBytes = process.env.WIKI_DOCUMENT_PG
   ? await typedCatalogSourceAsync(async tx => Object.fromEntries(
-      await Promise.all(Object.entries(HISTORICAL_RIGHTS_SOURCES).map(async ([key, path]) => {
-        try {
-          return [key, await readSourceArchiveAsync(tx, path)]
-        } catch (error) {
-          if (error && error.missingSource) throw new Error(`E_CATALOG_RIGHTS_SOURCE:${path}`)
-          throw error
-        }
-      })),
+      await Promise.all(Object.entries(HISTORICAL_RIGHTS_SOURCES).map(async ([key, path]) =>
+        [key, await readSourceArchiveAsync(tx, path)])),
     ))
   : typedCatalogSource(db => Object.fromEntries(Object.entries(HISTORICAL_RIGHTS_SOURCES).map(([key, path]) => {
       const row = db.prepare('SELECT raw_bytes FROM source_file WHERE logical_path=?').get(path)
