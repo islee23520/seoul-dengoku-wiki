@@ -1,12 +1,12 @@
-# LORE 루트 코퍼스 — SQLite 정본과 논리 식별자
+# LORE 루트 코퍼스 — PostgreSQL 정본과 논리 식별자
 
 별개 도메인이다. 루트 계약과 하위 도메인별 `AGENTS.md`를 함께 읽는다.
 
 ## 개요
 
-2026-10-22 이관으로 `lore/`의 물리적 JSON 원천 파일은 모두 제거됐다. 저작 정본은 `lore/AUTHORING-JSON.md` 계약대로 Git-LFS로 관리하는 `data/canonical/wiki-cast.sqlite`다. 조회·편집·생성은 이 정본을 기준으로 하고, 전용 브랜치에서 작업해 PR로 제안하며 main 병합은 소유자만 한다.
+2026-10-22 이관으로 `lore/`의 물리적 JSON 원천 파일은 모두 제거됐다. 현재 운영 저작 정본은 `lore/AUTHORING-JSON.md` 계약대로 PostgreSQL `wiki`다. 운영 wiki SHA `24f3c676f7df0b9903e02f4278ac65bf8fac688f`, run `20261030T150126Z-11560`은 `deploy/README.md`의 별도 배포 관측이며, 앞선 격리 대사와 구분한다. 조회·편집·생성은 PG 현재 head를 기준으로 하고, 전용 브랜치에서 작업해 PR로 제안하며 main 병합은 소유자만 한다. 추적 중인 SQLite와 외부 SQLite는 명시적 이관·비교 archive로 보존하며 런타임 입력이 아니다. 이전 배포 롤백과 PG 불변 역사도 유지한다.
 
-문서·출처 기록에 남아 있는 `lore/.../*.json` 이름은 DB 안의 논리적 문서 식별자 또는 provenance지, 디스크에서 다시 읽어야 할 입력 파일이 아니다. 생성된 공개 JSON은 SQLite에서 내보낸 출력물이므로 직접 고쳐 저작 원천으로 쓰지 않는다.
+문서·출처 기록에 남아 있는 `lore/.../*.json` 이름은 DB 안의 논리적 문서 식별자 또는 provenance지, 디스크에서 다시 읽어야 할 입력 파일이 아니다. 생성된 공개 JSON은 PG에서 내보낸 출력물이므로 직접 고쳐 저작 원천으로 쓰지 않는다.
 
 이 디렉터리에 남은 `.md`는 지침·목록 문서(이 파일, `AUTHORING-JSON.md`, `README.md`, 하위 도메인 `AGENTS.md`)다.
 
@@ -15,20 +15,20 @@
 | 과제 | 위치 |
 |------|------|
 | 정본 계약·편집 절차 | `lore/AUTHORING-JSON.md`, `WORLD_BUILDING_GUIDE.md` |
-| 현재 검증 경로 | `scripts/lore-json-validate.mjs --strict`(현재·예시 문서를 SQLite에서 읽는다), `scripts/gate.mjs`, cast-sqlite 검증 슈트 |
+| 검증 경계 | `scripts/lore-json-validate.mjs --strict`는 레거시 SQLite current/example 문서의 이관 진단 전용이며 PG 정본을 검증하지 않는다. `scripts/gate.mjs` 등도 실제 입력·검사 범위를 확인하며 SQLite 진단 통과를 PG 검증으로 해석하지 않는다. |
 | 코퍼스 목차 | `README.md`(한국어 상대 링크) |
 | 하위 도메인 지침 | `bestiary/`, `characters/`, `factions/`, `places/`, `regions/`, `culture/`, `name-pools/` 각 `AGENTS.md`; 관계 검증은 `relations/validate.mjs` |
 | 구 레지스트리 지표 | 적대 집단 G01–G26, 운영 가문 HC01–HC22/HP01–HP10, 합성체 H/F/V01–16, 외부 극장 XT01–XT05, 배치 Mxxx/Bxxx — 논리 식별자 체계로 존속 |
 
 ## 규약
 
-- 엔티티 ID는 영구적이고 다시 매기지 않는다. 인물 현재 분모·보존 ID는 SQLite disposition과 `lore/AUTHORING-JSON.md`를 확인한다. `K001`–`K412` 같은 옛 범위나 명부 행 순서로 ID를 부여하지 않는다.
+- 엔티티 ID는 영구적이고 다시 매기지 않는다. 인물 현재 분모·보존 ID는 PG disposition과 `lore/AUTHORING-JSON.md`를 확인한다. `K001`–`K412` 같은 옛 범위나 명부 행 순서로 ID를 부여하지 않는다.
 - 산문 계약: 한국어 3인칭 제한한다체 서사, 합니다체 안내. `source_kind`는 사실·추론·허구를 구분하고 단락마다 인과는 하나만 둔다.
 - 저작 상태 구분: 확정·초안·제안·보존은 서로 다른 상태고, 공개 렌더·검증 통과는 승인 증거가 아니다(가이드 증거 위계 준수).
 
 ## 안티패턴
 
-- DB를 우회해 논리 식별자나 provenance를 디스크 파일로 재구성하지 않는다. 편집은 SQLite 정본 경로로만.
+- DB를 우회해 논리 식별자나 provenance를 디스크 파일로 재구성하지 않는다. 편집은 PG 정본의 지원되는 typed CLI로만.
 - 실존 기업명·로고·슬로건·제품·현직 임원을 허구에 넣지 않고, 실존 기관을 허구적 범죄의 주체로 쓰지 않는다.
 - 합성체: 전지적 서술·무한 에너지·장기 완전 기억·전망 네트워크 접근·배정 밖 시설 제어 금지.
 - 아틀라스 확장 시 혼합 형태를 유지한다: 한국어 서사 산문, 영어 구조 용어, 교차 참조는 논리 식별자로.
