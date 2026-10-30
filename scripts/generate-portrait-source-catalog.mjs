@@ -3,10 +3,11 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { generatorStage } from './generate-release.mjs'
 import { loadPortraitDocuments, loadPortraitDocumentsAsync } from './portrait-source-documents.mjs'
+import { hasPgConnection } from './cast-sqlite/db-pg.mjs'
 
 export async function generatePortraitSourceCatalog(root, options = {}) {
   const { root: stageRoot, writeFile } = await generatorStage(root)
-  const { catalog } = process.env.WIKI_DOCUMENT_PG || options.pgUrl
+  const { catalog } = options.pgUrl || hasPgConnection()
     ? await loadPortraitDocumentsAsync(root, options)
     : loadPortraitDocuments(root, options)
   const output = resolve(stageRoot, 'src/generated/portraitSourceCatalog.ts')

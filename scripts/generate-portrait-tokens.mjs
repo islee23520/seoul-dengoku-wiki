@@ -13,7 +13,7 @@ import { openReadOnly } from './cast-sqlite/db.mjs'
 import { readPortraitGenderInputs, readPortraitGenderInputsAsync } from './cast-sqlite/portrait-gender-input.mjs'
 import { readPortraitFamilyInputs, readPortraitFamilyInputsAsync } from './cast-sqlite/portrait-family-input.mjs'
 import { readPersonDisposition, readPersonDispositionAsync } from './cast-sqlite/person-disposition.mjs'
-import { createReader } from './cast-sqlite/db-pg.mjs'
+import { createReader, hasPgConnection } from './cast-sqlite/db-pg.mjs'
 
 
 async function readSnapshotTransaction(reader, importSnapshot, fn) {
@@ -31,8 +31,8 @@ export async function generatePortraitTokens(root) {
   // release orchestrator exported one). SQLite callers keep the two short
   // connections below unchanged.
   let genders, familyByPerson, dispositionPresent = null, dispositions = null
-  if (process.env.WIKI_DOCUMENT_PG) {
-    const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+  if (hasPgConnection()) {
+    const reader = createReader({ role: 'wiki_reader' })
     const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT
     try {
       await reader.transaction(async (tx) => {
@@ -211,7 +211,7 @@ export async function generatePortraitTokens(root) {
   await mkdir(tokenRoot, { recursive: true })
   const detailFiles = (await readdir(detailRoot)).filter((file) => /^person-[0-9]{4}\.json$/.test(file)).sort()
   const existing = new Set((await readdir(tokenRoot)).filter((file) => file.endsWith('.json')))
-  if (!process.env.WIKI_DOCUMENT_PG) {
+  if (!hasPgConnection()) {
     dispositions = (() => {
       const db = openReadOnly(process.env.WIKI_DOCUMENT_DB ?? resolve(root, 'data/canonical/wiki-cast.sqlite'))
       try {

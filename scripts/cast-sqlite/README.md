@@ -63,7 +63,7 @@ node scripts/cast-sqlite/document-cli.mjs read --corpus current --domain <domain
 
 ## 이관 SQLite 외부 export
 
-`cast:build`는 이전 SQLite 입력의 외부 export 도구다. 새 출력 경로는 checkout 밖에 있어야 하며 아직 존재하지 않아야 한다. PG 백업이나 PG 저작 수단이 아니다.
+`cast:build`는 이전 SQLite 입력의 외부 export 도구다. `cast:build`, `cast:query`, `cast:verify`는 모두 이관 archive 경로를 `--db`로 명시해야 하며 기본 DB를 선택하지 않는다. 새 출력 경로는 checkout 밖에 있어야 하며 아직 존재하지 않아야 한다. PG 백업이나 PG 저작 수단이 아니다.
 
 다음은 저장소 루트에서 실행하는 PowerShell 예시다.
 
@@ -73,13 +73,13 @@ New-Item -ItemType Directory -Path $castOut | Out-Null
 $castDb = Join-Path $castOut 'wiki-cast.sqlite'
 
 npm run cast:verify -- --db 'data/canonical/wiki-cast.sqlite'
-npm run cast:build -- --output "$castDb"
+npm run cast:build -- --db 'data/canonical/wiki-cast.sqlite' --output "$castDb"
 npm run cast:verify -- --db "$castDb"
 ```
 
 `cast:build`는 `data/canonical/wiki-cast.sqlite` 덮어쓰기를 거부하고 입력이 없을 때 삭제된 JSON으로 재구축하지 않는다. export 파일을 PG 정본이나 이전 입력 위에 복사하지 않는다.
 
-다른 checkout을 지정해도 SQLite export 입력에 관한 옵션이다. `--source-root`를 JSON 원천 탐색이나 JSON freshness 검사의 의미로 설명하지 않는다. 실제 지원 옵션과 오류 코드는 현재 명령 도움말·실행 결과를 따른다.
+`--source-root`는 출력 경로 보호에 사용할 checkout 경로다. SQLite 입력은 별도의 `--db`로 명시한다. 실제 지원 옵션과 오류 코드는 현재 명령 도움말·실행 결과를 따른다.
 
 임시 DB·검증 영수·로그는 Git, `public/`, `dist/`, 생성 카탈로그에 넣지 않는다. 비공개 저장소를 export 입력의 공개 문서 집합에 섞지 않는다.
 

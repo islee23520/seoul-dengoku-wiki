@@ -6,7 +6,7 @@ import { createInterface } from 'node:readline'
 import { dirname, join, relative, resolve, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { loadMapDataInput } from './map-data-input.mjs'
-import { createReader } from './cast-sqlite/db-pg.mjs'
+import { createReader, hasPgConnection, hasPrivatePgConnection } from './cast-sqlite/db-pg.mjs'
 
 // Fixed-path readers cannot observe a cross-directory atomic swap. This is a
 // recoverable command boundary, not filesystem-wide atomicity. Only cooperating
@@ -297,8 +297,8 @@ export async function runRelease({ root, stage, consume, verifyOnly = false, che
   root = resolve(root)
   if (verifyOnly && (stage || consume || checkpoint || ownership !== trackedHash)) throw new Error('E_RELEASE_VERIFY_OVERRIDE')
   checkpoint ??= async () => { }
-  if (verifyOnly && !process.env.WIKI_DOCUMENT_PG) throw new Error('E_RELEASE_VERIFY_PG_REQUIRED')
-  if (verifyOnly && !process.env.WIKI_GENERATION_PRIVATE_PG) throw new Error('E_GENERATION_PRIVATE_PG_REQUIRED')
+  if (verifyOnly && !hasPgConnection()) throw new Error('E_RELEASE_VERIFY_PG_REQUIRED')
+  if (verifyOnly && !hasPrivatePgConnection()) throw new Error('E_GENERATION_PRIVATE_PG_REQUIRED')
   return withReleaseLock(root, async run => {
     // Verification must never recover or discard an earlier transaction: recovery
     // can modify live outputs and an abandoned stage may contain diagnostics.
@@ -313,10 +313,9 @@ export async function runRelease({ root, stage, consume, verifyOnly = false, che
     try {
       let sourceBinding
       let privateReceipts
-      if (process.env.WIKI_DOCUMENT_PG) {
-        const connectionString = process.env.WIKI_GENERATION_PRIVATE_PG
-        if (!connectionString) throw Object.assign(new Error('E_GENERATION_PRIVATE_PG_REQUIRED'), { code: 'E_GENERATION_PRIVATE_PG_REQUIRED' })
-        snapshotReader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' })
+      if (hasPgConnection()) {
+        if (!hasPrivatePgConnection()) throw Object.assign(new Error('E_GENERATION_PRIVATE_PG_REQUIRED'), { code: 'E_GENERATION_PRIVATE_PG_REQUIRED' })
+        snapshotReader = createReader({ role: 'wiki_reader' })
         generationSnapshot = await snapshotReader.exportSnapshot()
         const expected = JSON.parse(await readFile(join(root, 'scripts/postgres-migration/schema-pg/metadata.json'), 'utf8'))
         sourceBinding = await snapshotReader.transaction(async tx => {
@@ -329,7 +328,7 @@ export async function runRelease({ root, stage, consume, verifyOnly = false, che
             migrationId: expected.migration_id, sourceSha256: rows[0].source_sha256, schemaVersion: Number(rows[0].schema_version)
           }
         }, { readOnly: true, importSnapshot: generationSnapshot.id })
-        const privateReader = createReader({ connectionString, role: 'wiki_generation_reader' })
+        const privateReader = createReader({ role: 'wiki_generation_reader' })
         try {
           privateReceipts = await privateReader.transaction(async tx => {
             const identity = await tx.all('SELECT current_database() AS database, (SELECT oid::text FROM pg_database WHERE datname = current_database()) AS database_oid')
@@ -347,11 +346,11 @@ export async function runRelease({ root, stage, consume, verifyOnly = false, che
       const stageRoot = join(transaction, 'stage')
       const before = await inventory(root)
       const previousFiles = await previousGeneration(root, before, ownership)
-      const databaseInputs = process.env.WIKI_DOCUMENT_PG ? [] : [...new Set(['WIKI_DOCUMENT_DB', 'WIKI_PORTRAIT_DB',
+      const databaseInputs = hasPgConnection() ? [] : [...new Set(['WIKI_DOCUMENT_DB', 'WIKI_PORTRAIT_DB',
         'WIKI_EDITORIAL_PROFILE_DB', 'WIKI_SOUL_ASSIGNMENT_DB',
         'WIKI_MAPPING_ORIGINAL_DB',
         'WIKI_MAPPING_FINAL_DB', 'WIKI_MAPPING_SOURCES_DB', 'WIKI_PUBLICATION_DATABASE_CONFIG'].map(key => process.env[key]).filter(Boolean))]
-      if (!process.env.WIKI_DOCUMENT_PG && process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
+      if (!hasPgConnection() && process.env.WIKI_PUBLICATION_DATABASE_CONFIG) {
         const config = JSON.parse(await readFile(process.env.WIKI_PUBLICATION_DATABASE_CONFIG, 'utf8'))
         const capture = JSON.parse(await readFile(config.captureReceiptPath, 'utf8'))
         databaseInputs.push(...[config.databasePath, config.bootstrapReceiptPath, config.captureReceiptPath,
@@ -521,13 +520,10 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
   const args = process.argv.slice(2)
   if (args.length > 1 || args.length && !['--build', '--recover', '--verify-pg'].includes(args[0])) throw new Error('E_RELEASE_ARGUMENT')
-  if (args[0] !== '--recover' && args[0] !== '--verify-pg' && !process.env.WIKI_DOCUMENT_DB && !process.env.WIKI_DOCUMENT_PG) {
-    const environment = JSON.parse(await readFile(join(root,
-      '.omo/private/seoul-migration/sqlite-authority-20261021/build-environment.json'), 'utf8'))
-    for (const [key, value] of Object.entries(environment)) {
-      if (!/^WIKI_[A-Z_]+$/u.test(key) || typeof value !== 'string') throw new Error('E_PUBLICATION_DATABASE_CONFIG')
-      process.env[key] ??= value
-    }
+  // Injected runRelease stages remain usable without a database.
+  if (args[0] !== '--recover' && args[0] !== '--verify-pg' && !hasPgConnection()) {
+    if (process.env.WIKI_MIGRATION_SQLITE !== '1') throw new Error('E_RELEASE_PG_REQUIRED: set WIKI_DOCUMENT_PG; SQLite diagnostics require WIKI_MIGRATION_SQLITE=1 and explicit WIKI_DOCUMENT_DB')
+    if (!process.env.WIKI_DOCUMENT_DB?.trim()) throw new Error('E_RELEASE_MIGRATION_SQLITE_DB_REQUIRED: set explicit WIKI_DOCUMENT_DB')
   }
   if (args[0] === '--recover') await recoverRelease({ root })
   else await runRelease({

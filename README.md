@@ -28,11 +28,13 @@ npm ci --ignore-scripts
 npm run dev          # local wiki with live reload
 node scripts/cast-sqlite/document-cli.mjs list --corpus current # WIKI_AUTHORING_PG required (or WIKI_DOCUMENT_PG)
 node server/wiki-document-api.mjs # WIKI_DOCUMENT_PG or secure WIKI_DOCUMENT_PG_FILE required
-# Protected integration environment only; both WIKI_DOCUMENT_PG and WIKI_GENERATION_PRIVATE_PG required:
+# Protected integration environment: WIKI_DOCUMENT_PG_FILE and WIKI_GENERATION_PRIVATE_PG_FILE:
 node scripts/generate-release.mjs --verify-pg
 ```
 
 `--verify-pg`는 임시 stage에서 worker를 검증하며 live output 변경·승격·빌드를 수행하지 않는다. 정식 생성·빌드 진입점인 `npm run generate` / `npm run build`의 일반 PG 실행은 이제 허용된다. 메타데이터 검증, 단일 PostgreSQL 스냅샷 및 비공개 입력의 스냅샷·출처 검증은 그대로 유지한다. 이 검증을 우회하거나 SQLite 폴백으로 전환 성공을 주장하지 않는다. 격리 환경의 빌드·검사 통과와 정확한 SHA 기준 운영 배포 확인은 별도 게이트다.
+
+`npm run generate` and `npm run build` require public and generation-private PostgreSQL connections. Protected builders pass `WIKI_DOCUMENT_PG_FILE` and `WIKI_GENERATION_PRIVATE_PG_FILE`; each names a runtime-user-owned regular file with mode 0600 containing its connection URL. Symlinks are rejected. Readers resolve files without copying URLs into child environment variables. Direct `WIKI_DOCUMENT_PG` and `WIKI_GENERATION_PRIVATE_PG` remain supported outside the protected builder; a scoped URL and file cannot both be configured. Neither mode loads a private SQLite bootstrap environment. For migration diagnostics only, when neither public PostgreSQL source is configured, set `WIKI_MIGRATION_SQLITE=1` and explicitly provide `WIKI_DOCUMENT_DB` plus any other required migration inputs. PostgreSQL takes precedence over the diagnostic flag. `--recover` remains database-independent; `--verify-pg` always requires both PostgreSQL connections. Invoke the catalog worker only through the authenticated release stage, not directly against live output.
 
 A few build inputs (for example the creative-name normalization ledger) live outside this repository. The generator looks for them in the directory named by `SEOUL_KENSHI_ROOT` or in the parent directories of this checkout.
 

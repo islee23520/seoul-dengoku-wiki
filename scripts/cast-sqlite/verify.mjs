@@ -208,9 +208,11 @@ function checkSourceQuality(db, bundle, complete) {
     if (run.issue_count !== entries.length || entries.some((issue, index) => issue.ordinal !== index)
       || !/^[a-f0-9]{64}$/u.test(run.stdout_sha256) || !/^[a-f0-9]{64}$/u.test(run.stderr_sha256)
       || (run.exit_code === 0) !== (entries.length === 0)) fail('E_SOURCE_CHECK', '공식 검사 종료 상태와 이슈 행이 일치하지 않습니다.');
-    const parsed = parseOfficialGurpsCheck({ checkName: run.check_name, exitCode: run.exit_code,
+  const parsed = parseOfficialGurpsCheck({
+   checkName: run.check_name, exitCode: run.exit_code,
       stdout: run.exit_code === 0 ? 'PASS: stored check\n' : '',
-      stderr: run.exit_code === 0 ? '' : `${entries.map((issue) => issue.raw_line).join('\n')}\nFAIL: ${entries.length}건\n` });
+   stderr: run.exit_code === 0 ? '' : `${entries.map((issue) => issue.raw_line).join('\n')}\nFAIL: ${entries.length}건\n`
+  });
     if (!equal(parsed.issues, entries)) fail('E_SOURCE_CHECK', '공식 검사 행의 category/person_id가 원문과 다릅니다.');
   }
   if (complete) {
@@ -332,9 +334,11 @@ export async function verifyCastDatabase({ dbPath, sourceRoot, requireClean = fa
       current_source_alignment: currentSourceAlignment,
       excluded_source_count: bundle.excludedFiles.length,
       coverage_contract_status: complete ? 'verified' : 'unchecked', text_corpus: textCorpus,
-      coverage_contract: coverageContract === null ? null : { source_count: coverageContract.sourceCount, leaf_pattern_count: coverageContract.leafPatternCount,
+    coverage_contract: coverageContract === null ? null : {
+     source_count: coverageContract.sourceCount, leaf_pattern_count: coverageContract.leafPatternCount,
         private_source_count: coverageContract.privateSourceCount, private_leaf_pattern_count: coverageContract.privateLeafPatternCount,
-        sha256: sha256(JSON.stringify(coverageContract)) },
+     sha256: sha256(JSON.stringify(coverageContract))
+    },
       official_check_scope: 'historical-gurps-only', complete_verification: complete,
       source_freshness: complete ? 'current' : 'unchecked', profile_rendering: complete ? 'verified' : 'unchecked',
       official_check_replayed: complete && quality.official_check_status === 'checked', official_check_replayed_scope: complete && quality.official_check_status === 'checked' ? 'historical-gurps-only' : 'none',
@@ -375,7 +379,7 @@ function parseArgs(args) {
     else if (Object.hasOwn(names, flag) && args[index + 1] && !args[index + 1].startsWith('--')) options[names[flag]] = args[++index];
     else fail('E_VERIFY_USAGE', `알 수 없거나 값이 없는 옵션: ${flag}`);
   }
-  if (!options.dbPath) fail('E_VERIFY_USAGE', '--db가 필요합니다.');
+ if (!options.dbPath || !options.dbPath.trim()) fail('E_VERIFY_USAGE', 'SQLite 이관 archive를 --db <파일>로 명시하세요. 운영 저작과 생성은 PostgreSQL을 사용합니다.');
   return options;
 }
 

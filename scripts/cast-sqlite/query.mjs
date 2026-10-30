@@ -241,14 +241,16 @@ export function queryPerson(options) {
       values: rows(db, 'SELECT v.*,a.axis_ordinal FROM person_value v JOIN value_axis a USING(axis_name) WHERE person_id=? ORDER BY a.axis_ordinal', id),
       desires: rows(db, 'SELECT d.*,a.axis_ordinal FROM person_desire d JOIN desire_axis a USING(axis_name) WHERE person_id=? ORDER BY a.axis_ordinal', id),
       gender: one(db, 'SELECT * FROM person_gender WHERE person_id=?', id), lineage: lineageRows(db, person), profiles: profileRows(db, id), source_indexes: sourceIndexRows(db, id), relations: relationRows(db, id, 'both'),
-      current: { engine: engineRows(db, id), birthday: one(db, 'SELECT * FROM family_birthday WHERE person_id=?', id), family: familyRows(db, id), household: householdRows(db, id), holdings: holdingRows(db, id, 'current_seoul_evidenced'), nonowning_rights: holdingRows(db, id, 'current_seoul_nonowning').map((holding) => ({
+      current: {
+        engine: engineRows(db, id), birthday: one(db, 'SELECT * FROM family_birthday WHERE person_id=?', id), family: familyRows(db, id), household: householdRows(db, id), holdings: holdingRows(db, id, 'current_seoul_evidenced'), nonowning_rights: holdingRows(db, id, 'current_seoul_nonowning').map((holding) => ({
         ...holding,
         geographic_scope: (() => {
           const scope = one(db, 'SELECT * FROM context_holding_geographic_scope WHERE holding_id=?', holding.holding_id);
           return scope && { ...scope, counties: rows(db, 'SELECT * FROM context_holding_scope_county WHERE holding_id=? ORDER BY ordinal', holding.holding_id) };
         })(),
         powers: rows(db, 'SELECT * FROM context_holding_power WHERE holding_id=? ORDER BY ordinal', holding.holding_id),
-      })), context: contextRows(db, id) },
+        })), context: contextRows(db, id)
+      },
       historical: { gurps: historicalGurpsRows(db, id), superseded_holdings: holdingRows(db, id, 'superseded_outside_seoul'), superseded_context: supersededContextRows(db, id), context: { offices: rows(db, 'SELECT * FROM context_office_history WHERE person_id=? ORDER BY polity_id', id) }, feudal: historicalFeudalRows(db, id) }, unresolved: { holdings: holdingRows(db, id, 'unresolved'), context: { retinue_groups: retinueRows(db, id, 'unresolved') } },
     };
   });
@@ -287,6 +289,7 @@ function main(argv) {
     const key = flags[token]; if (Object.hasOwn(options, key)) fail('E_ARGUMENTS', `중복 옵션입니다: ${token}`);
     const value = argv[++index]; if (value === undefined || value.startsWith('--')) fail('E_ARGUMENTS', `옵션 값이 없습니다: ${token}`); options[key] = value;
   }
+  if (typeof options.dbPath !== 'string' || !options.dbPath.trim()) fail('E_ARGUMENTS', 'SQLite 이관 archive를 --db <파일>로 명시하세요. 운영 저작은 PostgreSQL document-cli를 사용합니다.');
   if (command === undefined) fail('E_ARGUMENTS', '조회 명령이 필요합니다. --help를 참고하세요.');
   return commands[command](options);
 }

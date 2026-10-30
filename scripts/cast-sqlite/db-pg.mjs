@@ -2,7 +2,7 @@
 // db-pg.mjs — PostgreSQL 판독 퍼사드 (postgres-migration Todo 6).
 //
 // 비동기 전용 계약 (Wave-4 공용, Main 확정 2026-10-27):
-//   createReader({ connectionString = WIKI_DOCUMENT_PG, role } = {}) → reader
+//   createReader({ connectionString, role } = {}) → reader
 //     role: 세션이 SET ROLE 할 역할(예: 'wiki_reader'). 부트스트랩 역할은 전부
 //     NOLOGIN이므로 개발 trust 소켓에서는 현재 사용자로 접속해 역할 권한 경계를
 //     연결 시작 시점(startup options)에 적용한다. 실패는 연결 실패로 크게 드러난다.
@@ -27,6 +27,7 @@
 // 2^53 을 넘는 값은 조용한 정밀도 손실 대신 E_PG_INT64_UNSAFE로 실패한다.
 // bytea는 Buffer(Uint8Array 하위클래스)로 도착한다.
 
+import { closeSync, constants, fstatSync, openSync, readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import pg from 'pg';
 
@@ -40,6 +41,41 @@ const CONNECTION_OVERRIDES = new Set([
   'user', 'password', 'host', 'port', 'options', 'role', 'session_authorization',
   'connectionstring', '__proto__', 'prototype', 'constructor',
 ]);
+
+export const hasPgConnection = (env = process.env) => Boolean(env.WIKI_DOCUMENT_PG || env.WIKI_DOCUMENT_PG_FILE);
+export const hasPrivatePgConnection = (env = process.env) => Boolean(env.WIKI_GENERATION_PRIVATE_PG || env.WIKI_GENERATION_PRIVATE_PG_FILE);
+
+/** Resolve a connection without placing file contents in the environment.
+ * The generation role is the only implicit consumer of the private credential. */
+export function resolvePgConnection({ connectionString, role, env = process.env } = {}) {
+  const privateGeneration = role === 'wiki_generation_reader';
+  const urlName = privateGeneration ? 'WIKI_GENERATION_PRIVATE_PG' : 'WIKI_DOCUMENT_PG';
+  const fileName = privateGeneration ? 'WIKI_GENERATION_PRIVATE_PG_FILE' : 'WIKI_DOCUMENT_PG_FILE';
+  if (connectionString === undefined) {
+   const file = env[fileName];
+   if (file !== undefined && env[urlName] !== undefined) {
+    throw Object.assign(new Error(`E_PG_CONFIG: select only one of ${urlName} and ${fileName}`), { code: 'E_PG_CONFIG' });
+   }
+   if (file !== undefined) {
+    let fd;
+    try {
+     if (typeof file !== 'string' || !file) throw new Error();
+     fd = openSync(file, constants.O_RDONLY | constants.O_NOFOLLOW | constants.O_NONBLOCK);
+     const info = fstatSync(fd);
+     if (!info.isFile() || (info.mode & 0o7777) !== 0o600
+      || typeof process.getuid !== 'function' || info.uid !== process.getuid()) throw new Error();
+     connectionString = readFileSync(fd, 'utf8');
+    } catch {
+     throw Object.assign(new Error(`E_PG_CONFIG: ${fileName} must be an owner-only regular file owned by the runtime user`), { code: 'E_PG_CONFIG' });
+    } finally {
+     if (fd !== undefined) closeSync(fd);
+    }
+   } else {
+    connectionString = env[urlName];
+   }
+  }
+  return { connectionString, role };
+}
 
 function readerConnectionConfig(text, role) {
   try {
@@ -170,11 +206,12 @@ function methodsOn(queryRaw) {
 
 /** Open an async PostgreSQL reader. No SQLite fallback: a missing connection
  * string or an unreachable server fails loudly at first use. */
-export function createReader({ connectionString = process.env.WIKI_DOCUMENT_PG, role } = {}) {
+export function createReader(options = {}) {
+  const { connectionString, role } = resolvePgConnection(options);
   const url = typeof connectionString === 'string' ? connectionString.trim() : '';
   if (!url) {
     throw Object.assign(
-      new Error('E_PG_CONFIG: a PostgreSQL connection string is required (env WIKI_DOCUMENT_PG or { connectionString }); there is no SQLite fallback'),
+      new Error('E_PG_CONFIG: a PostgreSQL connection string or protected credential file is required; there is no SQLite fallback'),
       { code: 'E_PG_CONFIG' },
     );
   }

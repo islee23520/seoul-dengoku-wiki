@@ -293,10 +293,10 @@ export function validate(dataset) {
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const run = async (options) => {
-    const dataset = process.env.WIKI_DOCUMENT_PG
+    const { createReader, hasPgConnection } = await import('../../scripts/cast-sqlite/db-pg.mjs');
+    const dataset = hasPgConnection()
       ? await (async () => {
-        const { createReader } = await import('../../scripts/cast-sqlite/db-pg.mjs');
-        const reader = createReader({ connectionString: process.env.WIKI_DOCUMENT_PG, role: 'wiki_reader' });
+        const reader = createReader({ role: 'wiki_reader' });
         const importSnapshot = process.env.WIKI_GENERATION_SNAPSHOT;
         try {
           return await reader.transaction(tx => loadDatasetAsync(tx, options), { readOnly: true, ...(importSnapshot ? { importSnapshot } : {}) });
