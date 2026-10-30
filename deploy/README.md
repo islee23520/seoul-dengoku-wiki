@@ -94,6 +94,7 @@ owner가 `WIKI_DOCUMENT_PG_FILE`에 런타임 사용자 소유, mode 0600의 일
 
 ### 런타임 로그인 프로비저닝과 비밀 전달
 
+
 먼저 `bootstrap-roles.sql`과 schema/load를 적용한다. `wiki_reader`는 LOGIN으로
 바꾸지 않는다. 아래 스크립트는 PostgreSQL 17에서 `seoul` DB에 접속한 슈퍼유저가
 실행하며 트랜잭션으로 역할을 생성하거나 암호를 회전한다. 기존 로그인 역할의
