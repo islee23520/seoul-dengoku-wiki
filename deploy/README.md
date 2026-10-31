@@ -13,7 +13,7 @@ canonical TSV 대사도 통과했다. 이 기록은 아래의 앞선 로컬·격
 `/app/data/canonical/wiki-cast.sqlite` 실물은 런타임에 없었다. 다만 정적 import 때문에
 inventory에 SQLite 항목은 남아 있으므로 inventory까지 제거됐다고 해석하지 않는다.
 
-2026-10-31 소유자 지시로 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`를 제거한다.
+2026-10-31 소유자 지시로 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`를 제거했다.
 외부 SQLite는 외부 경로를 명시적으로 제공한 이관·대사에만 사용하며 운영 런타임
 입력이나 편집 정본으로 사용하지 않는다. 다른 archive와 이전 배포 롤백은 계속 보존한다.
 PG `wiki.source_file` 원천 바이트·해시, `source_record` provenance, 봉인 revision도
@@ -64,9 +64,9 @@ Configure the Woodpecker secret `seoul_deploy_token`. `SEOUL_DEPLOY_URL` current
 points to `http://172.28.0.4:8080/api/deployments/seoul-wiki`, the dashboard's
 address on the outer `linalab-ci-tools_build` network. Outer Docker aliases do
 not resolve inside the nested build engine. Update this workflow value if the
-dashboard address changes. Reachability still requires a successful probe from
-the build environment; the runtime deployment endpoint must also be installed
-before rollout. The caller uses `SEOUL_DEPLOY_TOKEN`
+dashboard address changes. Future deployments still require reachability from
+the build environment and an available deployment endpoint; the dated successful
+rollout above is not a promise of future availability. The caller uses `SEOUL_DEPLOY_TOKEN`
 as bearer authentication and sends only `{"sha": CI_COMMIT_SHA}` in the POST body.
 It does not retry a request or follow redirects.
 
@@ -77,20 +77,22 @@ invalid response, HTTP error, missing terminal record, or 35-minute deadline
 fails the step. Responses are limited to 8 MiB total and 64 Ki characters per
 line. Neither upstream response text nor the token is logged.
 
-The catalog is not tracked. The owner creates it through the authenticated PostgreSQL
-release stage (`npm run generate` / `npm run build`) with protected public/private inputs;
-do not run the catalog worker directly against live output. The HTTP check consumes
-that generated catalog; it does not itself build or approve the release. The check command is:
+The TypeScript catalog and public contract are generated, not tracked authority.
+The owner creates them through the authenticated PostgreSQL release stage
+(`npm run generate` / `npm run build`) with protected public/private inputs;
+do not run the catalog worker directly against live output. CI's HTTP check reads
+`public/wiki-contract.json`; it does not itself build or approve the release. The check command is:
 
 ```sh
-node deploy/check-live-contract.mjs --public-edge https://sss.linalab.io live-http-green.json src/generated/wikiCatalog.ts
+node deploy/check-live-contract.mjs --public-edge https://sss.linalab.io live-http-green.json public/wiki-contract.json
 ```
 
 Public-edge mode requires HTTP 200 and the React entry marker on every catalog
 wiki route, compatibility wiki route, `/wiki/`, and `/wiki/states`. It does not
 follow redirects. `/system-design/regions`, `/system-design/regions/`, and `/gdd/`
-must return HTTP 302 to the HTTPS `linalab.cloudflareaccess.com` login path for
-the checked host. HTTP 200 or 308 fails: either would bypass the Access boundary.
+must return HTTP 302, 303, or 307 to the HTTPS `linalab.cloudflareaccess.com`
+path `/cdn-cgi/access/login/<checked-host>`, with no URL username or password.
+Other statuses, including HTTP 200 and 308, fail the Access redirect check.
 Access Location query values are never included in the result.
 
 Without `--public-edge`, the checker remains the origin contract (default

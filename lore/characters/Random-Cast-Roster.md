@@ -1,5 +1,7 @@
 # 랜덤 추가 로스터
 
+> 2026-09-12 생성 실험·감사 기록이다. 아래 인원·분포·도구 경로와 결함은 당시 관측이며 현재 PG 정본이나 승인된 후보 수가 아니다. JSON 이름은 논리 식별자·provenance이며 물리 파일을 복원하지 않는다. 현재 편집은 [PG 작성 계약](../AUTHORING-JSON.md), 세계·수치·승인은 [루트 가이드](../../WORLD_BUILDING_GUIDE.md)를 따른다. 당시 1010명은 현재 인물 분모가 아니다.
+
 [roster-100.json](../name-pools/roster-100.json)은 인물 후보 100명을 담은 생성 실험 결과다. 완성 캐스트나 게임에 연결된 모집 명부로 읽히지는 않으며, 기존 [인물 총람](../characters/Cast-Index.md)의 1010명을 대체하지 않는다. 이 100명은 검토 전 후보다. 한 명을 올릴 때마다 [인물 카드 계약](../characters/Cast-Profile-Contract.md)과 [가치관과 정책 척도](../culture/Values-and-Policy-Scales.md) 10칸을 채운다. 시드만 돌리고 공포 문장을 그대로 베끼면 완료로 치지 않는다. 2026-09-12 감사에서 파일 생성과 설정 검증이 섞여 보고된 점을 확인했으며, 이 문서는 그 상태를 바로잡는다.
 
 ## 생성에 사용한 자료
@@ -12,7 +14,7 @@ Windows 작업 호스트에서 [NVIDIA Nemotron-Personas-Korea](https://huggingf
 
 [일본 ESC 스페이스](https://huggingface.co/spaces/lucaonv/nemotron-personas-japan-esc)는 현대 페르소나 텍스트의 임베딩·군집 시각화다. 역사 인물을 뽑는 생성기로 보이지는 않는다. [NGC 한국어 자원](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemotron-personas/resources/nemotron-personas-dataset-ko_kr)은 별도 카탈로그이며, 이번 조사에서는 접근 가능한 내용이 제한돼 Hugging Face 배포본과 파일 단위로 동일하다고 검증하지 못했다.
 
-## 현재 파일에서 확인한 상태
+## 2026-09-12 파일 관측
 
 | 항목 | 2026-09-12 확인 결과 | 해석 |
 |---|---|---|
@@ -34,9 +36,9 @@ Windows 작업 호스트에서 [NVIDIA Nemotron-Personas-Korea](https://huggingf
 
 소급표의 출신·언어·병역도 원문 사실과 구별해야 한다. 성명 해시로 배정한 “동원 거부”나 “병 만기”는 인물의 과거를 조사한 결과가 아니다. 원문이 없으면 미확인으로 남기거나 별도의 창작 제안으로 검토한다.
 
-## 후보 한 명 확인하기
+## 과거 후보 선택 예시 (현행 실행 금지)
 
-아래 명령은 시드로 검토 대상을 하나 고른다. 캠페인 모집·저장 기능을 구현한 명령이 아니며, 선택한 항목도 승인 전 후보다.
+아래는 당시 물리 JSON을 읽던 예시 원문이다. 그 파일은 제거됐으므로 지금 실행하거나 되살리지 않는다. 현재 검토 대상은 PG 논리 문서와 head를 조회해 고르며, 선택은 승인·캠페인 모집·저장 구현을 뜻하지 않는다.
 
 ```python
 import json

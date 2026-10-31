@@ -13,26 +13,27 @@ PostgreSQL 저작 정본의 typed document reader·편집과 SQLite 이관 참�
 | 도메인 매핑 | `current-*.mjs`, `*-document.mjs` | typed 열과 원천 포인터 |
 | 텍스트 원천 | `text-corpus-manifest.mjs`, `text-corpus.mjs`, `text-data.mjs` | 열거된 corpus, 복원 일치성 |
 | 편입·누락 검사 | `coverage-contract.mjs`, `source-closure.mjs` | coverage와 승인 분리 |
-| 조회·검증 | `query.mjs`, `verify.mjs`, `current-authority.mjs` | 현재 SQLite storage·head·privacy |
+| SQLite 이관 조회·검증 | `query.mjs`, `verify.mjs`, `current-authority.mjs` | 명시적 외부 SQLite의 storage·head·privacy; PG 운영 조회와 구분 |
 
 ## CONVENTIONS
-- 운영 PG 저작·공개 판독은 `db-pg.mjs`의 비동기 transaction을 사용한다. 운영 승격 wiki SHA `24f3c676f7df0b9903e02f4278ac65bf8fac688f`, run `20261030T150126Z-11560`의 관측은 `deploy/README.md`에 기록한다. `node:sqlite`와 `db.mjs`는 이관·회귀·명시적 archive 판독 전용이다.
+- 운영 PG 저작·공개 판독은 `db-pg.mjs`의 비동기 transaction을 사용한다. 과거 운영 승격 SHA·run의 관측은 `deploy/README.md`를 참조하며 현행 배포 상태로 자동 재사용하지 않는다. `node:sqlite`와 `db.mjs`는 이관·회귀·명시적 archive 판독 전용이다.
 - 이관 참조 SQLite의 `SCHEMA_VERSION`은 5, `APPLICATION_ID`는 `0x57435351`이다. PG는 migration metadata와 `wiki.meta`를 대조한다.
 - 도메인 mapper의 열 목록, SQL schema, 저장·복원·검증 코드를 함께 대조한다.
 - 현재 정본 계약은 `README.md`와 루트 `lore/AUTHORING-JSON.md`를 따른다. 과거 source manifest를 현재 파일 입력 목록으로 쓰지 않는다.
 - 조회·편집·생성의 기준은 PostgreSQL 현재 head와 release snapshot이다. 격리 대사와 운영 승격은 별도 증거다. 삭제된 JSON이나 Git blob 대조로 현재성 검사를 대체하지 않는다.
-- 2026-10-31 소유자 지시로 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`를 제거한다. 외부 SQLite는 외부 경로를 명시적으로 제공한 이관·대사에만 사용하며 런타임 입력이나 운영 출력 대상이 아니다. 다른 archive·이전 배포 롤백과 PG 원천 바이트·해시·provenance·봉인 revision은 계속 보존한다. 이관·회귀 코드 삭제는 이번 변경 범위 밖이다. 이관 export는 checkout 밖 새 경로만 허용한다.
+- 2026-10-31 소유자 지시로 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`는 제거됐다. 외부 SQLite는 외부 경로를 명시적으로 제공한 이관·대사에만 사용하며 런타임 입력이나 운영 출력 대상이 아니다. 다른 archive·이전 배포 롤백과 PG 원천 바이트·해시·provenance·봉인 revision은 계속 보존한다. 이관·회귀 코드 삭제는 이번 변경 범위 밖이다. 이관 export는 checkout 밖 새 경로만 허용한다.
 - 정본은 지원되는 typed CLI로 편집한다. export 파일로 정본을 덮어쓰거나 임의 SQL로 편집 계약을 우회하지 않는다.
 - PG transaction callback은 비동기이며 동일 leased 연결을 사용한다. SQLite 이관용 `withTransaction()` callback만 동기식이고 중첩·Promise 반환을 금지한다.
 - 과거 schema DB를 현행 정본으로 승격하거나 새 DB로 재구축하지 않는다. 버전·이력 계약은 현재 reader와 README를 확인한다.
 - `local-corpus`와 renderer anchor의 `published`는 공개 승인 판정이 아니다.
+- 공개 한국어 전용·서울 유일 세계·무협 제거는 루트 `WORLD_BUILDING_GUIDE.md`를 따른다. 보존된 영문·옛 외부 지리·무협 자료를 현재 공개 정본으로 재사용하지 않는다.
 
 ## COMMANDS
 저장소 루트에서 실행하며 옵션 예시는 README를 따른다.
 ```bash
-npm run cast:build -- --db data/canonical/wiki-cast.sqlite --output /tmp/wiki-cast-new.sqlite
-npm run cast:query -- --db data/canonical/wiki-cast.sqlite person --id K1022
-npm run cast:verify -- --db data/canonical/wiki-cast.sqlite
+npm run cast:build -- --db /absolute/external/wiki-cast.sqlite --output /tmp/wiki-cast-new.sqlite
+npm run cast:query -- --db /absolute/external/wiki-cast.sqlite person --id K1022
+npm run cast:verify -- --db /absolute/external/wiki-cast.sqlite
 ```
 `cast:verify`는 지정한 SQLite archive의 storage·head·privacy를 읽기 전용 검사하며 PG 운영 상태 검증이 아니다. 과거 JSON freshness·offline/full 구분은 현행 검증 계약이 아니다.
 

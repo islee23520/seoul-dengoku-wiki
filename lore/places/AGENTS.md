@@ -4,7 +4,7 @@
 서울 지도 기사, 역 식별·연결·별칭과 건물 재사용 계약을 관리한다.
 
 ## WHERE TO LOOK
-아래 `.json` 이름은 SQLite 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
+아래 `.json` 이름은 PostgreSQL 정본의 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
 | 작업 | 위치 |
 |---|---|
 | 현행 지도 기사·수직 환경 | `World-and-Subway-Layers.json` |
@@ -36,4 +36,4 @@
 - 동명이역을 이름만으로 합치거나 교차 도메인 링크를 경로 이동 뒤 방치하지 않는다.
 
 ## COMMANDS
-변경 후 실제 지역·지도 화면과 정본 조회 결과를 확인한다. 테스트 스위트는 제거되었다.
+변경 후 실제 지역·지도 화면과 정본 조회 결과를 확인한다.

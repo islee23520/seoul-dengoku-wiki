@@ -1,6 +1,6 @@
 # Repository Guidelines
 
-**갱신:** 2026-10-31 · 운영 PG 승격 관측과 PR #625(`2326bf1df`, 테스트·CI 삭제) 이후 계약 기준. 현재 계약은 아래 파일들과 구현에서 직접 확인한다.
+**갱신:** 2026-10-31 · PostgreSQL 운영 정본, 한국어 공개 문서, 무협 제거 이후 계약 기준. 현재 명령과 구현은 아래 파일들에서 확인하고 과거 PR·이관·배포 기록을 현재 완료 상태와 구분한다.
 
 ## Project Overview
 
@@ -35,8 +35,8 @@ flowchart LR
 ```
 
 - **정본 → 생성물 단방향.** 물리적 lore JSON은 제거됐다. `.json` 이름은 DB 논리 ID/provenance일 뿐 실물 파일이 아닐 수 있다(예: `lore/World-Narrative-Atlas.json` = 논리 루트 문서 `WNA-001`, `lore/editorial/Character-System-Contract.json` = DB 내 typed 보존).
-- **이관과 증거 구분.** 2026-10-31 소유자 지시로 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`를 제거한다. 외부 SQLite는 외부 경로를 명시적으로 제공한 이관·대사에만 사용하며 운영 런타임 입력이나 편집 정본이 아니다. 다른 archive와 이전 배포 롤백은 계속 보존한다. PG 내부 `wiki.source_file` 원천 바이트·해시, `source_record` provenance, 봉인 revision도 불변으로 보존하며 삭제·재작성하지 않는다. 이관·회귀 코드 삭제는 이번 변경 범위 밖이다.
-- **전환 게이트.** `--verify-pg`는 공개 `WIKI_DOCUMENT_PG`와 별도 비공개 `WIKI_GENERATION_PRIVATE_PG`를 사용해 stage만 검증하고 승격하지 않는다. 일반 PG 생성·빌드는 메타데이터, PostgreSQL 스냅샷과 비공개 입력 스냅샷·출처 검증을 유지한다. 격리 환경의 통과와 정확한 SHA/run의 운영 승격은 별도 증거다. 잔존 SQLite 생성 경로는 명시적 이관 진단 전용이며 런타임 폴백이 아니다.
+- **이관과 증거 구분.** 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`는 제거됐다. 외부 SQLite는 경로를 명시한 이관·대사에만 사용하며 운영 런타임 입력이나 편집 정본이 아니다. 다른 archive와 이전 배포 롤백은 보존한다. PG 내부 `wiki.source_file` 원천 바이트·해시, `source_record` provenance, 봉인 revision도 불변으로 보존하며 삭제·재작성하지 않는다. 잔존 이관·회귀 코드를 운영 저작 도구로 혼동하지 않는다.
+- **전환 게이트.** `--verify-pg`는 공개 `WIKI_DOCUMENT_PG[_FILE]`와 별도 비공개 `WIKI_GENERATION_PRIVATE_PG[_FILE]` 연결을 사용해 stage만 검증하고 승격하지 않는다. 일반 PG 생성·빌드는 메타데이터, PostgreSQL 스냅샷과 비공개 입력 스냅샷·출처 검증을 유지한다. 격리 환경의 통과와 정확한 SHA/run의 운영 승격은 별도 증거다. 잔존 SQLite 생성 경로는 `WIKI_MIGRATION_SQLITE=1`과 외부 `WIKI_DOCUMENT_DB`를 명시한 이관 진단 전용이며 런타임 폴백이 아니다.
 - **화면 데이터 흐름:** `src/main.tsx`(BrowserRouter basename `/wiki`) → `src/App.tsx` 라우팅. 문서 본문은 `src/documentApi.ts` → `GET /wiki/api/documents/world/<slug>?locale=ko` → blocks → `DocumentContent` 렌더. 공개 본문은 한국어 전용이며 영어 카탈로그·영어 생성 문서는 폐기됐다.
 - **API:** dev에서 Vite proxy가 `/wiki/api/documents` → `127.0.0.1:8788`(문서 API), 나머지 `/wiki/api` → `127.0.0.1:8787`(데이터 API)로 보낸다. 문서 API와 generate worker(`scripts/generate-catalog.mjs`)는 동일한 `publicHouseContent`/`publicOfficeContent`/`renderLoreMarkdown` 렌더 체인을 공유한다.
 - **지도:** `src/components/mapBridge.ts`가 Unity/지도 플레이어와 `MapTransport {send, subscribe}` 메시지 브리지(schema `janseon-wiki-map.v1`, EPSG:5179, manifest·source SHA-256 검증). React 측은 `useMapBridge.ts`.
@@ -68,9 +68,10 @@ node scripts/generate-release.mjs --verify-pg             # PG 공개·비공개
 # cast:pg-verify는 이관 입력 필요; --pg 인자 자격증명 노출에 주의
 npm run check:artifacts                                  # dist/ ↔ artifact-allowlist.json 대조
 node scripts/check-contract.mjs                          # 산출 계약 검사(npm 스크립트 없음 — 직접 실행)
-node scripts/lore-json-validate.mjs --strict             # 레거시 SQLite 이관 진단; PG 정본 검증 아님
+WIKI_DOCUMENT_DB=/absolute/path/to/migration.sqlite node scripts/lore-json-validate.mjs --strict # 외부 SQLite 이관 진단
 node scripts/cast-sqlite/document-cli.mjs list --corpus current # WIKI_AUTHORING_PG 또는 WIKI_DOCUMENT_PG
-node --test --test-concurrency=1 scripts/cast-sqlite/test-inkos-adapter-*.mjs   # 어댑터 회귀(PR #627 병합 후)
+# 어댑터 7파일은 아래 Testing & QA의 삭제 DB 고정경로 의존으로 현재 실행 제한
+node --test scripts/test-inkos.mjs                        # 격리 InkOS pin·CLI 스모크
 node server/wiki-api.mjs                                 # PORT=8787 HOST=0.0.0.0 DATA_DIR=public/
 node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또는 WIKI_DOCUMENT_PG_FILE
 ```
@@ -88,9 +89,9 @@ node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또�
 - **린트·포맷터 부재.** ESLint/Prettier/Biome 없음 — 품질 장치는 tsc strict + 저장소 검사 스크립트(`check-contract`, `check-links`, `check-artifact-allowlist`, `lore-json-validate`).
 - **비공개 경계.** `src/generated-private/`(제보 서비스 전용, 프런트 import·`public/` 복사 금지), `.omo/private/`(mode 600), soul·역사 모티브·증거 원천은 공개 JSON·asset·번들에 포함 금지.
 
-### 기존 소유자 정책(원문 그대로 유지)
+### 소유자 정책
 
-- 세계관·인물·세력·무공·아이템·대사·위키를 작성·수정·검토하기 전에 [WORLD_BUILDING_GUIDE.md](WORLD_BUILDING_GUIDE.md)를 끝까지 읽는다. 이 지침은 이 저장소의 집필·기여 표면에 적용하며, 최신 사용자·디렉터 지시와 승인 상태를 함께 대조한다. 무공 분류는 그 가이드와 명명 원장의 승인본을 따르고, 옛 여덟 유파·여섯 분류·현장 별칭 문장으로 되돌리지 않는다.
+- 세계관·인물·세력·훈련·아이템·대사·위키를 작성·수정·검토하기 전에 [WORLD_BUILDING_GUIDE.md](WORLD_BUILDING_GUIDE.md)를 끝까지 읽는다. 최신 사용자·디렉터 지시와 승인 상태를 함께 대조한다. 무공 체계와 무협 설정은 폐기됐으므로 옛 유파·초식·명명 원장의 보존 기록을 현재 집필 기준으로 재사용하지 않는다. 서울 유일 세계·현재 역량 및 숙련 체계·한국어 공개 본문 기준을 따른다.
 - Work on a dedicated branch and deliver changes through a pull request to `main`; the owner alone merges it.
 - Use Korean conventional-commit messages for independently verified changes.
 - Do not push directly to `main` or rewrite shared history.
@@ -122,7 +123,7 @@ node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또�
 
 ## Runtime/Tooling Preferences
 
-- **Node:** README 기준 `>=22.16.0`, cast-sqlite(`node:sqlite` `DatabaseSync`)은 `>=24.15.0`, 배포 파이프라인(`.woodpecker/deploy.yaml`)은 Node 26 이미지. `engines`/`packageManager` 필드는 없다(문서 계약).
+- **Node:** 배포 파이프라인(`.woodpecker/deploy.yaml`)은 Node 26 이미지다. 잔존 SQLite 이관 도구(`node:sqlite` `DatabaseSync`)는 `>=24.15.0`, 격리 InkOS 포크 도구는 `>=22.16.0`을 요구한다. `package.json`에는 `engines`/`packageManager` 필드가 없다.
 - **패키지 매니저:** npm(package-lock). `npm ci --ignore-scripts`가 표준. pnpm은 InkOS 포크 전용 — `npm run inkos:install`이 `npm exec --package=pnpm@10`으로 격리 설치·빌드한다.
 - **InkOS 포크**(`vendor/seoul-dengoku-inkos` 서브모듈)는 별도 작업 디렉터리·별도 프로세스에서만. 공개 정본·비공개 DB를 읽거나 쓰도록 연결하지 않고, 위키 검사·생성·배포 입력에 포함하지 않는다.
 - 로어 schema 검사는 Python `jsonschema` 필요. release lock은 Python `fcntl.flock`(Windows 즉시 실행 단정 금지, exit 73 = `E_RELEASE_LOCKED`). lock은 협조하는 generate/build만 보호하므로 생성 중 dev·직접 tsc/vite reader는 중지한다.
@@ -131,7 +132,7 @@ node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또�
 ## Testing & QA
 
 - **테스트 인프라 제거(#625):** vitest·jsdom, npm 테스트 스크립트 전부, `.woodpecker/ci.yaml`, GitHub Actions 2종, `deploy/test-*.mjs`가 삭제됐다. 테스트 npm 스크립트·vitest 의존 재추가 금지(postgres 이관 Wave 0 계약).
-- **잔존 실행 회귀:** 승인 경계 어댑터 6종만 `node --test --test-concurrency=1 scripts/cast-sqlite/test-inkos-adapter-*.mjs`로 직접 실행한다(PR #627). InkOS 스모크 `scripts/test-inkos.mjs`는 PR #623 병합 후 master 고정 기대값으로 복원 예정. 직렬 실행 권고 — `io.mjs` 조상 ctime 검사가 병렬에서 `E_ADAPTER_PATH` 오탐을 낸다.
+- **잔존 회귀와 실행 한계:** 승인 경계 어댑터 7파일은 남아 있지만 fixture가 `authoring-schema-documents.mjs`에서 제거된 `data/canonical/wiki-cast.sqlite`를 고정경로로 연다. `WIKI_DOCUMENT_DB`만 지정해도 이 의존성은 바뀌지 않는다. 2026-10-31 `node --test --test-concurrency=1 scripts/cast-sqlite/test-inkos-adapter-*.mjs scripts/test-inkos.mjs` 실행은 110개 중 11개 성공·99개 실패했으며 어댑터 fixture에서 `E_DB_OPEN`이 관측됐다. 테스트를 통과시키려고 삭제 DB를 복원하지 않는다. 별도 코드 이관 전에는 checkout 단독 실행 가능한 회귀로 안내하지 않는다. 같은 실행에서 격리 InkOS pin·owner remote·master 설정 검사와 CLI 전달·한국어 프로젝트 초기화 스모크 두 개는 통과했다. 어댑터를 다시 이관·검증할 때는 `io.mjs` 조상 ctime 검사의 병렬 오탐을 피하도록 직렬 실행한다.
 - **품질 장치:** lint·포맷터 없음 — tsc strict + 검사 스크립트(`check-contract.mjs`, `check-links.mjs`, `check-artifact-allowlist.mjs`, `lore-json-validate.mjs`, `cast:verify` 등). 커버리지 설정 없음.
 - **CI:** `.woodpecker/deploy.yaml`만 존재 — `deploy/check-lfs-inputs.mjs` → `npm ci --ignore-scripts` → `deploy/call-owner.mjs`(외부 owner) → `deploy/check-live-contract.mjs --public-edge`.
-- **사전 조건:** generated catalog가 필요한 작업은 생성 입력과 전환 게이트를 확인한다. 이관 대사에는 정확한 SQLite 실체와 PG 연결이 필요하다. Git LFS 입력은 실제 필요한 작업의 계약을 확인한다.
+- **사전 조건:** generated catalog가 필요한 작업은 생성 입력과 전환 게이트를 확인한다. `check-links.mjs`는 일반 Markdown 링크 검사기가 아니라 생성 카탈로그·world·dist와 SQLite 이관 문서 링크를 검사하므로, 필요한 생성물과 외부 `WIKI_DOCUMENT_DB` 없이 PG 정본 검사로 실행하지 않는다. `lore-json-validate`·`cast:verify` 역시 외부 SQLite 이관 진단이며 PG 정본 검증을 대신하지 않는다. 이관 대사에는 정확한 SQLite 실체와 PG 연결이 필요하다. Git LFS 입력은 실제 필요한 작업의 계약을 확인한다.

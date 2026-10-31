@@ -4,12 +4,12 @@
 인물의 영구 ID, 명명 출처, 생일·가계와 가치관 수치를 보관하는 구조화 데이터 도메인이다.
 
 ## WHERE TO LOOK
-아래 `.json` 이름은 SQLite 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
+아래 `.json` 이름은 PostgreSQL 정본의 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
 | 작업 | 위치 |
 |---|---|
-| 영구 ID 발급·승계 | `person-id-registry.json`, `issue-person-ids.mjs`, `person-id-values-successor.mjs` |
-| 후보 신원 | SQLite 논리 문서 `person-id-candidates.json` |
-| registry 조회 | `issue-person-ids.mjs`, `person-id-values-successor.mjs` |
+| 영구 ID 현재 조회 | PG의 `person-id-registry.json` 논리 문서와 disposition |
+| 후보 신원 | PG 논리 문서 `person-id-candidates.json` |
+| 과거 발급·승계 증거 검사 | `issue-person-ids.mjs`, `person-id-values-successor.mjs` — SQLite archive 읽기 전용; 현재 PG 발급 API 아님 |
 | 본관·항렬 계약 | `hangnyeol-schema.md`, `surnames-bongwan.json`, `clan-hangnyeol-tables.json`, `cast-hangnyeol.json` |
 | 단순 이름 풀·중복 | `surnames.json`, `given-male.json`, `given-female.json`, `existing-names.json` |
 | 생일·세대·가계 | `cast-birthdays.json`, `cast-birth-cohorts.json`, `cast-family-*.json` |
@@ -25,6 +25,7 @@
 - registry 순서·안정 ID와 표시 이름을 구분한다. 과거 1001명·1010명 안내로 현재 분모를 덮어쓰지 않는다.
 - 가계의 친생·입양·역할 결정과 본문의 관계를 함께 대조한다.
 - 옛 `gurps-cast.json` 값은 새 인물 시스템의 자동 변환 원천이 아니다.
+- 새 영구 ID 발급은 현재 지원되는 PG 전용 구현·소유자 절차를 확인해야 한다. archive 검사의 `--write`는 거부되며 범용 document CLI로 새 ID 발급을 대신하지 않는다.
 
 ## ANTI-PATTERNS
 - 재확인으로 반박된 주장을 `artifact_corrected`로 바꿔 통과시키지 않는다.
@@ -35,4 +36,4 @@
 - 후보 발급·원문 등록·검토 승인·공개 게시를 한 단계로 처리하지 않는다.
 
 ## COMMANDS
-테스트 스위트는 제거되었다. 파생 조회 데이터 변경은 `npm run cast:verify -- --db data/canonical/wiki-cast.sqlite`와 실제 조회 결과로 확인한다.
+PG 현재 head·disposition과 실제 조회 결과를 대조한다. `cast:verify`의 SQLite 경로는 외부 파일을 명시한 이관·대사 진단에만 사용하며 PG 정본 검증으로 간주하지 않는다.
