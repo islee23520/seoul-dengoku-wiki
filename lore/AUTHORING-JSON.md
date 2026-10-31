@@ -1,6 +1,6 @@
 # PostgreSQL 작성 계약
 
-공개 편집 정본은 현재 운영 PostgreSQL의 `wiki`다. 조회·문서 편집·생성은 PG 현재 head와 release snapshot을 기준으로 하며 저작 CLI와 문서 API는 SQLite 폴백이 없다. 운영 wiki 커밋 `24f3c676f7df0b9903e02f4278ac65bf8fac688f`, run `20261030T150126Z-11560`의 배포 관측은 `deploy/README.md`에 기록한다. 앞선 격리 reader·worker 대사는 별도 이관 증거다. Git LFS로 추적 중인 `data/canonical/wiki-cast.sqlite`와 외부 SQLite는 명시적 이관·비교 archive로 보존하며 런타임 입력이나 편집 정본이 아니다. 이전 배포 롤백과 PG 원천 바이트·해시·provenance·봉인 revision은 유지한다.
+공개 편집 정본은 현재 운영 PostgreSQL의 `wiki`다. 조회·문서 편집·생성은 PG 현재 head와 release snapshot을 기준으로 하며 저작 CLI와 문서 API는 SQLite 폴백이 없다. 운영 wiki 커밋 `24f3c676f7df0b9903e02f4278ac65bf8fac688f`, run `20261030T150126Z-11560`의 배포 관측은 `deploy/README.md`에 기록한다. 앞선 격리 reader·worker 대사는 별도 이관 증거다. 2026-10-31 소유자 지시로 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`를 제거한다. 외부 SQLite는 외부 경로를 명시적으로 제공한 이관·대사에만 사용하며 런타임 입력이나 편집 정본이 아니다. 다른 archive·이전 배포 롤백과 PG 원천 바이트·해시·provenance·봉인 revision은 계속 보존한다. 이관·회귀 코드 삭제는 이번 변경 범위 밖이다.
 
 - 물리적인 lore JSON 원천 파일은 모두 제거됐다. 문서·출처 기록에 남아 있는 `lore/.../*.json` 이름은 DB 안의 논리적 문서 식별자 또는 provenance이며, 디스크에서 다시 읽어야 할 입력 파일이 아니다.
 - 현재 envelope head는 예시를 포함해 99개다. 예시는 실제 게시 문서와 구별한다.

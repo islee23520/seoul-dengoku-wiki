@@ -21,7 +21,7 @@ PostgreSQL 저작 정본의 typed document reader·편집과 SQLite 이관 참�
 - 도메인 mapper의 열 목록, SQL schema, 저장·복원·검증 코드를 함께 대조한다.
 - 현재 정본 계약은 `README.md`와 루트 `lore/AUTHORING-JSON.md`를 따른다. 과거 source manifest를 현재 파일 입력 목록으로 쓰지 않는다.
 - 조회·편집·생성의 기준은 PostgreSQL 현재 head와 release snapshot이다. 격리 대사와 운영 승격은 별도 증거다. 삭제된 JSON이나 Git blob 대조로 현재성 검사를 대체하지 않는다.
-- 추적 중인 `data/canonical/wiki-cast.sqlite`와 외부 SQLite는 명시적 이관·비교 archive로 보존하며 런타임 입력이나 운영 출력 대상이 아니다. 이전 배포 롤백과 PG 불변 역사도 유지한다. 이관 export는 checkout 밖 새 경로만 허용한다.
+- 2026-10-31 소유자 지시로 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`를 제거한다. 외부 SQLite는 외부 경로를 명시적으로 제공한 이관·대사에만 사용하며 런타임 입력이나 운영 출력 대상이 아니다. 다른 archive·이전 배포 롤백과 PG 원천 바이트·해시·provenance·봉인 revision은 계속 보존한다. 이관·회귀 코드 삭제는 이번 변경 범위 밖이다. 이관 export는 checkout 밖 새 경로만 허용한다.
 - 정본은 지원되는 typed CLI로 편집한다. export 파일로 정본을 덮어쓰거나 임의 SQL로 편집 계약을 우회하지 않는다.
 - PG transaction callback은 비동기이며 동일 leased 연결을 사용한다. SQLite 이관용 `withTransaction()` callback만 동기식이고 중첩·Promise 반환을 금지한다.
 - 과거 schema DB를 현행 정본으로 승격하거나 새 DB로 재구축하지 않는다. 버전·이력 계약은 현재 reader와 README를 확인한다.

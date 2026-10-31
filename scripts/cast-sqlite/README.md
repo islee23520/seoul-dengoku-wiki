@@ -2,7 +2,7 @@
 
 ## 저작 권위 전환과 작업 상태
 
-PostgreSQL `wiki`가 현재 운영 저작 정본이다. `document-cli.mjs`와 공개 문서 API는 PG 전용이며 SQLite 폴백이 없다. 운영 승격은 커밋 `24f3c676f7df0b9903e02f4278ac65bf8fac688f`, run `20261030T150126Z-11560`에서 `deployed`로 확인됐다([운영 관측](../../deploy/README.md#운영-전환-관측-2026-10-30)). 추적 중인 `data/canonical/wiki-cast.sqlite` 및 외부 SQLite archive는 명시적 이관·대사 보존본이며 런타임 입력이나 운영 저작 정본이 아니다. 이 보존본과 이전 배포 롤백은 유지한다. 앞선 격리 환경의 SQLite·PG reader 및 전체 worker 출력 1,433개 동등성, 일반 PG 빌드·계약·산출물·게이트 통과는 별도의 이관 검증 기록이다. 일반 PG 생성·빌드의 메타데이터와 스냅샷·비공개 출처 검증은 계속 유지한다.
+PostgreSQL `wiki`가 현재 운영 저작 정본이다. `document-cli.mjs`와 공개 문서 API는 PG 전용이며 SQLite 폴백이 없다. 운영 승격은 커밋 `24f3c676f7df0b9903e02f4278ac65bf8fac688f`, run `20261030T150126Z-11560`에서 `deployed`로 확인됐다([운영 관측](../../deploy/README.md#운영-전환-관측-2026-10-30)). 2026-10-31 소유자 지시로 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`를 제거한다. 외부 SQLite는 외부 경로를 명시적으로 제공한 이관·대사에만 사용하며 런타임 입력이나 운영 저작 정본이 아니다. 다른 archive·이전 배포 롤백과 PG 원천 바이트·해시·provenance·봉인 revision은 계속 보존한다. 이관·회귀 코드 삭제는 이번 변경 범위 밖이다. 앞선 격리 환경의 SQLite·PG reader 및 전체 worker 출력 1,433개 동등성, 일반 PG 빌드·계약·산출물·게이트 통과는 별도의 이관 검증 기록이다. 일반 PG 생성·빌드의 메타데이터와 스냅샷·비공개 출처 검증은 계속 유지한다.
 
 - 물리적인 lore JSON 원천 파일은 모두 제거됐다. 문서·출처 기록에 남아 있는 `lore/.../*.json` 이름은 DB 안의 논리적 문서 식별자 또는 provenance이며, 디스크에서 다시 읽어야 할 입력 파일이 아니다.
 - 현재 envelope head는 예시를 포함해 99개다. 예시는 실제 게시 문서와 구별한다.

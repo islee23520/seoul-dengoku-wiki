@@ -35,7 +35,7 @@ flowchart LR
 ```
 
 - **정본 → 생성물 단방향.** 물리적 lore JSON은 제거됐다. `.json` 이름은 DB 논리 ID/provenance일 뿐 실물 파일이 아닐 수 있다(예: `lore/World-Narrative-Atlas.json` = 논리 루트 문서 `WNA-001`, `lore/editorial/Character-System-Contract.json` = DB 내 typed 보존).
-- **이관과 증거 구분.** 추적 중인 SQLite와 외부 SQLite는 명시적 이관·대사 archive로 보존하며 운영 런타임 입력이나 편집 정본이 아니다. 이전 배포 롤백도 유지한다. 이 archive와 PG 내부 `wiki.source_file` 원천 바이트·해시, `source_record` provenance, 봉인 revision은 별개다. PG 역사 증거는 불변으로 보존하며 삭제·재작성하지 않는다.
+- **이관과 증거 구분.** 2026-10-31 소유자 지시로 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`를 제거한다. 외부 SQLite는 외부 경로를 명시적으로 제공한 이관·대사에만 사용하며 운영 런타임 입력이나 편집 정본이 아니다. 다른 archive와 이전 배포 롤백은 계속 보존한다. PG 내부 `wiki.source_file` 원천 바이트·해시, `source_record` provenance, 봉인 revision도 불변으로 보존하며 삭제·재작성하지 않는다. 이관·회귀 코드 삭제는 이번 변경 범위 밖이다.
 - **전환 게이트.** `--verify-pg`는 공개 `WIKI_DOCUMENT_PG`와 별도 비공개 `WIKI_GENERATION_PRIVATE_PG`를 사용해 stage만 검증하고 승격하지 않는다. 일반 PG 생성·빌드는 메타데이터, PostgreSQL 스냅샷과 비공개 입력 스냅샷·출처 검증을 유지한다. 격리 환경의 통과와 정확한 SHA/run의 운영 승격은 별도 증거다. 잔존 SQLite 생성 경로는 명시적 이관 진단 전용이며 런타임 폴백이 아니다.
 - **화면 데이터 흐름:** `src/main.tsx`(BrowserRouter basename `/wiki`) → `src/App.tsx` 라우팅. 문서 본문은 `src/documentApi.ts` → `GET /wiki/api/documents/world/<slug>?locale=ko` → blocks → `DocumentContent` 렌더. 공개 본문은 한국어 전용이며 영어 카탈로그·영어 생성 문서는 폐기됐다.
 - **API:** dev에서 Vite proxy가 `/wiki/api/documents` → `127.0.0.1:8788`(문서 API), 나머지 `/wiki/api` → `127.0.0.1:8787`(데이터 API)로 보낸다. 문서 API와 generate worker(`scripts/generate-catalog.mjs`)는 동일한 `publicHouseContent`/`publicOfficeContent`/`renderLoreMarkdown` 렌더 체인을 공유한다.
