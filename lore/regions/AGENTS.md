@@ -4,7 +4,7 @@
 선택 경계의 동별 저작 데이터와 역 내부 상태, 선거구 작위·공간 출처를 관리한다.
 
 ## WHERE TO LOOK
-아래 `.json` 이름은 SQLite 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
+아래 `.json` 이름은 PostgreSQL 정본의 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
 | 작업 | 위치 |
 |---|---|
 | 단위·판본·라이선스 | `README.md`, `sources/selection.json` |
@@ -35,5 +35,5 @@
 - `.omo/evidence/`의 존재나 문장 길이·점수만으로 지역 서사 완료를 판정하지 않는다.
 
 ## COMMANDS
-기존 데이터 검증 도구와 실제 지역·지도 화면으로 확인한다. 테스트 스위트는 제거되었다.
+기존 데이터 검증 도구와 실제 지역·지도 화면으로 확인한다.
 옛 `TOOL/tools/regions/` Python 도구는 이 작업트리에 없다. JSON 검증을 공간 원자료 독립 재생성과 같다고 보고하지 않는다.

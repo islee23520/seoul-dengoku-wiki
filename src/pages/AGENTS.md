@@ -1,12 +1,12 @@
 # 라우트 화면 작업 지침
 
 ## OVERVIEW
-기사·인물·가문·제보·도구 화면 영역이다. 점수 9: 파일 수 3, 코드 비율 2, 심볼 밀도 2, export 수 2로 독립 도메인에 해당한다.
+기사·인물·가문·제보·도구 화면 영역이다. 운영 PG 정본과 공개 API·생성 투영, 로컬 편집 도구의 후보 출력을 구분한다.
 
 ## WHERE TO LOOK
 | 작업 | 위치 | 데이터·연결 |
 |---|---|---|
-| 기사·locale 전환 | `ArticlePage.tsx`, `../documentApi.ts` | 생성 catalog metadata와 API 본문 blocks 구분 |
+| 한국어 기사 | `ArticlePage.tsx`, `../documentApi.ts` | 생성 catalog metadata와 API 본문 blocks 구분 |
 | 인물 목록·상세 | `PeoplePage.tsx`, `PersonDetailPage.tsx` | peopleCatalog와 개별 상세 요청 |
 | 가문 목록·상세 | `FamiliesPage.tsx`, `FamilyDetailPage.tsx` | clanFamilyCatalog·가계도 |
 | 관계 그래프 | `RelationsGraphPage.tsx` | 인물 관계 시각화 |
@@ -21,6 +21,7 @@
 - 실제 라우트 등록과 lazy import는 `../App.tsx`에서 확인한다. 파일 존재만으로 노출 경로를 추정하지 않는다.
 - `ArticlePage`는 `documentApi.ts`를 통해 `/wiki/api/documents/world/<slug>?locale=ko` 본문 blocks를 받아 렌더한다. 생성 catalog metadata는 문서 선택용이며, Mermaid는 필요한 기사에서만 지연 로드한다.
 - 공개 기사는 한국어만 제공한다. 영문 라우트·언어 전환 UI·즉석 번역을 추가하지 않는다.
+- 옛 영문 본문은 보존 자료이며 영어 동시 저작을 요구하지 않는다. 현재 공개 서사는 서울 안에서 성립해야 하며 무공·무협 체계를 다시 노출하지 않는다. 기준은 루트 `WORLD_BUILDING_GUIDE.md`다.
 - 문서가 바뀔 때 이전 slug의 로드 실패나 비동기 결과가 새 기사 상태를 오염시키지 않게 한다.
 - `PersonDetailPage`의 공개 역량·권리·보유와 봉인된 역사 sheet는 서로 다른 상태와 자료다.
 - 제보 작성 UI는 문서 조회와 `FeedbackSurface` 바인딩이 준비된 뒤 노출한다.

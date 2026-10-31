@@ -6,16 +6,18 @@ The public wiki renders Korean pages only. Generated files are never edited by h
 
 PostgreSQL `wiki`가 현재 운영 저작 정본이며 typed 레코드와 문서 head를 보유한다. 비공개 editorial·Soul 데이터는 별도 `wiki_private` 권한 경계로 보호한다. 저작 CLI와 문서 API는 SQLite 폴백 없이 PostgreSQL을 사용한다. 운영 승격은 커밋 `24f3c676f7df0b9903e02f4278ac65bf8fac688f`, run `20261030T150126Z-11560`에서 `deployed`로 확인됐다([운영 관측](deploy/README.md#운영-전환-관측-2026-10-30)). 앞선 격리 환경의 SQLite·PG reader 대사, 전체 worker 출력 1,433개 동등성, 일반 PG 빌드 및 `check-contract`·`check:artifacts`·게이트 통과는 별도의 이관 검증 기록이며 운영 배포 증거를 대신하지 않는다.
 
-On 2026-10-31, the owner directed removal of the fully migrated tracked `data/canonical/wiki-cast.sqlite`. External SQLite files may be used only for explicit migration/comparison with an explicitly supplied external path, never as runtime inputs or an editable production authority. Keep all other archives and the previous deployment rollback available. PostgreSQL historical evidence (`wiki.source_file` bytes/hashes, `source_record` provenance and sealed revisions) must remain immutable; do not rewrite historical bytes to match edited heads. Migration/regression code removal is outside this change.
+On 2026-10-31, the fully migrated tracked `data/canonical/wiki-cast.sqlite` was removed by owner direction. External SQLite files may be used only for explicit migration/comparison with an explicitly supplied external path, never as runtime inputs or an editable production authority. Keep all other archives and the previous deployment rollback available. PostgreSQL historical evidence (`wiki.source_file` bytes/hashes, `source_record` provenance and sealed revisions) must remain immutable; do not rewrite historical bytes to match edited heads. Migration/regression code removal is outside this change.
 
 Generation and the document API share current-source and category-publication predicates. Category-ready drafts may be published under the existing catalog policy without changing their editorial approval status. Excluded sources, examples, private namespaces and retired cast articles are not published. Typed public routes derive from the selected document's logical filename; historical `article_route` and publication-admission rows do not freeze that route inventory. Computed index/glossary derivations retain their explicit stored bindings.
+
+Current writing follows [WORLD_BUILDING_GUIDE.md](WORLD_BUILDING_GUIDE.md): Seoul is the only current world, and the retired wuxia/martial-arts system must not be carried forward under new names. These editing requirements do not claim that every stored head or published page has already completed the editorial migration. Public Korean-only publication also retires simultaneous English authoring; preserve sealed multilingual history without making it a current publication requirement.
 
 ## Repository layout
 
 | Path | Contents |
 |---|---|
 | `lore/` | Domain guidance and logical document namespaces; historical `.json` paths identify database documents/provenance, not source files to recreate. |
-| `lore/authoring*.schema.json`, `lore/AUTHORING-JSON.md` | Typed document/envelope contract and editorial procedures. |
+| `lore/authoring*.schema.json` (logical DB schema identifiers), `lore/AUTHORING-JSON.md` (guide) | Typed document/envelope contracts and editorial procedures. Schema identifiers do not imply physical JSON source files to restore. |
 | `lore/editorial/` | Editorial guidance; private source data is not published. |
 | `scripts/` | PG readers and authoring, generation, validators, and migration-only SQLite tooling. See `scripts/cast-sqlite/README.md`. |
 | `src/` | The React wiki application. `src/generated/` is build output. |
@@ -43,13 +45,14 @@ A few build inputs (for example the creative-name normalization ledger) live out
 ## Checks
 
 ```sh
-node scripts/lore-json-validate.mjs --strict   # document schema/content validation; not deployment proof
+# External SQLite migration diagnostics only; not a current PG-head validator:
+WIKI_DOCUMENT_DB=/absolute/external/snapshot.sqlite node scripts/lore-json-validate.mjs --strict
 node scripts/check-contract.mjs               # generated Korean-only publication contract
 # Migration-only reconciliation: consult scripts/postgres-migration/reconcile.mjs.
 # Its --pg argument can expose credentials in process arguments; use a protected environment.
 ```
 
-Test suites were removed by owner decision (2026-10-26). Data reconciliation, generated-output checks, semantic review and deployment verification are separate; none grants source approval.
+The former `test:*` npm scripts/workflows were removed by owner decision (2026-10-26). Retained InkOS adapter tests are not the production publication gate and currently fail on a deleted hardcoded SQLite dependency; an external `WIKI_DOCUMENT_DB` alone cannot repair that reader ([regression boundary](CONTRIBUTING.md#testing-rules)). Data reconciliation, generated-output checks, semantic review and deployment verification are separate; none grants source approval.
 
 ## Character creation tools
 
@@ -74,7 +77,7 @@ npm --prefix /path/to/seoul-dengoku-wiki run inkos -- init --lang ko
 
 InkOS runs as a separate process. Do not give it PostgreSQL canonical/private credentials or SQLite migration databases to read or write. It does not participate in wiki generation, approval, publication or deployment. The existing [candidate-only, read-only database adapter](scripts/inkos-adapter/README.md) remains the boundary; this integration does not connect InkOS directly to it or change its approval rules. LLM configuration remains global at `~/.inkos/.env`; never commit credentials. Help, version and project initialization do not require model calls.
 
-GitHub Actions keeps its default non-recursive checkout. Woodpecker explicitly disables recursive submodule cloning for CI and deployment; the runtime Dockerfile copies only the required `vendor/*.tgz` packages, never the InkOS source or build.
+Woodpecker explicitly disables recursive submodule cloning for CI and deployment; the runtime Dockerfile copies only the required `vendor/*.tgz` packages, never the InkOS source or build. The former GitHub Actions test workflows are not a current integration gate.
 
 Character creation sheets and portrait generation tools are maintained in [seoul-dengoku-tools](https://github.com/islee23520/seoul-dengoku-tools), not in a sibling checkout required by this wiki. Reference the [character sheet tool](https://github.com/islee23520/seoul-dengoku-tools/tree/main/TOOL/tools/sheet-local) and [portrait generation tools](https://github.com/islee23520/seoul-dengoku-tools/tree/main/TOOL/avatar-gen/portrait) through their remote GitHub URLs. The wiki owns the character canon and published sheets; the tools repository owns their authoring tools.
 
@@ -86,7 +89,7 @@ Character creation sheets and portrait generation tools are maintained in [seoul
 4. Run the checks above and open a pull request from a dedicated branch. Only the owner merges into `main`.
 5. A card or story that uses a real person needs that person's recorded permission and a legal note before it is merged. Real companies, products, logos and current executives never appear in the fiction.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the CI details.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution and verification boundaries and [deploy/README.md](deploy/README.md) for CI/deployment procedures and dated operational observations.
 
 ## 한국어 안내
 

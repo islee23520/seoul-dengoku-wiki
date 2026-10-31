@@ -1,7 +1,7 @@
 # scripts 작업 지침
 
 ## OVERVIEW
-공개 생성·승인 검사·인물 투영·GIS 전처리와 회귀 검사를 모은 Node ESM 도구 영역이다. 점수 12의 독립 파이프라인 도메인으로 지침을 둔다.
+공개 생성·승인 검사·인물 투영·GIS 전처리와 데이터 검증을 모은 Node ESM 도구 영역이다. 운영 저작 정본은 PostgreSQL `wiki`다.
 
 ## WHERE TO LOOK
 | 작업 | 위치 | 확인할 경계 |
@@ -24,17 +24,18 @@
 - `public/`, `src/generated/`, `src/generated-private/`의 변경은 stage·journal 계약을 함께 확인한다.
 - 원천 해시·승인 receipt·현재성·공개 편입은 별도 판단이다. materialize 성공을 승인으로 취급하지 않는다.
 - `historical-inputs/`의 보존 자료를 현재 서울 자료의 자동 대체재로 쓰지 않는다.
-- 소유자 결정으로 테스트 스위트를 제거했다. 새 테스트 스크립트를 작성하지 않고 기존 데이터 검증 도구와 실제 실행 결과를 사용한다.
+- 공개 문서·카탈로그는 한국어 전용이며 영어 동시 저작·영문 공개 경로를 복원하지 않는다. 서울 유일 세계·무협 제거 기준은 루트 `WORLD_BUILDING_GUIDE.md`를 따른다. 과거 원천 보존과 현재 공개 편입을 구분한다.
+- 소유자 결정으로 일반 테스트 스위트와 package-level `npm test`는 제거됐다. 새 테스트 스크립트를 작성하지 않고 기존 데이터 검증 도구와 실제 실행 결과를 사용한다. 별도로 남아 있는 InkOS·어댑터 격리 진입점은 해당 안내를 따르며 일반 빌드·CI로 확대하지 않는다.
 - Python GIS 도구는 각 파일의 실행·의존성 선언을 확인한다. release lock broker는 `python3`와 `fcntl.flock`을 사용한다.
 
 ## COMMANDS
 저장소 루트에서 변경 영역에 해당하는 명령을 선택한다.
 로어 schema 검사는 Python `jsonschema`가 필요하다. 생성물·dist·비공개 승인 원천을 읽는 검사는 해당 입력이 준비된 checkout에서 실행하며, 누락 오류를 검사 통과로 보고하지 않는다.
-운영 저작·생성은 PostgreSQL을 사용한다. 아래 `cast:verify --db`는 보존된 SQLite 이관·비교 archive의 명시적 검사이며 운영 검증이나 런타임 입력이 아니다.
+운영 저작·생성은 PostgreSQL을 사용한다. 아래 `cast:verify --db`는 checkout 밖에서 별도로 제공한 SQLite 이관·비교 사본의 명시적 검사이며 운영 검증이나 런타임 입력이 아니다. 추적 `data/canonical/wiki-cast.sqlite`는 제거됐으며 복원하지 않는다.
 ```bash
 npm run generate
 npm run build
-npm run cast:verify -- --db data/canonical/wiki-cast.sqlite
+npm run cast:verify -- --db /absolute/external/wiki-cast.sqlite
 ```
 
 ## ANTI-PATTERNS

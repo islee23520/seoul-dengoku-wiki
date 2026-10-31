@@ -2,7 +2,7 @@
 
 ## 저작 권위 전환과 작업 상태
 
-PostgreSQL `wiki`가 현재 운영 저작 정본이다. `document-cli.mjs`와 공개 문서 API는 PG 전용이며 SQLite 폴백이 없다. 운영 승격은 커밋 `24f3c676f7df0b9903e02f4278ac65bf8fac688f`, run `20261030T150126Z-11560`에서 `deployed`로 확인됐다([운영 관측](../../deploy/README.md#운영-전환-관측-2026-10-30)). 2026-10-31 소유자 지시로 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`를 제거한다. 외부 SQLite는 외부 경로를 명시적으로 제공한 이관·대사에만 사용하며 런타임 입력이나 운영 저작 정본이 아니다. 다른 archive·이전 배포 롤백과 PG 원천 바이트·해시·provenance·봉인 revision은 계속 보존한다. 이관·회귀 코드 삭제는 이번 변경 범위 밖이다. 앞선 격리 환경의 SQLite·PG reader 및 전체 worker 출력 1,433개 동등성, 일반 PG 빌드·계약·산출물·게이트 통과는 별도의 이관 검증 기록이다. 일반 PG 생성·빌드의 메타데이터와 스냅샷·비공개 출처 검증은 계속 유지한다.
+PostgreSQL `wiki`가 현재 운영 저작 정본이다. `document-cli.mjs`와 공개 문서 API는 PG 전용이며 SQLite 폴백이 없다. 과거 운영 승격 SHA·run과 `deployed` 관측은 [운영 기록](../../deploy/README.md#운영-전환-관측-2026-10-30)을 참조하며 현재 배포 상태로 자동 재사용하지 않는다. 2026-10-31 소유자 지시로 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`는 제거됐다. 외부 SQLite는 외부 경로를 명시적으로 제공한 이관·대사에만 사용하며 런타임 입력이나 운영 저작 정본이 아니다. 다른 archive·이전 배포 롤백과 PG 원천 바이트·해시·provenance·봉인 revision은 계속 보존한다. 이관·회귀 코드 삭제는 이번 변경 범위 밖이다. 앞선 격리 환경의 SQLite·PG reader 및 전체 worker 출력 1,433개 동등성, 일반 PG 빌드·계약·산출물·게이트 통과는 별도의 과거 이관 검증 기록이다. 일반 PG 생성·빌드의 메타데이터와 스냅샷·비공개 출처 검증은 계속 유지한다.
 
 - 물리적인 lore JSON 원천 파일은 모두 제거됐다. 문서·출처 기록에 남아 있는 `lore/.../*.json` 이름은 DB 안의 논리적 문서 식별자 또는 provenance이며, 디스크에서 다시 읽어야 할 입력 파일이 아니다.
 - 현재 envelope head는 예시를 포함해 99개다. 예시는 실제 게시 문서와 구별한다.
@@ -10,12 +10,13 @@ PostgreSQL `wiki`가 현재 운영 저작 정본이다. `document-cli.mjs`와 �
 - 비공개 editorial·Soul 데이터는 공개 데이터와 별도 권한 경계를 유지한다. 이관용 비공개 SQLite 파일은 Git이나 공개 배포물에 넣지 않는다.
 - 생성된 공개 JSON은 출력물이다. 직접 고쳐 저작 원천으로 사용하지 않는다.
 - 이관 검증, 생성 완료, 원격 배포와 소유자 승인은 각각 별도 상태다.
+- 공개 문서·카탈로그는 한국어 전용이며 영어 동시 저작을 요구하지 않는다. 보존된 영문·옛 지리·무협 원천은 현재 공개 설정이 아니다. 서울 유일 세계·무협 제거의 편집 기준은 [세계관 지침](../../WORLD_BUILDING_GUIDE.md)을 따른다.
 
 DB의 존재, export 성공, 검증 통과, 렌더링 완료, 공개 배포, 게임 구현, 소유자 승인은 서로 다른 상태다. 현재 저장 상태를 확인하는 검증을 새로운 게시 승인으로 해석하지 않는다.
 
 ## 준비
 
-프로젝트 실행에는 Node.js 24.15.0 이상을 사용한다. SQLite 접근은 Node 내장 기능을 이용한다. 일반 SQLite 도구로 닫힌 DB를 읽을 때에는 Node가 필요하지 않다.
+SQLite 이관·대사 도구에는 Node.js 24.15.0 이상을 사용한다. SQLite 접근은 Node 내장 기능을 이용한다. 일반 SQLite 도구로 닫힌 DB를 읽을 때에는 Node가 필요하지 않다. 이 하위 도구 요구를 전체 프런트엔드·InkOS의 최소 Node 버전과 혼동하지 않는다.
 
 SQLite 이관·대사 작업에는 해당 캡처의 실제 SQLite 파일과 정확한 식별·해시가 필요하다. 파일이 없거나 열리지 않으면 중단한다. 삭제된 JSON이나 다른 파일로 대체 정본을 만들지 않는다. PG 저작·문서 API는 이 SQLite 파일을 요구하지 않는다.
 
@@ -33,7 +34,7 @@ SQLite 이관·대사 작업에는 해당 캡처의 실제 SQLite 파일과 정�
 
 현재 document-cli의 지원 범위는 문서 편집이다. 인물 수치·권리·직책·가계·Soul 등 임의의 도메인을 같은 명령으로 수정할 수 있다고 약속하지 않는다. 필요한 변경을 기존 typed 명령으로 표현할 수 없다면 지원 범위를 확인하고 별도 구현·검토 대상으로 기록한다. 임의 SQL 쓰기로 지원되지 않는 편집 계약을 우회하지 않는다.
 
-비공개 Soul 배정은 별도 `scripts/document-store/soul-assignment-cli.mjs`로 편집한다. `init-edits --db <path> --actor <actor> --reason <reason>`는 mode `600`인 기존 DB에 개정 저장소를 명시적으로 추가한다. `read`와 `revision`은 현재 head를 읽으며, `replace`는 `--person-id`, `--expected-revision`, `--actor`, `--reason`과 stdin의 완전한 typed assignment를 받는다. 편집은 `draft`이고 `approvalRef`를 허용하지 않는다. 원본 승인 revision `0`, 안정 ID 1,022개와 과거 개정은 보존한다. 별도 검토 전까지 게시 인증은 명시적인 `view: 'approved'`로 원래 승인 스냅샷만 읽는다.
+비공개 Soul 배정용 `scripts/document-store/soul-assignment-cli.mjs`는 별도 SQLite 저장소 도구이며 운영 PG 정본의 범용 편집 경로가 아니다. 이관·진단 입력을 명시적으로 제공한 경우에만 저장 방식과 권한을 확인한다. `init-edits --db <path> --actor <actor> --reason <reason>`는 mode `600`인 기존 DB에 개정 저장소를 명시적으로 추가한다. `read`와 `revision`은 해당 저장소의 head를 읽으며, `replace`는 `--person-id`, `--expected-revision`, `--actor`, `--reason`과 stdin의 완전한 typed assignment를 받는다. 편집은 `draft`이고 `approvalRef`를 허용하지 않는다. 원본 승인 revision `0`, 안정 ID와 과거 개정은 보존한다. 별도 검토 전까지 이 도구의 게시 인증은 명시적인 `view: 'approved'`로 원래 승인 스냅샷만 읽는다. 이 CLI가 있다는 이유로 PG Soul 편집·발급 경로가 구현됐다고 간주하지 않는다.
 
 ## 문서 편집과 revision 이력
 
@@ -71,13 +72,14 @@ node scripts/cast-sqlite/document-cli.mjs read --corpus current --domain <domain
 $castOut = Join-Path ([System.IO.Path]::GetTempPath()) ('wiki-cast-' + [guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $castOut | Out-Null
 $castDb = Join-Path $castOut 'wiki-cast.sqlite'
+$migrationDb = '/absolute/external/wiki-cast.sqlite' # 별도로 제공된 실제 이관 사본
 
-npm run cast:verify -- --db 'data/canonical/wiki-cast.sqlite'
-npm run cast:build -- --db 'data/canonical/wiki-cast.sqlite' --output "$castDb"
+npm run cast:verify -- --db "$migrationDb"
+npm run cast:build -- --db "$migrationDb" --output "$castDb"
 npm run cast:verify -- --db "$castDb"
 ```
 
-`cast:build`는 `data/canonical/wiki-cast.sqlite` 덮어쓰기를 거부하고 입력이 없을 때 삭제된 JSON으로 재구축하지 않는다. export 파일을 PG 정본이나 이전 입력 위에 복사하지 않는다.
+`cast:build`는 입력이나 기존 출력 덮어쓰기를 허용하지 않고 입력이 없을 때 삭제된 JSON으로 재구축하지 않는다. 제거된 추적 DB를 복원하거나 export 파일을 PG 정본·이전 입력 위에 복사하지 않는다.
 
 `--source-root`는 출력 경로 보호에 사용할 checkout 경로다. SQLite 입력은 별도의 `--db`로 명시한다. 실제 지원 옵션과 오류 코드는 현재 명령 도움말·실행 결과를 따른다.
 
@@ -173,7 +175,7 @@ npm run cast:query -- --db "$castDb" source --path lore/name-pools/values-cast.j
 
 ## 비공개 editorial·Soul 경계
 
-관계 검증기 `node lore/relations/validate.mjs --private-pg <connection-string>`는 공개 관계 자료와 `lore/editorial/seoul-narrative-census-events.json`의 비공개 event-ID ledger를 동일한 read-only PostgreSQL transaction에서 읽는다. 이 경로만 명시적으로 private capability를 주입한다. 인자 없는 검증은 private access를 허용하지 않아 `E_PRIVATE`로 실패하며, ledger를 파일·archive·환경 변수로 우회하지 않는다. 표준 출력은 집계 PASS만, 오류 출력은 오류만 담으며 ledger 본문·자격증명은 출력하지 않는다.
+관계 검증기 `node lore/relations/validate.mjs --private-pg <connection-string>`는 현재 `E_PRIVATE_PG_UNSUPPORTED`로 실패한다. 비공개 PG reader 계약이 구현되지 않았으므로 이 옵션을 PG 검증 성공 경로로 안내하지 않는다. 인자 없는 실행도 비공개 event-ID ledger가 필요한 경계와 실제 입력 조건을 확인해야 하며, 누락·권한 실패를 통과로 보고하지 않는다. ledger를 파일·archive·환경 변수로 우회하거나 자격증명·본문을 출력하지 않는다. 공개 문서 편집용 typed PG CLI를 관계·Soul·발급 전체의 대체 도구로 확대 해석하지 않는다.
 공개 엔진에는 허용된 역량·숙련·특성·신체·질병·근거 서사만 투영한다. Soul, 역사 모티브, 비공개 basis/evidence, private profile 상태와 승인 원문을 함께 싣지 않는다. 공개에 허용된 hash·projection metadata와 비공개 원문은 구별한다.
 
 과거 excluded 경로 17개나 engine batch 9개 같은 수치는 당시 제외 계약의 기록이다. 현재 비공개 저장소 전체의 개수·완전성·권한 검사를 대신하지 않는다. 과거 검토 baseline이나 `batches=[]`, `approvals=[]`였던 장부도 새 서울 수여 승인으로 사용할 수 없다.
@@ -209,3 +211,5 @@ npm run cast:verify -- --db "$castCopy"
 자동 검증 명령은 현재 구현과 입력을 확인해 실행한다. 이관 SQLite 검사와 PG 대사, 실제 PG stage 검증을 구분하고 실행한 명령·종료 코드·식별 정보·검사 범위를 기록한다. 과거 결과를 현재 성공 증거로 재사용하지 않는다.
 
 문서에는 새 테스트 수, 전체 통과, source freshness, 원격 반영 또는 소유자 승인을 만들어 적지 않는다. 최종 보고는 저장 검증, 의미 검토, 생성 완료, 게시 확인, 게임 구현, 승인 상태를 각각 분리한다.
+
+일반 테스트 스위트와 package-level `npm test`는 제거됐다. 별도로 남아 있는 격리 InkOS·어댑터 진입점은 해당 안내를 확인하며 일반 CI·빌드에 편입하거나 삭제된 suite를 복원하지 않는다. 문서 정비 자체는 검사 실행 증거가 아니다.

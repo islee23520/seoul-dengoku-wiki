@@ -1,5 +1,13 @@
 # 텍스트 코퍼스 도메인 정규화와 남은 범위
 
+## 현재 적용 범위 (2026-10-31)
+
+이 문서는 SQLite schema-5 텍스트 매핑과 당시 검사 관측을 보존한 기술 기록이다. 현재 운영 저작 정본은 PostgreSQL `wiki`이며 현재 사용법은 [README](README.md), 공개 한국어·서울 유일 세계·무협 제거 기준은 [세계관 지침](../../WORLD_BUILDING_GUIDE.md)을 따른다. 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`는 제거됐고 외부 SQLite는 명시적 경로를 제공한 이관·대사에만 사용한다.
+
+아래 `.json` 경로는 DB의 논리 문서 ID·과거 provenance이며 물리 파일 복원 지시가 아니다. 옛 두 언어 보존은 영어 동시 저작·영문 공개 요구가 아니다. `build`, `offline/full verify`, suite 통과·실패 수와 “남은 작업”은 당시 관측으로만 읽고 현재 실행 명령·완료 상태로 사용하지 않는다. 일반 테스트 스위트는 제거됐으며 새 테스트를 작성하거나 과거 suite를 복원하지 않는다. PG의 보존 원천 바이트·해시·봉인 revision과 비공개 `wiki_private` 경계를 유지한다.
+
+## 보존된 매핑·검증 기록
+
 스키마 5는 기존 텍스트 도메인 정규화에 현행 서울 권리·office-v2 매핑을 통합한다. `source_file`의 원본 바이트 SHA-256과 `source_record`의 JSON pointer를 외래 키로 연결하며, 원문 JSON을 변경하지 않는다. `text-data.mjs`의 재구성은 원문·범용 pointer 값을 읽지 않고 도메인 행만 사용한다. build 및 offline/full verify는 manifest에 열거된 문서별 원래 `/data`와 깊은 JSON 동등성을 검사하고, 새 키나 손실을 감사 실패로 처리한다. 아래 표는 기존 도메인 대응이며 정확한 현행 입력 집합과 수는 `text-corpus-manifest.mjs` 및 실행 receipt가 기준이다. 이 문서는 현재 checkout 전체 검증 성공 영수가 아니다.
 
 | 도메인 | 관계형 테이블 |

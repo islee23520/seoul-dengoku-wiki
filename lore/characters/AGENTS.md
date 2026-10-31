@@ -4,7 +4,7 @@
 인물 카드·국가별 명부·관계 원문·공개 등록 계약을 관리한다.
 
 ## WHERE TO LOOK
-아래 `.json` 이름은 SQLite 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
+아래 `.json` 이름은 PostgreSQL 정본의 논리 ID 또는 과거 provenance이며 물리 입력 파일이 아니다. 공개·비공개 정본 구분과 편집 절차는 루트 `lore/AUTHORING-JSON.md`와 `WORLD_BUILDING_GUIDE.md`를 따른다.
 | 작업 | 위치 |
 |---|---|
 | 인물 색인·게시 장부 | `Cast-Index.json`, `Cast-Index-S4.json` |
@@ -34,5 +34,5 @@
 - 미성년 성적 서사를 작성하지 않는다. 브랜치에 본문이 있다는 이유로 게시 승인을 얻은 것으로 처리하지 않는다.
 
 ## COMMANDS
-테스트 스위트는 제거되었다. 변경 후 실제 인물 화면과 정본 조회 결과를 확인한다.
+변경 후 실제 인물 화면과 정본 조회 결과를 확인한다.
 옛 `TOOL/tools/wiki/verify-cast.mjs`는 이 작업트리의 현행 검증 경로가 아니다.

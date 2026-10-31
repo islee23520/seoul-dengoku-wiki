@@ -1,7 +1,7 @@
 # 복합 컴포넌트 작업 지침
 
 ## OVERVIEW
-지도·가계도·제보 선택의 복합 UI 영역이다. 점수 9: 파일 수 3, 코드 비율 2, 심볼 밀도 2, export 수 2로 독립 도메인에 해당한다.
+지도·가계도·제보 선택의 복합 UI 영역이다. 공개 한국어 표면에 허용된 투영만 연결하며 PG 비공개 저장소나 이관 SQLite를 직접 읽지 않는다.
 
 ## WHERE TO LOOK
 | 작업 | 위치 | 핵심 경계 |
@@ -24,6 +24,7 @@
 - 작위 표시 rank는 county·duchy·kingdom·empire다. 남작령 슬롯은 county 상세 데이터로 다룬다.
 - `geographicTitleMap.mjs`의 런타임 export를 바꾸면 대응 `.d.mts` 선언도 대조한다.
 - 지도와 가계도 전용 CSS는 각각의 컴포넌트 옆에 있다.
+- 현재 지도·인물 위치와 영지는 서울 행정 경계 안의 세계를 따른다. 보존된 서울 밖 지리·옛 권리를 현재 선택지로 되살리지 않는다. 설정 기준은 루트 `WORLD_BUILDING_GUIDE.md`다.
 
 ## ANTI-PATTERNS
 - staging 객체를 spread하여 지도 payload에 싣지 않는다. 비공개 증거와 역사 권리는 공개 allowlist 밖이다.

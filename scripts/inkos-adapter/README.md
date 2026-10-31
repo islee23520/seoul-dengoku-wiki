@@ -2,6 +2,8 @@
 
 이 문서는 `scripts/inkos-adapter/`의 개발 및 검토 운영자를 위한 운영 기준서다. 어댑터는 공개 허용이 확인된 한국어 문단 원천을 읽기 전용으로 내보내고, 호스트가 지정한 교체 후보 파일을 수집해 원천 식별자와 재결합한 뒤, 승인 전 초안 미리보기 파일만 생성한다.
 
+현재 운영 저작 정본은 PostgreSQL `wiki`다. 이 어댑터는 PG 저작 API가 아니라 명시적 `--db` SQLite 사본을 읽는 별도 후보·미리보기 경로이며 운영 SQLite 폴백이 아니다. 추적 `data/canonical/wiki-cast.sqlite`는 제거됐으므로 복원·기본 입력으로 사용하지 않는다. 실제 자료의 외부 전송은 아래 별도 허가·격리 경계를 따른다. 현재 저작은 [PG 도구 안내](../cast-sqlite/README.md), 공개 한국어·서울 유일 세계·무협 제거는 [세계관 지침](../../WORLD_BUILDING_GUIDE.md)을 따른다.
+
 ## 1. 후보 전용(candidate-only) 원칙과 소유자 승인 경계
 
 수집된 교체 문장과 준비된 미리보기는 모두 후보 기록일 뿐이며 어떤 경우에도 승인이 아니다. 소유자 검토와 승인은 어댑터 바깥의 별도 절차다.
@@ -13,7 +15,7 @@
 
 ## 2. 데이터베이스 읽기 전용 보장
 
-어댑터는 SQLite 정본이나 시험 DB에 어떤 쓰기나 스키마 변경도 수행하지 않는다.
+어댑터는 명시적으로 제공한 SQLite 사본이나 합성 시험 DB에 어떤 쓰기나 스키마 변경도 수행하지 않는다. 운영 PG 연결·편집은 지원하지 않는다.
 
 - `export`와 `prepare-draft`는 `scripts/cast-sqlite/db.mjs`의 `openReadOnly()`만 호출한다. 이 연결은 `DatabaseSync(..., { readOnly: true, enableForeignKeyConstraints: true })`로 열리고 `PRAGMA foreign_keys=ON` 및 `PRAGMA query_only=ON`을 강제한 뒤 `application_id`와 `user_version`만 확인한다.
 - `export`와 `prepare-draft`의 모든 조회는 단일 읽기 스냅숏(`BEGIN` ... `COMMIT`, 예외 시 `ROLLBACK`) 안에서 실행된다.
@@ -24,7 +26,7 @@
 
 ### 합성 오프라인 픽스처 전용
 
-현재 검증과 시운전은 네트워크나 외부 모델 호출 없이 합성 오프라인 픽스처(`scripts/cast-sqlite/inkos-adapter-fixture.mjs` 등)만 사용한다. 비공개 자료, CPA 자료, 실제 외부 전송은 수행하지 않는다.
+이 문서에 기록된 검증과 시운전은 네트워크나 외부 모델 호출 없이 합성 오프라인 픽스처(`scripts/cast-sqlite/inkos-adapter-fixture.mjs` 등)만 사용한 과거 관측이다. 현재 실행 성공이나 비공개 자료·CPA 자료의 실제 외부 전송 허가를 뜻하지 않는다.
 
 작업자 출력(`--worker-out`)의 `bundle.json`에는 불투명 키(`source-1`, `source-2` 등)와 공개 허용된 한국어 문단의 `{ anchor, text }` 발췌만 기록된다. 다음 정보는 작업자 번들에 절대 넣지 않는다.
 
@@ -99,7 +101,7 @@
 
 ## 7. 호스트 매니페스트와 후보 영수증 대응 예시 (T6 실증 기록 기준)
 
-다음 두 JSON 예시는 `.omo/evidence/inkos-adapter-followup/cli-proof.json`의 `happy` 시나리오(합성 오프라인 픽스처 왕복)에서 실제 기록된 값과 동일한 필드·해시다.
+다음 두 JSON 예시는 과거 `.omo/evidence/inkos-adapter-followup/cli-proof.json`의 `happy` 시나리오(합성 오프라인 픽스처 왕복)에 기록된 필드·해시를 보존한다. 해당 비공개 증거가 제공되지 않은 checkout에서 재확인했다고 주장하지 않으며, 현재 PG 정본 왕복·게시 성공의 증거로 사용하지 않는다.
 
 ### 호스트 매니페스트 (`<trusted-root>/packets/<packetId>/manifest.json`)
 
@@ -241,13 +243,17 @@
 다음 항목은 현재 어댑터의 범위 밖이며, 이 패키지의 명령이나 옵션 확장으로 자동 허용되지 않는다. 모두 별도 설계와 소유자의 명시적 사전 허가가 있어야만 착수할 수 있다.
 
 - 새로운 공개 게시 허용(`document_publication_admission` 신규 발급 및 변경)
-- SQLite 정본 쓰기 및 초안 반영 명령 연결
+- 운영 PG 정본 쓰기 및 초안 반영 명령 연결(SQLite 사본 쓰기도 허용하지 않음)
 - 다중 문서 읽기 집합 검증과 편집을 하나의 쓰기 트랜잭션으로 묶는 read-set 트랜잭션 확장
 - 작업자 OS 격리 구축 및 실제 외부 모델·프로바이더 전송
 
-## 9. 회귀 시험 실행
+## 9. 남아 있는 격리 어댑터 시험
 
-`test-inkos-adapter-*.mjs` 7종(`contracts`, `export`, `collect`, `prepare`, `attacks`, `cli`, `mixed-structure`)은 순수 `node:test`로 실행되며 npm 스크립트나 vitest에 의존하지 않는다(PR #625 이후 저장소 원칙 유지).
+일반 테스트 스위트와 package-level `npm test`는 제거됐다. 다만 `test-inkos-adapter-*.mjs` 7종(`contracts`, `export`, `collect`, `prepare`, `attacks`, `cli`, `mixed-structure`)은 현재 별도로 남아 있는 순수 `node:test` 진입점이다. 아래 명령은 해당 파일과 합성 입력을 확인한 경우에만 쓰는 격리 진단이며 일반 빌드·CI에 편입하거나 새 테스트를 추가하라는 지시가 아니다.
+
+합성 fixture도 `authoring-schema-documents.mjs`를 통해 기존 authoring schema를 읽으므로 완전히 독립적인 무입력 시험이 아니다. 해당 모듈은 제거된 `data/canonical/wiki-cast.sqlite` 경로를 고정 참조하며 `WIKI_DOCUMENT_DB`를 읽지 않는다. 외부 SQLite 경로나 환경변수 지정만으로 이 회귀 실행을 해결할 수 없고, 별도 코드 이관 없이는 현재 checkout에서 정상 실행할 수 없다. 본 문서 정비에서 DB를 복원하거나 fixture·검사를 우회하지 않는다. 아래 명령은 남은 진입점의 식별용이며 현재 통과 가능한 실행 지침이 아니다.
+
+2026-10-31 부모 검증의 `node --test --test-concurrency=1 scripts/cast-sqlite/test-inkos-adapter-*.mjs scripts/test-inkos.mjs` 관측은 전체 110건 중 pass 11·fail 99였다. adapter fixture가 삭제된 기본 SQLite를 열다 `E_DB_OPEN`/`ERR_SQLITE_ERROR`로 실패했고 InkOS pin·CLI 두 스모크는 PASS였다. 이는 준비되지 않은 입력의 실행 결과이며 어댑터 회귀 통과나 PG 정본 검증 성공을 뜻하지 않는다.
 
 ```sh
 node --test --test-concurrency=1 scripts/cast-sqlite/test-inkos-adapter-contracts.mjs \
@@ -261,4 +267,4 @@ node --test --test-concurrency=1 scripts/cast-sqlite/test-inkos-adapter-contract
 
 - 직렬 실행(`--test-concurrency=1`)을 권장한다. `io.mjs`의 조상 ctime 검사가 공유 임시 디렉터리의 무관한 동시 생성에도 반응해 병렬 실행에서 `E_ADAPTER_PATH` 오탐이 발생할 수 있다(F2/F4 residual).
 - `test-inkos-adapter-cli.mjs`는 실행 시 `.omo/evidence/inkos-adapter-followup/cli-proof.json`을 재생성한다(재사용 가능 진단 산출물).
-- 7종은 어댑터 경계만 다룬다. `test-document-*.mjs` 등 기반 계약 시험은 PR #625에서 삭제돼 이 복원 범위 밖이다.
+- 7종은 어댑터 경계만 다룬다. 일반 `test-document-*.mjs` 등 기반 suite의 복원이나 전체 PG 정본·공개 검증 완료를 뜻하지 않는다. 별도 `scripts/test-inkos.mjs`도 일반 package 테스트 명령과 구분한다.
