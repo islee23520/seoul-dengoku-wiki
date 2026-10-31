@@ -3,5 +3,3 @@ public/portraits/*.png filter=lfs diff=lfs merge=lfs -text
 data/geography/**/*.pbf filter=lfs diff=lfs merge=lfs -text
 data/geography/**/*.tif filter=lfs diff=lfs merge=lfs -text
 data/geography/**/*.geojson filter=lfs diff=lfs merge=lfs -text
-
-data/canonical/wiki-cast.sqlite filter=lfs diff=lfs merge=lfs -text

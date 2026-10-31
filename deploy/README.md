@@ -13,11 +13,12 @@ canonical TSV 대사도 통과했다. 이 기록은 아래의 앞선 로컬·격
 `/app/data/canonical/wiki-cast.sqlite` 실물은 런타임에 없었다. 다만 정적 import 때문에
 inventory에 SQLite 항목은 남아 있으므로 inventory까지 제거됐다고 해석하지 않는다.
 
-추적 중인 SQLite와 외부 SQLite는 명시적 이관·비교 archive로 보존하며 운영 런타임
-입력이나 편집 정본으로 사용하지 않는다. 이전 배포 롤백도 유지한다. 이 전환은
-archive 삭제나 PG `wiki.source_file` 원천 바이트·해시, `source_record` provenance,
-봉인 revision의 삭제·재작성을 허가하지 않는다. 운영 배포는 새 본문의 소유자 승인이나
-게임 구현 완료를 뜻하지 않는다.
+2026-10-31 소유자 지시로 이관 완료된 추적 `data/canonical/wiki-cast.sqlite`를 제거한다.
+외부 SQLite는 외부 경로를 명시적으로 제공한 이관·대사에만 사용하며 운영 런타임
+입력이나 편집 정본으로 사용하지 않는다. 다른 archive와 이전 배포 롤백은 계속 보존한다.
+PG `wiki.source_file` 원천 바이트·해시, `source_record` provenance, 봉인 revision도
+삭제·재작성하지 않는다. 이관·회귀 코드 삭제는 이번 변경 범위 밖이다. 운영 배포는
+새 본문의 소유자 승인이나 게임 구현 완료를 뜻하지 않는다.
 
 
 ## wiki-postgres 운영 PostgreSQL (desktop-bo514et)
