@@ -8,21 +8,23 @@ summary: 이름 있는 인물을 위키에 넣을 때 복사하는 빈 칸
 
 이름 있는 인물을 새로 넣을 때 이 블록을 복사한다. 칸의 뜻은 [인물 카드 계약](Cast-Profile-Contract.md)이다. 근거가 없으면 임의 값을 넣지 않는다. 미확인·미정·해당 없음은 서로 다른 상태다. 생년월일은 영구 ID로 생일 원장에 등록하고 만 나이는 2126년 12월 31일 기준으로 계산한다. 실제 인물의 나이와 허구 인물의 생일은 구분한다. 초상 그림은 이 템플릿에 넣지 않는다.
 
+이 양식은 검토용 산문 예시이며 물리 `Cast-State-*.md`나 JSON 파일을 만들라는 지시가 아니다. 현행 저작 정본·지원 typed 편집·draft/승인 구분은 [PG 작성 계약](../AUTHORING-JSON.md), 서울 유일 세계·무협 제거·8역량은 [루트 가이드](../../WORLD_BUILDING_GUIDE.md)를 따른다. 공개 본문은 한국어만 작성·게시한다.
+
 등록 절차는 [인물 이슈](https://github.com/islee23520/seoul-dengoku-wiki/issues/new)의 인물 절이고, 이슈 규칙은 [이슈 목록](https://github.com/islee23520/seoul-dengoku-wiki/issues)다.
 
 ## 넣기 전에
 
 1. GitHub 이슈를 연다. 라벨 `인물`, 품질은 보통 `quality:medium`. 게이트와 완료 조건을 본문에 적는다.
-2. 표시 이름이 [인물 총람](Cast-Index.md), [S4 당직 명부](Cast-Index-S4.md), [회랑 인물](Cast-Corridors-Index.md), [values-cast.json](../name-pools/values-cast.json)에 없는지 확인한다.
-3. 소속을 정한다. 16국이면 `Cast-State-01`–`16` 중 하나. 장부 밖이면 [회랑 인물](Cast-Corridors-Index.md). 무소속이면 새 절 또는 이슈에서 페이지를 잠근다. T0 핵심은 [등장인물](Core-Characters.md)이고 기본이 아니다.
-4. 가치관·욕망 숫자는 [가치관과 정책 척도](../culture/Values-and-Policy-Scales.md)와 `values-cast.json`을 같이 맞춘다.
-5. 칸을 비운 채 올리지 않는다. 템플릿만 열고 머지하지 않는다.
+2. 표시 이름이 인물 총람（`Cast-Index.md`）, S4 당직 명부（`Cast-Index-S4.md`）, 회랑 인물（`Cast-Corridors-Index.md`）, values-cast.json（`../name-pools/values-cast.json`）에 없는지 확인한다.
+3. 소속을 정한다. 16국이면 `Cast-State-01`–`16` 중 하나. 장부 밖이면 회랑 인물（`Cast-Corridors-Index.md`）. 무소속이면 새 절 또는 이슈에서 페이지를 잠근다. T0 핵심은 등장인물（`Core-Characters.md`）이고 기본이 아니다.
+4. 가치관·욕망 숫자는 가치관과 정책 척도（`../culture/Values-and-Policy-Scales.md`）와 `values-cast.json`을 같이 맞춘다.
+5. 근거 없는 칸을 0·없음·임의 설정으로 채우지 않는다. 미정 사유와 해결할 자료·승인 쟁점을 검토하고 빈 템플릿을 완료로 머지하지 않는다.
 
 ## 산문 블록
 
-`Cast-State-NN.md`에 `### 인물` 제목으로 붙인다. 앞의 계약 칸을 빼고 정치 칸만 올리지 않는다. 마이너스 숫자는 이웃 카드와 같이 `−`(U+2212)를 쓴다.
+PG의 해당 인물 문서에 `### 인물`에 대응하는 안정 블록을 유지하며 지원되는 typed 편집으로 반영한다. 앞의 계약 칸을 빼고 정치 칸만 올리지 않는다. 마이너스 숫자는 `−`(U+2212)를 쓴다.
 
-무소속 페이지(`Cast-Unaffiliated.md`) 카드에는 `캐릭터 ID`(고유 안정 식별자)를 필수로 넣는다. 외부 출처나 동명 위험 신규 인물에도 넣는다. 같은 ID를 두 카드가 쓰면 게이트(R15)가 막는다. 기존 국가 명부 1001장에는 소급하지 않는다.
+무소속 카드와 외부 출처·동명 위험 인물에는 `캐릭터 ID`(고유 안정 식별자)를 넣는다. 기존 국가 카드에 표시 칸을 일괄 소급하지 않는다. 과거 1001장 수를 현재 분모로 쓰지 않고 PG disposition·발급 원장을 확인한다. 기존 ID 조회와 새 ID 발급은 별개이며 지원되지 않는 발급을 archive 검사기로 대체하지 않는다.
 
 ```markdown
 ### 인물 이름
@@ -50,14 +52,16 @@ summary: 이름 있는 인물을 위키에 넣을 때 복사하는 빈 칸
 
 각 칸 끝에 `(원문 사실)` `(창작 제안)` `(자동 파생)` `(미확인)` 중 하나를 붙인다.
 
-## 같이 고치는 파일
+## 함께 대조하는 논리 문서
 
-| 파일 | 할 일 |
+아래 과거 `.md` 기사명과 `.json` 경로는 논리 문서·provenance다. 물리 파일을 직접 편집하지 않으며 의존 테이블을 가진 변경은 해당 도메인 편집 지원이 필요하다.
+
+| 문서 | 할 일 |
 | --- | --- |
-| [인물 총람](Cast-Index.md) 또는 [S4 당직](Cast-Index-S4.md) 또는 [회랑 인물](Cast-Corridors-Index.md) | 이름·직위·단계·관계 수 한 행 |
-| [관계 원장](Cast-Relations.md) | 송신 간선. 유형은 친족·양자·사제·지휘·계약·빚·맹세·경쟁·원한·보호체류·배신 |
-| [values-cast.json](../name-pools/values-cast.json) | `people` 한 객체. `count`는 배열 길이와 같게 |
-| [세계 서사 지도](../World-Narrative-Atlas.json) | 서사 원본이 필요하면 지도 절차를 따른다. 투영 페이지만 고치지 않는다 |
+| 인물 총람（`Cast-Index.md`） 또는 S4 당직（`Cast-Index-S4.md`） 또는 회랑 인물（`Cast-Corridors-Index.md`） | 이름·직위·단계·관계 수 한 행 |
+| 관계 원장（`Cast-Relations.md`） | 송신 간선. 유형은 친족·양자·사제·지휘·계약·빚·맹세·경쟁·원한·보호체류·배신 |
+| values-cast.json（`../name-pools/values-cast.json`） | `people` 한 객체. `count`는 배열 길이와 같게 |
+| 세계 서사 지도（`../World-Narrative-Atlas.json`） | 서사 원본이 필요하면 지도 절차를 따른다. 투영 페이지만 고치지 않는다 |
 
 관계 수는 보낸 간선만 센다. 수신만 있는 핵심 인물의 관계 수 0은 고립이 아니다.
 
@@ -69,10 +73,6 @@ summary: 이름 있는 인물을 위키에 넣을 때 복사하는 빈 칸
 - 미성년 성적 서사
 - 위키 공개 금지 용어는 저장소 정책 검사의 차단 목록을 따른다.
 
-## 게이트
+## 검토와 반영
 
-```bash
-node TOOL/tools/wiki/verify-cast.mjs --docs LORE
-```
-
-한국어 산문은 patina `--score --offline`을 통과한 뒤에 올린다. 전용 브랜치와 PR. 이슈에 게이트 증거가 붙은 뒤에만 머지한다.
+옛 `TOOL/tools/wiki/verify-cast.mjs`와 patina 점수는 이 작업트리의 현행 반영 절차가 아니다. 점수·구문 검사만으로 서사 적합성이나 소유자 승인을 판정하지 않는다. PG 현재 head·revision·draft 상태와 실제 카드·관계·생성 결과를 대조하고, 전용 브랜치와 PR로 제안한다. main 병합은 소유자만 한다. 조회·편집·생성·승인·게시·게임 구현은 각각 구분한다.

@@ -1,7 +1,7 @@
 # 문서·증거 저장소 작업 지침
 
 ## OVERVIEW
-비공개 편집 문서, 영혼 배정, 증거와 서울 승인 reader를 분리하는 SQLite 영역이다. 점수 9의 독립 권한·보존 도메인이다.
+비공개 편집 문서·영혼 배정·증거와 승인 인증 입력을 다룬다. 운영 정본은 PostgreSQL `wiki`, 비공개 운영 경계는 `wiki_private`다. 이 디렉터리에는 별도 SQLite 보존·이관 reader도 남아 있으므로 각 진입점의 저장 방식과 권한을 확인한다.
 
 ## WHERE TO LOOK
 | 작업 | 위치 | 경계 |
@@ -19,12 +19,13 @@
 - 일반 store의 기본 scope는 `public`이며 read-only이다. 내부 호출은 `scope: 'internal'`을 명시한다.
 - scope는 신뢰 경계이지 사용자 인증 시스템이 아니다. private store의 `INTERNAL_*_CAPABILITY`와 pin 검사를 유지한다.
 - 일반 tree 저장은 보존 substrate이다. authority cutover에는 각 typed reader와 history/domain ownership 계약을 사용한다.
-- `openPublicationDatabaseInputs()`는 절대 경로 설정과 receipt를 검증하고 단일 읽기 snapshot으로 인증 입력을 만든다.
+- `openPublicationDatabaseInputs()`는 SQLite 기반 인증 입력 경로다. 절대 경로 설정·receipt·봉인 binding·외부 archive 해시를 검증하고 단일 읽기 snapshot으로 인증 입력을 만든다. 일반 PG 생성의 비동기 reader와 혼동하거나 운영 SQLite 폴백으로 사용하지 않는다.
 - receipt는 증거 identity를 선택한다. 실제 승인 여부는 기존 authenticator가 결정한다.
 - `readPrivateCurrentDocument()`는 허용된 논리 경로를 정확한 DB와 pin으로 결합한다.
-- private DB의 mode·application_id·user_version 검사를 보존한다. 환경 변수 override도 같은 검사를 따른다.
+- SQLite private store의 mode·application_id·user_version 검사를 보존한다. 환경 변수 override도 같은 검사를 따른다. PG private reader는 명시적 내부 capability와 같은 leased transaction의 경계를 유지한다.
 - reader가 반환하는 handle은 `finally`에서 닫는다. publication 입력의 `close()`는 열린 handle 전체를 정리한다.
 - 새 문서군은 대응 `.mjs`, `.sql`의 저장·복원·권한을 실제 데이터 조회로 확인한다. 새 테스트 스크립트는 작성하지 않는다.
+- 공개 한국어 전용은 영문 보존 데이터나 내부 제보 계약을 삭제하라는 뜻이 아니다. Soul·역사 모티브·비공개 본문과 승인 원문은 언어와 무관하게 공개 카탈로그·API·브라우저 번들로 보내지 않는다.
 
 ## COMMANDS
 테스트 스위트는 제거되었다. 비공개 원천·봉인 자료는 가이드 지정 경로에서 확인하며, 공개 checkout만으로 검증할 수 있다고 가정하지 않는다.
