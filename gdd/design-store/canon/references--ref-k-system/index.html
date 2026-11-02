@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-시스템(원작) 게임 메커니즘 레퍼런스 — 정본</title>
+<style>
+:root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
+body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
+main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
+.kicker { letter-spacing:.14em; font-size:11px; color:var(--mute); }
+h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
+section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
+.src { font-size:12px; color:var(--mute); }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">정본 파일 · SQLite</p>
+<p><a href="../" style="color:var(--metro)">설계 목차</a></p>
+<h1>K-시스템(원작) 게임 메커니즘 레퍼런스</h1>
+<p class="src">GDD/references/Ref-K-System.md · 68860 bytes · b6d268385b4ed36db3c4a253ea83967e1a59ec862f0e39d03ff37e41276b177a</p>
+<section>
+<h2>머리글</h2>
+<ul><li>H1 K-시스템(원작) 게임 메커니즘 레퍼런스</li>
+<li>H2 1. 개요</li>
+<li>H2 2. 코어루프</li>
+<li>H3 2.1 최소 생존 루프</li>
+<li>H3 2.2 정착지의 생산 루프</li>
+<li>H3 2.3 식량이 정하는 활동 시간</li>
+<li>H2 3. 진행구조</li>
+<li>H3 3.1 기본 시작 13종: 결핍 조합</li>
+<li>H3 3.2 캠페인의 역량 단계</li>
+<li>H3 3.3 연구 6단계와 지식 물품</li>
+<li>H2 4. 경제</li>
+<li>H3 4.1 유랑 경제: 수입과 비용</li>
+<li>H3 4.2 음식 가치와 조리</li>
+<li>H3 4.3 정착의 세 상태와 건축</li>
+<li>H3 4.4 산업·전력망</li>
+<li>H3 4.5 농업과 수경재배</li>
+<li>H3 4.6 제작 품질과 판로</li>
+<li>H2 5. 캐릭터/파티</li>
+<li>H3 5.1 능력 체계: 33개 능력의 역할과 훈련</li>
+<li>H3 5.2 성장 공식과 훈련의 한계</li>
+<li>H3 5.3 파티·동물·종족의 역할</li>
+<li>H3 5.4 신체·치료·절단·의수의족</li>
+<li>H2 6. 전투</li>
+<li>H3 6.1 조작과 전술의 단위</li>
+<li>H3 6.2 공격 기회·막기·회피</li>
+<li>H3 6.3 속도·무기 필요 Strength</li>
+<li>H3 6.4 피해·갑옷 층·관통</li>
+<li>H3 6.5 무기 계열과 사격</li>
+<li>H2 7. 지도/세계</li>
+<li>H3 7.1 지역은 난이도뿐 아니라 생계·정치·환경의 묶음</li>
+<li>H3 7.2 환경 위험</li>
+<li>H3 7.3 World States와 Town Overrides</li>
+<li>H2 8. 외교/세력</li>
+<li>H3 8.1 관계 수치와 정치적 접근</li>
+<li>H3 8.2 현상금과 범죄</li>
+<li>H3 8.3 노예 경제와 해방</li>
+<li>H2 9. 이벤트/내러티브</li>
+<li>H3 9.1 사건이 목표를 만드는 방식</li>
+<li>H3 9.2 방문과 보복은 별도 규칙이다</li>
+<li>H3 9.3 Slave Capture의 구체적 규모</li>
+<li>H3 9.4 철창과 포식 기둥의 시간차</li>
+<li>H2 10. 난이도/압박</li>
+<li>H3 10.1 압박이 결합되는 지점</li>
+<li>H3 10.2 성장해도 없어지지 않는 위험</li>
+<li>H3 10.3 설정과 버그를 기본 규칙에서 분리</li>
+<li>H3 10.4 충돌·미확인 목록과 적용 경계</li>
+<li>H3 10.5 출처 안내</li></ul>
+</section>
+</main>
+</body>
+</html>

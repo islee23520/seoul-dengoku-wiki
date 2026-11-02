@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Mechanism-D06.md",
+    "lineStart": 1,
+    "lineEnd": 787,
+    "sha256": "d308db661e4ff825bb797a265742ebcb1faf93af17850980f932b9f206377a7c"
+  },
+  "document": {
+    "id": "doc.Mechanism-D06",
+    "blockIds": [
+      "d06.b1",
+      "overhaul.20261027.heading",
+      "overhaul.20261027.authority",
+      "overhaul.20261027.chapter",
+      "d06.b2",
+      "d06.b3",
+      "d06.b4",
+      "d06.b5",
+      "d06.b6",
+      "d06.b7",
+      "d06.b8",
+      "d06.b9",
+      "d06.b10",
+      "d06.b11"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "d06.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D06 이동·화물·지도·관측 작동 계약과 공식 시트"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "게임 로직 개편 정합 경계"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 문서는 기존 제안 상태를 유지한다. 산식·표·청사진은 서울의 구현 사실이나 승인 수치가 아니다. 아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다. 깊이조사의 불일치 총계·씨족 산식은 채택하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.chapter",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "대응 장과 확인된 근거",
+          "targetDocumentId": "doc.Travel-Activities-and-Landless"
+        }
+      ]
+    },
+    {
+      "id": "d06.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "실제 연결·통행 권한·통과 가능성을 모두 확인한 구간만 이동한다. 이동 잔여 거리와 화물의 물질 정체성을 보존하고 관측 지식과 현재 세계 사실을 분리한다. 실제 도착한 부대는 진행 중 전투에 참가할 수 있지만 끝난 전투에 소급 참가하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d06.b3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 범위가 한정된 작동 계약. 공개 Lite의 참조 계산, 서울의 승인된 절차·보존 규칙, 미승인 제안을 구분한다. proposal-held는 실행할 수 없는 보류 항목이며 0이나 승인 수치가 아니다. 이 문서는 전체 도메인 수치 완성이나 런타임 구현을 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d06.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[도메인 설계](mechanism-design-index-d06.md) · [개인 시트와 계산](character-sheet-formulas.md) · [저장과 판본](../rules/Save-and-Determinism.md) · [싱글플레이 계약](Singleplayer-Design-SP-1-0-0.md)"
+        }
+      ]
+    },
+    {
+      "id": "d06.b5",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "처리 순서와 책임 경계"
+        }
+      ]
+    },
+    {
+      "id": "d06.b6",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "경로·이동자·화물·관측·시간·규칙·스냅샷의 신원을 읽고 중복·단위·판본 충돌을 거부한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실제 연결·통행 권한·구간 통과 가능성을 확인한다. 미확인은 허용이나 거짓으로 대체하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "개인 Move·짐 참조 계산과 서울 전략 이동 속도를 분리한다. 승인된 이동량만 잔여 거리에서 뺀다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "차단 시 완료 거리를 유지하고 재계획한다. 화물 분할은 자식 원자의 서로소 합집합이 부모와 같을 때만 부모를 퇴역시킨다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "도착을 먼저 검증하고 마감시각 이하인지 비교한다. 최종 가용 재고에는 수령자 확인과 적용 가능한 권리·보관 검사가 별도로 필요하다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보고는 출처·관측시각·기준시각을 가진 관측자 지식만 갱신한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "진행 중 전투의 실제 도착 참가를 반영하고 모든 검사를 통과한 결과·개정을 한 번만 기록한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d06.b7",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정규화된 데이터·공식 계약"
+        }
+      ]
+    },
+    {
+      "id": "d06.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자, 읽기·쓰기 범위, 단위, 스냅샷과 반영 시점을 함께 선언한다. 형식과 보존식의 검증은 실제 원장 발급이나 미정 함수의 채택을 대신하지 않는다. rulesVersion과 연결 정본의 해시는 원천 판본을 식별하며 임의의 새 실행 판본을 만들지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d06.b9",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "json mechanism-contract",
+      "text": "{\n  \"schemaVersion\": 1,\n  \"domainId\": \"D06\",\n  \"mechanismId\": \"seoul.d06.bounded-contract\",\n  \"status\": \"bounded-contract-with-proposal-held\",\n  \"rulesVersion\": \"2026-10-08.d06-closure.1\",\n  \"rulesVersionLinkage\": {\n    \"sourceRulesVersion\": \"2026-10-08.d06-closure.1\",\n    \"contractSHA256\": \"473f0aae54e4a8a3fc1cf4ea30e4de72439772a1354e6218322debb44a44a2d3\",\n    \"missingVersionPolicy\": \"원천 계약 판본을 보존한다. 게임 규칙 채택 및 저장 호환 승인과 구분한다.\",\n    \"canonRules\": [\n      {\n        \"documentId\": \"doc.Save-and-Determinism\",\n        \"path\": \"canon/locales/ko-KR/rules/save-and-determinism.json\",\n        \"sha256\": \"510a557e3448efb478d38ded1f21845557ac10c7fc8b56e2c0631ef455a86919\"\n      },\n      {\n        \"documentId\": \"doc.Singleplayer-Design-SP-1-0-0\",\n        \"path\": \"canon/locales/ko-KR/system-design/singleplayer-design-sp-1-0-0.json\",\n        \"sha256\": \"633265f37815e8d581b52426a84eec2bd1a1e987b2e05bd614b8f9752877a9bd\"\n      }\n    ],\n    \"compatibility\": \"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\"\n  },\n  \"dataOwner\": \"D06 이동·화물 운송·관측 지식; D13 권리·보관, D18 시간·저장\",\n  \"fields\": [\n    {\n      \"field\": \"routeId/segmentId/moverId/cargoLotId/reportId/resultId\",\n      \"type\": \"nonempty stable identity string\",\n      \"unit\": \"identity\",\n      \"owner\": \"D06 ledger; cargo title remains D13\",\n      \"null\": \"reject required operation\",\n      \"read\": [\n        \"route graph and access record\",\n        \"mover location and personal sheet\",\n        \"cargo identity/title/custody\",\n        \"arrival and receipt evidence\",\n        \"observer knowledge\",\n        \"battle state\",\n        \"applied result IDs\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact before snapshot with stable identities and named units\",\n      \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\"\n    },\n    {\n      \"field\": \"rulesVersion/snapshotVersion\",\n      \"type\": \"nonempty string / nonnegative safe integer\",\n      \"unit\": \"revision\",\n      \"owner\": \"D18 save/version authority\",\n      \"null\": \"reject\",\n      \"read\": [\n        \"route graph and access record\",\n        \"mover location and personal sheet\",\n        \"cargo identity/title/custody\",\n        \"arrival and receipt evidence\",\n        \"observer knowledge\",\n        \"battle state\",\n        \"applied result IDs\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact before snapshot with stable identities and named units\",\n      \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\"\n    },\n    {\n      \"field\": \"segmentDistance\",\n      \"type\": \"finite nonnegative number\",\n      \"unit\": \"route-defined distance unit\",\n      \"owner\": \"approved route record\",\n      \"null\": \"unknown; blocks strategic ETA\",\n      \"read\": [\n        \"route graph and access record\",\n        \"mover location and personal sheet\",\n        \"cargo identity/title/custody\",\n        \"arrival and receipt evidence\",\n        \"observer knowledge\",\n        \"battle state\",\n        \"applied result IDs\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact before snapshot with stable identities and named units\",\n      \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\"\n    },\n    {\n      \"field\": \"baseMove\",\n      \"type\": \"positive finite number\",\n      \"unit\": \"yd/s for personal Lite-derived calculation only\",\n      \"owner\": \"D01 approved personal sheet\",\n      \"null\": \"unknown; blocks personal move\",\n      \"read\": [\n        \"route graph and access record\",\n        \"mover location and personal sheet\",\n        \"cargo identity/title/custody\",\n        \"arrival and receipt evidence\",\n        \"observer knowledge\",\n        \"battle state\",\n        \"applied result IDs\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact before snapshot with stable identities and named units\",\n      \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\"\n    },\n    {\n      \"field\": \"basicLift/loadWeight\",\n      \"type\": \"positive/nonnegative finite number\",\n      \"unit\": \"lb\",\n      \"owner\": \"D01 approved personal sheet / D13 cargo facts\",\n      \"null\": \"unknown; blocks encumbrance\",\n      \"read\": [\n        \"route graph and access record\",\n        \"mover location and personal sheet\",\n        \"cargo identity/title/custody\",\n        \"arrival and receipt evidence\",\n        \"observer knowledge\",\n        \"battle state\",\n        \"applied result IDs\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact before snapshot with stable identities and named units\",\n      \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\"\n    },\n    {\n      \"field\": \"encumbranceLevel\",\n      \"type\": \"integer 0..4\",\n      \"unit\": \"Lite row index\",\n      \"owner\": \"D06 derived from known BL and load\",\n      \"null\": \"unknown; blocks personal move\",\n      \"read\": [\n        \"route graph and access record\",\n        \"mover location and personal sheet\",\n        \"cargo identity/title/custody\",\n        \"arrival and receipt evidence\",\n        \"observer knowledge\",\n        \"battle state\",\n        \"applied result IDs\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact before snapshot with stable identities and named units\",\n      \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\"\n    },\n    {\n      \"field\": \"strategicSpeed/fatigueCost/terrainFactor\",\n      \"type\": \"nullable unit-tagged number\",\n      \"unit\": \"must be issued by a future Seoul movement table\",\n      \"owner\": \"D06\",\n      \"null\": \"explicit proposal hold; never zero\",\n      \"read\": [\n        \"route graph and access record\",\n        \"mover location and personal sheet\",\n        \"cargo identity/title/custody\",\n        \"arrival and receipt evidence\",\n        \"observer knowledge\",\n        \"battle state\",\n        \"applied result IDs\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact before snapshot with stable identities and named units\",\n      \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\"\n    },\n    {\n      \"field\": \"remainingDistance/segmentProgress\",\n      \"type\": \"nonnegative exact rational or finite number\",\n      \"unit\": \"same segment distance unit\",\n      \"owner\": \"D06\",\n      \"null\": \"blocks resume\",\n      \"read\": [\n        \"route graph and access record\",\n        \"mover location and personal sheet\",\n        \"cargo identity/title/custody\",\n        \"arrival and receipt evidence\",\n        \"observer knowledge\",\n        \"battle state\",\n        \"applied result IDs\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact before snapshot with stable identities and named units\",\n      \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\"\n    },\n    {\n      \"field\": \"arrivalAt/cutoffAt/observedAt/asOf\",\n      \"type\": \"finite number on one named world clock\",\n      \"unit\": \"same D18 clock coordinate\",\n      \"owner\": \"D18 clock; D06 observation/arrival\",\n      \"null\": \"unknown, not false\",\n      \"read\": [\n        \"route graph and access record\",\n        \"mover location and personal sheet\",\n        \"cargo identity/title/custody\",\n        \"arrival and receipt evidence\",\n        \"observer knowledge\",\n        \"battle state\",\n        \"applied result IDs\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact before snapshot with stable identities and named units\",\n      \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\"\n    },\n    {\n      \"field\": \"verifiedArrival/receiverCountersigned/routeConnected/passageAuthorized/segmentPassable\",\n      \"type\": \"boolean or null\",\n      \"unit\": \"predicate\",\n      \"owner\": \"named authority receipt\",\n      \"null\": \"unresolved; do not coerce false\",\n      \"read\": [\n        \"route graph and access record\",\n        \"mover location and personal sheet\",\n        \"cargo identity/title/custody\",\n        \"arrival and receipt evidence\",\n        \"observer knowledge\",\n        \"battle state\",\n        \"applied result IDs\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact before snapshot with stable identities and named units\",\n      \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\"\n    },\n    {\n      \"field\": \"cargoAtoms\",\n      \"type\": \"array of unique stable atom identifiers\",\n      \"unit\": \"material identity\",\n      \"owner\": \"D13 title/custody, D06 transit\",\n      \"null\": \"unknown; blocks split or receipt\",\n      \"read\": [\n        \"route graph and access record\",\n        \"mover location and personal sheet\",\n        \"cargo identity/title/custody\",\n        \"arrival and receipt evidence\",\n        \"observer knowledge\",\n        \"battle state\",\n        \"applied result IDs\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact before snapshot with stable identities and named units\",\n      \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\"\n    },\n    {\n      \"field\": \"knowledgeRecord\",\n      \"type\": \"subjectId, sourceId, observedAt, asOf and status\",\n      \"unit\": \"identity + clock + enum\",\n      \"owner\": \"D06 observer knowledge\",\n      \"null\": \"missing source/time rejects update\",\n      \"read\": [\n        \"route graph and access record\",\n        \"mover location and personal sheet\",\n        \"cargo identity/title/custody\",\n        \"arrival and receipt evidence\",\n        \"observer knowledge\",\n        \"battle state\",\n        \"applied result IDs\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact before snapshot with stable identities and named units\",\n      \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\"\n    }\n  ],\n  \"readSet\": [\n    \"route graph and access record\",\n    \"mover location and personal sheet\",\n    \"cargo identity/title/custody\",\n    \"arrival and receipt evidence\",\n    \"observer knowledge\",\n    \"battle state\",\n    \"applied result IDs\"\n  ],\n  \"writeSet\": [\n    \"segment progress/location after legal traversal\",\n    \"cargo parent/child transit records\",\n    \"receiver-confirmed arrival state\",\n    \"observer knowledge record\",\n    \"arrival/reinforcement receipt\",\n    \"revision and result ledger\"\n  ],\n  \"snapshot\": {\n    \"policy\": \"exact before snapshot with stable identities and named units\",\n    \"readSet\": [\n      \"route graph and access record\",\n      \"mover location and personal sheet\",\n      \"cargo identity/title/custody\",\n      \"arrival and receipt evidence\",\n      \"observer knowledge\",\n      \"battle state\",\n      \"applied result IDs\"\n    ],\n    \"writeSet\": [\n      \"segment progress/location after legal traversal\",\n      \"cargo parent/child transit records\",\n      \"receiver-confirmed arrival state\",\n      \"observer knowledge record\",\n      \"arrival/reinforcement receipt\",\n      \"revision and result ledger\"\n    ],\n    \"conflict\": \"typed reject on stale revision, incompatible rules, changed duplicate result or conflicting cargo identity\",\n    \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\",\n    \"replay\": \"same result and identical request is idempotent; changed duplicate is E_EVENT_CONFLICT\"\n  },\n  \"commitPoint\": \"after all guards, conservation checks and expected after-state calculations\",\n  \"orderedSteps\": [\n    \"Read exact route, mover, cargo, observation, clock, rules and snapshot identities.\",\n    \"Reject reused result identity with changed payload, stale snapshot, rule mismatch, duplicate cargo atom or unit mismatch before mutation.\",\n    \"Resolve physical route candidate; require confirmed adjacency, passage authority and current segment passability. Unknown is unresolved, not false or legal.\",\n    \"For a personal movement reference, derive BL, BasicMove and encumbrance only from approved personal attributes and known load. Do not use these values as strategic route coefficients.\",\n    \"Advance only an externally approved traversed distance; preserve exact remaining distance. A blockage stops further advance and triggers replanning without teleporting or erasing completed distance.\",\n    \"For cargo split, retire the parent only after children form a complete disjoint union. Preserve ownership, custody and provenance as separate fields.\",\n    \"At arrival, verify location and identity first. For a cutoff, compare arrivalAt <= cutoffAt; at equal time process arrival verification before reservation, production and consumption.\",\n    \"Require receiver countersign and every separately approved custody/right guard before final available stock; the unapproved custodian-conjunction proposal is not applied.\",\n    \"Update only the observer knowledge record from a sourced report, preserving observedAt and sourceAsOf; do not overwrite the world state.\",\n    \"If a unit arrives while battle is ongoing it may join; an ended battle rejects retrospective participation.\",\n    \"Commit one result receipt and revision atomically. Failed or unresolved operations leave the prior state unchanged.\"\n  ],\n  \"formulaSheet\": [\n    {\n      \"id\": \"basic-lift-reference\",\n      \"expression\": \"BLraw = ST^2 / 5 lb; if BLraw >= 10 lb, round to nearest whole lb for the rounded display value\",\n      \"status\": \"public-Lite-derived-structure\",\n      \"authority\": \"L-lift\",\n      \"rounding\": \"nearest whole only when raw >= 10; preserve raw separately\",\n      \"clamp\": \"none\",\n      \"rng\": \"none\",\n      \"unit\": \"lb\"\n    },\n    {\n      \"id\": \"personal-basic-move-reference\",\n      \"expression\": \"BasicSpeed = (DX + HT) / 4; BasicMove = floor(BasicSpeed)\",\n      \"status\": \"public-Lite-derived-structure\",\n      \"authority\": \"L-secondary\",\n      \"rounding\": \"floor BasicMove; retain exact BasicSpeed\",\n      \"clamp\": \"none\",\n      \"rng\": \"none\",\n      \"unit\": \"BasicSpeed value; personal BasicMove yd/s\"\n    },\n    {\n      \"id\": \"personal-encumbrance-reference\",\n      \"expression\": \"thresholds = BL*[1,2,3,6,10]; choose the first inclusive threshold containing load; Move = max(1,floor(BasicMove*[1,.8,.6,.4,.2][level]))\",\n      \"status\": \"public-Lite-derived-structure\",\n      \"authority\": \"L-encumbrance\",\n      \"rounding\": \"discard Move fractions after multiplying\",\n      \"clamp\": \"minimum Move 1\",\n      \"rng\": \"none\",\n      \"limits\": \"Personal reference only; never becomes squad cargo capacity or strategic tunnel speed.\",\n      \"unit\": \"load thresholds lb; personal Move yd/s\"\n    },\n    {\n      \"id\": \"route-legality\",\n      \"expression\": \"legal = routeConnected AND passageAuthorized AND segmentPassable\",\n      \"status\": \"approved-Seoul-bounded\",\n      \"authority\": \"GP-02-A direction plus existing physical-adjacency and no-teleport locks\",\n      \"rounding\": \"none\",\n      \"clamp\": \"none\",\n      \"rng\": \"none\",\n      \"limits\": \"Unknown predicate produces unresolved. A map line, same-name station or surface adjacency cannot substitute for any guard.\",\n      \"unit\": \"boolean | unresolved\"\n    },\n    {\n      \"id\": \"segment-residual\",\n      \"expression\": \"remainingAfter = max(0, remainingBefore - traversedDistance); arrived = legal AND remainingAfter = 0\",\n      \"status\": \"approved-conservation-shape-with-held-rate\",\n      \"authority\": \"actual-movement lock and sealed GP-02-A blocked-segment replanning direction\",\n      \"rounding\": \"none in documentary exact arithmetic\",\n      \"clamp\": \"lower bound 0 only\",\n      \"rng\": \"none\",\n      \"limits\": \"traversedDistance must be externally established by an approved rate/table. This formula does not approve strategic speed, fatigue or terrain coefficients.\",\n      \"unit\": \"same route-defined distance unit; arrived boolean\"\n    },\n    {\n      \"id\": \"cargo-split-conservation\",\n      \"expression\": \"parentAtoms = disjointUnion(childAtoms); active parent retires; active child quantity sum equals parent quantity\",\n      \"status\": \"approved-Seoul-bounded\",\n      \"authority\": \"selected split-provenance policy and material conservation\",\n      \"rounding\": \"none; atom identities are indivisible in this proof\",\n      \"clamp\": \"none\",\n      \"rng\": \"none\",\n      \"unit\": \"stable material atom identifiers and same-item cardinality\"\n    },\n    {\n      \"id\": \"inclusive-cutoff\",\n      \"expression\": \"temporalEligibility = verifiedArrival AND arrivalAt <= cutoffAt\",\n      \"status\": \"approved-Seoul-bounded\",\n      \"authority\": \"T68-CARGO-INCLUSIVE-CUTOFF\",\n      \"rounding\": \"none\",\n      \"clamp\": \"none\",\n      \"rng\": \"none\",\n      \"limits\": \"Temporal eligibility only. Receiver countersign and all separately applicable custody/rights guards remain required for final stock.\",\n      \"unit\": \"same D18 clock coordinate compared to boolean eligibility\"\n    },\n    {\n      \"id\": \"observation-record\",\n      \"expression\": \"knowledge.status = reported; knowledge.observedAt = receiptTime; knowledge.asOf = sourceAsOf; currentWorldFact remains unchanged\",\n      \"status\": \"approved-Seoul-bounded\",\n      \"authority\": \"sealed GP-02-A observation freshness direction and existing report/world separation\",\n      \"rounding\": \"none\",\n      \"clamp\": \"none\",\n      \"rng\": \"none\",\n      \"limits\": \"No universal TTL or decay coefficient is approved.\",\n      \"unit\": \"stable subject/source identifiers; named world-clock coordinates; status enum\"\n    },\n    {\n      \"id\": \"reinforcement-arrival-boundary\",\n      \"expression\": \"mayJoin = arrivalVerified AND battleState = ongoing; battleState = ended => false\",\n      \"status\": \"approved-owner-rule\",\n      \"authority\": \"OWNER-REINFORCEMENT-20261004\",\n      \"rounding\": \"none\",\n      \"clamp\": \"none\",\n      \"rng\": \"none\",\n      \"limits\": \"No origin, rank, initial-roster or invented arrival-window filter. Entry geometry, command transfer and capacity remain proposals.\",\n      \"unit\": \"boolean\"\n    }\n  ],\n  \"rng\": {\n    \"streams\": [\n      \"movement\",\n      \"encounter\",\n      \"observation\"\n    ],\n    \"separatedFrom\": [\n      \"combat\",\n      \"world-event\",\n      \"character\"\n    ],\n    \"useInApprovedFormulas\": \"none\",\n    \"held\": \"algorithm, seed encoding, draw order and consumption protocol\"\n  },\n  \"time\": \"D18의 동일 세계시각을 읽는다. 실제 주기·달력 기점은 proposal-held다.\",\n  \"rounding\": \"각 공식의 명시된 처리를 따른다. 실제 생산·전략 이동 양자화는 proposal-held다.\",\n  \"clamps\": \"각 식의 명시된 한계만 적용한다. 미정 정책의 임의 클램프는 없다.\",\n  \"lifecycle\": {\n    \"noPath\": \"E_NO_PATH; no movement or location mutation\",\n    \"zeroSpeed\": \"E_ZERO_SPEED for a required approved speed; no division and no movement\",\n    \"blockedSegment\": \"retain completed distance and current location/progress, mark replanning required; exact strategic rate remains held\",\n    \"cancel\": \"retain completed progress and consumed resources; untraversed remainder remains\",\n    \"death\": \"retain location, cargo and completed travel facts; authority/continuation is rechecked by owning domains\",\n    \"load\": \"restore exact route segment, remaining distance, cargo provenance, knowledge times, result IDs and versions; incompatible data is explicit error\",\n    \"lateArrival\": \"exclude only from the named cutoff; cargo remains existent for later applicable processing\",\n    \"endedBattle\": \"arrival does not join that ended encounter\"\n  },\n  \"failure\": \"typed reject on stale revision, incompatible rules, changed duplicate result or conflicting cargo identity\",\n  \"proposalHeld\": [\n    {\n      \"id\": \"route-resolution-policy\",\n      \"status\": \"proposal-held\",\n      \"authority\": \"sealed D02/GP-02-A gives segment observation and blocked-segment replanning direction\",\n      \"held\": \"Whether to prevalidate the full route, advance to the first blockage, or approve each segment and request rerouting; blockage state authority and automatic reroute selection.\",\n      \"reason\": \"Chosen Option A does not select one of the older GP-02 path-resolution alternatives or create actual route records.\",\n      \"safeContract\": \"Confirmed physical adjacency, passage authority and current passability are all required; unknown never becomes legal.\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"strategic-distance-speed-time\",\n      \"status\": \"proposal-held\",\n      \"authority\": \"sealed D28/GP-02-A and Task25 public Lite anchors\",\n      \"held\": \"Seoul distance unit and conversion, surface/tunnel/vehicle base speeds, route ETA, minimum speed and strategic tick cadence.\",\n      \"reason\": \"Lite Basic Move and encumbrance are personal reference structures, not strategic Seoul coefficients.\",\n      \"safeContract\": \"Actual movement and exact remaining distance are conserved; validator raises E_PROPOSAL_REQUIRED without an approved strategic speed/table.\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"load-fatigue-terrain-modifiers\",\n      \"status\": \"proposal-held\",\n      \"authority\": \"sealed D28/GP-02-A\",\n      \"held\": \"Cargo-to-speed coupling, fatigue accumulation/recovery, terrain and tunnel factors, ordering and rounding.\",\n      \"reason\": \"No sealed number or complete algorithm exists; foreign-game values and old proposal examples remain non-adopted.\",\n      \"safeContract\": \"Known personal load may select a Lite reference row only; it cannot set squad capacity or strategic travel time.\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"information-freshness-decay\",\n      \"status\": \"proposal-held\",\n      \"authority\": \"sealed D02/GP-02-A\",\n      \"held\": \"Universal TTL, confidence decay, expiry bands, refresh cost and authority precedence between conflicting reports.\",\n      \"reason\": \"The sealed choice requires event-based freshness and observation times but gives no duration or coefficient.\",\n      \"safeContract\": \"Store sourceAsOf and observedAt; report updates knowledge only and never overwrites current world fact.\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"cargo-receipt-identity-authentication\",\n      \"status\": \"proposal-held\",\n      \"authority\": \"prior selected cargo policies plus decision-record boundaries\",\n      \"held\": \"Receipt ID construction, authentication law, current-custodian conjunction, error tolerance, quarantine release and retry protocol.\",\n      \"reason\": \"Receiver countersign is selected; the stronger current-custodian AND receiver proposal is explicitly unadopted and no new owner decision may be invented.\",\n      \"safeContract\": \"Cutoff gives temporal eligibility only; final availability also requires receiver countersign and every separately applicable approved custody/right guard.\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"shared-daily-phase-values\",\n      \"status\": \"proposal-held\",\n      \"authority\": \"selected common daily phase and ingress order\",\n      \"held\": \"Clock unit, actual phase time, calendar origin, precision, same-time total order after the approved special orders.\",\n      \"reason\": \"The policy shape is selected but no numeric clock or complete total order is sealed.\",\n      \"safeContract\": \"At equality, arrival verification precedes reservation, production and consumption; other same-time conflicts remain held.\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"strategic-message-protocol\",\n      \"status\": \"proposal-held\",\n      \"authority\": \"existing path/receive/accept requirement\",\n      \"held\": \"Message travel time, cost, failure probability, duplicate ordering, expiry and delegation conflict policy.\",\n      \"reason\": \"D06 has no sealed exact message formula or conflict resolver.\",\n      \"safeContract\": \"No path, receipt or acceptance means no execution; battle immediate signal is a separate contract.\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"reinforcement-entry-procedure\",\n      \"status\": \"proposal-held\",\n      \"authority\": \"OWNER-REINFORCEMENT-20261004\",\n      \"held\": \"Entry cadence, spawn/entry geometry, command transfer timing and capacity handling.\",\n      \"reason\": \"Owner approval grants universal ongoing-arrival eligibility but explicitly supplies no cadence, geometry, transfer or capacity values.\",\n      \"safeContract\": \"No origin, rank, initial-roster or invented time-window filter; ended battles reject retrospective participation.\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"movement-rng-protocol\",\n      \"status\": \"proposal-held\",\n      \"authority\": \"existing separated-purpose RNG rule\",\n      \"held\": \"Generator algorithm, seed encoding, draw order, consumption and save/replay representation.\",\n      \"reason\": \"Only purpose separation is approved.\",\n      \"safeContract\": \"Approved D06 formulas in this closure consume no RNG.\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"actual-world-records\",\n      \"status\": \"proposal-held\",\n      \"authority\": \"decision-record selectionEffect and no-world-fact-invention guard\",\n      \"held\": \"Specific route lengths, passage rights, current blockages, vehicle parameters, cargo lots, station links, report values and battle arrivals.\",\n      \"reason\": \"Task34 closes the mechanism contract, not LORE/campaign instances. No record is owner-approved by a direction-only row.\",\n      \"safeContract\": \"Every actual record must carry source, identity, unit, version and owning authority before evaluation.\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"foreign-game-values\",\n      \"status\": \"proposal-held\",\n      \"authority\": \"Task24 CK3/Norland D06 dossiers\",\n      \"held\": \"All CK3/Norland numeric parameters and hidden/native algorithm inferences as Seoul values.\",\n      \"reason\": \"Research rows are version-bounded comparison evidence, often native-unresolved, and never Seoul adoption.\",\n      \"safeContract\": \"No foreign value appears as a Seoul coefficient in validator behavior.\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"illustrative-case-values\",\n      \"status\": \"proposal-held\",\n      \"authority\": \"Task25 value-relabel.json\",\n      \"held\": \"Chosen ST/DX/HT, load, clock and atom values in worked cases as actual balance or world facts.\",\n      \"reason\": \"The overlay classifies example inputs/outputs as Seoul-owned illustrative values without numeric approval.\",\n      \"safeContract\": \"Cases prove arithmetic and guards only.\",\n      \"numericApproval\": false,\n      \"operative\": false\n    }\n  ],\n  \"scope\": {\n    \"numericBalanceReady\": false,\n    \"runtimeImplemented\": false,\n    \"worldFactsIssued\": false,\n    \"executionSchemaReady\": false\n  }\n}"
+    },
+    {
+      "id": "d06.b10",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태·효과·출처의 적용 범위"
+        }
+      ]
+    },
+    {
+      "id": "d06.b11",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "json",
+      "text": "{\n  \"title\": \"이동·화물·지도·관측 작동 계약\",\n  \"authority\": {\n    \"sealedRowsApplied\": [\n      {\n        \"row\": \"D02\",\n        \"decisionId\": \"GP-02\",\n        \"chosenOption\": \"A\",\n        \"scope\": \"구간별 관측 시점, 사건 기반 정보 신선도, 차단 구간 재계획의 방향\"\n      },\n      {\n        \"row\": \"D28\",\n        \"decisionId\": \"GP-02\",\n        \"chosenOption\": \"A\",\n        \"scope\": \"개인 이동은 Lite Move/짐 구조를 참고하고 야외·터널 보정은 서울 별도표로 분리\"\n      }\n    ],\n    \"rowIdsAreNotDomainIds\": true,\n    \"priorApprovedRules\": [\n      \"actual movement; no strategic teleport\",\n      \"stable identity and explicit version conflicts\",\n      \"cargo material conservation and provenance-linked split\",\n      \"verified arrival at or before cutoff is temporally eligible\",\n      \"same-time arrival verification precedes reservation, production and consumption\",\n      \"receiver countersign is required by the selected cargo policy\",\n      \"any unit actually arriving while battle is ongoing may reinforce\",\n      \"map marks and reports do not become current world fact\",\n      \"movement/encounter/observation RNG is separated from other purposes\"\n    ],\n    \"gurpsLikeBasis\": {\n      \"classification\": \"public-Lite-derived-structure-plus-Seoul-owned-values\",\n      \"anchors\": [\n        \"L-lift\",\n        \"L-secondary\",\n        \"L-encumbrance\"\n      ],\n      \"adoptionBoundary\": \"Lite supplies personal Basic Lift, Basic Move and encumbrance row structure only. It does not supply Seoul route distance, strategic time, fatigue, tunnel modifiers, cargo receipt law or information freshness duration.\",\n      \"noGurps2004Claim\": true\n    },\n    \"noNewOwnerDecisions\": true\n  },\n  \"workedExamples\": [\n    {\n      \"id\": \"personal-load-boundary\",\n      \"kind\": \"normal-boundary\",\n      \"input\": {\n        \"ST\": 10,\n        \"DX\": 12,\n        \"HT\": 12,\n        \"loadLb\": 40\n      },\n      \"work\": \"BL=10^2/5=20 lb; BasicSpeed=(12+12)/4=6; BasicMove=6; load=2*BL selects level1; floor(6*0.8)=4.\",\n      \"expected\": {\n        \"BLraw\": 20,\n        \"BLrounded\": 20,\n        \"basicSpeed\": 6,\n        \"basicMove\": 6,\n        \"encumbranceLevel\": 1,\n        \"personalMove\": 4\n      },\n      \"authority\": [\n        \"L-lift\",\n        \"L-secondary\",\n        \"L-encumbrance\"\n      ],\n      \"valueStatus\": \"illustrative Seoul-owned inputs; coefficients are public Lite reference structure\"\n    },\n    {\n      \"id\": \"exact-cutoff-delivery\",\n      \"kind\": \"boundary\",\n      \"input\": {\n        \"arrivalAt\": 600,\n        \"cutoffAt\": 600,\n        \"verifiedArrival\": true,\n        \"receiverCountersigned\": true,\n        \"otherApplicableGuards\": true\n      },\n      \"work\": \"600 <= 600, so temporal eligibility is true. Receiver countersign and supplied other guards make this fixture available; cutoff alone would not.\",\n      \"expected\": {\n        \"temporalEligibility\": true,\n        \"finalAvailable\": true\n      },\n      \"authority\": [\n        \"T68-CARGO-INCLUSIVE-CUTOFF\",\n        \"selected receiver-countersign policy\"\n      ],\n      \"valueStatus\": \"illustrative clock coordinates, not an approved day length\"\n    },\n    {\n      \"id\": \"split-cargo\",\n      \"kind\": \"normal\",\n      \"input\": {\n        \"parent\": [\n          \"a\",\n          \"b\",\n          \"c\",\n          \"d\",\n          \"e\"\n        ],\n        \"children\": [\n          [\n            \"a\",\n            \"b\"\n          ],\n          [\n            \"c\",\n            \"d\",\n            \"e\"\n          ]\n        ]\n      },\n      \"work\": \"Child sets are disjoint and union to the parent; 2+3=5, then parent retires.\",\n      \"expected\": {\n        \"childQuantities\": [\n          2,\n          3\n        ],\n        \"activeQuantity\": 5,\n        \"parentStatus\": \"retired\"\n      },\n      \"authority\": [\n        \"selected split-provenance policy\",\n        \"material conservation\"\n      ],\n      \"valueStatus\": \"illustrative atom identities\"\n    },\n    {\n      \"id\": \"stale-control-report\",\n      \"kind\": \"adversarial\",\n      \"input\": {\n        \"worldControl\": \"blocked\",\n        \"reportControl\": \"open\",\n        \"observedAt\": 700,\n        \"sourceAsOf\": 650\n      },\n      \"work\": \"The report updates observer knowledge as-of 650 at receipt 700; it does not overwrite current blocked world state.\",\n      \"expected\": {\n        \"worldControl\": \"blocked\",\n        \"knowledge\": {\n          \"status\": \"open\",\n          \"observedAt\": 700,\n          \"asOf\": 650\n        }\n      },\n      \"authority\": [\n        \"sealed GP-02-A\",\n        \"report is not world fact\"\n      ],\n      \"valueStatus\": \"illustrative clock coordinates\"\n    },\n    {\n      \"id\": \"legal-layer-connection\",\n      \"kind\": \"failure-adversarial\",\n      \"input\": {\n        \"mapMark\": true,\n        \"routeConnected\": true,\n        \"passageAuthorized\": false,\n        \"segmentPassable\": true\n      },\n      \"work\": \"A visible map mark and physical connection do not replace passage authority; conjunction is false.\",\n      \"expected\": {\n        \"legal\": false,\n        \"error\": \"E_ROUTE_AUTHORITY\"\n      },\n      \"authority\": [\n        \"GP-02-A direction\",\n        \"no invented movement edges\"\n      ],\n      \"valueStatus\": \"predicate fixture\"\n    },\n    {\n      \"id\": \"ongoing-versus-ended-reinforcement\",\n      \"kind\": \"boundary\",\n      \"input\": {\n        \"arrivalVerified\": true,\n        \"ongoing\": \"ongoing\",\n        \"ended\": \"ended\"\n      },\n      \"work\": \"Verified arrival joins an ongoing battle and cannot join an ended battle.\",\n      \"expected\": {\n        \"ongoingMayJoin\": true,\n        \"endedMayJoin\": false\n      },\n      \"authority\": [\n        \"OWNER-REINFORCEMENT-20261004\"\n      ],\n      \"valueStatus\": \"symbolic battle states\"\n    }\n  ],\n  \"sourceComparisons\": {\n    \"ck3\": \"Documentary parameters and fragments remain comparison evidence. Exact coordinate units, general native distance/speed/load/fatigue/residual/freshness algorithms and same-tick cutoff ordering are not verified or adopted.\",\n    \"norland\": \"Road and status modifiers are mixed historical revisions. Distance, load and residual segment algorithms remain unresolved; no historical value becomes a Seoul coefficient.\"\n  }\n}"
+    }
+  ]
+}

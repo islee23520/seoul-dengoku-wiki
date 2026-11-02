@@ -1,0 +1,87 @@
+[32m✔ Given current repository When houses stage Then atlas has 32 houses and Operating-Houses projection [90m(115.0141ms)[39m[39m
+[32m✔ Given current repository When theaters stage Then five theaters and External-Theaters projection [90m(118.5692ms)[39m[39m
+[32m✔ Given current repository When synthetics stage Then 48 synthetics and Synthetic-Actors projection [90m(123.7478ms)[39m[39m
+[32m✔ Given current repository When story-manifest stage Then 46 batches locked [90m(115.7214ms)[39m[39m
+[32m✔ Given current repository When monster-manifest stage Then 24 groups and 384 entries [90m(113.3618ms)[39m[39m
+[32m✔ Given current repository When seeds stage Then arcs cover houses theaters classes groups [90m(112.3959ms)[39m[39m
+[32m✔ Given a real company mark in theater prose When theaters stage Then source canon allows it (rename seam) [90m(653.9985ms)[39m[39m
+[32m✔ Given a real company mark in house prose When houses stage Then source canon allows it (rename seam) [90m(614.2029ms)[39m[39m
+[32m✔ Given two materializer --check runs When generated projections are unchanged Then hashes match [90m(373.7719ms)[39m[39m
+[32m✔ Given a mutated projection When materializer --check Then nonzero [90m(285.2635ms)[39m[39m
+[32m✔ Given extra M999 B099 G99 files When materializer --check Then nonzero names each unexpected projection [90m(353.7845ms)[39m[39m
+[32m✔ Given an altered projected confirmed Monster-Batch-M001 When materializer --check Then it is stale, not unexpected [90m(280.3982ms)[39m[39m
+[32m✔ Given live docs When materializer --check Then confirmed monster copies are not unexpected [90m(69.3613ms)[39m[39m
+[32m✔ Given canonical G19 and G24 records When projecting atlas Then group pages are emitted [90m(0.3372ms)[39m[39m
+[32m✔ Given seed-only G19 When projecting atlas Then Hostile-Group-G19.md is absent [90m(0.0829ms)[39m[39m
+[32m✔ Given current repository When story-batch B001 Then ten stories and projection [90m(130.9641ms)[39m[39m
+[32m✔ Given current repository When story-batch B002 Then ten stories and projection [90m(130.6103ms)[39m[39m
+[32m✔ Given current repository When story-batch B003 Then ten stories and projection [90m(128.6938ms)[39m[39m
+[32m✔ Given current repository When story-batch B004 Then ten stories and projection [90m(130.8993ms)[39m[39m
+[32m✔ Given current repository When story-batch B005 Then ten stories and projection [90m(135.1053ms)[39m[39m
+[32m✔ Given current repository When story-batch B006 Then ten stories and projection [90m(127.1451ms)[39m[39m
+[32m✔ Given current repository When story-batch B007 Then ten stories and projection [90m(120.5742ms)[39m[39m
+[32m✔ Given current repository When story-batch B008 Then ten stories and projection [90m(124.1666ms)[39m[39m
+[32m✔ Given current repository When story-batch B009 Then ten stories and projection [90m(126.4753ms)[39m[39m
+[32m✔ Given current repository When story-batch B010 Then ten stories and projection [90m(124.5152ms)[39m[39m
+[32m✔ Given current repository When story-batch B011 Then ten stories and projection [90m(123.1932ms)[39m[39m
+[32m✔ Given current repository When story-batch B012 Then ten stories and projection [90m(126.9766ms)[39m[39m
+[32m✔ Given current repository When story-batch B013 Then ten stories and projection [90m(129.2043ms)[39m[39m
+[32m✔ Given current repository When story-batch B014 Then ten stories and projection [90m(129.8325ms)[39m[39m
+[32m✔ Given current repository When story-batch B015 Then ten stories and projection [90m(129.0094ms)[39m[39m
+[32m✔ Given current repository When story-batch B016 Then ten stories and projection [90m(126.6961ms)[39m[39m
+[32m✔ Given current repository When story-batch B018 Then ten stories and projection [90m(128.9543ms)[39m[39m
+[32m✔ Given current repository When story-batch B019 Then ten stories and projection [90m(138.1831ms)[39m[39m
+[32m✔ Given current repository When story-batch B021 Then ten stories and projection [90m(133.0956ms)[39m[39m
+[32m✔ Given current repository When story-batch B022 Then ten stories and projection [90m(132.0333ms)[39m[39m
+[32m✔ Given current repository When story-batch B023 Then ten stories and projection [90m(125.0433ms)[39m[39m
+[32m✔ Given current repository When story-batch B024 Then ten stories and projection [90m(132.9308ms)[39m[39m
+[32m✔ Given current repository When story-batch B025 Then ten stories and projection [90m(143.2117ms)[39m[39m
+[32m✔ Given current repository When story-batch B026 Then ten stories and projection [90m(133.4076ms)[39m[39m
+[32m✔ Given current repository When story-batch B027 Then ten stories and projection [90m(136.8016ms)[39m[39m
+[32m✔ Given current repository When story-batch B028 Then ten stories and projection [90m(133.2851ms)[39m[39m
+[32m✔ Given current repository When story-batch B029 Then ten stories and projection [90m(129.4846ms)[39m[39m
+[32m✔ Given current repository When story-batch B030 Then ten stories and projection [90m(135.0849ms)[39m[39m
+[32m✔ Given current repository When story-batch B031 Then ten stories and projection [90m(127.0216ms)[39m[39m
+[32m✔ Given current repository When story-batch B032 Then ten stories and projection [90m(121.2545ms)[39m[39m
+[32m✔ Given current repository When story-batch B033 Then ten stories and projection [90m(136.3149ms)[39m[39m
+[32m✔ Given current repository When story-batch B034 Then ten stories and projection [90m(125.3417ms)[39m[39m
+[32m✔ Given current repository When story-batch B035 Then ten stories and projection [90m(131.1485ms)[39m[39m
+[32m✔ Given current repository When story-batch B036 Then ten stories and projection [90m(128.1954ms)[39m[39m
+[32m✔ Given current repository When story-batch B037 Then ten stories and projection [90m(124.8837ms)[39m[39m
+[32m✔ Given current repository When story-batch B038 Then ten stories and projection [90m(122.7294ms)[39m[39m
+[32m✔ Given current repository When story-batch B039 Then ten stories and projection [90m(123.4008ms)[39m[39m
+[32m✔ Given current repository When story-batch B040 Then ten stories and projection [90m(138.088ms)[39m[39m
+[32m✔ Given current repository When story-batch B041 Then ten stories and projection [90m(139.0371ms)[39m[39m
+[32m✔ Given current repository When story-batch B042 Then ten stories and projection [90m(150.2029ms)[39m[39m
+[32m✔ Given current repository When story-batch B043 Then ten stories and projection [90m(136.5211ms)[39m[39m
+[32m✔ Given current repository When story-batch B044 Then ten stories and projection [90m(139.4721ms)[39m[39m
+[32m✔ Given current repository When story-batch B045 Then ten stories and projection [90m(133.8449ms)[39m[39m
+[32m✔ Given current repository When story-batch B046 Then ten stories and projection [90m(137.0814ms)[39m[39m
+[32m✔ Given two B001 actors sharing a long sentence When story-batch Then E_DUPLICATE_SENTENCE [90m(683.4529ms)[39m[39m
+[32m✔ Given current G01-G06 When monster-manifest Then dossiers and outlines verify [90m(127.3351ms)[39m[39m
+[32m✔ Given generated G01-G12 group pages When read Then scenario headings exist [90m(37.2058ms)[39m[39m
+[32m✔ Given missing G13 dossier prose When group-dossiers stage Then E_GROUP_DOSSIER [90m(675.0712ms)[39m[39m
+[32m✔ Given G13-G18 dossiers When group-dossiers stage Then IDs scenarios and projections are distinct and complete [90m(140.7734ms)[39m[39m
+[32m✔ Given missing G01 adaptation When monster-manifest stage Then E_GROUP_ADAPTATION [90m(684.085ms)[39m[39m
+[32m✔ Given an incomplete G07 scenario When monster-manifest stage Then E_GROUP_SCENARIO [90m(661.7969ms)[39m[39m
+[31m✖ Given repository isometric atlas views When files exist Then SVG contracts pass [90m(25.2479ms)[39m[39m
+[32m✔ Given isometric SVG hrefs When resolved from asset path Then every external target exists [90m(5.2234ms)[39m[39m
+[32m✔ Given company-aliases manifest When real names enter canon Then every real name has a rename target [90m(5.3522ms)[39m[39m
+[34mℹ tests 69[39m
+[34mℹ suites 0[39m
+[34mℹ pass 68[39m
+[34mℹ fail 1[39m
+[34mℹ cancelled 0[39m
+[34mℹ skipped 0[39m
+[34mℹ todo 0[39m
+[34mℹ duration_ms 12447.9304[39m
+
+[31m✖ failing tests:[39m
+
+test at tools\wiki\test-world-atlas.mjs:398:1
+[31m✖ Given repository isometric atlas views When files exist Then SVG contracts pass [90m(25.2479ms)[39m[39m
+  Error: overlap 17 | 1
+      at assertIsometricSvgContracts [90m(file:///E:/git/seoul-kenshi/[39mtools/wiki/world-atlas-isometric.mjs:401:34[90m)[39m
+      at TestContext.<anonymous> [90m(file:///E:/git/seoul-kenshi/[39mtools/wiki/test-world-atlas.mjs:407:5[90m)[39m
+  [90m    at async Test.run (node:internal/test_runner/test:1110:7)[39m
+  [90m    at async Test.processPendingSubtests (node:internal/test_runner/test:785:7)[39m

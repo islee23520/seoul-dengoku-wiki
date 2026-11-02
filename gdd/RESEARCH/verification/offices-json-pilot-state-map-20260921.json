@@ -1,0 +1,111 @@
+{
+  "schema": "janseon.research.offices-json-pilot-state-map.v1",
+  "date": "2026-09-21",
+  "scope": "read-only audit; no canon edits",
+  "source_file": "LORE/offices/Offices-and-Ranks.md",
+  "authorities": {
+    "registry_names": "LORE/factions/Sixteen-States.md (16국 기원 table; 국명 column)",
+    "registry_ids": "LORE/World-Narrative-Atlas.md JSON block states[] (id S01-S16, display_name, offices[5])",
+    "generated_territories": "WEB/wiki/dist/opening-territories.json states[] (id + slug)",
+    "org_dataset": "LORE/name-pools/values-orgs.json (orgs[].states use S01-S16 atlas ids; not re-verified per row)"
+  },
+  "id_schemes_warning": "Two different numberings exist. Atlas/opening-territories id (S01-S16) is authoritative canon id. generate-catalog.mjs slug sNN is Sixteen-States.md table row order and is NOT the atlas id (e.g. 급수계약정: id S01, slug s10).",
+  "states": [
+    {"id": "S01", "slug": "s10", "name": "급수계약정", "offices_table_label": "급수계약정", "label_match": true, "tiers": ["역장", "본부장", "구역장", "당직장", "주사"], "atlas_offices_equal": true},
+    {"id": "S02", "slug": "s11", "name": "규격동맹", "offices_table_label": "규격동맹", "label_match": true, "tiers": ["위원장", "상임이사", "이사", "감사", "조합원"], "atlas_offices_equal": true},
+    {"id": "S03", "slug": "s04", "name": "양재기공주식회사", "offices_table_label": "양재기공주식회사", "label_match": true, "tiers": ["회장", "사장", "전무", "부장", "대리"], "atlas_offices_equal": true},
+    {"id": "S04", "slug": "s05", "name": "설교명부정", "offices_table_label": "설교명부정", "label_match": true, "tiers": ["당회장", "장로", "권사", "집사", "교사"], "atlas_offices_equal": true},
+    {"id": "S05", "slug": "s13", "name": "호위보호정", "offices_table_label": "호위보호정", "label_match": true, "tiers": ["사령관", "참모장", "대대장", "중대장", "병장"], "atlas_offices_equal": true},
+    {"id": "S06", "slug": "s01", "name": "대한민국정부", "offices_table_label": "대한민국정부", "label_match": true, "tiers": ["대통령", "장관", "차관", "국장", "주사"], "atlas_offices_equal": true},
+    {"id": "S07", "slug": "s12", "name": "선로후계정", "offices_table_label": "선로후계정", "label_match": true, "tiers": ["역장", "본부장", "구역장", "당직장", "주사"], "atlas_offices_equal": true},
+    {"id": "S08", "slug": "s08", "name": "교헌필사정", "offices_table_label": "교헌필사정", "label_match": true, "prose_heading_label": "원불교", "prose_heading_match": false, "tiers": ["교정원장", "수석교무", "교무", "교생", "교도"], "atlas_offices_equal": true},
+    {"id": "S09", "slug": "s02", "name": "여의도출자연합회", "offices_table_label": "여의도출자연합회", "label_match": true, "tiers": ["회장", "부회장", "전무", "부장", "직원"], "atlas_offices_equal": true},
+    {"id": "S10", "slug": "s07", "name": "승가구휼정", "offices_table_label": "승가구휼정", "label_match": true, "tiers": ["종정", "총무원장", "주지", "스님", "신도"], "atlas_offices_equal": true},
+    {"id": "S11", "slug": "s03", "name": "서초전산그룹", "offices_table_label": "서초전산그룹", "label_match": true, "tiers": ["회장", "사장", "전무", "부장", "대리"], "atlas_offices_equal": true},
+    {"id": "S12", "slug": "s15", "name": "중립호송시", "offices_table_label": "중립호송시", "label_match": true, "tiers": ["대표", "단장", "반장", "서기", "호송원"], "atlas_offices_equal": true},
+    {"id": "S13", "slug": "s16", "name": "의약중립맹", "offices_table_label": "의약중립맹", "label_match": true, "tiers": ["이사장", "이사", "부장", "주임", "회원"], "atlas_offices_equal": true},
+    {"id": "S14", "slug": "s14", "name": "관문군정", "offices_table_label": "관문군정", "label_match": true, "tiers": ["사령관", "참모장", "대대장", "중대장", "병장"], "atlas_offices_equal": true},
+    {"id": "S15", "slug": "s06", "name": "본당인준정", "offices_table_label": "본당인준정", "label_match": true, "tiers": ["대주교", "신부", "수사", "부제", "교우"], "atlas_offices_equal": true},
+    {"id": "S16", "slug": "s09", "name": "정동노동총연맹", "offices_table_label": "정동노동총연맹", "label_match": true, "tiers": ["위원장", "부위원장", "본부장", "지부장", "조합원"], "atlas_offices_equal": true}
+  ],
+  "counts": {
+    "state_ids": 16,
+    "offices_table_rows": 16,
+    "tiers_per_state": 5,
+    "table_cells": 80,
+    "empty_cells": 0,
+    "duplicate_state_rows": 0,
+    "missing_states": 0,
+    "extra_states": 0,
+    "duplicate_titles_within_a_state_row": 0,
+    "atlas_offices_vs_table_mismatches": 0,
+    "label_mismatches_in_table": 0,
+    "prose_heading_mismatches": 1
+  },
+  "mismatches": [
+    {
+      "id": "M1",
+      "state_id": "S08",
+      "canonical_name": "교헌필사정",
+      "stale_label": "원불교",
+      "location": "LORE/offices/Offices-and-Ranks.md:51 (### 원불교 heading in 국가별 관직)",
+      "explanation": "원불교 is the origin institution of 교헌필사정 in Sixteen-States.md (기원 column), not the state name. The 국가별 관직표 row (line 89) already uses 교헌필사정. The other 12 prose headings use the state name.",
+      "classification": "stale label repair (no content change); tiers and prose body are unchanged and already match atlas offices",
+      "consumer_impact": "none today: generate-catalog.mjs reads only the 관직표 table, never prose headings. A JSON conversion keyed on headings would break."
+    }
+  ],
+  "non_mismatch_notes": [
+    "Three prose headings merge two states with ' · ' (급수계약정·선로후계정, 호위보호정·관문군정, 서초전산그룹·양재기공주식회사); 13 headings cover 16 states. Each merged pair shares one identical tier row, so JSON must store per-state rows and treat the merged heading as presentation.",
+    "Heading 대한민국정부/설교명부정/etc. match canonical names exactly."
+  ],
+  "consumer": {
+    "file": "WEB/wiki/scripts/generate-catalog.mjs",
+    "lines": "118-124 (parse), 423-429 (use)",
+    "office_table_regex": "/\\| 국가 \\| 티어1 \\|[\\s\\S]*?(?=\\n## )/  -- starts at the 관직표 header, ends before next '## ' heading",
+    "row_regex": "/^\\| ([^|]+) \\| ([^|]+) \\| ([^|]+) \\| ([^|]+) \\| ([^|]+) \\| ([^|]+) \\|$/gm -- exactly 6 cells, no leading/trailing spaces beyond one",
+    "assumptions": [
+      "Table header literal '| 국가 | 티어1 |' must exist and the table must be followed by a '## ' heading.",
+      "Key is state display name from person.state_name (cast data); must equal the 국가 cell text (교헌필사정, not 원불교).",
+      "Tier index = position of person's 품계 string in the 5 cells; T1..T5 = index+1; unmatched rank throws E_PERSON_TIER_MISSING (S00 exempt, forced T5).",
+      "Separator row '|---|...' has 6 cells of dashes and does not match the row regex only by accident of the [^|]+ cells; it is harmless because lookup is by name.",
+      "Prose headings, the 다섯 층 table and the 옛 조선 관직 치환 table are not consumed."
+    ],
+    "state_slug_assumption": "stateSlug = 's' + (row index in Sixteen-States.md 국명 table + 1); this is table order, different from atlas ids. Confirmed by opening-territories.json (S01 급수계약정 slug s10, S08 교헌필사정 slug s08, S06 대한민국정부 slug s01).",
+    "ruler_map": "hard-coded rulerByState keyed by state name; 교헌필사정 -> 오해린"
+  },
+  "markdown_inventory": {
+    "bytes": 12317,
+    "lines": 126,
+    "ends_with_newline": true,
+    "headings": {"h1": 1, "h2": 9, "h3": 13, "total": 23, "list": [
+      [1, 1, "관직"], [2, 9, "다섯 층"], [2, 23, "국가별 관직"], [3, 27, "대한민국정부"], [3, 31, "급수계약정 · 선로후계정"], [3, 35, "호위보호정 · 관문군정"], [3, 39, "설교명부정"], [3, 43, "본당인준정"], [3, 47, "승가구휼정"], [3, 51, "원불교"], [3, 55, "여의도출자연합회"], [3, 59, "서초전산그룹 · 양재기공주식회사"], [3, 63, "정동노동총연맹"], [3, 67, "규격동맹"], [3, 71, "중립호송시"], [3, 75, "의약중립맹"], [2, 79, "국가별 관직표"], [2, 100, "옛 조선 관직 치환"], [2, 114, "왜 이 관직인가"], [2, 120, "작위와 생업"], [2, 124, "계승"]
+    ]},
+    "paragraphs": {"count": 25, "note": "each is a single physical line; line starts: 3,5,7,11,21,25,29,33,37,41,45,49,53,57,61,65,69,73,77,102,112,116,118,122,126"},
+    "tables": [
+      {"start_line": 13, "header": ["티어", "CK 대응", "옛 조선 관직", "다스리는 단위"], "data_rows": 5, "role": "다섯 층 (tier-to-CK/old-Joseon/unit)"},
+      {"start_line": 81, "header": ["국가", "티어1", "티어2", "티어3", "티어4", "티어5"], "data_rows": 16, "role": "국가별 관직표 (consumer-parsed)"},
+      {"start_line": 104, "header": ["옛 호칭", "티어", "CK 대응", "치환 근거"], "data_rows": 5, "role": "옛 조선 관직 치환"}
+    ],
+    "links": [
+      {"line": 116, "text": "야망", "target": "../characters/Ambitions-and-Relations.md"},
+      {"line": 126, "text": "후계, 이름 로스터, 세계 원장", "target": "../characters/Heirs-Names-and-World-Ledger.md"}
+    ],
+    "emphasis": {"bold": 0, "italic": 0, "inline_code": 0},
+    "lists": 0,
+    "code_fences": 0,
+    "html": 0,
+    "other_inline_features": [
+      "Text contains a literal ' — ' (em dash) in the 다섯 층 table cell for tier 2 (line 17), ' · ' (middle dot) in headings and prose, and '—' as separator in tier chains (e.g. 대통령—장관—차관—국장—주사) inside the 13 국가별 paragraphs. Renderer must keep these characters verbatim.",
+      "Table cells contain no pipes, no links, no emphasis."
+    ]
+  },
+  "recommendation": {
+    "pilot_suitability": "Good pilot: 16x5 table is already machine-equal to atlas offices[]; only lossy part is 25 prose paragraphs plus 3 tables and 2 links, all plain text.",
+    "json_shape": "Store canonical rows keyed by atlas state id S01-S16 with name + tiers[5]; keep prose sections as ordered blocks (heading, paragraph, table, link spans). Do not key by prose heading or by generate-catalog slug.",
+    "repair": "Rename '### 원불교' to '### 교헌필사정' (stale label repair, ~1 line, no content/tier change). Do not apply here; canon edits are out of scope."
+  },
+  "unverified": [
+    "values-orgs.json state id-to-name mapping was not checked row by row against atlas ids.",
+    "Organization/cast datasets (values-cast.json etc.) were not scanned for the 원불교/교헌필사정 label."
+  ]
+}

@@ -1,0 +1,565 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "Game-References.md",
+    "lineStart": 1,
+    "lineEnd": 154,
+    "sha256": "153a67659a0e638c5ec218373b6118c3475571ff7eaa535faa31a1081fe705ac"
+  },
+  "document": {
+    "id": "doc.Game-References",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "r3.norland-ref",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "source.b27",
+      "source.b28",
+      "source.b29",
+      "source.b30",
+      "source.b31"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "레퍼런스 게임 조사 — 무엇을 누구에게서 빌렸나"
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 레퍼런스 게임은 **크루세이더 킹즈 3(CK3)**와 **노랜드(Norland)**로 제한한다. 게임 전체 목표는 **4X + RPG**이며, 전투 목표는 **노랜드식 개인 판정 전투**다. 전투 카메라는 소유자가 확정한 3D 자유 지휘 시점이고, 전투에는 일시정지가 없다. 턴제 전투가 포함된 작품은 현재 레퍼런스에서 제외하며, 과거 조사 원문은 저장소 내부 `RESEARCH/canon-reference/`에 보존한다. CK2 **After the End** 원본(`Ofaloaf/postapoc` 0.9, `61eb04ee2b42e8a7fcdc659597fe2f30e6df07f8`)과 Fanfork(`9Kbits/ateff` 1.1.1, `8565e230ac49a092096bc122e112374f5df5418c`)는 이번 서사의 인과 구조를 비교한 **조사 출처**이지, 위의 현행 게임플레이·UI 레퍼런스 목록에 추가하거나 원전 지명·법·수치를 채택한 것이 아니다. CK3의 [시스템 백과](references/Ref-Crusader-Kings-3.md)는 작위·계승·사건 표현의 비교 출처일 뿐 CK2판 인물·신앙·사건의 증거가 아니다. 원본 전용 사건을 Fanfork 검증으로 표시하거나 CK3 lore를 CK2 서사 근거로 바꾸지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "blockQuote",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "이 페이지의 잔선 적용은 설계 방향과 구현 제안이다. 여섯 프리셋, 16국 전략 지도,"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "포획·영입, 지속 부상 등이 현재 런타임에 모두 구현되었다는 뜻이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "현재 완료 상태는 개발 로드맵과 저장소 ToDo.md를 확인한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "차용 원칙"
+        }
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "모든 차용은 원문 출처와 함께 기록한다 — 추측으로 채우지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "여러 게임이 같은 문제에 다른 해법을 제시하면 선택지로 병기하고 잔선의 선택 이유를 명시한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "가져오지 않은 것도 명시한다 — 부정확한 연상을 막는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "게임 UI 조사와 레이아웃 설계는 [Interface In Game](https://interfaceingame.com/)의 CK3·노랜드 자료를 1차 기준으로 삼는다. 해당 작품의 화면 자료가 부족하면 같은 작품의 공식 가이드와 실게임 영상을 보완 출처로 쓴다. 화면의 정보 위계와 배치 원리는 참고하되 원작의 아트·문양·아이콘·서체는 그대로 옮기지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "UI 레퍼런스 기준"
+        }
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "캠페인 지도·전투 준비·실시간 전투·외교·기술·결과 화면은 아래 배치 원칙에 따라 설계한다. 상단 상태 영역, 우측 행동 메뉴, 하단 문맥 패널을 구분하고, 전투에서는 전력 균형과 미니맵을 통해 전장 상태를 읽을 수 있게 한다."
+        }
+      ]
+    },
+    {
+      "id": "r3.norland-ref",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 변환 범위는 전투·이동뿐 아니라 생활·관계·생계·생산·물류·혼인·외교·기술 전승·동원·습격의 연결이다. 서울:전국의 국가별 제도와 한 인물의 권한을 기준으로 바꾸며 외부 신분제·단일 종교·문화·자원표·수치를 통째로 채택하지 않는다. 조사 출처는 내부 원장에 보존한다. 확정 방향과 네 축의 미정 입력·반영 순서는 [캠페인 진행과 위기](rules/Campaign-Progression.md)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "캠페인: 중앙 3D 지도, 상단 자원·상태대, 선택 대상에 따라 바뀌는 하단 문맥 패널, 우측 턴·외교·기술 행동 묶음."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투 준비: 같은 3D 전장 위에 배치 가능 영역과 경계선을 겹치고, 하단 부대 카드와 상단 전투 시작 제어를 유지."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실시간 전투: 중앙 전장을 최대한 비우고 하단 부대 카드 레일, 좌하단 선택 부대 정보, 우하단 명령·미니맵, 상단 중앙 전력 균형을 둔다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "모든 배치 비율은 웹페이지 전체가 아니라 Unity Game View의 16:9 렌더 프레임을 기준으로 잰다. 문서 제목, 화면 탭과 출처 링크는 게임 프레임 밖에 둘 수 있지만, 실제 HUD·전략맵·전투 뷰포트의 좌표와 점유율은 16:9 프레임 안에서만 평가한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b10",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "대출 매트릭스"
+        }
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "table",
+      "header": [
+        "기준",
+        "현재 레퍼런스",
+        "유지할 내용",
+        "제외"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "대전략",
+          "CK3",
+          "인물·가문·계승",
+          "턴제 전투 작품"
+        ],
+        [
+          "전투",
+          "노랜드",
+          "개인 판정 전투",
+          "턴제 전투 작품"
+        ]
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "일곱 차원 종합"
+        }
+      ]
+    },
+    {
+      "id": "source.b13",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 비교 기준은 CK3와 노랜드다. 다른 작품의 과거 권고는 조사 기록으로 남기되, 턴제 전투 문법을 현재 레퍼런스로 사용하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b14",
+      "kind": "table",
+      "header": [
+        "차원",
+        "최고 모델",
+        "잔선 권고"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "현재 기준",
+          "CK3",
+          "인물·가문·계승과 대전략"
+        ],
+        [
+          "전투 기준",
+          "노랜드",
+          "개인 판정 전투와 일시정지 없는 지휘"
+        ]
+      ]
+    },
+    {
+      "id": "source.b15",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "세 표면 구조"
+        }
+      ]
+    },
+    {
+      "id": "source.b16",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 조사가 확정한 핵심: 지도는 크기가 아니라 플레이어의 동사로 구별한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b17",
+      "kind": "table",
+      "header": [
+        "표면",
+        "질문",
+        "형태",
+        "차용"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "**S 전략 노선도**",
+          "누가 어디를 지배하며 무엇을 우선할 것인가?",
+          "서울 전체 → 16국 세력권 · 3D 하이트맵",
+          "CK3 정보 모드; 서울 16국의 영토 지배권 표시"
+        ],
+        [
+          "**W 역간 여행**",
+          "일행은 어디로, 어떤 대가로 갈 것인가?",
+          "현재역→목적역 · 경로·보급·사건",
+          "노랜드 이동·지속 비용"
+        ],
+        [
+          "N 비지도 관리면",
+          "누구를 준비시키고 무엇을 정산할 것인가?",
+          "인터미션·조우·배치·정산",
+          "CK3 이벤트"
+        ]
+      ]
+    },
+    {
+      "id": "source.b18",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "시작 프리셋"
+        }
+      ]
+    },
+    {
+      "id": "source.b19",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "결핍의 종류가 난이도를 만든다 — 숫자 조정이 아니라 \"무엇이 없는가\"가 다르다. 자세한 수치는 `Starting-Presets.md` 참조."
+        }
+      ]
+    },
+    {
+      "id": "source.b20",
+      "kind": "table",
+      "header": [
+        "프리셋",
+        "난이도",
+        "핵심 결핍",
+        "장기 규칙"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "떠돌이 삼인조",
+          "★★",
+          "거점·보급",
+          "없음 (표준)"
+        ],
+        [
+          "전직 자치 순찰대",
+          "★",
+          "관계 (배신자 취급)",
+          "신도림 자치회 회복이 첫 관문"
+        ],
+        [
+          "상인 잔존자",
+          "★★",
+          "전투력",
+          "교역 이윤 +20% / 전투원 비용 +50%"
+        ],
+        [
+          "탈영 소대",
+          "★★★★",
+          "광역 적대",
+          "추격자 주기 스폰"
+        ],
+        [
+          "고아 무리",
+          "★★★★★",
+          "모든 것",
+          "성장 ×2 / 사기 타격 ×2 / 보상 −30%"
+        ],
+        [
+          "마지막 역장",
+          "★★",
+          "역 책임",
+          "영등포 부분 통제 · 상실 시 망명 (게임오버 아님)"
+        ]
+      ]
+    },
+    {
+      "id": "source.b21",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "의도적으로 가져오지 않은 것"
+        }
+      ]
+    },
+    {
+      "id": "source.b22",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "CK3식 전투 추상화·봉건 계승 — 전투를 주사위 한 판으로 접지 않으므로. 2026-09-07의 「격자 위 진형」은 당시 계약이고, 2026-09-19 목표는 부대 지휘다"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b23",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "포획과 영입"
+        }
+      ]
+    },
+    {
+      "id": "source.b24",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "전투에서 적 대표를 생포하면 심문·인도·고용 협상 중 선택한다. 모집은 세 경로로 분리된다: 구조→신뢰→가입(핵심 동료) / 계약 인력(유료·기간제) / 역 내 인력 시장. 즉시 돈으로 사는 핵심 동료는 없다 — 관계가 게이트다."
+        }
+      ]
+    },
+    {
+      "id": "source.b25",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "오픈소스 구현 참고 (2026-09-17)"
+        }
+      ]
+    },
+    {
+      "id": "source.b26",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "오픈소스 조사는 구현 방식의 과거 기록이다. 현재 레퍼런스 게임은 CK3와 노랜드로 제한하며, 턴제 전투가 포함된 오픈소스 작품을 현재 레퍼런스로 채택하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b27",
+      "kind": "table",
+      "header": [
+        "게임",
+        "참고 포인트",
+        "도메인"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "현재 레퍼런스",
+          "CK3",
+          "인물 중심 대전략"
+        ],
+        [
+          "현재 레퍼런스",
+          "노랜드",
+          "개인 판정 전투"
+        ]
+      ]
+    },
+    {
+      "id": "source.b28",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "메커니즘 단위 인용은 [차용 메커니즘 총람 §14](references/Ref-Mechanism-Index.md)의 오픈소스 섹션에, 전체 원문은 저장소 내부 조사 문서에 있다."
+        }
+      ]
+    },
+    {
+      "id": "source.b29",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상세 백과사전 (위키 페이지)"
+        }
+      ]
+    },
+    {
+      "id": "source.b30",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "각 게임의 전체 메커니즘은 다음 위키 페이지에서 열람할 수 있다:"
+        }
+      ]
+    },
+    {
+      "id": "source.b31",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "[크루세이더 킹즈 3](references/Ref-Crusader-Kings-3.md) — 인물 중심 대전략 (계승·왕조·전쟁)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "노랜드 — 개인 판정 전투와 정착·관계 운영"
+          }
+        ]
+      ]
+    }
+  ]
+}

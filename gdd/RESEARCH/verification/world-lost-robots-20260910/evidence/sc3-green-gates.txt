@@ -1,0 +1,61 @@
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage monster-manifest --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage monster-batch --batch M040 --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage group-dossiers --groups G01-G06,G07-G12,G13-G18,G19-G24,G25-G27 --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage seeds --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage foundation --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage houses --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[PASS] node --test tools/wiki/test-world-atlas.mjs
+Then E_GROUP_SCENARIO [90m(718.6653ms)[39m[39m
+[32m✔ Given repository isometric atlas views When files exist Then SVG contracts pass [90m(32.605ms)[39m[39m
+[32m✔ Given isometric SVG hrefs When resolved from asset path Then every external target exists [90m(5.8186ms)[39m[39m
+[32m✔ Given company-aliases manifest When real names enter canon Then every real name has a rename target [90m(0.6507ms)[39m[39m
+[34mℹ tests 70[39m
+[34mℹ suites 0[39m
+[34mℹ pass 70[39m
+[34mℹ fail 0[39m
+[34mℹ cancelled 0[39m
+[34mℹ skipped 0[39m
+[34mℹ todo 0[39m
+[34mℹ duration_ms 12623.7573[39m
+
+
+[PASS] node --test tools/wiki/test-monster-batches-M021-M030.mjs
+90m(1.0624ms)[39m[39m
+[32m✔ 근접 복제 본문을 거부한다 [90m(1.1921ms)[39m[39m
+[32m✔ E-suffix 역할 불일치를 거부한다 [90m(1.0808ms)[39m[39m
+[32m✔ 다른 그룹 시나리오 ID를 거부한다 [90m(1.114ms)[39m[39m
+[32m✔ 상승 단계 표기 누락을 거부한다 [90m(1.154ms)[39m[39m
+[32m✔ 실재 기업 토큰은 원천 캐논에서 허용된다(개명 이음새) [90m(1.0291ms)[39m[39m
+[32m✔ 범위 밖 Monster-Batch 파일을 거부한다 [90m(19.2048ms)[39m[39m
+[32m✔ 잘못된 CLI 인자는 nonzero clean error [90m(97.8717ms)[39m[39m
+[34mℹ tests 14[39m
+[34mℹ suites 0[39m
+[34mℹ pass 14[39m
+[34mℹ fail 0[39m
+[34mℹ cancelled 0[39m
+[34mℹ skipped 0[39m
+[34mℹ todo 0[39m
+[34mℹ duration_ms 243.8146[39m
+
+
+[PASS] node tools/wiki/materialize-world-atlas.mjs --check --atlas docs/game-logic/World-Narrative-Atlas.md --out docs/game-logic
+oup-G25.md 28862871b3b26b68c2488273926e443ed3ed471acc3cdb0fe50c265ba8d118f3
+Hostile-Group-G26.md 2f9a149262e4df462596676b90c2adbbc75c1433f2821763aa7b3cb80134d585
+Hostile-Group-G27.md d7e3be0439adfe3cd4e594986b6d397e96ea5552358d589f1268eabdd48742ab
+world-atlas-isometric.svg 7c21b5dc120f0efb8cff5fa3042d98cfa17f58e8b2bb3d4c17d8e420102023cf
+house-influence-isometric.svg c3fa6f16d0c3ed25a469f5d0608da08591e40536972d0fc87908b034f6855c16
+hostile-ecology-isometric.svg bc8bd8cad00d68ed098958838f4da7584dfc0404cd66dfeb39d186350b393022
+atlas ffecb908fb8d982df846a464a5314dde1fbddeaaf44b3ab23e9341b78644e044
+

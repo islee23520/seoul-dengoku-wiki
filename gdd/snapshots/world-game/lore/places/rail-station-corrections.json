@@ -1,0 +1,9 @@
+{
+  "schema": "rail-station-corrections.v1",
+  "officialSource": "https://www.seoulmetro.co.kr/kr/getLineData.do",
+  "corrections": [
+    { "name": "신촌", "east": 950265, "north": 1950797, "stationCode": "0240", "lineIds": ["3-2"], "removedNamesakeCode": "1252" },
+    { "name": "양평", "east": 945758, "north": 1947549, "stationCode": "2523", "lineIds": ["6-5"], "removedNamesakeCode": "1217" },
+    { "name": "운정중앙", "east": 931977, "north": 1968785, "stationCode": "9000", "lineIds": ["1-GA"], "identitySource": "https://www.paju.go.kr/www/www_02/environment/traffic_safe_traffic/traffic_safe_traffic_11.jsp" }
+  ]
+}

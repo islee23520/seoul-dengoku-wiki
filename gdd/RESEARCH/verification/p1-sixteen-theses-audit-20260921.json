@@ -1,0 +1,120 @@
+{
+  "schema": "p1-sixteen-theses-audit.v1",
+  "date": "2026-09-21",
+  "verdict": "DEFINITION_BLOCKER",
+  "exact_sixteen_verified": false,
+  "baseline": {
+    "requested": "f5965149",
+    "actual_head": "c7998481",
+    "branch": "main",
+    "f5965149_is_ancestor_of_head": false,
+    "f5965149_branch": "fix/wiki-updates-state-selection",
+    "diff_files_head_vs_f5965149": 290,
+    "foreign_dirty_worktree_files": [
+      "LORE/chronology/Century-Annals.md",
+      "LORE/culture/Faith-Culture-Schism.md",
+      "LORE/culture/Values-and-Policy-Scales.md",
+      "LORE/factions/Chaebol-Houses-and-Century-Factions.md",
+      "LORE/factions/Sixteen-States.md",
+      "LORE/technology/Lost-Technology-Lineage.md",
+      "WEB/wiki/public/timeline-overview.json"
+    ]
+  },
+  "competing_definitions": [
+    {
+      "id": "A",
+      "count": 17,
+      "authority": "highest: actual dispatch prompt and ledger line 82",
+      "sources": [
+        ".omo/senpi-task/tasks/st_01a0c2b9.json",
+        ".omo/ulw-loop/01a0adee-4961-7ef4-8ccb-0f7dd2477bf6/ledger.jsonl#82"
+      ]
+    },
+    {
+      "id": "B",
+      "count": 18,
+      "authority": "ledger line 84 steering adds World-Unbinding",
+      "sources": [
+        ".omo/senpi-task/dag/results/dag_7d8b2d05-b7bb-4690-89e1-a7a65846de60/p1-gemini.txt"
+      ]
+    },
+    {
+      "id": "C",
+      "count": 16,
+      "authority": "reference-count of the term 기동권 이탈, not a thesis set",
+      "sources": [
+        ".omo/ulw-loop/01a0adee-4961-7ef4-8ccb-0f7dd2477bf6/ledger.jsonl#84",
+        ".omo/ulw-loop/01a0adee-4961-7ef4-8ccb-0f7dd2477bf6/ledger.jsonl#85"
+      ],
+      "verified_at_head": {"lore_files": 16, "mirror_files": 15},
+      "overlap_with_A": 8,
+      "members_outside_A": [
+        "LORE/README.md",
+        "LORE/World-Narrative-Atlas.md",
+        "LORE/ailments/Ailments.md",
+        "LORE/characters/Cast-Profile-Contract.md",
+        "LORE/culture/Food-Culture.md",
+        "LORE/factions/Chaebol-Houses-and-Century-Factions.md",
+        "LORE/factions/External-Theaters.md"
+      ]
+    }
+  ],
+  "absent_from": [
+    ".omo/plans/wiki-gdd-session-reconciliation-20260920.md",
+    ".omo/recovery/20260920-session-reconciliation/RECONCILIATION.md",
+    ".omo/recovery/20260920-session-reconciliation/GOAL.md",
+    ".omo/recovery/20260920-session-reconciliation/todo-before-reconciliation.md"
+  ],
+  "working_definition_recommendation": "A (17) until the owner confirms; do not drop a file to force 16",
+  "terms_order": ["개막", "창세", "기동권 이탈", "계약"],
+  "documents": [
+    {"n": 1, "path": "LORE/places/World-Map-Construction.md", "head": [0,0,0,2], "f5965149": [0,0,0,2], "patina": {"score": 20.8, "interp": "mostly human"}, "status": "needs edit (thesis unread)", "action": "read 계약 x2 context; sentence-level rewrite: real geography and movement background, no implementation contract"},
+    {"n": 2, "path": "LORE/places/World-and-Subway-Layers.md", "head": [0,0,0,0], "f5965149": [0,0,0,0], "patina": {"score": 10, "interp": "human"}, "status": "PASS candidate", "action": "none; final read only"},
+    {"n": 3, "path": "LORE/factions/Sixteen-States.md", "head": [10,1,1,27], "f5965149": [10,1,1,27], "patina": {"score": 15.4, "interp": "mostly human"}, "status": "foreign-conflict + needs edit", "action": "resolve foreign dirty edit then rewrite era framing"},
+    {"n": 4, "path": "LORE/factions/Conscription-Remnants.md", "head": [2,1,0,1], "f5965149": [0,0,0,1], "patina": {"score": 21.7, "interp": "mostly human"}, "status": "HEAD needs edit; f5965149 PASS", "action": "integrate f5965149"},
+    {"n": 5, "path": "LORE/culture/Faith-Culture-Schism.md", "head": [15,9,2,23], "f5965149": [15,9,1,23], "patina": {"score": 21.3, "interp": "mostly human"}, "status": "foreign-conflict + needs edit", "action": "resolve foreign dirty edit then rewrite"},
+    {"n": 6, "path": "LORE/culture/Oral-Stories.md", "head": [5,8,2,7], "f5965149": [5,8,2,7], "patina": {"score": 0, "interp": "human"}, "status": "needs edit", "action": "replace 기동권 이탈 with prologue causality; judge 창세 per context (in-world oral usage may stay)"},
+    {"n": 7, "path": "LORE/culture/Martial-Paths.md", "head": [1,1,0,8], "f5965149": [1,1,0,8], "patina": {"score": 30, "interp": "mostly human"}, "status": "needs edit (2 hits)", "action": "integrate f5965149 body then judge 2 hits"},
+    {"n": 8, "path": "LORE/culture/Values-and-Policy-Scales.md", "head": [3,0,0,28], "f5965149": [3,0,0,27], "patina": {"score": 14.3, "interp": "human"}, "status": "foreign-conflict + needs edit", "action": "resolve foreign dirty edit then rewrite 개막 x3"},
+    {"n": 9, "path": "LORE/chronology/Scenario-Timeline.md", "head": [13,5,6,20], "f5965149": [13,5,6,20], "patina": {"score": 19, "interp": "mostly human"}, "status": "needs edit", "action": "after prologue anchor; 2126 = game background time only"},
+    {"n": 10, "path": "LORE/chronology/Century-Annals.md", "head": [20,11,3,54], "f5965149": [18,9,1,54], "patina": {"score": 18.4, "interp": "mostly human"}, "status": "foreign-conflict + needs edit", "action": "resolve foreign dirty edit; finish remaining hits on top of f5965149"},
+    {"n": 11, "path": "LORE/technology/Lost-Technology-Lineage.md", "head": [2,1,2,2], "f5965149": [2,1,2,2], "patina": {"score": 20.5, "interp": "mostly human"}, "status": "foreign-conflict + needs edit", "action": "resolve foreign dirty edit (worktree 기동권 이탈=3) then rewrite"},
+    {"n": 12, "path": "LORE/people-and-machines/People-and-Machines.md", "head": [3,2,1,0], "f5965149": [3,2,1,0], "patina": {"score": 26.1, "interp": "mostly human"}, "status": "needs edit", "action": "after prologue anchor"},
+    {"n": 13, "path": "LORE/structures/Structures.md", "head": [1,1,1,5], "f5965149": [1,1,1,5], "patina": {"score": 29.2, "interp": "mostly human"}, "status": "needs edit", "action": "after prologue anchor"},
+    {"n": 14, "path": "LORE/offices/Offices-and-Ranks.md", "head": [6,0,0,4], "f5965149": [6,0,0,4], "patina": {"score": 6.1, "interp": "human"}, "status": "needs edit", "action": "judge 개막 x6; check overlap with office JSON canon pilot 5df68977"},
+    {"n": 15, "path": "LORE/economy/Economy-and-Production.md", "head": [0,0,0,1], "f5965149": [0,0,0,1], "patina": {"score": 15, "interp": "human"}, "status": "PASS candidate", "action": "check 계약 x1 only"},
+    {"n": 16, "path": "LORE/economy/Logistics-and-Infrastructure.md", "head": [0,0,0,0], "f5965149": [0,0,0,0], "patina": {"score": 0, "interp": "human"}, "status": "PASS candidate", "action": "none"},
+    {"n": 17, "path": "LORE/economy/Strongholds-and-Territory.md", "head": [0,0,0,0], "f5965149": [0,0,0,0], "patina": {"score": 12.5, "interp": "human"}, "status": "PASS candidate", "action": "none"},
+    {"n": 18, "path": "LORE/overview/World-Unbinding.md", "in_definition": "B only", "head": [11,5,3,1], "f5965149": [0,0,0,1], "patina": {"score": 11.8, "interp": "human"}, "status": "HEAD needs edit; f5965149 PASS", "action": "integrate f5965149; source of the prologue anchor"}
+  ],
+  "mirror_derived_evidence": {
+    "note": "WEB/wiki-source/world mirrors are generated; never hand-edit",
+    "lines_with_terms_head_vs_f5965149": {
+      "Conscription-Remnants": [2, 0],
+      "World-Unbinding": [15, 0],
+      "Century-Annals": [31, 28],
+      "Faith-Culture-Schism": [22, 21]
+    },
+    "기동권_이탈_files": {"head": {"lore": 16, "mirror": 15}, "f5965149": {"lore": 12, "mirror": 10}}
+  },
+  "patina": {
+    "receipt": "TOOL/tools/wiki/patina-human-receipt.json (exists on f5965149 only)",
+    "totals": {"docs": 138, "human": 119, "mostly_human": 19},
+    "interpretation": "ledger#113: mostly human is acceptable; thesis/TPO first; do not optimize score. Receipt is SHA-bound and goes stale after each edit"
+  },
+  "batches": [
+    {"id": "B0", "name": "baseline integration", "needs": [], "items": ["merge f5965149 onto main", "owner resolves foreign dirty edits in files 3,5,8,10,11 (not touched here)"]},
+    {"id": "B1", "name": "prologue anchor", "needs": ["B0"], "items": [18]},
+    {"id": "B2", "name": "chronology spine", "needs": ["B1"], "items": [9, 10, 6]},
+    {"id": "B3", "name": "factions and culture", "needs": ["B1"], "items": [3, 5, 8, 7, 4]},
+    {"id": "B4", "name": "leaves", "needs": ["B1"], "items": [11, 12, 13, 14]},
+    {"id": "B5", "name": "read-only confirmation", "needs": ["B0"], "items": [1, 2, 15, 16, 17]},
+    {"id": "B6", "name": "regeneration and gates", "needs": ["B2", "B3", "B4", "B5"], "items": ["mount.mjs", "gate.mjs", "regenerate patina receipt", "npm --prefix TOOL/tools test"]}
+  ],
+  "not_verified": [
+    "thesis text of the 17 documents was not read in full; status derives from term counts, ledger and Patina receipt",
+    "in-world usage of 개막/창세 may be legitimate",
+    "no live URL check",
+    "apply_patch tool unavailable in this session; files written with Write; no source edits"
+  ]
+}

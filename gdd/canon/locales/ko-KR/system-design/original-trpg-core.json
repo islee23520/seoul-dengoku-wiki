@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Original-TRPG-Core.md",
+    "lineStart": 1,
+    "lineEnd": 23,
+    "sha256": "4d966cf48fa9dd244ec1f1c5a598791843711419026002a289398e39cbd46608"
+  },
+  "document": {
+    "id": "doc.Original-TRPG-Core",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독자 TRPG 핵심 규칙 체계"
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "《서울:전국》은 외부 규칙표의 작동 차용 없이 자체 인물 체계를 설계한다. 2026-10-12 소유자 결정은 통솔·전략·교섭·운영·통찰·학습·기량·체력의 기본 정수 0–20, 최종 정수 0–100, 별도 행동 숙련 0–99.9를 정한다. 기본 역량 10은 해당 분야 숙련자이며 최종값은 어떤 효과로도 100을 넘지 않는다. 2026-10-08의 단일 기량 0–12 판정 프로필은 과거 설계로 보존하고 새 인물 체계에 자동 적용하지 않는다. 새 판정식·효과 합성·성장 산식은 미확정이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "과거 대항 d10 판정 프로필"
+        }
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2026-10-08 프로필은 행위측과 저항측의 공정한 d10으로 마진=(rA−rB)+(aA−aB)+c를 계산했다. 양수·0·음수를 성과·교착·저항측 성과로 분류했으며 동등 조건의 45·10·45와 기량 2점 우위의 64·8·28 분포를 당시 전수 열거로 확인했다. 이 검증은 옛 프로필에 한정되며 새 8역량·숙련 체계의 판정식이나 확률을 증명하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "과거 프로필 seoul-opposed-d10-0-12-c4-v1의 기량 0–12와 보정 −4–+4는 해당 판본의 기록이다. 이를 새 기본 역량 0–20·최종 0–100·숙련 0–99.9에 환산하거나 범위만 확대하지 않는다. 판정은 동의·소유권·도착·치료·사망의 사실을 자동 생성하지 않으며 권한과 실제 이행은 별도 계약을 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기존 수치 보존"
+        }
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기존 1,022명의 인물 수치 54,467개는 변경 없이 봉인했다. 능력치·기술·CP·보조 수치는 역사적 설정값으로 읽기 전용 보존하며 새 기량으로 자동 환산하지 않는다. 두 역사 판본(부모 핀 ce173686, 작업본 5f34d92d)을 모두 유지하고 발급·화면·API는 명시적 판본 선택을 요구한다. 자동 최신 선택은 없다."
+        }
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "특성·능력·아이콘"
+        }
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "특성은 수행·행동 선택·스트레스·관계에 영향을 주고 사건과 행동으로 획득한다. 핵심 성향은 쉽게 변하지 않지만 경험으로 일부 특성과 상태가 변한다. 특성 목록과 수치 효과는 별도 설계하며 과거 아홉 논리·여덟 시각 범주를 자동 채택하지 않는다. 권한은 능력치가 부여하지 않는다. 아이콘은 서울 자체 문법으로 제작하고 관측 권한이 없는 특성은 표시하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b10",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계산 시트와 계약"
+        }
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "과거 보존 원장·판본 선택·대항 d10·열여덟 영역 시트는 당시 스프레드시트 재계산으로 검증한 기록이다. TOOL/tools/mechanisms/original-trpg의 기존 모듈도 그 판본의 계약이며 새 체계 구현 완료를 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "개별 인물의 8역량·숙련·특성 배정, 생리·피해·성장·효과 산식과 국가별 제도는 별도 저작 대상이다. 양팔·양다리·머리·몸통의 손상 정도와 기능 상태, 질병 진행은 구분한다. 이 문서는 전원 발급이나 구현 완료가 아니라 확정된 범위와 미결 규칙을 기록한다."
+        }
+      ]
+    }
+  ]
+}

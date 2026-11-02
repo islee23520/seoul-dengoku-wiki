@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "personId": "K085",
+      "recipientId": "K057",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-03.json",
+        "anchor": "인물-송별하-p5"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K143",
+      "recipientId": "K115",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-05.json",
+        "anchor": "인물-남휘강-p5"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K168",
+      "recipientId": "K144",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-06.json",
+        "anchor": "인물-조이록-p5"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K244",
+      "recipientId": "K219",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-09.json",
+        "anchor": "인물-류해담-p5"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K270",
+      "recipientId": "K245",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-10.json",
+        "anchor": "인물-윤산호-p5"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K321",
+      "recipientId": "K296",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-12.json",
+        "anchor": "인물-서온결-p5"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K347",
+      "recipientId": "K322",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-13.json",
+        "anchor": "인물-백여울-p5"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K397",
+      "recipientId": "K373",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-15.json",
+        "anchor": "인물-함도겸-p5"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K422",
+      "recipientId": "K398",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-16.json",
+        "anchor": "인물-노세람-p5"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K193",
+      "recipientId": "K169",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-07.json",
+        "anchor": "인물-케빈-화이트-p5"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K1011",
+      "recipientId": "K1012",
+      "sourceRef": {
+        "path": "lore/factions/Diaspora-Corridors.json",
+        "anchor": "인물-린샤오메이-임소매-list1"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K1012",
+      "recipientId": "K1011",
+      "sourceRef": {
+        "path": "lore/factions/Diaspora-Corridors.json",
+        "anchor": "인물-팜반득-phm-vn-c-범반득-list1"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K1013",
+      "recipientId": "K1014",
+      "sourceRef": {
+        "path": "lore/factions/Diaspora-Corridors.json",
+        "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K1015",
+      "recipientId": "K245",
+      "sourceRef": {
+        "path": "lore/factions/Diaspora-Corridors.json",
+        "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+      },
+      "kind": "existing-prose-contact"
+    },
+    {
+      "personId": "K1016",
+      "recipientId": "K1012",
+      "sourceRef": {
+        "path": "lore/factions/Diaspora-Corridors.json",
+        "anchor": "인물-최일석-list1"
+      },
+      "kind": "existing-prose-contact"
+    }
+  ]
+}

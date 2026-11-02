@@ -1,0 +1,1524 @@
+{
+  "schema": "outside-island-occupation.v1",
+  "geometrySource": "public/outside-admin-units.json",
+  "geometrySourceSha256": "c01ef44a0eb00978662ba7a6240ccb1da287fb52abd85104a1758969d391132f",
+  "units": [
+    {
+      "unitId": "2815551000",
+      "components": [
+        {
+          "componentIndex": 0,
+          "name": null,
+          "location": [
+            126.58866,
+            37.49737
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 1,
+          "name": null,
+          "location": [
+            126.48805,
+            37.51646
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 2,
+          "name": null,
+          "location": [
+            126.57594,
+            37.52765
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 3,
+          "name": "영종도",
+          "location": [
+            126.5326,
+            37.49965
+          ],
+          "connection": "mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=206"
+          ],
+          "authority": {
+            "kind": "state",
+            "stateId": "S06",
+            "name": "대한민국정부"
+          }
+        },
+        {
+          "componentIndex": 4,
+          "name": null,
+          "location": [
+            126.57467,
+            37.53545
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 5,
+          "name": null,
+          "location": [
+            126.5749,
+            37.53998
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 6,
+          "name": null,
+          "location": [
+            126.57856,
+            37.54602
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 7,
+          "name": null,
+          "location": [
+            126.58742,
+            37.54721
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        }
+      ],
+      "pathSha256": "b194ef78c900660dd856ebeb2269c1d8aeaf47aeaa55805284a5abe7d3ccd70d"
+    },
+    {
+      "unitId": "2815556000",
+      "components": [
+        {
+          "componentIndex": 0,
+          "name": null,
+          "location": [
+            126.51165,
+            37.35831
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 1,
+          "name": null,
+          "location": [
+            126.44054,
+            37.36099
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 2,
+          "name": "소무의도",
+          "location": [
+            126.44319,
+            37.37259
+          ],
+          "connection": "mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=201"
+          ],
+          "authority": {
+            "kind": "state",
+            "stateId": "S06",
+            "name": "대한민국정부"
+          }
+        },
+        {
+          "componentIndex": 3,
+          "name": null,
+          "location": [
+            126.39305,
+            37.40053
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 4,
+          "name": null,
+          "location": [
+            126.43724,
+            37.40478
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 5,
+          "name": "대무의도",
+          "location": [
+            126.41883,
+            37.38936
+          ],
+          "connection": "mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=200"
+          ],
+          "authority": {
+            "kind": "state",
+            "stateId": "S06",
+            "name": "대한민국정부"
+          }
+        },
+        {
+          "componentIndex": 6,
+          "name": "잠진도",
+          "location": [
+            126.4143,
+            37.41804
+          ],
+          "connection": "mainland-bridge",
+          "sources": [
+            "https://www.ifez.go.kr/main/pst/view.do?pst_id=noti03&pst_sn=269213"
+          ],
+          "authority": {
+            "kind": "state",
+            "stateId": "S06",
+            "name": "대한민국정부"
+          }
+        },
+        {
+          "componentIndex": 7,
+          "name": "용유도",
+          "location": [
+            126.39514,
+            37.44795
+          ],
+          "connection": "mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=206"
+          ],
+          "authority": {
+            "kind": "state",
+            "stateId": "S06",
+            "name": "대한민국정부"
+          }
+        }
+      ],
+      "pathSha256": "8518e2357a1b5bad9a8b6b323c319ad557f1299f498fed6f98e0e0dc9e5d10f5"
+    },
+    {
+      "unitId": "2871041000",
+      "components": [
+        {
+          "componentIndex": 0,
+          "name": null,
+          "location": [
+            126.30016,
+            37.67512
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 1,
+          "name": null,
+          "location": [
+            126.25751,
+            37.71369
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 2,
+          "name": null,
+          "location": [
+            126.21005,
+            37.72092
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 3,
+          "name": "서검도",
+          "location": [
+            126.23288,
+            37.72485
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=169"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 4,
+          "name": "미법도",
+          "location": [
+            126.26305,
+            37.73104
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=168"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 5,
+          "name": null,
+          "location": [
+            126.28253,
+            37.74702
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 6,
+          "name": "석모도",
+          "location": [
+            126.32367,
+            37.69786
+          ],
+          "connection": "mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=167"
+          ],
+          "authority": {
+            "kind": "state",
+            "stateId": "S06",
+            "name": "대한민국정부"
+          }
+        }
+      ],
+      "pathSha256": "6173db90c4c920443816159cfc6e6cb73e6def2dff4a743aa9b15f33bc362b98"
+    },
+    {
+      "unitId": "2871042000",
+      "components": [
+        {
+          "componentIndex": 0,
+          "name": null,
+          "location": [
+            126.27055,
+            37.62024
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 1,
+          "name": null,
+          "location": [
+            126.21563,
+            37.63055
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 2,
+          "name": "아차도",
+          "location": [
+            126.27143,
+            37.64413
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=171"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 3,
+          "name": "주문도",
+          "location": [
+            126.24282,
+            37.63952
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=170"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 4,
+          "name": null,
+          "location": [
+            126.23192,
+            37.66199
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 5,
+          "name": "볼음도",
+          "location": [
+            126.18287,
+            37.6716
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=172"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 6,
+          "name": null,
+          "location": [
+            126.20113,
+            37.6892
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 7,
+          "name": "말도",
+          "location": [
+            126.13306,
+            37.68719
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=204"
+          ],
+          "authority": null
+        }
+      ],
+      "pathSha256": "0e1b6c655d04579f05ea4ceb4f8b08244489a7ac42eb487a3ed60630bd35f88c"
+    },
+    {
+      "unitId": "2872031000",
+      "components": [
+        {
+          "componentIndex": 0,
+          "name": null,
+          "location": [
+            126.32943,
+            37.50145
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 1,
+          "name": null,
+          "location": [
+            126.3054,
+            37.50175
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 2,
+          "name": null,
+          "location": [
+            126.32273,
+            37.5116
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 3,
+          "name": null,
+          "location": [
+            126.42566,
+            37.51754
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 4,
+          "name": null,
+          "location": [
+            126.41969,
+            37.51905
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 5,
+          "name": null,
+          "location": [
+            126.39642,
+            37.53369
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 6,
+          "name": "모도",
+          "location": [
+            126.40812,
+            37.5333
+          ],
+          "connection": "mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=176",
+            "https://www.chosun.com/national/regional/2026/07/14/SARDFXM27VGMFKX6BPK3NIZCN4/"
+          ],
+          "authority": {
+            "kind": "state",
+            "stateId": "S06",
+            "name": "대한민국정부"
+          }
+        },
+        {
+          "componentIndex": 7,
+          "name": "신도",
+          "location": [
+            126.45151,
+            37.52774
+          ],
+          "connection": "mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=176",
+            "https://www.chosun.com/national/regional/2026/07/14/SARDFXM27VGMFKX6BPK3NIZCN4/"
+          ],
+          "authority": {
+            "kind": "state",
+            "stateId": "S06",
+            "name": "대한민국정부"
+          }
+        },
+        {
+          "componentIndex": 8,
+          "name": "시도",
+          "location": [
+            126.42854,
+            37.53502
+          ],
+          "connection": "mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=176",
+            "https://www.chosun.com/national/regional/2026/07/14/SARDFXM27VGMFKX6BPK3NIZCN4/"
+          ],
+          "authority": {
+            "kind": "state",
+            "stateId": "S06",
+            "name": "대한민국정부"
+          }
+        },
+        {
+          "componentIndex": 9,
+          "name": null,
+          "location": [
+            126.27045,
+            37.54641
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 10,
+          "name": null,
+          "location": [
+            126.26219,
+            37.55413
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 11,
+          "name": "장봉도",
+          "location": [
+            126.34585,
+            37.54125
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=179"
+          ],
+          "authority": null
+        }
+      ],
+      "pathSha256": "c1c6dee09e64385424cd36bbdf684926a21de1b199dd433303485c69f94d219a"
+    },
+    {
+      "unitId": "2872033000",
+      "components": [
+        {
+          "componentIndex": 0,
+          "name": "백령도",
+          "location": [
+            124.67842,
+            37.94895
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://www.icpa.or.kr/icferry/main.do?menuKey=597"
+          ],
+          "authority": null
+        }
+      ],
+      "pathSha256": "72dbc07db1c2c78d0152e59edf6b0c44cd428298fe1778011db24a1513f554f1"
+    },
+    {
+      "unitId": "2872034000",
+      "components": [
+        {
+          "componentIndex": 0,
+          "name": "소청도",
+          "location": [
+            124.74969,
+            37.7689
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://www.icpa.or.kr/icferry/main.do?menuKey=597"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 1,
+          "name": null,
+          "location": [
+            124.65882,
+            37.79835
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 2,
+          "name": "대청도",
+          "location": [
+            124.69562,
+            37.8241
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://www.icpa.or.kr/icferry/main.do?menuKey=597"
+          ],
+          "authority": null
+        }
+      ],
+      "pathSha256": "db23a843847b4af5e7f2a74a19dff5c3f5b37e515c5a0b1d56b2fb177c242abe"
+    },
+    {
+      "unitId": "2872035000",
+      "components": [
+        {
+          "componentIndex": 0,
+          "name": "울도",
+          "location": [
+            125.99685,
+            37.02945
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=194"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 1,
+          "name": null,
+          "location": [
+            126.01279,
+            37.05976
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 2,
+          "name": null,
+          "location": [
+            126.00954,
+            37.06861
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 3,
+          "name": "지도",
+          "location": [
+            126.01666,
+            37.07095
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=195"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 4,
+          "name": null,
+          "location": [
+            126.00763,
+            37.08046
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 5,
+          "name": "백아도",
+          "location": [
+            125.95481,
+            37.0804
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=192"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 6,
+          "name": null,
+          "location": [
+            125.91367,
+            37.10188
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 7,
+          "name": null,
+          "location": [
+            125.914,
+            37.11338
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 8,
+          "name": null,
+          "location": [
+            125.90788,
+            37.11909
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 9,
+          "name": null,
+          "location": [
+            125.91584,
+            37.12078
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 10,
+          "name": null,
+          "location": [
+            125.8934,
+            37.1371
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 11,
+          "name": null,
+          "location": [
+            125.90146,
+            37.13585
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 12,
+          "name": "굴업도",
+          "location": [
+            125.87587,
+            37.17343
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=193"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 13,
+          "name": null,
+          "location": [
+            126.11571,
+            37.18545
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 14,
+          "name": "문갑도",
+          "location": [
+            126.09967,
+            37.17679
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=191"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 15,
+          "name": null,
+          "location": [
+            125.97318,
+            37.18894
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 16,
+          "name": null,
+          "location": [
+            126.11119,
+            37.19772
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 17,
+          "name": null,
+          "location": [
+            126.10454,
+            37.20707
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 18,
+          "name": null,
+          "location": [
+            126.19135,
+            37.21742
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 19,
+          "name": null,
+          "location": [
+            126.18651,
+            37.22001
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 20,
+          "name": "소야도",
+          "location": [
+            126.17539,
+            37.21118
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=190"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 21,
+          "name": null,
+          "location": [
+            126.08916,
+            37.26373
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 22,
+          "name": "덕적도",
+          "location": [
+            126.12484,
+            37.23498
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=189"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 23,
+          "name": null,
+          "location": [
+            126.08679,
+            37.28276
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        }
+      ],
+      "pathSha256": "f79a3ae0769015aa32f58e9de37687c51a77fdd50af688f04a4c602ff536d827"
+    },
+    {
+      "unitId": "2872036000",
+      "components": [
+        {
+          "componentIndex": 0,
+          "name": null,
+          "location": [
+            126.3677,
+            37.18785
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 1,
+          "name": null,
+          "location": [
+            126.36931,
+            37.19281
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 2,
+          "name": null,
+          "location": [
+            126.36132,
+            37.20355
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 3,
+          "name": null,
+          "location": [
+            126.4373,
+            37.2079
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 4,
+          "name": null,
+          "location": [
+            126.3647,
+            37.2116
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 5,
+          "name": null,
+          "location": [
+            126.3928,
+            37.21924
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 6,
+          "name": null,
+          "location": [
+            126.386,
+            37.22125
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 7,
+          "name": "측도",
+          "location": [
+            126.51519,
+            37.23126
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=175"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 8,
+          "name": null,
+          "location": [
+            126.39258,
+            37.24283
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 9,
+          "name": "선재도",
+          "location": [
+            126.52646,
+            37.24581
+          ],
+          "connection": "mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=174"
+          ],
+          "authority": {
+            "kind": "state",
+            "stateId": "S06",
+            "name": "대한민국정부"
+          }
+        },
+        {
+          "componentIndex": 10,
+          "name": "영흥도",
+          "location": [
+            126.46475,
+            37.25573
+          ],
+          "connection": "mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=173"
+          ],
+          "authority": {
+            "kind": "state",
+            "stateId": "S06",
+            "name": "대한민국정부"
+          }
+        }
+      ],
+      "pathSha256": "e62e488a674b9df3d04250c1e2815ddbea30ecc8affe10266f229df3c5cc6d56"
+    },
+    {
+      "unitId": "2872037000",
+      "components": [
+        {
+          "componentIndex": 0,
+          "name": "선갑도",
+          "location": [
+            126.0749,
+            37.09594
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=205"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 1,
+          "name": null,
+          "location": [
+            126.27319,
+            37.12632
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 2,
+          "name": null,
+          "location": [
+            126.30102,
+            37.1281
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 3,
+          "name": null,
+          "location": [
+            126.26768,
+            37.13397
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 4,
+          "name": null,
+          "location": [
+            126.30456,
+            37.13578
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 5,
+          "name": null,
+          "location": [
+            126.27477,
+            37.14556
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 6,
+          "name": null,
+          "location": [
+            126.32138,
+            37.15274
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 7,
+          "name": null,
+          "location": [
+            126.28727,
+            37.17329
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 8,
+          "name": "승봉도",
+          "location": [
+            126.30792,
+            37.16711
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=199"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 9,
+          "name": "대이작도",
+          "location": [
+            126.26417,
+            37.16938
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=197"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 10,
+          "name": null,
+          "location": [
+            126.29658,
+            37.18493
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 11,
+          "name": "소이작도",
+          "location": [
+            126.23163,
+            37.18271
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=198"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 12,
+          "name": null,
+          "location": [
+            126.21333,
+            37.19168
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 13,
+          "name": null,
+          "location": [
+            126.31509,
+            37.21734
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 14,
+          "name": "자월도",
+          "location": [
+            126.31351,
+            37.25823
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=196"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 15,
+          "name": null,
+          "location": [
+            126.27391,
+            37.31658
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 16,
+          "name": null,
+          "location": [
+            126.26694,
+            37.32877
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        }
+      ],
+      "pathSha256": "1f968c9c8f403c42864787d814ff7fed242129fde83ff7218149e00170fc03f9"
+    },
+    {
+      "unitId": "2872038000",
+      "components": [
+        {
+          "componentIndex": 0,
+          "name": "소연평도",
+          "location": [
+            125.71339,
+            37.60976
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=185"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 1,
+          "name": null,
+          "location": [
+            125.68101,
+            37.6359
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 2,
+          "name": null,
+          "location": [
+            125.7175,
+            37.64552
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 3,
+          "name": "대연평도",
+          "location": [
+            125.69673,
+            37.66577
+          ],
+          "connection": "no-mainland-bridge",
+          "sources": [
+            "https://isum.incheon.go.kr/isleInfo.do?key=2407020003&isle=184"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 4,
+          "name": null,
+          "location": [
+            125.69361,
+            37.70776
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 5,
+          "name": null,
+          "location": [
+            125.65384,
+            37.71603
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 6,
+          "name": null,
+          "location": [
+            125.64943,
+            37.7373
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 7,
+          "name": null,
+          "location": [
+            125.64606,
+            37.74676
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        },
+        {
+          "componentIndex": 8,
+          "name": null,
+          "location": [
+            125.64378,
+            37.74978
+          ],
+          "connection": "unknown",
+          "sources": [
+            "https://github.com/vuski/admdongkor/tree/master/ver20260701"
+          ],
+          "authority": null
+        }
+      ],
+      "pathSha256": "84733e520d86fa9edb94e666eb9f5b8766491f64f51cbb12797d70138bcb5b11"
+    }
+  ]
+}

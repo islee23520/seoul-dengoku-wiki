@@ -1,0 +1,95 @@
+[PASS] cmd /c npm --prefix tools test
+dex are not emitted
+PASS  Cast-Index 게시 rows still emit their fragment page
+PASS  strategic pages keep their calculable contract
+
+37 passed, 0 failed
+temp fixtures removed: C:\Users\oliver\AppData\Local\Temp\janseon-wiki-test-yuhL9z
+wiki build contract passed
+unity architecture wiki contract passed
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage foundation --atlas docs/game-logic/World-Narrative-Atlas.md
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage houses --atlas docs/game-logic/World-Narrative-Atlas.md
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage theaters --atlas docs/game-logic/World-Narrative-Atlas.md
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage synthetics --atlas docs/game-logic/World-Narrative-Atlas.md
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage story-manifest --atlas docs/game-logic/World-Narrative-Atlas.md
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage monster-manifest --atlas docs/game-logic/World-Narrative-Atlas.md
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage seeds --atlas docs/game-logic/World-Narrative-Atlas.md
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage story-batch --batch B047 --atlas docs/game-logic/World-Narrative-Atlas.md
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage monster-batch --batch M040 --atlas docs/game-logic/World-Narrative-Atlas.md
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage group-dossiers --groups G01-G06,G07-G12,G13-G18,G19-G24,G25-G27 --atlas docs/game-logic/World-Narrative-Atlas.md
+
+[PASS] node --test tools/wiki/test-world-atlas.mjs
+company-aliases manifest When real names enter canon Then every real name has a rename target [90m(0.4786ms)[39m[39m
+[34mℹ tests 70[39m
+[34mℹ suites 0[39m
+[34mℹ pass 70[39m
+[34mℹ fail 0[39m
+[34mℹ cancelled 0[39m
+[34mℹ skipped 0[39m
+[34mℹ todo 0[39m
+[34mℹ duration_ms 13593.046[39m
+
+[PASS] node --test tools/wiki/test-verify-cast.mjs
+ned C:\Users\oliver\AppData\Local\Temp\verify-cast-UlwBJM
+cleaned C:\Users\oliver\AppData\Local\Temp\verify-cast-cFne0s
+[34mℹ tests 21[39m
+[34mℹ suites 0[39m
+[34mℹ pass 21[39m
+[34mℹ fail 0[39m
+[34mℹ cancelled 0[39m
+[34mℹ skipped 0[39m
+[34mℹ todo 0[39m
+[34mℹ duration_ms 1419.3017[39m
+
+[PASS] node tools/wiki/test-strategy-formulas.mjs
+strategy formula contract passed cases=10
+
+[PASS] node --test tools/wiki/test-monster-batches-M021-M030.mjs
+위 밖 Monster-Batch 파일을 거부한다 [90m(21.1933ms)[39m[39m
+[32m✔ 잘못된 CLI 인자는 nonzero clean error [90m(124.1544ms)[39m[39m
+[34mℹ tests 14[39m
+[34mℹ suites 0[39m
+[34mℹ pass 14[39m
+[34mℹ fail 0[39m
+[34mℹ cancelled 0[39m
+[34mℹ skipped 0[39m
+[34mℹ todo 0[39m
+[34mℹ duration_ms 290.7309[39m
+
+[PASS] node tools/wiki/materialize-world-atlas.mjs --check --atlas docs/game-logic/World-Narrative-Atlas.md --out docs/game-logic
+2d98cfa17f58e8b2bb3d4c17d8e420102023cf
+house-influence-isometric.svg c3fa6f16d0c3ed25a469f5d0608da08591e40536972d0fc87908b034f6855c16
+hostile-ecology-isometric.svg bc8bd8cad00d68ed098958838f4da7584dfc0404cd66dfeb39d186350b393022
+atlas ffecb908fb8d982df846a464a5314dde1fbddeaaf44b3ab23e9341b78644e044
+
+[PASS] node tools/check-lfs-hydration.mjs
+{
+  "filesScanned": 2593,
+  "pointers": [],
+  "errors": []
+}
+
+[PASS] node tools/policy/check-repo-delivery-policy.mjs
+: "exactly one current delivery rule",
+      "pass": true,
+      "detail": "no competing delivery rule"
+    },
+    {
+      "name": "live origin matches ADR record",
+      "pass": true,
+      "detail": "https://github.com/islee23520/seoul-kenshi.git"
+    }
+  ],
+  "result": "PASS",
+  "failures": []
+}

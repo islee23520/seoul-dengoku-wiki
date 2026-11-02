@@ -270,7 +270,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   if (path.includes('GAME-REFERENCE/ui-ux-refs')) return '/ui-ux-refs/'
   if (path.includes('.omo/decisions/issue-101')) return '/ui-ux-refs/'
   if (path.includes('name-pools/')) return `${wikiBlob}lore/name-pools/${basename(path)}`
-  if (path.includes('GDD/proposals/')) return `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/locales/ko-KR/proposals/${basename(path, '.md').toLowerCase()}.json`
+  if (path.includes('GDD/proposals/')) return `https://github.com/islee23520/seoul-dengoku-wiki/blob/main/gdd/canon/locales/ko-KR/proposals/${basename(path, '.md').toLowerCase()}.json`
   if (path.includes('CONTRIBUTING.md')) return `${githubBlob}CONTRIBUTING.md`
   return `${githubBlob}${path.replace(/^\.\.\//g, '')}`
  }

@@ -1,0 +1,1759 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "rules/Rules-Battle.md",
+    "lineStart": 1,
+    "lineEnd": 252,
+    "sha256": "4f6e6bafbf418edc502de22ae9c65352823331e9b4aae0635b2c73d72e8bd122"
+  },
+  "document": {
+    "id": "doc.Rules-Battle",
+    "blockIds": [
+      "source.b1",
+      "overhaul.20261027.heading",
+      "overhaul.20261027.disposition",
+      "overhaul.20261027.chapter",
+      "sp1.20261003.override",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "source.b27",
+      "source.b28",
+      "source.b29",
+      "source.b30",
+      "source.b31",
+      "source.b32",
+      "source.b33",
+      "source.b34",
+      "source.b35",
+      "source.b36",
+      "source.b37",
+      "source.b38",
+      "source.b39",
+      "source.b40",
+      "source.b41",
+      "source.b42",
+      "source.b43",
+      "source.b44",
+      "source.b45",
+      "source.b46",
+      "source.b47",
+      "source.b48",
+      "source.b49",
+      "r2.rbattle-23",
+      "r2.rbattle-23.body",
+      "r3.rbattle-24",
+      "r3.rbattle-24.body",
+      "source.b50",
+      "source.b51",
+      "source.b52",
+      "source.b53",
+      "source.b54",
+      "source.b55",
+      "source.b56",
+      "source.b57",
+      "source.b58",
+      "source.b59",
+      "source.b60",
+      "source.b61",
+      "source.b62",
+      "source.b63",
+      "source.b64",
+      "source.b65",
+      "source.b66",
+      "source.b67",
+      "source.b68",
+      "source.b69",
+      "source.b70",
+      "sp1.20261003.commander"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "개인 판정 전투 규칙"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이관 판정 — 보존 조항과 역사 범위"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.disposition",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "판정: 삭제·전면 흡수하지 않고 기존 상세 조항을 보존한다. SP-1.0.0 override와 결정 12–15 마커는 유지한다. 공유 세계·최대 참가자·동시 턴·온라인 대행 부분은 역사 범위이며 현행 실행 전제가 아니다. 개편 장은 근거 계층을 소유하고 이 문서는 기존 승인 세부의 추적 원장이다. 충돌 시 SP-1.0.0 및 최신 제품 권한을 따른다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.chapter",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "주 대응 장",
+          "targetDocumentId": "doc.War-and-Personal-Resolution"
+        }
+      ]
+    },
+    {
+      "id": "sp1.20261003.override",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 제품 기획은 SP-1.0.0 싱글플레이 상세 계약을 우선한다. 한 플레이어·한 본체·NPC·단일 캠페인 저장을 사용하며 이 문서의 공유 세계·최대 참가자·호스트·접속 종료·점유·온라인 대행 조항은 역사로 보존하고 현재 실행 전제로 사용하지 않는다. 실제 이동·현장 참가·권한·단일 정산·저장 오류 계약은 유지한다. 충돌 시 [싱글플레이 상세 기획 SP-1.0.0](../system-design/Singleplayer-Design-SP-1-0-0.md)의 대체 범위를 따른다. 구현 완료나 기존 저장 자동 변환을 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "blockQuote",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "출처: [전투](Personal-Resolution-Battle.md), [전략·전투 왕복](Strategy-Battle-Roundtrip.md), [전쟁·공성](Warfare-and-Sieges.md) — 현재 목표와 2026-09-07 카드 전투 POC 기록을 구분한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "개요"
+        }
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "한 판은 참가자, 전장, 목표, 보급, 합법 퇴로와 증원 조건이 확정된 닫힌 전투 컨텍스트로 시작해 불변 `ResultId` 하나로 끝난다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투 결과는 병사 한 사람 한 사람의 공격 판정으로 정한다. 플레이어는 교전 전에 영웅 액터와 병사 분대에 지시하고, 근접 교전에 들어간 부대에는 새 명령을 내리지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "병사 분대 정원은 지휘관의 개인 능력치·국가 수준·정착지 수준에 따라 달라지고 공통 상한은 없다. 입력 정의와 산식은 미정이며 영웅은 병사 수에 포함하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투는 3D 전장에서 3D 자유 카메라로 보며 일시정지와 감속·배속은 없다(결정 12). 개인 판정 전투는 2026-09-28 소유자 결정 13이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "조항"
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-01 한 판의 경계"
+        }
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "한 판은 참가자, 전장, 목표, 보급, 합법 퇴로와 증원 조건이 확정된 전투 컨텍스트로 시작한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "끝은 일반 승리·패배, 명령 철수, 사기 패주, 수락된 항복 가운데 하나를 담은 불변 `ResultId` 하나다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "캠페인은 같은 `ResultId`를 정확히 한 번만 정산한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-02 공간과 카메라"
+        }
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "전투는 3D 전장에서 3D 자유 카메라로 본다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "플레이어는 전장을 팬·오빗·줌으로 살피며 특정 각도, 높이, 시야각 수치를 새로 고정하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "상단 전장 도식은 위치와 상호작용을 설명하는 문서용 청사진이지 실제 게임 렌더 화면이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b10",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-03 자동 전투·수동 전투와 시간"
+        }
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "조우가 전투로 이어지면 자동 전투와 수동 전투 가운데 하나를 고른다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자동 전투는 전장 없이 결과를 계산하고, 수동 전투는 3D 전장에서 진행한다. 두 방식은 같은 판정 규칙을 쓴다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "시뮬레이션은 고정된 규칙 간격으로 진행하되 새 실시간 이동·속도 수치는 이 문서에서 만들지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "일시정지와 감속·배속은 두지 않는다. 전투는 이 파티의 닫힌 세션이며 공유 캠페인 월드, 세계 시간과 다른 파티를 멈추지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-04 명령 단위"
+        }
+      ]
+    },
+    {
+      "id": "source.b13",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "명령 단위는 이름 있는 영웅 액터와 일반 병사 분대다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "교전 전에는 영웅 액터나 병사 분대를 선택해 이동, 공격 대상, 사격, 매복 가운데 하나를 지시한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "근접 교전에 들어간 영웅 액터나 병사 분대는 그 교전이 끝날 때까지 새 명령을 받지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후퇴는 분대 명령이 아니라 전투 전체에 내리는 명령이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "영웅에게도 부대 명령을 내리되 이동·공격·회피 연계 같은 직접 액션 조작은 하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "선택하지 않은 상태에서는 명령을 확정할 수 없다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b14",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-05 배치와 진형"
+        }
+      ]
+    },
+    {
+      "id": "source.b15",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "전투 전에 분대의 배치와 진형을 정한다. 진형 이름과 효과 수치는 이 문서에서 정하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "명령 전에 경로와 목표를 미리 보며, 확정한 새 지시는 교전 전인 부대의 현재 지시를 교체한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "여러 지시를 쌓는 큐, 웨이포인트 연쇄와 순서 편집은 두지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b16",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-06 참가 부대"
+        }
+      ]
+    },
+    {
+      "id": "source.b17",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "캠페인 파티 가운데 실제로 전투에 참가한 이름 있는 영웅은 각각 별도 전술 액터가 되고, 일반 병력은 병사 분대로 편성한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "병사 분대 하나의 정원은 지휘관의 개인 능력치·국가 수준·정착지 수준으로 결정하며 공통 상한은 없다. 산식은 미정이다. 영웅은 병사 수와 별도다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "군단 전체 상한, 분대 최소 인원, 분대 수, 영웅 수는 정하지 않으며, 증원은 전투 컨텍스트에 확정된 조건으로만 들어온다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b18",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-07 영웅과 병사 분대"
+        }
+      ]
+    },
+    {
+      "id": "source.b19",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "영웅 액터의 생사, 부상, 장비와 신병 결과는 캠페인이 소유하는 인물 ID에 남긴다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "병사 분대와 영웅 액터는 전장에서 서로 다른 명령 대상이며, 영웅을 병사 분대의 인원으로 합치지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "영웅 분리 규칙을 개별 영웅의 이동·공격·회피 연속 입력이나 초인적 직접 액션으로 바꾸지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b20",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-08 전투 사실"
+        }
+      ]
+    },
+    {
+      "id": "source.b21",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "전투 결과는 종료 상태, 흐른 시간, 인물의 생사, 새 부상, 장비 소모, 전리품, 파티의 퇴로와 거점 통제 변화를 기록한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투 화면의 표현이 이 캠페인 사실을 대신하지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b22",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-09 신병 처리"
+        }
+      ]
+    },
+    {
+      "id": "source.b23",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "포획은 전투 종료 상태가 아니라 전투 뒤 인물별 신병 처리에서 생기는 구금 결과다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "항복자, 패주자, 부상자나 생존자를 자동으로 모두 포로로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "새 포획 확률, 수용 정원이나 수치를 만들지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b24",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-10 부대 명령"
+        }
+      ]
+    },
+    {
+      "id": "source.b25",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "부대 명령은 선택한 영웅 액터 또는 병사 분대와 이동·공격 대상·사격·매복 가운데 하나를 명시한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "확인한 새 명령은 교전 전인 해당 부대의 현재 지시를 교체한다. 근접 교전 중인 부대는 명령을 받지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "카드 자원, 덱, 무작위 드로우, 영웅 직접 액션 조작과 영웅 능력 자원은 목표 범위가 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b26",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-11 수락 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b27",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "확정한 지시만 결정론적 수락 순서와 함께 명령 기록에 들어간다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "취소한 미리보기는 기록도 상태도 바꾸지 않고 기존 지시를 유지한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "같은 부대에 나중에 확정한 지시는 앞선 현재 지시를 교체하며 별도 명령 큐를 만들지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b28",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-12 교전 중 명령 잠금"
+        }
+      ]
+    },
+    {
+      "id": "source.b29",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "근접 교전에 들어간 부대의 명령 잠금은 그 교전이 끝나면 풀린다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "잠긴 부대에 대한 미리보기와 확정은 거절되며 상태와 수락 기록을 바꾸지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b30",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-13 미리보기와 확정"
+        }
+      ]
+    },
+    {
+      "id": "source.b31",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "미리보기와 확정은 같은 불변 전투 컨텍스트로 유효성을 검사한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미리보기는 상태를 바꾸지 않으며, 확정 시 다시 검사해 한 번만 반영한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b32",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-14 사기"
+        }
+      ]
+    },
+    {
+      "id": "source.b33",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "분대마다 사기를 보여 준다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "부상, 아군의 사망·기절·도주와 지휘관에게 일어난 일은 공포 검사의 계기가 된다. 새 인물 체계에서 공포 판정식·도주 문턱·통솔의 기여·기분과 특성의 효과는 미확정이며 과거 0–12 대항 d10 프로필을 자동 적용하지 않는다. 확인된 사기 패주와 원인은 전투 결과에 기록한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "사기는 전투 종료 원인과 손실에 영향을 줄 수 있지만 새 목표의 임계 수치는 이 문서에서 만들지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "사기가 무너져 지휘 통제를 잃은 이탈은 사기 패주로 기록한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b34",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-15 철수·패주·항복"
+        }
+      ]
+    },
+    {
+      "id": "source.b35",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "명령 철수는 플레이어가 전투 전체에 지시하고 확인하며 철수 중에도 지휘가 유지되는 종료다. `LegalFallback`을 통과한 경로가 있어야 성립한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "사기 패주는 결속 붕괴로 통제를 잃은 비자발 이탈이며 합법 경로를 고르는 명령 철수와 구분한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "항복은 한쪽이 제안하고 상대가 받아들여야 성립한다. 퇴로 봉쇄나 `LegalFallback` 실패만으로 항복 선택을 없애지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b36",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-16 결정론"
+        }
+      ]
+    },
+    {
+      "id": "source.b37",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "전장 생성, 병사별 공격 판정, 피해, 사기와 증원은 전투 시드, 불변 컨텍스트와 수락된 명령 기록으로 재현한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동일한 컨텍스트와 수락된 명령 기록이 다른 결과를 내면 검증 실패다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b38",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-17 규칙 버전"
+        }
+      ]
+    },
+    {
+      "id": "source.b39",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "전투 컨텍스트와 결과에는 규칙과 콘텐츠 버전을 기록한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "지원하지 않는 버전은 명확한 오류로 거부하며 원본 기록을 자동 변환하거나 삭제하지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b40",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-18 정산"
+        }
+      ]
+    },
+    {
+      "id": "source.b41",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "`ResultId`와 전투 사실은 단 한 번 확정한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "이미 처리한 결과가 다시 들어오면 기존 영수증만 돌려주고, 같은 전투에 충돌하는 결과가 들어오면 세계를 바꾸지 않고 복구 오류를 낸다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "정산은 귀환 명령이 아니며 결과 반영 뒤 원정을 계속할 수 있다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b42",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-19 리셋 범위"
+        }
+      ]
+    },
+    {
+      "id": "source.b43",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "전투 초기화는 정산 전에 현재 닫힌 전투 세션만 시작 상태로 되돌린다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "캠페인 진행과 이미 반영한 결과를 되돌리는 수단으로 쓰지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b44",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-20 표현과 코어"
+        }
+      ]
+    },
+    {
+      "id": "source.b45",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "UI의 시각 이동은 Core의 논리 상태를 따라 표현한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "화면에서만 부대를 움직여 Core의 이동 판정이나 수락된 명령을 대신하지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b46",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-21 증원"
+        }
+      ]
+    },
+    {
+      "id": "source.b47",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "증원은 전투 시작 시 확정된 증원 조건에 따라 별도 전력으로 진입한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "바깥 캠페인 상태를 전투 도중 다시 조회해 증원을 바꾸지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b48",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-22 속도 수치"
+        }
+      ]
+    },
+    {
+      "id": "source.b49",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "현재 목표에는 실시간 이동 틱, 공격 쿨다운, 전투 시간 상한이나 카드 재충전 수치를 새로 정하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "그 수치들은 아래 2026-09-07 카드 전투 POC 기록에만 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rbattle-23",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-23 유파 기법"
+        }
+      ]
+    },
+    {
+      "id": "r2.rbattle-23.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "인물의 유파 전수는 그 부대가 확정된 부대 명령을 수행하는 방식으로만 전투에 드러난다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "유파가 있는 영웅도 같은 부대 명령을 받으며, 유파 기법은 새 명령 종류, 명령 큐, 카드나 능력 자원을 만들지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "병사 분대의 가변 정원은 유파 전수 인원의 정원을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기법은 일반 승리·패배, 명령 철수, 사기 패주, 수락된 항복의 종료 판정을 덮어쓰지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r3.rbattle-24",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-24 개인 공격 판정"
+        }
+      ]
+    },
+    {
+      "id": "r3.rbattle-24.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "전투 결과는 병사 한 사람 한 사람의 공격 판정으로 정한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "판정에는 공격자의 무기, 방어자의 방어구, 두 사람의 전투 기술 차이, 몸 상태와 기분이 들어간다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기본 개인 능력·기술·공격 3d6·능동 방어·DR·피해 유형·부상 기준을 출발점으로, 서울:전국 독자 계산식을 개인 명중·방어·피해·부상, 지휘·보급·전장 상황 보정, 부대 집계 판정 세 범위에 모두 설계한다(소유자 확정). 실제 함수·계수·적용 채널은 미정이며 [개인 판정 전투](Personal-Resolution-Battle.md)의 단일 결과 원장과 중복 피해 금지를 따른다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "플레이어는 교전 전에 편성·장비·지휘관과 교전 여부를 정하고 근접 교전에 들어간 부대는 그 교전이 끝날 때까지 명령을 받지 않는다. 진행·화면과 개인 판정의 규칙을 구분한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "부상·출혈·감염, 기절한 사람의 포획, 항복과 도주는 인물 신병 결과로 캠페인에 이어진다. 새 확률·정원 수치는 만들지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b50",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "판정 순서"
+        }
+      ]
+    },
+    {
+      "id": "source.b51",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "참가자, 전장, 목표, 보급, 합법 퇴로, 증원 조건, 전투 시드와 규칙·콘텐츠 버전을 불변 컨텍스트로 확정한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실제 참가 영웅은 별도 전술 액터로 두고 일반 병력은 해당 지휘관·국가·정착지의 가변 정원에 맞는 분대로 편성한 뒤 전투 전 배치와 진형을 정한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자동 전투와 수동 전투 가운데 하나를 고른다. 두 방식은 같은 판정 규칙을 쓴다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "수동 전투에서는 교전 전인 영웅 액터나 병사 분대를 선택한 경우에만 이동·공격 대상·사격·매복 명령을 열고, 후퇴는 전투 전체 명령으로 연다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "경로·목표·도착 진형 미리보기는 상태를 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "확정 때 같은 컨텍스트로 다시 검사하고, 새 지시로 교전 전 부대의 현재 지시를 교체해 수락 순서를 기록한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "근접 교전에 들어간 부대는 그 교전이 끝날 때까지 새 명령을 받지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전장 생성, 병사별 공격 판정, 피해, 사기와 증원을 시드와 수락된 명령 기록으로 진행한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "종료 원인을 일반 승리·패배, 명령 철수, 사기 패주, 수락된 항복 가운데 하나로 구분한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "포획 여부는 종료 상태와 분리해 인물별 신병 결과에 기록한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투 사실과 불변 `ResultId`를 한 번 발행하고 캠페인이 정확히 한 번 정산한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "정산 뒤 원정을 계속하거나 귀환·정착·정복·방랑·교역 가운데 다음 결말을 고른다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b52",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "금지 사항"
+        }
+      ]
+    },
+    {
+      "id": "source.b53",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "개별 영웅의 이동·공격·회피 연계나 콤보를 직접 조작하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "영웅을 병사 분대 인원에 포함하거나 미정 정원 산식을 임의의 고정 인원으로 대신하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "군단 전체 상한, 분대 최소 인원, 분대 수, 영웅 수를 새로 정하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "영웅 능력 자원이나 별도 특수 밸런스를 만드는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "카드, 덱, 무작위 드로우, 자원 소비나 재충전을 현재 목표 명령으로 두는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "선택하지 않은 상태에서 명령을 확정하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "명령 큐, 웨이포인트 연쇄, 순서 편집, 감속·배속을 추가하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미리보기나 취소가 상태 또는 수락 기록을 바꾸는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투에 일시정지를 두는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`LegalFallback` 실패를 질서 있는 명령 철수로 처리하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "퇴로 봉쇄만으로 항복 선택을 없애는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "명령 철수, 사기 패주, 수락된 항복과 포획을 같은 상태로 처리하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "항복자·패주자·부상자·생존자를 자동 포획하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투 도중 캠페인 상태를 다시 조회하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "UI 표현으로 Core 판정을 대신하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투 리셋으로 캠페인 진행이나 이미 반영한 결과를 되돌리는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "같은 `ResultId`를 두 번 반영하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결과 반영을 강제 귀환으로 처리하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동일 입력이 다른 결과를 내는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "새 실시간 이동 공식을 발명하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "근접 교전 중인 부대에 새 명령을 받는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자동 전투와 수동 전투에 서로 다른 판정 규칙을 쓰는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "공격 판정 표나 임계 수치를 이 문서에서 정하는 일"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b54",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2026-09-07 카드 전투 POC 역사"
+        }
+      ]
+    },
+    {
+      "id": "source.b55",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "아래 내용은 당시 구현·검증과 공식의 출처 계보를 보존한다. 현재 목표 규칙이나 새 구현 지시가 아니다. 좌우 사이드스크롤 화면, 아이소·타일 격자, 30Hz 드라이버, 카드 소유권과 재충전, 당시 항복 결합 조건은 모두 이 절에만 해당한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b56",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "POC 핵심 수치"
+        }
+      ]
+    },
+    {
+      "id": "source.b57",
+      "kind": "table",
+      "header": [
+        "name",
+        "value",
+        "unit"
+      ],
+      "dividers": [
+        "---",
+        "---:",
+        "---"
+      ],
+      "rows": [
+        [
+          "TicksPerSecond",
+          "30",
+          "Hz"
+        ],
+        [
+          "MoveTicksPerCell",
+          "10",
+          "ticks per cell"
+        ],
+        [
+          "AttackCooldownTicks",
+          "30",
+          "ticks"
+        ],
+        [
+          "MoraleBase",
+          "60",
+          "morale"
+        ],
+        [
+          "MoraleWarn",
+          "40",
+          "morale"
+        ],
+        [
+          "MoraleRecoverCap",
+          "80",
+          "morale"
+        ],
+        [
+          "MoraleRecoveryPerSecond",
+          "5",
+          "morale per second"
+        ],
+        [
+          "MoraleLossPerDeath",
+          "5",
+          "morale"
+        ],
+        [
+          "MoraleLossCommanderBelowHalf",
+          "10",
+          "morale"
+        ],
+        [
+          "SurrenderMoraleMax",
+          "20",
+          "morale"
+        ],
+        [
+          "SurrenderCommanderHpPercentMax",
+          "50",
+          "percent"
+        ],
+        [
+          "StrongholdCardSlots",
+          "2",
+          "slots"
+        ],
+        [
+          "CardEffectTicks",
+          "150",
+          "ticks"
+        ],
+        [
+          "MaxTicks",
+          "9000",
+          "ticks"
+        ],
+        [
+          "CommandRadius",
+          "3",
+          "cells"
+        ],
+        [
+          "RulesVersion",
+          "rtfc-owner-cards-v2",
+          "version"
+        ],
+        [
+          "recharge",
+          "방패벽300/격려600/협공450/기동재집결600/보급900/통행750",
+          "ticks"
+        ]
+      ]
+    },
+    {
+      "id": "source.b58",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "POC 공간·드라이버·명령"
+        }
+      ]
+    },
+    {
+      "id": "source.b59",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "고정 직교 아이소메트릭 카메라와 1.5m 4방향 타일 격자 위에 진형을 놓았다. 이후 화면은 좌우 사이드스크롤 POC로 기록됐다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "30Hz 고정 틱, 프레임당 최대 4스텝의 D1 드라이버를 썼다. 일시정지는 해시 입력에서 제외했다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "POC 표시 예시에서는 초기 편성이 양측 6개 논리 분대, 총 12분대였고 증원은 별도로 붙었다. 각 예시 분대는 병사 뷰 4명과 중앙 리더 1명으로 보였다. 이는 현재 목표의 분대 수나 영웅 포함 규칙이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "리더는 연출용으로 별도 전투 HP와 정산 ID가 없었다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "분대 명령 `Move`, `Attack`, `SetFacing`은 실행 주체와 목표 위치 또는 대상 `UnitId`를 지정했다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전열·후열·측면과 4방향 정면을 사용했고 지휘 반경은 3칸이었다. 반경 밖 인물은 카드와 협공 대상이 아니었다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b60",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "POC 카드 소유권·재충전"
+        }
+      ]
+    },
+    {
+      "id": "source.b61",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "인물 카드 상태는 `(OwnerUnitId, CardId)` 쌍으로 관리했고 소유자마다 재충전 타이머가 독립이었다. 덱 구축과 무작위 드로우는 없었다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "거점 카드는 아군 분대가 공유하는 최대 2슬롯이었다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "방패벽 300틱, 격려 600틱, 협공 450틱, 기동 재집결 600틱을 소유자별로 유지했다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보급은 900틱, 통행은 750틱이며 효과 지속은 150틱이었다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미리보기는 상태를 바꾸지 않았고 확정 때 다시 검사해 한 번 반영했다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b62",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "POC 집계 생존수·정산 공식"
+        }
+      ]
+    },
+    {
+      "id": "source.b63",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "집계 생존수 범위는 0부터 4였다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "초기 생존수는 `ceil(4 * 시작Hp / MaxHp)`로 열었고 시작 HP가 0이면 0이었다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "피해 뒤 생존수는 `min(이전 생존수, ceil(4 * 현재Hp / MaxHp))`로 단조 감소했다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "치료를 받아도 쓰러진 병사는 부활하지 않았다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "증원은 기존 분대 인원 회복이 아니라 고유 초기 HP를 가진 별도 분대로 들어왔다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "정산은 기존 논리 `UnitId`와 남은 `HP`를 기준으로 `ResultId`와 함께 한 번 확정했다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b64",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "POC 사기·항복·시간 상한"
+        }
+      ]
+    },
+    {
+      "id": "source.b65",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "기본 사기는 60, 경고선은 40, 회복 상한은 80이었다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "초당 회복 5, 사망당 손실 5, 지휘관 HP 절반 이하 손실 10을 적용했다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "사기 20 이하, 지휘관 HP 50% 이하와 열린 퇴로가 모두 참일 때만 항복이 성립했다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "지휘관 타일 점거는 퇴로 차단과 같지 않았고 후퇴 판단은 사기 경고선 40을 넘기기 전에 두었다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "칸 이동은 10틱, 공격 쿨다운은 30틱, 한 판 상한은 9000틱이었다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b66",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 항복 수치 결합은 현재 목표의 항복 조건이 아니다. 현재 목표에서는 `LegalFallback` 실패가 명령 철수만 막으며 항복 선택을 없애지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b67",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "POC 리플레이·리셋·구현 상태"
+        }
+      ]
+    },
+    {
+      "id": "source.b68",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "규칙 버전은 `rtfc-owner-cards-v2`였다. 소유자 정보가 없는 이전 리플레이는 규칙 버전 오류로 거부했고 원본을 자동 변환하거나 삭제하지 않았다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투 초기화는 정산 전에 현재 전투만 시작 상태로 되돌리고 캠페인 진행과 이미 반영한 정산은 건드리지 않았다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "카드 소유권과 순수 판정 로직의 원본 62개 사례, 소유자 상대 지휘 반경 수정 1개 사례가 검증됐다. 최초 진형 버튼의 Raycast/EventSystem 문제는 남았다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "분대 Move/Attack과 방향 명령은 추가 반례 테스트 전 결과만 있어 최종 검증 상태가 보류됐다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "집계 생존수와 사상자 처리는 승인됐지만 구현 완료되지 않았다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "Foundation raycast depth -1 원인은 해결되지 않았다. 원본 SVG 사용 가능 여부는 캐릭터·타이틀·아이콘·역사 텍스처의 권리와 외형 검토를 대신하지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b69",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "출처"
+        }
+      ]
+    },
+    {
+      "id": "source.b70",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "[전투](Personal-Resolution-Battle.md) — 현재 개인 판정 전투, 카메라, 종료 상태와 카드 전투 POC 역사."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[전략·전투 왕복](Strategy-Battle-Roundtrip.md) — 불변 컨텍스트, 명령 교체, 정확히 한 번 정산과 원정 계속."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[전쟁·공성](Warfare-and-Sieges.md) — `LegalFallback`, 명령 철수·패주·수락된 항복·포획 분리."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`Intent.md` 결정 11은 결정 13으로 개정됐다. 현재 목표는 개인 판정 전투이며 카드·격자 목표는 폐기됐다. 결정 15가 생활·영지·정치와 전쟁의 연결 및 가변 부대 정원을 추가한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "2026-09-19 영웅 액터와 병사 분대 분리 결정은 유지한다. 당시 최대 20명 정원은 2026-10-02 결정 15의 가변 정원·공통 상한 없음으로 대체됐다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "현재 목표에는 군단 전체 상한, 분대 최소 인원·수, 영웅 수·능력 자원·특수 밸런스나 새 이동 수치를 만들지 않는다. 표와 공식의 수치는 2026-09-07 카드 전투 POC 역사에만 적용한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "sp1.20261003.commander",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SP-1.0.0: 본체가 전투 지휘관이면 지휘에 배속된 모든 전투맵 분대를 직접 조정·명령한다. 별도 분대장이 있어도 상위 지휘권을 막지 않는다. 본체 분대장은 상위 지휘관 하달을 물리 전달이 아닌 즉시 시스템 신호로 받으며 따름·독자 행동을 선택한다. 수신/실행/성과/준수/불가능 조건을 지휘관의 해당 인물 평가로 기록하고 중복 평가를 막는다. 이는 전투 하달에만 적용하며 전략 연락·본체 이동·명령 큐를 변경하지 않는다."
+        }
+      ]
+    }
+  ]
+}

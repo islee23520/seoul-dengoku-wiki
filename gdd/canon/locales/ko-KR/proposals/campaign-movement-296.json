@@ -1,0 +1,883 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "proposal",
+  "source": {
+    "path": "proposals/Campaign-Movement-296.md",
+    "lineStart": 1,
+    "lineEnd": 57,
+    "sha256": "fdeefea78de6cab718e4419d9641221bfa0a080dc3cac76e894865ac718b6919"
+  },
+  "document": {
+    "id": "doc.Campaign-Movement-296",
+    "blockIds": [
+      "time.b1",
+      "time.b2",
+      "units.heading",
+      "units.source",
+      "units.sources",
+      "units.derivation",
+      "units.approvals",
+      "units.time",
+      "units.squads",
+      "units.route",
+      "units.verification",
+      "time.b3",
+      "time.b4",
+      "time.b5",
+      "time.b6",
+      "time.b7",
+      "time.b8",
+      "time.b9",
+      "time.b10",
+      "time.b11",
+      "time.b12",
+      "time.b13",
+      "time.extra1",
+      "time.extra2",
+      "time.extra3",
+      "time.extra4",
+      "time.extra5",
+      "time.extra6",
+      "handoff.heading",
+      "handoff.approval",
+      "handoff.cases",
+      "handoff.pending",
+      "time.b14",
+      "time.b15",
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "source.b27",
+      "source.b28",
+      "source.b29"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "time.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "시간 기반 캠페인 이동 검토안 — 결정 14 / #296"
+        }
+      ]
+    },
+    {
+      "id": "time.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 기준은 소유자 Intent 결정 14와 영웅 분대의 시간 기반 이동·이동 중 목표 교체·다섯 태세·AI 동일 계약이다. 대상별 사건 전이와 화면 분리, 역 없는 영지 계약을 함께 따른다. 아래 MOV-01~07 수치와 변환은 문서 병합과 별개로 소유자의 개별 승인을 기다리는 제안이다. 동시 전략 턴·턴 이동력은 현재 설계가 아니며, 판정은 독자 TRPG 핵심 규칙 체계를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "units.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2026-09-29 원문 대조와 단위·계수 승인안"
+        }
+      ]
+    },
+    {
+      "id": "units.source",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[문서] [SJ Games Lite 안내](https://www.sjgames.com/gurps/Lite/)와 [공식 판매 페이지](https://warehouse23.com/products/gurps-lite-fourth-edition)는 4판 안내를 확인하는 출처다. 규칙 본문은 [DocDroid에 보관된 사본](https://www.docdroid.net/lBGne5B/gurps-4e-lite-pdf)을 직접 대조했다. 총 32쪽, p.1의 AUGUST 2004 EDITION / Rev. 07/12/04, SHA-256 56aa72431c4b8a728b3e6eb8efe3b72f3f50afef2b960b55184ae70275a92fb9. 인쇄/PDF 쪽수는 아래 범위에서 같다. 메타데이터 수정일 2008-08-06을 판본 개정일로 해석하지 않으며 최신 공식 배포 파일과 바이트 동일하다는 주장도 하지 않는다. PDF 원문을 저장소에 복제하지 않고 사실을 요약한다."
+        }
+      ]
+    },
+    {
+      "id": "units.sources",
+      "kind": "table",
+      "header": [
+        "쪽",
+        "확인된 원문 사실",
+        "이번 제안과의 경계"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "5",
+          "BL=ST²/5 lb. 10 lb 이상이면 가장 가까운 정수로 반올림.",
+          "연구 입력 무게는 1/5 lb 정수. 장비별 실제 무게 승인과 UI의 kg 변환은 별도다."
+        ],
+        [
+          "6",
+          "Basic Speed=(HT+DX)/4, 소수 유지. Basic Move 시작값은 그 내림이며 yd/s다.",
+          "캐릭터의 직접 구매/수정 Move를 기본값으로 덮어쓰지 않는다. 캠페인 보행속도로 바로 사용하지 않는다."
+        ],
+        [
+          "22",
+          "하중 상한 BL×1/2/3/6/10, Move 배율 1/.8/.6/.4/.2. 하중 적용 후 내림, 하중만으로 1 미만이 되지 않는다.",
+          "10BL 초과는 이 보행 연구에서 거부. 원전의 단시간 초과 운반까지 불가능하다는 뜻은 아니다."
+        ],
+        [
+          "22–23",
+          "Hiking의 이상적인 하루 거리=10×유효 Move miles. Hiking 성공 +20%. 지형 배율 .2/.5/1/1.25.",
+          "하루 활동시간·도로/지하의 지형 대응·태세 배율은 새 설계. 기술 판정 보너스는 이번 수치 예제에 넣지 않는다."
+        ],
+        [
+          "29·31",
+          "HP<최대 HP/3, FP<최대 FP/3일 때 각각 Move 절반 후 올림.",
+          "하중→부상→피로 순서는 조합 해석을 명문화한 후보. HP≤0·FP≤0·보행불가에는 자동 속도를 만들지 않는다."
+        ],
+        [
+          "23·31",
+          "Running은 FP≤1/3, 일반 피로는 FP<1/3으로 경계가 다르다. Hiking은 p.31을 참조한다.",
+          "이번 Hiking 기반 후보는 엄격한 <를 사용한다. Running 규정을 오자로 단정하거나 통일하지 않는다."
+        ],
+        [
+          "31",
+          "도로 Hiking은 시간당 1+하중 등급 FP, 통상 피로는 조용한 휴식 10분당 1 FP 회복.",
+          "상태 snapshot 검산과 실제 피로 사건·휴식 일정·수면/갈증은 별도다. 연속 8시간 무휴식 가능을 보장하지 않는다."
+        ]
+      ]
+    },
+    {
+      "id": "units.derivation",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[추론/신규 제안] 개인 M은 명시 입력 Basic Move에 하중 배율을 적용해 내림(최소 1), HP가 엄격한 1/3 미만이면 ceil(M/2), FP가 엄격한 1/3 미만이면 다시 ceil(M/2)로 얻는다. 이 순서를 원문 전체의 통합 공식으로 인용하지 않는다. 둘 다 해당하면 ceil(ceil(M/2)/2)=ceil(M/4)다. BL은 승인 기초 ST에서 계산하고 피로로 다시 줄이지 않는 후보다. p.31의 ST 기반 파생량 제외 문구를 따르되 캐릭터 수정치가 있다면 명시된 승인 BL/Move 계약이 선행해야 한다. BL/Basic Move 유도 helper는 해당 능력 수정치가 없는 가상 보행자만 지원한다. 아래 최대 HP/FP12는 ST/HT에서 유도한 기본값이 아니라 별도 구매·수정치를 가정한 명시 입력이다. Lite p.6의 기본 HP=ST, FP=HT와 구분한다."
+        }
+      ]
+    },
+    {
+      "id": "units.approvals",
+      "kind": "table",
+      "header": [
+        "ID",
+        "추천 후보",
+        "대안·차이",
+        "승인 상태"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "MOV-01 단위",
+          "T=세계 초, D=경로 미터, W=평균 지형의 환산 밀리미터. W는 좌표가 아니다.",
+          "분모를 고정한 정수+나머지 저장. 벽시계 압축비는 이 식의 입력이 아니며 별도 결정한다.",
+          "대기"
+        ],
+        [
+          "MOV-02 보행 기준",
+          "일일 10×Move miles를 8시간 활동 구간으로 나눈 비교 기준: K=2794/5 W/T/Move.",
+          "12시간이면 K=5588/15. 8시간안보다 속도 2/3, 소요시간 1.5배. 8시간은 원문 사실이 아니다.",
+          "대기"
+        ],
+        [
+          "MOV-03 분대",
+          "전 구성원 M의 최솟값. 짐에는 개인 장비·소모품·배정 공용짐을 모두 포함한다.",
+          "평균은 느린 구성원의 낙오/수송 규칙이 필요해 이번 후보에서 제외한다.",
+          "대기"
+        ],
+        [
+          "MOV-04 상태",
+          "하중→HP→FP. HP/FP 엄격한 <1/3. HP≤0·FP≤0·보행불가·초과하중은 지원 밖 오류.",
+          "기절/수송·의지 판정은 별도 계약. 거부는 원전의 절대 이동불가와 다르다.",
+          "대기"
+        ],
+        [
+          "MOV-05 태세",
+          "통상×1, 강행군×3/2, 매복×1/2, 주둔·야영×0.",
+          "배율은 신규 설계. 강행군의 전투 제약·피격 준비도, 매복 탐지·회복 효과를 배율로 대신하지 않는다.",
+          "대기"
+        ],
+        [
+          "MOV-06 간선",
+          "지형 .2/.5/1/1.25의 역수인 작업 배율 5/2/1/4⁄5. edgeW=ceil(D×1000×배율)+진입 W.",
+          "노선층만으로 배율 자동 지정 금지. 예제는 도로4/5·출입1·지하2를 명시한 가상 지도다.",
+          "대기"
+        ],
+        [
+          "MOV-07 출입",
+          "예제 출입 50m + 추가 100000W. 진입 부가작업도 분대 속도에 비례한다.",
+          "고정 대기 60초안이면 모두 같은 지연이지만 별도 타이머가 필요하다. 이번 계산은 작업량안을 추천한다.",
+          "대기"
+        ]
+      ]
+    },
+    {
+      "id": "units.time",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "세계 초는 수치 검산 단위이며 FixedUpdate 간격이나 플레이어 조작 배속을 지정하지 않는다. 추천 8시간은 일일 거리를 활동 구간 속도로 환산하기 위한 기준이다. 실제 하루의 이동량은 상태 변화·식사·휴식·수면·길 상태에 따라 다시 계산해야 한다. 월드 시간과 벽시계의 비율, 태세 전환 때 남은 나머지 환산, 피로/휴식 사건 시점은 승인·구현 전 남은 항목이다."
+        }
+      ]
+    },
+    {
+      "id": "units.squads",
+      "kind": "table",
+      "header": [
+        "가상 분대",
+        "명시 입력",
+        "M·속도 검산"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "A: 지휘관1+병졸8",
+          "지휘관 ST10 DX12 HT12 Basic Move6, 짐15lb. 병졸 각 ST10 DX10 HT10 Move5, 짐30lb. 모두 HP/FP12/12, 보행가능.",
+          "지휘관6, 병졸 floor(5×.8)=4 → 분대 M4. 통상11176/5, 강행군16764/5, 매복5588/5 W/T."
+        ],
+        [
+          "B: 지휘관1+병졸12",
+          "지휘관 ST15 DX12 HT12 Move6, 짐40lb. 병졸 각 ST10 DX10 HT10 Move5, 짐50lb. 모두 HP/FP12/12, 보행가능.",
+          "BL 지휘관45lb·병졸20lb. 병졸 floor(5×.6)=3 → M3. 통상8382/5, 강행군12573/5, 매복4191/5 W/T."
+        ],
+        [
+          "B의 경계·중첩",
+          "병졸 한 명 HP4/12·FP4/12이면 경계 같음. HP3/12만 또는 HP3/12·FP3/12로 비교.",
+          "경계 같음 M3; HP만 낮음 ceil(3/2)=2; HP·FP 둘 다 낮음 ceil(2/2)=1. 임의 .75 계수는 쓰지 않는다."
+        ]
+      ]
+    },
+    {
+      "id": "units.route",
+      "kind": "table",
+      "header": [
+        "가상 경로/시간",
+        "A 통상",
+        "B 통상"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "도로1000m×4/5",
+          "800000W",
+          "800000W"
+        ],
+        [
+          "층전환50m×1+100000W",
+          "150000W; 누적950000W",
+          "150000W; 누적950000W"
+        ],
+        [
+          "지하1000m×2",
+          "2000000W; 총2950000W",
+          "2000000W; 총2950000W"
+        ],
+        [
+          "300T",
+          "670560W, 도로 중간",
+          "502920W, 도로 중간"
+        ],
+        [
+          "600T",
+          "1341120W, 지하 간선 391120W 진행",
+          "1005840W, 지하 간선 55840W 진행"
+        ],
+        [
+          "300T 강행군",
+          "1005840W, 지하 진입",
+          "754380W, 도로 중간"
+        ],
+        [
+          "최초 정수 초 도착 관찰",
+          "ceil(2950000×5/11176)=1320T",
+          "ceil(2950000×5/8382)=1760T"
+        ]
+      ]
+    },
+    {
+      "id": "units.verification",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "예제 지도 S0/S1/U0/U1은 실제 역·창고 좌표가 아니다. 600T 지하 진척은 작업량이며 지하 2배 비용을 고려한 물리 이동량은 각각 195560mm와 27920mm다. 간선 비용 검증·통제권 정지·봉쇄 전체 거부·목표 교체·AI 동일 함수·해시는 기존 time-orders 연구를 재사용한다. 새 source-calculation 검산은 원전 유도·임계값·하중 경계·분대 최소값·태세와 실제 단위 예제를 연결한다. 새 증거 경로는 GAME RESEARCH/verification/campaign-movement-source-20260929/README.md다. approvedAt/approvedBy/evidence 없이 계수표를 accepted로 바꾸지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "time.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 제안: 목표·경로와 세계시간"
+        }
+      ]
+    },
+    {
+      "id": "time.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "플레이어/AI 모두 현재 위치·전체 경로·접근권·층·전투 잠금을 검사한다. 목표 교체를 수락할 수 있는 제한된 연구 예제를 추가했다. 권위 이벤트까지 기존 명령으로 전진한 뒤 controllerId·eventTime·expectedRevision을 검증하고 현재 간선과 지난 prefix를 그대로 보존한 새 경로를 원자적으로 수락한다. 진행 W와 나머지는 유지한다. 실패 시 이벤트 시점의 기존 명령·위치를 보존한다. 간선 도중 반전·현재 간선 비용 변경·전체 재탐색은 미구현이다."
+        }
+      ]
+    },
+    {
+      "id": "time.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2026-09-29의 단위·개인 유도 후보는 아래 MOV-01~07에 명시한다. 기존 time-motion/time-orders 예제의 추상 T/D/W와 합성 속도는 계산 구조 검증용으로 보존한다. 새 source-calculation.mjs는 원전에서 확인한 개인 기초값과 명시된 캠페인 변환을 검산하며 제품과 연결되지 않는다. 지휘관·배속 영웅·병졸을 포함한 모든 보행자의 최솟값을 분대 기준으로 삼고 보행불가자를 제외하지 않는 것은 신규 집계 제안이다."
+        }
+      ]
+    },
+    {
+      "id": "time.b6",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정수 거리 u와 세계시간 u의 의미를 먼저 승인받고, 속도를 정수 분자 n/양의 분모 d로 입력하는 검토안이다. 구간 경과시간 Δt에 대해 scaled=n×Δt+remainder, 진행거리=floor(scaled/d), 새 remainder=scaled mod d다. 중간 곱은 BigInt/checked 정수로 계산하며 remainder를 저장하여 프레임마다 소수를 버리지 않는다. 같은 n,d와 같은 경로·이벤트 구간에서 Δt를 나누어 적용해도 최종 거리·나머지가 같다. 목표 도달 시 진행을 목표 거리로 제한하고 남은 이동분을 다음 명령용으로 저축하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "time.b7",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "권위 이벤트에서 경과시간 구간을 나누고 새 속도를 과거 전체 구간에 곱하지 않는다. 고정 분모·현재 간선 유지 조건의 목표 교체는 time-orders 예제로 시험한다. 분모 변경·태세 전환·간선 도중 반전·동적 봉쇄·조우·정확한 도착 사건은 별도 승인/검증 대상이다. 연구는 위치와 원장 후보를 다루며 전체 동시 월드 해결을 구현하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "time.b8",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 제안: 층·접근·전투·빈 월드"
+        }
+      ]
+    },
+    {
+      "id": "time.b9",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "지상 영토와 지하철 노선은 별도 층이며 명시된 출입/환승 간선만 층을 바꾼다. 경로 인접성·층·통행권·봉쇄를 검사하며 처음부터 불법인 명령을 일부 실행하지 않는다. 유효 명령 수락 뒤 동적 봉쇄/조우는 시간 이벤트로 다시 판정하고 과거에 유효하게 움직인 거리를 되감는 정책을 임의로 만들지 않는다. ZOC 끝점 정지/통과 제한은 기존 의미를 보존하는 검토 후보지만 시간 기반 조우·재출발 정책은 별도 확정해야 한다. 도로·지하·환승에 옛 턴 비용750/1000/1250을 속도나 거리로 재사용하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "time.b10",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "공유 온라인 캠페인 시간에는 플레이어가 쓰는 일시정지·감속·배속이 없다. 마지막 플레이어가 나가면 월드가 멈추며 빈 월드 동안의 벽시계 시간을 접속 뒤 따라잡지 않는다. 전투 중 분대는 결과 정산까지 새 이동 명령을 받지 않는다. 계산기의 battleLocked 구간은 해당 분대 진행만 보류하고 세계시간은 계속 가는 최소 제안이다. 다른 분대가 멈추거나 전투가 세계시간을 독점하지 않는다. 태세 다섯 종류·계승/임시 분대장·영웅/병졸 분리·병졸 최대20은 유지한다."
+        }
+      ]
+    },
+    {
+      "id": "time.b11",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 오프라인 검증과 미결"
+        }
+      ]
+    },
+    {
+      "id": "time.b12",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "GAME RESEARCH/verification/campaign-movement-20260928/time-motion.mjs와 time-motion.test.mjs는 제품과 연결되지 않은 연구 예제다. 가상 A 속도7/3, B 속도5/2와 가상 도로거리10·출입거리5를 입력해 Δt5에서 A 거리11/나머지2, B 거리12/나머지1을 확인한다. 단위는 현실 단위가 아닌 시험용 정수이며 승인 수치가 아니다. 경과시간0·1·5·7·20을 가능한 두 조각으로 분할해 전체 적용과 비교하고, 도착 시 나머지 소거·빈 월드·전투 잠금·불법 경로/접근권·정수 범위와 입력 불변성을 검사한다."
+        }
+      ]
+    },
+    {
+      "id": "time.b13",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "원문 판본·쪽수·하중/HP/FP 계산을 대조했고 아래 출처 표에 기록했다. 남은 승인 항목은 MOV-01~07, 상태 전이·피로 누적/휴식·강행군 피격 불이익 지속, 전체 지도 탐색, 동적 봉쇄/충돌/전투복귀, 정확한 도착 사건·분모변경·원장 순서·재전송이다. 새 연구 계산기의 입력 검사는 승인 데이터 validator 또는 승인 기록의 진위검증이 아니다. #296 최종 PASS·#297 착수 가능·Core 구현 완료로 판정하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "time.extra1",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "시간 기반 비용 후보: edgeW=ceil(distanceD×workNumerator/workDenominator)+entryWorkW. 양의 거리/분자/분모, 비음수 부가작업, 안전정수 총합을 요구한다. 도로/지상은 surface, 지하는 subway, 명시 transfer만 층변경을 허용한다. 비용 오류·봉쇄·통행권 없음·중간 통제권은 경로 전체를 거부한다. horizon 안에 도착하지 못함은 합법 진행이며 비용 실패가 아니다. 출입 작업량은 속도에 따라 시간이 달라지는 신규 후보로 고정 대기시간과 구분한다."
+        }
+      ]
+    },
+    {
+      "id": "time.extra2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "합성 예제(제품 계수 아님): A 통상/강행군/매복=4/2,6/2,2/2 W/T; B=3/2,5/2,1/2 W/T; 양쪽 주둔/야영=0/2. 다섯 속도를 모두 입력한다. 강행군 공격·요격 개시 불가/피격 가능, 야영 공격 개시 불가를 따로 검사한다. 태세변경·은폐탐지·회복은 구현하지 않는다. 지도 S0→S1 도로8D×1/2=4W, S1→U0 출입2D×1+2W=4W, U0→U1 지하6D×2=12W, 총20W다."
+        }
+      ]
+    },
+    {
+      "id": "time.extra3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "손계산 ΔT5: A 통상10W/r0로 U0 이후2W, B 통상7W/r1(7.5W)로 출입 중3.5W. A 강행군15W/r0, B 강행군12W/r1. A 통상10T에 U1, B 통상13T에19.5W/14T 관찰에서 U1(연속 도착시각40/3T). B가 t5에 U0→U2 비용4W로 교체하면7.5W를 보존하고 +3T×1.5=4.5W 후 t8에 U2 도착한다. W는 물리 좌표가 아니며 3D 보간 계약은 미구현이다."
+        }
+      ]
+    },
+    {
+      "id": "time.extra4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "도달 범위 예제는 지정 경로에서 horizonT 안에 새로 도달할 노드다. ΔT5 A는 S1·U0, B는 S1. 전체 지도 최단경로 탐색은 아직 없다. U0 통제권이면8W에 정지하고 일반 MOVE 재출발을 거부한다. 마지막 간선 봉쇄/통행권 없음, 행위자 권한 없음, 비용 분모0/음수/overflow, stale revision은 기존 명령·시각·진척을 바꾸지 않는다. 비용 ceil 예제8D×1/3=3W도 시험한다."
+        }
+      ]
+    },
+    {
+      "id": "time.extra5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "추가 연구 파일 time-orders.mjs/time-orders.test.mjs는 Node 내장 모듈만 쓴다. AI와 플레이어가 동일 함수·권한·속도·비용을 사용한다. 명령 ID/권위시각/revision/행위자와 비용·경로·태세·진척의 의미 필드를 정렬 직렬화해 이전 SHA256과 연결한다. 표시 메타데이터/hostOrder는 제외하고 경로순서는 보존한다. 동일 원장 재생은 동일 해시, 비용변경은 다른 해시다. 시간분할은 위치만 같으며 서로 다른 이벤트 원장의 해시까지 같다는 뜻은 아니다."
+        }
+      ]
+    },
+    {
+      "id": "time.extra6",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "검증 패킷은 GAME RESEARCH/verification/campaign-movement-20260928에 있으며 time-orders-proposal.md에 유도·출처·손계산·미결표를 남긴다. 기존 역사12+시간구간4+이벤트8=24개 시험을 통과했다. 중첩 표시 메타데이터가 정지·목표 교체의 재생 해시나 경로 판정을 바꾸지 않고 실제 비용 변경은 검출되는지도 확인했다. 역사12는 최신 시간설계 증명이 아니다. 미승인 연구 fixture이지 승인 데이터 validator·Unity Core·네트워크 재생 완료가 아니다."
+        }
+      ]
+    },
+    {
+      "id": "handoff.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2026-10-01 구현 인계 시 확인할 입력과 사건"
+        }
+      ]
+    },
+    {
+      "id": "handoff.approval",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "MOV-01~07 표를 다시 만들거나 병합 사실을 승인으로 대신하지 않는다. 구현에 사용할 각 행은 승인된 값·단위·규칙 판본과 approvedBy·approvedAt·evidence를 같은 입력 revision에 연결해야 한다. 제안값, 승인 근거 누락, 다른 판본의 승인, 실제 분대·경로와 맞지 않는 참조는 인계 보류 대상이다. 이 절은 승인 입력 검사기의 요구사항이며 실행 가능한 검사기나 승인 기록의 진위검증을 구현한 것이 아니다."
+        }
+      ]
+    },
+    {
+      "id": "handoff.cases",
+      "kind": "table",
+      "header": ["인수 사례", "입력·행동", "관찰할 결과와 담당 경계"],
+      "dividers": ["---", "---", "---"],
+      "rows": [
+        ["화면 전환과 세계 진행", "서로 다른 두 분대가 이동하는 동안 생활·전략·전투 화면을 전환한다.", "#36에 따라 화면을 숨겼다는 이유로 관련 없는 분대의 세계 시각·진척이 멈추지 않는다. #297 Core 기록과 #284 표시를 대조한다."],
+        ["역 없는 영지", "#37에서 허용한 역 없는 영지를 목적지로 삼되 실제 접근 경로는 별도 입력으로 제공한다.", "영지 소유권만으로 역 ID·지하철 간선·무료 출입을 만들지 않는다. 승인된 경로가 없으면 이동 가능으로 표시하지 않는다."],
+        ["작업량과 표시 좌표", "같은 거리와 서로 다른 지형 비용을 가진 간선의 진행을 비교한다.", "W를 3D 좌표나 실제 이동 거리로 직접 사용하지 않는다. 작업량 진척에서 물리 위치로의 투영은 #279/#284와 합의한 좌표 계약으로 대조한다."],
+        ["도착·태세·봉쇄 사건", "도착 시각과 태세 변경·동적 봉쇄가 겹치는 입력 및 속도 분모 변경을 제시한다.", "정확한 도착 시점·나머지 처리·사건 순서·재출발 정책을 먼저 확정한다. 정책이 없는 경우 기존 연구 예제의 결과를 제품 정답으로 삼지 않는다."],
+        ["전투 잠금의 구분", "한 분대가 전투 중인 동안 다른 분대에 이동 명령을 내리고, 교전 종료와 캠페인 정산을 별도 사건으로 관찰한다.", "캠페인 이동은 해당 분대의 결과 정산까지 잠긴다. 전장 명령 잠금과 해제는 전투 계약에 따라 별도로 검증한다. 공용 잠금 하나로 두 범위를 대체하지 않는다."],
+        ["승인 입력 결손", "MOV 승인 근거 또는 #298 편성·#299 위치·규칙 판본 가운데 하나가 누락되거나 서로 다르다.", "제품 setup과 이동 명령으로 승격하지 않으며 캠페인·원장을 바꾸지 않는다. 가상 A/B와 S0/S1/U0/U1을 실제 신종목 분대·창고로 대신하지 않는다."]
+      ]
+    },
+    {
+      "id": "handoff.pending",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "위 사례는 새 Core/API가 제공된 뒤 실행할 인수 명세이며 통과 기록이 아니다. 기존 source-calculation·time-orders 검산과 구분한다. 남은 결정은 MOV-01~07, 세계시간과 벽시계의 대응, 피로·휴식·태세 사건, 도착·충돌·동적 봉쇄 순서, 실제 편성·전장·창고 위치다. 승인된 결정만 해당 행에 추가하고 역사 source.b*와 source.sha256은 보존한다."
+        }
+      ]
+    },
+    {
+      "id": "time.b14",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "역사 비교: 폐기된 턴 예산 초안 v0.1"
+        }
+      ]
+    },
+    {
+      "id": "time.b15",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이하 모든 source.b* 블록은 결정 14를 확인하기 전의 초기 조사·제안이다. 현재 추천/보존 계약/승인 요청으로 읽지 않는다. movement.mjs와 movement.test.mjs의 턴 예산 모델도 역사 비교용이며 현재 시간 기반 구현 근거가 아니다. source.sha256과 proposal-source.md는 초기 provenance로 동결하고 이 개정 때문에 덮어쓰지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "역사 기록 — 캠페인 이동 수치 검토안 — #296"
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: proposal / NEW DESIGN v0.1 / @islee23520 명시 승인 대기. 원전 페이지 대조 미완료. 제품 Core·데이터 기본값으로 사용하지 않는다. 기존 인물·무공·장비·계보와 accepted 규칙은 변경하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "역사 기록 — 출처와 확인 범위"
+        }
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "요청 #296은 수치·단위·계수의 명시 승인을 요구한다. 승인 전 #297 Core 구현에 착수하지 않는다. 영웅 분대와 동시 진행의 source.b18–b26을 보존한다. 고정 source.sha256은 3bd57c0dbaee7da56e8bdbdf43889033a292d4874bbd9a747a771174c7d2d988이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[Total War Academy](https://academy.totalwar.com/campaign-moving-armies-exploration-and-stances/)에서 턴 도달 경계·태세·도로·다턴 이동·적 ZOC의 개념을 확인했다(2026-09-28 조회, HTML). 비용 숫자는 제공하지 않는다. Warhammer III 최신 패치 수치로 인증하지 않으며 해상 전환 규칙을 지하 환승에 복사하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[SJ Games Lite 안내](https://www.sjgames.com/gurps/lite/)와 [제품 31-0004](https://warehouse23.com/products/gurps-lite-fourth-edition)는 4판 32쪽 요약임을 확인한다. Lite 본문 PDF를 확보하지 못해 정확한 판본·인쇄/PDF 페이지·반올림·HP/FP 원전 규칙은 미검증이다. [공식 CharacterSheet.pdf](https://www.sjgames.com/gurps/resources/CharacterSheet.pdf) 첫째 쪽 ENCUMBRANCE/MOVE 표에서 BL=ST²/5, BL 배수 1·2·3·6·10과 Move 배수 1·0.8·0.6·0.4·0.2를 확인했다. 이는 Lite 본문 인용이 아니다. [Basic Set 발췌](https://www.sjgames.com/gurps/books/Basic/characters.pdf)의 색인은 규칙 본문이나 Lite 페이지의 대체 근거가 아니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "역사 기록 — 보존할 계약"
+        }
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "병졸 최대20(영웅 별도), 지휘관 상실 시 임시 병졸 분대장, AI에도 동일 명령 계약, 제출시각·호스트 우선 금지, 턴 해결마다 세계시간 한 칸, 전투 참가 분대만 후속 전략 명령 잠금, 같은 노드·층에서만 분리·합류를 보존한다. 이동·공격·요격·증원·태세는 별도 명령이다. 강행군은 공격·요격 개시 불가이나 피격 가능하며 야영은 공격 개시 불가다."
+        }
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "역사 기록 — 제안 수치와 정수 계산"
+        }
+      ]
+    },
+    {
+      "id": "source.b10",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "시간 한 칸을 시간/일/km로 환산하지 않는다. 추상 이동점 MP의 저장 단위는 1000u=1MP, Q=1000이다. 모든 계수와 단위 적용 방식은 신규 설계다. basicMove는 승인 캐릭터 입력의 비음수 정수이며 누락 시 기본값을 만들지 않는다. GURPS Basic Speed에서의 유도나 CP 수정을 자동 추정하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "personalU=floor(basicMove×1000×encPermille×healthPermille×fatiguePermille/1000³). squadBaseU는 지휘관·배속 영웅·병졸을 포함한 모든 실제 보행 구성원의 personalU 최솟값이다. turnBudgetU=floor(squadBaseU×stancePermille/1000). 중간 내림 없이 마지막에 내린다. 보행 불가자를 계산에서 빼거나 승인되지 않은 운송수단에 태우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "짐은 장비·무기·방어구·소모품·배정 공용짐을 개인별로 합산한다. 승인 BL과 같은 정수 단위로 비교하며 경계와 같으면 낮은 등급이다. 상한은 BL×[1,2,3,6,10], 계수는 [1000,800,600,400,200]. 10BL 초과는 OVER_CAPACITY로 거부한다. 원전 BL의 반올림을 이 제안이 확정하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b13",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태 계수 후보: 건강 정상1000/보행부상750/자력보행불가0, 피로 정상1000/피로750/탈진500/이동불가0. HP·FP에서 이 상태로 매핑하는 임계값과 회복·피로 누적은 승인 전 미지원이다. 이 숫자는 GURPS 사실이 아니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b14",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "태세 계수 후보: 통상1000, 강행군1500, 매복500. 주둔·야영 활성 상태는 이동을 거부한다. 첫 이동 전에 이동 태세를 잠그고 이동 후에는 종료 태세만 허용한다. 종료 태세를 해제해도 같은 턴 이동을 재개하거나 예산을 충전하지 않는다. usedForcedMarchThisTurn을 유지하여 통상 복귀로 공격·요격 제한을 지우지 않는다. 이 상태 전이는 별도 태세 명령 계약으로 승인·검증해야 한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b15",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "역사 기록 — 간선·도달 범위·예약"
+        }
+      ]
+    },
+    {
+      "id": "source.b16",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "간선 기본비용 후보(u): 지상도로750, 지상보통1000, 지상험지1500, 지하노선1000, 명시된 출입/환승1250. edgeCostU=ceil(baseCostU×terrainPermille/1000)+surchargeU. 기본 지형은 이미 비용에 반영하므로 추가 보정은 명시된 승인 입력만 적용한다(시험 입력1000/0). 한 간선의 현실 길이는 미정이며 긴 구간의 분할/비용 override 정책은 승인 대기다."
+        }
+      ]
+    },
+    {
+      "id": "source.b17",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "지상 간선은 같은 지상층, 지하 간선은 같은 지하층이어야 한다. 층변경은 지도에 명시된 연결쌍만 허용한다. 통행권 부재·봉쇄·잘못된 층은 비용 무한대가 아닌 불법이다. 모든 경로의 인접성→층→통행권→봉쇄→태세→ZOC→총비용 순서로 검사하고 같은 검사 단계에서는 경로 인덱스가 먼저인 실패를 반환한다. 형식·중복 ID·범위 오류는 경로 검사 전에 거부한다. 실패 시 위치·예산·구성은 그대로이고 prefix를 자동 실행하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b18",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "적 ZOC 진입은 정상 비용을 내고 이동을 끝낸다. 끝점만 허용하며 중간 ZOC 뒤로 나가는 명령은 전체 거부한다. 남은 회계 예산을 0으로 바꾸지 않고 stop=ZOC를 기록한다. 시작점이 ZOC면 보통 MOVE는 불가하고 별도 후퇴·공격·허가된 우회 계약이 필요하다. 도달 범위는 양의 비용 Dijkstra로 계산하되 ZOC 노드를 확장하지 않고 동률은 ASCII edgeId 배열 사전식 순서를 사용한다. 이 탐색은 연구 계산기 구현 범위 밖이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b19",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "다턴 예약은 비구속 목적지·의도 경로다. 매 턴 지도·권한·적·짐을 다시 검사하여 그 턴의 명령을 별도 확정한다. 당일 예산을 넘는 명령을 자동 잘라 실행하지 않는다. 남은 예산은 이월하지 않으며 한 간선이 턴 예산을 넘으면 부분 간선 진행도도 저장하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b20",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "역사 기록 — 가상 분대 검산"
+        }
+      ]
+    },
+    {
+      "id": "source.b21",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "실제 인물 카드의 수치가 아니다. A는 지휘관1(Basic Move6, BL20, 짐15)과 병졸8(각 Move5, BL20, 짐30), B는 지휘관1(Move6, BL45, 짐40)과 병졸12(각 Move5, BL20, 짐50)다. 정상 건강·피로1000 기준 A 통상4000/강행군6000/매복2000u, B 통상3000/강행군4500/매복1500u다. B 병졸 한 명 부상750이면2250u, 피로750까지 겹치면1687u다."
+        }
+      ]
+    },
+    {
+      "id": "source.b22",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "가상 지도는 S0→S1 도로750, S1→S2 도로750, S2→U0 출입1250, U0→U1 지하1000, U1→U2 지하1000이다. A 통상은 U1까지3750을 내고250, B 통상은 U0까지2750을 내고250이 남는다. B가 U1까지 명령하면 전체 거부되어 S0·3000을 유지한다. A 강행군은 U2까지4750을 내고1250, B 강행군은 U1까지3750을 내고750이 남는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b23",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "U1이 ZOC면 A 통상은 U1에 도착 후 남은250과 정지 표지를 유지하고 U2까지 강행군 명령은 전체 거부된다. 출입 간선 봉쇄도 전체 거부다. 비용4000인 경로에 예산4000이면 성공,3999면 실패한다. B 다턴 예약은 첫 턴 U0, 다음 턴 U2로 예상할 수 있으나 실제 상태를 매 턴 다시 확인한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b24",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "역사 기록 — 결정론·검증 범위"
+        }
+      ]
+    },
+    {
+      "id": "source.b25",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "오프라인 패킷은 임의정밀도 BigInt 곱셈과 정수 floor/ceil을 사용한다. 외부 JSON 숫자는 안전한 비음수 정수만 받고 결과 상한을 넘으면 거부하며 clamp하지 않는다. 안정 ID는 ASCII로 제한하고 객체 키를 정렬한 UTF-8 JSON에 SHA-256을 적용한다. 지도 노드/간선, 분대 구성원, 명령처럼 의미상 집합인 배열은 명시 ID로 정렬하고 경로 배열 순서는 보존한다. 중복 ID는 hash 전에 거부한다. 비용·계수·입력·결과를 hash에 넣고 제출시각·호스트순·번역은 넣지 않는다. 패킷 hash는 Core 재생 해시가 아니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b26",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "동시 해결은 같은 턴 snapshot에서 검증해야 한다. 안정 저장순서를 게임 승자 우선권으로 사용하지 않는다. 유효경로 충돌·교차이동·정보/매복·동적봉쇄·전투 컨텍스트는 별도 승인 conflictRuleVersion이 필요하다. 누적비용/예산 유리수 시간모델은 검토 후보일 뿐 이 문서에서 채택하거나 구현하지 않는다. 재전송 영수증·명령 DAG·충돌 해결·태세 전이·승인 레코드 진위검증도 이번 단일 MOVE 계산기의 완료 주장에 포함하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b27",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "검증 패킷 위치: 로컬 연구 폴더 research/2026-09-28/tripothon/movement의 movement.mjs와 movement.test.mjs. Node 내장 test/crypto만 사용한다. 두 분대, 도로/지하/출입, 강행군, ZOC, 봉쇄, 경계·1u부족, 잘못된 형식·중복ID·overflow, 거부 시 불변, 배열순서 불변 hash를 실행한다. GDD와 별개 연구 자료이며 GDD PR만으로 배포되지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b28",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "역사 기록 — 승인 전 남은 결정"
+        }
+      ]
+    },
+    {
+      "id": "source.b29",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "@islee23520의 명시 승인 기록, Lite 원문 파일/판본/정확한 페이지와 반올림·HP/FP 대조, 단위와 모든 신규 계수, HP/FP 상태 매핑, 간선 길이 정책, 부상자 수송, 강행군 피격 준비도 불이익, 태세 변경 정책, 매복/정찰/동적충돌과 승인 데이터 validator 계약이 남았다. 초안의 계수 검산 통과는 이 게이트를 해소하지 않는다. 소유자 검토용 제안 작성 완료와 #296 전체 승인 완료를 구분한다."
+        }
+      ]
+    }
+  ]
+}

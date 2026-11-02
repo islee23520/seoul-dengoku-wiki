@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "proposal",
+  "source": {
+    "path": "proposals/owner-approved-d09-offices.md",
+    "lineStart": 1,
+    "lineEnd": 22,
+    "sha256": "6a394c9cc95552a2ebc85b7ed12849f174bb3c10b6b57ae743f24d7c6a11af58"
+  },
+  "document": {
+    "id": "doc.owner-approved-d09-offices",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11"
+    ]
+  },
+  "blocks": [
+    {
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "승인된 제안 — OFC-01"
+        }
+      ],
+      "id": "source.b1"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자가 2026-10-10에 결정한 D09 예시 A의 정리다: 관직 겸임은 허용하고 작위는 한 사람에 하나로 둔다. 정본 반영 전이라 제안 문서로만 올린다(병합은 소유자)."
+        }
+      ],
+      "id": "source.b2"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "OFC-01 관직 겸임과 작위 하나(D09 예시 A)"
+        }
+      ],
+      "id": "source.b3"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전)."
+        }
+      ],
+      "id": "source.b4"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "GDD가 비운 것: D09 예시 A는 한 사람이 두 직위를 가질 수 있다고 하나 직위와 작위의 구분·상한이 없다. — 근거 경로: mechanism-design-index-d09.json 예시 A · 3.1"
+        }
+      ],
+      "id": "source.b5"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 관직(수장·관리·지휘·재무 등 직무)은 한 사람이 여러 개를 겸임할 수 있고 한 관직의 보유자는 한 명이다. 작위(권리의 직함)는 한 사람에 하나다. 영지는 재산(D13)이라 한 작위 아래 여러 칸을 가질 수 있다. 관직 보유자가 죽으면 그 관직은 빈다."
+        }
+      ],
+      "id": "source.b6"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: CK3: 한 인물이 여러 궁정 직책을 겸하지만 작위는 서열로 하나의 대표 직함을 가진다."
+        }
+      ],
+      "id": "source.b7"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 유능한 가신 한 명에게 직무가 몰릴 수 있으나 작위 상한이 권력 집중을 막는다."
+        }
+      ],
+      "id": "source.b8"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "지금 코드의 임시값: world.ts setTitle·setOffice"
+        }
+      ],
+      "id": "source.b9"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "대안: 한 사람 한 직위(이전 불변식)."
+        }
+      ],
+      "id": "source.b10"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "코드 연결: 적용(결정)"
+        }
+      ],
+      "id": "source.b11"
+    }
+  ]
+}

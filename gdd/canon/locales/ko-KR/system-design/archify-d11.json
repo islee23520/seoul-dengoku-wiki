@@ -1,0 +1,1995 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Archify-D11.md",
+    "lineStart": 1,
+    "lineEnd": 74,
+    "sha256": "e0be6111fc3ae2b4d0e7581d2764d27850eea37ba021e5d02f0bc9fe9616056d"
+  },
+  "document": {
+    "id": "doc.Archify-D11",
+    "blockIds": [
+      "archify.b1",
+      "archify.b2",
+      "archify.b3",
+      "archify.b4",
+      "archify.b5",
+      "archify.b6",
+      "archify.b7",
+      "archify.b8",
+      "archify.b9",
+      "archify.b10",
+      "archify.b11",
+      "archify.b12",
+      "archify.b13",
+      "archify.b14",
+      "archify.b15",
+      "archify.b16",
+      "archify.b17",
+      "archify.flow-detail.heading",
+      "archify.flow-detail.table",
+      "archify.detail.heading",
+      "archify.detail.table"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "archify.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D11 아치파이 — 수여·임명·위임·회수 전체 논리"
+        }
+      ]
+    },
+    {
+      "id": "archify.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 페이지는 수여·임명·위임·회수 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기계 입력과 검증 흐름"
+        }
+      ]
+    },
+    {
+      "id": "archify.b4",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "archify",
+      "text": "{\"domainId\":\"D11\",\"diagramId\":\"d11-flow\",\"moduleTitle\":\"D11 운용 흐름\"}"
+    },
+    {
+      "id": "archify.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소비자 계약(authority-and-conservation-no-roll): Title count conserved; delegation subset of actually held scope without changing holder. Preserve existing direct ducal limit 2 as documented old contract, not d10 rating."
+        }
+      ]
+    },
+    {
+      "id": "archify.b6",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계산과 출력"
+        }
+      ]
+    },
+    {
+      "id": "archify.b7",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "text",
+      "text": "D11-TITLE-CONSERVATION [] N_after = N_before; H_after(T) = recipient iff valid grant commit; count(holders(T)) = 1\nD11-DUCAL-BOUNDARY [] recipientDirectDucalAfter = recipientDirectDucalBefore + indicator(grantedTitleIsDucal); eligible iff after <= 2\nD11-SINGLE-RESULT [] committedEffects(eventId) <= 1\nD11-F1 [후보·승인 전] titleCountAfter=titleCountBefore; valid grant changes one legal holder; delegatedScope subsetOf actuallyHeldScope while holder unchanged\nD11-F2 [후보·승인 전] directDucalAfter=directDucalBefore+indicator(isDucal); existing eligibility limit <=2; new result at most once\n"
+    },
+    {
+      "id": "archify.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b9",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태 필드와 보존 경계"
+        }
+      ]
+    },
+    {
+      "id": "archify.b10",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "titleId — string (permanent-title-ID)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "snapshot — safe integer (ledger-revision)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "operation — enum (operation-kind)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "eventId — string (permanent-event-ID)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "acceptedOrder — array of event IDs (D18 ordered events)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "grantorRank,titleRank,recipientDucalCount — safe integer (ordered-rank / directly-held-title-count)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "authority,consent,membership,capable,ratified,ratifierAlive — boolean (verified guard)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "term — approved contract record reference (D18 event/time unit explicitly named by record)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "obligations — array of approved clause references (clause-defined goods/quantity/time)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "signerLoss — enum (contract disposition)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "superiorEdges — array of title-pair references (contract-edge)"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b11",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "자료 소유자는 D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order, 유지 계약은 D11-TITLE-CONSERVATION·D11-DUCAL-BOUNDARY·D11-SINGLE-RESULT다. 상태 소유 경계는 title holder/controller,office,delegation scope,ducal count,contract clause,ratification,key/location handover,receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+        }
+      ]
+    },
+    {
+      "id": "archify.b12",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "오류·보류 코드"
+        }
+      ]
+    },
+    {
+      "id": "archify.b13",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "후보 오류: E_AUTHORITY, E_CONSENT, E_POLICY, E_CONSERVATION"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기존 평가기 오류: E_INPUT, E_RULES_VERSION, E_DUPLICATE_ID, E_EVENT_CONFLICT, E_STALE_SNAPSHOT, E_AUTHORITY, E_CAPABILITY, E_MEMBERSHIP, E_RANK, E_LIMIT"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b14",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "차용 제거와 적용 범위"
+        }
+      ]
+    },
+    {
+      "id": "archify.b15",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제거 대상 차용 산식: —. No confirmed GURPS arithmetic in inspected formulaSheet/evaluator; retain ordinary counts, sets, sums and policy locks. D09 reference explicitly invokes no contest."
+        }
+      ]
+    },
+    {
+      "id": "archify.b16",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 도메인에는 아직 기록된 신규 모듈 적용 항목이 없다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b17",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 범위 한계: No domain-specific new original-trpg module. Reuse existing original bounded contracts; do not mark everything undecided. 다음 구현 단위는 U-D11-grant-scope-handover(TOOL/tools/mechanisms/original-trpg/grant-scope-handover.mjs, TOOL/tools/mechanisms/original-trpg/grant-scope-handover.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
+        }
+      ]
+    },
+    {
+      "id": "archify.flow-detail.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "흐름 노드별 처리와 원문 단계"
+        }
+      ]
+    },
+    {
+      "id": "archify.flow-detail.table",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "수여할 하위 작위 — [작위 수여] 기존 작위와 현재 보유자·개정을 확인한다. 수여자의 지위보다 낮은 작위와 해당 국가 구성원 수혜자가 필요하다. (원문: d11.b9.orderedSteps[4])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "공작위 한도 검사 — [작위 수여] 직접 공작위 수에 수여 대상이 공작위일 때만 1을 더한다. 결과가 2를 넘으면 거부하며 잘라내지 않는다. (원문: d11.b9.formulaSheet[1].e​xpression; d11.b9.formulaSheet[1].u​nit; d11.b9.formulaSheet[1].a​uthority; d11.b9.formulaSheet[1].r​ounding; d11.b9.formulaSheet[1].c​lamp)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동의·생존·의례 — [작위 수여] 수혜자 동의와 살아 있는 적법 인준권자, 필요한 의례·기록·유물 근거를 각각 확인한다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동일 작위 보유자 변경 — [작위 수여] 모든 조건 충족 시 같은 작위가 한 보유 목록에서 빠지고 정확히 한 수혜자 목록에 들어간다. 전체 작위 수와 기관 재산은 보존한다. (원문: d11.b9.commitPoint)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실물 인계 별도 — [작위 수여] 필수 의례 근거가 없으면 법적 수여 불가다. 법적 수여 후 열쇠가 없으면 권리는 보유하되 회수·운영 인계가 미완이다. (원문: d11.b11.stateSheet.custo​dy)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "직위 임명 — [임명·위임·회수] 임명은 office 권한만 변경하며 법적 작위 보유자를 바꾸지 않는다. (원문: d11.b11.stateSheet.owner​ship)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보유 범위 내 위임 — [임명·위임·회수] 위임은 실제 보유한 권한의 부분집합에 한정하고 원보유자를 유지한다. (원문: d11.b9.orderedSteps[5])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "회수 조항·위반·인준 — [임명·위임·회수] 기존 승인 회수 조항과 위반 증거 및 해당 인준이 필요하다. 회수 완료 이전 법적 보유를 바꾸지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "계약 회수 — [임명·위임·회수] 유효한 회수는 그 계약 범위만 종료하고 별도 실물 인계까지 자동 완료하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "불법 압류 — [임명·위임·회수] 실제 압류는 지배·보관과 분쟁·배신 사건만 바꾼다. 적법 수여·회수로 둔갑하지 않는다. (원문: d11.b9.orderedSteps[7])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "서명자 상실 — [상실·취소·보존] 해당 계약의 keep/reratify/terminate 처분을 읽는다. 없으면 제안 필요이며 조직은 자동 삭제되지 않는다. (원문: d11.b9.orderedSteps[8])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "직위 상실 범위 — [상실·취소·보존] 그 직위의 서명·지휘·운영만 중지한다. 상속·대행·흡수·이전을 자동 만들지 않는다. (원문: d11.b11.stateSheet.offic​eLoss)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "반영 전후 취소 — [상실·취소·보존] 법적 반영 전에는 보유자를 유지하고, 반영 후에는 남은 인계만 재검사한다. 소비·완료 진척을 되돌리지 않는다. (원문: d11.b9.lifecycle.cancel)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "상위 계약 보존 — [상실·취소·보존] 승인된 상하 계약 간선만 읽는다. 수여가 하위 계약 전체의 이전이나 외부 게임의 부모·순환 규칙 채택을 뜻하지 않는다. (원문: d11.b11.stateSheet.graph​)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "정확 입력·단위 — 필수 키·타입·영구 ID·단위를 검증한다. 미확인 입력과 잘못된 형식을 구분한다. (원문: d11.b9.fields[0].name; d11.b9.fields[0].type; d11.b9.fields[0].unit; d11.b9.fields[0].range; d11.b9.fields[0].null; d11.b9.fields[0].owner; d11.b9.fields[0].read; d11.b9.fields[0].write; d11.b9.fields[0].snapsho​t; d11.b9.fields[0].commitP​oint; d11.b9.fields[1].name; d11.b9.fields[1].type; d11.b9.fields[1].unit; d11.b9.fields[1].range; d11.b9.fields[1].null; d11.b9.fields[1].owner; d11.b9.fields[1].read; d11.b9.fields[1].write; d11.b9.fields[1].snapsho​t; d11.b9.fields[1].commitP​oint; d11.b9.fields[2].name; d11.b9.fields[2].type; d11.b9.fields[2].unit; d11.b9.fields[2].range[0​]; d11.b9.fields[2].range[1​]; d11.b9.fields[2].range[2​]; d11.b9.fields[2].range[3​]; d11.b9.fields[2].range[4​]; d11.b9.fields[2].range[5​]; d11.b9.fields[2].range[6​]; d11.b9.fields[2].range[7​]; d11.b9.fields[2].null; d11.b9.fields[2].owner; d11.b9.fields[2].read; d11.b9.fields[2].write; d11.b9.fields[2].snapsho​t; d11.b9.fields[2].commitP​oint; d11.b9.fields[3].name; d11.b9.fields[3].type; d11.b9.fields[3].unit; d11.b9.fields[3].range; d11.b9.fields[3].null; d11.b9.fields[3].owner; d11.b9.fields[3].read; d11.b9.fields[3].write; d11.b9.fields[3].snapsho​t; d11.b9.fields[3].commitP​oint; d11.b9.fields[4].name; d11.b9.fields[4].type; d11.b9.fields[4].unit; d11.b9.fields[4].range; d11.b9.fields[4].null; d11.b9.fields[4].owner; d11.b9.fields[4].read; d11.b9.fields[4].write; d11.b9.fields[4].snapsho​t; d11.b9.fields[4].commitP​oint; d11.b9.fields[5].name; d11.b9.fields[5].type; d11.b9.fields[5].unit; d11.b9.fields[5].range; d11.b9.fields[5].null; d11.b9.fields[5].owner; d11.b9.fields[5].read; d11.b9.fields[5].write; d11.b9.fields[5].snapsho​t; d11.b9.fields[5].commitP​oint; d11.b9.fields[6].name; d11.b9.fields[6].type; d11.b9.fields[6].unit; d11.b9.fields[6].range[0​]; d11.b9.fields[6].range[1​]; d11.b9.fields[6].null; d11.b9.fields[6].owner; d11.b9.fields[6].read; d11.b9.fields[6].write; d11.b9.fields[6].snapsho​t; d11.b9.fields[6].commitP​oint; d11.b9.fields[7].name; d11.b9.fields[7].type; d11.b9.fields[7].unit; d11.b9.fields[7].range; d11.b9.fields[7].null; d11.b9.fields[7].owner; d11.b9.fields[7].read; d11.b9.fields[7].write; d11.b9.fields[7].snapsho​t; d11.b9.fields[7].commitP​oint; d11.b9.fields[8].name; d11.b9.fields[8].type; d11.b9.fields[8].unit; d11.b9.fields[8].range; d11.b9.fields[8].null; d11.b9.fields[8].owner; d11.b9.fields[8].read; d11.b9.fields[8].write; d11.b9.fields[8].snapsho​t; d11.b9.fields[8].commitP​oint; d11.b9.fields[9].name; d11.b9.fields[9].type; d11.b9.fields[9].unit; d11.b9.fields[9].range[0​]; d11.b9.fields[9].range[1​]; d11.b9.fields[9].range[2​]; d11.b9.fields[9].null; d11.b9.fields[9].owner; d11.b9.fields[9].read; d11.b9.fields[9].write; d11.b9.fields[9].snapsho​t; d11.b9.fields[9].commitP​oint; d11.b9.fields[10].name; d11.b9.fields[10].type; d11.b9.fields[10].unit; d11.b9.fields[10].range;​ d11.b9.fields[10].null; d11.b9.fields[10].owner;​ d11.b9.fields[10].read; d11.b9.fields[10].write;​ d11.b9.fields[10].snapsh​ot; d11.b9.fields[10].commit​Point)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동일 사건 내용 비교 — 일반 변환 어댑터에서 이미 수락한 동일 신원·payload는 재생한다. 바뀐 내용은 거부하고 새 사건은 현재 판본을 확인한다. 원본 평가기의 중복 거부와 동일한 것으로 간주하지 않는다. (원문: d11.b9.rulesVersion; d11.b9.snapshot; d11.b9.failure)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "현재 판본·행위 선택 — 정확한 현재 개정·규칙을 확인한 뒤 요청된 독립 행위로 분기한다. 다른 논리 단위의 선후관계를 만들지 않는다. (원문: d11.b9.schemaVersion; d11.b9.domainId; d11.b9.mechanismId; d11.b9.status; d11.b9.dataOwner; d11.b9.readSet[0]; d11.b9.readSet[1]; d11.b9.readSet[2]; d11.b9.readSet[3]; d11.b9.readSet[4]; d11.b9.readSet[5]; d11.b9.orderedSteps[0]; d11.b9.orderedSteps[1]; d11.b9.orderedSteps[2]; d11.b9.orderedSteps[3]; d11.b9.orderedSteps[6]; d11.b9.orderedSteps[9]; d11.b9.formulaSheet[0].e​xpression; d11.b9.formulaSheet[0].u​nit; d11.b9.formulaSheet[0].a​uthority; d11.b9.formulaSheet[0].r​ounding; d11.b9.formulaSheet[0].c​lamp; d11.b9.formulaSheet[2].e​xpression; d11.b9.formulaSheet[2].u​nit; d11.b9.formulaSheet[2].a​uthority; d11.b9.formulaSheet[2].r​ounding; d11.b9.formulaSheet[2].c​lamp; d11.b9.rng.scope; d11.b9.rng.reason; d11.b9.rng.basis; d11.b9.time; d11.b9.rounding; d11.b9.clamps; d11.b9.lifecycle.death; d11.b9.lifecycle.load; d11.b9.scope.numericBala​nceReady; d11.b9.scope.runtimeImpl​emented; d11.b9.scope.worldFactsI​ssued; d11.b9.scope.executionSc​hemaReady; d11.b11.decisionApplicat​ion.grantRecall; d11.b11.decisionApplicat​ion.titles; d11.b11.decisionApplicat​ion.country; d11.b11.decisionApplicat​ion.organization; d11.b11.decisionApplicat​ion.treaty; d11.b11.approvalBoundary​; d11.b11.stateSheet.grant​[0]; d11.b11.stateSheet.grant​[1]; d11.b11.stateSheet.grant​[2]; d11.b11.stateSheet.grant​[3]; d11.b11.stateSheet.grant​[4]; d11.b11.stateSheet.grant​[5]; d11.b11.stateSheet.grant​[6]; d11.b11.stateSheet.deleg​ation[0]; d11.b11.stateSheet.deleg​ation[1]; d11.b11.stateSheet.deleg​ation[2]; d11.b11.stateSheet.deleg​ation[3]; d11.b11.stateSheet.vassa​l; d11.b11.stateSheet.effec​tiveTime; d11.b11.exceptions[0]; d11.b11.exceptions[1]; d11.b11.exceptions[2]; d11.b11.exceptions[3]; d11.b11.exceptions[4]; d11.b11.exceptions[5]; d11.b11.exceptions[6]; d11.b11.exceptions[7]; d11.b11.exceptions[8]; d11.b11.exceptions[9]; d11.b11.exceptions[10]; d11.b11.exceptions[11]; d11.b11.exceptions[12]; d11.b11.exceptions[13]; d11.b11.exceptions[14]; d11.b11.exceptions[15])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보류·원상 보존 — 미확인·미승인 입력 때문에 해당 의존 행위만 보류한다. 세계는 정지하지 않으며 소비·완료 진척은 보존한다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "명시 오류·원상 보존 — 형식·단위·판본·권한·동의·실행 가능성·보존 오류를 명시 거부한다. 상태·예약·난수·수락 영수증을 새로 반영하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "저장 결과 재생 — 일반 어댑터의 동일 수락 신원·동일 내용은 기존 결과를 반환한다. 추가 효과·난수 소비·개정은 없다. 기존 평가기별 중복 오류를 임의 없애지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "선택 결과 원자 검증 — 해당 행위가 허용한 신원·수량·권한·완료 소비의 보존을 검증한 후 결과·개정·영수증을 원자 반영한다. (원문: d11.b9.writeSet[0]; d11.b9.writeSet[1]; d11.b9.writeSet[2]; d11.b9.writeSet[3])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결과·허용 투영 반환 — 해당 행위의 기록된 결과 또는 읽기 전용 결과를 반환한다. 관측자 지식·접근권을 넘어 숨겨진 사실을 표시하거나 구현 완료를 주장하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기존 상태 유지 — 미확정 미리보기·비구속 제안·명시 거절은 기존 상태를 유지한다. 완료된 소비·진척을 되감지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.detail.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계약 항목별 원문과 적용 구분"
+        }
+      ]
+    },
+    {
+      "id": "archify.detail.table",
+      "kind": "table",
+      "header": [
+        "적용 구분과 대응 노드",
+        "원문 위치",
+        "계약 값"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.schemaVersion",
+          "1"
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.domainId",
+          "\"D11\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.mechanismId",
+          "\"seoul.d11.bounded-contr​act\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.status",
+          "\"bounded-contract-with-p​roposal-held\""
+        ],
+        [
+          "운용 — 동일 사건 내용 비교",
+          "d11.b9.rulesVersion",
+          "\"2026-10-08.d11.bounded-​1\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.rulesVersionLinka​ge.sourceRulesVersion",
+          "\"2026-10-08.d11.bounded-​1\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.rulesVersionLinka​ge.contractSHA256",
+          "\"73c6a43f5da210bb66f0791​7806c81a0695061188f69c4c​5504f4bbca62591e5\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
+          "\"doc.Save-and-Determinis​m\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.rulesVersionLinka​ge.canonRules[0].path",
+          "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.rulesVersionLinka​ge.canonRules[0].sha256",
+          "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
+          "\"doc.Singleplayer-Design​-SP-1-0-0\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.rulesVersionLinka​ge.canonRules[1].path",
+          "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.rulesVersionLinka​ge.canonRules[1].sha256",
+          "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.rulesVersionLinka​ge.canonRules[2].documen​tId",
+          "\"doc.Rules-FactionsWarfa​re\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.rulesVersionLinka​ge.canonRules[2].path",
+          "\"canon/locales/ko-KR/rul​es/rules-factions-warfar​e-clauses.json\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.rulesVersionLinka​ge.canonRules[2].sha256",
+          "\"cd10396fbf6bf4368f043a5​efb493f5e743b496f2c0f3b6​1f19db2b148adfdec\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.rulesVersionLinka​ge.compatibility",
+          "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.dataOwner",
+          "\"D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[0].name",
+          "\"titleId\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[0].type",
+          "\"string\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[0].unit",
+          "\"permanent-title-ID\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[0].range",
+          "\"existing D10 record\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[0].null",
+          "\"reject E_INPUT\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[0].owner",
+          "\"D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[0].read",
+          "\"D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[0].write",
+          "\"D11 operation result/delegation/office​/contract status; D10 authorized holder delta at single rights writer; D13 custody request through owner; D07 dispute/betrayal issue event only\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[0].snapsho​t",
+          "\"Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[0].commitP​oint",
+          "\"All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[1].name",
+          "\"snapshot\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[1].type",
+          "\"safe integer\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[1].unit",
+          "\"ledger-revision\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[1].range",
+          "\"nonnegative\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[1].null",
+          "\"reject E_INPUT\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[1].owner",
+          "\"D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[1].read",
+          "\"D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[1].write",
+          "\"D11 operation result/delegation/office​/contract status; D10 authorized holder delta at single rights writer; D13 custody request through owner; D07 dispute/betrayal issue event only\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[1].snapsho​t",
+          "\"Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[1].commitP​oint",
+          "\"All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].name",
+          "\"operation\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].type",
+          "\"enum\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].unit",
+          "\"operation-kind\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].range[0​]",
+          "\"grant\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].range[1​]",
+          "\"appointment\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].range[2​]",
+          "\"delegation\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].range[3​]",
+          "\"recall\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].range[4​]",
+          "\"seizure\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].range[5​]",
+          "\"signerLoss\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].range[6​]",
+          "\"delegationEnd\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].range[7​]",
+          "\"handover\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].null",
+          "\"reject E_INPUT\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].owner",
+          "\"D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].read",
+          "\"D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].write",
+          "\"D11 operation result/delegation/office​/contract status; D10 authorized holder delta at single rights writer; D13 custody request through owner; D07 dispute/betrayal issue event only\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].snapsho​t",
+          "\"Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[2].commitP​oint",
+          "\"All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[3].name",
+          "\"eventId\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[3].type",
+          "\"string\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[3].unit",
+          "\"permanent-event-ID\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[3].range",
+          "\"D18 accepted event; replays must bind identical payload\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[3].null",
+          "\"reject E_INPUT\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[3].owner",
+          "\"D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[3].read",
+          "\"D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[3].write",
+          "\"D11 operation result/delegation/office​/contract status; D10 authorized holder delta at single rights writer; D13 custody request through owner; D07 dispute/betrayal issue event only\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[3].snapsho​t",
+          "\"Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[3].commitP​oint",
+          "\"All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[4].name",
+          "\"acceptedOrder\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[4].type",
+          "\"array of event IDs\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[4].unit",
+          "\"D18 ordered events\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[4].range",
+          "\"already accepted order supplied by D18\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[4].null",
+          "\"no local priority formula; proposal remains\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[4].owner",
+          "\"D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[4].read",
+          "\"D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[4].write",
+          "\"D11 operation result/delegation/office​/contract status; D10 authorized holder delta at single rights writer; D13 custody request through owner; D07 dispute/betrayal issue event only\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[4].snapsho​t",
+          "\"Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[4].commitP​oint",
+          "\"All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[5].name",
+          "\"grantorRank,titleRank,r​ecipientDucalCount\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[5].type",
+          "\"safe integer\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[5].unit",
+          "\"ordered-rank / directly-held-title-coun​t\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[5].range",
+          "\"nonnegative authored rank/count; ducal direct holdings <=2\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[5].null",
+          "\"reject E_INPUT\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[5].owner",
+          "\"D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[5].read",
+          "\"D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[5].write",
+          "\"D11 operation result/delegation/office​/contract status; D10 authorized holder delta at single rights writer; D13 custody request through owner; D07 dispute/betrayal issue event only\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[5].snapsho​t",
+          "\"Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[5].commitP​oint",
+          "\"All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[6].name",
+          "\"authority,consent,membe​rship,capable,ratified,r​atifierAlive\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[6].type",
+          "\"boolean\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[6].unit",
+          "\"verified guard\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[6].range[0​]",
+          "true"
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[6].range[1​]",
+          "false"
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[6].null",
+          "\"unknown is not false or implicit approval\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[6].owner",
+          "\"D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[6].read",
+          "\"D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[6].write",
+          "\"D11 operation result/delegation/office​/contract status; D10 authorized holder delta at single rights writer; D13 custody request through owner; D07 dispute/betrayal issue event only\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[6].snapsho​t",
+          "\"Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[6].commitP​oint",
+          "\"All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[7].name",
+          "\"term\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[7].type",
+          "\"approved contract record reference\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[7].unit",
+          "\"D18 event/time unit explicitly named by record\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[7].range",
+          "\"record-specific, no default duration\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[7].null",
+          "\"E_PROPOSAL_REQUIRED for production instantiation\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[7].owner",
+          "\"D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[7].read",
+          "\"D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[7].write",
+          "\"D11 operation result/delegation/office​/contract status; D10 authorized holder delta at single rights writer; D13 custody request through owner; D07 dispute/betrayal issue event only\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[7].snapsho​t",
+          "\"Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[7].commitP​oint",
+          "\"All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[8].name",
+          "\"obligations\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[8].type",
+          "\"array of approved clause references\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[8].unit",
+          "\"clause-defined goods/quantity/time\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[8].range",
+          "\"water/transit/ration/es​cort/record/muster where actually agreed\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[8].null",
+          "\"E_PROPOSAL_REQUIRED\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[8].owner",
+          "\"D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[8].read",
+          "\"D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[8].write",
+          "\"D11 operation result/delegation/office​/contract status; D10 authorized holder delta at single rights writer; D13 custody request through owner; D07 dispute/betrayal issue event only\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[8].snapsho​t",
+          "\"Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[8].commitP​oint",
+          "\"All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[9].name",
+          "\"signerLoss\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[9].type",
+          "\"enum\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[9].unit",
+          "\"contract disposition\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[9].range[0​]",
+          "\"keep\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[9].range[1​]",
+          "\"reratify\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[9].range[2​]",
+          "\"terminate\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[9].null",
+          "\"E_PROPOSAL_REQUIRED\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[9].owner",
+          "\"D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[9].read",
+          "\"D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[9].write",
+          "\"D11 operation result/delegation/office​/contract status; D10 authorized holder delta at single rights writer; D13 custody request through owner; D07 dispute/betrayal issue event only\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[9].snapsho​t",
+          "\"Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[9].commitP​oint",
+          "\"All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[10].name",
+          "\"superiorEdges\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[10].type",
+          "\"array of title-pair references\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[10].unit",
+          "\"contract-edge\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[10].range",
+          "\"explicit approved upper/lower contract records; no inferred graph rewiring\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[10].null",
+          "\"E_PROPOSAL_REQUIRED\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[10].owner",
+          "\"D11 contract records; D10 title identity and rights; D13 property and custody; D09 ratification institutions; D18 accepted event order\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[10].read",
+          "\"D01 identity/alive/capabilit​y; D03 consent/authority; D09 registered ratifier and institution; D10 title ID/rank/holder/revision/​superior contract; D13 custody/included rights; D18 accepted event order and rule version\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[10].write",
+          "\"D11 operation result/delegation/office​/contract status; D10 authorized holder delta at single rights writer; D13 custody request through owner; D07 dispute/betrayal issue event only\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[10].snapsh​ot",
+          "\"Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48.\""
+        ],
+        [
+          "운용 — 정확 입력·단위",
+          "d11.b9.fields[10].commit​Point",
+          "\"All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.readSet[0]",
+          "\"D01 identity/alive/capabilit​y\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.readSet[1]",
+          "\"D03 consent/authority\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.readSet[2]",
+          "\"D09 registered ratifier and institution\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.readSet[3]",
+          "\"D10 title ID/rank/holder/revision/​superior contract\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.readSet[4]",
+          "\"D13 custody/included rights\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.readSet[5]",
+          "\"D18 accepted event order and rule version\""
+        ],
+        [
+          "운용 — 선택 결과 원자 검증",
+          "d11.b9.writeSet[0]",
+          "\"D11 operation result/delegation/office​/contract status\""
+        ],
+        [
+          "운용 — 선택 결과 원자 검증",
+          "d11.b9.writeSet[1]",
+          "\"D10 authorized holder delta at single rights writer\""
+        ],
+        [
+          "운용 — 선택 결과 원자 검증",
+          "d11.b9.writeSet[2]",
+          "\"D13 custody request through owner\""
+        ],
+        [
+          "운용 — 선택 결과 원자 검증",
+          "d11.b9.writeSet[3]",
+          "\"D07 dispute/betrayal issue event only\""
+        ],
+        [
+          "운용 — 동일 사건 내용 비교",
+          "d11.b9.snapshot",
+          "\"Validate all participating revisions before committing. D11 closure model demonstrates one title ledger only; cross-domain transaction implementation belongs to Task48.\""
+        ],
+        [
+          "운용 — 동일 작위 보유자 변경",
+          "d11.b9.commitPoint",
+          "\"All grant/recall guards pass and institution ratification is recorded; same permanent title leaves one holder list and enters exactly one recipient list in one logical commit. Custody is not that commit.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.orderedSteps[0]",
+          "\"Parse typed operation and unit-bearing snapshot; reject damaged or wrong-version load.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.orderedSteps[1]",
+          "\"Match existing result by event ID and full payload before reapplying. Reject changed replay.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.orderedSteps[2]",
+          "\"Read title identity and revision; refuse stale snapshot without mutations.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.orderedSteps[3]",
+          "\"Check capability, actual authority, location/delivery, exclusive resource reservations and counterpart consent/institution in D03 order.\""
+        ],
+        [
+          "운용 — 수여할 하위 작위",
+          "d11.b9.orderedSteps[4]",
+          "\"For grant require existing lower title, country-member recipient, recipient consent, valid living ratifier and applicable rite/record/relic proof. Direct ducal holding after addition cannot exceed existing limit two.\""
+        ],
+        [
+          "운용 — 보유 범위 내 위임",
+          "d11.b9.orderedSteps[5]",
+          "\"For recall require approved existing clause, breach evidence and applicable ratification. For delegation keep legal holder and restrict scope to actually held rights. Appointment touches office powers only.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.orderedSteps[6]",
+          "\"Emit exactly one legal delta for grant/recall. Preserve ID count, institutional property, omitted assets, original-owner rights and completed progress.\""
+        ],
+        [
+          "운용 — 불법 압류",
+          "d11.b9.orderedSteps[7]",
+          "\"Assess physical handover separately. Unlawful seizure affects control/custody and opens dispute/betrayal, never lawful holder or recall.\""
+        ],
+        [
+          "운용 — 서명자 상실",
+          "d11.b9.orderedSteps[8]",
+          "\"On signer loss use that contract's keep/reratify/terminate disposition; missing disposition is proposal-needed. Never delete organization on head death.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.orderedSteps[9]",
+          "\"Persist source-bound rule version, result ID and updated revisions. On load reject mismatch/corruption rather than infer migration.\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.formulaSheet[0].i​d",
+          "\"D11-TITLE-CONSERVATION\"​"
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.formulaSheet[0].e​xpression",
+          "\"N_after = N_before; H_after(T) = recipient iff valid grant commit; count(holders(T)) = 1\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.formulaSheet[0].u​nit",
+          "\"title identities / holder identities\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.formulaSheet[0].a​uthority",
+          "\"SP1 sp1.b40\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.formulaSheet[0].r​ounding",
+          "\"none; exact integer/set operation\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.formulaSheet[0].c​lamp",
+          "\"none\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.formulaSheet[1].i​d",
+          "\"D11-DUCAL-BOUNDARY\""
+        ],
+        [
+          "운용 — 공작위 한도 검사",
+          "d11.b9.formulaSheet[1].e​xpression",
+          "\"recipientDirectDucalAft​er = recipientDirectDucalBefo​re + indicator(grantedTitleIs​Ducal); eligible iff after <= 2\""
+        ],
+        [
+          "운용 — 공작위 한도 검사",
+          "d11.b9.formulaSheet[1].u​nit",
+          "\"direct ducal title count\""
+        ],
+        [
+          "운용 — 공작위 한도 검사",
+          "d11.b9.formulaSheet[1].a​uthority",
+          "\"existing SP1 sp1.b38 limit, not new balance\""
+        ],
+        [
+          "운용 — 공작위 한도 검사",
+          "d11.b9.formulaSheet[1].r​ounding",
+          "\"exact integer\""
+        ],
+        [
+          "운용 — 공작위 한도 검사",
+          "d11.b9.formulaSheet[1].c​lamp",
+          "\"reject over-limit, do not silently clamp\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b9.formulaSheet[2].i​d",
+          "\"D11-SINGLE-RESULT\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.formulaSheet[2].e​xpression",
+          "\"committedEffects(eventI​d) <= 1\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.formulaSheet[2].u​nit",
+          "\"logical commits per permanent event\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.formulaSheet[2].a​uthority",
+          "\"SP1 sp1.b13\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.formulaSheet[2].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.formulaSheet[2].c​lamp",
+          "\"no duplicate commit\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.rng.scope",
+          "\"none\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.rng.reason",
+          "\"D11 has no approved skill/probability or GURPS-like numeric consumer; authority and ratification are hard guards, not dice rolls.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.rng.basis",
+          "\"Task25 basis.json public anchors L-success/L-margin/L-con​test do not authorize a grant success probability. D11 formulaIds=[] in integration mapping. No Basic 2004 claim and no unrelated 3d6 invention.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.time",
+          "\"D18 event-driven accepted sequence; no fixed tick, duration, free action or zero-cost assumption\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.rounding",
+          "\"공식별 명시된 정확한 집합·정수·상태 연산을 따른다. 미정 수치 정책을 추가하지 않는다.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.clamps",
+          "\"공식에 명시된 경계만 적용하고 미정 값을 임의로 클램프하지 않는다.\""
+        ],
+        [
+          "운용 — 반영 전후 취소",
+          "d11.b9.lifecycle.cancel",
+          "\"Before legal commit preserve holder; after legal commit re-check remaining handover, never rewind consumed goods or finished progress.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.lifecycle.death",
+          "\"Before approval no ratification by deceased actor; no fabricated replacement. Agent death leaves original holder; ongoing actions require D03 approved termination policy, otherwise proposal-needed.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.lifecycle.load",
+          "\"Exact rulesVersion and well-formed persisted state required; no silent migration or repeated effect.\""
+        ],
+        [
+          "운용 — 동일 사건 내용 비교",
+          "d11.b9.failure",
+          "\"D18 supplies accepted order; first valid same-revision title update changes revision and makes the other proposal stale. No invented priority/tie key. Duplicate identical event returns no second effect; same ID with different payload is explicit conflict.\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[0].i​d",
+          "\"P11-COUNTRY-RATIFICATIO​N\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[0].o​wner",
+          "\"D09\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[0].d​escription",
+          "\"Actual 16-country ratifier identity, quorum, tie resolution, acting registration, public faith, culture keys and rite calendar.\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[0].v​alues",
+          "null"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[0].d​ecision",
+          "\"T68-D09-COUNTRY-LAWS A is authoring direction only\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[0].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[0].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[0].o​perative",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[1].i​d",
+          "\"P11-TITLE-RECORDS\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[1].o​wner",
+          "\"D10\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[1].d​escription",
+          "\"Unassigned title IDs/rank/territory/holde​r/superior contract and recognition records; prepare per GP-07 B but do not instantiate synthetic oracle titles.\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[1].v​alues",
+          "null"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[1].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[1].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[1].o​perative",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[2].i​d",
+          "\"P11-CONTRACT-TERMS\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[2].o​wner",
+          "\"D11/D17\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[2].d​escription",
+          "\"Actual per-contract authority, obligations, expiry/death disposition, recall clause, violation evidence, ratification and physical return terms.\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[2].v​alues",
+          "null"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[2].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[2].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[2].o​perative",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[3].i​d",
+          "\"P11-NUMERIC-TERMS\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[3].o​wner",
+          "\"D11/D13/D17\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[3].d​escription",
+          "\"Grant cost, delegation duration, recall deadline, obligation quantities/rates, evaluation function, clause prices and acquisition/stabilizatio​n/integration cost and duration.\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[3].v​alues",
+          "null"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[3].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[3].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[3].o​perative",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[4].i​d",
+          "\"P11-ORDER\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[4].o​wner",
+          "\"D18\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[4].d​escription",
+          "\"Concrete event priority/tie key must come from approved D18 ordering, not an invented D11 index rule.\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[4].v​alues",
+          "null"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[4].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[4].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[4].o​perative",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[5].i​d",
+          "\"P11-ONGOING-ACTION\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[5].o​wner",
+          "\"D03\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[5].d​escription",
+          "\"Disposition of ongoing delegated actions at death/expiry/recall, including remaining reservation release.\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[5].v​alues",
+          "null"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[5].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[5].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[5].o​perative",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[6].i​d",
+          "\"P11-INCLUDED-RIGHTS\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[6].o​wner",
+          "\"D13/D15\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[6].d​escription",
+          "\"Per-asset ownership/transfer/manag​ement/command permission, actual delivery and exclusive reservations.\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[6].v​alues",
+          "null"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[6].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[6].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[6].o​perative",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[7].i​d",
+          "\"P11-ORGANIZATION\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[7].o​wner",
+          "\"D09/D16\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[7].d​escription",
+          "\"Each existing organization's representative, administrator and dissolution clause; no deletion inferred from territory or head loss.\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[7].v​alues",
+          "null"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[7].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[7].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[7].o​perative",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[8].i​d",
+          "\"P11-CROSS-DOMAIN-COMMIT​\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[8].o​wner",
+          "\"Task48\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[8].d​escription",
+          "\"Actual coordinated single-writer settlement of grant/succession/peace against all participating revisions; isolated model is not proof of product atomicity.\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[8].v​alues",
+          "null"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[8].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[8].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류 — 운용 경로 제외",
+          "d11.b9.proposalHeld[8].o​perative",
+          "false"
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.scope.numericBala​nceReady",
+          "false"
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.scope.runtimeImpl​emented",
+          "false"
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.scope.worldFactsI​ssued",
+          "false"
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b9.scope.executionSc​hemaReady",
+          "false"
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b11.decisionIds[0]",
+          "\"T68-D11-CONTRACT-RECALL​/grant-recall:A\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b11.decisionIds[1]",
+          "\"GP-07/titles-ratificati​on:B\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b11.decisionIds[2]",
+          "\"T68-D09-COUNTRY-LAWS/co​untry-institutions-resid​ual:A\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b11.decisionIds[3]",
+          "\"T68-D16-ORGANIZATION-LI​FECYCLE/organization-per​sistence-residual:A\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b11.decisionIds[4]",
+          "\"GP-13/war-diplomacy-con​tract-residual:A\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.decisionApplicat​ion.grantRecall",
+          "\"Specify each contract's authority, duration, obligations, breach evidence, ratification and handover. This is an approved authoring direction, not approval of invented contract records.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.decisionApplicat​ion.titles",
+          "\"Unassigned records may be drafted as explicit proposals for item approval; do not create holders or legal title instances from examples.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.decisionApplicat​ion.country",
+          "\"Country-specific elector/quorum/resolver/​ratifier/acting inputs remain owned by D09; no universal quorum or chair vote.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.decisionApplicat​ion.organization",
+          "\"Territorial loss or head death alone does not delete the organization, debts, contracts or lineage. Registered representatives and dissolution clauses are required inputs.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.decisionApplicat​ion.treaty",
+          "\"Legal-effect and physical-handover events stay distinct; indivisible treaty clause sets are D17/D16 inputs, not a second D11 writer.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.approvalBoundary​",
+          "\"Approved shared semantics are executable only with verified institution/contract inputs. Synthetic oracle premises are not country laws, title records, authorizations or approvals. Whole-domain ready remains false while required production inputs are proposals.\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b11.sourceClaims[0]",
+          "\"SP1 sp1.b38-sp1.b44\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b11.sourceClaims[1]",
+          "\"r2.rwarfare-38.body\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b11.sourceClaims[2]",
+          "\"design-finalization-202​61006/D11/contract.json\"​"
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b11.sourceClaims[3]",
+          "\"task-24/cells/ck3/D11/v​erified-input-r2/rows.js​on\""
+        ],
+        [
+          "역사 참조 — 운용 경로 제외",
+          "d11.b11.sourceClaims[4]",
+          "\"task-24/cells/norland/D​11/verified-input-r2/row​s.json\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.stateSheet.grant​[0]",
+          "\"draft\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.stateSheet.grant​[1]",
+          "\"authority-and-target-ch​eck\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.stateSheet.grant​[2]",
+          "\"recipient-consent\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.stateSheet.grant​[3]",
+          "\"ratification\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.stateSheet.grant​[4]",
+          "\"rights-ledger-change\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.stateSheet.grant​[5]",
+          "\"operational-handover\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.stateSheet.grant​[6]",
+          "\"complete-or-dispute\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.stateSheet.deleg​ation[0]",
+          "\"valid\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.stateSheet.deleg​ation[1]",
+          "\"suspended\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.stateSheet.deleg​ation[2]",
+          "\"expired\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.stateSheet.deleg​ation[3]",
+          "\"recalled\""
+        ],
+        [
+          "운용 — 직위 임명",
+          "d11.b11.stateSheet.owner​ship",
+          "\"Grant changes the same title's legal holder. Appointment changes only office powers. Delegation changes named scope while retaining original holder. Recall changes nothing before clause, breach evidence and ratification.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.stateSheet.vassa​l",
+          "\"Signed contract, not an opinion score. Upper/lower title, proposers, signers, ratifiers, office/person attribution, public faith, culture keys, attended rite, obligations and signer-loss disposition are explicit. Missing institution inputs are not zero-cost approvals.\""
+        ],
+        [
+          "운용 — 상위 계약 보존",
+          "d11.b11.stateSheet.graph​",
+          "\"Only approved superior-contract edges are read; a grant does not infer transfers of subordinate contracts. D10/D09 validate their proposed graph changes. No CK3 native cycle/parent rule is adopted as Seoul authority.\""
+        ],
+        [
+          "운용 — 실물 인계 별도",
+          "d11.b11.stateSheet.custo​dy",
+          "\"Rite/relic inspection required for ratification is distinct from delivery of keys after ratification. Missing required rite prevents legal grant; missing handover keys leaves rights held but recovery incomplete.\""
+        ],
+        [
+          "운용 — 직위 상실 범위",
+          "d11.b11.stateSheet.offic​eLoss",
+          "\"Stops only that office's signature/command/operat​ion. No automatic inheritance, acting appointment, absorption or transfer.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.stateSheet.effec​tiveTime",
+          "\"Legal title update at recorded ratification commit. Physical control updates at distinct handover/seizure event; no invented cadence.\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[0]",
+          "\"E_INPUT\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[1]",
+          "\"E_RULES_VERSION\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[2]",
+          "\"E_DUPLICATE_ID\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[3]",
+          "\"E_EVENT_CONFLICT\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[4]",
+          "\"E_STALE_SNAPSHOT\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[5]",
+          "\"E_AUTHORITY\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[6]",
+          "\"E_CAPABILITY\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[7]",
+          "\"E_MEMBERSHIP\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[8]",
+          "\"E_RANK\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[9]",
+          "\"E_LIMIT\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[10]",
+          "\"E_CONSENT\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[11]",
+          "\"E_RATIFICATION\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[12]",
+          "\"E_RITE\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[13]",
+          "\"E_RECALL\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[14]",
+          "\"E_SCOPE\""
+        ],
+        [
+          "운용 — 현재 판본·행위 선택",
+          "d11.b11.exceptions[15]",
+          "\"E_PROPOSAL_REQUIRED\""
+        ]
+      ]
+    }
+  ]
+}

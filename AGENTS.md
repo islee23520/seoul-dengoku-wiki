@@ -58,6 +58,7 @@ flowchart LR
 |`docs/`, `assets/`, `vendor/`|운영 계약·문장 모티프 원본·tgz 의존성 + InkOS 서브모듈|`vendor/seoul-dengoku-inkos`는 격리 사용|
 |`tools/`|seoul-dengoku-tools에서 이관한 위키·인물 소관 도구(2026-11-02): `portal/`(로컬 도구 포털), `local-ai/`, `portrait/`(2D·3D 초상·`character-tool` ARP 리깅), `shared-web-ui/`, `document-renderer/`, `hub-deploy/`, `people-cli/`, `cast-cli/`, `people/`, `portrait-template/`|각 패키지는 독립 `package.json`·자체 테스트. 루트 `npm`/vite/tsconfig 범위 밖. 상세는 `tools/AGENTS.md`|
 |`.agents/skills/`|에이전트 스킬(`seoul-cast`, `seoul-character-images`, `mda-framework`)|스킬 본문의 실행 경로는 `tools/` 기준|
+|`gdd/`|seoul-dengoku-gdd(private)를 공개용으로 정리해 통합한 설계 정본(2026-11-02)|라이선스 미확인 경로는 이력에서 제거됨(`gdd/THIRD_PARTY_NOTICES.md` 참조). GDD 저작·빌드는 `gdd/AGENTS.md` 기준|
 
 ## Development Commands
 

@@ -1,0 +1,5 @@
+total=132 passed=130 failed=2 skipped=0
+실패 2건 = baseline 2종과 이름 일치(직전 오독 정정)
+- RuntimeAssetProvenanceTests.PlayableScenes_DoNotReferenceQuarantineOrTrellisAssets
+- UiToolkitVisualQaDefectTests.CaptureReceipts_RequireIsPlayingTrue_Roots_State_Head
+시뮬 결함 5건→12/12 전환, MaxTicks 상한 직접 검증 교정(원장 기록)

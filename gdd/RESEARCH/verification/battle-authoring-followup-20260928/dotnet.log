@@ -1,0 +1,63 @@
+PASS: handoff wounded HP + authored absent-participant default
+PASS: context identity retained
+PASS: explicit hero and soldier roster
+PASS: catalog isolated from source + returned setup mutations
+PASS: missing catalog entry
+PASS: missing context
+PASS: missing catalog
+PASS: duplicate catalog IDs
+PASS: wrong rules
+PASS: campaign + ledger unchanged after wrong rules
+PASS: missing rules
+PASS: campaign + ledger unchanged after missing rules
+PASS: missing nodes
+PASS: campaign + ledger unchanged after missing nodes
+PASS: null node
+PASS: campaign + ledger unchanged after null node
+PASS: duplicate nav ID
+PASS: campaign + ledger unchanged after duplicate nav ID
+PASS: unknown segment endpoint
+PASS: campaign + ledger unchanged after unknown segment endpoint
+PASS: null roster
+PASS: campaign + ledger unchanged after null roster
+PASS: null participant
+PASS: campaign + ledger unchanged after null participant
+PASS: unknown spawn
+PASS: campaign + ledger unchanged after unknown spawn
+PASS: unknown commander
+PASS: campaign + ledger unchanged after unknown commander
+PASS: unknown retreat
+PASS: campaign + ledger unchanged after unknown retreat
+PASS: missing retreat array
+PASS: campaign + ledger unchanged after missing retreat array
+PASS: unknown objective
+PASS: campaign + ledger unchanged after unknown objective
+PASS: duplicate unit IDs
+PASS: campaign + ledger unchanged after duplicate unit IDs
+PASS: duplicate soldier IDs
+PASS: campaign + ledger unchanged after duplicate soldier IDs
+PASS: unknown handoff participant
+PASS: campaign + ledger unchanged after unknown handoff participant
+PASS: HP max differs from handoff
+PASS: campaign + ledger unchanged after HP max differs from handoff
+PASS: invalid authored HP cannot be hidden by handoff
+PASS: campaign + ledger unchanged after invalid authored HP cannot be hidden by handoff
+PASS: invalid hero HP
+PASS: campaign + ledger unchanged after invalid hero HP
+PASS: NaN duration
+PASS: campaign + ledger unchanged after NaN duration
+PASS: infinite decision interval
+PASS: campaign + ledger unchanged after infinite decision interval
+PASS: infinite attack cooldown
+PASS: campaign + ledger unchanged after infinite attack cooldown
+PASS: NaN morale
+PASS: campaign + ledger unchanged after NaN morale
+PASS: invalid enum
+PASS: campaign + ledger unchanged after invalid enum
+PASS: missing visual ID
+PASS: campaign + ledger unchanged after missing visual ID
+PASS: missing radius
+PASS: campaign + ledger unchanged after missing radius
+PASS: explicit successful attach returns new campaign snapshot
+PASS: attachment one event + no campaign time
+DOTNET_ENGINE_FREE_CHECKS_PASSED=62

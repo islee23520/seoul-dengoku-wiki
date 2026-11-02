@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "rules/Game-Logic-Principles.md",
+    "lineStart": 1,
+    "lineEnd": 28,
+    "sha256": "8490b01e0d42f20a473fefe6f1e6193f045b0574aaac76aa8c17a218b06ce3ed"
+  },
+  "document": {
+    "id": "doc.Game-Logic-Principles",
+    "blockIds": [
+      "ch.title",
+      "ch.authority",
+      "ch.provenance",
+      "ch.sp",
+      "ch.s0",
+      "ch.p0",
+      "ch.s1",
+      "ch.p1",
+      "ch.s2",
+      "ch.p2",
+      "ch.s3",
+      "ch.p3",
+      "ch.decisions",
+      "ch.terms"
+    ],
+    "terminalLineFeeds": 2
+  },
+  "blocks": [
+    {
+      "id": "ch.title",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CH0 게임 로직 총칙"
+        }
+      ]
+    },
+    {
+      "id": "ch.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다. 참조 게임의 제도·수치를 서울 규칙으로 승격하지 않는다. 승인 계약은 구현 완료를 뜻하지 않으며 SP-1.0.0의 대체 범위가 과거 공유 세계 조항보다 우선한다."
+        }
+      ]
+    },
+    {
+      "id": "ch.provenance",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "외부 제품 원천: https://github.com/islee23520/seoul-dengoku/tree/main (측정 revision 3e3c03349eafaaf88347d119a4bdd0c6d44abc53; 인용은 고정 revision URL 사용). CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다. 해당 설치본의 무결성은 미검증이다. 출처 경로와 식별자는 조사 표기이며 게임 UI 표시명이 아니다."
+        }
+      ]
+    },
+    {
+      "id": "ch.sp",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "상위 계약: 싱글플레이 상세 기획",
+          "targetDocumentId": "doc.Singleplayer-Design-SP-1-0-0"
+        }
+      ]
+    },
+    {
+      "id": "ch.s0",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "0.1 삼층 표기와 충돌 우선순위"
+        }
+      ]
+    },
+    {
+      "id": "ch.p0",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: 제품 권한 https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/AGENTS.md#L52-L76 및 승인 SP-1.0.0을 최상위 근거로 삼는다. 코드 관찰은 해당 소스 범위의 구현 사실이며 제품 목표와 구별한다. CK3 참조는 설치본의 정적 스크립트[S]·define[D]·역컴파일[B]·관찰[O]·추론을 구분한다. 제품 권한: 미결정은 제도 미정으로 남기고 관행 수치를 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s1",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "0.2 결정론·원장 공통 계약"
+        }
+      ]
+    },
+    {
+      "id": "ch.p1",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Core/DeterministicCore.cs#L12-L118 의 개체·명령·사건·요청 ID, 정수 세계 틱, 사건 원인과 요약 해시를 유지한다. 같은 파일 :221-260의 원장·영수증 및 :276-337의 용도별 난수는 식별·인과·중복 정산 방지의 공통 기초다. https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/AGENTS.md#L72 는 난수 스트림·사건 정체성·정확히 한 번 정산 보존과 손상 저장 명시 실패를 요구한다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s2",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "0.3 CK3를 읽는 범위"
+        }
+      ]
+    },
+    {
+      "id": "ch.p2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3 참조: internal-architecture-synthesis.md:18-56의 삼층 개관은 설명 모델[INFERENCE]이지 전체 호출 그래프가 아니다. 같은 파일 :74,95-104 및 binary-rea-04-decompiled.md:163-249는 일일 커맨드 writer/reader의 국소 증거다. 이를 서울의 멀티플레이·리플레이·undo 기능 근거로 삼지 않는다. 파일워처 실동작·전체 scheduler 순서·저장 레이아웃 차이 원인은 미입증이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "0.4 용어와 장 경계"
+        }
+      ]
+    },
+    {
+      "id": "ch.p3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: 한국어 표기 계약을 따라 행위자·권한·단위·확정 상태를 분리한다. CH1 인물, CH2 관계, CH3 권력, CH4 경제, CH5 이동, CH6 전투, CH7 협상, CH8 문화·지식, CH9 시간, CH10 저장, CH11 구현으로 읽는다. 승인 ADR·국가 성립 계약·미결정 원장은 이 장이 재정의하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.decisions",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "제품 결정 원장 — 미결정은 소유자 권한",
+          "targetDocumentId": "doc.Open-Decisions"
+        }
+      ]
+    },
+    {
+      "id": "ch.terms",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "한국어 표기와 명명 규칙",
+          "targetDocumentId": "doc.Korean-Terminology-and-Naming"
+        }
+      ]
+    }
+  ]
+}

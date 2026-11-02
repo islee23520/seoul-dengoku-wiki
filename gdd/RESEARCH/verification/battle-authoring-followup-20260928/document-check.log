@@ -1,0 +1,7 @@
+PASS JSON evidence parses
+PASS 23 source hashes still match inspected/tested source
+PASS baseline HEAD unchanged; no tracked changes or preexisting staged files
+PASS recorded dotnet62/architecture89+3 and BLOCKED LFS120 counts match raw logs
+PASS local Markdown links resolve and prose has no trailing whitespace
+PASS live #281 body and director comment match parent snapshots
+Manual review: unsupported future fields, cap/hero/temporary leader distinctions, existing API signatures, rejection vs approval boundaries, actual verification vs deferred Unity acceptance explicitly separated

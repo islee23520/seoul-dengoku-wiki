@@ -15,7 +15,7 @@ function linkTarget(run, fromDir, targetFile) {
     // GDD pages are published by GDD/viewer under /gdd/<category>/<slug>.
     const route = ['rules', 'references', 'architecture', 'art'].includes(section) ? `/gdd/${section}/${name}`
       : !name ? `/gdd/design/${section}` : null
-    return `${route ?? `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/locales/ko-KR/${section}/${name.toLowerCase()}.json`}${anchor ? `#${anchor}` : ''}`
+    return `${route ?? `https://github.com/islee23520/seoul-dengoku-wiki/blob/main/gdd/canon/locales/ko-KR/${section}/${name.toLowerCase()}.json`}${anchor ? `#${anchor}` : ''}`
   }
   const path = posix.relative(fromDir, targetFile(domain, slug))
   return `${path}${anchor ? `#${anchor}` : ''}`

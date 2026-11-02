@@ -1,0 +1,12 @@
+RED — node --test tools/art/test-oddland-catalog.mjs
+
+✔ catalog contract and manifest coverage (12.446958ms)
+✖ classification samples (4.445709ms)
+✔ markdown totals agree (2.479083ms)
+ℹ tests 3
+ℹ pass 2
+ℹ fail 1
+
+AssertionError [ERR_ASSERTION]: expected Res/Prefabs/Character/CharPlayer.prefab to be ['prefab-character','spine-player','character-poc-only'], actual ['prefab-other','common','blockout-geometry'].
+
+This RED run also contains the newly added CharacterSpines and SpineAssets Stage1/Pig assertions; execution stops at the first failing assertion.

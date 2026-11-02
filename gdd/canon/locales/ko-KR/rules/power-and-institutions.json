@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "rules/Power-and-Institutions.md",
+    "lineStart": 1,
+    "lineEnd": 36,
+    "sha256": "95ab1cd89572f7adf9fa653f6a7e3058c488add240ba0ec9d19c13587ef576cd"
+  },
+  "document": {
+    "id": "doc.Power-and-Institutions",
+    "blockIds": [
+      "ch.title",
+      "overhaul.20261027.verdict",
+      "ch.authority",
+      "ch.provenance",
+      "ch.sp",
+      "ch.s0",
+      "ch.p0",
+      "ch.s1",
+      "ch.p1",
+      "ch.s2",
+      "ch.p2",
+      "ch.s3",
+      "ch.p3",
+      "ch.s4",
+      "ch.p4",
+      "ch.s5",
+      "ch.p5",
+      "ch.decisions",
+      "ch.terms",
+      "overhaul.20261027.contract-map",
+      "overhaul.20261027.supersession",
+      "overhaul.20261027.move",
+      "overhaul.20261027.battle",
+      "overhaul.20261027.succession",
+      "overhaul.20261027.verified-heading",
+      "overhaul.20261027.verified-facts"
+    ],
+    "terminalLineFeeds": 2
+  },
+  "blocks": [
+    {
+      "id": "ch.title",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CH3 권力 구조"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.verdict",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "최신 독립 검증: depth-verification-20261027.md:1855-1900(§9)은 정정된 depth-01/02/03 및 gap inventory의 정적 근거를 synthesis 입력 PASS로 판정한다. 최초 FAIL 이력은 보존한다. depth-04는 제한된 정적 충실도 PASS다. 이는 전체 게임플레이 의미·런타임 인과·설치 무결성·전투 피해식·Ghidra 원프로젝트 메타데이터 복원을 보증하지 않는다. 아래 참조는 CK3 구조 참고일 뿐 서울 제품 권한이 아니며 불일치했던 총계·코핑 효과·씨족 산식·유산 비용을 서울 규칙으로 채택하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다. 참조 게임의 제도·수치를 서울 규칙으로 승격하지 않는다. 승인 계약은 구현 완료를 뜻하지 않으며 SP-1.0.0의 대체 범위가 과거 공유 세계 조항보다 우선한다."
+        }
+      ]
+    },
+    {
+      "id": "ch.provenance",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "외부 제품 원천: https://github.com/islee23520/seoul-dengoku/tree/main (측정 revision 3e3c03349eafaaf88347d119a4bdd0c6d44abc53; 인용은 고정 revision URL 사용). CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다. 해당 설치본의 무결성은 미검증이다. 출처 경로와 식별자는 조사 표기이며 게임 UI 표시명이 아니다."
+        }
+      ]
+    },
+    {
+      "id": "ch.sp",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "상위 계약: 싱글플레이 상세 기획",
+          "targetDocumentId": "doc.Singleplayer-Design-SP-1-0-0"
+        }
+      ]
+    },
+    {
+      "id": "ch.s0",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "3.1 국가·기관·정통성"
+        }
+      ]
+    },
+    {
+      "id": "ch.p0",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: 국가 성립은 canon/contracts/state-formation-contract.json의 소유자 확정 계약을 참조한다. 독립 취득→국가 전이·사전 가입·개인 보유와 영토 구분을 재정의하지 않는다. SP-1.0.0의 티어·직위·직업·지휘권은 각각 다른 권한이다. 6지리왕국은 비보유자이며 제한 통지권을 승인권으로 확대하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s1",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "3.2 작위·권리·명분·인준"
+        }
+      ]
+    },
+    {
+      "id": "ch.p1",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Foundation/Presentation/SeoulCampaignSession.cs#L68 의 정착지는 재산이며 신규 작위 배분이 아니다. 인준·지지 및 권한 자격은 SP-1.0.0을 따른다. CK3 참조: mechanics-06-vassals-court-council.md:11-95 및 depth-02-power-structures.md:178-206의 계약그룹·단계 트리는 권리 표현의 참고다. 정정된 정적 참조 — depth-verification-20261027.md:1855-1900 PASS 범위에 한정; 씨족 배수·최종 세율 요약은 검증 불일치로 채택하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s2",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "3.3 수여·위임·회수·봉신 계약"
+        }
+      ]
+    },
+    {
+      "id": "ch.p2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: 동일 소속만으로 지휘권이나 소유권이 생기지 않는다. 정착 정산은 소유권 그래프를 바꾸지 않는다(https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Core/SettlementDomain.cs#L426-L452). CK3 참조: depth-02-power-structures.md:289-295는 협상 단계와 별도 체크형 권리의 구분 사례다. 제품 권한: 서울 공납·봉신·위임·회수·소유권 이전 정책과 산식은 제도 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "3.4 평의회·궁정 직위"
+        }
+      ]
+    },
+    {
+      "id": "ch.p3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3 참조: mechanics-06-vassals-court-council.md:116-177,193-226의 직위·업무·역량 필드와 depth-02-power-structures.md:407-493의 업무 스키마는 직위와 작업 진행을 분리하는 참조다. 게이지 크기·월간 증가 수치는 이관하지 않는다. 제품 권한: 서울 평의회·궁정 및 섭정 존재와 권한 단계는 제도 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s4",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "3.5 후계·사망·본체 전환"
+        }
+      ]
+    },
+    {
+      "id": "ch.p4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: 본체·후계의 승인 범위는 SP-1.0.0 및 기존 후계 조항을 따른다. CK3 참조: mechanics-07-succession.md:11-82,144-209와 depth-02-power-structures.md:297-406은 법 설정·선거인·후보 점수·임명 후보를 구분한다. 사망 훅은 실제 자산 이전 순간의 증거가 아니다. 제품 권한: 서울 승계·선거 제도·자산 상속 정책은 제도 미정; CK3 가문 유산 트랙 총계는 독립검증 불일치로 제외한다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s5",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "3.6 국가 성립과 통제 경계"
+        }
+      ]
+    },
+    {
+      "id": "ch.p5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Core/CampaignTurnDomain.cs#L224-L226 의 적 통제는 파벌 불평등 판정이며 동맹·조약을 소비하지 않는다. 현재 코드 사실을 정복 법제의 승인으로 삼지 않는다. 제품 권한: 동맹·정복 정책은 CH7과 같은 미결정 원장을 참조한다."
+        }
+      ]
+    },
+    {
+      "id": "ch.decisions",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "제품 결정 원장 — 미결정은 소유자 권한",
+          "targetDocumentId": "doc.Open-Decisions"
+        }
+      ]
+    },
+    {
+      "id": "ch.terms",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "한국어 표기와 명명 규칙",
+          "targetDocumentId": "doc.Korean-Terminology-and-Naming"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.contract-map",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "보존 계약과 결정 번호의 소유"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.supersession",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제품 결정 13(개인 판정 전투)·14(시간 기반 전략 이동)·15(가변 정원)은 아래 승인 규칙 문서에 보존된 소유자 결정이다. 메커니즘 D13/D14/D15 시트 번호와 다른 이름공간이며 제안 시트를 승인하지 않는다. SP-1.0.0은 공유 세계·참가자·호스트·점유·온라인 대행 조항을 역사 범위로 대체하고 실제 이동·현장 참가·권한·단일 정산·저장 오류 계약을 유지한다. pw-01은 전쟁 개시 임계 제안이지 승인된 제품 결정 번호가 아니다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.move",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "결정 14·15 및 영웅 클래스 승인 원장",
+          "targetDocumentId": "doc.Hero-Squads-and-Time-Based-Movement"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.battle",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "결정 13·15 및 개인·상황·집계 계산 책임",
+          "targetDocumentId": "doc.Personal-Resolution-Battle"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.succession",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "보존 후계·권리 상세 조항",
+          "targetDocumentId": "doc.Rules-FactionsWarfare"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.verified-heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정정 검증된 CK3 계약 산술·유산·법군"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.verified-facts",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3 참조만: depth-verification-20261027.md:1871-1875는 씨족 계약의 역량 a=0..4 선행 add→임시값 저장→분기 add를 확인한다. 기저 .02(세)/.04(징집)에 곱하는 승수는1/3/6/10/15이며 세는.02/.06/.12/.20/.30, 징집은.04/.12/.24/.40/.60이다. 징수원 부재는0/0이며 opinion 곱셈 항은 없다. 이는 정적 스크립트 기저 산술이지 실제 runtime 정산이 아니다. 유산은22트랙 선언, 비용250+500n의 n은 전체 기해금 수이므로 빈 가문의 처음5개 합은6250이며 트랙마다 리셋되지 않는다. 4단계 법군은7개/28선언이며 유목5단계·만달라선택형과 구분한다. 정부20은 최초 독립 표본 :59,82의 정적 선언 검증 범위이고 최신 §9의 새 전수 runtime 검증이라고 확대하지 않는다. 모든 값은 서울 권력·세율·승계 규칙이 아니다."
+        }
+      ]
+    }
+  ]
+}

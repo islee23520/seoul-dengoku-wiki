@@ -1,0 +1,126 @@
+{
+  "testedSha": "6f07a94996a1f416cec1a44a3b3844dfb732900f",
+  "publicationBaseSha": "3a526124ca4667e9162a8e315c0a41fb52f15707",
+  "historicalEvidenceUtcDate": "2026-09-05",
+  "publicationPreparationDate": "2026-09-06",
+  "notes": [
+    "Original hashes identify local source artifacts, not normalized published bytes.",
+    "Reports add notices, path redaction, reproduction/index updates and attribution corrections.",
+    "Screenshot path renamed localArtifact; bundled=false added; image bytes excluded.",
+    "StateProbe logic and expected values preserved; line endings normalized to LF.",
+    "Historical structured results preserved, only assembly paths normalized.",
+    "Runner adapted with explicit inputs, output guard and pinned DLL checks."
+  ],
+  "sourceArtifacts": [
+    {
+      "published": "REPORT.md",
+      "source": ".omo/evidence/gameplay-continuity/REPORT.md",
+      "originalSha256": "5206006be2c7bfc8b42818b759db7d47cf9a4c4240449aa2b0879360e78d9a19"
+    },
+    {
+      "published": "state/REPORT.md",
+      "source": ".omo/evidence/gameplay-continuity/state/REPORT.md",
+      "originalSha256": "f8efd31b68087b2ea77c6fac863ae184246b8bc276ed434ef0e981a5aa7b752f"
+    },
+    {
+      "published": "state/StateProbe.cs",
+      "source": ".omo/evidence/gameplay-continuity/state/StateProbe.cs",
+      "originalSha256": "4eb19df27248be788bc0ef974087cabbde95d577532efd0442660d833d164a2d"
+    },
+    {
+      "published": "state/expected-before-probe.md",
+      "source": ".omo/evidence/gameplay-continuity/state/expected-before-probe.md",
+      "originalSha256": "9c4a49cf4d01d358026004dd55ac30ea5dccb50b23ed56b312a9449d6371f20e"
+    },
+    {
+      "published": "state/expected-ids.json",
+      "source": ".omo/evidence/gameplay-continuity/state/expected-ids.json",
+      "originalSha256": "f977da89bee3a47353eb807a8bcd7c0c5aba281f0419be80f43c65c239e3a85a"
+    },
+    {
+      "published": "state/expected-ids.txt",
+      "source": ".omo/evidence/gameplay-continuity/state/expected-ids.txt",
+      "originalSha256": "655d280b4743f3d5061b465b08a6b7dc39870b10efd4144c9c849047bff17fc9"
+    },
+    {
+      "published": "state/probe-results.json",
+      "source": ".omo/evidence/gameplay-continuity/state/probe-results.json",
+      "originalSha256": "f73ec58a402293e064c3bd727ea2bd8ac3ec672478bd26f2b690f2d10377beac"
+    },
+    {
+      "published": "state/preservation-verification.json",
+      "source": ".omo/evidence/gameplay-continuity/state/preservation-verification.json",
+      "originalSha256": "d7ff1a952afd1d83f9c60f13292f2605791fb3616b2b88d58244ba339814967e"
+    },
+    {
+      "published": "cua/REPORT.md",
+      "source": ".omo/evidence/gameplay-continuity/cua/REPORT.md",
+      "originalSha256": "1d84d2c4b04e008a50c9fca59ee5e0c5a83f399a4cfd3354adcaaa3e6d0fb8e2"
+    },
+    {
+      "published": "cua/action-log.md",
+      "source": ".omo/evidence/gameplay-continuity/cua/action-log.md",
+      "originalSha256": "2a902caa588a131e1d166d1dd0a92e895479d6f3ca5135d97e9cf3656e6f0a70"
+    },
+    {
+      "published": "cua/focused-manifest.json",
+      "source": ".omo/evidence/gameplay-continuity/cua/focused-manifest.json",
+      "originalSha256": "59109fce9e5a4a4e78a048170cf248000779e0e377a879e741030b3c45922639"
+    },
+    {
+      "published": "cua/cleanup.json",
+      "source": ".omo/evidence/gameplay-continuity/cua/cleanup.json",
+      "originalSha256": "3c3e51afe178c3e4684439b29bf39a66467b9fa7196a090fe61e5d150ca64485"
+    },
+    {
+      "published": "live-ui/REPORT.md",
+      "source": ".omo/evidence/live-poc-check-unlocked/REPORT.md",
+      "originalSha256": "d2e422802d64831f9d717754ec2abd4f1d398b508b95429b9d244e857d0fe1fb"
+    },
+    {
+      "published": "live-ui/action-log.md",
+      "source": ".omo/evidence/live-poc-check-unlocked/action-log.md",
+      "originalSha256": "d97df6ae670904acae8f242a0fbb75bf039ea014fda8b6469067744774cfd89b"
+    },
+    {
+      "published": "live-ui/canonical-manifest.json",
+      "source": ".omo/evidence/live-poc-check-unlocked/canonical-manifest.json",
+      "originalSha256": "0c35d632a40a54d95d0a2b209fb7f5a87017a00b01b383af5fef047d6c5c3a8b"
+    },
+    {
+      "published": "live-ui/canonical-manifest.md",
+      "source": ".omo/evidence/live-poc-check-unlocked/canonical-manifest.md",
+      "originalSha256": "7de67ddcb7c61e7d9e4d4b38ca0f2b41ba305954f3c41191e81247f4394a3b7e"
+    },
+    {
+      "published": "live-ui/independent-visual-review.md",
+      "source": ".omo/evidence/live-poc-check-unlocked/independent-visual-review.md",
+      "originalSha256": "904df126b0b5614d03d5efab9795e6167d178b0efdad0d94bcb0e35e915d5a43"
+    },
+    {
+      "published": "live-ui/independent-functional-review.md",
+      "source": ".omo/evidence/live-poc-check-unlocked/independent-functional-review.md",
+      "originalSha256": "56b8e2b6606a81c4aee95a3076aeeee7a19062638d060dc20d13d84b1d6f3f0f"
+    },
+    {
+      "published": "live-ui/matrix.json",
+      "source": ".omo/evidence/live-poc-check-unlocked/matrix.json",
+      "originalSha256": "2dbb26c1b15c36455afa0227c7ba9e9d1eea05d8e39ec6915fb1a45f67b80426"
+    },
+    {
+      "published": "live-ui/cleanup.json",
+      "source": ".omo/evidence/live-poc-check-unlocked/cleanup.json",
+      "originalSha256": "bbc852e66bdd1f1ffb014de8bbc09b5203f61f3a1be33f23171bf8a119791ebb"
+    },
+    {
+      "published": "live-ui/hash-verification.json",
+      "source": ".omo/evidence/live-poc-check-unlocked/hash-verification.json",
+      "originalSha256": "4adbdc28c981b4716b7e3d1d043141ad81b8f4c739221bb1d46850ddbe4dc203"
+    },
+    {
+      "published": "state/run-probe.sh",
+      "source": ".omo/evidence/gameplay-continuity/state/run-probe.sh",
+      "originalSha256": "8a5e17f420b3bbb068b55276d713ecb5ab31228b72acf65f4bb934fe1de37eb3"
+    }
+  ]
+}
