@@ -1,0 +1,429 @@
+{
+  "schema": "approved-line2-station-titles.v1",
+  "decision": {
+    "issue": "https://github.com/islee23520/seoul-dengoku-wiki/issues/652",
+    "date": "2026-11-02",
+    "ownerAnswer": "일반역 작위: 백작위 부여 / 중앙정보부: 중립 유지",
+    "scope": "2호선 51역 중 왕좌 1곳과 공작좌 2곳을 제외한 일반역 48곳에 역 백작위를 부여한다. 역 백작위는 역 거점 작위이며 지역구 지리 백작령(county)과 별개다. 보유 인물·가문은 미정이다.",
+    "neutralState": {
+      "stateId": "S08",
+      "status": "neutral",
+      "note": "S08 중앙정보부는 세 연합 어디에도 속하지 않는다. 회원 구조 4+8+3과 중립 1을 유지한다."
+    }
+  },
+  "rosterSource": {
+    "path": "GAME/DataSources/seoul-smap-20261030/line2-roster.json",
+    "repository": "seoul-dengoku",
+    "sha256": "3eaf8d6bd3cb6b467c25319e5c279a07bf637b62a87209fd81fcf32baf57f6fd"
+  },
+  "stations": [
+    {
+      "officialCode": "0200",
+      "stationId": "까치산",
+      "nameKo": "까치산",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0201",
+      "stationId": "시청",
+      "nameKo": "시청",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0202",
+      "stationId": "을지로입구",
+      "nameKo": "을지로입구",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0203",
+      "stationId": "을지로3가",
+      "nameKo": "을지로3가",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0204",
+      "stationId": "을지로4가",
+      "nameKo": "을지로4가",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0205",
+      "stationId": "동대문역사문화공원",
+      "nameKo": "동대문역사문화공원",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0206",
+      "stationId": "신당",
+      "nameKo": "신당",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0207",
+      "stationId": "상왕십리",
+      "nameKo": "상왕십리",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0208",
+      "stationId": "왕십리",
+      "nameKo": "왕십리",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0209",
+      "stationId": "한양대",
+      "nameKo": "한양대",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0210",
+      "stationId": "뚝섬",
+      "nameKo": "뚝섬",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0211",
+      "stationId": "성수",
+      "nameKo": "성수",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0212",
+      "stationId": "건대입구",
+      "nameKo": "건대입구",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0213",
+      "stationId": "구의",
+      "nameKo": "구의",
+      "rank": "duchy",
+      "holderPersonId": "K348",
+      "holderStatus": "existing-seat"
+    },
+    {
+      "officialCode": "0214",
+      "stationId": "강변",
+      "nameKo": "강변",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0215",
+      "stationId": "잠실나루",
+      "nameKo": "잠실나루",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0216",
+      "stationId": "잠실",
+      "nameKo": "잠실",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0217",
+      "stationId": "잠실새내",
+      "nameKo": "잠실새내",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0218",
+      "stationId": "종합운동장",
+      "nameKo": "종합운동장",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0219",
+      "stationId": "삼성",
+      "nameKo": "삼성",
+      "rank": "kingdom",
+      "holderPersonId": "K423",
+      "holderStatus": "existing-seat"
+    },
+    {
+      "officialCode": "0220",
+      "stationId": "선릉",
+      "nameKo": "선릉",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0221",
+      "stationId": "역삼",
+      "nameKo": "역삼",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0222",
+      "stationId": "강남",
+      "nameKo": "강남",
+      "rank": "duchy",
+      "holderPersonId": "K271",
+      "holderStatus": "existing-seat"
+    },
+    {
+      "officialCode": "0223",
+      "stationId": "교대",
+      "nameKo": "교대",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0224",
+      "stationId": "서초",
+      "nameKo": "서초",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0225",
+      "stationId": "방배",
+      "nameKo": "방배",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0226",
+      "stationId": "사당",
+      "nameKo": "사당",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0227",
+      "stationId": "낙성대",
+      "nameKo": "낙성대",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0228",
+      "stationId": "서울대입구",
+      "nameKo": "서울대입구",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0229",
+      "stationId": "봉천",
+      "nameKo": "봉천",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0230",
+      "stationId": "신림",
+      "nameKo": "신림",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0231",
+      "stationId": "신대방",
+      "nameKo": "신대방",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0232",
+      "stationId": "구로디지털단지",
+      "nameKo": "구로디지털단지",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0233",
+      "stationId": "대림",
+      "nameKo": "대림",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0234",
+      "stationId": "Sindorim",
+      "nameKo": "신도림",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0235",
+      "stationId": "문래",
+      "nameKo": "문래",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0236",
+      "stationId": "영등포구청",
+      "nameKo": "영등포구청",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0237",
+      "stationId": "당산",
+      "nameKo": "당산",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0238",
+      "stationId": "합정",
+      "nameKo": "합정",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0239",
+      "stationId": "홍대입구",
+      "nameKo": "홍대입구",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0240",
+      "stationId": "신촌",
+      "nameKo": "신촌",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0241",
+      "stationId": "이대",
+      "nameKo": "이대",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0242",
+      "stationId": "아현",
+      "nameKo": "아현",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0243",
+      "stationId": "충정로",
+      "nameKo": "충정로",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0244",
+      "stationId": "용답",
+      "nameKo": "용답",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0245",
+      "stationId": "신답",
+      "nameKo": "신답",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0246",
+      "stationId": "신설동",
+      "nameKo": "신설동",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0247",
+      "stationId": "도림천",
+      "nameKo": "도림천",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0248",
+      "stationId": "양천구청",
+      "nameKo": "양천구청",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0249",
+      "stationId": "신정네거리",
+      "nameKo": "신정네거리",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    },
+    {
+      "officialCode": "0250",
+      "stationId": "용두",
+      "nameKo": "용두",
+      "rank": "county",
+      "holderPersonId": null,
+      "holderStatus": "pending-person-holder"
+    }
+  ]
+}

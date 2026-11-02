@@ -57,7 +57,7 @@ import { readRetirementProse, projectRetirementProse } from './cast-sqlite/retir
 import { projectActiveRoster, projectActivePersonIndex } from './person-roster-projection.mjs'
 import { readCatalogMetadata, readCatalogMetadataAsync, CATEGORY_REGISTRY_PATH, OFFICIAL_SEOUL_LINES_PATH, UPDATE_HISTORY_PATH } from './cast-sqlite/catalog-metadata.mjs'
 import { readPopulationDocument, readPopulationDocumentAsync } from './cast-sqlite/population-document.mjs'
-import { catalogWorldGraph, catalogMovementGraph, catalogPublicEdges } from './catalog-map-graph.mjs'
+import { catalogWorldGraph, catalogMovementGraph, catalogPublicEdges, resolveOpeningSegmentControl } from './catalog-map-graph.mjs'
 import { readWorldGraphDocumentAsync } from './cast-sqlite/world-graph-document.mjs'
 import { readRailSourceDocument, readRailSourceDocumentAsync, RAIL_SOURCE_PATHS } from './cast-sqlite/rail-source-documents.mjs'
 import { readRegionContentDocument, readRegionContentDocumentAsync, REGION_CONTENT_PATHS } from './cast-sqlite/region-content-documents.mjs'
@@ -587,7 +587,8 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
  if (stationControlOverrides.size !== stationControlLedger.overrides.length) throw new Error('E_STATION_CONTROL_DUPLICATE')
  for (const entry of stationControlLedger.overrides) {
   if (!entry.polityIds?.length || !entry.polityIds.every((id) => stateNameById.has(id)) || !entry.polityIds.includes(entry.primary)) throw new Error(`E_STATION_CONTROL_PRIMARY:${entry.stationId}`)
-  if (entry.status !== (entry.polityIds.length === 1 ? 'held' : 'contested')) throw new Error(`E_STATION_CONTROL_STATUS:${entry.stationId}`)
+  // Opening-day snapshot holds no disputes (owner decision #651): one effective holder per station.
+  if (entry.status !== 'held' || entry.polityIds.length !== 1) throw new Error(`E_STATION_CONTROL_STATUS:${entry.stationId}`)
  }
  proj4.defs('EPSG:5179', '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +units=m +no_defs')
 
@@ -785,21 +786,57 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
    }
   })
  for (const station of mapStations) station.control.currentHegemons = hegemonsForHolders(station.control.polityIds, affiliations)
+ for (const station of mapStations) if (station.control.status !== 'held' || station.control.polityIds.length !== 1) throw new Error(`E_OPENING_STATION_CONTROL:${station.id}:${station.control.status}`)
+ // Line 2 station titles (owner decision #652): the royal seat and two ducal seats
+ // are existing capitals; the other 48 stations carry a station count title whose
+ // holder is still pending. A station title is not a geographic county (백작령).
+ const line2Titles = JSON.parse(await readFile(resolve(projectRoot, 'scripts/approved-line2-station-titles-20261102.json'), 'utf8'))
+ if (line2Titles.schema !== 'approved-line2-station-titles.v1' || line2Titles.stations.length !== 51
+  || new Set(line2Titles.stations.map((entry) => entry.officialCode)).size !== 51) throw new Error('E_LINE2_TITLE_COVERAGE')
+ const line2RankCounts = { kingdom: 0, duchy: 0, county: 0 }
+ for (const entry of line2Titles.stations) {
+  const station = mapStations.find((candidate) => candidate.id === entry.stationId)
+  if (!station || !station.lineIds.includes('3-2') || !(entry.rank in line2RankCounts)) throw new Error(`E_LINE2_TITLE_STATION:${entry.officialCode}`)
+  line2RankCounts[entry.rank] += 1
+  const seatState = capitalStateByStationId.get(entry.stationId)
+  if (entry.rank === 'county' ? entry.holderPersonId !== null || entry.holderStatus !== 'pending-person-holder'
+   : !seatState || !/^K\d+$/u.test(entry.holderPersonId ?? '') || entry.holderStatus !== 'existing-seat') throw new Error(`E_LINE2_TITLE_HOLDER:${entry.officialCode}`)
+  station.stationTitle = { officialCode: entry.officialCode, rank: entry.rank, holderPersonId: entry.holderPersonId, holderStatus: entry.holderStatus }
+ }
+ if (line2RankCounts.kingdom !== 1 || line2RankCounts.duchy !== 2 || line2RankCounts.county !== 48) throw new Error('E_LINE2_TITLE_RANKS')
+ const openingHegemons = pagesBySlug.get('Sixteen-States').value.data.currentAffiliation.hegemons
+ if (openingHegemons.map((hegemon) => hegemon.memberStateIds.length).join('+') !== '4+8+3'
+  || openingHegemons.some((hegemon) => hegemon.memberStateIds.includes('S08'))) throw new Error('E_S08_NEUTRAL')
  const majorStationIds = mapStations.filter((station) => station.degree >= 7 || capitalStationIds.has(station.id)).map((station) => station.id).sort((left, right) => left.localeCompare(right, 'ko'))
  const stationControlById = new Map(mapStations.map((station) => [station.id, station.control]))
  const segmentControlOverrides = new Map((stationControlLedger.segmentOverrides ?? []).map((entry) => [entry.segmentId, entry]))
  if (segmentControlOverrides.size !== (stationControlLedger.segmentOverrides ?? []).length) throw new Error('E_SEGMENT_CONTROL_DUPLICATE')
- const segmentControl = (segmentId, a, b) => {
+ const mapStationById = new Map(mapStations.map((station) => [station.id, station]))
+ const surfacePolygons = regionAtlas.regions.map((region) => ({
+  holders: surfaceHolders(regionContentById.get(region.id)),
+  rings: geometryRings(region.map_geometry).map((ring) => simplifyRing(ring).map(mapPoint)),
+ }))
+ // Samples the straight segment between two stations and counts the points that
+ // fall in a dong effectively held by the given polity alone.
+ const surfaceShare = (stationA, stationB, polityId) => {
+  let count = 0
+  for (let step = 1; step < 40; step += 1) {
+   const point = [stationA.x + (stationB.x - stationA.x) * step / 40, stationA.y + (stationB.y - stationA.y) * step / 40]
+   const region = surfacePolygons.find((entry) => entry.rings.some((ring) => pointInPolygon(point, ring)))
+   if (region?.holders.length === 1 && region.holders[0] === polityId) count += 1
+  }
+  return count
+ }
+ const segmentControl = (segmentId, a, b, edge) => {
   const delta = segmentControlOverrides.get(segmentId)
   if (delta) {
-   if (!delta.polityIds?.length || !delta.polityIds.every((id) => stateNameById.has(id)) || (delta.primary !== null && !delta.polityIds.includes(delta.primary))) throw new Error(`E_SEGMENT_CONTROL_PRIMARY:${segmentId}`)
+   if (delta.status !== 'held' || delta.polityIds?.length !== 1 || !stateNameById.has(delta.polityIds[0]) || delta.primary !== delta.polityIds[0]) throw new Error(`E_SEGMENT_CONTROL_PRIMARY:${segmentId}`)
    return { source: 'control-delta', deltaId: delta.id, status: delta.status, polityIds: delta.polityIds, primary: delta.primary }
   }
-  if (a.status === 'unknown' || b.status === 'unknown') return { source: 'derived-from-stations', deltaId: null, status: 'unknown', polityIds: [], primary: null }
-  if ([...a.polityIds].sort().join('|') === [...b.polityIds].sort().join('|')) return { source: 'derived-from-stations', deltaId: null, status: a.status, polityIds: a.polityIds, primary: a.primary }
-  return { source: 'derived-from-stations', deltaId: null, status: 'contested', polityIds: [...new Set([...a.polityIds, ...b.polityIds])].sort(), primary: null }
+  return resolveOpeningSegmentControl(segmentId, a, b, mapStationById.get(edge.a), mapStationById.get(edge.b), surfaceShare)
  }
  // 2126 통행(소유자 결정 2026-09-28): 양 끝 점유 세력이 같으면 통행, 다르면 검문 통행이다.
+ // 구간 귀속(#651)은 분쟁이 아니며 양 끝 역의 점유 세력 차이로만 검문을 판정한다.
  // 한강을 건너는 구간은 구간마다 소유자 결정을 받을 때까지 unknown으로 둔다. 강 북쪽·남쪽은 역의 자치구로 가른다.
  const HAN_NORTH_DISTRICTS = new Set(['종로구', '중구', '용산구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '강북구', '도봉구', '노원구', '은평구', '서대문구', '마포구'])
  const HAN_SOUTH_DISTRICTS = new Set(['강서구', '양천구', '구로구', '금천구', '영등포구', '동작구', '관악구', '서초구', '강남구', '송파구', '강동구'])
@@ -814,7 +851,9 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
  const passage2126 = (edge, control) => {
   const id = `segment:${edge.a}~${edge.b}`
   if (crossesHan(edge.a, edge.b)) return passageDecisions.get(id) ?? 'unknown'
-  return control.status === 'held' ? 'open' : control.status === 'contested' ? 'checkpoint' : 'unknown'
+  const [a, b] = [stationControlById.get(edge.a), stationControlById.get(edge.b)]
+  if (control.status !== 'held') return 'unknown'
+  return a.primary === b.primary ? 'open' : 'checkpoint'
  }
  const admittedStationIds = new Set(mapStations.map(station => station.id))
  const mapEdges = catalogPublicEdges(regularGraph, admittedStationIds, stationControlById, segmentControl, hegemonsForHolders, affiliations, passage2126)
@@ -933,6 +972,7 @@ export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as cons
   edges: mapEdges,
   majorStationIds,
   regions: regionAtlas.regions.map((region) => {
+   if (surfaceHolders(regionContentById.get(region.id)).length > 1) throw new Error(`E_OPENING_REGION_CONTESTED:${region.id}`)
    const content = regionContentById.get(region.id)
    const polities = surfaceHolders(content)
    return {

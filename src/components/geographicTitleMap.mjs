@@ -68,13 +68,18 @@ export function titlesAtRank(geography, rank) {
   return geography.titles.filter(title => title.rank === rank)
 }
 
-// A mixed county is not neutral territory. Missing evidence is distinct from both.
+// Opening-day political view (owner decision #651): a county whose dongs are
+// effectively held under several hegemons takes the one holding the most area.
+// Missing evidence stays distinct from neutral territory.
 export function geographicPoliticalAffiliation(title, geography, regions) {
   const dongIds = new Set(title.countyIds.flatMap(id =>
     resolveGeographicTitle(geography, id)?.currentSlots.map(slot => slot.dongId) ?? []))
-  const names = [...new Set(regions.filter(region => dongIds.has(region.id))
-    .flatMap(region => region.currentHegemons.map(hegemon => hegemon.name)))].sort()
-  return { kind: names.length === 0 ? 'unknown' : names.length > 1 ? 'mixed' : 'single', names }
+  const area = new Map()
+  for (const region of regions.filter(entry => dongIds.has(entry.id))) {
+    for (const hegemon of region.currentHegemons) area.set(hegemon.name, (area.get(hegemon.name) ?? 0) + region.areaM2)
+  }
+  const names = [...area.keys()].sort((left, right) => area.get(right) - area.get(left) || left.localeCompare(right))
+  return { kind: names.length === 0 ? 'unknown' : 'single', names: names.slice(0, 1) }
 }
 
 export function validateGeographicMap(geography) {

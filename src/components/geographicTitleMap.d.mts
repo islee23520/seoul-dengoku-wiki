@@ -9,7 +9,7 @@ export function publicTerritorialScale(scale: unknown): unknown
 export function publicGeographicSlot(slot: unknown): GeographicSlot
 export function projectGeographicTitles(staging: unknown, boundaries: unknown, project: (x: number, y: number) => number[]): GeographicTitles
 export function titlesAtRank(geography: GeographicTitles, rank: GeographicRank): GeographicTitle[]
-export function geographicPoliticalAffiliation(title: GeographicTitle, geography: GeographicTitles, regions: Array<{ id: string; currentHegemons: Array<{ name: string }> }>): { kind: 'unknown' | 'mixed' | 'single'; names: string[] }
+export function geographicPoliticalAffiliation(title: GeographicTitle, geography: GeographicTitles, regions: Array<{ id: string; areaM2: number; currentHegemons: Array<{ name: string }> }>): { kind: 'unknown' | 'single'; names: string[] }
 export function validateGeographicMap(geography: GeographicTitles): void
 export function resolveGeographicTitle(geography: GeographicTitles, id: string | null): GeographicTitle | null
 export function resolveGeographicSelection(geography: GeographicTitles, requested: string | null): GeographicTitle | null
