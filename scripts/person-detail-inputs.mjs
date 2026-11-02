@@ -389,7 +389,8 @@ export async function loadPersonHoldingsContext(sources, { repoRoot, stateRows, 
   if (stationControlOverrides.size !== stationControlLedger.overrides.length) throw new Error('E_STATION_CONTROL_DUPLICATE')
   for (const entry of stationControlLedger.overrides) {
     if (!entry.polityIds?.length || !entry.polityIds.every(id => stateNameById.has(id)) || !entry.polityIds.includes(entry.primary)) throw new Error(`E_STATION_CONTROL_PRIMARY:${entry.stationId}`)
-    if (entry.status !== (entry.polityIds.length === 1 ? 'held' : 'contested')) throw new Error(`E_STATION_CONTROL_STATUS:${entry.stationId}`)
+    // Opening-day snapshot holds no disputes (owner decision #651).
+    if (entry.status !== 'held' || entry.polityIds.length !== 1) throw new Error(`E_STATION_CONTROL_STATUS:${entry.stationId}`)
   }
   const stationCatalog = await lore('places/Seoul-Station-Catalog.json')
   const approvedStationAliases = stationCatalog.data.station_aliases
