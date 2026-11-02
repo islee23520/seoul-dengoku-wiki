@@ -80,11 +80,13 @@ line. Neither upstream response text nor the token is logged.
 The TypeScript catalog and public contract are generated, not tracked authority.
 The owner creates them through the authenticated PostgreSQL release stage
 (`npm run generate` / `npm run build`) with protected public/private inputs;
-do not run the catalog worker directly against live output. CI's HTTP check reads
-`public/wiki-contract.json`; it does not itself build or approve the release. The check command is:
+do not run the catalog worker directly against live output. `public/` is untracked, so
+CI first downloads the just-published `https://sss.linalab.io/wiki/wiki-contract.json`
+(fails on non-200) and checks against it; it does not itself build or approve the release.
+The check command is:
 
 ```sh
-node deploy/check-live-contract.mjs --public-edge https://sss.linalab.io live-http-green.json public/wiki-contract.json
+node deploy/check-live-contract.mjs --public-edge https://sss.linalab.io live-http-green.json live-wiki-contract.json
 ```
 
 Public-edge mode requires HTTP 200 and the React entry marker on every catalog

@@ -27,4 +27,6 @@ steps:
       - node deploy/check-lfs-inputs.mjs
       - npm ci --ignore-scripts
       - node deploy/call-owner.mjs
-      - node deploy/check-live-contract.mjs --public-edge https://sss.linalab.io live-http-green.json public/wiki-contract.json
+      # public/ is generated and untracked: check the contract the owner just published.
+      - node -e "fetch('https://sss.linalab.io/wiki/wiki-contract.json').then(async r=>{if(!r.ok)throw new Error('E_LIVE_CONTRACT_FETCH:'+r.status);require('fs').writeFileSync('live-wiki-contract.json',await r.text())})"
+      - node deploy/check-live-contract.mjs --public-edge https://sss.linalab.io live-http-green.json live-wiki-contract.json
