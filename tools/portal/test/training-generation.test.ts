@@ -12,7 +12,7 @@ import {
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { z } from "zod";
-import approvedProfile from "../../../ART-ASSETS/portrait-training/shared-target-drawing-v3/manifest.json" with {
+import approvedProfile from "../training/shared-target-drawing-v3/manifest.json" with {
 	type: "json",
 };
 import { decodePng } from "../../portrait/acceptance/src/png.ts";

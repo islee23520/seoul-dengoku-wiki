@@ -2,13 +2,13 @@ import { readFile, realpath, writeFile } from "node:fs/promises";
 import { isAbsolute, join, sep } from "node:path";
 import { isDeepStrictEqual } from "node:util";
 import { z } from "zod";
-import historicalProfile from "../../../ART-ASSETS/portrait-training/shared-target-drawing-v2/manifest.json" with {
+import historicalProfile from "../training/shared-target-drawing-v2/manifest.json" with {
 	type: "json",
 };
-import approvedProfile from "../../../ART-ASSETS/portrait-training/shared-target-drawing-v3/manifest.json" with {
+import approvedProfile from "../training/shared-target-drawing-v3/manifest.json" with {
 	type: "json",
 };
-import contentInventory from "../../../ART-ASSETS/portrait-training/training100-content-v1/manifest.json" with {
+import contentInventory from "../training/training100-content-v1/manifest.json" with {
 	type: "json",
 };
 import { decodePng } from "../../portrait/acceptance/src/png.ts";
@@ -181,8 +181,8 @@ export async function loadTrainingStyles(
 			: new URL(
 					import.meta.url.endsWith(".ts")
 						? id === "shared-target-drawing-v2"
-							? `../../../ART-ASSETS/portrait-training/${id}/${exemplar.path}`
-							: `../../../ART-ASSETS/portrait-references/wiki-people/${exemplar.path}`
+							? `../training/${id}/${exemplar.path}`
+							: `../../../public/portraits/${exemplar.path.replace(/^images\//, "")}`
 						: id === "shared-target-drawing-v2"
 							? `./private/training/${exemplar.path}`
 							: `./private/training/${id}/${exemplar.path}`,

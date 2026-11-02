@@ -35,6 +35,6 @@ npm --prefix tools/shared-web-ui test
 
 - `portrait` 2D suite: 53 failing tests (connection config and historical fixtures).
 - `portrait/generator`: 44 failing, 2 errors.
-- `portal`: 27 failing; `portal` build fails because `src/training-generation.ts` imports `ART-ASSETS/portrait-training/*` manifests that are not in any checkout.
+- `portal`: pre-existing test failures (see PR notes). Build and typecheck pass: the three training style manifests were restored from seoul-dengoku-tools history into `portal/training/`, and the v3 style exemplars resolve to the byte-identical `public/portraits/person-0998.png` / `person-0399.png` (SHA-256 checked at load).
 - `local-ai`: several node:test files fail (backup-restore, forced-stop, portal-admission, wsl-bridge).
 - Tests that reference `ART-ASSETS/portrait-references/` or `ART-ASSETS/portrait-training/` point at assets that no longer exist in either repository.
