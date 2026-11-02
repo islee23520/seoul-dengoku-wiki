@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "Open-Decisions.md",
+    "lineStart": 1,
+    "lineEnd": 82,
+    "sha256": "a2654f8e763b3c5f46bbd192df5bf737d3bca918fb7bd3c738949e467bf8de63"
+  },
+  "document": {
+    "id": "doc.Open-Decisions",
+    "blockIds": [
+      "source.b1",
+      "sp1.20261003.override",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "gameplay-unknown.entry.20261003.heading",
+      "gameplay-unknown.entry.20261003.body"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "열린 결정 목록"
+        }
+      ]
+    },
+    {
+      "id": "sp1.20261003.override",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 제품 기획은 SP-1.0.0 싱글플레이 상세 계약을 우선한다. 한 플레이어·한 본체·NPC·단일 캠페인 저장을 사용하며 이 문서의 공유 세계·최대 참가자·호스트·접속 종료·점유·온라인 대행 조항은 역사로 보존하고 현재 실행 전제로 사용하지 않는다. 실제 이동·현장 참가·권한·단일 정산·저장 오류 계약은 유지한다. 충돌 시 [싱글플레이 상세 기획 SP-1.0.0](system-design/Singleplayer-Design-SP-1-0-0.md)의 대체 범위를 따른다. 구현 완료나 기존 저장 자동 변환을 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기준 커밋: `origin/main` `e1895238` (PR #213 머지 `93854514` 이후 WEB 서브모듈 분리). 이 페이지는 새 설계를 만들지 않는다. 이미 정본에 적힌 미잠금·미이관만 네 칸으로 다시 묶는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "세션 포인터 `01a0bd33-a52f-7896-a7b5-eb87a89237dd`는 이 기기 Codex·OMO 트랜스크립트에 없다. 아래 출처는 `origin/main` 파일과 인터뷰 장부다."
+        }
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "구현 주장이 아니다. Unity 요소 이름·바인딩·데이터 식별자를 여기서 만들지 않는다. 값이 없으면 `미정`으로 두고 흔한 게임 수치를 채우지 않는다. 규칙은 [데이터 카탈로그](Data-Catalog-and-Schema.md), [한국어 용어](Korean-Terminology-and-Naming.md)와 같다."
+        }
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "칸 구분"
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "table",
+      "header": [
+        "칸",
+        "뜻"
+      ],
+      "dividers": [
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "소유자 미확인",
+          "질문이 열렸거나 시간 초과로 기본안만 있다. 소유자가 직접 고른 값이 아니다"
+        ],
+        [
+          "설계 제안",
+          "규칙 문서가 구조만 제안했고 사용자 확인·데이터 사전 등록 전이다"
+        ],
+        [
+          "정본 미이관",
+          "인터뷰에서 확정됐으나 이 `origin/main` 팁에는 아직 없다"
+        ],
+        [
+          "수치 금지",
+          "잠그지 말라고 이미 적힌 항목. 이 목록이 숫자를 만들지 않는다"
+        ]
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+        "text": "캠페인 POV는 지도 목록에서 선택한 본체 인물의 실제 위치와 알려진 정보에 묶인다. 현재 제품의 시작 해금은 신종목만이며 신규 생성은 보류한다. 과거 PR #213의 POV 도식과 viewer는 최신 GDD 정리에서 폐기됐고 현재 계약이나 복원 대상이 아니다. 클래스 이름과 임시 분대장 권한은 2026-09-24 소유자 결정으로 닫혔다. 부대 정원의 독자 기량 입력·국가/정착지 수준·산식, 생계·혼인·기술의 효과·비용·rates는 미정이다. 현재 지도·플레이 범위는 서울 행정 경계 안이며 서울 밖 영토의 직접 취득·조작은 현재 목표가 아니다. 서울 내부 지형·이동·층 연결 세부는 미정이다. 과거 충남권 POC 검토에는 대전이 포함됐고 대전·세종 행정 ID는 당시 조사 원천에 남기되, 이를 현재 WIKI 지도·정보 상세나 제품 개막 위치로 사용하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자 미확인"
+        }
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 칸에 남은 항목은 없다. OD-CAM(전투 카메라)과 OD-PAUSE(전투 일시정지)는 2026-09-24 소유자 결정으로 닫혀 아래 닫힌 인접 항목으로 옮겼다."
+        }
+      ]
+    },
+    {
+      "id": "source.b10",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[홈](Home.md), [설계 요구](Design-Requirements.md), [이 게임이 뭔지](Game-Thesis.md), [개발 로드맵](Development-Roadmap.md)에 반복되던 기본안 문장도 이 결정에 맞춰 고쳤다. 상위 저장소 ToDo.md의 같은 문장은 따로 고쳐야 한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "설계 제안"
+        }
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "출처는 [영웅 분대와 시간 기반 전략 이동](rules/Hero-Squads-and-Time-Based-Movement.md) 결정 상태표의 `설계 제안` 행이다. 위키 인물 설명에 클래스를 자동 배정하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b13",
+      "kind": "table",
+      "header": [
+        "ID",
+        "항목",
+        "현재 상태"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "OD-MOVE",
+          "이동 속도·태세·통제권 수치",
+          "분대 말은 시간이 흐르는 동안 목표 지점까지 움직인다(결정 14). 이동 속도 수치는 그 문서가 잠그지 않는다"
+        ]
+      ]
+    },
+    {
+      "id": "source.b14",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정본 미이관"
+        }
+      ]
+    },
+    {
+      "id": "source.b15",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자가 고른 계약과 아직 세부가 정해지지 않은 항목을 구분한다. ADR-008은 canon/locales/ko-KR/adr-008.json에 있는 승인 정본이다. 세션 계약을 미이관이나 미결정으로 다시 열지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b16",
+      "kind": "table",
+      "header": [
+        "ID",
+        "묶음",
+        "상태",
+        "다음 표면"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "OD-SESS",
+          "로컬 우선 Steam 세션·월드 생명주기",
+          "ADR-008에 호스트 세션·복구 열쇠·계보·분기 정책·LAN·멀티플레이 자격과 마지막 참가자 이탈 체크포인트가 이관돼 있다. 구현 완료는 별도다",
+          "[로컬 우선 세션과 계보 체크포인트](adr/ADR-008-local-first-steam-sessions.md)"
+        ],
+        [
+          "OD-PRESET",
+          "착생 시작 프리셋 재해석",
+          "인터뷰에서 정체성 유지, 결핍·압박만 재해석, 점유 동료 제외, 원정 재동의, 분쟁 자산 봉인 운송 등 17항을 확정했다. 시작 프리셋은 아직 예전 설계 제안·수치 목표다",
+          "정본 이관 PR. 이 페이지가 프리셋 숫자를 고치지 않는다"
+        ],
+        [
+          "OD-POV",
+          "캠페인 POV·권한 UX",
+          "인터뷰 6항은 PR #213으로 청사진이 들어왔다. 남은 것은 영웅 분대 문서의 이동 속도 제안(OD-MOVE)이지 POV 자체 미결이 아니다",
+          "캠페인 POV와 권한"
+        ]
+      ]
+    },
+    {
+      "id": "source.b17",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "수치 금지"
+        }
+      ]
+    },
+    {
+      "id": "source.b18",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "아래는 정본이 만들지 말라고 잠근 값이다. 기본값을 추정하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b19",
+      "kind": "table",
+      "header": [
+        "ID",
+        "항목",
+        "잠금 문장",
+        "정본"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "OD-SQUADMIN",
+          "분대 최소 인원",
+          "이 문서가 정하지 않는다",
+          "[개인 판정 전투](rules/Personal-Resolution-Battle.md)"
+        ],
+        [
+          "OD-FOV",
+          "카메라 각도·시야각",
+          "새로 잠그지 않는다",
+          "Intent.md, Design.md"
+        ],
+        [
+          "OD-CARDNUM",
+          "사기 임계",
+          "결정 3 미결 수치는 결정 11이 새 목표에서 만들지 말라고 주석했다",
+          "Intent.md 결정 3 대체 주석"
+        ],
+        [
+          "OD-CAPTURE",
+          "새 포획 확률·정원",
+          "결정 11이 만들지 않는다",
+          "Intent.md 결정 11"
+        ]
+      ]
+    },
+    {
+      "id": "source.b20",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "온라인 세션 상한 10은 동시 참여 플레이어 수다. 영웅 수·분대 수·팩션 수 상한이 아니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b21",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "닫힌 인접 항목"
+        }
+      ]
+    },
+    {
+      "id": "source.b22",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "제품 목표 전투는 개인 판정이다. 영웅 직접 조작은 포함하지 않고 교전 전 지시·근접 잠금·전투 전체 후퇴를 따른다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "플레이어는 국가가 아니라 지금 조종하는 살아 있는 한 인물이다. 캠페인 시점은 그 인물의 위치와 알려진 정보에 묶인다 (PR #213)."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "이동 분대의 영웅 지휘관·본체 위치 하나·최대 10인 공유 월드는 유지한다. 이동은 시간 기반이다. 부대 정원은 지휘관 개인 능력치·국가 수준·정착지 수준에 따라 가변이며 공통 상한은 없다(결정 15). 산식은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "로컬 QA 서버는 만들지 않는다. 검토는 원격 빌드를 따른다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투 카메라는 3D 자유 지휘(팬·오빗·줌)다. 전투에는 일시정지와 감속·배속이 없고 명령 큐도 없다. 각도·시야각 수치는 잠그지 않는다 (OD-CAM, OD-PAUSE, 2026-09-24 소유자 결정)."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "영웅은 주 전투 클래스 하나와 보조 역할 태그를 가진다. 클래스 이름은 수호·돌파·참모·구호·척후·종군이다. 능력·수치는 정하지 않는다 (OD-CLASS, 2026-09-24 소유자 결정)."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "임시 분대장은 정식 영웅 지휘관과 같은 명령을 내리되 지휘 효과가 약하다. 효과 수치는 미정이다 (OD-TEMPLEAD, 2026-09-24 소유자 결정)."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동시 턴 제한 시간(OD-TURNTIME, 2026-09-24)은 결정 14(2026-09-28)로 턴이 없어져 폐기됐다. 공유 월드 캠페인 시간에는 일시정지가 없다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전략 태세는 통상 행군·강행군·매복·주둔·야영 다섯이다. 회복·보급 수치는 정하지 않는다 (OD-STANCE, 2026-09-24 소유자 결정)."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "분대 수·영웅 수·군단 크기에 고정 상한을 두지 않는다. 보급·과확장·영웅 지휘관 수가 규모를 제한한다 (OD-ARMYCAP, 2026-09-24 소유자 결정)."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b23",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "다음 질문 순서"
+        }
+      ]
+    },
+    {
+      "id": "source.b24",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "플레이 타임라인 앞쪽이 먼저다. 한 번에 하나만 고른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b25",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "OD-SESS — PR #212 머지 여부. 이 목록이 ADR 본문을 대신 쓰지 않는다"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "OD-PRESET — 확정 17항을 `Starting-Presets.md`와 여정 문서에 옮길지"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "OD-MOVE — 이동 속도 제안 잠금"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b26",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "새 전투 수치·Unity 이름은 이 순서의 밖이다."
+        }
+      ]
+    },
+    {
+      "id": "gameplay-unknown.entry.20261003.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "게임플레이 미정 결정 원장"
+        }
+      ]
+    },
+    {
+      "id": "gameplay-unknown.entry.20261003.body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "게임플레이 미정은 [캠페인 진행과 위기](rules/Campaign-Progression.md)의 GP-01~14에서 질문·제안·입출력·실패/검증 사례·정본 소유로 관리한다. 시제품의 인물 배치·시간·가격·정원·피해 수치는 확정 근거가 아니다. 작위령은 위키 확정 뒤 입력하며 현재 미배정이다. 선택 본체·NPC 권한·현장 참여·네 지도 모드·실제 인접역·배타 씬은 직접 결정으로 유지한다. 제품 방향 A(자체 게임)와 B(실제 CK3 모드)는 미선택이다. 동일 입력의 G1~G9에서 통지와 소유·집행(G1), 문서·기술·직위(G2), 서로 다른 선출·세습(G3), 서비스와 영토 보유(G4), 역 접근·county 조회·실제 도착(G5), 의례·믿음·기관 정책·기량(G6), 숨은 사건의 정보(G7), 본체 계승과 지식(G8), ResultId 단일 정산(G9)을 보존·추상화·손실·추가구현·미검증으로 각각 비교한다. X1 직접 경험에서 A는 본체·동료·실제 도착·여섯 신체 부위·3D 팬/오빗/줌 목표를 보존할 설계 책임이 있고, B의 사건·능력치 표현은 직접 수행·동료의 연속 공간 상호작용·입체 전술 판단을 명시적으로 잃는다. 부위 상태를 기록해도 그 직접 경험은 돌아오지 않는다. 이 손실은 비교한 표현의 손실이지 CK3 엔진의 보편적 불가능 판정이 아니다. 두 방향 모두 G1~G9와 X1 실제 엔진·저장·모드/DLC 실증은 NOT_RUN이며 비용·기간은 미측정이다. 이 비교가 보유·복속·시설권을 바꾸거나 A/B를 선택하지 않는다."
+        }
+      ]
+    }
+  ]
+}

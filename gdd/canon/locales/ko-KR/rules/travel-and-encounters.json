@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "rules/Travel-and-Encounters.md",
+    "lineStart": 1,
+    "lineEnd": 33,
+    "sha256": "dff69b45ec5a37f916765f3b6fcbba1df4ea29a4cb674ec16473175ecc1a4640"
+  },
+  "document": {
+    "id": "doc.Travel-and-Encounters",
+    "blockIds": [
+      "source.b1",
+      "overhaul.20261027.heading",
+      "overhaul.20261027.layers",
+      "overhaul.20261027.chapter",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "travel-owner.20261003.heading",
+      "travel-owner.20261003.body",
+      "travel-owner.20261003.info",
+      "travel-owner.20261003.reward"
+    ],
+    "terminalLineFeeds": 2
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이동과 조우"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "삼층 근거와 현행 계약"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.layers",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실은 승인 SP-1.0.0·결정 12–15·제품 권한과 아래 현행 장이 인용한 GAME 소스에 한정한다. 기존 설계 가정 수치는 구현값이나 승인 밸런스로 승격하지 않는다. CK3 참조는 별도 장의 file:line 근거이며 서울 규칙이 아니다. 제품 권한: 미결정 시간·동맹·정복·소유권·밸런스 정책은 제도 미정이다. 아래 상세는 보존하되 공유 세계/온라인 대행은 SP-1.0.0의 역사 대체 범위로 읽는다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.chapter",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "현행 근거·미결정 상세",
+          "targetDocumentId": "doc.Travel-Activities-and-Landless"
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 문서는 현재 제품 목표의 이동·조우 계약이다. 모든 조우가 전투로 이어지지 않는다. 구현 완료가 아니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "원정 이동 중 조우 확률과 유형을 위치·구간·세력 상태에 따라 판단합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이동 규칙"
+        }
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "전략맵(결정 10)에서 원정은 노선 구간을 골라 진행합니다. 이동 감각과 거리 판단은 전략맵의 지형과 구간 상태에서 나옵니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "각 전략 분대는 독립 원정이며 [영웅 분대와 시간 기반 전략 이동](Hero-Squads-and-Time-Based-Movement.md)의 시간 기반 이동·태세·통제권 규칙을 따릅니다. 플레이어가 여러 분대를 소유해도 조우와 결과 정산은 분대마다 따로 소유합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이동 비용"
+        }
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기본 구간 비용에 다음 요소가 더해집니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "계단, 사다리, 승강기 같은 층 전환"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "부상, 통증, 피로와 과적"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "어둠, 침수, 잔해와 화재"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "적대 세력 통제와 통행권"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "파티 규모, 은밀 이동과 호위 대상"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b10",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "경로 계획"
+        }
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "세계 지도에서는 노선, 환승과 봉쇄를 비교합니다. 역을 선택하면 전략맵에서 해당 노드로 시점이 옮겨가고 역 상태·인접 구간을 볼 수 있습니다. 막힌 연결은 사라지지 않고 원인, 위험도와 복구 조건을 보여 줍니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "조우 생성"
+        }
+      ]
+    },
+    {
+      "id": "source.b13",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "조우는 캠페인 시드, 위치, 시간, 소음, 세력 통제, 최근 사건과 파티 상태에서 결정됩니다. 동일한 세계 상태와 명령이면 같은 조우가 생성되어야 합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b14",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "모든 조우가 전투로 이어지지 않습니다. 통행료 지불, 교섭, 수리, 의료, 정보 제공, 은신과 우회가 정식 해결 방법입니다. 조우 중 물건을 주고받는 일은 현장 거래이며, 원정 결말인 교역과 구분합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b15",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "해결 결과는 한 번만 원장에 반영합니다. 결과 반영은 거점 복귀를 뜻하지 않으며, 파티는 같은 경로를 계속 가거나 다음 행선지와 원정 결말을 고를 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "travel-owner.20261003.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "거리·관측·탐사의 처리"
+        }
+      ]
+    },
+    {
+      "id": "travel-owner.20261003.body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이동 시간은 실제 경로 거리·이동수단·짐·피로·노면/침수·검문·층 전환 상태로 계산한다(소유자 확정). 구간별 거리를 시간으로 바꾸는 속도·계수는 아직 정하지 않는다. 실제 다음 역의 물리 인접 연결과 지상 승인 경로를 사용하며 급행 운행의 중간역 건너뛰기와 행정구역 접촉면을 이동 간선으로 만들지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "travel-owner.20261003.info",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기본 지리·공개 제도와 현재 상황을 분리한다. 지배·부대·자원·위험의 현재 상태는 관측·정찰·연락·현장 보고로 갱신하며 보고 주체·취득 시각·근거·확실성과 오래된 정보임을 표시한다. 보고가 없다는 이유로 해당 지역이 비어 있거나 안전하다고 판단하지 않는다. 정보 노후화 기간·연락 지연 계수는 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "travel-owner.20261003.reward",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "탐험의 기본 보상은 정보·기회다. 경로·위험·시설·인물·계약 기회를 발견하며 물자는 실제 발견·회수했을 때만 가산한다. 반복 정찰 완료만으로 고정 자원을 지급하지 않는다. 실패·허위 보고·회수 실패는 발견 기록과 실제 소유 재고를 분리해 남긴다."
+        }
+      ]
+    }
+  ]
+}

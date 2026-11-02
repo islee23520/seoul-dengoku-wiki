@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "proposal",
+  "source": {
+    "path": "proposals/ui-01-campaign-time-control.md",
+    "lineStart": 1,
+    "lineEnd": 32,
+    "sha256": "9ebaa04d415aa214b66821f99c7ad415d479dc4da1a14b48285020f2858932ac"
+  },
+  "document": {
+    "id": "doc.ui-01-campaign-time-control",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25"
+    ]
+  },
+  "blocks": [
+    {
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "UI-01 캠페인 시간 조절 — 사양서 (상태: 「제안」, GDD PR 대기)"
+        }
+      ],
+      "id": "source.b1"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "코드: `src/engine/speed.ts`(순수 식) · `src/main.ts curSpeed/startTimer/tick`."
+        }
+      ],
+      "id": "source.b2"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "1. GDD가 비운 것"
+        }
+      ],
+      "id": "source.b3"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SP-1.0.0은 「새 캠페인 시간 조절을 이번 문서에서 추가하지 않는다」고 하고, 전투에는 일시정지·속도 조절·명령 큐가 없다(ui-implementation-pipeline). 캠페인 시계의 정지·배속은 정해진 바 없다."
+        }
+      ],
+      "id": "source.b4"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2. 규칙"
+        }
+      ],
+      "id": "source.b5"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "- 배속 단계 L ∈ {1, 2, 4, 8}. 하루 길이 `msPerDay(L) = round(100 / L)` ms."
+        }
+      ],
+      "id": "source.b6"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "- **자동 정지**(시계가 멈추고 재개는 수동): 결정 대기(사건·방침·나이 질문), 결과 창 열림, 전투 열림. 전투는 캠페인 시계를 멈추고 자체 실시간으로만 흐른다(일시정지·배속 없음, GDD 유지)."
+        }
+      ],
+      "id": "source.b7"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "- **속도 상한** `cap = min( hpRatio<0.25 ? 2 : 8, 내 나라 전쟁 중 ? 4 : 8 )`. 유효 배속 = min(L, cap). 상한이 걸리면 타이머를 즉시 새 값으로 다시 맞춘다."
+        }
+      ],
+      "id": "source.b8"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "- 「정지」는 사용자의 일시정지 버튼(재생/일시정지). 하루·한 달 단계 버튼은 정지 중 수동 전진."
+        }
+      ],
+      "id": "source.b9"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "3. 매개변수 표"
+        }
+      ],
+      "id": "source.b10"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| 이름 | 값 | 조정 범위 |"
+        }
+      ],
+      "id": "source.b11"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "|---|---|---|"
+        }
+      ],
+      "id": "source.b12"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| 단계 | 1,2,4,8 | 1–16 |"
+        }
+      ],
+      "id": "source.b13"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| 기본 하루 길이 | 100ms | 50–250 |"
+        }
+      ],
+      "id": "source.b14"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| HP 위험 문턱 / 상한 | 0.25 / 2배 | 0.1–0.4 / 1–4 |"
+        }
+      ],
+      "id": "source.b15"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| 전쟁 중 상한 | 4배 | 1–8 |"
+        }
+      ],
+      "id": "source.b16"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "4. 예제"
+        }
+      ],
+      "id": "source.b17"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "msPerDay: 1×=100, 2×=50, 4×=25, 8×=13ms. 8×를 고르고 내 나라가 전쟁에 들어가면 유효 4×. 이어서 HP가 20%로 떨어지면 유효 2×. 결정 대기가 뜨면 자동 정지."
+        }
+      ],
+      "id": "source.b18"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "5. 테스트 (tests/specs.test.ts)"
+        }
+      ],
+      "id": "source.b19"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "하루 길이 · 자동 정지 3경우 · 상한 4경우(평시/전쟁/HP/둘 다) · 유효 배속. ui-smoke: 배속 버튼 1/2/4/8 표시."
+        }
+      ],
+      "id": "source.b20"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "6. 장르 근거·균형"
+        }
+      ],
+      "id": "source.b21"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3·Norland·Total War 캠페인은 정지와 3~5단계 속도를 둔다. Norland는 창이 열리면 시계가 멈춘다. 위험·전쟁 때 상한은 8배에서 놓치는 일을 줄인다."
+        }
+      ],
+      "id": "source.b22"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "7. GDD PR 초안"
+        }
+      ],
+      "id": "source.b23"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제목: `campaign-loop: 캠페인 시간 조절(정지·4단계 배속)과 자동 정지 규칙 추가(제안)`"
+        }
+      ],
+      "id": "source.b24"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "본문: 「캠페인 시계」 절을 추가한다. 배속 1/2/4/8, 결정 대기·결과·전투에서 자동 정지, 위험·전쟁 시 상한. 전투는 기존대로 일시정지·배속·명령 큐 없음. SP-1.0.0의 「새 캠페인 시간 조절을 추가하지 않는다」 문장은 이 절로 대체. 상태: 제안."
+        }
+      ],
+      "id": "source.b25"
+    }
+  ]
+}

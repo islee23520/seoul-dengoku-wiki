@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "personId": "K087",
+      "status": "biological-parents-unrecorded",
+      "knownParentId": "K086",
+      "knownRelationship": "adoptive",
+      "sourceRef": {
+        "path": "lore/characters/Core-Characters.json",
+        "anchor": "임초원-p2"
+      }
+    },
+    {
+      "personId": "K1010",
+      "status": "maternal-parent-unrecorded",
+      "knownParentId": "K1009",
+      "knownRelationship": "biological",
+      "sourceRef": {
+        "path": "lore/characters/Core-Characters.json",
+        "anchor": "신준-p2"
+      }
+    }
+  ]
+}

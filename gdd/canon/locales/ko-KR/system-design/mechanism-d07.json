@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Mechanism-D07.md",
+    "lineStart": 1,
+    "lineEnd": 451,
+    "sha256": "0e9763d6962393ad231b7fec4acdfdf423ce86f49fe34b700d4cdb135d12399c"
+  },
+  "document": {
+    "id": "doc.Mechanism-D07",
+    "blockIds": [
+      "d07.b1",
+      "overhaul.20261027.heading",
+      "overhaul.20261027.authority",
+      "overhaul.20261027.chapter",
+      "d07.b2",
+      "d07.b3",
+      "d07.b4",
+      "d07.b5",
+      "d07.b6",
+      "d07.b7",
+      "d07.b8",
+      "d07.b9",
+      "d07.b10",
+      "d07.b11"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "d07.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D07 관계·신뢰·충성·명령 평가 작동 계약과 공식 시트"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "게임 로직 개편 정합 경계"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 문서는 기존 제안 상태를 유지한다. 산식·표·청사진은 서울의 구현 사실이나 승인 수치가 아니다. 아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다. 깊이조사의 불일치 총계·씨족 산식은 채택하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.chapter",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "대응 장과 확인된 근거",
+          "targetDocumentId": "doc.Relationships-Houses-and-Intrigue"
+        }
+      ]
+    },
+    {
+      "id": "d07.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "방향이 있는 신뢰, 개인의 인지와 기억, 충성 상태, 명령 준수와 사후 성과를 분리한다. 관측하지 못한 사실로 과거 결정을 다시 쓰지 않으며, 효과별 수치·감쇠·지속 기간과 실제 인물·기관 입력은 보류한다."
+        }
+      ]
+    },
+    {
+      "id": "d07.b3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 범위가 한정된 작동 계약. 공개 Lite의 참조 계산, 서울의 승인된 절차·보존 규칙, 미승인 제안을 구분한다. proposal-held는 실행할 수 없는 보류 항목이며 0이나 승인 수치가 아니다. 이 문서는 전체 도메인 수치 완성이나 런타임 구현을 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d07.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[도메인 설계](mechanism-design-index-d07.md) · [개인 시트와 계산](character-sheet-formulas.md) · [저장과 판본](../rules/Save-and-Determinism.md) · [싱글플레이 계약](Singleplayer-Design-SP-1-0-0.md)"
+        }
+      ]
+    },
+    {
+      "id": "d07.b5",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "처리 순서와 책임 경계"
+        }
+      ]
+    },
+    {
+      "id": "d07.b6",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "영구 신원과 규칙·스냅샷 개정을 확인하고 중복 결과를 먼저 거부한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "세계 사실과 관찰자의 인지, 권한, 실행 가능성, 행동, 관측 성과를 분리한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "직접 관측하거나 보고를 받은 관찰자만 해당 인지 기록을 갱신한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "승인된 효과 함수가 없으면 신뢰·충성 수치를 변경하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "명령 준수와 성과를 따로 분류하고 불가능한 명령을 고의 불복종으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후계자의 기존 관계를 보존하고 선대의 개인 신뢰를 복사하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "귀속된 결과와 정산 식별자를 함께 반영하고 관계 사실·계약을 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d07.b7",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정규화된 데이터·공식 계약"
+        }
+      ]
+    },
+    {
+      "id": "d07.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자, 읽기·쓰기 범위, 단위, 스냅샷과 반영 시점을 함께 선언한다. 형식과 보존식의 검증은 실제 원장 발급이나 미정 함수의 채택을 대신하지 않는다. rulesVersion과 연결 정본의 해시는 원천 판본을 식별하며 임의의 새 실행 판본을 만들지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d07.b9",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "json mechanism-contract",
+      "text": "{\n  \"schemaVersion\": 1,\n  \"domainId\": \"D07\",\n  \"mechanismId\": \"seoul.d07.bounded-contract\",\n  \"status\": \"bounded-contract-with-proposal-held\",\n  \"rulesVersion\": \"D07-owner-directions-20261008-v1\",\n  \"rulesVersionLinkage\": {\n    \"sourceRulesVersion\": \"D07-owner-directions-20261008-v1\",\n    \"contractSHA256\": \"fd5ceb18d5cc2a7298b2d42ac173a0c37fd71e8754840d3eb723532109701491\",\n    \"canonRules\": [\n      {\n        \"documentId\": \"doc.Save-and-Determinism\",\n        \"path\": \"canon/locales/ko-KR/rules/save-and-determinism.json\",\n        \"sha256\": \"510a557e3448efb478d38ded1f21845557ac10c7fc8b56e2c0631ef455a86919\"\n      },\n      {\n        \"documentId\": \"doc.Singleplayer-Design-SP-1-0-0\",\n        \"path\": \"canon/locales/ko-KR/system-design/singleplayer-design-sp-1-0-0.json\",\n        \"sha256\": \"633265f37815e8d581b52426a84eec2bd1a1e987b2e05bd614b8f9752877a9bd\"\n      },\n      {\n        \"documentId\": \"doc.Rules-FactionsWarfare\",\n        \"path\": \"canon/locales/ko-KR/rules/rules-factions-warfare-clauses.json\",\n        \"sha256\": \"cd10396fbf6bf4368f043a5efb493f5e743b496f2c0f3b61f19db2b148adfdec\"\n      }\n    ],\n    \"compatibility\": \"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\"\n  },\n  \"dataOwner\": \"D07 owns directed trust, personal awareness-memory, loyalty state, and command compliance/performance evaluation records; D03 owns command authority/delivery, D06 observation/report arrival, D08 relationship facts, D09 institutions, D12 succession/body transition, D15 combat results, and D18 event identity/version/commit boundaries.\",\n  \"fields\": [\n    {\n      \"name\": \"observerId,actorId,targetId,senderId,heirId\",\n      \"type\": \"stableId\",\n      \"unit\": \"identity\",\n      \"range\": \"nonempty; never name-derived\",\n      \"null\": false,\n      \"owner\": \"D01/D12\",\n      \"read\": \"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\",\n      \"write\": \"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\",\n      \"snapshot\": \"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\",\n      \"commitPoint\": \"After identity/version/awareness/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\"\n    },\n    {\n      \"name\": \"eventId,resultId,orderId,effectId\",\n      \"type\": \"stableId\",\n      \"unit\": \"identity\",\n      \"range\": \"permanent and unique in owning scope\",\n      \"null\": false,\n      \"owner\": \"origin/D18\",\n      \"read\": \"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\",\n      \"write\": \"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\",\n      \"snapshot\": \"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\",\n      \"commitPoint\": \"After identity/version/awareness/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\"\n    },\n    {\n      \"name\": \"T[observer,target]\",\n      \"type\": \"finite number|null\",\n      \"unit\": \"trust-point\",\n      \"range\": \"no approved clamp\",\n      \"null\": \"unknown; never neutral zero\",\n      \"owner\": \"D07\",\n      \"read\": \"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\",\n      \"write\": \"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\",\n      \"snapshot\": \"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\",\n      \"commitPoint\": \"After identity/version/awareness/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\"\n    },\n    {\n      \"name\": \"loyalty\",\n      \"type\": \"integer|null\",\n      \"unit\": \"loyalty-point\",\n      \"range\": \"0..100\",\n      \"null\": \"unknown; monarch self resolves to 100\",\n      \"owner\": \"D07\",\n      \"read\": \"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\",\n      \"write\": \"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\",\n      \"snapshot\": \"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\",\n      \"commitPoint\": \"After identity/version/awareness/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\"\n    },\n    {\n      \"name\": \"awareness\",\n      \"type\": \"direct|report|unknown|none\",\n      \"unit\": \"knowledge-state\",\n      \"range\": \"must identify acquisition time and basis for direct/report\",\n      \"null\": \"unknown\",\n      \"owner\": \"D06 input / D07 personal knowledge\",\n      \"read\": \"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\",\n      \"write\": \"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\",\n      \"snapshot\": \"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\",\n      \"commitPoint\": \"After identity/version/awareness/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\"\n    },\n    {\n      \"name\": \"effectDefinition\",\n      \"type\": \"effect kind with apply event, end event, decay function status, target state and approved value status\",\n      \"unit\": \"typed lifecycle\",\n      \"range\": \"each field explicit; proposal is not executable\",\n      \"null\": \"unknown lifecycle cannot change numeric state\",\n      \"owner\": \"D07\",\n      \"read\": \"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\",\n      \"write\": \"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\",\n      \"snapshot\": \"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\",\n      \"commitPoint\": \"After identity/version/awareness/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\"\n    },\n    {\n      \"name\": \"authority,feasibility,actualAction,performanceObserved\",\n      \"type\": \"separate attributed records\",\n      \"unit\": \"typed state\",\n      \"range\": \"unknown is distinct from false/failure\",\n      \"null\": \"unknown\",\n      \"owner\": \"D03/D15 inputs; D07 evaluation\",\n      \"read\": \"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\",\n      \"write\": \"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\",\n      \"snapshot\": \"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\",\n      \"commitPoint\": \"After identity/version/awareness/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\"\n    },\n    {\n      \"name\": \"snapshotRevision,rulesVersion,worldTime\",\n      \"type\": \"revision/version/time\",\n      \"unit\": \"revision/version/world-time\",\n      \"range\": \"same accepted boundary\",\n      \"null\": false,\n      \"owner\": \"D18\",\n      \"read\": \"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\",\n      \"write\": \"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\",\n      \"snapshot\": \"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\",\n      \"commitPoint\": \"After identity/version/awareness/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\"\n    }\n  ],\n  \"readSet\": [\n    \"D01 stable person identities\",\n    \"D03 authority/order receipt and feasibility context\",\n    \"D06 observation/report acquisition record\",\n    \"D08 relationship facts\",\n    \"D09 applicable institution facts\",\n    \"D12 predecessor/heir identity transition\",\n    \"D15 attributed combat action/performance/loss result\",\n    \"D18 current revision, rules version, event/result ledger and world time\"\n  ],\n  \"writeSet\": [\n    \"D07 observer-specific awareness and memory references\",\n    \"D07 directed trust only under an exactly approved effect function\",\n    \"D07 separate loyalty only under an exactly approved loyalty function\",\n    \"D07 compliance and performance evaluation records\",\n    \"D07 settled ResultId references\"\n  ],\n  \"snapshot\": \"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\",\n  \"commitPoint\": \"After identity/version/awareness/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\",\n  \"orderedSteps\": [\n    \"Resolve permanent identities and exact rules/snapshot revision.\",\n    \"Reject duplicate ResultId before any evaluation or state mutation.\",\n    \"Separate world fact, observer awareness, authority, feasibility, actual action and observed performance.\",\n    \"For relation events, require direct observation or received report for this observer; unknown/none awareness cannot change this observer's memory or trust.\",\n    \"Select the effect kind's own approved application, termination and decay definition. If any required value/function is proposal-only, record awareness/memory fact as allowed but return E_PROPOSAL for numeric trust/loyalty change.\",\n    \"For command results, classify impossible or sender-death-invalidated orders as execution-failure; otherwise classify compliance from actual action independently from performance.\",\n    \"Derive trust bands and loyalty predicates from known stored values without inventing deltas, clamps, persistence or revolt cadence.\",\n    \"On succession, retain the heir's own existing T and never copy predecessor personal T.\",\n    \"Commit one attributed result and settled ResultId; preserve contracts, relationship facts and prior decisions.\"\n  ],\n  \"formulaSheet\": [\n    {\n      \"id\": \"SEOUL-TRUST-BANDS\",\n      \"status\": \"approved\",\n      \"expression\": \"friend=(T>=25); enemy=(T<=-25); nemesis=(T<=-50)\",\n      \"unit\": \"three independent booleans\",\n      \"null\": \"unknown T returns E_UNKNOWN\",\n      \"rounding\": \"none\",\n      \"clamp\": \"none approved\"\n    },\n    {\n      \"id\": \"SEOUL-LOYALTY-PREDICATES\",\n      \"status\": \"approved-bounded\",\n      \"expression\": \"selfLoyalty=100; belowThreshold=(L<25)\",\n      \"unit\": \"loyalty-point and boolean\",\n      \"range\": \"0..100\",\n      \"limits\": \"No daily delta, persistence duration, revolt probability or path-opening function approved.\"\n    },\n    {\n      \"id\": \"SEOUL-AWARENESS-GATE\",\n      \"status\": \"approved\",\n      \"expression\": \"mayEvaluate=(awareness in {direct,report}) AND acquisitionTime known AND basis attributed\",\n      \"unit\": \"boolean\",\n      \"limits\": \"Credibility weights and trust deltas remain proposals.\"\n    },\n    {\n      \"id\": \"SEOUL-RESULT-IDEMPOTENCE\",\n      \"status\": \"approved\",\n      \"expression\": \"apply(resultId)=0 additional effects when resultId already settled\",\n      \"unit\": \"effect-count\",\n      \"rounding\": \"exact integer 0/1\"\n    },\n    {\n      \"id\": \"SEOUL-EFFECT-LIFECYCLE\",\n      \"status\": \"approved-schema-proposal-values\",\n      \"expression\": \"effectKind -> {applicationEvent,terminationEvent,decayFunction,status}\",\n      \"unit\": \"typed lifecycle\",\n      \"limits\": \"D08-A approves per-kind separation, not the missing function/value.\"\n    },\n    {\n      \"id\": \"SEOUL-COMMAND-EVALUATION\",\n      \"status\": \"approved-classification-proposal-numerics\",\n      \"expression\": \"complianceClass=f(feasibility,validity,actualAction); performanceClass=g(observedOutcome)\",\n      \"unit\": \"symbolic classifications\",\n      \"limits\": \"f classification branches are fixed for the covered cases; g score, trust delta, promotion/discipline and casualty math remain proposals.\"\n    }\n  ],\n  \"rng\": \"No RNG is consumed by band classification, awareness gate, idempotence, succession non-copy or covered command classification. Any future stochastic credibility, loyalty or evaluation rule requires a separately approved D18 person-purpose stream protocol.\",\n  \"time\": \"Event-triggered awareness/evaluation and effect-specific lifecycle. No universal daily trust tick. Loyalty is readable daily only where an owning approved cadence exists; exact change and persistence remain proposals.\",\n  \"rounding\": \"No rounding in fixed D07 predicates. Loyalty validates 0..100. Trust has no approved clamp. Never import CK3 +/-100 or Norland ranges as Seoul bounds.\",\n  \"clamps\": \"No rounding in fixed D07 predicates. Loyalty validates 0..100. Trust has no approved clamp. Never import CK3 +/-100 or Norland ranges as Seoul bounds.\",\n  \"lifecycle\": {\n    \"cancel\": \"Discard uncommitted evaluation; preserve prior awareness, trust, loyalty, contracts, performed action and settled results.\",\n    \"death\": \"Preserve historical records. Sender death may invalidate an unexecuted order and classify execution failure; it does not turn failure into disobedience. Do not copy deceased personal T to heir.\",\n    \"load\": \"Restore exact awareness/effect/result histories and current directed T/loyalty under compatible rules. Duplicate results remain settled; no silent migration or decay replay.\"\n  },\n  \"failure\": \"Reject stale rules/snapshot, duplicate ResultId, direction reversal, mixed observer identity, missing attribution, unknown required evidence, or an attempt to execute a proposal function. No partial write.\",\n  \"proposalHeld\": [\n    {\n      \"id\": \"P01\",\n      \"scope\": \"Event-kind trust deltas, beneficial/harmful asymmetry, direct-versus-report credibility and chained-report attribution\",\n      \"reason\": \"D08-A chooses separate lifecycle authoring but selectionEffect withholds exact functions and coefficients.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P02\",\n      \"scope\": \"Memory duration, decay curve, termination events, rereport behavior and reconciliation/recovery functions for every effect kind\",\n      \"reason\": \"Only the schema separation is approved; CK3/Norland durations are comparative values, not Seoul adoption.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P03\",\n      \"scope\": \"Trust range/clamp, display precedence when enemy and nemesis both hold, and any additional relationship bands\",\n      \"reason\": \"Only thresholds 25/-25/-50 and overlap are approved.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P04\",\n      \"scope\": \"Loyalty daily delta, persistence duration below25, recovery conditions, risk-action thresholds and rebellion/departure path opening\",\n      \"reason\": \"Range/self-value/below25 predicate are approved; cadence and path function are not.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P05\",\n      \"scope\": \"Command performance score, trust/loyalty consequences, promotion/discipline conditions, aggregation window and UI presentation timing\",\n      \"reason\": \"D18-A separates evidence stages; it does not approve a utility or consequence formula.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P06\",\n      \"scope\": \"Country/institution-specific relationship establishment and termination inputs\",\n      \"reason\": \"D09-A approves per-country authoring and registered authority/basis review, but no actual country procedure or relation-establishment payload is supplied here.\",\n      \"sealedTrace\": {\n        \"row\": \"D09\",\n        \"chosenOption\": \"A\",\n        \"disposition\": \"deferred-with-trace\"\n      },\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P07A\",\n      \"scope\": \"Actual person trust/loyalty/memory payloads and cast value-axis use\",\n      \"reason\": \"D20-A approves identity-first person-by-person and axis-by-axis review while preserving locked values; it does not approve additional payload bytes or using those axes in D07 formulas.\",\n      \"sealedTrace\": {\n        \"row\": \"D20\",\n        \"chosenOption\": \"A\",\n        \"disposition\": \"deferred-with-trace\"\n      },\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P07B\",\n      \"scope\": \"Actual organization value/policy payloads and organization-to-person D07 effects\",\n      \"reason\": \"D21-A approves organization-by-organization field/source disposition; it does not approve actual organization payloads or automatic trust/loyalty effects.\",\n      \"sealedTrace\": {\n        \"row\": \"D21\",\n        \"chosenOption\": \"A\",\n        \"disposition\": \"deferred-with-trace\"\n      },\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P08\",\n      \"scope\": \"Exact persisted schema keys, event priority among simultaneous writes, clock encoding and any person-stream RNG protocol\",\n      \"reason\": \"Validator carrier choices are engineering evidence, not gameplay policy.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    }\n  ],\n  \"scope\": {\n    \"numericBalanceReady\": false,\n    \"runtimeImplemented\": false,\n    \"worldFactsIssued\": false,\n    \"executionSchemaReady\": false\n  }\n}"
+    },
+    {
+      "id": "d07.b10",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태·효과·출처의 적용 범위"
+        }
+      ]
+    },
+    {
+      "id": "d07.b11",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "json",
+      "text": "{\n  \"decisionIds\": [\n    \"D08\",\n    \"D09\",\n    \"D18\",\n    \"D20\",\n    \"D21\"\n  ],\n  \"decisions\": [\n    {\n      \"row\": \"D08\",\n      \"chosenOption\": \"A\",\n      \"applied\": \"Each effect kind declares its application event, termination event, and decay function independently. A later report cannot extend a world-event expiry unless that effect's approved lifecycle says so. Exact effect values and functions remain proposals.\"\n    },\n    {\n      \"row\": \"D09\",\n      \"chosenOption\": \"A\",\n      \"applied\": \"Institution-specific relationship inputs must be authored per country with explicit electors/quorum/resolver/ratification/acting authority where relevant. D07 may preserve existing valid facts and read verified inputs, but cannot invent a universal institution or establish a new relation when the applicable institution/basis is missing.\"\n    },\n    {\n      \"row\": \"D18\",\n      \"chosenOption\": \"A\",\n      \"applied\": \"Record decision-time awareness, authority and feasibility separately from later action and performance. Unknown observation is not success or failure; compliance and performance remain distinct.\"\n    },\n    {\n      \"row\": \"D20\",\n      \"chosenOption\": \"A\",\n      \"applied\": \"Preserve the locked person-value set and begin with identity reconciliation; any remaining person trust/loyalty/memory or value-axis payload is reviewed per person and per axis. This row approves the review method, not actual payload values or value-axis use in D07 formulas.\"\n    },\n    {\n      \"row\": \"D21\",\n      \"chosenOption\": \"A\",\n      \"applied\": \"Organization values and policies require field-by-field source evidence and separate disposition per organization. This row approves the review method, not organization payloads or an automatic organization-policy-to-person-trust/loyalty conversion.\"\n    }\n  ],\n  \"approvalBoundary\": \"Sealed choices approve effect-specific lifecycle authoring, institution-input authoring boundaries, decision-time versus later-performance separation, and field-by-field review methods for person/organization payloads. They do not approve unspecified trust deltas, credibility weights, decay functions, loyalty cadence, persistence duration, actual person/country values, or source-game coefficients.\",\n  \"approvedExistingRules\": [\n    \"T[A,B] is directional and does not imply T[B,A].\",\n    \"friend iff T>=25; enemy iff T<=-25; nemesis iff T<=-50, with nemesis also enemy.\",\n    \"Trust is not authority, consent, property, passage, relationship fact, mood, or loyalty.\",\n    \"An observer updates only that observer's memory and trust after direct observation or receipt of a report.\",\n    \"Hidden world facts and personal knowledge are separate; late discovery does not rewrite earlier decisions.\",\n    \"Loyalty is a separate 0..100 state toward the hero's monarch; monarch self-loyalty is 100; exactly 25 is not below 25.\",\n    \"The same ResultId is applied at most once; retransmission is not a new evaluation.\",\n    \"Compliance and performance are separate records; good independent action may be noncompliant and successful.\",\n    \"Impossible orders and orders invalidated by sender death are execution failures, not deliberate disobedience.\",\n    \"A deceased person's personal T is not copied to an heir; the heir retains their own existing directed relations.\",\n    \"Trust change alone does not terminate contracts or relationship facts.\"\n  ],\n  \"sourceClaims\": [\n    {\n      \"source\": \"design-finalization-20261006/D07/contract.json\",\n      \"status\": \"existing-approved-bounded-rules-plus-historical-proposals\",\n      \"used\": [\n        \"directional trust bands\",\n        \"awareness gate\",\n        \"distinct loyalty\",\n        \"idempotent results\",\n        \"compliance/performance separation\",\n        \"succession non-copy\"\n      ],\n      \"limit\": \"Historical pending labels are superseded only where sealed D08/D09/D18/D20/D21 authoring boundaries apply; no payload or coefficient is promoted.\"\n    },\n    {\n      \"source\": \"task-24/cells/ck3/D07/verified-input-r1/report.md\",\n      \"status\": \"comparative-documentary-only\",\n      \"limit\": \"CK3 opinion, memory and successor values are not Seoul coefficients.\"\n    },\n    {\n      \"source\": \"task-24/cells/norland/D07/verified-input-r1/report.md\",\n      \"status\": \"comparative-documentary-only\",\n      \"limit\": \"Norland mood, loyalty, relation and cadence values are not Seoul coefficients.\"\n    },\n    {\n      \"source\": \"task-25-gurps-like-basis-20261008/basis.json\",\n      \"status\": \"no-D07-numeric-adoption\",\n      \"limit\": \"Public Lite anchors do not define Seoul trust, loyalty, memory, credibility, command evaluation or decay. No GURPS 2004 claim is made.\"\n    }\n  ],\n  \"stateSheet\": {\n    \"directedTrust\": \"Store T[A,B] independently from T[B,A]. Derive three independent band flags only from a known finite T; do not clamp or infer reciprocity.\",\n    \"relationshipFacts\": \"Family, marriage, lover, mentor/student, contract, debt, oath and command are facts, not T. D07 may read them but cannot create or terminate them from trust alone.\",\n    \"personalKnowledge\": \"Store hidden world fact separately from each person's awareness record. Only direct observation or received report creates personal awareness at acquisitionTime.\",\n    \"memoryEffect\": \"An effect record names kind, application result, application time, termination event, decay-function status and settled ResultIds. D08-A requires separate lifecycles; it does not supply values/functions.\",\n    \"institutionInputs\": \"D09-A requires country-specific institution records and actual authority/basis evidence. Existing valid relation facts survive missing inputs; unsupported new establishment remains unresolved rather than globally rejected or invented.\",\n    \"personPayloadReview\": \"D20-A preserves locked person values and requires identity-first, person-by-person and axis-by-axis disposition. An unreviewed person payload cannot enter D07 state or formulas.\",\n    \"organizationPayloadReview\": \"D21-A requires organization-by-organization, field-by-field source and disposition. Organization policy does not automatically write an individual's trust or loyalty.\",\n    \"loyalty\": \"Separate hero-to-own-monarch state in 0..100. Monarch self is 100. Below25 is a predicate; path opening requires an approved persistence/risk rule and is otherwise withheld.\",\n    \"commandEvaluation\": \"One order evaluation contains immutable receipt context, decision-time awareness/authority/feasibility, actual action, separately observed performance, compliance classification, performance classification and result identity.\",\n    \"succession\": \"Do not copy predecessor personal trust or memory into heir. Preserve public history, institutional duties and contracts only through their owning succession policies.\",\n    \"preservation\": \"Load/body change does not reset permanent event IDs, awareness history, current trust or settled results. Trust changes do not silently alter contracts, property, consent or authority.\"\n  },\n  \"outputs\": [\n    \"directed trust band flags\",\n    \"observer-specific awareness/memory receipt\",\n    \"separate loyalty predicate without invented path opening\",\n    \"compliance and performance classifications\",\n    \"typed E_UNKNOWN/E_UNIT/E_RANGE/E_STALE/E_DUPLICATE/E_DIRECTION/E_ATTRIBUTION/E_PROPOSAL errors\",\n    \"settled ResultId receipt\"\n  ],\n  \"exceptions\": [\n    \"Unknown is not zero or neutral.\",\n    \"Awareness of a hidden fact is not global.\",\n    \"Nemesis also satisfies enemy.\",\n    \"Exactly 25 loyalty is not below25.\",\n    \"Good performance does not erase noncompliance.\",\n    \"Impossibility is not disobedience.\",\n    \"Trust does not grant authority or terminate contracts.\",\n    \"Heir identity does not inherit predecessor personal trust.\"\n  ],\n  \"validatorScope\": \"Evidence-carrier verification of approved predicates, state separation, lifecycle withholding and named normal/boundary/failure/adversarial oracles. Fixture numbers identify scenarios only and are not new balance values.\"\n}"
+    }
+  ]
+}

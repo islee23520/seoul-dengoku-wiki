@@ -1,0 +1,727 @@
+{
+  "schemaVersion": 1,
+  "domain": "system-design",
+  "locale": "ko-KR",
+  "documents": [
+    {
+      "id": "doc.Archify-D01",
+      "path": "locales/ko-KR/system-design/archify-d01.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D01.md",
+        "lineStart": 1,
+        "lineEnd": 88,
+        "sha256": "e2ef4a7dd3e2bea97de637c18e7daf30632bc56b08ca12f567b3cb4a1925d988"
+      }
+    },
+    {
+      "id": "doc.Archify-D02",
+      "path": "locales/ko-KR/system-design/archify-d02.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D02.md",
+        "lineStart": 1,
+        "lineEnd": 80,
+        "sha256": "6584562df649d0416768eec90e372e8ae630c88e292c934379dd18c8aaa053da"
+      }
+    },
+    {
+      "id": "doc.Archify-D03",
+      "path": "locales/ko-KR/system-design/archify-d03.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D03.md",
+        "lineStart": 1,
+        "lineEnd": 74,
+        "sha256": "4c41453cf07045c6e08a7ed43215d0e25416684376743884349bd1326cddfd0b"
+      }
+    },
+    {
+      "id": "doc.Archify-D04",
+      "path": "locales/ko-KR/system-design/archify-d04.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D04.md",
+        "lineStart": 1,
+        "lineEnd": 73,
+        "sha256": "e6ae37c2bd5dfae7cdf581569fcab76413d6335c8d1df6404d14b6b5a3a95b30"
+      }
+    },
+    {
+      "id": "doc.Archify-D05",
+      "path": "locales/ko-KR/system-design/archify-d05.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D05.md",
+        "lineStart": 1,
+        "lineEnd": 73,
+        "sha256": "4f52194d4a656dd143d99fb542dc8b0efa8bbd8d514c2b216b43f313fdab4f91"
+      }
+    },
+    {
+      "id": "doc.Archify-D06",
+      "path": "locales/ko-KR/system-design/archify-d06.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D06.md",
+        "lineStart": 1,
+        "lineEnd": 86,
+        "sha256": "61c57dd114fb0bd842e6827d6c1ddad183ca517786ceb2fc4733b837f75174fd"
+      }
+    },
+    {
+      "id": "doc.Archify-D07",
+      "path": "locales/ko-KR/system-design/archify-d07.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D07.md",
+        "lineStart": 1,
+        "lineEnd": 77,
+        "sha256": "db49ec621c86e354a9f8704d94e10a660df387ebd78e3111c7af7b4ccced5915"
+      }
+    },
+    {
+      "id": "doc.Archify-D08",
+      "path": "locales/ko-KR/system-design/archify-d08.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D08.md",
+        "lineStart": 1,
+        "lineEnd": 80,
+        "sha256": "901155ababd671e79115789c2968acf9dc7e42d047ba82b8e0f16681ea82f423"
+      }
+    },
+    {
+      "id": "doc.Archify-D09",
+      "path": "locales/ko-KR/system-design/archify-d09.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D09.md",
+        "lineStart": 1,
+        "lineEnd": 80,
+        "sha256": "8c85f0907271ec7b2a31d49043bed023270017340f89b64011f7294e75784d48"
+      }
+    },
+    {
+      "id": "doc.Archify-D10",
+      "path": "locales/ko-KR/system-design/archify-d10.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D10.md",
+        "lineStart": 1,
+        "lineEnd": 75,
+        "sha256": "943645854713e09098f73528d8fc9391b15dccea73d8d00b04bb7bb0bb95b862"
+      }
+    },
+    {
+      "id": "doc.Archify-D11",
+      "path": "locales/ko-KR/system-design/archify-d11.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D11.md",
+        "lineStart": 1,
+        "lineEnd": 74,
+        "sha256": "e0be6111fc3ae2b4d0e7581d2764d27850eea37ba021e5d02f0bc9fe9616056d"
+      }
+    },
+    {
+      "id": "doc.Archify-D12",
+      "path": "locales/ko-KR/system-design/archify-d12.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D12.md",
+        "lineStart": 1,
+        "lineEnd": 73,
+        "sha256": "a8740d2db0e11a77f9bf195d161027fc28abed9c3fbab39ca594a3fab76157cd"
+      }
+    },
+    {
+      "id": "doc.Archify-D13",
+      "path": "locales/ko-KR/system-design/archify-d13.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D13.md",
+        "lineStart": 1,
+        "lineEnd": 85,
+        "sha256": "dc0fdaf16769259a74ffd3167106e5fd8d93873493995ce9fb53948e40523509"
+      }
+    },
+    {
+      "id": "doc.Archify-D14",
+      "path": "locales/ko-KR/system-design/archify-d14.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D14.md",
+        "lineStart": 1,
+        "lineEnd": 75,
+        "sha256": "2ea71a927babb7b205b82325fd51cd441254ded8e6900ca22d9a197cbb444f16"
+      }
+    },
+    {
+      "id": "doc.Archify-D15",
+      "path": "locales/ko-KR/system-design/archify-d15.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D15.md",
+        "lineStart": 1,
+        "lineEnd": 80,
+        "sha256": "67e788ea7b32e7be07081985e0844a775b0f1a7714768cd742f062c282d84798"
+      }
+    },
+    {
+      "id": "doc.Archify-D16",
+      "path": "locales/ko-KR/system-design/archify-d16.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D16.md",
+        "lineStart": 1,
+        "lineEnd": 82,
+        "sha256": "3201e3897202cee850a33d9c0faddde0c91335ee478747fe0e577fa0b272b37f"
+      }
+    },
+    {
+      "id": "doc.Archify-D17",
+      "path": "locales/ko-KR/system-design/archify-d17.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D17.md",
+        "lineStart": 1,
+        "lineEnd": 73,
+        "sha256": "d147e1704470e40dda45355b0866a81b98e5e8b8ef92494b50b3d773920a29e8"
+      }
+    },
+    {
+      "id": "doc.Archify-D18",
+      "path": "locales/ko-KR/system-design/archify-d18.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Archify-D18.md",
+        "lineStart": 1,
+        "lineEnd": 74,
+        "sha256": "5c732df18ddcf64375d310b36c747580ca5e717cbba107aaac190b0df7eb1ac2"
+      }
+    },
+    {
+      "id": "doc.Original-TRPG-Core",
+      "path": "locales/ko-KR/system-design/original-trpg-core.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Original-TRPG-Core.md",
+        "lineStart": 1,
+        "lineEnd": 23,
+        "sha256": "4d966cf48fa9dd244ec1f1c5a598791843711419026002a289398e39cbd46608"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D18",
+      "path": "locales/ko-KR/system-design/mechanism-d18.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D18.md",
+        "lineStart": 1,
+        "lineEnd": 2601,
+        "sha256": "06694ff4e60cda9b06db98ce15182a24ff37943d6666bfe2abd1ce343d0113d1"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D17",
+      "path": "locales/ko-KR/system-design/mechanism-d17.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D17.md",
+        "lineStart": 1,
+        "lineEnd": 824,
+        "sha256": "2c33c33c2b7ab44e96fd6117e066e8e338120e094d53d7de5067ec677dfda931"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D16",
+      "path": "locales/ko-KR/system-design/mechanism-d16.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D16.md",
+        "lineStart": 1,
+        "lineEnd": 1071,
+        "sha256": "0fff45ec2505b457f4d16b6e5c519f5527fbc6cf7b2080458ade2e46f691b64f"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D15",
+      "path": "locales/ko-KR/system-design/mechanism-d15.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D15.md",
+        "lineStart": 1,
+        "lineEnd": 2657,
+        "sha256": "525dab37b1eaf3e00d7987c7e53c145b66d446945be52dec3228a51fc248c9a7"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D14",
+      "path": "locales/ko-KR/system-design/mechanism-d14.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D14.md",
+        "lineStart": 1,
+        "lineEnd": 2234,
+        "sha256": "2a783f3d5554079b257a72ee8881fe2c47a0fea4d7f1f992d55e5382ff392424"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D13",
+      "path": "locales/ko-KR/system-design/mechanism-d13.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D13.md",
+        "lineStart": 1,
+        "lineEnd": 2834,
+        "sha256": "391bab23f9930eb32684a0c4ded9b034dcb5dbfa91c3c06f3e82d82f042c29a0"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D12",
+      "path": "locales/ko-KR/system-design/mechanism-d12.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D12.md",
+        "lineStart": 1,
+        "lineEnd": 1009,
+        "sha256": "a8f8da4442193445b92bb91fa5a61796982a88143e856f61a9df074706afbf82"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D11",
+      "path": "locales/ko-KR/system-design/mechanism-d11.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D11.md",
+        "lineStart": 1,
+        "lineEnd": 433,
+        "sha256": "9a48057a40cf706ba75aa0484059af89d5f0525ab3276bcdb62a1b91e19667d8"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D10",
+      "path": "locales/ko-KR/system-design/mechanism-d10.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D10.md",
+        "lineStart": 1,
+        "lineEnd": 452,
+        "sha256": "82b8b5139c872b1b309773b987c7066baf0c0ec8df77ce66b317cd2d84bb0d1c"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D09",
+      "path": "locales/ko-KR/system-design/mechanism-d09.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D09.md",
+        "lineStart": 1,
+        "lineEnd": 672,
+        "sha256": "7f56d30a289096114755c166140bcb7ebdb9259abf0bdd55887a397c9fcfa68d"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D08",
+      "path": "locales/ko-KR/system-design/mechanism-d08.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D08.md",
+        "lineStart": 1,
+        "lineEnd": 694,
+        "sha256": "8e12d693cb79f3eb568be1f43617892b3198480a0d20369f173f5449cb452a19"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D07",
+      "path": "locales/ko-KR/system-design/mechanism-d07.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D07.md",
+        "lineStart": 1,
+        "lineEnd": 451,
+        "sha256": "0e9763d6962393ad231b7fec4acdfdf423ce86f49fe34b700d4cdb135d12399c"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D06",
+      "path": "locales/ko-KR/system-design/mechanism-d06.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D06.md",
+        "lineStart": 1,
+        "lineEnd": 787,
+        "sha256": "d308db661e4ff825bb797a265742ebcb1faf93af17850980f932b9f206377a7c"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D05",
+      "path": "locales/ko-KR/system-design/mechanism-d05.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D05.md",
+        "lineStart": 1,
+        "lineEnd": 408,
+        "sha256": "e9ee75507ec1ddd5fd7bac60a345b7bc569a2a4125c6e6eff3d9ab26f8876e3c"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D04",
+      "path": "locales/ko-KR/system-design/mechanism-d04.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D04.md",
+        "lineStart": 1,
+        "lineEnd": 503,
+        "sha256": "51a4d08c9e4a6b7d88b837eac4b04fa8ed6480f86ff7fd0a7c5c39eb138b6e60"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D03",
+      "path": "locales/ko-KR/system-design/mechanism-d03.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D03.md",
+        "lineStart": 1,
+        "lineEnd": 595,
+        "sha256": "2964a3fe7ee5786dd534eae5b51f03bad08f4f300ab34a7b2ee5f95ff7ed4044"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D02",
+      "path": "locales/ko-KR/system-design/mechanism-d02.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D02.md",
+        "lineStart": 1,
+        "lineEnd": 429,
+        "sha256": "610fb9aaa7d190bd62774df961d8eb9023db49446cacf6ecd5ce35649146cb09"
+      }
+    },
+    {
+      "id": "doc.Mechanism-D01",
+      "path": "locales/ko-KR/system-design/mechanism-d01.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Mechanism-D01.md",
+        "lineStart": 1,
+        "lineEnd": 642,
+        "sha256": "91da1ae4a129eaaec4cf448aba5caf0a53a1e4ad264f4120e48ab73b839df0a0"
+      }
+    },
+    {
+      "id": "doc.gdd-lore-node-states",
+      "path": "locales/ko-KR/system-design/gdd-lore-node-states.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/gdd-lore-node-states.md",
+        "lineStart": 1,
+        "lineEnd": 20,
+        "sha256": "f60013af8f5772b97247325ad5ba7e6b57381097738e91dcdb38d53a1e0b19ba"
+      }
+    },
+    {
+      "id": "doc.Singleplayer-Design-SP-1-0-0",
+      "path": "locales/ko-KR/system-design/singleplayer-design-sp-1-0-0.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Singleplayer-Design-SP-1-0-0.md",
+        "lineStart": 1,
+        "lineEnd": 299,
+        "sha256": "a8af69860e5dcb3bc62ce49bdb8cab09aa021a471321c2dce9144ce12d175b4d"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d01",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d01.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d01.md",
+        "lineStart": 1,
+        "lineEnd": 124,
+        "sha256": "b36b08d6500423b398f0966965cbbf4157b9576e096ea6bd3ab577f2ba715773"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d02",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d02.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d02.md",
+        "lineStart": 1,
+        "lineEnd": 104,
+        "sha256": "65f4bc62628861194d5ae7d13d9e15172a6b40e6c936e6aec3b8a5516044df69"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d03",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d03.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d03.md",
+        "lineStart": 1,
+        "lineEnd": 300,
+        "sha256": "02d2307f54ee7cdfce88c1d0568cec0fdb5dc3fa92cab09a56c6f80f1ea63fb4"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d04",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d04.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d04.md",
+        "lineStart": 1,
+        "lineEnd": 97,
+        "sha256": "68fa5569d7258bcca4eddbf99cf1aa6d4961c62fbb5ff7eb823324f3693c714e"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d05",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d05.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d05.md",
+        "lineStart": 1,
+        "lineEnd": 119,
+        "sha256": "5b100f562b4af69b4467ca657953532db2fe6b70c47863ad7b4db0b618fe4e43"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d06",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d06.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d06.md",
+        "lineStart": 1,
+        "lineEnd": 111,
+        "sha256": "da334c1afc2784ca26253e034fa706f8fd8b3d0ea99659913094e7b634639b9c"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d07",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d07.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d07.md",
+        "lineStart": 1,
+        "lineEnd": 276,
+        "sha256": "8970e1e1a772f5be9bfe312339d894c703aa1c6a96bbdda5af19967ef245b171"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d08",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d08.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d08.md",
+        "lineStart": 1,
+        "lineEnd": 252,
+        "sha256": "200200bb6f7f537b5efb3ee407cdf4c2ea8c11616820ea6e7a82ac722d95c2c8"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d09",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d09.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d09.md",
+        "lineStart": 1,
+        "lineEnd": 177,
+        "sha256": "f4761d5fb17068ea8838c38625b568dbef661c447fa58eef41fc0a16b3906fb1"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d10",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d10.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d10.md",
+        "lineStart": 1,
+        "lineEnd": 113,
+        "sha256": "6d4515045d60cca2269523c4815ac0027da492d4cb217132054dd5e3fbf2636d"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d11",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d11.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d11.md",
+        "lineStart": 1,
+        "lineEnd": 260,
+        "sha256": "bd01fbbbcdec9efefc96d2c707d45b2c14c06561941363f0c4ef7f0aa76616fa"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d12",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d12.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d12.md",
+        "lineStart": 1,
+        "lineEnd": 188,
+        "sha256": "54e6c1e90ab7d8ab4b7361e7c3c417f402c904c797231fe50052855ba239cf9e"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d13",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d13.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d13.md",
+        "lineStart": 1,
+        "lineEnd": 291,
+        "sha256": "83be5b083b6949b7a7b715568be6a5d8e6f7f825fcd15f013d777d69761d911f"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d14",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d14.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d14.md",
+        "lineStart": 1,
+        "lineEnd": 115,
+        "sha256": "b7e98dd3b31db4d28531e96755b20d7e38610138456514925a49d53f1d1d9123"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d15",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d15.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d15.md",
+        "lineStart": 1,
+        "lineEnd": 142,
+        "sha256": "3ab08e7411dfa7b0e743a511e04525464e4ec5dd8bd4191446d4e906ebbe7617"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d16",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d16.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d16.md",
+        "lineStart": 1,
+        "lineEnd": 155,
+        "sha256": "6a42ee3f61e5f3d381b5daa7c1a8285f886f1c0733f8847c0f26ebd450acffac"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d17",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d17.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d17.md",
+        "lineStart": 1,
+        "lineEnd": 152,
+        "sha256": "807e9298467fb67ae1d5f57a90809da68fabb6a8004e82b8998bfac69d7e9ac0"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index-d18",
+      "path": "locales/ko-KR/system-design/mechanism-design-index-d18.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index-d18.md",
+        "lineStart": 1,
+        "lineEnd": 157,
+        "sha256": "2ab8fc6447a4e9053aafada6d3a4d6b3bcd0cdcd55ff9fd723d81a91e16f8659"
+      }
+    },
+    {
+      "id": "doc.character-sheet-formulas",
+      "path": "locales/ko-KR/system-design/character-sheet-formulas.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/character-sheet-formulas.md",
+        "lineStart": 1,
+        "lineEnd": 649,
+        "sha256": "8eb9ea087de0374fe86366cb0ff25ae6a0e85038b4ecea2642c67f364d140725"
+      }
+    },
+    {
+      "id": "doc.domain-situations",
+      "path": "locales/ko-KR/system-design/domain-situations.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/domain-situations.md",
+        "lineStart": 1,
+        "lineEnd": 498,
+        "sha256": "393077f09faabb04b40c1b91cc846021495387de321b189c67f0ae9f26ce04e9"
+      }
+    },
+    {
+      "id": "doc.mechanism-design-index",
+      "path": "locales/ko-KR/system-design/mechanism-design-index.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "system-design/mechanism-design-index.md",
+        "lineStart": 1,
+        "lineEnd": 48,
+        "sha256": "3416b7aed29e2e3c509604da7651f202c883e28042423ac8807cd9df5ec93d97"
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "fetchedAt": "2026-09-28T22:35:44.820262+00:00",
+  "responses": {
+    "game308": {
+      "endpoint": "repos/islee23520/seoul-dengoku/pulls/308",
+      "data": {
+        "number": 308,
+        "state": "open",
+        "merged_at": null,
+        "head": {
+          "ref": "codex/tripothon-research-delivery",
+          "sha": "9a17a9243245c77da204ef5a4952600629665df6"
+        },
+        "base": {
+          "ref": "main",
+          "sha": "84920d8c418d0f8e2bbc474b83d4a9ca0c397728"
+        },
+        "html_url": "https://github.com/islee23520/seoul-dengoku/pull/308"
+      }
+    },
+    "game306": {
+      "endpoint": "repos/islee23520/seoul-dengoku/pulls/306",
+      "data": {
+        "number": 306,
+        "state": "open",
+        "merged_at": null,
+        "head": {
+          "ref": "docs/norland-combat-decision-13",
+          "sha": "f732ab2fe8b36e0dc48add4f4bbb0f6e65d8b705"
+        },
+        "base": {
+          "ref": "main",
+          "sha": "84920d8c418d0f8e2bbc474b83d4a9ca0c397728"
+        },
+        "html_url": "https://github.com/islee23520/seoul-dengoku/pull/306"
+      }
+    },
+    "gdd33": {
+      "endpoint": "repos/islee23520/seoul-dengoku-gdd/pulls/33",
+      "data": {
+        "number": 33,
+        "state": "open",
+        "merged_at": null,
+        "head": {
+          "ref": "docs/norland-gurps-resolution",
+          "sha": "97e504adf8411208e3b03d4e99b9e4af1a41b23a"
+        },
+        "base": {
+          "ref": "docs/norland-combat-decision-13",
+          "sha": "65e523f55ff62ec1142946d13b9c50e18c181445"
+        },
+        "html_url": "https://github.com/islee23520/seoul-dengoku-gdd/pull/33"
+      }
+    },
+    "gdd-main": {
+      "endpoint": "repos/islee23520/seoul-dengoku-gdd/commits/main",
+      "data": {
+        "sha": "95bfbf37fad9b40d0e731b670fa1543c6a28ebd6",
+        "html_url": "https://github.com/islee23520/seoul-dengoku-gdd/commit/95bfbf37fad9b40d0e731b670fa1543c6a28ebd6"
+      }
+    },
+    "game306-tree": {
+      "endpoint": "repos/islee23520/seoul-dengoku/git/trees/f732ab2fe8b36e0dc48add4f4bbb0f6e65d8b705",
+      "data": {
+        "sha": "f732ab2fe8b36e0dc48add4f4bbb0f6e65d8b705",
+        "GDD": {
+          "path": "GDD",
+          "mode": "160000",
+          "type": "commit",
+          "sha": "83d33f1d8b4d11c60916b5b4dc9b91d62491335a"
+        }
+      }
+    }
+  }
+}

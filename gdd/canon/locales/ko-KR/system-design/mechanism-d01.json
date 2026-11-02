@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Mechanism-D01.md",
+    "lineStart": 1,
+    "lineEnd": 642,
+    "sha256": "91da1ae4a129eaaec4cf448aba5caf0a53a1e4ad264f4120e48ab73b839df0a0"
+  },
+  "document": {
+    "id": "doc.Mechanism-D01",
+    "blockIds": [
+      "d01.b1",
+      "overhaul.20261027.heading",
+      "overhaul.20261027.authority",
+      "overhaul.20261027.chapter",
+      "d01.b2",
+      "d01.b3",
+      "d01.b4",
+      "d01.b5",
+      "d01.b6",
+      "d01.b7",
+      "d01.b8",
+      "d01.b9",
+      "d01.b10",
+      "d01.b11"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "d01.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D01 인물·능력·특성·시트 작동 계약과 공식 시트"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "게임 로직 개편 정합 경계"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 문서는 기존 제안 상태를 유지한다. 산식·표·청사진은 서울의 구현 사실이나 승인 수치가 아니다. 아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다. 깊이조사의 불일치 총계·씨족 산식은 채택하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.chapter",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "대응 장과 확인된 근거",
+          "targetDocumentId": "doc.Characters-and-Persons"
+        }
+      ]
+    },
+    {
+      "id": "d01.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "영구 인물 ID와 서사 근거·개별 승인 이력을 기준으로 profile을 발급한다. 현재 역량은 통솔·전략·교섭·운영·통찰·학습·기량·체력의 기본 정수 0–20과 최종 정수 0–100이며 기본 10은 해당 분야 숙련자다. 행동 숙련은 별도 0–99.9다. 특성·상태·직위·권한을 분리하며 서사 근거가 있는 개막 효과의 20 초과를 허용하되 최종값은 100을 넘지 않는다. 아래 CP 예산·ST/DX/IQ/HT 시트와 참조 공식은 과거 발급·연구 범위로 한정하며 새 profile의 필수 계산이 아니다. 미확정 판정·성장·효과 합성은 보류하고 건강·권한·교육 원장을 대신 쓰지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d01.b3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 범위가 한정된 작동 계약. 공개 Lite의 참조 계산, 서울의 승인된 절차·보존 규칙, 미승인 제안을 구분한다. proposal-held는 실행할 수 없는 보류 항목이며 0이나 승인 수치가 아니다. 이 문서는 전체 도메인 수치 완성이나 런타임 구현을 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d01.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[도메인 설계](mechanism-design-index-d01.md) · [개인 시트와 계산](character-sheet-formulas.md) · [저장과 판본](../rules/Save-and-Determinism.md) · [싱글플레이 계약](Singleplayer-Design-SP-1-0-0.md)"
+        }
+      ]
+    },
+    {
+      "id": "d01.b5",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "처리 순서와 책임 경계"
+        }
+      ]
+    },
+    {
+      "id": "d01.b6",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "영구 신원을 확인하고 승인된 필드·판본·시트 개정의 동일 스냅샷을 읽는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "권한·직업·권리·숙련·신체 상태와 기본·현재 효과를 구분한다. 새 profile은 8역량과 숙련 범위를 검사하고 TL·언어·CP 예산 검사는 명시적으로 선택한 과거 발급 판본에만 적용한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "참조 공식의 채택과 입력 수치가 각각 승인된 경우에만 파생치를 계산하며 원값과 반올림값을 함께 보존한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미승인 필드는 보류하고 신원·판본·승인 불일치는 전체 쓰기를 거부한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "모든 검사를 통과한 개별 시트와 사건 영수증만 원자적으로 반영한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d01.b7",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정규화된 데이터·공식 계약"
+        }
+      ]
+    },
+    {
+      "id": "d01.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자, 읽기·쓰기 범위, 단위, 스냅샷과 반영 시점을 함께 선언한다. 형식과 보존식의 검증은 실제 원장 발급이나 미정 함수의 채택을 대신하지 않는다. rulesVersion과 연결 정본의 해시는 원천 판본을 식별하며 임의의 새 실행 판본을 만들지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d01.b9",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "json mechanism-contract",
+      "text": "{\n  \"schemaVersion\": 1,\n  \"domainId\": \"D01\",\n  \"mechanismId\": \"seoul.d01.issuance\",\n  \"status\": \"bounded-contract-with-proposal-held\",\n  \"rulesVersion\": \"D01-20261008-evidence-1\",\n  \"rulesVersionLinkage\": {\n    \"sourceRulesVersion\": \"D01-20261008-evidence-1\",\n    \"contractSHA256\": \"e6d33585a4fd652929c5270a89e855c003bdb5cf37fed121bbba35690aacc5b5\",\n    \"missingVersionPolicy\": \"원천 계약 판본을 보존한다. 게임 규칙 채택 및 저장 호환 승인과 구분한다.\",\n    \"canonRules\": [\n      {\n        \"documentId\": \"doc.Save-and-Determinism\",\n        \"path\": \"canon/locales/ko-KR/rules/save-and-determinism.json\",\n        \"sha256\": \"510a557e3448efb478d38ded1f21845557ac10c7fc8b56e2c0631ef455a86919\"\n      },\n      {\n        \"documentId\": \"doc.Singleplayer-Design-SP-1-0-0\",\n        \"path\": \"canon/locales/ko-KR/system-design/singleplayer-design-sp-1-0-0.json\",\n        \"sha256\": \"633265f37815e8d581b52426a84eec2bd1a1e987b2e05bd614b8f9752877a9bd\"\n      }\n    ],\n    \"compatibility\": \"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\"\n  },\n  \"dataOwner\": \"D01\",\n  \"fields\": [\n    {\n      \"name\": \"identity\",\n      \"type\": \"stable-id\",\n      \"unit\": \"identifier\",\n      \"null\": \"unknown; cannot issue\",\n      \"owner\": \"D01\",\n      \"read\": [\n        \"immutable authored identity and source bytes\",\n        \"field approvals\",\n        \"D02 physical state\",\n        \"D03 role authority\",\n        \"D14 entry-specific skill definitions\",\n        \"D18 revision/event receipt\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"Single identity, rules version and sheet revision; never substitute another person's approval or newer payload.\",\n      \"commitPoint\": \"D18 atomic result receipt after all guards; this evidence validator models guards, not a new D18 ordering implementation.\"\n    },\n    {\n      \"name\": \"attributes\",\n      \"type\": \"four positive integers ST/DX/IQ/HT\",\n      \"unit\": \"attribute-level\",\n      \"range\": \"positive; no invented campaign cap\",\n      \"null\": \"unknown; never baseline10\",\n      \"owner\": \"D01\",\n      \"read\": [\n        \"immutable authored identity and source bytes\",\n        \"field approvals\",\n        \"D02 physical state\",\n        \"D03 role authority\",\n        \"D14 entry-specific skill definitions\",\n        \"D18 revision/event receipt\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"Single identity, rules version and sheet revision; never substitute another person's approval or newer payload.\",\n      \"commitPoint\": \"D18 atomic result receipt after all guards; this evidence validator models guards, not a new D18 ordering implementation.\"\n    },\n    {\n      \"name\": \"budget,traitCP,skillCP,otherCP,unspentCP\",\n      \"type\": \"integer\",\n      \"unit\": \"CP\",\n      \"range\": \"budget/skill/unspent nonnegative; traitCP may be signed\",\n      \"null\": \"unknown; cannot issue\",\n      \"owner\": \"D01\",\n      \"read\": [\n        \"immutable authored identity and source bytes\",\n        \"field approvals\",\n        \"D02 physical state\",\n        \"D03 role authority\",\n        \"D14 entry-specific skill definitions\",\n        \"D18 revision/event receipt\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"Single identity, rules version and sheet revision; never substitute another person's approval or newer payload.\",\n      \"commitPoint\": \"D18 atomic result receipt after all guards; this evidence validator models guards, not a new D18 ordering implementation.\"\n    },\n    {\n      \"name\": \"skills\",\n      \"type\": \"entry-specific difficulty/control/TL/default/evidence/CP\",\n      \"unit\": \"skill-level and CP\",\n      \"null\": \"unknown, not untrained\",\n      \"owner\": \"D01\",\n      \"read\": [\n        \"immutable authored identity and source bytes\",\n        \"field approvals\",\n        \"D02 physical state\",\n        \"D03 role authority\",\n        \"D14 entry-specific skill definitions\",\n        \"D18 revision/event receipt\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"Single identity, rules version and sheet revision; never substitute another person's approval or newer payload.\",\n      \"commitPoint\": \"D18 atomic result receipt after all guards; this evidence validator models guards, not a new D18 ordering implementation.\"\n    },\n    {\n      \"name\": \"TL,languages\",\n      \"type\": \"explicit technology context and proficiency records\",\n      \"unit\": \"TL-level and language-proficiency\",\n      \"null\": \"unknown; cannot issue\",\n      \"owner\": \"D01\",\n      \"read\": [\n        \"immutable authored identity and source bytes\",\n        \"field approvals\",\n        \"D02 physical state\",\n        \"D03 role authority\",\n        \"D14 entry-specific skill definitions\",\n        \"D18 revision/event receipt\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"Single identity, rules version and sheet revision; never substitute another person's approval or newer payload.\",\n      \"commitPoint\": \"D18 atomic result receipt after all guards; this evidence validator models guards, not a new D18 ordering implementation.\"\n    },\n    {\n      \"name\": \"traits\",\n      \"type\": \"separate individually reviewed traits\",\n      \"unit\": \"trait-id and CP\",\n      \"null\": \"unknown; explicit empty list means none\",\n      \"owner\": \"D01\",\n      \"read\": [\n        \"immutable authored identity and source bytes\",\n        \"field approvals\",\n        \"D02 physical state\",\n        \"D03 role authority\",\n        \"D14 entry-specific skill definitions\",\n        \"D18 revision/event receipt\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"Single identity, rules version and sheet revision; never substitute another person's approval or newer payload.\",\n      \"commitPoint\": \"D18 atomic result receipt after all guards; this evidence validator models guards, not a new D18 ordering implementation.\"\n    },\n    {\n      \"name\": \"temporaryModifiers\",\n      \"type\": \"effect-id,target,delta,start/end event,source,settled-event\",\n      \"unit\": \"target-specific level modifier\",\n      \"null\": \"unknown; no implicit zero\",\n      \"owner\": \"D01\",\n      \"read\": [\n        \"immutable authored identity and source bytes\",\n        \"field approvals\",\n        \"D02 physical state\",\n        \"D03 role authority\",\n        \"D14 entry-specific skill definitions\",\n        \"D18 revision/event receipt\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"Single identity, rules version and sheet revision; never substitute another person's approval or newer payload.\",\n      \"commitPoint\": \"D18 atomic result receipt after all guards; this evidence validator models guards, not a new D18 ordering implementation.\"\n    },\n    {\n      \"name\": \"roleEligibility\",\n      \"type\": \"authority proof plus state and equipment/access proofs\",\n      \"unit\": \"permission\",\n      \"null\": \"unknown; skill level is not authority\",\n      \"owner\": \"D01\",\n      \"read\": [\n        \"immutable authored identity and source bytes\",\n        \"field approvals\",\n        \"D02 physical state\",\n        \"D03 role authority\",\n        \"D14 entry-specific skill definitions\",\n        \"D18 revision/event receipt\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"Single identity, rules version and sheet revision; never substitute another person's approval or newer payload.\",\n      \"commitPoint\": \"D18 atomic result receipt after all guards; this evidence validator models guards, not a new D18 ordering implementation.\"\n    },\n    {\n      \"name\": \"snapshotRevision,rulesVersion,eventId\",\n      \"type\": \"revision/version/stable-event-id\",\n      \"unit\": \"revision,version,identifier\",\n      \"null\": \"invalid\",\n      \"owner\": \"D01\",\n      \"read\": [\n        \"immutable authored identity and source bytes\",\n        \"field approvals\",\n        \"D02 physical state\",\n        \"D03 role authority\",\n        \"D14 entry-specific skill definitions\",\n        \"D18 revision/event receipt\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"Single identity, rules version and sheet revision; never substitute another person's approval or newer payload.\",\n      \"commitPoint\": \"D18 atomic result receipt after all guards; this evidence validator models guards, not a new D18 ordering implementation.\"\n    }\n  ],\n  \"readSet\": [\n    \"immutable authored identity and source bytes\",\n    \"field approvals\",\n    \"D02 physical state\",\n    \"D03 role authority\",\n    \"D14 entry-specific skill definitions\",\n    \"D18 revision/event receipt\"\n  ],\n  \"writeSet\": [\n    \"D01 individual issuance receipt and sheet revision\"\n  ],\n  \"snapshot\": \"Single identity, rules version and sheet revision; never substitute another person's approval or newer payload.\",\n  \"commitPoint\": \"D18 atomic result receipt after all guards; this evidence validator models guards, not a new D18 ordering implementation.\",\n  \"orderedSteps\": [\n    \"Resolve permanent identity without renumbering.\",\n    \"Read source and per-field approval snapshot.\",\n    \"Separate authority, occupation, rights, skill and physical state.\",\n    \"Check TL/language and budget completeness; no evidence is no growth credit.\",\n    \"Compute reference derived fields only when their adoption and input values are separately approved; retain raw and rounded values.\",\n    \"Balance budget=attributes+traits+skills+other+unspent; never allocate unspent automatically.\",\n    \"Hold pending fields; reject stale/version/identity or approval mismatches.\",\n    \"Commit one sheet and event receipt without writing world facts, health, role or training ledgers.\"\n  ],\n  \"formulaSheet\": [\n    {\n      \"id\": \"L-attributes\",\n      \"expression\": \"baseline10; ST/HT10 CP per level, DX/IQ20 CP per level\",\n      \"status\": \"reference-only\",\n      \"unit\": \"attribute/skill level; source-scoped\",\n      \"numericAdoption\": false\n    },\n    {\n      \"id\": \"L-secondary\",\n      \"expression\": \"unmodified HP=ST, FP=HT, Will=Per=IQ, Speed=(DX+HT)/4; Move=floor(Speed); Dodge=floor(Speed+3)\",\n      \"status\": \"reference-only\",\n      \"unit\": \"attribute/skill level; source-scoped\",\n      \"numericAdoption\": false\n    },\n    {\n      \"id\": \"L-lift\",\n      \"expression\": \"ST squared/5 lb; nearest whole lb only if raw>=10\",\n      \"status\": \"reference-only\",\n      \"unit\": \"lb\",\n      \"numericAdoption\": false\n    },\n    {\n      \"id\": \"L-cost\",\n      \"expression\": \"E/A/H only:1,2,4,then4 CP per extra level\",\n      \"status\": \"reference-only\",\n      \"unit\": \"CP\",\n      \"numericAdoption\": false\n    },\n    {\n      \"id\": \"L-default\",\n      \"expression\": \"reference E/A/H defaults -4/-5/-6, attribute cap20; entry exceptions must be explicit\",\n      \"status\": \"reference-only\",\n      \"unit\": \"attribute/skill level; source-scoped\",\n      \"numericAdoption\": false\n    },\n    {\n      \"id\": \"L-points\",\n      \"expression\": \"budget is a design choice, not universal\",\n      \"status\": \"reference-only\",\n      \"unit\": \"CP\",\n      \"numericAdoption\": false\n    },\n    {\n      \"id\": \"L-native\",\n      \"expression\": \"native language0 CP where applicable, not a purchased skill\",\n      \"status\": \"reference-only\",\n      \"unit\": \"CP\",\n      \"numericAdoption\": false\n    },\n    {\n      \"id\": \"CP-balance\",\n      \"expression\": \"budget=attributes+traits+skills+other+unspent\",\n      \"unit\": \"CP\",\n      \"status\": \"approved-procedure\",\n      \"guard\": \"각 입력과 예산은 개인별 승인 필수; 자동 배분 없음\"\n    }\n  ],\n  \"rng\": \"No RNG for arithmetic or issuance. Generated missing values are seeded proposals per D36, not issued values; PRNG/draw protocol remains D18-owned.\",\n  \"time\": \"Event-triggered review/issue/end-effect; no periodic training tick invented.\",\n  \"rounding\": \"Exact quarter Speed; floor Move/Dodge; BL retains raw and rounded separately. No generic attribute/modifier clamp. Reference skill costs support E/A/H only.\",\n  \"clamps\": \"Exact quarter Speed; floor Move/Dodge; BL retains raw and rounded separately. No generic attribute/modifier clamp. Reference skill costs support E/A/H only.\",\n  \"lifecycle\": {\n    \"cancel\": \"Discard uncommitted candidate; preserve prior sheet and approvals.\",\n    \"death\": \"Block new live issuance; preserve same identity and historical sheet; succession does not copy skills.\",\n    \"load\": \"Require compatible rules version and revision; preserve pending/held states; no silent repair.\"\n  },\n  \"failure\": \"Stale revision, mixed rule version, reused event ID or changed approved payload rejects the entire write; original snapshot remains unchanged.\",\n  \"proposalHeld\": [\n    {\n      \"id\": \"P01\",\n      \"rows\": [\n        \"D07\",\n        \"D33\",\n        \"D34\"\n      ],\n      \"scope\": \"Every unapproved individual CP budget, attributes, trait allocation and derived sheet value; preserve existing locks and source bytes, approve person by person.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P02\",\n      \"rows\": [\n        \"D25\"\n      ],\n      \"scope\": \"K1009 Spear intended15 remains; DX13/12CP conditional16 is arithmetic, not approved replacement. Point reallocation and citations27/35 remain held.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P03\",\n      \"rows\": [\n        \"D26\",\n        \"D31\"\n      ],\n      \"scope\": \"Seoul skill definitions, controlling attributes, defaults, TL/language proficiency and costs; Observation/Scrounging IQ versus Per conflict, Teaching/VH and reputation multipliers.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P04\",\n      \"rows\": [\n        \"D22\",\n        \"D30\",\n        \"D37\"\n      ],\n      \"scope\": \"Exact temporary modifier values, stacking/end rules, injury/command eligibility thresholds and secondary-stat adjustments; read health state without inventing effects or resetting HP/FP.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P05\",\n      \"rows\": [\n        \"D23\",\n        \"D31\"\n      ],\n      \"scope\": \"Practice-to-unused-growth-point rates, time/cost/teacher effects and action+1/max+3; no evidence means no automatic point award.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P06\",\n      \"rows\": [\n        \"D13\",\n        \"D14\",\n        \"D20\",\n        \"D34\"\n      ],\n      \"scope\": \"Individual factual backfills, candidate identity/payload, value/need axes and proposed corpus content; mapping approval does not approve payload.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P07\",\n      \"rows\": [\n        \"D16\",\n        \"D36\"\n      ],\n      \"scope\": \"Generated individual distributions/skill/age values; seeded fallback candidates need separate approval, stable population token is conserved.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P08\",\n      \"rows\": [\n        \"D01\"\n      ],\n      \"scope\": \"Opening location records, conflict resolution and physical placement; detention alone does not remove alive character from selection.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P09\",\n      \"rows\": [\n        \"D33\"\n      ],\n      \"scope\": \"Seoul adoption of public reference math beyond sealed procedural approval. Basis marks structure only/no-new-approval; reference computation passing is not numeric adoption.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P10\",\n      \"rows\": [],\n      \"classification\": \"work-scope-deferral\",\n      \"authority\": \"Current evidence-only execution instruction; not a sealed-decision hold\",\n      \"scope\": \"D18 exact scheduling/commit integration and Task27 common-validator/canonical registration; current evidence-only instruction excludes product and plan edits and literal GDD closure command.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P11\",\n      \"rows\": [\n        \"D05\"\n      ],\n      \"classification\": \"sealed-decision-input-hold\",\n      \"trace\": {\n        \"decisionId\": \"GP-10\",\n        \"subdecisionKey\": \"knowledge-access-residual\",\n        \"pointer\": \"/decisions/4\",\n        \"boundaryPointer\": \"/decisions/4/consequences/selectionEffect\",\n        \"chosenOption\": \"A\",\n        \"ownerEventReference\": \"4fbc76cb\"\n      },\n      \"scope\": \"Per-skill independent requirement tables and actual access/facility reservation evidence remain to be authored and approved. Do not infer actual access from D01 skills or add universal requirements. Growth rates remain under D31.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P12\",\n      \"rows\": [\n        \"D18\"\n      ],\n      \"classification\": \"sealed-decision-input-hold\",\n      \"trace\": {\n        \"decisionId\": \"GP-11\",\n        \"subdecisionKey\": \"command-evaluation-interface\",\n        \"pointer\": \"/decisions/17\",\n        \"boundaryPointer\": \"/decisions/17/consequences/selectionEffect\",\n        \"chosenOption\": \"A\",\n        \"ownerEventReference\": \"4fbc76cb\"\n      },\n      \"scope\": \"Decision-time perception/authority/feasibility records and later performance must remain separate. Observation completeness, autonomous judgement policy, attribution and evaluation lifecycle records remain held; unknown observation is not success/failure. This decision row D18 is not the D18 time domain.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P13\",\n      \"rows\": [\n        \"D24\"\n      ],\n      \"classification\": \"sealed-decision-input-hold\",\n      \"trace\": {\n        \"decisionId\": \"T68-COMBAT-THREE-DIMENSIONS\",\n        \"subdecisionKey\": \"three-scope-calculation\",\n        \"pointer\": \"/decisions/23\",\n        \"boundaryPointer\": \"/decisions/23/consequences/selectionEffect\",\n        \"chosenOption\": \"A\",\n        \"ownerEventReference\": \"4fbc76cb\"\n      },\n      \"scope\": \"Personal result -> situation adjustment -> unit aggregation and single loss ledger are selected direction; exact channels, modifiers and allocation remain held. D01 does not settle combat losses or issue aggregate combat values; D15 consumer owns this later contract.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P14\",\n      \"rows\": [\n        \"D32\"\n      ],\n      \"classification\": \"sealed-decision-input-hold\",\n      \"trace\": {\n        \"decisionId\": \"GP-11\",\n        \"subdecisionKey\": \"combat-calculation\",\n        \"pointer\": \"/decisions/31\",\n        \"boundaryPointer\": \"/decisions/31/consequences/selectionEffect\",\n        \"chosenOption\": \"A\",\n        \"ownerEventReference\": \"0fe158d7\"\n      },\n      \"scope\": \"Lite reference 3d6/defense/DR/injury and Seoul realtime execution stay separate. Exact judgement functions, coefficients, tie/RNG protocol, attack intervals and personal/aggregate allocation are not supplied/approved; D01 reference arithmetic grants no combat adoption. No monthly turn, pause, speed control or order waiting.\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    }\n  ],\n  \"scope\": {\n    \"numericBalanceReady\": false,\n    \"runtimeImplemented\": false,\n    \"worldFactsIssued\": false,\n    \"executionSchemaReady\": false\n  }\n}"
+    },
+    {
+      "id": "d01.b10",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태·효과·출처의 적용 범위"
+        }
+      ]
+    },
+    {
+      "id": "d01.b11",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "json",
+      "text": "{\n  \"authority\": {\n    \"approved\": \"Sealed chosenOption A establishes individual review and issuance procedure, not every proposed value or reference coefficient's Seoul adoption.\",\n    \"decisionRows\": [\n      \"D01\",\n      \"D05\",\n      \"D07\",\n      \"D13\",\n      \"D14\",\n      \"D16\",\n      \"D18\",\n      \"D20\",\n      \"D22\",\n      \"D23\",\n      \"D24\",\n      \"D25\",\n      \"D26\",\n      \"D30\",\n      \"D31\",\n      \"D32\",\n      \"D33\",\n      \"D34\",\n      \"D36\",\n      \"D37\"\n    ],\n    \"explicitDeferrals\": [\n      {\n        \"row\": \"D05\",\n        \"decisionId\": \"GP-10\",\n        \"subdecisionKey\": \"knowledge-access-residual\",\n        \"decisionPointer\": \"/decisions/4\",\n        \"chosenOption\": \"A\",\n        \"ownerEventReference\": \"4fbc76cb\",\n        \"status\": \"deferred-sealed-decision-input\",\n        \"proposalId\": \"P11\",\n        \"boundary\": \"Per-skill independent requirements and actual access evidence are selected; exact entry records, facility reservations and requirement predicates are not supplied/approved. Do not impose universal teacher/tool/place requirements or infer access from skill level; D14 owns their later specification.\"\n      },\n      {\n        \"row\": \"D18\",\n        \"decisionId\": \"GP-11\",\n        \"subdecisionKey\": \"command-evaluation-interface\",\n        \"decisionPointer\": \"/decisions/17\",\n        \"chosenOption\": \"A\",\n        \"ownerEventReference\": \"4fbc76cb\",\n        \"status\": \"deferred-sealed-decision-input\",\n        \"proposalId\": \"P12\",\n        \"boundary\": \"Decision-time perception, authority and feasibility must be separate from later performance. Observation completeness, autonomy policy, evaluation lifecycle and individual attribution records remain held; D01 cannot infer these from an issued skill or fill unknown observations with success/failure.\"\n      },\n      {\n        \"row\": \"D24\",\n        \"decisionId\": \"T68-COMBAT-THREE-DIMENSIONS\",\n        \"subdecisionKey\": \"three-scope-calculation\",\n        \"decisionPointer\": \"/decisions/23\",\n        \"chosenOption\": \"A\",\n        \"ownerEventReference\": \"4fbc76cb\",\n        \"status\": \"deferred-sealed-decision-input\",\n        \"proposalId\": \"P13\",\n        \"boundary\": \"Selected order is individual result, situation adjustment, unit aggregation with one loss ledger. Exact channel functions, modifiers and personal/unit damage allocation remain held; D01 provides no aggregate combat output or second casualty settlement. D15 owns implementation of these channels.\"\n      },\n      {\n        \"row\": \"D32\",\n        \"decisionId\": \"GP-11\",\n        \"subdecisionKey\": \"combat-calculation\",\n        \"decisionPointer\": \"/decisions/31\",\n        \"chosenOption\": \"A\",\n        \"ownerEventReference\": \"0fe158d7\",\n        \"status\": \"deferred-sealed-decision-input\",\n        \"proposalId\": \"P14\",\n        \"boundary\": \"Public Lite 3d6/defense/DR/injury reference structure is separate from Seoul realtime execution. Exact judgement timing, coefficients, ties/RNG, attack intervals and personal/aggregate allocation remain held; reference derived fields do not implement or approve realtime combat. No monthly turn, pause, speed control or order waiting is introduced.\"\n      }\n    ],\n    \"referenceMath\": \"Public Lite structural calculation only; verification fixture values are Seoul-owned illustrative inputs, not issued cast values or GURPS Basic 2004 certification.\"\n  },\n  \"sourceClaims\": [\n    {\n      \"id\": \"L-attributes\",\n      \"scope\": \"baseline10; ST/HT10 CP per level, DX/IQ20 CP per level\"\n    },\n    {\n      \"id\": \"L-secondary\",\n      \"scope\": \"unmodified HP=ST, FP=HT, Will=Per=IQ, Speed=(DX+HT)/4; Move=floor(Speed); Dodge=floor(Speed+3)\"\n    },\n    {\n      \"id\": \"L-lift\",\n      \"scope\": \"ST squared/5 lb; nearest whole lb only if raw>=10\"\n    },\n    {\n      \"id\": \"L-cost\",\n      \"scope\": \"E/A/H only:1,2,4,then4 CP per extra level\"\n    },\n    {\n      \"id\": \"L-default\",\n      \"scope\": \"reference E/A/H defaults -4/-5/-6, attribute cap20; entry exceptions must be explicit\"\n    },\n    {\n      \"id\": \"L-points\",\n      \"scope\": \"budget is a design choice, not universal\"\n    },\n    {\n      \"id\": \"L-native\",\n      \"scope\": \"native language0 CP where applicable, not a purchased skill\"\n    }\n  ],\n  \"stateSheet\": {\n    \"states\": [\n      \"proposal\",\n      \"held\",\n      \"rejected\",\n      \"approved\",\n      \"issued\",\n      \"dead\"\n    ],\n    \"temporaryEffects\": \"Do not rewrite base CP or attributes. Each effect must have approved target-specific delta, application/termination event and consumer settlement identity. Unknown duration/stacking/coefficient stays held; no universal decay or modifier cap.\",\n    \"roleGuard\": \"A high skill or office label grants no command permission. Explicit D03 authority and D02 state are read separately; this sheet does not invent injury thresholds.\",\n    \"openingGuard\": \"Alive characters have no age/office selection exclusion; detention is displayed. Opening location remains separately approved, never an automatic relocation.\",\n    \"outputs\": [\n      \"individual review disposition\",\n      \"sheet revision\",\n      \"typed failure or atomic issuance receipt\",\n      \"proposal list\"\n    ],\n    \"exceptions\": [\n      \"Native language is not skill purchase\",\n      \"TL absence is not TL0\",\n      \"Occupation is not skill level\",\n      \"Rights ownership is not war authority\",\n      \"Historical two-sample budget is not all-cast budget\"\n    ]\n  },\n  \"researchLimits\": {\n    \"ck3\": \"Task24 D01 report:4 scope-verified,6 unresolved,1 non-equivalent; no adoption of hidden source formulas.\",\n    \"norland\": \"Task24 D01 report:39 verified,19 unresolved,1 non-equivalent; prior D01 review records five missing pinned wiki artifacts; quote/prior-audit scope is not new raw-original proof.\",\n    \"paths\": [\n      \"../task-24/cells/ck3/D01/verified-input-r2/report.md\",\n      \"../task-24/cells/norland/D01/verified-input-r2/report.md\"\n    ]\n  }\n}"
+    }
+  ]
+}

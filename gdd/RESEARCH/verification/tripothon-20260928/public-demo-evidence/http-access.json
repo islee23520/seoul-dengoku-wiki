@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-28T13:50:32.211Z",
+  "scope": "Anonymous HTTP entry check only; no login, gameplay or deployment changes",
+  "records": [
+    {
+      "url": "https://seoul-dengoku.linalab.io/tripothon/",
+      "httpStatus": 302,
+      "redirect": "https://linalab.cloudflareaccess.com/cdn-cgi/access/login/seoul-dengoku.linalab.io",
+      "verdict": "FAIL_AUTH_REQUIRED"
+    },
+    {
+      "url": "https://seoul-dengoku.linalab.io/play/",
+      "httpStatus": 302,
+      "redirect": "https://linalab.cloudflareaccess.com/cdn-cgi/access/login/seoul-dengoku.linalab.io",
+      "verdict": "FAIL_AUTH_REQUIRED"
+    }
+  ]
+}

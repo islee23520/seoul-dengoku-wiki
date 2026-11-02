@@ -1,0 +1,131 @@
+{
+  "sourceSha": "6f07a94996a1f416cec1a44a3b3844dfb732900f",
+  "functionalFlow": "PASS",
+  "requiredStateViewportCells": 26,
+  "requiredStateViewportCellsCaptured": 26,
+  "additionalBranchCaptures": 8,
+  "visualVerdict": "FAIL - art-blocked assets and presentation issues",
+  "webGL": "NOT RUN - native surface chosen",
+  "independentReview": "Lead pending",
+  "rows": [
+    {
+      "id": "S01",
+      "state": "Title",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "S02",
+      "state": "Base preparation",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "S03",
+      "state": "Expedition home",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "S04",
+      "state": "Travel Sindorim",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "S05",
+      "state": "Travel Guro",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "S06",
+      "state": "Encounter",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "S07",
+      "state": "Resolution choices",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "S08",
+      "state": "Combat ongoing",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "S09",
+      "state": "Combat pending settlement",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "S10",
+      "state": "Negotiation pending settlement",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "S11",
+      "state": "Bypass pending settlement",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "S12",
+      "state": "Combat settlement applied",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "S13",
+      "state": "Combat return BaseReady",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "B01",
+      "state": "Negotiation settlement applied",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "B02",
+      "state": "Negotiation return",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "B03",
+      "state": "Bypass settlement applied",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    },
+    {
+      "id": "B04",
+      "state": "Bypass return",
+      "720p": "PASS - functional state captured",
+      "1080p": "PASS - functional state captured",
+      "assetVisual": "FAIL - blocked placeholders observed"
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "rules/Relationships-Houses-and-Intrigue.md",
+    "lineStart": 1,
+    "lineEnd": 28,
+    "sha256": "6b341e9cd6c10fd6eb8c18f59da5edbe1f71bbb3f493b09f6a5c35eb92df5332"
+  },
+  "document": {
+    "id": "doc.Relationships-Houses-and-Intrigue",
+    "blockIds": [
+      "ch.title",
+      "overhaul.20261027.verdict",
+      "ch.authority",
+      "ch.provenance",
+      "ch.sp",
+      "ch.s0",
+      "ch.p0",
+      "ch.s1",
+      "ch.p1",
+      "ch.s2",
+      "ch.p2",
+      "ch.s3",
+      "ch.p3",
+      "ch.decisions",
+      "ch.terms",
+      "overhaul.20261027.contract-map",
+      "overhaul.20261027.supersession",
+      "overhaul.20261027.move",
+      "overhaul.20261027.battle",
+      "overhaul.20261027.verified-heading",
+      "overhaul.20261027.verified-facts"
+    ],
+    "terminalLineFeeds": 2
+  },
+  "blocks": [
+    {
+      "id": "ch.title",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CH2 관계·가문·음모"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.verdict",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "최신 독립 검증: depth-verification-20261027.md:1855-1900(§9)은 정정된 depth-01/02/03 및 gap inventory의 정적 근거를 synthesis 입력 PASS로 판정한다. 최초 FAIL 이력은 보존한다. depth-04는 제한된 정적 충실도 PASS다. 이는 전체 게임플레이 의미·런타임 인과·설치 무결성·전투 피해식·Ghidra 원프로젝트 메타데이터 복원을 보증하지 않는다. 아래 참조는 CK3 구조 참고일 뿐 서울 제품 권한이 아니며 불일치했던 총계·코핑 효과·씨족 산식·유산 비용을 서울 규칙으로 채택하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다. 참조 게임의 제도·수치를 서울 규칙으로 승격하지 않는다. 승인 계약은 구현 완료를 뜻하지 않으며 SP-1.0.0의 대체 범위가 과거 공유 세계 조항보다 우선한다."
+        }
+      ]
+    },
+    {
+      "id": "ch.provenance",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "외부 제품 원천: https://github.com/islee23520/seoul-dengoku/tree/main (측정 revision 3e3c03349eafaaf88347d119a4bdd0c6d44abc53; 인용은 고정 revision URL 사용). CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다. 해당 설치본의 무결성은 미검증이다. 출처 경로와 식별자는 조사 표기이며 게임 UI 표시명이 아니다."
+        }
+      ]
+    },
+    {
+      "id": "ch.sp",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "상위 계약: 싱글플레이 상세 기획",
+          "targetDocumentId": "doc.Singleplayer-Design-SP-1-0-0"
+        }
+      ]
+    },
+    {
+      "id": "ch.s0",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2.1 관계 원장·기억·충성"
+        }
+      ]
+    },
+    {
+      "id": "ch.p0",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: SP-1.0.0의 관계·인준·지지 계약과 목적별 난수 보존을 따른다. 친족·빚·맹세·소속만으로 지휘권이 생기지 않으며 실제 지휘 계약을 확인한다(기존 영웅 분대 승인 계약). CK3 참조: depth-01-social-intrigue.md:1205-1255는 대응 관계·상호배제·관계 별칭·기억 이벤트의 정적 연결이다. 정정된 정적 참조 — depth-verification-20261027.md:1855-1900 PASS 범위에 한정. 관계 설정이 실제 어느 엔진 틱에 합산되는지는 입증 범위 밖이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s1",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2.2 가문·친족·혼인·양자"
+        }
+      ]
+    },
+    {
+      "id": "ch.p1",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: 인물·가문 세계 정본은 LORE/WIKI로 연결하고 SP-1.0.0 권한과 혼동하지 않는다. CK3 참조: depth-01-social-intrigue.md:850-908은 혼인 상호작용의 표시·검증·수용·사후 효과를 분리하는 사례다. 제품 권한: 서울의 혼인·양자·친족 권리와 가문 제도는 제도 미정이며 CK3 후보 자격·훅 보너스를 이전하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s2",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2.3 음모·계략·발각"
+        }
+      ]
+    },
+    {
+      "id": "ch.p2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3 참조: mechanics-03-schemes.md:11-173,187-255에서 진행 목표·성공률 재료·비밀유지·요원·방어를 별도 정의한다. 단계 길이·성공 상한·발각 계수는 CK3 값이며 서울 수치가 아니다. depth-01-social-intrigue.md:1015-1025,1060,1089-1097은 비밀의 사회적 판정과 훅 종류 연결을 보여 주는 1차 참조다. 훅·비밀·의견 총계는 독립검증 불일치로 채택하지 않는다. 제품 권한: 서울 음모의 구현 범위·유형·진행·발각 제도는 제도 미정. 승인된 독립 요원의 암살·방해·정보 역할이 CK3 scheme 엔진 채택을 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2.4 평판·의견과 수용"
+        }
+      ]
+    },
+    {
+      "id": "ch.p3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: SP-1.0.0 인준·지지와 명시적 실행 영수증을 보존한다. CK3 참조: depth-01-social-intrigue.md:15-43의 가시성·자격·발송·수용·효과 체인과 :1109-1126의 지속·감쇠·누적·처벌 사유 필드는 구조 참고다. 모든 수용이 단일 주사위라는 일반화는 채택하지 않는다. 제품 권한: 평판·의견·공포를 하나의 서울 확률식으로 합치는 정책 및 수치 전부는 제도 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.decisions",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "제품 결정 원장 — 미결정은 소유자 권한",
+          "targetDocumentId": "doc.Open-Decisions"
+        }
+      ]
+    },
+    {
+      "id": "ch.terms",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "한국어 표기와 명명 규칙",
+          "targetDocumentId": "doc.Korean-Terminology-and-Naming"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.contract-map",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "보존 계약과 결정 번호의 소유"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.supersession",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제품 결정 13(개인 판정 전투)·14(시간 기반 전략 이동)·15(가변 정원)은 아래 승인 규칙 문서에 보존된 소유자 결정이다. 메커니즘 D13/D14/D15 시트 번호와 다른 이름공간이며 제안 시트를 승인하지 않는다. SP-1.0.0은 공유 세계·참가자·호스트·점유·온라인 대행 조항을 역사 범위로 대체하고 실제 이동·현장 참가·권한·단일 정산·저장 오류 계약을 유지한다. pw-01은 전쟁 개시 임계 제안이지 승인된 제품 결정 번호가 아니다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.move",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "결정 14·15 및 영웅 클래스 승인 원장",
+          "targetDocumentId": "doc.Hero-Squads-and-Time-Based-Movement"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.battle",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "결정 13·15 및 개인·상황·집계 계산 책임",
+          "targetDocumentId": "doc.Personal-Resolution-Battle"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.verified-heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정정 검증된 CK3 사회 인벤토리"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.verified-facts",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3 참조만: depth-verification-20261027.md:1865-1870,1883-1888은 훅 48선언(테스트 포함), 비밀 19=14+2+3, 의견 직속 74txt/1624선언·재귀75txt/1630선언, crime/prison 의견72선언을 확인한다. 선언 집계와 상호작용 의미 전수 검증은 다르다. 코핑2는 보유수 게이트이며 단일 정신붕괴 이벤트는 한 옵션 선택이다. 모든 설득이 base0·단일 주사위라는 일반화는 폐기한다. 이 수량·효과는 서울 인물/관계 데이터 수량이나 제품 규칙이 아니다."
+        }
+      ]
+    }
+  ]
+}

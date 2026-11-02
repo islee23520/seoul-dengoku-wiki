@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "domain": "rules",
+  "locale": "ko-KR",
+  "documents": [
+    {
+      "id": "doc.Campaign-Loop",
+      "path": "locales/ko-KR/rules/campaign-loop.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Campaign-Loop.md",
+        "lineStart": 1,
+        "lineEnd": 25,
+        "sha256": "9bcc3495f08d8ace424321323d8c157821da6ada5cb5ee3311811a09147bb765"
+      }
+    },
+    {
+      "id": "doc.Campaign-Progression",
+      "path": "locales/ko-KR/rules/campaign-progression.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Campaign-Progression.md",
+        "lineStart": 1,
+        "lineEnd": 77,
+        "sha256": "0c8f367a3f7bc0b0fab11bda30325811e680ec89731c7db035ef1d9cd4fe3e8c"
+      }
+    },
+    {
+      "id": "doc.Hero-Squads-and-Time-Based-Movement",
+      "path": "locales/ko-KR/rules/hero-squads-and-time-based-movement.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Hero-Squads-and-Time-Based-Movement.md",
+        "lineStart": 1,
+        "lineEnd": 105,
+        "sha256": "3bd57c0dbaee7da56e8bdbdf43889033a292d4874bbd9a747a771174c7d2d988"
+      }
+    },
+    {
+      "id": "doc.Personal-Resolution-Battle",
+      "path": "locales/ko-KR/rules/personal-resolution-battle.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Personal-Resolution-Battle.md",
+        "lineStart": 1,
+        "lineEnd": 70,
+        "sha256": "2c0404868aed070288ffbf83fe43f15ee069a52ada31d619cc89c178ca405733"
+      }
+    },
+    {
+      "id": "doc.Rules-Battle",
+      "path": "locales/ko-KR/rules/rules-battle-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-Battle.md",
+        "lineStart": 1,
+        "lineEnd": 252,
+        "sha256": "4f6e6bafbf418edc502de22ae9c65352823331e9b4aae0635b2c73d72e8bd122"
+      }
+    },
+    {
+      "id": "doc.Rules-CampaignLoop",
+      "path": "locales/ko-KR/rules/rules-campaign-loop-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-CampaignLoop.md",
+        "lineStart": 1,
+        "lineEnd": 227,
+        "sha256": "201e152d9e934a651bac3c4a9de50fae8b19f98aee7247620b3fc5d2d04843ee"
+      }
+    },
+    {
+      "id": "doc.Rules-EconomyLogistics",
+      "path": "locales/ko-KR/rules/rules-economy-logistics-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-EconomyLogistics.md",
+        "lineStart": 1,
+        "lineEnd": 291,
+        "sha256": "4029e2684ff2e177b85c04d9658370ba13087562eb6a92306d3d257bdd98f2d9"
+      }
+    },
+    {
+      "id": "doc.Rules-FactionsWarfare",
+      "path": "locales/ko-KR/rules/rules-factions-warfare-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-FactionsWarfare.md",
+        "lineStart": 1,
+        "lineEnd": 293,
+        "sha256": "040f1ee5874ed9334884ea1870b1794d3504d41e4e8988ae7f1c622594dd520a"
+      }
+    },
+    {
+      "id": "doc.Rules-SaveDeterminism",
+      "path": "locales/ko-KR/rules/rules-save-determinism-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-SaveDeterminism.md",
+        "lineStart": 1,
+        "lineEnd": 160,
+        "sha256": "263de8a63d8c8ce577dac1feaf38d55f3f7cc7532f500b275e281c59b1fc7e9b"
+      }
+    },
+    {
+      "id": "doc.Rules-Strongholds",
+      "path": "locales/ko-KR/rules/rules-strongholds-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-Strongholds.md",
+        "lineStart": 1,
+        "lineEnd": 192,
+        "sha256": "d5d149bebf36f815e15130d692f1c8862ce2d7164eb0d44a54376ac8794fa58e"
+      }
+    },
+    {
+      "id": "doc.Rules-TravelEncounters",
+      "path": "locales/ko-KR/rules/rules-travel-encounters-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-TravelEncounters.md",
+        "lineStart": 1,
+        "lineEnd": 141,
+        "sha256": "033dfa699eab1994cab49e0520141e2c31fa92cf1b212f1f1559d92bd59aefa9"
+      }
+    },
+    {
+      "id": "doc.Save-and-Determinism",
+      "path": "locales/ko-KR/rules/save-and-determinism.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Save-and-Determinism.md",
+        "lineStart": 1,
+        "lineEnd": 68,
+        "sha256": "937a3870f588439881d4fb1dfb49224383d193ab5f65e65d2c5a36e95a5dedb2"
+      }
+    },
+    {
+      "id": "doc.Strategy-Battle-Roundtrip",
+      "path": "locales/ko-KR/rules/strategy-battle-roundtrip.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Strategy-Battle-Roundtrip.md",
+        "lineStart": 1,
+        "lineEnd": 56,
+        "sha256": "17d868c23e78fbbb5cee4d7a7bc64ba7918f0e232b2352708ddd2596abf1d54b"
+      }
+    },
+    {
+      "id": "doc.Travel-and-Encounters",
+      "path": "locales/ko-KR/rules/travel-and-encounters.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Travel-and-Encounters.md",
+        "lineStart": 1,
+        "lineEnd": 33,
+        "sha256": "dff69b45ec5a37f916765f3b6fcbba1df4ea29a4cb674ec16473175ecc1a4640"
+      }
+    },
+    {
+      "id": "doc.Warfare-and-Sieges",
+      "path": "locales/ko-KR/rules/warfare-and-sieges.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Warfare-and-Sieges.md",
+        "lineStart": 1,
+        "lineEnd": 67,
+        "sha256": "0fc9a80a060eac1cd14f6f2f9c905a05b458becafec9154e62b9d40db8ef98d7"
+      }
+    },
+    {
+      "id": "doc.Game-Logic-Principles",
+      "path": "locales/ko-KR/rules/game-logic-principles.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Game-Logic-Principles.md",
+        "lineStart": 1,
+        "lineEnd": 28,
+        "sha256": "8490b01e0d42f20a473fefe6f1e6193f045b0574aaac76aa8c17a218b06ce3ed"
+      }
+    },
+    {
+      "id": "doc.Characters-and-Persons",
+      "path": "locales/ko-KR/rules/characters-and-persons.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Characters-and-Persons.md",
+        "lineStart": 1,
+        "lineEnd": 28,
+        "sha256": "b772974b92d6dee922f7cfd3d4d1db15df4643e7be256a2ba8706bf00c19a172"
+      }
+    },
+    {
+      "id": "doc.Relationships-Houses-and-Intrigue",
+      "path": "locales/ko-KR/rules/relationships-houses-and-intrigue.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Relationships-Houses-and-Intrigue.md",
+        "lineStart": 1,
+        "lineEnd": 28,
+        "sha256": "6b341e9cd6c10fd6eb8c18f59da5edbe1f71bbb3f493b09f6a5c35eb92df5332"
+      }
+    },
+    {
+      "id": "doc.Power-and-Institutions",
+      "path": "locales/ko-KR/rules/power-and-institutions.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Power-and-Institutions.md",
+        "lineStart": 1,
+        "lineEnd": 36,
+        "sha256": "95ab1cd89572f7adf9fa653f6a7e3058c488add240ba0ec9d19c13587ef576cd"
+      }
+    },
+    {
+      "id": "doc.Economy-and-Logistics",
+      "path": "locales/ko-KR/rules/economy-and-logistics.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Economy-and-Logistics.md",
+        "lineStart": 1,
+        "lineEnd": 28,
+        "sha256": "e0e9649edad02b070bcd418720cfc35b7f27173a6f3110b9258d87322e090b98"
+      }
+    },
+    {
+      "id": "doc.Travel-Activities-and-Landless",
+      "path": "locales/ko-KR/rules/travel-activities-and-landless.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Travel-Activities-and-Landless.md",
+        "lineStart": 1,
+        "lineEnd": 32,
+        "sha256": "c070577362200d745e34c61118c2f4ec89e8837cd344ad5477a7a8c505012dae"
+      }
+    },
+    {
+      "id": "doc.War-and-Personal-Resolution",
+      "path": "locales/ko-KR/rules/war-and-personal-resolution.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/War-and-Personal-Resolution.md",
+        "lineStart": 1,
+        "lineEnd": 36,
+        "sha256": "74fcad5761977255504a264d059c451f1c6252fed7823c4595de0737ae6d07da"
+      }
+    },
+    {
+      "id": "doc.Diplomacy-and-Contracts",
+      "path": "locales/ko-KR/rules/diplomacy-and-contracts.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Diplomacy-and-Contracts.md",
+        "lineStart": 1,
+        "lineEnd": 24,
+        "sha256": "c450eccf21b63de6e1186d109a1fa645e1e3d78deeda9f3bc93b8054a7dea41b"
+      }
+    },
+    {
+      "id": "doc.Faith-Culture-and-Knowledge",
+      "path": "locales/ko-KR/rules/faith-culture-and-knowledge.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Faith-Culture-and-Knowledge.md",
+        "lineStart": 1,
+        "lineEnd": 24,
+        "sha256": "70e1fc6851d5cc7506bcf46dfb9591ae443a25e433802990590d4515db0becd0"
+      }
+    },
+    {
+      "id": "doc.Time-Pulses-and-Events",
+      "path": "locales/ko-KR/rules/time-pulses-and-events.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Time-Pulses-and-Events.md",
+        "lineStart": 1,
+        "lineEnd": 24,
+        "sha256": "17412dfcaeb91625b2806a6bb8b639360cbdad743212e489e13a143e9584af19"
+      }
+    },
+    {
+      "id": "doc.Determinism-and-Save-Contracts",
+      "path": "locales/ko-KR/rules/determinism-and-save-contracts.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Determinism-and-Save-Contracts.md",
+        "lineStart": 1,
+        "lineEnd": 28,
+        "sha256": "1bf11cc21455c7824af22cf796b7283880b024dfdc157370a8a829fef09bdc31"
+      }
+    },
+    {
+      "id": "doc.Implementation-Mapping",
+      "path": "locales/ko-KR/rules/implementation-mapping.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Implementation-Mapping.md",
+        "lineStart": 1,
+        "lineEnd": 28,
+        "sha256": "dae709bd0e7ed8ad1f3e28d5a285d2767656275298d32dd74dffb3add81f9942"
+      }
+    }
+  ]
+}

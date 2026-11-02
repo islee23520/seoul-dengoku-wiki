@@ -1,0 +1,189 @@
+===== 01-test-build-wiki =====
+PASS  happy path: banner, link rewrite, asset copy, stale cleanup, .git preserved
+PASS  happy path: generator rewrites its own sentinel after cleanup
+PASS  banned prose is rejected (Korean)
+PASS  banned prose is rejected case-insensitively
+PASS  dangerous output roots are refused by a path guard without touching disk
+PASS  source and asset roots can never be reused as the output root
+PASS  an existing empty output directory cannot bootstrap without a sentinel
+PASS  output root without the generated sentinel is refused before any deletion
+PASS  a fresh wiki clone containing only .git bootstraps the sentinel
+PASS  a symlinked output root is refused and its target survives
+PASS  the sentinel itself must be a regular file, not a symlink
+PASS  a symlink child inside the output root is unlinked without following it
+PASS  a symlinked source page (Leak.md) is refused and never published
+PASS  a symlinked asset is refused and never published
+PASS  a symlinked source or asset root is refused
+PASS  raw HTML element text is inspected
+PASS  raw HTML attributes that render as visible text are inspected
+PASS  form-control values that render as visible text are inspected
+PASS  form-control values that never render are not visible text
+PASS  HTML comments are removed so a comment-split term is caught
+PASS  an HTML comment body alone is not visible text
+PASS  character references are decoded before inspection
+PASS  NFKC normalization and case folding are applied
+PASS  zero-width and Unicode format characters are stripped before inspection
+PASS  only URL destinations are exempt from the visible-text gate
+PASS  repository-hosted canonical image URLs are rewritten to local assets
+PASS  a repository-hosted image without a local asset fails the build
+PASS  a relative asset link without a local asset fails the build
+PASS  unrelated external URLs are preserved
+PASS  every generated image path in the real repository wiki resolves on disk
+PASS  malformed markup is still inspected instead of crashing
+PASS  commitSha remains mandatory
+PASS  the tools-only parser stack is exactly pinned and lockfile-consistent
+PASS  strategic pages keep their calculable contract
+
+34 passed, 0 failed
+temp fixtures removed: /var/folders/6r/g20fxk_s1ds24_h6lm971wt00000gn/T/janseon-wiki-test-A65J7K
+wiki build contract passed
+EXIT=0
+===== 02-test-unity-architecture-docs =====
+unity architecture wiki contract passed
+EXIT=0
+===== 03-test-strategy-formulas =====
+strategy formula contract passed cases=10
+EXIT=0
+===== 04-check-unity-architecture =====
+unity architecture gate passed (9 runtime files, 2 scene scopes verified)
+EXIT=0
+===== 05-test-check-unity-architecture =====
+    SCENE_SCOPE_OWNERSHIP: Foundation.unity expects exactly one FoundationLifetimeScope component with script guid cf8007de5bf5740a2ae484c131c591f8, found 2
+
+. detached-component-reference: Foundation scope component is not listed by its owning GameObject
+    SCENE_SCOPE_OWNERSHIP: Foundation.unity scope component &616764878 must be listed only by its owning GameObject &616764877; linked by none
+
+. name-only-decoy: Foundation keeps the matching GameObject name but replaces its scope with a scriptless decoy
+    SCENE_SCOPE_OWNERSHIP: Foundation.unity expects exactly one FoundationLifetimeScope component with script guid cf8007de5bf5740a2ae484c131c591f8, found 0
+
+. malformed-scene-yaml: Bootstrap is truncated inside a document with an unparsable header
+    SCENE_SCOPE_OWNERSHIP: Bootstrap.unity has 1 unparsable document header(s)
+    SCENE_SCOPE_OWNERSHIP: Bootstrap.unity expects exactly one AppLifetimeScope component with script guid 5edd73dd925e141a0b7d84271af22c99, found 0
+
+. stale-meta-guid: AppLifetimeScope.cs.meta drifts to a GUID no scene references
+    SCENE_SCOPE_OWNERSHIP: Bootstrap.unity expects exactly one AppLifetimeScope component with script guid deadbeefdeadbeefdeadbeefdeadbeef, found 0
+    SCENE_SCOPE_OWNERSHIP: Bootstrap.unity carries an unexpected scope component &566000880 (Janseon.Foundation::Janseon.Foundation.Composition.AppLifetimeScope)
+
+. missing-script-meta: AppLifetimeScope.cs.meta is deleted so no GUID can be resolved
+    SCOPE_SCRIPT_META: Game/Assets/Janseon/Foundation/Composition/AppLifetimeScope.cs.meta is missing
+
+. build-order-swapped: EditorBuildSettings loads Foundation before Bootstrap
+    SCENE_BUILD_ORDER: expected enabled Assets/Scenes/Bootstrap.unity -> Assets/Scenes/Foundation.unity, got Assets/Scenes/Foundation.unity (enabled) -> Assets/Scenes/Bootstrap.unity (enabled)
+
+. bootstrap-build-entry-disabled: EditorBuildSettings lists Bootstrap first but disables the entry
+    SCENE_BUILD_ORDER: expected enabled Assets/Scenes/Bootstrap.unity -> Assets/Scenes/Foundation.unity, got Assets/Scenes/Bootstrap.unity (disabled) -> Assets/Scenes/Foundation.unity (enabled)
+
+. dead-bootstrap-allowlist: a new BootstrapRoot.cs calls DontDestroyOnLoad under the removed allowlist path
+    DONT_DESTROY_AUTHORITY: Game/Assets/Janseon/Foundation/Composition/BootstrapRoot.cs:7
+
+repository gate: exit 0 :: unity architecture gate passed (9 runtime files, 2 scene scopes verified)
+unity architecture gate tests passed (14 scenarios)
+✔ tools/architecture/test-check-unity-architecture.mjs (633.742708ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 637.403542
+EXIT=0
+===== 06-test-verify-sixteen-states =====
+test_current_docs_pass_without_obsolete_copy_phrase (__main__.SixteenStateVerifierTests.test_current_docs_pass_without_obsolete_copy_phrase) ... ok
+test_json_is_stable (__main__.SixteenStateVerifierTests.test_json_is_stable) ... ok
+test_malformed_wiki_state_contract_is_ignored_not_self_grant (__main__.SixteenStateVerifierTests.test_malformed_wiki_state_contract_is_ignored_not_self_grant) ... ok
+test_missing_leader_fails (__main__.SixteenStateVerifierTests.test_missing_leader_fails) ... ok
+test_missing_originality_machine_value_fails (__main__.SixteenStateVerifierTests.test_missing_originality_machine_value_fails) ... ok
+test_missing_state_fails (__main__.SixteenStateVerifierTests.test_missing_state_fails) ... ok
+test_semantic_equivalent_naming_rewording_passes (__main__.SixteenStateVerifierTests.test_semantic_equivalent_naming_rewording_passes) ... ok
+test_wiki_state_contract_sentinel_cannot_self_grant (__main__.SixteenStateVerifierTests.test_wiki_state_contract_sentinel_cannot_self_grant) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.055s
+
+OK
+EXIT=0
+===== 07-check-repo-delivery-policy =====
+    {
+      "name": "ADR records: no merge by agents",
+      "pass": true,
+      "detail": "no merge by agents"
+    },
+    {
+      "name": "ADR records: unrelated shooter repository excluded",
+      "pass": true,
+      "detail": "unrelated shooter repository excluded"
+    },
+    {
+      "name": "ADR records: derived Wiki assets policy",
+      "pass": true,
+      "detail": "derived Wiki assets policy"
+    },
+    {
+      "name": "ADR records: rollback and review policy",
+      "pass": true,
+      "detail": "rollback and review policy"
+    },
+    {
+      "name": "ADR records: single current delivery rule declared",
+      "pass": true,
+      "detail": "single current delivery rule declared"
+    },
+    {
+      "name": "exactly one current delivery rule",
+      "pass": true,
+      "detail": "no competing delivery rule"
+    },
+    {
+      "name": "live origin matches ADR record",
+      "pass": true,
+      "detail": "https://github.com/islee23520/seoul-kenshi.git"
+    }
+  ],
+  "result": "PASS",
+  "failures": []
+}
+EXIT=0
+===== 08-git-diff-check =====
+EXIT=0
+===== 09-package-manifest-lock =====
+ok jp.hadashikick.vcontainer@https://github.com/hadashiA/VContainer.git?path=VContainer/Assets/VContainer#1.19.0
+ok com.unity.modules.accessibility@1.0.0
+ok com.unity.modules.adaptiveperformance@1.0.0
+ok com.unity.modules.ai@1.0.0
+ok com.unity.modules.androidjni@1.0.0
+ok com.unity.modules.animation@1.0.0
+ok com.unity.modules.assetbundle@1.0.0
+ok com.unity.modules.audio@1.0.0
+ok com.unity.modules.cloth@1.0.0
+ok com.unity.modules.director@1.0.0
+ok com.unity.modules.imageconversion@1.0.0
+ok com.unity.modules.imgui@1.0.0
+ok com.unity.modules.jsonserialize@1.0.0
+ok com.unity.modules.particlesystem@1.0.0
+ok com.unity.modules.physics@1.0.0
+ok com.unity.modules.physics2d@1.0.0
+ok com.unity.modules.physicscore2d@1.0.0
+ok com.unity.modules.screencapture@1.0.0
+ok com.unity.modules.smartstrings@1.0.0
+ok com.unity.modules.terrain@1.0.0
+ok com.unity.modules.terrainphysics@1.0.0
+ok com.unity.modules.tetgen@1.0.0
+ok com.unity.modules.tilemap@1.0.0
+ok com.unity.modules.timelinefoundation@1.0.0
+ok com.unity.modules.ui@1.0.0
+ok com.unity.modules.uielements@1.0.0
+ok com.unity.modules.umbra@1.0.0
+ok com.unity.modules.unityanalytics@1.0.0
+ok com.unity.modules.unitywebrequest@1.0.0
+ok com.unity.modules.unitywebrequestassetbundle@1.0.0
+ok com.unity.modules.unitywebrequestaudio@1.0.0
+ok com.unity.modules.unitywebrequesttexture@1.0.0
+ok com.unity.modules.unitywebrequestwww@1.0.0
+ok com.unity.modules.vectorgraphics@1.0.0
+ok com.unity.modules.vehicles@1.0.0
+ok com.unity.modules.video@1.0.0
+ok com.unity.modules.wind@1.0.0
+ok com.unity.modules.xr@1.0.0
+lock-only keys: com.unity.burst,com.unity.collections,com.unity.ext.nunit,com.unity.graph-authoring,com.unity.nuget.mono-cecil,com.unity.profiling.core,com.unity.render-pipelines.core,com.unity.render-pipelines.universal-config,com.unity.searcher,com.unity.shadergraph,com.unity.test-framework.performance,com.unity.modules.hierarchycore,com.unity.modules.subsystems
+MANIFEST_LOCK_CONSISTENT

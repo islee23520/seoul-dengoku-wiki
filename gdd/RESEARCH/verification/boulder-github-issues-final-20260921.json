@@ -1,0 +1,234 @@
+{
+  "audit_date": "2026-09-22",
+  "read_only": true,
+  "github_writes": 0,
+  "gemini_used": false,
+  "repo_binding": {
+    "local_origin_url": "https://github.com/islee23520/seoul-kenshi.git",
+    "gh_resolved_name_with_owner": "islee23520/seoul-dengoku",
+    "note": "gh CLI resolves this checkout's remote to a differently-named GitHub repo (seoul-dengoku); all gh queries below targeted seoul-dengoku."
+  },
+  "worktree": {
+    "path": "/Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-updates-state-selection",
+    "branch": "fix/wiki-updates-state-selection",
+    "commits_ahead_of_origin_main": 24,
+    "head_matches_remote_branch": true,
+    "uncommitted_changes_present": true,
+    "uncommitted_untracked_relevant": [
+      "GDD/architecture/JSON-Relational-Canon.md",
+      "GDD/architecture/Person-Permanent-ID-Extension.md",
+      "GDD/design-store/canon/adr--adr-007-pr-evidence-lifecycle/",
+      "GDD/design-store/canon/data-catalog-and-schema/",
+      "RESEARCH/verification/cast-relations-id-mapping-20260921.md",
+      "RESEARCH/verification/cast-relations-id-mapping-20260921.json"
+    ]
+  },
+  "pr211_commits": [
+    "ea43a47d feat(tools): ADR-005를 JSON 정본 컬렉션에 추가한다",
+    "e732a0c9 feat(tools): ADR-006을 JSON 정본 컬렉션에 추가한다",
+    "8044f4fd feat(tools): ADR-004를 JSON 정본 컬렉션에 추가한다",
+    "1cc2a963 test(policy): 게이트 fixture를 ADR-004 계약에 맞춘다",
+    "dc014b64 feat(tools): ADR-001을 JSON 정본 컬렉션에 추가한다",
+    "64dfa727 docs(lore): 2126 배경과 백 년 구술로 논지를 맞춘다",
+    "37e3f707 docs(lore): 붕괴 원인을 프롤로그 문맥으로 옮긴다",
+    "333cf6d2 feat(tools): ADR-002를 JSON 정본 컬렉션에 추가한다",
+    "05577070 fix(wiki): 프롤로그와 2126 시점 라벨을 바로잡는다",
+    "f5965149 docs(lore): 공개 산문 문체와 Patina 영수증을 맞춘다",
+    "16141ffa feat(tools): ADR-003을 세 번째 JSON 정본으로 옮긴다",
+    "3da8d803 docs(lore): 프롤로그 참조를 독자 문맥으로 고친다",
+    "72a8bf0b feat(tools): 구조물을 두 번째 JSON 정본으로 옮긴다",
+    "a53140af feat(tools): 무공 용어집 계약을 검증한다",
+    "6909710a docs(lore): 무공 전승과 예비군 근거를 보강한다",
+    "1794b293 feat(tools): Patina 공개 문서 게이트를 보강한다",
+    "5df68977 feat(tools): 관직 JSON 정본 파일럿을 추가한다",
+    "0dc67baa docs(gdd): Ravelen 활성 참고를 제거한다",
+    "f0e6e458 feat(wiki): 1004명 영웅 확정 계약을 공개한다",
+    "cee3ce1a fix(wiki): 저작 문서와 투영 메타를 공개에서 분리한다",
+    "692f166d docs(lore): 붕괴 연쇄와 부평 재접촉을 정본화한다",
+    "e871cbd1 fix(wiki): 지도 마우스 팬과 오빗 입력을 바로잡는다",
+    "287472d1 feat(wiki): 전체 위키 업데이트 이력을 추적한다",
+    "ebb4b737 feat(wiki): 최신 소식과 국가 선택 정보를 연결한다"
+  ],
+  "pr211_stated_blockers": [
+    "CPA Gemini quota 429 on 4 mixed-flagged docs (Cast-Index-S4, Chaebol-Houses, Martial-Paths, Station-Interior)",
+    "138-doc Patina receipt regeneration pending those 4 fixes; World-Expansion-Index manual-approval SHA not captured",
+    "Cast relations JSON cutover deferred: 582 people without K IDs lack an owner lock-in assignment order",
+    "G004 C002/C004 and full issue/worktree/derivative delivery incomplete"
+  ],
+  "items": [
+    {
+      "ref": "issue#122",
+      "title": "세계관: 백야 신종목·신준과 기동잔존대 귀환망",
+      "state": "OPEN",
+      "labels": ["세계관", "설정", "인물", "사건", "이야기", "gateway", "quality:medium"],
+      "evidence": [
+        "grep '신종목|백야' across LORE/characters/{Cast-Index,Cast-Relations,Cast-Unaffiliated,Starting-Presets}.md: 0 matches",
+        "latest issue comment: '인물 카드·전용 PR이 착지하지 않은 이슈는 닫지 않습니다.'",
+        "0 of the 24 PR211 commits touch this character"
+      ],
+      "verdict": "KEEP-OPEN",
+      "reason": "no owner data: character card not landed, display-name lock item unresolved"
+    },
+    {
+      "ref": "issue#126",
+      "title": "인물: 민웅기 — minpeter 캐스트 등록",
+      "state": "OPEN",
+      "labels": ["인물", "이야기", "gateway", "quality:medium"],
+      "evidence": [
+        "grep '민웅기|minpeter' across LORE/characters/*.md: 0 matches",
+        "issue body explicit non-goal: does not edit Cast-State/Cast-Index/Cast-Relations/values-cast.json directly, requires dedicated follow-up PR",
+        "0 of the 24 PR211 commits touch this character"
+      ],
+      "verdict": "KEEP-OPEN",
+      "reason": "no owner data: character card not landed"
+    },
+    {
+      "ref": "issue#108",
+      "title": "인물: 조재표 — 유명 낭인 캐스트 등록",
+      "state": "OPEN",
+      "labels": ["인물", "이야기", "gateway", "quality:medium"],
+      "evidence": [
+        "grep '조재표' found in Cast-Relations.md, Starting-Presets.md, Cast-Index.md, Cast-Unaffiliated.md",
+        "cast-relations-id-mapping-20260921.md confirms 캐릭터 ID 'unaffiliated-jaepyo-jo' in Cast-Unaffiliated.md, checked by verify-cast R15",
+        "this card was NOT introduced by any of the 24 PR211 commits (pre-existing on main)"
+      ],
+      "verdict": "UPDATE-ONLY",
+      "reason": "card appears already landed from prior work, but this sweep/PR211 did not produce it; owner must confirm closure via the actual landing PR, not this run"
+    },
+    {
+      "ref": "issue#161",
+      "title": "인물: 지연희 추가 — 비밀 명단 회수와 해방 계약 서사",
+      "state": "OPEN",
+      "labels": ["세계관", "인물", "이야기", "gateway", "quality:medium"],
+      "evidence": ["grep '지연희' across LORE/characters/*.md: 0 matches", "0 of 24 PR211 commits relevant"],
+      "verdict": "KEEP-OPEN",
+      "reason": "no owner data: character card not landed"
+    },
+    {
+      "ref": "issue#208",
+      "title": "[인물] 서하진 인물 등록 및 첫 등장 사건 설계",
+      "state": "OPEN",
+      "labels": ["인물", "quality:medium"],
+      "evidence": ["grep '서하진' across LORE/characters/*.md: 0 matches", "0 of 24 PR211 commits relevant"],
+      "verdict": "KEEP-OPEN",
+      "reason": "no owner data: character card not landed"
+    },
+    {
+      "ref": "issue#102",
+      "title": "세계관: 무협 컨셉 추가 — 무술 유파·거지(개방) 계열 (신종목 제안)",
+      "state": "OPEN",
+      "labels": ["세계관", "인물", "gateway", "quality:medium"],
+      "evidence": [
+        "commit 6909710a '무공 전승과 예비군 근거를 보강한다'",
+        "commit a53140af '무공 용어집 계약을 검증한다'",
+        "PR211 verification section cites '무공 9유파 후계 4유파 전승·기법·상성, 예비군 제도 사실/창작 분리, 용어집 계약'",
+        "issue#122 (신종목 character itself) still not landed"
+      ],
+      "verdict": "UPDATE-ONLY",
+      "reason": "martial-arts world-setting progressed by PR211 commits, but the character link (#122, 신종목) named in the issue title remains unlanded — insufficient to close the issue"
+    },
+    {
+      "ref": "issue#101",
+      "title": "설정: UI/UX 레퍼런스 게임 취합 (화면 소유·이슈 링크)",
+      "state": "OPEN",
+      "labels": ["설정", "게임로직", "gateway", "quality:high"],
+      "evidence": [
+        "PR134 (CLOSED, unmerged) body: 'Closes nothing. Relates to #101.'",
+        "PR169 (OPEN, unmerged) body: '#101 화면 목업과 Unity 구현은 이 PR 범위가 아닙니다.'",
+        "none of the 24 PR211 commits touch #101 scope"
+      ],
+      "verdict": "KEEP-OPEN",
+      "reason": "both referencing PRs explicitly decline to close #101; PR211 is unrelated to this issue"
+    },
+    {
+      "ref": "issue#97",
+      "title": "설정: 시야·카메라는 좌우 사이드스크롤 (Intent 결정 10)",
+      "state": "OPEN",
+      "labels": ["설정", "게임로직", "gateway", "quality:medium"],
+      "evidence": [
+        "0 of 24 PR211 commits touch camera/battle-screen",
+        "Intent.md 결정 11 (2026-09-19) already superseded 결정 10's side-scroll camera target with a 3D free-command default, but that supersession is a prior Intent-log decision, not produced by PR211's commit set"
+      ],
+      "verdict": "SUPERSEDED",
+      "reason": "superseded at the design-decision layer (Intent.md 결정 11) independent of this run; closing authority belongs to whichever PR formally updates GDD/Design.md camera contract text, not PR211"
+    },
+    {
+      "ref": "issue#98",
+      "title": "설정: 인물·생업·관계가 카드로 들어오는 부여 규칙",
+      "state": "OPEN",
+      "labels": ["설정", "게임로직", "gateway", "quality:medium"],
+      "evidence": ["0 of 24 PR211 commits touch card-assignment rules"],
+      "verdict": "KEEP-OPEN",
+      "reason": "unrelated to this run"
+    },
+    {
+      "ref": "issue#41",
+      "title": "이야기: 서사·플레이 경험 디렉션과 「문을 닫지 않는 공성전」 제안",
+      "state": "OPEN",
+      "labels": ["설정", "사건", "이야기", "gateway", "quality:medium"],
+      "evidence": ["0 of 24 PR211 commits touch this proposal"],
+      "verdict": "KEEP-OPEN",
+      "reason": "unrelated to this run"
+    },
+    {
+      "ref": "pr#134",
+      "title": "docs(ui): #101 12면과 후계 보조 목업을 고정한다",
+      "state": "CLOSED",
+      "merged": false,
+      "head_branch": "docs/issue-101-twelve-screen-mockups",
+      "evidence": ["body: 'Closes nothing. Relates to #101.'", "4 files changed: poc-complete.html (x2 copies), Reference/ui-ux-refs/index.html, Tool/tools/test-issue-101-mockup-names.mjs"],
+      "verdict": "CLOSED-ALREADY (no action needed)",
+      "reason": "closed unmerged prior to this audit; does not close #101"
+    },
+    {
+      "ref": "pr#169",
+      "title": "docs(wiki): #101 UI/UX 결정 기록을 정본과 공식 위키에 반영",
+      "state": "OPEN",
+      "merged": false,
+      "head_branch": "docs/issue-101-canon-wiki-sync",
+      "evidence": [
+        "body: '소유자 병합으로 main에 push되면 Windows 공식 허브 배포 워크플로가 자동 실행됩니다... #101 화면 목업과 Unity 구현은 이 PR 범위가 아닙니다.'",
+        "13 files changed across GDD/ and WEB/wiki-source/design",
+        "independent branch from PR211's fix/wiki-updates-state-selection"
+      ],
+      "verdict": "KEEP-OPEN",
+      "reason": "self-reports internal checks passing (VitePress build/gate, react wiki contract/link/index tests, 44 tool tests, repo delivery policy) but merge is an owner-only action not taken by this audit"
+    },
+    {
+      "ref": "pr#211",
+      "title": "wiki-updates-state-selection (위키 업데이트·국가 선택·JSON 정본·무공·붕괴연쇄 등)",
+      "state": "OPEN",
+      "merged": false,
+      "head_branch": "fix/wiki-updates-state-selection",
+      "evidence": [
+        "author's own body: '전체 ULW 완료 전 병합하지 않는다.'",
+        "24 commits listed in pr211_commits",
+        "worktree has additional uncommitted investigative artifacts not yet part of this PR's diff"
+      ],
+      "verdict": "KEEP-OPEN",
+      "reason": "author-declared merge hold; 4 stated blockers (Gemini 429 / receipt regen / K-ID cutover / full delivery) remain unresolved per this sweep"
+    }
+  ],
+  "verdict_summary": {
+    "CLOSE-COMPLETE": 0,
+    "KEEP-OPEN": ["issue#122", "issue#126", "issue#161", "issue#208", "issue#101", "issue#98", "issue#41", "pr#169", "pr#211"],
+    "UPDATE-ONLY": ["issue#108", "issue#102"],
+    "SUPERSEDED": ["issue#97"],
+    "CLOSED-ALREADY": ["pr#134"]
+  },
+  "commands_cited": [
+    "gh repo view --json nameWithOwner",
+    "gh issue view {122,126,108,161,208,102,101,98,97,41} --json number,title,state,labels,body,comments,url -R islee23520/seoul-dengoku",
+    "gh issue list -R islee23520/seoul-dengoku --state open --limit 200 --json number,title,labels,updatedAt",
+    "gh pr view {134,169,211} --json number,title,state,body,url,mergedAt,headRefName,baseRefName,files,commits -R islee23520/seoul-dengoku",
+    "git log origin/main..HEAD --oneline (worktree wiki-updates-state-selection)",
+    "git status --short (worktree)",
+    "grep -rl <name> LORE/characters/*.md",
+    "read RESEARCH/verification/cast-relations-id-mapping-20260921.md (worktree, uncommitted)"
+  ],
+  "authorized_actions_taken": [
+    "Write RESEARCH/verification/boulder-github-issues-final-20260921.md",
+    "Write RESEARCH/verification/boulder-github-issues-final-20260921.json"
+  ],
+  "github_writes_performed": []
+}

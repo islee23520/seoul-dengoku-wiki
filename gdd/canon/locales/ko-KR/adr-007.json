@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "source": {
+    "path": "adr/ADR-007-pr-evidence-lifecycle.md",
+    "sha256": "9f2b424f06cc52756b529d67babf38cf4f2e15dbef8aef07cac26412e9153a52"
+  },
+  "document": {
+    "id": "doc.ADR-007",
+    "blockIds": [
+      "adr-007.title",
+      "adr-007.meta.list",
+      "adr-007.context.heading",
+      "adr-007.context.p1",
+      "adr-007.decision.heading",
+      "adr-007.decision.list",
+      "adr-007.compat.heading",
+      "adr-007.compat.p1",
+      "adr-007.result.heading",
+      "adr-007.result.list"
+    ],
+    "terminalLineFeeds": 2
+  },
+  "blocks": [
+    {
+      "id": "adr-007.title",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "ADR-007: PR 단위 evidence 생명주기"
+        }
+      ]
+    },
+    {
+      "id": "adr-007.meta.list",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "상태: 2026-09-21 수용됨"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정자: 저장소 소유자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "범위: 모든 캡처·영수증·QA 증거의 비공개 로컬 보관과 공개 제외"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "adr-007.context.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "맥락"
+        }
+      ]
+    },
+    {
+      "id": "adr-007.context.p1",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자 결정으로 검증 자료는 저장소·PR·배포에 남기지 않는다. 공개 경로는 영구 보관·의도치 않은 노출·LFS 비용을 만들고, 검토에는 로컬 비공개 참조면 충분하다."
+        }
+      ]
+    },
+    {
+      "id": "adr-007.decision.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "결정"
+        }
+      ]
+    },
+    {
+      "id": "adr-007.decision.list",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "모든 캡처·영수증·QA 증거는 무시되는 `.omo/evidence/`에만 둔다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "루트 `evidence/`는 금지된 경로다. 추가·강제 추가·PR 첨부·배포 입력으로 사용하지 않는다."
+          }
+        ],
+        {
+          "inlines": [
+            {
+              "kind": "text",
+              "text": "비공개 증거는 작업자가 로컬 참조와 해시를 기록할 수 있지만, 이 저장소의 추적 파일이나 PR 산출물이 아니다."
+            }
+          ],
+          "children": {
+            "ordered": false,
+            "indent": 3,
+            "items": [
+              [
+                {
+                  "kind": "text",
+                  "text": "`schema_version: 1`"
+                }
+              ],
+              [
+                {
+                  "kind": "text",
+                  "text": "`pr_number`"
+                }
+              ],
+              [
+                {
+                  "kind": "text",
+                  "text": "`evidence_for_sha`: evidence가 검증하는 구현 commit. 최종 PR head의 ancestor여야 한다."
+                }
+              ],
+              [
+                {
+                  "kind": "text",
+                  "text": "`status: review-only`"
+                }
+              ],
+              [
+                {
+                  "kind": "text",
+                  "text": "`files`: 폴더 내 증거 파일의 상대 경로와 SHA-256"
+                }
+              ]
+            ]
+          }
+        },
+        [
+          {
+            "kind": "text",
+            "text": "저장소 게이트는 추적된 루트 `evidence/`와 추적된 `.omo/`를 거부하고, 게시 매니페스트가 root evidence를 입력으로 삼지 못하게 한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "PR·CI·배포는 비공개 증거를 업로드·게시·복사하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "삭제·보존은 현재 작업 경로에만 적용하며 Git/LFS 과거 이력이나 원격 저장소를 다시 쓰지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "생산자는 기본 출력과 영수증을 `.omo/evidence/`로 사용한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "adr-007.compat.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기존 evidence 호환성"
+        }
+      ]
+    },
+    {
+      "id": "adr-007.compat.p1",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 결정 전 root `evidence/`에 있던 파일은 소유자 허가로 현재 경로에서 제거한다. 사용 가능한 실제 바이트는 제거 전에 ignored `.omo/evidence/`에 SHA-256과 출처를 함께 보존한다."
+        }
+      ]
+    },
+    {
+      "id": "adr-007.result.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "결과"
+        }
+      ]
+    },
+    {
+      "id": "adr-007.result.list",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "검토 근거는 로컬 비공개 상태로 남고 저장소 diff에는 포함되지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "저장소와 공개 산출물에는 evidence 경로가 없다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "비공개 evidence는 force-add하거나 외부 서비스에 업로드하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "런타임·정본 자산은 해당 소유 경로의 승인 절차로만 승격하며, QA evidence 자체는 승격 대상이 아니다."
+          }
+        ]
+      ]
+    }
+  ]
+}

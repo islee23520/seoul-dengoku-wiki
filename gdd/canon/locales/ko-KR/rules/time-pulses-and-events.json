@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "rules/Time-Pulses-and-Events.md",
+    "lineStart": 1,
+    "lineEnd": 24,
+    "sha256": "17412dfcaeb91625b2806a6bb8b639360cbdad743212e489e13a143e9584af19"
+  },
+  "document": {
+    "id": "doc.Time-Pulses-and-Events",
+    "blockIds": [
+      "ch.title",
+      "overhaul.20261027.verdict",
+      "ch.authority",
+      "ch.provenance",
+      "ch.sp",
+      "ch.s0",
+      "ch.p0",
+      "ch.s1",
+      "ch.p1",
+      "ch.s2",
+      "ch.p2",
+      "ch.decisions",
+      "ch.terms",
+      "overhaul.20261027.handoff",
+      "overhaul.20261027.gates"
+    ],
+    "terminalLineFeeds": 2
+  },
+  "blocks": [
+    {
+      "id": "ch.title",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CH9 시간·펄스·이벤트"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.verdict",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "최신 독립 검증: depth-verification-20261027.md:1855-1900(§9)은 정정된 depth-01/02/03 및 gap inventory의 정적 근거를 synthesis 입력 PASS로 판정한다. 최초 FAIL 이력은 보존한다. depth-04는 제한된 정적 충실도 PASS다. 이는 전체 게임플레이 의미·런타임 인과·설치 무결성·전투 피해식·Ghidra 원프로젝트 메타데이터 복원을 보증하지 않는다. 아래 참조는 CK3 구조 참고일 뿐 서울 제품 권한이 아니며 불일치했던 총계·코핑 효과·씨족 산식·유산 비용을 서울 규칙으로 채택하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다. 참조 게임의 제도·수치를 서울 규칙으로 승격하지 않는다. 승인 계약은 구현 완료를 뜻하지 않으며 SP-1.0.0의 대체 범위가 과거 공유 세계 조항보다 우선한다."
+        }
+      ]
+    },
+    {
+      "id": "ch.provenance",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "외부 제품 원천: https://github.com/islee23520/seoul-dengoku/tree/main (측정 revision 3e3c03349eafaaf88347d119a4bdd0c6d44abc53; 인용은 고정 revision URL 사용). CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다. 해당 설치본의 무결성은 미검증이다. 출처 경로와 식별자는 조사 표기이며 게임 UI 표시명이 아니다."
+        }
+      ]
+    },
+    {
+      "id": "ch.sp",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "상위 계약: 싱글플레이 상세 기획",
+          "targetDocumentId": "doc.Singleplayer-Design-SP-1-0-0"
+        }
+      ]
+    },
+    {
+      "id": "ch.s0",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "9.1 세계 시간과 전투 시간"
+        }
+      ]
+    },
+    {
+      "id": "ch.p0",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/AGENTS.md#L57-L58 는 전투 무일시정지·무배속과 PlayerLoop/FixedUpdate·프로젝트 fixedDeltaTime을 정한다. 임의 고정 레이트 잠금은 금지한다. https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Core/CampaignTurnDomain.cs#L220-L221 의 현재 캠페인은 턴·세계 틱을 증가시킨다. 결정 14의 시간 기반 전략 이동 목표와 현재 이산 턴 구현을 혼동하지 않는다. 제품 권한: 전략 시간 케이던스는 제도 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s1",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "9.2 펄스와 스케줄드 커맨드"
+        }
+      ]
+    },
+    {
+      "id": "ch.p1",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3 참조: mechanics-01-time-and-pulse.md:11-43,66-181,183-210은 명명 on_action·ID 기반 발동일 분산·AI 스킵·월별 훅 분산이다. 전체 scheduler 실행 순서 증거가 아니다. depth-04-war-and-binary.md:1402-1426의 초/일 값도 서울 시간 법칙이 아니다. 서울 사실: 조사된 코드 통로는 원장 TypedEvent 및 스코프 세션 이벤트다(DeterministicCore.cs:111-118,221-225; BattleSessionDriver.cs:25-27). 조사 범위를 넘어 전역 버스 부재를 단정하지 않는다. 제품 권한: 펄스 도입 자체가 제도 미정이며 도입 결정 시 원장에 남는 결정론 스케줄드 커맨드는 정합 기법 후보일 뿐 채택이 아니다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s2",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "9.3 미시→세계 사건"
+        }
+      ]
+    },
+    {
+      "id": "ch.p2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: save-and-determinism 및 SP-1.0.0의 인물별 난수·원인 ID·사건 원장을 유지하고 개인 생활 줄과 세계 사건의 임계를 구분한다. CK3 참조: internal-architecture-synthesis.md:63-76은 국소 기능 지도이며 일일→월간→이벤트→저장의 종단 happens-before를 입증하지 않았다. 제품 권한: 신규 사건 임계·발화 주기·가중치·성능 스킵은 제도 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.decisions",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "제품 결정 원장 — 미결정은 소유자 권한",
+          "targetDocumentId": "doc.Open-Decisions"
+        }
+      ]
+    },
+    {
+      "id": "ch.terms",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "한국어 표기와 명명 규칙",
+          "targetDocumentId": "doc.Korean-Terminology-and-Naming"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.handoff",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미확정 통합의 실행 게이트"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.gates",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "전략 시간 환산은 미결정 원장 OD-MOVE와 제품 권한에 종속된다. Estate WorldSeconds→세계 Tick 정합이 닫히기 전 생산·이동·활동을 하나의 주기라고 가정한 통합을 확정하지 않는다. CWS1은 세계 팩트 범위이므로 목적별 난수·사건·영수증을 포함한 전체 캠페인 복구 완료를 주장하지 않는다. 저장 포맷/버전 지원과 계보 복구 경계는 ADR-008·미결정 원장 OD-SESS 및 제품 권한의 결정 게이트이며 새 이행 기본값을 발명하지 않는다. 이 게이트는 기존 구현을 중단시키는 새 게임 규칙이 아니라 미확정 의미를 구현 완료로 승격하지 말라는 문서 경계다."
+        }
+      ]
+    }
+  ]
+}

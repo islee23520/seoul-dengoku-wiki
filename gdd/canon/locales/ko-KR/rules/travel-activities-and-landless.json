@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "rules/Travel-Activities-and-Landless.md",
+    "lineStart": 1,
+    "lineEnd": 32,
+    "sha256": "c070577362200d745e34c61118c2f4ec89e8837cd344ad5477a7a8c505012dae"
+  },
+  "document": {
+    "id": "doc.Travel-Activities-and-Landless",
+    "blockIds": [
+      "ch.title",
+      "overhaul.20261027.verdict",
+      "ch.authority",
+      "ch.provenance",
+      "ch.sp",
+      "ch.s0",
+      "ch.p0",
+      "ch.s1",
+      "ch.p1",
+      "ch.s2",
+      "ch.p2",
+      "ch.s3",
+      "ch.p3",
+      "ch.s4",
+      "ch.p4",
+      "ch.decisions",
+      "ch.terms",
+      "overhaul.20261027.contract-map",
+      "overhaul.20261027.supersession",
+      "overhaul.20261027.move",
+      "overhaul.20261027.battle",
+      "overhaul.20261027.handoff",
+      "overhaul.20261027.gates",
+      "overhaul.20261027.verified-heading",
+      "overhaul.20261027.verified-facts"
+    ],
+    "terminalLineFeeds": 2
+  },
+  "blocks": [
+    {
+      "id": "ch.title",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CH5 이동·활동·조우·무영지"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.verdict",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "최신 독립 검증: depth-verification-20261027.md:1855-1900(§9)은 정정된 depth-01/02/03 및 gap inventory의 정적 근거를 synthesis 입력 PASS로 판정한다. 최초 FAIL 이력은 보존한다. depth-04는 제한된 정적 충실도 PASS다. 이는 전체 게임플레이 의미·런타임 인과·설치 무결성·전투 피해식·Ghidra 원프로젝트 메타데이터 복원을 보증하지 않는다. 아래 참조는 CK3 구조 참고일 뿐 서울 제품 권한이 아니며 불일치했던 총계·코핑 효과·씨족 산식·유산 비용을 서울 규칙으로 채택하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다. 참조 게임의 제도·수치를 서울 규칙으로 승격하지 않는다. 승인 계약은 구현 완료를 뜻하지 않으며 SP-1.0.0의 대체 범위가 과거 공유 세계 조항보다 우선한다."
+        }
+      ]
+    },
+    {
+      "id": "ch.provenance",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "외부 제품 원천: https://github.com/islee23520/seoul-dengoku/tree/main (측정 revision 3e3c03349eafaaf88347d119a4bdd0c6d44abc53; 인용은 고정 revision URL 사용). CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다. 해당 설치본의 무결성은 미검증이다. 출처 경로와 식별자는 조사 표기이며 게임 UI 표시명이 아니다."
+        }
+      ]
+    },
+    {
+      "id": "ch.sp",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "상위 계약: 싱글플레이 상세 기획",
+          "targetDocumentId": "doc.Singleplayer-Design-SP-1-0-0"
+        }
+      ]
+    },
+    {
+      "id": "ch.s0",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "5.1 시간 기반 전략 이동"
+        }
+      ]
+    },
+    {
+      "id": "ch.p0",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: 결정 14(2026-09-28)의 시간 기반 이동은 동시 전략 턴 목표를 대체한다. 분대는 세계 시간이 흐르는 동안 합법 경로를 이동하고 목표·태세·정지·변경은 독립 명령이다. 현재 구현의 CampaignTurnDomain.cs:220-221은 이산 턴이므로 목표 이동 모델의 출하를 뜻하지 않는다(https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Core/CampaignTurnDomain.cs#L220-L221). 제품 권한: 전략 시간 케이던스·속도 환산은 제도 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s1",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "5.2 334역 그래프·층·환승"
+        }
+      ]
+    },
+    {
+      "id": "ch.p1",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/AGENTS.md#L61 은 334역 이동 그래프·Area 1 세 역 콘텐츠·427동 아틀라스를 구별한다. 지표 인접은 이동 간선이 아니다. 기존 승인 분대 계약의 지상/지하 층과 환승·출입 노드 및 경로 전체 합법성 검사를 유지한다. CK3 참조: depth-03-activities-travel-landless.md:273-375,475-482는 목적지 계획과 경로 탐색 엔진의 경계 및 특수 인접 데이터다. 경로 알고리즘·속도와 비용의 동일시는 미입증이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s2",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "5.3 결정론 조우와 원정 귀결"
+        }
+      ]
+    },
+    {
+      "id": "ch.p2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: travel-and-encounters의 조우는 시드·위치·세계 시각·소음·통제·분대 상태로 재현되며 모든 조우가 전투가 아니다. 귀환을 강제하지 않으며 현장 결과와 CH6 전투 진입을 구분한다. CK3 참조: depth-03-activities-travel-landless.md:319-346,516-527의 무이벤트 확률 입력은 실효 유해사건 확률과 다르다. 정정된 정적 참조 — depth-verification-20261027.md:1855-1900 PASS 범위에 한정; 실제 발화 빈도·손실률은 미검증이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "5.4 활동·생활 콘텐츠"
+        }
+      ]
+    },
+    {
+      "id": "ch.p3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3 참조: depth-03-activities-travel-landless.md:124-174,180-271의 활동 자격·초대·도착·위상·무효화·성공 굴림은 위치와 동행자가 콘텐츠를 묶는 구조다. 사냥·대회 달력과 일시정지를 서울에 이식하지 않는다. mechanics-01-time-and-pulse.md:183-210의 월 단위 처리 분산 역시 주기 참고이며 서울 달력이 아니다. 제품 권한: 활동 유형·위상·보상·빈도는 제도 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s4",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "5.5 영지 없는 플레이와 생계"
+        }
+      ]
+    },
+    {
+      "id": "ch.p4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3 참조: depth-03-activities-travel-landless.md:376-437의 캠프·계약·식량·진입/이탈은 무영지 순환의 사례다. pam은 무영지 캠프 식별자가 아니라 해당 설치 종교 기능 접두사라는 :23-77,516-541의 정정을 유지한다. 서울 사실: 본체의 위치·자격·생활 실행은 SP-1.0.0을 따른다. 제품 권한: 무영지 캠프·계약 직업·식량 자원 채택 자체는 제도 미정이다. EstateSimulation.cs:9-26,54-63의 WorldSeconds와 세계 Tick 정합은 미확정이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.decisions",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "제품 결정 원장 — 미결정은 소유자 권한",
+          "targetDocumentId": "doc.Open-Decisions"
+        }
+      ]
+    },
+    {
+      "id": "ch.terms",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "한국어 표기와 명명 규칙",
+          "targetDocumentId": "doc.Korean-Terminology-and-Naming"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.contract-map",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "보존 계약과 결정 번호의 소유"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.supersession",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제품 결정 13(개인 판정 전투)·14(시간 기반 전략 이동)·15(가변 정원)은 아래 승인 규칙 문서에 보존된 소유자 결정이다. 메커니즘 D13/D14/D15 시트 번호와 다른 이름공간이며 제안 시트를 승인하지 않는다. SP-1.0.0은 공유 세계·참가자·호스트·점유·온라인 대행 조항을 역사 범위로 대체하고 실제 이동·현장 참가·권한·단일 정산·저장 오류 계약을 유지한다. pw-01은 전쟁 개시 임계 제안이지 승인된 제품 결정 번호가 아니다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.move",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "결정 14·15 및 영웅 클래스 승인 원장",
+          "targetDocumentId": "doc.Hero-Squads-and-Time-Based-Movement"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.battle",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "결정 13·15 및 개인·상황·집계 계산 책임",
+          "targetDocumentId": "doc.Personal-Resolution-Battle"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.handoff",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미확정 통합의 실행 게이트"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.gates",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "전략 시간 환산은 미결정 원장 OD-MOVE와 제품 권한에 종속된다. Estate WorldSeconds→세계 Tick 정합이 닫히기 전 생산·이동·활동을 하나의 주기라고 가정한 통합을 확정하지 않는다. CWS1은 세계 팩트 범위이므로 목적별 난수·사건·영수증을 포함한 전체 캠페인 복구 완료를 주장하지 않는다. 저장 포맷/버전 지원과 계보 복구 경계는 ADR-008·미결정 원장 OD-SESS 및 제품 권한의 결정 게이트이며 새 이행 기본값을 발명하지 않는다. 이 게이트는 기존 구현을 중단시키는 새 게임 규칙이 아니라 미확정 의미를 구현 완료로 승격하지 말라는 문서 경계다."
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.verified-heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정정 검증된 CK3 활동·여행 인벤토리"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.verified-facts",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3 참조만: depth-verification-20261027.md:1884-1887은 intents20txt·travel events24txt·기본 계약36선언, POI 기본19+PAM1=20선언을 재계수했다. 무이벤트 입력은 실효 유해사건 확률이 아니며 WOUND/DEATH helper 인수는 무조건 확률이 아니다. 육상/해상5/7은 define 주석상의 속도이며 고정 Province 비용이 아니다. 최종 경로/확률/손실 공식과 모든 이벤트 효과는 미검증이다. 이 수량은 서울 활동/조우 콘텐츠 수나 이동 법칙이 아니다."
+        }
+      ]
+    }
+  ]
+}

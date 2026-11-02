@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "rules/Implementation-Mapping.md",
+    "lineStart": 1,
+    "lineEnd": 28,
+    "sha256": "dae709bd0e7ed8ad1f3e28d5a285d2767656275298d32dd74dffb3add81f9942"
+  },
+  "document": {
+    "id": "doc.Implementation-Mapping",
+    "blockIds": [
+      "ch.title",
+      "ch.authority",
+      "ch.provenance",
+      "ch.sp",
+      "ch.s0",
+      "ch.p0",
+      "ch.s1",
+      "ch.p1",
+      "ch.s2",
+      "ch.p2",
+      "ch.s3",
+      "ch.p3",
+      "ch.decisions",
+      "ch.terms",
+      "overhaul.20261027.handoff",
+      "overhaul.20261027.gates"
+    ],
+    "terminalLineFeeds": 2
+  },
+  "blocks": [
+    {
+      "id": "ch.title",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CH11 구현 매핑"
+        }
+      ]
+    },
+    {
+      "id": "ch.authority",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다. 참조 게임의 제도·수치를 서울 규칙으로 승격하지 않는다. 승인 계약은 구현 완료를 뜻하지 않으며 SP-1.0.0의 대체 범위가 과거 공유 세계 조항보다 우선한다."
+        }
+      ]
+    },
+    {
+      "id": "ch.provenance",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "외부 제품 원천: https://github.com/islee23520/seoul-dengoku/tree/main (측정 revision 3e3c03349eafaaf88347d119a4bdd0c6d44abc53; 인용은 고정 revision URL 사용). CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다. 해당 설치본의 무결성은 미검증이다. 출처 경로와 식별자는 조사 표기이며 게임 UI 표시명이 아니다."
+        }
+      ]
+    },
+    {
+      "id": "ch.sp",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "상위 계약: 싱글플레이 상세 기획",
+          "targetDocumentId": "doc.Singleplayer-Design-SP-1-0-0"
+        }
+      ]
+    },
+    {
+      "id": "ch.s0",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "11.1 Core·Data·Foundation"
+        }
+      ]
+    },
+    {
+      "id": "ch.p0",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/AGENTS.md#L66-L71 의 Janseon.Core는 엔진 비의존, Data는 저작 ScriptableObject를 검증된 불변 카탈로그로 투영, Foundation은 Unity/VContainer 통합이다. Bootstrap→MainTitle→Foundation 및 화면별 자식 스코프·uGUI builder/presenter를 유지한다. 문서 도식은 구현 UI가 아니다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s1",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "11.2 밸런스 저작과 참조"
+        }
+      ]
+    },
+    {
+      "id": "ch.p1",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: GAME/Assets/Janseon/Data/Authoring/BattleSetupDefinition.cs:10-25,Data/Validation/GameDataCatalogValidator.cs:30-32의 규칙 판본과 드리프트 검증, 직렬화 에셋 참조를 따른다. https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/AGENTS.md#L70-L71 의 Unity API 저작·메타/GUID 보존·검증기 임의 대체 금지를 유지한다. CK3 참조: internal-architecture-synthesis.md:95-104 및 mechanics-05-economy.md:54-95의 계수/구조/서사 분리는 선택적 저작 관례다. 제품 권한: 모든 실제 밸런스 값은 승인 데이터 외 제도 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s2",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "11.3 Backend 세션 코디네이터"
+        }
+      ]
+    },
+    {
+      "id": "ch.p2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/AGENTS.md#L75-L76 는 .NET 8 ASP.NET Core·단일 Kestrel REST/raw WebSocket 기본 1219·휘발성 인프로세스 세션을 정한다. 게임 시뮬레이션은 host client 소유이며 Backend 게임 규칙 서버로 옮기지 않는다. SP-1.0.0 현재 루프를 역사 공유 세계·온라인 대행 조항으로 덮지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.s3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "11.4 POC·디버그·역사 경계"
+        }
+      ]
+    },
+    {
+      "id": "ch.p3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/AGENTS.md#L59-L62 의 realtime-formation-card·좌우 프레젠테이션·Oddland 자산은 역사 POC이며 신제품 전투원이 아니다. POC 시드·사기 규칙 판본은 제품 밸런스가 아니다. CK3 참조: binary-rea-04-decompiled.md:328-386의 콘솔 등록·게이트는 조사 방법이다. 제품 권한: 서울 디버그 도구 도입 자체는 제도 미정; Ghidra 프로젝트 복구를 제품 기능으로 설명하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "ch.decisions",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "제품 결정 원장 — 미결정은 소유자 권한",
+          "targetDocumentId": "doc.Open-Decisions"
+        }
+      ]
+    },
+    {
+      "id": "ch.terms",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "docLink",
+          "text": "한국어 표기와 명명 규칙",
+          "targetDocumentId": "doc.Korean-Terminology-and-Naming"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.handoff",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미확정 통합의 실행 게이트"
+        }
+      ]
+    },
+    {
+      "id": "overhaul.20261027.gates",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "전략 시간 환산은 미결정 원장 OD-MOVE와 제품 권한에 종속된다. Estate WorldSeconds→세계 Tick 정합이 닫히기 전 생산·이동·활동을 하나의 주기라고 가정한 통합을 확정하지 않는다. CWS1은 세계 팩트 범위이므로 목적별 난수·사건·영수증을 포함한 전체 캠페인 복구 완료를 주장하지 않는다. 저장 포맷/버전 지원과 계보 복구 경계는 ADR-008·미결정 원장 OD-SESS 및 제품 권한의 결정 게이트이며 새 이행 기본값을 발명하지 않는다. 이 게이트는 기존 구현을 중단시키는 새 게임 규칙이 아니라 미확정 의미를 구현 완료로 승격하지 말라는 문서 경계다."
+        }
+      ]
+    }
+  ]
+}

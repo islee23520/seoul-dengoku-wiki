@@ -1,0 +1,6 @@
+2026-09-29 local launcher probe; shell exit_code=127
+Executable: /Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/MacOS/Unity
+stderr: zsh:1: no such file or directory: /Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/MacOS/Unity
+
+No Editor process started. No Editor log or NUnit XML was created. This is shell failure evidence, not Unity test evidence.
+The initial probe included the unverified filter Janseon.Foundation.Tests.BattleSetupRepositoryTests. Subsequent git inspection showed that fixture does not exist. The actual existing fixtures are Janseon.Foundation.Tests.RealtimeBattleSimTests and Janseon.Tests.EditMode.CampaignLoopTests; the checked-in handoff command already names these correctly. Neither was run by this failed executable probe.
