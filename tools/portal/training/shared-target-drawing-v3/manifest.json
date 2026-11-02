@@ -1,0 +1,87 @@
+{
+  "schema": "cpa-style-profile.v1",
+  "id": "shared-target-drawing-v3",
+  "compiler": "shared-style-cpa-training.v1",
+  "approval": {
+    "scope": "target-style-anchors-only",
+    "date": "2026-10-21",
+    "source": "owner-confirmed canonical K998 and K399 originals; no generated output approval"
+  },
+  "axes": [
+    {
+      "axis": "lineEdge",
+      "keep": "Controlled darker hair, brows and silhouette contours; finer economical nose, lip, jaw and garment interior marks in both K998 and K399.",
+      "drop": "Uniform thick comic outlines, doubled sketch contours or pervasive cheek hatching."
+    },
+    {
+      "axis": "colorPlane",
+      "keep": "Broad matte garment planes with limited smooth skin transitions and clear plane boundaries. Recipient or authored colors remain authoritative.",
+      "drop": "Photographic pores, glossy plastic skin, grain-filled flat ochre or exemplar palette transfer."
+    },
+    {
+      "axis": "shadow",
+      "keep": "Connected warm midtone jaw-to-neck shadow groups and broad restrained garment folds, as in both originals.",
+      "drop": "Near-black neck triangles, many black fold splinters, cinematic rim lighting or over-modeled tiny folds."
+    },
+    {
+      "axis": "faceAbstraction",
+      "keep": "Stylized clear eyes and economical nose and mouth marks; preserve each recipient individual face proportions, eye aperture and identity.",
+      "drop": "Averaged faces, copied exemplar geometry, enlarged glossy eyes as a global rule or photoreal pore detail."
+    },
+    {
+      "axis": "texture",
+      "keep": "Broad overlapping shaded hair clumps with sparse loose strands and quiet cloth fields, shared by K998 and K399.",
+      "drop": "Dense luminous hair threads, pervasive woven grain, paper noise, bright scratches or global hatching."
+    }
+  ],
+  "roleExclusions": [
+    "Both anchors are style-only for both genders and both input modes; neither supplies identity, face geometry, palette, pose, gaze, head turn, framing, anatomy or garments.",
+    "K399 opaque blue background is not the desired output background. Preserve the existing transparent-background and opaque-person-interior delivery contract.",
+    "K998 glasses, swept hair and brown jacket; K399 bob, larger eyes, lip highlight and olive jacket are local content, not mandatory shared traits."
+  ],
+  "exemplars": [
+    {
+      "assetId": "inventory:93e45d8525c4",
+      "ordinal": 1,
+      "role": "style-only",
+      "path": "images/person-0998.png",
+      "filename": "style-1.png",
+      "sha256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306",
+      "dimensions": [
+        1160,
+        1355
+      ]
+    },
+    {
+      "assetId": "inventory:93d13f3be76d",
+      "ordinal": 2,
+      "role": "style-only",
+      "path": "images/person-0399.png",
+      "filename": "style-2.png",
+      "sha256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672",
+      "dimensions": [
+        1160,
+        1355
+      ]
+    }
+  ],
+  "forbiddenPositiveStyleSHA256": [
+    "5be5500ab57b7015ab1e058b231baf4f2682c7529d6d38b8a159e43302e15461",
+    "72ebe2a2625394b5ddb9935f774a06eb6ed0da93c2075eb5648974134985860d",
+    "e5be87f02aefc6599c1d7aecdd7f8120ce1b789c814f80b1ef9140a314128627",
+    "852642d1feb34cb7f3981df580448e05141ed1aa1a00d50f676d04dfc8066ea4",
+    "d88a79daec5d26b108760ca755d0d4e43df9db6c16a6efc4ddf71ccbb82cbde7",
+    "90a70d6feee755f358946fa176be850e3abdc04d462642ae59ff68dd1cb42361",
+    "d0e57199b6a18fad72495d9ad46a3d303762d6a186d6f73d4f057fe3c4603a28",
+    "964773c77879f2a9bdffddbccb6b268685d4a503b6f24b12a65a1f98e3aaf133",
+    "2c3ffca99a0944e7b0af992110a32f4606fc9c82dfc91b25513b9045306a1685"
+  ],
+  "historicalExemplarSHA256": [
+    "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
+    "5a79cf53ccd738285f754ddfc9bf6f5b9c12b74ae8d727744ec2054047b6acce"
+  ],
+  "contentInventory": {
+    "path": "../training100-content-v1/manifest.json",
+    "sourceSHA256": "9d28f7ec5f520a3963323ee08816037a166d13f911d99ae625d3be3b554a4e4b"
+  }
+}

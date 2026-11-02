@@ -1,0 +1,1257 @@
+{
+  "schema": "cpa-style-profile.v1",
+  "id": "shared-target-drawing-v2",
+  "compiler": "shared-style-cpa-training.v1",
+  "axes": [
+    {
+      "axis": "lineEdge",
+      "keep": "Dark, controlled silhouette and hair edges; lighter economical nose, lip, eyelid and garment interior marks.",
+      "drop": "Uniform thick comic outlines, sketchy doubled edges, or blurred silhouette."
+    },
+    {
+      "axis": "colorPlane",
+      "keep": "Matte restrained brown/navy/olive color fields, clear cheek and garment planes, limited soft skin transitions. Not pure flat vector.",
+      "drop": "Photographic skin modeling, glossy plastic skin, saturated candy palette, or soft airbrush replacing plane boundaries."
+    },
+    {
+      "axis": "shadow",
+      "keep": "Connected angular jaw/neck shadow groups and broad cloth folds; small nose shadow and restrained cheek transitions.",
+      "drop": "Many tiny modeled folds, cinematic rim lighting, or shadows that erase the broad grouping."
+    },
+    {
+      "axis": "faceAbstraction",
+      "keep": "Economical nose and mouth marks, defined brows and stylized irises, angular jaw; local stubble and age marks remain subordinate.",
+      "drop": "Photoreal pores/individual lash rendering, enlarged glossy anime eyes, or generic face substitution."
+    },
+    {
+      "axis": "texture",
+      "keep": "Grouped hair ribbons/clumps with a few loose strands; quiet cloth fields. K1009 straps/radio are content-specific detail, not a license for global fabric weave.",
+      "drop": "Hair rendered as dense luminous threads; pervasive woven grain, painterly noise, or material detail dominating the face."
+    }
+  ],
+  "roleExclusions": [
+    "No exemplar face, baldness, bob cut, eye color, clothing, straps, glasses, pose, framing or background transfer",
+    "Muted palette is a rendering rubric, not authority to override authored content colors",
+    "No same-face requirement across genders; no literal jaw/face proportion replacement in the name of abstraction"
+  ],
+  "exemplars": [
+    {
+      "assetId": "inventory:ee65e79ae227",
+      "ordinal": 1,
+      "role": "style-only",
+      "path": "style-1.png",
+      "sha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
+      "dimensions": [
+        1030,
+        1203
+      ]
+    },
+    {
+      "assetId": "inventory:5a79cf53ccd7",
+      "ordinal": 2,
+      "role": "style-only",
+      "path": "style-2.png",
+      "sha256": "5a79cf53ccd738285f754ddfc9bf6f5b9c12b74ae8d727744ec2054047b6acce",
+      "dimensions": [
+        1033,
+        1224
+      ]
+    }
+  ],
+  "inventory": {
+    "schema": "training100-reference-spec.v3",
+    "sourceSHA256": "9d28f7ec5f520a3963323ee08816037a166d13f911d99ae625d3be3b554a4e4b",
+    "slots": [
+      {
+        "slotId": "MR001",
+        "cellId": "male/reference-image",
+        "personId": "person-0998",
+        "catalogGender": "남성",
+        "variantId": "V01",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted navy"
+          }
+        ],
+        "sourceSHA256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306"
+      },
+      {
+        "slotId": "MR002",
+        "cellId": "male/reference-image",
+        "personId": "person-1007",
+        "catalogGender": "남성",
+        "variantId": "V01",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted navy"
+          }
+        ],
+        "sourceSHA256": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179"
+      },
+      {
+        "slotId": "MR003",
+        "cellId": "male/reference-image",
+        "personId": "person-1009",
+        "catalogGender": "남성",
+        "variantId": "V01",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted navy"
+          }
+        ],
+        "sourceSHA256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00"
+      },
+      {
+        "slotId": "MR004",
+        "cellId": "male/reference-image",
+        "personId": "person-0998",
+        "catalogGender": "남성",
+        "variantId": "V02",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted olive"
+          }
+        ],
+        "sourceSHA256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306"
+      },
+      {
+        "slotId": "MR005",
+        "cellId": "male/reference-image",
+        "personId": "person-1007",
+        "catalogGender": "남성",
+        "variantId": "V02",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted olive"
+          }
+        ],
+        "sourceSHA256": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179"
+      },
+      {
+        "slotId": "MR006",
+        "cellId": "male/reference-image",
+        "personId": "person-1009",
+        "catalogGender": "남성",
+        "variantId": "V02",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted olive"
+          }
+        ],
+        "sourceSHA256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00"
+      },
+      {
+        "slotId": "MR007",
+        "cellId": "male/reference-image",
+        "personId": "person-0998",
+        "catalogGender": "남성",
+        "variantId": "V03",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "charcoal gray"
+          }
+        ],
+        "sourceSHA256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306"
+      },
+      {
+        "slotId": "MR008",
+        "cellId": "male/reference-image",
+        "personId": "person-1007",
+        "catalogGender": "남성",
+        "variantId": "V03",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "charcoal gray"
+          }
+        ],
+        "sourceSHA256": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179"
+      },
+      {
+        "slotId": "MR009",
+        "cellId": "male/reference-image",
+        "personId": "person-1009",
+        "catalogGender": "남성",
+        "variantId": "V03",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "charcoal gray"
+          }
+        ],
+        "sourceSHA256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00"
+      },
+      {
+        "slotId": "MR010",
+        "cellId": "male/reference-image",
+        "personId": "person-0998",
+        "catalogGender": "남성",
+        "variantId": "V04",
+        "edits": [
+          {
+            "field": "expression",
+            "value": "subtle closed-mouth smile"
+          }
+        ],
+        "sourceSHA256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306"
+      },
+      {
+        "slotId": "MR011",
+        "cellId": "male/reference-image",
+        "personId": "person-1007",
+        "catalogGender": "남성",
+        "variantId": "V04",
+        "edits": [
+          {
+            "field": "expression",
+            "value": "subtle closed-mouth smile"
+          }
+        ],
+        "sourceSHA256": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179"
+      },
+      {
+        "slotId": "MR012",
+        "cellId": "male/reference-image",
+        "personId": "person-1009",
+        "catalogGender": "남성",
+        "variantId": "V04",
+        "edits": [
+          {
+            "field": "expression",
+            "value": "subtle closed-mouth smile"
+          }
+        ],
+        "sourceSHA256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00"
+      },
+      {
+        "slotId": "MR013",
+        "cellId": "male/reference-image",
+        "personId": "person-0998",
+        "catalogGender": "남성",
+        "variantId": "V05",
+        "edits": [
+          {
+            "field": "expression",
+            "value": "reserved concerned brow; mouth closed"
+          }
+        ],
+        "sourceSHA256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306"
+      },
+      {
+        "slotId": "MR014",
+        "cellId": "male/reference-image",
+        "personId": "person-1007",
+        "catalogGender": "남성",
+        "variantId": "V05",
+        "edits": [
+          {
+            "field": "expression",
+            "value": "reserved concerned brow; mouth closed"
+          }
+        ],
+        "sourceSHA256": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179"
+      },
+      {
+        "slotId": "MR015",
+        "cellId": "male/reference-image",
+        "personId": "person-1009",
+        "catalogGender": "남성",
+        "variantId": "V05",
+        "edits": [
+          {
+            "field": "expression",
+            "value": "reserved concerned brow; mouth closed"
+          }
+        ],
+        "sourceSHA256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00"
+      },
+      {
+        "slotId": "MR016",
+        "cellId": "male/reference-image",
+        "personId": "person-0998",
+        "catalogGender": "남성",
+        "variantId": "V06",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "toward viewer; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306"
+      },
+      {
+        "slotId": "MR017",
+        "cellId": "male/reference-image",
+        "personId": "person-1007",
+        "catalogGender": "남성",
+        "variantId": "V06",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "toward viewer; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179"
+      },
+      {
+        "slotId": "MR018",
+        "cellId": "male/reference-image",
+        "personId": "person-1009",
+        "catalogGender": "남성",
+        "variantId": "V06",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "toward viewer; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00"
+      },
+      {
+        "slotId": "MR019",
+        "cellId": "male/reference-image",
+        "personId": "person-0998",
+        "catalogGender": "남성",
+        "variantId": "V07",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "slightly toward image-left; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306"
+      },
+      {
+        "slotId": "MR020",
+        "cellId": "male/reference-image",
+        "personId": "person-1007",
+        "catalogGender": "남성",
+        "variantId": "V07",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "slightly toward image-left; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179"
+      },
+      {
+        "slotId": "MR021",
+        "cellId": "male/reference-image",
+        "personId": "person-1009",
+        "catalogGender": "남성",
+        "variantId": "V07",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "slightly toward image-left; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00"
+      },
+      {
+        "slotId": "MR022",
+        "cellId": "male/reference-image",
+        "personId": "person-0998",
+        "catalogGender": "남성",
+        "variantId": "V08",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "slightly toward image-right; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306"
+      },
+      {
+        "slotId": "MR023",
+        "cellId": "male/reference-image",
+        "personId": "person-1007",
+        "catalogGender": "남성",
+        "variantId": "V08",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "slightly toward image-right; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179"
+      },
+      {
+        "slotId": "MR024",
+        "cellId": "male/reference-image",
+        "personId": "person-1009",
+        "catalogGender": "남성",
+        "variantId": "V08",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "slightly toward image-right; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00"
+      },
+      {
+        "slotId": "MR025",
+        "cellId": "male/reference-image",
+        "personId": "person-0998",
+        "catalogGender": "남성",
+        "variantId": "V09",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted burgundy"
+          },
+          {
+            "field": "expression",
+            "value": "subtle closed-mouth smile"
+          }
+        ],
+        "sourceSHA256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306"
+      },
+      {
+        "slotId": "FR001",
+        "cellId": "female/reference-image",
+        "personId": "person-0195",
+        "catalogGender": "여성",
+        "variantId": "V01",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted navy"
+          }
+        ],
+        "sourceSHA256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0"
+      },
+      {
+        "slotId": "FR002",
+        "cellId": "female/reference-image",
+        "personId": "person-0399",
+        "catalogGender": "여성",
+        "variantId": "V01",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted navy"
+          }
+        ],
+        "sourceSHA256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672"
+      },
+      {
+        "slotId": "FR003",
+        "cellId": "female/reference-image",
+        "personId": "person-0195",
+        "catalogGender": "여성",
+        "variantId": "V02",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted olive"
+          }
+        ],
+        "sourceSHA256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0"
+      },
+      {
+        "slotId": "FR004",
+        "cellId": "female/reference-image",
+        "personId": "person-0399",
+        "catalogGender": "여성",
+        "variantId": "V02",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted olive"
+          }
+        ],
+        "sourceSHA256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672"
+      },
+      {
+        "slotId": "FR005",
+        "cellId": "female/reference-image",
+        "personId": "person-0195",
+        "catalogGender": "여성",
+        "variantId": "V03",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "charcoal gray"
+          }
+        ],
+        "sourceSHA256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0"
+      },
+      {
+        "slotId": "FR006",
+        "cellId": "female/reference-image",
+        "personId": "person-0399",
+        "catalogGender": "여성",
+        "variantId": "V03",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "charcoal gray"
+          }
+        ],
+        "sourceSHA256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672"
+      },
+      {
+        "slotId": "FR007",
+        "cellId": "female/reference-image",
+        "personId": "person-0195",
+        "catalogGender": "여성",
+        "variantId": "V04",
+        "edits": [
+          {
+            "field": "expression",
+            "value": "subtle closed-mouth smile"
+          }
+        ],
+        "sourceSHA256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0"
+      },
+      {
+        "slotId": "FR008",
+        "cellId": "female/reference-image",
+        "personId": "person-0399",
+        "catalogGender": "여성",
+        "variantId": "V04",
+        "edits": [
+          {
+            "field": "expression",
+            "value": "subtle closed-mouth smile"
+          }
+        ],
+        "sourceSHA256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672"
+      },
+      {
+        "slotId": "FR009",
+        "cellId": "female/reference-image",
+        "personId": "person-0195",
+        "catalogGender": "여성",
+        "variantId": "V05",
+        "edits": [
+          {
+            "field": "expression",
+            "value": "reserved concerned brow; mouth closed"
+          }
+        ],
+        "sourceSHA256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0"
+      },
+      {
+        "slotId": "FR010",
+        "cellId": "female/reference-image",
+        "personId": "person-0399",
+        "catalogGender": "여성",
+        "variantId": "V05",
+        "edits": [
+          {
+            "field": "expression",
+            "value": "reserved concerned brow; mouth closed"
+          }
+        ],
+        "sourceSHA256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672"
+      },
+      {
+        "slotId": "FR011",
+        "cellId": "female/reference-image",
+        "personId": "person-0195",
+        "catalogGender": "여성",
+        "variantId": "V06",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "toward viewer; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0"
+      },
+      {
+        "slotId": "FR012",
+        "cellId": "female/reference-image",
+        "personId": "person-0399",
+        "catalogGender": "여성",
+        "variantId": "V06",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "toward viewer; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672"
+      },
+      {
+        "slotId": "FR013",
+        "cellId": "female/reference-image",
+        "personId": "person-0195",
+        "catalogGender": "여성",
+        "variantId": "V07",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "slightly toward image-left; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0"
+      },
+      {
+        "slotId": "FR014",
+        "cellId": "female/reference-image",
+        "personId": "person-0399",
+        "catalogGender": "여성",
+        "variantId": "V07",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "slightly toward image-left; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672"
+      },
+      {
+        "slotId": "FR015",
+        "cellId": "female/reference-image",
+        "personId": "person-0195",
+        "catalogGender": "여성",
+        "variantId": "V08",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "slightly toward image-right; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0"
+      },
+      {
+        "slotId": "FR016",
+        "cellId": "female/reference-image",
+        "personId": "person-0399",
+        "catalogGender": "여성",
+        "variantId": "V08",
+        "edits": [
+          {
+            "field": "gaze",
+            "value": "slightly toward image-right; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672"
+      },
+      {
+        "slotId": "FR017",
+        "cellId": "female/reference-image",
+        "personId": "person-0195",
+        "catalogGender": "여성",
+        "variantId": "V09",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted burgundy"
+          },
+          {
+            "field": "expression",
+            "value": "subtle closed-mouth smile"
+          }
+        ],
+        "sourceSHA256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0"
+      },
+      {
+        "slotId": "FR018",
+        "cellId": "female/reference-image",
+        "personId": "person-0399",
+        "catalogGender": "여성",
+        "variantId": "V09",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted burgundy"
+          },
+          {
+            "field": "expression",
+            "value": "subtle closed-mouth smile"
+          }
+        ],
+        "sourceSHA256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672"
+      },
+      {
+        "slotId": "FR019",
+        "cellId": "female/reference-image",
+        "personId": "person-0195",
+        "catalogGender": "여성",
+        "variantId": "V10",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted slate blue"
+          },
+          {
+            "field": "expression",
+            "value": "reserved concerned brow; mouth closed"
+          }
+        ],
+        "sourceSHA256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0"
+      },
+      {
+        "slotId": "FR020",
+        "cellId": "female/reference-image",
+        "personId": "person-0399",
+        "catalogGender": "여성",
+        "variantId": "V10",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted slate blue"
+          },
+          {
+            "field": "expression",
+            "value": "reserved concerned brow; mouth closed"
+          }
+        ],
+        "sourceSHA256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672"
+      },
+      {
+        "slotId": "FR021",
+        "cellId": "female/reference-image",
+        "personId": "person-0195",
+        "catalogGender": "여성",
+        "variantId": "V11",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted olive"
+          },
+          {
+            "field": "gaze",
+            "value": "toward viewer; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0"
+      },
+      {
+        "slotId": "FR022",
+        "cellId": "female/reference-image",
+        "personId": "person-0399",
+        "catalogGender": "여성",
+        "variantId": "V11",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted olive"
+          },
+          {
+            "field": "gaze",
+            "value": "toward viewer; head orientation preserved"
+          }
+        ],
+        "sourceSHA256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672"
+      },
+      {
+        "slotId": "FR023",
+        "cellId": "female/reference-image",
+        "personId": "person-0195",
+        "catalogGender": "여성",
+        "variantId": "V12",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "charcoal gray"
+          },
+          {
+            "field": "expression",
+            "value": "subtle closed-mouth smile"
+          }
+        ],
+        "sourceSHA256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0"
+      },
+      {
+        "slotId": "FR024",
+        "cellId": "female/reference-image",
+        "personId": "person-0399",
+        "catalogGender": "여성",
+        "variantId": "V12",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "charcoal gray"
+          },
+          {
+            "field": "expression",
+            "value": "subtle closed-mouth smile"
+          }
+        ],
+        "sourceSHA256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672"
+      },
+      {
+        "slotId": "FR025",
+        "cellId": "female/reference-image",
+        "personId": "person-0195",
+        "catalogGender": "여성",
+        "variantId": "V13",
+        "edits": [
+          {
+            "field": "upperColor",
+            "value": "muted navy"
+          },
+          {
+            "field": "expression",
+            "value": "reserved concerned brow; mouth closed"
+          }
+        ],
+        "sourceSHA256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0"
+      },
+      {
+        "slotId": "MT001",
+        "cellId": "male/tokens-only",
+        "personId": "person-0001",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "5061b0418b546e927af3c53cda8d5d71238e7f31efbc49860de6ddbb93da9d4f"
+      },
+      {
+        "slotId": "MT002",
+        "cellId": "male/tokens-only",
+        "personId": "person-0002",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "e2e13d066efdf59d3f2795ce56605c989b44fedb1d302a0042f52826daf5b1de"
+      },
+      {
+        "slotId": "MT003",
+        "cellId": "male/tokens-only",
+        "personId": "person-0004",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "29f945b0225eac652f4e5bdb37dc279fbf13b3901c0645d9fa306f784770a596"
+      },
+      {
+        "slotId": "MT004",
+        "cellId": "male/tokens-only",
+        "personId": "person-0006",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "42d1affbf934f4f21ea34f4436cdcbf2ee5ac69cef0332415611c689c51d880d"
+      },
+      {
+        "slotId": "MT005",
+        "cellId": "male/tokens-only",
+        "personId": "person-0008",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "c3cb9ea9ea47942d11617ce24fa7688189be10afcd640d1736c14b26ea1b48f6"
+      },
+      {
+        "slotId": "MT006",
+        "cellId": "male/tokens-only",
+        "personId": "person-0010",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "6a7e11fa70b625c4887f5180218db2090802e3f0ffbaa26603ca1cd6e1e4a81b"
+      },
+      {
+        "slotId": "MT007",
+        "cellId": "male/tokens-only",
+        "personId": "person-0012",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "d5bd6d207e6bfc61f387e7b32114ae642e5c12e039dbe87e4e7bfd24dd905d15"
+      },
+      {
+        "slotId": "MT008",
+        "cellId": "male/tokens-only",
+        "personId": "person-0014",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "360f0f45adde96d4edd8a40016a60e46c23c62c5bf8b551b068b4eb7cfdc6b19"
+      },
+      {
+        "slotId": "MT009",
+        "cellId": "male/tokens-only",
+        "personId": "person-0016",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "c32062cf598a07ff65ca1be40ed3cd9d541f25dec173e33133ae6453a971e13f"
+      },
+      {
+        "slotId": "MT010",
+        "cellId": "male/tokens-only",
+        "personId": "person-0018",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "8ab93c922730df0656a6a246fb256e4c0d38c38ec465bac695997aded550d2a0"
+      },
+      {
+        "slotId": "MT011",
+        "cellId": "male/tokens-only",
+        "personId": "person-0020",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "5459cbee9dc910f6526dbee625e5e8ced7a0f02bae0081699c8cb67e0a423a1d"
+      },
+      {
+        "slotId": "MT012",
+        "cellId": "male/tokens-only",
+        "personId": "person-0022",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "401cd18c8188c2568188341d493fa08125fcf4cc066a62fed34c2a96489d5cd0"
+      },
+      {
+        "slotId": "MT013",
+        "cellId": "male/tokens-only",
+        "personId": "person-0024",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "bca725b6ecd32a9d898b89725f38e9464526e3cfb6f4faab8baaa230ffeda546"
+      },
+      {
+        "slotId": "MT014",
+        "cellId": "male/tokens-only",
+        "personId": "person-0026",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "6249709b3dce83e48a6ac31022430ff5f4f81d9db941db25bc5f205027b09895"
+      },
+      {
+        "slotId": "MT015",
+        "cellId": "male/tokens-only",
+        "personId": "person-0028",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "5eb8bbfd1a218c71909f3f50b419ad9a6ad0ff90831583d4a94fa9894411c0e7"
+      },
+      {
+        "slotId": "MT016",
+        "cellId": "male/tokens-only",
+        "personId": "person-0029",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "0d53b52886fd2b69a1b5f0fa0b0819a5b0921a58ee1a7d3e416a0b12fc4a2ed8"
+      },
+      {
+        "slotId": "MT017",
+        "cellId": "male/tokens-only",
+        "personId": "person-0030",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "b58bb5a008582f1d2e230432b9bd10e74ecc41cb59cbe59eea15c346bc16796c"
+      },
+      {
+        "slotId": "MT018",
+        "cellId": "male/tokens-only",
+        "personId": "person-0032",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "71b488f1499af29cc5d0200b8f19f8e06c15126f55ab029c43f91bb5b812b16d"
+      },
+      {
+        "slotId": "MT019",
+        "cellId": "male/tokens-only",
+        "personId": "person-0034",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "80677f09549f5a30c172be8d9217d08b6e90c9bd1fe8eeb7f3bf545f2d19458d"
+      },
+      {
+        "slotId": "MT020",
+        "cellId": "male/tokens-only",
+        "personId": "person-0036",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "e3c80c30d337651d35a92a9a9c167b0c9e95db3dba7be66ab2eaad90acf4c524"
+      },
+      {
+        "slotId": "MT021",
+        "cellId": "male/tokens-only",
+        "personId": "person-0038",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "b4147d9f763b5bc8b057fe60fbf4323c1bc6b7d8657b54e0f74ef6368e4719c3"
+      },
+      {
+        "slotId": "MT022",
+        "cellId": "male/tokens-only",
+        "personId": "person-0039",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "4ae2e71cc39086eb74fe307c167a3d53b779a1ae6ba23cada4487addd76139e3"
+      },
+      {
+        "slotId": "MT023",
+        "cellId": "male/tokens-only",
+        "personId": "person-0043",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "c08d575f769d72fc946feb3a5410df319280f4c92ab9f9ae81115644054db537"
+      },
+      {
+        "slotId": "MT024",
+        "cellId": "male/tokens-only",
+        "personId": "person-0045",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "1e1c1a6235f195dd624f76a2117f8736a2c0bffd2c77568381a0a306bd75bb04"
+      },
+      {
+        "slotId": "MT025",
+        "cellId": "male/tokens-only",
+        "personId": "person-0047",
+        "catalogGender": "남성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "17647f5c662a5f14582967f0d484ef71988d96bbf5a8a999cad99f6bb22e8200"
+      },
+      {
+        "slotId": "FT001",
+        "cellId": "female/tokens-only",
+        "personId": "person-0003",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "191c66064cc90e211d65ab595a936902315cda27a0c4df8e0e01734fa0962711"
+      },
+      {
+        "slotId": "FT002",
+        "cellId": "female/tokens-only",
+        "personId": "person-0005",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "cd5227f0c1e28da61b97473bb2b3d6560f10651461c60a8fab8706644f2449ef"
+      },
+      {
+        "slotId": "FT003",
+        "cellId": "female/tokens-only",
+        "personId": "person-0007",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "a45fdeb03e39597fc70b2b31479240e925d8d2d91ae3433d47b93b7d39f027c3"
+      },
+      {
+        "slotId": "FT004",
+        "cellId": "female/tokens-only",
+        "personId": "person-0009",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "7ee3f9cca2c56aec22973f06eb82d806462704586d446a982f2a0c9aca5167cf"
+      },
+      {
+        "slotId": "FT005",
+        "cellId": "female/tokens-only",
+        "personId": "person-0011",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "9481eadebfe3454b7aab4088b02ef91dba914066e324d83bd72d832d7963709e"
+      },
+      {
+        "slotId": "FT006",
+        "cellId": "female/tokens-only",
+        "personId": "person-0013",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "e69888f8e0093752f193ab063754bad7fd5a4525c1a8b9023ddf79ea8e5f63e9"
+      },
+      {
+        "slotId": "FT007",
+        "cellId": "female/tokens-only",
+        "personId": "person-0015",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "a60d757a1ddb2fea9ffcae2d496f08bea6e21ed75047b2d9274c367e826da4bf"
+      },
+      {
+        "slotId": "FT008",
+        "cellId": "female/tokens-only",
+        "personId": "person-0017",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "6ccb38dc70ce2fab0cca6a008ef7ac2a8c2596c076516754e1a6696e7917c20b"
+      },
+      {
+        "slotId": "FT009",
+        "cellId": "female/tokens-only",
+        "personId": "person-0019",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "e87194b542abdb8d1dc0850f428cd2da0cf25f53347be29766eea0dfcca779c3"
+      },
+      {
+        "slotId": "FT010",
+        "cellId": "female/tokens-only",
+        "personId": "person-0021",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "27df9435339be66c2a59a8621772b8821faf500cf0a58982115da65ea1489f13"
+      },
+      {
+        "slotId": "FT011",
+        "cellId": "female/tokens-only",
+        "personId": "person-0023",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "4f0027df54d80a1644e424a3f297b2b7d94ba0abd781e5d8632e1e1b75a5af76"
+      },
+      {
+        "slotId": "FT012",
+        "cellId": "female/tokens-only",
+        "personId": "person-0025",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "f2b804ad04145aea47f558b1971c4d83bbd9cb27c14b6ec5177d674d50e0434d"
+      },
+      {
+        "slotId": "FT013",
+        "cellId": "female/tokens-only",
+        "personId": "person-0027",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "f5ecfdd606a1ba19fc1c99a75ca85ed792527daa87a96a488869790070d3eb14"
+      },
+      {
+        "slotId": "FT014",
+        "cellId": "female/tokens-only",
+        "personId": "person-0031",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "4719ea3ee5f5dd315b8f7dd03de23436156fceeb830d51a12720ecaa92573df8"
+      },
+      {
+        "slotId": "FT015",
+        "cellId": "female/tokens-only",
+        "personId": "person-0033",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "73ea9bc47b68790dfbd0497536db61d2ad566aa9650743868e69a2daf5adb834"
+      },
+      {
+        "slotId": "FT016",
+        "cellId": "female/tokens-only",
+        "personId": "person-0035",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "88132ce35e3cfd0538d52733137ff5b53077cc6c877fcfcbe65dff05e4ed17de"
+      },
+      {
+        "slotId": "FT017",
+        "cellId": "female/tokens-only",
+        "personId": "person-0037",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "0e60ccb0017d8888cd81fae1bc89629c48ffdd7fed86d5983165d28efbcac75f"
+      },
+      {
+        "slotId": "FT018",
+        "cellId": "female/tokens-only",
+        "personId": "person-0040",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "bc18acae1669eb0f96e4eba183c37eb194b81ccdca80556d930b1aed2a4441d0"
+      },
+      {
+        "slotId": "FT019",
+        "cellId": "female/tokens-only",
+        "personId": "person-0042",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "acfd819fb2e6a7d33bbe5faee8da542f93585dbaf84e69109c5b5dae3d2099f8"
+      },
+      {
+        "slotId": "FT020",
+        "cellId": "female/tokens-only",
+        "personId": "person-0044",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "7c94609c80febfda6efc2dffee73cab2d110d07445d52956b5bbd9f482d04ebb"
+      },
+      {
+        "slotId": "FT021",
+        "cellId": "female/tokens-only",
+        "personId": "person-0046",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "27044162e276b80cbda840614f67be5e39f11df7eb5f182ee208ddde38380240"
+      },
+      {
+        "slotId": "FT022",
+        "cellId": "female/tokens-only",
+        "personId": "person-0049",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "ffb9c57439e8d0357e067121bf5d2babf8bffd0d8ad38051f13e94d4150dc6a5"
+      },
+      {
+        "slotId": "FT023",
+        "cellId": "female/tokens-only",
+        "personId": "person-0051",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "b28aa18b6222214c3815fcd8bfc72ca96fa7b284c50bdf5b936287ee1c425a10"
+      },
+      {
+        "slotId": "FT024",
+        "cellId": "female/tokens-only",
+        "personId": "person-0053",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "de807e09de7439415263eb3012c396ddf1e7f650f39a669aa879ff208d2f767e"
+      },
+      {
+        "slotId": "FT025",
+        "cellId": "female/tokens-only",
+        "personId": "person-0055",
+        "catalogGender": "여성",
+        "variantId": "TOKEN_SOURCE_CONTENT",
+        "edits": [],
+        "sourceSHA256": "b294405194be41f57110e8ddb6fc00dccba3aaf2a8abb1fd864bf46eb9eb8d40"
+      }
+    ]
+  }
+}
