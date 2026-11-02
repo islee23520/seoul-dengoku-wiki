@@ -1,0 +1,16 @@
+{
+  "status": "PREPARED_FOR_ROOT_INPUT_PROMPT_REVIEW_NO_POST",
+  "stage": "unregistered-body-anatomy-source",
+  "personId": "person-1003",
+  "characterId": "K1003",
+  "identityOriginal": {"path": "/Users/ilseoblee/workspace/seoul-dengoku-tools/ART-ASSETS/portrait-references/wiki-people/images/person-1003.png", "sha256": "7b7f311b11ffcea5f9e8e3a257a8745093ba2b322bd8e4aa3892c86bd5caeed8", "uploaded": false},
+  "reference": {"path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/body-only-source-input-r1/body-only-reference.png", "sha256": "550d983b2cbd9d412b9fb08ce1852ebb5fd680e589afe2e8443c30cf490cf542"},
+  "lineageSource": {"path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/source/person-1003-body-base.png.native/image-001.png", "sha256": "e1b5f7fbb5043ad3506c859d8412cac340450c54960df734c39b9d9bfb12c6f0"},
+  "transforms": {"cropXYXY": [0,220,1254,900], "scale": 1, "translation": [141,172], "transparentCanvas": [1536,1024]},
+  "prompt": {"path": "TOOL/avatar-gen/portrait/2d/paperdoll/body-anatomy-source-prompt.txt", "sha256": "391dc26c2bb1995b6408b16b37eb11fa82000a63d81da95646adbf7cfd81de39"},
+  "cli": "TOOL/avatar-gen/portrait/2d/image-generate.mjs",
+  "argvWithoutPrompt": ["--image", "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/body-only-source-input-r1/body-only-reference.png", "--reference-roles", "drawing-technique-only", "--expected-style-sha256", "550d983b2cbd9d412b9fb08ce1852ebb5fd680e589afe2e8443c30cf490cf542", "--size", "1536x1024", "--background", "transparent", "-o", "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/source/person-1003-body-anatomy-source-wide.png"],
+  "maskUploaded": false,
+  "scope": "No registered target-canvas claim. Existing CLI has no mask input, and root requested this one-reference unregistered creation route. Input record mentions a mask; this prepared request explicitly does not upload or imply one. Root input/prompt review still required.",
+  "post": "Preserve native response/rejection. Measure actual bare neck/shoulder landmarks and uncertainty, solve isotropic body registration later. No arbitrary fit or raw-pass relaxation."
+}

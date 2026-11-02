@@ -1,0 +1,203 @@
+{
+	"sourceSHA256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306",
+	"observationReceipt": {
+		"value": {
+			"kind": "ObservationReceipt",
+			"schemaVersion": 1,
+			"referenceManifestSHA256": "f7008ee75b42511f3261c5a12e84374158ffc8785e07d47e0552a0d547e82e0d",
+			"sourceSHA256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306",
+			"status": "UNQUALIFIED",
+			"reason": "ANALYSIS_UNQUALIFIED",
+			"qualification": null,
+			"attempt": {
+				"endpoint": "http://100.77.98.25:8317/v1/chat/completions",
+				"requestedModel": "gpt-6-sol",
+				"returnedModel": "gpt-6-sol",
+				"modelSnapshot": null,
+				"imageSHA256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306",
+				"promptSHA256": "6efb586692a2b75645fc31726161681feee7d768c20621e93671129a6af767d3",
+				"schemaSHA256": "a7b21922577172ccbde3b4c813e8dc81c9e646f090967e5704718d401c43a614",
+				"requestSHA256": "9ffd874cdc0268b039cb2ac1af8e74fea72292ab4661172fb95c0c1c59708f15",
+				"responseSHA256": "89839f2a016d53274fdd464b87cb6d93e86f2b4ba7f76697633bb415179a8679",
+				"detail": "unspecified",
+				"parameters": {
+					"temperature": {
+						"state": "unspecified"
+					},
+					"seed": {
+						"state": "unspecified"
+					},
+					"topP": {
+						"state": "unspecified"
+					}
+				},
+				"status": "completed",
+				"observationPointer": ["choices", 0, "message", "content"]
+			},
+			"modelAttestation": "MATCH",
+			"modelSnapshotStatus": "NOT_EXPOSED",
+			"finishReason": "stop",
+			"usage": {
+				"promptTokens": 2451,
+				"completionTokens": 649,
+				"totalTokens": 3100
+			},
+			"observation": {
+				"fields": [
+					{
+						"field": "person.face",
+						"status": "observed",
+						"value": "Illustrated face with an angular jaw, dark eyebrows, and round glasses.",
+						"region": {
+							"x": 0.29,
+							"y": 0.13,
+							"width": 0.48,
+							"height": 0.4
+						},
+						"cues": [
+							"Both eyes, nose, mouth, and one ear are visible.",
+							"Thin circular eyeglass frames cross the eyes."
+						]
+					},
+					{
+						"field": "person.hair",
+						"status": "observed",
+						"value": "Dark, voluminous hair swept back and to the side.",
+						"region": {
+							"x": 0.24,
+							"y": 0.02,
+							"width": 0.54,
+							"height": 0.39
+						},
+						"cues": [
+							"Layered dark strands rise above the forehead.",
+							"Loose strands curve near the temples."
+						]
+					},
+					{
+						"field": "outfit.upper",
+						"status": "observed",
+						"value": "Collared jacket over a crew-neck shirt.",
+						"region": {
+							"x": 0,
+							"y": 0.44,
+							"width": 1,
+							"height": 0.56
+						},
+						"cues": ["Jacket lapels frame the visible round shirt neckline."]
+					},
+					{
+						"field": "outfit.upper.color",
+						"status": "observed",
+						"value": "Dark brown jacket and off-white shirt.",
+						"region": {
+							"x": 0,
+							"y": 0.44,
+							"width": 1,
+							"height": 0.56
+						},
+						"cues": [
+							"The outer garment is brown; the shirt inside it is light-colored."
+						]
+					},
+					{
+						"field": "composition.pose",
+						"status": "observed",
+						"value": "Head turned slightly toward image right, with the upper body visible.",
+						"region": {
+							"x": 0,
+							"y": 0.02,
+							"width": 1,
+							"height": 0.98
+						},
+						"cues": [
+							"One ear is prominent on image left.",
+							"The nose projects toward image right."
+						]
+					},
+					{
+						"field": "composition.framing",
+						"status": "observed",
+						"value": "Portrait showing the head and upper torso against a black background.",
+						"region": {
+							"x": 0,
+							"y": 0,
+							"width": 1,
+							"height": 1
+						},
+						"cues": [
+							"The torso extends beyond the bottom and side edges.",
+							"Black space surrounds the head."
+						]
+					},
+					{
+						"field": "composition.gaze",
+						"status": "ambiguous",
+						"value": null,
+						"region": {
+							"x": 0.49,
+							"y": 0.25,
+							"width": 0.23,
+							"height": 0.09
+						},
+						"cues": [
+							"The pupils appear oriented toward image right.",
+							"No precise point of fixation is visible."
+						]
+					}
+				]
+			},
+			"legacySHA256": null,
+			"accuracy": "NOT_ESTABLISHED",
+			"authorizesEdits": false,
+			"ownerApproval": "NONE"
+		},
+		"sha256": "b4e107cb2b5de34a282b429d540c94b493760cfce60bbcdf6d355302c625bf48"
+	},
+	"requestSHA256": "9ffd874cdc0268b039cb2ac1af8e74fea72292ab4661172fb95c0c1c59708f15",
+	"responseSHA256": "89839f2a016d53274fdd464b87cb6d93e86f2b4ba7f76697633bb415179a8679",
+	"rawResponseFileSHA256": "1dadb4365d5b6124cff62aaee85da6a484b7ce1d950a8cc531f30f3bc241d510",
+	"transportUncertainty": {
+		"sourceBinaryLinkage": "NOT_PROVEN",
+		"imageDetail": "requested unspecified; source user-image translator drops detail",
+		"maxCompletionTokens": "omitted; source translator does not forward caps",
+		"reasoningEffort": "requested unspecified; source translator defaults medium",
+		"stream": "client false; source executor upstream true",
+		"toolChoice": "none explicitly sent; source forwards; live guarantee not proven",
+		"snapshot": "NOT_EXPOSED",
+		"runtimeImageAndSchemaSupport": "UNQUALIFIED"
+	},
+	"semanticReview": {
+		"observationReceiptSHA256": "b4e107cb2b5de34a282b429d540c94b493760cfce60bbcdf6d355302c625bf48",
+		"reviews": [
+			{
+				"receiptSHA256": "92f8af572edd13f399d137a5fea92fadb0a27bcabafc65e87cdb46d340046c6a",
+				"verdict": "HOLD",
+				"failures": [
+					{
+						"field": "composition.gaze",
+						"verdict": "FAIL"
+					},
+					{
+						"field": "composition.framing",
+						"verdict": "FAIL"
+					}
+				]
+			},
+			{
+				"receiptSHA256": "cb22abf1d7e4bcfcd39204dc1f00e8b1b326b4b3be88ce50834ca233ace6f686",
+				"verdict": "HOLD",
+				"failures": [
+					{
+						"field": "composition.gaze",
+						"verdict": "FAIL"
+					},
+					{
+						"field": "composition.framing",
+						"verdict": "FAIL"
+					}
+				]
+			}
+		]
+	}
+}

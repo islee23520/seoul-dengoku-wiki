@@ -1,0 +1,27 @@
+{
+  "scope": "Actual Unity envelope adapter with synthetic final-art fixtures; no real art approval or import",
+  "command": "node --test TOOL/avatar-gen/portrait/2d/paperdoll/workflow.test.mjs",
+  "monitor": "mon_PJRZ99KDHVSNTN6H",
+  "session": "bash_49",
+  "exitCode": 0,
+  "tests": 32,
+  "passed": 32,
+  "failed": 0,
+  "skipped": 0,
+  "durationMs": 8829.231291,
+  "diagnostics": "workflow.mjs and workflow.test.mjs: No diagnostics found before run",
+  "contractFileSha256": "3163791d2b94c37bb697fb277f263124820d68064ee0132e9f6314d9468fc01f",
+  "contractPayloadSha256": "50b8271728e726a331736b2cc57d118b4445485d24727a67809a829dd604c565",
+  "actualPreflight": {
+    "batch": "current-four-layer-preflight.batch.json",
+    "monitor": "mon_KJXGAKJ3KFY5D6YN",
+    "exitCode": 2,
+    "error": "three distinct samples required",
+    "actualAvailableRoles": ["hairBack", "body", "head", "hairFront"],
+    "missingFor1003": ["clothing", "helmet", "deadHead", "headlessBody", "APPROVED_FINAL_ART review", "explicit normalization and movement"],
+    "missingSamples": ["person-1004", "person-1009"],
+    "approvalManufactured": false
+  },
+  "rawLogPersisted": false,
+  "remaining": "Real finalize blocked by incomplete/rejected art and absent final review. No import/commit/provider call performed."
+}

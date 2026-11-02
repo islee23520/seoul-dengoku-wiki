@@ -1,0 +1,20 @@
+{
+  "status": "EXPLICIT_POC_VALUES_AUTHORED_ROOT_BINDING_REVIEW_PENDING",
+  "actual1009Proposal": {"path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/TOOL/avatar-gen/portrait/2d/paperdoll/person-1009-finalize-entry-proposal.json", "sha256": "5f143635402a93603baf9ed808d29a0571c9f3cea3862f70ab5076fb0bcb1847"},
+  "unityContract": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku/.omo/evidence/portrait-paperdoll-poc-20261021/unity-layer-contract.json",
+    "sha256": "dd7e3d68fc2939fdf8381f6099858932f8bdf0224101f7e78123594850463064",
+    "payloadSha256": "c1c4ed65d963b26f779af633028c950c4e4347b2d9d4a2d7fdcc20561e70f3a7"
+  },
+  "originalSourceSizes": {"person-1003":{"x":1160,"y":1355},"person-1004":{"x":1161,"y":1354},"person-1009":{"x":1160,"y":1355}},
+  "movementStageRequired": ["start","end","sampleOffset","cameraPosition","portraitSize","speed","orthographicSize"],
+  "movementStageValueAuthority": "Explicit demo values authored in actual1009Proposal: four-second path x=-2 to2, y=-2/0/2 lanes, speed1, camera(0,0,-10), portraitSize(104/71,2), ortho4. POC presentation only; root exact binding review and import frame QA pending.",
+  "normalizationRequiredPerSubject": ["sourceSize","normalizationScale","normalizationOffset"],
+  "normalizationValueAuthority": "Already registered 832x1136 derivatives use identity scale(1,1), offset(0,0) into Unity. This is not an original source fit; original sourceSize and actual art-registration provenance remain separate. Root binding review pending.",
+  "optionalVariant": {"receiptField":"entries[].helmetHairBack","fields":["role","sha256","sourcePath"],"role":"helmetHairBack","batchProvenanceRef":"entries[].helmetHairBackProvenance"},
+  "variantProvenanceSchema": {"schema":"paperdoll-helmet-hair-back.v1","required":["personId","characterId","sourceSha256","baselineHairBackSha256","helmetHairBackSha256","geometrySha256","evidence"],"evidence":"absolute hash-bound ref"},
+  "compositeBinding": "With variant: SHA256(canonical({layers: entry.layers, helmetHairBack: entry.helmetHairBack})); baseline-only: SHA256(canonical(entry.layers))",
+  "reviewBinding": "SHA256(canonical(entry excluding review)); final review must have scope APPROVED_FINAL_ART, verdict pass, movementSha256 and matching identity/source/binding. Geometry-only acceptance is rejected.",
+  "preflight": {"workflow":"TOOL/avatar-gen/portrait/2d/paperdoll/workflow.mjs","batch":"TOOL/avatar-gen/portrait/2d/paperdoll/current-four-layer-preflight.batch.json","output":"/Users/ilseoblee/workspace/seoul-dengoku/.omo/evidence/portrait-paperdoll-poc-20261021/unity-receipt-preflight.json","argument":"--check","expectedCurrentResult":"exit 2; incomplete real assets must reject without publishing output"},
+  "runtimePromotion": false
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "native-moss-bundle.v1",
+  "implementationSHA256": "8f52f75bb4fe62ffceb0cadacbeed34c6175bebf8ade9644d1337a3ab94f8218",
+  "profileDigest": "1b340aab2d91ca70ed0a6d01cfaa84df1f8194d71e9c0900c6874e1fd844c8c6",
+  "files": {
+    "alpha-refinement.py": {
+      "sha256": "0b0ee4ab58a6b8a5c51b826b3add2a97c350cdccfbdab1b6e1e9cf51f74d6c34",
+      "size": 4346
+    },
+    "content_v1.py": {
+      "sha256": "b2fc10eafbf4bef23dcdb127fb62b7ced4268ae9320a1af8f6f5494005472347",
+      "size": 4873
+    },
+    "context_v1.py": {
+      "sha256": "fe62a1549ad14f5833b933b60764ac5ee05ed986ae65186778a2311b5bb615b6",
+      "size": 8248
+    },
+    "job.py": {
+      "sha256": "458ffdb7549013a695ce4b22d3065e5bc0b0ba933a315f707c27e09ec4ddb85f",
+      "size": 22384
+    },
+    "lifecycle.py": {
+      "sha256": "fcb752c5b9bb0285a98f5699ecf0eadc9ad06d0253366986fbf99da3567228b8",
+      "size": 33338
+    },
+    "native_runner_v1.py": {
+      "sha256": "f523249eea231157dd3f5285c762515e022b748b4b3e286760cf093551c0cc55",
+      "size": 13282
+    },
+    "newhost-proof.py": {
+      "sha256": "909854b65345b3644cc7efc2afaa8e4c6817a72b26e8e30097869640377fb71d",
+      "size": 25923
+    },
+    "png_v1.ts": {
+      "sha256": "6be86a56c26f6ba0dd833225e1f84e05109a1c9d9b3dee50ea66e406e8e5bdb2",
+      "size": 7895
+    },
+    "reference_pipeline_recipes.py": {
+      "sha256": "864ec7777aad4d3d2c9d1edafafe6a42c87ff3c517d998686e4492705ed3dd19",
+      "size": 12129
+    },
+    "runtime.py": {
+      "sha256": "a3b9fb8b4a8faa6bf168f05641d6451043494c91418f1610d7af2812f4f721d7",
+      "size": 18472
+    },
+    "token_pipeline_observed.py": {
+      "sha256": "77b7124e763cb2fc4def9af59a1e02245f3c23a068091a4a5eb25fdd3f49368c",
+      "size": 6339
+    },
+    "transform-stdin.ts": {
+      "sha256": "f7b19bc71543d77fa8fd1d0b5f44eec5b837e78ce822743fa828dbbc8e8a92c8",
+      "size": 337
+    },
+    "transform_v1.ts": {
+      "sha256": "047f478fef38afa3bfd6aec53a22eeeefe27ef4bd5a050fb955fc0166962808f",
+      "size": 5733
+    }
+  }
+}

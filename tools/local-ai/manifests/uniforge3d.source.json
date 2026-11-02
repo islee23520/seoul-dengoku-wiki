@@ -1,0 +1,11 @@
+{
+  "schema": "uniforge3d.source.v1",
+  "name": "UniForge3D",
+  "repository": "https://github.com/xibushu/UniForge3D.git",
+  "ref": "main",
+  "commit": "8b6094780e202b8a6b1d239e0997552e18547026",
+  "source_acquired": true,
+  "runtime_verified": false,
+  "notes": "Existing real Git checkout independently verified against remote main: commit object, full object integrity, tracked tree and clean worktree. Dependencies, models and GPU inference were not installed or verified. Prior WSL and runtime assertions are not evidence of readiness.",
+  "verified_on": "2026-10-23"
+}

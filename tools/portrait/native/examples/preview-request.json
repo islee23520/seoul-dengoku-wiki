@@ -1,0 +1,37 @@
+{
+  "lookBytes": "examples/look.json",
+  "references": [
+    {
+      "index": 1,
+      "role": "drawing-technique-only",
+      "sha256": "b3744cf11b7bf082a1b2de4da2caef4d779237ef573c278c984f3954b6490c65"
+    },
+    {
+      "index": 2,
+      "role": "framing-only",
+      "sha256": "9298bf85894d4a5fcf64aeae33afe709b8c9988dfda359eea74fc0e584d223ae",
+      "guide": {
+        "mode": "portrait",
+        "gender": "female",
+        "sourceHash": "9298bf85894d4a5fcf64aeae33afe709b8c9988dfda359eea74fc0e584d223ae",
+        "landmarkBinding": "headtop"
+      }
+    }
+  ],
+  "composition": {
+    "shot": "medium-close-up-119",
+    "cameraContractId": "synthetic-frame",
+    "mode": "portrait",
+    "coordinatedHeadTorso": true,
+    "viewerRight": true,
+    "gazeCamera": true,
+    "fullHeadShoulderConstraints": true,
+    "measuredFrameGuide": {
+      "landmarks": [
+        "headtop"
+      ],
+      "contractId": "synthetic-frame"
+    }
+  },
+  "packageVersion": 1
+}

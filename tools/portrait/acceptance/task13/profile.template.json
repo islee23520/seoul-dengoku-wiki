@@ -1,0 +1,42 @@
+{
+	"schema": "portrait-proportion-profile.v1",
+	"canvas": [1024, 1536],
+	"bodyType": null,
+	"commonSourceSHA": null,
+	"commonMeasurementSHA": null,
+	"bodySourceSHA": null,
+	"bodyMeasurementSHA": null,
+	"targets": {
+		"headWidth": null,
+		"headHeight": null,
+		"faceWidth": null,
+		"faceHeight": null,
+		"eyeY": null,
+		"headCenterX": null,
+		"crownY": null
+	},
+	"ratios": {
+		"shoulderToHead": null,
+		"torsoToHead": null
+	},
+	"tolerance": {
+		"pixels": null,
+		"ratio": null,
+		"evidenceSHA": null
+	},
+	"profileSHA": null,
+	"ownerApprovalReceipt": null,
+	"incomplete": true,
+	"pendingJsonPointers": [
+		"/bodyType",
+		"/commonSourceSHA",
+		"/commonMeasurementSHA",
+		"/bodySourceSHA",
+		"/bodyMeasurementSHA",
+		"/targets",
+		"/ratios",
+		"/tolerance",
+		"/profileSHA",
+		"/ownerApprovalReceipt"
+	]
+}

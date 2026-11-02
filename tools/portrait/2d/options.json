@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "selectionMethod": "Wingzero-like property composition; labels are project-authored and individually sourced, not imported from the website",
+  "propertySources": {
+    "hair": "https://uniform.wingzero.tw/ko/prompts#헤어스타일",
+    "outfit": "https://uniform.wingzero.tw/ko/prompts#상의",
+    "cameraAngle": "https://uniform.wingzero.tw/ko/prompts/camera-angle/247",
+    "shotSizePortrait": "https://uniform.wingzero.tw/ko/prompts/camera-shot-size/119",
+    "shotSizeFull": "https://uniform.wingzero.tw/ko/prompts/camera-shot-size/116",
+    "lighting": "https://uniform.wingzero.tw/ko/prompts#빛",
+    "style": "https://uniform.wingzero.tw/ko/prompts/anime-manga-style"
+  },
+  "categories": {
+    "gender": [
+      {
+        "id": "male",
+        "label": "남성",
+        "status": "wiki-contract",
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/name-pools/gender-cast.json"
+      },
+      {
+        "id": "female",
+        "label": "여성",
+        "status": "wiki-contract",
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/name-pools/gender-cast.json"
+      }
+    ],
+    "ageCategory": [
+      {
+        "id": "adult",
+        "label": "개막 세대 성인",
+        "status": "wiki-contract",
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Cast-Profile-Contract.md"
+      },
+      {
+        "id": "minor",
+        "label": "미성년",
+        "status": "wiki-contract",
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Core-Characters.json#신준"
+      }
+    ],
+    "mood": [
+      {
+        "id": "calm",
+        "label": "차분한 절제",
+        "status": "art-proposal",
+        "source": "tools/portrait-template/style-lock.json"
+      },
+      {
+        "id": "weary",
+        "label": "피로가 엷은 표정",
+        "status": "art-proposal",
+        "source": "tools/portrait-template/characters/shin-jongmok.json"
+      },
+      {
+        "id": "resolute",
+        "label": "단호한 정면 응시",
+        "status": "art-proposal",
+        "source": "tools/portrait-template/style-lock.json"
+      }
+    ],
+    "occupation": [
+      {
+        "id": "field-contractor",
+        "label": "귀환망 현장 계약자",
+        "status": "wiki-character",
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Core-Characters.json#신종목-p3"
+      },
+      {
+        "id": "courier",
+        "label": "수행 전령",
+        "status": "wiki-character-draft",
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Cast-Unaffiliated.json#인물-이연-list1"
+      }
+    ],
+    "hair": [
+      {
+        "id": "short-black",
+        "label": "짧은 검은 머리",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/avatar-gen/tripothon-toon-demo/02-character-set.md#shin-jongmok"
+      },
+      {
+        "id": "long-wine",
+        "label": "포도주색 장발",
+        "status": "wiki-character-draft",
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Cast-Unaffiliated.json#인물-이연-list1"
+      }
+    ],
+    "upper": [
+      {
+        "id": "teal-field",
+        "label": "수선 자국이 있는 청록 야전 상의",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/avatar-gen/tripothon-toon-demo/02-character-set.md#shin-jongmok"
+      },
+      {
+        "id": "black-wine-gothic",
+        "label": "검정과 포도주색 고딕 상의",
+        "status": "wiki-character-draft",
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Cast-Unaffiliated.json#인물-이연-list1"
+      }
+    ],
+    "mangaStyle": [
+      {
+        "id": "owner-reference",
+        "label": "소유자 선택 이미지",
+        "status": "owner-selected-reference",
+        "source": "owner male/female references 2026-10-02",
+        "reference": "owner-image"
+      }
+    ]
+  }
+}

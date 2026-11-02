@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Explicit mode-specific source; separate from shared character slots",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "mode",
+    "characterId",
+    "lookId",
+    "inputSnapshotSHA",
+    "canvas",
+    "pose",
+    "coverage",
+    "parts"
+  ],
+  "properties": {
+    "schema": {
+      "const": "avatar-mode-source.v1"
+    },
+    "mode": {
+      "enum": [
+        "portrait",
+        "fullbody",
+        "3Dparts"
+      ]
+    },
+    "characterId": {
+      "type": "string"
+    },
+    "lookId": {
+      "type": "string"
+    },
+    "inputSnapshotSHA": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "canvas": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/source"
+        }
+      ]
+    },
+    "pose": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/source"
+        }
+      ]
+    },
+    "coverage": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/source"
+        }
+      ]
+    },
+    "parts": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/source"
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "status",
+        "source"
+      ],
+      "properties": {
+        "value": {
+          "not": {
+            "type": "null"
+          }
+        },
+        "status": {
+          "enum": [
+            "approved",
+            "authored-draft",
+            "art-proposal"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

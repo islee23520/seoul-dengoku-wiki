@@ -1,0 +1,3047 @@
+{
+	"schema": "seoul.style-vocabulary/v1",
+	"axis": "style",
+	"system": "gameartstyles",
+	"observation": {
+		"status": "dated-observation",
+		"notPermanent": true,
+		"observedAt": "2026-10-23T15:56:12.084Z",
+		"note": "146 site-used and 31 unused values are what taxonomy.js plus the archived style routes showed on this date. A later refresh may change both sets. This file is not a claim that the live site still matches."
+	},
+	"permission": {
+		"status": "unverified",
+		"use": "reference-vocabulary-only",
+		"imageReuse": "forbidden-until-separately-permitted",
+		"training": "forbidden-until-separately-permitted",
+		"note": "Operator documents read during research contained no content-reuse grant. Vocabulary text is a reference. Do not scrape or train on the site's images."
+	},
+	"trigger": {
+		"defaultContract": "unknown",
+		"noneMeans": "An adapter declared trigger.contract none has no trigger tokens.",
+		"unknownMeans": "No adapter contract was observed. unknown is not none, and a style label is not a trigger."
+	},
+	"sources": [
+		{
+			"role": "taxonomy",
+			"url": "https://gameartstyles.com/taxonomy.js",
+			"retrievedAt": "2026-10-23T15:56:12.084Z",
+			"sha256": "63aa5a930baa32701ba2fcf8a8dafb7430dd0a6bcf5181b0ddfb0f97156236ff",
+			"bytes": 3833,
+			"localArchive": ".omo/ulw-research/20261024-005219/assets/gameartstyles-taxonomy.js"
+		},
+		{
+			"role": "site-used-routes",
+			"url": "https://gameartstyles.com/sitemap.xml",
+			"retrievedAt": "2026-10-23T15:56:12.084Z",
+			"sha256": "956bdc06fee3d63e6a7d23e6598d8bdd94bfc1348737b61b77fc106d0e90a6d0",
+			"bytes": 8152,
+			"localArchive": ".omo/ulw-research/20261024-005219/assets/data/gameartstyles-styles-146.tsv",
+			"note": "SHA is of the archived hand-copied TSV used to mark site-used routes, not of sitemap.xml bytes. One TSV label disagrees with taxonomy.js; see labelCorrections."
+		}
+	],
+	"counts": {
+		"facets": 18,
+		"values": 177,
+		"uniqueLabels": 176,
+		"siteUsed": 146,
+		"unused": 31,
+		"compositeIdNote": "id is facetSlug/valueSlug. Label text is not unique: Realistic occurs twice."
+	},
+	"labelCorrections": [
+		{
+			"route": "/styles/pixel-details/mixels",
+			"taxonomyLabel": "Mixels",
+			"archivedTsvLabel": "Mixes",
+			"disposition": "taxonomy-authoritative",
+			"reason": "Archived hand copy disagrees with taxonomy.js. The taxonomy label is the seed label."
+		}
+	],
+	"groups": [
+		{
+			"label": "Look",
+			"facets": ["dimension", "render"]
+		},
+		{
+			"label": "Technique",
+			"facets": ["line", "shading", "texture", "pixel", "hardware", "post"]
+		},
+		{
+			"label": "Color",
+			"facets": ["color", "palette"]
+		},
+		{
+			"label": "Influence",
+			"facets": ["medium", "movement", "proportions"]
+		},
+		{
+			"label": "Game",
+			"facets": ["perspective", "era", "genre", "platform"]
+		},
+		{
+			"label": "Screenshot",
+			"facets": ["shot"]
+		}
+	],
+	"facets": [
+		{
+			"key": "dimension",
+			"label": "Dimension",
+			"slug": "dimension",
+			"group": "Look",
+			"valueCount": 4
+		},
+		{
+			"key": "render",
+			"label": "Rendering",
+			"slug": "rendering",
+			"group": "Look",
+			"valueCount": 19
+		},
+		{
+			"key": "line",
+			"label": "Linework",
+			"slug": "linework",
+			"group": "Technique",
+			"valueCount": 7
+		},
+		{
+			"key": "shading",
+			"label": "Shading",
+			"slug": "shading",
+			"group": "Technique",
+			"valueCount": 10
+		},
+		{
+			"key": "texture",
+			"label": "Texture",
+			"slug": "texture",
+			"group": "Technique",
+			"valueCount": 8
+		},
+		{
+			"key": "pixel",
+			"label": "Pixel details",
+			"slug": "pixel-details",
+			"group": "Technique",
+			"valueCount": 8
+		},
+		{
+			"key": "hardware",
+			"label": "Hardware look",
+			"slug": "hardware-look",
+			"group": "Technique",
+			"valueCount": 9
+		},
+		{
+			"key": "post",
+			"label": "Post-processing",
+			"slug": "post-processing",
+			"group": "Technique",
+			"valueCount": 12
+		},
+		{
+			"key": "color",
+			"label": "Color",
+			"slug": "color",
+			"group": "Color",
+			"valueCount": 12
+		},
+		{
+			"key": "palette",
+			"label": "Palette",
+			"slug": "palette",
+			"group": "Color",
+			"valueCount": 12
+		},
+		{
+			"key": "medium",
+			"label": "Imitated medium",
+			"slug": "imitated-medium",
+			"group": "Influence",
+			"valueCount": 12
+		},
+		{
+			"key": "movement",
+			"label": "Art movement",
+			"slug": "art-movement",
+			"group": "Influence",
+			"valueCount": 22
+		},
+		{
+			"key": "proportions",
+			"label": "Proportions",
+			"slug": "proportions",
+			"group": "Influence",
+			"valueCount": 6
+		},
+		{
+			"key": "perspective",
+			"label": "Perspective",
+			"slug": "perspective",
+			"group": "Game",
+			"valueCount": 7
+		},
+		{
+			"key": "era",
+			"label": "Era",
+			"slug": "era",
+			"group": "Game",
+			"valueCount": 5
+		},
+		{
+			"key": "genre",
+			"label": "Genre",
+			"slug": "genre",
+			"group": "Game",
+			"valueCount": 15
+		},
+		{
+			"key": "platform",
+			"label": "Platform",
+			"slug": "platform",
+			"group": "Game",
+			"valueCount": 4
+		},
+		{
+			"key": "shot",
+			"label": "Shot type",
+			"slug": "shot-type",
+			"group": "Screenshot",
+			"valueCount": 5
+		}
+	],
+	"values": [
+		{
+			"id": "dimension/2d",
+			"facetKey": "dimension",
+			"facetSlug": "dimension",
+			"facetLabel": "Dimension",
+			"group": "Look",
+			"label": "2D",
+			"slug": "2d",
+			"index": 0,
+			"route": "/styles/dimension/2d",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "dimension/2-5d",
+			"facetKey": "dimension",
+			"facetSlug": "dimension",
+			"facetLabel": "Dimension",
+			"group": "Look",
+			"label": "2.5D",
+			"slug": "2-5d",
+			"index": 1,
+			"route": "/styles/dimension/2-5d",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "dimension/3d",
+			"facetKey": "dimension",
+			"facetSlug": "dimension",
+			"facetLabel": "Dimension",
+			"group": "Look",
+			"label": "3D",
+			"slug": "3d",
+			"index": 2,
+			"route": "/styles/dimension/3d",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "dimension/hd-2d-mixed",
+			"facetKey": "dimension",
+			"facetSlug": "dimension",
+			"facetLabel": "Dimension",
+			"group": "Look",
+			"label": "HD-2D / Mixed",
+			"slug": "hd-2d-mixed",
+			"index": 3,
+			"route": "/styles/dimension/hd-2d-mixed",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/pixel-art",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Pixel art",
+			"slug": "pixel-art",
+			"index": 0,
+			"route": "/styles/rendering/pixel-art",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/voxel",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Voxel",
+			"slug": "voxel",
+			"index": 1,
+			"route": "/styles/rendering/voxel",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/low-poly",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Low-poly",
+			"slug": "low-poly",
+			"index": 2,
+			"route": "/styles/rendering/low-poly",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/retro-3d",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Retro 3D",
+			"slug": "retro-3d",
+			"index": 3,
+			"route": "/styles/rendering/retro-3d",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/cel-shaded",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Cel-shaded",
+			"slug": "cel-shaded",
+			"index": 4,
+			"route": "/styles/rendering/cel-shaded",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/stylized-3d",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Stylized 3D",
+			"slug": "stylized-3d",
+			"index": 5,
+			"route": "/styles/rendering/stylized-3d",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/realistic",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Realistic",
+			"slug": "realistic",
+			"index": 6,
+			"route": "/styles/rendering/realistic",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/painterly",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Painterly",
+			"slug": "painterly",
+			"index": 7,
+			"route": "/styles/rendering/painterly",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/hand-drawn",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Hand-drawn",
+			"slug": "hand-drawn",
+			"index": 8,
+			"route": "/styles/rendering/hand-drawn",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/vector-flat",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Vector / Flat",
+			"slug": "vector-flat",
+			"index": 9,
+			"route": "/styles/rendering/vector-flat",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/pre-rendered",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Pre-rendered",
+			"slug": "pre-rendered",
+			"index": 10,
+			"route": "/styles/rendering/pre-rendered",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/digitized-fmv",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Digitized / FMV",
+			"slug": "digitized-fmv",
+			"index": 11,
+			"route": "/styles/rendering/digitized-fmv",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/claymation",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Claymation",
+			"slug": "claymation",
+			"index": 12,
+			"route": "/styles/rendering/claymation",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/papercraft",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Papercraft",
+			"slug": "papercraft",
+			"index": 13,
+			"route": "/styles/rendering/papercraft",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/diorama",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Diorama",
+			"slug": "diorama",
+			"index": 14,
+			"route": "/styles/rendering/diorama",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/silhouette",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Silhouette",
+			"slug": "silhouette",
+			"index": 15,
+			"route": "/styles/rendering/silhouette",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/minimalist",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Minimalist",
+			"slug": "minimalist",
+			"index": 16,
+			"route": "/styles/rendering/minimalist",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/ascii",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "ASCII",
+			"slug": "ascii",
+			"index": 17,
+			"route": "/styles/rendering/ascii",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "rendering/wireframe",
+			"facetKey": "render",
+			"facetSlug": "rendering",
+			"facetLabel": "Rendering",
+			"group": "Look",
+			"label": "Wireframe",
+			"slug": "wireframe",
+			"index": 18,
+			"route": "/styles/rendering/wireframe",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "linework/no-outlines",
+			"facetKey": "line",
+			"facetSlug": "linework",
+			"facetLabel": "Linework",
+			"group": "Technique",
+			"label": "No outlines",
+			"slug": "no-outlines",
+			"index": 0,
+			"route": "/styles/linework/no-outlines",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "linework/black-outlines",
+			"facetKey": "line",
+			"facetSlug": "linework",
+			"facetLabel": "Linework",
+			"group": "Technique",
+			"label": "Black outlines",
+			"slug": "black-outlines",
+			"index": 1,
+			"route": "/styles/linework/black-outlines",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "linework/colored-outlines",
+			"facetKey": "line",
+			"facetSlug": "linework",
+			"facetLabel": "Linework",
+			"group": "Technique",
+			"label": "Colored outlines",
+			"slug": "colored-outlines",
+			"index": 2,
+			"route": "/styles/linework/colored-outlines",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "linework/selective-outlines",
+			"facetKey": "line",
+			"facetSlug": "linework",
+			"facetLabel": "Linework",
+			"group": "Technique",
+			"label": "Selective outlines",
+			"slug": "selective-outlines",
+			"index": 3,
+			"route": "/styles/linework/selective-outlines",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "linework/inked-lines",
+			"facetKey": "line",
+			"facetSlug": "linework",
+			"facetLabel": "Linework",
+			"group": "Technique",
+			"label": "Inked lines",
+			"slug": "inked-lines",
+			"index": 4,
+			"route": "/styles/linework/inked-lines",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "linework/sketchy-lines",
+			"facetKey": "line",
+			"facetSlug": "linework",
+			"facetLabel": "Linework",
+			"group": "Technique",
+			"label": "Sketchy lines",
+			"slug": "sketchy-lines",
+			"index": 5,
+			"route": "/styles/linework/sketchy-lines",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "linework/interior-lines",
+			"facetKey": "line",
+			"facetSlug": "linework",
+			"facetLabel": "Linework",
+			"group": "Technique",
+			"label": "Interior lines",
+			"slug": "interior-lines",
+			"index": 6,
+			"route": "/styles/linework/interior-lines",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shading/flat-unlit",
+			"facetKey": "shading",
+			"facetSlug": "shading",
+			"facetLabel": "Shading",
+			"group": "Technique",
+			"label": "Flat / Unlit",
+			"slug": "flat-unlit",
+			"index": 0,
+			"route": "/styles/shading/flat-unlit",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shading/two-tone-cel",
+			"facetKey": "shading",
+			"facetSlug": "shading",
+			"facetLabel": "Shading",
+			"group": "Technique",
+			"label": "Two-tone cel",
+			"slug": "two-tone-cel",
+			"index": 1,
+			"route": "/styles/shading/two-tone-cel",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shading/three-tone-cel",
+			"facetKey": "shading",
+			"facetSlug": "shading",
+			"facetLabel": "Shading",
+			"group": "Technique",
+			"label": "Three-tone cel",
+			"slug": "three-tone-cel",
+			"index": 2,
+			"route": "/styles/shading/three-tone-cel",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shading/soft-gradient",
+			"facetKey": "shading",
+			"facetSlug": "shading",
+			"facetLabel": "Shading",
+			"group": "Technique",
+			"label": "Soft gradient",
+			"slug": "soft-gradient",
+			"index": 3,
+			"route": "/styles/shading/soft-gradient",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shading/hatching",
+			"facetKey": "shading",
+			"facetSlug": "shading",
+			"facetLabel": "Shading",
+			"group": "Technique",
+			"label": "Hatching",
+			"slug": "hatching",
+			"index": 4,
+			"route": "/styles/shading/hatching",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shading/halftone",
+			"facetKey": "shading",
+			"facetSlug": "shading",
+			"facetLabel": "Shading",
+			"group": "Technique",
+			"label": "Halftone",
+			"slug": "halftone",
+			"index": 5,
+			"route": "/styles/shading/halftone",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shading/dithered-shading",
+			"facetKey": "shading",
+			"facetSlug": "shading",
+			"facetLabel": "Shading",
+			"group": "Technique",
+			"label": "Dithered shading",
+			"slug": "dithered-shading",
+			"index": 6,
+			"route": "/styles/shading/dithered-shading",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shading/rim-lighting",
+			"facetKey": "shading",
+			"facetSlug": "shading",
+			"facetLabel": "Shading",
+			"group": "Technique",
+			"label": "Rim lighting",
+			"slug": "rim-lighting",
+			"index": 7,
+			"route": "/styles/shading/rim-lighting",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shading/baked-lighting",
+			"facetKey": "shading",
+			"facetSlug": "shading",
+			"facetLabel": "Shading",
+			"group": "Technique",
+			"label": "Baked lighting",
+			"slug": "baked-lighting",
+			"index": 8,
+			"route": "/styles/shading/baked-lighting",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shading/realistic-lighting",
+			"facetKey": "shading",
+			"facetSlug": "shading",
+			"facetLabel": "Shading",
+			"group": "Technique",
+			"label": "Realistic lighting",
+			"slug": "realistic-lighting",
+			"index": 9,
+			"route": "/styles/shading/realistic-lighting",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "texture/untextured",
+			"facetKey": "texture",
+			"facetSlug": "texture",
+			"facetLabel": "Texture",
+			"group": "Technique",
+			"label": "Untextured",
+			"slug": "untextured",
+			"index": 0,
+			"route": "/styles/texture/untextured",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "texture/hand-painted-textures",
+			"facetKey": "texture",
+			"facetSlug": "texture",
+			"facetLabel": "Texture",
+			"group": "Technique",
+			"label": "Hand-painted textures",
+			"slug": "hand-painted-textures",
+			"index": 1,
+			"route": "/styles/texture/hand-painted-textures",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "texture/low-res-textures",
+			"facetKey": "texture",
+			"facetSlug": "texture",
+			"facetLabel": "Texture",
+			"group": "Technique",
+			"label": "Low-res textures",
+			"slug": "low-res-textures",
+			"index": 2,
+			"route": "/styles/texture/low-res-textures",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "texture/vertex-colors",
+			"facetKey": "texture",
+			"facetSlug": "texture",
+			"facetLabel": "Texture",
+			"group": "Technique",
+			"label": "Vertex colors",
+			"slug": "vertex-colors",
+			"index": 3,
+			"route": "/styles/texture/vertex-colors",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "texture/photo-textures",
+			"facetKey": "texture",
+			"facetSlug": "texture",
+			"facetLabel": "Texture",
+			"group": "Technique",
+			"label": "Photo textures",
+			"slug": "photo-textures",
+			"index": 4,
+			"route": "/styles/texture/photo-textures",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "texture/pbr-materials",
+			"facetKey": "texture",
+			"facetSlug": "texture",
+			"facetLabel": "Texture",
+			"group": "Technique",
+			"label": "PBR materials",
+			"slug": "pbr-materials",
+			"index": 5,
+			"route": "/styles/texture/pbr-materials",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "texture/brush-strokes",
+			"facetKey": "texture",
+			"facetSlug": "texture",
+			"facetLabel": "Texture",
+			"group": "Technique",
+			"label": "Brush strokes",
+			"slug": "brush-strokes",
+			"index": 6,
+			"route": "/styles/texture/brush-strokes",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "texture/paper-grain",
+			"facetKey": "texture",
+			"facetSlug": "texture",
+			"facetLabel": "Texture",
+			"group": "Technique",
+			"label": "Paper grain",
+			"slug": "paper-grain",
+			"index": 7,
+			"route": "/styles/texture/paper-grain",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "pixel-details/8-bit",
+			"facetKey": "pixel",
+			"facetSlug": "pixel-details",
+			"facetLabel": "Pixel details",
+			"group": "Technique",
+			"label": "8-bit",
+			"slug": "8-bit",
+			"index": 0,
+			"route": "/styles/pixel-details/8-bit",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "pixel-details/16-bit",
+			"facetKey": "pixel",
+			"facetSlug": "pixel-details",
+			"facetLabel": "Pixel details",
+			"group": "Technique",
+			"label": "16-bit",
+			"slug": "16-bit",
+			"index": 1,
+			"route": "/styles/pixel-details/16-bit",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "pixel-details/32-bit",
+			"facetKey": "pixel",
+			"facetSlug": "pixel-details",
+			"facetLabel": "Pixel details",
+			"group": "Technique",
+			"label": "32-bit",
+			"slug": "32-bit",
+			"index": 2,
+			"route": "/styles/pixel-details/32-bit",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "pixel-details/hd-pixel-art",
+			"facetKey": "pixel",
+			"facetSlug": "pixel-details",
+			"facetLabel": "Pixel details",
+			"group": "Technique",
+			"label": "HD pixel art",
+			"slug": "hd-pixel-art",
+			"index": 3,
+			"route": "/styles/pixel-details/hd-pixel-art",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "pixel-details/dithering",
+			"facetKey": "pixel",
+			"facetSlug": "pixel-details",
+			"facetLabel": "Pixel details",
+			"group": "Technique",
+			"label": "Dithering",
+			"slug": "dithering",
+			"index": 4,
+			"route": "/styles/pixel-details/dithering",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "pixel-details/anti-aliasing",
+			"facetKey": "pixel",
+			"facetSlug": "pixel-details",
+			"facetLabel": "Pixel details",
+			"group": "Technique",
+			"label": "Anti-aliasing",
+			"slug": "anti-aliasing",
+			"index": 5,
+			"route": "/styles/pixel-details/anti-aliasing",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "pixel-details/sub-pixel-animation",
+			"facetKey": "pixel",
+			"facetSlug": "pixel-details",
+			"facetLabel": "Pixel details",
+			"group": "Technique",
+			"label": "Sub-pixel animation",
+			"slug": "sub-pixel-animation",
+			"index": 6,
+			"route": "/styles/pixel-details/sub-pixel-animation",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "pixel-details/mixels",
+			"facetKey": "pixel",
+			"facetSlug": "pixel-details",
+			"facetLabel": "Pixel details",
+			"group": "Technique",
+			"label": "Mixels",
+			"slug": "mixels",
+			"index": 7,
+			"route": "/styles/pixel-details/mixels",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "hardware-look/nes",
+			"facetKey": "hardware",
+			"facetSlug": "hardware-look",
+			"facetLabel": "Hardware look",
+			"group": "Technique",
+			"label": "NES",
+			"slug": "nes",
+			"index": 0,
+			"route": "/styles/hardware-look/nes",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "hardware-look/snes",
+			"facetKey": "hardware",
+			"facetSlug": "hardware-look",
+			"facetLabel": "Hardware look",
+			"group": "Technique",
+			"label": "SNES",
+			"slug": "snes",
+			"index": 1,
+			"route": "/styles/hardware-look/snes",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "hardware-look/game-boy",
+			"facetKey": "hardware",
+			"facetSlug": "hardware-look",
+			"facetLabel": "Hardware look",
+			"group": "Technique",
+			"label": "Game Boy",
+			"slug": "game-boy",
+			"index": 2,
+			"route": "/styles/hardware-look/game-boy",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "hardware-look/pc-98",
+			"facetKey": "hardware",
+			"facetSlug": "hardware-look",
+			"facetLabel": "Hardware look",
+			"group": "Technique",
+			"label": "PC-98",
+			"slug": "pc-98",
+			"index": 3,
+			"route": "/styles/hardware-look/pc-98",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "hardware-look/cga-ega",
+			"facetKey": "hardware",
+			"facetSlug": "hardware-look",
+			"facetLabel": "Hardware look",
+			"group": "Technique",
+			"label": "CGA / EGA",
+			"slug": "cga-ega",
+			"index": 4,
+			"route": "/styles/hardware-look/cga-ega",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "hardware-look/amiga",
+			"facetKey": "hardware",
+			"facetSlug": "hardware-look",
+			"facetLabel": "Hardware look",
+			"group": "Technique",
+			"label": "Amiga",
+			"slug": "amiga",
+			"index": 5,
+			"route": "/styles/hardware-look/amiga",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "hardware-look/ps1",
+			"facetKey": "hardware",
+			"facetSlug": "hardware-look",
+			"facetLabel": "Hardware look",
+			"group": "Technique",
+			"label": "PS1",
+			"slug": "ps1",
+			"index": 6,
+			"route": "/styles/hardware-look/ps1",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "hardware-look/n64",
+			"facetKey": "hardware",
+			"facetSlug": "hardware-look",
+			"facetLabel": "Hardware look",
+			"group": "Technique",
+			"label": "N64",
+			"slug": "n64",
+			"index": 7,
+			"route": "/styles/hardware-look/n64",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "hardware-look/ps2-dreamcast",
+			"facetKey": "hardware",
+			"facetSlug": "hardware-look",
+			"facetLabel": "Hardware look",
+			"group": "Technique",
+			"label": "PS2 / Dreamcast",
+			"slug": "ps2-dreamcast",
+			"index": 8,
+			"route": "/styles/hardware-look/ps2-dreamcast",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "post-processing/dithering-filter",
+			"facetKey": "post",
+			"facetSlug": "post-processing",
+			"facetLabel": "Post-processing",
+			"group": "Technique",
+			"label": "Dithering filter",
+			"slug": "dithering-filter",
+			"index": 0,
+			"route": "/styles/post-processing/dithering-filter",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "post-processing/pixelation-filter",
+			"facetKey": "post",
+			"facetSlug": "post-processing",
+			"facetLabel": "Post-processing",
+			"group": "Technique",
+			"label": "Pixelation filter",
+			"slug": "pixelation-filter",
+			"index": 1,
+			"route": "/styles/post-processing/pixelation-filter",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "post-processing/crt-scanlines",
+			"facetKey": "post",
+			"facetSlug": "post-processing",
+			"facetLabel": "Post-processing",
+			"group": "Technique",
+			"label": "CRT / Scanlines",
+			"slug": "crt-scanlines",
+			"index": 2,
+			"route": "/styles/post-processing/crt-scanlines",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "post-processing/film-grain",
+			"facetKey": "post",
+			"facetSlug": "post-processing",
+			"facetLabel": "Post-processing",
+			"group": "Technique",
+			"label": "Film grain",
+			"slug": "film-grain",
+			"index": 3,
+			"route": "/styles/post-processing/film-grain",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "post-processing/chromatic-aberration",
+			"facetKey": "post",
+			"facetSlug": "post-processing",
+			"facetLabel": "Post-processing",
+			"group": "Technique",
+			"label": "Chromatic aberration",
+			"slug": "chromatic-aberration",
+			"index": 4,
+			"route": "/styles/post-processing/chromatic-aberration",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "post-processing/bloom",
+			"facetKey": "post",
+			"facetSlug": "post-processing",
+			"facetLabel": "Post-processing",
+			"group": "Technique",
+			"label": "Bloom",
+			"slug": "bloom",
+			"index": 5,
+			"route": "/styles/post-processing/bloom",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "post-processing/posterization",
+			"facetKey": "post",
+			"facetSlug": "post-processing",
+			"facetLabel": "Post-processing",
+			"group": "Technique",
+			"label": "Posterization",
+			"slug": "posterization",
+			"index": 6,
+			"route": "/styles/post-processing/posterization",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "post-processing/tilt-shift",
+			"facetKey": "post",
+			"facetSlug": "post-processing",
+			"facetLabel": "Post-processing",
+			"group": "Technique",
+			"label": "Tilt-shift",
+			"slug": "tilt-shift",
+			"index": 7,
+			"route": "/styles/post-processing/tilt-shift",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "post-processing/vhs",
+			"facetKey": "post",
+			"facetSlug": "post-processing",
+			"facetLabel": "Post-processing",
+			"group": "Technique",
+			"label": "VHS",
+			"slug": "vhs",
+			"index": 8,
+			"route": "/styles/post-processing/vhs",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "post-processing/outline-shader",
+			"facetKey": "post",
+			"facetSlug": "post-processing",
+			"facetLabel": "Post-processing",
+			"group": "Technique",
+			"label": "Outline shader",
+			"slug": "outline-shader",
+			"index": 9,
+			"route": "/styles/post-processing/outline-shader",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "post-processing/painterly-filter",
+			"facetKey": "post",
+			"facetSlug": "post-processing",
+			"facetLabel": "Post-processing",
+			"group": "Technique",
+			"label": "Painterly filter",
+			"slug": "painterly-filter",
+			"index": 10,
+			"route": "/styles/post-processing/painterly-filter",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "post-processing/vignette",
+			"facetKey": "post",
+			"facetSlug": "post-processing",
+			"facetLabel": "Post-processing",
+			"group": "Technique",
+			"label": "Vignette",
+			"slug": "vignette",
+			"index": 11,
+			"route": "/styles/post-processing/vignette",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "color/red",
+			"facetKey": "color",
+			"facetSlug": "color",
+			"facetLabel": "Color",
+			"group": "Color",
+			"label": "Red",
+			"slug": "red",
+			"index": 0,
+			"route": "/styles/color/red",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "color/orange",
+			"facetKey": "color",
+			"facetSlug": "color",
+			"facetLabel": "Color",
+			"group": "Color",
+			"label": "Orange",
+			"slug": "orange",
+			"index": 1,
+			"route": "/styles/color/orange",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "color/yellow",
+			"facetKey": "color",
+			"facetSlug": "color",
+			"facetLabel": "Color",
+			"group": "Color",
+			"label": "Yellow",
+			"slug": "yellow",
+			"index": 2,
+			"route": "/styles/color/yellow",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "color/green",
+			"facetKey": "color",
+			"facetSlug": "color",
+			"facetLabel": "Color",
+			"group": "Color",
+			"label": "Green",
+			"slug": "green",
+			"index": 3,
+			"route": "/styles/color/green",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "color/teal",
+			"facetKey": "color",
+			"facetSlug": "color",
+			"facetLabel": "Color",
+			"group": "Color",
+			"label": "Teal",
+			"slug": "teal",
+			"index": 4,
+			"route": "/styles/color/teal",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "color/blue",
+			"facetKey": "color",
+			"facetSlug": "color",
+			"facetLabel": "Color",
+			"group": "Color",
+			"label": "Blue",
+			"slug": "blue",
+			"index": 5,
+			"route": "/styles/color/blue",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "color/purple",
+			"facetKey": "color",
+			"facetSlug": "color",
+			"facetLabel": "Color",
+			"group": "Color",
+			"label": "Purple",
+			"slug": "purple",
+			"index": 6,
+			"route": "/styles/color/purple",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "color/pink",
+			"facetKey": "color",
+			"facetSlug": "color",
+			"facetLabel": "Color",
+			"group": "Color",
+			"label": "Pink",
+			"slug": "pink",
+			"index": 7,
+			"route": "/styles/color/pink",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "color/brown",
+			"facetKey": "color",
+			"facetSlug": "color",
+			"facetLabel": "Color",
+			"group": "Color",
+			"label": "Brown",
+			"slug": "brown",
+			"index": 8,
+			"route": "/styles/color/brown",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "color/black",
+			"facetKey": "color",
+			"facetSlug": "color",
+			"facetLabel": "Color",
+			"group": "Color",
+			"label": "Black",
+			"slug": "black",
+			"index": 9,
+			"route": "/styles/color/black",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "color/gray",
+			"facetKey": "color",
+			"facetSlug": "color",
+			"facetLabel": "Color",
+			"group": "Color",
+			"label": "Gray",
+			"slug": "gray",
+			"index": 10,
+			"route": "/styles/color/gray",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "color/white",
+			"facetKey": "color",
+			"facetSlug": "color",
+			"facetLabel": "Color",
+			"group": "Color",
+			"label": "White",
+			"slug": "white",
+			"index": 11,
+			"route": "/styles/color/white",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "palette/1-bit",
+			"facetKey": "palette",
+			"facetSlug": "palette",
+			"facetLabel": "Palette",
+			"group": "Color",
+			"label": "1-bit",
+			"slug": "1-bit",
+			"index": 0,
+			"route": "/styles/palette/1-bit",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "palette/monochrome",
+			"facetKey": "palette",
+			"facetSlug": "palette",
+			"facetLabel": "Palette",
+			"group": "Color",
+			"label": "Monochrome",
+			"slug": "monochrome",
+			"index": 1,
+			"route": "/styles/palette/monochrome",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "palette/duotone",
+			"facetKey": "palette",
+			"facetSlug": "palette",
+			"facetLabel": "Palette",
+			"group": "Color",
+			"label": "Duotone",
+			"slug": "duotone",
+			"index": 2,
+			"route": "/styles/palette/duotone",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "palette/limited-palette",
+			"facetKey": "palette",
+			"facetSlug": "palette",
+			"facetLabel": "Palette",
+			"group": "Color",
+			"label": "Limited palette",
+			"slug": "limited-palette",
+			"index": 3,
+			"route": "/styles/palette/limited-palette",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "palette/spot-color",
+			"facetKey": "palette",
+			"facetSlug": "palette",
+			"facetLabel": "Palette",
+			"group": "Color",
+			"label": "Spot color",
+			"slug": "spot-color",
+			"index": 4,
+			"route": "/styles/palette/spot-color",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "palette/vibrant",
+			"facetKey": "palette",
+			"facetSlug": "palette",
+			"facetLabel": "Palette",
+			"group": "Color",
+			"label": "Vibrant",
+			"slug": "vibrant",
+			"index": 5,
+			"route": "/styles/palette/vibrant",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "palette/muted",
+			"facetKey": "palette",
+			"facetSlug": "palette",
+			"facetLabel": "Palette",
+			"group": "Color",
+			"label": "Muted",
+			"slug": "muted",
+			"index": 6,
+			"route": "/styles/palette/muted",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "palette/pastel",
+			"facetKey": "palette",
+			"facetSlug": "palette",
+			"facetLabel": "Palette",
+			"group": "Color",
+			"label": "Pastel",
+			"slug": "pastel",
+			"index": 7,
+			"route": "/styles/palette/pastel",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "palette/neon",
+			"facetKey": "palette",
+			"facetSlug": "palette",
+			"facetLabel": "Palette",
+			"group": "Color",
+			"label": "Neon",
+			"slug": "neon",
+			"index": 8,
+			"route": "/styles/palette/neon",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "palette/dark",
+			"facetKey": "palette",
+			"facetSlug": "palette",
+			"facetLabel": "Palette",
+			"group": "Color",
+			"label": "Dark",
+			"slug": "dark",
+			"index": 9,
+			"route": "/styles/palette/dark",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "palette/warm",
+			"facetKey": "palette",
+			"facetSlug": "palette",
+			"facetLabel": "Palette",
+			"group": "Color",
+			"label": "Warm",
+			"slug": "warm",
+			"index": 10,
+			"route": "/styles/palette/warm",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "palette/cool",
+			"facetKey": "palette",
+			"facetSlug": "palette",
+			"facetLabel": "Palette",
+			"group": "Color",
+			"label": "Cool",
+			"slug": "cool",
+			"index": 11,
+			"route": "/styles/palette/cool",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "imitated-medium/watercolor",
+			"facetKey": "medium",
+			"facetSlug": "imitated-medium",
+			"facetLabel": "Imitated medium",
+			"group": "Influence",
+			"label": "Watercolor",
+			"slug": "watercolor",
+			"index": 0,
+			"route": "/styles/imitated-medium/watercolor",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "imitated-medium/ink-sumi-e",
+			"facetKey": "medium",
+			"facetSlug": "imitated-medium",
+			"facetLabel": "Imitated medium",
+			"group": "Influence",
+			"label": "Ink / Sumi-e",
+			"slug": "ink-sumi-e",
+			"index": 1,
+			"route": "/styles/imitated-medium/ink-sumi-e",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "imitated-medium/pencil",
+			"facetKey": "medium",
+			"facetSlug": "imitated-medium",
+			"facetLabel": "Imitated medium",
+			"group": "Influence",
+			"label": "Pencil",
+			"slug": "pencil",
+			"index": 2,
+			"route": "/styles/imitated-medium/pencil",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "imitated-medium/crayon-pastel",
+			"facetKey": "medium",
+			"facetSlug": "imitated-medium",
+			"facetLabel": "Imitated medium",
+			"group": "Influence",
+			"label": "Crayon / Pastel",
+			"slug": "crayon-pastel",
+			"index": 3,
+			"route": "/styles/imitated-medium/crayon-pastel",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "imitated-medium/oil-gouache",
+			"facetKey": "medium",
+			"facetSlug": "imitated-medium",
+			"facetLabel": "Imitated medium",
+			"group": "Influence",
+			"label": "Oil / Gouache",
+			"slug": "oil-gouache",
+			"index": 4,
+			"route": "/styles/imitated-medium/oil-gouache",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "imitated-medium/woodcut-print",
+			"facetKey": "medium",
+			"facetSlug": "imitated-medium",
+			"facetLabel": "Imitated medium",
+			"group": "Influence",
+			"label": "Woodcut / Print",
+			"slug": "woodcut-print",
+			"index": 5,
+			"route": "/styles/imitated-medium/woodcut-print",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "imitated-medium/paper-cutout",
+			"facetKey": "medium",
+			"facetSlug": "imitated-medium",
+			"facetLabel": "Imitated medium",
+			"group": "Influence",
+			"label": "Paper cutout",
+			"slug": "paper-cutout",
+			"index": 6,
+			"route": "/styles/imitated-medium/paper-cutout",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "imitated-medium/clay",
+			"facetKey": "medium",
+			"facetSlug": "imitated-medium",
+			"facetLabel": "Imitated medium",
+			"group": "Influence",
+			"label": "Clay",
+			"slug": "clay",
+			"index": 7,
+			"route": "/styles/imitated-medium/clay",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "imitated-medium/felt-yarn",
+			"facetKey": "medium",
+			"facetSlug": "imitated-medium",
+			"facetLabel": "Imitated medium",
+			"group": "Influence",
+			"label": "Felt / Yarn",
+			"slug": "felt-yarn",
+			"index": 8,
+			"route": "/styles/imitated-medium/felt-yarn",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "imitated-medium/comic-book",
+			"facetKey": "medium",
+			"facetSlug": "imitated-medium",
+			"facetLabel": "Imitated medium",
+			"group": "Influence",
+			"label": "Comic book",
+			"slug": "comic-book",
+			"index": 9,
+			"route": "/styles/imitated-medium/comic-book",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "imitated-medium/storybook",
+			"facetKey": "medium",
+			"facetSlug": "imitated-medium",
+			"facetLabel": "Imitated medium",
+			"group": "Influence",
+			"label": "Storybook",
+			"slug": "storybook",
+			"index": 10,
+			"route": "/styles/imitated-medium/storybook",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "imitated-medium/blueprint",
+			"facetKey": "medium",
+			"facetSlug": "imitated-medium",
+			"facetLabel": "Imitated medium",
+			"group": "Influence",
+			"label": "Blueprint",
+			"slug": "blueprint",
+			"index": 11,
+			"route": "/styles/imitated-medium/blueprint",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/anime",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Anime",
+			"slug": "anime",
+			"index": 0,
+			"route": "/styles/art-movement/anime",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/western-cartoon",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Western cartoon",
+			"slug": "western-cartoon",
+			"index": 1,
+			"route": "/styles/art-movement/western-cartoon",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/rubber-hose",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Rubber hose",
+			"slug": "rubber-hose",
+			"index": 2,
+			"route": "/styles/art-movement/rubber-hose",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/ligne-claire",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Ligne claire",
+			"slug": "ligne-claire",
+			"index": 3,
+			"route": "/styles/art-movement/ligne-claire",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/ukiyo-e",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Ukiyo-e",
+			"slug": "ukiyo-e",
+			"index": 4,
+			"route": "/styles/art-movement/ukiyo-e",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/art-deco",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Art Deco",
+			"slug": "art-deco",
+			"index": 5,
+			"route": "/styles/art-movement/art-deco",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/art-nouveau",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Art Nouveau",
+			"slug": "art-nouveau",
+			"index": 6,
+			"route": "/styles/art-movement/art-nouveau",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/gothic",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Gothic",
+			"slug": "gothic",
+			"index": 7,
+			"route": "/styles/art-movement/gothic",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/film-noir",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Film noir",
+			"slug": "film-noir",
+			"index": 8,
+			"route": "/styles/art-movement/film-noir",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/surrealism",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Surrealism",
+			"slug": "surrealism",
+			"index": 9,
+			"route": "/styles/art-movement/surrealism",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/expressionism",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Expressionism",
+			"slug": "expressionism",
+			"index": 10,
+			"route": "/styles/art-movement/expressionism",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/bauhaus-de-stijl",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Bauhaus / De Stijl",
+			"slug": "bauhaus-de-stijl",
+			"index": 11,
+			"route": "/styles/art-movement/bauhaus-de-stijl",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/constructivism",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Constructivism",
+			"slug": "constructivism",
+			"index": 12,
+			"route": "/styles/art-movement/constructivism",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/brutalism",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Brutalism",
+			"slug": "brutalism",
+			"index": 13,
+			"route": "/styles/art-movement/brutalism",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/pop-art",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Pop art",
+			"slug": "pop-art",
+			"index": 14,
+			"route": "/styles/art-movement/pop-art",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/poster-art",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Poster art",
+			"slug": "poster-art",
+			"index": 15,
+			"route": "/styles/art-movement/poster-art",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/memphis",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Memphis",
+			"slug": "memphis",
+			"index": 16,
+			"route": "/styles/art-movement/memphis",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/y2k",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Y2K",
+			"slug": "y2k",
+			"index": 17,
+			"route": "/styles/art-movement/y2k",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/vaporwave-synthwave",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Vaporwave / Synthwave",
+			"slug": "vaporwave-synthwave",
+			"index": 18,
+			"route": "/styles/art-movement/vaporwave-synthwave",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/cyberpunk",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Cyberpunk",
+			"slug": "cyberpunk",
+			"index": 19,
+			"route": "/styles/art-movement/cyberpunk",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/steampunk",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Steampunk",
+			"slug": "steampunk",
+			"index": 20,
+			"route": "/styles/art-movement/steampunk",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "art-movement/cosmic-horror",
+			"facetKey": "movement",
+			"facetSlug": "art-movement",
+			"facetLabel": "Art movement",
+			"group": "Influence",
+			"label": "Cosmic horror",
+			"slug": "cosmic-horror",
+			"index": 21,
+			"route": "/styles/art-movement/cosmic-horror",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "proportions/chibi",
+			"facetKey": "proportions",
+			"facetSlug": "proportions",
+			"facetLabel": "Proportions",
+			"group": "Influence",
+			"label": "Chibi",
+			"slug": "chibi",
+			"index": 0,
+			"route": "/styles/proportions/chibi",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "proportions/realistic",
+			"facetKey": "proportions",
+			"facetSlug": "proportions",
+			"facetLabel": "Proportions",
+			"group": "Influence",
+			"label": "Realistic",
+			"slug": "realistic",
+			"index": 1,
+			"route": "/styles/proportions/realistic",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "proportions/exaggerated",
+			"facetKey": "proportions",
+			"facetSlug": "proportions",
+			"facetLabel": "Proportions",
+			"group": "Influence",
+			"label": "Exaggerated",
+			"slug": "exaggerated",
+			"index": 2,
+			"route": "/styles/proportions/exaggerated",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "proportions/cute",
+			"facetKey": "proportions",
+			"facetSlug": "proportions",
+			"facetLabel": "Proportions",
+			"group": "Influence",
+			"label": "Cute",
+			"slug": "cute",
+			"index": 3,
+			"route": "/styles/proportions/cute",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "proportions/grotesque",
+			"facetKey": "proportions",
+			"facetSlug": "proportions",
+			"facetLabel": "Proportions",
+			"group": "Influence",
+			"label": "Grotesque",
+			"slug": "grotesque",
+			"index": 4,
+			"route": "/styles/proportions/grotesque",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "proportions/faceless",
+			"facetKey": "proportions",
+			"facetSlug": "proportions",
+			"facetLabel": "Proportions",
+			"group": "Influence",
+			"label": "Faceless",
+			"slug": "faceless",
+			"index": 5,
+			"route": "/styles/proportions/faceless",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "perspective/side-scrolling",
+			"facetKey": "perspective",
+			"facetSlug": "perspective",
+			"facetLabel": "Perspective",
+			"group": "Game",
+			"label": "Side-scrolling",
+			"slug": "side-scrolling",
+			"index": 0,
+			"route": "/styles/perspective/side-scrolling",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "perspective/top-down",
+			"facetKey": "perspective",
+			"facetSlug": "perspective",
+			"facetLabel": "Perspective",
+			"group": "Game",
+			"label": "Top-down",
+			"slug": "top-down",
+			"index": 1,
+			"route": "/styles/perspective/top-down",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "perspective/three-quarter",
+			"facetKey": "perspective",
+			"facetSlug": "perspective",
+			"facetLabel": "Perspective",
+			"group": "Game",
+			"label": "Three-quarter",
+			"slug": "three-quarter",
+			"index": 2,
+			"route": "/styles/perspective/three-quarter",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "perspective/isometric",
+			"facetKey": "perspective",
+			"facetSlug": "perspective",
+			"facetLabel": "Perspective",
+			"group": "Game",
+			"label": "Isometric",
+			"slug": "isometric",
+			"index": 3,
+			"route": "/styles/perspective/isometric",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "perspective/third-person",
+			"facetKey": "perspective",
+			"facetSlug": "perspective",
+			"facetLabel": "Perspective",
+			"group": "Game",
+			"label": "Third-person",
+			"slug": "third-person",
+			"index": 4,
+			"route": "/styles/perspective/third-person",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "perspective/first-person",
+			"facetKey": "perspective",
+			"facetSlug": "perspective",
+			"facetLabel": "Perspective",
+			"group": "Game",
+			"label": "First-person",
+			"slug": "first-person",
+			"index": 5,
+			"route": "/styles/perspective/first-person",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "perspective/fixed-camera",
+			"facetKey": "perspective",
+			"facetSlug": "perspective",
+			"facetLabel": "Perspective",
+			"group": "Game",
+			"label": "Fixed camera",
+			"slug": "fixed-camera",
+			"index": 6,
+			"route": "/styles/perspective/fixed-camera",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "era/1980s",
+			"facetKey": "era",
+			"facetSlug": "era",
+			"facetLabel": "Era",
+			"group": "Game",
+			"label": "1980s",
+			"slug": "1980s",
+			"index": 0,
+			"route": "/styles/era/1980s",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "era/1990s",
+			"facetKey": "era",
+			"facetSlug": "era",
+			"facetLabel": "Era",
+			"group": "Game",
+			"label": "1990s",
+			"slug": "1990s",
+			"index": 1,
+			"route": "/styles/era/1990s",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "era/2000s",
+			"facetKey": "era",
+			"facetSlug": "era",
+			"facetLabel": "Era",
+			"group": "Game",
+			"label": "2000s",
+			"slug": "2000s",
+			"index": 2,
+			"route": "/styles/era/2000s",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "era/2010s",
+			"facetKey": "era",
+			"facetSlug": "era",
+			"facetLabel": "Era",
+			"group": "Game",
+			"label": "2010s",
+			"slug": "2010s",
+			"index": 3,
+			"route": "/styles/era/2010s",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "era/2020s",
+			"facetKey": "era",
+			"facetSlug": "era",
+			"facetLabel": "Era",
+			"group": "Game",
+			"label": "2020s",
+			"slug": "2020s",
+			"index": 4,
+			"route": "/styles/era/2020s",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/action",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Action",
+			"slug": "action",
+			"index": 0,
+			"route": "/styles/genre/action",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/adventure",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Adventure",
+			"slug": "adventure",
+			"index": 1,
+			"route": "/styles/genre/adventure",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/rpg",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "RPG",
+			"slug": "rpg",
+			"index": 2,
+			"route": "/styles/genre/rpg",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/platformer",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Platformer",
+			"slug": "platformer",
+			"index": 3,
+			"route": "/styles/genre/platformer",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/roguelike",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Roguelike",
+			"slug": "roguelike",
+			"index": 4,
+			"route": "/styles/genre/roguelike",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/puzzle",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Puzzle",
+			"slug": "puzzle",
+			"index": 5,
+			"route": "/styles/genre/puzzle",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/strategy",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Strategy",
+			"slug": "strategy",
+			"index": 6,
+			"route": "/styles/genre/strategy",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/simulation",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Simulation",
+			"slug": "simulation",
+			"index": 7,
+			"route": "/styles/genre/simulation",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/shooter",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Shooter",
+			"slug": "shooter",
+			"index": 8,
+			"route": "/styles/genre/shooter",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/fighting",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Fighting",
+			"slug": "fighting",
+			"index": 9,
+			"route": "/styles/genre/fighting",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/racing",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Racing",
+			"slug": "racing",
+			"index": 10,
+			"route": "/styles/genre/racing",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/sports",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Sports",
+			"slug": "sports",
+			"index": 11,
+			"route": "/styles/genre/sports",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/horror",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Horror",
+			"slug": "horror",
+			"index": 12,
+			"route": "/styles/genre/horror",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/visual-novel",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Visual novel",
+			"slug": "visual-novel",
+			"index": 13,
+			"route": "/styles/genre/visual-novel",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "genre/rhythm",
+			"facetKey": "genre",
+			"facetSlug": "genre",
+			"facetLabel": "Genre",
+			"group": "Game",
+			"label": "Rhythm",
+			"slug": "rhythm",
+			"index": 14,
+			"route": "/styles/genre/rhythm",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "platform/pc",
+			"facetKey": "platform",
+			"facetSlug": "platform",
+			"facetLabel": "Platform",
+			"group": "Game",
+			"label": "PC",
+			"slug": "pc",
+			"index": 0,
+			"route": "/styles/platform/pc",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "platform/console",
+			"facetKey": "platform",
+			"facetSlug": "platform",
+			"facetLabel": "Platform",
+			"group": "Game",
+			"label": "Console",
+			"slug": "console",
+			"index": 1,
+			"route": "/styles/platform/console",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "platform/mobile",
+			"facetKey": "platform",
+			"facetSlug": "platform",
+			"facetLabel": "Platform",
+			"group": "Game",
+			"label": "Mobile",
+			"slug": "mobile",
+			"index": 2,
+			"route": "/styles/platform/mobile",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "platform/arcade",
+			"facetKey": "platform",
+			"facetSlug": "platform",
+			"facetLabel": "Platform",
+			"group": "Game",
+			"label": "Arcade",
+			"slug": "arcade",
+			"index": 3,
+			"route": "/styles/platform/arcade",
+			"siteUse": "unused",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shot-type/environment",
+			"facetKey": "shot",
+			"facetSlug": "shot-type",
+			"facetLabel": "Shot type",
+			"group": "Screenshot",
+			"label": "Environment",
+			"slug": "environment",
+			"index": 0,
+			"route": "/styles/shot-type/environment",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shot-type/character",
+			"facetKey": "shot",
+			"facetSlug": "shot-type",
+			"facetLabel": "Shot type",
+			"group": "Screenshot",
+			"label": "Character",
+			"slug": "character",
+			"index": 1,
+			"route": "/styles/shot-type/character",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shot-type/combat",
+			"facetKey": "shot",
+			"facetSlug": "shot-type",
+			"facetLabel": "Shot type",
+			"group": "Screenshot",
+			"label": "Combat",
+			"slug": "combat",
+			"index": 2,
+			"route": "/styles/shot-type/combat",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shot-type/ui-menu",
+			"facetKey": "shot",
+			"facetSlug": "shot-type",
+			"facetLabel": "Shot type",
+			"group": "Screenshot",
+			"label": "UI / Menu",
+			"slug": "ui-menu",
+			"index": 3,
+			"route": "/styles/shot-type/ui-menu",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		},
+		{
+			"id": "shot-type/cutscene",
+			"facetKey": "shot",
+			"facetSlug": "shot-type",
+			"facetLabel": "Shot type",
+			"group": "Screenshot",
+			"label": "Cutscene",
+			"slug": "cutscene",
+			"index": 4,
+			"route": "/styles/shot-type/cutscene",
+			"siteUse": "site-used",
+			"trigger": {
+				"contract": "unknown",
+				"words": []
+			}
+		}
+	]
+}

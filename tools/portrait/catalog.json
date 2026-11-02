@@ -1,0 +1,113 @@
+{
+  "readOnly": true,
+  "mode": "prebaked-3d-avatar",
+  "assets": [],
+  "jobs": [
+    {
+      "id": "avatar-female-base",
+      "status": "PASS",
+      "pngUrl": "./portraits/female-base.png",
+      "sourceName": "여성 3D 아바타 · 본체만",
+      "width": 1145,
+      "height": 1374,
+      "outputSha256": "75319b683dbaf28834db1b58f25b415c44f6240fec7648d617bf794df7c9d4dd",
+      "slots": [],
+      "pose": "arp-arms-down-80",
+      "framing": "bust"
+    },
+    {
+      "id": "avatar-female-clothes",
+      "status": "PASS",
+      "pngUrl": "./portraits/female-clothes.png",
+      "sourceName": "여성 3D 아바타 · 복장 · clothes=female-outfit-01",
+      "width": 1145,
+      "height": 1374,
+      "outputSha256": "67159de4bd8b4271d526bd69edf3c6fc47af9b9a1a44e22bab300915316071ba",
+      "slots": [
+        {
+          "slot": "clothes",
+          "id": "female-outfit-01",
+          "sha256": "289373a4c20036f8060888bd3c9f676781423f58fd97f8a6154a3c0dd66fbf26"
+        }
+      ],
+      "pose": "arp-arms-down-80",
+      "framing": "bust"
+    },
+    {
+      "id": "avatar-female-clothes-hair",
+      "status": "PASS",
+      "pngUrl": "./portraits/female-clothes-hair.png",
+      "sourceName": "여성 3D 아바타 · 복장 + 헤어 · clothes=female-outfit-01, hair=female-hair-03",
+      "width": 1145,
+      "height": 1374,
+      "outputSha256": "c1648b93d145b390a26e98eab9fc5d13724784ebc0d37abcae3f2d6e906f661b",
+      "slots": [
+        {
+          "slot": "clothes",
+          "id": "female-outfit-01",
+          "sha256": "289373a4c20036f8060888bd3c9f676781423f58fd97f8a6154a3c0dd66fbf26"
+        },
+        {
+          "slot": "hair",
+          "id": "female-hair-03",
+          "sha256": "26b239c0082891d110be6d54a9dc8ab64bf4278a7a46c16aa44e2b5631ca770d"
+        }
+      ],
+      "pose": "arp-arms-down-80",
+      "framing": "bust"
+    },
+    {
+      "id": "avatar-male-base",
+      "status": "PASS",
+      "pngUrl": "./portraits/male-base.png",
+      "sourceName": "남성 3D 아바타 · 본체만",
+      "width": 1145,
+      "height": 1374,
+      "outputSha256": "622f1a60b73448d2a85046ee3a3451570952894303c2820a0d0a03a9acd66a7b",
+      "slots": [],
+      "pose": "arp-arms-down-80",
+      "framing": "bust"
+    },
+    {
+      "id": "avatar-male-clothes",
+      "status": "PASS",
+      "pngUrl": "./portraits/male-clothes.png",
+      "sourceName": "남성 3D 아바타 · 복장 · clothes=male-outfit-01",
+      "width": 1145,
+      "height": 1374,
+      "outputSha256": "875c01f42703b151c718227f223d2518889f8f2c41799371a567c75f6bde2ad1",
+      "slots": [
+        {
+          "slot": "clothes",
+          "id": "male-outfit-01",
+          "sha256": "8d69c9705e827d77e4e96d65583ba5a73373731e03fcefdfb5e5da1f123e34f2"
+        }
+      ],
+      "pose": "arp-arms-down-80",
+      "framing": "bust"
+    },
+    {
+      "id": "avatar-male-clothes-hair",
+      "status": "PASS",
+      "pngUrl": "./portraits/male-clothes-hair.png",
+      "sourceName": "남성 3D 아바타 · 복장 + 헤어 · clothes=male-outfit-01, hair=male-hair-01",
+      "width": 1145,
+      "height": 1374,
+      "outputSha256": "fbe6ad82a862a586890c4a5cdf152c7d7c9d701e08449ad68e27d33c1b63263e",
+      "slots": [
+        {
+          "slot": "clothes",
+          "id": "male-outfit-01",
+          "sha256": "8d69c9705e827d77e4e96d65583ba5a73373731e03fcefdfb5e5da1f123e34f2"
+        },
+        {
+          "slot": "hair",
+          "id": "male-hair-01",
+          "sha256": "e30b71764624c8d9e42d984e36974c14e58e31f06d61a7505fb6d294e3a0354a"
+        }
+      ],
+      "pose": "arp-arms-down-80",
+      "framing": "bust"
+    }
+  ]
+}

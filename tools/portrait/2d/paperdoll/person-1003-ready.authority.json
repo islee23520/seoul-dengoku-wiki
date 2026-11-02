@@ -1,0 +1,52 @@
+{
+  "schema": "paperdoll-root-entry-authority.v1",
+  "verdict": "APPROVED_EXACT_POC_ENTRY_SETTINGS",
+  "personId": "person-1003",
+  "sourceSha256": "7b7f311b11ffcea5f9e8e3a257a8745093ba2b322bd8e4aa3892c86bd5caeed8",
+  "manifest": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/person-1003-delivery-r1/manifest.json",
+    "sha256": "c21b069bef99932eebe3c8216b7e321bd1727e6308a27c9357606d7611b5911d"
+  },
+  "artApproval": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku/.omo/evidence/portrait-paperdoll-poc-20261021/1003-delivery-r1-root-art-approval.json",
+    "sha256": "5514f94db9a94f4a30d16fed9c90e5216c85eef94363e3a53f777be2a2c56fd1"
+  },
+  "movementStage": {
+    "start": {
+      "x": -2,
+      "y": -2,
+      "z": 0
+    },
+    "end": {
+      "x": 2,
+      "y": -2,
+      "z": 0
+    },
+    "sampleOffset": {
+      "x": 0,
+      "y": 2,
+      "z": 0
+    },
+    "cameraPosition": {
+      "x": 0,
+      "y": 0,
+      "z": -10
+    },
+    "portraitSize": {
+      "x": 1.4647887323943662,
+      "y": 2
+    },
+    "speed": 1,
+    "orthographicSize": 4
+  },
+  "normalizationScale": {
+    "x": 1,
+    "y": 1
+  },
+  "normalizationOffset": {
+    "x": 0,
+    "y": 0
+  },
+  "authority": "Root explicitly approved exact 1003 manifest c21b069bef99932eebe3c8216b7e321bd1727e6308a27c9357606d7611b5911d, actual viewed state/opacity evidence and same approved 1009 POC settings in latest instructions; engineering joins to unchanged bytes authorized.",
+  "scope": "Final POC art and exact settings, not Unity import/runtime/framing QA"
+}

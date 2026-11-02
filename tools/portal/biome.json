@@ -1,0 +1,14 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.5.15/schema.json",
+	"files": {
+		"includes": [
+			"src/**",
+			"test/**",
+			"public/**",
+			"package.json",
+			"tsconfig.json",
+			"biome.json"
+		]
+	},
+	"linter": { "enabled": true, "rules": { "preset": "recommended" } }
+}

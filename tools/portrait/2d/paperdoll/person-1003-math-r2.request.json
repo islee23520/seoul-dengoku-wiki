@@ -1,0 +1,38 @@
+{
+  "schema": "paperdoll-masked-edit.v1",
+  "layout": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/geometry-math-edit-r2/mathematical-edit-layout.json",
+    "sha256": "77d45ddbfcf8416465c7092894843f6550cae3acbc477585289d87a706db0f7a"
+  },
+  "editLayoutReview": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku/.omo/evidence/portrait-paperdoll-poc-20261021/person-1003-r2-edit-layout-review.json",
+    "sha256": null
+  },
+  "personId": "person-1003",
+  "characterId": "K1003",
+  "source": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools/ART-ASSETS/portrait-references/wiki-people/images/person-1003.png",
+    "sha256": "7b7f311b11ffcea5f9e8e3a257a8745093ba2b322bd8e4aa3892c86bd5caeed8"
+  },
+  "registry": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools/ART-ASSETS/portrait-references/wiki-people/manifest.json",
+    "sha256": "01ae1079662dd44bee89522a1cee3d8f4bdd6caff1712101c6908697724d30c3"
+  },
+  "master": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/geometry-math-edit-r2/registered-master-native.png",
+    "sha256": "07206fb08d9b98cf6aaa4e64b1df45421d2f6770f977ae5eaf78103bf54f7926"
+  },
+  "mask": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/geometry-math-edit-r2/api-edit-mask-native.png",
+    "sha256": "05f47249504c558919d92af4d3e23e6477330cf68bbdf84385f2980b4539b6ae"
+  },
+  "maskSemantics": "alpha-zero-editable-first-image",
+  "stage": "anatomy-master",
+  "prompt": "Edit the supplied existing adult portrait, never invent a new person. Reference 1 supplies drawing technique only; reference 2 supplies framing only; reference 3 supplies the same authorized recipient appearance only. Preserve facial identity, age, skin tone, hair identity, proportions, pose, linework and rendering technique. Keep the exact common untrimmed canvas, scale, origin and anchors. Actual transparent alpha outside each part; opaque interiors and clean antialiased edges. No backdrop, checkerboard, labels, borders, shadow, glow, extra faces, gore, blood or wounds. Bare adult upper torso is nonsexual anatomical layering only; no genitals or sexual presentation. Do not add clothing to bare body layers.\nReference image 1 is the registered editable master, not a new identity. Reference image 2 is the immutable same-recipient identity/style reference only. Apply the actual uploaded mask: alpha zero is editable and alpha 255 is protected. Preserve the registered face, eyes, jaw and hair outside the edit region exactly. Reconstruct one coherent bare unclothed adult upper torso and neck bridge beneath the protected jaw; no shirt, jacket, vest, undershirt, straps or equipment. Keep the measured small torso silhouette and existing target anchors. Erase displaced garment pixels outside that silhouette to actual transparency. Hidden anatomy and neck socket are authored in this edit, not recovered by stretching. Do not warp or independently enlarge the head or torso to force a perfect landmark fit. Preserve protected pixels and transparent background. No gore, injury, internal anatomy or sexual presentation.",
+  "template": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/TOOL/avatar-gen/portrait/2d/paperdoll/templates.json",
+    "sha256": "03880bacd2c5c2d06859ba15aeb30fb035deda40f143b0d3ddb679caf75e3962"
+  },
+  "output": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/source/person-1003-math-anatomy-r2.png",
+  "size": "832x1136"
+}

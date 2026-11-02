@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "characterId": "iyen",
+  "name": "이연",
+  "sourceStatus": "authored-draft",
+  "sourceRefs": ["https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Cast-Unaffiliated.json#인물-이연-list1", "iyen-virtual-doll/characterworks/iyen/atomic_assets/source_refs/iyen_full_turnaround_reference.png", "iyen-virtual-doll/characterworks/iyen/reference_boards/iyen_spine_reference_04_parts_collage.png"],
+  "lookId": "iyen-opening-draft-1",
+  "mood": "calm",
+  "occupation": "courier",
+  "appearance": {
+    "ageCategory": "adult", "gender": "여성",
+    "face": { "value": "생체 특징이 있는 합성 휴머노이드", "status": "authored-draft", "source": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Cast-Unaffiliated.json#인물-이연-list1" },
+    "hair": { "value": "긴 포도주색 머리", "status": "authored-draft", "source": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Cast-Unaffiliated.json#인물-이연-list1" },
+    "eyes": { "value": "루비색 눈", "status": "authored-draft", "source": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Cast-Unaffiliated.json#인물-이연-list1" },
+    "skin": { "value": "창백한 피부", "status": "authored-draft", "source": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Cast-Unaffiliated.json#인물-이연-list1" },
+    "build": { "value": "자연 비율의 성인 체형", "status": "art-proposal", "source": "GDD/canon/locales/ko-KR/art/character-art-direction.json" }
+  },
+  "outfit": {
+    "id": "iyen-gothic-draft-1",
+    "headwear": { "value": "원본 위치의 크기가 다른 붉은 기계식 원판 두 개와 아래로 늘어진 술 장식. 원형 귀걸이와 붉은 보석 유지", "status": "art-proposal", "source": "owner-designated iyen_full_turnaround_reference.png and parts_collage.png" },
+    "upper": { "value": "확정 원본의 검정·포도주색 고딕 복장: 열린 어깨, 원래 가슴 노출 범위와 레이스 경계, 목 중심 원형 장식과 연결 스트랩, 코르셋형 몸판, 팔 위 밴드와 분리된 퍼프 소매·손목 장식. 가림 패널·스카프·추가 옷깃을 넣지 않음", "status": "art-proposal", "source": "owner-designated iyen_full_turnaround_reference.png" },
+    "lower": { "value": "원본 허리 중심 원형 장식과 포도주색 벨트·늘어진 장식끈, 짧은 앞부분과 비대칭 긴 검정 치맛자락·포도주색 안감, 허벅지 레이스와 얇은 검정 스타킹. 바지로 교체하거나 원래 보이는 피부를 가리지 않음", "status": "art-proposal", "source": "owner-designated iyen_full_turnaround_reference.png" },
+    "footwear": { "value": "원본의 검정 높은 굽 발목 부츠: 뾰족한 앞코, 가는 높은 굽, 붉은 연결 장식·버클 배치 유지", "status": "art-proposal", "source": "owner-designated iyen_full_turnaround_reference.png" },
+    "marks": { "value": null, "status": "unknown", "source": null }
+  },
+  "equipment": { "equipped": [], "narrativeOnly": [] },
+  "pose": { "portrait": "어깨를 정면에 두고 고개만 살짝 돌린 차분한 정지 포즈", "full-body": "양발로 선 중립 대기, 양손과 신발을 가리지 않는 자세" }
+}

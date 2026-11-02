@@ -1,0 +1,56 @@
+{
+  "instanceId": "uniforge3d",
+  "evidenceBasis": "task-1 corrected baseline and inventory, 2026-10-23",
+  "recoveryReady": false,
+  "rootRefs": {
+    "source": "uniforge3d.source",
+    "runtime": "uniforge3d.runtime",
+    "user": "uniforge3d.user",
+    "nodes": "uniforge3d.nodes",
+    "models": "uniforge3d.models",
+    "input": "uniforge3d.input",
+    "output": "uniforge3d.output",
+    "backup": "uniforge3d.backup"
+  },
+  "source": {
+    "observedCommit": null,
+    "approvedRunningCommit": null,
+    "dirtyBytes": "unresolved",
+    "declaration": "uniforge3d.source.json"
+  },
+  "runtime": {
+    "observed": null,
+    "dependencyLock": "unresolved",
+    "pipFreeze": "unresolved",
+    "nativeBuildPins": "unresolved",
+    "requiredIsolation": "separate WSL Linux filesystem environment/build/cache, no Windows venv sharing"
+  },
+  "nodes": {
+    "observedEntries": [],
+    "completeness": "unresolved"
+  },
+  "workflows": {
+    "uiJson": "private-backup-required",
+    "apiGraph": "unresolved",
+    "nodeDependencies": "unresolved"
+  },
+  "models": {
+    "verification": "unresolved",
+    "pins": [],
+    "userCreatedBytesBackupRequired": true
+  },
+  "data": {
+    "consistentBackup": "not-performed",
+    "preservePriorDbBkp": true,
+    "inputsOutputsAndReferencedAssets": "private-backup-required"
+  },
+  "restore": {
+    "status": "not-run",
+    "procedure": "../../../../seoul-dengoku-tools/TOOL/docs/Local-AI-Persistence-Policy.md"
+  },
+  "unresolved": [
+    "consume source acquisition receipt from owning lane",
+    "independent runtime and complete model/access pins",
+    "actual inference and artifact validation not run"
+  ]
+}

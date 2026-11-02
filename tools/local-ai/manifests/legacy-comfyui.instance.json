@@ -1,0 +1,136 @@
+{
+  "instanceId": "legacy-comfyui",
+  "evidenceBasis": "task-1 corrected baseline and inventory, 2026-10-23",
+  "recoveryReady": false,
+  "rootRefs": {
+    "source": "legacy-comfyui.source",
+    "runtime": "legacy-comfyui.runtime",
+    "user": "legacy-comfyui.user",
+    "nodes": "legacy-comfyui.nodes",
+    "models": "legacy-comfyui.models",
+    "input": "legacy-comfyui.input",
+    "output": "legacy-comfyui.output",
+    "backup": "legacy-comfyui.backup"
+  },
+  "source": {
+    "observedCommit": null,
+    "approvedRunningCommit": null,
+    "dirtyBytes": "unresolved",
+    "reference": {
+      "url": "https://github.com/islee23520/ComfyUI",
+      "branch": "master",
+      "commit": null
+    },
+    "gitMetadata": "absent-at-probed-roots"
+  },
+  "runtime": {
+    "observed": {
+      "basis": "pyvenv.cfg only, not running interpreter",
+      "python": "3.12.11"
+    },
+    "dependencyLock": "unresolved",
+    "pipFreeze": "unresolved",
+    "nativeBuildPins": "unresolved"
+  },
+  "nodes": {
+    "observedEntries": [
+      {
+        "name": "ComfyUI-GeometryPack",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      },
+      {
+        "name": "ComfyUI-Manager",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      },
+      {
+        "name": "ComfyUI-SAM3DBody",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      },
+      {
+        "name": "ComfyUI-SAM3DObjects",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      },
+      {
+        "name": "ComfyUI-See-through",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      },
+      {
+        "name": "ComfyUI-TRELLIS2",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      },
+      {
+        "name": "linalab_artwork_nodes",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      },
+      {
+        "name": "linalab_artwork_nodes_backup_20260630_062706",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      },
+      {
+        "name": "linalab_artwork_nodes.tgz",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      }
+    ],
+    "completeness": "unresolved"
+  },
+  "workflows": {
+    "uiJson": "private-backup-required",
+    "apiGraph": "unresolved",
+    "nodeDependencies": "unresolved"
+  },
+  "models": {
+    "verification": "unresolved",
+    "pins": [],
+    "userCreatedBytesBackupRequired": true
+  },
+  "data": {
+    "consistentBackup": "not-performed",
+    "preservePriorDbBkp": true,
+    "inputsOutputsAndReferencedAssets": "private-backup-required",
+    "observedDbSidecars": [
+      "comfyui.db",
+      "comfyui.db.bkp",
+      "comfyui.db.lock"
+    ]
+  },
+  "restore": {
+    "status": "not-run",
+    "procedure": "../../../../seoul-dengoku-tools/TOOL/docs/Local-AI-Persistence-Policy.md"
+  },
+  "unresolved": [
+    "source dirty bytes not included in task1 portal-only snapshot",
+    "per-node revision and enabled flags",
+    "complete dependency lock and native artifacts",
+    "workflow API graph and dependencies",
+    "model file measurements and license/access",
+    "consistent DB/user/output snapshot",
+    "source provenance and launcher; active process not identified"
+  ]
+}

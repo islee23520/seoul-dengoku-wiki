@@ -1,0 +1,17 @@
+{
+  "schema": "paperdoll-root-source-art-approval.v1",
+  "status": "ROOT_APPROVED_EXACT_POC_SOURCE_ART_BUNDLE",
+  "personId": "person-1004",
+  "characterId": "K1004",
+  "manifest": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/person-1004/delivery-candidate-r1/manifest.json",
+    "sha256": "8854678beaaeb297342bed5a08dfd2347d1324f3077e2793fcaf3c99f6518ee1"
+  },
+  "reviewer": "root session01a15c4c-4819-7349-b139-86217a366749",
+  "verified": {
+    "manifestHash": true
+  },
+  "authority": "Latest root instruction explicitly approves exact manifest8854678... after actual states-dark viewing and same common POC settings; engineering receipt authored under that instruction.",
+  "approvedIntegrationSettings": "Same movement and derivative identity normalization as1003/1009",
+  "notRuntimeQa": true
+}

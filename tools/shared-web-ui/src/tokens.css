@@ -1,0 +1,41 @@
+[data-sui-theme] {
+  --sui-color-canvas: #f7f7f4; --sui-color-surface: #ffffff; --sui-color-surface-sunken: #f2f3f5;
+  --sui-color-nav: #1a1f2e; --sui-color-nav-hover: #2a3045;
+  --sui-color-nav-ink: #b8c4d2; --sui-color-nav-ink-strong: #ffffff;
+  --sui-color-ink: #27313d; --sui-color-ink-secondary: #697586; --sui-color-ink-muted: #697586;
+  --sui-color-line: #d9dee5; --sui-color-focus: #8f2d27;
+  --sui-color-accent: #b63c32; --sui-color-accent-strong: #8f2d27;
+  --sui-color-accent-soft: #fbf4f1; --sui-color-signal: #8f2d27;
+  --sui-color-table-head: #263649; --sui-color-code-bg: #edf5f3; --sui-color-code-ink: #176f65;
+  --sui-space-4: 4px; --sui-space-8: 8px; --sui-space-12: 12px; --sui-space-16: 16px;
+  --sui-space-20: 20px; --sui-space-24: 24px; --sui-space-32: 32px; --sui-space-40: 40px;
+  --sui-space-56: 56px; --sui-space-80: 80px;
+  --sui-type-h1: 2rem; --sui-type-h1-leading: 1.25;
+  --sui-type-h2: 1.45rem; --sui-type-h2-leading: 1.35;
+  --sui-type-h3: 1.15rem; --sui-type-h3-leading: 1.45;
+  --sui-type-body: 1rem; --sui-type-body-leading: 1.75;
+  --sui-type-small: .8rem; --sui-type-small-leading: 1.5;
+  --sui-type-kicker: .75rem; --sui-type-kicker-leading: 1.5;
+  --sui-radius-sm: 2px; --sui-radius-md: 4px;
+  --sui-motion-color: 150ms ease-out;
+  --sui-font-body: "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --sui-font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --sui-shell-nav-width: 220px; --sui-shell-content-max: 1200px;
+}
+[data-sui-theme="dark"] {
+  --sui-color-canvas: #0B111C; --sui-color-surface: #141C2A; --sui-color-surface-sunken: #0E1622;
+  --sui-color-ink: #E6EAF0; --sui-color-ink-secondary: #9AA6B2; --sui-color-ink-muted: #77828F;
+  --sui-color-line: #2A3548; --sui-color-focus: #C9A227;
+  --sui-color-accent: #7FB0D6; --sui-color-accent-strong: #C9A227;
+  --sui-color-accent-soft: #141C2A; --sui-color-signal: #C9A227;
+  --sui-color-table-head: #2A3548; --sui-color-code-bg: #0E1622; --sui-color-code-ink: #C9A227;
+}
+[data-sui-site="gdd"][data-sui-theme="light"] {
+  --sui-color-accent: #258b7c; --sui-color-accent-strong: #217c70;
+  --sui-color-accent-soft: #eaf3f1;
+}
+[data-sui-site="hub"][data-sui-theme="dark"] {
+  --sui-color-accent: #7FB0D6; --sui-color-accent-strong: #C9A227;
+  --sui-color-signal: #C9A227;
+}
+@media (prefers-reduced-motion: reduce) { [data-sui-theme] { --sui-motion-color: 0ms; } }

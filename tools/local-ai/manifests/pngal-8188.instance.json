@@ -1,0 +1,200 @@
+{
+  "instanceId": "pngal-8188",
+  "evidenceBasis": "task-1 corrected baseline and inventory, 2026-10-23",
+  "recoveryReady": false,
+  "rootRefs": {
+    "source": "pngal-8188.source",
+    "runtime": "pngal-8188.runtime",
+    "user": "pngal-8188.user",
+    "nodes": "pngal-8188.nodes",
+    "models": "pngal-8188.models",
+    "input": "pngal-8188.input",
+    "output": "pngal-8188.output",
+    "backup": "pngal-8188.backup"
+  },
+  "source": {
+    "observedCommit": "355cd6b14c92c19ac3188fe528e47a3f21ef5178",
+    "approvedRunningCommit": null,
+    "dirtyBytes": "unresolved",
+    "reference": {
+      "url": "https://github.com/islee23520/ComfyUI",
+      "branch": "master",
+      "commit": null
+    },
+    "observedRemote": "https://github.com/Comfy-Org/ComfyUI.git",
+    "observedDirtyPaths": [
+      "server.py"
+    ]
+  },
+  "runtime": {
+    "observed": {
+      "basis": "HTTP system_stats and interpreter probe",
+      "python": "3.12.10",
+      "comfyui": "0.42.0",
+      "torch": "2.8.0+cu128"
+    },
+    "dependencyLock": "unresolved",
+    "pipFreeze": "unresolved",
+    "nativeBuildPins": "unresolved"
+  },
+  "nodes": {
+    "observedEntries": [
+      {
+        "name": "ComfyUI-GGUF",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      },
+      {
+        "name": "ComfyUI-HunyuanImage3",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      },
+      {
+        "name": "ComfyUI-MiniMax-H3-Image-Studio",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      },
+      {
+        "name": "example_node.py.example",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      },
+      {
+        "name": "websocket_image_save.py",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      }
+    ],
+    "completeness": "unresolved"
+  },
+  "workflows": {
+    "uiJson": "private-backup-required",
+    "apiGraph": "unresolved",
+    "nodeDependencies": "unresolved"
+  },
+  "models": {
+    "verification": "unresolved",
+    "pins": [],
+    "userCreatedBytesBackupRequired": true,
+    "expectedContracts": {
+      "sourceReceipts": [
+        {
+          "file": "tools-portal/src/comfyui-assets.ts",
+          "sourceFileSHA256": "eada1deffb2e18b5feb8ce5239bed9afd25acac5ba0637bdf9f1561346b6a2ed"
+        },
+        {
+          "file": "tools-portal/src/comfyui-finishing.ts",
+          "sourceFileSHA256": "978b865742be04814d162a758e966507c7adb32fd63d06c10be095ca895de9be"
+        }
+      ],
+      "models": [
+        {
+          "filename": "seoul-dengoku-moss-sft-style-male.safetensors",
+          "sha256": "1570c8b8e987f7304622b83e3ea48963bf24065f630e6f44b987f5b9a6588aa6",
+          "bytes": 148697424,
+          "revision": null,
+          "license": null,
+          "access": "unresolved",
+          "basis": "adapter-expected-contract, not measured model bytes",
+          "role": "lora"
+        },
+        {
+          "filename": "seoul-dengoku-moss-sft-style-captionfix.safetensors",
+          "sha256": "d2c36358af8253903a417aeb30f8eafeecd1b6abbc83641e995d36cd68c85cdf",
+          "bytes": 148697440,
+          "revision": null,
+          "license": null,
+          "access": "unresolved",
+          "basis": "adapter-expected-contract, not measured model bytes",
+          "role": "lora"
+        },
+        {
+          "filename": "seoul-dengoku-moss-sft-style.safetensors",
+          "sha256": "10ba4a10cc6e45ac57eb6dd7e4b400de6148820017d1df37c24d17199b7b9c09",
+          "bytes": 148697416,
+          "revision": null,
+          "license": null,
+          "access": "unresolved",
+          "basis": "adapter-expected-contract, not measured model bytes",
+          "role": "lora"
+        },
+        {
+          "filename": "moss_image_sft_int8_convrot.safetensors",
+          "sha256": "b4d1475bc7eeffd7b809e82ea13a1fba1fb85c4e18365af3813722faa5c0fe4f",
+          "bytes": 5413698958,
+          "revision": null,
+          "license": null,
+          "access": "unresolved",
+          "basis": "adapter-expected-contract, not measured model bytes",
+          "role": "diffusion"
+        },
+        {
+          "filename": "qwen3.5_9b_w4a8_gptq.safetensors",
+          "sha256": "4cc6a1543ad2061806da46f35f90cadb4801dcba246c44782cf42ec0feb6407c",
+          "bytes": 7343591088,
+          "revision": null,
+          "license": null,
+          "access": "unresolved",
+          "basis": "adapter-expected-contract, not measured model bytes",
+          "role": "encoder"
+        },
+        {
+          "filename": "flux2-vae_small.safetensors",
+          "sha256": "d8d52ba036475f5fb07c8b435e176d3d97ebfa82f0d1a1c317f9cc1e25bd013b",
+          "bytes": 249521340,
+          "revision": null,
+          "license": null,
+          "access": "unresolved",
+          "basis": "adapter-expected-contract, not measured model bytes",
+          "role": "vae"
+        },
+        {
+          "filename": "birefnet.safetensors",
+          "sha256": "9ab37426bf4de0567af6b5d21b16151357149139362e6e8992021b8ce356a154",
+          "bytes": 444473596,
+          "license": "MIT",
+          "revision": "25511f8787e51912e1480706b4e47b8f467fbf72",
+          "access": "unresolved",
+          "basis": "adapter-expected-contract, not measured model bytes",
+          "role": "background-removal"
+        }
+      ],
+      "finishingFiles": {
+        "comfy/bg_removal_model.py": "bdbae0667e859bded2e039868dd1f309a63b64dae9b5120b7056ce09dd273e22",
+        "comfy_extras/nodes_bg_removal.py": "c2cf4b42f10cfb1bb057b60a8745fb96a2462e1f1a2bd275e00795bb3f758cce",
+        "comfy_extras/nodes_compositing.py": "ef1712ca69ebb1dbd2141bff866674ec73b2ebea757aadf02f7aec59644d9257",
+        "comfy_extras/nodes_mask.py": "08171f430ddd9a327cec92293ac25fd1bc39d5c9079187a51463fb42d2a9d65b",
+        "comfy/background_removal/birefnet.py": "2daee3294b76672e416dfe39f3742493757516e7599b780c54435aab473db08d",
+        "comfy/background_removal/birefnet.json": "50dd9639fa207a823437370b46d32a56b3f00eb1bef3bd225fe87eeeb8f255d2",
+        "nodes.py": "a6db3d4ea52220db85bf92a01e27a3e8b17545f7d1c6d2fc6c929f1eb27b111e"
+      }
+    }
+  },
+  "data": {
+    "consistentBackup": "not-performed",
+    "preservePriorDbBkp": true,
+    "inputsOutputsAndReferencedAssets": "private-backup-required"
+  },
+  "restore": {
+    "status": "not-run",
+    "procedure": "../../../../seoul-dengoku-tools/TOOL/docs/Local-AI-Persistence-Policy.md"
+  },
+  "unresolved": [
+    "source dirty bytes not included in task1 portal-only snapshot",
+    "per-node revision and enabled flags",
+    "complete dependency lock and native artifacts",
+    "workflow API graph and dependencies",
+    "model file measurements and license/access",
+    "consistent DB/user/output snapshot"
+  ]
+}

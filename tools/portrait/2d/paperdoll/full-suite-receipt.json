@@ -1,0 +1,18 @@
+{
+  "scope": "Current reusable paperdoll code, synthetic fixtures only; not provider, artwork, Unity import or runtime approval",
+  "command": "node --test TOOL/avatar-gen/portrait/2d/paperdoll/*.test.mjs",
+  "cwd": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021",
+  "monitor": "mon_VGMGHECYQXCN57T9",
+  "session": "bash_38",
+  "exitCode": 0,
+  "tests": 30,
+  "passed": 30,
+  "failed": 0,
+  "cancelled": 0,
+  "skipped": 0,
+  "durationMs": 8161.745334,
+  "runs": 1,
+  "diagnostics": {"workflow.mjs": "No diagnostics found", "masked-edit.mjs": "No diagnostics found"},
+  "logSource": "Terminal monitor output, harvested once in progress and once at terminal completion",
+  "remaining": "Actual deterministic patch integration and actual Unity finalize contract remain incomplete"
+}

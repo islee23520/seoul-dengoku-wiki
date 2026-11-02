@@ -1,0 +1,42 @@
+{
+  "schema": "paperdoll-masked-edit.v1",
+  "layout": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/geometry-math-edit-r2/mathematical-edit-layout.json",
+    "sha256": "77d45ddbfcf8416465c7092894843f6550cae3acbc477585289d87a706db0f7a"
+  },
+  "editLayoutReview": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/TOOL/avatar-gen/portrait/2d/paperdoll/person-1003-r2-root-edit-review.json",
+    "sha256": "6ae4279d5932a74a92770aca69740e1b452e8a72b1226eed2ec696fa10ab5698"
+  },
+  "personId": "person-1003",
+  "characterId": "K1003",
+  "source": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools/ART-ASSETS/portrait-references/wiki-people/images/person-1003.png",
+    "sha256": "7b7f311b11ffcea5f9e8e3a257a8745093ba2b322bd8e4aa3892c86bd5caeed8"
+  },
+  "registry": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools/ART-ASSETS/portrait-references/wiki-people/manifest.json",
+    "sha256": "01ae1079662dd44bee89522a1cee3d8f4bdd6caff1712101c6908697724d30c3"
+  },
+  "master": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/geometry-math-edit-r2/registered-master-native.png",
+    "sha256": "07206fb08d9b98cf6aaa4e64b1df45421d2f6770f977ae5eaf78103bf54f7926"
+  },
+  "mask": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/geometry-math-edit-r2/api-edit-mask-native.png",
+    "sha256": "05f47249504c558919d92af4d3e23e6477330cf68bbdf84385f2980b4539b6ae"
+  },
+  "referenceRoles": [
+    "registered-editable-master",
+    "same-recipient-identity-technique"
+  ],
+  "maskSemantics": "alpha-zero-editable-first-image",
+  "stage": "anatomy-master",
+  "prompt": "Edit the existing adult recipient, preserving identity, age, proportions and drawing technique. Exactly two uploaded images: image 1 is the registered editable master and framing; image 2 is the immutable same-recipient identity and technique reference. The separately uploaded PNG mask applies to image 1: alpha zero editable, alpha 255 protected. No third reference exists. Transparent background, no gore or sexual presentation.\nReference image 1 is the registered editable master. Reference image 2 supplies the same recipient identity and technique only. Use uploaded mask: alpha0 editable, alpha255 protected. Preserve face, lips, eyes, jaw, head size and hair. Create a short bare nonsexual adult upper TORSO with continuous neck behind the protected jaw; remove ALL jacket, shirt, undershirt, straps and equipment. Keep the measured small torso support, bottom y=476 on416x568 working canvas (y=952 on832x1136 native canvas). Erase old garment outside target body to true transparency. Preserve protected pixels including known one-working-pixel fringe below chin; do not warp to conceal a gap. No independent part sheet, new face, head resize, stretched torso, gore or internal anatomy.",
+  "template": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/TOOL/avatar-gen/portrait/2d/paperdoll/templates.json",
+    "sha256": "6e39948edcf2bf3f55bb0a7aa66898ca899ae0fe5de60735ba82319ec61b06e9"
+  },
+  "output": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/source/person-1003-math-anatomy-r2-two-ref.png",
+  "size": "832x1136"
+}

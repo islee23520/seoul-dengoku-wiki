@@ -1,0 +1,47 @@
+{
+	"name": "portrait-acceptance",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		},
+		"./batch-gate": {
+			"types": "./dist/batch-gate.d.ts",
+			"import": "./dist/batch-gate.js"
+		},
+		"./png": {
+			"types": "./dist/png.d.ts",
+			"import": "./dist/png.js"
+		}
+	},
+	"engines": {
+		"node": ">=24"
+	},
+	"bin": {
+		"portrait-acceptance": "dist/cli.js"
+	},
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"scripts": {
+		"typecheck": "tsc --noEmit",
+		"lint": "biome check .",
+		"test": "bun test",
+		"build": "tsc -p tsconfig.build.json"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.15",
+		"@types/bun": "1.4.2",
+		"@types/node": "26.6.5",
+		"typescript": "7.0.2"
+	},
+	"dependencies": {
+		"zod": "^4.6.5"
+	}
+}

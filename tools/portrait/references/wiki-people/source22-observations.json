@@ -1,0 +1,922 @@
+{
+  "schemaVersion": 1,
+  "source": "recovered source22-identity-reference-layer/source-specific-manifest.json",
+  "capturedAt": "2026-10-10T09:11:22.891Z",
+  "status": "SOURCE_BYTES_BOUND_OBSERVATION_GAPS_OPEN",
+  "exclusions": [
+    "K1017",
+    "K1019"
+  ],
+  "rows": [
+    {
+      "characterId": "K1003",
+      "personId": "person-1003",
+      "name": "조재표",
+      "sourceSha256": "7b7f311b11ffcea5f9e8e3a257a8745093ba2b322bd8e4aa3892c86bd5caeed8",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-1003.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "7b7f311b11ffcea5f9e8e3a257a8745093ba2b322bd8e4aa3892c86bd5caeed8",
+        "faceSilhouette": {
+          "observation": "An elongated, angular face with a broad visible viewer-left cheek plane. The cheek contour descends into a distinct jaw corner, followed by a long diagonal jawline tapering toward a relatively narrow, softly squared chin. The viewer-right cheek and jaw are compressed by perspective.",
+          "uncertainty": "Hair obscures portions of the temples and upper lateral contour. The far-side jaw shape cannot be reconstructed reliably from this view."
+        },
+        "eyeGeometry": {
+          "observation": "Both eyes have narrow, horizontally elongated apertures, strongly defined upper lids, restrained lower-lid lines, and tapered corners. The viewer-left eye is wider in projection; the viewer-right eye is shorter and more compressed beside the nose. Upper lids overlap the upper portions of the irises.",
+          "uncertainty": "Stylized lid contours limit conclusions about underlying anatomical eye shape. Perspective contributes to the apparent difference in eye widths."
+        },
+        "gazeTowardCamera": {
+          "observation": "The irises sit toward viewer-left within their apertures, counter to the head's viewer-right turn. This suggests a sideways glance back toward the viewer or camera vicinity rather than a gaze following the nose.",
+          "uncertainty": "Exact camera eye contact is ambiguous; the illustration does not establish a precise fixation target."
+        },
+        "headOrientation": {
+          "observation": "Three-quarter head turn toward viewer-right, with the viewer-left ear and cheek prominently exposed and the nose projecting toward viewer-right. The eyes remain visible on both sides.",
+          "uncertainty": "Any upward or downward head inclination is subtle and cannot be separated confidently from stylized facial construction."
+        },
+        "depictionRuleContribution": [
+          "Use clear contour lines and broad shaded facial planes to describe volume.",
+          "Represent the far eye and far cheek with perspective compression rather than mirroring the near side.",
+          "Treat iris direction independently from head direction."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Retain this source's elongated cheek-to-chin proportions and long diagonal jawline.",
+          "Preserve the narrow, softly squared chin and the specific unequal projected eye widths.",
+          "Do not substitute another source's lower-face breadth or lid contours."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K1008",
+      "personId": "person-1008",
+      "name": "민웅기",
+      "sourceSha256": "7bf9c3f3c45b7883cf4a655964eb247bd375c0795b3e72e22915af03e840a9c7",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-1008.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "7bf9c3f3c45b7883cf4a655964eb247bd375c0795b3e72e22915af03e840a9c7",
+        "faceSilhouette": {
+          "observation": "The visible face is elongated, with a broad viewer-left cheek, a defined jaw corner below the ear, and a long taper toward a softly squared chin. The lower cheek transitions into the jaw through a relatively smooth contour. The viewer-right facial edge narrows toward the chin.",
+          "uncertainty": "Hair partly hides the upper lateral contour. Perspective prevents a reliable comparison of the two anatomical cheek widths."
+        },
+        "eyeGeometry": {
+          "observation": "Narrow almond-like apertures have prominent upper-lid edges and lighter lower-lid definition. The viewer-left eye is longer in projection, while the viewer-right eye is compressed. Both irises are partly covered by the upper lids. Visible frame lines cross or border the eye region without fully concealing the apertures.",
+          "uncertainty": "The frames complicate separation of eyelid contours from nearby lines, especially around the far eye and inner corners. Lens distortion is not clearly established."
+        },
+        "gazeTowardCamera": {
+          "observation": "Both irises appear displaced toward viewer-left relative to their eye openings, suggesting a glance back toward the viewer despite the viewer-right head turn.",
+          "uncertainty": "A camera-adjacent gaze is plausible, but exact eye contact cannot be confirmed from the stylized pupils and partially intersecting frame lines."
+        },
+        "headOrientation": {
+          "observation": "The head is turned toward viewer-right in a three-quarter view. The viewer-left ear is exposed, the viewer-left cheek occupies more visible area, and the nose projects toward viewer-right.",
+          "uncertainty": "A slight vertical inclination is possible, but its direction is not sufficiently clear to specify."
+        },
+        "depictionRuleContribution": [
+          "Maintain facial readability where accessory lines overlap the eyes.",
+          "Preserve asymmetric eye projection in the three-quarter view.",
+          "Use economical lid lines and planar shading instead of heavily detailed anatomical rendering."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Preserve this source's smooth cheek-to-jaw transition, long lower-face taper, and softly squared chin.",
+          "Keep the actual visible lid apertures and iris placements rather than using the accessory outline as an eye-shape template.",
+          "Do not assume matching identity or interchangeable facial geometry merely because other sources share a similar pose."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K1007",
+      "personId": "person-1007",
+      "name": "김연규",
+      "sourceSha256": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-1007.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179",
+        "faceSilhouette": {
+          "observation": "A long, angular facial contour shows a broad viewer-left cheek plane, a distinct lower cheek/jaw transition, and a sloping jawline that ends in a narrow, rounded-square chin. The viewer-right cheek edge is comparatively compact in projection.",
+          "uncertainty": "The upper side contour is partly hidden. The apparent cheek breadth and jaw asymmetry include perspective effects and should not be treated as frontal measurements."
+        },
+        "eyeGeometry": {
+          "observation": "The eyes are slim and elongated, with dark upper-lid contours and small, tapered corners. The viewer-left aperture is visibly longer than the viewer-right aperture. Upper lids crop the irises, and the lower lids are lightly delineated. Frame rims sit near the upper and outer eye contours.",
+          "uncertainty": "Frame overlap makes some corner and lid details less distinct. The far eye's reduced width cannot be attributed solely to intrinsic eye shape."
+        },
+        "gazeTowardCamera": {
+          "observation": "The apparent iris direction is toward viewer-left within both apertures, opposing the face's viewer-right turn and giving a back-glancing, viewer-directed impression.",
+          "uncertainty": "The exact fixation point is unknown; apparent viewer-directed attention is not proof of precise camera alignment."
+        },
+        "headOrientation": {
+          "observation": "Three-quarter orientation toward viewer-right, with a clearly visible viewer-left ear and near cheek and a foreshortened viewer-right facial side.",
+          "uncertainty": "The image supports the horizontal turn clearly, but not a confident description of subtle vertical tilt."
+        },
+        "depictionRuleContribution": [
+          "Keep the eye apertures legible underneath intersecting accessory contours.",
+          "Use a long near-side jaw contour and a compressed far-side contour to communicate the pose.",
+          "Separate the depiction of a turned head from the depiction of a sideways eye glance."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Retain the source-specific cheek plane, lower jaw slope, and narrow rounded-square chin.",
+          "Preserve the particular upper-lid curvature and near/far eye aperture relationship.",
+          "Similar rendering and pose do not justify replacing this face with a shared generic facial template."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K1009",
+      "personId": "person-1009",
+      "name": "신종목",
+      "sourceSha256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-1009.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00",
+        "faceSilhouette": {
+          "observation": "The face has a broad viewer-left cheek, an angular jaw transition, and a diagonal lower jaw leading into a comparatively broad, rounded-square chin. The lower-face silhouette appears more compact and less narrowly tapered than in the preceding illustrations. Short surface marks follow the lower cheek, jaw, and chin without hiding the outer contour.",
+          "uncertainty": "Surface texture and shadow influence the perceived lower-face breadth. The hidden far-side jaw and hair-covered upper contour remain unknown."
+        },
+        "eyeGeometry": {
+          "observation": "Both apertures are narrow and elongated, with pronounced upper lids, lightly indicated lower lids, and tapered corners. The viewer-left eye has greater horizontal extent; the viewer-right eye is compressed beside the nose. Upper lids cover the upper iris margins, and the inner brow region is drawn low over the eyes.",
+          "uncertainty": "The aperture narrowing may reflect the depicted lid position as well as underlying geometry. Those contributions cannot be separated confidently."
+        },
+        "gazeTowardCamera": {
+          "observation": "The irises are positioned toward viewer-left within the visible openings. Their direction appears to return toward the viewer or camera vicinity while the head remains turned toward viewer-right.",
+          "uncertainty": "Direct camera eye contact is not certain, and no exact gaze target is visible."
+        },
+        "headOrientation": {
+          "observation": "The head turns toward viewer-right in a three-quarter view, exposing the viewer-left ear and cheek and shortening the apparent viewer-right side of the face.",
+          "uncertainty": "Vertical inclination is ambiguous; the horizontal turn is much more clearly supported."
+        },
+        "depictionRuleContribution": [
+          "Use sparse surface marks without sacrificing the clarity of the jaw silhouette.",
+          "Retain near/far eye asymmetry and separate iris direction from head turn.",
+          "Describe facial volume through broad cheek and jaw shadow planes."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Preserve the comparatively compact lower face and broader rounded-square chin.",
+          "Retain this source's cheek-to-jaw transition and specific lid narrowing.",
+          "Do not impose the more elongated, narrowly tapered lower-face proportions visible in other sources."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K998",
+      "personId": "person-0998",
+      "name": "이일섭",
+      "sourceSha256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0998.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306",
+        "faceSilhouette": {
+          "observation": "The visible face is elongated, with a broad, gently convex viewer-left cheek and a narrower viewer-right contour. The viewer-left jaw descends in a long diagonal toward a rounded, relatively narrow chin. The cheek-to-jaw transition is softly angular rather than sharply squared; the chin has a short, curved lower edge.",
+          "uncertainty": "The far-side jaw is foreshortened, and the upper lateral face contour is partly covered. Full frontal cheek width and bilateral jaw proportions are unknown."
+        },
+        "eyeGeometry": {
+          "observation": "Both eyes have horizontally elongated apertures, prominent upper-lid lines, shallow lower-lid curves, and tapered corners. The viewer-left eye is visibly wider; the viewer-right eye is compressed by perspective. Upper lids overlap the tops of the irises. Visible frames cross or border portions of the eye region.",
+          "uncertainty": "Frames partly obscure corner and lid details. The apparent difference in eye width cannot be treated as an intrinsic anatomical asymmetry."
+        },
+        "gazeTowardCamera": {
+          "observation": "Both irises sit toward viewer-left within their apertures, leaving more visible sclera toward viewer-right. This suggests a gaze directed back toward the viewer's side relative to the head turn, potentially near the camera.",
+          "uncertainty": "Exact camera-directed eye contact is ambiguous; the gaze may pass slightly to viewer-left of the camera. Head orientation alone does not establish eye contact."
+        },
+        "headOrientation": {
+          "observation": "The head is in three-quarter view turned toward viewer-right. The viewer-left ear and cheek are exposed, while the viewer-right side is foreshortened. The eye line slopes downward toward viewer-right.",
+          "uncertainty": "Small vertical tilt and roll cannot be cleanly separated from perspective and stylized drawing."
+        },
+        "depictionRuleContribution": [
+          "Use clean facial contours with restrained internal linework and broad, softly blended shadow planes.",
+          "Represent the near and far eyes with different projected widths while maintaining coherent lid and iris placement.",
+          "Keep head turn and lateral iris direction independently readable."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Preserve this source's gently convex cheek, long diagonal jaw taper, and rounded narrow chin.",
+          "Retain the observed lid curvature and aperture proportions rather than replacing them with a generic shared eye shape.",
+          "Do not treat the visible frames as a required attribute for other depictions."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K001",
+      "personId": "person-0001",
+      "name": "한재목",
+      "sourceSha256": "8df0196167a97ee5266de0c9cfc5cdb24dcbcc24e92207a402467b4e674b9c89",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0001.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "8df0196167a97ee5266de0c9cfc5cdb24dcbcc24e92207a402467b4e674b9c89",
+        "faceSilhouette": {
+          "observation": "The visible cheek is broad, with a relatively firm transition into the lower face. The viewer-left jaw forms a defined diagonal toward a comparatively broad, blunt-rounded chin. The lower face reads somewhat more squared than the other supplied silhouettes, although it still narrows toward the chin. The viewer-right cheek and jaw form a compressed descending contour.",
+          "uncertainty": "Three-quarter projection limits assessment of frontal jaw width. Surface marks and shading emphasize the lower face but are not themselves contour geometry."
+        },
+        "eyeGeometry": {
+          "observation": "The eyes are narrow and horizontally elongated, with low upper-lid arcs, clearly drawn upper creases, shallow lower borders, and tapered corners. The viewer-left aperture is longer; the viewer-right aperture is shorter and foreshortened. Both irises are partly covered by the upper lids.",
+          "uncertainty": "The exact far-eye corner shape is less clear because of its small projected width. Apparent narrowing may reflect the depicted expression as well as geometry."
+        },
+        "gazeTowardCamera": {
+          "observation": "The irises are displaced toward viewer-left, with larger scleral areas toward viewer-right. The eyes appear directed back toward the viewer's side rather than following the head's viewer-right turn.",
+          "uncertainty": "Near-camera gaze is plausible, but direct eye contact cannot be confirmed; a slightly viewer-left off-camera target is also consistent with the image."
+        },
+        "headOrientation": {
+          "observation": "The head turns toward viewer-right in three-quarter view, exposing the viewer-left ear and a larger area of the viewer-left cheek. The far eye and far cheek are compressed. The eye line descends toward viewer-right.",
+          "uncertainty": "The precise vertical inclination is ambiguous. No exact camera or head angles can be recovered from the illustration."
+        },
+        "depictionRuleContribution": [
+          "Maintain angular lower-face structure through contour and planar shading without excessive internal outlines.",
+          "Draw narrow eye apertures with explicit upper-lid overlap and perspective compression.",
+          "Keep small surface details subordinate to the main facial planes."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Preserve the comparatively broad, blunt chin and firmer cheek-to-jaw transition.",
+          "Retain the source-specific low upper-lid arcs and narrow apertures.",
+          "Do not use surface marks as a substitute for preserving the actual jaw and cheek geometry."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K029",
+      "personId": "person-0029",
+      "name": "강민서",
+      "sourceSha256": "baa1fe624e47004893c3e42242472b09f483a340402880ceee4ab9a525f45ee2",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0029.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "baa1fe624e47004893c3e42242472b09f483a340402880ceee4ab9a525f45ee2",
+        "faceSilhouette": {
+          "observation": "The visible face combines a broad, smooth viewer-left cheek with a long, clearly defined diagonal jaw. The lower face tapers into a rounded, slightly flattened chin rather than a pointed tip. The viewer-right cheek-to-chin contour is comparatively straight and compressed by the turn.",
+          "uncertainty": "The far-side jaw angle is not independently visible. Upper-face width is partly concealed, so the complete silhouette cannot be reconstructed."
+        },
+        "eyeGeometry": {
+          "observation": "The eyes have elongated, narrow apertures with substantial upper-lid overlap, curved upper creases, shallow lower contours, and pointed corner transitions. The viewer-left eye spans more horizontal space; the viewer-right eye is shortened by perspective. The upper-lid outlines slope downward toward viewer-right.",
+          "uncertainty": "Far-eye corner details are partly merged with surrounding contour and shading. Frontal eye symmetry is unknown."
+        },
+        "gazeTowardCamera": {
+          "observation": "The visible irises lie toward viewer-left within both apertures, with more sclera exposed on their viewer-right sides. This reads as a counter-directional glance relative to the viewer-right head turn.",
+          "uncertainty": "The glance may be near the camera or slightly off-camera toward viewer-left. The illustration does not establish an exact fixation point."
+        },
+        "headOrientation": {
+          "observation": "The head is turned toward viewer-right in three-quarter view. The viewer-left ear and cheek are prominent, the nose projects toward viewer-right, and the far side of the face is foreshortened. The eye line slopes downward toward viewer-right.",
+          "uncertainty": "A slight head inclination is suggested, but its vertical and roll components are not securely separable."
+        },
+        "depictionRuleContribution": [
+          "Use smooth cheek modeling alongside a more defined jaw edge.",
+          "Preserve foreshortening of the far eye and far facial contour.",
+          "Use selective lid, nose, and mouth lines rather than outlining every tonal transition."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Preserve the broad cheek, long jaw diagonal, and rounded-flat chin combination.",
+          "Keep the particular upper-lid slopes and near-to-far aperture relationship visible here.",
+          "Similarity of pose or rendering to another source does not justify merging their facial geometry."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K1005",
+      "personId": "person-1005",
+      "name": "정서온",
+      "sourceSha256": "aecf12fff4b35b077c812ef80fddd9b7a2f41a15b48cd35fc37fab2c3747a6e1",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-1005.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "faceSilhouette": {
+          "observation": "Soft oval silhouette with a gently tapered jaw",
+          "uncertainty": "low"
+        },
+        "eyeShape": {
+          "observation": "Almond-shaped eyes",
+          "uncertainty": "low"
+        },
+        "gazeTowardCamera": {
+          "observation": "Yes",
+          "uncertainty": "low"
+        },
+        "headOrientation": {
+          "observation": "Turned toward the viewer's right",
+          "uncertainty": "low"
+        },
+        "torsoOrientation": {
+          "observation": "Angled toward the viewer's right",
+          "uncertainty": "medium"
+        }
+      },
+      "torsoOrientation": "retained-source-observation",
+      "gaze": "retained-source-observation"
+    },
+    {
+      "characterId": "K423",
+      "personId": "person-0088",
+      "name": "오경재",
+      "sourceSha256": "1a23f48351e98542db0697f49184d868cb0d4266cbfcd1679bdec116c6cde25a",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0088.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "1a23f48351e98542db0697f49184d868cb0d4266cbfcd1679bdec116c6cde25a",
+        "faceSilhouette": {
+          "observation": "The visible face appears relatively long and tapered. A smooth, broad viewer-left cheek narrows through a long oblique jaw into a compact, rounded chin with a short flattened base. The viewer-right lower-face outline descends relatively steeply, giving the chin a narrower projected footprint than the cheek.",
+          "uncertainty": "The far-side jaw and parts of the upper contour are hidden or foreshortened. These are projected proportions, not confirmed frontal dimensions."
+        },
+        "eyeGeometry": {
+          "observation": "Both apertures are slim and elongated, with dark upper-lid contours, shallow lower-lid curves, and tapered corners. The viewer-left eye is longer, while the viewer-right eye is compressed. Upper lids obscure the upper portions of the irises, and the eye line descends toward viewer-right.",
+          "uncertainty": "The compressed far eye provides limited evidence about its unprojected aperture shape. Small corner differences may be stylistic rather than anatomical."
+        },
+        "gazeTowardCamera": {
+          "observation": "Both irises are positioned toward viewer-left within the visible eye openings. The eyes therefore appear to glance back toward the viewer's side independently of the head's viewer-right turn.",
+          "uncertainty": "Direct camera gaze remains uncertain; a nearby off-camera point toward viewer-left is also possible."
+        },
+        "headOrientation": {
+          "observation": "The head is shown in a viewer-right three-quarter turn, with the viewer-left ear exposed and the viewer-right cheek and eye foreshortened. There is a visible downward slope of the eye line toward viewer-right.",
+          "uncertainty": "Exact upward or downward inclination cannot be determined reliably from the stylized facial planes."
+        },
+        "depictionRuleContribution": [
+          "Maintain a tapered lower-face silhouette without reducing the chin to a sharp point.",
+          "Combine crisp feature lines with smooth, low-texture facial shading.",
+          "Preserve the distinction between the head's direction and the eyes' lateral glance."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Retain the relatively elongated cheek-to-chin proportions and compact rounded chin.",
+          "Preserve this source's slim eye openings and upper-lid overlap.",
+          "Do not replace these projected proportions with the broader lower-face structure visible in another source."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K115",
+      "personId": "person-0116",
+      "name": "배우진",
+      "sourceSha256": "8ba622a5e8b2a1ac3521168bfe142ee501ca67806e06dc5000b0edd046ea4e65",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0116.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "8ba622a5e8b2a1ac3521168bfe142ee501ca67806e06dc5000b0edd046ea4e65",
+        "faceSilhouette": {
+          "observation": "An elongated, angular face with a broad visible viewer-left cheek plane. The contour descends from the visible ear into a distinct jaw corner, then follows a long diagonal toward a substantial, bluntly rounded chin. The viewer-right cheek and jaw are narrower in projection. Cheek definition includes a visible shallow diagonal crease.",
+          "uncertainty": "The far-side jaw is foreshortened, and the upper forehead contour is partly obscured. Apparent width cannot be treated as frontal facial width."
+        },
+        "eyeGeometry": {
+          "observation": "Both apertures are narrow and almond-shaped, with strong upper-lid lines, restrained lower-lid curves, and tapered corners. The viewer-left eye is longer in projection; the viewer-right eye is shorter and compressed beside the nose bridge. Upper lids overlap the irises. The eye line descends toward viewer-right in the image.",
+          "uncertainty": "Perspective and lid narrowing both contribute to the asymmetry; their separate contributions are not fully recoverable."
+        },
+        "gazeTowardCamera": {
+          "observation": "Both irises sit toward viewer-left within their visible apertures, counter to the face's viewer-right turn. This suggests a gaze returning toward the viewer or slightly past the camera toward viewer-left.",
+          "uncertainty": "Exact camera-directed fixation is ambiguous in this stylized rendering; the three-quarter head turn alone does not establish eye contact."
+        },
+        "headOrientation": {
+          "observation": "The head is in three-quarter view, turned toward viewer-right. The viewer-left ear and broad near cheek are exposed, while the viewer-right side is compressed. The chin appears slightly lowered.",
+          "uncertainty": "The amount of downward inclination and any lateral tilt cannot be separated confidently from perspective and facial construction."
+        },
+        "depictionRuleContribution": [
+          "Use selective contour lines and broad tonal planes to describe facial volume.",
+          "Preserve the distinction between the wider near eye and foreshortened far eye.",
+          "Represent eye direction independently of the head turn."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Retain this source's substantial blunt chin, long diagonal jaw edge, and broad near-cheek plane.",
+          "Retain the visible cheek crease and the particular lid narrowing rather than replacing them with a generic smooth face."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K144",
+      "personId": "person-0145",
+      "name": "윤서린",
+      "sourceSha256": "9f1ea35f5abfa5c6759546d66e9d51c2cc281e4e8aada78a04654dc9155a8b5a",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0145.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "9f1ea35f5abfa5c6759546d66e9d51c2cc281e4e8aada78a04654dc9155a8b5a",
+        "faceSilhouette": {
+          "observation": "The visible face has a long cheek-to-chin span, a relatively smooth viewer-left cheek plane, and a clear jaw corner below the ear. A long, gently angular lower contour converges on a rounded, flattened chin. The viewer-right contour is narrower and more steeply tapered in projection.",
+          "uncertainty": "The forehead perimeter is partly covered, and the far-side contour is foreshortened. Small differences from other sources may reflect drawing variation rather than underlying anatomy."
+        },
+        "eyeGeometry": {
+          "observation": "The viewer-left eye is a horizontally extended almond with a nearly straight central upper-lid segment and a gently curved lower boundary. Its outer corner tapers sharply. The viewer-right eye has a shorter aperture and is compressed near the bridge. Both irises are partly covered by the upper lids, with more exposed sclera toward viewer-right.",
+          "uncertainty": "The far eye's inner corner and full aperture shape are affected by the nose bridge and perspective."
+        },
+        "gazeTowardCamera": {
+          "observation": "The irises are displaced toward viewer-left relative to their apertures, opposing the viewer-right head turn. The apparent gaze is toward the viewer's vicinity, possibly slightly to viewer-left of the camera.",
+          "uncertainty": "Direct eye contact is plausible but not certain; precise fixation cannot be recovered."
+        },
+        "headOrientation": {
+          "observation": "Three-quarter head turn toward viewer-right, with the viewer-left ear visible and the near cheek occupying more image area. The face is not frontal, and the chin appears mildly lowered.",
+          "uncertainty": "Subtle head tilt and vertical inclination remain ambiguous."
+        },
+        "depictionRuleContribution": [
+          "Describe the cheek primarily through smooth shading, reserving stronger lines for lids, nose, mouth, and jaw.",
+          "Maintain perspective-dependent eye asymmetry without making the two apertures identical.",
+          "Keep the gaze offset distinct from the facial orientation."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Preserve the relatively smooth cheek surface, elongated lower face, and rounded-flat chin contour.",
+          "Preserve the specific long near-eye aperture and tighter far-eye aperture.",
+          "Do not assume that visual resemblance establishes the same identity as another source."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K169",
+      "personId": "person-0170",
+      "name": "박태겸",
+      "sourceSha256": "8893b258caef97a7b870b36a61fde1a59cb7f42b526bac8aa0accb046e3fc83d",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0170.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "8893b258caef97a7b870b36a61fde1a59cb7f42b526bac8aa0accb046e3fc83d",
+        "faceSilhouette": {
+          "observation": "A broad viewer-left cheek transitions through a distinct jaw corner into a long sloping jaw edge. The lower face narrows to a compact, bluntly rounded chin. The viewer-right cheek contour is comparatively tight and steep, while the near cheek is rendered as a broad smooth plane.",
+          "uncertainty": "The turn limits assessment of actual bilateral cheek and jaw proportions; the upper contour is partly hidden."
+        },
+        "eyeGeometry": {
+          "observation": "The viewer-left eye is an elongated, narrow almond with a firm upper-lid edge and a shallow lower-lid curve. The viewer-right eye is visibly shorter and more compact. Both have tapered corners and upper lids overlapping the irises. The far eye sits lower in the image.",
+          "uncertainty": "Perspective, head placement, and lid shape jointly determine the visible height difference; no single cause can be assigned confidently."
+        },
+        "gazeTowardCamera": {
+          "observation": "Both irises are positioned toward viewer-left, leaving larger scleral regions toward viewer-right. The gaze appears redirected toward the viewer despite the head facing viewer-right.",
+          "uncertainty": "The distinction between direct camera gaze and a gaze slightly past the camera is unresolved."
+        },
+        "headOrientation": {
+          "observation": "The head turns toward viewer-right in three-quarter view, showing the viewer-left ear and a wider near-side cheek. The chin appears slightly lowered rather than lifted.",
+          "uncertainty": "A small lateral tilt is possible, but the sloping eye line is not sufficient to establish it."
+        },
+        "depictionRuleContribution": [
+          "Use simplified planar shading with crisp but selective facial contours.",
+          "Keep near-side and far-side eye geometry visibly different under perspective.",
+          "Preserve iris placement as an independent cue to gaze."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Retain this source's compact blunt chin, broad smooth near cheek, and particular jaw taper.",
+          "Retain the exact relationship of the long near eye to the compact far eye.",
+          "Do not merge this source's facial proportions with another source merely because the pose and rendering are similar."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K194",
+      "personId": "person-0195",
+      "name": "오해린",
+      "sourceSha256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0195.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "faceSilhouette": {
+          "observation": "Oval facial silhouette with gently tapered lower face and a defined chin",
+          "uncertainty": "low"
+        },
+        "eyeShape": {
+          "observation": "Almond-shaped eyes",
+          "uncertainty": "low"
+        },
+        "gazeTowardCamera": {
+          "observation": "yes",
+          "uncertainty": "medium"
+        },
+        "headOrientation": {
+          "observation": "Turned to the viewer's right",
+          "uncertainty": "low"
+        },
+        "torsoOrientation": {
+          "observation": "Mostly oriented toward the camera",
+          "uncertainty": "medium"
+        }
+      },
+      "torsoOrientation": "retained-source-observation",
+      "gaze": "retained-source-observation"
+    },
+    {
+      "characterId": "K219",
+      "personId": "person-0220",
+      "name": "최지우",
+      "sourceSha256": "04aea26fd505194b6b27f2ef155f4184003063094a003c03f846b3bd4ee5c1f6",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0220.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "04aea26fd505194b6b27f2ef155f4184003063094a003c03f846b3bd4ee5c1f6",
+        "faceSilhouette": {
+          "observation": "The face has a broad, comparatively flat viewer-left cheek plane and an angular jaw transition below the visible ear. The jaw runs diagonally into a wide, rounded-square chin with a relatively flat lower edge. The viewer-right lower contour is compressed and steeper. Fine surface marks trace portions of the cheek, jaw, and chin without replacing the underlying contour.",
+          "uncertainty": "The far jaw is foreshortened, and surface marks can make its edge appear more textured than the anatomical silhouette itself."
+        },
+        "eyeGeometry": {
+          "observation": "Both eyes have narrow almond apertures with pronounced upper-lid edges and lightly defined lower lids. The viewer-left eye is longer, with a relatively straight central upper edge; the viewer-right eye is shorter and compressed beside the bridge. The irises are partially occluded above, and the corners taper rather than forming rounded openings.",
+          "uncertainty": "The far inner corner is constrained by perspective; full frontal eye shape is unknown."
+        },
+        "gazeTowardCamera": {
+          "observation": "The irises sit toward viewer-left within the apertures, countering the viewer-right head turn. The apparent direction is toward the viewer's vicinity or slightly to viewer-left of the camera.",
+          "uncertainty": "Exact eye contact cannot be confirmed from the stylized iris placement."
+        },
+        "headOrientation": {
+          "observation": "Three-quarter view turned toward viewer-right, with the viewer-left ear exposed and the viewer-right cheek narrowed in projection. The head appears comparatively upright, with at most a slight chin lowering.",
+          "uncertainty": "Small differences in vertical inclination relative to the other sources are not reliably measurable from these drawings."
+        },
+        "depictionRuleContribution": [
+          "Keep fine facial surface texture subordinate to the larger cheek and jaw planes.",
+          "Use selective line weight and restrained tonal modeling to maintain the facial structure.",
+          "Treat head direction and iris direction as separate observations."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Retain the wide rounded-square chin and angular near-jaw transition.",
+          "Retain the visible fine facial surface marks as source-specific detail, not a requirement for other faces.",
+          "Preserve this source's lid contours and cheek-to-chin proportions independently of the similar compositions."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K245",
+      "personId": "person-0246",
+      "name": "백온",
+      "sourceSha256": "cb8149a705bc229362922e0a1a2493f169cc92120889602fe5ebece3169fdd4a",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0246.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "cb8149a705bc229362922e0a1a2493f169cc92120889602fe5ebece3169fdd4a",
+        "faceSilhouette": {
+          "observation": "An elongated, angular face with a broad visible viewer-left cheek plane. The viewer-left contour descends from the ear through a distinct jaw corner, then follows a long diagonal toward a moderately broad, rounded-square chin. The viewer-right cheek and jaw appear narrower in perspective. Cheek width is appreciably greater than chin width.",
+          "uncertainty": "The far-side jaw is foreshortened, and the upper temple contour is partly obscured. Frontal face width and bilateral jaw symmetry cannot be established."
+        },
+        "eyeGeometry": {
+          "observation": "Both apertures are narrow and horizontally elongated, with heavy upper-lid contours and partially covered irises. The viewer-left eye is visibly wider; its outer corner tapers toward viewer-left, while its inner corner sits lower near the nose. The viewer-right eye is shorter in perspective, with a curved upper lid and a more visibly rounded lower boundary. The eye line descends toward viewer-right.",
+          "uncertainty": "The illustrated lid shapes combine perspective and expression; their separate contributions cannot be determined. Small corner details are simplified."
+        },
+        "gazeTowardCamera": {
+          "observation": "Both irises sit toward viewer-left within their visible apertures, counter to the head's viewer-right turn. This suggests a look back toward the viewer or camera rather than eyes following the nose direction.",
+          "uncertainty": "Approximate camera-directed gaze is plausible, but exact eye contact versus a nearby viewer-left target is ambiguous in the stylized drawing."
+        },
+        "headOrientation": {
+          "observation": "Three-quarter head turn toward viewer-right, with the viewer-left ear and cheek prominently exposed and the viewer-right facial side compressed. The eye line slopes downward toward viewer-right.",
+          "uncertainty": "The precise degree of turn is unknown. The sloping eye line does not independently establish how much comes from head tilt versus perspective; vertical head orientation is less certain."
+        },
+        "depictionRuleContribution": [
+          "Use clear contour lines with broad, softly blended facial planes and sharper shadow shapes beneath the jaw.",
+          "Represent the far eye as perspective-shortened without duplicating the near eye's dimensions.",
+          "Keep eye direction independent of the three-quarter head turn."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Preserve the broad visible cheek, long diagonal jaw edge, and rounded-square chin.",
+          "Preserve the relatively smooth under-eye region and the particular unequal eye apertures.",
+          "Do not replace this contour with the narrower lower-face shape or more pronounced facial creases of another source."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K271",
+      "personId": "person-0272",
+      "name": "이홍원",
+      "sourceSha256": "275ae679cece7140fd38d63b5017af13ee766a4143343ae9ba3d42bf5e8c290f",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0272.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "275ae679cece7140fd38d63b5017af13ee766a4143343ae9ba3d42bf5e8c290f",
+        "faceSilhouette": {
+          "observation": "An elongated face with a broad viewer-left cheek and a distinctly tapering lower half. A noticeable contour change below the visible ear leads into a long slanted jaw. The chin is compact relative to the cheeks, with a flattened, softly rounded bottom. Under-eye folds, forehead lines, and cheek creases add local surface structure without changing the overall silhouette.",
+          "uncertainty": "Perspective conceals the full far-side cheek and jaw. Surface creases should not be treated as proof of demographic characteristics or as a reliable measure of underlying bone shape."
+        },
+        "eyeGeometry": {
+          "observation": "The viewer-left eye is a long, shallow aperture with a heavy upper lid, a tapered outer corner, and conspicuous curved folds below the lower lid. Its inner corner narrows near the nose. The viewer-right eye is shorter and more rounded in perspective, with visible lower-lid definition. Both upper lids overlap the irises; the eye line descends toward viewer-right.",
+          "uncertainty": "The far inner corner is compressed beside the nose bridge. The amount of narrowing caused by expression rather than stable lid geometry is unknown."
+        },
+        "gazeTowardCamera": {
+          "observation": "The irises are displaced toward viewer-left within the openings, opposing the head's viewer-right direction. The apparent gaze returns toward the viewer or camera vicinity.",
+          "uncertainty": "Exact camera alignment is not verifiable; a target slightly to viewer-left of the camera remains possible."
+        },
+        "headOrientation": {
+          "observation": "The head is turned toward viewer-right in three-quarter view. The viewer-left ear is exposed, the near cheek occupies more width, and the far eye and cheek are foreshortened. The eye line slopes downward toward viewer-right.",
+          "uncertainty": "Exact turn and vertical orientation are unknown. Perspective and any lateral tilt cannot be fully separated."
+        },
+        "depictionRuleContribution": [
+          "Allow individualized facial creases and lower-lid folds within the same restrained line-and-shading style.",
+          "Maintain asymmetric eye widths appropriate to the head turn.",
+          "Describe apparent camera-directed gaze from iris placement, not from head orientation alone."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Retain the compact chin and tapering lower-face proportions.",
+          "Retain the pronounced lower-lid folds, forehead lines, and cheek creases as source-specific visible details.",
+          "Do not smooth these details into the less creased eye and cheek surfaces of the other illustrations."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K296",
+      "personId": "person-0297",
+      "name": "장세화",
+      "sourceSha256": "908d8b7c97f04c0e5b482ca3a44577787103dee82c4a818e3b2d425a647dd0f7",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0297.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "908d8b7c97f04c0e5b482ca3a44577787103dee82c4a818e3b2d425a647dd0f7",
+        "faceSilhouette": {
+          "observation": "A smooth, elongated angular contour with a broad viewer-left cheek plane. The contour below the ear makes a clear jaw transition, followed by a relatively straight diagonal lower edge. The lower face tapers into a rounded-square chin with a short, nearly flattened bottom. The viewer-right cheek narrows toward the chin under perspective.",
+          "uncertainty": "The far-side mandibular contour is only partially visible. The hidden temple and frontal cheek-to-jaw proportions cannot be reconstructed confidently."
+        },
+        "eyeGeometry": {
+          "observation": "The viewer-left eye is horizontally elongated and shallow, with a dark, gently arched upper lid, a tapered outer corner, and a lightly indicated lower lid. The viewer-right eye has a shorter, more rounded aperture due to perspective. Both irises are clipped by the upper lids. The eye line descends toward viewer-right.",
+          "uncertainty": "The far eye's corner geometry is compressed and partly crowded by nearby contours. Stable aperture shape cannot be completely separated from the narrowed expression."
+        },
+        "gazeTowardCamera": {
+          "observation": "Both irises lie toward viewer-left within their apertures. The apparent gaze is back toward the viewer or camera region despite the nose pointing viewer-right.",
+          "uncertainty": "The drawing supports approximate viewer-directed gaze, not a definite distinction between direct eye contact and a slightly off-camera target."
+        },
+        "headOrientation": {
+          "observation": "Three-quarter turn toward viewer-right, exposing the viewer-left ear and broad near-side cheek while shortening the viewer-right facial side. The eye line falls toward viewer-right.",
+          "uncertainty": "The amount of head turn, lateral tilt, and vertical inclination cannot be specified reliably from this illustration."
+        },
+        "depictionRuleContribution": [
+          "Use smooth cheek planes while retaining an explicit angular jaw contour.",
+          "Define eyes primarily through upper-lid weight, restrained lower-lid lines, and perspective-dependent aperture width.",
+          "Keep source-specific lower-face proportions rather than imposing a standard chin."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Preserve the smooth cheek surface, relatively straight jaw diagonal, and flattened rounded-square chin.",
+          "Preserve the sparse lower-lid detailing rather than importing the second source's prominent folds.",
+          "Maintain the exact near-eye length and far-eye compression rather than treating all four eye shapes as interchangeable."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K322",
+      "personId": "person-0323",
+      "name": "류은비",
+      "sourceSha256": "cde56e9a04702487b43dd9e3410b2b370cb06a73bff76ed0c23d7beba59a2edc",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0323.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "cde56e9a04702487b43dd9e3410b2b370cb06a73bff76ed0c23d7beba59a2edc",
+        "faceSilhouette": {
+          "observation": "An elongated face with a broad, gently curved viewer-left cheek and a strong contour transition below the ear. The jaw descends diagonally into a compact, rounded-square chin. The visible mouth-to-chin region is relatively long, and the viewer-right jaw is a short, steeply tapering contour. The cheeks remain wider than the lower chin.",
+          "uncertainty": "The far-side contour is foreshortened and the temples are partly hidden. Apparent lower-face length is affected by the pose and cannot be converted into frontal proportions."
+        },
+        "eyeGeometry": {
+          "observation": "The viewer-left aperture is long and narrow, bounded by a heavy upper lid and a subtle lower lid; its outer corner is tapered, and the opening narrows at the inner corner. The viewer-right eye is distinctly shorter, with a curved upper lid and a rounded lower edge. Upper lids cover the tops of both irises, and the eye line descends toward viewer-right.",
+          "uncertainty": "Nearby overlapping contours obscure some upper-eye detail on viewer-right. Fine corner shapes and the contribution of expression are uncertain."
+        },
+        "gazeTowardCamera": {
+          "observation": "The irises are positioned toward viewer-left within the visible openings, suggesting a look back toward the viewer or camera vicinity rather than along the viewer-right head turn.",
+          "uncertainty": "Direct eye contact is not certain; the apparent target could sit slightly to viewer-left of the camera."
+        },
+        "headOrientation": {
+          "observation": "The head turns toward viewer-right in three-quarter view, with a prominent viewer-left ear and cheek and a compressed viewer-right facial side. The eye line slopes downward toward viewer-right.",
+          "uncertainty": "Exact turn and vertical inclination are unknown. The image does not cleanly separate lateral head tilt from perspective effects."
+        },
+        "depictionRuleContribution": [
+          "Combine softly modeled cheek volume with a clearly drawn lower-face outline.",
+          "Retain perspective differences between the two eyes and distinguish their gaze direction from the head direction.",
+          "Allow subtle source-specific differences in chin length and eye aperture within the shared illustration style."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Preserve the relatively long mouth-to-chin region and compact rounded-square chin.",
+          "Preserve the gently curved near cheek and strong jaw transition below the ear.",
+          "Do not substitute another source's under-eye folds, chin breadth, or lid contours."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K348",
+      "personId": "person-0349",
+      "name": "고서준",
+      "sourceSha256": "6ce091227b3b77101700cf0f862db31ef6d68b25e7c691da421cb3096c37827f",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0349.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "6ce091227b3b77101700cf0f862db31ef6d68b25e7c691da421cb3096c37827f",
+        "faceSilhouette": {
+          "observation": "The visible face is elongated and angular, with a broad viewer-left cheek plane, a pronounced jaw transition below the visible ear, and a long diagonal jaw edge leading to a relatively broad, flattened-rounded chin. The viewer-right cheek contour narrows toward the chin, producing an asymmetric silhouette consistent with the head turn.",
+          "uncertainty": "The upper forehead contour is partly hidden. The far-side jaw and cheek are foreshortened, so their full width and underlying symmetry cannot be established."
+        },
+        "eyeGeometry": {
+          "observation": "Both apertures are narrow, horizontally extended almond shapes with strongly defined upper lids and lighter lower-lid contours. The viewer-left eye is wider in the image; its upper lid is relatively straight through the middle, with tapered corners. The viewer-right eye is shorter in apparent width and more compressed beside the nose. Both upper lids overlap the upper portions of the irises. The eye line descends toward viewer-right.",
+          "uncertainty": "Perspective and lid narrowing both contribute to the difference in apparent eye size; their individual contributions cannot be separated reliably."
+        },
+        "gazeTowardCamera": {
+          "observation": "The irises sit toward viewer-left within their visible apertures, leaving more exposed sclera toward viewer-right. The eyes appear directed back toward the viewer's vicinity rather than following the nose toward viewer-right.",
+          "uncertainty": "Direct camera fixation is plausible but not certain. The illustration does not establish an exact gaze target, and the three-quarter head turn alone is not evidence of camera gaze."
+        },
+        "headOrientation": {
+          "observation": "The head is turned toward viewer-right in a three-quarter view. More of the viewer-left cheek and ear are visible, while the viewer-right side is compressed. The eye line slopes downward toward viewer-right, giving a slight sideways inclination.",
+          "uncertainty": "The exact amount of head inclination and any upward or downward tilt are ambiguous; no numeric orientation can be recovered confidently."
+        },
+        "depictionRuleContribution": [
+          "Use clean, selectively weighted contour lines with stronger emphasis on upper lids and major facial boundaries.",
+          "Model facial planes through broad shadow shapes and restrained soft transitions rather than dense surface texture.",
+          "Represent the turned face with unequal visible cheek widths and unequal apparent eye widths.",
+          "Keep iris placement independent of the direction of the head turn."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Preserve this source's broad cheek plane, pronounced jaw transition, and relatively broad, flattened-rounded chin.",
+          "Preserve the particular narrow eye apertures and the degree of compression of the viewer-right eye.",
+          "Retain the specific relationship among the jaw edge, chin width, and lower-face length rather than substituting a generic angular face."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K373",
+      "personId": "person-0374",
+      "name": "남윤경",
+      "sourceSha256": "1698d5afb3e3bb883024a2b03e3af27b67c4ff6eed1522e13804ff3317b8be70",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0374.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "sourceSHA": "1698d5afb3e3bb883024a2b03e3af27b67c4ff6eed1522e13804ff3317b8be70",
+        "faceSilhouette": {
+          "observation": "The face has an elongated, tapering contour, with a broad visible viewer-left cheek and a clearly defined jaw transition below the ear. The jaw runs diagonally toward a rounded, relatively narrow chin. The viewer-right cheek narrows into the lower face. Compared with the other supplied illustration, the chin reads as slightly more tapered and its lower contour more smoothly rounded.",
+          "uncertainty": "Parts of the upper and lateral face boundary are obscured. The far-side contour is foreshortened, and subtle proportional differences may partly reflect rendering or pose rather than underlying anatomy."
+        },
+        "eyeGeometry": {
+          "observation": "The eyes are horizontally extended almond shapes with dark, prominent upper lids and restrained lower-lid lines. The viewer-left aperture is wider and gently curved along its upper edge; the viewer-right aperture is shorter and compressed alongside the nose. The upper lids cover the upper iris edges. Both openings show a rounded lower boundary beneath the iris, and the eye line descends toward viewer-right.",
+          "uncertainty": "The precise inner-corner shapes are partly blended into nearby nose shading. Perspective compression cannot be fully separated from the illustrated eye shapes."
+        },
+        "gazeTowardCamera": {
+          "observation": "Both irises are positioned toward viewer-left within their apertures, with more visible sclera on their viewer-right sides. This suggests a gaze returning toward the viewer's vicinity while the head remains turned toward viewer-right.",
+          "uncertainty": "An exact camera-directed gaze cannot be confirmed from the stylized iris placement. A nearby off-camera target remains possible."
+        },
+        "headOrientation": {
+          "observation": "The head is shown in three-quarter view turned toward viewer-right, exposing the viewer-left ear and a larger viewer-left cheek plane. The far side is visibly compressed. The eye line slopes downward toward viewer-right, indicating a slight sideways inclination.",
+          "uncertainty": "Upward or downward head tilt is not unambiguous. The exact degree of turn or inclination is unknown."
+        },
+        "depictionRuleContribution": [
+          "Use economical facial linework supported by broad, softly blended planar shading.",
+          "Maintain perspective asymmetry in the eye apertures and cheek visibility.",
+          "Use upper-lid overlap and restrained lower-lid contours to define the eyes without heavy outlining on every edge.",
+          "Treat the narrower chin and smoothly tapering lower contour as source-specific geometry, not as a universal style requirement."
+        ],
+        "identitySpecificDoNotHomogenize": [
+          "Preserve this source's smoothly tapering lower face and relatively narrow, rounded chin.",
+          "Preserve the particular curvature and opening of each eye rather than copying the other source's apertures.",
+          "Keep the source-specific cheek-to-jaw transition and chin contour even where the overall rendering style resembles the other illustration."
+        ]
+      },
+      "torsoOrientation": "UNVERIFIED",
+      "gaze": "QUALIFIED_UNCERTAINTY_PRESERVED"
+    },
+    {
+      "characterId": "K398",
+      "personId": "person-0399",
+      "name": "정유라",
+      "sourceSha256": "93d13f3be76d5b251cc8ef2d903027d2482366a2b2a8e79650baabb4f7988672",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-0399.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "faceSilhouette": {
+          "observation": "Oval face with a softly tapered jaw and chin",
+          "uncertainty": "low"
+        },
+        "eyeShape": {
+          "observation": "Almond-shaped eyes",
+          "uncertainty": "low"
+        },
+        "gazeTowardCamera": {
+          "observation": "Yes, the gaze is directed toward the viewer",
+          "uncertainty": "medium"
+        },
+        "headOrientation": {
+          "observation": "Head turned toward the viewer's right",
+          "uncertainty": "low"
+        },
+        "torsoOrientation": {
+          "observation": "Torso is mostly oriented toward the viewer, with a slight turn toward the viewer's right",
+          "uncertainty": "medium"
+        }
+      },
+      "torsoOrientation": "retained-source-observation",
+      "gaze": "retained-source-observation"
+    },
+    {
+      "characterId": "K1004",
+      "personId": "person-1004",
+      "name": "이연",
+      "sourceSha256": "3ccb890504b97694200a8bfb38f3eb388e37b240d2bdcc213a23a89daf967d89",
+      "imagePath": "https://media.githubusercontent.com/media/islee23520/seoul-dengoku-wiki/28f940c8b3c7ed6078b4d2c633527078f6bf437b/public/portraits/person-1004.png",
+      "sourceOwnerVerdict": "pass",
+      "sourceOwnerVerdictIsHistorical": true,
+      "observations": {
+        "faceSilhouette": {
+          "observation": "Soft oval silhouette with a tapered chin and gently defined jawline",
+          "uncertainty": "low"
+        },
+        "eyeShape": {
+          "observation": "Almond-shaped eyes with visibly tapered inner and outer corners",
+          "uncertainty": "low"
+        },
+        "gazeTowardCamera": {
+          "observation": "Yes; the eyes appear directed toward the viewer",
+          "uncertainty": "medium"
+        },
+        "headOrientation": {
+          "observation": "Head turned slightly toward the image-right side while remaining visibly presented to the viewer",
+          "uncertainty": "low"
+        },
+        "torsoOrientation": {
+          "observation": "Torso appears mostly front-facing, with a slight angle suggested by the shoulders",
+          "uncertainty": "medium"
+        }
+      },
+      "torsoOrientation": "retained-source-observation",
+      "gaze": "retained-source-observation"
+    }
+  ],
+  "gaps": {
+    "missingTorsoRows": [
+      "K1003",
+      "K1008",
+      "K1007",
+      "K1009",
+      "K998",
+      "K001",
+      "K029",
+      "K423",
+      "K115",
+      "K144",
+      "K169",
+      "K219",
+      "K245",
+      "K271",
+      "K296",
+      "K322",
+      "K348",
+      "K373"
+    ],
+    "qualifiedGazeRows": [
+      "K1003",
+      "K1008",
+      "K1007",
+      "K1009",
+      "K998",
+      "K001",
+      "K029",
+      "K423",
+      "K115",
+      "K144",
+      "K169",
+      "K219",
+      "K245",
+      "K271",
+      "K296",
+      "K322",
+      "K348",
+      "K373"
+    ],
+    "unknownsNotRecoverableFromCurrentPixels": [
+      "Hidden far-side contours",
+      "Frontal proportions independent of pose",
+      "Certain fixation target",
+      "Optical numeric camera calibration"
+    ],
+    "roleHashConflict": {
+      "characterId": "K1005",
+      "personId": "person-1005",
+      "currentCorpusSha256": "aecf12fff4b35b077c812ef80fddd9b7a2f41a15b48cd35fc37fab2c3747a6e1",
+      "laterPlanFramingStandardSha256": "22e618a7c7dde8fdacca49cb05bed675400ea89d0191e7305b6ecacfaf66cdde",
+      "status": "SEPARATE_ROLE_HASH_NOT_INTERCHANGEABLE",
+      "smallestRequiredActualPixelAnalysis": "Only if later framing-standard PNG replaces this identity source, first locate and bind its actual bytes/catalog/review authority, then inspect that one image for changed face/eye/gaze. Do not transfer aecf observations or silently replace current source22."
+    }
+  },
+  "generatedCandidatesCompared": false
+}

@@ -1,0 +1,19 @@
+{
+  "verdict": "APPROVED_EDIT_REGION_LAYOUT",
+  "reviewer": "root session, explicit instruction after viewing full dark preview and magnified light jaw",
+  "scope": "One anatomy reference edit only; not final anatomy, art, assets or Unity approval. Known protected transparent fringe under chin may leave a gap; inspect returned pixels without warp or concealment.",
+  "layoutSha256": "77d45ddbfcf8416465c7092894843f6550cae3acbc477585289d87a706db0f7a",
+  "reportSha256": "8b0ad4325fa66ebb03319319ff7e2fd72c34883e624ca935d373528b445b48ce",
+  "sourceSha256": "7b7f311b11ffcea5f9e8e3a257a8745093ba2b322bd8e4aa3892c86bd5caeed8",
+  "masterSha256": "07206fb08d9b98cf6aaa4e64b1df45421d2f6770f977ae5eaf78103bf54f7926",
+  "maskSha256": "05f47249504c558919d92af4d3e23e6477330cf68bbdf84385f2980b4539b6ae",
+  "protectedFaceMaskSha256": "a5931dd863d11ab2fed6f8814b897aca7c2a49bc12c9af560d9620534d1fd966",
+  "overlay": {"path": "/Users/ilseoblee/workspace/seoul-dengoku/.omo/evidence/portrait-paperdoll-poc-20261021/bb-proportion-comparison.svg", "sha256": "480d052b81f290ff18274851d8b4d461bed98b810f2a76a3eb2bcadfb18f092b"},
+  "reviewedFiles": [
+    {"path": "/Users/ilseoblee/workspace/seoul-dengoku/.omo/evidence/portrait-paperdoll-poc-20261021/math-master-mask-preview-r2-dark.png", "sha256": "9f0af84fce88076fade55afb9352b048573ecdb5c86433c18cf48fc2462faede"},
+    {"path": "/Users/ilseoblee/workspace/seoul-dengoku/.omo/evidence/portrait-paperdoll-poc-20261021/math-jaw-mask-zoom-r2-light.png", "sha256": "2c8f5deed38b1706debd5416842ba2babf027e29f2de099252304dfb97bfaf52"},
+    {"path": "/Users/ilseoblee/workspace/seoul-dengoku/.omo/evidence/portrait-paperdoll-poc-20261021/math-edit-mask-r2-review.md", "sha256": "83b4c830ca980bb8547c9187f302421e9a93d879abcda6a158b2f2bfc64bd6fd"}
+  ],
+  "editableProtectedFaceIntersection": {"working": 0, "native": 0},
+  "postEditChecks": ["preserve raw provider bytes", "inspect light and dark composites", "check pixel gap beneath protected chin fringe", "no warp to hide discontinuity"]
+}

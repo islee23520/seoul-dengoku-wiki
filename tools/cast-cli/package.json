@@ -1,0 +1,18 @@
+{
+  "name": "seoul-cast",
+  "version": "1.0.0",
+  "description": "서울:전국 GURPS 캐릭터 생성 CLI + MCP 서버 + 로컬 GUI",
+  "type": "module",
+  "bin": {
+    "seoul-cast": "./bin/seoul-cast.js"
+  },
+  "scripts": {
+    "start": "node bin/seoul-cast.js serve",
+    "mcp": "node bin/seoul-cast.js mcp"
+  },
+  "keywords": ["gurps", "mcp", "character-generator", "seoul-dengoku"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}

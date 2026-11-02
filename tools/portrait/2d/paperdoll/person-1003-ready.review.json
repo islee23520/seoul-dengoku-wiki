@@ -1,0 +1,16 @@
+{
+  "schema": "paperdoll-review.v1",
+  "verdict": "pass",
+  "scope": "APPROVED_FINAL_ART",
+  "movementSha256": "a841df49b305183c20f9b718f5b294da28800174ac4e804a0d87b29c03c881e3",
+  "reviewer": "root session 01a15c4c-4819-7349-b139-86217a366749; engineering binding authored by st_01a15d7c under explicit authority",
+  "evidence": "Root approved exact frozen bundle and proposal settings; all actual role/lineage refs checked. No native pass fabricated; no Unity QA implied.",
+  "personId": "person-1003",
+  "characterId": "K1003",
+  "sourceSha256": "7b7f311b11ffcea5f9e8e3a257a8745093ba2b322bd8e4aa3892c86bd5caeed8",
+  "bindingSha256": "86cd0139dcd3361c76b044f3ac95781179d6894053abc27586f4e8cce70b0ea8",
+  "authority": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/TOOL/avatar-gen/portrait/2d/paperdoll/person-1003-ready.authority.json",
+    "sha256": "873f15a0b69d407f1187c5019dac2e7b1679735c7aef96187a0080e343beb355"
+  }
+}

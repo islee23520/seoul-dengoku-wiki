@@ -1,0 +1,87 @@
+{
+	"schema": "seoul.hair-vocabulary/v1",
+	"axis": "hair",
+	"observation": {
+		"status": "dated-observation",
+		"notPermanent": true,
+		"observedAt": "2026-10-23T16:23:53.440Z",
+		"note": "Reference vocabulary only. Labels are copied from printed sheet text. Unlabeled panels stay unlabeled. This is not permission to scrape or train on the sheet images."
+	},
+	"permission": {
+		"status": "unverified",
+		"use": "reference-vocabulary-only",
+		"imageReuse": "forbidden-until-separately-permitted",
+		"training": "forbidden-until-separately-permitted",
+		"notedGrant": "Posts say quote-posts and hairstyle use are free. A training or image-reuse grant was not observed."
+	},
+	"trigger": {
+		"defaultContract": "unknown",
+		"words": []
+	},
+	"sources": [
+		{
+			"role": "printed-labels",
+			"url": "https://x.com/Mio_2am/status/2110475734682935513",
+			"retrievedAt": "2026-10-23T16:23:53.440Z",
+			"localArchive": ".omo/ulw-research/20261024-005219/assets/shots/xpost-mio/vol4-viewport.png"
+		},
+		{
+			"role": "unlabeled-sheet",
+			"url": "https://x.com/Mio_2am/status/2113451634131173881",
+			"imageUrl": "https://pbs.twimg.com/media/HVR8qXwa4AA-AAg.jpg?name=orig",
+			"retrievedAt": "2026-10-23T15:56:12.084Z",
+			"localArchive": ".omo/ulw-research/20261024-005219/assets/mio-hairstyle-vol5-orig.jpg"
+		}
+	],
+	"counts": {
+		"entries": 4,
+		"printedLabels": 3,
+		"unlabeled": 1
+	},
+	"entries": [
+		{
+			"id": "mio-vol4/1",
+			"label": "Soft Micro Bangs Straight Hair",
+			"series": "Mio's Hairstyle Designs",
+			"volume": 4,
+			"panel": 1,
+			"labelStatus": "printed",
+			"sourceUrl": "https://x.com/Mio_2am/status/2110475734682935513",
+			"observedAt": "2026-10-23T16:23:53.440Z",
+			"evidence": "wave-2 screenshot assets/shots/xpost-mio/vol4-viewport.png; English label printed on panel 1"
+		},
+		{
+			"id": "mio-vol4/2",
+			"label": "Rounded Bangs Straight Hair",
+			"series": "Mio's Hairstyle Designs",
+			"volume": 4,
+			"panel": 2,
+			"labelStatus": "printed",
+			"sourceUrl": "https://x.com/Mio_2am/status/2110475734682935513",
+			"observedAt": "2026-10-23T16:23:53.440Z",
+			"evidence": "wave-2 screenshot assets/shots/xpost-mio/vol4-viewport.png; English label printed on panel 2"
+		},
+		{
+			"id": "mio-vol4/3",
+			"label": "Side-Parted Airy Bangs Straight Hair",
+			"series": "Mio's Hairstyle Designs",
+			"volume": 4,
+			"panel": 3,
+			"labelStatus": "printed",
+			"sourceUrl": "https://x.com/Mio_2am/status/2110475734682935513",
+			"observedAt": "2026-10-23T16:23:53.440Z",
+			"evidence": "wave-2 screenshot assets/shots/xpost-mio/vol4-viewport.png; English label printed on panel 3"
+		},
+		{
+			"id": "mio-vol5/sheet",
+			"label": null,
+			"series": "Mio's Hairstyle Designs",
+			"volume": 5,
+			"panel": null,
+			"labelStatus": "unlabeled",
+			"sourceUrl": "https://x.com/Mio_2am/status/2113451634131173881",
+			"observedAt": "2026-10-23T15:56:12.084Z",
+			"evidence": "assets/mio-hairstyle-vol5-orig.jpg is a numbered 3x3 ponytail sheet with no printed English style names. Panels are not invented labels."
+		}
+	]
+}

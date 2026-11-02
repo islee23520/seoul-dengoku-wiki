@@ -1,0 +1,13 @@
+{
+  "schema": "paperdoll-input.v1",
+  "personId": "person-1003",
+  "characterId": "K1003",
+  "name": "조재표",
+  "adult": true,
+  "sameOwnerRecipient": true,
+  "source": {"path": "/Users/ilseoblee/workspace/seoul-dengoku-tools/ART-ASSETS/portrait-references/wiki-people/images/person-1003.png", "sha256": "7b7f311b11ffcea5f9e8e3a257a8745093ba2b322bd8e4aa3892c86bd5caeed8"},
+  "registry": {"path": "/Users/ilseoblee/workspace/seoul-dengoku-tools/ART-ASSETS/portrait-references/wiki-people/manifest.json", "sha256": "01ae1079662dd44bee89522a1cee3d8f4bdd6caff1712101c6908697724d30c3"},
+  "stage": "living",
+  "parameters": {"background": "transparent"},
+  "output": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/source/person-1003-living-v1.png"
+}

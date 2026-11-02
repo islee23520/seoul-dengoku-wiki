@@ -1,0 +1,71 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp,writeFile,readFile,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {createServer} from 'node:http';
+import {once} from 'node:events';
+import {maskedEdit} from './masked-edit.mjs';
+import {hash,pngBytes,dispatch} from './workflow.mjs';
+import {portraitPng} from '../test-fixtures/connection.mjs';
+import {ownershipPng} from './ownership-png.mjs';
+import {deflateSync} from 'node:zlib';
+
+test('grayscale ownership uses intensity, not absent alpha; original bytes unchanged',()=>{
+  const chunk=(type,data)=>{const body=Buffer.concat([Buffer.from(type),data]);let crc=0xffffffff;for(const b of body){crc^=b;for(let i=0;i<8;i++)crc=(crc>>>1)^((crc&1)?0xedb88320:0);}const out=Buffer.alloc(data.length+12);out.writeUInt32BE(data.length);body.copy(out,4);out.writeUInt32BE((crc^0xffffffff)>>>0,out.length-4);return out;};
+  const header=Buffer.alloc(13);header.writeUInt32BE(2);header.writeUInt32BE(1,4);header[8]=8;
+  const bytes=Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',header),chunk('IDAT',deflateSync(Buffer.from([0,0,255]))),chunk('IEND',Buffer.alloc(0))]);
+  const before=hash(bytes),result=ownershipPng(bytes);assert.deepEqual([...result.owned],[0,255]);assert.equal(result.width,2);assert.equal(hash(bytes),before);
+});
+
+for(const masterOnly of [false,true]) test('mask-aware local multipart binds '+(masterOnly?'one master':'master and identity')+' and never retries a rejected request',async t=>{
+  const dir=await mkdtemp(join(tmpdir(),'paperdoll-multipart-synthetic-'));t.after(()=>rm(dir,{recursive:true,force:true}));
+  const ref=async(name,value)=>{const path=join(dir,name);const bytes=Buffer.isBuffer(value)?value:Buffer.from(JSON.stringify(value));await writeFile(path,bytes);return {path,sha256:hash(bytes)};};
+  const master=await ref('master.png',portraitPng(832,1136));
+  const source=await ref('person-1003.png',portraitPng(16,16));
+  const mask=await ref('edit-mask.png',portraitPng(832,1136));
+  const roles=['hairBack','body','head','clothing','hairFront','deadHead','headlessBody'];
+  const parts=[];
+  for(const [index,role] of roles.entries()) {const px=Buffer.alloc(832*1136*4);px[index*4+3]=255;const component=await ref(role+'.png',pngBytes(832,1136,px));parts.push({role,cropRect:[0,0,832,1136],logicalSize:[832,1136],pivot:[0,0],sourceAnchor:[0,0],targetAnchor:[0,0],neckSeamOwnership:role==='body'?'owns':'not-owned',transform:[1,0,0,1,0,0],transformProvenance:'synthetic fixture',occludes:[],occupiedBounds:[index,0,1,1],mask:component});}
+  const evidence=await ref('review.json',{fixtureOnly:true});
+  const geometry=await ref('geometry.json',{schema:'paperdoll-geometry.v1',status:'approved',coordinateSystem:'pixels-top-left-x-right-y-down',canvas:{width:832,height:1136},approval:{verdict:'pass',reviewer:'synthetic only',evidence},measurementEvidence:'synthetic only',reference:evidence,master,masterScale:1,neckOwner:'body',occlusionOrder:roles,parts,editMasks:{'body-base':mask}});
+  const config=await ref('config.json',{schema:'paperdoll-config.v1',canvas:{width:832,height:1136},roles,subjects:[{personId:'person-1003',characterId:'K1003'}],geometry});
+  const overlay=await ref('synthetic-overlay.png',portraitPng(16,16));
+  const report=await ref('synthetic-math-report.json',{schemaVersion:1,status:'MEASURED_DESIGN_NOT_APPROVED_MASTER',source,visual:{...overlay,finishedArt:false},metrics:{fixtureOnly:true},headFit:{scale:1,translation:[0,0],rmsPx:1,residualsXY:[[1,1]]},torsoGarmentProxyFit:{scale:1,translation:[0,0],verticalResidualsPx:[1,-1]},neckConstraint:{status:'UNDERDETERMINED'},pivotSensitivity:[],reference:{landmarks:{fixtureOnly:true}}});
+  const reportValue=JSON.parse(await readFile(report.path,'utf8'));reportValue.source={...source,canonicalLandmarks:{points:{fixtureOnly:true}}};
+  const actualReport=await ref('synthetic-math-report.json',reportValue);
+  const rootReview=await ref('synthetic-numeric-review.json',{verdict:'ROOT_REVIEWED_NUMERIC_AND_OVERLAY',reportSha256:actualReport.sha256,overlaySha256:overlay.sha256,fixtureOnly:true});
+  const geometryValue=JSON.parse(await readFile(geometry.path,'utf8'));
+  geometryValue.mathematicalAudit={kind:'reference-constraint-solve',status:'ROOT_REVIEWED_NUMERIC_AND_OVERLAY',sourceSha256:source.sha256,masterSha256:master.sha256,maskSha256:mask.sha256,report:actualReport,overlay,rootReview};
+  const auditedGeometry=await ref('geometry.json',geometryValue);
+  const configValue=JSON.parse(await readFile(config.path,'utf8'));configValue.geometry=auditedGeometry;
+  const auditedConfig=await ref('config.json',configValue);
+  const registry=await ref('registry.json',{entries:[{personId:'person-1003',characterId:'K1003',image:{path:'person-1003.png',sha256:source.sha256}}]});
+  const templatePath=new URL('./templates.json',import.meta.url).pathname, templateBytes=await readFile(templatePath),templates=JSON.parse(templateBytes);
+  let posts=0;
+  const server=createServer(async(req,res)=>{
+    posts++;
+    const chunks=[];for await(const chunk of req)chunks.push(chunk);
+    const request=new Request('http://fixture/images/edits',{method:'POST',headers:{'content-type':req.headers['content-type']},body:Buffer.concat(chunks)});
+    const form=await request.formData();const images=form.getAll('image[]');
+    assert.equal(images.length,masterOnly?1:2);assert.equal(hash(Buffer.from(await images[0].arrayBuffer())),master.sha256);if(!masterOnly)assert.equal(hash(Buffer.from(await images[1].arrayBuffer())),source.sha256);
+    assert.equal(hash(Buffer.from(await form.get('mask').arrayBuffer())),mask.sha256);
+    assert.equal(form.get('size'),'832x1136');assert.equal(form.get('model'),'gpt-image-2.5-sunburst');
+    res.writeHead(400,{'content-type':'application/json'});res.end('{"error":"synthetic rejection"}');
+  });
+  const listening=once(server,'listening');server.listen(0,'127.0.0.1');await listening;
+  t.after(()=>new Promise(resolve=>server.close(resolve)));
+  const connection=await ref('connection.json',{schemaVersion:1,provider:'openai-compatible',baseUrl:'http://127.0.0.1:'+server.address().port,allowUnauthenticated:true});
+  const request={schema:'paperdoll-masked-edit.v1',config:auditedConfig,personId:'person-1003',characterId:'K1003',source,registry,master,mask,referenceRoles:masterOnly?['registered-editable-master']:['registered-editable-master','same-recipient-identity-technique'],maskSemantics:'alpha-zero-editable-first-image',stage:'body-base',prompt:(masterOnly?templates.masterOnlyCommon:templates.maskedEditCommon)+'\n'+templates.stages['body-base'],template:{path:templatePath,sha256:hash(templateBytes)},output:join(dir,'out.png'),size:'832x1136'};
+  const requestRef=await ref('request.json',request);
+  const wrongRoles={...request,referenceRoles:['drawing-technique-only','framing-only','recipient-appearance-only']};await writeFile(requestRef.path,JSON.stringify(wrongRoles));
+  await assert.rejects(maskedEdit(requestRef.path,{connectionConfig:connection.path}),/exact upload roles/);assert.equal(posts,0);
+  await writeFile(requestRef.path,JSON.stringify(request));
+  const incomplete=await ref('incomplete-four-layer.json',{schema:'paperdoll-batch.v1',entries:[{personId:'person-1003',layers:parts.slice(0,4)}]});
+  await assert.rejects(dispatch(incomplete.path,{connectionConfig:connection.path}),/unsupported masked edit request/);assert.equal(posts,0);
+  await assert.rejects(dispatch(requestRef.path,{connectionConfig:connection.path}),/rejected/);
+  assert.equal(posts,1);assert.equal(await readFile(request.output+'.response.json','utf8'),'{"error":"synthetic rejection"}');
+  await assert.rejects(maskedEdit(requestRef.path,{connectionConfig:connection.path}),/overwrite/);assert.equal(posts,1);
+  const bad={...request,output:join(dir,'bad.png'),source:{...source,sha256:'a'.repeat(64)}};await writeFile(requestRef.path,JSON.stringify(bad));
+  await assert.rejects(maskedEdit(requestRef.path,{connectionConfig:connection.path}),/actual mathematical report\/source mismatch/);assert.equal(posts,1);
+});

@@ -1,0 +1,55 @@
+{
+  "instanceId": "unimate-fork",
+  "evidenceBasis": "task-1 corrected baseline and inventory, 2026-10-23",
+  "recoveryReady": false,
+  "rootRefs": {
+    "source": "unimate-fork.source",
+    "runtime": "unimate-fork.runtime",
+    "user": "unimate-fork.user",
+    "nodes": "unimate-fork.nodes",
+    "models": "unimate-fork.models",
+    "input": "unimate-fork.input",
+    "output": "unimate-fork.output",
+    "backup": "unimate-fork.backup"
+  },
+  "source": {
+    "observedCommit": null,
+    "approvedRunningCommit": null,
+    "dirtyBytes": "unresolved",
+    "declaration": "unimate.source.json"
+  },
+  "runtime": {
+    "observed": null,
+    "dependencyLock": "unresolved",
+    "pipFreeze": "unresolved",
+    "nativeBuildPins": "unresolved"
+  },
+  "nodes": {
+    "observedEntries": [],
+    "completeness": "unresolved"
+  },
+  "workflows": {
+    "uiJson": "private-backup-required",
+    "apiGraph": "unresolved",
+    "nodeDependencies": "unresolved"
+  },
+  "models": {
+    "verification": "unresolved",
+    "pins": [],
+    "userCreatedBytesBackupRequired": true
+  },
+  "data": {
+    "consistentBackup": "not-performed",
+    "preservePriorDbBkp": true,
+    "inputsOutputsAndReferencedAssets": "private-backup-required"
+  },
+  "restore": {
+    "status": "not-run",
+    "procedure": "../../../../seoul-dengoku-tools/TOOL/docs/Local-AI-Persistence-Policy.md"
+  },
+  "unresolved": [
+    "consume source acquisition receipt from owning lane",
+    "independent runtime and complete model/access pins",
+    "actual inference and artifact validation not run"
+  ]
+}

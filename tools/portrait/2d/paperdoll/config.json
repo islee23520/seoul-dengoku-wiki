@@ -1,0 +1,11 @@
+{
+  "schema": "paperdoll-config.v1",
+  "canvas": {"width": 416, "height": 568},
+  "requestCanvases": {"living": {"width": 1536, "height": 1024}, "single": {"width": 1024, "height": 1536}},
+  "anchors": null,
+  "geometry": null,
+  "roles": ["hairBack", "body", "head", "clothing", "hairFront", "deadHead", "headlessBody"],
+  "subjects": [{"name": "조재표", "personId": "person-1003", "characterId": "K1003"}, {"name": "이연", "personId": "person-1004", "characterId": "K1004"}, {"name": "신종목", "personId": "person-1009", "characterId": "K1009"}],
+  "unityContract": null,
+  "note": "GEOMETRY PENDING. No inferred defaults. Canvas is transport only, never registration proof. Require a measured registered master/geometry/masks contract before prepare. No independent per-part fit normalization. Current person-1003 r1/r2 assembly is rejected input, not approved art. Never resize originals; person-1004 original is 1161x1354. K1004 is owner-authored/synthetic, not a real-person grant. Set unityContract to {path,sha256} for the Unity worker-issued seven-role v4 contract before finalize."
+}

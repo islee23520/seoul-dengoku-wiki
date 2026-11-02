@@ -1,0 +1,58 @@
+{
+  "instanceId": "portal",
+  "evidenceBasis": "task-1 corrected baseline and inventory, 2026-10-23",
+  "recoveryReady": false,
+  "rootRefs": {
+    "source": "portal.source",
+    "runtime": "portal.runtime",
+    "user": "portal.user",
+    "nodes": "portal.nodes",
+    "models": "portal.models",
+    "input": "portal.input",
+    "output": "portal.output",
+    "backup": "portal.backup"
+  },
+  "source": {
+    "observedCommit": "49e6cbb76f8085ec4c193913af760881e2258e7e",
+    "approvedRunningCommit": null,
+    "dirtyBytes": "54 static files preserved by task1 snapshot-manifest.json; not imported into clean branch",
+    "observedRemote": "https://github.com/islee23520/seoul-dengoku-tools"
+  },
+  "runtime": {
+    "observed": null,
+    "dependencyLock": "unresolved",
+    "pipFreeze": "unresolved",
+    "nativeBuildPins": "unresolved"
+  },
+  "nodes": {
+    "observedEntries": [],
+    "completeness": "unresolved"
+  },
+  "workflows": {
+    "uiJson": "private-backup-required",
+    "apiGraph": "unresolved",
+    "nodeDependencies": "unresolved"
+  },
+  "models": {
+    "verification": "unresolved",
+    "pins": [],
+    "userCreatedBytesBackupRequired": true
+  },
+  "data": {
+    "consistentBackup": "not-performed",
+    "preservePriorDbBkp": true,
+    "inputsOutputsAndReferencedAssets": "private-backup-required",
+    "authorityRollback": "forbidden: revocation and HMAC journals are not restored with old DB",
+    "jobReplay": "never automatically resubmit UNKNOWN/RUNNING"
+  },
+  "restore": {
+    "status": "not-run",
+    "procedure": "../../../../seoul-dengoku-tools/TOOL/docs/Local-AI-Persistence-Policy.md"
+  },
+  "unresolved": [
+    "actual storage/original DB mapping unknown; launch.json intentionally not read",
+    "owner-supported export required",
+    "clean branch lacks active dirty Comfy adapters",
+    "observed deployed bundle hash does not establish build/source equivalence"
+  ]
+}

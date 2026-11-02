@@ -56,6 +56,8 @@ flowchart LR
 |`snapshots/build-inputs/`|고정 외부 입력(atlas-data.js 등)|generate 소비 대상, 재수집 아님|
 |`.omo/`|비공개 작업·증거·editorial/Soul DB|git·공개 산출물에서 제외|
 |`docs/`, `assets/`, `vendor/`|운영 계약·문장 모티프 원본·tgz 의존성 + InkOS 서브모듈|`vendor/seoul-dengoku-inkos`는 격리 사용|
+|`tools/`|seoul-dengoku-tools에서 이관한 위키·인물 소관 도구(2026-11-02): `portal/`(로컬 도구 포털), `local-ai/`, `portrait/`(2D·3D 초상·`character-tool` ARP 리깅), `shared-web-ui/`, `document-renderer/`, `hub-deploy/`, `people-cli/`, `cast-cli/`, `people/`, `portrait-template/`|각 패키지는 독립 `package.json`·자체 테스트. 루트 `npm`/vite/tsconfig 범위 밖. 상세는 `tools/AGENTS.md`|
+|`.agents/skills/`|에이전트 스킬(`seoul-cast`, `seoul-character-images`, `mda-framework`)|스킬 본문의 실행 경로는 `tools/` 기준|
 
 ## Development Commands
 

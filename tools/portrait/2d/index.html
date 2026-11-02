@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<title>서울:전국 인물 아트 템플릿</title>
+<style>
+body{font:15px/1.5 system-ui,sans-serif;color:#e5e7e5;background:#171c1d;margin:0}
+main{max-width:900px;margin:32px auto;padding:0 24px}h1{font-size:26px}p{color:#b5c3bd}
+.panel{background:#26302f;padding:22px;border:1px solid #50615b;border-radius:8px}
+.row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+label{display:block;margin:0 0 14px}select,input{display:block;width:100%;box-sizing:border-box;background:#111817;color:#f6f7f4;border:1px solid #71857b;border-radius:4px;padding:10px;font:inherit}
+button{background:#a8c3ad;color:#16221d;border:0;border-radius:4px;padding:10px 16px;font:inherit;cursor:pointer;margin:0 8px 0 0}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #e5ca8c}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#0f1515;padding:18px;border:1px solid #50615b;border-radius:4px}
+</style>
+<main><h1>인물 아트 템플릿</h1><p>선택한 이미지 화풍을 공유하고 인물별 외관·의복을 분리합니다. 미승인 값은 연구 시안으로만 생성됩니다.</p>
+<div class="panel"><div class="row">
+<label>인물<select id="character"></select></label><label>구도<select id="mode"><option value="portrait">초상</option><option value="full-body">전신</option><option value="turntable">턴테이블</option></select></label>
+<label>얼굴 방식<select id="faceMode"><option value="">명시적으로 선택</option><option value="unique">UNIQUE · 고유 얼굴</option><option value="template">TEMPLATE · 공용 얼굴 변형</option></select></label>
+<label>얼굴 변형<select id="faceVariant"><option value="">카탈로그 변형 선택</option></select></label>
+<label>작성된 배경 그룹<input id="faceAncestry"></label><label>작성된 피부색<input id="faceSkinTone"></label>
+<label>배경 그룹 선택 출처<input id="faceSelectionSource"></label>
+<label>피부색 출처<input id="faceSkinSource"></label><label>얼굴 선택 성별<select id="faceGender"><option value="">명시적으로 선택</option><option value="male">남성</option><option value="female">여성</option></select></label>
+<label>피부색 작성 상태<select id="faceSkinStatus"><option value="authored-draft">작성 초안</option><option value="art-proposal">아트 제안</option><option value="approved">승인됨</option></select></label>
+<label>턴테이블 시점<select id="view"><option value="">선택 안 함</option><option value="front">정면</option><option value="profile">정측면</option><option value="side">사선 측면</option><option value="back">후면</option></select></label>
+<label>이미지 화풍<select id="mangaStyle"></select></label><label>출력 형식<select id="format"><option value="json">JSON</option><option value="yaml">YAML</option></select></label>
+<label>분리 파츠<select id="part"><option value="">전체 인물</option><option value="head">얼굴·목</option><option value="hair">머리카락</option><option value="upper">상의</option><option value="lower">하의</option><option value="footwear">신발</option><option value="equipment">장비</option></select></label>
+<label>분위기<select id="mood"></select></label><label>성별 (드래프트 변형)<select id="gender"></select></label><label>연령대 (드래프트 변형)<select id="ageCategory"></select></label>
+<label>역할<select id="occupation"></select></label><label>머리<select id="hair"></select></label><label>상의<select id="upper"></select></label><label>변형 ID<input id="variantId" placeholder="외형·성별·연령 변경 시 필수"></label>
+<label>선택 이미지 SHA-256<input id="selectedReferenceSha256" minlength="64" maxlength="64"></label><label>교체 슬롯 JSON<textarea id="slotReplacements" rows="12" style="width:100%">{}</textarea></label></div><button type="button" id="preview">프롬프트 미리보기</button><button type="button" id="generate">이미지 생성</button></div>
+<h2>생성 후보</h2><img id="candidate" alt="생성한 인물 아트 후보" hidden style="max-width:100%;max-height:640px"><h2>JSON 결과</h2><pre id="output" aria-live="polite">선택지를 고른 뒤 미리보기를 누르세요.</pre></main>
+<script>
+const ids=['mood','gender','ageCategory','occupation','hair','upper'];
+fetch('/api/face-variants').then(r=>r.json()).then(catalog=>{const select=document.getElementById('faceVariant');for(const variant of catalog.variants??[]){const option=document.createElement('option');option.value=variant.id;option.textContent=variant.id+' · '+variant.gender+' · '+variant.ancestry+' · '+variant.assetStatus;select.append(option);}});
+document.getElementById('faceMode').onchange=()=>{document.getElementById('faceVariant').disabled=document.getElementById('faceMode').value!=='template';};
+document.getElementById('faceVariant').disabled=true;
+Promise.all([fetch('/api/options').then(r=>r.json()),fetch('/api/characters').then(r=>r.json())]).then(([options,characters])=>{
+  document.getElementById('character').innerHTML=characters.map(x=>`<option value="${x.key}">${x.name} (${x.sourceStatus})</option>`).join('');
+  for(const id of ids)document.getElementById(id).innerHTML=`<option value="">기본값 유지</option>${options[id].map(x=>`<option value="${x.id}">${x.label} · ${x.status}</option>`).join('')}`;
+  document.getElementById('mangaStyle').innerHTML=options.mangaStyle.map(x=>`<option value="${x.id}">${x.label} · ${x.status}</option>`).join('');
+});
+async function run(action){const value=id=>document.getElementById(id).value;const overrides=Object.fromEntries([...ids,'variantId'].map(id=>[id,value(id)]).filter(([,v])=>v));const kind=value('faceMode');const faceMode=kind?{kind,variantId:kind==='template'?value('faceVariant'):null}:null;const faceSelection=kind==='template'?{gender:value('faceGender'),ancestry:value('faceAncestry'),source:value('faceSelectionSource'),skinTone:{value:value('faceSkinTone'),status:value('faceSkinStatus'),source:value('faceSkinSource')}}:null;const payload={faceMode,faceSelection,selectedReferenceSha256:value('selectedReferenceSha256')||null,slotReplacements:JSON.parse(value('slotReplacements')||'{}'),character:value('character'),mode:value('mode'),view:value('view')||null,part:value('part')||null,mangaStyle:value('mangaStyle'),overrides};const out=document.getElementById('output');const candidate=document.getElementById('candidate');out.textContent='처리 중…';candidate.hidden=true;try{const res=await fetch(`/api/${action}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});const data=await res.json();out.textContent=action==='preview'&&value('format')==='yaml'&&res.ok?data.yaml:JSON.stringify(data,null,2);if(res.ok&&data.imageUrl){candidate.src=data.imageUrl;candidate.hidden=false;}if(!res.ok)out.setAttribute('data-error','true');else out.removeAttribute('data-error');}catch(error){out.textContent=error.message;}}
+document.getElementById('preview').onclick=()=>run('preview');document.getElementById('generate').onclick=()=>run('generate');
+fetch('/api/parts').then(r=>r.json()).then(parts=>{const select=document.getElementById('part');for(const value of parts){if([...select.options].some(option=>option.value===value))continue;const option=document.createElement('option');option.value=value;option.textContent=value;select.append(option);}});
+</script>
+</html>

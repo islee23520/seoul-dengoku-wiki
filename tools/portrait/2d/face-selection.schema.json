@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://seoul-dengoku.local/schema/face-selection.v1.json",
+  "type": "object",
+  "required": ["faceMode"],
+  "properties": {
+    "faceMode": {"$ref": "#/$defs/faceMode"},
+    "faceSelection": {"$ref": "#/$defs/faceSelection"},
+    "uniqueFaceRequired": {"type": "boolean"},
+    "uniqueFaceSource": {"$ref": "#/$defs/uniqueFaceSource"}
+  },
+  "$defs": {
+    "uniqueFaceSource": {"type": "object", "additionalProperties": false, "required": ["characterId", "source"], "properties": {"characterId": {"type": "string", "minLength": 1}, "source": {"type": "string", "minLength": 1}}},
+    "faceMode": {
+      "oneOf": [
+        {"type": "object", "additionalProperties": false, "required": ["kind", "variantId"], "properties": {"kind": {"const": "unique"}, "variantId": {"type": "null"}}},
+        {"type": "object", "additionalProperties": false, "required": ["kind", "variantId"], "properties": {"kind": {"const": "template"}, "variantId": {"type": "string", "minLength": 1}}}
+      ]
+    },
+    "faceSelection": {
+      "type": "object", "additionalProperties": false, "required": ["gender", "ancestry", "source", "skinTone"],
+      "properties": {
+        "gender": {"enum": ["male", "female"]},
+        "ancestry": {"type": "string", "minLength": 1, "description": "Explicit catalog group, independent of nationality and skin. Groups outside Korean-inclusive east-asian require reviewed canonical foreign or mixed biological-lineage support; groups may overlap."},
+        "source": {"type": "string", "minLength": 1, "description": "Authored source selecting this catalog group for this recipient."},
+        "skinTone": {"$ref": "character.schema.json#/$defs/slotTrait"}
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "paperdoll-review.v1",
+  "verdict": "pass",
+  "scope": "APPROVED_FINAL_ART",
+  "movementSha256": "a841df49b305183c20f9b718f5b294da28800174ac4e804a0d87b29c03c881e3",
+  "reviewer": "root session 01a15c4c-4819-7349-b139-86217a366749; engineering binding authored by st_01a15d7c under explicit authority",
+  "evidence": "Root approved exact frozen bundle and proposal settings; all actual role/lineage refs checked. No native pass fabricated; no Unity QA implied.",
+  "personId": "person-1009",
+  "characterId": "K1009",
+  "sourceSha256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00",
+  "bindingSha256": "6e4ca8fc91f20450d15bb46b311ba1da5c2589810ba1867a7f2e0b1b0137ec6a",
+  "authority": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/TOOL/avatar-gen/portrait/2d/paperdoll/person-1009-ready.authority.json",
+    "sha256": "07e55409503a19441fb8d8ec2cdcb8dbf7af42f6734adce3a0625bc859893e9e"
+  },
+  "provenanceAudit": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku/.omo/evidence/portrait-paperdoll-poc-20261021/1009-provenance-audit.json",
+    "sha256": "7e2d1e67e251fa000cc2ad7538edfe83d5339af73693540fb0f1dc22f4b5b245"
+  },
+  "faceClassification": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku/.omo/evidence/portrait-paperdoll-poc-20261021/1009-face-preservation-classification.json",
+    "sha256": "81105c74b66f48669b21752c30de591cb0359e7b9b90a299e264aa2395cf889a"
+  },
+  "classificationAcceptance": "Root read and accepted exact classification; released specific1009import hold. Prior763 explained by mask-before-affine baseline; same-pipeline declared feature/ownership comparisons0unexplained. No artwork change, universal equality or Unity QA claimed."
+}

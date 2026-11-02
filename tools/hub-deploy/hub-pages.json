@@ -1,0 +1,20 @@
+{
+  "pages": [
+    { "id": "gdd", "source": "GDD/viewer/dist", "target": "gdd", "required": true, "entry": "index.html" },
+    {
+      "id": "avatar",
+      "source": "TOOL/avatar-gen/viewer",
+      "target": "avatar",
+      "required": true,
+      "entry": "index.html",
+      "assets": [
+        {
+          "source": "ART-ASSETS/avatar-gen/runtime/female-underwear",
+          "target": "female-underwear",
+          "files": ["avatar-contract.json", "female-underwear.glb"]
+        }
+      ]
+    },
+    { "id": "design-store", "source": "GDD/design-store", "target": "design-store", "required": true, "entry": "index.html" }
+  ]
+}

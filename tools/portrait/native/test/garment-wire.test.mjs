@@ -1,0 +1,60 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { createServer } from 'node:http';
+import { once } from 'node:events';
+import { mkdtemp, readFile, writeFile, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { fixture, bytes, trait } from './fixture.mjs';
+import { sha } from '../lib/index.mjs';
+import { modifyPortrait } from '../lib/2d/native-modify.mjs';
+import { encodeFinalPng } from '../lib/2d/final-alpha-export.mjs';
+import { decodeCodexPng } from '../lib/2d/codex-image.mjs';
+
+test('missing-fabric edit forwards exact mask and preserves every protected source pixel', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'garment-wire-'));
+  const f = fixture(), pixels = Buffer.alloc(1024 * 1536 * 4);
+  pixels.set([30, 40, 50, 255], 4);
+  const source = encodeFinalPng({ width: 1024, height: 1536, pixels });
+  const rawPixels = Buffer.from(pixels); rawPixels.set([90, 100, 110, 255], 0); rawPixels.set([200, 210, 220, 255], 4);
+  const raw = encodeFinalPng({ width: 1024, height: 1536, pixels: rawPixels });
+  const maskPixels = Buffer.alloc(pixels.length, 255); maskPixels[3] = 0;
+  const mask = encodeFinalPng({ width: 1024, height: 1536, pixels: maskPixels });
+  let form, calls = 0;
+  const server = createServer(async (req, res) => {
+    calls++; const chunks = []; for await (const chunk of req) chunks.push(chunk);
+    form = await new Response(Buffer.concat(chunks), { headers: { 'Content-Type': req.headers['content-type'] } }).formData();
+    res.setHeader('Content-Type', 'application/json'); res.end(JSON.stringify({ model: form.get('model'), data: [{ b64_json: raw.toString('base64') }] }));
+  });
+  const listening = once(server, 'listening'); server.listen(0, '127.0.0.1'); await listening;
+  try {
+    const original = bytes(f.look); f.look.slots.outfit.upper = trait('Blue jacket with complete sleeve contours');
+    const corrected = bytes(f.look);
+    const assets = [['style.png', 'style-technique'], ['frame.png', 'composition-guide'], ['face.png', 'face-catalog-entry'], ['catalog.json', 'face-catalog-entry'], ['overlay.png', 'overlay-template'], ['rule.json', 'canvas-rule'], ['alpha.json', 'transparency-edge-rule']];
+    for (const [name] of assets) await writeFile(join(dir, name), name.endsWith('.png') ? source : bytes({ schemaVersion: 1 }));
+    await writeFile(join(dir, 'catalog.json'), bytes({ schemaVersion: 1, variants: Array.from({ length: 24 }, (_, index) => ({ id: `synthetic-${index}`, gender: 'female', ancestry: 'east-asian', source: 'synthetic:/catalog', face: { description: trait('Synthetic face') }, referenceImagePath: 'face.png', referenceImageSha256: sha(source) })) }));
+    const manifestAssets = [];
+    for (const [name, role] of assets) manifestAssets.push({ path: name, role, sha256: sha(await readFile(join(dir, name))), provenance: 'synthetic', rights: 'synthetic', rolescope: 'synthetic' });
+    await writeFile(join(dir, 'portrait-package.json'), bytes({ id: 'seoul-dengoku-portrait-package', version: 1, assets: manifestAssets }));
+    const paths = Object.fromEntries(['source', 'mask', 'original', 'corrected', 'contract', 'connection'].map(key => [key, join(dir, key + (['source', 'mask'].includes(key) ? '.png' : '.json'))]));
+    for (const [path, data] of [[paths.source, source], [paths.mask, mask], [paths.original, original], [paths.corrected, corrected]]) await writeFile(path, data);
+    await writeFile(paths.connection, bytes({ schemaVersion: 1, provider: 'openai-compatible', baseUrl: `http://127.0.0.1:${server.address().port}/v1`, allowUnauthenticated: true }));
+    const slots = ['appearance.outfit.upper'];
+    const contract = { schema: 'portrait-garment-edit.v1', approved: true, fabricPresent: false, fabricationCase: 'missing-fabric', maskSemantics: 'binary-alpha-zero-editable.v1', sourceImageSha256: sha(source), inputSnapshotSHA: sha(corrected), originalLookPath: paths.original, originalLookSHA: sha(original), maskPath: paths.mask, maskSHA: sha(mask), packageVersion: 1, activatedSlots: slots, approvedEditablePixels: [0] };
+    const contractBytes = bytes(contract); await writeFile(paths.contract, contractBytes);
+    const references = [{ ...f.references[0], sha256: sha(source) }, { ...f.references[1], sha256: sha(source), guide: { ...f.references[1].guide, sourceHash: sha(source) } }];
+    const input = { sourcePath: paths.source, sourceSHA: sha(source), activatedSlots: slots, operation: 'garment-edit', output: join(dir, 'result.png'), receipt: join(dir, 'result.receipt.json'), lookPath: paths.corrected, packageRoot: dir, manifestPath: 'portrait-package.json', expected: { sourceImageSha256: sha(source), inputSnapshotSHA: sha(corrected), packageVersion: 1 }, composition: { fabricPresent: false, fabricationCase: 'missing-fabric', references, designComposition: f.composition }, generationArgs: ['--image', join(dir, 'style.png'), '--image', join(dir, 'frame.png'), '--reference-roles', 'drawing-technique-only,framing-only', '--prompt', '{}', '-o', join(dir, 'unused.png')], garmentContractPath: paths.contract, garmentContractSHA: sha(contractBytes), connectionConfig: paths.connection };
+    const result = await modifyPortrait(input);
+    assert.equal(calls, 1);
+    assert.deepEqual(Buffer.from(await form.get('mask').arrayBuffer()), mask);
+    assert.deepEqual(Buffer.from(await form.getAll('image[]')[0].arrayBuffer()), source);
+    const model = JSON.parse(form.get('prompt')); assert.equal(model.garmentEdit.fabricPresent, false);
+    assert.deepEqual(model.garmentEdit.activatedSlots, slots); assert.equal(model.appearance.outfit.neckline, f.look.slots.outfit.neckline.value);
+    const derivative = decodeCodexPng(await readFile(result.output.path));
+    assert.deepEqual(derivative.pixels.subarray(0, 4), rawPixels.subarray(0, 4));
+    assert.deepEqual(derivative.pixels.subarray(4), pixels.subarray(4));
+    assert.deepEqual(await readFile(result.raw.path), raw);
+    assert.equal(result.changedOutside, 0); assert.equal(result.publicationAuthorized, false);
+    await assert.rejects(modifyPortrait(input), /already exists/); assert.equal(calls, 1);
+  } finally { const closed = once(server, 'close'); server.close(); server.closeAllConnections(); await closed; await rm(dir, { recursive: true, force: true }); }
+});

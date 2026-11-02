@@ -1,0 +1,109 @@
+{
+  "personId": "person-1009",
+  "characterId": "K1009",
+  "name": "신종목",
+  "source": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools/ART-ASSETS/portrait-references/wiki-people/images/person-1009.png",
+    "sha256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00"
+  },
+  "registry": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools/ART-ASSETS/portrait-references/wiki-people/manifest.json",
+    "sha256": "01ae1079662dd44bee89522a1cee3d8f4bdd6caff1712101c6908697724d30c3"
+  },
+  "sourceSize": {
+    "x": 1160,
+    "y": 1355
+  },
+  "normalizationScale": {
+    "x": 1,
+    "y": 1
+  },
+  "normalizationOffset": {
+    "x": 0,
+    "y": 0
+  },
+  "helmetHidesHairFront": true,
+  "layers": [
+    {
+      "role": "hairBack",
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/person-1009/delivery-candidate-r2/hairBack.png",
+      "sha256": "e9ec622526a7c38e1935b996e83e5d73109cd5a38c1ca7804039b3e6437e9561"
+    },
+    {
+      "role": "body",
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/person-1009/delivery-candidate-r2/body.png",
+      "sha256": "abf832d274dca2ec2871967d3763a7ff159a88befd7accf3b482998f10a90c58"
+    },
+    {
+      "role": "head",
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/person-1009/delivery-candidate-r2/head.png",
+      "sha256": "e3d97dfe15154cba3e5295a08b09b3eaeca2bcf4447e1d8a5067342c9d42e99e"
+    },
+    {
+      "role": "clothing",
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/person-1009/delivery-candidate-r2/clothing.png",
+      "sha256": "aa0ab57b7d9e2d7d4b310d9db047f5b8d66a3c2b5cd0b2efc97fc587990f5024"
+    },
+    {
+      "role": "hairFront",
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/person-1009/delivery-candidate-r2/hairFront.png",
+      "sha256": "dda4ddedb13380cef147707ea34afbab9440cadffdc78d9691f68f619688be8a"
+    },
+    {
+      "role": "helmet",
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/person-1009/delivery-candidate-r2/helmet.png",
+      "sha256": "d057276d8b1d62b2175a158e27bd303f1796eec60c6425f48387cfe81072622b"
+    },
+    {
+      "role": "deadHead",
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/person-1009/delivery-candidate-r2/deadHead.png",
+      "sha256": "affe2a3d87dc6bf9deff52686f919b84362ac6927d0b94abc041f45b1dc9d649"
+    },
+    {
+      "role": "headlessBody",
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/person-1009/delivery-candidate-r2/headlessBody.png",
+      "sha256": "e35f5776bcd1e6ea17ac02b80ecb49d17a22702cf7272a4798c7da4fb38b27bb"
+    }
+  ],
+  "helmetHairBack": {
+    "role": "helmetHairBack",
+    "sha256": "a44e9fc16ff11218c72a53eed199681f2a31e74039e72d4aa11d5d820593f962",
+    "sourcePath": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/person-1009/delivery-candidate-r2/helmetHairBack.png"
+  },
+  "helmetHairBackProvenance": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/TOOL/avatar-gen/portrait/2d/paperdoll/person-1009-ready.helmet-hair-provenance.json",
+    "sha256": "0313c5db9ac19720df51b7fc6a2b6bc5a3931341f9215799c90662926cbef4c3"
+  },
+  "authoredBundle": {
+    "manifest": {
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/person-1009/delivery-candidate-r2/manifest.json",
+      "sha256": "17c254d960802a914b6fa1eaa325083b2c1007004cae8589670a2729eea4d123"
+    },
+    "artApproval": {
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku/.omo/evidence/portrait-paperdoll-poc-20261021/1009-root-poc-art-review.json",
+      "sha256": "587775031c7c4dc56c3fbc7e7405d6fb6def13b5583987d99464b5dc4b40f7e7"
+    },
+    "geometry": {
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/TOOL/avatar-gen/portrait/2d/paperdoll/person-1009-ready.geometry.json",
+      "sha256": "7ffbcdbf535dc6015db7743ad1aa647b80f41bcb166b7e7944355afc91b97279"
+    }
+  },
+  "composite": {
+    "status": "checked",
+    "geometrySha256": "7ffbcdbf535dc6015db7743ad1aa647b80f41bcb166b7e7944355afc91b97279",
+    "reviewer": "root exact-bundle approval and worker registered role/state binding check",
+    "layersSha256": "8d4b9de3fe8287679565eda3e48889aa050441f1993b2f8ae6efee8d053878e8",
+    "image": {
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/person-1009/delivery-candidate-r2/alive-equipped.png",
+      "sha256": "2f385a3246a1af39062bfb676acf546e8e21126d91f8a126a4a009c065d71a23"
+    },
+    "evidence": {
+      "path": "/Users/ilseoblee/workspace/seoul-dengoku/.omo/evidence/portrait-paperdoll-poc-20261021/1009-root-poc-art-review.json",
+      "sha256": "587775031c7c4dc56c3fbc7e7405d6fb6def13b5583987d99464b5dc4b40f7e7"
+    }
+  },
+  "review": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/TOOL/avatar-gen/portrait/2d/paperdoll/person-1009-ready.review.json",
+      "sha256": "b02b2970850f9f7454e9ed46d892d7f6aeb486ef06e25075ed35ff469f8197b0"
+  }
+}

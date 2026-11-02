@@ -8,3 +8,9 @@ tsconfig.tsbuildinfo
 .omo/
 .DS_Store
 .senpi/
+
+# moved tool packages
+**/node_modules/
+tools/**/dist/
+tools/**/__pycache__/
+*.pyc

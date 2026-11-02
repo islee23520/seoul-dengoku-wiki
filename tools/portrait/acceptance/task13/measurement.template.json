@@ -1,0 +1,41 @@
+{
+	"imageSHA": null,
+	"actualImageMeasured": false,
+	"canvas": [1024, 1536],
+	"bodyType": null,
+	"coordinateFrame": "top-left-x-right-y-down-pixel-centers",
+	"landmarks": {
+		"crown": null,
+		"chin": null,
+		"headLeft": null,
+		"headRight": null,
+		"faceTop": null,
+		"faceLeft": null,
+		"faceRight": null,
+		"leftPupil": null,
+		"rightPupil": null,
+		"leftShoulder": null,
+		"rightShoulder": null,
+		"torsoLeft": null,
+		"torsoRight": null
+	},
+	"incomplete": true,
+	"pendingJsonPointers": [
+		"/imageSHA",
+		"/actualImageMeasured",
+		"/bodyType",
+		"/landmarks/crown",
+		"/landmarks/chin",
+		"/landmarks/headLeft",
+		"/landmarks/headRight",
+		"/landmarks/faceTop",
+		"/landmarks/faceLeft",
+		"/landmarks/faceRight",
+		"/landmarks/leftPupil",
+		"/landmarks/rightPupil",
+		"/landmarks/leftShoulder",
+		"/landmarks/rightShoulder",
+		"/landmarks/torsoLeft",
+		"/landmarks/torsoRight"
+	]
+}

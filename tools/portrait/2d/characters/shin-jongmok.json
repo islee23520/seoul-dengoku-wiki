@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "characterId": "K1009",
+  "name": "신종목",
+  "sourceStatus": "art-proposal",
+  "sourceRefs": ["https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/name-pools/person-id-registry.json", "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Core-Characters.json#신종목", "GAME-REFERENCE/avatar-gen/tripothon-toon-demo/02-character-set.md"],
+  "lookId": "shin-opening-study-1",
+  "mood": "weary",
+  "occupation": "field-contractor",
+  "appearance": {
+    "ageCategory": "adult", "gender": "남성",
+    "face": { "value": "성인, 피로가 엷게 드러나는 절제된 표정", "status": "art-proposal", "source": "portrait study 2026-09-29" },
+    "hair": { "value": "짧은 검은 머리", "status": "art-proposal", "source": "GAME-REFERENCE/avatar-gen/tripothon-toon-demo/02-character-set.md" },
+    "eyes": { "value": null, "status": "unknown", "source": null },
+    "skin": { "value": null, "status": "unknown", "source": null },
+    "build": { "value": "자연 비율의 성인 체형", "status": "art-proposal", "source": "GDD/canon/locales/ko-KR/art/character-art-direction.json" }
+  },
+  "outfit": {
+    "id": "shin-field-outfit-study-1",
+    "headwear": { "value": null, "status": "unknown", "source": null },
+    "upper": { "value": "기존 신종목 초상의 청록색 높은 옷깃 재킷, 겨자색 안쪽 칼라, 어깨끈과 무전기", "status": "art-proposal", "source": "existing Shin Jongmok Tripo portrait v3, owner identity correction 2026-09-30" },
+    "lower": { "value": "카고 하의", "status": "art-proposal", "source": "GAME-REFERENCE/avatar-gen/tripothon-toon-demo/02-character-set.md" },
+    "footwear": { "value": "어두운 작업용 발목 장화", "status": "art-proposal", "source": "portrait-template study 2026-09-29" },
+    "marks": { "value": null, "status": "unknown", "source": null }
+  },
+  "equipment": { "equipped": [], "narrativeOnly": [{ "id": "repaired-radio", "description": "수리한 무전기", "status": "authored-draft", "source": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Core-Characters.json#신종목-p5" }] },
+  "pose": { "portrait": "어깨 힘을 뺀 정지 포즈, 고개는 약간 왼쪽, 시선은 카메라 옆", "full-body": "양발로 선 중립 대기, 팔은 몸에서 살짝 떨어뜨리고 손이 보이게" }
+}

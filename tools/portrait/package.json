@@ -1,0 +1,39 @@
+{
+  "name": "portrait-gen",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "portrait": "node bin/portrait-gen.ts",
+    "character": "node tools/character-tool/cli.mjs",
+    "test:character": "vitest run tools/character-tool",
+    "doctor": "node bin/portrait-gen.ts doctor",
+    "serve": "node bin/portrait-gen.ts serve",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && node --check portrait-ui.mjs",
+    "portrait:2d": "node 2d/emit-character-prompt.mjs --mode portrait",
+    "full-body:2d": "node 2d/emit-character-prompt.mjs --mode full-body",
+    "serve:2d": "node 2d/server.mjs",
+    "mcp:2d": "node 2d/mcp.mjs",
+    "portrait:3d": "node bin/portrait-gen.ts",
+    "character:3d": "node tools/character-tool/cli.mjs",
+    "test:2d": "vitest run --config 2d/vitest.config.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "5.0.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.2.0",
+    "@fastify/static": "^10.1.4",
+    "fastify": "^5.12.5",
+    "three": "^0.180.0",
+    "yaml": "^2.9.1",
+    "zod": "4.6.5",
+    "ajv": "8.20.0"
+  }
+}

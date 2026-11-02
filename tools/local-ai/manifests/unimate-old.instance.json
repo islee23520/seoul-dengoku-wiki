@@ -1,0 +1,57 @@
+{
+  "instanceId": "unimate-old",
+  "evidenceBasis": "task-1 corrected baseline and inventory, 2026-10-23",
+  "recoveryReady": false,
+  "rootRefs": {
+    "source": "unimate-old.source",
+    "runtime": "unimate-old.runtime",
+    "user": "unimate-old.user",
+    "nodes": "unimate-old.nodes",
+    "models": "unimate-old.models",
+    "input": "unimate-old.input",
+    "output": "unimate-old.output",
+    "backup": "unimate-old.backup"
+  },
+  "source": {
+    "observedCommit": null,
+    "approvedRunningCommit": null,
+    "dirtyBytes": "unresolved"
+  },
+  "runtime": {
+    "observed": {
+      "python": "3.10.19",
+      "basis": "interpreter probe and pyvenv.cfg"
+    },
+    "dependencyLock": "unresolved",
+    "pipFreeze": "unresolved",
+    "nativeBuildPins": "unresolved"
+  },
+  "nodes": {
+    "observedEntries": [],
+    "completeness": "unresolved"
+  },
+  "workflows": {
+    "uiJson": "private-backup-required",
+    "apiGraph": "unresolved",
+    "nodeDependencies": "unresolved"
+  },
+  "models": {
+    "verification": "unresolved",
+    "pins": [],
+    "userCreatedBytesBackupRequired": true
+  },
+  "data": {
+    "consistentBackup": "not-performed",
+    "preservePriorDbBkp": true,
+    "inputsOutputsAndReferencedAssets": "private-backup-required"
+  },
+  "restore": {
+    "status": "not-run",
+    "procedure": "../../../../seoul-dengoku-tools/TOOL/docs/Local-AI-Persistence-Policy.md"
+  },
+  "unresolved": [
+    "source SHA not established by task1 repair; planning SHA is not a fresh measurement",
+    "v2 model pins and data snapshot",
+    "source .venv is a junction to existing environment; preserve both aliases"
+  ]
+}

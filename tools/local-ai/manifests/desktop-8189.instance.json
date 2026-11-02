@@ -1,0 +1,91 @@
+{
+  "instanceId": "desktop-8189",
+  "evidenceBasis": "task-1 corrected baseline and inventory, 2026-10-23",
+  "recoveryReady": false,
+  "rootRefs": {
+    "source": "desktop-8189.source",
+    "runtime": "desktop-8189.runtime",
+    "user": "desktop-8189.user",
+    "nodes": "desktop-8189.nodes",
+    "models": "desktop-8189.models",
+    "input": "desktop-8189.input",
+    "output": "desktop-8189.output",
+    "backup": "desktop-8189.backup"
+  },
+  "source": {
+    "observedCommit": "63be2f9b82ad0dac88a7ceaa28a9cf3154125a18",
+    "approvedRunningCommit": null,
+    "dirtyBytes": "unresolved",
+    "reference": {
+      "url": "https://github.com/islee23520/ComfyUI",
+      "branch": "master",
+      "commit": null
+    },
+    "observedRemote": "https://github.com/Comfy-Org/ComfyUI.git"
+  },
+  "runtime": {
+    "observed": {
+      "basis": "HTTP system_stats and interpreter probe",
+      "python": "3.13.12",
+      "comfyui": "0.42.1",
+      "torch": "2.10.0+cu130"
+    },
+    "dependencyLock": "unresolved",
+    "pipFreeze": "unresolved",
+    "nativeBuildPins": "unresolved"
+  },
+  "nodes": {
+    "observedEntries": [
+      {
+        "name": "example_node.py.example",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      },
+      {
+        "name": "websocket_image_save.py",
+        "url": null,
+        "revision": null,
+        "enabled": null,
+        "dirtyBytes": "unresolved"
+      }
+    ],
+    "completeness": "unresolved"
+  },
+  "workflows": {
+    "uiJson": "default/workflows missing at probed root; owner export/storage resolution required",
+    "apiGraph": "unresolved",
+    "nodeDependencies": "unresolved"
+  },
+  "models": {
+    "verification": "unresolved",
+    "pins": [],
+    "userCreatedBytesBackupRequired": true
+  },
+  "data": {
+    "consistentBackup": "not-performed",
+    "preservePriorDbBkp": true,
+    "inputsOutputsAndReferencedAssets": "private-backup-required",
+    "observedDbSidecars": [
+      "comfyui.db",
+      "comfyui.db-wal",
+      "comfyui.db-shm",
+      "comfyui.db.bkp",
+      "comfyui.db.lock"
+    ]
+  },
+  "restore": {
+    "status": "not-run",
+    "procedure": "../../../../seoul-dengoku-tools/TOOL/docs/Local-AI-Persistence-Policy.md"
+  },
+  "unresolved": [
+    "source dirty bytes not included in task1 portal-only snapshot",
+    "per-node revision and enabled flags",
+    "complete dependency lock and native artifacts",
+    "workflow API graph and dependencies",
+    "model file measurements and license/access",
+    "consistent DB/user/output snapshot"
+  ],
+  "modelMap": "owner-generated; do not edit generated YAML"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://seoul-dengoku.local/schema/face-variants.v1.json",
+  "type": "object", "additionalProperties": false, "required": ["schemaVersion", "variants"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "variants": {"type": "array", "items": {"$ref": "#/$defs/variant"}}
+  },
+  "$defs": {
+    "variant": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "gender", "ancestry", "source", "face", "referenceImageSha256", "referenceImagePath"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "gender": {"enum": ["male", "female"]},
+        "ancestry": {"type": "string", "minLength": 1},
+        "source": {"type": "string", "minLength": 1},
+        "face": {"$ref": "character.schema.json#/properties/slots/properties/face", "minProperties": 1},
+        "referenceImageSha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+        "referenceImagePath": {"type": ["string", "null"], "minLength": 1}
+      },
+      "oneOf": [
+        {"properties": {"referenceImageSha256": {"type": "null"}, "referenceImagePath": {"type": "null"}}},
+        {"properties": {"referenceImageSha256": {"type": "string"}, "referenceImagePath": {"type": "string"}}}
+      ]
+    }
+  }
+}

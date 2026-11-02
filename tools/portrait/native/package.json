@@ -1,0 +1,29 @@
+{
+  "name": "seoul-avatar-generator",
+  "version": "0.1.0",
+  "description": "Source-bound avatar token and native portrait tooling",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "exports": {
+    ".": "./lib/index.mjs",
+    "./normalized": "./lib/normalized/adapter.mjs"
+  },
+  "bin": {
+    "seoul-avatar": "bin/seoul-avatar.mjs"
+  },
+  "files": [
+    "lib",
+    "bin",
+    "README.md",
+    "examples"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "build": "node scripts/check.mjs"
+  },
+  "dependencies": {
+    "zod": "4.6.5"
+  }
+}

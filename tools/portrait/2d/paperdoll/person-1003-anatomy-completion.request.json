@@ -1,0 +1,41 @@
+{
+  "schema": "paperdoll-masked-edit.v1",
+  "layout": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/anatomy-completion-input-r1/completion-layout.json",
+    "sha256": "9b7b63c661adf572c0ea586ad479f54497ac9014e6e18ccf4ffd077ab87fc053"
+  },
+  "editLayoutReview": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/TOOL/avatar-gen/portrait/2d/paperdoll/completion-root-review.json",
+    "sha256": "fab8a504a363dd02820c0684ba31697598efd63a9287bee73edc208f177bdfc3"
+  },
+  "personId": "person-1003",
+  "characterId": "K1003",
+  "source": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools/ART-ASSETS/portrait-references/wiki-people/images/person-1003.png",
+    "sha256": "7b7f311b11ffcea5f9e8e3a257a8745093ba2b322bd8e4aa3892c86bd5caeed8"
+  },
+  "registry": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools/ART-ASSETS/portrait-references/wiki-people/manifest.json",
+    "sha256": "01ae1079662dd44bee89522a1cee3d8f4bdd6caff1712101c6908697724d30c3"
+  },
+  "master": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/anatomy-completion-input-r1/registered-completion-master.png",
+    "sha256": "2c6634f5b3fb8bdfd49b575507ec8a2a9e56e80cf0b4d0432b0e6a90fb4f22c2"
+  },
+  "mask": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/anatomy-completion-input-r1/api-completion-mask.png",
+    "sha256": "74c8b350ee6d59d14c1bc4d3b9182a9f6ecda272545aba289be633d1c13319cc"
+  },
+  "referenceRoles": [
+    "registered-editable-master"
+  ],
+  "maskSemantics": "alpha-zero-editable-first-image",
+  "stage": "anatomy-completion",
+  "prompt": "Exactly one image is uploaded: the registered editable master, which supplies identity, technique, framing and scale. The actual separate PNG mask applies to that image: alpha zero editable, alpha255 protected. Do not regenerate the face, change head size or reframe the bust. Preserve protected pixels and actual transparency.\nFill the complete SHORT rounded bare adult upper bust inside the EXISTING silhouette, including missing left shoulder/body support and continuous neck. Match existing source skin colors and shading. Keep face, head, hairstyle, framing and all existing geometry fixed. Use the actual uploaded mask; no new hair, labels, clothing, extra chest or torso extension. Body cutoff remains y952 on832x1136 canvas. Keep outside the existing body target truly transparent. Complete anatomy, do not enlarge or independently fit it. Existing bright jaw seam is unresolved and must be inspected, not hidden by warp. Nonsexual upper torso, no gore.",
+  "template": {
+    "path": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/TOOL/avatar-gen/portrait/2d/paperdoll/templates.json",
+    "sha256": "975816950e1cc29e3ac74820e9c7acc53c28c394dc3a1f071997b03045522cf0"
+  },
+  "output": "/Users/ilseoblee/workspace/seoul-dengoku-tools-wt/portrait-paperdoll-poc-20261021/ART-ASSETS/portrait-paperdoll-poc/source/person-1003-anatomy-completion.png",
+  "size": "832x1136"
+}

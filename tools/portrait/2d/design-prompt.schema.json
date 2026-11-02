@@ -1,0 +1,1832 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "character-art-2d.v1"
+    },
+    "recipient": {
+      "type": "object",
+      "properties": {
+        "gender": {
+          "type": "string",
+          "enum": [
+            "male",
+            "female",
+            "unknown"
+          ]
+        },
+        "ageCategory": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "gender",
+        "ageCategory"
+      ],
+      "additionalProperties": false
+    },
+    "face": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "unique",
+            "template"
+          ]
+        },
+        "variantId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "variantId"
+      ],
+      "additionalProperties": false
+    },
+    "appearance": {
+      "type": "object",
+      "properties": {
+        "face": {
+          "type": "object",
+          "properties": {
+            "description": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "faceShape": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "eyeColor": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "eyeShape": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "eyebrowShape": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "lipColor": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "mouthShape": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "noseShape": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "beardShape": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "description",
+            "faceShape",
+            "eyeColor",
+            "eyeShape",
+            "eyebrowShape",
+            "lipColor",
+            "mouthShape",
+            "noseShape",
+            "beardShape"
+          ],
+          "additionalProperties": false
+        },
+        "hair": {
+          "type": "object",
+          "properties": {
+            "description": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "shape": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "color": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "length": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "description",
+            "shape",
+            "color",
+            "length"
+          ],
+          "additionalProperties": false
+        },
+        "body": {
+          "type": "object",
+          "properties": {
+            "build": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "weight": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bustSize": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "height": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "skin": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "build",
+            "weight",
+            "bustSize",
+            "height",
+            "skin"
+          ],
+          "additionalProperties": false
+        },
+        "outfit": {
+          "type": "object",
+          "properties": {
+            "headwear": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "upper": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "lower": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "footwear": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "marks": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "neckline": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "headwear",
+            "upper",
+            "lower",
+            "footwear",
+            "marks",
+            "neckline"
+          ],
+          "additionalProperties": false
+        },
+        "accessories": {
+          "type": "object",
+          "properties": {
+            "description": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "shape": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "color": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "material": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "mounting": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "description",
+            "shape",
+            "color",
+            "material",
+            "mounting"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "face",
+        "hair",
+        "body",
+        "outfit",
+        "accessories"
+      ],
+      "additionalProperties": false
+    },
+    "references": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 9007199254740991
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "drawing-technique-only",
+              "individual-face-only",
+              "face-base-only",
+              "framing-only",
+              "recipient-appearance-only"
+            ]
+          },
+          "allowedProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "priority": {
+            "type": "number"
+          },
+          "sourceHash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "not": {
+              "const": "0000000000000000000000000000000000000000000000000000000000000000"
+            }
+          },
+          "landmark": {
+            "type": "string"
+          },
+          "guide": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "type": "string",
+                "enum": [
+                  "portrait",
+                  "frontfullbody",
+                  "turntable",
+                  "3D"
+                ]
+              },
+              "gender": {
+                "type": "string",
+                "enum": [
+                  "male",
+                  "female",
+                  "unknown"
+                ]
+              },
+              "sourceHash": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "landmarkBinding": {
+                "type": "string"
+              },
+              "metadataSHA": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "mode",
+              "gender",
+              "sourceHash",
+              "landmarkBinding"
+            ],
+            "additionalProperties": false
+          },
+          "sameOwnerRecipient": {
+            "type": "boolean",
+            "const": true
+          }
+        },
+        "required": [
+          "index",
+          "role"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "role": {
+                  "const": "drawing-technique-only"
+                }
+              },
+              "required": [
+                "role"
+              ]
+            },
+            "then": {
+              "properties": {
+                "allowedProperties": {
+                  "items": {
+                    "enum": [
+                      "linework",
+                      "shading",
+                      "rendering",
+                      "drawing-technique"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "role": {
+                  "const": "individual-face-only"
+                }
+              },
+              "required": [
+                "role"
+              ]
+            },
+            "then": {
+              "properties": {
+                "allowedProperties": {
+                  "items": {
+                    "enum": [
+                      "description",
+                      "faceShape",
+                      "eyeColor",
+                      "eyeShape",
+                      "eyebrowShape",
+                      "lipColor",
+                      "mouthShape",
+                      "noseShape",
+                      "beardShape"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "role": {
+                  "const": "face-base-only"
+                }
+              },
+              "required": [
+                "role"
+              ]
+            },
+            "then": {
+              "properties": {
+                "allowedProperties": {
+                  "items": {
+                    "enum": [
+                      "description",
+                      "faceShape",
+                      "eyeColor",
+                      "eyeShape",
+                      "eyebrowShape",
+                      "lipColor",
+                      "mouthShape",
+                      "noseShape",
+                      "beardShape"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "role": {
+                  "const": "framing-only"
+                }
+              },
+              "required": [
+                "role"
+              ]
+            },
+            "then": {
+              "properties": {
+                "allowedProperties": {
+                  "items": {
+                    "enum": [
+                      "pose",
+                      "frame"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "role": {
+                  "const": "recipient-appearance-only"
+                }
+              },
+              "required": [
+                "role"
+              ]
+            },
+            "then": {
+              "properties": {
+                "allowedProperties": {
+                  "items": {
+                    "enum": [
+                      "face",
+                      "body",
+                      "hair",
+                      "outfit",
+                      "accessories"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "role": {
+                  "const": "recipient-appearance-only"
+                }
+              },
+              "required": [
+                "role"
+              ]
+            },
+            "then": {
+              "required": [
+                "sameOwnerRecipient",
+                "sourceHash"
+              ]
+            },
+            "else": {
+              "not": {
+                "required": [
+                  "sameOwnerRecipient"
+                ]
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "role": {
+                  "const": "framing-only"
+                }
+              },
+              "required": [
+                "role"
+              ]
+            },
+            "then": {
+              "required": [
+                "guide"
+              ]
+            },
+            "else": {
+              "not": {
+                "required": [
+                  "guide"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "composition": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "shot": {
+              "type": "string",
+              "const": "medium-close-up-119"
+            },
+            "cameraContractId": {
+              "type": "string"
+            },
+            "mode": {
+              "type": "string",
+              "enum": [
+                "portrait",
+                "frontfullbody",
+                "turntable",
+                "3D"
+              ]
+            },
+            "coordinatedHeadTorso": {
+              "type": "boolean",
+              "const": true
+            },
+            "viewerRight": {
+              "type": "boolean",
+              "const": true
+            },
+            "gazeCamera": {
+              "type": "boolean",
+              "const": true
+            },
+            "fullHeadShoulderConstraints": {
+              "type": "boolean",
+              "const": true
+            },
+            "measuredFrameGuide": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "landmarks": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "contractId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "landmarks",
+                    "contractId"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "landmarks": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "contractId": {
+                      "type": "string"
+                    },
+                    "sourceHash": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "metadataSHA": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "landmarkBinding": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "canvas": {
+                      "anyOf": [
+                        {
+                          "type": "array",
+                          "prefixItems": [
+                            {
+                              "type": "number",
+                              "const": 1024
+                            },
+                            {
+                              "type": "number",
+                              "const": 1536
+                            }
+                          ],
+                          "items": false,
+                          "minItems": 2,
+                          "maxItems": 2
+                        },
+                        {
+                          "type": "array",
+                          "prefixItems": [
+                            {
+                              "type": "number",
+                              "const": 1152
+                            },
+                            {
+                              "type": "number",
+                              "const": 1344
+                            }
+                          ],
+                          "items": false,
+                          "minItems": 2,
+                          "maxItems": 2
+                        }
+                      ]
+                    },
+                    "coordinateSystem": {
+                      "type": "string",
+                      "const": "normalized-top-left-x-right-y-down"
+                    },
+                    "guideYaw": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "number"
+                        },
+                        "unit": {
+                          "type": "string",
+                          "const": "degrees"
+                        },
+                        "authority": {
+                          "type": "string",
+                          "const": "private-implementation-calibration"
+                        },
+                        "ownerApprovedOptics": {
+                          "type": "boolean",
+                          "const": false
+                        }
+                      },
+                      "required": [
+                        "value",
+                        "unit",
+                        "authority",
+                        "ownerApprovedOptics"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "targets": {
+                      "type": "object",
+                      "properties": {
+                        "headtop": {
+                          "type": "object",
+                          "properties": {
+                            "normalized": {
+                              "type": "array",
+                              "prefixItems": [
+                                {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                }
+                              ],
+                              "items": false,
+                              "minItems": 2,
+                              "maxItems": 2
+                            },
+                            "role": {
+                              "type": "string",
+                              "const": "semantic-head-point"
+                            }
+                          },
+                          "required": [
+                            "normalized",
+                            "role"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "headcenter": {
+                          "type": "object",
+                          "properties": {
+                            "normalized": {
+                              "type": "array",
+                              "prefixItems": [
+                                {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                }
+                              ],
+                              "items": false,
+                              "minItems": 2,
+                              "maxItems": 2
+                            },
+                            "role": {
+                              "type": "string",
+                              "const": "semantic-head-point"
+                            }
+                          },
+                          "required": [
+                            "normalized",
+                            "role"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "chin": {
+                          "type": "object",
+                          "properties": {
+                            "normalized": {
+                              "type": "array",
+                              "prefixItems": [
+                                {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                }
+                              ],
+                              "items": false,
+                              "minItems": 2,
+                              "maxItems": 2
+                            },
+                            "role": {
+                              "type": "string",
+                              "const": "semantic-head-point"
+                            }
+                          },
+                          "required": [
+                            "normalized",
+                            "role"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "eye_line_axis": {
+                          "type": "object",
+                          "properties": {
+                            "normalized": {
+                              "type": "array",
+                              "prefixItems": [
+                                {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                }
+                              ],
+                              "items": false,
+                              "minItems": 2,
+                              "maxItems": 2
+                            },
+                            "role": {
+                              "type": "string",
+                              "const": "orientation-axis-marker"
+                            }
+                          },
+                          "required": [
+                            "normalized",
+                            "role"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "shoulder_left": {
+                          "type": "object",
+                          "properties": {
+                            "normalized": {
+                              "type": "array",
+                              "prefixItems": [
+                                {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                }
+                              ],
+                              "items": false,
+                              "minItems": 2,
+                              "maxItems": 2
+                            },
+                            "role": {
+                              "type": "string",
+                              "const": "joint-center-not-outer-boundary"
+                            }
+                          },
+                          "required": [
+                            "normalized",
+                            "role"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "shoulder_right": {
+                          "type": "object",
+                          "properties": {
+                            "normalized": {
+                              "type": "array",
+                              "prefixItems": [
+                                {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                }
+                              ],
+                              "items": false,
+                              "minItems": 2,
+                              "maxItems": 2
+                            },
+                            "role": {
+                              "type": "string",
+                              "const": "joint-center-not-outer-boundary"
+                            }
+                          },
+                          "required": [
+                            "normalized",
+                            "role"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "headtop",
+                        "headcenter",
+                        "chin",
+                        "eye_line_axis",
+                        "shoulder_left",
+                        "shoulder_right"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "landmarks",
+                    "contractId",
+                    "sourceHash",
+                    "metadataSHA",
+                    "landmarkBinding",
+                    "canvas",
+                    "coordinateSystem",
+                    "guideYaw",
+                    "targets"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "required": [
+            "shot",
+            "cameraContractId",
+            "mode",
+            "coordinatedHeadTorso",
+            "viewerRight",
+            "gazeCamera",
+            "fullHeadShoulderConstraints",
+            "measuredFrameGuide"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "frameContractVersion": {
+              "const": "semantic-frame.v2"
+            },
+            "cameraContractId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,79}$"
+            },
+            "mode": {
+              "const": "portrait"
+            },
+            "coordinatedHeadTorso": {
+              "const": true
+            },
+            "viewerRight": {
+              "const": true
+            },
+            "gazeCamera": {
+              "const": true
+            },
+            "fullHeadShoulderConstraints": {
+              "const": true
+            },
+            "semanticFrame": {
+              "type": "object",
+              "properties": {
+                "version": {
+                  "const": "owner-semantic-portrait-frame.v1"
+                },
+                "coordinateSystem": {
+                  "const": "normalized-top-left-x-right-y-down"
+                },
+                "authority": {
+                  "const": "owner-frame-criteria"
+                },
+                "pupilMidpointY": {
+                  "const": [
+                    0.451,
+                    0.457
+                  ]
+                },
+                "lowestChinSkinY": {
+                  "const": [
+                    0.615,
+                    0.635
+                  ]
+                },
+                "highestAttachedHairCrownY": {
+                  "const": [
+                    0.236,
+                    0.248
+                  ]
+                },
+                "verticalChinMinusCrownSpan": {
+                  "const": [
+                    0.377,
+                    0.399
+                  ]
+                },
+                "canvasHeight": {
+                  "const": 1536
+                },
+                "headFullyContained": {
+                  "const": true
+                },
+                "shouldersGarmentHorizontallyContained": {
+                  "const": true
+                },
+                "garmentBottomContact": {
+                  "const": true
+                }
+              },
+              "required": [
+                "version",
+                "coordinateSystem",
+                "authority",
+                "pupilMidpointY",
+                "lowestChinSkinY",
+                "highestAttachedHairCrownY",
+                "verticalChinMinusCrownSpan",
+                "canvasHeight",
+                "headFullyContained",
+                "shouldersGarmentHorizontallyContained",
+                "garmentBottomContact"
+              ],
+              "additionalProperties": false
+            },
+            "measuredFrameGuide": {
+              "type": "object",
+              "properties": {
+                "sourceHash": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "metadataSHA": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "landmarkBinding": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "canvas": {
+                  "const": [
+                    1024,
+                    1536
+                  ]
+                }
+              },
+              "required": [
+                "sourceHash",
+                "metadataSHA",
+                "landmarkBinding",
+                "canvas"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "frameContractVersion",
+            "cameraContractId",
+            "mode",
+            "coordinatedHeadTorso",
+            "viewerRight",
+            "gazeCamera",
+            "fullHeadShoulderConstraints",
+            "semanticFrame",
+            "measuredFrameGuide"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "format": {
+          "type": "string",
+          "const": "single-portrait"
+        },
+        "background": {
+          "type": "string",
+          "enum": [
+            "opaque",
+            "transparent"
+          ]
+        },
+        "backgroundInstruction": {
+          "type": "string",
+          "const": "Completely transparent background with actual alpha 0 outside the character, fully opaque character interior, and clean antialiased edges. No painted checkerboard, solid backdrop, floor or cast shadow."
+        },
+        "width": {
+          "type": "number",
+          "enum": [
+            1024,
+            1152
+          ]
+        },
+        "height": {
+          "type": "number",
+          "enum": [
+            1536,
+            1344
+          ]
+        },
+        "rgba": {
+          "type": "boolean",
+          "const": true
+        },
+        "noBakedText": {
+          "type": "boolean",
+          "const": true
+        },
+        "desired": {
+          "type": "string",
+          "enum": [
+            "1024x1536",
+            "1152x1344"
+          ]
+        }
+      },
+      "required": [
+        "format",
+        "background",
+        "width",
+        "height",
+        "rgba",
+        "noBakedText"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema",
+    "recipient",
+    "face",
+    "appearance",
+    "references",
+    "composition",
+    "output"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "composition": {
+            "properties": {
+              "mode": {
+                "const": "portrait"
+              },
+              "measuredFrameGuide": {
+                "type": "object",
+                "required": [
+                  "targets",
+                  "canvas"
+                ],
+                "properties": {
+                  "canvas": {
+                    "const": [
+                      1152,
+                      1344
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "mode",
+              "measuredFrameGuide"
+            ]
+          }
+        },
+        "required": [
+          "composition"
+        ]
+      },
+      "then": {
+        "properties": {
+          "output": {
+            "properties": {
+              "width": {
+                "const": 1152
+              },
+              "height": {
+                "const": 1344
+              },
+              "desired": {
+                "const": "1152x1344"
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "output": {
+            "properties": {
+              "width": {
+                "const": 1024
+              },
+              "height": {
+                "const": 1536
+              },
+              "desired": {
+                "const": "1024x1536"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

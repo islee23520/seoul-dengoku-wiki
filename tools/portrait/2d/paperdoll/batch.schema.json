@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "paperdoll-batch.v1",
+  "title": "Paper-doll source-bound batch (semantic checks enforced by workflow.mjs)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "config", "entries", "movementStage"],
+  "properties": {
+    "schema": {"const": "paperdoll-batch.v1"},
+    "config": {"$ref": "#/$defs/ref"},
+    "movementStage": {"type": "object", "additionalProperties": false, "required": ["start","end","sampleOffset","cameraPosition","portraitSize","speed","orthographicSize"], "properties": {"start":{"$ref":"#/$defs/vector3"},"end":{"$ref":"#/$defs/vector3"},"sampleOffset":{"$ref":"#/$defs/vector3"},"cameraPosition":{"$ref":"#/$defs/vector3"},"portraitSize":{"$ref":"#/$defs/vector2"},"speed":{"type":"number","exclusiveMinimum":0},"orthographicSize":{"type":"number","exclusiveMinimum":0}}},
+    "entries": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"$ref": "#/$defs/entry"}}
+  },
+  "$defs": {
+    "vector2": {"type":"object","additionalProperties":false,"required":["x","y"],"properties":{"x":{"type":"number"},"y":{"type":"number"}}},
+    "vector3": {"type":"object","additionalProperties":false,"required":["x","y","z"],"properties":{"x":{"type":"number"},"y":{"type":"number"},"z":{"type":"number"}}},
+    "hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "ref": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"], "properties": {"path": {"type": "string", "pattern": "^/"}, "sha256": {"$ref": "#/$defs/hash"}}},
+    "layer": {
+      "type": "object", "additionalProperties": false,
+      "required": ["role", "path", "sha256"],
+      "oneOf": [{"required":["prepared","native","processing"]},{"not":{"anyOf":[{"required":["prepared"]},{"required":["native"]},{"required":["processing"]}]}}],
+      "properties": {
+        "role": {"enum": ["hairBack", "body", "head", "clothing", "hairFront", "deadHead", "headlessBody"]}, "path": {"type": "string", "pattern": "^/"}, "sha256": {"$ref": "#/$defs/hash"},
+        "prepared": {"$ref": "#/$defs/ref"}, "native": {"$ref": "#/$defs/ref"},
+        "processing": {"type": "object", "additionalProperties": false, "required": ["transforms", "masks", "geometrySha256", "partTransform"], "properties": {"geometrySha256": {"$ref": "#/$defs/hash"}, "partTransform": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"type": "number"}}, "transforms": {"type": "array", "items": {"type": "string", "minLength": 1}}, "masks": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/ref"}}}}
+      }
+    },
+    "entry": {
+      "type": "object", "additionalProperties": false,
+      "required": ["personId", "characterId", "name", "source", "registry", "sourceSize", "normalizationScale", "normalizationOffset", "layers", "composite", "review"],
+      "properties": {
+        "personId": {"type": "string", "pattern": "^person-[0-9]+$"}, "characterId": {"type": "string"}, "name": {"type": "string", "minLength": 1},
+        "sourceSize":{"$ref":"#/$defs/vector2"},"normalizationScale":{"$ref":"#/$defs/vector2"},"normalizationOffset":{"$ref":"#/$defs/vector2"},
+        "source": {"$ref": "#/$defs/ref"}, "registry": {"$ref": "#/$defs/ref"}, "review": {"$ref": "#/$defs/ref"},
+        "authoredBundle": {"type":"object","additionalProperties":false,"required":["manifest","artApproval","geometry"],"properties":{"manifest":{"$ref":"#/$defs/ref"},"artApproval":{"$ref":"#/$defs/ref"},"geometry":{"$ref":"#/$defs/ref"}}},
+        "composite": {"type": "object", "required": ["status", "geometrySha256", "reviewer", "layersSha256", "image", "evidence"], "properties": {"status": {"const": "checked"}, "geometrySha256": {"$ref": "#/$defs/hash"}, "reviewer": {"type": "string", "minLength": 1}, "layersSha256": {"$ref": "#/$defs/hash"}, "image": {"$ref": "#/$defs/ref"}, "evidence": {"$ref": "#/$defs/ref"}}},
+        "layers": {"type": "array", "minItems": 7, "maxItems": 7, "items": {"$ref": "#/$defs/layer"}}
+      }
+    }
+  }
+}

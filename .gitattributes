@@ -3,3 +3,10 @@ public/portraits/*.png filter=lfs diff=lfs merge=lfs -text
 data/geography/**/*.pbf filter=lfs diff=lfs merge=lfs -text
 data/geography/**/*.tif filter=lfs diff=lfs merge=lfs -text
 data/geography/**/*.geojson filter=lfs diff=lfs merge=lfs -text
+
+# Moved from seoul-dengoku-tools (2026-11-02)
+tools/**/*.png filter=lfs diff=lfs merge=lfs -text
+tools/**/*.sqlite filter=lfs diff=lfs merge=lfs -text
+tools/**/*.zip filter=lfs diff=lfs merge=lfs -text
+tools/**/*.dll filter=lfs diff=lfs merge=lfs -text
+tools/**/*.glb filter=lfs diff=lfs merge=lfs -text

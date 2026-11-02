@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101619">
+  <title>잔선 | 3D 초상 렌더</title>
+  <link rel="stylesheet" href="portrait.css">
+  <script type="module" src="portrait-ui.mjs"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="잔선 3D 초상 렌더 홈"><span class="brand-mark" aria-hidden="true">잔</span><span>잔선</span><span class="brand-divider">/</span><span class="brand-context">PORTRAIT SYSTEM</span></a>
+    <div class="system-state"><span class="status-light" aria-hidden="true"></span><span id="mode-label">3D 렌더러 확인 중</span></div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">PREBAKED 3D · LOCAL RENDER</p>
+        <h1 id="page-title">오브젝트에서<br>초상을 꺼냅니다.</h1>
+      </div>
+      <p class="intro">등록된 3D 인물을 선택하고 시선과 구도를 정하세요. 로컬 Blender가 투명 PNG를 완성하면 그 렌더 자체가 최종 결과입니다.</p>
+    </section>
+
+    <div id="readonly-banner" class="banner" role="note" hidden>
+      <strong>결과 보기 전용</strong>
+      <span>저장된 초상은 볼 수 있지만 정적 페이지에서는 새 렌더를 실행할 수 없습니다. 로컬 portrait-gen 서버를 시작하세요.</span>
+    </div>
+    <div id="error-banner" class="banner error-banner" role="alert" hidden></div>
+
+    <div class="studio-grid">
+      <section class="render-panel panel" aria-labelledby="render-heading">
+        <div class="panel-heading">
+          <div><p class="section-index">01 / OUTPUT</p><h2 id="render-heading">렌더 프레임</h2></div>
+          <span id="render-status" class="status-chip" data-status="idle">READY</span>
+        </div>
+
+        <div class="preview-stage" id="preview-stage">
+          <div class="frame-guides" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <img id="portrait-preview" alt="렌더한 3D 인물 초상" hidden>
+          <div id="preview-empty" class="preview-empty">
+            <span class="axis-mark" aria-hidden="true"><i>X</i><i>Y</i><i>Z</i></span>
+            <strong>렌더 대기</strong>
+            <span>프리베이크 3D 오브젝트를 선택하세요.</span>
+          </div>
+          <div id="loading-layer" class="loading-layer" hidden role="status" aria-live="polite">
+            <span class="render-spinner" aria-hidden="true"></span>
+            <strong>BLENDER RENDERING</strong>
+            <span>실제 PNG가 완성될 때까지 기다려 주세요.</span>
+          </div>
+        </div>
+
+        <div id="receipt" class="receipt" hidden>
+          <div><span>RESULT</span><strong id="receipt-result">PASS</strong></div>
+          <div><span>SOURCE</span><strong id="receipt-source">-</strong></div>
+          <div><span>OUTPUT</span><strong id="receipt-size">-</strong></div>
+        </div>
+        <div class="preview-actions">
+          <a id="download-link" class="button secondary" href="#" download hidden>PNG 다운로드 <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="control-panel panel" aria-labelledby="control-heading">
+        <div class="panel-heading">
+          <div><p class="section-index">02 / CAMERA</p><h2 id="control-heading">렌더 설정</h2></div>
+          <span class="format-label">PNG · ALPHA</span>
+        </div>
+        <form id="render-form">
+          <fieldset>
+            <legend>오브젝트</legend>
+            <label class="field" for="asset-select"><span>프리베이크 모델</span><select id="asset-select" name="assetId" required disabled><option value="">목록을 불러오는 중</option></select></label>
+            <p id="asset-empty" class="field-note" hidden>등록된 프리베이크 오브젝트가 없습니다. 서버의 assets 디렉터리에 .glb, .gltf, .fbx 또는 .blend 파일을 등록하세요.</p>
+            <p id="asset-meta" class="field-note">서버에 등록된 실제 3D 파일만 표시합니다.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend>출력 크기</legend>
+            <div class="field-pair">
+              <label class="field" for="width-input"><span>너비 <small>PX</small></span><input id="width-input" name="width" type="number" inputmode="numeric" min="64" max="4096" step="1" value="512" required></label>
+              <span class="dimension-cross" aria-hidden="true">×</span>
+              <label class="field" for="height-input"><span>높이 <small>PX</small></span><input id="height-input" name="height" type="number" inputmode="numeric" min="64" max="4096" step="1" value="640" required></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>카메라</legend>
+            <div class="yaw-readout"><label for="yaw-input">좌우 회전 <small>YAW</small></label><output id="yaw-output" for="yaw-input">0°</output></div>
+            <input id="yaw-input" class="range" name="yaw" type="range" min="-45" max="45" step="1" value="0">
+            <div class="range-labels" aria-hidden="true"><span>-45°</span><span>정면</span><span>+45°</span></div>
+            <div class="segmented" role="group" aria-label="프레이밍">
+              <input id="framing-upper" type="radio" name="framing" value="upper" checked><label for="framing-upper">상반신</label>
+              <input id="framing-full" type="radio" name="framing" value="full"><label for="framing-full">전신</label>
+            </div>
+          </fieldset>
+
+          <button id="render-button" class="button primary" type="submit" disabled><span>초상 렌더</span><span aria-hidden="true">↗</span></button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite">3D 자산 목록을 확인하고 있습니다.</p>
+        </form>
+      </section>
+    </div>
+
+    <section class="history-section" aria-labelledby="history-heading">
+      <div class="history-heading">
+        <div><p class="section-index">03 / RECENT OUTPUT</p><h2 id="history-heading">최근 렌더 <span id="history-count">0</span></h2></div>
+        <p>서버에 기록된 실제 PNG 결과</p>
+      </div>
+      <div id="history-grid" class="history-grid"></div>
+      <div id="history-empty" class="history-empty"><span>NO RENDERS</span><p>첫 번째 3D 초상을 렌더하면 이곳에 기록됩니다.</p></div>
+    </section>
+  </main>
+
+  <footer><span>잔선 · PREBAKED 3D PORTRAIT</span><span>LOCAL BLENDER / PNG OUTPUT / NO PROVIDER</span></footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "@portrait-gen/character-tool",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "bin": { "character-tool": "cli.mjs" },
+  "scripts": { "test": "vitest run --config ../../vitest.config.mjs --root ../.. tools/character-tool" }
+}

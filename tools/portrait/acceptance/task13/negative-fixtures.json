@@ -1,0 +1,31 @@
+{
+	"schema": "task13-negative-fixtures.v1",
+	"controlledInputsOnly": true,
+	"fixtures": [
+		{
+			"id": "missing-measurement",
+			"mutation": "remove measurement artifact",
+			"expectedGate": "MISSING_ARTIFACT"
+		},
+		{
+			"id": "mismatched-image-sha",
+			"mutation": "bind measurement imageSHA to different bytes",
+			"expectedGate": "measuredProportions"
+		},
+		{
+			"id": "incomplete-landmarks",
+			"mutation": "remove torsoRight from measurement landmarks",
+			"expectedGate": "measuredProportions"
+		},
+		{
+			"id": "non-owner-profile-sha",
+			"mutation": "supply a profile file SHA different from the profile bytes",
+			"expectedGate": "INVALID_PROFILE_PIN"
+		},
+		{
+			"id": "wrong-canvas",
+			"mutation": "use a 512x768 RGBA image and matching measurement canvas",
+			"expectedGates": ["canvasRGBA", "measuredProportions"]
+		}
+	]
+}

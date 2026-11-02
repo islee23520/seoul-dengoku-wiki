@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-1007",
+  "characterId": "K1007",
+  "name": "김연규",
+  "stateId": null,
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": true,
+    "role": "온민의 수장"
+  },
+  "artProposal": {
+    "face": "Young adult Korean face, calm narrow eyes, original soft cheek and jaw proportions, eyeglasses required, clean-shaven",
+    "hair": "short black hair",
+    "outfit": "Plain deep navy high-collared civilian coat over light gray shirt",
+    "palette": [
+      "deep navy",
+      "light gray",
+      "muted skin"
+    ],
+    "carriedWeapons": "none depicted; no ownership inferred",
+    "upper": "Plain deep navy high-collared civilian coat over light gray shirt",
+    "lower": "light gray wool breeches with buttoned cuffs",
+    "footwear": "polished leather oxford shoes",
+    "accessories": "eyeglasses mandatory, not large round lenses"
+  },
+  "style": {
+    "styleId": "owner-gender-reference-20261002",
+    "referenceSha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
+  },
+  "image": {
+    "path": "/portraits/person-1007.png",
+    "sha256": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179",
+    "width": 1160,
+    "height": 1355
+  },
+  "references": {
+    "styleSha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
+    "identitySha256": "dce605a26a4b2e4a9ac12dc82875379175bd63d95b009fdb7523087a044efc44",
+    "identityRole": "owner-face-and-hair-only",
+    "imageText": "none",
+    "reviewStatus": "candidate-reviewed",
+    "originalIdentitySha256": "c546b7296c501123b8bd21ccd9d6a153d4466deb5a8949305530c47c8ab75faf",
+    "originalIdentityRole": "owner-reference",
+    "identitySelectionNote": "Current original reference selected and hash verified"
+  },
+  "variantId": null,
+  "imageReview": {
+    "record": "/portrait-reviews/person-1007.json",
+    "imageSha256": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179",
+    "verdict": "pass",
+    "scope": "exact approved transparent PNG only"
+  },
+  "identity": {
+    "characterId": "K1007",
+    "name": "김연규",
+    "ethnicity": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "origin": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "gender": "남성",
+    "ageCategory": "adult",
+    "age": 30,
+    "ageAsOf": "2126-12-31"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "Young adult Korean face, calm narrow eyes, original soft cheek and jaw proportions, eyeglasses required, clean-shaven",
+        "status": "art-proposal",
+        "source": "owner-directive-20261002"
+      },
+      "faceShape": {
+        "value": "oval with a defined jaw and rounded chin",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "eyeShape": {
+        "value": "narrow, almond-shaped",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "eyebrowShape": {
+        "value": "straight, medium-thick, slightly tapered",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "lipColor": {
+        "value": "muted natural peach",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "mouthShape": {
+        "value": "small, closed, nearly straight",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "noseShape": {
+        "value": "straight bridge with a rounded tip",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "beardShape": {
+        "value": "none, clean shaven",
+        "status": "art-proposal",
+        "source": "owner-directive"
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "short black hair",
+        "status": "art-proposal",
+        "source": "owner-directive"
+      },
+      "shape": {
+        "value": "layered, slightly tousled, with side-swept strands across the forehead",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "color": {
+        "value": "black",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "length": {
+        "value": "short to medium",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      }
+    },
+    "body": {
+      "build": {
+        "value": "average, with broad shoulders",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "weight": {
+        "value": "average for build",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "height": {
+        "value": "average adult male height",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "bustSize": {
+        "value": "flat chest",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "skin": {
+        "value": "light warm beige",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": "none",
+        "status": "derived-proposal",
+        "source": "derived-20261019:approved-portrait-consistency",
+        "derived": true
+      },
+      "upper": {
+        "value": "Plain deep navy high-collared civilian coat over light gray shirt",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "lower": {
+        "value": "light gray wool breeches with buttoned cuffs",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "footwear": {
+        "value": "polished leather oxford shoes",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "marks": {
+        "value": "none visible",
+        "status": "derived-proposal",
+        "source": "derived-20261019:no-insignia-rule",
+        "derived": true
+      },
+      "neckline": {
+        "value": "buttoned high shirt collar",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": "eyeglasses mandatory, not large round lenses",
+        "status": "art-proposal",
+        "source": "owner-directive"
+      },
+      "shape": {
+        "value": "round watch with a fine chain",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      },
+      "color": {
+        "value": "aged brass",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      },
+      "material": {
+        "value": "brass",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      },
+      "mounting": {
+        "value": "chain clipped to the waistcoat or jacket buttonhole",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
+  },
+  "textToImage": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5",
+    "defaultStyle": "yokoyama-b",
+    "views": {
+      "portrait": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 김연규, a Korean man, in his thirties. Young adult Korean face, calm narrow eyes, original soft cheek and jaw proportions, eyeglasses required, clean-shaven; face shape: oval with a defined jaw and rounded chin; narrow, almond-shaped dark brown eyes; straight, medium-thick, slightly tapered eyebrows; nose: straight bridge with a rounded tip; mouth: small, closed, nearly straight; muted natural peach lips. short black hair; black hair; short to medium length. build: average, with broad shoulders; skin: light warm beige. upper garment: Plain deep navy high-collared civilian coat over light gray shirt; neckline: buttoned high shirt collar. accessories: eyeglasses mandatory, not large round lenses; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: deep navy, light gray, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "front": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 김연규, a Korean man, in his thirties. Young adult Korean face, calm narrow eyes, original soft cheek and jaw proportions, eyeglasses required, clean-shaven; face shape: oval with a defined jaw and rounded chin; narrow, almond-shaped dark brown eyes; straight, medium-thick, slightly tapered eyebrows; nose: straight bridge with a rounded tip; mouth: small, closed, nearly straight; muted natural peach lips. short black hair; black hair; short to medium length. build: average, with broad shoulders; skin: light warm beige; average adult male height. upper garment: Plain deep navy high-collared civilian coat over light gray shirt; neckline: buttoned high shirt collar; lower garment: light gray wool breeches with buttoned cuffs; footwear: polished leather oxford shoes. accessories: eyeglasses mandatory, not large round lenses; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: deep navy, light gray, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "profile": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 김연규, a Korean man, in his thirties. Young adult Korean face, calm narrow eyes, original soft cheek and jaw proportions, eyeglasses required, clean-shaven; face shape: oval with a defined jaw and rounded chin; narrow, almond-shaped dark brown eyes; straight, medium-thick, slightly tapered eyebrows; nose: straight bridge with a rounded tip; mouth: small, closed, nearly straight; muted natural peach lips. short black hair; black hair; short to medium length. build: average, with broad shoulders; skin: light warm beige; average adult male height. upper garment: Plain deep navy high-collared civilian coat over light gray shirt; neckline: buttoned high shirt collar; lower garment: light gray wool breeches with buttoned cuffs; footwear: polished leather oxford shoes. accessories: eyeglasses mandatory, not large round lenses; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: deep navy, light gray, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "side": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 김연규, a Korean man, in his thirties. Young adult Korean face, calm narrow eyes, original soft cheek and jaw proportions, eyeglasses required, clean-shaven; face shape: oval with a defined jaw and rounded chin; narrow, almond-shaped dark brown eyes; straight, medium-thick, slightly tapered eyebrows; nose: straight bridge with a rounded tip; mouth: small, closed, nearly straight; muted natural peach lips. short black hair; black hair; short to medium length. build: average, with broad shoulders; skin: light warm beige; average adult male height. upper garment: Plain deep navy high-collared civilian coat over light gray shirt; neckline: buttoned high shirt collar; lower garment: light gray wool breeches with buttoned cuffs; footwear: polished leather oxford shoes. accessories: eyeglasses mandatory, not large round lenses; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: deep navy, light gray, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "back": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 김연규, a Korean man, in his thirties. Young adult Korean face, calm narrow eyes, original soft cheek and jaw proportions, eyeglasses required, clean-shaven; face shape: oval with a defined jaw and rounded chin; narrow, almond-shaped dark brown eyes; straight, medium-thick, slightly tapered eyebrows; nose: straight bridge with a rounded tip; mouth: small, closed, nearly straight; muted natural peach lips. short black hair; black hair; short to medium length. build: average, with broad shoulders; skin: light warm beige; average adult male height. upper garment: Plain deep navy high-collared civilian coat over light gray shirt; neckline: buttoned high shirt collar; lower garment: light gray wool breeches with buttoned cuffs; footwear: polished leather oxford shoes. accessories: eyeglasses mandatory, not large round lenses; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: deep navy, light gray, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      }
+    }
+  }
+}

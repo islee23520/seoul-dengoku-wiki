@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="ko" data-sui-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="서울전국 인물 시트와 초상 생성 영수증을 확인하는 작업대">
+  <title>이미지 작업대 | 서울전국</title>
+  <link rel="stylesheet" href="/tools/tokens.css">
+  <link rel="stylesheet" href="/tools/portal.css">
+  <script type="module" src="/tools/portal.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <header class="app-header">
+    <div><span class="brand">서울전국</span><h1>이미지 작업대</h1></div>
+    <div class="header-controls">
+      <label for="theme">화면 테마</label>
+      <select id="theme"><option value="system">시스템</option><option value="light">밝게</option><option value="dark">어둡게</option></select>
+      <span id="identity">로그인 확인 중</span>
+      <a id="login" class="button primary" href="/tools/">작업대 열기</a>
+      <button id="logout" hidden type="button">로그아웃</button>
+      <button id="toggle-connection" type="button" aria-controls="connection-disclosure" aria-expanded="false">연결 설정</button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <details id="connection-disclosure" class="session-notice"><summary id="session-title">작업대 연결 및 설정</summary>
+      <p id="session-message" role="status">GitHub 로그인 상태를 확인하고 있습니다.</p>
+      <p id="service-message" class="meta" role="status"></p>
+      <div id="connection-panel" hidden>
+        <section id="account-provider-panel" hidden aria-labelledby="account-provider-title">
+          <h3 id="account-provider-title">OpenAI 호환 (CLIProxy) 프로바이더 연결</h3>
+          <p class="meta">이 계정에 OpenAI 호환 연결을 저장합니다. 기존 CLIProxy/CPA base URL과 API key, 선택한 GPT·Gemini·Grok 모델을 그대로 사용합니다. API key는 화면에 다시 표시하지 않습니다.</p>
+          <form id="account-provider-form">
+            <label for="account-provider-url">OpenAI 호환 base URL (CLIProxy)</label>
+            <input id="account-provider-url" type="url" maxlength="2048" autocomplete="off" spellcheck="false" required>
+            <label for="account-provider-key">API key</label>
+            <input id="account-provider-key" type="password" maxlength="8192" autocomplete="off" spellcheck="false" required>
+            <label for="account-provider-model">이미지 생성 모델</label>
+            <select id="account-provider-model" required></select>
+            <div class="action-row"><button id="account-provider-connect" type="submit">연결</button><button id="account-provider-disconnect" type="button" disabled>해제</button></div>
+          </form>
+          <p id="account-provider-status" role="status" tabindex="-1"></p>
+        </section>
+        <section id="comfy-connection-panel" hidden aria-labelledby="comfy-connection-title">
+          <h3 id="comfy-connection-title">ComfyUI 연결 (별도 프로바이더)</h3>
+          <p class="meta">서버가 지정한 ComfyUI 워크플로의 준비 상태만 확인합니다. URL·그래프·API key를 브라우저에서 입력하지 않으며, 연결 확인과 프로바이더 선택은 이미지를 생성하지 않습니다. OpenAI 호환 연결과 동시에 유지됩니다.</p>
+          <label for="comfy-workflow">ComfyUI 워크플로</label>
+          <select id="comfy-workflow"><option value="">서버 워크플로를 확인하세요</option></select>
+          <p id="comfy-workflow-limits" class="meta"></p>
+          <div class="action-row"><button id="comfy-connect" type="button" disabled>ComfyUI 연결 확인</button><button id="comfy-disconnect" type="button" disabled>ComfyUI 연결 해제</button></div>
+          <a id="comfy-canvas-link" class="button" href="/tools/" target="_blank" rel="noopener" hidden>캔버스 열기</a>
+          <p id="comfy-status" role="status" tabindex="-1">ComfyUI 연결이 없습니다.</p>
+          <div id="comfy-details" class="meta"></div>
+        </section>
+        <section id="native-connection-panel" aria-labelledby="native-connection-title">
+          <h3 id="native-connection-title">Native MOSS · recovery16 후보</h3>
+          <p class="meta">연결 READY는 실행 기반 확인이며 그림체 승인이 아닙니다. 후보 이미지와 어댑터는 HOLD입니다. URL·키·경로를 입력하지 않습니다.</p>
+          <div class="action-row"><button id="native-connect" type="button" disabled>Native 연결 확인</button><button id="native-disconnect" type="button" disabled>Native 연결 해제</button></div>
+          <p id="native-status" role="status" tabindex="-1">NOT_READY · NATIVE_CAPABILITY_ABSENT</p>
+          <p id="native-profile" class="meta" style="overflow-wrap:anywhere"></p>
+        </section>
+        <h3 id="connection-title">내 provider 연결</h3>
+        <p id="connection-explanation" class="meta">내 컴퓨터에서 실행 중인 작업대에 명시적으로 연결합니다. 인증 정보는 브라우저 저장소에 보관하지 않습니다.</p>
+        <form id="connection-form">
+          <div id="local-provider-fields" hidden>
+            <label for="provider-url">OpenAI 호환 (CLIProxy) base URL</label>
+            <input id="provider-url" type="url" maxlength="2048" autocomplete="off" spellcheck="false" placeholder="http://127.0.0.1:8317/v1">
+          </div>
+          <label for="endpoint">검토된 endpoint</label>
+          <select id="endpoint" required><option value="">연결 목록을 확인하세요</option></select>
+          <label for="bridge-bearer">Bridge bearer</label>
+          <input id="bridge-bearer" type="password" maxlength="8192" autocomplete="off" required spellcheck="false">
+          <button id="connect" type="submit">내 MCP 연결</button>
+        </form>
+        <div class="action-row"><button id="refresh-connection" type="button">연결 상태 확인</button><button id="disconnect" type="button" disabled>연결 해제</button></div>
+        <p id="connection-status" role="status" tabindex="-1">연결되지 않았습니다.</p>
+        <div id="connection-details" class="meta"></div>
+      </div>
+    </details>
+    <div id="workspace" class="workspace" data-active-task="review" hidden>
+      <nav class="task-nav" aria-label="작업대 선택">
+        <section class="task-nav-group" aria-label="이미지 제작 방식">
+          <strong>이미지 제작</strong>
+          <button id="task-single" data-task="single" type="button">초상</button>
+          <button id="task-turntable" data-task="turntable" type="button">전신 턴테이블</button>
+          <button id="task-torso" data-task="torso" type="button">몸통 참조</button>
+          <button id="task-detached-head" data-task="detached-head" type="button">분리된 머리 참조</button>
+          <button id="task-head-without-hair-eyes-teeth" data-task="head-without-hair-eyes-teeth" type="button">머리 (머리카락·눈·치아 제외)</button>
+          <button id="task-hair" data-task="hair" type="button">별도 머리카락 참조</button>
+          <button id="task-parts" data-task="parts" type="button">부위·참조</button>
+        </section>
+        <section class="task-nav-group" aria-label="작업 관리">
+          <strong>작업 관리</strong>
+          <button id="task-review" data-task="review" type="button" aria-current="page">결과 검토</button>
+          <button id="task-local-ai" data-task="local-ai" type="button">로컬 AI · 3D</button>
+          <button id="task-composition" data-task="composition" type="button">일괄 구성</button>
+          <button id="task-queue" data-task="queue" type="button">실행 상태</button>
+        </section>
+      </nav>
+      <section id="review-context" class="task-context" aria-label="현재 업무">
+        <h2 id="task-title" tabindex="-1">결과 검토</h2>
+        <p class="meta">후보 · 기계 검증 · 사람의 판정을 구분하여 검토합니다.</p>
+      </section>
+      <nav id="review-anchors" class="review-anchors" aria-label="검토 영역 바로가기"><a href="#review-results">목록</a><a href="#review-stage">이미지</a><a href="#review-editor">평가</a></nav>
+      <section id="owner-work-context" aria-label="공유 인물과 서버 보관 작업">
+        <h3>공유 작업 문맥</h3>
+        <p class="meta">초상·전신 턴테이블·몸통 참조·분리된 머리·별도 머리카락·부위 참조 작업대가 같은 로그인, 선택 인물과 서버 보관 이력을 사용합니다.</p>
+        <label for="history-person">내 초상 결과 · 인물과 작업별 분류</label>
+        <select id="history-person"><option value="">전체 인물</option></select>
+        <button id="refresh-history" type="button">서버 이력 새로고침</button>
+        <p id="history-status" role="status"></p>
+        <div id="person-history" class="portrait-history"></div>
+      </section>
+      <section id="review-results" class="result-strip" aria-label="확인한 결과" tabindex="-1"><p class="meta">서버 이력에서 보관된 작업을 선택하세요.</p></section>
+      <section id="workstation-workspace" aria-labelledby="workstation-title" hidden>
+        <h2 id="workstation-title">분류별 이미지 작업대</h2>
+        <p id="workstation-description-text" class="meta">이미지만 제작합니다. 3D 모델·리깅·애니메이션은 생성하지 않습니다. 초상 제작과 별도의 명시적 v2 출력 규격을 사용합니다.</p>
+        <p id="workstation-workflow-note" class="meta">분류를 선택하면 해당 이미지 계약만 요청합니다.</p>
+        <ol id="turntable-directions" class="turntable-directions" aria-label="전신 턴테이블 출력 순서" hidden>
+          <li><strong>1. 정면</strong><span>front</span></li>
+          <li><strong>2. 프로필</strong><span>profile</span></li>
+          <li><strong>3. 측면</strong><span>side</span></li>
+          <li><strong>4. 후면</strong><span>back</span></li>
+        </ol>
+        <button id="load-workstations" type="button">카탈로그와 등록 원본 새로고침</button>
+        <p id="workstation-capability" role="status">카탈로그를 확인하세요.</p>
+        <div class="workstation-grid">
+          <section aria-labelledby="workstation-source-title">
+            <h3 id="workstation-source-title">1. 등록 원본과 봉인된 정체성</h3>
+            <label for="workstation-person">등록된 인물</label><select id="workstation-person"><option value="">원본을 선택하세요</option></select>
+            <p id="workstation-source" class="meta" role="status">적격 등록 원본의 해시와 봉인된 결과를 확인해야 합니다.</p>
+            <label for="workstation-identity">이 인물의 보관 초상 결과</label><select id="workstation-identity"><option value="">봉인 결과를 선택하세요</option></select>
+            <p id="workstation-identity-status" class="meta" role="status">이미 봉인된 결과만 입력으로 사용할 수 있습니다.</p>
+            <label for="workstation-style">서버 스타일 SHA256</label><input id="workstation-style" readonly>
+          </section>
+          <section aria-labelledby="workstation-look-title">
+            <h3 id="workstation-look-title">2. 직접 작성한 디자인</h3>
+            <div id="workstation-category-field"><label for="workstation-category">출력 분류 (v2)</label><select id="workstation-category"><option value="">분류를 선택하세요</option></select></div>
+            <p id="workstation-directions" class="meta" role="status">분류별 방향과 제외 조건을 확인하세요.</p>
+            <label for="workstation-source-id">작성 디자인 문서 ID (원본 토큰과 별도)</label><input id="workstation-source-id" maxlength="128" autocomplete="off" placeholder="my-authored-design">
+            <label id="workstation-description-label" for="workstation-description">직접 작성한 외형·의상 디자인</label><textarea id="workstation-description" rows="4" maxlength="16000"></textarea>
+            <p id="workstation-authored-note" class="meta">속옷 전용 몸통은 별도로 작성한 의상 디자인만 사용합니다. 기존 사진의 의상을 제거하는 변환이 아닙니다.</p>
+          </section>
+        </div>
+        <form id="workstation-form">
+          <fieldset id="workstation-output"><legend>3. 직접 지정하는 PNG 출력 규격</legend>
+            <div class="workstation-grid">
+              <div><label for="workstation-width">너비 (1–4096 px)</label><input id="workstation-width" type="number" min="1" max="4096" step="1" required></div>
+              <div><label for="workstation-height">높이 (1–4096 px)</label><input id="workstation-height" type="number" min="1" max="4096" step="1" required></div>
+              <div><label for="workstation-background">배경</label><select id="workstation-background" required><option value="">배경을 선택하세요</option><option value="transparent">투명 / 배경 alpha 0</option><option value="solid">단색 / 불투명</option></select></div>
+              <div><label for="workstation-rgb">단색 RGB (선택한 경우, 0–255)</label><input id="workstation-rgb" placeholder="R,G,B" autocomplete="off"></div>
+              <div><label for="workstation-canvas">정렬 캔버스 ID</label><input id="workstation-canvas" maxlength="128" required autocomplete="off"></div>
+              <div><p class="meta">좌표: 왼쪽 위 원점, X 오른쪽, Y 아래. PNG · 픽셀 단위. 턴테이블 4장은 동일한 규격을 사용합니다.</p></div>
+              <div><label for="workstation-anchor-x">기준점 X</label><input id="workstation-anchor-x" type="number" min="0" step="1" required></div>
+              <div><label for="workstation-anchor-y">기준점 Y</label><input id="workstation-anchor-y" type="number" min="0" step="1" required></div>
+              <div><label for="workstation-left">영역 왼쪽 X</label><input id="workstation-left" type="number" min="0" step="1" required></div>
+              <div><label for="workstation-top">영역 위쪽 Y</label><input id="workstation-top" type="number" min="0" step="1" required></div>
+              <div><label for="workstation-right">영역 오른쪽 X (미포함)</label><input id="workstation-right" type="number" min="1" step="1" required></div>
+              <div><label for="workstation-bottom">영역 아래쪽 Y (미포함)</label><input id="workstation-bottom" type="number" min="1" step="1" required></div>
+            </div>
+          </fieldset>
+          <button id="create-workstation" class="primary" type="submit" disabled>작성한 규격으로 한 번 요청</button>
+          <p id="workstation-status" role="status" tabindex="-1">인물·봉인 결과·디자인·출력 규격이 필요합니다. 자동 재시도 없음.</p>
+        </form>
+        <section aria-labelledby="workstation-history-title">
+          <h3 id="workstation-history-title">인물별 분류 이미지 이력</h3>
+          <button id="refresh-workstation-history" type="button">보관 이력 확인</button>
+          <p id="workstation-history-status" role="status">등록 인물을 선택하세요. provider 연결 없이도 보관된 결과를 확인할 수 있습니다.</p>
+          <div id="workstation-history" class="result-strip"></div>
+          <p id="workstation-frame-status" role="status"></p>
+          <div id="workstation-frames" class="workstation-grid"></div>
+        </section>
+      </section>
+      <div id="review-layout" class="review-layout">
+      <section id="review-stage" class="preview-panel" tabindex="-1" aria-labelledby="preview-title">
+        <div class="section-heading"><h2 id="preview-title">전체 이미지</h2><span id="preview-role" class="meta">이미지 없음</span></div>
+        <fieldset class="compare-modes"><legend>이미지 비교</legend><button id="compare-result" data-compare="result" type="button" disabled>결과</button><button id="compare-original" data-compare="original" type="button" disabled>원본</button><button id="compare-normalized" data-compare="normalized" type="button" disabled>정규화</button><button id="compare-side-by-side" data-compare="side-by-side" type="button" disabled>나란히</button><button id="compare-overlay" data-compare="overlay" type="button" disabled aria-pressed="false">겹쳐 보기</button></fieldset>
+        <div id="overlay-controls" hidden><label for="result-opacity">결과 불투명도 <output id="result-opacity-value" for="result-opacity">50%</output></label><input id="result-opacity" type="range" min="0" max="100" step="1" value="50" disabled></div>
+        <p id="comparison-message" class="meta" role="status"></p>
+        <button id="retry-source" type="button" hidden>캡처 원본 다시 확인</button>
+        <div id="comparison-images" class="comparison-images" data-mode="result" hidden>
+          <div id="overlay-view" hidden><div id="overlay-stage" class="overlay-stage"><img id="overlay-source" hidden alt="같은 좌표의 캡처 원본"><img id="overlay-result" hidden alt="같은 좌표의 검증된 결과"></div><p id="overlay-caption" class="meta"></p></div>
+          <figure id="source-figure" hidden><div class="portrait-frame"><img id="source-image" hidden alt="생성 당시 캡처 원본"></div><figcaption id="source-caption"></figcaption></figure>
+          <figure id="normalized-figure" hidden><div class="portrait-frame"><img id="normalized-image" hidden alt="원본의 340×510 정규화" width="340" height="510"></div><figcaption id="normalized-caption"></figcaption></figure>
+          <figure id="result-figure" hidden><div class="portrait-frame"><img id="result-image" hidden alt="검증된 생성 결과"></div><figcaption id="result-caption"></figcaption></figure>
+        </div>
+        <figure>
+          <div class="portrait-frame">
+            <img id="portrait" hidden alt="" width="1024" height="1536">
+            <p id="preview-empty">인물을 선택하거나 시트를 불러오세요.</p>
+          </div>
+          <figcaption id="preview-caption">원본 이미지와 생성 결과를 구분하여 표시합니다.</figcaption>
+        </figure>
+        <details id="sheet-disclosure"><summary id="sheet-title">인물 시트 상세</summary>
+          <p id="selection-message" role="status">선택된 인물이 없습니다.</p>
+          <div id="sheet-view"></div>
+        </details>
+      </section>
+      <aside id="review-editor" class="inspector evaluation-panel" aria-label="평가 작성" tabindex="-1">
+        <section aria-labelledby="review-title">
+          <h2 id="review-title">검토 상태</h2>
+          <p id="review-state">미확인: 검토 기록이 없습니다.</p>
+          <p class="meta">기계 판정과 별개입니다. 소유자 승인 아님 · 릴리스 승인 아님</p>
+          <button id="load-review" type="button" disabled>현재 결과와 검토 기록 확인</button>
+          <p id="review-message" role="status" tabindex="-1">선택한 HOLD 결과 PNG의 SHA를 확인한 후 검토할 수 있습니다.</p>
+          <details><summary>결과 식별자와 검증 SHA</summary><div id="result-binding" class="meta"></div></details>
+          <form id="evaluation-form">
+            <fieldset id="evaluation-fields" disabled><legend>이 PNG에 대한 사람의 판정</legend><div id="evaluation-categories"></div>
+              <label for="evaluation-notes">전체 검토 메모 (최대 8000자)</label><textarea id="evaluation-notes" rows="4"></textarea>
+              <p id="evaluation-notes-count" role="status">0 / 8000</p>
+              <p id="evaluation-overall" role="status">사람의 종합 판정: hold</p>
+              <button id="save-evaluation" type="submit">이 결과의 검토 기록 저장</button>
+            </fieldset>
+          </form>
+          <button id="retry-evaluation" type="button" hidden>미확인 저장을 동일한 요청으로 다시 확인</button>
+          <h3>서버 검토 이력</h3><div id="evaluation-history"><p>확인한 기록이 없습니다.</p></div>
+          <section aria-labelledby="alpha-title">
+            <h3 id="alpha-title">비생성 투명 배경 파생본</h3>
+            <p class="meta">보존된 1024×1536 원본의 가장자리와 연결된 회색 배경만 제거하고 340×510으로 축소합니다. 원본과 검토 기록은 유지됩니다. 머리카락·옷 경계는 별도 소유자 검토가 필요합니다.</p>
+            <button id="create-alpha" type="button" disabled>이 결과의 투명 배경 파생본 만들기 (모델 요청 없음)</button>
+            <p id="alpha-message" role="status">봉인 결과를 선택하세요. 파생본 HOLD · 승인 NONE</p>
+            <div id="alpha-result"></div>
+          </section>
+        </section>
+        <section aria-labelledby="receipt-title">
+          <h2 id="receipt-title">생성 영수증</h2>
+          <div id="receipt"><p>이 작업의 영수증이 없습니다.</p></div>
+          <button id="refresh-job" type="button" hidden>작업 상태 확인</button>
+        </section>
+        <section aria-labelledby="mechanical-title">
+          <h2 id="mechanical-title">전체 기계 검증</h2>
+          <p><strong class="verdict">NOT_RUN</strong> · 생성 후보 <strong>HOLD</strong> · 제작 승인 <strong>NONE</strong></p>
+          <p class="meta">전체 합격 판정 증거는 제공되지 않습니다. 수치 측정값이나 이미지 반환은 PASS가 아닙니다.</p>
+        </section>
+      <details><summary>3D 참조 및 진단</summary>
+        <section aria-labelledby="references-title">
+          <h2 id="references-title">3D 제작용 이미지 참조</h2>
+          <p class="meta">봉인된 초상 결과를 입력으로 사용합니다. 숨겨진 초상 생성이나 자동 재시도는 없습니다. 실제 생성은 단일 시도 보장이 검증될 때까지 차단됩니다.</p>
+          <button id="load-references" type="button">참조 종류와 스타일 확인</button>
+          <fieldset id="reference-shots"><legend>출력 이미지 선택</legend></fieldset>
+          <label for="reference-identity">봉인된 초상 결과 UUID</label><input id="reference-identity" type="text" autocomplete="off">
+          <button id="load-reference-identity" type="button">이 봉인 결과 확인</button>
+          <label for="reference-style">서버 스타일 SHA256</label><input id="reference-style" type="text" readonly>
+          <button id="create-references" type="button" disabled>선택 참조 생성</button>
+          <p id="reference-message" role="status">종류를 확인하고 현재 초상 결과를 봉인하세요. 유료 증거 NOT_RUN · 제작 승인 NONE</p>
+          <div id="reference-results"></div>
+        </section>
+        <section aria-labelledby="diagnostic-title">
+          <h2 id="diagnostic-title">진단</h2>
+          <p id="diagnostic" role="status">아직 수행한 요청이 없습니다.</p>
+        </section>
+      </details>
+      </aside>
+      </div>
+      <section id="source-workspace" class="production-grid" aria-label="원본 선택" hidden>
+      <aside id="single-sources" class="characters" aria-label="등록과 불러오기">
+        <details id="character-disclosure" open>
+          <summary>생성용 원본 등록 목록</summary>
+          <label for="search">등록 인물 검색</label>
+          <input id="search" type="search" placeholder="이름 또는 인물 ID" autocomplete="off">
+          <p id="list-status" role="status" class="meta"></p>
+          <ul id="character-list" class="character-list"></ul>
+        </details>
+        <section id="active-sheet" aria-labelledby="active-sheet-title">
+          <h2 id="active-sheet-title">현재 적용된 시트</h2>
+          <p id="active-sheet-name" role="status">선택된 인물이 없습니다.</p>
+          <p id="active-sheet-kind" class="meta"></p>
+          <p id="active-sheet-eligibility" class="meta"></p>
+          <dl class="fields">
+            <dt id="active-detail-label">원본 상세 JSON</dt><dd><span id="active-detail-status"></span><code id="active-detail-hash" class="raw"></code></dd>
+            <dt>작성 토큰 JSON</dt><dd><span id="active-token-status"></span><code id="active-token-hash" class="raw"></code></dd>
+            <dt>원본 RGBA PNG</dt><dd><span id="active-image-status"></span><code id="active-image-hash" class="raw"></code></dd>
+          </dl>
+        </section>
+        <details id="manual-sheet-disclosure">
+          <summary>다른 시트 직접 불러오기 (선택 사항)</summary>
+        <section class="upload" aria-labelledby="upload-title">
+          <h2 id="upload-title">수동 파일 시트</h2>
+          <p class="meta">인물을 선택하면 등록 시트를 자동으로 불러옵니다. 아래 파일은 다른 시트로 교체할 때만 선택하세요.</p>
+          <form id="upload-form">
+            <label for="detail-file">원본 상세 JSON (최대 1 MiB)</label>
+            <input id="detail-file" type="file" accept=".json,application/json" required>
+            <label for="token-file">작성 토큰 JSON (최대 1 MiB)</label>
+            <input id="token-file" type="file" accept=".json,application/json" required>
+            <label for="image-file">원본 RGBA PNG (최대 8 MiB)</label>
+            <input id="image-file" type="file" accept=".png,image/png" required>
+            <button id="upload-button" type="submit">시트 불러오기</button>
+          </form>
+          <fieldset id="upload-errors" tabindex="-1" hidden>
+            <legend id="upload-errors-title">시트를 적용하지 않았습니다</legend>
+            <p>이전 유효 선택은 유지됩니다. 아래 파일을 확인하세요.</p>
+            <ul id="upload-error-list"></ul>
+          </fieldset>
+          <p id="upload-message" role="status" class="meta"></p>
+        </section>
+        </details>
+      </aside>
+      <section id="single-conditions" aria-label="단일 생성 조건">
+        <section aria-labelledby="conditions-title">
+          <h2 id="conditions-title">생성 조건</h2>
+          <p class="meta">작성된 조건은 시트에 보존됩니다. 서버가 정본 규칙과 참조를 검증합니다.</p>
+          <div id="conditions"></div>
+          <fieldset id="reference-conditions">
+            <legend>원본 권한과 변경 범위</legend>
+            <label for="generation-mode">생성 모드</label>
+            <select id="generation-mode"><option value="reference-img2img">원본 보존 이미지 편집</option><option value="token-only">디자인 토큰 생성</option></select>
+            <label class="check-label"><input id="reference-absence" type="checkbox">레퍼런스 없이 디자인 토큰으로 생성</label>
+            <p id="reference-source-status" role="status" class="meta">unresolved · 원본을 선택하세요.</p>
+            <p id="reference-preservation" class="meta">인물·의상·구도·시선을 원본대로 보존합니다. 명시한 상의 색상만 변경할 수 있습니다.</p>
+            <label for="upper-color">상의 색상 변경</label>
+            <input id="upper-color" type="text" autocomplete="off" placeholder="비우면 보존 · 허용값 dark blue" aria-describedby="upper-color-help">
+            <p id="upper-color-help" class="meta">허용값은 dark blue 하나입니다. 얼굴·시선·구도 변경 지시는 받지 않습니다.</p>
+            <div id="reference-analysis" class="meta"></div>
+          </fieldset>
+          <label for="generation-provider">이미지 생성 프로바이더</label>
+          <select id="generation-provider"><option value="openai-compatible">OpenAI 호환 (CLIProxy) · 계정 연결</option></select>
+          <p id="generation-provider-note" class="meta" role="status">프로바이더 선택은 요청을 보내지 않습니다. 아래 생성 버튼만 요청을 보냅니다.</p>
+           <div id="native-recipe-fields" hidden>
+             <label for="native-recipe">Native MOSS 후보 레시피 (명시 선택)</label>
+             <select id="native-recipe" style="width:100%;max-width:100%;min-width:0"><option value="">레시피를 선택하세요</option></select>
+             <p id="native-generation-status" class="meta" role="status"></p>
+             <p class="meta">원본 모드는 변경 지시 없이 보존만 요청합니다. 업로드 시트는 아직 지원하지 않습니다. 025·045는 전체 스케줄의 마지막 25단계를 쓰는 후보이며 초기 sigma 0.25·0.45를 뜻하지 않습니다. 결과·그림체 HOLD, 자동 대체 없음.</p>
+           </div>
+          <div id="source-recipe-fields" hidden>
+            <label for="source-recipe">ComfyUI 원본 편집 레시피</label>
+            <select id="source-recipe"><option value="source-025">source-025 · denoise 0.25</option><option value="source-045" selected>source-045 · denoise 0.45 (기본)</option><option value="source-065">source-065 · denoise 0.65</option></select>
+            <p class="meta">고정 seed 152995270030802 · 25 steps · CFG 2.5 · er_sde / simple. 레시피 선택은 요청을 보내지 않습니다.</p>
+          </div>
+          <div id="comfy-generation-fields" hidden>
+            <label for="generation-seed">ComfyUI 시드 (선택 · 비우면 서버가 난수를 기록합니다)</label>
+            <input id="generation-seed" type="number" min="0" step="1" inputmode="numeric" autocomplete="off">
+          </div>
+          <dl class="fields"><dt>요청 모델 / 워크플로</dt><dd><code id="generation-model">gpt-image-2.5-sunburst</code> <span id="generation-model-note" class="meta"></span></dd><dt>기본 생성 크기</dt><dd><code>340x510</code> px (2:3 · 신규 v2 요청 · CPA 계산 캔버스 640x1024, 콘텐츠 (150,257) 340x510 · Comfy 계산 캔버스 352x512 · 선언된 투명 바깥 패딩만 제거 · CPA 문서상 최소 면적 후보, 실제 지원 미검증 · 크기 불일치/패딩 침범 시 실패)</dd><dt>요청 얼굴 방식</dt><dd>고유 얼굴 (unique)</dd></dl>
+          <button id="generate" class="primary" type="button" disabled>초상 생성</button>
+          <p id="generation-message" role="status" class="meta">인물 또는 검증된 시트를 선택하세요.</p>
+        </section>
+      </section>
+      </section>
+      <section id="wiki-workspace" aria-label="위키 원본 검색" hidden>
+        <section aria-labelledby="wiki-title">
+          <h2 id="wiki-title">위키 인물</h2>
+          <p class="meta">실제 위키 HTTP 원본 조회</p>
+          <form id="wiki-search-form">
+            <label for="wiki-query">위키 이름 또는 ID 검색</label>
+            <input id="wiki-query" type="search" maxlength="100" placeholder="이름, 인물 ID, 소속">
+            <button id="wiki-search-button" type="submit">위키 검색</button>
+          </form>
+          <label for="wiki-person">위키 인물</label>
+          <select id="wiki-person"><option value="">위키 인물을 선택하세요</option></select>
+          <fieldset id="wiki-batch-options"><legend>이번 목록에서 여러 인물 선택</legend><div id="wiki-batch-list"></div></fieldset>
+          <button id="wiki-next" type="button" hidden>다음 인물 목록</button>
+          <p id="wiki-status" role="status" class="meta"></p>
+          <div id="wiki-source" class="meta"></div>
+        </section>
+      </section>
+      <section id="composition-workspace" class="production-grid" aria-label="일괄 대상 구성" hidden>
+      <section aria-label="선택 대상 확인">
+        <section aria-labelledby="batch-selection-title">
+          <h2 id="batch-selection-title">일괄 생성 대상 확인</h2>
+          <p id="batch-selection-count" role="status">선택 0 / 최대 20명</p>
+          <p class="meta">검색과 페이지를 바꿔도 선택을 유지합니다. 상세 원본과 참조 SHA를 확인한 인물만 포함합니다.</p>
+          <ol id="batch-selection-list"></ol>
+          <label class="check-label"><input id="batch-reviewed" type="checkbox">위 이름과 인원수를 확인했습니다</label>
+          <button id="generate-batch" class="primary" type="button" disabled>선택 인물 일괄 생성</button>
+          <p id="batch-disabled-reason" class="meta" role="status">적격 인물과 READY 연결을 확인하세요.</p>
+          <p id="batch-message" role="status" tabindex="-1">내 READY 연결과 1~20명의 적격 선택이 필요합니다.</p>
+        </section>
+      </section>
+      </section>
+      <section id="local-ai-workspace" aria-label="로컬 AI 작업" hidden>
+        <p>승인된 입력으로 모션 또는 3D 후보를 생성합니다. 도구와 입력을 선택하는 것만으로 실행되지 않습니다.</p>
+        <div class="workstation-grid">
+          <form id="local-ai-form">
+            <label for="local-ai-tool">로컬 AI 도구</label>
+            <select id="local-ai-tool"><option value="unimate">UniMate · 모션</option><option value="uniforge3d">UniForge3D · 3D 재구성</option></select>
+            <p id="local-ai-description"></p>
+            <label for="local-ai-asset">서버 승인 입력</label>
+            <select id="local-ai-asset" required><option value="">승인 입력을 확인하세요</option></select>
+            <div id="local-ai-prompt-field"><label for="local-ai-prompt">동작 설명 (UniMate)</label><textarea id="local-ai-prompt" rows="3" maxlength="2000" aria-describedby="local-ai-description"></textarea></div>
+            <label for="local-ai-seed">Seed (0–2147483647)</label>
+            <input id="local-ai-seed" type="number" min="0" max="2147483647" step="1" required>
+            <p id="local-ai-readiness" role="status"></p>
+            <button id="local-ai-submit" class="primary" type="submit" disabled>선택 입력으로 생성</button>
+            <button id="local-ai-refresh-catalog" type="button">준비 상태 확인</button>
+          </form>
+          <section aria-label="로컬 AI 결과">
+            <h3>작업 상태와 산출물</h3>
+            <p id="local-ai-status" role="status" tabindex="-1">아직 제출한 작업이 없습니다.</p>
+            <button id="local-ai-refresh" type="button" disabled>기존 작업 상태 확인</button>
+            <dl id="local-ai-job" class="fields"></dl>
+            <ul id="local-ai-artifacts"></ul>
+            <p>기술적 생성 성공과 동작·형상 품질 승인은 별개입니다. 품질 미검토 · 출시 승인 없음.</p>
+          </section>
+        </div>
+      </section>
+      <section id="queue-workspace" aria-label="실행 상태" hidden>
+        <section aria-labelledby="batch-title">
+          <h2 id="batch-title">일괄 작업 진행</h2>
+          <p class="meta">HOLD는 후보 생성 완료입니다. UNKNOWN은 완료 건수에 포함하지 않습니다. 새로고침은 생성 요청을 보내지 않습니다.</p>
+          <div id="batch-view"><p>일괄 작업이 없습니다.</p></div>
+          <div class="action-row"><button id="refresh-batch" type="button" hidden>일괄 상태 확인</button><button id="cancel-batch" type="button" hidden>미실행 항목만 취소</button></div>
+          <p id="batch-cancel-limits" class="meta">취소는 PENDING 항목만 대상으로 합니다. RUNNING·UNKNOWN 요청의 취소는 확인되지 않습니다. 이미 전송된 요청은 계속 실행되거나 비용이 발생할 수 있습니다. 연결 해제나 로그아웃은 upstream 취소가 아닙니다.</p>
+        </section>
+      </section>
+    </div>
+  </main>
+  <dialog id="dirty-dialog" aria-labelledby="dirty-title" aria-describedby="dirty-description">
+    <h2 id="dirty-title">저장하지 않은 검토</h2>
+    <p id="dirty-description">현재 결과의 초안을 어떻게 처리할까요? 초안은 이 세션의 메모리에만 남습니다.</p>
+    <button id="draft-continue" data-draft-action="continue" type="button" autofocus>계속 검토</button>
+    <button id="draft-keep" data-draft-action="keep" type="button">초안 보존 후 이동</button>
+    <button id="draft-discard" data-draft-action="discard" type="button">초안 폐기 후 이동</button>
+  </dialog>
+</body>
+</html>

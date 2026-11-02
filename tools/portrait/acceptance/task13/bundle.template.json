@@ -1,0 +1,45 @@
+{
+	"schema": "task13-authority-bundle-template.v1",
+	"status": "INCOMPLETE_AUTHENTIC_INPUTS_REQUIRED",
+	"identity": {
+		"personId": "person-0998",
+		"characterId": "K998",
+		"requestId": "b000c9ba-6b94-44c2-ad3b-e2a70d91bf81"
+	},
+	"artifacts": {
+		"image": "TASK6_SEALED_RESULT_PNG_REQUIRED",
+		"receipt": "TASK6_SEALED_RECEIPT_REQUIRED",
+		"review": "review.template.json",
+		"profile": "profile.template.json",
+		"measurement": "measurement.template.json",
+		"positionReference": "authority.json"
+	},
+	"literalArgv": [
+		"bun",
+		"tools/portrait/acceptance/src/cli.ts",
+		"<task6-sealed-result.png>",
+		"<authentic-review.json>",
+		"<owner-approved-profile.json>",
+		"<complete-final-measurement.json>",
+		"--character",
+		"K998",
+		"--request",
+		"b000c9ba-6b94-44c2-ad3b-e2a70d91bf81",
+		"--profile-sha",
+		"<exact-owner-approved-profile-file-sha256>",
+		"--position-reference",
+		"tools/portrait/acceptance/task13/authority.json"
+	],
+	"pendingJsonPointers": [
+		"/artifacts/image",
+		"/artifacts/receipt",
+		"/artifacts/review",
+		"/artifacts/profile",
+		"/artifacts/measurement",
+		"/literalArgv/2",
+		"/literalArgv/3",
+		"/literalArgv/4",
+		"/literalArgv/5",
+		"/literalArgv/12"
+	]
+}

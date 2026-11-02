@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "alpha": {
+    "background": 0,
+    "foregroundCoreMinimum": 250,
+    "minimumCoreFraction": 0.9,
+    "foregroundDenominator": "nonzero-alpha-pixels",
+    "antialiasedFringe": "permitted",
+    "alpha255Required": false,
+    "rejectedRawOutput": "Do not normalize, threshold, or otherwise change alpha before retaining the raw source"
+  }
+}

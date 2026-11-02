@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "styleId": "wiki-people-person-0374",
+  "status": "owner-selected-reference",
+  "description": "Match only the selected owner image drawing style. Do not copy its identity or clothing.",
+  "portraitShotSource": "https://uniform.wingzero.tw/ko/prompts/camera-shot-size/119",
+  "portraitShotId": "medium-close-up-119",
+  "cameraContractId": "shared-character-framing-v1",
+  "pose": {
+    "portrait": "neutral still portrait, head and torso facing viewer's right, shoulders level, no head tilt, no gestures",
+    "full-body": "neutral standing pose, feet planted, arms slightly separated from torso, hands visible, no action or individual gestures"
+  },
+  "camera": {
+    "portrait": "eye-level medium close-up, full head, both shoulders and upper chest visible, consistent scale, facing viewer's right; no waist, hands, tilt or gestures",
+    "full-body": "exactly one standing figure, eye-level front three-quarter neutral pose, entire head hands and feet visible; no turnaround, second view, inset, or detail panel"
+  },
+  "turntable": {
+    "shotSource": "https://uniform.wingzero.tw/ko/prompts/camera-shot-size/116",
+    "shared": "full shot from top of head to soles of feet, neutral standing pose, eye-level camera, fixed scale, same lighting and plain background in every view; one figure per image",
+    "views": {
+      "front": {
+        "source": "project reference front baseline",
+        "angle": "exact front view, both eyes and both sides of outfit equally visible"
+      },
+      "profile": {
+        "source": "https://uniform.wingzero.tw/ko/prompts/camera-angle/247",
+        "angle": "exact side profile, one eye visible, nose and chin silhouette clear"
+      },
+      "side": {
+        "source": "https://uniform.wingzero.tw/ko/prompts/camera-angle/248",
+        "angle": "oblique side view between front and profile, front and side planes both visible"
+      },
+      "back": {
+        "source": "https://uniform.wingzero.tw/ko/prompts/camera-angle/122",
+        "angle": "exact back view, face not visible, back garment and hair silhouette clear"
+      }
+    }
+  },
+  "partViews": {
+    "head": "character face reference for the existing common body in the fixed head framing",
+    "hair": "front orthographic, hairstyle silhouette only",
+    "upper": "front orthographic, outer garment and collar only",
+    "lower": "front orthographic, lower garment and waist only",
+    "footwear": "side-by-side footwear, front orthographic",
+    "equipment": "individual approved equipment item on plain background"
+  },
+  "partCamera": {
+    "axis": "front orthographic",
+    "background": "solid light neutral background for Tripo input",
+    "scale": "consistent across parts for one character",
+    "lighting": "soft upper-left key with no dramatic shadows"
+  },
+  "references": {
+    "male": {
+      "sha256": null
+    },
+    "female": {
+      "sha256": null
+    }
+  },
+  "referenceSha256": "1698d5afb3e3bb883024a2b03e3af27b67c4ff6eed1522e13804ff3317b8be70",
+  "referenceSource": "https://seoul-dengoku.linalab.io/wiki/portraits/person-0374.png",
+  "referenceRole": "technique-only"
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "instances": [
+    {
+      "id": "pngal-8188",
+      "port": 8188,
+      "available": false,
+      "reason": "Normal shutdown authority and original restart launcher are unproven. Baseline PID 41224 has no retained parent; conhost PID 44756 is not shutdown authority. PNGAL start_comfyui.ps1 force-kills and is forbidden.",
+      "evidence": "task1 baseline and task13/task12 investigation; task12 approved window evidence required"
+    },
+    {
+      "id": "desktop-8189",
+      "port": 8189,
+      "available": false,
+      "reason": "Desktop owner normal shutdown/restart authority is unproven. No actual acquire until task12 approved window establishes it.",
+      "evidence": "task1 baseline and task13/task12 investigation; task12 approved window evidence required"
+    }
+  ]
+}
