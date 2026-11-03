@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Myeongjo:wght@700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&family=JetBrains+Mono:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap");
+@import "tailwindcss";
+
+:root {
+  --font-display: "Nanum Myeongjo", "Gowun Batang", serif;
+  --font-body: "Gowun Batang", "IBM Plex Sans KR", serif;
+  --font-ui: "IBM Plex Sans KR", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-en: "Cormorant Garamond", serif;
+  --background: 214 30% 6%;
+  --foreground: 38 30% 90%;
+  --parchment: 38 32% 86%;
+  --ember: 18 78% 58%;
+  --frost: 200 30% 78%;
+  color-scheme: dark;
+}
+
+html, body, #root { height: 100%; }
+body { overflow: hidden; background: hsl(214 40% 2%); }
+.stage-viewport { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; background: hsl(214 40% 2%); }
+.stage-frame { position: relative; overflow: hidden; box-shadow: 0 0 0 1px hsl(38 32% 86% / 0.06); }
+.stage-canvas { position: absolute; left: 0; top: 0; transform-origin: 0 0; container-type: size; overflow: hidden; background: hsl(var(--background)); }
+.stage-scroll { position: absolute; inset: 0; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; }
+body { margin: 0; background: hsl(var(--background)); color: hsl(var(--foreground)); font-family: var(--font-body); -webkit-font-smoothing: antialiased; overscroll-behavior: none; }
+:focus-visible { outline: 2px solid hsl(var(--ember)); outline-offset: 2px; }
+.font-display { font-family: var(--font-display); }
+.font-ui { font-family: var(--font-ui); }
+.font-mono { font-family: var(--font-mono); }
+.font-en { font-family: var(--font-en); }
+
+body::after {
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 80; opacity: 0.09; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence baseFrequency='0.85' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+/* Ken Burns — four drift paths, picked per scene */
+@keyframes kb-a { from { transform: scale(1.05) translate(0, 0); } to { transform: scale(1.16) translate(-2.5%, -1.5%); } }
+@keyframes kb-b { from { transform: scale(1.14) translate(-2%, 1%); } to { transform: scale(1.05) translate(1.5%, -1%); } }
+@keyframes kb-c { from { transform: scale(1.06) translate(2%, 0); } to { transform: scale(1.15) translate(-1%, 2%); } }
+@keyframes kb-d { from { transform: scale(1.12) translate(0, 2%); } to { transform: scale(1.04) translate(0, -1.5%); } }
+.kb { position: absolute; inset: 0; background-size: cover; background-position: center; will-change: transform; animation: 28s ease-in-out infinite alternate; }
+.kb-a { animation-name: kb-a; } .kb-b { animation-name: kb-b; } .kb-c { animation-name: kb-c; } .kb-d { animation-name: kb-d; }
+@keyframes bg-in { from { opacity: 0; } to { opacity: 1; } }
+.bg-in { animation: bg-in 1.6s ease-out both; }
+
+/* Snow */
+@keyframes fall { from { transform: translate3d(0, -10cqh, 0); } to { transform: translate3d(var(--dx), 110cqh, 0); } }
+.flake { position: absolute; top: 0; border-radius: 999px; background: hsl(200 30% 96%); animation: fall linear infinite; will-change: transform; }
+
+/* Portraits */
+@keyframes breathe { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-0.6%) scale(1.012); } }
+@keyframes enter-l { from { opacity: 0; transform: translateX(-6%); } to { opacity: 1; transform: none; } }
+@keyframes enter-r { from { opacity: 0; transform: translateX(6%); } to { opacity: 1; transform: none; } }
+@keyframes exit-l { to { opacity: 0; transform: translateX(-5%); } }
+@keyframes exit-r { to { opacity: 0; transform: translateX(5%); } }
+.exit-l { animation: exit-l .6s ease-in both; } .exit-r { animation: exit-r .6s ease-in both; }
+.enter-l { animation: enter-l 1.1s cubic-bezier(.2,.7,.2,1) both; }
+.enter-r { animation: enter-r 1.1s cubic-bezier(.2,.7,.2,1) both; }
+.breathe { animation: breathe 6s ease-in-out infinite; transform-origin: 50% 100%; }
+.portrait-mask { -webkit-mask-image: radial-gradient(120% 95% at 50% 30%, #000 55%, transparent 82%); mask-image: radial-gradient(120% 95% at 50% 30%, #000 55%, transparent 82%); }
+
+/* Title card / text */
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise 1s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+.fade { animation: fade .8s ease-out both; }
+@keyframes intro { from { opacity: 0; transform: translateX(16px); } to { opacity: 1; transform: none; } }
+.intro { animation: intro .9s cubic-bezier(.2,.7,.2,1) both; }
+
+/* Long bilingual copy: Korean breaks at spaces, any overlong token still wraps. */
+.wrap-text { overflow-wrap: anywhere; word-break: keep-all; }
+.text-plate { background: linear-gradient(90deg, hsl(214 40% 4% / 0.62), hsl(214 40% 4% / 0.28) 70%, transparent); }
+.text-plate-r { background: linear-gradient(270deg, hsl(214 40% 4% / 0.62), hsl(214 40% 4% / 0.28) 70%, transparent); }
+@keyframes rule { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.rule { animation: rule 1.2s cubic-bezier(.2,.7,.2,1) both; transform-origin: left; }
+
+.vignette { background: radial-gradient(ellipse at 50% 45%, transparent 35%, hsl(214 40% 3% / 0.55) 75%, hsl(214 40% 3% / 0.92) 100%); }
+.parchment {
+  background:
+    linear-gradient(180deg, hsl(214 30% 8% / 0.25), hsl(214 35% 5% / 0.88) 38%),
+    radial-gradient(ellipse at 20% 0%, hsl(38 40% 60% / 0.08), transparent 60%);
+}
+.caret::after { content: ""; display: inline-block; width: .5em; height: .5em; margin-left: .35em; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg) translateY(-3px); animation: fade 1s ease-in-out infinite alternate; }
+
+@media (prefers-reduced-motion: reduce) {
+  .kb, .breathe, .flake, .intro, .enter-l, .enter-r, .exit-l, .exit-r, .bg-in, .rise, .fade, .rule { animation: none !important; }
+  .transition-\[opacity\2c transform\] { transition: none !important; }
+  .flake { display: none; }
+}
