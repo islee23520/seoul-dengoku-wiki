@@ -11,6 +11,7 @@
     "wiki-contract.json"
   ],
   "directories": {
+    "seoul-showcase": "^(?:index\\.html|favicon\\.svg|robots\\.txt|assets/[A-Za-z0-9_-]+\\.(?:js|css)|scenes/[a-z]+\\.jpg|portraits/person-[0-9]{4}\\.webp|history/(?:flags/S[0-9]{2}|portraits/person-[0-9]{4})\\.webp|narration/[a-z0-9-]+\\.(?:ko|en)\\.mp3)$",
     "person-details": "^person-[0-9]{4}\\.json$",
     "portrait-tokens": "^person-[0-9]{4}\\.json$",
     "portrait-reviews": "^person-[0-9]{4}\\.json$",

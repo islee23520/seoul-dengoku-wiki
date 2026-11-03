@@ -38,6 +38,19 @@ const checkReactRoute = async (route, expectedTitle) => {
 for (const document of documents) await checkReactRoute(`/wiki${document.route}`, document.title)
 for (const route of compatibilityRoutes) await checkReactRoute(route)
 
+const showcaseRoute = '/wiki/seoul-showcase/'
+const showcaseResponse = await fetch(`${baseUrl}${showcaseRoute}`, { redirect: 'manual' })
+const showcaseHtml = await showcaseResponse.text()
+if (showcaseResponse.status !== 200) failures.push(`showcase-http:${showcaseResponse.status}`)
+const showcaseAssets = [...showcaseHtml.matchAll(/(?:src|href)="(\/wiki\/seoul-showcase\/assets\/[^"?]+\.(?:js|css))"/g)].map(match => match[1])
+if (!showcaseAssets.some(asset => asset.endsWith('.js'))) failures.push('showcase-entry-missing')
+if (showcaseHtml.includes('i.replit.com')) failures.push('showcase-replit-injection')
+for (const asset of showcaseAssets) {
+  const response = await fetch(`${baseUrl}${asset}`, { redirect: 'manual' })
+  if (response.status !== 200) failures.push(`showcase-asset:${response.status}:${asset}`)
+  if (!(response.headers.get('content-type') ?? '').match(/javascript|text\/css/)) failures.push(`showcase-asset-type:${asset}`)
+}
+
 for (const route of regressionRoutes) {
   if (publicEdge) { await checkReactRoute(route); continue }
   const response = await fetch(`${baseUrl}${route}`)
@@ -67,6 +80,7 @@ const result = {
   baseUrl,
   documents: documents.length,
   compatibilityRoutes: compatibilityRoutes.length,
+  showcaseAssets: showcaseAssets.length,
   regressionRoutes: regressionRoutes.length,
   redirectRoutes: publicEdge ? 0 : redirectRoutes.size,
   protectedRoutes: protectedRoutes.length,
