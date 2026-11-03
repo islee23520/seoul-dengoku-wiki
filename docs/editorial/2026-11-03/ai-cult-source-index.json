@@ -1,0 +1,74 @@
+{
+  "checkedOn": "2026-11-03",
+  "status": "proposal-research-only",
+  "repository": "islee23520/seoul-dengoku-wiki",
+  "observedHead": "41bd2f7b93faa9129df5b3ee4782b7d10b3b3099",
+  "sources": [
+    {
+      "id": "issue-656",
+      "kind": "owner-request-in-issue",
+      "url": "https://github.com/islee23520/seoul-dengoku-wiki/issues/656",
+      "updatedAt": "2026-11-02T14:09:13Z",
+      "snapshot": "sources/wiki-656.json"
+    },
+    {
+      "id": "remote-world-guide",
+      "kind": "repository-guidance-observation",
+      "path": "WORLD_BUILDING_GUIDE.md",
+      "blobSha": "81b7a79d0cb0216ccee725d7e3953c90af7ffe80",
+      "url": "https://github.com/islee23520/seoul-dengoku-wiki/blob/41bd2f7b93faa9129df5b3ee4782b7d10b3b3099/WORLD_BUILDING_GUIDE.md"
+    },
+    {
+      "id": "culture-guide",
+      "kind": "repository-guidance-observation",
+      "path": "lore/culture/AGENTS.md",
+      "blobSha": "9cf0a4a27fe10bf2584be3d64981a824f9a36691",
+      "url": "https://github.com/islee23520/seoul-dengoku-wiki/blob/41bd2f7b93faa9129df5b3ee4782b7d10b3b3099/lore/culture/AGENTS.md"
+    },
+    {
+      "id": "public-person-0088",
+      "kind": "committed-generated-surface-not-pg-head-approval",
+      "path": "public/person-details/person-0088.json",
+      "blobSha": "6b41be7df91ef7014fa7540c5e8b5333751b0919",
+      "url": "https://github.com/islee23520/seoul-dengoku-wiki/blob/41bd2f7b93faa9129df5b3ee4782b7d10b3b3099/public/person-details/person-0088.json"
+    },
+    {
+      "id": "naming-ledger",
+      "kind": "editorial-ledger-with-historical-tables",
+      "path": "lore/editorial/Naming-Ledger.md",
+      "blobSha": "0b41b1c6dc4231e00608af16ea5efe7834606061",
+      "url": "https://github.com/islee23520/seoul-dengoku-wiki/blob/41bd2f7b93faa9129df5b3ee4782b7d10b3b3099/lore/editorial/Naming-Ledger.md"
+    },
+    {
+      "id": "wiki-readme",
+      "kind": "authoring-and-migration-guidance",
+      "path": "README.md",
+      "blobSha": "b3cf8f21451d81b6ebe2207205fe6fece0dd0882",
+      "url": "https://github.com/islee23520/seoul-dengoku-wiki/blob/41bd2f7b93faa9129df5b3ee4782b7d10b3b3099/README.md"
+    }
+  ],
+  "publicProjectionExtract": {
+    "id": "person-0088",
+    "characterId": "K423",
+    "name": "오경재",
+    "title": "종교 연합 왕 · 명부교회 당회장",
+    "occupation": "총회 당직·유언 원본 관리",
+    "state": "S04",
+    "stateName": "명부교회",
+    "sourceKind": "proposal",
+    "sourceStatus": "owner-authored",
+    "locked": true,
+    "household": {
+      "personFaith": "christian",
+      "houseFaith": "christian",
+      "humanoidAdmission": "excluded"
+    },
+    "warning": "Extract from committed generated surface; not an authenticated current PostgreSQL head or proof of editorial approval."
+  },
+  "limits": [
+    "No authenticated PostgreSQL head read",
+    "No live deployment or temporary game flag visual verification",
+    "No approved membership list or authority change inferred",
+    "No canonical PostgreSQL edits, public-site publication or game implementation"
+  ]
+}
