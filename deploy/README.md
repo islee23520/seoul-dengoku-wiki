@@ -106,7 +106,7 @@ Deployment test suites were removed by owner decision. The deployment caller and
 
 ## 공개 테이블 읽기 /wiki/api/tables (익명)
 
-`server/wiki-table-api.mjs`가 `wiki` 스키마 전체 테이블을 인증 없이 공개한다(2026-11-03 owner 결정, 선거구 포함 전체 공개). 목록·페이지 행(JSON/CSV)·전체 테이블 CSV 다운로드는 모두 `wiki_reader` 권한으로 PostgreSQL을 직접 읽는다. `wiki_private`은 reader에 권한이 없어 구조적으로 노출되지 않는다. 8787 데이터 API가 `/wiki/api/tables`를 같은 컨테이너의 8788 문서 API로 넘기므로 nginx 관리 블록은 불변이다.
+`server/wiki-table-api.mjs`가 공개 위키 컨텐츠 테이블만 인증 없이 공개한다(2026-11-03 owner 지시: 시크릿·어드민 정보는 비공개, 공개된 내용/위키 컨텐츠 중심만 노출 — 같은 날 앞선 "wiki 스키마 전체 공개" 결정은 이 지시로 대체됨). 허용 범위는 `server/wiki-table-allowlist.mjs`의 명시 목록+접두사(typed 문서 코퍼스 `document_revision_text_*`·`text_*`·`region_content_*` 및 카탈로그·인물·용어·지리·public 투영 단일 테이블)이고, 어드민 행정 원본·정체성 대장·권한/승인 원장·시트 보존·인구/선거 원본·저작 입력·운영 메타는 제외된다. 비허용 테이블은 존재 여부도 노출하지 않고 404로 응답한다. 목록·페이지 행(JSON/CSV)·전체 테이블 CSV 다운로드는 모두 `wiki_reader` 권한으로 PostgreSQL을 직접 읽는다. `wiki_private`은 reader에 권한이 없어 구조적으로 노출되지 않는다. 8787 데이터 API가 `/wiki/api/tables`를 같은 컨테이너의 8788 문서 API로 넘기므로 nginx 관리 블록은 불변이다.
 
 ### 테이블 변경은 PR 마이그레이션으로만
 
