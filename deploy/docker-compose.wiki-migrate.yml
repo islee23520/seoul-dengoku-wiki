@@ -8,7 +8,7 @@
 #   - 외부에 포트를 열지 않고 seoul-dengoku-web_default 내부에서만 접근한다.
 services:
   wiki-migrate:
-    image: node:26-bookworm-slim
+    image: node:26-bookworm
     container_name: wiki-migrate
     restart: unless-stopped
     working_dir: /wiki
