@@ -13,6 +13,7 @@ export default defineConfig({
     watch: { ignored: ['**/.omo/**', '**/vendor/seoul-dengoku-inkos/**'] },
     proxy: {
       '/wiki/api/documents': 'http://127.0.0.1:8788',
+      '/wiki/api/tables': 'http://127.0.0.1:8788',
       '/wiki/api': 'http://127.0.0.1:8787',
     },
   },

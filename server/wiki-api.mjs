@@ -8,7 +8,7 @@
 //   PUBLIC_ORIGIN  origin written into openapi.json servers (default https://sss.linalab.io)
 // Routes are served under both /wiki/api and /api.
 import { createHash } from 'node:crypto'
-import { createServer } from 'node:http'
+import { createServer, request as httpRequest } from 'node:http'
 import { readFile, readdir, stat } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -256,7 +256,7 @@ function route(request, response) {
   if (!prefix) throw new HttpError(404, 'not_found', 'unknown path')
   const [section, ...parts] = url.pathname.slice(prefix.length).split('/').filter(Boolean).map(decodeURIComponent)
   const params = url.searchParams
-  if (!section) return send(request, response, 200, { name: '서울:전국 wiki data API', loadedAt: store.loadedAt, openapi: '/wiki/api/openapi.json', sections: ['/wiki/api/people', '/wiki/api/territories', '/wiki/api/portrait-tokens', '/wiki/api/health'] })
+  if (!section) return send(request, response, 200, { name: '서울:전국 wiki data API', loadedAt: store.loadedAt, openapi: '/wiki/api/openapi.json', sections: ['/wiki/api/people', '/wiki/api/territories', '/wiki/api/portrait-tokens', '/wiki/api/tables', '/wiki/api/health'] })
   if (section === 'health' && !parts.length) return send(request, response, 200, { ok: true, loadedAt: store.loadedAt, people: store.details.entries.size, tokens: store.tokens.entries.size, states: store.territories.collections.states.rows.length })
   if (section === 'openapi.json' && !parts.length) return send(request, response, 200, openApiDocument(publicOrigin))
   if (section === 'people') {
@@ -278,7 +278,25 @@ await load()
 const reload = () => { load().catch((error) => console.error('WIKI_API_RELOAD_FAILED', error)) }
 process.on('SIGHUP', reload)
 setInterval(reload, Number(process.env.RELOAD_INTERVAL_MS ?? 60000)).unref()
+// Public table reads live in the PostgreSQL document API of the same release
+// (server/wiki-table-api.mjs); the edge routes all of /wiki/api/* here.
+const tablesUpstream = Number(process.env.WIKI_TABLES_PORT ?? 8788)
+function proxyTables(request, response) {
+  const upstream = httpRequest({ host: '127.0.0.1', port: tablesUpstream, method: request.method, path: request.url,
+    headers: { accept: request.headers.accept ?? '*/*' } }, (reply) => {
+    response.writeHead(reply.statusCode ?? 502, reply.headers)
+    reply.pipe(response)
+  })
+  upstream.on('error', () => {
+    if (response.headersSent) return response.destroy()
+    send(request, response, 503, { error: { code: 'unavailable', message: 'tables unavailable' } })
+  })
+  response.on('close', () => upstream.destroy())
+  upstream.end()
+}
 const server = createServer((request, response) => {
+  const pathname = new URL(request.url ?? '/', 'http://localhost').pathname
+  if (pathname === '/wiki/api/tables' || pathname.startsWith('/wiki/api/tables/')) return proxyTables(request, response)
   try { route(request, response) } catch (error) {
     if (error instanceof HttpError) return send(request, response, error.status, { error: { code: error.code, message: error.message } })
     console.error(error)

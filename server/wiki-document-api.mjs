@@ -21,6 +21,7 @@ import { readComputedArticleAsync } from '../scripts/cast-sqlite/computed-articl
 import { readPersonDispositionAsync } from '../scripts/cast-sqlite/person-disposition.mjs';
 import { readRetirementProseAsync, projectRetirementProse } from '../scripts/cast-sqlite/retirement-prose.mjs';
 import { projectActivePersonIndex } from '../scripts/person-roster-projection.mjs';
+import { createTableApi, isTableRequest } from './wiki-table-api.mjs';
 
 
 // Routes are derived from the exact logical source names used by the catalog.
@@ -98,7 +99,9 @@ export async function createWikiDocumentServer({ pgUrl = process.env.WIKI_DOCUME
   await reader.close();
   throw error;
  }
+ const tableApi = createTableApi(reader);
  const server = createServer((request, response) => {
+  if (isTableRequest(new URL(request.url, 'http://localhost').pathname)) { void tableApi(request, response); return; }
   const send = (status, body) => {
    response.writeHead(status, {
     'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store',
