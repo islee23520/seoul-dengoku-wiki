@@ -11,6 +11,7 @@ import { spawnSync } from 'node:child_process'
 import { closeSync, constants, fstatSync, openSync, readFileSync } from 'node:fs'
 import pg from 'pg'
 import { isPublicTable } from '../server/wiki-table-allowlist.mjs'
+import { isSeedTable } from './seed-scope.mjs'
 
 export const SEED_SCHEMA = 'wiki'
 export const SEEDS_DIR = 'db/seeds'
@@ -112,12 +113,13 @@ export async function makePgExecutor(env = process.env) {
   }
 }
 
-// — 스키마 내성(읽기 전용): 허용목록에 드는 wiki 테이블의 컬럼·PK (3회 일괄 조회) —
+// — 스키마 내성(읽기 전용): 시드 범위(컨텐츠) 테이블의 컬럼·PK (3회 일괄 조회) —
+// 이중 검사: 공개 허용목록(#666) AND 컨텐츠 범위(seed-scope, 소유자 2026-11-03).
 export async function seedTableCatalog(exec) {
   const tableRows = (await exec.jsonLines(jsonLines(
     `SELECT table_name FROM information_schema.tables
      WHERE table_schema = 'wiki' AND table_type = 'BASE TABLE' ORDER BY table_name`,
-  ))).map((r) => JSON.parse(r).table_name).filter(isPublicTable)
+  ))).map((r) => JSON.parse(r).table_name).filter((t) => isPublicTable(t) && isSeedTable(t))
   const columnRows = (await exec.jsonLines(jsonLines(
     `SELECT table_name, column_name, data_type FROM information_schema.columns
      WHERE table_schema = 'wiki' ORDER BY table_name, ordinal_position`,

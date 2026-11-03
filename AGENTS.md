@@ -122,7 +122,7 @@ node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또�
 |`scripts/inkos-adapter/README.md`|InkOS 후보 전용·읽기 전용 경계|
 |`server/wiki-api.mjs`, `server/wiki-document-api.mjs`|공개 API|
 |`db/migrations/` + `scripts/db-migrate.mjs`|테이블 변경 drizzle 마이그레이션과 적용기. main에 merge된 마이그레이션만 호스트 wiki-migrate 서비스가 적용한다(직접 수동 SQL 금지). 익명 공개 읽기는 `/wiki/api/tables`이며 허용 범위는 `server/wiki-table-allowlist.mjs`(공개 컨텐츠만, 어드민/시크릿 제외)|
-|`db/seeds/` + `scripts/seed-{export,apply}.mjs`|공개 위키 데이터의 repo 가시 스냅샷(`seed:export` PG→repo 읽기 전용 반출, `seed:apply` 신규 환경 부트스트랩 적재). 경계는 `server/wiki-table-allowlist.mjs` 단일 출처, `wiki_private` 반출 금지. 데이터 델타는 이 디렉터리의 git diff가 가시적 이력이다. 독립 편집 원본이 아니다|
+|`db/seeds/` + `scripts/seed-{export,apply}.mjs` + `scripts/seed-scope.mjs`|공개 위키 **컨텐츠**의 repo 가시 스냅샷(`seed:export` PG→repo 읽기 전용 반출, `seed:apply` 신규 환경 부트스트랩 적재). 이중 검사: 공개 허용목록(`server/wiki-table-allowlist.mjs`) AND 컨텐츠 범위(소유자 결정 2026-11-03 — 운영/시스템/메타/카탈로그 제외). `wiki_private` 반출 금지. 데이터 델타는 이 디렉터리의 git diff가 가시적 이력이다. 독립 편집 원본이 아니다|
 |`deploy/call-owner.mjs`, `deploy/check-live-contract.mjs`, `deploy/README.md`|외부 owner 배포 계약|
 |`artifact-allowlist.json`|dist/ 산출물·라우트 허용 목록(루트에 위치)|
 |`vite.config.ts`, `tsconfig.json`|빌드·타입 설정(vitest 설정은 #625에서 삭제)|

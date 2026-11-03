@@ -1,12 +1,15 @@
 #!/usr/bin/env node
-// seed-export.mjs — PostgreSQL wiki 스키마의 공개 seed 데이터를 db/seeds로 반출한다.
+// seed-export.mjs — PostgreSQL wiki 스키마의 공개 컨텐츠 seed를 db/seeds로 반출한다.
 //
 // 계약(db/seeds/README.md 참조):
-// - 대상은 server/wiki-table-allowlist.mjs의 isPublicTable이 허용하는 wiki 테이블만.
+// - 대상은 공개 허용목록(server/wiki-table-allowlist.mjs) AND 컨텐츠 범위
+//   (scripts/seed-scope.mjs, 소유자 결정 2026-11-03)을 모두 통과하는 wiki 테이블만.
 // - wiki_private은 조회하지 않는다. 접속 문자열은 환경(WIKI_SEEDS_PG[_FILE],
 //   WIKI_SEEDS_PSQL)으로만 전달하고 출력·파일에 남기지 않는다.
 // - 출력은 결정적이다: PK 오름차순 row_to_json 원문 라인, 도메인별 파일,
 //   40,000행 샤드, 타임스탬프 없는 manifest. 같은 DB 상태 → 같은 바이트.
+// - 승격은 저널로 보호한다: .promote-pending.json 이 남아 있으면 소비자(seed:apply)는
+//   트리를 신뢰하지 않고(E_SEED_PROMOTE_PENDING), 다음 반출이 결정적으로 복구한다.
 // - 데이터 델타는 이 디렉터리의 git diff가 곧 가시적 마이그레이션 이력이다.
 import { createHash } from 'node:crypto'
 import { mkdir, readFile, readdir, rename, rm, writeFile } from 'node:fs/promises'
@@ -26,6 +29,9 @@ import {
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const seedsRoot = resolve(projectRoot, SEEDS_DIR)
+const stagingRoot = resolve(seedsRoot, '.staging')
+const journalPath = resolve(seedsRoot, '.promote-pending.json')
+const readmeName = 'README.md'
 
 async function pickExecutor() {
   if (process.env.WIKI_SEEDS_PSQL !== undefined && process.env.WIKI_SEEDS_PSQL.trim() !== '') {
@@ -52,7 +58,7 @@ async function sha256Of(path) {
   return createHash('sha256').update(await readFile(path)).digest('hex')
 }
 
-async function exportTable(exec, entry, stagingRoot) {
+async function exportTable(exec, entry) {
   const lines = await exec.jsonLines(tableExportSql(entry))
   const domain = domainOf(entry.table)
   const dir = resolve(stagingRoot, domain)
@@ -82,80 +88,102 @@ function manifestOf(entries) {
   return {
     format: 'wiki-seeds/1',
     schema: 'wiki',
-    boundary: { module: 'server/wiki-table-allowlist.mjs' },
+    boundary: {
+      public: 'server/wiki-table-allowlist.mjs',
+      content: 'scripts/seed-scope.mjs',
+      rule: 'isPublicTable AND isSeedTable (컨텐츠 범위는 소유자 결정 2026-11-03)',
+    },
     shard_rows: SHARD_ROWS,
     tables: entries,
   }
 }
 
-// 이전 manifest 기준으로 더 이상 존재하지 않는 파일만 지운다(미추적 파일은 건드리지 않는다).
-// 승격 이후에 실행한다: 실패해도 마지막 정상 상태가 사라지지 않고 재실행으로 치유된다.
-async function readPreviousManifest() {
+// 이전 승격이 중단된 경우(저널 잔존): 스테이징 매니페스트가 살아 있으면 설치하고 저널을
+// 제거한다. 이후 재반출이 모든 파일을 결정적으로 다시 쓰고 만료분을 청소해 복구를 완성한다.
+async function recoverPendingPromotion() {
+  let journal = null
   try {
-    return JSON.parse(await readFile(resolve(seedsRoot, 'manifest.json'), 'utf8'))
+    journal = await readFile(journalPath, 'utf8')
   } catch (error) {
     if (!(error instanceof Error) || !('code' in error) || error.code !== 'ENOENT') throw error
-    return null
+    return
+  }
+  if (journal !== null) {
+    try {
+      await rename(resolve(stagingRoot, 'manifest.json'), resolve(seedsRoot, 'manifest.json'))
+    } catch (error) {
+      if (!(error instanceof Error) || !('code' in error) || error.code !== 'ENOENT') throw error
+    }
+    await rm(journalPath, { force: true })
   }
 }
 
-async function removeStaleOutputs(previous, currentFiles) {
-  if (previous === null) return
-  const current = new Set(currentFiles)
-  for (const table of previous.tables ?? []) {
-    for (const { file } of table.files ?? []) {
-      if (!current.has(file)) await rm(resolve(seedsRoot, file), { force: true })
+// manifest에 등록된 파일과 README를 제외한 모든 파일을 지운다(만료분·고아 정리).
+// 멱등하므로 실패 후 재실행이 같은 결과로 수렴한다.
+async function sweepUnlisted(manifest) {
+  const listed = new Set(['manifest.json', readmeName, '.staging'])
+  for (const table of manifest.tables) {
+    for (const { file } of table.files) listed.add(file)
+  }
+  const victims = []
+  const walk = async (relDir) => {
+    const abs = resolve(seedsRoot, relDir)
+    for (const entry of await readdir(abs, { withFileTypes: true })) {
+      const rel = relDir === '' ? entry.name : `${relDir}/${entry.name}`
+      if (entry.isDirectory()) {
+        if (!listed.has(rel)) await walk(rel)
+      } else if (!listed.has(rel)) {
+        victims.push(rel)
+      }
     }
   }
-}
-
-async function pruneEmptyDirs(root) {
-  for (const name of await readdir(root, { withFileTypes: true })) {
-    if (!name.isDirectory() || name.name === '.staging') continue
-    const dir = resolve(root, name.name)
-    const left = await readdir(dir)
-    if (left.length === 0) await rm(dir, { recursive: true })
+  await walk('')
+  for (const rel of victims) await rm(resolve(seedsRoot, rel), { force: true })
+  // 빈 도메인 디렉터리 정리
+  for (const entry of await readdir(seedsRoot, { withFileTypes: true })) {
+    if (!entry.isDirectory() || entry.name === '.staging') continue
+    const dir = resolve(seedsRoot, entry.name)
+    if ((await readdir(dir)).length === 0) await rm(dir, { recursive: true })
   }
+  return victims.length
 }
 
 async function main() {
   const exec = await pickExecutor()
-  const staging = resolve(seedsRoot, '.staging')
-  await rm(staging, { recursive: true, force: true })
-  await mkdir(staging, { recursive: true })
+  await mkdir(seedsRoot, { recursive: true })
+  await recoverPendingPromotion()
+  await rm(stagingRoot, { recursive: true, force: true })
+  await mkdir(stagingRoot, { recursive: true })
   try {
     const catalog = await seedTableCatalog(exec)
     const entries = []
     for (const entry of catalog) {
-      entries.push(await exportTable(exec, entry, staging))
+      entries.push(await exportTable(exec, entry))
     }
     entries.sort((a, b) => a.table.localeCompare(b.table))
     const manifest = manifestOf(entries)
-    await writeFile(resolve(staging, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, { encoding: 'utf8', flag: 'wx' })
+    await writeFile(resolve(stagingRoot, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, { encoding: 'utf8', flag: 'wx' })
 
-    const previous = await readPreviousManifest()
-    await mkdir(seedsRoot, { recursive: true })
-    // 승격: 새 파일을 먼저 제자리에 옮긴다(파일별 원자적 교체) — 중간 실패 시
-    // 기존 상태가 소실되지 않고, 결정적 재실행으로 치유된다.
+    // 승격: 저널 선표시 → 파일 rename → manifest 교체 → 저널 제거 → 만료 청소.
+    // 어느 단계에서 실패해도 저널이 남아 소비자를 차단하고, 다음 실행이 복구한다.
+    await writeFile(journalPath, `${JSON.stringify({ pending: true, tables: entries.length })}\n`, { encoding: 'utf8' })
     for (const table of manifest.tables) {
       for (const { file } of table.files) {
         const target = resolve(seedsRoot, file)
         await mkdir(dirname(target), { recursive: true })
-        await rename(resolve(staging, file), target)
+        await rename(resolve(stagingRoot, file), target)
       }
     }
-    await rename(resolve(staging, 'manifest.json'), resolve(seedsRoot, 'manifest.json'))
-    // 마지막에 만료 파일 정리(이전 manifest 추적분 중 새 manifest에 없는 것만).
-    const currentFiles = manifest.tables.flatMap((t) => t.files.map((f) => f.file))
-    await removeStaleOutputs(previous, currentFiles)
-    await pruneEmptyDirs(seedsRoot)
+    await rename(resolve(stagingRoot, 'manifest.json'), resolve(seedsRoot, 'manifest.json'))
+    await rm(journalPath, { force: true })
+    const swept = await sweepUnlisted(manifest)
 
     const rows = entries.reduce((sum, t) => sum + t.rows, 0)
     const files = entries.reduce((sum, t) => sum + t.files.length, 0)
-    console.log(JSON.stringify({ event: 'seed-export', tables: entries.length, rows, files }))
+    console.log(JSON.stringify({ event: 'seed-export', tables: entries.length, rows, files, swept }))
   } finally {
     await exec.close()
-    await rm(staging, { recursive: true, force: true })
+    await rm(stagingRoot, { recursive: true, force: true })
   }
 }
 
