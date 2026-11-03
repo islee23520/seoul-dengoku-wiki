@@ -1,0 +1,32 @@
+# wiki-migrate — 테이블 변경 PR 마이그레이션 적용기 (호스트 compose 스니펫)
+#
+# 적용 대상: desktop-bo514et E:\git\seoul-dengoku-web\docker-compose.yml
+# (name: seoul-dengoku-web, 외부 네트워크 seoul-dengoku-web_default).
+# 이 파일은 repo에 커밋되는 정의 복사본이다. 규칙:
+#   - main에 merge된 db/migrations만 적용한다(직접 수동 SQL 금지).
+#   - wiki_owner 자격은 .env의 WIKI_POSTGRES_PASSWORD에서만 온다(파일 커밋 금지).
+#   - 외부에 포트를 열지 않고 seoul-dengoku-web_default 내부에서만 접근한다.
+services:
+  wiki-migrate:
+    image: node:26-bookworm-slim
+    container_name: wiki-migrate
+    restart: unless-stopped
+    working_dir: /wiki
+    command: ["sh", "/app/wiki-migrate-loop.sh"]
+    environment:
+      PGHOST: wiki-postgres
+      PGDATABASE: seoul
+      PGUSER: wiki_owner
+      PGPASSWORD: ${WIKI_POSTGRES_PASSWORD:?WIKI_POSTGRES_PASSWORD required}
+      WIKI_MIGRATE_WORK: /wiki
+      WIKI_MIGRATE_DEPS: /deps
+    volumes:
+      - wiki-migrate-work:/wiki
+      - wiki-migrate-deps:/deps
+      - ./deploy/wiki-migrate-loop.sh:/app/wiki-migrate-loop.sh:ro
+    networks:
+      default: {}
+
+volumes:
+  wiki-migrate-work:
+  wiki-migrate-deps:

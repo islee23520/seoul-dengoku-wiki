@@ -17,12 +17,15 @@
     "cast:verify": "node scripts/cast-sqlite/verify.mjs",
     "cast:pg-verify": "node scripts/postgres-migration/reconcile.mjs",
     "db:load": "node scripts/mongo-load.mjs",
+    "db:migration:new": "drizzle-kit generate --custom --name",
+    "db:migrate": "node scripts/db-migrate.mjs",
     "report:feedback-catalog": "node scripts/feedback-source-catalog-report.mjs"
   },
   "dependencies": {
     "@seoul-dengoku/document-renderer": "file:./vendor/seoul-dengoku-document-renderer-0.1.2.tgz",
     "@seoul-dengoku/publication-manifest": "file:./vendor/seoul-dengoku-publication-manifest-0.1.0.tgz",
     "@seoul-dengoku/shared-web-ui": "file:./vendor/seoul-dengoku-shared-web-ui-0.1.2.tgz",
+    "drizzle-orm": "0.45.4",
     "entities": "8.0.0",
     "mermaid": "^11.17.2",
     "pg": "8.16.3",
@@ -47,7 +50,6 @@
     "tailwindcss": "^3.4.6",
     "typescript": "^5.5.3",
     "drizzle-kit": "0.31.11",
-    "drizzle-orm": "0.45.4",
     "vite": "^8.3.0"
   }
 }
