@@ -963,28 +963,6 @@
       ]
     },
     {
-      "table": "region_content_import",
-      "domain": "region-content",
-      "columns": [
-        "logical_path",
-        "source_sha256",
-        "document_sha256",
-        "actor",
-        "reason"
-      ],
-      "primary_key": [
-        "logical_path"
-      ],
-      "rows": 25,
-      "files": [
-        {
-          "file": "region-content/region_content_import.jsonl",
-          "rows": 25,
-          "sha256": "e6b58e3a2bbb6cbc71c05ee57330b133415bfe5fc4ad2d15bc0d51e4ec48bacc"
-        }
-      ]
-    },
-    {
       "table": "region_content_inhabitant",
       "domain": "region-content",
       "columns": [
