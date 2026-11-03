@@ -104,6 +104,14 @@ the public check does not replace it.
 
 Deployment test suites were removed by owner decision. The deployment caller and live HTTP contract checker remain operational.
 
+## 공개 테이블 읽기 /wiki/api/tables (익명)
+
+`server/wiki-table-api.mjs`가 `wiki` 스키마 전체 테이블을 인증 없이 공개한다(2026-11-03 owner 결정, 선거구 포함 전체 공개). 목록·페이지 행(JSON/CSV)·전체 테이블 CSV 다운로드는 모두 `wiki_reader` 권한으로 PostgreSQL을 직접 읽는다. `wiki_private`은 reader에 권한이 없어 구조적으로 노출되지 않는다. 8787 데이터 API가 `/wiki/api/tables`를 같은 컨테이너의 8788 문서 API로 넘기므로 nginx 관리 블록은 불변이다.
+
+### 테이블 변경은 PR 마이그레이션으로만
+
+테이블 구조·데이터 변경은 `npm run db:migration:new -- <이름>`으로 만든 `db/migrations/*.sql`을 PR로 review·merge해야 적용된다. `deploy/docker-compose.wiki-migrate.yml`(호스트 `seoul-dengoku-web` compose의 `wiki-migrate` 서비스)이 main을 주기 추적해 `npm run db:migrate`를 적용하고, 매 실행 뒤 `wiki_reader` 공개 읽기 권한을 재확정한다. CI 단계가 wiki-postgres 네트워크에 닿지 않으므로 적용기는 호스트 compose에 둔다. 직접 수동 SQL로 테이블을 바꾸지 않는다.
+
 ## 문서 API 런타임 PostgreSQL 연결 (owner 주입)
 
 `server/wiki-document-api.mjs`는 런타임에 PostgreSQL만 읽는다(SQLite 폴백 없음). 배포 시
