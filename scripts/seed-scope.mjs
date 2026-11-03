@@ -29,6 +29,11 @@
 
 export const SEED_TABLE_PREFIXES = ['text_', 'region_content_', 'person_', 'public_map_']
 
+// prefix가 포함하지만 컨텐츠가 아닌 운영 성격 테이블은 명시적으로 제외한다.
+// region_content_import: 지역 문서 이관 영수증(source/document 해시·actor·reason) —
+// 운영/메타 성격이라 소유자 컨텐츠 전용 지시(2026-11-03) 범위 밖.
+export const SEED_EXCLUDED_TABLES = new Set(['region_content_import'])
+
 export const SEED_TABLES = new Set([
   'person',
   'profile',
@@ -56,4 +61,5 @@ export const SEED_TABLES = new Set([
 ])
 
 export const isSeedTable = (name) =>
-  SEED_TABLE_PREFIXES.some((prefix) => name.startsWith(prefix)) || SEED_TABLES.has(name)
+  !SEED_EXCLUDED_TABLES.has(name)
+  && (SEED_TABLE_PREFIXES.some((prefix) => name.startsWith(prefix)) || SEED_TABLES.has(name))
