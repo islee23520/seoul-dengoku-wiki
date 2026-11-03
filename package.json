@@ -10,6 +10,7 @@
     "generate": "node scripts/generate-release.mjs",
     "generate:portrait-tokens": "node scripts/generate-portrait-tokens.mjs",
     "build": "node scripts/generate-release.mjs --build",
+    "build:showcase": "node scripts/build-showcase.mjs",
     "preview": "vite preview",
     "check:artifacts": "node scripts/check-artifact-allowlist.mjs",
     "cast:build": "node scripts/cast-sqlite/build.mjs",

@@ -31,6 +31,7 @@ export default function HomePage() {
       </div>
 
       <div className="wiki-quick-links">
+        <a href="/wiki/seoul-showcase/">서사 쇼케이스</a>
         <Link to={wikiLinks.documents}>정본 문서 전체</Link>
         <Link to={wikiLinks.categories}>분류 전체</Link>
         <Link to={wikiLinks.characters}>인물 총람</Link>

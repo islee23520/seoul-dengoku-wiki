@@ -535,6 +535,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     root, verifyOnly: args[0] === '--verify-pg', consume: args[0] === '--build' ? async run => {
       await run([process.execPath, 'node_modules/typescript/bin/tsc', '-b'])
       await run([process.execPath, 'node_modules/vite/bin/vite.js', 'build'])
+      await run([process.execPath, 'scripts/build-showcase.mjs'])
     } : undefined
   })
 }
