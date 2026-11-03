@@ -98,25 +98,10 @@ function manifestOf(entries) {
   }
 }
 
-// 이전 승격이 중단된 경우(저널 잔존): 스테이징 매니페스트가 살아 있으면 설치하고 저널을
-// 제거한다. 이후 재반출이 모든 파일을 결정적으로 다시 쓰고 만료분을 청소해 복구를 완성한다.
-async function recoverPendingPromotion() {
-  let journal = null
-  try {
-    journal = await readFile(journalPath, 'utf8')
-  } catch (error) {
-    if (!(error instanceof Error) || !('code' in error) || error.code !== 'ENOENT') throw error
-    return
-  }
-  if (journal !== null) {
-    try {
-      await rename(resolve(stagingRoot, 'manifest.json'), resolve(seedsRoot, 'manifest.json'))
-    } catch (error) {
-      if (!(error instanceof Error) || !('code' in error) || error.code !== 'ENOENT') throw error
-    }
-    await rm(journalPath, { force: true })
-  }
-}
+// 이전 승격이 중단된 경우(저널 잔존)에도 특별한 복구 경로를 두지 않는다:
+// 저널이 남아 있는 동안 소비자(seed:apply)는 트리를 신뢰하지 않고, 이후의 성공적인
+// 반출이 전체 파일·manifest·만료 청소를 결정적으로 다시 수행한 뒤에야 저널이
+// 제거된다. 부분 상태를 조기에 푸는 경로가 존재하면 혼합 상태가 무겁게 노출된다.
 
 // manifest에 등록된 파일과 README를 제외한 모든 파일을 지운다(만료분·고아 정리).
 // 멱등하므로 실패 후 재실행이 같은 결과로 수렴한다.
@@ -151,7 +136,6 @@ async function sweepUnlisted(manifest) {
 async function main() {
   const exec = await pickExecutor()
   await mkdir(seedsRoot, { recursive: true })
-  await recoverPendingPromotion()
   await rm(stagingRoot, { recursive: true, force: true })
   await mkdir(stagingRoot, { recursive: true })
   try {
@@ -164,8 +148,9 @@ async function main() {
     const manifest = manifestOf(entries)
     await writeFile(resolve(stagingRoot, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, { encoding: 'utf8', flag: 'wx' })
 
-    // 승격: 저널 선표시 → 파일 rename → manifest 교체 → 저널 제거 → 만료 청소.
-    // 어느 단계에서 실패해도 저널이 남아 소비자를 차단하고, 다음 실행이 복구한다.
+    // 승격: 저널 선표시 → 파일 rename → manifest 교체 → 만료 청소 → 저널 제거.
+    // 저널은 성공적인 청소 이후에만 제거된다: 어느 단계에서 실패해도 저널이 남아
+    // 소비자를 차단하고, 다음 성공적인 반출이 전체를 복구한 뒤에야 해제한다.
     await writeFile(journalPath, `${JSON.stringify({ pending: true, tables: entries.length })}\n`, { encoding: 'utf8' })
     for (const table of manifest.tables) {
       for (const { file } of table.files) {
@@ -175,8 +160,8 @@ async function main() {
       }
     }
     await rename(resolve(stagingRoot, 'manifest.json'), resolve(seedsRoot, 'manifest.json'))
-    await rm(journalPath, { force: true })
     const swept = await sweepUnlisted(manifest)
+    await rm(journalPath, { force: true })
 
     const rows = entries.reduce((sum, t) => sum + t.rows, 0)
     const files = entries.reduce((sum, t) => sum + t.files.length, 0)
