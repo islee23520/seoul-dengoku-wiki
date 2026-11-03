@@ -21,6 +21,7 @@
     "db:migrate": "node scripts/db-migrate.mjs",
     "seed:export": "node scripts/seed-export.mjs",
     "seed:apply": "node scripts/seed-apply.mjs",
+    "seed:sync": "node scripts/seed-sync.mjs",
     "report:feedback-catalog": "node scripts/feedback-source-catalog-report.mjs"
   },
   "dependencies": {
