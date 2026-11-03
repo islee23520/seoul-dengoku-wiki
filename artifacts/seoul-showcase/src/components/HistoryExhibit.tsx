@@ -56,7 +56,7 @@ export function ExhibitDetail({ exhibit, subs, onClose }: { exhibit: Exhibit; su
   return (
     <div role="dialog" aria-modal="true" aria-label={exhibit.heading.ko} onClick={onClose} data-layout="exhibit-detail"
       className="fade fixed inset-0 z-[75] flex items-end justify-center bg-[hsl(214_40%_3%/0.72)] backdrop-blur-sm md:items-center">
-      <div onClick={(e) => e.stopPropagation()} className="wrap-text max-h-[92dvh] w-full max-w-3xl overflow-y-auto overscroll-contain border-t border-[hsl(var(--parchment)/0.25)] bg-[hsl(214_32%_7%)] md:border">
+      <div onClick={(e) => e.stopPropagation()} className="wrap-text max-h-[92cqh] w-full max-w-3xl overflow-y-auto overscroll-contain border-t border-[hsl(var(--parchment)/0.25)] bg-[hsl(214_32%_7%)] md:border">
         <div className="sticky top-0 z-10 flex items-start gap-3 bg-[hsl(214_32%_7%)] px-5 pb-3 pt-4 md:px-7">
           <div className="min-w-0">
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[hsl(var(--ember))]">{exhibit.date} · 참고 자료 / Reference</p>
