@@ -15,7 +15,12 @@
   color-scheme: dark;
 }
 
-html, body, #root { min-height: 100%; }
+html, body, #root { height: 100%; }
+body { overflow: hidden; background: hsl(214 40% 2%); }
+.stage-viewport { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; background: hsl(214 40% 2%); }
+.stage-frame { position: relative; overflow: hidden; box-shadow: 0 0 0 1px hsl(38 32% 86% / 0.06); }
+.stage-canvas { position: absolute; left: 0; top: 0; transform-origin: 0 0; container-type: size; overflow: hidden; background: hsl(var(--background)); }
+.stage-scroll { position: absolute; inset: 0; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; }
 body { margin: 0; background: hsl(var(--background)); color: hsl(var(--foreground)); font-family: var(--font-body); -webkit-font-smoothing: antialiased; overscroll-behavior: none; }
 :focus-visible { outline: 2px solid hsl(var(--ember)); outline-offset: 2px; }
 .font-display { font-family: var(--font-display); }
@@ -39,7 +44,7 @@ body::after {
 .bg-in { animation: bg-in 1.6s ease-out both; }
 
 /* Snow */
-@keyframes fall { from { transform: translate3d(0, -10vh, 0); } to { transform: translate3d(var(--dx), 110vh, 0); } }
+@keyframes fall { from { transform: translate3d(0, -10cqh, 0); } to { transform: translate3d(var(--dx), 110cqh, 0); } }
 .flake { position: absolute; top: 0; border-radius: 999px; background: hsl(200 30% 96%); animation: fall linear infinite; will-change: transform; }
 
 /* Portraits */
