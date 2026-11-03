@@ -10,6 +10,7 @@
 // SELECT in schema `wiki`; request text is never interpolated before that match.
 // The connection runs as wiki_reader, which has no wiki_private access.
 import copyStreams from 'pg-copy-streams';
+import { isPublicTable } from './wiki-table-allowlist.mjs';
 
 const PREFIX = '/wiki/api/tables';
 const MAX_LIMIT = 1000;
@@ -81,7 +82,8 @@ export function createTableApi(reader) {
      JOIN pg_attribute a ON a.attrelid = c.oid AND a.attnum = k.attnum
     WHERE n.nspname = 'wiki' AND i.indisprimary
     ORDER BY c.relname, k.position`);
-  const next = new Map(tables.map((row) => [row.name, { name: row.name, estimatedRows: row.estimated_rows, columns: [], primaryKey: [] }]));
+  const next = new Map(tables.filter((row) => isPublicTable(row.name))
+   .map((row) => [row.name, { name: row.name, estimatedRows: row.estimated_rows, columns: [], primaryKey: [] }]));
   for (const row of columns) next.get(row.table_name)?.columns.push({ name: row.column_name, type: row.data_type, nullable: row.nullable });
   for (const row of keys) next.get(row.table_name)?.primaryKey.push(row.column_name);
   catalog = next;
@@ -102,7 +104,7 @@ export function createTableApi(reader) {
   const tables = [...(await loadCatalog()).values()];
   sendJson(response, 200, {
    schema: 'wiki', count: tables.length,
-   policy: 'Read-only and anonymous. Changes are applied only from reviewed migrations in db/migrations merged to main.',
+   policy: 'Read-only and anonymous; published wiki content tables only (see server/wiki-table-allowlist.mjs). Changes are applied only from reviewed migrations in db/migrations merged to main.',
    tables: tables.map((table) => ({ ...table, rows: `${PREFIX}/${encodeURIComponent(table.name)}`,
     download: `${PREFIX}/${encodeURIComponent(table.name)}/download` })),
   });
