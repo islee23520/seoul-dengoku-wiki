@@ -12,6 +12,7 @@ import { readFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import pg from 'pg'
+import { isPublicTable } from '../server/wiki-table-allowlist.mjs'
 import { APPLY_BATCH_ROWS, SEEDS_DIR, connectionString, quoteIdent, sanitizeError } from './seed-core.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -19,11 +20,18 @@ const seedsRoot = resolve(projectRoot, SEEDS_DIR)
 const verifyOnly = process.argv.includes('--verify')
 
 async function readManifest() {
+  let manifest
   try {
-    return JSON.parse(await readFile(resolve(seedsRoot, 'manifest.json'), 'utf8'))
+    manifest = JSON.parse(await readFile(resolve(seedsRoot, 'manifest.json'), 'utf8'))
   } catch (error) {
     throw new Error(`E_SEED_MANIFEST: db/seeds/manifest.json을 읽을 수 없다 — ${sanitizeError(error)} (seed:export 먼저)`)
   }
+  // 경계 이중 확인: manifest가 위조되더라도 허용목록 밖 테이블은 적재·검증하지 않는다.
+  const offBoundary = (manifest.tables ?? []).filter((t) => !isPublicTable(t.table)).map((t) => t.table)
+  if (offBoundary.length > 0) {
+    throw new Error(`E_SEED_BOUNDARY: 허용목록 밖 테이블이 manifest에 있다 — ${offBoundary.join(', ')}`)
+  }
+  return manifest
 }
 
 async function assertTables(client, manifest) {

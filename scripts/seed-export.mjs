@@ -88,18 +88,23 @@ function manifestOf(entries) {
   }
 }
 
-// 이전 manifest가 추적한 파일만 지운다(미추적 파일은 건드리지 않는다).
-async function removePreviousOutputs() {
-  let previous = null
+// 이전 manifest 기준으로 더 이상 존재하지 않는 파일만 지운다(미추적 파일은 건드리지 않는다).
+// 승격 이후에 실행한다: 실패해도 마지막 정상 상태가 사라지지 않고 재실행으로 치유된다.
+async function readPreviousManifest() {
   try {
-    previous = JSON.parse(await readFile(resolve(seedsRoot, 'manifest.json'), 'utf8'))
+    return JSON.parse(await readFile(resolve(seedsRoot, 'manifest.json'), 'utf8'))
   } catch (error) {
     if (!(error instanceof Error) || !('code' in error) || error.code !== 'ENOENT') throw error
-    return
+    return null
   }
+}
+
+async function removeStaleOutputs(previous, currentFiles) {
+  if (previous === null) return
+  const current = new Set(currentFiles)
   for (const table of previous.tables ?? []) {
     for (const { file } of table.files ?? []) {
-      await rm(resolve(seedsRoot, file), { force: true })
+      if (!current.has(file)) await rm(resolve(seedsRoot, file), { force: true })
     }
   }
 }
@@ -128,8 +133,10 @@ async function main() {
     const manifest = manifestOf(entries)
     await writeFile(resolve(staging, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, { encoding: 'utf8', flag: 'wx' })
 
+    const previous = await readPreviousManifest()
     await mkdir(seedsRoot, { recursive: true })
-    await removePreviousOutputs()
+    // 승격: 새 파일을 먼저 제자리에 옮긴다(파일별 원자적 교체) — 중간 실패 시
+    // 기존 상태가 소실되지 않고, 결정적 재실행으로 치유된다.
     for (const table of manifest.tables) {
       for (const { file } of table.files) {
         const target = resolve(seedsRoot, file)
@@ -138,6 +145,9 @@ async function main() {
       }
     }
     await rename(resolve(staging, 'manifest.json'), resolve(seedsRoot, 'manifest.json'))
+    // 마지막에 만료 파일 정리(이전 manifest 추적분 중 새 manifest에 없는 것만).
+    const currentFiles = manifest.tables.flatMap((t) => t.files.map((f) => f.file))
+    await removeStaleOutputs(previous, currentFiles)
     await pruneEmptyDirs(seedsRoot)
 
     const rows = entries.reduce((sum, t) => sum + t.rows, 0)
