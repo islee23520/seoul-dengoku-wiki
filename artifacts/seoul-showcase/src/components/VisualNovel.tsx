@@ -166,16 +166,16 @@ export default function VisualNovel() {
   const showFinale = atEnd && isDone;
 
   return (
-    <div className="relative min-h-[100dvh] w-full overflow-x-hidden bg-[hsl(214_40%_4%)] select-none">
+    <div className="relative min-h-full w-full overflow-x-hidden bg-[hsl(214_40%_4%)] select-none">
       {/* Atmosphere is fixed behind the scrolling layout so text zones can flow freely. */}
-      <div className="pointer-events-none fixed inset-0 z-0" aria-hidden>
+      <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden" aria-hidden>
         <Backdrop bg={started ? frame.bg : "surface"} />
         <Snow />
         <div className="vignette absolute inset-0 z-[5]" />
-        <div className="absolute inset-x-0 top-0 z-[6] h-[6vh] bg-gradient-to-b from-[hsl(214_40%_3%)] to-transparent" />
+        <div className="absolute inset-x-0 top-0 z-[6] h-[6cqh] bg-gradient-to-b from-[hsl(214_40%_3%)] to-transparent" />
       </div>
 
-      <div className="relative z-10 flex min-h-[100dvh] flex-col">
+      <div className="relative z-10 flex min-h-[720px] flex-col">
         <TopBar started={started} subs={subs} setSubs={setSubs} muted={muted} setMuted={setMuted} voiceMode={voiceMode}
           setVoiceMode={(m) => { setVoiceMode(m); if (!started && m !== "off") begin(); }} koOk={voiceOk("ko")} enOk={voiceOk("en")} openLog={() => setLog(true)} />
 
@@ -255,7 +255,7 @@ function Snow() {
   const flakes = useMemo(() => Array.from({ length: 70 }, (_, i) => {
     const r = (n: number) => { const x = Math.sin(i * 9301 + n * 49297) * 233280; return x - Math.floor(x); };
     const size = 1.5 + r(1) * 3.5;
-    return { left: r(2) * 100, size, dur: 9 + r(3) * 14, delay: -r(4) * 20, dx: `${(r(5) - 0.5) * 18}vw`, op: 0.25 + r(6) * 0.55, blur: size > 4 ? 1.5 : 0 };
+    return { left: r(2) * 100, size, dur: 9 + r(3) * 14, delay: -r(4) * 20, dx: `${(r(5) - 0.5) * 18}cqw`, op: 0.25 + r(6) * 0.55, blur: size > 4 ? 1.5 : 0 };
   }), []);
   return (
     <div className="pointer-events-none absolute inset-0 z-[7] overflow-hidden" aria-hidden>
@@ -298,7 +298,7 @@ function Figure({ id, side, lit, speaking, leaving }: { id: SpeakerId; side: "le
   const place = side === "left" ? "left-[-14%] md:left-[2%]" : side === "right" ? "right-[-14%] md:right-[2%]" : "left-1/2 -translate-x-1/2 md:left-[8%] md:translate-x-0";
   const anim = leaving ? (side === "right" ? "exit-r" : "exit-l") : side === "right" ? "enter-r" : "enter-l";
   return (
-    <div className={`absolute bottom-0 h-full w-[78vw] max-w-[620px] md:w-[44vw] ${place} ${anim}`}>
+    <div className={`absolute bottom-0 h-full w-[78cqw] max-w-[620px] md:w-[44cqw] ${place} ${anim}`}>
       <div className="h-full w-full transition-[opacity,transform] duration-700" style={{ opacity: lit ? 1 : 0.42, transform: lit ? "scale(1)" : "scale(0.96) translateY(2%)" }}>
         <div className="breathe relative h-full w-full">
           {/* Mirror wrapper is separate from motion transforms: right-side figures face left, toward the conversation. */}
@@ -368,7 +368,7 @@ function ChoiceRow({ onChoose, subs: sb }: { onChoose: (c: ChoiceId) => void; su
       {CHOICE.options.map((o, i) => {
         const s = SPEAKERS[o.speaker];
         return (
-          <button key={o.id} type="button" onClick={() => onChoose(o.id)} className="rise group relative flex min-h-[170px] min-w-0 items-end overflow-hidden border border-[hsl(var(--parchment)/0.12)] text-left last:sm:col-span-2 last:lg:col-span-1 lg:min-h-[min(56dvh,460px)]" style={{ animationDelay: `${i * 140}ms` }}>
+          <button key={o.id} type="button" onClick={() => onChoose(o.id)} className="rise group relative flex min-h-[170px] min-w-0 items-end overflow-hidden border border-[hsl(var(--parchment)/0.12)] text-left last:sm:col-span-2 last:lg:col-span-1 lg:min-h-[min(56cqh,460px)]" style={{ animationDelay: `${i * 140}ms` }}>
             <img src={`${BASE}${s.portrait}`} alt="" className="portrait-mask absolute inset-0 h-full w-full object-cover object-top opacity-55 transition-[opacity,transform] duration-700 group-hover:scale-[1.04] group-hover:opacity-100 group-focus-visible:opacity-100" />
             <div className="absolute inset-0 bg-gradient-to-t from-[hsl(214_40%_4%)] via-[hsl(214_40%_4%/0.3)] to-transparent" />
             <div className="relative min-w-0 p-4">
