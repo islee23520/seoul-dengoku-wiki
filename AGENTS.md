@@ -119,6 +119,7 @@ node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또�
 |`scripts/document-store/`|비공개 문서·receipt·pinned reader|
 |`scripts/inkos-adapter/README.md`|InkOS 후보 전용·읽기 전용 경계|
 |`server/wiki-api.mjs`, `server/wiki-document-api.mjs`|공개 API|
+|`db/migrations/` + `scripts/db-migrate.mjs`|테이블 변경 drizzle 마이그레이션과 적용기. main에 merge된 마이그레이션만 호스트 wiki-migrate 서비스가 적용한다(직접 수동 SQL 금지). 익명 공개 읽기는 `/wiki/api/tables`|
 |`deploy/call-owner.mjs`, `deploy/check-live-contract.mjs`, `deploy/README.md`|외부 owner 배포 계약|
 |`artifact-allowlist.json`|dist/ 산출물·라우트 허용 목록(루트에 위치)|
 |`vite.config.ts`, `tsconfig.json`|빌드·타입 설정(vitest 설정은 #625에서 삭제)|
