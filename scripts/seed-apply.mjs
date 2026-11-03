@@ -13,6 +13,7 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import pg from 'pg'
 import { isPublicTable } from '../server/wiki-table-allowlist.mjs'
+import { isSeedTable } from './seed-scope.mjs'
 import { APPLY_BATCH_ROWS, SEEDS_DIR, connectionString, quoteIdent, sanitizeError } from './seed-core.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -26,10 +27,21 @@ async function readManifest() {
   } catch (error) {
     throw new Error(`E_SEED_MANIFEST: db/seeds/manifest.json을 읽을 수 없다 — ${sanitizeError(error)} (seed:export 먼저)`)
   }
-  // 경계 이중 확인: manifest가 위조되더라도 허용목록 밖 테이블은 적재·검증하지 않는다.
-  const offBoundary = (manifest.tables ?? []).filter((t) => !isPublicTable(t.table)).map((t) => t.table)
+  // 경계 이중 확인: manifest가 위조되더라도 시드 범위(컨텐츠) 밖 테이블은 적재·검증하지 않는다.
+  const offBoundary = (manifest.tables ?? []).filter((t) => !(isPublicTable(t.table) && isSeedTable(t.table))).map((t) => t.table)
   if (offBoundary.length > 0) {
-    throw new Error(`E_SEED_BOUNDARY: 허용목록 밖 테이블이 manifest에 있다 — ${offBoundary.join(', ')}`)
+    throw new Error(`E_SEED_BOUNDARY: 시드 범위(컨텐츠) 밖 테이블이 manifest에 있다 — ${offBoundary.join(', ')}`)
+  }
+  // 승격 저널이 남아 있으면 트리가 중간 상태일 수 있다: 신뢰하지 않는다.
+  let promotePending = false
+  try {
+    await readFile(resolve(seedsRoot, '.promote-pending.json'))
+    promotePending = true
+  } catch (error) {
+    if (!(error instanceof Error) || !('code' in error) || error.code !== 'ENOENT') throw error
+  }
+  if (promotePending) {
+    throw new Error('E_SEED_PROMOTE_PENDING: 반출 승격이 중단된 상태다 — npm run seed:export를 재실행해 완료하라')
   }
   return manifest
 }

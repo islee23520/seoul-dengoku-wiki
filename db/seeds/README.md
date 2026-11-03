@@ -1,15 +1,41 @@
-# db/seeds — 공개 위키 데이터의 repo 가시 정본 스냅샷
+# db/seeds — 공개 위키 컨텐츠의 repo 가시 정본 스냅샷
 
-PostgreSQL `wiki` 스키마가 운영 저작 정본이다. 이 디렉터리는 그중 **웹이 렌더하는
-공개 컨텐츠**를 결정적(deterministic) JSONL로 버전 관리하는 투영이며, 독립적인
-편집 원본이 아니다.
+PostgreSQL `wiki` 스키마가 운영 저작 정본이다. 이 디렉터리는 그중 **위키 사이트가 실제
+렌더링하는 공개 컨텐츠**(소유자 결정 2026-11-03: 시드는 위키 컨텐츠에 대해서만)를 결정적
+(deterministic) JSONL로 버전 관리하는 투영이며, 독립적인 편집 원본이 아니다.
 
-## 경계 (단일 출처)
+## 범위 (이중 검사, 단일 출처 둘)
 
-seed 대상은 [`server/wiki-table-allowlist.mjs`](../server/wiki-table-allowlist.mjs)의
-`isPublicTable`이 결정한다(owner 결정, PR #666 — `/wiki/api/tables`의 익명 공개 읽기
-경계와 동일선). `scripts/seed-core.mjs`가 이 모듈을 import하므로 seed 범위와 공개 API
-범위는 절대 갈라지지 않는다. `wiki_private` 스키마는 어떤 경로로도 조회하지 않는다.
+seed 대상은 두 조건을 모두 통과하는 `wiki` 테이블이다:
+
+1. 공개 허용목록 — [`server/wiki-table-allowlist.mjs`](../server/wiki-table-allowlist.mjs)의
+   `isPublicTable`(owner 결정, PR #666 — `/wiki/api/tables` 익명 공개 읽기 경계와 동일선).
+2. 컨텐츠 범위 — [`scripts/seed-scope.mjs`](../scripts/seed-scope.mjs)의 `isSeedTable`
+   (소유자 결정 2026-11-03 — 운영/시스템/메타/카탈로그 성격 제외).
+
+`wiki_private` 스키마는 어떤 경로로도 조회하지 않는다.
+
+### 포함 (컨텐츠, 근거는 seed-scope.mjs 주석의 코드 증거)
+
+- `text_*` — 현재 문서 본문(문서 API 서빙 경로).
+- `region_content_*` — 지역 문서.
+- `person`, `person_*`, `profile`, `relation`, `relation_type` — 인물·관계(인물 상세·카탈로그 투영 원천).
+- `glossary_head`, `glossary_revision`, `glossary_term`, `glossary_locale`, `glossary_alias`,
+  `glossary_context` — 용어(사이트가 개정 단위로 서빙).
+- `geography_county`/`edition`/`map_title`/`metadata`/`title` — 지리 계층.
+- `public_map_block`, `public_map_block_locale`, `public_map_summary` — 공개 지도 블록.
+- `document_head`, `document_key_order` — 문서 목록·렌더 키 순서.
+- `clan_crest_motif`, `current_region_disposition`, `current_right_retirement`,
+  `retirement_prose`, `state`, `state_label` — 세계 상태·서술.
+
+### 제외 (소유자 지시 4분류)
+
+| 분류 | 테이블 |
+|---|---|
+| 카탈로그 | `catalog_*` 6종 |
+| 운영/게시 | `document_publication_admission`, `public_projection_document`, `public_office_replacement` |
+| 메타/시스템/보존 | `document_revision`, `document_revision_link_target`, `document_revision_seal`, `glossary_revision_seal`, `glossary_archive`, `article_route`, `desire_axis`, `value_axis` |
+| 개정 본문(미렌더) | `document_revision_text_*` 160종 — 공개 문서 API는 `text_*`만 서빙하고 개정 읽기는 저작 도구만 사용 |
 
 ## 형식
 
@@ -17,8 +43,10 @@ seed 대상은 [`server/wiki-table-allowlist.mjs`](../server/wiki-table-allowlis
   PK 오름차순, 40,000행 초과 시 `<테이블>.part-NNN.jsonl` 샤드.
 - `db/seeds/manifest.json` — 테이블별 컬럼·PK·행수·파일·sha256. 타임스탬프 없음:
   같은 DB 상태에서는 같은 바이트가 나온다.
-- 컬럼 타입은 `text`·`bigint`·`double precision`·`bytea`로 제한한다(그 외 타입이
-  허용목록 테이블에 생기면 export가 `E_SEED_COLUMN_TYPE`으로 중단한다).
+- 컬럼 타입은 `text`·`bigint`·`double precision`·`bytea`로 제한한다(그 외 타입이 범위
+  테이블에 생기면 export가 `E_SEED_COLUMN_TYPE`으로 중단한다).
+- 승격은 `.promote-pending.json` 저널로 보호된다: 저널이 남아 있으면 `seed:apply`는
+  `E_SEED_PROMOTE_PENDING`으로 트리를 신뢰하지 않고, 다음 `seed:export`가 복구·완료한다.
 
 ## 루프 (운영 → repo → 리뷰)
 
@@ -50,14 +78,13 @@ seed 대상은 [`server/wiki-table-allowlist.mjs`](../server/wiki-table-allowlis
 # 1) 역할·스키마(빈 DB): schema-pg 계약 참조
 docker exec -i <pg> psql -U postgres -f scripts/postgres-migration/bootstrap-roles.sql
 psql -f scripts/postgres-migration/schema-pg/apply.sql   # tables.sql 단일 트랜잭션
-# 2) 공개 seed 적재
+# 2) 공개 컨텐츠 seed 적재
 WIKI_SEEDS_PG=<대상 URL> npm run seed:apply
 WIKI_SEEDS_PG=<대상 URL> npm run seed:apply -- --verify  # 행수 일치 확인
 # 3) 공개 읽기 정책(drizzle baseline GRANT)
 WIKI_MIGRATE_PG=<대상 URL> npm run db:migrate
 ```
 
-공개 seed 환경에는 비공개 테이블이 없으므로 `constraints.sql`(FK)·`guards.sql`은
-적용하지 않는다. 허용 테이블 일부(profile, relation 등)의 FK가 seed 범위 밖
-테이블(`source_file`, `source_record`, …)을 참조하기 때문이다. 전체 제약·가드는
-schema-pg + 전체 적재 경계(`scripts/postgres-migration/load.mjs`)에 속한다.
+컨텐츠 seed 환경에는 비컨텐츠 테이블이 없으므로 `constraints.sql`(FK)·`guards.sql`은
+적용하지 않는다. 포함 테이블 일부의 FK가 시드 범위 밖 테이블을 참조하기 때문이다.
+전체 제약·가드는 schema-pg + 전체 적재 경계(`scripts/postgres-migration/load.mjs`)에 속한다.
