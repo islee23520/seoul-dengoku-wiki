@@ -19,6 +19,8 @@
     "db:load": "node scripts/mongo-load.mjs",
     "db:migration:new": "drizzle-kit generate --custom --name",
     "db:migrate": "node scripts/db-migrate.mjs",
+    "seed:export": "node scripts/seed-export.mjs",
+    "seed:apply": "node scripts/seed-apply.mjs",
     "report:feedback-catalog": "node scripts/feedback-source-catalog-report.mjs"
   },
   "dependencies": {
