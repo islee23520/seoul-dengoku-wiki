@@ -19,6 +19,7 @@ if [ ! -d "$DEPS/node_modules" ]; then
   npm install --prefix "$DEPS" --no-audit --no-fund --ignore-scripts \
     "drizzle-orm@0.45.4" "pg@8.16.3"
 fi
+[ -e "$WORK/node_modules" ] || ln -s "$DEPS/node_modules" "$WORK/node_modules"
 
 while :; do
   if git -C "$WORK" fetch --quiet origin "$BRANCH" \
