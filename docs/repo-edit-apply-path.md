@@ -1,7 +1,8 @@
 # repo 편집 → 운영 PostgreSQL 적용 경로 설계 제안
 
-- 상태: **소유자 결정 대기중 설계 제안(design first)**. 이 문서는 어떤 코드도 구현하지
-  않았고, 운영 PostgreSQL 접속·쓰기를 한 번도 수행하지 않았다(작성 세션 기준 PG 접속 0회).
+- 상태: **채택·구현됨**(D1–D10 소유자 승인, 2026-11-03). 제안 원문은 첫 커밋에 그대로
+  보존됐고, 아래 "채택·구현 노트"가 이후 차이를 기록한다. 작성 시점에는 어떤 코드도
+  구현하지 않았고 운영 PostgreSQL 접속·쓰기를 한 번도 수행하지 않았다(PG 접속 0회).
 - 목적: PR #668(병합 완료, 2026-11-03T09:12:09Z)이 `db/seeds`에 담은 위키 컨텐츠
   seed(215 테이블 / 605,205 행 / 225 JSONL)를 **repo에서 편집해 운영 PG에 반영하는**
   경로의 설계와, 기존 typed-CLI 편집 정책과의 충돌·양립 관계를 정리한다.
@@ -286,3 +287,31 @@ repo 편집 PR(예시 A 방식, `update 18행`) 또는 운영 typed 편집 후 e
   변경하지 않는다(확장만 제안).
 - 본 문서 자체는 워킹트리 파일로 제출되며 커밋되지 않았다. 저장소 정책(전용
   브랜치+PR)에 따른 승격 여부는 D10 결정에 따른다.
+
+## 채택·구현 노트 (2026-11-03, wiki-apply-impl)
+
+소유자가 D1–D10 권고안을 승인했다(각 항 (a)·권고 선택). 구현은 본 문서의 설계를
+따르되 아래를 확정·강화했다.
+
+- 적용 경로: `npm run seed:sync`(`scripts/seed-sync.mjs` + `scripts/seed-sync-scope.mjs`).
+  dry-run 기본, `--manifest-write`(D5 — JSONL을 PG 정규형으로 재기입하고 manifest
+  재계산), `--write-marker <PR>`(db/seeds/.sync-request.json), `--apply`(마커 확인·
+  단일 트랜잭션·전 컬럼 baseline UPDATE·적용 후 바이트 동일 재반출 검사), `--drift`
+  (D8 주간 감시). 연결은 `WIKI_SEEDS_PG[_FILE]`(읽기), 적용은 `WIKI_SYNC_PG[_FILE]`
+  (wiki_sync_writer 자격, 없으면 seeds 연결 재사용).
+- `E_SYNC_DRIFT`는 재반출 불일치 시 **전체 rollback**으로 강화했다(본문은 로그만
+  남기는 안이었으나, rollback이 가능한 시점에 검사해 조용한 이탈을 원천 차단한다).
+  drift 시도도 seed_sync_log에 outcome='drift'로 남는다.
+- wiki_sync_writer에는 스키마 USAGE와 함께 **DB CONNECT 권한**이 필요하다
+  (bootstrap-roles가 PUBLIC CONNECT를 제거) — 0001 마이그레이션이 함께 부여한다.
+  비밀번호는 저장소에 없고 적용기가 WIKI_SYNC_WRITER_PASSWORD로 주기적
+  ALTER ROLE 한다(deploy/wiki-sync-loop.sh).
+- `seed:export`의 청소(sweep)가 `.sync-request.json`을 지우지 않도록 보존 목록에
+  추가했다. `scripts/db-migrate.mjs`는 매 실행 후 seed_sync_log의 wiki_reader
+  SELECT를 다시 막는다(D7 재확정 — 전체 GRANT 후 REVOKE).
+- 편집자 규약·체크리스트는 `db/seeds/README.md` "repo 편집 → 운영 반영",
+  적용기 운영은 `deploy/README.md` wiki-sync 절과 `deploy/docker-compose.wiki-sync.yml`
+  + `deploy/wiki-sync-loop.sh`를 참조한다.
+- 일반 테스트 스크립트는 소유자 결정(#625, scripts/AGENTS.md "새 테스트 스크립트를
+  작성하지 않는다")에 따라 두지 않았다. 검증은 스크래치 PostgreSQL 실실행 영수증으로
+  PR에 첨부한다.
