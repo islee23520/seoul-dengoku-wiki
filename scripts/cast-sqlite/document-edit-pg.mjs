@@ -15,6 +15,7 @@ const canonical = value => Array.isArray(value) ? `[${value.map(canonical).join(
     : JSON.stringify(value);
 const hash = value => createHash('sha256').update(value).digest('hex');
 const digest = document => hash(canonical(document));
+export const documentDigest = digest;
 const quoted = name => `"${name.replaceAll('"', '""')}"`;
 const requireText = value => { if (typeof value !== 'string' || !value.trim()) fail('E_DOCUMENT_COMMAND', 'nonempty text required'); };
 function exactKeys(command, keys) {
@@ -121,7 +122,7 @@ export async function editDocumentPgInTransaction(tx, { documentId, corpusKind, 
   }
 }
 
-async function recordRevision(tx, { sourceId, revision, parent, semanticSha256, actor, reason, sequence }) {
+export async function recordRevision(tx, { sourceId, revision, parent, semanticSha256, actor, reason, sequence }) {
   await tx.query(`INSERT INTO wiki.document_revision
     (revision_id,source_id,parent_revision,actor,reason,recorded_at,semantic_sha256,algorithm,sequence)
     VALUES($1,$2,$3,$4,$5,$6,$7,'typed-envelope-v1',$8)`,

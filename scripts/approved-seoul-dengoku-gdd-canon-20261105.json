@@ -1,0 +1,139 @@
+{
+  "schema": "approved-gdd-canon.v1",
+  "approvalRef": "owner:D7-D8-20261105",
+  "receiptPath": "scripts/approval-receipts/D7-D8-20261105.md",
+  "approvalReceiptSha256": "43aef6fb931b521c348287e730369d6124608b1e0e48ad9fd00f8d5124af0ed1",
+  "premises": {
+    "resolved": [
+      "FW03",
+      "SC01",
+      "ST02",
+      "HG02",
+      "IH01",
+      "DF02",
+      "CH02",
+      "GF02",
+      "AP02",
+      "MG03",
+      "CT01",
+      "CT02",
+      "CT03"
+    ],
+    "blocked": {
+      "MG02": "E_DOCUMENT_DOMAIN_EDITOR_REQUIRED on DOC:Diaspora-Corridors (evidence/profile*) and DOC:Cast-Corridors-Index (index_corridor_person)"
+    }
+  },
+  "documents": [
+    {
+      "documentId": "DOC:Station-Interior-Construction",
+      "domain": "places",
+      "premises": [
+        "FW03"
+      ],
+      "draftRevision": "8cdc90632ab0d8a7e1e18ecbaad35f03d3ffa204e59623087d005016eb1236a5",
+      "draftSemanticSha256": "ee7c733639f10baf703b9b2cd87ae6fc7a840e7b30eb23239af2c6c18f4921bd",
+      "approvedSemanticSha256": "af962f5c01a0f717c0564cab8eb1862d9425e179e1916ff3c852a8504d9b356f",
+      "sourcePath": "lore/places/Station-Interior-Construction.json",
+      "sourceSha256": "dcc01cf9c30798ec2ed8c2713ed2d94d2bc0ce8713cf81e3cb72ec1417a2d659"
+    },
+    {
+      "documentId": "DOC:Oral-Stories",
+      "domain": "culture",
+      "premises": [
+        "SC01",
+        "MG03"
+      ],
+      "draftRevision": "49b2cfdbf29d4c4c6d84add7e3d099cbf57974853944c76f25247fbba31720b8",
+      "draftSemanticSha256": "4f4a1012a9344f50183c78b4ca60109b8b9cac2e712955df0f1afccb95ef40f2",
+      "approvedSemanticSha256": "46bd3a9f7989105904c1e8d33fca2359f5cb5b991d835ed168ecb5d860cf498e",
+      "sourcePath": "lore/culture/Oral-Stories.json",
+      "sourceSha256": "32f8922c625f472a2d29ae996a8d518771854879c75eaa8e340cc094b84eb265"
+    },
+    {
+      "documentId": "DOC:World-Map-Construction",
+      "domain": "places",
+      "premises": [
+        "ST02"
+      ],
+      "draftRevision": "4ea7192cc53dda3fbdb89e70def94166bf13dcc79a8fcfc27b8453a3e41823aa",
+      "draftSemanticSha256": "718a3225df908db64696395995003160cc9678e37306f4cc8d76fc7ebb355fd0",
+      "approvedSemanticSha256": "465bbc09c99cda0d8599cbd7679cb52d683ac7d09ed9d724cc5c7d5b3246acd3",
+      "sourcePath": "lore/places/World-Map-Construction.json",
+      "sourceSha256": "48b5ac4c516a65058cb36980aedb8d138c8d4a615601e3c6f3d5c0f25b048ebe"
+    },
+    {
+      "documentId": "DOC:Structures",
+      "domain": "structures",
+      "premises": [
+        "HG02",
+        "AP02"
+      ],
+      "draftRevision": "9bc2720e91c6195c2619efc4562bb61e3040ff5a3846f16637f91a47f2c34534",
+      "draftSemanticSha256": "bb24ebdadd583604034412467ffa934a9fb076848df1c3e5ca4ba54ff9c8f91d",
+      "approvedSemanticSha256": "33a5aa5404eaba6a5199ea50fb8cdc9aa1ac82c302e57d15c35b5ac733c85221",
+      "sourcePath": "lore/structures/Structures.json",
+      "sourceSha256": "caed5524d6cb5cd1c84cf48e824c2c3154abba32021728443b596a7fbe222ce5"
+    },
+    {
+      "documentId": "DOC:Chaebol-Houses-and-Century-Factions",
+      "domain": "factions",
+      "premises": [
+        "IH01",
+        "CT01"
+      ],
+      "draftRevision": "ed6779616f51efa739b21e0da1a2111ff0e0d7d4c823163e722c42fb4ee2fdd9",
+      "draftSemanticSha256": "eb7db5d64f44492efa0310bc016f2375ce1a1ec60ec78beb0723d293e62092c5",
+      "approvedSemanticSha256": "596f126d8bfe7c41a0f411e5af1cc3ff9e570ca8e475c435d9e5a8f88714c814",
+      "sourcePath": "lore/factions/Chaebol-Houses-and-Century-Factions.json",
+      "sourceSha256": "11d69ccefeda535f96789b1f56b4de1faf01f7fe0a8b37e51fd103a36e1ac958"
+    },
+    {
+      "documentId": "DOC:External-Theaters",
+      "domain": "factions",
+      "premises": [
+        "DF02"
+      ],
+      "draftRevision": "a01638446c1262288f19b6997465be5cd7cb623777441479bffe5d2c9ca540b9",
+      "draftSemanticSha256": "4233d77b75bb99e0cd63aed334221e70e7dfd14d2cab803fab6e6eac490ad03f",
+      "approvedSemanticSha256": "dfa93cc6b6fd4003d0cec5b75bde7f9571fe508cb7b65a4913595539e42e9ee5",
+      "sourcePath": "lore/factions/External-Theaters.json",
+      "sourceSha256": "83f16b6e17847b8e3247210a4b196742e80120aee585d19cdbe1993a5f47fe6c"
+    },
+    {
+      "documentId": "DOC:World-Unbinding",
+      "domain": "overview",
+      "premises": [
+        "CH02"
+      ],
+      "draftRevision": "6fce663aafde7b081b5bb59d25df7f1dbac99713041b2e1a176412ad39425e82",
+      "draftSemanticSha256": "003d5a0374b3c0d9d28c8379587a2e5c759db12fbdc6d4a0713cc90ad381ae48",
+      "approvedSemanticSha256": "840e426d53b3390167fe1677cf5b186938eb94813365776c42eb00a291ea4625",
+      "sourcePath": "lore/overview/World-Unbinding.json",
+      "sourceSha256": "5c12ee7082fa93b107b2aea0465a0eb996b79138d4ae7bffb951c0db1d90928b"
+    },
+    {
+      "documentId": "DOC:Era-Arms-and-Tech-Level",
+      "domain": "goods",
+      "premises": [
+        "GF02"
+      ],
+      "draftRevision": "4d10a6401f67603e4218b5e1fb3b12d5a3a9bf68f1f57dd97050cb727fb2ecf1",
+      "draftSemanticSha256": "98ec348ffec7aa3bc8d6712b67123cba73fb16cc1b1df3520b59593dda0c9d3b",
+      "approvedSemanticSha256": "38959ab737d6434f7e4db8817e249564a83b3d52699786a998d5cf9a9e795fa4",
+      "sourcePath": "lore/goods/Era-Arms-and-Tech-Level.json",
+      "sourceSha256": "14ae87324392aabaeb137f0d5e320004f42a6e2942c9680af080f9fffa62f665"
+    },
+    {
+      "documentId": "DOC:Sixteen-States",
+      "domain": "factions",
+      "premises": [
+        "CT02"
+      ],
+      "draftRevision": "437daeec6130b951bf23ed7089f5716b149af23d2012f168b37e497de7555fb8",
+      "draftSemanticSha256": "12cb98e0816c765e0813b9b796313f8783d0dc1a13efda2c794ad852986bfc79",
+      "approvedSemanticSha256": "53e39d90ff4b4e349b922e87abeaa3d132c92f6f0fc8e2f86e6ea3336b306772",
+      "sourcePath": "lore/factions/Sixteen-States.json",
+      "sourceSha256": "73b19e6af00df16fb06adfbaab7c386aea6930ff01587dd6a0dc69fbae557a3c"
+    }
+  ]
+}
