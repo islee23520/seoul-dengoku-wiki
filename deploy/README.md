@@ -91,14 +91,15 @@ node deploy/check-live-contract.mjs --public-edge https://sss.linalab.io live-ht
 
 Public-edge mode requires HTTP 200 and the React entry marker on every catalog
 wiki route, compatibility wiki route, `/wiki/`, and `/wiki/states`. It does not
-follow redirects. `/system-design/regions`, `/system-design/regions/`, and `/gdd/`
-must return HTTP 302, 303, or 307 to the HTTPS `linalab.cloudflareaccess.com`
-path `/cdn-cgi/access/login/<checked-host>`, with no URL username or password.
-Other statuses, including HTTP 200 and 308, fail the Access redirect check.
-Access Location query values are never included in the result.
+follow redirects. `sss.linalab.io` is fully public with no login (2026-11-05 owner
+decision D11; Cloudflare Access was removed from the hostname). `/`, `/gdd/`, and
+`/wiki/api/health` must return HTTP 200. `/system-design/regions` and
+`/system-design/regions/` must return the documented HTTP 308 to
+`/wiki/world/World-and-Subway-Layers`. Any redirect to a `*.cloudflareaccess.com`
+host on any checked route fails the check (`access-redirect`).
 
 Without `--public-edge`, the checker remains the origin contract (default
-`http://127.0.0.1:8080`), including the region redirects' HTTP 308 and destination.
+`http://127.0.0.1:8080`) with the same region redirect check.
 The deployment owner runs that contract against the origin during promotion;
 the public check does not replace it.
 
