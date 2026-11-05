@@ -3,18 +3,31 @@ import { pathToFileURL } from 'node:url';
 import { createReader } from './db-pg.mjs';
 import { listDocumentsAsync, readDocumentAsync } from './document-read.mjs';
 import { editDocumentPg, readDocumentRevisionAsync } from './document-edit-pg.mjs';
+import { approveDocumentsPg } from './document-approve-pg.mjs';
 
 const fail = message => { throw Object.assign(new Error(message), { code: 'E_ARGUMENTS' }); };
 export async function documentCommand(argv, input = process.stdin) {
   if (argv.length === 1 && argv[0] === '--help') return {
-    usage: 'node scripts/cast-sqlite/document-cli.mjs <list|read|edit> [--pg <connection-url>] --corpus <current|example|historical> [options]',
+    usage: 'node scripts/cast-sqlite/document-cli.mjs <list|read|edit|approve> [--pg <connection-url>] --corpus <current|example|historical> [options]',
     connection: 'WIKI_AUTHORING_PG (or WIKI_DOCUMENT_PG) selects PostgreSQL without exposing credentials in argv. --pg overrides it. No SQLite fallback; --db is retired. SQLite exports in document-edit.mjs are migration-only.',
     read: '--id <documentId> --domain <domain> [--revision <revision>]',
     edit: '--id <documentId> --domain <domain> --expected-revision <revision> [--expected-hash <current-semantic-sha256>] [--expected-result-hash <draft-semantic-sha256>] --actor <actor> --reason <reason>',
+    approve: '--approval <scripts/approved-*.json> [--dry-run]: approves the listed draft heads in one transaction; --dry-run runs it and rolls back.',
     stdin: 'edit reads a JSON array of typed commands from stdin; no source document file is created.',
     visibility: 'Local internal authoring under wiki_author. Editing creates a draft and does not grant publication approval.',
   };
   const [command, ...args] = argv;
+  if (command === 'approve') {
+    const rest = args.filter(a => a !== '--dry-run');
+    let approvalPath, connectionString;
+    for (let i = 0; i < rest.length; i += 2) {
+      if (rest[i] === '--approval' && !approvalPath && rest[i + 1]) approvalPath = rest[i + 1];
+      else if (rest[i] === '--pg' && !connectionString && rest[i + 1]) connectionString = rest[i + 1];
+      else fail('unsupported, duplicate or missing option');
+    }
+    if (!approvalPath) fail('--approval <file> required');
+    return approveDocumentsPg({ connectionString: connectionString ?? process.env.WIKI_AUTHORING_PG ?? process.env.WIKI_DOCUMENT_PG, approvalPath, dryRun: args.includes('--dry-run') });
+  }
   if (args.includes('--db')) fail('--db is retired: use WIKI_AUTHORING_PG or --pg for PostgreSQL; SQLite writers are migration-only');
   const flags = {
     '--pg': 'connectionString', '--corpus': 'corpusKind', '--id': 'documentId', '--domain': 'domain',
@@ -26,7 +39,7 @@ export async function documentCommand(argv, input = process.stdin) {
     read: ['connectionString', 'corpusKind', 'documentId', 'domain', 'revision'],
     edit: ['connectionString', 'corpusKind', 'documentId', 'domain', 'expectedRevision', 'expectedCurrentSemanticSha256', 'expectedSemanticSha256', 'actor', 'reason']
   };
-  if (!Object.hasOwn(allowed, command)) fail('list, read or edit command required');
+  if (!Object.hasOwn(allowed, command)) fail('list, read, edit or approve command required');
   const options = {};
   for (let index = 0; index < args.length; index += 2) {
     const key = flags[args[index]], value = args[index + 1];
