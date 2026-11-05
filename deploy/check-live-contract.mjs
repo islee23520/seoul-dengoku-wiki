@@ -16,19 +16,28 @@ const compatibilityRoutes = [
   '/wiki/world/',
 ]
 const regressionRoutes = publicEdge ? ['/wiki/', '/wiki/states'] : ['/', '/wiki/', '/wiki/states', '/gdd/', '/gdd/documents', '/gdd/data', '/play/']
-const protectedRoutes = publicEdge ? ['/system-design/regions', '/system-design/regions/', '/gdd/'] : []
+// sss.linalab.io is fully public (D11): these must answer HTTP 200 without login.
+const publicRoutes = publicEdge ? ['/', '/gdd/', '/wiki/api/health'] : []
 const redirectRoutes = new Map([
   ['/system-design/regions', '/wiki/world/World-and-Subway-Layers'],
   ['/system-design/regions/', '/wiki/world/World-and-Subway-Layers'],
 ])
 const failures = []
+// Any redirect to Cloudflare Access is a failure, in every mode and on every route.
+const fetchManual = async (route) => {
+  const response = await fetch(`${baseUrl}${route}`, { redirect: 'manual' })
+  let location
+  try { location = new URL(response.headers.get('location'), baseUrl) } catch { }
+  if (location?.hostname.endsWith('.cloudflareaccess.com')) failures.push(`access-redirect:${response.status}:${route}`)
+  return response
+}
 if (catalogPath.endsWith('.json')) {
   if ('englishDocuments' in JSON.parse(catalogSource)) failures.push('unexpected-english-contract')
 } else if (catalogSource.includes('wikiEnglishCatalog')) failures.push('unexpected-english-catalog')
 if (documents.some(({ route }) => route.startsWith('/en/'))) failures.push('unexpected-english-route')
 
 const checkReactRoute = async (route, expectedTitle) => {
-  const response = await fetch(`${baseUrl}${route}`, { redirect: 'manual' })
+  const response = await fetchManual(route)
   const html = await response.text()
   if (response.status !== 200) failures.push(`http:${response.status}:${route}`)
   if (!html.includes('<div id="root"></div>')) failures.push(`not-react-entry:${route}`)
@@ -39,14 +48,14 @@ for (const document of documents) await checkReactRoute(`/wiki${document.route}`
 for (const route of compatibilityRoutes) await checkReactRoute(route)
 
 const showcaseRoute = '/wiki/seoul-showcase/'
-const showcaseResponse = await fetch(`${baseUrl}${showcaseRoute}`, { redirect: 'manual' })
+const showcaseResponse = await fetchManual(showcaseRoute)
 const showcaseHtml = await showcaseResponse.text()
 if (showcaseResponse.status !== 200) failures.push(`showcase-http:${showcaseResponse.status}`)
 const showcaseAssets = [...showcaseHtml.matchAll(/(?:src|href)="(\/wiki\/seoul-showcase\/assets\/[^"?]+\.(?:js|css))"/g)].map(match => match[1])
 if (!showcaseAssets.some(asset => asset.endsWith('.js'))) failures.push('showcase-entry-missing')
 if (showcaseHtml.includes('i.replit.com')) failures.push('showcase-replit-injection')
 for (const asset of showcaseAssets) {
-  const response = await fetch(`${baseUrl}${asset}`, { redirect: 'manual' })
+  const response = await fetchManual(asset)
   if (response.status !== 200) failures.push(`showcase-asset:${response.status}:${asset}`)
   if (!(response.headers.get('content-type') ?? '').match(/javascript|text\/css/)) failures.push(`showcase-asset-type:${asset}`)
 }
@@ -57,22 +66,17 @@ for (const route of regressionRoutes) {
   if (response.status !== 200) failures.push(`regression-http:${response.status}:${route}`)
 }
 
-for (const [route, destination] of publicEdge ? [] : redirectRoutes) {
-  const response = await fetch(`${baseUrl}${route}`, { redirect: 'manual' })
+for (const route of publicRoutes) {
+  const response = await fetchManual(route)
+  if (response.status !== 200) failures.push(`public-http:${response.status}:${route}`)
+}
+
+for (const [route, destination] of redirectRoutes) {
+  const response = await fetchManual(route)
   if (response.status !== 308) failures.push(`redirect-http:${response.status}:${route}`)
   const location = response.headers.get('location')
   const pathname = location ? new URL(location, baseUrl).pathname : null
   if (pathname !== destination) failures.push(`redirect-location:${route}:${pathname}`)
-}
-
-for (const route of protectedRoutes) {
-  const response = await fetch(`${baseUrl}${route}`, { redirect: 'manual' })
-  if (![302, 303, 307].includes(response.status)) failures.push(`access-http:${response.status}:${route}`)
-  let location
-  try { location = new URL(response.headers.get('location')) } catch { }
-  if (!location || location.protocol !== 'https:' || location.hostname !== 'linalab.cloudflareaccess.com'
-    || location.username || location.password
-    || location.pathname !== `/cdn-cgi/access/login/${new URL(baseUrl).hostname}`) failures.push(`access-location:${route}`)
 }
 
 const result = {
@@ -82,8 +86,8 @@ const result = {
   compatibilityRoutes: compatibilityRoutes.length,
   showcaseAssets: showcaseAssets.length,
   regressionRoutes: regressionRoutes.length,
-  redirectRoutes: publicEdge ? 0 : redirectRoutes.size,
-  protectedRoutes: protectedRoutes.length,
+  redirectRoutes: redirectRoutes.size,
+  publicRoutes: publicRoutes.length,
   failures,
 }
 
