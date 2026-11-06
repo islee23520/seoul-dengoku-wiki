@@ -73,6 +73,7 @@ npm run check:artifacts                                  # dist/ ↔ artifact-al
 node scripts/check-contract.mjs                          # 산출 계약 검사(npm 스크립트 없음 — 직접 실행)
 WIKI_SEEDS_PG=<url> npm run seed:export                   # PG→db/seeds 공개 seed 반출(또는 WIKI_SEEDS_PSQL 트랜스포트)
 WIKI_SEEDS_PG=<url> npm run seed:apply                    # db/seeds→PG 신규 환경 적재(--verify 행수 확인)
+WIKI_SEEDS_PG=<url> npm run seed:sync                     # repo↔PG v1 범위 typed diff(dry-run 기본; --manifest-write / --write-marker <PR> / --apply는 wiki-sync 적용기 전용)
 WIKI_DOCUMENT_DB=/absolute/path/to/migration.sqlite node scripts/lore-json-validate.mjs --strict # 외부 SQLite 이관 진단
 node scripts/cast-sqlite/document-cli.mjs list --corpus current # WIKI_AUTHORING_PG 또는 WIKI_DOCUMENT_PG
 # 어댑터 7파일은 아래 Testing & QA의 삭제 DB 고정경로 의존으로 현재 실행 제한
@@ -89,6 +90,7 @@ node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또�
 
 - **PostgreSQL 운영 저작.** 지원되는 typed CLI로 문서 변경; `public/`·`src/generated*` 직접 수정 금지. SQLite writer와 검사는 이관·대사용이며 PG 정본 편집 수단이 아니다.
 - **승인 경계.** 편집은 draft이며 기존 승인을 승계하지 않는다. 원천 승인·게시 편입·생성·배포는 별도 판단으로 보존하고, 실행된 검증 이상의 승인이나 배포를 주장하지 않는다.
+- **repo→PG 적용 경로(v1).** `db/seeds`의 상수·상태 표만 `seed:sync`로 운영 반영한다(설계 `docs/repo-edit-apply-path.md`, 소유자 승인 D1–D10). 마커 `.sync-request.json`이 merge되면 호스트 wiki-sync 적용기가 적용한다. DELETE는 감지 후 거부하고 manifest 재계산은 도구만 한다.
 - **ESM + TypeScript strict.** `"type": "module"`, tsconfig 단일 파일(noEmit, bundler resolution, `@/*` → `src`). 네이밍: 컴포넌트 PascalCase(`ArticlePage.tsx`), 유틸 camelCase, 도메인 유틸은 `wiki*` 접두사(`wikiRouting.ts`, `wikiDocument.ts`).
 - **비동기·에러 패턴.** async/await + AbortController + request counter 가드, fire-and-forget은 `void controller.load(...)`. 로딩/오류/미발견 상태를 합치지 않고 명시적 union(`'ready'|'loading'|'not-found'|'error'`)으로 모델링. API 클라이언트는 typed error envelope 파싱(예: `FeedbackApiError`).
 - **린트·포맷터 부재.** ESLint/Prettier/Biome 없음 — 품질 장치는 tsc strict + 저장소 검사 스크립트(`check-contract`, `check-links`, `check-artifact-allowlist`, `lore-json-validate`).
@@ -122,8 +124,9 @@ node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또�
 |`scripts/inkos-adapter/README.md`|InkOS 후보 전용·읽기 전용 경계|
 |`server/wiki-api.mjs`, `server/wiki-document-api.mjs`|공개 API|
 |`db/migrations/` + `scripts/db-migrate.mjs`|테이블 변경 drizzle 마이그레이션과 적용기. main에 merge된 마이그레이션만 호스트 wiki-migrate 서비스가 적용한다(직접 수동 SQL 금지). 익명 공개 읽기는 `/wiki/api/tables`이며 허용 범위는 `server/wiki-table-allowlist.mjs`(공개 컨텐츠만, 어드민/시크릿 제외)|
-|`db/seeds/` + `scripts/seed-{export,apply}.mjs` + `scripts/seed-scope.mjs`|공개 위키 **컨텐츠**의 repo 가시 스냅샷(`seed:export` PG→repo 읽기 전용 반출, `seed:apply` 신규 환경 부트스트랩 적재). 이중 검사: 공개 허용목록(`server/wiki-table-allowlist.mjs`) AND 컨텐츠 범위(소유자 결정 2026-11-03 — 운영/시스템/메타/카탈로그 제외). `wiki_private` 반출 금지. 데이터 델타는 이 디렉터리의 git diff가 가시적 이력이다. 독립 편집 원본이 아니다|
+|`db/seeds/` + `scripts/seed-{export,apply,sync}.mjs` + `scripts/seed-scope.mjs`·`seed-sync-scope.mjs`|공개 위키 **컨텐츠**의 repo 가시 스냅샷(`seed:export` PG→repo 읽기 전용 반출, `seed:apply` 신규 환경 부트스트랩 적재). 이중 검사: 공개 허용목록(`server/wiki-table-allowlist.mjs`) AND 컨텐츠 범위(소유자 결정 2026-11-03 — 운영/시스템/메타/카탈로그 제외). `wiki_private` 반출 금지. 데이터 델타는 이 디렉터리의 git diff가 가시적 이력이다. 독립 편집 원본이 아니다(단, v1 범위 표는 `seed:sync` 마커 `.sync-request.json` merge 후 wiki-sync 적용기가 운영 반영한다)|
 |`deploy/call-owner.mjs`, `deploy/check-live-contract.mjs`, `deploy/README.md`|외부 owner 배포 계약|
+|`deploy/docker-compose.wiki-sync.yml` + `deploy/wiki-sync-loop.sh`|repo 편집 seed 적용기(마커 기반, `wiki_sync_writer`, pg_dump 선행, 주간 drift)|사람이 운영 PG에 직접 쓰지 않는다; 계약은 `docs/repo-edit-apply-path.md`(D1–D10)|
 |`artifact-allowlist.json`|dist/ 산출물·라우트 허용 목록(루트에 위치)|
 |`vite.config.ts`, `tsconfig.json`|빌드·타입 설정(vitest 설정은 #625에서 삭제)|
 |`.woodpecker/deploy.yaml`|유일한 CI 파이프라인 — LFS 검사 → owner 호출 → live contract(`ci.yaml`·GitHub workflows는 #625 삭제)|

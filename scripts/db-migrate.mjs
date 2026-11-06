@@ -54,6 +54,14 @@ export async function runMigrations({ env = process.env, log = console.log } = {
       // Public read contract, re-asserted after every run.
       await c.query('GRANT USAGE ON SCHEMA wiki TO wiki_reader');
       await c.query('GRANT SELECT ON ALL TABLES IN SCHEMA wiki TO wiki_reader');
+      // seed_sync_log (0001) is a private table in the public schema (design D7):
+      // re-close it after the blanket grant above so every migrate run keeps it
+      // out of the anonymous reader. Older databases without the table skip this.
+      const logTable = await c.query(
+        `SELECT 1 FROM information_schema.tables WHERE table_schema = 'wiki' AND table_name = 'seed_sync_log'`);
+      if (logTable.rowCount > 0) {
+        await c.query('REVOKE SELECT ON TABLE wiki.seed_sync_log FROM wiki_reader');
+      }
       return n;
     })(); } finally { c.release(); } })();
     log(JSON.stringify({ event: 'wiki-migrate', applied: after - before, total: after }));

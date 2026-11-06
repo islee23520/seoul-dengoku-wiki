@@ -1,0 +1,44 @@
+# wiki-sync — repo 편집 seed 적용기 (호스트 compose 스니펫)
+#
+# 적용 대상: desktop-bo514et E:\git\seoul-dengoku-web\docker-compose.yml
+# (name: seoul-dengoku-web, 외부 네트워크 seoul-dengoku-web_default).
+# 이 파일은 repo에 커밋되는 정의 복사본이다. 규칙(docs/repo-edit-apply-path.md,
+# 소유자 승인 D1–D10, 2026-11-03):
+#   - main에 merge된 db/seeds/.sync-request.json 마커만 적용한다. 사람이 운영 PG에
+#     직접 쓰지 않는다(D3(a)). dry-run이 기본이고 --apply는 이 적용기만 실행한다.
+#   - 적용 자격은 wiki_sync_writer(LOGIN, v1 범위 표 SELECT/INSERT/UPDATE만 —
+#     DELETE 불가, migration 0001). 비밀번호는 프로젝트 .env의
+#     WIKI_SYNC_WRITER_PASSWORD에서만 온다(파일 커밋 금지, URL-safe 토큰).
+#   - 적용 직전 pg_dump를 /state에 남기고 그 sha256을 seed_sync_log에 기록한다(D4).
+#     dump는 wiki_owner 자격(.env의 WIKI_POSTGRES_PASSWORD)으로 찍는다.
+#   - 주 1회 repo↔PG drift dry-diff를 /state에 기록한다(D8).
+services:
+  wiki-sync:
+    image: node:26-bookworm
+    container_name: wiki-sync
+    restart: unless-stopped
+    working_dir: /wiki
+    command: ["sh", "/app/wiki-sync-loop.sh"]
+    environment:
+      PGHOST: wiki-postgres
+      PGDATABASE: seoul
+      WIKI_SYNC_WORK: /wiki
+      WIKI_SYNC_DEPS: /deps
+      WIKI_SYNC_STATE: /state
+      WIKI_SYNC_BRANCH: main
+      WIKI_SYNC_INTERVAL: "300"
+      WIKI_SYNC_DRIFT_SECONDS: "604800"
+      WIKI_SYNC_WRITER_PASSWORD: ${WIKI_SYNC_WRITER_PASSWORD:?WIKI_SYNC_WRITER_PASSWORD required}
+      WIKI_POSTGRES_PASSWORD: ${WIKI_POSTGRES_PASSWORD:?WIKI_POSTGRES_PASSWORD required}
+    volumes:
+      - wiki-sync-work:/wiki
+      - wiki-sync-deps:/deps
+      - wiki-sync-state:/state
+      - ./deploy/wiki-sync-loop.sh:/app/wiki-sync-loop.sh:ro
+    networks:
+      default: {}
+
+volumes:
+  wiki-sync-work:
+  wiki-sync-deps:
+  wiki-sync-state:

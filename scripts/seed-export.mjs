@@ -32,6 +32,9 @@ const seedsRoot = resolve(projectRoot, SEEDS_DIR)
 const stagingRoot = resolve(seedsRoot, '.staging')
 const journalPath = resolve(seedsRoot, '.promote-pending.json')
 const readmeName = 'README.md'
+// repo→PG 적용 마커(seed-sync)는 반출 청소 대상이 아니다: merge 후 적용기(wiki-sync)가
+// 소비할 때까지 트리에 남아 있어야 한다.
+const markerFile = '.sync-request.json'
 
 async function pickExecutor() {
   if (process.env.WIKI_SEEDS_PSQL !== undefined && process.env.WIKI_SEEDS_PSQL.trim() !== '') {
@@ -106,7 +109,7 @@ function manifestOf(entries) {
 // manifest에 등록된 파일과 README를 제외한 모든 파일을 지운다(만료분·고아 정리).
 // 멱등하므로 실패 후 재실행이 같은 결과로 수렴한다.
 async function sweepUnlisted(manifest) {
-  const listed = new Set(['manifest.json', readmeName, '.staging'])
+  const listed = new Set(['manifest.json', readmeName, '.staging', markerFile])
   for (const table of manifest.tables) {
     for (const { file } of table.files) listed.add(file)
   }

@@ -125,6 +125,29 @@ MIME type을 검사한다. 위키 SPA fallback의 HTTP 200만으로 통과하지
 
 테이블 구조·데이터 변경은 `npm run db:migration:new -- <이름>`으로 만든 `db/migrations/*.sql`을 PR로 review·merge해야 적용된다. `deploy/docker-compose.wiki-migrate.yml`(호스트 `seoul-dengoku-web` compose의 `wiki-migrate` 서비스)이 main을 주기 추적해 `npm run db:migrate`를 적용하고, 매 실행 뒤 `wiki_reader` 공개 읽기 권한을 재확정한다. CI 단계가 wiki-postgres 네트워크에 닿지 않으므로 적용기는 호스트 compose에 둔다. 직접 수동 SQL로 테이블을 바꾸지 않는다.
 
+## wiki-sync repo 편집 seed 적용기
+
+`db/seeds`의 v1 동기화 범위 표(상수·상태 표, `scripts/seed-sync-scope.mjs`)는
+repo 편집→PR→merge로 운영 PG에 반영된다(docs/repo-edit-apply-path.md, 소유자
+승인 D1–D10, 2026-11-03). 적용은 사람이 아니라 호스트 compose의 `wiki-sync`
+서비스(`deploy/docker-compose.wiki-sync.yml` + `deploy/wiki-sync-loop.sh`)가
+main을 300초 간격으로 추적해 merge 마커(`db/seeds/.sync-request.json`)가 있을
+때만 수행한다:
+
+1. 적용 직전 `pg_dump`(wiki_owner 자격)를 `/state`에 남기고 sha256을
+   `seed_sync_log`에 기록한다(D4).
+2. `wiki_sync_writer`(LOGIN, v1 범위 표 SELECT/INSERT/UPDATE만 부여 — DELETE·
+   TRUNCATE 권한 없음)로 `seed:sync --apply`를 단일 트랜잭션으로 실행한다.
+   비밀번호는 저장소에 없고 적용기가 `.env`의 `WIKI_SYNC_WRITER_PASSWORD`로
+   매 주기 `ALTER ROLE` 한다(0001 마이그레이션이 LOGIN을 만든다).
+3. 주 1회 `seed:sync --drift` dry-diff로 repo↔PG 이탈을 `/state`에 기록한다(D8).
+
+호스트 도입 절차(wiki-migrate와 동일 패턴): `seoul-dengoku-web` compose에
+서비스 블록을 추가하고 `.env`에 `WIKI_SYNC_WRITER_PASSWORD`(URL-safe 토큰),
+`WIKI_POSTGRES_PASSWORD`를 설정한 뒤 `docker compose config --quiet` 검증 후
+`docker compose up -d wiki-sync`로 기동한다. 편집자 절차·거부 코드는
+`db/seeds/README.md` "repo 편집 → 운영 반영"을 참조한다.
+
 ## 문서 API 런타임 PostgreSQL 연결 (owner 주입)
 
 `server/wiki-document-api.mjs`는 런타임에 PostgreSQL만 읽는다(SQLite 폴백 없음). 배포 시

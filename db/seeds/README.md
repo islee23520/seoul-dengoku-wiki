@@ -60,6 +60,36 @@ seed 대상은 두 조건을 모두 통과하는 `wiki` 테이블이다:
 (drizzle custom SQL, PR로만 적용, 운영 wiki-migrate 적용기가 실행). seed 도구는
 `db/migrations`에 어떤 파일도 추가하지 않으므로 운영 적용기 계약은 불변이다.
 
+## repo 편집 → 운영 반영 (v1: `seed:sync`)
+
+v1 동기화 범위는 `scripts/seed-sync-scope.mjs`의 상수·상태 12표뿐이다(소유자
+승인 D1(a), 2026-11-03). 나머지 시드 표(개정 관리형·인물 원장·지도 투영 등)는
+계속 운영 PG에서 typed CLI로만 편집하고 이 디렉터리는 그 투영이다.
+
+편집자 절차(각 단계 전부 `WIKI_SEEDS_PG` 연결 필요):
+
+1. `db/seeds/<도메인>/<표>.jsonl`의 값을 편집한다. 행 삭제는 불가하다(D2(a)).
+2. `npm run seed:sync` — dry-run typed diff를 확인한다(update/insert/delete와
+   거부 사유 `E_SYNC_DELETE_PRESENT`·`E_SYNC_OUT_OF_SCOPE`).
+3. `npm run seed:sync -- --manifest-write` — 도구가 JSONL을 PG 정규형으로 다시
+   쓰고 manifest 항목(행수·sha256)을 재계산한다. **manifest를 손으로 고치지
+   않는다**(D5).
+4. `npm run seed:sync` — 최종 diff를 PR에 그대로 첨부한다(체크리스트 필수 항목).
+5. `npm run seed:sync -- --write-marker <PR번호>` — `.sync-request.json` 마커를
+   커밋한다. merge가 곧 적용 승인이고, 이후 호스트 `wiki-sync` 적용기가
+   INSERT/baseline UPDATE(전 컬럼 WHERE) 단일 트랜잭션으로 적용한 뒤 결정적
+   재반출이 이 트리와 바이트 동일한지 검증한다(D6, 다르면 `E_SYNC_DRIFT`로
+   전체 rollback). 출처는 `wiki.seed_sync_log`에 남는다(D7, 공개 API 비노출).
+6. 리뷰 중·적용 전에 운영이 움직였으면 baseline 대조가 실패한다
+   (`E_SYNC_BASE_MOVED`·`E_SYNC_MARKER_MISMATCH`) — `seed:export`로 새 base를
+   반영해 diff를 다시 리뷰한다. 부분 적용은 존재하지 않는다.
+
+마커가 없는 seed 변경 PR은 반영되지 않는다(export PR과 같은 취급). 적용기
+운영(pg_dump·비밀번호 회전·주간 drift)은 `deploy/README.md`의 wiki-sync 절.
+
+적용 결과 확인: `SELECT applied_at, merge_sha, pr, outcome, rows FROM
+wiki.seed_sync_log ORDER BY id DESC LIMIT 5;`(wiki_owner 자격).
+
 ## 연결 (접속 문자열은 repo·로그에 남기지 않는다)
 
 - `WIKI_SEEDS_PG` — PostgreSQL URL
