@@ -1,5 +1,9 @@
 # Wiki deployment caller
 
+> **전환 예고 (2026-11-07):** 즉시 owner NDJSON 배포 계약은 `docs/repo-pg-orm.md`의
+> 승인 경로(시크릿 없는 CI 컴파일 → deploy-request → 운영자 승인·봉인 → worker)로
+> 대체된다(구현 P5·소유자 G3 승인 대기). 아래 과거 관측은 그대로 보존한다.
+
 ## 운영 전환 관측 (2026-10-30)
 
 PostgreSQL `wiki`가 현재 운영 저작 정본이다. owner `e941e9f`의 승격 run

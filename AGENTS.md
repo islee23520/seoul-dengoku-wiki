@@ -87,7 +87,7 @@ node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또�
 
 ## Code Conventions & Common Patterns
 
-- **PostgreSQL 운영 저작.** 지원되는 typed CLI로 문서 변경; `public/`·`src/generated*` 직접 수정 금지. SQLite writer와 검사는 이관·대사용이며 PG 정본 편집 수단이 아니다.
+- **PostgreSQL 운영 저작.** 지원되는 typed CLI로 문서 변경; `public/`·`src/generated*`·`renders/` 직접 수정 금지. 단, `docs/repo-pg-orm.md`의 범위 표(12종 비revision 상수·상태 표)는 repo 편집이 **데이터 migration(drizzle)** 로 반영되는 공식 경로다(INSERT·non-PK UPDATE 한정, `current_region_disposition`·`current_right_retirement`은 INSERT-only). SQLite writer와 검사는 이관·대사용이며 PG 정본 편집 수단이 아니다.
 - **승인 경계.** 편집은 draft이며 기존 승인을 승계하지 않는다. 원천 승인·게시 편입·생성·배포는 별도 판단으로 보존하고, 실행된 검증 이상의 승인이나 배포를 주장하지 않는다.
 - **ESM + TypeScript strict.** `"type": "module"`, tsconfig 단일 파일(noEmit, bundler resolution, `@/*` → `src`). 네이밍: 컴포넌트 PascalCase(`ArticlePage.tsx`), 유틸 camelCase, 도메인 유틸은 `wiki*` 접두사(`wikiRouting.ts`, `wikiDocument.ts`).
 - **비동기·에러 패턴.** async/await + AbortController + request counter 가드, fire-and-forget은 `void controller.load(...)`. 로딩/오류/미발견 상태를 합치지 않고 명시적 union(`'ready'|'loading'|'not-found'|'error'`)으로 모델링. API 클라이언트는 typed error envelope 파싱(예: `FeedbackApiError`).
@@ -121,9 +121,11 @@ node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또�
 |`scripts/document-store/`|비공개 문서·receipt·pinned reader|
 |`scripts/inkos-adapter/README.md`|InkOS 후보 전용·읽기 전용 경계|
 |`server/wiki-api.mjs`, `server/wiki-document-api.mjs`|공개 API|
-|`db/migrations/` + `scripts/db-migrate.mjs`|테이블 변경 drizzle 마이그레이션과 적용기. main에 merge된 마이그레이션만 호스트 wiki-migrate 서비스가 적용한다(직접 수동 SQL 금지). 익명 공개 읽기는 `/wiki/api/tables`이며 허용 범위는 `server/wiki-table-allowlist.mjs`(공개 컨텐츠만, 어드민/시크릿 제외)|
-|`db/seeds/` + `scripts/seed-{export,apply}.mjs` + `scripts/seed-scope.mjs`|공개 위키 **컨텐츠**의 repo 가시 스냅샷(`seed:export` PG→repo 읽기 전용 반출, `seed:apply` 신규 환경 부트스트랩 적재). 이중 검사: 공개 허용목록(`server/wiki-table-allowlist.mjs`) AND 컨텐츠 범위(소유자 결정 2026-11-03 — 운영/시스템/메타/카탈로그 제외). `wiki_private` 반출 금지. 데이터 델타는 이 디렉터리의 git diff가 가시적 이력이다. 독립 편집 원본이 아니다|
-|`deploy/call-owner.mjs`, `deploy/check-live-contract.mjs`, `deploy/README.md`|외부 owner 배포 계약|
+|`db/migrations/` + `scripts/db-migrate.mjs`|drizzle 마이그레이션과 적용기 — **구조(DDL)와 범위 표의 데이터(DML) 모두**(계약: `docs/repo-pg-orm.md`, 소유자 G1 승인 2026-11-07). main에 merge된 마이그레이션만 호스트 wiki-migrate 서비스가 적용한다(직접 수동 SQL 금지). 익명 공개 읽기는 `/wiki/api/tables`이며 허용 범위는 `server/wiki-table-allowlist.mjs`(공개 컨텐츠만, 어드민/시크릿 제외)|
+|`db/seeds/` + `scripts/seed-{export,apply}.mjs` + `scripts/seed-scope.mjs`|공개 위키 **컨텐츠**의 repo 가시 스냅샷(`seed:export` PG→repo 읽기 전용 반출, `seed:apply` 신규 환경 부트스트랩 적재). 이중 검사: 공개 허용목록(`server/wiki-table-allowlist.mjs`) AND 컨텐츠 범위(소유자 결정 2026-11-03 — 운영/시스템/메타/카탈로그 제외). `wiki_private` 반출 금지. 데이터 델타는 이 디렉터리의 git diff가 가시적 이력이다. `docs/repo-pg-orm.md` 범위 표는 repo 편집 원본으로 승격됐고(생성된 데이터 migration로 반영), 그 외 표는 여전히 읽기 전용 투영이다|
+|`renders/` (도입 예정, P2)|DB에서 렌더링된 **공개 출력 전체**의 추적 스냅샷(소유자 G2 승인 2026-11-07). 호스트 checked 생성 → snapshot PR로만 갱신, 직접 편집 금지. admission 판정은 공개 소비자와 동일 oracle|
+|`deploy/call-owner.mjs`, `deploy/check-live-contract.mjs`, `deploy/README.md`|외부 owner 배포 계약(신규 승인 경로 전환은 `docs/repo-pg-orm.md` — 구현 P5 대기)|
+|`docs/repo-pg-orm.md`|repo↔PG 계약: 범위 표 데이터 migration, 공개 렌더 투영, 계보·신선도 게이트(소유자 G1/G2 승인 2026-11-07)|
 |`artifact-allowlist.json`|dist/ 산출물·라우트 허용 목록(루트에 위치)|
 |`vite.config.ts`, `tsconfig.json`|빌드·타입 설정(vitest 설정은 #625에서 삭제)|
 |`.woodpecker/deploy.yaml`|유일한 CI 파이프라인 — LFS 검사 → owner 호출 → live contract(`ci.yaml`·GitHub workflows는 #625 삭제)|

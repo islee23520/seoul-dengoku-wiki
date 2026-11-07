@@ -2,7 +2,12 @@
 
 PostgreSQL `wiki` 스키마가 운영 저작 정본이다. 이 디렉터리는 그중 **위키 사이트가 실제
 렌더링하는 공개 컨텐츠**(소유자 결정 2026-11-03: 시드는 위키 컨텐츠에 대해서만)를 결정적
-(deterministic) JSONL로 버전 관리하는 투영이며, 독립적인 편집 원본이 아니다.
+(deterministic) JSONL로 버전 관리하는 투영이다. `docs/repo-pg-orm.md`(소유자 G1 승인
+2026-11-07)이 지정한 12종 비revision 상수·상태 표는 **repo 편집 원본**으로 승격됐다: 해당
+표의 수정은 `npm run seed:sync`가 생성하는 데이터 migration(drizzle SQL+journal)로만
+운영 PG에 반영되고(INSERT·non-PK UPDATE, `current_region_disposition`·
+`current_right_retirement`은 INSERT-only, DELETE·PK변경·범위 밖 표 거부), 그 외 표는
+여전히 읽기 전용 투영이다. 적용 후 refresh가 seed·render를 다시 수렴시킨다.
 
 ## 범위 (이중 검사, 단일 출처 둘)
 

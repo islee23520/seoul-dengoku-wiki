@@ -14,13 +14,15 @@
 import { createHash } from 'node:crypto'
 import { mkdir, readFile, readdir, rename, rm, writeFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
+import { parseSeedLine } from './seed-lossless.mjs'
+import { readPublicAdmission, readSeedClosure, seedRowAdmitted } from './public-admission.mjs'
 import {
   SHARD_ROWS,
   SEEDS_DIR,
+  connectionString,
   domainOf,
   jsonLines,
-  makePgExecutor,
   makePsqlExecutor,
   quoteIdent,
   sanitizeError,
@@ -28,7 +30,8 @@ import {
 } from './seed-core.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const seedsRoot = resolve(projectRoot, SEEDS_DIR)
+export async function exportSeeds({ out = resolve(projectRoot, SEEDS_DIR), check = false, executor, closure, checkpoint = async () => {} } = {}) {
+const seedsRoot = resolve(out)
 const stagingRoot = resolve(seedsRoot, '.staging')
 const journalPath = resolve(seedsRoot, '.promote-pending.json')
 const readmeName = 'README.md'
@@ -37,13 +40,7 @@ async function pickExecutor() {
   if (process.env.WIKI_SEEDS_PSQL !== undefined && process.env.WIKI_SEEDS_PSQL.trim() !== '') {
     return makePsqlExecutor(process.env.WIKI_SEEDS_PSQL)
   }
-  const exec = await makePgExecutor()
-  if (exec === undefined) {
-    throw new Error(
-      'E_SEED_CONFIG: 연결을 지정하라 — WIKI_SEEDS_PG(URL) / WIKI_SEEDS_PG_FILE(0600 파일) / WIKI_SEEDS_PSQL(읽기 psql 트랜스포트 명령행)',
-    )
-  }
-  return exec
+  throw new Error('E_SEED_CONFIG: WIKI_SEEDS_PSQL transport required')
 }
 
 function tableExportSql(entry) {
@@ -59,7 +56,8 @@ async function sha256Of(path) {
 }
 
 async function exportTable(exec, entry) {
-  const lines = await exec.jsonLines(tableExportSql(entry))
+  const raw = await exec.jsonLines(tableExportSql(entry))
+  const lines = closure ? raw.filter(line => seedRowAdmitted(entry.table, parseSeedLine(line), closure)) : raw
   const domain = domainOf(entry.table)
   const dir = resolve(stagingRoot, domain)
   await mkdir(dir, { recursive: true })
@@ -106,7 +104,7 @@ function manifestOf(entries) {
 // manifest에 등록된 파일과 README를 제외한 모든 파일을 지운다(만료분·고아 정리).
 // 멱등하므로 실패 후 재실행이 같은 결과로 수렴한다.
 async function sweepUnlisted(manifest) {
-  const listed = new Set(['manifest.json', readmeName, '.staging'])
+  const listed = new Set(['manifest.json', readmeName, '.staging', '.promote-pending.json'])
   for (const table of manifest.tables) {
     for (const { file } of table.files) listed.add(file)
   }
@@ -133,8 +131,7 @@ async function sweepUnlisted(manifest) {
   return victims.length
 }
 
-async function main() {
-  const exec = await pickExecutor()
+async function main(exec) {
   await mkdir(seedsRoot, { recursive: true })
   await rm(stagingRoot, { recursive: true, force: true })
   await mkdir(stagingRoot, { recursive: true })
@@ -148,15 +145,35 @@ async function main() {
     const manifest = manifestOf(entries)
     await writeFile(resolve(stagingRoot, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, { encoding: 'utf8', flag: 'wx' })
 
+    if (check) {
+      if (await readFile(journalPath).then(() => true, error => { if (error.code === 'ENOENT') return false; throw error })) throw new Error('E_SEED_PROMOTE_PENDING')
+      for (const file of ['manifest.json', ...entries.flatMap(table => table.files.map(row => row.file))]) {
+        if (await sha256Of(resolve(stagingRoot, file)) !== await sha256Of(resolve(seedsRoot, file))) throw new Error(`E_SEED_DRIFT:${file}`)
+      }
+      const listed = new Set(['manifest.json', 'README.md', ...entries.flatMap(table => table.files.map(row => row.file))])
+      const walk = async (directory = '') => {
+        for (const row of await readdir(resolve(seedsRoot, directory), { withFileTypes: true })) {
+          const path = directory ? `${directory}/${row.name}` : row.name
+          if (path === '.staging') continue
+          if (row.isDirectory()) await walk(path)
+          else if (!listed.has(path)) throw new Error(`E_SEED_DRIFT:${path}`)
+        }
+      }
+      await walk()
+      return manifest
+    }
+
     // 승격: 저널 선표시 → 파일 rename → manifest 교체 → 만료 청소 → 저널 제거.
     // 저널은 성공적인 청소 이후에만 제거된다: 어느 단계에서 실패해도 저널이 남아
     // 소비자를 차단하고, 다음 성공적인 반출이 전체를 복구한 뒤에야 해제한다.
     await writeFile(journalPath, `${JSON.stringify({ pending: true, tables: entries.length })}\n`, { encoding: 'utf8' })
+    await checkpoint('prepared')
     for (const table of manifest.tables) {
       for (const { file } of table.files) {
         const target = resolve(seedsRoot, file)
         await mkdir(dirname(target), { recursive: true })
         await rename(resolve(stagingRoot, file), target)
+        await checkpoint('promotion', file)
       }
     }
     await rename(resolve(stagingRoot, 'manifest.json'), resolve(seedsRoot, 'manifest.json'))
@@ -166,13 +183,47 @@ async function main() {
     const rows = entries.reduce((sum, t) => sum + t.rows, 0)
     const files = entries.reduce((sum, t) => sum + t.files.length, 0)
     console.log(JSON.stringify({ event: 'seed-export', tables: entries.length, rows, files, swept }))
+    return manifest
   } finally {
-    await exec.close()
     await rm(stagingRoot, { recursive: true, force: true })
   }
 }
 
-main().catch((error) => {
+if (executor) return main(executor)
+if (process.env.WIKI_SEEDS_PSQL?.trim()) {
+  if (process.env.WIKI_GENERATION_SNAPSHOT) throw new Error('E_SEED_PSQL_SNAPSHOT_UNSUPPORTED')
+  const exec = await pickExecutor()
+  try { return await main(exec) } finally { await exec.close() }
+}
+const { createReader } = await import('./cast-sqlite/db-pg.mjs')
+const url = connectionString()
+if (!url) throw new Error('E_SEED_CONFIG: WIKI_SEEDS_PG or WIKI_SEEDS_PG_FILE required')
+const reader = createReader({ connectionString: url })
+try {
+  return await reader.transaction(async tx => {
+    // Public scratch intentionally has none of the source/admission metadata.
+    // Full stores must run the oracle; missing half of the metadata fails closed.
+    const tables = await tx.all("SELECT table_name FROM information_schema.tables WHERE table_schema='wiki' AND table_name IN ('source_file','excluded_source','document_publication_admission')")
+    if (tables.length && tables.length !== 3) throw new Error('E_SEED_ADMISSION_SCHEMA')
+    if (tables.length) closure ??= await readSeedClosure(tx, await readPublicAdmission(tx))
+    return main({ jsonLines: async sql => (await tx.all(sql)).map(row => row.line) })
+  },
+    { readOnly: true, importSnapshot: process.env.WIKI_GENERATION_SNAPSHOT })
+} finally { await reader.close() }
+}
+
+async function cli() {
+  const args = process.argv.slice(2)
+  if (args.includes('--help')) { console.log('Usage: node scripts/seed-export.mjs [--out DIR] [--check]'); return }
+  const options = {}
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === '--check') options.check = true
+    else if (args[i] === '--out' && args[i + 1] && !args[i + 1].startsWith('--')) options.out = args[++i]
+    else throw new Error('E_SEED_ARGUMENT')
+  }
+  await exportSeeds(options)
+}
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) cli().catch((error) => {
   console.error(`E_SEED_EXPORT_FAILED: ${sanitizeError(error)}`)
   process.exit(1)
 })
