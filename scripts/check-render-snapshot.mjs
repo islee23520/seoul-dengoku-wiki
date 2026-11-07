@@ -27,7 +27,7 @@ export async function checkSeeds(seeds, { sentinels = privateSentinels } = {}) {
       if (listed.has(file.file)) throw new Error('E_SEED_DUPLICATE')
       listed.add(file.file)
       const data = await regularBytes(seeds, file.file)
-      assertPublicBytes(data, sentinels)
+      assertPublicBytes(data, sentinels, { pathRule: false })
       if (sha256(data) !== file.sha256) throw new Error('E_SEED_HASH')
       const lines = data.toString('utf8').split('\n').filter(Boolean)
       if (!data.toString('utf8').endsWith('\n') || lines.length !== file.rows) throw new Error('E_SEED_ROWS')

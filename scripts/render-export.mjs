@@ -41,10 +41,12 @@ export async function treeFiles(root, prefix = '') {
   return out.sort()
 }
 
-export function assertPublicBytes(bytes, sentinels = privateSentinels) {
+export function assertPublicBytes(bytes, sentinels = privateSentinels, { pathRule = true } = {}) {
   const text = bytes.toString('utf8')
   if (sentinels.some(value => value && text.includes(value))) throw new Error('E_RENDER_PRIVATE_SENTINEL')
-  if (/src\/generated-private\/|(?:\/home\/|\/Users\/|[A-Z]:\\\\Users\\\\)/u.test(text)) throw new Error('E_RENDER_PRIVATE_PATH')
+  // The path rule guards RENDERED OUTPUT (a leaked private artifact path). Seed JSONL is dual-allowlisted
+  // public data where a document may legitimately mention such filenames in its text, so seeds opt out.
+  if (pathRule && /src\/generated-private\/|(?:\/home\/|\/Users\/|[A-Z]:\\\\Users\\\\)/u.test(text)) throw new Error('E_RENDER_PRIVATE_PATH')
 }
 
 export function publicArtifact(path, allowlist) {
