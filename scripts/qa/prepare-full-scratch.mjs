@@ -147,11 +147,13 @@ export async function prepareScratch({ mode = 'public', backupFileEnv, root = pr
   await save('session.json', JSON.stringify(session, null, 2) + '\n')
   let started = false, client
   try {
-    await run(binaries.pg_ctl, ['initdb', '-D', session.data, '-o', `--username=qa_admin --auth-local=scram-sha-256 --auth-host=scram-sha-256 --pwfile=${shell(join(home, 'password'))}`], childEnv, home)
+    // pg_ctl -o is passed through to postgres verbatim (spawn, no shell): quoting the values here
+    // would embed literal quote characters into the option string and corrupt the pwfile/socket paths.
+    await run(binaries.pg_ctl, ['initdb', '-D', session.data, '-o', `--username=qa_admin --auth-local=scram-sha-256 --auth-host=scram-sha-256 --pwfile=${join(home, 'password')}`], childEnv, home)
     // pg_ctl can time out after launching postgres. Failure cleanup must still
     // look for this owned data directory's postmaster, not abandon a live child.
     started = true
-    await run(binaries.pg_ctl, ['-D', session.data, '-l', join(home, 'postgres.log'), '-o', `-h 127.0.0.1 -p ${session.port} -k ${shell(session.socket)}`, '-w', 'start'], childEnv, home)
+    await run(binaries.pg_ctl, ['-D', session.data, '-l', join(home, 'postgres.log'), '-o', `-h 127.0.0.1 -p ${session.port} -k ${session.socket}`, '-w', 'start'], childEnv, home)
     session.pid = Number((await readFile(join(session.data, 'postmaster.pid'), 'utf8')).split('\n')[0])
     await writeFile(join(home, 'session.json'), JSON.stringify(session, null, 2) + '\n', { mode: 0o600 })
     const url = database => `postgresql://qa_admin:${password}@127.0.0.1:${session.port}/${database}`
