@@ -12,7 +12,6 @@ import { jsonBytes, renderExport, sha256 } from './render-export.mjs'
 import { atomicJson, compareSnapshot, ledgerDigest, producerTimestamp, promoteSnapshot, publicReceipt } from './project-public-snapshot.mjs'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
-import { fileURLToPath } from 'node:url'
 
 const registry = { categories: [{ id: 'world', label: '세계', requiredKinds: ['paragraph'] }] }
 const identity = (id, extra = {}) => ({ source_id: id, document_id: `doc:${id}`, domain: 'world', status: 'approved', corpus_kind: 'current', logical_path: `lore/world/Page${id}.json`, excluded: false, ...extra })
@@ -168,9 +167,16 @@ test('public receipt and protected ledger sidecar use pinned exact names and dig
   assert.deepEqual(Object.keys(JSON.parse(await readFile(sidecar))), ['ledgerDigest', 'producerCodeRef'])
 })
 
-test('two independent receipt runs use Git timestamp and are byte-identical', async () => {
-  const root = fileURLToPath(new URL('../', import.meta.url))
-  const codeRef = (await promisify(execFile)('git', ['-C', root, 'rev-parse', 'HEAD'], { encoding: 'utf8' })).stdout.trim()
+test('two independent receipt runs use Git timestamp and are byte-identical', async t => {
+  // Production uses a Linux clone; this fixture must not read Windows worktree gitdir metadata from WSL.
+  const root = await temp(t)
+  const timestamp = '2026-11-07T00:00:00+00:00'
+  const env = { ...process.env, GIT_AUTHOR_DATE: timestamp, GIT_COMMITTER_DATE: timestamp }
+  const git = args => promisify(execFile)('git', ['-C', root, ...args], { encoding: 'utf8', env })
+  await git(['init'])
+  await git(['-c', 'user.name=Fixture', '-c', 'user.email=fixture@example.invalid', '-c', 'commit.gpgSign=false', 'commit', '--allow-empty', '-m', 'fixture'])
+  const codeRef = (await git(['rev-parse', 'HEAD'])).stdout.trim()
+  assert.equal(Date.parse(await producerTimestamp(root, codeRef)), Date.parse(timestamp))
   const run = async () => jsonBytes(publicReceipt({ producerCodeRef: codeRef, producedAt: await producerTimestamp(root, codeRef), seedManifestSha256: `sha256:${'b'.repeat(64)}`, renderManifestSha256: `sha256:${'c'.repeat(64)}`, checkedBuildArtifactDigest: `sha256:${'d'.repeat(64)}` }))
   assert.equal(await run(), await run())
 })
