@@ -9,6 +9,13 @@ tsconfig.tsbuildinfo
 .DS_Store
 .senpi/
 
+# Reviewed public projections are tracked; host receipts stay private.
+!/renders/
+!/renders/**
+.public-snapshot-stage/
+.promote-pending.json
+*.receipt.json
+
 # moved tool packages
 **/node_modules/
 tools/**/dist/

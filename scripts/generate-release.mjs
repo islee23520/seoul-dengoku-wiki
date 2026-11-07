@@ -292,13 +292,14 @@ async function previousGeneration(root, before, ownership) {
   return files
 }
 
-export async function runRelease({ root, stage, consume, verifyOnly = false, checkpoint, ownership = trackedHash,
+export async function runRelease({ root, stage, consume, verifyOnly = false, checkedBuild = false, afterChecked, checkpoint, ownership = trackedHash,
   mapRequestPath = process.env.WIKI_MAP_RELEASE_REQUEST }) {
   root = resolve(root)
   if (verifyOnly && (stage || consume || checkpoint || ownership !== trackedHash)) throw new Error('E_RELEASE_VERIFY_OVERRIDE')
   checkpoint ??= async () => { }
   if (verifyOnly && !hasPgConnection()) throw new Error('E_RELEASE_VERIFY_PG_REQUIRED')
   if (verifyOnly && !hasPrivatePgConnection()) throw new Error('E_GENERATION_PRIVATE_PG_REQUIRED')
+  if (checkedBuild && (verifyOnly || stage || consume || !hasPgConnection())) throw new Error('E_RELEASE_CHECKED_BUILD_ARGUMENT')
   return withReleaseLock(root, async run => {
     // Verification must never recover or discard an earlier transaction: recovery
     // can modify live outputs and an abandoned stage may contain diagnostics.
@@ -311,6 +312,7 @@ export async function runRelease({ root, stage, consume, verifyOnly = false, che
     let snapshotReader
     let generationSnapshot
     try {
+      if (checkedBuild) await rm(join(root, 'src/generated-private/checked-build-receipt.json'), { force: true })
       let sourceBinding
       let privateReceipts
       if (hasPgConnection()) {
@@ -515,6 +517,34 @@ export async function runRelease({ root, stage, consume, verifyOnly = false, che
       // The lock stays held during both TypeScript and Vite reads, including every
       // worker subprocess. A compiler failure does not undo a committed release.
       if (consume) await consume(run)
+      if (checkedBuild) {
+        const checkedEnv = { ...process.env, WIKI_GENERATION_SNAPSHOT: generationSnapshot.id }
+        for (const key of ['WIKI_DOCUMENT_PG_FILE', 'WIKI_GENERATION_PRIVATE_PG_FILE']) {
+          if (process.env[key]) checkedEnv[key] = resolve(process.env[key])
+        }
+        const checkedRun = command => run(command, checkedEnv)
+        for (const command of [
+          [process.execPath, 'node_modules/typescript/bin/tsc', '-b'],
+          [process.execPath, 'node_modules/vite/bin/vite.js', 'build'],
+          [process.execPath, 'scripts/build-showcase.mjs'],
+          [process.execPath, 'scripts/check-contract.mjs'],
+          [process.execPath, 'scripts/gate.mjs'],
+          [process.execPath, 'scripts/check-artifact-allowlist.mjs'],
+        ]) await checkedRun(command)
+        const { regularBytes, sha256, treeFiles } = await import('./render-export.mjs')
+        const artifacts = []
+        for (const path of await treeFiles(join(root, 'dist'))) artifacts.push([path, sha256(await regularBytes(join(root, 'dist'), path))])
+        if (!artifacts.some(([path]) => path === 'index.html')) throw new Error('E_RELEASE_CHECKED_ARTIFACT_MISSING')
+        const receipt = {
+          format: 'wiki-checked-build/1', status: 'passed',
+          generationManifestSha256: sha256(await readFile(join(root, manifestName))),
+          checkedBuildArtifactDigest: `sha256:${sha256(JSON.stringify(artifacts))}`,
+        }
+        // This protected receipt contains no connection data. The exporter
+        // callback must finish before this snapshot and release lock close.
+        await durableJson(join(root, 'src/generated-private/checked-build-receipt.json'), receipt)
+        return afterChecked ? await afterChecked({ receipt, snapshot: { id: generationSnapshot.id, database: sourceBinding.database, databaseOid: sourceBinding.databaseOid }, reader: snapshotReader, run: checkedRun }) : receipt
+      }
     } finally {
       try { await generationSnapshot?.release() } finally { await snapshotReader?.close() }
     }
@@ -524,7 +554,7 @@ export async function runRelease({ root, stage, consume, verifyOnly = false, che
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
   const args = process.argv.slice(2)
-  if (args.length > 1 || args.length && !['--build', '--recover', '--verify-pg'].includes(args[0])) throw new Error('E_RELEASE_ARGUMENT')
+  if (args.length > 1 || args.length && !['--build', '--recover', '--verify-pg', '--checked-build'].includes(args[0])) throw new Error('E_RELEASE_ARGUMENT')
   // Injected runRelease stages remain usable without a database.
   if (args[0] !== '--recover' && args[0] !== '--verify-pg' && !hasPgConnection()) {
     if (process.env.WIKI_MIGRATION_SQLITE !== '1') throw new Error('E_RELEASE_PG_REQUIRED: set WIKI_DOCUMENT_PG; SQLite diagnostics require WIKI_MIGRATION_SQLITE=1 and explicit WIKI_DOCUMENT_DB')
@@ -532,7 +562,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   }
   if (args[0] === '--recover') await recoverRelease({ root })
   else await runRelease({
-    root, verifyOnly: args[0] === '--verify-pg', consume: args[0] === '--build' ? async run => {
+    root, verifyOnly: args[0] === '--verify-pg', checkedBuild: args[0] === '--checked-build', consume: args[0] === '--build' ? async run => {
       await run([process.execPath, 'node_modules/typescript/bin/tsc', '-b'])
       await run([process.execPath, 'node_modules/vite/bin/vite.js', 'build'])
       await run([process.execPath, 'scripts/build-showcase.mjs'])
