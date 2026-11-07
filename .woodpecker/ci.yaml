@@ -13,8 +13,10 @@ clone:
 
 steps:
   - name: compile-public-snapshot
-    image: node:26-bookworm
+    image: bash
     commands:
+      # Local backend: the pinned host node (same binary the approver rebuilds with).
+      - export PATH=/opt/linalab/node/bin:$PATH
       - npm ci --ignore-scripts
       # No database credentials or deployment action belongs in this lane.
       # The first reviewed snapshot is required; absence must fail closed.
