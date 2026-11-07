@@ -1,32 +1,28 @@
+# Deploy request lane for the WSL host (owner contract docs/repo-pg-orm.md).
+# CI compiles the site from the COMMITTED renders/ snapshot only (no PostgreSQL, no secrets),
+# then ASKS the host controller to deploy. An operator must approve (independent rebuild from
+# this exact SHA + projection freshness gate) before anything is published.
 when:
-  - event: push
+  - event: [push, manual]
     branch: main
-
 labels:
-  platform: linux/amd64
-
+  wsl: deploy
 clone:
   git:
     image: woodpeckerci/plugin-git:2
     settings:
       lfs: true
       recursive: false
-
 steps:
-  - name: deploy
-    image: node:26-bookworm-slim
-    environment:
-      SEOUL_DEPLOY_URL: http://172.28.0.4:8080/api/deployments/seoul-wiki
-      SEOUL_DEPLOY_TOKEN:
-        from_secret: seoul_deploy_token
-    # PostgreSQL credentials are injected by the deployment owner, never CI.
+  - name: build
+    image: bash
     commands:
-      - apt-get update
-      - apt-get install -y --no-install-recommends python3 git ca-certificates
-      # Checks portrait LFS bytes and the PostgreSQL migration identity metadata.
-      - node deploy/check-lfs-inputs.mjs
-      - npm ci --ignore-scripts
-      - node deploy/call-owner.mjs
-      # public/ is generated and untracked: check the contract the owner just published.
-      - node -e "fetch('https://sss.linalab.io/wiki/wiki-contract.json').then(async r=>{if(!r.ok)throw new Error('E_LIVE_CONTRACT_FETCH:'+r.status);require('fs').writeFileSync('live-wiki-contract.json',await r.text())})"
-      - node deploy/check-live-contract.mjs --public-edge https://sss.linalab.io live-http-green.json live-wiki-contract.json
+      # Same node binary the approver's independent rebuild uses; compiles renders/ snapshot -> dist/.
+      - /opt/linalab/node/bin/node deploy/compile-check.mjs
+  - name: deploy-request
+    image: bash
+    environment:
+      DEPLOY_REQUEST_TOKEN:
+        from_secret: deploy_request_token
+    commands:
+      - bun /opt/linalab/wsl/deploy-approve/ci-request.ts --target seoul-wiki dist

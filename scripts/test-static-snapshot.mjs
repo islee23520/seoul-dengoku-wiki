@@ -4,7 +4,8 @@ import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { cp, mkdir, mkdtemp, readFile, rm, symlink, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
-import { dirname, join, resolve } from 'node:path'
+import { delimiter, dirname, join, resolve } from 'node:path'
+import { createRequire } from 'node:module'
 import { fileURLToPath } from 'node:url'
 import { checkStaticSnapshot, committedBytes, committedTree, compareCommittedSeeds } from './check-static-snapshot.mjs'
 import { assertOfflineEnvironment, compileCheck, materializeStatic } from '../deploy/compile-check.mjs'
@@ -194,8 +195,25 @@ test('committed LFS pointer requires actual matching object bytes', async t => {
 })
 
 test('real local tsc/Vite compiles snapshot fixture twice to identical artifact digest', async t => {
-  const root = await fixture(t), independent = await fixture(t)
-  for (const directory of [root, independent]) await symlink(join(repo, 'node_modules'), join(directory, 'node_modules'), process.platform === 'win32' ? 'junction' : 'dir')
+  const root = await fixture(t), independent = await fixture(t), toolchain = await temp(t)
+  // Shared Windows/WSL checkouts can contain foreign native Rolldown bindings.
+  // Install from the exact repo lock in this platform's disposable directory;
+  // neither compile consumes or modifies the shared repo's node_modules.
+  for (const name of ['package.json', 'package-lock.json']) await cp(join(repo, name), join(toolchain, name))
+  const { dependencies } = JSON.parse(await readFile(join(toolchain, 'package.json'), 'utf8'))
+  for (const spec of Object.values(dependencies).filter(value => value.startsWith('file:'))) {
+    const path = spec.slice('file:'.length)
+    await mkdir(dirname(join(toolchain, path)), { recursive: true })
+    await cp(join(repo, path), join(toolchain, path))
+  }
+  const nodeDir = dirname(process.execPath)
+  const npmPackage = createRequire(import.meta.url).resolve('npm/package.json', { paths: [nodeDir, resolve(nodeDir, '../lib')] })
+  const pathKey = Object.keys(process.env).find(key => key.toLowerCase() === 'path') ?? 'PATH'
+  await exec(process.execPath, [join(dirname(npmPackage), 'bin/npm-cli.js'), 'ci', '--ignore-scripts', '--no-audit', '--no-fund'], {
+    cwd: toolchain, env: { ...process.env, [pathKey]: `${nodeDir}${delimiter}${process.env[pathKey] ?? ''}` },
+    timeout: 180000, maxBuffer: 8 * 1024 * 1024,
+  })
+  for (const directory of [root, independent]) await symlink(join(toolchain, 'node_modules'), join(directory, 'node_modules'), process.platform === 'win32' ? 'junction' : 'dir')
   const env = Object.fromEntries(Object.entries(process.env).filter(([key]) => !/^(?:PG|WIKI_|DATABASE_URL|NODE_OPTIONS|NODE_PATH)/u.test(key)))
   const a = await compileCheck({ root, env }), b = await compileCheck({ root: independent, env })
   assert.equal(a.status, 'passed'); assert.equal(a.artifactDigest, b.artifactDigest)
