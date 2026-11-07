@@ -41,6 +41,16 @@ DB의 존재, export 성공, 검증 통과, 렌더링 완료, 공개 배포, 게
 5. 편집으로 인한 draft invalidation을 확인한다. 이전 본문에 대한 검토·승인을 변경된 본문에 자동 승계하지 않는다.
 6. 정본을 읽기 전용으로 검증하고, 별도로 정식 생성 결과와 필요한 본문·게시 검토를 확인한다.
 
+### 비revision 표의 repo migration 편집 (2026-11-07, 소유자 G1)
+
+문서·개정은 위 typed 절차가 유일한 경로다. 단 `docs/repo-pg-orm.md` 범위의 12종
+비revision 상수·상태 표는 repo에서 편집한다: `db/seeds/<도메인>/<표>.jsonl` 수정 →
+`npm run seed:sync`(diff → drizzle 데이터 migration 생성) → PR(변경 JSONL·재계산
+manifest·SQL 묶음) → main merge → 호스트 wiki-migrate 적용 → refresh 투영 PR.
+INSERT·non-PK UPDATE만 허용되고(두 불변 가드 표는 INSERT-only) DELETE·PK 변경은
+거부된다. 개정 이력·승인 승계 개념이 없는 상수 표에 한정하며, 범위 밖 표를 이 경로로
+편집하지 않는다.
+
 논리적 `.json` 이름은 이 과정에서 문서 식별 및 과거 출처 연결에 계속 사용할 수 있다. 그 이름이 남아 있다는 이유로 해당 물리 파일을 다시 만들 필요는 없다. revision 이력과 출처 provenance는 서로 다른 정보다. 과거 JSON의 경로·pointer·해시는 당시 입력의 계보이며, 현재 문서 head를 대신하지 않는다.
 
 
