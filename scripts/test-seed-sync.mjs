@@ -1,8 +1,9 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { readFile, writeFile, mkdir, mkdtemp, rm, cp, symlink } from 'node:fs/promises'
+import { readFile, writeFile, mkdir, mkdtemp, rm, cp } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
-import { resolve } from 'node:path'
+import { dirname, delimiter, resolve } from 'node:path'
+import { createRequire } from 'node:module'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { parseSeedRow, seedRowKey } from './seed-lossless.mjs'
@@ -163,7 +164,20 @@ test('pinned custom generator produces journal/meta and independently reproducib
   t.after(() => rm(root, { recursive: true, force: true }))
   for (const dir of ['db/migrations/meta', 'db/seeds/misc', 'scripts/postgres-migration/schema-pg']) await mkdir(resolve(root, dir), { recursive: true })
   await cp(resolve(projectRoot, 'db/migrations'), resolve(root, 'db/migrations'), { recursive: true })
-  await symlink(resolve(projectRoot, 'node_modules'), resolve(root, 'node_modules'), 'junction')
+  // A shared checkout can contain another OS's esbuild binary (Windows/WSL).
+  // Install only the pinned generator into this disposable fixture, letting npm
+  // select native optional dependencies without rebuilding the shared checkout.
+  const { devDependencies, dependencies } = JSON.parse(await readFile(resolve(projectRoot, 'package.json'), 'utf8'))
+  await writeFile(resolve(root, 'package.json'), jsonBytes({ private: true, dependencies: {
+    'drizzle-kit': devDependencies['drizzle-kit'], 'drizzle-orm': dependencies['drizzle-orm'],
+  } }))
+  const nodeDir = dirname(process.execPath)
+  const npmPackage = createRequire(import.meta.url).resolve('npm/package.json', { paths: [nodeDir, resolve(nodeDir, '../lib')] })
+  const pathKey = Object.keys(process.env).find(key => key.toLowerCase() === 'path') ?? 'PATH'
+  await exec(process.execPath, [resolve(dirname(npmPackage), 'bin/npm-cli.js'), 'install', '--no-save', '--package-lock=false', '--no-audit', '--no-fund'], {
+    cwd: root, env: { ...process.env, [pathKey]: `${nodeDir}${delimiter}${process.env[pathKey] ?? ''}` },
+    timeout: 180000, maxBuffer: 8 * 1024 * 1024,
+  })
   const f = await fixture(), definition = 'CREATE TABLE wiki."state" (\n  "state_id" text NOT NULL,\n  "name_ko" text,\n  PRIMARY KEY ("state_id")\n);\n'
   await writeFile(resolve(root, 'scripts/postgres-migration/schema-pg/tables.sql'), definition)
   await writeFile(resolve(root, 'scripts/postgres-migration/schema-pg/constraints.sql'), '')
