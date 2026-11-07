@@ -162,7 +162,7 @@ export async function prepareScratch({ mode = 'public', backupFileEnv, root = pr
     await client.query(`CREATE DATABASE "${session.database}"`)
     await client.end(); client = new pg.Client({ connectionString: url(session.database) }); await client.connect()
     assertScratchTarget(url(session.database))
-    const identity = (await client.query('SELECT current_database() AS db, inet_server_port() AS port, inet_server_addr()::text AS host')).rows[0]
+    const identity = (await client.query('SELECT current_database() AS db, inet_server_port() AS port, host(inet_server_addr())::text AS host')).rows[0]
     if (identity.db !== session.database || identity.port !== session.port || identity.host !== '127.0.0.1') throw new Error('E_QA_SERVER_IDENTITY')
     await client.query('CREATE ROLE wiki_owner NOLOGIN; CREATE ROLE wiki_reader NOLOGIN; CREATE ROLE wiki_private_owner NOLOGIN; CREATE ROLE orbat_reader NOLOGIN; GRANT wiki_private_owner, wiki_reader, orbat_reader TO wiki_owner')
     await save('migrate.url', url(session.database) + '\n')
