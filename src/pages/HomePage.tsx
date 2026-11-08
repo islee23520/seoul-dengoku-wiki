@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <div>
       <PageHeader
-        title="서울:전국 공식 위키"
+        title="서울 지하철 왕조(서울:전국) 공식 위키"
         lead="붕괴한 서울의 지하철망에서 무명 인물과 파티를 이끌어 역과 노선의 새로운 질서를 세우는 4X + RPG"
       />
 
