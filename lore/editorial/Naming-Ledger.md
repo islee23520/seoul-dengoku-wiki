@@ -55,7 +55,7 @@
 | 승인 표기 | 정본 |
 |---|---|
 | 《서울:전국》 | [로어 목차](../README.md) |
-| Seoul Subway States | 연표（`../chronology/Century-Annals.json`） |
+| Seoul Metro Dynasties | 연표（`../chronology/Century-Annals.json`） |
 
 ## 폐기 표기
 
@@ -63,7 +63,7 @@
 
 | 공개 현행 표기에서 제외 | 승인형·사유 | 정본 |
 |---|---|---|
-| Seoul Sengoku | Seoul Subway States | [로어 목차](../README.md), 연표（`../chronology/Century-Annals.json`） |
+| Seoul Sengoku | Seoul Metro Dynasties | [로어 목차](../README.md), 연표（`../chronology/Century-Annals.json`） |
 | OmO | 온민의(穩民議) | 연표（`../chronology/Century-Annals.md#2122년`） |
 | 실록 | 연표·기록 등 문맥에 맞는 정본 표현 | 연표（`../chronology/Century-Annals.md`）, [Writing-Rules](Writing-Rules.md) |
 | 창세 구술 | 근거 없는 조어로 폐기 | [Writing-Rules](Writing-Rules.md) |

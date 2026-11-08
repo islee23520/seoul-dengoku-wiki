@@ -1,4 +1,4 @@
-# Seoul Subway States showcase
+# Seoul Metro Dynasties showcase
 
 This package runs independently of the wiki and does not require the repository's
 shared API client, private database, or release-generation scripts. It is a plain

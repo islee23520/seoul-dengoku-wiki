@@ -1,6 +1,6 @@
-# Seoul Subway States — Official Wiki
+# Seoul Metro Dynasties — Official Wiki
 
-This repository holds the world canon ("lore") of **Seoul Subway States** (서울전국), a character-centered grand-strategy game set in the subway network of post-collapse Seoul, together with the React application that publishes it as the official wiki at <https://seoul-dengoku.linalab.io/wiki/>.
+This repository holds the world canon ("lore") of **Seoul Metro Dynasties** — 서울 지하철 왕조(서울:전국) —, a character-centered grand-strategy game set in the subway network of post-collapse Seoul, together with the React application that publishes it as the official wiki at <https://seoul-dengoku.linalab.io/wiki/>.
 
 The public wiki renders Korean pages only. Generated files are never edited by hand; contract checks reject the retired English catalog and generated English documents.
 

@@ -12,7 +12,7 @@ export function openApiDocument(origin) {
     info: {
       title: '서울:전국 wiki data API',
       version: '1.0.0',
-      description: 'Read-only published wiki data for Seoul Subway States: people (characters), territories (states, dong regions, constituency counties, stations, landmarks, titles, holdings) and portrait design tokens with text-to-image prompts. Values marked derived:true in portrait tokens are unapproved art proposals.',
+      description: 'Read-only published wiki data for Seoul Metro Dynasties: people (characters), territories (states, dong regions, constituency counties, stations, landmarks, titles, holdings) and portrait design tokens with text-to-image prompts. Values marked derived:true in portrait tokens are unapproved art proposals.',
     },
     servers: [{ url: `${origin}/wiki/api` }],
     paths: {
