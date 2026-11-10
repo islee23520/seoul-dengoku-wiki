@@ -137,7 +137,7 @@ function keydown(e: KeyboardEvent) {
 }
 function guarded(fn: () => void) { return () => { if (!dragged.value) fn() } }
 const personLink = (id: string | null) => (id ? withBase(`/${props.prefix}wiki/people/${id}/`) : null)
-const stateLink = (id: string) => withBase(`/${props.prefix}wiki/states/${id.toLowerCase()}/`)
+const stateLink = (id: string) => withBase(`/${props.prefix}wiki/factions/${stateById.value.get(id)?.faction ?? ''}/`)
 </script>
 
 <template>

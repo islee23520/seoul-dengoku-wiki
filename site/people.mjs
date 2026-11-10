@@ -85,7 +85,7 @@ export function personPage({ p, d, dKo, ko, g, P, stateRow, factionName, clan })
   if (clan) out.push(`<p class="person-clan-line"><img src="/clan-crests/${clan.id}.svg" alt="${esc(L('name'))} ${S.crest}" width="48" height="48" loading="lazy" onerror="this.remove()"> <a href="${P(`wiki/families/${clan.id}/`)}">${esc(S.clanLine(ko ? `${clan.bongwan_ko} ${clan.surname_ko}씨` : `${clan.bongwan} ${clan.surname}`))}</a></p>\n`);
   else if (d) out.push(`<p class="person-clan-line">${esc(S.noClan)}</p>\n`);
   const rows = [
-    [S.name, L('name')], [S.state, stateRow ? `[${cell(g(stateRow, 'name'))}](${P(`wiki/states/${stateRow.slug}/`)})` : cell(L('state_name'))], [S.stateId, p.state_id],
+    [S.name, L('name')], [S.state, stateRow ? cell(g(stateRow, 'name')) : cell(L('state_name'))], [S.stateId, p.state_id],
     [S.faction, `[${cell(factionName(p.faction_id))}](${P(`wiki/factions/${p.faction_id}/`)})`],
     ...(d?.birthDate ? [[S.birth, d.birthDate], [S.age, d.age], [S.ageAsOf, d.ageAsOf]] : []),
     [S.position, L('position')], [S.tier, p.tier], [S.rank, L('rank')], [S.occupation, L('occupation')], [S.gender, L('gender')], [S.stage, L('stage')],
