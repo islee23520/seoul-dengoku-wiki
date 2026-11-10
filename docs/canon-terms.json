@@ -18,35 +18,35 @@
     },
     {
       "id": "sixteen-states-ko",
-      "pattern": "십육국|십육 ?개국|16 ?개국|열여섯 (?:나라|국가|개국)",
+      "pattern": "(?<!(?:id=\"|/wiki/)[^\"\\s)]*)(?:십육국|십육 ?개국|16 ?개국|열여섯 (?:나라|국가|개국))",
       "flags": "",
       "lang": "ko",
       "allowedContext": [],
-      "note": "[정본 바이블 4절] 십육국 국가 체제. 대체: 세 세력(정부·자유도시·아크)과 25공작령. 근거: 세력은 셋뿐이고 십육국은 없다(소유자 결정)."
+      "note": "[정본 바이블 4절] 십육국 국가 체제. 대체: 세 세력(정부·자유도시·아크)과 25공작령. 근거: 세력은 셋뿐이고 십육국은 없다(소유자 결정). 앵커 id와 링크 대상 안의 문자열은 잡지 않는다."
     },
     {
       "id": "sixteen-states-en",
-      "pattern": "\\bsixteen[- ]states?\\b|\\bSeoul Sixteen\\b|\\b16 states\\b",
+      "pattern": "(?<![/\\w-])(?:sixteen[- ]states?|Seoul Sixteen|16 states)\\b(?![-\\w]*/)",
       "flags": "i",
       "lang": "en",
       "allowedContext": [],
-      "note": "[정본 바이블 4절] sixteen-state framing. 대체: the three factions and the 25 duchies. 근거: same."
+      "note": "[정본 바이블 4절] 십육국 서술(영어 가시 산문). slug와 링크 대상(/wiki/Sixteen-States/)은 보존 대상이라 잡지 않는다. 대체: 세 세력과 25공작령. 근거: 소유자 결정."
     },
     {
       "id": "slaughter-order-ko",
-      "pattern": "살육|학살 명령|인류 말살|인류 감축|바이러스로 판단",
+      "pattern": "살육|인류 말살|인류 감축|바이러스로 판단",
       "flags": "",
       "lang": "ko",
       "allowedContext": [],
-      "note": "[정본 바이블 4절] AI 살육·학살 명령 서사. 대체: \"AI는 겨울을 만들었고 직접 죽인 사람은 없다\". 근거: 1장 정본 문장."
+      "note": "[정본 바이블 4절] AI 살육 서사(한국어). 생태 문서의 \"학살 명령을 적지 않는다\" 같은 동물 관리 서술은 잡지 않는다. 대체: \"AI는 겨울을 만들었고 직접 죽인 사람은 없다\". 근거: 1장 정본 문장."
     },
     {
       "id": "slaughter-order-en",
-      "pattern": "\\bslaughter\\w*|\\bgenocide\\b|\\bexterminat\\w*",
+      "pattern": "\\bslaughter(?=[- ](?:orders?|machines?|networks?|era|continued|worldwide|stopped|ended|began)\\b)|(?<=raids and )slaughter\\b|(?<=\\bthe )slaughter(?= (?:stopped|ended|began|continued)\\b)|\\bgenocide\\b|\\bexterminat\\w*(?= (?:of )?(?:humanity|humans|mankind|the human race)\\b)|\\bvirus of the world\\b",
       "flags": "i",
       "lang": "en",
       "allowedContext": [],
-      "note": "[정본 바이블 4절] AI slaughter/genocide framing. 대체: \"the AI made winter and killed nobody directly\". 근거: same."
+      "note": "[정본 바이블 4절] AI가 인류를 살육·말살했다는 서사(영어). 동물 퇴치·방역 같은 생태 서술(extermination, no order of slaughter)은 잡지 않는다. 대체: \"the AI made winter and killed nobody directly\". 근거: 1장 정본 문장."
     },
     {
       "id": "cold-weapons-ko",
