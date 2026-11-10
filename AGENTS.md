@@ -4,6 +4,9 @@
 
 ## Project Overview
 
+**정본 바이블 우선(2026-11-10).** `docs/CANON-BIBLE.md`가 다루는 주제(세계 규칙, 세 세력, 연표, 금지 어휘, 인물 예외)에서는 그 문서가 이 파일의 옛 서술보다 우선한다. Pages는 영어(기본)와 한국어 두 언어로 게시하며, 이 결정이 "공개 본문은 한국어 전용"이라는 옛 서술을 대체한다. PostgreSQL은 더 이상 저작 정본이 아니며 저작 정본은 `data/sql`이다.
+
+
 서울 내부 세계를 다루는 대전략·TRPG 기반 CRPG 위키. PostgreSQL `wiki`가 현재 운영 저작 정본이며 typed 문서 head·revision을 보유한다. 공개 생성물은 `public/`·`src/generated/`에 투영되어 React SPA와 읽기 전용 API가 소비한다. PG 문서 저작과 API는 SQLite 폴백이 없다. 운영 승격은 wiki 커밋 `24f3c676f7df0b9903e02f4278ac65bf8fac688f`, run `20261030T150126Z-11560`에서 `deployed`로 확인됐다(`deploy/README.md` 운영 관측). 앞선 격리 환경의 SQLite·PG reader 및 전체 worker 출력 1,433개 대사와 일반 PG 빌드·검사 통과는 별도 이관 검증 기록이다. 집필·승인 기준은 `WORLD_BUILDING_GUIDE.md`, 편집 절차는 `lore/AUTHORING-JSON.md`을 따른다.
 
 ## Architecture & Data Flow
