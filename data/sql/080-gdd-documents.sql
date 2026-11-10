@@ -2225,7 +2225,7 @@ The goal the player should remember is the following scene. At first, the door I
 
 ## 1. 이번 문서의 권한과 범위
 
-이 문서는 신종목(berkshirehathaways)의 스토리 개발, 메타레이어 설계 기여를 위한 검토안이다. 기존 제품의 정본, 런타임 계약, 캐스트를 대체하지 않는다. 문서 병합은 제안 보관과 검토를 의미하며, 설정 확정이나 다음 제품 모듈의 구현 승인이 아니다. 서사 조사에서 채택할 수 있는 것은 CK2 원본의 개막→욕망·제약→제도·관계→trigger→선택·알려진 비용→effect→후속 상태라는 인과 독해법이다. 기존 서울 인물·기관·역·지하철의 승인된 행위와 권리에서 출발해 보존·서울 조건에 맞춘 재구성·기각을 따로 표시한다. 원본/CK2 Fanfork의 판본 차이와 CK3 시스템 관찰을 분리하고, 북미 지명·고유명·은행채무법·사망 상속을 서울 사실로 치환하지 않는다. [명부교회](/wiki/Faith-Culture-Schism/) `DOC:Faith-Culture-Schism`과 [임초원](/wiki/people/person-0087) `K087`의 승인된 전체 본문은 WIKI가 소유하며 여기서는 ID와 승인 판본만 참조한다. A-P1/B-P1/C-P1/D-P1의 새 장면은 미승인으로 이 문서에 채택하지 않는다.
+이 문서는 신종목(berkshirehathaways)의 스토리 개발, 메타레이어 설계 기여를 위한 검토안이다. 기존 제품의 정본, 런타임 계약, 캐스트를 대체하지 않는다. 문서 병합은 제안 보관과 검토를 의미하며, 설정 확정이나 다음 제품 모듈의 구현 승인이 아니다. 서사 조사에서 채택할 수 있는 것은 CK2 원본의 개막→욕망·제약→제도·관계→trigger→선택·알려진 비용→effect→후속 상태라는 인과 독해법이다. 기존 서울 인물·기관·역·지하철의 승인된 행위와 권리에서 출발해 보존·서울 조건에 맞춘 재구성·기각을 따로 표시한다. 원본/CK2 Fanfork의 판본 차이와 CK3 시스템 관찰을 분리하고, 북미 지명·고유명·은행채무법·사망 상속을 서울 사실로 치환하지 않는다. [Arc](/wiki/Faith-Culture-Schism/) `DOC:Faith-Culture-Schism`과 [임초원](/wiki/people/person-0087) `K087`의 승인된 전체 본문은 WIKI가 소유하며 여기서는 ID와 승인 판본만 참조한다. A-P1/B-P1/C-P1/D-P1의 새 장면은 미승인으로 이 문서에 채택하지 않는다.
 
 이 문서는 현재 ToDo의 범위, 순서, 완료율을 바꾸지 않는다. 새 사건의 구현은 별도 범위와 이슈로 합의한다. 문서 검토와 종이 실험은 현재 제품 작업의 선행 의존성이 아니다.
 
@@ -2285,7 +2285,7 @@ The goal the player should remember is the following scene. At first, the door I
 
 길을 열면 물자, 거래, 이동 편의, 재회 같은 실제 이익이 있어야 한다. 새로운 갈등은 별도의 행위자와 목표 때문에 생기며, 선행을 감지해 적을 생성하는 식으로 처리하지 않는다. 아무도 다치지 않는 성공과 명백한 적을 물리치는 통쾌함도 허용한다.
 
-즉시 위험과 알려진 비용은 선택 전에 보여준다. 사실, 추정, 소문은 구별한다. 인물의 해석이 달라도 실제 사건과 정산 결과는 일관되어야 한다. 보상과 관계 변화에는 목격·보고·참여의 근거가 있어야 한다. 서울 원천에서 확인된 사례만 판독한다: 삼성역 명부·물 계약에서 오경재의 직위와 임초원의 봉인 증언/미완 정비 교육을 분리하고, 신종목의 송수신부 회수 시도는 같은 부품에 의존한 생활 전력과 주민 동의를 조건으로 둔다. 용산 교환실의 기존 의료 호출 우선·줄어든 화물 배차·한 칸 운영권 비용은 은행 원금·연체·압류로 치환하지 않는다. 임하준의 실종은 사망 hook이 아니며 박누리의 운영 책임과 오경재 당회장직을 임초원에게 자동 승계시키지 않는다. 승강장 접근·철도 간선·서비스 회복은 county 소유나 새 주군이 아니다. 새로운 냉장/중계 협의 순서·기록 제시·참여/보류 선택의 비용과 결말은 아직 승인된 사건이 아니다.
+즉시 위험과 알려진 비용은 선택 전에 보여준다. 사실, 추정, 소문은 구별한다. 인물의 해석이 달라도 실제 사건과 정산 결과는 일관되어야 한다. 보상과 관계 변화에는 목격·보고·참여의 근거가 있어야 한다. 서울 원천에서 확인된 사례만 판독한다: 삼성역 명부·물 계약에서 오경재의 직위와 임초원의 봉인 증언/미완 정비 교육을 분리하고, 신종목의 송수신도 회수 시도는 같은 부품에 의존한 생활 전력과 주민 동의를 조건으로 둔다. 용산 교환실의 기존 의료 호출 우선·줄어든 화물 배차·한 칸 운영권 비용은 은행 원금·연체·압류로 치환하지 않는다. 임하준의 실종은 사망 hook이 아니며 박누리의 운영 책임과 오경재 당회장직을 임초원에게 자동 승계시키지 않는다. 승강장 접근·철도 간선·서비스 회복은 county 소유나 새 주군이 아니다. 새로운 냉장/중계 협의 순서·기록 제시·참여/보류 선택의 비용과 결말은 아직 승인된 사건이 아니다.
 
 유능함, 유머, 휴식, 일상의 회복도 서사의 일부다. 모든 따뜻한 장면을 이후 비극의 복선으로 쓰지 않는다. 개인 이익이나 군사적 해결을 택했다고 작가가 숨은 도덕 점수로 벌하지 않는다.
 
@@ -4172,7 +4172,7 @@ The basic duties and costs below are **[Unverified]**.
 | Marshal | Combat: increases control, organizes the army, trains knights, etc. | You cannot maximize both rebel-region stability and combat strength at the same time. |
 | Steward | Administration: collects taxes, increases development, promotes culture | The opportunity cost among short-term taxes, long-term growth, and assimilation. |
 | Spymaster | Scheming: supports or obstructs schemes, secret searches | A disloyal, high-skill spymaster becomes a dangerous figure when schemes target you. |
-| Court Priest/Bishop | Learning: conversion, religious relations, fabricating claims, etc. | Whether they can be directly appointed or dismissed depends on the faith''s doctrine, and completing a fabrication may cost gold. |
+| Court Believer/Bishop | Learning: conversion, religious relations, fabricating claims, etc. | Whether they can be directly appointed or dismissed depends on the faith''s doctrine, and completing a fabrication may cost gold. |
 | Spouse | General support or support for a specific skill | The known base transfer rate for a focused specific skill is 50% of the spouse''s relevant skill, and 20% each for general support, but exceptions for current-version, regent, and spouse eligibility are unconfirmed. |
 
 Ignoring a powerful vassal''s demand for a council seat can incur the known base opinion modifier `-40`. This does not mean that "all councillors are hired with a salary." Distinguish council positions from salaried court positions. Eligibility, faith, and vassal contracts limit the freedom of appointment.
@@ -4754,7 +4754,7 @@ CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:
 | 무관장 Marshal | 전투: 통제력 증가, 군대 조직·기사 훈련 등 | 반란 지역 안정과 전투력 강화를 동시에 최대로 할 수 없다. |
 | 관리관 Steward | 관리: 세금 징수, 개발도 증가, 문화 촉진 | 단기 세금, 장기 성장, 동화 사이의 기회비용. |
 | 첩보장 Spymaster | 계책: 계책 지원·방해, 비밀 탐색 | 불충한 고기량 첩보장은 자신을 노리는 계책에 위험한 인물이 된다. |
-| 궁정 사제·주교 | 학습: 개종, 종교 관계, 명분 위조 등 | 신앙 교리에 따라 직접 임명·해임 가능 여부가 다르고 위조 완료에 금이 들 수 있다. |
+| 궁정 신도·주교 | 학습: 개종, 종교 관계, 명분 위조 등 | 신앙 교리에 따라 직접 임명·해임 가능 여부가 다르고 위조 완료에 금이 들 수 있다. |
 | 배우자 | 전반적 보조 또는 특정 기량 지원 | 특정 기량 집중의 알려진 기본 전달률은 배우자 해당 기량의 50%, 전반 보조는 각 20%이나 현행·섭정·배우자 자격 예외는 미확인이다. |
 
 유력 봉신의 자문회 자리 요구를 무시하면 알려진 기본 의견 보정 `-40`이 발생할 수 있다. 이것은 ''모든 자문위원을 월급으로 고용한다''는 뜻이 아니다. 자문회 직위와 월급을 받는 궁정 직책을 구별한다. 자격·신앙·봉신 계약에 따라 배치 자유가 제한된다.
@@ -4945,7 +4945,7 @@ A = max(0, 내 우위 - 상대 우위)
 
 | 유형 | 취득·사용 | 승리 결과·대가 |
 | --- | --- | --- |
-| 개인 작위 명분 | 계승·가족 권리, 사제의 위조, 종교 수장 요청, 특전 등 | 지정 작위를 얻는다. 위조 완료 금, 요청 신앙, 전쟁 명예 등 취득·사용 비용이 별개다. |
+| 개인 작위 명분 | 계승·가족 권리, 신도의 위조, 종교 수장 요청, 특전 등 | 지정 작위를 얻는다. 위조 완료 금, 요청 신앙, 전쟁 명예 등 취득·사용 비용이 별개다. |
 | 압박된·미압박된 명분 | 압박된 명분은 다음 세대에 약화된 형태로 이어질 수 있고 미압박 명분은 보통 자동 영속하지 않는다. | 패배하지 않고 명분 전쟁을 수행하는 조건 등이 권리 상태에 영향을 줄 수 있다. 정확한 상속 자격·평화 결과별 변화는 UI 확인 필요. |
 | 다른 인물의 명분 | 궁정 인물·봉신·친족의 권리를 대신 주장 | 수혜자가 작위를 받는다. 수혜 작위가 공격자보다 낮은지 등 조건에 따라 봉신으로 편입되거나 독립한다. |
 | 관습권 전쟁 | 자신의 작위에 법적으로 속한 지역을 요구 | 해당 영토·봉신 관계를 정리한다. 기술에 따라 한 번에 요구할 범위가 달라질 수 있다. |
@@ -11553,7 +11553,7 @@ Succession is not decided by bloodline alone. Candidates are considered in the o
 2. Deputy leader or proxy
 3. Election and council nomination
 4. Kin and adoptees
-5. Priests and apprentices
+5. Believers and apprentices
 6. Trade guild recommendation
 7. Control of military strongholds
 
@@ -11905,7 +11905,7 @@ SP-1.0.0: Every character may hold casus belli and title-right instances, but ho
 2. 부수장 또는 대행자
 3. 선거와 평의회 추대
 4. 친족과 양자
-5. 사제와 도제
+5. 신도와 도제
 6. 직능 길드 추천
 7. 군사적 거점 통제
 
@@ -11917,7 +11917,7 @@ SP-1.0.0: Every character may hold casus belli and title-right instances, but ho
 | --- | --- |
 | `west-sluice` | 봉신에게 물 할당과 헌납례를 조항으로 요구하고 지정 유언에 이행 기록을 붙임 |
 | `center-record` | 작위 수여에 기록 인준과 유물 열람이 없으면 권역 전체에 무효 |
-| `north-refuge` | 강제복무 조항이 있는 봉신을 거부하고 양자·사제가 혈족보다 앞설 수 있음 |
+| `north-refuge` | 강제복무 조항이 있는 봉신을 거부하고 양자·신도가 혈족보다 앞설 수 있음 |
 | `east-caravan` | 보호 명분으로 하위 작위 회수가 열리기 쉽고 `plot` 임계가 낮아짐 |
 | `southeast-ration` | 작위보다 조정권이 후계를 가름하고 소집 조항을 거의 안 받음 |
 
@@ -85598,7 +85598,7 @@ The use of the numerical alternatives is action and combat calculation, and the 
 
 D01은 인물의 영구 신원과 능력·기술·특성 기록을 다룬다. 플레이어는 한 캠페인에서 한 본체 인물로 행동한다. NPC는 같은 이동·노동·교육·정치·전투 행동 계약을 쓰는 다른 인물이다. 본체라는 이유로 타인의 신체나 권한을 얻지 않는다. 본체·분대장·전투 지휘관·권리 보유자·기관 담당자는 서로 다른 역할이며 한 인물이 여럿을 맡을 수 있다. 국가와 기관은 직위·권리·재산의 절차를 소유하고, 인물 시트가 비어 있는 제도 절차의 성공을 대신 만들어 주지 않는다.
 
-능력, 숙련, 특성, 일시적 상황 보정, 직위, 작위, 점유, 실효 통제, 군사 지휘는 구분한다. 공직을 맡아도 기관 금고가 개인 재산으로 바뀌거나 모든 병력이 배속되지 않는다. 수문국 군주의 계약 회의 선출, 중앙기술보존원 원장의 시험 선발, 명부교회 당회장의 장로 인준은 설정의 절차이지 능력치 공식이 아니다.
+능력, 숙련, 특성, 일시적 상황 보정, 직위, 작위, 점유, 실효 통제, 군사 지휘는 구분한다. 공직을 맡아도 기관 금고가 개인 재산으로 바뀌거나 모든 병력이 배속되지 않는다. 수문국 군주의 계약 회의 선출, 중앙기술보존원 원장의 시험 선발, Arc 당회장의 장로 인준은 설정의 절차이지 능력치 공식이 아니다.
 
 ## 2. 플레이어의 결정과 자격
 
@@ -88226,7 +88226,7 @@ D08은 **가문과 혼인에서 무엇이 기록되고, 무엇이 성립하며, 
 ### 12.2 Norland
 
 - 원천 귀속: 배포사 호스팅 커뮤니티 위키(`wiki.hoodedhorse.com/Norland`) 고정 판오판 — World `oldid=1284`, States `oldid=1262`, Lords `oldid=1314`, Actions `oldid=1318` — 및 개발자 공지(Patch #25/#26, Patch #39·#40, Patch #43 BETA, Patch #57 BETA, Update #35, Patches #54–#56 묶음). 16항목 모두 문서 검증이다(원시 처리 미확인).
-- **혼인의 필요조건**: World oldid1284 — 두 군주 관계가 +5 이상이어야 외국 도시 혼인 행동이 가능하다. 필요조건이지 완전한 적격은 아니다. 효과는 신부 이주·금 지급(신부 도시 강도에 비례)·군주 관계 +30이고, 이는 결과 목록이지 거래 순서나 재산 이전 규칙이 아니다.
+- **혼인의 필요조건**: World oldid1284 — 두 군주 관계가 +5 이상이어야 외국 도시 혼인 행동이 가능하다. 필요조건이지 완전한 적격은 아니다. 효과는 신도 이주·금 지급(신도 도시 강도에 비례)·군주 관계 +30이고, 이는 결과 목록이지 거래 순서나 재산 이전 규칙이 아니다.
 - **강제 혼인의 표식(역사적)**: Patch #25 공지는 신혼 관계 <50에 강제 혼인 사고를 붙였고, Patch #39·#40는 그 사고를 제거하며 문턱을 소급 <25로 적었다. 두 기록의 문턱 불일치는 미조정 상태로 남아 있고, 이 사고는 동의 체계가 아니다.
 - **이혼**: Actions oldid1318 주교 항목·이혼 표 — 혼인한 영주·도시 내 주교·금 비용으로 혼인이 끝난다. 대상 동의·지급 주체·자녀·재산 효과는 문서화되지 않았다.
 - **인지·계보**: States oldid1262는 혼인 밖 출생 또는 여성 군주 소생을 사생으로 분류하고, Patch #26은 적법·사생 자녀와 혼인한 이웃 가문을 족보에 표시한다. Patch #43 BETA는 초기 AI 영주에게 가짜 부모를 만들어 친족으로 인지시킨다. 표시·분류는 인지 권한·계승·소유를 부여하지 않는다.
@@ -88349,7 +88349,7 @@ The methods below are the starting settings recorded in the existing design. Do 
 | Taeuk Group, Seongha Group, Sinnae Transport | Family Inheritance | Separation of personal shares and licenses from the leader''s post, appointment, and ratification |
 | Yeouido Investment Federation | Council Election by the Investing Families | Separation of share inheritance, representative selection, and chair election |
 | Registry Church | Father-to-Son Succession of the Pastorate and Elder Ratification | Lineage, ordination, and ratification conditions |
-| Myeongdong Archdiocese, Anguk Great Monastery | Clergy Election and Mountain Assembly Acclamation | Eligibility, procedure, and takeover of the altar and ledger |
+| Arc, Anguk Great Monastery | Clergy Election and Mountain Assembly Acclamation | Eligibility, procedure, and takeover of the altar and ledger |
 | White Cross Order | Master''s Designation of a Disciple as Successor | Valid designation, training, and the confirming party |
 | Central Technology Preservation Institute | Examination-Based Selection | Eligibility to sit the exam, results, and takeover of record-access rights |
 | Jeongdong Labor Federation | Direct Election by Union Members | Eligible union members, candidates, and strike-roster authority |
@@ -88528,11 +88528,11 @@ There are no approved numbers for legitimacy scores, exam scores, quorums, actin
 | 아관사 | 사령관과 수비대장 이원 지휘 | 공석 대상·공동 권한·대행·두 자리의 처리 순서 |
 | 태욱그룹·성하그룹·신내운수 | 가문 세습 | 개인 지분·면허와 수장 직위·임명·인준의 분리 |
 | 여의도출자연합회 | 출자 가문 평의회 선출 | 지분 상속·대표 선정·의장 선출의 분리 |
-| 명부교회 | 목사직 부자 세습과 장로 인준 | 계보·안수·인준 조건 |
-| 명동대교구·안국총림 | 사제단 선출과 산중총회 추대 | 자격·절차·제대와 대장 인수 |
+| Arc | 목사직 부자 세습과 장로 인준 | 계보·안수·인준 조건 |
+| Arc·안국총림 | 신도단 선출과 산중총회 추대 | 자격·절차·제대와 대장 인수 |
 | 흰십자단 | 스승의 후계 제자 지명 | 유효 지명·수련·확인 주체 |
 | 중앙기술보존원 | 시험 선출 | 응시 자격·결과·기록 열람권 인수 |
-| 정동노총 | 조합원 직선 | 유권 조합원·후보·파업 명부 권한 |
+| Arc | 조합원 직선 | 유권 조합원·후보·파업 명부 권한 |
 
 규격맹의 도제 계보와 평의회 선출의 연결, 아관사의 이원 체제 공석은 확정 질문이다. 문구가 다르다는 이유로 임의로 하나의 제도로 통일하지 않는다.
 
@@ -89454,7 +89454,7 @@ The already approved rules are these.
 - **Preservation of delegation.** When a deputy dies, the original holder''s right does not disappear. A vacancy does not take over that delegation.
 - **Per-effect marriage adjudication.** On death, detention, or loss of office, the contracts for each effect (alliance, property, confirmation, succession) are checked separately and sorted into maintained, terminated, or needing reconfirmation; they are not all terminated at once. If the applicable institution is undetermined, then formation and effects are also undetermined, not "no effect."
 - **War recheck.** When the leader of an ongoing war dies, the validity of the previously registered casus belli, the legal object of the right, and the beneficiary and exercise eligibility are rechecked first, and then the new responsible party is confirmed. In a claim-backed war, the approver and the beneficiary are distinguished, and the victory right goes to the eligible beneficiary. Personal promises and office promises are adjudicated item by item for maintenance, reratification, or termination, and succession is not used to erase debts, truces, or damage records. The rule for choosing the actual war-ending type after this check has not yet been decided.
-- **Names of starting successions.** The starting successions of the sixteen states are recorded with the name of their method: election among the duty houses, election at a covenant council of water-contract house representatives, primogeniture among the track houses, guild council and apprentice lineage, hereditary commander, dual commander and garrison chief, house inheritance, election by a council of investor houses, pastor father-to-son succession with elder confirmation, priesthood election and mountain assembly acclamation, a master''s nomination of a successor disciple, examination election, and direct election by union members. Who elects, how many must gather, and what happens in a tie are not contained in the name.
+- **Names of starting successions.** The starting successions of the sixteen states are recorded with the name of their method: election among the duty houses, election at a covenant council of water-contract house representatives, primogeniture among the track houses, guild council and apprentice lineage, hereditary commander, dual commander and garrison chief, house inheritance, election by a council of investor houses, pastor father-to-son succession with elder confirmation, congregation election and mountain assembly acclamation, a master''s nomination of a successor disciple, examination election, and direct election by union members. Who elects, how many must gather, and what happens in a tie are not contained in the name.
 
 There are no approved numbers for this domain. The formula for squad capacity, how weak an interim squad leader''s command is, the duration or threshold of detention, the score that decides succession, and the time limit for succession are not set, and this document does not create them. Succession, election, and death figures from other games are not Seoul''s numbers.
 
@@ -89645,7 +89645,7 @@ The items below are boundaries where the current rules cannot fix the outcome. E
 - **위임 보존.** 대리인이 죽어도 원 보유자의 권리는 사라지지 않는다. 공석이 그 위임을 대신하지 않는다.
 - **혼인 효과별 판정.** 사망·구금·관직 상실 때 동맹·재산·인준·후계 효과별 계약을 검사해 유지·종료·재인준을 나누며 일괄 종료하지 않는다. 적용 제도가 미정이면 성립과 효과도 미정이지, 효과 없음이 아니다.
 - **전쟁 재검사.** 진행 전쟁의 수장 사망은 먼저 등록된 명분의 유효·무효, 권리의 법적 대상과 수혜자·행사 자격을 다시 검사한 뒤 새 책임자를 확인한다. 주장 지원 전쟁에서는 승인자와 수혜자를 구분하고, 승리 권리는 적격한 수혜자에게 간다. 개인 약속과 직위 약속의 유지·재비준·종료를 항목별로 판정하며 계승을 이용해 빚·휴전·피해 기록을 지우지 않는다. 이 검사 뒤 실제 전쟁 종결 유형을 고르는 규칙은 아직 정해지지 않았다.
-- **시작 계승의 이름.** 열여섯 나라의 시작 계승에는 방식의 이름이 적혀 있다. 당직 가문 선거, 물 계약 가문 대표 계약 회의 선출, 선로 가문 장자 세습, 길드 평의회와 도제 계보, 세습 사령관, 사령관·수비대장 이원, 가문 세습, 출자 가문 평의회 선출, 목사직 부자 세습과 장로 인준, 사제단 선출과 산중총회 추대, 스승의 후계 제자 지명, 시험 선출, 조합원 직선. 누가 뽑는지, 몇 명이 모여야 하는지, 동점이면 어떻게 되는지는 그 이름 안에 들어 있지 않다.
+- **시작 계승의 이름.** 열여섯 나라의 시작 계승에는 방식의 이름이 적혀 있다. 당직 가문 선거, 물 계약 가문 대표 계약 회의 선출, 선로 가문 장자 세습, 길드 평의회와 도제 계보, 세습 사령관, 사령관·수비대장 이원, 가문 세습, 출자 가문 평의회 선출, 목사직 부자 세습과 장로 인준, 신도단 선출과 산중총회 추대, 스승의 후계 제자 지명, 시험 선출, 조합원 직선. 누가 뽑는지, 몇 명이 모여야 하는지, 동점이면 어떻게 되는지는 그 이름 안에 들어 있지 않다.
 
 이 영역에 승인된 수는 없다. 분대 정원을 정하는 식, 임시 분대장의 지휘가 약한 정도, 구금의 기간이나 문턱, 후계를 가르는 점수, 계승의 제한 시간은 정해져 있지 않고 이 문서가 만들지 않는다. 다른 게임의 계승·선거·사망 수치는 서울의 수가 아니다.
 
@@ -92089,7 +92089,7 @@ Even if a post is vacant after a leader''s death, the institution and the state 
 | Taeuk Group, Seongha Group, Sinnae Transport | Family Inheritance | Distinction between personal shares/licenses and the leader''s post, and between appointment and ratification |
 | Yeouido Investment Federation | Council Election by the Investing Families | Separation of share inheritance, representative selection, and chair election |
 | Registry Church | Hereditary father-to-son pastorate, ratification by elders | Candidate lineage and ordination/ratification conditions |
-| Myeongdong Archdiocese, Anguk Great Monastery | Election by the priesthood, acclamation by the mountain-wide assembly | Eligibility and procedure for election/acclamation, takeover of the corps/commander post |
+| Arc, Anguk Great Monastery | Election by the congregation, acclamation by the mountain-wide assembly | Eligibility and procedure for election/acclamation, takeover of the corps/commander post |
 | White Cross Order | Master''s Designation of a Disciple as Successor | Valid nomination, training/proficiency, confirming authority |
 | Central Technology Preservation Institute | Examination-Based Selection | Examination eligibility, results, and takeover of record-viewing rights |
 | Jeongdong Labor Federation | Direct Election by Union Members | Voting union members, candidate eligibility, authority over the strike roster |
@@ -92403,11 +92403,11 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 | 아관사 | 사령관·수비대장 이원 | 어느 자리의 공석인지, 공동 권한·대행 규칙 |
 | 태욱그룹·성하그룹·신내운수 | 가문 세습 | 개인 지분/면허와 수장 직위, 임명·인준의 구분 |
 | 여의도출자연합회 | 출자 가문 평의회 선출 | 지분 상속, 대표 선정, 의장 선출의 분리 |
-| 명부교회 | 목사직 부자 세습·장로 인준 | 후보 계보와 안수/인준 조건 |
-| 명동대교구·안국총림 | 사제단 선출·산중총회 추대 | 선출/추대 자격·절차·제대/대장 인수 |
+| Arc | 목사직 부자 세습·장로 인준 | 후보 계보와 안수/인준 조건 |
+| Arc·안국총림 | 신도단 선출·산중총회 추대 | 선출/추대 자격·절차·제대/대장 인수 |
 | 흰십자단 | 스승의 후계 제자 지명 | 유효 지명·수련/숙련·확인 주체 |
 | 중앙기술보존원 | 시험 선출 | 시험 자격·결과·기록 열람권의 인수 |
-| 정동노총 | 조합원 직선 | 유권 조합원·후보 자격·파업 명부 권한 |
+| Arc | 조합원 직선 | 유권 조합원·후보 자격·파업 명부 권한 |
 
 정본 간 세부 표현 차이는 여기서 임의로 통일하지 않는다. 특히 길드의 도제 계보와 평의회 선출의 연결, 이원 체제 공석은 확정 질문이다.
 
