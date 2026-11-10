@@ -8,6 +8,7 @@ import path from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
+import { personPage, familyTreeSvg, STR } from './people.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '..');
@@ -36,6 +37,11 @@ const raw = {
   updates: all('SELECT * FROM wiki_update ORDER BY sort'),
   gddCats: all('SELECT * FROM gdd_category ORDER BY sort'),
   gddDocs: all('SELECT * FROM gdd_document ORDER BY category_id, sort'),
+  details: new Map(all('SELECT * FROM person_detail').map((r) => [r.person_id, r])),
+  clans: all('SELECT * FROM clan ORDER BY sort'),
+  clanMembers: all('SELECT * FROM clan_member ORDER BY clan_id, sort'),
+  nonKorean: all('SELECT * FROM nonkorean_family ORDER BY sort'),
+  trees: new Map(all('SELECT * FROM family_tree').map((r) => [r.clan_id, r])),
 };
 
 // ---- UI strings (the only hand-written text; everything else comes from SQL) ----
@@ -139,21 +145,41 @@ for (const L of [UI.en, UI.ko]) {
   write(`${L.prefix}wiki/factions/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => members(x.id).length).map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${members(x.id).map((s) => `- [${g(s, 'name')}](${P(`wiki/states/${s.slug}/`)}) — ${g(s, 'ruler')}`).join('\n')}\n`).join('\n')}`));
   factions.filter((x) => members(x.id).length).forEach((x) => {
     const peopleN = people.filter((p) => p.faction_id === x.id).length;
-    write(`${L.prefix}wiki/factions/${x.id}/index.md`, page(g(x, 'name'), `# ${g(x, 'name')}\n\n| | |\n| --- | --- |\n${g(x, 'center_region') ? `| ${L.centerRegion} | ${cell(g(x, 'center_region'))} |\n| ${L.aiPosition} | ${cell(g(x, 'ai_position'))} |\n` : ''}| ${L.fields.state} | ${members(x.id).length} |\n| ${L.people} | ${peopleN} |\n\n${x.id === 'independent' ? `${L.independentNote}\n\n` : ''}## ${L.members}\n\n| ${L.cols.id} | ${L.cols.state} | ${L.cols.ruler} | ${L.cols.capital} | ${L.cols.power} |\n| --- | --- | --- | --- | --- |\n${members(x.id).map((s) => `| ${s.id} | [${cell(g(s, 'name'))}](${P(`wiki/states/${s.slug}/`)}) | ${cell(g(s, 'ruler'))} | ${cell(g(s, 'capital'))} | ${cell(g(s, 'power'))} |`).join('\n')}\n`));
+    write(`${L.prefix}wiki/factions/${x.id}/index.md`, page(g(x, 'name'), `# ${g(x, 'name')}\n\n| ${L === UI.ko ? "항목" : "Field"} | ${L === UI.ko ? "값" : "Value"} |\n| --- | --- |\n${g(x, 'center_region') ? `| ${L.centerRegion} | ${cell(g(x, 'center_region'))} |\n| ${L.aiPosition} | ${cell(g(x, 'ai_position'))} |\n` : ''}| ${L.fields.state} | ${members(x.id).length} |\n| ${L.people} | ${peopleN} |\n\n${x.id === 'independent' ? `${L.independentNote}\n\n` : ''}## ${L.members}\n\n| ${L.cols.id} | ${L.cols.state} | ${L.cols.ruler} | ${L.cols.capital} | ${L.cols.power} |\n| --- | --- | --- | --- | --- |\n${members(x.id).map((s) => `| ${s.id} | [${cell(g(s, 'name'))}](${P(`wiki/states/${s.slug}/`)}) | ${cell(g(s, 'ruler'))} | ${cell(g(s, 'capital'))} | ${cell(g(s, 'power'))} |`).join('\n')}\n`));
   });
 
   // states
   write(`${L.prefix}wiki/states/index.md`, page(L.states, `# ${L.states}\n\n${L.statesLead(states.length, factionCount)}\n\n| ${L.cols.id} | ${L.cols.state} | ${L.cols.faction} | ${L.cols.ruler} | ${L.cols.capital} | ${L.cols.power} |\n| --- | --- | --- | --- | --- | --- |\n${states.map((s) => `| ${s.id} | [${cell(g(s, 'name'))}](${P(`wiki/states/${s.slug}/`)}) | [${cell(factionName(s.faction_id))}](${P(`wiki/factions/${s.faction_id}/`)}) | ${cell(g(s, 'ruler'))} | ${cell(g(s, 'capital'))} | ${cell(g(s, 'power'))} |`).join('\n')}\n`));
   states.forEach((s) => {
     const ms = people.filter((p) => p.state_id === s.id);
-    write(`${L.prefix}wiki/states/${s.slug}/index.md`, page(g(s, 'name'), `# ${g(s, 'name')}\n\n## ${L.overview}\n\n| | |\n| --- | --- |\n| ${L.fields.stateId} | ${s.id} |\n| ${L.fields.faction} | [${cell(factionName(s.faction_id))}](${P(`wiki/factions/${s.faction_id}/`)}) |\n| ${L.fields.government} | ${cell(g(s, 'government'))} |\n| ${L.fields.power} | ${cell(g(s, 'power'))} |\n| ${L.fields.origin} | ${cell(g(s, 'cause'))} |\n| ${L.fields.ruler} | ${cell(g(s, 'ruler'))} |\n| ${L.fields.capital} | ${cell(g(s, 'capital'))} |\n| ${L.fields.base} | ${cell(g(s, 'base'))} |\n\n## ${L.people}\n\n${L.recorded(ms.length)}\n\n${ms.map((p) => `- [${g(p, 'name')}](${P(`wiki/people/${p.id}/`)}) — ${g(p, 'title')}`).join('\n')}\n`));
+    write(`${L.prefix}wiki/states/${s.slug}/index.md`, page(g(s, 'name'), `# ${g(s, 'name')}\n\n## ${L.overview}\n\n| ${L === UI.ko ? "항목" : "Field"} | ${L === UI.ko ? "값" : "Value"} |\n| --- | --- |\n| ${L.fields.stateId} | ${s.id} |\n| ${L.fields.faction} | [${cell(factionName(s.faction_id))}](${P(`wiki/factions/${s.faction_id}/`)}) |\n| ${L.fields.government} | ${cell(g(s, 'government'))} |\n| ${L.fields.power} | ${cell(g(s, 'power'))} |\n| ${L.fields.origin} | ${cell(g(s, 'cause'))} |\n| ${L.fields.ruler} | ${cell(g(s, 'ruler'))} |\n| ${L.fields.capital} | ${cell(g(s, 'capital'))} |\n| ${L.fields.base} | ${cell(g(s, 'base'))} |\n\n## ${L.people}\n\n${L.recorded(ms.length)}\n\n${ms.map((p) => `- [${g(p, 'name')}](${P(`wiki/people/${p.id}/`)}) — ${g(p, 'title')}`).join('\n')}\n`));
   });
 
-  // people
-  write(`${L.prefix}wiki/people/index.md`, page(L.people, `# ${L.people}\n\n${L.peopleLead(people.length)}\n\n| ${L.cols.name} | ${L.cols.title} | ${L.cols.state} | ${L.cols.occupation} | ${L.cols.rank} |\n| --- | --- | --- | --- | --- |\n${people.map((p) => `| [${cell(g(p, 'name'))}](${P(`wiki/people/${p.id}/`)}) | ${cell(g(p, 'title'))} | ${cell(g(p, 'state_name'))} | ${cell(g(p, 'occupation'))} | ${cell(g(p, 'rank'))} |`).join('\n')}\n`, { outline: false }));
+  // people: search page (client island) + one rich page per person from person_detail
+  const SS = L === UI.ko ? STR.ko : STR.en;
+  write(`${L.prefix}wiki/people/index.md`, page(L.people, `# ${L.people}\n\n${L.peopleLead(people.length)}\n\n<PeopleSearch locale="${L === UI.ko ? 'ko' : 'en'}" prefix="${L.prefix}" />\n\n<noscript>\n\n${SS.noscript}\n\n| ${L.cols.name} | ${L.cols.title} | ${L.cols.state} | ${L.cols.occupation} | ${L.cols.rank} |\n| --- | --- | --- | --- | --- |\n${people.map((p) => `| [${cell(g(p, 'name'))}](${P(`wiki/people/${p.id}/`)}) | ${cell(g(p, 'title'))} | ${cell(g(p, 'state_name'))} | ${cell(g(p, 'occupation'))} | ${cell(g(p, 'rank'))} |`).join('\n')}\n\n</noscript>\n`, { outline: false }));
+  const clanOf = new Map(raw.clanMembers.map((m) => [m.person_id, raw.clans.find((c) => c.id === m.clan_id)]));
   people.forEach((p) => {
-    const st = states.find((s) => s.id === p.state_id);
-    write(`${L.prefix}wiki/people/${p.id}/index.md`, page(g(p, 'name'), `# ${g(p, 'name')}\n\n| | |\n| --- | --- |\n| ${L.fields.title} | ${cell(g(p, 'title'))} |\n| ${L.fields.position} | ${cell(g(p, 'position'))} |\n| ${L.fields.rank} | ${cell(g(p, 'rank'))} |\n| ${L.fields.occupation} | ${cell(g(p, 'occupation'))} |\n| ${L.fields.gender} | ${cell(g(p, 'gender'))} |\n| ${L.fields.stage} | ${cell(g(p, 'stage'))} |\n| ${L.fields.state} | ${st ? `[${cell(g(st, 'name'))}](${P(`wiki/states/${st.slug}/`)})` : cell(g(p, 'state_name'))} |\n${st ? `| ${L.fields.faction} | [${cell(factionName(p.faction_id))}](${P(`wiki/factions/${p.faction_id}/`)}) |\n` : ''}`, { outline: false }));
+    const row = raw.details.get(p.id);
+    const d = row ? JSON.parse(L === UI.ko ? row.json_ko : row.json) : null;
+    const dKo = row ? JSON.parse(row.json_ko) : null;
+    const md = personPage({ p, d, dKo, ko: L === UI.ko, g, P, stateRow: states.find((s) => s.id === p.state_id), factionName, clan: clanOf.get(p.id) });
+    write(`${L.prefix}wiki/people/${p.id}/index.md`, page(g(p, 'name'), `${md}`, { outline: !!d }));
+  });
+
+  // families: clan index, one page per clan with its family tree, non-Korean families
+  const memberCount = new Map();
+  raw.clanMembers.forEach((m) => memberCount.set(m.clan_id, (memberCount.get(m.clan_id) ?? 0) + 1));
+  const charToPerson = new Map(); // family-tree node personId (K001) -> roster id
+  raw.details.forEach((row, pid) => { const dd = JSON.parse(row.json); if (dd.characterId) charToPerson.set(dd.characterId, pid); });
+  write(`${L.prefix}wiki/families/index.md`, page(SS.clanIndex, `# ${SS.clanIndex}\n\n${SS.clanLead(raw.clans.length, raw.clanMembers.length)}\n\n| ${L === UI.ko ? '본관' : 'Bongwan'} | ${L === UI.ko ? '성씨' : 'Surname'} | ${L === UI.ko ? '인원' : 'Members'} |\n| --- | --- | --- |\n${raw.clans.map((c) => `| [${cell(g(c, 'bongwan'))}](${P(`wiki/families/${c.id}/`)}) | ${cell(g(c, 'surname'))} | ${memberCount.get(c.id) ?? 0} |`).join('\n')}\n\n## ${SS.nonKorean}\n\n${SS.nonKoreanLead}\n\n${raw.nonKorean.map((n) => `- **${cell(g(n, 'surname'))}** — ${cell(g(n, 'basis'))} (${JSON.parse(n.members).map((id) => `[${(people.find((p) => p.id === id) ? g(people.find((p) => p.id === id), 'name') : id)}](${P(`wiki/people/${id}/`)})`).join(', ')})`).join('\n')}\n`, { outline: false }));
+  raw.clans.forEach((c) => {
+    const mem = raw.clanMembers.filter((m) => m.clan_id === c.id).map((m) => people.find((p) => p.id === m.person_id)).filter(Boolean);
+    const tree = raw.trees.get(c.id);
+    const t = tree ? JSON.parse(L === UI.ko ? tree.json_ko : tree.json) : null;
+    const branches = JSON.parse(L === UI.ko ? c.branches_ko : c.branches);
+    const title = L === UI.ko ? `${c.bongwan_ko} ${c.surname_ko}씨` : `${c.bongwan} ${c.surname}`;
+    write(`${L.prefix}wiki/families/${c.id}/index.md`, page(title, `# ${title}\n\n<img class="clan-crest" src="${BASE}clan-crests/${c.id}.svg" alt="" width="72" height="72" onerror="this.remove()">\n\n## ${SS.members(mem.length)}\n\n| ${L.cols.name} | ${L.cols.state} | ${L.cols.occupation} |\n| --- | --- | --- |\n${mem.map((p) => `| [${cell(g(p, 'name'))}](${P(`wiki/people/${p.id}/`)}) | ${cell(g(p, 'state_name'))} | ${cell(g(p, 'occupation'))} |`).join('\n')}\n\n${c.show_branches && branches.length ? `## ${SS.branches}\n\n${branches.map((b) => `- ${cell(b.name)} · ${cell(b.status)} · ${(b.members ?? []).map((id) => `[${(people.find((p) => p.id === id) ? g(people.find((p) => p.id === id), 'name') : id)}](${P(`wiki/people/${id}/`)})`).join(', ')}`).join('\n')}\n\n` : ''}${t ? `## ${SS.treeTitle}\n\n${familyTreeSvg(t, { ko: L === UI.ko, P, personIdByCharacter: charToPerson })}\n` : ''}`));
   });
 
   // updates
@@ -181,7 +207,7 @@ for (const L of [UI.en, UI.ko]) {
         { text: L.gdd, link: P('gdd/') }, { text: L.showcase, link: showcaseLink, target: '_self' },
       ],
       sidebar: {
-        [P('wiki/')]: [{ text: L.wiki, items: [{ text: L.wikiHome, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L.states, link: P('wiki/states/') }, { text: L.people, link: P('wiki/people/') }, { text: L.updates, link: P('wiki/updates/') }] }, ...wikiGroups],
+        [P('wiki/')]: [{ text: L.wiki, items: [{ text: L.wikiHome, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L.states, link: P('wiki/states/') }, { text: L.people, link: P('wiki/people/') }, { text: STR[L === UI.ko ? 'ko' : 'en'].clanIndex, link: P('wiki/families/') }, { text: L.updates, link: P('wiki/updates/') }] }, ...wikiGroups],
         [P('gdd/')]: [{ text: L.designDocs, items: [{ text: L.gddHome, link: P('gdd/') }] }, ...gddGroups],
       },
       outline: { level: [2, 3], label: L.onThisPage },
@@ -193,9 +219,26 @@ for (const L of [UI.en, UI.ko]) {
 }
 
 // ---- VitePress config + theme -------------------------------------------
-write('.vitepress/theme/index.ts', `import DefaultTheme from 'vitepress/theme'\nimport './custom.css'\nexport default DefaultTheme\n`);
-fs.copyFileSync(path.join(HERE, 'theme/custom.css'), path.join(SRC, '.vitepress/theme/custom.css'));
+fs.cpSync(path.join(HERE, 'theme'), path.join(SRC, '.vitepress/theme'), { recursive: true });
+fs.mkdirSync(path.join(SRC, 'public/data'), { recursive: true });
+for (const L of [UI.en, UI.ko]) {
+  const g = f(L);
+  const S = L === UI.ko ? STR.ko : STR.en;
+  const rows = raw.people.map((p) => [p.id, g(p, 'name'), L === UI.ko ? p.name : p.name_ko, g(p, 'title'), g(p, 'position'), g(p, 'rank'), p.tier, g(p, 'occupation'), g(p, 'gender'), g(p, 'stage'), p.state_id, g(p, 'state_name'), p.faction_id]);
+  const dataset = {
+    labels: { ...S.f, search: S.search, searchPh: S.searchPh, filters: S.filters, all: S.all, reset: S.reset, results: L === UI.ko ? '명' : 'results', none: L === UI.ko ? '조건에 맞는 인물이 없습니다.' : 'No people match these filters.', more: L === UI.ko ? '더 보기' : 'Show more', loading: L === UI.ko ? '불러오는 중…' : 'Loading…', failed: L === UI.ko ? '인물 목록을 불러오지 못했습니다.' : 'Could not load the people list.', retry: L === UI.ko ? '다시 시도' : 'Retry', occupationPh: L === UI.ko ? '예: 급수' : 'e.g. water', ...S.cols },
+    factions: raw.factions.filter((x) => raw.states.some((st) => st.faction_id === x.id)).map((x) => ({ id: x.id, name: g(x, 'name') })),
+    states: raw.states.map((st) => ({ id: st.id, name: g(st, 'name') })),
+    tiers: [...new Set(raw.people.map((p) => p.tier))].sort(),
+    genders: [...new Set(raw.people.map((p) => g(p, 'gender')))].sort(),
+    rows,
+  };
+  fs.writeFileSync(path.join(SRC, `public/data/people.${L === UI.ko ? 'ko' : 'en'}.json`), JSON.stringify(dataset));
+}
 fs.mkdirSync(path.join(SRC, 'public'), { recursive: true });
+// Clan crests are small public SVGs (allowlisted); copy only the ones the clan pages reference.
+const crestSrc = path.join(REPO, 'public/clan-crests');
+if (fs.existsSync(crestSrc)) { fs.mkdirSync(path.join(SRC, 'public/clan-crests'), { recursive: true }); for (const c of raw.clans) { const p = path.join(crestSrc, `${c.id}.svg`); if (fs.existsSync(p)) fs.copyFileSync(p, path.join(SRC, 'public/clan-crests', `${c.id}.svg`)); } }
 fs.copyFileSync(path.join(HERE, 'assets/favicon.svg'), path.join(SRC, 'public/favicon.svg'));
 write('postcss.config.cjs', 'module.exports = { plugins: {} }\n');
 const searchLocales = {
@@ -249,5 +292,5 @@ function findAllow(obj, key) {
 }
 
 fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
-fs.writeFileSync(path.join(OUT, 'build.json'), JSON.stringify({ title: meta.title, base: BASE, locales: ['en', 'ko'], wikiDocs: raw.docs.length, gddDocs: raw.gddDocs.length, factions: raw.factions.length, states: raw.states.length, people: raw.people.length, updates: raw.updates.length, showcase, sqlFiles: files }, null, 1));
+fs.writeFileSync(path.join(OUT, 'build.json'), JSON.stringify({ title: meta.title, base: BASE, locales: ['en', 'ko'], wikiDocs: raw.docs.length, gddDocs: raw.gddDocs.length, factions: raw.factions.length, clans: raw.clans.length, personDetails: raw.details.size, states: raw.states.length, people: raw.people.length, updates: raw.updates.length, showcase, sqlFiles: files }, null, 1));
 console.log(`built ${meta.title} (en + ko): wiki ${raw.docs.length}, gdd ${raw.gddDocs.length}, factions ${raw.factions.length}, states ${raw.states.length}, people ${raw.people.length}; showcase ${showcase} -> ${path.relative(REPO, OUT)} (base ${BASE})`);

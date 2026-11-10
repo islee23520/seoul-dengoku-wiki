@@ -10,3 +10,8 @@ CREATE TABLE wiki_person (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, faction_id
 CREATE TABLE wiki_update (sort INTEGER PRIMARY KEY, date TEXT NOT NULL, category TEXT NOT NULL, category_ko TEXT NOT NULL, status TEXT NOT NULL, status_ko TEXT NOT NULL, title TEXT NOT NULL, title_ko TEXT NOT NULL, source TEXT NOT NULL, slug TEXT);
 CREATE TABLE gdd_category (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, label TEXT NOT NULL, label_ko TEXT NOT NULL);
 CREATE TABLE gdd_document (id TEXT PRIMARY KEY, category_id TEXT NOT NULL REFERENCES gdd_category(id), slug TEXT NOT NULL, title TEXT NOT NULL, title_ko TEXT NOT NULL, summary TEXT NOT NULL, summary_ko TEXT NOT NULL, status TEXT NOT NULL, sort INTEGER NOT NULL, source_path TEXT, body_md TEXT NOT NULL, body_ko_md TEXT NOT NULL, UNIQUE (category_id, slug));
+CREATE TABLE person_detail (person_id TEXT PRIMARY KEY REFERENCES wiki_person(id), clan_id TEXT, json TEXT NOT NULL, json_ko TEXT NOT NULL);
+CREATE TABLE clan (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, surname TEXT NOT NULL, surname_ko TEXT NOT NULL, bongwan TEXT NOT NULL, bongwan_ko TEXT NOT NULL, hanja TEXT NOT NULL, crest_motif TEXT NOT NULL, show_branches INTEGER NOT NULL, branches TEXT NOT NULL, branches_ko TEXT NOT NULL);
+CREATE TABLE clan_member (clan_id TEXT NOT NULL REFERENCES clan(id), sort INTEGER NOT NULL, person_id TEXT NOT NULL REFERENCES wiki_person(id), branch_id TEXT);
+CREATE TABLE nonkorean_family (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, surname TEXT NOT NULL, surname_ko TEXT NOT NULL, basis TEXT NOT NULL, basis_ko TEXT NOT NULL, members TEXT NOT NULL);
+CREATE TABLE family_tree (clan_id TEXT PRIMARY KEY REFERENCES clan(id), json TEXT NOT NULL, json_ko TEXT NOT NULL);

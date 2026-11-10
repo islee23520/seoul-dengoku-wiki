@@ -216,6 +216,36 @@ const fixWikiRoutes = (md) => md
 for (const r of gddRows) { r.body_md = fixSiteLinks(fixGddRelative(r.body_md, r.source_path)); r.body_ko_md = fixSiteLinks(fixGddRelative(r.body_ko_md, r.source_path)); }
 for (const r of wikiDocRows) { r.body_md = fixSiteLinks(fixWikiRoutes(r.body_md)); r.body_ko_md = fixSiteLinks(fixWikiRoutes(r.body_ko_md)); }
 
+// ---- person details, clans, family trees ----------------------------------
+// Public JSON projections (public/person-details, public/family-trees) are stored as JSON text, one row per record,
+// English and Korean side by side. {ko,en} pairs use the native English; other strings go through the cache.
+const pairOnly = (v) => v && typeof v === 'object' && !Array.isArray(v) && typeof v.ko === 'string' && typeof v.en === 'string' && Object.keys(v).length === 2;
+const jEn = (v) => (typeof v === 'string' ? T(v) : Array.isArray(v) ? v.map(jEn) : v && typeof v === 'object' ? (pairOnly(v) ? v.en : Object.fromEntries(Object.entries(v).map(([k, x]) => [T(k), jEn(x)]))) : v);
+const jKo = (v) => (Array.isArray(v) ? v.map(jKo) : v && typeof v === 'object' ? (pairOnly(v) ? v.ko : Object.fromEntries(Object.entries(v).map(([k, x]) => [k, jKo(x)]))) : v);
+const DETAIL_DROP = new Set(['familyTree', 'sourceRefs', 'sources']);
+const detailDir = path.join(REPO, 'public/person-details');
+const personDetailRows = fs.readdirSync(detailDir).filter((x) => x.endsWith('.json')).sort().map((file) => {
+  const j = readJson(path.join(detailDir, file));
+  const kept = Object.fromEntries(Object.entries(j).filter(([k]) => !DETAIL_DROP.has(k)));
+  return { person_id: j.id, clan_id: j.clan?.id ?? null, json: JSON.stringify(jEn(kept)), json_ko: JSON.stringify(jKo(kept)) };
+});
+const { clanFamilyCatalog } = await gen('clanFamilyCatalog.ts');
+const nonKoreanCatalog = Object.values(await gen('nonKoreanFamilyCatalog.ts'))[0];
+const clanRows = clanFamilyCatalog.map((c, i) => ({
+  id: c.id, sort: i, surname: T(c.surname), surname_ko: c.surname, bongwan: T(c.bongwan), bongwan_ko: c.bongwan, hanja: c.hanja ?? '',
+  crest_motif: c.crest?.motif ?? '', show_branches: c.showBranches ? 1 : 0,
+  branches: JSON.stringify(jEn(c.branches ?? [])), branches_ko: JSON.stringify(c.branches ?? []),
+}));
+const clanMemberRows = clanFamilyCatalog.flatMap((c) => c.members.map((m, i) => ({ clan_id: c.id, sort: i, person_id: m.id, branch_id: m.branchId ?? null })));
+const nonKoreanRows = nonKoreanCatalog.map((c, i) => ({
+  id: c.id, sort: i, surname: T(c.surname), surname_ko: c.surname, basis: T(c.basis), basis_ko: c.basis, members: JSON.stringify(c.members.map((m) => m.id)),
+}));
+const treeDir = path.join(REPO, 'public/family-trees');
+const familyTreeRows = fs.readdirSync(treeDir).filter((x) => x.endsWith('.json')).sort().map((file) => {
+  const j = readJson(path.join(treeDir, file));
+  return { clan_id: j.clanId, json: JSON.stringify(jEn(j)), json_ko: JSON.stringify(jKo(j)) };
+});
+
 if (missing.size) {
   fs.writeFileSync(MISSING_PATH, JSON.stringify([...missing], null, 1));
   console.error(`E_I18N_MISSING: ${missing.size} Korean strings lack English; see ${path.relative(REPO, MISSING_PATH)}`);
@@ -234,6 +264,11 @@ CREATE TABLE wiki_person (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, faction_id
 CREATE TABLE wiki_update (sort INTEGER PRIMARY KEY, date TEXT NOT NULL, category TEXT NOT NULL, category_ko TEXT NOT NULL, status TEXT NOT NULL, status_ko TEXT NOT NULL, title TEXT NOT NULL, title_ko TEXT NOT NULL, source TEXT NOT NULL, slug TEXT);
 CREATE TABLE gdd_category (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, label TEXT NOT NULL, label_ko TEXT NOT NULL);
 CREATE TABLE gdd_document (id TEXT PRIMARY KEY, category_id TEXT NOT NULL REFERENCES gdd_category(id), slug TEXT NOT NULL, title TEXT NOT NULL, title_ko TEXT NOT NULL, summary TEXT NOT NULL, summary_ko TEXT NOT NULL, status TEXT NOT NULL, sort INTEGER NOT NULL, source_path TEXT, body_md TEXT NOT NULL, body_ko_md TEXT NOT NULL, UNIQUE (category_id, slug));
+CREATE TABLE person_detail (person_id TEXT PRIMARY KEY REFERENCES wiki_person(id), clan_id TEXT, json TEXT NOT NULL, json_ko TEXT NOT NULL);
+CREATE TABLE clan (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, surname TEXT NOT NULL, surname_ko TEXT NOT NULL, bongwan TEXT NOT NULL, bongwan_ko TEXT NOT NULL, hanja TEXT NOT NULL, crest_motif TEXT NOT NULL, show_branches INTEGER NOT NULL, branches TEXT NOT NULL, branches_ko TEXT NOT NULL);
+CREATE TABLE clan_member (clan_id TEXT NOT NULL REFERENCES clan(id), sort INTEGER NOT NULL, person_id TEXT NOT NULL REFERENCES wiki_person(id), branch_id TEXT);
+CREATE TABLE nonkorean_family (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, surname TEXT NOT NULL, surname_ko TEXT NOT NULL, basis TEXT NOT NULL, basis_ko TEXT NOT NULL, members TEXT NOT NULL);
+CREATE TABLE family_tree (clan_id TEXT PRIMARY KEY REFERENCES clan(id), json TEXT NOT NULL, json_ko TEXT NOT NULL);
 `.trim();
 const cols = (s) => [...s.matchAll(/CREATE TABLE (\w+) \(([\s\S]*?)\);\s*$/gm)].reduce((a, m) => (a[m[1]] = m[2].split(/,\s*(?=\w+ (?:TEXT|INTEGER))/).map((c) => c.trim().split(' ')[0]), a), {});
 const C = cols(SCHEMA);
@@ -252,4 +287,7 @@ writeSql('050-wiki-people.sql', 'People roster', insert('wiki_person', C.wiki_pe
 writeSql('060-wiki-updates.sql', 'Update history', insert('wiki_update', C.wiki_update, updateRows));
 writeSql('070-gdd-categories.sql', 'GDD categories', insert('gdd_category', C.gdd_category, GDD_CATS.map(([id, label, label_ko], i) => ({ id, sort: i, label, label_ko }))));
 writeSql('080-gdd-documents.sql', 'GDD documents (Markdown bodies, English and Korean)', insert('gdd_document', C.gdd_document, gddRows));
-console.log(`exported: ${wikiDocRows.length} wiki docs, ${factionRows.length} factions, ${stateRows.length} states, ${personRows.length} people, ${updateRows.length} updates, ${gddRows.length} GDD docs (en+ko)`);
+writeSql('090-person-details.sql', 'Person detail records (JSON text, English and Korean)', insert('person_detail', C.person_detail, personDetailRows));
+writeSql('100-clans.sql', 'Clans (bongwan families), members and non-Korean families', [insert('clan', C.clan, clanRows), insert('clan_member', C.clan_member, clanMemberRows), insert('nonkorean_family', C.nonkorean_family, nonKoreanRows)].join('\n'));
+writeSql('110-family-trees.sql', 'Family trees (JSON text, English and Korean)', insert('family_tree', C.family_tree, familyTreeRows));
+console.log(`exported: ${wikiDocRows.length} wiki docs, ${factionRows.length} factions, ${stateRows.length} states, ${personRows.length} people, ${updateRows.length} updates, ${gddRows.length} GDD docs, ${personDetailRows.length} person details, ${clanRows.length} clans, ${familyTreeRows.length} family trees (en+ko)`);
