@@ -1,5 +1,5 @@
 ---
-model: gemini-4-argon-high
+model: cpa/claude-opus-5-5 (completion default tier; the Gemini model name could not be selected; this rework round was edited by hand without completion calls)
 section_checkpoint: ko 15/15 parts merged; gate-review fixes applied by hand
 ---
 
@@ -929,7 +929,7 @@ section_checkpoint: ko 15/15 parts merged; gate-review fixes applied by hand
 
 2073년 5월 삼성역 무리는 암사 경비대와 구의 관문 사령관 고명철에게 대원을 40명씩 보내 함께 싸웠다. 암사 경비대 사령관은 배현수의 장남 배진혁이었다.
 
-<a id="2073년-안국총림"></a>
+<a id="2073년-안국역"></a>
 
 #### 안국역
 
@@ -967,7 +967,7 @@ section_checkpoint: ko 15/15 parts merged; gate-review fixes applied by hand
 
 #### 가. 승계
 
-2076년 1월 오성규가 사망하고 아들 오준희가 삼성역 무리를 이끄는 자리를 이었다. 명부 등재자 대표 17명이 인준 투표를 하였다. 찬성 15표, 기권 2표였다.
+2076년 1월 오성규가 사망하고 아들 오준희가 삼성역 무리를 이끄는 자리를 이었다. 어른 17명이 인준 투표를 실시하였다. 찬성 15표, 기권 2표였다.
 
 <a id="2077년"></a>
 
@@ -1458,7 +1458,7 @@ section_checkpoint: ko 15/15 parts merged; gate-review fixes applied by hand
 
 같은 해 한재목은 이서담을 양천 구역장에 앉혔다. 이때 수문을 열기 전에 배급구역 대표의 연서를 받는 절차가 수문국 규정에 들어갔다.
 
-<a id="2119년-Arc"></a>
+<a id="2119년-시청역-노동자들"></a>
 
 #### 시청역 노동자들
 
@@ -1561,7 +1561,7 @@ section_checkpoint: ko 15/15 parts merged; gate-review fixes applied by hand
 
 같은 해 지연희는 세력 경계의 한 환승역에서 독립 전령으로 등록하였다. 같은 해 지연희는 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 섰고, 이후 고예진의 경호원이 되었다.
 
-<a id="2120년-Arc"></a>
+<a id="2120년-시청역-노동자들"></a>
 
 #### 시청역 노동자들
 
@@ -1635,7 +1635,7 @@ section_checkpoint: ko 15/15 parts merged; gate-review fixes applied by hand
 
 2122년 시험에 합격한 기술자 6명이 수문국 계약 회의와 규격맹 평의회의 서기로 임명되었다. 서기는 회의록과 표결 기록을 작성하였다.
 
-<a id="2122년-안국총림"></a>
+<a id="2122년-안국역"></a>
 
 #### 안국역
 
@@ -1773,7 +1773,7 @@ section_checkpoint: ko 15/15 parts merged; gate-review fixes applied by hand
 
 2123년 5월 이연이 조재표 일행에 수행 전령으로 합류하였다. 이연은 정찰·호위 결과 보고서에 자기 이름으로 서명하였다.
 
-<a id="2123년-Arc"></a>
+<a id="2123년-시청역-노동자들"></a>
 
 #### 시청역 노동자들
 
@@ -1853,7 +1853,7 @@ section_checkpoint: ko 15/15 parts merged; gate-review fixes applied by hand
 
 2124년 귀환망은 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었다.
 
-<a id="2124년-Arc"></a>
+<a id="2124년-시청역-노동자들"></a>
 
 #### 시청역 노동자들
 
@@ -1894,7 +1894,7 @@ section_checkpoint: ko 15/15 parts merged; gate-review fixes applied by hand
 
 2125년 가을 서부 관로의 탁도가 기준을 넘었다. 정수 감독 박누리는 서부 관로 밸브를 잠갔다. 한재목은 공급 재개 문서의 서명을 보류하였다. 이서담은 이 보류를 근거로 양천의 거부권을 계약 회의에 청구하였다.
 
-<a id="2125년-Arc"></a>
+<a id="2125년-시청역-노동자들"></a>
 
 #### 시청역 노동자들
 
@@ -1956,7 +1956,7 @@ section_checkpoint: ko 15/15 parts merged; gate-review fixes applied by hand
 
 2125년 겨울 세 조직이 같은 통행로의 호위를 조재표 일행에 동시에 요청하였다.
 
-<a id="2125년-Arc"></a>
+<a id="2125년-시청역-노동자들"></a>
 
 #### 시청역 노동자들
 

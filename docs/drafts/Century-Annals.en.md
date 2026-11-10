@@ -1,5 +1,5 @@
 ---
-model: gemini-4-argon-high
+model: cpa/claude-opus-5-5 (completion default tier; the Gemini model name could not be selected; this rework round was edited by hand without completion calls)
 section_checkpoint: en 6/6 parts merged; gate-review fixes applied by hand
 ---
 
@@ -241,7 +241,7 @@ From twenty days after the Great Blackout, patrol and security units across Seou
 
 ##### B. Yeongdeungpo-gu Office Station
 
-Twenty-two days after the Great Blackout, Hwangbo Eun, a station attendant at Yeongdeungpo-gu Office Station, closed the ticket gates and opened the platforms as living space. From that day on she recorded the number of people who came in in the station log.
+Twenty-two days after the Great Blackout, Hwangbo Eun, a station attendant at Yeongdeungpo-gu Office Station, closed the ticket gates and opened the platforms as living space. From that day on Hwangbo Eun recorded the number of people who came in in the station log.
 
 <a id="ch07-i3"></a>
 
@@ -929,7 +929,7 @@ In February 2071 Oh Seonggyu, who kept the Samseong Station residents' roll, gat
 
 In May 2073 the Samseong Station band sent forty members each to the Amsa guard and to Go Myeongcheol, the Guui gate commander, to fight alongside them. The Amsa guard commander was Bae Jinhyeok, eldest son of Bae Hyeonsu.
 
-<a id="2073년-안국총림"></a>
+<a id="2073년-안국역"></a>
 
 #### Anguk Station
 
@@ -967,7 +967,7 @@ In February 2075 the Yongsan rail families began having inheritance by eldest so
 
 #### A. Succession
 
-In January 2076 Oh Seonggyu died, and his son Oh Junhui succeeded him as leader of the Samseong Station band. Seventeen representatives of those on the roll held a confirmation vote. It passed with fifteen in favor and two abstentions.
+In January 2076 Oh Seonggyu died, and his son Oh Junhui succeeded him as leader of the Samseong Station band. Seventeen elders held a confirmation vote: fifteen in favor, two abstentions.
 
 <a id="2077년"></a>
 
@@ -1458,7 +1458,7 @@ In 2119 the contract council of the Water Gate Bureau chose Han Jaemok as head o
 
 In the same year Han Jaemok installed I Seodam as chief of the Yangcheon district. At this time a procedure requiring the joint signatures of ration district representatives before any water gate was opened was written into the bureau's regulations.
 
-<a id="2119년-Arc"></a>
+<a id="2119년-시청역-노동자들"></a>
 
 #### City Hall Station Workers
 
@@ -1561,7 +1561,7 @@ In January 2120 Ji Yeon-hui signed a contract with an intelligence organization.
 
 In the same year Ji Yeon-hui registered as an independent courier at a transfer station on a faction border. That same year she stood beside Go Ye-jin at shelter negotiations on the Tancheon side, and afterward she became Go Ye-jin's bodyguard.
 
-<a id="2120년-Arc"></a>
+<a id="2120년-시청역-노동자들"></a>
 
 #### City Hall Station Workers
 
@@ -1593,7 +1593,7 @@ On March 2, 2121, some 400 Eastern Command troops halted before the Achasan gate
 
 ##### A. President Yun Seorin
 
-In 2121 Yun Seorin became President. On the day she took office, Yun Seorin read the original emergency decree kept in the Records Office vault at the Government Complex Seoul.
+In 2121 Yun Seorin became President. On the day he took office, Yun Seorin read the original emergency decree kept in the Records Office vault at the Government Complex Seoul.
 
 <a id="ch38-i4"></a>
 
@@ -1635,7 +1635,7 @@ Around 2122 the Gangnam shelters were joined together under the name Arc.
 
 In 2122 six technicians who had passed the examination were appointed clerks of the Water Gate Bureau contract council and the Standards League council. The clerks kept the minutes and the voting records.
 
-<a id="2122년-안국총림"></a>
+<a id="2122년-안국역"></a>
 
 #### Anguk Station
 
@@ -1773,7 +1773,7 @@ In November 2123 I Ilseop attended the Standards League council in Guro for the 
 
 In May 2123 I Yeon joined Jo Jaepyo's party as an attendant courier. I Yeon signed the reports on scouting and escort work in her own name.
 
-<a id="2123년-Arc"></a>
+<a id="2123년-시청역-노동자들"></a>
 
 #### City Hall Station Workers
 
@@ -1853,7 +1853,7 @@ In July 2124 a drought reduced the branch workshop's water supply. The family el
 
 In 2124 the Return Network linked twelve communities, from the Gangnam-gu Office to Seonjeongneung and Suseo.
 
-<a id="2124년-Arc"></a>
+<a id="2124년-시청역-노동자들"></a>
 
 #### City Hall Station Workers
 
@@ -1894,7 +1894,7 @@ In September 2125 the Anguk Station copyists recorded, for the first time, a dis
 
 In the autumn of 2125 turbidity in the western pipeline exceeded the standard. Water treatment supervisor Bak Nuri closed the western pipeline valves. Han Jaemok withheld his signature from the document to resume supply. Citing this, I Seodam invoked Yangcheon's veto before the contract council.
 
-<a id="2125년-Arc"></a>
+<a id="2125년-시청역-노동자들"></a>
 
 #### City Hall Station Workers
 
@@ -1956,7 +1956,7 @@ In March 2125 three trading houses bid for the Yongsan transshipment contract. T
 
 In the winter of 2125 three organizations asked Jo Jaepyo's party at the same time to escort travelers along the same route.
 
-<a id="2125년-Arc"></a>
+<a id="2125년-시청역-노동자들"></a>
 
 #### City Hall Station Workers
 
