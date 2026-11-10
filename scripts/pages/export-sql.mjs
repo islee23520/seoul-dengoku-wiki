@@ -1,3 +1,5 @@
+// ARCHIVED 2026-11-10: one-time exporter from the old PostgreSQL projection. data/sql/*.sql is now the source of truth;
+// re-running this overwrites SQL-side edits with the old database state. See docs/GITHUB-PAGES-MIGRATION.md section 0.
 #!/usr/bin/env node
 // Exports the PUBLIC wiki + GDD projections into raw SQL files (data/sql/*.sql), in English and Korean.
 // Source of truth for GitHub Pages is data/sql; the site build never touches PostgreSQL.

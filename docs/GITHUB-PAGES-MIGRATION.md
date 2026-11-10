@@ -3,6 +3,18 @@
 Seoul Metro Dynasties (wiki + GDD) is public, so it is served as a static site from GitHub Pages instead of the WSL stack
 (`seoul-wiki-api` :18787, `seoul-wiki-documents` :18788, `seoul-wiki-migrate.timer`, `cloudflared-seoul`, `linalab-seoul-postgres` :15433, nginx :18090).
 
+## 0. Source of truth (changed 2026-11-10)
+
+`data/sql/*.sql` is now the standalone source of truth for the public site. The build needs no PostgreSQL, no `src/generated/`, and no environment variables other than the optional `SITE_*` ones. Verified from a clean checkout with every `PG*`, `WIKI_*` and `DATABASE_URL` variable removed:
+
+```
+cd site && npm ci --ignore-scripts
+node site/build.mjs        # built ... wiki 59, gdd 129, factions 4, states 16, people 1022
+node site/check-site.mjs   # OK
+```
+
+From now on, edit the SQL files (or run a reviewed script over them) in a pull request. `scripts/pages/export-sql.mjs` is the one-time exporter that produced them from the old PostgreSQL projection; it is kept as a record and is not part of any routine. Re-running it would overwrite SQL-side edits with the old database state, so do not run it unless the owner decides to resync from PostgreSQL.
+
 ## 1. Target architecture
 
 ```
@@ -30,10 +42,10 @@ Check before every commit: `grep -rIl -e wiki_private -e PGPASSWORD -e postgresq
 
 ## 3. Routine data update
 
-1. Author in PostgreSQL as before (typed CLI, drafts, owner approval).
-2. `npm run generate` (owner host, PG required) refreshes `src/generated/`.
-3. `node scripts/pages/export-sql.mjs` rewrites `data/sql/`. New Korean text is listed in `scripts/pages/i18n-missing.json`; translate it into `i18n-ko-en.json`, rerun.
-4. Open a PR to `main`; the owner merges. Merging triggers the Pages workflow (build, link/Hangul check, deploy).
+1. Edit `data/sql/*.sql` on a branch (text edits, or a reviewed script that rewrites the affected rows).
+2. `node site/build.mjs && node site/check-site.mjs` (no database needed).
+3. Open a PR to `main`; the owner merges. Merging triggers the Pages workflow (build, link/Hangul check, deploy).
+4. English text lives in the `*_en` / non-`_ko` columns. When Korean text changes, update the English column in the same row.
 
 ## 4. Cutover from WSL hosting
 
