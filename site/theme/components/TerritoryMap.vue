@@ -79,7 +79,7 @@ const lineIds = computed(() => { const s = new Set<string>(); for (const e of co
 const selectableHoldings = computed(() => core.value?.holdings.filter((h) => h.regions.length || h.station || h.landmark) ?? [])
 const activeHolding = computed(() => selectableHoldings.value.find((h) => h.id === machine.holding) ?? null)
 const holdingRegions = computed(() => new Set(activeHolding.value?.regions ?? []))
-const edgeColor = (c: Control) => (c.status === 'held' && c.states[0] ? colorOfState(c.states[0]) : unassigned.value)
+const edgeColor = (c: Control) => (c.status === 'held' && c.states[0] ? factionById.value.get(c.states[0])?.color ?? unassigned.value : unassigned.value)
 const statusLabel = (s: string) => L.value.status?.[s] ?? s
 const counts = (status: string) => displayedEdges.value.filter((e) => (status === 'unassigned' ? !['held', 'vacant', 'contested'].includes(e.control.status) : e.control.status === status)).length
 
@@ -230,7 +230,7 @@ const stateLink = (id: string) => withBase(`/${props.prefix}wiki/states/${id.toL
         </section>
         <section v-if="selRegion">
           <p class="tm-kicker">{{ L.kRegion }} · {{ selRegion.district }}</p><h3>{{ selRegion.name }}</h3>
-          <dl><dt>{{ L.direct }}</dt><dd>{{ selRegion.states.map((id) => `${id} ${stateById.get(id)?.name ?? id}`).join(' · ') || L.neutral }}</dd></dl>
+          <dl><dt>{{ L.direct }}</dt><dd>{{ selRegion.states.map((id) => factionById.get(id)?.name ?? id).join(' · ') || L.neutral }}</dd></dl>
           <p>{{ selRegion.summary }}</p>
         </section>
         <section v-if="selStation">
