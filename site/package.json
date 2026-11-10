@@ -1,0 +1,17 @@
+{
+  "name": "seoul-metro-dynasties-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Static GitHub Pages generator: raw SQL (data/sql) -> wiki + GDD HTML",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node check-site.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.21"
+  }
+}
