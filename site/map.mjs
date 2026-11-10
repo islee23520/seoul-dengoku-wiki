@@ -6,7 +6,7 @@
 
 // Owner rule: each district (gu) is one duchy. North of the Han river is the Government; Gangnam-side east is Arc; Gangnam-side west is the Free City.
 // Gwanak-gu joins the Free City (owner answer 2026-11-10).
-const DISTRICT_FACTION = {
+export const DISTRICT_FACTION = {
   government: ['마포구', '용산구', '중구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '종로구', '서대문구', '은평구', '강북구', '도봉구', '노원구'],
   arc: ['서초구', '강남구', '송파구', '강동구'],
   'free-city': ['강서구', '양천구', '영등포구', '구로구', '금천구', '동작구', '관악구'],
@@ -22,7 +22,7 @@ const LABELS = {
     whole: 'Whole Seoul', zoomIn: 'Zoom in', zoomOut: 'Zoom out', left: 'Pan left', right: 'Pan right', up: 'Pan up', down: 'Pan down',
     mapLabel: 'Territory map. Use arrow keys to pan, plus and minus to zoom.', detail: 'Selection details', close: 'Close', openDetail: 'Show details', hideDetail: 'Hide details',
     legend: 'Political legend', neutral: 'Neutral', unknown: 'Political affiliation unknown', loading: 'Loading the map…', failed: 'Could not load the map data.', retry: 'Retry', loadingGeometry: 'Loading territory outlines…',
-    statesList: 'States', states: 'State', undergroundLegend: 'Underground segment status', held: 'Held', contested: 'Contested', vacant: 'Vacant', unassigned: 'Unassigned',
+    statesList: 'Organizations (former states)', states: 'Organization', undergroundLegend: 'Underground segment status', held: 'Held', contested: 'Contested', vacant: 'Vacant', unassigned: 'Unassigned',
     status: { held: 'Held', contested: 'Contested', vacant: 'Vacant', unassigned: 'Unassigned', unassigned_: 'Unassigned' },
     kTitle: 'Geographic title', kRegion: 'Selected district', kState: 'Selected state', kStation: 'Station', kSegment: 'Underground segment', kLandmark: 'Key site', kHolding: 'Personal domain',
     ruler: 'Ruler', hegemon: 'Current overlord', faction: 'Faction', government: 'Government', power: 'Power', capital: 'Capital', origin: 'Origin',
@@ -40,7 +40,7 @@ const LABELS = {
     whole: '서울 전체', zoomIn: '지도 확대', zoomOut: '지도 축소', left: '왼쪽 이동', right: '오른쪽 이동', up: '위쪽 이동', down: '아래쪽 이동',
     mapLabel: '영토 지도. 방향키로 이동하고 더하기·빼기 키로 확대·축소합니다.', detail: '선택 정보', close: '닫기', openDetail: '상세 보기', hideDetail: '상세 숨기기',
     legend: '서울 정치 권역 범례', neutral: '중립', unknown: '정치 관할 미확인', loading: '지도를 불러오는 중…', failed: '지도 자료를 불러오지 못했습니다.', retry: '다시 시도', loadingGeometry: '영토 경계를 불러오는 중…',
-    statesList: '국가', states: '국가', undergroundLegend: '지하 구간 상태 범례', held: '실효 지배', contested: '분쟁', vacant: '공백', unassigned: '미배정',
+    statesList: '단체(옛 국가)', states: '단체', undergroundLegend: '지하 구간 상태 범례', held: '실효 지배', contested: '분쟁', vacant: '공백', unassigned: '미배정',
     status: { held: '실효 지배', contested: '분쟁', vacant: '공백', unassigned: '미배정', unassigned_: '미배정' },
     kTitle: '지리 작위', kRegion: '선택된 지역', kState: '선택 국가', kStation: '서울 역 정보', kSegment: '지하 역 사이 구간', kLandmark: '주요 시설', kHolding: '개인 영지',
     ruler: '수장', hegemon: '현재 종주 소속', faction: '세력', government: '정체', power: '국력', capital: '수도', origin: '기원',
@@ -73,7 +73,7 @@ export function buildMapData(rows, ctx) {
 
   const regions = rows.regions.map((r) => {
     const polities = JSON.parse(r.polities);
-    return { id: r.id, name: pick(r, 'name'), district: pick(r, 'district'), faction: factionOfDistrict.get(r.district_ko) ?? null, status: r.status, states: polities, summary: pick(r, 'summary'), openingState: pick(r, 'opening_state'), area: r.area_m2, density: r.density_2126, stations: r.station_count };
+    return { id: r.id, name: pick(r, 'name'), district: pick(r, 'district'), faction: factionOfDistrict.get(r.district_ko) ?? null, status: r.status, states: [factionOfDistrict.get(r.district_ko)].filter(Boolean), summary: pick(r, 'summary'), openingState: pick(r, 'opening_state'), area: r.area_m2, density: r.density_2126, stations: r.station_count };
   });
   const regionById = new Map(regions.map((r) => [r.id, r]));
   const regionPath = new Map(rows.regions.map((r) => [r.id, r.path]));
@@ -100,7 +100,7 @@ export function buildMapData(rows, ctx) {
   });
   const stateById = new Map(states.map((s) => [s.id, s]));
 
-  const controlOf = (json) => { const c = JSON.parse(json); return { status: c.status ?? 'unassigned', states: c.polityIds ?? [], names: c.polityNames ?? [], overlords: (c.currentHegemons ?? []).map((h) => h.name) }; };
+  const controlOf = (json) => { const c = JSON.parse(json); const fids = [...new Set((c.polityIds ?? []).map((id) => stateFaction.get(id)).filter(Boolean))]; return { status: c.status ?? 'unassigned', states: fids, names: fids.map((id) => factionById.get(id) ?? { name: id }).map((f2) => pick(f2, 'name')), overlords: (c.currentHegemons ?? []).map((h) => h.name) }; };
   const stations = rows.stations.map((s) => {
     const c = controlOf(ko ? s.control_ko : s.control);
     return { id: s.id, name: pick(s, 'name'), district: pick(s, 'district'), x: s.x, y: s.y, lines: JSON.parse(s.line_ids), states: JSON.parse(s.surface_polity_ids), control: c };
