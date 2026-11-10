@@ -16,7 +16,7 @@ export function relationsPage({ graph, ko, g, P, states, people, details, body, 
   const courts = graph.courts.map((court) => {
     const members = graph.edges.filter((e) => e.courtId === court.id && e.toPersonId === court.ownerPersonId).map((e) => e.fromPersonId);
     const st = states.find((x) => x.id === court.stateId);
-    const stateLine = st ? `[${g(st, 'name')}](${P(`wiki/states/${st.slug}/`)})` : (court.stateId ?? '');
+    const stateLine = st ? g(st, 'name') : (court.stateId ?? '');
     const head = `- **${personName(court.ownerPersonId)}** — ${ko ? '궁정 수장' : 'court head'}`;
     return `### ${personName(court.ownerPersonId)}\n\n${ko ? '궁정' : 'Court'} · ${stateLine} · ${ko ? '가신' : 'vassals'} ${members.length}\n\n${head}\n${members.map(chip).join('\n')}\n`;
   }).join('\n');
