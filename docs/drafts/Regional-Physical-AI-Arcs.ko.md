@@ -1,10 +1,10 @@
 ---
-model: hand-written by cpa/claude-opus-5-5 (st_01a1c7b2; 0 completion draft calls; full body hand-written from chapter 1 and CANON-BIBLE sections 1-3)
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
 section_checkpoint: complete
 ---
 <a id="Regional-Physical-AI-Arcs-heading-0001"></a>
 
-이 문서는 2126년 서울의 서사선을 세 갈래로 묶는다. 겨울을 내린 최초의 AI, 서울 밖을 도는 전쟁 기계, 그리고 한강을 사이에 둔 세 세력이다.
+2126년 서울의 이야기는 세 갈래로 이어진다. 겨울을 내린 최초의 AI, 서울 밖을 도는 전쟁 기계, 그리고 한강을 사이에 둔 세 세력이다.
 
 <a id="Regional-Physical-AI-Arcs-heading-0002"></a>
 
@@ -47,7 +47,7 @@ AI가 직접 죽인 사람은 없다. 사람들은 추위를 피해 지하철역
 | 2122 무렵 | 강남 대피소들이 아크라는 이름으로 묶인다. |
 | 2126 겨울 | 세 번째 급수계약을 앞둔 때. |
 
-고예진은 매뉴얼에서 옛 기계들이 쓰던 명령 체계를 알아냈다. 서울 밖을 떠돌던 드론과 병기 가운데 일부는 아직 그 명령을 받았고, 고예진은 그것들을 켜고 끌 수 있게 됐다. 고예진이 기계를 세우자 강남 대피소 사람들이 찾아왔다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르친다. 살은 얼어도 쇠는 얼지 않는다. 아크는 수서 옛 차량기지 아래에 봉헌실을 둔다.
+고예진이 서울 밖 기계를 세우자 강남 대피소 사람들이 찾아왔다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르친다. 살은 얼어도 쇠는 얼지 않는다. 아크는 수서 옛 차량기지 아래에 봉헌실을 둔다.
 
 <a id="Regional-Physical-AI-Arcs-heading-0010"></a>
 

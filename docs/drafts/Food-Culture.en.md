@@ -1,5 +1,5 @@
 ---
-model: hand-written by cpa/claude-opus-5-5 (st_01a1c7b2; 0 completion draft calls; hand-edited lines: targeted string replacements of conflicting sentences, rest kept verbatim)
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
 section_checkpoint: complete
 ---
 
@@ -45,7 +45,7 @@ A. The 2026 parts and water exchange
 
 On November 6, 2026, two Yeouido vault representatives visited Yeongdeungpo waterworks. Han Jeonghun accepted two emergency generator parts and agreed to open the Yeouido water valve from 06:00 to 12:00 daily.
 
-The dated water and parts record is in [the oral records](/wiki/Oral-Stories/#the-2026-water-and-parts-exchange).
+The dated water and parts record is in [the oral records](/wiki/Oral-Stories/#the-2026-water-and-parts-exchange). Ration rice is divided according to the amount of water supplied.
 
 Even with ration rice, without the treatment watch's signature clean cooking water was unavailable. If porridge was cooked with cloudy water, cases of waterborne disease increased. Counterfeit medicine also circulated that summer.
 

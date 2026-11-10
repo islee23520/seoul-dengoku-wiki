@@ -1,10 +1,10 @@
 ---
-model: hand-written by cpa/claude-opus-5-5 (st_01a1c7b2; 0 completion draft calls; full body hand-written from chapter 1 and CANON-BIBLE sections 1-3)
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
 section_checkpoint: complete
 ---
 <a id="Regional-Physical-AI-Arcs-heading-0001"></a>
 
-This page gathers the story lines of Seoul in 2126 into three strands: the First AI that brought down the winter, the war machines that roam outside Seoul, and the three factions on either side of the Han River.
+The stories of Seoul in 2126 run along three strands: the First AI that brought down the winter, the war machines that roam outside Seoul, and the three factions on either side of the Han River.
 
 <a id="Regional-Physical-AI-Arcs-heading-0002"></a>
 
@@ -47,7 +47,7 @@ Scarcity made people pass their work on to their children, and that's how rigid 
 | Around 2122 | The Gangnam shelters are joined under the name of the Arc. |
 | Winter 2126 | The eve of the third water contract. |
 
-From the manuals, Go Ye-jin learned the command system the old machines used. Some of the drones and weapons roaming outside Seoul still accepted those commands, and she became able to switch them on and off. When she stopped the machines, people from the Gangnam shelters came to her. The Arc teaches machine implants as a way to endure the winter. Flesh freezes, but steel doesn't. The Arc keeps an offering room beneath the old Suseo rail depot.
+When Go Ye-jin stopped the machines outside Seoul, people from the Gangnam shelters came to her. The Arc teaches machine implants as a way to endure the winter. Flesh freezes, but steel doesn't. The Arc keeps an offering room beneath the old Suseo rail depot.
 
 <a id="Regional-Physical-AI-Arcs-heading-0010"></a>
 

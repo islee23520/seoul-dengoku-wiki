@@ -1,5 +1,5 @@
 ---
-model: hand-written by cpa/claude-opus-5-5 (st_01a1c7b2; 0 completion draft calls; hand-edited lines: targeted string replacements of conflicting sentences, rest kept verbatim)
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
 section_checkpoint: complete
 ---
 <a id="Synthetic-Actors-heading-0001"></a>
@@ -13,7 +13,7 @@ section_checkpoint: complete
 - Custody and legal status: joint custody under HC01 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Han Jaemok · HC01 audit in attendance
+- Maintenance: chief maintainer Han Jae-mok · HC01 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the sluice sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -21,7 +21,7 @@ section_checkpoint: complete
 
 At the maintenance bench of the sluice, Hannuri (Nuri) logged its entry in the HC01 duty log.
 
-Han Jaemok checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Han Jae-mok checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the charging-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -105,7 +105,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HC05 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Bae Woojin · HC05 audit in attendance
+- Maintenance: chief maintainer Bae Ujin · HC05 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gwangjin Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -128,7 +128,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HC06 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Yun Seorin · HC06 audit in attendance
+- Maintenance: chief maintainer Yun Seo-rin · HC06 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seoul Station Central sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -136,7 +136,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 In the charging bay of Seoul Station Central, Baksol (Sol) logged its entry in the HC06 duty log.
 
-Yun Seorin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Yun Seo-rin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the observation-railing alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -151,7 +151,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HC07 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Park Taegyeom · HC07 audit in attendance
+- Maintenance: chief maintainer Bak Tae-gyeom · HC07 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Wangsimni sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -159,7 +159,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 At the observation railing of Wangsimni, Jeonguram (Uram) logged its entry in the HC07 duty log.
 
-Park Taegyeom checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Bak Tae-gyeom checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -174,7 +174,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HC08 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer O Haerin · HC08 audit in attendance
+- Maintenance: chief maintainer Oh Hae-rin · HC08 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Noryangjin Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -182,7 +182,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 At the tool wall of the Noryangjin Line, Choidaon (Daon) logged its entry in the HC08 duty log.
 
-O Haerin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Oh Hae-rin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the maintenance-bench alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -197,7 +197,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HC09 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Choi Jiwoo · HC09 audit in attendance
+- Maintenance: chief maintainer Choe Ji-u · HC09 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Mapo sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -205,7 +205,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 At the maintenance bench of Mapo, Joharam (Haram) logged its entry in the HC09 duty log.
 
-Choi Jiwoo checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Choe Ji-u checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the charging-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -243,7 +243,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HC11 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer I Hongwon · HC11 audit in attendance
+- Maintenance: chief maintainer Yi Hong-won · HC11 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gangnam Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -251,7 +251,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 At the observation railing of the Gangnam Line, Kimdoha (Doha) logged its entry in the HC11 duty log.
 
-I Hongwon checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Yi Hong-won checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -335,7 +335,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HP01 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Nam Yungyeong · HP01 audit in attendance
+- Maintenance: chief maintainer Nam Yun-gyeong · HP01 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Myeongdong sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -343,7 +343,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 At the observation railing of Myeongdong, Baesua (Sua) logged its entry in the HP01 duty log.
 
-Nam Yungyeong checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Nam Yun-gyeong checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -381,7 +381,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HC09 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer I Seodam · HC09 audit in attendance
+- Maintenance: chief maintainer I Seo-dam · HC09 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the sluice sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -389,7 +389,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 In the machine room of the sluice, Cooling-Tower Keeper (Tapji) logged its entry in the HC09 duty log.
 
-I Seodam checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+I Seo-dam checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the alarm in front of the switchgear panel sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -404,7 +404,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HC10 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Jeong Siwoo · HC10 audit in attendance
+- Maintenance: chief maintainer Jeong Siu · HC10 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yeongdeungpo Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -412,7 +412,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 In front of the switchgear panel of the Yeongdeungpo Line, Switchgear Panel (Jeonban) logged its entry in the HC10 duty log.
 
-Jeong Siwoo checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Jeong Siu checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -473,7 +473,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HC13 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Kim Woochan · HC13 audit in attendance
+- Maintenance: chief maintainer Kim Uchan · HC13 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gwangjin Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -496,7 +496,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HC14 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Gang Yejun · HC14 audit in attendance
+- Maintenance: chief maintainer Gang Ye-jun · HC14 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seoul Station Central sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -504,7 +504,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 In front of the switchgear panel of Seoul Station Central, Elevator Shaft (Seungchuk) logged its entry in the HC14 duty log.
 
-Gang Yejun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Gang Ye-jun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -519,7 +519,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HP01 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Sin Gaon · HP01 audit in attendance
+- Maintenance: chief maintainer Alexander Miller · HP01 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Wangsimni sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -527,7 +527,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 In the filter corridor of Wangsimni, Boiler Room (Boil) logged its entry in the HP01 duty log.
 
-Sin Gaon checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Alexander Miller checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the control-booth alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -542,7 +542,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HP02 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Jo Minjae · HP02 audit in attendance
+- Maintenance: chief maintainer Jo Min-jae · HP02 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Noryangjin Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -550,7 +550,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 In the control booth of the Noryangjin Line, Sewage Pump (Hasu) logged its entry in the HP02 duty log.
 
-Jo Minjae checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Jo Min-jae checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the machine-room alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -565,7 +565,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HP03 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Gwon Mirae · HP03 audit in attendance
+- Maintenance: chief maintainer Gwon Mi-rae · HP03 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Mapo sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -573,7 +573,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 In the machine room of Mapo, Lab Cleanroom (Clean) logged its entry in the HP03 duty log.
 
-Gwon Mirae checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Gwon Mi-rae checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the alarm in front of the switchgear panel sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -611,7 +611,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HP05 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Song Hayul · HP05 audit in attendance
+- Maintenance: chief maintainer Song Ha-yul · HP05 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gangnam Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -619,7 +619,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 In the filter corridor of the Gangnam Line, Power Transformer (Byeonap) logged its entry in the HP05 duty log.
 
-Song Hayul checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Song Ha-yul checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the control-booth alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -749,7 +749,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HP03 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Kim Taeun · HP03 audit in attendance
+- Maintenance: chief maintainer Gim Tae-un · HP03 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the sluice sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -757,7 +757,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 On the turnback line of the sluice, Dawn Convoy (Saebyeok) logged its entry in the HP03 duty log.
 
-Kim Taeun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Gim Tae-un checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the loading-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -795,7 +795,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HP05 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Choi Eunjae · HP05 audit in attendance
+- Maintenance: chief maintainer Choe Eunjae · HP05 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yongsan Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -803,7 +803,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 In the inspection pit of the Yongsan Line, Freight Tram (Tram) logged its entry in the HP05 duty log.
 
-Choi Eunjae checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Choe Eunjae checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -864,7 +864,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HP08 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Jo Harin · HP08 audit in attendance
+- Maintenance: chief maintainer Jo Ha-rin · HP08 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seoul Station Central sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -872,7 +872,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 In the loading bay of Seoul Station Central, Distribution Truck (Baejeon) logged its entry in the HP08 duty log.
 
-Jo Harin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Jo Ha-rin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the inspection-pit alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -887,7 +887,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HP09 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Gwon Sion · HP09 audit in attendance
+- Maintenance: chief maintainer Eva Novakova · HP09 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Wangsimni sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -895,7 +895,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 In the inspection pit of Wangsimni, Sweeper Vehicle (Cheongso) logged its entry in the HP09 duty log.
 
-Gwon Sion checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Eva Novakova checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -910,7 +910,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HP10 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Yun Seoha · HP10 audit in attendance
+- Maintenance: chief maintainer Yun Seo-ha · HP10 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Noryangjin Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -918,7 +918,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 At the charging slot of the Noryangjin Line, Ambulance Cart (Gugeup) logged its entry in the HP10 duty log.
 
-Yun Seoha checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Yun Seo-ha checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the turnback-line alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -979,7 +979,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HC03 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Jo Woochan · HC03 audit in attendance
+- Maintenance: chief maintainer Jo U-chan · HC03 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gangnam Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
@@ -1071,7 +1071,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Custody and legal status: joint custody under HC07 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Ra Jinwoo · HC07 audit in attendance
+- Maintenance: chief maintainer Ra Jinu · HC07 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Myeongdong sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval

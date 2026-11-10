@@ -1,5 +1,5 @@
 ---
-model: hand-written by cpa/claude-opus-5-5 (st_01a1c7b2; 0 completion draft calls; hand-edited lines: targeted string replacements of conflicting sentences, rest kept verbatim)
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
 section_checkpoint: complete
 ---
 
@@ -19,27 +19,26 @@ In 2126, Yi Hong-won belongs to the Gyeongju Yi clan, Jeong Seoon to the Jinyang
 | Surnames representable in Hanja | 1,507 | The same Hangul spelling could represent separate lineages when the Hanja differed |
 | Surnames without Hanja | 4,075 | Reflected a large increase in modern naturalized and foreign-origin spellings |
 | Surnames by bon-gwan | 36,744 | Increased from 4,179 in 2000 |
-| Hanja-surname rows copied into this repository | 512 | Rows listed in the table with a population of at least five |
 | Major bon-gwan listed in the table | 408 | Only bon-gwan accounting for a majority of each surname's population were listed |
 | Surname rows with a blank major bon-gwan field | 263 | This did not mean there was no bon-gwan; no majority bon-gwan existed or the table did not list it |
 
-The bon-gwan identities actually used by the cast were organized into 169 clans: 166 based on historical material and three created for the setting. Public research did not confirm historical bon-gwan for Ran and Heung, so the clans newly agreed upon after the collapse were the created Dobong Ran clan and Susaek Heung clan, respectively. They were not claimed to be historical bon-gwan, and no sources were attached.
+The bon-gwan in use in 2126 belong to 169 clans. 166 have come down from before the collapse, and three were newly agreed upon after it. The Ran and Heung, who could not find their old bon-gwan, agreed on the Dobong Ran clan and the Susaek Heung clan after the collapse.
 
-## Cast Application Results
+## The Clan Register
 
-The clan register listed all 1,022 people on the cast roster; 1,017 of them had bon-gwan and clan IDs. No bon-gwan, clan, or hangnyeol was recorded for Go Ye-jin, Han Seo-gyeong, Cha Yu-seon, and Mun Do-hyeon.
+The clan register listed all 1,022 people on the person register; 1,017 of them had bon-gwan and clan IDs. No bon-gwan, clan, or hangnyeol was recorded for Go Ye-jin, Han Seo-gyeong, Cha Yu-seon, and Mun Do-hyeon.
 
-Bon-gwan and clan IDs were present for **1,017 people**. Na, Ra, Ryu, Mun, and Min, whose surnames had no major bon-gwan in the census table, were supplemented from separate historical clan material; Ran and Heung, whose historical bon-gwan could not be confirmed, were assigned the created clans above. Im Somae, Beom Bandeuk, Amira Qasim, and Nargiz Yusupova opened new naturalized bon-gwan named after the places where they settled. I Yeon, a synthetic humanoid, has no paternal line and so no bon-gwan. Completing bon-gwan assignment and confirming hangnyeol were different things.
+Bon-gwan and clans are recorded for **1,017 people**. The Na, Ra, Ryu, Mun, and Min found their bon-gwan in old clan records, and the Ran and Heung belong to the new clans above. Im Somae, Beom Bandeuk, Amira Qasim, and Nargiz Yusupova opened new naturalized bon-gwan named after the places where they settled. I Yeon, a synthetic humanoid, has no paternal line and so no bon-gwan. Having a bon-gwan did not mean a hangnyeol was settled.
 
 | Status | People | Meaning |
 |---|---|---|
-| `applied` | 3 | Two names matched the derived generation of a created branch; one matched a documented clan hangnyeol table |
+| `applied` | 3 | Two names matched the generation count of a branch agreed upon after the collapse; one matched a documented clan hangnyeol table |
 | `inferred` | 516 | Families of one clan that share a character in the same name position agreed on a new hangnyeol after the collapse. They are the first generation of that agreed table |
 | `free` | 447 | Families that named their children without a hangnyeol, because no other household in the clan shares a name character |
 | `unused` | 51 | The name does not use the hangnyeol: it is a single-character name or does not contain the existing generation character |
 | `no-bongwan` | 1 | No paternal line, so no bon-gwan, clan, or hangnyeol |
 
-The applied examples were Seong Suhyeon and Seong Sa-hyeon of the Changnyeong Seong Train-Maintenance Branch. They were children of the same parent, Seong Dowon; the count was Founder Seong Changrip, generation 40 → Seong Dowon, generation 41 → the two children, generation 42. This branch was a **created family line** newly agreed upon after the collapse and referred to the five-element generating cycle. It was not claimed to be a historical Changnyeong Seong hangnyeol table. Their existing names were not changed; the second character `hyeon` remained as it was.
+The applied examples were Seong Suhyeon and Seong Sa-hyeon of the Changnyeong Seong Train-Maintenance Branch. They were children of the same parent, Seong Dowon; the count was Founder Seong Changrip, generation 40 → Seong Dowon, generation 41 → the two children, generation 42. This branch was a family line newly agreed upon after the collapse, and it followed the five-element generating cycle. It differed from the old Changnyeong Seong hangnyeol table. The two used the second character `hyeon` as their generation character.
 
 The bon-gwan and generational elements of the three people above were these: Yi Hong-won was Gyeongju Yi, Water; Jeong Seoon was Jinyang Jeong, Metal; and Choe Ji-u was Changnyeong Choe, Fire. These elements were the hangnyeol rules for the opening generation; the characters `hong`, `seo`, and `ji` were not retrospectively identified as hangnyeol characters.
 

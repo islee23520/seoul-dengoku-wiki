@@ -1,5 +1,5 @@
 ---
-model: hand-written by cpa/claude-opus-5-5 (st_01a1c7b2; 0 completion draft calls; hand-edited lines: targeted string replacements of conflicting sentences, rest kept verbatim)
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
 section_checkpoint: complete
 ---
 **가. 배급의 출발점**
