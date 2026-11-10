@@ -8,7 +8,7 @@ interface Core {
   labels: Record<string, any>; width: number; height: number; epoch: string; attribution: string; unassigned: string
   factions: { id: string; name: string; color: string }[]
   states: { id: string; name: string; faction: string; color: string; ruler: string; capital: string; government: string; power: string; cause: string; capitalX: number | null; capitalY: number | null; regions: number }[]
-  regions: { id: string; name: string; district: string; status: string; states: string[]; summary: string; openingState: string; area: number | null; density: number | null }[]
+  regions: { id: string; name: string; district: string; faction: string | null; status: string; states: string[]; summary: string; openingState: string; area: number | null; density: number | null }[]
   titles: { id: string; rank: Rank; name: string; parent: string | null; counties: string[]; faction: string | null; districts: string[] }[]
   ranks: Rank[]
   stations: { id: string; name: string; district: string; x: number; y: number; lines: string[]; states: string[]; control: Control }[]
@@ -66,7 +66,7 @@ const stationById = computed(() => new Map((core.value?.stations ?? []).map((s) 
 const factionById = computed(() => new Map((core.value?.factions ?? []).map((f) => [f.id, f])))
 const unassigned = computed(() => core.value?.unassigned ?? '#8a969b')
 const colorOfState = (id: string | undefined) => (id ? stateById.value.get(id)?.color ?? unassigned.value : unassigned.value)
-const regionColor = (id: string) => { const r = regionById.value.get(id); return r?.states[0] ? colorOfState(r.states[0]) : unassigned.value }
+const regionColor = (id: string) => { const f = regionById.value.get(id)?.faction; return f ? factionById.value.get(f)?.color ?? unassigned.value : unassigned.value }
 const titleColor = (t: Core['titles'][number]) => (t.faction ? factionById.value.get(t.faction)?.color ?? unassigned.value : unassigned.value)
 const hue = (id: string, ids: string[]) => `hsl(${Math.round(ids.indexOf(id) * 360 / Math.max(1, ids.length))} 34% 48%)`
 
