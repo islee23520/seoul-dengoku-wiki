@@ -1,5 +1,5 @@
 ---
-model: hand-edited by script, no model draft calls (0 completion calls; edited lines: faction sentences, related-doc link label, district sentence, duchy section with 25-row table from bible 2.4, City Hall shared-control sentence removed, en anchor line)
+model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agent and applied by a script (docs/drafts/reports/w3-c-replace.mjs); not from a Gemini model (edited lines: faction sentences, related-doc link label, district sentence, duchy section with 25-row table from bible 2.4, City Hall shared-control sentence removed, en anchor line)
 ---
 <a id="월드맵의-구조"></a>
 

@@ -1,5 +1,5 @@
 ---
-model: hand-edited by script, no model draft calls (0 completion calls; edited lines: faction sentences, depot-to-old-state sentence, 2030 date, link labels)
+model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agent and applied by a script (docs/drafts/reports/w3-c-replace.mjs); not from a Gemini model (edited lines: faction sentences, depot-to-old-state sentence, 2030 date, link labels)
 ---
 
 **A. How stations and tunnels are laid out**
