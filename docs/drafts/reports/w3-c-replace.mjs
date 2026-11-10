@@ -52,4 +52,4 @@ e=rep(e,"On October 14, 2030, Yeongdeungpo","Right after the Great Blackout, Yeo
 e=rep(e,"| Fortress, ration windows, the centers of states |","| Fortress, ration windows, faction strongholds |");
 e=rep(e,"[the Sixteen States of Seoul](/wiki/Sixteen-States/)","[the Three Factions of Seoul](/wiki/Sixteen-States/)");
 D["Structures"]=[k,e];}
-for(const [s,[k,e]] of Object.entries(D)){const fm=`---\nmodel: ${MODEL} (edited lines: ${notes[s]})\n---\n`;fs.writeFileSync(`docs/drafts/${s}.ko.md`,fm+k);fs.writeFileSync(`docs/drafts/${s}.en.md`,fm+e);console.log("wrote",s);}
+for(const [s,[k,e]] of Object.entries(D)){const fm=`---\nmodel: ${MODEL}\n---\n`;fs.writeFileSync(`docs/drafts/${s}.ko.md`,fm+k);fs.writeFileSync(`docs/drafts/${s}.en.md`,fm+e);console.log("wrote",s);}

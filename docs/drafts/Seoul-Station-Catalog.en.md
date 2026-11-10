@@ -1,5 +1,5 @@
 ---
-model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agent and applied by a script (docs/drafts/reports/w3-c-replace.mjs); not from a Gemini model (edited lines: 1 anchor line added to en; all other bytes unchanged)
+model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agent and applied by a script (docs/drafts/reports/w3-c-replace.mjs); not from a Gemini model
 ---
 <a id="서울-역-카탈로그"></a>
 
