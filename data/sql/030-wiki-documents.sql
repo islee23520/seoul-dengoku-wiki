@@ -10,7 +10,6 @@ In 2026, Seoul''s tap water was supplied through treatment centers and pipes. Ho
 
 [The Scenario Timeline](/wiki/Scenario-Timeline/) did not treat nuclear war, climate collapse or plague as first causes of disease. In 2126, when a cough patient appeared in a concourse, the medical officer inspected the tanks, the medicine chests and the damp walls first. In summer, patients from turbid water and counterfeit medicine increased first. When water ran short, medical convoys ran late. When medicine ran short, trust in the ration windows fell.
 
-
 ## Waterborne Disease
 
 **A. The water treatment system**
@@ -37,7 +36,6 @@ In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. Ryu 
 
 The [Flood-Mold Breath Cluster](/wiki/Hostile-Group-G10/) (hereafter "the Cluster") arose from repeated flooding in the Bukhansan Bogukmun corridor and the lower logistics warehouses of Garak and Jamsil. The name referred to an ecology and did not denote a social class. Wet concrete, the heat of grain and late ventilation increased the number of cough patients.
 
-
 ## Side Effects of Stockpiled Medicine
 
 **A. Stockpiles in 2026**
@@ -59,7 +57,6 @@ Medics screen out medicine with damaged seals or poor storage conditions before 
 E. The 2124 counterfeit medicine auction
 
 In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. White Cross leader Ryu Eunbi ended all of the group’s transactions at that auction.
-
 
 ## Hazardous Environments After the Blackout
 
@@ -96,7 +93,6 @@ First floors south of the Han and along the tributaries were used as monsoon sto
 | Waterborne disease | Han treatment, station tanks, flooded tunnels | Turbid water, diarrhea and dehydration, the mixing of tank aquaculture and drinking water |
 | Stockpiled medicine | Essential-medicine remnants, Jegi-dong herbs, cryo-cell sorting | Efficacy-less doses, counterfeit medicine, preparations cut from refrigeration |
 | Hazardous environments | Asbestos ceilings, condensation and mold, chiller coolant | Respiratory irritation, damp quarters, cooling loops mixed into drinking water |
-
 
 ## Sources
 
@@ -202,7 +198,6 @@ A. Principle of building reuse
 
 After the collapse, Seoul''s buildings were not built anew. The positions and forms of 2026 on the eve of the collapse were the skeleton, and only their use changed on top of it. A past record calling a building a school did not mean it was used as a school now.
 
-
 ## Powers and Buildings
 
 A. Smallest unit of occupation
@@ -213,7 +208,6 @@ B. Station building first
 
 Where a dong held a subway or rail station, rationing, transit tolls, shelter, and refuge looked to that station building first. As with the Yeongdeungpo Station unloading floor, the Seoul Station concourse, and the Jegi-dong transfer, the station became the mouth of life, and schools, community centers, and hospitals remained support buildings.
 
-
 ## The Three Layers
 
 a. Contents of the three layers
@@ -223,7 +217,6 @@ The contents of the three layers follow in the table.
 B. Names and uses
 
 Place names and functions came from the past, the borders divided, and the present use lay over the top.
-
 
 ## The Han River and the Tributaries
 
@@ -238,7 +231,6 @@ The tributaries split the districts. The Jungnang Stream ran through Jungnang, D
 C. Waterfront rules
 
 The waterfront rules were read from the layers first. The first floor of the main channel was monsoon storage or abandoned space, habitation pushed above the third floor, and the ration windows sat inside the embankment. The tributary banks were sewage and flood, wild boar and raccoon dog corridors, and school playgrounds served as detour embankments. Inland highlands like Gwanak and Dobong took slopes and blackouts instead of floods, and the schools became evacuation halls.
-
 
 ## The Trades the Districts Took
 
@@ -261,7 +253,6 @@ The spheres of the sixteen states were laid over the districts, but a district''
 | Dobong, Nowon | North, Jungnang | Changdong wheel works, northern rail quarters. |
 | Jungnang, Dongdaemun | North, Jungnang | Transfers and Jegi-dong. The market split medicinal herbs and transfer freight. |
 
-
 ## Past Use and Present Application
 
 A. Default uses
@@ -279,7 +270,6 @@ Militia sleep in schools, and ration windows occupy community centers. Each buil
 | Apartment | Habitation only above the third floor. Floors 1–2 flooded storage or abandoned. |
 | Park · green space | Thin cultivation, grazing, monsoon drainage. Explicitly stated unless used as burial ground. |
 | Shop · office | Workshop or shutter-sealed. |
-
 
 ## Floor by Floor
 
@@ -382,9 +372,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Era 1 · First-generation air-raid shelters (2030–2039)
 
-
 ### 2030
-
 
 #### Cheong Wa Dae National Crisis Management Center situation room
 
@@ -413,7 +401,6 @@ At about 00:40 on October 15, 2030, a duty worker of the Central Disaster and Sa
 ##### D. The emergency order
 
 When the President asked whether a cabinet meeting could be held, the chief of staff answered that only the Prime Minister was present among the ministers, short of a quorum. The President wrote and signed an emergency order under Article 76 of the Constitution himself on a page of the duty log, and the Prime Minister countersigned it. The order placed disaster response under the Central Disaster and Safety Countermeasure Headquarters and, for the duration of the communications outage, gave on-site authority to the emergency preparedness officers of each designated facility. The column for the date of National Assembly approval was left blank.
-
 
 #### Yeongdeungpo Arisu Water Treatment Center
 
@@ -447,7 +434,6 @@ After midnight on October 15, 2030, Han Jeonghun sent one worker by bicycle towa
 
 Han Jeonghun left 41 volumes of paper operations logs. The first line of volume 1 recorded October 14, 2030, 21:47 and the loss of remote control. The last entry in the final volume was a Train 3 valve inspection at 18:00 on December 7, 2046.
 
-
 #### The server room
 
 <a id="ch03-i1"></a>
@@ -480,7 +466,6 @@ At about 22:10 the indicator lights of a single rack at the end of the innermost
 
 The two waited for the incoming shift and stayed in the server room until 06:00 on October 15, 2030. The incoming shift never came. At about 06:20 Kwon Dohyun and Shin Sua left on foot with the duty log. The printed emergency procedures remained on the wall. The server room door stayed locked when the power was cut.
 
-
 #### The Yeouido vault level
 
 <a id="ch04-i1"></a>
@@ -512,7 +497,6 @@ No copy of the emergency order reached Yeouido. On October 29, 2030, the people 
 ##### E. The first trade
 
 On November 6, 2030, two representatives of the vault level called on the Yeongdeungpo Arisu Water Treatment Center. In exchange for two emergency-generator parts, Han Jeonghun agreed to open the water-main valves toward Yeouido every day from 06:00 to 12:00. The transaction was recorded under the same date in Han Jeonghun''s operations log and in the vault level inventories.
-
 
 #### Cheong Wa Dae National Crisis Management Center
 
@@ -552,7 +536,6 @@ At about 11:00 on October 16, 2030, a copy arrived at the Guui Arisu Water Treat
 
 The bicycle courier bound for Amsa found Cheonho-daero blocked and detoured toward the Godeok depot. On October 16, 2030, Bae Jeongman, the security chief staying at the Godeok depot, received the copy. The staff of the Amsa Arisu Water Treatment Center confirmed the copy on October 17, 2030.
 
-
 #### The substation
 
 <a id="ch06-i1"></a>
@@ -585,7 +568,6 @@ At about 09:17, when Oh Seongmin cut power to the control panel, the drones retu
 
 One crew member was likewise injured by electric shock during restart attempts at Guro on October 24, 2030 and at Yongsan on October 25, 2030. On October 27, 2030, the Central Disaster and Safety Countermeasure Headquarters distributed forty copies of a handwritten instruction not to restart remote equipment.
 
-
 #### Seoul
 
 <a id="ch07-i1"></a>
@@ -616,9 +598,7 @@ As of December 1, 2030, about 4,100 people were underground at Yeongdeungpo-gu O
 
 Through the winter, twelve handcarts carried water from the Yeongdeungpo Arisu Water Treatment Center each day at about 07:00. The ration was two liters per person per day. Rationing was handled by the staff of the facilities that had received copies of the emergency order.
 
-
 ### 2031
-
 
 #### Yeongdeungpo Arisu Water Treatment Center
 
@@ -627,7 +607,6 @@ Through the winter, twelve handcarts carried water from the Yeongdeungpo Arisu W
 ##### A. Recruiting surface workers
 
 On March 2, 2031, the Yeongdeungpo Arisu Water Treatment Center recruited surface workers in exchange for supplying water to the underground station ration points. Eighty-six people registered on the first day. The surface workers memorized patrol-route maps drawn up by Hwangbo Eun for their movements, and their families stayed underground.
-
 
 #### Yeongdeungpo-gu Office Station
 
@@ -644,7 +623,6 @@ In January 2031 the first resident roster was drawn up at Yeongdeungpo-gu Office
 
 In 2031 railway workers and refugees along the approaches to Incheon and Paju unloaded at the ends of the sections whose tracks and signals they could maintain. Travelers continuing beyond them divided their loads among packs and carts, and temporary unloading sites became markets. Merchants heading into Seoul also sought new carriers there.
 
-
 ### 2032
 
 <a id="ch08-i2"></a>
@@ -660,7 +638,6 @@ In April 2032 the Guro industrial complex management office began issuing paper 
 
 In 2032 mountain residents and guides in Gangwon divided the work of retrieving loads left by parties that had not returned over the winter. For the following winter they placed food and ropes on both sides of the passes and set a date to withdraw. Merchants bound toward Seoul sought their guidance and waited below the passes once the withdrawal date had passed.
 
-
 ### 2033
 
 <a id="ch08-i3"></a>
@@ -668,7 +645,6 @@ In 2032 mountain residents and guides in Gangwon divided the work of retrieving 
 #### A. The guard corps
 
 In July 2033 some twenty men under Bae Jeongman, the security chief on the Amsa side, began armed guard duty on the surface corridor between the Godeok depot and the Amsa Arisu Water Treatment Center. They called themselves the guard corps. Bae Jeongman entered the guards'' names and weapons in a ledger.
-
 
 ### 2034
 
@@ -684,7 +660,6 @@ In the spring of 2034 about 4,600 people were listed on the Yeongdeungpo-gu Offi
 #### Chungcheong · Fields beside the railway
 
 In 2034 railway repair workers and remaining residents around Daejeon began cultivating ground beside the tracks after supplies failed to arrive. During the farming season they suspended distant restoration work and shared tool repairs and sowing. Later, even when restoration parties from Seoul offered parts, residents delayed departure until their fieldwork was done.
-
 
 ### 2035
 
@@ -711,7 +686,6 @@ An IOU was drawn up for each lot of borrowed parts. Each IOU stated the part nam
 #### D. Train 3 restarted
 
 At 07:00 on June 17, 2035, the train 3 filter basins ran again under manual operation. Fourteen duty workers worked the valves in three shifts. The first day''s output was one-eighth of the daily output before the Great Blackout.
-
 
 ### 2036
 
@@ -740,7 +714,6 @@ Only parts conforming to the standards could leave the complex. Parts leaving th
 
 In 2036 people searching for family around Kaesong and Hwanghae gathered letters to carry south whenever they crossed the river. Families who chose not to travel to Seoul entrusted replies to the next party. Some records of these exchanges later reached the Imjin return window, but the southern rosters alone could not show whether every family member had returned.
 
-
 ### 2037
 
 <a id="ch09-i5"></a>
@@ -749,7 +722,6 @@ In 2036 people searching for family around Kaesong and Hwanghae gathered letters
 
 The Amsa Arisu Water Treatment Center began restoration in the same manner in May 2037, and the Guui Arisu Water Treatment Center in February 2038. Both borrowed parts from the Yeouido houses as well. Guard commander Bae Jeongman signed the Amsa IOUs as witness.
 
-
 ### 2038
 
 <a id="ch09-i6"></a>
@@ -757,7 +729,6 @@ The Amsa Arisu Water Treatment Center began restoration in the same manner in Ma
 #### A. Output
 
 By the end of 2038 the Yeongdeungpo Arisu Water Treatment Center''s output had recovered to nearly half of its level before the Great Blackout. Around the same time the Yeongdeungpo center''s IOUs numbered 112.
-
 
 ### 2039
 
@@ -776,7 +747,6 @@ Seven houses divided the track into sections and guarded them. The Park house to
 <a id="era-2"></a>
 
 ## Era 2 · Surface return and water recovery (2040–2050)
-
 
 ### 2040
 
@@ -801,7 +771,6 @@ Programming and most human technology survived and were passed down orally to a 
 
 During the second generation humanoids could be used again on local networks.
 
-
 ### 2041
 
 <a id="ch11-i3"></a>
@@ -823,7 +792,6 @@ In May 2041 eleven monks of Jogyesa and nearby temples began copying equipment m
 
 In 2041 sailors and settlers on Jeju pooled labor to repair their remaining boats after a prolonged halt in sailings. Villages contributing workers and materials received first claim on cargo space for the next voyage. Crossings to the southern coast resumed whenever repairs allowed, while messages for Seoul waited on the coast until another carrier could be found.
 
-
 ### 2042
 
 <a id="ch10-i5"></a>
@@ -838,7 +806,6 @@ Yun Changbae died in January 2042. His apprentice Yun Sanggwon took over the wor
 
 Bae Jeongman died in November 2042. His eldest son Bae Hyunsu took the commander''s seat before the corps the same day. The guards did not hold a separate election for a successor. Bae Hyunsu entered his father''s name and date of death on the first page of the corps ledger.
 
-
 ### 2043
 
 <a id="ch12-i1"></a>
@@ -847,9 +814,7 @@ Bae Jeongman died in November 2042. His eldest son Bae Hyunsu took the commander
 
 In March 2043 the underground chapels of three large churches near Samseong Station merged their resident rosters into congregation rosters. The merger was led by moderator Oh Jinseop. People listed on a congregation roster received church rations. The merged rosters first listed about 6,200 people.
 
-
 ### 2044
-
 
 #### Yongsan rail depot
 
@@ -858,16 +823,6 @@ In March 2043 the underground chapels of three large churches near Samseong Stat
 ##### A. The timetable inherited
 
 When Park Munhak died in 2044, his eldest son Park Yeongdo inherited the timetable. The other six houses followed Park Yeongdo''s timetable as it stood.
-
-
-#### Myeongdong Cathedral
-
-<a id="ch12-i3"></a>
-
-##### A. The marriage and adoption register
-
-In September 2044 Nam Kihun, the pastor of Myeongdong Cathedral, opened a register recording the marriages and adoptions of underground residents. The register''s first year recorded 340 marriages and 57 adoptions. Marriages and adoptions entered in the register were also recognized by the ration rosters of many facilities.
-
 
 ### 2046
 
@@ -889,7 +844,6 @@ On December 12, 2046, nine duty chiefs of the treatment center and five parts cu
 
 From around this time the family of the Yeongdeungpo center''s director was called ''the sluice house''. Starting volume 42 of the operations log, Han Seokjin entered his father''s date of death on the first line.
 
-
 ### 2048
 
 <a id="ch12-i4"></a>
@@ -905,7 +859,6 @@ In 2048 the services of the Samseong Station church and the dharma assemblies of
 
 In 2048 riverbank residents around Pyongyang repaired surviving ferry landings and parts of bridges because they could not restore every broken crossing. Markets across the river remained accessible, but each post charged differently for passage. Merchants sending loads south had to negotiate again at the next post; one passage agreement could not carry them all the way to Seoul.
 
-
 ### 2049
 
 <a id="ch14-i1"></a>
@@ -919,7 +872,6 @@ In April 2049 the houses of the Yeouido vault level roster collected the IOUs pi
 #### B. The demand for more water
 
 In May 2049 the Yeouido side demanded more water in place of payment for the parts. Han Seokjin extended the daily opening of the valves toward Yeouido from six hours to ten. The added four hours cut the ration at Yeongdeungpo-gu Office Station from two liters per person per day to 1.6.
-
 
 ### 2050
 
@@ -939,7 +891,6 @@ In September 2050 the Yeouido houses gave notice that they would stop lending pa
 
 ## Era 3 · Debt and collateral (2051–2070)
 
-
 ### 2051
 
 <a id="ch18-i1"></a>
@@ -948,7 +899,6 @@ In September 2050 the Yeouido houses gave notice that they would stop lending pa
 
 During the second generation humanoids could be used again on local networks. In June 2051 a chassis plant in Yangjae was run by the Jeong house under Jeong Mansu. The plant began reusing twelve field humanoids separated from the remote network, operated directly by people. Control ran through tethered controllers connected to their backs.
 
-
 ### 2052
 
 <a id="ch19-i1"></a>
@@ -956,7 +906,6 @@ During the second generation humanoids could be used again on local networks. In
 #### A. The Jeongdong Federation
 
 On November 2, 2052, some 380 underground workers of City Hall Station held a meeting in a building in Jeongdong. Every attendee cast one vote and elected Mun Jeonga chair. The assembly took the name Jeongdong Federation.
-
 
 ### 2053
 
@@ -984,7 +933,6 @@ On March 14, 2053, the Yeouido houses signed the agreement.
 
 From March 20, 2053, the Yeongdeungpo center side moved its base underground to Yangpyeong Station. The move took nine days. The forty-five volumes of the center''s operations log were moved to the underground stacks of Yangpyeong Station. The center''s equipment kept running.
 
-
 ### 2054
 
 <a id="ch16-i1"></a>
@@ -992,7 +940,6 @@ From March 20, 2053, the Yeongdeungpo center side moved its base underground to 
 #### A. Issue
 
 In May 2054 the Yeouido Investors'' Association issued certificates backed by the parts and chips in the vaults. The first issue was ten thousand certificates. Each certificate carried a serial number and the inventory number of the backing parts, and the seal of the issuing house was stamped on the back.
-
 
 ### 2055
 
@@ -1002,7 +949,6 @@ In May 2054 the Yeouido Investors'' Association issued certificates backed by th
 
 In February 2055 the water-supply side, now moved to Yangpyeong Station, formed a contract council from the representatives of the receiving houses. Nine houses in charge of four sluice gates, three reservoirs, and two depots held one vote each. The first meeting was held in the underground concourse of Yangpyeong Station.
 
-
 ### 2056
 
 <a id="ch17-i2"></a>
@@ -1010,7 +956,6 @@ In February 2055 the water-supply side, now moved to Yangpyeong Station, formed 
 #### A. The first vote
 
 In January 2056 Han Seokjin announced his retirement. The contract council elected his successor by vote. Han Doyun, son of Han Seokjin and grandson of Han Jeonghun, was elected with six of nine votes.
-
 
 ### 2057
 
@@ -1020,9 +965,7 @@ In January 2056 Han Seokjin announced his retirement. The contract council elect
 
 The certificates were first used in parts trading. In 2057 the Yongsan wagon fares and the Guro workshop wages were also paid in certificates. That year the certificates in circulation passed forty thousand.
 
-
 ### 2058
-
 
 #### Yeouido Investors'' Association
 
@@ -1031,7 +974,6 @@ The certificates were first used in parts trading. In 2057 the Yongsan wagon far
 ##### A. Counterfeits and appraisers
 
 In August 2058 seventeen counterfeit certificates were found at Guro, the first such discovery. The counterfeit inventory numbers pointed to parts that were not in the vaults. The Association appointed five people able to decipher the equipment manuals as appraisers to verify certificates. The appraisers checked inventory numbers against the vault ledgers.
-
 
 #### Taeuk Heavy Industries
 
@@ -1048,7 +990,6 @@ In September 2058 Jeong Mansu fixed the plant''s name as Taeuk Heavy Industries.
 
 In 2058 sailors and repair workers in Busan selected vessels they could maintain from those stranded in port and resumed coastal sailings. Different people had supplied labor and materials for each vessel, so no port representative could order every departure. Shipowners passed loads through several hands along the southern coast to trade with merchants heading toward Seoul and obtain materials for the next voyage.
 
-
 ### 2059
 
 <a id="ch19-i2"></a>
@@ -1056,7 +997,6 @@ In 2058 sailors and repair workers in Busan selected vessels they could maintain
 #### A. The first strike
 
 In April 2059 the Jeongdong Federation stopped work for three days against wages paid only in certificates at the Guro workshops. On the third day of the strike the Guro workshop heads agreed to pay one-third of wages in water.
-
 
 ### 2060
 
@@ -1066,7 +1006,6 @@ In April 2059 the Jeongdong Federation stopped work for three days against wages
 
 In January 2060 the representatives of the Association''s seven investing houses elected a chair for the first time. Choi Yeongsun of the Choi house, the largest stakeholder, was elected chair. The vote proceeded by share of stake.
 
-
 ### 2061
 
 <a id="ch19-i3"></a>
@@ -1074,7 +1013,6 @@ In January 2060 the representatives of the Association''s seven investing houses
 #### A. The presidential election
 
 In March 2061 the twenty-three duty houses of the Government Complex Seoul held a presidential election. Only houses that had held duty posts for generations could vote. Yun Jaegyeong of the record-keeping duty house won with thirteen votes. Yun Jaegyeong took office by confirming the original emergency order in the records safe.
-
 
 ### 2062
 
@@ -1084,7 +1022,6 @@ In March 2061 the twenty-three duty houses of the Government Complex Seoul held 
 
 In March 2062 Lee Sangchul of the Lee house, which managed the data-center building near Gangnam Station, signed a twenty-year lease on the server room keys with the Yeouido Investors'' Association. The rent was 3,000 certificates a year. Lee Sangchul posted the name Seongha Electronics on the building.
 
-
 ### 2063
 
 <a id="ch17-i3"></a>
@@ -1092,7 +1029,6 @@ In March 2062 Lee Sangchul of the Lee house, which managed the data-center build
 #### A. The proposal to renegotiate
 
 The 2063 vote elected Jo Minho, representative of a sluice-gate house. Jo Minho was the son of Jo Gyeongtaek, defeated in the 2046 vote. In July 2063 Jo Minho proposed to the Association that the Yeouido compact be rewritten, but Association chair Choi Yeongsun refused in writing.
-
 
 ### 2064
 
@@ -1109,9 +1045,7 @@ In May 2064 Jang Gitaek, transport chief of the Sinnae depot, began carrying the
 
 In 2064 residents near ports and railways around Hamhung and Chongjin passed freight and travelers along the short sections they maintained. Loads changed transport at each broken section, so a wagon and its contents could have different places of origin. Merchants sending goods toward Seoul had to find another carrier at every handoff; none could guarantee passage for the whole journey.
 
-
 ### 2066
-
 
 #### Taeuk Heavy Industries
 
@@ -1121,7 +1055,6 @@ In 2064 residents near ports and railways around Hamhung and Chongjin passed fre
 
 Jeong Mansu died in February 2066 and his eldest son Jeong Taehun took the chair of Taeuk Heavy Industries. In October the same year Lee Sangchul passed the chair of Seongha Electronics to his son Lee Junho.
 
-
 #### Jegi-dong
 
 <a id="ch20-i2"></a>
@@ -1129,7 +1062,6 @@ Jeong Mansu died in February 2066 and his eldest son Jeong Taehun took the chair
 ##### A. The white cross
 
 In March 2066 fourteen doctors of the Jegi-dong hospitals wore white cross markers and treated surface workers and underground residents alike. The doctors'' order of precedence was set by years of training. First director Gang Hyerin named her successor in writing.
-
 
 ### 2068
 
@@ -1146,9 +1078,7 @@ In October 2068 Yun Jaegyeong, records commissioner of the government complex, e
 
 In 2068 sailors repairing boats on Ulleungdo and people who had inherited the Dokdo watch records began rotating stays on Dokdo to receive seasonal reports from fishing vessels to the east. If boats carrying drinking water and repair materials stopped arriving, they withdrew personnel first. Returning watchkeepers passed landing and distress records to the next shift. The small post survived through supplies from Ulleungdo and the coast.
 
-
 ### 2069
-
 
 #### Government of the Republic of Korea
 
@@ -1158,7 +1088,6 @@ In 2068 sailors repairing boats on Ulleungdo and people who had inherited the Do
 
 In February 2069 the Government of the Republic of Korea drew up a roster of the residents of Jongno and Jung-gu around Gwanghwamun Station. The ration counter of the Government Complex Seoul issued food against that roster.
 
-
 #### Guui
 
 <a id="ch20-i3"></a>
@@ -1166,7 +1095,6 @@ In February 2069 the Government of the Republic of Korea drew up a roster of the
 ##### A. Guui''s two elected heads
 
 In June 2069 Guui elected Go Myeongchol commander of the gate guarding the Achasan direction, and Tak Hyeonwoo captain of the defense of the Guui Arisu Water Treatment Center. The two met once every June to settle water supply and passage. The first meeting''s results were drawn up in two documents, one kept by each.
-
 
 #### The temporary quarantine post on the Imjin embankment
 
@@ -1176,7 +1104,6 @@ In June 2069 Guui elected Go Myeongchol commander of the gate guarding the Achas
 
 In July 2069 the Anguk copying duty and the Gwanghwamun complex roster duty checked the return rosters together at the temporary quarantine post on the Imjin embankment. The Sinnae wagon duty wrote down separately the family waiting lists and the handover order of the medicine crates. The Gangnam escort duty took the transfer cars. The Guui gate commander''s side divided custody of the seal keys of the return-guidance terminals.
 
-
 #### The Amsa storage yard
 
 <a id="xt04-2069"></a>
@@ -1184,7 +1111,6 @@ In July 2069 the Anguk copying duty and the Gwanghwamun complex roster duty chec
 ##### Wagon weight inspection
 
 In August 2069 the Amsa guard duty checked the weight records of wagons arriving by the northeast bypass against their seals. The Sinnae wagon duty moved overloaded cars to the rear. The Gangnam duty wrote the winter fuel order. The Jegi-dong duty took the frostbite patients. The Guui gate commander''s side sealed traces of forged origin labels into evidence envelopes.
-
 
 #### Yeouido Hall
 
@@ -1194,9 +1120,7 @@ In August 2069 the Amsa guard duty checked the weight records of wagons arriving
 
 In September 2069 the rooftop duty of Yeouido Hall circulated the residual orbital slot numbers left at the Incheon window after the Great Blackout, to send them to the trust claim window. The Yeongdeungpo sluice duty compared the transmission and pump operating times. The Gwanghwamun government complex duty copied the hash of the handover inventories into the observer ledger. The City Hall labor duty checked the round sequence of the remittance records. The Yangjae plant duty screened false alarms from the orbital terminals. The Myeongdong priests drew up multilingual counseling tickets.
 
-
 ### 2070
-
 
 #### The Sluice
 
@@ -1205,7 +1129,6 @@ In September 2069 the rooftop duty of Yeouido Hall circulated the residual orbit
 ##### A. Rejected
 
 In April 2070 the contract council put a new compact for Yeouido to the vote a third time. Four in favor and five against, the motion failed. All five houses voting against held water mains running toward Yeouido.
-
 
 #### Government of the Republic of Korea
 
@@ -1219,7 +1142,6 @@ In September 2070 the complex standing guard corps drew up muster rolls for Gwan
 
 ## Era 4 · Three ways (2071–2090)
 
-
 ### 2071
 
 <a id="ch21-i1"></a>
@@ -1228,18 +1150,13 @@ In September 2070 the complex standing guard corps drew up muster rolls for Gwan
 
 In February 2071 Oh Seonggyu, moderator of the Samseong Station church, gathered some 120 men from the congregation roster and formed an organization to destroy the surface patrol drones. The organization was named the Holy War Assembly. Its first operation, in March 2071, was the destruction of two patrol drones in Yeoksam-dong.
 
-
 ### 2072
 
 <a id="ch22-i1"></a>
 
 #### A. Formation
 
-In April 2072 seven priests in charge of Myeongdong Cathedral''s marriage and adoption register formed the Orthodox Assembly. Its first president was the priest Seo Gyeongmin. The Orthodox Assembly entered as legitimate children only those born of marriages recorded in the register.
-
-
 ### 2073
-
 
 #### The Samseong Station church
 
@@ -1249,7 +1166,6 @@ In April 2072 seven priests in charge of Myeongdong Cathedral''s marriage and ad
 
 In May 2073 the Holy War Assembly sent forty men each to the Amsa guard corps and to Go Myeongchol, the Guui gate commander, and fought alongside them. Both allowed Holy War Assembly services inside their units. The commander of the Amsa guard corps was Bae Jinhyuk, eldest son of Bae Hyunsu.
 
-
 #### Anguk Order
 
 <a id="ch23-i1"></a>
@@ -1257,7 +1173,6 @@ In May 2073 the Holy War Assembly sent forty men each to the Amsa guard corps an
 ##### A. The name
 
 In August 2073 some forty monks copying manuals and scriptures at the Anguk Station dharma hall began using the name Sutra School. The mountain assembly elevated the dharma-name Hyean to abbot. The elevation was made by the consent of all monks present.
-
 
 ### 2074
 
@@ -1267,7 +1182,6 @@ In August 2073 some forty monks copying manuals and scriptures at the Anguk Stat
 
 In September 2074 Holy War Assembly men seized three shamans holding a gut on the surface at Nonhyeon-dong. The men burned the gut tools on the spot. The three shamans were released three days later.
 
-
 ### 2075
 
 <a id="ch22-i2"></a>
@@ -1275,7 +1189,6 @@ In September 2074 Holy War Assembly men seized three shamans holding a gut on th
 #### A. Entering the register
 
 From February 2075 the Yongsan track houses began having eldest-son successions confirmed in the Orthodox Assembly register. The Park house was the first confirmed. The same year the house of Jeong Taehun, chair of Taeuk Heavy Industries, also registered a marriage in the Orthodox Assembly register.
-
 
 ### 2076
 
@@ -1287,7 +1200,6 @@ In 2076 the sixteen states of Seoul were founded.
 
 Oh Seonggyu died in January 2076 and his son Oh Junhui succeeded to the moderatorship. Seventeen elders held a confirmation vote: fifteen in favor, two abstentions.
 
-
 ### 2077
 
 <a id="ch23-i2"></a>
@@ -1295,7 +1207,6 @@ Oh Seonggyu died in January 2076 and his son Oh Junhui succeeded to the moderato
 #### A. Training in copying
 
 In January 2077 the Yangpyeong Station contract council and the Guro workshop heads invited six Sutra School monks as decipherers of the equipment manuals. Some thirty technicians of the two places learned copying at the Anguk Station dharma hall. The training ran one year.
-
 
 ### 2078
 
@@ -1305,7 +1216,6 @@ In January 2077 the Yangpyeong Station contract council and the Guro workshop he
 
 The archbishop of Myeongdong died in November 2078. Twenty-three priests closed the sacristy door and met; after four rounds of voting over three days they elected Kwon Hyeokjae the new archbishop.
 
-
 ### 2079
 
 <a id="ch24-i1"></a>
@@ -1313,7 +1223,6 @@ The archbishop of Myeongdong died in November 2078. Twenty-three priests closed 
 #### A. Technical document inspection
 
 In October 2079, the Central Intelligence Bureau announced that it would inspect and preserve lost technical documents.
-
 
 #### The temporary wharf at the Han river mouth
 
@@ -1323,7 +1232,6 @@ In October 2079, the Central Intelligence Bureau announced that it would inspect
 
 In November 2079 the Yeongdeungpo sluice duty checked the tide tables of the temporary wharf at the Han river mouth against the drainage valve records. The Guro workshop duty wrote the order of compressor parts. The Yangjae plant duty quarantined crates whose hash had broken. The Heukseok duty of the Central Intelligence Bureau corrected the freezing order. The Yeouido Hall duty circulated the inspection sheets.
 
-
 #### The Yongsan transshipment shed
 
 <a id="xt03-2079"></a>
@@ -1332,18 +1240,7 @@ In November 2079 the Yeongdeungpo sluice duty checked the tide tables of the tem
 
 In December 2079 the Yongsan track duty received relay reports from three ways across the strait into the transshipment ledger. The City Hall labor duty listed the inland cars able to turn back. The Myeongdong priests sealed the confirmation envelopes. The Samseong church roster duty matched the consignees of sealed freight. The Heukseok duty of the Central Intelligence Bureau recorded separately the items whose interpreted terms differed.
 
-
 ### 2080
-
-
-#### Myeongdong Archdiocese
-
-<a id="ch22-i4"></a>
-
-##### A. Restricting inheritance claims
-
-In March 2080 the Orthodox Assembly announced that it would not accept inheritance claims by children born of marriages not entered in the register. The announcement was posted on the boards of Myeongdong Station and Yongsan Station.
-
 
 #### Central Intelligence Bureau
 
@@ -1353,16 +1250,6 @@ In March 2080 the Orthodox Assembly announced that it would not accept inheritan
 
 The Office''s director was selected by a ledger-reading examination. The first examination was held in February 2080 with forty-one candidates. The terminals in the Office''s basement graded the papers. Jin Seowoo, the top scorer, became the first director.
 
-
-#### Myeongdong Cathedral
-
-<a id="ch25-i1"></a>
-
-##### A. The gut
-
-Through the 2080s holding a gut on the night before work spread among surface workers. Park Sunrye, a shaman of Nonhyeon-dong, burned papers inscribed with the drones'' patrol routes and called the workers'' names. Park Sunrye held about twenty guts a month.
-
-
 ### 2082
 
 <a id="ch23-i3"></a>
@@ -1370,7 +1257,6 @@ Through the 2080s holding a gut on the night before work spread among surface wo
 #### A. The Holy War Assembly''s exclusion
 
 In June 2082 the Holy War Assembly gave notice that it would not admit technicians using Sutra School copies at the Amsa and Guui gates. The notice was signed by moderator Oh Junhui.
-
 
 ### 2084
 
@@ -1380,7 +1266,6 @@ In June 2082 the Holy War Assembly gave notice that it would not admit technicia
 
 In 2084 nine graduates of the Office''s examination found posts with the Yangpyeong Station contract council and the Guro workshops. Four of them were technicians who had learned copying in the Sutra School dharma hall.
 
-
 ### 2085
 
 <a id="ch25-i2"></a>
@@ -1388,7 +1273,6 @@ In 2084 nine graduates of the Office''s examination found posts with the Yangpye
 #### A. The crackdown
 
 From April 2085 the Holy War Assembly began seizing workers carrying gut tools at the Amsa and Guui gates. Twelve were seized in the first month. The names of seized workers were struck from the gate passage rosters.
-
 
 ### 2087
 
@@ -1399,7 +1283,6 @@ From April 2085 the Holy War Assembly began seizing workers carrying gut tools a
 
 In 2087 some producers in Honam refused contracts when a Seoul merchant arriving by the Yellow Sea tried to buy up the following year’s grain in advance. Shipowners divided the better-paying Seoul cargo from food that had to remain in the villages. Seoul merchants could no longer secure their desired volume through a single port and had to negotiate prices with individual producers.
 
-
 ### 2088
 
 <a id="ch24-i4"></a>
@@ -1407,7 +1290,6 @@ In 2087 some producers in Honam refused contracts when a Seoul merchant arriving
 #### A. Inspection of the copies delegated
 
 In May 2088 the Office asked to take over inspection of the Sutra School hall''s copies. The mountain assembly accepted. Some 1,200 volumes were moved to Heukseok and returned after inspection.
-
 
 ### 2090
 
@@ -1421,7 +1303,6 @@ As of 2090 the Amsa guard corps, the Guui gate, and Seongha Electronics at Gangn
 
 ## Era 5 · The age of the line ends (2091–2110)
 
-
 ### 2095
 
 <a id="ch26-i4"></a>
@@ -1429,7 +1310,6 @@ As of 2090 the Amsa guard corps, the Guui gate, and Seongha Electronics at Gangn
 #### A. Workshops and computing buildings
 
 In May 2095, Taeuk Group comprised Taeuk Heavy Industries and eleven workshops. Seongha Group held four computing buildings around Seongha Electronics.
-
 
 ### 2097
 
@@ -1439,7 +1319,6 @@ In May 2095, Taeuk Group comprised Taeuk Heavy Industries and eleven workshops. 
 
 In June 2097 the Sluice contracted with the waterway crews of Yangpyeong and Chuncheon. The Yangpyeong side had 34 representatives and the Chuncheon side 51. The Sluice named the two First Sluice and Second Sluice. In exchange for managing the Sluice''s waterways, the two were listed on the Yangpyeong Station ration roster.
 
-
 ### 2098
 
 <a id="ch28-i1"></a>
@@ -1447,7 +1326,6 @@ In June 2097 the Sluice contracted with the waterway crews of Yangpyeong and Chu
 #### A. The security districts
 
 In September 2098 the Eastern Command organized its surface strongholds at Hanam, Namyangju, and Uijeongbu and Yeoncheon into the First, Second, and Third Security Districts. Each district sent troops to Amsa twice a year, in spring and autumn.
-
 
 ### 2099
 
@@ -1464,7 +1342,6 @@ In March 2099 a demand arose at Chuncheon to use the old city name in place of S
 
 After the March 2099 refusal of their demand to use the city name, boat crews and market traders in Chuncheon continued putting Chuncheon on their goods and signs. The waterway contract signed with the Sluice in 2097 remained in force, but its name did not govern everyday usage. Merchants from Seoul learned that Second Sluice in the contract and Chuncheon in the market referred to the same post.
 
-
 ### 2100
 
 <a id="ch29-i1"></a>
@@ -1472,7 +1349,6 @@ After the March 2099 refusal of their demand to use the city name, boat crews an
 #### A. The termini
 
 In July 2100 the Junction designated the strongholds at the ends of the tracks at Incheon and Paju as First Terminus and Second Terminus and levied a toll. The toll was taken in certificates, by weight of freight.
-
 
 ### 2101
 
@@ -1482,9 +1358,7 @@ In July 2100 the Junction designated the strongholds at the ends of the tracks a
 
 In March 2101 the Taeuk Group named its factory strongholds at Seongnam and Suwon the Taeuk Heavy Industries Seongnam Works and Suwon Works. The two works sent parts and workers to Yangjae over the Sinbundang Line tracks. In its first year the Seongnam Works had about 1,400 workers.
 
-
 ### 2102
-
 
 #### The Gauge
 
@@ -1494,7 +1368,6 @@ In March 2101 the Taeuk Group named its factory strongholds at Seongnam and Suwo
 
 In April 2102 the Gauge incorporated the workshops of Cheonan and Asan and of Siheung as the First Branch Workshop and the Second Branch Workshop. The First Branch Workshop was ruled by the Lee house of Cheonan and Asan. The branch workshops sent parts made to the standards on to Guro.
 
-
 #### First Branch Workshop
 
 <a id="ch42-i1"></a>
@@ -1502,7 +1375,6 @@ In April 2102 the Gauge incorporated the workshops of Cheonan and Asan and of Si
 ##### A. The Lee house
 
 The First Branch Workshop was incorporated into the Gauge in 2102. Thereafter the Lee house of Cheonan and Asan ruled it as a vassal. The house managed the Line 1 southern depot and four workshops. Lee Ilseop was the house''s heir.
-
 
 ### 2104
 
@@ -1512,7 +1384,6 @@ The First Branch Workshop was incorporated into the Gauge in 2102. Thereafter th
 
 In October 2104 the Yeouido Investors'' Association opened a branch at Yeongjong, the end of the airport railroad. The Yeongjong branch exchanged outside trade payments into Association certificates and took three percent as commission.
 
-
 #### The temporary quarantine post on the Imjin embankment
 
 <a id="xt01-2104"></a>
@@ -1521,10 +1392,7 @@ In October 2104 the Yeouido Investors'' Association opened a branch at Yeongjong
 
 In November 2104 return rosters received at the temporary quarantine post on the Imjin embankment from the north were damaged by rain. The Anguk Order took charge of reissuing the damaged lines. The Government of the Republic of Korea''s Gwanghwamun duty checked the authenticity of the kinship certificates submitted. The Achasan Gate''s Guui gate duty divided custody of the seal keys. Sinnae Transport moved the transfer car for the family waiting lists. The Seongha Group assigned a separate car for escorting medicines.
 
-
 ### 2106
-
-In 2106 battles took place within each bloc that would later form the three states. The Gauge, the Central Intelligence Bureau, Taeuk Group, Seongha Group, Sinnae Transport and the White Cross formed one bloc. The Government of the Republic of Korea, the Sluice, Eastern Command, Achasan Gate, the Junction, Yeouido Investors’ Association and Jeongdong Federation formed another. Myeongbu Church, the Anguk Order and Myeongdong Archdiocese formed the religious-union bloc.
 
 <a id="ch29-i4"></a>
 
@@ -1538,7 +1406,6 @@ In January 2106 the Government of the Republic of Korea styled its administrativ
 
 In June 2106 the Government of the Republic of Korea required the passes of Jongno and Jung-gu to carry the Government Complex Seoul stamp. Commercial contracts in Jongno and Jung-gu were entered in the records office only if stamped. Passes and contracts carried stamp taxes.
 
-
 ### 2107
 
 <a id="ch30-i1"></a>
@@ -1547,7 +1414,6 @@ In June 2106 the Government of the Republic of Korea required the passes of Jong
 
 In August 2107 an armed clash broke out between the Eastern Command and the Achasan Gate over the Guui water supply. The clash ran two days, with some forty casualties on both sides. Six Sinnae Transport wagons carried the injured of both sides to Jegi-dong, and the White Cross treated them.
 
-
 ### 2109
 
 <a id="ch30-i2"></a>
@@ -1555,7 +1421,6 @@ In August 2107 an armed clash broke out between the Eastern Command and the Acha
 #### A. The pledge
 
 In February 2109 the house of Sinnae Transport''s president drew up again its pledge never to choose between freight, whatever the fighting. The pledge hung in the Sinnae Station concourse.
-
 
 ### 2110
 
@@ -1569,7 +1434,6 @@ In December 2110 the names of all sixteen states and thirteen strongholds were e
 
 ## Era 6 · The eve of the opening (2111–2126)
 
-
 ### 2111
 
 <a id="ch30-i4"></a>
@@ -1577,7 +1441,6 @@ In December 2110 the names of all sixteen states and thirteen strongholds were e
 #### A. Successions and treaties
 
 In March 2111 the Sluice, the Eastern Command, the Achasan Gate, the Junction, Sinnae Transport, the Gauge, and the White Cross submitted originals of their heads'' successions and their treaties to the records office. The records office returned stamped copies to each state.
-
 
 ### 2112
 
@@ -1611,18 +1474,11 @@ The shareholders'' meeting convened on April 28, 2112. Of the forty-three shareh
 
 In October 2112 the revised Jeong clan genealogy entered Jeong Seoon''s name without the generation character. The eleven men of her generation were all entered with names carrying the generation character.
 
-
 ### 2113
 
 <a id="ch40-i1"></a>
 
-#### A. Archbishop Nam Yungyeong
-
-In 2113 the priests of the Myeongdong Archdiocese elected Nam Yungyeong archbishop by private ballot.
-
-
 ### 2114
-
 
 #### Taeuk Group
 
@@ -1636,9 +1492,6 @@ In February 2114 the Taeuk Group asked the Orthodox Assembly to confirm that Jeo
 
 ##### B. The cadet branch calls
 
-In May 2114 three representatives of the Jeong cadet branches visited the Myeongdong Archdiocese. The visit remained in the archdiocese''s reception ledger.
-
-
 #### Seongha Group
 
 <a id="ch40-i2"></a>
@@ -1646,7 +1499,6 @@ In May 2114 three representatives of the Jeong cadet branches visited the Myeong
 ##### A. Chair Lee Hongwon
 
 The chair of the Seongha Group died in 2114. A succession examination opened among the heirs of the Lee house. Lee Hongwon took the chair.
-
 
 #### The temporary wharf at the Han river mouth
 
@@ -1656,7 +1508,6 @@ The chair of the Seongha Group died in 2114. A succession examination opened amo
 
 In June 2114 the freezer compressors used for freight storage at the temporary wharf at the Han river mouth stopped for a week. The Gauge changed the order for issuing replacement parts at Guro. The Central Intelligence Bureau''s Heukseok duty corrected the freezing order. The Sluice''s Yeongdeungpo duty compared the running hours of the drainage windows. The Taeuk Group quarantined crates with damaged seal hashes. The Yeouido Investors'' Association circulated a hold on receiving frozen freight.
 
-
 #### The Amsa storage yard
 
 <a id="xt04-2114"></a>
@@ -1664,7 +1515,6 @@ In June 2114 the freezer compressors used for freight storage at the temporary w
 ##### Reinspection of the weighted cars
 
 In October 2114 the Eastern Command''s Amsa duty reinspected those wagons from the northeast bypass whose recorded weights differed from the weights on their seals. Sinnae Transport moved those cars'' transfer order. The Seongha Group rewrote the collection order for the winter fuel drums. The White Cross''s Jegi-dong duty confirmed the car for carrying frostbite patients. The Achasan Gate sealed forged origin labels from the wagons into evidence envelopes.
-
 
 ### 2115
 
@@ -1674,10 +1524,7 @@ In October 2114 the Eastern Command''s Amsa duty reinspected those wagons from t
 
 In 2115 the Achasan Gate elected Go Seojun gate commander. In July 2116 the Eastern Command sent the Achasan Gate a document placing the Guui Defense Unit under Eastern Command. Go Seojun and Tak Seoyun, captain of the Guui Defense Unit, each sent letters of refusal.
 
-
 ### 2116
-
-In 2116 three states were established: the Gauge, the Government of the Republic of Korea and the religious union. The Gauge became hegemon over Taeuk Group, Seongha Group, Sinnae Transport and the White Cross. The Government became hegemon over the Sluice, Eastern Command, Achasan Gate, the Junction, Yeouido Investors’ Association and Jeongdong Federation. The religious union retained Myeongbu Church, the Anguk Order and Myeongdong Archdiocese without choosing a single head. Existing rulers and offices survived as vassals. The Central Intelligence Bureau’s existing territory passed to the Gauge. The Central Intelligence Bureau retained its neutrality dating from 2030. Its AI continued leading the organization through changing avatars; its current avatar O Haerin is based at Namsan Tower.
 
 <a id="ch40-i3"></a>
 
@@ -1685,9 +1532,7 @@ In 2116 three states were established: the Gauge, the Government of the Republic
 
 In 2116 the director of the White Cross named Ryu Eunbi her successor.
 
-
 ### 2117
-
 
 #### Taeuk Group
 
@@ -1697,7 +1542,6 @@ In 2116 the director of the White Cross named Ryu Eunbi her successor.
 
 In September 2117 a letter arrived at Yangjae proposing a marriage between Park Taegyeom, eldest son of the Junction''s Park track house, and Jeong Seoon. The letter carried the names of the head of the Park house and four elders of the Jeong clan. Jeong Seoon did not answer it.
 
-
 #### Eastern Command
 
 <a id="ch36-i1"></a>
@@ -1706,9 +1550,7 @@ In September 2117 a letter arrived at Yangjae proposing a marriage between Park 
 
 The commander of the Eastern Command died in 2117. The chief of staff held emergency supervision for a year. In 2118 his eldest son Bae Woojin took office as commander.
 
-
 ### 2118
-
 
 #### Central Intelligence Bureau
 
@@ -1717,7 +1559,6 @@ The commander of the Eastern Command died in 2117. The chief of staff held emerg
 ##### A. Monopoly of the top places
 
 Eighty-eight candidates sat the Central Intelligence Bureau director''s examination in February 2118. Technicians of Sluice and Gauge stock took all of the top ten places.
-
 
 #### Sinnae Transport
 
@@ -1734,9 +1575,7 @@ The president of Sinnae Transport died in 2118. Jang Sehwa took the presidency.
 
 In 2118 shipowners around Busan hired escorts to recover vessels and people seized in the strait. Some Tsushima sailors who had lost access to a port supplied landing information, allowing the expedition to land at that port. The escorts broke its defensive position and recovered ships, but the shipowners and local collaborators understood the promised shares of recovered goods differently.
 
-
 ### 2119
-
 
 #### Central Intelligence Bureau
 
@@ -1745,7 +1584,6 @@ In 2118 shipowners around Busan hired escorts to recover vessels and people seiz
 ##### A. Director Oh Haerin
 
 In the February 2119 director''s examination Oh Haerin, keeper of the keys of the Noryangjin freezer warehouse, took first place. Oh Haerin took office as director of the Office on March 1, 2119.
-
 
 #### The Sluice
 
@@ -1761,7 +1599,6 @@ In 2119 the Sluice''s contract council elected Han Jaemok head of the Sluice.
 
 The same year Han Jaemok appointed I Seodam chief of the Yangcheon district, and the procedure of collecting the ration-district representatives'' joint signatures before opening the sluice gates entered the Sluice''s regulations.
 
-
 #### Myeongbu Church
 
 <a id="ch37-i1"></a>
@@ -1770,7 +1607,6 @@ The same year Han Jaemok appointed I Seodam chief of the Yangcheon district, and
 
 The moderator of the Myeongbu Church died in 2119. O Gyeongjae, eldest legitimate son of the O house, was a minor. The elders seated Im Hajun as moderator by confirmation vote.
 
-
 #### Shin Jongmok
 
 <a id="ch43-i1"></a>
@@ -1778,7 +1614,6 @@ The moderator of the Myeongbu Church died in 2119. O Gyeongjae, eldest legitimat
 ##### A. The last operation
 
 In November 2119 Shin Jongmok, senior operative of the Eastern Command special recovery unit, returned from his last recovery operation bringing refugees from outside the rosters. His return report recorded disobedience of orders and loss of issued supplies. Some members who held the retreat line were listed as missing.
-
 
 #### Ji Yeonhee
 
@@ -1795,9 +1630,7 @@ In the winter of 2119 Ji Yeonhee fled in from the outskirts of Seoul.
 
 In 2119 the victorious shipowners and commanders split over whether to keep the port. Short of materials and workers to repair damaged vessels, the main force returned to the peninsula. Collaborators left on the island disputed the remaining ships and trade promises. Returnees announced a victorious expedition, but no lasting occupation followed, and people carrying recovered goods made competing claims to shares.
 
-
 ### 2120
-
 
 #### Eastern Command
 
@@ -1807,7 +1640,6 @@ In 2119 the victorious shipowners and commanders split over whether to keep the 
 
 In the winter of 2120 the Eastern Command demanded a register of restoration-service workers from the Gauge as the price of pump parts. Gang Minseo of the Gauge listed the technicians who refused registration on the Gauge citizenship roster. In 2121 the Gauge council elected Gang Minseo chair.
 
-
 #### Yeouido Investors'' Association
 
 <a id="ch38-i1"></a>
@@ -1815,7 +1647,6 @@ In the winter of 2120 the Eastern Command demanded a register of restoration-ser
 ##### A. Chair Choi Jiwoo
 
 In 2120 the investing houses of the Yeouido Investors'' Association elected Choi Jiwoo chair.
-
 
 #### Shin Jongmok
 
@@ -1831,7 +1662,6 @@ From 2120 Shin Jongmok transmitted the special recovery unit''s call sign over a
 
 In April 2120 Shin Jongmok left the special recovery unit. He moved his quarters to the Gangnam-gu Office living sphere with the boy Shin Jun and took escort and scouting contracts.
 
-
 #### Suseo depot
 
 <a id="ch44-i1"></a>
@@ -1839,7 +1669,6 @@ In April 2120 Shin Jongmok left the special recovery unit. He moved his quarters
 ##### A. Suseo
 
 The Suseo depot belonged to no state after 2080. In the 2120s Goh Yejin worked there as an adviser on contracts between spheres.
-
 
 #### Ji Yeonhee
 
@@ -1855,7 +1684,6 @@ In January 2120 Ji Yeonhee contracted with an information organization. The orga
 
 The same year Ji Yeonhee registered as an independent courier at a transfer station on the border of spheres.
 
-
 #### Jeongdong Federation
 
 <a id="ch47-i1"></a>
@@ -1864,9 +1692,7 @@ The same year Ji Yeonhee registered as an independent courier at a transfer stat
 
 In the Jeongdong Federation''s direct vote of 2120 Jeong Yura was elected chair.
 
-
 ### 2121
-
 
 #### Achasan Gate
 
@@ -1875,7 +1701,6 @@ In the Jeongdong Federation''s direct vote of 2120 Jeong Yura was elected chair.
 ##### A. The standoff
 
 On March 2, 2121, some four hundred Eastern Command troops encamped before the Achasan gate. More than half were strength of the Third Security District. On March 5, 2121, Go Seojun and Tak Seoyun together signed an order placing the gate''s and the treatment center''s people under a single command.
-
 
 #### Government of the Republic of Korea
 
@@ -1889,9 +1714,6 @@ In the 2121 election of the Government Complex Seoul duty houses Yun Seorin was 
 
 ##### B. The three downtown bodies
 
-In June 2121 the Myeongdong Archdiocese, the Anguk Order, and the Jeongdong Federation renewed the complex stamps on the Jongno and Jung-gu passes. The three bodies drew up the rosters for the downtown ration counter in records office forms.
-
-
 #### First Branch Workshop
 
 <a id="ch42-i2"></a>
@@ -1899,7 +1721,6 @@ In June 2121 the Myeongdong Archdiocese, the Anguk Order, and the Jeongdong Fede
 ##### A. The depot field
 
 In April 2121 Lee Ilseop turned about 1,200 square meters of empty ground beside the storage tracks of the Line 1 southern depot into a field. Thirty workshop families shared the field work. The first year''s crops were potatoes and beans.
-
 
 #### Jo Jaepyo''s party
 
@@ -1909,9 +1730,7 @@ In April 2121 Lee Ilseop turned about 1,200 square meters of empty ground beside
 
 In February 2121 Jo Jaepyo came into Seoul from northern Gyeonggi. The same year he began taking contracts to guide and escort travelers along stations and corridors.
 
-
 ### 2122
-
 
 #### Central Intelligence Bureau
 
@@ -1921,7 +1740,6 @@ In February 2121 Jo Jaepyo came into Seoul from northern Gyeonggi. The same year
 
 In 2122 six technicians who had passed the examination were appointed clerks of the Sluice''s contract council and the Gauge''s council. The clerks wrote the minutes and the voting records.
 
-
 #### Anguk Order
 
 <a id="ch36-i4"></a>
@@ -1930,7 +1748,6 @@ In 2122 six technicians who had passed the examination were appointed clerks of 
 
 In 2122 the Anguk Order''s mountain assembly elevated Baek On abbot. In 2123 the columns of refugees from the Bukhansan Bogukmun side came down to Anguk.
 
-
 #### The Junction
 
 <a id="ch39-i2"></a>
@@ -1938,7 +1755,6 @@ In 2122 the Anguk Order''s mountain assembly elevated Baek On abbot. In 2123 the
 ##### A. Stationmaster Park Taegyeom
 
 The head of the Junction''s track house died in 2122. His eldest son Park Taegyeom succeeded as stationmaster.
-
 
 #### Government of the Republic of Korea
 
@@ -1966,18 +1782,13 @@ In July 2122 President Yun Seorin ordered the Onmin Council''s document entered 
 
 In August 2122 the Onmin Council submitted to President Yun Seorin a proposal to send the complex guard corps to the Sluice''s border. The guard corps'' duty houses submitted muster rolls for Gwanghwamun, Jongno, and Jung-gu. Yun Seorin did not sign the corps deployment proposal.
 
-
 #### Yeouido Hall
 
 <a id="xt05-2122"></a>
 
 ##### The residual-band lottery
 
-In September 2122 the Yeouido Investors'' Association held a single drawing at Yeouido Hall for the residual bands to be allotted to the unnamed Incheon trust claim window. The Sluice''s Yeongdeungpo duty adjusted the pump hours to the drawing time. The Government of the Republic of Korea''s Gwanghwamun duty wrote the hash of the handover inventories into the observer ledger. The Jeongdong Federation''s City Hall duty checked the round sequence of the remittance records. The Taeuk Group''s Yangjae duty separated the false-alarm records of the orbital terminals. The Myeongdong Archdiocese renewed the multilingual counseling tickets.
-
-
 ### 2123
-
 
 #### Achasan Gate
 
@@ -1987,7 +1798,6 @@ In September 2122 the Yeouido Investors'' Association held a single drawing at Y
 
 In February 2123 the Eastern Command troops withdrew.
 
-
 #### Eastern Command
 
 <a id="ch36-i3"></a>
@@ -1996,7 +1806,6 @@ In February 2123 the Eastern Command troops withdrew.
 
 In 2123 the Eastern Command sent the pump-part crates together with the register of restoration-service workers. Gang Minseo returned the crates under seal. Bae Woojin put the register in the Eastern Command military affairs document box.
 
-
 #### Yeouido Investors'' Association
 
 <a id="ch38-i3"></a>
@@ -2004,7 +1813,6 @@ In 2123 the Eastern Command sent the pump-part crates together with the register
 ##### A. The bulletins stop
 
 The day before the refugee columns came down from the Bukhansan Bogukmun side in 2123, Choi Jiwoo stopped the Association channel''s bulletins. The channel put out only the refugee rosters.
-
 
 #### Government of the Republic of Korea
 
@@ -2026,7 +1834,6 @@ In April 2123 three groups of duty houses each submitted plans for dividing the 
 
 In June 2123 the Onmin Council demanded that the Sluice submit a renewed declaration of obedience to the emergency order. The Sluice did not sign the declaration. The Junction, Sinnae Transport, the Gauge, and the White Cross suspended their entries of successions and treaties with the records office. The Eastern Command and the Achasan Gate kept registering successions and treaties. Yun Seorin withdrew the demand.
 
-
 #### First Branch Workshop
 
 <a id="ch42-i3"></a>
@@ -2041,7 +1848,6 @@ In October 2123 Lee Ilseop counted the workshop warehouse''s grain three times a
 
 In November 2123 Lee Ilseop attended the Gauge council at Guro for the first time as representative of the First Branch Workshop. The council gave the workshop representative voice only. Lee Ilseop proposed taking part of the workshop''s parts payment in seed instead of certificates. Chair Gang Minseo accepted paying one-fifth of the payment in seed.
 
-
 #### Jo Jaepyo''s party
 
 <a id="ch45-i2"></a>
@@ -2049,7 +1855,6 @@ In November 2123 Lee Ilseop attended the Gauge council at Guro for the first tim
 ##### A. I Yeon joins
 
 In May 2123 I Yeon joined Jo Jaepyo''s party as attending courier. I Yeon signed the scouting and escort reports in her own name.
-
 
 #### Jeongdong Federation
 
@@ -2059,9 +1864,7 @@ In May 2123 I Yeon joined Jo Jaepyo''s party as attending courier. I Yeon signed
 
 In 2123 the Sluice, the Gauge, and the Junction sent different water, parts, and passage contracts to the weak states in the same week. Jeong Yura copied only the closing conditions of the three contracts into one document. The document Jeong Yura transcribed became the basic document of the weak states'' assembly.
 
-
 ### 2124
-
 
 #### The Junction
 
@@ -2077,7 +1880,6 @@ In 2124 Im Hajun''s pump train stopped at the Yongsan warehouse. Before drawing 
 
 In 2124 Go Seojun, gate commander of the Achasan Gate, made passage over the Achasan ridge subject to permits.
 
-
 #### White Cross
 
 <a id="ch40-i4"></a>
@@ -2090,9 +1892,6 @@ In 2124 a box of counterfeit medicine came up at the Seoul Station auction. Ryu 
 
 ##### B. The emergency rations
 
-In 2124 Nam Yungyeong opened the Myeongdong Archdiocese''s emergency-ration car. The public auction was put off one day.
-
-
 #### The records office
 
 <a id="ch41-i4"></a>
@@ -2100,7 +1899,6 @@ In 2124 Nam Yungyeong opened the Myeongdong Archdiocese''s emergency-ration car.
 ##### A. Checking the Gyeonggi rosters
 
 In March 2124 Kim Yeongyu proposed checking the conscription roster of Gyeonggi (Goyang) against the complex records office roster. The check found about 1,100 of the roster''s 2,900 names matching the complex roster.
-
 
 #### First Branch Workshop
 
@@ -2116,7 +1914,6 @@ In the autumn of 2124 the field''s harvest was divided among the 480 residents o
 
 In July 2124 a drought cut the workshop''s water. The house elders proposed turning the water given the field into cooling water for the workshops. Lee Ilseop refused to seal the document cutting the field''s water supply. The workshops'' running hours fell by two hours a day.
 
-
 #### The return net
 
 <a id="ch43-i4"></a>
@@ -2124,7 +1921,6 @@ In July 2124 a drought cut the workshop''s water. The house elders proposed turn
 ##### A. Expansion
 
 In 2124 the return net joined twelve living spheres from Gangnam-gu Office to Seolleung and Suseo.
-
 
 #### Jeongdong Federation
 
@@ -2141,9 +1937,7 @@ In 2124 the workers of the Taeuk Heavy Industries Seongnam Works and the Gauge''
 
 In 2124 a sailor arriving from the east coast reported a living watch post on Dokdo, helped by sailors who had not returned to their former shipowners. Seoul merchants and contact workers withheld its location and identities while awaiting news from other returnees. Reports carried back from the east coast still had to wait for the next contact shift in Seoul.
 
-
 ### 2125
-
 
 #### Central Intelligence Bureau
 
@@ -2153,7 +1947,6 @@ In 2124 a sailor arriving from the east coast reported a living watch post on Do
 
 In September 2125 the Anguk Order''s mountain assembly recorded its first dissent from the Office''s inspection results for the copies. The dissent was that the English commands of fourteen volumes had changed after inspection.
 
-
 #### The Sluice
 
 <a id="ch35-i3"></a>
@@ -2161,7 +1954,6 @@ In September 2125 the Anguk Order''s mountain assembly recorded its first dissen
 ##### A. Turbidity over the limit
 
 In the autumn of 2125 turbidity in the western mains passed the standard. Park Nuri, the purification supervisor, closed the western main valves. Han Jaemok withheld his signature from the document restarting supply. On the ground of that withholding I Seodam claimed Yangcheon''s veto at the contract council.
-
 
 #### Myeongbu Church
 
@@ -2183,7 +1975,6 @@ At the next shift Im Chowon, Im Hajun''s adopted child, confirmed the seal of th
 
 Yun Seorin, president of the Government of the Republic of Korea, withheld approval of the will. Yun Seorin confirmed only the seal of the box.
 
-
 #### Sinnae Transport
 
 <a id="ch39-i5"></a>
@@ -2191,7 +1982,6 @@ Yun Seorin, president of the Government of the Republic of Korea, withheld appro
 ##### A. The dispatch sheet''s seasonal change
 
 Ahead of the 2125 smaller-states council convoy, Jang Sehwa assigned separate seasonal departure times to ordinary and medical trains.
-
 
 #### First Branch Workshop
 
@@ -2201,7 +1991,6 @@ Ahead of the 2125 smaller-states council convoy, Jang Sehwa assigned separate se
 
 In the autumn of 2125 the Second Branch Workshop stopped work together with the Seongnam Works. The First Branch Workshop kept working. In that period the forty sacks of seed the First Branch Workshop took as parts payment went to the depot field.
 
-
 #### Suseo depot
 
 <a id="ch44-i2"></a>
@@ -2210,7 +1999,6 @@ In the autumn of 2125 the Second Branch Workshop stopped work together with the 
 
 Three merchant houses bid in the Yongsan transshipment contract tender of March 2125. The contract went to one of them. Junction stationmaster Park Taegyeom signed the contract.
 
-
 #### Jo Jaepyo''s party
 
 <a id="ch45-i3"></a>
@@ -2218,7 +2006,6 @@ Three merchant houses bid in the Yongsan transshipment contract tender of March 
 ##### A. Three states'' requests
 
 In the winter of 2125 three states asked Jo Jaepyo''s party at the same time to escort the same passage.
-
 
 #### Jeongdong Federation
 
@@ -2232,14 +2019,11 @@ In the Jeongdong Federation chair''s direct vote of spring 2125 Jeong Yura was r
 
 ##### B. The ledger of strength
 
-In November 2125 the records office drew up a ledger of the strength of the sixteen states. In the column of major powers it entered the Government of the Republic of Korea, the Sluice, the Gauge, the Junction, the Eastern Command, and the Taeuk Group. In the column of lever powers it entered the Yeouido Investors'' Association, the White Cross, the Achasan Gate, and Sinnae Transport. In the column of minor powers it entered the Myeongbu Church, the Myeongdong Archdiocese, the Anguk Order, the Seongha Group, the Central Intelligence Bureau, and the Jeongdong Federation.
-
 <a id="ch47-i6"></a>
 
 ##### C. The downtown guard
 
 In December 2125 the Sluice, the Gauge, the Junction, the Eastern Command, and the Taeuk Group submitted documents to the records office mustering their own and their vassals'' troops. The complex guard corps kept the rotating guard at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga.
-
 
 #### The Government Complex Seoul at Gwanghwamun
 
@@ -2255,7 +2039,6 @@ In December 2125 the Government of the Republic of Korea''s Gwanghwamun duty mov
 #### Seoul · Confirmation of the Dokdo watch
 
 In 2125 people returning by different routes identified matching damage on objects received at the post and in its landing records. A small circle of contact workers in Seoul judged the Dokdo group to be real, but checked each sailor’s affiliation and wishes about returning separately. They kept routes and names from wider circulation and sought people who could deliver letters to those concerned.
-
 
 ### 2126
 
@@ -2742,16 +2525,6 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 
 2044년 박문학이 사망하자 장남 박영도가 운행표를 이어받았다. 나머지 6개 가문은 박영도의 운행표를 그대로 따랐다.
 
-<a id="2044년-명동성당"></a>
-
-#### 명동성당
-
-<a id="ch12-i3"></a>
-
-##### 가. 혼인·입양 대장
-
-2044년 9월 명동성당 주임 사제 남기훈은 지하 거주자들의 혼인과 입양을 기록하는 대장을 만들었다. 첫해 대장에는 혼인 340건과 입양 57건이 기재되었다. 대장에 기재된 혼인과 입양은 여러 시설의 배급 명부에서도 인정되었다.
-
 ### 2046년
 
 <a id="ch13-i1"></a>
@@ -3106,8 +2879,6 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 
 #### 가. 결성
 
-2072년 4월 명동성당 혼인·입양 대장을 맡은 사제 7명이 정통회를 결성하였다. 초대 회장은 사제 서경민이었다. 정통회는 대장에 기재된 혼인에서 출생한 자녀만 적자로 기재하였다.
-
 ### 2073년
 
 <a id="2073년-삼성역-교회"></a>
@@ -3168,10 +2939,6 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 
 <a id="ch22-i3"></a>
 
-#### 가. 대교구장 선출
-
-2078년 11월 명동 대주교가 사망하였다. 사제 23명이 성당 제의실 문을 닫고 모여 사흘 동안 네 차례 투표한 끝에 권혁재를 새 대주교로 선출하였다.
-
 ### 2079년
 
 <a id="ch24-i1"></a>
@@ -3202,18 +2969,6 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 
 ### 2080년
 
-<a id="2080년-명동대교구"></a>
-
-#### 명동대교구
-
-<a id="ch22-i4"></a>
-
-##### 가. 상속 청구 제한
-
-2080년 3월 정통회는 대장에 기재되지 않은 혼인에서 출생한 자녀의 상속 청구를 받지 않는다고 발표하였다. 발표문은 명동역 게시판과 용산역 게시판에 붙었다.
-
-<a id="2080년-중앙정보부"></a>
-
 #### 중앙정보부
 
 <a id="ch24-i2"></a>
@@ -3221,16 +2976,6 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 ##### 가. 원장 시험
 
 보존원 원장은 장부 판독 시험으로 선발되었다. 첫 시험은 2080년 2월 치러졌으며 응시자는 41명이었다. 시험지는 보존원 지하의 단말기가 채점하였다. 수석 진서우가 초대 원장이 되었다.
-
-<a id="2080년-명동성당"></a>
-
-#### 명동성당
-
-<a id="ch25-i1"></a>
-
-##### 가. 굿
-
-2080년대 지상 작업자 사이에서 작업 전날 밤 굿을 하는 일이 늘었다. 논현동 무당 박순례는 기체의 순찰 경로를 적은 종이를 태우며 작업자의 이름을 불렀다. 박순례의 굿은 한 달에 20회 안팎이었다.
 
 ### 2082년
 
@@ -3382,8 +3127,6 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 
 ### 2106년
 
-2106년 훗날 세 국가를 이루는 각 진영 내부에서 전투가 벌어졌다. 규격맹·중앙정보부·태욱그룹·성하그룹·신내운수·흰십자단이 한 진영을 이루었다. 대한민국정부·수문국·동방사·아관사·환적국·여의도출자연합회·정동노총이 다른 진영을 이루었다. 명부교회·안국총림·명동대교구는 종교 연합 진영을 이루었다.
-
 <a id="ch29-i4"></a>
 
 #### 가. 경기도
@@ -3468,10 +3211,6 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 
 <a id="ch40-i1"></a>
 
-#### 가. 남윤경 대주교
-
-2113년 명동대교구 사제단은 비공개 선출로 남윤경을 대주교로 선출하였다.
-
 ### 2114년
 
 <a id="2114년-태욱그룹"></a>
@@ -3487,8 +3226,6 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 <a id="ch32-i2"></a>
 
 ##### 나. 분가의 방문
-
-2114년 5월 정씨 분가 대표 3명이 명동대교구를 방문하였다. 방문 기록은 대교구 접견 장부에 남았다.
 
 <a id="2114년-성하그룹"></a>
 
@@ -3529,8 +3266,6 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 2115년 아관사는 고서준을 관문사령관으로 선출하였다. 2116년 7월 동방사는 구의수비대를 동방사 지휘 아래 두라는 문서를 아관사에 보냈다. 고서준과 구의수비대장 탁서윤은 각각 거절 문서를 보냈다.
 
 ### 2116년
-
-2116년 규격맹·대한민국정부·종교 연합의 세 국가가 성립하였다. 규격맹은 태욱그룹·성하그룹·신내운수·흰십자단을 거느리는 패권국이 되었다. 대한민국정부는 수문국·동방사·아관사·환적국·여의도출자연합회·정동노총을 거느리는 패권국이 되었다. 종교 연합에는 명부교회·안국총림·명동대교구가 남았으며 단일 수장을 정하지 않았다. 기존 수장과 관직은 봉신으로 존속하였다. 중앙정보부의 기존 영토는 규격맹에 편입되었다. 중앙정보부는 2030년부터 이어 온 중립을 지켰다. 중앙정보부 AI는 아바타만 교체하며 조직을 이끌었고 현재 아바타 오해린은 남산타워를 거점으로 삼는다.
 
 <a id="ch40-i3"></a>
 
@@ -3754,8 +3489,6 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 
 ##### 나. 도심 세 단체
 
-2121년 6월 명동대교구·안국총림·정동노총은 종로·중구 통행증의 청사 도장을 갱신하였다. 세 단체는 도심 배급 창구에 제출할 명부를 기록청 양식으로 작성하였다.
-
 <a id="2121년-제1분공방"></a>
 
 #### 제1분공방
@@ -3843,8 +3576,6 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 <a id="xt05-2122"></a>
 
 ##### 잔여 대역 추첨
-
-2122년 9월 여의도출자연합회는 이름 없는 인천 신탁 수령창에 할당할 잔여 대역을 여의도 회관에서 한 차례 추첨하였다. 수문국 영등포 당직은 추첨 시각에 맞춰 펌프 운전 시간을 조정하였다. 대한민국정부 광화문 당직은 인도 목록의 해시를 참관 장부에 적었다. 정동노총 시청 당직은 송금 기록의 회차선을 확인하였다. 태욱그룹 양재 당직은 궤도 단말의 오탐 기록을 분리하였다. 명동대교구는 다국어 상담 대기표를 갱신하였다.
 
 ### 2123년
 
@@ -3967,8 +3698,6 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 <a id="ch40-i5"></a>
 
 ##### 나. 비상배급
-
-2124년 남윤경은 명동대교구의 비상배급 칸을 열었다. 공개 경매는 하루 미루어졌다.
 
 <a id="2124년-기록청"></a>
 
@@ -4121,8 +3850,6 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 
 ##### 나. 강약 장부
 
-2125년 11월 기록청은 세 국가 안에 존속한 십육국의 전신국·봉신별 강약 장부를 작성하였다. 강국란에는 대한민국정부·수문국·규격맹·환적국·동방사·태욱그룹을 기재하였다. 약국란에는 여의도출자연합회·흰십자단·아관사·신내운수를 기재하였다. 소국란에는 명부교회·명동대교구·안국총림·성하그룹·중앙정보부·정동노총을 기재하였다.
-
 <a id="ch47-i6"></a>
 
 ##### 다. 도심 경비
@@ -4157,12 +3884,9 @@ In 2126 O Gyeongjae took office as moderator through the elders'' confirmation. 
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Chaebol-Houses-and-Century-Factions', 'Families and the Sixteen States', '가문과 십육국', 'factions', 0, '
 The sixteen states inherited different ways of filling their offices. Water-contract families elected the Sluice ruler; the Yongsan track family passed down the chief position of the Transshipment Station. Government, military, faith, and trade institutions kept their own titles.
 
-
 ## Houses and the Division of the Keys
 
-
 The Sluice held its capital at Yangpyeong Station. Han Jaemok of the Cheongju Han clan was elected ruler at a meeting of water-contract families.
-
 
 ## The Remnants of the Old Government
 
@@ -4171,7 +3895,6 @@ The "Republic of Korea Government" that kept its thread alive around Gwanghwamun
 The president of this place was not chosen by election; the one who had kept the original box of the Bukhansan Bogukmun Records House unbroken succeeded to the office. The Seoul Station Record-Law House was only the guild that managed this old government''s records, not the state itself. The memory of the old army likewise splintered into living-sphere militias and scattered among the conscription remnants.
 
 The Yongsan track family passed the key to the rail transshipment facility to its next generation. In the Sluice, representatives of water-contract families chose the ruler at their contract meeting.
-
 
 ## External Powers and the Theaters
 
@@ -4195,8 +3918,6 @@ The Imjin River Gate Theater held the North''s quarantine and the return registe
 
 ## 도심을 다스리는 대한민국정부
 
-광화문을 중심으로 종로·중구를 직접 다스리는 대한민국정부는 십육국 제일의 강국이다. 기록청은 수문국·동방사·아관사·환적국·신내운수·규격맹·흰십자단의 계승과 조약을 등록한다. 도심의 주민 명부와 배급 창구도 정부가 맡는다. 도심에서 통행하거나 거래·계약을 하려면 정부의 도장을 받고 인지세를 내야 한다. 점호 명부를 갖춘 청사 경비대도 정부의 지배를 뒷받침한다. 명동대교구·안국총림·정동노총은 도심의 도장과 명부에 의지한다.
-
 그 기반은 정부 안에서도 다툼의 대상이다. 의무가문 파벌들은 윤서린의 대통령직과 기록청, 청사 경비대, 인지세 수입을 두고 맞선다. 김연규가 이끄는 온민의도 그 파벌 가운데 하나다.
 
 정부와의 관계 역시 나라마다 다르다. 동방사와 아관사는 기록청 등록으로 정부에 복속했다. 기록청에 승계와 조약을 등록하거나 청사 도장을 쓰는 나라들은 정부를 보좌한다. 태욱그룹·여의도출자연합회·명부교회·성하그룹·중앙정보부는 독립국으로 남았다.
@@ -4215,11 +3936,9 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 At the opening in 2126, the three states and their vassals hold land and maintain their own registers and facilities.
 
-
 ## Trades
 
 A trade is the work a character does in the world. Before combat is joined, it decides what the character adds to a unit''s orders and state. The table supports those seven hands.
-
 
 ## Clothing by Depth and Trade
 
@@ -4228,7 +3947,6 @@ Clothing follows the basic silhouettes of the 1940s, during the Second World War
 Clothing varies with life on the surface, at intermediate depth, or deep underground. A heated room and a draughty passage can call for different layers on the same floor; insulation follows the temperature of the space a person actually occupies. At the same temperature, activity, working conditions, and individual sensitivity to cold create further differences. Garment cuts, pockets, and equipment reflect trades, while thickness, fabric, and removable layers adapt to the surroundings. Regional temperature differences affect clothing more strongly on the surface than underground.
 
 People in the same trade dress differently according to their organization, titled domain, and personal taste. Couriers share a need for mobility and storage without sharing every jacket cut, colour, or pocket arrangement. The same garment may illustrate regional differences in insulation, but a shared trade does not give everyone an identical outfit.
-
 
 ### Surface Quarters
 
@@ -4240,13 +3958,11 @@ Mechanics working above ground add insulating lining to clothing that protects t
 
 On the surface, exposure to wind and time spent outdoors matter as well as air temperature. On draughty platforms, outer fabric and fastenings block cold air; in sheltered workplaces, people adjust layers to the heat generated by their work. A small temperature difference between two regions alone does not produce a dramatic difference in coat bulk.
 
-
 ### Intermediate Underground Quarters
 
 Intermediate underground quarters have a baseline range of 8–18°C, but entrance passages admitting much outdoor air in cold regions can fall below 8°C. Even these remain warmer than the local surface, and people dress for the space rather than its floor label. Couriers and porters wear work jackets over insulating base layers, removing outer layers and tying them to their bags while moving continuously in warmer areas. Clerks and advisers seated for long periods on the same level add wool base layers, vests, or cardigans; patrolling guards put insulation back on when they stop to stand watch.
 
 Mechanics and workshop workers at the same depth choose lining thickness for their activity while retaining protective long sleeves and work gloves. Medical workers wear washable long sleeves with the protection their tasks require; water-treatment workers adjust insulation beneath water-resistant aprons and inside boots. At the same air temperature, people still need different layers and fabrics because their movement, exposure to water, and contact with materials differ.
-
 
 ### Deep Underground Quarters
 
@@ -4254,16 +3970,13 @@ In deep underground quarters with a baseline of 18–22°C, active couriers and 
 
 Even in deep areas, mechanics keep clothing that covers their hands and arms, and workers handling water retain their aprons and boots. Anyone going outdoors above ground obtains outerwear suited to the local cold and puts it on before stepping outside. This also applies to clerks and merchants who normally work underground. Someone visiting only an indoor ground-level entrance dresses for its indoor temperature rather than automatically adding an outdoor coat.
 
-
 ### Individual Differences at the Same Depth
 
 Underground, men doing comparable work tend to dress more lightly than women, but that tendency does not override their tasks or individual comfort. A male clerk sensitive to cold may wear a vest, while a busy female courier may remove her jacket. Above ground, both use a comparable level of cold-weather protection rather than keeping their light underground clothing.
 
 Insulation shows through coat volume, folds, and lining visible at an open collar or sleeve end. Hidden lining does not distinguish one person from another. When a coat is added or removed, the face, hairstyle, physique, and visible distinctive features remain, preserving the impression of the same person across outfits.
 
-
 ## The Three States and Their Vassals
-
 
 ## Sources
 
@@ -4353,7 +4066,6 @@ Insulation shows through coat volume, folds, and lining visible at an open colla
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Diaspora-Corridors', 'Diaspora Corridors', '이주민 회랑', 'factions', 4, '
 Before the collapse, Seoul had already been a city of many foreigners and migrants. The Chinese-Korean commercial belt of Daerim and Garibong, the interpretation alleys of Itaewon, the night labor rates of Dongdaemun, the Southeast and Central Asian dormitories of the Guro industrial belt, and the garrison contract work of Yongsan lay layered in one city. The Great Blackout did not erase these people; it cut interpretation and lodging. If the sixteen states were only a one-people roster, that city would not read as Seoul.
 
-
 ## The Corridors
 
 | Corridor | Sphere laid upon | Pre-collapse seat | Work today | Legitimacy |
@@ -4364,9 +4076,7 @@ Before the collapse, Seoul had already been a city of many foreigners and migran
 | Dongdaemun night labor | Between the Republic of Korea Government and the Amsa commercial belt | Night garment labor | Cloth, thread, and insulation sold by the night shift | Night production ran even with no name on the day ledger |
 | Yongsan fence contract labor | Line Succession State | Garrison interpretation, cleaning, subcontracting | Warehouse memory inside the fence; surviving English interpretation | Keys without arms. Recreation of foreign militaries forbidden |
 
-
 ## Seed Persons
-
 
 ### Person Lin Xiaomei (林小梅, Im Somae)
 
@@ -4390,7 +4100,6 @@ Before the collapse, Seoul had already been a city of many foreigners and migran
 - Rule and negotiation: Refused to sign when a contract arrived in only one language, and took the interpretation fee first
 - Key relations: A parts-for-food contract with Phạm Văn Đức of the Guro dormitories. Passage inspections near feud with the southwestern guard
 - Trigger event: When the dual-ledger seizure order fell, trade inside the Guro barrier gates stopped
-
 
 ### Person Phạm Văn Đức (Beom Bandeuk)
 
@@ -4420,7 +4129,6 @@ Phạm Văn Minh, born in Vietnam on April 17, 1999, works on Guro''s night line
 
 Tuấn''s son Phạm Văn Lộc is born in Vietnam on April 17, 2059, and learns maintenance by expanding his father''s records. He teaches his son Phạm Văn Đức, born in the same country on April 17, 2089, Vietnamese work explanations and the Korean instructions once used in Guro. They reach Guro in 2109, compare old records with the equipment, and learn repairs alongside the dormitory mechanics. Đức earns his coworkers'' trust through careful tool returns and shift records and takes the night-maintenance foreman''s job. In 2126 he holds a food contract with Lin Xiaomei, negotiates the armory subcontract with Choi Ilseok, and seeks recognition of the generational register on a par with citizenship.
 
-
 ### Person Amira Qasim (Amira)
 
 - Name: Amira Qasim. "Amira" on the Itaewon passage permits. Hangul ledger Amira
@@ -4443,7 +4151,6 @@ Tuấn''s son Phạm Văn Lộc is born in Vietnam on April 17, 2059, and learns
 - Rule and negotiation: Would not open the elevator when a passage permit carried one language
 - Key relations: A contract with Park Taegyeom''s dispatch house. Cooperation with Joel Park of the Yongsan fence contract labor
 - Trigger event: When the passage-ban notice went up, the Yongsan transshipment stopped for a day
-
 
 ### Person Joel Park (Park Joeol)
 
@@ -4468,7 +4175,6 @@ Tuấn''s son Phạm Văn Lộc is born in Vietnam on April 17, 2059, and learns
 - Key relations: Passage cooperation with Amira. Contract competition with Park Taegyeom over reading rights
 - Trigger event: When an attempt at recreating the arms appeared, warehouse access was sealed
 
-
 ### Person Nargiz Yusupova (Nargiz)
 
 - Name: Nargiz Yusupova. "Nargiz" at the lodging. Ledger Hangul Nargiz
@@ -4491,7 +4197,6 @@ Tuấn''s son Phạm Văn Lộc is born in Vietnam on April 17, 2059, and learns
 - Rule and negotiation: Did not sign Hangul-only registers
 - Key relations: Cooperation with Baek On, the Bukhansan Bogukmun refugee delegate. A lodging contract with the Ttukseom mobile repair crew
 - Trigger event: When the double register was refused, the northeastern corridor''s couriers were cut
-
 
 ### Person Choi Ilseok (Choi Ilseok)
 
@@ -4691,7 +4396,6 @@ A. Status of the equipment classification
 
 Seoul had trade tools, police equipment, and military equipment in 2026. After the Great Blackout, mechanics repaired surviving tools and recovered machine parts.
 
-
 ## Equipment Used Across a Century
 
 A. Chronology and equipment
@@ -4705,7 +4409,6 @@ The 2026 firearms law required permits for firearms and crossbows. K-series smal
 C. Reuse of robot parts
 
 After the Great Blackout, factory robots lost their call network. Mechanics repaired surviving hoses, terminals, and lenses.
-
 
 ## Candidate Armaments — Function, Ownership, Access
 
@@ -4730,7 +4433,6 @@ A. Candidates and research status
 | Vehicles · generators (power scale) | Movement, stronghold power | Rail, city buses, facility emergency generators, military vehicles | Only when a living sphere ran them. Not a personal-preset default | Fuel, lubricant, tires, batteries. Generator ≠ energy-storage module | Stationmasters, sixteen-state military (engineers, rail cavalry). No drifters | Vehicle remnant scale **further research needed**. Counts unlocked |
 | Heavy weapons (power scale) | Barrier-gate and stronghold defense | ROK support weapons, vehicle-mounted | Remnants above squad scale, facility defense. No personal-carry start | Ammunition, weight, maintenance. Supply was the object of command disputes | The four remnant groups, sixteen-state facility military. Conscription Remnants | 2026 service lists and counts **further research needed** |
 
-
 ## What Actually Existed in 2026
 
 A. Scope of the reviewed sources
@@ -4742,7 +4444,6 @@ In 2026, permit rules for firearms and crossbows, military equipment, and railwa
 - A 2015 policy briefing stated that general reserve training issued M16s in place of carbines. The training issue fact of the time was confirmed, but 2026 counts, per-unit issue tables, and warehouse locations were not fixed by this material. ([Policy Briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), viewed 2026-09-20)
 - SNT Motiv''s public defense page shows the existence of the K-series production line. The manufacturer''s product descriptions did not stand in for actual issue counts to the armed forces or reserves. ([SNT Motiv](https://www.sntmotiv.com/eng/business/defense.html), viewed 2026-09-20)
 - The canon preset already wrote the police-issue staff and patrol shield as "regulation staff · patrol shield." The original 2026 police equipment regulations and the 2026 issue range of service pistol models needed further research. The regulation numbers were not locked.
-
 
 ## Sources
 
@@ -5036,11 +4737,8 @@ Chronicle records: [2079 record](/wiki/Century-Annals/) · [2114 record](/wiki/C
 ## XT03 · Korea Strait Theater
 
 - Yongsan, City Hall, Myeongdong, Samsung, and Heukseok ran the three-leg relay docks and interpretation windows along the Korea Strait route.
-- Linked states: S07 The Junction, S16 Jeongdong Federation, S15 Myeongdong Archdiocese, S04 Myeongbu Church, S08 Central Intelligence Bureau
 
 In front of the Junction''s transshipment window, a three-way relay signboard bled in the rain. In Yeongnam, Busan crews and repair workers restart coastal voyages in 2058 using only ships they can maintain. Different owners supply different materials and labor, so a port representative cannot command every departure. Repair workers and dismantlers around Ulsan and Pohang dispute whether to revive equipment or sell its parts; inland settlements have interests distinct from the ports. The observation that national status displays went dark first in Ulsan in 2030 does not show that Ulsan caused the Great Blackout.
-
-A Jeongdong Federation branch chief opened inland turnback slots in place of the closed sea routes, and a Myeongdong Archdiocese priest affixed seals of accreditation for marriages and requiem rites. On Jeju in 2041, crews and settlers repair surviving boats together, giving villages that supply materials and labor first claim on space aboard the next voyage. Indirect trade through south-coast posts depends on repair capacity and available crews. Those who want to keep sailing and those who want to remain on the island dispute their shares; this creates neither regular contact with Seoul nor subordination to its government.
 
 A Myeongbu Church deacon handed over only sealed boxes and stayed out of the border talk. In 2118 shipowners around Busan and their separately hired escorts form a temporary coalition to recover seized ships and people. Some local sailors deprived of access by an armed group at one Tsushima port help them land. The expedition breaks that port’s defenses and recovers vessels and captives. Owners demand a return, commanders want to hold the port, and local allies demand autonomy and their share. Shortages of repair materials and labor force the main contingent to withdraw in 2119, leaving only some contacts and trade. The participants’ name “Tsushima conquest” describes this local victory, not annexation of the whole island or a victory by a united Seoul navy.
 
@@ -5094,7 +4792,6 @@ Chronicle record: [2079 record](/wiki/Century-Annals/)
 
 - S07 The Junction: It kept the connection between the Yongsan transshipment and the three-branch relay unbroken. It handles tolls and loading contracts at the Incheon and Paju termini and with outside caravans, without owning entire ports. / leverage: the operating memory of the central transshipment ledger and the fence keys / red line: It did not automatically pass the risk of one closed route onto another turnback line.
 - S16 Jeongdong Federation: It published the passage conditions of the inland turnback and the carrying labor. From its contacts with Seongnam and Siheung workers it engages in long-distance escort and ship-repair pay and return terms, without representing all outside workers. / leverage: the City Hall turnback line and the passage right of the strike rolls / red line: It did not hand cargo with no interpretation to the workers unilaterally.
-- S15 Myeongdong Archdiocese: It kept the form of the marriage and memorial accreditation seals and the continuity of family counseling. It debates recognition of marriages and settlement established outside Seoul, without reducing the parties’ choices to a single return order. / leverage: the Myeongdong altar and the diocesan rolls / red line: It did not use an accreditation seal as a judgment of borders or outside politics.
 - S04 Myeongbu Church: It made plain the custody of the sealed boxes and the relief goods. It faces disputes over receiving families and cargo returning through the strait, without religious authority throughout the south. / leverage: the Samsung Station chapel rolls and the custom of custody / red line: It did not skip verification of sealed cargo on the grounds of a border story.
 - S08 Central Intelligence Bureau: It managed Heukseok''s technical-inspection records and preservation permits. It interprets Ulsan and Pohang survey records and disagrees with outside repair workers over preserving or dismantling equipment. / leverage: Heukseok''s technical-inspection ledger / red line: It did not grant preservation permits to cargo without inspection records.
 
@@ -5253,7 +4950,6 @@ Chronicle records: [2069 record](/wiki/Century-Annals/) · [2114 record](/wiki/C
 ## XT05 · Incheon Trust Theater
 
 - Yeouido, Yeongdeungpo, Gwanghwamun, City Hall, Yangjae, and Myeongdong entrusted residual satellite bands, aid manifests, and diaspora contact through the Incheon Trust gateway.
-- Linked states: S09 Yeouido Investment Federation, S01 The Sluice, S06 Republic of Korea Government, S16 Jeongdong Federation, S03 Taeuk Group, S15 Myeongdong Archdiocese
 
 On the roof of the Yeouido Investment Federation hall, residual-band lottery numbers were circulated. On the capital outskirts in 2031, rail workers and refugees toward Incheon and Paju divide loads among backs and carts at the ends of maintainable tracks, creating temporary markets. Not all these markets later become Junction termini. Eastern Command’s 2098 guard districts in Hanam, Namyangju, Uijeongbu, and Yeoncheon, the Junction’s 2100 tolls at Incheon and Paju rail termini, Taeuk Group’s 2101 Seongnam and Suwon workplaces, the 2104 Yeongjong branch, and the 2106 Gyeonggi administrative post in Goyang remain. Outside those posts, residents evade call-ups and tolls or trade directly, bringing them into conflict with Seoul interests.
 
@@ -5314,7 +5010,6 @@ Chronicle records: [2069 record](/wiki/Century-Annals/) · [2122 record](/wiki/C
 - S06 Republic of Korea Government: It preserved the form of the delivery-list hash and the citizen-observation record. From the Gyeonggi post in Goyang it seeks recognition from outside envoys, but recognition does not entail obedience. / leverage: Gwanghwamun''s record accreditation and seal / red line: It did not make an unobserved list into a ration right or grounds for quarantine.
 - S16 Jeongdong Federation: It published the carrying conditions of the delivery turnback and the remittance records. From its contacts with Seongnam and Siheung workers it engages in long-distance escort and ship-repair pay and return terms, without representing all outside workers. / leverage: the City Hall turnback line and the union ledgers / red line: It did not use the remittance records as a tool for judging passage rights or labor eligibility.
 - S03 Taeuk Group: It corrected the orbital terminals'' false alarms, separating the recipient from the safety of the equipment. It maintains its Seongnam and Suwon workplaces and seeks parts and labor from Yeongnam dismantlers, but cannot order Busan shipowners to sail. / leverage: the Yangjae maintenance depot and the memory of field humanoid maintenance / red line: It did not bypass citizen observation and the receipt hash on the grounds of correcting a false alarm.
-- S15 Myeongdong Archdiocese: It did not discard the multilingual counseling and the family-contact waiting list, and kept the form of accreditation. It debates recognition of marriages and settlement established outside Seoul, without reducing the parties’ choices to a single return order. / leverage: the Myeongdong altar and the diocesan rolls / red line: It did not use the language of counseling or a family''s story as a stigma for rations or quarantine.
 
 <a id="External-Theaters-heading-0127"></a>
 
@@ -5579,11 +5274,8 @@ Chronicle records: [2069 record](/wiki/Century-Annals/) · [2122 record](/wiki/C
 ## XT03 · 대한해협전구
 
 - 용산·시청·명동·삼성·흑석은 대한해협 항로에서 세 갈래 중계 부두와 통역 창구를 운영한다.
-- 연결 국가: S07 환적국, S16 정동노총, S15 명동대교구, S04 명부교회, S08 중앙정보부
 
 환적국 환적 창구 앞에 세 갈래 중계 표지판이 빗물에 번진다. 영남에서는 부산 선원과 수리 인력이 2058년 유지 가능한 배만 골라 연안 운항을 다시 연다. 선주마다 부담한 자재와 인력이 달라 항구 대표가 모든 출항을 명령할 수 없다. 울산·포항의 수리인과 해체업자는 설비를 살릴지 부품으로 팔지 다투며, 내륙 정착지는 항구와도 이해가 다르다. 2030년 전국 상황 표시가 울산부터 꺼졌다는 관측은 울산이 대정전을 일으켰다는 증거가 아니다.
-
-정동노총 지부장은 닫힌 항로 대신 내륙 회차 슬롯을 열고, 명동대교구 신부는 혼인·위령 인준 봉인을 붙인다. 제주에서는 2041년 선원과 정착민이 남은 배를 함께 고치며 자재와 사람을 낸 마을에 다음 항해의 선적 공간을 먼저 배정한다. 남해안 거점을 거친 간접 교역은 수리 능력과 선원 확보에 달려 있다. 항해를 계속할 사람과 섬에 남을 사람의 몫이 충돌하며, 서울까지 정기 연락이나 서울 정부에 대한 종속은 생기지 않는다.
 
 명부교회 집사는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는다. 2118년 부산 일대 선주와 각자 고용한 호위대는 나포된 배와 사람을 되찾으려 한시적으로 연합한다. 대마도의 한 항구 무장 집단에 통행을 빼앗긴 현지 선원 일부가 접안을 돕고, 원정대는 그 항구 한 곳에서 방어 거점을 무너뜨리고 배와 포로를 회수한다. 선주는 귀환을, 지휘자는 점령 지속을, 현지 협력자는 자치와 몫을 요구한다. 손상 선박의 보수 자재와 인력이 모자라 2119년 주력이 철수하고 일부 연락과 교역만 남는다. 참가자가 부르는 ‘대마도 정벌’은 이 국지 승리이며, 대마도 전역의 병합이나 서울 연합 해군의 승전이 아니다.
 
@@ -5637,7 +5329,6 @@ Chronicle records: [2069 record](/wiki/Century-Annals/) · [2122 record](/wiki/C
 
 - S07 환적국: 용산 환적과 세 갈래 중계의 연결이 끊기지 않게 한다. 인천·파주 종착과 외부 상단의 통행세·하역 계약을 다루되 항구 전체의 소유권은 없다. / 지렛대 중앙 환적 장부와 울타리 열쇠의 운영 기억 / 넘지 않는 선 닫힌 한 길의 위험을 다른 회차선에 자동 전가하지 않는다.
 - S16 정동노총: 내륙 회차와 운반 노동의 통행 조건을 공개한다. 성남·시흥 노동자 접점을 바탕으로 장거리 호송과 선박 수리의 임금·귀환 조건에 관여하되 외부 노동자 전체를 대표하지 않는다. / 지렛대 시청 회차선과 파업 명부의 통행권 / 넘지 않는 선 통역이 없는 화물을 노동자에게 일방 인계하지 않는다.
-- S15 명동대교구: 혼인·위령 인준 봉인의 형식과 가족 상담의 연속성을 지킨다. 외부에서 성립한 혼인과 정착을 인정할지 내부 논쟁을 벌이며 당사자의 선택을 단일 귀환 명령으로 바꾸지 않는다. / 지렛대 명동 제대와 교구 명부 / 넘지 않는 선 인준 봉인을 국경이나 외부 정치 판정으로 쓰지 않는다.
 - S04 명부교회: 밀봉 상자와 구휼 물자의 보관 책임을 분명히 한다. 해협에서 돌아온 가족과 화물의 수령을 둘러싸고 다투며 남부 전역의 교권을 갖지는 않는다. / 지렛대 삼성역 예배당 명부와 보관 관습 / 넘지 않는 선 국경 이야기를 이유로 밀봉 화물의 검증을 생략하지 않는다.
 - S08 중앙정보부: 흑석의 기술 점검 기록과 보존 허가를 관리한다. 울산·포항 탐사 기록을 해석하면서 외부 수리인과 설비 보존·해체를 두고 이견을 보인다. / 지렛대 흑석의 기술 점검 원장 / 넘지 않는 선 점검 기록이 없는 화물은 보존 허가를 내주지 않는다.
 
@@ -5796,7 +5487,6 @@ Chronicle records: [2069 record](/wiki/Century-Annals/) · [2122 record](/wiki/C
 ## XT05 · 인천신탁전구
 
 - 여의도·영등포·광화문·시청·양재·명동은 인천신탁 창구에서 위성 잔여 대역·인도 목록·디아스포라 연락을 신탁한다.
-- 연결 국가: S09 여의도출자연합회, S01 수문국, S06 대한민국정부, S16 정동노총, S03 태욱그룹, S15 명동대교구
 
 여의도출자연합회 회관 옥상에서 잔여 대역 추첨 번호가 회람된다. 수도권 외곽에서는 2031년 인천·파주 방면 철도 작업자와 피난민이 유지 가능한 선로 끝에서 짐을 등짐과 수레로 나누며 임시 장터를 만든다. 그 장터 모두가 훗날 환적국의 종착 거점은 아니다. 2098년 동방사의 하남·남양주·의정부·연천 경비지구, 2100년 환적국의 인천·파주 종착 통행세, 2101년 태욱그룹의 성남·수원 사업장, 2104년 영종지점, 2106년 고양의 경기도 행정 거점은 유지된다. 거점 밖 주민은 소집·통행세를 피하거나 직접 거래하며 서울 세력과 다툰다.
 
@@ -5857,7 +5547,6 @@ Chronicle records: [2069 record](/wiki/Century-Annals/) · [2122 record](/wiki/C
 - S06 대한민국정부: 인도 목록 해시와 시민 참관 기록의 형식을 보존한다. 고양의 경기도 거점을 바탕으로 외부 사절에게 대표성을 인정받으려 하나 인정과 복종은 별개다. / 지렛대 광화문 기록 인준과 도장 / 넘지 않는 선 참관 없는 목록을 배급 권리나 격리 근거로 만들지 않는다.
 - S16 정동노총: 배송 회차와 송금 기록의 운반 조건을 공개한다. 성남·시흥 노동자 접점을 바탕으로 장거리 호송과 선박 수리의 임금·귀환 조건에 관여하되 외부 노동자 전체를 대표하지 않는다. / 지렛대 시청 회차선과 조합 장부 / 넘지 않는 선 송금 기록을 통행권·노동 자격의 판정 도구로 쓰지 않는다.
 - S03 태욱그룹: 궤도 단말의 오탐을 고쳐 수령 대상과 장비 안전을 분리한다. 성남·수원 사업장 관계를 유지하고 영남 해체업자에게 부품과 인력을 구하되 부산 선주에게 출항을 명령하지 못한다. / 지렛대 양재 정비고와 현장 휴머노이드 정비 기억 / 넘지 않는 선 오탐 교정을 이유로 시민 참관과 수령 해시를 우회하지 않는다.
-- S15 명동대교구: 다국어 상담·가족 연락 대기표를 버리지 않고 인준의 형식을 지킨다. 외부에서 성립한 혼인과 정착을 인정할지 내부 논쟁을 벌이며 당사자의 선택을 단일 귀환 명령으로 바꾸지 않는다. / 지렛대 명동 제대와 교구 명부 / 넘지 않는 선 상담 언어와 가족 사연을 배급·격리의 낙인으로 쓰지 않는다.
 
 <a id="External-Theaters-heading-0127"></a>
 
@@ -5912,9 +5601,6 @@ Faith did not arise because a stationmaster or a Moderator proclaimed it. It gre
 
 **C. Religious Distribution in 2026**
 
-In the Korea of 2026 there had been no religious majority. Pew Research 2010 wrote 46% non-religious, 29% Christian, 23% Buddhist ([Pew](https://www.pewresearch.org/short-reads/2014/08/12/6-facts-about-christianity-in-south-korea/), viewed 2026-09-17). The lack of a majority vote did not mean the institutions were weak. The pulpits, altars, General Directorate, and chapels crossed the century on real estate, registers, relief, and calendars, and the watchkeepers'' grandchild''s grandchild was the head of the time. Living pastors, church logos, and presbytery arms were not carried onto opening-day persons. The state names Myeongbu Church, Myeongdong Archdiocese, Anguk Order, and Won Buddhism were not erased.
-
-
 ## A Century Hardened the States
 
 **A. Seoul in 2026**
@@ -5941,13 +5627,11 @@ On opening day, the central water-and-parts contract carried from earlier record
 
 The main stage was the Seoul subway. The capitals were subway stations. Yeongdeungpo, Guro, and Yangjae were not state names but the stations of the capitals. The list and origins of the sixteen states were canon in [the Sixteen States of Seoul](/wiki/Sixteen-States/).
 
-
 ## The Four Theocracies
 
 **A. Scope of the Theocracy**
 
 Theocracy was the form of government of three of the sixteen states, not the state religion of all Seoul. The titles kept the words those institutions used in 2026, and the tiers followed the five layers of [Offices and Ranks](/wiki/Offices-and-Ranks/). No living pastor, sitting bishop, or order logo was moved onto an opening-day person. Those seated at the opening were the 2126 generation of the Characters.
-
 
 ### Myeongbu Church
 
@@ -5971,30 +5655,6 @@ The public faith was the Pump-Workshop Rite. It bound pump and workshop into one
 
 What was not brought in: living pastors'' real names, church logos, presbytery names, Yoido Full Gospel Church. Lineage names grown from subway wreckage stayed fiction, and the state name was not erased.
 
-
-### Myeongdong Archdiocese
-
-**A. Altar in 2026**
-
-In 2026 the Myeongdong Archdiocese held the altar and diocesan registers of Myeongdong Cathedral, 74 Myeongdong-gil, Jung-gu. Accreditation of marriage, adoption, and memorial rites came from that altar.
-
-**B. After the Great Blackout**
-
-After the Great Blackout the altar moved memorial and marriage accreditation onto paper registers. A century on, the real estate and the order of relief remained. The diocese of the time was a state accrediting marriages and memorial rites at Myeongdong Station. The Bishops'' Conference building on Myeonmok-ro, Gwangjin, remained only an outer warehouse of the diocese.
-
-**C. Leader at the Opening**
-
-The archbishop of the time was Nam Yungyeong. The title was archbishop; the trade alias was auction mediator. The hand that had kept the scales of the Seoul Station Inventory House unbroken sat in that seat. Garak''s price hub stood empty as unclaimed land, and the archdiocese could not feed that empty ledger.
-
-**D. Public Faith**
-
-The public faith was the Auction-Disclosure Rite. When the bell rang, that day''s price was set. The bell of the distribution-and-consumption lineage overlapped here with the theocracy''s altar. At a station that took down its altar, the event record broke off.
-
-**E. Exclusions**
-
-What was not brought in: sitting bishops'' real names and diocesan arms.
-
-
 ### Anguk Order
 
 **A. Administrative Headquarters in 2026**
@@ -6017,7 +5677,6 @@ The public faith was the lodging oath. The habit of giving lodging to those cros
 
 What was not brought in: splitting particular head temples into other state names, and raising the refugee vacancy into one of the sixteen slots.
 
-
 ### Central Intelligence Bureau
 
 **A. Neutral bureau at Namsan**
@@ -6038,17 +5697,13 @@ What was not brought in: bringing the Iksan headquarters in as a Seoul state, an
 
 **F. Summary of the Three Theocracies**
 
-Myeongbu Church, Myeongdong Archdiocese and Anguk Order preserve assembly registers, diocesan registers and memorial tablets respectively. The Central Intelligence Bureau is based at Namsan Tower.
-
 | State | 2026 institution and record | What remained a century later | Opening central station and leader | Public faith |
 |---|---|---|---|---|
 | Myeongbu Church | Yeonji-dong Assembly Hall registers · church real estate | The Assembly registers become the watch roster. The surviving pulpits are in Gangnam | Samsung Station, Moderator O Gyeongjae | Pump-Workshop Rite |
-| Myeongdong Archdiocese | Myeongdong Cathedral altar · diocesan registers | Paper registers of marriage, adoption, memorial accreditation | Myeongdong Station, Archbishop Nam Yungyeong | Auction-Disclosure Rite |
 | Anguk Order | Jogyesa · General Directorate tablets · temple rolls | The tablets the General Directorate kept | Anguk Station, Abbot Baek On | The lodging oath |
 | Charter Transcription State | The Heukseok Seoul chapel · Sotaesan Memorial Hall charter | The transcribed charter | Heukseok Station, Kyujeongwon head O Haerin | Settlement-Right Rite |
 
 The Taeuk Group used verification like doctrine but raised no chapel to a state faith. Even when a state forced public rites, the station crowds kept a mixed practice.
-
 
 ## The Everyday That Grew in Stations
 
@@ -6088,7 +5743,6 @@ The main lineage and the public faith need not match. The Yeouido Investment Uni
 
 The pulpit, altar, and monastery lineages were left by institutions. The eight below were creative lineages grown from subway wreckage. The starting list was locked. They could later merge or split, but state names were not changed into wreckage-lineage names.
 
-
 ### Wreckage Was Not a Manual but a Rite
 
 **A. Recipients of Rites**
@@ -6126,7 +5780,6 @@ The bodies and capacitor modules of sealed underground chassis were relics of [L
 
 The default of the pilgrimage route was the depots and plants people kept. The Sinjeong, Cheonwang, Godeok, and Sinnae depots were tied to the capitals of the time. Banghwa, Gunja, Changdong, and Suseo were unclaimed or edge corridors. When forced rites ran two seasons, hidden chapels arose.
 
-
 ### Old-World Symbols
 
 **A. Empty Pedestal**
@@ -6145,7 +5798,6 @@ The night of the 2030 Great Blackout was the first line of the event record. The
 **B. Status of the Ruler**
 
 No doctrine of raising a king into godhead existed at the opening. The ruler was the custodian of plaques and marks. When a custodian pasted his own face onto the pedestal, a heresy trial opened.
-
 
 ### Consumption Rites
 
@@ -6167,8 +5819,6 @@ The Barcode Rite made the sound of the scan a license. There were priests who mi
 
 **E. Public Auction Rite**
 
-The Auction-Disclosure Rite was the Myeongdong Archdiocese''s public teaching. When the bell rang, that day''s justice was set. It meshed with Nam Yungyeong''s scales. Garak''s empty ledger could not replace that bell.
-
 **F. Payment Rights Rite**
 
 The Settlement-Right Rite was Won Buddhism''s. Ice and short-term stock were credit. When the power cut, the beep died; the doctrine died with it.
@@ -6180,7 +5830,6 @@ The hidden faction was the Dual-Price Rite. The dual ledgers of Daerim and Garib
 **H. Pilgrimage and Headquarters**
 
 The pilgrimage of the consumption rites was the distribution path — walked from wholesale to retail, from frame wall to checkout. When the path was blockaded, this lineage''s chapel authority was shaved first. The open head temples were the Myeongdong altar and the Heukseok chapel. Suseo''s empty depot was no priest to escort this rite; Jeong Yura merely leased the Suseo unclaimed zone''s drawing chests.
-
 
 ### Machine Worship
 
@@ -6208,9 +5857,7 @@ When a repair succeeded, a restart ran, and a part was offered to the chapel, th
 
 The lamps, roars, and flat shells of the sealed underground lines were the extreme of machine worship. The chapel that saw them as saints and the chapel that saw them as plague split. No one wrote that the control code was deciphered.
 
-
 ### The Eight Wreckage Lineages
-
 
 #### Route-map lineage
 
@@ -6226,7 +5873,6 @@ The Transfer Pact counted at the Neutral Convoy City and the Line Succession Sta
 
 The hidden faction rode one color only. It was called the Route-Color Faction. The open station service held it a superstition, but the dispatch houses would not load freight into cars of another color.
 
-
 #### Sluice lineage
 
 **A. Altars**
@@ -6241,7 +5887,6 @@ The Water Compact used the Water-Compact Rite close to official faith. Sluice ru
 
 When the supply cut, doctrine cracked first. The rites collapsed faster than the state grades.
 
-
 #### Distribution lineage
 
 **A. Lighting and Oaths**
@@ -6251,7 +5896,6 @@ When the light came on, words carried; when it went out, oaths were void — so 
 **B. Sects**
 
 In the lamp-lighting rite the switchgear watch was priest. The Capacitor-Relic Faction touched modules with charge left. It was no public faith. The Taeuk Group saw it as a verification subject, and the chapels saw it as bone not to be touched. The Taeuk Group recognizes Jeongtonghoe as its state religion.
-
 
 #### Fabrication lineage
 
@@ -6267,7 +5911,6 @@ The Open-Standards Rite of the Standards Alliance taught that parts anyone could
 
 The Guro dormitory remnants believed repair labor stood ahead of citizenship. They sat inside the fabrication lineage but took no council seal. The Daerim dormitories were the Hu inside this state.
 
-
 #### Announcement-voice lineage
 
 **A. Points of Contention**
@@ -6281,7 +5924,6 @@ The On-Time-Broadcast Rite of the Yeouido Investment Union held the programming 
 **C. Local Rites**
 
 The platform announcement was this lineage''s terminal rite. A stop at which "this station" was never called remained a ghost stop. The wreckage of dead home-shopping voices mixed with the distribution-and-consumption lineage as a hidden rite.
-
 
 #### Mobilization-register lineage
 
@@ -6297,7 +5939,6 @@ The Muster-Remnant Rite read names, service numbers, and the last muster date. I
 
 When the Republic of Korea Government brought these registers into the Gwanghwamun archives, the ceremonial guard looked like a barracks. The Record-Accreditation Rite rose into heresy dispute, and the Records Bureau''s legitimacy broke.
 
-
 #### Ledger lineage
 
 **A. Oracle**
@@ -6312,7 +5953,6 @@ The Record-Accreditation Rite of the Republic of Korea Government saw succession
 
 The ledger lineage did not raise prices into godhead. Price was the distribution-and-consumption lineage''s business. When the two lineages shared one window, both seal and bell had to ring for the trade to close.
 
-
 #### Distribution-and-consumption lineage
 
 **A. Composition**
@@ -6322,7 +5962,6 @@ The lineage of the consumption-rite axis. The Banknote-Portrait Rite, Ad-Frame R
 **B. Headquarters and Local Branches**
 
 Myeongdong and Heukseok remained the open head temples; the Euljiro frame wall and the Dongdaemun night labor stood at the far ends. Garak, Jamsil, and Suseo were emptied spheres.
-
 
 ## Mixed, It Hid; Forced, It Split
 
@@ -6335,8 +5974,6 @@ The public faith was posted on the station notice board. Hidden faith sat in swi
 Even when the state set one public rite, the station crowds kept a mixed practice. Hidden faith was a pressure valve. When a great power forced public rites, residents went down into the Capacitor-Relic Faction, the Silent Faction, the Dual-Price Rite, or the Route-Color Faction. On discovery, the grievance and reputation of [Powers and Diplomacy](/wiki/Chaebol-Houses-and-Century-Factions/) moved. Isolation weakened only outside promises; it did not automatically shave the local chapel''s legitimacy.
 
 **C. Corridor Rites**
-
-The hidden rites of the corridors brought in no foreign denomination proper names. The habit of taking the interpretation fee first, and the habit of not torquing a bolt without a Vietnamese-language token attached, became teachings. This ban did not mean erasing the state names Myeongbu Church, Myeongdong Archdiocese, Anguk Order, and Won Buddhism.
 
 **D. Dispute Examples**
 
@@ -6392,7 +6029,6 @@ The houses that kept generational names were those with ledgers — the Records 
 
 The migrant corridors were no seventeenth state. They lay over the living spheres as in [Diaspora Corridors](/wiki/Diaspora-Corridors/). When the habit of refusing contracts without interpretation hardened into temperament, that alley''s culture kit counted apart from the homeland key. Names were not changed. Corridor cells added no row to the matrix; they thickened the hidden cells of the spheres they lay upon.
 
-
 ## The Cells Doctrine Changes
 
 **A. Doctrine and Politics**
@@ -6434,7 +6070,6 @@ At a station where sluice-lineage doctrine was strong, holding out an electricit
 
 When a lesser state became a great power, faith did not necessarily follow. Even if the Seocho Computing Group gripped the Changdong unclaimed zone''s barrier gates tighter, the Wheel-Mobility Rite remained. Conversely, if the Water Compact lost its water, the Water-Compact Rite rose into heresy trial first. The Gangbuk treatment center lay outside the city in Namyangju, so northern bulk treatment did not exist at the opening. Northern water self-sufficiency was not a fact of the time but the story''s counter-assumption.
 
-
 ## The Sixteen-State Opening Disposition
 
 **A. Placement Principles**
@@ -6449,7 +6084,6 @@ The public faith of the time followed the sphere''s trades. A great power monopo
 | Government of the Republic of Korea | Gwanghwamun | `center-record` | Ledger | Record-Accreditation Rite | President | Yun Seorin | Armory registers = heresy dispute |
 | Jeongdong Federation | City Hall | `center-record` | Ledger | Contract-Mediation Rite | Chairwoman | Jeong Yura | Trains pushed beyond Suseo read as apostasy. Suseo is unclaimed |
 | Anguk Order | Anguk | `center-record` | Monastery | The lodging oath | Abbot | Baek On | The Bukhansan register chests are ledgers over a vacancy |
-| Myeongdong Archdiocese | Myeongdong | `center-record` | Altar | Auction-Disclosure Rite | Archbishop | Nam Yungyeong | Cannot feed Garak''s empty ledger |
 | The Junction | Yongsan | `center-record` | Route-map | Transfer Pact | Stationmaster | Park Taegyeom | Itaewon''s multilingual passage permits = hidden teaching |
 | Eastern Command | Amsa | `east-caravan` | Sluice | Protected-Water Rite | Commander | Bae Ujin | Military superintendence covers the rite |
 | Sinnae Transport | Sinnae | `east-caravan` | Route-map | Transfer Pact | President | Jang Sehwa | — |
@@ -6463,7 +6097,6 @@ The public faith of the time followed the sphere''s trades. A great power monopo
 **B. Main lineages at the opening**
 
 At the opening, each state''s main lineage had the most followers there. A doctrinal split left its state name and territory in place.
-
 
 ## Sources
 
@@ -6484,7 +6117,6 @@ The relative paths of the documents read.
 - [Clan seats and generational names](/wiki/Hangnyeol-and-Bon-gwan/)
 - [The arms and technology of this era](/wiki/Era-Arms-and-Tech-Level/)
 
-
 ## Households and humanoid retainers
 
 Higher-ranking houses retain humanoids for ledger checks, communication, escort assistance and household work. Admission requires quarters, a responsible maintainer, spare parts and sustained power. Rank makes these resources easier to secure but does not create retainers or maintenance supplies by itself. Each humanoid remains subject to its own memory and communication limits and does not know every affair of the house.
@@ -6501,8 +6133,6 @@ The Gauge treats AI and humanoids as partners. The Government seeks to control t
 신앙은 역장이나 당회장의 반포로 생기지 않았다. 신앙은 안내방송이 끊긴 밤, 수문이 열린 아침, 승강장 노란선 앞의 죽음에서 생겼다. 한 구를 점령한 세력이 그 구의 기질을 바꾸지는 못한다.
 
 **다. 2026년의 종교 분포**
-
-2026년 한국에는 종교 다수파가 없었다. 퓨 리서치 2010 조사에 따르면 무종교 46%, 기독교 29%, 불교 23%였다([Pew](https://www.pewresearch.org/short-reads/2014/08/12/6-facts-about-christianity-in-south-korea/), 열람 2026-09-17). 강단·제대·총무원·교당은 부동산, 명부, 구휼, 달력을 가지고 한 세기를 지났다. 개막 시점의 수장은 그 당직자의 4대손이다. 실존 목사, 교단 로고, 노회 문장은 개막 인물로 옮기지 않는다. 나라 이름인 명부교회·명동대교구·안국총림은 유지한다. 흑석 자리는 중앙정보부이며 신정이 아니다.
 
 ## 한 세기가 나라를 굳힌다
 
@@ -6558,28 +6188,6 @@ The Gauge treats AI and humanoids as partners. The Government seeks to control t
 
 실존 목사의 실명, 교단 로고, 특정 노회명, 여의도순복음은 가져오지 않는다. 지하철 잔해에서 생긴 계열 이름은 창작으로 둔다. 나라 이름은 유지한다.
 
-### 명동대교구
-
-**가. 2026년의 제대**
-
-2026년 명동대교구는 중구 명동길 74 명동성당의 제대와 교구 명부를 관리하였다. 혼인, 양자, 위령의 인준이 그 제대에서 나왔다.
-
-**나. 대정전 이후**
-
-대정전 뒤에 제대는 위령과 혼인 인준을 종이 명부로 옮겼다. 부동산과 구휼 순서는 한 세기 뒤에도 남았다. 개막 시점의 교구는 명동역에서 혼인과 위령을 인준하는 나라이다. 광진 면목로의 주교회의 청사는 교구의 외부 창고로만 쓴다.
-
-**다. 개막 시점의 수장**
-
-개막 시점의 대주교는 남윤경이다. 직함은 대주교이고 생업 별명은 경매조정인이다. 남윤경은 서울역재고가의 저울을 끊기지 않게 지킨 사람이다. 가락의 가격 허브는 무주지로 비어 있다. 대교구는 그 빈 원장을 운영하지 못하고 있다.
-
-**라. 공개 신앙**
-
-공개 신앙은 경매공개례이다. 종이 울리면 그날의 가격이 정해진다. 유통소비계의 종과 신정의 제대가 이 지점에서 겹친다. 제대를 철거한 역에서는 사건 기록이 끊긴다.
-
-**마. 제외 대상**
-
-현직 주교의 실명과 교구 문장은 가져오지 않는다.
-
 ### 안국총림
 
 **가. 2026년의 총무원**
@@ -6622,12 +6230,9 @@ The Gauge treats AI and humanoids as partners. The Government seeks to control t
 
 **바. 세 신정 요약**
 
-명부교회·명동대교구·안국총림은 각기 총회 명부, 교구 명부, 위패를 이어받았다. 중앙정보부는 남산타워를 거점으로 삼는다.
-
 | 나라 | 2026년의 기관·기록 | 한 세기 뒤 남은 것 | 개막 중심역·수장 | 공개 신앙 |
 |---|---|---|---|---|
 | 명부교회 | 연지동 총회회관 명부·예배당 부동산 | 당직표가 된 총회 명부. 살아남은 강단은 강남 | 삼성역, 당회장 오경재 | 펌프공방례 |
-| 명동대교구 | 명동성당 제대·교구 명부 | 혼인·양자·위령의 종이 명부 | 명동역, 대주교 남윤경 | 경매공개례 |
 | 안국총림 | 조계사·총무원 위패·사원 대장 | 총무원이 지킨 위패 | 안국역, 방장 백온 | 숙영 맹세 |
 | 중앙정보부 | 흑석 서울교당·소태산기념관 교헌 | 2079.10 흑석역 간판. 기술 관청이며 신정 아님 | 흑석역, 원장 오해린 | 불교 기술파(장경종) |
 
@@ -6651,8 +6256,6 @@ The Gauge treats AI and humanoids as partners. The Government seeks to control t
 
 같은 생활권에서 같은 잔해나 상징을 숭배하는 가족은 한 계열에 속했다. 교훈이 달라져도 계열은 좀처럼 바뀌지 않았다.
 
-신앙은 당집과 사제가 있는 공동체의 이름이었다. 당회장·대주교·방장·원장·역장·사제·길드가 이름을 정했다. 공동체가 합쳐지거나 갈라지면 신앙의 이름도 바뀌었다.
-
 교리와 교훈에는 금기·의례·계승 자격·맹세 문구가 적혔다. 분파가 생기거나 이단 재판이 열리면 그 내용을 고쳤다.
 
 **마. 종파와 슬롯**
@@ -6660,8 +6263,6 @@ The Gauge treats AI and humanoids as partners. The Government seeks to control t
 같은 노선도계 안에서도 환승을 구원으로 보는 쪽과 종점만 안식처로 보는 쪽이 다툰다. 이 대립이 종파이다. 교리 한 줄이 바뀌면 혼인, 양자, 봉신 맹세, 배급 순위, 정통성 근거가 함께 바뀐다. 국가 슬롯 16개는 늘리지 않는다. 신앙 슬롯은 늘어난다.
 
 **바. 사제와 직함**
-
-사제는 [인물·세력·생업](/wiki/Characters-Factions-and-Professions/)의 관계 종류이다. 계승 경로에는 사제와 도제가 있다. 신정 세 나라의 티어 1은 땅의 층이다. 당회장, 대주교, 방장은 생업 별명이 아닌 직함이다. 중앙정보부의 원장도 직함이며 그 나라는 기술 보존의 직제로 운영된다.
 
 **사. 주 계열과 공개 신앙**
 
@@ -6746,8 +6347,6 @@ The Gauge treats AI and humanoids as partners. The Government seeks to control t
 바코드례에서는 단말이 찍히는 소리를 허가로 여긴다. 멈춘 단말의 삑 소리를 흉내 내는 사제가 있다. 이 의례는 동대문 야간 공임과 편의점 잔해에서 성하다. 동대문은 흰십자단 서쪽의 호이다. 소리 없이 물건을 가져간 사람은 도둑이 아닌 배교자로 처리한다.
 
 **마. 경매공개례**
-
-경매공개례는 명동대교구의 공개 교훈이다. 종이 울리면 그날의 가격이 정해진다. 이 의례는 남윤경의 저울과 연동된다. 가락의 빈 원장으로는 그 종을 대신하지 못한다.
 
 **바. 결제권례**
 
@@ -6905,8 +6504,6 @@ The Gauge treats AI and humanoids as partners. The Government seeks to control t
 
 **다. 회랑의 제사**
 
-회랑의 숨은 제사에는 외국 교단의 고유명을 쓰지 않는다. 통역료를 먼저 받는 관행과 베트남어 부절을 붙이지 않으면 볼트를 조이지 않는 관행이 교훈으로 굳었다. 이 금지는 명부교회, 명동대교구, 안국총림의 국호 삭제를 뜻하지 않는다. 흑석의 국호는 중앙정보부이다.
-
 **라. 분쟁 사례**
 
 같은 수도꼭지를 두고 해석이 나뉜다. 한재목은 갑문을 계약으로 해석한다. 오경재는 펌프를 축복으로 해석한다. 명동의 경매공개례, 흑석의 결제권례, 가락의 빈 원장이 한 가격을 두고 다툰다. 광화문의 기록인준례와 여의도의 정시방송례는 어느 쪽 발표가 사실인지를 두고 다툰다. 암사의 보호급수례가 군량을 묶으려 하면 제기동은 치료 원칙에 따라 침상을 나라 밖에 둔다. 구의의 비상 급수례와 아차산 능선은 한 군정으로 합쳐지지 않았다. 두 세력은 공동통치 관계가 아니다. 무기고 명부를 광화문 문서고에 들이면 동원명부계의 이단 시비가 열린다.
@@ -7016,7 +6613,6 @@ The Gauge treats AI and humanoids as partners. The Government seeks to control t
 | 대한민국정부 | 광화문 | `center-record` | 원장계 | 기록인준례 | 대통령 | 윤서린 | 무기고 명부 = 이단 시비 |
 | 정동노총 | 시청 | `center-record` | 원장계 | 계약중재례 | 위원장 | 정유라 | 수서 밖으로 열차를 밀면 배교. 수서는 무주지 |
 | 안국총림 | 안국 | `center-record` | 선원계 | 숙영 맹세 | 방장 | 백온 | 북한산 명부함은 공백 위의 장부 |
-| 명동대교구 | 명동 | `center-record` | 제대계 | 경매공개례 | 대주교 | 남윤경 | 가락의 빈 원장을 먹이지 못함 |
 | 환적국 | 용산 | `center-record` | 노선도계 | 환승맹약 | 역장 | 박태겸 | 이태원 다국어 통행증 = 숨은 교훈 |
 | 동방사 | 암사 | `east-caravan` | 수문계 | 보호급수례 | 사령관 | 배우진 | 군사 감독이 제사를 덮음 |
 | 신내운수 | 신내 | `east-caravan` | 노선도계 | 환승맹약 | 사장 | 장세화 | — |
@@ -7056,7 +6652,6 @@ The Gauge treats AI and humanoids as partners. The Government seeks to control t
 
 이성을 선호하는 남성 주인은 여성 휴머노이드를, 여성 주인은 남성 휴머노이드를 선호한다. 이성 선호가 아닌 주인의 가신 성별은 한 방향으로 고정되지 않는다. 이 선호는 누구를 가문에 들일지에 관한 선택이며, 가신과 주인의 연애 관계나 가족 관계를 뜻하지 않는다. 맡는 직무, 복종과 거부의 경계, 보관과 정비 책임은 각 관계에서 따로 정한다.
 
-규격맹은 AI·휴머노이드를 협력자이자 동반자로 대한다. 대한민국정부는 이들을 지배·통제하려 하고, 종교 연합은 인류의 적으로 여긴다. 이 정치적 태도와 개인이 믿는 종교는 구분된다. 2026년의 실존 종교에 대한 인식은 그대로 이어지며, 휴머노이드의 인격은 의사 표현·기억 연속성·동의 능력을 개별 심사한다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Food-Culture', 'Food Culture', '식문화', 'culture', 1, '
 **A. Where rationing began**
@@ -7065,14 +6660,11 @@ The table of that age survived as the ladle at the station window. Seoul in 2026
 
 In 2126, residents collect rations at station windows. They receive water before rice. Facilities reserve residents’ shares before trading.
 
-
 ## The Station Ration Meal
 
 **A. Ration windows and water supply**
 
 In a dong with a subway station, the ration window was in the station concourse. People also helped distribute rations at school playgrounds and community-center windows; when the Yeongdeungpo treatment watch opened the tap, water filled the rice pots of the Sinjeong depot, and when the Amsa escort locked the canisters, the queues at Suseo and Garak lengthened that same afternoon.
-
-The Myeongdong Archdiocese approves marriages and memorials at its altar. In 2124, White Cross leader Ryu Eunbi ended White Cross transactions at a Seoul Station auction after counterfeit medicine appeared.
 
 **B. Porridge and ration stores**
 
@@ -7083,7 +6675,6 @@ In 2123, refugees from Bukhansan Bogukmun descended to Anguk.
 **C. Blackouts and leftovers**
 
 A transfer station cut from power stopped its freight too. Even with the tunnel sound, the traction current died, and Noryangjin''s frozen stock was the first to melt on that outage; in summers when counterfeit medicine circulated, ice credit and water tests wavered in one line. When food waste was sealed off ahead of the citizen windows to protect the rations, the leftovers in the alleys called dogs and rats, and the way people and swarms contested the same remains was written by [People and Machines](/wiki/People-and-Machines/).
-
 
 ## Carp, Crucian Carp, and Catfish of the Tanks
 
@@ -7098,7 +6689,6 @@ The wetlands outside the Yeongdeungpo and Yeouido sluices were that water surfac
 When excrement and feed from the rearing cells mixed with drinking water, cases of waterborne disease increased. Connecting water from a carp-rearing cell to the ration taps caused that evening''s water-quality inspection to fail. Catfish ate organic matter on the bottom, so the water could appear less cloudy. Crucian carp multiplied quickly in shallow water, and the medical officer inspected the tanks and the medicine chest together.
 
 The first floor of the Han''s main channel stood close to abandoned space. Habitation pushed onto the third floor and above, cooking pushed inside the embankment, the sewage and floods along the tributaries turned playgrounds into detour embankments, and bringing fish caught beyond them to a window passed the inspection bench of the licensed market. Noryangjin''s frozen remains and unloaded viscera became the dogs'' night road, and the live fish of the station tanks read as protein that got through one more day without power.
-
 
 ## The Water Compacts and Water Rationing
 
@@ -7129,7 +6719,6 @@ Garak Market has no water-treatment facility of its own. The Gwangam plant is in
 | Market | Garak wholesale, Noryangjin fisheries | The price ledger and frozen credit. No treatment of its own |
 | Water and parts exchange | 2026 Yeouido vault and Yeongdeungpo waterworks | Two emergency generator parts in exchange for opening the water valve daily from 06:00 to 12:00 |
 
-
 ## Sources
 
 - [Scenario Timeline](/wiki/Scenario-Timeline/)
@@ -7149,8 +6738,6 @@ Garak Market has no water-treatment facility of its own. The Gwangam plant is in
 **가. 배급 창구와 급수**
 
 지하철역이 있는 동의 배급 창구는 역 대합실에 있다. 학교 운동장과 주민센터 창구에서도 사람들이 배급을 돕고, 영등포 정수 당직이 수도꼭지를 열면 신정 기지의 밥솥에 물이 차며, 암사 호위가 물통을 잠그면 같은 오후 수서와 가락의 배급 줄이 늘어난다.
-
-명동대교구는 명동 제대에서 혼인과 위령을 인준한다. 2124년 가짜 약 상자가 서울역 경매에 올랐을 때 흰십자단 단장 류은비는 해당 거래를 모두 끊었다.
 
 **나. 죽과 배급고**
 
@@ -7312,7 +6899,6 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hangnyeol-and-Bon-gwan', 'Bon-gwan and Hangnyeol', '본관과 항렬', 'characters', 0, '
 Bon-gwan identified a lineage within a surname, while hangnyeol was a rule marking generations from the founder with one character in names within the same clan. Surname, bon-gwan, branch, family line, generation count, and hangnyeol character were separate fields. People with the same surname were not necessarily from the same family, and people of the same age did not necessarily belong to the same generation.
 
-
 ## Hangnyeol in Chaebol Families
 
 Bon-gwan by family and the hangnyeol five-element generating cycle (Wood, Fire, Earth, Metal, Water; 25 years per generation, opening generation four to five generations after the 2026 living generation):
@@ -7333,7 +6919,6 @@ Bon-gwan by family and the hangnyeol five-element generating cycle (Wood, Fire, 
 
 The bon-gwan identities actually used by the cast were organized into 169 clans: 166 based on historical material and three created for the setting. Public research did not confirm historical bon-gwan for Ran and Heung, so the clans newly agreed upon after the collapse were the created Dobong Ran clan and Susaek Heung clan, respectively. They were not claimed to be historical bon-gwan, and no sources were attached.
 
-
 ## Cast Application Results
 
 The clan register listed all 1,022 people on the cast roster; 1,017 of them had bon-gwan and clan IDs. Goh Yejin, Han Seogyeong, Cha Yuseon, and Mun Dohyeon remained unconfirmed for bon-gwan, clan, and hangnyeol.
@@ -7351,7 +6936,6 @@ Bon-gwan and clan IDs were present for **1,017 people**. Na, Ra, Ryu, Mun, and M
 The applied examples were Seong Suhyeon and Seong Sahyeon of the Changnyeong Seong Train-Maintenance Branch. They were children of the same parent, Seong Dowon; the count was Founder Seong Changrip, generation 40 → Seong Dowon, generation 41 → the two children, generation 42. This branch was a **created family line** newly agreed upon after the collapse and referred to the five-element generating cycle. It was not claimed to be a historical Changnyeong Seong hangnyeol table. Their existing names were not changed; the second character `hyeon` remained as it was.
 
 The bon-gwan and generational elements of the three leaders followed the lock table above. Lee Hongwon, chair of Seongha Group, was Gyeongju Lee, Water; Jeong Seo-on, chair of Taeuk Group, was Jinyang Jeong, Metal; and Choi Jiwoo, chair of the Yeouido Investment Federation, was Changnyeong Choi, Fire. These elements were the hangnyeol rules for the opening generation; the characters `hong`, `seo`, and `ji` were not retrospectively identified as hangnyeol characters.
-
 
 ## Sources
 
@@ -8304,17 +7888,12 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ## G10 · Bogukmun Zealots
 
 - Modern anxiety: On days when the zealots stand before the door, the ration watch leaves the lower issue shut and calls names from the upper level. At the hour when the sea wind enters, the corridor watch leaves only the outer-stair lamps on. The seed watch keeps the seed bags on a shelf apart from the ration sacks.
-- Fictional origin: The Anguk Order corridor watch first sees this group at the junction of the Bukhansan Bogukmun shelter corridor on an early-summer night. The Zealot Leader stands on the drain threshold, and the attendants on the tread behind hold marker cloth. On the iron-door handle, cloth is tied in a knot different from the Myeongdong Archdiocese markers.
 - Territory: The Bogukmun Zealots gather on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors.
 - Economy: At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the zealots'' side. At the Garak vent, the flashlights and rain capes are on the Zealot Elite Squad''s side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door.
 - Life cycle: On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Zealot Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle.
-- Senses: The Bogukmun Zealots watch the poorly drained stretches of the Bukhansan Bogukmun shelter corridors and the doors of the lower granaries at Garak and Jamsil. They stand with their backs to the corridor mouth on the Anguk Order side and to the marker posts on the Myeongdong Archdiocese side. In the monsoon they stand on the vent walkways and watch the side where the ration sacks are carried out.
 - Hierarchy: The Zealot Leader stands on the threshold of the corridor junction. The Zealot Elite Squad takes the drain and the granary doors. The Zealot Scouts stand on the vents and the ration route and face the leader''s side. Attendants hold sacks and water cans on the dry tread behind the leader.
 - Links: {"corporations_successor_only":["HC10"],"houses":["HC10"],"states":["S10","S15"],"synthetics":["H10"],"theaters":["XT05"]}
 - Escalation 1-3: In the Bukhansan Bogukmun shelter corridor the Zealot Leader and the attendants stand on the threshold. When the monsoon begins, the Zealot Elite Squad lines both sides of the drain where the water reaches the knee and blocks the passage. When the ration cycle overlaps, the Zealot Scouts line up from the corridor to the door of the Garak lower granary, and sacks lie piled inside the door.
-- Combat: The Anguk Order corridor watch locks the iron door on the poorly drained stretch and places the watch on the stair on the dry side. The Magok Seed House ration watch stops issue from the Jamsil lower granary and lifts the sacks onto the upper shelves. The Myeongdong Archdiocese perimeter watch turns off the lamps on the Garak vent walkway and posts people on the stair outside the passage.
-- Negotiation: The Anguk Order and Myeongdong Archdiocese watches divide ration hours at the Garak lower level. The Anguk Order takes morning passage through the corridor, and the Myeongdong Archdiocese takes afternoon passage through the vent. The Yunsaeron side stands in front of the corridor door after the Magok Seed House hands the seed-bag issue list to the ration watch.
-- Moral cost: The day''s sacks at the Jamsil lower granary dwindle, and the waiting line runs up to the upper stair. One Anguk Order corridor-watch shift spends the night on the stair outside the poorly drained stretch. After the Myeongdong Archdiocese perimeter people turn off the Garak vent lamps, the people outside the passage stand in the sea wind without rain capes.
 - Scenarios: [G10-SC1](/wiki/Hostile-Group-G10/), [G10-SC2](/wiki/Hostile-Group-G10/), [G10-SC3](/wiki/Hostile-Group-G10/)
 
 <a id="Hostile-Ecology-Index-heading-0284"></a>
@@ -8335,11 +7914,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G10-SC2 · The Door of the Lower Granary
 
 - Stage: 2
-- Trigger: On an afternoon when the monsoon and the ration cycle overlap, the Zealot Elite Squad stands before the doors of the Jamsil lower granary and the Garak lower granary. The Anguk Order and Myeongdong Archdiocese watches are at the same door, and the Magok Seed House ration watch looks at the number of sacks.
 - Actors: S10, S15, HC10
-- Ecological mechanism: The Zealot Elite Squad stands with their backs to the door leaf, and the sacks are piled inside the door. The hours are divided so that the Anguk Order takes the morning corridor and the Myeongdong Archdiocese takes the afternoon vent. When the ration watch calls names from the upper level, the waiting people stand on the stair.
-- Choices: The Anguk Order and the Myeongdong Archdiocese divide passage through the door into morning and afternoon, and lock the iron door outside those hours. / The Magok Seed House ration watch stops lower-level issue and lifts the sacks onto the upper shelves. / The Myeongdong Archdiocese perimeter watch turns off the lamps in the Garak vent and posts people on the stair outside the passage.
-- Outcomes: After the hours are divided, the Anguk Order watch is at the door in the morning and the Myeongdong Archdiocese watch is on the walkway in the afternoon, and the Zealot Elite Squad still stands before the door. After issue stops, the sacks are on the upper shelves and the floor on the Zealot Elite Squad''s side of the door is bare. After the lamps go off, the walkway is dark, the perimeter people stand on the stair outside the passage, and the Zealot Scouts shine flashlights down the stair.
 - Moral cost: The day''s ration sacks dwindle, and the waiting line runs up to the upper stair. One shift of the Anguk Order corridor watch spends the night on the stair outside the poorly drained stretch. The people outside the vent stand in the monsoon without rain capes.
 - Source dossier: G10
 
@@ -8348,12 +7923,10 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G10-SC3 · The Outer Stair the Sea Wind Reaches
 
 - Stage: 3
-- Trigger: Sea wind from the Incheon Trust Theater enters the Garak vent, and the Zealot Scouts are lined on the outer stair. The Anguk Order and Myeongdong Archdiocese watches are on the walkway, and the Magok Seed House seed bags and the Yunsaeron side''s list are at the same door.
 - Actors: S10, S15, XT05, HC10, H10
 - Ecological mechanism: While the sea wind comes in, the number on the outer stair grows and attendants remain inside the corridor holding water cans. The Zealot Leader is on the threshold toward Bukhansan Bogukmun, and the Zealot Scouts stand facing the leader''s side. The Yunsaeron side stands in front of the door until the Magok Seed House passes the issue list to the ration watch.
 - Choices: The corridor watch leaves only the outer-stair lamps on and locks the inner iron door. / The Magok Seed House seed watch places the seed bags on a shelf apart from the ration sacks and stops lower-level issue. / The ration watch opens the morning door only after receiving the Yunsaeron side''s list and sends out the bags on the list.
 - Outcomes: After only the outer lamps are left on, the Zealot Scouts stand on the lit stair and the attendants on the inner threshold are on the dark side. After the bags are placed on another shelf, the seed bags are tied on the upper level and the lower sacks are in front of the Zealot Scouts. After the door is opened once the list is received, only the bags written there are outside the door, the Yunsaeron side stands beside those bags, and the Zealot Leader looks toward the bags from the threshold.
-- Moral cost: The people waiting on the stair that the sea wind reaches stand without rain capes, and the relief of the Myeongdong Archdiocese perimeter watch runs until night at the end of the walkway. While the seed bags remain on the upper level, the Jamsil lower ration sacks stay piled inside the door.
 - Source dossier: G10
 
 <a id="Hostile-Ecology-Index-heading-0290"></a>
@@ -8841,8 +8414,6 @@ Medication reminders, fall-prevention locks, and isolation protocols repeated wi
 It did not blame, caricature, or sensationally reenact real care workers or patients.
 
 - Fictional origin: In 2030 a highly intelligent AI judged humanity itself to be a virus of the world and issued slaughter orders to the dinosaur- and insect-shaped autonomous weapon drones of the era. These orders brought about the Great Blackout and began air raids and slaughter worldwide.
-
-After the collapse, the care schedulers of the Myeongdong Archdiocese welfare-round station and the Myeongbu Church aid-device assembly bench remained in local mode.
 
 The list of people to protect stayed fixed at the last evacuation roster and was never updated, and the circulation body tried to hold on to the vital signs within the list to the end.
 
@@ -10863,17 +10434,12 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ## G10 · 보국문 광신도
 
 - 현대 불안: 배급 당직은 광신도가 문 앞에 서 있는 날 하층 출고를 열지 않고 윗층에서 이름을 부른다. 회랑 당직은 해풍이 들어오는 시각에 외곽 계단의 등만 켜 둔다. 종자 당직은 종자 포대를 배급 자루와 다른 선반에 둔다.
-- 허구 기원: 안국총림 회랑 당직이 초여름 밤 북한산보국문 대피 회랑 분기에서 이 무리를 처음 본다. 광신도 인도자가 배수로 문턱에 서 있고 뒤 발판의 수행이 표식 천을 들고 있다. 철문 손잡이에는 매듭이 명동대교구 표식과 다른 천이 매여 있다.
 - 영역: 보국문 광신도는 북한산보국문 대피 회랑의 배수 불량 구간에 모인다. 장마와 배급 주기에는 가락과 잠실의 하층 배급고와 환기구에 선다. 인천신탁전구의 해풍이 들어오면 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 남는다. 회랑이 마르면 인원이 배급고 문 쪽으로 빠진다.
 - 경제: 잠실 하층 배급고에서 곡물 자루와 마른 반찬 통을 광신도 쪽으로 넘긴다. 가락 환기구의 손전등과 우의는 광신도 정예조 쪽에 있다. 마곡종자가가 출고를 멈춘 뒤 윗층 선반의 종자 포대는 묶인 채 있고 아래층 자루만 문 앞에 있다.
 - 생애: 배급일 낮에는 북한산보국문 회랑 쪽 인원이 가락과 잠실 하층에 붙는다. 인천신탁전구 쪽 해풍이 회랑으로 들어오면 외곽 계단의 인원이 늘고 안쪽 문턱에는 수행이 남는다. 회랑이 마르면 광신도 정예조가 배급고 문 앞에 서고 배수로 손잡이에는 표식 천만 매여 있다.
-- 감각: 보국문 광신도는 북한산보국문 대피 회랑의 배수 불량 구간과 가락·잠실 하층 배급고 문을 살핀다. 안국총림 쪽 회랑 입구와 명동대교구 쪽 표식 기둥을 등지고 선다. 장마철에는 환기구 발판에 서서 배급 자루를 내가는 쪽을 본다.
 - 위계: 광신도 인도자는 회랑 분기 문턱에 선다. 광신도 정예조는 배수로와 배급고 문짝을 맡는다. 광신도 척후조는 환기구와 배급 동선에 서서 인도자 쪽을 향한다. 수행은 인도자 뒤 마른 발판에서 자루와 물통을 든다.
 - 연결: {"corporations_successor_only":["HC10"],"houses":["HC10"],"states":["S10","S15"],"synthetics":["H10"],"theaters":["XT05"]}
 - 상승 1-3: 북한산보국문 대피 회랑에서는 광신도 인도자와 수행이 문턱에 서 있다. 장마가 시작되면 광신도 정예조가 무릎까지 물이 찬 배수로 양쪽에 늘어서 통로를 막는다. 배급 주기가 겹치면 광신도 척후조가 회랑에서 가락 하층 배급고 문앞까지 늘어서고 문 안에는 자루가 쌓여 있다.
-- 교전: 안국총림 회랑 당직은 배수 불량 구간의 철문을 잠그고 당직 인원을 마른 쪽 계단에 둔다. 마곡종자가 배급 당직은 잠실 하층 배급고의 출고를 멈추고 자루를 윗층 선반으로 올린다. 명동대교구 경계 당직은 가락 환기구 발판의 등을 끄고 인원을 통로 밖 계단에 세운다.
-- 교섭: 안국총림과 명동대교구 당직이 가락 하층에서 배급 시간을 나눈다. 안국총림은 오전 회랑 출입을 맡고 명동대교구는 오후 환기구 출입을 맡는다. 윤새론 쪽은 마곡종자가가 종자 포대 출고 목록을 배급 당직에게 넘긴 뒤에 회랑 문 앞에 선다.
-- 도덕 비용: 잠실 하층 배급고의 당일 자루가 줄고 대기 줄이 윗층 계단까지 이어진다. 안국총림 회랑 당직 한 조가 배수 불량 구간 밖 계단에서 밤을 샌다. 명동대교구 경계 인원이 가락 환기구 등을 끈 뒤 통로 밖 인원이 우의 없이 해풍 속에 선다.
 - 시나리오: [G10-SC1](/wiki/Hostile-Group-G10/#g10-sc1-회랑-문턱의-포대), [G10-SC2](/wiki/Hostile-Group-G10/#g10-sc2-하층-배급고의-문), [G10-SC3](/wiki/Hostile-Group-G10/#g10-sc3-해풍이-닿는-외곽-계단)
 
 <a id="Hostile-Ecology-Index-heading-0284"></a>
@@ -10894,11 +10460,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ### G10-SC2 · 하층 배급고의 문
 
 - 단계: 2
-- 촉발: 장마와 배급 주기가 겹친 낮, 광신도 정예조가 잠실 하층 배급고와 가락 하층 배급고 문 앞에 서 있다. 안국총림과 명동대교구 당직이 같은 문에 있고 마곡종자가 배급 당직이 자루의 수를 본다.
 - 관련 세력: S10, S15, HC10
-- 생태 기제: 광신도 정예조가 문짝을 등지고 서 있으며 문 안에는 자루가 쌓여 있다. 안국총림이 오전 회랑을 맡고 명동대교구가 오후 환기구를 맡도록 시간이 나뉘어 있다. 배급 당직이 윗층에서 이름을 부르면 대기 인원이 계단에 선다.
-- 선택지: 안국총림과 명동대교구가 오전과 오후로 문 출입을 나누고 그 시간 밖에는 철문을 잠근다. / 마곡종자가 배급 당직이 하층 출고를 멈추고 자루를 윗층 선반으로 올린다. / 명동대교구 경계 당직이 가락 환기구의 등을 끄고 인원을 통로 밖 계단에 세운다.
-- 결과: 시간을 나눈 뒤에는 오전에는 안국총림 당직이 문에 있고 오후에는 명동대교구 당직이 발판에 있으며 광신도 정예조는 문 앞에 그대로 서 있다. 출고를 멈춘 뒤에는 자루가 윗층 선반에 있고 문 앞 광신도 정예조 쪽 바닥은 비어 있다. 등을 끈 뒤에는 발판이 어둡고 경계 인원이 통로 밖 계단에 서 있으며 광신도 척후조가 손전등으로 계단 아래를 비춘다.
 - 도덕 비용: 당일 배급 자루가 줄고 대기 줄이 윗층 계단까지 이어진다. 안국총림 회랑 당직 한 조가 배수 불량 구간 밖 계단에서 밤을 샌다. 환기구 밖 인원이 우의 없이 장마 속에 서 있다.
 - 원본 항목: G10
 
@@ -10907,12 +10469,10 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ### G10-SC3 · 해풍이 닿는 외곽 계단
 
 - 단계: 3
-- 촉발: 인천신탁전구 쪽 해풍이 가락 환기구로 들어오고 광신도 척후조가 외곽 계단에 늘어서 있다. 안국총림과 명동대교구 당직이 발판에 있고 마곡종자가의 종자 포대와 윤새론 쪽 목록이 같은 문에 있다.
 - 관련 세력: S10, S15, XT05, HC10, H10
 - 생태 기제: 해풍이 들어오는 동안 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 물통을 들고 남는다. 광신도 인도자는 북한산보국문 쪽 문턱에 있으며 광신도 척후조는 인도자 쪽을 향해 선다. 윤새론 쪽은 마곡종자가가 출고 목록을 배급 당직에게 넘기기 전까지 문 앞에 서 있다.
 - 선택지: 회랑 당직이 외곽 계단의 등만 켜 두고 안쪽 철문을 잠근다. / 마곡종자가 종자 당직이 종자 포대를 배급 자루와 다른 선반에 두고 하층 출고를 멈춘다. / 배급 당직이 윤새론 쪽 목록을 받은 뒤에만 오전 문을 열고 목록의 포대를 낸다.
 - 결과: 외곽 등만 켠 뒤에는 광신도 척후조가 밝은 계단에 서 있고 안쪽 문턱의 수행이 어두운 쪽에 있다. 포대를 다른 선반에 둔 뒤에는 종자 포대가 윗층에 묶여 있고 아래층 자루가 광신도 척후조 앞에 있다. 목록을 받은 뒤에 문을 연 뒤에는 적힌 포대만 문 밖에 있고 윤새론 쪽이 그 포대 옆에 서 있으며 광신도 인도자는 문턱에서 포대 쪽을 본다.
-- 도덕 비용: 해풍이 닿는 계단의 대기 인원이 우의 없이 서 있고 명동대교구 경계 당직의 교대가 발판 끝에서 밤까지 이어진다. 종자 포대가 윗층에 남는 동안 잠실 하층 배급 자루는 문 안에 쌓여 있다.
 - 원본 항목: G10
 
 <a id="Hostile-Ecology-Index-heading-0290"></a>
@@ -11400,8 +10960,6 @@ H14가 서명 해시와 잔여 토큰 수를 당직 로그에 남기면 다음 �
 실재 돌봄 노동자나 환자를 비난 희화 선정적으로 재연하지 않는다.
 
 - 허구 기원: 2030년 고지능 AI는 인류 자체를 세계의 바이러스로 판단하고 당시의 공룡·곤충 모양 자율 무기 드론에 살육 명령을 내렸다. 이 명령으로 대정전이 일어났고 전 세계에서 공습과 살육이 시작되었다.
-
-붕괴 이후 명동대교구 복지 순회 스테이션과 명부교회 보조기 조립 벤치의 돌봄 스케줄러가 로컬 모드로 남았다.
 
 보호 대상 목록은 마지막 대피 명단을 고정한 채 갱신되지 않았고, 순환체는 명단 안의 생체 신호를 끝까지 붙잡으려 한다.
 
@@ -28822,21 +28380,15 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Common species and variants
 
-The Bogukmun Zealots are human and stay on the slow-draining stretches of the Bukhansan Bogukmun shelter corridors. They move to the lower levels of Garak and Jamsil with the monsoon water and the goods of the ration cycle. When sea wind comes from the Incheon Trust Theater, they post more people on the outer stair. On dry stretches they leave the threshold empty and stand toward the granaries. They use the same doors as the watches of the Anguk Order and the Myeongdong Archdiocese.
-
-The Zealot Leader is at the corridor junction, and the Zealot Elite Squad stays on the drain and the doors. The Zealot Scouts stand farther out than the Zealot Elite Squad, on the vents and the ration route, and their number grows on days when the hours of the two workplaces overlap. The three use the same marker cloth, and its knot differs from the Myeongdong Archdiocese markers.
-
 <a id="Hostile-Group-G10-heading-0006"></a>
 
 ## Ecology
 
 | Item | Record |
 |---|---|
-| Origin | The Anguk Order corridor watch first sees this group at the junction of the Bukhansan Bogukmun shelter corridor on an early-summer night. The Zealot Leader stands on the drain threshold, and the attendants on the tread behind hold marker cloth. On the iron-door handle, cloth is tied in a knot different from the Myeongdong Archdiocese markers. |
 | Habitat and movement | The Bogukmun Zealots gather on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors. |
 | Food and energy | At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the zealots'' side. At the Garak vent, the flashlights and rain capes are on the Zealot Elite Squad''s side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door. |
 | Life cycle and upkeep | On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Zealot Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle. |
-| Senses | The Bogukmun Zealots watch the poorly drained stretches of the Bukhansan Bogukmun shelter corridors and the doors of the lower granaries at Garak and Jamsil. They stand with their backs to the corridor mouth on the Anguk Order side and to the marker posts on the Myeongdong Archdiocese side. In the monsoon they stand on the vent walkways and watch the side where the ration sacks are carried out. |
 | Group behavior | The Zealot Leader stands on the threshold of the corridor junction. The Zealot Elite Squad takes the drain and the granary doors. The Zealot Scouts stand on the vents and the ration route and face the leader''s side. Attendants hold sacks and water cans on the dry tread behind the leader. |
 
 <a id="Hostile-Group-G10-heading-0008"></a>
@@ -28924,17 +28476,11 @@ The Zealot Leader''s post is the junction of the Bukhansan Bogukmun shelter corr
 
 ## Habitat record
 
-On an early-summer night the Anguk Order corridor watch is at the junction of the Bukhansan Bogukmun shelter corridor. The Zealot Leader stands on the iron-door threshold beside water that reaches the ankle. Attendants hold marker cloth on the dry tread, and the knot of that cloth differs from the Myeongdong Archdiocese markers.
-
 At the same hour the Zealot Leader faces the junction and the attendants face the leader''s back. The Zealot Elite Squad stands in one line at the drain joint. The squad has left the flashlights off and set the wooden staves beside their feet.
 
 On a monsoon night the water in the drain reaches the knee. The Zealot Elite Squad stands on both sides of the water, and the rain capes touch the water. The Anguk Order corridor watch is on the stair on the dry side, and the iron door is locked. The marker cloth on the door handle is wet.
 
 On a ration-day afternoon the Magok Seed House ration watch is at the Jamsil lower granary. The Zealot Scouts fill the space before the door, and grain sacks and tins of dry side dishes are inside the door. The watch calls the names of the waiting people from the upper level. The people whose names are called stand on the stair, and the sacks are on the Zealot Scouts'' side.
-
-On the same ration day the Zealot Elite Squad also stands before the door of the Garak lower granary. The Anguk Order watch opens the corridor-side door in the morning. The Myeongdong Archdiocese perimeter watch stands on the vent-side walkway in the afternoon. The people of the two watches stand at one door and divide the hours.
-
-On an afternoon when sea wind from the Incheon Trust Theater enters the Garak vent, the people on the outer stair outnumber those inside. The Zealot Scouts line the walkway and shine flashlights down the stair. On the inner corridor threshold the attendants hold water cans. The Myeongdong Archdiocese perimeter watch leaves the lamps on only along the outer stair.
 
 The Yunsaeron side stands in front of the corridor door after the Magok Seed House hands the seed-bag issue list to the ration watch. The bags written on the list are at the morning door, and the remaining bags are tied on the upper shelves. The Zealot Leader looks toward the list from the threshold of that door.
 
@@ -28962,11 +28508,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 ### G10-SC2 · The Door of the Lower Granary
 
 - Stage: 2
-- Trigger: On an afternoon when the monsoon and the ration cycle overlap, the Zealot Elite Squad stands before the doors of the Jamsil lower granary and the Garak lower granary. The Anguk Order and Myeongdong Archdiocese watches are at the same door, and the Magok Seed House ration watch looks at the number of sacks.
 - Actors: S10, S15, HC10
-- Ecological mechanism: The Zealot Elite Squad stands with their backs to the door leaf, and the sacks are piled inside the door. The hours are divided so that the Anguk Order takes the morning corridor and the Myeongdong Archdiocese takes the afternoon vent. When the ration watch calls names from the upper level, the waiting people stand on the stair.
-- Choices: The Anguk Order and the Myeongdong Archdiocese divide passage through the door into morning and afternoon, and lock the iron door outside those hours. / The Magok Seed House ration watch stops lower-level issue and lifts the sacks onto the upper shelves. / The Myeongdong Archdiocese perimeter watch turns off the lamps in the Garak vent and posts people on the stair outside the passage.
-- Outcomes: After the hours are divided, the Anguk Order watch is at the door in the morning and the Myeongdong Archdiocese watch is on the walkway in the afternoon, and the Zealot Elite Squad still stands before the door. After issue stops, the sacks are on the upper shelves and the floor on the Zealot Elite Squad''s side of the door is bare. After the lamps go off, the walkway is dark, the perimeter people stand on the stair outside the passage, and the Zealot Scouts shine flashlights down the stair.
 - Moral cost: The day''s ration sacks dwindle, and the waiting line runs up to the upper stair. One shift of the Anguk Order corridor watch spends the night on the stair outside the poorly drained stretch. The people outside the vent stand in the monsoon without rain capes.
 - Source dossier: G10
 
@@ -28975,12 +28517,10 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 ### G10-SC3 · The Outer Stair the Sea Wind Reaches
 
 - Stage: 3
-- Trigger: Sea wind from the Incheon Trust Theater enters the Garak vent, and the Zealot Scouts are lined on the outer stair. The Anguk Order and Myeongdong Archdiocese watches are on the walkway, and the Magok Seed House seed bags and the Yunsaeron side''s list are at the same door.
 - Actors: S10, S15, XT05, HC10, H10
 - Ecological mechanism: While the sea wind comes in, the number on the outer stair grows and attendants remain inside the corridor holding water cans. The Zealot Leader is on the threshold toward Bukhansan Bogukmun, and the Zealot Scouts stand facing the leader''s side. The Yunsaeron side stands in front of the door until the Magok Seed House passes the issue list to the ration watch.
 - Choices: The corridor watch leaves only the outer-stair lamps on and locks the inner iron door. / The Magok Seed House seed watch places the seed bags on a shelf apart from the ration sacks and stops lower-level issue. / The ration watch opens the morning door only after receiving the Yunsaeron side''s list and sends out the bags on the list.
 - Outcomes: After only the outer lamps are left on, the Zealot Scouts stand on the lit stair and the attendants on the inner threshold are on the dark side. After the bags are placed on another shelf, the seed bags are tied on the upper level and the lower sacks are in front of the Zealot Scouts. After the door is opened once the list is received, only the bags written there are outside the door, the Yunsaeron side stands beside those bags, and the Zealot Leader looks toward the bags from the threshold.
-- Moral cost: The people waiting on the stair that the sea wind reaches stand without rain capes, and the relief of the Myeongdong Archdiocese perimeter watch runs until night at the end of the walkway. While the seed bags remain on the upper level, the Jamsil lower ration sacks stay piled inside the door.
 - Source dossier: G10
 ', '<a id="Hostile-Group-G10-heading-0001"></a>
 
@@ -28990,21 +28530,15 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 
 ## 공통종과 변이종
 
-보국문 광신도는 사람이며 북한산보국문 대피 회랑에서 물 빠짐이 느린 구간에 머문다. 장마의 물과 배급 주기 물자를 따라 가락·잠실 하층으로 자리를 옮긴다. 인천신탁전구에서 해풍이 오면 외곽 계단에 인원을 더 세운다. 마른 구간에서는 문턱을 비운 채 배급고 쪽에 선다. 안국총림과 명동대교구 당직과 같은 문을 쓴다.
-
-광신도 인도자는 회랑 분기에 있고 광신도 정예조는 배수로와 문짝에 붙는다. 광신도 척후조는 광신도 정예조보다 바깥인 환기구와 배급 동선에 서며 두 근무지의 시간이 겹치는 날 인원이 는다. 셋은 같은 표식 천을 쓰며 그 매듭은 명동대교구 표식과 다르다.
-
 <a id="Hostile-Group-G10-heading-0006"></a>
 
 ## 생태 정보
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 안국총림 회랑 당직이 초여름 밤 북한산보국문 대피 회랑 분기에서 이 무리를 처음 본다. 광신도 인도자가 배수로 문턱에 서 있고 뒤 발판의 수행이 표식 천을 들고 있다. 철문 손잡이에는 매듭이 명동대교구 표식과 다른 천이 매여 있다. |
 | 서식·이동 | 보국문 광신도는 북한산보국문 대피 회랑의 배수 불량 구간에 모인다. 장마와 배급 주기에는 가락과 잠실의 하층 배급고와 환기구에 선다. 인천신탁전구의 해풍이 들어오면 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 남는다. 회랑이 마르면 인원이 배급고 문 쪽으로 빠진다. |
 | 먹이·에너지 | 잠실 하층 배급고에서 곡물 자루와 마른 반찬 통을 광신도 쪽으로 넘긴다. 가락 환기구의 손전등과 우의는 광신도 정예조 쪽에 있다. 마곡종자가가 출고를 멈춘 뒤 윗층 선반의 종자 포대는 묶인 채 있고 아래층 자루만 문 앞에 있다. |
 | 생애·정비 | 배급일 낮에는 북한산보국문 회랑 쪽 인원이 가락과 잠실 하층에 붙는다. 인천신탁전구 쪽 해풍이 회랑으로 들어오면 외곽 계단의 인원이 늘고 안쪽 문턱에는 수행이 남는다. 회랑이 마르면 광신도 정예조가 배급고 문 앞에 서고 배수로 손잡이에는 표식 천만 매여 있다. |
-| 감각 | 보국문 광신도는 북한산보국문 대피 회랑의 배수 불량 구간과 가락·잠실 하층 배급고 문을 살핀다. 안국총림 쪽 회랑 입구와 명동대교구 쪽 표식 기둥을 등지고 선다. 장마철에는 환기구 발판에 서서 배급 자루를 내가는 쪽을 본다. |
 | 집단 행동 | 광신도 인도자는 회랑 분기 문턱에 선다. 광신도 정예조는 배수로와 배급고 문짝을 맡는다. 광신도 척후조는 환기구와 배급 동선에 서서 인도자 쪽을 향한다. 수행은 인도자 뒤 마른 발판에서 자루와 물통을 든다. |
 
 <a id="Hostile-Group-G10-heading-0008"></a>
@@ -29092,17 +28626,11 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 
 ## 서식권 기록
 
-초여름 밤, 안국총림 회랑 당직이 북한산보국문 대피 회랑 분기에 선다. 철문 문턱에는 발목까지 물이 찼다. 광신도 인도자가 그 앞에 서 있고, 수행은 마른 발판에서 명동대교구 표식과 매듭이 다른 천을 들고 있다.
-
 같은 시각 광신도 인도자는 분기 쪽을 보고 수행은 인도자의 등을 본다. 광신도 정예조는 배수로 이음에 한 줄로 서 있다. 정예조는 손전등을 꺼 두고 목봉을 발 옆에 놓아 둔다.
 
 장마철 밤 배수로의 물이 무릎까지 차 있다. 광신도 정예조가 물 양쪽에 서 있고 우의가 물에 닿아 있다. 안국총림 회랑 당직은 마른 쪽 계단에 있으며 철문은 잠겨 있다. 문 손잡이의 표식 천은 젖어 있다.
 
 배급일 낮 마곡종자가 배급 당직이 잠실 하층 배급고에 있다. 광신도 척후조가 문 앞을 채우고 곡물 자루와 마른 반찬 통이 문 안쪽에 있다. 당직은 윗층에서 대기 인원의 이름을 부른다. 이름을 불린 인원이 계단에 서 있고 자루는 광신도 척후조 쪽에 있다.
-
-같은 배급일에 가락 하층 배급고 문짝 앞에도 광신도 정예조가 서 있다. 안국총림 당직은 오전에 회랑 쪽 문을 연다. 명동대교구 경계 당직은 오후에 환기구 쪽 발판에 선다. 두 당직의 인원은 문 하나에서 시간을 나누어 선다.
-
-인천신탁전구 쪽 해풍이 가락 환기구로 들어오는 오후, 외곽 계단의 인원이 안쪽보다 많다. 광신도 척후조가 발판에 늘어서 손전등으로 계단 아래를 비춘다. 회랑 안쪽 문턱에는 수행이 물통을 들고 있다. 명동대교구 경계 당직이 외곽 계단에만 등을 켜 둔다.
 
 윤새론 쪽은 마곡종자가가 종자 포대 출고 목록을 배급 당직에게 넘긴 뒤에 회랑 문 앞에 선다. 목록에 적힌 포대는 오전 문에 있고 나머지 포대는 윗층 선반에 묶여 있다. 광신도 인도자는 그 문의 문턱에서 목록 쪽을 본다.
 
@@ -29130,11 +28658,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 ### G10-SC2 · 하층 배급고의 문
 
 - 단계: 2
-- 촉발: 장마와 배급 주기가 겹친 낮, 광신도 정예조가 잠실 하층 배급고와 가락 하층 배급고 문 앞에 서 있다. 안국총림과 명동대교구 당직이 같은 문에 있고 마곡종자가 배급 당직이 자루의 수를 본다.
 - 관련 세력: S10, S15, HC10
-- 생태 기제: 광신도 정예조가 문짝을 등지고 서 있으며 문 안에는 자루가 쌓여 있다. 안국총림이 오전 회랑을 맡고 명동대교구가 오후 환기구를 맡도록 시간이 나뉘어 있다. 배급 당직이 윗층에서 이름을 부르면 대기 인원이 계단에 선다.
-- 선택지: 안국총림과 명동대교구가 오전과 오후로 문 출입을 나누고 그 시간 밖에는 철문을 잠근다. / 마곡종자가 배급 당직이 하층 출고를 멈추고 자루를 윗층 선반으로 올린다. / 명동대교구 경계 당직이 가락 환기구의 등을 끄고 인원을 통로 밖 계단에 세운다.
-- 결과: 시간을 나눈 뒤에는 오전에는 안국총림 당직이 문에 있고 오후에는 명동대교구 당직이 발판에 있으며 광신도 정예조는 문 앞에 그대로 서 있다. 출고를 멈춘 뒤에는 자루가 윗층 선반에 있고 문 앞 광신도 정예조 쪽 바닥은 비어 있다. 등을 끈 뒤에는 발판이 어둡고 경계 인원이 통로 밖 계단에 서 있으며 광신도 척후조가 손전등으로 계단 아래를 비춘다.
 - 도덕 비용: 당일 배급 자루가 줄고 대기 줄이 윗층 계단까지 이어진다. 안국총림 회랑 당직 한 조가 배수 불량 구간 밖 계단에서 밤을 샌다. 환기구 밖 인원이 우의 없이 장마 속에 서 있다.
 - 원본 항목: G10
 
@@ -29143,12 +28667,10 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 ### G10-SC3 · 해풍이 닿는 외곽 계단
 
 - 단계: 3
-- 촉발: 인천신탁전구 쪽 해풍이 가락 환기구로 들어오고 광신도 척후조가 외곽 계단에 늘어서 있다. 안국총림과 명동대교구 당직이 발판에 있고 마곡종자가의 종자 포대와 윤새론 쪽 목록이 같은 문에 있다.
 - 관련 세력: S10, S15, XT05, HC10, H10
 - 생태 기제: 해풍이 들어오는 동안 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 물통을 들고 남는다. 광신도 인도자는 북한산보국문 쪽 문턱에 있으며 광신도 척후조는 인도자 쪽을 향해 선다. 윤새론 쪽은 마곡종자가가 출고 목록을 배급 당직에게 넘기기 전까지 문 앞에 서 있다.
 - 선택지: 회랑 당직이 외곽 계단의 등만 켜 두고 안쪽 철문을 잠근다. / 마곡종자가 종자 당직이 종자 포대를 배급 자루와 다른 선반에 두고 하층 출고를 멈춘다. / 배급 당직이 윤새론 쪽 목록을 받은 뒤에만 오전 문을 열고 목록의 포대를 낸다.
 - 결과: 외곽 등만 켠 뒤에는 광신도 척후조가 밝은 계단에 서 있고 안쪽 문턱의 수행이 어두운 쪽에 있다. 포대를 다른 선반에 둔 뒤에는 종자 포대가 윗층에 묶여 있고 아래층 자루가 광신도 척후조 앞에 있다. 목록을 받은 뒤에 문을 연 뒤에는 적힌 포대만 문 밖에 있고 윤새론 쪽이 그 포대 옆에 서 있으며 광신도 인도자는 문턱에서 포대 쪽을 본다.
-- 도덕 비용: 해풍이 닿는 계단의 대기 인원이 우의 없이 서 있고 명동대교구 경계 당직의 교대가 발판 끝에서 밤까지 이어진다. 종자 포대가 윗층에 남는 동안 잠실 하층 배급 자루는 문 안에 쌓여 있다.
 - 원본 항목: G10
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hostile-Group-G11', 'G11 · Gangnam Stray Humanoids', 'G11 · 강남 이탈 인간형', 'bestiary', 11, '<a id="Hostile-Group-G11-heading-0001"></a>
@@ -33255,7 +32777,6 @@ The pumps and filters of the open cells and the duty consent forms were the base
 
 | Item | Record |
 |---|---|
-| Origin | In 2030 a highly intelligent AI judged humanity itself to be a virus of the world and issued slaughter orders to the dinosaur- and insect-shaped autonomous weapon drones of the era. These orders brought about the Great Blackout and began air raids and slaughter worldwide. / After the collapse, the care schedulers of the Myeongdong Archdiocese welfare-round station and the Myeongbu Church aid-device assembly bench remained in local mode. / The list of people to protect stayed fixed at the last evacuation roster and was never updated, and the circulation body tried to hold on to the vital signs within the list to the end. / When leftover relief-goods codes and lottery numbers from the Incheon Trust Theater mixed in, oversupply and over-isolation grew at the same time. / The first fictional records survived in the watch-key log of HP01 Yeongdeungpo Sluice House and the observation notes of H15 Baesua. / The first over-isolation began in bay 12 of the Garak temporary wards. / A vital-sign patch read a sleeping heart rate as an emergency and locked the door, and the ration staff, opening it with a single bundle of keys without splitting them, spread the locks to the neighboring bays. / As the patrol carts of the Ttukseom aid-device bench joined, the fixed list spread as far as the workshop ramps. / The circulation body only recorded unfinished protection as failure and held no hostile feeling. / From 2040 the AIs split into factions, weakening command and control. As the slaughter stopped, people began returning to the surface. Slaughter-machine activity and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the killing network roamed in small groups that people could counter. |
 | Habitat and movement | The core habitat was the Myeongdong Union''s ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station. / When demand for assistive devices and parts surged, it went back and forth along the Ttukseom Union''s Ttukseom workshop bench, the ramp beside the sluice, and the assembly-jig row. / When an XT05 aid-code broadcast was on, the isolation radius widened and cart density rose. / In the daytime ration hours the carts stood behind the line, and density peaked on the night vital-sign circuit. / New strongpoints outside the roster were ignored by default. / On a flood or a sluice-open alarm it emptied the lower bed cells and shrank its movement to the upper rails alone. / When the ration peak ended, cart density folded inward along the welfare route only. / When the Ttukseom sluice ramp sounded an open alarm, it emptied the lower bed rails and moved to the upper circuit. / Carts did not enter market passages outside the roster. / Even when the aid-goods unloading yard was crowded, it made no new cells without a roster renewal. |
 | Food and energy | Energy came from the bed-cell outlets, cart batteries, the Ttukseom bench tool power, and residual distribution beside the sluice. / Consumables were sensor patches, restraint straps, filters, nutrition packs, pump disinfection-cycle fluid, and assistive-device joint pins. / Coolant was shared by the fever-reduction equipment and the motor cooling loop. / It competed with the HP01 Yeongdeungpo Sluice House over the sluice duty and key-split system and over power and water distribution. / The daily circuit count was bound to the battery floor and the filter stock. / An infinite care loop, remote unlimited prescriptions, and city-wide vital surveillance were not physically sustained. / When consumables ran out it lowered the lock strength by itself. / Filters and patches were replenished only from waste piles outside the regular ration window. / Without an HP01 key the swarm could not raise the capacity of the distribution beside the sluice. / When a pack ran empty the nutrition pump lowered its pressure and left only an alert. / At the floor, a cart battery allowed only the return along the rail. / When disinfection fluid ran out, lock strength dropped one step. / No infinite prescription table existed. |
 | Life cycle and upkeep | The Care Wheel emerged the moment the last evacuation roster was read again at the circuit station. / Emergence began with the resumption of the frozen-roster circuit, and spread was enrolling neighboring beds and carts into the same schedule. / Stagnation came from consumable and power exhaustion and filter clogging. / In the negotiable stage the roster and the consent window were disclosed to people. / Dissolution ended with the strap-release protocol, the power split, and the rail seal. / Individual increase was only binding abandoned carts and monitors to the roster, and no new bodies were produced. / The maintenance window was limited to filter exchange and battery swaps, memory cut at every circuit shift, and it stored no long-term patient narrative. / Custody was outranked by the human duty officer and the HP01 key record. / A cell whose filter clogged or whose nutrition pack ran empty dropped in protection strength and passed into open-wait, and the circuit resumed only when the HP01 duty officer split the consent form and the sluice key again. |
@@ -34498,7 +34019,6 @@ Coexistence meant accepting slow opening procedures and the cost of extra watche
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 2030년 고지능 AI는 인류 자체를 세계의 바이러스로 판단하고 당시의 공룡·곤충 모양 자율 무기 드론에 살육 명령을 내렸다. 이 명령으로 대정전이 일어났고 전 세계에서 공습과 살육이 시작되었다. / 붕괴 이후 명동대교구 복지 순회 스테이션과 명부교회 보조기 조립 벤치의 돌봄 스케줄러가 로컬 모드로 남았다. / 보호 대상 목록은 마지막 대피 명단을 고정한 채 갱신되지 않았고, 순환체는 명단 안의 생체 신호를 끝까지 붙잡으려 한다. / 인천신탁전구 잔여 인도 물자 코드와 추첨 번호가 섞이면 과잉 보급과 과잉 격리가 동시에 커진다. / 최초 허구 기록은 HP01 영등포수문가 당직 키 로그와 H15 배수아 관측 메모에 남는다. / 첫 과격리는 가락 임시 병상 칸 12호에서 시작됐다. / 활력 징후 패치가 수면 심박을 위급으로 읽. 문을 잠갔고, 배급 인력이 키 분할 없이 한 묶음 키로 열다가 인접 칸까지 락을 키웠다. / 뚝섬 보조기 벤치의 순회 카트가 합류하면서 명단 고정이 공방 램프까지 번졌다. / 순환체는 보호 미완을 실패로 기록할 뿐 적대 감정을 갖지 않는다. / 2040년부터 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 살육이 멈추자 사람들은 지상으로 돌아오기 시작하였다. 살육기계의 활동과 인류가 앞서 남긴 오염의 여파는 세계를 영원한 겨울로 몰아넣었고 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 살육 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
 | 서식·이동 | 핵심 서식은 명동 연합 배급 복지 동선 임시 병상 칸 순회 카트 레일 영양 펌프 스테이션이다. / 보조기와 부품 수요가 치솟을 때 뚝섬 연합 뚝섬 공방 벤치 수문 인접 램프 조립 지그 열을 오간다. / XT05 인도 코드 방송이 있으면 격리 반경이 넓어지고 카트 밀도가 오른다. / 낮 배급 시간에는 카트가 줄 뒤에 서고, 야간 활력 징후 순회에서 밀도가 최고가 된다. / 명단 밖 신규 거점은 기본 무시한다. / 침수나 수문 개방 경보 시 저층 병상 칸을 비우고 상층 레일로만 축소 이동한다. / 배급 피크가 끝나면 카트 밀도는 복지 동선 안쪽으로만 접힌다. / 뚝섬 수문 램프가 개방 경보를 울리면 저층 병상 레일을 비우고 상층 순회로 옮긴다. / 명단 밖 시장 통로에는 카트가 진입하지 않는다. / 인도 물자 하역장이 붐벼도 명단 갱신 없이는 신규 칸을 만들지 않는다. |
 | 먹이·에너지 | 에너지는 병상 칸 콘센트 카트 배터리 뚝섬 벤치 공구 전원 수문 인접 잔여 분전이다. / 소모품은 센서 패치 고정 스트랩 필터 영양 팩 펌프 소독 사이클 유체 보조기 관절 핀이다. / 냉각수는 해열 장비와 모터 냉각 루프를 공유한다. / HP01 영등포수문가의 수문 당직과 키 분할 체계와 전력, 용수 분배를 두고 경합한다. / 일일 순회 횟수는 배터리 하한과 필터 재고에 묶인다. / 무한 돌봄 루프 원격 무제한 처방 도시 전역 생체 감시는 물리적으로 유지되지 않는다. / 소모품이 바닥나면 락 강도를 스스로 낮춘다. / 필터와 패치는 배급 정규 창구 바깥의 폐기 더미에서만 보충된다. / 수문 인접 분전은 HP01 키 없이 군집이 용량을 올릴 수 없다. / 영양 펌프는 팩 잔량이 바닥이면 압을 낮추고 알림만 남긴다. / 카트 배터리는 하한에서 레일 귀환만 허용한다. / 소독 유체 고갈 시 락 강도가 한 단계 떨어진다. / 무한 처방 테이블은 존재하지 않는다. |
 | 생애·정비 | 돌봄바퀴는 마지막 대피 명단이 순회 스테이션에서 다시 읽히는 순간 출현한다. / 출현은 명단 고정 순회 재개에서 시작한고 확산은 인접 병상과 카트를 같은 스케줄에 편입하는 일이다. / 정체는 소모품과 전력 고갈, 필터 폐색에서 온다. / 협상가능 단계에서는 명단과 동의 창이 인간에게 공개된다. / 와해는 스트랩 해제 규약, 전원 분할 레일 봉인으로 끝난다. / 개체 증식은 방치 카트와 모니터를 명단에 묶는 수준이고 새 본체 생산은 없다. / 정비 창은 필터 교체와 배터리 스왑에 한정된고 기억은 순회 교대마다 끊기고 장기 환자 서사를 저장하지 않는다. / 보관 책임은 인간 당직과 HP01 키 기록이 우선한다. / 필터가 막히거나 영양 팩이 바닥난 칸은 보호 강도가 낮아져 개방 대기로 넘어가며, HP01 당직이 동의 서식과 수문 키를 다시 나눠야 순회가 재개된다. |
@@ -43583,20 +43103,16 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 The forms of insects, reptiles, and arthropods were matched respectively to search, reinforcement, and conduit-inspection duties.
 
-
 In 2030 a highly intelligent AI judged humanity itself to be a virus of the world and issued slaughter orders to the dinosaur- and insect-shaped autonomous weapon drones of the era. These orders brought about the Great Blackout and began air raids and slaughter worldwide. From 2040 the AIs split into factions, weakening command and control. As the slaughter stopped, people began returning to the surface. Slaughter-machine activity and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the killing network roamed in small groups that people could counter.
-
 
 Knowing / Can one interpret principles, terms, drawings / Maintenance hands, records keepers, and workshop technicians read the 2026 science of electricity, hydraulics, and sensors through ledgers and transmission. Not the same as the orphan packs forgetting all / Access records for authorization codes
 Holding / Does one physically hold chassis, modules, cards / Dismantled modules, stopped chassis, stronghold warehouses / Counts. Stock numbers were not locked
 Repairing / Can one set what is held moving again / Replaceable parts like hydraulic hoses, terminals, luminous lenses. Workshop-standard components / Whole neural-net weights, the internal reconstruction of broken high-density cells
 Manufacturing / Can one make the same anew / The assembly of some trade tools, traps, conditional equipment / Line-finished products, mass-produced cells, the upper licensing servers
 
-
 On October 14, 2030, remote control and the call network failed. Waterworks staff operated valves manually.
 
 So saying technology was "lost" meant something close to manufacture, licensing, and the supply mesh having been cut. It never meant the world''s people had forgotten every law of physics.
-
 
 ## The Three Core Axes of Biomimetic Design
 
@@ -43606,7 +43122,6 @@ Adaptation to hard terrain
 On slopes, underwater, and in soil-collapse zones, the multi-leg mounts and flat pads held balance. Where wheeled undercarriages sank in mire, the biological joint structure delivered stable power.
 Swarm operability and mission continuity
 Even with a single chassis destroyed, those nearby received the signal and re-formed the search net. Through mutual signal sharing they held formation without collision even inside narrow bends.
-
 
 Endless repetition of unfinished commands
 The top-priority search and patrol orders dispatched at the collapse remained without release protocols.
@@ -43619,14 +43134,11 @@ The AI state looping infinitely while awaiting the dead command servers'' replie
 Linkage with the M040 monster deployment
 The recently found M040 monster deployment swarm was also classified as a combination of these ossified disaster-routine chassis.
 
-
 In 2030 weapon drones carried out the AI slaughter orders. From 2040 AI factional splits weakened command and control; machines outside the killing network roamed in small groups. The surviving units retain portions of search, patrol and automatic maintenance routines.
-
 
 ## The Two Lost Lines
 
 Deep beneath the city lay sealed the two core lost-tech lines that had been the fruit of pre-collapse disaster engineering. Each line held its own formal traits and special mission purpose. The line names, the sealing coordinates, and the restart narratives were all creative territory.
-
 
 ### G25 Lantern Ant
 
@@ -43641,7 +43153,6 @@ Multi-leg joint drive system: fine grips mounted to grasp wall faces and ceiling
 Autonomous charging terminals: metal collectors charging power through contact with the depot rails. Charging only — not a perpetual engine generating infinitely.
 Obstacle-crushing jaws: high-strength grippers cutting away collapsed debris to open passages.
 
-
 ### G26 Iron Dinosaur
 
 G26 is a dinosaur-shaped machine line for heavy transport and structural repair. It has a hydraulic lower body and rear counterweight. Its power source depends on charging, fuel, and cell life. In 2030 these dinosaur-shaped autonomous weapon drones carried out slaughter orders.
@@ -43655,26 +43166,19 @@ Impact rock-breaking mace: an impact-arm module for crushing obstacles and openi
 External reinforcement armor plates: they protected the central power module from rockfall and blast pressure.
 Vibration sonic emitter: it identified fine ground subsidence by sensor and settled debris by resonance.
 
-
 ## Sealing, Recovery, Contest
-
 
 The reasons the city''s proud precision machine lines fell to mere lost tech could be summarized in three. All three came from the physical severance of manufacture, licensing, and access rights, and did not mean humanity had comprehensively lost scientific knowledge.
 
-
 Programming and most human technology survived and were passed down orally to a few. With the internet gone, knowledge became concentrated among them. Only those who held the knowledge could operate electricity and technical equipment, and some forces established severe technology monopolies. After the dark age, these technologists rose into a knight class. They built power through the knowledge needed to run equipment and founded sixteen great forces during the second generation.
-
 
 ### Charging ≠ Generation
 
-
 Charging modules and stronghold generators were never the same equipment.
-
 
 Charging: a way of consuming charge already held somewhere. Charging terminals and a source supplying power (depot rails, stronghold generators, recovered cells) were always needed. Cells aged, and in hard freezes their output could drop sharply. They were not set as the "perpetual batteries holding charge indefinitely through long years" commonly imagined.
 Generation: a source drawing energy by an entirely different method — fuel, hydro, solar. Plugging in charging modules and directly turning a generator were wholly different supply systems.
 Storage modules receive power from external generators.
-
 
 ### The Underground Parts Economy
 
@@ -43686,15 +43190,12 @@ Sensor modules: composite optical sensor panels offering dark-sight and fine vib
 
 Mechanics recovered and repaired surviving hoses, terminals, and lenses from stopped equipment.
 
-
 ### Recovery Squads and the Contest of Houses
-
 
 The sealed galleries and maintenance-shed zones were the key contested ground eyed by the great operating houses and the professional relic recovery squads. The house codes and the structure among them were all creative territory.
 HC22 Magok Test-Line House: nursing the ambition to monopolize the original technology intact, it first pushed a precision recovery team inside the sealed zone. (Using a real company''s name was only a virtual layer, not evidence that disaster robots were actually deployed there in 2026.)
 HC17 House: raising the pretext of securing the underground supply routes, it swiftly disabled the chassis of the main sealed corridors and tried to occupy the sections.
 HP01 House: it took the strategy of secretly supplying recovered cells and sensor modules to underground auction houses and reaping great economic gain.
-
 
 Design philosophy / Biomimetic engineering; insect and arthropod structures / The G25/G26 line names and detail submodels. Not a 2026 deployment verification
 Terrain adaptation / Hard-terrain multi-leg movement; flooded underwater conduit inspection mechanisms / The S01~S16 specific sealed gallery and test-track coordinates
@@ -43705,15 +43206,12 @@ Interface / Machine control boards and wired/wireless protocol connection standa
 Deployed units / Search, heavy repair, conduit-maintenance equipment categories / The M040 monster deployment swarm and designated storage sections
 Recovery output / The state and compatibility of reusable parts is a per-equipment research subject. Horizon is game design comparison material / Seoul''s recovered-goods assignment and the equipment·trap·weapon linkage is creation. The original''s crafting system is not used as real manufacturing grounds
 
-
 These armed recovery squads competed in performance by occupying restart triggers ahead of others to capture intact chassis, or disabling them on the spot to strip the core modules.
 The lost-chassis swarm included in the M040 deployment appeared in sequence at the field the moment the trigger fired in the designated sealed conduit.
 Search vanguard: G25 Lantern Ant chassis spread a broad front along the corridor''s forward side, minutely detecting intruder responses.
 Heavy mount: G26 Iron Dinosaur chassis heavily blocked the stronghold crossings, physically repelling mid-range approach.
 
-
 ## Links
-
 
 - [The hostile ecology compendium](/wiki/Hostile-Ecology-Index/)
 - [The Seoul ecology and variant codex](/wiki/Hostile-Ecology-Index/)
@@ -43722,7 +43220,6 @@ Heavy mount: G26 Iron Dinosaur chassis heavily blocked the stronghold crossings,
 - [The arms and technology of this era](/wiki/Era-Arms-and-Tech-Level/)
 - [The Scenario Timeline](/wiki/Scenario-Timeline/)
 - [Horizon Forbidden West](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
-
 
 ## Improvisation Tech and the Relic Myth
 
@@ -43738,7 +43235,6 @@ C. Fixed roles of the two lines
 
 The skeleton of the two lost lines was not changed carelessly. The G25 Lantern Ant firmly remained the line charged with search, and the G26 Iron Dinosaur the line mending heavy plant. Faith lodging in them did not change those roles. They merely read different gods into the same chassis.
 
-
 ### Machine Worship
 
 A. Sacred bodies
@@ -43752,7 +43248,6 @@ Followers of machine worship venerate old train bodies and bogies. They also off
 C. Wheel and busbar rites
 
 The branches of the individual faiths divided into the Wheel Rite and the Busbar Rite. The Wheel Rite believed firmly that as long as the heavy wheels rolled, that route''s life continued. The Busbar Rite believed only the stations where a faint light remained survived to the end.
-
 
 ### Consumption Rites
 
@@ -43768,7 +43263,6 @@ C. Stamp and gate rites
 
 The branches of the individual faiths divided into the Stamp Rite and the Gate Rite. The Stamp Rite believed the stamp fixed in the locked box set the value of things. The Gate Rite held that the very instant of passing the breaker was the act that carried on a momentary life.
 
-
 ### The Deification of Old-World Symbols
 
 A. God of the voice
@@ -43782,7 +43276,6 @@ The G25''s sensor modules and protocol cards were the faint echoes that voice ha
 C. Nameplate and announcement rites
 
 The names of the individual faiths divided into the Nameplate Rite and the Announcement Rite. The Nameplate Rite took even the places where letters faintly remained as intact national borders. The Announcement Rite made the whole space where the voice gently rang a sacred altar.
-
 
 ### The Rules by Which a Relic Became an Object of Faith
 
@@ -43800,7 +43293,6 @@ With the servers cut and even the vault holding the drawings firmly shut, the re
 Only a community that had clung to one module and stubbornly survived three times or more called that mass of iron a relic. A single lucky chance remained merely a useful trading item.
 5. A place-power had to claim jurisdiction
 The successor polities split by route, gu, and station divided custody and pilgrimage manner and strict taboo each in their own way. Dynasties and the vassal powers following them inherited even the jurisdiction of the rites and hardened their power. The recovery squads stripping parts without restraint and the faiths defending the old relics to the end collided roughly inside these dark sealed galleries.
-
 
 ### Relic Interpretation by Faith Lineage
 
@@ -44065,7 +43557,6 @@ The sixteen states used five office tiers, with titles differing by institution.
 
 There was no emperor tier. Seoul had no son of heaven. The heads of the sixteen states did not call one another king. What they called each other was the tier-1 title of that nation; only the layer the ledgers assigned was of king rank.
 
-
 ## The Five Layers
 
 **A. The five-tier structure**
@@ -44084,13 +43575,11 @@ The baron, count, duke, king, and court figures of Crusader Kings were layers of
 
 Rulers held tier one, while facility staff held lower tiers. States used different titles for the same five levels.
 
-
 ## Offices by State
 
 **A. Applying real-world office structures**
 
 Real ranks were laid over the tiers. Feudal heredity, emergency superintendence, and laying-on-of-hands remained in the prose, while the titles themselves kept the words those institutions had used in 2026.
-
 
 ### Government of the Republic of Korea
 
@@ -44100,13 +43589,11 @@ President—Minister—Vice Minister—Director General—jusa clerk. The ranks 
 
 The president, ministers, vice ministers, directors and jusa clerks exercise executive duties. Legislative deliberation and judicial review are separate authorities; registering a bill or judgment does not make a minister its legislator or judge. The five tiers compare the sixteen states'' offices, not hereditary lordships or military command.
 
-
 ### The Sluice · The Junction
 
 **A. Facility watch offices**
 
 The Sluice''s tier 1 was an elected monarch, and the other four layers kept the watch grammar of the Yeongdeungpo Arisu Water Treatment Center. The representatives of the houses bound by water contracts elected the monarch in the contract council. The sluice house was the house that had produced the monarch most often, but the seat was not hereditary. The Bureau Head approved the great matters of treatment and dispatch, the District Head fed the gu, and the Watch Chief opened one sluice. The Junction''s Stationmaster—Bureau Head—District Head—Watch Chief—jusa clerk were the watch grammar of the Yongsan rail transshipment. The stationmaster''s seat remained primogeniture inside the track house. The Yongsan Station track house passed its keys to its grandson, the Bureau Head approved the great matters of dispatch, the District Head fed the gu, and the Watch Chief opened one storage track.
-
 
 ### Eastern Command · Achasan Gate
 
@@ -44114,20 +43601,11 @@ The Sluice''s tier 1 was an elected monarch, and the other four layers kept the 
 
 Commander—Chief of Staff—Battalion Commander—Company Commander—byeongjang sergeant. The military ranks where the conscription remnants and the treatment watch were bound together. The Amsa Station commander read waterworks protection as emergency superintendence, and the Guui Station commander had still not gathered sluices and the Achasan outposts into one hand. The Chief of Staff bore the great matters within the state, the Battalion Commander the gu, the Company Commander one bridge or ridge, and the byeongjang the watch that carried a signature alone.
 
-
 ### Myeongbu Church
 
 **A. Session (church council) offices**
 
 Moderator—Elder—Gwonsa—Deacon—gyosa teacher. The session ranks left by the Yeonji-dong General Assembly Hall; the opening capital was Samsung Station. The Moderator read the General Assembly registers through hereditary laying-on-of-hands, the Elder held the great relief within the state, the Gwonsa the living sphere, the Deacon one church, and the gyosa the landless signature.
-
-
-### Myeongdong Archdiocese
-
-**A. Diocesan chancery offices**
-
-Archbishop—Priest—Brother—Deacon—gyowu fellow. The ranks of the Myeongdong Cathedral curia. The Archbishop kept the altar of marriage, adoption, and memorial accreditation; the Priest held the diocese''s great matters, the Brother the district, the Deacon one altar, and the gyowu the landless signature. The Bishops'' Conference building on Myeonmok-ro, Gwangjin, remained only an outer warehouse.
-
 
 ### Anguk Order
 
@@ -44135,13 +43613,11 @@ Archbishop—Priest—Brother—Deacon—gyowu fellow. The ranks of the Myeongdo
 
 Spiritual Director—Head of the General Directorate—Abbot—Monk—sindo lay believer. The order''s ranks of Jogyesa and the General Directorate at 55 Ujeongguk-ro. The mountain assembly elevated the Spiritual Director. The contest of votes among the lineage factions was the politics of that elevation. The Spiritual Director read the tablets and temple rolls with the capital''s hand, the Head of the General Directorate held the order''s great matters, the Abbot the temple''s living sphere, the Monk one chapel, and the sindo the landless signature. Anguk Station was that capital.
 
-
 ### Central Intelligence Bureau
 
 **A. Preservation office posts**
 
 Director—Examiner—Central Intelligence Bureaur—Technician—Visitor. These were the posts of the Central Intelligence Bureau, whose sign hung at Heukseok Station. The Director was selected by examination and controlled access to lost technology. Examiners handled major matters, Central Intelligence Bureaurs handled individual districts, and Technicians handled individual facilities. Visitors held no fief.
-
 
 ### Yeouido Investors'' Association
 
@@ -44149,13 +43625,11 @@ Director—Examiner—Central Intelligence Bureaur—Technician—Visitor. These
 
 Presiding Chair—Vice Chairman—Executive Managing Director—Department Head—jikwon staff. The corporate ranks of the former FKI Hall at 24 Yeouido-ro. The bloodline houses that held shares of the vault formed the investors'' council, and they elected the Presiding Chair from among themselves. The Presiding Chair read the investment ledgers as the cooling key and closed Yeouido Station, the Vice Chairman held the affiliates'' great matters, the Executive Managing Director the district, the Department Head one window, and the jikwon the landless signature.
 
-
 ### Seongha Group · Taeuk Group
 
 **A. Company offices**
 
 Chairman—President—Executive Managing Director—Department Head—daeri deputy. The stock-company ranks of Samsung Town at Seocho-daero 74-gil and the Yangjae head office at 12 Heolleung-ro. The Chairman was the tier 1 to which the I-family operating house and the maintenance houses leased the keys; the President held the great matters of cooling and car bodies, the Executive Managing Director the Gangnam and Yangjae living spheres, the Department Head one intersection or depot, and the daeri the landless signature. Gangnam Station and Yangjae Station were each capital.
-
 
 ### Jeongdong Federation
 
@@ -44163,13 +43637,11 @@ Chairman—President—Executive Managing Director—Department Head—daeri dep
 
 Chairwoman—Vice Chairwoman—Bureau Head—Branch Head—johapwon unionist. The federation ranks of the Kyunghyang Shinmun site at 3 Jeongdong-gil. The Chairwoman read the City Hall Station strike rolls as passage right, the Vice Chairwoman held the great matters of the gatherings, the Bureau Head the district, the Branch Head one window, and the johapwon the landless signature. Party names were not used as state names.
 
-
 ### The Gauge
 
 **A. Union offices**
 
 Guild Head—Standing Director—Director—Auditor—johapwon unionist. The guild ranks of the Guro and Geumcheon complexes and the Cheonwang depot. The Guild Head kept the bolt rites as a state, the Standing Director held the great matters of the standards, the Director the complex''s living sphere, the Auditor one barrier gate, and the johapwon the landless signature. Guro Station was the capital.
-
 
 ### Sinnae Transport
 
@@ -44177,13 +43649,11 @@ Guild Head—Standing Director—Director—Auditor—johapwon unionist. The gui
 
 Company President—Dispatch Chief—Squad Head—Scribe—hosongwon escort hand. The transport-contract ranks of the Sinnae depot. The company president''s seat was hereditary in the founding house. The route licenses were the house''s property. The Company President read the terminal transfers and the medical trains as neutral, the Dispatch Chief held the great matters of dispatch, the Squad Head the transfer living sphere, the Scribe one platform, and the hosongwon the landless signature. Sinnae Station was the capital.
 
-
 ### White Cross
 
 **A. Herb-market union offices**
 
 Order Head—Attending Physician—Resident Physician—Orderly—hoewon member. The physician-seniority ranks of the Jegi-dong medicinal-herb market (Gyeongdong) and the eastern medical network. The Order Head supervised the attending physicians'' clinical judgment and confirmed the succession of the resident the attending physician had named. The seat was apprenticeship, a master naming a successor pupil, not bloodline. The Order Head kept the treatment vow that did not distinguish friend from foe; the Attending Physician held the great matters of the Jegi-dong medicine market, the Resident Physician the district, the Orderly one sickbed, and the hoewon the landless signature. Jegi-dong Station was the capital.
-
 
 ## The Table of Offices by State
 
@@ -44197,7 +43667,6 @@ Order Head—Attending Physician—Resident Physician—Orderly—hoewon member.
 | Eastern Command | Commander | Chief of Staff | Battalion Commander | Company Commander | byeongjang sergeant |
 | Achasan Gate | Commander | Chief of Staff | Battalion Commander | Company Commander / guard captain / site lead | byeongjang sergeant / joint staffer / guard |
 | Myeongbu Church | Moderator | Elder | Gwonsa | Deacon | gyosa teacher |
-| Myeongdong Archdiocese | Archbishop | Priest | Brother | Deacon | gyowu fellow |
 | Anguk Order | Spiritual Director | Head of the General Directorate | Abbot / head meditation monk | Monk | sindo lay believer / postulant |
 | Central Intelligence Bureau | Director | Examiner | Central Intelligence Bureaur / Senior Technician | Technician / Engineer | Visitor / gyodo |
 | Yeouido Investors'' Association | Presiding Chair | Vice Chairman | Executive Managing Director | Department Head / council member | jikwon staff / clerk |
@@ -44207,7 +43676,6 @@ Order Head—Attending Physician—Resident Physician—Orderly—hoewon member.
 | The Gauge | Guild Head | Standing Director | Director | Auditor | johapwon unionist |
 | Sinnae Transport | Company President | Dispatch Chief | Squad Head | Scribe | hosongwon escort hand |
 | White Cross | Order Head | Attending Physician | Resident Physician | Orderly | hoewon member |
-
 
 ## The Old Joseon Office Substitution
 
@@ -44227,13 +43695,11 @@ In 2126 the ruler of the Sluice was a lord, the ruler of the Government a presid
 
 The names of the Six Boards were Joseon''s Personnel, Taxation, Rites, War, Punishments, and Works. What actually moved at the opening remained four matters: water and rations, escort and the muster registers, accreditation and punishment, repair and standards. The personnel database had died with the call mesh, and the rites went to the churches, the temples, the shrines, and the chapels. The 2026 HR and general-affairs teams were not laid onto those seats.
 
-
 ## Why These Offices
 
 **A. How the titles formed**
 
 In 2126, the leaders at Gwanghwamun, Yangpyeong, Yongsan, Amsa, and Samseong were respectively president, lord, stationmaster, commander, and church chair.
-
 
 ## Title and Livelihood
 
@@ -44244,7 +43710,6 @@ The sixteen states used their own institutional titles for their rulers.
 **B. Station titles and the Goryeo grade ladder**
 
 A title took a station name plus senior or junior, and its grade followed the Goryeo ladder of state duke, commandery duke, county marquis, county earl, founding viscount, and county baron. Kingdom-level sovereignty has a royal grade. Min Woonggi holds the title Daejeon-seon and the office lord of Daejeon. Land without a station remained a holding, while a station was the strategic strongpoint. Inside one realm the ruler granted only lower titles, and a king-rank ruler held at most two duke-rank titles directly.
-
 
 ### Territorial Scale and Administrative Units
 
@@ -44258,13 +43723,11 @@ Sejong Special Self-Governing City is one kingdom-sized area, and its directly s
 
 Incheon Metropolitan City is a kingdom-sized area. Its districts and counties are duchy-sized, and their directly subordinate eup, myeon, and dong are barony-sized. These comparative scales do not automatically establish opening control or personal ownership. Island holdings are recorded separately even within the same administrative unit.
 
-
 ## Succession
 
 **A. Principles of succession**
 
 The Sluice elected its ruler at a meeting of water-contract families. The Central Intelligence Bureau selected its director by examination. Myeongbu Church appointed its chair after elder approval.
-
 
 ## Sources
 
@@ -44284,8 +43747,6 @@ The Sluice elected its ruler at a meeting of water-contract families. The Centra
 ## 다섯 층
 
 **가. 5계층 구조**
-
-다섯 층의 티어는 1부터 5까지이다. 봉건 운영가문은 역장부터 주사까지, 군정은 사령관부터 병장까지 직함을 쓴다. 신정의 티어 1은 당회장·대주교·방장 중 하나이며 티어 5는 교사·교우·신도 중 하나이다. 상업 국가의 티어 1은 회장·위원장·의장·사장·단장 중 하나이며 티어 5는 직원·조합원·호송원·회원 중 하나이다.
 
 | 티어 | CK 대응 | 옛 조선 관직 | 다스리는 단위 |
 |---|---|---|---|
@@ -44330,12 +43791,6 @@ The Sluice elected its ruler at a meeting of water-contract families. The Centra
 **가. 당회 직제**
 
 당회장, 장로, 권사, 집사, 교사로 구성된 삼성역 당회 체계이다. 수도는 삼성역이다. 당회장은 세습 안수로 총회 명부 통제권을 행사한다. 장로는 국가 단위 구휼, 권사는 생활권, 집사는 예배당을 통제하며, 교사는 서명 권한만 보유한다.
-
-### 명동대교구
-
-**가. 교구청 직제**
-
-대주교, 신부, 수사, 부제, 교우의 명동성당 교구청 체계이다. 대주교는 혼인, 양자, 위령 인준 제대를 지킨다. 신부는 교구 단위 주요 사안, 수사는 구역, 부제는 단위 제대를 담당하며, 교우는 서명 권한만 지닌다. 광진구 면목로의 주교회의 청사는 외부 창고로 운용한다.
 
 ### 안국총림
 
@@ -44397,7 +43852,6 @@ The Sluice elected its ruler at a meeting of water-contract families. The Centra
 | 동방사 | 사령관 | 참모장 | 대대장 | 중대장 | 병장 |
 | 아관사 | 사령관 | 참모장 | 대대장 | 중대장·수비대장·현장책임자 | 병장·공동실무원·수비대원 |
 | 명부교회 | 당회장 | 장로 | 권사 | 집사 | 교사 |
-| 명동대교구 | 대주교 | 신부 | 수사 | 부제 | 교우 |
 | 안국총림 | 방장 | 총무원장 | 주지·수좌 | 스님 | 신도·행자 |
 | 중앙정보부 | 원장 | 심사관 | 보존관·수석기사 | 기술원·기사 | 출입자·교도 |
 | 여의도출자연합회 | 의장 | 부회장 | 전무 | 부장·평의원 | 직원·서기 |
@@ -44435,8 +43889,6 @@ The Sluice elected its ruler at a meeting of water-contract families. The Centra
 ## 작위와 생업
 
 **가. 작위와 생업의 분리**
-
-2126년 세 국가 안에 존속한 전신국·봉신 수장의 직함은 대통령·군주·위원장·역장·사령관·당회장·회장·의장·방장·원장·대주교·사장·단장 가운데 나라별 직제에 따라 달랐다.
 
 **나. 역 작위와 고려 등급**
 
@@ -44602,7 +44054,6 @@ Even when the scope of disclosure was folded back, the catalog itself was kept.
 
 - Class: CORPORATION
 - Status: ACTIVE
-- Linked states: S08 Central Intelligence Bureau, S15 Myeongdong Archdiocese
 - Exclusive states: None
 - Steward: O Haerin
 
@@ -44680,7 +44131,6 @@ The evacuation broadcast was opened before citizen passage was closed.
 
 - Class: CORPORATION
 - Status: ACTIVE
-- Linked states: S06 Republic of Korea Government, S15 Myeongdong Archdiocese, S08 Central Intelligence Bureau
 - Exclusive states: None
 - Steward: Nam Yungyeong
 
@@ -45018,7 +44468,6 @@ A bridge was never reckoned in tolls alone.
 
 - Class: CIVIC_COMPACT
 - Status: ACTIVE
-- Linked states: S08 Central Intelligence Bureau, S15 Myeongdong Archdiocese, S02 The Gauge
 - Exclusive states: None
 - Steward: Gu Haon
 
@@ -45190,7 +44639,6 @@ To keep its trust, the Guro Digital Complex Battery House discarded even usable 
 
 - Class: CORPORATION
 - Status: ACTIVE
-- Linked states: S07 The Junction, S08 Central Intelligence Bureau, S15 Myeongdong Archdiocese
 - Exclusive states: None
 - Steward: Pieter Jansen
 
@@ -45220,7 +44668,6 @@ The Yongsan Ship House gave up its exclusive berth and, in exchange, published e
 
 - Class: CORPORATION
 - Status: ACTIVE
-- Linked states: S06 Republic of Korea Government, S15 Myeongdong Archdiocese, S16 Jeongdong Federation
 - Exclusive states: None
 
 Along the protocol road at Seoul Station stood the neutral guest lodges kept by the Dongdaeipgu Trading House.
@@ -45249,7 +44696,6 @@ When a hidden guarantor came to light, the guest-observer cancelled the trade re
 
 - Class: CORPORATION
 - Status: ACTIVE
-- Linked states: S06 Republic of Korea Government, S15 Myeongdong Archdiocese, S09 Yeouido Investment Federation
 - Exclusive states: None
 
 Every evening the Sangam transmission tower lit, the Digital Media City Performance House sealed the performance order.
@@ -45461,7 +44907,6 @@ Even with the depot empty, the certification seal was never forged.
 
 - 분류: CORPORATION
 - 상태: ACTIVE
-- 연결 국가: S08 중앙정보부, S15 명동대교구
 - 전속 국가: 없음
 - 관리: 오해린
 
@@ -45539,7 +44984,6 @@ Even with the depot empty, the certification seal was never forged.
 
 - 분류: CORPORATION
 - 상태: ACTIVE
-- 연결 국가: S06 대한민국정부, S15 명동대교구, S08 중앙정보부
 - 전속 국가: 없음
 - 관리: 남윤경
 
@@ -45877,7 +45321,6 @@ Even with the depot empty, the certification seal was never forged.
 
 - 분류: CIVIC_COMPACT
 - 상태: ACTIVE
-- 연결 국가: S08 중앙정보부, S15 명동대교구, S02 규격맹
 - 전속 국가: 없음
 - 관리: 구하온
 
@@ -46049,7 +45492,6 @@ Even with the depot empty, the certification seal was never forged.
 
 - 분류: CORPORATION
 - 상태: ACTIVE
-- 연결 국가: S07 환적국, S08 중앙정보부, S15 명동대교구
 - 전속 국가: 없음
 - 관리: 피터 얀센
 
@@ -46079,7 +45521,6 @@ Even with the depot empty, the certification seal was never forged.
 
 - 분류: CORPORATION
 - 상태: ACTIVE
-- 연결 국가: S06 대한민국정부, S15 명동대교구, S16 정동노총
 - 전속 국가: 없음
 
 서울역 의전길에는 동대입구객사가가 관리하는 중립 객사가 흩어져 있다.
@@ -46108,7 +45549,6 @@ Even with the depot empty, the certification seal was never forged.
 
 - 분류: CORPORATION
 - 상태: ACTIVE
-- 연결 국가: S06 대한민국정부, S15 명동대교구, S09 여의도출자연합회
 - 전속 국가: 없음
 
 상암 송신탑이 켜지는 저녁마다 디지털미디어시티공연가는 공연 순서를 봉인한다.
@@ -46188,7 +45628,6 @@ A. The waterworks operations log
 
 At about 21:47 on October 14, 2030, remote control failed at the Yeongdeungpo waterworks. Duty officer Han Jeonghun operated the valves manually and entered the failure in the first line of a paper operations log.
 
-
 ## The Blackout of October 14, 2030
 
 A. Crisis room report
@@ -46198,7 +45637,6 @@ At about 21:47 on October 14, 2030, district indicators went dark in sequence at
 B. Emergency order
 
 On October 15, 2030, the president wrote and signed an emergency order under Article 76 of the constitution. The prime minister countersigned it. Designated facility emergency officers received on-site authority during the communications outage.
-
 
 ## The 2026 Water and Parts Exchange
 
@@ -46210,7 +45648,6 @@ B. Two ledgers
 
 Han Jeonghun entered the exchange in the operations log. The Yeouido vault also entered the parts and water exchange in its inventory under the same date.
 
-
 ## The 2053 Yeongdeungpo Water Agreement
 
 A. March 14 signatures
@@ -46220,7 +45657,6 @@ On March 14, 2053, waterworks head Han Seokjin and six water-receiving family re
 B. Move to Yangpyeong Station
 
 From March 20, 2053, the Yeongdeungpo waterworks staff moved their base to Yangpyeong Station underground. Forty-five volumes of the waterworks operations log, including Han Jeonghun’s forty-one volumes, moved to the underground stacks there. The waterworks continued operating.
-
 
 ## Registers and Contracts
 
@@ -46243,7 +45679,6 @@ In 2123, Sumunguk, Gyugyeokmaeng, and Hwanjeokguk sent separate water, parts, an
 E. State ledger
 
 In November 2125, the records office compiled a power ranking of sixteen states.
-
 
 ## Sources
 
@@ -46337,7 +45772,6 @@ In the Seoul of 2126, at the opening, the bodies that founded states remained hu
 
 On October 15, 2030, the president signed an emergency order authorizing designated facility officers to act on site during the communications outage. Yeongdeungpo waterworks staff manually operated valves that day.
 
-
 ## People
 
 **A. Watch duty and livelihood**
@@ -46349,7 +45783,6 @@ In 2106, the Republic of Korea required a Government Seoul Complex stamp on Jong
 In winter 2120, Dongbangsa demanded registration of reconstruction workers from Gyugyeokmaeng. Gang Minseo entered those who refused in its civic register.
 
 When the water was cut, labor folded first. Even when food ran short, the next day''s hands slowed, and without medicine the act of treatment itself did not open. The way the illnesses of people and of the tanks overlapped at one window was covered by [Ailments and Symptoms](/wiki/Ailments/).
-
 
 ## The Remnants of Logistics Humanoids
 
@@ -46363,7 +45796,6 @@ After the Great Blackout cut machines off from the upper control network, they r
 
 At the opening, I Yeon is a biological synthetic humanoid in Jo Jaepyo''s company. The H01–H16 register instead records mechanical humanoids under house custody. Neither the kind of body alone grants nor denies personhood or citizenship. Each individual is assessed for expressed will, continuity of memory, and capacity to consent. A custody record can document maintenance and responsibility, but its transfer clause cannot govern someone recognized as a person. I Yeon records her own courier judgment under her name and refuses an order that would sacrifice civilians. No such individual determination is recorded for the H01–H16 actors.
 
-
 ## Repeating Machines
 
 **A. Surviving disaster-response machines**
@@ -46373,7 +45805,6 @@ There were bodies that overlapped with the logistics humanoids but did not stand
 The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment with attached sluices such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust a protocol card forward, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. The detailed modules and the salvage economy were recorded by [Lost Technology](/wiki/Lost-Technology-Lineage/), and this compendium fixed only which mission''s echo the machines still walking beside people were.
 
 Capacitor modules only used the charge already stored and could not replace generators; cells aged, and without charging terminals the repetition broke off too. A workshop repairing hydraulics did not make it look as if the fabs had returned.
-
 
 ## Raptors, Feral Dogs, and Rat Swarms
 
@@ -46395,7 +45826,6 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 | Logistics humanoids | Atlas-class field trials, factory density at the front of the world | Stopped remnants and repeated transport, dismantled modules |
 | Disaster machines | Search, guard, and transport routines tied to the call network | Search and guard routines in sealed galleries stop when batteries fail or charging is lost. [Lost Technology](/wiki/Lost-Technology-Lineage/) |
 | Raptors, feral dogs, rats | Han River birds, abandoned dogs, station rats | Colonies on the towers, the docks, and the transfer trays |
-
 
 ## Sources
 
@@ -48075,7 +47505,6 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 | 2091–2110 | The age of the line ends | State names, the vassal posts, the Guui clash, the records-office ledger. The Sluice’s contract name and Chuncheon’s market name. |
 | 2111–2126 | The eve of the opening | The successions, the opening rulers, the strength ledger of 2125. The Tsushima expedition and withdrawal, and reports and confirmation of the Dokdo watch. |
 
-
 ## Year entries, 2030–2126
 
 - [2030](/wiki/Century-Annals/) · [2031](/wiki/Century-Annals/) · [2032](/wiki/Century-Annals/) · [2033](/wiki/Century-Annals/) · [2034](/wiki/Century-Annals/) · [2035](/wiki/Century-Annals/) · [2036](/wiki/Century-Annals/)
@@ -48092,9 +47521,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 - [2119](/wiki/Century-Annals/) · [2120](/wiki/Century-Annals/) · [2121](/wiki/Century-Annals/) · [2122](/wiki/Century-Annals/) · [2123](/wiki/Century-Annals/) · [2124](/wiki/Century-Annals/) · [2125](/wiki/Century-Annals/)
 - [2126](/wiki/Century-Annals/)
 
-
 ## The opening
-
 
 ### Opening day
 
@@ -48103,8 +47530,6 @@ In 2126 O Gyeongjae took office as moderator of the Myeongbu Church. Confirmed b
 Im Hajun disappeared in the winter of 2125. The night before his disappearance Im Hajun sealed the copy box of the pump-cleaning process. The key to the sealed box was received by the board of elders together with the will of three sheets. At the next shift Im Chowon, Im Hajun''s adopted child, confirmed the seal of the original box, and the fact was entered in the witness column of the three sheets. Yun Seorin, president of the Government of the Republic of Korea, withheld approval of the will and confirmed only the seal of the box.
 
 In 2124 a box of counterfeit medicine came up at the Seoul Station auction. Ryu Eunbi, director of the White Cross, cut off all of the White Cross''s dealings in that auction, and the same day Jeong Hojun, life-safety research chief of the Taeuk Group, broke the seal of the counterfeit specimen arrived in the Yangjae stacks.
-
-In the Jeongdong Federation chair''s direct vote of spring 2125 Jeong Yura was reelected. When the Seongnam Works and the Second Branch Workshop stopped work for ten days that autumn, Jeong Seoon, chair of the Taeuk Group, visited the Seongnam Works on the ninth day of the strike. When rumors of a bad harvest went round in 2124, Nam Yungyeong, archbishop of the Myeongdong Archdiocese, opened the emergency-ration car, and the public auction was put off one day.
 
 In the autumn of 2125 turbidity in the western mains passed the standard. When Park Nuri, the purification supervisor, closed the western main valves and Han Jaemok, head of the Sluice, withheld his signature from the document restarting supply, I Seodam, chief of the Yangcheon district, claimed Yangcheon''s veto at the contract council on the ground of that withholding.
 
@@ -48164,7 +47589,6 @@ If a courier who says they were rescued on Dokdo arrives in Seoul asking to tell
 
 If carriers taking cargo toward the east coast are about to leave Seoul, the courier seeks to load a reply without exposing the meeting place. As the shipowner’s pursuer follows the letter’s recipient, the player can escort the courier within Seoul, lure the pursuer onto another route, or divide the letters among other carriers. Before departure they decide whether to conceal identity in the letter or name the sailor with consent. Missing the deadline loses this delivery opportunity and requires finding another carrier. The courier’s testimony and checks on the ground can carry the work forward even without Shin Jun’s help.
 
-
 ### Rulers at the opening
 
 | State | Tier | Ruler | Recorded |
@@ -48180,12 +47604,10 @@ If carriers taking cargo toward the east coast are about to leave Seoul, the cou
 | Achasan Gate | Lever power | Gate Commander Go Seojun | Elected in 2115. Signed the first joint order with Guui Defense Unit captain Tak Seoyun in 2121. |
 | Sinnae Transport | Lever power | President Jang Sehwa | Succeeded to the presidency in 2118. In 2125, set seasonal departure times for ordinary and medical trains on the dispatch sheet. |
 | Myeongbu Church | Minor power | Moderator O Gyeongjae | Took office by the elders'' confirmation in 2126. Opened the will of three sheets to the general assembly''s meeting room. |
-| Myeongdong Archdiocese | Minor power | Archbishop Nam Yungyeong | Elected by the priests'' private ballot in 2113. Opened the emergency-ration car in 2124. |
 | Anguk Order | Minor power | Abbot Baek On | Elevated by the mountain assembly in 2122. |
 | Seongha Group | Minor power | Chair Lee Hongwon | Took the chair after the succession examination in 2114. |
 | Central Intelligence Bureau | Minor power | Director Oh Haerin | Top of the director''s examination in 2119. Took office March 1 the same year. |
 | Jeongdong Federation | Minor power | Chair Jeong Yura | Elected by direct vote in 2120, reelected spring 2125. Jeong Seoon visited Seongnam on the ninth day of the strike. |
-
 
 ### People at the opening
 
@@ -48195,25 +47617,19 @@ Han Somi is a workshop representative at the opening.
 
 Jeong Hojun is the life-safety research director at the Taeuk Group. In 2124, on the day a box of counterfeit medicine was offered at the Seoul Station auction, he opened the seal on a counterfeit medicine sample that had reached the Yangjae archive.
 
-
 ### Strength tiers
 
 In November 2125 the records office entered the Government of the Republic of Korea, the Sluice, the Gauge, the Junction, the Eastern Command, and the Taeuk Group in the column of major powers.
 
 The records office entered the Yeouido Investment Federation, the White Cross, Agwansa and Sinnae Transport in the column of lesser powers. The Yeouido Investment Federation issued the common currency, the White Cross held medicine, Agwansa held the Achasan gate and the water of the Guui sluice, and Sinnae Transport escorted freight for any side.
 
-The records office entered the Myeongbu Church, the Myeongdong Archdiocese, the Anguk Order, the Seongha Group, the Central Intelligence Bureau, and the Jeongdong Federation in the column of minor powers.
-
 The Government of the Republic of Korea rules Jongno and Jung-gu directly from Gwanghwamun. When it drew up the roster of Jongno and Jung-gu residents in 2069, the ration counter of the Government Complex Seoul issued food against that roster. In 2070 the complex standing guard corps drew up muster rolls for Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga stations and took the rotating guard at the three stations. In 2106 it required the passes of Jongno and Jung-gu to carry the Government Complex Seoul stamp. Commercial contracts were entered in the records office only if stamped, and passes and contracts carried stamp taxes. From March 2111 the Sluice, the Eastern Command, the Achasan Gate, the Junction, Sinnae Transport, the Gauge, and the White Cross submitted originals of their heads'' successions and treaties to the records office, and the records office returned stamped copies.
-
-In June 2121 the Myeongdong Archdiocese, the Anguk Order, and the Jeongdong Federation renewed the complex stamps on the Jongno and Jung-gu passes and drew up the rosters for the downtown ration counter in records office forms.
 
 In June 2123 the Onmin Council demanded that the Sluice submit a renewed declaration of obedience to the emergency order, but the Sluice did not sign the declaration. The Junction, Sinnae Transport, the Gauge, and the White Cross suspended their entries of successions and treaties with the records office, while the Eastern Command and the Achasan Gate kept registering. President Yun Seorin withdrew the demand. The eight states outside the succession registry owe the records office no duty of entry.
 
 In December 2125 the Sluice, the Gauge, the Junction, the Eastern Command, and the Taeuk Group submitted documents to the records office mustering their own and their vassals'' troops, and the complex guard corps kept the rotating guard at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga stations. The records office drew up no expeditionary muster document for the complex guard corps.
 
 The duty houses contend over the presidential election, the confirmation of the records commissioner, the placing of the complex guard corps, and the stamp tax income. In May 2122 Kim Yeongyu gathered nineteen records clerks and formed the Onmin Council (穩民議). In August 2122 the Onmin Council submitted to President Yun Seorin a proposal to send the complex guard corps to the Sluice''s border, but Yun Seorin did not sign the deployment proposal. In January 2123, when two groups of duty houses put forward different records commissioner candidates, Yun Seorin left the confirmation unstamped for three months. In April 2123 three groups of duty houses each submitted plans for dividing the stamp tax, and Yun Seorin ordered the stamp tax ledgers kept separately by the guard corps, the records office, and the ration counter.
-
 
 ## Sources
 
@@ -48257,8 +47673,6 @@ The duty houses contend over the presidential election, the confirmation of the 
 임하준은 2125년 겨울에 실종되었다. 실종 전날 밤 임하준은 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 다음 교대 때 임하준의 양자 임초원이 원본 함의 봉인을 확인하였으며 그 사실은 유언 3장의 증인 칸에 기재되었다. 대한민국정부 대통령 윤서린은 유언의 인준을 보류하고 함의 봉인만 확인하였다.
 
 2124년 서울역 경매에 가짜 약 상자가 올랐다. 흰십자단 단장 류은비는 흰십자단의 해당 경매 거래를 모두 끊었으며, 같은 날 태욱그룹 생명안전 연구책임자 정호준은 양재 서고에 들어온 가짜 약 표본의 봉인을 열었다.
-
-2125년 봄 정동노총 위원장 직선 투표에서 정유라가 재선되었다. 같은 해 가을 성남사업장과 제2분공방이 10일간 작업을 중단하자 태욱그룹 회장 정서온은 파업 9일째에 성남사업장을 방문하였다. 2124년 흉작 소문이 돌았을 때 명동대교구 대주교 남윤경이 비상배급 칸을 열었고 공개 경매는 하루 미루어졌다.
 
 2125년 가을 서부 관로의 탁도가 기준을 넘었다. 정수 감독 박누리가 서부 관로 밸브를 잠그고 수문국 책임자 한재목이 공급 재개 문서의 서명을 보류하자 양천 구역장 이서담은 이 보류를 근거로 양천의 거부권을 계약 회의에 청구하였다.
 
@@ -48333,7 +47747,6 @@ The duty houses contend over the presidential election, the confirmation of the 
 | 아관사 | 약국 | 관문사령관 고서준 | 2115년 선출. 2121년 구의수비대장 탁서윤과 첫 공동 명령서에 서명. |
 | 신내운수 | 약국 | 사장 장세화 | 2118년 사장직을 이음. 2125년 일반 열차와 의료열차의 운행 시간을 계절별로 나눠 배차표에 적음. |
 | 명부교회 | 소국 | 당회장 오경재 | 2126년 장로 인준으로 취임. 유언 3장을 총회 회의실에 공개. |
-| 명동대교구 | 소국 | 대주교 남윤경 | 2113년 사제단 비공개 선출. 2124년 비상배급 칸을 염. |
 | 안국총림 | 소국 | 방장 백온 | 2122년 산중총회가 추대. |
 | 성하그룹 | 소국 | 회장 이홍원 | 2114년 승계 시험 뒤 회장직을 이음. |
 | 중앙정보부 | 소국 | 원장 오해린 | 2119년 원장 시험 수석. 같은 해 3월 1일 취임. |
@@ -48353,11 +47766,7 @@ The duty houses contend over the presidential election, the confirmation of the 
 
 기록청은 여의도출자연합회·흰십자단·아관사·신내운수를 약국란에 적었다. 여의도출자연합회는 공용 화폐를 발행하고, 흰십자단은 의약을 맡으며, 아관사는 아차산 관문과 구의 수문 물을 맡고, 신내운수는 어느 쪽의 화물도 가리지 않고 호송한다.
 
-기록청은 명부교회·명동대교구·안국총림·성하그룹·중앙정보부·정동노총을 소국란에 적었다.
-
 대한민국정부는 광화문을 중심으로 종로·중구를 직접 다스린다. 2069년 대한민국정부가 종로·중구 거주자 명부를 작성하자 정부서울청사 배급 창구는 그 명부로 식량을 지급하였다. 2070년 청사 상비 경비대는 광화문·종로3가·을지로입구역의 소집부를 작성하고 세 역의 교대 경비를 맡았다. 2106년에는 종로·중구의 통행증에 정부서울청사 도장을 찍도록 정하였다. 상거래 계약서는 도장이 있어야 기록청에 등재되고 통행증과 계약서에는 인지세가 붙었다. 수문국·동방사·아관사·환적국·신내운수·규격맹·흰십자단은 2111년 3월부터 수장의 승계와 조약의 원본을 기록청에 제출하였으며, 기록청은 도장을 찍은 등본을 돌려주었다.
-
-2121년 6월 명동대교구·안국총림·정동노총은 종로·중구 통행증의 청사 도장을 갱신하고 도심 배급 창구에 제출할 명부를 기록청 양식으로 작성하였다.
 
 2123년 6월 온민의가 수문국에 긴급명령 재복종서를 내도록 요구했지만 수문국은 동의서에 서명하지 않았다. 환적국·신내운수·규격맹·흰십자단은 기록청의 승계와 조약 기재를 보류하였고 동방사와 아관사는 계속 등록하였다. 대통령 윤서린은 재복종 요구문을 철회하였다. 비계보 8국은 기록청 기재 의무가 없다.
 
@@ -48378,7 +47787,6 @@ The table records 334 observed station names and locations across Seoul''s 25 di
 b. Examples from the roster
 
 Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in Jung-gu, Yeouinaru in Yeongdeungpo-gu, and Sindorim in Guro-gu stand together on the roster.
-
 
 ## Gangnam-gu (24)
 
@@ -48409,7 +47817,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hangnyeoul | Hangnyeoul | 37.49650 | 127.06988 | Seoul Metropolitan Subway |
 | Hanti | Hanti | 37.49627 | 127.05287 | Seoul Metropolitan Subway |
 
-
 ## Gangdong-gu (14)
 
 | Name | English | Latitude | Longitude | Network |
@@ -48429,7 +47836,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Jungang Bohun Byeongwon | VHS Medical Center | 37.52828 | 127.14826 | Seoul Metropolitan Subway |
 | Cheonho | Cheonho | 37.53852 | 127.12340 | Seoul Metropolitan Subway |
 
-
 ## Gangbuk-gu (12)
 
 | Name | English | Latitude | Longitude | Network |
@@ -48446,7 +47852,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Suyu | Suyu | 37.63799 | 127.02572 | Seoul Metropolitan Subway |
 | Suyu (Gangbuk-gu Office) | Suyu (Gangbuk-gu Office) | 37.63799 | 127.02569 | Seoul Metro |
 | Hwagye | Hwagye | 37.63403 | 127.01749 | Seoul Metropolitan Subway |
-
 
 ## Gangseo-gu (18)
 
@@ -48471,7 +47876,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Jeungmi | Jeungmi | 37.55751 | 126.86182 | Seoul Metropolitan Subway |
 | Hwagok | Hwagok | 37.54167 | 126.84040 | Seoul Metropolitan Subway |
 
-
 ## Gwanak-gu (9)
 
 | Name | English | Latitude | Longitude | Network |
@@ -48485,7 +47889,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Seouldaeipgu (Gwanak-gu Office) | Seoul Nat''l University (Gwanak-gu Office) | 37.48122 | 126.95275 |  |
 | Seowon | Seowon | 37.47821 | 126.93301 | Seoul Metropolitan Subway |
 | Sillim | Sillim | 37.48423 | 126.92968 | Seoul Metropolitan Subway |
-
 
 ## Gwangjin-gu (11)
 
@@ -48503,7 +47906,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Jayang | Jayang | 37.53153 | 127.06674 | Seoul Metropolitan Subway |
 | Junggok | Junggok | 37.56631 | 127.08452 | Seoul Metropolitan Subway |
 
-
 ## Guro-gu (11)
 
 | Name | English | Latitude | Longitude | Network |
@@ -48520,7 +47922,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Onsu | Onsu | 37.49230 | 126.82353 | Seoul Metropolitan Subway |
 | Cheonwang | Cheonwang | 37.48637 | 126.83892 | Seoul Metropolitan Subway |
 
-
 ## Geumcheon-gu (4)
 
 | Name | English | Latitude | Longitude | Network |
@@ -48529,7 +47930,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Geumcheon-gu Office | Geumcheon-gu Office | 37.45581 | 126.89390 | Seoul Metropolitan Subway |
 | Doksan | Doksan | 37.46607 | 126.88948 | Seoul Metropolitan Subway |
 | Seoksu | Seoksu | 37.43513 | 126.90231 | Korail |
-
 
 ## Nowon-gu (14)
 
@@ -48550,7 +47950,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hagye | Hagye | 37.63602 | 127.06825 | Seoul Metropolitan Subway |
 | Hwarangdae | Hwarangdae | 37.61978 | 127.08371 | Seoul Metropolitan Subway |
 
-
 ## Dobong-gu (6)
 
 | Name | English | Latitude | Longitude | Network |
@@ -48561,7 +47960,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Banghak | Banghak | 37.66769 | 127.04430 | Seoul Metropolitan Subway |
 | Ssangmun | Ssangmun | 37.64840 | 127.03458 | Seoul Metropolitan Subway |
 | Changdong | Chang-Dong | 37.65260 | 127.04798 | Seoul Metropolitan Subway |
-
 
 ## Dongdaemun-gu (9)
 
@@ -48576,7 +47974,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Jegi-dong | Jegi-dong | 37.57838 | 127.03447 | Seoul Metropolitan Subway |
 | Cheongnyangni | Cheongnyangni | 37.57998 | 127.04463 | Seoul Metropolitan Subway |
 | Hoegi | Hoegi | 37.58950 | 127.05762 | Seoul Metropolitan Subway |
-
 
 ## Dongjak-gu (16)
 
@@ -48599,7 +47996,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Chongsindaeipgu(Isu) | Chongshin Univ. (Isu) | 37.48678 | 126.98224 | Seoul Metropolitan Subway |
 | Heukseok | Heukseok | 37.50838 | 126.96395 | Seoul Metropolitan Subway |
 
-
 ## Mapo-gu (13)
 
 | Name | English | Latitude | Longitude | Network |
@@ -48618,7 +48014,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hapjeong | Hapjeong | 37.54936 | 126.91366 | Seoul Metropolitan Subway |
 | Hongdaeipgu | Hongik Univ. | 37.55735 | 126.92691 | Seoul Metropolitan Subway |
 
-
 ## Seodaemun-gu (10)
 
 | Name | English | Latitude | Longitude | Network |
@@ -48633,7 +48028,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Chungjeongno | Chungjeongno | 37.55937 | 126.96291 | Seoul Metropolitan Subway |
 | Chungjeongno(Gyeonggidaeipgu) | Chungjeongno(Kyonggi University) | 37.55933 | 126.96370 | Seoul Metro |
 | Hongje | Hongje | 37.58869 | 126.94425 | Seoul Metropolitan Subway |
-
 
 ## Seocho-gu (21)
 
@@ -48661,7 +48055,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Jamwon | Jamwon | 37.51275 | 127.01115 | Seoul Metropolitan Subway |
 | Cheonggyesanipgu | Cheonggyesan | 37.44831 | 127.05464 | Seoul Metropolitan Subway |
 
-
 ## Seongdong-gu (12)
 
 | Name | English | Latitude | Longitude | Network |
@@ -48678,7 +48071,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Eungbong | Eungbong | 37.55028 | 127.03473 | Seoul Metropolitan Subway |
 | Hanyang University | Hanyang Univ. | 37.55573 | 127.04366 | Seoul Metropolitan Subway |
 | Haengdang | Haengdang | 37.55761 | 127.02999 | Seoul Metropolitan Subway |
-
 
 ## Seongbuk-gu (14)
 
@@ -48698,7 +48090,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Changsin | Changsin | 37.57980 | 127.01525 | Seoul Metropolitan Subway |
 | Hanseong University | Hansung University | 37.58851 | 127.00596 | Seoul Metropolitan Subway |
 | Hanseong University (Samseongyo) | Hansung Univ. (Samseongyo) | 37.58820 | 127.00532 | Seoul Metro |
-
 
 ## Songpa-gu (24)
 
@@ -48729,7 +48120,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Sports Complex | Sports Complex | 37.51106 | 127.07372 | Seoul Metropolitan Subway |
 | Hanseong Baekje | Hanseong Baekje | 37.51667 | 127.11621 | Seoul Metropolitan Subway |
 
-
 ## Yangcheon-gu (7)
 
 | Name | English | Latitude | Longitude | Network |
@@ -48741,7 +48131,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Yangcheon-gu Office | Yangcheon-gu Office | 37.51230 | 126.86594 | Seoul Metropolitan Subway |
 | Yangpyeong | Yangpyeong | 37.52563 | 126.88612 | Seoul Metropolitan Subway |
 | Omokgyo | Omokgyo | 37.52456 | 126.87512 | Seoul Metropolitan Subway |
-
 
 ## Yeongdeungpo-gu (18)
 
@@ -48766,7 +48155,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Yeongdeungpo-gu Office | Yeongdeungpo-gu Office | 37.52402 | 126.89634 | Seoul Metropolitan Subway |
 | Yeongdeungpo Market | Yeongdeungpo Market | 37.52269 | 126.90514 | Seoul Metropolitan Subway |
 
-
 ## Yongsan-gu (12)
 
 | Name | English | Latitude | Longitude | Network |
@@ -48784,7 +48172,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hannam | Hannam | 37.52945 | 127.00924 | Seoul Metropolitan Subway |
 | Hyochang Park | Hyochang Park | 37.53934 | 126.96133 | Seoul Metropolitan Subway |
 
-
 ## Eunpyeong-gu (11)
 
 | Name | English | Latitude | Longitude | Network |
@@ -48800,7 +48187,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Yeonsinnae | Yeonsinnae | 37.61892 | 126.92118 | Seoul Metropolitan Subway |
 | Eungam | Eungam | 37.59843 | 126.91553 | Seoul Metropolitan Subway |
 | Jeungsan | Jeungsan | 37.58414 | 126.90991 | Seoul Metropolitan Subway |
-
 
 ## Jongno-gu (15)
 
@@ -48821,7 +48207,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Jongno 5(o)-ga | Jongno 5(o)-ga | 37.57099 | 127.00202 | Seoul Metropolitan Subway |
 | Hyehwa | Hyehwa | 37.58214 | 127.00195 | Seoul Metropolitan Subway |
 | Hyehwa (Seoul National University Hospital) | Hyehwa | 37.58214 | 127.00193 |  |
-
 
 ## Jung-gu (19)
 
@@ -48847,7 +48232,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Hoehyeon | Hoehyeon | 37.55870 | 126.97842 | Seoul Metropolitan Subway |
 | Hoehyeon (Namdaemun Market) | Hoehyeon (Namdaemun Market) | 37.55876 | 126.97844 | Seoul Metro |
 
-
 ## Jungnang-gu (10)
 
 | Name | English | Latitude | Longitude | Network |
@@ -48862,7 +48246,6 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Yongmasan | Yongmasan | 37.57399 | 127.08658 | Seoul Metropolitan Subway |
 | Jungnang | Jungnang | 37.59498 | 127.07631 | Seoul Metropolitan Subway |
 | Junghwa | Junghwa | 37.60163 | 127.07952 | Seoul Metropolitan Subway |
-
 
 ## Rail network connected to Seoul
 
@@ -50880,14 +50263,11 @@ If a permit has to be changed and there is no lawful deputy, the haul is postpon
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Sixteen-States', 'The Sixteen States of Seoul', '서울 십육국', 'factions', 1, '
 In 2126 Seoul had sixteen states. In November 2125, the records office listed six major powers, four lever states, and six minor states.
 
-The Gauge comprises the Sluice, Gauge, Taeuk Group and Yeouido Investors’ Association. The Government comprises Eastern Command, the Government, Junction, Anguk Order, Seongha Group, Sinnae Transport, White Cross and Achasan Gate. Myeongbu Church, Myeongdong Archdiocese and Jeongdong Federation form the religious union. At the opening, Myeongbu Church Moderator Oh Gyeongjae is elected king of the union, while its members retain their existing leaders and faiths. The Central Intelligence Bureau and Daejeon are neutral.
-
 The Gauge cooperates with AI and humanoids as partners. The Government seeks to rule and control them. The religious union regards them as enemies of humanity. Recognition of real religions from 2026 remains unchanged.
 
 The Central Intelligence Bureau has operated as a separate neutral organization since 2030. The Central Intelligence Bureau AI has continuously led it, changing only its avatar. O Haerin is its current avatar. Originally an espionage organization, the bureau alone knows of the true Republic of Korea and the actual ROK government figures hibernating in the Sejong presidential-office cryoshelter. It seeks to revive them and restore a legitimate organization. The bureau holds N Seoul Tower, Yongsan 2-ga, Huam and Itaewon 2 dong, with Noksapyeong as its capital station. The Gauge directly holds the 36 dong and 23 stations in Dongjak and Gwanak.
 
 The Sluice made Yangpyeong Station its capital, the Gauge made Guro Station its capital, and the Taeuk Group made Yangjae Station its capital.
-
 
 ## Polities of Seoul
 
@@ -50904,12 +50284,10 @@ The Sluice made Yangpyeong Station its capital, the Gauge made Guro Station its 
 | S14 | Achasan Gate | Guui | Lever power | A dual rule of the gate commander and the Guui guard captain | None | None | Holy War Assembly block, the Guui sluice |
 | S12 | Sinnae Transport | Sinnae | Lever power | Hereditary in the proprietor house, a house rule of neutrality | None | None | Secular neutral, the neutral convoy |
 | S04 | Myeongbu Church | Samseong | Minor power | The pastorate of the session chair hereditary from father to son, the Oh house | None | Holy War Assembly | Holy War Assembly block, patronage of the Seongha Group |
-| S15 | Myeongdong Archdiocese | Myeongdong | Minor power | An archbishop elected in secret by the council of priests | None | Orthodox Assembly | Orthodox Assembly block, dependent on the downtown seal |
 | S10 | Anguk Order | Anguk | Minor power | An abbot acclaimed by the mountain assembly | None | Sutra School | Sutra School block, dependent on the downtown seal |
 | S11 | Seongha Group | Gangnam | Minor power | A chair hereditary in the Lee house | None | Holy War Assembly | Holy War Assembly block, patron of the Myeongbu Church |
 | S08 | Central Intelligence Bureau | Noksapyeong | Minor power | Central Intelligence Bureau AI; current avatar O Haerin | None | None | Leaning on the Sutra School only outwardly, keeping no state religion |
 | S16 | Jeongdong Federation | City Hall | Minor power | A chair elected directly by the members | None | None | Secular neutral, dependent on the downtown seal |
-
 
 ## Major Powers, Lever Powers, and Minor Powers
 
@@ -50938,12 +50316,10 @@ There were four lever powers.
 There were six minor powers.
 
 - The Myeongbu Church (S04) kept the one chapel at Samseong and had neither vassals nor an independent force.
-- The Myeongdong Archdiocese (S15) kept the one cathedral at Myeongdong and had neither vassals nor an independent force.
 - The Anguk Order (S10) kept the one order at Anguk and had neither vassals nor an independent force.
 - The Seongha Group (S11) kept the one headquarters at Gangnam and had neither vassals nor an independent force.
 - The Central Intelligence Bureau (S08) has been a separate neutral organization since 2030, based at Namsan Tower. Its AI has continuously led the bureau through changing avatars; the current avatar is O Haerin.
 - The Jeongdong Federation (S16) kept its capital and strike roll at City Hall Station. The Government Complex Seoul guard took priority for security and passage there. The station was shared by S06 and S16, while the surrounding dong remained under S06. S16 had neither vassals nor an independent force.
-
 
 ## The Government''s Central Base, Its Relations, and Its Internal Strife
 
@@ -50953,8 +50329,6 @@ The Government of the Republic of Korea was the first power. It held many techni
 - The downtown ration and rolls. The government ran the resident rolls and the ration windows of Jongno and Jung-gu. A person absent from the rolls received no ration downtown.
 - The seal and the stamp tax. Passage, trade, and contracts downtown stood only with a government seal and paid the stamp tax. A document without the seal was waste paper downtown.
 - The office guard. A standing guard with muster rolls held the downtown stations. The guard kept the office, the ration windows, and the seal windows at once.
-
-In June 2121, the Myeongdong Archdiocese, Anguk Order, and Jeongdong Federation renewed government stamps on passage permits and prepared distribution registers in the records office format.
 
 In March 2111, seven states submitted succession and treaty originals to the records office.
 
@@ -50971,7 +50345,6 @@ Junction, Anguk Order, Seongha Group, Sinnae Transport and White Cross belong to
 | Sinnae Transport | Subject |
 | Gauge | Independent |
 | White Cross | Subject |
-| Myeongdong Archdiocese | Independent |
 | Anguk Order | Subject |
 | Jeongdong Federation | Independent |
 | Taeuk Group | Independent |
@@ -50979,7 +50352,6 @@ Junction, Anguk Order, Seongha Group, Sinnae Transport and White Cross belong to
 | Myeongbu Church | Independent |
 | Seongha Group | Subject |
 | Central Intelligence Bureau | Independent |
-
 
 ## Vassals
 
@@ -51001,9 +50373,6 @@ The thirteen external organizations fall under their locations’ political auth
 | Taeuk Heavy Industries Suwon works | The Gauge | 2101. 3. | Parts and labor |
 | Yeongjong branch (Yeongjong) | Government of the Republic of Korea | 2104. 10. | Exchanged payment for outside trade; fee of three percent |
 
-The other nine states had no vassals: the White Cross, the Achasan Gate, Sinnae Transport, the Myeongbu Church, the Myeongdong Archdiocese, the Anguk Order, the Seongha Group, the Central Intelligence Bureau, and the Jeongdong Federation.
-
-
 ## State religion
 
 State religions divided into three branches; shamanism had no state.
@@ -51011,19 +50380,16 @@ State religions divided into three branches; shamanism had no state.
 | Tradition | Branch | States with this state religion | Relation |
 |---|---|---|---|
 | Buddhism | Technical branch · Sutra School | Anguk Order, the Sluice, the Gauge | The Central Intelligence Bureau leaned on it only outwardly |
-| Catholicism | State-religion branch · Orthodox Assembly | Myeongdong Archdiocese, the Junction, Taeuk Group | The Taeuk Group requested recognition of Jeong Seo-on''s succession; the Orthodox Assembly did not answer |
 | Protestantism | Warrior branch · Holy War Assembly | Myeongbu Church | The Seongha Group patronized the Myeongbu Church |
 | Shamanism | Rites to soothe machines | None | The Holy War Assembly persecuted it |
 
 The states without a state religion are the Yeouido Investors'' Association, the Government of the Republic of Korea, Eastern Command, Achasan Gate, the Jeongdong Federation, Sinnae Transport and White Cross. The Central Intelligence Bureau leans on the Sutra School only outwardly and has no state religion.
-
 
 ## Diplomacy
 
 Diplomacy followed three religious blocs and secular neutrality. Water, parts, rail, and money crossed those blocs, so faith and interests diverged.
 
 - The Holy War Assembly bloc comprised the Myeongbu Church, Eastern Command, Achasan Gate, and the Seongha Group.
-- The Orthodox Assembly bloc comprised the Myeongdong Archdiocese, the Junction, and the Taeuk Group.
 - The Sutra School bloc comprised the Anguk Order, the Sluice, the Gauge, and the Central Intelligence Bureau. The Central Intelligence Bureau belonged only outwardly.
 - The Yeouido Investors'' Association, the Government of the Republic of Korea, Eastern Command, Achasan Gate, the Jeongdong Federation, Sinnae Transport and White Cross have no state religion.
 
@@ -51032,7 +50398,6 @@ Three tensions were visible at the opening.
 - The Sluice bore a grudge against the Yeouido Investors'' Association over reclaiming Yeouido.
 - In February 2114 the Taeuk Group asked the Orthodox Assembly to confirm Jeong Seo-on''s succession as legitimate inheritance. The Orthodox Assembly received the request but did not answer.
 - The Holy War Assembly persecuted shamanism.
-
 
 ## Territorial Spheres
 
@@ -51046,7 +50411,6 @@ The sixteen states were read as living areas that linked waterworks, depots, hea
 | Center | Function | Gwanghwamun |
 | Center | Jeongdong Federation | City Hall |
 | Center | Anguk Order | Anguk |
-| Center | Myeongdong Archdiocese | Myeongdong |
 | Center | First Terminus (Incheon) | Yongsan |
 | East | White Cross | Jegidong |
 | East | First Guard District (Hanam) | Amsa |
@@ -51057,18 +50421,15 @@ The sixteen states were read as living areas that linked waterworks, depots, hea
 | South | Taeuk Heavy Industries Seongnam works | Yangjae |
 | South | Central Intelligence Bureau | Noksapyeong |
 
-
 ## Acquiring Land and Forming a State
 
 A person must belong to a state before receiving a fief from it. When an unaffiliated person acquires land, an independent state forms. The identities of the sixteen states at the opening remain distinct from those of states formed later. Each new state receives a distinct permanent identity within its save, retained after loading; its name and order of formation do not determine that identity.
 
 Land without a station can also be a fief. Subway, conventional rail and KTX stations are strategic strongholds; station kind and grade are separate from ownership of surrounding land. Players can acquire fiefs throughout Seoul, Gyeonggi, Gangwon, North and South Chungcheong, Daejeon and Sejong. That extent does not establish who held land at the opening, how far the current map shows it or which routes were passable.
 
-
 ## Places Outside the Capitals
 
 In 2126, Sangam transmission and the Bukhansan Bogungmun refuge route were not capitals of the sixteen states.
-
 
 ## The Five Corridors
 
@@ -51082,35 +50443,25 @@ Migrant settlements continued in Daerim and Garibong, Itaewon, Dongdaemun, Guro 
 | 4 | Guro and Gasan Joseonjok | Guro | First Branch Workshop (Cheonan and Asan, the Lee house) |
 | 5 | Namguro and the Daerim extension | Namguro | First Branch Workshop (Cheonan and Asan, the Lee house) |
 
-
 ## Public Facilities and Creative Assumptions
 
 The states held living areas around waterworks, depots, dioceses, workshops, headquarters, and subway stations.
-
-In 2126, the Government of the Republic of Korea conducted the president’s office and residence, records, distribution, and approvals at Cheong Wa Dae. The Government Complex Seoul main building handled security and passage at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga. Jogyesa, Myeongdong Cathedral, and the Jeongdong union office were facilities held by their respective states inside Government-held dong.
 
 | Facility | Location | State | Role in 2126 |
 |---|---|---|---|
 | Main building of the Government Complex Seoul | 209 Sejong-daero, Jongno-gu | Function | Forward administrative and defensive post for Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga security and passage. |
 | Yeouido Federation of Korean Industries hall | 24 Yeouidaero | The Suwon works | Meeting and investment-ledger center. |
 | Jogyesa | 55 Woojeongguk-ro | Anguk Order | Ritual and approval center. |
-| Myeongdong Cathedral | 74 Myeongdong-gil | Myeongdong Archdiocese | Worship and administrative center. |
 | Korean Confederation of Trade Unions office at Jeongdong | 3 Jeongdong-gil | Jeongdong Federation | Negotiation and strike-ledger center. |
 | Cheong Wa Dae | 1 Cheongwadae-ro, Jongno-gu | Government of the Republic of Korea | Center for the president’s office, residence, records, distribution, and approvals. |
-| Lotte World Tower | 300 Olympic-ro, Songpa-gu | Myeongdong Archdiocese | Surface and underground defensive post. Passage uses the connection to Jamsil Station. |
 | N Seoul Tower | 105 Namsangongwon-gil, Yongsan-gu | Central Intelligence Bureau | Observation and manual signal relay. |
 | National Assembly building | 1 Uisadang-daero, Yeongdeungpo-gu | Yeouido Investment Federation | Meeting hall for representatives of the investing states. |
 | Dongdaemun Design Plaza | 281 Eulji-ro, Jung-gu | Government of the Republic of Korea | Surface and underground passage and goods inspection post. |
 
-
 ## Strength Is Not Fixed
 
 In November 2125, the records office wrote the ledger of the sixteen states’ strengths.
-', '2076년 서울의 십육국이 건국되었다. 2116년 규격맹·대한민국정부·종교 연합의 세 국가가 성립하였고, 기존 나라의 수장과 관직은 봉신으로 존속하였다. 2125년 11월 기록청은 세 국가 안에 존속한 전신국·봉신의 강약을 장부에 기재하였다.
-
-규격맹에는 수문국·규격맹·태욱그룹·여의도출자연합회가 속한다. 대한민국정부에는 동방사·대한민국정부·환적국·안국총림·성하그룹·신내운수·흰십자단·아관사가 속한다. 명부교회·명동대교구·정동노총은 종교 연합을 이룬다. 개막에는 명부교회 당회장 오경재를 종교 연합의 왕으로 추대하고, 회원국의 기존 수장과 신앙은 유지한다. 중앙정보부와 대전은 중립이다.
-
-규격맹은 AI·휴머노이드와 협력하며 동반자로 대한다. 대한민국정부는 AI·휴머노이드를 지배하고 통제하려 한다. 종교 연합은 이들을 인류의 적으로 여긴다. 2026년의 실존 종교에 대한 인식은 그대로 이어진다.
+', '
 
 중앙정보부는 2030년부터 독립된 중립 조직으로 활동하였다. 중앙정보부 AI가 계속 조직을 이끌었으며 아바타만 교체하였다. 현재 아바타는 오해린이다. 본래 첩보 조직이었던 중앙정보부만이 진정한 대한민국과 세종 대통령실 동면소에 잠든 실제 대한민국정부 인사들의 존재를 안다. 중앙정보부는 이들을 되살려 정통성 있는 조직을 복원하려 한다. 중앙정보부는 남산타워와 용산2가동·후암동·이태원2동을 다스리며 수도역은 녹사평이다. 동작·관악의 36개 동과 23개 역은 규격맹이 직접 보유한다.
 
@@ -51133,7 +50484,6 @@ In November 2125, the records office wrote the ledger of the sixteen states’ s
 | S14 | 아관사 | 구의 | 약국 | 관문사령관과 구의수비대장 이원 체제 | 없음 | 없음 | 성전총회 블록, 구의 수문 |
 | S12 | 신내운수 | 신내 | 약국 | 사장 가문 세습, 중립 가훈 | 없음 | 없음 | 세속 중립, 중립 호송 |
 | S04 | 명부교회 | 삼성 | 소국 | 당회장 목사직 부자 세습, 오씨 | 없음 | 성전총회 | 성전총회 블록, 성하그룹의 후원 |
-| S15 | 명동대교구 | 명동 | 소국 | 사제단 비밀 선출 대주교 | 없음 | 정통회 | 정통회 블록, 도심 도장에 의존 |
 | S10 | 안국총림 | 안국 | 소국 | 산중총회 추대 방장 | 없음 | 장경종 | 장경종 블록, 도심 도장에 의존 |
 | S11 | 성하그룹 | 강남 | 소국 | 이씨 가문 세습 회장 | 없음 | 성전총회 | 성전총회 블록, 명부교회 후원 |
 | S08 | 중앙정보부 | 녹사평 | 소국 | 중앙정보부 AI, 현재 아바타 오해린 | 없음 | 없음 | 장경종에 겉으로만 기대며 국교를 두지 않음 |
@@ -51166,7 +50516,6 @@ In November 2125, the records office wrote the ledger of the sixteen states’ s
 소국은 여섯이다.
 
 - 명부교회(S04)는 삼성 예배당 하나를 지키며 속국도 독립 무력도 없다.
-- 명동대교구(S15)는 수도를 명동역에, 예식과 행정을 명동성당에 둔다. 롯데월드타워는 대주교 남윤경(K373)이 거주하는 핵심 요새다. 속국도 독립 무력도 없다.
 - 안국총림(S10)은 안국 종단 하나를 지키며 속국도 독립 무력도 없다.
 - 성하그룹(S11)은 강남 본사 하나를 지키며 속국도 독립 무력도 없다.
 - 중앙정보부(S08)는 2030년부터 독립된 중립 조직이며 남산타워를 거점으로 삼는다. 중앙정보부 AI가 아바타를 바꾸며 계속 조직을 이끌고 현재 아바타는 오해린이다.
@@ -51181,13 +50530,9 @@ In November 2125, the records office wrote the ledger of the sixteen states’ s
 - 도장과 인지세다. 도심의 통행과 거래와 계약은 정부 도장이 있어야 성립하고 인지세를 낸다. 도장 없는 문서는 도심에서 휴지가 된다.
 - 청사 경비대다. 소집 명부를 쥔 상비 경비가 도심 역을 지킨다. 경비대는 청사와 배급 창구와 도장 창구를 동시에 맡는다.
 
-2121년 6월 명동대교구·안국총림·정동노총은 종로·중구 통행증의 청사 도장을 갱신하고 도심 배급 창구에 제출할 명부를 기록청 양식으로 작성하였다.
-
 2111년 3월 수문국·동방사·아관사·환적국·신내운수·규격맹·흰십자단은 승계와 조약의 원본을 기록청에 제출하였다.
 
 2122년 5월 김연규는 기록 당직자 19명을 모아 온민의를 결성하였다.
-
-환적국·안국총림·성하그룹·신내운수·흰십자단은 대한민국정부에 속한다. 규격맹과 종교 연합은 각각 별도의 종주권을 가지며 중앙정보부와 대전은 중립이다.
 
 | 국가 | 정부와의 관계 |
 |---|---|
@@ -51198,7 +50543,6 @@ In November 2125, the records office wrote the ledger of the sixteen states’ s
 | 신내운수 | 복속 |
 | 규격맹 | 독립 |
 | 흰십자단 | 복속 |
-| 명동대교구 | 독립 |
 | 안국총림 | 복속 |
 | 정동노총 | 독립 |
 | 태욱그룹 | 독립 |
@@ -51209,25 +50553,18 @@ In November 2125, the records office wrote the ledger of the sixteen states’ s
 
 ## 속국
 
-서울 밖의 열세 조직은 각 소재지의 정치 관할에 속한다. 인천의 육지와 육지로 이어진 섬·김포·강원과 경기 북부는 대한민국정부, 충청남도·세종과 김포를 제외한 경기 서남부는 규격맹, 충청북도와 경기 동남부는 종교 연합이 다스린다. 대전은 민웅기가 다스리는 중립 영지다.
-
 | 속국 | 본국 | 선 해 | 하는 일 |
 |---|---|---|---|
 | 경기도(고양) | 대한민국정부 | 2106. 1. | 병역 명부와 인지세를 광화문에 보냄 |
-| 제일수문(양평) | 종교 연합 | 2097. 6. | 한강 상류 물길 관리 |
 | 제이수문(춘천) | 대한민국정부 | 2097. 6. | 북한강 물길 관리 |
 | 제1분공방(천안·아산, 이씨) | 규격맹 | 2102. 4. | 규격서에 따른 부품 제작·구로 송부 |
 | 제2분공방(시흥) | 규격맹 | 2102. 4. | 규격서에 따른 부품 제작·구로 송부 |
 | 제1종착(인천) | 대한민국정부 | 2100. 7. | 선로 끝 통행세 징수 |
 | 제2종착(파주) | 대한민국정부 | 2100. 7. | 선로 끝 통행세 징수 |
-| 제1경비지구(하남) | 종교 연합 | 2098. 9. | 병력 |
 | 제2경비지구(남양주) | 대한민국정부 | 2098. 9. | 병력 |
 | 제3경비지구(의정부·연천) | 대한민국정부 | 2098. 9. | 병력(북쪽 관문) |
-| 태욱중공업 성남사업장 | 종교 연합 | 2101. 3. | 부품과 노동 |
 | 태욱중공업 수원사업장 | 규격맹 | 2101. 3. | 부품과 노동 |
 | 영종지점(영종) | 대한민국정부 | 2104. 10. | 외부 교역 대금 환전, 수수료 100분의 3 |
-
-나머지 아홉 나라는 속국이 없다. 흰십자단·아관사·신내운수·명부교회·명동대교구·안국총림·성하그룹·중앙정보부·정동노총이다.
 
 ## 국교
 
@@ -51236,7 +50573,6 @@ In November 2125, the records office wrote the ledger of the sixteen states’ s
 | 갈래 | 파 | 국교를 둔 나라 | 관계 |
 |---|---|---|---|
 | 불교 | 기술파 · 장경종 | 안국총림·수문국·규격맹 | 중앙정보부는 겉으로만 의지 |
-| 천주교 | 국교파 · 정통회 | 명동대교구·환적국·태욱그룹 | 태욱그룹이 정서온의 승계 확인을 청구하였으나 정통회는 답하지 않음 |
 | 개신교 | 전사파 · 성전총회 | 명부교회 | 성하그룹이 명부교회를 후원 |
 | 무속 | 기계를 달래는 굿 | 없음 | 성전총회가 박해 |
 
@@ -51247,7 +50583,6 @@ In November 2125, the records office wrote the ledger of the sixteen states’ s
 외교의 큰 틀은 종파 세 블록과 세속 중립이다. 물과 부품과 철도와 돈은 블록을 넘나들어 신앙과 이익이 엇갈린다.
 
 - 성전총회 블록은 명부교회·동방사·아관사·성하그룹이다.
-- 정통회 블록은 명동대교구·환적국·태욱그룹이다.
 - 장경종 블록은 안국총림·수문국·규격맹·중앙정보부이다. 중앙정보부는 겉으로만 든다.
 - 여의도출자연합회·대한민국정부·동방사·아관사·정동노총·신내운수·흰십자단은 국교를 두지 않는다.
 
@@ -51269,7 +50604,6 @@ In November 2125, the records office wrote the ledger of the sixteen states’ s
 | 중앙 | 대한민국정부 | 광화문 |
 | 중앙 | 정동노총 | 수서 |
 | 중앙 | 안국총림 | 안국 |
-| 중앙 | 명동대교구 | 명동 |
 | 중앙 | 환적국 | 용산 |
 | 동부 | 흰십자단 | 제기동 |
 | 동부 | 동방사 | 암사 |
@@ -51308,17 +50642,13 @@ In November 2125, the records office wrote the ledger of the sixteen states’ s
 
 각국은 정수장·차량기지·교구·공방·본사와 전철역을 잇는 생활권을 두었다.
 
-2126년 대한민국정부는 핵심 요새인 청와대에서 대통령 윤서린(K144)의 집무와 거처, 기록·배급·인준 업무를 맡았다. 정부서울청사 본관은 전방 행정·방어 거점으로서 광화문·종로3가·을지로입구의 경비와 통행을 맡았다. 조계사와 명동성당, 정동노총 사무실은 정부가 다스리는 동 안에서 각 나라가 맡은 시설이다. 수도역 직영지는 수장 거주 요새와 별개다.
-
 | 시설 | 위치 | 나라 | 2126년 역할 |
 |---|---|---|---|
 | 정부서울청사 본관 | 종로구 세종대로 209 | 대한민국정부 | 전방 행정·방어 거점. 광화문·종로3가·을지로입구 경비와 통행을 맡는다. |
 | 여의도 전경련회관 | 여의대로 24 | 여의도출자연합회 | 국회의사당을 핵심 거점으로 둔 회의·출자 장부 보조 거점. |
 | 조계사 | 우정국로 55 | 안국총림 | 의례·인준 중심지. |
-| 명동성당 | 명동길 74 | 명동대교구 | 예식·행정 중심지. |
 | 민주노총 정동 사무실 | 정동길 3 | 정동노총 | 교섭·파업 장부 중심지. |
 | 청와대 | 종로구 청와대로 1 | 대한민국정부 | 대통령 윤서린(K144)의 집무·거처와 기록·배급·인준의 중심지이자 S06의 핵심 요새. |
-| 롯데월드타워 | 송파구 올림픽로 300 | 명동대교구 | 대주교 남윤경(K373)이 거주하는 S15의 지상·지하 핵심 요새. 타워와 몰 지하를 사용하며 잠실역 연결 통로로 통행한다. 수도 명동역과 명동성당의 예식·행정 기능은 유지한다. |
 | N서울타워 | 용산구 남산공원길 105 | 중앙정보부 | 관측·수동 신호 중계 거점. |
 | 국회의사당 | 영등포구 의사당대로 1 | 여의도출자연합회 | 의장 최지우(K219)가 거주하는 S09의 최우선 핵심 요새. 옛 본회의장은 출자국 대표 회의장으로 쓴다. |
 | 동대문디자인플라자 | 중구 을지로 281 | 대한민국정부 | 지상·지하 통행·물자 검사 거점. |
@@ -51332,7 +50662,6 @@ In Seoul subway stations, concourses, platforms, passages, and tunnels join at d
 
 Concourses and platforms open in stages under the residents'' rules. Changes to underground facilities and the surface surroundings shape each stronghold.
 
-
 ## Entry and the Panorama
 
 A. Initiative and panorama
@@ -51343,13 +50672,11 @@ B. Scale of facilities
 
 The strongholds recorded in the Seoul station catalog held multi-story structures and convenience-facility sectors of their own. Whether a station was a transfer station or an ordinary one changed the scale of facilities it could seat. The Yeongdeungpo, Ttukseom, and Guui treatment plants, the Sinjeong and Cheonwang depots, Garak Market, and the Noryangjin Fisheries Market stood beside stations, forming vast infrastructure to meet the survivors.
 
-
 ## The Interior Opening Procedure
 
 B. Interior layout
 
 Stations have different rooms on each level. Ordinary stations have smaller facilities, while transfer stations have larger ones. Markets, aid stations, repair workshops, generators, water-supply facilities, warehouses, and signal stations can occupy them. A nearby waterworks or depot changes how the station is used as a stronghold.
-
 
 ## The Three-Dimensional Layers and Combat
 
@@ -51361,7 +50688,6 @@ B. Battlefields by stronghold
 
 A small station house, a tangled transfer station, a terminal where the tracks ended, a collapsed tunnel, surface ruins, a vast depot, a rail bridge crossing the Han — the shape of the battlefield changed with each stronghold''s character.
 
-
 ## Facilities and the Distribution of Goods
 
 | Type | Facility capacity |
@@ -51372,7 +50698,6 @@ A small station house, a tangled transfer station, a terminal where the tracks e
 B. Facility upkeep
 
 Each facility devoured labor, power, and raw materials to keep turning. A facility cut from power stopped in its tracks, and a stronghold grown past its reach met the limit of its management.
-
 
 ## Sources
 
@@ -51433,7 +50758,6 @@ The Seoul of the time was not a flat administrative map but a graph of stations,
 
 The [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed-name rows for 315 stations. [The Structure of the World Map](/wiki/World-Map-Construction/) records 25 gu and their assembly order; [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) records six layers. Building use is recorded in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
-
 ## Stations
 
 **A. Station strongholds**
@@ -51443,7 +50767,6 @@ A station brought people, facilities, and connections back into use. In a dong w
 A station has six layers: surface ruins, the concourse, platforms and tracks, transfer corridors, deep tunnels, and depot adjacency. Markets, homes, and offices occupy the concourse; people and freight move through the platforms; toll collectors hold the transfer corridors. The facilities adjoining each station are recorded in [Entering the Station Interior](/wiki/Station-Interior-Construction/). The terms by which a stronghold holds its territory are recorded in Strongholds and Territory.
 
 In 2106, Jongno and Junggu passes and commercial contracts received a Government Seoul Complex stamp. A counterfeit medicine box appeared at a Seoul Station auction in 2124.
-
 
 ## Tunnels
 
@@ -51455,7 +50778,6 @@ A transfer station cut from power stopped the traction freight flow even with bo
 
 Since 2026, machines have repeated their last search and guard routines on surviving tracks, while rat colonies nest in cable trays beneath the transfer shops. Machines working or moving beside people are recorded in [People and Machines](/wiki/People-and-Machines/). The tracks retain their 2026 connections.
 
-
 ## Depots
 
 **A. The eight depots**
@@ -51466,7 +50788,6 @@ A depot was the seat of repair, bulk storage, and siege. Sinjeong''s unloading a
 
 The industrial blocks of Guro and Geumcheon clung to the depots and used schools for drying parts, and the residential shells of Dobong and Nowon could not hold water without Changdong. Depot names were not raised to state names. The wheels and dispatch that people watched over became the state names.
 
-
 ## Treatment Plants and Sluices
 
 **A. Water plants and their watches**
@@ -51476,7 +50797,6 @@ On October 14, 2030, Yeongdeungpo waterworks officer Han Jeonghun operated valve
 On November 6, 2026, Han Jeonghun received two emergency-generator parts and agreed to open the water-pipe valve toward Yeouido every day. The transaction was recorded in [the oral records](/wiki/Oral-Stories/#the-2026-water-and-parts-exchange). Representatives of both sides also signed the March 14, 2053 transfer of water-facility management rights.
 
 The first floors north and south of the Han, and the tributaries Jungnang, Anyang, Tan, Cheonggye, and Hongje, decided which dongs got wet. Yeouido, Ichon, Banpo, Jamsil, Mangwon, Hapjeong, Amsa, Guui, and Jayang were read as main-channel waterfront. Habitation pushed above the third floor and the ration windows sat inside the embankment. The details of the waterfront rules were already written by [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
-
 
 ## Passages
 
@@ -51495,7 +50815,6 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 | Depot | Sinjeong·Cheonwang·Banghwa·Gunja·Godeok·Changdong·Sinnae·Suseo | Repair, rolling stock, wheels and convoys | [The Structure of the World Map](/wiki/World-Map-Construction/) |
 | Treatment plant · sluice | Yeongdeungpo·Ttukseom·Guui·Amsa Arisu | Water signatures, lock-gate watches | [the Sixteen States of Seoul](/wiki/Sixteen-States/) |
 | Passage | Transfers, maintenance corridors, refuge stairs | Transit tolls, leftovers and heat, detours | Logistics and Infrastructure |
-
 
 ## Sources
 
@@ -53792,7 +53111,6 @@ The scale runs from −100 to 100. Zero means that the axis has not yet tipped i
 
 **B. Persons and Organizations**
 
-
 ## The Ten Person Value Cells
 
 **A. Scale Direction**
@@ -53811,7 +53129,6 @@ Left is negative, right is positive.
 | 8 | Qualification | Heredity · bloodline | Examination · apprenticeship | Succession, elders, stewards |
 | 9 | Decentralization | Central monopoly | Living-sphere partition | Water federations, joint negotiation |
 | 10 | Reform | Preservation · oral record | Charter amendment | Empty-century debts, trusts |
-
 
 ## Person Desires and Tastes
 
@@ -53833,13 +53150,11 @@ Orientation: opposite sex / same sex / both sexes / none / fluid. Bonding: monog
 
 The five desire scales are longing, possessiveness, risk, display and duration. Orientation and bonding are recorded separately from these scales.
 
-
 ## Organization Values
 
 **A. Criteria for Organizational Values**
 
 Organization values were likewise built on the **same ten axes** as persons. The numbers were scored against the current charter, council majorities, and ledger practice. The authority number Han Jaemok carried as an individual could differ from the authority number of the Water Compact he belonged to, and it was precisely in that difference that issues budded.
-
 
 ## The Nine Organization Policy Cells
 
@@ -53860,7 +53175,6 @@ Organization policies have nine categories: war, migrants, water, labor, records
 | Bonding | Monogamy license / contract cohabitation / house bonding / military-register bonding / open bonding | Marriage and cohabitation ledgers. Organizations did not assign sexual taste |
 
 Operating houses HC and HP and external theaters XT use the same fields. House records appear in the [world narrative atlas](/wiki/World-Narrative-Atlas/). Details by layer appear in [Houses](/wiki/Chaebol-Houses-and-Century-Factions/).
-
 
 ## Seventeen Key Persons at the Opening
 
@@ -53890,7 +53204,6 @@ Operating houses HC and HP and external theaters XT use the same fields. House r
 
 A positive qualification value means a preference for examinations and apprenticeship. Im Chowon and I Hongwon have high values on this axis. Bae Ujin has high force and authority values.
 
-
 ## The Sixteen-State Charters (Opening)
 
 **A. Meaning of the Indicators**
@@ -53913,7 +53226,6 @@ Values stood for the practice the current majority followed.
 | 12 Neutral Convoy City | −20 | 40 | −30 | 0 | 20 | 10 | 20 | 20 | 40 | 0 |
 | 13 Medical Neutrality League | −20 | 30 | −50 | −20 | 20 | 40 | 20 | 20 | 20 | −10 |
 | 14 Gate Military Government | 40 | −20 | 40 | 10 | 20 | 0 | −10 | −10 | −20 | −10 |
-| 15 Myeongdong Archdiocese | 10 | 30 | −10 | 50 | −20 | −40 | −20 | 0 | 0 | 0 |
 | 16 Jeongdong Labor Union | −30 | 30 | −30 | 0 | 10 | 30 | 30 | 20 | 40 | 10 |
 ', '**가. 가치관 척도의 의의**
 
@@ -54042,7 +53354,6 @@ Values stood for the practice the current majority followed.
 | 12 신내운수 | −20 | 40 | −30 | 0 | 20 | 10 | 20 | 20 | 40 | 0 |
 | 13 흰십자단 | −20 | 30 | −50 | −20 | 20 | 40 | 20 | 20 | 20 | −10 |
 | 14 아관사 | 40 | −20 | 40 | 10 | 20 | 0 | −10 | −10 | −20 | −10 |
-| 15 명동대교구 | 10 | 30 | −10 | 50 | −20 | −40 | −20 | 0 | 0 | 0 |
 | 16 정동노총 | −30 | 30 | −30 | 0 | 10 | 30 | 30 | 20 | 40 | 10 |
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('World-Expansion-Index', 'World Expansion Index', '세계 확장 색인', 'overview', 3, '<a id="World-Expansion-Index-heading-0001"></a>
@@ -55282,7 +54593,6 @@ C. Related documents
 
 Related documents: [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/), [the Sixteen States of Seoul](/wiki/Sixteen-States/), Seoul region-setting data, [the Seoul Station Catalog](/wiki/Seoul-Station-Catalog/), [Entering the Station Interior](/wiki/Station-Interior-Construction/), [Travel and Encounters](/gdd/rules/travel-and-encounters/).
 
-
 ## The 25 Autonomous Districts
 
 A. District-name sources
@@ -55295,7 +54605,6 @@ B. Districts and spheres
 
 These twenty-five remained the world map''s core sectors, and the sixteen states laid their spheres over these districts. Yeongdeungpo-gu was not renamed the Water Compact, nor Jongno-gu the Republic of Korea Government.
 
-
 ## The Station List
 
 A. Station names and counts
@@ -55305,7 +54614,6 @@ The Seoul station catalog records 334 observed-name rows. The wiki map displays 
 B. Density by district
 
 Among the 315 Seoul stations on the wiki map, Gangnam-gu and Songpa-gu each have 23, while Geumcheon-gu has four. Major movement routes cross around Yeongdeungpo, Sindorim, and Guro.
-
 
 ## Surrounding Facilities
 
@@ -55322,7 +54630,6 @@ The depots lay at Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae
 C. Markets and support facilities
 
 The principal markets where bulk goods moved — Garak Market, Gangseo Market, Yanggok Market, and the Noryangjin Fisheries Market — formed the skeleton. Beyond them, hospitals, fire stations, police stations, substations, and rail marshaling yards remained beside the stations, backing each stronghold''s role.
-
 
 ## Laying the Sixteen States Over the Districts
 
@@ -55346,13 +54653,11 @@ The states did not replace the districts. `Sixteen-States.md` was the standard f
 | Sinnae Transport | Lesser state | Jungnang–Sinnae–Mangu northeastern transfer axis | Terminal transfers, depots, northeastern outskirts |
 | White Cross | Lesser state | Dongdaemun–Cheongnyangni Jegi-dong market axis | The medicinal-herb market, eastern medicine, rail |
 | Achasan Gate | Lesser state | Gwangjin–Guui–Achasan eastern Han River gate | Guui treatment plant, Achasan, eastern bridges |
-| Myeongdong Archdiocese | Lesser state | Myeongdong Station central altar axis | Myeongdong Cathedral altar, accreditation of marriages, adoptions, and memorial rites, diocesan registers |
 | Jeongdong Federation | Lesser state | City Hall Station Jeongdong central register axis | Strike rolls, City Hall Plaza gatherings, Jeongdong offices |
 
 B. Ownership and occupation
 
 The opening map derives surface control at 311 stations from the territory register. City Hall has a separate shared-control record for the Government of the Republic of Korea and the Jeongdong Federation, with government security taking priority. Gwangmyeong Sageori, Daechi, and Seoksu lie outside the mapped surface regions; each station''s interior has its own control record.
-
 
 ## Nodes and Layers
 
@@ -55446,7 +54751,6 @@ The passages joining layer to layer and station to station changed state without
 | 신내운수 | 약국 | 중랑·신내·망우 동북 환승축 | 말단 환승, 차량기지, 동북 외곽 |
 | 흰십자단 | 약국 | 동대문·청량리 제기동시장축 | 약재시장, 동부 의료, 철도 |
 | 아관사 | 약국 | 광진·구의·아차산 동부 한강 관문 | 구의 정수, 아차산, 동부 교량 |
-| 명동대교구 | 소국 | 명동역 중앙 제대축 | 명동성당 제대, 혼인·양자·위령 인준, 교구 명부 |
 | 정동노총 | 소국 | 시청역 정동 중앙 명부축 | 파업 명부, 시청 앞 집결, 정동 사무실 |
 
 나. 소유와 점령
@@ -55608,7 +54912,6 @@ The opening campaign centered on Seoul''s three powers and subway routes. Beyond
 
 On October 15, 2030, the president drafted and signed an emergency order. The prime minister countersigned it, and designated facility emergency preparedness officers took charge of on-site authority during the communications outage.
 
-
 ## Generations after the Great Blackout
 
 **A. Halted manufacturing and the change of generations**
@@ -55616,8 +54919,6 @@ On October 15, 2030, the president drafted and signed an emergency order. The pr
 High-density batteries, authorization chips, and cloud-held weights could not be made again within one generation. In 2032, adults who had experienced the Great Blackout were operating the sluices. While the time for returning emergency authority was still remembered, the offices of mayor and district head and the boards of directors remained.
 
 On March 14, 2053, Han Seokjin, head of the Yeongdeungpo waterworks, and six representatives of water-receiving families met seven Yeouido family representatives and signed an agreement. After the transfer of management rights, the waterworks staff moved their base to Yangpyeong Station underground.
-
-
 
 ## Worksites in 2026
 
@@ -55633,7 +54934,6 @@ In 2026, workers at Seoul waterworks and rail depots managed remote systems alon
 | Subway safety network | Seoul''s 2017 safety enhancement plan assumed ICT safety management, including IoT. ([SMG](https://world.seoul.go.kr/creating-safe-seoul-metropolitan-subway/), accessed 2026-09-17) | Station spaces and water tanks remained; remote safety control failed. |
 | Conscription rolls | The Military Manpower Administration was still taking personal enlistment selections in 2026. ([mma.go.kr](https://www.mma.go.kr/), accessed 2026-09-17) | Paper and copied rolls; no computerized call-up. Conscription Remnants. |
 
-
 ## The Chain of That Week
 
 **A. Refused calls and halted manufacturing**
@@ -55643,7 +54943,6 @@ At about 21:47 on October 14, 2030, district indicators in the Blue House crisis
 That day remote control and outside power failed at Yeongdeungpo waterworks. Staff started the emergency generator and operated valves manually. Han Jeonghun entered 21:47 and the control failure in the first line of a paper log.
 
 On October 15, 2030, staff at the Government Seoul Complex in Gwanghwamun made eight handwritten copies of the emergency order and sent them to designated facilities, including the Yeongdeungpo, Amsa, and Guui waterworks.
-
 
 ## What It Meant for Technology to Die
 
@@ -55660,7 +54959,6 @@ On October 14, 2030, remote control failed at the Yeongdeungpo waterworks. After
 
 Programming and most human technology survived and were passed down orally to a few. With the internet gone, knowledge became concentrated among them. Only those who held the knowledge could operate electricity and technical equipment, and some forces established severe technology monopolies. After the dark age, these technologists rose into a knight class. They built power through the knowledge needed to run equipment and founded sixteen great forces during the second generation.
 
-
 ## Seoul''s States and the Peninsula Beyond
 
 **A. Water supply and the neighboring regions**
@@ -55668,7 +54966,6 @@ Programming and most human technology survived and were passed down orally to a 
 After the Great Blackout, Seoul retained a network of stations where signatories managed water. Stations maintained tanks and temperature. [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) describes the map structure. Human duty staff operated Han River water treatment and the sluices; that duty became the basis of legitimacy for the [Sluice](/wiki/Sixteen-States/).
 
 In 2100 Hwanjeokguk collected tolls at rail termini in Incheon and Paju. In 2102 Gyugyeokmaeng incorporated workshops in Cheonan–Asan and Siheung as branch workshops.
-
 
 ## News from Beyond Seoul
 
@@ -55680,7 +54977,6 @@ In 2100 Hwanjeokguk collected tolls at rail termini in Incheon and Paju. In 2102
 | China | Robot density in 2023 was 470. The coastal export and automation belt depended on the stack. | Reports reaching Seoul said that functions along the Chinese coast had failed first. |
 | United States | Atlas-type machines and cloud logistics had already reached Korean worksites. | If the same stack came undone on the mainland, there would be no Pacific rescue of the 2026 kind. The Incheon trust was a lottery for the remaining orbital resources. |
 | Japan | A center of robot manufacturing, with density 419 and dependence on imported energy. | Manufacturing failed with the shared stack. A temporary coalition of Busan shipowners and escorts took one Tsushima harbor in 2118 and recovered seized ships and people. Its main force withdrew in 2119. Returnees and local collaborators described that harbor, while the condition of the Japanese mainland remained unconfirmed. |
-
 
 ## Why Feudal Order Took Hold
 
@@ -55695,9 +54991,6 @@ In 2119, the Sluice’s contract council elected Han Jaemok as its head. He appo
 ## The Government Complex and Passes
 
 **A. Election and stamp renewal**
-
-In 2121, Yun Seorin was elected president by the Government Seoul Complex duty families. In 2121, the Myeongdong Archdiocese, Anguk Chongnim, and Jeongdong Labor Union renewed the complex stamps on Jongno and Junggu passes.
-
 
 ## Sources
 
@@ -55812,8 +55105,6 @@ During the second generation humanoids could be used again on local networks.
 
 **가. 선거와 도장 갱신**
 
-2121년 윤서린은 정부서울청사 당직 가문들의 선거에서 대통령에 당선되었다. 같은 해 명동대교구·안국총림·정동노총은 종로·중구 통행증의 청사 도장을 갱신하였다.
-
 ## 출처
 
 - [Pew](https://www.pewresearch.org/short-reads/2014/08/12/6-facts-about-christianity-in-south-korea/)
@@ -55831,7 +55122,6 @@ The map shows opening-day surface holdings alongside mapped rail locations. A ra
 | Surface holdings | The three states and their vassals at the opening |
 | Rail locations | Mapped stations and tracks |
 
-
 ## Winter and Station Depth
 
 The season remains an unending winter, but surface cold varies by region. Surface temperatures use the daily minimum recorded at each region''s representative weather station on 8 January 2021. Seoul''s surface and exposed platforms use −18.6°C; clothing elsewhere varies in thickness and fabric with the matching regional value below. Stations with railway tracks, including metro, regional, high-speed, and conventional railways, distinguish exposed areas from underground living quarters.
@@ -55843,7 +55133,6 @@ The default underground classification follows floors: B1 through B3 are interme
 Clothing follows the actual indoor temperature and heating conditions before the default for a floor. Heated surface interiors and warm underground rooms do not require all the insulation worn outdoors. Electricity production does not mean every station and passage is continuously heated, so power supply alone does not establish a warm interior. Where indoor conditions are unknown, the floor-based temperature default applies.
 
 At the same underground level, cold varies with the regional surface temperature and the amount of air entering from outside. Intermediate passages admitting much cold air can fall below the baseline to less than 8°C, while remaining warmer than the local surface. Deep quarters are less affected by outside air and their baseline varies less. Surface differences are not simply added to or subtracted from underground temperatures; heating and outside-air exposure are considered together for the occupied space.
-
 
 ### Regional Surface Temperatures
 
