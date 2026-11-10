@@ -52,6 +52,21 @@ const raw = {
 };
 
 // ---- UI strings (the only hand-written text; everything else comes from SQL) ----
+// Owner decision 2026-11-10: how each faction is governed. Titles (duchies) are held per district (gu).
+const FACTION_STRUCTURE = {
+  government: {
+    en: 'Fourteen districts north of the Han river. Each district elects a National Assembly member, and each member holds that district\'s duchy under the title Senator. The Senators act like the prince-electors of the Holy Roman Empire: they gather candidates from among themselves and elect the President, who serves for life. Two parties compete: the OMO Party and the Claw Party.',
+    ko: '한강 이북 14개 구. 각 구가 국회의원을 뽑고, 그 의원이 해당 구의 공작위를 가지며 칭호는 Senator이다. Senator는 신성로마제국의 선제후처럼 자기들 중에서 후보를 모아 대통령을 선출하고, 대통령은 종신직이다. 정당은 OMO당과 Claw당 둘이다.',
+  },
+  'free-city': {
+    en: 'Seven districts south of the Han river (Gangseo, Yangcheon, Yeongdeungpo, Guro, Geumcheon, Dongjak, Gwanak). Every city is an independent power holding its own duchy. There is no king above them and no common ruler; the cities trade goods and skills as the Union.',
+    ko: '한강 이남의 7개 구(강서·양천·영등포·구로·금천·동작·관악). 각 도시가 공작위를 가진 개별 세력이며, 그 위에 왕도 공통 지도자도 없다. 도시들은 유니온으로서 물자와 기술을 주고받는다.',
+  },
+  arc: {
+    en: 'Four districts of Gangnam (Seocho, Gangnam, Songpa, Gangdong). A theocratic hierarchy centred on the head of the faith, the Hierophant (Go Ye-jin), in the manner of a Shia clan government. Followers replace body parts with machines and, after death, give their brains to the shrine as the god\'s memory.',
+    ko: '강남 4개 구(서초·강남·송파·강동). 교주(고예진)를 중심으로 한 신권 하이라키로, 시아파를 참조한 씨족정 방식이다. 신도는 몸을 기계로 바꾸고 죽은 뒤 뇌를 성소에 봉헌해 신의 기억이 된다.',
+  },
+};
 const UI = {
   en: {
     lang: 'en-US', label: 'English', prefix: '', wiki: 'Wiki', states: 'States', factions: 'Factions', people: 'People', gdd: 'Design Docs (GDD)', showcase: 'Showcase',
@@ -59,16 +74,16 @@ const UI = {
     prev: 'Previous page', next: 'Next page', menu: 'Menu', search: 'Search', noResults: 'No results for', reset: 'Reset search', toSelect: 'to select', toNavigate: 'to navigate', toClose: 'to close',
     appearance: 'Appearance', returnTop: 'Return to top', skip: 'Skip to content', footerMsg: 'Public world bible and game design documents.',
     heroText: 'World Bible & Game Design', openWiki: 'Open the Wiki', readGdd: 'Read the GDD', openShowcase: 'Watch the Showcase',
-    showcaseCard: 'Interactive Showcase', showcaseDetail: 'A narrated, illustrated tour of the sixteen states. Korean voice with English subtitles.',
+    showcaseCard: 'Interactive Showcase', showcaseDetail: 'A narrated, illustrated tour of the metro world. Korean voice with English subtitles.',
     openSource: 'Open Source', openSourceDetail: 'Everything is built from raw SQL data in the public repository.',
     wikiLead: (n) => `${n} articles on the world, its states, people and history. Pick a category below or use the sidebar.`,
-    statesLead: (n, f) => `${n} states in ${f} factions hold the stations and districts of the metro world.`,
+    statesLead: (n, f) => `${f} factions rule the metro world: the Government, the Free City and Arc. Their domains are held as duchies, one per district.`,
     peopleLead: (n) => `${n} characters. Use the site search or your browser's find (Ctrl+F) to locate a name.`,
     gddLead: (n) => `${n} design documents: rules, architecture, art direction, decision records, references and system design.`,
     cols: { id: 'ID', state: 'State', ruler: 'Ruler', capital: 'Capital', power: 'Power', faction: 'Faction', name: 'Name', title: 'Title', occupation: 'Occupation', rank: 'Rank' },
     fields: { stateId: 'State ID', government: 'Government', power: 'Power', origin: 'Origin', ruler: 'Ruler', capital: 'Capital', faction: 'Faction', base: 'Base', position: 'Position', occupation: 'Occupation', gender: 'Gender', stage: 'Stage', state: 'State', rank: 'Rank', title: 'Title' },
     members: 'Member states', centerRegion: 'Center', aiPosition: 'Stance toward AI', recorded: (n) => `${n} recorded people.`, independentNote: 'Affiliation is not yet decided in the canon.',
-    featStates: (n) => `${n} states grouped into three factions: the Government, the Free City and Arc.`, featPeople: (n) => `${n} characters with ranks, occupations and allegiances.`,
+    featStates: (n) => `Three factions - the Government, the Free City and Arc - and the duchies they hold.`, featPeople: (n) => `${n} characters with ranks, occupations and allegiances.`,
     featWiki: (n) => `${n} articles on history, factions, ecology, culture and geography of a post-blackout Seoul.`, featGdd: (n) => `${n} documents covering rules, systems, art direction and decisions.`,
     featUpdates: 'What changed in the wiki and when.', tagline: meta.tagline, siteTitle: meta.title,
   },
@@ -81,13 +96,13 @@ const UI = {
     showcaseCard: '인터랙티브 쇼케이스', showcaseDetail: '열여섯 국가를 돌아보는 음성 해설 투어. 한국어 음성과 영어 자막.',
     openSource: '오픈 소스', openSourceDetail: '모든 내용은 공개 저장소의 SQL 원본 데이터에서 빌드됩니다.',
     wikiLead: (n) => `세계와 국가, 인물, 역사를 다룬 문서 ${n}개. 아래 분류에서 고르거나 사이드바를 이용하세요.`,
-    statesLead: (n, f) => `${f}개 세력에 속한 ${n}개 국가가 지하철 세계의 역과 구역을 나눠 가지고 있습니다.`,
+    statesLead: (n, f) => `정부, 자유도시, Arc ${f}개 세력이 지하철 세계를 다스립니다. 영지는 구 하나가 공작위 하나로 나뉩니다.`,
     peopleLead: (n) => `등장인물 ${n}명. 사이트 검색이나 브라우저 찾기(Ctrl+F)로 이름을 찾으세요.`,
     gddLead: (n) => `규칙, 아키텍처, 아트, 결정 기록, 레퍼런스, 시스템 설계 문서 ${n}개.`,
     cols: { id: 'ID', state: '국가', ruler: '군주', capital: '수도', power: '국력', faction: '세력', name: '이름', title: '직함', occupation: '직업', rank: '직급' },
     fields: { stateId: '국가 ID', government: '정체', power: '국력', origin: '기원', ruler: '군주', capital: '수도', faction: '세력', base: '거점', position: '직위', occupation: '직업', gender: '성별', stage: '단계', state: '국가', rank: '직급', title: '직함' },
     members: '소속 국가', centerRegion: '중심 지역', aiPosition: 'AI에 대한 입장', recorded: (n) => `등록된 인물 ${n}명.`, independentNote: '정본에서 아직 소속이 정해지지 않았습니다.',
-    featStates: (n) => `${n}개 국가를 정부, 자유도시, Arc 세 세력으로 묶었습니다.`, featPeople: (n) => `직급, 직업, 소속을 가진 인물 ${n}명.`,
+    featStates: (n) => `정부, 자유도시, Arc 세 세력과 그들이 가진 공작령.`, featPeople: (n) => `직급, 직업, 소속을 가진 인물 ${n}명.`,
     featWiki: (n) => `대정전 이후 서울의 역사, 세력, 생태, 문화, 지리를 다룬 문서 ${n}개.`, featGdd: (n) => `규칙, 시스템, 아트 방향, 결정 기록을 담은 문서 ${n}개.`,
     featUpdates: '위키가 언제 무엇이 바뀌었는지.', tagline: meta.tagline_ko, siteTitle: meta.title_ko,
   },
@@ -149,10 +164,10 @@ for (const L of [UI.en, UI.ko]) {
 
   // factions
   const members = (fid) => states.filter((s) => s.faction_id === fid);
-  write(`${L.prefix}wiki/factions/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => members(x.id).length).map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${members(x.id).map((s) => `- [${g(s, 'name')}](${P(`wiki/states/${s.slug}/`)}) — ${g(s, 'ruler')}`).join('\n')}\n`).join('\n')}`));
+  write(`${L.prefix}wiki/factions/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => members(x.id).length).map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n${members(x.id).map((s) => `- [${g(s, 'name')}](${P(`wiki/states/${s.slug}/`)}) — ${g(s, 'ruler')}`).join('\n')}\n`).join('\n')}`));
   factions.filter((x) => members(x.id).length).forEach((x) => {
     const peopleN = people.filter((p) => p.faction_id === x.id).length;
-    write(`${L.prefix}wiki/factions/${x.id}/index.md`, page(g(x, 'name'), `# ${g(x, 'name')}\n\n| ${L === UI.ko ? "항목" : "Field"} | ${L === UI.ko ? "값" : "Value"} |\n| --- | --- |\n${g(x, 'center_region') ? `| ${L.centerRegion} | ${cell(g(x, 'center_region'))} |\n| ${L.aiPosition} | ${cell(g(x, 'ai_position'))} |\n` : ''}| ${L.fields.state} | ${members(x.id).length} |\n| ${L.people} | ${peopleN} |\n\n${x.id === 'independent' ? `${L.independentNote}\n\n` : ''}## ${L.members}\n\n| ${L.cols.id} | ${L.cols.state} | ${L.cols.ruler} | ${L.cols.capital} | ${L.cols.power} |\n| --- | --- | --- | --- | --- |\n${members(x.id).map((s) => `| ${s.id} | [${cell(g(s, 'name'))}](${P(`wiki/states/${s.slug}/`)}) | ${cell(g(s, 'ruler'))} | ${cell(g(s, 'capital'))} | ${cell(g(s, 'power'))} |`).join('\n')}\n`));
+    write(`${L.prefix}wiki/factions/${x.id}/index.md`, page(g(x, 'name'), `# ${g(x, 'name')}\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n| ${L === UI.ko ? "항목" : "Field"} | ${L === UI.ko ? "값" : "Value"} |\n| --- | --- |\n${g(x, 'center_region') ? `| ${L.centerRegion} | ${cell(g(x, 'center_region'))} |\n| ${L.aiPosition} | ${cell(g(x, 'ai_position'))} |\n` : ''}| ${L.fields.state} | ${members(x.id).length} |\n| ${L.people} | ${peopleN} |\n\n${x.id === 'independent' ? `${L.independentNote}\n\n` : ''}## ${L.members}\n\n| ${L.cols.id} | ${L.cols.state} | ${L.cols.ruler} | ${L.cols.capital} | ${L.cols.power} |\n| --- | --- | --- | --- | --- |\n${members(x.id).map((s) => `| ${s.id} | [${cell(g(s, 'name'))}](${P(`wiki/states/${s.slug}/`)}) | ${cell(g(s, 'ruler'))} | ${cell(g(s, 'capital'))} | ${cell(g(s, 'power'))} |`).join('\n')}\n`));
   });
 
   // states

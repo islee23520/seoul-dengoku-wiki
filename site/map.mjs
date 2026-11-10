@@ -5,11 +5,11 @@
 //   map.rail.json           physical rail polylines already projected to map units                     (loaded when rail is shown)
 
 // Owner rule: each district (gu) is one duchy. North of the Han river is the Government; Gangnam-side east is Arc; Gangnam-side west is the Free City.
-// Gwanak-gu is not covered by the rule and stays unassigned until the owner decides.
+// Gwanak-gu joins the Free City (owner answer 2026-11-10).
 const DISTRICT_FACTION = {
   government: ['마포구', '용산구', '중구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '종로구', '서대문구', '은평구', '강북구', '도봉구', '노원구'],
   arc: ['서초구', '강남구', '송파구', '강동구'],
-  'free-city': ['강서구', '양천구', '영등포구', '구로구', '금천구', '동작구'],
+  'free-city': ['강서구', '양천구', '영등포구', '구로구', '금천구', '동작구', '관악구'],
 };
 const factionOfDistrict = new Map(Object.entries(DISTRICT_FACTION).flatMap(([f, gus]) => gus.map((g) => [g, f])));
 
