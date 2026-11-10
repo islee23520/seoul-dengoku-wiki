@@ -21,3 +21,7 @@ tsconfig.tsbuildinfo
 tools/**/dist/
 tools/**/__pycache__/
 *.pyc
+
+# GitHub Pages build output
+dist-pages/
+site/.vp-src/

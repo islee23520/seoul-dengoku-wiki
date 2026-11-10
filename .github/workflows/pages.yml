@@ -1,0 +1,52 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main, pages/github-pages-migration]
+    paths: ['data/sql/**', 'site/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: actions/configure-pages@v5
+        id: pages
+      - name: Install site dependencies
+        working-directory: site
+        run: npm ci --no-audit --no-fund
+      - name: Build from raw SQL
+        env:
+          SITE_BASE: ${{ steps.pages.outputs.base_path }}/
+          SITE_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: node site/build.mjs
+      - name: Check output
+        env:
+          SITE_BASE: ${{ steps.pages.outputs.base_path }}/
+        run: node site/check-site.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist-pages
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

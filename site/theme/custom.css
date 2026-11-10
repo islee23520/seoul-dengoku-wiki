@@ -1,0 +1,50 @@
+:root {
+  --vp-c-brand-1: #b63c32;
+  --vp-c-brand-2: #8f2d27;
+  --vp-c-brand-3: #b63c32;
+  --vp-c-brand-soft: rgba(182, 60, 50, 0.14);
+  --vp-c-bg: #f7f7f4;
+  --vp-c-bg-alt: #ffffff;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-soft: #f2f3f5;
+  --vp-c-divider: #d9dee5;
+  --vp-c-text-1: #27313d;
+  --vp-c-text-2: #697586;
+  --vp-nav-bg-color: #1a1f2e;
+  --vp-sidebar-bg-color: #ffffff;
+  --vp-layout-max-width: 1440px;
+  --vp-button-brand-bg: #b63c32;
+  --vp-button-brand-hover-bg: #8f2d27;
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #b63c32 30%, #e0914a);
+}
+.dark {
+  --vp-c-brand-1: #e0675c;
+  --vp-c-brand-2: #f08a80;
+  --vp-c-brand-3: #b63c32;
+  --vp-c-bg: #12151f;
+  --vp-c-bg-alt: #181c28;
+  --vp-c-bg-elv: #181c28;
+  --vp-c-bg-soft: #1d2230;
+  --vp-c-divider: #2a3144;
+  --vp-c-text-1: #dfe5ee;
+  --vp-c-text-2: #94a0b2;
+  --vp-c-text-3: #6f7b8e;
+  --vp-home-hero-name-background: linear-gradient(120deg, #e0675c 30%, #e0914a);
+  --vp-button-alt-text: #dfe5ee;
+  --vp-button-alt-bg: #1d2230;
+  --vp-nav-bg-color: #0e1119;
+  --vp-sidebar-bg-color: #181c28;
+}
+.VPHomeHero .text, .VPFeature .title { color: var(--vp-c-text-1) !important; }
+.VPNav, .VPNavBar, .VPNavBar .content-body, .VPNavBar.has-sidebar .content-body { background-color: var(--vp-nav-bg-color) !important; }
+.VPNavBarTitle .title, .VPNavBarMenuLink, .VPNavBarSearchButton .text, .VPNavBarSearchButton .vpi-search, .VPNavBarAppearance, .VPNavBarSocialLinks, .VPNavBarHamburger .container span, .VPFlyout .button { color: #b8c4d2 !important; }
+.VPNavBarMenuLink:hover, .VPNavBarMenuLink.active, .VPNavBarTitle .title:hover { color: #ffffff !important; }
+.VPNavBarSearchButton { background-color: #2a3045 !important; }
+.VPNavBar .divider-line, .VPNav, .VPNavBar:not(.home.top) { border-bottom: 1px solid var(--vp-c-divider); }
+.VPSidebar, .VPDoc .content-container, .vp-doc table, .VPFeature { box-shadow: none !important; }
+.VPFeature { border: 1px solid var(--vp-c-divider); background: var(--vp-c-bg-alt); }
+.vp-doc a, .VPSidebarItem.is-active > .item .text { transition: color 150ms ease-out; }
+.VPDocAsideOutline .outline-title { font-weight: 700; }
+.vp-doc table { display: block; overflow-x: auto; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
