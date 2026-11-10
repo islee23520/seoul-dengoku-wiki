@@ -48,3 +48,21 @@
 .VPDocAsideOutline .outline-title { font-weight: 700; }
 .vp-doc table { display: block; overflow-x: auto; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+.person-clan-line { display: flex; align-items: center; gap: 10px; margin: 8px 0 16px; }
+.clan-crest { display: block; margin: 8px 0; }
+.values-desire { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin: 32px 0; }
+.values-desire h2 { margin: 0 0 12px; padding-top: 0; border-top: 0; font-size: 1.15rem; }
+.axis-row { display: grid; grid-template-columns: 24px 88px 1fr 40px; gap: 8px; align-items: center; padding: 4px 0; font-size: 14px; }
+.axis-desc { grid-column: 2 / -1; color: var(--vp-c-text-2); font-size: 12px; margin-top: -4px; }
+.axis-bar { position: relative; display: block; height: 8px; background: var(--vp-c-bg-soft); border-radius: 4px; overflow: hidden; }
+.axis-bar::after { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--vp-c-divider); }
+.axis-fill { position: absolute; top: 0; bottom: 0; }
+.axis-fill.plus { background: var(--vp-c-brand-1); } .axis-fill.minus { background: var(--vp-c-text-3); }
+.axis-value { text-align: right; font-variant-numeric: tabular-nums; }
+.ft-wrap { overflow: auto; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: var(--vp-c-bg-alt); padding: 8px; }
+.ft-wrap svg { display: block; max-width: none; }
+.ft-node { fill: var(--vp-c-bg); stroke: var(--vp-c-divider); stroke-width: 1.5; } .ft-node.person { stroke: var(--vp-c-brand-1); }
+.ft-name { fill: var(--vp-c-text-1); font: 600 14px var(--vp-font-family-base); } .ft-meta { fill: var(--vp-c-text-2); font: 12px var(--vp-font-family-base); } .ft-gen { fill: var(--vp-c-text-3); font: 12px var(--vp-font-family-base); }
+.ft-edge { fill: none; stroke: var(--vp-c-text-3); stroke-width: 1.5; } .ft-edge.adoptive, .ft-edge.household { stroke-dasharray: 5 4; }
+.ft-wrap a { text-decoration: none; }

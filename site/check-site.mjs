@@ -41,7 +41,7 @@ const visible = (html) => html.replace(/<script[\s\S]*?<\/script>/g, '').replace
   }
 })(OUT);
 
-const perLocale = info.wikiDocs + info.gddDocs + info.states + info.people + info.factions + 4;
+const perLocale = info.wikiDocs + info.gddDocs + info.states + info.people + info.factions + (info.clans ?? 0) + 5;
 if (count.en < perLocale) errors.push(`EN pages ${count.en} < rows ${perLocale}`);
 if (count.ko < perLocale) errors.push(`KO pages ${count.ko} < rows ${perLocale}`);
 if (count.showcase < 1) errors.push('showcase index.html missing');
