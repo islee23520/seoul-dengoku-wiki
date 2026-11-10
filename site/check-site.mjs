@@ -5,7 +5,8 @@
 //   The showcase is a separate authored app (Korean voice, English subtitles) and is exempt from the language rules
 //   but must exist with its assets.
 //   Every internal #fragment link must resolve to an id/name on its own page or on the target built page (en and ko).
-//   Relative internal hrefs are resolved against the source page's own URL path before the fragment is checked.
+//   Relative internal hrefs are resolved against the source page's own URL path before the fragment is checked;
+//   query strings are dropped and directory, /index and /index.html targets all resolve to the same built page.
 //   Links already broken in the current content are grandfathered by docs/.anchor-baseline-broken (one `page -> target#fragment`
 //   per line); any fragment broken outside that baseline fails the check. Regenerate the baseline with --write-fragment-baseline.
 import fs from 'node:fs';
@@ -52,15 +53,19 @@ const slugOf = (rel) => rel.replace(/^(?:ko\/)?(?:wiki|gdd)\//, '').replace(/\/i
       let fragment = href.slice(hash + 1);
       try { fragment = decodeURIComponent(fragment); } catch { /* keep the raw fragment */ }
       if (!fragment) continue;
+      // Split the query string off the pathname once, up front, for every URL shape (root-relative included),
+      // so /wiki/x/?a=1#frag resolves against /wiki/x/ instead of a nonexistent ?a=1/index.html target.
+      pathname = pathname.replace(/[?].*$/, '');
       let targetRel;
       if (!pathname) targetRel = rel; // same-page fragment
       else {
         // A relative internal URL is resolved against the source page's own URL path (en pages and /ko/ pages alike),
         // so ../person-0002/#frag is checked against person-0002's anchors instead of being skipped.
         if (!pathname.startsWith('/') && !/^[a-z][a-z0-9+.-]*:/i.test(pathname)) {
-          pathname = path.posix.join(path.posix.dirname(`/${rel}`), pathname.replace(/[?].*$/, ''));
+          pathname = path.posix.join(path.posix.dirname(`/${rel}`), pathname);
         }
-        const target = pathname.replace(/\/+$/, '').replace(/\/index$/, '');
+        // /wiki/x, /wiki/x/, /wiki/x/index and /wiki/x/index.html (en and /ko/ alike) name the same built page.
+        const target = pathname.replace(/\/+$/, '').replace(/\/index(?:\.html)?$/, '');
         const match = target.match(/^\/(ko\/)?(wiki|gdd)\/(.+)$/);
         if (!match) continue; // external URLs and non-page assets are out of scope
         targetRel = `${match[1] ?? ''}${match[2]}/${match[3]}/index.html`;
