@@ -10,6 +10,7 @@ import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { personPage, familyTreeSvg, STR } from './people.mjs';
 import { buildMapData } from './map.mjs';
+import { relationsPage, licensePage } from './relations.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '..');
@@ -173,6 +174,15 @@ for (const L of [UI.en, UI.ko]) {
     write(`${L.prefix}wiki/people/${p.id}/index.md`, page(g(p, 'name'), `${md}`, { outline: !!d }));
   });
 
+  // retainer relations (old /people/relations) and license (old /license)
+  {
+    const row = all("SELECT * FROM retainer_graph WHERE id='retainer'")[0];
+    const graph = JSON.parse(L === UI.ko ? row.json_ko : row.json);
+    const rel = relationsPage({ graph, ko: L === UI.ko, g, P, states, people, details: raw.details, body, REPO });
+    write(`${L.prefix}wiki/relations/index.md`, page(rel.title, rel.md.content, { outline: true }));
+    const lic = licensePage({ ko: L === UI.ko, body: (md) => body(md, L), REPO });
+    write(`${L.prefix}wiki/license/index.md`, page(lic.title, lic.md, { outline: false }));
+  }
   // world map: a page that mounts the TerritoryMap island (data is fetched from /data/map.*.json)
   write(`${L.prefix}wiki/map/index.md`, page(L === UI.ko ? '서울 영토 지도' : 'Territory Map', `# ${L === UI.ko ? '서울 영토 지도' : 'Territory Map'}\n\n<TerritoryMap locale="${L === UI.ko ? 'ko' : 'en'}" prefix="${L.prefix}" />\n\n<noscript>\n\n${L === UI.ko ? '지도는 자바스크립트가 필요합니다.' : 'The map needs JavaScript.'}\n\n</noscript>\n`, { outline: false, aside: false }));
   // families: clan index, one page per clan with its family tree, non-Korean families
@@ -215,7 +225,7 @@ for (const L of [UI.en, UI.ko]) {
         { text: L.gdd, link: P('gdd/') }, { text: L.showcase, link: showcaseLink, target: '_self' },
       ],
       sidebar: {
-        [P('wiki/')]: [{ text: L.wiki, items: [{ text: L.wikiHome, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L.states, link: P('wiki/states/') }, { text: L === UI.ko ? '영토 지도' : 'Territory Map', link: P('wiki/map/') }, { text: L.people, link: P('wiki/people/') }, { text: STR[L === UI.ko ? 'ko' : 'en'].clanIndex, link: P('wiki/families/') }, { text: L.updates, link: P('wiki/updates/') }] }, ...wikiGroups],
+        [P('wiki/')]: [{ text: L.wiki, items: [{ text: L.wikiHome, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L.states, link: P('wiki/states/') }, { text: L === UI.ko ? '영토 지도' : 'Territory Map', link: P('wiki/map/') }, { text: L.people, link: P('wiki/people/') }, { text: STR[L === UI.ko ? 'ko' : 'en'].clanIndex, link: P('wiki/families/') }, { text: L.updates, link: P('wiki/updates/') }, { text: L === UI.ko ? '가신 관계' : 'Retainers', link: P('wiki/relations/') }, { text: 'License', link: P('wiki/license/') }] }, ...wikiGroups],
         [P('gdd/')]: [{ text: L.designDocs, items: [{ text: L.gddHome, link: P('gdd/') }] }, ...gddGroups],
       },
       outline: { level: [2, 3], label: L.onThisPage },

@@ -20,6 +20,7 @@ CREATE TABLE map_landmark (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, name TEXT
 CREATE TABLE map_rail (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, mode TEXT NOT NULL, line_id TEXT NOT NULL, points TEXT NOT NULL);
 CREATE TABLE map_holding (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, name TEXT NOT NULL, name_ko TEXT NOT NULL, holder_person_id TEXT NOT NULL, state_id TEXT, data TEXT NOT NULL, data_ko TEXT NOT NULL);
 CREATE TABLE map_underground (station_id TEXT PRIMARY KEY, sort INTEGER NOT NULL, data TEXT NOT NULL, data_ko TEXT NOT NULL);
+CREATE TABLE retainer_graph (id TEXT PRIMARY KEY, json TEXT NOT NULL, json_ko TEXT NOT NULL);
 CREATE TABLE map_state (state_id TEXT PRIMARY KEY, label_x REAL NOT NULL, label_y REAL NOT NULL, capital_x REAL NOT NULL, capital_y REAL NOT NULL, capital_station_id TEXT, capital_region_id TEXT, color TEXT NOT NULL, exclusive_districts INTEGER NOT NULL);
 CREATE TABLE person_detail (person_id TEXT PRIMARY KEY REFERENCES wiki_person(id), clan_id TEXT, json TEXT NOT NULL, json_ko TEXT NOT NULL);
 CREATE TABLE clan (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, surname TEXT NOT NULL, surname_ko TEXT NOT NULL, bongwan TEXT NOT NULL, bongwan_ko TEXT NOT NULL, hanja TEXT NOT NULL, crest_motif TEXT NOT NULL, show_branches INTEGER NOT NULL, branches TEXT NOT NULL, branches_ko TEXT NOT NULL);
