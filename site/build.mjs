@@ -9,6 +9,7 @@ import { DatabaseSync } from 'node:sqlite';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { personPage, familyTreeSvg, STR } from './people.mjs';
+import { buildMapData } from './map.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '..');
@@ -42,6 +43,11 @@ const raw = {
   clanMembers: all('SELECT * FROM clan_member ORDER BY clan_id, sort'),
   nonKorean: all('SELECT * FROM nonkorean_family ORDER BY sort'),
   trees: new Map(all('SELECT * FROM family_tree').map((r) => [r.clan_id, r])),
+  map: {
+    meta: all('SELECT * FROM map_meta'), regions: all('SELECT * FROM map_region ORDER BY sort'), titles: all('SELECT * FROM map_title ORDER BY sort'), stations: all('SELECT * FROM map_station ORDER BY sort'),
+    edges: all('SELECT * FROM map_edge ORDER BY sort'), lines: all('SELECT * FROM map_line ORDER BY sort'), landmarks: all('SELECT * FROM map_landmark ORDER BY sort'), rail: all('SELECT * FROM map_rail ORDER BY sort'),
+    holdings: all('SELECT * FROM map_holding ORDER BY sort'), underground: all('SELECT * FROM map_underground ORDER BY sort'), mapStates: all('SELECT * FROM map_state'),
+  },
 };
 
 // ---- UI strings (the only hand-written text; everything else comes from SQL) ----
@@ -167,6 +173,8 @@ for (const L of [UI.en, UI.ko]) {
     write(`${L.prefix}wiki/people/${p.id}/index.md`, page(g(p, 'name'), `${md}`, { outline: !!d }));
   });
 
+  // world map: a page that mounts the TerritoryMap island (data is fetched from /data/map.*.json)
+  write(`${L.prefix}wiki/map/index.md`, page(L === UI.ko ? '서울 영토 지도' : 'Territory Map', `# ${L === UI.ko ? '서울 영토 지도' : 'Territory Map'}\n\n<TerritoryMap locale="${L === UI.ko ? 'ko' : 'en'}" prefix="${L.prefix}" />\n\n<noscript>\n\n${L === UI.ko ? '지도는 자바스크립트가 필요합니다.' : 'The map needs JavaScript.'}\n\n</noscript>\n`, { outline: false, aside: false }));
   // families: clan index, one page per clan with its family tree, non-Korean families
   const memberCount = new Map();
   raw.clanMembers.forEach((m) => memberCount.set(m.clan_id, (memberCount.get(m.clan_id) ?? 0) + 1));
@@ -203,11 +211,11 @@ for (const L of [UI.en, UI.ko]) {
     label: L.label, lang: L.lang, link: `/${L.prefix}`, title: L.siteTitle, description: L.tagline,
     themeConfig: {
       nav: [
-        { text: L.wiki, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L.people, link: P('wiki/people/') },
+        { text: L.wiki, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L === UI.ko ? '지도' : 'Map', link: P('wiki/map/') }, { text: L.people, link: P('wiki/people/') },
         { text: L.gdd, link: P('gdd/') }, { text: L.showcase, link: showcaseLink, target: '_self' },
       ],
       sidebar: {
-        [P('wiki/')]: [{ text: L.wiki, items: [{ text: L.wikiHome, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L.states, link: P('wiki/states/') }, { text: L.people, link: P('wiki/people/') }, { text: STR[L === UI.ko ? 'ko' : 'en'].clanIndex, link: P('wiki/families/') }, { text: L.updates, link: P('wiki/updates/') }] }, ...wikiGroups],
+        [P('wiki/')]: [{ text: L.wiki, items: [{ text: L.wikiHome, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L.states, link: P('wiki/states/') }, { text: L === UI.ko ? '영토 지도' : 'Territory Map', link: P('wiki/map/') }, { text: L.people, link: P('wiki/people/') }, { text: STR[L === UI.ko ? 'ko' : 'en'].clanIndex, link: P('wiki/families/') }, { text: L.updates, link: P('wiki/updates/') }] }, ...wikiGroups],
         [P('gdd/')]: [{ text: L.designDocs, items: [{ text: L.gddHome, link: P('gdd/') }] }, ...gddGroups],
       },
       outline: { level: [2, 3], label: L.onThisPage },
@@ -234,6 +242,19 @@ for (const L of [UI.en, UI.ko]) {
     rows,
   };
   fs.writeFileSync(path.join(SRC, `public/data/people.${L === UI.ko ? 'ko' : 'en'}.json`), JSON.stringify(dataset));
+}
+{
+  const charToPerson = new Map();
+  raw.details.forEach((row, pid) => { const dd = JSON.parse(row.json); if (dd.characterId) charToPerson.set(dd.characterId, pid); });
+  const personById = new Map(raw.people.map((p) => [p.id, p]));
+  let shared = null;
+  for (const L of [UI.en, UI.ko]) {
+    const m = buildMapData(raw.map, { ko: L === UI.ko, factions: raw.factions, states: raw.states, charToPerson, personName: (id) => (L === UI.ko ? personById.get(id)?.name_ko : personById.get(id)?.name) ?? id });
+    fs.writeFileSync(path.join(SRC, `public/data/map.core.${L === UI.ko ? 'ko' : 'en'}.json`), JSON.stringify(m.core));
+    shared ??= m;
+  }
+  fs.writeFileSync(path.join(SRC, 'public/data/map.geometry.json'), JSON.stringify({ titles: shared.titleGeom, regions: shared.regionGeom }));
+  fs.writeFileSync(path.join(SRC, 'public/data/map.rail.json'), JSON.stringify(shared.rail));
 }
 fs.mkdirSync(path.join(SRC, 'public'), { recursive: true });
 // Clan crests are small public SVGs (allowlisted); copy only the ones the clan pages reference.
@@ -292,5 +313,5 @@ function findAllow(obj, key) {
 }
 
 fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
-fs.writeFileSync(path.join(OUT, 'build.json'), JSON.stringify({ title: meta.title, base: BASE, locales: ['en', 'ko'], wikiDocs: raw.docs.length, gddDocs: raw.gddDocs.length, factions: raw.factions.length, clans: raw.clans.length, personDetails: raw.details.size, states: raw.states.length, people: raw.people.length, updates: raw.updates.length, showcase, sqlFiles: files }, null, 1));
+fs.writeFileSync(path.join(OUT, 'build.json'), JSON.stringify({ title: meta.title, base: BASE, locales: ['en', 'ko'], wikiDocs: raw.docs.length, gddDocs: raw.gddDocs.length, factions: raw.factions.length, clans: raw.clans.length, mapRegions: raw.map.regions.length, mapTitles: raw.map.titles.length, mapStations: raw.map.stations.length, personDetails: raw.details.size, states: raw.states.length, people: raw.people.length, updates: raw.updates.length, showcase, sqlFiles: files }, null, 1));
 console.log(`built ${meta.title} (en + ko): wiki ${raw.docs.length}, gdd ${raw.gddDocs.length}, factions ${raw.factions.length}, states ${raw.states.length}, people ${raw.people.length}; showcase ${showcase} -> ${path.relative(REPO, OUT)} (base ${BASE})`);

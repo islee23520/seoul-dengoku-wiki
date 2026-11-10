@@ -246,6 +246,51 @@ const familyTreeRows = fs.readdirSync(treeDir).filter((x) => x.endsWith('.json')
   return { clan_id: j.clanId, json: JSON.stringify(jEn(j)), json_ko: JSON.stringify(jKo(j)) };
 });
 
+// ---- world map (public/opening-territories.json and friends) ---------------
+// Geometry is stored as SVG path text / JSON text rounded to 2 decimals (map units are 1200x980); everything that
+// carries information (regions, stations, segments, holdings) gets its own columns.
+const r2 = (n) => Math.round(n * 100) / 100;
+const roundPath = (d) => d.replace(/-?\d+\.\d+/g, (x) => String(r2(Number(x))));
+const mapSrc = readJson(path.join(REPO, 'public/opening-territories.json'));
+const undergroundSrc = readJson(path.join(REPO, 'public/underground-detail.json'));
+const holdingsSrc = readJson(path.join(REPO, 'public/confirmed-person-holdings.json'));
+const hegemonOfState = new Map();
+for (const h of mapSrc.hegemons) for (const id of h.memberStateIds) hegemonOfState.set(id, h);
+const lineEn = (name) => (/^\d+호선$/.test(name) ? name.replace(/^(\d+)호선$/, 'Line $1') : T(name));
+const mapMeta = { width: mapSrc.width, height: mapSrc.height, projection: mapSrc.projection, epoch: T(mapSrc.epoch.label), epoch_ko: mapSrc.epoch.label, attribution: T(mapSrc.attribution), attribution_ko: mapSrc.attribution, major_station_ids: mapSrc.majorStationIds };
+const mapRegionRows = mapSrc.regions.map((r, i) => ({
+  id: r.id, sort: i, name: T(r.name), name_ko: r.name, district: T(r.district), district_ko: r.district, path: roundPath(r.path),
+  status: r.status, polities: JSON.stringify(r.polities ?? []), summary: T(r.summary ?? ''), summary_ko: r.summary ?? '', opening_state: T(r.openingState ?? ''), opening_state_ko: r.openingState ?? '',
+  station_count: r.stationCount ?? 0, area_m2: r.areaM2 ?? null, density_2126: r.density2126 ?? null,
+}));
+const mapTitleRows = mapSrc.geography.titles.map((t, i) => ({
+  id: t.id, sort: i, rank: t.rank, name: T(t.name), name_ko: t.name, parent_id: t.parentId ?? null, county_ids: JSON.stringify(t.countyIds ?? []),
+  path: roundPath(t.path),
+  slots: JSON.stringify((t.currentSlots ?? []).map((sl) => ({ id: sl.id, name: T(sl.name), dongId: sl.dongId, status: sl.status }))),
+  slots_ko: JSON.stringify((t.currentSlots ?? []).map((sl) => ({ id: sl.id, name: sl.name, dongId: sl.dongId, status: sl.status }))),
+}));
+const mapStationRows = mapSrc.stations.map((st, i) => ({
+  id: st.id, sort: i, name: T(st.name), name_ko: st.name, district: T(st.district), district_ko: st.district, x: r2(st.x), y: r2(st.y), degree: st.degree ?? 0,
+  line_ids: JSON.stringify(st.lineIds ?? []), surface_polity_ids: JSON.stringify(st.surfacePolityIds ?? []),
+  control: JSON.stringify(jEn(st.control ?? {})), control_ko: JSON.stringify(st.control ?? {}),
+}));
+const mapEdgeRows = mapSrc.edges.map((e, i) => ({ id: e.id, sort: i, a: e.a, b: e.b, line_ids: JSON.stringify(e.lineIds ?? []), control: JSON.stringify(jEn(e.control ?? {})), control_ko: JSON.stringify(e.control ?? {}) }));
+const mapLineRows = Object.entries(mapSrc.lines).map(([id, l], i) => ({ id, sort: i, name: lineEn(l.name), name_ko: l.name, color: l.color }));
+const mapLandmarkRows = mapSrc.landmarks.map((l, i) => ({
+  id: l.id, sort: i, name: T(l.name), name_ko: l.name, region_id: l.regionId ?? null, holder_id: l.holderId ?? null, role: T(l.role ?? ''), role_ko: l.role ?? '',
+  detail: T(l.detail ?? ''), detail_ko: l.detail ?? '', x: r2(l.x ?? 0), y: r2(l.y ?? 0), fortification: l.fortification ?? '',
+}));
+const mapRailRows = mapSrc.physicalRail.paths.map((p, i) => ({ id: p.id, sort: i, mode: p.mode, line_id: p.lineId, points: JSON.stringify(p.points.map((pt) => pt.map(r2))) }));
+const mapHoldingRows = holdingsSrc.holdings.map((h, i) => ({
+  id: h.id, sort: i, name: T(h.name?.ko ?? ''), name_ko: h.name?.ko ?? '', holder_person_id: h.holderPersonId, state_id: h.stateId ?? null,
+  data: JSON.stringify(jEn(h)), data_ko: JSON.stringify(jKo(h)),
+}));
+const mapUndergroundRows = Object.entries(undergroundSrc.stations).map(([name, floors], i) => ({ station_id: name, sort: i, data: JSON.stringify(jEn(floors)), data_ko: JSON.stringify(floors) }));
+const mapStateRows = mapSrc.states.map((st) => ({
+  state_id: st.id, label_x: r2(st.labelX ?? 0), label_y: r2(st.labelY ?? 0), capital_x: r2(st.capitalX ?? 0), capital_y: r2(st.capitalY ?? 0), capital_station_id: st.capitalStationId ?? null, capital_region_id: st.capitalRegionId ?? null,
+  color: hegemonOfState.get(st.id)?.color ?? '#697586', exclusive_districts: st.currentExclusiveDistrictCount ?? 0,
+}));
+
 if (missing.size) {
   fs.writeFileSync(MISSING_PATH, JSON.stringify([...missing], null, 1));
   console.error(`E_I18N_MISSING: ${missing.size} Korean strings lack English; see ${path.relative(REPO, MISSING_PATH)}`);
@@ -264,14 +309,29 @@ CREATE TABLE wiki_person (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, faction_id
 CREATE TABLE wiki_update (sort INTEGER PRIMARY KEY, date TEXT NOT NULL, category TEXT NOT NULL, category_ko TEXT NOT NULL, status TEXT NOT NULL, status_ko TEXT NOT NULL, title TEXT NOT NULL, title_ko TEXT NOT NULL, source TEXT NOT NULL, slug TEXT);
 CREATE TABLE gdd_category (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, label TEXT NOT NULL, label_ko TEXT NOT NULL);
 CREATE TABLE gdd_document (id TEXT PRIMARY KEY, category_id TEXT NOT NULL REFERENCES gdd_category(id), slug TEXT NOT NULL, title TEXT NOT NULL, title_ko TEXT NOT NULL, summary TEXT NOT NULL, summary_ko TEXT NOT NULL, status TEXT NOT NULL, sort INTEGER NOT NULL, source_path TEXT, body_md TEXT NOT NULL, body_ko_md TEXT NOT NULL, UNIQUE (category_id, slug));
+CREATE TABLE map_meta (key TEXT PRIMARY KEY, value TEXT NOT NULL);
+CREATE TABLE map_region (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, name TEXT NOT NULL, name_ko TEXT NOT NULL, district TEXT NOT NULL, district_ko TEXT NOT NULL, path TEXT NOT NULL, status TEXT NOT NULL, polities TEXT NOT NULL, summary TEXT NOT NULL, summary_ko TEXT NOT NULL, opening_state TEXT NOT NULL, opening_state_ko TEXT NOT NULL, station_count INTEGER NOT NULL, area_m2 REAL, density_2126 REAL);
+CREATE TABLE map_title (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, rank TEXT NOT NULL, name TEXT NOT NULL, name_ko TEXT NOT NULL, parent_id TEXT, county_ids TEXT NOT NULL, path TEXT NOT NULL, slots TEXT NOT NULL, slots_ko TEXT NOT NULL);
+CREATE TABLE map_station (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, name TEXT NOT NULL, name_ko TEXT NOT NULL, district TEXT NOT NULL, district_ko TEXT NOT NULL, x REAL NOT NULL, y REAL NOT NULL, degree INTEGER NOT NULL, line_ids TEXT NOT NULL, surface_polity_ids TEXT NOT NULL, control TEXT NOT NULL, control_ko TEXT NOT NULL);
+CREATE TABLE map_edge (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, a TEXT NOT NULL, b TEXT NOT NULL, line_ids TEXT NOT NULL, control TEXT NOT NULL, control_ko TEXT NOT NULL);
+CREATE TABLE map_line (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, name TEXT NOT NULL, name_ko TEXT NOT NULL, color TEXT NOT NULL);
+CREATE TABLE map_landmark (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, name TEXT NOT NULL, name_ko TEXT NOT NULL, region_id TEXT, holder_id TEXT, role TEXT NOT NULL, role_ko TEXT NOT NULL, detail TEXT NOT NULL, detail_ko TEXT NOT NULL, x REAL NOT NULL, y REAL NOT NULL, fortification TEXT NOT NULL);
+CREATE TABLE map_rail (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, mode TEXT NOT NULL, line_id TEXT NOT NULL, points TEXT NOT NULL);
+CREATE TABLE map_holding (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, name TEXT NOT NULL, name_ko TEXT NOT NULL, holder_person_id TEXT NOT NULL, state_id TEXT, data TEXT NOT NULL, data_ko TEXT NOT NULL);
+CREATE TABLE map_underground (station_id TEXT PRIMARY KEY, sort INTEGER NOT NULL, data TEXT NOT NULL, data_ko TEXT NOT NULL);
+CREATE TABLE map_state (state_id TEXT PRIMARY KEY, label_x REAL NOT NULL, label_y REAL NOT NULL, capital_x REAL NOT NULL, capital_y REAL NOT NULL, capital_station_id TEXT, capital_region_id TEXT, color TEXT NOT NULL, exclusive_districts INTEGER NOT NULL);
 CREATE TABLE person_detail (person_id TEXT PRIMARY KEY REFERENCES wiki_person(id), clan_id TEXT, json TEXT NOT NULL, json_ko TEXT NOT NULL);
 CREATE TABLE clan (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, surname TEXT NOT NULL, surname_ko TEXT NOT NULL, bongwan TEXT NOT NULL, bongwan_ko TEXT NOT NULL, hanja TEXT NOT NULL, crest_motif TEXT NOT NULL, show_branches INTEGER NOT NULL, branches TEXT NOT NULL, branches_ko TEXT NOT NULL);
 CREATE TABLE clan_member (clan_id TEXT NOT NULL REFERENCES clan(id), sort INTEGER NOT NULL, person_id TEXT NOT NULL REFERENCES wiki_person(id), branch_id TEXT);
 CREATE TABLE nonkorean_family (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, surname TEXT NOT NULL, surname_ko TEXT NOT NULL, basis TEXT NOT NULL, basis_ko TEXT NOT NULL, members TEXT NOT NULL);
 CREATE TABLE family_tree (clan_id TEXT PRIMARY KEY REFERENCES clan(id), json TEXT NOT NULL, json_ko TEXT NOT NULL);
 `.trim();
-const cols = (s) => [...s.matchAll(/CREATE TABLE (\w+) \(([\s\S]*?)\);\s*$/gm)].reduce((a, m) => (a[m[1]] = m[2].split(/,\s*(?=\w+ (?:TEXT|INTEGER))/).map((c) => c.trim().split(' ')[0]), a), {});
+const cols = (s) => [...s.matchAll(/CREATE TABLE (\w+) \(([\s\S]*?)\);\s*$/gm)].reduce((a, m) => (a[m[1]] = m[2].split(/,\s*(?=\w+ (?:TEXT|INTEGER|REAL))/).map((c) => c.trim().split(' ')[0]), a), {});
 const C = cols(SCHEMA);
+for (const m of SCHEMA.matchAll(/CREATE TABLE (\w+) \(([\s\S]*?)\);\s*$/gm)) {
+  const real = m[2].split(/,\s*(?![^()]*\))/).map((c) => c.trim().split(' ')[0]).filter((c) => !/^(UNIQUE|PRIMARY|FOREIGN)$/.test(c));
+  if (real.join() !== C[m[1]].join()) throw new Error(`E_SCHEMA_COLUMNS: ${m[1]} parsed [${C[m[1]]}] but declared [${real}]`);
+}
 writeSql('000-schema.sql', 'Schema (portable SQL: loads into SQLite and PostgreSQL). *_ko columns hold the Korean originals.', SCHEMA);
 writeSql('010-meta.sql', 'Site metadata', insert('site_meta', ['key', 'value'], [
   { key: 'title', value: 'Seoul Metro Dynasties' }, { key: 'title_ko', value: '서울 지하철 왕조' }, { key: 'language', value: 'en' },
@@ -290,4 +350,12 @@ writeSql('080-gdd-documents.sql', 'GDD documents (Markdown bodies, English and K
 writeSql('090-person-details.sql', 'Person detail records (JSON text, English and Korean)', insert('person_detail', C.person_detail, personDetailRows));
 writeSql('100-clans.sql', 'Clans (bongwan families), members and non-Korean families', [insert('clan', C.clan, clanRows), insert('clan_member', C.clan_member, clanMemberRows), insert('nonkorean_family', C.nonkorean_family, nonKoreanRows)].join('\n'));
 writeSql('110-family-trees.sql', 'Family trees (JSON text, English and Korean)', insert('family_tree', C.family_tree, familyTreeRows));
-console.log(`exported: ${wikiDocRows.length} wiki docs, ${factionRows.length} factions, ${stateRows.length} states, ${personRows.length} people, ${updateRows.length} updates, ${gddRows.length} GDD docs, ${personDetailRows.length} person details, ${clanRows.length} clans, ${familyTreeRows.length} family trees (en+ko)`);
+writeSql('120-map-core.sql', 'World map: regions, stations, segments, lines, landmarks, state anchors', [
+  insert('map_meta', ['key', 'value'], Object.entries(mapMeta).map(([key, value]) => ({ key, value: typeof value === 'string' || typeof value === 'number' ? String(value) : JSON.stringify(value) }))),
+  insert('map_region', C.map_region, mapRegionRows), insert('map_station', C.map_station, mapStationRows), insert('map_edge', C.map_edge, mapEdgeRows),
+  insert('map_line', C.map_line, mapLineRows), insert('map_landmark', C.map_landmark, mapLandmarkRows), insert('map_state', C.map_state, mapStateRows),
+].join('\n'));
+writeSql('121-map-titles.sql', 'World map: geographic title polygons (SVG paths, 2 decimals)', insert('map_title', C.map_title, mapTitleRows));
+writeSql('122-map-rail.sql', 'World map: physical rail geometry', insert('map_rail', C.map_rail, mapRailRows));
+writeSql('123-map-holdings.sql', 'World map: confirmed person holdings and underground station detail', [insert('map_holding', C.map_holding, mapHoldingRows), insert('map_underground', C.map_underground, mapUndergroundRows)].join('\n'));
+console.log(`exported: ${wikiDocRows.length} wiki docs, ${factionRows.length} factions, ${stateRows.length} states, ${personRows.length} people, ${updateRows.length} updates, ${gddRows.length} GDD docs, ${personDetailRows.length} person details, ${clanRows.length} clans, ${familyTreeRows.length} family trees, map ${mapRegionRows.length} regions / ${mapStationRows.length} stations / ${mapTitleRows.length} titles (en+ko)`);
