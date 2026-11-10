@@ -90,11 +90,20 @@ const wikiDocRows = worldDocs.map((d, i) => {
 
 // ---- states / people / updates -----------------------------------------
 const { stateCatalog } = await gen('stateCatalog.ts');
+// The English articles already name every state in the Sixteen-States table; that spelling wins over machine translation.
+const canonicalState = new Map();
+for (const line of readJson(path.join(worldDir, 'Sixteen-States.json')).reviewText.split('\n')) {
+  const m = line.match(/^\|\s*(S(?:0[1-9]|1[0-6]))\s*\|\s*([^|]+?)\s*\|/);
+  if (m && !canonicalState.has(m[1])) canonicalState.set(m[1], m[2]);
+}
+if (canonicalState.size !== stateCatalog.length) throw new Error(`E_STATE_NAMES: ${canonicalState.size} canonical names for ${stateCatalog.length} states`);
+const stateEn = (id, ko) => canonicalState.get(id) ?? T(ko);
+const koHegemon = new Map(stateCatalog.map((s) => [s.name, stateEn(s.id, s.name)]));
 const stateRows = stateCatalog.map((s, i) => ({
-  slug: s.slug, id: s.id, sort: i, name: T(s.name), government: T(s.government), power: T(s.power), cause: T(s.cause),
-  ruler: T(s.ruler), capital: T(s.capital), hegemon: T(s.currentHegemon?.name ?? ''), base: T(s.currentBase?.name ?? ''),
+  slug: s.slug, id: s.id, sort: i, name: stateEn(s.id, s.name), government: T(s.government), power: T(s.power), cause: T(s.cause),
+  ruler: T(s.ruler), capital: T(s.capital), hegemon: koHegemon.get(s.currentHegemon?.name) ?? T(s.currentHegemon?.name ?? ''), base: T(s.currentBase?.name ?? ''),
 }));
-const stateName = new Map(stateCatalog.map((s) => [s.id, T(s.name)]));
+const stateName = new Map(stateCatalog.map((s) => [s.id, stateEn(s.id, s.name)]));
 const { peopleCatalog } = await gen('peopleCatalog.ts');
 const personRows = peopleCatalog.map((p, i) => ({
   id: p.id, sort: i, name: T(p.name), title: T(p.title), position: T(p.position), rank: T(p.rank), tier: p.commonTier,
