@@ -1,14 +1,127 @@
 {
   "forbidden": [
-    { "id": "church-ko", "pattern": "대주교|대교구|명동대교구|교황|사제|부제|성당", "flags": "", "lang": "ko", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 기독교 교회제 어휘(한국어): 대주교·대교구·명동대교구·교황·사제·부제·성당." },
-    { "id": "church-en", "pattern": "Archbishop|Archdiocese|Pope|Priest|Deacon|Cathedral", "flags": "i", "lang": "en", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 기독교 교회제 어휘(영어)." },
-    { "id": "sixteen-states-ko", "pattern": "십육국 체제", "flags": "", "lang": "ko", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 십육국 국가체제 서술(한국어)." },
-    { "id": "sixteen-states-en", "pattern": "sixteen-state", "flags": "i", "lang": "en", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 십육국 국가체제 서술(영어)." },
-    { "id": "slaughter-order-ko", "pattern": "살육 명령", "flags": "", "lang": "ko", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 AI 살육 명령 서사(한국어)." },
-    { "id": "slaughter-order-en", "pattern": "slaughter order", "flags": "i", "lang": "en", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 AI 살육 명령 서사(영어)." },
-    { "id": "cold-weapons-ko", "pattern": "냉병기", "flags": "", "lang": "ko", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 냉병기 전제 서술(한국어)." }
+    {
+      "id": "church-ko",
+      "pattern": "당회장|(?<![가-힣])장로(?:회|들)?(?![가-힣])|목사|주교|대교구|교황|추기경|(?<![가-힣])권사(?![가-힣])|(?<![가-힣])집사(?![가-힣])|교회|성당|예배당?",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 교회 직제·교회 시설 어휘. 대체: 아크 정본 용어 또는 일반 역 시설명(사당 여부는 소유자 결정). 근거: 아크가 이전 종교를 모두 대체했고 기독교 성직 어휘를 쓰지 않는다(소유자 결정)."
+    },
+    {
+      "id": "church-en",
+      "pattern": "\\b(?:archbishops?|archdioces[ea]s?|popes?|priests?|deacons?|bishops?|pastors?|cardinals?|cathedrals?|church(?:es)?|moderators?)\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] church clergy and buildings. 대체: Arc terms (Hierophant, baptism) or plain station facility names. 근거: same as church-ko."
+    },
+    {
+      "id": "sixteen-states-ko",
+      "pattern": "십육국|십육 ?개국|16 ?개국|열여섯 (?:나라|국가|개국)",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 십육국 국가 체제. 대체: 세 세력(정부·자유도시·아크)과 25공작령. 근거: 세력은 셋뿐이고 십육국은 없다(소유자 결정)."
+    },
+    {
+      "id": "sixteen-states-en",
+      "pattern": "\\bsixteen[- ]states?\\b|\\bSeoul Sixteen\\b|\\b16 states\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] sixteen-state framing. 대체: the three factions and the 25 duchies. 근거: same."
+    },
+    {
+      "id": "slaughter-order-ko",
+      "pattern": "살육|학살 명령|인류 말살|인류 감축|바이러스로 판단",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] AI 살육·학살 명령 서사. 대체: \"AI는 겨울을 만들었고 직접 죽인 사람은 없다\". 근거: 1장 정본 문장."
+    },
+    {
+      "id": "slaughter-order-en",
+      "pattern": "\\bslaughter\\w*|\\bgenocide\\b|\\bexterminat\\w*",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] AI slaughter/genocide framing. 대체: \"the AI made winter and killed nobody directly\". 근거: same."
+    },
+    {
+      "id": "cold-weapons-ko",
+      "pattern": "냉병기",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 냉병기 유일 전제. 대체: \"현대·미래 무기는 있으나 희소하다\". 근거: 냉병기 전제 폐지(소유자 결정)."
+    },
+    {
+      "id": "cold-weapons-en",
+      "pattern": "\\bcold[- ]weapons?\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] cold-weapons-only premise. 대체: \"modern and future weapons exist but are scarce\". 근거: same."
+    },
+    {
+      "id": "martial-arts-ko",
+      "pattern": "무협|무림|협객|낭인|(?<![가-힣])무공(?![가-힣])|(?<![가-힣])비무(?![가-힣])",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 무협 잔존 어휘. 대체: 직능 명칭(예: 호위 지휘자, 경호원). 근거: 무협 설정 폐기(기존 저장소 정책)."
+    },
+    {
+      "id": "martial-arts-en",
+      "pattern": "\\b(?:wuxia|murim|ronin)\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] wuxia remnants. 대체: plain job titles (escort leader, bodyguard). 근거: same."
+    },
+    {
+      "id": "state-id-polity",
+      "pattern": "\\bS(?:0[1-9]|1[0-6])\\b",
+      "flags": "",
+      "lang": "both",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 옛 국가 id S01~S16을 정치체로 쓰는 것. 대체: 세력 id(government, free-city, arc)와 구 이름. 근거: 십육국 폐지. 데이터 컬럼 값과 이관 기록은 이 스캔 대상이 아니다."
+    }
   ],
   "required": [
-    { "id": "premise-seoul-ko", "pattern": "서울", "flags": "", "lang": "ko", "minPerDoc": 1, "docs": ["Station-Interior-Construction"], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 예시 필수 항목: 이 문서 한국어 본문에는 '서울'이 최소 1회 등장해야 한다." }
+    {
+      "id": "premise-seoul-ko",
+      "pattern": "서울",
+      "flags": "",
+      "lang": "ko",
+      "minPerDoc": 1,
+      "docs": [
+        "Station-Interior-Construction"
+      ],
+      "note": "[정본 바이블 4절] 무대는 서울 하나다. 기존 스타터 항목 유지."
+    },
+    {
+      "id": "blackout-name-ko",
+      "pattern": "대정전",
+      "flags": "",
+      "lang": "ko",
+      "minPerDoc": 1,
+      "docs": [
+        "World-Unbinding"
+      ],
+      "note": "[정본 바이블 4절] 사건 이름은 대정전이다(1장 정본)."
+    },
+    {
+      "id": "blackout-name-en",
+      "pattern": "Great Blackout",
+      "flags": "",
+      "lang": "en",
+      "minPerDoc": 1,
+      "docs": [
+        "World-Unbinding"
+      ],
+      "note": "[정본 바이블 4절] English name of the event is the Great Blackout."
+    }
   ]
 }
