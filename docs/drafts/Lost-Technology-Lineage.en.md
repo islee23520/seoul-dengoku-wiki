@@ -34,7 +34,7 @@ Unlike centralized heavy plant, autonomous hydraulic control of each segment and
 <a id="생물모방-설계-험지-군집"></a>
 
 Adaptation to hard terrain
-On slopes, underwater, and in soil-collapse zones, the multi-leg mounts and flat pads held balance. Where wheeled undercarriages sank in mire, the biological joint structure delivered stable power. When a single chassis was destroyed, those nearby received the signal and re-formed the search net. Through mutual signal sharing they held formation without collision even inside narrow bends.
+On slopes, underwater, and in soil-collapse zones, the multi-leg mounts and flat armor plates held balance. Where wheeled undercarriages sank in mire, the biological joint structure delivered stable power. When a single chassis was destroyed, those nearby received the signal and re-formed the search net. Through mutual signal sharing they held formation without collision even inside narrow bends.
 
 <a id="붕괴-이전-방재-루틴의-고착화-메커니즘-list1"></a>
 <a id="붕괴-이전-방재-루틴의-고착화-메커니즘"></a>
@@ -56,9 +56,9 @@ Narrative of the restart trigger
 When the corridor control-board voltage surged or outside physical shock arrived, the chassis judged the pre-collapse search orders still valid and began the restart sequence. Once the trigger fired, the gallery barrier opened and the small swarm chassis scattered through the corridor to resume search activity.
 
 Luminous search lenses: they cast high-frequency light into pitch darkness to identify cracks and human life.
-Upper transport hopper: an insulating frame storing precision relief goods or search capsules.
+Upper transport hopper: a heat-resistant frame storing precision relief goods or search capsules.
 Multi-leg joint drive system: fine grips mounted to grasp wall faces and ceiling finishes while moving.
-Autonomous charging terminals: metal collectors charging power through contact with the depot rails. Charging only — not a perpetual engine generating infinitely.
+Autonomous charging terminals: metal collectors charging power through contact with the depot rails. Charging only; it is not a perpetual engine generating infinitely.
 Obstacle-crushing jaws: high-strength grippers cutting away collapsed debris to open passages.
 
 ### G26 Iron Dinosaur
@@ -86,7 +86,7 @@ The precision machine lines fell to lost tech as their manufacture, licensing, a
 
 <a id="로스트-테크-기술세대격차"></a>
 
-Programming and most human technology survived and were passed down orally to a few. With the internet gone, knowledge became concentrated among them. Only those who held the knowledge could operate electricity and technical equipment, and some forces established technology monopolies. After the dark age, these technologists rose into a knight class. They built power through the knowledge needed to run equipment and founded sixteen great forces during the second generation.
+Programming and most human technology survived and were passed down orally to a few. With the internet gone, knowledge became concentrated among them. Only those who held the knowledge could operate electricity and technical equipment, and some forces established technology monopolies. After the dark age, these technologists rose into a knight class. They built power through the knowledge needed to run equipment, and the lineage runs on to those who founded the great operating houses.
 
 <a id="축전-발전"></a>
 
@@ -95,7 +95,7 @@ Programming and most human technology survived and were passed down orally to a 
 <a id="축전-발전-p1"></a>
 <a id="축전-발전-list2"></a>
 
-Charging modules and stronghold generators are different equipment. Charging consumes charge already held somewhere, so charging terminals and a source supplying power — depot rails, stronghold generators, recovered cells — were always needed. Cells age, and in hard freezes their output can drop sharply. They are not perpetual batteries holding charge indefinitely through long years.
+Charging modules and stronghold generators are different equipment. Charging consumes charge already held somewhere, so charging terminals and a source supplying power (depot rails, stronghold generators, recovered cells) were always needed. Cells age, and in hard freezes their output can drop sharply. They are not perpetual batteries holding charge indefinitely through long years.
 
 <a id="축전-발전-공급"></a>
 
@@ -181,11 +181,11 @@ The branches of the individual faiths divided into the Wheel Rite and the Busbar
 
 A. Altars and offerings
 
-Consumption rites were the ritual of setting on the altar old currency and worn circulation relics that had lost their meaning. The exchange acts common before the collapse transformed into myth. Card-tapping, coin-inserting, ration-distributing gestures — plain hand movements — now became desperate prayer.
+Consumption rites were the ritual of setting on the altar old currency and worn circulation relics that had lost their meaning. The exchange acts common before the collapse transformed into myth. Card-tapping, coin-inserting, ration-distributing gestures, plain hand movements, now became desperate prayer.
 
 B. Kinds of offerings
 
-Banknotes, rolling coins, and plastic transit cards were the finest offerings. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just ritual distribution. The tap of a card at a gate was both a request for passage and a tribute offered to god. The HP01 house's auctioning of parts might elsewhere be blasphemous desecration; within this lineage it passed as a formal rite.
+Banknotes, rolling coins, and plastic transit cards were the finest offerings. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just ritual distribution. The tap of a card at a gate was both a request for passage and a tribute offered to god. The HP01 house's auctioning of parts is read elsewhere as blasphemous desecration; within this lineage it passes as a formal rite.
 
 C. Stamp and gate rites
 
@@ -209,10 +209,10 @@ The names of the individual faiths divided into the Nameplate Rite and the Annou
 
 A. Five conditions
 
-A mass of scrap was not enshrined merely because time had long passed. One of the three axes — machine worship, consumption rites, symbol deification — had to be clearly knotted into the chain of deification, and the conditions below carefully met.
+A mass of scrap was not enshrined merely because time had long passed. One of the three axes (machine worship, consumption rites, symbol deification) had to be clearly knotted into the chain of deification, and the conditions below carefully met.
 
 1. It had to be Seoul material
-Rolling stock, a substation, an announcement, a station mark, or old currency — or at least bearing their traces. The lost line's modules were acknowledged as relics only when firmly attached to this core material.
+Rolling stock, a substation, an announcement, a station mark, or old currency, or at least bearing their traces. The lost line's modules were acknowledged as relics only when firmly attached to this core material.
 2. A living livelihood had to depend on its function
 Lighting that brightened the dark, the water of life, safe passage, and watch duty had to hang deep on that relic. Doctrine did not fall off an old notice board on the wall. It flowered hot in the concourse where people breathed and sweated, before the sluices, in the crowded unloading yards.
 3. Re-control had to be blocked so that it stood in for god

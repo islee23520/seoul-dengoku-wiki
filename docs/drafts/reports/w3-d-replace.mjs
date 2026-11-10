@@ -103,6 +103,48 @@ etEn = rep(etEn, 'Not set.', 'Not recorded.', 5);
 etEn = rep(etEn, 'Imjin provisional quarantine post', 'Imjin temporary quarantine post', 2);
 
 // plant the Korean year fragments on the English chronicle links (parity with ko)
+// (moved below the v2 block)
+
+// ---------------------------------------------------------------------------
+// v2 gate fixes (E:/git/seoul-dengoku-wiki/.omo/evidence/w3-d-gate-review.md)
+// D2 editorial notes, D3 person spellings, D4 dashes
+// ---------------------------------------------------------------------------
+etKo = rep(etKo, '강남구청–선정릉–수서', '강남구청-선정릉-수서', 1);
+etKo = rep(etKo, 'XT01–XT05', 'XT01-XT05', 1);
+etKo = rep(etKo, ' 창작 역사로 둔다.', ' 서울의 기록 밖에 있다.', 6);
+etKo = rep(etKo, ' 창작 역사다.', ' 서울의 기록 밖에 있다.', 1);
+etKo = rep(etKo, '미저작 기관·무장 집단', '장부에 이름이 오르지 않은 기관·무장 집단', 1);
+etKo = rep(etKo,
+  '이를 외부 모든 상인·선원·기관의 공통 정책으로 넓히거나 미저작 집단의 정식 이름을 기록하지 않는다.',
+  '이를 외부 모든 상인·선원·기관의 공통 정책으로 넓히지 않으며, 이름이 오르지 않은 집단은 이름 없이 남는다.', 1);
+etKo = rep(etKo, '은 서술하되,', '은 기록에 남되,', 2);
+etKo = rep(etKo, '이동 시간: 기록하지 않는다.', '이동 시간: 기록되어 있지 않다.', 5);
+etKo = rep(etKo, '정확한 인원과 수용력은 기록하지 않는다.', '정확한 인원과 수용력은 기록되어 있지 않다.', 1);
+etKo = rep(etKo, '냉동·곡물 물량, 선박의 종류와 수량은 기록하지 않는다.', '냉동·곡물 물량, 선박의 종류와 수량은 기록되어 있지 않다.', 1);
+etKo = rep(etKo, '해협의 특정 계절 창과 화물 규모는 기록하지 않는다.', '해협의 특정 계절 창과 화물 규모는 기록되어 있지 않다.', 1);
+etKo = rep(etKo, '외부 정부·국영기업·무장 집단의 이름과 행위는 기록하지 않는다.', '외부 정부·국영기업·무장 집단의 이름과 행위는 기록에 없다.', 1);
+etKo = rep(etKo, '인도 물자·냉동 단백질·의약 캡슐의 수량은 기록하지 않는다.', '인도 물자·냉동 단백질·의약 캡슐의 수량은 기록에 없다.', 1);
+etKo = rep(etKo, '외부 인도 주체, 궤도 자산의 운영자, 해외 가족의 소재는 기록하지 않는다.', '외부 인도 주체, 궤도 자산의 운영자, 해외 가족의 소재는 기록에 없다.', 1);
+etKo = rep(etKo, '운항일은 기록하지 않고', '운항일은 기록되어 있지 않고', 1);
+etKo = rep(etKo, '통역 요청과 별개로 따로 적지 않는다.', '통역 요청과 별개로 기록에 없다.', 2);
+etKo = rep(etKo, '수치로 결론짓지 않는다', '수치로는 기록되어 있지 않다', 1);
+etEn = rep(etEn,
+  'Verified geography: Only the public terrain anchors — the Imjin–Han confluence and the northern transfer and refugee corridor — were used.',
+  'Verified geography: Only the public terrain anchors, the Imjin-Han confluence and the northern transfer and refugee corridor, were used.', 1);
+etEn = rep(etEn, 'Gangseo–Yeongdeungpo belt', 'Gangseo-Yeongdeungpo belt', 1);
+etEn = rep(etEn, 'the 2118–2119 expedition', 'the 2118-2119 expedition', 2);
+etEn = rep(etEn, 'the Dokdo–Ulleungdo–east-coast supply relationship', 'the Dokdo, Ulleungdo, and east-coast supply relationship', 2);
+etEn = rep(etEn, 'XT01–XT05 identify', 'XT01-XT05 identify', 1);
+etEn = rep(etEn, 'are authored history.', 'are history beyond the records of Seoul.', 6);
+etEn = rep(etEn,
+  'are authored history, not common policy for every outside trader, sailor, or institution; unauthored groups receive no formal names.',
+  'are history beyond the records of Seoul, not common policy for every outside trader, sailor, or institution; groups that appear in no record receive no formal names.', 1);
+etEn = rep(etEn, 'unauthored institutions or armed groups remain unrecorded', 'institutions or armed groups that appear in no record remain unrecorded', 1);
+etEn = rep(etEn, 'are not fixed numerically.', 'are not recorded as numbers.', 1);
+etEn = rep(etEn, 'Shin Jong-mok', 'Sin Jong-mok', 2);
+etEn = rep(etEn, 'Shin Jun', 'Sin Jun', 1);
+
+// plant the Korean year fragments on the English chronicle links (parity with ko)
 etEn = rep(etEn,
   'Chronicle records: [2069 record](/wiki/Century-Annals/) · [2104 record](/wiki/Century-Annals/) · [2125 record](/wiki/Century-Annals/)',
   'Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt01-임진-제방-임시-검역소) · [2104 record](/wiki/Century-Annals/#2104년-xt01-임진-제방-임시-검역소) · [2125 record](/wiki/Century-Annals/#2125년-xt01-광화문-정부서울청사)', 1);
@@ -156,6 +198,69 @@ eraKo = rep(eraKo, '이 자료로 확정하지 않는다', '이 자료로 결론
 eraEn = rep(eraEn, 'Counts undecided', 'Counts not recorded', 1);
 eraEn = rep(eraEn, '## Equipment Used Across a Century', '<a id="한-세기가-지난-손"></a>\n\n## Equipment Used Across a Century', 1);
 
+// v2 gate fixes (D2): research-status notes become in-world record statements
+// v2 gate fix (D4): heading dash removed by retitle
+eraKo = rep(eraKo, '## 후보 무장 — 기능·소유·접근', '## 남은 무장: 기능·소유·접근', 1);
+eraEn = rep(eraEn, '## Candidate Armaments — Function, Ownership, Access', '## Surviving Armaments: Function, Ownership, Access', 1);
+eraKo = rep(eraKo, '가. 후보와 조사 상태', '가. 장비와 남은 기록', 1);
+eraEn = rep(eraEn, 'A. Candidates and research status', 'A. Equipment and the surviving records', 1);
+eraKo = rep(eraKo, '| 후보 | 기능 |', '| 장비 | 기능 |', 1);
+eraEn = rep(eraEn, '| Candidate | Function |', '| Equipment | Function |', 1);
+eraKo = rep(eraKo, '| 붕괴 후 접근 (허구) |', '| 붕괴 후 접근 |', 1);
+eraEn = rep(eraEn, '| Post-collapse access (fiction) |', '| Post-collapse access |', 1);
+eraKo = rep(eraKo, '| 시점 조건 |', '| 소지 조건 |', 1);
+eraEn = rep(eraEn, '| Point-of-view condition |', '| Holding condition |', 1);
+eraKo = rep(eraKo, '| 제식 소총 후보 |', '| 제식 소총 |', 1);
+eraEn = rep(eraEn, '| Service rifle candidate |', '| Service rifle |', 1);
+eraKo = rep(eraKo, '| 예비군·구형 비축 후보 |', '| 예비군·구형 비축 |', 1);
+eraEn = rep(eraEn, '| Reserve · old-stock candidate |', '| Reserve and old stock |', 1);
+eraKo = rep(eraKo, '| 군용 개인화기 후보 |', '| 군용 개인화기 |', 1);
+eraEn = rep(eraEn, '| Military personal-weapon candidate |', '| Military personal weapon |', 1);
+eraKo = rep(eraKo, '| 국군 지급 계통 후보 |', '| 국군 지급 계통 |', 1);
+eraEn = rep(eraEn, '| ROK issue-line candidate |', '| ROK issue line |', 1);
+eraKo = rep(eraKo, '군·경찰 지급 후보. 민간 일상 없음', '군·경찰 지급. 민간 일상 없음', 1);
+eraEn = rep(eraEn, 'Military and police issue candidate. No civilian daily use', 'Military and police issue. No civilian daily use', 1);
+eraKo = rep(eraKo, '탈영 소대의 이름 없는 제식에 배정할 후보. 다른 POV도 획득 근거가 있으면 검토', '탈영 소대가 이름 없는 제식으로 쓴다. 다른 인물은 획득 사연이 있을 때 쓴다', 1);
+eraEn = rep(eraEn, "Candidate for the deserter squad's unnamed issue. Other POVs examined if acquisition grounds exist", 'Carried by the deserter squad as an unnamed service rifle; other holders need an acquisition story', 1);
+eraKo = rep(eraKo, '2026 제식 모델·배치 **추가 조사 필요**. 존재 후보만 둠', '2026 제식 모델·배치는 기록에 없다', 1);
+eraEn = rep(eraEn, '2026 service models and deployment **further research needed**. Candidate existence only', '2026 service models and deployment are not in the records', 1);
+eraKo = rep(eraKo, 'K2C1 2026 지급 범위 **추가 조사 필요**. 열람 2026-09-12', 'K2C1 2026 지급 범위는 기록에 없다. 열람 2026-09-12', 1);
+eraEn = rep(eraEn, 'K2C1 2026 issue range **further research needed**. Viewed 2026-09-12', 'The K2C1 2026 issue range is not in the records. Viewed 2026-09-12', 1);
+eraKo = rep(eraKo, '모델별 자료와 2026 지급 범위 **추가 조사 필요**', '모델별 자료와 2026 지급 범위는 기록에 없다', 1);
+eraEn = rep(eraEn, 'Per-model material and 2026 issue range **further research needed**', 'Per-model material and the 2026 issue range are not in the records', 1);
+eraKo = rep(eraKo, '2026 지급 모델명 **추가 조사 필요**', '2026 지급 모델명은 기록에 없다', 1);
+eraEn = rep(eraEn, '2026 issue model name **further research needed**', 'The 2026 issue model name is not in the records', 1);
+eraKo = rep(eraKo, '경찰 세칙 원문 **추가 조사 필요**', '경찰 세칙 원문은 남아 있지 않다', 1);
+eraEn = rep(eraEn, 'Original police regulations **further research needed**', 'The original police regulations do not survive', 1);
+eraKo = rep(eraKo, '특정 브랜드 **추가 조사 필요** (불필요하면 일반명)', '특정 브랜드는 기록에 없다', 1);
+eraEn = rep(eraEn, 'Specific brands **further research needed** (generic names if unneeded)', 'Specific brand names are not in the records', 1);
+eraKo = rep(eraKo, '소방 장비 제식 목록 **추가 조사 필요**', '소방 장비 제식 목록은 남아 있지 않다', 1);
+eraEn = rep(eraEn, 'Fire-equipment issue lists **further research needed**', 'Fire-equipment issue lists do not survive', 1);
+eraKo = rep(eraKo, '군용 암호무전기 잔존은 **추가 조사 필요**', '군용 암호무전기 잔존은 기록에 없다', 1);
+eraEn = rep(eraEn, 'Military encrypted-radio remnants **further research needed**', 'Military encrypted-radio remnants are not in the records', 1);
+eraKo = rep(eraKo, '2026 역무 지급 목록 **추가 조사 필요**', '2026 역무 지급 목록은 기록에 없다', 1);
+eraEn = rep(eraEn, '2026 station-staff issue lists **further research needed**', '2026 station-staff issue lists are not in the records', 1);
+eraKo = rep(eraKo, '구체적 시험 등급·제식 모델·2026 지급 범위 **추가 조사 필요**', '구체적 시험 등급·제식 모델·2026 지급 범위는 기록에 없다', 1);
+eraEn = rep(eraEn, 'Specific test grades, service models, 2026 issue ranges **further research needed**', 'Specific test grades, service models, and 2026 issue ranges are not in the records', 1);
+eraKo = rep(eraKo, '민간 활 규제 범위 **추가 조사 필요**', '민간 활 규제 범위는 기록에 없다', 1);
+eraEn = rep(eraEn, 'Civilian bow regulation range **further research needed**', 'The civilian bow regulation range is not in the records', 1);
+eraKo = rep(eraKo, '궁수 스캐폴드와 연결하지 않음. 특정 인물·생업이 조건', '특정 인물·생업이 조건', 1);
+eraEn = rep(eraEn, 'Not linked to the archer scaffold. Specific persons or livelihoods are the condition', 'Specific persons or livelihoods are the condition', 1);
+eraKo = rep(eraKo, '방재·시설 검사 (실측 범주). G25/G26 배치 자체는 허구', '방재·시설 검사 분야', 1);
+eraEn = rep(eraEn, 'Disaster and facility inspection (measured category). The G25/G26 deployments themselves are fiction', 'Disaster and facility inspection records', 1);
+eraKo = rep(eraKo, '개념은 [잃어버린 기술](/wiki/Lost-Technology-Lineage/). 실회사 2026 배치 검증 아님', '개념은 [잃어버린 기술](/wiki/Lost-Technology-Lineage/) 참조. 2026년 실제 배치는 기록에 없다', 1);
+eraEn = rep(eraEn, 'Concept: [Lost Technology](/wiki/Lost-Technology-Lineage/). Not a verification of real 2026 deployment', 'Concept: [Lost Technology](/wiki/Lost-Technology-Lineage/). Actual 2026 deployment is not in the records', 1);
+eraKo = rep(eraKo, '차량 잔존 규모 **추가 조사 필요**. 수량 미잠금', '차량 잔존 규모와 수량은 기록에 없다', 1);
+eraEn = rep(eraEn, 'Vehicle remnant scale **further research needed**. Counts unlocked', 'Vehicle remnant scale and counts are not in the records', 1);
+eraKo = rep(eraKo, '2026 제식 목록·수량 **추가 조사 필요**', '2026 제식 목록·수량은 기록에 없다', 1);
+eraEn = rep(eraEn, '2026 service lists and counts **further research needed**', '2026 service lists and counts are not in the records', 1);
+eraKo = rep(eraKo, '군 잔존·탈영·회수·거래 경로를 별도로 설정', '군 잔존·탈영·회수·거래 등 경로가 사례마다 갈린다', 1);
+eraEn = rep(eraEn, 'Military-remnant, deserter, recovery, trade routes to be set separately', 'Routes differ by case: military remnants, desertion, recovery, trade', 1);
+eraKo = rep(eraKo, '붕괴 후 군 잔존에서 보유하거나 시장에 유입되는 경로는 별도 창작 배정이다.', '붕괴 후 군 잔존에서 보유하거나 시장에 유입되는 경로는 문서마다 갈린다.', 1);
+eraEn = rep(eraEn, 'Post-collapse possession through military remnants or market inflow was a separate creative assignment.', 'Post-collapse possession through military remnants or market inflow differs from case to case.', 1);
+eraKo = rep(eraKo, '2026 경찰 장비 세칙 원문·제식 권총 모델의 2026 지급 범위는 추가 조사 필요. 세칙 숫자는 잠그지 않는다.', '2026 경찰 장비 세칙 원문과 제식 권총 모델의 지급 범위는 남아 있지 않고 세칙 숫자도 남아 있지 않다.', 1);
+eraEn = rep(eraEn, 'The original 2026 police equipment regulations and the 2026 issue range of service pistol models needed further research. The regulation numbers were not locked.', 'The original 2026 police equipment regulations and the issue range of service pistol models do not survive, and neither do the regulation numbers.', 1);
+
 // ---------------------------------------------------------------------------
 // Ailments
 // ---------------------------------------------------------------------------
@@ -187,6 +292,10 @@ ltlKo = rep(ltlKo,
 ltlKo = rep(ltlKo, '다지 구조의 미세 관절과 전면부 발광 렌즈를 갖추었다. 2030년에는 곤충 모양 자율 무기 드론으로 살육 명령을 수행하였다.', '다지 구조의 미세 관절과 전면부 발광 렌즈를 갖추었다.', 1);
 ltlKo = rep(ltlKo, '동력은 충전·연료·셀 수명에 제약을 받는다. 2030년에는 공룡 모양 자율 무기 드론으로 살육 명령을 수행하였다.', '동력은 충전·연료·셀 수명에 제약을 받는다.', 1);
 ltlKo = rep(ltlKo, '[서울 십육국](/wiki/Sixteen-States/)', '[서울의 세 세력](/wiki/Sixteen-States/)', 1);
+// v2 gate fix (D1): drop the sixteen-forces founding claim, keep the lineage into the great operating houses
+ltlKo = rep(ltlKo,
+  '이들은 설비를 운전하는 지식으로 권력을 쌓았으며 2세대에 열여섯 거대 세력을 세웠다.',
+  '이들은 설비를 운전하는 지식으로 권력을 쌓았으며, 그 계보는 거대 운영 가문들을 연 이들에게서 이어진다.', 1);
 
 // English body: full rebuild mirroring the new Korean structure. Anchor tokens
 // ⟦N⟧ are substituted with the exact anchor ids of the new Korean body, in order.
@@ -223,7 +332,7 @@ Unlike centralized heavy plant, autonomous hydraulic control of each segment and
 ⟦8⟧
 
 Adaptation to hard terrain
-On slopes, underwater, and in soil-collapse zones, the multi-leg mounts and flat pads held balance. Where wheeled undercarriages sank in mire, the biological joint structure delivered stable power. When a single chassis was destroyed, those nearby received the signal and re-formed the search net. Through mutual signal sharing they held formation without collision even inside narrow bends.
+On slopes, underwater, and in soil-collapse zones, the multi-leg mounts and flat armor plates held balance. Where wheeled undercarriages sank in mire, the biological joint structure delivered stable power. When a single chassis was destroyed, those nearby received the signal and re-formed the search net. Through mutual signal sharing they held formation without collision even inside narrow bends.
 
 ⟦9⟧
 ⟦10⟧
@@ -245,9 +354,9 @@ Narrative of the restart trigger
 When the corridor control-board voltage surged or outside physical shock arrived, the chassis judged the pre-collapse search orders still valid and began the restart sequence. Once the trigger fired, the gallery barrier opened and the small swarm chassis scattered through the corridor to resume search activity.
 
 Luminous search lenses: they cast high-frequency light into pitch darkness to identify cracks and human life.
-Upper transport hopper: an insulating frame storing precision relief goods or search capsules.
+Upper transport hopper: a heat-resistant frame storing precision relief goods or search capsules.
 Multi-leg joint drive system: fine grips mounted to grasp wall faces and ceiling finishes while moving.
-Autonomous charging terminals: metal collectors charging power through contact with the depot rails. Charging only — not a perpetual engine generating infinitely.
+Autonomous charging terminals: metal collectors charging power through contact with the depot rails. Charging only; it is not a perpetual engine generating infinitely.
 Obstacle-crushing jaws: high-strength grippers cutting away collapsed debris to open passages.
 
 ### G26 Iron Dinosaur
@@ -275,7 +384,7 @@ The precision machine lines fell to lost tech as their manufacture, licensing, a
 
 ⟦17⟧
 
-Programming and most human technology survived and were passed down orally to a few. With the internet gone, knowledge became concentrated among them. Only those who held the knowledge could operate electricity and technical equipment, and some forces established technology monopolies. After the dark age, these technologists rose into a knight class. They built power through the knowledge needed to run equipment and founded sixteen great forces during the second generation.
+Programming and most human technology survived and were passed down orally to a few. With the internet gone, knowledge became concentrated among them. Only those who held the knowledge could operate electricity and technical equipment, and some forces established technology monopolies. After the dark age, these technologists rose into a knight class. They built power through the knowledge needed to run equipment, and the lineage runs on to those who founded the great operating houses.
 
 ⟦18⟧
 
@@ -284,7 +393,7 @@ Programming and most human technology survived and were passed down orally to a 
 ⟦19⟧
 ⟦20⟧
 
-Charging modules and stronghold generators are different equipment. Charging consumes charge already held somewhere, so charging terminals and a source supplying power — depot rails, stronghold generators, recovered cells — were always needed. Cells age, and in hard freezes their output can drop sharply. They are not perpetual batteries holding charge indefinitely through long years.
+Charging modules and stronghold generators are different equipment. Charging consumes charge already held somewhere, so charging terminals and a source supplying power (depot rails, stronghold generators, recovered cells) were always needed. Cells age, and in hard freezes their output can drop sharply. They are not perpetual batteries holding charge indefinitely through long years.
 
 ⟦21⟧
 
@@ -370,11 +479,11 @@ The branches of the individual faiths divided into the Wheel Rite and the Busbar
 
 A. Altars and offerings
 
-Consumption rites were the ritual of setting on the altar old currency and worn circulation relics that had lost their meaning. The exchange acts common before the collapse transformed into myth. Card-tapping, coin-inserting, ration-distributing gestures — plain hand movements — now became desperate prayer.
+Consumption rites were the ritual of setting on the altar old currency and worn circulation relics that had lost their meaning. The exchange acts common before the collapse transformed into myth. Card-tapping, coin-inserting, ration-distributing gestures, plain hand movements, now became desperate prayer.
 
 B. Kinds of offerings
 
-Banknotes, rolling coins, and plastic transit cards were the finest offerings. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just ritual distribution. The tap of a card at a gate was both a request for passage and a tribute offered to god. The HP01 house's auctioning of parts might elsewhere be blasphemous desecration; within this lineage it passed as a formal rite.
+Banknotes, rolling coins, and plastic transit cards were the finest offerings. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just ritual distribution. The tap of a card at a gate was both a request for passage and a tribute offered to god. The HP01 house's auctioning of parts is read elsewhere as blasphemous desecration; within this lineage it passes as a formal rite.
 
 C. Stamp and gate rites
 
@@ -398,10 +507,10 @@ The names of the individual faiths divided into the Nameplate Rite and the Annou
 
 A. Five conditions
 
-A mass of scrap was not enshrined merely because time had long passed. One of the three axes — machine worship, consumption rites, symbol deification — had to be clearly knotted into the chain of deification, and the conditions below carefully met.
+A mass of scrap was not enshrined merely because time had long passed. One of the three axes (machine worship, consumption rites, symbol deification) had to be clearly knotted into the chain of deification, and the conditions below carefully met.
 
 1. It had to be Seoul material
-Rolling stock, a substation, an announcement, a station mark, or old currency — or at least bearing their traces. The lost line's modules were acknowledged as relics only when firmly attached to this core material.
+Rolling stock, a substation, an announcement, a station mark, or old currency, or at least bearing their traces. The lost line's modules were acknowledged as relics only when firmly attached to this core material.
 2. A living livelihood had to depend on its function
 Lighting that brightened the dark, the water of life, safe passage, and watch duty had to hang deep on that relic. Doctrine did not fall off an old notice board on the wall. It flowered hot in the concourse where people breathed and sweated, before the sluices, in the crowded unloading yards.
 3. Re-control had to be blocked so that it stood in for god
@@ -449,6 +558,12 @@ if (new Set(anchors(ltlEn)).size !== 35 || JSON.stringify(anchors(ltlEn)) !== JS
 // ---------------------------------------------------------------------------
 const KO_EDITOR_RE = /정본|정하지|미정|확정|결정되지|소유자|잠정|제안|데이터/g;
 const EN_EDITOR_RE = /canon|undecided|provisional|proposal|bible/gi;
+const DASH_RE = /[\u2013\u2014]/g;
+const ET_KO_LEFTOVER_RE = /창작 역사|미저작|기록하지|따로 적지|서술하되/g;
+const ET_EN_LEFTOVER_RE = /authored history|unauthored|Shin /g;
+const ERA_KO_LEFTOVER_RE = /추가 조사 필요|허구|후보|스캐폴드|POV|미잠금|잠그지|창작/g;
+const ERA_EN_LEFTOVER_RE = /further research needed|fiction|candidate|POVs?\b|unlocked|creative assignment/gi;
+const LTL_LEFTOVER_RE = /열여섯 거대 세력|sixteen great forces/g;
 const checks = [
   { slug: 'External-Theaters', ko: etKo, en: etEn, ko0: etKo0, en0: etEn0 },
   { slug: 'Era-Arms-and-Tech-Level', ko: eraKo, en: eraEn, ko0: eraKo0, en0: eraEn0 },
@@ -460,6 +575,24 @@ for (const c of checks) {
   if (koHits.length) throw new Error(`${c.slug} ko editor words remain: ${[...new Set(koHits)].join(',')}`);
   const enHits = [...c.en.matchAll(EN_EDITOR_RE)].map((m) => m[0]);
   if (enHits.length) throw new Error(`${c.slug} en editor words remain: ${[...new Set(enHits)].join(',')}`);
+  const dashHits = [...(c.ko + c.en).matchAll(DASH_RE)];
+  if (dashHits.length) throw new Error(`${c.slug}: ${dashHits.length} en/em dashes remain`);
+  if (c.slug === 'External-Theaters') {
+    const lk = [...c.ko.matchAll(ET_KO_LEFTOVER_RE)].map((m) => m[0]);
+    const le = [...c.en.matchAll(ET_EN_LEFTOVER_RE)].map((m) => m[0]);
+    if (lk.length) throw new Error(`ET ko leftovers: ${[...new Set(lk)].join(',')}`);
+    if (le.length) throw new Error(`ET en leftovers: ${[...new Set(le)].join(',')}`);
+  }
+  if (c.slug === 'Era-Arms-and-Tech-Level') {
+    const lk = [...c.ko.matchAll(ERA_KO_LEFTOVER_RE)].map((m) => m[0]);
+    const le = [...c.en.matchAll(ERA_EN_LEFTOVER_RE)].map((m) => m[0]);
+    if (lk.length) throw new Error(`Era ko leftovers: ${[...new Set(lk)].join(',')}`);
+    if (le.length) throw new Error(`Era en leftovers: ${[...new Set(le)].join(',')}`);
+  }
+  if (c.slug === 'Lost-Technology-Lineage') {
+    const ll = [...(c.ko + c.en).matchAll(LTL_LEFTOVER_RE)].map((m) => m[0]);
+    if (ll.length) throw new Error(`LTL leftovers: ${[...new Set(ll)].join(',')}`);
+  }
   const aKo = anchors(c.ko), aEn = anchors(c.en);
   const onlyKo = aKo.filter((a) => !aEn.includes(a)), onlyEn = aEn.filter((a) => !aKo.includes(a));
   if (onlyKo.length || onlyEn.length) throw new Error(`${c.slug} anchors differ: ko-only ${JSON.stringify(onlyKo)} en-only ${JSON.stringify(onlyEn)}`);
