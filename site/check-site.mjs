@@ -26,6 +26,8 @@ const visible = (html) => html.replace(/<script[\s\S]*?<\/script>/g, '').replace
     const html = fs.readFileSync(p, 'utf8');
     const title = html.match(/<title>([^<]*)/)?.[1] ?? '';
     if (rel.startsWith('wiki/seoul-showcase/')) { count.showcase++; continue; }
+    // The LICENSE is a mixed-language legal document; it is published verbatim, never machine-translated.
+    if (rel.startsWith('wiki/license/')) { count[rel.startsWith('ko/') ? 'ko' : 'en']++; continue; }
     if (rel === '404.html') continue;
     if (rel.startsWith('ko/')) {
       count.ko++;

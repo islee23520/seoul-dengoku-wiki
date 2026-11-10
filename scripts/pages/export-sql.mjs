@@ -291,6 +291,10 @@ const mapStateRows = mapSrc.states.map((st) => ({
   color: hegemonOfState.get(st.id)?.color ?? '#697586', exclusive_districts: st.currentExclusiveDistrictCount ?? 0,
 }));
 
+// ---- retainer graph (src/generated/retainerGraph.ts) --------------------
+const { retainerGraph } = await gen('retainerGraph.ts');
+const retainerRow = { id: 'retainer', json: JSON.stringify(jEn(retainerGraph)), json_ko: JSON.stringify(jKo(retainerGraph)) };
+
 if (missing.size) {
   fs.writeFileSync(MISSING_PATH, JSON.stringify([...missing], null, 1));
   console.error(`E_I18N_MISSING: ${missing.size} Korean strings lack English; see ${path.relative(REPO, MISSING_PATH)}`);
@@ -319,6 +323,7 @@ CREATE TABLE map_landmark (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, name TEXT
 CREATE TABLE map_rail (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, mode TEXT NOT NULL, line_id TEXT NOT NULL, points TEXT NOT NULL);
 CREATE TABLE map_holding (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, name TEXT NOT NULL, name_ko TEXT NOT NULL, holder_person_id TEXT NOT NULL, state_id TEXT, data TEXT NOT NULL, data_ko TEXT NOT NULL);
 CREATE TABLE map_underground (station_id TEXT PRIMARY KEY, sort INTEGER NOT NULL, data TEXT NOT NULL, data_ko TEXT NOT NULL);
+CREATE TABLE retainer_graph (id TEXT PRIMARY KEY, json TEXT NOT NULL, json_ko TEXT NOT NULL);
 CREATE TABLE map_state (state_id TEXT PRIMARY KEY, label_x REAL NOT NULL, label_y REAL NOT NULL, capital_x REAL NOT NULL, capital_y REAL NOT NULL, capital_station_id TEXT, capital_region_id TEXT, color TEXT NOT NULL, exclusive_districts INTEGER NOT NULL);
 CREATE TABLE person_detail (person_id TEXT PRIMARY KEY REFERENCES wiki_person(id), clan_id TEXT, json TEXT NOT NULL, json_ko TEXT NOT NULL);
 CREATE TABLE clan (id TEXT PRIMARY KEY, sort INTEGER NOT NULL, surname TEXT NOT NULL, surname_ko TEXT NOT NULL, bongwan TEXT NOT NULL, bongwan_ko TEXT NOT NULL, hanja TEXT NOT NULL, crest_motif TEXT NOT NULL, show_branches INTEGER NOT NULL, branches TEXT NOT NULL, branches_ko TEXT NOT NULL);
@@ -350,6 +355,7 @@ writeSql('080-gdd-documents.sql', 'GDD documents (Markdown bodies, English and K
 writeSql('090-person-details.sql', 'Person detail records (JSON text, English and Korean)', insert('person_detail', C.person_detail, personDetailRows));
 writeSql('100-clans.sql', 'Clans (bongwan families), members and non-Korean families', [insert('clan', C.clan, clanRows), insert('clan_member', C.clan_member, clanMemberRows), insert('nonkorean_family', C.nonkorean_family, nonKoreanRows)].join('\n'));
 writeSql('110-family-trees.sql', 'Family trees (JSON text, English and Korean)', insert('family_tree', C.family_tree, familyTreeRows));
+writeSql('115-retainer-graph.sql', 'Retainer courts and vassal edges (JSON text, English and Korean)', insert('retainer_graph', C.retainer_graph, [retainerRow]));
 writeSql('120-map-core.sql', 'World map: regions, stations, segments, lines, landmarks, state anchors', [
   insert('map_meta', ['key', 'value'], Object.entries(mapMeta).map(([key, value]) => ({ key, value: typeof value === 'string' || typeof value === 'number' ? String(value) : JSON.stringify(value) }))),
   insert('map_region', C.map_region, mapRegionRows), insert('map_station', C.map_station, mapStationRows), insert('map_edge', C.map_edge, mapEdgeRows),
