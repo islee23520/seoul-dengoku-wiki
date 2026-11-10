@@ -151,7 +151,26 @@ const anchorSet = (body) => {
   return s;
 };
 const headingCount = (body) => body.split('\n').reduce((n, l) => (l.startsWith('#') ? n + 1 : n), 0);
-const commentsBalanced = (body) => body.split('<!--').length === body.split('-->').length;
+// HTML 주석 순서 검사(상태 스캔): 열지 않은 상태의 닫는 `-->`, 열린 상태의 중첩 여는 `<!--`,
+// 끝까지 닫히지 않은 주석 모두 불균형으로 본다. 빈 주석 `<!---->`은 여·닫 순서가 맞으므로 균형이다.
+const commentsBalanced = (body) => {
+  let open = false;
+  let i = 0;
+  while (i < body.length) {
+    const o = body.indexOf('<!--', i);
+    const c = body.indexOf('-->', i);
+    if (open) {
+      if (c < 0) return false;             // 여린 채 EOF
+      if (o >= 0 && o < c) return false;   // 중첩 여는 주석
+      i = c + 3; open = false;
+    } else {
+      if (c >= 0 && (o < 0 || c < o)) return false; // 열지 않은 닫기
+      if (o < 0) return true;
+      i = o + 4; open = true;
+    }
+  }
+  return !open;
+};
 const byteLen = (s) => Buffer.byteLength(s, 'utf8');
 const setDiff = (a, b) => [...a].filter((x) => !b.has(x));
 const pct = (n, o) => (o > 0 ? Math.round((n / o) * 100) : 100);
@@ -268,7 +287,7 @@ function main() {
       if (!d.fm.model || !d.fm.model.trim()) { console.error(`E_MODEL: ${slug}: ${l} 초안 front matter에 빈 값 아닌 model: 이 필요하다 (${pair[l]})`); process.exit(EXIT.MODEL_MISSING); }
       // (g) 본문 무결성
       if (d.body.includes('\0')) { console.error(`E_BODY: ${slug}: ${l} 새 본문에 NUL 바이트가 있다`); process.exit(EXIT.BODY_INVALID); }
-      if (!commentsBalanced(d.body)) { console.error(`E_BODY: ${slug}: ${l} 새 본문의 HTML 주석 <!-- --> 짝이 맞지 않는다`); process.exit(EXIT.BODY_INVALID); }
+      if (!commentsBalanced(d.body)) { console.error(`E_BODY: ${slug}: ${l} 새 본문의 HTML 주석이 여·닫 순서를 지키지 않는다(열지 않은 닫기 -->, 중첩 <!--, 미종결)`); process.exit(EXIT.BODY_INVALID); }
       drafts[l] = d;
     }
     const newKo = drafts.ko ? drafts.ko.body : row.body_ko_md;
