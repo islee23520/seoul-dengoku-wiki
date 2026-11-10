@@ -1,6 +1,6 @@
 ---
 model: gemini-4-argon-high
-section_checkpoint: en translated from final ko, 6/6 parts merged
+section_checkpoint: en 6/6 parts merged; gate-review fixes applied by hand
 ---
 
 <a id="서울전국-연표-20262126"></a>
@@ -11,11 +11,11 @@ The Great Blackout took place around 2026, roughly one hundred years before the 
 
 <a id="era-1"></a>
 
-## Era 1 · Shelters of the First Generation (2030~2039)
+## Era 1 · The First Decade after the Great Blackout
 
 <a id="2030년"></a>
 
-### 2030 · The Great Blackout
+### The Day of the Great Blackout and After
 
 <a id="2030년-청와대-국가위기관리센터-상황실"></a>
 
@@ -247,7 +247,7 @@ Twenty-two days after the Great Blackout, Hwangbo Eun, a station attendant at Ye
 
 ##### C. Headcount
 
-As of forty-eight days after the Great Blackout, about 4,100 people were living underground at Yeongdeungpo-gu Office Station. On the same day there were about 2,800 at Yongsan Station and about 3,300 at Guro Station. Only as many people survived as the stations could hold, and once that number was reached, the winter grew no worse.
+As of forty-eight days after the Great Blackout, about 4,100 people were living underground at Yeongdeungpo-gu Office Station. On the same day there were about 2,800 at Yongsan Station and about 3,300 at Guro Station.
 
 <a id="ch07-i4"></a>
 
@@ -267,7 +267,7 @@ From then on, at about 07:00 every day, twelve handcarts carried water from the 
 
 ##### A. Recruiting Surface Workers
 
-On March 2, 2031, the Yeongdeungpo Arisu Water Purification Center recruited surface workers in return for supplying water to the ration points in the underground stations. Eighty-six people signed up on the first day. The surface workers moved about by memorizing the patrol route maps drawn by Hwangbo Eun, while their families stayed underground. The surface was cold, and wherever the machines passed, people had to stop where they stood.
+On March 2, 2031, the Yeongdeungpo Arisu Water Purification Center recruited surface workers in return for supplying water to the ration points in the underground stations. Eighty-six people signed up on the first day. The surface workers moved about by memorizing the patrol route maps drawn by Hwangbo Eun, while their families stayed underground.
 
 <a id="2031년-영등포구청역"></a>
 
@@ -277,7 +277,7 @@ On March 2, 2031, the Yeongdeungpo Arisu Water Purification Center recruited sur
 
 ##### A. The Resident Register
 
-In January 2031 the first resident register was drawn up at Yeongdeungpo-gu Office Station. Hwangbo Eun compiled it. Those listed in the register could stay underground. Those not listed had to work on the surface to receive rations. There was a limit to how many people a station could hold. By the end of 2031, most of Seoul's underground stations kept registers of the same kind.
+In January 2031 the first resident register was drawn up at Yeongdeungpo-gu Office Station. Hwangbo Eun compiled it. Those listed in the register could stay underground. Those not listed had to work on the surface to receive rations. By the end of 2031, most of Seoul's underground stations kept registers of the same kind.
 
 <a id="peninsula-2031-line-end-markets"></a>
 <a id="event-peninsula-2031-line-end-markets"></a>
@@ -311,7 +311,7 @@ In 2032, mountain villagers and guides in Gangwon divided among themselves the t
 
 #### A. The Guard
 
-In July 2033, Bae Jeongman, who was responsible for security on the Amsa side, and the twenty or so people under him began to stand armed watch over the surface passage between the Godeok Rail Depot and the Amsa Arisu Water Purification Center. They called themselves the Guard. Bae Jeongman recorded the name and weapon of each guard member in a ledger. Weapons were scarce, so each one was assigned to a specific user.
+In July 2033, Bae Jeongman, who was responsible for security on the Amsa side, and the twenty or so people under him began to stand armed watch over the surface passage between the Godeok Rail Depot and the Amsa Arisu Water Purification Center. They called themselves the Guard. Bae Jeongman recorded the name and weapon of each guard member in a ledger.
 
 <a id="2034년"></a>
 
@@ -321,7 +321,7 @@ In July 2033, Bae Jeongman, who was responsible for security on the Amsa side, a
 
 #### A. The Yeongdeungpo-gu Office Station Register
 
-In the spring of 2034, the Yeongdeungpo-gu Office Station register listed about 4,600 people. Among them were 11 children of surface workers who had been entered in the underground register. The rest of the surface workers' children mostly took over their parents' surface work.
+In the spring of 2034, the Yeongdeungpo-gu Office Station register listed about 4,600 people. Among them were 11 children of surface workers who had been entered in the underground register.
 
 <a id="peninsula-2034-daejeon-fields"></a>
 <a id="event-peninsula-2034-daejeon-fields"></a>
@@ -444,13 +444,13 @@ In March 2040, the Yeongdeungpo Arisu Water Purification Center ordered 400 valv
 
 In 2040, farmers and coastal shipowners in Honam saw that villages which shipped out all their food at once could not last until the next sowing. They resolved not to load grain set aside for seed onto ships, however high a price the Seoul merchants offered. Trade resumed, but the power to decide how much to ship remained with the producing regions.
 
-The winter that the First AI had brought down during the Great Blackout had still not ended, and food shortages continued. The AI had not killed anyone directly, but many people died in the cold and want. Once the population fell to what the stations could hold, the winter grew no worse. Still living in the subway stations, people began going back out to work at surface facilities such as purification centers and rail depots. Outside Seoul, war machines from the Great Blackout roamed, still carrying out their last orders, and no one could pass where the machines had blocked the roads.
+The winter that the First AI had brought down at the Great Blackout had still not ended, and food shortages went on. The AI had killed no one directly, but many people died of cold and want. Still living in the subway stations, people began going back out to work at surface facilities such as purification centers and rail depots.
 
-The original records stated that between 2030~2040 the population fell to 30% of its former size. The northern regions lost most of their people. Some of the survivors tried to move south in search of a place to live.
+The northern regions lost most of their people. Some of the survivors tried to move south in search of a place to live.
 
-Much programming and technical knowledge survived and was passed down orally among a small number of people. With the internet gone, knowledge became concentrated in their hands. Only those who knew how to handle electricity and technical equipment could run it, and some groups monopolized the skills. Knowing how to operate equipment became a form of power. Because of scarcity, children took over their parents' work, and a vertical hierarchy with technically skilled families at the top began to harden around this time.
+Much programming and technical knowledge survived and was passed down orally among a small number of people. With the internet gone, knowledge became concentrated in their hands. Only those who knew how to handle electricity and technical equipment could run it, and some groups kept the skills to themselves. Knowing how to run equipment became a form of power. Because of scarcity, children took over their parents' work, and a vertical hierarchy with technically skilled families at the top hardened.
 
-During this period it became possible to connect some humanoids to local networks and put them back into use. They were few in number, however, and extremely valuable.
+During this period it became possible to connect some humanoids to local networks and use them again.
 
 <a id="2041년"></a>
 
@@ -466,7 +466,7 @@ In April 2041, Amsa Guard Captain Bae Jeongman began calling himself Commander. 
 
 #### A. Copying
 
-In May 2041, eleven record keepers living together around Anguk Station began copying equipment manuals and old documents from the Yeouido vault level and the purification centers. The English text of the manuals was transcribed with Korean pronunciations added. The copies were kept in the underground copying archive at Anguk Station.
+In May 2041 eleven people from around Anguk Station began copying the equipment manuals that had come out of the Yeouido vault floor and the purification centers. The English originals were copied with Korean readings attached. The copies were kept underground at Anguk Station.
 
 <a id="peninsula-2041-jeju-repairs"></a>
 <a id="event-peninsula-2041-jeju-repairs"></a>
@@ -543,9 +543,9 @@ From around this time, the family of the head of the Yeongdeungpo purification c
 
 <a id="ch12-i4"></a>
 
-#### A. Reciting English Commands
+#### A. Reading the English Commands Aloud
 
-In 2048, the Samseong Station shelter gatherings and the Anguk Station copying archive added a portion in which the English commands from equipment manuals were read aloud. The recitation was meant to commit the commands to memory, and it included the purification center valve operation commands and the generator startup commands.
+In 2048 the underground gatherings at Samseong Station and Anguk Station added a turn for reading the English commands of the equipment manuals aloud. The readings included the purification center valve commands and the generator start commands.
 
 <a id="peninsula-2048-taedong-crossings"></a>
 <a id="event-peninsula-2048-taedong-crossings"></a>
@@ -598,17 +598,17 @@ In September 2050, the Yeouido families gave notice that they would stop lending
 
 #### A. Reusing Humanoids
 
-By the second generation, it had become possible to connect humanoids to local networks and use them again. In June 2051, a vehicle body factory in Yangjae was run by the Jeong family, headed by Jeong Mansu. The factory began reusing 12 field humanoids, cut off from the remote network, by having people control them directly. Control was by a wired controller connected to each unit's back. Humanoids were still scarce, and the 12 units were the factory's most valuable asset.
+By the second generation, it had become possible to connect humanoids to local networks and use them again. In June 2051, a vehicle body factory in Yangjae was run by the Jeong family, headed by Jeong Mansu. The factory began reusing 12 field humanoids, cut off from the remote network, by having people control them directly. Control was by a wired controller connected to each unit's back.
 
 <a id="2052년"></a>
 
-### 2052 · The City Hall Station Workers' Assembly
+### 2052 · The Jeongdong Meeting
 
 <a id="ch19-i1"></a>
 
-#### A. The City Hall Station Workers' Assembly
+#### A. The Jeongdong Meeting
 
-On November 2, 2052, about 380 underground workers from City Hall Station held a meeting in a building in Jeong-dong. Every attendee cast one vote, and they entrusted the affairs of the meeting to Mun Jeonga. The gathering was afterward known as the City Hall Station Workers' Assembly.
+On November 2, 2052, some 380 workers from underground at City Hall Station held a meeting in a building in Jeongdong. Every person present cast one vote, and they chose Mun Jeonga as chair.
 
 <a id="2053년"></a>
 
@@ -666,7 +666,7 @@ In February 2055 the water supply side, now at Yangpyeong Station, formed a cont
 
 #### A. The First Vote
 
-In January 2056 Han Seokjin announced that he would step down. The contract council chose his successor by vote. Han Doyun, son of Han Seokjin and grandson of Han Jeonghun, won six of the nine votes. The work of the purification center thus stayed within the Han family.
+In January 2056 Han Seokjin announced that he would step down. The contract council chose his successor by vote. Han Doyun, son of Han Seokjin and grandson of Han Jeonghun, won six of the nine votes.
 
 <a id="2057년"></a>
 
@@ -705,9 +705,9 @@ In September 2058 Jeong Mansu named his factory Taeuk Heavy Industries. That sam
 <a id="peninsula-2058-busan-sailings"></a>
 <a id="event-peninsula-2058-busan-sailings"></a>
 
-#### Beyond Seoul · Ships on the South Coast
+#### Yeongnam · Boats Afloat Again
 
-Around 2058, word spread among merchants trading toward Seoul that ships were moving again along the south coast. According to the reports, the ships still fit to maintain had been picked out from those laid up in Busan harbor and were running along the coast. Different people supplied the crew and materials for each ship, so no single person could decide every sailing. Cargo reportedly passed through many hands before it reached merchants on the Seoul side, and repair materials for the next voyage went south in exchange. Beyond Seoul, the war machines of the Great Blackout still roamed under their last orders, so there is no record that anyone in Seoul confirmed these reports directly.
+In 2058 sailors and repair workers in Busan picked out the vessels they could keep up from those stranded in port and resumed coastal sailings. Different people had supplied labor and materials for each vessel, so no port representative could order every departure. Shipowners passed loads through several hands along the southern coast to trade with merchants heading toward Seoul, and obtained materials for the next voyage.
 
 <a id="2059년"></a>
 
@@ -717,7 +717,7 @@ Around 2058, word spread among merchants trading toward Seoul that ships were mo
 
 #### A. The First Strike
 
-In April 2059 the City Hall Station workers' assembly stopped work for three days in protest against Guro workshop wages being paid only in certificates. On the third day of the strike, the council of Guro workshop masters agreed to pay one third of wages in water.
+In April 2059 the City Hall Station workers stopped work for three days in protest against Guro workshop wages being paid only in certificates. On the third day of the strike the council of Guro workshop masters agreed to pay one third of wages in water.
 
 <a id="2060년"></a>
 
@@ -772,9 +772,9 @@ In May 2064 Jang Gitaek, transport chief of the Sinnae rail depot, began carryin
 <a id="peninsula-2064-northern-coast-handoffs"></a>
 <a id="event-peninsula-2064-northern-coast-handoffs"></a>
 
-#### Beyond Seoul · Handoffs on the Northern East Coast
+#### Northern Peninsula · Handoffs on the Northern East Coast
 
-Around 2064, word reached Seoul that around the harbors and railways near Hamhung and Chongjin, cargo and people were handed along in short stages. According to the reports, loads had to be transferred at every broken section, so the place a freight car started from and the place its cargo started from were often different. Merchants who wanted to send goods toward Seoul had to find new carriers at each handoff, and no carrier could guarantee the whole route. Stories also came that war machines obeying their last orders stopped people on the roads.
+In 2064 residents near the ports and railways around Hamhung and Chongjin passed freight and travelers along the short sections they kept up. Loads changed hands at each broken section, so a wagon and its contents could come from different places. Merchants sending goods toward Seoul had to find a new carrier at every handoff, and none could guarantee passage for the whole journey.
 
 <a id="2066년"></a>
 
@@ -788,7 +788,7 @@ Around 2064, word reached Seoul that around the harbors and railways near Hamhun
 
 ##### A. Inheritance
 
-In February 2066 Jeong Mansu died, and his eldest son Jeong Taehun succeeded him as chairman of Taeuk Heavy Industries. In October of the same year, I Sangcheol handed the chairmanship of Sungha Electronics to his son I Junho. In both families the post passed from father to son.
+In February 2066 Jeong Mansu died, and his eldest son Jeong Taehun succeeded him as chairman of Taeuk Heavy Industries. In October of the same year, I Sangcheol handed the chairmanship of Sungha Electronics to his son I Junho.
 
 <a id="2066년-제기동"></a>
 
@@ -849,7 +849,7 @@ In June 2069 Guui elected Go Myeongcheol as commander of the gate facing Achasan
 
 ##### Joint Check of the Return Rolls
 
-In July 2069 the duty officer of the Anguk scribal archive and the roll officer of the Gwanghwamun Complex checked the return rolls together at the Imjin embankment temporary quarantine station. The Sinnae rail cart officer recorded separately the handoff order for family queues and medicine crates. The Gangnam escort officer handled the transfer cars. The Guui gate commander's side divided custody of the seal keys for the return guidance terminals.
+In July 2069 the duty officer of the Anguk copying watch and the roll officer of the Gwanghwamun Complex checked the return rolls together at the Imjin embankment temporary quarantine station. The Sinnae rail cart officer recorded separately the handoff order for family queues and medicine crates. The Gangnam escort officer handled the transfer cars. The Guui gate commander's side divided custody of the seal keys for the return guidance terminals.
 
 <a id="2069년-xt04-암사-야적장"></a>
 
@@ -869,7 +869,7 @@ In August 2069 the Amsa guard officer checked the weight records and brand marks
 
 ##### The Residual Band Trust Window
 
-In September 2069 the rooftop officer at Yeouido Hall circulated the residual orbital slot numbers left at the Incheon window after the Great Blackout, intending to send them to the trust receiving window. The Yeongdeungpo water gate officer cross-checked transmission and pump operating times. The officer of the Government Complex Seoul at Gwanghwamun copied the hash of the delivery list into the observers' ledger. The City Hall labor officer checked the round entries in the remittance records. The Yangjae factory officer weeded out false alarms from the orbital terminals. The Myeongdong interpreters' circle drew up queue tickets for multilingual consultation.
+In September 2069 the rooftop officer at Yeouido Hall circulated the residual orbital slot numbers left at the Incheon window after the Great Blackout, intending to send them to the trust receiving window. The Yeongdeungpo water gate officer cross-checked transmission and pump operating times. The officer of the Government Complex Seoul at Gwanghwamun copied the hash of the delivery list into the observers' ledger. The City Hall labor officer checked the round entries in the remittance records. The Yangjae factory officer weeded out false alarms from the orbital terminals. The Myeongdong watch drew up queue tickets for multilingual consultation.
 
 <a id="2070년"></a>
 
@@ -901,17 +901,17 @@ In September 2070 the standing guard of the Complex drew up muster rolls for Gwa
 
 <a id="2071년"></a>
 
-### 2071 · Founding of the Patrol Society
+### 2071 · The Samseong Station Band
 
 <a id="ch21-i1"></a>
 
-#### A. Founding
+#### A. Formation
 
-In February 2071 Oh Seonggyu, who kept the Samseong Station residents' roll, gathered some 120 men from among those listed on it. They formed a group to destroy the patrol units that blocked the surface passages, and named it the Samseong Station Patrol Society. Its first operation, in March 2071, destroyed two patrol units in Yeoksam-dong.
+In February 2071 Oh Seonggyu, who kept the Samseong Station residents' roll, gathered some 120 men from among those listed on it into a band that wrecked surface patrol units. Its first operation, in March 2071, wrecked two patrol units in Yeoksam-dong.
 
 <a id="2072년"></a>
 
-### 2072 · Formation of the Yongsan Ledger Council
+### 2072 · A Brief Entry
 
 <a id="ch22-i1"></a>
 
@@ -919,25 +919,25 @@ In February 2071 Oh Seonggyu, who kept the Samseong Station residents' roll, gat
 
 <a id="2073년"></a>
 
-### 2073 · Alliance and the Scribal Archive
+### 2073 · Alliance and Copying
 
-#### Samseong Station Roll Assembly
+#### Samseong Station
 
 <a id="ch21-i2"></a>
 
 ##### A. Alliance
 
-In May 2073 the Samseong Station Patrol Society sent forty members each to the Amsa guard and to Go Myeongcheol, the Guui gate commander, to fight alongside them. Both allowed the Patrol Society to hold roll calls within their units. The Amsa guard commander was Bae Jinhyeok, eldest son of Bae Hyeonsu.
+In May 2073 the Samseong Station band sent forty members each to the Amsa guard and to Go Myeongcheol, the Guui gate commander, to fight alongside them. The Amsa guard commander was Bae Jinhyeok, eldest son of Bae Hyeonsu.
 
 <a id="2073년-안국총림"></a>
 
-#### Anguk Station Scribal Archive
+#### Anguk Station
 
 <a id="ch23-i1"></a>
 
-##### A. The Name
+##### A. Choosing a Head
 
-In August 2073 some forty people copying equipment manuals and old documents at Anguk Station began calling themselves the Anguk Station Scribal Archive. A full meeting of the scribes chose Hyean as head of the archive. The choice was made with the consent of every scribe present.
+In August 2073 some forty people copying equipment manuals at Anguk Station chose Hyean as their head. The choice was made with the consent of everyone present.
 
 <a id="2074년"></a>
 
@@ -945,9 +945,9 @@ In August 2073 some forty people copying equipment manuals and old documents at 
 
 <a id="ch21-i3"></a>
 
-#### A. The First Surface Crackdown
+#### A. The Nonhyeon-dong Arrests
 
-In September 2074 Patrol Society members seized three people on the surface in Nonhyeon-dong who were using tools not listed on the roll. The members burned the tools on the spot. The three were released three days later.
+In September 2074 members of the Samseong Station band seized three people on the surface in Nonhyeon-dong. The three were released three days later.
 
 <a id="2075년"></a>
 
@@ -957,17 +957,17 @@ In September 2074 Patrol Society members seized three people on the surface in N
 
 #### A. Ledger Registration
 
-In February 2075 the Yongsan rail line families began entering inheritance by eldest sons in the ledger of the Yongsan Ledger Council for confirmation. The first to be confirmed was the Bak family. That same year the family of Taeuk Heavy Industries chairman Jeong Taehun also registered a marriage in the council's ledger.
+In February 2075 the Yongsan rail families began having inheritance by eldest sons confirmed by entry in a ledger. The first to be confirmed was the Bak family. That same year the family of Taeuk Heavy Industries chairman Jeong Taehun also registered a marriage in the same ledger.
 
 <a id="2076년"></a>
 
-### 2076 · Succession in the Patrol Society
+### 2076 · Succession
 
 <a id="ch21-i4"></a>
 
 #### A. Succession
 
-In January 2076 Oh Seonggyu died, and his son Oh Junhui succeeded him as leader of the Patrol Society. Seventeen representatives of those on the roll held a confirmation vote. It passed with fifteen in favor and two abstentions.
+In January 2076 Oh Seonggyu died, and his son Oh Junhui succeeded him as leader of the Samseong Station band. Seventeen representatives of those on the roll held a confirmation vote. It passed with fifteen in favor and two abstentions.
 
 <a id="2077년"></a>
 
@@ -977,11 +977,11 @@ In January 2076 Oh Seonggyu died, and his son Oh Junhui succeeded him as leader 
 
 #### A. Training in Copying
 
-In January 2077 the Yangpyeong Station contract council and the council of Guro workshop masters invited six Anguk Station scribes to serve as readers of equipment manuals. About thirty technicians from the two groups learned copying at the Anguk Station Scribal Archive. The training lasted one year.
+In January 2077 the Yangpyeong Station contract council and the council of Guro workshop masters invited six Anguk Station copyists to serve as readers of equipment manuals. About thirty technicians from the two groups learned copying at Anguk Station. The training lasted one year.
 
 <a id="2078년"></a>
 
-### 2078 · A Gap in the Records
+### 2078 · A Brief Entry
 
 <a id="ch22-i3"></a>
 
@@ -1033,9 +1033,9 @@ The Director of the Heukseok Preservation Institute was chosen by a ledger readi
 
 <a id="ch23-i3"></a>
 
-#### A. The Patrol Society's Rejection
+#### A. Copies Refused
 
-In June 2082 the Samseong Station Patrol Society gave notice that it would no longer admit, at the Amsa and Guui gates, technicians who used copies transcribed by the Anguk Station Scribal Archive. The notice was signed by Oh Junhui.
+In June 2082 the Samseong Station band gave notice that it would no longer admit, at the Amsa and Guui gates, technicians who used the Anguk Station copies. The notice was signed by Oh Junhui.
 
 <a id="2084년"></a>
 
@@ -1045,7 +1045,7 @@ In June 2082 the Samseong Station Patrol Society gave notice that it would no lo
 
 #### A. Placement of Successful Candidates
 
-In 2084 nine candidates who had passed the Institute's examination found positions at the Yangpyeong Station Contract Council and the Guro workshop. Four of them were technicians who had learned copying at the Anguk Station Scribal Archive.
+In 2084 nine candidates who had passed the Preservation Institute examination found positions at the Yangpyeong Station contract council and the Guro workshop. Four of them were technicians who had learned copying at Anguk Station.
 
 <a id="2085년"></a>
 
@@ -1055,7 +1055,7 @@ In 2084 nine candidates who had passed the Institute's examination found positio
 
 #### A. The Crackdown
 
-From April 2085 the Patrol Society began detaining workers at the Amsa and Guui gates who carried tools not listed in the register. Twelve were detained in the first month. The names of those detained were struck from the gate passage register.
+From April 2085 the Samseong Station band began detaining workers at the Amsa and Guui gates. Twelve were detained in the first month. The names of those detained were struck from the gate passage register.
 
 <a id="2087년"></a>
 
@@ -1076,17 +1076,15 @@ In 2087 merchants from Seoul who had come by way of the West Sea tried to buy up
 
 #### A. Inspection of Copies Delegated
 
-In May 2088 the Preservation Institute asked to take over the inspection of copies held by the Anguk Station Scribal Archive. The Archive's council of scribes agreed. Some 1,200 volumes of copies were moved to Heukseok and returned after inspection.
+In May 2088 the Preservation Institute asked to take over the inspection of the Anguk Station copies. The Anguk Station copyists agreed. Some 1,200 volumes were moved to Heukseok and returned after inspection.
 
 <a id="2090년"></a>
 
-### 2090 · Three Lines of Allegiance
+### 2090 · A Brief Entry
 
 <a id="ch25-i3"></a>
 
-#### A. Allegiance by Record Lineage
-
-As of 2090 the Amsa Guard, the Guui gate, and Sungha Electronics in Gangnam followed the register of the Samseong Station Patrol Society. The Yongsan rail families and Taeuk Heavy Industries followed the ledger of the Yongsan Ledger Council. The Yangpyeong Station water supply side, the Guro workshop, and the Heukseok Preservation Institute followed the copies of the Anguk Station Scribal Archive.
+#### A. The Record for 2090
 
 <a id="era-5"></a>
 
@@ -1100,7 +1098,7 @@ As of 2090 the Amsa Guard, the Guui gate, and Sungha Electronics in Gangnam foll
 
 #### A. Workshops and Computing Buildings
 
-In May 2095 Taeuk Group controlled Taeuk Heavy Industries and the eleven workshops under it. Sungha Group controlled four computing buildings around Sungha Electronics. Because machines and parts were scarce at the time, the workshops and computing buildings held by the two groups governed most of the repair work in Seoul.
+In May 2095 Taeuk Group controlled Taeuk Heavy Industries and the eleven workshops under it. Sungha Group controlled four computing buildings around Sungha Electronics.
 
 <a id="2097년"></a>
 
@@ -1181,7 +1179,7 @@ In April 2102 the Standards League admitted the workshops of Cheonan-Asan and Si
 
 ##### A. The I Family
 
-The First Branch Workshop joined the Standards League in 2102. Thereafter the I family of Cheonan-Asan managed the First Branch Workshop under the Standards League. The family looked after the rail yard at the southern end of Line 1 and four workshops. Amid scarcity the work passed from parent to child, and I Ilseop was heir of the I family. As of 2126 I Ilseop is the Duke of Gwanak.
+The First Branch Workshop joined the Standards League in 2102. Thereafter the I family of Cheonan-Asan managed the First Branch Workshop under the Standards League. The family looked after the rail yard at the southern end of Line 1 and four workshops. I Ilseop was heir of the I family. As of 2126 I Ilseop is the Duke of Gwanak.
 
 <a id="2104년"></a>
 
@@ -1201,7 +1199,7 @@ In October 2104 the Yeouido Investors' Association opened the Yeongjong Branch a
 
 ##### Reissue of a Damaged Register
 
-In November 2104 a return register that had come from the north to the Imjin Embankment Temporary Quarantine Station was soaked by rain and damaged. The reissue of the damaged lines fell to the Scribal Archive that had copied the register. The Government's Gwanghwamun watch verified the authenticity of the kinship certificates submitted. The Achasan Gate Command's Guui gate watch divided the seal keys for safekeeping. Sinnae Transport moved the transfer cars for the family queue. Sungha Group provided a separate car for escorting medicine.
+In November 2104 a return register that had come from the north to the Imjin Embankment Temporary Quarantine Station was soaked by rain and damaged. The reissue of the damaged lines fell to the Anguk Station copyists. The Government's Gwanghwamun watch verified the authenticity of the kinship certificates submitted. The Achasan Gate Command's Guui gate watch divided the seal keys for safekeeping. Sinnae Transport moved the transfer cars for the family queue. Sungha Group provided a separate car for escorting medicine.
 
 <a id="2106년"></a>
 
@@ -1211,7 +1209,7 @@ In November 2104 a return register that had come from the north to the Imjin Emb
 
 #### A. Gyeonggi Province
 
-In January 2106 the Government began calling its administrative stronghold in Goyang Gyeonggi Province. Gyeonggi Province sent its military service register and stamp duty to Gwanghwamun. In the first year some 2,300 people were entered in the military service register. Because the Government recognized as citizens only those written in its ledgers, this register was also the citizen register.
+In January 2106 the Government began calling its administrative stronghold in Goyang Gyeonggi Province. Gyeonggi Province sent its military service register and stamp duty to Gwanghwamun. In the first year some 2,300 people were entered in the military service register.
 
 <a id="ch29-i5"></a>
 
@@ -1315,9 +1313,9 @@ In October 2112 Jeong Seoon's name was entered in the revised Jeong genealogy wi
 
 <a id="ch32-i1"></a>
 
-##### A. Petition for Certification
+##### A. Petition for Confirmation
 
-In February 2114 Taeuk Group petitioned the Scribal Archive to confirm Jeong Seoon's succession as Chairman as inheritance by a legitimate heir. Attached to the petition was a notation that Jeong Ilhwan's marriage had been registered in 2089 in the same Archive's marriage ledger. The Archive accepted the petition but gave no answer.
+In February 2114 Taeuk Group filed a petition asking that Jeong Seoon's succession as Chairman be confirmed as inheritance by a legitimate heir. Attached to the petition was a note that Jeong Ilhwan's marriage had been registered in the ledger in 2089. The petition was accepted but received no answer.
 
 <a id="ch32-i2"></a>
 
@@ -1462,13 +1460,13 @@ In the same year Han Jaemok installed I Seodam as chief of the Yangcheon distric
 
 <a id="2119년-Arc"></a>
 
-#### City Hall Station Workers' Assembly
+#### City Hall Station Workers
 
 <a id="ch37-i1"></a>
 
 ##### A. Im Hajun
 
-In 2119 the leader of the City Hall Station Workers' Assembly died. Oh Gyeongjae, eldest son of the Oh family, was still a minor. The members held a confirmation vote and entrusted the assembly's affairs to Im Hajun.
+In 2119 the leader of the City Hall Station workers died. Oh Gyeongjae, eldest son of the Oh family, was still a minor. The members held a confirmation vote and entrusted that role to Im Hajun.
 
 <a id="2119년-신종목"></a>
 
@@ -1519,7 +1517,7 @@ In the winter of 2120 the Eastern Command demanded, in exchange for supplying pu
 
 ##### A. Chair Choe Jiu
 
-In 2120 the investor families of the Yeouido Investors' Association elected Choe Jiu as chair of their council. The post belonged to the association alone and was not the leadership of the Free City as a whole.
+In 2120 the investor families of the Yeouido Investors' Association elected Choe Jiu as chair of their council.
 
 <a id="2120년-신종목"></a>
 
@@ -1535,7 +1533,7 @@ From 2120 Sin Jong-mok broadcast the Special Recovery Unit's call sign on a repa
 
 ##### B. Gangnam District Office
 
-In April 2120 Sin Jong-mok left the Special Recovery Unit. He moved with his child, Sin Jun, to the Gangnam District Office living area and took on escort and survey contracts.
+In April 2120 Sin Jong-mok left the Special Recovery Unit. He moved with the child Sin Jun to the Gangnam District Office living area and took on escort and survey contracts.
 
 <a id="2120년-수서-차량기지"></a>
 
@@ -1565,13 +1563,13 @@ In the same year Ji Yeon-hui registered as an independent courier at a transfer 
 
 <a id="2120년-Arc"></a>
 
-#### City Hall Station Workers' Assembly
+#### City Hall Station Workers
 
 <a id="ch47-i1"></a>
 
 ##### A. Jeong Yura
 
-In 2120 the City Hall Station Workers' Assembly held an election in which every member voted directly, and Jeong Yura was chosen to run the assembly's affairs.
+In 2120 the City Hall Station workers held an election in which every member voted directly, and Jeong Yura was elected chair.
 
 <a id="2121년"></a>
 
@@ -1595,7 +1593,7 @@ On March 2, 2121, some 400 Eastern Command troops halted before the Achasan gate
 
 ##### A. President Yun Seorin
 
-In 2121 the Senators chose Yun Seorin from among their own number as President. The presidency was held for life. On the day she took office, Yun Seorin read the original emergency decree kept in the Records Office vault at the Government Complex Seoul.
+In 2121 Yun Seorin became President. On the day she took office, Yun Seorin read the original emergency decree kept in the Records Office vault at the Government Complex Seoul.
 
 <a id="ch38-i4"></a>
 
@@ -1623,7 +1621,9 @@ In February 2121 Jo Jaepyo came into Seoul from northern Gyeonggi. In the same y
 
 <a id="2122년"></a>
 
-### 2122 · The Founding of Onminui
+### 2122 · Arc and Onminui
+
+Around 2122 the Gangnam shelters were joined together under the name Arc.
 
 <a id="2122년-중앙정보부"></a>
 
@@ -1637,13 +1637,13 @@ In 2122 six technicians who had passed the examination were appointed clerks of 
 
 <a id="2122년-안국총림"></a>
 
-#### Anguk Station Scribal Archive
+#### Anguk Station
 
 <a id="ch36-i4"></a>
 
-##### A. Baek On Takes Over the Archive
+##### A. Baek On
 
-In 2122 the people of the Anguk Station Scribal Archive entrusted its ledgers and copying work to Baek On. In 2123 a column of refugees from the direction of Bogukmun on Bukhansan came down to Anguk, and the archive copied the names of the column into its ledgers.
+In 2122 the Anguk Station copyists made Baek On their head. In 2123 a column of refugees from the direction of Bogukmun on Bukhansan came down to Anguk.
 
 <a id="2122년-환적국"></a>
 
@@ -1669,7 +1669,7 @@ In May 2122 nineteen young record officers from the Government's duty families m
 
 ##### B. The Declaration
 
-In June 2122 Onminui posted a document titled "Seoul United and a Whole Republic of Korea" on the government complex bulletin board. The document stated that the three factions of Seoul, along with the telegraph offices and vassal families remaining within them and the 13 strongholds, must be bound together again under the Government's emergency decree. Its nineteen signatories included Gim Yeongyu.
+In June 2122 Onminui posted a document titled "Seoul United and a Whole Republic of Korea" on the government complex bulletin board. The document stated that the various powers of Seoul, along with the telegraph offices and vassal families remaining within them and the 13 strongholds, must be bound together again under the Government's emergency decree. Its nineteen signatories included Gim Yeongyu.
 
 <a id="ch41-i3"></a>
 
@@ -1775,13 +1775,13 @@ In May 2123 I Yeon joined Jo Jaepyo's party as an attendant courier. I Yeon sign
 
 <a id="2123년-Arc"></a>
 
-#### Arc
+#### City Hall Station Workers
 
 <a id="ch47-i2"></a>
 
 ##### A. Three Contracts
 
-In 2123 the Water Gate Bureau, the Standards League, and the Transshipment Bureau sent separate contracts for water supply, parts, and passage to the pharmacies in the same week. Jeong Yura copied only the termination clauses of the three contracts into a single document. The document she compiled became the founding document of the pharmacy council.
+In 2123 the Water Gate Bureau, the Standards League, and the Transshipment Bureau sent separate contracts for water supply, parts, and passage to the pharmacies in the same week. Jeong Yura copied only the termination clauses of the three contracts into a single document. The document she compiled became the basic document of the pharmacy council.
 
 <a id="2124년"></a>
 
@@ -1825,7 +1825,7 @@ In 2124 crates of counterfeit medicine came up for sale at the Seoul Station auc
 
 ##### A. Checking the Gyeonggi Rolls
 
-In March 2124 Gim Yeongyu proposed checking the old military service rolls of Gyeonggi Province (Goyang) against the rolls of the Records Office at the Government Complex. The Government recognized as citizens only those recorded in its ledgers, so the comparison amounted to deciding who was a citizen. Of the roughly 2,900 people on the rolls, about 1,100 names matched the Government Complex rolls.
+In March 2124 Gim Yeongyu proposed checking the old military service rolls of Gyeonggi Province (Goyang) against the rolls of the Records Office at the Government Complex. Of the roughly 2,900 people on the rolls, about 1,100 names matched the Government Complex rolls.
 
 <a id="2124년-제1분공방"></a>
 
@@ -1855,20 +1855,20 @@ In 2124 the Return Network linked twelve communities, from the Gangnam-gu Office
 
 <a id="2124년-Arc"></a>
 
-#### Arc
+#### City Hall Station Workers
 
 <a id="ch47-i3"></a>
 
 ##### A. New Members
 
-In 2124 workers from the Seongnam Works of Taeuk Heavy Industries and from the Standards League's Second Branch Workshop joined the Arc.
+In 2124 workers from the Seongnam Works of Taeuk Heavy Industries and from the Standards League's Second Branch Workshop joined the City Hall Station workers.
 
 <a id="peninsula-2124-dokdo-report"></a>
 <a id="event-peninsula-2124-dokdo-report"></a>
 
 #### Seoul · News from the Island
 
-In 2124 a sailor who had crossed over from the east coast reported that a guard post on Dokdo was still manned, and that sailors who had not returned to their former shipowners were helping with the work there. The Seoul merchants and liaison duty officers who heard this did not immediately make the group's location and identities public, and waited instead for word from other returnees. The route to the east coast lay outside Seoul, where winter and old war machines stopped travelers, and news from there had to wait until the next liaison duty in Seoul could confirm it.
+In 2124 a sailor who had crossed over from the east coast reported that a guard post on Dokdo was still manned, and that sailors who had not returned to their former shipowners were helping with the work there. The Seoul merchants and liaison duty officers who heard this did not immediately make the group's location and identities public, and waited instead for word from other returnees.
 
 <a id="2125년"></a>
 
@@ -1882,7 +1882,7 @@ In 2124 a sailor who had crossed over from the east coast reported that a guard 
 
 ##### A. The First Dissent
 
-In September 2125 the council of the Scribal Archive recorded, for the first time, a dissent concerning the conservators' inspection of the manuscript copies. The dissent stated that the English commands in fourteen volumes of the copies had changed after the inspection.
+In September 2125 the Anguk Station copyists recorded, for the first time, a dissent concerning the conservators' inspection of the manuscript copies. The dissent stated that the English commands in fourteen volumes of the copies had changed after the inspection.
 
 <a id="2125년-수문국"></a>
 
@@ -1896,13 +1896,13 @@ In the autumn of 2125 turbidity in the western pipeline exceeded the standard. W
 
 <a id="2125년-Arc"></a>
 
-#### Arc
+#### City Hall Station Workers
 
 <a id="ch37-i2"></a>
 
 ##### A. Disappearance
 
-In the winter of 2125 Im Hajun disappeared. On the night before he vanished, Im Hajun sealed the box holding the copies of the pump cleaning procedure. The key to the sealed box was lodged with the archive together with the three pages of Im Hajun's will. Bak Nuri took over interim management of the Ttukseom Heat Source family.
+In the winter of 2125 Im Hajun disappeared. On the night before he vanished, Im Hajun sealed the box holding the copies of the pump cleaning procedure. The key to the sealed box was lodged together with the three pages of Im Hajun's will. Bak Nuri took over interim management of the Ttukseom Heat Source family.
 
 <a id="ch37-i3"></a>
 
@@ -1958,13 +1958,13 @@ In the winter of 2125 three organizations asked Jo Jaepyo's party at the same ti
 
 <a id="2125년-Arc"></a>
 
-#### Arc
+#### City Hall Station Workers
 
 <a id="ch47-i4"></a>
 
 ##### A. Reelection and Strike
 
-In the spring vote of 2125 Jeong Yura was reelected. The votes of the Seongnam Works workers made up a majority. That autumn the Seongnam Works and the Second Branch Workshop stopped work for ten days. Jeong Seoon visited the Seongnam Works on the ninth day of the strike.
+In the spring 2125 direct vote for chair, Jeong Yura was reelected. The votes of the Seongnam Works workers made up a majority. That autumn the Seongnam Works and the Second Branch Workshop stopped work for ten days. Jeong Seoon visited the Seongnam Works on the ninth day of the strike.
 
 <a id="ch47-i5"></a>
 
@@ -1984,7 +1984,7 @@ In December 2125 the Water Gate Bureau, the Standards League, the Transshipment 
 
 ##### Follow-up to the Gyeonggi Roll Check
 
-In December 2125 the Government's Gwanghwamun duty office moved the names of the roughly 1,800 people on the Gyeonggi military service rolls who had not matched the Government Complex rolls into a separate comparison box. Those left off the ledgers were not recognized as citizens. The Scribal Archive found names in that box that overlapped with applications to reissue the Imjin levee return rolls. Sinnae Transport recorded the transfer order of applicants awaiting confirmation. The Achasan Gate Command confirmed the seals on the gate handover records. Sungha Group kept its medical supply escort cars running.
+In December 2125 the Government's Gwanghwamun duty office moved the names of the roughly 1,800 people on the Gyeonggi military service rolls who had not matched the Government Complex rolls into a separate comparison box. The Anguk Station copyists found names in that box that overlapped with applications to reissue the Imjin levee return rolls. Sinnae Transport recorded the transfer order of applicants awaiting confirmation. The Achasan Gate Command confirmed the seals on the gate handover records. Sungha Group kept its medical supply escort cars running.
 
 <a id="peninsula-2125-dokdo-confirmation"></a>
 <a id="event-peninsula-2125-dokdo-confirmation"></a>
@@ -1995,10 +1995,12 @@ In 2125 people who had returned by different routes pointed to the items they ha
 
 <a id="2126년"></a>
 
-### 2126 · The Ratification of Oh Gyeongjae
+### 2126 · The Present
 
 <a id="ch37-i5"></a>
 
 #### A. The Ratification of Oh Gyeongjae
 
 In 2126 Oh Gyeongjae was ratified and took over Im Hajun's work. Oh Gyeongjae made the three-page will public in the council chamber and did not ratify Han Jaemok's plan to expand westward. Instead, he agreed to seal the box of originals of the pump maintenance procedure jointly with the Water Gate Bureau.
+
+The present is the winter of 2126, before the third water-supply contract. Reports reached Suseo that over two months seven baptized converts had gone missing from the Cheongdam and Samseong strongholds. The Suseo radio room picked up the call sign Baekya on an old military frequency moving between Seonjeongneung and Suseo.
