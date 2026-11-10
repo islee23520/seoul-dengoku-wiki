@@ -1,3 +1,5 @@
+> **RETIRED 2026-11-10:** the WSL serving stack and `.woodpecker/deploy.yaml` were retired when the site moved to GitHub Pages (`docs/GITHUB-PAGES-MIGRATION.md`). This document is kept as history; do not follow it to deploy.
+
 # Wiki deployment caller
 
 > **전환 예고 (2026-11-07):** 즉시 owner NDJSON 배포 계약은 `docs/repo-pg-orm.md`의

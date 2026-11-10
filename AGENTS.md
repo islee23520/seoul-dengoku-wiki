@@ -128,11 +128,11 @@ node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또�
 |`docs/repo-pg-orm.md`|repo↔PG 계약: 범위 표 데이터 migration, 공개 렌더 투영, 계보·신선도 게이트(소유자 G1/G2 승인 2026-11-07)|
 |`artifact-allowlist.json`|dist/ 산출물·라우트 허용 목록(루트에 위치)|
 |`vite.config.ts`, `tsconfig.json`|빌드·타입 설정(vitest 설정은 #625에서 삭제)|
-|`.woodpecker/deploy.yaml`|유일한 CI 파이프라인 — LFS 검사 → owner 호출 → live contract(`ci.yaml`·GitHub workflows는 #625 삭제)|
+|`.github/workflows/pages.yml`|GitHub Pages 배포(2026-11-10 WSL 호스팅 대체). `.woodpecker/deploy.yaml`(WSL deploy-request 레인)은 은퇴·삭제됨. `.woodpecker/ci.yaml`은 별개로 남아 있음|
 
 ## Runtime/Tooling Preferences
 
-- **Node:** 배포 파이프라인(`.woodpecker/deploy.yaml`)은 Node 26 이미지다. 잔존 SQLite 이관 도구(`node:sqlite` `DatabaseSync`)는 `>=24.15.0`, 격리 InkOS 포크 도구는 `>=22.16.0`을 요구한다. `package.json`에는 `engines`/`packageManager` 필드가 없다.
+- **Node:** (은퇴한 `.woodpecker/deploy.yaml`은 Node 26 이미지였다. 현재 Pages 빌드는 `.github/workflows/pages.yml`의 Node 24.) 잔존 SQLite 이관 도구(`node:sqlite` `DatabaseSync`)는 `>=24.15.0`, 격리 InkOS 포크 도구는 `>=22.16.0`을 요구한다. `package.json`에는 `engines`/`packageManager` 필드가 없다.
 - **패키지 매니저:** npm(package-lock). `npm ci --ignore-scripts`가 표준. pnpm은 InkOS 포크 전용 — `npm run inkos:install`이 `npm exec --package=pnpm@10`으로 격리 설치·빌드한다.
 - **InkOS 포크**(`vendor/seoul-dengoku-inkos` 서브모듈)는 별도 작업 디렉터리·별도 프로세스에서만. 공개 정본·비공개 DB를 읽거나 쓰도록 연결하지 않고, 위키 검사·생성·배포 입력에 포함하지 않는다.
 - 로어 schema 검사는 Python `jsonschema` 필요. release lock은 Python `fcntl.flock`(Windows 즉시 실행 단정 금지, exit 73 = `E_RELEASE_LOCKED`). lock은 협조하는 generate/build만 보호하므로 생성 중 dev·직접 tsc/vite reader는 중지한다.
@@ -143,5 +143,5 @@ node server/wiki-document-api.mjs                        # WIKI_DOCUMENT_PG 또�
 - **테스트 인프라 제거(#625):** vitest·jsdom, npm 테스트 스크립트 전부, `.woodpecker/ci.yaml`, GitHub Actions 2종, `deploy/test-*.mjs`가 삭제됐다. 테스트 npm 스크립트·vitest 의존 재추가 금지(postgres 이관 Wave 0 계약).
 - **잔존 회귀와 실행 한계:** 승인 경계 어댑터 7파일은 남아 있지만 fixture가 `authoring-schema-documents.mjs`에서 제거된 `data/canonical/wiki-cast.sqlite`를 고정경로로 연다. `WIKI_DOCUMENT_DB`만 지정해도 이 의존성은 바뀌지 않는다. 2026-10-31 `node --test --test-concurrency=1 scripts/cast-sqlite/test-inkos-adapter-*.mjs scripts/test-inkos.mjs` 실행은 110개 중 11개 성공·99개 실패했으며 어댑터 fixture에서 `E_DB_OPEN`이 관측됐다. 테스트를 통과시키려고 삭제 DB를 복원하지 않는다. 별도 코드 이관 전에는 checkout 단독 실행 가능한 회귀로 안내하지 않는다. 같은 실행에서 격리 InkOS pin·owner remote·master 설정 검사와 CLI 전달·한국어 프로젝트 초기화 스모크 두 개는 통과했다. 어댑터를 다시 이관·검증할 때는 `io.mjs` 조상 ctime 검사의 병렬 오탐을 피하도록 직렬 실행한다.
 - **품질 장치:** lint·포맷터 없음 — tsc strict + 검사 스크립트(`check-contract.mjs`, `check-links.mjs`, `check-artifact-allowlist.mjs`, `lore-json-validate.mjs`, `cast:verify` 등). 커버리지 설정 없음.
-- **CI:** `.woodpecker/deploy.yaml`만 존재 — `deploy/check-lfs-inputs.mjs` → `npm ci --ignore-scripts` → `deploy/call-owner.mjs`(외부 owner) → `deploy/check-live-contract.mjs --public-edge`.
+- **CI(은퇴·삭제됨, 2026-11-10):** 이전 `.woodpecker/deploy.yaml` 흐름 — `deploy/check-lfs-inputs.mjs` → `npm ci --ignore-scripts` → `deploy/call-owner.mjs`(외부 owner) → `deploy/check-live-contract.mjs --public-edge`.
 - **사전 조건:** generated catalog가 필요한 작업은 생성 입력과 전환 게이트를 확인한다. `check-links.mjs`는 일반 Markdown 링크 검사기가 아니라 생성 카탈로그·world·dist와 SQLite 이관 문서 링크를 검사하므로, 필요한 생성물과 외부 `WIKI_DOCUMENT_DB` 없이 PG 정본 검사로 실행하지 않는다. `lore-json-validate`·`cast:verify` 역시 외부 SQLite 이관 진단이며 PG 정본 검증을 대신하지 않는다. 이관 대사에는 정확한 SQLite 실체와 PG 연결이 필요하다. Git LFS 입력은 실제 필요한 작업의 계약을 확인한다.

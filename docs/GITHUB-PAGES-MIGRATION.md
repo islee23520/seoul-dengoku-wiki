@@ -44,7 +44,7 @@ Order matters; one tunnel connector and one DB writer at a time.
 3. Take a final backup before touching the stack: `pg_dump -Fc` of the Seoul DB (`:15433`) to the owner backup location, plus a copy of `/etc/linalab/secrets/seoul-wiki*` (kept outside the repo).
 4. Switch public traffic: point DNS for the public name at GitHub Pages (or retire the `sss` hostname in Cloudflare). Only then stop `cloudflared-seoul` (tunnel `5d1727c8`).
 5. Stop, do not delete, in this order: `seoul-wiki-migrate.timer`, `seoul-wiki-documents`, `seoul-wiki-api`, nginx Seoul vhost (:18090). Keep `linalab-seoul-postgres` running (it remains the private authoring DB) unless the owner retires authoring too.
-6. Remove the dead Docker deploy call from `.woodpecker/deploy.yaml` (`172.28.0.4`); Pages deploys come from GitHub Actions only.
+6. `.woodpecker/deploy.yaml` (the deploy-request lane to the retired WSL controller, target `seoul-wiki`) is removed; Pages deploys come from GitHub Actions only. `.woodpecker/ci.yaml` is unrelated to Pages and stays.
 7. Update `E:\git\AGENTS.md` registry and `infra/services/linalab.json` in the same change that stops the units.
 
 ## 5. Ownership
