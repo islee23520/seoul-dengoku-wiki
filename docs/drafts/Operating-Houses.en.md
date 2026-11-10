@@ -1,5 +1,6 @@
 ---
-model: gemini-4-argon-high
+model: session model gemini-4-argon-high (PI_MODEL, provider cpa) via completion tier default, not gemini-3-pro; 2026-11-10 fixes hand-edited by the same session
+section_checkpoint: complete
 ---
 <a id="Operating-Houses-heading-0001"></a>
 
@@ -13,11 +14,11 @@ Corporate successor organizations and civic and trade organizations ran a range 
 - Status: ACTIVE
 - Linked Factions and Districts: Free City (Yeongdeungpo-gu), Government (Mapo-gu)
 - Exclusive Faction: None
-- Administrator: Heo Eun-chan
+- Administrator: Heo Eunchan
 
 In the sealed computing building beside Yeouido No. 2 Water Purification Plant, the Yeouido Computing House guards the nighttime cooling allocation.
 
-Heo Eun-chan runs the cooling tower clock in step with the water-supply duty roster. Faced with Sangam's demand to share the transmitter key, he opens only a joint inspection and does not hand over the key.
+Heo Eunchan runs the cooling tower clock in step with the water-supply duty roster. Faced with Sangam's demand to share the transmitter key, he opens only a joint inspection and does not hand over the key.
 
 Even if the screens go dark, the water-supply ledger is kept.
 
@@ -26,7 +27,7 @@ Even if the screens go dark, the water-supply ledger is kept.
 ### Three Acts
 
 - Act 1, Rupture: In the sealed computing building beside Yeouido No. 2 Water Purification Plant, the nighttime cooling allocation runs short
-- Act 2, Negotiation: Heo Eun-chan answers Sangam's demand to share the transmitter key by opening a joint inspection
+- Act 2, Negotiation: Heo Eunchan answers Sangam's demand to share the transmitter key by opening a joint inspection
 - Act 3, Price: Even if the screens go dark, the water-supply ledger is kept
 
 <a id="Operating-Houses-heading-0010"></a>
@@ -37,11 +38,11 @@ Even if the screens go dark, the water-supply ledger is kept.
 - Status: ACTIVE
 - Linked Factions and Districts: Free City (Yangcheon-gu), Arc (Gangnam-gu), Government (Yongsan-gu)
 - Exclusive Faction: None
-- Administrator: Yu Se-jin
+- Administrator: Yu Sejin
 
 On the Sinjeong Depot storage tracks and the Suseo turnback line, the Sinjeong Wheel House guards the battery cell rotation.
 
-Yu Se-jin opens turnback slots to ambulances before freight.
+Yu Sejin opens turnback slots to ambulances before freight.
 
 Faced with Yongsan's attempt to monopolize the transshipment window, she opens only a joint inspection and does not hand over the key.
 
@@ -52,7 +53,7 @@ Even if the tracks are locked, people under escort are let through on foot.
 ### Three Acts
 
 - Act 1, Rupture: On the Sinjeong Depot storage tracks and the Suseo turnback line, the battery cell rotation runs short
-- Act 2, Negotiation: Yu Se-jin answers Yongsan's attempt to monopolize the transshipment window by opening a joint inspection
+- Act 2, Negotiation: Yu Sejin answers Yongsan's attempt to monopolize the transshipment window by opening a joint inspection
 - Act 3, Price: Even if the tracks are locked, people under escort are let through on foot
 
 <a id="Operating-Houses-heading-0018"></a>
@@ -63,11 +64,11 @@ Even if the tracks are locked, people under escort are let through on foot.
 - Status: ACTIVE
 - Linked Factions and Districts: Free City (Gangseo-gu), Government (Dongdaemun-gu)
 - Exclusive Faction: None
-- Administrator: Jeong Ho-jun
+- Administrator: Jeong Hojun
 
 In the airlock of the Magok sealed laboratory building, the Magok Life House guards the isolation key for the biometric dataset.
 
-Jeong Ho-jun keeps the lab journals stored separately from patients' names.
+Jeong Hojun keeps the lab journals stored separately from patients' names.
 
 Faced with Jegi-dong's move to corner the raw materials, he opens only a joint inspection and does not hand over the key.
 
@@ -78,7 +79,7 @@ Even if the samples disappear, the consent records are never burned.
 ### Three Acts
 
 - Act 1, Rupture: In the airlock of the Magok sealed laboratory building, the isolation key for the biometric dataset runs short
-- Act 2, Negotiation: Jeong Ho-jun answers Jegi-dong's move to corner the raw materials by opening a joint inspection
+- Act 2, Negotiation: Jeong Hojun answers Jegi-dong's move to corner the raw materials by opening a joint inspection
 - Act 3, Price: Even if the samples disappear, the consent records are never burned
 
 <a id="Operating-Houses-heading-0026"></a>
@@ -89,11 +90,11 @@ Even if the samples disappear, the consent records are never burned.
 - Status: ACTIVE
 - Linked Factions and Districts: Government (Seongdong-gu), Arc (Gangdong-gu), Free City (Yeongdeungpo-gu)
 - Exclusive Faction: None
-- Administrator: Park Nuri
+- Administrator: Bak Nu-ri
 
 At the Ttukseom pumps and the Amsa waste-heat pipes, the Ttukseom Heat Source House guards access rights to the underground heat source.
 
-Park Nuri tops up the pumps' reserve power before selling any waste heat.
+Bak Nu-ri tops up the pumps' reserve power before selling any waste heat.
 
 Faced with Yeouido's claim to nighttime priority for water supply, she opens only a joint inspection and does not hand over the key.
 
@@ -104,7 +105,7 @@ The blackout schedule is never hidden; it is posted on the notice board.
 ### Three Acts
 
 - Act 1, Rupture: At the Ttukseom pumps and the Amsa waste-heat pipes, access rights to the underground heat source run short
-- Act 2, Negotiation: Park Nuri answers Yeouido's claim to nighttime priority for water supply by opening a joint inspection
+- Act 2, Negotiation: Bak Nu-ri answers Yeouido's claim to nighttime priority for water supply by opening a joint inspection
 - Act 3, Price: The blackout schedule is never hidden; it is posted on the notice board
 
 <a id="Operating-Houses-heading-0034"></a>
@@ -113,7 +114,7 @@ The blackout schedule is never hidden; it is posted on the notice board.
 
 - Classification: CORPORATION
 - Status: ACTIVE
-- Linked Factions and Districts: Government (Eunpyeong-gu and Gangbuk-gu area)
+- Linked Factions and Districts: Government (Seongbuk-gu)
 - Exclusive Faction: None
 - Administrator: Yun Seo-rin
 
@@ -141,11 +142,11 @@ Even if access is narrowed, the catalog itself is kept.
 - Status: ACTIVE
 - Linked factions and districts: Free City (Dongjak-gu), Arc (Songpa-gu)
 - Exclusive faction: None
-- Manager: O Hae-rin
+- Manager: Oh Hae-rin
 
 In the lower alleys of Noryangjin and at the Garak back gate, the Noryangjin Delivery House guards the short-haul cart dispatch rights.
 
-O Hae-rin never trades alley turn order for auction bids.
+Oh Hae-rin never trades alley turn order for auction bids.
 
 When the long-haul delivery crews push to enter, the House opens only a joint inspection and does not hand over the keys.
 
@@ -156,7 +157,7 @@ Even when the shops stand empty, the order ledgers are never mixed.
 ### Three Acts
 
 - Act 1, Rupture: The short-haul cart dispatch rights run short in the lower alleys of Noryangjin and at the Garak back gate
-- Act 2, Negotiation: O Hae-rin opens a joint inspection with the long-haul delivery crews over their entry
+- Act 2, Negotiation: Oh Hae-rin opens a joint inspection with the long-haul delivery crews over their entry
 - Act 3, Price: Even when the shops stand empty, the order ledgers are never mixed
 
 <a id="Operating-Houses-heading-0050"></a>
@@ -167,11 +168,11 @@ Even when the shops stand empty, the order ledgers are never mixed.
 - Status: ACTIVE
 - Linked factions and districts: Free City (Guro-gu), Government (Seongdong-gu)
 - Exclusive faction: None
-- Manager: Gang Min-seo
+- Manager: Gang Minseo
 
 At the Guro high-temperature furnaces and the Seongsu alloy works, the Guro Alloy House guards the heat-resistant alloy recipes.
 
-If the furnace temperature wavers, Gang Min-seo puts out the fire even with orders already taken.
+If the furnace temperature wavers, Gang Minseo puts out the fire even with orders already taken.
 
 When the Track Defense Gate demands exclusive military use, the House opens only a joint inspection and does not hand over the keys.
 
@@ -182,7 +183,7 @@ Even when defects turn up, the standards stamp is never forged.
 ### Three Acts
 
 - Act 1, Rupture: The heat-resistant alloy recipes run short at the Guro high-temperature furnaces and the Seongsu alloy works
-- Act 2, Negotiation: Gang Min-seo opens a joint inspection with the Track Defense Gate over its demand for exclusive military use
+- Act 2, Negotiation: Gang Minseo opens a joint inspection with the Track Defense Gate over its demand for exclusive military use
 - Act 3, Price: Even when defects turn up, the standards stamp is never forged
 
 <a id="Operating-Houses-heading-0058"></a>
@@ -193,11 +194,11 @@ Even when defects turn up, the standards stamp is never forged.
 - Status: ACTIVE
 - Linked factions and districts: Government (Dobong-gu), Government (Jungnang-gu)
 - Exclusive faction: None
-- Manager: I Hong-won
+- Manager: Yi Hong-won
 
 At the Changdong north gate and the Sinnae transfer barrier gate, the Changdong Protection House guards the unified protection key.
 
-I Hong-won never hands the barrier gate remote keys over to the escort corps.
+Yi Hong-won never hands the barrier gate remote keys over to the escort corps.
 
 When the Amsa Escort Corps seeks remote lockdown, the House opens only a joint inspection and does not hand over the keys.
 
@@ -208,7 +209,7 @@ Before closing passage to citizens, it opens the evacuation broadcast first.
 ### Three Acts
 
 - Act 1, Rupture: The unified protection key runs short at the Changdong north gate and the Sinnae transfer barrier gate
-- Act 2, Negotiation: I Hong-won opens a joint inspection with the Amsa Escort Corps over remote lockdown
+- Act 2, Negotiation: Yi Hong-won opens a joint inspection with the Amsa Escort Corps over remote lockdown
 - Act 3, Price: Before closing passage to citizens, the evacuation broadcast is opened first
 
 <a id="Operating-Houses-heading-0066"></a>
@@ -297,11 +298,11 @@ It never pads empty crates to fake their weight.
 - Status: ACTIVE
 - Linked factions and districts: Free City (Geumcheon-gu), Government (Gwangjin-gu, Seongdong-gu)
 - Exclusive faction: None
-- Steward: Jeong Si-u
+- Steward: Jeong Siu
 
 At the Geumcheon cranes and beneath the Achasan bridge piers, the Geumcheon Gucheong Heavy Equipment House guards its heavy rigging certifications.
 
-Jeong Si-u records the wind speed before raising a crane beneath the piers.
+Jeong Siu records the wind speed before raising a crane beneath the piers.
 
 In the scramble for the Ttukseom pump housing, the House opens only joint inspections and never hands over the keys.
 
@@ -312,7 +313,7 @@ Any job that exceeds the load limit is halted before it is even logged.
 ### Three Acts
 
 - Act 1, Fracture: Heavy rigging certifications run short at the Geumcheon cranes and beneath the Achasan bridge piers
-- Act 2, Negotiation: Jeong Si-u opens a joint inspection over the scramble for the Ttukseom pump housing
+- Act 2, Negotiation: Jeong Siu opens a joint inspection over the scramble for the Ttukseom pump housing
 - Act 3, Price: Any job that exceeds the load limit is halted before it is even logged
 
 <a id="Operating-Houses-heading-0098"></a>
@@ -323,11 +324,11 @@ Any job that exceeds the load limit is halted before it is even logged.
 - Status: ACTIVE
 - Linked factions and districts: Government (Jung-gu, Gwangjin-gu), Arc (Gangnam-gu)
 - Exclusive faction: None
-- Steward: Jeong Yu-ra
+- Steward: Jeong Yura
 
 Among the remnant walls of Seoul Station and in the Suseo underground utility tunnel, the Suseo Construction House guards its seismic joint drawings.
 
-Jeong Yu-ra will not trade the utility tunnel drawings for a watchtower expansion.
+Jeong Yura will not trade the utility tunnel drawings for a watchtower expansion.
 
 Faced with the expansion of the Achasan highland watchtower, the House opens only joint inspections and never hands over the keys.
 
@@ -338,7 +339,7 @@ Even when the drawings are wrong, the site is squared up by the numbers.
 ### Three Acts
 
 - Act 1, Fracture: Seismic joint drawings run short among the remnant walls of Seoul Station and in the Suseo underground utility tunnel
-- Act 2, Negotiation: Jeong Yu-ra opens a joint inspection over the expansion of the Achasan highland watchtower
+- Act 2, Negotiation: Jeong Yura opens a joint inspection over the expansion of the Achasan highland watchtower
 - Act 3, Price: Even when the drawings are wrong, the site is squared up by the numbers
 
 <a id="Operating-Houses-heading-0106"></a>
@@ -401,11 +402,11 @@ It refuses any order to use water as a weapon.
 - Status: ACTIVE
 - Linked factions and districts: Government (Yongsan-gu, Jungnang-gu, Dobong-gu)
 - Exclusive faction: None
-- Steward: Jang Se-hwa
+- Steward: Jang Sehwa
 
 In the dispatch meeting rooms of Yongsan, Sinnae, and Changdong, the Yongsan Line Gate guards the neutral dispatch schedule.
 
-Jang Se-hwa never strikes the emergency car from the schedule, even when a chartered train arrives.
+Jang Sehwa never strikes the emergency car from the schedule, even when a chartered train arrives.
 
 Faced with the chartered trains of the great factions, the House opens only joint inspections and never hands over the keys.
 
@@ -416,7 +417,7 @@ Emergency transfers are never ranked behind cargo.
 ### Three Acts
 
 - Act 1, Fracture: The neutral dispatch schedule runs thin in the dispatch meeting rooms of Yongsan, Sinnae, and Changdong
-- Act 2, Negotiation: Jang Se-hwa opens a joint inspection over the chartered trains of the great factions
+- Act 2, Negotiation: Jang Sehwa opens a joint inspection over the chartered trains of the great factions
 - Act 3, Price: Emergency transfers are never ranked behind cargo
 
 <a id="Operating-Houses-heading-0130"></a>
@@ -427,11 +428,11 @@ Emergency transfers are never ranked behind cargo.
 - Status: ACTIVE
 - Linked factions and districts: Government (Dongdaemun-gu, Jung-gu)
 - Exclusive faction: None
-- Steward: Ryu Eun-bi
+- Steward: Ryu Eunbi
 
 Along the Cheongnyangni transfer route and at the Seoul Station disaster medical desk, the Cheongnyangni Medical Center House guards the licensed duty roster.
 
-Ryu Eun-bi will not sell emergency priority, even when demands for experimental beds come in.
+Ryu Eunbi will not sell emergency priority, even when demands for experimental beds come in.
 
 Faced with Magok's attempt to claim beds exclusively for experiments, the House opens only joint inspections and never hands over the keys.
 
@@ -442,7 +443,7 @@ Beds are never divided by side.
 ### Three Acts
 
 - Act 1, Fracture: The licensed duty roster runs short along the Cheongnyangni transfer route and at the Seoul Station disaster medical desk
-- Act 2, Negotiation: Ryu Eun-bi opens a joint inspection over Magok's claim on beds for experiments
+- Act 2, Negotiation: Ryu Eunbi opens a joint inspection over Magok's claim on beds for experiments
 - Act 3, Price: Beds are never divided by side
 
 <a id="Operating-Houses-heading-0138"></a>
@@ -453,11 +454,11 @@ Beds are never divided by side.
 - Status: ACTIVE
 - Linked factions and districts: Government (Jung-gu)
 - Exclusive faction: None
-- Steward: Yeo Ri-an
+- Steward: Yeo Rian
 
 At the archive reading room and the transmission cross-verification desk, the Seoulyeok Girokbeopga guards the source hash seal.
 
-Yeo Ri-an never puts a document with a mismatched hash on the air first.
+Yeo Rian never puts a document with a mismatched hash on the air first.
 
 Faced with the broadcaster's exclusive release, the house opens only a joint inspection and does not hand over the keys.
 
@@ -468,7 +469,7 @@ It does not merge three copies of a will into a single original.
 ### Three Acts
 
 - Act 1, Fracture: the source hash seal runs short at the archive reading room and the transmission cross-verification desk
-- Act 2, Negotiation: Yeo Ri-an puts the broadcaster's exclusive release and a joint inspection on the table
+- Act 2, Negotiation: Yeo Rian puts the broadcaster's exclusive release and a joint inspection on the table
 - Act 3, Price: three copies of a will are not merged into a single original
 
 <a id="Operating-Houses-heading-0146"></a>
@@ -477,7 +478,7 @@ It does not merge three copies of a will into a single original.
 
 - Classification: CIVIC_COMPACT
 - Status: ACTIVE
-- Linked factions and districts: Government (Eunpyeong-gu and Gangbuk-gu area, Dobong-gu)
+- Linked factions and districts: Government (Eunpyeong-gu, Dobong-gu)
 - Exclusive faction: None
 - Steward: Baek On
 
@@ -503,13 +504,13 @@ It never holds the register hostage and opens an entry only with the person's ow
 
 - Classification: PROFESSIONAL_GUILD
 - Status: ACTIVE
-- Linked factions and districts: Government (Dongdaemun-gu), Free City (Gangseo-gu), Government (Eunpyeong-gu and Gangbuk-gu area)
+- Linked factions and districts: Government (Dongdaemun-gu, Seongbuk-gu), Free City (Gangseo-gu)
 - Exclusive faction: None
-- Steward: Jeong Ha-rin
+- Steward: Jeong Harin
 
 At the Jegi-dong dispensary and the Magok quarantine sample room, the Jegidong Chiyumun guards the prescription double-check.
 
-Jeong Ha-rin posts lot defects before any exclusive purchase order.
+Jeong Harin posts lot defects before any exclusive purchase order.
 
 Faced with the exclusive purchase of Bukhansan Bogukmun herbs, the guild opens only a joint inspection and does not hand over the keys.
 
@@ -520,7 +521,7 @@ It does not hide counterfeit medicine; it posts the lot numbers.
 ### Three Acts
 
 - Act 1, Fracture: the prescription double-check runs short at the Jegi-dong dispensary and the Magok quarantine sample room
-- Act 2, Negotiation: Jeong Ha-rin puts the exclusive purchase of Bukhansan Bogukmun herbs and a joint inspection on the table
+- Act 2, Negotiation: Jeong Harin puts the exclusive purchase of Bukhansan Bogukmun herbs and a joint inspection on the table
 - Act 3, Price: counterfeit medicine is not hidden, and the lot numbers are posted
 
 <a id="Operating-Houses-heading-0162"></a>
@@ -529,13 +530,13 @@ It does not hide counterfeit medicine; it posts the lot numbers.
 
 - Classification: INFRA_OPERATOR
 - Status: ACTIVE
-- Linked factions and districts: Free City (Yeongdeungpo-gu)
+- Linked factions and districts: Government (Yongsan-gu), Free City (Yeongdeungpo-gu)
 - Exclusive faction: None
-- Steward: Go Seo-jun
+- Steward: Go Seojun
 
 On the Han River pier inspection walkways and the Jamsugyo landing stage, the Hangangjin Gyoryang Gonghoe guards the wind-speed closure threshold.
 
-When the wind passes the threshold, Go Seo-jun halts even river-transport priority.
+When the wind passes the threshold, Go Seojun halts even river-transport priority.
 
 Faced with Yeouido's river-transport priority, the operator opens only a joint inspection and does not hand over the keys.
 
@@ -546,7 +547,7 @@ It never reckons a bridge in tolls alone.
 ### Three Acts
 
 - Act 1, Fracture: the wind-speed closure threshold runs short on the Han River pier inspection walkways and the Jamsugyo landing stage
-- Act 2, Negotiation: Go Seo-jun puts Yeouido's river-transport priority and a joint inspection on the table
+- Act 2, Negotiation: Go Seojun puts Yeouido's river-transport priority and a joint inspection on the table
 - Act 3, Price: a bridge is never reckoned in tolls alone
 
 <a id="Operating-Houses-heading-0170"></a>
@@ -557,11 +558,11 @@ It never reckons a bridge in tolls alone.
 - Status: ACTIVE
 - Linked factions and districts: Free City (Dongjak-gu), Arc (Songpa-gu)
 - Exclusive faction: None
-- Steward: Gu Ha-on
+- Steward: Gu Haon
 
 At the Noryangjin freezers and the Garak ice warehouse, the Noryangjin Naengdong Sangdan guards the power slot rotation.
 
-Gu Ha-on prints the temperature log before anyone pulls a motor.
+Gu Haon prints the temperature log before anyone pulls a motor.
 
 Faced with the fabrication alliance's motor recovery, the compact opens only a joint inspection and does not hand over the keys.
 
@@ -572,7 +573,7 @@ When the temperature log breaks off, the auction stops.
 ### Three Acts
 
 - Act 1, Fracture: the power slot rotation runs short at the Noryangjin freezers and the Garak ice warehouse
-- Act 2, Negotiation: Gu Ha-on puts the fabrication alliance's motor recovery and a joint inspection on the table
+- Act 2, Negotiation: Gu Haon puts the fabrication alliance's motor recovery and a joint inspection on the table
 - Act 3, Price: when the temperature log breaks off, the auction stops
 
 <a id="Operating-Houses-heading-0178"></a>
@@ -583,11 +584,11 @@ When the temperature log breaks off, the auction stops.
 - Status: ACTIVE
 - Linked factions and districts: Government (Mapo-gu), Arc (Gangnam-gu), Free City (Gangseo-gu)
 - Exclusive faction: None
-- Steward: Choi Eun-jae
+- Steward: Choe Eunjae
 
 Through the Sangam log trust and the Suseo contract hashes, the Digital Media City Sintakga guards model card disclosure.
 
-Choi Eun-jae answers training-data export requests with aggregates only, never the originals.
+Choe Eunjae answers training-data export requests with aggregates only, never the originals.
 
 Faced with Magok's training-data export, the trust opens only a joint inspection and does not hand over the keys.
 
@@ -598,7 +599,7 @@ It does not trade raw face data for transit passes.
 ### Three Acts
 
 - Act 1, Fracture: model card disclosure runs short across the Sangam log trust and the Suseo contract hashes
-- Act 2, Negotiation: Choi Eun-jae puts Magok's training-data export and a joint inspection on the table
+- Act 2, Negotiation: Choe Eunjae puts Magok's training-data export and a joint inspection on the table
 - Act 3, Price: raw face data is not traded for transit passes
 
 <a id="Operating-Houses-heading-0186"></a>
@@ -697,7 +698,7 @@ As the price of the restored communication route, Yongsan Gyohwan-ga hands over 
 - Status: ACTIVE
 - Linked factions and districts: Free City (Guro-gu, Geumcheon-gu), Government (Seongdong-gu, Dobong-gu)
 - Exclusive faction: None
-- Managed by: Byeon Ju-a
+- Managed by: Byeon Jua
 
 Along the Guro and Geumcheon manufacturing axis, Guro Digital Danji Jeonji-ga sorts individual battery cells by lifespan and temperature and stacks them accordingly.
 
@@ -709,7 +710,7 @@ If a single drum is found leaking, every pack loaded on the same transport cart 
 
 The fabrication repair crews press for the shortfall to be released, while the northern technicians bar the warehouse doors to protect the brake share.
 
-After the materials certifier uncovers forged markings, the supply order is switched to a public lottery among the three factions.
+After the materials certifier uncovers forged markings, the supply order is switched to a public lottery.
 
 To preserve trust, Guro Digital Danji Jeonji-ga scraps even usable batteries and cuts back Changdong's reserve runs.
 
@@ -729,7 +730,7 @@ To preserve trust, Guro Digital Danji Jeonji-ga scraps even usable batteries and
 - Status: ACTIVE
 - Linked factions and districts: Government (Yongsan-gu), Free City (Dongjak-gu), Arc (Songpa-gu)
 - Exclusive faction: None
-- Managed by: Peter Janssen
+- Managed by: Peter Jansen
 
 Beneath the rusted cranes on Yongsan's north bank, Yongsan Seonbak-ga assigns barge berths.
 
@@ -843,7 +844,7 @@ Even if the line goes dead, the final settlement block is kept on paper.
 - Status: ACTIVE
 - Linked factions/districts: Free City (Gangseo-gu), Government (Dobong-gu), Government (Mapo-gu)
 - Exclusive faction: None
-- Managed by: Choi Eun-jae
+- Managed by: Choe Eunjae
 
 Beside the autonomous test line at the edge of the Magok research grounds, the Magok Test Line House guards a stored energy depot.
 

@@ -1,5 +1,6 @@
 ---
-model: gemini-4-argon-high
+model: session model gemini-4-argon-high (PI_MODEL, provider cpa) via completion tier default, not gemini-3-pro; 2026-11-10 fixes hand-edited by the same session
+section_checkpoint: complete
 ---
 <a id="Operating-Houses-heading-0001"></a>
 
@@ -113,7 +114,7 @@ model: gemini-4-argon-high
 
 - 분류: CORPORATION
 - 상태: ACTIVE
-- 연결 세력·구: 정부(은평구·강북구 일대)
+- 연결 세력·구: 정부(성북구)
 - 전속 세력: 없음
 - 관리: 윤서린
 
@@ -477,7 +478,7 @@ model: gemini-4-argon-high
 
 - 분류: CIVIC_COMPACT
 - 상태: ACTIVE
-- 연결 세력·구: 정부(은평구·강북구 일대, 도봉구)
+- 연결 세력·구: 정부(은평구, 도봉구)
 - 전속 세력: 없음
 - 관리: 백온
 
@@ -503,7 +504,7 @@ model: gemini-4-argon-high
 
 - 분류: PROFESSIONAL_GUILD
 - 상태: ACTIVE
-- 연결 세력·구: 정부(동대문구), 자유도시(강서구), 정부(은평구·강북구 일대)
+- 연결 세력·구: 정부(동대문구, 성북구), 자유도시(강서구)
 - 전속 세력: 없음
 - 관리: 정하린
 
@@ -529,7 +530,7 @@ model: gemini-4-argon-high
 
 - 분류: INFRA_OPERATOR
 - 상태: ACTIVE
-- 연결 세력·구: 자유도시(영등포구)
+- 연결 세력·구: 정부(용산구), 자유도시(영등포구)
 - 전속 세력: 없음
 - 관리: 고서준
 
@@ -709,7 +710,7 @@ model: gemini-4-argon-high
 
 제작 수리반은 부족분을 풀라고 압박하고 북부 기술자는 제동 몫을 지키려 창고문을 막는다.
 
-재료인증관이 위조 표식을 찾아낸 뒤 공급 순서는 세 세력의 공개 추첨으로 바뀐다.
+재료인증관이 위조 표식을 찾아낸 뒤 공급 순서는 공개 추첨으로 바뀐다.
 
 구로디지털단지전지가는 신뢰를 남기려고 쓸 수 있는 전지까지 폐기하고 창동의 예비 운행을 줄인다.
 

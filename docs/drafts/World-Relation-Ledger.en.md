@@ -1,5 +1,6 @@
 ---
-model: gemini-4-argon-high
+model: session model gemini-4-argon-high (PI_MODEL, provider cpa) via completion tier default, not gemini-3-pro; 2026-11-10 fixes hand-edited by the same session
+section_checkpoint: complete
 ---
 <a id="World-Relation-Ledger-heading-0001"></a>
 
@@ -11,7 +12,7 @@ This ledger gathers operating organisations, old records of theatres outside Seo
 | HC02 | operates_in | Free City (Yangcheon-gu), Arc (Gangnam-gu), Government (Yongsan-gu) | organisation to faction and district operating link |
 | HC03 | operates_in | Free City (Gangseo-gu), Government (Dongdaemun-gu) | organisation to faction and district operating link |
 | HC04 | operates_in | Government (Seongdong-gu), Arc (Gangdong-gu), Free City (Yeongdeungpo-gu) | organisation to faction and district operating link |
-| HC05 | operates_in | Government (Eunpyeong-gu and Gangbuk-gu area) | organisation to faction and district operating link |
+| HC05 | operates_in | Government (Seongbuk-gu) | organisation to faction and district operating link |
 | HC06 | operates_in | Free City (Dongjak-gu), Arc (Songpa-gu) | organisation to faction and district operating link |
 | HC07 | operates_in | Free City (Guro-gu), Government (Seongdong-gu) | organisation to faction and district operating link |
 | HC08 | operates_in | Government (Dobong-gu), Government (Jungnang-gu) | organisation to faction and district operating link |
@@ -23,11 +24,11 @@ This ledger gathers operating organisations, old records of theatres outside Seo
 | HC14 | operates_in | Free City (Yeongdeungpo-gu), Arc (Gangnam-gu) | organisation to faction and district operating link |
 | HP01 | operates_in | Free City (Yeongdeungpo-gu), Government (Seongdong-gu, Gwangjin-gu), Arc (Gangdong-gu) | organisation to faction and district operating link |
 | HP02 | operates_in | Government (Yongsan-gu, Jungnang-gu, Dobong-gu) | organisation to faction and district operating link |
-| XT01 | pressures | Free City (Yeongdeungpo-gu) | pressure from an old record of an outside theatre |
-| XT02 | pressures | Arc (Gangnam-gu) | pressure from an old record of an outside theatre |
-| XT03 | pressures | Government (Yongsan-gu) | pressure from an old record of an outside theatre |
-| XT04 | pressures | Government (Jongno-gu) | pressure from an old record of an outside theatre |
-| XT05 | pressures | Government (Dongdaemun-gu) | pressure from an old record of an outside theatre |
+| XT01 | pressures | Seoul | pressure that an outside theatre puts on Seoul |
+| XT02 | pressures | Seoul | pressure that an outside theatre puts on Seoul |
+| XT03 | pressures | Seoul | pressure that an outside theatre puts on Seoul |
+| XT04 | pressures | Seoul | pressure that an outside theatre puts on Seoul |
+| XT05 | pressures | Seoul | pressure that an outside theatre puts on Seoul |
 | H01 | custodied_by | K001 | synthetic-human custody |
 | H02 | custodied_by | K029 | synthetic-human custody |
 | H03 | custodied_by | K057 | synthetic-human custody |

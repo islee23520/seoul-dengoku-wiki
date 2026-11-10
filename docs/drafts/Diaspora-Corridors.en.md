@@ -1,5 +1,6 @@
 ---
-model: gemini-4-argon-high
+model: session model gemini-4-argon-high (PI_MODEL, provider cpa) via completion tier default, not gemini-3-pro; 2026-11-10 fixes hand-edited by the same session
+section_checkpoint: complete
 ---
 Before the collapse, Seoul had the Chinese-Korean commercial district of Daerim and Garibong, the interpreters' alleys of Itaewon, Dongdaemun's night piecework, the Guro industrial complex dormitories, and the contract workers stationed in Yongsan.
 
@@ -9,7 +10,7 @@ Before the collapse, Seoul had the Chinese-Korean commercial district of Daerim 
 |---|---|---|---|---|
 | Daerim-Garibong Chinese Koreans | Free City (Yeongdeungpo-gu, Guro-gu) | Daerim area | Daerim-Garibong Chinese-Korean living sphere | Overlaps with the Free City urban territory of Yeongdeungpo-gu and Guro-gu. |
 | Itaewon Muslims and Migrants | Government (Yongsan-gu) | Itaewon area | Itaewon Muslim and migrant living sphere | Overlaps with the Government's Yongsan-gu duchy. |
-| Dongdaemun Central Asians and Mongolians | Government (Dongdaemun-gu) | Dongdaemun area | Dongdaemun Central Asian and Mongolian living sphere | Overlaps with the Government's Dongdaemun-gu duchy. |
+| Dongdaemun Central Asians and Mongolians | Government (Jongno-gu, Jung-gu) | Dongdaemun area | Dongdaemun Central Asian and Mongolian living sphere | Overlaps with the Government's Jongno-gu and Jung-gu duchies. |
 | Guro-Gasan Joseonjok | Free City (Guro-gu, Geumcheon-gu) | Guro area | Guro-Gasan Joseonjok living sphere | Overlaps with the Free City urban territory of Guro-gu and Geumcheon-gu. |
 | Namguro-Daerim Extension | Free City (Guro-gu, Yeongdeungpo-gu) | Namguro area | Namguro-Daerim extension living sphere | Overlaps with the Free City urban territory of Guro-gu and Yeongdeungpo-gu. |
 
@@ -29,12 +30,12 @@ Before the collapse, Seoul had the Chinese-Korean commercial district of Daerim 
 - Origin community: The Daerim-Garibong interpreters' market. Descended from a family of Chinese-Korean shopkeepers living in Korea before the collapse. Lin Xiaomei was born in 2075. Her Chinese-Korean family has its roots in the Daerim-Garibong living sphere. In 2126 she works as a double-ledger broker in Daerim. Lin Chenghao lived through the Great Blackout in Daerim-Garibong, running a Chinese-Korean shop and doing interpreting work. The family passed down records of lodgings and goods handovers to the next generation, and Lin Xiaomei's parents' generation checked those records against the household ledgers of their own day.
 - Languages: Beijing Mandarin and Korean for daily life. Contracts are drawn up in two copies
 - Occupation: Logistics trader (primary), courier (secondary)
-- Affiliation: Free City (Yeongdeungpo-gu). Interpreters' market ledger. Registered at the Daerim market window as an interpreter only
+- Affiliation: Free City (Daerim). Interpreters' market ledger. Registered at the Daerim market window as an interpreter only
 - Position: Daerim double-ledger broker
 - Conscription history: None. No Korean military service obligation
 - Weapons access: Tools of her trade. Scales and ledgers. No issued arms
 - Personality: Before naming a price, she listens for which language the other party swears in
-- Personal ambition: To open a currency exchange window under the seal of the interpreters' market rather than the seal of the Southwest City Council
+- Personal ambition: To open a currency exchange window under the seal of the interpreters' market rather than the seal of the Southwest Workshop Council
 - Fear: That her Chinese ledgers will be seized as "foreign ledgers" and the Daerim lodgings erased wholesale
 - Governance and negotiation style: If a contract arrives in only one language, she refuses to sign and collects her interpreting fee first
 - Key relationships: A parts-for-food contract with Pham Van Duc of the Guro industrial complex dormitories. Border inspections with the Southwest Guard that verge on a grudge
@@ -60,7 +61,7 @@ Before the collapse, Seoul had the Chinese-Korean commercial district of Daerim 
 - Conscription history: None. No Vietnamese military record. Not on the Korean mobilization roster
 - Weapons access: Tools of his trade and protective suit. Cutting tools lent by the engineers must be returned
 - Personality: When a gate closes, he counts the bolts before he counts the people
-- Personal ambition: To raise the dormitory household roster to the same standing as citizenship on the Guro City Council
+- Personal ambition: To raise the dormitory household roster to the same standing as citizenship on the Guro Workshop Council
 - Fear: That the dormitory side will be left out of evacuation during barrier drills
 - Governance and negotiation style: He will not tighten a single bolt unless a Vietnamese tally is attached to the Korean contract
 - Key relationships: A food contract with Lin Xiaomei. Tension with Choe Il-seok, clerk of the mobilization remnant, over the ammunition depot subcontract
@@ -90,7 +91,7 @@ Pham Van Tuan's son Pham Van Loc is born in Vietnam on April 17, 2059, and learn
 - Personal ambition: To eliminate every train without an interpreter from the Yongsan transfer
 - Fear: That one faction will impose a "Foreign-Language Passage Ban" and seal the alley lodgings
 - Governance and negotiation style: If a pass carries only one language, the lift stays closed
-- Key relationships: Under contract with Park Tae-gyeom's dispatch family. Works with Joel Park of the Yongsan fence contractors
+- Key relationships: Under contract with Bak Tae-gyeom's dispatch family. Works with Joel Park of the Yongsan fence contractors
 - Trigger event: If a passage-ban word is posted, the Yongsan transfer halts for a day
 
 ### Character: Joel Park
@@ -113,19 +114,19 @@ Pham Van Tuan's son Pham Van Loc is born in Vietnam on April 17, 2059, and learn
 - Personal ambition: To raise the warehouse memory to formal Government inspection and leave behind keys that bear no insignia
 - Fear: That someone will paint an insignia on and the fence will be read as an "occupation"
 - Governance and negotiation style: Documents bearing the proper names of military units are returned untranslated
-- Key relationships: Transit cooperation with Amira. Competes with Park Tae-gyeom for contracts over inspection rights
+- Key relationships: Transit cooperation with Amira. Competes with Bak Tae-gyeom for contracts over inspection rights
 - Trigger event: Any attempt to reproduce an insignia seals warehouse inspections
 
-### Character: Nargiz Yusupova (Nargiz)
+### Character: Nargiza Yusupova (Nargiz)
 
-- Full name: Nargiz Yusupova. Known as Nargiz at the boarding house. Ledger entry in Hangul: Nargiz
+- Full name: Nargiza Yusupova. Known as Nargiz at the boarding house. Ledger entry in Hangul: Nargiz
 - Character ID: K1015
 - Birthplace: Jayang
 - Sex: Male
 - Rank: None
 - Values: Authority −20 | Openness 40 | Force −30 | Material −20 | Communal 40 | Principle 40 | Transparency 30 | Merit 0 | Decentralization 40 | Change 30
 - Desires: Craving 60 | Exclusivity −10 | Risk 20 | Display 20 | Endurance 30 | Orientation: heterosexual | Bond: monogamous
-- Community of origin: The Koryo-saram boarding houses of Jayang and Geondae. Before the collapse, the family worked as freight brokers. Nargiz Yusupova was born in Jayang in 2076. He grew up reading the family records left at the Jayang and Geondae boarding houses by his Uzbek father and Koryo-saram mother. He speaks Russian at home and Korean at the market, and he also inherited family vocabulary in Koryo-mar and Uzbek. He is a courier who carries the two-language evacuation rosters, and he will not sign any roster written only in Hangul. Karim Yusupov lived through the Great Blackout in the Koryo-saram boarding houses of Jayang and Geondae, where he worked as a civilian freight broker for the local Koryo-saram community. The family passed down records of lodgings and handed-over goods to the next generation, and Nargiz Yusupova's parents' generation checked those records against the household ledgers of their own day.
+- Community of origin: The Koryo-saram boarding houses of Jayang and Geondae. Before the collapse, the family worked as freight brokers. Nargiza Yusupova was born in Jayang in 2076. He grew up reading the family records left at the Jayang and Geondae boarding houses by his Uzbek father and Koryo-saram mother. He speaks Russian at home and Korean at the market, and he also inherited family vocabulary in Koryo-mar and Uzbek. He is a courier who carries the two-language evacuation rosters, and he will not sign any roster written only in Hangul. Karim Yusupov lived through the Great Blackout in the Koryo-saram boarding houses of Jayang and Geondae, where he worked as a civilian freight broker for the local Koryo-saram community. The family passed down records of lodgings and handed-over goods to the next generation, and Nargiza Yusupova's parents' generation checked those records against the household ledgers of their own day.
 - Languages: Russian for daily life, Korean at the market, surviving Koryo-mar
 - Occupation: Courier
 - Affiliation: Government (Gwangjin-gu). Koryo-saram boarding house register. Dual registration on both the Arc and Government rosters
@@ -152,12 +153,12 @@ Pham Van Tuan's son Pham Van Loc is born in Vietnam on April 17, 2059, and learn
 - Community of origin: The Guro home-guard Mobilization Remnant. Korean nationality. Choe Il-seok was born in Guro in 2087. He served as an enlisted soldier in the Mobilization Remnant of his day, and after completing his term in 2109 he returned home and checked the shift rosters with his father, Choe Tae-yun. As roster clerk for the Guro and Geumcheon axis, he verifies actual service and return records, and he guards against the rosters being used to justify private armed groups. His great-grandfather, Choe Gyeong-seop, born in 1997, carried a reserve company's roster out during the Great Blackout and sorted those who could still be contacted from those who had fled. His son, Choe Mun-jae, separated the old evacuation lists from the current duty rosters, and his grandson, Choe Tae-yun, cross-checked the shift rosters. After finishing his service in 2109, Choe Il-seok checked actual service and return records together with his father.
 - Languages: Korean
 - Occupation: Patrol (primary). Archivist (secondary, rosters)
-- Affiliation: Government. Clerk of the Guro and Geumcheon axis Mobilization Remnant. Listed as "outside armed group" in the Guro City Council ledger
+- Affiliation: Government. Clerk of the Guro and Geumcheon axis Mobilization Remnant. Listed as "outside armed group" in the Guro Workshop Council ledger
 - Position: Mobilization roster clerk
 - Conscription record: Served as an enlisted soldier in the Mobilization Remnant of his day, completing his term in 2109. The reserve company clerk who carried the roster out during the Great Blackout was his great-grandfather, Choe Gyeong-seop
 - Access to arms: Holds the secondary key to the armory. Service firearms are sealed. Personally carries a service baton
 - Personality: Will not discuss ammunition with anyone who lacks a service number
-- Personal ambition: To keep the rosters as mobilization ledgers rather than Guro City Council records, preventing them from becoming the basis of private armies
+- Personal ambition: To keep the rosters as mobilization ledgers rather than Guro Workshop Council records, preventing them from becoming the basis of private armies
 - Fear: That the deserter platoon will tear up the rosters and turn them into a "Guro warlord" seal
 - Governance and negotiation style: Never keeps a key and a roster in the same place
 - Key relationships: Subcontracting tensions with Pham Van Duc. A grudge with the deserter platoon. Conducts transit inspections on Lin Xiaomei

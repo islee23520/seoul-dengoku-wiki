@@ -1,9 +1,10 @@
 ---
-model: gemini-4-argon-high
+model: session model gemini-4-argon-high (PI_MODEL, provider cpa) via completion tier default, not gemini-3-pro; 2026-11-10 fixes hand-edited by the same session
+section_checkpoint: complete
 ---
 <a id="World-Relation-Ledger-heading-0001"></a>
 
-이 원장은 운영 조직, 서울 밖 옛 전구 기록, 합성 인간 보관, 조직 사이 계약 관계를 한 표에 모은다. 운영 연결의 도착 칸은 세 세력(정부, 자유도시, 아크)과 구로 적는다.
+이 원장은 운영 조직, 서울 밖 옛 전구 기록, 합성 인간 보관, 조직 사이 계약 관계를 한 표에 모은다. 운영 연결의 도착 칸은 그 조직이 일하는 세력(정부, 자유도시, 아크)과 구를 적는다.
 
 | 출발 | 유형 | 도착 | 근거 |
 |---|---|---|---|
@@ -11,7 +12,7 @@ model: gemini-4-argon-high
 | HC02 | operates_in | 자유도시(양천구), 아크(강남구), 정부(용산구) | 조직-세력·구 운영 연결 |
 | HC03 | operates_in | 자유도시(강서구), 정부(동대문구) | 조직-세력·구 운영 연결 |
 | HC04 | operates_in | 정부(성동구), 아크(강동구), 자유도시(영등포구) | 조직-세력·구 운영 연결 |
-| HC05 | operates_in | 정부(은평구·강북구 일대) | 조직-세력·구 운영 연결 |
+| HC05 | operates_in | 정부(성북구) | 조직-세력·구 운영 연결 |
 | HC06 | operates_in | 자유도시(동작구), 아크(송파구) | 조직-세력·구 운영 연결 |
 | HC07 | operates_in | 자유도시(구로구), 정부(성동구) | 조직-세력·구 운영 연결 |
 | HC08 | operates_in | 정부(도봉구), 정부(중랑구) | 조직-세력·구 운영 연결 |
@@ -23,11 +24,11 @@ model: gemini-4-argon-high
 | HC14 | operates_in | 자유도시(영등포구), 아크(강남구) | 조직-세력·구 운영 연결 |
 | HP01 | operates_in | 자유도시(영등포구), 정부(성동구·광진구), 아크(강동구) | 조직-세력·구 운영 연결 |
 | HP02 | operates_in | 정부(용산구·중랑구·도봉구) | 조직-세력·구 운영 연결 |
-| XT01 | pressures | 자유도시(영등포구) | 옛 기록의 서울 밖 전구 압력 |
-| XT02 | pressures | 아크(강남구) | 옛 기록의 서울 밖 전구 압력 |
-| XT03 | pressures | 정부(용산구) | 옛 기록의 서울 밖 전구 압력 |
-| XT04 | pressures | 정부(종로구) | 옛 기록의 서울 밖 전구 압력 |
-| XT05 | pressures | 정부(동대문구) | 옛 기록의 서울 밖 전구 압력 |
+| XT01 | pressures | 서울 | 서울 밖 전구가 서울에 주는 압력 |
+| XT02 | pressures | 서울 | 서울 밖 전구가 서울에 주는 압력 |
+| XT03 | pressures | 서울 | 서울 밖 전구가 서울에 주는 압력 |
+| XT04 | pressures | 서울 | 서울 밖 전구가 서울에 주는 압력 |
+| XT05 | pressures | 서울 | 서울 밖 전구가 서울에 주는 압력 |
 | H01 | custodied_by | K001 | 합성-인간 보관 |
 | H02 | custodied_by | K029 | 합성-인간 보관 |
 | H03 | custodied_by | K057 | 합성-인간 보관 |
