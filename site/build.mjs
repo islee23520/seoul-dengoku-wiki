@@ -197,7 +197,7 @@ for (const L of [UI.en, UI.ko]) {
     const d = row ? JSON.parse(L === UI.ko ? row.json_ko : row.json) : null;
     const dKo = row ? JSON.parse(row.json_ko) : null;
     const md = personPage({ p, d, dKo, ko: L === UI.ko, g, P, stateRow: states.find((s) => s.id === p.state_id), factionName, clan: clanOf.get(p.id) });
-    write(`${L.prefix}wiki/people/${p.id}/index.md`, page(g(p, 'name'), `${md}`, { outline: !!d }));
+    write(`${L.prefix}wiki/people/${p.id}/index.md`, page(g(p, 'name'), `${md}`, { outline: d ? [2, 3] : false }));
   });
 
   // retainer relations (old /people/relations) and license (old /license)
@@ -205,7 +205,7 @@ for (const L of [UI.en, UI.ko]) {
     const row = all("SELECT * FROM retainer_graph WHERE id='retainer'")[0];
     const graph = JSON.parse(L === UI.ko ? row.json_ko : row.json);
     const rel = relationsPage({ graph, ko: L === UI.ko, g, P, states, people, details: raw.details, body, REPO });
-    write(`${L.prefix}wiki/relations/index.md`, page(rel.title, rel.md.content, { outline: true }));
+    write(`${L.prefix}wiki/relations/index.md`, page(rel.title, rel.md.content, { outline: [2, 3] }));
     const lic = licensePage({ ko: L === UI.ko, body: (md) => body(md, L), REPO });
     write(`${L.prefix}wiki/license/index.md`, page(lic.title, lic.md, { outline: false }));
   }
