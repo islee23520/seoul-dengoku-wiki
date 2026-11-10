@@ -1,5 +1,5 @@
 ---
-model: cpa/glm-5.3 (task environment PI_MODEL=glm-5.3, provider cpa; 0 completion() calls; ko/en draft fully hand-written)
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
 section_checkpoint: W3-A patch: dates + anchors
 ---
 <a id="대정전과-급수-기록"></a>
@@ -54,11 +54,11 @@ section_checkpoint: W3-A patch: dates + anchors
 
 **가. 물길 계약**
 
-2097년 6월 수문국은 양평과 춘천의 물길 관리 인원과 계약을 체결하였다. 두 곳은 수문국의 물길 관리를 맡는 대가로 양평역 배급 명부에 등재되었다.
+2097년 6월 수문국은 양평과 춘천의 물길 관리 인원과 계약을 맺었다. 두 곳은 수문국의 물길 관리를 맡는 대가로 양평역 배급 명부에 등재되었다.
 
 **나. 복구복무자 등록**
 
-2120년 겨울 동방사는 펌프 부품 공급의 대가로 규격맹에 복구복무자 등록을 요구하였다. 강민서는 등록을 거부한 기술자를 규격맹 시민권 명부에 올렸다.
+2120년 겨울 동방사는 펌프 부품을 대 주는 대가로 규격맹에 복구복무자 등록을 요구하였다. 규격맹의 강민서는 등록을 거부한 기술자들을 규격맹 시민권 명부에 올렸다.
 
 **다. 피난민 명부**
 
@@ -66,7 +66,7 @@ section_checkpoint: W3-A patch: dates + anchors
 
 **라. 세 계약서**
 
-2123년 수문국, 규격맹, 환적국이 같은 주에 약국들에 서로 다른 급수·부품·통행 계약을 보냈다. 정유라는 세 계약서의 종료조건만 한 문서로 옮겼다.
+2123년 수문국, 규격맹, 환적국이 서로 다른 급수·부품·통행 계약을 같은 주에 약국들에 보냈다. 정유라는 세 계약서의 종료조건만 한 문서로 옮겼다.
 
 **마. 강약 장부**
 
@@ -74,7 +74,7 @@ section_checkpoint: W3-A patch: dates + anchors
 
 ## 출처
 
-- [서울전국 연표 2026–2126](/wiki/Century-Annals/)
+- [서울전국 연표 2026-2126](/wiki/Century-Annals/)
 - [시나리오 타임라인](/wiki/Scenario-Timeline/)
 - [신앙과 문화의 분열](/wiki/Faith-Culture-Schism/)
 - [식문화](/wiki/Food-Culture/)

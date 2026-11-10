@@ -1,5 +1,5 @@
 ---
-model: cpa/glm-5.3 (task environment PI_MODEL=glm-5.3, provider cpa; 0 completion() calls; ko/en draft fully hand-written)
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
 section_checkpoint: W3-A final
 ---
 **A. The Era**
@@ -39,11 +39,11 @@ Arc enters baptised believers in a roll. People outside the roll also work at Ar
 
 ## Winter and Machines
 
-Winter is the problem Arc's teaching answered. People fled the cold into the subway stations, and as many remained as the stations could hold. When that number was reached, the winter grew no harsher. When Go Ye-jin raised the machines from outside Seoul, the people of the Gangnam shelters gathered into Arc. Beyond Seoul, the war machines of the Great Blackout still roam, carrying out the last orders they received.
+Winter is the problem Arc's teaching answered. People fled the cold into the subway stations, and as many remained as the stations could hold. When that number was reached, the winter grew no harsher. When Go Ye-jin stopped the machines from outside Seoul, the people of the Gangnam shelters gathered into Arc. Beyond Seoul, the war machines of the Great Blackout still roam, carrying out the last orders they received.
 
 ## The Religions Before
 
-The religions that stood before Arc do not remain. In today's Seoul there is no organised religion other than Arc. At stations and depots, customs survive that keep watch over old things: the concourse notice board, the yellow line, the blocking doors. These customs remain not as religion but as the housekeeping rules of each station.
+The religions that stood before Arc do not remain. In today's Seoul there is no organised religion other than Arc.
 
 ## Households and Humanoid Retainers
 

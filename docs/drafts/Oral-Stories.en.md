@@ -1,5 +1,5 @@
 ---
-model: cpa/glm-5.3 (task environment PI_MODEL=glm-5.3, provider cpa; 0 completion() calls; ko/en draft fully hand-written)
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
 section_checkpoint: W3-A patch: dates + anchors
 ---
 <a id="대정전과-급수-기록"></a>
@@ -55,11 +55,11 @@ From March 20, 2053, the Yeongdeungpo waterworks staff moved their base to Yangp
 
 A. Waterway contract
 
-In June 2097, Sumunguk contracted with waterway workers in Yangpyeong and Chuncheon. They were entered in the Yangpyeong Station ration register in return for managing the waterways.
+In June 2097 the Water Gate Bureau signed a contract with the waterway keepers of Yangpyeong and Chuncheon. In return for managing the Bureau's waterways, both were entered in the Yangpyeong Station ration register.
 
 B. Reconstruction worker register
 
-In winter 2120, Dongbangsa demanded registration of reconstruction workers from Gyugyeokmaeng in exchange for pump parts. Gang Minseo placed workers who refused in the civic register.
+In the winter of 2120 the Eastern Command demanded, in exchange for supplying pump parts, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league's citizenship roll.
 
 C. Refugee register
 
@@ -67,7 +67,7 @@ In 2123, a refugee procession from Bukhansan Bogukmun descended toward Anguk.
 
 D. Three contracts
 
-In 2123, Sumunguk, Gyugyeokmaeng, and Hwanjeokguk sent separate water, parts, and transit contracts to the minor states in the same week. Jeong Yura copied their end conditions into one document.
+In 2123 the Water Gate Bureau, the Standards League, and the Transshipment Bureau sent separate contracts for water supply, parts, and passage to the pharmacies in the same week. Jeong Yura copied their end conditions into one document.
 
 E. State ledger
 
@@ -75,7 +75,7 @@ In November 2125, the records office compiled a power-ranking ledger of the duch
 
 ## Sources
 
-- [Seoul Subway States Timeline 2026–2126](/wiki/Century-Annals/)
+- [Seoul Subway States Timeline 2026-2126](/wiki/Century-Annals/)
 - [Scenario Timeline](/wiki/Scenario-Timeline/)
 - [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/)
 - [Food Culture](/wiki/Food-Culture/)

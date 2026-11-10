@@ -1,12 +1,12 @@
 ---
-model: cpa/glm-5.3 (task environment PI_MODEL=glm-5.3, provider cpa; 0 completion() calls; ko/en draft fully hand-written)
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
 section_checkpoint: W3-A final
 ---
 <a id="세-세력"></a>
 
 ## The Three Factions
 
-At the opening in 2126, Seoul is divided among three factions. The fourteen districts north of the Han River are the **Government**'s; the seven southwestern districts are the **Free City**'s; the four Gangnam districts are **Arc**'s. One district is one duchy, and Seoul holds twenty-five duchies in all. Place names, stations, and geography remain as they were before the Great Blackout.
+At the opening in 2126, Seoul is divided among three factions. The fourteen districts north of the Han River are the **Government**'s; the seven southwestern districts are the **Free City**'s; the four Gangnam districts are **Arc**'s. One district is one duchy, and Seoul holds twenty-five duchies in all.
 
 **A. The Government**
 
@@ -58,7 +58,7 @@ On the surface, exposure to wind and time spent outdoors matter as well as air t
 
 ### Intermediate Underground Quarters
 
-Intermediate underground quarters have a baseline range of 8–18°C, but entrance passages admitting much outdoor air in cold regions can fall below 8°C. Even these remain warmer than the local surface, and people dress for the space rather than its floor label. Couriers and porters wear work jackets over insulating base layers, removing outer layers and tying them to their bags while moving continuously in warmer areas. Clerks and advisers seated for long periods on the same level add wool base layers, vests, or cardigans; patrolling guards put insulation back on when they stop to stand watch.
+Intermediate underground quarters have a baseline range of 8-18°C, but entrance passages admitting much outdoor air in cold regions can fall below 8°C. Even these remain warmer than the local surface, and people dress for the space rather than its floor label. Couriers and porters wear work jackets over insulating base layers, removing outer layers and tying them to their bags while moving continuously in warmer areas. Clerks and advisers seated for long periods on the same level add wool base layers, vests, or cardigans; patrolling guards put insulation back on when they stop to stand watch.
 
 Mechanics and workshop workers at the same depth choose lining thickness for their activity while retaining protective long sleeves and work gloves. Medical workers wear washable long sleeves with the protection their tasks require; water-treatment workers adjust insulation beneath water-resistant aprons and inside boots. At the same air temperature, people still need different layers and fabrics because their movement, exposure to water, and contact with materials differ.
 
@@ -66,7 +66,7 @@ Mechanics and workshop workers at the same depth choose lining thickness for the
 
 ### Deep Underground Quarters
 
-In deep underground quarters with a baseline of 18–22°C, active couriers and porters wear thin shirts, rolling their sleeves or choosing short sleeves when their tasks permit. Seated clerks and merchants sensitive to cold retain thin long sleeves and light outer layers in the same area. Greater depth does not make everyone expose skin or wear the same number of layers.
+In deep underground quarters with a baseline of 18-22°C, active couriers and porters wear thin shirts, rolling their sleeves or choosing short sleeves when their tasks permit. Seated clerks and merchants sensitive to cold retain thin long sleeves and light outer layers in the same area. Greater depth does not make everyone expose skin or wear the same number of layers.
 
 Even in deep areas, mechanics keep clothing that covers their hands and arms, and workers handling water retain their aprons and boots. Anyone going outdoors above ground obtains outerwear suited to the local cold and puts it on before stepping outside. This also applies to clerks and merchants who normally work underground. Someone visiting only an indoor ground-level entrance dresses for its indoor temperature rather than automatically adding an outdoor coat.
 

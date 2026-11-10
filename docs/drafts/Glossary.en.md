@@ -1,5 +1,5 @@
 ---
-model: cpa/glm-5.3 (task environment PI_MODEL=glm-5.3, provider cpa; 0 completion() calls; ko/en draft fully hand-written)
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
 section_checkpoint: W3-A final
 ---
 <a id="glossary"></a>
@@ -12,7 +12,6 @@ This page collects the terms the wiki shares. English spellings accompany each e
 
 - **The Great Blackout**: the event of about a hundred years ago, around 2026. The First AI brought the winter.
 - **The First AI**: the intelligence that brought the winter at the Great Blackout. It killed no one directly.
-- **2126**: the winter before the third water-supply compact. The present of the story.
 
 <a id="glossary-s2"></a>
 

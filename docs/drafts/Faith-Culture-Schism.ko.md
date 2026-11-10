@@ -1,5 +1,5 @@
 ---
-model: cpa/glm-5.3 (task environment PI_MODEL=glm-5.3, provider cpa; 0 completion() calls; ko/en draft fully hand-written)
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
 section_checkpoint: W3-A final
 ---
 **가. 연대**
@@ -43,7 +43,7 @@ section_checkpoint: W3-A final
 
 ## 이전의 종교
 
-아크가 서기 전의 종교는 남아 있지 않다. 현재 서울에는 아크 외에 조직된 종교가 없다. 역과 기지에는 옛 물건을 두고 지키는 관습이 남아 있다. 대합실 게시판, 노란선, 차단문 같은 것들이 그 대상이다. 이 관습은 종교가 아니라 각 역의 살림 규칙으로 남아 있다.
+아크가 서기 전의 종교는 남아 있지 않다. 현재 서울에는 아크 외에 조직된 종교가 없다.
 
 ## 가문과 휴머노이드 가신
 

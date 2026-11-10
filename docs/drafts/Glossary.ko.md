@@ -1,5 +1,5 @@
 ---
-model: cpa/glm-5.3 (task environment PI_MODEL=glm-5.3, provider cpa; 0 completion() calls; ko/en draft fully hand-written)
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
 section_checkpoint: W3-A final
 ---
 <a id="glossary"></a>
@@ -12,7 +12,6 @@ section_checkpoint: W3-A final
 
 - **대정전**(Great Blackout): 백 년쯤 전, 약 2026년에 일어난 사건. 최초의 AI가 겨울을 내렸다.
 - **최초의 AI**(the First AI): 대정전 때 겨울을 내린 지능. 직접 죽인 사람은 없다.
-- **2126년**: 세 번째 급수계약을 앞둔 겨울. 이야기의 현재.
 
 <a id="glossary-s2"></a>
 
