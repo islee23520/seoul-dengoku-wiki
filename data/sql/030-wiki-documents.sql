@@ -4049,7 +4049,7 @@ Insulation shows through coat volume, folds, and lining visible at an open colla
 
 ## 출처
 
-- [시·도별 지상 기온과 대표 관측소](/wiki/World-and-Subway-Layers/#시도별-지상-기온)
+- [시·도별 지상 기온과 대표 관측소](/wiki/World-and-Subway-Layers/)
 - [역사의 깊이와 겨울 생활 환경](/wiki/World-and-Subway-Layers/#겨울과-역사의-깊이)
 - 세력과 외교, 전쟁과 공성 규칙
 - 회랑 인물 총람
@@ -5068,7 +5068,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/) · [2122 record](/wiki/C
 
 광화문 대한민국정부 주사가 위조 혈연 증서의 잉크 번짐을 짚고, 아차산 관문 초소는 봉인 키를 두 조각으로 나눈다.
 
-연표 기록: [2069년 기록](/wiki/Century-Annals/#2069년-xt01-임진-제방-임시-검역소) · [2104년 기록](/wiki/Century-Annals/#2104년-xt01-임진-제방-임시-검역소) · [2125년 기록](/wiki/Century-Annals/#2125년-xt01-광화문-정부서울청사)
+연표 기록: [2069년 기록](/wiki/Century-Annals/) · [2104년 기록](/wiki/Century-Annals/) · [2125년 기록](/wiki/Century-Annals/)
 
 <a id="External-Theaters-heading-0009"></a>
 
@@ -5176,7 +5176,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/) · [2122 record](/wiki/C
 
 여의도출자연합회는 가격 구호 대신 부두 안전 회람만 돌린다.
 
-연표 기록: [2079년 기록](/wiki/Century-Annals/#2079년-xt02-한강-하구-임시-부두) · [2114년 기록](/wiki/Century-Annals/#2114년-xt02-한강-하구-임시-부두)
+연표 기록: [2079년 기록](/wiki/Century-Annals/) · [2114년 기록](/wiki/Century-Annals/)
 
 <a id="External-Theaters-heading-0036"></a>
 
@@ -5280,7 +5280,7 @@ Arc 집사는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는
 
 흑석 통역 창구는 협정에 외래어와 한국어 주석을 나란히 적는다. 서울에는 회수품·배상 요구·귀환 호위꾼의 증언이 들어온다. 2126년 용산에서 선주의 의뢰와 현지 협력자의 약속이 같은 회수품을 놓고 충돌할 수 있으나, 이 만남은 조건부 사건이다. 일본 본토·중국·미국과 관련한 미확인 소식은 이 항구 원정의 확인 범위에 포함하지 않는다.
 
-연표 기록: [2079년 기록](/wiki/Century-Annals/#2079년-xt03-용산-환적창)
+연표 기록: [2079년 기록](/wiki/Century-Annals/)
 
 <a id="External-Theaters-heading-0063"></a>
 
@@ -5387,7 +5387,7 @@ Arc 집사는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는
 
 어느 정부도 단죄하지 않고 화차와 사람만 검수한다. 2124년 서울에는 독도 초소 이야기가 전언으로 들어오고, 2125년 소수 연락 관계자가 별개 경로의 증언·물건·접안 기록을 대조해 집단의 실재를 확인한다. 이는 공개 항로나 서울 통제권의 확정이 아니다. 2126년 구조된 선원이 연락을 요청한다면 신원과 연락처 공개 범위를 놓고 지원·교역과 추적 위험이 충돌한다. 서울 전령 호위와 답장 전달은 조건부 이야기이며 신종목의 독도 직통 무전이나 신준의 기억을 통한 실재 인증에 기대지 않는다.
 
-연표 기록: [2069년 기록](/wiki/Century-Annals/#2069년-xt04-암사-야적장) · [2114년 기록](/wiki/Century-Annals/#2114년-xt04-암사-야적장)
+연표 기록: [2069년 기록](/wiki/Century-Annals/) · [2114년 기록](/wiki/Century-Annals/)
 
 <a id="External-Theaters-heading-0090"></a>
 
@@ -5495,7 +5495,7 @@ Arc 지부장이 해외 송금 기록 상자만 실은 회차선을 열고, 태�
 
 명동 상담 창구는 밤이 깊어도 다국어 대기표를 버리지 않는다.
 
-연표 기록: [2069년 기록](/wiki/Century-Annals/#2069년-xt05-여의도-회관) · [2122년 기록](/wiki/Century-Annals/#2122년-xt05-여의도-회관)
+연표 기록: [2069년 기록](/wiki/Century-Annals/) · [2122년 기록](/wiki/Century-Annals/)
 
 <a id="External-Theaters-heading-0117"></a>
 
@@ -9644,7 +9644,7 @@ XT01 유입 피난 행렬의 잔반은 별도 회수로 빼 무리 유인을 줄
 
 공존을 택하면 단기 위협 신고가 남지만 수문 노동 동선은 유지된다.
 
-- 시나리오: [G01-SC1](/wiki/Hostile-Group-G01/#g01-sc1-수문-밖-첫-발굽), [G01-SC2](/wiki/Hostile-Group-G01/#g01-sc2-염분-웅덩이의-값), [G01-SC3](/wiki/Hostile-Group-G01/#g01-sc3-범람선의-통행권)
+- 시나리오: [G01-SC1](/wiki/Hostile-Group-G01/), [G01-SC2](/wiki/Hostile-Group-G01/), [G01-SC3](/wiki/Hostile-Group-G01/)
 
 <a id="Hostile-Ecology-Index-heading-0041"></a>
 
@@ -9757,7 +9757,7 @@ XT02 해풍 주간에는 횃대 공유를 인정하는 임시 깃발을 단다.
 
 송신 복구를 생태보다 앞세우면 야간 정전 구간이 늘어 다른 가문 갈등이 커진다.
 
-- 시나리오: [G02-SC1](/wiki/Hostile-Group-G02/#g02-sc1-세-번의-경적), [G02-SC2](/wiki/Hostile-Group-G02/#g02-sc2-가짜-정전-경보), [G02-SC3](/wiki/Hostile-Group-G02/#g02-sc3-교량-위의-새-신호)
+- 시나리오: [G02-SC1](/wiki/Hostile-Group-G02/), [G02-SC2](/wiki/Hostile-Group-G02/), [G02-SC3](/wiki/Hostile-Group-G02/)
 
 <a id="Hostile-Ecology-Index-heading-0082"></a>
 
@@ -9864,7 +9864,7 @@ H03이 공격성 군집으로 묶어도 HC03 중재자는 개체별 인식표·�
 
 포획 개체를 투기 교환 자원으로 삼는 순간 협상이 끊긴다.
 
-- 시나리오: [G03-SC1](/wiki/Hostile-Group-G03/#g03-sc1-녹슨-이름표), [G03-SC2](/wiki/Hostile-Group-G03/#g03-sc2-급식차를-기억하는-무리), [G03-SC3](/wiki/Hostile-Group-G03/#g03-sc3-환승-계단의-재결속)
+- 시나리오: [G03-SC1](/wiki/Hostile-Group-G03/), [G03-SC2](/wiki/Hostile-Group-G03/), [G03-SC3](/wiki/Hostile-Group-G03/)
 
 <a id="Hostile-Ecology-Index-heading-0120"></a>
 
@@ -9976,7 +9976,7 @@ XT04 한파 주간에는 갤러리 일부 난방을 공유 은신 허용 구역�
 
 펌프 가동만 위해 은신처를 수몰시키면 지상 주거 침입이 늘어난다.
 
-- 시나리오: [G04-SC1](/wiki/Hostile-Group-G04/#g04-sc1-맨홀-아래의-선행지표), [G04-SC2](/wiki/Hostile-Group-G04/#g04-sc2-준설창의-두-가족), [G04-SC3](/wiki/Hostile-Group-G04/#g04-sc3-펌프실의-마른-통로)
+- 시나리오: [G04-SC1](/wiki/Hostile-Group-G04/), [G04-SC2](/wiki/Hostile-Group-G04/), [G04-SC3](/wiki/Hostile-Group-G04/)
 
 <a id="Hostile-Ecology-Index-heading-0161"></a>
 
@@ -10092,7 +10092,7 @@ XT05 단백질 하역 주간에는 임시 이중 밀봉 라인을 우선 지원�
 
 배급 속도를 위해 잔반 회수를 미루면 2단계로 고정된다.
 
-- 시나리오: [G05-SC1](/wiki/Hostile-Group-G05/#g05-sc1-두-번째-코어-둥지), [G05-SC2](/wiki/Hostile-Group-G05/#g05-sc2-밀폐-순서의-오류), [G05-SC3](/wiki/Hostile-Group-G05/#g05-sc3-개방-중정의-포식자)
+- 시나리오: [G05-SC1](/wiki/Hostile-Group-G05/), [G05-SC2](/wiki/Hostile-Group-G05/), [G05-SC3](/wiki/Hostile-Group-G05/)
 
 <a id="Hostile-Ecology-Index-heading-0204"></a>
 
@@ -10213,7 +10213,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 
 보호종을 내세운 밀거래가 끼면 협상도 멈춘다.
 
-- 시나리오: [G06-SC1](/wiki/Hostile-Group-G06/#g06-sc1-얕은-물의-세-기능군), [G06-SC2](/wiki/Hostile-Group-G06/#g06-sc2-열차-시간표를-배운-새), [G06-SC3](/wiki/Hostile-Group-G06/#g06-sc3-철새-주간의-선로)
+- 시나리오: [G06-SC1](/wiki/Hostile-Group-G06/), [G06-SC2](/wiki/Hostile-Group-G06/), [G06-SC3](/wiki/Hostile-Group-G06/)
 
 <a id="Hostile-Ecology-Index-heading-0250"></a>
 
@@ -10273,7 +10273,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 - 교전: 환적국 이태원 화물 당직은 용산·이태원 환승 화물 엘리베이터의 샤프트 문을 잠그고 칸을 용산 유치선 하층에 둔다. 모서리가 들린 구로합금가 봉인 상자는 하층 벽 쪽에 세워져 있다. 물통은 문 뒤에 있고 마개는 잠겨 있으며 통의 수는 재고판 옆칸에 적혀 있다.
 - 교섭: 환적국 재고판과 구로합금가 봉인 확인과 정우람 순번 표와 신내운수 운송 표가 용산 유치선 하층 문턱에 놓인다. 환적국 이태원 화물 당직은 네 표의 상자 수를 한 판에 맞춘다. 맞춘 판은 하층 벽에 붙어 있다. 약탈단 두목은 그 판 밖의 누액 받침대 쪽에 서 있다.
 - 도덕 비용: 순번을 맞춘 날에는 재고판에 표의 수만큼 골목 밖으로 나간 식량 포대와 물통의 잔여가 적혀 있다. 샤프트 문을 잠근 날에는 정우람 순번 표가 용산 유치선 하층 벽에 붙어 있다. 받침대 자리를 비운 날에는 같은 상자 번호가 약탈단 포대 칸에 적혀 있고 약탈단 척후조가 그 포대를 보고 서 있다.
-- 시나리오: [G07-SC1](/wiki/Hostile-Group-G07/#g07-sc1-누액-받침대의-봉인-상자), [G07-SC2](/wiki/Hostile-Group-G07/#g07-sc2-신내운수-칸의-해동), [G07-SC3](/wiki/Hostile-Group-G07/#g07-sc3-서해곡창-냉동-칸)
+- 시나리오: [G07-SC1](/wiki/Hostile-Group-G07/), [G07-SC2](/wiki/Hostile-Group-G07/), [G07-SC3](/wiki/Hostile-Group-G07/)
 
 <a id="Hostile-Ecology-Index-heading-0260"></a>
 
@@ -10330,7 +10330,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 - 교전: 흰십자단 공임 당직은 양압 문짝의 걸쇠를 잠그고 작업등을 골목 안쪽으로 돌린다. 창동방호가 물자 당직은 필터 상자를 봉인 부속실 안쪽 선반에 올려 둔다.
 - 교섭: 중앙정보부 순회 당직은 차압 숫자를 약탈단 두목의 판과 당직 기록판에 같이 적는다. 흰십자단 공임 당직과 창동방호가 물자 당직은 그 판이 걸린 문짝 옆에 서 있다.
 - 도덕 비용: 자루에 들어간 필터의 수량만큼 양압 문짝의 필터는 한 겹으로 남아 있다. 창동방호가의 방호 상자는 선반과 자루에 나뉘어 있다.
-- 시나리오: [G08-SC1](/wiki/Hostile-Group-G08/#g08-sc1-선반의-필터), [G08-SC2](/wiki/Hostile-Group-G08/#g08-sc2-공임의-커튼), [G08-SC3](/wiki/Hostile-Group-G08/#g08-sc3-입구의-먼지)
+- 시나리오: [G08-SC1](/wiki/Hostile-Group-G08/), [G08-SC2](/wiki/Hostile-Group-G08/), [G08-SC3](/wiki/Hostile-Group-G08/)
 
 <a id="Hostile-Ecology-Index-heading-0268"></a>
 
@@ -10387,7 +10387,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 - 교전: 서울역재고가 재고 당직은 저온 회랑 반출 통로의 빗장을 걸고 작업등을 밸브 앞에 둔다. 재고 당직은 선반의 연료통과 공구를 재고 장부에 칸마다 적고 탈영병 분대장 앞의 탄약 상자 수를 같은 장부 아래칸에 적는다. 아관사 검수 당직은 아차산 검수 창 출입문을 걸어 잠그고 검수 인원을 저온 창고 안쪽에 세워 둔다.
 - 교섭: 여의도출자연합회 출자 당직과 아관사 검수 당직이 저온 창고 문간에서 창고 시간 칸을 나눈다. 출자 당직은 냉열 수량을 열차 쪽 칸에 적고 검수 당직은 아차산 검수 창 출입 시간을 낮 칸에 적는다. 서울역재고가 재고 당직은 두 칸을 재고 장부 한 면에 옮겨 적고 탈영병 분대장은 그 면 앞에 서 있다.
 - 도덕 비용: 아차산 검수 창에서는 낮에도 출입문이 잠겨 있고 검수 인원은 저온 창고 안에 선다. 서울역재고가의 연료통과 공구는 반출 칸에 적힌 채 저온 회랑에 있다. 여의도출자연합회 출자 당직은 냉열 수량을 두만강극동전구 열차 칸에 적어 두었다. 조하람 쪽 인원은 검수 창 바닥에서 물러나 창고 안쪽 벽에 붙어 선다.
-- 시나리오: [G09-SC1](/wiki/Hostile-Group-G09/#g09-sc1-저온-회랑의-반출), [G09-SC2](/wiki/Hostile-Group-G09/#g09-sc2-검수-창의-장비-더미), [G09-SC3](/wiki/Hostile-Group-G09/#g09-sc3-냉열-열차와-선로-쪽-문)
+- 시나리오: [G09-SC1](/wiki/Hostile-Group-G09/), [G09-SC2](/wiki/Hostile-Group-G09/), [G09-SC3](/wiki/Hostile-Group-G09/)
 
 <a id="Hostile-Ecology-Index-heading-0276"></a>
 
@@ -10439,7 +10439,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 - 위계: 광신도 인도자는 회랑 분기 문턱에 선다. 광신도 정예조는 배수로와 배급고 문짝을 맡는다. 광신도 척후조는 환기구와 배급 동선에 서서 인도자 쪽을 향한다. 수행은 인도자 뒤 마른 발판에서 자루와 물통을 든다.
 - 연결: {"corporations_successor_only":["HC10"],"houses":["HC10"],"states":["S10","S15"],"synthetics":["H10"],"theaters":["XT05"]}
 - 상승 1-3: 북한산보국문 대피 회랑에서는 광신도 인도자와 수행이 문턱에 서 있다. 장마가 시작되면 광신도 정예조가 무릎까지 물이 찬 배수로 양쪽에 늘어서 통로를 막는다. 배급 주기가 겹치면 광신도 척후조가 회랑에서 가락 하층 배급고 문앞까지 늘어서고 문 안에는 자루가 쌓여 있다.
-- 시나리오: [G10-SC1](/wiki/Hostile-Group-G10/#g10-sc1-회랑-문턱의-포대), [G10-SC2](/wiki/Hostile-Group-G10/#g10-sc2-하층-배급고의-문), [G10-SC3](/wiki/Hostile-Group-G10/#g10-sc3-해풍이-닿는-외곽-계단)
+- 시나리오: [G10-SC1](/wiki/Hostile-Group-G10/), [G10-SC2](/wiki/Hostile-Group-G10/), [G10-SC3](/wiki/Hostile-Group-G10/)
 
 <a id="Hostile-Ecology-Index-heading-0284"></a>
 
@@ -10490,7 +10490,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 - 교전: 용산호송가 호송 당직은 배정 표를 손에 들고 수서 야간 호송 창의 걸쇠를 잠근다. 성하그룹 정비 당직은 정비 장부의 칸 수와 창 턱의 배터리 수를 맞춘다. Arc 복도 당직은 당직 두 사람이 선 자리에서 클리닉 잔여 복도 입구를 연다.
 - 교섭: 성하그룹 정비 당직과 Arc 복도 당직은 용산호송가의 수서 야간 호송 창에서 배터리 칸과 복도 시간을 한 장부에 나눈다. 임진강관문전구가 검역과 귀환 명부 절차를 강화하면 그 나눔을 명부 사본의 순서에 맞춘다. 김도하는 창 앞 인원수를 그 순서 칸에 둔다.
 - 도덕 비용: 교환이 끝난 칸 수만큼 야간 호송의 출발 인원이 창에 더 선다. 당직은 클리닉 잔여 복도의 당직 시간을 이탈 인간형 호위조의 교환 길에 쓴다. 성하그룹 정비 장부의 소모 칸에는 부품 마모 상한에 닿은 이음새 덮개의 수량이 남아 있다.
-- 시나리오: [G11-SC1](/wiki/Hostile-Group-G11/#g11-sc1-호송-창의-배터리-칸), [G11-SC2](/wiki/Hostile-Group-G11/#g11-sc2-창-앞의-나눔), [G11-SC3](/wiki/Hostile-Group-G11/#g11-sc3-귀환-명부와-마모-상한)
+- 시나리오: [G11-SC1](/wiki/Hostile-Group-G11/), [G11-SC2](/wiki/Hostile-Group-G11/), [G11-SC3](/wiki/Hostile-Group-G11/)
 
 <a id="Hostile-Ecology-Index-heading-0292"></a>
 
@@ -10547,7 +10547,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 - 교전: 신내운수 화물 당직은 엘리베이터 문을 닫아 두고 화물 전원을 승강 패널에서 내려 둔다. 당직은 칸 입구에 화물 철장을 포개 둔다. 수문국 급수 당직은 역세 일정표의 시각에 갤러리 해치를 잠가 둔다. 금천구청중기가 기계 당직은 승강 패널의 차단기를 내린 채 패널 앞에 있다.
 - 교섭: 신내운수 화물 당직과 수문국 급수 당직은 세척 시각과 화물 칸 시각을 한 표에 적는다. 금천구청중기가 기계 당직은 그 시각에 승강 패널 앞에 있다. 이채온 당직은 승강장 탁자의 상자 옆에 있다. 서해곡창전구 부두 당직은 분진 시각을 같은 표의 아래칸에 적는다.
 - 도덕 비용: 신내운수 화물 당직은 칸이 막힌 밤에도 승강장에 있다. 그 밤의 화물 칸은 승강장에 머문다. 수문국 급수 당직의 갤러리 물통은 탈영병 물통 줄에 있다. 여의도 정수 필터 갤러리의 역세 물은 밸브 앞에 머문다. 금천구청중기가 기계 당직은 난간의 기관총과 같은 층에서 차단기 앞에 서 있다.
-- 시나리오: [G12-SC1](/wiki/Hostile-Group-G12/#g12-sc1-분진-통로-승강장), [G12-SC2](/wiki/Hostile-Group-G12/#g12-sc2-역세-시각의-해치), [G12-SC3](/wiki/Hostile-Group-G12/#g12-sc3-부두-분진의-외곽)
+- 시나리오: [G12-SC1](/wiki/Hostile-Group-G12/), [G12-SC2](/wiki/Hostile-Group-G12/), [G12-SC3](/wiki/Hostile-Group-G12/)
 
 <a id="Hostile-Ecology-Index-heading-0300"></a>
 
