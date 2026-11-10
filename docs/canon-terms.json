@@ -1,0 +1,14 @@
+{
+  "forbidden": [
+    { "id": "church-ko", "pattern": "대주교|대교구|명동대교구|교황|사제|부제|성당", "flags": "", "lang": "ko", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 기독교 교회제 어휘(한국어): 대주교·대교구·명동대교구·교황·사제·부제·성당." },
+    { "id": "church-en", "pattern": "Archbishop|Archdiocese|Pope|Priest|Deacon|Cathedral", "flags": "i", "lang": "en", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 기독교 교회제 어휘(영어)." },
+    { "id": "sixteen-states-ko", "pattern": "십육국 체제", "flags": "", "lang": "ko", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 십육국 국가체제 서술(한국어)." },
+    { "id": "sixteen-states-en", "pattern": "sixteen-state", "flags": "i", "lang": "en", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 십육국 국가체제 서술(영어)." },
+    { "id": "slaughter-order-ko", "pattern": "살육 명령", "flags": "", "lang": "ko", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 AI 살육 명령 서사(한국어)." },
+    { "id": "slaughter-order-en", "pattern": "slaughter order", "flags": "i", "lang": "en", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 AI 살육 명령 서사(영어)." },
+    { "id": "cold-weapons-ko", "pattern": "냉병기", "flags": "", "lang": "ko", "allowedContext": [], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 폐기된 냉병기 전제 서술(한국어)." }
+  ],
+  "required": [
+    { "id": "premise-seoul-ko", "pattern": "서울", "flags": "", "lang": "ko", "minPerDoc": 1, "docs": ["Station-Interior-Construction"], "note": "[스타터 세트 — 추후 canon-bible 작업이 교체함] 예시 필수 항목: 이 문서 한국어 본문에는 '서울'이 최소 1회 등장해야 한다." }
+  ]
+}
