@@ -5,6 +5,7 @@
 //   The showcase is a separate authored app (Korean voice, English subtitles) and is exempt from the language rules
 //   but must exist with its assets.
 //   Every internal #fragment link must resolve to an id/name on its own page or on the target built page (en and ko).
+//   Relative internal hrefs are resolved against the source page's own URL path before the fragment is checked.
 //   Links already broken in the current content are grandfathered by docs/.anchor-baseline-broken (one `page -> target#fragment`
 //   per line); any fragment broken outside that baseline fails the check. Regenerate the baseline with --write-fragment-baseline.
 import fs from 'node:fs';
@@ -47,13 +48,18 @@ const slugOf = (rel) => rel.replace(/^(?:ko\/)?(?:wiki|gdd)\//, '').replace(/\/i
       const href = decodeHtml(m[2]);
       const hash = href.indexOf('#');
       if (hash < 0) continue;
-      const pathname = href.slice(0, hash);
+      let pathname = href.slice(0, hash);
       let fragment = href.slice(hash + 1);
       try { fragment = decodeURIComponent(fragment); } catch { /* keep the raw fragment */ }
       if (!fragment) continue;
       let targetRel;
       if (!pathname) targetRel = rel; // same-page fragment
       else {
+        // A relative internal URL is resolved against the source page's own URL path (en pages and /ko/ pages alike),
+        // so ../person-0002/#frag is checked against person-0002's anchors instead of being skipped.
+        if (!pathname.startsWith('/') && !/^[a-z][a-z0-9+.-]*:/i.test(pathname)) {
+          pathname = path.posix.join(path.posix.dirname(`/${rel}`), pathname.replace(/[?].*$/, ''));
+        }
         const target = pathname.replace(/\/+$/, '').replace(/\/index$/, '');
         const match = target.match(/^\/(ko\/)?(wiki|gdd)\/(.+)$/);
         if (!match) continue; // external URLs and non-page assets are out of scope
