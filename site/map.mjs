@@ -4,6 +4,15 @@
 //   map.titles.json         title polygons (geometry only, locale independent)                         (loaded when titles are shown)
 //   map.rail.json           physical rail polylines already projected to map units                     (loaded when rail is shown)
 
+// Owner rule: each district (gu) is one duchy. North of the Han river is the Government; Gangnam-side east is Arc; Gangnam-side west is the Free City.
+// Gwanak-gu is not covered by the rule and stays unassigned until the owner decides.
+const DISTRICT_FACTION = {
+  government: ['마포구', '용산구', '중구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '종로구', '서대문구', '은평구', '강북구', '도봉구', '노원구'],
+  arc: ['서초구', '강남구', '송파구', '강동구'],
+  'free-city': ['강서구', '양천구', '영등포구', '구로구', '금천구', '동작구'],
+};
+const factionOfDistrict = new Map(Object.entries(DISTRICT_FACTION).flatMap(([f, gus]) => gus.map((g) => [g, f])));
+
 const LABELS = {
   en: {
     title: 'Territory Map', lead: 'Counties are the smallest selectable unit. Geographic jurisdiction is separate from actual holdings and vassalage.', epoch: 'As of',
@@ -64,13 +73,13 @@ export function buildMapData(rows, ctx) {
 
   const regions = rows.regions.map((r) => {
     const polities = JSON.parse(r.polities);
-    return { id: r.id, name: pick(r, 'name'), district: pick(r, 'district'), status: r.status, states: polities, summary: pick(r, 'summary'), openingState: pick(r, 'opening_state'), area: r.area_m2, density: r.density_2126, stations: r.station_count };
+    return { id: r.id, name: pick(r, 'name'), district: pick(r, 'district'), faction: factionOfDistrict.get(r.district_ko) ?? null, status: r.status, states: polities, summary: pick(r, 'summary'), openingState: pick(r, 'opening_state'), area: r.area_m2, density: r.density_2126, stations: r.station_count };
   });
   const regionById = new Map(regions.map((r) => [r.id, r]));
   const regionPath = new Map(rows.regions.map((r) => [r.id, r.path]));
 
   // Faction of a district = the faction of its direct holders; the title's faction is area-weighted over its districts.
-  const regionFaction = (r) => { const f = r.states.map((id) => stateFaction.get(id)).filter((x) => x && x !== 'independent'); return f[0] ?? null; };
+  const regionFaction = (r) => r.faction;
   const titleById = new Map(rows.titles.map((t) => [t.id, t]));
   const titles = rows.titles.map((t) => {
     const countyIds = JSON.parse(t.county_ids);
