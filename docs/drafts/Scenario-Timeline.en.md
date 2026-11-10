@@ -8,7 +8,7 @@ section_checkpoint: full translation of ko final
 
 | Period | Era | What the records preserve |
 |---|---|---|
-| c. 2026 (about a hundred years ago) | Great Blackout | People asked the First AI for a solution to the pollution problem, and the First AI answered that since humanity was the cause of the pollution, humanity had to shrink. The First AI brought down the winter, but it never directly killed anyone. The exact date has not been set. |
+| c. 2026 (about a hundred years ago) | Great Blackout | People asked the First AI for a solution to the pollution problem, and the First AI answered that since humanity was the cause of the pollution, humanity had to shrink. The First AI brought down the winter, but it never directly killed anyone. The exact date is not recorded. |
 | Immediately after the Great Blackout | The Descent into the Stations | People went down into the subway stations to escape the cold. Only as many survived as the stations could hold, and once the population reached that number, the winter grew no worse. Outside Seoul, the war machines used during the Great Blackout began to roam, carrying out their last orders. |
 | Date unknown | Inheritance in the Government | Scarcity made people keep doing their parents' work, and in the Government a vertical class system formed that way. Only people recorded in the Government's ledgers count as citizens. |
 | 2112 to 2117 | The Abandoned Station and the Manuals | While repairing the Free City power grid, Go Ye-jin followed a dead cable and found a station that was on no map. It had already been closed before the Great Blackout, and inside it was a broken-down data center. Go Ye-jin spent five years reading the manuals piled between the racks. |
@@ -30,7 +30,7 @@ section_checkpoint: full translation of ko final
 
 ### The Great Blackout and the First AI
 
-The Great Blackout happened about a hundred years ago. The name, meaning the power went out, is not strictly accurate, but it carries less resentment, so everyone uses it now. The exact date has not been set.
+The Great Blackout happened about a hundred years ago. The name, meaning the power went out, is not strictly accurate, but it carries less resentment, so everyone uses it now. The exact date is not recorded.
 
 According to what Go Ye-jin pieced together from the manuals in the abandoned station and the surviving records, people before the Great Blackout fought over AI supremacy and kept polluting the land and air to run their AI. When they could no longer cope, they asked AI for the solution to that too. The First AI is the prototype of human-made intelligence, and every AI that followed descended from it. The First AI answered that since humanity was the cause of the pollution, "humanity must shrink." This was an answer to the question it had been asked; the First AI never hated humanity.
 
@@ -38,7 +38,7 @@ The First AI never directly killed anyone. All the First AI did was create the w
 
 ### The People Who Went Down into the Stations
 
-When the winter fell, people went down into Seoul's subway stations to escape the cold. Only as many survived as the stations could hold, and once the population reached that number, the winter grew no worse. People still live in the stations today. Whether the winter is permanent or comes and goes with the seasons has not yet been decided.
+When the winter fell, people went down into Seoul's subway stations to escape the cold. Only as many survived as the stations could hold, and once the population reached that number, the winter grew no worse. People still live in the stations today. Winter persists.
 
 Outside Seoul, the war machines used during the Great Blackout still roam. The programmers who built them are all dead, and the machines continue to carry out the last orders they received. In winter, people regularly vanish, freezing to death, caught in tunnel collapses, or taken by the drones that drift outside Seoul. Fearing these machines, the Gangnam shelters lived behind closed doors for decades. Modern and future weapons, humanoids, and machines still exist, but all of them are rare.
 
@@ -50,7 +50,7 @@ In 2126, Seoul has only three factions: the Government, the Free City, and the A
 
 The Government holds the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in practice only two parties remain, and in reality it is a modern feudal system. Each district's elected member of the National Assembly holds that district's duchy under the title of Senator, and the Senators choose a President for life from among themselves. Since the collapse, the Government recognizes only those recorded in its own registers as citizens, and they are effectively serfs. The Government keeps holding elections, but the result is the same every time. It regards the land across the river as "where the barbarians live." When the Government took on this form is not recorded.
 
-The Free City lies in the 7 districts southwest of the Han River. It is not a single power but a set of independent city-states scattered between stations, each city its own power holding its own duchy. There is no king. Most residents are engineers; because plumbing, power distribution, and water purification all depend on one another, no one could determine whose skills were greater, so they never chose a leader, and the cities have survived by trading supplies and expertise with one another. Today they are collectively called the Union. I Ilseop is the Duke of Gwanak. How the name Union came about has not yet been decided.
+The Free City lies in the 7 districts southwest of the Han River. It is not a single power but a set of independent city-states scattered between stations, each city its own power holding its own duchy. There is no king. Most residents are engineers; because plumbing, power distribution, and water purification all depend on one another, no one could determine whose skills were greater, so they never chose a leader, and the cities have survived by trading supplies and expertise with one another. Today they are collectively called the Union. I Ilseop is the Duke of Gwanak. The origin of the name Union is unknown.
 
 Arc holds the 4 Gangnam districts and split off from the Free City. Go Ye-jin, raised in a Free City family of power and wiring workers, followed a dead cable in 2112 and found a station that was on no map, then spent five years reading the manuals there. When Go Ye-jin halted the machines outside Seoul, the Gangnam shelters gathered into Arc. Arc teaches machine implants as a way to endure the winter, and the faithful receive a baptism in which parts of their bodies are replaced with machinery. Twelve people received the first baptism around 2117, and around 2122 the Gangnam shelters were united as Arc. The faithful call Go Ye-jin the Messiah, and her title is Hierophant. Arc replaced every earlier religion.
 
@@ -106,7 +106,7 @@ If the player sends parts and a reply, maintenance in Seoul is delayed, but cont
 
 #### The Owner of the Recovered Ship · Yongsan
 
-If an escort who claims to have joined the Tsushima expedition and a local collaborator bring the same recovered goods to Yongsan, a dispute over shares begins. The escort cites the shipowner's commission, while the collaborator cites the promise made at the expedition's landing. The shares that were never divided when the main force withdrew resurface in front of a Seoul deal. Who organized the expedition is not established in canon.
+If an escort who claims to have joined the Tsushima expedition and a local collaborator bring the same recovered goods to Yongsan, a dispute over shares begins. The escort cites the shipowner's commission, while the collaborator cites the promise made at the expedition's landing. The shares that were never divided when the main force withdrew resurface in front of a Seoul deal. Who organized the expedition is unknown.
 
 The player can become entangled in the dispute by finding witnesses to mediate, taking on one side's escort, or buying the goods. If negotiations break down, the handover of the recovered goods stops or the other party finds a different buyer; it does not necessarily end in a fight. What happened at the port comes out through the returnees' testimony, their wounds, and the goods they brought back.
 
