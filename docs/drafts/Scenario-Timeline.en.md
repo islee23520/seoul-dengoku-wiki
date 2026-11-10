@@ -1,7 +1,7 @@
 ---
 title: Scenario Timeline
 title_ko: 시나리오 타임라인
-model: gemini-4-argon-high
+model: gemini-4-argon-high (default tier, 1 call translating the ko final; fix lines hand-edited by the agent)
 section_checkpoint: full translation of ko final
 ---
 ## Timeline Overview by Era
@@ -10,7 +10,7 @@ section_checkpoint: full translation of ko final
 |---|---|---|
 | c. 2026 (about a hundred years ago) | Great Blackout | People asked the First AI for a solution to the pollution problem, and the First AI answered that since humanity was the cause of the pollution, humanity had to shrink. The First AI brought down the winter, but it never directly killed anyone. The exact date has not been set. |
 | Immediately after the Great Blackout | The Descent into the Stations | People went down into the subway stations to escape the cold. Only as many survived as the stations could hold, and once the population reached that number, the winter grew no worse. Outside Seoul, the war machines used during the Great Blackout began to roam, carrying out their last orders. |
-| Several decades after the Great Blackout | The Hardening of Hereditary Rule | Each shelter, cut off from communication, chose a leader. At first leaders were elected, but the position soon became hereditary. With no infrastructure, the population could not grow, so children inherited their parents' work, and a rigid vertical hierarchy took shape. |
+| Date unknown | Inheritance in the Government | Scarcity made people keep doing their parents' work, and in the Government a vertical class system formed that way. Only people recorded in the Government's ledgers count as citizens. |
 | 2112 to 2117 | The Abandoned Station and the Manuals | While repairing the Free City power grid, Go Ye-jin followed a dead cable and found a station that was on no map. It had already been closed before the Great Blackout, and inside it was a broken-down data center. Go Ye-jin spent five years reading the manuals piled between the racks. |
 | c. 2117 to c. 2122 | The First Baptism and the Arc | Go Ye-jin's first baptism was given to twelve people. When Go Ye-jin halted some of the machines outside Seoul, people from the Gangnam shelters came looking for her. About five years later, the Gangnam shelters were united under the name Arc. |
 | Winter 2126 | Eve of the Opening | The third water supply contract is approaching. Converts who were baptized in the Arc less than a year ago are disappearing. Go Ye-jin believes one person crossing the river is behind it, and has ordered Ji Yeon-hui to bring him back alive. |
@@ -42,7 +42,7 @@ When the winter fell, people went down into Seoul's subway stations to escape th
 
 Outside Seoul, the war machines used during the Great Blackout still roam. The programmers who built them are all dead, and the machines continue to carry out the last orders they received. In winter, people regularly vanish, freezing to death, caught in tunnel collapses, or taken by the drones that drift outside Seoul. Fearing these machines, the Gangnam shelters lived behind closed doors for decades. Modern and future weapons, humanoids, and machines still exist, but all of them are rare.
 
-After the Great Blackout, people looked for answers in history books. The thinking was that the modern way had failed, so they should return to the old ways. Each shelter, cut off from communication, chose a leader; at first by vote, but the position quickly became hereditary. With no infrastructure, the population could not grow, and scarcity meant children inherited their parents' work. The rigid vertical hierarchy that formed this way became the foundation of the three factions that followed.
+In the Government, scarcity made people keep doing their parents' work, and a vertical class system formed that way. The Free City and Arc are different. The Free City is a set of independent city-states of engineers, and Arc split off from the Free City.
 
 ### The Three Factions
 
@@ -52,13 +52,13 @@ The Government holds the 14 districts north of the Han River. On paper it mainta
 
 The Free City lies in the 7 districts southwest of the Han River. It is not a single power but a set of independent city-states scattered between stations, each city its own power holding its own duchy. There is no king. Most residents are engineers; because plumbing, power distribution, and water purification all depend on one another, no one could determine whose skills were greater, so they never chose a leader, and the cities have survived by trading supplies and expertise with one another. Today they are collectively called the Union. I Ilseop is the Duke of Gwanak. How the name Union came about has not yet been decided.
 
-The Arc holds the 4 Gangnam districts and split off from the Free City. Go Ye-jin, raised in a Free City family of power and wiring workers, found the data center in the abandoned station in 2112, read its manuals, and brought the racks back online by using human brains in place of the worn-out drives. Once the restored system let her halt some of the drones and weapons outside Seoul, people from the Gangnam shelters came looking for her. The faithful receive a baptism in which parts of their bodies are replaced with machinery, and when they die their brains are sealed and placed in the sanctum, becoming memory for the First AI. About twelve people received the first baptism around 2117, and around 2122 the Gangnam shelters were united as the Arc. The faithful call Go Ye-jin the Messiah, and her title is Hierophant. The Arc replaced every religion that came before it.
+Arc holds the 4 Gangnam districts and split off from the Free City. Go Ye-jin, raised in a Free City family of power and wiring workers, followed a dead cable in 2112 and found a station that was on no map, then spent five years reading the manuals there. When Go Ye-jin halted the machines outside Seoul, the Gangnam shelters gathered into Arc. Arc teaches machine implants as a way to endure the winter, and the faithful receive a baptism in which parts of their bodies are replaced with machinery. Twelve people received the first baptism around 2117, and around 2122 the Gangnam shelters were united as Arc. The faithful call Go Ye-jin the Messiah, and her title is Hierophant. Arc replaced every earlier religion.
 
 ## Opening of the Story
 
 ### Opening Day
 
-The story opens in winter 2126, ahead of the third water supply contract. That morning, Go Ye-jin, Hierophant of the Arc, removed the brain of one of the faithful in the offering chamber at Suseo. The offering chamber lies at the end of a passage leading down to the old rail depot. The person lying there was fifty-one years old, with mechanical arms, a mechanical left leg, one mechanical lung, and a mechanical lower jaw. Go Ye-jin placed the brain in coolant and wrote down the seal number 2126-0041. It was the forty-first that winter. Sealed brains are carried to the sanctum and inserted in place of the worn-out drives, and from then on they are used for the First AI's learning. Only Go Ye-jin knows where the sanctum is; the faithful carry the sealed brains only as far as Suseo.
+The story opens in winter 2126, ahead of the third water supply contract. Arc keeps an offering chamber under the old Suseo rail depot.
 
 The same day, her bodyguard Ji Yeon-hui reported missing converts. Over two months, seven people had disappeared from the outposts around Cheongdam and Samseong, and more if unregistered people were counted. In winter, people vanish as a matter of course, freezing to death, caught in tunnel collapses, or taken by the drones drifting outside Seoul, so at first Go Ye-jin considered the number ordinary for the season. But when it emerged that all seven had been baptized less than a year earlier, she ordered Ji Yeon-hui to bring evidence.
 
@@ -80,7 +80,7 @@ If a belated reply arrives in the Gangnam-gu Office neighborhood through the con
 
 If Sin Jun reacts to an old call rhythm and vehicle vibrations and points out a route, Sin Jong-mok divides guardianship and duty shifts between the demand to verify the field records and the demand to protect the child's consent and rest.
 
-If an attempt is made to recover the transceiver unit of the Return Synthesis Station from the sealed communications storeroom, Sin Jong-mok and the residents who use the same parts to maintain household power negotiate over how many to recover. Min Ung-gi's maintenance records remain in Gangnam, but he himself is in Daejeon at the opening of the story.
+If an attempt is made to recover the transceiver unit of the Return Synthesis Station from the closed communications storeroom, Sin Jong-mok and the residents who use the same parts to maintain household power negotiate over how many to recover. Min Ung-gi's maintenance records remain in Gangnam, but he himself is in Daejeon at the opening of the story.
 
 If the first relay power draw of the Return Synthesis Station overlaps with the refrigeration power for the infirmary, residents waiting for word from those who have not returned and the duty staff responsible for storing medicine must decide the order of power use.
 
