@@ -11,13 +11,18 @@
 
 ```
 ---
-title: New English Title        # 선택 — 있을 때만 행의 title을 바꾼다
-title_ko: 새 한국어 제목         # 선택 — 있을 때만 행의 title_ko를 바꾼다
-model: gemini-3-pro             # 필수 — 초안을 만든 모델 id(빈 값 불가)
-section_checkpoint: G07 1-4절 완료  # 선택 — 절 단위 진행 기록
+title: New English Title
+title_ko: 새 한국어 제목
+model: gemini-3-pro
+section_checkpoint: G07 1-4절 완료
 ---
 (이 뒤의 모든 내용이 본문이다)
 ```
+
+- 네 필드 모두 값은 **줄 끝까지 그대로 저장된다** — 줄 안 주석 문법이 없으므로 설명을 값에 붙이지 않는다.
+  - `title`(선택): 있을 때만 행의 영어 title을 바꾼다. `title_ko`(선택): 있을 때만 한국어 title_ko를 바꾼다.
+  - `model`(필수): 초안을 만든 모델 id. 빈 값이면 기각된다.
+  - `section_checkpoint`(선택): 절 단위 진행 기록으로, 재개 지점 식별에만 쓰인다.
 
 - 닫는 `---` 행 다음 줄부터 파일 끝까지가 그대로 `body_ko_md`(ko 파일) / `body_md`(en 파일) 값을 통째로 교체한다.
 - **긴 문서는 절 단위로 이어 쓴다.** 조각은 `<dir>/<slug>.ko.md.part-<n>` 파일에 쌓고, 완성본을 합쳐
@@ -53,7 +58,7 @@ node scripts/pages/scan-terms.mjs --terms docs/canon-terms.json --scope <slug>,<
 | 5 | ko/en 마크다운 제목(`#`로 시작하는 줄) 수 불일치 |
 | 6 | 새 본문이 교체 대상 본문의 50% 미만(바이트 기준, `--allow-shrink` 필요) |
 | 7 | front matter의 `model:` 값이 비었음 |
-| 8 | 본문에 NUL 바이트 또는 짝이 맞지 않는 HTML 주석(`<!-- -->`) |
+| 8 | 본문에 NUL 바이트 또는 순서가 잘못된 HTML 주석(열지 않은 닫기 `-->`, 중첩 여는 `<!--`, 끝까지 닫히지 않음). 빈 주석 `<!---->`은 여·닫 순서가 맞으므로 허용한다 |
 | 10 | `--roundtrip` 재직렬화가 원본과 바이트 불일치 |
 | 11 | 처리할 초안이 없음(디렉터리·slug 불일치 포함) |
 | 12 | SQL 적재 실패 |
