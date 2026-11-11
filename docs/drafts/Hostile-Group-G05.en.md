@@ -818,7 +818,7 @@ Each time a tail vanished into a gap in the platform or a guide display suddenly
 
 It was close to an ordinary animal community whose density rose where food, warmth, and shelter overlapped.
 
-But the dispersed core-nest network, the pattern of learning the order of pest control, and the management procedure using one-way escape routes were not real disease-control guidelines but fictional ecological rules that held only in this world.
+But the dispersed core-nest network, the pattern of learning the order of pest control, and the management procedure using one-way escape routes were not real disease-control guidelines but ecological rules observed only in this region.
 
 So explanations that blamed the colony's appearance on the uncleanliness of a particular group or on refugees neither fit the facts nor helped the response.
 

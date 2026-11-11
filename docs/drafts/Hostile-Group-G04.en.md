@@ -19,7 +19,7 @@ From conduit patrol to conduit bones, these were ordinary raccoons adapted to th
 
 | Item | Record |
 |---|---|
-| Origin | When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Arc in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog. / Real-world sources were consulted only for the range in which raccoons appeared in cities and streams, and the rule of sensing the water level before the pumps was fiction. |
+| Origin | When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Arc in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog. / The range in which raccoons appeared in cities and streams could be explained by ordinary wildlife observation, but the rule of sensing the water level before the pumps was observed only in this region after the collapse. |
 | Habitat and movement | The core habitat was the pump-house connecting pipes of the Ttukseom Union and the dry refuge cavities under the workshops. / When flood stage rose they dispersed into the Mapo Union's transmission underground galleries and vents, and when a cold wave and a logistics break from the XT04 Duman River Far East Theater changed feed density they moved briefly onto the eastern branch lines. / By day they patrolled the pipes, and by night the surface alleys within 50m. |
 | Food and energy | Aquatic prey, organic refuse, and carcass remains were the main resources, and dry hiding places and low flow were the upkeep cost. / When HC04 the Ttukseom Heat-Source House skipped dredging the pipe deposits, the food film thickened and density rose, and when it over-dredged, the family groups were pushed out into the surface markets. / Droppings and biofilm masked the water-quality sensor readings and delayed pump judgment. |
 | Life cycle and upkeep | In the dry season each family group used its own dry hiding place and feeding ground, and before the rain they moved their kits into the high ventilation rooms along trunks where the water rose first. / After a flood, when the food film thickened, several families shared the same pipe by time slot, and when hiding places flooded in succession they dispersed into the surface alleys. |
@@ -78,7 +78,7 @@ Her whiskers were long and the rust of the pipes had soaked into her paw pads; s
 
 She was the elder female of a family group that settled in the dry refuge chamber beside the Ttukseom Union pumps after the inspection of the Jungnang and Tancheon trunk lines broke off.
 
-The rule that she knew the water level before the pumps did was fiction, and no accident was attributed to any real local government.
+The rule that she knew the water level before the pumps did was observed only in this region, and no accident was attributed to any real local government.
 
 <a id="Hostile-Group-G04-heading-0020"></a>
 
@@ -259,7 +259,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 | Common species, variants and command scope | Current-Whiskers presses its belly to the low-flow floor beside a pump and reads the current with its whiskers. When a pipe fills, that same sense goes blind, setting its niche apart from surface patrols. |
 
 - Role and Body: It was an ordinary ecological individual of the Raccoon Dog that pressed its belly to the floor of the low-current pipes beside the pumps and read the direction and strength of the current with its whiskers. Its build was smaller than a surface adult's, and its paw pads were broad to suit slippery concrete. It felt the change in pressure before the water rose with its feet and chest, but when the pipe filled or the air layer broke off, the same sense went dead.
-- Origin: After the collapse, once the inspection of the Jungnang and Tancheon trunk lines broke off, it followed aquatic food and stayed in the Ttukseom Union Arc pump branch that people had emptied. The saying that it knew the water level before the pumps was fictional family learning, not an accident of any real institution.
+- Origin: After the collapse, once the inspection of the Jungnang and Tancheon trunk lines broke off, it followed aquatic food and stayed in the Ttukseom Union Arc pump branch that people had emptied. The saying that it knew the water level before the pumps was family learning observed only in this region, not an accident of any real institution.
 - Habitat: By day it clung to the floors of slow-current pipes and the ledges beneath the manholes, and even at night it hardly went out toward the exits. When the flood level rose it only moved to a high joint of the same pipe; the Mapo Union gallery was not within this individual's daily range.
 - Needs: Small aquatic food and the microbial film on the pipe walls were its staple food, and a gentle current had to be kept for it to save swimming energy. When disinfectant flowed thick, its whiskers were dulled for several days and it lost track of where the food was.
 - Life Cycle and Maintenance: In the dry season it went back and forth along only one branch line and rubbed its whiskers to remove foreign matter. When continuous rain lifted the floor, it moved its own body to the joints first, not its young, and after the thaw it came back to the familiar low-current stretch.
@@ -526,7 +526,7 @@ The sight of wet fur rising from storm drains and covered channels stirred the f
 
 The part that touched reality went no further than the fact that wildlife could appear around urban streams and facilities.
 
-The order of sensing the water level before the pumps and influencing pipeline operations was a fiction set in this region, and did not explain accidents at any real institution or business.
+The order of sensing the water level before the pumps and influencing pipeline operations was observed only in this region after the collapse, and did not explain accidents at any real institution or business.
 
 The core habitat was the low-velocity pipelines and dry shelters beside the Ttukseom Union pumps.
 

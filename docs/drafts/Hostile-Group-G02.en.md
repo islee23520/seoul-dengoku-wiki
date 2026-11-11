@@ -19,7 +19,7 @@ The base form of the Large-billed Crow is a wild bird that moves by the sound sh
 
 | Item | Record |
 |---|---|
-| Origin | After breeding pairs settled on the factory pylons of the Daerim–Garibong Korean-Chinese corridor and the cables of the Han River bridges, the Large-billed Crow formed as the waste heat of the Yeongdeungpo Line Gauge factories and the sparks of the Guro industrial-park trolley wires gathered night insects. / Real-world sources supported only the breeding-season territorial behavior of large-billed crows and the range of human responses; the rule by which they learned signal interference as alarms and spread it was fiction. |
+| Origin | After breeding pairs settled on the factory pylons of the Daerim–Garibong Korean-Chinese corridor and the cables of the Han River bridges, the Large-billed Crow formed as the waste heat of the Yeongdeungpo Line Gauge factories and the sparks of the Guro industrial-park trolley wires gathered night insects. / The breeding-season territorial behavior of large-billed crows and the range of human responses could be explained by ordinary wildlife observation, but the rule by which they learned signal interference as alarms and spread it was observed only in this region after the collapse. |
 | Habitat and movement | The core habitat is the group of factory roofs and pylons at Daerim and Guro on the Yeongdeungpo Line. / Arc 1 sits on top of the Daerim and Garibong Joseonjok corridor, and in the breeding season the flock circles over bridges, school passages, and evacuation stairs. / In the non-breeding season, matching the sea wind and the insect density pushed in from the West Sea Granary Theater (XT02), it moves for a time to the western waterfront. / When wire-repair work begins, part of the band moves along the work basket. |
 | Food and energy | The food is insects, leftover market protein, and small carcasses, and for nest material they pick fine wire with the sheath stripped and fiber scrap. / The shorter the cycle on which the Sinjeong Wheel House (HC02) replaces wire sheathing, the less nest material there is and the more territorial attacks increase, and leaving the sheathing untended increases the risk of a short. / The cycle in which droppings contaminate the insulators connects directly to communications uptime. |
 | Life cycle and upkeep | In spring a breeding pair defends one pylon, and in the non-breeding season several families join a communal roost. / Repeated safety signals and food rewards, more than nest success, decide the return site the next year, and after a forced removal the young individuals test a new roost on the adjacent school route. |
@@ -382,7 +382,7 @@ In the roof gutters of the Gauge factories on the Yeongdeungpo Line lived a weav
 
 ### Origin
 
-In the spring when the Sinjeong Wheel House stripped the wire sheathing all at once, the scraps piled up in the roof gutters, and one individual began winding, remembering only the feel of copper and the elasticity of fiber. Unable to read the content of the radio waves, it kept only the pairing of glitter and softness, and that habit hardened into a fictional weaving labor.
+In the spring when the Sinjeong Wheel House stripped the wire sheathing all at once, the scraps piled up in the roof gutters, and one individual began winding, remembering only the feel of copper and the elasticity of fiber. Unable to read the content of the radio waves, it kept only the pairing of glitter and softness, and that habit hardened into weaving labor.
 
 <a id="Hostile-Group-G02-heading-0110"></a>
 
@@ -534,7 +534,7 @@ The fouling-specialized body that sat on the caps of the insulators on the Nanji
 
 ### Origin
 
-When the cycle of droppings fouling the insulators touched on communication time, only the individuals that picked caps for warmth and roughness remained. People tried to read outages from the calls, but the real cause was the thickness of the film, and that misunderstanding fixed the fictional fouling role in place.
+When the cycle of droppings fouling the insulators touched on communication time, only the individuals that picked caps for warmth and roughness remained. People tried to read outages from the calls, but the real cause was the thickness of the film, and that misunderstanding fixed the false fouling role in place.
 
 <a id="Hostile-Group-G02-heading-0156"></a>
 
@@ -610,7 +610,7 @@ In spring, the bodies of a breeding pair that split one tower into upper and low
 
 ### Origin
 
-On top of the territorial defense that large-billed crows kept in the breeding season was laid a fictional division of labor in which one tower was split in two for sitting. The repetition of sparks and the appearance of workers taught the length of the radius, and when one side vanished, a neighboring pair tried out the empty place and clashes grew.
+On top of the territorial defense that large-billed crows kept in the breeding season was laid a division of labor in which one tower was split in two for sitting. The repetition of sparks and the appearance of workers taught the length of the radius, and when one side vanished, a neighboring pair tried out the empty place and clashes grew.
 
 <a id="Hostile-Group-G02-heading-0179"></a>
 
@@ -686,7 +686,7 @@ When the inspection bells learned by several families gathered into a single poi
 
 ### Origin
 
-On top of the rule that the nonbreeding communal roost shared only call patterns was laid the fiction that in weeks when the sea wind and breeding overlapped, the bells of different towers mixed over one bridge. The meaning of the radio waves was not read; only the density of the overlapping ringing remained, and that density made the place of the core.
+On top of the rule that the nonbreeding communal roost shared only call patterns was laid the occurrence that in weeks when the sea wind and breeding overlapped, the bells of different towers mixed over one bridge. The meaning of the radio waves was not read; only the density of the overlapping ringing remained, and that density made the place of the core.
 
 <a id="Hostile-Group-G02-heading-0202"></a>
 
@@ -838,7 +838,7 @@ When the column of air above the transmission inspection opening filled with sea
 
 ### Origin
 
-As the bridge cables and the sky above the inspection opening became a communal roost for several families, the fictional fortress arose in which the circle physically blocked the lines of people. On top of field experience that a straight breakthrough pushed the flock into the alleys, umbrella processions and substitute stairs were added as the response.
+As the bridge cables and the sky above the inspection opening became a communal roost for several families, the fortress arose in which the circle physically blocked the lines of people. On top of field experience that a straight breakthrough pushed the flock into the alleys, umbrella processions and substitute stairs were added as the response.
 
 <a id="Hostile-Group-G02-heading-0248"></a>
 
@@ -914,7 +914,7 @@ The day after a forced demolition, a young body with short wings sat on the scho
 
 ### Origin
 
-On top of the rule that repeated safety signals and food rewards, rather than nesting success, decided where the birds returned was added the fiction that young individuals tested the school routes after a demolition. The warmth of a handrail from which helmets and poles had vanished remained as the first reward, and that reward fixed the fledgling's place.
+On top of the rule that repeated safety signals and food rewards, rather than nesting success, decided where the birds returned was added the occurrence that young individuals tested the school routes after a demolition. The warmth of a handrail from which helmets and poles had vanished remained as the first reward, and that reward fixed the fledgling's place.
 
 <a id="Hostile-Group-G02-heading-0271"></a>
 
@@ -990,7 +990,7 @@ The aged individual beside the old transformer, whose neck stiffened only at the
 
 ### Origin
 
-It was a remnant of the days when the pattern of three horn blasts, two inspection bells, and the transformer start-up hum was learned as food and danger. The imitation in the communal roost carried the new call patterns over into the young individuals, but it could not carry them into this aged syrinx, and that lag became the fictional role of damage.
+It was a remnant of the days when the pattern of three horn blasts, two inspection bells, and the transformer start-up hum was learned as food and danger. The imitation in the communal roost carried the new call patterns over into the young individuals, but it could not carry them into this aged syrinx, and that lag became the false role of damage.
 
 <a id="Hostile-Group-G02-heading-0294"></a>
 
@@ -1278,7 +1278,7 @@ When the waste heat of the Yeongdeungpo Line Gauge factory roofs and the sparks 
 
 That large-billed crows guarded territories in the breeding season and adapted to human behavior rested on real ecology.
 
-But the rule by which they learned the sequences of horns, inspection bells, and transformer start-up sounds as signals of food and danger and spread them through the communal roosts belonged to the fictional history of this place.
+But the rule by which they learned the sequences of horns, inspection bells, and transformer start-up sounds as signals of food and danger and spread them through the communal roosts belonged to the history of this place.
 
 They did not read the content of the radio waves.
 

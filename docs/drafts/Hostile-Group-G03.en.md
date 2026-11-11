@@ -802,7 +802,7 @@ It had only one collar ring, but a corroded identification tag caught on its foo
 
 After the feeding times of the private shelters that had closed their doors stopped, a small family that found both the smell of thawing and shade under the sunscreens of the unloading yard fixed this spot as its sleeping place.
 
-The fictional UHF tag kept only a past cage number; the present base was the location of the shade and the sealed water drums.
+The UHF tag kept only a past cage number; the present base was the location of the shade and the sealed water drums.
 
 <a id="Hostile-Group-G03-heading-0245"></a>
 
@@ -1094,7 +1094,7 @@ Its hind legs were stiff and its rings were rusted so their sound was low, and i
 
 It was an individual that passed through a private shelter, a construction site, and an evacuation column and remained at the vacant lot by the Magok outer wall, and once the feeding schedule was stable, it increased territorial defense rather than breeding.
 
-Its fictional tag history left several cage numbers, but its present standing was only its age and its companions.
+Its tag history left several cage numbers, but its present standing was only its age and its companions.
 
 <a id="Hostile-Group-G03-heading-0346"></a>
 
@@ -1188,7 +1188,7 @@ It had learned human gestures and the idling of a particular engine as safety, b
 
 ### Origin
 
-It was an individual that survived by following the feeding truck of the closed guard passage, and the fictional regrouping rule put vehicle sounds and the smell of carts on the same layer as companion markers.
+It was an individual that survived by following the feeding truck of the closed guard passage, and the regrouping rule put vehicle sounds and the smell of carts on the same layer as companion markers.
 
 It did not serve as grounds for blaming any real shelter.
 
@@ -1466,7 +1466,7 @@ But they were not a single attacking group.
 
 It was an alliance of loose families joined by animals from private shelters that closed after the collapse, construction-site guard dogs, and pets that lost their people in the evacuating crowds, following food and familiar smells.
 
-The UHF collar tags and the regrouping mediated by those tags were a fictional order that held only in this region, and gave no grounds for blaming any real shelter or business.
+The UHF collar tags and the regrouping mediated by those tags were an order observed only in this region, and gave no grounds for blaming any real shelter or business.
 
 The core territory was the vacant lots outside the Yongsan Line walls, but there was no fixed boundary.
 

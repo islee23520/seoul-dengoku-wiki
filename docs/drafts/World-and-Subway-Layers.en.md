@@ -14,7 +14,7 @@ The map shows opening-day surface holdings alongside mapped rail locations. A ra
 
 The season remains an unending winter, but surface cold varies by region. Surface temperatures use the daily minimum recorded at each region's representative weather station on 8 January 2021. Seoul's surface and exposed platforms use −18.6°C; clothing elsewhere varies in thickness and fabric with the matching regional value below. Stations with railway tracks, including metro, regional, high-speed, and conventional railways, distinguish exposed areas from underground living quarters.
 
-Living environments fall into three tiers: the surface, intermediate underground, and deep underground. Even spaces close to the surface are warmer than the surface in that region and belong to the intermediate tier. The baseline underground ranges are 8–18°C at intermediate depth and 18–22°C deep underground. Regional temperature differences are smaller underground, so a surface temperature difference is not transferred below ground at the same magnitude. People first choose insulating layers for their surroundings, then adjust them for work and individual sensitivity to cold at the same depth. These underground ranges describe the fictional living environment, not measured station temperatures.
+Living environments fall into three tiers: the surface, intermediate underground, and deep underground. Even spaces close to the surface are warmer than the surface in that region and belong to the intermediate tier. The baseline underground ranges are 8–18°C at intermediate depth and 18–22°C deep underground. Regional temperature differences are smaller underground, so a surface temperature difference is not transferred below ground at the same magnitude. People first choose insulating layers for their surroundings, then adjust them for work and individual sensitivity to cold at the same depth. These underground ranges describe the nominal living environment, not measured station temperatures.
 
 The default underground classification follows floors: B1 through B3 are intermediate, and B4 and below are deep underground. This groups living environments; it does not mean that matching floor numbers lie at the same depth in metres at every station. Stations with only surface spaces or intermediate underground levels have no additional deep tier. Even at interchanges, the floors that exist and the concourse, platform, or passage a person occupies remain distinct.
 
@@ -24,7 +24,7 @@ At the same underground level, cold varies with the regional surface temperature
 
 ### Regional Surface Temperatures
 
-The table uses the names of the seventeen first-level regions in 2021. One Korea Meteorological Administration station is selected to represent each region. Each value is that station’s daily minimum, adopted as the fictional surface reference for that region. It is neither a region-wide mean or minimum nor a rail-platform measurement. Each station name links to the official monthly source containing the record for the eighth day.
+The table uses the names of the seventeen first-level regions in 2021. One Korea Meteorological Administration station is selected to represent each region. Each value is that station’s daily minimum, adopted as the nominal surface reference for that region. It is neither a region-wide mean or minimum nor a rail-platform measurement. Each station name links to the official monthly source containing the record for the eighth day.
 
 | Region | Representative station | Surface reference |
 |---|---|---|

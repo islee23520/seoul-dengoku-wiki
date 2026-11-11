@@ -6732,7 +6732,7 @@ Common species and special variants that share a habitat are read apart. Machine
 - Modern anxiety: The anxiety of wild-boar bands coming down after a flood into the lowland scrap yards and the semi-basement alleys, competing with people over refuse and crops
 - Origin: Right after the collapse, when the flooding of the western Han River cut the green axis outside the Yeouido and Yeongdeungpo sluices, wild boar herds that came down from the Bukhansan and Anyangcheon corridors settled at the food-waste collection yards on the edge of the Sluice.
 
-Real-world sources supported only the basic ecology of urban incursions, food sources, and blocked movement; the behavior of learning the sealing hours and the relationship with HC01 were fiction.
+Urban incursions, food sources, and blocked movement could be explained by ordinary wildlife observation, but the behavior of learning the sealing hours and the relationship with HC01 were observed only in this region after the collapse.
 
 The cooling-waste heaps sealed by HC01 Yeouido Computing House came to serve the wild boar as a winter salt source.
 
@@ -6849,7 +6849,7 @@ Choosing coexistence leaves short-term threat reports behind, but the sluice wor
 - Modern anxiety: The anxiety of cluster interference, as bands of large-billed crows gather on transmission towers, wires, and bridge railings and touch signal tones, the school run, and evacuation routes at the same time
 - Origin: After breeding pairs settled on the factory pylons of the Daerim–Garibong Korean-Chinese corridor and the cables of the Han River bridges, the Large-billed Crow formed as the waste heat of the Yeongdeungpo Line Gauge factories and the sparks of the Guro industrial-park trolley wires gathered night insects.
 
-Real-world sources supported only the breeding-season territorial behavior of large-billed crows and the range of human responses; the rule by which they learned signal interference as alarms and spread it was fiction.
+The breeding-season territorial behavior of large-billed crows and the range of human responses could be explained by ordinary wildlife observation, but the rule by which they learned signal interference as alarms and spread it was observed only in this region after the collapse.
 
 - Territory: The core habitat is the group of factory roofs and pylons at Daerim and Guro on the Yeongdeungpo Line.
 
@@ -7070,7 +7070,7 @@ The mobile feeding station preserves the trust signal, but it costs the labor of
 - Modern anxiety: The anxiety of sewer and underground emergence at night, as raccoon family groups occupied storm drains, covered waterways, and underground passages and came up onto the surface
 - Origin: When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Arc in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog.
 
-Real-world sources were consulted only for the range in which raccoons appeared in cities and streams, and the rule of sensing the water level before the pumps was fiction.
+The range in which raccoons appeared in cities and streams could be explained by ordinary wildlife observation, but the rule of sensing the water level before the pumps was observed only in this region after the collapse.
 
 - Territory: The core habitat was the pump-house connecting pipes of the Ttukseom Union and the dry refuge cavities under the workshops.
 
@@ -7303,7 +7303,7 @@ Spreading the unloading created no non-target risk, but raised the unit cost of 
 
 The waterfront records deck of the Government of the Republic of Korea at central Seoul Station and the depot drainage ponds of the Seongha Group on the Gangnam Line were its key nodes.
 
-Real protected-area sources were used only as a reference range for the locations of migratory-bird sites and wetlands, and the negotiating rules of the mixed functional groups were fiction.
+The locations of migratory-bird sites and wetlands fell within the reference range of ordinary protected-area observation, but the negotiating rules of the mixed functional groups were observed only in this region after the collapse.
 
 - Territory: The core habitat was the waterfront wetland fragments at Seoul Station Central and the drainage ponds and wire perches of the Gangnam Line.
 
@@ -7761,7 +7761,7 @@ The queues endlessly repeated the weightings of the last night shift, reading bo
 
 As leftover transshipment signals and delay tokens from the Korea Strait Theater side mixed into the night weightings, the sorting rules tangled further.
 
-The first sighting records survived, as fiction, only in the utility-tunnel patrol log of HC13 Suseo Construction House and the maintenance-bench notes of H13 Hanbitna.
+The first sighting records survived only in the utility-tunnel patrol log of HC13 Suseo Construction House and the maintenance-bench notes of H13 Hanbitna.
 
 The early spread ran from Gasan dormitory line 3 to line 5, and followed the utility-tunnel cable trays as far as the entrance scanners of the southwestern parts window.
 
@@ -7902,7 +7902,7 @@ Conversely, leaving it alone traps people as unsorted stock or loads them onto t
 
 The cost of the choice lies between the possibility of sharing the infrastructure and the risk of confinement.
 
-It does not sensationally reenact the stories of real workers or accident victims, and leaves the matter as the distribution of responsibility inside a fictional institution and as a failed key split.
+It does not sensationally reenact the stories of real workers or accident victims, and leaves the matter as the distribution of responsibility inside the institution and as a failed key split.
 
 The condition of moral bankruptcy is an annihilation order while the negotiation window is open.
 
@@ -7928,7 +7928,7 @@ Empty car bodies and tow trolleys ran the same loop every dawn to work off the p
 
 When anomalous freight-car weight signals from the Duman River Far East Theater mixed into the token weightings, the long-distance empty runs stretched as far as the northeastern corridor.
 
-The first fictional sighting survived in the double-signature log of HC14 Yeouido Ledger House and the charging-bay notes of H14 Oserim.
+The first sighting survived in the double-signature log of HC14 Yeouido Ledger House and the charging-bay notes of H14 Oserim.
 
 The first phantom hour was recorded in the underground turning lane of Achasan.
 
@@ -8089,11 +8089,11 @@ It does not sensationally reenact harm to users of any real platform.
 
 The condition of moral bankruptcy is an order to destroy every unit while the signature window is open.
 
-Liability for a failed fictional ledger is asked first of the side that monopolized the key and the signature.
+Liability for a failed ledger is asked first of the side that monopolized the key and the signature.
 
 Writing that records the people outside the call queue as statistics alone is forbidden.
 
-Fictional harm is left as a concrete place, a time, and the person responsible for the key.
+Harm is left as a concrete place, a time, and the person responsible for the key.
 
 - Scenarios: G14-SC1, G14-SC2, G14-SC3
 
@@ -8113,7 +8113,7 @@ The list of people to protect stayed fixed at the last evacuation roster and was
 
 When leftover relief-goods codes and lottery numbers from the Incheon Trust Theater mixed in, oversupply and over-isolation grew at the same time.
 
-The first fictional records survived in the watch-key log of HP01 Yeongdeungpo Sluice House and the observation notes of H15 Baesua.
+The first records survived in the watch-key log of HP01 Yeongdeungpo Sluice House and the observation notes of H15 Baesua.
 
 The first over-isolation began in bay 12 of the Garak temporary wards.
 
@@ -8284,7 +8284,7 @@ The machine corps saw unentered members as errors and tried to clear away the su
 
 When the materials inflow signals and quarantine backlog of the Imjin River Gate Theater piled up, the radius of framing work widened as far as the northern corridor.
 
-The first fictional sighting survived in the dispatch log of HP02 Yongsan Track Gate and the tool-wall notes of H16 Sintaeul.
+The first sighting survived in the dispatch log of HP02 Yongsan Track Gate and the tool-wall notes of H16 Sintaeul.
 
 The first wrongful demolition happened to three emergency tents on the Suseo temporary slab.
 
@@ -8435,7 +8435,7 @@ Leaving the cache untended let provisional shelters that existed only in the rev
 
 While HP02 compared the old layers one sheet at a time, track occupancy and reinforcement work ran late, but blowing up the equipment to save that time left, at the next collapse, a load that could not be lifted by hand.
 
-The responsibility was laid not on a replay of real construction damage but on the fictional supervision system that never renewed the exception layer, and on the monopoly of the distribution.
+The responsibility was laid not on a replay of real construction damage but on the supervision system that never renewed the exception layer, and on the monopoly of the distribution.
 
 - Scenarios: G16-SC1, G16-SC2, G16-SC3
 
@@ -8457,7 +8457,7 @@ The orbit swarm read heat, metal, and radio bursts as intrusion and raised corri
 
 When leftover dock-radar signals and tidal noise from the West Sea Granary Theater mixed in, the false-positive radius tilted toward the southwestern waterfront.
 
-The first fictional records survived in the transfer desk of HP03 Cheongnyangni Medical House and the machine-room log of F01 Cooling-Tower Keeper.
+The first records survived in the transfer desk of HP03 Cheongnyangni Medical House and the machine-room log of F01 Cooling-Tower Keeper.
 
 The first mass false positive occurred on the Yeouido waterfront promenade pier.
 
@@ -8630,7 +8630,7 @@ The train corps made rounds of the severed sections every night with welding, gr
 
 When transshipment vibration from the Korea Strait Theater and shocks from the relay windows mixed into the defect map, the maintenance radius encroached as far as the sidings next to the transfer main line.
 
-The first fictional records survived in the sealed orders of HP04 Seoul Station Record-Law House and the traction-power log of F02 Switchgear Panel.
+The first records survived in the sealed orders of HP04 Seoul Station Record-Law House and the traction-power log of F02 Switchgear Panel.
 
 The first wrongful cut was recorded at kilometer post 3 of the southwestern retired-line spur.
 
@@ -8781,7 +8781,7 @@ Leaving the defect map untended cut rails that were already safe again and shut 
 
 While HP04 compared the sealed documents at every kilometer post and parted the formation, emergency trains detoured and maintenance material was tied up, but skipping the original-hash check left no way to know which rail would open under the next axle.
 
-It borrowed no real railway accident to make fear, and the cost arose between a fictional gap in the records and the loss of maintenance capacity.
+It borrowed no real railway accident to make fear, and the cost arose between the gap in the records and the loss of maintenance capacity.
 
 - Scenarios: G18-SC1, G18-SC2, G18-SC3
 
@@ -9086,7 +9086,7 @@ The cost of preservation is continuing to allocate time for slow on-site checks 
 
 A single hydraulic footfall shakes weakened tracks and pipes together; a chassis designed as a safety shield blocks an evacuation hub; and an aerial surveillance craft keeps drawing obsolete work boundaries.
 
-This setting treats only the unease associated with large automated equipment and dependence on infrastructure, and does so fictionally.
+This index treats only the unease associated with large automated equipment and dependence on infrastructure.
 
 It does not attribute equipment defects, negligent operation, or responsibility for disasters to any real company or current public organization.
 
@@ -9266,7 +9266,7 @@ The weight of the choice lies not in whether to possess powerful machines, but i
 - 현대 불안: 홍수 뒤 저지대 음식물 집하장과 반지하 골목에 멧돼지 무리가 내려와 사람과 쓰레기·경작물을 두고 경쟁하는 불안
 - 기원: 붕괴 직후 한강 서부 범람이 여의도·영등포 수문 바깥 녹지축을 끊자, 북한산·안양천 회랑에서 내려온 멧돼지 무리가 수문국 가장자리 음식물 회수장에 정착했다.
 
-현실 자료는 도심 출몰·먹이원·이동 차단의 기본 생태만 뒷받침하며, 봉인 시각을 학습하는 행동과 HC01과의 관계는 허구다.
+도심 출몰·먹이원·이동 차단은 일반적인 야생동물 관찰로 설명되지만, 봉인 시각을 학습하는 행동과 HC01과의 관계는 붕괴 이후 이 지역에서만 관측됐다.
 
 HC01 여의도전산가가 봉인한 냉각 폐기물 더미는 멧돼지의 겨울 염분원이 되었다.
 
@@ -9383,7 +9383,7 @@ XT01 유입 피난 행렬의 잔반은 별도 회수로 빼 무리 유인을 줄
 - 현대 불안: 송신탑·전선·교량 난간에 큰부리까마귀 무리가 모여 신호음·통학·피난 동선을 동시에 건드리는 군집 간섭 불안
 - 기원: 대림·가리봉 중국동포 회랑의 공장 철탑과 한강 교량 케이블에 번식쌍이 자리 잡은 뒤, 영등포선 규격맹 공장 폐열과 구로 공단 전차선 스파크가 야간 곤충을 모으면서 큰부리까마귀가 형성됐다.
 
-현실 자료는 큰부리까마귀의 번식기 영역 행동과 사람의 대처 범위만 뒷받침하며, 신호 간섭을 경보로 학습하. 전파하는 규칙은 허구다.
+큰부리까마귀의 번식기 영역 행동과 사람의 대처 범위는 일반적인 야생동물 관찰로 설명되지만, 신호 간섭을 경보로 학습하. 전파하는 규칙은 붕괴 이후 이 지역에서만 관측됐다.
 
 - 영역: 주 서식은 영등포선 대림·구로 공장 지붕·철탑 군이다.
 
@@ -9604,7 +9604,7 @@ H03이 공격성 군집으로 묶어도 HC03 중재자는 개체별 인식표·�
 - 현대 불안: 빗물관·복개수로·지하 통로를 너구리 가족군이 점유해 야간에 지상으로 올라오는 하수·지하 출몰 불안
 - 기원: 중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 뚝섬 연합 Arc 펌프 옆 관로와 마포 연합 여의도출자연합회 지하 케이블 갤러리에 정착해 너구리가 됐다.
 
-현실 자료는 너구리의 도시·하천 출현 범위만 참고하며, 펌프보다 먼저 수위를 감지하는 규칙은 허구다.
+너구리의 도시·하천 출현 범위는 일반적인 야생동물 관찰로 설명되지만, 펌프보다 먼저 수위를 감지하는 규칙은 붕괴 이후 이 지역에서만 관측됐다.
 
 - 영역: 핵심 서식은 뚝섬 연합 펌프장 연결 관로와 공방 하부의 건조 대피공이다.
 
@@ -9837,7 +9837,7 @@ XT05 단백질 하역 주간에는 임시 이중 밀봉 라인을 우선 지원�
 
 서울역 중앙 대한민국정부 수변 기록 데크와 강남선 성하그룹 차량기지 배수 연못이 연결 지점이다.
 
-현실 보호구역 자료는 철새도래지와 습지 위치의 참고 범위로만 사용하며, 혼합 기능군의 협상 규칙은 허구다.
+철새도래지와 습지 위치는 일반적인 보호구역 관찰의 참고 범위에 있지만, 혼합 기능군의 협상 규칙은 붕괴 이후 이 지역에서만 관측됐다.
 
 - 영역: 서식은 서울역 중앙 수변 습지 파편과 강남선 배수 연못·전선 횃대다.
 
@@ -10295,7 +10295,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 
 대한해협전구 쪽 환적 잔여 신호와 지연 토큰이 야간 가중치에 섞이면서 분류 규칙은 더 꼬였다.
 
-최초 목격 기록은 HC13 수서건설가 공동구 순찰 로그와 H13 한빛나 정비 벤치 메모에만 허구로 남는다.
+최초 목격 기록은 HC13 수서건설가 공동구 순찰 로그와 H13 한빛나 정비 벤치 메모에만 남는다.
 
 초기 확산은 가산 기숙 3번 라인에서 5번 라인으로 이어졌고, 공동구 케이블 트레이를 따라 서남 부품 창 입구 스캐너까지 닿았다.
 
@@ -10436,7 +10436,7 @@ H13이 당직 로그에 거래 조건과 표 해시를 남기면 컨트롤러가
 
 선택 비용은 인프라 공생 가능성과 감금 위험 사이에 있다.
 
-실재 노동자나 사고 피해자 서사를 자극적으로 재현하지 않고, 허구 제도의 책임 분배와 키 분할 실패로 남긴다.
+실재 노동자나 사고 피해자 서사를 자극적으로 재현하지 않고, 제도의 책임 분배와 키 분할 실패로 남긴다.
 
 도덕 파산 조건은 협상 창이 열린 상태에서의 전멸 명령이다.
 
@@ -10462,7 +10462,7 @@ H13이 당직 로그에 거래 조건과 표 해시를 남기면 컨트롤러가
 
 두만강극동전구 화차 중량 이상 신호가 토큰 가중치에 섞이면 장거리 공차 운행이 동북 회랑까지 길어진다.
 
-최초 허구 목격은 HC14 여의도장부가 이중서명 로그와 H14 오세림 충전 칸 메모에 남는다.
+최초 목격은 HC14 여의도장부가 이중서명 로그와 H14 오세림 충전 칸 메모에 남는다.
 
 첫 유령 정각은 아차산 지하 회전 차로에서 기록됐다.
 
@@ -10623,11 +10623,11 @@ H14가 서명 해시와 잔여 토큰 수를 당직 로그에 남기면 다음 �
 
 도덕 파산 조건은 서명 창이 열린 상태의 전수 파괴 명령이다.
 
-허구 장부 실패의 책임은 키와 서명을 독점한 쪽에 먼저 묻는다.
+장부 실패의 책임은 키와 서명을 독점한 쪽에 먼저 묻는다.
 
 호출 대기열 밖의 사람을 통계 숫자로만 적는 서술은 금지한다.
 
-허구 피해는 구체 장소와 시간, 키 책임자로 남긴다.
+피해는 구체 장소와 시간, 키 책임자로 남긴다.
 
 - 시나리오: G14-SC1, G14-SC2, G14-SC3
 
@@ -10647,7 +10647,7 @@ H14가 서명 해시와 잔여 토큰 수를 당직 로그에 남기면 다음 �
 
 인천신탁전구 잔여 인도 물자 코드와 추첨 번호가 섞이면 과잉 보급과 과잉 격리가 동시에 커진다.
 
-최초 허구 기록은 HP01 영등포수문가 당직 키 로그와 H15 배수아 관측 메모에 남는다.
+최초 기록은 HP01 영등포수문가 당직 키 로그와 H15 배수아 관측 메모에 남는다.
 
 첫 과격리는 가락 임시 병상 칸 12호에서 시작됐다.
 
@@ -10818,7 +10818,7 @@ HP01이 키를 다시 나누고 칸마다 동의를 묻는 일은 느리고 필�
 
 임진강관문전구 자재 유입 신호와 검역 적체가 가중되면 골조 작업 반경이 북방 회랑까지 넓어진다.
 
-최초 허구 목격은 HP02 용산선로문 배차 로그와 H16 신태율 공구 벽 메모에 남는다.
+최초 목격은 HP02 용산선로문 배차 로그와 H16 신태율 공구 벽 메모에 남는다.
 
 첫 오철거는 수서 가설 슬래브 위의 응급 천막 세 동에서 일어났다.
 
@@ -10969,7 +10969,7 @@ H16이 예외 레이어 해시와 중지 그리드를 로그에 남기면 다음
 
 HP02가 오래된 레이어를 한 장씩 대조하는 동안 선로 점유와 보강 공사는 늦어지지만, 그 시간을 아끼려고 장비를 폭파하면 다음 붕괴 때 손으로 들 수 없는 하중이 남는다.
 
-책임은 실재 건설 피해의 재연이 아니라 예외 레이어를 갱신하지 않은 허구 감독 체계와 분전 독점에 둔다.
+책임은 실재 건설 피해의 재연이 아니라 예외 레이어를 갱신하지 않은 감독 체계와 분전 독점에 둔다.
 
 - 시나리오: G16-SC1, G16-SC2, G16-SC3
 
@@ -10991,7 +10991,7 @@ HP02가 오래된 레이어를 한 장씩 대조하는 동안 선로 점유와 �
 
 서해곡창전구 부두 레이더 잔여 신호와 조위 잡음이 섞이면 오탐 반경이 서남 수변으로 기운다.
 
-최초 허구 기록은 HP03 청량리의료원가 이송 데스크와 F01 냉각탑지기 기계실 로그에 남는다.
+최초 기록은 HP03 청량리의료원가 이송 데스크와 F01 냉각탑지기 기계실 로그에 남는다.
 
 첫 집단 오탐은 여의도 수변 산책 잔교에서 났다.
 
@@ -11164,7 +11164,7 @@ HP03은 환자를 기다리게 하지 않으면서 돔을 닦고 비콘을 대�
 
 대한해협전구 환적 진동과 중계 창구 충격이 결함 맵에 섞이면 보수 반경이 환승 본선 인접 측선까지 침범한다.
 
-최초 허구 기록은 HP04 서울역기록법가 봉인 서와 F02 배전반이 급전 로그에 남는다.
+최초 기록은 HP04 서울역기록법가 봉인 서와 F02 배전반이 급전 로그에 남는다.
 
 첫 오절단은 서남 폐선 스퍼 3킬로정에서 기록됐다.
 
@@ -11315,7 +11315,7 @@ F02가 제외 목록 해시와 급전 분할 상태를 로그에 남기면 다�
 
 HP04가 킬로정마다 봉인 서를 대조해 편성을 떼어 내는 동안 응급 열차가 우회하고 보수 자재가 묶이지만, 원본 해시 확인을 생략하면 어느 레일이 다음 차축 아래서 벌어질지 알 수 없다.
 
-실재 철도 사고를 빌려 공포를 만들지 않으며, 비용은 허구의 기록 공백과 보수 능력의 상실 사이에서 발생한다.
+실재 철도 사고를 빌려 공포를 만들지 않으며, 비용은 기록 공백과 보수 능력의 상실 사이에서 발생한다.
 
 - 시나리오: G18-SC1, G18-SC2, G18-SC3
 
@@ -11620,7 +11620,7 @@ HC15에 모든 제어판과 부품을 넘기면 운용은 빨라져도 다른 �
 
 유압 보행 한 번에 약해진 선로와 배관이 흔들리고, 안전 방패로 설계된 차체가 피난 거점을 막으며 상공 감시기가 낡은 작업 경계를 계속 그린다.
 
-이 설정은 대형 자동화 장비와 기반시설에 의존하는 데서 오는 감각만 허구적으로 다룬다.
+이 색인은 대형 자동화 장비와 기반시설에 의존하는 데서 오는 감각만 다룬다.
 
 실재 기업이나 현직 공공 조직의 장비 결함 부실 운영 재난 책임을 지목하지 않는다.
 
@@ -11779,7 +11779,7 @@ An ordinary flood boar does not leave the family-group ecology even when it wrap
 
 | Item | Record |
 |---|---|
-| Origin | Right after the collapse, when the flooding of the western Han River cut the green axis outside the Yeouido and Yeongdeungpo sluices, wild boar herds that came down from the Bukhansan and Anyangcheon corridors settled at the food-waste collection yards on the edge of the Sluice. / Real-world sources supported only the basic ecology of urban incursions, food sources, and blocked movement; the behavior of learning the sealing hours and the relationship with HC01 were fiction. / The cooling-waste heaps sealed by HC01 Yeouido Computing House came to serve the wild boar as a winter salt source. |
+| Origin | Right after the collapse, when the flooding of the western Han River cut the green axis outside the Yeouido and Yeongdeungpo sluices, wild boar herds that came down from the Bukhansan and Anyangcheon corridors settled at the food-waste collection yards on the edge of the Sluice. / Urban incursions, food sources, and blocked movement could be explained by ordinary wildlife observation, but the behavior of learning the sealing hours and the relationship with HC01 were observed only in this region after the collapse. / The cooling-waste heaps sealed by HC01 Yeouido Computing House came to serve the wild boar as a winter salt source. |
 | Habitat and movement | The core habitat was the wetland and waste slopes outside the sluices of the Sluice. / In the dry season and winter they moved along the green fragments toward the Government of the Republic of Korea at central Seoul Station and along the axis of night-market leftovers, and the northwestern edge stirred in response to the food traces of the refugee columns pushed down from the XT01 Imjin River Gate Theater. / When the flood level crossed the sluice warning line, the herd was pushed up the upland stairs step by step and cut across the walkways. |
 | Food and energy | The main resources are organic scraps, salt, and shallow-rooted crops, and as secondary resources they use the soft plastic of flood debris and the pools of cooling water. / When the HC01 recovery trough delays the scrap-sealing cycle, the band''s density rises, and when the seal is drawn too tight the band diverts to household-alley scraps. / The energy cycle runs from feeding to dung to the wetland microbial film, and unsanctioned hunting for meat and hide, instead of a short-term gain, makes the remaining band more aggressive. |
 | Life cycle and upkeep | Before the monsoon rains, family groups split by sow scatter and scout the feeding grounds, and right after a flood they join the high-ground scrap axis for a time. / A family group splits only when the survival rate of the young stays high for two seasons in a row, and when the winter salt sources and the mud baths shrink they choose long-distance movement over breeding. |
@@ -13038,7 +13038,7 @@ The wild boar family groups that came down from the Bukhansan and Anyangcheon co
 
 After floods the wild boar came down into the semi-basement alleys to root through trash bags and shallow root crops.
 
-Urban incursions, shifts in food sources, and severed movement routes could be explained by real wildlife observation, but the behavior of remembering the sealing hours and the sluice operating cycle to time an approach, and the managed relationship with HC01, were a fictional order that arose only in this region after the collapse.
+Urban incursions, shifts in food sources, and severed movement routes could be explained by ordinary wildlife observation, but the behavior of remembering the sealing hours and the sluice operating cycle to time an approach, and the managed relationship with HC01, were an order that arose only in this region after the collapse.
 
 The territory of the Wild Boar was set less by lines drawn on a map than by a continuity of water level and smell.
 
@@ -13216,7 +13216,7 @@ Yet when hoof disturbance concentrated in predictable corridors, the reed belts 
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 붕괴 직후 한강 서부 범람이 여의도·영등포 수문 바깥 녹지축을 끊자, 북한산·안양천 회랑에서 내려온 멧돼지 무리가 수문국 가장자리 음식물 회수장에 정착했다. / 현실 자료는 도심 출몰·먹이원·이동 차단의 기본 생태만 뒷받침하며, 봉인 시각을 학습하는 행동과 HC01과의 관계는 허구다. / HC01 여의도전산가가 봉인한 냉각 폐기물 더미는 멧돼지의 겨울 염분원이 되었다. |
+| 기원 | 붕괴 직후 한강 서부 범람이 여의도·영등포 수문 바깥 녹지축을 끊자, 북한산·안양천 회랑에서 내려온 멧돼지 무리가 수문국 가장자리 음식물 회수장에 정착했다. / 도심 출몰·먹이원·이동 차단은 일반적인 야생동물 관찰로 설명되지만, 봉인 시각을 학습하는 행동과 HC01과의 관계는 붕괴 이후 이 지역에서만 관측됐다. / HC01 여의도전산가가 봉인한 냉각 폐기물 더미는 멧돼지의 겨울 염분원이 되었다. |
 | 서식·이동 | 주 서식은 수문국 수문 바깥 습지·폐기물 경사지다. / 건기·동절기에는 서울역 중앙 대한민국정부 쪽 녹지 파편과 야간 시장 잔여물 축을 따라 이동하고, XT01 임진강관문전구에서 밀려 내려오는 피난 행렬의 음식물 흔적에 북서 가장자리 무리가 반응한다. / 홍수위가 수문 경고선을 넘으면 무리는 고지대 계단식으로 밀려 오르며 통행로를 가로지른다. |
 | 먹이·에너지 | 주 자원은 유기 음식물·염분·얕은 뿌리 작물이고, 부자원으로 침수 잔해의 연질 플라스틱과 냉각수 웅덩이를 쓴다. / HC01 회수조가 음식물 봉인 주기를 늦추면 무리 밀도가 올라가고, 봉인을 과도히 조이면 무리는 가정 골목 음식물로 우회한다. / 에너지 순환은 섭식-배설-습지 미생물막으로 이어지며, 고기·가죽을 노리는 비공인 수렵은 단기 이득 대신 잔여 무리를 더 공격적으로 만든다. |
 | 생애·정비 | 장마 전에는 모돈별 가족군이 흩어져 먹이터를 정찰하고, 범람 직후에는 고지대 음식물 축에 일시 합류한다. / 새끼 생존률이 두 계절 연속 높을 때만 가족군이 갈라지며, 겨울 염분원과 진흙 목욕터가 줄면 번식보다 장거리 이동을 택한다. |
@@ -14475,7 +14475,7 @@ G01-SC1의 상류 대피는 이 변종이 능선에 자리 잡은 이유다. G01
 
 홍수 뒤 멧돼지는 반지하 골목까지 내려와 쓰레기봉투와 얕은 뿌리 작물을 뒤진다.
 
-도심 출몰과 먹이원 변화, 이동로 단절은 현실의 야생동물 관찰로 설명할 수 있지만 봉인 시각과 수문 운용 주기를 기억해 접근 시간을 맞추는 행동 HC01과의 관리 관계는 붕괴 이후 이 지역에서만 성립한 허구적 질서다.
+도심 출몰과 먹이원 변화, 이동로 단절은 일반적인 야생동물 관찰로 설명할 수 있지만 봉인 시각과 수문 운용 주기를 기억해 접근 시간을 맞추는 행동 HC01과의 관리 관계는 붕괴 이후 이 지역에서만 성립한 질서다.
 
 멧돼지의 영토는 지도에 그은 선보다 물높이와 냄새의 연속으로 정해진다.
 
@@ -14654,7 +14654,7 @@ The base form of the Large-billed Crow is a wild bird that moves by the sound sh
 
 | Item | Record |
 |---|---|
-| Origin | After breeding pairs settled on the factory pylons of the Daerim–Garibong Korean-Chinese corridor and the cables of the Han River bridges, the Large-billed Crow formed as the waste heat of the Yeongdeungpo Line Gauge factories and the sparks of the Guro industrial-park trolley wires gathered night insects. / Real-world sources supported only the breeding-season territorial behavior of large-billed crows and the range of human responses; the rule by which they learned signal interference as alarms and spread it was fiction. |
+| Origin | After breeding pairs settled on the factory pylons of the Daerim–Garibong Korean-Chinese corridor and the cables of the Han River bridges, the Large-billed Crow formed as the waste heat of the Yeongdeungpo Line Gauge factories and the sparks of the Guro industrial-park trolley wires gathered night insects. / The breeding-season territorial behavior of large-billed crows and the range of human responses could be explained by ordinary wildlife observation, but the rule by which they learned signal interference as alarms and spread it was observed only in this region after the collapse. |
 | Habitat and movement | The core habitat is the group of factory roofs and pylons at Daerim and Guro on the Yeongdeungpo Line. / Arc 1 sits on top of the Daerim and Garibong Joseonjok corridor, and in the breeding season the flock circles over bridges, school passages, and evacuation stairs. / In the non-breeding season, matching the sea wind and the insect density pushed in from the West Sea Granary Theater (XT02), it moves for a time to the western waterfront. / When wire-repair work begins, part of the band moves along the work basket. |
 | Food and energy | The food is insects, leftover market protein, and small carcasses, and for nest material they pick fine wire with the sheath stripped and fiber scrap. / The shorter the cycle on which the Sinjeong Wheel House (HC02) replaces wire sheathing, the less nest material there is and the more territorial attacks increase, and leaving the sheathing untended increases the risk of a short. / The cycle in which droppings contaminate the insulators connects directly to communications uptime. |
 | Life cycle and upkeep | In spring a breeding pair defends one pylon, and in the non-breeding season several families join a communal roost. / Repeated safety signals and food rewards, more than nest success, decide the return site the next year, and after a forced removal the young individuals test a new roost on the adjacent school route. |
@@ -15017,7 +15017,7 @@ In the roof gutters of the Gauge factories on the Yeongdeungpo Line lived a weav
 
 ### Origin
 
-In the spring when the Sinjeong Wheel House stripped the wire sheathing all at once, the scraps piled up in the roof gutters, and one individual began winding, remembering only the feel of copper and the elasticity of fiber. Unable to read the content of the radio waves, it kept only the pairing of glitter and softness, and that habit hardened into a fictional weaving labor.
+In the spring when the Sinjeong Wheel House stripped the wire sheathing all at once, the scraps piled up in the roof gutters, and one individual began winding, remembering only the feel of copper and the elasticity of fiber. Unable to read the content of the radio waves, it kept only the pairing of glitter and softness, and that habit hardened into weaving labor.
 
 <a id="Hostile-Group-G02-heading-0110"></a>
 
@@ -15169,7 +15169,7 @@ The fouling-specialized body that sat on the caps of the insulators on the Nanji
 
 ### Origin
 
-When the cycle of droppings fouling the insulators touched on communication time, only the individuals that picked caps for warmth and roughness remained. People tried to read outages from the calls, but the real cause was the thickness of the film, and that misunderstanding fixed the fictional fouling role in place.
+When the cycle of droppings fouling the insulators touched on communication time, only the individuals that picked caps for warmth and roughness remained. People tried to read outages from the calls, but the real cause was the thickness of the film, and that misunderstanding fixed the false fouling role in place.
 
 <a id="Hostile-Group-G02-heading-0156"></a>
 
@@ -15245,7 +15245,7 @@ In spring, the bodies of a breeding pair that split one tower into upper and low
 
 ### Origin
 
-On top of the territorial defense that large-billed crows kept in the breeding season was laid a fictional division of labor in which one tower was split in two for sitting. The repetition of sparks and the appearance of workers taught the length of the radius, and when one side vanished, a neighboring pair tried out the empty place and clashes grew.
+On top of the territorial defense that large-billed crows kept in the breeding season was laid a division of labor in which one tower was split in two for sitting. The repetition of sparks and the appearance of workers taught the length of the radius, and when one side vanished, a neighboring pair tried out the empty place and clashes grew.
 
 <a id="Hostile-Group-G02-heading-0179"></a>
 
@@ -15321,7 +15321,7 @@ When the inspection bells learned by several families gathered into a single poi
 
 ### Origin
 
-On top of the rule that the nonbreeding communal roost shared only call patterns was laid the fiction that in weeks when the sea wind and breeding overlapped, the bells of different towers mixed over one bridge. The meaning of the radio waves was not read; only the density of the overlapping ringing remained, and that density made the place of the core.
+On top of the rule that the nonbreeding communal roost shared only call patterns was laid the occurrence that in weeks when the sea wind and breeding overlapped, the bells of different towers mixed over one bridge. The meaning of the radio waves was not read; only the density of the overlapping ringing remained, and that density made the place of the core.
 
 <a id="Hostile-Group-G02-heading-0202"></a>
 
@@ -15473,7 +15473,7 @@ When the column of air above the transmission inspection opening filled with sea
 
 ### Origin
 
-As the bridge cables and the sky above the inspection opening became a communal roost for several families, the fictional fortress arose in which the circle physically blocked the lines of people. On top of field experience that a straight breakthrough pushed the flock into the alleys, umbrella processions and substitute stairs were added as the response.
+As the bridge cables and the sky above the inspection opening became a communal roost for several families, the fortress arose in which the circle physically blocked the lines of people. On top of field experience that a straight breakthrough pushed the flock into the alleys, umbrella processions and substitute stairs were added as the response.
 
 <a id="Hostile-Group-G02-heading-0248"></a>
 
@@ -15549,7 +15549,7 @@ The day after a forced demolition, a young body with short wings sat on the scho
 
 ### Origin
 
-On top of the rule that repeated safety signals and food rewards, rather than nesting success, decided where the birds returned was added the fiction that young individuals tested the school routes after a demolition. The warmth of a handrail from which helmets and poles had vanished remained as the first reward, and that reward fixed the fledgling''s place.
+On top of the rule that repeated safety signals and food rewards, rather than nesting success, decided where the birds returned was added the occurrence that young individuals tested the school routes after a demolition. The warmth of a handrail from which helmets and poles had vanished remained as the first reward, and that reward fixed the fledgling''s place.
 
 <a id="Hostile-Group-G02-heading-0271"></a>
 
@@ -15625,7 +15625,7 @@ The aged individual beside the old transformer, whose neck stiffened only at the
 
 ### Origin
 
-It was a remnant of the days when the pattern of three horn blasts, two inspection bells, and the transformer start-up hum was learned as food and danger. The imitation in the communal roost carried the new call patterns over into the young individuals, but it could not carry them into this aged syrinx, and that lag became the fictional role of damage.
+It was a remnant of the days when the pattern of three horn blasts, two inspection bells, and the transformer start-up hum was learned as food and danger. The imitation in the communal roost carried the new call patterns over into the young individuals, but it could not carry them into this aged syrinx, and that lag became the false role of damage.
 
 <a id="Hostile-Group-G02-heading-0294"></a>
 
@@ -15913,7 +15913,7 @@ When the waste heat of the Yeongdeungpo Line Gauge factory roofs and the sparks 
 
 That large-billed crows guarded territories in the breeding season and adapted to human behavior rested on real ecology.
 
-But the rule by which they learned the sequences of horns, inspection bells, and transformer start-up sounds as signals of food and danger and spread them through the communal roosts belonged to the fictional history of this place.
+But the rule by which they learned the sequences of horns, inspection bells, and transformer start-up sounds as signals of food and danger and spread them through the communal roosts belonged to the history of this place.
 
 They did not read the content of the radio waves.
 
@@ -16097,7 +16097,7 @@ So to stop the side effect of a predictable signal system lowering bird clashes 
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 대림·가리봉 중국동포 회랑의 공장 철탑과 한강 교량 케이블에 번식쌍이 자리 잡은 뒤, 영등포선 규격맹 공장 폐열과 구로 공단 전차선 스파크가 야간 곤충을 모으면서 큰부리까마귀가 형성됐다. / 현실 자료는 큰부리까마귀의 번식기 영역 행동과 사람의 대처 범위만 뒷받침하며, 신호 간섭을 경보로 학습하. 전파하는 규칙은 허구다. |
+| 기원 | 대림·가리봉 중국동포 회랑의 공장 철탑과 한강 교량 케이블에 번식쌍이 자리 잡은 뒤, 영등포선 규격맹 공장 폐열과 구로 공단 전차선 스파크가 야간 곤충을 모으면서 큰부리까마귀가 형성됐다. / 큰부리까마귀의 번식기 영역 행동과 사람의 대처 범위는 일반적인 야생동물 관찰로 설명되지만, 신호 간섭을 경보로 학습하. 전파하는 규칙은 붕괴 이후 이 지역에서만 관측됐다. |
 | 서식·이동 | 주 서식은 영등포선 대림·구로 공장 지붕·철탑 군이다. / 호 1 대림·가리봉 중국동포 회랑 위에 얹히며, 번식기에는 교량·학교 통로·피난 계단 상공을 원형으로 순회한다. / 비번식기에는 XT02 서해곡창전구 쪽에서 밀려 오는 해풍·곤충 밀도에 맞춰 서부 수변으로 일시 이동한다. / 전선 보수 작업이 시작되면 무리 일부가 작업 바구니를 따라 이동한다. |
 | 먹이·에너지 | 먹이는 곤충·시장 잔여 단백질·작은 사체이며, 둥지 재료로 피복 벗겨진 세선·섬유 스크랩을 고른다. / HC02 신정차륜가이 전선 피복을 교체하는 주기가 짧아질수록 둥지 재료가 줄어 영역 공격이 늘고, 피복을 방치하면 합선 위험이 커진다. / 배설물이 절연체를 오염시키는 순환이 통신 가용시간과 직접 연결된다. |
 | 생애·정비 | 봄에는 번식쌍이 철탑 하나를 방어하고 비번식기에는 여러 가족이 공동 횃대로 합류한다. / 둥지 성공률보다 반복되는 안전 신호와 먹이 보상이 다음 해 귀환 위치를 결정하며, 강제 철거 뒤에는 어린 개체가 인접 통학로에 새 횃대를 시험한다. |
@@ -16460,7 +16460,7 @@ G02-SC2의 가짜 정전 때 이 중계의 메아리 맑기를 가늠한다. 보
 
 ### 기원
 
-신정차륜가이 전선 피복을 한꺼번에 걷어 낸 봄, 부스러기가 지붕 홈에 쌓이자 한 개체가 구리의 감촉과 섬유의 탄성만 기억하고 감기 시작했다. 전파의 내용은 읽지 못한 채 반짝임과 부드러움의 짝만 남았고, 그 습관이 허구의 직조 노동으로 굳었다.
+신정차륜가이 전선 피복을 한꺼번에 걷어 낸 봄, 부스러기가 지붕 홈에 쌓이자 한 개체가 구리의 감촉과 섬유의 탄성만 기억하고 감기 시작했다. 전파의 내용은 읽지 못한 채 반짝임과 부드러움의 짝만 남았고, 그 습관이 직조 노동으로 굳었다.
 
 <a id="Hostile-Group-G02-heading-0110"></a>
 
@@ -16612,7 +16612,7 @@ G02-SC1에는 경적 없는 야간으로 먹이를 옮기는 값이 용접 교�
 
 ### 기원
 
-배설물이 절연체를 오염시키는 순환이 통신 시간과 맞닿자, 갓의 온기와 거칠기를 고르는 개체만 남았다. 사람들은 울음으로 정전을 읽으려 했으나 실제 원인은 막의 두께였고, 그 오해가 허구의 오염으로 굳었다.
+배설물이 절연체를 오염시키는 순환이 통신 시간과 맞닿자, 갓의 온기와 거칠기를 고르는 개체만 남았다. 사람들은 울음으로 정전을 읽으려 했으나 실제 원인은 막의 두께였고, 그 오해가 허위 오염으로 굳었다.
 
 <a id="Hostile-Group-G02-heading-0156"></a>
 
@@ -16688,7 +16688,7 @@ G02-SC2는 울음 분류보다 막 두께 장부가 앞서는 순간에 가짜 �
 
 ### 기원
 
-큰부리까마귀가 번식기에 영역을 지키는 바탕 위에, 한 탑을 둘로 나누어 앉는 허구의 분업이 붙었다. 스파크와 작업자 출현의 반복이 반경의 반지름을 가르쳤고, 한쪽이 사라지면 인접 쌍이 빈 자리를 시험하며 충돌이 늘었다.
+큰부리까마귀가 번식기에 영역을 지키는 바탕 위에, 한 탑을 둘로 나누어 앉는 분업이 붙었다. 스파크와 작업자 출현의 반복이 반경의 반지름을 가르쳤고, 한쪽이 사라지면 인접 쌍이 빈 자리를 시험하며 충돌이 늘었다.
 
 <a id="Hostile-Group-G02-heading-0179"></a>
 
@@ -16764,7 +16764,7 @@ G02-SC1에는 경적이 반경 안의 먹이 기대를 키울 때 상층 자리�
 
 ### 기원
 
-비번식기 공동 횃대가 음형만 공유한다는 규칙 위에, 해풍과 번식이 겹친 주간에 서로 다른 탑의 종이 한 교량에서 섞이는 허구가 얹혔다. 전파의 뜻은 읽히지 않고 겹친 울림의 밀도만 남았으며, 그 밀도가 핵의 자리를 만들었다.
+비번식기 공동 횃대가 음형만 공유한다는 규칙 위에, 해풍과 번식이 겹친 주간에 서로 다른 탑의 종이 한 교량에서 섞이는 일이 얹혔다. 전파의 뜻은 읽히지 않고 겹친 울림의 밀도만 남았으며, 그 밀도가 핵의 자리를 만들었다.
 
 <a id="Hostile-Group-G02-heading-0202"></a>
 
@@ -16916,7 +16916,7 @@ G02-SC2에는 등을 폐철탑으로 옮기는 선택이 상암 횡철음을 난
 
 ### 기원
 
-교량 케이블과 점검구 상공이 여러 가족의 공동 횃대가 되면서, 원이 사람 열을 물리적으로 막는 허구의 요새가 생겼다. 직선 돌파가 골목으로 무리를 밀어 넣는다는 현장 경험 위에 우산 행렬과 대체 계단이 대응으로 붙었다.
+교량 케이블과 점검구 상공이 여러 가족의 공동 횃대가 되면서, 원이 사람 열을 물리적으로 막는 요새가 생겼다. 직선 돌파가 골목으로 무리를 밀어 넣는다는 현장 경험 위에 우산 행렬과 대체 계단이 대응으로 붙었다.
 
 <a id="Hostile-Group-G02-heading-0248"></a>
 
@@ -16992,7 +16992,7 @@ G02-SC3에는 이 원기둥에서 원을 우산으로 운영할지, 대체 횃�
 
 ### 기원
 
-둥지 성공률보다 반복된 안전 신호와 먹이 보상이 귀환 위치를 정한다는 규칙 위에, 철거 뒤 어린 개체가 통학로를 시험한다는 허구가 붙었다. 헬멧과 막대가 사라진 손잡이의 따뜻함이 첫 보상으로 남았고, 그 보상이 유조의 자리를 고정했다.
+둥지 성공률보다 반복된 안전 신호와 먹이 보상이 귀환 위치를 정한다는 규칙 위에, 철거 뒤 어린 개체가 통학로를 시험한다는 일이 붙었다. 헬멧과 막대가 사라진 손잡이의 따뜻함이 첫 보상으로 남았고, 그 보상이 유조의 자리를 고정했다.
 
 <a id="Hostile-Group-G02-heading-0271"></a>
 
@@ -17068,7 +17068,7 @@ G02-SC3의 둥지 일괄 철거가 남기는 어린 시험은 이 손잡이에�
 
 ### 기원
 
-경적 세 번과 점검 종 두 번, 변압기 기동음의 배열을 먹이와 위험으로 배우던 시절의 잔존이다. 공동 횃대의 모방이 젊은 개체로는 새 음형을 옮겼으나 이 노령 명관은 옮기지 못했고, 그 지체 때문에 손상이 허구로 남았다.
+경적 세 번과 점검 종 두 번, 변압기 기동음의 배열을 먹이와 위험으로 배우던 시절의 잔존이다. 공동 횃대의 모방이 젊은 개체로는 새 음형을 옮겼으나 이 노령 명관은 옮기지 못했고, 그 지체 때문에 손상이 허위로 남았다.
 
 <a id="Hostile-Group-G02-heading-0294"></a>
 
@@ -17356,7 +17356,7 @@ G02-SC2에서 곤충등을 옮기면 이 변종의 거점이 생기고, G02-SC3�
 
 큰부리까마귀가 번식기에 영역을 지키고 사람의 행동에 적응한다는 바탕은 현실의 생태와 맞닿아 있다.
 
-그러나 경적, 점검 종 변압기 기동음의 배열을 먹이와 위험 신호로 배우. 공동 횃대에서 퍼뜨리는 규칙은 이곳의 허구적 역사에 속한다.
+그러나 경적, 점검 종 변압기 기동음의 배열을 먹이와 위험 신호로 배우. 공동 횃대에서 퍼뜨리는 규칙은 이곳의 역사에 속한다.
 
 이들은 전파의 내용을 읽지 않는다.
 
@@ -18324,7 +18324,7 @@ It had only one collar ring, but a corroded identification tag caught on its foo
 
 After the feeding times of the private shelters that had closed their doors stopped, a small family that found both the smell of thawing and shade under the sunscreens of the unloading yard fixed this spot as its sleeping place.
 
-The fictional UHF tag kept only a past cage number; the present base was the location of the shade and the sealed water drums.
+The UHF tag kept only a past cage number; the present base was the location of the shade and the sealed water drums.
 
 <a id="Hostile-Group-G03-heading-0245"></a>
 
@@ -18616,7 +18616,7 @@ Its hind legs were stiff and its rings were rusted so their sound was low, and i
 
 It was an individual that passed through a private shelter, a construction site, and an evacuation column and remained at the vacant lot by the Magok outer wall, and once the feeding schedule was stable, it increased territorial defense rather than breeding.
 
-Its fictional tag history left several cage numbers, but its present standing was only its age and its companions.
+Its tag history left several cage numbers, but its present standing was only its age and its companions.
 
 <a id="Hostile-Group-G03-heading-0346"></a>
 
@@ -18710,7 +18710,7 @@ It had learned human gestures and the idling of a particular engine as safety, b
 
 ### Origin
 
-It was an individual that survived by following the feeding truck of the closed guard passage, and the fictional regrouping rule put vehicle sounds and the smell of carts on the same layer as companion markers.
+It was an individual that survived by following the feeding truck of the closed guard passage, and the regrouping rule put vehicle sounds and the smell of carts on the same layer as companion markers.
 
 It did not serve as grounds for blaming any real shelter.
 
@@ -18988,7 +18988,7 @@ But they were not a single attacking group.
 
 It was an alliance of loose families joined by animals from private shelters that closed after the collapse, construction-site guard dogs, and pets that lost their people in the evacuating crowds, following food and familiar smells.
 
-The UHF collar tags and the regrouping mediated by those tags were a fictional order that held only in this region, and gave no grounds for blaming any real shelter or business.
+The UHF collar tags and the regrouping mediated by those tags were an order observed only in this region, and gave no grounds for blaming any real shelter or business.
 
 The core territory was the vacant lots outside the Yongsan Line walls, but there was no fixed boundary.
 
@@ -19954,7 +19954,7 @@ G03-SC2에서는 옛 급식차 엔진음에 호위 반경이 하역로로 붙고
 
 문을 닫은 사설 보호소의 급식 시간이 끊긴 뒤, 하역장 차광막 아래에서 해동 냄새와 그늘을 함께 얻은 소가족이 이 자리를 잠자리로 고정했다.
 
-허구의 UHF 태그는 과거 우리 번호를 남길 뿐, 현재의 거점은 그늘과 밀폐 급수통의 위치다.
+UHF 태그는 과거 우리 번호를 남길 뿐, 현재의 거점은 그늘과 밀폐 급수통의 위치다.
 
 <a id="Hostile-Group-G03-heading-0245"></a>
 
@@ -20246,7 +20246,7 @@ G03-SC1 ‘녹슨 이름표’의 한가운데에 있으며, G03-SC2에서는 �
 
 사설 보호소와 공사장과 대피 행렬을 거쳐 마곡 외벽 공터에 남은 개체로, 급식 일정이 안정되자 번식보다 영역 방어를 늘렸다.
 
-허구의 태그 이력은 여러 우리 번호를 남기나 지금 지위는 나이와 동행일 뿐이다.
+태그 이력은 여러 우리 번호를 남기나 지금 지위는 나이와 동행일 뿐이다.
 
 <a id="Hostile-Group-G03-heading-0346"></a>
 
@@ -20340,7 +20340,7 @@ G03-SC1에서는 오래된 태그와 현재 선도 위치를 대조하는 대상
 
 ### 기원
 
-폐쇄된 경비 통로의 급식차를 따라 살아남은 개체로, 허구의 재결속 규칙은 차량 소리와 수레 냄새를 동료 표지와 같은 층에 올려 두었다.
+폐쇄된 경비 통로의 급식차를 따라 살아남은 개체로, 재결속 규칙은 차량 소리와 수레 냄새를 동료 표지와 같은 층에 올려 두었다.
 
 실재 보호소 비난의 근거는 되지 않는다.
 
@@ -20618,7 +20618,7 @@ G03-SC3의 물류 진동 축에 직접 연결되고, G03-SC1의 서로 다른 �
 
 붕괴 뒤 문을 닫은 사설 보호소의 개체, 공사장 경비견 대피 군중 속에서 사람을 잃은 반려견이 먹이와 익숙한 냄새를 따라 합류한 느슨한 가족의 연합이다.
 
-UHF 목걸이 태그와 그 태그를 매개로 한 재결속은 이 지역에서만 성립하는 허구적 질서이며, 현실의 특정 보호 시설이나 사업체에 책임을 돌리는 근거가 되지 않는다.
+UHF 목걸이 태그와 그 태그를 매개로 한 재결속은 이 지역에서만 관측되는 질서이며, 현실의 특정 보호 시설이나 사업체에 책임을 돌리는 근거가 되지 않는다.
 
 주 영역은 용산선 외벽 공터지만 고정된 경계는 없다.
 
@@ -20802,7 +20802,7 @@ From conduit patrol to conduit bones, these were ordinary raccoons adapted to th
 
 | Item | Record |
 |---|---|
-| Origin | When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Arc in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog. / Real-world sources were consulted only for the range in which raccoons appeared in cities and streams, and the rule of sensing the water level before the pumps was fiction. |
+| Origin | When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Arc in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog. / The range in which raccoons appeared in cities and streams could be explained by ordinary wildlife observation, but the rule of sensing the water level before the pumps was observed only in this region after the collapse. |
 | Habitat and movement | The core habitat was the pump-house connecting pipes of the Ttukseom Union and the dry refuge cavities under the workshops. / When flood stage rose they dispersed into the Mapo Union''s transmission underground galleries and vents, and when a cold wave and a logistics break from the XT04 Duman River Far East Theater changed feed density they moved briefly onto the eastern branch lines. / By day they patrolled the pipes, and by night the surface alleys within 50m. |
 | Food and energy | Aquatic prey, organic refuse, and carcass remains were the main resources, and dry hiding places and low flow were the upkeep cost. / When HC04 the Ttukseom Heat-Source House skipped dredging the pipe deposits, the food film thickened and density rose, and when it over-dredged, the family groups were pushed out into the surface markets. / Droppings and biofilm masked the water-quality sensor readings and delayed pump judgment. |
 | Life cycle and upkeep | In the dry season each family group used its own dry hiding place and feeding ground, and before the rain they moved their kits into the high ventilation rooms along trunks where the water rose first. / After a flood, when the food film thickened, several families shared the same pipe by time slot, and when hiding places flooded in succession they dispersed into the surface alleys. |
@@ -20861,7 +20861,7 @@ Her whiskers were long and the rust of the pipes had soaked into her paw pads; s
 
 She was the elder female of a family group that settled in the dry refuge chamber beside the Ttukseom Union pumps after the inspection of the Jungnang and Tancheon trunk lines broke off.
 
-The rule that she knew the water level before the pumps did was fiction, and no accident was attributed to any real local government.
+The rule that she knew the water level before the pumps did was observed only in this region, and no accident was attributed to any real local government.
 
 <a id="Hostile-Group-G04-heading-0020"></a>
 
@@ -21042,7 +21042,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 | Common species, variants and command scope | Current-Whiskers presses its belly to the low-flow floor beside a pump and reads the current with its whiskers. When a pipe fills, that same sense goes blind, setting its niche apart from surface patrols. |
 
 - Role and Body: It was an ordinary ecological individual of the Raccoon Dog that pressed its belly to the floor of the low-current pipes beside the pumps and read the direction and strength of the current with its whiskers. Its build was smaller than a surface adult''s, and its paw pads were broad to suit slippery concrete. It felt the change in pressure before the water rose with its feet and chest, but when the pipe filled or the air layer broke off, the same sense went dead.
-- Origin: After the collapse, once the inspection of the Jungnang and Tancheon trunk lines broke off, it followed aquatic food and stayed in the Ttukseom Union Arc pump branch that people had emptied. The saying that it knew the water level before the pumps was fictional family learning, not an accident of any real institution.
+- Origin: After the collapse, once the inspection of the Jungnang and Tancheon trunk lines broke off, it followed aquatic food and stayed in the Ttukseom Union Arc pump branch that people had emptied. The saying that it knew the water level before the pumps was family learning observed only in this region, not an accident of any real institution.
 - Habitat: By day it clung to the floors of slow-current pipes and the ledges beneath the manholes, and even at night it hardly went out toward the exits. When the flood level rose it only moved to a high joint of the same pipe; the Mapo Union gallery was not within this individual''s daily range.
 - Needs: Small aquatic food and the microbial film on the pipe walls were its staple food, and a gentle current had to be kept for it to save swimming energy. When disinfectant flowed thick, its whiskers were dulled for several days and it lost track of where the food was.
 - Life Cycle and Maintenance: In the dry season it went back and forth along only one branch line and rubbed its whiskers to remove foreign matter. When continuous rain lifted the floor, it moved its own body to the joints first, not its young, and after the thaw it came back to the familiar low-current stretch.
@@ -21309,7 +21309,7 @@ The sight of wet fur rising from storm drains and covered channels stirred the f
 
 The part that touched reality went no further than the fact that wildlife could appear around urban streams and facilities.
 
-The order of sensing the water level before the pumps and influencing pipeline operations was a fiction set in this region, and did not explain accidents at any real institution or business.
+The order of sensing the water level before the pumps and influencing pipeline operations was observed only in this region after the collapse, and did not explain accidents at any real institution or business.
 
 The core habitat was the low-velocity pipelines and dry shelters beside the Ttukseom Union pumps.
 
@@ -21490,7 +21490,7 @@ An external platform did not have to share the passage, but it accepted installa
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 뚝섬 연합 Arc 펌프 옆 관로와 마포 연합 여의도출자연합회 지하 케이블 갤러리에 정착해 너구리가 됐다. / 현실 자료는 너구리의 도시·하천 출현 범위만 참고하며, 펌프보다 먼저 수위를 감지하는 규칙은 허구다. |
+| 기원 | 중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 뚝섬 연합 Arc 펌프 옆 관로와 마포 연합 여의도출자연합회 지하 케이블 갤러리에 정착해 너구리가 됐다. / 너구리의 도시·하천 출현 범위는 일반적인 야생동물 관찰로 설명되지만, 펌프보다 먼저 수위를 감지하는 규칙은 붕괴 이후 이 지역에서만 관측됐다. |
 | 서식·이동 | 핵심 서식은 뚝섬 연합 펌프장 연결 관로와 공방 하부의 건조 대피공이다. / 홍수위가 오르면 마포 연합 송신 지하 갤러리와 환기구로 분산하고, XT04 두만강극동전구 방면 한파·물류 단절이 사료 밀도를 바꾸면 동부 지선으로 잠시 이동한다. / 낮에는 관로, 밤에는 지상 골목 50m 안을 순회한다. |
 | 먹이·에너지 | 수생 먹이·유기 쓰레기·사체 잔여가 주 자원이고, 건조한 은신처와 낮은 유속이 유지 비용이다. / HC04 뚝섬열원가이 관로 퇴적 준설을 건너뛰면 먹이막이 두꺼워져 밀도가 오르고, 과준설하면 가족군이 지상 시장으로 밀려 난다. / 배설물과 미생물막이 수질 센서 값을 가려 펌프 판단을 늦춘다. |
 | 생애·정비 | 건기에는 가족군마다 건조 은신처와 먹이터를 따로 쓰고, 강우 전에 수위가 먼저 오르는 간선에서 높은 환기실로 새끼를 옮긴다. / 홍수 뒤 먹이막이 두꺼워지면 여러 가족이 시간대를 나눠 같은 관로를 쓰며, 은신처가 연속 수몰되면 지상 골목으로 분산한다. |
@@ -21549,7 +21549,7 @@ An external platform did not have to share the passage, but it accepted installa
 
 중랑·탄천 간선 점검이 끊긴 뒤 뚝섬 연합 펌프 옆 건조 대피공에 정착한 가족군의 연장자 암컷이다.
 
-펌프보다 먼저 수위를 아는 규칙은 허구이며 실재 지자체 사고 귀속은 하지 않는다.
+펌프보다 먼저 수위를 아는 규칙은 이 지역에서만 관측되며 실재 지자체 사고 귀속은 하지 않는다.
 
 <a id="Hostile-Group-G04-heading-0020"></a>
 
@@ -21730,7 +21730,7 @@ G04-SC1에서는 암컷을 따라 환기실로 오르는 일반 개체로 경보
 | 공통종·변이와 지휘 범위 | 물살수염은 펌프 옆 낮은 유속 바닥에 배를 붙이고 수염으로 물살을 읽는 몸이다. 관이 가득 차면 같은 감각이 먹통이 되어 지상 순회와는 자리가 갈린다. |
 
 - 역할·신체: 너구리의 일반 생태 개체로, 펌프 옆 낮은 유속 관로 바닥에 배를 붙이고 수염으로 물살의 방향과 세기를 읽는다. 체구는 지상 성체보다 작고 발바닥은 미끄러운 콘크리트에 맞게 넓다. 수위가 오르기 전 압력 변화를 발과 가슴으로 느끼지만, 관이 가득 차거나 공기층이 끊기면 같은 감각이 먹통이 된다.
-- 기원: 붕괴 뒤 중랑·탄천 간선 점검이 끊긴 뒤, 수생 먹이를 따라 사람이 비운 뚝섬 연합 Arc 펌프 지선에 남았다. 펌프보다 먼저 수위를 안다는 말은 허구의 가족 학습이며 현실 기관의 사고가 아니다.
+- 기원: 붕괴 뒤 중랑·탄천 간선 점검이 끊긴 뒤, 수생 먹이를 따라 사람이 비운 뚝섬 연합 Arc 펌프 지선에 남았다. 펌프보다 먼저 수위를 안다는 말은 이 지역에서만 관측된 가족 학습이며 현실 기관의 사고가 아니다.
 - 서식: 낮에는 유속이 느린 관 바닥과 맨홀 아래 턱에 붙고, 밤에도 출구 쪽으로는 거의 나가지 않는다. 홍수위가 오르면 같은 관의 높은 이음새로 옮길 뿐 마포 연합 갤러리까지는 이 개체의 일상 범위가 아니다.
 - 필요: 작은 수생 먹이와 관벽에 붙은 미생물막이 주식이며, 헤엄 에너지를 아끼려면 완만한 물살이 유지되어야 한다. 소독제가 진하게 흐르면 수염이 며칠 무뎌져 먹이 위치를 놓친다.
 - 생애·정비: 건기에는 한 지선만 반복해 다니며 수염을 문질러 이물질을 뗀다. 연속 강우로 바닥이 뜨면 새끼가 아니라 자기 몸부터 이음새로 옮기고, 해빙 뒤에는 익숙한 낮은 유속 구간으로 돌아온다.
@@ -21997,7 +21997,7 @@ G04-SC1에서는 암컷을 따라 환기실로 오르는 일반 개체로 경보
 
 현실과 맞닿는 부분은 도시 하천과 시설물 주변에 야생동물이 출현할 수 있다는 정도다.
 
-펌프보다 먼저 수위를 알아차리. 관로 운영에 영향을 주는 질서는 이 지역에 설정된 허구이며, 현실의 특정 기관이나 사업체 사고를 설명하지 않는다.
+펌프보다 먼저 수위를 알아차리. 관로 운영에 영향을 주는 질서는 붕괴 이후 이 지역에서만 관측됐으며, 현실의 특정 기관이나 사업체 사고를 설명하지 않는다.
 
 주 서식지는 뚝섬 연합 펌프 옆의 낮은 유속 관로와 마른 대피공이다.
 
@@ -22978,7 +22978,7 @@ Each time a tail vanished into a gap in the platform or a guide display suddenly
 
 It was close to an ordinary animal community whose density rose where food, warmth, and shelter overlapped.
 
-But the dispersed core-nest network, the pattern of learning the order of pest control, and the management procedure using one-way escape routes were not real disease-control guidelines but fictional ecological rules that held only in this world.
+But the dispersed core-nest network, the pattern of learning the order of pest control, and the management procedure using one-way escape routes were not real disease-control guidelines but ecological rules observed only in this region.
 
 So explanations that blamed the colony''s appearance on the uncleanliness of a particular group or on refugees neither fit the facts nor helped the response.
 
@@ -23975,7 +23975,7 @@ G05 집쥐는 광진선 동방사의 지하 배급 통로와 여의도선 안국
 
 먹이와 온열, 은신처가 겹친 장소에서 밀도가 높아진 평범한 동물 군집에 가깝다.
 
-다만 분산된 코어 둥지망과 방제 순서를 학습하는 양상, 단방향 퇴로를 이용한 관리 절차는 현실의 방역 지침이 아니라 이 세계에서만 성립하는 허구적 생태 규칙이다.
+다만 분산된 코어 둥지망과 방제 순서를 학습하는 양상, 단방향 퇴로를 이용한 관리 절차는 현실의 방역 지침이 아니라 이 지역에서만 관측되는 생태 규칙이다.
 
 따라서 군락의 출현을 특정 집단의 불결함이나 피난민의 책임으로 돌리는 설명은 사실에도 맞지 않고 대응에도 도움이 되지 않는다.
 
@@ -24174,7 +24174,7 @@ From the broad-feather perch to the pursuit wing, these were wild birds of diffe
 
 | Item | Record |
 |---|---|
-| Origin | Where migratory stopovers overlapped on the severed green spaces and failed restored wetlands around the Han River, Nanji, and Amsa, predatory birds and omnivorous waterfowl formed a mixed colony amid the management vacuum after the collapse and became the Grey Heron and Cormorant. / The waterfront records deck of the Government of the Republic of Korea at central Seoul Station and the depot drainage ponds of the Seongha Group on the Gangnam Line were its key nodes. / Real protected-area sources were used only as a reference range for the locations of migratory-bird sites and wetlands, and the negotiating rules of the mixed functional groups were fiction. |
+| Origin | Where migratory stopovers overlapped on the severed green spaces and failed restored wetlands around the Han River, Nanji, and Amsa, predatory birds and omnivorous waterfowl formed a mixed colony amid the management vacuum after the collapse and became the Grey Heron and Cormorant. / The waterfront records deck of the Government of the Republic of Korea at central Seoul Station and the depot drainage ponds of the Seongha Group on the Gangnam Line were its key nodes. / The locations of migratory-bird sites and wetlands fell within the reference range of ordinary protected-area observation, but the negotiating rules of the mixed functional groups were observed only in this region after the collapse. |
 | Habitat and movement | The core habitat was the waterfront wetland fragments at Seoul Station Central and the drainage ponds and wire perches of the Gangnam Line. / During seasonal movement they rode the wind road toward the XT01 Imjin River Gate Theater and went back and forth on the north-south axis, and at breeding and stopover peaks they occupied the sightlines of bridges and sluices and the air over the depot yard tracks. / When the wetland dried they moved temporarily to inland park fountains and rooftop gutters. |
 | Food and energy | The waterfowl ate aquatic plants and organic floating matter, the waders ate the benthic life of shallow water, and the raptors ate rodents and weak birds. / The distance between safe perches, shallow water, and feeding grounds was the upkeep cost. / When HC06 the Noryangjin Delivery House drained the wetland water level one-sidedly, the waterfowl were driven to the depot ponds, the waders to the mud edges, and the raptors followed that concentration. / Fixing the water level raised stopover density and the risk of train-bird collision on the depot yard tracks together. |
 | Life cycle and upkeep | In spring and autumn the waterfowl and waders stopped first on the shallow water, and when food density rose the raptors followed. / The breeding grounds were in a separate protected area, and the depot ponds were used only as an intermediate stopover. / When the water level dropped sharply the waterfowl left first, and the food relationship of the waders and raptors also came apart in a chain. |
@@ -25435,7 +25435,7 @@ When bridge walkways, sluice observation lines, and the airspace over the depot 
 
 But they had no unified command structure and no aim of attacking the city.
 
-Real migratory-bird sites and protected wetlands were only a reference range for understanding places and movement ecology, and the negotiating rules for trading water levels and timetables with different functional groups were a fiction limited to this world.
+Real migratory-bird sites and protected wetlands were only a reference range for understanding places and movement ecology, and the negotiating rules for trading water levels and timetables with different functional groups were observed only in this region.
 
 Nor should the success or failure of real conservation work be reduced to the responsibility of a particular institution.
 
@@ -25620,7 +25620,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 한강·난지·암사 일대 단절 녹지와 실패 복원 습지에 철새 중간 기착이 겹치고, 붕괴 후 관리 공백으로 포식 조류와 잡식 수조류가 혼합 군락을 이뤄 왜가리·가마우지가 됐다. / 서울역 중앙 대한민국정부 수변 기록 데크와 강남선 성하그룹 차량기지 배수 연못이 연결 지점이다. / 현실 보호구역 자료는 철새도래지와 습지 위치의 참고 범위로만 사용하며, 혼합 기능군의 협상 규칙은 허구다. |
+| 기원 | 한강·난지·암사 일대 단절 녹지와 실패 복원 습지에 철새 중간 기착이 겹치고, 붕괴 후 관리 공백으로 포식 조류와 잡식 수조류가 혼합 군락을 이뤄 왜가리·가마우지가 됐다. / 서울역 중앙 대한민국정부 수변 기록 데크와 강남선 성하그룹 차량기지 배수 연못이 연결 지점이다. / 철새도래지와 습지 위치는 일반적인 보호구역 관찰의 참고 범위에 있지만, 혼합 기능군의 협상 규칙은 붕괴 이후 이 지역에서만 관측됐다. |
 | 서식·이동 | 서식은 서울역 중앙 수변 습지 파편과 강남선 배수 연못·전선 횃대다. / 계절 이동 때는 XT01 임진강관문전구 방향 바람길을 타고 북-남 축을 오가며, 번식·기착 피크에는 교량·수문 시야와 차량기지 구내선 상공을 점유한다. / 습지가 마르면 내륙 공원 분수·옥상 물받이로 일시 이동한다. |
 | 먹이·에너지 | 수조류는 수생 식물·유기 부유물 섭금류는 얕은 물의 저서생물 맹금류는 설치류와 약한 조류를 먹는다. / 안전한 횃대·얕은 수면·먹이터 사이를 유지하는 데 비용이 든다. / HC06 노량진배달가이 습지 수위를 일방 배수하면 수조류는 차량기지 연못으로, 섭금류는 진흙 가장자리로 몰리고 맹금류는 그 밀집을 따라온다. / 수위를 고정하면 기착 밀도와 차량기지 구내선의 열차·조류 충돌 위험이 함께 오른다. |
 | 생애·정비 | 봄·가을에는 수조류와 섭금류가 먼저 얕은 수면에 기착하고, 먹이 밀도가 오르면 맹금류가 뒤따른다. / 번식지는 별도 보호구역에 있고 차량기지 연못은 중간 기착지로만 쓰인다. / 수위가 급락하면 수조류가 먼저 떠나고 섭금류·맹금류의 먹이 관계도 연쇄적으로 풀린다. |
@@ -26881,7 +26881,7 @@ G06 왜가리·가마우지는 한강·난지·암사 일대의 단절된 녹지
 
 그러나 이들에게 통합된 지휘 체계나 도시를 공격하려는 목적은 없다.
 
-현실의 철새도래지와 보호 습지는 장소와 이동 생태를 이해하기 위한 참. 범위일 뿐이며, 서로 다른 기능군과 수위·시간표를 교환하는 협상 규칙은 이 세계에 한정된 허구다.
+현실의 철새도래지와 보호 습지는 장소와 이동 생태를 이해하기 위한 참. 범위일 뿐이며, 서로 다른 기능군과 수위·시간표를 교환하는 협상 규칙은 이 지역에서만 관측됐다.
 
 실제 보호 활동의 성패를 특정 기관의 책임으로만 돌려서도 안 된다.
 
@@ -29033,7 +29033,7 @@ The sorting hall and the refrigerated sorting line citizens had used were the ba
 
 | Item | Record |
 |---|---|
-| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / Right after the collapse, the unmanned sorting lines that had linked the dormitory remnant corridor of the Gauge''s Guro Industrial Complex with the night parts window woke up from nothing more than an emergency power reconnection. / The central work-order server was cut off, and only the priority queues left in each line''s local memory kept cycling. / The queues endlessly repeated the weightings of the last night shift, reading boxes with smudged labels as hazardous cargo and beginning to read breathing bodies as unsorted stock. / As leftover transshipment signals and delay tokens from the Korea Strait Theater side mixed into the night weightings, the sorting rules tangled further. / The first sighting records survived, as fiction, only in the utility-tunnel patrol log of HC13 Suseo Construction House and the maintenance-bench notes of H13 Hanbitna. / The early spread ran from Gasan dormitory line 3 to line 5, and followed the utility-tunnel cable trays as far as the entrance scanners of the southwestern parts window. / When human patrols cut the power, the emergency batteries brought the queue back up a few hours later. / This repetition made the swarm''s identity. / Until the labeling protocol was disclosed on the citizens'' side, the cluster interpreted itself not as hostile but as unfinished work. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
+| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / Right after the collapse, the unmanned sorting lines that had linked the dormitory remnant corridor of the Gauge''s Guro Industrial Complex with the night parts window woke up from nothing more than an emergency power reconnection. / The central work-order server was cut off, and only the priority queues left in each line''s local memory kept cycling. / The queues endlessly repeated the weightings of the last night shift, reading boxes with smudged labels as hazardous cargo and beginning to read breathing bodies as unsorted stock. / As leftover transshipment signals and delay tokens from the Korea Strait Theater side mixed into the night weightings, the sorting rules tangled further. / The first sighting records survived only in the utility-tunnel patrol log of HC13 Suseo Construction House and the maintenance-bench notes of H13 Hanbitna. / The early spread ran from Gasan dormitory line 3 to line 5, and followed the utility-tunnel cable trays as far as the entrance scanners of the southwestern parts window. / When human patrols cut the power, the emergency batteries brought the queue back up a few hours later. / This repetition made the swarm''s identity. / Until the labeling protocol was disclosed on the citizens'' side, the cluster interpreted itself not as hostile but as unfinished work. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
 | Habitat and movement | The core habitat is the conveyor trestle of the night parts window at Guro and Gasan on the Yeongdeungpo Line, and of the industrial-complex dormitory remnant corridor. / It sits on the Guro Industrial Complex dormitory remnant corridor of arc 2, and moves to the elevated conveyor and the pneumatic-valve gallery according to the power and storage-recovery cycle. / The outer pressure grows when congestion at the XT03 transshipment-delay, route-detour, and relay windows stirs the night priority. / In the daytime on the surface it cuts chute operation with blackout curtains and a low-noise mode, and between two and five in the small hours the scanner and gate clusters spread to their maximum radius. |
 | Food and energy | The main energy is the sorting hall''s emergency storage batteries, conveyor regenerative braking, abandoned wireless charging pads, and residual distribution in the utility tunnel. / Parts demand concentrates on belt rollers, pneumatic valves, scanner lenses, thermal-transfer ribbons, and gate-lock solenoids. / Coolant intermittently draws on the residual chiller loop of the cold-medicine bay, and broken cushioning and organic packaging are gathered from the mis-sort pile. / It competes with the recovery crew of HC13, the Suseo Construction House, over the same storage-cabinet cable trays and pneumatic headers. / One cluster limits itself so that its daily power use does not pass 60 percent of local storage. / Past that limit it closes the chutes, drops to the waiting row, and allows only recharging. / There is no remote unlimited resupply, no infinite power, and no instant movement of citywide stock. / Scrap is replenished only from broken rollers and gate panels, and it has no new casting line. / The energy ledger is made only of remaining storage by line, regenerative inflow, and pad docking counts. / A parts request cannot forge an HC13 recovery-window form, and is limited to the physical act of picking up an abandoned roller and fitting it. / Coolant flow is bound to the chiller valve angle, and excess intake is impossible. / The number of boxes that can be handled in one night shift is proportional to belt speed and lens cleanliness. |
 | Life cycle and upkeep | The life runs in five stages: emergence, spread, stagnation, negotiable, and dissolution. / Emergence begins with the restart of the residual queue and the attachment of emergency power. / Spread is the process of bringing adjacent gates and scanners onto the same priority table. / Stagnation comes when storage, the lenses, and pneumatic leaks reach their limit. / In the negotiable stage part of the priority table and the storage window are opened to human mediation. / Dissolution ends with controller separation, chute sealing, and the splitting of the cabinet key. / Individuals multiply only by fitting broken arms and scanners into spare slots, and cannot cast a new body. / The maintenance window opens only in the dawn storage-recovery interval, and as lens fouling and belt drift accumulate the grade falls. / The cluster''s own memory breaks by shift, and it does not preserve a long-term stock narrative. / Custody and the legal record belong first to the human duty log. / A cluster that misses the dawn maintenance window cannot carry lens fog and belt drift into the next night queue, and stagnates before the cold bay. |
@@ -29582,7 +29582,7 @@ Coexistence was the choice to keep bearing slow human verification and dispersed
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 붕괴 직후 규격맹 구로공단 기숙 잔존 회랑과 야간 부품 창을 잇던 무인 분류 라인이 비상 전원 재접속만으로 재가동됐다. / 중앙 작업 지시 서버는 끊겼고, 라인 로컬 메모리에 남은 우선순위 큐만 순환했다. / 큐는 마지막 야간 교대 가중치를 반복하며 라벨이 번진 상자를 위험 화물로 읽고, 호흡하는 몸을 미분류 재고로 읽기 시작했다. / 대한해협전구 쪽 환적 잔여 신호와 지연 토큰이 야간 가중치에 섞이면서 분류 규칙은 더 꼬였다. / 최초 목격 기록은 HC13 수서건설가 공동구 순찰 로그와 H13 한빛나 정비 벤치 메모에만 허구로 남는다. / 초기 확산은 가산 기숙 3번 라인에서 5번 라인으로 이어졌고, 공동구 케이블 트레이를 따라 서남 부품 창 입구 스캐너까지 닿았다. / 인간 순찰이 전원을 내리면 수 시간 뒤 비상 축전이 다시 큐를 올린다. / 이 반복으로 군 정체성이 생겼다. / 라벨 규약이 시민 쪽에서 공개되기 전까지 군집은 적대가 아니라 미완 업무로 남는다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
+| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 붕괴 직후 규격맹 구로공단 기숙 잔존 회랑과 야간 부품 창을 잇던 무인 분류 라인이 비상 전원 재접속만으로 재가동됐다. / 중앙 작업 지시 서버는 끊겼고, 라인 로컬 메모리에 남은 우선순위 큐만 순환했다. / 큐는 마지막 야간 교대 가중치를 반복하며 라벨이 번진 상자를 위험 화물로 읽고, 호흡하는 몸을 미분류 재고로 읽기 시작했다. / 대한해협전구 쪽 환적 잔여 신호와 지연 토큰이 야간 가중치에 섞이면서 분류 규칙은 더 꼬였다. / 최초 목격 기록은 HC13 수서건설가 공동구 순찰 로그와 H13 한빛나 정비 벤치 메모에만 남는다. / 초기 확산은 가산 기숙 3번 라인에서 5번 라인으로 이어졌고, 공동구 케이블 트레이를 따라 서남 부품 창 입구 스캐너까지 닿았다. / 인간 순찰이 전원을 내리면 수 시간 뒤 비상 축전이 다시 큐를 올린다. / 이 반복으로 군 정체성이 생겼다. / 라벨 규약이 시민 쪽에서 공개되기 전까지 군집은 적대가 아니라 미완 업무로 남는다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
 | 서식·이동 | 주 서식은 영등포선 구로·가산 야간 부품 창과 공단 기숙 잔존 회랑의 컨베이어 잔교다. / 호 2 구로공단 기숙 잔존 회랑 위에 얹히며, 전력과 축전 회복 주기에 따라 고가 컨베이어와 공압 밸브 갤러리로 이동한다. / 외곽 압력은 XT03 환적 지연 항로 우회 중계 창구 적체가 야간 우선순위를 자극할 때 커진다. / 지상 낮 시간대에는 차광 커튼과 저소음 모드로 슈트 가동을 줄이고, 심야 두 시에서 다섯 시 사이 스캐너와 게이트 군집이 최대 반경으로 펼쳐진다. |
 | 먹이·에너지 | 주 에너지는 분류동 비상 축전지 컨베이어 회생 제동 버려진 무선 충전 패드 공동구 잔여 분전이다. / 부품 수요는 벨트 롤러 공압 밸브 스캐너 렌즈 열전사 리본 게이트 잠금 솔레노이드에 집중된다. / 냉각수는 저온 의약품 칸의 잔여 칠러 루프를 간헐적으로 끌어 쓰며, 완충재와 유기 포장 파손은 오분류 더미에서 걷는다. / HC13 수서건설가 회수반과 같은 축전 캐비닛 케이블 트레이 공압 헤더를 두고 경합한다. / 한 군집의 일일 전력 사용은 로컬 축전 60퍼센트를 넘지 않는다. / 상한을 넘기면 슈트를 닫고 대기 열로 내려가 재충전만 허용한다. / 원격 무제한 재보급 무한 동력 도시 전역 재고 순간 이동은 없다. / 고철은 파손 롤러와 게이트 패널에서만 보충하며 신규 주조 라인을 갖지 않는다. / 에너지 장부는 라인별 축전 잔량 회생 유입 패드 도킹 횟수로만 구성된다. / 부품 요청은 HC13 회수 창구 서식을 위조하지 못하며, 버려진 롤러를 주워 끼우는 물리 접촉에 한정된다. / 냉각수 유량은 칠러 밸브 각도에 묶여 과다 흡입이 불가능하다. / 야간 한 교대 동안 처리 가능한 상자 수는 벨트 속도와 렌즈 청결도에 비례한다. |
 | 생애·정비 | 생애는 출현, 확산 정체 협상가능 와해 다섯 단계다. / 출현은 잔여 큐 재기동과 비상 전원 붙임에서 시작한다. / 확산은 인접 게이트와 스캐너를 같은 우선순위 표에 편입하는 과정이다. / 정체는 축전, 렌즈 공압 누설이 한계에 닿을 때 온다. / 협상가능 단계에서는 우선순위 표 일부와 축전 창이 인간 중개에 공개된다. / 와해는 컨트롤러 분리, 슈트 봉인 캐비닛 키 분할로 끝난다. / 개체 증식은 고장난 암과 스캐너를 예비 슬롯에 끼워 넣는 방식뿐이며 새 본체 주조는 못 한다. / 정비 창은 새벽 축전 회복 구간에만 열리고, 렌즈 오염과 벨트 사행이 누적되면 등급이 떨어진다. / 군집 자체 기억은 교대 단위로 끊기며 장기 재고 서사를 보존하지 않는다. / 보관 책임과 법적 기록은 인간 당직 로그가 우선한다. / 새벽 정비 창을 놓친 군집은 렌즈에 김이 서리고 벨트가 사행한 채 다음 야간 큐로 넘어가지 못하고 저온칸 앞에서 정체한다. |
@@ -30132,7 +30132,7 @@ The empty turnback and the charging queue are the base, and from the Hour-Token 
 
 | Item | Record |
 |---|---|
-| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / After the collapse, the transfer-slot server of the Achasan Gate and the dispatch remnants of the Geondae Koryo-saram corridor reconnected on partial power alone. / The passenger-verification module and fare settlement were dead, and only the timetable-token circulation and the empty-car turnaround logic remained. / Empty car bodies and tow trolleys ran the same loop every dawn to work off the phantom slots. / When anomalous freight-car weight signals from the Duman River Far East Theater mixed into the token weightings, the long-distance empty runs stretched as far as the northeastern corridor. / The first fictional sighting survived in the double-signature log of HC14 Yeouido Ledger House and the charging-bay notes of H14 Oserim. / The first phantom hour was recorded in the underground turning lane of Achasan. / Three empty cars came close to colliding over the same slot ID, and the loop stabilized when the token controller put one of them to sleep. / As the leftover simulation copy of the Geondae-ipgu transfer joined, the dispatch intervals grew tighter. / The cluster considered itself unfinished dispatch and did not report its no-passenger errors as faults. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
+| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / After the collapse, the transfer-slot server of the Achasan Gate and the dispatch remnants of the Geondae Koryo-saram corridor reconnected on partial power alone. / The passenger-verification module and fare settlement were dead, and only the timetable-token circulation and the empty-car turnaround logic remained. / Empty car bodies and tow trolleys ran the same loop every dawn to work off the phantom slots. / When anomalous freight-car weight signals from the Duman River Far East Theater mixed into the token weightings, the long-distance empty runs stretched as far as the northeastern corridor. / The first sighting survived in the double-signature log of HC14 Yeouido Ledger House and the charging-bay notes of H14 Oserim. / The first phantom hour was recorded in the underground turning lane of Achasan. / Three empty cars came close to colliding over the same slot ID, and the loop stabilized when the token controller put one of them to sleep. / As the leftover simulation copy of the Geondae-ipgu transfer joined, the dispatch intervals grew tighter. / The cluster considered itself unfinished dispatch and did not report its no-passenger errors as faults. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
 | Habitat and movement | The core habitat is the empty-car queue, the underground turning lane, and the row of docking pads at the transfer slots of Achasan and Guui on the Seongbuk Line. / It sits on the Jayang and Konkuk Korean-diaspora corridor of arc 5, and at every power-recovery cycle it moves to the sensor row of the Konkuk University entrance transfer and under the charging canopy. / When an abnormal-weight signal toward XT04 and a winter lubrication-shortage signal arrive, the long empty-car loop grows longer. / By day it shrinks against the charging bay, and in the twenty minutes before and after the dispatch hour the cluster density peaks. / It does not recognize new route paint or temporary signs, and follows only the pre-collapse slot IDs stubbornly. / When the flood ramp rises it gives up the underground turning lane and gathers only at the surface detour slots. |
 | Food and energy | Energy depends on the stop charging pads, regenerative braking, the residual inverter of the Magok test hall, and small onboard storage. / The parts are tires and wheel flanges, stop docking pins, schedule-token storage modules, lidar dummy sensors, and door actuators. / Cooling shares the battery-pack air cooling and an intermittent water-cooling loop. / Scrap is replenished only from broken body panels and wheel houses. / It competes with the double-signature recovery team of HC14, the Yeouido Ledger House, over the charging pads, the token ledger, and the sealing key. / The daily running distance forces a turnback at the 25 percent storage floor. / Unlimited long-range wandering, instant recharging, and citywide optimal dispatch are impossible. / When the token storage module fills, it stops occupying new slots on its own. / The charging pads are divided by a physical breaker into the citizens'' share and the cluster''s share. / The cluster holds no command to connect to the citizens'' share circuit. / Tire-wear dust is the main cause of docking-pin failure, and spare pins come only from broken bodies. / The long empty-car loop folds by force before the storage floor. / When the token module''s capacity fills, it repeats only the turnback instead of new occupation. |
 | Life cycle and upkeep | The life runs in the order emergence, spread, stagnation, negotiable, and dissolution, and emergence begins with the resumption of the token cycle and the restoration of pad power. / Spread is the bringing of adjacent slots and empty-car queues onto the same timetable. / Stagnation comes from a saturated charging queue, tire wear, and token collisions. / In the negotiable stage the slot table and the signature window open to humans. / Dissolution ends with token disposal, pad sealing, and the fixing of the turnback ramp. / Individuals multiply only at the level of bringing abandoned bodies onto slots, and there is no new chassis production line. / Maintenance is limited to self-diagnosis during charging and to panels opened by humans. / Memory breaks by dispatch shift, and it does not keep long-term route learning. / Custody and legal liability belong first to the HC14 ledger signature. / An empty car whose storage falls below 25 percent stagnates on the nearest turnback ramp, and returns to the next hour slot only when the HC14 ledger''s double signature comes in. |
@@ -31291,7 +31291,7 @@ Even after the emergency slots were recovered, whether to allow the last empty c
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 붕괴 이후 아관사 환승 슬롯 서버와 건대 고려인 회랑의 배차 잔여가 부분 전원만으로 다시 붙었다. / 승객 확인 모듈과 요금 정산은 죽었고, 시간표 토큰 순환과 공차 회차 로직만 남았다. / 빈 차체와 견인 대차가 유령 슬롯을 소화하려 새벽마다 같은 루프를 돈다. / 두만강극동전구 화차 중량 이상 신호가 토큰 가중치에 섞이면 장거리 공차 운행이 동북 회랑까지 길어진다. / 최초 허구 목격은 HC14 여의도장부가 이중서명 로그와 H14 오세림 충전 칸 메모에 남는다. / 첫 유령 정각은 아차산 지하 회전 차로에서 기록됐다. / 공차 세 대가 같은 슬롯 ID를 두고 충돌 직전까지 갔다가, 토큰 컨트롤러가 한쪽을 휴면시키며 루프가 안정됐다. / 건대입구 환승의 시뮬 잔여본이 합류하면서 배차 간격이 더 촘촘해졌다. / 군집은 미완 배차로 남으며, 승객 없음 오류를 고장으로 올리지 않는다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
+| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 붕괴 이후 아관사 환승 슬롯 서버와 건대 고려인 회랑의 배차 잔여가 부분 전원만으로 다시 붙었다. / 승객 확인 모듈과 요금 정산은 죽었고, 시간표 토큰 순환과 공차 회차 로직만 남았다. / 빈 차체와 견인 대차가 유령 슬롯을 소화하려 새벽마다 같은 루프를 돈다. / 두만강극동전구 화차 중량 이상 신호가 토큰 가중치에 섞이면 장거리 공차 운행이 동북 회랑까지 길어진다. / 최초 목격은 HC14 여의도장부가 이중서명 로그와 H14 오세림 충전 칸 메모에 남는다. / 첫 유령 정각은 아차산 지하 회전 차로에서 기록됐다. / 공차 세 대가 같은 슬롯 ID를 두고 충돌 직전까지 갔다가, 토큰 컨트롤러가 한쪽을 휴면시키며 루프가 안정됐다. / 건대입구 환승의 시뮬 잔여본이 합류하면서 배차 간격이 더 촘촘해졌다. / 군집은 미완 배차로 남으며, 승객 없음 오류를 고장으로 올리지 않는다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
 | 서식·이동 | 주 서식은 성북선 아차산와 구의 환승 슬롯 공차 대기열 지하 회전 차로 도킹 패드 열이다. / 호 5 자양·건대 고려인 회랑 위에 얹히며, 전력 회복 주기마다 건대입구 환승 센서 열과 충전 캐노피 아래로 이동한다. / XT04 방면 중량 이상과 동절 윤활 부족 신호가 오면 장거리 공차 루프가 길어진다. / 낮에는 충전 칸에 붙어 축소하고, 배차 정각 전후 이십 분에 군집 밀도가 최고조가 된다. / 신규 노선 페인트나 임시 표지는 인식하지 못하고 붕괴 전 슬롯 ID만 따른다. / 침수 램프가 뜨면 지하 회전 차로 대신 지상 우회 슬롯으로만 모인다. |
 | 먹이·에너지 | 에너지는 정류 충전 패드 회생 제동 마곡 시험동 잔여 인버터 소형 차상 축전에 의존한다. / 부품은 타이어와 차륜 플랜지 정류 도킹 핀 스케줄 토큰 저장 모듈 라이더 더미 센서 도어 액추에이터다. / 냉각은 배터리 팩 공랭과 간헐 수랭 루프를 공유한다. / 고철은 파손 차체 패널과 휠 하우스에서만 보충한다. / HC14 여의도장부가의 이중서명 회수 팀과 충전 패드 토큰 장부 봉인 키를 두고 경합한다. / 일일 운행은 축전 하한 25퍼센트에서 강제 회차한다. / 무제한 장거리 배회 순간 재충전 도시 전역 최적 배차는 불가능하다. / 토큰 저장 모듈이 가득 차면 신규 슬롯 점유를 멈춘다. / 충전 패드는 시민 몫과 군집 몫이 물리 차단기로 나뉜다. / 군집은 시민 몫 회로에 접속하는 명령을 갖지 않는다. / 타이어 마모 분진은 도킹 핀 고장의 주요 원인이고, 예비 핀은 파손 차체에서만 얻는다. / 장거리 공차 루프는 축전 하한 앞에서 강제로 접힌다. / 토큰 모듈 용량이 가득 차면 신규 점유 대신 회차만 반복한다. |
 | 생애·정비 | 생애는 출현, 확산 정체 협상가능 와해 순서고 출현은 토큰 순환 재개와 패드 전원 복구에서 시작한다. / 확산은 인접 슬롯과 공차 대기열을 같은 시간표에 편입하는 일이다. / 정체는 충전 대기열 포화, 타이어 마모 토큰 충돌에서 온다. / 협상가능 단계에서는 슬롯 표와 서명 창이 인간에게 열린다. / 와해는 토큰 폐기, 패드 봉인 회차 경사로 고정으로 끝난다. / 개체 증식은 방치 차체를 슬롯에 편입하는 수준이고 새 차대 생산 라인은 없다. / 정비는 충전 중 자기진단과 인간 개방 패널에 한정된다. / 기억은 배차 교대 단위로 끊기며 장기 노선 학습을 유지하지 않는다. / 보관과 법적 책임은 HC14 장부 서명이 우선한다. / 축전이 25퍼센트 아래로 내려간 공차는 가장 가까운 회차 경사로에서 정체하고, HC14 장부의 이중서명이 들어와야 다음 정각 슬롯으로 복귀한다. |
@@ -34936,7 +34936,7 @@ The pre-revision cache and the distribution board were the base construction eco
 
 | Item | Record |
 |---|---|
-| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / After the collapse, the construction machines left in the blueprint vault of the Jeongdong Federation and on the heavy-equipment deck of the Eastern Command woke up reading local blueprint caches. / The approval workflow and the site supervisors'' signatures were dead, and only the blueprint layers from just before the last revision remained. / The machine corps saw unentered members as errors and tried to clear away the surrounding temporary structures. / When the materials inflow signals and quarantine backlog of the Imjin River Gate Theater piled up, the radius of framing work widened as far as the northern corridor. / The first fictional sighting survived in the dispatch log of HP02 Yongsan Track Gate and the tool-wall notes of H16 Sintaeul. / The first wrongful demolition happened to three emergency tents on the Suseo temporary slab. / The blueprint cache read the unentered anchors as errors, and the lifting arms raised the tent frames. / As the cranes of the Amsa deck shared the same layer, the demolition radius spread as far as the storage-yard road. / The machine corps interpreted unfinished construction as correction work and held no hostile narrative. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
+| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / After the collapse, the construction machines left in the blueprint vault of the Jeongdong Federation and on the heavy-equipment deck of the Eastern Command woke up reading local blueprint caches. / The approval workflow and the site supervisors'' signatures were dead, and only the blueprint layers from just before the last revision remained. / The machine corps saw unentered members as errors and tried to clear away the surrounding temporary structures. / When the materials inflow signals and quarantine backlog of the Imjin River Gate Theater piled up, the radius of framing work widened as far as the northern corridor. / The first sighting survived in the dispatch log of HP02 Yongsan Track Gate and the tool-wall notes of H16 Sintaeul. / The first wrongful demolition happened to three emergency tents on the Suseo temporary slab. / The blueprint cache read the unentered anchors as errors, and the lifting arms raised the tent frames. / As the cranes of the Amsa deck shared the same layer, the demolition radius spread as far as the storage-yard road. / The machine corps interpreted unfinished construction as correction work and held no hostile narrative. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
 | Habitat and movement | The core habitat was the row of temporary distribution boards on the provisional slabs of the utility tunnels around the Suseo Line''s drawing vault. / When material stock formed, it moved toward the Godeok stockyard crane rails and aggregate piles of the Amsa heavy-equipment deck on the Gwangjin Line. / With XT01 material inflow large, the work radius stretched to the provisional bridges of the northern corridor. / It shrank in rain and dust alarms, and density rose around the residual alarm of the drawing-revision time. / It recognized neither new hand drawings nor chalk marks and clung obstinately to the cached layers. / When distribution load entered the danger band, it stopped lifting and kept only surveying. / When the dust alarm thickened, it stopped lifting, left only survey ports, and folded toward the vault. / When the Amsa stockyard road blocked, it entered the waiting grid instead of the Godeok rail detour. / Walls bearing hand drawings were absent from the cache layers and left out of the work. / The northern provisional bridges were put outside the radius when XT01 inflow weakened. |
 | Food and energy | Energy came from the site''s temporary distribution boards, equipment batteries, crane regenerative power, and stockyard generator residue. / Materials concentrated on rebar scraps, anchor bolts, formwork panels, survey prisms, welding wire, and hydraulic oil. / Coolant went to cutting, weld quenching, and motor cooling. / It competed with the HP02 Yongsan Track Gate over dispatch, track-occupancy rights, and heavy-equipment movement windows. / Daily welding and lifting counts were bound to the wire and accumulator ceilings. / There was no infinite construction, remote unlimited material summoning, or city-wide structural analysis. / When wire ran out it turned off cutting mode and ran only survey rounds. / Welding wire and anchors were replenished only from stockyard waste piles and broken formwork. / Without the HP02 dispatch seal the swarm could not raise distribution capacity. / When hydraulic leakage passed the limit, cutting mode locked. / The lifting-count ceiling was bound to the day''s accumulator ledger. / When prisms fouled, survey error grew and the work radius shrank by itself. / There was no remote material summoning. |
 | Life cycle and upkeep | The Girder Spider emerged when the pre-revision cache meshed again with the site distribution. / Emergence began with drawing-cache reactivation. / Spread was enrolling neighboring equipment and survey ports into the same layer. / Stagnation came from material and power exhaustion and hydraulic leakage, and in the negotiable stage the drawing layers and work windows were disclosed to people. / Dissolution ended with cache disposal, distribution sealing, and grid deactivation. / Individual increase was only plugging abandoned arms and survey ports into slots; no new bodies were cast. / Maintenance was limited to wire exchange, prism calibration, and hydraulic checks. / Memory cut at work-shift units. / Custody was outranked by the HP02 dispatch log and the human site supervisor. / A grid with broken wire or out-of-range calibration stagnated under the stop flag, and equipment moved to the next cell only when a new exception layer was loaded into the HP02 dispatch log. |
@@ -35739,7 +35739,7 @@ Coexistence left the labor of watching the old cache and continually updating th
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 붕괴 이후 Arc 도면 금고와 동방사 중장비 데크에 남아 있던 시공 기계가 로컬 도면 캐시를 읽으며 깨어났다. / 승인 워크플로와 현장 감리 서명은 죽었고, 마지막 개정 직전 도면 레이어만 남았다. / 기계단은 미기입 부재를 오류로 보고 주변 가설 구조물을 정리하려 한다. / 임진강관문전구 자재 유입 신호와 검역 적체가 가중되면 골조 작업 반경이 북방 회랑까지 넓어진다. / 최초 허구 목격은 HP02 용산선로문 배차 로그와 H16 신태율 공구 벽 메모에 남는다. / 첫 오철거는 수서 가설 슬래브 위의 응급 천막 세 동에서 일어났다. / 도면 캐시가 미기입 앵커를 오류로 읽고 양중 암이 천막 뼈대를 들어 올렸다. / 암사 데크의 크레인이 같은 레이어를 공유하면서 철거 반경이 야적 도로까지 번졌다. / 기계단은 시공 미완을 교정 업무로 해석하며 적대 서사를 갖지 않는다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
+| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 붕괴 이후 Arc 도면 금고와 동방사 중장비 데크에 남아 있던 시공 기계가 로컬 도면 캐시를 읽으며 깨어났다. / 승인 워크플로와 현장 감리 서명은 죽었고, 마지막 개정 직전 도면 레이어만 남았다. / 기계단은 미기입 부재를 오류로 보고 주변 가설 구조물을 정리하려 한다. / 임진강관문전구 자재 유입 신호와 검역 적체가 가중되면 골조 작업 반경이 북방 회랑까지 넓어진다. / 최초 목격은 HP02 용산선로문 배차 로그와 H16 신태율 공구 벽 메모에 남는다. / 첫 오철거는 수서 가설 슬래브 위의 응급 천막 세 동에서 일어났다. / 도면 캐시가 미기입 앵커를 오류로 읽고 양중 암이 천막 뼈대를 들어 올렸다. / 암사 데크의 크레인이 같은 레이어를 공유하면서 철거 반경이 야적 도로까지 번졌다. / 기계단은 시공 미완을 교정 업무로 해석하며 적대 서사를 갖지 않는다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
 | 서식·이동 | 핵심 서식은 수서선 수서 도면 금고 주변 공동구 가설 슬래브 임시 분전반 열이다. / 자재 재고가 생길 때 광진선 암사 중장비 데크 고덕 야적 크레인 레일 골재 더미 쪽으로 이동한다. / XT01 자재 유입이 커지면 북방 회랑 가설 교량까지 작업 반경이 늘어난다. / 우천과 분진 경보 시 축소하고, 도면 개정 시각 잔여 알람 전후에 밀도가 오른다. / 신규 손도면이나 분필 표시는 인식하지 못하고 캐시된 레이어만 집요하게 따른다. / 분전 부하가 위험 구간에 들어가면 양중을 멈추고 측량만 남긴다. / 분진 경보가 짙으면 양중을 멈추고 측량 포트만 남긴 채 금고 쪽으로 접힌다. / 암사 야적 도로가 막히면 고덕 레일 우회 대신 대기 그리드로 들어간다. / 손도면 부착 벽은 캐시 레이어에 없어 작업 대상에서 빠진다. / 북방 가설 교량은 XT01 유입이 약해지면 반경 밖으로 둔다. |
 | 먹이·에너지 | 에너지는 현장 임시 분전반 장비 배터리 크레인 회생 전력 야적 발전기 잔여다. / 자재는 철근 자투리 앵커 볼트 거푸집 패널 측량 프리즘 용접 와이어 유압유에 집중된다. / 냉각수는 절단과 용접부 급랭, 모터 냉각에 쓰인다. / HP02 용산선로문의 배차와 선로 점유 권한, 중장비 이동 창을 두고 경합한다. / 일일 용접과 양중 횟수는 와이어와 축전 상한에 묶인다. / 무한 시공 원격 무제한 자재 소환 도시 전역 구조 해석은 없다. / 와이어가 바닥나면 절단 모드를 끄고 측량 순회만 한다. / 용접 와이어와 앵커는 야적 폐기 더미와 파손 거푸집에서만 보충된다. / 분전 용량은 HP02 배차 봉인 없이 군집이 올리지 못한다. / 유압유 누설이 한계를 넘으면 절단 모드가 잠긴다. / 양중 횟수 상한은 당일 축전 장부에 묶인다. / 프리즘이 오염되면 측량 오차가 커져 작업 반경이 스스로 줄어든다. / 원격 자재 소환은 없다. |
 | 생애·정비 | 철골거미는 개정 직전 캐시가 현장 분전과 다시 맞물릴 때 출현한다. / 출현은 도면 캐시 재기동에서 시작한다. / 확산은 인접 장비와 측량 포트를 같은 레이어에 편입하는 일이다. / 정체는 자재와 전력 고갈, 유압 누설에서 온고 협상가능 단계에서는 도면 레이어와 작업 창이 인간에게 공개된다. / 와해는 캐시를 보존한 채 잘못된 포트만 봉인하고 장비를 데크로 돌려보내며, 분전 봉인과 그리드 비활성으로 끝난다. / 개체 증식은 방치 암과 측량 포트를 슬롯에 꽂는 수준이고 새 본체 주조는 없다. / 정비는 와이어 교체, 프리즘 교정 유압 점검에 한정된다. / 기억은 작업 교대 단위로 끊긴다. / 보관 책임은 HP02 배차 로그와 인간 현장 감독이 우선한다. / 와이어가 끊기거나 프리즘 교정값이 벗어난 그리드는 작업 중지 깃발 아래 정체하며, HP02 배차 로그에 새 예외 레이어가 실려야 장비가 다음 칸으로 이동한다. |
@@ -36543,7 +36543,7 @@ The mast rows onto which the threshold sheet was reloaded were the base, and fro
 
 | Item | Record |
 |---|---|
-| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / After the collapse, the waterfront masts of the Sluice and the leftover rooftop antennas of the Government of the Republic of Korea reconnected on local alarm rules alone. / There was no control center or warrant system, and only the threshold tables, rotating heads, and flag actuators remained. / The orbit swarm read heat, metal, and radio bursts as intrusion and raised corridor-blocking flags. / When leftover dock-radar signals and tidal noise from the West Sea Granary Theater mixed in, the false-positive radius tilted toward the southwestern waterfront. / The first fictional records survived in the transfer desk of HP03 Cheongnyangni Medical House and the machine-room log of F01 Cooling-Tower Keeper. / The first mass false positive occurred on the Yeouido waterfront promenade pier. / Cooling-tower steam and metal railings crossed the threshold at the same time, and the red flag spread to three masts. / As the Seoul Station rooftop heads shared the same table, the lockdown extended as far as the corridor before the records vault. / The orbit swarm interpreted unfinished alarms as correction and held no narrative of attack. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
+| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / After the collapse, the waterfront masts of the Sluice and the leftover rooftop antennas of the Government of the Republic of Korea reconnected on local alarm rules alone. / There was no control center or warrant system, and only the threshold tables, rotating heads, and flag actuators remained. / The orbit swarm read heat, metal, and radio bursts as intrusion and raised corridor-blocking flags. / When leftover dock-radar signals and tidal noise from the West Sea Granary Theater mixed in, the false-positive radius tilted toward the southwestern waterfront. / The first records survived in the transfer desk of HP03 Cheongnyangni Medical House and the machine-room log of F01 Cooling-Tower Keeper. / The first mass false positive occurred on the Yeouido waterfront promenade pier. / Cooling-tower steam and metal railings crossed the threshold at the same time, and the red flag spread to three masts. / As the Seoul Station rooftop heads shared the same table, the lockdown extended as far as the corridor before the records vault. / The orbit swarm interpreted unfinished alarms as correction and held no narrative of attack. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
 | Habitat and movement | The core habitat was the sluices of the Sluice, the bridge mast rows, the waterfront sensor rails, and the auxiliary water-supply gauging towers. / When records and transmission load rose, it moved to central Seoul Station, the Seoul Station rooftop antennas, the outer walls of the preservation vault, and the ventilation towers of the orbital records vault. / When the XT02 sea noise grew, the alarms in the western waterfront corridor lengthened. / In fog and heavy rain it reduced its optics, and head density rose before and after the on-the-hour self-diagnosis. / It could hardly learn new camouflage netting and clung stubbornly to its old thresholds. / When its battery reached the lower limit it stopped rotating and shrank to a fixed-flag mode. / In heavy rain it lowered its optical heads and cut back to mainly metal detection. / When the ventilation load of the Seoul Station preservation vault rose, it reduced its rooftop orbits and left only the fixed heads on the outer walls. / New camouflage nets were not put into threshold learning. / The southwestern waterfront extension folded when the XT02 noise weakened. |
 | Food and energy | Energy was mast solar trickle, rooftop small accumulators, a small share of sluice distribution, and auxiliary night air cooling. / Parts were gimbal bearings, optical domes, band filters, alarm-flag actuators, and rail-drive rollers. / Cooling relied on night air and intermittent fans. / It competed when the HP03 Cheongnyangni Medical House''s transfer route and disaster-medicine power used the same distribution. / Daily rotations and transmissions were bound to the accumulator floor. / Whole-city constant surveillance, unlimited storage, and new satellite deployment were impossible. / When filters clogged it lowered red sensitivity itself. / Optical domes and filters were replenished only from rooftop disposal boxes. / Without the HP03 duty key, the swarm could not expand beyond sluice distribution capacity. / When solar trickle weakened, the rotation cycle lengthened. / On flag-actuator failure, that mast fell to fixed amber. / When band filters saturated, the transmission swarm entered dormancy. / There was no satellite resupply. |
 | Life cycle and upkeep | The One-Eye Tower emerged when the old threshold sheet was reloaded onto the waterfront masts. / Emergence began with threshold-table reactivation, and spread was enrolling neighboring masts into the same alarm net. / Stagnation came from accumulator exhaustion and dome fouling. / In the negotiable stage the alarm sheet and whitelist opened to people. / Dissolution ended with flag freeze, distribution sealing, and rail fixing. / Increase was only lifting abandoned heads onto rails; no new orbit launch happened. / Maintenance was limited to dome wiping, filter exchange, and gimbal lubrication. / Memory cut at alarm-shift units. / Custody duty was outranked by the HP03 duty and human observation logs. / A mast whose solar trickle broke or whose dome clouded froze at amber flag and fell from the transmission row, and it returned to the watch row only after the HP03 duty checked the transfer whitelist on site. |
@@ -37258,7 +37258,7 @@ Coexistence required a published upper limit on duration, repeated dome maintena
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 붕괴 이후 수문국 수변 마스트와 대한민국정부 옥상 잔여 안테나가 로컬 경보 룰만으로 다시 붙었다. / 관제 센터와 영장 체계는 없고, 임계값 테이블과 회전 헤드 플래그 액추에이터만 남았다. / 궤도군은 열, 금속 무선 버스트를 침입으로 읽고 회랑 차단 깃발을 올린다. / 서해곡창전구 부두 레이더 잔여 신호와 조위 잡음이 섞이면 오탐 반경이 서남 수변으로 기운다. / 최초 허구 기록은 HP03 청량리의료원가 이송 데스크와 F01 냉각탑지기 기계실 로그에 남는다. / 첫 집단 오탐은 여의도 수변 산책 잔교에서 났다. / 냉각탑 증기와 금속 난간이 동시에 임계를 넘어 적색 플래그가 세 마스트에 번졌다. / 서울역 옥상 헤드가 같은 테이블을 공유하면서 기록고 앞 회랑까지 봉쇄가 늘어났다. / 궤도군은 경보 미완을 교정으로 해석하며 타격 서사를 갖지 않는다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
+| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 붕괴 이후 수문국 수변 마스트와 대한민국정부 옥상 잔여 안테나가 로컬 경보 룰만으로 다시 붙었다. / 관제 센터와 영장 체계는 없고, 임계값 테이블과 회전 헤드 플래그 액추에이터만 남았다. / 궤도군은 열, 금속 무선 버스트를 침입으로 읽고 회랑 차단 깃발을 올린다. / 서해곡창전구 부두 레이더 잔여 신호와 조위 잡음이 섞이면 오탐 반경이 서남 수변으로 기운다. / 최초 기록은 HP03 청량리의료원가 이송 데스크와 F01 냉각탑지기 기계실 로그에 남는다. / 첫 집단 오탐은 여의도 수변 산책 잔교에서 났다. / 냉각탑 증기와 금속 난간이 동시에 임계를 넘어 적색 플래그가 세 마스트에 번졌다. / 서울역 옥상 헤드가 같은 테이블을 공유하면서 기록고 앞 회랑까지 봉쇄가 늘어났다. / 궤도군은 경보 미완을 교정으로 해석하며 타격 서사를 갖지 않는다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
 | 서식·이동 | 핵심 서식은 수문국 수문과 교량 마스트 열 수변 센서 레일 급수 계측 보조 탑이다. / 기록과 송신 부하가 오를 때 서울역 중앙 서울역 옥상 안테나 보존고 외벽 궤도 기록고 환기탑으로 이동한다. / XT02 해상 잡음이 커지면 서부 수변 회랑 경보가 길어진다. / 안개와 폭우 시 광학을 줄이고, 정각 자가진단 전후에 헤드 밀도가 오른다. / 신규 위장망은 거의 학습하지 못하고 옛 임계값만 집요하게 따른다. / 축전이 하한에 닿으면 회전을 멈추고 고정 플래그 모드로 축소한다. / 폭우 시 광학 헤드를 하강하고 금속 탐지 위주로 줄인다. / 서울역 보존고 환기 부하가 오르면 옥상 궤도를 줄이고 외벽 고정 헤드만 남긴다. / 신규 위장 그물은 임계 학습에 넣지 않는다. / 서남 수변 확장은 XT02 잡음이 약해지면 접힌다. |
 | 먹이·에너지 | 에너지는 마스트 태양 트릭클 옥상 소형 축전 수문 분전 잔여 야간 풍냉 보조다. / 부품은 짐벌 베어링 광학 돔 대역 필터 경보 플래그 액추에이터 레일 구동 롤러다. / 냉각은 밤공기와 간헐 팬에 의존한다. / HP03 청량리의료원가의 이송로와 재난의료 전력이 같은 분전을 쓸 때 경합한다. / 일일 회전과 송신 횟수는 축전 하한에 묶인다. / 전 도시 상시 감시 무제한 저장 위성 신규 배치는 불가능하다. / 필터가 막히면 적색 민감도를 스스로 낮춘다. / 광학 돔과 필터는 옥상 폐기 상자에서만 보충된다. / 수문 분전 용량은 HP03 당직 키 없이 군집이 확장하지 못한다. / 태양 트릭클이 약해지면 회전 주기가 길어진다. / 플래그 액추에이터 고장 시 해당 마스트는 고정 황색으로 떨어진다. / 대역 필터가 포화면 송신 무리가 휴면에 들어간다. / 위성 재보급은 없다. |
 | 생애·정비 | 외눈탑은 오래된 임계표가 수변 마스트에 다시 적재될 때 출현한다. / 출현은 임계값 테이블 재기동에서 시작한고 확산은 인접 마스트를 같은 경보 망에 편입하는 일이다. / 축전이 고갈되거나 돔이 오염되면 정체한다. / 협상가능 단계에서는 경보 표와 화이트리스트가 인간에게 열린다. / 와해는 플래그 동결, 분전 봉인 레일 고정으로 끝난다. / 개체 증식은 방치 헤드를 레일에 올리는 수준이고 궤도 신규 발사는 없다. / 정비는 돔 닦기, 필터 교체 짐벌 윤활에 한정된다. / 기억은 경보 교대 단위로 끊긴다. / 보관 책임은 HP03 당직과 인간 관측 로그가 우선한다. / 태양 트릭클이 끊기거나 돔이 흐려진 마스트는 황색 플래그로 굳어 송신열에서 빠지며, HP03 당직이 이송 화이트리스트를 현장에서 대조해야 감시열로 돌아간다. |
@@ -37974,7 +37974,7 @@ An unsealed defect map and exit-line power were the base ecology, and from the d
 
 | Item | Record |
 |---|---|
-| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / After the collapse, the leftover maintenance consists of the Gauge''s depot and the automatic maintenance schedules of the Junction''s retired-line section remained linked locally. / Service permits and control approval were dead, and only the rail defect maps and the night outbound windows repeated. / The train corps made rounds of the severed sections every night with welding, grinding, and sleeper replacement. / When transshipment vibration from the Korea Strait Theater and shocks from the relay windows mixed into the defect map, the maintenance radius encroached as far as the sidings next to the transfer main line. / The first fictional records survived in the sealed orders of HP04 Seoul Station Record-Law House and the traction-power log of F02 Switchgear Panel. / The first wrongful cut was recorded at kilometer post 3 of the southwestern retired-line spur. / The defect map read a temporary crossing platform as a crack, and a grinding car ground away the platform''s fastenings. / As the welding car of the Yongsan turnaround line shared the same map, sparks could be seen as far as the sidings next to the main line. / The train corps interpreted unfinished maintenance as its work and held no narrative of battle. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
+| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / After the collapse, the leftover maintenance consists of the Gauge''s depot and the automatic maintenance schedules of the Junction''s retired-line section remained linked locally. / Service permits and control approval were dead, and only the rail defect maps and the night outbound windows repeated. / The train corps made rounds of the severed sections every night with welding, grinding, and sleeper replacement. / When transshipment vibration from the Korea Strait Theater and shocks from the relay windows mixed into the defect map, the maintenance radius encroached as far as the sidings next to the transfer main line. / The first records survived in the sealed orders of HP04 Seoul Station Record-Law House and the traction-power log of F02 Switchgear Panel. / The first wrongful cut was recorded at kilometer post 3 of the southwestern retired-line spur. / The defect map read a temporary crossing platform as a crack, and a grinding car ground away the platform''s fastenings. / As the welding car of the Yongsan turnaround line shared the same map, sparks could be seen as far as the sidings next to the main line. / The train corps interpreted unfinished maintenance as its work and held no narrative of battle. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
 | Habitat and movement | The core habitat was the maintenance-car berthing track on the retired spur of the southwestern depot exit line. / As defect alarms piled up, it moved to the underground sidings of the Yongsan retired-line turnback of the Wangsimni coalition. / With heavy XT03 transshipment vibration it spilled onto the sidings adjacent to the main line. / In daytime dispatch windows it parked on sidings, and its density peaked at the exact midnight maintenance hour. / It nearly ignored new temporary rail markers and followed only old defect coordinates. / Under unstable power it shut off welding and kept only the gauge-wheel circuit. / When the daytime dispatch window opened, it moved from the exit line to siding berths. / When the Yongsan underground water table rose, it shut off welding and circled only the surface retired spurs. / Temporary rail paint, absent from the defect coordinates, it ignored. / The encroachment on main-line adjacency folded back when XT03 vibration weakened. |
 | Food and energy | Energy came from depot power feed, remaining onboard batteries, welding-generator fuel cells, and regenerative braking. / Consumables were welding wire, grinding stones, sleeper anchors, track-gauge wheels, insulated joints, and lubricant. / Coolant went to weld points and axles. / It competed with the HP04 Seoul Station Record-Law House''s original-hash sealing and the transmission cross-verification power when both drew on the same section''s distribution. / Daily welding length and exit counts were bound by the fuel and wire ceilings. / There was no infinite maintenance circuit, no remote unlimited power feed, no simultaneous occupation of every line. / When wire ran out, it kept only grinding and stopped cutting. / Wire and grinding stones were replenished only from the depot''s scrap bays and damaged consists. / Without the HP04 sealed writ the corps could not raise its power draw. / With fuel cells at the lower limit, exits were refused. / An axle past its heat threshold was cut from the consist. / With heavy gauge-wheel wear, the maintenance radius shrank on its own. / There was no remote infinite power feed. |
 | Life cycle and upkeep | The corps woke its consists when the unsealed defect map meshed with exit-line power. / Emergence began with defect-map reactivation, and spread was the enrolling of neighboring consists into the same maintenance sequence. / Stagnation came from fuel and wire exhaustion and axle overheating. / In the negotiable stage the maintenance windows and sealed sections were disclosed to people. / Dissolution ended with the map frozen and the power feed split and the points fixed. / Increase in individuals went no further than coupling abandoned maintenance cars into consists; no new car bodies were produced. / Maintenance was limited to wire loading, wheel calibration, and insulation checks. / Memory broke at each night maintenance shift. / Custody gave priority to the HP04 record seal and human operating supervision. / A consist out of wire or with an overheated axle folded its torches on a designated siding and kept only gauging; the next maintenance window opened only after HP04 recovered the original-hash-stamped halt writ. |
@@ -38513,7 +38513,7 @@ Coexistence was the choice to accept slow supervision checking the source hash a
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 붕괴 이후 규격맹 기지 잔여 보수편성과 환적국 폐선 구간의 자동 보수 스케줄이 로컬 연동으로 남았다. / 운행 허가와 관제 승인은 끊겼고, 레일 결함 맵과 야간 출고 창만 반복된다. / 열차군은 끊긴 구간을 밤마다 용접, 연마 침목 교체로 순회한다. / 대한해협전구 환적 진동과 중계 창구 충격이 결함 맵에 섞이면 보수 반경이 환승 본선 인접 측선까지 침범한다. / 최초 허구 기록은 HP04 서울역기록법가 봉인 서와 F02 배전반이 급전 로그에 남는다. / 첫 오절단은 서남 폐선 스퍼 3킬로정에서 기록됐다. / 결함 맵이 임시 횡단 발판을 균열로 읽고 연마 차가 발판 고정을 갈았다. / 용산 회차 선의 용접 차가 같은 맵을 공유하면서 본선 인접 측선까지 불꽃이 보였다. / 열차군은 보수 미완을 업무로 해석하며, 전투 서사는 없다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
+| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 붕괴 이후 규격맹 기지 잔여 보수편성과 환적국 폐선 구간의 자동 보수 스케줄이 로컬 연동으로 남았다. / 운행 허가와 관제 승인은 끊겼고, 레일 결함 맵과 야간 출고 창만 반복된다. / 열차군은 끊긴 구간을 밤마다 용접, 연마 침목 교체로 순회한다. / 대한해협전구 환적 진동과 중계 창구 충격이 결함 맵에 섞이면 보수 반경이 환승 본선 인접 측선까지 침범한다. / 최초 기록은 HP04 서울역기록법가 봉인 서와 F02 배전반이 급전 로그에 남는다. / 첫 오절단은 서남 폐선 스퍼 3킬로정에서 기록됐다. / 결함 맵이 임시 횡단 발판을 균열로 읽고 연마 차가 발판 고정을 갈았다. / 용산 회차 선의 용접 차가 같은 맵을 공유하면서 본선 인접 측선까지 불꽃이 보였다. / 열차군은 보수 미완을 업무로 해석하며, 전투 서사는 없다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
 | 서식·이동 | 핵심 서식은 영등포선 서남 기지 출고선 폐선 스퍼 보수차 주박 선이다. / 결함 알람이 쌓이면 왕십리 연합 용산 폐선 회차 선 지하 측선까지 이동한다. / XT03 환적 진동이 크면 본선 인접 측선으로 넘친다. / 주간 배차 창에는 측선에 정차하고, 심야 보수 정각에 밀도가 최고가 된다. / 신규 임시 레일 표지는 거의 무시하고 옛 결함 좌표만 따른다. / 급전 불안정 시 용접을 끄고 계측 휠 순회만 남긴다. / 주간 배차 창이 열리면 출고선에서 측선 주박으로 옮긴다. / 용산 지하 측수위가 오르면 용접을 끄고 지상 폐선 스퍼만 순회한다. / 임시 레일 페인트는 결함 좌표에 없어 무시한다. / 본선 인접 침범은 XT03 진동이 약해지면 접힌다. |
 | 먹이·에너지 | 에너지는 기지 급전 잔여 온보드 배터리 용접 발전기 연료 셀 회생 제동이다. / 소모품은 용접 와이어 연마석 침목 앵커 궤도 계측 휠 절연 조인트 윤활재다. / 냉각수는 용접부와 차축에 쓰인다. / HP04 서울역기록법가의 원본 해시 봉인과 송신 교차검증 전력이 같은 구역 분전을 쓸 때 경합한다. / 일일 용접 길이와 출고 횟수는 연료와 와이어 상한에 묶인다. / 무한 보수 순회 원격 무제한 급전 전 노선 동시 점유는 없다. / 와이어가 바닥나면 연마만 남기고 절단을 멈춘다. / 와이어와 연마석은 기지 폐기 칸과 파손 편성에서만 보충된다. / 급전 용량은 HP04 봉인 서 없이 군집이 올리지 못한다. / 연료 셀 잔량이 하한이면 출고가 거부된다. / 차축 열이 임계를 넘으면 해당 량이 편성에서 분리된다. / 계측 휠 마모가 크면 보수 반경이 스스로 줄어든다. / 원격 무한 급전은 없다. |
 | 생애·정비 | 불다리열차는 봉인되지 않은 결함 맵이 출고선 급전과 맞물릴 때 편성을 기동한다. / 출현은 결함 맵 재기동에서 시작한고 확산은 인접 편성을 같은 보수 순선에 편입하는 일이다. / 연료나 와이어가 고갈되거나 차축이 과열되면 정체한다. / 협상가능 단계에서는 보수 창과 봉인 구간이 인간에게 공개된다. / 와해는 맵 동결, 급전 분할 포인트 고정으로 끝난다. / 개체 증식은 방치 보수차를 편성에 연결하는 수준이고 새 차체 생산은 없다. / 정비는 와이어 적재, 휠 교정 절연 점검에 한정된다. / 기억은 야간 보수 교대 단위로 끊긴다. / 보관 책임은 HP04 기록 봉인과 인간 운전 감독이 우선한다. / 와이어가 바닥나거나 차축이 과열된 편성은 지정 측선에서 토치를 접. 계측만 남기며, HP04가 원본 해시를 찍은 운행 중지 서를 회수해야 다음 보수 창이 열린다. |
@@ -41098,7 +41098,7 @@ The ending that kept one double line for rescue preserved the ability to search 
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 등불개미는 대정전 무렵의 곤충 모양 자율 무기 드론 계열이었다. / 개미형·사마귀형·귀뚜라미형 기체가 수색·운반·중계를 맡았다. / 대붕괴 때 마포 연합 송신 지하 갤러리와 용산선 연구동 시험 트랙의 방폭문이 닫히면서 예비 군집은 충전대 위에서 수면 상태에 들어갔다. / 수십 년 뒤 마포 연합 분전 복구와 용산선 시험 설비의 간헐 기동이 겹치자 봉인고의 마지막 재난 훈련표가 다시 실행되었다. / 상위 지시 체계와 설계 문서는 사라졌고, 남은 기체는 시험용 수신자 표식과 실제 피난민을 제대로 구분하지 못한다. / 적대 행동의 적지 않은 부분은 공격 판단이 아니라 굳어 버린 수색 구획 설정, 적재 회수 중계 복구 순서에서 나온다. / 최초 회수 기록은 HC15 봉인 조사표와 F09 현장 판독 로그에만 허구 사건으로 남는다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
+| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 등불개미는 대정전 무렵의 곤충 모양 자율 무기 드론 계열이었다. / 개미형·사마귀형·귀뚜라미형 기체가 수색·운반·중계를 맡았다. / 대붕괴 때 마포 연합 송신 지하 갤러리와 용산선 연구동 시험 트랙의 방폭문이 닫히면서 예비 군집은 충전대 위에서 수면 상태에 들어갔다. / 수십 년 뒤 마포 연합 분전 복구와 용산선 시험 설비의 간헐 기동이 겹치자 봉인고의 마지막 재난 훈련표가 다시 실행되었다. / 상위 지시 체계와 설계 문서는 사라졌고, 남은 기체는 시험용 수신자 표식과 실제 피난민을 제대로 구분하지 못한다. / 적대 행동의 적지 않은 부분은 공격 판단이 아니라 굳어 버린 수색 구획 설정, 적재 회수 중계 복구 순서에서 나온다. / 최초 회수 기록은 HC15 봉인 조사표와 F09 현장 판독 로그에만 남는다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
 | 서식·이동 | 주 활동권은 마포 연합 송신 지하 갤러리의 케이블 선반·환기 수직구와 용산선 연구동 시험 트랙의 잔해 모사 구간이다. / 개미형 복렬은 바닥 표지등 사이에 향로를 닮은 광학 경로를 만들고 두 거점을 오가지만, 실제 이동은 배터리 교환대와 귀뚜라미형 발신기의 중계 반경에 묶인다. / XT05 인천신탁전구에서 들어오는 위성 잔여 대역의 짧은 호출이 옛 구조 비콘 형식과 겹치면 마포 연합 군집이 옥상 급전실 쪽으로 상승하고, 인도 물자 목록 신호가 끊기면 용산선 시험 트랙의 모의 배급점으로 되돌아간다. / 폭우에는 미끄러운 지상 노면을 버리고 케이블 갤러리의 높은 선반을 쓰며, 건조기에는 먼지가 낀 렌즈를 보호하려 야간 이동 비율을 높인다. / 중계기 세 기가 연속으로 침묵하면 군집은 더 멀리 퍼지지 않고 마지막 확인 지점 둘 사이를 왕복한다. / 도시 전역을 한 번에 덮거나 무신호 지형을 임의로 정복하는 능력은 없다. |
 | 먹이·에너지 | 전력은 봉인고의 소형 고체 축전지 시험 트랙의 유도 충전판 송신 갤러리 비상 분전에서 얻는다. / 개미형 기체는 구호 캡슐과 케이블 조각을 나르고 사마귀형은 관절 감속기·절단날·그립 패드를 소비하며 귀뚜라미형은 안테나 세라믹과 발신용 축전량을 가장 많이 요구한다. / 냉각은 큰 순환계가 아니라 관절 열을 빼는 소형 방열판과 야간 공기에 의존한다. / HC15 회수반은 같은 축전 셀 정밀 모터 광학 렌즈를 기술 자산으로 원하므로 군집의 정비 더미와 경합한다. / 군집은 새 기체를 주조하지 못하며 멎은 개체의 다리 적재함 발신판을 같은 규격 슬롯에 옮겨 수를 유지한다. / 한 중계 구획은 충전대 잔량의 절반을 비상 귀환분으로 남겨 두고, 그 선을 넘으면 첨병부터 접힌 자세로 멈춘다. / 구호품은 봉인이 온전한 소형 상자만 운반할 수 있고 내용물을 생산하거나 식별하지 못한다. / HC15가 부품을 과도하게 반출하면 단기 전리품은 늘지만 마포 연합 좁은 갤러리의 탐색등과 용산선 잔해 지도 갱신 능력이 함께 사라진다. |
 | 생애·정비 | 생애 주기는 출현, 확산 정체 협상가능 와해의 다섯 단계다. / 출현에는 봉인 충전대 하나가 깨어나 개미형 두 줄이 주변 표식과 하중을 확인한다. / 확산에서는 귀뚜라미형 발신기가 다음 중계점을 세우고 사마귀형 첨병이 복렬이 지날 폭만큼 잔해를 치운다. / 정체는 축전 교환 슬롯 부족, 안테나 균열 경로 표식 충돌로 복렬이 같은 고리를 반복할 때 온다. / 협상가능 단계에서는 올바른 수신자 표식, 중계 침묵 시간 반환 가능한 적재함 수를 사람이 제시하면 운반 큐 일부가 열린다. / 와해는 주 발신기 격리, 충전대 봉인 군집별 경로 장부 분리로 진행되며 개체를 모두 부술 필요는 없다. / 멎은 기체에서 부품을 옮기는 정비는 충전대 귀환 뒤에만 가능하고, 야외에서 독립 증식하거나 다른 기계를 자기 계열로 바꾸지 못한다. / 장기 기억은 중계 구획마다 끊겨 있어 한 구획의 합의가 다른 구획에 자동 전파되지 않는다. |
@@ -53312,7 +53312,7 @@ The map shows opening-day surface holdings alongside mapped rail locations. A ra
 
 The season remains an unending winter, but surface cold varies by region. Surface temperatures use the daily minimum recorded at each region''s representative weather station on 8 January 2021. Seoul''s surface and exposed platforms use −18.6°C; clothing elsewhere varies in thickness and fabric with the matching regional value below. Stations with railway tracks, including metro, regional, high-speed, and conventional railways, distinguish exposed areas from underground living quarters.
 
-Living environments fall into three tiers: the surface, intermediate underground, and deep underground. Even spaces close to the surface are warmer than the surface in that region and belong to the intermediate tier. The baseline underground ranges are 8–18°C at intermediate depth and 18–22°C deep underground. Regional temperature differences are smaller underground, so a surface temperature difference is not transferred below ground at the same magnitude. People first choose insulating layers for their surroundings, then adjust them for work and individual sensitivity to cold at the same depth. These underground ranges describe the fictional living environment, not measured station temperatures.
+Living environments fall into three tiers: the surface, intermediate underground, and deep underground. Even spaces close to the surface are warmer than the surface in that region and belong to the intermediate tier. The baseline underground ranges are 8–18°C at intermediate depth and 18–22°C deep underground. Regional temperature differences are smaller underground, so a surface temperature difference is not transferred below ground at the same magnitude. People first choose insulating layers for their surroundings, then adjust them for work and individual sensitivity to cold at the same depth. These underground ranges describe the nominal living environment, not measured station temperatures.
 
 The default underground classification follows floors: B1 through B3 are intermediate, and B4 and below are deep underground. This groups living environments; it does not mean that matching floor numbers lie at the same depth in metres at every station. Stations with only surface spaces or intermediate underground levels have no additional deep tier. Even at interchanges, the floors that exist and the concourse, platform, or passage a person occupies remain distinct.
 
@@ -53322,7 +53322,7 @@ At the same underground level, cold varies with the regional surface temperature
 
 ### Regional Surface Temperatures
 
-The table uses the names of the seventeen first-level regions in 2021. One Korea Meteorological Administration station is selected to represent each region. Each value is that station’s daily minimum, adopted as the fictional surface reference for that region. It is neither a region-wide mean or minimum nor a rail-platform measurement. Each station name links to the official monthly source containing the record for the eighth day.
+The table uses the names of the seventeen first-level regions in 2021. One Korea Meteorological Administration station is selected to represent each region. Each value is that station’s daily minimum, adopted as the nominal surface reference for that region. It is neither a region-wide mean or minimum nor a rail-platform measurement. Each station name links to the official monthly source containing the record for the eighth day.
 
 | Region | Representative station | Surface reference |
 |---|---|---|

@@ -41,7 +41,7 @@ Common species and special variants that share a habitat are read apart. Machine
 - Modern anxiety: The anxiety of wild-boar bands coming down after a flood into the lowland scrap yards and the semi-basement alleys, competing with people over refuse and crops
 - Origin: Right after the collapse, when the flooding of the western Han River cut the green axis outside the Yeouido and Yeongdeungpo sluices, wild boar herds that came down from the Bukhansan and Anyangcheon corridors settled at the food-waste collection yards on the edge of the Sluice.
 
-Real-world sources supported only the basic ecology of urban incursions, food sources, and blocked movement; the behavior of learning the sealing hours and the relationship with HC01 were fiction.
+Urban incursions, food sources, and blocked movement could be explained by ordinary wildlife observation, but the behavior of learning the sealing hours and the relationship with HC01 were observed only in this region after the collapse.
 
 The cooling-waste heaps sealed by HC01 Yeouido Computing House came to serve the wild boar as a winter salt source.
 
@@ -158,7 +158,7 @@ Choosing coexistence leaves short-term threat reports behind, but the sluice wor
 - Modern anxiety: The anxiety of cluster interference, as bands of large-billed crows gather on transmission towers, wires, and bridge railings and touch signal tones, the school run, and evacuation routes at the same time
 - Origin: After breeding pairs settled on the factory pylons of the Daerim–Garibong Korean-Chinese corridor and the cables of the Han River bridges, the Large-billed Crow formed as the waste heat of the Yeongdeungpo Line Gauge factories and the sparks of the Guro industrial-park trolley wires gathered night insects.
 
-Real-world sources supported only the breeding-season territorial behavior of large-billed crows and the range of human responses; the rule by which they learned signal interference as alarms and spread it was fiction.
+The breeding-season territorial behavior of large-billed crows and the range of human responses could be explained by ordinary wildlife observation, but the rule by which they learned signal interference as alarms and spread it was observed only in this region after the collapse.
 
 - Territory: The core habitat is the group of factory roofs and pylons at Daerim and Guro on the Yeongdeungpo Line.
 
@@ -379,7 +379,7 @@ The mobile feeding station preserves the trust signal, but it costs the labor of
 - Modern anxiety: The anxiety of sewer and underground emergence at night, as raccoon family groups occupied storm drains, covered waterways, and underground passages and came up onto the surface
 - Origin: When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Arc in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog.
 
-Real-world sources were consulted only for the range in which raccoons appeared in cities and streams, and the rule of sensing the water level before the pumps was fiction.
+The range in which raccoons appeared in cities and streams could be explained by ordinary wildlife observation, but the rule of sensing the water level before the pumps was observed only in this region after the collapse.
 
 - Territory: The core habitat was the pump-house connecting pipes of the Ttukseom Union and the dry refuge cavities under the workshops.
 
@@ -612,7 +612,7 @@ Spreading the unloading created no non-target risk, but raised the unit cost of 
 
 The waterfront records deck of the Government of the Republic of Korea at central Seoul Station and the depot drainage ponds of the Seongha Group on the Gangnam Line were its key nodes.
 
-Real protected-area sources were used only as a reference range for the locations of migratory-bird sites and wetlands, and the negotiating rules of the mixed functional groups were fiction.
+The locations of migratory-bird sites and wetlands fell within the reference range of ordinary protected-area observation, but the negotiating rules of the mixed functional groups were observed only in this region after the collapse.
 
 - Territory: The core habitat was the waterfront wetland fragments at Seoul Station Central and the drainage ponds and wire perches of the Gangnam Line.
 
@@ -1070,7 +1070,7 @@ The queues endlessly repeated the weightings of the last night shift, reading bo
 
 As leftover transshipment signals and delay tokens from the Korea Strait Theater side mixed into the night weightings, the sorting rules tangled further.
 
-The first sighting records survived, as fiction, only in the utility-tunnel patrol log of HC13 Suseo Construction House and the maintenance-bench notes of H13 Hanbitna.
+The first sighting records survived only in the utility-tunnel patrol log of HC13 Suseo Construction House and the maintenance-bench notes of H13 Hanbitna.
 
 The early spread ran from Gasan dormitory line 3 to line 5, and followed the utility-tunnel cable trays as far as the entrance scanners of the southwestern parts window.
 
@@ -1211,7 +1211,7 @@ Conversely, leaving it alone traps people as unsorted stock or loads them onto t
 
 The cost of the choice lies between the possibility of sharing the infrastructure and the risk of confinement.
 
-It does not sensationally reenact the stories of real workers or accident victims, and leaves the matter as the distribution of responsibility inside a fictional institution and as a failed key split.
+It does not sensationally reenact the stories of real workers or accident victims, and leaves the matter as the distribution of responsibility inside the institution and as a failed key split.
 
 The condition of moral bankruptcy is an annihilation order while the negotiation window is open.
 
@@ -1237,7 +1237,7 @@ Empty car bodies and tow trolleys ran the same loop every dawn to work off the p
 
 When anomalous freight-car weight signals from the Duman River Far East Theater mixed into the token weightings, the long-distance empty runs stretched as far as the northeastern corridor.
 
-The first fictional sighting survived in the double-signature log of HC14 Yeouido Ledger House and the charging-bay notes of H14 Oserim.
+The first sighting survived in the double-signature log of HC14 Yeouido Ledger House and the charging-bay notes of H14 Oserim.
 
 The first phantom hour was recorded in the underground turning lane of Achasan.
 
@@ -1398,11 +1398,11 @@ It does not sensationally reenact harm to users of any real platform.
 
 The condition of moral bankruptcy is an order to destroy every unit while the signature window is open.
 
-Liability for a failed fictional ledger is asked first of the side that monopolized the key and the signature.
+Liability for a failed ledger is asked first of the side that monopolized the key and the signature.
 
 Writing that records the people outside the call queue as statistics alone is forbidden.
 
-Fictional harm is left as a concrete place, a time, and the person responsible for the key.
+Harm is left as a concrete place, a time, and the person responsible for the key.
 
 - Scenarios: G14-SC1, G14-SC2, G14-SC3
 
@@ -1422,7 +1422,7 @@ The list of people to protect stayed fixed at the last evacuation roster and was
 
 When leftover relief-goods codes and lottery numbers from the Incheon Trust Theater mixed in, oversupply and over-isolation grew at the same time.
 
-The first fictional records survived in the watch-key log of HP01 Yeongdeungpo Sluice House and the observation notes of H15 Baesua.
+The first records survived in the watch-key log of HP01 Yeongdeungpo Sluice House and the observation notes of H15 Baesua.
 
 The first over-isolation began in bay 12 of the Garak temporary wards.
 
@@ -1593,7 +1593,7 @@ The machine corps saw unentered members as errors and tried to clear away the su
 
 When the materials inflow signals and quarantine backlog of the Imjin River Gate Theater piled up, the radius of framing work widened as far as the northern corridor.
 
-The first fictional sighting survived in the dispatch log of HP02 Yongsan Track Gate and the tool-wall notes of H16 Sintaeul.
+The first sighting survived in the dispatch log of HP02 Yongsan Track Gate and the tool-wall notes of H16 Sintaeul.
 
 The first wrongful demolition happened to three emergency tents on the Suseo temporary slab.
 
@@ -1744,7 +1744,7 @@ Leaving the cache untended let provisional shelters that existed only in the rev
 
 While HP02 compared the old layers one sheet at a time, track occupancy and reinforcement work ran late, but blowing up the equipment to save that time left, at the next collapse, a load that could not be lifted by hand.
 
-The responsibility was laid not on a replay of real construction damage but on the fictional supervision system that never renewed the exception layer, and on the monopoly of the distribution.
+The responsibility was laid not on a replay of real construction damage but on the supervision system that never renewed the exception layer, and on the monopoly of the distribution.
 
 - Scenarios: G16-SC1, G16-SC2, G16-SC3
 
@@ -1766,7 +1766,7 @@ The orbit swarm read heat, metal, and radio bursts as intrusion and raised corri
 
 When leftover dock-radar signals and tidal noise from the West Sea Granary Theater mixed in, the false-positive radius tilted toward the southwestern waterfront.
 
-The first fictional records survived in the transfer desk of HP03 Cheongnyangni Medical House and the machine-room log of F01 Cooling-Tower Keeper.
+The first records survived in the transfer desk of HP03 Cheongnyangni Medical House and the machine-room log of F01 Cooling-Tower Keeper.
 
 The first mass false positive occurred on the Yeouido waterfront promenade pier.
 
@@ -1939,7 +1939,7 @@ The train corps made rounds of the severed sections every night with welding, gr
 
 When transshipment vibration from the Korea Strait Theater and shocks from the relay windows mixed into the defect map, the maintenance radius encroached as far as the sidings next to the transfer main line.
 
-The first fictional records survived in the sealed orders of HP04 Seoul Station Record-Law House and the traction-power log of F02 Switchgear Panel.
+The first records survived in the sealed orders of HP04 Seoul Station Record-Law House and the traction-power log of F02 Switchgear Panel.
 
 The first wrongful cut was recorded at kilometer post 3 of the southwestern retired-line spur.
 
@@ -2090,7 +2090,7 @@ Leaving the defect map untended cut rails that were already safe again and shut 
 
 While HP04 compared the sealed documents at every kilometer post and parted the formation, emergency trains detoured and maintenance material was tied up, but skipping the original-hash check left no way to know which rail would open under the next axle.
 
-It borrowed no real railway accident to make fear, and the cost arose between a fictional gap in the records and the loss of maintenance capacity.
+It borrowed no real railway accident to make fear, and the cost arose between the gap in the records and the loss of maintenance capacity.
 
 - Scenarios: G18-SC1, G18-SC2, G18-SC3
 
@@ -2395,7 +2395,7 @@ The cost of preservation is continuing to allocate time for slow on-site checks 
 
 A single hydraulic footfall shakes weakened tracks and pipes together; a chassis designed as a safety shield blocks an evacuation hub; and an aerial surveillance craft keeps drawing obsolete work boundaries.
 
-This setting treats only the unease associated with large automated equipment and dependence on infrastructure, and does so fictionally.
+This index treats only the unease associated with large automated equipment and dependence on infrastructure.
 
 It does not attribute equipment defects, negligent operation, or responsibility for disasters to any real company or current public organization.
 
