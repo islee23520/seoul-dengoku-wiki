@@ -1,0 +1,335 @@
+{
+ "ran_at": "2026-11-11T12:57:17.304Z",
+ "head": "81831c69dd4007c26d8f921a2b515d8f14de3fea",
+ "mode": "apply",
+ "ruleRange": "[54..20] incremental batch (full reproduction: restore batch bases then SHOWCASE_FROM=0)",
+ "rules_total": 21,
+ "rules_applied": 21,
+ "voiced_rule_ids": [
+  "SS-45",
+  "SS-46",
+  "SS-49",
+  "SS-50",
+  "SS-51",
+  "SS-52",
+  "SS-54",
+  "SS-55",
+  "SS-56",
+  "SS-57",
+  "SS-58",
+  "SS-59"
+ ],
+ "audio_files_whose_narration_no_longer_matches_text": [
+  {
+   "line_id": "v5-hist-13",
+   "rule_ids": [
+    "SS-45",
+    "SS-46"
+   ],
+   "files": [
+    "v5-hist-13.ko.mp3",
+    "v5-hist-13.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v4-rte-04",
+   "rule_ids": [
+    "SS-49",
+    "SS-50"
+   ],
+   "files": [
+    "v4-rte-04.ko.mp3",
+    "v4-rte-04.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v3-sig-01",
+   "rule_ids": [
+    "SS-51",
+    "SS-52"
+   ],
+   "files": [
+    "v3-sig-01.ko.mp3",
+    "v3-sig-01.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v3-sig-02",
+   "rule_ids": [
+    "SS-54",
+    "SS-55"
+   ],
+   "files": [
+    "v3-sig-02.ko.mp3",
+    "v3-sig-02.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v3-rel-02",
+   "rule_ids": [
+    "SS-56",
+    "SS-57"
+   ],
+   "files": [
+    "v3-rel-02.ko.mp3",
+    "v3-rel-02.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v5-coda-02",
+   "rule_ids": [
+    "SS-58",
+    "SS-59"
+   ],
+   "files": [
+    "v5-coda-02.ko.mp3",
+    "v5-coda-02.en.mp3"
+   ]
+  }
+ ],
+ "per_file_delta": {
+  "artifacts/seoul-showcase/src/data/storyScript.ts": {
+   "rule_delta_bytes": -8,
+   "actual_delta_bytes": -8,
+   "match": true
+  },
+  "artifacts/seoul-showcase/src/data/historyExhibits.ts": {
+   "rule_delta_bytes": 19,
+   "actual_delta_bytes": 19,
+   "match": true
+  }
+ },
+ "results": [
+  {
+   "id": "SS-41",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "old-state-name-current",
+   "unit_id": "header-comment",
+   "expect": 1,
+   "found": 1,
+   "delta": -4,
+   "voiced": false
+  },
+  {
+   "id": "SS-42",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "old-state-name-current",
+   "unit_id": "speaker:k1003",
+   "expect": 1,
+   "found": 1,
+   "delta": 2,
+   "voiced": false
+  },
+  {
+   "id": "SS-43",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "old-state-name-current",
+   "unit_id": "speaker:k1008",
+   "expect": 1,
+   "found": 1,
+   "delta": 2,
+   "voiced": false
+  },
+  {
+   "id": "SS-44",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "old-state-name-current",
+   "unit_id": "speaker:k998",
+   "expect": 1,
+   "found": 1,
+   "delta": 3,
+   "voiced": false
+  },
+  {
+   "id": "SS-45",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "old-camps-rephrase",
+   "unit_id": "v5-hist-13",
+   "expect": 1,
+   "found": 1,
+   "delta": 19,
+   "voiced": true
+  },
+  {
+   "id": "SS-46",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "old-camps-rephrase",
+   "unit_id": "v5-hist-13",
+   "expect": 1,
+   "found": 1,
+   "delta": 16,
+   "voiced": true
+  },
+  {
+   "id": "SS-47",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "old-state-name-current",
+   "unit_id": "scene:route.act",
+   "expect": 1,
+   "found": 1,
+   "delta": -1,
+   "voiced": false
+  },
+  {
+   "id": "SS-48",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A,D",
+   "pattern": "old-state-name-current, sixteen-tally",
+   "unit_id": "v3-rte-01.caption",
+   "expect": 1,
+   "found": 1,
+   "delta": -12,
+   "voiced": false
+  },
+  {
+   "id": "SS-49",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "old-state-name-current",
+   "unit_id": "v4-rte-04",
+   "expect": 1,
+   "found": 1,
+   "delta": 3,
+   "voiced": true
+  },
+  {
+   "id": "SS-50",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "old-state-name-current",
+   "unit_id": "v4-rte-04",
+   "expect": 1,
+   "found": 1,
+   "delta": -4,
+   "voiced": true
+  },
+  {
+   "id": "SS-51",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "old-camps-rephrase",
+   "unit_id": "v3-sig-01",
+   "expect": 1,
+   "found": 1,
+   "delta": 4,
+   "voiced": true
+  },
+  {
+   "id": "SS-52",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "old-camps-rephrase",
+   "unit_id": "v3-sig-01",
+   "expect": 1,
+   "found": 1,
+   "delta": -5,
+   "voiced": true
+  },
+  {
+   "id": "SS-53",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "old-state-name-current",
+   "unit_id": "v3-sig-01.caption",
+   "expect": 1,
+   "found": 1,
+   "delta": -23,
+   "voiced": false
+  },
+  {
+   "id": "SS-54",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "old-state-name-current",
+   "unit_id": "v3-sig-02",
+   "expect": 1,
+   "found": 1,
+   "delta": -14,
+   "voiced": true
+  },
+  {
+   "id": "SS-55",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "old-state-name-current",
+   "unit_id": "v3-sig-02",
+   "expect": 1,
+   "found": 1,
+   "delta": -16,
+   "voiced": true
+  },
+  {
+   "id": "SS-56",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "old-state-name-current",
+   "unit_id": "v3-rel-02",
+   "expect": 1,
+   "found": 1,
+   "delta": 3,
+   "voiced": true
+  },
+  {
+   "id": "SS-57",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "old-state-name-current",
+   "unit_id": "v3-rel-02",
+   "expect": 1,
+   "found": 1,
+   "delta": -4,
+   "voiced": true
+  },
+  {
+   "id": "SS-58",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "old-camps-rephrase",
+   "unit_id": "v5-coda-02",
+   "expect": 1,
+   "found": 1,
+   "delta": 15,
+   "voiced": true
+  },
+  {
+   "id": "SS-59",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "old-camps-rephrase",
+   "unit_id": "v5-coda-02",
+   "expect": 1,
+   "found": 1,
+   "delta": 8,
+   "voiced": true
+  },
+  {
+   "id": "EX-07",
+   "file": "artifacts/seoul-showcase/src/data/historyExhibits.ts",
+   "class": "B",
+   "pattern": "old-camps-rephrase",
+   "unit_id": "exhibit:three.heading",
+   "expect": 1,
+   "found": 1,
+   "delta": 8,
+   "voiced": false
+  },
+  {
+   "id": "EX-08",
+   "file": "artifacts/seoul-showcase/src/data/historyExhibits.ts",
+   "class": "B",
+   "pattern": "old-camps-rephrase",
+   "unit_id": "exhibit:three.note",
+   "expect": 1,
+   "found": 1,
+   "delta": 11,
+   "voiced": false
+  }
+ ]
+}

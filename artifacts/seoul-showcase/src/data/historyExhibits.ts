@@ -124,8 +124,8 @@ const EX: Record<string, Exhibit> = {
   },
   three: {
     id: "three", date: "2116",
-    heading: { ko: "세 국가의 패권국과 종교 연합", en: "The three blocs of 2116" },
-    note: { ko: "규격맹 · 정부 · 종교 연합, 그리고 중립의 중앙정보부. 기존 수장과 관직은 봉신으로 존속했다.", en: "The League, the Government and the Religious Coalition, with the Central Intelligence Division neutral. Existing rulers and offices remained as vassals." },
+    heading: { ko: "옛 세 국가의 패권국과 종교 연합", en: "The three old blocs of 2116" },
+    note: { ko: "옛 규격맹 · 정부 · 옛 종교 진영, 그리고 중립의 중앙정보부. 기존 수장과 관직은 봉신으로 존속했다.", en: "The old League, the Government and the old religious camp, with the Central Intelligence Division neutral. Existing rulers and offices remained as vassals." },
     images: [
       flag("S02", "규격맹", "Standard League", "패권국 · 2116", "Hegemon · 2116"),
       flag("S06", "대한민국정부", "ROK Government", "패권국 · 2116", "Hegemon · 2116"),

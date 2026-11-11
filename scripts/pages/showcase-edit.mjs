@@ -3,6 +3,12 @@
 // Applies docs/showcase-rules.json to the showcase text sources.
 //   node scripts/pages/showcase-edit.mjs           apply (writes files + apply log)
 //   node scripts/pages/showcase-edit.mjs --check   verify originals only, change nothing
+//   SHOWCASE_FROM=54 node scripts/pages/showcase-edit.mjs   incremental batch (rules [54..])
+//     — fix2-sentence-edits.mjs와 같은 증분 방식. 규칙표는 배치마다 뒤에 붙고(append),
+//     각 배치는 자기 기저 트리의 원문에 대해 정확 횟수를 검사한다(배치2 기저 81831c69d).
+//     정본 재현은 5개 텍스트 파일을 배치1 기저(origin/feat/w2-applied 26ec455cc)로 되돌린 뒤
+//     SHOWCASE_FROM=0 전체 실행으로 얻는다(멱등 아님 — 원문 복원 후 재실행).
+//   --log <path>   apply log destination (default docs/drafts/reports/w5-27-apply-log.json)
 //
 // Contract:
 //   - every rule's `from` must appear exactly `expect` times in its file, else exit 1 (fail loudly);
@@ -17,8 +23,18 @@ import { fileURLToPath } from 'node:url';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '..', '..');
-const RULES = JSON.parse(fs.readFileSync(path.join(REPO, 'docs/showcase-rules.json'), 'utf8')).rules;
-const LOG = path.join(REPO, 'docs/drafts/reports/w5-27-apply-log.json');
+const rulesIdx = process.argv.indexOf('--rules');
+const rulesArg = rulesIdx > -1 ? process.argv[rulesIdx + 1] : 'docs/showcase-rules.json';
+const RULES_ALL = JSON.parse(fs.readFileSync(path.isAbsolute(rulesArg) ? rulesArg : path.join(REPO, rulesArg), 'utf8')).rules;
+const FROM = Number(process.env.SHOWCASE_FROM ?? 0);
+if (!Number.isInteger(FROM) || FROM < 0 || FROM > RULES_ALL.length) {
+  console.error(`E_RANGE: SHOWCASE_FROM=${FROM} outside [0, ${RULES_ALL.length}]`);
+  process.exit(1);
+}
+const RULES = RULES_ALL.slice(FROM);
+const logIdx = process.argv.indexOf('--log');
+const logArg = logIdx > -1 ? process.argv[logIdx + 1] : 'docs/drafts/reports/w5-27-apply-log.json';
+const LOG = path.isAbsolute(logArg) ? logArg : path.join(REPO, logArg);
 const CHECK = process.argv.includes('--check');
 
 const head = (() => {
@@ -107,6 +123,7 @@ fs.writeFileSync(LOG, JSON.stringify({
   ran_at: new Date().toISOString(),
   head,
   mode: 'apply',
+  ruleRange: FROM ? `[${FROM}..${RULES.length - 1}] incremental batch (full reproduction: restore batch bases then SHOWCASE_FROM=0)` : 'full table',
   rules_total: results.length,
   rules_applied: results.reduce((a, r) => a + r.expect, 0),
   voiced_rule_ids: results.filter((r) => r.voiced).map((r) => r.id),
