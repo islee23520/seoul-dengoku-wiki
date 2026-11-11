@@ -1,4 +1,5 @@
 ---
+title: G10 · Bogukmun group
 model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/pages/w4-edit.mjs; not from a Gemini model
 ---
 <a id="Hostile-Group-G10-heading-0001"></a>

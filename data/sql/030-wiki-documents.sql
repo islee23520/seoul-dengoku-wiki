@@ -28046,7 +28046,7 @@ The inspection watch of the Achasan Gate stands inside the locked entrance. The 
 - 도덕 비용: 아차산 검수 창의 선로 쪽 문은 잠겨 있고 검수 인원은 저온 창고 안에 서 있다. 여의도출자연합회가 적은 냉열 수량은 두만강극동전구 열차 칸에 있다. 광물 상자 수와 남은 연료통 수가 적힌 재고 장부 옆에 조하람 쪽 인원이 서 있다.
 - 원본 항목: G09
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hostile-Group-G10', 'G10 · Bogukmun Zealots', 'G10 · 보국문 광신도', 'bestiary', 10, '<a id="Hostile-Group-G10-heading-0001"></a>
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hostile-Group-G10', 'G10 · Bogukmun group', 'G10 · 보국문 집단', 'bestiary', 10, '<a id="Hostile-Group-G10-heading-0001"></a>
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
