@@ -14,7 +14,7 @@
   "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
  },
  "counts": {
-  "rules": 2006,
+  "rules": 2011,
   "kept": 1180,
   "keepByReason": {
    "소속 표기": 461,
@@ -30,14 +30,15 @@
    "강남·서초 아크 공작령(정본 2.4 정합)": 4
   },
   "byColumn": {
-   "json": 720,
-   "json_ko": 1051
+   "json": 723,
+   "json_ko": 1053
   },
   "personsTouched": 273,
   "skippedAlreadyFixed": 44,
   "d2NeutralRewrites": 1,
   "d3ResidenceRules": 12,
-  "d2CorrectiveRules": 12
+  "d2CorrectiveRules": 12,
+  "fix9VassalageRules": 5
  },
  "rules": [
   {
@@ -18111,6 +18112,51 @@
    "old": "Register Church",
    "new": "Arc",
    "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0998",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Standards League Vassal, Lee Clan of the First Sub-Workshop",
+   "new": "Free City Vassal, Lee Clan of the First Sub-Workshop",
+   "reason": "fix9 ITEM2 — 연혁 소속 불릿의 규격맹 봉신 표기를 050 소속(free-city)·fields.Affiliation(Free City Vassal)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0998",
+   "column": "json",
+   "path": "$.sections.Houses",
+   "old": "The Lee clan is a vassal of the Standards League, and",
+   "new": "The Lee clan is a vassal of the Free City, and",
+   "reason": "fix9 ITEM2 — 가문 절 봉신 주체를 자유도시로(같은 행 관계 절의 중립 표기와 동일)"
+  },
+  {
+   "file": "090",
+   "id": "person-0998",
+   "column": "json",
+   "path": "$.biography",
+   "old": "The Lee clan is a vassal of the Standards League, and",
+   "new": "The Lee clan is a vassal of the Free City, and",
+   "reason": "fix9 ITEM2 — 연혁 Clan 문단 동일 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0998",
+   "column": "json_ko",
+   "path": "$.sections.가문",
+   "old": "이씨 가문은 규격맹의 봉신이며",
+   "new": "이씨 가문은 자유도시의 봉신이며",
+   "reason": "fix9 ITEM2 — 가문 절 봉신 주체를 자유도시로(관계 절 \"자유도시의 봉신\" 표기와 동일)"
+  },
+  {
+   "file": "090",
+   "id": "person-0998",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "이씨 가문은 규격맹의 봉신이며",
+   "new": "이씨 가문은 자유도시의 봉신이며",
+   "reason": "fix9 ITEM2 — 연혁 가문 문단 동일 정합"
   }
  ],
  "kept": [
