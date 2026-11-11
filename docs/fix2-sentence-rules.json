@@ -14,7 +14,7 @@
   "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
  },
  "counts": {
-  "rules": 2309,
+  "rules": 2966,
   "kept": 1180,
   "keepByReason": {
    "소속 표기": 461,
@@ -42,7 +42,8 @@
   "fix12DuchyFactionRules": 24,
   "fix13KingdomNameRules": 18,
   "fix14AffiliationRules": 112,
-  "fix14RootStateRules": 144
+  "fix14RootStateRules": 144,
+  "fix14VocabRules": 657
  },
  "rules": [
   {
@@ -20899,6 +20900,6576 @@
    "old": "Arc",
    "new": "정부",
    "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0040",
+   "column": "json",
+   "path": "$.sections.Relationships",
+   "old": "a priest who",
+   "new": "a believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0040",
+   "column": "json",
+   "path": "$.biography",
+   "old": "a priest who",
+   "new": "a believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0072",
+   "column": "json",
+   "path": "$.sections.Relationships",
+   "old": "a priest who",
+   "new": "a believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0072",
+   "column": "json",
+   "path": "$.biography",
+   "old": "a priest who",
+   "new": "a believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0086",
+   "column": "json",
+   "path": "$.characterProfile.traits[0].relationship",
+   "old": "church succession",
+   "new": "session succession",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0086",
+   "column": "json",
+   "path": "$.characterProfile.narrative",
+   "old": "church affairs",
+   "new": "session affairs",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0086",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "Roster Church",
+   "new": "Arc",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0086",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Roster Church",
+   "new": "Arc",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0086",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "장로",
+   "new": "원로",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0086",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "당회장",
+   "new": "당회 수장",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0086",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "old": "당회장",
+   "new": "당회 수장",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0086",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "장로",
+   "new": "원로",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0086",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "당회장",
+   "new": "당회 수장",
+   "expect": 4,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0086",
+   "column": "json_ko",
+   "path": "$.relations.incoming[0].basis",
+   "old": "장로",
+   "new": "원로",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0086",
+   "column": "json_ko",
+   "path": "$.relations.incoming[0].basis",
+   "old": "당회장",
+   "new": "당회 수장",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0087",
+   "column": "json",
+   "path": "$.characterProfile.narrative",
+   "old": "the church successor",
+   "new": "the session successor",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0087",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[0].relationship",
+   "old": "당회장",
+   "new": "당회 수장",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0087",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "당회장",
+   "new": "당회 수장",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0087",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "장로",
+   "new": "원로",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0087",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "당회장",
+   "new": "당회 수장",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0087",
+   "column": "json_ko",
+   "path": "$.relations.incoming[2].basis",
+   "old": "당회장",
+   "new": "당회 수장",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0089",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "old": "장로",
+   "new": "원로",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0089",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "old": "장로",
+   "new": "원로",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0089",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "장로",
+   "new": "원로",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0089",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "old": "장로",
+   "new": "원로",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0089",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "old": "장로",
+   "new": "원로",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0089",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "장로",
+   "new": "원로",
+   "expect": 7,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0094",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "old": "장로",
+   "new": "원로",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0094",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "old": "장로",
+   "new": "원로",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0094",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "장로",
+   "new": "원로",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0095",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "old": "권사",
+   "new": "신도",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0095",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "old": "권사",
+   "new": "신도",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0095",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "권사",
+   "new": "신도",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0096",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "old": "권사",
+   "new": "신도",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0096",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "old": "권사",
+   "new": "신도",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0096",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "권사",
+   "new": "신도",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0097",
+   "column": "json",
+   "path": "$.sections.Relationships",
+   "old": "is the priest who",
+   "new": "is the believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0097",
+   "column": "json",
+   "path": "$.biography",
+   "old": "is the priest who",
+   "new": "is the believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0104",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "old": "집사",
+   "new": "관리인",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0104",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "old": "집사",
+   "new": "관리인",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0104",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "집사",
+   "new": "관리인",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0105",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "old": "집사",
+   "new": "관리인",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0105",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "old": "집사",
+   "new": "관리인",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0105",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "집사",
+   "new": "관리인",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0108",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "old": "집사",
+   "new": "관리인",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0108",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "old": "집사",
+   "new": "관리인",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0108",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "집사",
+   "new": "관리인",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0109",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Ledger Church",
+   "new": "Arc",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0110",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Ledger Church",
+   "new": "Arc",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0111",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Roll Church",
+   "new": "Arc",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0145",
+   "column": "json_ko",
+   "path": "$.relations.incoming[4].basis",
+   "old": "당회장",
+   "new": "당회 수장",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0146",
+   "column": "json",
+   "path": "$.relations.incoming[3].basis",
+   "old": "Is the priest who",
+   "new": "Is the believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0146",
+   "column": "json_ko",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "당회장",
+   "new": "당회 수장",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0146",
+   "column": "json_ko",
+   "path": "$.relations.outgoing[2].basis",
+   "old": "당회장",
+   "new": "당회 수장",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 금지 어휘(당회장·장로·권사·집사) 제거, EN 대응 표기(수장·원로·신도·관리인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0147",
+   "column": "json",
+   "path": "$.relations.incoming[3].basis",
+   "old": "is a priest who",
+   "new": "is a believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0148",
+   "column": "json",
+   "path": "$.relations.incoming[4].basis",
+   "old": "is a priest who",
+   "new": "is a believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0150",
+   "column": "json",
+   "path": "$.relations.incoming[2].basis",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0151",
+   "column": "json",
+   "path": "$.sections.Relationships",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0151",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "is a priest who",
+   "new": "is a believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0156",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0157",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "Is the priest who",
+   "new": "Is the believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0161",
+   "column": "json",
+   "path": "$.biography",
+   "old": "The priest who",
+   "new": "The believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0161",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "is a priest who",
+   "new": "is a believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0173",
+   "column": "json",
+   "path": "$.relations.incoming[2].basis",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0176",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0199",
+   "column": "json",
+   "path": "$.relations.incoming[3].basis",
+   "old": "is a priest who",
+   "new": "is a believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0201",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "is a priest who",
+   "new": "is a believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0297",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0297",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0298",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0298",
+   "column": "json",
+   "path": "$.biography",
+   "old": "permanent-winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0298",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0298",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0299",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "permanent-winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0299",
+   "column": "json",
+   "path": "$.biography",
+   "old": "permanent-winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0299",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0299",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0300",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "permanent-winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0300",
+   "column": "json",
+   "path": "$.biography",
+   "old": "permanent-winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0300",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0300",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0301",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "permanent-winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0301",
+   "column": "json",
+   "path": "$.biography",
+   "old": "permanent-winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0301",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0301",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0302",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0302",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0302",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0302",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0303",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0303",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0303",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0303",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0304",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0304",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0304",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0304",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0305",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0305",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0305",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0305",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0306",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0306",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0306",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0306",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0307",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0307",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0307",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0307",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0308",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0308",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0308",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0308",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0309",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0309",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0309",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0309",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0310",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0310",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0310",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0310",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0311",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0311",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0311",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0311",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0312",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0312",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0312",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0312",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0313",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0313",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0313",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0313",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0314",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0314",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0314",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0314",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0315",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0315",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0315",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0315",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0316",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0316",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0316",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0316",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0317",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0317",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0317",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0317",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0318",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0318",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0318",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0318",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0319",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0319",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0319",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0319",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0320",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0320",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0320",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0320",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0322",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0322",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0322",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0322",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0323",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0323",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0324",
+   "column": "json",
+   "path": "$.relations.incoming[0].basis",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0329",
+   "column": "json",
+   "path": "$.sections.Relationships",
+   "old": "field priest",
+   "new": "field believer",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0329",
+   "column": "json",
+   "path": "$.biography",
+   "old": "field priest",
+   "new": "field believer",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0329",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0335",
+   "column": "json",
+   "path": "$.sections.Relationships",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0335",
+   "column": "json",
+   "path": "$.biography",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0349",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "permanent winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0349",
+   "column": "json",
+   "path": "$.biography",
+   "old": "permanent winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0349",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0349",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0352",
+   "column": "json",
+   "path": "$.relations.incoming[1].basis",
+   "old": "is a priest who",
+   "new": "is a believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0361",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "is a priest who",
+   "new": "is a believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's election",
+   "new": "the lead believer's election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the absence of papal ratification",
+   "new": "the absence of the Hierophant's ratification",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "without papal ratification",
+   "new": "without the Hierophant's ratification",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "elected an archbishop",
+   "new": "elected a lead believer",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "chooses the archbishop",
+   "new": "chooses the lead believer",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an archbishop's election",
+   "new": "a lead believer's election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.biography",
+   "old": "without papal confirmation",
+   "new": "without the Hierophant's ratification",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.biography",
+   "old": "and papal confirmation",
+   "new": "and the Hierophant's ratification",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.biography",
+   "old": "elected the archbishop",
+   "new": "elected the lead believer",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.biography",
+   "old": "elects the archbishop",
+   "new": "elects the lead believer",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "witness deacon",
+   "new": "witness believer",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.biography",
+   "old": "witness deacon",
+   "new": "witness believer",
+   "expect": 3,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.relations.incoming[0].basis",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.relations.incoming[1].basis",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "custodian deacon",
+   "new": "custodian believer",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the clergy's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the clergy's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the clergy's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the clergy's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Arc Presbyterate Election Affairs Believer",
+   "new": "Arc Congregation Election Affairs Believer",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "presbyterate secret-ballot count records",
+   "new": "congregation secret-ballot count records",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the presbyterate's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "Arc Presbyterate Election Affairs Believer",
+   "new": "Arc Congregation Election Affairs Believer",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "presbyterate secret-ballot count records",
+   "new": "congregation secret-ballot count records",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the clergy's secret ballot",
+   "new": "the congregation's secret ballot",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "popeless archbishop election",
+   "new": "election of the lead believer without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the presbyterate's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the presbyterate's secret ballot",
+   "new": "the congregation's secret ballot",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Arc Presbyterate Election Affairs Believer",
+   "new": "Arc Congregation Election Affairs Believer",
+   "expect": 5,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.biography",
+   "old": "presbyterate secret-ballot count records",
+   "new": "congregation secret-ballot count records",
+   "expect": 3,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the presbyterate secret-ballot count",
+   "new": "the congregation secret-ballot count",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the election of an archbishop without a pope",
+   "new": "the election of a lead believer without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the presbyterate's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the presbyterate's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the presbyterate's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Relationships",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the clergy's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.biography",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the clergy's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the clergy's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the clergy's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "priests' assembly messenger",
+   "new": "congregation summons messenger",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "priests' assembly messenger",
+   "new": "congregation summons messenger",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Clergy Summons Herald",
+   "new": "Congregation Summons Messenger",
+   "expect": 9,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the clergy's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election held without a pope",
+   "new": "an election held without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the clergy's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the clergy's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election held without a pope",
+   "new": "an election held without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the clergy's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.sections.Relationships",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.biography",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "A priest who",
+   "new": "A believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the priests' convocation seal",
+   "new": "the congregation's convocation seal",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "the priests' convocation seal",
+   "new": "the congregation's convocation seal",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "old": "the priests' convocation seal",
+   "new": "the congregation's convocation seal",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the priests' convocation seal",
+   "new": "the congregation's convocation seal",
+   "expect": 3,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.biography",
+   "old": "a papal-less election",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Eternal Winter",
+   "new": "winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Eternal Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the priests' convocation seal",
+   "new": "the congregation's convocation seal",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "the priests' convocation seal",
+   "new": "the congregation's convocation seal",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "old": "the priests' convocation seal",
+   "new": "the congregation's convocation seal",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the priests' convocation seal",
+   "new": "the congregation's convocation seal",
+   "expect": 3,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.biography",
+   "old": "a papal-less election",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Eternal Winter",
+   "new": "winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Eternal Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the priests' convocation seal",
+   "new": "the congregation's convocation seal",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "the priests' convocation seal",
+   "new": "the congregation's convocation seal",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "old": "the priests' convocation seal",
+   "new": "the congregation's convocation seal",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the college of priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the college of priests' convocation seal",
+   "new": "the congregation's convocation seal",
+   "expect": 3,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election held without a pope",
+   "new": "an election held without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Eternal Winter",
+   "new": "winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Eternal Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the college of priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "old": "secret election of the priests",
+   "new": "secret election of the believers",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the college of priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.biography",
+   "old": "secret election of the priests",
+   "new": "secret election of the believers",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election held without a pope",
+   "new": "an election held without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Eternal Winter",
+   "new": "winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Eternal Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the college of priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "priests' voting records",
+   "new": "believers' voting records",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "the priests' secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "old": "priests' voting records",
+   "new": "believers' voting records",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "old": "the archbishop's secret ballot",
+   "new": "the lead believer's secret ballot",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "old": "the absence of papal confirmation",
+   "new": "the absence of the Hierophant's ratification",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the clergy's secret ballot",
+   "new": "the congregation's secret ballot",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "popeless archbishop election",
+   "new": "election of the lead believer without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret vote",
+   "new": "the lead believer's secret vote",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election held without a pope",
+   "new": "an election held without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the absence of papal confirmation",
+   "new": "the absence of the Hierophant's ratification",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.biography",
+   "old": "electing an archbishop without a pope",
+   "new": "electing a lead believer without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.biography",
+   "old": "relief priest",
+   "new": "relief believer",
+   "expect": 3,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "clerk deacon",
+   "new": "clerk believer",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.biography",
+   "old": "an election held without a pope",
+   "new": "an election held without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.biography",
+   "old": "clerk deacon",
+   "new": "clerk believer",
+   "expect": 3,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "witness deacon",
+   "new": "witness believer",
+   "expect": 2,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Eternal Winter",
+   "new": "winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Eternal Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "an election without a pope",
+   "new": "an election without the Hierophant",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop's secret election",
+   "new": "the next lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Eternal Winter",
+   "new": "winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Eternal Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "old": "the archbishop election",
+   "new": "the lead believer election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "the next archbishop's election",
+   "new": "the next lead believer's election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the clergy's secret election",
+   "new": "the congregation's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop's secret election",
+   "new": "the lead believer's secret election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the next archbishop election",
+   "new": "the next lead believer election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the archbishop election",
+   "new": "the lead believer election",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Myeongdong Station Arc office",
+   "new": "Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보조 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지)"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.biography",
+   "old": "permanent winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0399",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0399",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0399",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0399",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0400",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0400",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0400",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0400",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0401",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0401",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0401",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0401",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0402",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0402",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0402",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0402",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0403",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0403",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0403",
+   "column": "json",
+   "path": "$.relations.incoming[0].basis",
+   "old": "is the priest who",
+   "new": "is the believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0403",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0403",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0404",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0404",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0404",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0404",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0405",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0405",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0405",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "is the priest who",
+   "new": "is the believer who",
+   "expect": 1,
+   "reason": "fix14 D3 성직 어휘 중립화 — 국문 정본 표기(신도·수석 신도·교주)에 정렬, 바이블 §2.3·§4"
+  },
+  {
+   "file": "090",
+   "id": "person-0405",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0405",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0406",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0406",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0406",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0406",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0407",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0407",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0407",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0407",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0408",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0408",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0408",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0408",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0409",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0409",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0409",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0409",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0410",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0410",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0410",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0410",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0411",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0411",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0411",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0411",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0412",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0412",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0412",
+   "column": "json",
+   "path": "$.biography",
+   "old": "permanent winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0412",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0412",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0413",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0413",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0413",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0413",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0414",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0414",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0414",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0414",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0415",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0415",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0415",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0415",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0416",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0416",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0416",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0416",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0417",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0417",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0417",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0417",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0418",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0418",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0418",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0418",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0419",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0419",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0419",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0419",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0420",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0420",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0420",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0420",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0421",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0421",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0421",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0421",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0422",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0422",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0422",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0422",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0423",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0423",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0423",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0423",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0499",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0499",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0499",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0499",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0547",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0547",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0547",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0547",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0599",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0599",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0599",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0599",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0691",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0691",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0691",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0691",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0739",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the permanent winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0739",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0739",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0739",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0791",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0791",
+   "column": "json",
+   "path": "$.biography",
+   "old": "in the Permanent Winter",
+   "new": "in the winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0791",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0791",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0791",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 2,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0883",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0883",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Permanent Winter",
+   "new": "winter",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0883",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0883",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "영구 겨울",
+   "new": "겨울",
+   "expect": 1,
+   "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
   }
  ],
  "kept": [
