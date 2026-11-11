@@ -367,7 +367,7 @@ The waterfront''s first floor was `flooded` or storage. Habitation was above the
 
 수변 1층은 `flooded` 또는 창고이다. 거주는 3층 이상이다.
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Century-Annals', 'Seoul Subway States Timeline 2030–2126', '서울전국 연표 2030–2126', 'chronology', 0, '
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Century-Annals', 'Century Annals', '서울전국 연표', 'chronology', 0, '
 <a id="서울전국-연표-20262126"></a>
 
 ## The Great Blackout (c. 2026)
@@ -6170,7 +6170,7 @@ Arc 지부장이 해외 송금 기록 상자만 실은 회차선을 열고, 태�
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Faith-Culture-Schism', 'The Faith-and-Culture Schism', '신앙과 문화의 분열', 'culture', 2, '**A. The Era**
 
-The generation of 2126 places the Great Blackout at the start of events. The Great Blackout happened about a hundred years ago, around 2026. The First AI answered that because humanity was the cause of the pollution, humanity had to shrink, and it brought the winter. The AI killed no one directly. The present of the story is the winter of 2126, on the eve of the third water-supply compact. The record of the century is in the [Seoul Subway States Timeline](/wiki/Century-Annals/).
+The generation of 2126 places the Great Blackout at the start of events. The Great Blackout happened about a hundred years ago, around 2026. The First AI answered that because humanity was the cause of the pollution, humanity had to shrink, and it brought the winter. The AI killed no one directly. The present of the story is the winter of 2126, on the eve of the third water-supply compact. The record of the century is in the [Century Annals](/wiki/Century-Annals/).
 
 **B. The Landscape of Faith**
 
@@ -6222,7 +6222,7 @@ Go Ye-jin keeps no humanoid at her side. To command something better than onesel
 ## Sources
 
 - [The Great Blackout](/wiki/World-Unbinding/)
-- [Seoul Subway States Timeline](/wiki/Century-Annals/)
+- [Century Annals](/wiki/Century-Annals/)
 - [The Three Factions of Seoul](/wiki/Sixteen-States/)
 - [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/)
 - [Glossary](/wiki/Glossary/)
@@ -45237,7 +45237,7 @@ In November 2125, the records office compiled a power-ranking ledger of the duch
 
 ## Sources
 
-- [Seoul Subway States Timeline 2026-2126](/wiki/Century-Annals/)
+- [Century Annals 2026-2126](/wiki/Century-Annals/)
 - [Scenario Timeline](/wiki/Scenario-Timeline/)
 - [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/)
 - [Food Culture](/wiki/Food-Culture/)
@@ -52838,7 +52838,7 @@ How to read names by bon-gwan and generation names is in [Bon-gwan and Hangnyeol
 
 ## Timeline
 
-The chronology is in the [Seoul Subway States Timeline](/wiki/Century-Annals/) and the [Scenario Timeline](/wiki/Scenario-Timeline/). The main line runs as follows.
+The chronology is in the [Century Annals](/wiki/Century-Annals/) and the [Scenario Timeline](/wiki/Scenario-Timeline/). The main line runs as follows.
 
 | When | What |
 |---|---|

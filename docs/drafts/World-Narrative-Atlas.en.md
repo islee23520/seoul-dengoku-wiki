@@ -33,7 +33,7 @@ How to read names by bon-gwan and generation names is in [Bon-gwan and Hangnyeol
 
 ## Timeline
 
-The chronology is in the [Seoul Subway States Timeline](/wiki/Century-Annals/) and the [Scenario Timeline](/wiki/Scenario-Timeline/). The main line runs as follows.
+The chronology is in the [Century Annals](/wiki/Century-Annals/) and the [Scenario Timeline](/wiki/Scenario-Timeline/). The main line runs as follows.
 
 | When | What |
 |---|---|

@@ -1,5 +1,7 @@
 ---
 model: cpa/claude-opus-5-5 (completion default tier; the Gemini model name could not be selected; this rework round was edited by hand without completion calls)
+title: Century Annals
+title_ko: 서울전국 연표
 section_checkpoint: ko 15/15 parts merged; gate-review fixes applied by hand
 ---
 

@@ -43,7 +43,7 @@ export default function TimelineOverview() {
   return (
     <section className="timeline-overview" aria-labelledby="timeline-overview-title">
       <header>
-        <p className="wiki-domain-label"><Link to="/world/Century-Annals">서울전국 연표 2030–2126</Link></p>
+        <p className="wiki-domain-label"><Link to="/world/Century-Annals">서울전국 연표</Link></p>
         <h2 id="timeline-overview-title">전체 {data.years.length}개 연도 줄거리</h2>
       </header>
       <div className="timeline-periods" aria-label="연표 시대 필터">

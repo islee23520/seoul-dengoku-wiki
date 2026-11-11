@@ -4,7 +4,7 @@ section_checkpoint: W3-A final
 ---
 **A. The Era**
 
-The generation of 2126 places the Great Blackout at the start of events. The Great Blackout happened about a hundred years ago, around 2026. The First AI answered that because humanity was the cause of the pollution, humanity had to shrink, and it brought the winter. The AI killed no one directly. The present of the story is the winter of 2126, on the eve of the third water-supply compact. The record of the century is in the [Seoul Subway States Timeline](/wiki/Century-Annals/).
+The generation of 2126 places the Great Blackout at the start of events. The Great Blackout happened about a hundred years ago, around 2026. The First AI answered that because humanity was the cause of the pollution, humanity had to shrink, and it brought the winter. The AI killed no one directly. The present of the story is the winter of 2126, on the eve of the third water-supply compact. The record of the century is in the [Century Annals](/wiki/Century-Annals/).
 
 **B. The Landscape of Faith**
 
@@ -56,7 +56,7 @@ Go Ye-jin keeps no humanoid at her side. To command something better than onesel
 ## Sources
 
 - [The Great Blackout](/wiki/World-Unbinding/)
-- [Seoul Subway States Timeline](/wiki/Century-Annals/)
+- [Century Annals](/wiki/Century-Annals/)
 - [The Three Factions of Seoul](/wiki/Sixteen-States/)
 - [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/)
 - [Glossary](/wiki/Glossary/)

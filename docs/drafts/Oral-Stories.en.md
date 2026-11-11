@@ -71,7 +71,7 @@ In November 2125, the records office compiled a power-ranking ledger of the duch
 
 ## Sources
 
-- [Seoul Subway States Timeline 2026-2126](/wiki/Century-Annals/)
+- [Century Annals 2026-2126](/wiki/Century-Annals/)
 - [Scenario Timeline](/wiki/Scenario-Timeline/)
 - [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/)
 - [Food Culture](/wiki/Food-Culture/)
