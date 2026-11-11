@@ -2215,7 +2215,7 @@
    "file": "data/sql/090-person-details.sql#person-0088",
    "locator": "$.openingTitles[1].basis (json)",
    "match": "owner",
-   "sentence": "owner:call_3UEeOQxXrDzuYt8E1BFfhRqe:religious_title_root approved (political type remains union)"
+   "sentence": "<tool-call-id> approved (political type remains union)"
   },
   {
    "term": "en-owner",
@@ -2239,7 +2239,7 @@
    "file": "data/sql/090-person-details.sql#person-0088",
    "locator": "$.openingTitles[1].basis (json_ko)",
    "match": "owner",
-   "sentence": "owner:call_3UEeOQxXrDzuYt8E1BFfhRqe:religious_title_root 승인(정치 종류는 연합 유지)"
+   "sentence": "<tool-call-id> 승인(정치 종류는 연합 유지)"
   },
   {
    "term": "en-owner",
