@@ -11,6 +11,7 @@
 // 종료 코드: 0 성공 · 2 인자 오류 · 3 roundtrip 불일치 · 4 규칙 미매칭 · 5 사후 검증 실패
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { DatabaseSync } from 'node:sqlite';
 
@@ -71,12 +72,17 @@ function loadRows(sqlDir) {
 }
 
 // ---- 패턴 ------------------------------------------------------------------
+// 변형 패턴: canon-terms sixteen-states-*가 조사 결합형·복수형을 놓치는 같은 클래스 표현.
+// 16국은 뒤쪽 경계 없이(조사 의/이/을/은/과/에 등 결합 포함), 영어는 nation 복수형까지 잡는다.
 const VARIANT_PATTERNS = [
-  ['sixteen-states-ko~variant-16guk', '(?<![0-9A-Za-z가-힣])16국(?![0-9A-Za-z가-힣])', ''],
-  ['sixteen-states-ko~variant-16nara', '16 나라|나라 열여섯|16국가', ''],
+  ['sixteen-states-ko~variant-16guk-any', '(?<![0-9A-Za-z가-힣])16국', ''],
+  ['sixteen-states-ko~variant-16gaeguk', '16개국', ''],
+  ['sixteen-states-ko~variant-16nara', '16 나라|나라 열여섯|16국가|국가 열여섯', ''],
   ['sixteen-states-en~variant-16countries', '\\b16 countries\\b', 'i'],
-  ['sixteen-states-en~variant-16state', '\\b16[- ]state\\b', 'i'],
-  ['sixteen-states-en~variant-16nation', '\\b16[- ]nation\\b', 'i'],
+  ['sixteen-states-en~variant-16state', '\\b16[- ]states?\\b', 'i'],
+  ['sixteen-states-en~variant-16nation', '\\b16[- ]nations?\\b', 'i'],
+  ['sixteen-states-en~variant-sixteennations', '\\bsixteen nations?\\b', 'i'],
+  ['sixteen-states-en~variant-sixteencountries', '\\bsixteen countries\\b', 'i'],
 ];
 function loadPatterns(sqlDir) {
   const terms = JSON.parse(fs.readFileSync(path.join(sqlDir, 'docs/canon-terms.json'), 'utf8'));
@@ -193,8 +199,10 @@ for (const r of rows) {
   if (touched.has(r.id) && !changed) { console.error(`E_POST: 규칙에 있지만 본문이 바뀌지 않았다: ${r.id}`); process.exit(EXIT.POST); }
   perDoc.push({
     document: r.id, touched: touched.has(r.id),
-    bytes_before: (b.body_md?.length ?? 0) + (b.body_ko_md?.length ?? 0),
-    bytes_after: (r.body_md?.length ?? 0) + (r.body_ko_md?.length ?? 0),
+    chars_before: (b.body_md?.length ?? 0) + (b.body_ko_md?.length ?? 0),
+    chars_after: (r.body_md?.length ?? 0) + (r.body_ko_md?.length ?? 0),
+    disk_bytes_before: Buffer.byteLength((b.body_md ?? '') + (b.body_ko_md ?? ''), 'utf8'),
+    disk_bytes_after: Buffer.byteLength((r.body_md ?? '') + (r.body_ko_md ?? ''), 'utf8'),
   });
 }
 
@@ -229,13 +237,21 @@ if (!args.dryRun) {
 
 // 6) 패턴 스캔 before/after + 잔존 목록
 const scanBefore = scanBodies(rows.map((r) => ({ ...r, body_md: before.get(r.id).body_md, body_ko_md: before.get(r.id).body_ko_md })), pats);
-const scanAfter = scanBodies(args.dryRun ? rows : rows, pats);
+const scanAfter = scanBodies(rows, pats);
+const sha256 = (s) => crypto.createHash('sha256').update(s, 'utf8').digest('hex');
 const report = {
   applied_at: new Date().toISOString(),
   sql_dir: args.sqlDir, rules_file: args.rules, dry_run: !!args.dryRun,
   row_count: rows.length,
-  rules_total: rules.length, rules_applied: applied.length,
+  rules_total: rules.length,
+  rules_applied_detail: applied,
   documents_touched: [...touched].sort(),
+  file_sha256_before: sha256(original),
+  file_sha256_after: sha256(newText),
+  file_chars_before: original.length,
+  file_chars_after: newText.length,
+  file_disk_bytes_before: Buffer.byteLength(original, 'utf8'),
+  file_disk_bytes_after: Buffer.byteLength(newText, 'utf8'),
   roundtrip_precheck: 'ok (129/129 INSERT 재직렬화 바이트 일치)',
   per_document: perDoc,
   pattern_scan: {
