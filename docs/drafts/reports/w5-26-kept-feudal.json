@@ -1,0 +1,4925 @@
+{
+ "generated": "2026-11-11",
+ "pattern": "봉건|영주|공작|백작|남작|봉신|vassal|feudal|CK3|Crusader Kings|crusader|노랜드|Norland",
+ "note": "GDD 전체에서 feudal/CK3/Norland 설계 언어 문장 전수 목록(패치 후 상태). 14개 패치 문서의 before/after 카운트 동일 — 패치가 설계 언어를 건드리지 않았음.",
+ "corpus_count_after": 963,
+ "corpus_count_before": 963,
+ "patched_docs_before": 175,
+ "patched_docs_after": 175,
+ "per_document_after": {
+  "doc.Unity-Architecture-Implementation-Plan": 2,
+  "doc.Unity-Architecture": 4,
+  "doc.Unity-System-Design": 2,
+  "doc.Narrative-Direction": 2,
+  "doc.owner-approved-batch-d": 16,
+  "doc.owner-approved-d09-offices": 3,
+  "doc.owner-approved-defaults-off-keep": 6,
+  "doc.owner-approved-defaults-on-c": 12,
+  "doc.owner-approved-defaults-on": 15,
+  "doc.owner-approved-mst-01": 2,
+  "doc.owner-approved-unr-01": 2,
+  "doc.pa-01-aging-ability-decay": 2,
+  "doc.pw-01-war-declaration-threshold": 8,
+  "doc.Station-Interior-Design": 2,
+  "doc.ui-01-campaign-time-control": 4,
+  "doc.Ref-Crusader-Kings-3": 119,
+  "doc.Ref-Mechanism-Index": 14,
+  "doc.Game-References": 37,
+  "doc.Home": 1,
+  "doc.Online-User-Journey": 4,
+  "doc.Open-Decisions": 5,
+  "doc.Campaign-Loop": 2,
+  "doc.Campaign-Progression": 7,
+  "doc.Characters-and-Persons": 12,
+  "doc.Determinism-and-Save-Contracts": 8,
+  "doc.Diplomacy-and-Contracts": 10,
+  "doc.Economy-and-Logistics": 12,
+  "doc.Faith-Culture-and-Knowledge": 10,
+  "doc.Game-Logic-Principles": 10,
+  "doc.Hero-Squads-and-Time-Based-Movement": 5,
+  "doc.Implementation-Mapping": 8,
+  "doc.Power-and-Institutions": 24,
+  "doc.Relationships-Houses-and-Intrigue": 24,
+  "doc.Rules-FactionsWarfare": 8,
+  "doc.Save-and-Determinism": 2,
+  "doc.Strategy-Battle-Roundtrip": 2,
+  "doc.Time-Pulses-and-Events": 10,
+  "doc.Travel-Activities-and-Landless": 18,
+  "doc.Travel-and-Encounters": 2,
+  "doc.War-and-Personal-Resolution": 16,
+  "doc.Warfare-and-Sieges": 2,
+  "doc.Archify-D01": 2,
+  "doc.Archify-D02": 2,
+  "doc.Archify-D03": 6,
+  "doc.Archify-D04": 6,
+  "doc.Archify-D06": 8,
+  "doc.Archify-D07": 14,
+  "doc.Archify-D08": 8,
+  "doc.Archify-D09": 8,
+  "doc.Archify-D10": 10,
+  "doc.Archify-D11": 12,
+  "doc.Archify-D12": 2,
+  "doc.Archify-D13": 2,
+  "doc.Archify-D14": 2,
+  "doc.Archify-D15": 8,
+  "doc.Archify-D16": 2,
+  "doc.Archify-D17": 2,
+  "doc.Archify-D18": 12,
+  "doc.character-sheet-formulas": 2,
+  "doc.Mechanism-D01": 10,
+  "doc.Mechanism-D02": 4,
+  "doc.Mechanism-D03": 10,
+  "doc.Mechanism-D04": 8,
+  "doc.Mechanism-D05": 2,
+  "doc.Mechanism-D06": 10,
+  "doc.Mechanism-D07": 16,
+  "doc.Mechanism-D08": 10,
+  "doc.Mechanism-D09": 10,
+  "doc.Mechanism-D10": 12,
+  "doc.Mechanism-D11": 11,
+  "doc.Mechanism-D12": 4,
+  "doc.Mechanism-D13": 6,
+  "doc.Mechanism-D14": 4,
+  "doc.Mechanism-D15": 10,
+  "doc.Mechanism-D16": 6,
+  "doc.Mechanism-D17": 4,
+  "doc.Mechanism-D18": 14,
+  "doc.mechanism-design-index-d01": 9,
+  "doc.mechanism-design-index-d02": 6,
+  "doc.mechanism-design-index-d03": 18,
+  "doc.mechanism-design-index-d04": 6,
+  "doc.mechanism-design-index-d05": 8,
+  "doc.mechanism-design-index-d06": 3,
+  "doc.mechanism-design-index-d07": 17,
+  "doc.mechanism-design-index-d08": 19,
+  "doc.mechanism-design-index-d09": 11,
+  "doc.mechanism-design-index-d10": 22,
+  "doc.mechanism-design-index-d11": 46,
+  "doc.mechanism-design-index-d12": 21,
+  "doc.mechanism-design-index-d13": 10,
+  "doc.mechanism-design-index-d14": 16,
+  "doc.mechanism-design-index-d15": 13,
+  "doc.mechanism-design-index-d16": 8,
+  "doc.mechanism-design-index-d17": 6,
+  "doc.mechanism-design-index-d18": 6,
+  "doc.mechanism-design-index": 2,
+  "doc.Singleplayer-Design-SP-1-0-0": 3
+ },
+ "sentences": [
+  {
+   "document": "doc.Unity-Architecture-Implementation-Plan",
+   "field": "body_md",
+   "sentence": "CK3 reference: the data separation and serialization in internal-architecture-synthesis.md:95-104 are technique examples and do not prove hot-reload or multiplayer/replay consumption."
+  },
+  {
+   "document": "doc.Unity-Architecture-Implementation-Plan",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: internal-architecture-synthesis.md:95-104의 데이터 분리와 직렬화는 기법 사례이며 핫리로드·멀티/리플레이 소비를 입증하지 않는다."
+  },
+  {
+   "document": "doc.Unity-Architecture",
+   "field": "body_md",
+   "sentence": "CK3 reference: the data separation and serialization in internal-architecture-synthesis.md:95-104 are technique examples and do not prove hot-reload or multiplayer/replay consumption."
+  },
+  {
+   "document": "doc.Unity-Architecture",
+   "field": "body_md",
+   "sentence": "The new goal is Norland-style individual-resolution combat (Decision 13)."
+  },
+  {
+   "document": "doc.Unity-Architecture",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: internal-architecture-synthesis.md:95-104의 데이터 분리와 직렬화는 기법 사례이며 핫리로드·멀티/리플레이 소비를 입증하지 않는다."
+  },
+  {
+   "document": "doc.Unity-Architecture",
+   "field": "body_ko_md",
+   "sentence": "새 목표는 노랜드식 개인 판정 전투(결정 13)입니다."
+  },
+  {
+   "document": "doc.Unity-System-Design",
+   "field": "body_md",
+   "sentence": "CK3 reference: the data separation and serialization in internal-architecture-synthesis.md:95-104 are technique examples and do not prove hot-reload or multiplayer/replay consumption."
+  },
+  {
+   "document": "doc.Unity-System-Design",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: internal-architecture-synthesis.md:95-104의 데이터 분리와 직렬화는 기법 사례이며 핫리로드·멀티/리플레이 소비를 입증하지 않는다."
+  },
+  {
+   "document": "doc.Narrative-Direction",
+   "field": "body_md",
+   "sentence": "We separate edition differences between the original and the CK2 Fanfork from observations of CK3 systems, and we do not substitute North American place names, proper nouns, bank debt law, or death inheritance as Seoul facts."
+  },
+  {
+   "document": "doc.Narrative-Direction",
+   "field": "body_ko_md",
+   "sentence": "원본/CK2 Fanfork의 판본 차이와 CK3 시스템 관찰을 분리하고, 북미 지명·고유명·은행채무법·사망 상속을 서울 사실로 치환하지 않는다."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_md",
+   "sentence": "Proposed rule: size = clamp(6 + floor(martial skill/2) + state level (ruler 2 · vassal 1 · other 0) + floor(R/40), 6, 14)."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_md",
+   "sentence": "Genre basis: In CK3, commander ability affects troop efficiency, and domain size affects levy size."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_md",
+   "sentence": "Genre basis: In CK3, an unaffiliated adventurer carves off land from a weakened lord and opens an independent domain."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_md",
+   "sentence": "Genre basis: CK3: ruler dies → successor under the succession law, regency period."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_md",
+   "sentence": "Genre basis: CK3: healing and medicine actions spend a cost and raise health."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_md",
+   "sentence": "Genre basis: CK3: a defeated ruler is taken prisoner and released by ransom."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_md",
+   "sentence": "Genre basis: CK3: a vassal's unilateral action is subject to the ruler's judgment."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_md",
+   "sentence": "CK3 holding buildings only have construction and upkeep and no concept of operation, so this rule follows Nowland."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_ko_md",
+   "sentence": "제안 규칙: 정원 = clamp(6 + floor(무력 기량/2) + 국가 수준(군주 2·봉신 1·그 밖 0) + floor(R/40), 6, 14)."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3 지휘관 능력이 병력 효율에, 영지 규모가 소집 규모에 영향을 준다."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3 무소속 모험가가 약해진 영주의 땅을 떼어 내 독립 영지를 연다."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3: 통치자 사망 → 계승 법에 따른 후임, 섭정 기간."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3: 치료·의술 행동은 비용을 쓰고 건강을 올린다."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3: 패전 군주는 포로가 되고 몸값으로 풀려난다."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3: 가신의 독단은 군주의 판결 대상이다."
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "field": "body_ko_md",
+   "sentence": "CK3 영지 건물은 건설·유지만 있고 가동 개념이 없어 이 규칙이 Nowland 쪽을 따른다."
+  },
+  {
+   "document": "doc.owner-approved-d09-offices",
+   "field": "body_md",
+   "sentence": "Genre basis: CK3: one character can hold several court positions, but titles are ranked and each character has one representative title."
+  },
+  {
+   "document": "doc.owner-approved-d09-offices",
+   "field": "body_md",
+   "sentence": "Balance impact: Duties may pile up on a single capable vassal, but the title cap prevents power concentration."
+  },
+  {
+   "document": "doc.owner-approved-d09-offices",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3: 한 인물이 여러 궁정 직책을 겸하지만 작위는 서열로 하나의 대표 직함을 가진다."
+  },
+  {
+   "document": "doc.owner-approved-defaults-off-keep",
+   "field": "body_md",
+   "sentence": "Genre basis: CK3 puts a casus belli and reputation cost on breaking alliances, and NPC rulers' ambitions serve as motives."
+  },
+  {
+   "document": "doc.owner-approved-defaults-off-keep",
+   "field": "body_md",
+   "sentence": "Genre basis: CK3 fires a chain event when accumulated relationship events cross a threshold."
+  },
+  {
+   "document": "doc.owner-approved-defaults-off-keep",
+   "field": "body_md",
+   "sentence": "Genre basis: in Nowland and CK3, travel stacks terrain and seasonal surcharges multiplicatively."
+  },
+  {
+   "document": "doc.owner-approved-defaults-off-keep",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3는 동맹 파기에 명분·평판 대가를 두고 NPC 군주의 야망이 동기가 된다."
+  },
+  {
+   "document": "doc.owner-approved-defaults-off-keep",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3는 관계 이벤트 누적이 임계를 넘을 때 연쇄 사건을 낸다."
+  },
+  {
+   "document": "doc.owner-approved-defaults-off-keep",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: Nowland·CK3 이동은 지형·계절 가산을 곱셈으로 쌓는다."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on-c",
+   "field": "body_md",
+   "sentence": "Genre basis: in both CK3 and Nowland, scarcity and blockades are reflected in prices."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on-c",
+   "field": "body_md",
+   "sentence": "What the canon leaves open: the CK3 reference book's stress tiers (0–99/100/200/300+) are verified, but the triggers and the breakdown re-trigger wait are unconfirmed."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on-c",
+   "field": "body_md",
+   "sentence": "(Basis: references/ref-crusader-kings-3.json §10.1·10.2)"
+  },
+  {
+   "document": "doc.owner-approved-defaults-on-c",
+   "field": "body_md",
+   "sentence": "Genre basis: CK3 stress is a device that keeps choices from being converted into gold."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on-c",
+   "field": "body_md",
+   "sentence": "(Basis: references/ref-crusader-kings-3.json §8.3)"
+  },
+  {
+   "document": "doc.owner-approved-defaults-on-c",
+   "field": "body_md",
+   "sentence": "Genre basis: in CK3 schemes, success and discovery are distinct variables."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on-c",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3·Nowland 모두 희소·봉쇄가 물가에 반영된다."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on-c",
+   "field": "body_ko_md",
+   "sentence": "정본이 비운 것: CK3 참고서의 스트레스 구간(0–99/100/200/300+)은 검증됨이나 트리거·붕괴 재발 대기는 미확인이다."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on-c",
+   "field": "body_ko_md",
+   "sentence": "(근거 references/ref-crusader-kings-3.json §10.1·10.2)"
+  },
+  {
+   "document": "doc.owner-approved-defaults-on-c",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3 스트레스는 선택을 금으로 환산하지 못하게 하는 장치."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on-c",
+   "field": "body_ko_md",
+   "sentence": "(근거 references/ref-crusader-kings-3.json §8.3)"
+  },
+  {
+   "document": "doc.owner-approved-defaults-on-c",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3 계책은 성공과 발각이 구별되는 변수."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_md",
+   "sentence": "CK3 holding buildings only have construction and upkeep and no concept of operation, so this rule follows Nowland."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_md",
+   "sentence": "Genre basis: besides unification and crown victories, CK3 has achievements for fulfilling \"dynasty goals.\" Nowland evaluates settlement prosperity goals along several branches."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_md",
+   "sentence": "Genre basis: in CK3, sieges and blockades are time-limited and their lifting conditions are visible."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_md",
+   "sentence": "What the canon leaves blank: there is no rite/culture key state and no vassal contract clauses."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_md",
+   "sentence": "Proposed rule: when a vassal contract is created, record both rites (liege key + vassal key) on one line."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_md",
+   "sentence": "Kits are used only as evaluation weights: Eastern targets get +5 to the vassal revolt-risk threshold, and for Central Records, conferring a title is invalid if record-keeping skill is below 2."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_md",
+   "sentence": "Genre basis: in CK3, culture and faith change vassal contract terms and acceptance weights (not automatic acceptance)."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_md",
+   "sentence": "Genre basis: CK3's monthly settlement also processes in deterministic ID order."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_ko_md",
+   "sentence": "CK3 영지 건물은 건설·유지만 있고 가동 개념이 없어 이 규칙이 Nowland 쪽을 따른다."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3는 통일·왕관 승리 외에 ‘왕조 목표’ 달성 업적을 둔다."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3 포위·봉쇄는 기간제이고 해제 조건이 보인다."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_ko_md",
+   "sentence": "정본이 비운 것: 제례·문화 키 상태와 봉신 계약 조항이 없다."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_ko_md",
+   "sentence": "제안 규칙: 봉신 계약이 생길 때 두 제례(주군 키+봉신 키)를 한 줄에 기록한다."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3 문화·신앙은 봉신 계약 조건과 수락 가중치를 바꾼다(자동 수락은 아님)."
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3 월 정산도 ID 순 결정론 처리."
+  },
+  {
+   "document": "doc.owner-approved-mst-01",
+   "field": "body_md",
+   "sentence": "Genre basis: in CK3, the farther a holding or fief is, the weaker the control, and rebellions and crises arise from the weakest holding."
+  },
+  {
+   "document": "doc.owner-approved-mst-01",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3 영지·봉토가 멀수록 통제가 약하고 가장 약한 영지에서 반란·위기가 난다."
+  },
+  {
+   "document": "doc.owner-approved-unr-01",
+   "field": "body_md",
+   "sentence": "Genre basis: in CK3, when vassal grievances and faction pressure cross a threshold, an ultimatum event opens."
+  },
+  {
+   "document": "doc.owner-approved-unr-01",
+   "field": "body_ko_md",
+   "sentence": "장르 근거: CK3 가신 불만·파벌 압력이 문턱을 넘으면 최후통첩 사건이 열린다."
+  },
+  {
+   "document": "doc.pa-01-aging-ability-decay",
+   "field": "body_md",
+   "sentence": "CK3 has age-bracket frailty traits, and GURPS rolls HT every year from age 50 (ability decline)."
+  },
+  {
+   "document": "doc.pa-01-aging-ability-decay",
+   "field": "body_ko_md",
+   "sentence": "CK3는 나이 대별 노쇠 특성, GURPS는 50세부터 매년 HT 판정(능력 감퇴)."
+  },
+  {
+   "document": "doc.pw-01-war-declaration-threshold",
+   "field": "body_md",
+   "sentence": "**Tension** weekly for each pair (a,b): `Δ = borderPush×min(5, jeopgyeongkan)/5 + goalPush×(hwakjang yangmang-in jjok su) − tensionCool − (dongmaeng allyCalm) − (bongsinssang 1)` (jeopgyeongkan = border tiles; hwakjang yangmang-in jjok su = number of sides with an expansion ambition; dongmaeng = all"
+  },
+  {
+   "document": "doc.pw-01-war-declaration-threshold",
+   "field": "body_md",
+   "sentence": "**Declaration possible** (a against b) = all true: ① tension ≥ declareTension ② S_a ≥ minStrengthRatio×S_b ③ L_a ≥ minLegitimacy ④ ongoing wars < maxWars ⑤ neither is in another war ⑥ not allies ⑦ not a vassal pair ⑧ a's ambition is expansion ⑨ no cooldown on the pair or on either state."
+  },
+  {
+   "document": "doc.pw-01-war-declaration-threshold",
+   "field": "body_md",
+   "sentence": "In CK3, you need a casus belli to declare war, and wars end by war score."
+  },
+  {
+   "document": "doc.pw-01-war-declaration-threshold",
+   "field": "body_md",
+   "sentence": "The casus belli in this spec are “claim, border clash, border tension,” and tension corresponds to CK3's opinion and accumulated grievances."
+  },
+  {
+   "document": "doc.pw-01-war-declaration-threshold",
+   "field": "body_ko_md",
+   "sentence": "**긴장** 쌍(a,b)마다 매주: `Δ = borderPush×min(5, 접경칸)/5 + goalPush×(확장 야망인 쪽 수) − tensionCool − (동맹 allyCalm) − (봉신쌍 1)`; 긴장 = clamp(긴장+Δ, 0, 100)."
+  },
+  {
+   "document": "doc.pw-01-war-declaration-threshold",
+   "field": "body_ko_md",
+   "sentence": "**선전 가능**(a가 b에게) = 모두 참: ① 긴장 ≥ declareTension ② S_a ≥ minStrengthRatio×S_b ③ L_a ≥ minLegitimacy ④ 진행 중 전쟁 < maxWars ⑤ 둘 다 다른 전쟁 중 아님 ⑥ 동맹 아님 ⑦ 봉신쌍 아님 ⑧ a의 야망이 확장 ⑨ 쌍·각 나라 쿨다운 없음."
+  },
+  {
+   "document": "doc.pw-01-war-declaration-threshold",
+   "field": "body_ko_md",
+   "sentence": "CK3는 명분(casus belli)이 있어야 선전하고 전쟁 점수로 종결한다."
+  },
+  {
+   "document": "doc.pw-01-war-declaration-threshold",
+   "field": "body_ko_md",
+   "sentence": "이 사양의 명분은 「청구·국경 충돌·국경 긴장」이며 긴장은 CK3의 의견(opinion)·불만 누적에 해당."
+  },
+  {
+   "document": "doc.Station-Interior-Design",
+   "field": "body_ko_md",
+   "sentence": "무주지는 유효하며 근거 없는 영주·인구·정치 배치를 생성하지 않는다."
+  },
+  {
+   "document": "doc.Station-Interior-Design",
+   "field": "body_ko_md",
+   "sentence": "슬롯을 방 수로 치환, 없는 층 생성, 고정 영주 부여, 겨울에 우기 템플릿 복사, 공용 통로 중복 면적, 같은 B2 자동 접합은 불합격 후보로 남기고 정본에 넣지 않는다."
+  },
+  {
+   "document": "doc.ui-01-campaign-time-control",
+   "field": "body_md",
+   "sentence": "CK3, Norland, and Total War campaigns provide pause and 3–5 speed levels."
+  },
+  {
+   "document": "doc.ui-01-campaign-time-control",
+   "field": "body_md",
+   "sentence": "In Norland the clock stops when a window opens."
+  },
+  {
+   "document": "doc.ui-01-campaign-time-control",
+   "field": "body_ko_md",
+   "sentence": "CK3·Norland·Total War 캠페인은 정지와 3~5단계 속도를 둔다."
+  },
+  {
+   "document": "doc.ui-01-campaign-time-control",
+   "field": "body_ko_md",
+   "sentence": "Norland는 창이 열리면 시계가 멈춘다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "The references below are only CK3 structural references and not authority for the Seoul product, and the mismatched totals, coping effects, clan formula, and legacy costs are not adopted as Seoul rules."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "CK3 research receipts are identified by the file names and hashes below, which contain no personal information, and neither a local sibling repository nor an ignored evidence directory is used as a prerequisite for materialize/build."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "CK3 references: see mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-cu"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "CK3 figures are not Seoul rules."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "It explains the basic governance structures of feudal, clan, and tribal rule."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "In the character window you view traits, skills, health, family, heirs, relationships, court, and vassals as connected, and you select territory and rulers on the map."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "| Title and Holding | Title laws, liege, vassal relationships, buildings, development, control | Even when the holder changes through succession, war, grant, or revocation, the holding's material state largely remains."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "**Diagnosis**: Check heirs, demesne limit, income and military expenses, vassal discontent, alliances and wars, and stress and health."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "**Handling the aftermath**: Respond to prisoner ransoms, new vassals, control of occupied land, debt, stress, and worsening relationships."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Candidate and elector rules differ among Feudal, Scandinavian, Saxon, Tanist, and other elections."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "The Feudal election's direct-vassal opinion of `+10` is an example of a known base rule, but this time it could not be cross-checked against the original text."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Do not sum up relatives' inheritance grievances, vassals' grievances over authority changes, the law bonuses of election laws, and \"opinion of predecessor\" into a single fixed modifier."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "For law changes, the required innovation, crown authority, vassal consent, and prestige costs must be checked separately in the relevant UI.[Source-M02; original text not obtained]"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Conversely, if the primary heir inherits an empire and his brother receives only a kingdom under that empire, the brother usually remains a vassal."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Destroying a title creates vassal grievances and prestige costs, and does not necessarily prevent Confederate Partition from regenerating titles.[Source-M02][Source-M06; original text not obtained]"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "| Gold | Demesne taxes, vassal payments, ransoms, plunder, church support, events | Construction, recruiting and maintaining men-at-arms, levies, mercenaries, gifts and bribes, activities, title creation | Debt creates restrictions on actions and military and political pressure."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "This is why it is better to grant land to loyal vassals than to hold it all directly without limit."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "The known base effect for feudal and clan governments is `+0.5%` tax and levies per point of development, but government-specific exceptions and the latest figures are unverified."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "**[Inference: economic judgment formula]** `wol sunsuip (monthly net income) = jikhal suip (direct income) + bongsin suip (vassal income) + gita jeonggi suip (other regular income) - gunbi (military expenses) - gungjeong·jikchaek·gita jeonggi biyong (court, office, and other regular costs)`."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "### 4.3 Vassal Income and Government [Unverified]"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "- **Feudal**: The vassal contract sets tax and levy obligations."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Higher obligations generally lower vassal opinion, and changing them unfavorably without a pretext or a corresponding concession can create a tyranny problem."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "- **Tribal**: Prestige level matters for vassal contributions and governing ability, and honor is spent instead of gold on some military and construction costs."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Feudalization is a transition that changes the economic base and the structure of military costs."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "- **Theocratic and Republic Vassals**: They pay according to religion- and government-specific rules."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "- **Administrative, Nomadic, and Landless**: Each has a separate economic and succession system by expansion, so the feudal contract formula must not be applied as is."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Instead of a fixed party as in a tactical RPG, there is an overlapping network of characters across family, court, council, vassals, and army.[S21][S27][S31]"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "| Chancellor | Diplomacy: tasks related to foreign relations, domestic vassal relations, and consolidating titular claims | There is a political incentive to appoint a powerful vassal instead of an outstanding commoner."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Ignoring a powerful vassal's demand for a council seat can incur the known base opinion modifier `-40`."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Eligibility, faith, and vassal contracts limit the freedom of appointment."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "| Law | 2 Faithful Magistrates, Faithful Magistrates | A public-order stabilizing effect in the family of vassal popular opinion `+5`."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Distinguish individual vassals' liking of the ruler from popular opinion."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "| Law | 4 Delegated Authority, Delegated Authority | Powerful vassal opinion `+5`."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "**De jure** is which higher title a territory legally belongs to, and **de facto** is whose vassal it actually is now."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "| Powerful vassal's demand for a seat | Discontent of major vassals excluded from the council | Known base value `-40`; this is not a value that applies to all vassals."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "| Title ambition and tier mismatch | Discontent of vassals with customary rights and of persons who want a title | Check individually which title and which person the modifier applies to."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "**[Inference]** An opinion of `+100` alone cannot guarantee an alliance, vassalization, or cooperation with every scheme."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "### 8.2 Vassals, Crown Authority, and Factions [Unconfirmed]"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "A liege rules a large realm indirectly through vassals."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "The demesne limit and the vassal count limit are separate."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Reorganizing counts under a duke can reduce the number of direct vassals, but the intermediate liege becomes stronger and taxes and levies are passed on indirectly."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Crown authority widens powers such as title revocation, wars between vassals, and succession control, but it provokes vassal opinion penalties and political resistance."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Even if you hold a claim, you are subject to limits such as declaration-of-war eligibility, gender, faith, truces, and vassal authority.[Source-M02][Source-M03; original text not obtained]"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "| Another person's claim | Press the rights of a court member, vassal, or relative on their behalf | The beneficiary receives the title."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Depending on conditions such as whether the title is lower than the attacker's, the beneficiary is incorporated as a vassal or becomes independent."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "| Customary-rights war | Demand a region legally belonging to your own title | Settles the relevant territory and vassal relationships."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "They are followed by whether family and vassals join, the time it takes for domains to convert, hostility and holy wars with the previous religion, and changes in clergy income and marriage legitimacy."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "| Greedy | Gifts, donations, and certain generous choices that give away gold | If you hold on to your gold, you may fail to placate vassals or miss resolving necessary events."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "| Ambitious | Choices that give up a position or grant a title under certain conditions | Obsession with holding titles directly leads to exceeding the demesne limit and to vassal discontent."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "- **Expansion overload**: Low control, different faiths and cultures, demesne and vassal limits, strong new vassals, and long-distance defense delay the payoff of conquest."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Does that person remain my vassal?"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Does a culture or faith change alter only the character, or also the holdings, vassals, and war hostility?"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "mechanics-06-vassals-court-council.md SHA-256 b860d4ab3e60e74a11439411612648a6ce9db58eb7a740009e6b673bc6855c7b"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_md",
+   "sentence": "Declaration counts, file counts, structural readings, and exhaustive effect readings are not equated with one another, and no CK3 counts are copied as authority for Seoul."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "아래 참조는 CK3 구조 참고일 뿐 서울 제품 권한이 아니며 불일치했던 총계·코핑 효과·씨족 산식·유산 비용을 서울 규칙으로 채택하지 않는다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "CK3 조사 영수증은 개인정보 없는 아래 파일명·해시로 식별하며 로컬 형제 저장소나 ignored evidence 디렉터리를 materialize/build 선행조건으로 사용하지 않는다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-culture.md:165"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "CK3 수치는 서울 규칙이 아니다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "봉건·씨족·부족의 기본 통치 구조를 중심으로 설명하고, 궁정 확장의 문화 분화·혼합과 해당 지역 확장의 지역 투쟁은 확장 규칙으로 구별한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "인물창에서 특성·기량·건강·가족·후계자·관계·궁정·봉신을 연결해 보고, 지도로 영토와 통치자를 선택한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| 작위·영지 | 작위 법률, 영주, 봉신 관계, 건물, 개발도, 통제력 | 계승·전쟁·수여·박탈로 보유자가 바뀌어도 영지의 물적 상태는 대체로 남는다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "**진단**: 후계자, 직할 한도, 수입·군비, 봉신 불만, 동맹·전쟁, 스트레스·건강을 확인한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "**목표 선정**: 상속 안정, 공작령 통합, 특정 결혼, 문화 혁신, 신앙 개혁 등 가까운 목표를 고른다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "**결과 수습**: 포로 몸값, 새 봉신, 점령지 통제, 부채, 스트레스, 관계 악화에 대응한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "주작위 승계와 모든 백작령 승계를 동일시하지 않는다.[원천-M02; 원문 미확보]"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "봉건·스칸디나비아·색슨·태니스트 선거 등의 후보·유권자 규칙이 다르다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "봉건 선거의 직속 봉신 의견 `+10`은 알려진 기본 규칙의 예시지만 이번 원문 대조는 하지 못했다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "친족의 상속 불만, 권위 변경의 봉신 불만, 선거법의 법률 보너스, '전임자에 대한 의견'을 하나의 고정 보정으로 합산해서는 안 된다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "법 변경은 필요한 혁신·왕권·봉신 동의·명예 비용을 해당 UI에서 별도로 확인해야 한다.[원천-M02; 원문 미확보]"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "반대로 주후계자가 제국을 이어받고 형제가 제국 아래 왕국만 받는다면 형제는 보통 봉신으로 남는다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "정확한 분배는 기존 생전 수여와 작위 계층까지 반영하므로 '자녀 수로 백작령을 단순 나눔'은 실제 알고리즘이 아니다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "작위 파괴는 해당 봉신 불만과 명예 비용을 만들며 연합 분할의 재생성을 반드시 막지는 못한다.[원천-M02][원천-M06; 원문 미확보]"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| 금 Gold | 직할 세금, 봉신 납부, 몸값, 약탈, 교계 지원, 사건 | 건설, 무장병 모집·유지, 소집군, 용병, 선물·뇌물, 활동, 작위 생성 | 부채는 행동 제약과 군사·정치 압박을 만든다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "무한히 직접 보유하는 것보다 충성할 봉신에게 나누는 이유다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "알려진 봉건·씨족 기본 효과는 개발도 1당 세금과 징집병 `+0.5%`지만 정부별 예외와 최신 수치는 미확인이다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "- **통제력 Control**: 백작령의 통치 집행 수준으로 보통 `0–100`."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "**[추론: 경제 판단식]** `월 순수입 = 직할 수입 + 봉신 수입 + 기타 정기 수입 - 군비 - 궁정·직책·기타 정기 비용`."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "### 4.3 봉신 수입과 정부 [미확인]"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "- **봉건**: 봉신 계약이 세금과 징집병 의무를 정한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "높은 의무는 일반적으로 봉신 호감을 낮추며, 구실이나 상응하는 양보 없이 불리하게 바꾸면 폭정 문제를 만들 수 있다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "- **부족**: 위신 단계가 봉신 기여와 통치 능력에 중요하고 일부 군비·건설에 금 대신 명예를 쓴다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "봉건화는 경제 기반과 군사 비용 구조를 바꾸는 전환이다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "- **신정·공화 봉신**: 종교와 정부별 규칙으로 납부한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "- **행정제·유목제·무토지**: 확장별 별도 경제·계승 체계가 있으므로 봉건 계약 공식을 그대로 적용하지 않는다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "전술 RPG의 고정 파티 대신 가족·궁정·자문회·봉신·군대의 서로 겹치는 인물망이 존재한다.[S21][S27][S31]"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| 재상 Chancellor | 외교: 대외 관계, 국내 봉신 관계, 작위 관습권 통합 관련 과업 | 뛰어난 평민 대신 유력 봉신을 앉힐 정치적 유인이 있다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "유력 봉신의 자문회 자리 요구를 무시하면 알려진 기본 의견 보정 `-40`이 발생할 수 있다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "자격·신앙·봉신 계약에 따라 배치 자유가 제한된다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| Law | 2 Faithful Magistrates, 충실한 행정관 | 봉신 대중 의견 `+5` 계열의 민심 안정 효과."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "개인 봉신의 군주 호감과 대중 의견을 구별한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| Law | 4 Delegated Authority, 권한 위임 | 유력 봉신 의견 `+5`."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "지도상의 작은 영지·남작령은 백작령, 공작령, 왕국, 제국 계층에 속한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "백작령은 문화·신앙·개발도·통제 같은 상태를 가지며 내부 영지에는 성채·도시·사원 등의 유형이 있다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "**관습권 De jure**은 법적으로 어느 상위 작위에 속하는가이고, **실효 지배 De facto**는 지금 실제로 누구의 봉신인가다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "다른 왕국의 관습권 공작령을 정복해도 즉시 관습권 지도가 바뀌지 않는다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "- **문화 수장**은 보통 해당 문화 백작령을 가장 많이 지배하는 통치자이며 문화의 관심 혁신을 선택한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| 문화 촉진 | 백작령의 문화를 통치자 문화로 바꿈 | 관리관 시간과 장기 내정 기회비용."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| 유력 봉신의 자리 요구 | 자문회에서 배제된 주요 봉신 불만 | 알려진 기본 `-40`; 모든 봉신에게 적용되는 값이 아니다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| 작위 욕구·계층 불일치 | 관습권 봉신·작위를 원하는 인물이 불만 | 어떤 작위·누구에 대한 보정인지 개별로 확인."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "**[추론]** 의견 `+100`만으로 동맹·봉신화·모든 계책 협조를 보장할 수 없다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "### 8.2 봉신, 왕권, 파벌 [미확인]"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "주군은 봉신을 통해 큰 영역을 간접 통치한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "직할 한도와 봉신 수 한도는 별개다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "공작 아래 백작을 정리하면 직접 봉신 수를 줄일 수 있지만 중간 주군이 더 강해지고 세금·병력은 간접 전달된다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "왕권은 작위 박탈·봉신 간 전쟁·계승 통제 등 권한을 넓히는 대신 봉신 의견과 정치적 저항을 유발한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "명분을 갖고 있어도 선전포고 자격·성별·신앙·휴전·봉신 권한 등의 제한을 받는다.[원천-M02][원천-M03; 원문 미확보]"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| 다른 인물의 명분 | 궁정 인물·봉신·친족의 권리를 대신 주장 | 수혜자가 작위를 받는다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "수혜 작위가 공격자보다 낮은지 등 조건에 따라 봉신으로 편입되거나 독립한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| 관습권 전쟁 | 자신의 작위에 법적으로 속한 지역을 요구 | 해당 영토·봉신 관계를 정리한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| 정복 Conquest | 부족·특정 신앙·문화·정부 등의 자격 | 백작령·공작령 등을 정복한다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| 성전 Holy War | 적대적 신앙과의 종교 전쟁 | 백작령·공작령·왕국 규모가 가능하고 신앙 비용·헌신 요구가 있다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "가족·봉신의 동참 여부, 영지 개종 시간, 기존 종교와의 적대·성전, 성직 수입과 혼인 적법성 변화가 뒤따른다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| 탐욕 Greedy | 금을 나눠 주는 선물·기부·특정 관대한 선택 | 금을 지키면 봉신 달래기·필요한 사건 해결을 놓칠 수 있다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "| 야심 Ambitious | 지위를 포기하거나 특정 조건에서 작위를 수여하는 선택 | 직접 보유 집착이 직할 초과·봉신 불만을 낳는다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "- **확장 과부하**: 낮은 통제력, 다른 신앙·문화, 직할·봉신 한도, 강한 신규 봉신, 장거리 방어가 정복의 수익을 지연시킨다."
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "그가 내 봉신으로 남는가?"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "문화·신앙 변경은 인물만 바꾸는가, 영지·봉신·전쟁 적대까지 바꾸는가?"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "mechanics-06-vassals-court-council.md SHA-256 b860d4ab3e60e74a11439411612648a6ce9db58eb7a740009e6b673bc6855c7b"
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "field": "body_ko_md",
+   "sentence": "선언수·파일수·구조독해·효과전수독해를 동일시하지 않고 모든 CK3 수량을 서울 권위로 복사하지 않는다."
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_md",
+   "sentence": "CK3 references: see mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-cu"
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_md",
+   "sentence": "CK3 figures are not Seoul rules."
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_md",
+   "sentence": "### 9.1 Unaffiliated → Mercenary → Vassal → Kingdom [REF:MB-PROGRESSION]"
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_md",
+   "sentence": "According to the wiki, you gain mercenary status at T1/Renown 50 and vassal status at T2/Renown 150."
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_md",
+   "sentence": "- [Document] A mercenary's influence is tied to contract income, and a vassal takes part in fiefs, policies, and army mobilization."
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-culture.md:165"
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_ko_md",
+   "sentence": "CK3 수치는 서울 규칙이 아니다."
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_ko_md",
+   "sentence": "### 9.1 무소속→용병→봉신→왕국 [REF:MB-PROGRESSION]"
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_ko_md",
+   "sentence": "위키상 T1/명성50에 용병, T2/명성150에 봉신 자격을 얻는다."
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_ko_md",
+   "sentence": "- [문서] 용병의 영향력은 계약 수입에 연결되고 봉신은 봉토·정책·군단 동원에 참여한다."
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_ko_md",
+   "sentence": "- [문서] 직할지 대관, 다른 성의 영주, 성주, 군단장은 역할이 다르다."
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_ko_md",
+   "sentence": "낮은 신분은 대관에서 경험을 쌓고, 영주/성주 재배치 자유도도 제도개신 정책으로 열린다."
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_ko_md",
+   "sentence": "- [문서] 목표 지정은 영주의 내정을 중단시키고 군비 준비로 전환한다."
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "field": "body_ko_md",
+   "sentence": "- [문서] 성주와 소속 영주가 부대 능력을 형성한다."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "The current reference games are limited to **Crusader Kings 3 (CK3)** and **Norland**."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "The overall game goal is **4X + RPG**, and the combat goal is **Norland-style individual-resolution combat**."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "The CK3 [system encyclopedia](/gdd/references/ref-crusader-kings-3/) is only a comparison source for titles, succession, and event presentation, and is not evidence for CK2 characters, faiths, or events."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "Do not mark original-only events as verified by the Fanfork, and do not substitute CK3 lore for CK2 narrative grounds."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "Game UI research and layout design use the CK3 and Norland materials on [Interface In Game](https://interfaceingame.com/) as the primary standard."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "| Grand Strategy | CK3 | Characters, Houses, and Succession | Turn-Based Combat Titles |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "| Combat | Norland | Individual-Resolution Combat | Turn-Based Combat Titles |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "The current comparison baselines are CK3 and Norland."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "| Current Baseline | CK3 | Characters, Houses, Succession, and Grand Strategy |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "| Combat Baseline | Norland | Individually Resolved Combat and Command Without Pause |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "| All of Seoul → the three factions' spheres of influence · 3D heightmap | CK3 information mode; display of territorial control for Seoul's three factions |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "| Current station → destination station · routes, supplies, events | Norland's travel and ongoing costs |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "| Intermission · encounters · deployment · settlement | CK3 events |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "- CK3-style combat abstraction and feudal succession — because combat is not collapsed into a single dice roll."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "The current reference games are limited to CK3 and Noland, and no open-source work that includes turn-based combat is adopted as a current reference."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "| Current References | CK3 | Character-Driven Grand Strategy |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "| Current References | Norland | Individual-Resolution Combat |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_md",
+   "sentence": "- [Crusader Kings 3](/gdd/references/ref-crusader-kings-3/) — character-driven grand strategy (succession, dynasties, war)"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "현재 레퍼런스 게임은 **크루세이더 킹즈 3(CK3)**와 **노랜드(Norland)**로 제한한다."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "게임 전체 목표는 **4X + RPG**이며, 전투 목표는 **노랜드식 개인 판정 전투**다."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "CK3의 [시스템 백과](/gdd/references/ref-crusader-kings-3/)는 작위·계승·사건 표현의 비교 출처일 뿐 CK2판 인물·신앙·사건의 증거가 아니다."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "원본 전용 사건을 Fanfork 검증으로 표시하거나 CK3 lore를 CK2 서사 근거로 바꾸지 않는다."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "게임 UI 조사와 레이아웃 설계는 [Interface In Game](https://interfaceingame.com/)의 CK3·노랜드 자료를 1차 기준으로 삼는다."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "| 대전략 | CK3 | 인물·가문·계승 | 턴제 전투 작품 |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "| 전투 | 노랜드 | 개인 판정 전투 | 턴제 전투 작품 |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "현재 비교 기준은 CK3와 노랜드다."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "| 현재 기준 | CK3 | 인물·가문·계승과 대전략 |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "| 전투 기준 | 노랜드 | 개인 판정 전투와 일시정지 없는 지휘 |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "| 서울 전체 → 세 세력의 세력권 · 3D 하이트맵 | CK3 정보 모드; 서울 세 세력의 영토 지배권 표시 |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "| 현재역→목적역 · 경로·보급·사건 | 노랜드 이동·지속 비용 |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "| 인터미션·조우·배치·정산 | CK3 이벤트 |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "- CK3식 전투 추상화·봉건 계승 — 전투를 주사위 한 판으로 접지 않으므로."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "현재 레퍼런스 게임은 CK3와 노랜드로 제한하며, 턴제 전투가 포함된 오픈소스 작품을 현재 레퍼런스로 채택하지 않는다."
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "| 현재 레퍼런스 | CK3 | 인물 중심 대전략 |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "| 현재 레퍼런스 | 노랜드 | 개인 판정 전투 |"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "- [크루세이더 킹즈 3](/gdd/references/ref-crusader-kings-3/) — 인물 중심 대전략 (계승·왕조·전쟁)"
+  },
+  {
+   "document": "doc.Game-References",
+   "field": "body_ko_md",
+   "sentence": "- 노랜드 — 개인 판정 전투와 정착·관계 운영"
+  },
+  {
+   "document": "doc.Home",
+   "field": "body_md",
+   "sentence": "A Crusader Kings layer over Joseon and 2026 offices |"
+  },
+  {
+   "document": "doc.Online-User-Journey",
+   "field": "body_md",
+   "sentence": "If a valid designated successor exists at the moment of death, play continues as that figure in the same world; if not, that play is game over | Succession, Name Roster, World Ledger, Dynasty and Vassal Politics | The local archive is kept."
+  },
+  {
+   "document": "doc.Online-User-Journey",
+   "field": "body_md",
+   "sentence": "Rank follows the per-title order of dynasty and vassal politics, and local custom, doctrine, confirmation, and disputes."
+  },
+  {
+   "document": "doc.Online-User-Journey",
+   "field": "body_ko_md",
+   "sentence": "사망 순간 유효한 지정 후계자가 있으면 같은 월드에서 그 인물로 계속하고, 없으면 해당 플레이가 게임오버다 | 후계, 이름 로스터, 세계 원장, 왕조와 봉신 정치 | 로컬 아카이브는 유지."
+  },
+  {
+   "document": "doc.Online-User-Journey",
+   "field": "body_ko_md",
+   "sentence": "작위는 왕조와 봉신 정치의 작위별 순서, 현지 관습·교리·인준·분쟁을 따른다."
+  },
+  {
+   "document": "doc.Open-Decisions",
+   "field": "body_md",
+   "sentence": "Product direction A (a standalone game) and B (an actual CK3 mod) are not yet chosen."
+  },
+  {
+   "document": "doc.Open-Decisions",
+   "field": "body_md",
+   "sentence": "This loss is a loss in the compared representations, not a verdict that it is universally impossible in the CK3 engine."
+  },
+  {
+   "document": "doc.Open-Decisions",
+   "field": "body_md",
+   "sentence": "This comparison does not change holdings, vassalage, or facility rights, and does not choose between A and B."
+  },
+  {
+   "document": "doc.Open-Decisions",
+   "field": "body_ko_md",
+   "sentence": "제품 방향 A(자체 게임)와 B(실제 CK3 모드)는 미선택이다."
+  },
+  {
+   "document": "doc.Open-Decisions",
+   "field": "body_ko_md",
+   "sentence": "이 손실은 비교한 표현의 손실이지 CK3 엔진의 보편적 불가능 판정이 아니다."
+  },
+  {
+   "document": "doc.Campaign-Loop",
+   "field": "body_md",
+   "sentence": "CK3 references are file:line citations in a separate chapter and are not Seoul rules."
+  },
+  {
+   "document": "doc.Campaign-Loop",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조는 별도 장의 file:line 근거이며 서울 규칙이 아니다."
+  },
+  {
+   "document": "doc.Campaign-Progression",
+   "field": "body_md",
+   "sentence": "| Expansion | Maintain the contracts for conflict, occupation, stabilization, integration, and vassalage."
+  },
+  {
+   "document": "doc.Campaign-Progression",
+   "field": "body_md",
+   "sentence": "Directly acquiring or controlling vassal territory outside Seoul is not a current goal."
+  },
+  {
+   "document": "doc.Campaign-Progression",
+   "field": "body_md",
+   "sentence": "| Strongholds and territory; the vassalage and succession clauses of factions and wars |"
+  },
+  {
+   "document": "doc.Campaign-Progression",
+   "field": "body_ko_md",
+   "sentence": "| 확장 | 분쟁·점령·안정화·통합 및 봉신 계약을 유지한다."
+  },
+  {
+   "document": "doc.Campaign-Progression",
+   "field": "body_ko_md",
+   "sentence": "서울 밖 봉신 영토의 직접 취득·조작은 현재 목표가 아니다."
+  },
+  {
+   "document": "doc.Campaign-Progression",
+   "field": "body_ko_md",
+   "sentence": "| 거점·영토, 세력·전쟁의 봉신·계승 조항 |"
+  },
+  {
+   "document": "doc.Campaign-Progression",
+   "field": "body_ko_md",
+   "sentence": "| 작위 데이터 | 왕국·공작령·백작령·남작령별 영역·보유자·상위 작위 입력 장소를 마련하고 위키 확정 뒤 입력한다."
+  },
+  {
+   "document": "doc.Characters-and-Persons",
+   "field": "body_md",
+   "sentence": "The references below are only CK3 structural references and not authority for the Seoul product, and the mismatched totals, coping effects, clan formula, and legacy costs are not adopted as Seoul rules."
+  },
+  {
+   "document": "doc.Characters-and-Persons",
+   "field": "body_md",
+   "sentence": "This chapter separates Seoul facts, CK3 references, and product authority."
+  },
+  {
+   "document": "doc.Characters-and-Persons",
+   "field": "body_md",
+   "sentence": "The CK3 evidence files are survey receipts from 2026-10-27 and are not build inputs."
+  },
+  {
+   "document": "doc.Characters-and-Persons",
+   "field": "body_md",
+   "sentence": "CK3 reference: mechanics-02-character-rpg.md:44-77,175-257 shows the structure of skill and experience multipliers for education traits and lifestyle/perk links."
+  },
+  {
+   "document": "doc.Characters-and-Persons",
+   "field": "body_md",
+   "sentence": "CK3 reference: mechanics-02-character-rpg.md:78-94,125-173 shows the structure of mutually exclusive personalities and stress-threshold events."
+  },
+  {
+   "document": "doc.Characters-and-Persons",
+   "field": "body_md",
+   "sentence": "The existing approved health and injury contract is not replaced by a new CK3 stress scale."
+  },
+  {
+   "document": "doc.Characters-and-Persons",
+   "field": "body_ko_md",
+   "sentence": "아래 참조는 CK3 구조 참고일 뿐 서울 제품 권한이 아니며 불일치했던 총계·코핑 효과·씨족 산식·유산 비용을 서울 규칙으로 채택하지 않는다."
+  },
+  {
+   "document": "doc.Characters-and-Persons",
+   "field": "body_ko_md",
+   "sentence": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다."
+  },
+  {
+   "document": "doc.Characters-and-Persons",
+   "field": "body_ko_md",
+   "sentence": "CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다."
+  },
+  {
+   "document": "doc.Characters-and-Persons",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-02-character-rpg.md:44-77,175-257은 교육 특성의 스킬·경험 배율과 라이프스타일/선행 링크 구조다."
+  },
+  {
+   "document": "doc.Characters-and-Persons",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-02-character-rpg.md:78-94,125-173은 상호배제 성격과 스트레스 임계 이벤트의 구조를 보인다."
+  },
+  {
+   "document": "doc.Characters-and-Persons",
+   "field": "body_ko_md",
+   "sentence": "기존 승인 건강·부상 계약을 새로운 CK3 스트레스 척도로 대체하지 않는다."
+  },
+  {
+   "document": "doc.Determinism-and-Save-Contracts",
+   "field": "body_md",
+   "sentence": "This chapter separates Seoul facts, CK3 references, and product authority."
+  },
+  {
+   "document": "doc.Determinism-and-Save-Contracts",
+   "field": "body_md",
+   "sentence": "The CK3 evidence files are survey receipts from 2026-10-27 and are not build inputs."
+  },
+  {
+   "document": "doc.Determinism-and-Save-Contracts",
+   "field": "body_md",
+   "sentence": "## 10.4 Lineage, Signatures, and CK3 as a Cautionary Example"
+  },
+  {
+   "document": "doc.Determinism-and-Save-Contracts",
+   "field": "body_md",
+   "sentence": "CK3 reference: The multiple layouts and command serialization in save-structure.md and internal-architecture-synthesis.md:74,100-104 are examples of operational cost and local codecs."
+  },
+  {
+   "document": "doc.Determinism-and-Save-Contracts",
+   "field": "body_ko_md",
+   "sentence": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다."
+  },
+  {
+   "document": "doc.Determinism-and-Save-Contracts",
+   "field": "body_ko_md",
+   "sentence": "CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다."
+  },
+  {
+   "document": "doc.Determinism-and-Save-Contracts",
+   "field": "body_ko_md",
+   "sentence": "## 10.4 계보·서명과 CK3 반면교사"
+  },
+  {
+   "document": "doc.Determinism-and-Save-Contracts",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: save-structure.md와 internal-architecture-synthesis.md:74,100-104의 다중 레이아웃·명령 직렬화는 운영 비용·국소 코덱 사례다."
+  },
+  {
+   "document": "doc.Diplomacy-and-Contracts",
+   "field": "body_md",
+   "sentence": "The references below are only CK3 structural references and not authority for the Seoul product, and the mismatched totals, coping effects, clan formula, and legacy costs are not adopted as Seoul rules."
+  },
+  {
+   "document": "doc.Diplomacy-and-Contracts",
+   "field": "body_md",
+   "sentence": "This chapter separates Seoul facts, CK3 references, and product authority."
+  },
+  {
+   "document": "doc.Diplomacy-and-Contracts",
+   "field": "body_md",
+   "sentence": "The CK3 evidence files are survey receipts from 2026-10-27 and are not build inputs."
+  },
+  {
+   "document": "doc.Diplomacy-and-Contracts",
+   "field": "body_md",
+   "sentence": "CK3 reference: depth-01-social-intrigue.md:15-43 defines sender interest, recipient acceptance, validity, and after-effects separately."
+  },
+  {
+   "document": "doc.Diplomacy-and-Contracts",
+   "field": "body_md",
+   "sentence": "CK3 reference: The stage-by-stage obligations and government-type-specific contract structures in mechanics-06-vassals-court-council.md:11-95 are reference material."
+  },
+  {
+   "document": "doc.Diplomacy-and-Contracts",
+   "field": "body_ko_md",
+   "sentence": "아래 참조는 CK3 구조 참고일 뿐 서울 제품 권한이 아니며 불일치했던 총계·코핑 효과·씨족 산식·유산 비용을 서울 규칙으로 채택하지 않는다."
+  },
+  {
+   "document": "doc.Diplomacy-and-Contracts",
+   "field": "body_ko_md",
+   "sentence": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다."
+  },
+  {
+   "document": "doc.Diplomacy-and-Contracts",
+   "field": "body_ko_md",
+   "sentence": "CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다."
+  },
+  {
+   "document": "doc.Diplomacy-and-Contracts",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: depth-01-social-intrigue.md:15-43은 발송자 흥미·수신자 수용·유효성·사후 효과를 별도로 정의한다."
+  },
+  {
+   "document": "doc.Diplomacy-and-Contracts",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-06-vassals-court-council.md:11-95의 단계별 의무와 정부형별 계약 구조는 참조다."
+  },
+  {
+   "document": "doc.Economy-and-Logistics",
+   "field": "body_md",
+   "sentence": "This chapter separates Seoul facts, CK3 references, and product authority."
+  },
+  {
+   "document": "doc.Economy-and-Logistics",
+   "field": "body_md",
+   "sentence": "The CK3 evidence files are survey receipts from 2026-10-27 and are not build inputs."
+  },
+  {
+   "document": "doc.Economy-and-Logistics",
+   "field": "body_md",
+   "sentence": "CK3 reference: The separation of cost calculation and the building-completion hook in mechanics-05-economy.md:54-98 are authoring conventions."
+  },
+  {
+   "document": "doc.Economy-and-Logistics",
+   "field": "body_md",
+   "sentence": "CK3 building costs are not copied as Seoul prices."
+  },
+  {
+   "document": "doc.Economy-and-Logistics",
+   "field": "body_md",
+   "sentence": "CK3 reference: mechanics-05-economy.md:100-156 shows the separation of holding types from the ingredients of modifiers, control, and development."
+  },
+  {
+   "document": "doc.Economy-and-Logistics",
+   "field": "body_md",
+   "sentence": "CK3 reference: The control interpolation and growth ingredients in mechanics-05-economy.md:118-153 are merely examples of curve structure and are not Seoul tax rates or overextension penalties."
+  },
+  {
+   "document": "doc.Economy-and-Logistics",
+   "field": "body_ko_md",
+   "sentence": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다."
+  },
+  {
+   "document": "doc.Economy-and-Logistics",
+   "field": "body_ko_md",
+   "sentence": "CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다."
+  },
+  {
+   "document": "doc.Economy-and-Logistics",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-05-economy.md:54-98의 비용 계산 분리·건물 완료 훅은 저작 관례다."
+  },
+  {
+   "document": "doc.Economy-and-Logistics",
+   "field": "body_ko_md",
+   "sentence": "CK3 건물 비용을 서울 가격으로 복사하지 않는다."
+  },
+  {
+   "document": "doc.Economy-and-Logistics",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-05-economy.md:100-156은 보유 유형과 수정자·통제·발전도 재료의 분리를 보인다."
+  },
+  {
+   "document": "doc.Economy-and-Logistics",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-05-economy.md:118-153의 통제 보간과 성장 재료는 곡선 구조 사례일 뿐 서울 세율·과확장 벌칙이 아니다."
+  },
+  {
+   "document": "doc.Faith-Culture-and-Knowledge",
+   "field": "body_md",
+   "sentence": "This chapter separates Seoul facts, CK3 references, and product authority."
+  },
+  {
+   "document": "doc.Faith-Culture-and-Knowledge",
+   "field": "body_md",
+   "sentence": "The CK3 evidence files are survey receipts from 2026-10-27 and are not build inputs."
+  },
+  {
+   "document": "doc.Faith-Culture-and-Knowledge",
+   "field": "body_md",
+   "sentence": "CK3 reference: The doctrines, choice eligibility, modifiers, and rituals in mechanics-08-faith-culture.md:11-125 are the structure of that installed version."
+  },
+  {
+   "document": "doc.Faith-Culture-and-Knowledge",
+   "field": "body_md",
+   "sentence": "CK3 reference: The culture composition, acceptance, fusion, and conversion in mechanics-08-faith-culture.md:127-218 are structural references, and ethnic/regional names or acceptance values are not automatically assigned to Seoul's political organizations."
+  },
+  {
+   "document": "doc.Faith-Culture-and-Knowledge",
+   "field": "body_md",
+   "sentence": "CK3 reference: The era eligibility, innovation probability, and progress accumulation in mechanics-08-faith-culture.md:129-207 are separate ingredients."
+  },
+  {
+   "document": "doc.Faith-Culture-and-Knowledge",
+   "field": "body_ko_md",
+   "sentence": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다."
+  },
+  {
+   "document": "doc.Faith-Culture-and-Knowledge",
+   "field": "body_ko_md",
+   "sentence": "CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다."
+  },
+  {
+   "document": "doc.Faith-Culture-and-Knowledge",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-08-faith-culture.md:11-125의 교리·선택 자격·수정자·의례는 해당 설치본의 구조다."
+  },
+  {
+   "document": "doc.Faith-Culture-and-Knowledge",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-08-faith-culture.md:127-218의 문화 구성·수용·융합·전환은 구조 참고이며 민족/지역 이름이나 수용 수치를 서울 정치 조직으로 자동 배정하지 않는다."
+  },
+  {
+   "document": "doc.Faith-Culture-and-Knowledge",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-08-faith-culture.md:129-207의 시대 자격과 혁신 확률·진행 누적은 분리된 재료다."
+  },
+  {
+   "document": "doc.Game-Logic-Principles",
+   "field": "body_md",
+   "sentence": "This chapter separates Seoul facts, CK3 references, and product authority."
+  },
+  {
+   "document": "doc.Game-Logic-Principles",
+   "field": "body_md",
+   "sentence": "The CK3 evidence files are survey receipts from 2026-10-27 and are not build inputs."
+  },
+  {
+   "document": "doc.Game-Logic-Principles",
+   "field": "body_md",
+   "sentence": "CK3 references distinguish the installed version's static scripts [S], defines [D], decompilation [B], observation [O], and inference."
+  },
+  {
+   "document": "doc.Game-Logic-Principles",
+   "field": "body_md",
+   "sentence": "## 0.3 Scope of Reading CK3"
+  },
+  {
+   "document": "doc.Game-Logic-Principles",
+   "field": "body_md",
+   "sentence": "CK3 reference: The three-layer overview at internal-architecture-synthesis.md:18-56 is an explanatory model [INFERENCE], not a complete call graph."
+  },
+  {
+   "document": "doc.Game-Logic-Principles",
+   "field": "body_ko_md",
+   "sentence": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다."
+  },
+  {
+   "document": "doc.Game-Logic-Principles",
+   "field": "body_ko_md",
+   "sentence": "CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다."
+  },
+  {
+   "document": "doc.Game-Logic-Principles",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조는 설치본의 정적 스크립트[S]·define[D]·역컴파일[B]·관찰[O]·추론을 구분한다."
+  },
+  {
+   "document": "doc.Game-Logic-Principles",
+   "field": "body_ko_md",
+   "sentence": "## 0.3 CK3를 읽는 범위"
+  },
+  {
+   "document": "doc.Game-Logic-Principles",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: internal-architecture-synthesis.md:18-56의 삼층 개관은 설명 모델[INFERENCE]이지 전체 호출 그래프가 아니다."
+  },
+  {
+   "document": "doc.Hero-Squads-and-Time-Based-Movement",
+   "field": "body_ko_md",
+   "sentence": "| 사용자 확정 | 1,004명은 영웅 인물, 직업별 클래스와 특성, 전투·지원·치유·현실 원인의 마법 체감, 외교·암살·방해 공작·정보 활동 |"
+  },
+  {
+   "document": "doc.Hero-Squads-and-Time-Based-Movement",
+   "field": "body_ko_md",
+   "sentence": "| 독립 요원 | `IndependentAgent` | 병졸을 데리지 않고 외교·암살·방해 공작·정보 활동을 수행하는 영웅 |"
+  },
+  {
+   "document": "doc.Hero-Squads-and-Time-Based-Movement",
+   "field": "body_ko_md",
+   "sentence": "| 척후 | 정찰, 경로 통제, 은밀 공작 | 길·위험·시설 정보를 드러내고 조우 조건을 바꾼다 |"
+  },
+  {
+   "document": "doc.Hero-Squads-and-Time-Based-Movement",
+   "field": "body_ko_md",
+   "sentence": "| 방해 공작 | 노선·시설·보급·피지컬 에이아이 인터페이스의 방해 또는 확보 | 자산 상태, 증거, 수리·대응 경로 |"
+  },
+  {
+   "document": "doc.Hero-Squads-and-Time-Based-Movement",
+   "field": "body_ko_md",
+   "sentence": "강한 전투 영웅이 자동으로 외교·암살·방해 공작·정보 활동에 능한 것은 아니다."
+  },
+  {
+   "document": "doc.Implementation-Mapping",
+   "field": "body_md",
+   "sentence": "This chapter separates Seoul facts, CK3 references, and product authority."
+  },
+  {
+   "document": "doc.Implementation-Mapping",
+   "field": "body_md",
+   "sentence": "The CK3 evidence files are survey receipts from 2026-10-27 and are not build inputs."
+  },
+  {
+   "document": "doc.Implementation-Mapping",
+   "field": "body_md",
+   "sentence": "CK3 reference: the separation of coefficients, structure, and narrative in internal-architecture-synthesis.md:95-104 and mechanics-05-economy.md:54-95 is an optional authoring convention."
+  },
+  {
+   "document": "doc.Implementation-Mapping",
+   "field": "body_md",
+   "sentence": "CK3 reference: the console registration and gating in binary-rea-04-decompiled.md:328-386 are an investigation method."
+  },
+  {
+   "document": "doc.Implementation-Mapping",
+   "field": "body_ko_md",
+   "sentence": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다."
+  },
+  {
+   "document": "doc.Implementation-Mapping",
+   "field": "body_ko_md",
+   "sentence": "CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다."
+  },
+  {
+   "document": "doc.Implementation-Mapping",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: internal-architecture-synthesis.md:95-104 및 mechanics-05-economy.md:54-95의 계수/구조/서사 분리는 선택적 저작 관례다."
+  },
+  {
+   "document": "doc.Implementation-Mapping",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: binary-rea-04-decompiled.md:328-386의 콘솔 등록·게이트는 조사 방법이다."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_md",
+   "sentence": "The references below are only CK3 structural references and not authority for the Seoul product, and the mismatched totals, coping effects, clan formula, and legacy costs are not adopted as Seoul rules."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_md",
+   "sentence": "This chapter separates Seoul facts, CK3 references, and product authority."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_md",
+   "sentence": "The CK3 evidence files are survey receipts from 2026-10-27 and are not build inputs."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_md",
+   "sentence": "CK3 reference: the contract groups and tier trees in mechanics-06-vassals-court-council.md:11-95 and depth-02-power-structures.md:178-206 are references for expressing rights."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_md",
+   "sentence": "## 3.3 Grants, Delegation, Revocation, and Vassal Contracts"
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_md",
+   "sentence": "CK3 reference: depth-02-power-structures.md:289-295 is a case that distinguishes negotiation stages from separate checkbox-style rights."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_md",
+   "sentence": "Product authority: Seoul's policies and formulas for tribute, vassalage, delegation, revocation, and ownership transfer are institutionally undecided."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_md",
+   "sentence": "CK3 reference: the position, task, and competence fields in mechanics-06-vassals-court-council.md:116-177,193-226 and the task schema in depth-02-power-structures.md:407-493 are references for separating positions from task progress."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_md",
+   "sentence": "CK3 reference: mechanics-07-succession.md:11-82,144-209 and depth-02-power-structures.md:297-406 distinguish law settings, electors, candidate scores, and designated candidates."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_md",
+   "sentence": "Product authority: Seoul's succession, election system, and asset inheritance policies are institutionally undecided; the CK3 dynasty legacy track totals are excluded because of an independent verification mismatch."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_md",
+   "sentence": "## Corrected and Verified CK3 Contract Arithmetic, Legacies, and Law Groups"
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_md",
+   "sentence": "CK3 reference only: depth-verification-20261027.md:1871-1875 confirms, for the clan contract, the sequence of competence a=0..4 preceding add → temporary value storage → branch add."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_ko_md",
+   "sentence": "아래 참조는 CK3 구조 참고일 뿐 서울 제품 권한이 아니며 불일치했던 총계·코핑 효과·씨족 산식·유산 비용을 서울 규칙으로 채택하지 않는다."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_ko_md",
+   "sentence": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_ko_md",
+   "sentence": "CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-06-vassals-court-council.md:11-95 및 depth-02-power-structures.md:178-206의 계약그룹·단계 트리는 권리 표현의 참고다."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_ko_md",
+   "sentence": "## 3.3 수여·위임·회수·봉신 계약"
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: depth-02-power-structures.md:289-295는 협상 단계와 별도 체크형 권리의 구분 사례다."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_ko_md",
+   "sentence": "제품 권한: 서울 공납·봉신·위임·회수·소유권 이전 정책과 산식은 제도 미정이다."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-06-vassals-court-council.md:116-177,193-226의 직위·업무·역량 필드와 depth-02-power-structures.md:407-493의 업무 스키마는 직위와 작업 진행을 분리하는 참조다."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-07-succession.md:11-82,144-209와 depth-02-power-structures.md:297-406은 법 설정·선거인·후보 점수·임명 후보를 구분한다."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_ko_md",
+   "sentence": "제품 권한: 서울 승계·선거 제도·자산 상속 정책은 제도 미정; CK3 가문 유산 트랙 총계는 독립검증 불일치로 제외한다."
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_ko_md",
+   "sentence": "## 정정 검증된 CK3 계약 산술·유산·법군"
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조만: depth-verification-20261027.md:1871-1875는 씨족 계약의 역량 a=0..4 선행 add→임시값 저장→분기 add를 확인한다."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_md",
+   "sentence": "The references below are only CK3 structural references and not authority for the Seoul product, and the mismatched totals, coping effects, clan formula, and legacy costs are not adopted as Seoul rules."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_md",
+   "sentence": "This chapter separates Seoul facts, CK3 references, and product authority."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_md",
+   "sentence": "The CK3 evidence files are survey receipts from 2026-10-27 and are not build inputs."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_md",
+   "sentence": "CK3 reference: depth-01-social-intrigue.md:1205-1255 is a static linkage of corresponding relationships, mutual exclusion, relationship aliases, and memory events."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_md",
+   "sentence": "CK3 reference: depth-01-social-intrigue.md:850-908 is a case that separates the display, validation, acceptance, and after-effects of marriage interactions."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_md",
+   "sentence": "Product authority: Seoul's marriage, adoption, and kinship rights and its house system are institutionally undecided, and CK3 candidate eligibility and hook bonuses are not carried over."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_md",
+   "sentence": "CK3 reference: mechanics-03-schemes.md:11-173,187-255 separately defines progress goals, success-chance ingredients, secrecy, agents, and defense."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_md",
+   "sentence": "Phase lengths, success caps, and discovery coefficients are CK3 values, not Seoul figures."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_md",
+   "sentence": "The assassination, sabotage, and intelligence roles of approved independent agents do not imply adoption of the CK3 scheme engine."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_md",
+   "sentence": "CK3 reference: the visibility, eligibility, dispatch, acceptance, and effect chain at depth-01-social-intrigue.md:15-43, and the duration, decay, stacking, and punishment-reason fields at :1109-1126, are structural references."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_md",
+   "sentence": "## Corrected and Verified CK3 Social Inventory"
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_md",
+   "sentence": "CK3 reference only: depth-verification-20261027.md:1865-1870,1883-1888 confirms 48 hook declarations (including tests), secrets 19=14+2+3, direct opinion 74 txt/1624 declarations and recursive 75 txt/1630 declarations, and 72 crime/prison opinion declarations."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_ko_md",
+   "sentence": "아래 참조는 CK3 구조 참고일 뿐 서울 제품 권한이 아니며 불일치했던 총계·코핑 효과·씨족 산식·유산 비용을 서울 규칙으로 채택하지 않는다."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_ko_md",
+   "sentence": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_ko_md",
+   "sentence": "CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: depth-01-social-intrigue.md:1205-1255는 대응 관계·상호배제·관계 별칭·기억 이벤트의 정적 연결이다."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: depth-01-social-intrigue.md:850-908은 혼인 상호작용의 표시·검증·수용·사후 효과를 분리하는 사례다."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_ko_md",
+   "sentence": "제품 권한: 서울의 혼인·양자·친족 권리와 가문 제도는 제도 미정이며 CK3 후보 자격·훅 보너스를 이전하지 않는다."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-03-schemes.md:11-173,187-255에서 진행 목표·성공률 재료·비밀유지·요원·방어를 별도 정의한다."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_ko_md",
+   "sentence": "단계 길이·성공 상한·발각 계수는 CK3 값이며 서울 수치가 아니다."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_ko_md",
+   "sentence": "승인된 독립 요원의 암살·방해·정보 역할이 CK3 scheme 엔진 채택을 뜻하지 않는다."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: depth-01-social-intrigue.md:15-43의 가시성·자격·발송·수용·효과 체인과 :1109-1126의 지속·감쇠·누적·처벌 사유 필드는 구조 참고다."
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_ko_md",
+   "sentence": "## 정정 검증된 CK3 사회 인벤토리"
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조만: depth-verification-20261027.md:1865-1870,1883-1888은 훅 48선언(테스트 포함), 비밀 19=14+2+3, 의견 직속 74txt/1624선언·재귀75txt/1630선언, crime/prison 의견72선언을 확인한다."
+  },
+  {
+   "document": "doc.Rules-FactionsWarfare",
+   "field": "body_md",
+   "sentence": "### RWARFARE-38 Vassal Contract"
+  },
+  {
+   "document": "doc.Rules-FactionsWarfare",
+   "field": "body_md",
+   "sentence": "| `west-sluice` | Requires water allocation and tribute rites from vassals as clauses, and attaches a performance record to the designated will |"
+  },
+  {
+   "document": "doc.Rules-FactionsWarfare",
+   "field": "body_md",
+   "sentence": "| `north-refuge` | Rejects vassals bound by forced-service clauses, and adoptees and congregation members may take precedence over blood kin |"
+  },
+  {
+   "document": "doc.Rules-FactionsWarfare",
+   "field": "body_md",
+   "sentence": "- Do not allow a vassal contract to be established without a faith slot and a ritual calendar."
+  },
+  {
+   "document": "doc.Rules-FactionsWarfare",
+   "field": "body_ko_md",
+   "sentence": "### RWARFARE-38 봉신 계약"
+  },
+  {
+   "document": "doc.Rules-FactionsWarfare",
+   "field": "body_ko_md",
+   "sentence": "| `west-sluice` | 봉신에게 물 할당과 헌납례를 조항으로 요구하고 지정 유언에 이행 기록을 붙임 |"
+  },
+  {
+   "document": "doc.Rules-FactionsWarfare",
+   "field": "body_ko_md",
+   "sentence": "| `north-refuge` | 강제복무 조항이 있는 봉신을 거부하고 양자·신도가 혈족보다 앞설 수 있음 |"
+  },
+  {
+   "document": "doc.Rules-FactionsWarfare",
+   "field": "body_ko_md",
+   "sentence": "- 신앙 칸과 의례 달력 없는 봉신 계약을 성립시키지 말 것"
+  },
+  {
+   "document": "doc.Save-and-Determinism",
+   "field": "body_md",
+   "sentence": "CK3 references are file:line citations in a separate chapter and are not Seoul rules."
+  },
+  {
+   "document": "doc.Save-and-Determinism",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조는 별도 장의 file:line 근거이며 서울 규칙이 아니다."
+  },
+  {
+   "document": "doc.Strategy-Battle-Roundtrip",
+   "field": "body_md",
+   "sentence": "CK3 references are file:line citations in a separate chapter and are not Seoul rules."
+  },
+  {
+   "document": "doc.Strategy-Battle-Roundtrip",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조는 별도 장의 file:line 근거이며 서울 규칙이 아니다."
+  },
+  {
+   "document": "doc.Time-Pulses-and-Events",
+   "field": "body_md",
+   "sentence": "The references below are only CK3 structural references and not authority for the Seoul product, and the mismatched totals, coping effects, clan formula, and legacy costs are not adopted as Seoul rules."
+  },
+  {
+   "document": "doc.Time-Pulses-and-Events",
+   "field": "body_md",
+   "sentence": "This chapter separates Seoul facts, CK3 references, and product authority."
+  },
+  {
+   "document": "doc.Time-Pulses-and-Events",
+   "field": "body_md",
+   "sentence": "The CK3 evidence files are survey receipts from 2026-10-27 and are not build inputs."
+  },
+  {
+   "document": "doc.Time-Pulses-and-Events",
+   "field": "body_md",
+   "sentence": "CK3 reference: mechanics-01-time-and-pulse.md:11-43,66-181,183-210 covers named on_actions, ID-based distribution of trigger days, AI skipping, and monthly hook distribution."
+  },
+  {
+   "document": "doc.Time-Pulses-and-Events",
+   "field": "body_md",
+   "sentence": "CK3 reference: internal-architecture-synthesis.md:63-76 is a map of local functions and does not prove an end-to-end happens-before chain from daily to monthly to event to save."
+  },
+  {
+   "document": "doc.Time-Pulses-and-Events",
+   "field": "body_ko_md",
+   "sentence": "아래 참조는 CK3 구조 참고일 뿐 서울 제품 권한이 아니며 불일치했던 총계·코핑 효과·씨족 산식·유산 비용을 서울 규칙으로 채택하지 않는다."
+  },
+  {
+   "document": "doc.Time-Pulses-and-Events",
+   "field": "body_ko_md",
+   "sentence": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다."
+  },
+  {
+   "document": "doc.Time-Pulses-and-Events",
+   "field": "body_ko_md",
+   "sentence": "CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다."
+  },
+  {
+   "document": "doc.Time-Pulses-and-Events",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-01-time-and-pulse.md:11-43,66-181,183-210은 명명 on_action·ID 기반 발동일 분산·AI 스킵·월별 훅 분산이다."
+  },
+  {
+   "document": "doc.Time-Pulses-and-Events",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: internal-architecture-synthesis.md:63-76은 국소 기능 지도이며 일일→월간→이벤트→저장의 종단 happens-before를 입증하지 않았다."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_md",
+   "sentence": "The references below are only CK3 structural references and not authority for the Seoul product, and the mismatched totals, coping effects, clan formula, and legacy costs are not adopted as Seoul rules."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_md",
+   "sentence": "This chapter separates Seoul facts, CK3 references, and product authority."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_md",
+   "sentence": "The CK3 evidence files are survey receipts from 2026-10-27 and are not build inputs."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_md",
+   "sentence": "CK3 reference: depth-03-activities-travel-landless.md:273-375,475-482 covers the boundary between destination planning and the pathfinding engine, plus special adjacency data."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_md",
+   "sentence": "CK3 reference: the no-event probability inputs at depth-03-activities-travel-landless.md:319-346,516-527 differ from the effective probability of harmful events."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_md",
+   "sentence": "CK3 reference: the activity eligibility, invitations, arrival, phases, invalidation, and success rolls at depth-03-activities-travel-landless.md:124-174,180-271 are a structure in which location and companions bind the content."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_md",
+   "sentence": "CK3 reference: the camps, contracts, food, and entry/exit at depth-03-activities-travel-landless.md:376-437 are an example of a landless cycle."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_md",
+   "sentence": "## Corrected and Verified CK3 Activity and Travel Inventory"
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_md",
+   "sentence": "CK3 reference only: depth-verification-20261027.md:1884-1887 recounted 20 intents (txt), 24 travel events (txt), 36 default contract declarations, and 20 POI declarations (19 default + 1 PAM)."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_ko_md",
+   "sentence": "아래 참조는 CK3 구조 참고일 뿐 서울 제품 권한이 아니며 불일치했던 총계·코핑 효과·씨족 산식·유산 비용을 서울 규칙으로 채택하지 않는다."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_ko_md",
+   "sentence": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_ko_md",
+   "sentence": "CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: depth-03-activities-travel-landless.md:273-375,475-482는 목적지 계획과 경로 탐색 엔진의 경계 및 특수 인접 데이터다."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: depth-03-activities-travel-landless.md:319-346,516-527의 무이벤트 확률 입력은 실효 유해사건 확률과 다르다."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: depth-03-activities-travel-landless.md:124-174,180-271의 활동 자격·초대·도착·위상·무효화·성공 굴림은 위치와 동행자가 콘텐츠를 묶는 구조다."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: depth-03-activities-travel-landless.md:376-437의 캠프·계약·식량·진입/이탈은 무영지 순환의 사례다."
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_ko_md",
+   "sentence": "## 정정 검증된 CK3 활동·여행 인벤토리"
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조만: depth-verification-20261027.md:1884-1887은 intents20txt·travel events24txt·기본 계약36선언, POI 기본19+PAM1=20선언을 재계수했다."
+  },
+  {
+   "document": "doc.Travel-and-Encounters",
+   "field": "body_md",
+   "sentence": "CK3 references are file:line citations in a separate chapter and are not Seoul rules."
+  },
+  {
+   "document": "doc.Travel-and-Encounters",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조는 별도 장의 file:line 근거이며 서울 규칙이 아니다."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_md",
+   "sentence": "The references below are only CK3 structural references and not authority for the Seoul product, and the mismatched totals, coping effects, clan formula, and legacy costs are not adopted as Seoul rules."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_md",
+   "sentence": "This chapter separates Seoul facts, CK3 references, and product authority."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_md",
+   "sentence": "The CK3 evidence files are survey receipts from 2026-10-27 and are not build inputs."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_md",
+   "sentence": "CK3 reference: the troop types, phases, and commander coefficients in mechanics-04-war-and-combat.md:96-211 are structural references only, not Seoul's unit types or figures."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_md",
+   "sentence": "CK3 reference: mechanics-04-war-and-combat.md:11-95,213-265 and depth-04-war-and-binary.md:521-900 separate war eligibility, outcome hooks, siege capture candidates, and truces."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_md",
+   "sentence": "CK3 reference: the 126 CBs and 111 MAAs in depth-04-war-and-binary.md:17-268,901-1295 are inventories extracted from structural fields, not a full semantic verification of conditions and effects."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_md",
+   "sentence": "CK3 reference: the queue functions in depth-04-war-and-binary.md:1317-1426 create, submit, and insert; they are not a pop/execute consumption loop."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_md",
+   "sentence": "The GAME_SPEED_TICKS values of 2/1/0.5/0.2/0 seconds per day are CK3 thresholds, not Seoul's laws of time."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_ko_md",
+   "sentence": "아래 참조는 CK3 구조 참고일 뿐 서울 제품 권한이 아니며 불일치했던 총계·코핑 효과·씨족 산식·유산 비용을 서울 규칙으로 채택하지 않는다."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_ko_md",
+   "sentence": "이 장은 서울 사실·CK3 참조·제품 권한을 분리한다."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_ko_md",
+   "sentence": "CK3 증거 파일은 2026-10-27 조사 영수증이며 빌드 입력이 아니다."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-04-war-and-combat.md:96-211의 병과·국면·지휘관 계수는 구조 참고일 뿐 서울 병종과 수치가 아니다."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: mechanics-04-war-and-combat.md:11-95,213-265와 depth-04-war-and-binary.md:521-900은 전쟁 자격·결과 훅·공성 포획 후보·휴전을 분리한다."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: depth-04-war-and-binary.md:17-268,901-1295의 CB 126개·MAA 111개는 구조 필드 추출 인벤토리이지 조건·효과 전수 의미 검증이 아니다."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조: depth-04-war-and-binary.md:1317-1426의 큐 함수는 생성·제출·삽입이며 pop/execute 소비 루프가 아니다."
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "field": "body_ko_md",
+   "sentence": "GAME_SPEED_TICKS의 2/1/0.5/0.2/0 초/일은 CK3 임계값이며 서울 시간 법칙이 아니다."
+  },
+  {
+   "document": "doc.Warfare-and-Sieges",
+   "field": "body_md",
+   "sentence": "CK3 references are file:line citations in a separate chapter and are not Seoul rules."
+  },
+  {
+   "document": "doc.Warfare-and-Sieges",
+   "field": "body_ko_md",
+   "sentence": "CK3 참조는 별도 장의 file:line 근거이며 서울 규칙이 아니다."
+  },
+  {
+   "document": "doc.Archify-D01",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d01.b11.researchLimits.p​aths[0] | \"../task-24/cells/ck3/D0​1/verified-input-r2/repo​rt.md\" |"
+  },
+  {
+   "document": "doc.Archify-D01",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d01.b11.researchLimits.p​aths[0] | \"../task-24/cells/ck3/D0​1/verified-input-r2/repo​rt.md\" |"
+  },
+  {
+   "document": "doc.Archify-D02",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d02.b11.sourceClaims[2].​source | \"task-24/cell-verificati​on/d02-norland-d03-ck3/r​eport.md\" |"
+  },
+  {
+   "document": "doc.Archify-D02",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d02.b11.sourceClaims[2].​source | \"task-24/cell-verificati​on/d02-norland-d03-ck3/r​eport.md\" |"
+  },
+  {
+   "document": "doc.Archify-D03",
+   "field": "body_md",
+   "sentence": "| Pending — Excluded from Operational Path | d03.b9.proposalHeld[6].f​ields[0] | \"CK3/Norland native full algorithms\" |"
+  },
+  {
+   "document": "doc.Archify-D03",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d03.b11.sourceClaims[2].​id | \"CK3-D03\" |"
+  },
+  {
+   "document": "doc.Archify-D03",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d03.b11.sourceClaims[2].​path | \"../task-24/cells/ck3/D0​3/verified-input-r2/rows​.json\" |"
+  },
+  {
+   "document": "doc.Archify-D03",
+   "field": "body_ko_md",
+   "sentence": "| 미결 — 운용 경로 제외 | d03.b9.proposalHeld[6].f​ields[0] | \"CK3/Norland native full algorithms\" |"
+  },
+  {
+   "document": "doc.Archify-D03",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d03.b11.sourceClaims[2].​id | \"CK3-D03\" |"
+  },
+  {
+   "document": "doc.Archify-D03",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d03.b11.sourceClaims[2].​path | \"../task-24/cells/ck3/D0​3/verified-input-r2/rows​.json\" |"
+  },
+  {
+   "document": "doc.Archify-D04",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d04.b11.sourceClaims[4].​id | \"CK3-D04\" |"
+  },
+  {
+   "document": "doc.Archify-D04",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d04.b11.sourceClaims[4].​source | \"task-24/cells/ck3/D04/v​erified-input-r2/report.​md\" |"
+  },
+  {
+   "document": "doc.Archify-D04",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d04.b11.sourceClaims[5].​source | \"task-24/cells/norland/D​04/verified-input-r1/rep​ort.md\" |"
+  },
+  {
+   "document": "doc.Archify-D04",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d04.b11.sourceClaims[4].​id | \"CK3-D04\" |"
+  },
+  {
+   "document": "doc.Archify-D04",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d04.b11.sourceClaims[4].​source | \"task-24/cells/ck3/D04/v​erified-input-r2/report.​md\" |"
+  },
+  {
+   "document": "doc.Archify-D04",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d04.b11.sourceClaims[5].​source | \"task-24/cells/norland/D​04/verified-input-r1/rep​ort.md\" |"
+  },
+  {
+   "document": "doc.Archify-D06",
+   "field": "body_md",
+   "sentence": "| Pending — Excluded from Operational Path | d06.b9.proposalHeld[10].​authority | \"Task24 CK3/Norland D06 dossiers\" |"
+  },
+  {
+   "document": "doc.Archify-D06",
+   "field": "body_md",
+   "sentence": "| Pending — Excluded from Operational Path | d06.b9.proposalHeld[10].​held | \"All CK3/Norland numeric parameters and hidden/native algorithm inferences as Seoul values.\" |"
+  },
+  {
+   "document": "doc.Archify-D06",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d06.b11.sourceComparison​s.ck3 | \"Documentary parameters and fragments remain comparison evidence."
+  },
+  {
+   "document": "doc.Archify-D06",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d06.b11.sourceComparison​s.norland | \"Road and status modifiers are mixed historical revisions."
+  },
+  {
+   "document": "doc.Archify-D06",
+   "field": "body_ko_md",
+   "sentence": "| 미결 — 운용 경로 제외 | d06.b9.proposalHeld[10].​authority | \"Task24 CK3/Norland D06 dossiers\" |"
+  },
+  {
+   "document": "doc.Archify-D06",
+   "field": "body_ko_md",
+   "sentence": "| 미결 — 운용 경로 제외 | d06.b9.proposalHeld[10].​held | \"All CK3/Norland numeric parameters and hidden/native algorithm inferences as Seoul values.\" |"
+  },
+  {
+   "document": "doc.Archify-D06",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d06.b11.sourceComparison​s.ck3 | \"Documentary parameters and fragments remain comparison evidence."
+  },
+  {
+   "document": "doc.Archify-D06",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d06.b11.sourceComparison​s.norland | \"Road and status modifiers are mixed historical revisions."
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_md",
+   "sentence": "Never import CK3 +/-100 or Norland ranges as Seoul bounds.\" |"
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_md",
+   "sentence": "Never import CK3 +/-100 or Norland ranges as Seoul bounds.\" |"
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_md",
+   "sentence": "| Pending — Excluded from Operational Path | d07.b9.proposalHeld[1].r​eason | \"Only the schema separation is approved; CK3/Norland durations are comparative values, not Seoul adoption.\" |"
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d07.b11.sourceClaims[1].​source | \"task-24/cells/ck3/D07/v​erified-input-r1/report.​md\" |"
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d07.b11.sourceClaims[1].​limit | \"CK3 opinion, memory and successor values are not Seoul coefficients.\" |"
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d07.b11.sourceClaims[2].​source | \"task-24/cells/norland/D​07/verified-input-r1/rep​ort.md\" |"
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d07.b11.sourceClaims[2].​limit | \"Norland mood, loyalty, relation and cadence values are not Seoul coefficients.\" |"
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_ko_md",
+   "sentence": "Never import CK3 +/-100 or Norland ranges as Seoul bounds.\" |"
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_ko_md",
+   "sentence": "Never import CK3 +/-100 or Norland ranges as Seoul bounds.\" |"
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_ko_md",
+   "sentence": "| 미결 — 운용 경로 제외 | d07.b9.proposalHeld[1].r​eason | \"Only the schema separation is approved; CK3/Norland durations are comparative values, not Seoul adoption.\" |"
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d07.b11.sourceClaims[1].​source | \"task-24/cells/ck3/D07/v​erified-input-r1/report.​md\" |"
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d07.b11.sourceClaims[1].​limit | \"CK3 opinion, memory and successor values are not Seoul coefficients.\" |"
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d07.b11.sourceClaims[2].​source | \"task-24/cells/norland/D​07/verified-input-r1/rep​ort.md\" |"
+  },
+  {
+   "document": "doc.Archify-D07",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d07.b11.sourceClaims[2].​limit | \"Norland mood, loyalty, relation and cadence values are not Seoul coefficients.\" |"
+  },
+  {
+   "document": "doc.Archify-D08",
+   "field": "body_md",
+   "sentence": "| Pending — Excluded from Operational Path | d08.b9.proposalHeld[14].​scope | \"CK3 prestige/piety/fertility​ values and Norland relationship/gold/timer/​age values.\" |"
+  },
+  {
+   "document": "doc.Archify-D08",
+   "field": "body_md",
+   "sentence": "| Pending — Excluded from Operational Path | d08.b9.proposalHeld[14].​reason | \"Comparison evidence is not Seoul authority and historical Norland thresholds conflict.\" |"
+  },
+  {
+   "document": "doc.Archify-D08",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d08.b11.sourceComparison​s.ck3 | \"Guarded prestige/piety/fertility​ expressions and betrothal writers are documentary comparison only."
+  },
+  {
+   "document": "doc.Archify-D08",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d08.b11.sourceComparison​s.norland | \"Documented relationship guards, migration/gold/relations​hip effects and historical timers are comparison only."
+  },
+  {
+   "document": "doc.Archify-D08",
+   "field": "body_ko_md",
+   "sentence": "| 미결 — 운용 경로 제외 | d08.b9.proposalHeld[14].​scope | \"CK3 prestige/piety/fertility​ values and Norland relationship/gold/timer/​age values.\" |"
+  },
+  {
+   "document": "doc.Archify-D08",
+   "field": "body_ko_md",
+   "sentence": "| 미결 — 운용 경로 제외 | d08.b9.proposalHeld[14].​reason | \"Comparison evidence is not Seoul authority and historical Norland thresholds conflict.\" |"
+  },
+  {
+   "document": "doc.Archify-D08",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d08.b11.sourceComparison​s.ck3 | \"Guarded prestige/piety/fertility​ expressions and betrothal writers are documentary comparison only."
+  },
+  {
+   "document": "doc.Archify-D08",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d08.b11.sourceComparison​s.norland | \"Documented relationship guards, migration/gold/relations​hip effects and historical timers are comparison only."
+  },
+  {
+   "document": "doc.Archify-D09",
+   "field": "body_md",
+   "sentence": "| Pending — Excluded from Operational Path | d09.b9.proposalHeld[3].r​eason | \"No Seoul approval; CK3/Norland timings and probabilities are documentary non-equivalents.\" |"
+  },
+  {
+   "document": "doc.Archify-D09",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[3].​source | \"task-24/cells/ck3/D09/c​urrent-route-consumer-r3​/DoneClaim.json\" |"
+  },
+  {
+   "document": "doc.Archify-D09",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[4].​source | \"task-24/cells/norland/D​09/verified-input-r1/Don​eClaim.json\" |"
+  },
+  {
+   "document": "doc.Archify-D09",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d09.b11.sourceClaims[4].​limit | \"No Norland rank probability, politics threshold, lord generation or turn/day conversion imported.\" |"
+  },
+  {
+   "document": "doc.Archify-D09",
+   "field": "body_ko_md",
+   "sentence": "| 미결 — 운용 경로 제외 | d09.b9.proposalHeld[3].r​eason | \"No Seoul approval; CK3/Norland timings and probabilities are documentary non-equivalents.\" |"
+  },
+  {
+   "document": "doc.Archify-D09",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[3].​source | \"task-24/cells/ck3/D09/c​urrent-route-consumer-r3​/DoneClaim.json\" |"
+  },
+  {
+   "document": "doc.Archify-D09",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[4].​source | \"task-24/cells/norland/D​09/verified-input-r1/Don​eClaim.json\" |"
+  },
+  {
+   "document": "doc.Archify-D09",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d09.b11.sourceClaims[4].​limit | \"No Norland rank probability, politics threshold, lord generation or turn/day conversion imported.\" |"
+  },
+  {
+   "document": "doc.Archify-D10",
+   "field": "body_md",
+   "sentence": "| Held — excluded from operational path | d10.b9.proposalHeld[8].h​eld | \"CK3 and Norland tiers, costs, timers, acceptance order and native algorithms remain comparison evidence only and are not imported.\" |"
+  },
+  {
+   "document": "doc.Archify-D10",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d10.b11.sourceClaims[3].​id | \"CK3-D10\" |"
+  },
+  {
+   "document": "doc.Archify-D10",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d10.b11.sourceClaims[3].​source | \"task-24/cells/ck3/D10/v​erified-input-r2\" |"
+  },
+  {
+   "document": "doc.Archify-D10",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d10.b11.sourceClaims[4].​id | \"NORLAND-D10\" |"
+  },
+  {
+   "document": "doc.Archify-D10",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d10.b11.sourceClaims[4].​source | \"task-24/cells/norland/D​10/verified-input-r1\" |"
+  },
+  {
+   "document": "doc.Archify-D10",
+   "field": "body_ko_md",
+   "sentence": "| 보류 — 운용 경로 제외 | d10.b9.proposalHeld[8].h​eld | \"CK3 and Norland tiers, costs, timers, acceptance order and native algorithms remain comparison evidence only and are not imported.\" |"
+  },
+  {
+   "document": "doc.Archify-D10",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d10.b11.sourceClaims[3].​id | \"CK3-D10\" |"
+  },
+  {
+   "document": "doc.Archify-D10",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d10.b11.sourceClaims[3].​source | \"task-24/cells/ck3/D10/v​erified-input-r2\" |"
+  },
+  {
+   "document": "doc.Archify-D10",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d10.b11.sourceClaims[4].​id | \"NORLAND-D10\" |"
+  },
+  {
+   "document": "doc.Archify-D10",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d10.b11.sourceClaims[4].​source | \"task-24/cells/norland/D​10/verified-input-r1\" |"
+  },
+  {
+   "document": "doc.Archify-D11",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d11.b11.sourceClaims[3] | \"task-24/cells/ck3/D11/v​erified-input-r2/rows.js​on\" |"
+  },
+  {
+   "document": "doc.Archify-D11",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d11.b11.sourceClaims[4] | \"task-24/cells/norland/D​11/verified-input-r2/row​s.json\" |"
+  },
+  {
+   "document": "doc.Archify-D11",
+   "field": "body_md",
+   "sentence": "No CK3 native cycle/parent rule is adopted as Seoul authority.\" |"
+  },
+  {
+   "document": "doc.Archify-D11",
+   "field": "body_ko_md",
+   "sentence": "- 공작위 한도 검사 — [작위 수여] 직접 공작위 수에 수여 대상이 공작위일 때만 1을 더한다."
+  },
+  {
+   "document": "doc.Archify-D11",
+   "field": "body_ko_md",
+   "sentence": "| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].e​xpression | \"recipientDirectDucalAft​er = recipientDirectDucalBefo​re + indicator(grantedTitleIs​Ducal); eligible iff after <= 2\" |"
+  },
+  {
+   "document": "doc.Archify-D11",
+   "field": "body_ko_md",
+   "sentence": "| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].u​nit | \"direct ducal title count\" |"
+  },
+  {
+   "document": "doc.Archify-D11",
+   "field": "body_ko_md",
+   "sentence": "| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].a​uthority | \"existing SP1 sp1.b38 limit, not new balance\" |"
+  },
+  {
+   "document": "doc.Archify-D11",
+   "field": "body_ko_md",
+   "sentence": "| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].r​ounding | \"exact integer\" |"
+  },
+  {
+   "document": "doc.Archify-D11",
+   "field": "body_ko_md",
+   "sentence": "| 운용 — 공작위 한도 검사 | d11.b9.formulaSheet[1].c​lamp | \"reject over-limit, do not silently clamp\" |"
+  },
+  {
+   "document": "doc.Archify-D11",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d11.b11.sourceClaims[3] | \"task-24/cells/ck3/D11/v​erified-input-r2/rows.js​on\" |"
+  },
+  {
+   "document": "doc.Archify-D11",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d11.b11.sourceClaims[4] | \"task-24/cells/norland/D​11/verified-input-r2/row​s.json\" |"
+  },
+  {
+   "document": "doc.Archify-D11",
+   "field": "body_ko_md",
+   "sentence": "No CK3 native cycle/parent rule is adopted as Seoul authority.\" |"
+  },
+  {
+   "document": "doc.Archify-D12",
+   "field": "body_md",
+   "sentence": "CK3 simultaneous-death order, partition rounding and candidate ties remain unverified; Norland pain 50 and ring inheritance are not Seoul rules.\" |"
+  },
+  {
+   "document": "doc.Archify-D12",
+   "field": "body_ko_md",
+   "sentence": "CK3 simultaneous-death order, partition rounding and candidate ties remain unverified; Norland pain 50 and ring inheritance are not Seoul rules.\" |"
+  },
+  {
+   "document": "doc.Archify-D13",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d13.b11.sourceClaims.ck3​ | \"documentary references only; D13-C04 ransom lower bound unresolved; no source formula adopted\" |"
+  },
+  {
+   "document": "doc.Archify-D13",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d13.b11.sourceClaims.ck3​ | \"documentary references only; D13-C04 ransom lower bound unresolved; no source formula adopted\" |"
+  },
+  {
+   "document": "doc.Archify-D14",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d14.b11.sourceLedger.com​parative | \"sources.json preserves version-qualified documentary limits; no CK3/Norland numeric import\" |"
+  },
+  {
+   "document": "doc.Archify-D14",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d14.b11.sourceLedger.com​parative | \"sources.json preserves version-qualified documentary limits; no CK3/Norland numeric import\" |"
+  },
+  {
+   "document": "doc.Archify-D15",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d15.b11.sourceClaims[4].​id | \"ck3-comparison\" |"
+  },
+  {
+   "document": "doc.Archify-D15",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d15.b11.sourceClaims[4].​source | \"/Volumes/gameWorkspace/​worktrees/seoul-kenshi/s​eoul-domain-mechanism-de​epening-20261003-d15-sou​rces/.omo/evidence/mecha​nisms/ck3/D15/reference.​md\" |"
+  },
+  {
+   "document": "doc.Archify-D15",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d15.b11.sourceClaims[5].​id | \"norland-comparison\" |"
+  },
+  {
+   "document": "doc.Archify-D15",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d15.b11.sourceClaims[5].​source | \"/Volumes/gameWorkspace/​worktrees/seoul-kenshi/s​eoul-domain-mechanism-de​epening-20261003-d15-sou​rces/.omo/evidence/mecha​nisms/norland/D15/refere​nce.md\" |"
+  },
+  {
+   "document": "doc.Archify-D15",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d15.b11.sourceClaims[4].​id | \"ck3-comparison\" |"
+  },
+  {
+   "document": "doc.Archify-D15",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d15.b11.sourceClaims[4].​source | \"/Volumes/gameWorkspace/​worktrees/seoul-kenshi/s​eoul-domain-mechanism-de​epening-20261003-d15-sou​rces/.omo/evidence/mecha​nisms/ck3/D15/reference.​md\" |"
+  },
+  {
+   "document": "doc.Archify-D15",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d15.b11.sourceClaims[5].​id | \"norland-comparison\" |"
+  },
+  {
+   "document": "doc.Archify-D15",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d15.b11.sourceClaims[5].​source | \"/Volumes/gameWorkspace/​worktrees/seoul-kenshi/s​eoul-domain-mechanism-de​epening-20261003-d15-sou​rces/.omo/evidence/mecha​nisms/norland/D15/refere​nce.md\" |"
+  },
+  {
+   "document": "doc.Archify-D16",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d16.b11.sourceClaims.CK3​ | \"Comparison evidence only; version and formula conflicts remain bounded and no source literal is adopted.\" |"
+  },
+  {
+   "document": "doc.Archify-D16",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d16.b11.sourceClaims.CK3​ | \"Comparison evidence only; version and formula conflicts remain bounded and no source literal is adopted.\" |"
+  },
+  {
+   "document": "doc.Archify-D17",
+   "field": "body_md",
+   "sentence": "| Operation — Current Edition and Action Selection | d17.b11.authority.resear​chLimit | \"Prior CK3/Norland D17 dossiers and the 2026-10-06 D17 proposal sheet are comparison evidence, not Seoul numeric authority."
+  },
+  {
+   "document": "doc.Archify-D17",
+   "field": "body_ko_md",
+   "sentence": "| 운용 — 현재 판본·행위 선택 | d17.b11.authority.resear​chLimit | \"Prior CK3/Norland D17 dossiers and the 2026-10-06 D17 proposal sheet are comparison evidence, not Seoul numeric authority."
+  },
+  {
+   "document": "doc.Archify-D18",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d18.b11.sourceGameLimits​[0].game | \"Crusader Kings III\" |"
+  },
+  {
+   "document": "doc.Archify-D18",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d18.b11.sourceGameLimits​[0].documentaryReport.pa​th | \"/Volumes/gameWorkspace/​worktrees/seoul-kenshi/s​eoul-domain-source-falsi​fication-20261004/.omo/e​vidence/mechanisms/task-​24/cells/ck3/D18/verifie​d-input-r1/report.md\" |"
+  },
+  {
+   "document": "doc.Archify-D18",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d18.b11.sourceGameLimits​[0].findings.path | \"/Volumes/gameWorkspace/​worktrees/seoul-kenshi/s​eoul-domain-source-falsi​fication-20261004/.omo/e​vidence/mechanisms/task-​24/cells/ck3/D18/verifie​d-input-r1/findings.json​\" |"
+  },
+  {
+   "document": "doc.Archify-D18",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d18.b11.sourceGameLimits​[1].game | \"Norland\" |"
+  },
+  {
+   "document": "doc.Archify-D18",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d18.b11.sourceGameLimits​[1].documentaryReport.pa​th | \"/Volumes/gameWorkspace/​worktrees/seoul-kenshi/s​eoul-domain-source-falsi​fication-20261004/.omo/e​vidence/mechanisms/task-​24/cells/norland/D18/ver​ified-input-r1/report.md​\" |"
+  },
+  {
+   "document": "doc.Archify-D18",
+   "field": "body_md",
+   "sentence": "| Historical Reference — Excluded from Operational Path | d18.b11.sourceGameLimits​[1].findings.path | \"/Volumes/gameWorkspace/​worktrees/seoul-kenshi/s​eoul-domain-source-falsi​fication-20261004/.omo/e​vidence/mechanisms/task-​24/cells/norland/D18/ver​ified-input-r1/findings.​json\" |"
+  },
+  {
+   "document": "doc.Archify-D18",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d18.b11.sourceGameLimits​[0].game | \"Crusader Kings III\" |"
+  },
+  {
+   "document": "doc.Archify-D18",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d18.b11.sourceGameLimits​[0].documentaryReport.pa​th | \"/Volumes/gameWorkspace/​worktrees/seoul-kenshi/s​eoul-domain-source-falsi​fication-20261004/.omo/e​vidence/mechanisms/task-​24/cells/ck3/D18/verifie​d-input-r1/report.md\" |"
+  },
+  {
+   "document": "doc.Archify-D18",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d18.b11.sourceGameLimits​[0].findings.path | \"/Volumes/gameWorkspace/​worktrees/seoul-kenshi/s​eoul-domain-source-falsi​fication-20261004/.omo/e​vidence/mechanisms/task-​24/cells/ck3/D18/verifie​d-input-r1/findings.json​\" |"
+  },
+  {
+   "document": "doc.Archify-D18",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d18.b11.sourceGameLimits​[1].game | \"Norland\" |"
+  },
+  {
+   "document": "doc.Archify-D18",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d18.b11.sourceGameLimits​[1].documentaryReport.pa​th | \"/Volumes/gameWorkspace/​worktrees/seoul-kenshi/s​eoul-domain-source-falsi​fication-20261004/.omo/e​vidence/mechanisms/task-​24/cells/norland/D18/ver​ified-input-r1/report.md​\" |"
+  },
+  {
+   "document": "doc.Archify-D18",
+   "field": "body_ko_md",
+   "sentence": "| 역사 참조 — 운용 경로 제외 | d18.b11.sourceGameLimits​[1].findings.path | \"/Volumes/gameWorkspace/​worktrees/seoul-kenshi/s​eoul-domain-source-falsi​fication-20261004/.omo/e​vidence/mechanisms/task-​24/cells/norland/D18/ver​ified-input-r1/findings.​json\" |"
+  },
+  {
+   "document": "doc.character-sheet-formulas",
+   "field": "body_md",
+   "sentence": "| D11 Conferral, Delegation, Revocation, Vassalage | identity; no numeric formula | appointment changes office powers, delegation preserves original holder, grant changes specified right | Country ratification/revocation and contract termination details |"
+  },
+  {
+   "document": "doc.character-sheet-formulas",
+   "field": "body_ko_md",
+   "sentence": "| D11 수여·위임·회수·봉신 | identity; 수치 식 없음 | appointment changes office powers, delegation preserves original holder, grant changes specified right | Country ratification/revocation and contract termination details |"
+  },
+  {
+   "document": "doc.Mechanism-D01",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D01",
+   "field": "body_md",
+   "sentence": "    \"ck3\": \"Task24 D01 report:4 scope-verified,6 unresolved,1 non-equivalent; no adoption of hidden source formulas.\","
+  },
+  {
+   "document": "doc.Mechanism-D01",
+   "field": "body_md",
+   "sentence": "    \"norland\": \"Task24 D01 report:39 verified,19 unresolved,1 non-equivalent; prior D01 review records five missing pinned wiki artifacts; quote/prior-audit scope is not new raw-original proof.\","
+  },
+  {
+   "document": "doc.Mechanism-D01",
+   "field": "body_md",
+   "sentence": "      \"../task-24/cells/ck3/D01/verified-input-r2/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D01",
+   "field": "body_md",
+   "sentence": "      \"../task-24/cells/norland/D01/verified-input-r2/report.md\""
+  },
+  {
+   "document": "doc.Mechanism-D01",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D01",
+   "field": "body_ko_md",
+   "sentence": "    \"ck3\": \"Task24 D01 report:4 scope-verified,6 unresolved,1 non-equivalent; no adoption of hidden source formulas.\","
+  },
+  {
+   "document": "doc.Mechanism-D01",
+   "field": "body_ko_md",
+   "sentence": "    \"norland\": \"Task24 D01 report:39 verified,19 unresolved,1 non-equivalent; prior D01 review records five missing pinned wiki artifacts; quote/prior-audit scope is not new raw-original proof.\","
+  },
+  {
+   "document": "doc.Mechanism-D01",
+   "field": "body_ko_md",
+   "sentence": "      \"../task-24/cells/ck3/D01/verified-input-r2/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D01",
+   "field": "body_ko_md",
+   "sentence": "      \"../task-24/cells/norland/D01/verified-input-r2/report.md\""
+  },
+  {
+   "document": "doc.Mechanism-D02",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D02",
+   "field": "body_md",
+   "sentence": "      \"source\": \"task-24/cell-verification/d02-norland-d03-ck3/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D02",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D02",
+   "field": "body_ko_md",
+   "sentence": "      \"source\": \"task-24/cell-verification/d02-norland-d03-ck3/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D03",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D03",
+   "field": "body_md",
+   "sentence": "        \"CK3/Norland native full algorithms\""
+  },
+  {
+   "document": "doc.Mechanism-D03",
+   "field": "body_md",
+   "sentence": "      \"id\": \"CK3-D03\","
+  },
+  {
+   "document": "doc.Mechanism-D03",
+   "field": "body_md",
+   "sentence": "      \"path\": \"../task-24/cells/ck3/D03/verified-input-r2/rows.json\","
+  },
+  {
+   "document": "doc.Mechanism-D03",
+   "field": "body_md",
+   "sentence": "      \"path\": \"../task-24/cells/norland/D03/verified-input-r1/rows.json\","
+  },
+  {
+   "document": "doc.Mechanism-D03",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D03",
+   "field": "body_ko_md",
+   "sentence": "        \"CK3/Norland native full algorithms\""
+  },
+  {
+   "document": "doc.Mechanism-D03",
+   "field": "body_ko_md",
+   "sentence": "      \"id\": \"CK3-D03\","
+  },
+  {
+   "document": "doc.Mechanism-D03",
+   "field": "body_ko_md",
+   "sentence": "      \"path\": \"../task-24/cells/ck3/D03/verified-input-r2/rows.json\","
+  },
+  {
+   "document": "doc.Mechanism-D03",
+   "field": "body_ko_md",
+   "sentence": "      \"path\": \"../task-24/cells/norland/D03/verified-input-r1/rows.json\","
+  },
+  {
+   "document": "doc.Mechanism-D04",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D04",
+   "field": "body_md",
+   "sentence": "      \"id\": \"CK3-D04\","
+  },
+  {
+   "document": "doc.Mechanism-D04",
+   "field": "body_md",
+   "sentence": "      \"source\": \"task-24/cells/ck3/D04/verified-input-r2/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D04",
+   "field": "body_md",
+   "sentence": "      \"source\": \"task-24/cells/norland/D04/verified-input-r1/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D04",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D04",
+   "field": "body_ko_md",
+   "sentence": "      \"id\": \"CK3-D04\","
+  },
+  {
+   "document": "doc.Mechanism-D04",
+   "field": "body_ko_md",
+   "sentence": "      \"source\": \"task-24/cells/ck3/D04/verified-input-r2/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D04",
+   "field": "body_ko_md",
+   "sentence": "      \"source\": \"task-24/cells/norland/D04/verified-input-r1/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D05",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D05",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D06",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D06",
+   "field": "body_md",
+   "sentence": "      \"authority\": \"Task24 CK3/Norland D06 dossiers\","
+  },
+  {
+   "document": "doc.Mechanism-D06",
+   "field": "body_md",
+   "sentence": "      \"held\": \"All CK3/Norland numeric parameters and hidden/native algorithm inferences as Seoul values.\","
+  },
+  {
+   "document": "doc.Mechanism-D06",
+   "field": "body_md",
+   "sentence": "    \"ck3\": \"Documentary parameters and fragments remain comparison evidence."
+  },
+  {
+   "document": "doc.Mechanism-D06",
+   "field": "body_md",
+   "sentence": "    \"norland\": \"Road and status modifiers are mixed historical revisions."
+  },
+  {
+   "document": "doc.Mechanism-D06",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D06",
+   "field": "body_ko_md",
+   "sentence": "      \"authority\": \"Task24 CK3/Norland D06 dossiers\","
+  },
+  {
+   "document": "doc.Mechanism-D06",
+   "field": "body_ko_md",
+   "sentence": "      \"held\": \"All CK3/Norland numeric parameters and hidden/native algorithm inferences as Seoul values.\","
+  },
+  {
+   "document": "doc.Mechanism-D06",
+   "field": "body_ko_md",
+   "sentence": "    \"ck3\": \"Documentary parameters and fragments remain comparison evidence."
+  },
+  {
+   "document": "doc.Mechanism-D06",
+   "field": "body_ko_md",
+   "sentence": "    \"norland\": \"Road and status modifiers are mixed historical revisions."
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_md",
+   "sentence": "Never import CK3 +/-100 or Norland ranges as Seoul bounds.\","
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_md",
+   "sentence": "Never import CK3 +/-100 or Norland ranges as Seoul bounds.\","
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_md",
+   "sentence": "      \"reason\": \"Only the schema separation is approved; CK3/Norland durations are comparative values, not Seoul adoption.\","
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_md",
+   "sentence": "      \"source\": \"task-24/cells/ck3/D07/verified-input-r1/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_md",
+   "sentence": "      \"limit\": \"CK3 opinion, memory and successor values are not Seoul coefficients.\""
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_md",
+   "sentence": "      \"source\": \"task-24/cells/norland/D07/verified-input-r1/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_md",
+   "sentence": "      \"limit\": \"Norland mood, loyalty, relation and cadence values are not Seoul coefficients.\""
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_ko_md",
+   "sentence": "Never import CK3 +/-100 or Norland ranges as Seoul bounds.\","
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_ko_md",
+   "sentence": "Never import CK3 +/-100 or Norland ranges as Seoul bounds.\","
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_ko_md",
+   "sentence": "      \"reason\": \"Only the schema separation is approved; CK3/Norland durations are comparative values, not Seoul adoption.\","
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_ko_md",
+   "sentence": "      \"source\": \"task-24/cells/ck3/D07/verified-input-r1/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_ko_md",
+   "sentence": "      \"limit\": \"CK3 opinion, memory and successor values are not Seoul coefficients.\""
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_ko_md",
+   "sentence": "      \"source\": \"task-24/cells/norland/D07/verified-input-r1/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "field": "body_ko_md",
+   "sentence": "      \"limit\": \"Norland mood, loyalty, relation and cadence values are not Seoul coefficients.\""
+  },
+  {
+   "document": "doc.Mechanism-D08",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D08",
+   "field": "body_md",
+   "sentence": "      \"scope\": \"CK3 prestige/piety/fertility values and Norland relationship/gold/timer/age values.\","
+  },
+  {
+   "document": "doc.Mechanism-D08",
+   "field": "body_md",
+   "sentence": "      \"reason\": \"Comparison evidence is not Seoul authority and historical Norland thresholds conflict.\","
+  },
+  {
+   "document": "doc.Mechanism-D08",
+   "field": "body_md",
+   "sentence": "    \"ck3\": \"Guarded prestige/piety/fertility expressions and betrothal writers are documentary comparison only."
+  },
+  {
+   "document": "doc.Mechanism-D08",
+   "field": "body_md",
+   "sentence": "    \"norland\": \"Documented relationship guards, migration/gold/relationship effects and historical timers are comparison only."
+  },
+  {
+   "document": "doc.Mechanism-D08",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D08",
+   "field": "body_ko_md",
+   "sentence": "      \"scope\": \"CK3 prestige/piety/fertility values and Norland relationship/gold/timer/age values.\","
+  },
+  {
+   "document": "doc.Mechanism-D08",
+   "field": "body_ko_md",
+   "sentence": "      \"reason\": \"Comparison evidence is not Seoul authority and historical Norland thresholds conflict.\","
+  },
+  {
+   "document": "doc.Mechanism-D08",
+   "field": "body_ko_md",
+   "sentence": "    \"ck3\": \"Guarded prestige/piety/fertility expressions and betrothal writers are documentary comparison only."
+  },
+  {
+   "document": "doc.Mechanism-D08",
+   "field": "body_ko_md",
+   "sentence": "    \"norland\": \"Documented relationship guards, migration/gold/relationship effects and historical timers are comparison only."
+  },
+  {
+   "document": "doc.Mechanism-D09",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D09",
+   "field": "body_md",
+   "sentence": "      \"reason\": \"No Seoul approval; CK3/Norland timings and probabilities are documentary non-equivalents.\","
+  },
+  {
+   "document": "doc.Mechanism-D09",
+   "field": "body_md",
+   "sentence": "      \"source\": \"task-24/cells/ck3/D09/current-route-consumer-r3/DoneClaim.json\","
+  },
+  {
+   "document": "doc.Mechanism-D09",
+   "field": "body_md",
+   "sentence": "      \"source\": \"task-24/cells/norland/D09/verified-input-r1/DoneClaim.json\","
+  },
+  {
+   "document": "doc.Mechanism-D09",
+   "field": "body_md",
+   "sentence": "      \"limit\": \"No Norland rank probability, politics threshold, lord generation or turn/day conversion imported.\""
+  },
+  {
+   "document": "doc.Mechanism-D09",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D09",
+   "field": "body_ko_md",
+   "sentence": "      \"reason\": \"No Seoul approval; CK3/Norland timings and probabilities are documentary non-equivalents.\","
+  },
+  {
+   "document": "doc.Mechanism-D09",
+   "field": "body_ko_md",
+   "sentence": "      \"source\": \"task-24/cells/ck3/D09/current-route-consumer-r3/DoneClaim.json\","
+  },
+  {
+   "document": "doc.Mechanism-D09",
+   "field": "body_ko_md",
+   "sentence": "      \"source\": \"task-24/cells/norland/D09/verified-input-r1/DoneClaim.json\","
+  },
+  {
+   "document": "doc.Mechanism-D09",
+   "field": "body_ko_md",
+   "sentence": "      \"limit\": \"No Norland rank probability, politics threshold, lord generation or turn/day conversion imported.\""
+  },
+  {
+   "document": "doc.Mechanism-D10",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D10",
+   "field": "body_md",
+   "sentence": "      \"held\": \"CK3 and Norland tiers, costs, timers, acceptance order and native algorithms remain comparison evidence only and are not imported.\","
+  },
+  {
+   "document": "doc.Mechanism-D10",
+   "field": "body_md",
+   "sentence": "      \"id\": \"CK3-D10\","
+  },
+  {
+   "document": "doc.Mechanism-D10",
+   "field": "body_md",
+   "sentence": "      \"source\": \"task-24/cells/ck3/D10/verified-input-r2\","
+  },
+  {
+   "document": "doc.Mechanism-D10",
+   "field": "body_md",
+   "sentence": "      \"id\": \"NORLAND-D10\","
+  },
+  {
+   "document": "doc.Mechanism-D10",
+   "field": "body_md",
+   "sentence": "      \"source\": \"task-24/cells/norland/D10/verified-input-r1\","
+  },
+  {
+   "document": "doc.Mechanism-D10",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D10",
+   "field": "body_ko_md",
+   "sentence": "      \"held\": \"CK3 and Norland tiers, costs, timers, acceptance order and native algorithms remain comparison evidence only and are not imported.\","
+  },
+  {
+   "document": "doc.Mechanism-D10",
+   "field": "body_ko_md",
+   "sentence": "      \"id\": \"CK3-D10\","
+  },
+  {
+   "document": "doc.Mechanism-D10",
+   "field": "body_ko_md",
+   "sentence": "      \"source\": \"task-24/cells/ck3/D10/verified-input-r2\","
+  },
+  {
+   "document": "doc.Mechanism-D10",
+   "field": "body_ko_md",
+   "sentence": "      \"id\": \"NORLAND-D10\","
+  },
+  {
+   "document": "doc.Mechanism-D10",
+   "field": "body_ko_md",
+   "sentence": "      \"source\": \"task-24/cells/norland/D10/verified-input-r1\","
+  },
+  {
+   "document": "doc.Mechanism-D11",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D11",
+   "field": "body_md",
+   "sentence": "    \"task-24/cells/ck3/D11/verified-input-r2/rows.json\","
+  },
+  {
+   "document": "doc.Mechanism-D11",
+   "field": "body_md",
+   "sentence": "    \"task-24/cells/norland/D11/verified-input-r2/rows.json\""
+  },
+  {
+   "document": "doc.Mechanism-D11",
+   "field": "body_md",
+   "sentence": "    \"vassal\": \"Signed contract, not an opinion score."
+  },
+  {
+   "document": "doc.Mechanism-D11",
+   "field": "body_md",
+   "sentence": "No CK3 native cycle/parent rule is adopted as Seoul authority.\","
+  },
+  {
+   "document": "doc.Mechanism-D11",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D11",
+   "field": "body_ko_md",
+   "sentence": "기존 공작위 직접 보유 한도 둘을 넘으면 거부하며 임의로 잘라내지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D11",
+   "field": "body_ko_md",
+   "sentence": "    \"task-24/cells/ck3/D11/verified-input-r2/rows.json\","
+  },
+  {
+   "document": "doc.Mechanism-D11",
+   "field": "body_ko_md",
+   "sentence": "    \"task-24/cells/norland/D11/verified-input-r2/rows.json\""
+  },
+  {
+   "document": "doc.Mechanism-D11",
+   "field": "body_ko_md",
+   "sentence": "    \"vassal\": \"Signed contract, not an opinion score."
+  },
+  {
+   "document": "doc.Mechanism-D11",
+   "field": "body_ko_md",
+   "sentence": "No CK3 native cycle/parent rule is adopted as Seoul authority.\","
+  },
+  {
+   "document": "doc.Mechanism-D12",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D12",
+   "field": "body_md",
+   "sentence": "CK3 simultaneous-death order, partition rounding and candidate ties remain unverified; Norland pain 50 and ring inheritance are not Seoul rules.\","
+  },
+  {
+   "document": "doc.Mechanism-D12",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D12",
+   "field": "body_ko_md",
+   "sentence": "CK3 simultaneous-death order, partition rounding and candidate ties remain unverified; Norland pain 50 and ring inheritance are not Seoul rules.\","
+  },
+  {
+   "document": "doc.Mechanism-D13",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D13",
+   "field": "body_md",
+   "sentence": "    \"ck3\": \"documentary references only; D13-C04 ransom lower bound unresolved; no source formula adopted\","
+  },
+  {
+   "document": "doc.Mechanism-D13",
+   "field": "body_md",
+   "sentence": "    \"norland\": \"version-qualified documentary comparisons only; no 500-coin or trade multiplier adoption\","
+  },
+  {
+   "document": "doc.Mechanism-D13",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D13",
+   "field": "body_ko_md",
+   "sentence": "    \"ck3\": \"documentary references only; D13-C04 ransom lower bound unresolved; no source formula adopted\","
+  },
+  {
+   "document": "doc.Mechanism-D13",
+   "field": "body_ko_md",
+   "sentence": "    \"norland\": \"version-qualified documentary comparisons only; no 500-coin or trade multiplier adoption\","
+  },
+  {
+   "document": "doc.Mechanism-D14",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D14",
+   "field": "body_md",
+   "sentence": "    \"comparative\": \"sources.json preserves version-qualified documentary limits; no CK3/Norland numeric import\""
+  },
+  {
+   "document": "doc.Mechanism-D14",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D14",
+   "field": "body_ko_md",
+   "sentence": "    \"comparative\": \"sources.json preserves version-qualified documentary limits; no CK3/Norland numeric import\""
+  },
+  {
+   "document": "doc.Mechanism-D15",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D15",
+   "field": "body_md",
+   "sentence": "      \"id\": \"ck3-comparison\","
+  },
+  {
+   "document": "doc.Mechanism-D15",
+   "field": "body_md",
+   "sentence": "      \"source\": \"/Volumes/gameWorkspace/worktrees/seoul-kenshi/seoul-domain-mechanism-deepening-20261003-d15-sources/.omo/evidence/mechanisms/ck3/D15/reference.md\","
+  },
+  {
+   "document": "doc.Mechanism-D15",
+   "field": "body_md",
+   "sentence": "      \"id\": \"norland-comparison\","
+  },
+  {
+   "document": "doc.Mechanism-D15",
+   "field": "body_md",
+   "sentence": "      \"source\": \"/Volumes/gameWorkspace/worktrees/seoul-kenshi/seoul-domain-mechanism-deepening-20261003-d15-sources/.omo/evidence/mechanisms/norland/D15/reference.md\","
+  },
+  {
+   "document": "doc.Mechanism-D15",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D15",
+   "field": "body_ko_md",
+   "sentence": "      \"id\": \"ck3-comparison\","
+  },
+  {
+   "document": "doc.Mechanism-D15",
+   "field": "body_ko_md",
+   "sentence": "      \"source\": \"/Volumes/gameWorkspace/worktrees/seoul-kenshi/seoul-domain-mechanism-deepening-20261003-d15-sources/.omo/evidence/mechanisms/ck3/D15/reference.md\","
+  },
+  {
+   "document": "doc.Mechanism-D15",
+   "field": "body_ko_md",
+   "sentence": "      \"id\": \"norland-comparison\","
+  },
+  {
+   "document": "doc.Mechanism-D15",
+   "field": "body_ko_md",
+   "sentence": "      \"source\": \"/Volumes/gameWorkspace/worktrees/seoul-kenshi/seoul-domain-mechanism-deepening-20261003-d15-sources/.omo/evidence/mechanisms/norland/D15/reference.md\","
+  },
+  {
+   "document": "doc.Mechanism-D16",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D16",
+   "field": "body_md",
+   "sentence": "    \"CK3\": \"Comparison evidence only; version and formula conflicts remain bounded and no source literal is adopted.\","
+  },
+  {
+   "document": "doc.Mechanism-D16",
+   "field": "body_md",
+   "sentence": "    \"Norland\": \"Comparison evidence only; does not provide Seoul continuous war score, casus belli registration or atomic custody policy.\","
+  },
+  {
+   "document": "doc.Mechanism-D16",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D16",
+   "field": "body_ko_md",
+   "sentence": "    \"CK3\": \"Comparison evidence only; version and formula conflicts remain bounded and no source literal is adopted.\","
+  },
+  {
+   "document": "doc.Mechanism-D16",
+   "field": "body_ko_md",
+   "sentence": "    \"Norland\": \"Comparison evidence only; does not provide Seoul continuous war score, casus belli registration or atomic custody policy.\","
+  },
+  {
+   "document": "doc.Mechanism-D17",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D17",
+   "field": "body_md",
+   "sentence": "    \"researchLimit\": \"Prior CK3/Norland D17 dossiers and the 2026-10-06 D17 proposal sheet are comparison evidence, not Seoul numeric authority."
+  },
+  {
+   "document": "doc.Mechanism-D17",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D17",
+   "field": "body_ko_md",
+   "sentence": "    \"researchLimit\": \"Prior CK3/Norland D17 dossiers and the 2026-10-06 D17 proposal sheet are comparison evidence, not Seoul numeric authority."
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_md",
+   "sentence": "      \"game\": \"Crusader Kings III\","
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_md",
+   "sentence": "        \"path\": \"/Volumes/gameWorkspace/worktrees/seoul-kenshi/seoul-domain-source-falsification-20261004/.omo/evidence/mechanisms/task-24/cells/ck3/D18/verified-input-r1/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_md",
+   "sentence": "        \"path\": \"/Volumes/gameWorkspace/worktrees/seoul-kenshi/seoul-domain-source-falsification-20261004/.omo/evidence/mechanisms/task-24/cells/ck3/D18/verified-input-r1/findings.json\","
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_md",
+   "sentence": "      \"game\": \"Norland\","
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_md",
+   "sentence": "        \"path\": \"/Volumes/gameWorkspace/worktrees/seoul-kenshi/seoul-domain-source-falsification-20261004/.omo/evidence/mechanisms/task-24/cells/norland/D18/verified-input-r1/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_md",
+   "sentence": "        \"path\": \"/Volumes/gameWorkspace/worktrees/seoul-kenshi/seoul-domain-source-falsification-20261004/.omo/evidence/mechanisms/task-24/cells/norland/D18/verified-input-r1/findings.json\","
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_ko_md",
+   "sentence": "      \"game\": \"Crusader Kings III\","
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_ko_md",
+   "sentence": "        \"path\": \"/Volumes/gameWorkspace/worktrees/seoul-kenshi/seoul-domain-source-falsification-20261004/.omo/evidence/mechanisms/task-24/cells/ck3/D18/verified-input-r1/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_ko_md",
+   "sentence": "        \"path\": \"/Volumes/gameWorkspace/worktrees/seoul-kenshi/seoul-domain-source-falsification-20261004/.omo/evidence/mechanisms/task-24/cells/ck3/D18/verified-input-r1/findings.json\","
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_ko_md",
+   "sentence": "      \"game\": \"Norland\","
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_ko_md",
+   "sentence": "        \"path\": \"/Volumes/gameWorkspace/worktrees/seoul-kenshi/seoul-domain-source-falsification-20261004/.omo/evidence/mechanisms/task-24/cells/norland/D18/verified-input-r1/report.md\","
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "field": "body_ko_md",
+   "sentence": "        \"path\": \"/Volumes/gameWorkspace/worktrees/seoul-kenshi/seoul-domain-source-falsification-20261004/.omo/evidence/mechanisms/task-24/cells/norland/D18/verified-input-r1/findings.json\","
+  },
+  {
+   "document": "doc.mechanism-design-index-d01",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d01",
+   "field": "body_md",
+   "sentence": "The rank of the title the beneficiary receives and the superior contract are also rechecked, so victory alone does not unconditionally make them a lesser vassal of the attacker."
+  },
+  {
+   "document": "doc.mechanism-design-index-d01",
+   "field": "body_md",
+   "sentence": "**Crusader Kings III.** The reference installed version is 1.20.0.3, build 25652598, checksum 8e45; this is distinguished as the installation authority, and DLC, mods, and scenarios are left unconfirmed."
+  },
+  {
+   "document": "doc.mechanism-design-index-d01",
+   "field": "body_md",
+   "sentence": "**Norland.** The wiki's pinned version, the MAIN announcement, the BETA announcement, and the historical installed build 25211575 are separate authorities."
+  },
+  {
+   "document": "doc.mechanism-design-index-d01",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d01",
+   "field": "body_ko_md",
+   "sentence": "수혜자가 얻는 작위의 등급과 상위 계약도 다시 검사하므로 승리만으로 무조건 공격자의 하급 봉신이 되지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d01",
+   "field": "body_ko_md",
+   "sentence": "**Crusader Kings III.** 참조 설치판은 1.20.0.3, 빌드 25652598, 체크섬 8e45를 설치 권위로 구분하고 DLC·모드·시나리오는 미확인으로 둔다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d01",
+   "field": "body_ko_md",
+   "sentence": "**Norland.** 위키 고정 판본, MAIN 발표, BETA 발표, 역사 설치 빌드 25211575는 서로 다른 권위다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d01",
+   "field": "body_ko_md",
+   "sentence": "행동별 자격을 하나의 보편 영주 자격으로 합치지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d02",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d02",
+   "field": "body_md",
+   "sentence": "**Crusader Kings III, 1.20.0.3 / build 25652598:** In the material re-evaluating D02's 13 source occurrences and 97 citations, we distinguish 10 document claims, 2 unresolved native mechanisms (C01 mortality, C12 disabled harm.2051), and 1 finite non-equivalent counterpart (C11)."
+  },
+  {
+   "document": "doc.mechanism-design-index-d02",
+   "field": "body_md",
+   "sentence": "**Norland:** Population revision 1316 describes a Prisoner Barn where workers give prisoners food and drink, but Patch #43-45 describes prisoners using warehouse food directly with no wardens needed."
+  },
+  {
+   "document": "doc.mechanism-design-index-d02",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d02",
+   "field": "body_ko_md",
+   "sentence": "**Crusader Kings III, 1.20.0.3 / build 25652598:** D02의 13개 원천 발생과 97개 인용을 재평가한 자료에서 문서 주장 10개, 미해결 원생 메커니즘 2개(C01 사망률, C12 disabled harm.2051), 유한 비동등 대응물 1개(C11)를 구분한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d02",
+   "field": "body_ko_md",
+   "sentence": "**Norland:** Population 개정 1316은 노동자가 죄수에게 식음료를 주는 Prisoner Barn을 설명하지만 Patch #43-45는 죄수의 창고 식량 직접 이용과 간수 불필요를 설명한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_md",
+   "sentence": "The actual rank of the title the beneficiary gains and the superior relationship are rechecked through the higher-level contract, and equal or higher rights are not automatically converted into a lower vassal relationship (sp1.b118, b119, sp1.reference.beneficiary)."
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_md",
+   "sentence": "External References — Crusader Kings III and Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_md",
+   "sentence": "### 11.1 Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_md",
+   "sentence": "### 11.2 Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_md",
+   "sentence": "CK3's distinction between being able to send, a response, and actual execution explains why strategic orders should show delivery, receipt, and acceptance separately."
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_md",
+   "sentence": "Norland's necessary conditions for meeting requirements explain why high trust alone should not pass every eligibility check."
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_md",
+   "sentence": "Norland's right-click move that cannot attack is a reference for separating the input interpretation of attacking from moving, and is not adopted as Seoul's automatic fallback policy."
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_md",
+   "sentence": "CK3's response days, capacity, prices, and scores, and Norland's political thresholds, are not transplanted into Seoul values."
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_ko_md",
+   "sentence": "수혜자가 얻는 작위의 실제 등급과 상위 계약으로 상위 관계를 다시 검사하고 동급/상급 권리를 자동으로 하급 봉신 관계로 바꾸지 않는다(sp1.b118, b119, sp1.reference.beneficiary)."
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_ko_md",
+   "sentence": "외부 참조 — Crusader Kings III와 Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_ko_md",
+   "sentence": "### 11.1 Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_ko_md",
+   "sentence": "### 11.2 Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_ko_md",
+   "sentence": "CK3의 송신 가능·응답·실제 실행 구분은 전략 명령의 전달/수신/수락을 따로 보여 줄 이유를 설명한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_ko_md",
+   "sentence": "Norland의 요건 충족 필요조건은 높은 신뢰 하나로 모든 적격 검사를 통과시키지 않을 이유를 설명한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_ko_md",
+   "sentence": "Norland의 공격 불가 우클릭 이동은 공격과 이동의 입력 해석을 구분하는 참고이며 서울의 자동 폴백 정책으로 채택하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "field": "body_ko_md",
+   "sentence": "CK3의 응답 일수·정원·가격·점수, Norland의 정치 문턱을 서울 값으로 이식하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d04",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d04",
+   "field": "body_md",
+   "sentence": "### Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d04",
+   "field": "body_md",
+   "sentence": "### Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d04",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d04",
+   "field": "body_ko_md",
+   "sentence": "### 크루세이더 킹즈 3 (Crusader Kings III)"
+  },
+  {
+   "document": "doc.mechanism-design-index-d04",
+   "field": "body_ko_md",
+   "sentence": "### 놀랜드 (Norland)"
+  },
+  {
+   "document": "doc.mechanism-design-index-d05",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d05",
+   "field": "body_md",
+   "sentence": "**Crusader Kings III PC 1.20.0.3, Steam build 25652598.** Building costs, durations, and monthly income in the preserved installed scripts, the replenishment of supplies after gold is spent on a supply purchase, and the gold refund for camp demolition were each verified within the scope of their cal"
+  },
+  {
+   "document": "doc.mechanism-design-index-d05",
+   "field": "body_md",
+   "sentence": "Therefore Seoul takes only the comparison that distinguishes cost/duration/effect from consumption/reservation/ownership, and does not carry the CK3 gold refund over as an automatic material refund."
+  },
+  {
+   "document": "doc.mechanism-design-index-d05",
+   "field": "body_md",
+   "sentence": "**Norland PC — preserved data build 25211575 and version-specific documents.** The Construction, Resources, and Trade materials, along with separate patch materials, distinguish construction costs and production output, knowledge, occupation, and work-time conditions, builders' hauling and work, and"
+  },
+  {
+   "document": "doc.mechanism-design-index-d05",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d05",
+   "field": "body_ko_md",
+   "sentence": "**Crusader Kings III PC 1.20.0.3, Steam build 25652598.** 보존된 설치 스크립트의 건물 비용·기간·월 수입, 보급 구매의 금 지출 후 보급 보충, 캠프 철거의 금 환급은 각 호출 범위에서 검증되었다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d05",
+   "field": "body_ko_md",
+   "sentence": "따라서 서울은 비용/기간/효과와 소비/예약/소유를 구별하는 비교만 취하고 CK3 금 환급을 자재 자동 환급으로 옮기지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d05",
+   "field": "body_ko_md",
+   "sentence": "**Norland PC — 보존 데이터 build 25211575와 판본별 문서.** Construction·Resources·Trade 및 별도 패치 자료는 건설 비용과 생산 출력, 지식·직업·작업 시간 조건, 건축자의 운반/작업, 보관 종류를 구별한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d06",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d06",
+   "field": "body_md",
+   "sentence": "### Crusader Kings 3"
+  },
+  {
+   "document": "doc.mechanism-design-index-d06",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_md",
+   "sentence": "Chapter 9 covers cross-domain ownership, Chapter 10 four concrete cases, Chapter 11 external references (Crusader Kings III, Norland), Chapter 12 open issues and decision-ready alternatives, and Chapter 13 a summary of the boundary between what is settled and what is open."
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_md",
+   "sentence": "### Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_md",
+   "sentence": "### Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_md",
+   "sentence": "The corresponding values in external references (CK3 `+25/0.05`, pre-replacement Norland loyalty) are only comparison baselines."
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_ko_md",
+   "sentence": "9장은 교차 도메인 소유, 10장은 네 개의 구체적 사례, 11장은 외부 참조(Crusader Kings III, Norland), 12장이 미결 사항과 결정 준비된 대안이고, 13장이 확정과 미결의 경계 요약이다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_ko_md",
+   "sentence": "### Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_ko_md",
+   "sentence": "`D`는 기억 소유자의 최고 보유 작위 단계(`highest_held_title_tier`)가 공작 이상이면 1이다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_ko_md",
+   "sentence": "예를 들어 기억 소유자가 백작이고 사망한 가까운 가족이 공작인 군주라면, 다른 플레이어 조건이 모두 거짓일 때 `R=1, D=0`이므로 `5+125=130`년이지 `155`년이 아니다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_ko_md",
+   "sentence": "반대로 기억 소유자가 공작이면 사망 대상이 군주가 아니거나 공작 미만이어도 `D=1`이다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_ko_md",
+   "sentence": "### Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_ko_md",
+   "sentence": "main40에서 영주 일변량 충성을 관계·추종자로 대체한 설명도 있으며 병사 충성은 별개다(N-D07-03/04/05)."
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_ko_md",
+   "sentence": "영주 충성 대체 뒤에도 같은 충성 변수를 뜻한다고 합치지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_ko_md",
+   "sentence": "- 불행하고 강한 의지 없는 영주는 대부분의 임무를 거절한다(N-D07-11)."
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_ko_md",
+   "sentence": "위협하는 영주와 관계 ≥0일 때 설득 시도가 가능하다(N-D07-14)."
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "field": "body_ko_md",
+   "sentence": "외부 참조의 대응값(CK3 `+25/0.05`, Norland 대체 이전 충성)은 비교 기준일 뿐이다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_md",
+   "sentence": "### 12.1 Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_md",
+   "sentence": "- Correspondence with Seoul: the CK3 material we checked shows the guarded cost expressions and eligibility alternatives for adoption and divorce, and the script commands and event path for betrothal dissolution."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_md",
+   "sentence": "### 12.2 Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_md",
+   "sentence": "- Source attribution: the publisher-hosted community wiki (`wiki.hoodedhorse.com/Norland`) at pinned revisions — World `oldid=1284`, States `oldid=1262`, Lords `oldid=1314`, Actions `oldid=1318` — and developer announcements (Patch #25/#26, Patch #39·#40, Patch #43 BETA, Patch #57 BETA, Update #35, "
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_md",
+   "sentence": "- Correspondence with Seoul: the Norland material we checked documents the relationship threshold (+5), the marriage outcome list, and the gold cost of bishop divorce, but this material alone does not fix the actual processing order or the point of immediate determination."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_md",
+   "sentence": "Norland's reset of political strategy upon death or loss of lordship is a contrasting case of state separation and does not prove whether the marriage ends or that other effects remain unchanged."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_md",
+   "sentence": "The scope of the CK3 and Norland documents and scripts we checked cannot determine Seoul's bilateral procedures."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_ko_md",
+   "sentence": "### 12.1 Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_ko_md",
+   "sentence": "- 서울과의 대응: 확인한 CK3 자료는 입양·이혼의 가드된 비용 식과 적격 대안, 약혼 해소의 스크립트 명령·사건 경로를 보여 준다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_ko_md",
+   "sentence": "### 12.2 Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_ko_md",
+   "sentence": "- 원천 귀속: 배포사 호스팅 커뮤니티 위키(`wiki.hoodedhorse.com/Norland`) 고정 판오판 — World `oldid=1284`, States `oldid=1262`, Lords `oldid=1314`, Actions `oldid=1318` — 및 개발자 공지(Patch #25/#26, Patch #39·#40, Patch #43 BETA, Patch #57 BETA, Update #35, Patches #54–#56 묶음)."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_ko_md",
+   "sentence": "- **이혼**: Actions oldid1318 주교 항목·이혼 표 — 혼인한 영주·도시 내 주교·금 비용으로 혼인이 끝난다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_ko_md",
+   "sentence": "Patch #43 BETA는 초기 AI 영주에게 가짜 부모를 만들어 친족으로 인지시킨다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_ko_md",
+   "sentence": "- **사망·직위 상실의 정치 무효화**: Patches #54–#56 묶음의 Patch #54 BETA 수정 항목 — 대상 사망·치매·영주직 상실이 해당 정치인 전략을 초기화한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_ko_md",
+   "sentence": "- 서울과의 대응: 확인한 Norland 자료는 관계 문턱(+5), 혼인 결과 목록, 주교 이혼의 금 비용을 문서화하지만, 이 자료만으로 실제 처리 순서나 즉시 판정 시점을 확정하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_ko_md",
+   "sentence": "Norland의 사망·영주직 상실에 따른 정치 전략 초기화는 상태 분리의 대조 사례이며, 혼인 종료 여부나 다른 효과의 불변을 입증하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "field": "body_ko_md",
+   "sentence": "확인한 CK3·Norland 문서·스크립트 범위는 서울의 양자 절차를 결정하지 못한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d09",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d09",
+   "field": "body_md",
+   "sentence": "### Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d09",
+   "field": "body_md",
+   "sentence": "In the preserved 1.20.0.3 / build 25652598 materials, feudal elections handle the elector set, candidate filter, vote weight, and candidate score separately."
+  },
+  {
+   "document": "doc.mechanism-design-index-d09",
+   "field": "body_md",
+   "sentence": "### Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d09",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d09",
+   "field": "body_ko_md",
+   "sentence": "### Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d09",
+   "field": "body_ko_md",
+   "sentence": "보존된 1.20.0.3 / build 25652598 자료에서 봉건선거는 선거인 집합·후보 필터·표의 힘·후보 점수를 따로 다룬다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d09",
+   "field": "body_ko_md",
+   "sentence": "### Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d09",
+   "field": "body_ko_md",
+   "sentence": "공식 위키와 공식 패치의 보존 문서에서는 왕 전용 행동, 영주 후보 자격, 정치인 선택, 즉위 및 종주 사망에 따른 특정 관계 갱신이 서로 다른 처리를 가진다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d09",
+   "field": "body_ko_md",
+   "sentence": "귀족 소진·종주 사망·기존 영주의 폐허 재정착은 각각 자기 문맥의 문서 사실이다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d09",
+   "field": "body_ko_md",
+   "sentence": "자유 영주 작위 수용량은 서울 영토의 기하나 기관 직위의 동일성이 아니다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_md",
+   "sentence": "The verified sources for CK3 are the preserved scripts of 1.20.0.3, build 25652598, and a community wiki from a separate point in time."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_md",
+   "sentence": "Title and vassal transactions from victory are separate from changes in occupation control."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_md",
+   "sentence": "Differences among CK3 sources are also retained."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_md",
+   "sentence": "The powerful-vassal condition for creating an empire is 'at least half' under the default-disabled rule, not an unconditional majority-ratification law."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_md",
+   "sentence": "Norland distinguishes the World 1284, Lords 1314, Actions 1318, and States 1262 wiki versions from individual beta/main developer announcements."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_md",
+   "sentence": "Gold plundering, relationship changes, and vassalization from ordinary city attacks are separate transitions, so victory is not read as ownership."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_md",
+   "sentence": "Norland's vassal action restrictions, qualitative tribute dependence, and the order of demand, refusal, and victory are limited to their respective document versions."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_md",
+   "sentence": "The Patches 54–56 MAIN announcement states that a neighboring state newly vassalized by a player cannot rebel for 3 in-game days."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_md",
+   "sentence": "The Debt of Honor vassalization path in beta57 is separate evidence from a separate version."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_ko_md",
+   "sentence": "직접 보유 공작급 둘 제한은 기존 확정값이다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_ko_md",
+   "sentence": "CK3의 확인 자료는 1.20.0.3, build 25652598의 보존 스크립트와 별도 시점의 커뮤니티 위키다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_ko_md",
+   "sentence": "승리의 작위·봉신 거래는 점령 통제 변경과 별도다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_ko_md",
+   "sentence": "CK3 자료 사이의 차이도 남긴다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_ko_md",
+   "sentence": "공작령 조작의 고정 20%라는 위키 설명은 조건부 가중치 분기와 같지 않다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_ko_md",
+   "sentence": "제국 생성의 강력 봉신 조건은 기본 비활성 규칙에서 절반 이상이지 무조건 과반 인준법이 아니다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_ko_md",
+   "sentence": "Norland는 World 1284, Lords 1314, Actions 1318, States 1262 위키 판본과 개별 beta/main 개발자 발표를 구분한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_ko_md",
+   "sentence": "일반 도시 공격의 금화 약탈·관계 변화와 봉신화는 별도 전이이므로 승리를 소유권으로 읽지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_ko_md",
+   "sentence": "Norland의 봉신 행동 제한·질적 조공 의존과 요구·거절·승리 순서는 각각의 문서 판본에 한정한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_ko_md",
+   "sentence": "Patches 54–56 MAIN 발표는 플레이어가 새로 봉신화한 이웃 주가 게임 내 3일 동안 반란을 일으킬 수 없다고 명시한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "field": "body_ko_md",
+   "sentence": "beta57의 Debt of Honor 봉신화 경로는 별도 판본의 별도 근거다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "# D11 Grants, Delegation, Recall, and Vassals — Design Document for Readers"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "- This document explains the confirmed scope of the existing rules on grants, vassals, and title rights."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "The Crusader Kings III (hereafter CK3) and Norland records in Chapter 11 are **comparisons against installed scripts, documents, and announcements**, not observations of engine execution."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "This document covers **how title and office authority is divided, entrusted, and taken back, and what contract establishes a vassal relationship**."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "- The substance of a vassal contract: a vassalage is established not by a state-relations number but by a contract with signatories and clauses."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "There are no numbers for the cost of a grant, the duration of a delegation, the deadline for a recall, or the evaluation or obligations of a vassal."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "**Signing a vassal contract** — A vassalage is established not by a state-relations number but by a contract with signatories and clauses."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "A station held directly by the chief is directly administered; a station given to a named vassal is delegated."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "### 5.4 Change of Signatory in a Vassal Contract 【Approved】"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "A vassal contract specifies in advance what happens when a signatory dies or loses their post: **one of automatic continuation, re-ratification, or termination**."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "- A vassal contract states the public faith, and a hidden faith is kept only in the private ledger."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "D11 owns the framework of grants, appointments, delegations, revocations, and vassal contracts, and each domain owns the substance of the items in the table below."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "| D17 Negotiation and Contracts | Signing Procedure for Vassal Contract Clauses | Price Table and Acceptance Function |"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "External References — Crusader Kings III and Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "### 11.1 Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "The vassal transfer script distinguishes the selected vassal's liege change from confirmed effects, and contract obligation changes use change amounts and guards."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "### 11.2 Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "The vassal demand acceptance, refusal, and war outcomes, as well as the rules for tribute, puppets, and hostages, are likewise read only within the scope of that document version's description."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "The grant cost, delegation duration, revocation deadline, number of vassal evaluations and obligations, acquisition, stabilization, and integration durations and costs, contract clause prices, and confirmation quorum and tie handling are undecided."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_md",
+   "sentence": "- **What is approved**: the distinction among the four kinds of drafts (conferral, appointment, delegation, revocation); the consent and ratification gates, and the holder remaining unchanged before ratification; the requirement that the recipient be a member of the organization; the limits of lower"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "# D11 수여·위임·회수·봉신 — 독자용 설계 문서"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "- 기존 수여·봉신·작위 권리 규칙의 확정 범위를 설명한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "11장의 Crusader Kings III(이하 CK3)와 Norland 기록은 **설치 스크립트·문서·공지에 대한 대조**이며, 엔진 실행 관측이 아니다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "수여의 수치 한도는 기존의 **직접 보유 공작급 작위 둘 제한**을 유지한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "이 문서는 **작위와 공직 권한을 어떻게 나누고, 맡기고, 되돌리는가, 그리고 봉신 관계를 어떤 계약으로 성립시키는가**를 다룬다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "- 수여 한도: 수여자는 자기보다 낮은 작위만 나누고, 직접 보유하는 공작급은 둘을 넘기지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "- 봉신 계약의 실체: 봉신은 국가 관계 수치가 아니라 서명자와 조항을 가진 계약으로 성립한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "수여의 비용, 위임의 기간, 회수의 기한, 봉신의 평가·의무를 나타내는 수는 없다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "자기보다 낮은 작위만 나누고, 직접 보유 공작급은 둘을 넘기지 않는다 |"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "**수여(작위 권리 이전)** — 수여자가 수여 권한을 가진 소속원이어야 하고, 자기보다 낮은 작위만 나눌 수 있으며, 직접 보유 공작급은 둘을 넘기지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "**봉신 계약의 서명** — 봉신은 국가 관계 수치가 아니라 서명자와 조항을 가진 계약으로 성립한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "수장이 직접 쥔 역은 직할, 이름 있는 봉신에게 준 역은 위임이다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "### 5.4 봉신 계약의 서명자 변동 【승인】"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "봉신 계약에는 서명자가 죽거나 직위를 잃을 때의 처분을 계약이 미리 정한다: **자동 유지·재비준·종료 중 하나**."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "- 봉신 계약에는 공개 신앙을 적고, 숨은 신앙은 비공개 원장에만 둔다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "D11은 수여·임명·위임·회수와 봉신 계약의 골격을 소유하고, 아래 표의 실체는 각 도메인이 소유한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "| D17 협상·계약 | 봉신 계약 조항의 서명 절차 | 가격표·수락 함수 |"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "외부 참조 — Crusader Kings III와 Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "### 11.1 Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "봉신 이전 스크립트는 선택 봉신의 상급 변경과 확정 효과를 구분하고, 계약 의무 변경은 변경량과 가드를 사용한다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "### 11.2 Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "봉신 수요 수락·거절·전쟁 결과, 조공·괴뢰·인질의 규칙도 해당 문서 판본의 서술 범위에서만 읽는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "수여 비용, 위임 기간, 회수 기한, 봉신 평가·의무의 수, 취득·안정화·통합 기간과 비용, 계약 조항 가격, 인준 정족수·동점 처리는 미정이다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "field": "body_ko_md",
+   "sentence": "- **승인된 것**: 네 가지 초안의 구분(수여·임명·위임·회수), 동의·인준 관문과 인준 전 보유자 불변, 소속원 수령 요건, 하급 작위만·공작급 둘 한도, 축의 분리(직위·작위·실효 지배·지휘·재산), 포함 명시의 원칙, 같은 식별 제거·등록과 사본 없음, `권리 보유·인수 미완` 상태, 위임의 네 상태와 원 권리 보존, 봉신 계약의 서명자·조항 실체와 서명자 변동 세 갈래, 회수의 조항·증거·인준 요건, 유물만 회수 시 배신 쟁점, 불법 강탈의 수여 부인, 공석의 자동 생성 부정과 등록된 대행만, 결정론적 수락 순서와 사건 "
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_md",
+   "sentence": "- **Conferral, Delegation, Revocation, and Vassals (D11).** The details of delegation status and the procedures for conferral and revocation."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_md",
+   "sentence": "### Crusader Kings III (Paradox Interactive)"
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_md",
+   "sentence": "- Office elections and appointments: the separation between feudal title elections and administrative officer appointments, the bonus-point definitions, and the upstream accumulation variables were confirmed."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_md",
+   "sentence": "- Orders right after death: only activity and travel cancellation and the ordered vassal-instruction variables were confirmed."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_md",
+   "sentence": "- **Relation to Seoul.** The CK3 script and documentation fragments examined do not establish the runtime for switching the player's main body, the independent transitions of body, office, and property, the ban on re-application, or the ledger of command receipt and acceptance that Seoul requires."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_md",
+   "sentence": "This is not a global claim that CK3 as a whole lacks such features, but a boundary stating that this preserved material cannot support Seoul's model."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_md",
+   "sentence": "Seoul's separation and preservation rules follow the Seoul-approved basis above and do not use CK3's succession or election figures."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_md",
+   "sentence": "### Norland (Long Jaunt / Hooded Horse)"
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_md",
+   "sentence": "- When an overlord dies, all vassals become independent (wiki rev1284), and peace may also end upon the death of the peace counterparty."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_md",
+   "sentence": "That threshold figure belongs to Norland and is not Seoul's death determination."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_md",
+   "sentence": "- **Relation to Seoul.** The Norland documentation is a collection of separate features and fixes, not an integrated succession lifecycle, and there is no evidence of automatic succession selection, a simultaneous-death transaction, or a body-switching ledger."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_md",
+   "sentence": "Seoul's item-by-item separation and preservation rules were not taken from Norland, and Norland's threshold and rule figures are not used as Seoul's numbers."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_ko_md",
+   "sentence": "- **수여·위임·회수·봉신(D11).** 위임 상태의 세부와 수여·회수 절차."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_ko_md",
+   "sentence": "### 크루세이더 킹즈 3 (Crusader Kings III, Paradox Interactive)"
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_ko_md",
+   "sentence": "- 직위 선거와 임명: 봉건 작위 선거와 행정 임원 임명의 분리, 가점 정의와 상위 누적 변수는 확인되었다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_ko_md",
+   "sentence": "- **서울과의 관계.** 검사한 CK3 스크립트·문서 조각은 서울이 요구하는 플레이어 본체 전환 런타임, 몸·직위·재산의 독립 전이, 재적용 금지, 지휘 수령·수락 원장을 확립하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_ko_md",
+   "sentence": "이는 CK3 전체에 그런 기능이 없다는 전역 단정이 아니라 이번 보존 자료로 서울 모델을 뒷받침할 수 없다는 경계다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_ko_md",
+   "sentence": "서울의 분리·보존 규칙은 위의 서울 승인 근거를 따르며 CK3의 계승·선거 수치를 쓰지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "field": "body_ko_md",
+   "sentence": "### 놀랜드 (Norland, Long Jaunt / Hooded Horse)"
+  },
+  {
+   "document": "doc.mechanism-design-index-d13",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d13",
+   "field": "body_md",
+   "sentence": "External References — Crusader Kings III and Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d13",
+   "field": "body_md",
+   "sentence": "### 11.1 Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d13",
+   "field": "body_md",
+   "sentence": "- Borrowing and inheritance: `game/common/scripted_effects/00_scripted_effects.txt` lines 20–79 (loan variable setup), `game/events/death_events/death_management_events.txt` lines 95–105 and 141–291 (reassigning creditors on death), `game/events/relations_events/vassal_events.txt` lines 1033–1071, 1"
+  },
+  {
+   "document": "doc.mechanism-design-index-d13",
+   "field": "body_md",
+   "sentence": "### 11.2 Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d13",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d13",
+   "field": "body_ko_md",
+   "sentence": "외부 참조 — Crusader Kings III와 Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d13",
+   "field": "body_ko_md",
+   "sentence": "### 11.1 Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d13",
+   "field": "body_ko_md",
+   "sentence": "- 차용과 상속: `game/common/scripted_effects/00_scripted_effects.txt` 20–79행(대출 변수 설정), `game/events/death_events/death_management_events.txt` 95–105·141–291행(사망 시 채권자 재귀속), `game/events/relations_events/vassal_events.txt` 1033–1071·1205–1215·1275–1290행(상환), `game/common/on_action/death.txt` 2417–2425행."
+  },
+  {
+   "document": "doc.mechanism-design-index-d13",
+   "field": "body_ko_md",
+   "sentence": "### 11.2 Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_md",
+   "sentence": "### Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_md",
+   "sentence": "In the installation scripts of CK3 1.20.0.3, build 25652598, child education points, language learning progress, lifestyle XP, and cultural innovations have different owners, units, and procedures."
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_md",
+   "sentence": "The ideal application is to expose per-skill requirements and the preservation of actual stages, and the difference is that Seoul's actual tools, locations, public authority, and institutional secrets cannot be replaced by CK3's single XP."
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_md",
+   "sentence": "### Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_md",
+   "sentence": "Norland Knowledge wiki revision 1293 lists 3 sheets of paper for copying a learned book."
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_md",
+   "sentence": "C-CHILD, C-LANGUAGE, C-XP, C-CULTURE, and C-TEACH are the marked script mechanisms of CK3 1.20.0.3/build 25652598."
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_md",
+   "sentence": "N-01–N-12, N-22, and N-58 are Norland documents whose edition, release date, and beta or release version are marked above."
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_ko_md",
+   "sentence": "### Crusader Kings III"
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_ko_md",
+   "sentence": "CK3 1.20.0.3, 빌드 25652598의 설치 스크립트에서 아동 교육점, 언어 학습 진척, 생활방식 XP, 문화 혁신은 서로 다른 소유자·단위·절차를 가진다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_ko_md",
+   "sentence": "이상적인 적용은 기술별 요구와 실제 단계의 보존을 드러내는 것이며, 차이는 서울의 실제 도구·장소·공개 권한·기관 비밀을 CK3의 단일 XP로 대신할 수 없다는 점이다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_ko_md",
+   "sentence": "### Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_ko_md",
+   "sentence": "Norland Knowledge 위키 수정 1293은 학습한 책의 복사에 종이 3장을 적는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_ko_md",
+   "sentence": "C-CHILD·C-LANGUAGE·C-XP·C-CULTURE·C-TEACH는 CK3 1.20.0.3/빌드 25652598의 표시한 스크립트 기제다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "field": "body_ko_md",
+   "sentence": "N-01–N-12·N-22·N-58은 위에 판본·발표일·베타 또는 본판을 표시한 Norland 문헌이다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "field": "body_md",
+   "sentence": "### Crusader Kings 3"
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "field": "body_md",
+   "sentence": "The combat phase description in CK3 Community Warfare document version 36436 is 2 days."
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "field": "body_md",
+   "sentence": "The installation declaration in the preserved CK3 1.20.0.3, build25652598, checksum8e45 is 3 days."
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "field": "body_md",
+   "sentence": "Seoul uses its own approval contract that separates compliance from outcome, and does not substitute CK3's experience or relative weights."
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "field": "body_md",
+   "sentence": "### Norland"
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "field": "body_md",
+   "sentence": "The Norland Community Warfare version 1319 example of dagger 10 / light armor 10 / heavy armor 30 and the preserved build25211575 values of sword cut 130, sword total 273, light armor total 430, and heavy armor total 1460 are different labels/authorities."
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "field": "body_ko_md",
+   "sentence": "CK3 커뮤니티 Warfare 문서 판본 36436의 전투 단계 설명은 2일이다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "field": "body_ko_md",
+   "sentence": "보존된 CK3 1.20.0.3, build25652598, checksum8e45의 설치 선언은 3일이다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "field": "body_ko_md",
+   "sentence": "서울은 준수와 성과를 분리하는 자체 승인 계약을 사용하며 CK3의 경험치나 상대 가중치를 대신 붙이지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "field": "body_ko_md",
+   "sentence": "### 노랜드"
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "field": "body_ko_md",
+   "sentence": "Norland 커뮤니티 Warfare 판본 1319의 단검 10/가벼운 갑옷 10/무거운 갑옷 30 예시와 보존 build25211575의 칼 cut 130·칼 합 273·가벼운 갑옷 합 430·무거운 갑옷 합 1460은 다른 라벨/권위다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d16",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d16",
+   "field": "body_md",
+   "sentence": "Reason: the CK3 .04/.01 conflict and the unconfirmed native denominator are not Seoul numerical authority."
+  },
+  {
+   "document": "doc.mechanism-design-index-d16",
+   "field": "body_md",
+   "sentence": "The preserved documents and scripts of **Crusader Kings III** are based on version 1.20.0.3, build 25652598, and the wiki's individual revisions and past-version labels are a separate scope."
+  },
+  {
+   "document": "doc.mechanism-design-index-d16",
+   "field": "body_md",
+   "sentence": "The **Norland** comparison covers a fixed wiki revision, MAIN/BETA patch posts, and preserved historical build 25211575."
+  },
+  {
+   "document": "doc.mechanism-design-index-d16",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d16",
+   "field": "body_ko_md",
+   "sentence": "이유: CK3 .04/.01 충돌과 네이티브 분모 미확정은 서울 수치 권한이 아니다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d16",
+   "field": "body_ko_md",
+   "sentence": "**Crusader Kings III**의 보존 문서·스크립트는 1.20.0.3, 빌드 25652598을 기준으로 하며 위키의 개별 개정과 과거 버전 표시는 별도 범위다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d16",
+   "field": "body_ko_md",
+   "sentence": "**Norland** 비교는 고정된 위키 개정, MAIN/BETA 패치 게시물과 보존 역사 빌드 25211575를 함께 다룬다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d17",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d17",
+   "field": "body_md",
+   "sentence": "**Crusader Kings III.** The preserved documents and scripts used for comparison are tied to version `1.20.0.3`, build `25652598`."
+  },
+  {
+   "document": "doc.mechanism-design-index-d17",
+   "field": "body_md",
+   "sentence": "**Norland.** The comparison materials have different scopes of authority for each historical document, wiki, MAIN/BETA patch, and repair record."
+  },
+  {
+   "document": "doc.mechanism-design-index-d17",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d17",
+   "field": "body_ko_md",
+   "sentence": "**Crusader Kings III.** 비교에 사용한 보존 문서·스크립트는 버전 `1.20.0.3`, 빌드 `25652598`에 묶여 있다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d17",
+   "field": "body_ko_md",
+   "sentence": "**Norland.** 비교 자료는 역사 문서, 위키, MAIN/BETA 패치와 수리 기록마다 서로 다른 권위 범위를 가진다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d18",
+   "field": "body_md",
+   "sentence": "The Seoul-fact / CK3-reference / product-authority distinctions in the linked chapters below and SP-1.0.0 take precedence, and undecided values are not interpreted as 0 or any arbitrary default."
+  },
+  {
+   "document": "doc.mechanism-design-index-d18",
+   "field": "body_md",
+   "sentence": "The CK3 comparison material was confirmed within the scope of developer definitions and call-site records for version 1.20.0.3, build 25652598."
+  },
+  {
+   "document": "doc.mechanism-design-index-d18",
+   "field": "body_md",
+   "sentence": "The Norland comparison material was confirmed only within the scope of each citation's wiki oldid, the MAIN/BETA patches, and their publication dates."
+  },
+  {
+   "document": "doc.mechanism-design-index-d18",
+   "field": "body_ko_md",
+   "sentence": "아래 연결된 장의 서울 사실/CK3 참조/제품 권한 구분과 SP-1.0.0이 우선하며 미정 값을 0 또는 임의 기본값으로 해석하지 않는다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d18",
+   "field": "body_ko_md",
+   "sentence": "CK3 비교 자료는 1.20.0.3, 빌드 25652598의 개발자 정의·호출 지점 기록 범위에서 확인되었다."
+  },
+  {
+   "document": "doc.mechanism-design-index-d18",
+   "field": "body_ko_md",
+   "sentence": "Norland 비교 자료는 인용별 위키 oldid, MAIN/BETA 패치와 게시 시점 범위에서만 확인되었다."
+  },
+  {
+   "document": "doc.mechanism-design-index",
+   "field": "body_md",
+   "sentence": "- [D11 Grants, Delegation, Revocation, and Vassals](/gdd/system-design/mechanism-design-index-d11/) · [Situations](/gdd/system-design/domain-situations/)."
+  },
+  {
+   "document": "doc.mechanism-design-index",
+   "field": "body_ko_md",
+   "sentence": "- [D11 수여·위임·회수·봉신](/gdd/system-design/mechanism-design-index-d11/) · [상황](/gdd/system-design/domain-situations/)."
+  },
+  {
+   "document": "doc.Singleplayer-Design-SP-1-0-0",
+   "field": "body_md",
+   "sentence": "A beneficiary who gains a title of equal or higher rank is not unconditionally bound as a lower vassal."
+  },
+  {
+   "document": "doc.Singleplayer-Design-SP-1-0-0",
+   "field": "body_ko_md",
+   "sentence": "수장은 자신보다 낮은 작위만 나누며 직접 보유 공작급 둘 제한은 기존 세계관을 유지한다."
+  },
+  {
+   "document": "doc.Singleplayer-Design-SP-1-0-0",
+   "field": "body_ko_md",
+   "sentence": "동급/상급 권리를 얻은 수혜자를 무조건 하급 봉신으로 묶지 않는다."
+  }
+ ]
+}
