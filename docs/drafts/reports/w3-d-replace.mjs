@@ -287,6 +287,12 @@ eraKo = rep(eraKo, '권하되 소속만으로 성능을 부여하지 않음', '�
 eraEn = rep(eraEn, 'Propose protection matched to role; grant no performance from affiliation alone', 'Protection is matched to the role; affiliation alone does not decide its performance', 1);
 eraKo = rep(eraKo, '군용 잔존에서 회수·이전되는 경로 설정', '군용 잔존에서 회수·이전되는 경로는 사례마다 갈린다', 1);
 eraEn = rep(eraEn, 'Recovery or transfer from military remnants to be set', 'Recovered or transferred from military remnants, case by case', 1);
+eraKo = rep(eraKo, '치안 쪽 제식 봉·방패는 기정 프리셋이 이미 「제식 봉·순찰 방패」로 적는다. ', '', 1);
+eraEn = rep(eraEn, 'The standing preset already wrote the police-issue staff and patrol shield as "regulation staff · patrol shield." ', '', 1);
+eraKo = rep(eraKo, '기정 프리셋. 경찰 세칙 원문은 남아 있지 않다', '경찰 세칙 원문은 남아 있지 않다', 1);
+eraKo = rep(eraKo, '기정 생업 프리셋. 특정 브랜드는 기록에 없다', '특정 브랜드는 기록에 없다', 1);
+eraEn = rep(eraEn, 'Standing preset. The original police regulations do not survive', 'The original police regulations do not survive', 1);
+eraEn = rep(eraEn, 'Trade-layer preset. Specific brand names are not in the records', 'Specific brand names are not in the records', 1);
 
 // ---------------------------------------------------------------------------
 // Ailments
@@ -639,7 +645,7 @@ for (const c of checks) {
 }
 
 const MODEL_ET = 'cpa/glm-5.3; 0 completion calls; replacement sentences written by the agent and applied by a script (docs/drafts/reports/w3-d-replace.mjs); not from a Gemini model (edited lines: intro war-machine premise, removed Linked-states lines, sixteen-state sections retitled and state ids dropped, chapel rolls, Ulsan 2030 observation, three-factions sentence, unsettled phrasing moved to record voice, chronicle year fragments)';
-const MODEL_ERA = 'cpa/glm-5.3; 0 completion calls; replacement sentences written by the agent and applied by a script (docs/drafts/reports/w3-d-replace.mjs); not from a Gemini model (edited lines: scarcity premise, 2030 date, sixteen-state phrases, canon preset wording, counts cell, Korean-only anchor planted in en)';
+const MODEL_ERA = 'cpa/glm-5.3 (original and script edits); one-sentence removal and table-note trimming by cpa/claude-sonnet-5-5 by hand; 0 completion calls; not from a Gemini model';
 const MODEL_LTL = 'cpa/glm-5.3; 0 completion calls; ko replacement sentences and the full English body written by the agent and applied by a script (docs/drafts/reports/w3-d-replace.mjs); not from a Gemini model (edited lines: origin paragraph, routine paragraph, two G-line sentences, link label; en body retranslated from the new Korean with all 35 Korean anchor ids planted)';
 const MODEL_AIL = 'cpa/glm-5.3; 0 completion calls; replacement sentences written by the agent and applied by a script (docs/drafts/reports/w3-d-replace.mjs); not from a Gemini model (edited lines: sixteen-states control phrase, 2030-10-14 date, November 6 date)';
 
