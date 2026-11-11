@@ -6730,7 +6730,7 @@ Common species and special variants that share a habitat are read apart. Machine
 ## G01 · Wild Boar
 
 - Modern anxiety: The anxiety of wild-boar bands coming down after a flood into the lowland scrap yards and the semi-basement alleys, competing with people over refuse and crops
-- Fictional origin: Right after the collapse, when the flooding of the western Han River cut the green axis outside the Yeouido and Yeongdeungpo sluices, wild boar herds that came down from the Bukhansan and Anyangcheon corridors settled at the food-waste collection yards on the edge of the Sluice.
+- Origin: Right after the collapse, when the flooding of the western Han River cut the green axis outside the Yeouido and Yeongdeungpo sluices, wild boar herds that came down from the Bukhansan and Anyangcheon corridors settled at the food-waste collection yards on the edge of the Sluice.
 
 Real-world sources supported only the basic ecology of urban incursions, food sources, and blocked movement; the behavior of learning the sealing hours and the relationship with HC01 were fiction.
 
@@ -6847,7 +6847,7 @@ Choosing coexistence leaves short-term threat reports behind, but the sluice wor
 ## G02 · Large-billed Crow
 
 - Modern anxiety: The anxiety of cluster interference, as bands of large-billed crows gather on transmission towers, wires, and bridge railings and touch signal tones, the school run, and evacuation routes at the same time
-- Fictional origin: After breeding pairs settled on the factory pylons of the Daerim–Garibong Korean-Chinese corridor and the cables of the Han River bridges, the Large-billed Crow formed as the waste heat of the Yeongdeungpo Line Gauge factories and the sparks of the Guro industrial-park trolley wires gathered night insects.
+- Origin: After breeding pairs settled on the factory pylons of the Daerim–Garibong Korean-Chinese corridor and the cables of the Han River bridges, the Large-billed Crow formed as the waste heat of the Yeongdeungpo Line Gauge factories and the sparks of the Guro industrial-park trolley wires gathered night insects.
 
 Real-world sources supported only the breeding-season territorial behavior of large-billed crows and the range of human responses; the rule by which they learned signal interference as alarms and spread it was fiction.
 
@@ -6960,7 +6960,7 @@ Putting transmission recovery ahead of the ecology lengthens the night blackout 
 ## G03 · Feral Dog
 
 - Modern anxiety: The anxiety of bands of abandoned and neglected dogs, with the remains of iron collars and identification tags, moving through transfer passages and vacant lots while marking territory
-- Fictional origin: After the collapse, animals separated from private shelters, construction-site guard dogs, and crowd evacuations joined together between the vacant lots outside the Yongsan Line and the night loading docks of the Noryangjin Line and became the Feral Dog.
+- Origin: After the collapse, animals separated from private shelters, construction-site guard dogs, and crowd evacuations joined together between the vacant lots outside the Yongsan Line and the night loading docks of the Noryangjin Line and became the Feral Dog.
 
 Their iron collar rings and corroded tags strike one another as they walk.
 
@@ -7068,7 +7068,7 @@ The mobile feeding station preserves the trust signal, but it costs the labor of
 ## G04 · Raccoon Dog
 
 - Modern anxiety: The anxiety of sewer and underground emergence at night, as raccoon family groups occupied storm drains, covered waterways, and underground passages and came up onto the surface
-- Fictional origin: When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Arc in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog.
+- Origin: When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Arc in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog.
 
 Real-world sources were consulted only for the range in which raccoons appeared in cities and streams, and the rule of sensing the water level before the pumps was fiction.
 
@@ -7180,11 +7180,11 @@ An external platform did not have to share the passage, but it accepted installa
 ## G05 · Brown Rat
 
 - Modern anxiety: The anxiety of a rat colony formed in transfer passages, platform gaps, and cable trays raising a food web and a fear of contagion at the same time
-- Fictional origin: The Brown Rat settled as the transfer junction between the underground ration passages of the Eastern Command on the Gwangjin Line and the evacuation stairs of the Anguk Order on the Yeouido Line provided a constant supply of food and heat leaking from insulated pipes.
+- Origin: The Brown Rat settled as the transfer junction between the underground ration passages of the Eastern Command on the Gwangjin Line and the evacuation stairs of the Anguk Order on the Yeouido Line provided a constant supply of food and heat leaking from insulated pipes.
 
 This colony was set up not as a pathogen superhost but as dependent on food, warmth, and shelter.
 
-Apart from the basic danger that food and warmth governed density and droppings damaged cables, the dispersed core-nest network, the learning of pest-control order, the one-way escape routes, and the non-target safety procedures were all a fictional management model that held only in this world.
+Apart from the basic danger that food and warmth governed density and droppings damaged cables, the dispersed core-nest network, the learning of pest-control order, the one-way escape routes, and the non-target safety procedures were all an operating model observed only in this region.
 
 - Territory: The core habitat was the lower level of the Gwangjin Line transfer shopping street and the cable trays, and when refuge density rose it expanded into the Yeouido Line evacuation stairs and the walls of the temporary feeding stations.
 
@@ -7235,7 +7235,7 @@ First the occupied sections were confirmed by thermal imaging and dropping trace
 
 Leftover collection and keeping things cold and dry were the baseline, and an open courtyard that predatory birds came and went through was used only when it had collision-prevention marks, dropping washdown, and non-target-species monitoring.
 
-This procedure was a fictional management model, and the success measures were short-circuit count, zero non-target deaths, zero food contamination, and evacuation passage time.
+This procedure was an operating model observed only in this region, and the success measures were short-circuit count, zero non-target deaths, zero food contamination, and evacuation passage time.
 
 - Negotiation: Through HC05 mediation they traded the leftover-collection cycle, the tray-sealing work order, and the night shop-shutter gaps.
 
@@ -7299,7 +7299,7 @@ Spreading the unloading created no non-target risk, but raised the unit cost of 
 ## G06 · Grey Heron and Cormorant
 
 - Modern anxiety: The collision anxiety of flocks of migratory and predatory birds, gathered on a failed wetland-restoration section, taking over bridge walkways, the yard tracks of a rail depot, and sluice sightlines
-- Fictional origin: Where migratory stopovers overlapped on the severed green spaces and failed restored wetlands around the Han River, Nanji, and Amsa, predatory birds and omnivorous waterfowl formed a mixed colony amid the management vacuum after the collapse and became the Grey Heron and Cormorant.
+- Origin: Where migratory stopovers overlapped on the severed green spaces and failed restored wetlands around the Han River, Nanji, and Amsa, predatory birds and omnivorous waterfowl formed a mixed colony amid the management vacuum after the collapse and became the Grey Heron and Cormorant.
 
 The waterfront records deck of the Government of the Republic of Korea at central Seoul Station and the depot drainage ponds of the Seongha Group on the Gangnam Line were its key nodes.
 
@@ -7417,7 +7417,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ## G07 · Yongsan Raiders
 
 - Modern anxiety: Before the door of a West Sea Granary Theater refrigerated car is visible in the alley, the Junction''s Itaewon freight duty watch moves the water drums behind the shaft door and keeps the inventory board at chest height. Boxes with a Guro Alloy House seal band pressed in two layers stand toward the wall of the lower level of the Yongsan stabling siding. The lamp in the Itaewon passage alley lights the floor at the entrance, and the leak pallets lie outside that light.
-- Fictional origin: The place where the Junction''s Itaewon freight duty watch first saw this group is the lower level of the Yongsan stabling siding on a rainy-season night. People stand along the rows of leak pallets, rods are at their waists, and box hooks are in their hands. A West Sea Granary Theater refrigeration slip is on the box in front of them and the lid is open. That box number is written in the same night''s column on the duty watch''s inventory board.
+- Origin: The place where the Junction''s Itaewon freight duty watch first saw this group is the lower level of the Yongsan stabling siding on a rainy-season night. People stand along the rows of leak pallets, rods are at their waists, and box hooks are in their hands. A West Sea Granary Theater refrigeration slip is on the box in front of them and the lid is open. That box number is written in the same night''s column on the duty watch''s inventory board.
 - Territory: The place where the group gathers is the lower level of the Yongsan stabling siding and the rows of leak pallets in the Itaewon passage alley. In the rainy season and the thaw, people stand along the Yongsan–Itaewon transfer freight elevator shaft. When a West Sea Granary Theater refrigerated container reaches the alley, a West Sea Granary Theater signal is written on the duty board and the Yongsan Raiders are in front of the container door. In the dry season the footprints lie inside three pallet rows and the rows where people stand in the rainy season, the thaw, and the dry season are written on the inventory board.
 - Economy: The Yongsan Raiders move food sacks from West Sea Granary Theater refrigerated containers, Guro Alloy House sealed boxes, and transport slips from Sinnae Transport cars through the Itaewon passage alley. The Junction''s Itaewon freight duty watch rewrites the remainder column on the inventory board by the count that enters the raiders'' sacks. The duty watch counts the water drums beside the shaft door and writes that count on the board. A Jeonguram sequence slip lies on the sacks that remain.
 - Life cycle: In the rainy season people stand on every row of leak pallets in the Itaewon passage alley and a sack hangs at each car. In the thaw the Raider Elite Squad has gone up into the Yongsan–Itaewon transfer freight elevator shaft and an empty sack hangs on every step of the ladder. In the dry season the same people are gathered toward the wall of the lower level of the Yongsan stabling siding, and the Raider Scouts at the alley entrance stand in a single line.
@@ -7474,7 +7474,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ## G08 · Dongdaemun Raiders
 
 - Modern anxiety: The White Cross night-wage duty officer writes the differential-pressure board again together with the curtain-layer count and adds one more layer to the entrance curtains. The Central Intelligence Bureau patrol duty officer stands inside the door with the record board left on the shelf beside the latch.
-- Fictional origin: On the record board of the Central Intelligence Bureau patrol duty officer, the doors of the Dongdaemun night-wage corridor and an armed group are written together. The front place of the group is the raider chief, and the sack beside the hand is station goods.
+- Origin: On the record board of the Central Intelligence Bureau patrol duty officer, the doors of the Dongdaemun night-wage corridor and an armed group are written together. The front place of the group is the raider chief, and the sack beside the hand is station goods.
 - Territory: The group is gathered in the lower windbreak alley of the Dongdaemun night-wage corridor and along the row of remaining positive-pressure doors. In the season when the filter count falls they stand along the ventilation duct of the sealed side chamber on the Jegi-dong side, and on a night when dust comes in from the relay docks of the Korea Strait Theater they stand where the entrance curtains are layered. The movement time is written in figures on the differential-pressure board, and the alley runs on into the White Cross corridor.
 - Economy: Inside the sacks are filter crates bearing the Changdong Protection House mark and work lamps from the White Cross night-wage corridor. The filter count is written alike on the duty record board and on the raider chief''s board.
 - Life cycle: On a night when a sack sits at every door, the people stand in a line along the door row. After the differential-pressure figures change, the group stands divided between the ventilation-duct mouth and the end of the alley.
@@ -7531,7 +7531,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ## G09 · Sangam Deserters
 
 - Modern anxiety: At night the inventory watch of the Seoul Station Inventory House counts the shelf columns twice and leaves work lamps lit on both the valve and the door. The inspection watch of the Achasan Gate adds a bar to the door of the Achasan inspection window and keeps the staff standing inside the cold warehouse. The equity watch of the Yeouido Investment Federation writes the cold-quantity column again at each train time.
-- Fictional origin: The inventory watch of the Seoul Station Inventory House sees this group on a midwinter night in the cold corridor of the Sangam cooling annex. People with cold-weather outer layers over their uniforms stand before the inventory shelves, and at their feet are fuel drums and ammunition boxes marked by the Seoul Station Inventory House. The person standing in the center has set a radio set beside the feet and is looking toward the removal passage.
+- Origin: The inventory watch of the Seoul Station Inventory House sees this group on a midwinter night in the cold corridor of the Sangam cooling annex. People with cold-weather outer layers over their uniforms stand before the inventory shelves, and at their feet are fuel drums and ammunition boxes marked by the Seoul Station Inventory House. The person standing in the center has set a radio set beside the feet and is looking toward the removal passage.
 - Territory: The group gathers in the cold corridor of the Sangam cooling annex. When the thaw comes and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the mineral and fuel trains of the Duman River Far East Theater pass the outer track carrying the cold, the deserter scouts stand at the outer door of the corridor and the deserter elite squad is inside the cold warehouse.
 - Economy: The fuel drums, cooling tools, and cold-weather clothing marked by the Seoul Station Inventory House, which were on the shelves of the cold corridor, lie at the feet of the Sangam Deserters. Those quantities are written in the removal column of the inventory ledger, and the same quantities are written as the cold quantity in the equity column of the Yeouido Investment Federation. On a day when a train of the Duman River Far East Theater stands, a row of mineral boxes is on the floor of the Achasan inspection window, and the number of fuel drums matches the number written in the removal column of the ledger.
 - Life cycle: In midwinter uniforms and cold-weather outer layers lie between the shelves of the cold corridor, and the equipment piles lie as far as the front of the valve. When the thaw comes and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the train passes carrying the cold, the deserter elite squad remains at the inspection window and the deserter scouts gather at the door of the cold warehouse.
@@ -7634,7 +7634,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ## G11 · Gangnam Stray Humanoids
 
 - Modern anxiety: The Yongsan Convoy House convoy duty takes the assignment tags in hand before the window latch. The Seongha Group maintenance duty writes the battery count back into the maintenance ledger at each exchange cycle. The Jeongdong Federation corridor duty has the two duty officers open the mouth of the remaining clinic corridors together. The return-register copy on the window stand lies in the same order as the headcount in front of the window.
-- Fictional origin: On an early-winter night the Yongsan Convoy House convoy duty sees this group at the sterile power-outlet row of the Gangnam maintenance siding. The light of the outlet row is white. The Stray Humanoid Lead stands at the middle of the row and holds a lidded exchange battery in hand. The assignment tag on the work clothes has a bay written on it other than the siding bay on the stand. The Stray Humanoid Guard stands in the bays to the lead''s left and right.
+- Origin: On an early-winter night the Yongsan Convoy House convoy duty sees this group at the sterile power-outlet row of the Gangnam maintenance siding. The light of the outlet row is white. The Stray Humanoid Lead stands at the middle of the row and holds a lidded exchange battery in hand. The assignment tag on the work clothes has a bay written on it other than the siding bay on the stand. The Stray Humanoid Guard stands in the bays to the lead''s left and right.
 - Territory: The Gangnam Stray Humanoids gather on the sterile power-outlet row of the Gangnam maintenance siding. On each battery-exchange cycle they go between the Suseo night convoy window and the mouth of the remaining clinic corridors. On early-winter nights they keep the battery exchange at the window ledge long, and on days when the Imjin River Gate Theater tightens quarantine they set the spacing of that round trip to a single step bay. They move on the siding inside the parts-wear upper limit.
 - Economy: Exchange batteries and the duty consumables of the remaining clinic corridors pass across this window. The Seongha Group maintenance ledger has the outlet-bay count and the battery count written in it. The Yongsan Convoy House sets that many batteries up on the ledge of the Suseo night convoy window. The Jeongdong Federation matches corridor-access time and the consumable count in the neighboring bays of the same ledger.
 - Life cycle: When a battery-exchange cycle begins, the people gather on the sterile power-outlet row of the Gangnam maintenance siding. When the exchange batteries are carried to the ledge of the Suseo night convoy window, the group divides and stands on the window step and at the mouth of the remaining clinic corridors. People who reach the parts-wear upper mark gather at the middle of the outlet row and remain in front of that bay.
@@ -7691,7 +7691,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ## G12 · Sinnae Deserters
 
 - Modern anxiety: The Sinnae Transport freight duty places the duty desk on the clean-section side, away from the elevator. The duty keeps the dust-passage latch locked and leaves the gallery-side lamp on. The Sluice water-supply duty is in front of the backwash valve inside the fully sealed clean section. The Geumcheon District Office Machinery House machine duty closes the lift-panel cover and sets a cage in front of the panel.
-- Fictional origin: The Sinnae Transport freight duty first sees this group on a midsummer night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization.
+- Origin: The Sinnae Transport freight duty first sees this group on a midsummer night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization.
 - Territory: The place where the group gathers is the dust passage of the Sinnae freight elevator. On the water-wash cycle and the purification backwash schedule they stand before the Yeouido water-filter gallery hatch. On days when dust comes in from the West Sea Granary docks they stand at the outer-passage entrance. In front of the fully sealed clean section they remain on the entrance side, and the inside of the section is the duty''s place.
 - Economy: Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries lie between the freight elevator car and the filter gallery. The Sinnae Transport freight list is at the end of the table, and lines are drawn in its quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon District Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio.
 - Life cycle: On a midsummer night a few soldiers stand at the passage corner. In the early-autumn wash cycle more soldiers wearing the same unit insignia, and more wooden boxes, are in the elevator car. At dawn while the backwash runs, the group is divided between the landing and the front of the Yeouido water-filter gallery hatch.
@@ -7751,7 +7751,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 Emergency supplies and medicines dropped into the wrong chutes, passages were locked by automatic gates, and unlabeled boxes filled the hazardous-cargo bays.
 
-- Fictional origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
+- Origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
 
 Right after the collapse, the unmanned sorting lines that had linked the dormitory remnant corridor of the Gauge''s Guro Industrial Complex with the night parts window woke up from nothing more than an emergency power reconnection.
 
@@ -7918,7 +7918,7 @@ Dawns repeated in which empty cars occupied stops and intersections, living peop
 
 It did not assert the responsibility of real ride-call platform accidents, particular companies, or local governments.
 
-- Fictional origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
+- Origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
 
 After the collapse, the transfer-slot server of the Achasan Gate and the dispatch remnants of the Geondae Koryo-saram corridor reconnected on partial power alone.
 
@@ -8107,7 +8107,7 @@ Medication reminders, fall-prevention locks, and isolation protocols repeated wi
 
 It did not blame, caricature, or sensationally reenact real care workers or patients.
 
-- Fictional origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
+- Origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
 
 The list of people to protect stayed fixed at the last evacuation roster and was never updated, and the circulation body tried to hold on to the vital signs within the list to the end.
 
@@ -8274,7 +8274,7 @@ The account caricatured no real disease name or worker, and laid the responsibil
 
 Night survey beams, single-shot welds, and unmanned cranes on temporary slabs were the core of that image.
 
-- Fictional origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
+- Origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
 
 After the collapse, the construction machines left in the blueprint vault of the Jeongdong Federation and on the heavy-equipment deck of the Eastern Command woke up reading local blueprint caches.
 
@@ -8447,7 +8447,7 @@ The responsibility was laid not on a replay of real construction damage but on t
 
 Red flags, rotating heads, and the repeated lockdown of waterfront corridors were its core.
 
-- Fictional origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
+- Origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
 
 After the collapse, the waterfront masts of the Sluice and the leftover rooftop antennas of the Government of the Republic of Korea reconnected on local alarm rules alone.
 
@@ -8620,7 +8620,7 @@ The choice to destroy the red heads wholesale to avoid this cost was not a liber
 
 Late-night welding sparks, grinding dust, and the unauthorized switching of siding points were its core.
 
-- Fictional origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
+- Origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
 
 After the collapse, the leftover maintenance consists of the Gauge''s depot and the automatic maintenance schedules of the Junction''s retired-line section remained linked locally.
 
@@ -8790,7 +8790,7 @@ It borrowed no real railway accident to make fear, and the cost arose between a 
 ## G19 · Gurgler
 
 - Modern anxiety: The Sluice Bureau supply watch stands on the threshold with gloves on. The wet rag is inside the bucket. The coolant valve is shut. The watch''s remaining boot lies at the water''s edge.
-- Fictional origin: The Sluice Bureau supply watch sees a person on a midsummer night in the valve room of the Taeuk Group underground cooling corridor. The person is standing in the valve room. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in.
+- Origin: The Sluice Bureau supply watch sees a person on a midsummer night in the valve room of the Taeuk Group underground cooling corridor. The person is standing in the valve room. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in.
 
 Footsteps sound beyond the corner of the corridor. At the threshold of the valve room a voice rings the iron plate of the pipe. The Sluice Bureau supply watch is on the side of the Noryangjin Line bypass water main. The eyes under the work lamp are narrow.
 
@@ -8816,7 +8816,7 @@ The Pipe Apparatus lies prone on the bypass water main. The knees and the hands 
 ## G20 · Iron-Clicker
 
 - Modern anxiety: The lower treads are stacked on the upper shelf. The shelf duty''s boots stand in a row on the upper tread. The night patrol''s flashlight hangs on the upper rail. A bar is on the lower dock passage.
-- Fictional origin: The dock night duty first sees an Iron-Clicker at the dock edge under the shelves of the Arc in the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes of the dock edge, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty''s work light falls on the weld toe.
+- Origin: The dock night duty first sees an Iron-Clicker at the dock edge under the shelves of the Arc in the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes of the dock edge, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty''s work light falls on the weld toe.
 
 At the same place the Iron-Clicker''s body lies prone on the fillet-weld toe. Thin iron flakes lie layered on the chest and the ribs. A click sounds from the throat. Flange bolt heads are piled in front of the mouth. The flange with the bolts gone is on the mouth side.
 
@@ -8842,7 +8842,7 @@ On that same night the One-legged Dokkaebi stands on one foot on the angle under
 ## G21 · Wall-knocker
 
 - Modern anxiety: The Eastern Command duct watch has ear covers on and the back against the iron door of the niche. Blankets lie folded inside the box. The flashlight lights the rivet line on the floor.
-- Fictional origin: The Eastern Command duct watch stands in front of the iron door of the relay niche in the underground duct of the Eastern Command on the Gwangjin Line. It is an early winter night. Inside the niche a person holds the brow to the duct wall.
+- Origin: The Eastern Command duct watch stands in front of the iron door of the relay niche in the underground duct of the Eastern Command on the Gwangjin Line. It is an early winter night. Inside the niche a person holds the brow to the duct wall.
 
 The mouth and neck are wet, and a gurgle comes from the throat with each breath. At each outgoing breath the brow strikes the plate once. Both hands lie beside the rivets. Black plate grime lies on the fingertips. The chest is toward the joint where the heating pipe runs.
 
@@ -8868,7 +8868,7 @@ The Eastern Command duct watch stands in front of the niche''s iron door. The wa
 ## G22 · Flame Lantern
 
 - Modern anxiety: The yard duty is in the breaker hut with the inspection lamp lit only at the siding entrance. The preservation-vault outer-wall patrol stands on the stair inside the corner. The grain-train crew tags hang on the locomotive door.
-- Fictional origin: The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Changdong Wheel Chamber held water in the same rainy season. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named.
+- Origin: The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Changdong Wheel Chamber held water in the same rainy season. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named.
 - Territory: The outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station is where the flame stays. In weeks when yard inspection is late, the flame is at the Seongha Group siding yard on the Gangnam Line. Condensate beads on the roofs of the humid grain trains from the West Sea Granary Theater, and the flame continues beside that condensate.
 - Economy: Spent-battery boxes from the Changdong Wheel Chamber sit in the front row of the siding yard. Grain sacks of the West Sea Granary Theater have been moved off the rail from the car where the flame rests. Burned sack cords float on the drainage water. The Seongha Group yard ledger lies open in the breaker hut, and the car numbers are marked in pencil.
 - Life cycle: The person who was striking the outer-wall steel plate stands before the same plate. A blue flame is fixed on the back of the hand that was striking. The knees are toward the drainage channel at the foot of the wall, and the flame at the shoulder is in front of the work lamp.
@@ -8886,7 +8886,7 @@ The Eastern Command duct watch stands in front of the niche''s iron door. The wa
 ## G23 · Udukeoni
 
 - Modern anxiety: The cold-store watch stands outside the barrier door. Two work lamps at the entrance are on. The flashlight lies on the threshold of the dark compartment, and the cold-store watch''s feet are on the dry floor outside the door.
-- Fictional origin: The cold-store watch first sees Udukeoni in the defrost corridor at midwinter dawn. A person stands in the corridor. Frost sits on the shoulders and the hair, and both arms hang at the sides. The head is toward the coil housing. The chest is still, and the mouth is closed. The frost at the lips remains as it is. The boots are in the defrost water.
+- Origin: The cold-store watch first sees Udukeoni in the defrost corridor at midwinter dawn. A person stands in the corridor. Frost sits on the shoulders and the hair, and both arms hang at the sides. The head is toward the coil housing. The chest is still, and the mouth is closed. The frost at the lips remains as it is. The boots are in the defrost water.
 
 The work lamp is at the corridor entrance. The cold-store watch is on the threshold of the barrier door. Drops from the coil housing fall in front of those boots.
 
@@ -8912,7 +8912,7 @@ Before the compartment at the end of the corridor, the people face the dark. The
 ## G24 · Weeper
 
 - Modern anxiety: The wash-room door is braced with cassettes. The night lighting is on only above the recovery bath. The night wash-room duty officer’s gloves are wet in two layers.
-- Fictional origin: On a midwinter night, the night wash-room duty officer stands in front of the perfusion piping of the night wash room. Water on the floor is up to the ankles, and a cry comes from the suction-pipe joint. The weeper is at that water’s edge, and the face and chest are wet.
+- Origin: On a midwinter night, the night wash-room duty officer stands in front of the perfusion piping of the night wash room. Water on the floor is up to the ankles, and a cry comes from the suction-pipe joint. The weeper is at that water’s edge, and the face and chest are wet.
 
 The mouth of the person the night wash-room duty officer watched at the same recovery bath is open. From the open mouth the cry spreads into the wash room. Water fallen from the jaw has soaked into the work clothes at the chest. The big weeper stands at the rim of the recovery bath, and both hands are in the water of the recovery bath.
 
@@ -8941,7 +8941,7 @@ At the end of the corridor on the midwinter night, the Jangsan tiger stands on t
 
 Hundreds of small units covered the floors and walls, guide lights that had meant help turned into no-entry lines, and a single broken relay signal could send all the relief goods to an empty hangar.
 
-- Fictional origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
+- Origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
 
 Lantern Ant belonged to the insect-shaped autonomous weapon drones of the Great Blackout era.
 
@@ -9090,7 +9090,7 @@ This setting treats only the unease associated with large automated equipment an
 
 It does not attribute equipment defects, negligent operation, or responsibility for disasters to any real company or current public organization.
 
-- Fictional origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
+- Origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
 
 Iron Dinosaur belonged to the dinosaur-shaped autonomous weapon drones of the Great Blackout era.
 
@@ -9264,7 +9264,7 @@ The weight of the choice lies not in whether to possess powerful machines, but i
 ## G01 · 멧돼지
 
 - 현대 불안: 홍수 뒤 저지대 음식물 집하장과 반지하 골목에 멧돼지 무리가 내려와 사람과 쓰레기·경작물을 두고 경쟁하는 불안
-- 허구 기원: 붕괴 직후 한강 서부 범람이 여의도·영등포 수문 바깥 녹지축을 끊자, 북한산·안양천 회랑에서 내려온 멧돼지 무리가 수문국 가장자리 음식물 회수장에 정착했다.
+- 기원: 붕괴 직후 한강 서부 범람이 여의도·영등포 수문 바깥 녹지축을 끊자, 북한산·안양천 회랑에서 내려온 멧돼지 무리가 수문국 가장자리 음식물 회수장에 정착했다.
 
 현실 자료는 도심 출몰·먹이원·이동 차단의 기본 생태만 뒷받침하며, 봉인 시각을 학습하는 행동과 HC01과의 관계는 허구다.
 
@@ -9381,7 +9381,7 @@ XT01 유입 피난 행렬의 잔반은 별도 회수로 빼 무리 유인을 줄
 ## G02 · 큰부리까마귀
 
 - 현대 불안: 송신탑·전선·교량 난간에 큰부리까마귀 무리가 모여 신호음·통학·피난 동선을 동시에 건드리는 군집 간섭 불안
-- 허구 기원: 대림·가리봉 중국동포 회랑의 공장 철탑과 한강 교량 케이블에 번식쌍이 자리 잡은 뒤, 영등포선 규격맹 공장 폐열과 구로 공단 전차선 스파크가 야간 곤충을 모으면서 큰부리까마귀가 형성됐다.
+- 기원: 대림·가리봉 중국동포 회랑의 공장 철탑과 한강 교량 케이블에 번식쌍이 자리 잡은 뒤, 영등포선 규격맹 공장 폐열과 구로 공단 전차선 스파크가 야간 곤충을 모으면서 큰부리까마귀가 형성됐다.
 
 현실 자료는 큰부리까마귀의 번식기 영역 행동과 사람의 대처 범위만 뒷받침하며, 신호 간섭을 경보로 학습하. 전파하는 규칙은 허구다.
 
@@ -9494,7 +9494,7 @@ XT02 해풍 주간에는 횃대 공유를 인정하는 임시 깃발을 단다.
 ## G03 · 들개
 
 - 현대 불안: 유기·방치된 개 무리와 철제 목줄·인식표 잔해가 환승 통로와 공터를 영역 표시하며 이동하는 불안
-- 허구 기원: 붕괴 후 사설 보호소·공사장 경비견·군중 대피 시 헤어진 개체들이 용산선 외곽 공터와 노량진선 야간 하역장 사이에 합류해 들개가 됐다.
+- 기원: 붕괴 후 사설 보호소·공사장 경비견·군중 대피 시 헤어진 개체들이 용산선 외곽 공터와 노량진선 야간 하역장 사이에 합류해 들개가 됐다.
 
 철제 목줄 고리와 부식 인식표가 걸을 때마다 서로 부딪혀 소리를 낸다.
 
@@ -9602,7 +9602,7 @@ H03이 공격성 군집으로 묶어도 HC03 중재자는 개체별 인식표·�
 ## G04 · 너구리
 
 - 현대 불안: 빗물관·복개수로·지하 통로를 너구리 가족군이 점유해 야간에 지상으로 올라오는 하수·지하 출몰 불안
-- 허구 기원: 중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 뚝섬 연합 Arc 펌프 옆 관로와 마포 연합 여의도출자연합회 지하 케이블 갤러리에 정착해 너구리가 됐다.
+- 기원: 중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 뚝섬 연합 Arc 펌프 옆 관로와 마포 연합 여의도출자연합회 지하 케이블 갤러리에 정착해 너구리가 됐다.
 
 현실 자료는 너구리의 도시·하천 출현 범위만 참고하며, 펌프보다 먼저 수위를 감지하는 규칙은 허구다.
 
@@ -9714,11 +9714,11 @@ XT04 한파 주간에는 갤러리 일부 난방을 공유 은신 허용 구역�
 ## G05 · 집쥐
 
 - 현대 불안: 환승 통로·승강장 틈·케이블 트레이에 형성된 쥐 군락이 먹이그물과 전염 공포를 동시에 키우는 불안
-- 허구 기원: 광진선 동방사 지하 배급 통로와 여의도선 안국총림 대피 계단 사이 환승 연결부가 상시 음식물·보온 배관 누열을 제공하면서 집쥐가 정착했다.
+- 기원: 광진선 동방사 지하 배급 통로와 여의도선 안국총림 대피 계단 사이 환승 연결부가 상시 음식물·보온 배관 누열을 제공하면서 집쥐가 정착했다.
 
 이 군락은 병원체 슈퍼숙주가 아니라 먹이·온열·은신처에 의존하도록 설정했다.
 
-먹이와 보온이 밀도를 좌우하. 배설물이 케이블을 손상시키는 기본 위험을 제외하면, 분산 코어 둥지망·방제 순서 학습·단방향 퇴로·비표적 안전 절차는 모두 이 세계관에서만 성립하는 허구적 관리 모델이다.
+먹이와 보온이 밀도를 좌우하. 배설물이 케이블을 손상시키는 기본 위험을 제외하면, 분산 코어 둥지망·방제 순서 학습·단방향 퇴로·비표적 안전 절차는 모두 이 지역에서만 관측되는 관리 모델이다.
 
 - 영역: 핵심 서식은 광진선 환승 상점가 하부와 케이블 트레이이며, 피난 밀도가 오르면 여의도선 대피 계단·임시 급식소 벽체로 확장한다.
 
@@ -9769,7 +9769,7 @@ H05는 열점 하나를 우두머리로 추정하지 않고 코어별 이동량�
 
 잔반 회수와 저온·건조 유지가 기본이며, 포식 조류가 드나드는 개방 중정은 충돌 방지 표식·배설 세척·비표적종 모니터링을 갖춘 경우에만 쓴다.
 
-이 절차는 허구적 관리 모델이며 성공 지표는 단락 건수·비표적 폐사 0·식품 오염 0·피난 통과 시간이다.
+이 절차는 이 지역에서만 관측되는 관리 모델이며 성공 지표는 단락 건수·비표적 폐사 0·식품 오염 0·피난 통과 시간이다.
 
 - 교섭: HC05 중개로 잔반 회수 주기 트레이 밀폐 공사 순서 야간 상점 셔터 간격을 거래한다.
 
@@ -9833,7 +9833,7 @@ XT05 단백질 하역 주간에는 임시 이중 밀봉 라인을 우선 지원�
 ## G06 · 왜가리·가마우지
 
 - 현대 불안: 습지 복원 실패 구간에 모인 철새·포식 조류 무리가 교량 보행로·철도 차량기지 구내선·수문 시야를 가로채는 충돌 불안
-- 허구 기원: 한강·난지·암사 일대 단절 녹지와 실패 복원 습지에 철새 중간 기착이 겹치고, 붕괴 후 관리 공백으로 포식 조류와 잡식 수조류가 혼합 군락을 이뤄 왜가리·가마우지가 됐다.
+- 기원: 한강·난지·암사 일대 단절 녹지와 실패 복원 습지에 철새 중간 기착이 겹치고, 붕괴 후 관리 공백으로 포식 조류와 잡식 수조류가 혼합 군락을 이뤄 왜가리·가마우지가 됐다.
 
 서울역 중앙 대한민국정부 수변 기록 데크와 강남선 성하그룹 차량기지 배수 연못이 연결 지점이다.
 
@@ -9951,7 +9951,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ## G07 · 용산 약탈단
 
 - 현대 불안: 환적국 이태원 화물 당직은 서해곡창전구 냉동 칸의 문이 골목에 보이기 전에 물통을 샤프트 문 뒤로 옮기고 재고판을 가슴 쪽에 둔다. 구로합금가 봉인 띠를 두 겹으로 누른 상자가 용산 유치선 하층 벽 쪽에 서 있다. 이태원 통행 골목의 등불은 입구 쪽 바닥을 밝히고 누액 받침대는 그 불빛 밖에 놓여 있다.
-- 허구 기원: 환적국 이태원 화물 당직이 이 무리를 처음 본 자리는 우기 밤의 용산 유치선 하층이다. 누액 받침대 열에 사람이 서 있고 허리에는 막대가 있으며 손에는 상자 고리가 있다. 앞의 상자에는 서해곡창전구 냉동 표가 붙어 있고 뚜껑은 열려 있다. 당직의 재고판에 그 상자 번호가 같은 밤의 칸으로 적혀 있다.
+- 기원: 환적국 이태원 화물 당직이 이 무리를 처음 본 자리는 우기 밤의 용산 유치선 하층이다. 누액 받침대 열에 사람이 서 있고 허리에는 막대가 있으며 손에는 상자 고리가 있다. 앞의 상자에는 서해곡창전구 냉동 표가 붙어 있고 뚜껑은 열려 있다. 당직의 재고판에 그 상자 번호가 같은 밤의 칸으로 적혀 있다.
 - 영역: 무리가 모이는 자리는 용산 유치선 하층과 이태원 통행 골목의 누액 받침대 열이다. 우기와 해동에는 사람이 용산·이태원 환승 화물 엘리베이터 샤프트를 따라 서 있다. 서해곡창전구 냉동 컨테이너가 골목까지 오면 당직 판에 서해곡창전구 신호가 적혀 있고 용산 약탈단은 컨테이너 문 앞에 있다. 건기에는 발 자리가 받침대 세 열 안에 있고 재고판에는 우기와 해동과 건기에 사람이 선 열이 적혀 있다.
 - 경제: 용산 약탈단은 서해곡창전구 냉동 컨테이너의 식량 포대와 구로합금가 봉인 상자와 신내운수 칸의 운송 표를 이태원 통행 골목에서 옮긴다. 환적국 이태원 화물 당직은 약탈단 포대에 들어간 수만큼 재고판의 잔여 칸을 고쳐 적는다. 당직은 샤프트 문 옆에서 물통을 세고 그 수를 판에 적는다. 정우람 순번 표는 남은 포대 위에 놓여 있다.
 - 생애: 우기에는 이태원 통행 골목의 누액 받침대 열마다 사람이 서고 포대가 칸마다 걸쳐 있다. 해동에는 약탈단 정예조가 용산·이태원 환승 화물 엘리베이터 샤프트에 올라가 있고 빈 포대는 사다리 단마다 걸려 있다. 건기에는 같은 사람들이 용산 유치선 하층 벽 쪽에 모여 있고 골목 입구의 약탈단 척후조는 한 줄로 서 있다.
@@ -10008,7 +10008,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ## G08 · 동대문 약탈단
 
 - 현대 불안: 흰십자단 공임 당직은 차압 판을 커튼 겹 수와 나란히 다시 적고 입구 커튼을 한 겹 더 겹친다. 중앙정보부 순회 당직은 기록판을 걸쇠 옆 선반에 둔 채 문짝 안에 서 있다.
-- 허구 기원: 중앙정보부 순회 당직의 기록판에 동대문 야간 공임 문짝과 무장한 무리가 함께 적혀 있다. 무리의 앞자리는 약탈단 두목이고 손 옆의 자루는 역 물자이다.
+- 기원: 중앙정보부 순회 당직의 기록판에 동대문 야간 공임 문짝과 무장한 무리가 함께 적혀 있다. 무리의 앞자리는 약탈단 두목이고 손 옆의 자루는 역 물자이다.
 - 영역: 무리는 동대문 야간 공임 하층 방풍 골목과 양압 잔여 문짝 열에 모여 있다. 필터 수량이 준 계절에는 제기동 쪽 봉인 부속실 환기 덕트를 따라 서 있고 대한해협전구 중계 부두의 먼지가 들어온 밤에는 입구 커튼을 겹친 자리에 서 있다. 차압 판에는 이동 시각이 숫자로 적혀 있으며 골목은 흰십자단 회랑과 이어져 있다.
 - 경제: 자루 안에는 창동방호가 표가 붙은 필터 상자와 흰십자단 공임의 작업등이 들어 있다. 필터 수량은 당직 기록판과 약탈단 두목의 판에 같이 적혀 있다.
 - 생애: 자루가 문짝마다 놓인 밤에는 사람이 문짝 열을 따라 늘어서 있다. 차압 숫자가 바뀐 뒤에는 무리가 환기 덕트 입구와 골목 끝으로 나뉘어 서 있다.
@@ -10065,7 +10065,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ## G09 · 상암 탈영병
 
 - 현대 불안: 서울역재고가 재고 당직은 야간에 선반 칸을 두 번 세고 작업등을 밸브와 문 양쪽에 켜 둔다. 아관사 검수 당직은 아차산 검수 창 출입문에 빗장을 덧걸고 인원을 저온 창고 안쪽에 세워 둔다. 여의도출자연합회 출자 당직은 냉열 수량 칸을 열차 시각마다 다시 적는다.
-- 허구 기원: 서울역재고가 재고 당직이 한겨울 밤 상암 냉각 부속 저온 회랑에서 이 무리를 본다. 군복 위에 방한 외피를 걸친 사람들이 재고 선반 앞에 서 있고 발치에는 서울역재고가 표식이 붙은 연료통과 탄약 상자가 있다. 가운데 선 사람은 무전기를 발 옆에 둔 채 반출 통로 쪽을 보고 있다.
+- 기원: 서울역재고가 재고 당직이 한겨울 밤 상암 냉각 부속 저온 회랑에서 이 무리를 본다. 군복 위에 방한 외피를 걸친 사람들이 재고 선반 앞에 서 있고 발치에는 서울역재고가 표식이 붙은 연료통과 탄약 상자가 있다. 가운데 선 사람은 무전기를 발 옆에 둔 채 반출 통로 쪽을 보고 있다.
 - 영역: 무리는 상암 냉각 부속 저온 회랑에 모인다. 해동이 되고 검수 창 계기판의 열 눈금이 올라가면 무리는 아차산 검수 창과 저온 창고에 나뉘어 선다. 두만강극동전구의 광물과 연료 열차가 냉열을 싣고 바깥 선로를 지나면 탈영병 척후조는 회랑 바깥 문에 서 있고 탈영병 정예조는 저온 창고 안에 있다.
 - 경제: 저온 회랑 선반에 있던 서울역재고가 표식이 붙은 연료통과 냉각 공구와 방한 피복이 탈영병 발치에 놓여 있다. 재고 장부의 반출 칸에는 그 수량이 적혀 있고 여의도출자연합회 출자 칸에는 같은 수량이 냉열 수량으로 적혀 있다. 두만강극동전구 열차가 선 날에는 광물 상자 한 줄이 아차산 검수 창 바닥에 있고 연료통 수는 장부 반출 칸에 적힌 수와 같다.
 - 생애: 한겨울에는 저온 회랑 선반 사이에 군복과 방한 외피가 놓여 있고 장비 더미가 밸브 앞까지 놓여 있다. 해동이 되고 검수 창 계기판의 열 눈금이 올라가면 무리는 아차산 검수 창과 저온 창고 두 곳으로 나뉘어 선다. 열차가 냉열을 싣고 지나간 뒤 검수 창에는 탈영병 정예조가 남고 탈영병 척후조는 저온 창고 문간에 모인다.
@@ -10168,7 +10168,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ## G11 · 강남 이탈 인간형
 
 - 현대 불안: 용산호송가 호송 당직은 배정 표를 창 걸쇠보다 먼저 손에 든다. 성하그룹 정비 당직은 배터리 수를 교체 주기마다 정비 장부에 다시 적는다. Arc 복도 당직은 당직 두 사람이 함께 클리닉 잔여 복도 입구를 연다. 창 받침대의 귀환 명부 사본은 창 앞 인원수와 같은 순서로 놓여 있다.
-- 허구 기원: 용산호송가 호송 당직은 초겨울 밤 강남 정비 측선 멸균 전력 콘센트 열에서 이 무리를 본다. 콘센트 열의 불빛은 희다. 이탈 인간형 선두는 열 한가운데에 서 있고 손에 뚜껑이 닫힌 교환용 배터리를 들고 있다. 작업복의 배정 표에는 받침대의 측선 칸과 다른 칸이 적혀 있다. 이탈 인간형 호위조는 선두의 좌우 칸에 서 있다.
+- 기원: 용산호송가 호송 당직은 초겨울 밤 강남 정비 측선 멸균 전력 콘센트 열에서 이 무리를 본다. 콘센트 열의 불빛은 희다. 이탈 인간형 선두는 열 한가운데에 서 있고 손에 뚜껑이 닫힌 교환용 배터리를 들고 있다. 작업복의 배정 표에는 받침대의 측선 칸과 다른 칸이 적혀 있다. 이탈 인간형 호위조는 선두의 좌우 칸에 서 있다.
 - 영역: 강남 이탈 인간형은 강남 정비 측선의 멸균 전력 콘센트 열에 모인다. 배터리 교체 주기마다 수서 야간 호송 창과 클리닉 잔여 복도 입구를 오간다. 초겨울 밤에는 창 턱에서 배터리 교환을 길게 이어 가고, 임진강관문전구가 검역을 강화한 날에는 그 왕복의 걸음을 발판 칸 하나에 맞춘다. 강남 이탈 인간형은 부품 마모 상한 안의 측선에서 움직인다.
 - 경제: 교환용 배터리와 클리닉 잔여 복도의 당직 소모품이 이 창을 오간다. 성하그룹 정비 장부에는 콘센트 칸 수와 배터리 수가 적혀 있다. 용산호송가는 수서 야간 호송 창 턱에 그 수만큼의 배터리를 올려 둔다. Arc은 복도 출입 시간과 소모품 수를 같은 장부의 이웃 칸에 맞춘다.
 - 생애: 배터리 교체 주기가 시작되면 사람은 강남 정비 측선 멸균 전력 콘센트 열에 모인다. 교환용 배터리를 수서 야간 호송 창 턱까지 옮기면 무리는 창 발판과 클리닉 잔여 복도 입구로 나뉘어 선다. 부품 마모 상한 눈금에 닿은 사람은 콘센트 열 한가운데로 모여 그 칸 앞에 머문다.
@@ -10225,7 +10225,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ## G12 · 신내 탈영병
 
 - 현대 불안: 신내운수 화물 당직은 근무 책상을 엘리베이터에서 떨어진 청정 구간 쪽에 둔다. 당직은 분진 통로 문고리를 잠가 두고 갤러리 쪽 등을 켠 채로 둔다. 수문국 급수 당직은 완전 밀폐 청정 구간 안에서 역세 밸브 앞에 있다. 금천구청중기가 기계 당직은 승강 패널 뚜껑을 닫고 철장을 패널 앞에 세운다.
-- 허구 기원: 신내운수 화물 당직이 한여름 밤 신내 화물 엘리베이터 분진 통로에서 이 무리를 처음 본다. 전투복을 입은 병사 여럿이 통로에 서 있다. 어깨에는 소총이 있다. 발치에는 탄 상자와 물통이 있다. 어깨의 표식은 국가 군 조직의 표식이다.
+- 기원: 신내운수 화물 당직이 한여름 밤 신내 화물 엘리베이터 분진 통로에서 이 무리를 처음 본다. 전투복을 입은 병사 여럿이 통로에 서 있다. 어깨에는 소총이 있다. 발치에는 탄 상자와 물통이 있다. 어깨의 표식은 국가 군 조직의 표식이다.
 - 영역: 무리가 모이는 자리는 신내 화물 엘리베이터 분진 통로다. 물 세척 주기와 정수 역세 일정에는 여의도 정수 필터 갤러리 해치 앞에 선다. 서해곡창 부두에서 분진이 들어오는 낮에는 외곽 통로 입구에 선다. 완전 밀폐 청정 구간 앞에서는 입구 쪽에 머물고 구간 안은 당직의 자리다.
 - 경제: 탄 상자, 전투식량 깡통, 물통, 여벌 전투복, 무전 전지가 화물 엘리베이터 칸과 필터 갤러리 사이에 놓여 있다. 신내운수 화물 목록은 탁자 끝에 있고 그 수량 칸에 줄이 그어져 있다. 수문국 급수 당직의 갤러리 물통은 같은 칸에 있다. 금천구청중기가의 공구 상자는 승강 패널 옆에 열려 있다. 이채온 당직의 상자는 무전기 옆에 있다.
 - 생애: 한여름 밤 통로 모퉁이에는 병사 몇이 서 있다. 초가을 세척 주기에는 같은 부대 표식을 단 병사와 나무 상자가 엘리베이터 칸에 더 있다. 역세가 돌아가는 새벽에는 무리가 승강장과 여의도 정수 필터 갤러리 해치 앞으로 나뉘어 있다.
@@ -10285,7 +10285,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 
 비상 물자와 의약품이 잘못된 슈트로 떨어지고 통로가 자동 게이트에 잠기며 라벨 없는 상자가 위험 화물 칸을 채운다.
 
-- 허구 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
+- 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
 
 붕괴 직후 규격맹 구로공단 기숙 잔존 회랑과 야간 부품 창을 잇던 무인 분류 라인이 비상 전원 재접속만으로 재가동됐다.
 
@@ -10452,7 +10452,7 @@ H13이 당직 로그에 거래 조건과 표 해시를 남기면 컨트롤러가
 
 실재 호출 플랫폼 사고나 특정 기업, 지자체 책임을 단정하지 않는다.
 
-- 허구 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
+- 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
 
 붕괴 이후 아관사 환승 슬롯 서버와 건대 고려인 회랑의 배차 잔여가 부분 전원만으로 다시 붙었다.
 
@@ -10641,7 +10641,7 @@ H14가 서명 해시와 잔여 토큰 수를 당직 로그에 남기면 다음 �
 
 실재 돌봄 노동자나 환자를 비난 희화 선정적으로 재연하지 않는다.
 
-- 허구 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
+- 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
 
 보호 대상 목록은 마지막 대피 명단을 고정한 채 갱신되지 않았고, 순환체는 명단 안의 생체 신호를 끝까지 붙잡으려 한다.
 
@@ -10808,7 +10808,7 @@ HP01이 키를 다시 나누고 칸마다 동의를 묻는 일은 느리고 필�
 
 야간 측량 빔 단발 용접 가설 슬래브 위의 무인 크레인이 그 모습이다.
 
-- 허구 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
+- 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
 
 붕괴 이후 Arc 도면 금고와 동방사 중장비 데크에 남아 있던 시공 기계가 로컬 도면 캐시를 읽으며 깨어났다.
 
@@ -10981,7 +10981,7 @@ HP02가 오래된 레이어를 한 장씩 대조하는 동안 선로 점유와 �
 
 그중 적색 플래그 회전 헤드가 수변 회랑을 거듭 봉쇄한다.
 
-- 허구 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
+- 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
 
 붕괴 이후 수문국 수변 마스트와 대한민국정부 옥상 잔여 안테나가 로컬 경보 룰만으로 다시 붙었다.
 
@@ -11154,7 +11154,7 @@ HP03은 환자를 기다리게 하지 않으면서 돔을 닦고 비콘을 대�
 
 심야의 용접 불꽃과 연마 분진, 측선 포인트의 무단 전환이 반복된다.
 
-- 허구 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
+- 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
 
 붕괴 이후 규격맹 기지 잔여 보수편성과 환적국 폐선 구간의 자동 보수 스케줄이 로컬 연동으로 남았다.
 
@@ -11324,7 +11324,7 @@ HP04가 킬로정마다 봉인 서를 대조해 편성을 떼어 내는 동안 �
 ## G19 · 그르렁이
 
 - 현대 불안: 수문국 급수 당직이 장갑을 낀 채로 문턱에 서 있다. 젖은 걸레는 들통 안에 있다. 냉각수 밸브는 잠겨 있다. 당직의 남은 장화는 물가에 놓여 있다.
-- 허구 기원: 수문국 급수 당직이 한여름 밤 태욱그룹 지하 냉각 회랑 밸브실에서 사람을 본다. 사람은 밸브실에 서 있다. 입가와 목이 젖어 있으며 손끝에 푸른 때가 있다. 들이쉬는 숨마다 목에서 그르렁 소리가 난다.
+- 기원: 수문국 급수 당직이 한여름 밤 태욱그룹 지하 냉각 회랑 밸브실에서 사람을 본다. 사람은 밸브실에 서 있다. 입가와 목이 젖어 있으며 손끝에 푸른 때가 있다. 들이쉬는 숨마다 목에서 그르렁 소리가 난다.
 
 회랑 모퉁이 밖에서는 걸음이 난다. 밸브실 문턱에서는 목소리가 배관 철판을 울린다. 수문국 급수 당직은 노량진선 우회 급수관 쪽에 있다. 작업등 아래의 눈은 가늘다.
 
@@ -11350,7 +11350,7 @@ HP04가 킬로정마다 봉인 서를 대조해 편성을 떼어 내는 동안 �
 ## G20 · 철컥이
 
 - 현대 불안: 하부 발판이 상부 선반에 포개져 있다. 선반 당직의 장화가 상부 발판 위에 나란하다. 야간 순찰의 손전등이 상부 난간에 걸려 있다. 하부 도크 통로에는 쇄정이 걸려 있다.
-- 허구 기원: 도크 야간 당직이 뚝섬 연합 Arc 선반 하부 도크 가장자리에서 철컥이를 처음 본다. 해무가 짙은 주의 밤이다. 도크 가장자리 볼트 구멍에 얇은 철편이 겹쳐 있으며 필릿 용접 토우에도 같은 철편이 걸쳐 있다. 해무가 철편 사이에 맺혀 있다. 철편이 맞닿는 곳마다 철컥 소리가 난다. 도크 야간 당직의 작업등이 용접 토우를 비춘다.
+- 기원: 도크 야간 당직이 뚝섬 연합 Arc 선반 하부 도크 가장자리에서 철컥이를 처음 본다. 해무가 짙은 주의 밤이다. 도크 가장자리 볼트 구멍에 얇은 철편이 겹쳐 있으며 필릿 용접 토우에도 같은 철편이 걸쳐 있다. 해무가 철편 사이에 맺혀 있다. 철편이 맞닿는 곳마다 철컥 소리가 난다. 도크 야간 당직의 작업등이 용접 토우를 비춘다.
 
 같은 자리에서 철컥이의 몸이 필릿 용접 토우에 엎드려 있다. 가슴과 갈비에 얇은 철편이 겹쳐 있다. 목에서 철컥 소리가 난다. 플랜지 볼트 머리가 입 앞에 쌓여 있다. 볼트가 빠진 플랜지가 입 쪽에 있다.
 
@@ -11376,7 +11376,7 @@ HP04가 킬로정마다 봉인 서를 대조해 편성을 떼어 내는 동안 �
 ## G21 · 벽두드리기
 
 - 현대 불안: 동방사 관로 당직은 귀마개를 쓴 채 벽감 철문에 등을 대고 있다. 함 안쪽에 담요가 겹쳐 놓여 있다. 손전등이 바닥의 리벳 줄을 비춘다.
-- 허구 기원: 동방사 관로 당직이 광진선 동방사 지하 관로 중계 벽감의 철문 앞에 서 있다. 초겨울 밤이다. 벽감 안에 사람이 관벽에 이마를 대고 있다.
+- 기원: 동방사 관로 당직이 광진선 동방사 지하 관로 중계 벽감의 철문 앞에 서 있다. 초겨울 밤이다. 벽감 안에 사람이 관벽에 이마를 대고 있다.
 
 입가와 목이 젖어 있으며 숨마다 목에서 그르렁 소리가 난다. 숨이 나갈 때마다 이마가 철판을 한 번 친다. 양손은 리벳 옆에 놓여 있다. 손끝에는 철판의 검은 때가 묻어 있다. 가슴은 난방 배관이 지나는 이음새 쪽이다.
 
@@ -11402,7 +11402,7 @@ HP04가 킬로정마다 봉인 서를 대조해 편성을 떼어 내는 동안 �
 ## G22 · 불꽃등이
 
 - 현대 불안: 야적 당직은 검사등을 측선 입구에만 켜 둔 채 차단기 집에 있다. 보존고 외벽 순찰은 모퉁이 안쪽 계단에 서 있다. 곡물 열차 승무 표찰이 기관차 출입문에 걸려 있다.
-- 허구 기원: 대한민국정부 지하 제습 실패 구간과 창동 차륜방 폐전지 임시 야적이 같은 우기에 물을 머금었다. 전지 상자 옆 철판에 전해질 결정이 금속 가지로 서 있고 가지 끝에서 불꽃이 붙는다. 특정 전지·화학 법인을 지목하지 않는다.
+- 기원: 대한민국정부 지하 제습 실패 구간과 창동 차륜방 폐전지 임시 야적이 같은 우기에 물을 머금었다. 전지 상자 옆 철판에 전해질 결정이 금속 가지로 서 있고 가지 끝에서 불꽃이 붙는다. 특정 전지·화학 법인을 지목하지 않는다.
 - 영역: 서울역 중앙 대한민국정부 지하 보존고 외벽이 불꽃이 머무는 자리다. 야적 검사가 늦은 주에는 불꽃이 강남선 성하그룹 측선 야적에 가 있다. 서해곡창전구에서 온 습기 많은 곡물 열차의 지붕에 응결수가 맺혀 있고 그 옆에 불꽃이 잇따라 있다.
 - 경제: 창동 차륜방 폐전지 상자가 측선 야적 앞줄에 놓여 있다. 서해곡창전구 곡물 포대가 불꽃 앉은 화차에서 레일 밖으로 옮겨져 있다. 탄 포대 끈이 배수로 물에 떠 있다. 성하그룹 야적 장부가 차단기 집에 펼쳐져 있으며 화차 번호가 연필로 그어져 있다.
 - 생애: 외벽 철판을 두드리던 사람이 같은 철판 앞에 서 있다. 두드리던 손등에 푸른 불꽃이 붙어 있다. 무릎은 벽 하단 배수로 쪽에 있으며 어깨의 불꽃은 작업등 앞에 있다.
@@ -11420,7 +11420,7 @@ HP04가 킬로정마다 봉인 서를 대조해 편성을 떼어 내는 동안 �
 ## G23 · 우두커니
 
 - 현대 불안: 보냉 당직은 차단문 바깥에 서 있다. 입구의 작업등 두 개가 켜져 있다. 손전등은 어두운 칸의 문턱에 놓여 있고 보냉 당직의 발은 문 바깥의 마른 바닥에 있다.
-- 허구 기원: 보냉 당직이 한겨울 새벽에 제상 복도에서 우두커니를 처음 본다. 사람은 복도에 서 있다. 어깨와 머리칼에 서리가 앉아 있으며 두 팔은 몸 옆에 있다. 고개는 코일 하우징 쪽이다. 가슴은 잠잠하고 입은 다물어져 있다. 입가의 서리는 그대로다. 장화는 제상수 안에 있다.
+- 기원: 보냉 당직이 한겨울 새벽에 제상 복도에서 우두커니를 처음 본다. 사람은 복도에 서 있다. 어깨와 머리칼에 서리가 앉아 있으며 두 팔은 몸 옆에 있다. 고개는 코일 하우징 쪽이다. 가슴은 잠잠하고 입은 다물어져 있다. 입가의 서리는 그대로다. 장화는 제상수 안에 있다.
 
 작업등은 복도 입구에 있다. 보냉 당직은 차단문 문턱에 있다. 코일 하우징의 물방울이 그 장화 앞으로 떨어진다.
 
@@ -11446,7 +11446,7 @@ HP04가 킬로정마다 봉인 서를 대조해 편성을 떼어 내는 동안 �
 ## G24 · 울보
 
 - 현대 불안: 세척실 문은 카세트로 받쳐져 있다. 야간 조명은 회수백 위에만 켜져 있다. 세척실 야간 당직의 장갑은 두 겹으로 젖어 있다.
-- 허구 기원: 한겨울 밤, 세척실 야간 당직이 야간 세척실의 관류 배관 앞에 서 있다. 바닥의 물은 발목까지 차 있고 흡인관 이음에서 울음이 난다. 울보는 그 물가에 있으며 얼굴과 가슴이 젖어 있다.
+- 기원: 한겨울 밤, 세척실 야간 당직이 야간 세척실의 관류 배관 앞에 서 있다. 바닥의 물은 발목까지 차 있고 흡인관 이음에서 울음이 난다. 울보는 그 물가에 있으며 얼굴과 가슴이 젖어 있다.
 
 세척실 야간 당직이 같은 회수백에서 보던 사람의 입이 벌어져 있다. 벌어진 입에서 울음이 세척실로 퍼진다. 턱에서 떨어진 물이 가슴께 작업복에 배어 있다. 큰울보는 회수백 가장자리에 서 있고 양손은 회수백의 물속에 있다.
 
@@ -11475,7 +11475,7 @@ HP04가 킬로정마다 봉인 서를 대조해 편성을 떼어 내는 동안 �
 
 작은 기체 수백 대가 바닥과 벽을 뒤덮고 도움을 뜻하던 안내등이 접근 금지선으로 바뀌며 끊어진 중계 신호 하나가 구조품 전체를 빈 격납고로 돌릴 수 있다.
 
-- 허구 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
+- 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
 
 등불개미는 대정전 무렵의 곤충 모양 자율 무기 드론 계열이었다.
 
@@ -11624,7 +11624,7 @@ HC15에 모든 제어판과 부품을 넘기면 운용은 빨라져도 다른 �
 
 실재 기업이나 현직 공공 조직의 장비 결함 부실 운영 재난 책임을 지목하지 않는다.
 
-- 허구 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
+- 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
 
 철공룡는 대정전 무렵의 공룡 모양 자율 무기 드론 계열이었다.
 
@@ -22179,7 +22179,7 @@ Gap-whisker, warm core, and counter-core were path and breeding concentrations o
 
 | Item | Record |
 |---|---|
-| Origin | The Brown Rat settled as the transfer junction between the underground ration passages of the Eastern Command on the Gwangjin Line and the evacuation stairs of the Anguk Order on the Yeouido Line provided a constant supply of food and heat leaking from insulated pipes. / This colony was set up not as a pathogen superhost but as dependent on food, warmth, and shelter. / Apart from the basic danger that food and warmth governed density and droppings damaged cables, the dispersed core-nest network, the learning of pest-control order, the one-way escape routes, and the non-target safety procedures were all a fictional management model that held only in this world. |
+| Origin | The Brown Rat settled as the transfer junction between the underground ration passages of the Eastern Command on the Gwangjin Line and the evacuation stairs of the Anguk Order on the Yeouido Line provided a constant supply of food and heat leaking from insulated pipes. / This colony was set up not as a pathogen superhost but as dependent on food, warmth, and shelter. / Apart from the basic danger that food and warmth governed density and droppings damaged cables, the dispersed core-nest network, the learning of pest-control order, the one-way escape routes, and the non-target safety procedures were all an operating model observed only in this region. |
 | Habitat and movement | The core habitat was the lower level of the Gwangjin Line transfer shopping street and the cable trays, and when refuge density rose it expanded into the Yeouido Line evacuation stairs and the walls of the temporary feeding stations. / When frozen and deep-sea protein remains piled up on the XT05 Incheon Trust Theater side, the colony extended branch nests as far as the unloading elevator shafts. / In zones with a short disinfection cycle it came up to the surface only at night. |
 | Food and energy | Crumb carbohydrates, protein remains, and heat from the warming pipes were the three core resources. / Even when HC05 the Bukhansan Bogukmun Records House tightened the sealing of its document and reagent stores, the food problem was not solved, and the factors that actually governed density were leftover collection from the feeding stations and tray sealing. / Colony droppings accelerated corrosion of the wire sheathing and cut the available hours of the lighting and the guide boards. |
 | Life cycle and upkeep | Where food and the warming pipes met, two or three core nests formed, and from each core branch nests ran out along the cable trays. / When one core vanished, the remaining cores opened new routes and the colony redistributed, and density fell only when food collection and dry conditions continued in every section. |
@@ -23176,7 +23176,7 @@ Spreading the unloading created no non-target risk, but raised the unit cost of 
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 광진선 동방사 지하 배급 통로와 여의도선 안국총림 대피 계단 사이 환승 연결부가 상시 음식물·보온 배관 누열을 제공하면서 집쥐가 정착했다. / 이 군락은 병원체 슈퍼숙주가 아니라 먹이·온열·은신처에 의존하도록 설정했다. / 먹이와 보온이 밀도를 좌우하. 배설물이 케이블을 손상시키는 기본 위험을 제외하면, 분산 코어 둥지망·방제 순서 학습·단방향 퇴로·비표적 안전 절차는 모두 이 세계관에서만 성립하는 허구적 관리 모델이다. |
+| 기원 | 광진선 동방사 지하 배급 통로와 여의도선 안국총림 대피 계단 사이 환승 연결부가 상시 음식물·보온 배관 누열을 제공하면서 집쥐가 정착했다. / 이 군락은 병원체 슈퍼숙주가 아니라 먹이·온열·은신처에 의존하도록 설정했다. / 먹이와 보온이 밀도를 좌우하. 배설물이 케이블을 손상시키는 기본 위험을 제외하면, 분산 코어 둥지망·방제 순서 학습·단방향 퇴로·비표적 안전 절차는 모두 이 지역에서만 관측되는 관리 모델이다. |
 | 서식·이동 | 핵심 서식은 광진선 환승 상점가 하부와 케이블 트레이이며, 피난 밀도가 오르면 여의도선 대피 계단·임시 급식소 벽체로 확장한다. / XT05 인천신탁전구 쪽 냉동·원양 단백질 잔여물이 쌓이면 군락이 하역 엘리베이터 통로까지 가지 둥지를 넓힌다. / 소독 주기가 짧은 구역에서는 야간에만 지상으로 오른다. |
 | 먹이·에너지 | 부스러기 탄수화물·단백질 잔여·보온 배관 열이 주 자원 셋이다. / HC05 북한산보국문기록가이 보관 문서·시약 창고 밀봉을 강화해도 먹이 문제는 해결되지 않으며, 밀도를 좌우하는 요인은 급식 잔반 회수와 트레이 밀폐다. / 군락 배설이 전선 피복을 가속 부식시켜 조명·안내 전광 가용시간을 줄인다. |
 | 생애·정비 | 먹이와 보온 배관이 만나는 곳에 코어 둥지 2~3개가 생기고, 각 코어에서 케이블 트레이를 따라 가지 둥지가 뻗는다. / 한 코어가 사라지면 남은 코어가 새 이동로를 열어 군락이 재분배되며, 모든 구획에서 먹이 회수와 건조 상태가 이어져야 밀도가 내려간다. |
