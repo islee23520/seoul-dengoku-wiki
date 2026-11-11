@@ -19,7 +19,7 @@ From the empty-ring dogs to the cart-side dogs, these are ordinary dogs made by 
 
 | Item | Record |
 |---|---|
-| Origin | After the collapse, animals separated from private shelters, construction-site guard dogs, and crowd evacuations joined together between the vacant lots outside the Yongsan Line and the night loading docks of the Noryangjin Line and became the Feral Dog. / Their iron collar rings and corroded tags strike one another as they walk. / The UHF collar tags and the regrouping behavior were elements invented for this setting and were not used to blame real shelters or businesses. |
+| Origin | After the collapse, animals separated from private shelters, construction-site guard dogs, and crowd evacuations joined together between the vacant lots outside the Yongsan Line and the night loading docks of the Noryangjin Line and became the Feral Dog. / Their iron collar rings and corroded tags strike one another as they walk.. |
 | Habitat and movement | The core habitat is the vacant lot by the outer wall of the laboratory on the Yongsan Line and the closed guard passage, and depending on the season and the unloading cycle they move to the fishery and frozen-leftover axis of the Noryangjin Line. / When the logistics vibration from the Korea Strait Theater (XT03) grows, the band extends along the unloading-yard entrance, and in the daytime hours when the density of people is high they hide in drains and under the elevated roads. |
 | Food and energy | Leftover protein, fish guts, and discarded ration packs are the main resources, and scraps of collar, wire, and identification tag are markers that connect individual identification to the memory of a past feeding station. / When the Magok Life House (HC03) strengthens the sealing of waste protein, the band seeps into the market alleys, and when it loosens the seal, concentration at the unloading yard rises and contact with people increases. / Water that has been filtered and disinfected and then stored sealed so it is not recontaminated, and shaded resting places, are the upper limit of density. |
 | Life cycle and upkeep | A lone wandering individual finds the companions of a past feeding station by smell and by the sound of identification tags and makes a small family, and when unloading leftovers increase, several families rebind into a loose alliance. / When the feeding schedule stabilizes, territorial defense increases over breeding, and after a forced capture they gather again around the individuals whose identification tags remain. |
@@ -1288,7 +1288,7 @@ Its body was medium-sized, but its iron sounded all at once with the multi-ring,
 
 On a night when the XT03 logistics vibration and a halt in feeding coincided, small families from the Magok vacant lot, the Noryangjin unloading, and under the overpasses surrounded the same ramp, and this phase arose.
 
-It was a created regrouping network, not a legendary line of chiefs.
+The regrouping network was not a legendary line of chiefs, but separated small families joined again.
 
 <a id="Hostile-Group-G03-heading-0413"></a>
 
@@ -1385,8 +1385,6 @@ Its paw pads were always wet and its identification tag corroded quickly, and it
 ### Origin
 
 It was a small family that spread along the unloading-yard entrance as the vibration on the Strait Three Routes side grew; it used the same Iron Pack name but did not share sleeping places with the vacant-lot lead.
-
-It was a created regional adaptation, not an explanation of any real port accident.
 
 <a id="Hostile-Group-G03-heading-0447"></a>
 

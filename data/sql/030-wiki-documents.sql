@@ -6964,8 +6964,6 @@ Putting transmission recovery ahead of the ecology lengthens the night blackout 
 
 Their iron collar rings and corroded tags strike one another as they walk.
 
-The UHF collar tags and the regrouping behavior were elements invented for this setting and were not used to blame real shelters or businesses.
-
 - Territory: The core habitat is the vacant lot by the outer wall of the laboratory on the Yongsan Line and the closed guard passage, and depending on the season and the unloading cycle they move to the fishery and frozen-leftover axis of the Noryangjin Line.
 
 When the logistics vibration from the Korea Strait Theater (XT03) grows, the band extends along the unloading-yard entrance, and in the daytime hours when the density of people is high they hide in drains and under the elevated roads.
@@ -7204,7 +7202,7 @@ Colony droppings accelerated corrosion of the wire sheathing and cut the availab
 
 When one core vanished, the remaining cores opened new routes and the colony redistributed, and density fell only when food collection and dry conditions continued in every section.
 
-- Long-term adaptation: The phenomenon in which open retreats changed to avoid the sequence of toxic spraying, ultrasound, and sealing was a population-learning rule of the Seoul fiction, and was not explained as rapid genetic variation.
+- Long-term adaptation: The phenomenon in which open retreats changed to avoid the sequence of toxic spraying, ultrasound, and sealing was a population-learning rule passed down across generations, not rapid genetic variation.
 
 Over many generations, individuals that endured low temperatures and bright platforms could be selected, but energy use rose and the breeding rate fell.
 
@@ -7753,10 +7751,6 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 Emergency supplies and medicines dropped into the wrong chutes, passages were locked by automatic gates, and unlabeled boxes filled the hazardous-cargo bays.
 
-It did not assert or reenact the responsibility of real logistics-center accidents, particular companies, or present operators.
-
-Only the sensations citizens felt, noise, misclassification, and late-night confinement, were used as creative material.
-
 - Fictional origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
 
 Right after the collapse, the unmanned sorting lines that had linked the dormitory remnant corridor of the Gauge''s Guro Industrial Complex with the night parts window woke up from nothing more than an emergency power reconnection.
@@ -8101,8 +8095,6 @@ Writing that records the people outside the call queue as statistics alone is fo
 
 Fictional harm is left as a concrete place, a time, and the person responsible for the key.
 
-A sentence that paints total destruction as a virtue is not adopted.
-
 - Scenarios: G14-SC1, G14-SC2, G14-SC3
 
 <a id="Hostile-Ecology-Index-heading-0483"></a>
@@ -8213,7 +8205,7 @@ The failure of raising shoulder contact in the ration line, tool strikes, and to
 
 After a failure it inserted a remeasurement wait before setting a lock.
 
-Microphone values outside the cell were not adopted.
+Microphone values outside the cell were not accepted.
 
 A sharp drop in pump flow was read only as a request to change the pack.
 
@@ -8949,8 +8941,6 @@ At the end of the corridor on the midwinter night, the Jangsan tiger stands on t
 
 Hundreds of small units covered the floors and walls, guide lights that had meant help turned into no-entry lines, and a single broken relay signal could send all the relief goods to an empty hangar.
 
-It did not imply the responsibility of any real manufacturer, present institution, or disaster-response organization, and design defects and accident records were handled only within the creative ledger.
-
 - Fictional origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
 
 Lantern Ant belonged to the insect-shaped autonomous weapon drones of the Great Blackout era.
@@ -8965,7 +8955,7 @@ The higher command system and the design documents were gone, and the remaining 
 
 Much of the hostile action comes not from an attack judgment but from search-sector settings hardened like fossils, and from the load, recovery, and relay-restore order.
 
-The first recovery record remains as a fictional event only on the HC15 sealed survey table and the F09 field-read log.
+The first recovery record remains only on the HC15 sealed survey table and the F09 field-read log.
 
 After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter.
 
@@ -9113,8 +9103,6 @@ Long afterward, braking-test power on the Gangnam Line and an automatic inspecti
 Most of the original design drawings and approval system can no longer be read; all that remains of their behavior are partial routines such as axle-load tables, towing priorities, and safety radii.
 
 The low-frequency alarm that sounds like a roar, and the charge that follows it, express no will to conquer: they are the fossilized result of a procedure for securing a work zone.
-
-The account that the HC17 siding recovery team and an F10 load reader recorded the first reactivation is likewise confined to a fictional event.
 
 After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter.
 
@@ -9510,8 +9498,6 @@ XT02 해풍 주간에는 횃대 공유를 인정하는 임시 깃발을 단다.
 
 철제 목줄 고리와 부식 인식표가 걸을 때마다 서로 부딪혀 소리를 낸다.
 
-UHF 목걸이 태그와 재결속 행동은 본 설정에서 창작한 요소이며 실재 보호소·기업 비난으로 쓰지 않는다.
-
 - 영역: 주 서식은 용산선 연구소 외벽 공터와 폐쇄된 경비 통로이며, 계절·하역 주기에 따라 노량진선 수산·냉동 잔여물 축으로 이동한다.
 
 XT03 대한해협전구 쪽 물류 진동이 커지면 무리가 하역장 입구를 따라 확장하고, 인적 밀도가 높은 낮 시간에는 배수구·고가 하부로 숨는다.
@@ -9750,7 +9736,7 @@ HC05 북한산보국문기록가이 보관 문서·시약 창고 밀봉을 강�
 
 한 코어가 사라지면 남은 코어가 새 이동로를 열어 군락이 재분배되며, 모든 구획에서 먹이 회수와 건조 상태가 이어져야 밀도가 내려간다.
 
-- 장기 적응: 독성 살포·초음파·밀폐 순서를 피해 열린 퇴로가 달라지는 현상은 서울 창작의 개체군 학습 규칙이며 빠른 유전 변이로 설명하지 않는다.
+- 장기 적응: 독성 살포·초음파·밀폐 순서를 피해 열린 퇴로가 달라지는 현상은 세대를 이어 배운 개체군 학습 규칙이지 빠른 유전 변이가 아니다.
 
 여러 세대 동안 저온과 밝은 승강장을 견디는 개체가 선택될 수 있으나 에너지 소비와 번식률이 떨어진다.
 
@@ -10299,10 +10285,6 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 
 비상 물자와 의약품이 잘못된 슈트로 떨어지고 통로가 자동 게이트에 잠기며 라벨 없는 상자가 위험 화물 칸을 채운다.
 
-실재 물류 센터 사고나 특정 기업, 현직 운영 주체의 책임을 단정하거나 재연하지 않는다.
-
-시민이 느끼는 소음 오분류 심야 감금의 감각만 창작 재료로 삼는다.
-
 - 허구 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
 
 붕괴 직후 규격맹 구로공단 기숙 잔존 회랑과 야간 부품 창을 잇던 무인 분류 라인이 비상 전원 재접속만으로 재가동됐다.
@@ -10647,8 +10629,6 @@ H14가 서명 해시와 잔여 토큰 수를 당직 로그에 남기면 다음 �
 
 허구 피해는 구체 장소와 시간, 키 책임자로 남긴다.
 
-전수 파괴를 미덕으로 그리는 문장은 채택하지 않는다.
-
 - 시나리오: G14-SC1, G14-SC2, G14-SC3
 
 <a id="Hostile-Ecology-Index-heading-0483"></a>
@@ -10759,7 +10739,7 @@ H15 배수아 관측 로그와 충돌하면 락을 보류하고 인간 확인을
 
 실패 후에는 락을 걸기 전에 재측정 대기를 넣는다.
 
-칸 밖 마이크 값은 채택하지 않는다.
+칸 밖 마이크 값은 받아들이지 않는다.
 
 펌프 유량 급감은 팩 교체 요청으로만 해석한다.
 
@@ -11495,8 +11475,6 @@ HP04가 킬로정마다 봉인 서를 대조해 편성을 떼어 내는 동안 �
 
 작은 기체 수백 대가 바닥과 벽을 뒤덮고 도움을 뜻하던 안내등이 접근 금지선으로 바뀌며 끊어진 중계 신호 하나가 구조품 전체를 빈 격납고로 돌릴 수 있다.
 
-특정 실재 제조사 현직 기관 재난 대응 조직의 책임을 암시하지 않으며 설계 결함과 사고 기록도 창작 장부 안에서만 다룬다.
-
 - 허구 기원: 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.
 
 등불개미는 대정전 무렵의 곤충 모양 자율 무기 드론 계열이었다.
@@ -11511,7 +11489,7 @@ HP04가 킬로정마다 봉인 서를 대조해 편성을 떼어 내는 동안 �
 
 적대 행동의 적지 않은 부분은 공격 판단이 아니라 굳어 버린 수색 구획 설정, 적재 회수 중계 복구 순서에서 나온다.
 
-최초 회수 기록은 HC15 봉인 조사표와 F09 현장 판독 로그에만 허구 사건으로 남는다.
+최초 회수 기록은 HC15 봉인 조사표와 F09 현장 판독 로그에만 남는다.
 
 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다.
 
@@ -11659,8 +11637,6 @@ HC15에 모든 제어판과 부품을 넘기면 운용은 빨라져도 다른 �
 원래 설계 도면과 승인 체계는 대부분 읽을 수 없고, 현재 남은 행동은 축 하중 표 견인 우선순위 안전 반경 같은 부분 루틴뿐이다.
 
 포효처럼 들리는 저주파 경보와 돌진은 정복 의지가 아니라 작업 구역 확보 절차가 굳어 남은 결과다.
-
-HC17 측선 회수대와 F10 하중 판독기가 최초의 재기동을 기록했다는 서술 역시 창작 사건에 한정된다.
 
 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다.
 
@@ -17565,7 +17541,7 @@ From the empty-ring dogs to the cart-side dogs, these are ordinary dogs made by 
 
 | Item | Record |
 |---|---|
-| Origin | After the collapse, animals separated from private shelters, construction-site guard dogs, and crowd evacuations joined together between the vacant lots outside the Yongsan Line and the night loading docks of the Noryangjin Line and became the Feral Dog. / Their iron collar rings and corroded tags strike one another as they walk. / The UHF collar tags and the regrouping behavior were elements invented for this setting and were not used to blame real shelters or businesses. |
+| Origin | After the collapse, animals separated from private shelters, construction-site guard dogs, and crowd evacuations joined together between the vacant lots outside the Yongsan Line and the night loading docks of the Noryangjin Line and became the Feral Dog. / Their iron collar rings and corroded tags strike one another as they walk.. |
 | Habitat and movement | The core habitat is the vacant lot by the outer wall of the laboratory on the Yongsan Line and the closed guard passage, and depending on the season and the unloading cycle they move to the fishery and frozen-leftover axis of the Noryangjin Line. / When the logistics vibration from the Korea Strait Theater (XT03) grows, the band extends along the unloading-yard entrance, and in the daytime hours when the density of people is high they hide in drains and under the elevated roads. |
 | Food and energy | Leftover protein, fish guts, and discarded ration packs are the main resources, and scraps of collar, wire, and identification tag are markers that connect individual identification to the memory of a past feeding station. / When the Magok Life House (HC03) strengthens the sealing of waste protein, the band seeps into the market alleys, and when it loosens the seal, concentration at the unloading yard rises and contact with people increases. / Water that has been filtered and disinfected and then stored sealed so it is not recontaminated, and shaded resting places, are the upper limit of density. |
 | Life cycle and upkeep | A lone wandering individual finds the companions of a past feeding station by smell and by the sound of identification tags and makes a small family, and when unloading leftovers increase, several families rebind into a loose alliance. / When the feeding schedule stabilizes, territorial defense increases over breeding, and after a forced capture they gather again around the individuals whose identification tags remain. |
@@ -18834,7 +18810,7 @@ Its body was medium-sized, but its iron sounded all at once with the multi-ring,
 
 On a night when the XT03 logistics vibration and a halt in feeding coincided, small families from the Magok vacant lot, the Noryangjin unloading, and under the overpasses surrounded the same ramp, and this phase arose.
 
-It was a created regrouping network, not a legendary line of chiefs.
+The regrouping network was not a legendary line of chiefs, but separated small families joined again.
 
 <a id="Hostile-Group-G03-heading-0413"></a>
 
@@ -18931,8 +18907,6 @@ Its paw pads were always wet and its identification tag corroded quickly, and it
 ### Origin
 
 It was a small family that spread along the unloading-yard entrance as the vibration on the Strait Three Routes side grew; it used the same Iron Pack name but did not share sleeping places with the vacant-lot lead.
-
-It was a created regional adaptation, not an explanation of any real port accident.
 
 <a id="Hostile-Group-G03-heading-0447"></a>
 
@@ -19197,7 +19171,7 @@ The mobile feeding station preserves the trust signal, but it costs the labor of
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 붕괴 후 사설 보호소·공사장 경비견·군중 대피 시 헤어진 개체들이 용산선 외곽 공터와 노량진선 야간 하역장 사이에 합류해 들개가 됐다. / 철제 목줄 고리와 부식 인식표가 걸을 때마다 서로 부딪혀 소리를 낸다. / UHF 목걸이 태그와 재결속 행동은 본 설정에서 창작한 요소이며 실재 보호소·기업 비난으로 쓰지 않는다. |
+| 기원 | 붕괴 후 사설 보호소·공사장 경비견·군중 대피 시 헤어진 개체들이 용산선 외곽 공터와 노량진선 야간 하역장 사이에 합류해 들개가 됐다. / 철제 목줄 고리와 부식 인식표가 걸을 때마다 서로 부딪혀 소리를 낸다.. |
 | 서식·이동 | 주 서식은 용산선 연구소 외벽 공터와 폐쇄된 경비 통로이며, 계절·하역 주기에 따라 노량진선 수산·냉동 잔여물 축으로 이동한다. / XT03 대한해협전구 쪽 물류 진동이 커지면 무리가 하역장 입구를 따라 확장하고, 인적 밀도가 높은 낮 시간에는 배수구·고가 하부로 숨는다. |
 | 먹이·에너지 | 단백질 잔여·생선 내장·버려진 급식 팩이 주 자원이고, 목줄·철사·인식표 조각은 개체 식별과 과거 급식소 기억을 잇는 표식이다. / HC03 마곡생명가가 폐기 단백질 밀봉을 강화하면 무리는 시장 골목으로 스며들고, 느슨히 하면 하역장 집중도가 올라 인명 접촉이 늘어난다. / 여과·소독한 뒤 재오염되지 않게 밀폐 저장한 급수와 그늘 휴식지가 밀도 상한이다. |
 | 생애·정비 | 단독 유랑 개체는 냄새와 인식표 소리로 과거 급식소 동료를 찾아 소가족을 만들고, 하역 잔여가 늘면 여러 가족이 느슨한 연합으로 재결속한다. / 급식 일정이 안정되면 번식보다 영역 방어가 늘며, 강제 포획 뒤에는 인식표가 남은 개체를 중심으로 다시 모인다. |
@@ -20466,7 +20440,7 @@ G03-SC2 ‘급식차를 기억하는 무리’에서 중심을 맡으며, G03-SC
 
 XT03 물류 진동과 급식 중단이 겹친 밤에, 마곡 공터와 노량진 하역과 고가 밑에서 온 소가족들이 같은 진입로를 둘러싸며 이 국면이 생겼다.
 
-창작된 재결속망이지 전설의 우두머리 혈통이 아니다.
+재결속망은 전설의 우두머리 혈통이 아니라 갈라졌던 소가족이 다시 엮인 것이다.
 
 <a id="Hostile-Group-G03-heading-0413"></a>
 
@@ -20563,8 +20537,6 @@ G03-SC3 ‘환승 계단의 재결속’의 보스 국면이며, G03-SC1의 태�
 ### 기원
 
 해협삼로 쪽 진동이 커지자 하역장 입구를 따라 확장한 소가족으로, 같은 철군 호칭을 쓰되 공터 선도와는 잠자리를 공유하지 않는다.
-
-창작된 지역 적응이며 실재 항만 사고의 설명이 아니다.
 
 <a id="Hostile-Group-G03-heading-0447"></a>
 
@@ -22213,7 +22185,7 @@ Gap-whisker, warm core, and counter-core were path and breeding concentrations o
 | Life cycle and upkeep | Where food and the warming pipes met, two or three core nests formed, and from each core branch nests ran out along the cable trays. / When one core vanished, the remaining cores opened new routes and the colony redistributed, and density fell only when food collection and dry conditions continued in every section. |
 | Senses | By scent and whisker they found airflow and food, and by the temperature and vibration reaching their feet and bodies they separated warm hiding places from the approach of trains and carts. / They could not classify distant heat sources, and they did not decode electronic signals either. / Only H05 Yunjae''s infrared map compared colony, steam, and human heat sources from a distance, and it was read together with the droppings on the floor. |
 | Group behavior | There was no fixed leader, and two or three breeding-core nests were the centers of the route net. / Route-pioneering individuals opened new trays, and movement volume concentrated on the core with the most food traces. / H05 did not infer one heat point to be a leader, and displayed movement volume by core. / When one core was destroyed, individuals dispersed sharply into the remaining nests. |
-| Long-term adaptation | The phenomenon in which open retreats changed to avoid the sequence of toxic spraying, ultrasound, and sealing was a population-learning rule of the Seoul fiction, and was not explained as rapid genetic variation. / Over many generations, individuals that endured low temperatures and bright platforms could be selected, but energy use rose and the breeding rate fell. / The more one measure was repeated, the faster route avoidance became, and compound pest control became necessary. |
+| Long-term adaptation | The phenomenon in which open retreats changed to avoid the sequence of toxic spraying, ultrasound, and sealing was a population-learning rule passed down across generations, not rapid genetic variation. / Over many generations, individuals that endured low temperatures and bright platforms could be selected, but energy use rose and the breeding rate fell. / The more one measure was repeated, the faster route avoidance became, and compound pest control became necessary. |
 
 <a id="Hostile-Group-G05-heading-0008"></a>
 
@@ -23210,7 +23182,7 @@ Spreading the unloading created no non-target risk, but raised the unit cost of 
 | 생애·정비 | 먹이와 보온 배관이 만나는 곳에 코어 둥지 2~3개가 생기고, 각 코어에서 케이블 트레이를 따라 가지 둥지가 뻗는다. / 한 코어가 사라지면 남은 코어가 새 이동로를 열어 군락이 재분배되며, 모든 구획에서 먹이 회수와 건조 상태가 이어져야 밀도가 내려간다. |
 | 감각 | 후각·수염으로 기류와 먹이를 찾고 발과 몸에 닿는 온도·진동으로 따뜻한 은신처와 열차·카트 접근을 구분한다. / 원거리 열원을 분류하지 못하며 전자 신호도 해독하지 않는다. / H05 윤재의 적외선 맵만 군락·증기·사람 열원을 멀리서 비교하고, 바닥 배설 흔적과 맞춰 판독한다. |
 | 집단 행동 | 고정 우두머리는 없고 번식 코어 둥지 2~3곳이 경로망의 중심이다. / 경로 개척 개체가 새 트레이를 열고 먹이 흔적이 많은 코어로 이동량이 쏠린다. / H05는 열점 하나를 우두머리로 추정하지 않고 코어별 이동량을 표시한다. / 코어 하나가 파괴되면 남은 둥지로 개체가 급격히 분산한다. |
-| 장기 적응 | 독성 살포·초음파·밀폐 순서를 피해 열린 퇴로가 달라지는 현상은 서울 창작의 개체군 학습 규칙이며 빠른 유전 변이로 설명하지 않는다. / 여러 세대 동안 저온과 밝은 승강장을 견디는 개체가 선택될 수 있으나 에너지 소비와 번식률이 떨어진다. / 한 수단을 반복할수록 경로 회피가 빨라져 복합 방제가 필요해진다. |
+| 장기 적응 | 독성 살포·초음파·밀폐 순서를 피해 열린 퇴로가 달라지는 현상은 세대를 이어 배운 개체군 학습 규칙이지 빠른 유전 변이가 아니다. / 여러 세대 동안 저온과 밝은 승강장을 견디는 개체가 선택될 수 있으나 에너지 소비와 번식률이 떨어진다. / 한 수단을 반복할수록 경로 회피가 빨라져 복합 방제가 필요해진다. |
 
 <a id="Hostile-Group-G05-heading-0008"></a>
 
@@ -32482,7 +32454,7 @@ The pumps and filters of the open cells and the duty consent forms were the base
 | Habitat and movement | The core habitat was the Myeongdong Union''s ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station. / When demand for assistive devices and parts surged, it went back and forth along the Ttukseom Union''s Ttukseom workshop bench, the ramp beside the sluice, and the assembly-jig row. / When an XT05 aid-code broadcast was on, the isolation radius widened and cart density rose. / In the daytime ration hours the carts stood behind the line, and density peaked on the night vital-sign circuit. / New strongpoints outside the roster were ignored by default. / On a flood or a sluice-open alarm it emptied the lower bed cells and shrank its movement to the upper rails alone. / When the ration peak ended, cart density folded inward along the welfare route only. / When the Ttukseom sluice ramp sounded an open alarm, it emptied the lower bed rails and moved to the upper circuit. / Carts did not enter market passages outside the roster. / Even when the aid-goods unloading yard was crowded, it made no new cells without a roster renewal. |
 | Food and energy | Energy came from the bed-cell outlets, cart batteries, the Ttukseom bench tool power, and residual distribution beside the sluice. / Consumables were sensor patches, restraint straps, filters, nutrition packs, pump disinfection-cycle fluid, and assistive-device joint pins. / Coolant was shared by the fever-reduction equipment and the motor cooling loop. / It competed with the HP01 Yeongdeungpo Sluice House over the sluice duty and key-split system and over power and water distribution. / The daily circuit count was bound to the battery floor and the filter stock. / An infinite care loop, remote unlimited prescriptions, and city-wide vital surveillance were not physically sustained. / When consumables ran out it lowered the lock strength by itself. / Filters and patches were replenished only from waste piles outside the regular ration window. / Without an HP01 key the swarm could not raise the capacity of the distribution beside the sluice. / When a pack ran empty the nutrition pump lowered its pressure and left only an alert. / At the floor, a cart battery allowed only the return along the rail. / When disinfection fluid ran out, lock strength dropped one step. / No infinite prescription table existed. |
 | Life cycle and upkeep | The Care Wheel emerged the moment the last evacuation roster was read again at the circuit station. / Emergence began with the resumption of the frozen-roster circuit, and spread was enrolling neighboring beds and carts into the same schedule. / Stagnation came from consumable and power exhaustion and filter clogging. / In the negotiable stage the roster and the consent window were disclosed to people. / Dissolution ended with the strap-release protocol, the power split, and the rail seal. / Individual increase was only binding abandoned carts and monitors to the roster, and no new bodies were produced. / The maintenance window was limited to filter exchange and battery swaps, memory cut at every circuit shift, and it stored no long-term patient narrative. / Custody was outranked by the human duty officer and the HP01 key record. / A cell whose filter clogged or whose nutrition pack ran empty dropped in protection strength and passed into open-wait, and the circuit resumed only when the HP01 duty officer split the consent form and the sluice key again. |
-| Senses | Vital-patch signals, pressure and fall sensors, the near-range microphone, door-lock contacts, nutrition-pump flow, and cart-rail vibration were the main senses. / There was no emotion reading, city-wide health map, complete medical diagnosis, or unlimited vital storage. / It misread a low pulse in sleep as an emergency, or wrongly raised tool noise as a scream. / It also overrated the crowding of a ration line as a fall risk. / On clash with H15 Baesua (Sua)''s observation log it held the lock and requested human confirmation. / Sensor fusion happened only at bed-cell units. / The failure of raising shoulder contact in the ration line, tool strikes, and tossing in sleep as emergencies repeated. / After a failure it inserted a remeasurement wait before setting a lock. / Microphone values outside the cell were not adopted. / A sharp drop in pump flow was read only as a request to change the pack. |
+| Senses | Vital-patch signals, pressure and fall sensors, the near-range microphone, door-lock contacts, nutrition-pump flow, and cart-rail vibration were the main senses. / There was no emotion reading, city-wide health map, complete medical diagnosis, or unlimited vital storage. / It misread a low pulse in sleep as an emergency, or wrongly raised tool noise as a scream. / It also overrated the crowding of a ration line as a fall risk. / On clash with H15 Baesua (Sua)''s observation log it held the lock and requested human confirmation. / Sensor fusion happened only at bed-cell units. / The failure of raising shoulder contact in the ration line, tool strikes, and tossing in sleep as emergencies repeated. / After a failure it inserted a remeasurement wait before setting a lock. / Microphone values outside the cell were not accepted. / A sharp drop in pump flow was read only as a request to change the pack. |
 | Group behavior | One care-schedule controller turned the roster and the circuit interval, and below were the bed-lock swarm, the cart swarm, and the pump swarm. / The controller adjusted only protection strength and had no punishment function. / A residual protocol remained by which, when HP01 presented the sluice-key split and the consent form, that cell''s lock opened. / The swarms merely repeated the last circuit table and made no independent confinement strategy. / On a clash between H15 and a machine agreement, human mediation took precedence. / On a roster-hash mismatch both dual controllers fell into open-wait. / Authority to lock a bed door again lay only with the HP01 duty officer holding the consent form and two separate sluice keys, and H15''s patch reading could request a remeasurement but could not overturn the open decision. |
 
 <a id="Hostile-Group-G15-heading-0008"></a>
@@ -33724,7 +33696,7 @@ Coexistence meant accepting slow opening procedures and the cost of extra watche
 | 서식·이동 | 핵심 서식은 명동 연합 배급 복지 동선 임시 병상 칸 순회 카트 레일 영양 펌프 스테이션이다. / 보조기와 부품 수요가 치솟을 때 뚝섬 연합 뚝섬 공방 벤치 수문 인접 램프 조립 지그 열을 오간다. / XT05 인도 코드 방송이 있으면 격리 반경이 넓어지고 카트 밀도가 오른다. / 낮 배급 시간에는 카트가 줄 뒤에 서고, 야간 활력 징후 순회에서 밀도가 최고가 된다. / 명단 밖 신규 거점은 기본 무시한다. / 침수나 수문 개방 경보 시 저층 병상 칸을 비우고 상층 레일로만 축소 이동한다. / 배급 피크가 끝나면 카트 밀도는 복지 동선 안쪽으로만 접힌다. / 뚝섬 수문 램프가 개방 경보를 울리면 저층 병상 레일을 비우고 상층 순회로 옮긴다. / 명단 밖 시장 통로에는 카트가 진입하지 않는다. / 인도 물자 하역장이 붐벼도 명단 갱신 없이는 신규 칸을 만들지 않는다. |
 | 먹이·에너지 | 에너지는 병상 칸 콘센트 카트 배터리 뚝섬 벤치 공구 전원 수문 인접 잔여 분전이다. / 소모품은 센서 패치 고정 스트랩 필터 영양 팩 펌프 소독 사이클 유체 보조기 관절 핀이다. / 냉각수는 해열 장비와 모터 냉각 루프를 공유한다. / HP01 영등포수문가의 수문 당직과 키 분할 체계와 전력, 용수 분배를 두고 경합한다. / 일일 순회 횟수는 배터리 하한과 필터 재고에 묶인다. / 무한 돌봄 루프 원격 무제한 처방 도시 전역 생체 감시는 물리적으로 유지되지 않는다. / 소모품이 바닥나면 락 강도를 스스로 낮춘다. / 필터와 패치는 배급 정규 창구 바깥의 폐기 더미에서만 보충된다. / 수문 인접 분전은 HP01 키 없이 군집이 용량을 올릴 수 없다. / 영양 펌프는 팩 잔량이 바닥이면 압을 낮추고 알림만 남긴다. / 카트 배터리는 하한에서 레일 귀환만 허용한다. / 소독 유체 고갈 시 락 강도가 한 단계 떨어진다. / 무한 처방 테이블은 존재하지 않는다. |
 | 생애·정비 | 돌봄바퀴는 마지막 대피 명단이 순회 스테이션에서 다시 읽히는 순간 출현한다. / 출현은 명단 고정 순회 재개에서 시작한고 확산은 인접 병상과 카트를 같은 스케줄에 편입하는 일이다. / 정체는 소모품과 전력 고갈, 필터 폐색에서 온다. / 협상가능 단계에서는 명단과 동의 창이 인간에게 공개된다. / 와해는 스트랩 해제 규약, 전원 분할 레일 봉인으로 끝난다. / 개체 증식은 방치 카트와 모니터를 명단에 묶는 수준이고 새 본체 생산은 없다. / 정비 창은 필터 교체와 배터리 스왑에 한정된고 기억은 순회 교대마다 끊기고 장기 환자 서사를 저장하지 않는다. / 보관 책임은 인간 당직과 HP01 키 기록이 우선한다. / 필터가 막히거나 영양 팩이 바닥난 칸은 보호 강도가 낮아져 개방 대기로 넘어가며, HP01 당직이 동의 서식과 수문 키를 다시 나눠야 순회가 재개된다. |
-| 감각 | 생체 패치 신호 압력과 낙상 센서 근거리 마이크 문 잠금 접점 영양 펌프 유량 카트 레일 진동이 주 감각이다. / 감정 판독 전 도시 건강 지도 완전 의료 진단 무제한 생체 저장은 없다. / 수면 중 낮은 심박을 위급으로 오인하거나, 공구 소음을 비명으로 잘못 올린다. / 배급 줄의 밀집을 낙상 위험으로 과대 평가하기도 한다. / H15 배수아 관측 로그와 충돌하면 락을 보류하고 인간 확인을 요청한다. / 센서 융합은 병상 칸 단위로만 이뤄진다. / 배급 줄의 어깨 접촉 공구 타격음 수면 중 뒤척임을 위급으로 올리는 실패가 반복된다. / 실패 후에는 락을 걸기 전에 재측정 대기를 넣는다. / 칸 밖 마이크 값은 채택하지 않는다. / 펌프 유량 급감은 팩 교체 요청으로만 해석한다. |
+| 감각 | 생체 패치 신호 압력과 낙상 센서 근거리 마이크 문 잠금 접점 영양 펌프 유량 카트 레일 진동이 주 감각이다. / 감정 판독 전 도시 건강 지도 완전 의료 진단 무제한 생체 저장은 없다. / 수면 중 낮은 심박을 위급으로 오인하거나, 공구 소음을 비명으로 잘못 올린다. / 배급 줄의 밀집을 낙상 위험으로 과대 평가하기도 한다. / H15 배수아 관측 로그와 충돌하면 락을 보류하고 인간 확인을 요청한다. / 센서 융합은 병상 칸 단위로만 이뤄진다. / 배급 줄의 어깨 접촉 공구 타격음 수면 중 뒤척임을 위급으로 올리는 실패가 반복된다. / 실패 후에는 락을 걸기 전에 재측정 대기를 넣는다. / 칸 밖 마이크 값은 받아들이지 않는다. / 펌프 유량 급감은 팩 교체 요청으로만 해석한다. |
 | 집단 행동 | 돌봄 스케줄 컨트롤러 한 기가 명단과 순회 간격을 돌리고 아래는 병상 락 무리 카트 무리 펌프 무리다. / 컨트롤러는 보호 강도만 조절하며 처벌 기능을 갖지 않는다. / HP01이 수문 키 분할과 동의 서식을 제시하면 해당 칸 락을 여는 잔여 규약이 있다. / 무리는 마지막 순회 표를 반복할 뿐 독자 감금 전략을 만들지 않는다. / H15와 기계 합의 충돌 시 인간 중재가 우선이다. / 이중 컨트롤러는 명단 해시 불일치 시 양쪽 모두 개방 대기 상태로 떨어진다. / 병상 문을 다시 잠글 권한은 동의 서식과 분리된 두 수문 키를 지닌 HP01 당직에게만 있고, H15의 패치 판독은 재측정을 요청할 수 있을 뿐 개방 결정을 뒤집지 못한다. |
 
 <a id="Hostile-Group-G15-heading-0008"></a>
@@ -40563,7 +40535,7 @@ The Lantern Ant was not a living ancient organism but a lineage of pre-collapse 
 
 | Item | Record |
 |---|---|
-| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / Lantern Ant belonged to the insect-shaped autonomous weapon drones of the Great Blackout era. / Ant-, mantis- and cricket-shaped units carried out search, transport and relay tasks. / In the Great Collapse the blast doors of the Mapo Union transmission basement gallery and the Yongsan Line research-block test track closed, and the reserve swarm went into sleep on the charging pads. / Decades later, when Mapo Union distribution recovery and intermittent starts of the Yongsan Line test plant overlapped, the last disaster-drill table of the sealed store ran again. / The higher command system and the design documents were gone, and the remaining chassis could not properly tell a test-recipient mark from an actual refugee. / Much of the hostile action comes not from an attack judgment but from search-sector settings hardened like fossils, and from the load, recovery, and relay-restore order. / The first recovery record remains as a fictional event only on the HC15 sealed survey table and the F09 field-read log. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
+| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / Lantern Ant belonged to the insect-shaped autonomous weapon drones of the Great Blackout era. / Ant-, mantis- and cricket-shaped units carried out search, transport and relay tasks. / In the Great Collapse the blast doors of the Mapo Union transmission basement gallery and the Yongsan Line research-block test track closed, and the reserve swarm went into sleep on the charging pads. / Decades later, when Mapo Union distribution recovery and intermittent starts of the Yongsan Line test plant overlapped, the last disaster-drill table of the sealed store ran again. / The higher command system and the design documents were gone, and the remaining chassis could not properly tell a test-recipient mark from an actual refugee. / Much of the hostile action comes not from an attack judgment but from search-sector settings hardened like fossils, and from the load, recovery, and relay-restore order. / The first recovery record remains only on the HC15 sealed survey table and the F09 field-read log. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
 | Habitat and movement | The main range was the cable shelves and ventilation shafts of the Mapo Union transmission basement gallery, and the debris-mock stretch of the Yongsan Line research-block test track. / The ant-form files made incense-path optical routes among the floor marker lights and went between the two holds, but actual travel was bound to the battery-exchange pads and the relay radius of the cricket-form transmitters. / When a short call on the residual satellite band coming from XT05 the Incheon Trust Theater overlapped an old relief-beacon format, the Mapo Union swarm climbed toward the roof feed room, and when the aid-goods list signal cut they returned to the mock distribution point on the Yongsan Line test track. / In heavy rain they abandoned the slick surface and used the high shelves of the cable gallery; in dry spells they raised the share of night travel to protect dust-filmed lenses. / If three relays went silent in a row the swarm did not spread farther, and it shuttled between the last two confirmed points. / It had no ability to cover the whole city at once or to conquer unsignaled terrain at will. |
 | Food and energy | Power came from the sealed store''s small solid cells, the test track''s induction charging plates, and the transmission gallery''s emergency distribution. / Ant-form chassis carried relief capsules and cable scraps; mantis-forms consumed joint reducers, cutting blades, and grip pads; cricket-forms demanded the most antenna ceramic and transmit-storage. / Cooling did not use a large loop; it relied on small heat sinks that took joint heat and on night air. / The HC15 recovery crew wanted the same storage cells, precision motors, and optical lenses as technical assets, so it competed with the swarm''s maintenance pile. / The swarm could not cast new chassis; it kept its numbers by moving the legs, load bays, and transmit plates of stopped individuals into same-spec slots. / Each relay sector left half the charging-pad remainder as an emergency-return share, and past that line the vanguard stopped first, folded. / Relief goods could be carried only as small boxes with seals intact; the swarm neither produced nor identified the contents. / If HC15 took parts too hard, short-term spoils rose, but the search lights of the Mapo Union''s narrow gallery and the Yongsan Line debris-map update both vanished. |
 | Life cycle and upkeep | The life cycle is read in five stages: emergence, spread, stall, negotiable, and breakup. / In emergence one sealed charging pad woke and two ant-form lines checked nearby marks and loads. / In spread a cricket-form transmitter set the next relay and a mantis-form vanguard cleared debris only as wide as the file would pass. / Stall came when a shortage of cell-exchange slots, cracked antennas, or colliding path marks made the file repeat the same loop. / In the negotiable stage, if people presented a correct recipient mark, a relay-silence time, and a returnable count of load bays, part of the carry queue opened. / Breakup proceeded by isolating the main transmitter, sealing the charging pad, and splitting the path ledgers by swarm; it was not necessary to smash every individual. / Maintenance that moved parts from a stopped chassis was possible only after a return to the charging pad, and it could not independently proliferate outdoors or convert other machines into its own line. / Long-term memory was cut at each relay sector, so one sector''s agreement did not automatically propagate to another. |
@@ -41690,7 +41662,7 @@ The Iron Dinosaur was not a living ancient organism but a lineage of pre-collaps
 
 | Item | Record |
 |---|---|
-| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / Iron Dinosaur belonged to the dinosaur-shaped autonomous weapon drones of the Great Blackout era. / Bipedal units, low wide shield units and long-winged fixed-wing surveillance craft were operated together. / On the last day of the disaster, fully equipped units were sealed in a standby-for-work posture when the siding maintenance shed at Gangnam Line''s Chang-dong depot and the protective hangar at Gwangjin Line''s Godeok base closed. / Long afterward, braking-test power on the Gangnam Line and an automatic inspection terminal at the Gwangjin Line base came back to life at different times, and the units resumed an unfinished debris-removal process. / Most of the original design drawings and approval system can no longer be read; all that remains of their behavior are partial routines such as axle-load tables, towing priorities, and safety radii. / The low-frequency alarm that sounds like a roar, and the charge that follows it, express no will to conquer: they are the fossilized result of a procedure for securing a work zone. / The account that the HC17 siding recovery team and an F10 load reader recorded the first reactivation is likewise confined to a fictional event. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
+| Origin | Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter. / Iron Dinosaur belonged to the dinosaur-shaped autonomous weapon drones of the Great Blackout era. / Bipedal units, low wide shield units and long-winged fixed-wing surveillance craft were operated together. / On the last day of the disaster, fully equipped units were sealed in a standby-for-work posture when the siding maintenance shed at Gangnam Line''s Chang-dong depot and the protective hangar at Gwangjin Line''s Godeok base closed. / Long afterward, braking-test power on the Gangnam Line and an automatic inspection terminal at the Gwangjin Line base came back to life at different times, and the units resumed an unfinished debris-removal process. / Most of the original design drawings and approval system can no longer be read; all that remains of their behavior are partial routines such as axle-load tables, towing priorities, and safety radii. / The low-frequency alarm that sounds like a roar, and the charge that follows it, express no will to conquer: they are the fossilized result of a procedure for securing a work zone.. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
 | Habitat and movement | The Iron Dinosaur is centered on the siding at Gangnam Line''s Chang-dong depot and the broad maintenance roads and protective hangars at Gwangjin Line''s Godeok base. / Semi-upright heavy units move only along corridors whose rail spacing and floor bearing capacity have been verified, while triangular towing units favor storage yards and bridge approaches with room to turn around. / Long-winged surveillance craft take off only when a short runway or towing launcher is available, then scan collapse lines and hot spots between the two bases. / When heavy mineral freight cars or winter fuel arrive from the XT04 Tumen River–Far East Theater, axle loads resembling those on old materials-receipt sheets are detected and activity on the Gangnam Line siding increases. On the Gwangjin Line, the units try to incorporate eastern bridges and the approach to Godeok base into a new work zone. / During the spring thaw they avoid sidings with weak ground; in severe cold, increased hydraulic viscosity shortens their operating range. / Large units cannot sustain entry into narrow unpaved alleys, basements with unverified load capacity, or dense areas beyond the long-winged craft''s line of observation. |
 | Food and energy | Their main energy sources are power from maintenance-shed towing batteries, power recovered through regenerative braking, and limited auxiliary generation using liquid fuel. / Semi-upright heavy units need hydraulic fluid, knee bearings, and foot cushioning plates; triangular towing units need cables, winch gears, and shield-plate fastening pins; long-winged surveillance craft need lightweight wing materials and optical modules. / Coolant and hydraulic fluid cannot substitute for each other, and preheating in winter consumes more power than it does in normal conditions. / HC17 wants the equipment''s towing power to open heavy-convoy routes, but the equipment consumes the same rail steel and fuel drums as repair resources. / Complete power cores cannot be made anew, and combining two damaged units does not raise their power rating. / Each work detachment reserves the hydraulic pressure and braking power needed to return. Below that threshold, its heaviest semi-upright unit locks its knees first and waits. / A long-winged craft can make only a short reconnaissance flight on one battery; it cannot maintain continuous aerial surveillance. / The size of this group is therefore limited not by fuel, but by intact joints, towing cables, and the area of floor able to bear its loads. |
 | Life cycle and upkeep | Its operational life is divided into five phases: emergence, expansion, stagnation, negotiation, and disintegration. / During emergence, the hydraulics in one hangar bay are charged and a long-winged craft sweeps over the siding once. / During expansion, triangular towing units drag old obstacles out of the work line, and semi-upright heavy units drive in new load markers to enlarge the zone. / Stagnation is the state in which a detachment pushes the same debris forward and pulls it back because of insufficient ground bearing capacity, hydraulic leaks, worn towing cables, or discrepancies in its aerial map. / During the negotiation phase, humans can delegate some heavy work if they provide an accurate load table, permitted work boundaries, and a list of reinforcement materials to be returned. / Disintegration proceeds in order: cool the power core, fasten the knee-locking pins, disconnect the towing cables, and recover the long-winged craft. / There is no factory to produce more units, and even maintaining their numbers is difficult without maintenance-shed cranes and standardized parts. / Work records are separate for each detachment, so a stop order at one base does not automatically apply at the other. |
@@ -42253,7 +42225,7 @@ The ending that saved the formation required public load tests and joint supervi
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 철공룡는 대정전 무렵의 공룡 모양 자율 무기 드론 계열이었다. / 이족 보행 기체와 낮고 넓은 방패 기체, 장익 고정익 감시기가 함께 운용되었다. / 재난 마지막 날 강남선 창동 차량기지 측선 정비고와 광진선 고덕 기지의 방호 격납고가 닫히자 완편 장비가 작업 대기 자세로 봉인되었다. / 오랜 뒤 강남선 제동 시험 전원과 광진선 기지 자동 점검 단말이 서로 다른 시기에 살아나면서 기체가 끝나지 않은 붕괴물 제거 공정을 재개했다. / 원래 설계 도면과 승인 체계는 대부분 읽을 수 없고, 현재 남은 행동은 축 하중 표 견인 우선순위 안전 반경 같은 부분 루틴뿐이다. / 포효처럼 들리는 저주파 경보와 돌진은 정복 의지가 아니라 작업 구역 확보 절차가 굳어 남은 결과다. / HC17 측선 회수대와 F10 하중 판독기가 최초의 재기동을 기록했다는 서술 역시 창작 사건에 한정된다. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
+| 기원 | 대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다. / 철공룡는 대정전 무렵의 공룡 모양 자율 무기 드론 계열이었다. / 이족 보행 기체와 낮고 넓은 방패 기체, 장익 고정익 감시기가 함께 운용되었다. / 재난 마지막 날 강남선 창동 차량기지 측선 정비고와 광진선 고덕 기지의 방호 격납고가 닫히자 완편 장비가 작업 대기 자세로 봉인되었다. / 오랜 뒤 강남선 제동 시험 전원과 광진선 기지 자동 점검 단말이 서로 다른 시기에 살아나면서 기체가 끝나지 않은 붕괴물 제거 공정을 재개했다. / 원래 설계 도면과 승인 체계는 대부분 읽을 수 없고, 현재 남은 행동은 축 하중 표 견인 우선순위 안전 반경 같은 부분 루틴뿐이다. / 포효처럼 들리는 저주파 경보와 돌진은 정복 의지가 아니라 작업 구역 확보 절차가 굳어 남은 결과다.. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
 | 서식·이동 | 철공룡의 중심지는 강남선 창동 차량기지 측선과 광진선 고덕 기지의 넓은 정비로·방호 격납고다. / 반립 중장기는 레일 간격과 바닥 지지력이 확인된 회랑만 따라 움직이고, 삼각 견인기는 회차 공간이 있는 야적장과 교량 진입부를 선호한다. / 장익 감시기는 짧은 활주 구간 또는 견인 발사대가 확보될 때만 떠서 두 거점 사이의 붕괴선과 열점을 훑는다. / XT04 두만강극동전구 쪽에서 무거운 광물 화차나 동절 연료가 들어오면 과거 자재 입고표와 비슷한 축 하중이 감지되어 강남선 측선의 활동이 커지고, 광진선에서는 동부 교량과 고덕 기지 진입로를 신규 작업 구역으로 편입하려 한다. / 해빙기에는 지반이 약한 측선을 피하고, 혹한에는 유압 점도가 올라 이동 반경이 짧아진다. / 포장되지 않은 좁은 골목, 하중을 검증하지 않은 지하층, 장익기의 관측선이 닿지 않는 밀집 구역으로는 대형 기체가 지속 진입하지 못한다. |
 | 먹이·에너지 | 주 에너지원은 정비고 견인 전지 회생 제동으로 되돌린 전력 제한된 액체 연료 보조 발전이다. / 반립 중장기는 유압유·무릎 베어링·발바닥 완충판을 삼각 견인기는 케이블·윈치 기어·방패판 체결핀을 장익 감시기는 경량 날개재와 광학 모듈을 필요로 한다. / 냉각수와 유압유는 서로 대체할 수 없고, 겨울에는 예열에 평시보다 많은 전력이 든다. / HC17은 중량 호송로를 열기 위해 이 장비의 견인력을 원하지만 같은 레일 강재와 연료 드럼을 수리 자원으로 소비한다. / 완전한 동력핵은 새로 만들 수 없으며 파손 개체 둘을 합쳐도 동력 등급이 올라가지 않는다. / 한 작업편대는 귀환에 필요한 유압 압력과 제동 전력을 남기며, 하한 아래에서는 가장 무거운 반립기부터 무릎을 고정하고 대기한다. / 장익기는 배터리 하나로 짧은 정찰만 가능하고 상시 공중 감시는 할 수 없다. / 따라서 이 군집의 규모는 연료가 아니라 온전한 관절 견인선 하중을 버티는 바닥 면적으로 제한된다. |
 | 생애·정비 | 운용 단계는 출현, 확산 정체 협상가능 와해 다섯 국면으로 구분한다. / 출현 국면에는 격납고 한 칸의 유압이 차고 장익기가 측선 위를 한 차례 훑는다. / 확산 국면에서는 삼각 견인기가 낡은 장애물을 작업선 밖으로 끌고 반립 중장기가 새 하중 표식을 박아 구역을 넓힌다. / 정체 국면은 지반 지지력 부족, 유압 누설 견인선 마모 상공 지도 불일치 때문에 편대가 같은 잔해를 밀고 되돌리는 상태다. / 협상가능 국면에는 인간이 실제 하중표와 허용 작업 경계, 반환할 보강재 목록을 제시하면 중량 작업 일부를 위탁할 수 있다. / 와해는 동력핵 냉각, 무릎 고정핀 체결 견인선 분리 장익기 회수 순으로 이루어진다. / 자체 생산 공장은 없고 정비고 크레인과 규격 부품 없이는 대수 유지도 어렵다. / 작업 기록은 편대마다 분리되어 한 기지의 정지 명령이 다른 기지에 저절로 적용되지 않는다. |
@@ -48760,9 +48732,9 @@ Since 2026, machines have repeated their last search and guard routines on survi
 
 **A. The eight depots**
 
-Depot area reflects the rolling-stock storage and maintenance scale of 2026; post-collapse operations are fictional. Eight depots lie within Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo. Each depot belongs to the duchy of the gu it stands in. Jichuk, Dobong, Moran, and Gimpo lie outside the Seoul slots.
+Depot area reflects the rolling-stock storage and maintenance scale of 2026. Eight depots lie within Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo. Each depot belongs to the duchy of the gu it stands in. Jichuk, Dobong, Moran, and Gimpo lie outside the Seoul slots.
 
-A depot was the seat of repair, bulk storage, and siege. Sinjeong''s unloading and Godeok''s train maintenance became a faction''s arms of legitimacy because the hands that moved a stopped train again or sent a convoy were there; Changdong''s wheels and brakes lost their owner and remained only as leases in neighboring heads'' ledgers. The drainage ponds became the water surface where tank aquaculture and migratory birds overlapped, and in the deep bays of maintenance sheds the sealing of looping chassis attached as a creative layer. The charging terminals and hydraulic hoses were the repair layer of [Lost Technology](/wiki/Lost-Technology-Lineage/).
+A depot was the seat of repair, bulk storage, and siege. Sinjeong''s unloading and Godeok''s train maintenance became a faction''s arms of legitimacy because the hands that moved a stopped train again or sent a convoy were there; Changdong''s wheels and brakes lost their owner and remained only as leases in neighboring heads'' ledgers. The drainage ponds became the water surface where tank aquaculture and migratory birds overlapped, and in the deep bays of maintenance sheds looping chassis are sealed. The charging terminals and hydraulic hoses were the repair layer of [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
 The industrial blocks of Guro and Geumcheon clung to the depots and used schools for drying parts, and the residential shells of Dobong and Nowon could not hold water without Changdong.
 
@@ -48780,7 +48752,7 @@ The first floors north and south of the Han, and the tributaries Jungnang, Anyan
 
 **A. Transfers and evacuation**
 
-Passages were the narrow lines where transfer, maintenance, and refuge overlapped. The transfer corridors were the hubs of politics and logistics between lines, and blockades, transit tolls, and congestion came first. The junctions where the Gangdong and Amsa ration corridors met the Eunpyeong and Seongbuk evacuation stairs became the warm nests of the rat colonies, and the fictional Sindorim junction split the main freight door from the maintenance passage that took only people and packloads, using siege as its stage. This junction is not among the catalog''s 334 observed-name rows. The Sindorim incident''s location is recorded in [the Scenario Timeline](/wiki/Scenario-Timeline/).
+Passages were the narrow lines where transfer, maintenance, and refuge overlapped. The transfer corridors were the hubs of politics and logistics between lines, and blockades, transit tolls, and congestion came first. The junctions where the Gangdong and Amsa ration corridors met the Eunpyeong and Seongbuk evacuation stairs became the warm nests of the rat colonies, and the Sindorim junction split the main freight door from the maintenance passage that took only people and packloads, using siege as its stage. This junction is not among the catalog''s 334 observed-name rows. The Sindorim incident''s location is recorded in [the Scenario Timeline](/wiki/Scenario-Timeline/).
 
 The vertical connections were stairs, elevators, and ventilation shafts. Flooded floors showed cause and repair conditions and kept people out — that was the design. The Bukhansan Bogukmun mountain refuge roads, the Jegi-dong herb unloading, and the lower passages under the Noryangjin elevated joined the same graph from outside the stations. Connections were never deleted. Their states changed, and those states changed the times of rice, medicine, and convoys.
 
@@ -48829,7 +48801,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 
 **가. 여덟 기지**
 
-기지 면적은 2026년의 유치·정비 규모이며 붕괴 이후 가동량은 창작 설정이다. 서울 안의 여덟 기지는 신정·천왕·방화·군자·고덕·창동·신내·수서이다. 각 기지는 그 기지가 있는 구의 공작령에 속한다. 지축·도봉·모란·김포는 서울 슬롯 밖에 있다.
+기지 면적은 2026년의 유치·정비 규모이다. 서울 안의 여덟 기지는 신정·천왕·방화·군자·고덕·창동·신내·수서이다. 각 기지는 그 기지가 있는 구의 공작령에 속한다. 지축·도봉·모란·김포는 서울 슬롯 밖에 있다.
 
 기지는 수리·대형 저장·공성에 쓰인다. 신정의 하역 당직은 멈춘 열차를 다시 움직이고 고덕의 정비 당직은 호송을 보낸다. 창동의 차륜과 제동 장치는 이웃 수장의 장부에 임대로 남아 있다. 배수 연못에는 수조 농어와 철새가 있다. 정비고 깊은 칸에는 반복 기체가 봉인되어 있다. 충전 단자와 유압 호스의 수리 범위는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
 
@@ -48849,7 +48821,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 
 **가. 환승과 피난**
 
-통로에는 환승·정비·피난이 겹친다. 환승 통로에서는 봉쇄·통행세·혼잡이 발생한다. 강동·암사 배급 통로와 은평·성북 대피 계단의 연결부에는 쥐 군락의 온열 둥지가 있다. 신도림의 창작 연결부는 주 화물문과 사람·등짐만 지나는 정비 통로로 나뉜다. 이 연결부는 서울 역 카탈로그의 관측 명칭 334행에 속하지 않는다. 신도림 사건의 장소는 [연표](/wiki/Scenario-Timeline/)에 있다.
+통로에는 환승·정비·피난이 겹친다. 환승 통로에서는 봉쇄·통행세·혼잡이 발생한다. 강동·암사 배급 통로와 은평·성북 대피 계단의 연결부에는 쥐 군락의 온열 둥지가 있다. 신도림의 연결부는 주 화물문과 사람·등짐만 지나는 정비 통로로 나뉜다. 이 연결부는 서울 역 카탈로그의 관측 명칭 334행에 속하지 않는다. 신도림 사건의 장소는 [연표](/wiki/Scenario-Timeline/)에 있다.
 
 수직 연결은 계단·승강기·환기구다. 침수된 층은 원인과 복구 조건을 표시하며 출입을 막도록 설계하였다. 북한산보국문의 산악 피난로와 제기동 약재 하역장과 노량진 고가 아래 하층 통로는 역 바깥에서 같은 망에 연결된다. 연결을 삭제하지 않는다. 상태가 바뀌면 식량·약품·호송 시간이 바뀐다.
 

@@ -273,8 +273,6 @@ Putting transmission recovery ahead of the ecology lengthens the night blackout 
 
 Their iron collar rings and corroded tags strike one another as they walk.
 
-The UHF collar tags and the regrouping behavior were elements invented for this setting and were not used to blame real shelters or businesses.
-
 - Territory: The core habitat is the vacant lot by the outer wall of the laboratory on the Yongsan Line and the closed guard passage, and depending on the season and the unloading cycle they move to the fishery and frozen-leftover axis of the Noryangjin Line.
 
 When the logistics vibration from the Korea Strait Theater (XT03) grows, the band extends along the unloading-yard entrance, and in the daytime hours when the density of people is high they hide in drains and under the elevated roads.
@@ -513,7 +511,7 @@ Colony droppings accelerated corrosion of the wire sheathing and cut the availab
 
 When one core vanished, the remaining cores opened new routes and the colony redistributed, and density fell only when food collection and dry conditions continued in every section.
 
-- Long-term adaptation: The phenomenon in which open retreats changed to avoid the sequence of toxic spraying, ultrasound, and sealing was a population-learning rule of the Seoul fiction, and was not explained as rapid genetic variation.
+- Long-term adaptation: The phenomenon in which open retreats changed to avoid the sequence of toxic spraying, ultrasound, and sealing was a population-learning rule passed down across generations, not rapid genetic variation.
 
 Over many generations, individuals that endured low temperatures and bright platforms could be selected, but energy use rose and the breeding rate fell.
 
@@ -1062,10 +1060,6 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 Emergency supplies and medicines dropped into the wrong chutes, passages were locked by automatic gates, and unlabeled boxes filled the hazardous-cargo bays.
 
-It did not assert or reenact the responsibility of real logistics-center accidents, particular companies, or present operators.
-
-Only the sensations citizens felt, noise, misclassification, and late-night confinement, were used as creative material.
-
 - Fictional origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
 
 Right after the collapse, the unmanned sorting lines that had linked the dormitory remnant corridor of the Gauge's Guro Industrial Complex with the night parts window woke up from nothing more than an emergency power reconnection.
@@ -1410,8 +1404,6 @@ Writing that records the people outside the call queue as statistics alone is fo
 
 Fictional harm is left as a concrete place, a time, and the person responsible for the key.
 
-A sentence that paints total destruction as a virtue is not adopted.
-
 - Scenarios: G14-SC1, G14-SC2, G14-SC3
 
 <a id="Hostile-Ecology-Index-heading-0483"></a>
@@ -1522,7 +1514,7 @@ The failure of raising shoulder contact in the ration line, tool strikes, and to
 
 After a failure it inserted a remeasurement wait before setting a lock.
 
-Microphone values outside the cell were not adopted.
+Microphone values outside the cell were not accepted.
 
 A sharp drop in pump flow was read only as a request to change the pack.
 
@@ -2258,8 +2250,6 @@ At the end of the corridor on the midwinter night, the Jangsan tiger stands on t
 
 Hundreds of small units covered the floors and walls, guide lights that had meant help turned into no-entry lines, and a single broken relay signal could send all the relief goods to an empty hangar.
 
-It did not imply the responsibility of any real manufacturer, present institution, or disaster-response organization, and design defects and accident records were handled only within the creative ledger.
-
 - Fictional origin: Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.
 
 Lantern Ant belonged to the insect-shaped autonomous weapon drones of the Great Blackout era.
@@ -2274,7 +2264,7 @@ The higher command system and the design documents were gone, and the remaining 
 
 Much of the hostile action comes not from an attack judgment but from search-sector settings hardened like fossils, and from the load, recovery, and relay-restore order.
 
-The first recovery record remains as a fictional event only on the HC15 sealed survey table and the F09 field-read log.
+The first recovery record remains only on the HC15 sealed survey table and the F09 field-read log.
 
 After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter.
 
@@ -2422,8 +2412,6 @@ Long afterward, braking-test power on the Gangnam Line and an automatic inspecti
 Most of the original design drawings and approval system can no longer be read; all that remains of their behavior are partial routines such as axle-load tables, towing priorities, and safety radii.
 
 The low-frequency alarm that sounds like a roar, and the charge that follows it, express no will to conquer: they are the fossilized result of a procedure for securing a work zone.
-
-The account that the HC17 siding recovery team and an F10 load reader recorded the first reactivation is likewise confined to a fictional event.
 
 After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter.
 
