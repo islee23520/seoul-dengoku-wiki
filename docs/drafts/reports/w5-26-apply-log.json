@@ -1,0 +1,1920 @@
+{
+ "applied_at": "2026-11-11T00:35:16.949Z",
+ "sql_dir": "C:/Users/oliver/AppData/Local/Temp/wt-w5-26",
+ "rules_file": "docs/gdd-rules.json",
+ "dry_run": false,
+ "row_count": 129,
+ "rules_total": 47,
+ "rules_applied_detail": [
+  {
+   "id": "s01",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "s02",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "s03",
+   "documents": [
+    "doc.Online-User-Journey"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "s04",
+   "documents": [
+    "doc.Online-User-Journey"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "s05",
+   "documents": [
+    "doc.Online-User-Journey"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v01",
+   "documents": [
+    "doc.Online-User-Journey"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "s06",
+   "documents": [
+    "doc.Game-References"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v02",
+   "documents": [
+    "doc.Game-References"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v03",
+   "documents": [
+    "doc.Game-References"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v04",
+   "documents": [
+    "doc.Game-References"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "s07",
+   "documents": [
+    "doc.Mechanism-D09"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v05",
+   "documents": [
+    "doc.Mechanism-D09"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "s08",
+   "documents": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v06",
+   "documents": [
+    "doc.mechanism-design-index-d11"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "s09",
+   "documents": [
+    "doc.mechanism-design-index-d08"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v07",
+   "documents": [
+    "doc.mechanism-design-index-d08"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "s10",
+   "documents": [
+    "doc.mechanism-design-index-d12"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "s11",
+   "documents": [
+    "doc.mechanism-design-index-d12"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "s12",
+   "documents": [
+    "doc.mechanism-design-index-d12"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v08",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v09",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v10",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v11",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v12",
+   "documents": [
+    "doc.Unity-Architecture"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v13",
+   "documents": [
+    "doc.Unity-Architecture"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v14",
+   "documents": [
+    "doc.Development-Roadmap"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v15",
+   "documents": [
+    "doc.Development-Roadmap"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v16",
+   "documents": [
+    "doc.Development-Roadmap"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "v17",
+   "documents": [
+    "doc.Development-Roadmap"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "c01",
+   "documents": [
+    "doc.Narrative-Direction"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "c02",
+   "documents": [
+    "doc.Narrative-Direction"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "c03",
+   "documents": [
+    "doc.Narrative-Direction"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "c04",
+   "documents": [
+    "doc.Rules-FactionsWarfare"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "c05",
+   "documents": [
+    "doc.Singleplayer-Design-SP-1-0-0"
+   ],
+   "replacement": "delete"
+  },
+  {
+   "id": "c06",
+   "documents": [
+    "doc.Singleplayer-Design-SP-1-0-0"
+   ],
+   "replacement": "delete"
+  },
+  {
+   "id": "c07",
+   "documents": [
+    "doc.mechanism-design-index-d01"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "c08",
+   "documents": [
+    "doc.mechanism-design-index-d01"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "c09",
+   "documents": [
+    "doc.mechanism-design-index-d09"
+   ],
+   "replacement": "delete"
+  },
+  {
+   "id": "c10",
+   "documents": [
+    "doc.mechanism-design-index-d09"
+   ],
+   "replacement": "delete"
+  },
+  {
+   "id": "r2a",
+   "documents": [
+    "doc.Korean-Terminology-and-Naming"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "r2b",
+   "documents": [
+    "doc.Korean-Terminology-and-Naming"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "h1",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "h2",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "h3",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "h4",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "r3a",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "r3b",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
+  }
+ ],
+ "documents_touched": [
+  "doc.Development-Roadmap",
+  "doc.Game-References",
+  "doc.Home",
+  "doc.Korean-Terminology-and-Naming",
+  "doc.Mechanism-D09",
+  "doc.Narrative-Direction",
+  "doc.Online-User-Journey",
+  "doc.Rules-FactionsWarfare",
+  "doc.Singleplayer-Design-SP-1-0-0",
+  "doc.Unity-Architecture",
+  "doc.mechanism-design-index-d01",
+  "doc.mechanism-design-index-d08",
+  "doc.mechanism-design-index-d09",
+  "doc.mechanism-design-index-d11",
+  "doc.mechanism-design-index-d12"
+ ],
+ "file_sha256_before": "3270c1dacb9b388b2feb91d19970afac424f538f571c2a8d44a9c9a6b2fcdea9",
+ "file_sha256_after": "34495b19dd318741123fc5a0d36c1f9a1c386ca2e8f9c19a04e370a2c805e1c3",
+ "file_chars_before": 7943281,
+ "file_chars_after": 7942605,
+ "file_disk_bytes_before": 9220025,
+ "file_disk_bytes_after": 9219200,
+ "roundtrip_precheck": "ok (129/129 INSERT 재직렬화 바이트 일치)",
+ "per_document": [
+  {
+   "document": "doc.ADR-001",
+   "touched": false,
+   "chars_before": 11613,
+   "chars_after": 11613,
+   "disk_bytes_before": 11690,
+   "disk_bytes_after": 11690
+  },
+  {
+   "document": "doc.ADR-002",
+   "touched": false,
+   "chars_before": 7825,
+   "chars_after": 7825,
+   "disk_bytes_before": 9948,
+   "disk_bytes_after": 9948
+  },
+  {
+   "document": "doc.ADR-003",
+   "touched": false,
+   "chars_before": 7358,
+   "chars_after": 7358,
+   "disk_bytes_before": 9470,
+   "disk_bytes_after": 9470
+  },
+  {
+   "document": "doc.ADR-004",
+   "touched": false,
+   "chars_before": 7842,
+   "chars_after": 7842,
+   "disk_bytes_before": 9516,
+   "disk_bytes_after": 9516
+  },
+  {
+   "document": "doc.ADR-005",
+   "touched": false,
+   "chars_before": 7974,
+   "chars_after": 7974,
+   "disk_bytes_before": 10262,
+   "disk_bytes_after": 10262
+  },
+  {
+   "document": "doc.ADR-006",
+   "touched": false,
+   "chars_before": 8505,
+   "chars_after": 8505,
+   "disk_bytes_before": 10901,
+   "disk_bytes_after": 10901
+  },
+  {
+   "document": "doc.ADR-007",
+   "touched": false,
+   "chars_before": 2739,
+   "chars_after": 2739,
+   "disk_bytes_before": 3622,
+   "disk_bytes_after": 3622
+  },
+  {
+   "document": "doc.ADR-008",
+   "touched": false,
+   "chars_before": 25471,
+   "chars_after": 25471,
+   "disk_bytes_before": 33291,
+   "disk_bytes_after": 33291
+  },
+  {
+   "document": "doc.Unity-Architecture-Implementation-Plan",
+   "touched": false,
+   "chars_before": 16156,
+   "chars_after": 16156,
+   "disk_bytes_before": 19283,
+   "disk_bytes_after": 19283
+  },
+  {
+   "document": "doc.Unity-Architecture",
+   "touched": true,
+   "chars_before": 6027,
+   "chars_after": 6013,
+   "disk_bytes_before": 7797,
+   "disk_bytes_after": 7781
+  },
+  {
+   "document": "doc.Unity-System-Design",
+   "touched": false,
+   "chars_before": 21987,
+   "chars_after": 21987,
+   "disk_bytes_before": 26438,
+   "disk_bytes_after": 26438
+  },
+  {
+   "document": "doc.Character-Art-Direction",
+   "touched": false,
+   "chars_before": 7602,
+   "chars_after": 7602,
+   "disk_bytes_before": 10465,
+   "disk_bytes_after": 10465
+  },
+  {
+   "document": "doc.Campaign-Movement-296",
+   "touched": false,
+   "chars_before": 47848,
+   "chars_after": 47848,
+   "disk_bytes_before": 62019,
+   "disk_bytes_after": 62019
+  },
+  {
+   "document": "doc.Narrative-Direction",
+   "touched": true,
+   "chars_before": 18664,
+   "chars_after": 18647,
+   "disk_bytes_before": 25144,
+   "disk_bytes_after": 25125
+  },
+  {
+   "document": "doc.owner-approved-batch-d",
+   "touched": false,
+   "chars_before": 13070,
+   "chars_after": 13070,
+   "disk_bytes_before": 16895,
+   "disk_bytes_after": 16895
+  },
+  {
+   "document": "doc.owner-approved-d09-offices",
+   "touched": false,
+   "chars_before": 2052,
+   "chars_after": 2052,
+   "disk_bytes_before": 2712,
+   "disk_bytes_after": 2712
+  },
+  {
+   "document": "doc.owner-approved-defaults-off-keep",
+   "touched": false,
+   "chars_before": 6024,
+   "chars_after": 6024,
+   "disk_bytes_before": 7712,
+   "disk_bytes_after": 7712
+  },
+  {
+   "document": "doc.owner-approved-defaults-on-c",
+   "touched": false,
+   "chars_before": 5144,
+   "chars_after": 5144,
+   "disk_bytes_before": 6593,
+   "disk_bytes_after": 6593
+  },
+  {
+   "document": "doc.owner-approved-defaults-on",
+   "touched": false,
+   "chars_before": 12781,
+   "chars_after": 12781,
+   "disk_bytes_before": 16484,
+   "disk_bytes_after": 16484
+  },
+  {
+   "document": "doc.owner-approved-mst-01",
+   "touched": false,
+   "chars_before": 2832,
+   "chars_after": 2832,
+   "disk_bytes_before": 3637,
+   "disk_bytes_after": 3637
+  },
+  {
+   "document": "doc.owner-approved-unr-01",
+   "touched": false,
+   "chars_before": 2721,
+   "chars_after": 2721,
+   "disk_bytes_before": 3472,
+   "disk_bytes_after": 3472
+  },
+  {
+   "document": "doc.pa-01-aging-ability-decay",
+   "touched": false,
+   "chars_before": 6190,
+   "chars_after": 6190,
+   "disk_bytes_before": 7686,
+   "disk_bytes_after": 7686
+  },
+  {
+   "document": "doc.pw-01-war-declaration-threshold",
+   "touched": false,
+   "chars_before": 6262,
+   "chars_after": 6262,
+   "disk_bytes_before": 7752,
+   "disk_bytes_after": 7752
+  },
+  {
+   "document": "doc.Scenario-Hold-the-Gate",
+   "touched": false,
+   "chars_before": 25300,
+   "chars_after": 25300,
+   "disk_bytes_before": 34493,
+   "disk_bytes_after": 34493
+  },
+  {
+   "document": "doc.Station-Interior-Design",
+   "touched": false,
+   "chars_before": 24307,
+   "chars_after": 24307,
+   "disk_bytes_before": 31704,
+   "disk_bytes_after": 31704
+  },
+  {
+   "document": "doc.ui-01-campaign-time-control",
+   "touched": false,
+   "chars_before": 3821,
+   "chars_after": 3821,
+   "disk_bytes_before": 4941,
+   "disk_bytes_after": 4941
+  },
+  {
+   "document": "doc.Ref-Crusader-Kings-3",
+   "touched": false,
+   "chars_before": 110631,
+   "chars_after": 110631,
+   "disk_bytes_before": 146564,
+   "disk_bytes_after": 146564
+  },
+  {
+   "document": "doc.Ref-Mechanism-Index",
+   "touched": false,
+   "chars_before": 97318,
+   "chars_after": 97318,
+   "disk_bytes_before": 124466,
+   "disk_bytes_after": 124466
+  },
+  {
+   "document": "doc.Ref-Norland-Triage",
+   "touched": false,
+   "chars_before": 4531,
+   "chars_after": 4531,
+   "disk_bytes_before": 5777,
+   "disk_bytes_after": 5777
+  },
+  {
+   "document": "doc.Asset-Pipeline",
+   "touched": false,
+   "chars_before": 7255,
+   "chars_after": 7255,
+   "disk_bytes_before": 9815,
+   "disk_bytes_after": 9815
+  },
+  {
+   "document": "doc.Data-Catalog-and-Schema",
+   "touched": false,
+   "chars_before": 13111,
+   "chars_after": 13111,
+   "disk_bytes_before": 16451,
+   "disk_bytes_after": 16451
+  },
+  {
+   "document": "doc.Design-Requirements",
+   "touched": false,
+   "chars_before": 6181,
+   "chars_after": 6181,
+   "disk_bytes_before": 8320,
+   "disk_bytes_after": 8320
+  },
+  {
+   "document": "doc.Development-Roadmap",
+   "touched": true,
+   "chars_before": 11890,
+   "chars_after": 11843,
+   "disk_bytes_before": 15383,
+   "disk_bytes_after": 15320
+  },
+  {
+   "document": "doc.Game-References",
+   "touched": true,
+   "chars_before": 12139,
+   "chars_after": 12145,
+   "disk_bytes_before": 16051,
+   "disk_bytes_after": 16065
+  },
+  {
+   "document": "doc.Game-Thesis",
+   "touched": false,
+   "chars_before": 6642,
+   "chars_after": 6642,
+   "disk_bytes_before": 9101,
+   "disk_bytes_after": 9101
+  },
+  {
+   "document": "doc.Home",
+   "touched": true,
+   "chars_before": 9959,
+   "chars_after": 9895,
+   "disk_bytes_before": 12959,
+   "disk_bytes_after": 12873
+  },
+  {
+   "document": "doc.Issue-101-Ui-Ux-Decisions",
+   "touched": false,
+   "chars_before": 7747,
+   "chars_after": 7747,
+   "disk_bytes_before": 10453,
+   "disk_bytes_after": 10453
+  },
+  {
+   "document": "doc.Korean-Terminology-and-Naming",
+   "touched": true,
+   "chars_before": 17413,
+   "chars_after": 17386,
+   "disk_bytes_before": 22970,
+   "disk_bytes_after": 22939
+  },
+  {
+   "document": "doc.Online-User-Journey",
+   "touched": true,
+   "chars_before": 27270,
+   "chars_after": 27277,
+   "disk_bytes_before": 37056,
+   "disk_bytes_after": 37069
+  },
+  {
+   "document": "doc.Open-Decisions",
+   "touched": false,
+   "chars_before": 15706,
+   "chars_after": 15706,
+   "disk_bytes_before": 20588,
+   "disk_bytes_after": 20588
+  },
+  {
+   "document": "doc.Research-Sources",
+   "touched": false,
+   "chars_before": 1226,
+   "chars_after": 1226,
+   "disk_bytes_before": 1358,
+   "disk_bytes_after": 1358
+  },
+  {
+   "document": "doc.Ui-Implementation-Pipeline",
+   "touched": false,
+   "chars_before": 4421,
+   "chars_after": 4421,
+   "disk_bytes_before": 5601,
+   "disk_bytes_after": 5601
+  },
+  {
+   "document": "doc.Campaign-Loop",
+   "touched": false,
+   "chars_before": 5586,
+   "chars_after": 5586,
+   "disk_bytes_before": 7426,
+   "disk_bytes_after": 7426
+  },
+  {
+   "document": "doc.Campaign-Progression",
+   "touched": false,
+   "chars_before": 65089,
+   "chars_after": 65089,
+   "disk_bytes_before": 85298,
+   "disk_bytes_after": 85298
+  },
+  {
+   "document": "doc.Characters-and-Persons",
+   "touched": false,
+   "chars_before": 7752,
+   "chars_after": 7752,
+   "disk_bytes_before": 10034,
+   "disk_bytes_after": 10034
+  },
+  {
+   "document": "doc.Determinism-and-Save-Contracts",
+   "touched": false,
+   "chars_before": 7739,
+   "chars_after": 7739,
+   "disk_bytes_before": 9777,
+   "disk_bytes_after": 9777
+  },
+  {
+   "document": "doc.Diplomacy-and-Contracts",
+   "touched": false,
+   "chars_before": 4950,
+   "chars_after": 4950,
+   "disk_bytes_before": 6230,
+   "disk_bytes_after": 6230
+  },
+  {
+   "document": "doc.Economy-and-Logistics",
+   "touched": false,
+   "chars_before": 7017,
+   "chars_after": 7017,
+   "disk_bytes_before": 8809,
+   "disk_bytes_after": 8809
+  },
+  {
+   "document": "doc.Faith-Culture-and-Knowledge",
+   "touched": false,
+   "chars_before": 5304,
+   "chars_after": 5304,
+   "disk_bytes_before": 6726,
+   "disk_bytes_after": 6726
+  },
+  {
+   "document": "doc.Game-Logic-Principles",
+   "touched": false,
+   "chars_before": 5163,
+   "chars_after": 5163,
+   "disk_bytes_before": 6403,
+   "disk_bytes_after": 6403
+  },
+  {
+   "document": "doc.Hero-Squads-and-Time-Based-Movement",
+   "touched": false,
+   "chars_before": 22033,
+   "chars_after": 22033,
+   "disk_bytes_before": 29877,
+   "disk_bytes_after": 29877
+  },
+  {
+   "document": "doc.Implementation-Mapping",
+   "touched": false,
+   "chars_before": 6632,
+   "chars_after": 6632,
+   "disk_bytes_before": 8170,
+   "disk_bytes_after": 8170
+  },
+  {
+   "document": "doc.Personal-Resolution-Battle",
+   "touched": false,
+   "chars_before": 19019,
+   "chars_after": 19019,
+   "disk_bytes_before": 25887,
+   "disk_bytes_after": 25887
+  },
+  {
+   "document": "doc.Power-and-Institutions",
+   "touched": false,
+   "chars_before": 10906,
+   "chars_after": 10906,
+   "disk_bytes_before": 13709,
+   "disk_bytes_after": 13709
+  },
+  {
+   "document": "doc.Relationships-Houses-and-Intrigue",
+   "touched": false,
+   "chars_before": 8680,
+   "chars_after": 8680,
+   "disk_bytes_before": 11153,
+   "disk_bytes_after": 11153
+  },
+  {
+   "document": "doc.Rules-Battle",
+   "touched": false,
+   "chars_before": 19710,
+   "chars_after": 19710,
+   "disk_bytes_before": 25485,
+   "disk_bytes_after": 25485
+  },
+  {
+   "document": "doc.Rules-CampaignLoop",
+   "touched": false,
+   "chars_before": 12108,
+   "chars_after": 12108,
+   "disk_bytes_before": 15566,
+   "disk_bytes_after": 15566
+  },
+  {
+   "document": "doc.Rules-EconomyLogistics",
+   "touched": false,
+   "chars_before": 21434,
+   "chars_after": 21434,
+   "disk_bytes_before": 28657,
+   "disk_bytes_after": 28657
+  },
+  {
+   "document": "doc.Rules-FactionsWarfare",
+   "touched": true,
+   "chars_before": 28763,
+   "chars_after": 28776,
+   "disk_bytes_before": 37025,
+   "disk_bytes_after": 37038
+  },
+  {
+   "document": "doc.Rules-SaveDeterminism",
+   "touched": false,
+   "chars_before": 7369,
+   "chars_after": 7369,
+   "disk_bytes_before": 9732,
+   "disk_bytes_after": 9732
+  },
+  {
+   "document": "doc.Rules-Strongholds",
+   "touched": false,
+   "chars_before": 6567,
+   "chars_after": 6567,
+   "disk_bytes_before": 8143,
+   "disk_bytes_after": 8143
+  },
+  {
+   "document": "doc.Rules-TravelEncounters",
+   "touched": false,
+   "chars_before": 6256,
+   "chars_after": 6256,
+   "disk_bytes_before": 8172,
+   "disk_bytes_after": 8172
+  },
+  {
+   "document": "doc.Save-and-Determinism",
+   "touched": false,
+   "chars_before": 10147,
+   "chars_after": 10147,
+   "disk_bytes_before": 14115,
+   "disk_bytes_after": 14115
+  },
+  {
+   "document": "doc.Strategy-Battle-Roundtrip",
+   "touched": false,
+   "chars_before": 14426,
+   "chars_after": 14426,
+   "disk_bytes_before": 19728,
+   "disk_bytes_after": 19728
+  },
+  {
+   "document": "doc.Time-Pulses-and-Events",
+   "touched": false,
+   "chars_before": 6909,
+   "chars_after": 6909,
+   "disk_bytes_before": 8787,
+   "disk_bytes_after": 8787
+  },
+  {
+   "document": "doc.Travel-Activities-and-Landless",
+   "touched": false,
+   "chars_before": 10936,
+   "chars_after": 10936,
+   "disk_bytes_before": 13976,
+   "disk_bytes_after": 13976
+  },
+  {
+   "document": "doc.Travel-and-Encounters",
+   "touched": false,
+   "chars_before": 6085,
+   "chars_after": 6085,
+   "disk_bytes_before": 8276,
+   "disk_bytes_after": 8276
+  },
+  {
+   "document": "doc.War-and-Personal-Resolution",
+   "touched": false,
+   "chars_before": 10301,
+   "chars_after": 10301,
+   "disk_bytes_before": 13064,
+   "disk_bytes_after": 13064
+  },
+  {
+   "document": "doc.Warfare-and-Sieges",
+   "touched": false,
+   "chars_before": 7156,
+   "chars_after": 7156,
+   "disk_bytes_before": 9159,
+   "disk_bytes_after": 9159
+  },
+  {
+   "document": "doc.Archify-D01",
+   "touched": false,
+   "chars_before": 118814,
+   "chars_after": 118814,
+   "disk_bytes_before": 135145,
+   "disk_bytes_after": 135145
+  },
+  {
+   "document": "doc.Archify-D02",
+   "touched": false,
+   "chars_before": 84052,
+   "chars_after": 84052,
+   "disk_bytes_before": 95617,
+   "disk_bytes_after": 95617
+  },
+  {
+   "document": "doc.Archify-D03",
+   "touched": false,
+   "chars_before": 103792,
+   "chars_after": 103792,
+   "disk_bytes_before": 117951,
+   "disk_bytes_after": 117951
+  },
+  {
+   "document": "doc.Archify-D04",
+   "touched": false,
+   "chars_before": 88595,
+   "chars_after": 88595,
+   "disk_bytes_before": 100244,
+   "disk_bytes_after": 100244
+  },
+  {
+   "document": "doc.Archify-D05",
+   "touched": false,
+   "chars_before": 80132,
+   "chars_after": 80132,
+   "disk_bytes_before": 91032,
+   "disk_bytes_after": 91032
+  },
+  {
+   "document": "doc.Archify-D06",
+   "touched": false,
+   "chars_before": 145354,
+   "chars_after": 145354,
+   "disk_bytes_before": 164450,
+   "disk_bytes_after": 164450
+  },
+  {
+   "document": "doc.Archify-D07",
+   "touched": false,
+   "chars_before": 111198,
+   "chars_after": 111198,
+   "disk_bytes_before": 122133,
+   "disk_bytes_after": 122133
+  },
+  {
+   "document": "doc.Archify-D08",
+   "touched": false,
+   "chars_before": 141881,
+   "chars_after": 141881,
+   "disk_bytes_before": 158578,
+   "disk_bytes_after": 158578
+  },
+  {
+   "document": "doc.Archify-D09",
+   "touched": false,
+   "chars_before": 144663,
+   "chars_after": 144663,
+   "disk_bytes_before": 160212,
+   "disk_bytes_after": 160212
+  },
+  {
+   "document": "doc.Archify-D10",
+   "touched": false,
+   "chars_before": 108314,
+   "chars_after": 108314,
+   "disk_bytes_before": 120933,
+   "disk_bytes_after": 120933
+  },
+  {
+   "document": "doc.Archify-D11",
+   "touched": false,
+   "chars_before": 108552,
+   "chars_after": 108552,
+   "disk_bytes_before": 120443,
+   "disk_bytes_after": 120443
+  },
+  {
+   "document": "doc.Archify-D12",
+   "touched": false,
+   "chars_before": 234814,
+   "chars_after": 234814,
+   "disk_bytes_before": 262838,
+   "disk_bytes_after": 262838
+  },
+  {
+   "document": "doc.Archify-D13",
+   "touched": false,
+   "chars_before": 594103,
+   "chars_after": 594103,
+   "disk_bytes_before": 675660,
+   "disk_bytes_after": 675660
+  },
+  {
+   "document": "doc.Archify-D14",
+   "touched": false,
+   "chars_before": 497817,
+   "chars_after": 497817,
+   "disk_bytes_before": 573864,
+   "disk_bytes_after": 573864
+  },
+  {
+   "document": "doc.Archify-D15",
+   "touched": false,
+   "chars_before": 505804,
+   "chars_after": 505804,
+   "disk_bytes_before": 573941,
+   "disk_bytes_after": 573941
+  },
+  {
+   "document": "doc.Archify-D16",
+   "touched": false,
+   "chars_before": 222992,
+   "chars_after": 222992,
+   "disk_bytes_before": 248933,
+   "disk_bytes_after": 248933
+  },
+  {
+   "document": "doc.Archify-D17",
+   "touched": false,
+   "chars_before": 181818,
+   "chars_after": 181818,
+   "disk_bytes_before": 201738,
+   "disk_bytes_after": 201738
+  },
+  {
+   "document": "doc.Archify-D18",
+   "touched": false,
+   "chars_before": 512544,
+   "chars_after": 512544,
+   "disk_bytes_before": 591335,
+   "disk_bytes_after": 591335
+  },
+  {
+   "document": "doc.character-sheet-formulas",
+   "touched": false,
+   "chars_before": 121161,
+   "chars_after": 121161,
+   "disk_bytes_before": 144776,
+   "disk_bytes_after": 144776
+  },
+  {
+   "document": "doc.domain-situations",
+   "touched": false,
+   "chars_before": 56324,
+   "chars_after": 56324,
+   "disk_bytes_before": 66243,
+   "disk_bytes_after": 66243
+  },
+  {
+   "document": "doc.gdd-lore-node-states",
+   "touched": false,
+   "chars_before": 18547,
+   "chars_after": 18547,
+   "disk_bytes_before": 22179,
+   "disk_bytes_after": 22179
+  },
+  {
+   "document": "doc.Mechanism-D01",
+   "touched": false,
+   "chars_before": 56559,
+   "chars_after": 56559,
+   "disk_bytes_before": 58840,
+   "disk_bytes_after": 58840
+  },
+  {
+   "document": "doc.Mechanism-D02",
+   "touched": false,
+   "chars_before": 43540,
+   "chars_after": 43540,
+   "disk_bytes_before": 45624,
+   "disk_bytes_after": 45624
+  },
+  {
+   "document": "doc.Mechanism-D03",
+   "touched": false,
+   "chars_before": 48866,
+   "chars_after": 48866,
+   "disk_bytes_before": 50898,
+   "disk_bytes_after": 50898
+  },
+  {
+   "document": "doc.Mechanism-D04",
+   "touched": false,
+   "chars_before": 45103,
+   "chars_after": 45103,
+   "disk_bytes_before": 46979,
+   "disk_bytes_after": 46979
+  },
+  {
+   "document": "doc.Mechanism-D05",
+   "touched": false,
+   "chars_before": 39355,
+   "chars_after": 39355,
+   "disk_bytes_before": 41384,
+   "disk_bytes_after": 41384
+  },
+  {
+   "document": "doc.Mechanism-D06",
+   "touched": false,
+   "chars_before": 71902,
+   "chars_after": 71902,
+   "disk_bytes_before": 74600,
+   "disk_bytes_after": 74600
+  },
+  {
+   "document": "doc.Mechanism-D07",
+   "touched": false,
+   "chars_before": 66503,
+   "chars_after": 66503,
+   "disk_bytes_before": 67928,
+   "disk_bytes_after": 67928
+  },
+  {
+   "document": "doc.Mechanism-D08",
+   "touched": false,
+   "chars_before": 74923,
+   "chars_after": 74923,
+   "disk_bytes_before": 76853,
+   "disk_bytes_after": 76853
+  },
+  {
+   "document": "doc.Mechanism-D09",
+   "touched": true,
+   "chars_before": 80665,
+   "chars_after": 80664,
+   "disk_bytes_before": 82107,
+   "disk_bytes_after": 82110
+  },
+  {
+   "document": "doc.Mechanism-D10",
+   "touched": false,
+   "chars_before": 51282,
+   "chars_after": 51282,
+   "disk_bytes_before": 53072,
+   "disk_bytes_after": 53072
+  },
+  {
+   "document": "doc.Mechanism-D11",
+   "touched": false,
+   "chars_before": 58271,
+   "chars_after": 58271,
+   "disk_bytes_before": 59867,
+   "disk_bytes_after": 59867
+  },
+  {
+   "document": "doc.Mechanism-D12",
+   "touched": false,
+   "chars_before": 98632,
+   "chars_after": 98632,
+   "disk_bytes_before": 101957,
+   "disk_bytes_after": 101957
+  },
+  {
+   "document": "doc.Mechanism-D13",
+   "touched": false,
+   "chars_before": 251705,
+   "chars_after": 251705,
+   "disk_bytes_before": 267207,
+   "disk_bytes_after": 267207
+  },
+  {
+   "document": "doc.Mechanism-D14",
+   "touched": false,
+   "chars_before": 217380,
+   "chars_after": 217380,
+   "disk_bytes_before": 240681,
+   "disk_bytes_after": 240681
+  },
+  {
+   "document": "doc.Mechanism-D15",
+   "touched": false,
+   "chars_before": 206205,
+   "chars_after": 206205,
+   "disk_bytes_before": 214218,
+   "disk_bytes_after": 214218
+  },
+  {
+   "document": "doc.Mechanism-D16",
+   "touched": false,
+   "chars_before": 94274,
+   "chars_after": 94274,
+   "disk_bytes_before": 95849,
+   "disk_bytes_after": 95849
+  },
+  {
+   "document": "doc.Mechanism-D17",
+   "touched": false,
+   "chars_before": 86643,
+   "chars_after": 86643,
+   "disk_bytes_before": 88095,
+   "disk_bytes_after": 88095
+  },
+  {
+   "document": "doc.Mechanism-D18",
+   "touched": false,
+   "chars_before": 219984,
+   "chars_after": 219984,
+   "disk_bytes_before": 242073,
+   "disk_bytes_after": 242073
+  },
+  {
+   "document": "doc.mechanism-design-index-d01",
+   "touched": true,
+   "chars_before": 37132,
+   "chars_after": 37051,
+   "disk_bytes_before": 50488,
+   "disk_bytes_after": 50393
+  },
+  {
+   "document": "doc.mechanism-design-index-d02",
+   "touched": false,
+   "chars_before": 29973,
+   "chars_after": 29973,
+   "disk_bytes_before": 40250,
+   "disk_bytes_after": 40250
+  },
+  {
+   "document": "doc.mechanism-design-index-d03",
+   "touched": false,
+   "chars_before": 63969,
+   "chars_after": 63969,
+   "disk_bytes_before": 85271,
+   "disk_bytes_after": 85271
+  },
+  {
+   "document": "doc.mechanism-design-index-d04",
+   "touched": false,
+   "chars_before": 32993,
+   "chars_after": 32993,
+   "disk_bytes_before": 44569,
+   "disk_bytes_after": 44569
+  },
+  {
+   "document": "doc.mechanism-design-index-d05",
+   "touched": false,
+   "chars_before": 33644,
+   "chars_after": 33644,
+   "disk_bytes_before": 45610,
+   "disk_bytes_after": 45610
+  },
+  {
+   "document": "doc.mechanism-design-index-d06",
+   "touched": false,
+   "chars_before": 31963,
+   "chars_after": 31963,
+   "disk_bytes_before": 43577,
+   "disk_bytes_after": 43577
+  },
+  {
+   "document": "doc.mechanism-design-index-d07",
+   "touched": false,
+   "chars_before": 69783,
+   "chars_after": 69783,
+   "disk_bytes_before": 94419,
+   "disk_bytes_after": 94419
+  },
+  {
+   "document": "doc.mechanism-design-index-d08",
+   "touched": true,
+   "chars_before": 66908,
+   "chars_after": 66903,
+   "disk_bytes_before": 89647,
+   "disk_bytes_after": 89644
+  },
+  {
+   "document": "doc.mechanism-design-index-d09",
+   "touched": true,
+   "chars_before": 37569,
+   "chars_after": 37390,
+   "disk_bytes_before": 50658,
+   "disk_bytes_after": 50437
+  },
+  {
+   "document": "doc.mechanism-design-index-d10",
+   "touched": false,
+   "chars_before": 42735,
+   "chars_after": 42735,
+   "disk_bytes_before": 57703,
+   "disk_bytes_after": 57703
+  },
+  {
+   "document": "doc.mechanism-design-index-d11",
+   "touched": true,
+   "chars_before": 50981,
+   "chars_after": 50980,
+   "disk_bytes_before": 69541,
+   "disk_bytes_after": 69544
+  },
+  {
+   "document": "doc.mechanism-design-index-d12",
+   "touched": true,
+   "chars_before": 55142,
+   "chars_after": 55060,
+   "disk_bytes_before": 75582,
+   "disk_bytes_after": 75474
+  },
+  {
+   "document": "doc.mechanism-design-index-d13",
+   "touched": false,
+   "chars_before": 76358,
+   "chars_after": 76358,
+   "disk_bytes_before": 100625,
+   "disk_bytes_after": 100625
+  },
+  {
+   "document": "doc.mechanism-design-index-d14",
+   "touched": false,
+   "chars_before": 32778,
+   "chars_after": 32778,
+   "disk_bytes_before": 43755,
+   "disk_bytes_after": 43755
+  },
+  {
+   "document": "doc.mechanism-design-index-d15",
+   "touched": false,
+   "chars_before": 40478,
+   "chars_after": 40478,
+   "disk_bytes_before": 54012,
+   "disk_bytes_after": 54012
+  },
+  {
+   "document": "doc.mechanism-design-index-d16",
+   "touched": false,
+   "chars_before": 41785,
+   "chars_after": 41785,
+   "disk_bytes_before": 55864,
+   "disk_bytes_after": 55864
+  },
+  {
+   "document": "doc.mechanism-design-index-d17",
+   "touched": false,
+   "chars_before": 32237,
+   "chars_after": 32237,
+   "disk_bytes_before": 43580,
+   "disk_bytes_after": 43580
+  },
+  {
+   "document": "doc.mechanism-design-index-d18",
+   "touched": false,
+   "chars_before": 33166,
+   "chars_after": 33166,
+   "disk_bytes_before": 45196,
+   "disk_bytes_after": 45196
+  },
+  {
+   "document": "doc.mechanism-design-index",
+   "touched": false,
+   "chars_before": 10856,
+   "chars_after": 10856,
+   "disk_bytes_before": 12570,
+   "disk_bytes_after": 12570
+  },
+  {
+   "document": "doc.Original-TRPG-Core",
+   "touched": false,
+   "chars_before": 4972,
+   "chars_after": 4972,
+   "disk_bytes_before": 6672,
+   "disk_bytes_after": 6672
+  },
+  {
+   "document": "doc.Singleplayer-Design-SP-1-0-0",
+   "touched": true,
+   "chars_before": 69633,
+   "chars_after": 69449,
+   "disk_bytes_before": 94415,
+   "disk_bytes_after": 94186
+  }
+ ],
+ "pattern_scan": {
+  "before": {
+   "sixteen-states-en": 24,
+   "state-id-polity": 28,
+   "sixteen-states-en~variant-16state": 12,
+   "sixteen-states-ko~variant-16guk-any": 16,
+   "sixteen-states-en~variant-16nation": 2,
+   "church-en": 16,
+   "church-ko": 15,
+   "sixteen-states-ko": 4,
+   "sixteen-states-ko~variant-16nara": 1,
+   "sixteen-states-en~variant-16countries": 6,
+   "sixteen-states-ko~variant-16gaeguk": 1
+  },
+  "after": {
+   "sixteen-states-en": 17,
+   "state-id-polity": 28,
+   "sixteen-states-en~variant-16state": 3,
+   "sixteen-states-ko~variant-16guk-any": 4,
+   "church-en": 8,
+   "church-ko": 6,
+   "sixteen-states-en~variant-16countries": 5
+  },
+  "residual_hits": [
+   {
+    "document": "doc.ADR-003",
+    "field": "body_md",
+    "pattern": "sixteen-states-en",
+    "match": "16 states",
+    "quote": "eservation boundary, and the representative anchors for the 16 states, 32 houses, and external theat"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S01",
+    "quote": " projecting original names into game canon.\n6. Stable IDs (`S01`, `HC01`, `HP01`, `XT01`, etc.) are "
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S01",
+    "quote": " name | Representative anchor |\n| --- | --- | --- | --- |\n| S01 | Yeoui-Sinjeong Floodgate Governmen"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S02",
+    "quote": "ment | Yeongdeungpo Floodgate Government | Yeongdeungpo |\n| S02 | Southwest Manufacturing Alliance |"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S04",
+    "quote": "facturing Alliance | Guro Manufacturing Alliance | Guro |\n| S04 | Ttukdo Workshop Union | Ttukseom W"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S06",
+    "quote": "kdo Workshop Union | Ttukseom Workshop Union | Ttukseom |\n| S06 | Capital City Records Office | Seou"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S09",
+    "quote": "s Office | Seoul Station Records Office | Seoul Station |\n| S09 | Sangam Transmission Corporation | "
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S10",
+    "quote": "edia City Transmission Corporation | Digital Media City |\n| S10 | Northern Mountain Refuge League | "
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S13",
+    "quote": "Bukhansan Bogungmun Refuge League | Bukhansan Bogungmun |\n| S13 | Yangnyeong Council League | Jegi-d"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S14",
+    "quote": "g Council League | Jegi-dong Council League | Jegi-dong |\n| S14 | Acha-Guui Gateway Bureau | Guui Ga"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S15",
+    "quote": "| Acha-Guui Gateway Bureau | Guui Gateway Bureau | Guui |\n| S15 | Garak-Jamsil Distribution Bureau |"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_md",
+    "pattern": "sixteen-states-en~variant-16state",
+    "match": "16 states",
+    "quote": "eservation boundary, and the representative anchors for the 16 states, 32 houses, and external theat"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S01",
+    "quote": "검증 증거는 고치지 않는다. 원본 명칭을 게임 정사로 투영할 때만 이 결정표를 적용한다.\n6. 안정 ID(`S01`, `HC01`, `HP01`, `XT01` 등)는 바꾸지 않는다"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S01",
+    "quote": "\n| ID | 이전 명칭 | 변경 명칭 | 대표 앵커 |\n| --- | --- | --- | --- |\n| S01 | 여의신정수문정부 | 영등포수문정부 | 영등포 |\n| S02 |"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S02",
+    "quote": "-- | --- | --- | --- |\n| S01 | 여의신정수문정부 | 영등포수문정부 | 영등포 |\n| S02 | 서남제작동맹 | 구로제작동맹 | 구로 |\n| S04 | 뚝도공"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S04",
+    "quote": "여의신정수문정부 | 영등포수문정부 | 영등포 |\n| S02 | 서남제작동맹 | 구로제작동맹 | 구로 |\n| S04 | 뚝도공방연합 | 뚝섬공방연합 | 뚝섬 |\n| S06 | 도성기"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S06",
+    "quote": "2 | 서남제작동맹 | 구로제작동맹 | 구로 |\n| S04 | 뚝도공방연합 | 뚝섬공방연합 | 뚝섬 |\n| S06 | 도성기록청 | 서울역기록청 | 서울역 |\n| S09 | 상암송"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S09",
+    "quote": "4 | 뚝도공방연합 | 뚝섬공방연합 | 뚝섬 |\n| S06 | 도성기록청 | 서울역기록청 | 서울역 |\n| S09 | 상암송신공사 | 디지털미디어시티송신공사 | 디지털미디어시티 |"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S10",
+    "quote": "서울역기록청 | 서울역 |\n| S09 | 상암송신공사 | 디지털미디어시티송신공사 | 디지털미디어시티 |\n| S10 | 북산피난연맹 | 북한산보국문피난연맹 | 북한산보국문 |\n| S"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S13",
+    "quote": "티송신공사 | 디지털미디어시티 |\n| S10 | 북산피난연맹 | 북한산보국문피난연맹 | 북한산보국문 |\n| S13 | 약령의정동맹 | 제기동의정동맹 | 제기동 |\n| S14 | 아"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S14",
+    "quote": " | 북한산보국문피난연맹 | 북한산보국문 |\n| S13 | 약령의정동맹 | 제기동의정동맹 | 제기동 |\n| S14 | 아차구의관문국 | 구의관문국 | 구의 |\n| S15 | 가락잠"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S15",
+    "quote": "| 약령의정동맹 | 제기동의정동맹 | 제기동 |\n| S14 | 아차구의관문국 | 구의관문국 | 구의 |\n| S15 | 가락잠실배급국 | 가락시장배급국 | 가락시장 |\n\n전체 국가·"
+   },
+   {
+    "document": "doc.ADR-003",
+    "field": "body_ko_md",
+    "pattern": "sixteen-states-ko~variant-16guk-any",
+    "match": "16국",
+    "quote": "Wiki는 유지하지 않는다.\n\n## 변경 기록\n\n- 2026-09-16: 명칭 우선순위, 원본 보존 경계, 16국·32가문·외부전구의 대표 앵커를 확정했다.\n- 2026-09-16"
+   },
+   {
+    "document": "doc.Ref-Crusader-Kings-3",
+    "field": "body_md",
+    "pattern": "church-en",
+    "match": "church",
+    "quote": "\n| Gold | Demesne taxes, vassal payments, ransoms, plunder, church support, events | Construction, r"
+   },
+   {
+    "document": "doc.Ref-Crusader-Kings-3",
+    "field": "body_md",
+    "pattern": "church-en",
+    "match": "church",
+    "quote": " and doctrine-aligned actions; wars and events | Holy wars, church requests, conversion, faith creat"
+   },
+   {
+    "document": "doc.Ref-Crusader-Kings-3",
+    "field": "body_md",
+    "pattern": "church-en",
+    "match": "Bishop",
+    "quote": "angerous figure when schemes target you. |\n| Court Believer/Bishop | Learning: conversion, religious"
+   },
+   {
+    "document": "doc.Ref-Crusader-Kings-3",
+    "field": "body_md",
+    "pattern": "church-en",
+    "match": "priest",
+    "quote": "-- |\n| Personal title claim | Succession and family rights, priest forgery, request to a religious h"
+   },
+   {
+    "document": "doc.Ref-Crusader-Kings-3",
+    "field": "body_ko_md",
+    "pattern": "church-ko",
+    "match": "주교",
+    "quote": "·방해, 비밀 탐색 | 불충한 고기량 첩보장은 자신을 노리는 계책에 위험한 인물이 된다. |\n| 궁정 신도·주교 | 학습: 개종, 종교 관계, 명분 위조 등 | 신앙 교리에 따라 "
+   },
+   {
+    "document": "doc.Ref-Crusader-Kings-3",
+    "field": "body_ko_md",
+    "pattern": "church-ko",
+    "match": "교회",
+    "quote": "실제 플레이의 혼인·범죄·성직·종교 적대 규칙은 개별 신앙의 교리와 핵심 교리에 의해 결정된다. 가톨릭과 정교회처럼 같은 종교 안에서도 다른 신앙이면 종교 수장·성지·교리와 상호 "
+   },
+   {
+    "document": "doc.Data-Catalog-and-Schema",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S01",
+    "quote": "racters |\n| State Identifier | `state` | String | `S00` or `S01`–`S16` | Yes | State Ledger |\n| Valu"
+   },
+   {
+    "document": "doc.Data-Catalog-and-Schema",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S16",
+    "quote": "s |\n| State Identifier | `state` | String | `S00` or `S01`–`S16` | Yes | State Ledger |\n| Values | `"
+   },
+   {
+    "document": "doc.Data-Catalog-and-Schema",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S01",
+    "quote": "d gender |\n| `state` | `state_id` | `capital_station_id` | `S01`–`S16`, 16 opening states |\n| `organ"
+   },
+   {
+    "document": "doc.Data-Catalog-and-Schema",
+    "field": "body_md",
+    "pattern": "state-id-polity",
+    "match": "S16",
+    "quote": "er |\n| `state` | `state_id` | `capital_station_id` | `S01`–`S16`, 16 opening states |\n| `organizatio"
+   },
+   {
+    "document": "doc.Data-Catalog-and-Schema",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S01",
+    "quote": " 예 | LORE/characters |\n| 국가 식별자 | `state` | 문자열 | `S00` 또는 `S01`–`S16` | 예 | 국가 원장 |\n| 가치관 | `values"
+   },
+   {
+    "document": "doc.Data-Catalog-and-Schema",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S16",
+    "quote": "ORE/characters |\n| 국가 식별자 | `state` | 문자열 | `S00` 또는 `S01`–`S16` | 예 | 국가 원장 |\n| 가치관 | `values` | 객체"
+   },
+   {
+    "document": "doc.Data-Catalog-and-Schema",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S01",
+    "quote": "잠금 성별 보존 |\n| `state` | `state_id` | `capital_station_id` | `S01`–`S16`, 개막 국가 16개 |\n| `organization`"
+   },
+   {
+    "document": "doc.Data-Catalog-and-Schema",
+    "field": "body_ko_md",
+    "pattern": "state-id-polity",
+    "match": "S16",
+    "quote": "보존 |\n| `state` | `state_id` | `capital_station_id` | `S01`–`S16`, 개막 국가 16개 |\n| `organization` | `or"
+   },
+   {
+    "document": "doc.Archify-D09",
+    "field": "body_md",
+    "pattern": "sixteen-states-en",
+    "match": "16 states",
+    "quote": "he fields required for each selector. Actual values for the 16 states and institution payloads are n"
+   },
+   {
+    "document": "doc.Archify-D09",
+    "field": "body_md",
+    "pattern": "sixteen-states-en",
+    "match": "Sixteen state",
+    "quote": "ed from Operational Path | d09.b9.proposalHeld[0].s​cope | \"Sixteen state/office procedure payloads\""
+   },
+   {
+    "document": "doc.Archify-D09",
+    "field": "body_md",
+    "pattern": "sixteen-states-en",
+    "match": "sixteen states",
+    "quote": "proves a separate explicit procedure record for each of the sixteen states. It does not approve one "
+   },
+   {
+    "document": "doc.Archify-D09",
+    "field": "body_md",
+    "pattern": "sixteen-states-en",
+    "match": "sixteen state",
+    "quote": "ional Path | d09.b11.intentionallyPro​posal[0].scope | \"The sixteen state/office procedure payloads:"
+   },
+   {
+    "document": "doc.Archify-D09",
+    "field": "body_md",
+    "pattern": "sixteen-states-en~variant-16state",
+    "match": "16 states",
+    "quote": "he fields required for each selector. Actual values for the 16 states and institution payloads are n"
+   },
+   {
+    "document": "doc.Archify-D09",
+    "field": "body_ko_md",
+    "pattern": "sixteen-states-en",
+    "match": "Sixteen state",
+    "quote": " \"P01\" |\n| 미결 — 운용 경로 제외 | d09.b9.proposalHeld[0].s​cope | \"Sixteen state/office procedure payloads\""
+   },
+   {
+    "document": "doc.Archify-D09",
+    "field": "body_ko_md",
+    "pattern": "sixteen-states-en",
+    "match": "sixteen states",
+    "quote": "proves a separate explicit procedure record for each of the sixteen states. It does not approve one "
+   },
+   {
+    "document": "doc.Archify-D09",
+    "field": "body_ko_md",
+    "pattern": "sixteen-states-en",
+    "match": "sixteen state",
+    "quote": "— 운용 경로 제외 | d09.b11.intentionallyPro​posal[0].scope | \"The sixteen state/office procedure payloads:"
+   },
+   {
+    "document": "doc.Archify-D09",
+    "field": "body_ko_md",
+    "pattern": "sixteen-states-ko~variant-16guk-any",
+    "match": "16국",
+    "quote": "위 절차 — approvalStatus=approved와​ selector별 필수 fields 필요. 실제 16국 값·기관 payload는 자동 작성하지 않는다. (원문: d09."
+   },
+   {
+    "document": "doc.Archify-D12",
+    "field": "body_md",
+    "pattern": "sixteen-states-en",
+    "match": "16 states",
+    "quote": ", quorum, resolver, confirmation, and proxy for each of the 16 states\" |\n| Operation — Current Editi"
+   },
+   {
+    "document": "doc.Archify-D12",
+    "field": "body_md",
+    "pattern": "sixteen-states-en~variant-16countries",
+    "match": "16 countries",
+    "quote": ".b11.authority.sealed​Selections[1].applicatio​n | \"Each of 16 countries supplies its own electors, "
+   },
+   {
+    "document": "doc.Archify-D12",
+    "field": "body_md",
+    "pattern": "sixteen-states-en~variant-16state",
+    "match": "16 states",
+    "quote": ", quorum, resolver, confirmation, and proxy for each of the 16 states\" |\n| Operation — Current Editi"
+   },
+   {
+    "document": "doc.Archify-D12",
+    "field": "body_ko_md",
+    "pattern": "sixteen-states-ko~variant-16guk-any",
+    "match": "16국",
+    "quote": "판본·행위 선택 | d12.b11.decisionDisposit​ion[8].selectedLabel | \"16국 각각 선거인·정족수·해결자·인준·대행을 명시\" |\n| 운용 — 현"
+   },
+   {
+    "document": "doc.Archify-D12",
+    "field": "body_ko_md",
+    "pattern": "sixteen-states-en~variant-16countries",
+    "match": "16 countries",
+    "quote": ".b11.authority.sealed​Selections[1].applicatio​n | \"Each of 16 countries supplies its own electors, "
+   },
+   {
+    "document": "doc.Mechanism-D09",
+    "field": "body_md",
+    "pattern": "sixteen-states-en",
+    "match": "Sixteen state",
+    "quote": " \"proposalHeld\": [\n    {\n      \"id\": \"P01\",\n      \"scope\": \"Sixteen state/office procedure payloads\""
+   },
+   {
+    "document": "doc.Mechanism-D09",
+    "field": "body_md",
+    "pattern": "sixteen-states-en",
+    "match": "sixteen states",
+    "quote": "proves a separate explicit procedure record for each of the sixteen states. It does not approve one "
+   },
+   {
+    "document": "doc.Mechanism-D09",
+    "field": "body_md",
+    "pattern": "sixteen-states-en",
+    "match": "sixteen state",
+    "quote": "lyProposal\": [\n    {\n      \"id\": \"P01\",\n      \"scope\": \"The sixteen state/office procedure payloads:"
+   },
+   {
+    "document": "doc.Mechanism-D09",
+    "field": "body_ko_md",
+    "pattern": "sixteen-states-en",
+    "match": "Sixteen state",
+    "quote": " \"proposalHeld\": [\n    {\n      \"id\": \"P01\",\n      \"scope\": \"Sixteen state/office procedure payloads\""
+   },
+   {
+    "document": "doc.Mechanism-D09",
+    "field": "body_ko_md",
+    "pattern": "sixteen-states-en",
+    "match": "sixteen states",
+    "quote": "proves a separate explicit procedure record for each of the sixteen states. It does not approve one "
+   },
+   {
+    "document": "doc.Mechanism-D09",
+    "field": "body_ko_md",
+    "pattern": "sixteen-states-en",
+    "match": "sixteen state",
+    "quote": "lyProposal\": [\n    {\n      \"id\": \"P01\",\n      \"scope\": \"The sixteen state/office procedure payloads:"
+   },
+   {
+    "document": "doc.Mechanism-D12",
+    "field": "body_md",
+    "pattern": "sixteen-states-en~variant-16countries",
+    "match": "16 countries",
+    "quote": "       \"chosenOption\": \"A\",\n        \"application\": \"Each of 16 countries supplies its own electors, "
+   },
+   {
+    "document": "doc.Mechanism-D12",
+    "field": "body_md",
+    "pattern": "sixteen-states-en~variant-16countries",
+    "match": "16 countries",
+    "quote": "esolver, ratification, and acting authority for each of the 16 countries\",\n      \"disposition\": \"APP"
+   },
+   {
+    "document": "doc.Mechanism-D12",
+    "field": "body_ko_md",
+    "pattern": "sixteen-states-ko~variant-16guk-any",
+    "match": "16국",
+    "quote": "sidual\",\n      \"chosenOption\": \"A\",\n      \"selectedLabel\": \"16국 각각 선거인·정족수·해결자·인준·대행을 명시\",\n      \"di"
+   },
+   {
+    "document": "doc.Mechanism-D12",
+    "field": "body_ko_md",
+    "pattern": "sixteen-states-en~variant-16countries",
+    "match": "16 countries",
+    "quote": "       \"chosenOption\": \"A\",\n        \"application\": \"Each of 16 countries supplies its own electors, "
+   },
+   {
+    "document": "doc.mechanism-design-index-d08",
+    "field": "body_md",
+    "pattern": "church-en",
+    "match": "bishop",
+    "quote": " is not a consent system.\n- **Divorce**: Actions oldid1318, bishop entry and divorce table — marriag"
+   },
+   {
+    "document": "doc.mechanism-design-index-d08",
+    "field": "body_md",
+    "pattern": "church-en",
+    "match": "bishop",
+    "quote": "d divorce table — marriage ends through the married lord, a bishop in the city, and a gold cost. The"
+   },
+   {
+    "document": "doc.mechanism-design-index-d08",
+    "field": "body_md",
+    "pattern": "church-en",
+    "match": "bishop",
+    "quote": "shold (+5), the marriage outcome list, and the gold cost of bishop divorce, but this material alone "
+   },
+   {
+    "document": "doc.mechanism-design-index-d08",
+    "field": "body_ko_md",
+    "pattern": "church-ko",
+    "match": "주교",
+    "quote": "조정 상태로 남아 있고, 이 사고는 동의 체계가 아니다.\n- **이혼**: Actions oldid1318 주교 항목·이혼 표 — 혼인한 영주·도시 내 주교·금 비용으로 혼인이 끝"
+   },
+   {
+    "document": "doc.mechanism-design-index-d08",
+    "field": "body_ko_md",
+    "pattern": "church-ko",
+    "match": "주교",
+    "quote": "가 아니다.\n- **이혼**: Actions oldid1318 주교 항목·이혼 표 — 혼인한 영주·도시 내 주교·금 비용으로 혼인이 끝난다. 대상 동의·지급 주체·자녀·재산 효과는"
+   },
+   {
+    "document": "doc.mechanism-design-index-d08",
+    "field": "body_ko_md",
+    "pattern": "church-ko",
+    "match": "주교",
+    "quote": "혼인 종료가 아니다.\n- 서울과의 대응: 확인한 Norland 자료는 관계 문턱(+5), 혼인 결과 목록, 주교 이혼의 금 비용을 문서화하지만, 이 자료만으로 실제 처리 순서나 즉"
+   },
+   {
+    "document": "doc.mechanism-design-index-d12",
+    "field": "body_md",
+    "pattern": "church-en",
+    "match": "bishop",
+    "quote": "ation.\n- No mixing of test builds and the main release: the bishop succession transfer and free-titl"
+   },
+   {
+    "document": "doc.mechanism-design-index-d12",
+    "field": "body_ko_md",
+    "pattern": "church-ko",
+    "match": "주교",
+    "quote": " 그 문턱 수치는 놀랜드의 것이고 서울의 사망 판정이 아니다.\n- 시험판과 본편 혼합 금지: 시험판 패치의 주교 승계 이전과 자유 작위 보호, 본편 패치의 후계 보존은 서로 다른 "
+   },
+   {
+    "document": "doc.Singleplayer-Design-SP-1-0-0",
+    "field": "body_md",
+    "pattern": "sixteen-states-en",
+    "match": "Sixteen-States",
+    "quote": "nd combat round-trip contracts. Worldbuilding grounds: WIKI Sixteen-States, Offices-and-Ranks, Chaeb"
+   },
+   {
+    "document": "doc.Singleplayer-Design-SP-1-0-0",
+    "field": "body_ko_md",
+    "pattern": "sixteen-states-en",
+    "match": "Sixteen-States",
+    "quote": "41/42/43과 2026-10-03 주장/전쟁 조항, 경제·저장·전투 왕복 계약. 세계관 근거: WIKI Sixteen-States, Offices-and-Ranks, Chaeb"
+   }
+  ]
+ }
+}

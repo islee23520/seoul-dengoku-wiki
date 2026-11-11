@@ -1200,7 +1200,7 @@ The new goal is Norland-style individual-resolution combat (Decision 13). Only i
 
 The combat camera is a 3D free command view confirmed by the owner (2026-09-24). It provides pan, orbit, and zoom, but does not set angle or field-of-view values. Combat has no pause, slow-down, or fast-forward (owner decision, 2026-09-24). Command preview, confirm, and cancel are applied to squads before engagement, and confirmed replacement commands are applied in deterministic order on the next simulation step. The shared campaign world and other parties continue to flow regardless of combat.
 
-Generated art slots, the 16-nation campaign, and aggregated casualty representation are not yet complete.
+Generated art slots, the campaign, and aggregated casualty representation are not yet complete.
 
 ## Responsibilities by Area
 
@@ -1244,7 +1244,7 @@ The current repository assemblies are `Janseon.Core` (engine prohibited), `Janse
 
 전투 카메라는 소유자가 확정한 3D 자유 지휘 시점입니다(2026-09-24). 팬·오빗·줌을 제공하되 각도와 시야각 수치를 정하지 않습니다. 전투에는 일시정지와 감속·배속이 없습니다(2026-09-24 소유자 결정). 명령 미리보기·확인·취소는 교전 전 분대에 하고, 확인된 교체 명령은 다음 시뮬레이션 스텝에서 결정론적 순서로 적용합니다. 공유 캠페인 월드와 다른 파티는 전투와 무관하게 계속 흐릅니다.
 
-생성 아트 슬롯·16국 캠페인·집계 사상자 표현은 아직 완료가 아닙니다.
+생성 아트 슬롯·캠페인·집계 사상자 표현은 아직 완료가 아닙니다.
 
 ## 영역별 책임
 
@@ -2128,7 +2128,7 @@ Status: proposed, not implemented, not playtested.
 
 ## 1. Authority and Scope of This Document
 
-This document is a review proposal for Sin Jongmok (berkshirehathaways)''s story development and meta-layer design contributions. It does not replace the canon, runtime contracts, or cast of the existing product. Merging the document means the proposal is archived and under review; it is not a confirmation of setting details or approval to implement the next product module. What can be adopted from the narrative research is the causal reading method of the CK2 original: opening → desire and constraint → institutions and relationships → trigger → choice and known cost → effect → follow-up state. Starting from the approved actions and rights of existing Seoul characters, institutions, stations, and subways, we mark separately what is preserved, what is reconstructed to fit Seoul''s conditions, and what is rejected. We separate edition differences between the original and the CK2 Fanfork from observations of CK3 systems, and we do not substitute North American place names, proper nouns, bank debt law, or death inheritance as Seoul facts. The full approved texts of the [Myeongbu Church](/wiki/Faith-Culture-Schism/) `DOC:Faith-Culture-Schism` and [Im Chowon](/wiki/people/person-0087) `K087` are owned by the WIKI, and here only the IDs and approved editions are referenced. The new scenes of A-P1/B-P1/C-P1/D-P1 are unapproved and are not adopted in this document.
+This document is a review proposal for Sin Jongmok (berkshirehathaways)''s story development and meta-layer design contributions. It does not replace the canon, runtime contracts, or cast of the existing product. Merging the document means the proposal is archived and under review; it is not a confirmation of setting details or approval to implement the next product module. What can be adopted from the narrative research is the causal reading method of the CK2 original: opening → desire and constraint → institutions and relationships → trigger → choice and known cost → effect → follow-up state. Starting from the approved actions and rights of existing Seoul characters, institutions, stations, and subways, we mark separately what is preserved, what is reconstructed to fit Seoul''s conditions, and what is rejected. We separate edition differences between the original and the CK2 Fanfork from observations of CK3 systems, and we do not substitute North American place names, proper nouns, bank debt law, or death inheritance as Seoul facts. The full approved texts of the [Faith-Culture-Schism](/wiki/Faith-Culture-Schism/) `DOC:Faith-Culture-Schism` and [Im Chowon](/wiki/people/person-0087) `K087` are owned by the WIKI, and here only the IDs and approved editions are referenced. The new scenes of A-P1/B-P1/C-P1/D-P1 are unapproved and are not adopted in this document.
 
 This document does not change the scope, order, or completion rate of the current ToDo. Implementation of new events will be agreed upon separately with its own scope and issue. Document review and paper experiments are not prerequisites for current product work.
 
@@ -2188,7 +2188,7 @@ Combat, negotiation, exploration, and non-intervention for personal gain are all
 
 Opening a route must bring real benefits such as supplies, trade, easier travel, or reunions. New conflicts arise from separate actors and goals, and are not handled by detecting good deeds and spawning enemies. Successes in which no one is hurt, and the satisfaction of defeating an obvious enemy, are also allowed.
 
-Immediate dangers and known costs are shown before a choice is made. Facts, inferences, and rumors are distinguished. Even when characters interpret events differently, the actual events and the settlement results must be consistent. Rewards and relationship changes must be grounded in witnessing, reporting, or participation. Only cases confirmed in the Seoul source material are adjudicated: in the Samseong Station roster and water contract, separate O Gyeongjae''s position from Im Chowon''s sealed testimony and unfinished maintenance training; Sin Jongmok''s attempt to recover the transceiver unit is conditioned on the daily power supply that depends on the same part and on the residents'' consent. The Yongsan exchange''s existing medical-call priority, reduced freight dispatch, and single-car operating-rights costs are not to be converted into bank principal, arrears, or seizure. Im Hajun''s disappearance is not a death hook, and Bak Nuri''s operational responsibility and O Gyeongjae''s position as senior pastor are not automatically inherited by Im Chowon. Platform access, railway trunk lines, and service restoration do not mean county ownership or a new overlord. The order of the new refrigeration/relay negotiations, the presentation of records, and the costs and outcomes of choosing to participate or hold back are not yet approved incidents.
+Immediate dangers and known costs are shown before a choice is made. Facts, inferences, and rumors are distinguished. Even when characters interpret events differently, the actual events and the settlement results must be consistent. Rewards and relationship changes must be grounded in witnessing, reporting, or participation. Only cases confirmed in the Seoul source material are adjudicated: in the Samseong Station roster and water contract, separate O Gyeongjae''s position from Im Chowon''s sealed testimony and unfinished maintenance training; Sin Jongmok''s attempt to recover the transceiver unit is conditioned on the daily power supply that depends on the same part and on the residents'' consent. The Yongsan exchange''s existing medical-call priority, reduced freight dispatch, and single-car operating-rights costs are not to be converted into bank principal, arrears, or seizure. Im Hajun''s disappearance is not a death hook, and Bak Nuri''s operational responsibility and O Gyeongjae''s post are not automatically inherited by Im Chowon. Platform access, railway trunk lines, and service restoration do not mean county ownership or a new overlord. The order of the new refrigeration/relay negotiations, the presentation of records, and the costs and outcomes of choosing to participate or hold back are not yet approved incidents.
 
 Competence, humor, rest, and the restoration of daily life are also part of the narrative. Do not use every warm scene as foreshadowing for a later tragedy. Do not have the author punish players with a hidden morality score for choosing personal gain or a military solution.
 
@@ -2285,7 +2285,7 @@ The goal the player should remember is the following scene. At first, the door I
 
 길을 열면 물자, 거래, 이동 편의, 재회 같은 실제 이익이 있어야 한다. 새로운 갈등은 별도의 행위자와 목표 때문에 생기며, 선행을 감지해 적을 생성하는 식으로 처리하지 않는다. 아무도 다치지 않는 성공과 명백한 적을 물리치는 통쾌함도 허용한다.
 
-즉시 위험과 알려진 비용은 선택 전에 보여준다. 사실, 추정, 소문은 구별한다. 인물의 해석이 달라도 실제 사건과 정산 결과는 일관되어야 한다. 보상과 관계 변화에는 목격·보고·참여의 근거가 있어야 한다. 서울 원천에서 확인된 사례만 판독한다: 삼성역 명부·물 계약에서 오경재의 직위와 임초원의 봉인 증언/미완 정비 교육을 분리하고, 신종목의 송수신도 회수 시도는 같은 부품에 의존한 생활 전력과 주민 동의를 조건으로 둔다. 용산 교환실의 기존 의료 호출 우선·줄어든 화물 배차·한 칸 운영권 비용은 은행 원금·연체·압류로 치환하지 않는다. 임하준의 실종은 사망 hook이 아니며 박누리의 운영 책임과 오경재 당회장직을 임초원에게 자동 승계시키지 않는다. 승강장 접근·철도 간선·서비스 회복은 county 소유나 새 주군이 아니다. 새로운 냉장/중계 협의 순서·기록 제시·참여/보류 선택의 비용과 결말은 아직 승인된 사건이 아니다.
+즉시 위험과 알려진 비용은 선택 전에 보여준다. 사실, 추정, 소문은 구별한다. 인물의 해석이 달라도 실제 사건과 정산 결과는 일관되어야 한다. 보상과 관계 변화에는 목격·보고·참여의 근거가 있어야 한다. 서울 원천에서 확인된 사례만 판독한다: 삼성역 명부·물 계약에서 오경재의 직위와 임초원의 봉인 증언/미완 정비 교육을 분리하고, 신종목의 송수신도 회수 시도는 같은 부품에 의존한 생활 전력과 주민 동의를 조건으로 둔다. 용산 교환실의 기존 의료 호출 우선·줄어든 화물 배차·한 칸 운영권 비용은 은행 원금·연체·압류로 치환하지 않는다. 임하준의 실종은 사망 hook이 아니며 박누리의 운영 책임과 오경재의 직책을 임초원에게 자동 승계시키지 않는다. 승강장 접근·철도 간선·서비스 회복은 county 소유나 새 주군이 아니다. 새로운 냉장/중계 협의 순서·기록 제시·참여/보류 선택의 비용과 결말은 아직 승인된 사건이 아니다.
 
 유능함, 유머, 휴식, 일상의 회복도 서사의 일부다. 모든 따뜻한 장면을 이후 비극의 복선으로 쓰지 않는다. 개인 이익이나 군사적 해결을 택했다고 작가가 숨은 도덕 점수로 벌하지 않는다.
 
@@ -6621,7 +6621,7 @@ The combat camera is a 3D free command viewpoint with pan, orbit, and zoom confi
 
 - Foundation: Bootstrap App scope/FSM, exclusive screen lease, VContainer static contract, architecture gate
 - Core loop (ToDo 5–12): deterministic Core IDs, commands, RNG streams, and ledger hashes; a three-station line of Yeongdeungpo–Sindorim–Guro; a six-stage campaign including negotiation and detours; exactly-once settlement; uGUI screens including MainTitle
-- Seoul regional data (2026-09-13): 25 districts and 427 neighborhoods (administrative dong) under the 2026-07-01 boundaries, OSM snapshot 2026-09-04T23:00:00Z. `TOOL/tools/regions` re-reconciles each neighborhood''s residents, livelihoods, hazards, and actions against 1,011,022 candidate ledger entries. Map browsing is handled by `World-and-Subway-Layers` on the official wiki. The 334 stations and 435 edges form a travel graph, not proof of Seoul''s land area. There is no internal Unity grid or 16-state simulation.
+- Seoul regional data (2026-09-13): 25 districts and 427 neighborhoods (administrative dong) under the 2026-07-01 boundaries, OSM snapshot 2026-09-04T23:00:00Z. `TOOL/tools/regions` re-reconciles each neighborhood''s residents, livelihoods, hazards, and actions against 1,011,022 candidate ledger entries. Map browsing is handled by `World-and-Subway-Layers` on the official wiki. The 334 stations and 435 edges form a travel graph, not proof of Seoul''s land area. There is no internal Unity grid.
 - Generated-art foundation: promotion of 6 historical props to source-bound BOM and runtime hookup, promotion of 3 role characters (Explorer, Medic, Patrol), 9 UI kit candidates (awaiting visual acceptance), TRELLIS v1 optional host contract frozen
 - Worldbuilding and character source: per-state rosters (Cast-State-01–16, 412 characters) and relationship ledger, hostile groups G01–G27 published, narrative placements B001–B047, ISO world, family, and hostile diagrams, monster placement ledger M001–M042, World-Narrative-Atlas integration
 - Public wiki: the mounted mirror of the canonical LORE and GDD is synchronized with the source commit. Unpublished fragments are tracked only in tables.
@@ -6635,7 +6635,7 @@ The combat camera is a 3D free command viewpoint with pan, orbit, and zoom confi
 4. Slot hookup (ToDo week 16, #26) — Connect only promoted assets to uGUI runtime slots and remove temporary visuals
 5. Final acceptance gate (ToDo week 17, #27) — Pass in a single run: the architecture gate, all batchmode PlayMode paths, 4-axis visual PASS, BOM fail-closed, a macOS Development player smoke test on the same Unity revision, and the temporary-resource cleanup receipt
 6. Narrative and collaboration follow-up (#41) — Agreement with external contributors on the narrative direction role and its boundaries
-7. Combat presentation finalization — The target screen is a 3D spectator view of individual-resolution combat, and the camera is a 3D free-command viewpoint. The 3D assets, SFX, and VFX in the Oddland donation payload (`GAME/Assets/Quarantine/Oddland/`, see the donation section of [How Assets Come In](/gdd/design/asset-pipeline/)) must pass the BOM promotion gate before being hooked up to runtime slots. The full 16-state, 412-character campaign, saving, diplomacy, and sieges are separate modules that follow.
+7. Combat presentation finalization — The target screen is a 3D spectator view of individual-resolution combat, and the camera is a 3D free-command viewpoint. The 3D assets, SFX, and VFX in the Oddland donation payload (`GAME/Assets/Quarantine/Oddland/`, see the donation section of [How Assets Come In](/gdd/design/asset-pipeline/)) must pass the BOM promotion gate before being hooked up to runtime slots. The full 412-character campaign, saving, diplomacy, and sieges are separate modules that follow.
 
 If a stage fails, work does not proceed to the next stage.
 
@@ -6676,7 +6676,7 @@ The next product module is not started until the current module passes the gates
 
 - Foundation 기반: Bootstrap App scope/FSM, 배타적 화면 lease, VContainer 정적 계약, 아키텍처 게이트
 - 코어 루프(ToDo 5–12): 결정론 Core ID·명령·RNG 스트림·원장 해시, 영등포–신도림–구로 세 역 노선, 교섭·우회를 포함한 여섯 단계 캠페인, 정확히 한 번 정산, MainTitle 포함 uGUI 화면
-- 서울 지역 데이터(2026-09-13): 2026-07-01 행정동 경계 25구·427동, OSM 스냅샷 2026-09-04T23:00:00Z. 동별 주민·생업·위험·행동과 후보 원장 1,011,022건을 `TOOL/tools/regions`가 재대조한다. 지도 열람은 공식 위키의 `World-and-Subway-Layers`가 맡는다. 역 334·간선 435는 이동 그래프이지 서울 면적의 증명이 아니다. Unity 내부 격자·16국 시뮬레이션은 없다
+- 서울 지역 데이터(2026-09-13): 2026-07-01 행정동 경계 25구·427동, OSM 스냅샷 2026-09-04T23:00:00Z. 동별 주민·생업·위험·행동과 후보 원장 1,011,022건을 `TOOL/tools/regions`가 재대조한다. 지도 열람은 공식 위키의 `World-and-Subway-Layers`가 맡는다. 역 334·간선 435는 이동 그래프이지 서울 면적의 증명이 아니다. Unity 내부 격자는 없다
 - 생성 아트 기반: 역사 소품 6종 source-bound BOM 승격·런타임 연결, 3역할(탐사원·의무원·순찰대) 캐릭터 승격, UI kit 9종 후보(시각 수용 대기), TRELLIS v1 옵션 호스트 계약 고정
 - 세계관·인물 원본: 국가별 명부(Cast-State-01–16, 412인)와 관계 원장, 적대 집단 G01–G27 게시, 서사 배치 B001–B047, ISO 세계·가문·적대 도표, 몬스터 배치 원장 M001–M042, World-Narrative-Atlas 통합
 - 공개 위키: LORE·GDD 정본의 마운트 미러가 원본 커밋과 동기된다. 미게시 조각은 표로만 추적한다.
@@ -6690,7 +6690,7 @@ The next product module is not started until the current module passes the gates
 4. 슬롯 연결(ToDo 주차 16, #26) — 승격된 에셋만 uGUI 런타임 슬롯에 연결하고 임시 비주얼 제거
 5. 최종 수용 게이트(ToDo 주차 17, #27) — 아키텍처 게이트, batchmode PlayMode 전 경로, 4축 시각 PASS, BOM fail-closed, 동일 Unity revision macOS Development player smoke, 임시 리소스 cleanup receipt를 한 번에 통과
 6. 서사·협업 후속(#41) — 외부 기여자와의 서사 디렉션 역할·경계 합의
-7. 전투 표현 마무리 — 목표 화면은 개인 판정 전투의 3D 관전이며, 카메라는 3D 자유 지휘 시점이다. 오드랜드 기증 패이로드(`GAME/Assets/Quarantine/Oddland/`, [에셋이 들어오는 길](/gdd/design/asset-pipeline/) 기증 절)의 3D·SFX·VFX는 런타임 슬롯 연결 전에 BOM 승격 게이트를 통과해야 한다. 전체 16국·412인 캠페인, 저장·외교·공성은 그 뒤 별도 모듈
+7. 전투 표현 마무리 — 목표 화면은 개인 판정 전투의 3D 관전이며, 카메라는 3D 자유 지휘 시점이다. 오드랜드 기증 패이로드(`GAME/Assets/Quarantine/Oddland/`, [에셋이 들어오는 길](/gdd/design/asset-pipeline/) 기증 절)의 3D·SFX·VFX는 런타임 슬롯 연결 전에 BOM 승격 게이트를 통과해야 한다. 전체 412인 캠페인, 저장·외교·공성은 그 뒤 별도 모듈
 
 각 단계는 실패하면 다음 단계로 넘어가지 않는다.
 
@@ -6712,7 +6712,7 @@ INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summa
 
 The current reference games are limited to **Crusader Kings 3 (CK3)** and **Norland**. The overall game goal is **4X + RPG**, and the combat goal is **Norland-style individual-resolution combat**. The combat camera is the 3D free-command viewpoint confirmed by the owner, and combat has no pause. Titles that include turn-based combat are excluded from the current references, and the original past research is preserved internally in the repository under `RESEARCH/canon-reference/`. The CK2 **After the End** original (`Ofaloaf/postapoc` 0.9, `61eb04ee2b42e8a7fcdc659597fe2f30e6df07f8`) and the Fanfork (`9Kbits/ateff` 1.1.1, `8565e230ac49a092096bc122e112374f5df5418c`) are **research sources** used to compare the causal structure of this narrative; they are not additions to the current gameplay and UI reference list above, and no place names, laws, or figures from the originals have been adopted. The CK3 [system encyclopedia](/gdd/references/ref-crusader-kings-3/) is only a comparison source for titles, succession, and event presentation, and is not evidence for CK2 characters, faiths, or events. Do not mark original-only events as verified by the Fanfork, and do not substitute CK3 lore for CK2 narrative grounds.
 
-> The application of Janseon on this page is a design direction and implementation proposal. The six presets, the 16-state strategy map,
+> The application of Janseon on this page is a design direction and implementation proposal. The six presets, the strategy map,
 > capture and recruitment, persistent injuries, and so on do not mean that all of them are already implemented in the current runtime.
 > For the current completion status, check the development roadmap and the repository''s ToDo.md.
 
@@ -6757,7 +6757,7 @@ Core finding of the genre research: maps are distinguished not by size but by th
 
 | Surface | Question | Form | Borrowed From |
 | --- | --- | --- | --- |
-| **S Strategic Route Map** | Who rules where, and what should be prioritized? | All of Seoul → 16 state spheres of influence · 3D heightmap | CK3 information mode; display of territorial control for Seoul''s 16 states |
+| **S Strategic Route Map** | Who rules where, and what should be prioritized? | All of Seoul → the three factions'' spheres of influence · 3D heightmap | CK3 information mode; display of territorial control for Seoul''s three factions |
 | **W Station-to-Station Travel** | Where will the party go, and at what cost? | Current station → destination station · routes, supplies, events | Norland''s travel and ongoing costs |
 | N Non-Map Management Surface | Whom should we prepare, and what should we settle? | Intermission · encounters · deployment · settlement | CK3 events |
 
@@ -6802,7 +6802,7 @@ The full mechanisms of each game can be read on the following wiki pages:
 
 현재 레퍼런스 게임은 **크루세이더 킹즈 3(CK3)**와 **노랜드(Norland)**로 제한한다. 게임 전체 목표는 **4X + RPG**이며, 전투 목표는 **노랜드식 개인 판정 전투**다. 전투 카메라는 소유자가 확정한 3D 자유 지휘 시점이고, 전투에는 일시정지가 없다. 턴제 전투가 포함된 작품은 현재 레퍼런스에서 제외하며, 과거 조사 원문은 저장소 내부 `RESEARCH/canon-reference/`에 보존한다. CK2 **After the End** 원본(`Ofaloaf/postapoc` 0.9, `61eb04ee2b42e8a7fcdc659597fe2f30e6df07f8`)과 Fanfork(`9Kbits/ateff` 1.1.1, `8565e230ac49a092096bc122e112374f5df5418c`)는 이번 서사의 인과 구조를 비교한 **조사 출처**이지, 위의 현행 게임플레이·UI 레퍼런스 목록에 추가하거나 원전 지명·법·수치를 채택한 것이 아니다. CK3의 [시스템 백과](/gdd/references/ref-crusader-kings-3/)는 작위·계승·사건 표현의 비교 출처일 뿐 CK2판 인물·신앙·사건의 증거가 아니다. 원본 전용 사건을 Fanfork 검증으로 표시하거나 CK3 lore를 CK2 서사 근거로 바꾸지 않는다.
 
-> 이 페이지의 잔선 적용은 설계 방향과 구현 제안이다. 여섯 프리셋, 16국 전략 지도,
+> 이 페이지의 잔선 적용은 설계 방향과 구현 제안이다. 여섯 프리셋, 전략 지도,
 > 포획·영입, 지속 부상 등이 현재 런타임에 모두 구현되었다는 뜻이 아니다.
 > 현재 완료 상태는 개발 로드맵과 저장소 ToDo.md를 확인한다.
 
@@ -6847,7 +6847,7 @@ The full mechanisms of each game can be read on the following wiki pages:
 
 | 표면 | 질문 | 형태 | 차용 |
 | --- | --- | --- | --- |
-| **S 전략 노선도** | 누가 어디를 지배하며 무엇을 우선할 것인가? | 서울 전체 → 16국 세력권 · 3D 하이트맵 | CK3 정보 모드; 서울 16국의 영토 지배권 표시 |
+| **S 전략 노선도** | 누가 어디를 지배하며 무엇을 우선할 것인가? | 서울 전체 → 세 세력의 세력권 · 3D 하이트맵 | CK3 정보 모드; 서울 세 세력의 영토 지배권 표시 |
 | **W 역간 여행** | 일행은 어디로, 어떤 대가로 갈 것인가? | 현재역→목적역 · 경로·보급·사건 | 노랜드 이동·지속 비용 |
 | N 비지도 관리면 | 누구를 준비시키고 무엇을 정산할 것인가? | 인터미션·조우·배치·정산 | CK3 이벤트 |
 
@@ -6938,7 +6938,7 @@ The current design version is the SP-1.0.0 single-player build. Actions, titles,
 
 > **A 4X + RPG that links one character''s livelihood, relationships, rank, and succession to domain management and line politics in the subway network of a collapsed Seoul. Combat resolves each individual soldier.**
 
-《Seoul Metro Dynasties》 is a character-driven grand strategy RPG that uses the subway network of **post-collapse Seoul** as the framework for territory, logistics, survival, and legitimacy. The collapse began with the Great Blackout of 2030, and that night is recorded in the prologue. The game is set in 2126 CE, a century later. The order the campaign depicts is a line society split by what people watch over and by faith. The player is a nobody. Being a nobody is only one rooting path. Follow the [Online User Journey](/gdd/design/online-user-journey/) for the full sequence. Starting with a small party, you move between stations and lines, building livelihood, relationships, rank, and influence within factions.
+《Seoul Metro Dynasties》 is a character-driven grand strategy RPG that uses the subway network of **post-collapse Seoul** as the framework for territory, logistics, survival, and legitimacy. The collapse began with the Great Blackout around 2026, and that night is recorded in the prologue. The game is set in 2126 CE, a century later. The order the campaign depicts is a line society split by what people watch over and by faith. The player is a nobody. Being a nobody is only one rooting path. Follow the [Online User Journey](/gdd/design/online-user-journey/) for the full sequence. Starting with a small party, you move between stations and lines, building livelihood, relationships, rank, and influence within factions.
 
 In combat, each individual soldier''s attack is resolved by weapon, armor, combat skill, physical condition, and mood. Before engagement, the player deploys squads and directs movement, attack targets, fire, and ambushes, but gives no new orders to squads in melee engagement. Retreat is a battle-wide command. Characters aim for natural, realistic proportions, restrained expressions, and low-saturation flat colors, outlines, and hatching. Livelihood, subsistence, production, logistics, marriage, diplomacy, technology transfer, and mobilization are within the design scope of being linked through the same characters and world time, and are not yet implemented.
 
@@ -6953,7 +6953,7 @@ Follows the table of contents of Namu Wiki''s [New Series/Setting](https://namu.
 | Document | Description |
 | --- | --- |
 | [Overview](/gdd/design/game-thesis/) | Push the world from where you stand. Both a 4X and an RPG |
-| Prologue | The night the call network collapsed in the 2030 Great Blackout, the 2126 setting, and why a nation remains in Seoul |
+| Prologue | The night the call network collapsed in the Great Blackout around 2026, the 2126 setting, and why a nation remains in Seoul |
 | [Online User Journey](/gdd/design/online-user-journey/) | From account to rooting, death, and succession |
 
 ### 2. Timeline
@@ -6979,7 +6979,7 @@ Follows the table of contents of Namu Wiki''s [New Series/Setting](https://namu.
 
 | Document | Description |
 | --- | --- |
-| Sixteen Kingdoms of Seoul | Sixteen states. State names are signature habits |
+| The Three Factions of Seoul | Three factions. |
 | Offices | Suryeong, Panseo, Gunsu, Hyeongam, and Chamha. A Crusader Kings layer over Joseon and 2026 offices |
 | Houses | 2026 Conglomerate Families and the Opening Operating Houses |
 | Operating Houses | HC·HP Ledger |
@@ -6994,7 +6994,7 @@ Write in the style of the character sections of Namuwiki''s [Bird That Drinks Bl
 
 | Document | Description |
 | --- | --- |
-| Characters | The Sixteen Suryeong and the Chamha |
+| Characters | The Suryeong and the Chamha |
 | Character Compendium | Named People |
 | Character Card Contract | Field Rules |
 | Character Registration Template | Empty Field |
@@ -7030,9 +7030,9 @@ Write in the style of the character sections of Namuwiki''s [Bird That Drinks Bl
 | Document | Description |
 | --- | --- |
 
-The Seoul Regional Compendium is authored data and a viewing screen for 427 date-fixed administrative dongs. It does not mean that Unity station interior terrain or the 16-state campaign has been implemented.
+The Seoul Regional Compendium is authored data and a viewing screen for 427 date-fixed administrative dongs. It does not mean that Unity station interior terrain or the campaign has been implemented.
 
-Generated art slots are not yet connected to the runtime screens. Approving and connecting art slots is a separate acceptance condition, and code verification alone does not complete the whole module. The 16-state campaign simulation, the aggregated casualty display, and items 13–17 of `ToDo.md` are not yet complete. A design written in a document does not mean it has been implemented.', '# 《서울:전국》
+Generated art slots are not yet connected to the runtime screens. Approving and connecting art slots is a separate acceptance condition, and code verification alone does not complete the whole module. The campaign simulation, the aggregated casualty display, and items 13–17 of `ToDo.md` are not yet complete. A design written in a document does not mean it has been implemented.', '# 《서울:전국》
 
 인물 시트·계산·영역별 규칙과 상황은 [인물과 영역 설계 길잡이](/gdd/system-design/mechanism-design-index/)에서 읽는다. 승인 범위와 미채택 대안을 구분하는 설계 제안이다.
 
@@ -7040,7 +7040,7 @@ Generated art slots are not yet connected to the runtime screens. Approving and 
 
 > **붕괴한 서울의 지하철망에서 한 인물의 생업·관계·직위·계승을 영지 운영과 노선 정치로 잇는 4X + RPG. 전투는 병사 한 사람 한 사람을 판정한다.**
 
-《서울:전국》은 아포칼립스 이후 **후세 서울**의 지하철망을 영토·물류·생존·정통성의 골격으로 삼는 인물 중심 대전략 RPG입니다. 2030년 대정전으로 붕괴가 시작됐고, 그 밤은 프롤로그에 적혀 있습니다. 게임의 배경은 그로부터 한 세기가 지난 서기 2126입니다. 캠페인이 그리는 질서는 사람이 지켜보는 일과 신앙이 갈라진 노선 사회입니다. 플레이어는 무명 인물입니다. 무명은 착생 갈래 하나다. 전체 순서는 [온라인 유저 여정](/gdd/design/online-user-journey/)을 따른다. 소규모 파티로 시작해 역과 노선을 오가며 생업, 관계, 직위와 세력 내 영향력을 쌓습니다.
+《서울:전국》은 아포칼립스 이후 **후세 서울**의 지하철망을 영토·물류·생존·정통성의 골격으로 삼는 인물 중심 대전략 RPG입니다. 약 2026년 대정전으로 붕괴가 시작됐고, 그 밤은 프롤로그에 적혀 있습니다. 게임의 배경은 그로부터 한 세기가 지난 서기 2126입니다. 캠페인이 그리는 질서는 사람이 지켜보는 일과 신앙이 갈라진 노선 사회입니다. 플레이어는 무명 인물입니다. 무명은 착생 갈래 하나다. 전체 순서는 [온라인 유저 여정](/gdd/design/online-user-journey/)을 따른다. 소규모 파티로 시작해 역과 노선을 오가며 생업, 관계, 직위와 세력 내 영향력을 쌓습니다.
 
 전투는 병사 한 사람 한 사람의 공격을 무기·방어구·전투 기술·몸 상태·기분으로 판정한다. 플레이어는 교전 전에 분대를 배치하고 이동·공격 대상·사격·매복을 지시하며 근접 교전에 들어간 분대에는 새 명령을 내리지 않는다. 후퇴는 전투 전체 명령이다. 인물은 자연·실사풍 비례, 절제된 표정과 낮은 채도의 평면 색·외곽선·해칭을 목표로 한다. 생활·생계·생산·물류·혼인·외교·기술 전승·동원은 같은 인물과 세계 시간으로 연결하는 설계 범위이며 구현 완료는 아니다.
 
@@ -7055,7 +7055,7 @@ Generated art slots are not yet connected to the runtime screens. Approving and 
 | 문서 | 설명 |
 | --- | --- |
 | [개요](/gdd/design/game-thesis/) | 선 자리에서 세계를 민다. 4X이자 RPG |
-| 프롤로그 | 2030년 대정전으로 호출망이 무너진 밤, 배경 2126, 서울에 나라가 남은 까닭 |
+| 프롤로그 | 약 2026년 대정전으로 호출망이 무너진 밤, 배경 2126, 서울에 나라가 남은 까닭 |
 | [온라인 유저 여정](/gdd/design/online-user-journey/) | 계정부터 착생·사망·후계까지 |
 
 ### 2. 연표
@@ -7081,7 +7081,7 @@ Generated art slots are not yet connected to the runtime screens. Approving and 
 
 | 문서 | 설명 |
 | --- | --- |
-| 서울 십육국 | 나라 열여섯. 국호는 서명 습관 |
+| 서울의 세 세력 | 세 세력. |
 | 관직 | 수령·판서·군수·현감·참하. 조선·2026 관직에 크루세이더 킹즈 층 |
 | 가문 | 2026 총수 일가와 개막 운영가문 |
 | 운영가문 | HC·HP 장부 |
@@ -7096,7 +7096,7 @@ Generated art slots are not yet connected to the runtime screens. Approving and 
 
 | 문서 | 설명 |
 | --- | --- |
-| 등장인물 | 수령 열여섯과 참하 |
+| 등장인물 | 수령과 참하 |
 | 인물 총람 | 이름 있는 사람 |
 | 인물 카드 계약 | 칸 규칙 |
 | 인물 등록 템플릿 | 빈 칸 |
@@ -7132,9 +7132,9 @@ Generated art slots are not yet connected to the runtime screens. Approving and 
 | 문서 | 설명 |
 | --- | --- |
 
-서울 지역 총람은 날짜 고정 행정동 427개의 저작 데이터와 열람 화면입니다. Unity 역 내부 지형이나 16국 캠페인의 구현 완료를 뜻하지 않습니다.
+서울 지역 총람은 날짜 고정 행정동 427개의 저작 데이터와 열람 화면입니다. Unity 역 내부 지형이나 캠페인의 구현 완료를 뜻하지 않습니다.
 
-생성 아트 슬롯은 아직 런타임 화면에 연결되지 않았습니다. 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다. 16국 캠페인 시뮬레이션, 집계 사상자 표현, `ToDo.md`의 13–17 항목은 아직 완료가 아닙니다. 문서에 적힌 설계는 구현 완료를 의미하지 않습니다.');
+생성 아트 슬롯은 아직 런타임 화면에 연결되지 않았습니다. 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다. 캠페인 시뮬레이션, 집계 사상자 표현, `ToDo.md`의 13–17 항목은 아직 완료가 아닙니다. 문서에 적힌 설계는 구현 완료를 의미하지 않습니다.');
 INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Issue-101-Ui-Ux-Decisions', 'design', 'issue-101-ui-ux-decisions', '#101 UI/UX Screen Contract — Confirmed Decisions 1–9', '#101 UI/UX 화면 계약 — 확정 결정 1–9', '', '', 'accepted', 36, 'Issue-101-Ui-Ux-Decisions.md', '# #101 UI/UX Screen Contract — Confirmed Decisions 1–9
 
 - Status: #101 decisions 1–9 confirmed. Later changes to combat objectives are marked in the notes below
@@ -7445,7 +7445,7 @@ Layers can be mixed even within a single sentence. Use the common name of equipm
 - Review copyright separately from the name itself, looking at creative expression, descriptions, sentences, character composition, and distinctive technical depictions within a work. Do not change historical facts or generic martial arts names because of copyright.
 - Real organization names may be used as they are in the factual layer. However, any use that makes a currently existing organization the perpetrator of fictional crimes, massacres, or conspiracies, or that could be mistaken for an official successor, must go through a separate review of rights, reputation, and confusion.
 - Fictional organizations should have names that reveal what they do and what authority they hold. Do not use names that read like criminal successors of real institutions.
-- Titles distinguish the modern institution-specific designations of the 16 nations from the common tiers. Do not use Joseon-era official titles as an intermediate translation layer.
+- Titles distinguish modern institution-specific designations from the common tiers. Do not use Joseon-era official titles as an intermediate translation layer.
 - Name training and proficiency after the actions actually performed. Do not use organization names or titles as personal abilities, and do not create names or promotion systems for martial arts, techniques, or schools.
 - Keep the display names for competence, proficiency, traits, and body-part status distinct in meaning. Do not group individual combat skill, unit deployment, production work, and administrative authority under the same name or suffix system.
 
@@ -7552,7 +7552,7 @@ Before adding a new term, ask the following.
 - 저작권은 이름 자체보다 작품 속 창작 표현·설명·문장·캐릭터 구성·고유 기술 묘사와 구별해 검토한다. 역사 사실과 일반 무술명을 저작권 때문에 바꾸지 않는다.
 - 실제 조직명은 사실 층에서 그대로 쓸 수 있다. 다만 현재 실존 조직을 창작 범죄·학살·음모의 주체로 만들거나 공식 후신이라고 오인하게 하는 사용은 별도 권리·명예·혼동 검토를 거친다.
 - 창작 조직은 하는 일과 권한이 이름에서 드러나야 한다. 실제 기관의 범죄 후신처럼 읽히는 이름은 쓰지 않는다.
-- 직책은 16국의 현대 기관별 명칭과 공통 티어를 구분한다. 조선 관직을 중간 번역층으로 쓰지 않는다.
+- 직책은 현대 기관별 명칭과 공통 티어를 구분한다. 조선 관직을 중간 번역층으로 쓰지 않는다.
 - 훈련·숙련은 실제 수행하는 행동으로 명명한다. 조직 이름이나 직책을 개인 능력으로 사용하지 않으며 무공·초식·유파의 이름과 승급 체계를 만들지 않는다.
 - 역량·숙련·특성·부위 상태의 표시명은 각각의 의미를 구분한다. 개인 전투 기량, 부대 배치, 생산 작업과 행정 권한을 같은 이름이나 접미사 체계로 묶지 않는다.
 
@@ -7615,7 +7615,7 @@ Accounts, incarnation, lineage checkpoints, and the headless authoritative serve
 | --- | --- | --- | --- | --- |
 | 0 | Account | Enters with Steam entitlement, a signed client, and the world participant public key and recovery secret. An account is not a figure | ADR-008 | Steam AppID and payment protocol are a **GAP**. Without a signed client, local single-player only |
 | 1 | Incarnation | After the title and main menu, select a starting figure available in the product from a map-based figure list, and begin from that figure''s POV | Starting Presets, Figure Card Contract, Figure Compendium, Succession, Name Roster, World Ledger | Occupancy contract finalized. One living participant per personId. Occupancy does not expire along with the session |
-| 2 | Entry | Appear as that figure in a later-era Seoul that is already running | Sixteen States of Seoul, Chronology | Campaign time flows only while at least one player is open. On reconnection, you see the world of the checkpoint verified by the recovery secret |
+| 2 | Entry | Appear as that figure in a later-era Seoul that is already running | The Three Factions of Seoul, Chronology | Campaign time flows only while at least one player is open. On reconnection, you see the world of the checkpoint verified by the recovery secret |
 | 3 | Loop | Base → Preparation → Expedition → Encounter → Battle → Settlement | [Expedition](/gdd/rules/campaign-loop/), [How UI Gets Into Code](/gdd/design/ui-implementation-pipeline/) | Other users'' parties at the same station are visible. Battle is a closed session for the party. There is no automatic return after settlement |
 | 4 | Ledger | User commands and NPC decisions accumulate in the same event ledger and change the world state | [Does the Same Choice Produce the Same Result](/gdd/rules/save-and-determinism/), Ambitions, [From Strategy to Battle](/gdd/rules/strategy-battle-roundtrip/) | The headless server''s authoritative ledger is canonical. Participants receive signed receipts and projection metadata along with their own archive and figure records, and only fork-permitting checkpoints distribute a complete host snapshot |
 | 5 | Death, Succession, and New Start | The dead figure remains in the existing world. If a valid designated successor exists at the moment of death, play continues as that figure in the same world; if not, that play is game over | Succession, Name Roster, World Ledger, Dynasty and Vassal Politics | The local archive is kept. The host world holds the original. After game over, a new incarnation begins in a new world |
@@ -7662,7 +7662,7 @@ The player writes the background directly. The fields follow the character card 
 | --- | --- |
 | Full name, gender, appearance | The common creation step of the existing presets. This alone does not complete incarnation. |
 | Community of origin | Birthplace, pre-collapse residence, nationality and residency status |
-| Affiliation | The Sixteen States, remnant military, migrant corridors, unaffiliated |
+| Affiliation | The three factions, remnant military, migrant corridors, unaffiliated |
 | Parent or guardian | Kinship, adoption, or apprenticeship with a living world character. "None" is also a value, and only then does the character become a nameless drifter. |
 | Livelihood and rank | The seven livelihoods, and the work actually signed in that ledger |
 | Conscription history | Same as the card contract. Military service is not stamped by a hash. |
@@ -7793,7 +7793,7 @@ The 12 screens of Decision 6 in `Intent.md` are UI/UX mockup targets and corresp
 | --- | --- | --- | --- | --- |
 | 0 | 계정 | Steam 권한·서명 클라이언트와 월드 참가자 공개키·복구 비밀로 들어온다. 계정은 인물이 아니다 | ADR-008 | Steam AppID·결제 프로토콜은 **GAP**. 서명 클라이언트 없으면 로컬 싱글만 |
 | 1 | 착생 | 타이틀·메인 메뉴 다음 지도 기반 인물 목록에서 제품에서 열린 시작 인물을 선택하고 그 인물의 POV로 시작한다 | 시작 프리셋, 인물 카드 계약, 인물 총람, 후계, 이름 로스터, 세계 원장 | 점유 계약 확정. 한 personId당 살아 있는 참가자 하나. 점유는 세션과 같이 만료하지 않는다 |
-| 2 | 입장 | 이미 굴러가는 후세 서울에 그 인물로 나타난다 | 서울 십육국, 연표 | 플레이어가 한 명 이상 열려 있는 동안만 흐르는 캠페인 시간. 재접속은 복구 비밀로 검증된 체크포인트의 월드를 본다 |
+| 2 | 입장 | 이미 굴러가는 후세 서울에 그 인물로 나타난다 | 서울의 세 세력, 연표 | 플레이어가 한 명 이상 열려 있는 동안만 흐르는 캠페인 시간. 재접속은 복구 비밀로 검증된 체크포인트의 월드를 본다 |
 | 3 | 루프 | 거점 → 준비 → 원정 → 조우 → 전투 → 정산 | [원정](/gdd/rules/campaign-loop/), [UI가 코드로 들어오는 길](/gdd/design/ui-implementation-pipeline/) | 같은 역의 타 유저 파티는 보인다. 전투는 파티 닫힌 세션. 정산 뒤 자동 귀환이 아니다 |
 | 4 | 원장 | 유저 명령과 NPC 결정이 같은 사건 원장에 쌓이고 월드 상태를 바꾼다 | [같은 선택이 같은 결과가 되나](/gdd/rules/save-and-determinism/), 야망, [전략에서 전투로](/gdd/rules/strategy-battle-roundtrip/) | 헤드리스 서버의 권위 원장이 정본. 참가자는 서명된 영수증·투영 메타데이터와 자신의 아카이브·인물 기록을 받으며, 분기 허용 체크포인트만 완전한 호스트 스냅샷을 배포한다 |
 | 5 | 사망·후계·새 시작 | 죽은 인물은 기존 월드에 남는다. 사망 순간 유효한 지정 후계자가 있으면 같은 월드에서 그 인물로 계속하고, 없으면 해당 플레이가 게임오버다 | 후계, 이름 로스터, 세계 원장, 왕조와 봉신 정치 | 로컬 아카이브는 유지. 호스트 월드가 원본을 가진다. 게임오버 뒤 새 착생은 새 월드에서 시작 |
@@ -7840,7 +7840,7 @@ The 12 screens of Decision 6 in `Intent.md` are UI/UX mockup targets and corresp
 | --- | --- |
 | 성명·성별·외형 | 기존 프리셋의 공통 생성. 이것만으로는 착생이 끝나지 않는다 |
 | 출신 공동체 | 출생지, 붕괴 전 거주지, 국적·체류 |
-| 소속 | 16국, 잔존 군사, 이주민 회랑, 무소속 |
+| 소속 | 세 세력, 잔존 군사, 이주민 회랑, 무소속 |
 | 부모·보호자 | 살아있는 세계 인물과의 친족·양자·도제. 「없음」도 값이다 — 그때만 무명 떠돌이가 된다 |
 | 생업·직위 | 일곱 생업과, 그 장부에서 실제로 서명하는 일 |
 | 징집 이력 | 카드 계약과 같다. 해시로 병역을 찍지 않는다 |
@@ -11565,7 +11565,7 @@ Succession is not decided by bloodline alone. Candidates are considered in the o
 | --- | --- |
 | `west-sluice` | Requires water allocation and tribute rites from vassals as clauses, and attaches a performance record to the designated will |
 | `center-record` | Without record endorsement and relic access, a conferral of rank is void across the entire region |
-| `north-refuge` | Rejects vassals bound by forced-service clauses, and adoptees and priests may take precedence over blood kin |
+| `north-refuge` | Rejects vassals bound by forced-service clauses, and adoptees and congregation members may take precedence over blood kin |
 | `east-caravan` | Under the pretext of protection, revocation of lower ranks opens easily and the `plot` threshold is lowered |
 | `southeast-ration` | Mediation authority decides succession over rank, and levy clauses are almost never accepted |
 
@@ -55633,7 +55633,7 @@ This document retains its existing proposal status. The formulas, tables, and bl
 
 [Corresponding Chapters and Confirmed Grounds](/gdd/rules/power-and-institutions/)
 
-Procedure records by state and office distinguish candidate eligibility, electors, quorum, tie resolution, examinations, appointment and confirmation, and the scope of acting authority. A vacancy does not delete the institution, treasury, debt, or lineage, and the procedure values and numerical legitimacy of the actual 16 states are withheld.
+Procedure records by state and office distinguish candidate eligibility, electors, quorum, tie resolution, examinations, appointment and confirmation, and the scope of acting authority. A vacancy does not delete the institution, treasury, debt, or lineage, and the procedure values and numerical legitimacy of the actual polities are withheld.
 
 Status: a scoped operating contract. It distinguishes the public Lite''s reference calculations, Seoul''s approved procedures and preservation rules, and unapproved proposals. A proposal-held item is a deferred entry that cannot be executed, and it is neither 0 nor an approved figure. This document does not imply full-domain numerical completion or a runtime implementation.
 
@@ -56310,7 +56310,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
 
 [대응 장과 확인된 근거](/gdd/rules/power-and-institutions/)
 
-국가·직위별 절차 기록으로 후보 자격, 선거인, 정족수, 동률 해결, 시험, 임명·인준과 대행 범위를 구분한다. 공석은 기관·국고·부채·계보를 삭제하지 않으며 실제 16국의 절차 값과 수치 정통성은 보류한다.
+국가·직위별 절차 기록으로 후보 자격, 선거인, 정족수, 동률 해결, 시험, 임명·인준과 대행 범위를 구분한다. 공석은 기관·국고·부채·계보를 삭제하지 않으며 실제 정치체의 절차 값과 수치 정통성은 보류한다.
 
 상태: 범위가 한정된 작동 계약. 공개 Lite의 참조 계산, 서울의 승인된 절차·보존 규칙, 미승인 제안을 구분한다. proposal-held는 실행할 수 없는 보류 항목이며 0이나 승인 수치가 아니다. 이 문서는 전체 도메인 수치 완성이나 런타임 구현을 뜻하지 않는다.
 
@@ -85475,7 +85475,7 @@ Status: Proposed. This distinguishes approved rules, selected policies, unadopte
 
 D01 covers a character''s permanent identity and the records of their abilities, skills, and traits. The player acts as one primary character per campaign. NPCs are other characters who use the same action contracts for movement, labor, education, politics, and combat. Being the primary character does not grant anyone else''s body or authority. The primary character, squad leader, combat commander, rights holder, and institutional officer are distinct roles, and one character may hold several of them. States and institutions own the procedures for offices, rights, and property, and a character sheet does not manufacture success for an institutional procedure that has not been filled in.
 
-Abilities, proficiencies, traits, temporary situational modifiers, offices, titles of nobility, possession, effective control, and military command are kept distinct. Holding a public office does not turn an institution''s treasury into personal property or assign every troop to the holder. The Sumun State monarch''s election by contract council, the Central Technology Preservation Institute director''s selection by examination, and the Register Church session moderator''s confirmation of elders are procedures defined in the setting, not ability-score formulas.
+Abilities, proficiencies, traits, temporary situational modifiers, offices, titles of nobility, possession, effective control, and military command are kept distinct. Holding a public office does not turn an institution''s treasury into personal property or assign every troop to the holder. The Sumun State monarch''s election by contract council and the Central Technology Preservation Institute director''s selection by examination are procedures defined in the setting, not ability-score formulas.
 
 ## 2. Player Decisions and Eligibility
 
@@ -85598,7 +85598,7 @@ The use of the numerical alternatives is action and combat calculation, and the 
 
 D01은 인물의 영구 신원과 능력·기술·특성 기록을 다룬다. 플레이어는 한 캠페인에서 한 본체 인물로 행동한다. NPC는 같은 이동·노동·교육·정치·전투 행동 계약을 쓰는 다른 인물이다. 본체라는 이유로 타인의 신체나 권한을 얻지 않는다. 본체·분대장·전투 지휘관·권리 보유자·기관 담당자는 서로 다른 역할이며 한 인물이 여럿을 맡을 수 있다. 국가와 기관은 직위·권리·재산의 절차를 소유하고, 인물 시트가 비어 있는 제도 절차의 성공을 대신 만들어 주지 않는다.
 
-능력, 숙련, 특성, 일시적 상황 보정, 직위, 작위, 점유, 실효 통제, 군사 지휘는 구분한다. 공직을 맡아도 기관 금고가 개인 재산으로 바뀌거나 모든 병력이 배속되지 않는다. 수문국 군주의 계약 회의 선출, 중앙기술보존원 원장의 시험 선발, Arc 당회장의 장로 인준은 설정의 절차이지 능력치 공식이 아니다.
+능력, 숙련, 특성, 일시적 상황 보정, 직위, 작위, 점유, 실효 통제, 군사 지휘는 구분한다. 공직을 맡아도 기관 금고가 개인 재산으로 바뀌거나 모든 병력이 배속되지 않는다. 수문국 군주의 계약 회의 선출과 중앙기술보존원 원장의 시험 선발은 설정의 절차이지 능력치 공식이 아니다.
 
 ## 2. 플레이어의 결정과 자격
 
@@ -87995,7 +87995,7 @@ Each item is not a blank. It is a pending-decision state equipped with a questio
 3. **Adoption procedure (GP-09)** — Question: who establishes an adoption, with whose consent and ratification, and through what procedure? Consumer: the adoption-forming action. Ideal: the "direct party consent" option gets a procedure, a limit on the number of adoptions, and a required duration attached. Gap: there is no accepted procedure itself, so validity adjudication is impossible. Reason: the procedure is the owner''s decision, and an external game does not stand in for the Seoul procedure (§12). QA: a before/after comparison in which, once the procedure is fixed, §8 example 4 changes from `Panjeong bulneung` (adjudication impossible) to an established/not-established adjudication.
 4. **Joint property, shares, wills, and collateral (T68-D13-FAMILY-ASSETS)** — Question: how are a couple''s joint property, shares, wills, collateral, and overlapping dispositions to be divided? Consumer: the D13 property contract. Ideal: the "per-asset signature contract," "registered will," and "explicit assignment" choices are joined by shares, remainders, and creditor priority. Gap: shares, remainders, and creditor priority. Reason: Seoul property law is an owner decision. QA: a comparison against the D13 contract for cases of competing dispositions and collateralized estates (this document covers only the boundary).
 5. **Institutional rules for maintaining, ending, and re-ratifying each effect (remainder of T68-MARRIAGE-EFFECTS)** — Question: When an established marriage''s alliance, property, ratification, and succession effects are affected by death, detention, or loss of office, how is each one determined? Consumers: the contract responsible for each effect (alliance = faction clause, property = D13, ratification and succession = institutions). Ideal: the "as that contract determines" wording in the §5 effects table is filled in with actual rules. Gap: the death, detention, and loss-of-office clauses of each effect contract. Reason: each contract''s owning domain must decide. QA: check that the four effect states in §8 Example 2 are filled in by actual contract rulings.
-6. **Country-specific election, quorum, tie, regency, ratification, and legitimacy rules (T68-D09-COUNTRY-LAWS)** — Question: In each country, who elects, how is an assembly constituted, and how do ties, regency, ratification, and legitimacy differ in marriage and succession? Consumer: D09 institution adjudicator. Gap: all inputs for the 16 countries. Reason: Seoul''s institutional inputs are needed. QA: check the regency and re-ratification paths in cases of a vacant office.
+6. **Country-specific election, quorum, tie, regency, ratification, and legitimacy rules (T68-D09-COUNTRY-LAWS)** — Question: In each country, who elects, how is an assembly constituted, and how do ties, regency, ratification, and legitimacy differ in marriage and succession? Consumer: D09 institution adjudicator. Gap: all inputs for the polities. Reason: Seoul''s institutional inputs are needed. QA: check the regency and re-ratification paths in cases of a vacant office.
 7. **Survival of organizations without territory (T68-D16-ORGANIZATION-LIFECYCLE)** — Question: Does an organization with no territory persist? Consumer: organization lifecycle adjudication. Ideal: survival conditions are attached on top of the established rule that a state or institution does not vanish merely because its head dies. Gap: survival and dissolution conditions. QA: compare before and after a leadership change in a territory-less organization.
 8. **Candidate registration for unconfirmed names (T68-PF-05, proposal group)** — Question: Can a person whose name has not yet been decided be put forward as a candidate for marriage or succession? Consumer: drawing up the candidate roster. Gap: because candidate eligibility is undecided, it is unknown whether such a person can be listed. Reason: this is a proposal group requiring individual identity and rights review. QA: check whether roster registration is allowed once the eligibility rules are confirmed.
 9. **List of unapproved numerical values** — age thresholds, quantification of the sufficiency standard for consent, limits on the number of adoptees, time required for ratification, kinship closeness values, durations of effect persistence and expiry, and amounts of relationship change. These values are not zero or an implicit default; they are **undecided**. No document invents numbers for this list.
@@ -88247,7 +88247,7 @@ D08은 **가문과 혼인에서 무엇이 기록되고, 무엇이 성립하며, 
 3. **양자의 절차(GP-09)** — 질문: 양자는 누가, 누구의 동의와 인준으로, 어떤 절차를 거쳐 성립하는가? 소비자: 양자 맺음 행동. 이상: "직접 당사자 동의" 선택에 절차·수 제한·소요 시간이 붙는다. 갭: 받아들여진 절차 자체가 없어 성립 판정이 불능이다. 이유: 절차는 소유자 결정이고, 외부 게임이 서울 절차를 대신하지 않는다(§12). QA: 절차 확정 후 §8 예시 4가 `판정 불능`에서 성립/미성립 판정으로 바뀌는 대조.
 4. **공동재산·지분·유언·담보(T68-D13-FAMILY-ASSETS)** — 질문: 부부의 공동 재산, 지분, 유언, 담보, 겹치는 처분은 어떻게 갈리는가? 소비자: D13 재산 계약. 이상: "자산별 서명 계약"·"등록된 유언"·"명시적 배정" 선택에 지분·잔여분·채권자 순위가 붙는다. 갭: 지분·잔여분·채권자 우선순위. 이유: 서울 재산법 소유자 결정. QA: 경합 처분·담보부 유산 사례의 D13 계약 대조(이 문서는 경계만 다룬다).
 5. **효과별 유지·종료·재인준의 제도 규칙(T68-MARRIAGE-EFFECTS 나머지)** — 질문: 성립한 혼인의 동맹·재산·인준·후계는 사망·구금·직위 상실 때 각각 어떻게 정해지는가? 소비자: 효과별 담당 계약(동맹=세력 조항, 재산=D13, 인준·후계=제도). 이상: §5 효과 표의 "그 계약이 정하는 대로"가 실제 규칙으로 채워진다. 갭: 각 효과 계약의 사망·구금·직위 상실 조항. 이유: 각 계약의 소유 도메인 결정. QA: §8 예시 2의 네 효과 상태가 실제 계약 판정으로 채워지는 대조.
-6. **국가별 선거·정족·동점·섭정·인준·정통성(T68-D09-COUNTRY-LAWS)** — 질문: 나라마다 누가 뽑고 모임은 어떻게 차며, 동점·섭정·인준·정통성은 혼인·계승에서 어떻게 다른가? 소비자: D09 제도 판정기. 갭: 16개국 입력 전부. 이유: 서울 제도 입력 필요. QA: 직위 공석 사례의 섭정·재인준 경로 대조.
+6. **국가별 선거·정족·동점·섭정·인준·정통성(T68-D09-COUNTRY-LAWS)** — 질문: 나라마다 누가 뽑고 모임은 어떻게 차며, 동점·섭정·인준·정통성은 혼인·계승에서 어떻게 다른가? 소비자: D09 제도 판정기. 갭: 정치체 입력 전부. 이유: 서울 제도 입력 필요. QA: 직위 공석 사례의 섭정·재인준 경로 대조.
 7. **영토 없는 조직의 생존(T68-D16-ORGANIZATION-LIFECYCLE)** — 질문: 영토가 없는 조직은 남는가? 소비자: 조직 생애주기 판정. 이상: 수장 사망만으로 국가·기관이 소멸하지 않는다는 확정 위에 생존 조건이 붙는다. 갭: 생존·해산 조건. QA: 무영토 조직의 수장 교체 사례 전/후 대조.
 8. **미확정 이름의 후보 등록(T68-PF-05, 제안족)** — 질문: 사람마다 아직 정하지 않은 이름을 혼인이나 계승의 후보로 올릴 수 있는가? 소비자: 후보 명부 작성. 갭: 후보 자격 미정으로 올릴 수 있는지 알 수 없다. 이유: 개별 신원·권리 검토가 필요한 제안족. QA: 자격 규칙 확정 후 명부 등록 허용 여부 대조.
 9. **승인되지 않은 수치 목록** — 나이 문턱, 동의 충분 기준의 수치화, 양자 수 제한, 인준 소요 시간, 친족 가까움 값, 효과 지속·소멸 기간, 관계 변화량. 이 값들은 0이나 묵시적 기본값이 아니라 **미정**이다. 어느 문서도 이 목록에 숫자를 만들지 않는다.
@@ -88348,7 +88348,6 @@ The methods below are the starting settings recorded in the existing design. Do 
 | Russian Legation Command | Dual Command of Commander and Garrison Chief | Vacancy targets, joint authority, acting coverage, and the order of handling the two seats |
 | Taeuk Group, Seongha Group, Sinnae Transport | Family Inheritance | Separation of personal shares and licenses from the leader''s post, appointment, and ratification |
 | Yeouido Investment Federation | Council Election by the Investing Families | Separation of share inheritance, representative selection, and chair election |
-| Registry Church | Father-to-Son Succession of the Pastorate and Elder Ratification | Lineage, ordination, and ratification conditions |
 | Arc, Anguk Great Monastery | Clergy Election and Mountain Assembly Acclamation | Eligibility, procedure, and takeover of the altar and ledger |
 | White Cross Order | Master''s Designation of a Disciple as Successor | Valid designation, training, and the confirming party |
 | Central Technology Preservation Institute | Examination-Based Selection | Eligibility to sit the exam, results, and takeover of record-access rights |
@@ -88528,7 +88527,6 @@ There are no approved numbers for legitimacy scores, exam scores, quorums, actin
 | 아관사 | 사령관과 수비대장 이원 지휘 | 공석 대상·공동 권한·대행·두 자리의 처리 순서 |
 | 태욱그룹·성하그룹·신내운수 | 가문 세습 | 개인 지분·면허와 수장 직위·임명·인준의 분리 |
 | 여의도출자연합회 | 출자 가문 평의회 선출 | 지분 상속·대표 선정·의장 선출의 분리 |
-| Arc | 목사직 부자 세습과 장로 인준 | 계보·안수·인준 조건 |
 | Arc·안국총림 | 신도단 선출과 산중총회 추대 | 자격·절차·제대와 대장 인수 |
 | 흰십자단 | 스승의 후계 제자 지명 | 유효 지명·수련·확인 주체 |
 | 중앙기술보존원 | 시험 선출 | 응시 자격·결과·기록 열람권 인수 |
@@ -89027,7 +89025,7 @@ D11 owns the framework of grants, appointments, delegations, revocations, and va
 | D06 Movement and Contact | Actual delivery routes for relics, documents, and keys; rechecking delegation expiry before arrival | Travel time and cost formulas |
 | D07 Relationships and Memory | Attribution of relationships and evaluations when a betrayal issue or re-ratification issue is opened | Relationship change functions, increments and decrements, and decay |
 | D08 Houses and Marriage | Facts distinguishing membership records from marriage records | Rules for establishing marriages and their effects |
-| D09 States and Legitimacy | Each state''s ratification procedures and registration of vacancy deputies (awaiting input) | Actual definitions of the institutions of the 16 states |
+| D09 States and Legitimacy | Each state''s ratification procedures and registration of vacancy deputies (awaiting input) | Actual definitions of the institutions of the polities |
 | D10 Titles and Casus Belli | Title-right instances, and the distinction between claims and causes | Superior-contract conditions for claims, and registered values and deadlines for causes |
 | D12 Succession and Main Body | The fact of death and the existence of a succession designation | Deciding who the heir is |
 | D13 Assets and Delivery | Transfer of property whose inclusion is explicitly stated, and delivery status | Detailed rules for ownership succession and delivery procedures |
@@ -89289,7 +89287,7 @@ D11은 수여·임명·위임·회수와 봉신 계약의 골격을 소유하고
 | D06 이동·연락 | 유물·문서·열쇠의 실제 인도 경로, 도착 전 위임 만료 재검사 | 이동 시간·비용 식 |
 | D07 관계·기억 | 배신 쟁점·재비준 쟁점이 열렸을 때의 관계·평가 귀속 | 관계 변화 함수·증감·감쇠 |
 | D08 가문·혼인 | 가입 기록과 혼인 기록의 구분 사실 | 혼인 성립·효과 규칙 |
-| D09 국가·정통성 | 나라별 인준 절차·공석 대행 등록(입력 대기) | 16국 제도의 실제 정의 |
+| D09 국가·정통성 | 나라별 인준 절차·공석 대행 등록(입력 대기) | 정치체 제도의 실제 정의 |
 | D10 작위·명분 | 작위 권리 인스턴스, 청구·명분의 구분 | 청구의 상위 계약 조건, 명분 등록 수치·기한 |
 | D12 후계·본체 | 사망 사실, 후계 지정의 존재 | 상속인이 누구인지의 결정 |
 | D13 자산·인도 | 포함 여부가 명시된 재산의 이전, 인도 상태 | 소유권 승계·인도 절차의 상세 규칙 |
@@ -89454,7 +89452,7 @@ The already approved rules are these.
 - **Preservation of delegation.** When a deputy dies, the original holder''s right does not disappear. A vacancy does not take over that delegation.
 - **Per-effect marriage adjudication.** On death, detention, or loss of office, the contracts for each effect (alliance, property, confirmation, succession) are checked separately and sorted into maintained, terminated, or needing reconfirmation; they are not all terminated at once. If the applicable institution is undetermined, then formation and effects are also undetermined, not "no effect."
 - **War recheck.** When the leader of an ongoing war dies, the validity of the previously registered casus belli, the legal object of the right, and the beneficiary and exercise eligibility are rechecked first, and then the new responsible party is confirmed. In a claim-backed war, the approver and the beneficiary are distinguished, and the victory right goes to the eligible beneficiary. Personal promises and office promises are adjudicated item by item for maintenance, reratification, or termination, and succession is not used to erase debts, truces, or damage records. The rule for choosing the actual war-ending type after this check has not yet been decided.
-- **Names of starting successions.** The starting successions of the sixteen states are recorded with the name of their method: election among the duty houses, election at a covenant council of water-contract house representatives, primogeniture among the track houses, guild council and apprentice lineage, hereditary commander, dual commander and garrison chief, house inheritance, election by a council of investor houses, pastor father-to-son succession with elder confirmation, congregation election and mountain assembly acclamation, a master''s nomination of a successor disciple, examination election, and direct election by union members. Who elects, how many must gather, and what happens in a tie are not contained in the name.
+- **Names of starting successions.** The starting successions of the polities are recorded with the name of their method: election among the duty houses, election at a covenant council of water-contract house representatives, primogeniture among the track houses, guild council and apprentice lineage, hereditary commander, dual commander and garrison chief, house inheritance, election by a council of investor houses, congregation election and mountain assembly acclamation, a master''s nomination of a successor disciple, examination election, and direct election by union members. Who elects, how many must gather, and what happens in a tie are not contained in the name.
 
 There are no approved numbers for this domain. The formula for squad capacity, how weak an interim squad leader''s command is, the duration or threshold of detention, the score that decides succession, and the time limit for succession are not set, and this document does not create them. Succession, election, and death figures from other games are not Seoul''s numbers.
 
@@ -89645,7 +89643,7 @@ The items below are boundaries where the current rules cannot fix the outcome. E
 - **위임 보존.** 대리인이 죽어도 원 보유자의 권리는 사라지지 않는다. 공석이 그 위임을 대신하지 않는다.
 - **혼인 효과별 판정.** 사망·구금·관직 상실 때 동맹·재산·인준·후계 효과별 계약을 검사해 유지·종료·재인준을 나누며 일괄 종료하지 않는다. 적용 제도가 미정이면 성립과 효과도 미정이지, 효과 없음이 아니다.
 - **전쟁 재검사.** 진행 전쟁의 수장 사망은 먼저 등록된 명분의 유효·무효, 권리의 법적 대상과 수혜자·행사 자격을 다시 검사한 뒤 새 책임자를 확인한다. 주장 지원 전쟁에서는 승인자와 수혜자를 구분하고, 승리 권리는 적격한 수혜자에게 간다. 개인 약속과 직위 약속의 유지·재비준·종료를 항목별로 판정하며 계승을 이용해 빚·휴전·피해 기록을 지우지 않는다. 이 검사 뒤 실제 전쟁 종결 유형을 고르는 규칙은 아직 정해지지 않았다.
-- **시작 계승의 이름.** 열여섯 나라의 시작 계승에는 방식의 이름이 적혀 있다. 당직 가문 선거, 물 계약 가문 대표 계약 회의 선출, 선로 가문 장자 세습, 길드 평의회와 도제 계보, 세습 사령관, 사령관·수비대장 이원, 가문 세습, 출자 가문 평의회 선출, 목사직 부자 세습과 장로 인준, 신도단 선출과 산중총회 추대, 스승의 후계 제자 지명, 시험 선출, 조합원 직선. 누가 뽑는지, 몇 명이 모여야 하는지, 동점이면 어떻게 되는지는 그 이름 안에 들어 있지 않다.
+- **시작 계승의 이름.** 각 정치체의 시작 계승에는 방식의 이름이 적혀 있다. 당직 가문 선거, 물 계약 가문 대표 계약 회의 선출, 선로 가문 장자 세습, 길드 평의회와 도제 계보, 세습 사령관, 사령관·수비대장 이원, 가문 세습, 출자 가문 평의회 선출, 신도단 선출과 산중총회 추대, 스승의 후계 제자 지명, 시험 선출, 조합원 직선. 누가 뽑는지, 몇 명이 모여야 하는지, 동점이면 어떻게 되는지는 그 이름 안에 들어 있지 않다.
 
 이 영역에 승인된 수는 없다. 분대 정원을 정하는 식, 임시 분대장의 지휘가 약한 정도, 구금의 기간이나 문턱, 후계를 가르는 점수, 계승의 제한 시간은 정해져 있지 않고 이 문서가 만들지 않는다. 다른 게임의 계승·선거·사망 수치는 서울의 수가 아니다.
 
@@ -92088,7 +92086,6 @@ Even if a post is vacant after a leader''s death, the institution and the state 
 | Russian Legation Command | Dual structure of commander and garrison chief | Which seat is vacant, and the rules for joint authority and proxies |
 | Taeuk Group, Seongha Group, Sinnae Transport | Family Inheritance | Distinction between personal shares/licenses and the leader''s post, and between appointment and ratification |
 | Yeouido Investment Federation | Council Election by the Investing Families | Separation of share inheritance, representative selection, and chair election |
-| Registry Church | Hereditary father-to-son pastorate, ratification by elders | Candidate lineage and ordination/ratification conditions |
 | Arc, Anguk Great Monastery | Election by the congregation, acclamation by the mountain-wide assembly | Eligibility and procedure for election/acclamation, takeover of the corps/commander post |
 | White Cross Order | Master''s Designation of a Disciple as Successor | Valid nomination, training/proficiency, confirming authority |
 | Central Technology Preservation Institute | Examination-Based Selection | Examination eligibility, results, and takeover of record-viewing rights |
@@ -92403,7 +92400,6 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 | 아관사 | 사령관·수비대장 이원 | 어느 자리의 공석인지, 공동 권한·대행 규칙 |
 | 태욱그룹·성하그룹·신내운수 | 가문 세습 | 개인 지분/면허와 수장 직위, 임명·인준의 구분 |
 | 여의도출자연합회 | 출자 가문 평의회 선출 | 지분 상속, 대표 선정, 의장 선출의 분리 |
-| Arc | 목사직 부자 세습·장로 인준 | 후보 계보와 안수/인준 조건 |
 | Arc·안국총림 | 신도단 선출·산중총회 추대 | 선출/추대 자격·절차·제대/대장 인수 |
 | 흰십자단 | 스승의 후계 제자 지명 | 유효 지명·수련/숙련·확인 주체 |
 | 중앙기술보존원 | 시험 선출 | 시험 자격·결과·기록 열람권의 인수 |

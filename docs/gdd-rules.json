@@ -1,0 +1,674 @@
+{
+  "version": "w5-26",
+  "generated": "2026-11-11",
+  "scope": "data/sql/080-gdd-documents.sql 본문(body_md/body_ko_md)의 canon-terms 4개 금지 클래스(교회·성직 어휘, 십육국 프레임, AI 살육 서사, 옛 국가 id S01..S16) 중 세계 서술에 쓰인 것. 살육 서사(0건)와 옛 국가 id(전부 기록·스키마 문서)는 패치 대상 없음. 설계 언어(feudal/봉건, CK3, Crusader Kings, Norland 참조)는 건드리지 않는다. sixteen-states-* 패턴이 놓치는 같은 클래스 변형(한국어 '16국'·'나라 열여섯', 영어 '16-state'·'16-nation'·'16 countries')은 패턴 적중 문장의 번역쌍뿐 아니라 같은 십육국 프레임의 별도 문장(구현 경고·로드맵 범위 등)에도 적용했다(v* 규칙). 사용자 지시(게이트 리뷰 2026-11-11)에 따라 Home의 대정전 연도 2030 표기 4문장을 승인 연표 표현 '약 2026년/around 2026'으로 바로잡는 규칙(h*)을 추가했다 — 이것은 네 클래스 밖의 연표 보정이다.",
+  "revision": "v3(2026-11-11): 게이트 리뷰 2차 — Home 수령 열여섯/The Sixteen Suryeong 직책 수 잔존 규칙 추가(r3a/r3b), 직책-숫자 결합형 전수 재스캔 반영",
+  "measurement": "C:/Users/oliver/AppData/Local/Temp/w5-26-gdd-measure/gdd-conflicts.json (패턴 적중 69건/17문서 + 변형 25건)",
+  "rules": [
+    {
+      "id": "s01",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_ko_md",
+      "from": "| 서울 십육국 | 나라 열여섯. 국호는 서명 습관 |",
+      "to": "| 서울의 세 세력 | 세 세력. |",
+      "patterns": [
+        "sixteen-states-ko",
+        "sixteen-states-ko~variant-16nara"
+      ],
+      "reason": "십육국 프레임 세계 요약. 문서명 셀은 재작성 문서의 현행 제목으로, 설명은 세 세력 정본으로 바꾼다. '국호는 서명 습관'은 십육국 고유 명명 서술이라 새 문서에 대응이 없어 최소 삭제한다.",
+      "source": "바이블 1절 규칙7·2절 [승인]; data/sql/030-wiki-documents.sql Sixteen-States 행 title_ko"
+    },
+    {
+      "id": "s02",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_md",
+      "from": "| Sixteen Kingdoms of Seoul | Sixteen states. State names are signature habits |",
+      "to": "| The Three Factions of Seoul | Three factions. |",
+      "patterns": [
+        "sixteen-states-en"
+      ],
+      "reason": "s01의 영문 쌍. 문서명 셀은 현행 영문 제목, 설명은 three factions. 'State names are signature habits'는 s01과 같은 사유로 삭제.",
+      "source": "바이블 2절 [승인]; data/sql/030-wiki-documents.sql Sixteen-States 행 title"
+    },
+    {
+      "id": "s03",
+      "documents": [
+        "doc.Online-User-Journey"
+      ],
+      "field": "body_md",
+      "from": "Sixteen States of Seoul, Chronology",
+      "to": "The Three Factions of Seoul, Chronology",
+      "patterns": [
+        "sixteen-states-en"
+      ],
+      "reason": "입장 단계 원천 문서 목록의 옛 문서 제목. 같은 슬러그 문서의 현행 제목으로 갱신한다(새 사실 없음).",
+      "source": "data/sql/030-wiki-documents.sql Sixteen-States 행 title"
+    },
+    {
+      "id": "s04",
+      "documents": [
+        "doc.Online-User-Journey"
+      ],
+      "field": "body_ko_md",
+      "from": "서울 십육국, 연표",
+      "to": "서울의 세 세력, 연표",
+      "patterns": [
+        "sixteen-states-ko"
+      ],
+      "reason": "s03의 한국어 쌍.",
+      "source": "data/sql/030-wiki-documents.sql Sixteen-States 행 title_ko"
+    },
+    {
+      "id": "s05",
+      "documents": [
+        "doc.Online-User-Journey"
+      ],
+      "field": "body_md",
+      "from": "| Affiliation | The Sixteen States, remnant military, migrant corridors, unaffiliated |",
+      "to": "| Affiliation | The three factions, remnant military, migrant corridors, unaffiliated |",
+      "patterns": [
+        "sixteen-states-en"
+      ],
+      "reason": "착생 소속 선택지가 십육국을 전제한다. 세 세력 정본으로 최소 치환, 나머지 선택지(잔존 군사·이주민 회랑·무소속)는 유지.",
+      "source": "바이블 1절 규칙7·2절 [승인]"
+    },
+    {
+      "id": "v01",
+      "documents": [
+        "doc.Online-User-Journey"
+      ],
+      "field": "body_ko_md",
+      "from": "| 소속 | 16국, 잔존 군사, 이주민 회랑, 무소속 |",
+      "to": "| 소속 | 세 세력, 잔존 군사, 이주민 회랑, 무소속 |",
+      "patterns": [
+        "sixteen-states-ko~variant-16guk-any"
+      ],
+      "reason": "s05의 한국어 쌍. 패턴은 '16국'을 잡지 못하지만 같은 문장의 번역쌍이므로 같은 규칙으로 치환.",
+      "source": "s05와 동일"
+    },
+    {
+      "id": "s06",
+      "documents": [
+        "doc.Game-References"
+      ],
+      "field": "body_md",
+      "from": "All of Seoul → 16 state spheres of influence · 3D heightmap | CK3 information mode; display of territorial control for Seoul's 16 states |",
+      "to": "All of Seoul → the three factions' spheres of influence · 3D heightmap | CK3 information mode; display of territorial control for Seoul's three factions |",
+      "patterns": [
+        "sixteen-states-en"
+      ],
+      "reason": "전략 지도 표면의 형태·차용 문장. CK3 차용 표기는 그대로 두고 이 게임 세계의 정치 단위만 세 세력로 바꾼다. 같은 문장 안의 '16 state spheres'도 세계 서술이므로 함께 최소 치환한다.",
+      "source": "바이블 1절 규칙7·2절 [승인]"
+    },
+    {
+      "id": "v02",
+      "documents": [
+        "doc.Game-References"
+      ],
+      "field": "body_ko_md",
+      "from": "서울 전체 → 16국 세력권 · 3D 하이트맵 | CK3 정보 모드; 서울 16국의 영토 지배권 표시",
+      "to": "서울 전체 → 세 세력의 세력권 · 3D 하이트맵 | CK3 정보 모드; 서울 세 세력의 영토 지배권 표시",
+      "patterns": [
+        "sixteen-states-ko~variant-16guk-any"
+      ],
+      "reason": "s06의 한국어 쌍.",
+      "source": "s06과 동일"
+    },
+    {
+      "id": "v03",
+      "documents": [
+        "doc.Game-References"
+      ],
+      "field": "body_md",
+      "from": "The six presets, the 16-state strategy map,",
+      "to": "The six presets, the strategy map,",
+      "patterns": [
+        "sixteen-states-en~variant-16state"
+      ],
+      "reason": "구현 미완료 면책 문장의 '16-state' 수식어. 미완료 사실은 그대로 두고 십육국 수식어만 최소 제거.",
+      "source": "바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "v04",
+      "documents": [
+        "doc.Game-References"
+      ],
+      "field": "body_ko_md",
+      "from": "여섯 프리셋, 16국 전략 지도,",
+      "to": "여섯 프리셋, 전략 지도,",
+      "patterns": [
+        "sixteen-states-ko~variant-16guk-any"
+      ],
+      "reason": "v03의 한국어 쌍.",
+      "source": "v03과 동일"
+    },
+    {
+      "id": "s07",
+      "documents": [
+        "doc.Mechanism-D09"
+      ],
+      "field": "body_md",
+      "from": "the procedure values and numerical legitimacy of the actual 16 states are withheld.",
+      "to": "the procedure values and numerical legitimacy of the actual polities are withheld.",
+      "patterns": [
+        "sixteen-states-en"
+      ],
+      "reason": "작동 계약 문장의 '실제 16국' 전제. 보류 사실은 유지하고 정치 단위 표현만 중성 치환(정치체/polities). 새 사실 없음.",
+      "source": "바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "v05",
+      "documents": [
+        "doc.Mechanism-D09"
+      ],
+      "field": "body_ko_md",
+      "from": "실제 16국의 절차 값과 수치 정통성은 보류한다.",
+      "to": "실제 정치체의 절차 값과 수치 정통성은 보류한다.",
+      "patterns": [
+        "sixteen-states-ko~variant-16guk-any"
+      ],
+      "reason": "s07의 한국어 쌍.",
+      "source": "s07과 동일"
+    },
+    {
+      "id": "s08",
+      "documents": [
+        "doc.mechanism-design-index-d11"
+      ],
+      "field": "body_md",
+      "from": "Actual definitions of the institutions of the 16 states",
+      "to": "Actual definitions of the institutions of the polities",
+      "patterns": [
+        "sixteen-states-en"
+      ],
+      "reason": "갭 표의 '16국 제도' 전제. 입력 대기 사실은 유지하고 정치 단위만 중성 치환.",
+      "source": "바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "v06",
+      "documents": [
+        "doc.mechanism-design-index-d11"
+      ],
+      "field": "body_ko_md",
+      "from": "16국 제도의 실제 정의",
+      "to": "정치체 제도의 실제 정의",
+      "patterns": [
+        "sixteen-states-ko~variant-16guk-any"
+      ],
+      "reason": "s08의 한국어 쌍.",
+      "source": "s08과 동일"
+    },
+    {
+      "id": "s09",
+      "documents": [
+        "doc.mechanism-design-index-d08"
+      ],
+      "field": "body_ko_md",
+      "from": "갭: 16개국 입력 전부.",
+      "to": "갭: 정치체 입력 전부.",
+      "patterns": [
+        "sixteen-states-ko"
+      ],
+      "reason": "결정 대기 항목의 '16개국 입력' 전제. 갭 사실은 유지하고 정치 단위만 중성 치환.",
+      "source": "바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "v07",
+      "documents": [
+        "doc.mechanism-design-index-d08"
+      ],
+      "field": "body_md",
+      "from": "Gap: all inputs for the 16 countries.",
+      "to": "Gap: all inputs for the polities.",
+      "patterns": [
+        "sixteen-states-en~variant-16countries"
+      ],
+      "reason": "s09의 영문 쌍.",
+      "source": "s09와 동일"
+    },
+    {
+      "id": "s10",
+      "documents": [
+        "doc.mechanism-design-index-d12"
+      ],
+      "field": "body_md",
+      "from": "The starting successions of the sixteen states are recorded with the name of their method: election among the duty houses, election at a covenant council of water-contract house representatives, primogeniture among the track houses, guild council and apprentice lineage, hereditary commander, dual commander and garrison chief, house inheritance, election by a council of investor houses, pastor father-to-son succession with elder confirmation, congregation election and mountain assembly acclamation, a master's nomination of a successor disciple, examination election, and direct election by union members.",
+      "to": "The starting successions of the polities are recorded with the name of their method: election among the duty houses, election at a covenant council of water-contract house representatives, primogeniture among the track houses, guild council and apprentice lineage, hereditary commander, dual commander and garrison chief, house inheritance, election by a council of investor houses, congregation election and mountain assembly acclamation, a master's nomination of a successor disciple, examination election, and direct election by union members.",
+      "patterns": [
+        "sixteen-states-en",
+        "church-en"
+      ],
+      "reason": "시작 계승 방식 열거 문장. 'sixteen states'를 정치체로, 목사직 부자 세습+장로 인준 항목(폐지된 성직 세습 제도)은 열거에서 최소 삭제. 나머지 열거 항목은 유지.",
+      "source": "바이블 1절 규칙7·규칙9 [승인], 4절 church-en"
+    },
+    {
+      "id": "s11",
+      "documents": [
+        "doc.mechanism-design-index-d12"
+      ],
+      "field": "body_ko_md",
+      "from": "열여섯 나라의 시작 계승에는 방식의 이름이 적혀 있다.",
+      "to": "각 정치체의 시작 계승에는 방식의 이름이 적혀 있다.",
+      "patterns": [
+        "sixteen-states-ko"
+      ],
+      "reason": "s10의 한국어 쌍(도입 문장).",
+      "source": "s10과 동일"
+    },
+    {
+      "id": "s12",
+      "documents": [
+        "doc.mechanism-design-index-d12"
+      ],
+      "field": "body_ko_md",
+      "from": "당직 가문 선거, 물 계약 가문 대표 계약 회의 선출, 선로 가문 장자 세습, 길드 평의회와 도제 계보, 세습 사령관, 사령관·수비대장 이원, 가문 세습, 출자 가문 평의회 선출, 목사직 부자 세습과 장로 인준, 신도단 선출과 산중총회 추대, 스승의 후계 제자 지명, 시험 선출, 조합원 직선.",
+      "to": "당직 가문 선거, 물 계약 가문 대표 계약 회의 선출, 선로 가문 장자 세습, 길드 평의회와 도제 계보, 세습 사령관, 사령관·수비대장 이원, 가문 세습, 출자 가문 평의회 선출, 신도단 선출과 산중총회 추대, 스승의 후계 제자 지명, 시험 선출, 조합원 직선.",
+      "patterns": [
+        "church-ko"
+      ],
+      "reason": "s10의 한국어 쌍(열거 문장). '목사직 부자 세습과 장로 인준' 항목 삭제.",
+      "source": "바이블 1절 규칙9 [승인], 4절 church-ko"
+    },
+    {
+      "id": "v08",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_md",
+      "from": "It does not mean that Unity station interior terrain or the 16-state campaign has been implemented.",
+      "to": "It does not mean that Unity station interior terrain or the campaign has been implemented.",
+      "patterns": [
+        "sixteen-states-en~variant-16state"
+      ],
+      "reason": "구현 미완료 면책 문장의 '16-state' 수식어 최소 제거. 미완료 사실 유지.",
+      "source": "바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "v09",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_ko_md",
+      "from": "Unity 역 내부 지형이나 16국 캠페인의 구현 완료를 뜻하지 않습니다.",
+      "to": "Unity 역 내부 지형이나 캠페인의 구현 완료를 뜻하지 않습니다.",
+      "patterns": [
+        "sixteen-states-ko~variant-16guk-any"
+      ],
+      "reason": "v08의 한국어 쌍.",
+      "source": "v08과 동일"
+    },
+    {
+      "id": "v10",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_md",
+      "from": "The 16-state campaign simulation, the aggregated casualty display, and items 13–17 of `ToDo.md` are not yet complete.",
+      "to": "The campaign simulation, the aggregated casualty display, and items 13–17 of `ToDo.md` are not yet complete.",
+      "patterns": [
+        "sixteen-states-en~variant-16state"
+      ],
+      "reason": "v08과 같은 성격. 미완료 목록 사실은 유지.",
+      "source": "바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "v11",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_ko_md",
+      "from": "16국 캠페인 시뮬레이션, 집계 사상자 표현, `ToDo.md`의 13–17 항목은 아직 완료가 아닙니다.",
+      "to": "캠페인 시뮬레이션, 집계 사상자 표현, `ToDo.md`의 13–17 항목은 아직 완료가 아닙니다.",
+      "patterns": [
+        "sixteen-states-ko~variant-16guk-any"
+      ],
+      "reason": "v10의 한국어 쌍.",
+      "source": "v10과 동일"
+    },
+    {
+      "id": "v12",
+      "documents": [
+        "doc.Unity-Architecture"
+      ],
+      "field": "body_md",
+      "from": "Generated art slots, the 16-nation campaign, and aggregated casualty representation are not yet complete.",
+      "to": "Generated art slots, the campaign, and aggregated casualty representation are not yet complete.",
+      "patterns": [
+        "sixteen-states-en~variant-16nation"
+      ],
+      "reason": "구현 미완료 면책 문장의 '16-nation' 수식어 최소 제거.",
+      "source": "바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "v13",
+      "documents": [
+        "doc.Unity-Architecture"
+      ],
+      "field": "body_ko_md",
+      "from": "생성 아트 슬롯·16국 캠페인·집계 사상자 표현은 아직 완료가 아닙니다.",
+      "to": "생성 아트 슬롯·캠페인·집계 사상자 표현은 아직 완료가 아닙니다.",
+      "patterns": [
+        "sixteen-states-ko~variant-16guk-any"
+      ],
+      "reason": "v12의 한국어 쌍.",
+      "source": "v12와 동일"
+    },
+    {
+      "id": "v14",
+      "documents": [
+        "doc.Development-Roadmap"
+      ],
+      "field": "body_md",
+      "from": "There is no internal Unity grid or 16-state simulation.",
+      "to": "There is no internal Unity grid.",
+      "patterns": [
+        "sixteen-states-en~variant-16state"
+      ],
+      "reason": "부재 서술 문장. 16국 시뮬레이션 부재 절을 삭제하고 기존 Unity 내부 격자 부재 사실만 남긴다(게이트 리뷰 G26-R1: 특정 시뮬레이션의 부재를 정치체 시뮬레이션 일반의 부재로 확장하지 않는다).",
+      "source": "게이트 리뷰 G26-R1 필수 수정; 바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "v15",
+      "documents": [
+        "doc.Development-Roadmap"
+      ],
+      "field": "body_ko_md",
+      "from": "Unity 내부 격자·16국 시뮬레이션은 없다",
+      "to": "Unity 내부 격자는 없다",
+      "patterns": [
+        "sixteen-states-ko~variant-16guk-any"
+      ],
+      "reason": "v14의 한국어 쌍. 16국 시뮬레이션 부재 절 삭제, 격자 부재만 잔존.",
+      "source": "게이트 리뷰 G26-R1 필수 수정; 바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "v16",
+      "documents": [
+        "doc.Development-Roadmap"
+      ],
+      "field": "body_md",
+      "from": "The full 16-state, 412-character campaign",
+      "to": "The full 412-character campaign",
+      "patterns": [
+        "sixteen-states-en~variant-16state"
+      ],
+      "reason": "로드맵 범위 서술의 '16-state' 수식어 최소 제거. 412인(데이터 사실)은 유지.",
+      "source": "바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "v17",
+      "documents": [
+        "doc.Development-Roadmap"
+      ],
+      "field": "body_ko_md",
+      "from": "전체 16국·412인 캠페인",
+      "to": "전체 412인 캠페인",
+      "patterns": [
+        "sixteen-states-ko~variant-16guk-any"
+      ],
+      "reason": "v16의 한국어 쌍.",
+      "source": "v16과 동일"
+    },
+    {
+      "id": "c01",
+      "documents": [
+        "doc.Narrative-Direction"
+      ],
+      "field": "body_md",
+      "from": "[Myeongbu Church](/wiki/Faith-Culture-Schism/)",
+      "to": "[Faith-Culture-Schism](/wiki/Faith-Culture-Schism/)",
+      "patterns": [
+        "church-en"
+      ],
+      "reason": "링크 텍스트 'Myeongbu Church'가 폐지된 교회 정치체 이름. 링크 대상(슬러그)은 보존하고 보이는 텍스트만 문서명으로 바꾼다. 한국어 쪽 링크 텍스트는 이미 'Arc'라 패치 불필요.",
+      "source": "바이블 1절 규칙9 [승인], 4절 church-en"
+    },
+    {
+      "id": "c02",
+      "documents": [
+        "doc.Narrative-Direction"
+      ],
+      "field": "body_md",
+      "from": "Im Hajun's disappearance is not a death hook, and Bak Nuri's operational responsibility and O Gyeongjae's position as senior pastor are not automatically inherited by Im Chowon.",
+      "to": "Im Hajun's disappearance is not a death hook, and Bak Nuri's operational responsibility and O Gyeongjae's post are not automatically inherited by Im Chowon.",
+      "patterns": [
+        "church-en"
+      ],
+      "reason": "성직 직책(senior pastor) 표현 제거. 미승계 사실은 유지하고 직책명만 중성 표현으로.",
+      "source": "바이블 6절 person-0088(성직 어휘 제거, Q23), 4절 church-en"
+    },
+    {
+      "id": "c03",
+      "documents": [
+        "doc.Narrative-Direction"
+      ],
+      "field": "body_ko_md",
+      "from": "박누리의 운영 책임과 오경재 당회장직을 임초원에게 자동 승계시키지 않는다.",
+      "to": "박누리의 운영 책임과 오경재의 직책을 임초원에게 자동 승계시키지 않는다.",
+      "patterns": [
+        "church-ko"
+      ],
+      "reason": "c02의 한국어 쌍. '당회장직'을 '직책'으로.",
+      "source": "c02와 동일"
+    },
+    {
+      "id": "c04",
+      "documents": [
+        "doc.Rules-FactionsWarfare"
+      ],
+      "field": "body_md",
+      "from": "adoptees and priests may take precedence over blood kin",
+      "to": "adoptees and congregation members may take precedence over blood kin",
+      "patterns": [
+        "church-en"
+      ],
+      "reason": "north-refuge 키트의 성직자 우선 조항. 한국어 쌍 행은 이미 '신도'라 영문만 'congregation members'(신도)로 맞춘다. 규칙 내용은 유지.",
+      "source": "바이블 2.3절(아크 신도) [승인], 4절 church-en; 같은 문서 한국어 행 '양자·신도가'"
+    },
+    {
+      "id": "c05",
+      "documents": [
+        "doc.Singleplayer-Design-SP-1-0-0"
+      ],
+      "field": "body_md",
+      "from": "| Registry Church | Hereditary father-to-son pastorate, ratification by elders | Candidate lineage and ordination/ratification conditions |",
+      "to": "delete",
+      "patterns": [
+        "church-en"
+      ],
+      "reason": "계승 제도 표의 교회 세습 행. 목사직 세습·장로 인준·안수는 폐지된 성직 제도 서술로 최소 치환 문구가 없어 행 삭제(기본값).",
+      "source": "바이블 1절 규칙9 [승인], 4절 church-en"
+    },
+    {
+      "id": "c06",
+      "documents": [
+        "doc.Singleplayer-Design-SP-1-0-0"
+      ],
+      "field": "body_ko_md",
+      "from": "| Arc | 목사직 부자 세습·장로 인준 | 후보 계보와 안수/인준 조건 |",
+      "to": "delete",
+      "patterns": [
+        "church-ko"
+      ],
+      "reason": "c05의 한국어 쌍(라벨이 'Arc'로 번역돼 있음). 아크에 목사직 세습이 있다는 서술은 정본과 상충하므로 행 삭제.",
+      "source": "바이블 2.3절(아크 수장은 교주 고예진), 4절 church-ko"
+    },
+    {
+      "id": "c07",
+      "documents": [
+        "doc.mechanism-design-index-d01"
+      ],
+      "field": "body_md",
+      "from": "The Sumun State monarch's election by contract council, the Central Technology Preservation Institute director's selection by examination, and the Register Church session moderator's confirmation of elders are procedures defined in the setting, not ability-score formulas.",
+      "to": "The Sumun State monarch's election by contract council and the Central Technology Preservation Institute director's selection by examination are procedures defined in the setting, not ability-score formulas.",
+      "patterns": [
+        "church-en"
+      ],
+      "reason": "설정 절차 예시 3개 중 교회 당회 예시만 최소 삭제. 나머지 두 예시(수문국·중앙기술보존원)는 금지 클래스 밖이라 유지.",
+      "source": "바이블 1절 규칙9 [승인], 4절 church-en"
+    },
+    {
+      "id": "c08",
+      "documents": [
+        "doc.mechanism-design-index-d01"
+      ],
+      "field": "body_ko_md",
+      "from": "수문국 군주의 계약 회의 선출, 중앙기술보존원 원장의 시험 선발, Arc 당회장의 장로 인준은 설정의 절차이지 능력치 공식이 아니다.",
+      "to": "수문국 군주의 계약 회의 선출과 중앙기술보존원 원장의 시험 선발은 설정의 절차이지 능력치 공식이 아니다.",
+      "patterns": [
+        "church-ko"
+      ],
+      "reason": "c07의 한국어 쌍.",
+      "source": "c07과 동일"
+    },
+    {
+      "id": "c09",
+      "documents": [
+        "doc.mechanism-design-index-d09"
+      ],
+      "field": "body_md",
+      "from": "| Registry Church | Father-to-Son Succession of the Pastorate and Elder Ratification | Lineage, ordination, and ratification conditions |",
+      "to": "delete",
+      "patterns": [
+        "church-en"
+      ],
+      "reason": "c05와 같은 성격의 D09 제도표 행. 행 삭제.",
+      "source": "바이블 1절 규칙9 [승인], 4절 church-en"
+    },
+    {
+      "id": "c10",
+      "documents": [
+        "doc.mechanism-design-index-d09"
+      ],
+      "field": "body_ko_md",
+      "from": "| Arc | 목사직 부자 세습과 장로 인준 | 계보·안수·인준 조건 |",
+      "to": "delete",
+      "patterns": [
+        "church-ko"
+      ],
+      "reason": "c09의 한국어 쌍. 행 삭제.",
+      "source": "바이블 2.3절, 4절 church-ko"
+    },
+    {
+      "id": "r2a",
+      "documents": [
+        "doc.Korean-Terminology-and-Naming"
+      ],
+      "field": "body_md",
+      "from": "Titles distinguish the modern institution-specific designations of the 16 nations from the common tiers.",
+      "to": "Titles distinguish modern institution-specific designations from the common tiers.",
+      "patterns": [
+        "sixteen-states-en~variant-16nation"
+      ],
+      "reason": "직책 명명 규칙이 16국을 전제한다(게이트 리뷰 G26-R2). 'of the 16 nations'만 최소 제거하고 구분 사실·조선 관직 금지 문장은 유지.",
+      "source": "게이트 리뷰 G26-R2 필수 수정; 바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "r2b",
+      "documents": [
+        "doc.Korean-Terminology-and-Naming"
+      ],
+      "field": "body_ko_md",
+      "from": "직책은 16국의 현대 기관별 명칭과 공통 티어를 구분한다.",
+      "to": "직책은 현대 기관별 명칭과 공통 티어를 구분한다.",
+      "patterns": [
+        "sixteen-states-ko~variant-16guk-any"
+      ],
+      "reason": "r2a의 한국어 쌍. 조사 결합형 '16국의'가 기존 변형 정규식의 뒤쪽 한글 부정 경계에 막혔었다.",
+      "source": "게이트 리뷰 G26-R2 필수 수정; 바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "h1",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_md",
+      "from": "The collapse began with the Great Blackout of 2030, and that night is recorded in the prologue.",
+      "to": "The collapse began with the Great Blackout around 2026, and that night is recorded in the prologue.",
+      "patterns": [
+        "(연표 보정 — 네 클래스 밖, 사용자 지시)"
+      ],
+      "reason": "GDD 홈 도입문이 대정전을 2030년으로 단정한다. 승인 연표는 약 2026년(월일 미정). 적용된 World-Unbinding의 표현 around 2026으로 최소 교정.",
+      "source": "바이블 1절 규칙1·3절 연표 [승인]; data/sql/030-wiki-documents.sql World-Unbinding 행 본문 'around 2026'"
+    },
+    {
+      "id": "h2",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_md",
+      "from": "| Prologue | The night the call network collapsed in the 2030 Great Blackout, the 2126 setting, and why a nation remains in Seoul |",
+      "to": "| Prologue | The night the call network collapsed in the Great Blackout around 2026, the 2126 setting, and why a nation remains in Seoul |",
+      "patterns": [
+        "(연표 보정 — 네 클래스 밖, 사용자 지시)"
+      ],
+      "reason": "h1과 같은 사유(프롤로그 표 행).",
+      "source": "h1과 동일"
+    },
+    {
+      "id": "h3",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_ko_md",
+      "from": "2030년 대정전으로 붕괴가 시작됐고, 그 밤은 프롤로그에 적혀 있습니다.",
+      "to": "약 2026년 대정전으로 붕괴가 시작됐고, 그 밤은 프롤로그에 적혀 있습니다.",
+      "patterns": [
+        "(연표 보정 — 네 클래스 밖, 사용자 지시)"
+      ],
+      "reason": "h1의 한국어 쌍. 적용된 World-Unbinding의 승인 표현 약 2026년.",
+      "source": "바이블 3절 연표 [승인]; World-Unbinding 행 본문 '약 2026년'"
+    },
+    {
+      "id": "h4",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_ko_md",
+      "from": "| 프롤로그 | 2030년 대정전으로 호출망이 무너진 밤, 배경 2126, 서울에 나라가 남은 까닭 |",
+      "to": "| 프롤로그 | 약 2026년 대정전으로 호출망이 무너진 밤, 배경 2126, 서울에 나라가 남은 까닭 |",
+      "patterns": [
+        "(연표 보정 — 네 클래스 밖, 사용자 지시)"
+      ],
+      "reason": "h3과 같은 사유(프롤로그 표 행).",
+      "source": "h3과 동일"
+    },
+    {
+      "id": "r3a",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_md",
+      "from": "| Characters | The Sixteen Suryeong and the Chamha |",
+      "to": "| Characters | The Suryeong and the Chamha |",
+      "patterns": [
+        "sixteen-states-en~office-count"
+      ],
+      "reason": "게이트 리뷰 2차: 'The Sixteen Suryeong'의 열여섯은 십육국 세계의 직책 수다. 옛 Offices-and-Ranks(git 276b26937 030)는 수령을 '십육국 한 나라의 수장 칸/The head-of-state cell of one of the sixteen states'로 정의한다. 숫자만 지우고 직위 목록은 그대로 둔다.",
+      "source": "게이트 리뷰 2차 필수 수정; git show 276b26937:data/sql/030-wiki-documents.sql Offices-and-Ranks body_md L141·body_ko_md L138; 바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "r3b",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_ko_md",
+      "from": "| 등장인물 | 수령 열여섯과 참하 |",
+      "to": "| 등장인물 | 수령과 참하 |",
+      "patterns": [
+        "sixteen-states-ko~office-count"
+      ],
+      "reason": "r3a의 한국어 쌍. '열여섯'만 제거.",
+      "source": "r3a와 동일"
+    }
+  ],
+  "no_patch_classes": {
+    "slaughter-order-ko": "적중 0건 — GDD 본문에 AI 살육 서사 없음",
+    "slaughter-order-en": "적중 0건",
+    "state-id-polity": "적중 24건 전부 ADR-003(저장소 결정 기록)·Data-Catalog-and-Schema(현행 스키마 문서)라 세계 서술 아님 — 보존(보고서 별지)"
+  }
+}
