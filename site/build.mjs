@@ -165,7 +165,7 @@ for (const L of [UI.en, UI.ko]) {
   // factions
   const members = (fid) => states.filter((s) => s.faction_id === fid);
   write(`${L.prefix}wiki/factions/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => members(x.id).length).map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n${members(x.id).map((s) => `- [${g(s, 'name')}](${P(`wiki/states/${s.slug}/`)}) — ${g(s, 'ruler')}`).join('\n')}\n`).join('\n')}`));
-  factions.filter((x) => members(x.id).length).forEach((x) => {
+  factions.filter((x) => members(x.id).length || people.some((p) => p.faction_id === x.id)).forEach((x) => {
     const peopleN = people.filter((p) => p.faction_id === x.id).length;
     write(`${L.prefix}wiki/factions/${x.id}/index.md`, page(g(x, 'name'), `# ${g(x, 'name')}\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n| ${L === UI.ko ? "항목" : "Field"} | ${L === UI.ko ? "값" : "Value"} |\n| --- | --- |\n${g(x, 'center_region') ? `| ${L.centerRegion} | ${cell(g(x, 'center_region'))} |\n| ${L.aiPosition} | ${cell(g(x, 'ai_position'))} |\n` : ''}| ${L.fields.state} | ${members(x.id).length} |\n| ${L.people} | ${peopleN} |\n\n${x.id === 'independent' ? `${L.independentNote}\n\n` : ''}## ${L.members}\n\n| ${L.cols.id} | ${L.cols.state} | ${L.cols.ruler} | ${L.cols.capital} | ${L.cols.power} |\n| --- | --- | --- | --- | --- |\n${members(x.id).map((s) => `| ${s.id} | [${cell(g(s, 'name'))}](${P(`wiki/states/${s.slug}/`)}) | ${cell(g(s, 'ruler'))} | ${cell(g(s, 'capital'))} | ${cell(g(s, 'power'))} |`).join('\n')}\n`));
   });

@@ -1,0 +1,3244 @@
+{
+ "generatedAt": "2026-11-11T00:46:56.018Z",
+ "sqlDir": "C:\\Users\\oliver\\AppData\\Local\\Temp\\wt-w5-25\\data\\sql",
+ "mapping": [
+  {
+   "id": "S01",
+   "faction": "free-city",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s01",
+    "name_ko": "수문국",
+    "capital": "Yangpyeong",
+    "capital_ko": "양평"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Yangpyeong",
+    "name_ko": "양평",
+    "district": "Yangcheon-gu",
+    "district_ko": "양천구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 16,
+    "district_ko": "양천구",
+    "faction": "free-city"
+   }
+  },
+  {
+   "id": "S02",
+   "faction": "free-city",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s02",
+    "name_ko": "규격맹",
+    "capital": "Guro",
+    "capital_ko": "구로"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Guro",
+    "name_ko": "구로",
+    "district": "Guro-gu",
+    "district_ko": "구로구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 18,
+    "district_ko": "구로구",
+    "faction": "free-city"
+   }
+  },
+  {
+   "id": "S03",
+   "faction": "arc",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s03",
+    "name_ko": "태욱그룹",
+    "capital": "Yangjae",
+    "capital_ko": "양재"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Yangjae",
+    "name_ko": "양재",
+    "district": "Seocho-gu",
+    "district_ko": "서초구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 22,
+    "district_ko": "서초구",
+    "faction": "arc"
+   }
+  },
+  {
+   "id": "S04",
+   "faction": "arc",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s04",
+    "name_ko": "Arc (삼성)",
+    "capital": "Samseong",
+    "capital_ko": "삼성"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Samseong",
+    "name_ko": "삼성",
+    "district": "Gangnam-gu",
+    "district_ko": "강남구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 23,
+    "district_ko": "강남구",
+    "faction": "arc"
+   }
+  },
+  {
+   "id": "S05",
+   "faction": "arc",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s05",
+    "name_ko": "동방사",
+    "capital": "Amsa",
+    "capital_ko": "암사"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Amsa",
+    "name_ko": "암사",
+    "district": "Gangdong-gu",
+    "district_ko": "강동구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 25,
+    "district_ko": "강동구",
+    "faction": "arc"
+   }
+  },
+  {
+   "id": "S06",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s06",
+    "name_ko": "대한민국정부",
+    "capital": "Gwanghwamun",
+    "capital_ko": "광화문"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Gwanghwamun",
+    "name_ko": "광화문",
+    "district": "Jongno-gu",
+    "district_ko": "종로구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 9,
+    "district_ko": "종로구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S07",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s07",
+    "name_ko": "환적국",
+    "capital": "Yongsan",
+    "capital_ko": "용산"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Yongsan",
+    "name_ko": "용산",
+    "district": "Yongsan-gu",
+    "district_ko": "용산구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 2,
+    "district_ko": "용산구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S08",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s08",
+    "name_ko": "중앙정보부",
+    "capital": "Noksapyeong",
+    "capital_ko": "녹사평"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Noksapyeong",
+    "name_ko": "녹사평",
+    "district": "Yongsan-gu",
+    "district_ko": "용산구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 2,
+    "district_ko": "용산구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S09",
+   "faction": "free-city",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s09",
+    "name_ko": "여의도출자연합회",
+    "capital": "Yeouido",
+    "capital_ko": "여의도"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Yeouido",
+    "name_ko": "여의도",
+    "district": "Yeongdeungpo District",
+    "district_ko": "영등포구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 17,
+    "district_ko": "영등포구",
+    "faction": "free-city"
+   }
+  },
+  {
+   "id": "S10",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s10",
+    "name_ko": "안국총림",
+    "capital": "Anguk",
+    "capital_ko": "안국"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Anguk",
+    "name_ko": "안국",
+    "district": "Jongno-gu",
+    "district_ko": "종로구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 9,
+    "district_ko": "종로구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S11",
+   "faction": "arc",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s11",
+    "name_ko": "성하그룹",
+    "capital": "Gangnam",
+    "capital_ko": "강남"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Gangnam",
+    "name_ko": "강남",
+    "district": "Seocho-gu",
+    "district_ko": "서초구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 22,
+    "district_ko": "서초구",
+    "faction": "arc"
+   }
+  },
+  {
+   "id": "S12",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s12",
+    "name_ko": "신내운수",
+    "capital": "Sinnae",
+    "capital_ko": "신내"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Sinnae",
+    "name_ko": "신내",
+    "district": "Jungnang-gu",
+    "district_ko": "중랑구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 7,
+    "district_ko": "중랑구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S13",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s13",
+    "name_ko": "흰십자단",
+    "capital": "Jegi-dong",
+    "capital_ko": "제기동"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Jegi-dong",
+    "name_ko": "제기동",
+    "district": "Dongdaemun-gu",
+    "district_ko": "동대문구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 6,
+    "district_ko": "동대문구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S14",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s14",
+    "name_ko": "아관사",
+    "capital": "Guui",
+    "capital_ko": "구의"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Guui",
+    "name_ko": "구의",
+    "district": "Gwangjin-gu",
+    "district_ko": "광진구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 5,
+    "district_ko": "광진구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S15",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s15",
+    "name_ko": "Arc (명동)",
+    "capital": "Myeongdong",
+    "capital_ko": "명동"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Myeongdong",
+    "name_ko": "명동",
+    "district": "Jung-gu",
+    "district_ko": "중구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 3,
+    "district_ko": "중구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S16",
+   "faction": "arc",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s16",
+    "name_ko": "Arc (정동)",
+    "capital": "Suseo",
+    "capital_ko": "수서"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Suseo",
+    "name_ko": "수서",
+    "district": "Gangnam-gu",
+    "district_ko": "강남구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 23,
+    "district_ko": "강남구",
+    "faction": "arc"
+   }
+  }
+ ],
+ "files": {
+  "035-factions.sql": {
+   "tables": {
+    "faction": {
+     "cells": 2,
+     "byColumn": {
+      "ai_position": 1,
+      "ai_position_ko": 1
+     },
+     "note": "arc ai_position \"Enemies of Humanity/인류의 적\" → \"Faith and baptism/신앙·세례\" (plan row 25: 035 세력 ai_position; 아크는 인류의 적이 아니라 기계 신앙 공동체 — 바이블 §2.3)"
+    }
+   },
+   "linesBefore": 8,
+   "linesAfter": 8,
+   "changedLines": 1,
+   "deletedLines": 0,
+   "addedLines": 0
+  },
+  "040-wiki-states.sql": {
+   "tables": {
+    "wiki_state": {
+     "cells": 0,
+     "byColumn": {},
+     "rowsBefore": 16,
+     "rowsAfter": 3,
+     "note": "십육국 16행 → 세 세력 3행(스키마가 허용하는 최소 구조). id=세력 id(사이트 조인 호환), 표기문은 바이블 §2·§3 [승인] 문장만 사용. 지도 앵커 규칙(신·구 세력 일치하는 최소 sort): government←S06, free-city←S01, arc←S04"
+    }
+   },
+   "linesBefore": 19,
+   "linesAfter": 6,
+   "changedLines": 0,
+   "deletedLines": 16,
+   "addedLines": 3
+  },
+  "050-wiki-people.sql": {
+   "tables": {
+    "wiki_person": {
+     "cells": 2954,
+     "byColumn": {
+      "state_id": 1014,
+      "state_name": 1014,
+      "state_name_ko": 888,
+      "position": 6,
+      "position_ko": 6,
+      "rank": 9,
+      "rank_ko": 9,
+      "title": 4,
+      "title_ko": 4
+     },
+     "note": "state_id/state_name/state_name_ko 1,022행 전수: 세력 999행, 공작령 15행, 유지(S00·daejeon) 8행. faction_id 열은 본 과제 범위 밖(미변경)"
+    }
+   },
+   "linesBefore": 1026,
+   "linesAfter": 1026,
+   "changedLines": 1016,
+   "deletedLines": 0,
+   "addedLines": 0
+  },
+  "060-wiki-updates.sql": {
+   "tables": {
+    "wiki_update": {
+     "cells": 0,
+     "byColumn": {},
+     "rowsBefore": 5,
+     "rowsAfter": 6,
+     "note": "계획 25행: 재작성 알림 새 행 +1만. 기존 5행(과거 이력)은 제목·내용 미변경"
+    }
+   },
+   "linesBefore": 9,
+   "linesAfter": 10,
+   "changedLines": 0,
+   "deletedLines": 0,
+   "addedLines": 1
+  },
+  "120-map-core.sql": {
+   "tables": {
+    "map_state": {
+     "cells": 0,
+     "byColumn": {},
+     "rowsBefore": 16,
+     "rowsAfter": 3,
+     "note": "16행 → 세 세력 앵커 3행. 좌표·수도역·색은 연속성 앵커(신·구 세력 일치 최소 sort: government←S06, free-city←S01, arc←S04)의 원본 리터럴을 그대로 복사하고 exclusive_districts만 바이블 §2.4의 14/7/4로. 색이 faction.color와 일치함을 실행중 검증"
+    },
+    "map_region": {
+     "cells": 424,
+     "byColumn": {
+      "polities": 424
+     },
+     "note": "polities(정치 소속 목록) 424/427행 값 치환(비어있는 3행 유지) — 실제 변경 424행"
+    },
+    "map_station": {
+     "cells": 934,
+     "byColumn": {
+      "surface_polity_ids": 310,
+      "control": 312,
+      "control_ko": 312
+     },
+     "note": "surface_polity_ids 310/312, control·control_ko 624/624열 치환(polityIds·primary·polityNames·hierarchy.state·currentHegemons의 id와 표기명; 같은 세력으로 합쳐지는 목록은 중복 제거)"
+    },
+    "map_edge": {
+     "cells": 762,
+     "byColumn": {
+      "control": 381,
+      "control_ko": 381
+     },
+     "note": "control·control_ko 762/762열 치환(분쟁 구간 polityIds 중복 제거 포함)"
+    },
+    "map_landmark": {
+     "cells": 25,
+     "byColumn": {
+      "holder_id": 19,
+      "detail": 3,
+      "detail_ko": 3
+     },
+     "note": "holder_id 19/19행 세력 id로, detail 산문의 S0x 토큰 6열 세력 이름으로. 지명·좌표·역할 미변경"
+    }
+   },
+   "linesBefore": 1191,
+   "linesAfter": 1178,
+   "changedLines": 1136,
+   "deletedLines": 16,
+   "addedLines": 3
+  },
+  "123-map-holdings.sql": {
+   "tables": {
+    "map_holding": {
+     "cells": 170,
+     "byColumn": {
+      "state_id": 50,
+      "data": 50,
+      "data_ko": 50,
+      "name": 10,
+      "name_ko": 10
+     },
+     "note": "state_id 50/50행 세력 id로, data의 stateId 치환·이름의 국가 토큰 제거 20열. id 문자열(예: opening-duchy-gu-11620-S02)의 -S0x 접미는 식별자로 유지(retainer_graph holdingIds 참조 없음을 실행중 검증)"
+    }
+   },
+   "linesBefore": 366,
+   "linesAfter": 366,
+   "changedLines": 50,
+   "deletedLines": 0,
+   "addedLines": 0
+  },
+  "110-family-trees.sql": {
+   "tables": {
+    "family_tree": {
+     "cells": 282,
+     "byColumn": {
+      "json": 141,
+      "json_ko": 141
+     },
+     "note": "node/affiliation의 \"stateId\":\"S02·S06\"(736회) → 세력 id, affiliation.name → 세력 이름 (282/296열)"
+    }
+   },
+   "linesBefore": 152,
+   "linesAfter": 152,
+   "changedLines": 141,
+   "deletedLines": 0,
+   "addedLines": 0
+  },
+  "115-retainer-graph.sql": {
+   "tables": {
+    "retainer_graph": {
+     "cells": 2,
+     "byColumn": {
+      "json": 1,
+      "json_ko": 1
+     },
+     "note": "node.state / court.stateId의 S0x → 세력 id, polity:daejeon 유지 (2/2열)"
+    }
+   },
+   "linesBefore": 5,
+   "linesAfter": 5,
+   "changedLines": 1,
+   "deletedLines": 0,
+   "addedLines": 0
+  },
+  "010-meta.sql": {
+   "tables": {},
+   "note": "audit only: 모든 열에서 S01..S16 id 0건 — 변경 없음",
+   "linesBefore": 10,
+   "linesAfter": 10,
+   "changedLines": 0,
+   "deletedLines": 0,
+   "addedLines": 0
+  },
+  "020-wiki-categories.sql": {
+   "tables": {},
+   "note": "audit only: 모든 열에서 S01..S16 id 0건 — 변경 없음",
+   "linesBefore": 27,
+   "linesAfter": 27,
+   "changedLines": 0,
+   "deletedLines": 0,
+   "addedLines": 0
+  },
+  "100-clans.sql": {
+   "tables": {},
+   "note": "audit only: 모든 열에서 S01..S16 id 0건 — 변경 없음",
+   "linesBefore": 1198,
+   "linesAfter": 1198,
+   "changedLines": 0,
+   "deletedLines": 0,
+   "addedLines": 0
+  },
+  "121-map-titles.sql": {
+   "tables": {},
+   "note": "audit only: 모든 열에서 S01..S16 id 0건 — 변경 없음",
+   "linesBefore": 84,
+   "linesAfter": 84,
+   "changedLines": 0,
+   "deletedLines": 0,
+   "addedLines": 0
+  },
+  "122-map-rail.sql": {
+   "tables": {},
+   "note": "audit only: 모든 열에서 S01..S16 id 0건 — 변경 없음",
+   "linesBefore": 2830,
+   "linesAfter": 2830,
+   "changedLines": 0,
+   "deletedLines": 0,
+   "addedLines": 0
+  }
+ },
+ "decisions": {
+  "wikiPerson": {
+   "total": 1022,
+   "byFaction": {
+    "free-city": 187,
+    "arc": 315,
+    "government": 497
+   },
+   "byDuchy": {
+    "geography:duchy:11650": 3,
+    "geography:duchy:11200": 1,
+    "geography:duchy:11170": 1,
+    "geography:duchy:11410": 2,
+    "geography:duchy:11440": 1,
+    "geography:duchy:11350": 1,
+    "geography:duchy:11215": 1,
+    "geography:duchy:11680": 1,
+    "geography:duchy:11590": 1,
+    "geography:duchy:11140": 1,
+    "geography:duchy:11620": 2
+   },
+   "kept": {
+    "polity:daejeon": 4,
+    "S00": 4
+   }
+  }
+ },
+ "rulerRows": [
+  {
+   "id": "person-0001",
+   "name_ko": "한재목",
+   "title_ko": "군주",
+   "position_ko": "수문국 선출 군주",
+   "old_state": "S01",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0029",
+   "name_ko": "강민서",
+   "title_ko": "위원장",
+   "position_ko": "규격맹 위원장",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0031",
+   "name_ko": "김나율",
+   "title_ko": "구로 노동조합 서기",
+   "position_ko": "구로 노동조합 서기 · 시흥시 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0032",
+   "name_ko": "이강묵",
+   "title_ko": "금천 경비대장",
+   "position_ko": "금천 경비대장 · 군포시 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0034",
+   "name_ko": "최다인",
+   "title_ko": "공병 작업반장",
+   "position_ko": "공병 작업반장 · 의왕시 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0035",
+   "name_ko": "장우석",
+   "title_ko": "수리규격 감사기록관",
+   "position_ko": "대전 중구 영주",
+   "old_state": "polity:daejeon",
+   "new_state": "polity:daejeon",
+   "action": "no polity change (kept marker); no text change"
+  },
+  {
+   "id": "person-0038",
+   "name_ko": "허다온",
+   "title_ko": "천왕기지 차륜 정비사",
+   "position_ko": "대전 대덕구 영주",
+   "old_state": "polity:daejeon",
+   "new_state": "polity:daejeon",
+   "action": "no polity change (kept marker); no text change"
+  },
+  {
+   "id": "person-0039",
+   "name_ko": "구찬솔",
+   "title_ko": "구로 공구시장 물류상",
+   "position_ko": "대전 서구 영주",
+   "old_state": "polity:daejeon",
+   "new_state": "polity:daejeon",
+   "action": "no polity change (kept marker); no text change"
+  },
+  {
+   "id": "person-0040",
+   "name_ko": "진우람",
+   "title_ko": "금천 공방의무원",
+   "position_ko": "금천 공방의무원 · 화성시 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0042",
+   "name_ko": "표강호",
+   "title_ko": "제작규격 전령",
+   "position_ko": "제작규격 전령 · 공주시 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0043",
+   "name_ko": "명소이",
+   "title_ko": "남서 외곽선로 탐사원",
+   "position_ko": "남서 외곽선로 탐사원 · 보령시 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0044",
+   "name_ko": "제하온",
+   "title_ko": "숙련점수 원장 기록관",
+   "position_ko": "숙련점수 원장 기록관 · 광명시 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0047",
+   "name_ko": "명다해",
+   "title_ko": "금천 배급솥 시장 중개인",
+   "position_ko": "금천 배급솥 시장 중개인 · 수원시 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0048",
+   "name_ko": "제문석",
+   "title_ko": "구로 분진진료소 의무장",
+   "position_ko": "구로 분진진료소 의무장 · 논산시 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0050",
+   "name_ko": "종마루",
+   "title_ko": "가짜 펌프 부품 피해자 대표",
+   "position_ko": "가짜 펌프 부품 피해자 대표 · 평택시 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0051",
+   "name_ko": "고모래",
+   "title_ko": "복구복무 거부 증언 서기",
+   "position_ko": "복구복무 거부 증언 서기 · 당진시 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0052",
+   "name_ko": "배온결",
+   "title_ko": "공신 보상 원장 서기",
+   "position_ko": "공신 보상 원장 서기 · 안산시 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0053",
+   "name_ko": "류겨레",
+   "title_ko": "난민 수용 전령",
+   "position_ko": "난민 수용 전령 · 금산군 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0054",
+   "name_ko": "엄누리",
+   "title_ko": "후계시험 부품 감정 직공",
+   "position_ko": "후계시험 부품 감정 직공 · 부여군 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0055",
+   "name_ko": "여시온",
+   "title_ko": "제작헌장 전령",
+   "position_ko": "제작헌장 전령 · 서천군 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0056",
+   "name_ko": "기필호",
+   "title_ko": "패권전 제작 병참",
+   "position_ko": "제작 병참 · 청양군 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0059",
+   "name_ko": "최은재",
+   "title_ko": "기술인증 평의원",
+   "position_ko": "기술인증 평의원",
+   "old_state": "S03",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0070",
+   "name_ko": "표지안",
+   "title_ko": "공동기술원장 전령",
+   "position_ko": "태욱그룹 회장 전령 · 서초구 영주",
+   "old_state": "S03",
+   "new_state": "geography:duchy:11650",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0086",
+   "name_ko": "임하준",
+   "title_ko": "펌프기술 총관, 현재 실종",
+   "position_ko": "전 Arc 당회장",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns + bible-decided retitle (§6/§4)"
+  },
+  {
+   "id": "person-0088",
+   "name_ko": "오경재",
+   "title_ko": "당회장",
+   "position_ko": "Arc 왕 · Arc 당회장",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns + bible-decided retitle (§6/§4)"
+  },
+  {
+   "id": "person-0091",
+   "name_ko": "김보람",
+   "title_ko": "뚝섬 펌프수비대장",
+   "position_ko": "뚝섬 펌프수비대장 · 성남시 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0098",
+   "name_ko": "구도영",
+   "title_ko": "성수 패킹운송 물류상",
+   "position_ko": "성수 패킹운송 물류상 · 양평군 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0100",
+   "name_ko": "채구름",
+   "title_ko": "성동 교량 순찰대 조장",
+   "position_ko": "성동 교량 순찰대 조장 · 성동구 영주",
+   "old_state": "S04",
+   "new_state": "geography:duchy:11200",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0106",
+   "name_ko": "명우솔",
+   "title_ko": "성수 공방시장 경매사",
+   "position_ko": "성수 공방시장 경매사 · 하남시 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0107",
+   "name_ko": "제바름",
+   "title_ko": "성동 골목의무소 원장",
+   "position_ko": "성동 골목의무소 원장 · 여주시 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0109",
+   "name_ko": "종나솔",
+   "title_ko": "뚝섬-신정 급수호송 열차 승무원",
+   "position_ko": "뚝섬-신정 급수호송 열차 승무원 · 청주시 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0113",
+   "name_ko": "엄미래",
+   "title_ko": "유언 증거 호송 전령",
+   "position_ko": "유언 증거 호송 전령 · 충주시 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0116",
+   "name_ko": "배우진",
+   "title_ko": "사령관",
+   "position_ko": "동방사 사령관",
+   "old_state": "S05",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0145",
+   "name_ko": "윤서린",
+   "title_ko": "대통령",
+   "position_ko": "대한민국정부 대통령",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0146",
+   "name_ko": "강예준",
+   "title_ko": "인준 심사관",
+   "position_ko": "인준 심사관 · 연천군 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0147",
+   "name_ko": "조하린",
+   "title_ko": "문서고 사서",
+   "position_ko": "문서고 사서 · 가평군 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0148",
+   "name_ko": "윤지율",
+   "title_ko": "의료이송 기록관",
+   "position_ko": "의료이송 기록관 · 춘천시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0149",
+   "name_ko": "오서율",
+   "title_ko": "계약 공증관",
+   "position_ko": "계약 공증관 · 원주시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0150",
+   "name_ko": "서라온",
+   "title_ko": "지도 복구 사서",
+   "position_ko": "지도 복구 사서 · 강릉시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0151",
+   "name_ko": "지서윤",
+   "title_ko": "서울역 문서고 제습 정비사",
+   "position_ko": "서울역 문서고 제습 정비사 · 동해시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0152",
+   "name_ko": "마도한",
+   "title_ko": "서울역 공증사본 물류상",
+   "position_ko": "강화 외곽·백령대청 해상 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0153",
+   "name_ko": "연지우",
+   "title_ko": "서울역 의무실 의무원",
+   "position_ko": "서울역 의무실 의무원 · 태백시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0154",
+   "name_ko": "나선재",
+   "title_ko": "문서고 수비 순찰대 조장",
+   "position_ko": "문서고 수비 순찰대 조장 · 의정부시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0155",
+   "name_ko": "양해온",
+   "title_ko": "인준 심사 전령",
+   "position_ko": "인준 심사 전령 · 속초시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0156",
+   "name_ko": "주리안",
+   "title_ko": "북부 정수 배관 탐사원",
+   "position_ko": "북부 정수 배관 탐사원 · 삼척시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0157",
+   "name_ko": "차세온",
+   "title_ko": "유언 필적 기록관",
+   "position_ko": "유언 필적 기록관 · 홍천군 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0160",
+   "name_ko": "마은결",
+   "title_ko": "종로 공증사본 시장 경매사",
+   "position_ko": "종로 공증사본 시장 경매사 · 구리시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0161",
+   "name_ko": "연태솔",
+   "title_ko": "중앙 재난의료 조정 실무관",
+   "position_ko": "중앙 재난의료 조정 실무관 · 평창군 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0163",
+   "name_ko": "홍예준",
+   "title_ko": "유언 검증 서기",
+   "position_ko": "유언 검증 서기 · 철원군 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0164",
+   "name_ko": "추서윤",
+   "title_ko": "급수계약 인준 청구 증인",
+   "position_ko": "급수계약 인준 청구 증인 · 화천군 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0165",
+   "name_ko": "어태산",
+   "title_ko": "열여섯 깃발 인준 보관인",
+   "position_ko": "각국 인준 보관인 · 양구군 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0166",
+   "name_ko": "란지호",
+   "title_ko": "공신 보상 명부 당사자",
+   "position_ko": "공신 보상 명부 당사자 · 남양주시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0167",
+   "name_ko": "섭도윤",
+   "title_ko": "약소국 회의 기록 전령",
+   "position_ko": "대한민국정부 회의 기록 전령 · 인제군 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0168",
+   "name_ko": "평예준",
+   "title_ko": "비상권한 반환 증인",
+   "position_ko": "비상권한 반환 증인 · 동두천시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0169",
+   "name_ko": "조이록",
+   "title_ko": "기록 공증 감사관",
+   "position_ko": "기록 공증 감사관 · 고성군 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0176",
+   "name_ko": "미콜라 본다렌코",
+   "title_ko": "용산창 제동 정비사",
+   "position_ko": "용산창 제동 정비사 · 용산구 영주",
+   "old_state": "S07",
+   "new_state": "geography:duchy:11170",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0177",
+   "name_ko": "나탈리야 소콜로바",
+   "title_ko": "환적창고 물류상",
+   "position_ko": "연평·장봉·덕적 해상 영주",
+   "old_state": "S07",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0220",
+   "name_ko": "최지우",
+   "title_ko": "의장",
+   "position_ko": "여의도출자연합회 의장",
+   "old_state": "S09",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0235",
+   "name_ko": "모국",
+   "title_ko": "서북 관문 중계 거점장",
+   "position_ko": "영종지점 환전 거점장 · 서대문구 영주",
+   "old_state": "S09",
+   "new_state": "geography:duchy:11410",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0236",
+   "name_ko": "봉용",
+   "title_ko": "채널 길드 편성실 거점 실무 담당자, 오하늘의 실무 담당자",
+   "position_ko": "출자 평의회 서기실 거점 실무 담당자, 오하늘의 실무 담당자 · 마포구 영주",
+   "old_state": "S09",
+   "new_state": "geography:duchy:11440",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0246",
+   "name_ko": "백온",
+   "title_ko": "방장",
+   "position_ko": "안국총림 방장",
+   "old_state": "S10",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0272",
+   "name_ko": "이홍원",
+   "title_ko": "회장",
+   "position_ko": "성하그룹 회장, 이씨 가문 세습",
+   "old_state": "S11",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0282",
+   "name_ko": "소봉",
+   "title_ko": "연공회의 전령, 조우찬의 실무 담당자",
+   "position_ko": "회장실 전령, 조우찬의 실무 담당자",
+   "old_state": "S11",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0286",
+   "name_ko": "두국",
+   "title_ko": "북문 호송 거점장",
+   "position_ko": "강남역 북문 호송 거점장 · 노원구 영주",
+   "old_state": "S11",
+   "new_state": "geography:duchy:11350",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0287",
+   "name_ko": "모복",
+   "title_ko": "주거 쉘 급수 거점장, 서진아의 실무 담당자",
+   "position_ko": "강남역 사택 급수 거점장, 서진아의 실무 담당자 · 서초구 영주",
+   "old_state": "S11",
+   "new_state": "geography:duchy:11650",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0323",
+   "name_ko": "류은비",
+   "title_ko": "단장",
+   "position_ko": "흰십자단 단장",
+   "old_state": "S13",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0349",
+   "name_ko": "고서준",
+   "title_ko": "아관사 관문사령관",
+   "position_ko": "아관사 사령관",
+   "old_state": "S14",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0356",
+   "name_ko": "원예나",
+   "title_ko": "교량 통과 물류상",
+   "position_ko": "자월·측도 해상 영주",
+   "old_state": "S14",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0364",
+   "name_ko": "원다결",
+   "title_ko": "관문 통과 시장 거점장",
+   "position_ko": "양군 관문 통과 시장 거점장 · 광진구 영주",
+   "old_state": "S14",
+   "new_state": "geography:duchy:11215",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0374",
+   "name_ko": "남윤경",
+   "title_ko": "수석 신도",
+   "position_ko": "Arc 수석 신도",
+   "old_state": "S15",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0399",
+   "name_ko": "정유라",
+   "title_ko": "위원장",
+   "position_ko": "Arc 위원장",
+   "old_state": "S16",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0406",
+   "name_ko": "선초별",
+   "title_ko": "강남 계약서 시장 물류상, 하서진의 실무 담당자",
+   "position_ko": "정동 계약서 공동운송장 물류상, 하서진의 실무 담당자 · 강남구 영주",
+   "old_state": "S16",
+   "new_state": "geography:duchy:11680",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0407",
+   "name_ko": "원새울",
+   "title_ko": "협약 회의 의무소 거점 의무원",
+   "position_ko": "협약 회의 의무소 거점 의무원 · 서초구 영주",
+   "old_state": "S16",
+   "new_state": "geography:duchy:11650",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0425",
+   "name_ko": "박도윤",
+   "title_ko": "작업반 전령",
+   "position_ko": "작업반 전령 · 태안군 영주 · 세종 하위 영지 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0429",
+   "name_ko": "조예준",
+   "title_ko": "증언 탐사원",
+   "position_ko": "증언 탐사원 · 양양군 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0441",
+   "name_ko": "류동현",
+   "title_ko": "전력장치 순찰대",
+   "position_ko": "전력장치 순찰대 · 동작구 영주 · 아산 하위 영지 영주",
+   "old_state": "S02",
+   "new_state": "geography:duchy:11590",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0443",
+   "name_ko": "고영호",
+   "title_ko": "공방 전령",
+   "position_ko": "공방 전령 · 제천시 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0445",
+   "name_ko": "양서현",
+   "title_ko": "사본 전령",
+   "position_ko": "사본 전령 · 중구 영주",
+   "old_state": "S06",
+   "new_state": "geography:duchy:11140",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0457",
+   "name_ko": "차예원",
+   "title_ko": "복구복무 기록관",
+   "position_ko": "복구복무 기록관 · 관악구 영주",
+   "old_state": "S02",
+   "new_state": "geography:duchy:11620",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0459",
+   "name_ko": "우경민",
+   "title_ko": "부품 물류상",
+   "position_ko": "부품 물류상 · 보은군 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0461",
+   "name_ko": "민시현",
+   "title_ko": "인준 기록관",
+   "position_ko": "인준 기록관 · 서대문구 영주",
+   "old_state": "S06",
+   "new_state": "geography:duchy:11410",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0473",
+   "name_ko": "한현우",
+   "title_ko": "작업반 전령",
+   "position_ko": "작업반 전령 · 장안구 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0477",
+   "name_ko": "권금윤",
+   "title_ko": "증언 탐사원",
+   "position_ko": "증언 탐사원 · 제물포구 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0493",
+   "name_ko": "노주아",
+   "title_ko": "사본 전령",
+   "position_ko": "사본 전령 · 영종구 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0507",
+   "name_ko": "정바준",
+   "title_ko": "부품 물류상",
+   "position_ko": "부품 물류상 · 옥천군 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0509",
+   "name_ko": "조새준",
+   "title_ko": "인준 기록관",
+   "position_ko": "인준 기록관 · 미추홀구 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0525",
+   "name_ko": "양카태",
+   "title_ko": "증언 탐사원",
+   "position_ko": "증언 탐사원 · 연수구 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0541",
+   "name_ko": "민연우",
+   "title_ko": "사본 전령",
+   "position_ko": "사본 전령 · 파주시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0555",
+   "name_ko": "서구서",
+   "title_ko": "부품 물류상",
+   "position_ko": "부품 물류상 · 영동군 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0557",
+   "name_ko": "권숲윤",
+   "title_ko": "인준 기록관",
+   "position_ko": "인준 기록관 · 남동구 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0573",
+   "name_ko": "노사호",
+   "title_ko": "증언 탐사원",
+   "position_ko": "증언 탐사원 · 부평구 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0589",
+   "name_ko": "조서원",
+   "title_ko": "사본 전령",
+   "position_ko": "사본 전령 · 계양구 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0603",
+   "name_ko": "고별호",
+   "title_ko": "부품 물류상",
+   "position_ko": "부품 물류상 · 증평군 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0605",
+   "name_ko": "양산태",
+   "title_ko": "인준 기록관",
+   "position_ko": "인준 기록관 · 서해구 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0621",
+   "name_ko": "민다현",
+   "title_ko": "증언 탐사원",
+   "position_ko": "증언 탐사원 · 검단구 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0637",
+   "name_ko": "권하린",
+   "title_ko": "사본 전령",
+   "position_ko": "사본 전령 · 덕양구 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0651",
+   "name_ko": "남남원",
+   "title_ko": "부품 물류상",
+   "position_ko": "부품 물류상 · 진천군 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0699",
+   "name_ko": "구서결",
+   "title_ko": "부품 물류상",
+   "position_ko": "부품 물류상 · 괴산군 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0747",
+   "name_ko": "윤북율",
+   "title_ko": "부품 물류상",
+   "position_ko": "부품 물류상 · 음성군 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0779",
+   "name_ko": "김아호",
+   "title_ko": "공방 전령",
+   "position_ko": "공방 전령 · 단양군 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0781",
+   "name_ko": "박하윤",
+   "title_ko": "사본 전령",
+   "position_ko": "사본 전령 · 김포시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0795",
+   "name_ko": "안남늘",
+   "title_ko": "부품 물류상",
+   "position_ko": "부품 물류상 · 수정구 영주",
+   "old_state": "S04",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-0998",
+   "name_ko": "이일섭",
+   "title_ko": "제1분공방 이씨 가문 후계",
+   "position_ko": "충청권 공작 · 세종·아산·천안 영주 · 제1분공방 이씨 가문 후계",
+   "old_state": "S02",
+   "new_state": "geography:duchy:11620",
+   "action": "polity columns + bible-decided retitle (§6/§4)"
+  },
+  {
+   "id": "person-1002",
+   "name_ko": "성라현",
+   "title_ko": "작업반 전령",
+   "position_ko": "작업반 전령 · 홍성군 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-1005",
+   "name_ko": "정서온",
+   "title_ko": "회장",
+   "position_ko": "태욱그룹 회장",
+   "old_state": "S03",
+   "new_state": "arc",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-1008",
+   "name_ko": "민웅기",
+   "title_ko": "대전 군주",
+   "position_ko": "대전 군주",
+   "old_state": "polity:daejeon",
+   "new_state": "polity:daejeon",
+   "action": "no polity change (kept marker); no text change"
+  },
+  {
+   "id": "person-1011",
+   "name_ko": "린샤오메이",
+   "title_ko": "대림 이중장부 중개",
+   "position_ko": "대림 이중장부 중개 · 과천시 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-1012",
+   "name_ko": "팜반득",
+   "title_ko": "야간 정비 조장",
+   "position_ko": "차단문 안쪽 야간 정비 조장 · 예산군 영주",
+   "old_state": "S02",
+   "new_state": "free-city",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-1016",
+   "name_ko": "최일석",
+   "title_ko": "동원 명부 서기",
+   "position_ko": "동원 명부 서기 · 양주시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  },
+  {
+   "id": "person-1019",
+   "name_ko": "박성수",
+   "title_ko": "사본 관리인",
+   "position_ko": "사본 관리인 — 여러 권역의 사본을 맞추고 개정 요청을 모아 김연규에게 전한다. · 포천시 영주",
+   "old_state": "S06",
+   "new_state": "government",
+   "action": "polity columns only (retitle pending owner Q18-Q29)"
+  }
+ ],
+ "personTextExceptions": [
+  {
+   "id": "person-0086",
+   "name_ko": "임하준",
+   "changes": {
+    "position": "",
+    "position_ko": "",
+    "rank": "None",
+    "rank_ko": "없음"
+   }
+  },
+  {
+   "id": "person-0088",
+   "name_ko": "오경재",
+   "changes": {
+    "title": "",
+    "title_ko": "",
+    "position": "",
+    "position_ko": "",
+    "rank": "None",
+    "rank_ko": "없음"
+   }
+  },
+  {
+   "id": "person-0089",
+   "name_ko": "한소미",
+   "changes": {
+    "position": "",
+    "position_ko": "",
+    "rank": "None",
+    "rank_ko": "없음"
+   }
+  },
+  {
+   "id": "person-0094",
+   "name_ko": "정가온",
+   "changes": {
+    "position": "",
+    "position_ko": "",
+    "rank": "None",
+    "rank_ko": "없음"
+   }
+  },
+  {
+   "id": "person-0095",
+   "name_ko": "장민재",
+   "changes": {
+    "rank": "None",
+    "rank_ko": "없음"
+   }
+  },
+  {
+   "id": "person-0096",
+   "name_ko": "유하은",
+   "changes": {
+    "rank": "None",
+    "rank_ko": "없음"
+   }
+  },
+  {
+   "id": "person-0104",
+   "name_ko": "변오름",
+   "changes": {
+    "rank": "None",
+    "rank_ko": "없음"
+   }
+  },
+  {
+   "id": "person-0105",
+   "name_ko": "표누리",
+   "changes": {
+    "rank": "None",
+    "rank_ko": "없음"
+   }
+  },
+  {
+   "id": "person-0108",
+   "name_ko": "변석훈",
+   "changes": {
+    "rank": "None",
+    "rank_ko": "없음"
+   }
+  },
+  {
+   "id": "person-0998",
+   "name_ko": "이일섭",
+   "changes": {
+    "position": "Duke of Gwanak · Heir of the I Clan, First Branch Workshop",
+    "position_ko": "관악 공작 · 제1분공방 이씨 가문 후계"
+   }
+  },
+  {
+   "id": "person-1003",
+   "name_ko": "조재표",
+   "changes": {
+    "title": "Leader of the Returning Party",
+    "title_ko": "귀환 일행 지휘자",
+    "position": "Leader of the Returning Party — signs off on travel routes, escort contracts, and withdrawal decisions",
+    "position_ko": "귀환 일행 지휘자 — 이동 경로·호위 계약·철수 판단에 서명"
+   }
+  },
+  {
+   "id": "person-1017",
+   "name_ko": "지연희",
+   "changes": {
+    "title": "Bodyguard of Go Ye-jin",
+    "title_ko": "고예진의 경호원"
+   }
+  },
+  {
+   "id": "person-1018",
+   "name_ko": "고예진",
+   "changes": {
+    "title": "Hierophant of the Arc",
+    "title_ko": "아크의 교주"
+   }
+  }
+ ],
+ "duchyOverrides": [
+  {
+   "id": "person-0070",
+   "duchy": "geography:duchy:11650",
+   "basis": "position_ko/title_ko names 서초구"
+  },
+  {
+   "id": "person-0100",
+   "duchy": "geography:duchy:11200",
+   "basis": "position_ko/title_ko names 성동구"
+  },
+  {
+   "id": "person-0176",
+   "duchy": "geography:duchy:11170",
+   "basis": "position_ko/title_ko names 용산구"
+  },
+  {
+   "id": "person-0235",
+   "duchy": "geography:duchy:11410",
+   "basis": "position_ko/title_ko names 서대문구"
+  },
+  {
+   "id": "person-0236",
+   "duchy": "geography:duchy:11440",
+   "basis": "position_ko/title_ko names 마포구"
+  },
+  {
+   "id": "person-0286",
+   "duchy": "geography:duchy:11350",
+   "basis": "position_ko/title_ko names 노원구"
+  },
+  {
+   "id": "person-0287",
+   "duchy": "geography:duchy:11650",
+   "basis": "position_ko/title_ko names 서초구"
+  },
+  {
+   "id": "person-0364",
+   "duchy": "geography:duchy:11215",
+   "basis": "position_ko/title_ko names 광진구"
+  },
+  {
+   "id": "person-0406",
+   "duchy": "geography:duchy:11680",
+   "basis": "position_ko/title_ko names 강남구"
+  },
+  {
+   "id": "person-0407",
+   "duchy": "geography:duchy:11650",
+   "basis": "position_ko/title_ko names 서초구"
+  },
+  {
+   "id": "person-0441",
+   "duchy": "geography:duchy:11590",
+   "basis": "position_ko/title_ko names 동작구"
+  },
+  {
+   "id": "person-0445",
+   "duchy": "geography:duchy:11140",
+   "basis": "position_ko/title_ko names 중구"
+  },
+  {
+   "id": "person-0457",
+   "duchy": "geography:duchy:11620",
+   "basis": "position_ko/title_ko names 관악구"
+  },
+  {
+   "id": "person-0461",
+   "duchy": "geography:duchy:11410",
+   "basis": "position_ko/title_ko names 서대문구"
+  },
+  {
+   "id": "person-0998",
+   "duchy": "geography:duchy:11620",
+   "basis": "바이블 §6 [승인] 관악 공작"
+  }
+ ],
+ "remainingOldNames": [
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0001",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0029",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0057",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0070",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0086",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0088",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0116",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0117",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0129",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0170",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0192",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0195",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0220",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0246",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0272",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0297",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0323",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0349",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0350",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0351",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0354",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0358",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0360",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0363",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0399",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0416",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0437",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0469",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0485",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0517",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0533",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0565",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0581",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0613",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0629",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0661",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0677",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0709",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0725",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0757",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0773",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0805",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0821",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0853",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0869",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0901",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0917",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0949",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0965",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-0997",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-1005",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "050-wiki-people.sql",
+   "table": "wiki_person",
+   "id": "person-1006",
+   "column": "title/position prose",
+   "classification": "person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 관악산.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Gwanaksan",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 관악산.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-관악산",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 낙성대.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Nakseongdae",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 낙성대.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-낙성대",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 남성.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Namseong",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 남성.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-남성",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 노들.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Nodeul",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 노들.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-노들",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 노량진.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Noryangjin",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 노량진.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-노량진",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 녹사평.control",
+   "column": "deltaId",
+   "value": "S08-NAMSAN-CAPITAL-2126",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 녹사평.control_ko",
+   "column": "deltaId",
+   "value": "S08-NAMSAN-CAPITAL-2126",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 당곡.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Danggok",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 당곡.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-당곡",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 동작.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Dongjak",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 동작.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-동작",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 보라매공원.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Boramaegongwon",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 보라매공원.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-보라매공원",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 보라매병원.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Boramaebyeongwon",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 보라매병원.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-보라매병원",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 봉천.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Bongcheon",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 봉천.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-봉천",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 사당.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Sadang",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 사당.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-사당",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 상도.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Sangdo",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 상도.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-상도",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 서울대벤처타운.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Seoul-National-University-Venture-Town",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 서울대벤처타운.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-서울대벤처타운",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 서울대입구.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Seouldaeipgu",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 서울대입구.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-서울대입구",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 서울지방병무청.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Seouljibangbyeongmucheong",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 서울지방병무청.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-서울지방병무청",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 서원.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Seowon",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 서원.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-서원",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 숭실대입구.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Sungsildaeipgu",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 숭실대입구.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-숭실대입구",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 신대방.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Sindaebang",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 신대방.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-신대방",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 신대방삼거리.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Sindaebangsamgeori",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 신대방삼거리.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-신대방삼거리",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 신림.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Sillim",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 신림.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-신림",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 장승배기.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Jangseungbaegi",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 장승배기.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-장승배기",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 총신대입구(이수).control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Chongsindae-ipgu (Isu)",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 총신대입구(이수).control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-총신대입구(이수)",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 흑석.control",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-Heukseok",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_station",
+   "id": "map_station 흑석.control_ko",
+   "column": "deltaId",
+   "value": "S08-TRANSFER-2126-흑석",
+   "classification": "historical delta id kept (과거 관제 변경 이벤트의 식별자)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_region",
+   "id": "region:1111068000",
+   "column": "summary",
+   "classification": "place-kept (실재 교회 건물 지명 — 바이블 §4 대체 항목이 “일반 역 시설명(사당 여부는 소유자 결정)”으로 미둠)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_region",
+   "id": "region:1111068000",
+   "column": "summary_ko",
+   "classification": "place-kept (실재 교회 건물 지명 — 바이블 §4 대체 항목이 “일반 역 시설명(사당 여부는 소유자 결정)”으로 미둠)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_region",
+   "id": "region:1114066500",
+   "column": "summary",
+   "classification": "place-kept (실재 교회 건물 지명 — 바이블 §4 대체 항목이 “일반 역 시설명(사당 여부는 소유자 결정)”으로 미둠)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_region",
+   "id": "region:1114066500",
+   "column": "summary_ko",
+   "classification": "place-kept (실재 교회 건물 지명 — 바이블 §4 대체 항목이 “일반 역 시설명(사당 여부는 소유자 결정)”으로 미둠)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_region",
+   "id": "region:1130562500",
+   "column": "summary",
+   "classification": "place-kept (실재 교회 건물 지명 — 바이블 §4 대체 항목이 “일반 역 시설명(사당 여부는 소유자 결정)”으로 미둠)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_landmark",
+   "id": "jogyesa",
+   "column": "detail/detail_ko",
+   "classification": "prose-kept (랜드마크 설명 산문 — 소유자 판단 대기)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_landmark",
+   "id": "n-seoul-tower",
+   "column": "detail/detail_ko",
+   "classification": "prose-kept (랜드마크 설명 산문 — 소유자 판단 대기)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_landmark",
+   "id": "war-memorial",
+   "column": "detail/detail_ko",
+   "classification": "prose-kept (랜드마크 설명 산문 — 소유자 판단 대기)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_landmark",
+   "id": "bldg63",
+   "column": "detail/detail_ko",
+   "classification": "prose-kept (랜드마크 설명 산문 — 소유자 판단 대기)"
+  },
+  {
+   "file": "120-map-core.sql",
+   "table": "map_landmark",
+   "id": "coex",
+   "column": "detail/detail_ko",
+   "classification": "prose-kept (랜드마크 설명 산문 — 소유자 판단 대기)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:yangpyeong2",
+   "column": "titleId",
+   "value": "title:barony-holding-yangpyeong2-S01",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:yangcheon",
+   "column": "titleId",
+   "value": "title:duchy-gu-11470-S01",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11110-S06",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11110-S06",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11110-S06",
+   "column": "titleId",
+   "value": "title:duchy-gu-11110-S06",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11140-S06",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11140-S06",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11140-S06",
+   "column": "titleId",
+   "value": "title:duchy-gu-11140-S06",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11170-S07",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11170-S07",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11170-S07",
+   "column": "titleId",
+   "value": "title:duchy-gu-11170-S07",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11200-S04",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11200-S04",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11200-S04",
+   "column": "titleId",
+   "value": "title:duchy-gu-11200-S04",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11215-S14",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11215-S14",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11215-S14",
+   "column": "titleId",
+   "value": "title:duchy-gu-11215-S14",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11230-S13",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11230-S13",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11230-S13",
+   "column": "titleId",
+   "value": "title:duchy-gu-11230-S13",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11260-S12",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11260-S12",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11260-S12",
+   "column": "titleId",
+   "value": "title:duchy-gu-11260-S12",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11290-S10",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11290-S10",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11290-S10",
+   "column": "titleId",
+   "value": "title:duchy-gu-11290-S10",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11305-S10",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11305-S10",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11305-S10",
+   "column": "titleId",
+   "value": "title:duchy-gu-11305-S10",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11320-S11",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11320-S11",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11320-S11",
+   "column": "titleId",
+   "value": "title:duchy-gu-11320-S11",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11350-S11",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11350-S11",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11350-S11",
+   "column": "titleId",
+   "value": "title:duchy-gu-11350-S11",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11380-S10",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11380-S10",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11380-S10",
+   "column": "titleId",
+   "value": "title:duchy-gu-11380-S10",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11410-S06",
+   "column": "name",
+   "classification": "이름에서 국가 표기 토큰 제거(지명 유지)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11410-S06",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11410-S06",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11410-S06",
+   "column": "titleId",
+   "value": "title:duchy-gu-11410-S06",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11410-S09",
+   "column": "name",
+   "classification": "이름에서 국가 표기 토큰 제거(지명 유지)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11410-S09",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11410-S09",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11410-S09",
+   "column": "titleId",
+   "value": "title:duchy-gu-11410-S09",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11410-S10",
+   "column": "name",
+   "classification": "이름에서 국가 표기 토큰 제거(지명 유지)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11410-S10",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11410-S10",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11410-S10",
+   "column": "titleId",
+   "value": "title:duchy-gu-11410-S10",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11440-S09",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11440-S09",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11440-S09",
+   "column": "titleId",
+   "value": "title:duchy-gu-11440-S09",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11500-S03",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11500-S03",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11500-S03",
+   "column": "titleId",
+   "value": "title:duchy-gu-11500-S03",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11530-S02",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11530-S02",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11530-S02",
+   "column": "titleId",
+   "value": "title:duchy-gu-11530-S02",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11545-S02",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11545-S02",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11545-S02",
+   "column": "titleId",
+   "value": "title:duchy-gu-11545-S02",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11560-S01",
+   "column": "name",
+   "classification": "이름에서 국가 표기 토큰 제거(지명 유지)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11560-S01",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11560-S01",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11560-S01",
+   "column": "titleId",
+   "value": "title:duchy-gu-11560-S01",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11560-S09",
+   "column": "name",
+   "classification": "이름에서 국가 표기 토큰 제거(지명 유지)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11560-S09",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11560-S09",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11560-S09",
+   "column": "titleId",
+   "value": "title:duchy-gu-11560-S09",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11590-S02",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11590-S02",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11590-S02",
+   "column": "titleId",
+   "value": "title:duchy-gu-11590-S02",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11620-S02",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11620-S02",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11620-S02",
+   "column": "titleId",
+   "value": "title:duchy-gu-11620-S02",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11650-S03",
+   "column": "name",
+   "classification": "이름에서 국가 표기 토큰 제거(지명 유지)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11650-S03",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11650-S03",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11650-S03",
+   "column": "titleId",
+   "value": "title:duchy-gu-11650-S03",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11650-S11",
+   "column": "name",
+   "classification": "이름에서 국가 표기 토큰 제거(지명 유지)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11650-S11",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11650-S11",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11650-S11",
+   "column": "titleId",
+   "value": "title:duchy-gu-11650-S11",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11650-S16",
+   "column": "name",
+   "classification": "이름에서 국가 표기 토큰 제거(지명 유지)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11650-S16",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11650-S16",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11650-S16",
+   "column": "titleId",
+   "value": "title:duchy-gu-11650-S16",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11680-S04",
+   "column": "name",
+   "classification": "이름에서 국가 표기 토큰 제거(지명 유지)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11680-S04",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11680-S04",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11680-S04",
+   "column": "titleId",
+   "value": "title:duchy-gu-11680-S04",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11680-S16",
+   "column": "name",
+   "classification": "이름에서 국가 표기 토큰 제거(지명 유지)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11680-S16",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11680-S16",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11680-S16",
+   "column": "titleId",
+   "value": "title:duchy-gu-11680-S16",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11710-S15",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11710-S15",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11710-S15",
+   "column": "titleId",
+   "value": "title:duchy-gu-11710-S15",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11740-S05",
+   "column": "id",
+   "value": "holding:opening-duchy-gu-11740-S05",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  },
+  {
+   "file": "123-map-holdings.sql",
+   "table": "map_holding",
+   "id": "holding:opening-duchy-gu-11740-S05",
+   "column": "titleId",
+   "value": "title:duchy-gu-11740-S05",
+   "classification": "stable identifier kept (SQL 기본키 논리 참조)"
+  }
+ ],
+ "verification": {
+  "rowCounts": {
+   "wiki_state": 3,
+   "map_state": 3,
+   "wiki_update": 6,
+   "wiki_person": 1022,
+   "map_region": 427,
+   "map_station": 312,
+   "map_edge": 381,
+   "map_landmark": 19,
+   "map_holding": 50,
+   "map_title": 80,
+   "family_tree": 148,
+   "retainer_graph": 1,
+   "faction": 4,
+   "site_meta": 6,
+   "wiki_category": 23,
+   "clan": 177,
+   "nonkorean_family": 62
+  },
+  "residualChecks": {
+   "wiki_person WHERE state_id GLOB 'S0[1-9]' OR state_id GLOB 'S1[0-6]'": 0,
+   "wiki_person WHERE state_id = 'S00'": 4,
+   "wiki_person WHERE state_id = 'polity:daejeon'": 4,
+   "wiki_person WHERE state_name = 'Myeongbu Church'": 0,
+   "map_holding WHERE state_id GLOB 'S*'": 0,
+   "map_landmark WHERE holder_id GLOB 'S*'": 0,
+   "map_state": 3,
+   "wiki_state": 3
+  }
+ }
+}
