@@ -14,7 +14,7 @@
   "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
  },
  "counts": {
-  "rules": 1834,
+  "rules": 2006,
   "kept": 1180,
   "keepByReason": {
    "소속 표기": 461,
@@ -16548,6 +16548,1569 @@
    "old": "정부 사장",
    "new": "신내운수 사장",
    "reason": "fix4 person-0297 050 직함 복원 — 신내운수 사장은 폐지된 회사 직위(기저 91e800b3f 정합, aa6a2e2f7 090 복원과 동일 표기)로 현직 정부 직책이 아님"
+  },
+  {
+   "file": "090",
+   "id": "person-0323",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Under Permanent Winter across Seoul, the Government of the Republic of Korea north of the Han River at Cheong Wa Dae, the Standards League in the west south of the Han River, and the Religious Alliance in the Gangnam area south of the Han River each keep their own center, and no single living sphere is monopolized by any of them.",
+   "new": "Under Permanent Winter across Seoul, the Government north of the Han River at Cheong Wa Dae, the Free Cities in the west south of the Han River, and Arc in the Gangnam area south of the Han River each keep their own center, and no single living sphere is monopolized by any of them.",
+   "reason": "fix5 B2a — person-0323 세력 지리 문장을 현행 3세력(정부·자유도시·아크) 지리로 교체(폐지 정치체명 제거)"
+  },
+  {
+   "file": "090",
+   "id": "person-0323",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "서울 전역의 영구 겨울 아래 청와대와 한강 북부의 대한민국정부, 한강 이남 서부의 규격맹, 한강 이남 강남지역의 Arc은 각자의 중심을 두며 어느 한 생활권도 독점하지 않는다.",
+   "new": "서울 전역의 영구 겨울 아래 청와대와 한강 북부의 정부, 한강 이남 서부의 자유도시, 한강 이남 강남지역의 Arc은 각자의 중심을 두며 어느 한 생활권도 독점하지 않는다.",
+   "reason": "fix5 B2a — person-0323 세력 지리 문장 한국어 대응(대한민국정부→정부, 규격맹→자유도시)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.household.personFaith",
+   "old": "christian",
+   "new": "unknown",
+   "reason": "fix5 B2b — 삭제된 기독교 신앙 표기를 형제 행 중립값 unknown으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.household.houseFaith",
+   "old": "christian",
+   "new": "unknown",
+   "reason": "fix5 B2b — 동일"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.household.personFaith",
+   "old": "christian",
+   "new": "unknown",
+   "reason": "fix5 B2b — 동일(ko json)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.household.houseFaith",
+   "old": "christian",
+   "new": "unknown",
+   "reason": "fix5 B2b — 동일(ko json)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.confirmedHoldings[1].name.ko",
+   "old": "Roster Church Duchy Directly Managed Land, Gangnam-gu",
+   "new": "Gangnam-gu Arc Duchy Directly Managed Land",
+   "reason": "fix5 B2b — 교회 공작령 직영지 영문 명칭을 ko 표기(강남구 Arc 공작령 직영지)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.openingTitles[0].name",
+   "old": "Gangnam-gu Myeongbu Church Duchy",
+   "new": "Gangnam-gu Arc Duchy",
+   "reason": "fix5 B2b — 교회 공작령 작위명을 ko 표기(강남구 Arc 공작령)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.openingTitles[1].basis",
+   "old": "owner:call_3UEeOQxXrDzuYt8E1BFfhRqe:religious_title_root approved (political type remains union)",
+   "new": "2026-10-22 territorial title allocation (owner:seoul-faction-consolidation-20261022). King of the Arc. Basis for holding the Arc kingdom s04 and its duchies.",
+   "reason": "fix5 B2b — 원시 owner:call_ 증빙 문자열을 형제 왕국 작위 basis의 중립 서식으로 대체(호출 id 노출 제거)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.openingTitles[1].basis",
+   "old": "owner:call_3UEeOQxXrDzuYt8E1BFfhRqe:religious_title_root 승인(정치 종류는 연합 유지)",
+   "new": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). Arc 왕. Arc 왕국 s04와 그 공작령 보유 근거.",
+   "reason": "fix5 B2b — 동일(한국어)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2b — 명부교회 소속 영문 잔여를 ko 소속 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "old": "Moderator",
+   "new": "Key",
+   "reason": "fix5 B2b — 교회 직책 품계를 050 행 기준 중립값(Key)으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.fields.Title",
+   "old": "Moderator of Myeongbu Church",
+   "new": "General Assembly Duty Roster · Custody of Original Will",
+   "reason": "fix5 B2b — 교회 직함을 050 직업 텍스트(총회 당직·유언 원본 관리)의 영문으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "old": "당회장",
+   "new": "주요",
+   "reason": "fix5 B2b — 품계를 050 stage 기준값(주요)으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "old": "Arc 당회장",
+   "new": "총회 당직·유언 원본 관리",
+   "reason": "fix5 B2b — 직함을 050 occupation_ko 텍스트로"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "and became Moderator.",
+   "new": "and took over the duty roster and the custody of the original wills.",
+   "reason": "fix5 B2b — 취임 서술을 중립 직무로"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Rank: Moderator. Title: Moderator of Myeongbu Church.",
+   "new": "Rank: Key. Title: General Assembly Duty Roster · Custody of Original Will.",
+   "reason": "fix5 B2b — 관직 행 중립화"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "- Affiliation: Myeongbu Church",
+   "new": "- Affiliation: Arc",
+   "reason": "fix5 B2b — 소속 표기 Arc 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "- Rank: Moderator",
+   "new": "- Rank: Key",
+   "reason": "fix5 B2b — 품계 표기"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "- Title: Moderator of Myeongbu Church",
+   "new": "- Title: General Assembly Duty Roster · Custody of Original Will",
+   "reason": "fix5 B2b — 직함 표기"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "work as Moderator of Myeongbu Church is connected to Samseong 1-dong",
+   "new": "work in the Arc duchy is connected to Samseong 1-dong",
+   "reason": "fix5 B2b — 삼성1동 연결 서술을 공작령 기준으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.biography",
+   "old": "and became Moderator.",
+   "new": "and took over the duty roster and the custody of the original wills.",
+   "reason": "fix5 B2b — 취임 서술을 중립 직무로"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Rank: Moderator. Title: Moderator of Myeongbu Church.",
+   "new": "Rank: Key. Title: General Assembly Duty Roster · Custody of Original Will.",
+   "reason": "fix5 B2b — 관직 행 중립화"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Myeongbu Church",
+   "new": "- Affiliation: Arc",
+   "reason": "fix5 B2b — 소속 표기 Arc 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Rank: Moderator",
+   "new": "- Rank: Key",
+   "reason": "fix5 B2b — 품계 표기"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Title: Moderator of Myeongbu Church",
+   "new": "- Title: General Assembly Duty Roster · Custody of Original Will",
+   "reason": "fix5 B2b — 직함 표기"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.biography",
+   "old": "work as Moderator of Myeongbu Church is connected to Samseong 1-dong",
+   "new": "work in the Arc duchy is connected to Samseong 1-dong",
+   "reason": "fix5 B2b — 삼성1동 연결 서술을 공작령 기준으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "총회 인준을 받아 당회장이 되었다",
+   "new": "총회 인준을 받아 총회 당직과 유언 원본 관리를 맡았다",
+   "reason": "fix5 B2b — 취임 서술 중립화(ko)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "품계 당회장. 직함은 Arc 당회장.",
+   "new": "품계 주요. 직함은 총회 당직·유언 원본 관리.",
+   "reason": "fix5 B2b — 관직 행 중립화(ko)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "- 품계: 당회장",
+   "new": "- 품계: 주요",
+   "reason": "fix5 B2b — 품계 표기(ko)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "- 직함: Arc 당회장",
+   "new": "- 직함: 총회 당직·유언 원본 관리",
+   "reason": "fix5 B2b — 직함 표기(ko)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "Arc 당회장 업무는 삼성1동과 연결된다",
+   "new": "Arc 공작령 업무는 삼성1동과 연결된다",
+   "reason": "fix5 B2b — 삼성1동 연결 서술(ko)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "총회 인준을 받아 당회장이 되었다",
+   "new": "총회 인준을 받아 총회 당직과 유언 원본 관리를 맡았다",
+   "reason": "fix5 B2b — 취임 서술 중립화(ko)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "품계 당회장. 직함은 Arc 당회장.",
+   "new": "품계 주요. 직함은 총회 당직·유언 원본 관리.",
+   "reason": "fix5 B2b — 관직 행 중립화(ko)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 품계: 당회장",
+   "new": "- 품계: 주요",
+   "reason": "fix5 B2b — 품계 표기(ko)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 직함: Arc 당회장",
+   "new": "- 직함: 총회 당직·유언 원본 관리",
+   "reason": "fix5 B2b — 직함 표기(ko)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "Arc 당회장 업무는 삼성1동과 연결된다",
+   "new": "Arc 공작령 업무는 삼성1동과 연결된다",
+   "reason": "fix5 B2b — 삼성1동 연결 서술(ko)"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "Took office as Session Head in 2126 after ratification by the elders",
+   "new": "Took office in 2126 after ratification by the General Assembly",
+   "reason": "fix5 B2b — 관계 근거에서 당회(Session)·장로(elders) 어휘 제거, 총회 인준으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0088",
+   "column": "json_ko",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "2126년 장로 인준을 거쳐 당회장에 취임",
+   "new": "2126년 총회 인준을 거쳐 취임",
+   "reason": "fix5 B2b — 동일(ko): 장로·당회장 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0086",
+   "column": "json",
+   "path": "$.household.personFaith",
+   "old": "christian",
+   "new": "unknown",
+   "reason": "fix5 B2c — 삭제된 기독교 신앙 표기를 중립값 unknown으로(형제 행 508인과 동일)"
+  },
+  {
+   "file": "090",
+   "id": "person-0086",
+   "column": "json_ko",
+   "path": "$.household.personFaith",
+   "old": "christian",
+   "new": "unknown",
+   "reason": "fix5 B2c — 동일(ko json)"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.household.personFaith",
+   "old": "christian",
+   "new": "unknown",
+   "reason": "fix5 B2c — 삭제된 기독교 신앙 표기를 중립값 unknown으로(형제 행 508인과 동일)"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json_ko",
+   "path": "$.household.personFaith",
+   "old": "christian",
+   "new": "unknown",
+   "reason": "fix5 B2c — 동일(ko json)"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.fields.Work Location",
+   "old": "Preserves the archbishop's election, the absence of papal ratification, and the jurisdictional limits.",
+   "new": "Preserves the lead believer's election, the absence of the Hierophant's ratification, and the jurisdictional limits.",
+   "reason": "fix5 B2c — 영문 잔여 대주교·교황 어휘를 ko 확정 표기(수석 신도 선출·교주 인준 부재)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.characterProfile.narrative",
+   "old": "the legitimacy of election without papal ratification remains disputed",
+   "new": "the legitimacy of election without the Hierophant remains disputed",
+   "reason": "fix5 B2c — 서술 잔여 papal 어휘를 ko 표기(교주 없는 선출)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0089",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0089",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0090",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0090",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0091",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0091",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0092",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0093",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0094",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0094",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0095",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0095",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0096",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0096",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0097",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0097",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0098",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0098",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0099",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0100",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0100",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0101",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0102",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0103",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0104",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0104",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0105",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0105",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0106",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0106",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0107",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0107",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Registry Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0108",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0108",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Registry Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0109",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0110",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0111",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0112",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0112",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0113",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0113",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0114",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0115",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0115",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0427",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0443",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0443",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Registry Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0443",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Registry Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0443",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Registry Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Registry Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0459",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0459",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0459",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0459",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0475",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0491",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0507",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0507",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0507",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0507",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Roster Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0523",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0539",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0555",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0555",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0555",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0555",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0571",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0587",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0603",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0603",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0603",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0603",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Roster Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0619",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0635",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0651",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0651",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0651",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0651",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Roster Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0667",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0683",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0699",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0699",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Registry Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0699",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Registry Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0699",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Registry Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Registry Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0715",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0731",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0731",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0731",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0731",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Roster Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0747",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0747",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0747",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0747",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Roster Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0763",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0763",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0763",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0763",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0779",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0779",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0779",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Roster Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0779",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Roster Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Roster Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0795",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0795",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0795",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0795",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0811",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0827",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0843",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0859",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0859",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0859",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0859",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0875",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0891",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0907",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0923",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0939",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0955",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0955",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0955",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0955",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0971",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Registry Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Registry Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-0971",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0971",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 초안 절 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0971",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "expect": 3,
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
+  },
+  {
+   "file": "090",
+   "id": "person-0987",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Myeongbu Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 stateName 잔여 명부교회를 ko/050 표기(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-1015",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 영문 소속 잔여 Register Church을 ko 소속(Arc)에 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-1015",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Register Church",
+   "new": "Arc",
+   "reason": "fix5 B2c — 연혁 잔여 Register Church을 Arc로(ko 병행 확정)"
   }
  ],
  "kept": [
