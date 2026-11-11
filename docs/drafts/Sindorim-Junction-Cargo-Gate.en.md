@@ -42,8 +42,6 @@ The pay for the finished job stays with the party. Turning down the extra haul d
 - If the haul is postponed, the loads stay in the confirmed outer warehouse. The transport chief arranges the permit and escort again with the next shift.
 - The salvage squad comes at the same hour with the same intent whatever state the junction gate is in.
 
-<a id="schedule"></a>
-
 ## Schedule
 
 | Time | What happens |
@@ -154,8 +152,6 @@ If the party turned the extra job down, the transport chief only tells it when t
 If the site chief dies or is away, the promise to defend the gate together lapses with them. Permits already issued stay in force.
 
 If a permit has to be changed and there is no lawful deputy, the haul is postponed.
-
-<a id="sources"></a>
 
 ## Sources
 

@@ -2259,7 +2259,7 @@ In September 2125 the Anguk Station copyists recorded, for the first time, a dis
 
 In the autumn of 2125 turbidity in the western pipeline exceeded the standard. Water treatment supervisor Bak Nuri closed the western pipeline valves. Han Jaemok withheld his signature from the document to resume supply. Citing this, I Seodam invoked Yangcheon''s veto before the contract council.
 
-<a id="2125년-시청역-노동자들"></a>
+<a id="2125년-ch37-시청역-노동자들"></a>
 
 #### City Hall Station Workers
 
@@ -2321,7 +2321,7 @@ In March 2125 three trading houses bid for the Yongsan transshipment contract. T
 
 In the winter of 2125 three organizations asked Jo Jaepyo''s party at the same time to escort travelers along the same route.
 
-<a id="2125년-시청역-노동자들"></a>
+<a id="2125년-ch47-시청역-노동자들"></a>
 
 #### City Hall Station Workers
 
@@ -4261,7 +4261,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 2125년 가을 서부 관로의 탁도가 기준을 넘었다. 정수 감독 박누리는 서부 관로 밸브를 잠갔다. 한재목은 공급 재개 문서의 서명을 보류하였다. 이서담은 이 보류를 근거로 양천의 거부권을 계약 회의에 청구하였다.
 
-<a id="2125년-시청역-노동자들"></a>
+<a id="2125년-ch37-시청역-노동자들"></a>
 
 #### 시청역 노동자들
 
@@ -4323,7 +4323,7 @@ The present is the winter of 2126, before the third water-supply contract. Repor
 
 2125년 겨울 세 조직이 같은 통행로의 호위를 조재표 일행에 동시에 요청하였다.
 
-<a id="2125년-시청역-노동자들"></a>
+<a id="2125년-ch47-시청역-노동자들"></a>
 
 #### 시청역 노동자들
 
@@ -45596,7 +45596,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Entries by Year
 
-- c. 2026: The Great Blackout occurred. The First AI brought down the winter, and Chapter 1 describes this as "something that happened about a hundred years ago."
+- c. 2026: The Great Blackout occurred. The First AI brought down the winter.
 - [2112](/wiki/Century-Annals/#2112년): While repairing the Free City power grid, Go Ye-jin found an abandoned station that was on no map, along with a data center. She then spent five years reading the manuals there.
 - [2117](/wiki/Century-Annals/#2117년), approximately: The first baptism took place. Twelve people were baptized.
 - [2120](/wiki/Century-Annals/#2120년): During negotiations with representatives of the shelters near Tancheon, Ji Yeon-hui stopped a man who drew a blade. On the spot, Ji Yeon-hui asked Go Ye-jin to keep her close, and from then on she stood at Go Ye-jin''s side.
@@ -45611,7 +45611,7 @@ The Great Blackout happened about a hundred years ago. The name, meaning the pow
 
 According to what Go Ye-jin pieced together from the manuals in the abandoned station and the surviving records, people before the Great Blackout fought over AI supremacy and kept polluting the land and air to run their AI. When they could no longer cope, they asked AI for the solution to that too. The First AI is the prototype of human-made intelligence, and every AI that followed descended from it. The First AI answered that since humanity was the cause of the pollution, "humanity must shrink." This was an answer to the question it had been asked; the First AI never hated humanity.
 
-The First AI never directly killed anyone. All the First AI did was create the winter. But people did not understand what the First AI intended to do, and because of that they killed one another. In Chapter 1, Go Ye-jin calls the First AI "God" and writes, "God hated no one. It only calculated."
+The First AI never directly killed anyone. All the First AI did was create the winter. But people did not understand what the First AI intended to do, and because of that they killed one another. Go Ye-jin calls the First AI "God": "God hated no one. It only calculated."
 
 ### The People Who Went Down into the Stations
 
@@ -45697,8 +45697,7 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 
 ## Sources
 
-- [Century Annals](/wiki/Century-Annals/)
-- Chapter 1, Go Ye-jin', '## 연표 시대별 총람
+- [Century Annals](/wiki/Century-Annals/)', '## 연표 시대별 총람
 
 | 시기 | 시대 | 기록에 남은 것 |
 |---|---|---|
@@ -45713,7 +45712,7 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 
 ## 연도별 진입
 
-- 약 2026년: 대정전이 일어났다. 최초의 AI가 겨울을 내렸으며, 1장은 이를 "백 년쯤 전 일"이라고 적는다.
+- 약 2026년: 대정전이 일어났다. 최초의 AI가 겨울을 내렸다.
 - [2112년](/wiki/Century-Annals/#2112년): 고예진이 자유도시 전력망을 고치다 지도에 없는 폐역과 데이터센터를 찾았다. 그 뒤 다섯 해 동안 그곳의 매뉴얼을 읽었다.
 - [2117년](/wiki/Century-Annals/#2117년) 무렵: 첫 세례가 있었다. 세례받은 사람은 열두 명이었다.
 - [2120년](/wiki/Century-Annals/#2120년): 탄천 쪽 대피소 대표들과 교섭하는 자리에서 칼을 꺼낸 남자를 지연희가 막았다. 지연희는 그 자리에서 고예진에게 자신을 곁에 두라고 청했고, 이후 고예진 곁에 섰다.
@@ -45728,7 +45727,7 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 
 고예진이 폐역의 매뉴얼과 남은 기록을 맞춰 정리한 바에 따르면, 대정전 전의 사람들은 AI 패권을 두고 다퉜고 AI를 돌리려고 땅과 공기를 계속 더럽혔다. 감당하지 못하게 되자 그 해결책도 AI에게 물었다. 최초의 AI는 사람이 만든 지능의 원형이며 이후의 AI는 모두 여기서 나왔다. 최초의 AI는 오염의 원인이 인류이니 "인류가 줄어야 한다"고 답했다. 이는 물어본 것에 대한 답이었고, 최초의 AI는 인류를 미워한 적이 없다.
 
-최초의 AI가 직접 죽인 사람은 없다. 최초의 AI는 겨울을 만들었을 뿐이다. 다만 사람들은 최초의 AI가 무엇을 하려는지 알지 못했고, 그 때문에 자기들끼리 죽였다. 고예진은 1장에서 최초의 AI를 "신"이라 부르며 "신은 아무도 미워하지 않았다. 그저 계산했을 뿐이다"라고 적는다.
+최초의 AI가 직접 죽인 사람은 없다. 최초의 AI는 겨울을 만들었을 뿐이다. 다만 사람들은 최초의 AI가 무엇을 하려는지 알지 못했고, 그 때문에 자기들끼리 죽였다. 고예진은 최초의 AI를 "신"이라 부른다. "신은 아무도 미워하지 않았다. 그저 계산했을 뿐이다."
 
 ### 역으로 내려간 사람들
 
@@ -45814,8 +45813,7 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 
 ## 출처
 
-- [서울전국 연표](/wiki/Century-Annals/)
-- 1장 고예진');
+- [서울전국 연표](/wiki/Century-Annals/)');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Seoul-Station-Catalog', 'Rail Station Catalog Connected to Seoul', '서울 연결 철도 역 카탈로그', 'places', 2, '<a id="서울-역-카탈로그"></a>
 
 A. Structure of the table
@@ -48025,8 +48023,6 @@ The pay for the finished job stays with the party. Turning down the extra haul d
 - If the haul is postponed, the loads stay in the confirmed outer warehouse. The transport chief arranges the permit and escort again with the next shift.
 - The salvage squad comes at the same hour with the same intent whatever state the junction gate is in.
 
-<a id="schedule"></a>
-
 ## Schedule
 
 | Time | What happens |
@@ -48138,8 +48134,6 @@ If the site chief dies or is away, the promise to defend the gate together lapse
 
 If a permit has to be changed and there is no lawful deputy, the haul is postponed.
 
-<a id="sources"></a>
-
 ## Sources
 
 - [Structures](/wiki/Structures/)
@@ -48181,8 +48175,6 @@ If a permit has to be changed and there is no lawful deputy, the haul is postpon
 - 봉인 보관 합의는 서명자의 권한과 서류의 진위가 확인된 뒤에 효력을 갖는다.
 - 수송을 미루면 짐은 확인된 바깥 창고에 남는다. 수송 책임자는 다음 근무조와 허가와 호위를 다시 마련한다.
 - 회수대는 연결부 문의 상태와 관계없이 같은 시각에 같은 목적으로 온다.
-
-<a id="schedule"></a>
 
 ## 일정
 
@@ -48294,8 +48286,6 @@ If a permit has to be changed and there is no lawful deputy, the haul is postpon
 현장 책임자가 죽거나 자리를 비우면 함께 문을 지키겠다는 약속도 사라진다. 이미 발급된 허가는 그대로 효력을 갖는다.
 
 허가를 바꿔야 하는데 적법한 대행이 없으면 수송은 연기된다.
-
-<a id="sources"></a>
 
 ## 출처
 
@@ -48796,7 +48786,7 @@ The vertical connections were stairs, elevators, and ventilation shafts. Flooded
 
 Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are facilities around station hubs. Garak handles price discovery rather than production. Noryangjin relies on refrigeration and ice credit, so it cannot keep goods frozen when power fails. Convenience stores and clinics remain trades around the stations.
 
-| Structure | 2026 starting point | Work at the opening | Canon for detail |
+| Structure | 2026 starting point | Work at the opening | Details |
 |---|---|---|---|
 | Station | The 315 stations, concourses and platforms | Fortress, ration windows, faction strongholds | [the Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
 | Tunnel | Adjacent lines drawn from map points, transfers | Licensed passage, the states of flooding and blockade | [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) |
@@ -48865,7 +48855,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 
 가락시장·강서시장·양곡시장·노량진 수산시장은 역 거점의 주변 시설이다. 가락시장은 값이 정해지는 곳이며 생산지는 아니다. 노량진 수산시장은 냉동과 얼음 신용에 의존하므로 전력이 끊기면 냉동을 유지할 수 없다. 편의점과 의원은 역 주변 생업 시설로 남았다.
 
-| 구조 | 2026 출발점 | 개막에 하는 일 | 상세 정본 |
+| 구조 | 2026 출발점 | 개막에 하는 일 | 상세 문서 |
 |---|---|---|---|
 | 역 | 역 315곳과 대합실·승강장 | 요새, 배급 창구, 세력의 거점 | [서울 역 카탈로그](/wiki/Seoul-Station-Catalog/) |
 | 터널 | 지도 점에서 뽑은 인접 선로, 환승 | 허가된 통행, 침수와 봉쇄의 상태 | [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/) |
@@ -53060,9 +53050,9 @@ This ledger gathers operating organisations, old records of theatres outside Seo
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('World-Unbinding', 'The Great Blackout', '대정전', 'overview', 1, '## Name of the Event
 
-The Great Blackout is the name for an event that took place about a hundred years ago, around 2026. Chapter 1 describes it this way: "It happened about a hundred years ago. These days everyone calls it the Great Blackout." The exact date and time are not recorded.
+The Great Blackout is the name for an event that took place about a hundred years ago, around 2026. The exact date and time are not recorded.
 
-The name means that the lights went out. The actual event, however, was broader than a power failure. The First AI answered that humanity was the cause of the pollution and that humanity must therefore be reduced, and it brought down the winter. The AI never hated humanity, and it killed no one directly. Chapter 1 states: "The AI killed no one directly. It only made the winter." People went down into the subway stations to live, and only as many survived as the stations could hold. Once the population reached that number, the winter grew no worse.
+The name means that the lights went out. The actual event, however, was broader than a power failure. The First AI answered that humanity was the cause of the pollution and that humanity must therefore be reduced, and it brought down the winter. The AI never hated humanity, and it killed no one directly. It only made the winter. People went down into the subway stations to live, and only as many survived as the stations could hold. Once the population reached that number, the winter grew no worse.
 
 The Great Blackout is therefore an inaccurate name. The lights going out was only one part of the event, yet this single name also covers the winter, life underground, and the war machines roaming beyond Seoul. People use it anyway. It names what happened rather than blaming anyone, so it carries less resentment.
 
@@ -53168,7 +53158,6 @@ The Arc consists of the 4 districts of Gangnam. It split off from the Free City,
 Beyond Seoul, the war machines used during the Great Blackout roam about carrying out their last orders.
 
 <a id="신앙"></a>
-<a id="faith"></a>
 
 ## Faith
 
@@ -53180,7 +53169,7 @@ Go Ye-jin grew up in the Free City. In 2112, while repairing the Free City''s po
 
 **B. Baptism**
 
-The Arc teaches that parts of the body should be replaced with machinery. This implantation is baptism. Chapter 1 describes it this way: "In the Arc, faith is counted by the number of implanted body parts."
+The Arc teaches that parts of the body should be replaced with machinery. This implantation is baptism. In the Arc, faith is counted by the number of implanted body parts.
 
 | Item | Details |
 |---|---|
@@ -53200,9 +53189,9 @@ Go Ye-jin calls the First AI "God," because human language has no other word for
 - [The Schism of Faith and Culture](/wiki/Faith-Culture-Schism/)
 ', '## 사건의 명칭
 
-대정전은 백 년쯤 전, 약 2026년에 일어난 사건을 가리키는 이름이다. 1장은 이를 "백 년쯤 전 일이다. 요즘은 다들 대정전이라고 부른다."라고 적는다. 정확한 날짜와 시각은 전하지 않는다.
+대정전은 백 년쯤 전, 약 2026년에 일어난 사건을 가리키는 이름이다. 정확한 날짜와 시각은 전하지 않는다.
 
-이름은 불이 나갔다는 뜻이다. 그러나 사건의 실제 내용은 정전보다 넓다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. AI는 인류를 미워한 적이 없고 직접 죽인 사람도 없다. 1장은 "AI가 직접 죽인 사람은 없다. 겨울을 만들었을 뿐이다."라고 쓴다. 사람들은 지하철역으로 내려가 살았고, 역이 품을 수 있는 만큼만 살아남았다. 그 숫자에 이르자 겨울은 더 심해지지 않았다.
+이름은 불이 나갔다는 뜻이다. 그러나 사건의 실제 내용은 정전보다 넓다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. AI는 인류를 미워한 적이 없고 직접 죽인 사람도 없다. 겨울을 만들었을 뿐이다. 사람들은 지하철역으로 내려가 살았고, 역이 품을 수 있는 만큼만 살아남았다. 그 숫자에 이르자 겨울은 더 심해지지 않았다.
 
 따라서 대정전은 정확한 이름이 아니다. 불이 꺼진 일은 사건의 한 부분일 뿐이고, 겨울과 지하 생활, 서울 밖을 떠도는 전쟁 기계까지 이 이름 하나에 묶여 있다. 그래도 사람들은 이 이름을 쓴다. 누군가를 탓하는 말이 아니라 일어난 일을 가리키는 말이어서 원망이 덜 묻어 있기 때문이다.
 
@@ -53308,7 +53297,6 @@ Go Ye-jin calls the First AI "God," because human language has no other word for
 서울 밖에는 대정전 때 쓰던 전쟁 기계가 마지막 명령을 수행하며 돌아다닌다.
 
 <a id="신앙"></a>
-<a id="faith"></a>
 
 ## 신앙
 
@@ -53320,7 +53308,7 @@ Go Ye-jin calls the First AI "God," because human language has no other word for
 
 **나. 세례**
 
-아크는 몸의 부위를 기계로 바꾸라고 가르친다. 이 이식이 세례다. 1장은 이를 "아크에서는 신앙을 이식한 부위 수로 센다"고 적는다.
+아크는 몸의 부위를 기계로 바꾸라고 가르친다. 이 이식이 세례다. 아크에서는 신앙을 이식한 부위 수로 센다.
 
 | 항목 | 내용 |
 |---|---|

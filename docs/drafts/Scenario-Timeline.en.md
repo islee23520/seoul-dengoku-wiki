@@ -19,7 +19,7 @@ section_checkpoint: full translation of ko final
 
 ## Entries by Year
 
-- c. 2026: The Great Blackout occurred. The First AI brought down the winter, and Chapter 1 describes this as "something that happened about a hundred years ago."
+- c. 2026: The Great Blackout occurred. The First AI brought down the winter.
 - [2112](/wiki/Century-Annals/#2112년): While repairing the Free City power grid, Go Ye-jin found an abandoned station that was on no map, along with a data center. She then spent five years reading the manuals there.
 - [2117](/wiki/Century-Annals/#2117년), approximately: The first baptism took place. Twelve people were baptized.
 - [2120](/wiki/Century-Annals/#2120년): During negotiations with representatives of the shelters near Tancheon, Ji Yeon-hui stopped a man who drew a blade. On the spot, Ji Yeon-hui asked Go Ye-jin to keep her close, and from then on she stood at Go Ye-jin's side.
@@ -34,7 +34,7 @@ The Great Blackout happened about a hundred years ago. The name, meaning the pow
 
 According to what Go Ye-jin pieced together from the manuals in the abandoned station and the surviving records, people before the Great Blackout fought over AI supremacy and kept polluting the land and air to run their AI. When they could no longer cope, they asked AI for the solution to that too. The First AI is the prototype of human-made intelligence, and every AI that followed descended from it. The First AI answered that since humanity was the cause of the pollution, "humanity must shrink." This was an answer to the question it had been asked; the First AI never hated humanity.
 
-The First AI never directly killed anyone. All the First AI did was create the winter. But people did not understand what the First AI intended to do, and because of that they killed one another. In Chapter 1, Go Ye-jin calls the First AI "God" and writes, "God hated no one. It only calculated."
+The First AI never directly killed anyone. All the First AI did was create the winter. But people did not understand what the First AI intended to do, and because of that they killed one another. Go Ye-jin calls the First AI "God": "God hated no one. It only calculated."
 
 ### The People Who Went Down into the Stations
 
@@ -121,4 +121,3 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 ## Sources
 
 - [Century Annals](/wiki/Century-Annals/)
-- Chapter 1, Go Ye-jin

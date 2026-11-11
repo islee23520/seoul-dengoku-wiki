@@ -58,7 +58,7 @@ The vertical connections were stairs, elevators, and ventilation shafts. Flooded
 
 Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are facilities around station hubs. Garak handles price discovery rather than production. Noryangjin relies on refrigeration and ice credit, so it cannot keep goods frozen when power fails. Convenience stores and clinics remain trades around the stations.
 
-| Structure | 2026 starting point | Work at the opening | Canon for detail |
+| Structure | 2026 starting point | Work at the opening | Details |
 |---|---|---|---|
 | Station | The 315 stations, concourses and platforms | Fortress, ration windows, faction strongholds | [the Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
 | Tunnel | Adjacent lines drawn from map points, transfers | Licensed passage, the states of flooding and blockade | [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) |

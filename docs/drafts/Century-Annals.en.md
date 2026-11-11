@@ -1896,7 +1896,7 @@ In September 2125 the Anguk Station copyists recorded, for the first time, a dis
 
 In the autumn of 2125 turbidity in the western pipeline exceeded the standard. Water treatment supervisor Bak Nuri closed the western pipeline valves. Han Jaemok withheld his signature from the document to resume supply. Citing this, I Seodam invoked Yangcheon's veto before the contract council.
 
-<a id="2125년-시청역-노동자들"></a>
+<a id="2125년-ch37-시청역-노동자들"></a>
 
 #### City Hall Station Workers
 
@@ -1958,7 +1958,7 @@ In March 2125 three trading houses bid for the Yongsan transshipment contract. T
 
 In the winter of 2125 three organizations asked Jo Jaepyo's party at the same time to escort travelers along the same route.
 
-<a id="2125년-시청역-노동자들"></a>
+<a id="2125년-ch47-시청역-노동자들"></a>
 
 #### City Hall Station Workers
 

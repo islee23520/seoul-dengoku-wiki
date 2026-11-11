@@ -1896,7 +1896,7 @@ section_checkpoint: ko 15/15 parts merged; gate-review fixes applied by hand
 
 2125년 가을 서부 관로의 탁도가 기준을 넘었다. 정수 감독 박누리는 서부 관로 밸브를 잠갔다. 한재목은 공급 재개 문서의 서명을 보류하였다. 이서담은 이 보류를 근거로 양천의 거부권을 계약 회의에 청구하였다.
 
-<a id="2125년-시청역-노동자들"></a>
+<a id="2125년-ch37-시청역-노동자들"></a>
 
 #### 시청역 노동자들
 
@@ -1958,7 +1958,7 @@ section_checkpoint: ko 15/15 parts merged; gate-review fixes applied by hand
 
 2125년 겨울 세 조직이 같은 통행로의 호위를 조재표 일행에 동시에 요청하였다.
 
-<a id="2125년-시청역-노동자들"></a>
+<a id="2125년-ch47-시청역-노동자들"></a>
 
 #### 시청역 노동자들
 
