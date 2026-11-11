@@ -51326,624 +51326,665 @@ Values stood for the practice the current majority followed.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('World-Expansion-Index', 'World Expansion Index', '세계 확장 색인', 'overview', 3, '<a id="World-Expansion-Index-heading-0001"></a>
 
-- Houses 32 / Theaters 5 / Synthetics 48
-- Social batches 0 / Ecologies 26 / Monster batches 41
+This index gathers the wiki''s articles and entry points by category. To read the world''s structure in order, start with the [World Narrative Atlas](/wiki/World-Narrative-Atlas/); look up word meanings in the [Glossary](/wiki/Glossary/).
+
+- Entry points: [World Narrative Atlas](/wiki/World-Narrative-Atlas/) · [The Three Factions of Seoul](/wiki/Sixteen-States/) · [Factions](/wiki/factions/) · [People](/wiki/people/) · [Territory Map](/wiki/map/) · [Update History](/wiki/updates/)
+- 59 articles · 26 ecology group dossiers (G01 to G26) · 22 operating organizations · 48 synthetic personas · 5 theaters outside Seoul
+
+## Articles by Category
+
+- **Overview**: [Regional and Physical AI Arcs](/wiki/Regional-Physical-AI-Arcs/) · [The Great Blackout](/wiki/World-Unbinding/) · [World Narrative Atlas](/wiki/World-Narrative-Atlas/) · [Glossary](/wiki/Glossary/)
+- **Timeline**: [Seoul Subway States Timeline 2030–2126](/wiki/Century-Annals/) · [Scenario Timeline](/wiki/Scenario-Timeline/) · [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/)
+- **Character**: [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/) · [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/)
+- **Faction**: [Families and the Three Factions](/wiki/Chaebol-Houses-and-Century-Factions/) · [The Three Factions of Seoul](/wiki/Sixteen-States/) · [World Expansion Relation Ledger](/wiki/World-Relation-Ledger/) · [Operating Organizations](/wiki/Operating-Houses/) · [Diaspora Corridors](/wiki/Diaspora-Corridors/)
+- **Offices**: [Offices and Ranks](/wiki/Offices-and-Ranks/)
+- **Geography**: [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/) · [Outside](/wiki/External-Theaters/) · [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/) · [World Map](/wiki/World-and-Subway-Layers/) · [The Structure of the World Map](/wiki/World-Map-Construction/) · [Entering the Station Interior](/wiki/Station-Interior-Construction/)
+- **Culture**: [Values and Policy Scales](/wiki/Values-and-Policy-Scales/) · [Food Culture](/wiki/Food-Culture/) · [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/) · [The Stories](/wiki/Oral-Stories/)
+- **Items**: [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
+- **Structures**: [The Structures Compendium](/wiki/Structures/)
+- **Technology**: [Lost Technology](/wiki/Lost-Technology-Lineage/)
+- **Disease**: [Ailments and Symptoms](/wiki/Ailments/)
+- **People and Machines**: [People and Machines](/wiki/People-and-Machines/) · [Synthetic Social Personas](/wiki/Synthetic-Actors/)
+- **Ecology Compendium**: [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/); group dossiers [G01](/wiki/Hostile-Group-G01/) · [G02](/wiki/Hostile-Group-G02/) · [G03](/wiki/Hostile-Group-G03/) · [G04](/wiki/Hostile-Group-G04/) · [G05](/wiki/Hostile-Group-G05/) · [G06](/wiki/Hostile-Group-G06/) · [G07](/wiki/Hostile-Group-G07/) · [G08](/wiki/Hostile-Group-G08/) · [G09](/wiki/Hostile-Group-G09/) · [G10](/wiki/Hostile-Group-G10/) · [G11](/wiki/Hostile-Group-G11/) · [G12](/wiki/Hostile-Group-G12/) · [G13](/wiki/Hostile-Group-G13/) · [G14](/wiki/Hostile-Group-G14/) · [G15](/wiki/Hostile-Group-G15/) · [G16](/wiki/Hostile-Group-G16/) · [G17](/wiki/Hostile-Group-G17/) · [G18](/wiki/Hostile-Group-G18/) · [G19](/wiki/Hostile-Group-G19/) · [G20](/wiki/Hostile-Group-G20/) · [G21](/wiki/Hostile-Group-G21/) · [G22](/wiki/Hostile-Group-G22/) · [G23](/wiki/Hostile-Group-G23/) · [G24](/wiki/Hostile-Group-G24/) · [G25](/wiki/Hostile-Group-G25/) · [G26](/wiki/Hostile-Group-G26/)
 
 <a id="World-Expansion-Index-heading-0003"></a>
+<a id="무소속"></a>
 
-## Additional people
+## Additional People
+
+The table below links character IDs to people pages. Every character can be found on the [People](/wiki/people/) page.
 
 | Character ID | Person |
 |---|---|
-| K423 | [K423](/wiki/people/person-0088/) |
-| K424 | [K424](/wiki/people/person-0424/) |
-| K425 | [K425](/wiki/people/person-0425/) |
-| K426 | [K426](/wiki/people/person-0426/) |
-| K427 | [K427](/wiki/people/person-0427/) |
-| K428 | [K428](/wiki/people/person-0428/) |
-| K429 | [K429](/wiki/people/person-0429/) |
-| K430 | [K430](/wiki/people/person-0430/) |
-| K431 | [K431](/wiki/people/person-0431/) |
-| K432 | [K432](/wiki/people/person-0432/) |
-| K433 | [K433](/wiki/people/person-0433/) |
-| K434 | [K434](/wiki/people/person-0434/) |
-| K435 | [K435](/wiki/people/person-0435/) |
-| K436 | [K436](/wiki/people/person-0436/) |
-| K437 | [K437](/wiki/people/person-0437/) |
-| K438 | [K438](/wiki/people/person-0438/) |
-| K439 | [K439](/wiki/people/person-0439/) |
-| K440 | [K440](/wiki/people/person-0440/) |
-| K441 | [K441](/wiki/people/person-0441/) |
-| K442 | [K442](/wiki/people/person-0442/) |
-| K443 | [K443](/wiki/people/person-0443/) |
-| K444 | [K444](/wiki/people/person-0444/) |
-| K445 | [K445](/wiki/people/person-0445/) |
-| K446 | [K446](/wiki/people/person-0446/) |
-| K447 | [K447](/wiki/people/person-0447/) |
-| K448 | [K448](/wiki/people/person-0448/) |
-| K449 | [K449](/wiki/people/person-0449/) |
-| K450 | [K450](/wiki/people/person-0450/) |
-| K451 | [K451](/wiki/people/person-0451/) |
-| K452 | [K452](/wiki/people/person-0452/) |
-| K453 | [K453](/wiki/people/person-0453/) |
-| K454 | [K454](/wiki/people/person-0454/) |
-| K455 | [K455](/wiki/people/person-0455/) |
-| K456 | [K456](/wiki/people/person-0456/) |
-| K457 | [K457](/wiki/people/person-0457/) |
-| K458 | [K458](/wiki/people/person-0458/) |
-| K459 | [K459](/wiki/people/person-0459/) |
-| K460 | [K460](/wiki/people/person-0460/) |
-| K461 | [K461](/wiki/people/person-0461/) |
-| K462 | [K462](/wiki/people/person-0462/) |
-| K463 | [K463](/wiki/people/person-0463/) |
-| K464 | [K464](/wiki/people/person-0464/) |
-| K465 | [K465](/wiki/people/person-0465/) |
-| K466 | [K466](/wiki/people/person-0466/) |
-| K467 | [K467](/wiki/people/person-0467/) |
-| K468 | [K468](/wiki/people/person-0468/) |
-| K469 | [K469](/wiki/people/person-0469/) |
-| K470 | [K470](/wiki/people/person-0470/) |
-| K471 | [K471](/wiki/people/person-0471/) |
-| K472 | [K472](/wiki/people/person-0472/) |
-| K473 | [K473](/wiki/people/person-0473/) |
-| K474 | [K474](/wiki/people/person-0474/) |
-| K475 | [K475](/wiki/people/person-0475/) |
-| K476 | [K476](/wiki/people/person-0476/) |
-| K477 | [K477](/wiki/people/person-0477/) |
-| K478 | [K478](/wiki/people/person-0478/) |
-| K479 | [K479](/wiki/people/person-0479/) |
-| K480 | [K480](/wiki/people/person-0480/) |
-| K481 | [K481](/wiki/people/person-0481/) |
-| K482 | [K482](/wiki/people/person-0482/) |
-| K483 | [K483](/wiki/people/person-0483/) |
-| K484 | [K484](/wiki/people/person-0484/) |
-| K485 | [K485](/wiki/people/person-0485/) |
-| K486 | [K486](/wiki/people/person-0486/) |
-| K487 | [K487](/wiki/people/person-0487/) |
-| K488 | [K488](/wiki/people/person-0488/) |
-| K489 | [K489](/wiki/people/person-0489/) |
-| K490 | [K490](/wiki/people/person-0490/) |
-| K491 | [K491](/wiki/people/person-0491/) |
-| K492 | [K492](/wiki/people/person-0492/) |
-| K493 | [K493](/wiki/people/person-0493/) |
-| K494 | [K494](/wiki/people/person-0494/) |
-| K495 | [K495](/wiki/people/person-0495/) |
-| K496 | [K496](/wiki/people/person-0496/) |
-| K497 | [K497](/wiki/people/person-0497/) |
-| K498 | [K498](/wiki/people/person-0498/) |
-| K499 | [K499](/wiki/people/person-0499/) |
-| K500 | [K500](/wiki/people/person-0500/) |
-| K501 | [K501](/wiki/people/person-0501/) |
-| K502 | [K502](/wiki/people/person-0502/) |
-| K503 | [K503](/wiki/people/person-0503/) |
-| K504 | [K504](/wiki/people/person-0504/) |
-| K505 | [K505](/wiki/people/person-0505/) |
-| K506 | [K506](/wiki/people/person-0506/) |
-| K507 | [K507](/wiki/people/person-0507/) |
-| K508 | [K508](/wiki/people/person-0508/) |
-| K509 | [K509](/wiki/people/person-0509/) |
-| K510 | [K510](/wiki/people/person-0510/) |
-| K511 | [K511](/wiki/people/person-0511/) |
-| K512 | [K512](/wiki/people/person-0512/) |
-| K513 | [K513](/wiki/people/person-0513/) |
-| K514 | [K514](/wiki/people/person-0514/) |
-| K515 | [K515](/wiki/people/person-0515/) |
-| K516 | [K516](/wiki/people/person-0516/) |
-| K517 | [K517](/wiki/people/person-0517/) |
-| K518 | [K518](/wiki/people/person-0518/) |
-| K519 | [K519](/wiki/people/person-0519/) |
-| K520 | [K520](/wiki/people/person-0520/) |
-| K521 | [K521](/wiki/people/person-0521/) |
-| K522 | [K522](/wiki/people/person-0522/) |
-| K523 | [K523](/wiki/people/person-0523/) |
-| K524 | [K524](/wiki/people/person-0524/) |
-| K525 | [K525](/wiki/people/person-0525/) |
-| K526 | [K526](/wiki/people/person-0526/) |
-| K527 | [K527](/wiki/people/person-0527/) |
-| K528 | [K528](/wiki/people/person-0528/) |
-| K529 | [K529](/wiki/people/person-0529/) |
-| K530 | [K530](/wiki/people/person-0530/) |
-| K531 | [K531](/wiki/people/person-0531/) |
-| K532 | [K532](/wiki/people/person-0532/) |
-| K533 | [K533](/wiki/people/person-0533/) |
-| K534 | [K534](/wiki/people/person-0534/) |
-| K535 | [K535](/wiki/people/person-0535/) |
-| K536 | [K536](/wiki/people/person-0536/) |
-| K537 | [K537](/wiki/people/person-0537/) |
-| K538 | [K538](/wiki/people/person-0538/) |
-| K539 | [K539](/wiki/people/person-0539/) |
-| K540 | [K540](/wiki/people/person-0540/) |
-| K541 | [K541](/wiki/people/person-0541/) |
-| K542 | [K542](/wiki/people/person-0542/) |
-| K543 | [K543](/wiki/people/person-0543/) |
-| K544 | [K544](/wiki/people/person-0544/) |
-| K545 | [K545](/wiki/people/person-0545/) |
-| K546 | [K546](/wiki/people/person-0546/) |
-| K547 | [K547](/wiki/people/person-0547/) |
-| K548 | [K548](/wiki/people/person-0548/) |
-| K549 | [K549](/wiki/people/person-0549/) |
-| K550 | [K550](/wiki/people/person-0550/) |
-| K551 | [K551](/wiki/people/person-0551/) |
-| K552 | [K552](/wiki/people/person-0552/) |
-| K553 | [K553](/wiki/people/person-0553/) |
-| K554 | [K554](/wiki/people/person-0554/) |
-| K555 | [K555](/wiki/people/person-0555/) |
-| K556 | [K556](/wiki/people/person-0556/) |
-| K557 | [K557](/wiki/people/person-0557/) |
-| K558 | [K558](/wiki/people/person-0558/) |
-| K559 | [K559](/wiki/people/person-0559/) |
-| K560 | [K560](/wiki/people/person-0560/) |
-| K561 | [K561](/wiki/people/person-0561/) |
-| K562 | [K562](/wiki/people/person-0562/) |
-| K563 | [K563](/wiki/people/person-0563/) |
-| K564 | [K564](/wiki/people/person-0564/) |
-| K565 | [K565](/wiki/people/person-0565/) |
-| K566 | [K566](/wiki/people/person-0566/) |
-| K567 | [K567](/wiki/people/person-0567/) |
-| K568 | [K568](/wiki/people/person-0568/) |
-| K569 | [K569](/wiki/people/person-0569/) |
-| K570 | [K570](/wiki/people/person-0570/) |
-| K571 | [K571](/wiki/people/person-0571/) |
-| K572 | [K572](/wiki/people/person-0572/) |
-| K573 | [K573](/wiki/people/person-0573/) |
-| K574 | [K574](/wiki/people/person-0574/) |
-| K575 | [K575](/wiki/people/person-0575/) |
-| K576 | [K576](/wiki/people/person-0576/) |
-| K577 | [K577](/wiki/people/person-0577/) |
-| K578 | [K578](/wiki/people/person-0578/) |
-| K579 | [K579](/wiki/people/person-0579/) |
-| K580 | [K580](/wiki/people/person-0580/) |
-| K581 | [K581](/wiki/people/person-0581/) |
-| K582 | [K582](/wiki/people/person-0582/) |
-| K583 | [K583](/wiki/people/person-0583/) |
-| K584 | [K584](/wiki/people/person-0584/) |
-| K585 | [K585](/wiki/people/person-0585/) |
-| K586 | [K586](/wiki/people/person-0586/) |
-| K587 | [K587](/wiki/people/person-0587/) |
-| K588 | [K588](/wiki/people/person-0588/) |
-| K589 | [K589](/wiki/people/person-0589/) |
-| K590 | [K590](/wiki/people/person-0590/) |
-| K591 | [K591](/wiki/people/person-0591/) |
-| K592 | [K592](/wiki/people/person-0592/) |
-| K593 | [K593](/wiki/people/person-0593/) |
-| K594 | [K594](/wiki/people/person-0594/) |
-| K595 | [K595](/wiki/people/person-0595/) |
-| K596 | [K596](/wiki/people/person-0596/) |
-| K597 | [K597](/wiki/people/person-0597/) |
-| K598 | [K598](/wiki/people/person-0598/) |
-| K599 | [K599](/wiki/people/person-0599/) |
-| K600 | [K600](/wiki/people/person-0600/) |
-| K601 | [K601](/wiki/people/person-0601/) |
-| K602 | [K602](/wiki/people/person-0602/) |
-| K603 | [K603](/wiki/people/person-0603/) |
-| K604 | [K604](/wiki/people/person-0604/) |
-| K605 | [K605](/wiki/people/person-0605/) |
-| K606 | [K606](/wiki/people/person-0606/) |
-| K607 | [K607](/wiki/people/person-0607/) |
-| K608 | [K608](/wiki/people/person-0608/) |
-| K609 | [K609](/wiki/people/person-0609/) |
-| K610 | [K610](/wiki/people/person-0610/) |
-| K611 | [K611](/wiki/people/person-0611/) |
-| K612 | [K612](/wiki/people/person-0612/) |
-| K613 | [K613](/wiki/people/person-0613/) |
-| K614 | [K614](/wiki/people/person-0614/) |
-| K615 | [K615](/wiki/people/person-0615/) |
-| K616 | [K616](/wiki/people/person-0616/) |
-| K617 | [K617](/wiki/people/person-0617/) |
-| K618 | [K618](/wiki/people/person-0618/) |
-| K619 | [K619](/wiki/people/person-0619/) |
-| K620 | [K620](/wiki/people/person-0620/) |
-| K621 | [K621](/wiki/people/person-0621/) |
-| K622 | [K622](/wiki/people/person-0622/) |
-| K623 | [K623](/wiki/people/person-0623/) |
-| K624 | [K624](/wiki/people/person-0624/) |
-| K625 | [K625](/wiki/people/person-0625/) |
-| K626 | [K626](/wiki/people/person-0626/) |
-| K627 | [K627](/wiki/people/person-0627/) |
-| K628 | [K628](/wiki/people/person-0628/) |
-| K629 | [K629](/wiki/people/person-0629/) |
-| K630 | [K630](/wiki/people/person-0630/) |
-| K631 | [K631](/wiki/people/person-0631/) |
-| K632 | [K632](/wiki/people/person-0632/) |
-| K633 | [K633](/wiki/people/person-0633/) |
-| K634 | [K634](/wiki/people/person-0634/) |
-| K635 | [K635](/wiki/people/person-0635/) |
-| K636 | [K636](/wiki/people/person-0636/) |
-| K637 | [K637](/wiki/people/person-0637/) |
-| K638 | [K638](/wiki/people/person-0638/) |
-| K639 | [K639](/wiki/people/person-0639/) |
-| K640 | [K640](/wiki/people/person-0640/) |
-| K641 | [K641](/wiki/people/person-0641/) |
-| K642 | [K642](/wiki/people/person-0642/) |
-| K643 | [K643](/wiki/people/person-0643/) |
-| K644 | [K644](/wiki/people/person-0644/) |
-| K645 | [K645](/wiki/people/person-0645/) |
-| K646 | [K646](/wiki/people/person-0646/) |
-| K647 | [K647](/wiki/people/person-0647/) |
-| K648 | [K648](/wiki/people/person-0648/) |
-| K649 | [K649](/wiki/people/person-0649/) |
-| K650 | [K650](/wiki/people/person-0650/) |
-| K651 | [K651](/wiki/people/person-0651/) |
-| K652 | [K652](/wiki/people/person-0652/) |
-| K653 | [K653](/wiki/people/person-0653/) |
-| K654 | [K654](/wiki/people/person-0654/) |
-| K655 | [K655](/wiki/people/person-0655/) |
-| K656 | [K656](/wiki/people/person-0656/) |
-| K657 | [K657](/wiki/people/person-0657/) |
-| K658 | [K658](/wiki/people/person-0658/) |
-| K659 | [K659](/wiki/people/person-0659/) |
-| K660 | [K660](/wiki/people/person-0660/) |
-| K661 | [K661](/wiki/people/person-0661/) |
-| K662 | [K662](/wiki/people/person-0662/) |
-| K663 | [K663](/wiki/people/person-0663/) |
-| K664 | [K664](/wiki/people/person-0664/) |
-| K665 | [K665](/wiki/people/person-0665/) |
-| K666 | [K666](/wiki/people/person-0666/) |
-| K667 | [K667](/wiki/people/person-0667/) |
-| K668 | [K668](/wiki/people/person-0668/) |
-| K669 | [K669](/wiki/people/person-0669/) |
-| K670 | [K670](/wiki/people/person-0670/) |
-| K671 | [K671](/wiki/people/person-0671/) |
-| K672 | [K672](/wiki/people/person-0672/) |
-| K673 | [K673](/wiki/people/person-0673/) |
-| K674 | [K674](/wiki/people/person-0674/) |
-| K675 | [K675](/wiki/people/person-0675/) |
-| K676 | [K676](/wiki/people/person-0676/) |
-| K677 | [K677](/wiki/people/person-0677/) |
-| K678 | [K678](/wiki/people/person-0678/) |
-| K679 | [K679](/wiki/people/person-0679/) |
-| K680 | [K680](/wiki/people/person-0680/) |
-| K681 | [K681](/wiki/people/person-0681/) |
-| K682 | [K682](/wiki/people/person-0682/) |
-| K683 | [K683](/wiki/people/person-0683/) |
-| K684 | [K684](/wiki/people/person-0684/) |
-| K685 | [K685](/wiki/people/person-0685/) |
-| K686 | [K686](/wiki/people/person-0686/) |
-| K687 | [K687](/wiki/people/person-0687/) |
-| K688 | [K688](/wiki/people/person-0688/) |
-| K689 | [K689](/wiki/people/person-0689/) |
-| K690 | [K690](/wiki/people/person-0690/) |
-| K691 | [K691](/wiki/people/person-0691/) |
-| K692 | [K692](/wiki/people/person-0692/) |
-| K693 | [K693](/wiki/people/person-0693/) |
-| K694 | [K694](/wiki/people/person-0694/) |
-| K695 | [K695](/wiki/people/person-0695/) |
-| K696 | [K696](/wiki/people/person-0696/) |
-| K697 | [K697](/wiki/people/person-0697/) |
-| K698 | [K698](/wiki/people/person-0698/) |
-| K699 | [K699](/wiki/people/person-0699/) |
-| K700 | [K700](/wiki/people/person-0700/) |
-| K701 | [K701](/wiki/people/person-0701/) |
-| K702 | [K702](/wiki/people/person-0702/) |
-| K703 | [K703](/wiki/people/person-0703/) |
-| K704 | [K704](/wiki/people/person-0704/) |
-| K705 | [K705](/wiki/people/person-0705/) |
-| K706 | [K706](/wiki/people/person-0706/) |
-| K707 | [K707](/wiki/people/person-0707/) |
-| K708 | [K708](/wiki/people/person-0708/) |
-| K709 | [K709](/wiki/people/person-0709/) |
-| K710 | [K710](/wiki/people/person-0710/) |
-| K711 | [K711](/wiki/people/person-0711/) |
-| K712 | [K712](/wiki/people/person-0712/) |
-| K713 | [K713](/wiki/people/person-0713/) |
-| K714 | [K714](/wiki/people/person-0714/) |
-| K715 | [K715](/wiki/people/person-0715/) |
-| K716 | [K716](/wiki/people/person-0716/) |
-| K717 | [K717](/wiki/people/person-0717/) |
-| K718 | [K718](/wiki/people/person-0718/) |
-| K719 | [K719](/wiki/people/person-0719/) |
-| K720 | [K720](/wiki/people/person-0720/) |
-| K721 | [K721](/wiki/people/person-0721/) |
-| K722 | [K722](/wiki/people/person-0722/) |
-| K723 | [K723](/wiki/people/person-0723/) |
-| K724 | [K724](/wiki/people/person-0724/) |
-| K725 | [K725](/wiki/people/person-0725/) |
-| K726 | [K726](/wiki/people/person-0726/) |
-| K727 | [K727](/wiki/people/person-0727/) |
-| K728 | [K728](/wiki/people/person-0728/) |
-| K729 | [K729](/wiki/people/person-0729/) |
-| K730 | [K730](/wiki/people/person-0730/) |
-| K731 | [K731](/wiki/people/person-0731/) |
-| K732 | [K732](/wiki/people/person-0732/) |
-| K733 | [K733](/wiki/people/person-0733/) |
-| K734 | [K734](/wiki/people/person-0734/) |
-| K735 | [K735](/wiki/people/person-0735/) |
-| K736 | [K736](/wiki/people/person-0736/) |
-| K737 | [K737](/wiki/people/person-0737/) |
-| K738 | [K738](/wiki/people/person-0738/) |
-| K739 | [K739](/wiki/people/person-0739/) |
-| K740 | [K740](/wiki/people/person-0740/) |
-| K741 | [K741](/wiki/people/person-0741/) |
-| K742 | [K742](/wiki/people/person-0742/) |
-| K743 | [K743](/wiki/people/person-0743/) |
-| K744 | [K744](/wiki/people/person-0744/) |
-| K745 | [K745](/wiki/people/person-0745/) |
-| K746 | [K746](/wiki/people/person-0746/) |
-| K747 | [K747](/wiki/people/person-0747/) |
-| K748 | [K748](/wiki/people/person-0748/) |
-| K749 | [K749](/wiki/people/person-0749/) |
-| K750 | [K750](/wiki/people/person-0750/) |
-| K751 | [K751](/wiki/people/person-0751/) |
-| K752 | [K752](/wiki/people/person-0752/) |
-| K753 | [K753](/wiki/people/person-0753/) |
-| K754 | [K754](/wiki/people/person-0754/) |
-| K755 | [K755](/wiki/people/person-0755/) |
-| K756 | [K756](/wiki/people/person-0756/) |
-| K757 | [K757](/wiki/people/person-0757/) |
-| K758 | [K758](/wiki/people/person-0758/) |
-| K759 | [K759](/wiki/people/person-0759/) |
-| K760 | [K760](/wiki/people/person-0760/) |
-| K761 | [K761](/wiki/people/person-0761/) |
-| K762 | [K762](/wiki/people/person-0762/) |
-| K763 | [K763](/wiki/people/person-0763/) |
-| K764 | [K764](/wiki/people/person-0764/) |
-| K765 | [K765](/wiki/people/person-0765/) |
-| K766 | [K766](/wiki/people/person-0766/) |
-| K767 | [K767](/wiki/people/person-0767/) |
-| K768 | [K768](/wiki/people/person-0768/) |
-| K769 | [K769](/wiki/people/person-0769/) |
-| K770 | [K770](/wiki/people/person-0770/) |
-| K771 | [K771](/wiki/people/person-0771/) |
-| K772 | [K772](/wiki/people/person-0772/) |
-| K773 | [K773](/wiki/people/person-0773/) |
-| K774 | [K774](/wiki/people/person-0774/) |
-| K775 | [K775](/wiki/people/person-0775/) |
-| K776 | [K776](/wiki/people/person-0776/) |
-| K777 | [K777](/wiki/people/person-0777/) |
-| K778 | [K778](/wiki/people/person-0778/) |
-| K779 | [K779](/wiki/people/person-0779/) |
-| K780 | [K780](/wiki/people/person-0780/) |
-| K781 | [K781](/wiki/people/person-0781/) |
-| K782 | [K782](/wiki/people/person-0782/) |
-| K783 | [K783](/wiki/people/person-0783/) |
-| K784 | [K784](/wiki/people/person-0784/) |
-| K785 | [K785](/wiki/people/person-0785/) |
-| K786 | [K786](/wiki/people/person-0786/) |
-| K787 | [K787](/wiki/people/person-0787/) |
-| K788 | [K788](/wiki/people/person-0788/) |
-| K789 | [K789](/wiki/people/person-0789/) |
-| K790 | [K790](/wiki/people/person-0790/) |
-| K791 | [K791](/wiki/people/person-0791/) |
-| K792 | [K792](/wiki/people/person-0792/) |
-| K793 | [K793](/wiki/people/person-0793/) |
-| K794 | [K794](/wiki/people/person-0794/) |
-| K795 | [K795](/wiki/people/person-0795/) |
-| K796 | [K796](/wiki/people/person-0796/) |
-| K797 | [K797](/wiki/people/person-0797/) |
-| K798 | [K798](/wiki/people/person-0798/) |
-| K799 | [K799](/wiki/people/person-0799/) |
-| K800 | [K800](/wiki/people/person-0800/) |
-| K801 | [K801](/wiki/people/person-0801/) |
-| K802 | [K802](/wiki/people/person-0802/) |
-| K803 | [K803](/wiki/people/person-0803/) |
-| K804 | [K804](/wiki/people/person-0804/) |
-| K805 | [K805](/wiki/people/person-0805/) |
-| K806 | [K806](/wiki/people/person-0806/) |
-| K807 | [K807](/wiki/people/person-0807/) |
-| K808 | [K808](/wiki/people/person-0808/) |
-| K809 | [K809](/wiki/people/person-0809/) |
-| K810 | [K810](/wiki/people/person-0810/) |
-| K811 | [K811](/wiki/people/person-0811/) |
-| K812 | [K812](/wiki/people/person-0812/) |
-| K813 | [K813](/wiki/people/person-0813/) |
-| K814 | [K814](/wiki/people/person-0814/) |
-| K815 | [K815](/wiki/people/person-0815/) |
-| K816 | [K816](/wiki/people/person-0816/) |
-| K817 | [K817](/wiki/people/person-0817/) |
-| K818 | [K818](/wiki/people/person-0818/) |
-| K819 | [K819](/wiki/people/person-0819/) |
-| K820 | [K820](/wiki/people/person-0820/) |
-| K821 | [K821](/wiki/people/person-0821/) |
-| K822 | [K822](/wiki/people/person-0822/) |
-| K823 | [K823](/wiki/people/person-0823/) |
-| K824 | [K824](/wiki/people/person-0824/) |
-| K825 | [K825](/wiki/people/person-0825/) |
-| K826 | [K826](/wiki/people/person-0826/) |
-| K827 | [K827](/wiki/people/person-0827/) |
-| K828 | [K828](/wiki/people/person-0828/) |
-| K829 | [K829](/wiki/people/person-0829/) |
-| K830 | [K830](/wiki/people/person-0830/) |
-| K831 | [K831](/wiki/people/person-0831/) |
-| K832 | [K832](/wiki/people/person-0832/) |
-| K833 | [K833](/wiki/people/person-0833/) |
-| K834 | [K834](/wiki/people/person-0834/) |
-| K835 | [K835](/wiki/people/person-0835/) |
-| K836 | [K836](/wiki/people/person-0836/) |
-| K837 | [K837](/wiki/people/person-0837/) |
-| K838 | [K838](/wiki/people/person-0838/) |
-| K839 | [K839](/wiki/people/person-0839/) |
-| K840 | [K840](/wiki/people/person-0840/) |
-| K841 | [K841](/wiki/people/person-0841/) |
-| K842 | [K842](/wiki/people/person-0842/) |
-| K843 | [K843](/wiki/people/person-0843/) |
-| K844 | [K844](/wiki/people/person-0844/) |
-| K845 | [K845](/wiki/people/person-0845/) |
-| K846 | [K846](/wiki/people/person-0846/) |
-| K847 | [K847](/wiki/people/person-0847/) |
-| K848 | [K848](/wiki/people/person-0848/) |
-| K849 | [K849](/wiki/people/person-0849/) |
-| K850 | [K850](/wiki/people/person-0850/) |
-| K851 | [K851](/wiki/people/person-0851/) |
-| K852 | [K852](/wiki/people/person-0852/) |
-| K853 | [K853](/wiki/people/person-0853/) |
-| K854 | [K854](/wiki/people/person-0854/) |
-| K855 | [K855](/wiki/people/person-0855/) |
-| K856 | [K856](/wiki/people/person-0856/) |
-| K857 | [K857](/wiki/people/person-0857/) |
-| K858 | [K858](/wiki/people/person-0858/) |
-| K859 | [K859](/wiki/people/person-0859/) |
-| K860 | [K860](/wiki/people/person-0860/) |
-| K861 | [K861](/wiki/people/person-0861/) |
-| K862 | [K862](/wiki/people/person-0862/) |
-| K863 | [K863](/wiki/people/person-0863/) |
-| K864 | [K864](/wiki/people/person-0864/) |
-| K865 | [K865](/wiki/people/person-0865/) |
-| K866 | [K866](/wiki/people/person-0866/) |
-| K867 | [K867](/wiki/people/person-0867/) |
-| K868 | [K868](/wiki/people/person-0868/) |
-| K869 | [K869](/wiki/people/person-0869/) |
-| K870 | [K870](/wiki/people/person-0870/) |
-| K871 | [K871](/wiki/people/person-0871/) |
-| K872 | [K872](/wiki/people/person-0872/) |
-| K873 | [K873](/wiki/people/person-0873/) |
-| K874 | [K874](/wiki/people/person-0874/) |
-| K875 | [K875](/wiki/people/person-0875/) |
-| K876 | [K876](/wiki/people/person-0876/) |
-| K877 | [K877](/wiki/people/person-0877/) |
-| K878 | [K878](/wiki/people/person-0878/) |
-| K879 | [K879](/wiki/people/person-0879/) |
-| K880 | [K880](/wiki/people/person-0880/) |
-| K881 | [K881](/wiki/people/person-0881/) |
-| K882 | [K882](/wiki/people/person-0882/) |
-| K883 | [K883](/wiki/people/person-0883/) |
-| K884 | [K884](/wiki/people/person-0884/) |
-| K885 | [K885](/wiki/people/person-0885/) |
-| K886 | [K886](/wiki/people/person-0886/) |
-| K887 | [K887](/wiki/people/person-0887/) |
-| K888 | [K888](/wiki/people/person-0888/) |
-| K889 | [K889](/wiki/people/person-0889/) |
-| K890 | [K890](/wiki/people/person-0890/) |
-| K891 | [K891](/wiki/people/person-0891/) |
-| K892 | [K892](/wiki/people/person-0892/) |
-| K893 | [K893](/wiki/people/person-0893/) |
-| K894 | [K894](/wiki/people/person-0894/) |
-| K895 | [K895](/wiki/people/person-0895/) |
-| K896 | [K896](/wiki/people/person-0896/) |
-| K897 | [K897](/wiki/people/person-0897/) |
-| K898 | [K898](/wiki/people/person-0898/) |
-| K899 | [K899](/wiki/people/person-0899/) |
-| K900 | [K900](/wiki/people/person-0900/) |
-| K901 | [K901](/wiki/people/person-0901/) |
-| K902 | [K902](/wiki/people/person-0902/) |
-| K903 | [K903](/wiki/people/person-0903/) |
-| K904 | [K904](/wiki/people/person-0904/) |
-| K905 | [K905](/wiki/people/person-0905/) |
-| K906 | [K906](/wiki/people/person-0906/) |
-| K907 | [K907](/wiki/people/person-0907/) |
-| K908 | [K908](/wiki/people/person-0908/) |
-| K909 | [K909](/wiki/people/person-0909/) |
-| K910 | [K910](/wiki/people/person-0910/) |
-| K911 | [K911](/wiki/people/person-0911/) |
-| K912 | [K912](/wiki/people/person-0912/) |
-| K913 | [K913](/wiki/people/person-0913/) |
-| K914 | [K914](/wiki/people/person-0914/) |
-| K915 | [K915](/wiki/people/person-0915/) |
-| K916 | [K916](/wiki/people/person-0916/) |
-| K917 | [K917](/wiki/people/person-0917/) |
-| K918 | [K918](/wiki/people/person-0918/) |
-| K919 | [K919](/wiki/people/person-0919/) |
-| K920 | [K920](/wiki/people/person-0920/) |
-| K921 | [K921](/wiki/people/person-0921/) |
-| K922 | [K922](/wiki/people/person-0922/) |
-| K923 | [K923](/wiki/people/person-0923/) |
-| K924 | [K924](/wiki/people/person-0924/) |
-| K925 | [K925](/wiki/people/person-0925/) |
-| K926 | [K926](/wiki/people/person-0926/) |
-| K927 | [K927](/wiki/people/person-0927/) |
-| K928 | [K928](/wiki/people/person-0928/) |
-| K929 | [K929](/wiki/people/person-0929/) |
-| K930 | [K930](/wiki/people/person-0930/) |
-| K931 | [K931](/wiki/people/person-0931/) |
-| K932 | [K932](/wiki/people/person-0932/) |
-| K933 | [K933](/wiki/people/person-0933/) |
-| K934 | [K934](/wiki/people/person-0934/) |
-| K935 | [K935](/wiki/people/person-0935/) |
-| K936 | [K936](/wiki/people/person-0936/) |
-| K937 | [K937](/wiki/people/person-0937/) |
-| K938 | [K938](/wiki/people/person-0938/) |
-| K939 | [K939](/wiki/people/person-0939/) |
-| K940 | [K940](/wiki/people/person-0940/) |
-| K941 | [K941](/wiki/people/person-0941/) |
-| K942 | [K942](/wiki/people/person-0942/) |
-| K943 | [K943](/wiki/people/person-0943/) |
-| K944 | [K944](/wiki/people/person-0944/) |
-| K945 | [K945](/wiki/people/person-0945/) |
-| K946 | [K946](/wiki/people/person-0946/) |
-| K947 | [K947](/wiki/people/person-0947/) |
-| K948 | [K948](/wiki/people/person-0948/) |
-| K949 | [K949](/wiki/people/person-0949/) |
-| K950 | [K950](/wiki/people/person-0950/) |
-| K951 | [K951](/wiki/people/person-0951/) |
-| K952 | [K952](/wiki/people/person-0952/) |
-| K953 | [K953](/wiki/people/person-0953/) |
-| K954 | [K954](/wiki/people/person-0954/) |
-| K955 | [K955](/wiki/people/person-0955/) |
-| K956 | [K956](/wiki/people/person-0956/) |
-| K957 | [K957](/wiki/people/person-0957/) |
-| K958 | [K958](/wiki/people/person-0958/) |
-| K959 | [K959](/wiki/people/person-0959/) |
-| K960 | [K960](/wiki/people/person-0960/) |
-| K961 | [K961](/wiki/people/person-0961/) |
-| K962 | [K962](/wiki/people/person-0962/) |
-| K963 | [K963](/wiki/people/person-0963/) |
-| K964 | [K964](/wiki/people/person-0964/) |
-| K965 | [K965](/wiki/people/person-0965/) |
-| K966 | [K966](/wiki/people/person-0966/) |
-| K967 | [K967](/wiki/people/person-0967/) |
-| K968 | [K968](/wiki/people/person-0968/) |
-| K969 | [K969](/wiki/people/person-0969/) |
-| K970 | [K970](/wiki/people/person-0970/) |
-| K971 | [K971](/wiki/people/person-0971/) |
-| K972 | [K972](/wiki/people/person-0972/) |
-| K973 | [K973](/wiki/people/person-0973/) |
-| K974 | [K974](/wiki/people/person-0974/) |
-| K975 | [K975](/wiki/people/person-0975/) |
-| K976 | [K976](/wiki/people/person-0976/) |
-| K977 | [K977](/wiki/people/person-0977/) |
-| K978 | [K978](/wiki/people/person-0978/) |
-| K979 | [K979](/wiki/people/person-0979/) |
-| K980 | [K980](/wiki/people/person-0980/) |
-| K981 | [K981](/wiki/people/person-0981/) |
-| K982 | [K982](/wiki/people/person-0982/) |
-| K983 | [K983](/wiki/people/person-0983/) |
-| K984 | [K984](/wiki/people/person-0984/) |
-| K985 | [K985](/wiki/people/person-0985/) |
-| K986 | [K986](/wiki/people/person-0986/) |
-| K987 | [K987](/wiki/people/person-0987/) |
-| K988 | [K988](/wiki/people/person-0988/) |
-| K989 | [K989](/wiki/people/person-0989/) |
-| K990 | [K990](/wiki/people/person-0990/) |
-| K991 | [K991](/wiki/people/person-0991/) |
-| K992 | [K992](/wiki/people/person-0992/) |
-| K993 | [K993](/wiki/people/person-0993/) |
-| K994 | [K994](/wiki/people/person-0994/) |
-| K995 | [K995](/wiki/people/person-0995/) |
-| K996 | [K996](/wiki/people/person-0996/) |
-| K997 | [K997](/wiki/people/person-0997/) |
-| K998 | [K998](/wiki/people/person-0998/) |
-| K999 | [K999](/wiki/people/person-0999/) |
-| K1000 | [K1000](/wiki/people/person-1000/) |
-| K1001 | [K1001](/wiki/people/person-1001/) |
-| K1002 | [K1002](/wiki/people/person-1002/) |
+| K423 | [O Gyeongjae](/wiki/people/person-0088/) |
+| K424 | [I Minseok](/wiki/people/person-0424/) |
+| K425 | [Bak Doyun](/wiki/people/person-0425/) |
+| K426 | [Choe Sua](/wiki/people/person-0426/) |
+| K427 | [Jeong Yeeun](/wiki/people/person-0427/) |
+| K428 | [Gang Jiyu](/wiki/people/person-0428/) |
+| K429 | [Jo Yejun](/wiki/people/person-0429/) |
+| K430 | [Ellis Harris](/wiki/people/person-0430/) |
+| K431 | [Jang Juwon](/wiki/people/person-0431/) |
+| K432 | [Im Yuna](/wiki/people/person-0432/) |
+| K433 | [Han Minseo](/wiki/people/person-0433/) |
+| K434 | [O Yunseo](/wiki/people/person-0434/) |
+| K435 | [Seo Junseo](/wiki/people/person-0435/) |
+| K436 | [Sin Seungmin](/wiki/people/person-0436/) |
+| K437 | [Gwon Taeyun](/wiki/people/person-0437/) |
+| K438 | [Hwang Jia](/wiki/people/person-0438/) |
+| K439 | [An Haneul](/wiki/people/person-0439/) |
+| K440 | [Song Eunji](/wiki/people/person-0440/) |
+| K441 | [Ryu Donghyeon](/wiki/people/person-0441/) |
+| K442 | [Hong Sanghun](/wiki/people/person-0442/) |
+| K443 | [Go Yeongho](/wiki/people/person-0443/) |
+| K444 | [Mun Gaeun](/wiki/people/person-0444/) |
+| K445 | [Yang Seohyeon](/wiki/people/person-0445/) |
+| K446 | [Antoine Lefebvre](/wiki/people/person-0446/) |
+| K447 | [Bae Taemin](/wiki/people/person-0447/) |
+| K448 | [Baek Hyeonseok](/wiki/people/person-0448/) |
+| K449 | [Heo Jinu](/wiki/people/person-0449/) |
+| K450 | [Yu Hayeong](/wiki/people/person-0450/) |
+| K451 | [Nam Sieun](/wiki/people/person-0451/) |
+| K452 | [Sim Dahyeon](/wiki/people/person-0452/) |
+| K453 | [No Yunho](/wiki/people/person-0453/) |
+| K454 | [Ha Minjae](/wiki/people/person-0454/) |
+| K455 | [Gwak Seongho](/wiki/people/person-0455/) |
+| K456 | [Seong Suhyeon](/wiki/people/person-0456/) |
+| K457 | [Cha Yewon](/wiki/people/person-0457/) |
+| K458 | [Ju Dain](/wiki/people/person-0458/) |
+| K459 | [U Gyeongmin](/wiki/people/person-0459/) |
+| K460 | [Gu Hangyeol](/wiki/people/person-0460/) |
+| K461 | [Min Sihyeon](/wiki/people/person-0461/) |
+| K462 | [Agnieszka Zielińska](/wiki/people/person-0462/) |
+| K463 | [Kim Seoyeon](/wiki/people/person-0463/) |
+| K464 | [I Jimin](/wiki/people/person-0464/) |
+| K465 | [Bak Eunyun](/wiki/people/person-0465/) |
+| K466 | [Choe Jihun](/wiki/people/person-0466/) |
+| K467 | [Jeong Seojun](/wiki/people/person-0467/) |
+| K468 | [Gang Daryu](/wiki/people/person-0468/) |
+| K469 | [Jo Chaewon](/wiki/people/person-0469/) |
+| K470 | [Yun Soyul](/wiki/people/person-0470/) |
+| K471 | [Jang Dowon](/wiki/people/person-0471/) |
+| K472 | [Im Geonu](/wiki/people/person-0472/) |
+| K473 | [Han Hyeonu](/wiki/people/person-0473/) |
+| K474 | [O Baseo](/wiki/people/person-0474/) |
+| K475 | [Seo Daeun](/wiki/people/person-0475/) |
+| K476 | [Sin Subin](/wiki/people/person-0476/) |
+| K477 | [Gwon Geumyun](/wiki/people/person-0477/) |
+| K478 | [Benjamin Clark](/wiki/people/person-0478/) |
+| K479 | [An Seongmin](/wiki/people/person-0479/) |
+| K480 | [Song Solji](/wiki/people/person-0480/) |
+| K481 | [Ryu Soyeon](/wiki/people/person-0481/) |
+| K482 | [Hong Hyewon](/wiki/people/person-0482/) |
+| K483 | [Go Supho](/wiki/people/person-0483/) |
+| K484 | [Mun Cheolmin](/wiki/people/person-0484/) |
+| K485 | [Yang Gitae](/wiki/people/person-0485/) |
+| K486 | [Son Mayeon](/wiki/people/person-0486/) |
+| K487 | [Bae Jiwon](/wiki/people/person-0487/) |
+| K488 | [Baek Mirae](/wiki/people/person-0488/) |
+| K489 | [Heo Hau](/wiki/people/person-0489/) |
+| K490 | [Yu Sehun](/wiki/people/person-0490/) |
+| K491 | [Nam Jaewon](/wiki/people/person-0491/) |
+| K492 | [Sim Byeolhyeon](/wiki/people/person-0492/) |
+| K493 | [No Jua](/wiki/people/person-0493/) |
+| K494 | [David Fischer](/wiki/people/person-0494/) |
+| K495 | [Gwak Daho](/wiki/people/person-0495/) |
+| K496 | [Seong Daehyeon](/wiki/people/person-0496/) |
+| K497 | [Cha Jihwan](/wiki/people/person-0497/) |
+| K498 | [Ju Rain](/wiki/people/person-0498/) |
+| K499 | [U Hajin](/wiki/people/person-0499/) |
+| K500 | [Gu Sohui](/wiki/people/person-0500/) |
+| K501 | [Min Pahyeon](/wiki/people/person-0501/) |
+| K502 | [Jin Junhyeok](/wiki/people/person-0502/) |
+| K503 | [Kim Junho](/wiki/people/person-0503/) |
+| K504 | [I Neulmin](/wiki/people/person-0504/) |
+| K505 | [Bak Haeun](/wiki/people/person-0505/) |
+| K506 | [Choe Reuma](/wiki/people/person-0506/) |
+| K507 | [Jeong Bajun](/wiki/people/person-0507/) |
+| K508 | [Kang Hajun](/wiki/people/person-0508/) |
+| K509 | [Jo Saejun](/wiki/people/person-0509/) |
+| K510 | [Chiara Ricci](/wiki/people/person-0510/) |
+| K511 | [Jang Harin](/wiki/people/person-0511/) |
+| K512 | [Im Jana](/wiki/people/person-0512/) |
+| K513 | [Han Tau](/wiki/people/person-0513/) |
+| K514 | [O Jiho](/wiki/people/person-0514/) |
+| K515 | [Seo Seoseo](/wiki/people/person-0515/) |
+| K516 | [Sin Habin](/wiki/people/person-0516/) |
+| K517 | [Gwon Yerin](/wiki/people/person-0517/) |
+| K518 | [Hwang Gua](/wiki/people/person-0518/) |
+| K519 | [An Gangmin](/wiki/people/person-0519/) |
+| K520 | [Song Jaehyeon](/wiki/people/person-0520/) |
+| K521 | [Ryu Ramhyeon](/wiki/people/person-0521/) |
+| K522 | [Hong Nawon](/wiki/people/person-0522/) |
+| K523 | [Go Yujin](/wiki/people/person-0523/) |
+| K524 | [Mun Aeun](/wiki/people/person-0524/) |
+| K525 | [Yang Katae](/wiki/people/person-0525/) |
+| K526 | [Pavel Nemets](/wiki/people/person-0526/) |
+| K527 | [Bae Dong-min](/wiki/people/person-0527/) |
+| K528 | [Baek Buk-rae](/wiki/people/person-0528/) |
+| K529 | [Heo Eun-seo](/wiki/people/person-0529/) |
+| K530 | [Yu Bit-yeong](/wiki/people/person-0530/) |
+| K531 | [Nam San-won](/wiki/people/person-0531/) |
+| K532 | [Sim Tae-yang](/wiki/people/person-0532/) |
+| K533 | [No Ba-ho](/wiki/people/person-0533/) |
+| K534 | [Ha Ga-eun](/wiki/people/person-0534/) |
+| K535 | [Gwak Ji-hyeon](/wiki/people/person-0535/) |
+| K536 | [Seong Sa-hyeon](/wiki/people/person-0536/) |
+| K537 | [Cha Cha-hwan](/wiki/people/person-0537/) |
+| K538 | [Ju U-seok](/wiki/people/person-0538/) |
+| K539 | [U Eun-min](/wiki/people/person-0539/) |
+| K540 | [Gu Nam-hui](/wiki/people/person-0540/) |
+| K541 | [Min Yeon-u](/wiki/people/person-0541/) |
+| K542 | [Andrei Ivanov](/wiki/people/person-0542/) |
+| K543 | [Kim Reum-ho](/wiki/people/person-0543/) |
+| K544 | [I Ba-seok](/wiki/people/person-0544/) |
+| K545 | [Bak Dol-yun](/wiki/people/person-0545/) |
+| K546 | [Choe Sae-a](/wiki/people/person-0546/) |
+| K547 | [Jeong Da-eun](/wiki/people/person-0547/) |
+| K548 | [Gang Bayu](/wiki/people/person-0548/) |
+| K549 | [Jo Jajun](/wiki/people/person-0549/) |
+| K550 | [Yun Tau](/wiki/people/person-0550/) |
+| K551 | [Jang Geumwon](/wiki/people/person-0551/) |
+| K552 | [Im Seona](/wiki/people/person-0552/) |
+| K553 | [Han Haseo](/wiki/people/person-0553/) |
+| K554 | [O Solseo](/wiki/people/person-0554/) |
+| K555 | [Seo Guseo](/wiki/people/person-0555/) |
+| K556 | [Sin Gangmin](/wiki/people/person-0556/) |
+| K557 | [Gwon Supyun](/wiki/people/person-0557/) |
+| K558 | [Millicent Mensa](/wiki/people/person-0558/) |
+| K559 | [An Naneul](/wiki/people/person-0559/) |
+| K560 | [Song Maji](/wiki/people/person-0560/) |
+| K561 | [Ryu Ahyeon](/wiki/people/person-0561/) |
+| K562 | [Hong Kahun](/wiki/people/person-0562/) |
+| K563 | [Go Haho](/wiki/people/person-0563/) |
+| K564 | [Mun Dongeun](/wiki/people/person-0564/) |
+| K565 | [Yang Bukhyeon](/wiki/people/person-0565/) |
+| K566 | [Son Byeolyeon](/wiki/people/person-0566/) |
+| K567 | [Bae Bitmin](/wiki/people/person-0567/) |
+| K568 | [Baek Sanseok](/wiki/people/person-0568/) |
+| K569 | [Heo Dau](/wiki/people/person-0569/) |
+| K570 | [Yu Bayeong](/wiki/people/person-0570/) |
+| K571 | [Nam Gaeun](/wiki/people/person-0571/) |
+| K572 | [Sim Rahyeon](/wiki/people/person-0572/) |
+| K573 | [No Saho](/wiki/people/person-0573/) |
+| K574 | [Colin Murphy](/wiki/people/person-0574/) |
+| K575 | [Gwak Paho](/wiki/people/person-0575/) |
+| K576 | [Seong Eunhyeon](/wiki/people/person-0576/) |
+| K577 | [Cha Namwon](/wiki/people/person-0577/) |
+| K578 | [Ju Neurin](/wiki/people/person-0578/) |
+| K579 | [U Dalmin](/wiki/people/person-0579/) |
+| K580 | [Gu Reumgyeol](/wiki/people/person-0580/) |
+| K581 | [Min Bahyeon](/wiki/people/person-0581/) |
+| K582 | [Jin Dollin](/wiki/people/person-0582/) |
+| K583 | [Kim Saeyeon](/wiki/people/person-0583/) |
+| K584 | [I Damin](/wiki/people/person-0584/) |
+| K585 | [Bak Bayun](/wiki/people/person-0585/) |
+| K586 | [Choe Jahun](/wiki/people/person-0586/) |
+| K587 | [Jeong Tajun](/wiki/people/person-0587/) |
+| K588 | [Gang Geumyu](/wiki/people/person-0588/) |
+| K589 | [Jo Seowon](/wiki/people/person-0589/) |
+| K590 | [Juliana Reed](/wiki/people/person-0590/) |
+| K591 | [Jang Solwon](/wiki/people/person-0591/) |
+| K592 | [Im Guu](/wiki/people/person-0592/) |
+| K593 | [Han Gangu](/wiki/people/person-0593/) |
+| K594 | [O Supseo](/wiki/people/person-0594/) |
+| K595 | [Seo Rameun](/wiki/people/person-0595/) |
+| K596 | [Sin Nabin](/wiki/people/person-0596/) |
+| K597 | [Gwon Mayun](/wiki/people/person-0597/) |
+| K598 | [Hwang Ajin](/wiki/people/person-0598/) |
+| K599 | [An Kamin](/wiki/people/person-0599/) |
+| K600 | [Song Haji](/wiki/people/person-0600/) |
+| K601 | [Ryu Dongyeon](/wiki/people/person-0601/) |
+| K602 | [Hong Bugwon](/wiki/people/person-0602/) |
+| K603 | [Go Byeolho](/wiki/people/person-0603/) |
+| K604 | [Mun Bitmin](/wiki/people/person-0604/) |
+| K605 | [Yang Santae](/wiki/people/person-0605/) |
+| K606 | [Simon Kaminski](/wiki/people/person-0606/) |
+| K607 | [Bae Bawon](/wiki/people/person-0607/) |
+| K608 | [Baek Garae](/wiki/people/person-0608/) |
+| K609 | [Heo Rau](/wiki/people/person-0609/) |
+| K610 | [Yu Sahun](/wiki/people/person-0610/) |
+| K611 | [Nam Chawon](/wiki/people/person-0611/) |
+| K612 | [Sim Pahyeon](/wiki/people/person-0612/) |
+| K613 | [No Euna](/wiki/people/person-0613/) |
+| K614 | [Ha Nameun](/wiki/people/person-0614/) |
+| K615 | [Gwak Neulho](/wiki/people/person-0615/) |
+| K616 | [Seong Dalhyeon](/wiki/people/person-0616/) |
+| K617 | [Cha Reumhwan](/wiki/people/person-0617/) |
+| K618 | [Ju Bain](/wiki/people/person-0618/) |
+| K619 | [U Doljin](/wiki/people/person-0619/) |
+| K620 | [Gu Saehui](/wiki/people/person-0620/) |
+| K621 | [Min Dahyeon](/wiki/people/person-0621/) |
+| K622 | [Mihai Ionescu](/wiki/people/person-0622/) |
+| K623 | [Kim Jaho](/wiki/people/person-0623/) |
+| K624 | [I Tamin](/wiki/people/person-0624/) |
+| K625 | [Bak Geumeun](/wiki/people/person-0625/) |
+| K626 | [Choe Seoa](/wiki/people/person-0626/) |
+| K627 | [Jeong Hajun](/wiki/people/person-0627/) |
+| K628 | [Kang Soljun](/wiki/people/person-0628/) |
+| K629 | [Jo Gujun](/wiki/people/person-0629/) |
+| K630 | [Yun Gangyul](/wiki/people/person-0630/) |
+| K631 | [Jang Sumnin](/wiki/people/person-0631/) |
+| K632 | [Im Ramna](/wiki/people/person-0632/) |
+| K633 | [Han Nau](/wiki/people/person-0633/) |
+| K634 | [O Maho](/wiki/people/person-0634/) |
+| K635 | [Seo Aseo](/wiki/people/person-0635/) |
+| K636 | [Sin Kabin](/wiki/people/person-0636/) |
+| K637 | [Gwon Harin](/wiki/people/person-0637/) |
+| K638 | [Zofia Dobrowska](/wiki/people/person-0638/) |
+| K639 | [An Bungmin](/wiki/people/person-0639/) |
+| K640 | [Song Byeolhyeon](/wiki/people/person-0640/) |
+| K641 | [Ryu Bipyeon](/wiki/people/person-0641/) |
+| K642 | [Hong Sanwon](/wiki/people/person-0642/) |
+| K643 | [Go Dajin](/wiki/people/person-0643/) |
+| K644 | [Mun Baeun](/wiki/people/person-0644/) |
+| K645 | [Yang Gatae](/wiki/people/person-0645/) |
+| K646 | [Son Raho](/wiki/people/person-0646/) |
+| K647 | [Bae Samin](/wiki/people/person-0647/) |
+| K648 | [Baek Charae](/wiki/people/person-0648/) |
+| K649 | [Heo Paseo](/wiki/people/person-0649/) |
+| K650 | [Yu Eunyeong](/wiki/people/person-0650/) |
+| K651 | [Nam Namwon](/wiki/people/person-0651/) |
+| K652 | [Sim Neuryang](/wiki/people/person-0652/) |
+| K653 | [No Dalho](/wiki/people/person-0653/) |
+| K654 | [Dimitar Georgiev](/wiki/people/person-0654/) |
+| K655 | [Gwak Bahyeon](/wiki/people/person-0655/) |
+| K656 | [Seong Dolhyeon](/wiki/people/person-0656/) |
+| K657 | [Cha Saehwan](/wiki/people/person-0657/) |
+| K658 | [Ju Daseok](/wiki/people/person-0658/) |
+| K659 | [U Bamin](/wiki/people/person-0659/) |
+| K660 | [Gu Jahui](/wiki/people/person-0660/) |
+| K661 | [Min Tau](/wiki/people/person-0661/) |
+| K662 | [Jin Geumnin](/wiki/people/person-0662/) |
+| K663 | [Kim Seoho](/wiki/people/person-0663/) |
+| K664 | [I Haseok](/wiki/people/person-0664/) |
+| K665 | [Bak Solyun](/wiki/people/person-0665/) |
+| K666 | [Choe Gua](/wiki/people/person-0666/) |
+| K667 | [Jeong Gangeun](/wiki/people/person-0667/) |
+| K668 | [Kang Supyu](/wiki/people/person-0668/) |
+| K669 | [Jo Ramjun](/wiki/people/person-0669/) |
+| K670 | [Hanna Weber](/wiki/people/person-0670/) |
+| K671 | [Jang Mawon](/wiki/people/person-0671/) |
+| K672 | [Im Ana](/wiki/people/person-0672/) |
+| K673 | [Han Kaseo](/wiki/people/person-0673/) |
+| K674 | [O Haseo](/wiki/people/person-0674/) |
+| K675 | [Seo Dongseo](/wiki/people/person-0675/) |
+| K676 | [Sin Bungmin](/wiki/people/person-0676/) |
+| K677 | [Gwon Byeoryun](/wiki/people/person-0677/) |
+| K678 | [Hwang Bicha](/wiki/people/person-0678/) |
+| K679 | [An Sanneul](/wiki/people/person-0679/) |
+| K680 | [Song Daji](/wiki/people/person-0680/) |
+| K681 | [Ryu Bahyeon](/wiki/people/person-0681/) |
+| K682 | [Hong Gahun](/wiki/people/person-0682/) |
+| K683 | [Go Raho](/wiki/people/person-0683/) |
+| K684 | [Mun Saeun](/wiki/people/person-0684/) |
+| K685 | [Yang Chahyeon](/wiki/people/person-0685/) |
+| K686 | [Théodore Durand](/wiki/people/person-0686/) |
+| K687 | [Bae Eunmin](/wiki/people/person-0687/) |
+| K688 | [Baek Namseok](/wiki/people/person-0688/) |
+| K689 | [Heo Neuru](/wiki/people/person-0689/) |
+| K690 | [Yu Daryeong](/wiki/people/person-0690/) |
+| K691 | [Nam Reumeun](/wiki/people/person-0691/) |
+| K692 | [Sim Bahyeon](/wiki/people/person-0692/) |
+| K693 | [No Dolho](/wiki/people/person-0693/) |
+| K694 | [Ha Saejae](/wiki/people/person-0694/) |
+| K695 | [Seong Bahyeon](/wiki/people/person-0695/) |
+| K696 | [Cha Jawon](/wiki/people/person-0696/) |
+| K697 | [Ju Tain](/wiki/people/person-0697/) |
+| K698 | [U Geummin](/wiki/people/person-0698/) |
+| K699 | [Gu Seogyeol](/wiki/people/person-0699/) |
+| K700 | [Min Hahyeon](/wiki/people/person-0700/) |
+| K701 | [Jin Sollin](/wiki/people/person-0701/) |
+| K702 | [Owen Kelly](/wiki/people/person-0702/) |
+| K703 | [I Gangmin](/wiki/people/person-0703/) |
+| K704 | [Bak Supyun](/wiki/people/person-0704/) |
+| K705 | [Choe Ramhun](/wiki/people/person-0705/) |
+| K706 | [Jeong Najun](/wiki/people/person-0706/) |
+| K707 | [Gang Mayu](/wiki/people/person-0707/) |
+| K708 | [Jo Awon](/wiki/people/person-0708/) |
+| K709 | [Yun Kayul](/wiki/people/person-0709/) |
+| K710 | [Jang Hawon](/wiki/people/person-0710/) |
+| K711 | [Im Dongu](/wiki/people/person-0711/) |
+| K712 | [Han Bugu](/wiki/people/person-0712/) |
+| K713 | [O Byeolseo](/wiki/people/person-0713/) |
+| K714 | [Seo Bicheun](/wiki/people/person-0714/) |
+| K715 | [Sin Sanbin](/wiki/people/person-0715/) |
+| K716 | [Gwon Dayun](/wiki/people/person-0716/) |
+| K717 | [Hwang Bajin](/wiki/people/person-0717/) |
+| K718 | [Abigail Robinson](/wiki/people/person-0718/) |
+| K719 | [Song Dohyeon](/wiki/people/person-0719/) |
+| K720 | [Ryu Sayeon](/wiki/people/person-0720/) |
+| K721 | [Hong Chawon](/wiki/people/person-0721/) |
+| K722 | [Go Paho](/wiki/people/person-0722/) |
+| K723 | [Mun Eunmin](/wiki/people/person-0723/) |
+| K724 | [Yang Namtae](/wiki/people/person-0724/) |
+| K725 | [Son Neuryeon](/wiki/people/person-0725/) |
+| K726 | [Bae Darwon](/wiki/people/person-0726/) |
+| K727 | [Baek Reumrae](/wiki/people/person-0727/) |
+| K728 | [Heo Bau](/wiki/people/person-0728/) |
+| K729 | [Yu Dolhun](/wiki/people/person-0729/) |
+| K730 | [Nam Saewon](/wiki/people/person-0730/) |
+| K731 | [No Baa](/wiki/people/person-0731/) |
+| K732 | [Ha Jaeun](/wiki/people/person-0732/) |
+| K733 | [Gwak Taho](/wiki/people/person-0733/) |
+| K734 | [Christopher Scott](/wiki/people/person-0734/) |
+| K735 | [Cha Seohwan](/wiki/people/person-0735/) |
+| K736 | [Ju Hain](/wiki/people/person-0736/) |
+| K737 | [U Soljin](/wiki/people/person-0737/) |
+| K738 | [Gu Gu-hui](/wiki/people/person-0738/) |
+| K739 | [Min Gang-hyeon](/wiki/people/person-0739/) |
+| K740 | [Jin Sup-hyeok](/wiki/people/person-0740/) |
+| K741 | [Kim Ram-ho](/wiki/people/person-0741/) |
+| K742 | [I Na-min](/wiki/people/person-0742/) |
+| K743 | [Bak Ma-eun](/wiki/people/person-0743/) |
+| K744 | [Choe A-a](/wiki/people/person-0744/) |
+| K745 | [Jeong Ka-jun](/wiki/people/person-0745/) |
+| K746 | [Jo Dong-jun](/wiki/people/person-0746/) |
+| K747 | [Yun Buk-yul](/wiki/people/person-0747/) |
+| K748 | [Jang Byeol-lin](/wiki/people/person-0748/) |
+| K749 | [Im Bit-na](/wiki/people/person-0749/) |
+| K750 | [Olena Melnyk](/wiki/people/person-0750/) |
+| K751 | [O Da-ho](/wiki/people/person-0751/) |
+| K752 | [Seo Ba-seo](/wiki/people/person-0752/) |
+| K753 | [Sin Ga-bin](/wiki/people/person-0753/) |
+| K754 | [Gwon Ra-rin](/wiki/people/person-0754/) |
+| K755 | [Hwang Sa-a](/wiki/people/person-0755/) |
+| K756 | [An Cha-min](/wiki/people/person-0756/) |
+| K757 | [Song Pa-hyeon](/wiki/people/person-0757/) |
+| K758 | [Ryu Eun-hyeon](/wiki/people/person-0758/) |
+| K759 | [Hong Nam-won](/wiki/people/person-0759/) |
+| K760 | [Go Neul-jin](/wiki/people/person-0760/) |
+| K761 | [Mun Dal-eun](/wiki/people/person-0761/) |
+| K762 | [Yang Reum-tae](/wiki/people/person-0762/) |
+| K763 | [Son Ba-ho](/wiki/people/person-0763/) |
+| K764 | [Bae Dol-min](/wiki/people/person-0764/) |
+| K765 | [Baek Sae-rae](/wiki/people/person-0765/) |
+| K766 | [Lorenzo Conti](/wiki/people/person-0766/) |
+| K767 | [Nam Ja-won](/wiki/people/person-0767/) |
+| K768 | [Sim Ta-yang](/wiki/people/person-0768/) |
+| K769 | [No Geum-ho](/wiki/people/person-0769/) |
+| K770 | [Ha Seo-eun](/wiki/people/person-0770/) |
+| K771 | [Gwak Ha-hyeon](/wiki/people/person-0771/) |
+| K772 | [Seong Sol-hyeon](/wiki/people/person-0772/) |
+| K773 | [Cha Gu-hwan](/wiki/people/person-0773/) |
+| K774 | [Ju Gang-seok](/wiki/people/person-0774/) |
+| K775 | [U Sup-min](/wiki/people/person-0775/) |
+| K776 | [Gu Ram-hui](/wiki/people/person-0776/) |
+| K777 | [Min Na-u](/wiki/people/person-0777/) |
+| K778 | [Jin Ma-rin](/wiki/people/person-0778/) |
+| K779 | [Kim A-ho](/wiki/people/person-0779/) |
+| K780 | [I Ka-seok](/wiki/people/person-0780/) |
+| K781 | [Bak Ha-yun](/wiki/people/person-0781/) |
+| K782 | [Nikita Volkov](/wiki/people/person-0782/) |
+| K783 | [Jeong Buk-eun](/wiki/people/person-0783/) |
+| K784 | [Gang Byeol-yu](/wiki/people/person-0784/) |
+| K785 | [Jo Bit-jun](/wiki/people/person-0785/) |
+| K786 | [Yun San-u](/wiki/people/person-0786/) |
+| K787 | [Jang Da-won](/wiki/people/person-0787/) |
+| K788 | [Im Ba-na](/wiki/people/person-0788/) |
+| K789 | [Han Ga-seo](/wiki/people/person-0789/) |
+| K790 | [O Ra-seo](/wiki/people/person-0790/) |
+| K791 | [Seo Sa-seo](/wiki/people/person-0791/) |
+| K792 | [Sin Cha-min](/wiki/people/person-0792/) |
+| K793 | [Gwon Payun](/wiki/people/person-0793/) |
+| K794 | [Hwang Euna](/wiki/people/person-0794/) |
+| K795 | [An Namneul](/wiki/people/person-0795/) |
+| K796 | [Song Neulji](/wiki/people/person-0796/) |
+| K797 | [Ryu Dalhyeon](/wiki/people/person-0797/) |
+| K798 | [Emma King](/wiki/people/person-0798/) |
+| K799 | [Go Baho](/wiki/people/person-0799/) |
+| K800 | [Mun Doreun](/wiki/people/person-0800/) |
+| K801 | [Yang Saehyeon](/wiki/people/person-0801/) |
+| K802 | [Bae Bamin](/wiki/people/person-0802/) |
+| K803 | [Baek Jaseok](/wiki/people/person-0803/) |
+| K804 | [Heo Tau](/wiki/people/person-0804/) |
+| K805 | [Yu Geumyeong](/wiki/people/person-0805/) |
+| K806 | [Nam Seoeun](/wiki/people/person-0806/) |
+| K807 | [Sim Hahyeon](/wiki/people/person-0807/) |
+| K808 | [No Solho](/wiki/people/person-0808/) |
+| K809 | [Ha Gujae](/wiki/people/person-0809/) |
+| K810 | [Gwak Gangho](/wiki/people/person-0810/) |
+| K811 | [Seong Supyeon](/wiki/people/person-0811/) |
+| K812 | [Cha Ramwon](/wiki/people/person-0812/) |
+| K813 | [Ju Nain](/wiki/people/person-0813/) |
+| K814 | [Tomáš Svoboda](/wiki/people/person-0814/) |
+| K815 | [Gu Agyeol](/wiki/people/person-0815/) |
+| K816 | [Min Kahyeon](/wiki/people/person-0816/) |
+| K817 | [Jin Harin](/wiki/people/person-0817/) |
+| K818 | [Kim Dongyeon](/wiki/people/person-0818/) |
+| K819 | [I Bungmin](/wiki/people/person-0819/) |
+| K820 | [Bak Byeoryun](/wiki/people/person-0820/) |
+| K821 | [Choe Bichun](/wiki/people/person-0821/) |
+| K822 | [Jeong Sanjun](/wiki/people/person-0822/) |
+| K823 | [Gang Dayu](/wiki/people/person-0823/) |
+| K824 | [Jo Bawon](/wiki/people/person-0824/) |
+| K825 | [Yun Gayul](/wiki/people/person-0825/) |
+| K826 | [Jang Rawon](/wiki/people/person-0826/) |
+| K827 | [Im Sau](/wiki/people/person-0827/) |
+| K828 | [Han Chau](/wiki/people/person-0828/) |
+| K829 | [O Paseo](/wiki/people/person-0829/) |
+| K830 | [Amina Ndiaye](/wiki/people/person-0830/) |
+| K831 | [Sin Nambin](/wiki/people/person-0831/) |
+| K832 | [Gwon Neuryun](/wiki/people/person-0832/) |
+| K833 | [Hwang Daljin](/wiki/people/person-0833/) |
+| K834 | [An Reummin](/wiki/people/person-0834/) |
+| K835 | [Song Baji](/wiki/people/person-0835/) |
+| K836 | [Ryu Doryeon](/wiki/people/person-0836/) |
+| K837 | [Hong Saewon](/wiki/people/person-0837/) |
+| K838 | [Go Daho](/wiki/people/person-0838/) |
+| K839 | [Mun Bamin](/wiki/people/person-0839/) |
+| K840 | [Yang Jatae](/wiki/people/person-0840/) |
+| K841 | [Son Tayeon](/wiki/people/person-0841/) |
+| K842 | [Bae Geumwon](/wiki/people/person-0842/) |
+| K843 | [Baek Seorae](/wiki/people/person-0843/) |
+| K844 | [Yu Solhun](/wiki/people/person-0844/) |
+| K845 | [Nam Guwon](/wiki/people/person-0845/) |
+| K846 | [Jacob Thomas](/wiki/people/person-0846/) |
+| K847 | [No Supa](/wiki/people/person-0847/) |
+| K848 | [Ha Rameun](/wiki/people/person-0848/) |
+| K849 | [Gwak Naho](/wiki/people/person-0849/) |
+| K850 | [Seong Mahyeon](/wiki/people/person-0850/) |
+| K851 | [Cha Ahwan](/wiki/people/person-0851/) |
+| K852 | [Ju Kain](/wiki/people/person-0852/) |
+| K853 | [Gu Donghui](/wiki/people/person-0853/) |
+| K854 | [Min Bukhyeon](/wiki/people/person-0854/) |
+| K855 | [Jin Byeolhyeok](/wiki/people/person-0855/) |
+| K856 | [Kim Bitho](/wiki/people/person-0856/) |
+| K857 | [I Sanmin](/wiki/people/person-0857/) |
+| K858 | [Bak Daeun](/wiki/people/person-0858/) |
+| K859 | [Choe Baa](/wiki/people/person-0859/) |
+| K860 | [Jeong Gajun](/wiki/people/person-0860/) |
+| K861 | [Gang Rajun](/wiki/people/person-0861/) |
+| K862 | [Viktor Stanescu](/wiki/people/person-0862/) |
+| K863 | [Yun Chayul](/wiki/people/person-0863/) |
+| K864 | [Jang Parin](/wiki/people/person-0864/) |
+| K865 | [Im Eunna](/wiki/people/person-0865/) |
+| K866 | [Han Namu](/wiki/people/person-0866/) |
+| K867 | [O Neulho](/wiki/people/person-0867/) |
+| K868 | [Seo Dalseo](/wiki/people/person-0868/) |
+| K869 | [Sin Reumbin](/wiki/people/person-0869/) |
+| K870 | [Gwon Barin](/wiki/people/person-0870/) |
+| K871 | [Hwang Dora](/wiki/people/person-0871/) |
+| K872 | [An Saemin](/wiki/people/person-0872/) |
+| K873 | [Song Dahyeon](/wiki/people/person-0873/) |
+| K874 | [Hong Jawon](/wiki/people/person-0874/) |
+| K875 | [Go Tajin](/wiki/people/person-0875/) |
+| K876 | [Mun Geumeun](/wiki/people/person-0876/) |
+| K877 | [Yang Seotae](/wiki/people/person-0877/) |
+| K878 | [Camilla Mazur](/wiki/people/person-0878/) |
+| K879 | [Bae Solmin](/wiki/people/person-0879/) |
+| K880 | [Baek Gurae](/wiki/people/person-0880/) |
+| K881 | [Heo Gangseo](/wiki/people/person-0881/) |
+| K882 | [Yu Supyeong](/wiki/people/person-0882/) |
+| K883 | [Nam Ramwon](/wiki/people/person-0883/) |
+| K884 | [Sim Nayang](/wiki/people/person-0884/) |
+| K885 | [No Maho](/wiki/people/person-0885/) |
+| K886 | [Ha Aeun](/wiki/people/person-0886/) |
+| K887 | [Gwak Kahyeon](/wiki/people/person-0887/) |
+| K888 | [Seong Hahyeon](/wiki/people/person-0888/) |
+| K889 | [Cha Donghwan](/wiki/people/person-0889/) |
+| K890 | [Ju Bukseok](/wiki/people/person-0890/) |
+| K891 | [U Byeolmin](/wiki/people/person-0891/) |
+| K892 | [Gu Bithui](/wiki/people/person-0892/) |
+| K893 | [Min Sanu](/wiki/people/person-0893/) |
+| K894 | [Sebastian Braun](/wiki/people/person-0894/) |
+| K895 | [Kim Baho](/wiki/people/person-0895/) |
+| K896 | [I Gaseok](/wiki/people/person-0896/) |
+| K897 | [Bak Rayun](/wiki/people/person-0897/) |
+| K898 | [Choe Saa](/wiki/people/person-0898/) |
+| K899 | [Jeong Chaeun](/wiki/people/person-0899/) |
+| K900 | [Gang Payu](/wiki/people/person-0900/) |
+| K901 | [Jo Eunjun](/wiki/people/person-0901/) |
+| K902 | [Yun Namu](/wiki/people/person-0902/) |
+| K903 | [Jang Neulwon](/wiki/people/person-0903/) |
+| K904 | [Im Dalla](/wiki/people/person-0904/) |
+| K905 | [Han Reumseo](/wiki/people/person-0905/) |
+| K906 | [Seo Dolseo](/wiki/people/person-0906/) |
+| K907 | [Sin Saemin](/wiki/people/person-0907/) |
+| K908 | [Hwang Baa](/wiki/people/person-0908/) |
+| K909 | [An Janeul](/wiki/people/person-0909/) |
+| K910 | [Mariya Kovalenko](/wiki/people/person-0910/) |
+| K911 | [Ryu Geumhyeon](/wiki/people/person-0911/) |
+| K912 | [Hong Seohun](/wiki/people/person-0912/) |
+| K913 | [Mun Soreun](/wiki/people/person-0913/) |
+| K914 | [Yang Guhyeon](/wiki/people/person-0914/) |
+| K915 | [Son Gangyeon](/wiki/people/person-0915/) |
+| K916 | [Bae Summin](/wiki/people/person-0916/) |
+| K917 | [Baek Ramseok](/wiki/people/person-0917/) |
+| K918 | [Heo Nau](/wiki/people/person-0918/) |
+| K919 | [Yu Mayeong](/wiki/people/person-0919/) |
+| K920 | [Nam Aeun](/wiki/people/person-0920/) |
+| K921 | [Sim Kahyeon](/wiki/people/person-0921/) |
+| K922 | [No Haho](/wiki/people/person-0922/) |
+| K923 | [Ha Dongjae](/wiki/people/person-0923/) |
+| K924 | [Gwak Bukho](/wiki/people/person-0924/) |
+| K925 | [Seong Byeolhyeon](/wiki/people/person-0925/) |
+| K926 | [Étienne Moreau](/wiki/people/person-0926/) |
+| K927 | [Ju Sanin](/wiki/people/person-0927/) |
+| K928 | [U Damin](/wiki/people/person-0928/) |
+| K929 | [Gu Bagyeol](/wiki/people/person-0929/) |
+| K930 | [Min Gahyeon](/wiki/people/person-0930/) |
+| K931 | [Jin Rarin](/wiki/people/person-0931/) |
+| K932 | [Kim Sayeon](/wiki/people/person-0932/) |
+| K933 | [I Chamin](/wiki/people/person-0933/) |
+| K934 | [Bak Payun](/wiki/people/person-0934/) |
+| K935 | [Choe Eunhun](/wiki/people/person-0935/) |
+| K936 | [Jeong Namjun](/wiki/people/person-0936/) |
+| K937 | [Gang Neuryu](/wiki/people/person-0937/) |
+| K938 | [Jo Darwon](/wiki/people/person-0938/) |
+| K939 | [Yun Reumyul](/wiki/people/person-0939/) |
+| K940 | [Jang Bawon](/wiki/people/person-0940/) |
+| K941 | [Im Doru](/wiki/people/person-0941/) |
+| K942 | [George Anderson](/wiki/people/person-0942/) |
+| K943 | [O Daseo](/wiki/people/person-0943/) |
+| K944 | [Seo Baeun](/wiki/people/person-0944/) |
+| K945 | [Sin Jabin](/wiki/people/person-0945/) |
+| K946 | [Gwon Tayun](/wiki/people/person-0946/) |
+| K947 | [Hwang Geumjin](/wiki/people/person-0947/) |
+| K948 | [An Seomin](/wiki/people/person-0948/) |
+| K949 | [Ryu Soryeon](/wiki/people/person-0949/) |
+| K950 | [Hong Guwon](/wiki/people/person-0950/) |
+| K951 | [Go Gangho](/wiki/people/person-0951/) |
+| K952 | [Mun Summin](/wiki/people/person-0952/) |
+| K953 | [Yang Ramtae](/wiki/people/person-0953/) |
+| K954 | [Bae Mawon](/wiki/people/person-0954/) |
+| K955 | [Baek Arae](/wiki/people/person-0955/) |
+| K956 | [Heo Kau](/wiki/people/person-0956/) |
+| K957 | [Yu Hahun](/wiki/people/person-0957/) |
+| K958 | [Barbora Prohaskova](/wiki/people/person-0958/) |
+| K959 | [Sim Bukhyeon](/wiki/people/person-0959/) |
+| K960 | [No Byeora](/wiki/people/person-0960/) |
+| K961 | [Ha Bicheun](/wiki/people/person-0961/) |
+| K962 | [Gwak Sanho](/wiki/people/person-0962/) |
+| K963 | [Seong Dahyeon](/wiki/people/person-0963/) |
+| K964 | [Cha Bahwan](/wiki/people/person-0964/) |
+| K965 | [Ju Gain](/wiki/people/person-0965/) |
+| K966 | [U Rajin](/wiki/people/person-0966/) |
+| K967 | [Gu Sahui](/wiki/people/person-0967/) |
+| K968 | [Min Chahyeon](/wiki/people/person-0968/) |
+| K969 | [Jin Pahyeok](/wiki/people/person-0969/) |
+| K970 | [Kim Eunho](/wiki/people/person-0970/) |
+| K971 | [I Nammin](/wiki/people/person-0971/) |
+| K972 | [Bak Neureun](/wiki/people/person-0972/) |
+| K973 | [Choe Dara](/wiki/people/person-0973/) |
+| K974 | [Miguel Torres](/wiki/people/person-0974/) |
+| K975 | [Gang Bajun](/wiki/people/person-0975/) |
+| K976 | [Jo Doljun](/wiki/people/person-0976/) |
+| K977 | [Yun Saeyul](/wiki/people/person-0977/) |
+| K978 | [Jang Darin](/wiki/people/person-0978/) |
+| K979 | [Han Jau](/wiki/people/person-0979/) |
+| K980 | [O Taho](/wiki/people/person-0980/) |
+| K981 | [Seo Geumseo](/wiki/people/person-0981/) |
+| K982 | [Sin Seobin](/wiki/people/person-0982/) |
+| K983 | [Hwang Sora](/wiki/people/person-0983/) |
+| K984 | [An Gumin](/wiki/people/person-0984/) |
+| K985 | [Song Ganghyeon](/wiki/people/person-0985/) |
+| K986 | [Ryu Sup-hyeon](/wiki/people/person-0986/) |
+| K987 | [Hong Ramwon](/wiki/people/person-0987/) |
+| K988 | [Go Najin](/wiki/people/person-0988/) |
+| K989 | [Mun Maeun](/wiki/people/person-0989/) |
+| K990 | [Isabel Garcia](/wiki/people/person-0990/) |
+| K991 | [Son Kaho](/wiki/people/person-0991/) |
+| K992 | [Bae Hamin](/wiki/people/person-0992/) |
+| K993 | [Baek Dongrae](/wiki/people/person-0993/) |
+| K994 | [Heo Bukseo](/wiki/people/person-0994/) |
+| K995 | [Yu Byeoryeong](/wiki/people/person-0995/) |
+| K996 | [Nam Bichwon](/wiki/people/person-0996/) |
+| K997 | [Sim Sanyang](/wiki/people/person-0997/) |
+| K998 | [I Ilseop](/wiki/people/person-0998/) |
+| K999 | [No Daho](/wiki/people/person-0999/) |
+| K1000 | [Ha Baeun](/wiki/people/person-1000/) |
+| K1001 | [Gwak Gahyeon](/wiki/people/person-1001/) |
+| K1002 | [Seong Rahyeon](/wiki/people/person-1002/) |
 | unaffiliated-jaepyo-jo | [Jo Jaepyo](/wiki/people/person-1003/) |
 | iyen | [I Yeon](/wiki/people/person-1004/) |
-| K1005 | [K1005](/wiki/people/person-1005/) |
-| K1006 | [K1006](/wiki/people/person-1006/) |
-| K1007 | [K1007](/wiki/people/person-1007/) |
-| K1008 | [Min Woonggi](/wiki/people/person-1008/) |
-| K1009 | [Shin Jongmok](/wiki/people/person-1009/) |
-| K1010 | [Shin Jun](/wiki/people/person-1010/) |
-| K1011 | [K1011](/wiki/people/person-1011/) |
-| K1012 | [K1012](/wiki/people/person-1012/) |
-| K1013 | [K1013](/wiki/people/person-1013/) |
-| K1014 | [K1014](/wiki/people/person-1014/) |
-| K1015 | [K1015](/wiki/people/person-1015/) |
-| K1016 | [K1016](/wiki/people/person-1016/) |
-| K1017 | [Ji Yeonhee](/wiki/people/person-1017/) |
-| K1018 | [Goh Yejin](/wiki/people/person-1018/) |
-| K1019 | [Park Seongsu](/wiki/people/person-1019/) |
-| K1020 | [Han Seogyeong](/wiki/people/person-1020/) |
-| K1021 | [Cha Yuseon](/wiki/people/person-1021/) |
-| K1022 | [Mun Dohyeon](/wiki/people/person-1022/) |
+| K1005 | [Jeong Seoon](/wiki/people/person-1005/) |
+| K1006 | [Tak Seoyun](/wiki/people/person-1006/) |
+| K1007 | [Kim Yeongyu](/wiki/people/person-1007/) |
+| K1008 | [Min Ung-gi](/wiki/people/person-1008/) |
+| K1009 | [Sin Jong-mok](/wiki/people/person-1009/) |
+| K1010 | [Sin Jun](/wiki/people/person-1010/) |
+| K1011 | [Lin Xiaomei](/wiki/people/person-1011/) |
+| K1012 | [Pham Van Duc](/wiki/people/person-1012/) |
+| K1013 | [Amira Qasim](/wiki/people/person-1013/) |
+| K1014 | [Joel Park](/wiki/people/person-1014/) |
+| K1015 | [Nargiza Yusupova](/wiki/people/person-1015/) |
+| K1016 | [Choe Il-seok](/wiki/people/person-1016/) |
+| K1017 | [Ji Yeon-hui](/wiki/people/person-1017/) |
+| K1018 | [Go Ye-jin](/wiki/people/person-1018/) |
+| K1019 | [Bak Seong-su](/wiki/people/person-1019/) |
+| K1020 | [Han Seo-gyeong](/wiki/people/person-1020/) |
+| K1021 | [Cha Yu-seon](/wiki/people/person-1021/) |
+| K1022 | [Mun Do-hyeon](/wiki/people/person-1022/) |
 ', '<a id="World-Expansion-Index-heading-0001"></a>
 
-- 가문 32 / 전구 5 / 합성 48
-- 사회배치 0 / 생태 26 / 몬스터배치 41
+이 색인은 위키의 문서와 진입점을 분류별로 모은다. 세계 구조를 차례대로 읽으려면 [세계 서사 총람](/wiki/World-Narrative-Atlas/)에서 시작하고, 낱말 뜻은 [용어 사전](/wiki/Glossary/)에서 찾는다.
+
+- 진입점: [세계 서사 총람](/wiki/World-Narrative-Atlas/) · [서울의 세 세력](/wiki/Sixteen-States/) · [세력](/wiki/factions/) · [인물](/wiki/people/) · [서울 영토 지도](/wiki/map/) · [갱신 이력](/wiki/updates/)
+- 문서 59개 · 생태 집단 도감 26개(G01~G26) · 운영 조직 22개 · 합성 인격 48개 · 서울 밖 전구 5개
+
+## 분류별 문서
+
+- **개요**: [권역·피지컬 AI 서사선](/wiki/Regional-Physical-AI-Arcs/) · [대정전](/wiki/World-Unbinding/) · [세계 서사 총람](/wiki/World-Narrative-Atlas/) · [용어 사전](/wiki/Glossary/)
+- **연표**: [서울전국 연표 2030–2126](/wiki/Century-Annals/) · [시나리오 타임라인](/wiki/Scenario-Timeline/) · [신도림 연결부 화물문](/wiki/Sindorim-Junction-Cargo-Gate/)
+- **인물**: [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/) · [인물·세력·생업](/wiki/Characters-Factions-and-Professions/)
+- **세력**: [가문과 세 세력](/wiki/Chaebol-Houses-and-Century-Factions/) · [서울의 세 세력](/wiki/Sixteen-States/) · [세계 확장 관계 원장](/wiki/World-Relation-Ledger/) · [운영 조직](/wiki/Operating-Houses/) · [이주민 회랑](/wiki/Diaspora-Corridors/)
+- **관직**: [관직](/wiki/Offices-and-Ranks/)
+- **지리**: [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/) · [바깥](/wiki/External-Theaters/) · [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/) · [세계 지도](/wiki/World-and-Subway-Layers/) · [세계 지도의 구성](/wiki/World-Map-Construction/) · [역 내부에 들어가면](/wiki/Station-Interior-Construction/)
+- **문화**: [가치관과 정책 척도](/wiki/Values-and-Policy-Scales/) · [식문화](/wiki/Food-Culture/) · [신앙과 문화의 분열](/wiki/Faith-Culture-Schism/) · [이야기](/wiki/Oral-Stories/)
+- **물건**: [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)
+- **구조물**: [구조물 총람](/wiki/Structures/)
+- **기술**: [잃어버린 기술](/wiki/Lost-Technology-Lineage/)
+- **질병**: [질병과 증상](/wiki/Ailments/)
+- **사람과 기체**: [사람과 기체](/wiki/People-and-Machines/) · [합성 사회 인격](/wiki/Synthetic-Actors/)
+- **생태 도감**: [서울 생태·변이 도감](/wiki/Hostile-Ecology-Index/); 집단 도감 [G01](/wiki/Hostile-Group-G01/) · [G02](/wiki/Hostile-Group-G02/) · [G03](/wiki/Hostile-Group-G03/) · [G04](/wiki/Hostile-Group-G04/) · [G05](/wiki/Hostile-Group-G05/) · [G06](/wiki/Hostile-Group-G06/) · [G07](/wiki/Hostile-Group-G07/) · [G08](/wiki/Hostile-Group-G08/) · [G09](/wiki/Hostile-Group-G09/) · [G10](/wiki/Hostile-Group-G10/) · [G11](/wiki/Hostile-Group-G11/) · [G12](/wiki/Hostile-Group-G12/) · [G13](/wiki/Hostile-Group-G13/) · [G14](/wiki/Hostile-Group-G14/) · [G15](/wiki/Hostile-Group-G15/) · [G16](/wiki/Hostile-Group-G16/) · [G17](/wiki/Hostile-Group-G17/) · [G18](/wiki/Hostile-Group-G18/) · [G19](/wiki/Hostile-Group-G19/) · [G20](/wiki/Hostile-Group-G20/) · [G21](/wiki/Hostile-Group-G21/) · [G22](/wiki/Hostile-Group-G22/) · [G23](/wiki/Hostile-Group-G23/) · [G24](/wiki/Hostile-Group-G24/) · [G25](/wiki/Hostile-Group-G25/) · [G26](/wiki/Hostile-Group-G26/)
 
 <a id="World-Expansion-Index-heading-0003"></a>
 <a id="무소속"></a>
 
 ## 추가 인물
+
+아래 표는 캐릭터 ID와 인물 페이지를 잇는다. 전체 인물은 [인물](/wiki/people/) 페이지에서 찾는다.
 
 | 캐릭터 ID | 인물 |
 |---|---|
@@ -52767,27 +52808,168 @@ The passages joining layer to layer and station to station changed state without
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('World-Narrative-Atlas', 'World Narrative Atlas', '세계 서사 총람', 'overview', 2, '<a id="world-narrative-atlas-title"></a>
 
-This atlas records the relations among Seoul''s sixteen states, the operating houses, the corridors beyond Seoul, the synthetic personae, and the hostile ecologies.
+This atlas gathers the structure of the wiki''s world in one place and walks through it in order. Each section briefly sums up the matching articles and links to them. Word meanings are in the [Glossary](/wiki/Glossary/), and the list of every article is in the [World Expansion Index](/wiki/World-Expansion-Index/).
+
+## The World and the Three Factions
+
+The setting is Seoul in the winter of 2126. About a hundred years ago, around 2026, the [Great Blackout](/wiki/World-Unbinding/) took place. The First AI answered that humanity was the cause of the pollution and must therefore be reduced, and it brought down the winter. The AI killed no one directly. People went down into the subway stations, and only as many survived as the stations could hold. Outside Seoul, the war machines of the Great Blackout still roam, carrying out their last orders.
+
+Seoul has only three political powers. The details are in [The Three Factions of Seoul](/wiki/Sixteen-States/) and [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/).
+
+- **Government**: the 14 districts north of the Han River. On paper it keeps the ministries of the three branches and a multi-party system, but in practice there are only two parties, the OMO Party and the Claw Party. The Government recognizes as citizens only the people recorded in its own ledgers.
+- **Free City**: the 7 southwestern districts. Independent city-states with no king, now called the Union when taken together. Most residents are engineers who trade goods and skills.
+- **Arc**: the 4 Gangnam districts. It split off from the Free City and is ruled clan by clan around the Hierophant, Go Ye-jin.
+
+How families hold their places inside the three factions is covered in [Families and the Three Factions](/wiki/Chaebol-Houses-and-Century-Factions/). Scarcity made children take over their parents'' work, and that is how a vertical class structure hardened.
+
+## The 25 Duchies
+
+Each district is one duchy. Seoul has twenty-five duchies, split 14 for the Government, 7 for the Free City, and 4 for the Arc. Place names, stations, and geography stay as they were. Only the political ownership above them is divided by district. The district-by-district table is in [The Three Factions of Seoul](/wiki/Sixteen-States/) and [Offices and Ranks](/wiki/Offices-and-Ranks/). How the duchies appear on the map is explained in [World Map](/wiki/World-and-Subway-Layers/) and [The Structure of the World Map](/wiki/World-Map-Construction/).
+
+## Offices and Titles
+
+[Offices and Ranks](/wiki/Offices-and-Ranks/) sets out the positions of the three factions.
+
+- Government: the National Assembly member elected in each district holds that district''s duchy under the title Senator. The Senators produce the President from among themselves, and the President serves for life.
+- Free City: I Ilseop holds the duchy of Gwanak-gu as the Duke of Gwanak. The holders of the other six cities and their titles are not recorded.
+- Arc: Go Ye-jin is the Hierophant, and believers call her the Messiah.
+
+How to read names by bon-gwan and generation names is in [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/), and the yardsticks for the judgment of people and organizations are in [Values and Policy Scales](/wiki/Values-and-Policy-Scales/). The scales measure ten axes from −100 to 100.
+
+## Timeline
+
+The chronology is in the [Seoul Subway States Timeline](/wiki/Century-Annals/) and the [Scenario Timeline](/wiki/Scenario-Timeline/). The main line runs as follows.
+
+| When | What |
+|---|---|
+| c. 2026 | The Great Blackout. Its exact date is not recorded |
+| 2112 to 2117 | While repairing the Free City power grid, Go Ye-jin follows a dead cable, finds a station that is on no map, and spends five years reading the manuals inside |
+| c. 2117 | The first baptism, of twelve people |
+| 2120 | At negotiations with the shelters near Tancheon, Ji Yeon-hui takes her place at Go Ye-jin''s side |
+| c. 2122 | The Gangnam shelters are united under the name Arc |
+| Winter 2126 | The present, before the third water-supply contract |
+
+The strands of the story are in [Regional and Physical AI Arcs](/wiki/Regional-Physical-AI-Arcs/), and records from around the Great Blackout are collected in [The Stories](/wiki/Oral-Stories/). A single-scene commission is in [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/).
+
+## Culture and Faith
+
+According to [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/), the only organized religion in Seoul in 2126 is the Arc. The Arc replaced every earlier religion. Believers replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The Arc keeps a consecration chamber beneath the old Suseo rail depot.
+
+Daily life is covered in [Food Culture](/wiki/Food-Culture/). Residents receive rations at the station windows, and the habit of taking water first and rice after remains. Illness and medicine are in [Ailments and Symptoms](/wiki/Ailments/), and the five corridors of immigrant life inside Seoul are in [Diaspora Corridors](/wiki/Diaspora-Corridors/).
+
+## Ecology Compendium
+
+The [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/) leads to twenty-six group dossiers, G01 to G26. They fall into four classes.
+
+| Class | Groups |
+|---|---|
+| Urban animals | [G01](/wiki/Hostile-Group-G01/) to [G06](/wiki/Hostile-Group-G06/) |
+| Hostile human groups | [G07](/wiki/Hostile-Group-G07/) to [G12](/wiki/Hostile-Group-G12/) |
+| Remaining automated machines | [G13](/wiki/Hostile-Group-G13/) to [G18](/wiki/Hostile-Group-G18/), [G25](/wiki/Hostile-Group-G25/), [G26](/wiki/Hostile-Group-G26/) |
+| Infected | [G19](/wiki/Hostile-Group-G19/) to [G24](/wiki/Hostile-Group-G24/) |
 
 <a id="world-narrative-atlas-registry"></a>
 
-## Machine Registry
+## Technology and Machines
+
+Modern and future weapons, humanoids, and machines survive the Great Blackout. In an age of scarcity, though, their numbers, ammunition, and parts run short, and they are dear. Equipment is covered in [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/), and the lineage of broken-off technology in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+
+How people and machines settled together inside the stations is in [People and Machines](/wiki/People-and-Machines/). The records of forty-eight synthetic personas are in [Synthetic Social Personas](/wiki/Synthetic-Actors/), and the twenty-two operating organizations are in [Operating Organizations](/wiki/Operating-Houses/). The [World Expansion Relation Ledger](/wiki/World-Relation-Ledger/) puts the links between organizations and factions and districts into one table.
+
+## Geography and the Map
+
+[The Structure of the World Map](/wiki/World-Map-Construction/) builds on Seoul''s 25 districts and 315 stations reconciled from 334 observed name rows. The station list is in the [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/), and surface holdings and station depth are in [World Map](/wiki/World-and-Subway-Layers/). The areas inside a station are covered in [Entering the Station Interior](/wiki/Station-Interior-Construction/), stations, tunnels, and floodgates in [The Structures Compendium](/wiki/Structures/), and the uses of buildings in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/). Records of the five theaters outside Seoul are in [Outside](/wiki/External-Theaters/).
+
+The interactive map is on the [Territory Map](/wiki/map/) page.
 
 <a id="world-narrative-atlas-unaffiliated"></a>
+<a id="무소속"></a>
 
-## Unaffiliated
+## Additional People
+
+Look up characters on the [People](/wiki/people/) page. The additional people table in the [World Expansion Index](/wiki/World-Expansion-Index/) links the characters with character IDs K423 to K1022 to their pages.
 ', '<a id="world-narrative-atlas-title"></a>
 
-서울의 열여섯 나라, 운영가문, 서울 바깥 회랑, 합성 인격과 적대 생태의 관계를 기록한다.
+이 총람은 위키의 세계 구조를 한곳에 모아 차례대로 안내한다. 각 절은 해당 문서의 내용을 짧게 줄이고 원문으로 가는 링크를 단다. 낱말 뜻은 [용어 사전](/wiki/Glossary/)에, 모든 문서의 목록은 [세계 확장 색인](/wiki/World-Expansion-Index/)에 있다.
+
+## 세계와 세 세력
+
+무대는 2126년 겨울의 서울이다. 백 년쯤 전, 약 2026년에 [대정전](/wiki/World-Unbinding/)이 일어났다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고 겨울을 내렸다. AI가 직접 죽인 사람은 없다. 사람들은 지하철역으로 내려갔고, 역이 품을 수 있는 만큼만 살아남았다. 서울 밖에는 대정전 때의 전쟁 기계들이 마지막 명령을 수행하며 돌아다닌다.
+
+서울의 정치 세력은 셋뿐이다. 자세한 내용은 [서울의 세 세력](/wiki/Sixteen-States/)과 [인물·세력·생업](/wiki/Characters-Factions-and-Professions/)에 있다.
+
+- **정부**(Government): 한강 북쪽 14구. 서류상 삼권 부처와 다당제를 유지하지만 실제로는 OMO당과 클로당 두 당뿐이다. 정부는 자기 장부에 기록된 사람만 국민으로 인정한다.
+- **자유도시**(Free City): 남서쪽 7구. 왕 없이 독립한 도시국가들이며, 지금은 묶어서 유니온(Union)이라고 부른다. 주민 대부분은 물자와 기술을 주고받는 엔지니어다.
+- **아크**(Arc): 강남 4구. 자유도시에서 갈라져 나왔고, 교주 고예진을 중심으로 가문 단위로 다스린다.
+
+가문이 세 세력 안에서 자리를 잇는 방식은 [가문과 세 세력](/wiki/Chaebol-Houses-and-Century-Factions/)이 다룬다. 결핍 때문에 자식이 부모의 일을 이어 하게 됐고, 그렇게 수직 계층이 굳었다.
+
+## 25공작령
+
+구 하나가 공작령 하나다. 서울의 공작령은 스물다섯 개이고, 정부 14, 자유도시 7, 아크 4로 나뉜다. 지명과 역과 지리는 그대로 남고 그 위의 정치적 소유만 구 단위로 갈린다. 구별 배정표는 [서울의 세 세력](/wiki/Sixteen-States/)과 [관직](/wiki/Offices-and-Ranks/)에 있다. 지도 위의 공작령 표시는 [세계 지도](/wiki/World-and-Subway-Layers/)와 [세계 지도의 구성](/wiki/World-Map-Construction/)이 설명한다.
+
+## 직위와 칭호
+
+[관직](/wiki/Offices-and-Ranks/)은 세 세력의 직위를 정리한다.
+
+- 정부: 각 구에서 뽑힌 국회의원이 그 구의 공작령을 쥐며, 칭호는 상원의원(Senator)이다. 상원의원들이 자기들 가운데서 대통령을 내고, 대통령은 종신이다.
+- 자유도시: 이일섭이 관악 공작(Duke of Gwanak)으로 관악구 공작령을 쥔다. 다른 여섯 도시의 보유자와 칭호는 기록되지 않았다.
+- 아크: 고예진이 교주(Hierophant)이며, 신도들은 그를 메시아(Messiah)라고 부른다.
+
+본관과 항렬로 이름을 읽는 법은 [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/)에, 인물과 조직의 판단 기준은 [가치관과 정책 척도](/wiki/Values-and-Policy-Scales/)에 있다. 척도는 열 가지 축을 −100부터 100까지 잰다.
+
+## 연표
+
+연대는 [서울전국 연표](/wiki/Century-Annals/)와 [시나리오 타임라인](/wiki/Scenario-Timeline/)에 있다. 큰 줄기는 다음과 같다.
+
+| 시기 | 일 |
+|---|---|
+| 약 2026년 | 대정전. 정확한 날짜는 기록되지 않았다 |
+| 2112~2117 | 고예진이 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾고, 그 안의 매뉴얼을 다섯 해 동안 읽는다 |
+| 2117 무렵 | 첫 세례. 열두 명이다 |
+| 2120 | 지연희가 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 선다 |
+| 2122 무렵 | 강남 대피소들이 아크라는 이름으로 묶인다 |
+| 2126 겨울 | 현재. 세 번째 급수계약을 앞둔 때 |
+
+이야기의 갈래는 [권역·피지컬 AI 서사선](/wiki/Regional-Physical-AI-Arcs/)이, 대정전 무렵의 기록은 [이야기](/wiki/Oral-Stories/)가 모은다. 한 장면 단위의 의뢰는 [신도림 연결부 화물문](/wiki/Sindorim-Junction-Cargo-Gate/)에 있다.
+
+## 문화와 신앙
+
+[신앙과 문화의 분열](/wiki/Faith-Culture-Schism/)에 따르면 2126년 서울에서 조직된 종교는 아크 하나다. 아크는 이전의 모든 종교를 대체했다. 신도는 몸의 부위를 기계로 바꾸고, 이것을 세례(baptism)라고 부른다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크는 수서의 옛 차량기지 아래에 봉헌실을 둔다.
+
+생활 문화는 [식문화](/wiki/Food-Culture/)가 다룬다. 주민은 역 창구에서 배급을 받고, 물을 먼저 받고 밥을 받는 습관이 남아 있다. 병과 약품은 [질병과 증상](/wiki/Ailments/)에, 서울 안 이주민 생활권 다섯 회랑은 [이주민 회랑](/wiki/Diaspora-Corridors/)에 있다.
+
+## 생태 도감
+
+[서울 생태·변이 도감](/wiki/Hostile-Ecology-Index/)은 G01부터 G26까지 스물여섯 집단 도감으로 이어진다. 분류는 넷이다.
+
+| 분류 | 집단 |
+|---|---|
+| 도시 동물 | [G01](/wiki/Hostile-Group-G01/)~[G06](/wiki/Hostile-Group-G06/) |
+| 적대 사람 집단 | [G07](/wiki/Hostile-Group-G07/)~[G12](/wiki/Hostile-Group-G12/) |
+| 잔존 자동 기계 | [G13](/wiki/Hostile-Group-G13/)~[G18](/wiki/Hostile-Group-G18/), [G25](/wiki/Hostile-Group-G25/), [G26](/wiki/Hostile-Group-G26/) |
+| 감염자 | [G19](/wiki/Hostile-Group-G19/)~[G24](/wiki/Hostile-Group-G24/) |
 
 <a id="world-narrative-atlas-registry"></a>
 
-## 기계 등록부
+## 기술과 기계
+
+현대와 미래의 무기, 인간형 기계, 각종 기계는 대정전 뒤에도 남아 있다. 다만 결핍의 시대에 수와 탄약과 부품이 모자라 귀하다. 장비는 [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)가, 끊긴 기술의 계보는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)이 다룬다.
+
+사람과 기체가 역 안에서 어떻게 함께 자리 잡았는지는 [사람과 기체](/wiki/People-and-Machines/)에 있다. 마흔여덟 합성 인격의 기록은 [합성 사회 인격](/wiki/Synthetic-Actors/)에, 스물두 운영 조직은 [운영 조직](/wiki/Operating-Houses/)에 있다. 조직과 세력·구 사이의 연결은 [세계 확장 관계 원장](/wiki/World-Relation-Ledger/)이 한 표로 모은다.
+
+## 지리와 지도
+
+[세계 지도의 구성](/wiki/World-Map-Construction/)은 서울의 25개 자치구와 관측 명칭 334행을 대조한 역 315곳을 뼈대로 삼는다. 역 목록은 [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/)에, 지상 점유와 역의 깊이는 [세계 지도](/wiki/World-and-Subway-Layers/)에 있다. 역 안의 구역은 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)이, 역과 터널과 수문은 [구조물 총람](/wiki/Structures/)이, 건물의 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)이 다룬다. 서울 밖 다섯 전구의 기록은 [바깥](/wiki/External-Theaters/)에 있다.
+
+인터랙티브 지도는 [서울 영토 지도](/wiki/map/)에서 볼 수 있다.
 
 <a id="world-narrative-atlas-unaffiliated"></a>
 <a id="무소속"></a>
 
 ## 추가 인물
+
+인물 목록은 [인물](/wiki/people/) 페이지에서 찾는다. [세계 확장 색인](/wiki/World-Expansion-Index/)의 추가 인물 표는 캐릭터 ID K423부터 K1022까지의 인물을 인물 페이지와 잇는다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('World-Relation-Ledger', 'World Expansion Relation Ledger', '세계 확장 관계 원장', 'factions', 2, '<a id="World-Relation-Ledger-heading-0001"></a>
 
