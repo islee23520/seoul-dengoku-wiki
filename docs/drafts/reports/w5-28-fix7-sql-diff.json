@@ -1,0 +1,204 @@
+{
+ "rowCounts": {
+  "clan": {
+   "cur": 177,
+   "old": 177,
+   "same": true
+  },
+  "clan_member": {
+   "cur": 955,
+   "old": 955,
+   "same": true
+  },
+  "faction": {
+   "cur": 4,
+   "old": 4,
+   "same": true
+  },
+  "family_tree": {
+   "cur": 148,
+   "old": 148,
+   "same": true
+  },
+  "gdd_category": {
+   "cur": 8,
+   "old": 8,
+   "same": true
+  },
+  "gdd_document": {
+   "cur": 129,
+   "old": 129,
+   "same": true
+  },
+  "map_edge": {
+   "cur": 381,
+   "old": 381,
+   "same": true
+  },
+  "map_holding": {
+   "cur": 50,
+   "old": 50,
+   "same": true
+  },
+  "map_landmark": {
+   "cur": 19,
+   "old": 19,
+   "same": true
+  },
+  "map_line": {
+   "cur": 24,
+   "old": 24,
+   "same": true
+  },
+  "map_meta": {
+   "cur": 8,
+   "old": 8,
+   "same": true
+  },
+  "map_rail": {
+   "cur": 2826,
+   "old": 2826,
+   "same": true
+  },
+  "map_region": {
+   "cur": 427,
+   "old": 427,
+   "same": true
+  },
+  "map_state": {
+   "cur": 3,
+   "old": 3,
+   "same": true
+  },
+  "map_station": {
+   "cur": 312,
+   "old": 312,
+   "same": true
+  },
+  "map_title": {
+   "cur": 80,
+   "old": 80,
+   "same": true
+  },
+  "map_underground": {
+   "cur": 312,
+   "old": 312,
+   "same": true
+  },
+  "nonkorean_family": {
+   "cur": 62,
+   "old": 62,
+   "same": true
+  },
+  "person_detail": {
+   "cur": 1022,
+   "old": 1022,
+   "same": true
+  },
+  "retainer_graph": {
+   "cur": 1,
+   "old": 1,
+   "same": true
+  },
+  "site_meta": {
+   "cur": 6,
+   "old": 6,
+   "same": true
+  },
+  "wiki_category": {
+   "cur": 23,
+   "old": 23,
+   "same": true
+  },
+  "wiki_document": {
+   "cur": 59,
+   "old": 59,
+   "same": true
+  },
+  "wiki_person": {
+   "cur": 1022,
+   "old": 1022,
+   "same": true
+  },
+  "wiki_state": {
+   "cur": 3,
+   "old": 3,
+   "same": true
+  },
+  "wiki_update": {
+   "cur": 6,
+   "old": 6,
+   "same": true
+  }
+ },
+ "changed": {
+  "wiki_document": [
+   {
+    "key": "Hostile-Group-G10",
+    "cols": [
+     "body_md",
+     "body_ko_md"
+    ]
+   },
+   {
+    "key": "Lost-Technology-Lineage",
+    "cols": [
+     "body_md",
+     "body_ko_md"
+    ]
+   }
+  ],
+  "wiki_update": [
+   {
+    "key": "World-and-Subway-Layers",
+    "cols": [
+     "sort",
+     "category",
+     "category_ko",
+     "status",
+     "status_ko",
+     "title",
+     "title_ko",
+     "source"
+    ]
+   },
+   {
+    "key": "World-and-Subway-Layers",
+    "cols": [
+     "sort",
+     "category",
+     "category_ko",
+     "title",
+     "title_ko",
+     "source"
+    ]
+   },
+   {
+    "key": "World-and-Subway-Layers",
+    "cols": [
+     "sort",
+     "category",
+     "category_ko",
+     "title",
+     "title_ko",
+     "source"
+    ]
+   },
+   {
+    "key": null,
+    "cols": [
+     "sort",
+     "date",
+     "category",
+     "category_ko",
+     "status",
+     "status_ko",
+     "title",
+     "title_ko",
+     "source"
+    ]
+   }
+  ]
+ },
+ "ck3": null
+}

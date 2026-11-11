@@ -84,7 +84,7 @@ const EX: Record<string, Exhibit> = {
     images: [{
       kind: "portrait", src: "history/portraits/person-1005.webp", ref: "person-1005 · K1005",
       name: { ko: "정서온", en: "Jeong Seo-on" },
-      role: { ko: "S03 태욱그룹 회장 · 2112년 취임 공표 당사자", en: "Chair, S03 Taeuk Group · announced her succession in 2112" },
+      role: { ko: "태욱그룹 회장 · 2112년 취임 공표 당사자", en: "Chair, Taeuk Group · announced her succession in 2112" },
       href: person("person-1005"),
     }, flag("S03", "태욱그룹", "Taeuk Group", "승계 분쟁이 일어난 나라", "State where the dispute occurred")],
     sources: [
@@ -124,16 +124,15 @@ const EX: Record<string, Exhibit> = {
   },
   three: {
     id: "three", date: "2116",
-    heading: { ko: "세 국가의 패권국과 종교 연합", en: "The three blocs of 2116" },
-    note: { ko: "규격맹 4국 / 정부 8국 / 종교 연합 3국 / 중앙정보부 중립. 기존 수장과 관직은 봉신으로 존속했다.", en: "League 4 / Government 8 / Coalition 3 / S08 neutral. Existing rulers and offices remained as vassals." },
+    heading: { ko: "옛 세 국가의 패권국과 종교 연합", en: "The three old blocs of 2116" },
+    note: { ko: "옛 규격맹 · 정부 · 옛 종교 진영, 그리고 중립의 중앙정보부. 기존 수장과 관직은 봉신으로 존속했다.", en: "The old League, the Government and the old religious camp, with the Central Intelligence Division neutral. Existing rulers and offices remained as vassals." },
     images: [
       flag("S02", "규격맹", "Standard League", "패권국 · 2116", "Hegemon · 2116"),
       flag("S06", "대한민국정부", "ROK Government", "패권국 · 2116", "Hegemon · 2116"),
-      flag("S04", "명부교회", "Myeongbu Church", "종교 연합 · 단일 수장 없음", "Religious Coalition · no single leader"),
     ],
     sources: [
       { label: { ko: "백년 연대기 · 2116 세 국가 성립", en: "Century Annals · 2116 formation" }, href: ANNALS },
-      { label: { ko: "십육국", en: "Sixteen States" }, href: SIXTEEN },
+      { label: { ko: "세 세력", en: "The Three Factions" }, href: SIXTEEN },
     ],
   },
   koSeojun: {
@@ -143,7 +142,7 @@ const EX: Record<string, Exhibit> = {
     images: [{
       kind: "portrait", src: "history/portraits/person-0349.webp", ref: "person-0349 · K348",
       name: { ko: "고서준", en: "Ko Seo-jun" },
-      role: { ko: "S14 아관사 관문사령관 · 2116년 거절 문서 발신", en: "Gate Commander, S14 Agwan-sa · sent refusal in 2116" },
+      role: { ko: "아관사 관문사령관 · 2116년 거절 문서 발신", en: "Gate Commander, Agwan-sa · sent refusal in 2116" },
       href: person("person-0349"),
     }, flag("S05", "동방사", "Dongbang-sa", "이관 요구국 · 2116.07", "Demanded the transfer · Jul 2116")],
     sources: [
@@ -158,7 +157,7 @@ const EX: Record<string, Exhibit> = {
     images: [{
       kind: "portrait", src: "history/portraits/person-0029.webp", ref: "person-0029 · K029",
       name: { ko: "강민서", en: "Kang Min-seo" },
-      role: { ko: "S02 규격맹 · 2120년 명부 등재 당사자, 2121년 위원장", en: "S02 Standard League · acted in 2120, chair from 2121" },
+      role: { ko: "규격맹 · 2120년 명부 등재 당사자, 2121년 위원장", en: "Standard League · acted in 2120, chair from 2121" },
       href: person("person-0029"),
     }],
     sources: [

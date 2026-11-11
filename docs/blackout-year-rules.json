@@ -1,0 +1,2677 @@
+{
+ "purpose": "W5-28 H1 — 구 대정전(2030) 서술을 바이블 3절 확정 표현으로 바꾸는 문장 단위 규칙표. scripts/pages/blackout-year-edit.mjs가 소비한다(전수 확정 보존본; 재생성 대상 아님).",
+ "approvedWording": {
+  "ko": "약 2026년",
+  "en": "around 2026",
+  "source": "docs/CANON-BIBLE.md §3 연표 [승인] 및 Q2(월일 미정)"
+ },
+ "policy": {
+  "perRule": "규칙 1건 = 정확한 문장(또는 값) 1개. 파일·행·열·JSON 경로가 모두 일치하는 셀에서 old가 정확 1회 나올 때만 1회 치환한다(부분 문자열 전역 치환 금지).",
+  "exclusionH3": "person-0195 전체 셀 4건과 110 c624-d574-c8fc nodes[1].timeline[0].summary 2건은 H3(org→polity 결함)의 문장 전체 재작성에 연도 교정이 포함되므로 이 표에서 제외한다.",
+  "kept": "kept 배열은 대정전 문맥이 아니라고 판정해 2030을 그대로 둔 전수 목록이다(생년·이야기 내 날짜). 판정 근거는 각 reason."
+ },
+ "counts": {
+  "rules": 220,
+  "kept": 84,
+  "byFile": {
+   "110": 80,
+   "090": 140
+  }
+ },
+ "rules": [
+  {
+   "file": "090",
+   "id": "person-0057",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "In 2030 that yard was already running humanoids, and when cloud learning died, the maintenance family kept the trade name.",
+   "new": "Around 2026 that yard was already running humanoids, and when cloud learning died, the maintenance family kept the trade name.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0057",
+   "column": "json",
+   "path": "$.biography",
+   "old": "In 2030 that yard was already running humanoids, and when cloud learning died, the maintenance family kept the trade name.",
+   "new": "Around 2026 that yard was already running humanoids, and when cloud learning died, the maintenance family kept the trade name.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0057",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "2030년 그 마당은 이미 휴머노이드를 굴렸고, 구름 학습이 죽자 정비 가문이 상호를 남겼다.",
+   "new": "약 2026년 그 마당은 이미 휴머노이드를 굴렸고, 구름 학습이 죽자 정비 가문이 상호를 남겼다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0057",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "2030년 그 마당은 이미 휴머노이드를 굴렸고, 구름 학습이 죽자 정비 가문이 상호를 남겼다.",
+   "new": "약 2026년 그 마당은 이미 휴머노이드를 굴렸고, 구름 학습이 죽자 정비 가문이 상호를 남겼다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0170",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Bak Dohyeon went through the Great Blackout in 2030 at the Yongsan Hosongga, doing civilian contract work for the Yongsan railway and civilian lodging work in Itaewon.",
+   "new": "Bak Dohyeon went through the Great Blackout around 2026 at the Yongsan Hosongga, doing civilian contract work for the Yongsan railway and civilian lodging work in Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0170",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Bak Dohyeon went through the Great Blackout in 2030 at the Yongsan Hosongga, doing civilian contract work for the Yongsan railway and civilian lodging work in Itaewon.",
+   "new": "Bak Dohyeon went through the Great Blackout around 2026 at the Yongsan Hosongga, doing civilian contract work for the Yongsan railway and civilian lodging work in Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0170",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "박도헌은 2030년 용산호송가에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 하며 대정전을 겪었다.",
+   "new": "박도헌은 약 2026년 용산호송가에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0170",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "박도헌은 2030년 용산호송가에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 하며 대정전을 겪었다.",
+   "new": "박도헌은 약 2026년 용산호송가에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0172",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Karel Novak worked in Itaewon lodging and private technical services in Yongsan-Itaewon in 2030 and lived through the Great Blackout.",
+   "new": "Karel Novak worked in Itaewon lodging and private technical services in Yongsan-Itaewon around 2026 and lived through the Great Blackout.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0172",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Karel Novak worked in Itaewon lodging and private technical services in Yongsan-Itaewon in 2030 and lived through the Great Blackout.",
+   "new": "Karel Novak worked in Itaewon lodging and private technical services in Yongsan-Itaewon around 2026 and lived through the Great Blackout.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0172",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "카렐 노바크는 2030년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다.",
+   "new": "카렐 노바크는 약 2026년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0172",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "카렐 노바크는 2030년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다.",
+   "new": "카렐 노바크는 약 2026년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0174",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "In 2030, Karl Schneider lived through the Great Blackout in Yongsan–Itaewon, working in Yongsan freight and private machinery maintenance.",
+   "new": "Around 2026, Karl Schneider lived through the Great Blackout in Yongsan–Itaewon, working in Yongsan freight and private machinery maintenance.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0174",
+   "column": "json",
+   "path": "$.biography",
+   "old": "In 2030, Karl Schneider lived through the Great Blackout in Yongsan–Itaewon, working in Yongsan freight and private machinery maintenance.",
+   "new": "Around 2026, Karl Schneider lived through the Great Blackout in Yongsan–Itaewon, working in Yongsan freight and private machinery maintenance.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0174",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "카를 슈나이더는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다.",
+   "new": "카를 슈나이더는 약 2026년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0174",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "카를 슈나이더는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다.",
+   "new": "카를 슈나이더는 약 2026년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0175",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "In 2030, George Bennett lived through the Great Blackout in Yongsan–Itaewon, working in private lodging and interpreting in Itaewon.",
+   "new": "Around 2026, George Bennett lived through the Great Blackout in Yongsan–Itaewon, working in private lodging and interpreting in Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0175",
+   "column": "json",
+   "path": "$.biography",
+   "old": "In 2030, George Bennett lived through the Great Blackout in Yongsan–Itaewon, working in private lodging and interpreting in Itaewon.",
+   "new": "Around 2026, George Bennett lived through the Great Blackout in Yongsan–Itaewon, working in private lodging and interpreting in Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0175",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "조지 베넷은 2030년 용산·이태원에서 이태원 민간 숙박·통역 일을 하며 대정전을 겪었다.",
+   "new": "조지 베넷은 약 2026년 용산·이태원에서 이태원 민간 숙박·통역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0175",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "조지 베넷은 2030년 용산·이태원에서 이태원 민간 숙박·통역 일을 하며 대정전을 겪었다.",
+   "new": "조지 베넷은 약 2026년 용산·이태원에서 이태원 민간 숙박·통역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0176",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Vasyl Bondarenko lived through the Great Blackout of 2030 in that community, working night wage jobs in Dongdaemun and cargo handover in Yongsan.",
+   "new": "Vasyl Bondarenko lived through the Great Blackout of around 2026 in that community, working night wage jobs in Dongdaemun and cargo handover in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0176",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Vasyl Bondarenko lived through the Great Blackout of 2030 in that community, working night wage jobs in Dongdaemun and cargo handover in Yongsan.",
+   "new": "Vasyl Bondarenko lived through the Great Blackout of around 2026 in that community, working night wage jobs in Dongdaemun and cargo handover in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0176",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "바실 본다렌코는 2030년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다.",
+   "new": "바실 본다렌코는 약 2026년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0176",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "바실 본다렌코는 2030년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다.",
+   "new": "바실 본다렌코는 약 2026년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0177",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Aleksey Sokolov lived through the Great Blackout of 2030 in that community, working in Dongdaemun cargo brokerage and Itaewon lodging.",
+   "new": "Aleksey Sokolov lived through the Great Blackout of around 2026 in that community, working in Dongdaemun cargo brokerage and Itaewon lodging.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0177",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Aleksei Sokolov went through the Great Blackout in 2030 in the Dongdaemun–Yongsan civilian cargo living sphere, working in Dongdaemun cargo brokerage and Itaewon lodging.",
+   "new": "Aleksei Sokolov went through the Great Blackout around 2026 in the Dongdaemun–Yongsan civilian cargo living sphere, working in Dongdaemun cargo brokerage and Itaewon lodging.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0177",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "알렉세이 소콜로프는 2030년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다.",
+   "new": "알렉세이 소콜로프는 약 2026년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0177",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "알렉세이 소콜로프는 2030년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다.",
+   "new": "알렉세이 소콜로프는 약 2026년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0178",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Samuel Johnson went through the Great Blackout in 2030 in Yongsan–Itaewon, working in Itaewon lodging and private interpreting.",
+   "new": "Samuel Johnson went through the Great Blackout around 2026 in Yongsan–Itaewon, working in Itaewon lodging and private interpreting.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0178",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Samuel Johnson went through the Great Blackout in 2030 in Yongsan–Itaewon, working in Itaewon lodging and private interpreting.",
+   "new": "Samuel Johnson went through the Great Blackout around 2026 in Yongsan–Itaewon, working in Itaewon lodging and private interpreting.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0178",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "새뮤얼 존슨은 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다.",
+   "new": "새뮤얼 존슨은 약 2026년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0178",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "새뮤얼 존슨은 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다.",
+   "new": "새뮤얼 존슨은 약 2026년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0180",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Antonio Rossi lived through the Great Blackout in 2030 in Yongsan–Itaewon, working in private dining and lodging in Itaewon and in supply work in Yongsan.",
+   "new": "Antonio Rossi lived through the Great Blackout around 2026 in Yongsan–Itaewon, working in private dining and lodging in Itaewon and in supply work in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0180",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Antonio Rossi lived through the Great Blackout in 2030 in Yongsan–Itaewon, working in private dining and lodging in Itaewon and in supply work in Yongsan.",
+   "new": "Antonio Rossi lived through the Great Blackout around 2026 in Yongsan–Itaewon, working in private dining and lodging in Itaewon and in supply work in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0180",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "안토니오 로시는 2030년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다.",
+   "new": "안토니오 로시는 약 2026년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0180",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "안토니오 로시는 2030년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다.",
+   "new": "안토니오 로시는 약 2026년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0181",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Sean O'Connor lived through the Great Blackout in 2030 in Yongsan–Itaewon, working in private lodging in Itaewon and in freight recording in Yongsan.",
+   "new": "Sean O'Connor lived through the Great Blackout around 2026 in Yongsan–Itaewon, working in private lodging in Itaewon and in freight recording in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0181",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Sean O'Connor lived through the Great Blackout in 2030 in Yongsan–Itaewon, working in Itaewon private lodging and Yongsan freight records.",
+   "new": "Sean O'Connor lived through the Great Blackout around 2026 in Yongsan–Itaewon, working in Itaewon private lodging and Yongsan freight records.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0181",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "숀 오코너는 2030년 용산·이태원에서 이태원 민간 숙박과 용산 화물 기록 일을 하며 대정전을 겪었다.",
+   "new": "숀 오코너는 약 2026년 용산·이태원에서 이태원 민간 숙박과 용산 화물 기록 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0181",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "숀 오코너는 2030년 용산·이태원에서 이태원 민간 숙박과 용산 화물 기록 일을 하며 대정전을 겪었다.",
+   "new": "숀 오코너는 약 2026년 용산·이태원에서 이태원 민간 숙박과 용산 화물 기록 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0183",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Stanisław Kowalski lived through the Great Blackout in 2030 doing private maintenance work at the Yongsan freight depot, as part of a private maintenance household in Yongsan tied to the Dongdaemun Central Asian commercial district.",
+   "new": "Stanisław Kowalski lived through the Great Blackout around 2026 doing private maintenance work at the Yongsan freight depot, as part of a private maintenance household in Yongsan tied to the Dongdaemun Central Asian commercial district.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0183",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Stanisław Kowalski lived through the Great Blackout in 2030 doing private maintenance work at the Yongsan freight depot, as part of a private maintenance household in Yongsan tied to the Dongdaemun Central Asian commercial district.",
+   "new": "Stanisław Kowalski lived through the Great Blackout around 2026 doing private maintenance work at the Yongsan freight depot, as part of a private maintenance household in Yongsan tied to the Dongdaemun Central Asian commercial district.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0183",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "스타니스와프 코발스키는 2030년 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구에서 용산 화물창 민간 정비 일을 하며 대정전을 겪었다.",
+   "new": "스타니스와프 코발스키는 약 2026년 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구에서 용산 화물창 민간 정비 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0183",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "스타니스와프 코발스키는 2030년 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구에서 용산 화물창 민간 정비 일을 하며 대정전을 겪었다.",
+   "new": "스타니스와프 코발스키는 약 2026년 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구에서 용산 화물창 민간 정비 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0184",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Louis Dubois lived through the Great Blackout in 2030 while working at a private warehouse and in electrical repair in Yongsan, in Yongsan–Itaewon.",
+   "new": "Louis Dubois lived through the Great Blackout around 2026 while working at a private warehouse and in electrical repair in Yongsan, in Yongsan–Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0184",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Louis Dubois lived through the Great Blackout in 2030 while working at a private warehouse and in electrical repair in Yongsan, in Yongsan–Itaewon.",
+   "new": "Louis Dubois lived through the Great Blackout around 2026 while working at a private warehouse and in electrical repair in Yongsan, in Yongsan–Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0184",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "루이 뒤부아는 2030년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다.",
+   "new": "루이 뒤부아는 약 2026년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0184",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "루이 뒤부아는 2030년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다.",
+   "new": "루이 뒤부아는 약 2026년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0187",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Olusegun Adeyemi went through the Great Blackout in 2030 in Itaewon–Yongsan, working in Itaewon private shops and Yongsan power repair.",
+   "new": "Olusegun Adeyemi went through the Great Blackout around 2026 in Itaewon–Yongsan, working in Itaewon private shops and Yongsan power repair.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0187",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Olusegun Adeyemi went through the Great Blackout in 2030 in Itaewon–Yongsan, working in Itaewon private shops and Yongsan power repair.",
+   "new": "Olusegun Adeyemi went through the Great Blackout around 2026 in Itaewon–Yongsan, working in Itaewon private shops and Yongsan power repair.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0187",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "올루세군 아데예미는 2030년 이태원·용산에서 이태원 민간 상점과 용산 전력 수선 일을 하며 대정전을 겪었다.",
+   "new": "올루세군 아데예미는 약 2026년 이태원·용산에서 이태원 민간 상점과 용산 전력 수선 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0187",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "올루세군 아데예미는 2030년 이태원·용산에서 이태원 민간 상점과 용산 전력 수선 일을 하며 대정전을 겪었다.",
+   "new": "올루세군 아데예미는 약 2026년 이태원·용산에서 이태원 민간 상점과 용산 전력 수선 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0188",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Karel Horakeu lived through the Great Blackout in 2030 in Yongsan–Itaewon, working in Itaewon lodging and private technical services.",
+   "new": "Karel Horakeu lived through the Great Blackout around 2026 in Yongsan–Itaewon, working in Itaewon lodging and private technical services.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0188",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Karel Horakeu lived through the Great Blackout in 2030 in Yongsan–Itaewon, working in Itaewon lodging and private technical services.",
+   "new": "Karel Horakeu lived through the Great Blackout around 2026 in Yongsan–Itaewon, working in Itaewon lodging and private technical services.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0188",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "카렐 호라크는 2030년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다.",
+   "new": "카렐 호라크는 약 2026년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0188",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "카렐 호라크는 2030년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다.",
+   "new": "카렐 호라크는 약 2026년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0189",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Georeugi Peteuropeu lived through the Great Blackout in 2030 in Dongdaemun–Yongsan, working night labor in Dongdaemun and supply jobs in Yongsan.",
+   "new": "Georeugi Peteuropeu lived through the Great Blackout around 2026 in Dongdaemun–Yongsan, working night labor in Dongdaemun and supply jobs in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0189",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Georgi Petrov lived through the Great Blackout in 2030 in Dongdaemun–Yongsan, working Dongdaemun night-shift labor and Yongsan supply jobs.",
+   "new": "Georgi Petrov lived through the Great Blackout around 2026 in Dongdaemun–Yongsan, working Dongdaemun night-shift labor and Yongsan supply jobs.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0189",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "게오르기 페트로프는 2030년 동대문·용산에서 동대문 야간 공임과 용산 공급 일을 하며 대정전을 겪었다.",
+   "new": "게오르기 페트로프는 약 2026년 동대문·용산에서 동대문 야간 공임과 용산 공급 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0189",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "게오르기 페트로프는 2030년 동대문·용산에서 동대문 야간 공임과 용산 공급 일을 하며 대정전을 겪었다.",
+   "new": "게오르기 페트로프는 약 2026년 동대문·용산에서 동대문 야간 공임과 용산 공급 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0190",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Nicolae Hierophantscu lived through the Great Blackout in 2030 in Dongdaemun–Yongsan, working in civilian sewing and freight brokerage in Dongdaemun.",
+   "new": "Nicolae Hierophantscu lived through the Great Blackout around 2026 in Dongdaemun–Yongsan, working in civilian sewing and freight brokerage in Dongdaemun.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0190",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Nicolae Hierophantscu lived through the Great Blackout in 2030 in Dongdaemun–Yongsan, working in civilian sewing and freight brokerage in Dongdaemun.",
+   "new": "Nicolae Hierophantscu lived through the Great Blackout around 2026 in Dongdaemun–Yongsan, working in civilian sewing and freight brokerage in Dongdaemun.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0190",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "니콜라에 포페스쿠는 2030년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다.",
+   "new": "니콜라에 포페스쿠는 약 2026년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0190",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "니콜라에 포페스쿠는 2030년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다.",
+   "new": "니콜라에 포페스쿠는 약 2026년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0191",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Karl Müller lived through the Great Blackout in 2030 in Yongsan–Itaewon, working in Yongsan freight and civilian machinery maintenance.",
+   "new": "Karl Müller lived through the Great Blackout around 2026 in Yongsan–Itaewon, working in Yongsan freight and civilian machinery maintenance.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0191",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Karl Müller lived through the Great Blackout in 2030 in Yongsan–Itaewon, working in Yongsan freight and civilian machinery maintenance.",
+   "new": "Karl Müller lived through the Great Blackout around 2026 in Yongsan–Itaewon, working in Yongsan freight and civilian machinery maintenance.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0191",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "카를 뮐러는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다.",
+   "new": "카를 뮐러는 약 2026년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0191",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "카를 뮐러는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다.",
+   "new": "카를 뮐러는 약 2026년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0192",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Ivan Morozov lived through the Great Blackout in 2030 in the Dongdaemun–Yongsan civilian freight living sphere, working in Dongdaemun freight brokerage and Itaewon lodging.",
+   "new": "Ivan Morozov lived through the Great Blackout around 2026 in the Dongdaemun–Yongsan civilian freight living sphere, working in Dongdaemun freight brokerage and Itaewon lodging.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0192",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Ivan Morozov lived through the Great Blackout in 2030 in the Dongdaemun-Yongsan civilian freight community, working in Dongdaemun freight brokerage and Itaewon lodging.",
+   "new": "Ivan Morozov lived through the Great Blackout around 2026 in the Dongdaemun-Yongsan civilian freight community, working in Dongdaemun freight brokerage and Itaewon lodging.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0192",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "이반 모로조프는 2030년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다.",
+   "new": "이반 모로조프는 약 2026년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0192",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "이반 모로조프는 2030년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다.",
+   "new": "이반 모로조프는 약 2026년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0193",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Ivan Shevchenko lived through the Great Blackout in 2030 in the Dongdaemun-Yongsan civilian transport community, working night labor in Dongdaemun and freight handovers in Yongsan.",
+   "new": "Ivan Shevchenko lived through the Great Blackout around 2026 in the Dongdaemun-Yongsan civilian transport community, working night labor in Dongdaemun and freight handovers in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0193",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Ivan Shevchenko lived through the Great Blackout in 2030 in the Dongdaemun-Yongsan civilian transport community, working night labor in Dongdaemun and freight handovers in Yongsan.",
+   "new": "Ivan Shevchenko lived through the Great Blackout around 2026 in the Dongdaemun-Yongsan civilian transport community, working night labor in Dongdaemun and freight handovers in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0193",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "이반 셰우첸코는 2030년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다.",
+   "new": "이반 셰우첸코는 약 2026년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0193",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "이반 셰우첸코는 2030년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다.",
+   "new": "이반 셰우첸코는 약 2026년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0194",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Samuel White lived through the Great Blackout in 2030 in Yongsan–Itaewon, working in Itaewon lodging and private interpreting.",
+   "new": "Samuel White lived through the Great Blackout around 2026 in Yongsan–Itaewon, working in Itaewon lodging and private interpreting.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0194",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Samuel White lived through the Great Blackout in 2030 in Yongsan–Itaewon, working in Itaewon lodging and private interpreting.",
+   "new": "Samuel White lived through the Great Blackout around 2026 in Yongsan–Itaewon, working in Itaewon lodging and private interpreting.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0194",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "새뮤얼 화이트는 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다.",
+   "new": "새뮤얼 화이트는 약 2026년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0194",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "새뮤얼 화이트는 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다.",
+   "new": "새뮤얼 화이트는 약 2026년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0200",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Hendrik Jansen lived through the Great Blackout in 2030 on the north bank of Yongsan, working in civilian loading, unloading and warehouse operations on the Yongsan riverside.",
+   "new": "Hendrik Jansen lived through the Great Blackout around 2026 on the north bank of Yongsan, working in civilian loading, unloading and warehouse operations on the Yongsan riverside.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0200",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Hendrik Jansen lived through the Great Blackout in 2030 on the north bank of Yongsan, working in civilian loading, unloading and warehouse operations on the Yongsan riverside.",
+   "new": "Hendrik Jansen lived through the Great Blackout around 2026 on the north bank of Yongsan, working in civilian loading, unloading and warehouse operations on the Yongsan riverside.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0200",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "헨드릭 얀센은 2030년 용산 북안에서 용산 강변의 민간 하역·창고 업무 일을 하며 대정전을 겪었다.",
+   "new": "헨드릭 얀센은 약 2026년 용산 북안에서 용산 강변의 민간 하역·창고 업무 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0200",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "헨드릭 얀센은 2030년 용산 북안에서 용산 강변의 민간 하역·창고 업무 일을 하며 대정전을 겪었다.",
+   "new": "헨드릭 얀센은 약 2026년 용산 북안에서 용산 강변의 민간 하역·창고 업무 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0446",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Louis Lefebvre lived through the Great Blackout in 2030 working in private warehousing and electrical repair in Yongsan, in Yongsan·Itaewon.",
+   "new": "Louis Lefebvre lived through the Great Blackout around 2026 working in private warehousing and electrical repair in Yongsan, in Yongsan·Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0446",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Louis Lefebvre went through the Great Blackout in Itaewon, Yongsan in 2030, working in private warehousing and electrical repair in Yongsan.",
+   "new": "Louis Lefebvre went through the Great Blackout in Itaewon, Yongsan around 2026, working in private warehousing and electrical repair in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0446",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "루이 르페브르는 2030년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다.",
+   "new": "루이 르페브르는 약 2026년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0446",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "루이 르페브르는 2030년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다.",
+   "new": "루이 르페브르는 약 2026년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0606",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Yujepeu Kaminseuki lived through the Great Blackout in 2030 while doing private maintenance at the Yongsan Freight Depot for that household.",
+   "new": "Yujepeu Kaminseuki lived through the Great Blackout around 2026 while doing private maintenance at the Yongsan Freight Depot for that household.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0606",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Yujepeu Kaminseuki lived through the Great Blackout in 2030 while doing private maintenance at the Yongsan Freight Depot for that household.",
+   "new": "Yujepeu Kaminseuki lived through the Great Blackout around 2026 while doing private maintenance at the Yongsan Freight Depot for that household.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0606",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "유제프 카민스키는 2030년 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구에서 용산 화물창 민간 정비 일을 하며 대정전을 겪었다.",
+   "new": "유제프 카민스키는 약 2026년 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구에서 용산 화물창 민간 정비 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0606",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "유제프 카민스키는 2030년 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구에서 용산 화물창 민간 정비 일을 하며 대정전을 겪었다.",
+   "new": "유제프 카민스키는 약 2026년 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구에서 용산 화물창 민간 정비 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0926",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Louis Moreau lived through the Great Blackout in 2030 working in a private warehouse and in electrical repair in Yongsan, within Yongsan-Itaewon.",
+   "new": "Louis Moreau lived through the Great Blackout around 2026 working in a private warehouse and in electrical repair in Yongsan, within Yongsan-Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0926",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Louis Moreau went through the Great Blackout in 2030 in Yongsan-Itaewon, working in civilian warehousing and electrical repair in Yongsan.",
+   "new": "Louis Moreau went through the Great Blackout around 2026 in Yongsan-Itaewon, working in civilian warehousing and electrical repair in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0926",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "루이 모로는 2030년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다.",
+   "new": "루이 모로는 약 2026년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0926",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "루이 모로는 2030년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다.",
+   "new": "루이 모로는 약 2026년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0958",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Karel Procházka lived through the Great Blackout in 2030 working in Itaewon lodging and private technical services in Yongsan–Itaewon.",
+   "new": "Karel Procházka lived through the Great Blackout around 2026 working in Itaewon lodging and private technical services in Yongsan–Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0958",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Karel Procházka lived through the Great Blackout in 2030 working in Itaewon lodging and private technical services in Yongsan–Itaewon.",
+   "new": "Karel Procházka lived through the Great Blackout around 2026 working in Itaewon lodging and private technical services in Yongsan–Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0958",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "카렐 프로하스카는 2030년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다.",
+   "new": "카렐 프로하스카는 약 2026년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0958",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "카렐 프로하스카는 2030년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다.",
+   "new": "카렐 프로하스카는 약 2026년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0974",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "In 2030 Manuel Torres lived through the Great Blackout in Yongsan–Itaewon, working in private food supply in Itaewon and transport in Yongsan.",
+   "new": "Around 2026 Manuel Torres lived through the Great Blackout in Yongsan–Itaewon, working in private food supply in Itaewon and transport in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0974",
+   "column": "json",
+   "path": "$.biography",
+   "old": "In 2030 Manuel Torres lived through the Great Blackout in Yongsan–Itaewon, working in private food supply in Itaewon and transport in Yongsan.",
+   "new": "Around 2026 Manuel Torres lived through the Great Blackout in Yongsan–Itaewon, working in private food supply in Itaewon and transport in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0974",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "마누엘 토레스는 2030년 용산·이태원에서 이태원 민간 식품 공급과 용산 운송 일을 하며 대정전을 겪었다.",
+   "new": "마누엘 토레스는 약 2026년 용산·이태원에서 이태원 민간 식품 공급과 용산 운송 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0974",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "마누엘 토레스는 2030년 용산·이태원에서 이태원 민간 식품 공급과 용산 운송 일을 하며 대정전을 겪었다.",
+   "new": "마누엘 토레스는 약 2026년 용산·이태원에서 이태원 민간 식품 공급과 용산 운송 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0990",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Manuel Garcia lived through the Great Blackout in Yongsan and Itaewon in 2030, working in private food supply in Itaewon and in transport in Yongsan.",
+   "new": "Manuel Garcia lived through the Great Blackout in Yongsan and Itaewon around 2026, working in private food supply in Itaewon and in transport in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0990",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Manuel Garcia lived through the Great Blackout in Yongsan and Itaewon in 2030, working in private food supply in Itaewon and in transport in Yongsan.",
+   "new": "Manuel Garcia lived through the Great Blackout in Yongsan and Itaewon around 2026, working in private food supply in Itaewon and in transport in Yongsan.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0990",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "마누엘 가르시아는 2030년 용산·이태원에서 이태원 민간 식품 공급과 용산 운송 일을 하며 대정전을 겪었다.",
+   "new": "마누엘 가르시아는 약 2026년 용산·이태원에서 이태원 민간 식품 공급과 용산 운송 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0990",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "마누엘 가르시아는 2030년 용산·이태원에서 이태원 민간 식품 공급과 용산 운송 일을 하며 대정전을 겪었다.",
+   "new": "마누엘 가르시아는 약 2026년 용산·이태원에서 이태원 민간 식품 공급과 용산 운송 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1011",
+   "column": "json",
+   "path": "$.fields.Community of origin",
+   "old": "Lin Chenghao lived through the Great Blackout in 2030 in Daerim–Garibong, working at a Korean-Chinese shop and as an interpreter there.",
+   "new": "Lin Chenghao lived through the Great Blackout around 2026 in Daerim–Garibong, working at a Korean-Chinese shop and as an interpreter there.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1011",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Lin Chenghao lived through the Great Blackout in 2030 in Daerim–Garibong, working at a Korean-Chinese shop and as an interpreter there.",
+   "new": "Lin Chenghao lived through the Great Blackout around 2026 in Daerim–Garibong, working at a Korean-Chinese shop and as an interpreter there.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1011",
+   "column": "json_ko",
+   "path": "$.fields.출신 공동체",
+   "old": "린청하오는 2030년 대림·가리봉에서 대림·가리봉 중국동포 상점과 통역 일을 하며 대정전을 겪었다.",
+   "new": "린청하오는 약 2026년 대림·가리봉에서 대림·가리봉 중국동포 상점과 통역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1011",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "린청하오는 2030년 대림·가리봉에서 대림·가리봉 중국동포 상점과 통역 일을 하며 대정전을 겪었다.",
+   "new": "린청하오는 약 2026년 대림·가리봉에서 대림·가리봉 중국동포 상점과 통역 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1012",
+   "column": "json",
+   "path": "$.fields.Community of origin",
+   "old": "His great-grandfather Phạm Văn Minh, born in 1999, kept up manual maintenance with his colleagues when the Guro Industrial Complex equipment stopped in 2030.",
+   "new": "His great-grandfather Phạm Văn Minh, born in 1999, kept up manual maintenance with his colleagues when the Guro Industrial Complex equipment stopped around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1012",
+   "column": "json",
+   "path": "$.biography",
+   "old": "His great-grandfather Pam Ban-min, born in 1999, continued manual maintenance with his colleagues when the Guro Industrial Complex equipment stopped in 2030.",
+   "new": "His great-grandfather Pam Ban-min, born in 1999, continued manual maintenance with his colleagues when the Guro Industrial Complex equipment stopped around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1012",
+   "column": "json",
+   "path": "$.biography",
+   "old": "When the equipment stops on October 14, 2030, he continues manual maintenance with his colleagues and writes names in the shift roster so that dormitory residents are not left out of the food distribution.",
+   "new": "When the equipment stops around 2026, he continues manual maintenance with his colleagues and writes names in the shift roster so that dormitory residents are not left out of the food distribution.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1012",
+   "column": "json_ko",
+   "path": "$.fields.출신 공동체",
+   "old": "1999년생 증조부 팜반민은 2030년 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다.",
+   "new": "1999년생 증조부 팜반민은 약 2026년 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1012",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "1999년생 증조부 팜반민은 2030년 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다.",
+   "new": "1999년생 증조부 팜반민은 약 2026년 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1012",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "2030년 10월 14일 설비가 멈추자 동료들과 수동 정비를 이어 가고, 식량 배분에서 기숙사 주민이 빠지지 않도록 교대 명부에 이름을 적는다.",
+   "new": "약 2026년 설비가 멈추자 동료들과 수동 정비를 이어 가고, 식량 배분에서 기숙사 주민이 빠지지 않도록 교대 명부에 이름을 적는다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1013",
+   "column": "json",
+   "path": "$.fields.Community of origin",
+   "old": "Khalid Kasim lived through the Great Blackout in 2030 while working in private interpreting and lodging in Itaewon.",
+   "new": "Khalid Kasim lived through the Great Blackout around 2026 while working in private interpreting and lodging in Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1013",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Khalid Kasim lived through the Great Blackout in 2030 while working in private interpreting and lodging in Itaewon.",
+   "new": "Khalid Kasim lived through the Great Blackout around 2026 while working in private interpreting and lodging in Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1013",
+   "column": "json_ko",
+   "path": "$.fields.출신 공동체",
+   "old": "할리드 카심은 2030년 이태원에서 이태원 민간 통역·숙박 일을 하며 대정전을 겪었다.",
+   "new": "할리드 카심은 약 2026년 이태원에서 이태원 민간 통역·숙박 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1013",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "할리드 카심은 2030년 이태원에서 이태원 민간 통역·숙박 일을 하며 대정전을 겪었다.",
+   "new": "할리드 카심은 약 2026년 이태원에서 이태원 민간 통역·숙박 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1014",
+   "column": "json",
+   "path": "$.fields.Community of origin",
+   "old": "Bak Yunseok lived through the Great Blackout in 2030 while working as a civilian subcontract interpreter for the Yongsan garrison, within the Yongsan Fence Contract Labor.",
+   "new": "Bak Yunseok lived through the Great Blackout around 2026 while working as a civilian subcontract interpreter for the Yongsan garrison, within the Yongsan Fence Contract Labor.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1014",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Bak Yunseok lived through the Great Blackout in 2030 while working as a civilian subcontract interpreter for the Yongsan garrison, within the Yongsan Fence Contract Labor.",
+   "new": "Bak Yunseok lived through the Great Blackout around 2026 while working as a civilian subcontract interpreter for the Yongsan garrison, within the Yongsan Fence Contract Labor.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1014",
+   "column": "json_ko",
+   "path": "$.fields.출신 공동체",
+   "old": "박윤석은 2030년 용산 울타리 용역에서 용산 주둔지의 민간 하청 통역을 하며 대정전을 겪었다.",
+   "new": "박윤석은 약 2026년 용산 울타리 용역에서 용산 주둔지의 민간 하청 통역을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1014",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "박윤석은 2030년 용산 울타리 용역에서 용산 주둔지의 민간 하청 통역을 하며 대정전을 겪었다.",
+   "new": "박윤석은 약 2026년 용산 울타리 용역에서 용산 주둔지의 민간 하청 통역을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1015",
+   "column": "json",
+   "path": "$.fields.Community of origin",
+   "old": "Karim Yusupov lived through the Great Blackout in 2030 while working as a Koryo-saram civilian freight broker in Jayang–Geondae, within the Jayang–Geondae Koryo-saram Boardinghouse.",
+   "new": "Karim Yusupov lived through the Great Blackout around 2026 while working as a Koryo-saram civilian freight broker in Jayang–Geondae, within the Jayang–Geondae Koryo-saram Boardinghouse.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1015",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Karim Yusupov weathered the Great Blackout in 2030 at the Jayang–Geondae Goryeoin boarding house, working in Goryeoin private freight brokerage in Jayang and Geondae.",
+   "new": "Karim Yusupov weathered the Great Blackout around 2026 at the Jayang–Geondae Goryeoin boarding house, working in Goryeoin private freight brokerage in Jayang and Geondae.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1015",
+   "column": "json_ko",
+   "path": "$.fields.출신 공동체",
+   "old": "카림 유수포프는 2030년 자양·건대 고려인 하숙에서 자양·건대의 고려인 민간 화물 중개 일을 하며 대정전을 겪었다.",
+   "new": "카림 유수포프는 약 2026년 자양·건대 고려인 하숙에서 자양·건대의 고려인 민간 화물 중개 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1015",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "카림 유수포프는 2030년 자양·건대 고려인 하숙에서 자양·건대의 고려인 민간 화물 중개 일을 하며 대정전을 겪었다.",
+   "new": "카림 유수포프는 약 2026년 자양·건대 고려인 하숙에서 자양·건대의 고려인 민간 화물 중개 일을 하며 대정전을 겪었다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json",
+   "path": "$.fields.Community of origin",
+   "old": "His great-grandfather Choe Gyeongseop, born in 1997, carried out the reserve-force company's register in 2030 and distinguished the people who could be contacted from those who had evacuated.",
+   "new": "His great-grandfather Choe Gyeongseop, born in 1997, carried out the reserve-force company's register around 2026 and distinguished the people who could be contacted from those who had evacuated.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json",
+   "path": "$.fields.Conscription history",
+   "old": "The reserve-force company clerk who carried out the register on October 14, 2030 was his great-grandfather Choe Gyeongseop",
+   "new": "The reserve-force company clerk who carried out the register around 2026 was his great-grandfather Choe Gyeongseop",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json",
+   "path": "$.biography",
+   "old": "His great-grandfather Choe Gyeongseop, born in 1997, carried out the reserve company's roster in 2030 and separated those who could be contacted from those who had evacuated.",
+   "new": "His great-grandfather Choe Gyeongseop, born in 1997, carried out the reserve company's roster around 2026 and separated those who could be contacted from those who had evacuated.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json",
+   "path": "$.biography",
+   "old": "The reserve company clerk who carried out the roster on October 14, 2030 was his great-grandfather Choe Gyeongseop",
+   "new": "The reserve company clerk who carried out the roster around 2026 was his great-grandfather Choe Gyeongseop",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json",
+   "path": "$.biography",
+   "old": "When communications are cut on October 14, 2030, he carries out the roster and records separately those who can be contacted and those who have evacuated.",
+   "new": "When communications are cut around 2026, he carries out the roster and records separately those who can be contacted and those who have evacuated.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json_ko",
+   "path": "$.fields.출신 공동체",
+   "old": "1997년생 증조부 최경섭은 2030년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다.",
+   "new": "1997년생 증조부 최경섭은 약 2026년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json_ko",
+   "path": "$.fields.징집 이력",
+   "old": "2030년 10월 14일 명부를 들고 나온 예비군 중대 서기는 증조부 최경섭",
+   "new": "약 2026년 명부를 들고 나온 예비군 중대 서기는 증조부 최경섭",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "1997년생 증조부 최경섭은 2030년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다.",
+   "new": "1997년생 증조부 최경섭은 약 2026년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "2030년 10월 14일 명부를 들고 나온 예비군 중대 서기는 증조부 최경섭",
+   "new": "약 2026년 명부를 들고 나온 예비군 중대 서기는 증조부 최경섭",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "2030년 10월 14일 통신이 끊기자 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분해 적는다.",
+   "new": "약 2026년 통신이 끊기자 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분해 적는다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[81].timeline[0].summary",
+   "old": "At the time of the Great Blackout of 2030, Bak Dohyeon worked in the Yongsan Hosongga's living area, doing civilian contract work for the Yongsan railway and civilian lodging work in Itaewon.",
+   "new": "At the time of the Great Blackout of around 2026, Bak Dohyeon worked in the Yongsan Hosongga's living area, doing civilian contract work for the Yongsan railway and civilian lodging work in Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[81].timeline[0].summaryEn",
+   "old": "Park Doheon was in the family's local community when communications failed in 2030.",
+   "new": "Park Doheon was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[82].timeline[0].summary",
+   "old": "At the time of the Great Blackout of 2030, Brona Walsh worked in the Yongsan Hosongga's living area, doing civilian contract work for the Yongsan railway and civilian lodging work in Itaewon.",
+   "new": "At the time of the Great Blackout of around 2026, Brona Walsh worked in the Yongsan Hosongga's living area, doing civilian contract work for the Yongsan railway and civilian lodging work in Itaewon.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[82].timeline[0].summaryEn",
+   "old": "Bróna Walsh was in the family's local community when communications failed in 2030.",
+   "new": "Bróna Walsh was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[83].timeline[0].summary",
+   "old": "During the Great Blackout of 2030, Bak Yunseok worked as a civilian subcontract interpreter for the Yongsan garrison, within the living sphere of the Yongsan Fence Contract Labor.",
+   "new": "During the Great Blackout of around 2026, Bak Yunseok worked as a civilian subcontract interpreter for the Yongsan garrison, within the living sphere of the Yongsan Fence Contract Labor.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[83].timeline[0].summaryEn",
+   "old": "Park Yunseok was in the family's local community when communications failed in 2030.",
+   "new": "Park Yunseok was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[84].timeline[0].summary",
+   "old": "During the Great Blackout of 2030, Lorraine Carter worked as a civilian subcontract interpreter for the Yongsan garrison, within the living sphere of the Yongsan Fence Contract Labor.",
+   "new": "During the Great Blackout of around 2026, Lorraine Carter worked as a civilian subcontract interpreter for the Yongsan garrison, within the living sphere of the Yongsan Fence Contract Labor.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[84].timeline[0].summaryEn",
+   "old": "Lorraine Carter was in the family's local community when communications failed in 2030.",
+   "new": "Lorraine Carter was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[81].timeline[0].summary",
+   "old": "박도헌는 2030년 대정전 당시 용산호송가 생활권에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 했다.",
+   "new": "박도헌는 약 2026년 대정전 당시 용산호송가 생활권에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[81].timeline[0].summaryEn",
+   "old": "Park Doheon was in the family's local community when communications failed in 2030.",
+   "new": "Park Doheon was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[82].timeline[0].summary",
+   "old": "브로나 월시는 2030년 대정전 당시 용산호송가 생활권에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 했다.",
+   "new": "브로나 월시는 약 2026년 대정전 당시 용산호송가 생활권에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[82].timeline[0].summaryEn",
+   "old": "Bróna Walsh was in the family's local community when communications failed in 2030.",
+   "new": "Bróna Walsh was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[83].timeline[0].summary",
+   "old": "박윤석은 2030년 대정전 당시 용산 울타리 용역 생활권에서 용산 주둔지의 민간 하청 통역을 했다.",
+   "new": "박윤석은 약 2026년 대정전 당시 용산 울타리 용역 생활권에서 용산 주둔지의 민간 하청 통역을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[83].timeline[0].summaryEn",
+   "old": "Park Yunseok was in the family's local community when communications failed in 2030.",
+   "new": "Park Yunseok was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[84].timeline[0].summary",
+   "old": "로레인 카터는 2030년 대정전 당시 용산 울타리 용역 생활권에서 용산 주둔지의 민간 하청 통역을 했다.",
+   "new": "로레인 카터는 약 2026년 대정전 당시 용산 울타리 용역 생활권에서 용산 주둔지의 민간 하청 통역을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[84].timeline[0].summaryEn",
+   "old": "Lorraine Carter was in the family's local community when communications failed in 2030.",
+   "new": "Lorraine Carter was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[2].timeline[0].summary",
+   "old": "During the Great Blackout of 2030, Trần Thị Mai worked as a skilled operator on the civilian night line of the Guro Industrial Complex, in the dormitory living district.",
+   "new": "During the Great Blackout of around 2026, Trần Thị Mai worked as a skilled operator on the civilian night line of the Guro Industrial Complex, in the dormitory living district.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[2].timeline[0].summaryEn",
+   "old": "Trần Thị Mai was in the family's local community when communications failed in 2030.",
+   "new": "Trần Thị Mai was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].date",
+   "old": "2030-10-14",
+   "new": "2026",
+   "reason": "구 대정전일(2030-10-14) — Q2 월일 미정, 연도만 남긴다(렌더되지 않는 데이터 값)"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "old": "In 2030 he kept manual maintenance going and guarded the dormitory shift roster on the Guro night line, and from 2046 he taught maintenance to his son Phạm Văn Tuấn.",
+   "new": "Around 2026 he kept manual maintenance going and guarded the dormitory shift roster on the Guro night line, and from 2046 he taught maintenance to his son Phạm Văn Tuấn.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[3].timeline[1].summary",
+   "old": "In 2030 he kept manual maintenance going and guarded the dormitory shift roster on the Guro night line, and from 2046 he taught maintenance to his son Phạm Văn Tuấn.",
+   "new": "Around 2026 he kept manual maintenance going and guarded the dormitory shift roster on the Guro night line, and from 2046 he taught maintenance to his son Phạm Văn Tuấn.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summary",
+   "old": "His great-grandfather Phạm Văn Minh, born in 1999, kept up manual maintenance with his colleagues when the Guro Industrial Complex equipment stopped in 2030.",
+   "new": "His great-grandfather Phạm Văn Minh, born in 1999, kept up manual maintenance with his colleagues when the Guro Industrial Complex equipment stopped around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[6].timeline[1].summary",
+   "old": "His great-grandfather Phạm Văn Minh, born in 1999, kept up manual maintenance with his colleagues when the Guro Industrial Complex equipment stopped in 2030.",
+   "new": "His great-grandfather Phạm Văn Minh, born in 1999, kept up manual maintenance with his colleagues when the Guro Industrial Complex equipment stopped around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[2].timeline[0].summary",
+   "old": "쩐 티 마이는 2030년 대정전 당시 구로공단 기숙사 생활권에서 구로공단 민간 야간 라인 기능공 일을 했다.",
+   "new": "쩐 티 마이는 약 2026년 대정전 당시 구로공단 기숙사 생활권에서 구로공단 민간 야간 라인 기능공 일을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[2].timeline[0].summaryEn",
+   "old": "Trần Thị Mai was in the family's local community when communications failed in 2030.",
+   "new": "Trần Thị Mai was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].date",
+   "old": "2030-10-14",
+   "new": "2026",
+   "reason": "구 대정전일(2030-10-14) — Q2 월일 미정, 연도만 남긴다(렌더되지 않는 데이터 값)"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "old": "2030년 구로 야간 라인에서 수동 정비와 기숙사 교대 명부를 지키고, 2046년부터 아들 팜반뚜언에게 정비를 가르친다.",
+   "new": "약 2026년 구로 야간 라인에서 수동 정비와 기숙사 교대 명부를 지키고, 2046년부터 아들 팜반뚜언에게 정비를 가르친다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[1].summary",
+   "old": "2030년 구로 야간 라인에서 수동 정비와 기숙사 교대 명부를 지키고, 2046년부터 아들 팜반뚜언에게 정비를 가르친다.",
+   "new": "약 2026년 구로 야간 라인에서 수동 정비와 기숙사 교대 명부를 지키고, 2046년부터 아들 팜반뚜언에게 정비를 가르친다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summary",
+   "old": "1999년생 증조부 팜반민은 2030년 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다.",
+   "new": "1999년생 증조부 팜반민은 약 2026년 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[1].summary",
+   "old": "1999년생 증조부 팜반민은 2030년 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다.",
+   "new": "1999년생 증조부 팜반민은 약 2026년 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json",
+   "path": "$.nodes[5].timeline[0].summary",
+   "old": "During the Great Blackout of 2030, Karim Yusupov worked as a Koryo-saram civilian freight broker in Jayang–Geondae, within the living sphere of the Jayang–Geondae Koryo-saram Boardinghouse.",
+   "new": "During the Great Blackout of around 2026, Karim Yusupov worked as a Koryo-saram civilian freight broker in Jayang–Geondae, within the living sphere of the Jayang–Geondae Koryo-saram Boardinghouse.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json",
+   "path": "$.nodes[5].timeline[0].summaryEn",
+   "old": "Karim Yusupov was in the family's local community when communications failed in 2030.",
+   "new": "Karim Yusupov was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summary",
+   "old": "During the Great Blackout of 2030, Kim Jeonghui worked as a Koryo-saram civilian freight broker in Jayang–Geondae, within the living sphere of the Jayang–Geondae Koryo-saram Boardinghouse.",
+   "new": "During the Great Blackout of around 2026, Kim Jeonghui worked as a Koryo-saram civilian freight broker in Jayang–Geondae, within the living sphere of the Jayang–Geondae Koryo-saram Boardinghouse.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "old": "Kim Jeonghui was in the family's local community when communications failed in 2030.",
+   "new": "Kim Jeonghui was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json_ko",
+   "path": "$.nodes[5].timeline[0].summary",
+   "old": "카림 유수포프는 2030년 대정전 당시 자양·건대 고려인 하숙 생활권에서 자양·건대의 고려인 민간 화물 중개 일을 했다.",
+   "new": "카림 유수포프는 약 2026년 대정전 당시 자양·건대 고려인 하숙 생활권에서 자양·건대의 고려인 민간 화물 중개 일을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json_ko",
+   "path": "$.nodes[5].timeline[0].summaryEn",
+   "old": "Karim Yusupov was in the family's local community when communications failed in 2030.",
+   "new": "Karim Yusupov was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summary",
+   "old": "김정희는 2030년 대정전 당시 자양·건대 고려인 하숙 생활권에서 자양·건대의 고려인 민간 화물 중개 일을 했다.",
+   "new": "김정희는 약 2026년 대정전 당시 자양·건대 고려인 하숙 생활권에서 자양·건대의 고려인 민간 화물 중개 일을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "old": "Kim Jeonghui was in the family's local community when communications failed in 2030.",
+   "new": "Kim Jeonghui was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json",
+   "path": "$.nodes[5].timeline[0].summary",
+   "old": "At the time of the Great Blackout of 2030, Lin Chenghao lived in the Daerim-Garibong district and worked in a Daerim-Garibong Chinese-Korean shop and as an interpreter.",
+   "new": "At the time of the Great Blackout of around 2026, Lin Chenghao lived in the Daerim-Garibong district and worked in a Daerim-Garibong Chinese-Korean shop and as an interpreter.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json",
+   "path": "$.nodes[5].timeline[0].summaryEn",
+   "old": "Lin Chenghao was in the family's local community when communications failed in 2030.",
+   "new": "Lin Chenghao was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summary",
+   "old": "At the time of the Great Blackout of 2030, Yun Chunzhi lived in the Daerim-Garibong district and worked in a Daerim-Garibong Chinese-Korean shop and as an interpreter.",
+   "new": "At the time of the Great Blackout of around 2026, Yun Chunzhi lived in the Daerim-Garibong district and worked in a Daerim-Garibong Chinese-Korean shop and as an interpreter.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "old": "Yin Chunji was in the family's local community when communications failed in 2030.",
+   "new": "Yin Chunji was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json_ko",
+   "path": "$.nodes[5].timeline[0].summary",
+   "old": "린청하오는 2030년 대정전 당시 대림·가리봉 생활권에서 대림·가리봉 중국동포 상점과 통역 일을 했다.",
+   "new": "린청하오는 약 2026년 대정전 당시 대림·가리봉 생활권에서 대림·가리봉 중국동포 상점과 통역 일을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json_ko",
+   "path": "$.nodes[5].timeline[0].summaryEn",
+   "old": "Lin Chenghao was in the family's local community when communications failed in 2030.",
+   "new": "Lin Chenghao was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summary",
+   "old": "윤춘지는 2030년 대정전 당시 대림·가리봉 생활권에서 대림·가리봉 중국동포 상점과 통역 일을 했다.",
+   "new": "윤춘지는 약 2026년 대정전 당시 대림·가리봉 생활권에서 대림·가리봉 중국동포 상점과 통역 일을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "old": "Yin Chunji was in the family's local community when communications failed in 2030.",
+   "new": "Yin Chunji was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "old": "At the time of the Great Blackout of 2030, Jang Hyeonseok worked in the Sinnae-Yongsan Trackgate living area, on civilian railway duty at Sinnae and on repairs at the Yongsan Freight Yard.",
+   "new": "At the time of the Great Blackout of around 2026, Jang Hyeonseok worked in the Sinnae-Yongsan Trackgate living area, on civilian railway duty at Sinnae and on repairs at the Yongsan Freight Yard.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summaryEn",
+   "old": "Jang Hyeonseok was in the family's local community when communications failed in 2030.",
+   "new": "Jang Hyeonseok was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summary",
+   "old": "At the time of the Great Blackout of 2030, Krystyna Nowicka worked in the Sinnae-Yongsan Trackgate living area, on civilian railway duty at Sinnae and on repairs at the Yongsan Freight Yard.",
+   "new": "At the time of the Great Blackout of around 2026, Krystyna Nowicka worked in the Sinnae-Yongsan Trackgate living area, on civilian railway duty at Sinnae and on repairs at the Yongsan Freight Yard.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "old": "Krystyna Nowicka was in the family's local community when communications failed in 2030.",
+   "new": "Krystyna Nowicka was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "old": "장현석은 2030년 대정전 당시 신내·용산선로문 생활권에서 신내 철도 민간 당직과 용산 화물창 수선 일을 했다.",
+   "new": "장현석은 약 2026년 대정전 당시 신내·용산선로문 생활권에서 신내 철도 민간 당직과 용산 화물창 수선 일을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summaryEn",
+   "old": "Jang Hyeonseok was in the family's local community when communications failed in 2030.",
+   "new": "Jang Hyeonseok was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summary",
+   "old": "크리스티나 노비츠카는 2030년 대정전 당시 신내·용산선로문 생활권에서 신내 철도 민간 당직과 용산 화물창 수선 일을 했다.",
+   "new": "크리스티나 노비츠카는 약 2026년 대정전 당시 신내·용산선로문 생활권에서 신내 철도 민간 당직과 용산 화물창 수선 일을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "old": "Krystyna Nowicka was in the family's local community when communications failed in 2030.",
+   "new": "Krystyna Nowicka was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c8fc-912d",
+   "column": "json",
+   "path": "$.nodes[1].timeline[0].summary",
+   "old": "In 2030 that yard was already running humanoids, and when cloud learning died, the maintenance family kept the trade name.",
+   "new": "Around 2026 that yard was already running humanoids, and when cloud learning died, the maintenance family kept the trade name.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c8fc-912d",
+   "column": "json_ko",
+   "path": "$.nodes[1].timeline[0].summary",
+   "old": "2030년 그 마당은 이미 휴머노이드를 굴렸고, 구름 학습이 죽자 정비 가문이 상호를 남겼다.",
+   "new": "약 2026년 그 마당은 이미 휴머노이드를 굴렸고, 구름 학습이 죽자 정비 가문이 상호를 남겼다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[16].timeline[0].summary",
+   "old": "At the time of the Great Blackout in 2030, Bak Miyeong worked in the Guro–Geumcheon living area managing the Guro district evacuation and reserve-force register.",
+   "new": "At the time of the Great Blackout around 2026, Bak Miyeong worked in the Guro–Geumcheon living area managing the Guro district evacuation and reserve-force register.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[16].timeline[0].summaryEn",
+   "old": "Park Miyeong was in the family's local community when communications failed in 2030.",
+   "new": "Park Miyeong was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[17].timeline[0].date",
+   "old": "2030-10-14",
+   "new": "2026",
+   "reason": "구 대정전일(2030-10-14) — Q2 월일 미정, 연도만 남긴다(렌더되지 않는 데이터 값)"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[17].timeline[0].summary",
+   "old": "On October 14, 2030, he carried out the reserve-force company register, and from 2044 he teaches his son Choe Munjae to cross-check the original against the copy.",
+   "new": "Around 2026, he carried out the reserve-force company register, and from 2044 he teaches his son Choe Munjae to cross-check the original against the copy.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[17].timeline[1].summary",
+   "old": "On October 14, 2030, he carried out the reserve-force company register, and from 2044 he teaches his son Choe Munjae to cross-check the original against the copy.",
+   "new": "Around 2026, he carried out the reserve-force company register, and from 2044 he teaches his son Choe Munjae to cross-check the original against the copy.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[20].timeline[0].summary",
+   "old": "His great-grandfather Choe Gyeongseop, born in 1997, carried out the reserve-force company's register in 2030 and distinguished the people who could be contacted from those who had evacuated.",
+   "new": "His great-grandfather Choe Gyeongseop, born in 1997, carried out the reserve-force company's register around 2026 and distinguished the people who could be contacted from those who had evacuated.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[20].timeline[1].summary",
+   "old": "His great-grandfather Choe Gyeongseop, born in 1997, carried out the reserve-force company's register in 2030 and distinguished the people who could be contacted from those who had evacuated.",
+   "new": "His great-grandfather Choe Gyeongseop, born in 1997, carried out the reserve-force company's register around 2026 and distinguished the people who could be contacted from those who had evacuated.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[20].timeline[2].summary",
+   "old": "His great-grandfather Choe Gyeongseop, born in 1997, carried out the reserve-force company's register in 2030 and distinguished the people who could be contacted from those who had evacuated.",
+   "new": "His great-grandfather Choe Gyeongseop, born in 1997, carried out the reserve-force company's register around 2026 and distinguished the people who could be contacted from those who had evacuated.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[16].timeline[0].summary",
+   "old": "박미영은 2030년 대정전 당시 구로·금천 생활권에서 구로 지역 피난·예비군 명부 관리 일을 했다.",
+   "new": "박미영은 약 2026년 대정전 당시 구로·금천 생활권에서 구로 지역 피난·예비군 명부 관리 일을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[16].timeline[0].summaryEn",
+   "old": "Park Miyeong was in the family's local community when communications failed in 2030.",
+   "new": "Park Miyeong was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[17].timeline[0].date",
+   "old": "2030-10-14",
+   "new": "2026",
+   "reason": "구 대정전일(2030-10-14) — Q2 월일 미정, 연도만 남긴다(렌더되지 않는 데이터 값)"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[17].timeline[0].summary",
+   "old": "2030년 10월 14일 예비군 중대 명부를 들고 나오고, 2044년부터 아들 최문재에게 원본과 사본 대조를 가르친다.",
+   "new": "약 2026년 예비군 중대 명부를 들고 나오고, 2044년부터 아들 최문재에게 원본과 사본 대조를 가르친다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[17].timeline[1].summary",
+   "old": "2030년 10월 14일 예비군 중대 명부를 들고 나오고, 2044년부터 아들 최문재에게 원본과 사본 대조를 가르친다.",
+   "new": "약 2026년 예비군 중대 명부를 들고 나오고, 2044년부터 아들 최문재에게 원본과 사본 대조를 가르친다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[20].timeline[0].summary",
+   "old": "1997년생 증조부 최경섭은 2030년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다.",
+   "new": "1997년생 증조부 최경섭은 약 2026년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[20].timeline[1].summary",
+   "old": "1997년생 증조부 최경섭은 2030년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다.",
+   "new": "1997년생 증조부 최경섭은 약 2026년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[20].timeline[2].summary",
+   "old": "1997년생 증조부 최경섭은 2030년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다.",
+   "new": "1997년생 증조부 최경섭은 약 2026년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json",
+   "path": "$.nodes[5].timeline[0].summary",
+   "old": "At the time of the Great Blackout in 2030, Khalid Kasim worked in private interpreting and lodging in the Itaewon living sphere.",
+   "new": "At the time of the Great Blackout around 2026, Khalid Kasim worked in private interpreting and lodging in the Itaewon living sphere.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json",
+   "path": "$.nodes[5].timeline[0].summaryEn",
+   "old": "Khalid Qasim was in the family's local community when communications failed in 2030.",
+   "new": "Khalid Qasim was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summary",
+   "old": "At the time of the Great Blackout in 2030, Nadia Hadad worked in private interpreting and lodging in the Itaewon living sphere.",
+   "new": "At the time of the Great Blackout around 2026, Nadia Hadad worked in private interpreting and lodging in the Itaewon living sphere.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "old": "Nadia Haddad was in the family's local community when communications failed in 2030.",
+   "new": "Nadia Haddad was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json_ko",
+   "path": "$.nodes[5].timeline[0].summary",
+   "old": "할리드 카심은 2030년 대정전 당시 이태원 생활권에서 이태원 민간 통역·숙박 일을 했다.",
+   "new": "할리드 카심은 약 2026년 대정전 당시 이태원 생활권에서 이태원 민간 통역·숙박 일을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json_ko",
+   "path": "$.nodes[5].timeline[0].summaryEn",
+   "old": "Khalid Qasim was in the family's local community when communications failed in 2030.",
+   "new": "Khalid Qasim was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summary",
+   "old": "나디아 하다드는 2030년 대정전 당시 이태원 생활권에서 이태원 민간 통역·숙박 일을 했다.",
+   "new": "나디아 하다드는 약 2026년 대정전 당시 이태원 생활권에서 이태원 민간 통역·숙박 일을 했다.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "old": "Nadia Haddad was in the family's local community when communications failed in 2030.",
+   "new": "Nadia Haddad was in the family's local community when communications failed around 2026.",
+   "reason": "구 대정전 서술(2030=대정전) — 바이블 3절 확정 표현 약 2026년/around 2026으로"
+  }
+ ],
+ "kept": [
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "sentence": "The Government has operated as an independent, neutral organization since 2030, and the AI continued to lead the organization while changing avatars.",
+   "reason": "H3(org→polity) 대상 — 문장 전체 재작성에 연도 포함"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "sentence": "The Government has operated as an independent, neutral organization since 2030, and the AI continued to lead the organization while changing avatars.",
+   "reason": "H3(org→polity) 대상 — 문장 전체 재작성에 연도 포함"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "sentence": "정부는 2030년부터 독립된 중립 조직으로 활동했고 AI가 아바타를 바꾸며 계속 조직을 이끌었다.",
+   "reason": "H3(org→polity) 대상 — 문장 전체 재작성에 연도 포함"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "sentence": "정부는 2030년부터 독립된 중립 조직으로 활동했고 AI가 아바타를 바꾸며 계속 조직을 이끌었다.",
+   "reason": "H3(org→polity) 대상 — 문장 전체 재작성에 연도 포함"
+  },
+  {
+   "file": "090",
+   "id": "person-0297",
+   "column": "json",
+   "path": "$.biography",
+   "sentence": "Jang Hyeonseok's 2030 record remains a matter of the previous generation and is not transferred to Jang Sehwa's own career.",
+   "reason": "in-story date — 대정전 문맥 아님(판정 보류 없음)"
+  },
+  {
+   "file": "090",
+   "id": "person-0297",
+   "column": "json_ko",
+   "path": "$.biography",
+   "sentence": "장현석의 2030년 기록은 선대의 일로 남으며 장세화 자신의 경력으로 옮기지 않는다.",
+   "reason": "in-story date — 대정전 문맥 아님(판정 보류 없음)"
+  },
+  {
+   "file": "110",
+   "id": "ae40-ad11-c0b0-91d1",
+   "column": "json",
+   "path": "$.nodes[3].birthDate",
+   "sentence": "2030-09-13",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "ae40-ad11-c0b0-91d1",
+   "column": "json",
+   "path": "$.nodes[6].birthDate",
+   "sentence": "2030-09-13",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "ae40-ad11-c0b0-91d1",
+   "column": "json_ko",
+   "path": "$.nodes[3].birthDate",
+   "sentence": "2030-09-13",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "ae40-ad11-c0b0-91d1",
+   "column": "json_ko",
+   "path": "$.nodes[6].birthDate",
+   "sentence": "2030-09-13",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json",
+   "path": "$.nodes[17].birthDate",
+   "sentence": "2030-08-02",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json",
+   "path": "$.nodes[20].birthDate",
+   "sentence": "2030-08-02",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json",
+   "path": "$.nodes[23].birthDate",
+   "sentence": "2030-10-24",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json",
+   "path": "$.nodes[26].birthDate",
+   "sentence": "2030-10-24",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json_ko",
+   "path": "$.nodes[17].birthDate",
+   "sentence": "2030-08-02",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json_ko",
+   "path": "$.nodes[20].birthDate",
+   "sentence": "2030-08-02",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json_ko",
+   "path": "$.nodes[23].birthDate",
+   "sentence": "2030-10-24",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json_ko",
+   "path": "$.nodes[26].birthDate",
+   "sentence": "2030-10-24",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "b9e4-cda9-c8fc",
+   "column": "json",
+   "path": "$.nodes[21].birthDate",
+   "sentence": "2030-04-05",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "b9e4-cda9-c8fc",
+   "column": "json",
+   "path": "$.nodes[24].birthDate",
+   "sentence": "2030-04-05",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "b9e4-cda9-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[21].birthDate",
+   "sentence": "2030-04-05",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "b9e4-cda9-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[24].birthDate",
+   "sentence": "2030-04-05",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bcc0-c6d0-c8fc-908a",
+   "column": "json",
+   "path": "$.nodes[4].birthDate",
+   "sentence": "2030-09-06",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bcc0-c6d0-c8fc-908a",
+   "column": "json",
+   "path": "$.nodes[7].birthDate",
+   "sentence": "2030-09-06",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bcc0-c6d0-c8fc-908a",
+   "column": "json_ko",
+   "path": "$.nodes[4].birthDate",
+   "sentence": "2030-09-06",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bcc0-c6d0-c8fc-908a",
+   "column": "json_ko",
+   "path": "$.nodes[7].birthDate",
+   "sentence": "2030-09-06",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bcf5-ba74-cc9c",
+   "column": "json",
+   "path": "$.nodes[12].birthDate",
+   "sentence": "2030-05-22",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bcf5-ba74-cc9c",
+   "column": "json",
+   "path": "$.nodes[15].birthDate",
+   "sentence": "2030-05-22",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bcf5-ba74-cc9c",
+   "column": "json",
+   "path": "$.nodes[26].birthDate",
+   "sentence": "2030-10-28",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bcf5-ba74-cc9c",
+   "column": "json",
+   "path": "$.nodes[29].birthDate",
+   "sentence": "2030-10-28",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bcf5-ba74-cc9c",
+   "column": "json_ko",
+   "path": "$.nodes[12].birthDate",
+   "sentence": "2030-05-22",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bcf5-ba74-cc9c",
+   "column": "json_ko",
+   "path": "$.nodes[15].birthDate",
+   "sentence": "2030-05-22",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bcf5-ba74-cc9c",
+   "column": "json_ko",
+   "path": "$.nodes[26].birthDate",
+   "sentence": "2030-10-28",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bcf5-ba74-cc9c",
+   "column": "json_ko",
+   "path": "$.nodes[29].birthDate",
+   "sentence": "2030-10-28",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bd09-d558-c74c",
+   "column": "json",
+   "path": "$.nodes[8].birthDate",
+   "sentence": "2030-05-24",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bd09-d558-c74c",
+   "column": "json",
+   "path": "$.nodes[11].birthDate",
+   "sentence": "2030-05-24",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bd09-d558-c74c",
+   "column": "json_ko",
+   "path": "$.nodes[8].birthDate",
+   "sentence": "2030-05-24",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "bd09-d558-c74c",
+   "column": "json_ko",
+   "path": "$.nodes[11].birthDate",
+   "sentence": "2030-05-24",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c18c-c9c4-c8fc",
+   "column": "json",
+   "path": "$.nodes[9].birthDate",
+   "sentence": "2030-09-16",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c18c-c9c4-c8fc",
+   "column": "json",
+   "path": "$.nodes[12].birthDate",
+   "sentence": "2030-09-16",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c18c-c9c4-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[9].birthDate",
+   "sentence": "2030-09-16",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c18c-c9c4-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[12].birthDate",
+   "sentence": "2030-09-16",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c218-d55c-c591",
+   "column": "json",
+   "path": "$.nodes[12].birthDate",
+   "sentence": "2030-03-18",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c218-d55c-c591",
+   "column": "json",
+   "path": "$.nodes[15].birthDate",
+   "sentence": "2030-03-18",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c218-d55c-c591",
+   "column": "json_ko",
+   "path": "$.nodes[12].birthDate",
+   "sentence": "2030-03-18",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c218-d55c-c591",
+   "column": "json_ko",
+   "path": "$.nodes[15].birthDate",
+   "sentence": "2030-03-18",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c624-d574-c8fc",
+   "column": "json",
+   "path": "$.nodes[1].timeline[0].summary",
+   "sentence": "The Government has operated as an independent, neutral organization since 2030.",
+   "reason": "H3(org→polity) 대상 — 문장 전체 재작성에 연도 포함"
+  },
+  {
+   "file": "110",
+   "id": "c624-d574-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[1].timeline[0].summary",
+   "sentence": "정부는 2030년부터 독립된 중립 조직으로 활동하였다.",
+   "reason": "H3(org→polity) 대상 — 문장 전체 재작성에 연도 포함"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c591-912d",
+   "column": "json",
+   "path": "$.nodes[4].birthDate",
+   "sentence": "2030-06-17",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c591-912d",
+   "column": "json",
+   "path": "$.nodes[6].birthDate",
+   "sentence": "2030-06-17",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c591-912d",
+   "column": "json_ko",
+   "path": "$.nodes[4].birthDate",
+   "sentence": "2030-06-17",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c591-912d",
+   "column": "json_ko",
+   "path": "$.nodes[6].birthDate",
+   "sentence": "2030-06-17",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c8fc-912d",
+   "column": "json",
+   "path": "$.nodes[16].birthDate",
+   "sentence": "2030-01-26",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c8fc-912d",
+   "column": "json",
+   "path": "$.nodes[19].birthDate",
+   "sentence": "2030-01-26",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c8fc-912d",
+   "column": "json",
+   "path": "$.nodes[22].birthDate",
+   "sentence": "2030-06-17",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c8fc-912d",
+   "column": "json",
+   "path": "$.nodes[24].birthDate",
+   "sentence": "2030-06-17",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c8fc-912d",
+   "column": "json_ko",
+   "path": "$.nodes[16].birthDate",
+   "sentence": "2030-01-26",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c8fc-912d",
+   "column": "json_ko",
+   "path": "$.nodes[19].birthDate",
+   "sentence": "2030-01-26",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c8fc-912d",
+   "column": "json_ko",
+   "path": "$.nodes[22].birthDate",
+   "sentence": "2030-06-17",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c8fc-912d",
+   "column": "json_ko",
+   "path": "$.nodes[24].birthDate",
+   "sentence": "2030-06-17",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c9c0-cda9-c8fc",
+   "column": "json",
+   "path": "$.nodes[29].birthDate",
+   "sentence": "2030-03-22",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c9c0-cda9-c8fc",
+   "column": "json",
+   "path": "$.nodes[32].birthDate",
+   "sentence": "2030-03-22",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c9c0-cda9-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[29].birthDate",
+   "sentence": "2030-03-22",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "c9c0-cda9-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[32].birthDate",
+   "sentence": "2030-03-22",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "cc3d-cc3d-b155-660c",
+   "column": "json",
+   "path": "$.nodes[4].birthDate",
+   "sentence": "2030-08-27",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "cc3d-cc3d-b155-660c",
+   "column": "json",
+   "path": "$.nodes[7].birthDate",
+   "sentence": "2030-08-27",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "cc3d-cc3d-b155-660c",
+   "column": "json_ko",
+   "path": "$.nodes[4].birthDate",
+   "sentence": "2030-08-27",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "cc3d-cc3d-b155-660c",
+   "column": "json_ko",
+   "path": "$.nodes[7].birthDate",
+   "sentence": "2030-08-27",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "cc9c-c601-c591",
+   "column": "json",
+   "path": "$.nodes[28].birthDate",
+   "sentence": "2030-03-28",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "cc9c-c601-c591",
+   "column": "json",
+   "path": "$.nodes[31].birthDate",
+   "sentence": "2030-03-28",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "cc9c-c601-c591",
+   "column": "json_ko",
+   "path": "$.nodes[28].birthDate",
+   "sentence": "2030-03-28",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "cc9c-c601-c591",
+   "column": "json_ko",
+   "path": "$.nodes[31].birthDate",
+   "sentence": "2030-03-28",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-ac15-b989-5d14",
+   "column": "json",
+   "path": "$.nodes[2].birthDate",
+   "sentence": "2030-08-12",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-ac15-b989-5d14",
+   "column": "json",
+   "path": "$.nodes[5].birthDate",
+   "sentence": "2030-08-12",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-ac15-b989-5d14",
+   "column": "json_ko",
+   "path": "$.nodes[2].birthDate",
+   "sentence": "2030-08-12",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-ac15-b989-5d14",
+   "column": "json_ko",
+   "path": "$.nodes[5].birthDate",
+   "sentence": "2030-08-12",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "d0c1-ad11-c0b0",
+   "column": "json",
+   "path": "$.nodes[11].birthDate",
+   "sentence": "2030-08-29",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "d0c1-ad11-c0b0",
+   "column": "json",
+   "path": "$.nodes[14].birthDate",
+   "sentence": "2030-08-29",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "d0c1-ad11-c0b0",
+   "column": "json_ko",
+   "path": "$.nodes[11].birthDate",
+   "sentence": "2030-08-29",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "d0c1-ad11-c0b0",
+   "column": "json_ko",
+   "path": "$.nodes[14].birthDate",
+   "sentence": "2030-08-29",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "d64d-b0a8-c591",
+   "column": "json",
+   "path": "$.nodes[11].birthDate",
+   "sentence": "2030-09-27",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "d64d-b0a8-c591",
+   "column": "json",
+   "path": "$.nodes[14].birthDate",
+   "sentence": "2030-09-27",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "d64d-b0a8-c591",
+   "column": "json_ko",
+   "path": "$.nodes[11].birthDate",
+   "sentence": "2030-09-27",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  },
+  {
+   "file": "110",
+   "id": "d64d-b0a8-c591",
+   "column": "json_ko",
+   "path": "$.nodes[14].birthDate",
+   "sentence": "2030-09-27",
+   "reason": "in-story birth year — 출생 연도(대정전 아님)"
+  }
+ ]
+}

@@ -1,0 +1,777 @@
+{
+ "ran_at": "2026-11-11T00:56:58.559Z",
+ "head": "531cc20b60f985ea13524de3626f62936b31a75b",
+ "mode": "apply",
+ "rules_total": 54,
+ "rules_applied": 56,
+ "voiced_rule_ids": [
+  "SS-05",
+  "SS-06",
+  "SS-08",
+  "SS-09",
+  "SS-10",
+  "SS-11",
+  "SS-12",
+  "SS-13",
+  "SS-14",
+  "SS-15",
+  "SS-20",
+  "SS-21",
+  "SS-23",
+  "SS-24",
+  "SS-25",
+  "SS-26",
+  "SS-27",
+  "SS-28",
+  "SS-29",
+  "SS-30",
+  "SS-36",
+  "SS-37"
+ ],
+ "audio_files_whose_narration_no_longer_matches_text": [
+  {
+   "line_id": "v5-hook-02",
+   "rule_ids": [
+    "SS-05",
+    "SS-06"
+   ],
+   "files": [
+    "v5-hook-02.ko.mp3",
+    "v5-hook-02.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v3-pro-01",
+   "rule_ids": [
+    "SS-08",
+    "SS-09"
+   ],
+   "files": [
+    "v3-pro-01.ko.mp3",
+    "v3-pro-01.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v3-win-01",
+   "rule_ids": [
+    "SS-10",
+    "SS-11"
+   ],
+   "files": [
+    "v3-win-01.ko.mp3",
+    "v3-win-01.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v3-win-02",
+   "rule_ids": [
+    "SS-12",
+    "SS-13"
+   ],
+   "files": [
+    "v3-win-02.ko.mp3",
+    "v3-win-02.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v3-win-04",
+   "rule_ids": [
+    "SS-14",
+    "SS-15"
+   ],
+   "files": [
+    "v3-win-04.ko.mp3",
+    "v3-win-04.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v3-six-01",
+   "rule_ids": [
+    "SS-20",
+    "SS-21"
+   ],
+   "files": [
+    "v3-six-01.ko.mp3",
+    "v3-six-01.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v5-hist-01",
+   "rule_ids": [
+    "SS-23",
+    "SS-24"
+   ],
+   "files": [
+    "v5-hist-01.ko.mp3",
+    "v5-hist-01.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v5-hist-05",
+   "rule_ids": [
+    "SS-25",
+    "SS-26"
+   ],
+   "files": [
+    "v5-hist-05.ko.mp3",
+    "v5-hist-05.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v5-hist-08",
+   "rule_ids": [
+    "SS-27",
+    "SS-28"
+   ],
+   "files": [
+    "v5-hist-08.ko.mp3",
+    "v5-hist-08.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v3-sig-01",
+   "rule_ids": [
+    "SS-29",
+    "SS-30"
+   ],
+   "files": [
+    "v3-sig-01.ko.mp3",
+    "v3-sig-01.en.mp3"
+   ]
+  },
+  {
+   "line_id": "v5-coda-02",
+   "rule_ids": [
+    "SS-36",
+    "SS-37"
+   ],
+   "files": [
+    "v5-coda-02.ko.mp3",
+    "v5-coda-02.en.mp3"
+   ]
+  }
+ ],
+ "per_file_delta": {
+  "artifacts/seoul-showcase/src/data/storyScript.ts": {
+   "rule_delta_bytes": -677,
+   "actual_delta_bytes": -677,
+   "match": true
+  },
+  "artifacts/seoul-showcase/src/components/VisualNovel.tsx": {
+   "rule_delta_bytes": 11,
+   "actual_delta_bytes": 11,
+   "match": true
+  },
+  "artifacts/seoul-showcase/src/data/historyExhibits.ts": {
+   "rule_delta_bytes": -107,
+   "actual_delta_bytes": -107,
+   "match": true
+  },
+  "artifacts/seoul-showcase/src/components/HistoryExhibit.tsx": {
+   "rule_delta_bytes": 29,
+   "actual_delta_bytes": 29,
+   "match": true
+  },
+  "site/build.mjs": {
+   "rule_delta_bytes": 0,
+   "actual_delta_bytes": 0,
+   "match": true
+  }
+ },
+ "results": [
+  {
+   "id": "SS-01",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "state-id-polity(변이 S00)",
+   "unit_id": "speaker:iyen",
+   "expect": 1,
+   "found": 1,
+   "delta": -4,
+   "voiced": false
+  },
+  {
+   "id": "SS-02",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "state-id-polity",
+   "unit_id": "speaker:k1007",
+   "expect": 1,
+   "found": 1,
+   "delta": -4,
+   "voiced": false
+  },
+  {
+   "id": "SS-03",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "state-id-polity",
+   "unit_id": "speaker:k1003,k1008,k998",
+   "expect": 3,
+   "found": 3,
+   "delta": -4,
+   "voiced": false
+  },
+  {
+   "id": "SS-04",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "state-id-polity",
+   "unit_id": "speaker:k1009",
+   "expect": 1,
+   "found": 1,
+   "delta": -4,
+   "voiced": false
+  },
+  {
+   "id": "SS-05",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "sixteen-states-ko",
+   "unit_id": "v5-hook-02",
+   "expect": 1,
+   "found": 1,
+   "delta": -61,
+   "voiced": true
+  },
+  {
+   "id": "SS-06",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "sixteen-states-en",
+   "unit_id": "v5-hook-02",
+   "expect": 1,
+   "found": 1,
+   "delta": -56,
+   "voiced": true
+  },
+  {
+   "id": "SS-07",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "D",
+   "pattern": "old-year-2030",
+   "unit_id": "scene:blackout.year",
+   "expect": 1,
+   "found": 1,
+   "delta": 0,
+   "voiced": false
+  },
+  {
+   "id": "SS-08",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "slaughter-order-ko, old-year-2030",
+   "unit_id": "v3-pro-01",
+   "expect": 1,
+   "found": 1,
+   "delta": -44,
+   "voiced": true
+  },
+  {
+   "id": "SS-09",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "slaughter-order-en, old-year-2030",
+   "unit_id": "v3-pro-01",
+   "expect": 1,
+   "found": 1,
+   "delta": -47,
+   "voiced": true
+  },
+  {
+   "id": "SS-10",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "slaughter-order-ko",
+   "unit_id": "v3-win-01",
+   "expect": 1,
+   "found": 1,
+   "delta": -34,
+   "voiced": true
+  },
+  {
+   "id": "SS-11",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "slaughter-order-en",
+   "unit_id": "v3-win-01",
+   "expect": 1,
+   "found": 1,
+   "delta": -36,
+   "voiced": true
+  },
+  {
+   "id": "SS-12",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "slaughter-order-ko",
+   "unit_id": "v3-win-02",
+   "expect": 1,
+   "found": 1,
+   "delta": -13,
+   "voiced": true
+  },
+  {
+   "id": "SS-13",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "slaughter-order-en",
+   "unit_id": "v3-win-02",
+   "expect": 1,
+   "found": 1,
+   "delta": -24,
+   "voiced": true
+  },
+  {
+   "id": "SS-14",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "D",
+   "pattern": "old-year-2030",
+   "unit_id": "v3-win-04",
+   "expect": 1,
+   "found": 1,
+   "delta": 6,
+   "voiced": true
+  },
+  {
+   "id": "SS-15",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "D",
+   "pattern": "old-year-2030",
+   "unit_id": "v3-win-04",
+   "expect": 1,
+   "found": 1,
+   "delta": 14,
+   "voiced": true
+  },
+  {
+   "id": "SS-16",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "state-id-polity",
+   "unit_id": "v3-win-04.caption",
+   "expect": 1,
+   "found": 1,
+   "delta": -8,
+   "voiced": false
+  },
+  {
+   "id": "SS-17",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "D",
+   "pattern": "old-year(2040)",
+   "unit_id": "scene:winter.year",
+   "expect": 1,
+   "found": 1,
+   "delta": 9,
+   "voiced": false
+  },
+  {
+   "id": "SS-18",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "sixteen-states-ko, sixteen-states-en",
+   "unit_id": "scene:sixteen.title",
+   "expect": 1,
+   "found": 1,
+   "delta": 6,
+   "voiced": false
+  },
+  {
+   "id": "SS-19",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "D",
+   "pattern": "old-year(2076)",
+   "unit_id": "scene:sixteen.year",
+   "expect": 1,
+   "found": 1,
+   "delta": 6,
+   "voiced": false
+  },
+  {
+   "id": "SS-20",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "sixteen-states-ko",
+   "unit_id": "v3-six-01",
+   "expect": 1,
+   "found": 1,
+   "delta": -6,
+   "voiced": true
+  },
+  {
+   "id": "SS-21",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "sixteen-states-en",
+   "unit_id": "v3-six-01",
+   "expect": 1,
+   "found": 1,
+   "delta": -14,
+   "voiced": true
+  },
+  {
+   "id": "SS-22",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "sixteen-variant-ko(16국), sixteen-variant-en",
+   "unit_id": "v3-six-01.caption",
+   "expect": 1,
+   "found": 1,
+   "delta": -83,
+   "voiced": false
+  },
+  {
+   "id": "SS-23",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "sixteen-states-ko",
+   "unit_id": "v5-hist-01",
+   "expect": 1,
+   "found": 1,
+   "delta": -7,
+   "voiced": true
+  },
+  {
+   "id": "SS-24",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "sixteen-states-en",
+   "unit_id": "v5-hist-01",
+   "expect": 1,
+   "found": 1,
+   "delta": -8,
+   "voiced": true
+  },
+  {
+   "id": "SS-25",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "sixteen-variant-ko2(16개 국가)",
+   "unit_id": "v5-hist-05",
+   "expect": 1,
+   "found": 1,
+   "delta": -3,
+   "voiced": true
+  },
+  {
+   "id": "SS-26",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "sixteen-states-en",
+   "unit_id": "v5-hist-05",
+   "expect": 1,
+   "found": 1,
+   "delta": -4,
+   "voiced": true
+  },
+  {
+   "id": "SS-27",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "church-ko(명동대교구)",
+   "unit_id": "v5-hist-08",
+   "expect": 1,
+   "found": 1,
+   "delta": -78,
+   "voiced": true
+  },
+  {
+   "id": "SS-28",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "church-en(Archdiocese)",
+   "unit_id": "v5-hist-08",
+   "expect": 1,
+   "found": 1,
+   "delta": -91,
+   "voiced": true
+  },
+  {
+   "id": "SS-29",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "church-ko(명부교회, 명동대교구)",
+   "unit_id": "v3-sig-01",
+   "expect": 1,
+   "found": 1,
+   "delta": -31,
+   "voiced": true
+  },
+  {
+   "id": "SS-30",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "church-en(Church, Archdiocese)",
+   "unit_id": "v3-sig-01",
+   "expect": 1,
+   "found": 1,
+   "delta": -37,
+   "voiced": true
+  },
+  {
+   "id": "SS-31",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "D",
+   "pattern": "sixteen-tally(연합 3국)",
+   "unit_id": "v3-sig-01.caption",
+   "expect": 1,
+   "found": 1,
+   "delta": -15,
+   "voiced": false
+  },
+  {
+   "id": "SS-32",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A,D",
+   "pattern": "state-id-polity, sixteen-tally-prose",
+   "unit_id": "v5-hist-13.caption",
+   "expect": 1,
+   "found": 1,
+   "delta": -29,
+   "voiced": false
+  },
+  {
+   "id": "SS-33",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "state-id-polity",
+   "unit_id": "v3-rec-03.caption",
+   "expect": 1,
+   "found": 1,
+   "delta": 10,
+   "voiced": false
+  },
+  {
+   "id": "SS-34",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "state-id-polity",
+   "unit_id": "v3-rte-01.caption",
+   "expect": 1,
+   "found": 1,
+   "delta": 18,
+   "voiced": false
+  },
+  {
+   "id": "SS-35",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A,D",
+   "pattern": "state-id-polity, sixteen-tally",
+   "unit_id": "v5-coda-01.caption",
+   "expect": 1,
+   "found": 1,
+   "delta": 46,
+   "voiced": false
+  },
+  {
+   "id": "SS-36",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "sixteen-states-ko",
+   "unit_id": "v5-coda-02",
+   "expect": 1,
+   "found": 1,
+   "delta": -13,
+   "voiced": true
+  },
+  {
+   "id": "SS-37",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "sixteen-states-en",
+   "unit_id": "v5-coda-02",
+   "expect": 1,
+   "found": 1,
+   "delta": -10,
+   "voiced": true
+  },
+  {
+   "id": "SS-38",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "D",
+   "pattern": "old-year-2030(주석)",
+   "unit_id": "header-comment",
+   "expect": 1,
+   "found": 1,
+   "delta": -5,
+   "voiced": false
+  },
+  {
+   "id": "SS-39",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "A",
+   "pattern": "state-id-polity(주석)",
+   "unit_id": "header-comment",
+   "expect": 1,
+   "found": 1,
+   "delta": -4,
+   "voiced": false
+  },
+  {
+   "id": "SS-40",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "D",
+   "pattern": "주석 살육 서술",
+   "unit_id": "header-comment",
+   "expect": 1,
+   "found": 1,
+   "delta": -7,
+   "voiced": false
+  },
+  {
+   "id": "VN-01",
+   "file": "artifacts/seoul-showcase/src/components/VisualNovel.tsx",
+   "class": "D,B",
+   "pattern": "sixteen-tally, sixteen-variant-en",
+   "unit_id": "coda-frame",
+   "expect": 1,
+   "found": 1,
+   "delta": 13,
+   "voiced": false
+  },
+  {
+   "id": "VN-02",
+   "file": "artifacts/seoul-showcase/src/components/VisualNovel.tsx",
+   "class": "B",
+   "pattern": "sixteen-states-ko",
+   "unit_id": "source-label",
+   "expect": 1,
+   "found": 1,
+   "delta": 4,
+   "voiced": false
+  },
+  {
+   "id": "VN-03",
+   "file": "artifacts/seoul-showcase/src/components/VisualNovel.tsx",
+   "class": "B",
+   "pattern": "sixteen-states-ko, sixteen-states-en",
+   "unit_id": "finale-link",
+   "expect": 1,
+   "found": 1,
+   "delta": 5,
+   "voiced": false
+  },
+  {
+   "id": "VN-04",
+   "file": "artifacts/seoul-showcase/src/components/VisualNovel.tsx",
+   "class": "D",
+   "pattern": "old-year-2030",
+   "unit_id": "title-kicker",
+   "expect": 1,
+   "found": 1,
+   "delta": 0,
+   "voiced": false
+  },
+  {
+   "id": "VN-05",
+   "file": "artifacts/seoul-showcase/src/components/VisualNovel.tsx",
+   "class": "B",
+   "pattern": "sixteen-states-ko",
+   "unit_id": "title-paragraph",
+   "expect": 1,
+   "found": 1,
+   "delta": -7,
+   "voiced": false
+  },
+  {
+   "id": "VN-06",
+   "file": "artifacts/seoul-showcase/src/components/VisualNovel.tsx",
+   "class": "B",
+   "pattern": "sixteen-states-en",
+   "unit_id": "title-paragraph",
+   "expect": 1,
+   "found": 1,
+   "delta": -4,
+   "voiced": false
+  },
+  {
+   "id": "EX-01",
+   "file": "artifacts/seoul-showcase/src/data/historyExhibits.ts",
+   "class": "A",
+   "pattern": "state-id-polity",
+   "unit_id": "exhibit:seoon.role",
+   "expect": 1,
+   "found": 1,
+   "delta": -8,
+   "voiced": false
+  },
+  {
+   "id": "EX-02",
+   "file": "artifacts/seoul-showcase/src/data/historyExhibits.ts",
+   "class": "A",
+   "pattern": "state-id-polity",
+   "unit_id": "exhibit:koSeojun.role",
+   "expect": 1,
+   "found": 1,
+   "delta": -8,
+   "voiced": false
+  },
+  {
+   "id": "EX-03",
+   "file": "artifacts/seoul-showcase/src/data/historyExhibits.ts",
+   "class": "A",
+   "pattern": "state-id-polity",
+   "unit_id": "exhibit:kangMinseo.role",
+   "expect": 1,
+   "found": 1,
+   "delta": -8,
+   "voiced": false
+  },
+  {
+   "id": "EX-04",
+   "file": "artifacts/seoul-showcase/src/data/historyExhibits.ts",
+   "class": "B,D",
+   "pattern": "sixteen-tally-prose, state-id-polity(S08)",
+   "unit_id": "exhibit:three.note",
+   "expect": 1,
+   "found": 1,
+   "delta": 50,
+   "voiced": false
+  },
+  {
+   "id": "EX-05",
+   "file": "artifacts/seoul-showcase/src/data/historyExhibits.ts",
+   "class": "B",
+   "pattern": "church-ko(명부교회), church-en(Myeongbu Church)",
+   "unit_id": "exhibit:three.images[S04]",
+   "expect": 1,
+   "found": 1,
+   "delta": -138,
+   "voiced": false
+  },
+  {
+   "id": "EX-06",
+   "file": "artifacts/seoul-showcase/src/data/historyExhibits.ts",
+   "class": "B",
+   "pattern": "sixteen-states-ko, sixteen-states-en",
+   "unit_id": "exhibit:three.sources",
+   "expect": 1,
+   "found": 1,
+   "delta": 5,
+   "voiced": false
+  },
+  {
+   "id": "HC-01",
+   "file": "artifacts/seoul-showcase/src/components/HistoryExhibit.tsx",
+   "class": "A",
+   "pattern": "state-id-polity(국기 ref 렌더)",
+   "unit_id": "figcaption-ref",
+   "expect": 1,
+   "found": 1,
+   "delta": 29,
+   "voiced": false
+  },
+  {
+   "id": "SB-01",
+   "file": "site/build.mjs",
+   "class": "B",
+   "pattern": "sixteen-states-ko",
+   "unit_id": "UI.ko.showcaseDetail",
+   "expect": 1,
+   "found": 1,
+   "delta": 0,
+   "voiced": false
+  }
+ ]
+}

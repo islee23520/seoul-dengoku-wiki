@@ -1,0 +1,68 @@
+{
+ "ran_at": "2026-11-11T19:07:11.361Z",
+ "head": "bf4981dd750d2cf757d78ccaf736cf6427405550",
+ "mode": "apply",
+ "ruleRange": "[75..3] incremental batch (full reproduction: restore batch bases then SHOWCASE_FROM=0)",
+ "rules_total": 4,
+ "rules_applied": 4,
+ "voiced_rule_ids": [],
+ "audio_files_whose_narration_no_longer_matches_text": [],
+ "per_file_delta": {
+  "artifacts/seoul-showcase/src/components/VisualNovel.tsx": {
+   "rule_delta_bytes": -18,
+   "actual_delta_bytes": -18,
+   "match": true
+  },
+  "artifacts/seoul-showcase/src/data/storyScript.ts": {
+   "rule_delta_bytes": -32,
+   "actual_delta_bytes": -32,
+   "match": true
+  }
+ },
+ "results": [
+  {
+   "id": "VN-07",
+   "file": "artifacts/seoul-showcase/src/components/VisualNovel.tsx",
+   "class": "B",
+   "pattern": "winter-duration-remove",
+   "unit_id": "title-card:ko",
+   "expect": 1,
+   "found": 1,
+   "delta": -10,
+   "voiced": false
+  },
+  {
+   "id": "VN-08",
+   "file": "artifacts/seoul-showcase/src/components/VisualNovel.tsx",
+   "class": "B",
+   "pattern": "winter-duration-remove",
+   "unit_id": "title-card:en",
+   "expect": 1,
+   "found": 1,
+   "delta": -8,
+   "voiced": false
+  },
+  {
+   "id": "SS-60",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "winter-duration-remove",
+   "unit_id": "header-comment",
+   "expect": 1,
+   "found": 1,
+   "delta": -10,
+   "voiced": false
+  },
+  {
+   "id": "SS-61",
+   "file": "artifacts/seoul-showcase/src/data/storyScript.ts",
+   "class": "B",
+   "pattern": "winter-duration-remove",
+   "unit_id": "chapter:winter.title",
+   "expect": 1,
+   "found": 1,
+   "delta": -22,
+   "voiced": false
+  }
+ ]
+}

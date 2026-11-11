@@ -1,0 +1,6942 @@
+{
+ "generatedBy": "scripts/pages/fix2-sentence-edits.mjs",
+ "rulesPath": "docs/fix2-sentence-rules.json",
+ "purpose": "W5-28 fix2 D1 — 090 인계 org-name-map의 조직→정치체 뒤섞임 교정. 흰십자단 61셀(제기동의 중립 의료국) 포함, 스윙(w5-28-orgmap-sweep.json) 전량 판독 결과 실제 뒤섞임 1,773셀을 기저 조직 명사(또는 중립 표기)로 복원하고 올바른 세력 표기 1,180건은 유지한다. D2(존속 조직명 면제 전수 분류)에서 걸러진 상태기능 문장 가운데 소유자 답 없이 중립화 가능한 것과 D3 거주지 메타 문구를 추가한다. D2(존속 조직명 면제 전수 분류)에서 걸러진 상태기능 문장 가운데 소유자 답 없이 중립화 가능한 것과 D3 거주지 메타 문구를 추가한다. D2(존속 조직명 면제 전수 분류)에서 걸러진 상태기능 문장 가운데 소유자 답 없이 중립화 가능한 것과 D3 거주지 메타 문구를 추가한다.",
+ "policy": {
+  "perRule": "규칙 1건 = 정확한 문장(또는 값) 1개. 파일·행·열·JSON 경로가 모두 일치하는 셀에서 old가 정확 1회 나올 때만 1회 치환한다(blackout-year-edit.mjs 엔진과 동일).",
+  "fixRule": "실제 뒤섞임: 서술(행위·소유·근거지·공동 승인)·회사/군 조직 직함·중립 단체 표시·정본 위반 세력 주장(자유도시 왕국, 서대문구 자유도시 공작령, Free City Council)은 기저 조직 명사를 복원한다.",
+  "keepRule": "올바른 세력 표기: 소속·조합원·봉신·직급 표시, 정부 인프라 직위(역장/교량 감독/능선 초병 등 — 과업 keep 예시 Government station master), 대한민국정부→정부 계승, 바이블 §6 승인값(person-0057), 강남·서초 아크 공작령은 유지한다.",
+  "alreadyFixed": "person-0195 전 셀(H3), person-0405/0406 일부(M1), person-1017/1018/1019(EXTRA)는 이번 테이블에서 제외했다(중복 수정 방지).",
+  "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
+ },
+ "ruleRange": "[3026..3888] 증분 적용(정본 재현은 전체 테이블 0번부터)",
+ "counts": {
+  "rulesTotal": 3889,
+  "rulesApplied": 863,
+  "rulesSkippedBefore": 3026,
+  "byFile": {
+   "110": 85,
+   "090": 636,
+   "050": 134,
+   "030": 4,
+   "080": 4
+  },
+  "multiOccurrence": 0,
+  "changedCells": 863,
+  "changedRows": {
+   "110": 22,
+   "090": 24,
+   "050": 24,
+   "030": 2,
+   "080": 2
+  },
+  "failed": 0
+ },
+ "keptTotal": 1180,
+ "perRule": [
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.relations.incoming[0].basis",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.relations.incoming[1].basis",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.relations.incoming[0].type",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.relations.incoming[0].basis",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.relations.incoming[1].type",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.relations.incoming[1].basis",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.fields.Livelihood",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.fields.생업",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.fields.Livelihood",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.fields.생업",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Relationships",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.sections.관계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.relations.outgoing[0].type",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.relations.outgoing[0].basis",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.relations.outgoing[1].type",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.fields.Livelihood",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.fields.생업",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.relations.incoming[0].type",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.fields.Livelihood",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.fields.생업",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.relations.incoming[1].type",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.fields.Livelihood",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.fields.생업",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.sections.Relationships",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.sections.관계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.relations.outgoing[0].type",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.relations.outgoing[0].basis",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.relations.outgoing[1].type",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.fields.Livelihood",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.fields.생업",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.fields.Livelihood",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.fields.생업",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.fields.Livelihood",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.fields.생업",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.fields.Livelihood",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.fields.생업",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.fields.Livelihood",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.fields.생업",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.fields.Livelihood",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.fields.Rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.fields.생업",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.fields.품계",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0375",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0375",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0375",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0375",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0375",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0375",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0376",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0376",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0376",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0376",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0376",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0376",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0377",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0377",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0377",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0377",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0377",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0377",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0378",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0378",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0378",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0378",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0378",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0378",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0379",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0379",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0379",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0379",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0380",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0380",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0380",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0380",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0380",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0380",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0381",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0381",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0381",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0381",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0381",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0381",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0382",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0382",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0382",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0382",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0382",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0382",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0383",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0383",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0383",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0383",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0383",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0383",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0384",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0384",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0384",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0384",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0384",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0384",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0385",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0385",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0385",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0385",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0385",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0385",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0386",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0386",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0386",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0386",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0387",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0387",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0387",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0387",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0387",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0387",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0388",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0388",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0388",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0388",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0388",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0388",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0389",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0389",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0389",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0389",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0389",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0389",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0390",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0390",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0390",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0390",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0390",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0390",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0391",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0391",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0391",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0391",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0392",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0392",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0392",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0392",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0392",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0392",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0393",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0393",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0393",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0393",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0393",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0393",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0394",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0394",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0394",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0394",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0394",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0394",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0395",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0395",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0395",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0395",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0395",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0395",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0396",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0396",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0396",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0396",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0397",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0397",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0397",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0397",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0398",
+   "column": "position",
+   "path": "position",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0398",
+   "column": "position_ko",
+   "path": "position_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0398",
+   "column": "occupation",
+   "path": "occupation",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0398",
+   "column": "occupation_ko",
+   "path": "occupation_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0398",
+   "column": "rank",
+   "path": "rank",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "050",
+   "id": "person-0398",
+   "column": "rank_ko",
+   "path": "rank_ko",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b0a8-c758-b839",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b0a8-c758-b839",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b0a8-c758-b839",
+   "column": "json_ko",
+   "path": "$.nodes[25].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b0a8-c758-b839",
+   "column": "json_ko",
+   "path": "$.nodes[27].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json",
+   "path": "$.nodes[4].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json",
+   "path": "$.nodes[22].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json",
+   "path": "$.nodes[25].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json_ko",
+   "path": "$.nodes[4].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json_ko",
+   "path": "$.nodes[22].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b3d9-ad11-cc9c",
+   "column": "json_ko",
+   "path": "$.nodes[25].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b77c-ae08-c131-7f85",
+   "column": "json",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b77c-ae08-c131-7f85",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b77c-ae08-c131-7f85",
+   "column": "json",
+   "path": "$.nodes[8].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b77c-ae08-c131-7f85",
+   "column": "json_ko",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b77c-ae08-c131-7f85",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b77c-ae08-c131-7f85",
+   "column": "json_ko",
+   "path": "$.nodes[8].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b9e4-cda9-c8fc",
+   "column": "json",
+   "path": "$.nodes[2].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b9e4-cda9-c8fc",
+   "column": "json",
+   "path": "$.nodes[14].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b9e4-cda9-c8fc",
+   "column": "json",
+   "path": "$.nodes[17].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b9e4-cda9-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[2].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b9e4-cda9-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[14].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b9e4-cda9-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[17].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bb38-b0a8-d3c9-6587",
+   "column": "json",
+   "path": "$.nodes[2].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bb38-b0a8-d3c9-6587",
+   "column": "json_ko",
+   "path": "$.nodes[2].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc29-b0a8-c591-623f",
+   "column": "json",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc29-b0a8-c591-623f",
+   "column": "json",
+   "path": "$.nodes[7].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc29-b0a8-c591-623f",
+   "column": "json",
+   "path": "$.nodes[9].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc29-b0a8-c591-623f",
+   "column": "json_ko",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc29-b0a8-c591-623f",
+   "column": "json_ko",
+   "path": "$.nodes[7].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc29-b0a8-c591-623f",
+   "column": "json_ko",
+   "path": "$.nodes[9].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc29-c628-c591",
+   "column": "json",
+   "path": "$.nodes[2].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc29-c628-c591",
+   "column": "json_ko",
+   "path": "$.nodes[2].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc94-ae08-c131",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc94-ae08-c131",
+   "column": "json",
+   "path": "$.nodes[19].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc94-ae08-c131",
+   "column": "json",
+   "path": "$.nodes[21].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc94-ae08-c131",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc94-ae08-c131",
+   "column": "json_ko",
+   "path": "$.nodes[19].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "bc94-ae08-c131",
+   "column": "json_ko",
+   "path": "$.nodes[21].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c11d-cda9-c8fc",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c11d-cda9-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c120-bcf4-c131",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c120-bcf4-c131",
+   "column": "json",
+   "path": "$.nodes[20].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c120-bcf4-c131",
+   "column": "json",
+   "path": "$.nodes[22].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c120-bcf4-c131",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c120-bcf4-c131",
+   "column": "json_ko",
+   "path": "$.nodes[20].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c120-bcf4-c131",
+   "column": "json_ko",
+   "path": "$.nodes[22].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c218-d55c-c591",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c218-d55c-c591",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c601-c601-cc9c",
+   "column": "json",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c601-c601-cc9c",
+   "column": "json_ko",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c6d0-c6d0-c8fc",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c6d0-c6d0-c8fc",
+   "column": "json",
+   "path": "$.nodes[18].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c6d0-c6d0-c8fc",
+   "column": "json",
+   "path": "$.nodes[20].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c6d0-c6d0-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c6d0-c6d0-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[18].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c6d0-c6d0-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[20].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c740-d589-c8fc",
+   "column": "json",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c740-d589-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c804-c804-c8fc-5168",
+   "column": "json",
+   "path": "$.nodes[0].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "c804-c804-c8fc-5168",
+   "column": "json_ko",
+   "path": "$.nodes[0].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "cc3d-cc3d-b155-660c",
+   "column": "json",
+   "path": "$.nodes[2].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "cc3d-cc3d-b155-660c",
+   "column": "json_ko",
+   "path": "$.nodes[2].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "cc3d-cc3d-b155-660c",
+   "column": "json_ko",
+   "path": "$.nodes[15].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "cc3d-cc3d-b155-660c",
+   "column": "json_ko",
+   "path": "$.nodes[17].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "cc9c-c601-c591",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "cc9c-c601-c591",
+   "column": "json",
+   "path": "$.nodes[4].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "cc9c-c601-c591",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "cc9c-c601-c591",
+   "column": "json_ko",
+   "path": "$.nodes[4].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "cc9c-c601-c591",
+   "column": "json_ko",
+   "path": "$.nodes[27].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "cc9c-c601-c591",
+   "column": "json_ko",
+   "path": "$.nodes[30].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "cd08-c131-c8fc",
+   "column": "json",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "cd08-c131-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "creative-d765-c218-c0c9",
+   "column": "json",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "creative-d765-c218-c0c9",
+   "column": "json_ko",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "d0c1-ad11-c0b0",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "d0c1-ad11-c0b0",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "d310-d574-c8fc",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "d310-d574-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "d568-ac15-b989",
+   "column": "json",
+   "path": "$.nodes[0].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "d568-ac15-b989",
+   "column": "json_ko",
+   "path": "$.nodes[0].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "d568-ac15-b989",
+   "column": "json_ko",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "d568-ac15-b989",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "110",
+   "id": "b0a8-c758-b839",
+   "column": "json",
+   "path": "$.nodes[2].timeline[0].summary",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "030",
+   "id": "World-and-Subway-Layers",
+   "column": "body_ko_md",
+   "path": "body_ko_md",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "030",
+   "id": "World-and-Subway-Layers",
+   "column": "body_md",
+   "path": "body_md",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "030",
+   "id": "External-Theaters",
+   "column": "body_ko_md",
+   "path": "body_ko_md",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "030",
+   "id": "External-Theaters",
+   "column": "body_md",
+   "path": "body_md",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "080",
+   "id": "doc.Character-Art-Direction",
+   "column": "body_md",
+   "path": "body_md",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "080",
+   "id": "doc.Character-Art-Direction",
+   "column": "body_ko_md",
+   "path": "body_ko_md",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "080",
+   "id": "doc.Station-Interior-Design",
+   "column": "body_md",
+   "path": "body_md",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "080",
+   "id": "doc.Station-Interior-Design",
+   "column": "body_ko_md",
+   "path": "body_ko_md",
+   "result": "applied",
+   "occurrences": 1
+  }
+ ]
+}

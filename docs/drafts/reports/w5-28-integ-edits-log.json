@@ -1,0 +1,578 @@
+{
+ "generatedBy": "scripts/pages/blackout-year-edit.mjs",
+ "rulesPath": "docs/integ-sentence-rules.json",
+ "policy": {
+  "perRule": "규칙 1건 = 정확한 문장 또는 구절 1개. (file,id,column,path) 셀에서 old가 정확 1회 나올 때만 1회 치환한다.",
+  "engine": "blackout-year-edit.mjs의 run()을 공유한다(같은 무결성 검사·직렬화)."
+ },
+ "counts": {
+  "rulesTotal": 79,
+  "applied": 79,
+  "byFile": {
+   "110": 2,
+   "090": 77
+  },
+  "changedCells": 40,
+  "changedRows": {
+   "110": 1,
+   "090": 7
+  },
+  "failed": 0
+ },
+ "keptTotal": null,
+ "perRule": [
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.position",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.stateName",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.fields.Title",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.position",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c624-d574-c8fc",
+   "column": "json",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c624-d574-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0405",
+   "column": "json",
+   "path": "$.sections.Duty",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0405",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0405",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0406",
+   "column": "json",
+   "path": "$.sections.Duty",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0406",
+   "column": "json",
+   "path": "$.openingTitles[0].name",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.fields.Livelihood",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.relations.incoming[0].basis",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.fields.생업",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.fields.민간·공동체 직무",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.relations.incoming[0].basis",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1018",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1018",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1018",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1018",
+   "column": "json_ko",
+   "path": "$.fields.민간·공동체 직무",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1018",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1018",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1019",
+   "column": "json",
+   "path": "$.fields.Personal Ambition",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1019",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1019",
+   "column": "json_ko",
+   "path": "$.fields.개인 야망",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1019",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1022",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1022",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1022",
+   "column": "json_ko",
+   "path": "$.fields.관계",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1022",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1022",
+   "column": "json_ko",
+   "path": "$.relations.outgoing[0].basis",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1018",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1018",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  }
+ ]
+}

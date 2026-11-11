@@ -63,8 +63,8 @@ const FACTION_STRUCTURE = {
     ko: '한강 이남의 7개 구(강서·양천·영등포·구로·금천·동작·관악). 각 도시가 공작위를 가진 개별 세력이며, 그 위에 왕도 공통 지도자도 없다. 도시들은 유니온으로서 물자와 기술을 주고받는다.',
   },
   arc: {
-    en: 'Four districts of Gangnam (Seocho, Gangnam, Songpa, Gangdong). A theocratic hierarchy centred on the head of the faith, the Hierophant (Go Ye-jin), in the manner of a Shia clan government. Followers replace body parts with machines and, after death, give their brains to the shrine as the god\'s memory.',
-    ko: '강남 4개 구(서초·강남·송파·강동). 교주(고예진)를 중심으로 한 신권 하이라키로, 시아파를 참조한 씨족정 방식이다. 신도는 몸을 기계로 바꾸고 죽은 뒤 뇌를 성소에 봉헌해 신의 기억이 된다.',
+    en: 'Four districts of Gangnam (Seocho, Gangnam, Songpa, Gangdong). A theocratic hierarchy centred on the head of the faith, the Hierophant (Go Ye-jin), in the manner of a Shia clan government. Followers replace body parts with machines.',
+    ko: '강남 4개 구(서초·강남·송파·강동). 교주(고예진)를 중심으로 한 신권 하이라키로, 시아파를 참조한 씨족정 방식이다. 신도는 몸을 기계로 바꾼다.',
   },
 };
 const UI = {
@@ -93,7 +93,7 @@ const UI = {
     prev: '이전 문서', next: '다음 문서', menu: '메뉴', search: '검색', noResults: '결과 없음:', reset: '검색 초기화', toSelect: '선택', toNavigate: '이동', toClose: '닫기',
     appearance: '화면 모드', returnTop: '맨 위로', skip: '본문으로 건너뛰기', footerMsg: '공개 세계관 위키와 게임 설계 문서.',
     heroText: '세계관 위키 · 게임 설계', openWiki: '위키 열기', readGdd: 'GDD 읽기', openShowcase: '쇼케이스 보기',
-    showcaseCard: '인터랙티브 쇼케이스', showcaseDetail: '열여섯 국가를 돌아보는 음성 해설 투어. 한국어 음성과 영어 자막.',
+    showcaseCard: '인터랙티브 쇼케이스', showcaseDetail: '지하철 세계를 돌아보는 음성 해설 투어. 한국어 음성과 영어 자막.',
     openSource: '오픈 소스', openSourceDetail: '모든 내용은 공개 저장소의 SQL 원본 데이터에서 빌드됩니다.',
     wikiLead: (n) => `세계와 국가, 인물, 역사를 다룬 문서 ${n}개. 아래 분류에서 고르거나 사이드바를 이용하세요.`,
     statesLead: (n, f) => `정부, 자유도시, Arc ${f}개 세력이 지하철 세계를 다스립니다. 영지는 구 하나가 공작위 하나로 나뉩니다.`,
@@ -173,7 +173,7 @@ for (const L of [UI.en, UI.ko]) {
   // factions: territory = duchies; organizations = former states
   const members = (fid) => states.filter((s) => s.faction_id === fid);
   write(`${L.prefix}wiki/factions/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => members(x.id).length).map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n${duchiesOf(x.id).map((t) => `- [${g(t, 'name')}](${P(`wiki/duchies/${duchySlug(t)}/`)})`).join('\n')}\n`).join('\n')}`));
-  factions.filter((x) => members(x.id).length).forEach((x) => {
+  factions.filter((x) => members(x.id).length || people.some((p) => p.faction_id === x.id)).forEach((x) => {
     const peopleN = people.filter((p) => p.faction_id === x.id).length;
     write(`${L.prefix}wiki/factions/${x.id}/index.md`, page(g(x, 'name'), `# ${g(x, 'name')}\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n| ${L === UI.ko ? "항목" : "Field"} | ${L === UI.ko ? "값" : "Value"} |\n| --- | --- |\n${g(x, 'center_region') ? `| ${L.centerRegion} | ${cell(g(x, 'center_region'))} |\n| ${L.aiPosition} | ${cell(g(x, 'ai_position'))} |\n` : ''}| ${L.fields.state} | ${members(x.id).length} |\n| ${L.people} | ${peopleN} |\n\n${x.id === 'independent' ? `${L.independentNote}\n\n` : ''}## ${L.duchies}\n\n| ${L === UI.ko ? '공작령' : 'Duchy'} | ${L === UI.ko ? '백작령' : 'Counties'} | ${L === UI.ko ? '역' : 'Stations'} |\n| --- | --- | --- |\n${duchiesOf(x.id).map((t) => `| [${cell(g(t, 'name'))}](${P(`wiki/duchies/${duchySlug(t)}/`)}) | ${JSON.parse(t.county_ids).length} | ${stationsOfGu(t.name_ko)} |`).join('\n')}\n\n## ${L.orgs}\n\n${members(x.id).map((s) => `- ${cell(g(s, 'name'))} — ${cell(g(s, 'ruler'))}`).join('\n')}\n`));
   });
@@ -350,5 +350,63 @@ function findAllow(obj, key) {
 }
 
 fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
+
+// ---- fragment href normalization (2026-11-11, canon rewrite W5-28) -----------------------
+// VitePress가 내부 #파편 링크를 재슬러그화하면서(숫자 앞 '_', NFD 분해, 제목 id의 '·' 세그먼트) 명시
+// <a id> 앵커(NFC 그대로)·제목 슬러그 id와 어긋나는 href를 만든다. 사후 규칙: 대상 페이지의 실제 id
+// 집합에서 정규 비교(underscore 제거·NFC·'·' 세그먼트 무시)로 유일한 후보를 찾은 경우에만 href를 그
+// 실재 id로 되돌린다. 후보가 0개거나 2개 이상이면 손대지 않는다(검사가 크게 실패한다 — 검사 완화 아님).
+const decodeHtmlAttr = (v) => v.replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16))).replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n))).replace(/&amp;/g, '&');
+{
+  const pages = [];
+  (function collect(d) {
+    for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+      const p = path.join(d, e.name);
+      if (e.isDirectory()) collect(p);
+      else if (p.endsWith('.html')) {
+        const rel = path.relative(OUT, p).replaceAll('\\', '/');
+        const html = fs.readFileSync(p, 'utf8');
+        const anchors = new Set();
+        for (const m of html.matchAll(/\bid\s*=\s*(["'])(.*?)\1/gi)) anchors.add(decodeHtmlAttr(m[2]));
+        for (const m of html.matchAll(/<(?:a|area)\b[^>]*\bname\s*=\s*(["'])(.*?)\1/gi)) anchors.add(decodeHtmlAttr(m[2]));
+        pages.push({ rel, anchors, html });
+      }
+    }
+  })(OUT);
+  const byRel = new Map(pages.map((p) => [p.rel, p]));
+  const normFrag = (f) => f.normalize('NFC').replace(/^_+/, '').replace(/·-?/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+  let rewritten = 0;
+  for (const pg of pages) {
+    const out = pg.html.replace(/(\bhref\s*=\s*["'])([^"']*#[^"']*)(["'])/gi, (whole, pre, href, post) => {
+      const hash = href.indexOf('#');
+      if (hash < 0) return whole;
+      const pathname = href.slice(0, hash);
+      const fragment = href.slice(hash + 1);
+      if (!fragment) return whole;
+      let frag; try { frag = decodeURIComponent(fragment); } catch { frag = fragment; }
+      const pn0 = pathname.replace(/[?].*$/, '');
+      let targetRel;
+      if (!pn0) targetRel = pg.rel;
+      else {
+        let pn = pn0;
+        if (!pn.startsWith('/') && !/^[a-z][a-z0-9+.-]*:/i.test(pn)) pn = path.posix.join(path.posix.dirname(`/${pg.rel}`), pn);
+        const target = pn.replace(/\/+$/, '').replace(/\/index(?:\.html)?$/, '');
+        const m = target.match(/^\/(ko\/)?(wiki|gdd)\/(.+)$/);
+        if (!m) return whole;
+        targetRel = `${m[1] ?? ''}${m[2]}/${m[3]}/index.html`;
+      }
+      const t = byRel.get(targetRel);
+      if (!t) return whole;
+      if (t.anchors.has(frag)) return whole;
+      const want = normFrag(frag);
+      const cands = [...t.anchors].filter((a) => normFrag(a) === want);
+      if (cands.length === 1) { rewritten++; return `${pre}${pathname}#${encodeURIComponent(cands[0])}${post}`; }
+      return whole;
+    });
+    if (out !== pg.html) { fs.writeFileSync(path.join(OUT, pg.rel), out); pg.html = out; }
+  }
+  console.log(`fragment href normalization: ${rewritten} href(s) rewritten to real ids`);
+}
+
 fs.writeFileSync(path.join(OUT, 'build.json'), JSON.stringify({ title: meta.title, base: BASE, locales: ['en', 'ko'], wikiDocs: raw.docs.length, gddDocs: raw.gddDocs.length, factions: raw.factions.length, clans: raw.clans.length, mapRegions: raw.map.regions.length, mapTitles: raw.map.titles.length, mapStations: raw.map.stations.length, personDetails: raw.details.size, states: raw.states.length, people: raw.people.length, updates: raw.updates.length, showcase, sqlFiles: files }, null, 1));
 console.log(`built ${meta.title} (en + ko): wiki ${raw.docs.length}, gdd ${raw.gddDocs.length}, factions ${raw.factions.length}, states ${raw.states.length}, people ${raw.people.length}; showcase ${showcase} -> ${path.relative(REPO, OUT)} (base ${BASE})`);

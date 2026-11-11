@@ -1,0 +1,282 @@
+{
+ "baseRef": "4d7f0f6edc419b5c4959b1d1fec28678f81732a6",
+ "fileDelta": {
+  "added": [],
+  "removed": []
+ },
+ "rowCounts": {
+  "clan": {
+   "base": 177,
+   "head": 177
+  },
+  "clan_member": {
+   "base": 955,
+   "head": 955
+  },
+  "faction": {
+   "base": 4,
+   "head": 4
+  },
+  "family_tree": {
+   "base": 148,
+   "head": 148
+  },
+  "gdd_category": {
+   "base": 8,
+   "head": 8
+  },
+  "gdd_document": {
+   "base": 129,
+   "head": 129
+  },
+  "map_edge": {
+   "base": 381,
+   "head": 381
+  },
+  "map_holding": {
+   "base": 50,
+   "head": 50
+  },
+  "map_landmark": {
+   "base": 19,
+   "head": 19
+  },
+  "map_line": {
+   "base": 24,
+   "head": 24
+  },
+  "map_meta": {
+   "base": 8,
+   "head": 8
+  },
+  "map_rail": {
+   "base": 2826,
+   "head": 2826
+  },
+  "map_region": {
+   "base": 427,
+   "head": 427
+  },
+  "map_state": {
+   "base": 3,
+   "head": 3
+  },
+  "map_station": {
+   "base": 312,
+   "head": 312
+  },
+  "map_title": {
+   "base": 80,
+   "head": 80
+  },
+  "map_underground": {
+   "base": 312,
+   "head": 312
+  },
+  "nonkorean_family": {
+   "base": 62,
+   "head": 62
+  },
+  "person_detail": {
+   "base": 1022,
+   "head": 1022
+  },
+  "retainer_graph": {
+   "base": 1,
+   "head": 1
+  },
+  "site_meta": {
+   "base": 6,
+   "head": 6
+  },
+  "wiki_category": {
+   "base": 23,
+   "head": 23
+  },
+  "wiki_document": {
+   "base": 59,
+   "head": 59
+  },
+  "wiki_person": {
+   "base": 1022,
+   "head": 1022
+  },
+  "wiki_state": {
+   "base": 3,
+   "head": 3
+  },
+  "wiki_update": {
+   "base": 6,
+   "head": 6
+  }
+ },
+ "tableDiff": {
+  "family_tree": {
+   "changedRows": 9,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "json",
+     9
+    ],
+    [
+     "json_ko",
+     9
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "bc15-bc00-c591",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "bc94-ad6c-b85c-8303",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "c624-d574-c8fc",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "c720-c218-d3ec-bc14-c790-c591",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "c784-b300-b9bc-6797",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    }
+   ]
+  },
+  "person_detail": {
+   "changedRows": 40,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "json",
+     40
+    ],
+    [
+     "json_ko",
+     38
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "person-0057",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "person-0170",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "person-0172",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "person-0174",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "person-0175",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    }
+   ]
+  },
+  "wiki_document": {
+   "changedRows": 8,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "body_md",
+     8
+    ],
+    [
+     "body_ko_md",
+     5
+    ],
+    [
+     "title",
+     1
+    ],
+    [
+     "title_ko",
+     1
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "Century-Annals",
+     "cols": [
+      "title",
+      "title_ko",
+      "body_md",
+      "body_ko_md"
+     ]
+    },
+    {
+     "key": "Faith-Culture-Schism",
+     "cols": [
+      "body_md"
+     ]
+    },
+    {
+     "key": "Oral-Stories",
+     "cols": [
+      "body_md"
+     ]
+    },
+    {
+     "key": "Scenario-Timeline",
+     "cols": [
+      "body_md",
+      "body_ko_md"
+     ]
+    },
+    {
+     "key": "Sindorim-Junction-Cargo-Gate",
+     "cols": [
+      "body_md",
+      "body_ko_md"
+     ]
+    }
+   ]
+  }
+ }
+}

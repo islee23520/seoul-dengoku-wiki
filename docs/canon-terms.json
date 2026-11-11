@@ -1,0 +1,127 @@
+{
+  "forbidden": [
+    {
+      "id": "church-ko",
+      "pattern": "당회장|(?<![가-힣])장로(?:회|들)?(?![가-힣])|목사|주교|대교구|교황|추기경|(?<![가-힣])권사(?![가-힣])|(?<![가-힣])집사(?![가-힣])|교회|성당|예배당?",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 교회 직제·교회 시설 어휘. 대체: 아크 정본 용어 또는 일반 역 시설명(사당 여부는 소유자 결정). 근거: 아크가 이전 종교를 모두 대체했고 기독교 성직 어휘를 쓰지 않는다(소유자 결정)."
+    },
+    {
+      "id": "church-en",
+      "pattern": "\\b(?:archbishops?|archdioces[ea]s?|popes?|priests?|deacons?|bishops?|pastors?|cardinals?|cathedrals?|church(?:es)?|moderators?)\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] church clergy and buildings. 대체: Arc terms (Hierophant, baptism) or plain station facility names. 근거: same as church-ko."
+    },
+    {
+      "id": "sixteen-states-ko",
+      "pattern": "(?<!\\]\\([^)\\s]*)(?<!(?:id|href)=\"[^\"]*)(?:십육국|십육 ?개국|16 ?개국|열여섯 (?:나라|국가|개국))",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 십육국 국가 체제(한국어 가시 산문). 면제는 구문 기준: 링크 대상 ](...) 안, id=\"...\"·href=\"...\" 속성 값 안. 대체: 세 세력과 25공작령. 근거: 소유자 결정."
+    },
+    {
+      "id": "sixteen-states-en",
+      "pattern": "(?<!\\]\\([^)\\s]*)(?<!(?:id|href)=\"[^\"]*)\\b(?:sixteen[- ]states?|Seoul Sixteen|16 states)\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 십육국 서술(영어 가시 산문). 면제는 구문 기준: 마크다운 링크 대상 ](...) 안, HTML id=\"...\"·href=\"...\" 속성 값 안. 이웃한 / 나 - 로는 면제하지 않는다. 대체: 세 세력과 25공작령. 근거: 소유자 결정."
+    },
+    {
+      "id": "slaughter-order-ko",
+      "pattern": "살육|인류 말살|인류 감축|바이러스로 판단",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] AI 살육 서사(한국어). 생태 문서의 \"학살 명령을 적지 않는다\" 같은 동물 관리 서술은 잡지 않는다. 대체: \"AI는 겨울을 만들었고 직접 죽인 사람은 없다\". 근거: 1장 정본 문장."
+    },
+    {
+      "id": "slaughter-order-en",
+      "pattern": "\\bslaughter(?=[- ](?:orders?|machines?|networks?|era|continued|worldwide|stopped|ended|began)\\b)|(?<=raids and )slaughter\\b|(?<=\\bthe )slaughter(?= (?:stopped|ended|began|continued)\\b)|\\bgenocide\\b|\\bexterminat\\w*(?= (?:of )?(?:humanity|humans|mankind|the human race)\\b)|\\bvirus of the world\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] AI가 인류를 살육·말살했다는 서사(영어). 동물 퇴치·방역 같은 생태 서술(extermination, no order of slaughter)은 잡지 않는다. 대체: \"the AI made winter and killed nobody directly\". 근거: 1장 정본 문장."
+    },
+    {
+      "id": "cold-weapons-ko",
+      "pattern": "냉병기",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 냉병기 유일 전제. 대체: \"현대·미래 무기는 있으나 희소하다\". 근거: 냉병기 전제 폐지(소유자 결정)."
+    },
+    {
+      "id": "cold-weapons-en",
+      "pattern": "\\bcold[- ]weapons?\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] cold-weapons-only premise. 대체: \"modern and future weapons exist but are scarce\". 근거: same."
+    },
+    {
+      "id": "martial-arts-ko",
+      "pattern": "무협|무림|협객|낭인|(?<![가-힣])무공(?![가-힣])|(?<![가-힣])비무(?![가-힣])",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 무협 잔존 어휘. 대체: 직능 명칭(예: 호위 지휘자, 경호원). 근거: 무협 설정 폐기(기존 저장소 정책)."
+    },
+    {
+      "id": "martial-arts-en",
+      "pattern": "\\b(?:wuxia|murim|ronin)\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] wuxia remnants. 대체: plain job titles (escort leader, bodyguard). 근거: same."
+    },
+    {
+      "id": "state-id-polity",
+      "pattern": "\\bS(?:0[1-9]|1[0-6])\\b",
+      "flags": "",
+      "lang": "both",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 옛 국가 id S01~S16을 정치체로 쓰는 것. 대체: 세력 id(government, free-city, arc)와 구 이름. 근거: 십육국 폐지. 데이터 컬럼 값과 이관 기록은 이 스캔 대상이 아니다."
+    }
+  ],
+  "required": [
+    {
+      "id": "premise-seoul-ko",
+      "pattern": "서울",
+      "flags": "",
+      "lang": "ko",
+      "minPerDoc": 1,
+      "docs": [
+        "Station-Interior-Construction"
+      ],
+      "note": "[정본 바이블 4절] 무대는 서울 하나다. 기존 스타터 항목 유지."
+    },
+    {
+      "id": "blackout-name-ko",
+      "pattern": "대정전",
+      "flags": "",
+      "lang": "ko",
+      "minPerDoc": 1,
+      "docs": [
+        "World-Unbinding"
+      ],
+      "note": "[정본 바이블 4절] 사건 이름은 대정전이다(1장 정본)."
+    },
+    {
+      "id": "blackout-name-en",
+      "pattern": "Great Blackout",
+      "flags": "",
+      "lang": "en",
+      "minPerDoc": 1,
+      "docs": [
+        "World-Unbinding"
+      ],
+      "note": "[정본 바이블 4절] English name of the event is the Great Blackout."
+    }
+  ]
+}

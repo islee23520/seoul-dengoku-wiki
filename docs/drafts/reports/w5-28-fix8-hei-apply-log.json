@@ -1,0 +1,84 @@
+{
+ "generatedBy": "scripts/pages/fix5-origin-edit.mjs",
+ "rulesPath": "docs/fix8-hei-rules.json",
+ "purpose": "W5-28 fix8 — Hostile-Ecology-Index(적대 생태 색인)의 G10 광신도/Zealot 표기를 fix7(74c256b85, c5aae7f19)이 중립화한 Hostile-Group-G10 문서의 명칭과 정확히 맞춘다. 두 공개 문서가 같은 현행 집단을 서로 다르게 부르는 독자 가시 모순과 비Arc 종교 프레임 위반(소유자 정본: 종교 서술은 Arc에만 존재)을 해소한다.",
+ "policy": "정확 문장 치환: 각 초안 파일에서 old가 정확히 expect회 나올 때만 전부 치환한다. 위반 시 exit 21, 아무 파일도 쓰지 않는다. 앵커 id·마크다운 제목 수·행동 사실은 보존하고 G10 문서가 이미 사용하는 중립 명칭(보국문 집단/Bogukmun group, 집단 인도자/Group leader, 정예조/Elite Squad, 척후조/Scouts)으로만 바꾼다. 색인 행 링크 텍스트와 '## G10 ·' 절 제목은 G10 문서 제목 텍스트와 동일하게 한다. 기저 트리 a2ed6f98280ad7ad26a7be6e68e7256b961002d4.",
+ "counts": {
+  "rules": 14,
+  "files": 2,
+  "replacements": 40,
+  "failed": 0
+ },
+ "perRule": [
+  {
+   "file": "Hostile-Ecology-Index.ko.md",
+   "occurrences": 2,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Ecology-Index.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Ecology-Index.ko.md",
+   "occurrences": 6,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Ecology-Index.ko.md",
+   "occurrences": 4,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Ecology-Index.ko.md",
+   "occurrences": 5,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Ecology-Index.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Ecology-Index.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Ecology-Index.en.md",
+   "occurrences": 2,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Ecology-Index.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Ecology-Index.en.md",
+   "occurrences": 6,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Ecology-Index.en.md",
+   "occurrences": 4,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Ecology-Index.en.md",
+   "occurrences": 5,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Ecology-Index.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Ecology-Index.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  }
+ ]
+}

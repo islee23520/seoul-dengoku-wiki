@@ -80,7 +80,7 @@ export function projectCatalogTimeline(centuryAnnalsDocument, relatedTimelineDoc
 }
 
 export function relatedTimelineDocuments(text, territoryStates, peopleSource) {
- const related = [{ title: '서울전국 연표 2030–2126', route: '/world/Century-Annals' }]
+ const related = [{ title: '서울전국 연표', route: '/world/Century-Annals' }]
  const add = (title, route) => { if (!related.some((entry) => entry.route === route)) related.push({ title, route }) }
  if (territoryStates.some((state) => text.includes(state.id) || text.includes(state.name)) || /열여섯|십육국|국호/u.test(text)) add('서울 십육국', '/world/Sixteen-States')
  if (/HC\d{2}|HP\d{2}|가문|총수|본관|항렬|법인 후계/u.test(text)) add('가문', '/world/Chaebol-Houses-and-Century-Factions')
