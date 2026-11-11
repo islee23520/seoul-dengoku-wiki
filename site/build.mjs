@@ -93,7 +93,7 @@ const UI = {
     prev: '이전 문서', next: '다음 문서', menu: '메뉴', search: '검색', noResults: '결과 없음:', reset: '검색 초기화', toSelect: '선택', toNavigate: '이동', toClose: '닫기',
     appearance: '화면 모드', returnTop: '맨 위로', skip: '본문으로 건너뛰기', footerMsg: '공개 세계관 위키와 게임 설계 문서.',
     heroText: '세계관 위키 · 게임 설계', openWiki: '위키 열기', readGdd: 'GDD 읽기', openShowcase: '쇼케이스 보기',
-    showcaseCard: '인터랙티브 쇼케이스', showcaseDetail: '열여섯 국가를 돌아보는 음성 해설 투어. 한국어 음성과 영어 자막.',
+    showcaseCard: '인터랙티브 쇼케이스', showcaseDetail: '지하철 세계를 돌아보는 음성 해설 투어. 한국어 음성과 영어 자막.',
     openSource: '오픈 소스', openSourceDetail: '모든 내용은 공개 저장소의 SQL 원본 데이터에서 빌드됩니다.',
     wikiLead: (n) => `세계와 국가, 인물, 역사를 다룬 문서 ${n}개. 아래 분류에서 고르거나 사이드바를 이용하세요.`,
     statesLead: (n, f) => `정부, 자유도시, Arc ${f}개 세력이 지하철 세계를 다스립니다. 영지는 구 하나가 공작위 하나로 나뉩니다.`,

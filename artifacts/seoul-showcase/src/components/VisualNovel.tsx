@@ -57,7 +57,7 @@ export default function VisualNovel() {
       const e = ENDINGS[choice];
       const ef: Frame = { key: `end-${choice}`, act: "결말", actEn: "Ending", title: e.title.ko, titleEn: e.title.en, place: CHOICE.place.ko, placeEn: CHOICE.place.en, year: "2126", bg: e.bg };
       e.lines.forEach((line) => s.push({ kind: "line", line, frame: ef }));
-      const cf: Frame = { key: "coda", act: "종장", actEn: "Coda", title: "4 + 8 + 3", titleEn: "Sixteen into three", place: "남산", placeEn: "Namsan", year: "2116 → 2126", bg: "namsan" };
+      const cf: Frame = { key: "coda", act: "종장", actEn: "Coda", title: "남은 나라들", titleEn: "The States That Remained", place: "남산", placeEn: "Namsan", year: "2116 → 2126", bg: "namsan" };
       CODA.forEach((line) => s.push({ kind: "line", line, frame: cf }));
     }
     return s;
@@ -339,7 +339,7 @@ function Dialogue(p: {
           <span className="font-display text-xl font-extrabold md:text-2xl" style={{ color: s.tint }}>{s.name.ko}</span>
           {p.subs && <span className="font-en text-base italic text-[hsl(var(--frost)/0.8)]">{s.name.en}</span>}
           {!narr && s.title && <span className="hidden font-ui text-[11px] text-[hsl(var(--frost)/0.6)] md:inline">{s.title.ko}</span>}
-          {p.line.source && <span className="ml-auto font-mono text-[9px] uppercase tracking-widest text-[hsl(var(--frost)/0.45)]">{p.line.source === "profile" ? "공개 인물 기록 기반" : p.line.source === "annals" ? "세기 연대기" : "십육국"}</span>}
+          {p.line.source && <span className="ml-auto font-mono text-[9px] uppercase tracking-widest text-[hsl(var(--frost)/0.45)]">{p.line.source === "profile" ? "공개 인물 기록 기반" : p.line.source === "annals" ? "세기 연대기" : "세력 문서"}</span>}
         </div>
         <p lang="ko" className={`mt-2 min-h-[3.4em] text-lg leading-relaxed text-[hsl(var(--parchment))] md:text-[1.4rem] ${narr ? "" : ""} ${p.isDone && !p.isChoice ? "caret" : ""}`}>
           {p.line.ko.slice(0, p.revealed)}<span className="opacity-0">{p.line.ko.slice(p.revealed)}</span>
@@ -404,7 +404,7 @@ function Finale({ subs: sb, onRestart, onReselect }: { subs: boolean; onRestart:
       <div className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-2 font-ui text-xs underline underline-offset-4 text-[hsl(var(--parchment))]">
         <a href="https://github.com/islee23520/seoul-dengoku-wiki/blob/main/LICENSE" target="_blank" rel="noreferrer">콘텐츠 이용 조건 {sb && "· Terms"}</a>
         <a href={`${WIKI_URL}/world/Century-Annals`} target="_blank" rel="noreferrer">주요 사건 원문: 백년 연대기 {sb && "· Historical source"}</a>
-        <a href={`${WIKI_URL}/world/Sixteen-States`} target="_blank" rel="noreferrer">십육국 원문 {sb && "· Sixteen States"}</a>
+        <a href={`${WIKI_URL}/world/Sixteen-States`} target="_blank" rel="noreferrer">세 세력 원문 {sb && "· The Three Factions"}</a>
       </div>
       <div className="mt-4 flex flex-wrap justify-center gap-2 font-ui text-xs">
         <button type="button" onClick={onReselect} className="px-3 py-2 text-[hsl(var(--parchment))] hover:bg-[hsl(var(--parchment)/0.1)]">다른 길 선택 {sb && "· Choose again"}</button>
@@ -481,14 +481,14 @@ function Btn({ children, onClick, label, pressed, disabled }: { children: ReactN
 function Title({ onBegin, subs: sb }: { onBegin: () => void; subs: boolean }) {
   return (
     <main data-layout="title" className="wrap-text relative z-20 flex flex-1 flex-col justify-end px-6 pb-14 pt-6 md:justify-center md:px-16 md:pb-10">
-      <p className="rise font-mono text-[10px] uppercase tracking-[0.5em] text-[hsl(var(--ember))]">모션 그림 동화 · 2030 — 2126</p>
+      <p className="rise font-mono text-[10px] uppercase tracking-[0.5em] text-[hsl(var(--ember))]">모션 그림 동화 · 2026 — 2126</p>
       <h1 className="rise mt-4 font-display text-6xl font-extrabold leading-[0.95] text-[hsl(var(--parchment))] md:text-8xl lg:text-[8.5rem]" style={{ animationDelay: "200ms" }}>서울<span className="text-[hsl(var(--ember))]">:</span>전국</h1>
       <p className="rise mt-3 font-display text-2xl text-[hsl(var(--parchment)/0.9)] md:text-4xl" style={{ animationDelay: "350ms" }}>영원한 겨울의 연대기</p>
       {sb && <p className="rise font-en text-lg italic text-[hsl(var(--frost))] md:text-2xl" style={{ animationDelay: "420ms" }}>A Chronicle of the Eternal Winter</p>}
       <p className="rise mt-6 max-w-md text-base leading-relaxed text-[hsl(var(--parchment)/0.85)]" style={{ animationDelay: "550ms" }}>
-        전령 이연이 얼어붙은 서울로 당신을 안내한다. 기록실, 차량기지, 무전 당직, 수서 창구, 분공방에서 다섯 사람을 만나며 열여섯 나라가 세 나라로 묶인 과정을 듣는다.
+        전령 이연이 얼어붙은 서울로 당신을 안내한다. 기록실, 차량기지, 무전 당직, 수서 창구, 분공방에서 다섯 사람을 만나며 나라들이 세 국가로 묶인 과정을 듣는다.
       </p>
-      {sb && <p className="rise font-en mt-1 max-w-md italic text-[hsl(var(--frost)/0.8)]" style={{ animationDelay: "600ms" }}>The courier Iyen takes you through frozen Seoul to meet five people, at a records room, a depot, a radio watch, a ration counter and a workshop, and hear how sixteen states became three.</p>}
+      {sb && <p className="rise font-en mt-1 max-w-md italic text-[hsl(var(--frost)/0.8)]" style={{ animationDelay: "600ms" }}>The courier Iyen takes you through frozen Seoul to meet five people, at a records room, a depot, a radio watch, a ration counter and a workshop, and hear how the states became three.</p>}
       <button type="button" onClick={onBegin} autoFocus className="rise group mt-8 flex w-fit max-w-full flex-wrap items-center gap-x-4 gap-y-1 border-b border-[hsl(var(--parchment)/0.5)] pb-2 text-[hsl(var(--parchment))]" style={{ animationDelay: "750ms" }}>
         <span className="font-display text-2xl font-extrabold">이야기 시작</span>
         <span className="font-en italic opacity-70">Begin the story</span>
