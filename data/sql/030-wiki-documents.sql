@@ -28060,27 +28060,27 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 | Item | Record |
 |---|---|
-| Habitat and movement | The Bogukmun Zealots gather on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors. |
-| Food and energy | At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the zealots'' side. At the Garak vent, the flashlights and rain capes are on the Zealot Elite Squad''s side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door. |
-| Life cycle and upkeep | On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Zealot Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle. |
-| Group behavior | The Zealot Leader stands on the threshold of the corridor junction. The Zealot Elite Squad takes the drain and the granary doors. The Zealot Scouts stand on the vents and the ration route and face the leader''s side. Attendants hold sacks and water cans on the dry tread behind the leader. |
+| Habitat and movement | The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors. |
+| Food and energy | At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the group''s side. At the Garak vent, the flashlights and rain capes are on the Elite Squad''s side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door. |
+| Life cycle and upkeep | On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle. |
+| Group behavior | The Group leader stands on the threshold of the corridor junction. The Elite Squad takes the drain and the granary doors. The Scouts stand on the vents and the ration route and face the leader''s side. Attendants hold sacks and water cans on the dry tread behind the leader. |
 
 <a id="Hostile-Group-G10-heading-0008"></a>
 
 ## Individuals and battlefield formation
 
-The Zealot Leader''s post is the junction of the Bukhansan Bogukmun shelter corridor and its threshold. The Zealot Elite Squad''s post runs from the drain in the leader''s sight to the lower doors at Garak and Jamsil. The Zealot Scouts'' post is the vent walkways and the route where the ration sacks are carried, and it includes the outer stair that the sea wind from the Incheon Trust Theater reaches.
+The Group leader''s post is the junction of the Bukhansan Bogukmun shelter corridor and its threshold. The Elite Squad''s post runs from the drain in the leader''s sight to the lower doors at Garak and Jamsil. The Scouts'' post is the vent walkways and the route where the ration sacks are carried, and it includes the outer stair that the sea wind from the Incheon Trust Theater reaches.
 
 | Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
 |---|---|---|---|---|---|
-| [G10E01 · Zealot Leader](/wiki/Hostile-Group-G10/#g10e01) | Person | Single individual | Stands on the threshold of the Bukhansan Bogukmun shelter-corridor junction and sets the direction the attendants and the Zealot Elite Squad face. | Leader | M015 |
-| [G10E08 · Zealot Elite Squad](/wiki/Hostile-Group-G10/#g10e08) | Person | Single individual | Stands on both sides of the drain and at the lower-granary doors and blocks the passage and the issue side. | Elite | M016 |
-| [G10E15 · Zealot Scouts](/wiki/Hostile-Group-G10/#g10e15) | Person | Single individual | Lines the vent walkways and the ration route and takes the side where the sacks are carried out and the outer stair. | Strategic encounter | M016 |
+| [G10E01 · Group leader](/wiki/Hostile-Group-G10/#g10e01) | Person | Single individual | Stands on the threshold of the Bukhansan Bogukmun shelter-corridor junction and sets the direction the attendants and the Elite Squad face. | Leader | M015 |
+| [G10E08 · Elite Squad](/wiki/Hostile-Group-G10/#g10e08) | Person | Single individual | Stands on both sides of the drain and at the lower-granary doors and blocks the passage and the issue side. | Elite | M016 |
+| [G10E15 · Scouts](/wiki/Hostile-Group-G10/#g10e15) | Person | Single individual | Lines the vent walkways and the ration route and takes the side where the sacks are carried out and the outer stair. | Strategic encounter | M016 |
 
 <a id="Hostile-Group-G10-heading-0011"></a>
 <a id="g10e01"></a>
 
-### G10E01 · Zealot Leader
+### G10E01 · Group leader
 
 - Source batch: M015
 - Former role class: Leader
@@ -28090,8 +28090,8 @@ The Zealot Leader''s post is the junction of the Bukhansan Bogukmun shelter corr
 |---|---|
 | Type | Person |
 | Battlefield unit | Single individual |
-| Battlefield role | Stands on the threshold of the Bukhansan Bogukmun shelter-corridor junction and sets the direction the attendants and the Zealot Elite Squad face. |
-| Common species, variants and command scope | The post is the corridor junction and its threshold; the doors at Garak and Jamsil are taken by the Zealot Elite Squad. |
+| Battlefield role | Stands on the threshold of the Bukhansan Bogukmun shelter-corridor junction and sets the direction the attendants and the Elite Squad face. |
+| Common species, variants and command scope | The post is the corridor junction and its threshold; the doors at Garak and Jamsil are taken by the Elite Squad. |
 
 - Marker cloth
 - Corridor iron-door key
@@ -28103,7 +28103,7 @@ The Zealot Leader''s post is the junction of the Bukhansan Bogukmun shelter corr
 <a id="Hostile-Group-G10-heading-0015"></a>
 <a id="g10e08"></a>
 
-### G10E08 · Zealot Elite Squad
+### G10E08 · Elite Squad
 
 - Source batch: M016
 - Former role class: Elite
@@ -28114,7 +28114,7 @@ The Zealot Leader''s post is the junction of the Bukhansan Bogukmun shelter corr
 | Type | Person |
 | Battlefield unit | Single individual |
 | Battlefield role | Stands on both sides of the drain and at the lower-granary doors and blocks the passage and the issue side. |
-| Common species, variants and command scope | From the drain in the leader''s sight to the lower doors at Garak and Jamsil; the vent walkway is the Zealot Scouts'' post. |
+| Common species, variants and command scope | From the drain in the leader''s sight to the lower doors at Garak and Jamsil; the vent walkway is the Scouts'' post. |
 
 - Rain cape
 - Flashlight
@@ -28126,7 +28126,7 @@ The Zealot Leader''s post is the junction of the Bukhansan Bogukmun shelter corr
 <a id="Hostile-Group-G10-heading-0019"></a>
 <a id="g10e15"></a>
 
-### G10E15 · Zealot Scouts
+### G10E15 · Scouts
 
 - Source batch: M016
 - Former role class: Strategic encounter
@@ -28150,15 +28150,15 @@ The Zealot Leader''s post is the junction of the Bukhansan Bogukmun shelter corr
 
 ## Habitat record
 
-At the same hour the Zealot Leader faces the junction and the attendants face the leader''s back. The Zealot Elite Squad stands in one line at the drain joint. The squad has left the flashlights off and set the wooden staves beside their feet.
+At the same hour the Group leader faces the junction and the attendants face the leader''s back. The Elite Squad stands in one line at the drain joint. The squad has left the flashlights off and set the wooden staves beside their feet.
 
-On a monsoon night the water in the drain reaches the knee. The Zealot Elite Squad stands on both sides of the water, and the rain capes touch the water. The Anguk Order corridor watch is on the stair on the dry side, and the iron door is locked. The marker cloth on the door handle is wet.
+On a monsoon night the water in the drain reaches the knee. The Elite Squad stands on both sides of the water, and the rain capes touch the water. The Anguk Order corridor watch is on the stair on the dry side, and the iron door is locked. The marker cloth on the door handle is wet.
 
-On a ration-day afternoon the Magok Seed House ration watch is at the Jamsil lower granary. The Zealot Scouts fill the space before the door, and grain sacks and tins of dry side dishes are inside the door. The watch calls the names of the waiting people from the upper level. The people whose names are called stand on the stair, and the sacks are on the Zealot Scouts'' side.
+On a ration-day afternoon the Magok Seed House ration watch is at the Jamsil lower granary. The Scouts fill the space before the door, and grain sacks and tins of dry side dishes are inside the door. The watch calls the names of the waiting people from the upper level. The people whose names are called stand on the stair, and the sacks are on the Scouts'' side.
 
-The Yunsaeron side stands in front of the corridor door after the Magok Seed House hands the seed-bag issue list to the ration watch. The bags written on the list are at the morning door, and the remaining bags are tied on the upper shelves. The Zealot Leader looks toward the list from the threshold of that door.
+The Yunsaeron side stands in front of the corridor door after the Magok Seed House hands the seed-bag issue list to the ration watch. The bags written on the list are at the morning door, and the remaining bags are tied on the upper shelves. The Group leader looks toward the list from the threshold of that door.
 
-On a day when the corridor is dry, the drain floor is exposed and marker cloth remains on the handle. The Zealot Elite Squad and the Zealot Scouts stand together before the door of the Garak lower granary. One shift of the Anguk Order corridor watch is on the stair outside the stretch and shines flashlights on the door. The waiting line runs up that stair.
+On a day when the corridor is dry, the drain floor is exposed and marker cloth remains on the handle. The Elite Squad and the Scouts stand together before the door of the Garak lower granary. One shift of the Anguk Order corridor watch is on the stair outside the stretch and shines flashlights on the door. The waiting line runs up that stair.
 
 <a id="Hostile-Group-G10-heading-0032"></a>
 
@@ -28169,11 +28169,11 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 ### G10-SC1 · Bags at the Corridor Threshold
 
 - Stage: 1
-- Trigger: On an early-summer night the Zealot Leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
+- Trigger: On an early-summer night the Group leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
 - Actors: government, HC10, H10
 - Ecological mechanism: The Anguk Order corridor watch watches the iron door''s lock and the people on the stair, and the Magok Seed House ration watch watches the shelf of bags. Once the Magok Seed House passes the list to the watch, the Yunsaeron side stays in front of the door and the attendants stand beside the bags on the threshold.
 - Choices: The Anguk Order corridor watch locks the iron door, and the Magok Seed House places the seed bags on the upper shelves. / The watch opens the iron door only in the morning and sends out only the bags written on the Yunsaeron side''s list. / The watch stands on the threshold and carries the issue forward, passing the bags into the corridor.
-- Outcomes: After the iron door is locked, the bags are on the upper shelves and the Zealot Leader stands outside the door. After the door is opened only in the morning, only the bags on the list are outside the door, the remaining bags are on the shelves, and the attendants stand beside the bags outside. After the issue goes forward, the bags are piled past the threshold on the attendants'' side, and the ration watch''s empty cart is in the corridor.
+- Outcomes: After the iron door is locked, the bags are on the upper shelves and the Group leader stands outside the door. After the door is opened only in the morning, only the bags on the list are outside the door, the remaining bags are on the shelves, and the attendants stand beside the bags outside. After the issue goes forward, the bags are piled past the threshold on the attendants'' side, and the ration watch''s empty cart is in the corridor.
 - Moral cost: After the morning opening, the people waiting outside the list remain on the stair, and part of the day''s seed bags stay tied on the upper level. After the issue is passed across, the Magok Seed House''s empty cart is in the corridor and the places on the shelves are bare.
 - Source dossier: G10
 
@@ -28192,9 +28192,9 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 
 - Stage: 3
 - Actors: government, XT05, HC10, H10
-- Ecological mechanism: While the sea wind comes in, the number on the outer stair grows and attendants remain inside the corridor holding water cans. The Zealot Leader is on the threshold toward Bukhansan Bogukmun, and the Zealot Scouts stand facing the leader''s side. The Yunsaeron side stands in front of the door until the Magok Seed House passes the issue list to the ration watch.
+- Ecological mechanism: While the sea wind comes in, the number on the outer stair grows and attendants remain inside the corridor holding water cans. The Group leader is on the threshold toward Bukhansan Bogukmun, and the Scouts stand facing the leader''s side. The Yunsaeron side stands in front of the door until the Magok Seed House passes the issue list to the ration watch.
 - Choices: The corridor watch leaves only the outer-stair lamps on and locks the inner iron door. / The Magok Seed House seed watch places the seed bags on a shelf apart from the ration sacks and stops lower-level issue. / The ration watch opens the morning door only after receiving the Yunsaeron side''s list and sends out the bags on the list.
-- Outcomes: After only the outer lamps are left on, the Zealot Scouts stand on the lit stair and the attendants on the inner threshold are on the dark side. After the bags are placed on another shelf, the seed bags are tied on the upper level and the lower sacks are in front of the Zealot Scouts. After the door is opened once the list is received, only the bags written there are outside the door, the Yunsaeron side stands beside those bags, and the Zealot Leader looks toward the bags from the threshold.
+- Outcomes: After only the outer lamps are left on, the Scouts stand on the lit stair and the attendants on the inner threshold are on the dark side. After the bags are placed on another shelf, the seed bags are tied on the upper level and the lower sacks are in front of the Scouts. After the door is opened once the list is received, only the bags written there are outside the door, the Yunsaeron side stands beside those bags, and the Group leader looks toward the bags from the threshold.
 - Source dossier: G10
 ', '<a id="Hostile-Group-G10-heading-0001"></a>
 
@@ -28210,27 +28210,27 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 
 | 항목 | 기록 |
 |---|---|
-| 서식·이동 | 보국문 광신도는 북한산보국문 대피 회랑의 배수 불량 구간에 모인다. 장마와 배급 주기에는 가락과 잠실의 하층 배급고와 환기구에 선다. 인천신탁전구의 해풍이 들어오면 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 남는다. 회랑이 마르면 인원이 배급고 문 쪽으로 빠진다. |
-| 먹이·에너지 | 잠실 하층 배급고에서 곡물 자루와 마른 반찬 통을 광신도 쪽으로 넘긴다. 가락 환기구의 손전등과 우의는 광신도 정예조 쪽에 있다. 마곡종자가가 출고를 멈춘 뒤 윗층 선반의 종자 포대는 묶인 채 있고 아래층 자루만 문 앞에 있다. |
-| 생애·정비 | 배급일 낮에는 북한산보국문 회랑 쪽 인원이 가락과 잠실 하층에 붙는다. 인천신탁전구 쪽 해풍이 회랑으로 들어오면 외곽 계단의 인원이 늘고 안쪽 문턱에는 수행이 남는다. 회랑이 마르면 광신도 정예조가 배급고 문 앞에 서고 배수로 손잡이에는 표식 천만 매여 있다. |
-| 집단 행동 | 광신도 인도자는 회랑 분기 문턱에 선다. 광신도 정예조는 배수로와 배급고 문짝을 맡는다. 광신도 척후조는 환기구와 배급 동선에 서서 인도자 쪽을 향한다. 수행은 인도자 뒤 마른 발판에서 자루와 물통을 든다. |
+| 서식·이동 | 보국문 집단은 북한산보국문 대피 회랑의 배수 불량 구간에 모인다. 장마와 배급 주기에는 가락과 잠실의 하층 배급고와 환기구에 선다. 인천신탁전구의 해풍이 들어오면 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 남는다. 회랑이 마르면 인원이 배급고 문 쪽으로 빠진다. |
+| 먹이·에너지 | 잠실 하층 배급고에서 곡물 자루와 마른 반찬 통을 집단 쪽으로 넘긴다. 가락 환기구의 손전등과 우의는 정예조 쪽에 있다. 마곡종자가가 출고를 멈춘 뒤 윗층 선반의 종자 포대는 묶인 채 있고 아래층 자루만 문 앞에 있다. |
+| 생애·정비 | 배급일 낮에는 북한산보국문 회랑 쪽 인원이 가락과 잠실 하층에 붙는다. 인천신탁전구 쪽 해풍이 회랑으로 들어오면 외곽 계단의 인원이 늘고 안쪽 문턱에는 수행이 남는다. 회랑이 마르면 정예조가 배급고 문 앞에 서고 배수로 손잡이에는 표식 천만 매여 있다. |
+| 집단 행동 | 집단 인도자는 회랑 분기 문턱에 선다. 정예조는 배수로와 배급고 문짝을 맡는다. 척후조는 환기구와 배급 동선에 서서 인도자 쪽을 향한다. 수행은 인도자 뒤 마른 발판에서 자루와 물통을 든다. |
 
 <a id="Hostile-Group-G10-heading-0008"></a>
 
 ## 개체와 전장 편성
 
-광신도 인도자의 자리는 북한산보국문 대피 회랑 분기와 그 문턱이다. 광신도 정예조의 자리는 인도자가 보는 배수로에서 가락·잠실 하층 문짝까지다. 광신도 척후조의 자리는 환기구 발판과 배급 자루를 나르는 동선과 인천신탁전구 해풍이 닿는 외곽 계단이다.
+집단 인도자의 자리는 북한산보국문 대피 회랑 분기와 그 문턱이다. 정예조의 자리는 인도자가 보는 배수로에서 가락·잠실 하층 문짝까지다. 척후조의 자리는 환기구 발판과 배급 자루를 나르는 동선과 인천신탁전구 해풍이 닿는 외곽 계단이다.
 
 | 개체·전문 | 구분 | 전장 단위 | 전장 역할 | 기존 역할군 | 출처 배치 |
 |---|---|---|---|---|---|
-| [G10E01 · 광신도 인도자](/wiki/Hostile-Group-G10/#g10e01) | 사람 | 독립 개체 | 북한산보국문 대피 회랑 분기 문턱에 서서 수행과 광신도 정예조가 보는 방향을 정한다. | 두목 | M015 |
-| [G10E08 · 광신도 정예조](/wiki/Hostile-Group-G10/#g10e08) | 사람 | 독립 개체 | 배수로 양쪽과 하층 배급고 문짝에 서서 통로와 출고 쪽을 막는다. | 정예 | M016 |
-| [G10E15 · 광신도 척후조](/wiki/Hostile-Group-G10/#g10e15) | 사람 | 독립 개체 | 환기구 발판과 배급 동선에 늘어서 자루를 내가는 쪽과 외곽 계단을 맡는다. | 전략 조우 | M016 |
+| [G10E01 · 집단 인도자](/wiki/Hostile-Group-G10/#g10e01) | 사람 | 독립 개체 | 북한산보국문 대피 회랑 분기 문턱에 서서 수행과 정예조가 보는 방향을 정한다. | 두목 | M015 |
+| [G10E08 · 정예조](/wiki/Hostile-Group-G10/#g10e08) | 사람 | 독립 개체 | 배수로 양쪽과 하층 배급고 문짝에 서서 통로와 출고 쪽을 막는다. | 정예 | M016 |
+| [G10E15 · 척후조](/wiki/Hostile-Group-G10/#g10e15) | 사람 | 독립 개체 | 환기구 발판과 배급 동선에 늘어서 자루를 내가는 쪽과 외곽 계단을 맡는다. | 전략 조우 | M016 |
 
 <a id="Hostile-Group-G10-heading-0011"></a>
 <a id="g10e01"></a>
 
-### G10E01 · 광신도 인도자
+### G10E01 · 집단 인도자
 
 - 출처 배치: M015
 - 기존 역할군: 두목
@@ -28240,8 +28240,8 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 |---|---|
 | 구분 | 사람 |
 | 전장 단위 | 독립 개체 |
-| 전장 역할 | 북한산보국문 대피 회랑 분기 문턱에 서서 수행과 광신도 정예조가 보는 방향을 정한다. |
-| 공통종·변이와 지휘 범위 | 자리는 회랑 분기와 그 문턱이며 가락·잠실 문짝은 광신도 정예조가 맡는다. |
+| 전장 역할 | 북한산보국문 대피 회랑 분기 문턱에 서서 수행과 정예조가 보는 방향을 정한다. |
+| 공통종·변이와 지휘 범위 | 자리는 회랑 분기와 그 문턱이며 가락·잠실 문짝은 정예조가 맡는다. |
 
 - 표식 천
 - 회랑 철문 열쇠
@@ -28253,7 +28253,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 <a id="Hostile-Group-G10-heading-0015"></a>
 <a id="g10e08"></a>
 
-### G10E08 · 광신도 정예조
+### G10E08 · 정예조
 
 - 출처 배치: M016
 - 기존 역할군: 정예
@@ -28264,7 +28264,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 | 구분 | 사람 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 배수로 양쪽과 하층 배급고 문짝에 서서 통로와 출고 쪽을 막는다. |
-| 공통종·변이와 지휘 범위 | 인도자가 보는 배수로에서 가락·잠실 하층 문짝까지이며 환기구 발판은 광신도 척후조 자리이다. |
+| 공통종·변이와 지휘 범위 | 인도자가 보는 배수로에서 가락·잠실 하층 문짝까지이며 환기구 발판은 척후조 자리이다. |
 
 - 우의
 - 손전등
@@ -28276,7 +28276,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 <a id="Hostile-Group-G10-heading-0019"></a>
 <a id="g10e15"></a>
 
-### G10E15 · 광신도 척후조
+### G10E15 · 척후조
 
 - 출처 배치: M016
 - 기존 역할군: 전략 조우
@@ -28300,15 +28300,15 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 
 ## 서식권 기록
 
-같은 시각 광신도 인도자는 분기 쪽을 보고 수행은 인도자의 등을 본다. 광신도 정예조는 배수로 이음에 한 줄로 서 있다. 정예조는 손전등을 꺼 두고 목봉을 발 옆에 놓아 둔다.
+같은 시각 집단 인도자는 분기 쪽을 보고 수행은 인도자의 등을 본다. 정예조는 배수로 이음에 한 줄로 서 있다. 정예조는 손전등을 꺼 두고 목봉을 발 옆에 놓아 둔다.
 
-장마철 밤 배수로의 물이 무릎까지 차 있다. 광신도 정예조가 물 양쪽에 서 있고 우의가 물에 닿아 있다. 안국총림 회랑 당직은 마른 쪽 계단에 있으며 철문은 잠겨 있다. 문 손잡이의 표식 천은 젖어 있다.
+장마철 밤 배수로의 물이 무릎까지 차 있다. 정예조가 물 양쪽에 서 있고 우의가 물에 닿아 있다. 안국총림 회랑 당직은 마른 쪽 계단에 있으며 철문은 잠겨 있다. 문 손잡이의 표식 천은 젖어 있다.
 
-배급일 낮 마곡종자가 배급 당직이 잠실 하층 배급고에 있다. 광신도 척후조가 문 앞을 채우고 곡물 자루와 마른 반찬 통이 문 안쪽에 있다. 당직은 윗층에서 대기 인원의 이름을 부른다. 이름을 불린 인원이 계단에 서 있고 자루는 광신도 척후조 쪽에 있다.
+배급일 낮 마곡종자가 배급 당직이 잠실 하층 배급고에 있다. 척후조가 문 앞을 채우고 곡물 자루와 마른 반찬 통이 문 안쪽에 있다. 당직은 윗층에서 대기 인원의 이름을 부른다. 이름을 불린 인원이 계단에 서 있고 자루는 척후조 쪽에 있다.
 
-윤새론 쪽은 마곡종자가가 종자 포대 출고 목록을 배급 당직에게 넘긴 뒤에 회랑 문 앞에 선다. 목록에 적힌 포대는 오전 문에 있고 나머지 포대는 윗층 선반에 묶여 있다. 광신도 인도자는 그 문의 문턱에서 목록 쪽을 본다.
+윤새론 쪽은 마곡종자가가 종자 포대 출고 목록을 배급 당직에게 넘긴 뒤에 회랑 문 앞에 선다. 목록에 적힌 포대는 오전 문에 있고 나머지 포대는 윗층 선반에 묶여 있다. 집단 인도자는 그 문의 문턱에서 목록 쪽을 본다.
 
-회랑이 마른 날 배수로 바닥이 드러나 있고 표식 천이 손잡이에 남아 있다. 광신도 정예조와 광신도 척후조는 가락 하층 배급고 문 앞에 함께 서 있다. 안국총림 회랑 당직 한 조는 구간 밖 계단에 있으며 손전등으로 문짝을 비춘다. 대기 줄은 그 계단 위까지 이어져 있다.
+회랑이 마른 날 배수로 바닥이 드러나 있고 표식 천이 손잡이에 남아 있다. 정예조와 척후조는 가락 하층 배급고 문 앞에 함께 서 있다. 안국총림 회랑 당직 한 조는 구간 밖 계단에 있으며 손전등으로 문짝을 비춘다. 대기 줄은 그 계단 위까지 이어져 있다.
 
 <a id="Hostile-Group-G10-heading-0032"></a>
 
@@ -28319,11 +28319,11 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 ### G10-SC1 · 회랑 문턱의 포대
 
 - 단계: 1
-- 촉발: 초여름 밤 광신도 인도자가 북한산보국문 대피 회랑 문턱에 서 있고, 마곡종자가가 종자 포대를 그 문으로 내보내게 되어 있다. 윤새론 쪽이 출고 목록을 들고 문 앞에 서 있다.
+- 촉발: 초여름 밤 집단 인도자가 북한산보국문 대피 회랑 문턱에 서 있고, 마곡종자가가 종자 포대를 그 문으로 내보내게 되어 있다. 윤새론 쪽이 출고 목록을 들고 문 앞에 서 있다.
 - 관련 세력: government, HC10, H10
 - 생태 기제: 안국총림 회랑 당직이 철문의 잠금과 계단의 인원을 보고 마곡종자가 배급 당직이 포대의 선반을 본다. 마곡종자가가 목록을 당직에게 넘기면 윤새론 쪽이 문 앞에 남고 수행이 문턱의 포대 옆에 선다.
 - 선택지: 안국총림 회랑 당직이 철문을 잠그고 마곡종자가가 종자 포대를 윗층 선반에 둔다. / 당직이 오전에만 철문을 열고 윤새론 쪽 목록에 적힌 포대만 문 밖으로 낸다. / 당직이 문턱에 선 채로 출고를 진행하고 포대를 회랑으로 넘긴다.
-- 결과: 철문을 잠근 뒤에는 포대가 윗층 선반에 있고 광신도 인도자는 문 밖에 서 있다. 오전만 연 뒤에는 목록의 포대만 문 밖에 있고 나머지 포대는 선반에 있으며 수행이 문 밖 포대 옆에 서 있다. 출고를 진행한 뒤에는 포대를 문턱 너머 수행 쪽에 쌓아 두고 배급 당직의 빈 수레가 회랑에 있다.
+- 결과: 철문을 잠근 뒤에는 포대가 윗층 선반에 있고 집단 인도자는 문 밖에 서 있다. 오전만 연 뒤에는 목록의 포대만 문 밖에 있고 나머지 포대는 선반에 있으며 수행이 문 밖 포대 옆에 서 있다. 출고를 진행한 뒤에는 포대를 문턱 너머 수행 쪽에 쌓아 두고 배급 당직의 빈 수레가 회랑에 있다.
 - 도덕 비용: 오전 개방 뒤 목록 밖 대기 인원이 계단에 남고 당일 종자 포대의 일부가 윗층에 묶여 있다. 출고를 넘긴 뒤 마곡종자가의 빈 수레가 회랑에 있고 선반의 자리가 비어 있다.
 - 원본 항목: G10
 
@@ -28342,9 +28342,9 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 
 - 단계: 3
 - 관련 세력: government, XT05, HC10, H10
-- 생태 기제: 해풍이 들어오는 동안 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 물통을 들고 남는다. 광신도 인도자는 북한산보국문 쪽 문턱에 있으며 광신도 척후조는 인도자 쪽을 향해 선다. 윤새론 쪽은 마곡종자가가 출고 목록을 배급 당직에게 넘기기 전까지 문 앞에 서 있다.
+- 생태 기제: 해풍이 들어오는 동안 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 물통을 들고 남는다. 집단 인도자는 북한산보국문 쪽 문턱에 있으며 척후조는 인도자 쪽을 향해 선다. 윤새론 쪽은 마곡종자가가 출고 목록을 배급 당직에게 넘기기 전까지 문 앞에 서 있다.
 - 선택지: 회랑 당직이 외곽 계단의 등만 켜 두고 안쪽 철문을 잠근다. / 마곡종자가 종자 당직이 종자 포대를 배급 자루와 다른 선반에 두고 하층 출고를 멈춘다. / 배급 당직이 윤새론 쪽 목록을 받은 뒤에만 오전 문을 열고 목록의 포대를 낸다.
-- 결과: 외곽 등만 켠 뒤에는 광신도 척후조가 밝은 계단에 서 있고 안쪽 문턱의 수행이 어두운 쪽에 있다. 포대를 다른 선반에 둔 뒤에는 종자 포대가 윗층에 묶여 있고 아래층 자루가 광신도 척후조 앞에 있다. 목록을 받은 뒤에 문을 연 뒤에는 적힌 포대만 문 밖에 있고 윤새론 쪽이 그 포대 옆에 서 있으며 광신도 인도자는 문턱에서 포대 쪽을 본다.
+- 결과: 외곽 등만 켠 뒤에는 척후조가 밝은 계단에 서 있고 안쪽 문턱의 수행이 어두운 쪽에 있다. 포대를 다른 선반에 둔 뒤에는 종자 포대가 윗층에 묶여 있고 아래층 자루가 척후조 앞에 있다. 목록을 받은 뒤에 문을 연 뒤에는 적힌 포대만 문 밖에 있고 윤새론 쪽이 그 포대 옆에 서 있으며 집단 인도자는 문턱에서 포대 쪽을 본다.
 - 원본 항목: G10
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hostile-Group-G11', 'G11 · Gangnam Stray Humanoids', 'G11 · 강남 이탈 인간형', 'bestiary', 11, '<a id="Hostile-Group-G11-heading-0001"></a>
@@ -42919,100 +42919,100 @@ These armed recovery squads competed in performance by occupying restart trigger
 - [The Scenario Timeline](/wiki/Scenario-Timeline/)
 - [Horizon Forbidden West](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
 
-## Improvisation Tech and the Relic Myth
+## Improvisation Tech and the Keeping of Old Machines
 
-A. Relic worship and improvisation technology
+A. Keeping the wreckage and improvisation technology
 
-In later Seoul an old lost tech did not become a relic merely because years had passed. The divinization of wreckage was a solemn rite worshipping as god the old facilities that had done their work. Improvisation tech showed its face only within this frame of deifying machines. The axes added atop it were three: machine worship, consumption rites, and the deification of old-world symbols. The chief materials offered in the rites were rolling stock, old substations, severed announcements, faded station marks, and old currency.
+In later Seoul an old lost tech did not become a relic merely because years had passed. People gathered around the old facilities that had done their work and tended them together. Improvisation tech showed its face only within this frame of tending the machines. The axes added atop it were three: tending the machines, circulation practices, and the keeping of old-world symbols. The chief things tended were rolling stock, old substations, severed announcements, faded station marks, and old currency.
 
 B. Struggles among successor polities
 
-The glory of the old state had now receded into legend. Over that vacancy the local successor polities fought fiercely over the old wreckage. Regional division sprouted first not in grand ideology but in gu and station and route units, and dynasties and vassal powers inherited in turn the jurisdiction of these rites.
+The glory of the old state had now receded into legend. Over that vacancy the local successor polities fought fiercely over the old wreckage. Regional division sprouted first not in grand ideology but in gu and station and route units, and dynasties and vassal powers inherited in turn their jurisdiction.
 
 C. Fixed roles of the two lines
 
-The skeleton of the two lost lines was not changed carelessly. The G25 Lantern Ant firmly remained the line charged with search, and the G26 Iron Dinosaur the line mending heavy plant. Faith lodging in them did not change those roles. They merely read different gods into the same chassis.
+The skeleton of the two lost lines was not changed carelessly. The G25 Lantern Ant firmly remained the line charged with search, and the G26 Iron Dinosaur the line mending heavy plant. Whatever meaning people attached to them did not change those roles. Communities merely read the same chassis differently.
 
-### Machine Worship
+### Tending the Machines
 
-A. Sacred bodies
+A. Keeping the great chassis
 
-Machine worship enshrined the huge bodies of depots and substations as sacred flesh. Even the act of stripping and recovering something was held a devout ritual, and pilgrimage meant no more than circling the dark maintenance shed with care. Raising a machine back to life was sometimes the great occasion on which a faction split.
+People kept the huge bodies of depots and substations as the centers of their communities. Even the act of stripping and recovering something was carried out by a set procedure, and the maintenance round meant no more than circling the dark maintenance shed with care. Raising a machine back to life was sometimes the great occasion on which a group split.
 
-B. Reading relics
+B. Looking after the parts
 
-Followers of machine worship venerate old train bodies and bogies. They also offer gifts at hydraulic assemblies in workshops and busbars in substations.
+People look after old train bodies and bogies as their communities'' implements. They also tend the hydraulic assemblies in workshops and the busbars in substations.
 
-C. Wheel and busbar rites
+C. Two views of wheels and busbars
 
-The branches of the individual faiths divided into the Wheel Rite and the Busbar Rite. The Wheel Rite believed firmly that as long as the heavy wheels rolled, that route''s life continued. The Busbar Rite believed only the stations where a faint light remained survived to the end.
+The practice divided into two views. One side held firmly that as long as the heavy wheels rolled, that route''s life continued. The other held that only the stations where a faint light remained survived to the end.
 
-### Consumption Rites
+### Circulation Practices
 
-A. Altars and offerings
+A. The use of old currency
 
-Consumption rites were the ritual of setting on the altar old currency and worn circulation relics that had lost their meaning. The exchange acts common before the collapse transformed into myth. Card-tapping, coin-inserting, ration-distributing gestures, plain hand movements, now became desperate prayer.
+Circulation practices were the custom of gathering old currency and worn circulation relics that had lost their meaning at the strongholds. The exchange acts common before the collapse remained as custom. Card-tapping, coin-inserting, ration-distributing gestures, plain hand movements, now became set procedure.
 
-B. Kinds of offerings
+B. What is gathered
 
-Banknotes, rolling coins, and plastic transit cards were the finest offerings. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just ritual distribution. The tap of a card at a gate was both a request for passage and a tribute offered to god. The HP01 house''s auctioning of parts is read elsewhere as blasphemous desecration; within this lineage it passes as a formal rite.
+Banknotes, rolling coins, and plastic transit cards were the most prized things. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just distribution of goods. The tap of a card at a gate was a request for passage. The HP01 house''s auctioning of parts is read elsewhere as a breach of the order; within this lineage it passes as an accepted practice.
 
-C. Stamp and gate rites
+C. Two rules of value and passage
 
-The branches of the individual faiths divided into the Stamp Rite and the Gate Rite. The Stamp Rite believed the stamp fixed in the locked box set the value of things. The Gate Rite held that the very instant of passing the breaker was the act that carried on a momentary life.
+The practice divided into two rules. One side held that the stamp fixed in the locked box set the value of things. The other held that the very instant of passing the breaker was the act that carried on a momentary life.
 
-### The Deification of Old-World Symbols
+### Keeping Old-World Symbols
 
-A. God of the voice
+A. Traces of the voice
 
-Followers of the old-world symbol cult venerate station signs and interrupted announcements.
+The people who keep old-world symbols hold station signs and interrupted announcements as things to be preserved.
 
-B. Echo and sanctuary
+B. Echo and boundary
 
-The G25''s sensor modules and protocol cards were the faint echoes that voice had left. If someone moved a station mark elsewhere, they believed the sanctuary itself moved whole to that place. To erase a mark wantonly was therefore held the impiety of erasing the god''s very existence.
+The G25''s sensor modules and protocol cards were the faint echoes that voice had left. If someone moved a station mark elsewhere, they held that the boundary itself moved whole to that place. To erase a mark wantonly was therefore held the same as erasing the place itself.
 
-C. Nameplate and announcement rites
+C. Two territory standards
 
-The names of the individual faiths divided into the Nameplate Rite and the Announcement Rite. The Nameplate Rite took even the places where letters faintly remained as intact national borders. The Announcement Rite made the whole space where the voice gently rang a sacred altar.
+The territory standards divided into two. One took even the places where letters faintly remained as intact boundaries. The other made the whole space where the voice gently rang one jurisdiction.
 
-### The Rules by Which a Relic Became an Object of Faith
+### The Rules by Which a Relic Became a Community''s Center
 
 A. Five conditions
 
-A mass of scrap was not enshrined merely because time had long passed. One of the three axes (machine worship, consumption rites, symbol deification) had to be clearly knotted into the chain of deification, and the conditions below carefully met.
+A mass of scrap was not kept merely because time had long passed. One of the three axes (tending the machines, circulation practices, keeping old-world symbols) had to be clearly knotted into it, and the conditions below carefully met.
 
 1. It had to be Seoul material
-Rolling stock, a substation, an announcement, a station mark, or old currency, or at least bearing their traces. The lost line''s modules were acknowledged as relics only when firmly attached to this core material.
+Rolling stock, a substation, an announcement, a station mark, or old currency, or at least bearing their traces. The lost line''s modules became the center only when firmly attached to this core material.
 2. A living livelihood had to depend on its function
-Lighting that brightened the dark, the water of life, safe passage, and watch duty had to hang deep on that relic. Doctrine did not fall off an old notice board on the wall. It flowered hot in the concourse where people breathed and sweated, before the sluices, in the crowded unloading yards.
-3. Re-control had to be blocked so that it stood in for god
-With the servers cut and even the vault holding the drawings firmly shut, the remaining machines became mere masses of cipher with no way of interpretation. It was before this great wall of interpretation that people''s desperate deification sprouted.
+Lighting that brightened the dark, the water supply, safe passage, and watch duty had to hang deep on that relic. Rules did not fall off an old notice board on the wall. They flowered hot in the concourse where people breathed and sweated, before the sluices, in the crowded unloading yards.
+3. Re-control had to be blocked
+With the servers cut and even the vault holding the drawings firmly shut, the remaining machines became mere masses of cipher with no way of interpretation. It was before this great wall of interpretation that a chassis became the center of its community.
 4. Survival in the same place had to repeat
-Only a community that had clung to one module and stubbornly survived three times or more called that mass of iron a relic. A single lucky chance remained merely a useful trading item.
+Only a community that had clung to one module and stubbornly survived three times or more took that mass of iron as its center. A single lucky chance remained merely a useful trading item.
 5. A place-power had to claim jurisdiction
-The successor polities split by route, gu, and station divided custody and pilgrimage manner and strict taboo each in their own way. Dynasties and the vassal powers following them inherited even the jurisdiction of the rites and hardened their power. The recovery squads stripping parts without restraint and the faiths defending the old relics to the end collided roughly inside these dark sealed galleries.
+The successor polities split by route, gu, and station divided custody and upkeep manner and strict taboo each in their own way. Dynasties and the vassal powers following them inherited even the jurisdiction and hardened their power. The recovery squads stripping parts without restraint and the keepers defending the old relics to the end collided roughly inside these dark sealed galleries.
 
-### Relic Interpretation by Faith Lineage
+### Relic Interpretation by Lineage
 
 A. Three tiers
 
-Faith was firmly stacked in three strata. At the top stood the great families of faith (lineages); beneath them sat the differing individual faiths; at the very bottom waited concrete doctrines and exacting lessons. This endlessly splitting process of division was itself the unit that edited Seoul''s rules anew.
+The customs were firmly stacked in three strata. At the top stood the great lineages of custom; beneath them sat the differing individual customs; at the very bottom waited concrete rules and exacting lessons. This endlessly splitting process of division was itself the unit that edited Seoul''s rules anew.
 
-B. Reading the three families
+B. How the three lineages read
 
-The machine-worship family read the old rolling stock, the substations, and even the G26''s heavy drives together as one sacred body. The consumption-rite family accepted crumpled currency, gate passage, and even secret parts auctions as one solemn rite. The symbol-deification family took the severed announcements, the faded station marks, and the sharp sensor signals of the G25 as a single line of voice the creator had left.
+The machine-tending lineage read the old rolling stock, the substations, and even the G26''s heavy drives together as one body of care. The circulation lineage accepted crumpled currency, gate passage, and even secret parts auctions as one order of distribution. The symbol-keeping lineage took the severed announcements, the faded station marks, and the sharp sensor signals of the G25 as a single line of voice the old world had left.
 
 C. Different readings of the same module
 
-The very same G25 charging module was a sublime breath to the Busbar Rite, a costly offering to the Stamp Rite, and the box where the holy voice dwelt to the Announcement Rite. The same G26 hydraulic underbody was the joint bridging legs to the Wheel Rite but a fearsome judgment punishing those who passed without right to the Gate Rite.
+The very same G25 charging module was the core of the substation equipment to one lineage, a costly trading good to another, and the box where the voice dwelt to a third. The same G26 hydraulic underbody was the joint bridging legs to one lineage and the device barring those who passed without right to another.
 
-D. Public and hidden faiths
+D. Public and hidden customs
 
-The public faith showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden faith flipped the very same phrases into entirely different secret lessons. If one vassal house quietly overlaid the Busbar Rite''s substation altar and the Nameplate Rite''s pilgrimage inside the same gallery, then though the relic before the eyes was one, the jurisdiction governing it split in two.
+The public custom showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden custom flipped the very same phrases into entirely different secret lessons. If one vassal house quietly overlaid the keeping of the substation equipment and the keeping of the station marks inside the same gallery, then though the object before the eyes was one, the jurisdiction governing it split in two.
 
 E. Fixed number of lines
 
-Followers of machine worship, consumption rites, and old-world symbol worship use surviving machine parts in different rites.
+The people of machine tending, circulation practice, and old-world symbol keeping use surviving machine parts in different ways.
 ', '<a id="개요"></a>
 
 ## 멈춘 명령, 남은 기체
@@ -43147,100 +43147,100 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 - [연표](/wiki/Scenario-Timeline/)
 - [Horizon Forbidden West](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
 
-## 염출 기술·유물 신화
+## 염출 기술과 옛 기계의 돌봄
 
-가. 잔해 신앙화와 염출 기술
+가. 잔해 돌봄과 염출 기술
 
-잔해 신앙화는 기능을 다한 옛 시설을 신으로 추앙하는 의례다. 염출 기술은 잔해 신앙화의 틀 안에서 모습을 드러낸다. 축은 기계 숭배와 소비 의례, 구세계 상징 신격화 세 가지다. 의례에 바치는 주된 재료는 전동차와 낡은 변전소, 끊긴 안내방송, 색이 바랜 역 표지, 옛 화폐다.
+사람들은 기능을 다한 옛 시설을 중심으로 모여 함께 돌본다. 염출 기술은 이 돌봄의 틀 안에서 모습을 드러낸다. 축은 기계 돌봄과 유통 관행, 구세계 상징 보존 세 가지다. 돌보는 주된 대상은 전동차와 낡은 변전소, 끊긴 안내방송, 색이 바랜 역 표지, 옛 화폐다.
 
 나. 후계 정치체의 다툼
 
-옛 국가의 영광은 전설로 남았다. 지역 후계 정치체들이 낡은 잔해를 두고 다툰다. 지역 분열은 거창한 이념보다 구와 역, 노선 단위에서 먼저 나타난다. 왕조와 봉신 세력은 의례의 관할권을 차례로 상속받는다.
+옛 국가의 영광은 전설로 남았다. 지역 후계 정치체들이 낡은 잔해를 두고 다툰다. 지역 분열은 거창한 이념보다 구와 역, 노선 단위에서 먼저 나타난다. 왕조와 봉신 세력은 관할권을 차례로 상속받는다.
 
 다. 두 라인의 역할 고정
 
-두 로스트 라인의 뼈대는 바꾸지 않는다. G25 등불개미는 수색을 맡은 라인이다. G26 철공룡은 무거운 장비를 고치는 라인이다. 신앙이 깃들어도 역할은 달라지지 않는다. 같은 기체를 서로 다른 신으로 읽는다.
+두 로스트 라인의 뼈대는 바꾸지 않는다. G25 등불개미는 수색을 맡은 라인이다. G26 철공룡은 무거운 장비를 고치는 라인이다. 어떤 뜻을 붙이든 역할은 달라지지 않는다. 같은 기체를 공동체마다 다르게 본다.
 
-### 기계 숭배
+### 기계 돌봄
 
-가. 거룩한 신체
+가. 큰 기체를 지키는 자리
 
-기계 숭배는 차량기지와 변전소의 거대한 몸집을 거룩한 신체로 모신다. 회수하는 일도 경건한 의식으로 여긴다. 순례는 어두운 정비고를 한 바퀴 도는 행위다. 기계를 다시 살리는 재기동은 분파가 쪼개지는 계기가 되기도 한다.
+사람들은 차량기지와 변전소의 거대한 기체를 공동체의 중심으로 지킨다. 회수하는 일도 정해진 절차로 치른다. 정비 순회는 어두운 정비고를 한 바퀴 도는 일이다. 기계를 다시 살리는 재기동은 공동체가 쪼개지는 계기가 되기도 한다.
 
-나. 성물의 읽기
+나. 기체를 돌보는 일
 
-기계 숭배의 신도들은 전동차의 차체와 낡은 대차를 거룩한 몸으로 여긴다. 정비고의 유압 하체와 변전소 모선에도 제물을 바친다.
+사람들은 전동차의 차체와 낡은 대차를 공동체의 기물로 여긴다. 정비고의 유압 하체와 변전소 모선도 손질 대상으로 돌본다.
 
-다. 차륜제와 모선제
+다. 바퀴와 모선을 보는 견해
 
-개별 신앙의 갈래는 차륜제와 모선제로 나뉜다. 차륜제는 무거운 바퀴가 굴러가는 한 노선의 생명이 이어간다고 믿는다. 모선제는 희미한 불빛이 남은 역만이 끝까지 살아남는다고 믿는다.
+관행은 두 견해로 갈린다. 한쪽은 무거운 바퀴가 굴러가는 동안 노선의 생활이 이어진다고 여긴다. 다른 쪽은 희미한 불빛이 남은 역만이 끝까지 살아남는다고 여긴다.
 
-### 소비 의례
+### 유통 관행
 
-가. 제단과 제물
+가. 옛 화폐의 쓰임
 
-소비 의례는 의미를 잃은 옛 화폐와 낡은 유통 유물을 제단에 올리는 의식이다. 붕괴 이전의 교환 행위가 신화가 되었다. 카드를 찍고 돈을 넣고 물건을 배급하는 손짓이 기도가 되었다.
+유통 관행은 의미를 잃은 옛 화폐와 낡은 유통 유물을 거점에 모아 두는 일이다. 붕괴 이전의 교환 행위가 관습으로 남았다. 카드를 찍고 돈을 넣고 물건을 배급하는 손짓이 정해진 절차가 되었다.
 
-나. 제물의 종류
+나. 모아 두는 물건
 
-지폐와 동전, 플라스틱 교통 카드가 가장 좋은 제물이다. 지하 부품 경제를 굴리는 축전과 구동부, 센서 거래도 이 계열 안에서는 제사 분배로 읽힌다. 개찰구에 카드를 찍는 동작은 통행 허락과 헌금을 함께 이룬다. HP01 가문의 부품 경매는 다른 곳에서 신성 모독으로 읽힌다. 이 계열 안에서는 정식 의례로 통한다.
+지폐와 동전, 플라스틱 교통 카드가 가장 귀한 물건이다. 지하 부품 경제를 굴리는 축전과 구동부, 센서 거래도 이 계열 안에서는 분배 질서로 읽힌다. 개찰구에 카드를 찍는 동작은 통행 허락 절차다. HP01 가문의 부품 경매는 다른 곳에서는 질서 밖으로 읽힌다. 이 계열 안에서는 인정된 관행으로 통한다.
 
-다. 찍힘제와 개찰제
+다. 물건 값과 통행의 규칙
 
-갈래는 찍힘제와 개찰제로 나뉜다. 찍힘제는 보관함을 잠근 도장이 물건의 값을 정한다고 믿는다. 개찰제는 차단기를 통과하는 순간이 목숨을 이어가는 행위라고 여긴다.
+관행은 두 규칙으로 갈린다. 한쪽은 보관함을 잠근 도장이 물건의 값을 정한다고 여긴다. 다른 쪽은 차단기를 통과하는 순간이 목숨을 이어가는 행위라고 여긴다.
 
-### 구세계 상징 신격화
+### 구세계 상징의 보존
 
-가. 목소리의 신
+가. 안내방송의 자취
 
-구세계 상징 신격화의 신도들은 역 표지와 끊긴 안내방송을 신성한 것으로 받든다.
+구세계 상징을 보존하는 사람들은 역 표지와 끊긴 안내방송을 지켜야 할 것으로 받든다.
 
-나. 잔향과 성소
+나. 잔향과 경계
 
-G25의 센서 모듈과 프로토콜 카드는 목소리가 남긴 잔향이다. 역 표지를 다른 곳으로 옮기면 성소도 그곳으로 통째로 옮겨간다고 믿는다. 표지를 지우는 일은 신의 존재를 지우는 불경으로 간주된다.
+G25의 센서 모듈과 프로토콜 카드는 목소리가 남긴 잔향이다. 역 표지를 다른 곳으로 옮기면 그 자리의 경계도 통째로 옮겨간다고 여긴다. 표지를 지우는 일은 그 자리를 지우는 일로 간주된다.
 
-다. 역명판제와 안내제
+다. 구역을 정하는 두 기준
 
-개별 신앙의 이름은 역명판제와 안내제로 나뉜다. 역명판제는 글자가 흐릿하게 남은 곳까지를 국경으로 여긴다. 안내제는 목소리가 울려 퍼지는 공간 전체를 제단으로 삼는다.
+구역 기준은 두 가지로 나뉜다. 하나는 글자가 흐릿하게 남은 곳까지를 경계로 여긴다. 다른 하나는 목소리가 울려 퍼지는 공간 전체를 관할로 삼는다.
 
-### 유물이 신앙 대상이 되는 규칙
+### 유물이 공동체의 중심이 되는 규칙
 
 가. 다섯 조건
 
-고철 덩어리는 시간이 오래 흘렀다는 이유만으로 성물이 되지 않는다. 기계 숭배와 소비 의례, 상징 신격화 세 축 가운데 하나에 신격화의 연결이 분명해야 한다. 아래 조건을 충족해야 한다.
+고철 덩어리는 시간이 오래 흘렀다는 이유만으로 공동체의 중심이 되지 않는다. 기계 돌봄과 유통 관행, 상징 보존 세 축 가운데 하나에 이어진 뜻이 분명해야 한다. 아래 조건을 충족해야 한다.
 
 1. 서울 재료일 것
-전동차, 변전소, 안내방송, 역 표지, 옛 화폐 중 하나이거나 최소한 그 흔적을 품어야 한다. 로스트 라인의 모듈은 이 재료에 붙을 때에만 성물이다.
+전동차, 변전소, 안내방송, 역 표지, 옛 화폐 중 하나이거나 최소한 그 흔적을 품어야 한다. 로스트 라인의 모듈은 이 재료에 붙을 때에만 중심이 된다.
 2. 산 생업이 그 기능에 기대 있을 것
-조명, 급수, 통행, 경계 근무가 그 유물에 걸려 있어야 한다. 교리는 벽의 낡은 게시판보다, 사람이 일하고 숨 쉬는 대합실과 수문 앞, 붐비는 하역장에서 생긴다.
-3. 재제어가 막혀 신을 대신할 것
-서버가 끊기고 도면이 잠긴 금고까지 막히면, 남은 기계는 해석할 수 없는 암호가 된다. 그 막힘 앞에서 신격화가 시작된다.
+조명, 급수, 통행, 경계 근무가 그 유물에 걸려 있어야 한다. 규칙은 벽의 낡은 게시판보다, 사람이 일하고 숨 쉬는 대합실과 수문 앞, 붐비는 하역장에서 생긴다.
+3. 재제어가 막혀 있을 것
+서버가 끊기고 도면이 잠긴 금고까지 막히면, 남은 기계는 해석할 수 없는 암호가 된다. 그 막힘 앞에서 기체가 공동체의 중심이 된다.
 4. 같은 자리의 생존이 반복될 것
-하나의 모듈에 기대어 세 번 이상 살아남은 공동체만이 그 모듈을 성물이라 부른다. 한 번의 요행은 거래 품목으로 남는다.
+하나의 모듈에 기대어 세 번 이상 살아남은 공동체만이 그 모듈을 중심으로 삼는다. 한 번의 요행은 거래 품목으로 남는다.
 5. 장소 세력이 관할을 주장할 것
-노선과 구, 역 단위로 나뉜 후계 정치체들이 보관과 순례 방식, 금기를 각각 정한다. 왕조와 이를 따르는 봉신 세력은 의례 관할권까지 상속받아 그 권한을 쥔다. 부품을 뜯는 회수 반과 성물을 지키려는 쪽이 봉인 갤러리에서 맞선다.
+노선과 구, 역 단위로 나뉜 후계 정치체들이 보관과 관리 방식, 금기를 각각 정한다. 왕조와 이를 따르는 봉신 세력은 관할권까지 상속받아 그 권한을 쥔다. 부품을 뜯는 회수 반과 유물을 지키려는 쪽이 봉인 갤러리에서 맞선다.
 
-### 신앙 계열별 유물 해석
+### 계열별 유물 해석
 
 가. 세 층위
 
-신앙은 세 층위로 이루어진다. 위에는 신앙 가족(계열)이 있다. 아래에 개별 신앙들이 자리한다. 밑에는 구체적 교리와 교훈이 있다. 이 분열 과정이 서울의 규칙을 새로 편집하는 단위가 된다.
+관습은 세 층위로 이루어진다. 위에는 관습 계열이 있다. 아래에 개별 관습들이 자리한다. 밑에는 구체적 규칙과 교훈이 있다. 이 분열 과정이 서울의 규칙을 새로 편집하는 단위가 된다.
 
-나. 세 가족의 읽기
+나. 세 계열의 읽기
 
-기계 숭배 가족은 낡은 전동차와 변전소, G26의 무거운 구동부를 하나의 신성한 몸으로 읽는다. 소비 의례 가족은 구겨진 화폐와 개찰구 통과, 은밀한 부품 경매를 하나의 제사로 받아들인다. 상징 신격화 가족은 끊긴 안내방송과 바랜 역 표지, G25의 센서 신호를 창조주가 남긴 목소리로 여긴다.
+기계 돌봄 계열은 낡은 전동차와 변전소, G26의 무거운 구동부를 하나의 관리 대상으로 읽는다. 유통 관행 계열은 구겨진 화폐와 개찰구 통과, 은밀한 부품 경매를 하나의 분배 질서로 받아들인다. 상징 보존 계열은 끊긴 안내방송과 바랜 역 표지, G25의 센서 신호를 구세계가 남긴 목소리로 여긴다.
 
 다. 같은 모듈의 다른 해석
 
-G25 축전 모듈은 모선제에 숭고한 숨결이다. 찍힘제에는 값비싼 제물이다. 안내제에는 거룩한 목소리가 머무는 상자다. G26 유압 하체는 차륜제에 다리를 잇는 관절이다. 개찰제에는 함부로 통행하는 자를 벌하는 심판이다.
+G25 축전 모듈은 한 계열에서는 변전 설비의 핵심이다. 다른 계열에서는 값비싼 거래 품목이다. 또 다른 계열에서는 목소리가 머무는 상자다. G26 유압 하체는 한 계열에서 다리를 잇는 관절이다. 다른 계열에서는 함부로 통행하는 자를 막는 장치다.
 
-라. 공개 신앙과 숨은 신앙
+라. 공개 관습과 숨은 관습
 
-공개된 신앙은 지하철역 게시판의 붉은 금기 문구로 나타난다. 숨은 신앙은 같은 문구를 다른 교훈으로 뒤집어 읽는다. 한 봉신 가문이 모선제의 변전 제단과 역명판제의 순례를 같은 갤러리에 겹쳐 두면 성물은 하나다. 관할은 둘로 나뉜다.
+공개된 관습은 지하철역 게시판의 붉은 금기 문구로 나타난다. 숨은 관습은 같은 문구를 다른 교훈으로 뒤집어 읽는다. 한 봉신 가문이 변전 시설 관리와 역 표지 관리를 같은 갤러리에 겹쳐 두면 대상은 하나다. 관할은 둘로 나뉜다.
 
 마. 라인 수의 고정
 
-기계 숭배·소비 의례·구세계 상징 신격화의 신도들은 남은 기체 부품을 서로 다른 의례에 쓴다.
+기계 돌봄·유통 관행·구세계 상징 보존의 사람들은 남은 기체 부품을 서로 다른 관행에 쓴다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Offices-and-Ranks', 'Offices and Ranks', '관직', 'offices', 0, '## Origins of the Titles
 

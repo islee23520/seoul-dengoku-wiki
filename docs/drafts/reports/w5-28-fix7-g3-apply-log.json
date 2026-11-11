@@ -1,0 +1,484 @@
+{
+ "generatedBy": "scripts/pages/fix5-origin-edit.mjs",
+ "rulesPath": "docs/fix7-g3-rules.json",
+ "purpose": "W5-28 fix7 G3 — Lost-Technology-Lineage(염출 기술·유물 신화 절 전수)의 비Arc 종교 서술을 운영 표현으로 최소 치환하고 Hostile-Group-G10의 광신도/Zealot 어휘를 중립 역할명으로 바꾼다. 바이블 §1 규칙9(아크가 이전의 모든 종교를 대체)·과업 G3 지시.",
+ "policy": "정확 문장 치환: 각 초안 파일에서 old가 정확히 expect회 나올 때만 전부 치환한다. 위반 시 exit 21, 아무 파일도 쓰지 않는다. 앵커·제목 수·행동 사실은 보존하고 종교 프레임만 운영 표현으로 바꾼다. 기저 트리 81831c69dd4007c26d8f921a2b515d8f14de3fea.",
+ "counts": {
+  "rules": 94,
+  "files": 4,
+  "replacements": 154,
+  "failed": 0
+ },
+ "perRule": [
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Lost-Technology-Lineage.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Group-G10.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Group-G10.ko.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Group-G10.ko.md",
+   "occurrences": 10,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Group-G10.ko.md",
+   "occurrences": 12,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Group-G10.ko.md",
+   "occurrences": 11,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Group-G10.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Group-G10.en.md",
+   "occurrences": 1,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Group-G10.en.md",
+   "occurrences": 10,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Group-G10.en.md",
+   "occurrences": 12,
+   "result": "applied"
+  },
+  {
+   "file": "Hostile-Group-G10.en.md",
+   "occurrences": 11,
+   "result": "applied"
+  }
+ ]
+}

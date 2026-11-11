@@ -149,97 +149,97 @@ These armed recovery squads competed in performance by occupying restart trigger
 - [The Scenario Timeline](/wiki/Scenario-Timeline/)
 - [Horizon Forbidden West](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
 
-## Improvisation Tech and the Relic Myth
+## Improvisation Tech and the Keeping of Old Machines
 
-A. Relic worship and improvisation technology
+A. Keeping the wreckage and improvisation technology
 
-In later Seoul an old lost tech did not become a relic merely because years had passed. The divinization of wreckage was a solemn rite worshipping as god the old facilities that had done their work. Improvisation tech showed its face only within this frame of deifying machines. The axes added atop it were three: machine worship, consumption rites, and the deification of old-world symbols. The chief materials offered in the rites were rolling stock, old substations, severed announcements, faded station marks, and old currency.
+In later Seoul an old lost tech did not become a relic merely because years had passed. People gathered around the old facilities that had done their work and tended them together. Improvisation tech showed its face only within this frame of tending the machines. The axes added atop it were three: tending the machines, circulation practices, and the keeping of old-world symbols. The chief things tended were rolling stock, old substations, severed announcements, faded station marks, and old currency.
 
 B. Struggles among successor polities
 
-The glory of the old state had now receded into legend. Over that vacancy the local successor polities fought fiercely over the old wreckage. Regional division sprouted first not in grand ideology but in gu and station and route units, and dynasties and vassal powers inherited in turn the jurisdiction of these rites.
+The glory of the old state had now receded into legend. Over that vacancy the local successor polities fought fiercely over the old wreckage. Regional division sprouted first not in grand ideology but in gu and station and route units, and dynasties and vassal powers inherited in turn their jurisdiction.
 
 C. Fixed roles of the two lines
 
-The skeleton of the two lost lines was not changed carelessly. The G25 Lantern Ant firmly remained the line charged with search, and the G26 Iron Dinosaur the line mending heavy plant. Faith lodging in them did not change those roles. They merely read different gods into the same chassis.
+The skeleton of the two lost lines was not changed carelessly. The G25 Lantern Ant firmly remained the line charged with search, and the G26 Iron Dinosaur the line mending heavy plant. Whatever meaning people attached to them did not change those roles. Communities merely read the same chassis differently.
 
-### Machine Worship
+### Tending the Machines
 
-A. Sacred bodies
+A. Keeping the great chassis
 
-Machine worship enshrined the huge bodies of depots and substations as sacred flesh. Even the act of stripping and recovering something was held a devout ritual, and pilgrimage meant no more than circling the dark maintenance shed with care. Raising a machine back to life was sometimes the great occasion on which a faction split.
+People kept the huge bodies of depots and substations as the centers of their communities. Even the act of stripping and recovering something was carried out by a set procedure, and the maintenance round meant no more than circling the dark maintenance shed with care. Raising a machine back to life was sometimes the great occasion on which a group split.
 
-B. Reading relics
+B. Looking after the parts
 
-Followers of machine worship venerate old train bodies and bogies. They also offer gifts at hydraulic assemblies in workshops and busbars in substations.
+People look after old train bodies and bogies as their communities' implements. They also tend the hydraulic assemblies in workshops and the busbars in substations.
 
-C. Wheel and busbar rites
+C. Two views of wheels and busbars
 
-The branches of the individual faiths divided into the Wheel Rite and the Busbar Rite. The Wheel Rite believed firmly that as long as the heavy wheels rolled, that route's life continued. The Busbar Rite believed only the stations where a faint light remained survived to the end.
+The practice divided into two views. One side held firmly that as long as the heavy wheels rolled, that route's life continued. The other held that only the stations where a faint light remained survived to the end.
 
-### Consumption Rites
+### Circulation Practices
 
-A. Altars and offerings
+A. The use of old currency
 
-Consumption rites were the ritual of setting on the altar old currency and worn circulation relics that had lost their meaning. The exchange acts common before the collapse transformed into myth. Card-tapping, coin-inserting, ration-distributing gestures, plain hand movements, now became desperate prayer.
+Circulation practices were the custom of gathering old currency and worn circulation relics that had lost their meaning at the strongholds. The exchange acts common before the collapse remained as custom. Card-tapping, coin-inserting, ration-distributing gestures, plain hand movements, now became set procedure.
 
-B. Kinds of offerings
+B. What is gathered
 
-Banknotes, rolling coins, and plastic transit cards were the finest offerings. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just ritual distribution. The tap of a card at a gate was both a request for passage and a tribute offered to god. The HP01 house's auctioning of parts is read elsewhere as blasphemous desecration; within this lineage it passes as a formal rite.
+Banknotes, rolling coins, and plastic transit cards were the most prized things. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just distribution of goods. The tap of a card at a gate was a request for passage. The HP01 house's auctioning of parts is read elsewhere as a breach of the order; within this lineage it passes as an accepted practice.
 
-C. Stamp and gate rites
+C. Two rules of value and passage
 
-The branches of the individual faiths divided into the Stamp Rite and the Gate Rite. The Stamp Rite believed the stamp fixed in the locked box set the value of things. The Gate Rite held that the very instant of passing the breaker was the act that carried on a momentary life.
+The practice divided into two rules. One side held that the stamp fixed in the locked box set the value of things. The other held that the very instant of passing the breaker was the act that carried on a momentary life.
 
-### The Deification of Old-World Symbols
+### Keeping Old-World Symbols
 
-A. God of the voice
+A. Traces of the voice
 
-Followers of the old-world symbol cult venerate station signs and interrupted announcements.
+The people who keep old-world symbols hold station signs and interrupted announcements as things to be preserved.
 
-B. Echo and sanctuary
+B. Echo and boundary
 
-The G25's sensor modules and protocol cards were the faint echoes that voice had left. If someone moved a station mark elsewhere, they believed the sanctuary itself moved whole to that place. To erase a mark wantonly was therefore held the impiety of erasing the god's very existence.
+The G25's sensor modules and protocol cards were the faint echoes that voice had left. If someone moved a station mark elsewhere, they held that the boundary itself moved whole to that place. To erase a mark wantonly was therefore held the same as erasing the place itself.
 
-C. Nameplate and announcement rites
+C. Two territory standards
 
-The names of the individual faiths divided into the Nameplate Rite and the Announcement Rite. The Nameplate Rite took even the places where letters faintly remained as intact national borders. The Announcement Rite made the whole space where the voice gently rang a sacred altar.
+The territory standards divided into two. One took even the places where letters faintly remained as intact boundaries. The other made the whole space where the voice gently rang one jurisdiction.
 
-### The Rules by Which a Relic Became an Object of Faith
+### The Rules by Which a Relic Became a Community's Center
 
 A. Five conditions
 
-A mass of scrap was not enshrined merely because time had long passed. One of the three axes (machine worship, consumption rites, symbol deification) had to be clearly knotted into the chain of deification, and the conditions below carefully met.
+A mass of scrap was not kept merely because time had long passed. One of the three axes (tending the machines, circulation practices, keeping old-world symbols) had to be clearly knotted into it, and the conditions below carefully met.
 
 1. It had to be Seoul material
-Rolling stock, a substation, an announcement, a station mark, or old currency, or at least bearing their traces. The lost line's modules were acknowledged as relics only when firmly attached to this core material.
+Rolling stock, a substation, an announcement, a station mark, or old currency, or at least bearing their traces. The lost line's modules became the center only when firmly attached to this core material.
 2. A living livelihood had to depend on its function
-Lighting that brightened the dark, the water of life, safe passage, and watch duty had to hang deep on that relic. Doctrine did not fall off an old notice board on the wall. It flowered hot in the concourse where people breathed and sweated, before the sluices, in the crowded unloading yards.
-3. Re-control had to be blocked so that it stood in for god
-With the servers cut and even the vault holding the drawings firmly shut, the remaining machines became mere masses of cipher with no way of interpretation. It was before this great wall of interpretation that people's desperate deification sprouted.
+Lighting that brightened the dark, the water supply, safe passage, and watch duty had to hang deep on that relic. Rules did not fall off an old notice board on the wall. They flowered hot in the concourse where people breathed and sweated, before the sluices, in the crowded unloading yards.
+3. Re-control had to be blocked
+With the servers cut and even the vault holding the drawings firmly shut, the remaining machines became mere masses of cipher with no way of interpretation. It was before this great wall of interpretation that a chassis became the center of its community.
 4. Survival in the same place had to repeat
-Only a community that had clung to one module and stubbornly survived three times or more called that mass of iron a relic. A single lucky chance remained merely a useful trading item.
+Only a community that had clung to one module and stubbornly survived three times or more took that mass of iron as its center. A single lucky chance remained merely a useful trading item.
 5. A place-power had to claim jurisdiction
-The successor polities split by route, gu, and station divided custody and pilgrimage manner and strict taboo each in their own way. Dynasties and the vassal powers following them inherited even the jurisdiction of the rites and hardened their power. The recovery squads stripping parts without restraint and the faiths defending the old relics to the end collided roughly inside these dark sealed galleries.
+The successor polities split by route, gu, and station divided custody and upkeep manner and strict taboo each in their own way. Dynasties and the vassal powers following them inherited even the jurisdiction and hardened their power. The recovery squads stripping parts without restraint and the keepers defending the old relics to the end collided roughly inside these dark sealed galleries.
 
-### Relic Interpretation by Faith Lineage
+### Relic Interpretation by Lineage
 
 A. Three tiers
 
-Faith was firmly stacked in three strata. At the top stood the great families of faith (lineages); beneath them sat the differing individual faiths; at the very bottom waited concrete doctrines and exacting lessons. This endlessly splitting process of division was itself the unit that edited Seoul's rules anew.
+The customs were firmly stacked in three strata. At the top stood the great lineages of custom; beneath them sat the differing individual customs; at the very bottom waited concrete rules and exacting lessons. This endlessly splitting process of division was itself the unit that edited Seoul's rules anew.
 
-B. Reading the three families
+B. How the three lineages read
 
-The machine-worship family read the old rolling stock, the substations, and even the G26's heavy drives together as one sacred body. The consumption-rite family accepted crumpled currency, gate passage, and even secret parts auctions as one solemn rite. The symbol-deification family took the severed announcements, the faded station marks, and the sharp sensor signals of the G25 as a single line of voice the creator had left.
+The machine-tending lineage read the old rolling stock, the substations, and even the G26's heavy drives together as one body of care. The circulation lineage accepted crumpled currency, gate passage, and even secret parts auctions as one order of distribution. The symbol-keeping lineage took the severed announcements, the faded station marks, and the sharp sensor signals of the G25 as a single line of voice the old world had left.
 
 C. Different readings of the same module
 
-The very same G25 charging module was a sublime breath to the Busbar Rite, a costly offering to the Stamp Rite, and the box where the holy voice dwelt to the Announcement Rite. The same G26 hydraulic underbody was the joint bridging legs to the Wheel Rite but a fearsome judgment punishing those who passed without right to the Gate Rite.
+The very same G25 charging module was the core of the substation equipment to one lineage, a costly trading good to another, and the box where the voice dwelt to a third. The same G26 hydraulic underbody was the joint bridging legs to one lineage and the device barring those who passed without right to another.
 
-D. Public and hidden faiths
+D. Public and hidden customs
 
-The public faith showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden faith flipped the very same phrases into entirely different secret lessons. If one vassal house quietly overlaid the Busbar Rite's substation altar and the Nameplate Rite's pilgrimage inside the same gallery, then though the relic before the eyes was one, the jurisdiction governing it split in two.
+The public custom showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden custom flipped the very same phrases into entirely different secret lessons. If one vassal house quietly overlaid the keeping of the substation equipment and the keeping of the station marks inside the same gallery, then though the object before the eyes was one, the jurisdiction governing it split in two.
 
 E. Fixed number of lines
 
-Followers of machine worship, consumption rites, and old-world symbol worship use surviving machine parts in different rites.
+The people of machine tending, circulation practice, and old-world symbol keeping use surviving machine parts in different ways.

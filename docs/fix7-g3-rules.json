@@ -1,0 +1,759 @@
+{
+ "generatedBy": "scripts/pages/fix5-origin-edit.mjs (reused, --rules docs/fix7-g3-rules.json)",
+ "purpose": "W5-28 fix7 G3 — Lost-Technology-Lineage(염출 기술·유물 신화 절 전수)의 비Arc 종교 서술을 운영 표현으로 최소 치환하고 Hostile-Group-G10의 광신도/Zealot 어휘를 중립 역할명으로 바꾼다. 바이블 §1 규칙9(아크가 이전의 모든 종교를 대체)·과업 G3 지시.",
+ "policy": "정확 문장 치환: 각 초안 파일에서 old가 정확히 expect회 나올 때만 전부 치환한다. 위반 시 exit 21, 아무 파일도 쓰지 않는다. 앵커·제목 수·행동 사실은 보존하고 종교 프레임만 운영 표현으로 바꾼다. 기저 트리 81831c69dd4007c26d8f921a2b515d8f14de3fea.",
+ "rules": [
+  {
+   "id": "LKO-01",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "## 염출 기술·유물 신화",
+   "new": "## 염출 기술과 옛 기계의 돌봄",
+   "expect": 1,
+   "reason": "절 제목의 신화 프레임 제거"
+  },
+  {
+   "id": "LKO-02",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "가. 잔해 신앙화와 염출 기술",
+   "new": "가. 잔해 돌봄과 염출 기술",
+   "expect": 1,
+   "reason": "소제목 종교 어휘 → 운영 표현"
+  },
+  {
+   "id": "LKO-03",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "잔해 신앙화는 기능을 다한 옛 시설을 신으로 추앙하는 의례다. 염출 기술은 잔해 신앙화의 틀 안에서 모습을 드러낸다. 축은 기계 숭배와 소비 의례, 구세계 상징 신격화 세 가지다. 의례에 바치는 주된 재료는 전동차와 낡은 변전소, 끊긴 안내방송, 색이 바랜 역 표지, 옛 화폐다.",
+   "new": "사람들은 기능을 다한 옛 시설을 중심으로 모여 함께 돌본다. 염출 기술은 이 돌봄의 틀 안에서 모습을 드러낸다. 축은 기계 돌봄과 유통 관행, 구세계 상징 보존 세 가지다. 돌보는 주된 대상은 전동차와 낡은 변전소, 끊긴 안내방송, 색이 바랜 역 표지, 옛 화폐다.",
+   "expect": 1,
+   "reason": "신앙화 서술 → 공동체 돌봄 서술(재료·축 구조 유지)"
+  },
+  {
+   "id": "LKO-04",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "왕조와 봉신 세력은 의례의 관할권을 차례로 상속받는다.",
+   "new": "왕조와 봉신 세력은 관할권을 차례로 상속받는다.",
+   "expect": 1,
+   "reason": "의례 수식어만 제거"
+  },
+  {
+   "id": "LKO-05",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "신앙이 깃들어도 역할은 달라지지 않는다. 같은 기체를 서로 다른 신으로 읽는다.",
+   "new": "어떤 뜻을 붙이든 역할은 달라지지 않는다. 같은 기체를 공동체마다 다르게 본다.",
+   "expect": 1,
+   "reason": "신앙·신 해석 → 해석 다양성 서술"
+  },
+  {
+   "id": "LKO-06",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "### 기계 숭배",
+   "new": "### 기계 돌봄",
+   "expect": 1,
+   "reason": "종교 명칭 → 운영 명칭"
+  },
+  {
+   "id": "LKO-07",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "가. 거룩한 신체",
+   "new": "가. 큰 기체를 지키는 자리",
+   "expect": 1,
+   "reason": "소제목 성직 어휘 제거"
+  },
+  {
+   "id": "LKO-08",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "기계 숭배는 차량기지와 변전소의 거대한 몸집을 거룩한 신체로 모신다. 회수하는 일도 경건한 의식으로 여긴다. 순례는 어두운 정비고를 한 바퀴 도는 행위다. 기계를 다시 살리는 재기동은 분파가 쪼개지는 계기가 되기도 한다.",
+   "new": "사람들은 차량기지와 변전소의 거대한 기체를 공동체의 중심으로 지킨다. 회수하는 일도 정해진 절차로 치른다. 정비 순회는 어두운 정비고를 한 바퀴 도는 일이다. 기계를 다시 살리는 재기동은 공동체가 쪼개지는 계기가 되기도 한다.",
+   "expect": 1,
+   "reason": "숭배·경건·순례·분파 → 돌봄·절차·순회·공동체 분열(행위 보존)"
+  },
+  {
+   "id": "LKO-09",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "나. 성물의 읽기",
+   "new": "나. 기체를 돌보는 일",
+   "expect": 1,
+   "reason": "소제목 성물 제거"
+  },
+  {
+   "id": "LKO-10",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "기계 숭배의 신도들은 전동차의 차체와 낡은 대차를 거룩한 몸으로 여긴다. 정비고의 유압 하체와 변전소 모선에도 제물을 바친다.",
+   "new": "사람들은 전동차의 차체와 낡은 대차를 공동체의 기물로 여긴다. 정비고의 유압 하체와 변전소 모선도 손질 대상으로 돌본다.",
+   "expect": 1,
+   "reason": "신도·거룩한 몸·제물 → 공동체 기물·손질 대상"
+  },
+  {
+   "id": "LKO-11",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "다. 차륜제와 모선제",
+   "new": "다. 바퀴와 모선을 보는 견해",
+   "expect": 1,
+   "reason": "교파명 소제거 → 견해 표현"
+  },
+  {
+   "id": "LKO-12",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "개별 신앙의 갈래는 차륜제와 모선제로 나뉜다. 차륜제는 무거운 바퀴가 굴러가는 한 노선의 생명이 이어간다고 믿는다. 모선제는 희미한 불빛이 남은 역만이 끝까지 살아남는다고 믿는다.",
+   "new": "관행은 두 견해로 갈린다. 한쪽은 무거운 바퀴가 굴러가는 동안 노선의 생활이 이어진다고 여긴다. 다른 쪽은 희미한 불빛이 남은 역만이 끝까지 살아남는다고 여긴다.",
+   "expect": 1,
+   "reason": "교파명 제거, 견해 내용 보존(믿는다→여긴다)"
+  },
+  {
+   "id": "LKO-13",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "### 소비 의례",
+   "new": "### 유통 관행",
+   "expect": 1,
+   "reason": "종교 명칭 → 운영 명칭"
+  },
+  {
+   "id": "LKO-14",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "가. 제단과 제물",
+   "new": "가. 옛 화폐의 쓰임",
+   "expect": 1,
+   "reason": "소제목 제단·제물 제거"
+  },
+  {
+   "id": "LKO-15",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "소비 의례는 의미를 잃은 옛 화폐와 낡은 유통 유물을 제단에 올리는 의식이다. 붕괴 이전의 교환 행위가 신화가 되었다. 카드를 찍고 돈을 넣고 물건을 배급하는 손짓이 기도가 되었다.",
+   "new": "유통 관행은 의미를 잃은 옛 화폐와 낡은 유통 유물을 거점에 모아 두는 일이다. 붕괴 이전의 교환 행위가 관습으로 남았다. 카드를 찍고 돈을 넣고 물건을 배급하는 손짓이 정해진 절차가 되었다.",
+   "expect": 1,
+   "reason": "제단·의식·신화·기도 → 거점 보관·관습·절차"
+  },
+  {
+   "id": "LKO-16",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "나. 제물의 종류",
+   "new": "나. 모아 두는 물건",
+   "expect": 1,
+   "reason": "소제목 제물 제거"
+  },
+  {
+   "id": "LKO-17",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "지폐와 동전, 플라스틱 교통 카드가 가장 좋은 제물이다. 지하 부품 경제를 굴리는 축전과 구동부, 센서 거래도 이 계열 안에서는 제사 분배로 읽힌다. 개찰구에 카드를 찍는 동작은 통행 허락과 헌금을 함께 이룬다. HP01 가문의 부품 경매는 다른 곳에서 신성 모독으로 읽힌다. 이 계열 안에서는 정식 의례로 통한다.",
+   "new": "지폐와 동전, 플라스틱 교통 카드가 가장 귀한 물건이다. 지하 부품 경제를 굴리는 축전과 구동부, 센서 거래도 이 계열 안에서는 분배 질서로 읽힌다. 개찰구에 카드를 찍는 동작은 통행 허락 절차다. HP01 가문의 부품 경매는 다른 곳에서는 질서 밖으로 읽힌다. 이 계열 안에서는 인정된 관행으로 통한다.",
+   "expect": 1,
+   "reason": "제물·제사·헌금·신성 모독·의례 → 귀한 물건·분배 질서·절차·관행(사실 보존)"
+  },
+  {
+   "id": "LKO-18",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "다. 찍힘제와 개찰제",
+   "new": "다. 물건 값과 통행의 규칙",
+   "expect": 1,
+   "reason": "교파명 소제거 → 규칙 표현"
+  },
+  {
+   "id": "LKO-19",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "갈래는 찍힘제와 개찰제로 나뉜다. 찍힘제는 보관함을 잠근 도장이 물건의 값을 정한다고 믿는다. 개찰제는 차단기를 통과하는 순간이 목숨을 이어가는 행위라고 여긴다.",
+   "new": "관행은 두 규칙으로 갈린다. 한쪽은 보관함을 잠근 도장이 물건의 값을 정한다고 여긴다. 다른 쪽은 차단기를 통과하는 순간이 목숨을 이어가는 행위라고 여긴다.",
+   "expect": 1,
+   "reason": "교파명 제거, 규칙 내용 보존"
+  },
+  {
+   "id": "LKO-20",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "### 구세계 상징 신격화",
+   "new": "### 구세계 상징의 보존",
+   "expect": 1,
+   "reason": "신격화 → 보존"
+  },
+  {
+   "id": "LKO-21",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "가. 목소리의 신",
+   "new": "가. 안내방송의 자취",
+   "expect": 1,
+   "reason": "신 → 안내방송 자취"
+  },
+  {
+   "id": "LKO-22",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "구세계 상징 신격화의 신도들은 역 표지와 끊긴 안내방송을 신성한 것으로 받든다.",
+   "new": "구세계 상징을 보존하는 사람들은 역 표지와 끊긴 안내방송을 지켜야 할 것으로 받든다.",
+   "expect": 1,
+   "reason": "신도·신성 → 보존하는 사람·지켜야 할 것"
+  },
+  {
+   "id": "LKO-23",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "나. 잔향과 성소",
+   "new": "나. 잔향과 경계",
+   "expect": 1,
+   "reason": "성소 → 경계"
+  },
+  {
+   "id": "LKO-24",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "G25의 센서 모듈과 프로토콜 카드는 목소리가 남긴 잔향이다. 역 표지를 다른 곳으로 옮기면 성소도 그곳으로 통째로 옮겨간다고 믿는다. 표지를 지우는 일은 신의 존재를 지우는 불경으로 간주된다.",
+   "new": "G25의 센서 모듈과 프로토콜 카드는 목소리가 남긴 잔향이다. 역 표지를 다른 곳으로 옮기면 그 자리의 경계도 통째로 옮겨간다고 여긴다. 표지를 지우는 일은 그 자리를 지우는 일로 간주된다.",
+   "expect": 1,
+   "reason": "성소·신·불경 → 경계·자리(표지 이동·삭제 규범 보존)"
+  },
+  {
+   "id": "LKO-25",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "다. 역명판제와 안내제",
+   "new": "다. 구역을 정하는 두 기준",
+   "expect": 1,
+   "reason": "교파명 소제거 → 구역 기준"
+  },
+  {
+   "id": "LKO-26",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "개별 신앙의 이름은 역명판제와 안내제로 나뉜다. 역명판제는 글자가 흐릿하게 남은 곳까지를 국경으로 여긴다. 안내제는 목소리가 울려 퍼지는 공간 전체를 제단으로 삼는다.",
+   "new": "구역 기준은 두 가지로 나뉜다. 하나는 글자가 흐릿하게 남은 곳까지를 경계로 여긴다. 다른 하나는 목소리가 울려 퍼지는 공간 전체를 관할로 삼는다.",
+   "expect": 1,
+   "reason": "교파명·국경·제단 → 두 기준·경계·관할"
+  },
+  {
+   "id": "LKO-27",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "### 유물이 신앙 대상이 되는 규칙",
+   "new": "### 유물이 공동체의 중심이 되는 규칙",
+   "expect": 1,
+   "reason": "신앙 대상 → 공동체의 중심"
+  },
+  {
+   "id": "LKO-28",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "고철 덩어리는 시간이 오래 흘렀다는 이유만으로 성물이 되지 않는다. 기계 숭배와 소비 의례, 상징 신격화 세 축 가운데 하나에 신격화의 연결이 분명해야 한다. 아래 조건을 충족해야 한다.",
+   "new": "고철 덩어리는 시간이 오래 흘렀다는 이유만으로 공동체의 중심이 되지 않는다. 기계 돌봄과 유통 관행, 상징 보존 세 축 가운데 하나에 이어진 뜻이 분명해야 한다. 아래 조건을 충족해야 한다.",
+   "expect": 1,
+   "reason": "성물·신격화 → 공동체의 중심(다섯 조건 구조 보존)"
+  },
+  {
+   "id": "LKO-29",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "로스트 라인의 모듈은 이 재료에 붙을 때에만 성물이다.",
+   "new": "로스트 라인의 모듈은 이 재료에 붙을 때에만 중심이 된다.",
+   "expect": 1,
+   "reason": "성물 → 중심"
+  },
+  {
+   "id": "LKO-30",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "교리는 벽의 낡은 게시판보다, 사람이 일하고 숨 쉬는 대합실과 수문 앞, 붐비는 하역장에서 생긴다.",
+   "new": "규칙은 벽의 낡은 게시판보다, 사람이 일하고 숨 쉬는 대합실과 수문 앞, 붐비는 하역장에서 생긴다.",
+   "expect": 1,
+   "reason": "교리 → 규칙"
+  },
+  {
+   "id": "LKO-31",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "3. 재제어가 막혀 신을 대신할 것",
+   "new": "3. 재제어가 막혀 있을 것",
+   "expect": 1,
+   "reason": "조건 제목의 신 대신 → 중립"
+  },
+  {
+   "id": "LKO-32",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "서버가 끊기고 도면이 잠긴 금고까지 막히면, 남은 기계는 해석할 수 없는 암호가 된다. 그 막힘 앞에서 신격화가 시작된다.",
+   "new": "서버가 끊기고 도면이 잠긴 금고까지 막히면, 남은 기계는 해석할 수 없는 암호가 된다. 그 막힘 앞에서 기체가 공동체의 중심이 된다.",
+   "expect": 1,
+   "reason": "신격화 시작 → 공동체 중심 형성"
+  },
+  {
+   "id": "LKO-33",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "하나의 모듈에 기대어 세 번 이상 살아남은 공동체만이 그 모듈을 성물이라 부른다. 한 번의 요행은 거래 품목으로 남는다.",
+   "new": "하나의 모듈에 기대어 세 번 이상 살아남은 공동체만이 그 모듈을 중심으로 삼는다. 한 번의 요행은 거래 품목으로 남는다.",
+   "expect": 1,
+   "reason": "성물 → 중심"
+  },
+  {
+   "id": "LKO-34",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "노선과 구, 역 단위로 나뉜 후계 정치체들이 보관과 순례 방식, 금기를 각각 정한다. 왕조와 이를 따르는 봉신 세력은 의례 관할권까지 상속받아 그 권한을 쥔다. 부품을 뜯는 회수 반과 성물을 지키려는 쪽이 봉인 갤러리에서 맞선다.",
+   "new": "노선과 구, 역 단위로 나뉜 후계 정치체들이 보관과 관리 방식, 금기를 각각 정한다. 왕조와 이를 따르는 봉신 세력은 관할권까지 상속받아 그 권한을 쥔다. 부품을 뜯는 회수 반과 유물을 지키려는 쪽이 봉인 갤러리에서 맞선다.",
+   "expect": 1,
+   "reason": "순례·의례 관할권·성물 → 관리·관할권·유물"
+  },
+  {
+   "id": "LKO-35",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "### 신앙 계열별 유물 해석",
+   "new": "### 계열별 유물 해석",
+   "expect": 1,
+   "reason": "신앙 계열 → 계열"
+  },
+  {
+   "id": "LKO-36",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "신앙은 세 층위로 이루어진다. 위에는 신앙 가족(계열)이 있다. 아래에 개별 신앙들이 자리한다. 밑에는 구체적 교리와 교훈이 있다. 이 분열 과정이 서울의 규칙을 새로 편집하는 단위가 된다.",
+   "new": "관습은 세 층위로 이루어진다. 위에는 관습 계열이 있다. 아래에 개별 관습들이 자리한다. 밑에는 구체적 규칙과 교훈이 있다. 이 분열 과정이 서울의 규칙을 새로 편집하는 단위가 된다.",
+   "expect": 1,
+   "reason": "신앙 3층위 → 관습 3층위(구조 보존)"
+  },
+  {
+   "id": "LKO-37",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "나. 세 가족의 읽기",
+   "new": "나. 세 계열의 읽기",
+   "expect": 1,
+   "reason": "가족 → 계열"
+  },
+  {
+   "id": "LKO-38",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "기계 숭배 가족은 낡은 전동차와 변전소, G26의 무거운 구동부를 하나의 신성한 몸으로 읽는다. 소비 의례 가족은 구겨진 화폐와 개찰구 통과, 은밀한 부품 경매를 하나의 제사로 받아들인다. 상징 신격화 가족은 끊긴 안내방송과 바랜 역 표지, G25의 센서 신호를 창조주가 남긴 목소리로 여긴다.",
+   "new": "기계 돌봄 계열은 낡은 전동차와 변전소, G26의 무거운 구동부를 하나의 관리 대상으로 읽는다. 유통 관행 계열은 구겨진 화폐와 개찰구 통과, 은밀한 부품 경매를 하나의 분배 질서로 받아들인다. 상징 보존 계열은 끊긴 안내방송과 바랜 역 표지, G25의 센서 신호를 구세계가 남긴 목소리로 여긴다.",
+   "expect": 1,
+   "reason": "세 가족의 종교 해석 → 세 계열의 운영 해석(창조주→구세계)"
+  },
+  {
+   "id": "LKO-39",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "G25 축전 모듈은 모선제에 숭고한 숨결이다. 찍힘제에는 값비싼 제물이다. 안내제에는 거룩한 목소리가 머무는 상자다. G26 유압 하체는 차륜제에 다리를 잇는 관절이다. 개찰제에는 함부로 통행하는 자를 벌하는 심판이다.",
+   "new": "G25 축전 모듈은 한 계열에서는 변전 설비의 핵심이다. 다른 계열에서는 값비싼 거래 품목이다. 또 다른 계열에서는 목소리가 머무는 상자다. G26 유압 하체는 한 계열에서 다리를 잇는 관절이다. 다른 계열에서는 함부로 통행하는 자를 막는 장치다.",
+   "expect": 1,
+   "reason": "교파별 성물 해석 → 계열별 기능 해석"
+  },
+  {
+   "id": "LKO-40",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "라. 공개 신앙과 숨은 신앙",
+   "new": "라. 공개 관습과 숨은 관습",
+   "expect": 1,
+   "reason": "신앙 → 관습"
+  },
+  {
+   "id": "LKO-41",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "공개된 신앙은 지하철역 게시판의 붉은 금기 문구로 나타난다. 숨은 신앙은 같은 문구를 다른 교훈으로 뒤집어 읽는다. 한 봉신 가문이 모선제의 변전 제단과 역명판제의 순례를 같은 갤러리에 겹쳐 두면 성물은 하나다. 관할은 둘로 나뉜다.",
+   "new": "공개된 관습은 지하철역 게시판의 붉은 금기 문구로 나타난다. 숨은 관습은 같은 문구를 다른 교훈으로 뒤집어 읽는다. 한 봉신 가문이 변전 시설 관리와 역 표지 관리를 같은 갤러리에 겹쳐 두면 대상은 하나다. 관할은 둘로 나뉜다.",
+   "expect": 1,
+   "reason": "공개/숨은 신앙 → 관습(이중 관할 사실 보존)"
+  },
+  {
+   "id": "LKO-42",
+   "file": "Lost-Technology-Lineage.ko.md",
+   "old": "기계 숭배·소비 의례·구세계 상징 신격화의 신도들은 남은 기체 부품을 서로 다른 의례에 쓴다.",
+   "new": "기계 돌봄·유통 관행·구세계 상징 보존의 사람들은 남은 기체 부품을 서로 다른 관행에 쓴다.",
+   "expect": 1,
+   "reason": "신도·의례 → 사람·관행"
+  },
+  {
+   "id": "LEN-01",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "## Improvisation Tech and the Relic Myth",
+   "new": "## Improvisation Tech and the Keeping of Old Machines",
+   "expect": 1,
+   "reason": "section title"
+  },
+  {
+   "id": "LEN-02",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "A. Relic worship and improvisation technology",
+   "new": "A. Keeping the wreckage and improvisation technology",
+   "expect": 1,
+   "reason": "subtitle"
+  },
+  {
+   "id": "LEN-03",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "The divinization of wreckage was a solemn rite worshipping as god the old facilities that had done their work. Improvisation tech showed its face only within this frame of deifying machines. The axes added atop it were three: machine worship, consumption rites, and the deification of old-world symbols. The chief materials offered in the rites were rolling stock, old substations, severed announcements, faded station marks, and old currency.",
+   "new": "People gathered around the old facilities that had done their work and tended them together. Improvisation tech showed its face only within this frame of tending the machines. The axes added atop it were three: tending the machines, circulation practices, and the keeping of old-world symbols. The chief things tended were rolling stock, old substations, severed announcements, faded station marks, and old currency.",
+   "expect": 1,
+   "reason": "deification rite -> communal tending"
+  },
+  {
+   "id": "LEN-04",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "and dynasties and vassal powers inherited in turn the jurisdiction of these rites.",
+   "new": "and dynasties and vassal powers inherited in turn their jurisdiction.",
+   "expect": 1,
+   "reason": "rite jurisdiction -> jurisdiction"
+  },
+  {
+   "id": "LEN-05",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "Faith lodging in them did not change those roles. They merely read different gods into the same chassis.",
+   "new": "Whatever meaning people attached to them did not change those roles. Communities merely read the same chassis differently.",
+   "expect": 1,
+   "reason": "faith/gods -> meaning/communities"
+  },
+  {
+   "id": "LEN-06",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "### Machine Worship",
+   "new": "### Tending the Machines",
+   "expect": 1,
+   "reason": "heading"
+  },
+  {
+   "id": "LEN-07",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "A. Sacred bodies",
+   "new": "A. Keeping the great chassis",
+   "expect": 1,
+   "reason": "subtitle"
+  },
+  {
+   "id": "LEN-08",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "Machine worship enshrined the huge bodies of depots and substations as sacred flesh. Even the act of stripping and recovering something was held a devout ritual, and pilgrimage meant no more than circling the dark maintenance shed with care. Raising a machine back to life was sometimes the great occasion on which a faction split.",
+   "new": "People kept the huge bodies of depots and substations as the centers of their communities. Even the act of stripping and recovering something was carried out by a set procedure, and the maintenance round meant no more than circling the dark maintenance shed with care. Raising a machine back to life was sometimes the great occasion on which a group split.",
+   "expect": 1,
+   "reason": "enshrine/devout ritual/pilgrimage -> keep/procedure/maintenance round"
+  },
+  {
+   "id": "LEN-09",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "B. Reading relics",
+   "new": "B. Looking after the parts",
+   "expect": 1,
+   "reason": "subtitle"
+  },
+  {
+   "id": "LEN-10",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "Followers of machine worship venerate old train bodies and bogies. They also offer gifts at hydraulic assemblies in workshops and busbars in substations.",
+   "new": "People look after old train bodies and bogies as their communities' implements. They also tend the hydraulic assemblies in workshops and the busbars in substations.",
+   "expect": 1,
+   "reason": "followers/venerate/offer gifts -> people/look after/tend"
+  },
+  {
+   "id": "LEN-11",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "C. Wheel and busbar rites",
+   "new": "C. Two views of wheels and busbars",
+   "expect": 1,
+   "reason": "subtitle: rite names -> views"
+  },
+  {
+   "id": "LEN-12",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "The branches of the individual faiths divided into the Wheel Rite and the Busbar Rite. The Wheel Rite believed firmly that as long as the heavy wheels rolled, that route's life continued. The Busbar Rite believed only the stations where a faint light remained survived to the end.",
+   "new": "The practice divided into two views. One side held firmly that as long as the heavy wheels rolled, that route's life continued. The other held that only the stations where a faint light remained survived to the end.",
+   "expect": 1,
+   "reason": "denomination names removed, beliefs kept"
+  },
+  {
+   "id": "LEN-13",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "### Consumption Rites",
+   "new": "### Circulation Practices",
+   "expect": 1,
+   "reason": "heading"
+  },
+  {
+   "id": "LEN-14",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "A. Altars and offerings",
+   "new": "A. The use of old currency",
+   "expect": 1,
+   "reason": "subtitle"
+  },
+  {
+   "id": "LEN-15",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "Consumption rites were the ritual of setting on the altar old currency and worn circulation relics that had lost their meaning. The exchange acts common before the collapse transformed into myth. Card-tapping, coin-inserting, ration-distributing gestures, plain hand movements, now became desperate prayer.",
+   "new": "Circulation practices were the custom of gathering old currency and worn circulation relics that had lost their meaning at the strongholds. The exchange acts common before the collapse remained as custom. Card-tapping, coin-inserting, ration-distributing gestures, plain hand movements, now became set procedure.",
+   "expect": 1,
+   "reason": "altar/myth/prayer -> stronghold keeping/custom/procedure"
+  },
+  {
+   "id": "LEN-16",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "B. Kinds of offerings",
+   "new": "B. What is gathered",
+   "expect": 1,
+   "reason": "subtitle"
+  },
+  {
+   "id": "LEN-17",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "Banknotes, rolling coins, and plastic transit cards were the finest offerings. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just ritual distribution. The tap of a card at a gate was both a request for passage and a tribute offered to god. The HP01 house's auctioning of parts is read elsewhere as blasphemous desecration; within this lineage it passes as a formal rite.",
+   "new": "Banknotes, rolling coins, and plastic transit cards were the most prized things. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just distribution of goods. The tap of a card at a gate was a request for passage. The HP01 house's auctioning of parts is read elsewhere as a breach of the order; within this lineage it passes as an accepted practice.",
+   "expect": 1,
+   "reason": "offerings/tribute to god/blasphemy/rite -> prized things/passage/breach of order/practice"
+  },
+  {
+   "id": "LEN-18",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "C. Stamp and gate rites",
+   "new": "C. Two rules of value and passage",
+   "expect": 1,
+   "reason": "subtitle"
+  },
+  {
+   "id": "LEN-19",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "The branches of the individual faiths divided into the Stamp Rite and the Gate Rite. The Stamp Rite believed the stamp fixed in the locked box set the value of things. The Gate Rite held that the very instant of passing the breaker was the act that carried on a momentary life.",
+   "new": "The practice divided into two rules. One side held that the stamp fixed in the locked box set the value of things. The other held that the very instant of passing the breaker was the act that carried on a momentary life.",
+   "expect": 1,
+   "reason": "denomination names removed, rules kept"
+  },
+  {
+   "id": "LEN-20",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "### The Deification of Old-World Symbols",
+   "new": "### Keeping Old-World Symbols",
+   "expect": 1,
+   "reason": "heading"
+  },
+  {
+   "id": "LEN-21",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "A. God of the voice",
+   "new": "A. Traces of the voice",
+   "expect": 1,
+   "reason": "subtitle"
+  },
+  {
+   "id": "LEN-22",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "Followers of the old-world symbol cult venerate station signs and interrupted announcements.",
+   "new": "The people who keep old-world symbols hold station signs and interrupted announcements as things to be preserved.",
+   "expect": 1,
+   "reason": "cult/venerate -> keep/preserve"
+  },
+  {
+   "id": "LEN-23",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "B. Echo and sanctuary",
+   "new": "B. Echo and boundary",
+   "expect": 1,
+   "reason": "subtitle"
+  },
+  {
+   "id": "LEN-24",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "The G25's sensor modules and protocol cards were the faint echoes that voice had left. If someone moved a station mark elsewhere, they believed the sanctuary itself moved whole to that place. To erase a mark wantonly was therefore held the impiety of erasing the god's very existence.",
+   "new": "The G25's sensor modules and protocol cards were the faint echoes that voice had left. If someone moved a station mark elsewhere, they held that the boundary itself moved whole to that place. To erase a mark wantonly was therefore held the same as erasing the place itself.",
+   "expect": 1,
+   "reason": "sanctuary/impiety/god -> boundary/place"
+  },
+  {
+   "id": "LEN-25",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "C. Nameplate and announcement rites",
+   "new": "C. Two territory standards",
+   "expect": 1,
+   "reason": "subtitle"
+  },
+  {
+   "id": "LEN-26",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "The names of the individual faiths divided into the Nameplate Rite and the Announcement Rite. The Nameplate Rite took even the places where letters faintly remained as intact national borders. The Announcement Rite made the whole space where the voice gently rang a sacred altar.",
+   "new": "The territory standards divided into two. One took even the places where letters faintly remained as intact boundaries. The other made the whole space where the voice gently rang one jurisdiction.",
+   "expect": 1,
+   "reason": "denominations/borders/altar -> standards/boundaries/jurisdiction"
+  },
+  {
+   "id": "LEN-27",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "### The Rules by Which a Relic Became an Object of Faith",
+   "new": "### The Rules by Which a Relic Became a Community's Center",
+   "expect": 1,
+   "reason": "heading"
+  },
+  {
+   "id": "LEN-28",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "A mass of scrap was not enshrined merely because time had long passed. One of the three axes (machine worship, consumption rites, symbol deification) had to be clearly knotted into the chain of deification, and the conditions below carefully met.",
+   "new": "A mass of scrap was not kept merely because time had long passed. One of the three axes (tending the machines, circulation practices, keeping old-world symbols) had to be clearly knotted into it, and the conditions below carefully met.",
+   "expect": 1,
+   "reason": "enshrine/deification -> keep/connection"
+  },
+  {
+   "id": "LEN-29",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "The lost line's modules were acknowledged as relics only when firmly attached to this core material.",
+   "new": "The lost line's modules became the center only when firmly attached to this core material.",
+   "expect": 1,
+   "reason": "relics -> center"
+  },
+  {
+   "id": "LEN-30",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "Lighting that brightened the dark, the water of life, safe passage, and watch duty had to hang deep on that relic. Doctrine did not fall off an old notice board on the wall. It flowered hot in the concourse where people breathed and sweated, before the sluices, in the crowded unloading yards.",
+   "new": "Lighting that brightened the dark, the water supply, safe passage, and watch duty had to hang deep on that relic. Rules did not fall off an old notice board on the wall. They flowered hot in the concourse where people breathed and sweated, before the sluices, in the crowded unloading yards.",
+   "expect": 1,
+   "reason": "water of life/doctrine -> water supply/rules"
+  },
+  {
+   "id": "LEN-31",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "3. Re-control had to be blocked so that it stood in for god",
+   "new": "3. Re-control had to be blocked",
+   "expect": 1,
+   "reason": "condition title: stood in for god removed"
+  },
+  {
+   "id": "LEN-32",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "With the servers cut and even the vault holding the drawings firmly shut, the remaining machines became mere masses of cipher with no way of interpretation. It was before this great wall of interpretation that people's desperate deification sprouted.",
+   "new": "With the servers cut and even the vault holding the drawings firmly shut, the remaining machines became mere masses of cipher with no way of interpretation. It was before this great wall of interpretation that a chassis became the center of its community.",
+   "expect": 1,
+   "reason": "deification sprouted -> became the center"
+  },
+  {
+   "id": "LEN-33",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "Only a community that had clung to one module and stubbornly survived three times or more called that mass of iron a relic. A single lucky chance remained merely a useful trading item.",
+   "new": "Only a community that had clung to one module and stubbornly survived three times or more took that mass of iron as its center. A single lucky chance remained merely a useful trading item.",
+   "expect": 1,
+   "reason": "called a relic -> took as its center"
+  },
+  {
+   "id": "LEN-34",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "The successor polities split by route, gu, and station divided custody and pilgrimage manner and strict taboo each in their own way. Dynasties and the vassal powers following them inherited even the jurisdiction of the rites and hardened their power. The recovery squads stripping parts without restraint and the faiths defending the old relics to the end collided roughly inside these dark sealed galleries.",
+   "new": "The successor polities split by route, gu, and station divided custody and upkeep manner and strict taboo each in their own way. Dynasties and the vassal powers following them inherited even the jurisdiction and hardened their power. The recovery squads stripping parts without restraint and the keepers defending the old relics to the end collided roughly inside these dark sealed galleries.",
+   "expect": 1,
+   "reason": "pilgrimage/rites/faiths -> upkeep/jurisdiction/keepers"
+  },
+  {
+   "id": "LEN-35",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "### Relic Interpretation by Faith Lineage",
+   "new": "### Relic Interpretation by Lineage",
+   "expect": 1,
+   "reason": "heading"
+  },
+  {
+   "id": "LEN-36",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "Faith was firmly stacked in three strata. At the top stood the great families of faith (lineages); beneath them sat the differing individual faiths; at the very bottom waited concrete doctrines and exacting lessons. This endlessly splitting process of division was itself the unit that edited Seoul's rules anew.",
+   "new": "The customs were firmly stacked in three strata. At the top stood the great lineages of custom; beneath them sat the differing individual customs; at the very bottom waited concrete rules and exacting lessons. This endlessly splitting process of division was itself the unit that edited Seoul's rules anew.",
+   "expect": 1,
+   "reason": "faith strata -> custom strata"
+  },
+  {
+   "id": "LEN-37",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "B. Reading the three families",
+   "new": "B. How the three lineages read",
+   "expect": 1,
+   "reason": "subtitle"
+  },
+  {
+   "id": "LEN-38",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "The machine-worship family read the old rolling stock, the substations, and even the G26's heavy drives together as one sacred body. The consumption-rite family accepted crumpled currency, gate passage, and even secret parts auctions as one solemn rite. The symbol-deification family took the severed announcements, the faded station marks, and the sharp sensor signals of the G25 as a single line of voice the creator had left.",
+   "new": "The machine-tending lineage read the old rolling stock, the substations, and even the G26's heavy drives together as one body of care. The circulation lineage accepted crumpled currency, gate passage, and even secret parts auctions as one order of distribution. The symbol-keeping lineage took the severed announcements, the faded station marks, and the sharp sensor signals of the G25 as a single line of voice the old world had left.",
+   "expect": 1,
+   "reason": "families/sacred/solemn rite/creator -> lineages/care/distribution/old world"
+  },
+  {
+   "id": "LEN-39",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "The very same G25 charging module was a sublime breath to the Busbar Rite, a costly offering to the Stamp Rite, and the box where the holy voice dwelt to the Announcement Rite. The same G26 hydraulic underbody was the joint bridging legs to the Wheel Rite but a fearsome judgment punishing those who passed without right to the Gate Rite.",
+   "new": "The very same G25 charging module was the core of the substation equipment to one lineage, a costly trading good to another, and the box where the voice dwelt to a third. The same G26 hydraulic underbody was the joint bridging legs to one lineage and the device barring those who passed without right to another.",
+   "expect": 1,
+   "reason": "rite-specific sacred readings -> lineage-specific functional readings"
+  },
+  {
+   "id": "LEN-40",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "D. Public and hidden faiths",
+   "new": "D. Public and hidden customs",
+   "expect": 1,
+   "reason": "subtitle"
+  },
+  {
+   "id": "LEN-41",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "The public faith showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden faith flipped the very same phrases into entirely different secret lessons. If one vassal house quietly overlaid the Busbar Rite's substation altar and the Nameplate Rite's pilgrimage inside the same gallery, then though the relic before the eyes was one, the jurisdiction governing it split in two.",
+   "new": "The public custom showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden custom flipped the very same phrases into entirely different secret lessons. If one vassal house quietly overlaid the keeping of the substation equipment and the keeping of the station marks inside the same gallery, then though the object before the eyes was one, the jurisdiction governing it split in two.",
+   "expect": 1,
+   "reason": "public/hidden faith, altar/pilgrimage -> custom, keeping"
+  },
+  {
+   "id": "LEN-42",
+   "file": "Lost-Technology-Lineage.en.md",
+   "old": "Followers of machine worship, consumption rites, and old-world symbol worship use surviving machine parts in different rites.",
+   "new": "The people of machine tending, circulation practice, and old-world symbol keeping use surviving machine parts in different ways.",
+   "expect": 1,
+   "reason": "followers/rites -> people/ways"
+  },
+  {
+   "id": "GKO-01",
+   "file": "Hostile-Group-G10.ko.md",
+   "old": "보국문 광신도는",
+   "new": "보국문 집단은",
+   "expect": 1,
+   "reason": "집단 명칭의 광신 제거"
+  },
+  {
+   "id": "GKO-02",
+   "file": "Hostile-Group-G10.ko.md",
+   "old": "광신도 쪽으로",
+   "new": "집단 쪽으로",
+   "expect": 1,
+   "reason": "광신도 지시 → 집단"
+  },
+  {
+   "id": "GKO-03",
+   "file": "Hostile-Group-G10.ko.md",
+   "old": "광신도 인도자",
+   "new": "집단 인도자",
+   "expect": 10,
+   "reason": "지도자 역할명 중립화(모든 위치 동일 단어)"
+  },
+  {
+   "id": "GKO-04",
+   "file": "Hostile-Group-G10.ko.md",
+   "old": "광신도 정예조",
+   "new": "정예조",
+   "expect": 12,
+   "reason": "정예조 명칭의 광신 수식 제거"
+  },
+  {
+   "id": "GKO-05",
+   "file": "Hostile-Group-G10.ko.md",
+   "old": "광신도 척후조",
+   "new": "척후조",
+   "expect": 11,
+   "reason": "척후조 명칭의 광신 수식 제거"
+  },
+  {
+   "id": "GEN-01",
+   "file": "Hostile-Group-G10.en.md",
+   "old": "The Bogukmun Zealots gather",
+   "new": "The Bogukmun group gathers",
+   "expect": 1,
+   "reason": "group name"
+  },
+  {
+   "id": "GEN-02",
+   "file": "Hostile-Group-G10.en.md",
+   "old": "the zealots' side",
+   "new": "the group's side",
+   "expect": 1,
+   "reason": "zealots -> group"
+  },
+  {
+   "id": "GEN-03",
+   "file": "Hostile-Group-G10.en.md",
+   "old": "Zealot Leader",
+   "new": "Group leader",
+   "expect": 10,
+   "reason": "leader role, same word everywhere"
+  },
+  {
+   "id": "GEN-04",
+   "file": "Hostile-Group-G10.en.md",
+   "old": "Zealot Elite Squad",
+   "new": "Elite Squad",
+   "expect": 12,
+   "reason": "elite squad name"
+  },
+  {
+   "id": "GEN-05",
+   "file": "Hostile-Group-G10.en.md",
+   "old": "Zealot Scouts",
+   "new": "Scouts",
+   "expect": 11,
+   "reason": "scouts name"
+  }
+ ]
+}
