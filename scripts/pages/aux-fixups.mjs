@@ -12,6 +12,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { execFileSync } from 'node:child_process';
 import { parseInsertLine, insertLine } from './ck3-stats.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -82,6 +83,38 @@ export function run({ dryRun }) {
 
   // ---- (b) 110 두 결함 ----
   const t110 = loadTable('110-family-trees.sql', 'family_tree', ['clan_id', 'json', 'json_ko']);
+  // (b2-사전) aux가 변경한 셀(w2-applied 대비) 휴리스틱 스캔 — 수정 대상 산출 근거(원본 행 기준, fixCell 실행 전)
+  const particleRe = /(?:정부|자유도시)(?:은|이|을|과)|아크(?:는|가|를|와)/g;
+  const midCapRe = /[a-z], (?:In|The|He|She|It|They|When|After|Before|Unlike|On|At|By|For|With)\b/g;
+  const doubledRe = /\b([A-Za-z가-힣]+)[ \u00a0]+\1\b/gi;
+  const articleRe = /\b(?:an (?:The Government|Free City)|a Arc)/g;
+  const parent110 = execFileSync('git', ['-C', REPO, 'show', 'origin/feat/w2-applied:data/sql/110-family-trees.sql'], { encoding: 'utf8', maxBuffer: 1 << 26 });
+  const parentMap110 = new Map(splitStatements(parent110).lines.filter((l) => l.startsWith('INSERT INTO family_tree')).map((l) => { const r = parseInsertLine(l, 'family_tree', ['clan_id', 'json', 'json_ko']); return [r.clan_id, r]; }));
+  const origRow110 = null; // (사전 스캔은 fixCell 전 원본 행에서 실행된다)
+  const collectStr = (o, p, out) => {
+    if (Array.isArray(o)) { o.forEach((v, i) => { collectStr(v, p + '[' + i + ']', out); }); return; }
+    if (o && typeof o === 'object') { for (const [k, v] of Object.entries(o)) { collectStr(v, p ? p + '.' + k : k, out); } return; }
+    if (typeof o === 'string') out.push([p, o]);
+  };
+  const preScan = { changedCells: 0, midCapEN: 0, doubled: 0, article: 0, particle: 0, hangulInEN: 0 };
+  for (const row of t110.rows) {
+    const par = parentMap110.get(row.clan_id);
+    for (const col of ['json', 'json_ko']) {
+      const cur = []; collectStr(JSON.parse(row[col]), '', cur);
+      const oldM = new Map();
+      if (par) { const arr = []; collectStr(JSON.parse(par[col]), '', arr); for (const [p, v] of arr) oldM.set(p, v); }
+      for (const [p, v] of cur) {
+        if (oldM.get(p) === v) continue;
+        preScan.changedCells++;
+        if (col === 'json') {
+          midCapRe.lastIndex = 0; if (midCapRe.test(v)) preScan.midCapEN++; midCapRe.lastIndex = 0;
+          if ([...v.matchAll(doubledRe)].length) preScan.doubled++;
+          if ([...v.matchAll(articleRe)].length) preScan.article++;
+          if (/[가-힣]/.test(v)) preScan.hangulInEN++;
+        } else if ([...v.matchAll(particleRe)].length) preScan.particle++;
+      }
+    }
+  }
   const fixCell = (clanId, col, nodeIdx, expectOld, replacePair) => {
     const row = t110.rows.find((r) => r.clan_id === clanId);
     if (!row) throw Object.assign(new Error(`E_NO_MATCH: clan ${clanId}`), { code: EXIT.NO_MATCH });
@@ -130,7 +163,7 @@ export function run({ dryRun }) {
     if (ch.column === 'json' && hangulInEN.test(v)) scanHits++;
   }
   if (scanHits) throw Object.assign(new Error(`E_SCAN: 수정 셀 재스캔 ${scanHits}건`), { code: EXIT.NO_MATCH });
-  log.scan110 = { fixedCells: log.changes.filter((c) => c.file === '110-family-trees.sql').length, postFixScanHits: 0, preFixScan: '변경 셀 2,128개(w2-applied 대비) 휴리스틱: midCap 1(=c624 수정 대상), doubled 0, article 0, particle 0, hangul-in-en 0 — scripts/pages/w5-28-inspect-110d.mjs' };
+  log.scan110 = { fixedCells: log.changes.filter((c) => c.file === '110-family-trees.sql').length, postFixScanHits: 0, preFixScan: preScan, preFixScanNote: '변경 셀 = w2-applied(사전 상태)와의 경로 단위 비교. midCapEN 1건과 ko/en 드리프트 1건(Council of Elders)이 (b)의 수정 대상, 나머지 지표 0건.' };
 
   // ---- (c) w5-25.md 정정 ----
   const repPath = path.join(REPO, 'docs/drafts/reports/w5-25.md');
