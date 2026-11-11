@@ -14,7 +14,7 @@
   "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
  },
  "counts": {
-  "rules": 1827,
+  "rules": 1832,
   "kept": 1180,
   "keepByReason": {
    "소속 표기": 461,
@@ -16485,6 +16485,51 @@
    "old": "Arc 회장 전령",
    "new": "태욱그룹 회장 전령",
    "reason": "fix3 R3-1 person-0070 회사 직함 복원 — 태욱그룹 회장 사절/전령은 회사 회장 직위(050 position·기저 91e800b3f 정합), 세력 직함이 아님"
+  },
+  {
+   "file": "090",
+   "id": "person-0297",
+   "column": "json",
+   "path": "$.position",
+   "old": "The Government President",
+   "new": "Sinnae Transport President",
+   "reason": "fix3 R3-2 person-0297 회사 직함 복원 — 신내운수 사장은 폐지된 회사 직위(기저 91e800b3f 정합)로 현직 정부 직책이 아님"
+  },
+  {
+   "file": "090",
+   "id": "person-0297",
+   "column": "json",
+   "path": "$.fields.Title",
+   "old": "The Government President",
+   "new": "Sinnae Transport President",
+   "reason": "fix3 R3-2 person-0297 회사 직함 복원 — 신내운수 사장은 폐지된 회사 직위(기저 91e800b3f 정합)로 현직 정부 직책이 아님"
+  },
+  {
+   "file": "090",
+   "id": "person-0297",
+   "column": "json_ko",
+   "path": "$.position",
+   "old": "정부 사장",
+   "new": "신내운수 사장",
+   "reason": "fix3 R3-2 person-0297 회사 직함 복원 — 신내운수 사장은 폐지된 회사 직위(기저 91e800b3f 정합)로 현직 정부 직책이 아님"
+  },
+  {
+   "file": "090",
+   "id": "person-0297",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "old": "정부 사장",
+   "new": "신내운수 사장",
+   "reason": "fix3 R3-2 person-0297 회사 직함 복원 — 신내운수 사장은 폐지된 회사 직위(기저 91e800b3f 정합)로 현직 정부 직책이 아님"
+  },
+  {
+   "file": "090",
+   "id": "person-0297",
+   "column": "json_ko",
+   "path": "$.openingTitles[0].basis",
+   "old": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 정부 사장. 북동 왕국 안 유일한 국가 수도 신내역(노원) 직영지 보유 근거.",
+   "new": "2026-10-22 영토 작위 배분(owner:seoul-faction-consolidation-20261022). 신내운수 사장. 북동 왕국 안 유일한 국가 수도 신내역(노원) 직영지 보유 근거.",
+   "reason": "fix3 R3-2 person-0297 회사 직함 복원 — 신내운수 사장은 폐지된 회사 직위(기저 91e800b3f 정합)로 현직 정부 직책이 아님"
   }
  ],
  "kept": [
