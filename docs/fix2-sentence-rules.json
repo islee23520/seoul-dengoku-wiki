@@ -14,7 +14,7 @@
   "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
  },
  "counts": {
-  "rules": 2165,
+  "rules": 2309,
   "kept": 1180,
   "keepByReason": {
    "소속 표기": 461,
@@ -41,7 +41,8 @@
   "fix9VassalageRules": 5,
   "fix12DuchyFactionRules": 24,
   "fix13KingdomNameRules": 18,
-  "fix14AffiliationRules": 112
+  "fix14AffiliationRules": 112,
+  "fix14RootStateRules": 144
  },
  "rules": [
   {
@@ -19602,6 +19603,1302 @@
    "new": "- 소속: 무소속, 조재표 일행(2026-10-22 세력 이동)",
    "expect": 1,
    "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0438",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0438",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0438",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0438",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0454",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0454",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0454",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0454",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0470",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0470",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0470",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0470",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0486",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0486",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0486",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0486",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0502",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0502",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0502",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0502",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0518",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0518",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0518",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0518",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0534",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0534",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0534",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0534",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0550",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0550",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0550",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0550",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0566",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0566",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0566",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0566",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0582",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0582",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0582",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0582",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0598",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0598",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0598",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0598",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0614",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0614",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0614",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0614",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0630",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0630",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0630",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0630",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0646",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0646",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0646",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0646",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0662",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0662",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0662",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0662",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0678",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0678",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0678",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0678",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0694",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0694",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0694",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0694",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0710",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0710",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0710",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0710",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0726",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0726",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0726",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0726",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0742",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0742",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0742",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0742",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0758",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0758",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0758",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0758",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0774",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0774",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0774",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0774",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0790",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0790",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0790",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0790",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0806",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0806",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0806",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0806",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0822",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0822",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0822",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0822",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0838",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0838",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0838",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0838",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0854",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0854",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0854",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0854",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0870",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0870",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0870",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0870",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0886",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0886",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0886",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0886",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0902",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0902",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0902",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0902",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0918",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0918",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0918",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0918",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0934",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0934",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0934",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0934",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0950",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0950",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0950",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0950",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0966",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0966",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0966",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0966",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0982",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0982",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0982",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0982",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0999",
+   "column": "json",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0999",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0999",
+   "column": "json_ko",
+   "path": "$.state",
+   "old": "S15",
+   "new": "government",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
+  },
+  {
+   "file": "090",
+   "id": "person-0999",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix14 D2 루트 state 정합 — 정부 다수 표기 state='government', stateName='The Government'/'정부'"
   }
  ],
  "kept": [
