@@ -6621,7 +6621,7 @@ The combat camera is a 3D free command viewpoint with pan, orbit, and zoom confi
 
 - Foundation: Bootstrap App scope/FSM, exclusive screen lease, VContainer static contract, architecture gate
 - Core loop (ToDo 5–12): deterministic Core IDs, commands, RNG streams, and ledger hashes; a three-station line of Yeongdeungpo–Sindorim–Guro; a six-stage campaign including negotiation and detours; exactly-once settlement; uGUI screens including MainTitle
-- Seoul regional data (2026-09-13): 25 districts and 427 neighborhoods (administrative dong) under the 2026-07-01 boundaries, OSM snapshot 2026-09-04T23:00:00Z. `TOOL/tools/regions` re-reconciles each neighborhood''s residents, livelihoods, hazards, and actions against 1,011,022 candidate ledger entries. Map browsing is handled by `World-and-Subway-Layers` on the official wiki. The 334 stations and 435 edges form a travel graph, not proof of Seoul''s land area. There is no internal Unity grid or polity simulation.
+- Seoul regional data (2026-09-13): 25 districts and 427 neighborhoods (administrative dong) under the 2026-07-01 boundaries, OSM snapshot 2026-09-04T23:00:00Z. `TOOL/tools/regions` re-reconciles each neighborhood''s residents, livelihoods, hazards, and actions against 1,011,022 candidate ledger entries. Map browsing is handled by `World-and-Subway-Layers` on the official wiki. The 334 stations and 435 edges form a travel graph, not proof of Seoul''s land area. There is no internal Unity grid.
 - Generated-art foundation: promotion of 6 historical props to source-bound BOM and runtime hookup, promotion of 3 role characters (Explorer, Medic, Patrol), 9 UI kit candidates (awaiting visual acceptance), TRELLIS v1 optional host contract frozen
 - Worldbuilding and character source: per-state rosters (Cast-State-01–16, 412 characters) and relationship ledger, hostile groups G01–G27 published, narrative placements B001–B047, ISO world, family, and hostile diagrams, monster placement ledger M001–M042, World-Narrative-Atlas integration
 - Public wiki: the mounted mirror of the canonical LORE and GDD is synchronized with the source commit. Unpublished fragments are tracked only in tables.
@@ -6676,7 +6676,7 @@ The next product module is not started until the current module passes the gates
 
 - Foundation 기반: Bootstrap App scope/FSM, 배타적 화면 lease, VContainer 정적 계약, 아키텍처 게이트
 - 코어 루프(ToDo 5–12): 결정론 Core ID·명령·RNG 스트림·원장 해시, 영등포–신도림–구로 세 역 노선, 교섭·우회를 포함한 여섯 단계 캠페인, 정확히 한 번 정산, MainTitle 포함 uGUI 화면
-- 서울 지역 데이터(2026-09-13): 2026-07-01 행정동 경계 25구·427동, OSM 스냅샷 2026-09-04T23:00:00Z. 동별 주민·생업·위험·행동과 후보 원장 1,011,022건을 `TOOL/tools/regions`가 재대조한다. 지도 열람은 공식 위키의 `World-and-Subway-Layers`가 맡는다. 역 334·간선 435는 이동 그래프이지 서울 면적의 증명이 아니다. Unity 내부 격자·정치체 시뮬레이션은 없다
+- 서울 지역 데이터(2026-09-13): 2026-07-01 행정동 경계 25구·427동, OSM 스냅샷 2026-09-04T23:00:00Z. 동별 주민·생업·위험·행동과 후보 원장 1,011,022건을 `TOOL/tools/regions`가 재대조한다. 지도 열람은 공식 위키의 `World-and-Subway-Layers`가 맡는다. 역 334·간선 435는 이동 그래프이지 서울 면적의 증명이 아니다. Unity 내부 격자는 없다
 - 생성 아트 기반: 역사 소품 6종 source-bound BOM 승격·런타임 연결, 3역할(탐사원·의무원·순찰대) 캐릭터 승격, UI kit 9종 후보(시각 수용 대기), TRELLIS v1 옵션 호스트 계약 고정
 - 세계관·인물 원본: 국가별 명부(Cast-State-01–16, 412인)와 관계 원장, 적대 집단 G01–G27 게시, 서사 배치 B001–B047, ISO 세계·가문·적대 도표, 몬스터 배치 원장 M001–M042, World-Narrative-Atlas 통합
 - 공개 위키: LORE·GDD 정본의 마운트 미러가 원본 커밋과 동기된다. 미게시 조각은 표로만 추적한다.
@@ -6938,7 +6938,7 @@ The current design version is the SP-1.0.0 single-player build. Actions, titles,
 
 > **A 4X + RPG that links one character''s livelihood, relationships, rank, and succession to domain management and line politics in the subway network of a collapsed Seoul. Combat resolves each individual soldier.**
 
-《Seoul Metro Dynasties》 is a character-driven grand strategy RPG that uses the subway network of **post-collapse Seoul** as the framework for territory, logistics, survival, and legitimacy. The collapse began with the Great Blackout of 2030, and that night is recorded in the prologue. The game is set in 2126 CE, a century later. The order the campaign depicts is a line society split by what people watch over and by faith. The player is a nobody. Being a nobody is only one rooting path. Follow the [Online User Journey](/gdd/design/online-user-journey/) for the full sequence. Starting with a small party, you move between stations and lines, building livelihood, relationships, rank, and influence within factions.
+《Seoul Metro Dynasties》 is a character-driven grand strategy RPG that uses the subway network of **post-collapse Seoul** as the framework for territory, logistics, survival, and legitimacy. The collapse began with the Great Blackout around 2026, and that night is recorded in the prologue. The game is set in 2126 CE, a century later. The order the campaign depicts is a line society split by what people watch over and by faith. The player is a nobody. Being a nobody is only one rooting path. Follow the [Online User Journey](/gdd/design/online-user-journey/) for the full sequence. Starting with a small party, you move between stations and lines, building livelihood, relationships, rank, and influence within factions.
 
 In combat, each individual soldier''s attack is resolved by weapon, armor, combat skill, physical condition, and mood. Before engagement, the player deploys squads and directs movement, attack targets, fire, and ambushes, but gives no new orders to squads in melee engagement. Retreat is a battle-wide command. Characters aim for natural, realistic proportions, restrained expressions, and low-saturation flat colors, outlines, and hatching. Livelihood, subsistence, production, logistics, marriage, diplomacy, technology transfer, and mobilization are within the design scope of being linked through the same characters and world time, and are not yet implemented.
 
@@ -6953,7 +6953,7 @@ Follows the table of contents of Namu Wiki''s [New Series/Setting](https://namu.
 | Document | Description |
 | --- | --- |
 | [Overview](/gdd/design/game-thesis/) | Push the world from where you stand. Both a 4X and an RPG |
-| Prologue | The night the call network collapsed in the 2030 Great Blackout, the 2126 setting, and why a nation remains in Seoul |
+| Prologue | The night the call network collapsed in the Great Blackout around 2026, the 2126 setting, and why a nation remains in Seoul |
 | [Online User Journey](/gdd/design/online-user-journey/) | From account to rooting, death, and succession |
 
 ### 2. Timeline
@@ -7040,7 +7040,7 @@ Generated art slots are not yet connected to the runtime screens. Approving and 
 
 > **붕괴한 서울의 지하철망에서 한 인물의 생업·관계·직위·계승을 영지 운영과 노선 정치로 잇는 4X + RPG. 전투는 병사 한 사람 한 사람을 판정한다.**
 
-《서울:전국》은 아포칼립스 이후 **후세 서울**의 지하철망을 영토·물류·생존·정통성의 골격으로 삼는 인물 중심 대전략 RPG입니다. 2030년 대정전으로 붕괴가 시작됐고, 그 밤은 프롤로그에 적혀 있습니다. 게임의 배경은 그로부터 한 세기가 지난 서기 2126입니다. 캠페인이 그리는 질서는 사람이 지켜보는 일과 신앙이 갈라진 노선 사회입니다. 플레이어는 무명 인물입니다. 무명은 착생 갈래 하나다. 전체 순서는 [온라인 유저 여정](/gdd/design/online-user-journey/)을 따른다. 소규모 파티로 시작해 역과 노선을 오가며 생업, 관계, 직위와 세력 내 영향력을 쌓습니다.
+《서울:전국》은 아포칼립스 이후 **후세 서울**의 지하철망을 영토·물류·생존·정통성의 골격으로 삼는 인물 중심 대전략 RPG입니다. 약 2026년 대정전으로 붕괴가 시작됐고, 그 밤은 프롤로그에 적혀 있습니다. 게임의 배경은 그로부터 한 세기가 지난 서기 2126입니다. 캠페인이 그리는 질서는 사람이 지켜보는 일과 신앙이 갈라진 노선 사회입니다. 플레이어는 무명 인물입니다. 무명은 착생 갈래 하나다. 전체 순서는 [온라인 유저 여정](/gdd/design/online-user-journey/)을 따른다. 소규모 파티로 시작해 역과 노선을 오가며 생업, 관계, 직위와 세력 내 영향력을 쌓습니다.
 
 전투는 병사 한 사람 한 사람의 공격을 무기·방어구·전투 기술·몸 상태·기분으로 판정한다. 플레이어는 교전 전에 분대를 배치하고 이동·공격 대상·사격·매복을 지시하며 근접 교전에 들어간 분대에는 새 명령을 내리지 않는다. 후퇴는 전투 전체 명령이다. 인물은 자연·실사풍 비례, 절제된 표정과 낮은 채도의 평면 색·외곽선·해칭을 목표로 한다. 생활·생계·생산·물류·혼인·외교·기술 전승·동원은 같은 인물과 세계 시간으로 연결하는 설계 범위이며 구현 완료는 아니다.
 
@@ -7055,7 +7055,7 @@ Generated art slots are not yet connected to the runtime screens. Approving and 
 | 문서 | 설명 |
 | --- | --- |
 | [개요](/gdd/design/game-thesis/) | 선 자리에서 세계를 민다. 4X이자 RPG |
-| 프롤로그 | 2030년 대정전으로 호출망이 무너진 밤, 배경 2126, 서울에 나라가 남은 까닭 |
+| 프롤로그 | 약 2026년 대정전으로 호출망이 무너진 밤, 배경 2126, 서울에 나라가 남은 까닭 |
 | [온라인 유저 여정](/gdd/design/online-user-journey/) | 계정부터 착생·사망·후계까지 |
 
 ### 2. 연표
@@ -7445,7 +7445,7 @@ Layers can be mixed even within a single sentence. Use the common name of equipm
 - Review copyright separately from the name itself, looking at creative expression, descriptions, sentences, character composition, and distinctive technical depictions within a work. Do not change historical facts or generic martial arts names because of copyright.
 - Real organization names may be used as they are in the factual layer. However, any use that makes a currently existing organization the perpetrator of fictional crimes, massacres, or conspiracies, or that could be mistaken for an official successor, must go through a separate review of rights, reputation, and confusion.
 - Fictional organizations should have names that reveal what they do and what authority they hold. Do not use names that read like criminal successors of real institutions.
-- Titles distinguish the modern institution-specific designations of the 16 nations from the common tiers. Do not use Joseon-era official titles as an intermediate translation layer.
+- Titles distinguish modern institution-specific designations from the common tiers. Do not use Joseon-era official titles as an intermediate translation layer.
 - Name training and proficiency after the actions actually performed. Do not use organization names or titles as personal abilities, and do not create names or promotion systems for martial arts, techniques, or schools.
 - Keep the display names for competence, proficiency, traits, and body-part status distinct in meaning. Do not group individual combat skill, unit deployment, production work, and administrative authority under the same name or suffix system.
 
@@ -7552,7 +7552,7 @@ Before adding a new term, ask the following.
 - 저작권은 이름 자체보다 작품 속 창작 표현·설명·문장·캐릭터 구성·고유 기술 묘사와 구별해 검토한다. 역사 사실과 일반 무술명을 저작권 때문에 바꾸지 않는다.
 - 실제 조직명은 사실 층에서 그대로 쓸 수 있다. 다만 현재 실존 조직을 창작 범죄·학살·음모의 주체로 만들거나 공식 후신이라고 오인하게 하는 사용은 별도 권리·명예·혼동 검토를 거친다.
 - 창작 조직은 하는 일과 권한이 이름에서 드러나야 한다. 실제 기관의 범죄 후신처럼 읽히는 이름은 쓰지 않는다.
-- 직책은 16국의 현대 기관별 명칭과 공통 티어를 구분한다. 조선 관직을 중간 번역층으로 쓰지 않는다.
+- 직책은 현대 기관별 명칭과 공통 티어를 구분한다. 조선 관직을 중간 번역층으로 쓰지 않는다.
 - 훈련·숙련은 실제 수행하는 행동으로 명명한다. 조직 이름이나 직책을 개인 능력으로 사용하지 않으며 무공·초식·유파의 이름과 승급 체계를 만들지 않는다.
 - 역량·숙련·특성·부위 상태의 표시명은 각각의 의미를 구분한다. 개인 전투 기량, 부대 배치, 생산 작업과 행정 권한을 같은 이름이나 접미사 체계로 묶지 않는다.
 

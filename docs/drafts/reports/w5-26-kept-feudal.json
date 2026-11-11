@@ -1,11 +1,9 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-11 (v2 정정판)",
  "pattern": "봉건|영주|공작|백작|남작|봉신|vassal|feudal|CK3|Crusader Kings|crusader|노랜드|Norland",
- "note": "GDD 전체에서 feudal/CK3/Norland 설계 언어 문장 전수 목록(패치 후 상태). 14개 패치 문서의 before/after 카운트 동일 — 패치가 설계 언어를 건드리지 않았음.",
- "corpus_count_after": 963,
+ "note": "GDD 전체에서 feudal/CK3/Norland 설계 언어 문장 전수 목록(패치 후 상태, 문장 전문 — 잘림 없음). before=after=963, 문서별 카운트 드리프트 0 — 패치가 설계 언어를 건드리지 않았음.",
  "corpus_count_before": 963,
- "patched_docs_before": 175,
- "patched_docs_after": 175,
+ "corpus_count_after": 963,
  "per_document_after": {
   "doc.Unity-Architecture-Implementation-Plan": 2,
   "doc.Unity-Architecture": 4,
@@ -449,7 +447,7 @@
   {
    "document": "doc.pw-01-war-declaration-threshold",
    "field": "body_md",
-   "sentence": "**Tension** weekly for each pair (a,b): `Δ = borderPush×min(5, jeopgyeongkan)/5 + goalPush×(hwakjang yangmang-in jjok su) − tensionCool − (dongmaeng allyCalm) − (bongsinssang 1)` (jeopgyeongkan = border tiles; hwakjang yangmang-in jjok su = number of sides with an expansion ambition; dongmaeng = all"
+   "sentence": "**Tension** weekly for each pair (a,b): `Δ = borderPush×min(5, jeopgyeongkan)/5 + goalPush×(hwakjang yangmang-in jjok su) − tensionCool − (dongmaeng allyCalm) − (bongsinssang 1)` (jeopgyeongkan = border tiles; hwakjang yangmang-in jjok su = number of sides with an expansion ambition; dongmaeng = alliance; bongsinssang = vassal pair); tension = clamp(tension+Δ, 0, 100)."
   },
   {
    "document": "doc.pw-01-war-declaration-threshold",
@@ -529,7 +527,7 @@
   {
    "document": "doc.Ref-Crusader-Kings-3",
    "field": "body_md",
-   "sentence": "CK3 references: see mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-cu"
+   "sentence": "CK3 references: see mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-culture.md:165-207, and internal-architecture-synthesis.md:117-126."
   },
   {
    "document": "doc.Ref-Crusader-Kings-3",
@@ -799,7 +797,7 @@
   {
    "document": "doc.Ref-Crusader-Kings-3",
    "field": "body_ko_md",
-   "sentence": "CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-culture.md:165"
+   "sentence": "CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-culture.md:165-207 및 internal-architecture-synthesis.md:117-126을 참조한다."
   },
   {
    "document": "doc.Ref-Crusader-Kings-3",
@@ -1114,7 +1112,7 @@
   {
    "document": "doc.Ref-Mechanism-Index",
    "field": "body_md",
-   "sentence": "CK3 references: see mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-cu"
+   "sentence": "CK3 references: see mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-culture.md:165-207, and internal-architecture-synthesis.md:117-126."
   },
   {
    "document": "doc.Ref-Mechanism-Index",
@@ -1139,7 +1137,7 @@
   {
    "document": "doc.Ref-Mechanism-Index",
    "field": "body_ko_md",
-   "sentence": "CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-culture.md:165"
+   "sentence": "CK3 참조: mechanics-01-time-and-pulse.md:11-43, mechanics-02-character-rpg.md:125-173, mechanics-03-schemes.md:11-173, mechanics-04-war-and-combat.md:11-95, mechanics-05-economy.md:54-98, mechanics-06-vassals-court-council.md:11-95, mechanics-07-succession.md:182-209, mechanics-08-faith-culture.md:165-207 및 internal-architecture-synthesis.md:117-126을 참조한다."
   },
   {
    "document": "doc.Ref-Mechanism-Index",
@@ -3874,7 +3872,7 @@
   {
    "document": "doc.mechanism-design-index-d05",
    "field": "body_md",
-   "sentence": "**Crusader Kings III PC 1.20.0.3, Steam build 25652598.** Building costs, durations, and monthly income in the preserved installed scripts, the replenishment of supplies after gold is spent on a supply purchase, and the gold refund for camp demolition were each verified within the scope of their cal"
+   "sentence": "**Crusader Kings III PC 1.20.0.3, Steam build 25652598.** Building costs, durations, and monthly income in the preserved installed scripts, the replenishment of supplies after gold is spent on a supply purchase, and the gold refund for camp demolition were each verified within the scope of their calls."
   },
   {
    "document": "doc.mechanism-design-index-d05",
@@ -3884,7 +3882,7 @@
   {
    "document": "doc.mechanism-design-index-d05",
    "field": "body_md",
-   "sentence": "**Norland PC — preserved data build 25211575 and version-specific documents.** The Construction, Resources, and Trade materials, along with separate patch materials, distinguish construction costs and production output, knowledge, occupation, and work-time conditions, builders' hauling and work, and"
+   "sentence": "**Norland PC — preserved data build 25211575 and version-specific documents.** The Construction, Resources, and Trade materials, along with separate patch materials, distinguish construction costs and production output, knowledge, occupation, and work-time conditions, builders' hauling and work, and storage types."
   },
   {
    "document": "doc.mechanism-design-index-d05",
@@ -4029,7 +4027,7 @@
   {
    "document": "doc.mechanism-design-index-d08",
    "field": "body_md",
-   "sentence": "- Source attribution: the publisher-hosted community wiki (`wiki.hoodedhorse.com/Norland`) at pinned revisions — World `oldid=1284`, States `oldid=1262`, Lords `oldid=1314`, Actions `oldid=1318` — and developer announcements (Patch #25/#26, Patch #39·#40, Patch #43 BETA, Patch #57 BETA, Update #35, "
+   "sentence": "- Source attribution: the publisher-hosted community wiki (`wiki.hoodedhorse.com/Norland`) at pinned revisions — World `oldid=1284`, States `oldid=1262`, Lords `oldid=1314`, Actions `oldid=1318` — and developer announcements (Patch #25/#26, Patch #39·#40, Patch #43 BETA, Patch #57 BETA, Update #35, Patches #54–#56 bundle)."
   },
   {
    "document": "doc.mechanism-design-index-d08",
@@ -4369,7 +4367,7 @@
   {
    "document": "doc.mechanism-design-index-d11",
    "field": "body_md",
-   "sentence": "- **What is approved**: the distinction among the four kinds of drafts (conferral, appointment, delegation, revocation); the consent and ratification gates, and the holder remaining unchanged before ratification; the requirement that the recipient be a member of the organization; the limits of lower"
+   "sentence": "- **What is approved**: the distinction among the four kinds of drafts (conferral, appointment, delegation, revocation); the consent and ratification gates, and the holder remaining unchanged before ratification; the requirement that the recipient be a member of the organization; the limits of lower titles only and two at duke rank; the separation of axes (office, title, effective control, command, property); the principle of explicit inclusion; removal and registration under the same identifier with no copies; the `gwolli boyu·insu miwan` state; the four states of delegation and preservation of the original right; the signatories and substantive clauses of the vassal contract and the three branches of signatory change; the clause, evidence, and ratification requirements for revocation; the betrayal issue when only a relic is revoked; the denial of conferral for unlawful seizure; the denial of automatic creation of vacancies and the allowance of registered acting holders only; the deterministic acceptance order and the invalidity of retransmitting an event identifier; permanent identifiers and explicit collisions; and the separation of the title-holding ledger from the effective-control ledger."
   },
   {
    "document": "doc.mechanism-design-index-d11",
@@ -4494,7 +4492,7 @@
   {
    "document": "doc.mechanism-design-index-d11",
    "field": "body_ko_md",
-   "sentence": "- **승인된 것**: 네 가지 초안의 구분(수여·임명·위임·회수), 동의·인준 관문과 인준 전 보유자 불변, 소속원 수령 요건, 하급 작위만·공작급 둘 한도, 축의 분리(직위·작위·실효 지배·지휘·재산), 포함 명시의 원칙, 같은 식별 제거·등록과 사본 없음, `권리 보유·인수 미완` 상태, 위임의 네 상태와 원 권리 보존, 봉신 계약의 서명자·조항 실체와 서명자 변동 세 갈래, 회수의 조항·증거·인준 요건, 유물만 회수 시 배신 쟁점, 불법 강탈의 수여 부인, 공석의 자동 생성 부정과 등록된 대행만, 결정론적 수락 순서와 사건 "
+   "sentence": "- **승인된 것**: 네 가지 초안의 구분(수여·임명·위임·회수), 동의·인준 관문과 인준 전 보유자 불변, 소속원 수령 요건, 하급 작위만·공작급 둘 한도, 축의 분리(직위·작위·실효 지배·지휘·재산), 포함 명시의 원칙, 같은 식별 제거·등록과 사본 없음, `권리 보유·인수 미완` 상태, 위임의 네 상태와 원 권리 보존, 봉신 계약의 서명자·조항 실체와 서명자 변동 세 갈래, 회수의 조항·증거·인준 요건, 유물만 회수 시 배신 쟁점, 불법 강탈의 수여 부인, 공석의 자동 생성 부정과 등록된 대행만, 결정론적 수락 순서와 사건 식별 재전송 무효, 영구 식별자와 명시적 충돌, 작위 보유 원장과 실효 지배 원장의 분리."
   },
   {
    "document": "doc.mechanism-design-index-d12",
@@ -4619,7 +4617,7 @@
   {
    "document": "doc.mechanism-design-index-d13",
    "field": "body_md",
-   "sentence": "- Borrowing and inheritance: `game/common/scripted_effects/00_scripted_effects.txt` lines 20–79 (loan variable setup), `game/events/death_events/death_management_events.txt` lines 95–105 and 141–291 (reassigning creditors on death), `game/events/relations_events/vassal_events.txt` lines 1033–1071, 1"
+   "sentence": "- Borrowing and inheritance: `game/common/scripted_effects/00_scripted_effects.txt` lines 20–79 (loan variable setup), `game/events/death_events/death_management_events.txt` lines 95–105 and 141–291 (reassigning creditors on death), `game/events/relations_events/vassal_events.txt` lines 1033–1071, 1205–1215 and 1275–1290 (repayment), `game/common/on_action/death.txt` lines 2417–2425."
   },
   {
    "document": "doc.mechanism-design-index-d13",
