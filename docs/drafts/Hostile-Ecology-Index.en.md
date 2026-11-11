@@ -377,7 +377,7 @@ The mobile feeding station preserves the trust signal, but it costs the labor of
 ## G04 · Raccoon Dog
 
 - Modern anxiety: The anxiety of sewer and underground emergence at night, as raccoon family groups occupied storm drains, covered waterways, and underground passages and came up onto the surface
-- Origin: When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Arc in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog.
+- Origin: When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog.
 
 The range in which raccoons appeared in cities and streams could be explained by ordinary wildlife observation, but the rule of sensing the water level before the pumps was observed only in this region after the collapse.
 
@@ -2125,11 +2125,11 @@ The Pipe Apparatus lies prone on the bypass water main. The knees and the hands 
 ## G20 · Iron-Clicker
 
 - Modern anxiety: The lower treads are stacked on the upper shelf. The shelf duty's boots stand in a row on the upper tread. The night patrol's flashlight hangs on the upper rail. A bar is on the lower dock passage.
-- Origin: The dock night duty first sees an Iron-Clicker at the dock edge under the shelves of the Arc in the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes of the dock edge, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty's work light falls on the weld toe.
+- Origin: The dock night duty first sees an Iron-Clicker at the dock edge under the shelves of the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes of the dock edge, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty's work light falls on the weld toe.
 
 At the same place the Iron-Clicker's body lies prone on the fillet-weld toe. Thin iron flakes lie layered on the chest and the ribs. A click sounds from the throat. Flange bolt heads are piled in front of the mouth. The flange with the bolts gone is on the mouth side.
 
-- Territory: Iron-Clickers gather at the dock edge under the shelves of the Arc in the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty's work light falls on the weld toe.
+- Territory: Iron-Clickers gather at the dock edge under the shelves of the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty's work light falls on the weld toe.
 
 On a night after the season has changed, the dock night duty sees the same Iron-Clicker at the lower flange and at the web plate. Bulgasari lies prone at the middle of the lower flange. The snout is long toward the bolt line, and the back plate is thick above the flange. Bolt heads and the edges of register plates are held in the mouth. Thin iron flakes lie layered over the chest, the ribs, and between the claws. Duduri has its back against the web plate in front of Bulgasari. The shoulder strikes the plate, and the sound comes from the whole plate. After the striking sound comes the click of flakes meeting.
 

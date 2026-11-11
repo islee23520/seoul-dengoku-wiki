@@ -1,0 +1,119 @@
+{
+ "generatedBy": "scripts/pages/fix5-origin-edit.mjs (reused, --rules docs/fix9-rules.json)",
+ "purpose": "W5-28 fix9 ITEM3 — 뚝섬(성동구, 정부 영토)의 'Ttukseom Union Arc'/'뚝섬 연합 Arc'와 그 생략형(Arc 선반/shelves of the Arc)에서 'Arc'를 제거한다. 소유자 정본(바이블 §2.1·§2.3, 세 번째 게이트 리뷰 확정): Arc는 서초·강남·송파·강동 4구만 보유하므로 뚝섬 시설에 붙은 'Arc'는 낡은 진영 표지로 읽힌다. Ttukseom Union/뚝섬 연합 자체는 지리·운영 명칭으로 보존한다.",
+ "policy": "정확 문장 치환: 각 초안 파일에서 old가 정확히 expect회 나올 때만 전부 치환한다. 위반 시 exit 21, 아무 파일도 쓰지 않는다. 앵커 id·마크다운 제목 수·행동 사실은 보존하고 'Arc' 낱말만 지운다. 규격맹 평의회 등 다른 서술은 건드리지 않는다. 기저 트리 bb3949e416150a611586f873b59f12067aa51aed.",
+ "rules": [
+  {
+   "id": "F9-G04K-01",
+   "file": "Hostile-Group-G04.ko.md",
+   "old": "뚝섬 연합 Arc ",
+   "new": "뚝섬 연합 ",
+   "expect": 4,
+   "reason": "뚝섬 연합 뒤 낡은 진영 표지 'Arc' 제거(펌프장·펌프 옆·펌프 지선·펌프장 하부 4곳)"
+  },
+  {
+   "id": "F9-G04K-02",
+   "file": "Hostile-Group-G04.ko.md",
+   "old": "뚝섬 연합 Arc의",
+   "new": "뚝섬 연합의",
+   "expect": 1,
+   "reason": "서식권 기록 소유격형 동일 표지 제거(519줄)"
+  },
+  {
+   "id": "F9-G04E-01",
+   "file": "Hostile-Group-G04.en.md",
+   "old": "of the Arc in the Ttukseom Union",
+   "new": "of the Ttukseom Union",
+   "expect": 3,
+   "reason": "EN 전치사형 표지 제거(pumping station/pumps x2, 12·22·519줄)"
+  },
+  {
+   "id": "F9-G04E-02",
+   "file": "Hostile-Group-G04.en.md",
+   "old": "Ttukseom Union Arc pump",
+   "new": "Ttukseom Union pump",
+   "expect": 1,
+   "reason": "EN 직접 결합형 표지 제거(262줄)"
+  },
+  {
+   "id": "F9-G04E-03",
+   "file": "Hostile-Group-G04.en.md",
+   "old": "the Ttukseom Union's Arc",
+   "new": "the Ttukseom Union",
+   "expect": 1,
+   "reason": "EN 소유격형 표지 제거(450줄)"
+  },
+  {
+   "id": "F9-G20K-01",
+   "file": "Hostile-Group-G20.ko.md",
+   "old": "뚝섬 연합 Arc 선반",
+   "new": "뚝섬 연합 선반",
+   "expect": 4,
+   "reason": "뚝섬 연합 뒤 낡은 진영 표지 'Arc' 제거(12·22·23·55줄)"
+  },
+  {
+   "id": "F9-G20K-02",
+   "file": "Hostile-Group-G20.ko.md",
+   "old": "불가사리가 Arc 선반",
+   "new": "불가사리가 선반",
+   "expect": 1,
+   "reason": "같은 선반을 가리키는 생략형 표지 제거(57줄, 문맥상 같은 뚝섬 연합 선반)"
+  },
+  {
+   "id": "F9-G20K-03",
+   "file": "Hostile-Group-G20.ko.md",
+   "old": "Arc 선반의 철판이",
+   "new": "선반의 철판이",
+   "expect": 1,
+   "reason": "같은 선반을 가리키는 생략형 표지 제거(115줄)"
+  },
+  {
+   "id": "F9-G20E-01",
+   "file": "Hostile-Group-G20.en.md",
+   "old": "the shelves of the Arc in the Ttukseom Union",
+   "new": "the shelves of the Ttukseom Union",
+   "expect": 4,
+   "reason": "EN 전치사형 표지 제거(12·22·23·55줄)"
+  },
+  {
+   "id": "F9-G20E-02",
+   "file": "Hostile-Group-G20.en.md",
+   "old": "under the shelves of the Arc.",
+   "new": "under the shelves.",
+   "expect": 1,
+   "reason": "EN 생략형 표지 제거(57줄, 같은 뚝섬 연합 선반)"
+  },
+  {
+   "id": "F9-G20E-03",
+   "file": "Hostile-Group-G20.en.md",
+   "old": "from the shelves of the Arc are",
+   "new": "from the shelves are",
+   "expect": 1,
+   "reason": "EN 생략형 표지 제거(115줄)"
+  },
+  {
+   "id": "F9-HEIK-01",
+   "file": "Hostile-Ecology-Index.ko.md",
+   "old": "뚝섬 연합 Arc ",
+   "new": "뚝섬 연합 ",
+   "expect": 3,
+   "reason": "뚝섬 연합 뒤 낡은 진영 표지 'Arc' 제거(380·2128·2132줄)"
+  },
+  {
+   "id": "F9-HEIE-01",
+   "file": "Hostile-Ecology-Index.en.md",
+   "old": "pumps of the Arc in the Ttukseom Union",
+   "new": "pumps of the Ttukseom Union",
+   "expect": 1,
+   "reason": "EN 전치사형 표지 제거(380줄)"
+  },
+  {
+   "id": "F9-HEIE-02",
+   "file": "Hostile-Ecology-Index.en.md",
+   "old": "shelves of the Arc in the Ttukseom Union",
+   "new": "shelves of the Ttukseom Union",
+   "expect": 2,
+   "reason": "EN 전치사형 표지 제거(2128·2132줄)"
+  }
+ ]
+}

@@ -7068,7 +7068,7 @@ The mobile feeding station preserves the trust signal, but it costs the labor of
 ## G04 · Raccoon Dog
 
 - Modern anxiety: The anxiety of sewer and underground emergence at night, as raccoon family groups occupied storm drains, covered waterways, and underground passages and came up onto the surface
-- Origin: When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Arc in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog.
+- Origin: When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog.
 
 The range in which raccoons appeared in cities and streams could be explained by ordinary wildlife observation, but the rule of sensing the water level before the pumps was observed only in this region after the collapse.
 
@@ -8816,11 +8816,11 @@ The Pipe Apparatus lies prone on the bypass water main. The knees and the hands 
 ## G20 · Iron-Clicker
 
 - Modern anxiety: The lower treads are stacked on the upper shelf. The shelf duty''s boots stand in a row on the upper tread. The night patrol''s flashlight hangs on the upper rail. A bar is on the lower dock passage.
-- Origin: The dock night duty first sees an Iron-Clicker at the dock edge under the shelves of the Arc in the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes of the dock edge, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty''s work light falls on the weld toe.
+- Origin: The dock night duty first sees an Iron-Clicker at the dock edge under the shelves of the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes of the dock edge, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty''s work light falls on the weld toe.
 
 At the same place the Iron-Clicker''s body lies prone on the fillet-weld toe. Thin iron flakes lie layered on the chest and the ribs. A click sounds from the throat. Flange bolt heads are piled in front of the mouth. The flange with the bolts gone is on the mouth side.
 
-- Territory: Iron-Clickers gather at the dock edge under the shelves of the Arc in the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty''s work light falls on the weld toe.
+- Territory: Iron-Clickers gather at the dock edge under the shelves of the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty''s work light falls on the weld toe.
 
 On a night after the season has changed, the dock night duty sees the same Iron-Clicker at the lower flange and at the web plate. Bulgasari lies prone at the middle of the lower flange. The snout is long toward the bolt line, and the back plate is thick above the flange. Bolt heads and the edges of register plates are held in the mouth. Thin iron flakes lie layered over the chest, the ribs, and between the claws. Duduri has its back against the web plate in front of Bulgasari. The shoulder strikes the plate, and the sound comes from the whole plate. After the striking sound comes the click of flakes meeting.
 
@@ -9602,7 +9602,7 @@ H03이 공격성 군집으로 묶어도 HC03 중재자는 개체별 인식표·�
 ## G04 · 너구리
 
 - 현대 불안: 빗물관·복개수로·지하 통로를 너구리 가족군이 점유해 야간에 지상으로 올라오는 하수·지하 출몰 불안
-- 기원: 중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 뚝섬 연합 Arc 펌프 옆 관로와 마포 연합 여의도출자연합회 지하 케이블 갤러리에 정착해 너구리가 됐다.
+- 기원: 중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 뚝섬 연합 펌프 옆 관로와 마포 연합 여의도출자연합회 지하 케이블 갤러리에 정착해 너구리가 됐다.
 
 너구리의 도시·하천 출현 범위는 일반적인 야생동물 관찰로 설명되지만, 펌프보다 먼저 수위를 감지하는 규칙은 붕괴 이후 이 지역에서만 관측됐다.
 
@@ -11350,11 +11350,11 @@ HP04가 킬로정마다 봉인 서를 대조해 편성을 떼어 내는 동안 �
 ## G20 · 철컥이
 
 - 현대 불안: 하부 발판이 상부 선반에 포개져 있다. 선반 당직의 장화가 상부 발판 위에 나란하다. 야간 순찰의 손전등이 상부 난간에 걸려 있다. 하부 도크 통로에는 쇄정이 걸려 있다.
-- 기원: 도크 야간 당직이 뚝섬 연합 Arc 선반 하부 도크 가장자리에서 철컥이를 처음 본다. 해무가 짙은 주의 밤이다. 도크 가장자리 볼트 구멍에 얇은 철편이 겹쳐 있으며 필릿 용접 토우에도 같은 철편이 걸쳐 있다. 해무가 철편 사이에 맺혀 있다. 철편이 맞닿는 곳마다 철컥 소리가 난다. 도크 야간 당직의 작업등이 용접 토우를 비춘다.
+- 기원: 도크 야간 당직이 뚝섬 연합 선반 하부 도크 가장자리에서 철컥이를 처음 본다. 해무가 짙은 주의 밤이다. 도크 가장자리 볼트 구멍에 얇은 철편이 겹쳐 있으며 필릿 용접 토우에도 같은 철편이 걸쳐 있다. 해무가 철편 사이에 맺혀 있다. 철편이 맞닿는 곳마다 철컥 소리가 난다. 도크 야간 당직의 작업등이 용접 토우를 비춘다.
 
 같은 자리에서 철컥이의 몸이 필릿 용접 토우에 엎드려 있다. 가슴과 갈비에 얇은 철편이 겹쳐 있다. 목에서 철컥 소리가 난다. 플랜지 볼트 머리가 입 앞에 쌓여 있다. 볼트가 빠진 플랜지가 입 쪽에 있다.
 
-- 영역: 뚝섬 연합 Arc 선반 하부 도크 가장자리에 철컥이가 모인다. 해무가 짙은 주의 밤이다. 볼트 구멍에 얇은 철편이 겹쳐 있으며 필릿 용접 토우에도 같은 철편이 걸쳐 있다. 해무가 철편 사이에 맺혀 있다. 철편이 맞닿는 곳마다 철컥 소리가 난다. 도크 야간 당직의 작업등이 용접 토우를 비춘다.
+- 영역: 뚝섬 연합 선반 하부 도크 가장자리에 철컥이가 모인다. 해무가 짙은 주의 밤이다. 볼트 구멍에 얇은 철편이 겹쳐 있으며 필릿 용접 토우에도 같은 철편이 걸쳐 있다. 해무가 철편 사이에 맺혀 있다. 철편이 맞닿는 곳마다 철컥 소리가 난다. 도크 야간 당직의 작업등이 용접 토우를 비춘다.
 
 계절이 바뀐 밤, 도크 야간 당직은 하부 플랜지와 웨브 판에서 같은 철컥이를 본다. 불가사리가 하부 플랜지 한가운데 엎드려 있다. 코가 볼트선 쪽으로 길며 등판이 플랜지 위로 두껍다. 입에 볼트 머리와 명부 철판 모서리가 물려 있다. 가슴과 갈비와 발톱 사이에 얇은 철편이 겹쳐 있다. 두두리가 불가사리 앞 웨브 판에 등을 대고 있다. 어깨가 판을 두드리며 판 전체에서 소리가 난다. 두드리는 소리 뒤로 철편이 맞닿는 철컥 소리가 난다.
 
@@ -20792,7 +20792,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Common species and variants
 
-They were raccoon family groups going back and forth between the pipelines connected to the pumping station of the Arc in the Ttukseom Union, the shelters beneath the workshops, and the cable galleries of the Yeouido Investment Federation in the Mapo Union. By day they stayed beneath manholes and by night they circled the alleys within about 50 meters of the exits, eating aquatic food, trash, carcasses, and microbial mats. The elder female held priority only in moving the young and at narrow passages, and there was no battle command.
+They were raccoon family groups going back and forth between the pipelines connected to the pumping station of the Ttukseom Union, the shelters beneath the workshops, and the cable galleries of the Yeouido Investment Federation in the Mapo Union. By day they stayed beneath manholes and by night they circled the alleys within about 50 meters of the exits, eating aquatic food, trash, carcasses, and microbial mats. The elder female held priority only in moving the young and at narrow passages, and there was no battle command.
 
 From conduit patrol to conduit bones, these were ordinary raccoons adapted to the urban streams. Climbing to a high ventilation room before the pumps did was family learning shared from flood memory, not a supernatural power, and the dry refuge cavities and cable trays were hiding places animals had filled, not machine strongholds. This batch held no mutant individuals, and the missing E13 through E16 belonged to an excluded batch.
 
@@ -20802,7 +20802,7 @@ From conduit patrol to conduit bones, these were ordinary raccoons adapted to th
 
 | Item | Record |
 |---|---|
-| Origin | When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Arc in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog. / The range in which raccoons appeared in cities and streams could be explained by ordinary wildlife observation, but the rule of sensing the water level before the pumps was observed only in this region after the collapse. |
+| Origin | When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog. / The range in which raccoons appeared in cities and streams could be explained by ordinary wildlife observation, but the rule of sensing the water level before the pumps was observed only in this region after the collapse. |
 | Habitat and movement | The core habitat was the pump-house connecting pipes of the Ttukseom Union and the dry refuge cavities under the workshops. / When flood stage rose they dispersed into the Mapo Union''s transmission underground galleries and vents, and when a cold wave and a logistics break from the XT04 Duman River Far East Theater changed feed density they moved briefly onto the eastern branch lines. / By day they patrolled the pipes, and by night the surface alleys within 50m. |
 | Food and energy | Aquatic prey, organic refuse, and carcass remains were the main resources, and dry hiding places and low flow were the upkeep cost. / When HC04 the Ttukseom Heat-Source House skipped dredging the pipe deposits, the food film thickened and density rose, and when it over-dredged, the family groups were pushed out into the surface markets. / Droppings and biofilm masked the water-quality sensor readings and delayed pump judgment. |
 | Life cycle and upkeep | In the dry season each family group used its own dry hiding place and feeding ground, and before the rain they moved their kits into the high ventilation rooms along trunks where the water rose first. / After a flood, when the food film thickened, several families shared the same pipe by time slot, and when hiding places flooded in succession they dispersed into the surface alleys. |
@@ -21042,7 +21042,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 | Common species, variants and command scope | Current-Whiskers presses its belly to the low-flow floor beside a pump and reads the current with its whiskers. When a pipe fills, that same sense goes blind, setting its niche apart from surface patrols. |
 
 - Role and Body: It was an ordinary ecological individual of the Raccoon Dog that pressed its belly to the floor of the low-current pipes beside the pumps and read the direction and strength of the current with its whiskers. Its build was smaller than a surface adult''s, and its paw pads were broad to suit slippery concrete. It felt the change in pressure before the water rose with its feet and chest, but when the pipe filled or the air layer broke off, the same sense went dead.
-- Origin: After the collapse, once the inspection of the Jungnang and Tancheon trunk lines broke off, it followed aquatic food and stayed in the Ttukseom Union Arc pump branch that people had emptied. The saying that it knew the water level before the pumps was family learning observed only in this region, not an accident of any real institution.
+- Origin: After the collapse, once the inspection of the Jungnang and Tancheon trunk lines broke off, it followed aquatic food and stayed in the Ttukseom Union pump branch that people had emptied. The saying that it knew the water level before the pumps was family learning observed only in this region, not an accident of any real institution.
 - Habitat: By day it clung to the floors of slow-current pipes and the ledges beneath the manholes, and even at night it hardly went out toward the exits. When the flood level rose it only moved to a high joint of the same pipe; the Mapo Union gallery was not within this individual''s daily range.
 - Needs: Small aquatic food and the microbial film on the pipe walls were its staple food, and a gentle current had to be kept for it to save swimming energy. When disinfectant flowed thick, its whiskers were dulled for several days and it lost track of where the food was.
 - Life Cycle and Maintenance: In the dry season it went back and forth along only one branch line and rubbed its whiskers to remove foreign matter. When continuous rain lifted the floor, it moved its own body to the joints first, not its young, and after the thaw it came back to the familiar low-current stretch.
@@ -21230,7 +21230,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 | Battlefield role | Shelter occupancy |
 | Common species, variants and command scope | The dry refuge keeper braces its shoulders inside the dry refuge chamber beneath the Ttukseom Union pump station, filling the space so other families cannot enter all at once. It is not a fixed command post but an animal guarding dry storage space with a low current. |
 
-- Role and body: An environmental-stronghold form of the Raccoon Dog, this burrow keeper has settled into the dry refuge chamber beneath the pump station of the Ttukseom Union''s Arc, where its body fits closely. Its shoulders catch against a ceiling joint, physically filling the chamber so other families cannot enter all at once. It senses airflow with its flanks more than with its whiskers.
+- Role and body: An environmental-stronghold form of the Raccoon Dog, this burrow keeper has settled into the dry refuge chamber beneath the pump station of the Ttukseom Union, where its body fits closely. Its shoulders catch against a ceiling joint, physically filling the chamber so other families cannot enter all at once. It senses airflow with its flanks more than with its whiskers.
 - Origin: A family that used a refuge chamber vacated by people as a dry-season sleeping place refused to give up the dry space even after sending its young to the high ventilation room during a flood, producing this stronghold animal. The chamber is not a fixed command post but dry, low-current storage space.
 - Habitat: Its entire range is the dry shelf inside the refuge chamber and the ledge at its entrance. When the water rises above the entrance, it gives up the chamber and moves to the ventilation room. During a cold snap, the chamber adjoins the only unfrozen pump access route, putting it in the same space as maintenance workers.
 - Needs: Staying dry itself saves energy, and it survives on the small amount of scraps washed into the chamber. Converting the chamber into a human-only inspection route shifts the cost of losing its stronghold onto the surface alleys.
@@ -21299,7 +21299,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 
 ## Habitat record
 
-The Raccoon Dog were raccoon family groups going back and forth between the pipelines connected to the pumping station of the Arc in the Ttukseom Union, the dry shelters beneath the workshops, and the underground cable galleries of the Yeouido Investment Federation in the Mapo Union.
+The Raccoon Dog were raccoon family groups going back and forth between the pipelines connected to the pumping station of the Ttukseom Union, the dry shelters beneath the workshops, and the underground cable galleries of the Yeouido Investment Federation in the Mapo Union.
 
 After the collapse, when the inspection cycles of the Jungnang, Tancheon, and inner storm-water trunks were cut off, animals that had moved following aquatic food, trash, and carcass remains settled in the pipelines people had abandoned.
 
@@ -21480,7 +21480,7 @@ An external platform did not have to share the passage, but it accepted installa
 
 ## 공통종과 변이종
 
-뚝섬 연합 Arc 펌프장 연결 관로와 공방 하부 대피공, 마포 연합 여의도출자연합회 케이블 갤러리를 오가는 너구리 가족군이다. 낮에는 맨홀 아래, 밤에는 출구 약 50미터 골목을 돌며 수생 먹이와 쓰레기, 사체와 미생물막을 먹는다. 연장자 암컷은 새끼 이동과 좁은 통과에서만 우선권을 갖고 전투 지휘는 없다.
+뚝섬 연합 펌프장 연결 관로와 공방 하부 대피공, 마포 연합 여의도출자연합회 케이블 갤러리를 오가는 너구리 가족군이다. 낮에는 맨홀 아래, 밤에는 출구 약 50미터 골목을 돌며 수생 먹이와 쓰레기, 사체와 미생물막을 먹는다. 연장자 암컷은 새끼 이동과 좁은 통과에서만 우선권을 갖고 전투 지휘는 없다.
 
 관로순회부터 관로잔뼈까지는 도시 하천에 적응한 보통의 너구리다. 펌프보다 먼저 높은 환기실로 오르는 일은 침수 기억을 나눈 가족 학습이지 초능력이 아니며, 마른대피공과 케이블 트레이는 동물이 채운 은신처이지 기계 거점이 아니다. 이 배치에는 돌연변이 개체가 없고, 빠진 E13부터 E16은 제외된 배치의 몫이다.
 
@@ -21490,7 +21490,7 @@ An external platform did not have to share the passage, but it accepted installa
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 뚝섬 연합 Arc 펌프 옆 관로와 마포 연합 여의도출자연합회 지하 케이블 갤러리에 정착해 너구리가 됐다. / 너구리의 도시·하천 출현 범위는 일반적인 야생동물 관찰로 설명되지만, 펌프보다 먼저 수위를 감지하는 규칙은 붕괴 이후 이 지역에서만 관측됐다. |
+| 기원 | 중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 뚝섬 연합 펌프 옆 관로와 마포 연합 여의도출자연합회 지하 케이블 갤러리에 정착해 너구리가 됐다. / 너구리의 도시·하천 출현 범위는 일반적인 야생동물 관찰로 설명되지만, 펌프보다 먼저 수위를 감지하는 규칙은 붕괴 이후 이 지역에서만 관측됐다. |
 | 서식·이동 | 핵심 서식은 뚝섬 연합 펌프장 연결 관로와 공방 하부의 건조 대피공이다. / 홍수위가 오르면 마포 연합 송신 지하 갤러리와 환기구로 분산하고, XT04 두만강극동전구 방면 한파·물류 단절이 사료 밀도를 바꾸면 동부 지선으로 잠시 이동한다. / 낮에는 관로, 밤에는 지상 골목 50m 안을 순회한다. |
 | 먹이·에너지 | 수생 먹이·유기 쓰레기·사체 잔여가 주 자원이고, 건조한 은신처와 낮은 유속이 유지 비용이다. / HC04 뚝섬열원가이 관로 퇴적 준설을 건너뛰면 먹이막이 두꺼워져 밀도가 오르고, 과준설하면 가족군이 지상 시장으로 밀려 난다. / 배설물과 미생물막이 수질 센서 값을 가려 펌프 판단을 늦춘다. |
 | 생애·정비 | 건기에는 가족군마다 건조 은신처와 먹이터를 따로 쓰고, 강우 전에 수위가 먼저 오르는 간선에서 높은 환기실로 새끼를 옮긴다. / 홍수 뒤 먹이막이 두꺼워지면 여러 가족이 시간대를 나눠 같은 관로를 쓰며, 은신처가 연속 수몰되면 지상 골목으로 분산한다. |
@@ -21730,7 +21730,7 @@ G04-SC1에서는 암컷을 따라 환기실로 오르는 일반 개체로 경보
 | 공통종·변이와 지휘 범위 | 물살수염은 펌프 옆 낮은 유속 바닥에 배를 붙이고 수염으로 물살을 읽는 몸이다. 관이 가득 차면 같은 감각이 먹통이 되어 지상 순회와는 자리가 갈린다. |
 
 - 역할·신체: 너구리의 일반 생태 개체로, 펌프 옆 낮은 유속 관로 바닥에 배를 붙이고 수염으로 물살의 방향과 세기를 읽는다. 체구는 지상 성체보다 작고 발바닥은 미끄러운 콘크리트에 맞게 넓다. 수위가 오르기 전 압력 변화를 발과 가슴으로 느끼지만, 관이 가득 차거나 공기층이 끊기면 같은 감각이 먹통이 된다.
-- 기원: 붕괴 뒤 중랑·탄천 간선 점검이 끊긴 뒤, 수생 먹이를 따라 사람이 비운 뚝섬 연합 Arc 펌프 지선에 남았다. 펌프보다 먼저 수위를 안다는 말은 이 지역에서만 관측된 가족 학습이며 현실 기관의 사고가 아니다.
+- 기원: 붕괴 뒤 중랑·탄천 간선 점검이 끊긴 뒤, 수생 먹이를 따라 사람이 비운 뚝섬 연합 펌프 지선에 남았다. 펌프보다 먼저 수위를 안다는 말은 이 지역에서만 관측된 가족 학습이며 현실 기관의 사고가 아니다.
 - 서식: 낮에는 유속이 느린 관 바닥과 맨홀 아래 턱에 붙고, 밤에도 출구 쪽으로는 거의 나가지 않는다. 홍수위가 오르면 같은 관의 높은 이음새로 옮길 뿐 마포 연합 갤러리까지는 이 개체의 일상 범위가 아니다.
 - 필요: 작은 수생 먹이와 관벽에 붙은 미생물막이 주식이며, 헤엄 에너지를 아끼려면 완만한 물살이 유지되어야 한다. 소독제가 진하게 흐르면 수염이 며칠 무뎌져 먹이 위치를 놓친다.
 - 생애·정비: 건기에는 한 지선만 반복해 다니며 수염을 문질러 이물질을 뗀다. 연속 강우로 바닥이 뜨면 새끼가 아니라 자기 몸부터 이음새로 옮기고, 해빙 뒤에는 익숙한 낮은 유속 구간으로 돌아온다.
@@ -21918,7 +21918,7 @@ G04-SC1에서는 암컷을 따라 환기실로 오르는 일반 개체로 경보
 | 전장 역할 | 은신 점유 |
 | 공통종·변이와 지휘 범위 | 마른대피공지기는 뚝섬 연합 펌프장 하부 건조 대피공에 어깨를 걸어 다른 가족이 한꺼번에 들어오지 못하게 채우는 몸이다. 고정 지휘소가 아니라 마르고 낮은 유속의 저장 공간을 지키는 동물이다. |
 
-- 역할·신체: 너구리의 환경 거점형으로, 뚝섬 연합 Arc 펌프장 하부 건조 대피공에 몸집이 맞게 자리 잡은 굴 지기이다. 어깨 높이가 공의 천장 이음에 걸려 다른 가족이 한꺼번에 들어오지 못하게 물리적으로 채운다. 수염보다 공기 흐름을 옆구리로 느낀다.
+- 역할·신체: 너구리의 환경 거점형으로, 뚝섬 연합 펌프장 하부 건조 대피공에 몸집이 맞게 자리 잡은 굴 지기이다. 어깨 높이가 공의 천장 이음에 걸려 다른 가족이 한꺼번에 들어오지 못하게 물리적으로 채운다. 수염보다 공기 흐름을 옆구리로 느낀다.
 - 기원: 사람이 비운 대피공을 건기의 잠자리로 쓰던 가족이, 홍수 때 높은 환기실로 새끼를 보낸 뒤에도 이 마른 공간을 포기하지 않아 거점 개체가 되었다. 고정 지휘소가 아니라 마르고 낮은 유속의 저장 공간이다.
 - 서식: 대피공 안쪽 건조 선반과 공 입구의 턱이 전부이며, 수위가 입구를 넘으면 포기하고 환기실로 옮긴다. 한파에는 이 공이 유일한 얼지 않은 펌프 접근로와 맞붙어 정비 인력과 공간이 겹친다.
 - 필요: 건조함 자체가 에너지 절약이며, 공 안에 흘러든 소량 잔여만으로 버틴다. 공을 인간 전용 점검로로 바꾸면 거점 비용을 지상 골목에 전가한다.
@@ -21987,7 +21987,7 @@ G04-SC1에서는 암컷을 따라 환기실로 오르는 일반 개체로 경보
 
 ## 서식권 기록
 
-너구리는 뚝섬 연합 Arc의 펌프장 연결 관로와 공방 하부 건조 대피공, 마포 연합 여의도출자연합회의 지하 케이블 갤러리를 오가는 너구리 가족군이다.
+너구리는 뚝섬 연합의 펌프장 연결 관로와 공방 하부 건조 대피공, 마포 연합 여의도출자연합회의 지하 케이블 갤러리를 오가는 너구리 가족군이다.
 
 붕괴 뒤 중랑·탄천·내부 빗물 간선의 점검 주기가 끊기자 수생 먹이와 쓰레기, 사체 잔여를 따라 이동하던 개체들이 사람이 비운 관로에 정착했다.
 
@@ -39288,7 +39288,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Common species and variants
 
-The core place is the bolt holes and fillet-weld toes at the dock edge under the shelves of the Arc in the Ttukseom Union. In a week of thick sea fog the flakes run on into the joint of the ground coil that was brought in. Salt-cargo packing fragments from the Incheon Trust Theater are wedged in those holes. A click sounds wherever the flakes meet.
+The core place is the bolt holes and fillet-weld toes at the dock edge under the shelves of the Ttukseom Union. In a week of thick sea fog the flakes run on into the joint of the ground coil that was brought in. Salt-cargo packing fragments from the Incheon Trust Theater are wedged in those holes. A click sounds wherever the flakes meet.
 
 Bolts and plates gather at Bulgasari''s mouth. Duduri is at the place that strikes the web plate. The One-legged Dokkaebi is on the angle where one foot stands. The flakes of the three meet on the same bolt line and sound a click.
 
@@ -39298,8 +39298,8 @@ Bolts and plates gather at Bulgasari''s mouth. Duduri is at the place that strik
 
 | Item | Record |
 |---|---|
-| Origin | The dock night duty first sees an Iron-Clicker at the dock edge under the shelves of the Arc in the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes of the dock edge, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty''s work light falls on the weld toe. / At the same place the Iron-Clicker''s body lies prone on the fillet-weld toe. Thin iron flakes lie layered on the chest and the ribs. A click sounds from the throat. Flange bolt heads are piled in front of the mouth. The flange with the bolts gone is on the mouth side. |
-| Habitat and movement | Iron-Clickers gather at the dock edge under the shelves of the Arc in the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty''s work light falls on the weld toe. / On a night after the season has changed, the dock night duty sees the same Iron-Clicker at the lower flange and at the web plate. Bulgasari lies prone at the middle of the lower flange. The snout is long toward the bolt line, and the back plate is thick above the flange. Bolt heads and the edges of register plates are held in the mouth. Thin iron flakes lie layered over the chest, the ribs, and between the claws. Duduri has its back against the web plate in front of Bulgasari. The shoulder strikes the plate, and the sound comes from the whole plate. After the striking sound comes the click of flakes meeting. / On that same night the One-legged Dokkaebi stands on one foot on the angle under the dock rail. The sole spans two bolt heads, and the iron bar in the hand lies across the fillet-weld toe. The wet of the same foot is in the next hole of the angle as well. A click sounds from the flakes at the end of the iron bar. The dock night duty bars the lower shelf passage. The work light and the torque wrench are on the upper shelf. Spare washers are mixed into the flake pile at the weld toe. The flashlight of the upper shelf is above the flakes of the fillet-weld toe. |
+| Origin | The dock night duty first sees an Iron-Clicker at the dock edge under the shelves of the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes of the dock edge, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty''s work light falls on the weld toe. / At the same place the Iron-Clicker''s body lies prone on the fillet-weld toe. Thin iron flakes lie layered on the chest and the ribs. A click sounds from the throat. Flange bolt heads are piled in front of the mouth. The flange with the bolts gone is on the mouth side. |
+| Habitat and movement | Iron-Clickers gather at the dock edge under the shelves of the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty''s work light falls on the weld toe. / On a night after the season has changed, the dock night duty sees the same Iron-Clicker at the lower flange and at the web plate. Bulgasari lies prone at the middle of the lower flange. The snout is long toward the bolt line, and the back plate is thick above the flange. Bolt heads and the edges of register plates are held in the mouth. Thin iron flakes lie layered over the chest, the ribs, and between the claws. Duduri has its back against the web plate in front of Bulgasari. The shoulder strikes the plate, and the sound comes from the whole plate. After the striking sound comes the click of flakes meeting. / On that same night the One-legged Dokkaebi stands on one foot on the angle under the dock rail. The sole spans two bolt heads, and the iron bar in the hand lies across the fillet-weld toe. The wet of the same foot is in the next hole of the angle as well. A click sounds from the flakes at the end of the iron bar. The dock night duty bars the lower shelf passage. The work light and the torque wrench are on the upper shelf. Spare washers are mixed into the flake pile at the weld toe. The flashlight of the upper shelf is above the flakes of the fillet-weld toe. |
 | Food and energy | Register plates, flange bolts, and spare washers are gathered at Bulgasari''s mouth. A salt-cargo packing band from the Incheon Trust Theater is wedged in the same bolt holes. A ground coil of the Mapo Union Yeouido Investment Federation lies at the dock intake. |
 | Life cycle and upkeep | A hand is on the wall-side plate, and a knocking sound comes from the plate. The same body lies prone on the fillet-weld toe. A click sounds from the throat. Thin flakes from the wall plate lie layered on the chest. |
 | Senses | The Iron-Clicker''s chest is toward the girder where the crane''s vibration comes down. The face is toward the fillet-weld toe where the steel and the grounding copper meet. The mouth is toward the holes that still hold bolt heads. The One-legged Dokkaebi''s foot is toward the side where the angle''s iron overlaps. |
@@ -39331,9 +39331,9 @@ With the mid-flange where Bulgasari is as the axis, the Iron-Clickers stand alon
 | Type | Infected person |
 | Battlefield unit | Single individual |
 | Battlefield role | The place at mid-flange where plates and bolts gather |
-| Common species, variants and command scope | It is at the middle of the lower flange of the dock under the shelves of the Arc in the Ttukseom Union. |
+| Common species, variants and command scope | It is at the middle of the lower flange of the dock under the shelves of the Ttukseom Union. |
 
-- Bulgasari lies prone at the middle of the flange of the dock under the shelves of the Arc.
+- Bulgasari lies prone at the middle of the flange of the dock under the shelves.
 - The snout is long along the bolt line, and the back plate rises above the flange.
 - Bolt heads and register plates are held in the mouth.
 - Thin iron flakes lie layered over the chest and between the claws, and the covered width is greater than the flange.
@@ -39391,7 +39391,7 @@ On a night in a week of thick sea fog the steel of the dock under the shelves is
 
 A ground coil lies at the dock intake. The coil''s copper meets the fillet of the dock steel, and flakes lie layered where they meet. A Mapo Union Yeouido Investment Federation tag hangs on the coil. A click sounds where the copper and the steel meet.
 
-Iron plates from the shelves of the Arc are down on the lower flange. The edges of the plates are held in Bulgasari''s mouth, and the remaining plates lie under the flakes of the chest. The holes of the plates meet the flange bolt line.
+Iron plates from the shelves are down on the lower flange. The edges of the plates are held in Bulgasari''s mouth, and the remaining plates lie under the flakes of the chest. The holes of the plates meet the flange bolt line.
 
 The Iron-Clickers on the bolt line lie prone one hole apart. The middle place is Bulgasari on the flange, and the last hole is the one foot on the angle. Duduri''s knee is caught on the lower bolt in front of the line.
 
@@ -39410,7 +39410,7 @@ Bolts out of the dock rail are in the flake pile at the weld toe. The dock night
 
 ## 공통종과 변이종
 
-주된 자리는 뚝섬 연합 Arc 선반 하부 도크 가장자리의 볼트 구멍과 필릿 용접 토우다. 해무가 짙은 주에는 반입 접지 코일 이음에 철편이 이어진다. 인천신탁전구의 염분 화물 포장 파편이 그 구멍에 끼여 있다. 철편이 맞닿는 곳마다 철컥 소리가 난다.
+주된 자리는 뚝섬 연합 선반 하부 도크 가장자리의 볼트 구멍과 필릿 용접 토우다. 해무가 짙은 주에는 반입 접지 코일 이음에 철편이 이어진다. 인천신탁전구의 염분 화물 포장 파편이 그 구멍에 끼여 있다. 철편이 맞닿는 곳마다 철컥 소리가 난다.
 
 불가사리 입가에 볼트와 철판이 모인다. 두두리는 웨브 판을 두드리는 자리에 있다. 외발도깨비는 한 발이 딛는 앵글에 있다. 셋의 철편은 같은 볼트선에서 맞닿아 철컥 소리를 낸다.
 
@@ -39420,8 +39420,8 @@ Bolts out of the dock rail are in the flake pile at the weld toe. The dock night
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 도크 야간 당직이 뚝섬 연합 Arc 선반 하부 도크 가장자리에서 철컥이를 처음 본다. 해무가 짙은 주의 밤이다. 도크 가장자리 볼트 구멍에 얇은 철편이 겹쳐 있으며 필릿 용접 토우에도 같은 철편이 걸쳐 있다. 해무가 철편 사이에 맺혀 있다. 철편이 맞닿는 곳마다 철컥 소리가 난다. 도크 야간 당직의 작업등이 용접 토우를 비춘다. / 같은 자리에서 철컥이의 몸이 필릿 용접 토우에 엎드려 있다. 가슴과 갈비에 얇은 철편이 겹쳐 있다. 목에서 철컥 소리가 난다. 플랜지 볼트 머리가 입 앞에 쌓여 있다. 볼트가 빠진 플랜지가 입 쪽에 있다. |
-| 서식·이동 | 뚝섬 연합 Arc 선반 하부 도크 가장자리에 철컥이가 모인다. 해무가 짙은 주의 밤이다. 볼트 구멍에 얇은 철편이 겹쳐 있으며 필릿 용접 토우에도 같은 철편이 걸쳐 있다. 해무가 철편 사이에 맺혀 있다. 철편이 맞닿는 곳마다 철컥 소리가 난다. 도크 야간 당직의 작업등이 용접 토우를 비춘다. / 계절이 바뀐 밤, 도크 야간 당직은 하부 플랜지와 웨브 판에서 같은 철컥이를 본다. 불가사리가 하부 플랜지 한가운데 엎드려 있다. 코가 볼트선 쪽으로 길며 등판이 플랜지 위로 두껍다. 입에 볼트 머리와 명부 철판 모서리가 물려 있다. 가슴과 갈비와 발톱 사이에 얇은 철편이 겹쳐 있다. 두두리가 불가사리 앞 웨브 판에 등을 대고 있다. 어깨가 판을 두드리며 판 전체에서 소리가 난다. 두드리는 소리 뒤로 철편이 맞닿는 철컥 소리가 난다. / 같은 밤, 외발도깨비가 도크 난간 하부 앵글에 한 발로 서 있다. 발바닥이 볼트 머리 두 개에 걸쳐 있으며 손의 쇠막대가 필릿 용접 토우에 걸쳐 있다. 앵글의 다음 구멍에도 같은 발의 물기가 있다. 쇠막대 끝의 철편에서 철컥 소리가 난다. 도크 야간 당직이 선반 하부 통로에 쇄정을 건다. 작업등과 토크 렌치가 상부 선반에 있다. 예비 와셔가 용접 토우의 철편 더미에 섞여 있다. 상부 선반의 손전등이 필릿 용접 토우의 철편 위에 있다. |
+| 기원 | 도크 야간 당직이 뚝섬 연합 선반 하부 도크 가장자리에서 철컥이를 처음 본다. 해무가 짙은 주의 밤이다. 도크 가장자리 볼트 구멍에 얇은 철편이 겹쳐 있으며 필릿 용접 토우에도 같은 철편이 걸쳐 있다. 해무가 철편 사이에 맺혀 있다. 철편이 맞닿는 곳마다 철컥 소리가 난다. 도크 야간 당직의 작업등이 용접 토우를 비춘다. / 같은 자리에서 철컥이의 몸이 필릿 용접 토우에 엎드려 있다. 가슴과 갈비에 얇은 철편이 겹쳐 있다. 목에서 철컥 소리가 난다. 플랜지 볼트 머리가 입 앞에 쌓여 있다. 볼트가 빠진 플랜지가 입 쪽에 있다. |
+| 서식·이동 | 뚝섬 연합 선반 하부 도크 가장자리에 철컥이가 모인다. 해무가 짙은 주의 밤이다. 볼트 구멍에 얇은 철편이 겹쳐 있으며 필릿 용접 토우에도 같은 철편이 걸쳐 있다. 해무가 철편 사이에 맺혀 있다. 철편이 맞닿는 곳마다 철컥 소리가 난다. 도크 야간 당직의 작업등이 용접 토우를 비춘다. / 계절이 바뀐 밤, 도크 야간 당직은 하부 플랜지와 웨브 판에서 같은 철컥이를 본다. 불가사리가 하부 플랜지 한가운데 엎드려 있다. 코가 볼트선 쪽으로 길며 등판이 플랜지 위로 두껍다. 입에 볼트 머리와 명부 철판 모서리가 물려 있다. 가슴과 갈비와 발톱 사이에 얇은 철편이 겹쳐 있다. 두두리가 불가사리 앞 웨브 판에 등을 대고 있다. 어깨가 판을 두드리며 판 전체에서 소리가 난다. 두드리는 소리 뒤로 철편이 맞닿는 철컥 소리가 난다. / 같은 밤, 외발도깨비가 도크 난간 하부 앵글에 한 발로 서 있다. 발바닥이 볼트 머리 두 개에 걸쳐 있으며 손의 쇠막대가 필릿 용접 토우에 걸쳐 있다. 앵글의 다음 구멍에도 같은 발의 물기가 있다. 쇠막대 끝의 철편에서 철컥 소리가 난다. 도크 야간 당직이 선반 하부 통로에 쇄정을 건다. 작업등과 토크 렌치가 상부 선반에 있다. 예비 와셔가 용접 토우의 철편 더미에 섞여 있다. 상부 선반의 손전등이 필릿 용접 토우의 철편 위에 있다. |
 | 먹이·에너지 | 명부 철판과 플랜지 볼트와 예비 와셔가 불가사리 입가에 모여 있다. 인천신탁전구 염분 화물 포장 띠가 같은 볼트 구멍에 끼여 있다. 마포 연합 여의도출자연합회 접지 코일이 도크 반입구에 놓여 있다. |
 | 생애·정비 | 벽 쪽 철판에 손이 닿아 있고 판에서 두드리는 소리가 난다. 같은 몸이 필릿 용접 토우에 엎드려 있다. 목에서 철컥 소리가 난다. 가슴에는 벽판의 얇은 철편이 겹쳐 있다. |
 | 감각 | 철컥이의 가슴은 크레인 진동이 내려오는 거더 쪽이다. 얼굴은 강재와 접지 구리선이 맞닿은 필릿 용접 토우 쪽이다. 입은 볼트 머리가 남은 구멍 쪽이다. 외발도깨비의 발은 앵글의 쇠가 겹친 쪽이다. |
@@ -39453,9 +39453,9 @@ Bolts out of the dock rail are in the flake pile at the weld toe. The dock night
 | 구분 | 감염자 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 플랜지 한가운데에서 철판과 볼트가 모이는 자리 |
-| 공통종·변이와 지휘 범위 | 뚝섬 연합 Arc 선반 하부 도크의 하부 플랜지 한가운데에 있다. |
+| 공통종·변이와 지휘 범위 | 뚝섬 연합 선반 하부 도크의 하부 플랜지 한가운데에 있다. |
 
-- 불가사리가 Arc 선반 하부 도크의 플랜지 한가운데 엎드려 있다.
+- 불가사리가 선반 하부 도크의 플랜지 한가운데 엎드려 있다.
 - 코가 볼트선으로 길며 등판이 플랜지 위로 솟아 있다.
 - 입에는 볼트 머리와 명부 철판이 물려 있다.
 - 가슴과 발톱 사이에 얇은 철편이 겹쳐 있으며 덮인 폭이 플랜지보다 넓다.
@@ -39513,7 +39513,7 @@ Bolts out of the dock rail are in the flake pile at the weld toe. The dock night
 
 도크 반입구에 접지 코일이 놓여 있다. 코일의 구리선이 도크 강재 필릿에 닿아 있으며 닿은 자리에 철편이 겹쳐 있다. 코일에 마포 연합 여의도출자연합회 표찰이 걸려 있다. 구리와 강재가 맞닿은 자리에서 철컥 소리가 난다.
 
-Arc 선반의 철판이 하부 플랜지에 내려와 있다. 철판의 모서리가 불가사리 입에 물려 있으며 남은 철판이 가슴의 철편 아래에 깔려 있다. 철판의 구멍은 플랜지 볼트선과 맞닿아 있다.
+선반의 철판이 하부 플랜지에 내려와 있다. 철판의 모서리가 불가사리 입에 물려 있으며 남은 철판이 가슴의 철편 아래에 깔려 있다. 철판의 구멍은 플랜지 볼트선과 맞닿아 있다.
 
 볼트선 위의 철컥이는 구멍 하나씩 떨어져 엎드려 있다. 한가운데 자리는 플랜지 위의 불가사리이며 끝 구멍은 앵글의 한 발이다. 두두리의 무릎이 줄 앞 하부 볼트에 걸려 있다.
 
