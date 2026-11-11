@@ -31,9 +31,15 @@
 
 세력 표기명은 `035-factions.sql`의 `faction` 표가 단일 원천이다: `The Government/정부`, `Free City/자유도시`, `Arc/Arc`. 공작령 id는 `121-map-titles.sql`의 `map_title` duchy 행(`geography:duchy:11620` 형식, 예: 관악구)을 그대로 쓴다.
 
-**조직 표기 매핑**(검증자 결함 3): 판독되는 산문의 옛 조직명은 위 세력 표기명으로 치환한다. 한국어: 수문국·규격맹·여의도출자연합회→자유도시, 태욱그룹·성하그룹·성하전자·동방사→아크, 대한민국정부·중앙정보부·안국총림·환적국·신내운수·흰십자단·아관사→정부. 영어: Floodgate State/Bureau·Standards League·Yeouido Investment Federation/Alliance·The Sluice·The Gauge→Free City, Taeuk Group·Seongha Group/Electronics·Jeongdong Labor Federation/Federation·Registry/Roster/Myeongbu Church·Eastern Command→Arc, Government of the Republic of Korea·Central Intelligence Agency/Bureau·Anguk Grand Monastery/Order·Transshipment State/Bureau·Sinnae Transport·White Cross (Order)·Russian Legation Command·Achasan Gate·Agwansa→The Government. 인물 이름과 충돌하는 裸어(태욱·Taeuk)는 매핑 표에서 제외하고 행 규칙으로만 처리한다(person-0057).
+**조직 표기 매핑**(검증자 결함 3): 판독되는 산문의 옛 조직명은 위 세력 표기명으로 치환한다. 한국어: 수문국·규격맹·여의도출자연합회→자유도시, 태욱그룹·성하그룹·성하전자·동방사→아크, 대한민국정부·중앙정보부·안국총림·환적국·신내운수·흰십자단·아관사→정부. 영어: Floodgate State/Bureau·Standards League·Yeouido Investment Federation/Alliance·The Sluice·The Gauge→Free City, Taeuk Group·Seongha Group/Electronics·Jeongdong Labor Federation/Federation·Registry/Roster/Myeongbu Church·Eastern Command→Arc, Government of the Republic of Korea·Central Intelligence Agency/Bureau·Anguk Grand Monastery/Order·Transshipment State/Bureau·Sinnae Transport·White Cross (Order)·Russian Legation Command·Achasan Gate·Agwansa→The Government.
+
+**조사·관사 교정**(3차 결함 4): 자유도시·정부·아크는 모두 받침 없는 말이므로 와/를/가/는/로를 쓴다(과/을/이/은/으로 금지), 영어는 "an Arc"·"The Government"(관사 흡수)·"a Free City". 재적재 단언으로 위반 0건 검증(3차 수정: ko 5건·en 3건 = 8건 교정 — 자유도시은·정부은×2·자유도시과·정부이, an The Government·a Arc×2). 인물 이름과 충돌하는 裸어(태욱·Taeuk)는 매핑 표에서 제외하고 행 규칙으로만 처리한다(person-0057).
 
 ## 2. 표별 결정
+
+### 050 — 바이블 §6 인정 예외의 표시 필드 전체 (검증자 3차 결함 1)
+
+지정 인물의 예외는 표시 필드 **전부**(직함·직위·계급)에 적용한다 — 일부만 바꾸면 같은 페이지에서 모순된다: 고예진(1018) title·position = "아크의 교주/Hierophant of the Arc", rank = "교주/Hierophant"(구값: 자문가·"어느 나라의 관직도 맡지 않는다"), 지연희(1017) title·position = "고예진의 경호원/Bodyguard of Go Ye-jin"(구값: 독립 전령; 계급 미등록·소속 S00은 Q5 대기로 유지). §6 전원의 필드별 구값→새값 대조표는 보고서에 있다.
 
 ### 050 — faction_id 정합·비통치자 조직명 (검증자 결함 1·3 수정)
 
@@ -62,7 +68,7 @@
 ### 110 — 가계도 소속 동기·타임라인 (검증자 결함 2·3 수정)
 
 - 인물과 연결된(detailRoute) 노드의 `affiliation`은 그 인물의 **현재** wiki_person 기록으로 동기한다: 세력→{kind:'state', stateId:세력, 이름:세력 표기명}, 공작령→{kind:'state', stateId:공작령 id, 이름:구 이름}, S00→{kind:'unaffiliated', 이름:무소속}, 대전→{kind:'neutral', stateId:'polity:daejeon', 이름:대전}. 연결 노드 964건(kind 전환 포함: union→state 194, neutral→state 34, state→neutral 8, state→unaffiliated 2, state→state 726)을 현재값으로 맞췄다. 연결 없는 역사 노드는 변환값 유지(전수 분류).
-- 타임라인 요약의 옛 조직명은 전 노드에서 세령 표기명으로 치환(en 40·ko 39건; "소속: 수문국"→"소속: 자유도시" 포함). §4 금지 성직 어휘는 15문장 규칙(스크립트 `CLERGY_RULES`, 원문 정확 문자열→교체문, 출처 명시)으로 처리한다: 당회장·장로(회)·목사·주교→적용본 030 Century-Annals가 이미 쓰는 "인준 투표·총회( 의장)·원로" 표기로, en archbishop·pope·bishops'·deacons·priests→ko 원문과 한영 정합(수석 신도 Lead Believer, 교주 Hierophant, 신도단 the believers). 교사(품계)·당회·총회·신도단·성전총회·장경종은 §4 패턴 밖이라 유지한다.
+- 타임라인 요약의 옛 조직명은 전 노드에서 세력 표기명으로 치환한다(en 40·ko 39건; "소속: 수문국"→"소속: 자유도시" 포함). §4 금지 성직 어휘는 19문장 규칙(스크립트 `CLERGY_RULES`, 원문 정확 문자열→교체문, 출처 명시)으로 처리한다. **교체문은 적용본 030에 이미 존재하는 표기만 쓴다**(3차 결함 3: 총회 의장·Council Chair·Session Head는 030에 0건 — 신규 직명 창작 금지): 임하준·오경재 계열 문장은 Century-Annals 원문 문장("구성원들은 인준 투표를 열어 임하준에게 그 일을 맡겼다", "인준을 거쳐 임하준의 일을 이어받았다")을 그대로 쓰고 영문 대응 문장도 직명 없이 다시 썼다. 총회·당회·구성원·회의 청사는 기존 단어(030·110 원문)다. en archbishop·pope·bishops'·deacons·priests 치환은 ko 원문 표기와 한영 정합(수석 신도 Lead Believer, 교주 Hierophant, 신도단 the believers — 050 값·바이블 §5). 교사(품계)·장경종·성전총회는 §4 패턴 밖이라 유지.
 
 ### 123-map-holdings.sql — `map_holding` 50행
 
@@ -84,9 +90,9 @@
 
 계획 25행이 허용하는 유일한 행 수 변화. sort 5, 2026-11-11, "보조 데이터를 세 세력 정본에 맞춘다" 알림, 상태 "검토 중". 기존 5행(과거 이력) 불변.
 
-### 090 — 핸드오프 목록 (범위 밖, 넘김)
+### 090 — 핸드오프 지시서 (범위 밖, 넘김·3차 결함 2 재구성)
 
-`docs/drafts/reports/w5-25-handoff-090.md`(스크립트가 090을 읽기 전용으로 스캔해 생성): 인물 509명·위반 그룹 2,890건의 person id·JSON 경로·현재 텍스트 발췌·기준(050 확정값 또는 바이블 §2–§5)·제안 교체문. CK3 스탯 브랜치 병합 뒤 통합 웨이브가 이 표대로 090을 패치한다.
+\`docs/drafts/reports/w5-25-handoff-090.json\` — 항목당 객체 하나: person id·column(json/json_ko)·정확한 JSON 경로(배열 인덱스 포함)·정확한 원문·정확한 교체문(replace) 또는 정확한 문장(owner-decision)·규칙 id·사유. id 필드($.state)와 표시 필드($.stateName)는 규칙이 다르고 언어별로 별도 객체다. 안전한 교체문이 없는 항목은 action 'owner-decision'과 정확한 문장만 담는다. 규칙: bible6-exception(§6 확정 직위의 050 값 — 금지어 여부와 무관하게 title/position/rank 전부, 3차 결함 1), bible6-stale-role(§6 확정 직위와 어긋나는 옛 직역 산문 — 자문가·전령 등), state-id-mapping, state-name-mapping, org-name-map(조사·관사 교정 포함), clergy-vocab(Q22·Q23·Q26 대기), sixteen-framing. \`docs/drafts/reports/w5-25-handoff-090.md\`는 규칙·조치·컬럼별 집계만 담는다(원문 텍스트 없음).
 
 ## 3. 호환성 결정 (코드가 읽는 경로)
 
