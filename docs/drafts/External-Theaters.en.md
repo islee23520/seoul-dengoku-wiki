@@ -23,7 +23,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt01-임진-제�
 
 ### Seoul-side route
 
-- Verified geography: Only the public terrain anchors, the Imjin-Han confluence and the northern transfer and refugee corridor, were used.
+- Verified geography: the Imjin-Han confluence and the northern transfer and refugee corridor.
 - Staging nodes: the roll cross-check window of Anguk and Gwanghwamun → Sinnae's neutral transfer window → Guui's double-seal window → the temporary quarantine post beneath the Imjin levee
 - Outbound boundary: Family journeys in Kaesong and Hwanghae and ferry life around Pyongyang are history beyond the records of Seoul. Detailed waypoints, crossing procedures, and travel times beyond the Imjin quarantine post remain unrecorded.
 - Travel time: Not recorded. Movement cost and openness were judged by water level, quarantine waits, passage rights, and the state of the refugee columns.
@@ -120,7 +120,7 @@ At the temporary wharf on the Han River estuary, the Sluice's sluice watch match
 
 A Gauge director heard the noise of the freezer compressors and changed the parts order, and a Taeuk Group deputy manager set aside only the boxes whose seal hashes were broken. In Chungcheong, railway repair crews and residents around Daejeon cultivate land beside the tracks in 2034, choosing sowing and tool repairs over distant restoration during the farming season. The 2102 branch-workshop ties in Cheonan, Asan, and Siheung remain; Daejeon’s farming and repair communities are separate trading partners. Merchants seeking to restore railways and residents using rail metal for farm tools value the same material differently.
 
-A Central Intelligence Bureau inspector did not erase the cold-storage order for the south bank of the Han even when the power warning light came on. In 2126 Min Ung-gi remains in Daejeon, earning his living through farming and seeking peace. A story about sending repair parts or requesting his return opens only if contact succeeds and his reply reaches Seoul. The reply’s arrival is not fixed opening history. Sin Jong-mok formerly served in Eastern Command’s special recovery unit and practices bayonet combat. The return network’s twelve living areas around Gangnam-gu Office, Seonjeongneung, and Suseo, and the mobile civilian Return Synthesis relay, are neither a permanent nationwide communications network nor a new state.
+A Central Intelligence Bureau inspector did not erase the cold-storage order for the south bank of the Han even when the power warning light came on. In 2126 Min Ung-gi remains in Daejeon, earning his living through farming and seeking peace. A story about sending repair parts or requesting his return opens only if contact succeeds and his reply reaches Seoul. Whether the reply arrives is not yet recorded. Sin Jong-mok formerly served in Eastern Command’s special recovery unit and practices bayonet combat. The return network’s twelve living areas around Gangnam-gu Office, Seonjeongneung, and Suseo, and the mobile civilian Return Synthesis relay, are neither a permanent nationwide communications network nor a new state.
 
 The Yeouido Investment Federation circulated only wharf-safety notices instead of price slogans.
 
@@ -130,7 +130,7 @@ Chronicle records: [2079 record](/wiki/Century-Annals/#2079년-xt02-한강-하�
 
 ### Seoul-side route
 
-- Verified geography: Only the public market and plant positions of the West Sea coast, the Han estuary waterway, and the Gangseo-Yeongdeungpo belt were used as fact anchors.
+- Verified geography: the public market and plant positions of the West Sea coast, the Han estuary waterway, and the Gangseo-Yeongdeungpo belt.
 - Staging nodes: the Yeongdeungpo sluice and treatment watch → Guro's compressor and standards cross-check window → Yeouido's seal-hash ledger → the temporary wharf at the Han River estuary
 - Outbound boundary: Honam producers’ seed retention, West Sea coastal handoffs, and Chungcheong farming and repair trade are history beyond the records of Seoul. Individual port names, precise routes, and sailing times remain unrecorded.
 - Travel time: Not recorded. Tide, drainage, power, freezing state, and passage rights set the cost and waiting of freight movement.
@@ -234,7 +234,7 @@ Chronicle record: [2079 record](/wiki/Century-Annals/#2079년-xt03-용산-환적
 
 ### Seoul-side route
 
-- Verified geography: Only the sea distance between the Korean Peninsula and the Japanese archipelago and the general concept of public sea lanes were used as fact anchors.
+- Verified geography: the sea distance between the Korean Peninsula and the Japanese archipelago and the general concept of public sea lanes.
 - Staging nodes: the Yongsan transshipment shed → City Hall's inland turnback window → Myeongdong's accreditation seal window → Samseong's sealed-cargo window → Heukseok's interpretation window → the unnamed three-branch relay wharf
 - Outbound boundary: Busan coastal shipping, indirect trade between Jeju and the south coast, and the 2118-2119 expedition at one Tsushima port.
 - Travel time: Not recorded. Relay-table mismatches, dock power, seal state, inland turns, and interpretation checks set waiting and movement cost.
@@ -340,7 +340,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt04-암사-야�
 
 ### Seoul-side route
 
-- Verified geography: Only the geographic concepts of the continental rail and the far-east energy corridor were used as fact anchors.
+- Verified geography: the geographic concepts of the continental rail and the far-east energy corridor.
 - Staging nodes: the Amsa yard and the weight-log window → Sinnae's detour transfer window → Gangnam's winter fuel queue → the Jegi-dong infirmary → Guui's seal window
 - Outbound boundary: Short-section handoffs around Hamhung and Chongjin and the Dokdo, Ulleungdo, and east-coast supply relationship are history beyond the records of Seoul. Intermediate links to northeastern freight cars, rail termini, actual detours, and sailing times remain unrecorded. Dokdo resupply is not a direct service of this railway corridor.
 - Travel time: Not recorded. Cold snaps, fuel, coolant, load verification, transfer slots, and medical need set movement cost and waiting.
@@ -436,7 +436,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt04-암사-야�
 
 On the roof of the Yeouido Investment Federation hall, residual-band lottery numbers were circulated. On the capital outskirts in 2031, rail workers and refugees toward Incheon and Paju divide loads among backs and carts at the ends of maintainable tracks, creating temporary markets. Not all these markets later become Junction termini. Eastern Command’s 2098 guard districts in Hanam, Namyangju, Uijeongbu, and Yeoncheon, the Junction’s 2100 tolls at Incheon and Paju rail termini, Taeuk Group’s 2101 Seongnam and Suwon workplaces, the 2104 Yeongjong branch, and the 2106 Gyeonggi administrative post in Goyang remain. Outside those posts, residents evade call-ups and tolls or trade directly, bringing them into conflict with Seoul interests.
 
-The Sluice's sluice watch matched the water-pump operating times to those numbers, and a Republic of Korea Government jusa clerk posted the delivery-list hash in the citizens' observation cell. Seoul’s three factions hold contracts, workplaces, and registers at gateways; they do not govern the whole peninsula. XT01-XT05 identify relationships and corridors, not new states. Arriving people and goods create consequences within Seoul’s existing opening territories and subway movement network.
+The Sluice's sluice watch matched the water-pump operating times to those numbers, and a Republic of Korea Government jusa clerk posted the delivery-list hash in the citizens' observation cell. Seoul’s three factions hold contracts, workplaces, and registers at gateways; they do not govern the whole peninsula. XT01-XT05 identify relationships and corridors, not new states. Arriving people and goods create consequences within the territory Seoul now holds and its subway movement network.
 
 An Arc branch chief opened a turnback line carrying only boxes of overseas remittance records, and a Taeuk Group deputy manager switched off the rail terminal's false-positive alarm.
 
@@ -448,7 +448,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt05-여의도-�
 
 ### Seoul-side route
 
-- Verified geography: Only the general concepts of satellite, aid, and disaster cooperation and the level of public international-organization names were used as fact anchors.
+- Verified geography: the general concepts of satellite, aid, and disaster cooperation and the names of public international organizations.
 - Staging nodes: Yeouido's remaining-bandwidth and ledger window → Yeongdeungpo's water-hour window → Gwanghwamun's citizen-observation hash window → City Hall's turnback record window → Yangjae's orbital-terminal correction window → Myeongdong's multilingual counseling window → the unnamed Incheon trust receipt window
 - Outbound boundary: Existing capital-outskirts contacts, including the Incheon and Paju rail termini and the Yeongjong branch, remain. The Incheon trust’s exact receiving site, detailed port and road routes, and overseas aid parties remain unrecorded.
 - Travel time: Not recorded. Transmit bands, pump power, manifest hashes, terminal state, counseling consent, and receipt confirmation set waiting and movement cost.

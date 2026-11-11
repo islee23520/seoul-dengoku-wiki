@@ -144,6 +144,23 @@ etEn = rep(etEn, 'are not fixed numerically.', 'are not recorded as numbers.', 1
 etEn = rep(etEn, 'Shin Jong-mok', 'Sin Jong-mok', 2);
 etEn = rep(etEn, 'Shin Jun', 'Sin Jun', 1);
 
+// v3 round-2 gate fixes (defect 1: instruction-like phrasing; defect 2: candidate-turned-possession)
+etKo = rep(etKo, '답장의 도착은 개막의 고정 역사로 두지 않는다.', '답장의 도착 여부는 아직 기록되지 않았다.', 1);
+etKo = rep(etKo, '기존 서울 개막 영토와 지하철 이동망 안에서 파장을 일으킨다', '지금 서울이 쥔 영토와 지하철 이동망 안에서 파장을 일으킨다', 1);
+etKo = rep(etKo, '임진강·한강 합류와 북부 환승·피난 회랑이라는 공개 지형 앵커만 사용한다.', '임진강·한강 합류와 북부 환승·피난 회랑.', 1);
+etKo = rep(etKo, '서해 연안·한강 하구 물길과 강서·영등포 일대의 공개 시장·정수 위치만 사실 앵커로 둔다.', '서해 연안·한강 하구 물길과 강서·영등포 일대의 공개 시장·정수 위치.', 1);
+etKo = rep(etKo, '한반도와 일본 열도 사이 해상 거리 및 공개 항로의 일반 개념만 사실 앵커로 둔다.', '한반도와 일본 열도 사이 해상 거리와 공개 항로의 일반 개념.', 1);
+etKo = rep(etKo, '대륙 철도와 극동 에너지 회랑의 지리 개념만 사실 앵커로 둔다.', '대륙 철도와 극동 에너지 회랑의 지리 개념.', 1);
+etKo = rep(etKo, '위성·인도·방재 협력의 일반 개념과 공개 국제기구 명칭 수준만 사실 앵커로 둔다.', '위성·인도·방재 협력의 일반 개념과 공개 국제기구 명칭.', 1);
+etKo = rep(etKo, '이 왕래는 2069년 서울의 동북 화차 기록으로 이어질 후보 경로이지만', '이 왕래는 2069년 서울의 동북 화차 기록으로 이어질 수 있는 경로이지만', 1);
+etEn = rep(etEn, 'The reply’s arrival is not fixed opening history.', 'Whether the reply arrives is not yet recorded.', 1);
+etEn = rep(etEn, 'within Seoul’s existing opening territories and subway movement network.', 'within the territory Seoul now holds and its subway movement network.', 1);
+etEn = rep(etEn, '- Verified geography: Only the public terrain anchors, the Imjin-Han confluence and the northern transfer and refugee corridor, were used.', '- Verified geography: the Imjin-Han confluence and the northern transfer and refugee corridor.', 1);
+etEn = rep(etEn, '- Verified geography: Only the public market and plant positions of the West Sea coast, the Han estuary waterway, and the Gangseo-Yeongdeungpo belt were used as fact anchors.', '- Verified geography: the public market and plant positions of the West Sea coast, the Han estuary waterway, and the Gangseo-Yeongdeungpo belt.', 1);
+etEn = rep(etEn, '- Verified geography: Only the sea distance between the Korean Peninsula and the Japanese archipelago and the general concept of public sea lanes were used as fact anchors.', '- Verified geography: the sea distance between the Korean Peninsula and the Japanese archipelago and the general concept of public sea lanes.', 1);
+etEn = rep(etEn, '- Verified geography: Only the geographic concepts of the continental rail and the far-east energy corridor were used as fact anchors.', '- Verified geography: the geographic concepts of the continental rail and the far-east energy corridor.', 1);
+etEn = rep(etEn, '- Verified geography: Only the general concepts of satellite, aid, and disaster cooperation and the level of public international-organization names were used as fact anchors.', '- Verified geography: the general concepts of satellite, aid, and disaster cooperation and the names of public international organizations.', 1);
+
 // plant the Korean year fragments on the English chronicle links (parity with ko)
 etEn = rep(etEn,
   'Chronicle records: [2069 record](/wiki/Century-Annals/) · [2104 record](/wiki/Century-Annals/) · [2125 record](/wiki/Century-Annals/)',
@@ -260,6 +277,16 @@ eraKo = rep(eraKo, '붕괴 후 군 잔존에서 보유하거나 시장에 유입
 eraEn = rep(eraEn, 'Post-collapse possession through military remnants or market inflow was a separate creative assignment.', 'Post-collapse possession through military remnants or market inflow differs from case to case.', 1);
 eraKo = rep(eraKo, '2026 경찰 장비 세칙 원문·제식 권총 모델의 2026 지급 범위는 추가 조사 필요. 세칙 숫자는 잠그지 않는다.', '2026 경찰 장비 세칙 원문과 제식 권총 모델의 지급 범위는 남아 있지 않고 세칙 숫자도 남아 있지 않다.', 1);
 eraEn = rep(eraEn, 'The original 2026 police equipment regulations and the 2026 issue range of service pistol models needed further research. The regulation numbers were not locked.', 'The original 2026 police equipment regulations and the issue range of service pistol models do not survive, and neither do the regulation numbers.', 1);
+
+// v3 round-2 gate fixes: defect 2 (candidate→possession) + defect 1 leftovers in Era
+eraKo = rep(eraKo, '탈영 소대가 이름 없는 제식으로 쓴다. 다른 인물은 획득 사연이 있을 때 쓴다', '보유자는 저마다 획득 경위가 다르다', 1);
+eraEn = rep(eraEn, 'Carried by the deserter squad as an unnamed service rifle; other holders need an acquisition story', 'Holders differ in how they acquired theirs', 1);
+eraKo = rep(eraKo, '군·경찰 지급. 민간 일상 없음', '군·경찰 장비. 민간 일상 없음', 1);
+eraEn = rep(eraEn, 'Military and police issue. No civilian daily use', 'Military and police equipment. No civilian daily use', 1);
+eraKo = rep(eraKo, '권하되 소속만으로 성능을 부여하지 않음', '보호구는 역할에 맞게 갖추며 소속만으로 성능이 정해지지는 않는다', 1);
+eraEn = rep(eraEn, 'Propose protection matched to role; grant no performance from affiliation alone', 'Protection is matched to the role; affiliation alone does not decide its performance', 1);
+eraKo = rep(eraKo, '군용 잔존에서 회수·이전되는 경로 설정', '군용 잔존에서 회수·이전되는 경로는 사례마다 갈린다', 1);
+eraEn = rep(eraEn, 'Recovery or transfer from military remnants to be set', 'Recovered or transferred from military remnants, case by case', 1);
 
 // ---------------------------------------------------------------------------
 // Ailments
@@ -559,10 +586,10 @@ if (new Set(anchors(ltlEn)).size !== 35 || JSON.stringify(anchors(ltlEn)) !== JS
 const KO_EDITOR_RE = /정본|정하지|미정|확정|결정되지|소유자|잠정|제안|데이터/g;
 const EN_EDITOR_RE = /canon|undecided|provisional|proposal|bible/gi;
 const DASH_RE = /[\u2013\u2014]/g;
-const ET_KO_LEFTOVER_RE = /창작 역사|미저작|기록하지|따로 적지|서술하되/g;
-const ET_EN_LEFTOVER_RE = /authored history|unauthored|Shin /g;
-const ERA_KO_LEFTOVER_RE = /추가 조사 필요|허구|후보|스캐폴드|POV|미잠금|잠그지|창작/g;
-const ERA_EN_LEFTOVER_RE = /further research needed|fiction|candidate|POVs?\b|unlocked|creative assignment/gi;
+const ET_KO_LEFTOVER_RE = /창작 역사|미저작|기록하지|따로 적지|서술하되|사실 앵커|지형 앵커|개막의|개막 영토|후보/g;
+const ET_EN_LEFTOVER_RE = /authored history|unauthored|Shin |fact anchor|opening histor|opening territor|to be set|need an|acquisition story/gi;
+const ERA_KO_LEFTOVER_RE = /추가 조사 필요|허구|후보|스캐폴드|POV|미잠금|잠그지|창작|권하되|경로 설정|배정할/g;
+const ERA_EN_LEFTOVER_RE = /further research needed|fiction|candidate|POVs?\b|unlocked|creative assignment|to be set|need an|acquisition story|propose\b/gi;
 const LTL_LEFTOVER_RE = /열여섯 거대 세력|sixteen great forces/g;
 const checks = [
   { slug: 'External-Theaters', ko: etKo, en: etEn, ko0: etKo0, en0: etEn0 },
@@ -592,6 +619,14 @@ for (const c of checks) {
   if (c.slug === 'Lost-Technology-Lineage') {
     const ll = [...(c.ko + c.en).matchAll(LTL_LEFTOVER_RE)].map((m) => m[0]);
     if (ll.length) throw new Error(`LTL leftovers: ${[...new Set(ll)].join(',')}`);
+  }
+  if (c.slug === 'External-Theaters') {
+    const koGaemak = [...c.ko.matchAll(/개막/g)];
+    if (koGaemak.length !== 5) throw new Error(`ET ko 개막 count ${koGaemak.length} != 5 (headings only)`);
+    const nonHeading = c.ko.split('\n').filter((l) => l.includes('개막') && !l.trim().startsWith('###'));
+    if (nonHeading.length) throw new Error(`ET ko 개막 outside headings: ${nonHeading.length}`);
+    const enOpening = c.en.split('\n').filter((l) => /Opening 2126/.test(l));
+    if (enOpening.length !== 5 || !enOpening.every((l) => l.trim().startsWith('###'))) throw new Error('ET en Opening-2126 headings != 5');
   }
   const aKo = anchors(c.ko), aEn = anchors(c.en);
   const onlyKo = aKo.filter((a) => !aEn.includes(a)), onlyEn = aEn.filter((a) => !aKo.includes(a));
