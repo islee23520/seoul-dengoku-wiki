@@ -2,7 +2,7 @@
 
 - 대상: `docs/drafts` 다섯 문서 한영 열 파일 (Food-Culture, Hangnyeol-and-Bon-gwan, People-and-Machines, Regional-Physical-AI-Arcs, Synthetic-Actors)
 - 기반: 61b6e6b6d (feat/w3-b-drafts tip, base 26ec455cc). 독립 검증 `.omo/evidence/w3-b-gate-review.md`의 REJECT(B1~B6) 이후 수정 라운드. 앞선 작업자가 사용량 한도로 중단한 미커밋 변경을 검토해 유효 부분을 그대로 유지하고, 아래 조치를 마저 완료했다.
-- 명시적 cwd: `C:/Users/oliver/AppData/Local/Temp/wt-w3-b`. node는 `C:/nvm4w/nodejs/node.exe`(v24.13.1)를 argv 배열로 실행했다.
+- 명시적 cwd: `<tmp>/wt-w3-b`. node는 `C:/nvm4w/nodejs/node.exe`(v24.13.1)를 argv 배열로 실행했다.
 
 ## 결함 조치 내역
 
@@ -140,7 +140,7 @@
 9. **모델 기록** — 열 파일 model 라인 = `original drafts by cpa/claude-opus-5-5; rework by cpa/glm-5.3; 0 completion calls in both rounds; agent-authored text with scripted edits; not from a Gemini model`(문자열 비교 10/10; 각 tasks json effective_model 기준, PI_MODEL 미사용). 두 라운드 모두 completion 호출 0회. 원초안 cpa/claude-opus-5-5, 재작업 치환 cpa/glm-5.3. Gemini 산출물이 아니다.
 10. **측정값** — 아래 수치는 모두 이번 세션의 실행 결과다. 측정하지 않은 것을 '확인'이라고 쓰지 않았다. 브라우저 렌더링·자동 heading slug 실행은 이 라운드에서 하지 않았다(독립 검증도 별도 항목으로 남긴 한계).
 
-## 검증 실행 (스크래치 복사본 `C:/Users/oliver/AppData/Local/Temp/wt-w3b-scratch/sql`)
+## 검증 실행 (스크래치 복사본 `<tmp>/wt-w3b-scratch/sql`)
 
 | 명령 | 종료 코드 | 결과 |
 |---|---|---|

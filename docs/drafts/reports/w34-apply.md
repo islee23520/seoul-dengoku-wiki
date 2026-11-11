@@ -62,7 +62,7 @@
 | fragment 실측 | 빌드 href fragment vs 빌드 id 정확 일치 | 0 | 31,927/31,861 해결/66 미해결, 이전 빌드와 동일(위 B) |
 | 잔존 리터럴 실측 | `node docs/drafts/reports/w34-leftover.mjs <빌드> docs/canon-terms.json <json>` | 0 | 위 (C) 수치 |
 
-빌드·검증 영수증: `C:/Users/oliver/AppData/Local/Temp/w34-refix-*.{log,exit,json}`.
+빌드·검증 영수증: `<tmp>/w34-refix-*.{log,exit,json}`.
 
 ## 반영
 

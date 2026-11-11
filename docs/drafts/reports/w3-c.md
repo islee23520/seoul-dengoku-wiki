@@ -1,7 +1,7 @@
 # W3 group C report
 
 ## Model record
-cpa/claude-opus-5-5 (effective model from C:/Users/oliver/.omo/agent/projects/seoul-dengoku-wiki-f06038d8686d/senpi-task/tasks/st_01a1c7b3.json, field "model"; PI_MODEL ignored as stale). 0 completion calls. The replacement sentences were written by the agent (cpa/claude-opus-5-5) and applied by a script. The text is not from a Gemini model.
+cpa/claude-opus-5-5 (effective model from <omo>/agent/projects/seoul-dengoku-wiki-f06038d8686d/senpi-task/tasks/st_01a1c7b3.json, field "model"; PI_MODEL ignored as stale). 0 completion calls. The replacement sentences were written by the agent (cpa/claude-opus-5-5) and applied by a script. The text is not from a Gemini model.
 
 Replacement script: docs/drafts/reports/w3-c-replace.mjs. Run from the repo root: `node docs/drafts/reports/w3-c-replace.mjs`. It loads data/sql/000-schema.sql and 030-wiki-documents.sql into an in-memory node:sqlite database, applies exact one-match string replacements (each throws if the match count isn't 1), and writes the ten docs/drafts/<slug>.{ko,en}.md files. Re-running it on this tip reproduced all 10 bodies byte-identically (10/10).
 

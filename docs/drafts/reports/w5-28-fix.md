@@ -1,6 +1,6 @@
 # W5-28 결함 수정 검증 보고서 (w5-28-fix)
 
-과제: 통합(4d7f0f6ed)의 독립 검증이 지적한 결함 H1·H2·H3·M1·M2·M3·M4·M5·EXTRA(a·b·c)를 같은 브랜치 `feat/wiki-canon-rewrite-integration`에서 수정하고 전 항목을 측정으로 검증한다. 작업 2026-11-11, 워크트리 `C:/Users/oliver/AppData/Local/Temp/wt-integ-fix`(신규 생성 — 이전 wt-integ 미사용·미수정). 실행 모델: 작업 JSON `effective_model` = **cpa/glm-5.3**(tasks/st_01a1c8d7.json 직독). 모든 데이터 변경은 규칙표+스크립트로 재현 가능하다(아래 8절).
+과제: 통합(4d7f0f6ed)의 독립 검증이 지적한 결함 H1·H2·H3·M1·M2·M3·M4·M5·EXTRA(a·b·c)를 같은 브랜치 `feat/wiki-canon-rewrite-integration`에서 수정하고 전 항목을 측정으로 검증한다. 작업 2026-11-11, 워크트리 `<tmp>/wt-integ-fix`(신규 생성 — 이전 wt-integ 미사용·미수정). 실행 모델: 작업 JSON `effective_model` = **cpa/glm-5.3**(tasks/st_01a1c8d7.json 직독). 모든 데이터 변경은 규칙표+스크립트로 재현 가능하다(아래 8절).
 
 ## 1. 결함별 결과
 
