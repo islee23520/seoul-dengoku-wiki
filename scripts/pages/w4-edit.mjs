@@ -2,7 +2,8 @@
 // W4 생태 도감 최소 편집 — docs/w4-rules.json의 문장 규칙과 옛 국가 id→세력 id 매핑를
 // data/sql/030-wiki-documents.sql의 현재 본문에 적용해 docs/drafts/<slug>.{ko,en}.md 초안을 쓴다.
 // 모델 재생성이 없다: 치환은 이 스크립트가 결정적으로 수행하고 규칙이 닿지 않는 바이트는 하나도 바꾸지 않는다.
-// 규칙 원문 문자열이 본문에 없으면 오류로 멈춘다(부분 적용 없음).
+// 규칙 원문 문자열이 본문에 없으면 오류로 멈춘다 — 모든 문서의 결과를 만들고 규칙 미적용 검사까지 마친 뒤에
+// 첫 파일을 쓰므로, 실패 시 어떤 초안·로그도 쓰지 않는다.
 //
 // 사용법:
 //   node scripts/pages/w4-edit.mjs [--dry-run] [--sql-dir <dir>] [--rules docs/w4-rules.json]
@@ -210,6 +211,7 @@ function main() {
   const lineApps = [];
   const droppedLog = [];
   const docStats = [];
+  const outputs = [];
   fs.mkdirSync(args.out, { recursive: true });
   for (const slug of DOCS) {
     const row = rowsBySlug.get(slug);
@@ -247,17 +249,16 @@ function main() {
         linesChanged: changed.size, byteOld: byteLen(oldBody), byteNew: byteLen(newBody), byteDelta: byteLen(newBody) - byteLen(oldBody),
         anchors: aNew.size, headings: hNew,
       });
-      if (!args.dryRun) {
-        fs.writeFileSync(path.join(args.out, `${slug}.${lang}.md`), `---\nmodel: ${args.model}\n---\n${newBody}`);
-      }
+      if (!args.dryRun) outputs.push({ path: path.join(args.out, `${slug}.${lang}.md`), content: `---\nmodel: ${args.model}\n---\n${newBody}` });
     }
   }
-  // 모든 규칙은 최소 한 번은 적용되어야 한다
+  // 모든 규칙은 최소 한 번은 적용되어야 한다 — 이 검사를 통과하기 전에는 어떤 파일도 쓰지 않는다
   const unapplied = rules.filter((r) => !(r._total > 0));
   if (unapplied.length) {
     for (const r of unapplied) console.error(`E_RULE_NOT_FOUND: ${r.id} — 원문 문자열을 대상 문서에서 찾지 못했다: ${r.original.slice(0, 90)}`);
     process.exit(EXIT.RULE_NOT_FOUND);
   }
+  for (const o of outputs) fs.writeFileSync(o.path, o.content);
 
   const log = {
     generatedBy: 'scripts/pages/w4-edit.mjs',

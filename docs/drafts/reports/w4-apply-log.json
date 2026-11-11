@@ -5,8 +5,8 @@
   "commit": "26ec455cc45cee90fb3c01811d693fb2eb28735f"
  },
  "model": "cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/pages/w4-edit.mjs; not from a Gemini model",
- "ruleCount": 43,
- "ruleApplicationCount": 201,
+ "ruleCount": 44,
+ "ruleApplicationCount": 216,
  "stateMapping": [
   {
    "id": "S01",
@@ -504,6 +504,12 @@
    "occurrences": 1
   },
   {
+   "ruleId": "w4-en-08",
+   "slug": "Hostile-Ecology-Index",
+   "lang": "en",
+   "occurrences": 8
+  },
+  {
    "ruleId": "w4-ko-prose-s01-1",
    "slug": "Hostile-Group-G01",
    "lang": "ko",
@@ -684,6 +690,12 @@
    "occurrences": 1
   },
   {
+   "ruleId": "w4-en-08",
+   "slug": "Hostile-Group-G13",
+   "lang": "en",
+   "occurrences": 1
+  },
+  {
    "ruleId": "w4-ko-01",
    "slug": "Hostile-Group-G14",
    "lang": "ko",
@@ -750,6 +762,12 @@
    "occurrences": 1
   },
   {
+   "ruleId": "w4-en-08",
+   "slug": "Hostile-Group-G14",
+   "lang": "en",
+   "occurrences": 1
+  },
+  {
    "ruleId": "w4-ko-01",
    "slug": "Hostile-Group-G16",
    "lang": "ko",
@@ -816,6 +834,12 @@
    "occurrences": 1
   },
   {
+   "ruleId": "w4-en-08",
+   "slug": "Hostile-Group-G16",
+   "lang": "en",
+   "occurrences": 1
+  },
+  {
    "ruleId": "w4-ko-01",
    "slug": "Hostile-Group-G17",
    "lang": "ko",
@@ -882,6 +906,12 @@
    "occurrences": 1
   },
   {
+   "ruleId": "w4-en-08",
+   "slug": "Hostile-Group-G17",
+   "lang": "en",
+   "occurrences": 1
+  },
+  {
    "ruleId": "w4-ko-01",
    "slug": "Hostile-Group-G18",
    "lang": "ko",
@@ -943,6 +973,12 @@
   },
   {
    "ruleId": "w4-en-07",
+   "slug": "Hostile-Group-G18",
+   "lang": "en",
+   "occurrences": 1
+  },
+  {
+   "ruleId": "w4-en-08",
    "slug": "Hostile-Group-G18",
    "lang": "en",
    "occurrences": 1
@@ -1062,6 +1098,12 @@
    "occurrences": 1
   },
   {
+   "ruleId": "w4-en-08",
+   "slug": "Hostile-Group-G25",
+   "lang": "en",
+   "occurrences": 1
+  },
+  {
    "ruleId": "w4-ko-01",
    "slug": "Hostile-Group-G26",
    "lang": "ko",
@@ -1135,6 +1177,12 @@
   },
   {
    "ruleId": "w4-en-07",
+   "slug": "Hostile-Group-G26",
+   "lang": "en",
+   "occurrences": 1
+  },
+  {
+   "ruleId": "w4-en-08",
    "slug": "Hostile-Group-G26",
    "lang": "en",
    "occurrences": 1
@@ -5023,8 +5071,8 @@
    "sentencesUnchanged": 3133,
    "linesChanged": 80,
    "byteOld": 210336,
-   "byteNew": 211111,
-   "byteDelta": 775,
+   "byteNew": 210207,
+   "byteDelta": -129,
    "anchors": 63,
    "headings": 62
   },
@@ -5032,12 +5080,12 @@
    "slug": "Hostile-Ecology-Index",
    "lang": "en",
    "sentencesTotal": 3245,
-   "sentencesChanged": 107,
-   "sentencesUnchanged": 3138,
+   "sentencesChanged": 115,
+   "sentencesUnchanged": 3130,
    "linesChanged": 83,
    "byteOld": 229107,
-   "byteNew": 229774,
-   "byteDelta": 667,
+   "byteNew": 228958,
+   "byteDelta": -149,
    "anchors": 63,
    "headings": 62
   },
@@ -5361,8 +5409,8 @@
    "sentencesUnchanged": 1153,
    "linesChanged": 1,
    "byteOld": 61860,
-   "byteNew": 61911,
-   "byteDelta": 51,
+   "byteNew": 61798,
+   "byteDelta": -62,
    "anchors": 40,
    "headings": 23
   },
@@ -5370,12 +5418,12 @@
    "slug": "Hostile-Group-G13",
    "lang": "en",
    "sentencesTotal": 1157,
-   "sentencesChanged": 5,
-   "sentencesUnchanged": 1152,
+   "sentencesChanged": 6,
+   "sentencesUnchanged": 1151,
    "linesChanged": 1,
    "byteOld": 64296,
-   "byteNew": 64333,
-   "byteDelta": 37,
+   "byteNew": 64231,
+   "byteDelta": -65,
    "anchors": 40,
    "headings": 23
   },
@@ -5387,8 +5435,8 @@
    "sentencesUnchanged": 1680,
    "linesChanged": 15,
    "byteOld": 51231,
-   "byteNew": 51380,
-   "byteDelta": 149,
+   "byteNew": 51267,
+   "byteDelta": 36,
    "anchors": 166,
    "headings": 149
   },
@@ -5396,12 +5444,12 @@
    "slug": "Hostile-Group-G14",
    "lang": "en",
    "sentencesTotal": 1700,
-   "sentencesChanged": 19,
-   "sentencesUnchanged": 1681,
+   "sentencesChanged": 20,
+   "sentencesUnchanged": 1680,
    "linesChanged": 15,
    "byteOld": 54036,
-   "byteNew": 54171,
-   "byteDelta": 135,
+   "byteNew": 54069,
+   "byteDelta": 33,
    "anchors": 166,
    "headings": 149
   },
@@ -5439,8 +5487,8 @@
    "sentencesUnchanged": 1336,
    "linesChanged": 7,
    "byteOld": 44536,
-   "byteNew": 44551,
-   "byteDelta": 15,
+   "byteNew": 44438,
+   "byteDelta": -98,
    "anchors": 94,
    "headings": 77
   },
@@ -5448,12 +5496,12 @@
    "slug": "Hostile-Group-G16",
    "lang": "en",
    "sentencesTotal": 1347,
-   "sentencesChanged": 11,
-   "sentencesUnchanged": 1336,
+   "sentencesChanged": 12,
+   "sentencesUnchanged": 1335,
    "linesChanged": 7,
    "byteOld": 47125,
-   "byteNew": 47126,
-   "byteDelta": 1,
+   "byteNew": 47024,
+   "byteDelta": -101,
    "anchors": 94,
    "headings": 77
   },
@@ -5465,8 +5513,8 @@
    "sentencesUnchanged": 1249,
    "linesChanged": 5,
    "byteOld": 43940,
-   "byteNew": 44043,
-   "byteDelta": 103,
+   "byteNew": 43930,
+   "byteDelta": -10,
    "anchors": 76,
    "headings": 59
   },
@@ -5474,12 +5522,12 @@
    "slug": "Hostile-Group-G17",
    "lang": "en",
    "sentencesTotal": 1260,
-   "sentencesChanged": 9,
-   "sentencesUnchanged": 1251,
+   "sentencesChanged": 10,
+   "sentencesUnchanged": 1250,
    "linesChanged": 5,
    "byteOld": 46987,
-   "byteNew": 47076,
-   "byteDelta": 89,
+   "byteNew": 46974,
+   "byteDelta": -13,
    "anchors": 76,
    "headings": 59
   },
@@ -5491,8 +5539,8 @@
    "sentencesUnchanged": 1078,
    "linesChanged": 1,
    "byteOld": 41127,
-   "byteNew": 41178,
-   "byteDelta": 51,
+   "byteNew": 41065,
+   "byteDelta": -62,
    "anchors": 40,
    "headings": 23
   },
@@ -5500,12 +5548,12 @@
    "slug": "Hostile-Group-G18",
    "lang": "en",
    "sentencesTotal": 1083,
-   "sentencesChanged": 5,
-   "sentencesUnchanged": 1078,
+   "sentencesChanged": 6,
+   "sentencesUnchanged": 1077,
    "linesChanged": 1,
    "byteOld": 45598,
-   "byteNew": 45635,
-   "byteDelta": 37,
+   "byteNew": 45533,
+   "byteDelta": -65,
    "anchors": 40,
    "headings": 23
   },
@@ -5673,8 +5721,8 @@
    "sentencesUnchanged": 1212,
    "linesChanged": 1,
    "byteOld": 53032,
-   "byteNew": 53085,
-   "byteDelta": 53,
+   "byteNew": 52972,
+   "byteDelta": -60,
    "anchors": 40,
    "headings": 23
   },
@@ -5682,12 +5730,12 @@
    "slug": "Hostile-Group-G25",
    "lang": "en",
    "sentencesTotal": 1216,
-   "sentencesChanged": 6,
-   "sentencesUnchanged": 1210,
+   "sentencesChanged": 7,
+   "sentencesUnchanged": 1209,
    "linesChanged": 1,
    "byteOld": 56592,
-   "byteNew": 56647,
-   "byteDelta": 55,
+   "byteNew": 56545,
+   "byteDelta": -47,
    "anchors": 40,
    "headings": 23
   },
@@ -5699,8 +5747,8 @@
    "sentencesUnchanged": 1211,
    "linesChanged": 1,
    "byteOld": 52854,
-   "byteNew": 52907,
-   "byteDelta": 53,
+   "byteNew": 52794,
+   "byteDelta": -60,
    "anchors": 40,
    "headings": 23
   },
@@ -5708,12 +5756,12 @@
    "slug": "Hostile-Group-G26",
    "lang": "en",
    "sentencesTotal": 1218,
-   "sentencesChanged": 6,
-   "sentencesUnchanged": 1212,
+   "sentencesChanged": 7,
+   "sentencesUnchanged": 1211,
    "linesChanged": 1,
    "byteOld": 57300,
-   "byteNew": 57355,
-   "byteDelta": 55,
+   "byteNew": 57253,
+   "byteDelta": -47,
    "anchors": 40,
    "headings": 23
   }

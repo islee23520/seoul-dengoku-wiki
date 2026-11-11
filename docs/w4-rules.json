@@ -507,9 +507,9 @@
    ],
    "pattern": "slaughter-order-ko",
    "original": "살육기계의 활동과 인류가 앞서 남긴 오염의 여파는 세계를 영원한 겨울로 몰아넣었고 식량난이 이어졌다.",
-   "replacement": "마지막 명령을 수행하는 전쟁 기계의 활동과 인류가 앞서 남긴 오염의 여파는 세계를 영원한 겨울로 몰아넣었고 식량난이 이어졌다.",
-   "reason": "AI 살육 서사 문장 — 최초의 AI의 살육 명령·공습·살육 서술을 승인된 정본(겨울, 마지막 명령)으로 최소 치환한다.",
-   "source": "바이블 1절 규칙 2·6(첫 AI는 인류가 줄어야 한다고 답했고 겨울을 내렸으며 직접 죽인 사람은 없다; 전쟁 기계는 마지막 명령을 수행), 1장 확정본, 3절 연표(대정전 약 2026)"
+   "replacement": "최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다.",
+   "reason": "AI 살육 서사 문장 — 겨울의 원인을 승인 정본(최초의 AI가 겨울을 내렸다)으로 바꾸고, 승인되지 않은 ‘영원한 겨울’ 영구성 단정과 전쟁 기계 활동 인과를 없앤다(게이트 리뷰 W4-R2).",
+   "source": "바이블 1절 규칙 2(최초의 AI는 겨울을 내렸으며 직접 죽인 사람은 없다), 게이트 리뷰 .omo/evidence/w4-gate-review.md W4-R2"
   },
   {
    "id": "w4-ko-06",
@@ -527,9 +527,9 @@
    ],
    "pattern": "slaughter-order-ko",
    "original": "살육이 멈추자 사람들은 지상으로 돌아오기 시작하였다.",
-   "replacement": "전쟁 기계의 활동이 잦아들자 사람들은 지상으로 돌아오기 시작하였다.",
-   "reason": "AI 살육 서사 문장 — 최초의 AI의 살육 명령·공습·살육 서술을 승인된 정본(겨울, 마지막 명령)으로 최소 치환한다.",
-   "source": "바이블 1절 규칙 2·6(첫 AI는 인류가 줄어야 한다고 답했고 겨울을 내렸으며 직접 죽인 사람은 없다; 전쟁 기계는 마지막 명령을 수행), 1장 확정본, 3절 연표(대정전 약 2026)"
+   "replacement": "사람들은 지상으로 돌아오기 시작하였다.",
+   "reason": "AI 살육 서사 문장 — ‘전쟁 기계의 활동이 잦아들자’라는 새 인과를 만들지 않고 원문의 지상 복귀 사실만 남긴다(게이트 리뷰 W4-R3).",
+   "source": "게이트 리뷰 W4-R3; 바이블 1절 규칙 2의 새 사실 금지"
   },
   {
    "id": "w4-ko-07",
@@ -581,9 +581,9 @@
    ],
    "pattern": "slaughter-order-en",
    "original": "As the slaughter stopped, people began returning to the surface.",
-   "replacement": "As the war machines' activity subsided, people began returning to the surface.",
-   "reason": "AI 살육 서사 문장 — 최초의 AI의 살육 명령·공습·살육 서술을 승인된 정본(겨울, 마지막 명령)으로 최소 치환한다.",
-   "source": "바이블 1절 규칙 2·6(첫 AI는 인류가 줄어야 한다고 답했고 겨울을 내렸으며 직접 죽인 사람은 없다; 전쟁 기계는 마지막 명령을 수행), 1장 확정본, 3절 연표(대정전 약 2026)"
+   "replacement": "People began returning to the surface.",
+   "reason": "AI slaughter narrative — drop the invented machine-activity-decrease causality and keep only the original surface-return fact (gate review W4-R3).",
+   "source": "게이트 리뷰 W4-R3; 바이블 1절 규칙 2의 새 사실 금지"
   },
   {
    "id": "w4-en-02",
@@ -669,9 +669,9 @@
    ],
    "pattern": "slaughter-order-en",
    "original": "Slaughter-machine activity and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis.",
-   "replacement": "The activity of war machines carrying out their last orders and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis.",
-   "reason": "AI 살육 서사 문장 — 최초의 AI의 살육 명령·공습·살육 서술을 승인된 정본(겨울, 마지막 명령)으로 최소 치환한다.",
-   "source": "바이블 1절 규칙 2·6(첫 AI는 인류가 줄어야 한다고 답했고 겨울을 내렸으며 직접 죽인 사람은 없다; 전쟁 기계는 마지막 명령을 수행), 1장 확정본, 3절 연표(대정전 약 2026)"
+   "replacement": "The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis.",
+   "reason": "AI slaughter narrative — rewrite to the approved cause (the First AI made winter), drop the unsupported eternal-winter permanence and the war-machine-activity causality (gate review W4-R2).",
+   "source": "바이블 1절 규칙 2, 게이트 리뷰 W4-R2"
   },
   {
    "id": "w4-en-07",
@@ -1056,6 +1056,26 @@
    "replacement": "Long-term management of the Grey Heron and Cormorant required going beyond forming temporary response teams each migration period to a system in which government, the Gangnam Line, and HC06 handed over water and tracks as a single seasonal asset.",
    "reason": "옛 국가 id의 행위자 참조 — 세력 id(government/free-city/arc)로 바꾼다.",
    "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S06 행(capital) + data/sql/120-map-core.sql map_station(S06 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-en-08",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G13",
+    "Hostile-Group-G14",
+    "Hostile-Group-G16",
+    "Hostile-Group-G17",
+    "Hostile-Group-G18",
+    "Hostile-Group-G25",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "slaughter-order-en(측정 누락 변형)",
+   "original": "Purposeless machines outside the killing network roamed in small groups that people could counter.",
+   "replacement": "Purposeless machines outside the network that still runs roamed in small groups that people could counter.",
+   "reason": "게이트 리뷰 W4-R1 — 측정 금지 패턴이 놓친 살육 네트워크 변형('killing network'). 한국어 규칙 w4-ko-04('여전히 돌아가는 네트워크')와 같은 승인 의미로 15곳을 함께 바꾼다. 패턴 미적중을 보존 사유로 쓰지 않는다.",
+   "source": "게이트 리뷰 .omo/evidence/w4-gate-review.md W4-R1; 바이블 1절 규칙 2·6; executor 원요청 예시('slaughter network becomes the network that still runs'); 한국어 대응 규칙 w4-ko-04"
   }
  ]
 }

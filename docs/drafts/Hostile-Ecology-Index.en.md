@@ -1086,7 +1086,7 @@ This repetition made the swarm's identity.
 
 Until the labeling protocol was disclosed on the citizens' side, the cluster interpreted itself not as hostile but as unfinished work.
 
-After the Great Blackout the AIs split into factions, weakening command and control. As the war machines' activity subsided, people began returning to the surface. The activity of war machines carrying out their last orders and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the killing network roamed in small groups that people could counter.
+After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter.
 
 - Territory: The core habitat is the conveyor trestle of the night parts window at Guro and Gasan on the Yeongdeungpo Line, and of the industrial-complex dormitory remnant corridor.
 
@@ -1253,7 +1253,7 @@ As the leftover simulation copy of the Geondae-ipgu transfer joined, the dispatc
 
 The cluster considered itself unfinished dispatch and did not report its no-passenger errors as faults.
 
-After the Great Blackout the AIs split into factions, weakening command and control. As the war machines' activity subsided, people began returning to the surface. The activity of war machines carrying out their last orders and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the killing network roamed in small groups that people could counter.
+After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter.
 
 - Territory: The core habitat is the empty-car queue, the underground turning lane, and the row of docking pads at the transfer slots of Achasan and Guui on the Seongbuk Line.
 
@@ -1440,7 +1440,7 @@ As the patrol carts of the Ttukseom aid-device bench joined, the fixed list spre
 
 The circulation body only recorded unfinished protection as failure and held no hostile feeling.
 
-After the Great Blackout the AIs split into factions, weakening command and control. As the war machines' activity subsided, people began returning to the surface. The activity of war machines carrying out their last orders and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the killing network roamed in small groups that people could counter.
+After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter.
 
 - Territory: The core habitat was the Myeongdong Union's ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station.
 
@@ -1611,7 +1611,7 @@ As the cranes of the Amsa deck shared the same layer, the demolition radius spre
 
 The machine corps interpreted unfinished construction as correction work and held no hostile narrative.
 
-After the Great Blackout the AIs split into factions, weakening command and control. As the war machines' activity subsided, people began returning to the surface. The activity of war machines carrying out their last orders and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the killing network roamed in small groups that people could counter.
+After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter.
 
 - Territory: The core habitat was the row of temporary distribution boards on the provisional slabs of the utility tunnels around the Suseo Line's drawing vault.
 
@@ -1784,7 +1784,7 @@ As the Seoul Station rooftop heads shared the same table, the lockdown extended 
 
 The orbit swarm interpreted unfinished alarms as correction and held no narrative of attack.
 
-After the Great Blackout the AIs split into factions, weakening command and control. As the war machines' activity subsided, people began returning to the surface. The activity of war machines carrying out their last orders and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the killing network roamed in small groups that people could counter.
+After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter.
 
 - Territory: The core habitat was the sluices of the Sluice, the bridge mast rows, the waterfront sensor rails, and the auxiliary water-supply gauging towers.
 
@@ -1957,7 +1957,7 @@ As the welding car of the Yongsan turnaround line shared the same map, sparks co
 
 The train corps interpreted unfinished maintenance as its work and held no narrative of battle.
 
-After the Great Blackout the AIs split into factions, weakening command and control. As the war machines' activity subsided, people began returning to the surface. The activity of war machines carrying out their last orders and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the killing network roamed in small groups that people could counter.
+After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter.
 
 - Territory: The core habitat was the maintenance-car berthing track on the retired spur of the southwestern depot exit line.
 
@@ -2276,7 +2276,7 @@ Much of the hostile action comes not from an attack judgment but from search-sec
 
 The first recovery record remains as a fictional event only on the HC15 sealed survey table and the F09 field-read log.
 
-After the Great Blackout the AIs split into factions, weakening command and control. As the war machines' activity subsided, people began returning to the surface. The activity of war machines carrying out their last orders and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the killing network roamed in small groups that people could counter.
+After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter.
 
 - Territory: The main range was the cable shelves and ventilation shafts of the Mapo Union transmission basement gallery, and the debris-mock stretch of the Yongsan Line research-block test track.
 
@@ -2425,7 +2425,7 @@ The low-frequency alarm that sounds like a roar, and the charge that follows it,
 
 The account that the HC17 siding recovery team and an F10 load reader recorded the first reactivation is likewise confined to a fictional event.
 
-After the Great Blackout the AIs split into factions, weakening command and control. As the war machines' activity subsided, people began returning to the surface. The activity of war machines carrying out their last orders and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the killing network roamed in small groups that people could counter.
+After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter.
 
 - Territory: The Iron Dinosaur is centered on the siding at Gangnam Line's Chang-dong depot and the broad maintenance roads and protective hangars at Gwangjin Line's Godeok base.
 
