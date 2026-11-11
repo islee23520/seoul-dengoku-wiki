@@ -1,6 +1,7 @@
 -- Wiki articles (Markdown bodies, English and Korean)
 -- Source of truth: edit via scripts/pages/rewrite-doc.mjs (data/sql is canonical; the archived export-sql.mjs is not a sync path).
 
+
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Ailments', 'Ailments and Symptoms', '질병과 증상', 'ailments', 0, '
 **A. Where disease starts**
 
@@ -5322,7 +5323,7 @@ Chronicle records: [2079 record](/wiki/Century-Annals/#2079년-xt02-한강-하�
 
 In front of the Junction''s transshipment window, a three-way relay signboard bled in the rain. In Yeongnam, Busan crews and repair workers restart coastal voyages in 2058 using only ships they can maintain. Different owners supply different materials and labor, so a port representative cannot command every departure. Repair workers and dismantlers around Ulsan and Pohang dispute whether to revive equipment or sell its parts; inland settlements have interests distinct from the ports. The observation that national status displays went dark first in Ulsan at the time of the Great Blackout does not show that Ulsan caused it.
 
-An Arc steward handed over only sealed boxes and stayed out of the border talk. In 2118 shipowners around Busan and their separately hired escorts form a temporary coalition to recover seized ships and people. Some local sailors deprived of access by an armed group at one Tsushima port help them land. The expedition breaks that port’s defenses and recovers vessels and captives. Owners demand a return, commanders want to hold the port, and local allies demand autonomy and their share. Shortages of repair materials and labor force the main contingent to withdraw in 2119, leaving only some contacts and trade. The participants’ name “Tsushima conquest” describes this local victory, not annexation of the whole island or a victory by a united Seoul navy.
+An Arc courier handed over only sealed boxes and stayed out of the border talk. In 2118 shipowners around Busan and their separately hired escorts form a temporary coalition to recover seized ships and people. Some local sailors deprived of access by an armed group at one Tsushima port help them land. The expedition breaks that port’s defenses and recovers vessels and captives. Owners demand a return, commanders want to hold the port, and local allies demand autonomy and their share. Shortages of repair materials and labor force the main contingent to withdraw in 2119, leaving only some contacts and trade. The participants’ name “Tsushima conquest” describes this local victory, not annexation of the whole island or a victory by a united Seoul navy.
 
 The Heukseok interpretation window wrote foreign words beside their Korean annotations in the agreement. Recovered goods, compensation claims, and returning escorts’ testimony reach Seoul. In 2126 a shipowner’s commission and a local ally’s promised share may collide over the same recovered object in Yongsan, but that meeting is conditional. Unverified reports concerning mainland Japan, China, or the United States fall outside the evidence from this port expedition.
 
@@ -5856,7 +5857,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt05-여의도-�
 
 환적국 환적 창구 앞에 세 갈래 중계 표지판이 빗물에 번진다. 영남에서는 부산 선원과 수리 인력이 2058년 유지 가능한 배만 골라 연안 운항을 다시 연다. 선주마다 부담한 자재와 인력이 달라 항구 대표가 모든 출항을 명령할 수 없다. 울산·포항의 수리인과 해체업자는 설비를 살릴지 부품으로 팔지 다투며, 내륙 정착지는 항구와도 이해가 다르다. 대정전 무렵 전국 상황 표시가 울산부터 꺼졌다는 관측은 울산이 대정전을 일으켰다는 증거가 아니다.
 
-Arc 집사는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는다. 2118년 부산 일대 선주와 각자 고용한 호위대는 나포된 배와 사람을 되찾으려 한시적으로 연합한다. 대마도의 한 항구 무장 집단에 통행을 빼앗긴 현지 선원 일부가 접안을 돕고, 원정대는 그 항구 한 곳에서 방어 거점을 무너뜨리고 배와 포로를 회수한다. 선주는 귀환을, 지휘자는 점령 지속을, 현지 협력자는 자치와 몫을 요구한다. 손상 선박의 보수 자재와 인력이 모자라 2119년 주력이 철수하고 일부 연락과 교역만 남는다. 참가자가 부르는 ‘대마도 정벌’은 이 국지 승리이며, 대마도 전역의 병합이나 서울 연합 해군의 승전이 아니다.
+Arc 사자는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는다. 2118년 부산 일대 선주와 각자 고용한 호위대는 나포된 배와 사람을 되찾으려 한시적으로 연합한다. 대마도의 한 항구 무장 집단에 통행을 빼앗긴 현지 선원 일부가 접안을 돕고, 원정대는 그 항구 한 곳에서 방어 거점을 무너뜨리고 배와 포로를 회수한다. 선주는 귀환을, 지휘자는 점령 지속을, 현지 협력자는 자치와 몫을 요구한다. 손상 선박의 보수 자재와 인력이 모자라 2119년 주력이 철수하고 일부 연락과 교역만 남는다. 참가자가 부르는 ‘대마도 정벌’은 이 국지 승리이며, 대마도 전역의 병합이나 서울 연합 해군의 승전이 아니다.
 
 흑석 통역 창구는 협정에 외래어와 한국어 주석을 나란히 적는다. 서울에는 회수품·배상 요구·귀환 호위꾼의 증언이 들어온다. 2126년 용산에서 선주의 의뢰와 현지 협력자의 약속이 같은 회수품을 놓고 충돌할 수 있으나, 이 만남은 조건부 사건이다. 일본 본토·중국·미국과 관련한 미확인 소식은 이 항구 원정의 확인 범위에 포함하지 않는다.
 
@@ -53310,7 +53311,7 @@ The map shows opening-day surface holdings alongside mapped rail locations. A ra
 
 ## Winter and Station Depth
 
-The season remains an unending winter, but surface cold varies by region. Surface temperatures use the daily minimum recorded at each region''s representative weather station on 8 January 2021. Seoul''s surface and exposed platforms use −18.6°C; clothing elsewhere varies in thickness and fabric with the matching regional value below. Stations with railway tracks, including metro, regional, high-speed, and conventional railways, distinguish exposed areas from underground living quarters.
+The season remains winter, but surface cold varies by region. Surface temperatures use the daily minimum recorded at each region''s representative weather station on 8 January 2021. Seoul''s surface and exposed platforms use −18.6°C; clothing elsewhere varies in thickness and fabric with the matching regional value below. Stations with railway tracks, including metro, regional, high-speed, and conventional railways, distinguish exposed areas from underground living quarters.
 
 Living environments fall into three tiers: the surface, intermediate underground, and deep underground. Even spaces close to the surface are warmer than the surface in that region and belong to the intermediate tier. The baseline underground ranges are 8–18°C at intermediate depth and 18–22°C deep underground. Regional temperature differences are smaller underground, so a surface temperature difference is not transferred below ground at the same magnitude. People first choose insulating layers for their surroundings, then adjust them for work and individual sensitivity to cold at the same depth. These underground ranges describe the nominal living environment, not measured station temperatures.
 
@@ -53358,7 +53359,7 @@ For clothing differences between trades at the same depth, see [Characters, Fact
 
 ## 겨울과 역사의 깊이
 
-계절은 영원한 겨울에 머물지만 지역마다 지상의 추위는 다르다. 지상의 기온은 2021년 1월 8일 각 시·도 대표 관측소의 일최저기온을 기준으로 한다. 서울 지상과 지상 승강장은 −18.6℃에 맞춰 방한하며, 다른 지역은 아래 표의 해당 시·도 기온에 따라 옷의 두께와 소재가 달라진다. 지하철뿐 아니라 광역전철·고속철도·일반철도 등 철로가 놓인 역에서도 지상에 노출된 곳과 지하 생활권을 구분한다.
+계절은 겨울에 머물지만 지역마다 지상의 추위는 다르다. 지상의 기온은 2021년 1월 8일 각 시·도 대표 관측소의 일최저기온을 기준으로 한다. 서울 지상과 지상 승강장은 −18.6℃에 맞춰 방한하며, 다른 지역은 아래 표의 해당 시·도 기온에 따라 옷의 두께와 소재가 달라진다. 지하철뿐 아니라 광역전철·고속철도·일반철도 등 철로가 놓인 역에서도 지상에 노출된 곳과 지하 생활권을 구분한다.
 
 생활 환경은 지상, 중간 깊이 지하, 깊은 지하의 세 단계로 나뉜다. 지상 가까운 지하도 그 지역의 지상보다는 따뜻하며, 중간 깊이 지하 생활권에 속한다. 지하 생활권의 기본 기온은 중간 깊이 8–18℃, 깊은 지하 18–22℃다. 지하의 지역별 온도 차이는 지상보다 작으며, 지상의 기온 차이가 지하에 같은 폭으로 이어지지는 않는다. 사람들은 먼저 머무는 단계의 기온에 맞춰 보온 겹을 고르고, 같은 깊이 안에서 하는 일과 개인의 추위 민감도에 따라 옷을 더하거나 덜어 낸다. 지하 기온 범위는 이 세계의 생활 환경을 나타내는 설정값이며 실제 역의 관측값은 아니다.
 
