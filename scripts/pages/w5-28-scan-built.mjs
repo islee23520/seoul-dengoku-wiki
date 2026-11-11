@@ -1,8 +1,13 @@
 #!/usr/bin/env node
-// W5-28 step 8b — 빌드 산출 가시 텍스트 4부류 스캔(두 언어).
+// W5-28 step 8b (2026-11-11 H1 개정) — 빌드 산출 가시 텍스트 4부류 스캔(두 언어), 매치 단위 분류.
 // script/style/HTML 주석/태그를 걷어 내고 href/id 속성은 보지 않는다(scan-terms와 같은 추출 원칙).
-// 부류: sixteen(십육국 계열) / church(성직 어휘) / slaughter(살육 서사) / y2030(2030년 표기) / old-org(옛 국가·조직명).
-// 각 히트를 record-schema|owner-pending|real-building-name|approved-term|leftover 로 분류해 JSON을 남긴다.
+// 부류: sixteen(십육국 계열) / church(성직 어휘) / slaughter(살육 서사) / y2030(2030 표기) / old-org(옛 국가·조직명).
+// 분류는 페이지 단위가 아니라 **매치 단위**로 매치를 둘러싼 문장에서 판정한다(H1 결함 수정):
+//   y2030 → title(구 제목 2030–2126) / old-blackout(구 대정전 서술) / birth-or-date(생년·이야기 내 날짜)
+//           / hash-substring(해시·경로 부분문자열) / other(전수 목록 대상)
+//   나머지 부류 → record-schema | owner-pending | approved-term | disclosed-followup | other
+//   approved-term 가운데 '존속 조직명' 근거는 미검증 면제다 — exemptionBasis: 'surviving-org' 로 표시해
+//   보고서가 의존 매치 수를 세고 표본 검수하게 한다(자동 면제로 신뢰하지 않는다).
 // 사용법: node scripts/pages/w5-28-scan-built.mjs --html <dist-dir> [--json <path>]
 import fs from 'node:fs';
 import path from 'node:path';
@@ -28,11 +33,46 @@ const CLASSES = [
   { id: 'y2030', re: /\b2030\b/g },
   { id: 'old-org', re: /(수문국|규격맹|태욱그룹|성하그룹|안국총림|흰십자단|동방사|여의도출자연합회|Floodgate (?:Bureau|State)|Standards League|Taeuk Group|Seongha Group|Anguk Grand Monastery|White Cross Corps|Eastern Command|Yeouido Investment Federation|Religious Alliance|Myeongbu Church)/g },
 ];
-// 분류 규칙(측정 기반): w5-26 잔존 분류表(펜스 JSON·설계 참조·슬러그), 090/110 owner-decision 항목,
-// 존속 조직명(옛 국가는 단체로 존속), 살육 부정문(바이블 4절), Century-Annals 구 제목(계획 29행 대기).
-// 분류되지 않는 것은 leftover-candidate로 남기고 보고서에서 전수 목록화한다.
+// 소유자 질문 대기 인물(직함 보류) — handoff-090-apply.mjs PENDING_TITLE_PERSONS와 같은 목록.
 const PENDING_PERSONS = new Set(['0001', '0029', '0116', '0220', '0246', '0272', '0323', '0349', '0399', '0457', '1005', '1008', '0145', '0086', '0088', '0089', '0094', '0095', '0096', '0104', '0105', '0108']);
-const DATE_CTX = /\b20\d{2}-\d{2}-\d{2}\b/;
+
+// ---- 매치 단위 판정 ----
+const BLACKOUT_CTX = /대정전|Great Blackout|10월 14일|October 14, ?2030|2030년 ?10월|communications (?:failed|are cut)|통신이 끊기|설비가 멈추|equipment stop|cloud learning|구름 학습/;
+const DATE_OR_BIRTH = /생년|출생|born (?:in|on)|\b\d{4}-\d{2}-\d{2}\b|birth|Birth|예비군 중대/;
+function sentenceAround(text, idx) {
+  let s = idx; let e = idx;
+  while (s > 0 && !'.!?…\n'.includes(text[s - 1]) && idx - s < 160) s--;
+  while (e < text.length && !'.!?…\n'.includes(text[e]) && e - idx < 200) e++;
+  return text.slice(s, e).replace(/\s+/g, ' ').trim();
+}
+function classifyY2030(sentence, text, idx, matchLen) {
+  const around = text.slice(Math.max(0, idx - 40), idx + matchLen + 40);
+  if (/2030[-–]2126/.test(around)) return { klass: 'title (구 Century-Annals 제목 2030–2126 — 폐기 예정 표기)', exemptionBasis: null };
+  if (BLACKOUT_CTX.test(sentence)) return { klass: 'old-blackout (구 대정전 서술 — 바이블 3절 위반)', exemptionBasis: null };
+  if (DATE_OR_BIRTH.test(sentence)) return { klass: 'birth-or-date (생년·이야기 내 날짜)', exemptionBasis: null };
+  const run = text.slice(Math.max(0, idx - 24), idx + matchLen + 24).match(/[\w:/\\.-]{16,}/);
+  if (run && run[0].length >= 16 && /[0-9a-f]{6}/i.test(run[0])) return { klass: 'hash-substring (해시·경로 부분문자열)', exemptionBasis: null };
+  return { klass: 'other-y2030 (전수 목록 대상)', exemptionBasis: null };
+}
+function classifyOther(classId, sentence, pageInfo) {
+  const { isGdd, isPerson, isFamily, isRelations, isLicense, pid } = pageInfo;
+  if (isLicense) return { klass: 'record-schema (라이선스 원문)', exemptionBasis: null };
+  if (classId === 'slaughter') return { klass: 'approved-term (살육 부정문·동물 관리 서술 — 바이블 4절 허용)', exemptionBasis: 'slaughter-negation' };
+  if (isGdd) return { klass: classId === 'church' ? 'record-schema (CK3/CK2 게임 메커니즘 인용 — w5-26 잔존 분류)' : 'record-schema (펜스 JSON payload·예시 표·슬러그 인용 — w5-26 잔존 분류)', exemptionBasis: 'gdd-record' };
+  if (isPerson) {
+    if (PENDING_PERSONS.has(pid)) return { klass: 'owner-pending (Q 대기 인물 — org-name-map·성직 어휘 미적용)', exemptionBasis: null };
+    if (classId === 'old-org') return { klass: 'approved-term (존속 조직명 — 옛 국가는 단체로 존속)', exemptionBasis: 'surviving-org' };
+    return { klass: 'owner-pending (090 owner-decision 항목)', exemptionBasis: null };
+  }
+  if (isFamily || isRelations) {
+    if (classId === 'old-org') return { klass: 'approved-term (존속 조직명 — 가계도·가신 산문)', exemptionBasis: 'surviving-org' };
+    return { klass: 'owner-pending (가계도·가신 성직 문장 — owner-decision)', exemptionBasis: null };
+  }
+  if (classId === 'old-org') return { klass: 'approved-term (존속 조직명 — 옛 국가는 단체로 존속)', exemptionBasis: 'surviving-org' };
+  if (classId === 'sixteen' && pageInfo.retiredUiNotice) return { klass: 'disclosed-followup (725 UI 전환 안내문 “십육국 체제는 폐지됐다/retired”)', exemptionBasis: 'ui-notice' };
+  return { klass: 'other (전수 목록 대상 — leftover 후보)', exemptionBasis: null };
+}
+
 const hits = [];
 let pages = 0;
 (function walk(d) {
@@ -43,37 +83,46 @@ let pages = 0;
     pages++;
     const rel = path.relative(DIST, p).replaceAll('\\', '/');
     const text = visible(fs.readFileSync(p, 'utf8'));
-    const isGdd = /(^|\/)gdd\//.test(rel);
-    const isPerson = /people\/person-/.test(rel);
-    const isFamily = rel.includes('/families/');
-    const isRelations = rel.includes('/relations/');
-    const isLicense = rel.includes('/license/');
-    const pid = rel.match(/person-(\d+)/)?.[1];
+    const pageInfo = {
+      isGdd: /(^|\/)gdd\//.test(rel),
+      isPerson: /people\/person-/.test(rel),
+      isFamily: rel.includes('/families/'),
+      isRelations: rel.includes('/relations/'),
+      isLicense: rel.includes('/license/'),
+      pid: rel.match(/person-(\d+)/)?.[1] ?? '',
+      retiredUiNotice: /states\/index\.html$/.test(rel) && /폐지|retired/.test(text),
+    };
     for (const c of CLASSES) {
       c.re.lastIndex = 0;
-      const m = [...text.matchAll(c.re)];
-      if (!m.length) continue;
-      let klass;
-      if (isLicense) klass = 'record-schema (라이선스 원문)';
-      else if (c.id === 'y2030') {
-        if (text.includes('2030–2126')) klass = 'owner-pending (Century-Annals 구 제목 2030–2126 — 계획 29행 개명 대기)';
-        else if (DATE_CTX.test(text)) klass = 'record-schema (생년·날짜 표기)';
-        else klass = 'leftover-candidate';
-      } else if (c.id === 'slaughter') klass = 'approved-term (살육 부정문·동물 관리 서술 — 바이블 4절 허용)';
-      else if (isGdd) klass = c.id === 'church' ? 'record-schema (CK3/CK2 게임 메커니즘 인용 — w5-26 잔존 분류)' : 'record-schema (펜스 JSON payload·예시 표·슬러그 인용 — w5-26 잔존 분류)';
-      else if (isPerson) klass = PENDING_PERSONS.has(pid) ? 'owner-pending (Q 대기 인물 — org-name-map·성직 어휘 미적용)' : (c.id === 'old-org' ? 'approved-term (존속 조직명)' : 'owner-pending (090 owner-decision 항목)');
-      else if (isFamily || isRelations) klass = c.id === 'old-org' ? 'approved-term (존속 조직명)' : 'owner-pending (가계도·가신 성직 문장 — owner-decision)';
-      else if (c.id === 'old-org') klass = 'approved-term (존속 조직명 — 옛 국가는 단체로 존속)';
-      else if (c.id === 'sixteen' && /states\/index\.html$/.test(rel) && /폐지|retired/.test(text)) klass = 'approved-term (725 UI 전환 안내문 “십육국 체제는 폐지됐다/retired”)';
-      else klass = 'leftover-candidate';
-      const i = text.indexOf(m[0][0]);
-      hits.push({ page: rel, class: c.id, count: m.length, matches: [...new Set(m.map((x) => x[0]))].slice(0, 6), classification: klass, excerpt: text.slice(Math.max(0, i - 60), i + 90).replace(/\s+/g, ' ').trim() });
+      const ms = [...text.matchAll(c.re)];
+      if (!ms.length) continue;
+      const perMatch = ms.map((m) => {
+        const sentence = sentenceAround(text, m.index);
+        const { klass, exemptionBasis } = c.id === 'y2030' ? classifyY2030(sentence, text, m.index, m[0].length) : classifyOther(c.id, sentence, pageInfo);
+        return { text: m[0], sentence: sentence.slice(0, 160), klass, exemptionBasis };
+      });
+      const byKlass = {};
+      for (const pm of perMatch) byKlass[pm.klass] = (byKlass[pm.klass] ?? 0) + 1;
+      hits.push({ page: rel, class: c.id, count: ms.length, matches: [...new Set(ms.map((x) => x[0]))].slice(0, 6), classification: byKlass, perMatch, excerpt: perMatch[0].sentence.slice(0, 120) });
     }
   }
 })(DIST);
-const byClass = {}; const byKlass = {};
-for (const h of hits) { byClass[h.class] = (byClass[h.class] ?? 0) + h.count; byKlass[h.classification] = (byKlass[h.classification] ?? 0) + h.count; }
-const summary = { pages, hitPages: hits.length, totalMatches: hits.reduce((s, h) => s + h.count, 0), byClass, byClassification: byKlass, leftoverCandidates: hits.filter((h) => h.classification === 'leftover-candidate').length };
+const byClass = {}; const byKlass = {}; let totalMatches = 0; let exemptionSurvivingOrg = 0; let otherLeftover = 0;
+for (const h of hits) {
+  byClass[h.class] = (byClass[h.class] ?? 0) + h.count; totalMatches += h.count;
+  for (const [k, v] of Object.entries(h.classification)) {
+    byKlass[k] = (byKlass[k] ?? 0) + v;
+    if (h.perMatch.length) { /* class-level tally only */ }
+  }
+  for (const pm of h.perMatch) if (pm.exemptionBasis === 'surviving-org') exemptionSurvivingOrg++;
+  for (const pm of h.perMatch) if (/^other/.test(pm.klass)) otherLeftover++;
+}
+const uniqueHitPages = new Set(hits.map((h) => h.page)).size;
+const summary = {
+  pages, hitPages: hits.length, uniqueHitPages, totalMatches, byClass, byClassification: byKlass,
+  leftoverCandidates: otherLeftover,
+  reliesOnSurvivingOrgExemption: exemptionSurvivingOrg,
+};
 console.log(JSON.stringify(summary, null, 1));
 const ji = args.indexOf('--json');
 if (ji >= 0) { fs.mkdirSync(path.dirname(path.join(REPO, args[ji + 1])), { recursive: true }); fs.writeFileSync(path.join(REPO, args[ji + 1]), JSON.stringify({ summary, hits }, null, 1)); }

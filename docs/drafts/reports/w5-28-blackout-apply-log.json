@@ -1,0 +1,1571 @@
+{
+ "generatedBy": "scripts/pages/blackout-year-edit.mjs",
+ "rulesPath": "docs/blackout-year-rules.json",
+ "policy": {
+  "perRule": "규칙 1건 = 정확한 문장(또는 값) 1개. 파일·행·열·JSON 경로가 모두 일치하는 셀에서 old가 정확 1회 나올 때만 1회 치환한다(부분 문자열 전역 치환 금지).",
+  "exclusionH3": "person-0195 전체 셀 4건과 110 c624-d574-c8fc nodes[1].timeline[0].summary 2건은 H3(org→polity 결함)의 문장 전체 재작성에 연도 교정이 포함되므로 이 표에서 제외한다.",
+  "kept": "kept 배열은 대정전 문맥이 아니라고 판정해 2030을 그대로 둔 전수 목록이다(생년·이야기 내 날짜). 판정 근거는 각 reason."
+ },
+ "approvedWording": {
+  "ko": "약 2026년",
+  "en": "around 2026",
+  "source": "docs/CANON-BIBLE.md §3 연표 [승인] 및 Q2(월일 미정)"
+ },
+ "counts": {
+  "rulesTotal": 220,
+  "applied": 220,
+  "byFile": {
+   "110": 80,
+   "090": 140
+  },
+  "changedCells": 214,
+  "changedRows": {
+   "110": 8,
+   "090": 33
+  },
+  "failed": 0
+ },
+ "keptTotal": 84,
+ "perRule": [
+  {
+   "file": "090",
+   "id": "person-0057",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0057",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0057",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0057",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0170",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0170",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0170",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0170",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0172",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0172",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0172",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0172",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0174",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0174",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0174",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0174",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0175",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0175",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0175",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0175",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0176",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0176",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0176",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0176",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0177",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0177",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0177",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0177",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0178",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0178",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0178",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0178",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0180",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0180",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0180",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0180",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0181",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0181",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0181",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0181",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0183",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0183",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0183",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0183",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0184",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0184",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0184",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0184",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0187",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0187",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0187",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0187",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0188",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0188",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0188",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0188",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0189",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0189",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0189",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0189",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0190",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0190",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0190",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0190",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0191",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0191",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0191",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0191",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0192",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0192",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0192",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0192",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0193",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0193",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0193",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0193",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0194",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0194",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0194",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0194",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0200",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0200",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0200",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0200",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0446",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0446",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0446",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0446",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0606",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0606",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0606",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0606",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0926",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0926",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0926",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0926",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0958",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0958",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0958",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0958",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0974",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0974",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0974",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0974",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0990",
+   "column": "json",
+   "path": "$.sections.Life",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0990",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0990",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-0990",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1011",
+   "column": "json",
+   "path": "$.fields.Community of origin",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1011",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1011",
+   "column": "json_ko",
+   "path": "$.fields.출신 공동체",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1011",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1012",
+   "column": "json",
+   "path": "$.fields.Community of origin",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1012",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1012",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1012",
+   "column": "json_ko",
+   "path": "$.fields.출신 공동체",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1012",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1012",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1013",
+   "column": "json",
+   "path": "$.fields.Community of origin",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1013",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1013",
+   "column": "json_ko",
+   "path": "$.fields.출신 공동체",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1013",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1014",
+   "column": "json",
+   "path": "$.fields.Community of origin",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1014",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1014",
+   "column": "json_ko",
+   "path": "$.fields.출신 공동체",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1014",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1015",
+   "column": "json",
+   "path": "$.fields.Community of origin",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1015",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1015",
+   "column": "json_ko",
+   "path": "$.fields.출신 공동체",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1015",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json",
+   "path": "$.fields.Community of origin",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json",
+   "path": "$.fields.Conscription history",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json_ko",
+   "path": "$.fields.출신 공동체",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json_ko",
+   "path": "$.fields.징집 이력",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "090",
+   "id": "person-1016",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[81].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[81].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[82].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[82].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[83].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[83].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[84].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json",
+   "path": "$.nodes[84].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[81].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[81].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[82].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[82].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[83].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[83].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[84].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc15-bc00-c591",
+   "column": "json_ko",
+   "path": "$.nodes[84].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[2].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[2].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].date",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[3].timeline[1].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json",
+   "path": "$.nodes[6].timeline[1].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[2].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[2].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].date",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[1].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "bc94-ad6c-b85c-8303",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[1].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json",
+   "path": "$.nodes[5].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json",
+   "path": "$.nodes[5].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json_ko",
+   "path": "$.nodes[5].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json_ko",
+   "path": "$.nodes[5].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c720-c218-d3ec-bc14-c790-c591",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json",
+   "path": "$.nodes[5].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json",
+   "path": "$.nodes[5].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json_ko",
+   "path": "$.nodes[5].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json_ko",
+   "path": "$.nodes[5].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c784-b300-b9bc-6797",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json",
+   "path": "$.nodes[3].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json_ko",
+   "path": "$.nodes[3].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c7a5-baa9-cc9c-5f35",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c8fc-912d",
+   "column": "json",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "c815-c9c4-c8fc-912d",
+   "column": "json_ko",
+   "path": "$.nodes[1].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[16].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[16].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[17].timeline[0].date",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[17].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[17].timeline[1].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[20].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[20].timeline[1].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json",
+   "path": "$.nodes[20].timeline[2].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[16].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[16].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[17].timeline[0].date",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[17].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[17].timeline[1].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[20].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[20].timeline[1].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "cd5c-acbd-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[20].timeline[2].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json",
+   "path": "$.nodes[5].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json",
+   "path": "$.nodes[5].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json_ko",
+   "path": "$.nodes[5].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json_ko",
+   "path": "$.nodes[5].timeline[0].summaryEn",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summary",
+   "result": "applied"
+  },
+  {
+   "file": "110",
+   "id": "ce74-c2ec-c774-d0dc-c6d0",
+   "column": "json_ko",
+   "path": "$.nodes[6].timeline[0].summaryEn",
+   "result": "applied"
+  }
+ ]
+}
