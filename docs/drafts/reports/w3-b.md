@@ -12,7 +12,7 @@
 4. **B4 (편집 설명 문구)** — People-and-Machines ko:37/51, en:38/54('라인 이름과 봉인 좌표는 창작 설정이다', '철새와 포식 조류를 묶는 군락 명칭은 창작이다', 'this page did not prove any list of real 2026 deployments', 'this compendium fixed only ...'), Hangnyeol-and-Bon-gwan en:22('Hanja-surname rows copied into this repository') 및 같은 단락의 '캐스트가 실제 쓰는/창작 문중/created clans' 서술, People·RPAA 도입부의 '이 총람은/이 문서는' 문장을 세계 안 서술로 고쳤거나 삭제했다. 수정 후 열 파일에서 창작/설정/저장소/이 문서/편집/캐스트/데이터/canon/provisional/invented/repository/this page 등 정규식 적중 0. 광역 스캔(문서·페이지·작성·we·reader)의 잔여 적중은 교차 링크 문구·nav 제목('## 관련 문서')·세계 안 기록 서술뿐이다.
 5. **B5 (People-and-Machines ko:31 / en:32)** — `H01–H16`의 en dash 4개(언어당 2개)를 `H01-H16` 하이픈으로 바꿨다. 수정 후 열 파일에 U+2013/U+2014 잔여 0.
 6. **B6 (Food-Culture en:48)** — 한국어 ko:47 '급수량에 따라 배급미가 나뉜다'의 번역 'Ration rice is divided according to the amount of water supplied.'를 en 대응 단락 같은 위치에 추가했다(그 외 바이트 불변).
-7. **모델 라인** — 열 파일의 front matter model 라인을 모두 `cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model`(접미사 없음)로 맞췄다. 이 라운드의 completion 호출은 0회다. Gemini가 아니다. 앞선 라운드(st_01a1c7b2, cpa/claude-opus-5-5)가 쓴 초안 뼈대 위의 표적 치환이다.
+7. **모델 라인** — 열 파일의 front matter model 라인을 모두 `original drafts by cpa/claude-opus-5-5; rework by cpa/glm-5.3; 0 completion calls in both rounds; agent-authored text with scripted edits; not from a Gemini model`(접미사 없음)로 맞췄다. 두 라운드 모두 completion 호출 0회다. Gemini가 아니다. 원초안은 cpa/claude-opus-5-5(st_01a1c7b2)가, 재작업은 cpa/glm-5.3(st_01a1c7d8)이 표적 치환으로 수행했다.
 
 ## custodian 전수 감사 (Synthetic-Actors 48단위 × 050/090)
 
@@ -74,6 +74,59 @@
 - 050 전체 1,022명 이름 스캔: ko 49 적중(위 48 정비자 + '김도하' — H11 배우 별명이 person-0061 이름과 우연히 같은 표기. 기준선 원문이고 en 별명은 'Kimdoha'로 달라 인물 오링크가 아니다), en 48 적중(정확히 48 정비자).
 - 가문 대조: 48/48에서 `- 보관` 가문 = 감사 입회 가문 = `steward_house`가 서로 같다.
 
+## 수정 라운드 3 (2차 검증 지침, 마지막 재시도)
+
+### R2-1 모델 라인(진실성)
+
+- 열 파일 모두 아래 문자열로 통일했고 문자열 비교 10/10 일치를 확인했다(접미사 없음):
+  - `model: original drafts by cpa/claude-opus-5-5; rework by cpa/glm-5.3; 0 completion calls in both rounds; agent-authored text with scripted edits; not from a Gemini model`
+- 이 보고서의 모델 기록(위 7번·아래 9번)도 같은 문자열로 교체했다.
+- 모델 라인을 기록하는 저장소 스크립트는 존재하지 않는다: `scripts/pages/rewrite-doc.mjs`는 model: 값의 존재만 검사하고 쓰지 않는다. 치환은 작업 세션의 스크립트로 수행했으며, 이 보고서가 정확한 목표 문자열을 지정하므로 재실행 시 같은 문자열이 재현된다.
+
+### R2-2 Hangnyeol-and-Bon-gwan 근거 없는 신규 사실 삭제
+
+- ko:24 / en:25 — '옛 본관을 찾지 못한 란씨와 흥씨는 붕괴 뒤 `도봉 란씨`, `수색 흥씨`를 새로 합의했다' / 'The Ran and Heung, who could not find their old bon-gwan, agreed on ...' 삭제. 주민 검색 시점(사건)을 서술하지 않고 원본 030의 배정 사실만 남긴다: '란씨와 흥씨의 문중은 각각 `도봉 란씨`, `수색 흥씨`다' / 'The clans of the Ran and the Heung are the Dobong Ran clan and the Susaek Heung clan, respectively.'
+- 같은 문장의 '붕괴 전부터 이어진 문중' / '166 have come down from before the collapse' → '옛 문중' / '166 are old clans'(원본 '실존 자료 기반은 166개'의 직접 대응; 연속 사건 서술 제거).
+- ko:30 / en:31 — '나·라·류·문·민씨는 옛 문중 기록에서 본관을 찾았고' / 'The Na, Ra, Ryu, Mun, and Min found their bon-gwan in old clan records' 삭제(원문의 대응 서술은 '센서스 표에 대성 본관이 없던 … 별도 실존 문중 자료로 보강했고'라는 편집자 관점이므로 in-world 형태로 남길 수 없다).
+- ko:40 / en:41 — '옛 창녕 성씨의 항렬표와는 다르다' / 'It differed from the old Changnyeong Seong hangnyeol table.' 삭제(대체 문장 없음).
+
+### Hangnyeol 전체 문장 분류 (원본 030 `origin/feat/w2-applied:data/sql/030-wiki-documents.sql` 대비)
+
+분류 기준: (a) 원문 그대로, 혹은 직함·편집 어휘('캐스트', '창작', '정리했다', '배정', 'id', '잠금표', '주장하지 않는다', '출처') 제거·050 철자 교정만 가한 형태로 원문과 같은 사실을 담은 문장. (c) 세계 안 '기록되지 않음' 표현(v2 규칙 4). (b) 승인 정본 문장으로 분류된 행은 없다(필요하지 않았다). 표의 각 행은 원문 대응 행 번호와 대응한다.
+
+| 최종 초안(ko) | 분류 | 근거(원본 030 ko 행) |
+|---|---|---|
+| 도입 3문장(본관/항렬/세수) | (a) | 1행 그대로 |
+| `## 가문 항렬 예시` | (a) | 3행 '## 재벌 가문 항렬' — 은퇴 직함 어휘 '재벌' 제거(1차 라운드 확정) |
+| 2126년 이홍원·정서온·최지우 본관 문장+목록 3행 | (a) | 5·7~9행 — 직함(성하그룹 회장 등)만 제거, 본관 사실 동일 |
+| 총족 표 6행(5,582/1,507/4,075/36,744/408/263) | (a) | 13~19행 그대로(512 행은 1차 B4에서 이미 삭제) |
+| 169문중/166옛문중/3새문중 + 란·흥 문중 도봉·수색 | (a) | 21행 — 169·166·3·도봉 란·수색 흥 배정 사실; '정리했다/실존 자료/창작/배정/주장/출처' 편집어 제거(이번 라운드 재수정) |
+| `## 문중 명부` | (a) | 23행 '## 캐스트 적용 결과' — '캐스트' 제거(1차 B4) |
+| 1,022명/1,017명 문장 | (a) | 25행 그대로 |
+| 고예진·한서경·차유선·문도현 '기록되지 않았다' | (c) | 25행 '미정이다'의 세계 안 표현(1차 확정) |
+| 1,017명/란·흥 위 문중/임소매 등 귀화 본관/이연/본관-항렬 구분 | (a) | 27행 — 'id' 제거, 배정→든다, 나머지 사실 동일; 임소매·이연 문장 원문 그대로 |
+| 상태 표 5행 | (a) | 31~35행 그대로(applied 행 '창작 분파의 파생 세수'→'붕괴 뒤 합의한 분파의 세수': 원문 37행 자체의 '붕괴 뒤 새로 합의한' 속성) |
+| 적용 사례(성수현·성사현) 문단 | (a) | 37행 — '창작 가계'→'가계', '참고했다'→'따른다', 편집 판단문 삭제(1차), 비교문 삭제(이번 라운드); 세수·오행 사실 동일 |
+| 세 사람 오행 문단 | (a) | 39행 — 직함·'잠금표' 제거, 오행 사실 동일 |
+| 출처 4행 | (a) | 43~46행 그대로 |
+
+| 최종 초안(en) | 분류 | 근거(원본 030 en 행) |
+|---|---|---|
+| 도입 문장 | (a) | 2행 그대로 |
+| `## Examples of Family Hangnyeol` | (a) | 4행 — 'Chaebol' 제거 |
+| In 2126 … 문장+목록 3행 | (a) | 8~10행 — 직함 제거, 인명 050 철자(Yi Hong-won, Choe Ji-u 등; 1차 확정) |
+| 표 6행 | (a) | 14~20행 그대로(512 행은 1차 B4 삭제) |
+| 169/166/3 + Ran·Heung 문중 | (a) | 22행 — 1차 편집어 제거 + 이번 라운드 재수정(연속·검색 서술 삭제) |
+| `## The Clan Register` | (a) | 24행 — 'Cast' 제거(1차 B4) |
+| 1,022/1,017 문장 + No bon-gwan … recorded | (a)+(c) | 26행 — 'cast roster'→'person register', 'remained unconfirmed'→'was recorded'(c) |
+| 1,017/Ran·Heung/Im Somae 등/I Yeon/마지막 문장 | (a) | 28행 — 'Lee Yeon'→'I Yeon'(050), 'IDs' 제거, 배정→belong, 사실 동일 |
+| 상태 표 5행 | (a) | 32~36행(applied 행 'created branch'→'branch agreed upon after the collapse') |
+| 적용 사례 문단 | (a) | 38행 — 'created family line'→'family line newly agreed upon', 비교문·판단문 삭제, 사실 동일 |
+| 세 사람 오행 문단 | (a) | 40행 — 직함 제거, 050 철자 |
+| Sources 4행 | (a) | 44~47행 그대로 |
+
+분류 결과: ko 표 13행(12행 (a) + 1행 (c)), en 표 12행(11행 (a) + 1행 (a)+(c) 복합). (b) 승인 정본 문장으로 분류된 행은 없으며, 근거 없는 신규 사실 문장은 0이다.
+
 ## 자기점검 (공통 브리프 v2 열 가지, 각각 실행 명령과 수치)
 
 1. **출처 역추적** — 이번 라운드가 더한 문장은 B6 영어 번역 1문장(기존 ko:47 문장의 번역), K170/K171 두 이름(090 person-0171/0172), 050 철자로의 치환뿐이다. 신규 사실 문장 0. 나머지 변경은 삭제·표현 교정이며, 남은 본문의 행별 근거는 독립 검증 보고서의 ledger(`.omo/evidence/w3-b-gate-review.md` '출처·내용 검토' 절)가 이미 대응한다. RPAA 길이 하한은 `--allow-shrink`로 완화했다(아래 21.25%).
@@ -84,7 +137,7 @@
 6. **지도·인물 대조** — 120-map-core `map_station` 312행 전수 대조: 초안에 나오는 역 언급이 전부 district와 함께 확인됐다(예: 수서·선정릉·청담·삼성=강남구, 자양=광진구, 왕십리·뚝섬=성동구, 마포=마포구, 명동=중구, 동대문=종로구, 창동=도봉구, 노량진=동작구, 영등포·여의도=영등포구, 가락시장·잠실=송파구, 신정·양평=양천구, 암사·고덕=강동구, 구로·천왕=구로구, 마곡=강서구, 군자=광진구, 서울역·안국·광화문=중구/종로구, 용산=용산구). '정릉'('선정릉'의 부분문자열), '구의'(조사 결합), '성수'('성수현'의 부분문자열), '강남'(역 강남역=서초구 vs 지역 표현)은 문맥상 노이즈다. 인물은 위 48행 감사 표.
 7. **한영 정합** — rewrite-doc 무결성 검사 exit 0: 앵커 집합 동일(Food 0=0, Hangnyeol 0=0, People 0=0, RPAA 6=6, Synthetic 49=49), 제목 수 동일(4=4, 3=3, 5=5, 6=6, 48=48). B6 시제로 급수량-배급미 사실이 양 언어 모두에 있다. 잉글리시/한글 혼입: en에 한글 0.
 8. **제목 열** — 열 파일 front matter에서 `title:`/`title_ko:` 라인 0(model + section_checkpoint만).
-9. **모델 기록** — 열 파일 model 라인 = `cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model`(tasks json effective_model = cpa/glm-5.3; PI_MODEL 미사용). completion 호출 0회. 초안 뼈대는 앞선 라운드(cpa/claude-opus-5-5)가 쓰고 이번 라운드가 표적 치환으로 마쳤다. Gemini 산출물이 아니다.
+9. **모델 기록** — 열 파일 model 라인 = `original drafts by cpa/claude-opus-5-5; rework by cpa/glm-5.3; 0 completion calls in both rounds; agent-authored text with scripted edits; not from a Gemini model`(문자열 비교 10/10; 각 tasks json effective_model 기준, PI_MODEL 미사용). 두 라운드 모두 completion 호출 0회. 원초안 cpa/claude-opus-5-5, 재작업 치환 cpa/glm-5.3. Gemini 산출물이 아니다.
 10. **측정값** — 아래 수치는 모두 이번 세션의 실행 결과다. 측정하지 않은 것을 '확인'이라고 쓰지 않았다. 브라우저 렌더링·자동 heading slug 실행은 이 라운드에서 하지 않았다(독립 검증도 별도 항목으로 남긴 한계).
 
 ## 검증 실행 (스크래치 복사본 `C:/Users/oliver/AppData/Local/Temp/wt-w3b-scratch/sql`)
@@ -93,7 +146,7 @@
 |---|---|---|
 | `node scripts/pages/rewrite-doc.mjs --sql-dir <scratch>/sql --roundtrip` | 0 | 기준선 030 재직렬화 바이트 동일(3,719,229B) |
 | `node scripts/pages/rewrite-doc.mjs --sql-dir <scratch>/sql --drafts docs/drafts --only Food-Culture,Hangnyeol-and-Bon-gwan,People-and-Machines,Regional-Physical-AI-Arcs,Synthetic-Actors --allow-shrink` | 0 | 5문서 반영, 앵커·제목 무결성 통과 |
-| `node scripts/pages/rewrite-doc.mjs --sql-dir <scratch>/sql --roundtrip` | 0 | 적용 후 재직렬화 바이트 동일(3,675,568B) |
+| `node scripts/pages/rewrite-doc.mjs --sql-dir <scratch>/sql --roundtrip` | 0 | 적용 후 재직렬화 바이트 동일(3,675,223B; 2차 수정 후 스크래치 재실행) |
 | `node scripts/pages/scan-terms.mjs --terms docs/canon-terms.json --scope <같은 5 slug> --sql-dir <scratch>/sql` | 0 | 금지 위반 0, 필수 위반 0, 면제 0, 건너뜀 0 |
 | 독립 SQLite diff(bun:sqlite; `git show HEAD:data/sql/030-wiki-documents.sql` 대 적용본, wiki_document 59행 × 7열 전수) | — | 변경 셀 정확히 10개(5 slug의 body_md·body_ko_md만), 제목·분류·정렬 불변 |
 
@@ -102,7 +155,7 @@
 | 문서 | ko | en |
 |---|---|---|
 | Food-Culture | 6,614 → 5,833B (88.19%) | 7,273 → 6,416B (88.22%) |
-| Hangnyeol-and-Bon-gwan | 4,515 → 3,901B (86.40%) | 5,017 → 4,322B (86.15%) |
+| Hangnyeol-and-Bon-gwan | 4,515 → 3,727B (82.55%) | 5,017 → 4,151B (82.74%) |
 | People-and-Machines | 8,677 → 8,444B (97.31%) | 9,478 → 9,035B (95.33%) |
 | Regional-Physical-AI-Arcs | 23,313 → 4,955B (21.25%) | 26,185 → 4,975B (19.00%) |
 | Synthetic-Actors | 59,411 → 59,223B (99.68%) | 68,476 → 68,215B (99.62%) |
