@@ -2,6 +2,7 @@
 -- Source of truth: edit via scripts/pages/rewrite-doc.mjs (data/sql is canonical; the archived export-sql.mjs is not a sync path).
 
 
+
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Ailments', 'Ailments and Symptoms', '질병과 증상', 'ailments', 0, '
 **A. Where disease starts**
 
@@ -46876,7 +46877,7 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 
 가. 표의 뼈대
 
-서울 25개 자치구의 역 이름과 관측 위치 334행이 표에 실렸다. 공식 신도와 표기 차이 19행은 같은 역의 별칭이다. 위키 지도는 역 315곳을 표시한다. 서울역, 종각, 여의도, 강남, 잠실 등은 이동 경로의 지점이다.
+서울 25개 자치구의 역 이름과 관측 위치 334행이 표에 실렸다. 공식 부제와 표기 차이 19행은 같은 역의 별칭이다. 위키 지도는 역 315곳을 표시한다. 서울역, 종각, 여의도, 강남, 잠실 등은 이동 경로의 지점이다.
 
 나. 목록의 예
 
@@ -52690,7 +52691,7 @@ The passages joining layer to layer and station to station changed state without
 
 가. 역명과 수
 
-서울 역 카탈로그에는 관측 명칭 334행이 실렸다. 공식 신도와 표기 차이를 합친 위키 지도에는 역 315곳이 표시된다. 외곽 광역망은 별도로 이어진다. 서울역, 시청, 강남, 잠실, 여의도 등의 이름은 각 거점을 부르는 데 쓰인다.
+서울 역 카탈로그에는 관측 명칭 334행이 실렸다. 공식 부제와 표기 차이를 합친 위키 지도에는 역 315곳이 표시된다. 외곽 광역망은 별도로 이어진다. 서울역, 시청, 강남, 잠실, 여의도 등의 이름은 각 거점을 부르는 데 쓰인다.
 
 나. 자치구별 밀도
 
