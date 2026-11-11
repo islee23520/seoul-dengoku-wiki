@@ -1,7 +1,7 @@
 {
  "generatedBy": "scripts/pages/fix2-sentence-edits.mjs",
  "rulesPath": "docs/fix2-sentence-rules.json",
- "purpose": "W5-28 fix2 D1 — 090 인계 org-name-map의 조직→정치체 뒤섞임 교정. 흰십자단 61셀(제기동의 중립 의료국) 포함, 스윙(w5-28-orgmap-sweep.json) 전량 판독 결과 실제 뒤섞임 1,773셀을 기저 조직 명사(또는 중립 표기)로 복원하고 올바른 세력 표기 1,180건은 유지한다.",
+ "purpose": "W5-28 fix2 D1 — 090 인계 org-name-map의 조직→정치체 뒤섞임 교정. 흰십자단 61셀(제기동의 중립 의료국) 포함, 스윙(w5-28-orgmap-sweep.json) 전량 판독 결과 실제 뒤섞임 1,773셀을 기저 조직 명사(또는 중립 표기)로 복원하고 올바른 세력 표기 1,180건은 유지한다. D2(존속 조직명 면제 전수 분류)에서 걸러진 상태기능 문장 가운데 소유자 답 없이 중립화 가능한 것과 D3 거주지 메타 문구를 추가한다. D2(존속 조직명 면제 전수 분류)에서 걸러진 상태기능 문장 가운데 소유자 답 없이 중립화 가능한 것과 D3 거주지 메타 문구를 추가한다. D2(존속 조직명 면제 전수 분류)에서 걸러진 상태기능 문장 가운데 소유자 답 없이 중립화 가능한 것과 D3 거주지 메타 문구를 추가한다.",
  "policy": {
   "perRule": "규칙 1건 = 정확한 문장(또는 값) 1개. 파일·행·열·JSON 경로가 모두 일치하는 셀에서 old가 정확 1회 나올 때만 1회 치환한다(blackout-year-edit.mjs 엔진과 동일).",
   "fixRule": "실제 뒤섞임: 서술(행위·소유·근거지·공동 승인)·회사/군 조직 직함·중립 단체 표시·정본 위반 세력 주장(자유도시 왕국, 서대문구 자유도시 공작령, Free City Council)은 기저 조직 명사를 복원한다.",
@@ -9,18 +9,20 @@
   "alreadyFixed": "person-0195 전 셀(H3), person-0405/0406 일부(M1), person-1017/1018/1019(EXTRA)는 이번 테이블에서 제외했다(중복 수정 방지).",
   "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
  },
+ "ruleRange": "전체 테이블",
  "counts": {
-  "rulesTotal": 1771,
-  "applied": 1771,
+  "rulesTotal": 1821,
+  "rulesApplied": 1821,
+  "rulesSkippedBefore": 0,
   "byFile": {
    "110": 0,
-   "090": 1771
+   "090": 1821
   },
   "multiOccurrence": 3,
-  "changedCells": 1404,
+  "changedCells": 1433,
   "changedRows": {
    "110": 0,
-   "090": 273
+   "090": 277
   },
   "failed": 0
  },
@@ -14191,6 +14193,406 @@
    "id": "person-1022",
    "column": "json_ko",
    "path": "$.fields.소속",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0040",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0040",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0040",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0040",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json_ko",
+   "path": "$.sections.관직",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0250",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0250",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0250",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0250",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0250",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0250",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0258",
+   "column": "json",
+   "path": "$.sections.Intervention",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0258",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0258",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0258",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[0].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0258",
+   "column": "json_ko",
+   "path": "$.characterProfile.narrative",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0258",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0258",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0258",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-1018",
+   "column": "json",
+   "path": "$.fields.Residence",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-1018",
+   "column": "json_ko",
+   "path": "$.fields.거주지",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-1018",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-1018",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-1020",
+   "column": "json",
+   "path": "$.fields.Residence",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-1020",
+   "column": "json_ko",
+   "path": "$.fields.거주지",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-1020",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-1020",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-1021",
+   "column": "json",
+   "path": "$.fields.Residence",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-1021",
+   "column": "json_ko",
+   "path": "$.fields.거주지",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-1021",
+   "column": "json",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-1021",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0250",
+   "column": "json_ko",
+   "path": "$.sections.야망",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0258",
+   "column": "json_ko",
+   "path": "$.characterProfile.narrative",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0258",
+   "column": "json_ko",
+   "path": "$.sections.개입",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0258",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[0].behavior",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[0].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[0].behavior",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json",
+   "path": "$.characterProfile.traits[0].description",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json",
+   "path": "$.characterProfile.traits[0].behavior",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json_ko",
+   "path": "$.characterProfile.narrative",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json",
+   "path": "$.characterProfile.narrative",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0250",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0258",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json_ko",
+   "path": "$.biography",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json",
+   "path": "$.sections.Offices",
+   "result": "applied",
+   "occurrences": 1
+  },
+  {
+   "file": "090",
+   "id": "person-0045",
+   "column": "json",
+   "path": "$.biography",
    "result": "applied",
    "occurrences": 1
   }

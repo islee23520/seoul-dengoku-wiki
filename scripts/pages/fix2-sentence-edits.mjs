@@ -69,8 +69,9 @@ function loadFile(spec, filePath) {
 }
 
 export function run({ rulesPath, logPath, dryRun }) {
+  const from = Number(process.env.FIX2_FROM ?? 0);
   const table = JSON.parse(fs.readFileSync(path.join(REPO, rulesPath), 'utf8'));
-  const rules = table.rules;
+  const rules = table.rules.slice(from);
   const loaded = {
     '090': loadFile(FILES['090'], path.join(REPO, 'data/sql', FILES['090'].name)),
     '110': loadFile(FILES['110'], path.join(REPO, 'data/sql', FILES['110'].name)),
@@ -119,8 +120,8 @@ export function run({ rulesPath, logPath, dryRun }) {
   }
   const log = {
     generatedBy: 'scripts/pages/fix2-sentence-edits.mjs',
-    rulesPath, purpose: table.purpose, policy: table.policy,
-    counts: { rulesTotal: rules.length, applied, byFile, multiOccurrence: rules.filter((r) => r.expect).length, changedCells: changedCells.size, changedRows: { '090': outputs['090'].changedRows, '110': outputs['110'].changedRows }, failed: 0 },
+    rulesPath, purpose: table.purpose, policy: table.policy, ruleRange: from ? `[${from}..${table.rules.length - 1}] 증분 적용(정본 재현은 전체 테이블 0번부터)` : '전체 테이블',
+    counts: { rulesTotal: table.rules.length, rulesApplied: applied, rulesSkippedBefore: from, byFile, multiOccurrence: rules.filter((r) => r.expect).length, changedCells: changedCells.size, changedRows: { '090': outputs['090'].changedRows, '110': outputs['110'].changedRows }, failed: 0 },
     keptTotal: Array.isArray(table.kept) ? table.kept.length : null,
     perRule,
   };
@@ -137,7 +138,8 @@ function main() {
   const dryRun = process.argv.includes('--dry-run');
   let r;
   try {
-    r = run({ rulesPath: 'docs/fix2-sentence-rules.json', logPath: 'docs/drafts/reports/w5-28-fix2-edits-log.json', dryRun });
+    const logOverride = process.env.FIX2_LOG;
+    r = run({ rulesPath: 'docs/fix2-sentence-rules.json', logPath: logOverride ?? 'docs/drafts/reports/w5-28-fix2-edits-log.json', dryRun });
   } catch (e) { console.error(e.message); process.exit(e.code && Number.isInteger(e.code) ? e.code : 70); }
   console.log(JSON.stringify({ ...r, dryRun }, null, 1));
 }
