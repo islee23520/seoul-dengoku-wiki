@@ -14,7 +14,7 @@
   "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
  },
  "counts": {
-  "rules": 4153,
+  "rules": 4161,
   "kept": 1180,
   "keepByReason": {
    "소속 표기": 461,
@@ -38221,6 +38221,78 @@
    "old": "공식 신도와 표기 차이를 합친",
    "new": "공식 부제와 표기 차이를 합친",
    "reason": "fix16 — 공식 부제(부제목)→신도 치환 오염 복원(지리 문서, EN official subtitles)"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.fields.Work Location",
+   "old": "Preserves the lead believer's election, the absence of",
+   "new": "Preserves the record of the lead believer's election, the absence of",
+   "reason": "fix17 — 게이트8 D1: 0374 수석 신도 선출은 있었고 교주 인준만 부재(생애 양언어 정합)로 모호·상충 표기를 통일"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Preserves the lead believer's election, the absence of",
+   "new": "Preserves the record of the lead believer's election, the absence of",
+   "reason": "fix17 — 게이트8 D1: 0374 수석 신도 선출은 있었고 교주 인준만 부재(생애 양언어 정합)로 모호·상충 표기를 통일"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Preserves the absence of a lead believer's election and the Hierophant's ratification, and the jurisdictional constraints",
+   "new": "Preserves the record of the lead believer's election, the absence of the Hierophant's ratification, and the jurisdictional constraints",
+   "reason": "fix17 — 게이트8 D1: 0374 수석 신도 선출은 있었고 교주 인준만 부재(생애 양언어 정합)로 모호·상충 표기를 통일"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json_ko",
+   "path": "$.fields.업무 위치",
+   "old": "수석 신도 선출·교주 인준 부재와 관할 제약을 보존한다",
+   "new": "수석 신도 선출 기록과 교주 인준의 부재, 그리고 관할 제약을 보존한다",
+   "reason": "fix17 — 게이트8 D1: 0374 수석 신도 선출은 있었고 교주 인준만 부재(생애 양언어 정합)로 모호·상충 표기를 통일"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "수석 신도 선출·교주 인준 부재와 관할 제약을 보존한다",
+   "new": "수석 신도 선출 기록과 교주 인준의 부재, 그리고 관할 제약을 보존한다",
+   "reason": "fix17 — 게이트8 D1: 0374 수석 신도 선출은 있었고 교주 인준만 부재(생애 양언어 정합)로 모호·상충 표기를 통일"
+  },
+  {
+   "file": "090",
+   "id": "person-0374",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "수석 신도 선출·교주 인준 부재와 관할 제약을 보존한다",
+   "new": "수석 신도 선출 기록과 교주 인준의 부재, 그리고 관할 제약을 보존한다",
+   "reason": "fix17 — 게이트8 D1: 0374 수석 신도 선출은 있었고 교주 인준만 부재(생애 양언어 정합)로 모호·상충 표기를 통일"
+  },
+  {
+   "file": "110",
+   "id": "b0a8-c758-b839",
+   "column": "json",
+   "path": "$.nodes[25].timeline[0].summary",
+   "old": "the keeping of the clergy's secret-ballot tally records",
+   "new": "the keeping of the station vote-count records",
+   "reason": "fix17 — 게이트8 D2: KO '역 개표 기록 보관'과 정합, 정부 인물에 성직 표기 제거"
+  },
+  {
+   "file": "110",
+   "id": "b0a8-c758-b839",
+   "column": "json",
+   "path": "$.nodes[27].timeline[0].summary",
+   "old": "the keeping of the clergy's secret-ballot tally records",
+   "new": "the keeping of the station vote-count records",
+   "reason": "fix17 — 게이트8 D2: KO '역 개표 기록 보관'과 정합, 정부 인물에 성직 표기 제거"
   }
  ],
  "kept": [
