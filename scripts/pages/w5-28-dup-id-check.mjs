@@ -2,8 +2,10 @@
 // W5-28 M2 검증 — 빌드된 실제 HTML 전수에서 중복 id를 잰다.
 // 태그 속성 id="..."(명시 앵커·자동 생성 헤딩 id 포함)를 페이지별로 세어 2회 이상 나오는 id를 보고한다.
 // 사용법: node scripts/pages/w5-28-dup-id-check.mjs --html <dist-dir> [--json <path>]
+// 기본값: --html <os.tmpdir()>/w528-dist
 // 기대: 기존 빌드의 사전 존재 중복(KO Century-Annals '2125년-Arc') 1건만 남는다.
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -11,7 +13,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '../..');
 const args = process.argv.slice(2);
 const opt = (n, d) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : d; };
-const DIST = path.resolve(opt('--html', 'C:/Users/oliver/AppData/Local/Temp/w528-dist'));
+const DIST = path.resolve(opt('--html', path.join(os.tmpdir(), 'w528-dist')));
 
 const ID_RE = /\sid="([^"]+)"/g;
 const dups = [];

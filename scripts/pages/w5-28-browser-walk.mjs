@@ -7,7 +7,9 @@
 // Browser.close + 프로필 경로로 식별한 자기 프로세스 트리 반복 킬로 정리한다(proc.kill()만으론
 // 재실행 잔존이 남는다). 페이지별 CDP 오류는 그 페이지를 walkError로 기록하고 계속한다.
 // 사용법: node scripts/pages/w5-28-browser-walk.mjs [--dist <dir>] [--shots <dir>] [--json <path>] [--edge <exe>] [--port 9223]
+// 기본값: --dist <os.tmpdir()>/w528-dist, --shots <os.tmpdir()>/w5-28-scratch/shots
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import http from 'node:http';
 import { fileURLToPath } from 'node:url';
@@ -17,8 +19,8 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '../..');
 const args = process.argv.slice(2);
 const opt = (n, d) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : d; };
-const DIST = path.resolve(opt('--dist', 'C:/Users/oliver/AppData/Local/Temp/w528-dist'));
-const SHOTS = path.resolve(opt('--shots', 'C:/Users/oliver/AppData/Local/Temp/w5-28-scratch/shots'));
+const DIST = path.resolve(opt('--dist', path.join(os.tmpdir(), 'w528-dist')));
+const SHOTS = path.resolve(opt('--shots', path.join(os.tmpdir(), 'w5-28-scratch', 'shots')));
 const JSON_RAW = opt('--json', 'docs/drafts/reports/w5-28-browser-walk.json');
 const JSON_OUT = path.isAbsolute(JSON_RAW) ? JSON_RAW : path.join(REPO, JSON_RAW);
 const EDGE = opt('--edge', 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe');

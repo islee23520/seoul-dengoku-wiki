@@ -7,7 +7,9 @@
 //   민정 행정, 과세, 법원 — 한국어·영어 패턴.
 // 판정(상태기능 여부, 재작성/보류)은 사람이 문장을 읽어 한다(보고서 w5-28-fix2.md).
 // 사용법: node scripts/pages/w5-28-oldorg-classify.mjs --html <dist> [--json <path>]
+// 기본값: --html <os.tmpdir()>/w528fix2-dist
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -15,7 +17,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '../..');
 const args = process.argv.slice(2);
 const opt = (n, d) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : d; };
-const DIST = path.resolve(opt('--html', 'C:/Users/oliver/AppData/Local/Temp/w528fix2-dist'));
+const DIST = path.resolve(opt('--html', path.join(os.tmpdir(), 'w528fix2-dist')));
 
 const visible = (html) => html
   .replace(/<script[\s\S]*?<\/script>/gi, ' ')

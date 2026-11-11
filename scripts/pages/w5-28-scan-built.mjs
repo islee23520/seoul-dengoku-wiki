@@ -9,7 +9,9 @@
 //   approved-term 가운데 '존속 조직명' 근거는 미검증 면제다 — exemptionBasis: 'surviving-org' 로 표시해
 //   보고서가 의존 매치 수를 세고 표본 검수하게 한다(자동 면제로 신뢰하지 않는다).
 // 사용법: node scripts/pages/w5-28-scan-built.mjs --html <dist-dir> [--json <path>]
+// 기본값: --html <os.tmpdir()>/w528-dist
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -17,7 +19,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '../..');
 const args = process.argv.slice(2);
 const opt = (n, d) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : d; };
-const DIST = path.resolve(opt('--html', 'C:/Users/oliver/AppData/Local/Temp/w528-dist'));
+const DIST = path.resolve(opt('--html', path.join(os.tmpdir(), 'w528-dist')));
 
 const visible = (html) => html
   .replace(/<script[\s\S]*?<\/script>/gi, ' ')
