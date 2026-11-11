@@ -14,7 +14,7 @@
   "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
  },
  "counts": {
-  "rules": 1821,
+  "rules": 1827,
   "kept": 1180,
   "keepByReason": {
    "소속 표기": 461,
@@ -16431,6 +16431,60 @@
    "old": "Publishes the concourse rations and the release window every day, and attaches munitions wagons only after the citizenship registration window has closed.",
    "new": "Publishes the concourse rations and the release window every day, and attaches munitions wagons only after the release window has closed.",
    "reason": "D2 교정(3차) — 0045 영문 변형(citizenship registration window has closed) 중립화"
+  },
+  {
+   "file": "090",
+   "id": "person-0070",
+   "column": "json",
+   "path": "$.title",
+   "old": "Arc Chairman's Envoy · Lord of Seocho-gu",
+   "new": "Taeuk Group Chairman's Envoy · Lord of Seocho-gu",
+   "reason": "fix3 R3-1 person-0070 회사 직함 복원 — 태욱그룹 회장 사절/전령은 회사 회장 직위(050 position·기저 91e800b3f 정합), 세력 직함이 아님"
+  },
+  {
+   "file": "090",
+   "id": "person-0070",
+   "column": "json",
+   "path": "$.position",
+   "old": "Arc Chairman's Envoy · Lord of Seocho-gu",
+   "new": "Taeuk Group Chairman's Envoy · Lord of Seocho-gu",
+   "reason": "fix3 R3-1 person-0070 회사 직함 복원 — 태욱그룹 회장 사절/전령은 회사 회장 직위(050 position·기저 91e800b3f 정합), 세력 직함이 아님"
+  },
+  {
+   "file": "090",
+   "id": "person-0070",
+   "column": "json",
+   "path": "$.fields.Title",
+   "old": "Arc Chairman's Courier",
+   "new": "Taeuk Group Chairman's Courier",
+   "reason": "fix3 R3-1 person-0070 회사 직함 복원 — 태욱그룹 회장 사절/전령은 회사 회장 직위(050 position·기저 91e800b3f 정합), 세력 직함이 아님"
+  },
+  {
+   "file": "090",
+   "id": "person-0070",
+   "column": "json_ko",
+   "path": "$.title",
+   "old": "Arc 회장 전령 · 서초구 영주",
+   "new": "태욱그룹 회장 전령 · 서초구 영주",
+   "reason": "fix3 R3-1 person-0070 회사 직함 복원 — 태욱그룹 회장 사절/전령은 회사 회장 직위(050 position·기저 91e800b3f 정합), 세력 직함이 아님"
+  },
+  {
+   "file": "090",
+   "id": "person-0070",
+   "column": "json_ko",
+   "path": "$.position",
+   "old": "Arc 회장 전령 · 서초구 영주",
+   "new": "태욱그룹 회장 전령 · 서초구 영주",
+   "reason": "fix3 R3-1 person-0070 회사 직함 복원 — 태욱그룹 회장 사절/전령은 회사 회장 직위(050 position·기저 91e800b3f 정합), 세력 직함이 아님"
+  },
+  {
+   "file": "090",
+   "id": "person-0070",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "old": "Arc 회장 전령",
+   "new": "태욱그룹 회장 전령",
+   "reason": "fix3 R3-1 person-0070 회사 직함 복원 — 태욱그룹 회장 사절/전령은 회사 회장 직위(050 position·기저 91e800b3f 정합), 세력 직함이 아님"
   }
  ],
  "kept": [
