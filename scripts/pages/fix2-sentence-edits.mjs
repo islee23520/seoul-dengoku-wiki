@@ -218,8 +218,12 @@ export function run({ rulesPath, logPath, dryRun }) {
         failures.push({ rule: { ...rule, new: undefined }, why: `E_NO_UNIQUE_MATCH: ${rule.id} ${rule.column} ${rule.path} (occurrences=${cnt}, expect=${expect})` });
         continue;
       }
-      const escOld = rule.old.replaceAll("'", "''");
-      const escNew = rule.new.replaceAll("'", "''");
+      // fix18: lineOld/lineNew — 셀 값 문자열이 같은 행의 다른 열(title 등)에도 그대로 있어 원시 라인에서
+      // 유일하게 못 집을 때(예: person-1008 position==title 'Lord of Daejeon'), 열 경계를 포함한
+      // 라인 단위 문자열로 원시 출현을 검증·치환한다. 셀 검증(rule.old)은 그대로 유지한다.
+      // lineOld/lineNew는 이미 원시 라인 텍스트(인용부 포함)이므로 '' 이스케이프를 하지 않는다.
+      const escOld = rule.lineOld ?? rule.old.replaceAll("'", "''");
+      const escNew = rule.lineNew ?? rule.new.replaceAll("'", "''");
       const rawCnt = ld.lines[lineIdx].split(escOld).length - 1;
       if (rawCnt !== expect) {
         failures.push({ rule: { ...rule, new: undefined }, why: `E_RAW_AMBIGUOUS: ${rule.id} ${rule.column} ${rule.path} (cell=${cnt}, raw=${rawCnt}) — 셀 밖 같은 어구 또는 이스케이프 차이` });
