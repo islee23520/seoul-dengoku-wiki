@@ -1,0 +1,808 @@
+{
+ "purpose": "W5-28 결함 수정(H3·M1·EXTRA-a·EXTRA-b) — 문장·구절 단위 정확 교정 규칙표. scripts/pages/integ-sentence-edits.mjs가 소비한다(전수 확정 보존본; 재생성 대상 아님).",
+ "policy": {
+  "perRule": "규칙 1건 = 정확한 문장 또는 구절 1개. (file,id,column,path) 셀에서 old가 정확 1회 나올 때만 1회 치환한다.",
+  "engine": "blackout-year-edit.mjs의 run()을 공유한다(같은 무결성 검사·직렬화)."
+ },
+ "counts": {
+  "rules": 79,
+  "byDefect": {
+   "H3": 42,
+   "M1": 5,
+   "EXTRA-a": 28,
+   "EXTRA-b": 4
+  }
+ },
+ "rules": [
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.position",
+   "old": "Director of the Government",
+   "new": "Director of the intelligence service",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.stateName",
+   "old": "The Government",
+   "new": "the intelligence service",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "The Government",
+   "new": "the intelligence service",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.fields.Title",
+   "old": "Director of the Government",
+   "new": "Director of the intelligence service",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Oh Haerin is the current AI avatar of the Government and uses Namsan Tower as her base.",
+   "new": "Oh Haerin is the current AI avatar of the intelligence service and uses Namsan Tower as her base.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Oh Haerin is the current AI avatar of the Government and uses Namsan Tower as her base.",
+   "new": "Oh Haerin is the current AI avatar of the intelligence service and uses Namsan Tower as her base.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "The Government has operated as an independent, neutral organization since 2030, and the AI continued to lead the organization while changing avatars.",
+   "new": "The intelligence service has operated as an independent, neutral organization since around 2026, and the AI continued to lead the organization while changing avatars.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지); H3 재작성에 대정전 연도 교정 포함(약 2026년/around 2026, 바이블 3절)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "old": "The Government has operated as an independent, neutral organization since 2030, and the AI continued to lead the organization while changing avatars.",
+   "new": "The intelligence service has operated as an independent, neutral organization since around 2026, and the AI continued to lead the organization while changing avatars.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지); H3 재작성에 대정전 연도 교정 포함(약 2026년/around 2026, 바이블 3절)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Only the Government, formerly an intelligence organization, knows of the true Republic of Korea and of the real The Government personnel sleeping in the underground hibernation facility within the Cheongwadae complex.",
+   "new": "Only the intelligence service knows of the true Republic of Korea and of the real Republic of Korea government personnel sleeping in the underground hibernation facility within the Cheongwadae complex.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지); 동명 반복(the real The Government) 해소 — 지하 동면소·진정한 대한민국 구 서사는 보존(소유자 결정 대기 항목으로 보고서에 기록)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Only the Government, formerly an intelligence organization, knows of the true Republic of Korea and of the real The Government personnel sleeping in the underground hibernation facility within the Cheongwadae complex.",
+   "new": "Only the intelligence service knows of the true Republic of Korea and of the real Republic of Korea government personnel sleeping in the underground hibernation facility within the Cheongwadae complex.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지); 동명 반복(the real The Government) 해소 — 지하 동면소·진정한 대한민국 구 서사는 보존(소유자 결정 대기 항목으로 보고서에 기록)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "The Government intends to revive them and restore a legitimate organization.",
+   "new": "The intelligence service intends to revive them and restore a legitimate organization.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "old": "The Government intends to revive them and restore a legitimate organization.",
+   "new": "The intelligence service intends to revive them and restore a legitimate organization.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "As Director of the Government, Oh Haerin cross-checks",
+   "new": "As Director of the intelligence service, Oh Haerin cross-checks",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "old": "As Director of the Government, Oh Haerin cross-checks",
+   "new": "As Director of the intelligence service, Oh Haerin cross-checks",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "Title: Director of the Government.",
+   "new": "Title: Director of the intelligence service.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Title: Director of the Government.",
+   "new": "Title: Director of the intelligence service.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "- Affiliation: The Government",
+   "new": "- Affiliation: the intelligence service",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: The Government",
+   "new": "- Affiliation: the intelligence service",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "- Title: Director of the Government",
+   "new": "- Title: Director of the intelligence service",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Title: Director of the Government",
+   "new": "- Title: Director of the intelligence service",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.position",
+   "old": "정부 원장",
+   "new": "정보기관 원장",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.stateName",
+   "old": "정부",
+   "new": "정보기관",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "정부",
+   "new": "정보기관",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.fields.직함",
+   "old": "정부 원장",
+   "new": "정보기관 원장",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "오해린은 정부의 현재 AI 아바타이며 남산타워를 거점으로 삼는다.",
+   "new": "오해린은 정보기관의 현재 AI 아바타이며 남산타워를 거점으로 삼는다.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "오해린은 정부의 현재 AI 아바타이며 남산타워를 거점으로 삼는다.",
+   "new": "오해린은 정보기관의 현재 AI 아바타이며 남산타워를 거점으로 삼는다.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "정부는 2030년부터 독립된 중립 조직으로 활동했고 AI가 아바타를 바꾸며 계속 조직을 이끌었다.",
+   "new": "정보기관은 약 2026년부터 독립된 중립 조직으로 활동했고 AI가 아바타를 바꾸며 계속 조직을 이끌었다.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지); H3 재작성에 대정전 연도 교정 포함(약 2026년/around 2026, 바이블 3절)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "정부는 2030년부터 독립된 중립 조직으로 활동했고 AI가 아바타를 바꾸며 계속 조직을 이끌었다.",
+   "new": "정보기관은 약 2026년부터 독립된 중립 조직으로 활동했고 AI가 아바타를 바꾸며 계속 조직을 이끌었다.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지); H3 재작성에 대정전 연도 교정 포함(약 2026년/around 2026, 바이블 3절)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "첩보 조직이었던 정부만이 진정한 대한민국과 청와대 시설 안의 지하 동면소에 잠든 실제 정부 인사들의 존재를 안다.",
+   "new": "첩보 조직이었던 정보기관만이 진정한 대한민국과 청와대 시설 안의 지하 동면소에 잠든 실제 대한민국정부 인사들의 존재를 안다.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지); 지하 동면소·진정한 대한민국 구 서사는 보존(소유자 결정 대기 항목으로 보고서에 기록)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "첩보 조직이었던 정부만이 진정한 대한민국과 청와대 시설 안의 지하 동면소에 잠든 실제 정부 인사들의 존재를 안다.",
+   "new": "첩보 조직이었던 정보기관만이 진정한 대한민국과 청와대 시설 안의 지하 동면소에 잠든 실제 대한민국정부 인사들의 존재를 안다.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지); 지하 동면소·진정한 대한민국 구 서사는 보존(소유자 결정 대기 항목으로 보고서에 기록)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "정부는 이들을 되살려 정통성 있는 조직을 복원하려 한다.",
+   "new": "정보기관은 이들을 되살려 정통성 있는 조직을 복원하려 한다.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "정부는 이들을 되살려 정통성 있는 조직을 복원하려 한다.",
+   "new": "정보기관은 이들을 되살려 정통성 있는 조직을 복원하려 한다.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "오해린은 정부 원장으로 남산타워의 서울 내부 기록과 복구 여부를 대조한다.",
+   "new": "오해린은 정보기관 원장으로 남산타워의 서울 내부 기록과 복구 여부를 대조한다.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "오해린은 정부 원장으로 남산타워의 서울 내부 기록과 복구 여부를 대조한다.",
+   "new": "오해린은 정보기관 원장으로 남산타워의 서울 내부 기록과 복구 여부를 대조한다.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "직함은 정부 원장.",
+   "new": "직함은 정보기관 원장.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "직함은 정부 원장.",
+   "new": "직함은 정보기관 원장.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "- 소속: 정부",
+   "new": "- 소속: 정보기관",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: 정부",
+   "new": "- 소속: 정보기관",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "- 직함: 정부 원장",
+   "new": "- 직함: 정보기관 원장",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "090",
+   "id": "person-0195",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 직함: 정부 원장",
+   "new": "- 직함: 정보기관 원장",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지)"
+  },
+  {
+   "defect": "H3",
+   "file": "110",
+   "id": "c624-d574-c8fc",
+   "column": "json",
+   "path": "$.nodes[1].timeline[0].summary",
+   "old": "The Government has operated as an independent, neutral organization since 2030.",
+   "new": "The intelligence service has operated as an independent, neutral organization since around 2026.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지); H3 재작성에 대정전 연도 교정 포함(약 2026년/around 2026, 바이블 3절)"
+  },
+  {
+   "defect": "H3",
+   "file": "110",
+   "id": "c624-d574-c8fc",
+   "column": "json_ko",
+   "path": "$.nodes[1].timeline[0].summary",
+   "old": "정부는 2030년부터 독립된 중립 조직으로 활동하였다.",
+   "new": "정보기관은 약 2026년부터 독립된 중립 조직으로 활동하였다.",
+   "reason": "org-name-map이 조직명(중앙정보부/Central Intelligence Agency)을 정치체 명사(정부/The Government)로 바꿔 조직 서술이 정치체 서술로 뒤섞임 — 바이블 Q15 계열 일반명사 정보기관/the intelligence service로 조직을 조직으로 유지(Q7 직함 원장 유지); H3 재작성에 대정전 연도 교정 포함(약 2026년/around 2026, 바이블 3절)"
+  },
+  {
+   "defect": "M1",
+   "file": "090",
+   "id": "person-0405",
+   "column": "json",
+   "path": "$.sections.Duty",
+   "old": "internal function of the Arc of Labor Unions and is not",
+   "new": "internal function of the Arc and is not",
+   "reason": "org-name-map이 'Jeongdong Federation of Labor Unions'의 일부('Jeongdong Federation')만 'Arc'로 바꿔 'Arc of Labor Unions' 잔여 — 전체 구절 치환으로 정리(한국어 '강남구 Arc 공작령'과 대응)"
+  },
+  {
+   "defect": "M1",
+   "file": "090",
+   "id": "person-0405",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc of Labor Unions",
+   "new": "- Affiliation: Arc",
+   "reason": "org-name-map이 'Jeongdong Federation of Labor Unions'의 일부('Jeongdong Federation')만 'Arc'로 바꿔 'Arc of Labor Unions' 잔여 — 전체 구절 치환으로 정리(한국어 '강남구 Arc 공작령'과 대응)"
+  },
+  {
+   "defect": "M1",
+   "file": "090",
+   "id": "person-0405",
+   "column": "json",
+   "path": "$.biography",
+   "old": "internal function of the Arc of Labor Unions and is not",
+   "new": "internal function of the Arc and is not",
+   "reason": "org-name-map이 'Jeongdong Federation of Labor Unions'의 일부('Jeongdong Federation')만 'Arc'로 바꿔 'Arc of Labor Unions' 잔여 — 전체 구절 치환으로 정리(한국어 '강남구 Arc 공작령'과 대응)"
+  },
+  {
+   "defect": "M1",
+   "file": "090",
+   "id": "person-0406",
+   "column": "json",
+   "path": "$.sections.Duty",
+   "old": "internal function of the Arc of Labor Unions and is not",
+   "new": "internal function of the Arc and is not",
+   "reason": "org-name-map이 'Jeongdong Federation of Labor Unions'의 일부('Jeongdong Federation')만 'Arc'로 바꿔 'Arc of Labor Unions' 잔여 — 전체 구절 치환으로 정리(한국어 '강남구 Arc 공작령'과 대응)"
+  },
+  {
+   "defect": "M1",
+   "file": "090",
+   "id": "person-0406",
+   "column": "json",
+   "path": "$.openingTitles[0].name",
+   "old": "Gangnam-gu Arc of Labor Unions Duchy",
+   "new": "Gangnam-gu Arc Duchy",
+   "reason": "org-name-map이 'Jeongdong Federation of Labor Unions'의 일부('Jeongdong Federation')만 'Arc'로 바꿔 'Arc of Labor Unions' 잔여 — 전체 구절 치환으로 정리(한국어 '강남구 Arc 공작령'과 대응)"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.fields.Livelihood",
+   "old": "Courier",
+   "new": "Bodyguard",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존); 050 occupation 정합(aux 5b 경호원과 동일)"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Livelihood: Courier",
+   "new": "- Livelihood: Bodyguard",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존)"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "On the surface she is an independent courier. In reality she belongs to the Crossroads Office, which collects news and secrets from various powers and trades in them.",
+   "new": "She has been Go Ye-jin's bodyguard since 2120. In reality she belongs to the Crossroads Office, which collects news and secrets from various powers and trades in them.",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존)"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: On the surface she is an independent courier. In reality she belongs to the Crossroads Office, which collects news and secrets from various powers and trades in them.",
+   "new": "- Affiliation: She has been Go Ye-jin's bodyguard since 2120. In reality she belongs to the Crossroads Office, which collects news and secrets from various powers and trades in them.",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존)"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Civilian/community duties: Independent courier. Not a Republic of Korea government office or a feudal rank.",
+   "new": "- Civilian/community duties: Bodyguard of Go Ye-jin. Not a Republic of Korea government office or a feudal rank.",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존); 이미 고친 EN Civil and Community Duties 필드와 동일문"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.relations.incoming[0].basis",
+   "old": "As an independent courier, Ji Yeonhee",
+   "new": "As a courier, Ji Yeonhee",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존); 실무 행위(전달)는 유지하고 독립 전령 역할 주장만 제거"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.fields.생업",
+   "old": "전령",
+   "new": "경호원",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존)"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 생업: 전령",
+   "new": "- 생업: 경호원",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존)"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "겉으로는 독립 전령이다. 실제로는",
+   "new": "2120년부터 고예진의 경호원이다. 실제로는",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존)"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "겉으로는 독립 전령이다. 실제로는",
+   "new": "2120년부터 고예진의 경호원이다. 실제로는",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존)"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.fields.민간·공동체 직무",
+   "old": "독립 전령 대한민국 정부 관직이나 봉건 품계가 아니다.",
+   "new": "고예진의 경호원 대한민국 정부 관직이나 봉건 품계가 아니다.",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존)"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "독립 전령 대한민국 정부 관직이나 봉건 품계가 아니다.",
+   "new": "고예진의 경호원 대한민국 정부 관직이나 봉건 품계가 아니다.",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존)"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.relations.incoming[0].basis",
+   "old": "지연희는 독립 전령으로",
+   "new": "지연희는 전령으로",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존); 실무 행위(전달)는 유지하고 독립 전령 역할 주장만 제거"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1018",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc. She holds no office in any state.",
+   "new": "- Affiliation: Arc. She is the Hierophant of the Arc.",
+   "reason": "바이블 §6 승인값 정합(고예진 = 아크의 교주·메시아 [승인]); 이미 고친 EN Affiliation/Civil and Community Duties 필드와 동일문을 생애·한국어 셀에 적용"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1018",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Civil/community duty: Inter-Region Contract Advisor. This is not an office of the Government or a feudal rank.",
+   "new": "- Civil/community duty: Hierophant of the Arc. This is not an office of the Government or a feudal rank.",
+   "reason": "바이블 §6 승인값 정합(고예진 = 아크의 교주·메시아 [승인]); 이미 고친 EN Affiliation/Civil and Community Duties 필드와 동일문을 생애·한국어 셀에 적용"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1018",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc. 어느 나라의 관직도 맡지 않는다.",
+   "new": "Arc. 아크의 교주이다.",
+   "reason": "바이블 §6 승인값 정합(고예진 = 아크의 교주·메시아 [승인]); 이미 고친 EN Affiliation/Civil and Community Duties 필드와 동일문을 생애·한국어 셀에 적용"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1018",
+   "column": "json_ko",
+   "path": "$.fields.민간·공동체 직무",
+   "old": "권역 간 계약 자문가 대한민국 정부 관직이나 봉건 품계가 아니다.",
+   "new": "아크의 교주 대한민국 정부 관직이나 봉건 품계가 아니다.",
+   "reason": "바이블 §6 승인값 정합(고예진 = 아크의 교주·메시아 [승인]); 이미 고친 EN Affiliation/Civil and Community Duties 필드와 동일문을 생애·한국어 셀에 적용"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1018",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc. 어느 나라의 관직도 맡지 않는다.",
+   "new": "- 소속: Arc. 아크의 교주이다.",
+   "reason": "바이블 §6 승인값 정합(고예진 = 아크의 교주·메시아 [승인]); 이미 고친 EN Affiliation/Civil and Community Duties 필드와 동일문을 생애·한국어 셀에 적용"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1018",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 민간·공동체 직무: 권역 간 계약 자문가 대한민국 정부 관직이나 봉건 품계가 아니다.",
+   "new": "- 민간·공동체 직무: 아크의 교주 대한민국 정부 관직이나 봉건 품계가 아니다.",
+   "reason": "바이블 §6 승인값 정합(고예진 = 아크의 교주·메시아 [승인]); 이미 고친 EN Affiliation/Civil and Community Duties 필드와 동일문을 생애·한국어 셀에 적용"
+  },
+  {
+   "defect": "EXTRA-b",
+   "file": "090",
+   "id": "person-1019",
+   "column": "json",
+   "path": "$.fields.Personal Ambition",
+   "old": "He wants to place copies of the same edition in all sixteen states.",
+   "new": "He wants to place copies of the same edition.",
+   "reason": "십육국 세계관 주장(바이블 1절 규칙 7 위반) — 대기 중인 소유자 질문(칭호 계열)이 덮지 않는 평문이므로 십육국 구절만 삭제(오케스트레이터 판단, 나머지 야망 문장 보존)"
+  },
+  {
+   "defect": "EXTRA-b",
+   "file": "090",
+   "id": "person-1019",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Personal ambition: To place copies of the same edition in all of the Sixteen Kingdoms.",
+   "new": "- Personal ambition: To place copies of the same edition.",
+   "reason": "십육국 세계관 주장(바이블 1절 규칙 7 위반) — 대기 중인 소유자 질문(칭호 계열)이 덮지 않는 평문이므로 십육국 구절만 삭제(오케스트레이터 판단, 나머지 야망 문장 보존)"
+  },
+  {
+   "defect": "EXTRA-b",
+   "file": "090",
+   "id": "person-1019",
+   "column": "json_ko",
+   "path": "$.fields.개인 야망",
+   "old": "십육국 모두에 같은 판의 사본을 두려 한다.",
+   "new": "같은 판의 사본을 두려 한다.",
+   "reason": "십육국 세계관 주장(바이블 1절 규칙 7 위반) — 대기 중인 소유자 질문(칭호 계열)이 덮지 않는 평문이므로 십육국 구절만 삭제(오케스트레이터 판단, 나머지 야망 문장 보존)"
+  },
+  {
+   "defect": "EXTRA-b",
+   "file": "090",
+   "id": "person-1019",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "십육국 모두에 같은 판의 사본을 두려 한다.",
+   "new": "같은 판의 사본을 두려 한다.",
+   "reason": "십육국 세계관 주장(바이블 1절 규칙 7 위반) — 대기 중인 소유자 질문(칭호 계열)이 덮지 않는 평문이므로 십육국 구절만 삭제(오케스트레이터 판단, 나머지 야망 문장 보존)"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json",
+   "path": "$.biography",
+   "old": "registered as an independent courier at Seoul Station",
+   "new": "registered as a courier at Seoul Station",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존); 등록된 실무(전령 일)는 유지하고 독립 전령 역할 주장만 제거"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1017",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "서울역에서 독립 전령으로 등록하였다",
+   "new": "서울역에서 전령으로 등록하였다",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존); 등록된 실무(전령 일)는 유지하고 독립 전령 역할 주장만 제거"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1022",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Ji Yeonhui, an independent courier, carries news",
+   "new": "Ji Yeonhui, a courier, carries news",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존); 관계 상대(문도현) 행의 동일 문장"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1022",
+   "column": "json",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "As an independent courier, Ji Yeonhee keeps passing",
+   "new": "As a courier, Ji Yeonhee keeps passing",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존); 관계 상대(문도현) 행의 동일 문장"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1022",
+   "column": "json_ko",
+   "path": "$.fields.관계",
+   "old": "지연희는 독립 전령으로",
+   "new": "지연희는 전령으로",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존); 관계 상대(문도현) 행의 동일 문장"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1022",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "지연희는 독립 전령으로",
+   "new": "지연희는 전령으로",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존); 관계 상대(문도현) 행의 동일 문장"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1022",
+   "column": "json_ko",
+   "path": "$.relations.outgoing[0].basis",
+   "old": "지연희는 독립 전령으로",
+   "new": "지연희는 전령으로",
+   "reason": "바이블 §6 승인값 정합(지연희 = 2120년부터 고예진의 경호원 [승인, 1장]; 거점·길목사무소 소속은 Q5 대기라 보존); 관계 상대(문도현) 행의 동일 문장"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1018",
+   "column": "json",
+   "path": "$.biography",
+   "old": "In the 2120s, Goh Yejin worked there as an inter-region contract advisor.",
+   "new": "In the 2120s, Goh Yejin worked there on contract matters.",
+   "reason": "바이블 §6 승인값 정합(고예진 = 아크의 교주·메시아 [승인]); 이미 고친 EN Affiliation/Civil and Community Duties 필드와 동일문을 생애·한국어 셀에 적용; 직함 주장을 업무 서술로(같은 문단의 to contract matters 표현과 대응)"
+  },
+  {
+   "defect": "EXTRA-a",
+   "file": "090",
+   "id": "person-1018",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "2120년대 고예진은 그곳에서 권역 간 계약 자문가로 일하였다.",
+   "new": "2120년대 고예진은 그곳에서 계약 자문 일을 하였다.",
+   "reason": "바이블 §6 승인값 정합(고예진 = 아크의 교주·메시아 [승인]); 이미 고친 EN Affiliation/Civil and Community Duties 필드와 동일문을 생애·한국어 셀에 적용; 직함 주장을 업무 서술로"
+  }
+ ]
+}

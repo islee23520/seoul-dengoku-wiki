@@ -73,7 +73,7 @@ function loadFile(spec, filePath) {
   return { raw, headerLines, lines, cols, rows };
 }
 
-function run({ rulesPath, logPath, dryRun }) {
+export function run({ rulesPath, logPath, dryRun }) {
   const table = JSON.parse(fs.readFileSync(path.join(REPO, rulesPath), 'utf8'));
   const rules = table.rules;
   const loaded = {
