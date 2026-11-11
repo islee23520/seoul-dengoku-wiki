@@ -350,5 +350,63 @@ function findAllow(obj, key) {
 }
 
 fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
+
+// ---- fragment href normalization (2026-11-11, canon rewrite W5-28) -----------------------
+// VitePress가 내부 #파편 링크를 재슬러그화하면서(숫자 앞 '_', NFD 분해, 제목 id의 '·' 세그먼트) 명시
+// <a id> 앵커(NFC 그대로)·제목 슬러그 id와 어긋나는 href를 만든다. 사후 규칙: 대상 페이지의 실제 id
+// 집합에서 정규 비교(underscore 제거·NFC·'·' 세그먼트 무시)로 유일한 후보를 찾은 경우에만 href를 그
+// 실재 id로 되돌린다. 후보가 0개거나 2개 이상이면 손대지 않는다(검사가 크게 실패한다 — 검사 완화 아님).
+const decodeHtmlAttr = (v) => v.replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16))).replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n))).replace(/&amp;/g, '&');
+{
+  const pages = [];
+  (function collect(d) {
+    for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+      const p = path.join(d, e.name);
+      if (e.isDirectory()) collect(p);
+      else if (p.endsWith('.html')) {
+        const rel = path.relative(OUT, p).replaceAll('\\', '/');
+        const html = fs.readFileSync(p, 'utf8');
+        const anchors = new Set();
+        for (const m of html.matchAll(/\bid\s*=\s*(["'])(.*?)\1/gi)) anchors.add(decodeHtmlAttr(m[2]));
+        for (const m of html.matchAll(/<(?:a|area)\b[^>]*\bname\s*=\s*(["'])(.*?)\1/gi)) anchors.add(decodeHtmlAttr(m[2]));
+        pages.push({ rel, anchors, html });
+      }
+    }
+  })(OUT);
+  const byRel = new Map(pages.map((p) => [p.rel, p]));
+  const normFrag = (f) => f.normalize('NFC').replace(/^_+/, '').replace(/·-?/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+  let rewritten = 0;
+  for (const pg of pages) {
+    const out = pg.html.replace(/(\bhref\s*=\s*["'])([^"']*#[^"']*)(["'])/gi, (whole, pre, href, post) => {
+      const hash = href.indexOf('#');
+      if (hash < 0) return whole;
+      const pathname = href.slice(0, hash);
+      const fragment = href.slice(hash + 1);
+      if (!fragment) return whole;
+      let frag; try { frag = decodeURIComponent(fragment); } catch { frag = fragment; }
+      const pn0 = pathname.replace(/[?].*$/, '');
+      let targetRel;
+      if (!pn0) targetRel = pg.rel;
+      else {
+        let pn = pn0;
+        if (!pn.startsWith('/') && !/^[a-z][a-z0-9+.-]*:/i.test(pn)) pn = path.posix.join(path.posix.dirname(`/${pg.rel}`), pn);
+        const target = pn.replace(/\/+$/, '').replace(/\/index(?:\.html)?$/, '');
+        const m = target.match(/^\/(ko\/)?(wiki|gdd)\/(.+)$/);
+        if (!m) return whole;
+        targetRel = `${m[1] ?? ''}${m[2]}/${m[3]}/index.html`;
+      }
+      const t = byRel.get(targetRel);
+      if (!t) return whole;
+      if (t.anchors.has(frag)) return whole;
+      const want = normFrag(frag);
+      const cands = [...t.anchors].filter((a) => normFrag(a) === want);
+      if (cands.length === 1) { rewritten++; return `${pre}${pathname}#${encodeURIComponent(cands[0])}${post}`; }
+      return whole;
+    });
+    if (out !== pg.html) { fs.writeFileSync(path.join(OUT, pg.rel), out); pg.html = out; }
+  }
+  console.log(`fragment href normalization: ${rewritten} href(s) rewritten to real ids`);
+}
+
 fs.writeFileSync(path.join(OUT, 'build.json'), JSON.stringify({ title: meta.title, base: BASE, locales: ['en', 'ko'], wikiDocs: raw.docs.length, gddDocs: raw.gddDocs.length, factions: raw.factions.length, clans: raw.clans.length, mapRegions: raw.map.regions.length, mapTitles: raw.map.titles.length, mapStations: raw.map.stations.length, personDetails: raw.details.size, states: raw.states.length, people: raw.people.length, updates: raw.updates.length, showcase, sqlFiles: files }, null, 1));
 console.log(`built ${meta.title} (en + ko): wiki ${raw.docs.length}, gdd ${raw.gddDocs.length}, factions ${raw.factions.length}, states ${raw.states.length}, people ${raw.people.length}; showcase ${showcase} -> ${path.relative(REPO, OUT)} (base ${BASE})`);

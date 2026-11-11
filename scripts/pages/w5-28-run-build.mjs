@@ -12,13 +12,14 @@ const REPO = path.resolve(HERE, '../..');
 const args = process.argv.slice(2);
 const opt = (n, d) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : d; };
 const OUT = path.resolve(opt('--out', 'C:/Users/oliver/AppData/Local/Temp/w528-dist'));
-fs.mkdirSync(OUT, { recursive: true });
+const RECEIPT_DIR = path.resolve(opt('--receipts', 'C:/Users/oliver/AppData/Local/Temp/w5-28-scratch/build'));
+fs.mkdirSync(RECEIPT_DIR, { recursive: true }); // OUT은 build.mjs가 지우고 다시 만들므로 영수증은 OUT 밖에 쓴다
 const env = { ...process.env, SITE_BASE: '/', SITE_OUT: OUT, FORCE_COLOR: '0', NO_COLOR: '1' };
 delete env.MSYS_ARG_CONV_EXCL;
 const run = (cmd, cmdArgs) => {
   const r = spawnSync(process.execPath, [path.join(REPO, 'site', cmd), ...cmdArgs], { cwd: REPO, env, encoding: 'utf8', maxBuffer: 1 << 27 });
   const tag = cmd.replace('.mjs', '');
-  fs.writeFileSync(path.join(OUT, `${tag}.receipt.json`), JSON.stringify({ exit: r.status, at: new Date().toISOString() }, null, 1));
+  fs.writeFileSync(path.join(RECEIPT_DIR, `${tag}.receipt.json`), JSON.stringify({ exit: r.status, at: new Date().toISOString() }, null, 1));
   process.stdout.write(`[${tag}] exit=${r.status}\n`);
   if (r.stdout) process.stdout.write(r.stdout);
   if (r.stderr) process.stderr.write(r.stderr);
