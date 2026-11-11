@@ -1,0 +1,179 @@
+{
+ "baseRef": "ba975d8ba7f28b5badff556ccbe0817ca8523785",
+ "fileDelta": {
+  "added": [],
+  "removed": []
+ },
+ "rowCounts": {
+  "clan": {
+   "base": 177,
+   "head": 177
+  },
+  "clan_member": {
+   "base": 955,
+   "head": 955
+  },
+  "faction": {
+   "base": 4,
+   "head": 4
+  },
+  "family_tree": {
+   "base": 148,
+   "head": 148
+  },
+  "gdd_category": {
+   "base": 8,
+   "head": 8
+  },
+  "gdd_document": {
+   "base": 129,
+   "head": 129
+  },
+  "map_edge": {
+   "base": 381,
+   "head": 381
+  },
+  "map_holding": {
+   "base": 50,
+   "head": 50
+  },
+  "map_landmark": {
+   "base": 19,
+   "head": 19
+  },
+  "map_line": {
+   "base": 24,
+   "head": 24
+  },
+  "map_meta": {
+   "base": 8,
+   "head": 8
+  },
+  "map_rail": {
+   "base": 2826,
+   "head": 2826
+  },
+  "map_region": {
+   "base": 427,
+   "head": 427
+  },
+  "map_state": {
+   "base": 3,
+   "head": 3
+  },
+  "map_station": {
+   "base": 312,
+   "head": 312
+  },
+  "map_title": {
+   "base": 80,
+   "head": 80
+  },
+  "map_underground": {
+   "base": 312,
+   "head": 312
+  },
+  "nonkorean_family": {
+   "base": 62,
+   "head": 62
+  },
+  "person_detail": {
+   "base": 1022,
+   "head": 1022
+  },
+  "retainer_graph": {
+   "base": 1,
+   "head": 1
+  },
+  "site_meta": {
+   "base": 6,
+   "head": 6
+  },
+  "wiki_category": {
+   "base": 23,
+   "head": 23
+  },
+  "wiki_document": {
+   "base": 59,
+   "head": 59
+  },
+  "wiki_person": {
+   "base": 1022,
+   "head": 1022
+  },
+  "wiki_state": {
+   "base": 3,
+   "head": 3
+  },
+  "wiki_update": {
+   "base": 6,
+   "head": 6
+  }
+ },
+ "tableDiff": {
+  "person_detail": {
+   "changedRows": 2,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "json",
+     2
+    ],
+    [
+     "json_ko",
+     2
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "person-0070",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "person-0297",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    }
+   ]
+  },
+  "wiki_document": {
+   "changedRows": 2,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "body_md",
+     2
+    ],
+    [
+     "body_ko_md",
+     2
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "Hostile-Ecology-Index",
+     "cols": [
+      "body_md",
+      "body_ko_md"
+     ]
+    },
+    {
+     "key": "Hostile-Group-G05",
+     "cols": [
+      "body_md",
+      "body_ko_md"
+     ]
+    }
+   ]
+  }
+ }
+}
