@@ -15,6 +15,7 @@
 6. Protection row: original '제안하되…부여하지 않음'/'Propose…; grant no…' — now a declarative world sentence; design rule preserved here: match protection to role, never grant performance from affiliation alone.
 7. XT04 '후보 경로' — now '이어질 수 있는 경로'; the 2069 connection remains possible, not settled.
 8. XT05 '개막 영토' — now '지금 서울이 쥔 영토'; the reference frame is the 2126 opening territory.
+9. Era-Arms-and-Tech-Level writer's note (gate-flagged twice; hand edit outside w3-d-replace.mjs, not reproduced by the script). Removed verbatim, ko: "치안 쪽 제식 봉·방패는 기정 프리셋이 이미 「제식 봉·순찰 방패」로 적는다." / en: "The standing preset already wrote the police-issue staff and patrol shield as "regulation staff · patrol shield."" — the in-world fact is already stated in each table's patrol-gear row (제식 봉·순찰 방패 / Regulation staff · patrol shield), so nothing was substituted; the rest of each bullet (the surviving-records sentence) is unchanged.
 
 ## Model record
 cpa/glm-5.3 — read from this task's own environment (C:/Users/oliver/.omo/agent/projects/seoul-dengoku-wiki-f06038d8686d/senpi-task/tasks/st_01a1c7b6.json, field `"model"`: `"cpa/glm-5.3"`; session JSONL records the same; PI_PROVIDER=cpa). 0 completion() calls — every replacement sentence, the v2 gate fixes, and the full Lost-Technology-Lineage English body were written by the agent (cpa/glm-5.3) directly and applied by the script. **This is not a Gemini model.** The front-matter model lines are unchanged from v1 (prefix exactly `cpa/glm-5.3; 0 completion calls;`), with no suffix added.

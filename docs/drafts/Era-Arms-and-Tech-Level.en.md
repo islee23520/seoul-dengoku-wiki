@@ -55,7 +55,7 @@ In 2026, permit rules for firearms and crossbows, military equipment, and railwa
 - Public material introduces the K2 as the ROK Armed Forces' service rifle. Post-collapse possession through military remnants or market inflow differs from case to case. Who holds how many in 2026 was not what this source said. ([English Wikipedia, Daewoo K2](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_K2), viewed 2026-09-12)
 - A 2015 policy briefing stated that general reserve training issued M16s in place of carbines. The training issue fact of the time was confirmed, but 2026 counts, per-unit issue tables, and warehouse locations were not fixed by this material. ([Policy Briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), viewed 2026-09-20)
 - SNT Motiv's public defense page shows the existence of the K-series production line. The manufacturer's product descriptions did not stand in for actual issue counts to the armed forces or reserves. ([SNT Motiv](https://www.sntmotiv.com/eng/business/defense.html), viewed 2026-09-20)
-- The standing preset already wrote the police-issue staff and patrol shield as "regulation staff · patrol shield." The original 2026 police equipment regulations and the issue range of service pistol models do not survive, and neither do the regulation numbers.
+- The original 2026 police equipment regulations and the issue range of service pistol models do not survive, and neither do the regulation numbers.
 
 ## Sources
 

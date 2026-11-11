@@ -54,7 +54,7 @@ model: cpa/glm-5.3; 0 completion calls; replacement sentences written by the age
 - K2는 대한민국 국군 제식 돌격소총으로 소개되는 공개 자료가 있다. 붕괴 후 군 잔존에서 보유하거나 시장에 유입되는 경로는 문서마다 갈린다. 2026년 「지금 누구에게 몇 정이 지급되는가」는 이 출처가 말하지 않는다. ([영문 위키, Daewoo K2](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_K2), 열람 2026-09-12)
 - 2015년 정책브리핑은 일반예비군 훈련 때 카빈 대신 M16을 지급한다고 밝혔다. 당시의 훈련 지급 사실은 확인되지만, 2026년 수량·부대별 지급표·창고 위치는 이 자료로 결론짓지 않는다. ([정책브리핑](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), 열람 2026-09-20)
 - SNT 모티브의 공개 방산 페이지는 K계열 소화기 생산 계열의 존재를 보여 준다. 제조사의 제품 설명은 국군과 예비군의 실제 지급 수량을 대신하지 않는다. ([SNT 모티브](https://www.sntmotiv.com/eng/business/defense.html), 열람 2026-09-20)
-- 치안 쪽 제식 봉·방패는 기정 프리셋이 이미 「제식 봉·순찰 방패」로 적는다. 2026 경찰 장비 세칙 원문과 제식 권총 모델의 지급 범위는 남아 있지 않고 세칙 숫자도 남아 있지 않다.
+- 2026 경찰 장비 세칙 원문과 제식 권총 모델의 지급 범위는 남아 있지 않고 세칙 숫자도 남아 있지 않다.
 
 ## 출처
 
