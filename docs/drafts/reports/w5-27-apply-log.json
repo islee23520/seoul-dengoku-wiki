@@ -1,6 +1,6 @@
 {
- "ran_at": "2026-11-11T00:35:11.579Z",
- "head": "26ec455cc45cee90fb3c01811d693fb2eb28735f",
+ "ran_at": "2026-11-11T00:56:58.559Z",
+ "head": "531cc20b60f985ea13524de3626f62936b31a75b",
  "mode": "apply",
  "rules_total": 54,
  "rules_applied": 56,
@@ -153,8 +153,8 @@
  ],
  "per_file_delta": {
   "artifacts/seoul-showcase/src/data/storyScript.ts": {
-   "rule_delta_bytes": -648,
-   "actual_delta_bytes": -648,
+   "rule_delta_bytes": -677,
+   "actual_delta_bytes": -677,
    "match": true
   },
   "artifacts/seoul-showcase/src/components/VisualNovel.tsx": {
@@ -286,7 +286,7 @@
    "unit_id": "v3-win-01",
    "expect": 1,
    "found": 1,
-   "delta": -24,
+   "delta": -34,
    "voiced": true
   },
   {
@@ -297,7 +297,7 @@
    "unit_id": "v3-win-01",
    "expect": 1,
    "found": 1,
-   "delta": -24,
+   "delta": -36,
    "voiced": true
   },
   {
@@ -396,7 +396,7 @@
    "unit_id": "v3-six-01",
    "expect": 1,
    "found": 1,
-   "delta": -9,
+   "delta": -6,
    "voiced": true
   },
   {
@@ -407,7 +407,7 @@
    "unit_id": "v3-six-01",
    "expect": 1,
    "found": 1,
-   "delta": -4,
+   "delta": -14,
    "voiced": true
   },
   {

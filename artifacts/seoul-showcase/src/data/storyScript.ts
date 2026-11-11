@@ -131,7 +131,7 @@ export const SCENES: StoryScene[] = [
     id: "winter", act: { ko: "서장", en: "Prologue" }, title: { ko: "영원한 겨울", en: "The Eternal Winter" },
     place: { ko: "남산이 보이는 길", en: "Road below Namsan" }, year: "대정전 뒤", bg: "namsan",
     lines: [
-      N("v3-win-01", "한동안 AI들이 서로 갈라지면서 지휘가 약해졌다. 사람들은 지상으로 돌아오기 시작했다.", "For a while the AIs split apart and their command weakened. People began returning to the surface."),
+      N("v3-win-01", "AI들이 서로 갈라지면서 지휘가 약해졌다. 사람들은 지상으로 돌아오기 시작했다.", "The AIs split apart and their command weakened. People began returning to the surface."),
       N("v3-win-02", "하지만 최초의 AI가 내린 겨울은 걷히지 않았고, 인류가 앞서 남긴 오염과 함께 식량난이 이어졌다.", "But the winter the First AI brought did not lift, and with the pollution humanity had already left behind, food shortages followed."),
       S("v3-win-03", "iyen", "저기 남산타워 보여요? 중앙정보부 거점이에요.", "See Namsan Tower up there? That's the Central Intelligence Division's base.", { cast: ["iyen"], source: "annals" }),
       S("v3-win-04", "iyen", "거긴 대정전 때부터 어느 쪽 편도 안 들었어요. 지금도 중립이고요. 괜히 가까이 가진 말아요.", "They haven't taken anyone's side since the Great Blackout. Still neutral. Don't go near it without a reason.", { cast: ["iyen"], source: "annals", caption: { ko: "중앙정보부 · 중립", en: "Central Intelligence Division · neutral" } }),
@@ -141,7 +141,7 @@ export const SCENES: StoryScene[] = [
     id: "sixteen", act: { ko: "1막", en: "Act I" }, title: { ko: "국가들의 시대", en: "The Age of States" },
     place: { ko: "2호선 터널", en: "Line 2 tunnel" }, year: "재편 전", bg: "tunnel",
     lines: [
-      N("v3-six-01", "그 무렵, 역마다 나라가 섰다.", "In that era, states rose around the stations."),
+      N("v3-six-01", "그 무렵, 서울에 나라들이 섰다.", "In that era, states arose in Seoul."),
       N("v3-six-02", "나라마다 수도역이 따로 있었고, 군주를 세우는 방식도 선거, 세습, 도제 계승, 추대로 서로 달랐다.", "Each had its own capital station, and they chose rulers in different ways: election, inheritance, apprenticeship, acclamation.", { source: "sixteen" }),
       S("v4-six-03", "iyen", "2116년에 세 나라로 묶이긴 했는데, 처음부터 지금처럼 편이 갈린 건 아니에요. 그전에 무슨 일이 있었는지부터 볼까요?", "They came together as three states in 2116, but the sides weren't always the ones we know today. Shall we look at what happened before that?", { cast: ["iyen"], source: "annals" }),
       S("v3-six-04", "iyen", "근데 없어진 나라는 없어요. 원래 수장이랑 관직이 봉신으로 그대로 남았거든요. 오늘 만날 사람들한테 물어보면 더 잘 알 거예요.", "But none of them disappeared. Their rulers and offices stayed on as vassals. The people we're meeting today can tell you more.", { cast: ["iyen"], source: "annals" }),
