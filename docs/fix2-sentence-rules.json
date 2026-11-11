@@ -14,7 +14,7 @@
   "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
  },
  "counts": {
-  "rules": 2966,
+  "rules": 3026,
   "kept": 1180,
   "keepByReason": {
    "소속 표기": 461,
@@ -43,7 +43,8 @@
   "fix13KingdomNameRules": 18,
   "fix14AffiliationRules": 112,
   "fix14RootStateRules": 144,
-  "fix14VocabRules": 657
+  "fix14VocabRules": 657,
+  "fix14ArcOfficeFollowupRules": 60
  },
  "rules": [
   {
@@ -27470,6 +27471,606 @@
    "new": "겨울",
    "expect": 1,
    "reason": "fix14 D3 겨울 표현 정합 — Q16 미확정, '영구/permanent' 수식 제거"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.sections.Anecdote",
+   "old": "the Arc office's intake desk",
+   "new": "the office's intake desk",
+   "expect": 1,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the Arc office's intake desk",
+   "new": "the office's intake desk",
+   "expect": 1,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.sections.일화",
+   "old": "Arc 사무소 접수대",
+   "new": "사무소 접수대",
+   "expect": 1,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "Arc 사무소 접수대",
+   "new": "사무소 접수대",
+   "expect": 1,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the Arc office of Myeongdong Station",
+   "new": "the Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the Arc office of Myeongdong Station",
+   "new": "the Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the Arc office of Myeongdong Station",
+   "new": "the Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the Arc office of Myeongdong Station",
+   "new": "the Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the Arc office of Myeongdong Station",
+   "new": "the Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the Arc office of Myeongdong Station",
+   "new": "the Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.biography",
+   "old": "the Arc office of Myeongdong Station",
+   "new": "the Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "the Arc office of Myeongdong Station",
+   "new": "the Myeongdong Station office",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "명동역 Arc 사무소",
+   "new": "명동역 사무소",
+   "expect": 2,
+   "reason": "fix14 D1 보속 — 정부 인물의 'Arc 사무소/office' 고용 표기 제거(명동역 장소는 유지), 역어순형·접수대형 보정"
   }
  ],
  "kept": [
