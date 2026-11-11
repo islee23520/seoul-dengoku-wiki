@@ -50,16 +50,17 @@
 | **old-blackout (구 대정전 서술)** | **0** |
 | **title (구 제목 2030–2126)** | **0** |
 | y2030 계 | 78 |
-(참고: 나머지 부류 — church 443[record-schema 14·owner-pending 602·기타 27], old-org 826[면제 615·보류 211], slaughter 6, sixteen 19, 총 1,372매치·고유 히트 페이지 216)
+
+78 = **족보 생년·이야기 내 날짜 76 + person-0297 기록 2**. **76의 생년·날짜를 제외하면 잔여는 2**(전수 목록은 4절). (참고: 나머지 부류 — church 443 = GDD record-schema 14 + Q 대기 인물 100 + 그 외 인물 329[그중 8은 길목사무소의 '목사' 하위문자열 오탐 — 실질 321], old-org 826 = 면제 615 + Q 대기 인물 173 + GDD record-schema 38, slaughter 6, sixteen 19[= GDD 17 + 전환 안내문 2], 총 1,372매치·고유 히트 페이지 216 — 교차표는 w5-28-fix2.md)
 
 ## 3. 실제 브라우저 12페이지×2언어 (헤드리스 Edge CDP, 자체 임시 프로필)
 모두 HTTP 200·콘솔 에러 0(CDP+프로브 이중). h1: Century-Annals='Century Annals/서울전국 연표'(새 제목 반영), person-0170='Bak Tae-gyeom/박태겸', person-0195='Oh Hae-rin/오해린', person-0406='Seon Chobyeol/선초별', person-1018='Go Ye-jin/고예진', person-1017='Ji Yeon-hui/지연희', person-1019='Bak Seong-su/박성수', World-Unbinding='The Great Blackout/대정전', Sindorim='Sindorim Junction Cargo Gate/신도림 연결부 화물문', 중첩 GDD 'architecture/unity-architecture'='Unity Structure/유니티 구조', factions-index='Factions/세력', map='Territory Map/서울 영토 지도'. 교정 문장 가시 확인(빌드 가시 텍스트 16/16): 0170 'went through the Great Blackout around 2026/약 2026년 용산호송가에서', 1012 'equipment stops around 2026', 1016 '약 2026년 명부를…', 0195 'current AI avatar of the intelligence service/정보기관은 약 2026년부터…', 0406 'Gangnam-gu Arc Duchy', 1018 'She is the Hierophant of the Arc/아크의 교주이다', 1017 "She has been Go Ye-jin's bodyguard since 2120/2120년부터 고예진의 경호원이다", 1019 '개인 야망: 같은 판의 사본을 두려 한다', World-Unbinding 'It only made the winter./아크에서는 신앙을…', Scenario-Timeline 'Go Ye-jin calls the First AI "God"', Structures 'Details/상세 문서'. **정직 한계: 이 모델(cpa/glm-5.3)은 이미지를 볼 수 없다 — 스크린샷 16장(1280·390)은 생성·크기 검증만 했고 육안 검수는 하지 않았다.** 전체 순회는 36경로×2언어 72페이지(non200 1: ko:showcase — EN 전용 설계).
 
 ## 4. 보존(kept) 2030 전수 목록
-- **090 person-0297 ×2**(biography 양언어): '장현석의 2030년 기록은 선대의 일…' — 이야기 내 기록 연도(대정전 아님).
-- **110 birthDate ×76**(38노드×양언어): 2030년생 출생 연도(약 2026년 대정전 이후 세대 — 정당).
+- **110 birthDate ×76**(38노드×양언어): 2030년생 출생 연도(약 2026년 대정전 이후 세대 — 정당). 가시 텍스트의 2030 매치 78 중 76이 이 날짜들이며, **이를 제외한 가시 잔여는 아래 090 person-0297 ×2뿐이다.**
 - **030 Century-Annals 앵커 id ×16**('2030년-청와대-…' 등): id 속성 전용(가시 텍스트 아님), 인바운드 링크 보존용 기존 앵커 — 본문의 2030 서술은 0건.
 - 빌드 가시 텍스트에 남는 2030은 위 2건(person-0297 양언어)뿐(other-y2030 부류).
+- **2026-11-11 fix2 정정(교차표)**: 통합 시점 sixteen 22 = GDD 17 + person-1019 3 + 전환 안내문 2(위 §2 참조 문구 정정), church 443·old-org 826의 내역 분해와 면제 615의 전량 분류 결과는 `w5-28-fix2.md`와 `w5-28-owner-pending-sentences.json`을 본다.
 
 ## 5. 존속 조직명 면제 — 미검증 공개 (M3 요구)
 최종 스캔 기준 **615매치**가 '존속 조직명' 면제에 의존한다(통합 시점과 동수). 문장이 다른 484종에서 결정론적 30표본 직접 판정: **27은 회사·리그·사령부의 존속 서술**(연표 2095~2123 사건, 생태 서식지 인용, 물류 서술), **3은 국가 기능 성격으로 면제 부적합 판정** — 흰십자단 단장 류은비(Ailments 한국어, Q27 직결), 동방사의 경비지구 편성(Century-Annals 2098), 규격맹의 시민권 명부(Century-Annals 영어). 셋 모두 소유자 결정 대기로 공개하며 615를 승인으로 세지 않는다.
