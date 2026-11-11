@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // W5-28 fix5 B3 — 이 브랜치가 추가한 추적 파일의 개인 Windows 프로필 경로 접두어를 중립 토큰으로
 // 바꾼다('C:/Users/oliver/AppData/Local/…' → '<tmp>/…', 역슬래시 JSON 이스케이프 형태 포함,
-// 'C:/Users/oliver/.omo/…' → '<omo>/…'). 대상은 이 브랜치에서 새로 추가된 docs/ 행뿐이며
+// 'C:/Users/oliver/.omo/…' → '<omo>/…', 'C:\Users\oliver\bin' PATH 접두 → '<home>\bin'). 대상은 이 브랜치에서 새로 추가된 docs/ 행뿐이며
 // main 에 이미 있던 파일(tools/portal, gdd/RESEARCH)은 건드리지 않는다.
 // 각 파일에서 치환 어귀가 정확히 예상 횟수만큼 있을 때만 전부 바꾼다. 하나라도 어긋나면
 // exit 21, 아무 파일도 쓰지 않는다(멱등 아님 — fd286b06a 트리에서 재실행해 재현한다).
@@ -34,6 +34,7 @@ const REPLACEMENTS = [
   ['docs/drafts/reports/w5-28-fix3.md', 'C:/Users/oliver/AppData/Local/Temp', '<tmp>', 1],
   ['docs/drafts/reports/w5-28-fix4.md', 'C:/Users/oliver/AppData/Local/Temp', '<tmp>', 1],
   ['docs/drafts/reports/w5-28.md', 'C:/Users/oliver/AppData/Local/Temp', '<tmp>', 1],
+  ['docs/drafts/reports/w5-25.md', 'C:\\Users\\oliver\\bin', '<home>\\bin', 1],
   ['docs/gdd-rules.json', 'C:/Users/oliver/AppData/Local/Temp', '<tmp>', 1],
   ['docs/w4-rules.json', 'C:/Users/oliver/AppData/Local/Temp', '<tmp>', 2],
 ];
