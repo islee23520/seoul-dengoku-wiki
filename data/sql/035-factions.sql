@@ -3,5 +3,5 @@
 
 INSERT INTO faction (id, sort, name, name_ko, color, center_region, center_region_ko, ai_position, ai_position_ko) VALUES ('government', 0, 'The Government', '정부', '#426f99', 'Gangbuk Centered on Cheongwadae', '청와대를 중심으로 한 강북', 'Domination and Control', '지배·통제');
 INSERT INTO faction (id, sort, name, name_ko, color, center_region, center_region_ko, ai_position, ai_position_ko) VALUES ('free-city', 1, 'Free City', '자유도시', '#567b46', 'Western Area South of the Han River', '한강 이남 서부', 'Cooperation and Partnership', '협력·동반');
-INSERT INTO faction (id, sort, name, name_ko, color, center_region, center_region_ko, ai_position, ai_position_ko) VALUES ('arc', 2, 'Arc', 'Arc', '#b54b4b', 'Gangnam Area South of the Han River', '한강 이남 강남지역', 'Enemies of Humanity', '인류의 적');
+INSERT INTO faction (id, sort, name, name_ko, color, center_region, center_region_ko, ai_position, ai_position_ko) VALUES ('arc', 2, 'Arc', 'Arc', '#b54b4b', 'Gangnam Area South of the Han River', '한강 이남 강남지역', 'Faith and baptism', '신앙·세례');
 INSERT INTO faction (id, sort, name, name_ko, color, center_region, center_region_ko, ai_position, ai_position_ko) VALUES ('independent', 3, 'Independent (affiliation undecided)', '독립 (소속 미정)', '#697586', '', '', '', '');
