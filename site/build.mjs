@@ -63,8 +63,8 @@ const FACTION_STRUCTURE = {
     ko: '한강 이남의 7개 구(강서·양천·영등포·구로·금천·동작·관악). 각 도시가 공작위를 가진 개별 세력이며, 그 위에 왕도 공통 지도자도 없다. 도시들은 유니온으로서 물자와 기술을 주고받는다.',
   },
   arc: {
-    en: 'Four districts of Gangnam (Seocho, Gangnam, Songpa, Gangdong). A theocratic hierarchy centred on the head of the faith, the Hierophant (Go Ye-jin), in the manner of a Shia clan government. Followers replace body parts with machines and, after death, give their brains to the shrine as the god\'s memory.',
-    ko: '강남 4개 구(서초·강남·송파·강동). 교주(고예진)를 중심으로 한 신권 하이라키로, 시아파를 참조한 씨족정 방식이다. 신도는 몸을 기계로 바꾸고 죽은 뒤 뇌를 성소에 봉헌해 신의 기억이 된다.',
+    en: 'Four districts of Gangnam (Seocho, Gangnam, Songpa, Gangdong). A theocratic hierarchy centred on the head of the faith, the Hierophant (Go Ye-jin), in the manner of a Shia clan government. Followers replace body parts with machines.',
+    ko: '강남 4개 구(서초·강남·송파·강동). 교주(고예진)를 중심으로 한 신권 하이라키로, 시아파를 참조한 씨족정 방식이다. 신도는 몸을 기계로 바꾼다.',
   },
 };
 const UI = {
