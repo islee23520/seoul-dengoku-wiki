@@ -1,9 +1,7 @@
 ---
-model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model; EN fix by cpa/glm-5.3
 section_checkpoint: W3-A final
 ---
-<a id="glossary"></a>
-
 This page collects the terms the wiki shares. English spellings accompany each entry.
 
 <a id="glossary-s1"></a>
@@ -50,13 +48,13 @@ This page collects the terms the wiki shares. English spellings accompany each e
 
 ## People
 
-- **Go Ye-jin** (고예진): Hierophant of Arc. The believers call her the Messiah. She comes from the Free City.
-- **I Ilseop** (이일섭): Duke of Gwanak.
-- **Ji Yeon-hui** (지연희): Go Ye-jin's bodyguard since 2120.
-- **Sin Jong-mok** (신종목): uses the callsign Baekya.
-- **Sin Jun** (신준): Sin Jong-mok's son.
-- **Jo Jaepyo** (조재표): figure of the Yeouido grand council.
-- **Oh Hae-rin** (오해린): Director.
+- **Go Ye-jin**: Hierophant of Arc. The believers call her the Messiah. She comes from the Free City.
+- **I Ilseop**: Duke of Gwanak.
+- **Ji Yeon-hui**: Go Ye-jin's bodyguard since 2120.
+- **Sin Jong-mok**: uses the callsign Baekya.
+- **Sin Jun**: Sin Jong-mok's son.
+- **Jo Jaepyo**: figure of the Yeouido grand council.
+- **Oh Hae-rin**: Director.
 
 <a id="glossary-s7"></a>
 
@@ -66,30 +64,30 @@ This page collects the terms the wiki shares. English spellings accompany each e
 
 One district is one duchy, and Seoul holds twenty-five duchies. The English spellings of the district names follow.
 
-| District | English | Faction |
-|---|---|---|
-| 마포구 | Mapo-gu | Government |
-| 용산구 | Yongsan-gu | Government |
-| 중구 | Jung-gu | Government |
-| 성동구 | Seongdong-gu | Government |
-| 광진구 | Gwangjin-gu | Government |
-| 동대문구 | Dongdaemun-gu | Government |
-| 중랑구 | Jungnang-gu | Government |
-| 성북구 | Seongbuk-gu | Government |
-| 종로구 | Jongno-gu | Government |
-| 서대문구 | Seodaemun-gu | Government |
-| 은평구 | Eunpyeong-gu | Government |
-| 강북구 | Gangbuk-gu | Government |
-| 도봉구 | Dobong-gu | Government |
-| 노원구 | Nowon-gu | Government |
-| 강서구 | Gangseo-gu | Free City |
-| 양천구 | Yangcheon-gu | Free City |
-| 영등포구 | Yeongdeungpo-gu | Free City |
-| 구로구 | Guro-gu | Free City |
-| 금천구 | Geumcheon-gu | Free City |
-| 동작구 | Dongjak-gu | Free City |
-| 관악구 | Gwanak-gu | Free City |
-| 서초구 | Seocho-gu | Arc |
-| 강남구 | Gangnam-gu | Arc |
-| 송파구 | Songpa-gu | Arc |
-| 강동구 | Gangdong-gu | Arc |
+| District | Faction |
+|---|---|
+| Mapo-gu | Government |
+| Yongsan-gu | Government |
+| Jung-gu | Government |
+| Seongdong-gu | Government |
+| Gwangjin-gu | Government |
+| Dongdaemun-gu | Government |
+| Jungnang-gu | Government |
+| Seongbuk-gu | Government |
+| Jongno-gu | Government |
+| Seodaemun-gu | Government |
+| Eunpyeong-gu | Government |
+| Gangbuk-gu | Government |
+| Dobong-gu | Government |
+| Nowon-gu | Government |
+| Gangseo-gu | Free City |
+| Yangcheon-gu | Free City |
+| Yeongdeungpo-gu | Free City |
+| Guro-gu | Free City |
+| Geumcheon-gu | Free City |
+| Dongjak-gu | Free City |
+| Gwanak-gu | Free City |
+| Seocho-gu | Arc |
+| Gangnam-gu | Arc |
+| Songpa-gu | Arc |
+| Gangdong-gu | Arc |

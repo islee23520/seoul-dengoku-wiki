@@ -1,5 +1,5 @@
 ---
-model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model; EN fix by cpa/glm-5.3
 section_checkpoint: W3-A patch: dates + anchors
 ---
 <a id="대정전과-급수-기록"></a>
@@ -23,8 +23,6 @@ The day after the Great Blackout, the president wrote and signed an emergency or
 
 <a id="2026년-물과-부품-거래"></a>
 
-<a id="the-2026-water-and-parts-exchange"></a>
-
 ## The 2026 Water and Parts Exchange
 
 A. November 6 exchange
@@ -36,8 +34,6 @@ B. Two ledgers
 Han Jeonghun entered the exchange in the operations log. The Yeouido vault also entered the parts and water exchange in its inventory under the same date.
 
 <a id="2053년-영등포-급수-협약"></a>
-
-<a id="the-2053-yeongdeungpo-water-agreement"></a>
 
 ## The 2053 Yeongdeungpo Water Agreement
 

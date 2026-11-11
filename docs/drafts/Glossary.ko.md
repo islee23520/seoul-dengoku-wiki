@@ -1,9 +1,7 @@
 ---
-model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model; KO fix by cpa/glm-5.3
 section_checkpoint: W3-A final
 ---
-<a id="glossary"></a>
-
 이 문서는 위키에서 함께 쓰는 말을 모은다. 영문 표기는 각 항목에 함께 적는다.
 
 <a id="glossary-s1"></a>

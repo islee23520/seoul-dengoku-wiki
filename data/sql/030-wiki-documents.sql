@@ -6421,9 +6421,7 @@ Garak Market has no water-treatment facility of its own. The Gwangam plant is in
 - [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)
 - [구조물 총람](/wiki/Structures/)
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Glossary', 'Glossary', '용어 사전', 'overview', 5, '<a id="glossary"></a>
-
-This page collects the terms the wiki shares. English spellings accompany each entry.
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Glossary', 'Glossary', '용어 사전', 'overview', 5, 'This page collects the terms the wiki shares. English spellings accompany each entry.
 
 <a id="glossary-s1"></a>
 
@@ -6469,13 +6467,13 @@ This page collects the terms the wiki shares. English spellings accompany each e
 
 ## People
 
-- **Go Ye-jin** (고예진): Hierophant of Arc. The believers call her the Messiah. She comes from the Free City.
-- **I Ilseop** (이일섭): Duke of Gwanak.
-- **Ji Yeon-hui** (지연희): Go Ye-jin''s bodyguard since 2120.
-- **Sin Jong-mok** (신종목): uses the callsign Baekya.
-- **Sin Jun** (신준): Sin Jong-mok''s son.
-- **Jo Jaepyo** (조재표): figure of the Yeouido grand council.
-- **Oh Hae-rin** (오해린): Director.
+- **Go Ye-jin**: Hierophant of Arc. The believers call her the Messiah. She comes from the Free City.
+- **I Ilseop**: Duke of Gwanak.
+- **Ji Yeon-hui**: Go Ye-jin''s bodyguard since 2120.
+- **Sin Jong-mok**: uses the callsign Baekya.
+- **Sin Jun**: Sin Jong-mok''s son.
+- **Jo Jaepyo**: figure of the Yeouido grand council.
+- **Oh Hae-rin**: Director.
 
 <a id="glossary-s7"></a>
 
@@ -6485,36 +6483,34 @@ This page collects the terms the wiki shares. English spellings accompany each e
 
 One district is one duchy, and Seoul holds twenty-five duchies. The English spellings of the district names follow.
 
-| District | English | Faction |
-|---|---|---|
-| 마포구 | Mapo-gu | Government |
-| 용산구 | Yongsan-gu | Government |
-| 중구 | Jung-gu | Government |
-| 성동구 | Seongdong-gu | Government |
-| 광진구 | Gwangjin-gu | Government |
-| 동대문구 | Dongdaemun-gu | Government |
-| 중랑구 | Jungnang-gu | Government |
-| 성북구 | Seongbuk-gu | Government |
-| 종로구 | Jongno-gu | Government |
-| 서대문구 | Seodaemun-gu | Government |
-| 은평구 | Eunpyeong-gu | Government |
-| 강북구 | Gangbuk-gu | Government |
-| 도봉구 | Dobong-gu | Government |
-| 노원구 | Nowon-gu | Government |
-| 강서구 | Gangseo-gu | Free City |
-| 양천구 | Yangcheon-gu | Free City |
-| 영등포구 | Yeongdeungpo-gu | Free City |
-| 구로구 | Guro-gu | Free City |
-| 금천구 | Geumcheon-gu | Free City |
-| 동작구 | Dongjak-gu | Free City |
-| 관악구 | Gwanak-gu | Free City |
-| 서초구 | Seocho-gu | Arc |
-| 강남구 | Gangnam-gu | Arc |
-| 송파구 | Songpa-gu | Arc |
-| 강동구 | Gangdong-gu | Arc |
-', '<a id="glossary"></a>
-
-이 문서는 위키에서 함께 쓰는 말을 모은다. 영문 표기는 각 항목에 함께 적는다.
+| District | Faction |
+|---|---|
+| Mapo-gu | Government |
+| Yongsan-gu | Government |
+| Jung-gu | Government |
+| Seongdong-gu | Government |
+| Gwangjin-gu | Government |
+| Dongdaemun-gu | Government |
+| Jungnang-gu | Government |
+| Seongbuk-gu | Government |
+| Jongno-gu | Government |
+| Seodaemun-gu | Government |
+| Eunpyeong-gu | Government |
+| Gangbuk-gu | Government |
+| Dobong-gu | Government |
+| Nowon-gu | Government |
+| Gangseo-gu | Free City |
+| Yangcheon-gu | Free City |
+| Yeongdeungpo-gu | Free City |
+| Guro-gu | Free City |
+| Geumcheon-gu | Free City |
+| Dongjak-gu | Free City |
+| Gwanak-gu | Free City |
+| Seocho-gu | Arc |
+| Gangnam-gu | Arc |
+| Songpa-gu | Arc |
+| Gangdong-gu | Arc |
+', '이 문서는 위키에서 함께 쓰는 말을 모은다. 영문 표기는 각 항목에 함께 적는다.
 
 <a id="glossary-s1"></a>
 
@@ -45193,8 +45189,6 @@ The day after the Great Blackout, the president wrote and signed an emergency or
 
 <a id="2026년-물과-부품-거래"></a>
 
-<a id="the-2026-water-and-parts-exchange"></a>
-
 ## The 2026 Water and Parts Exchange
 
 A. November 6 exchange
@@ -45206,8 +45200,6 @@ B. Two ledgers
 Han Jeonghun entered the exchange in the operations log. The Yeouido vault also entered the parts and water exchange in its inventory under the same date.
 
 <a id="2053년-영등포-급수-협약"></a>
-
-<a id="the-2053-yeongdeungpo-water-agreement"></a>
 
 ## The 2053 Yeongdeungpo Water Agreement
 
@@ -45272,8 +45264,6 @@ In November 2125, the records office compiled a power-ranking ledger of the duch
 
 <a id="2026년-물과-부품-거래"></a>
 
-<a id="the-2026-water-and-parts-exchange"></a>
-
 ## 2026년 물과 부품 거래
 
 **가. 11월 6일 거래**
@@ -45285,8 +45275,6 @@ In November 2125, the records office compiled a power-ranking ledger of the duch
 한정훈은 거래 내용을 운전일지에 적었다. 여의도 금고층에서도 같은 날짜로 부품과 물의 거래를 목록에 기재하였다.
 
 <a id="2053년-영등포-급수-협약"></a>
-
-<a id="the-2053-yeongdeungpo-water-agreement"></a>
 
 ## 2053년 영등포 급수 협약
 

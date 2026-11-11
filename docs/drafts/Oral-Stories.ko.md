@@ -1,5 +1,5 @@
 ---
-model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
+model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model; KO fix by cpa/glm-5.3
 section_checkpoint: W3-A patch: dates + anchors
 ---
 <a id="대정전과-급수-기록"></a>
@@ -22,8 +22,6 @@ section_checkpoint: W3-A patch: dates + anchors
 
 <a id="2026년-물과-부품-거래"></a>
 
-<a id="the-2026-water-and-parts-exchange"></a>
-
 ## 2026년 물과 부품 거래
 
 **가. 11월 6일 거래**
@@ -35,8 +33,6 @@ section_checkpoint: W3-A patch: dates + anchors
 한정훈은 거래 내용을 운전일지에 적었다. 여의도 금고층에서도 같은 날짜로 부품과 물의 거래를 목록에 기재하였다.
 
 <a id="2053년-영등포-급수-협약"></a>
-
-<a id="the-2053-yeongdeungpo-water-agreement"></a>
 
 ## 2053년 영등포 급수 협약
 
