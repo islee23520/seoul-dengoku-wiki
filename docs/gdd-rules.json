@@ -2,7 +2,7 @@
   "version": "w5-26",
   "generated": "2026-11-11",
   "scope": "data/sql/080-gdd-documents.sql 본문(body_md/body_ko_md)의 canon-terms 4개 금지 클래스(교회·성직 어휘, 십육국 프레임, AI 살육 서사, 옛 국가 id S01..S16) 중 세계 서술에 쓰인 것. 살육 서사(0건)와 옛 국가 id(전부 기록·스키마 문서)는 패치 대상 없음. 설계 언어(feudal/봉건, CK3, Crusader Kings, Norland 참조)는 건드리지 않는다. sixteen-states-* 패턴이 놓치는 같은 클래스 변형(한국어 '16국'·'나라 열여섯', 영어 '16-state'·'16-nation'·'16 countries')은 패턴 적중 문장의 번역쌍뿐 아니라 같은 십육국 프레임의 별도 문장(구현 경고·로드맵 범위 등)에도 적용했다(v* 규칙). 사용자 지시(게이트 리뷰 2026-11-11)에 따라 Home의 대정전 연도 2030 표기 4문장을 승인 연표 표현 '약 2026년/around 2026'으로 바로잡는 규칙(h*)을 추가했다 — 이것은 네 클래스 밖의 연표 보정이다.",
-  "revision": "v2(2026-11-11): 게이트 리뷰 G26-R1(v14/v15 의미 확대 바로잡음), G26-R2(Korean-Terminology 한영 규칙 추가), Home 2030 연표 규칙 4건 추가, 조사 결합형·복수형 포괄 재스캔 반영",
+  "revision": "v3(2026-11-11): 게이트 리뷰 2차 — Home 수령 열여섯/The Sixteen Suryeong 직책 수 잔존 규칙 추가(r3a/r3b), 직책-숫자 결합형 전수 재스캔 반영",
   "measurement": "C:/Users/oliver/AppData/Local/Temp/w5-26-gdd-measure/gdd-conflicts.json (패턴 적중 69건/17문서 + 변형 25건)",
   "rules": [
     {
@@ -636,6 +636,34 @@
       ],
       "reason": "h3과 같은 사유(프롤로그 표 행).",
       "source": "h3과 동일"
+    },
+    {
+      "id": "r3a",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_md",
+      "from": "| Characters | The Sixteen Suryeong and the Chamha |",
+      "to": "| Characters | The Suryeong and the Chamha |",
+      "patterns": [
+        "sixteen-states-en~office-count"
+      ],
+      "reason": "게이트 리뷰 2차: 'The Sixteen Suryeong'의 열여섯은 십육국 세계의 직책 수다. 옛 Offices-and-Ranks(git 276b26937 030)는 수령을 '십육국 한 나라의 수장 칸/The head-of-state cell of one of the sixteen states'로 정의한다. 숫자만 지우고 직위 목록은 그대로 둔다.",
+      "source": "게이트 리뷰 2차 필수 수정; git show 276b26937:data/sql/030-wiki-documents.sql Offices-and-Ranks body_md L141·body_ko_md L138; 바이블 1절 규칙7 [승인]"
+    },
+    {
+      "id": "r3b",
+      "documents": [
+        "doc.Home"
+      ],
+      "field": "body_ko_md",
+      "from": "| 등장인물 | 수령 열여섯과 참하 |",
+      "to": "| 등장인물 | 수령과 참하 |",
+      "patterns": [
+        "sixteen-states-ko~office-count"
+      ],
+      "reason": "r3a의 한국어 쌍. '열여섯'만 제거.",
+      "source": "r3a와 동일"
     }
   ],
   "no_patch_classes": {
