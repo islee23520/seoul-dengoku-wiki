@@ -18,6 +18,12 @@ const EXIT = { PARSE: 2, RESERIALIZE: 3, RULE: 21, WRITE: 23 };
 const FILES = {
   '090': { name: '090-person-details.sql', table: 'person_detail', cols: ['person_id', 'clan_id', 'json', 'json_ko'], idCol: 'person_id' },
   '110': { name: '110-family-trees.sql', table: 'family_tree', cols: null, idCol: 'clan_id' },
+  // fix4: 050 wiki_person 평문 열(position/position_ko) 규칙. insertLine은 숫자 sort 열을 따옴표 문자열로
+  // 재직렬화하므로(형식 불변 불가) 050은 원시 라인 치환으로만 적용한다(rawLine).
+  '050': {
+    name: '050-wiki-people.sql', table: 'wiki_person', idCol: 'id', rawLine: true,
+    cols: ['id', 'sort', 'faction_id', 'name', 'name_ko', 'title', 'title_ko', 'position', 'position_ko', 'rank', 'rank_ko', 'tier', 'occupation', 'occupation_ko', 'gender', 'gender_ko', 'stage', 'stage_ko', 'state_id', 'state_name', 'state_name_ko'],
+  },
 };
 function splitStatements(text, file) {
   if (!text.startsWith('--')) throw Object.assign(new Error(`E_HEADER: ${file} 머리말 주석 2줄이 아니다`), { code: EXIT.PARSE });
@@ -67,6 +73,22 @@ function loadFile(spec, filePath) {
   }
   return { raw, headerLines, lines, cols, rows };
 }
+// 050 wiki_person: 재직렬화 무결성 검사 대신 행 형식만 검사하고 원시 라인을 보존한다(숫자 열 치환 방지).
+function loadRawFile(spec, filePath) {
+  const raw = fs.readFileSync(filePath, 'utf8');
+  const { headerLines, lines } = splitStatements(raw, spec.name);
+  const headRe = new RegExp(`^INSERT INTO ${spec.table} \\(([^)]*)\\) VALUES \\('([^']+)',`);
+  const byRow = new Map();
+  for (let i = 0; i < lines.length; i++) {
+    const m = headRe.exec(lines[i]);
+    if (!m) throw Object.assign(new Error(`E_INSERT_SHAPE: ${spec.name} 행 ${i + 1}`), { code: EXIT.PARSE });
+    if (m[1].split(',').map((c) => c.trim()).join(',') !== spec.cols.join(',')) {
+      throw Object.assign(new Error(`E_INSERT_SHAPE: ${spec.name} 열 순서 불일치`), { code: EXIT.PARSE });
+    }
+    byRow.set(m[2], i);
+  }
+  return { raw, headerLines, lines, cols: spec.cols, rows: null, byRow, changedLines: new Set() };
+}
 
 export function run({ rulesPath, logPath, dryRun }) {
   const from = Number(process.env.FIX2_FROM ?? 0);
@@ -75,20 +97,47 @@ export function run({ rulesPath, logPath, dryRun }) {
   const loaded = {
     '090': loadFile(FILES['090'], path.join(REPO, 'data/sql', FILES['090'].name)),
     '110': loadFile(FILES['110'], path.join(REPO, 'data/sql', FILES['110'].name)),
+    '050': loadRawFile(FILES['050'], path.join(REPO, 'data/sql', FILES['050'].name)),
   };
   for (const [fk, ld] of Object.entries(loaded)) {
+    if (!ld.rows) continue; // 050 raw-line: 행 파싱은 규칙 적용 시점에만
     ld.parsed = ld.rows.map((r) => ({ ...r, _je: JSON.parse(r.json), _jk: JSON.parse(r.json_ko) }));
     ld.byRow = new Map(ld.parsed.map((r) => [r[FILES[fk].idCol], r]));
   }
   const perRule = [];
   const failures = [];
   let applied = 0;
-  const byFile = { '090': 0, '110': 0 };
+  const byFile = { '090': 0, '110': 0, '050': 0 };
   const changedCells = new Set();
   const multiCells = 0;
   for (const rule of rules) {
     const spec = FILES[rule.file]; const ld = loaded[rule.file];
     if (!spec || !ld) { failures.push({ rule: { ...rule, old: undefined, new: undefined }, why: `E_FILE: ${rule.file}` }); continue; }
+    if (spec.rawLine) {
+      const lineIdx = ld.byRow.get(rule.id);
+      if (lineIdx === undefined) { failures.push({ rule: { ...rule, old: undefined, new: undefined }, why: `E_NO_ROW: ${rule.id}` }); continue; }
+      const row = parseInsertLine(ld.lines[lineIdx], spec.table, spec.cols);
+      const cell = row[rule.column];
+      if (typeof cell !== 'string') { failures.push({ rule: { ...rule, old: undefined, new: undefined }, why: `E_NOT_STRING: ${rule.id} ${rule.column} ${rule.path}` }); continue; }
+      const cnt = cell.split(rule.old).length - 1;
+      const expect = rule.expect ?? 1;
+      if (cnt !== expect) {
+        failures.push({ rule: { ...rule, new: undefined }, why: `E_NO_UNIQUE_MATCH: ${rule.id} ${rule.column} ${rule.path} (occurrences=${cnt}, expect=${expect})` });
+        continue;
+      }
+      const escOld = rule.old.replaceAll("'", "''");
+      const escNew = rule.new.replaceAll("'", "''");
+      const rawCnt = ld.lines[lineIdx].split(escOld).length - 1;
+      if (rawCnt !== expect) {
+        failures.push({ rule: { ...rule, new: undefined }, why: `E_RAW_AMBIGUOUS: ${rule.id} ${rule.column} ${rule.path} (cell=${cnt}, raw=${rawCnt}) — 셀 밖 같은 어구 또는 이스케이프 차이` });
+        continue;
+      }
+      ld.lines[lineIdx] = expect === 1 ? ld.lines[lineIdx].replace(escOld, escNew) : ld.lines[lineIdx].split(escOld).join(escNew);
+      ld.changedLines.add(lineIdx);
+      applied++; byFile[rule.file]++; changedCells.add(`${rule.file}|${rule.id}|${rule.column}|${rule.path}`);
+      perRule.push({ file: rule.file, id: rule.id, column: rule.column, path: rule.path, result: 'applied', occurrences: cnt });
+      continue;
+    }
     const row = ld.byRow.get(rule.id);
     if (!row) { failures.push({ rule: { ...rule, old: undefined, new: undefined }, why: `E_NO_ROW: ${rule.id}` }); continue; }
     const doc = rule.column === 'json' ? row._je : row._jk;
@@ -113,6 +162,10 @@ export function run({ rulesPath, logPath, dryRun }) {
   const outputs = {};
   for (const [fk, ld] of Object.entries(loaded)) {
     const spec = FILES[fk];
+    if (spec.rawLine) {
+      outputs[fk] = { text: `${ld.headerLines[0]}\n${ld.headerLines[1]}\n\n${ld.lines.join('\n')}\n`, changedRows: ld.changedLines.size };
+      continue;
+    }
     const outRows = ld.parsed.map((r) => { const o = { ...r }; delete o._je; delete o._jk; o.json = JSON.stringify(r._je); o.json_ko = JSON.stringify(r._jk); return o; });
     let changedRows = 0;
     for (let i = 0; i < outRows.length; i++) if (insertLine(spec.table, ld.cols, outRows[i]) !== ld.lines[i]) changedRows++;
@@ -121,17 +174,16 @@ export function run({ rulesPath, logPath, dryRun }) {
   const log = {
     generatedBy: 'scripts/pages/fix2-sentence-edits.mjs',
     rulesPath, purpose: table.purpose, policy: table.policy, ruleRange: from ? `[${from}..${table.rules.length - 1}] 증분 적용(정본 재현은 전체 테이블 0번부터)` : '전체 테이블',
-    counts: { rulesTotal: table.rules.length, rulesApplied: applied, rulesSkippedBefore: from, byFile, multiOccurrence: rules.filter((r) => r.expect).length, changedCells: changedCells.size, changedRows: { '090': outputs['090'].changedRows, '110': outputs['110'].changedRows }, failed: 0 },
+    counts: { rulesTotal: table.rules.length, rulesApplied: applied, rulesSkippedBefore: from, byFile, multiOccurrence: rules.filter((r) => r.expect).length, changedCells: changedCells.size, changedRows: Object.fromEntries(Object.entries(outputs).map(([k, o]) => [k, o.changedRows])), failed: 0 },
     keptTotal: Array.isArray(table.kept) ? table.kept.length : null,
     perRule,
   };
   if (!dryRun) {
-    fs.writeFileSync(path.join(REPO, 'data/sql', FILES['090'].name), outputs['090'].text);
-    fs.writeFileSync(path.join(REPO, 'data/sql', FILES['110'].name), outputs['110'].text);
+    for (const [fk, spec] of Object.entries(FILES)) fs.writeFileSync(path.join(REPO, 'data/sql', spec.name), outputs[fk].text);
     fs.mkdirSync(path.dirname(path.join(REPO, logPath)), { recursive: true });
     fs.writeFileSync(path.join(REPO, logPath), JSON.stringify(log, null, 1));
   }
-  return { applied, byFile, changedCells: changedCells.size, changedRows: { '090': outputs['090'].changedRows, '110': outputs['110'].changedRows }, rulesTotal: rules.length, multiOccurrence: rules.filter((r) => r.expect).length };
+  return { applied, byFile, changedCells: changedCells.size, changedRows: Object.fromEntries(Object.entries(outputs).map(([k, o]) => [k, o.changedRows])), rulesTotal: rules.length, multiOccurrence: rules.filter((r) => r.expect).length };
 }
 
 function main() {
