@@ -11,7 +11,7 @@ This index gathers the wiki's articles and entry points by category. To read the
 ## Articles by Category
 
 - **Overview**: [Regional and Physical AI Arcs](/wiki/Regional-Physical-AI-Arcs/) · [The Great Blackout](/wiki/World-Unbinding/) · [World Narrative Atlas](/wiki/World-Narrative-Atlas/) · [Glossary](/wiki/Glossary/)
-- **Timeline**: [Seoul Subway States Timeline 2030–2126](/wiki/Century-Annals/) · [Scenario Timeline](/wiki/Scenario-Timeline/) · [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/)
+- **Timeline**: [Century Annals](/wiki/Century-Annals/) · [Scenario Timeline](/wiki/Scenario-Timeline/) · [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/)
 - **Character**: [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/) · [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/)
 - **Faction**: [Families and the Three Factions](/wiki/Chaebol-Houses-and-Century-Factions/) · [The Three Factions of Seoul](/wiki/Sixteen-States/) · [World Expansion Relation Ledger](/wiki/World-Relation-Ledger/) · [Operating Organizations](/wiki/Operating-Houses/) · [Diaspora Corridors](/wiki/Diaspora-Corridors/)
 - **Offices**: [Offices and Ranks](/wiki/Offices-and-Ranks/)

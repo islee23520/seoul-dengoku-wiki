@@ -11,7 +11,7 @@ model: cpa/claude-opus-5-5 (effective_model from task json; agent-authored by ha
 ## 분류별 문서
 
 - **개요**: [권역·피지컬 AI 서사선](/wiki/Regional-Physical-AI-Arcs/) · [대정전](/wiki/World-Unbinding/) · [세계 서사 총람](/wiki/World-Narrative-Atlas/) · [용어 사전](/wiki/Glossary/)
-- **연표**: [서울전국 연표 2030–2126](/wiki/Century-Annals/) · [시나리오 타임라인](/wiki/Scenario-Timeline/) · [신도림 연결부 화물문](/wiki/Sindorim-Junction-Cargo-Gate/)
+- **연표**: [서울전국 연표](/wiki/Century-Annals/) · [시나리오 타임라인](/wiki/Scenario-Timeline/) · [신도림 연결부 화물문](/wiki/Sindorim-Junction-Cargo-Gate/)
 - **인물**: [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/) · [인물·세력·생업](/wiki/Characters-Factions-and-Professions/)
 - **세력**: [가문과 세 세력](/wiki/Chaebol-Houses-and-Century-Factions/) · [서울의 세 세력](/wiki/Sixteen-States/) · [세계 확장 관계 원장](/wiki/World-Relation-Ledger/) · [운영 조직](/wiki/Operating-Houses/) · [이주민 회랑](/wiki/Diaspora-Corridors/)
 - **관직**: [관직](/wiki/Offices-and-Ranks/)
