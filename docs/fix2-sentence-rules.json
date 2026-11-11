@@ -14,7 +14,7 @@
   "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
  },
  "counts": {
-  "rules": 2011,
+  "rules": 2035,
   "kept": 1180,
   "keepByReason": {
    "소속 표기": 461,
@@ -38,7 +38,8 @@
   "d2NeutralRewrites": 1,
   "d3ResidenceRules": 12,
   "d2CorrectiveRules": 12,
-  "fix9VassalageRules": 5
+  "fix9VassalageRules": 5,
+  "fix12DuchyFactionRules": 24
  },
  "rules": [
   {
@@ -18157,6 +18158,222 @@
    "old": "이씨 가문은 규격맹의 봉신이며",
    "new": "이씨 가문은 자유도시의 봉신이며",
    "reason": "fix9 ITEM2 — 연혁 가문 문단 동일 정합"
+  },
+  {
+   "file": "050",
+   "id": "person-0100",
+   "column": "faction_id",
+   "path": "$",
+   "old": "arc",
+   "new": "government",
+   "reason": "fix12 공작령 세력 정합 — 성동구(바이블 §2.4 #4) 공작 영주의 faction_id는 정부(4차 게이트 결함 4인)"
+  },
+  {
+   "file": "050",
+   "id": "person-0235",
+   "column": "faction_id",
+   "path": "$",
+   "old": "free-city",
+   "new": "government",
+   "reason": "fix12 공작령 세력 정합 — 서대문구(바이블 §2.4 #10) 공작 영주의 faction_id는 정부(4차 게이트 결함 4인)"
+  },
+  {
+   "file": "050",
+   "id": "person-0236",
+   "column": "faction_id",
+   "path": "$",
+   "old": "free-city",
+   "new": "government",
+   "reason": "fix12 공작령 세력 정합 — 마포구(바이블 §2.4 #1) 공작 영주의 faction_id는 정부(4차 게이트 결함 4인)"
+  },
+  {
+   "file": "050",
+   "id": "person-0286",
+   "column": "faction_id",
+   "path": "$",
+   "old": "arc",
+   "new": "government",
+   "reason": "fix12 공작령 세력 정합 — 노원구(바이블 §2.4 #14) 공작 영주의 faction_id는 정부(4차 게이트 결함 4인)"
+  },
+  {
+   "file": "090",
+   "id": "person-0100",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix12 세력 표기 정합 — 값 전체가 세력 표기다(성동구(바이블 §2.4 #4) 정부 영주, 050과 동일 근거)"
+  },
+  {
+   "file": "090",
+   "id": "person-0100",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix12 세력 표기 정합 — 값 전체가 세력 표기다(성동구(바이블 §2.4 #4) 정부 영주, 050과 동일 근거)"
+  },
+  {
+   "file": "090",
+   "id": "person-0100",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc",
+   "new": "- Affiliation: The Government",
+   "reason": "fix12 연혁 소속 글머리표 세력 표기 정합(성동구(바이블 §2.4 #4) 정부 영주)"
+  },
+  {
+   "file": "090",
+   "id": "person-0100",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc",
+   "new": "- 소속: 정부",
+   "reason": "fix12 연혁 소속 글머리표 세력 표기 정합(성동구(바이블 §2.4 #4) 정부 영주)"
+  },
+  {
+   "file": "090",
+   "id": "person-0286",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc",
+   "new": "The Government",
+   "reason": "fix12 세력 표기 정합 — 값 전체가 세력 표기다(노원구(바이블 §2.4 #14) 정부 영주, 050과 동일 근거)"
+  },
+  {
+   "file": "090",
+   "id": "person-0286",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc",
+   "new": "정부",
+   "reason": "fix12 세력 표기 정합 — 값 전체가 세력 표기다(노원구(바이블 §2.4 #14) 정부 영주, 050과 동일 근거)"
+  },
+  {
+   "file": "090",
+   "id": "person-0286",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc",
+   "new": "- Affiliation: The Government",
+   "reason": "fix12 연혁 소속 글머리표 세력 표기 정합(노원구(바이블 §2.4 #14) 정부 영주)"
+  },
+  {
+   "file": "090",
+   "id": "person-0286",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc",
+   "new": "- 소속: 정부",
+   "reason": "fix12 연혁 소속 글머리표 세력 표기 정합(노원구(바이블 §2.4 #14) 정부 영주)"
+  },
+  {
+   "file": "090",
+   "id": "person-0235",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Free City",
+   "new": "- Affiliation: The Government",
+   "reason": "fix12 연혁 소속 글머리표 세력 표기 정합(서대문구(바이블 §2.4 #10) 정부 영주)"
+  },
+  {
+   "file": "090",
+   "id": "person-0235",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: 자유도시",
+   "new": "- 소속: 정부",
+   "reason": "fix12 연혁 소속 글머리표 세력 표기 정합(서대문구(바이블 §2.4 #10) 정부 영주)"
+  },
+  {
+   "file": "090",
+   "id": "person-0236",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Free City",
+   "new": "- Affiliation: The Government",
+   "reason": "fix12 연혁 소속 글머리표 세력 표기 정합(마포구(바이블 §2.4 #1) 정부 영주)"
+  },
+  {
+   "file": "090",
+   "id": "person-0236",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: 자유도시",
+   "new": "- 소속: 정부",
+   "reason": "fix12 연혁 소속 글머리표 세력 표기 정합(마포구(바이블 §2.4 #1) 정부 영주)"
+  },
+  {
+   "file": "115",
+   "id": "retainer",
+   "column": "json",
+   "path": "$.nodes[102].state",
+   "old": "arc",
+   "new": "government",
+   "reason": "fix12 가신도 노드 state 정합 — person-0100(성동구(바이블 §2.4 #4) 정부 영주, 050 faction_id와 동일 근거)"
+  },
+  {
+   "file": "115",
+   "id": "retainer",
+   "column": "json_ko",
+   "path": "$.nodes[102].state",
+   "old": "arc",
+   "new": "government",
+   "reason": "fix12 가신도 노드 state 정합 — person-0100(성동구(바이블 §2.4 #4) 정부 영주, 050 faction_id와 동일 근거)"
+  },
+  {
+   "file": "115",
+   "id": "retainer",
+   "column": "json",
+   "path": "$.nodes[112].state",
+   "old": "free-city",
+   "new": "government",
+   "reason": "fix12 가신도 노드 state 정합 — person-0235(서대문구(바이블 §2.4 #10) 정부 영주, 050 faction_id와 동일 근거)"
+  },
+  {
+   "file": "115",
+   "id": "retainer",
+   "column": "json_ko",
+   "path": "$.nodes[112].state",
+   "old": "free-city",
+   "new": "government",
+   "reason": "fix12 가신도 노드 state 정합 — person-0235(서대문구(바이블 §2.4 #10) 정부 영주, 050 faction_id와 동일 근거)"
+  },
+  {
+   "file": "115",
+   "id": "retainer",
+   "column": "json",
+   "path": "$.nodes[114].state",
+   "old": "free-city",
+   "new": "government",
+   "reason": "fix12 가신도 노드 state 정합 — person-0236(마포구(바이블 §2.4 #1) 정부 영주, 050 faction_id와 동일 근거)"
+  },
+  {
+   "file": "115",
+   "id": "retainer",
+   "column": "json_ko",
+   "path": "$.nodes[114].state",
+   "old": "free-city",
+   "new": "government",
+   "reason": "fix12 가신도 노드 state 정합 — person-0236(마포구(바이블 §2.4 #1) 정부 영주, 050 faction_id와 동일 근거)"
+  },
+  {
+   "file": "115",
+   "id": "retainer",
+   "column": "json",
+   "path": "$.nodes[109].state",
+   "old": "arc",
+   "new": "government",
+   "reason": "fix12 가신도 노드 state 정합 — person-0286(노원구(바이블 §2.4 #14) 정부 영주, 050 faction_id와 동일 근거)"
+  },
+  {
+   "file": "115",
+   "id": "retainer",
+   "column": "json_ko",
+   "path": "$.nodes[109].state",
+   "old": "arc",
+   "new": "government",
+   "reason": "fix12 가신도 노드 state 정합 — person-0286(노원구(바이블 §2.4 #14) 정부 영주, 050 faction_id와 동일 근거)"
   }
  ],
  "kept": [

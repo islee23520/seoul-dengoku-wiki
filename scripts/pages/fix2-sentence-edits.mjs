@@ -6,6 +6,7 @@
 // N회 반복된 경우를 지원한다: 규칙에 expect=N이 있으면 정확히 N회 전부 치환하고, 아니면 old가
 // 정확 1회일 때만 1회 치환한다. 재직렬화는 ck3-stats.mjs의 parseInsertLine/insertLine(형식 바이트 불변).
 // 재현: 사전 단계 트리(6917e110f)에서 실행하면 바이트 동일한 090/110을 만든다(멱등 아님).
+// fix12: 규칙이 참조하는 파일만 적재하고(lazy) 115-retainer_graph 노드 state(세력 id) 규칙을 지원한다.
 // 사용법: node scripts/pages/fix2-sentence-edits.mjs [--dry-run]
 import fs from 'node:fs';
 import path from 'node:path';
@@ -18,6 +19,8 @@ const EXIT = { PARSE: 2, RESERIALIZE: 3, RULE: 21, WRITE: 23 };
 const FILES = {
   '090': { name: '090-person-details.sql', table: 'person_detail', cols: ['person_id', 'clan_id', 'json', 'json_ko'], idCol: 'person_id' },
   '110': { name: '110-family-trees.sql', table: 'family_tree', cols: null, idCol: 'clan_id' },
+  // fix12: 가신도 노드 state(세력 id) 규칙. 090과 같은 json/json_ko 재직렬화 경로(단일 행, id 'retainer').
+  '115': { name: '115-retainer-graph.sql', table: 'retainer_graph', cols: null, idCol: 'id' },
   // fix4: 050 wiki_person 평문 열(position/position_ko) 규칙. insertLine은 숫자 sort 열을 따옴표 문자열로
   // 재직렬화하므로(형식 불변 불가) 050은 원시 라인 치환으로만 적용한다(rawLine).
   '050': {
@@ -94,11 +97,14 @@ export function run({ rulesPath, logPath, dryRun }) {
   const from = Number(process.env.FIX2_FROM ?? 0);
   const table = JSON.parse(fs.readFileSync(path.join(REPO, rulesPath), 'utf8'));
   const rules = table.rules.slice(from);
-  const loaded = {
-    '090': loadFile(FILES['090'], path.join(REPO, 'data/sql', FILES['090'].name)),
-    '110': loadFile(FILES['110'], path.join(REPO, 'data/sql', FILES['110'].name)),
-    '050': loadRawFile(FILES['050'], path.join(REPO, 'data/sql', FILES['050'].name)),
-  };
+  const loaded = {};
+  for (const rule of rules) {
+    if (loaded[rule.file] || !FILES[rule.file]) continue; // 없는 파일 사양은 규칙 적용 시점에 E_FILE로 실패
+    const spec = FILES[rule.file];
+    loaded[rule.file] = spec.rawLine
+      ? loadRawFile(spec, path.join(REPO, 'data/sql', spec.name))
+      : loadFile(spec, path.join(REPO, 'data/sql', spec.name));
+  }
   for (const [fk, ld] of Object.entries(loaded)) {
     if (!ld.rows) continue; // 050 raw-line: 행 파싱은 규칙 적용 시점에만
     ld.parsed = ld.rows.map((r) => ({ ...r, _je: JSON.parse(r.json), _jk: JSON.parse(r.json_ko) }));
@@ -107,7 +113,7 @@ export function run({ rulesPath, logPath, dryRun }) {
   const perRule = [];
   const failures = [];
   let applied = 0;
-  const byFile = { '090': 0, '110': 0, '050': 0 };
+  const byFile = Object.fromEntries(Object.keys(loaded).map((k) => [k, 0]));
   const changedCells = new Set();
   const multiCells = 0;
   for (const rule of rules) {
@@ -179,7 +185,7 @@ export function run({ rulesPath, logPath, dryRun }) {
     perRule,
   };
   if (!dryRun) {
-    for (const [fk, spec] of Object.entries(FILES)) fs.writeFileSync(path.join(REPO, 'data/sql', spec.name), outputs[fk].text);
+    for (const fk of Object.keys(outputs)) fs.writeFileSync(path.join(REPO, 'data/sql', FILES[fk].name), outputs[fk].text);
     fs.mkdirSync(path.dirname(path.join(REPO, logPath)), { recursive: true });
     fs.writeFileSync(path.join(REPO, logPath), JSON.stringify(log, null, 1));
   }
