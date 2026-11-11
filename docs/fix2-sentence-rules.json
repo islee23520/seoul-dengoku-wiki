@@ -14,7 +14,7 @@
   "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
  },
  "counts": {
-  "rules": 2053,
+  "rules": 2165,
   "kept": 1180,
   "keepByReason": {
    "소속 표기": 461,
@@ -40,7 +40,8 @@
   "d2CorrectiveRules": 12,
   "fix9VassalageRules": 5,
   "fix12DuchyFactionRules": 24,
-  "fix13KingdomNameRules": 18
+  "fix13KingdomNameRules": 18,
+  "fix14AffiliationRules": 112
  },
  "rules": [
   {
@@ -18537,6 +18538,1070 @@
    "old": "Arc 왕국",
    "new": "정부 왕국",
    "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0389(정부 소속(faction government)); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Free City (formerly Daejeon Bloc; power shift 2026-10-22)",
+   "new": "Unaffiliated (formerly Daejeon Bloc; power shift 2026-10-22)",
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Free City (formerly Daejeon Bloc; power shift 2026-10-22)",
+   "new": "- Affiliation: Unaffiliated (formerly Daejeon Bloc; power shift 2026-10-22)",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "자유도시(전 대전계; 2026-10-22 세력 이동)",
+   "new": "무소속(전 대전계; 2026-10-22 세력 이동)",
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: 자유도시(전 대전계; 2026-10-22 세력 이동)",
+   "new": "- 소속: 무소속(전 대전계; 2026-10-22 세력 이동)",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0038",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Free City (formerly Daejeon Bloc; power shift 2026-10-22)",
+   "new": "Unaffiliated (formerly Daejeon Bloc; power shift 2026-10-22)",
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0038",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Free City (formerly the Daejeon Faction; 2026-10-22 faction shift)",
+   "new": "- Affiliation: Unaffiliated (formerly the Daejeon Faction; 2026-10-22 faction shift)",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0038",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "자유도시(전 대전계; 2026-10-22 세력 이동)",
+   "new": "무소속(전 대전계; 2026-10-22 세력 이동)",
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0038",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: 자유도시(전 대전계; 2026-10-22 세력 이동)",
+   "new": "- 소속: 무소속(전 대전계; 2026-10-22 세력 이동)",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0039",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Free City (formerly Daejeon Bloc; power shift 2026-10-22)",
+   "new": "Unaffiliated (formerly Daejeon Bloc; power shift 2026-10-22)",
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0039",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Free City (formerly the Daejeon Faction; 2026-10-22 faction shift)",
+   "new": "- Affiliation: Unaffiliated (formerly the Daejeon Faction; 2026-10-22 faction shift)",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0039",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "자유도시(전 대전계; 2026-10-22 세력 이동)",
+   "new": "무소속(전 대전계; 2026-10-22 세력 이동)",
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0039",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: 자유도시(전 대전계; 2026-10-22 세력 이동)",
+   "new": "- 소속: 무소속(전 대전계; 2026-10-22 세력 이동)",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0375",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0376",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0377",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0378",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0379",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0380",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0381",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0382",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0383",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0384",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0385",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0386",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0387",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0388",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0390",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0391",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0392",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0393",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0394",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0395",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0396",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0397",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Arc (Myeongdong Station)",
+   "new": "The Government",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Arc (Myeongdong Station)",
+   "new": "- Affiliation: The Government",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "Arc (명동역)",
+   "new": "정부",
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-0398",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: Arc (명동역)",
+   "new": "- 소속: 정부",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster faction government 기준, 형제 표기 The Government/정부(fix12 0176 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-1003",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Free City Guild member, Jo Jaepyo's Party (faction shift on 2026-10-22)",
+   "new": "Unaffiliated, Jo Jaepyo's Party (faction shift on 2026-10-22)",
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-1003",
+   "column": "json",
+   "path": "$.biography",
+   "old": "- Affiliation: Free City Guild member, Jo Jaepyo's Party (faction shift on 2026-10-22)",
+   "new": "- Affiliation: Unaffiliated, Jo Jaepyo's Party (faction shift on 2026-10-22)",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-1003",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "자유도시 조합원, 조재표 일행(2026-10-22 세력 이동)",
+   "new": "무소속, 조재표 일행(2026-10-22 세력 이동)",
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
+  },
+  {
+   "file": "090",
+   "id": "person-1003",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "- 소속: 자유도시 조합원, 조재표 일행(2026-10-22 세력 이동)",
+   "new": "- 소속: 무소속, 조재표 일행(2026-10-22 세력 이동)",
+   "expect": 1,
+   "reason": "fix14 D1 소속 정합 — roster independent(세력 주장 없음), 형제 표기 Unaffiliated/무소속(person-1004 계열)"
   }
  ],
  "kept": [
