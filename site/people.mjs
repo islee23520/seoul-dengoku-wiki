@@ -24,7 +24,7 @@ const AXIS = {
 };
 // English labels for the axis names (the JSON keys are Korean in both locales; English output maps them here).
 const AXIS_NAME_EN = { '권위': 'Authority', '개방': 'Openness', '무력': 'Force', '물질': 'Material', '공동': 'Community', '원칙': 'Principle', '공개': 'Disclosure', '자격': 'Qualification', '분산': 'Decentralisation', '변혁': 'Transformation', '갈망': 'Craving', '독점': 'Exclusivity', '위험': 'Risk', '과시': 'Display', '지속': 'Persistence' };
-const ABILITY = { leadership: ['Leadership', '통솔'], strategy: ['Strategy', '전략'], negotiation: ['Negotiation', '교섭'], management: ['Management', '운영'], insight: ['Insight', '통찰'], learning: ['Learning', '학습'], prowess: ['Prowess', '기량'], endurance: ['Endurance', '체력'] };
+const ABILITY = { diplomacy: ['Diplomacy', '외교'], martial: ['Martial', '군사'], stewardship: ['Stewardship', '관리'], intrigue: ['Intrigue', '음모'], learning: ['Learning', '학식'], prowess: ['Prowess', '무용'] };
 const BODY = { 'left-arm': ['Left arm', '왼팔'], 'right-arm': ['Right arm', '오른팔'], 'left-leg': ['Left leg', '왼다리'], 'right-leg': ['Right leg', '오른다리'], head: ['Head', '머리'], torso: ['Torso', '몸통'] };
 const SECTION_ORDER_KO = ['생애', '관직', '훈련', '호위 대열', '일화', '가문', '관계', '야망', '공포', '개입'];
 const SECTION_EN = { '생애': 'Life', '관직': 'Offices', '훈련': 'Training', '호위 대열': 'Guard Formation', '일화': 'Anecdote', '가문': 'Houses', '관계': 'Relationships', '야망': 'Ambition', '공포': 'Fear', '개입': 'Intervention' };
