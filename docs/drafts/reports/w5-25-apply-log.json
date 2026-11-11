@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-11T01:26:04.403Z",
+ "generatedAt": "2026-11-11T02:01:02.904Z",
  "sqlDir": "C:\\Users\\oliver\\AppData\\Local\\Temp\\wt-w5-25\\data\\sql",
  "mapping": [
   {
@@ -424,7 +424,7 @@
   "050-wiki-people.sql": {
    "tables": {
     "wiki_person": {
-     "cells": 3417,
+     "cells": 3423,
      "byColumn": {
       "state_id": 1014,
       "state_name": 1014,
@@ -432,10 +432,10 @@
       "title": 6,
       "title_ko": 6,
       "faction_id": 314,
-      "position": 67,
-      "position_ko": 66,
-      "rank": 9,
-      "rank_ko": 9,
+      "position": 69,
+      "position_ko": 68,
+      "rank": 10,
+      "rank_ko": 10,
       "occupation": 12,
       "occupation_ko": 12
      },
@@ -1004,7 +1004,7 @@
       "json": 148,
       "json_ko": 148
      },
-     "note": "affiliation 동기 964건(인물 현재 소속 기준), 타임라인 조직명 치환 79건, §4 성직 문장 치환 23회 (296/296열)"
+     "note": "연결 노드 483/언어(총 966) 중 964건 동기(나머지 2건은 이미 일치), 미연결 역사 노드 2346/언어(총 4692) 유지; 타임라인 조직명 치환 79건, §4 성직 문장 치환 31회 (296/296열 재직렬화)"
     }
    },
    "linesBefore": 152,
@@ -3034,8 +3034,11 @@
    ]
   },
   "treeAffiliationSync": {
-   "rule": "인물 연결 노드의 affiliation을 현재 wiki_person 기록(종류·id·이름)으로 동기 — 미연결 역사 노드는 유지",
-   "changed": 964,
+   "rule": "인물 연결 노드의 affiliation을 현재 wiki_person 기록(종류·id·이름)으로 동기 — 미연결(역사 선대) 노드는 유지",
+   "linkedNodesPerLanguage": 483,
+   "unlinkedNodesPerLanguage": 2346,
+   "changedBothLanguages": 964,
+   "unchangedLinked": 2,
    "byKindTransition": {
     "state→state": 726,
     "union→state": 194,
@@ -18241,7 +18244,7 @@
    ]
   },
   "treeOrgProse": {
-   "rule": "타임라인 요약의 옛 조직명 → 세력 표기명(전 노드) + §4 성직 어휘 13문장 규칙",
+   "rule": "타임라인 요약의 옛 조직명 → 세력 표기명(전 노드) + §4 성직 어휘 문장 규칙 — 교체문은 적용본 030 원문 표기만 사용(신규 직명 창작 없음, 결함 3)",
    "timelineOrgReplacements": {
     "en": 40,
     "ko": 39
@@ -18261,13 +18264,31 @@
     "Served as election clerk deacon at the Myeon": 1,
     "Served as election witness deacon at the Mye": 1,
     "the safekeeping of priests' voting records": 2,
-    "priests' assembly messenger": 2
+    "priests' assembly messenger": 2,
+    "The elders seated Im Hajun as Council Chair ": 3,
+    "In 2126, O Gyeongjae took the Council Chair ": 3,
+    "O Gyeongjae inherited the O clan's Session H": 1,
+    "The Session Head pastorate of the Roster Chu": 1
    }
   },
   "handoff090": {
-   "file": "docs\\drafts\\reports\\w5-25-handoff-090.md",
+   "json": "docs\\drafts\\reports\\w5-25-handoff-090.json",
+   "markdown": "docs\\drafts\\reports\\w5-25-handoff-090.md",
+   "items": 4954,
    "people": 509,
-   "groups": 2890
+   "byRule": {
+    "org-name-map": 2629,
+    "state-id-mapping": 1016,
+    "state-name-mapping": 952,
+    "clergy-vocab": 299,
+    "bible6-exception": 46,
+    "bible6-stale-role": 9,
+    "sixteen-framing": 3
+   },
+   "byAction": {
+    "replace": 4643,
+    "owner-decision": 311
+   }
   }
  },
  "rulerRows": [
@@ -19376,7 +19397,9 @@
    "name_ko": "지연희",
    "changes": {
     "title": "Bodyguard of Go Ye-jin",
-    "title_ko": "고예진의 경호원"
+    "title_ko": "고예진의 경호원",
+    "position": "Bodyguard of Go Ye-jin",
+    "position_ko": "고예진의 경호원"
    }
   },
   {
@@ -19384,7 +19407,11 @@
    "name_ko": "고예진",
    "changes": {
     "title": "Hierophant of the Arc",
-    "title_ko": "아크의 교주"
+    "title_ko": "아크의 교주",
+    "position": "Hierophant of the Arc",
+    "position_ko": "아크의 교주",
+    "rank": "Hierophant",
+    "rank_ko": "교주"
    }
   }
  ],
