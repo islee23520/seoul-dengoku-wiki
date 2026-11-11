@@ -164,6 +164,50 @@ for (const f of ['government', 'free-city', 'arc']) {
 // faction district counts (CANON-BIBLE 2.4, owner rule 8: 25 duchies = 14+7+4)
 const DUCHY_COUNT = { government: 14, 'free-city': 7, arc: 4 };
 
+// Old state ORGANISATION display names → faction id, for reader-visible prose
+// in 050 (non-ruler job titles), 110 (timeline summaries) and 120 (landmark /
+// region prose). Replacement text is the faction display name (single source:
+// 035 faction). Bare "Sluice/수문" (the water-gate word, e.g. the alley
+// signpost) is NOT in this table — only full organisation names.
+const ORG_KO = [
+  ['여의도출자연합회', 'free-city'], ['수문국', 'free-city'], ['규격맹', 'free-city'],
+  ['태욱그룹', 'arc'], ['성하그룹', 'arc'], ['성하전자', 'arc'],
+  ['대한민국정부', 'government'], ['중앙정보부', 'government'], ['안국총림', 'government'], ['환적국', 'government'], ['신내운수', 'government'], ['흰십자단', 'government'], ['아관사', 'government'], ['동방사', 'arc'],
+];
+const ORG_EN = [ // longest-first so multi-word names consume before their tails
+  ['Government of the Republic of Korea', 'government'],
+  ['Central Intelligence Agency', 'government'], ['Central Intelligence Bureau', 'government'],
+  ['Yeouido Investment Federation', 'free-city'], ['Yeouido Investment Alliance', 'free-city'],
+  ['Anguk Grand Monastery', 'government'], ['Anguk Order', 'government'],
+  ['Russian Legation Command', 'government'],
+  ['Jeongdong Labor Federation', 'arc'], ['Jeongdong Federation', 'arc'],
+  ['Registry Church', 'arc'], ['Roster Church', 'arc'], ['Myeongbu Church', 'arc'],
+  ['Transshipment State', 'government'], ['Transshipment Bureau', 'government'],
+  ['Floodgate State', 'free-city'], ['Floodgate Bureau', 'free-city'],
+  ['White Cross Order', 'government'], ['Eastern Command', 'arc'],
+  ['Standards League', 'free-city'], ['Sinnae Transport', 'government'],
+  ['Seongha Group', 'arc'], ['Taeuk Group', 'arc'], ['Seongha Electronics', 'arc'], ['Achasan Gate', 'government'],
+  ['White Cross', 'government'], ['The Sluice', 'free-city'], ['The Gauge', 'free-city'], ['Agwansa', 'government'],
+];
+const ORG_KO_RE = new RegExp(ORG_KO.map(([k]) => k).join('|'), 'g');
+const ORG_EN_RE = new RegExp(ORG_EN.map(([k]) => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'g');
+const ORG_KO_TEST = new RegExp(ORG_KO_RE.source);
+const ORG_EN_TEST = new RegExp(ORG_EN_RE.source);
+const replaceOrg = (s, lang) => {
+  if (lang === 'ko') return s.replace(ORG_KO_RE, (m0) => F_NAME_KO(ORG_KO.find(([k]) => k === m0)[1]));
+  let out = s.replace(ORG_EN_RE, (m0) => F_NAME(ORG_EN.find(([k]) => k === m0)[1]));
+  out = out.replace(/\b[Tt]he The Government\b/g, (m0) => (m0 === 'The The Government' ? 'The Government' : 'the Government'));
+  return out;
+};
+const hasOrg = (s) => ORG_KO_TEST.test(s) || ORG_EN_TEST.test(s);
+
+// Bible §4 forbidden clergy vocabulary (canon-terms patterns) — used as a
+// hard zero-assertion after edits.
+const CLERGY_KO_RE = /당회장|(?<![가-힣])장로(?:회|들)?(?![가-힣])|목사|주교|대교구|교황|추기경|(?<![가-힣])권사(?![가-힣])|(?<![가-힣])집사(?![가-힣])|교회|성당|예배당?/;
+const CLERGY_EN_RE = /\b(?:archbishops?|archdioces[ea]s?|popes?|priests?|deacons?|bishops?|pastors?|cardinals?|cathedrals?|church(?:es)?|moderators?)\b/i;
+const MARTIAL_RE = /무협|무림|협객|낭인|(?<![가-힣])무공(?![가-힣])|(?<![가-힣])비무(?![가-힣])|\b(?:wuxia|murim|ronin)\b/i;
+const SIXTEEN_RE = /십육국|십육 ?개국|16 ?개국|열여섯 (?:나라|국가|개국)|\b(?:sixteen[- ]states?|Seoul Sixteen|16 states)\b/i;
+
 // ---------------------------------------------------------------------------
 // 4. SQL literal surgery helpers
 // ---------------------------------------------------------------------------
@@ -295,6 +339,7 @@ const PERSON_TEXT = {
   'person-1018': { title: 'Hierophant of the Arc', title_ko: '아크의 교주' },
   'person-1017': { title: 'Bodyguard of Go Ye-jin', title_ko: '고예진의 경호원' },
   'person-1003': { title: 'Leader of the Returning Party', title_ko: '귀환 일행 지휘자', position: 'Leader of the Returning Party — signs off on travel routes, escort contracts, and withdrawal decisions', position_ko: '귀환 일행 지휘자 — 이동 경로·호위 계약·철수 판단에 서명' },
+  'person-0057': { title: 'Arc Life Safety Research Director', title_ko: 'Arc 생명안전 연구책임자' }, // bare “태욱/Taeuk” 형용사 — 인물 이름(김태욱 등)과 충돌 위험으로 행 규칙 처리(결함 3)
   'person-0086': { position: '', position_ko: '', rank: 'None', rank_ko: '없음' },
   'person-0088': { title: '', title_ko: '', position: '', position_ko: '', rank: 'None', rank_ko: '없음' },
   'person-0089': { position: '', position_ko: '', rank: 'None', rank_ko: '없음' },
@@ -348,10 +393,12 @@ const RANK_MARK = /군주|위원장|영주|평의원|회장|당회장|사령관|
 }
 
 // =========================== 050-wiki-people.sql ===========================
+let people050 = null; let personOutcome050 = null; // shared with the 110 block
 {
   const f = '050-wiki-people.sql';
   const { stmts } = parseFile(f);
   const people = all('SELECT * FROM wiki_person ORDER BY sort');
+  people050 = people;
   if (people.length !== 1022) fail('PERSON_COUNT', String(people.length));
   const stmtByPk = new Map();
   for (const s of stmts.filter((s) => s.table === 'wiki_person')) {
@@ -360,7 +407,9 @@ const RANK_MARK = /군주|위원장|영주|평의원|회장|당회장|사령관|
     stmtByPk.set(pk, s);
   }
   const byFaction = {}; const byDuchy = {}; const kept = {};
+  const factionFixes = [];
   const personOutcome = new Map();
+  personOutcome050 = personOutcome;
   for (const p of people) {
     const stmt = stmtByPk.get(`'${p.id}'`);
     if (!stmt) fail('PERSON_STMT', p.id);
@@ -379,6 +428,14 @@ const RANK_MARK = /군주|위원장|영주|평의원|회장|당회장|사령관|
     } else {
       const faction = TO_FACTION.get(oldId);
       if (!faction) fail('UNMAPPED_ID', `wiki_person ${p.id}: ${oldId}`);
+      // verifier defect 1: faction_id follows the confirmed mapping of the
+      // person's old state — it is a current input of the people search data
+      // and the per-faction head counts, not hidden history. S00 and
+      // polity:daejeon rows keep faction_id 'independent'.
+      if (p.faction_id !== faction) {
+        editCell(f, stmt, 'faction_id', faction, `faction_id 정합 ${p.faction_id}→${faction} (확정 매핑 ${oldId}→${faction})`);
+        factionFixes.push({ id: p.id, from: p.faction_id, to: faction, old_state: oldId });
+      }
       const probe = `${textEdit?.position_ko ?? p.position_ko ?? ''} ${p.title_ko ?? ''}`;
       const matched = duchies.filter((d) => new RegExp(`(?<![가-힣])${d.name_ko}(?![가-힣])`).test(probe));
       if (p.id === 'person-0998') {
@@ -414,13 +471,42 @@ const RANK_MARK = /군주|위원장|영주|평의원|회장|당회장|사령관|
   }
   log.decisions.wikiPerson = { total: people.length, byFaction, byDuchy, kept };
   tableLog(f, 'wiki_person').note = `state_id/state_name/state_name_ko 1,022행 전수: 세력 ${Object.values(byFaction).reduce((a, b) => a + b, 0)}행, 공작령 ${Object.values(byDuchy).reduce((a, b) => a + b, 0)}행, 유지(S00·daejeon) ${Object.values(kept).reduce((a, b) => a + b, 0)}행. faction_id 열은 본 과제 범위 밖(미변경)`;
-  // person prose mentions of old state organization names (kept; classified)
+  // ---- verifier defect 1: faction head counts before/after ----
   {
-    const KO = /수문국|규격맹|환적국|안국총림|성하그룹|흰십자단|아관사|태욱그룹|동방사|여의도출자연합회|중앙정보부|신내운수/;
-    const EN = /Floodgate State|Standards League|Transshipment State|Anguk Grand Monastery|Seongha Group|White Cross Order|Russian Legation Command|Taeuk Group|Eastern Command|Yeouido Investment Federation|Central Intelligence (?:Agency|Bureau)|Sinnae Transport|Sluice Bureau|Jeongdong Labor Federation|Myeongbu Church|Roster Church|Registry Church/i;
+    const heads = (rows) => rows.reduce((m, p) => ((m[p.faction_id] = (m[p.faction_id] ?? 0) + 1), m), {});
+    const before = heads(people);
+    const afterRows = people.map((p) => ({ faction_id: TO_FACTION.get(p.state_id) ?? p.faction_id }));
+    const after = heads(afterRows);
+    log.decisions.factionIdAlignment = { rule: 'faction_id := 확정 매핑의 세력(옛 state S0x 기준); S00·polity:daejeon는 independent 유지', changed: factionFixes.length, byOldState: factionFixes.reduce((m, x) => ((m[x.old_state] = (m[x.old_state] ?? 0) + 1), m), {}), headsBefore: before, headsAfter: after, fixes: factionFixes };
+    tableLog(f, 'wiki_person').note += `; faction_id ${factionFixes.length}행 정합(세력별 인원 before→after: ` + Object.keys(before).sort().map((k) => `${k} ${before[k]}→${after[k] ?? 0}`).join(', ') + ')';
+  }
+  // ---- verifier defect 3 (050 part): org names in NON-ruler job titles ----
+  // Ruler-vocabulary rows (Q18-Q29 pending retitle) and person-0195 (bible
+  // §6 “그대로”, Q5/Q7) keep their text and are listed.
+  {
+    const withOrg = (p) => hasOrg(`${p.title ?? ''} ${p.position ?? ''} ${p.occupation ?? ''} ${p.title_ko ?? ''} ${p.position_ko ?? ''} ${p.occupation_ko ?? ''}`);
+    const qKeep = new Set(people.filter((p) => withOrg(p) && RANK_MARK.test(`${p.title_ko ?? ''}\u0000${p.position_ko ?? ''}`)).map((p) => p.id));
+    qKeep.add('person-0195'); // bible §6 오해린 “그대로” + Q5/Q7 대기
+    let fixed = 0; const fixedRows = [];
     for (const p of people) {
-      if (KO.test(`${p.title_ko ?? ''} ${p.position_ko ?? ''}`) || EN.test(`${p.title ?? ''} ${p.position ?? ''}`)) {
-        log.remainingOldNames.push({ file: f, table: 'wiki_person', id: p.id, column: 'title/position prose', classification: 'person-title prose kept (직함·직위 산문 — 소유자 재직함 판단 Q18-Q29 대기)' });
+      if (!withOrg(p) || qKeep.has(p.id)) continue;
+      const stmt = stmtByPk.get(`'${p.id}'`);
+      for (const [col, lang] of [['title', 'en'], ['title_ko', 'ko'], ['position', 'en'], ['position_ko', 'ko'], ['occupation', 'en'], ['occupation_ko', 'ko']]) {
+        const v = p[col] ?? '';
+        if (!v || !hasOrg(v)) continue;
+        const neu = replaceOrg(v, lang);
+        if (neu !== v) { editCell(f, stmt, col, neu, `직함·직위의 옛 조직명 → 세력명 (${p.id}.${col})`); fixed++; }
+      }
+      fixedRows.push(p.id);
+    }
+    log.decisions.orgProse050 = { changedCells: fixed, changedPeople: fixedRows.length, keptQPending: [...qKeep].sort() };
+    tableLog(f, 'wiki_person').note += `; 비통치자 ${fixedRows.length}명의 직함·직위 옛 조직명 → 세력명(${fixed}열), 통치자 재직함 대기행 ${qKeep.size}명 유지·목록화`;
+    // remaining old-name prose (kept; classified for the report)
+    const KO = /수문국|규격맹|환적국|안국총림|성하그룹|흰십자단|아관사|태욱그룹|동방사|여의도출자연합회|중앙정보부|신내운수/;
+    const EN = /Floodgate State|Standards League|Transshipment State|Anguk Grand Monastery|Seongha Group|White Cross Order|Russian Legation Command|Taeuk Group|Eastern Command|Yeouido Investment Federation|Central Intelligence (?:Agency|Bureau)|Sinnae Transport|Sluice Bureau|Jeongdong Labor Federation|Myeongbu Church|Roster Church|Registry Church|Agwansa|Achasan Gate|The Sluice|The Gauge|Government of the Republic of Korea/i;
+    for (const p of people) {
+      if (qKeep.has(p.id) && (KO.test(`${p.title_ko ?? ''} ${p.position_ko ?? ''}`) || EN.test(`${p.title ?? ''} ${p.position ?? ''}`))) {
+        log.remainingOldNames.push({ file: f, table: 'wiki_person', id: p.id, column: 'title/position prose', classification: 'Q18-Q29 대기 — 통치자 재직함(유지·목록화)' });
       }
     }
   }
@@ -606,7 +692,7 @@ const remapControl = (lang) => (obj, where) => {
 
   // map_landmark
   const marks = stmtByPk('map_landmark', 'id');
-  let lmHolder = 0, lmDetail = 0;
+  let lmHolder = 0, lmDetail = 0, lmOrg = 0;
   for (const r of all('SELECT id, holder_id, detail, detail_ko FROM map_landmark')) {
     const stmt = marks.get(`'${r.id}'`);
     if (!stmt) fail('LANDMARK_STMT', r.id);
@@ -616,28 +702,44 @@ const remapControl = (lang) => (obj, where) => {
       if (editCell(f, stmt, 'holder_id', h)) lmHolder++;
     }
     for (const [col, lang] of [['detail', 'en'], ['detail_ko', 'ko']]) {
-      if (!S0X_TEST.test(r[col])) continue;
-      const neu = r[col].replace(S0X_ALL, (m0) => PROSE_NAME[lang][TO_FACTION.get(m0)]);
-      if (editCell(f, stmt, col, neu)) lmDetail++;
+      let v = r[col];
+      if (S0X_TEST.test(v)) v = v.replace(S0X_ALL, (m0) => PROSE_NAME[lang][TO_FACTION.get(m0)]);
+      const o = replaceOrg(v, lang);
+      if (o !== v) lmOrg++;
+      if (o !== r[col] && editCell(f, stmt, col, o)) lmDetail++;
     }
   }
-  tableLog(f, 'map_landmark').note = `holder_id ${lmHolder}/19행 세력 id로, detail 산문의 S0x 토큰 ${lmDetail}열 세력 이름으로. 지명·좌표·역할 미변경`;
+  tableLog(f, 'map_landmark').note = `holder_id ${lmHolder}/19행 세력 id로, detail의 S0x 토큰과 옛 조직명 → 세력 이름 (${lmDetail}열, 조직 치환 ${lmOrg}건). 지명·좌표·역할 미변경`;
 
-  // remaining old state names in prose (kept; classified for the report)
-  const NAME_RE_KO = /수문국|규격맹|환적국|안국총림|성하그룹|흰십자단|아관사|태욱그룹|동방사|여의도출자연합회|대한민국정부|중앙정보부|신내운수/;
-  const NAME_RE_EN = /Floodgate State|Standards League|Transshipment State|Anguk Grand Monastery|Seongha Group|White Cross Order|Russian Legation Command|Taeuk Group|Eastern Command|Yeouido Investment Federation|Central Intelligence Agency|Sinnae Transport|Sluice Bureau|Jeongdong Labor Federation|Registry Church|Roster Church|Myeongbu Church/i;
-  const CHURCH_PLACE_RE_EN = /\b(?:[A-Za-z]+ )?(?:Church|Catholic Church)\b|\bChurch\b/i;
+  // region summaries: org-name prose (verifier defect 3) + post-transform classification
+  let rgOrg = 0;
+  for (const r of all('SELECT id, summary, summary_ko FROM map_region')) {
+    const stmt = regions.get(`'${r.id}'`);
+    if (!stmt) fail('REGION_STMT2', r.id);
+    for (const [col, lang] of [['summary', 'en'], ['summary_ko', 'ko']]) {
+      const v = r[col] ?? '';
+      if (!v || !hasOrg(v)) continue;
+      const o = replaceOrg(v, lang);
+      if (o !== v) { editCell(f, stmt, col, o, `지역 요약 옛 조직명 → 세력명 (${r.id}.${col})`); rgOrg++; }
+    }
+  }
+  tableLog(f, 'map_region').note += `; 요약 산문 옛 조직명 치환 ${rgOrg}열`;
+
+  // remaining old names in prose — classify what SURVIVES the transforms
+  // (church BUILDINGS are physical facilities whose renaming the bible §4
+  // explicitly leaves to the owner; the Sluice/수문 signpost is the water-gate
+  // word, not the organisation)
+  const CHURCH_PLACE_RE_EN = /\bChurch\b|\bCatholic Church\b/i;
   const CHURCH_PLACE_RE_KO = /교회|성당|예배당/;
   for (const r of all('SELECT id, summary, summary_ko, opening_state, opening_state_ko FROM map_region')) {
-    for (const [col, re] of [['summary', NAME_RE_EN], ['summary_ko', NAME_RE_KO], ['opening_state', NAME_RE_EN], ['opening_state_ko', NAME_RE_KO]]) {
-      if (re.test(r[col])) log.remainingOldNames.push({ file: f, table: 'map_region', id: r.id, column: col, classification: 'prose-kept (지역 요약 산문 — 소유자 판단 대기)' });
-    }
     for (const [col, re] of [['summary', CHURCH_PLACE_RE_EN], ['summary_ko', CHURCH_PLACE_RE_KO], ['opening_state', CHURCH_PLACE_RE_EN], ['opening_state_ko', CHURCH_PLACE_RE_KO]]) {
-      if (re.test(r[col])) log.remainingOldNames.push({ file: f, table: 'map_region', id: r.id, column: col, classification: 'place-kept (실재 교회 건물 지명 — 바이블 §4 대체 항목이 “일반 역 시설명(사당 여부는 소유자 결정)”으로 미둠)' });
+      if (re.test(r[col] ?? '')) log.remainingOldNames.push({ file: f, table: 'map_region', id: r.id, column: col, classification: 'place-kept (실재 교회 건물 지명 — 바이블 §4 대체 항목이 “일반 역 시설명(사당 여부는 소유자 결정)”으로 미둠)' });
     }
   }
   for (const r of all('SELECT id, detail, detail_ko FROM map_landmark')) {
-    if (NAME_RE_KO.test(r.detail_ko) || NAME_RE_EN.test(r.detail)) log.remainingOldNames.push({ file: f, table: 'map_landmark', id: r.id, column: 'detail/detail_ko', classification: 'prose-kept (랜드마크 설명 산문 — 소유자 판단 대기)' });
+    const d = replaceOrg(r.detail_ko, 'ko');
+    const e = replaceOrg(r.detail, 'en');
+    if (hasOrg(d) || hasOrg(e)) log.remainingOldNames.push({ file: f, table: 'map_landmark', id: r.id, column: 'detail/detail_ko', classification: 'org-kept (변환 후에도 남는 옛 조직 표기 — 점검 대상)' });
   }
 }
 
@@ -703,17 +805,76 @@ const remapControl = (lang) => (obj, where) => {
   const f = '110-family-trees.sql';
   const { stmts } = parseFile(f);
   const trees = new Map(stmts.filter((s) => s.table === 'family_tree').map((s) => [s.lits[s.cols.indexOf('clan_id')].trim(), s]));
-  const walk = (obj, fn) => { if (Array.isArray(obj)) { for (const v of obj) walk(v, fn); } else if (obj && typeof obj === 'object') { fn(obj); for (const v of Object.values(obj)) walk(v, fn); } };
+  const kindForState = (sid) => (sid === 'S00' ? 'unaffiliated' : sid === 'polity:daejeon' ? 'neutral' : 'state');
+  const nameForState = (sid, lang) => {
+    if (sid === 'government' || sid === 'free-city' || sid === 'arc') return lang === 'ko' ? F_NAME_KO(sid) : F_NAME(sid);
+    if (typeof sid === 'string' && sid.startsWith('geography:duchy:')) { const d = duchies.find((x) => x.id === sid); if (!d) fail('DUCHY_LOOKUP', sid); return lang === 'ko' ? d.name_ko : d.name; }
+    if (sid === 'S00') return lang === 'ko' ? '무소속' : 'Unaffiliated';
+    if (sid === 'polity:daejeon') return lang === 'ko' ? '대전' : 'Daejeon';
+    return fail('TREE_STATE_NAME', String(sid));
+  };
+
+  // clergy sentence rules (verifier defect 3): banned §4 vocabulary replaced
+  // with the phrasing the applied W2 canon (030 Century-Annals) already uses
+  // (인준 투표·총회), or — where en and ko disagreed — with the counterpart
+  // language's own words (수석 신도 Lead Believer · 교주 Hierophant, bible §5).
+  const CLERGY_RULES = [
+    { find: '장로들은 인준 투표로 임하준을 당회장에 앉혔다', replace: '원로들은 인준 투표로 임하준을 총회 의장에 앉혔다', source: '§4 금지(당회장·장로) — 030 Century-Annals 적용본의 인준 투표 서술, en 원문 Council Chair/elders 대응' },
+    { find: '유언 3장과 함께 장로회에 접수되었다', replace: '유언 3장과 함께 총회에 접수되었다', source: '§4 금지(장로회) — en 원문 Council of Elders의 실체는 총회' },
+    { find: '2126년 당회장 자리는 오경재가 앉았다', replace: '2126년 총회 의장 자리는 오경재가 앉았다', source: '§4 금지(당회장) — en 원문 took the Council Chair seat' },
+    { find: '오경재는 오씨 가문의 당회장 직무를 이어받아 2126년에 당회장으로 착좌했다', replace: '오경재는 오씨 가문의 총회 의장 직무를 이어받아 2126년에 총회 의장으로 착좌했다', source: '§4 금지(당회장) — en 원문 Session Head duties' },
+    { find: 'Arc의 당회장 목사직은 오씨 가문이 부자 세습하고, 장로의 인준 투표는 의례로 남는다', replace: 'Arc의 총회 의장 직은 오씨 가문이 부자 세습하고, 원로의 인준 투표는 의례로 남는다', source: '§4 금지(당회장·목사·장로) — 세습·인준 투표 사실은 유지' },
+    { find: '성수 당회 장로 자리는', replace: '성수 당회 자리는', source: '§4 금지(장로) — 050 person-0089 직위와 동일 처리' },
+    { find: '주교회의 청사 광진 면목로는 바깥 창고로만 남긴다', replace: '회의 청사 광진 면목로는 바깥 창고로만 남긴다', source: '§4 금지(주교) — 건물의 보관고 용도 사실 유지' },
+    { find: 'Nam Yungyeong was elected archbishop, but the legitimacy of an election held without a pope remains contested', replace: 'Nam Yungyeong was elected Lead Believer, but the legitimacy of an election held without the Hierophant remains contested', source: '§4 금지(archbishop·pope) — ko 원문 “수석 신도로 선출…교주 없이”와 한영 정합(§5 용어)' },
+    { find: "The bishops' conference building on Gwangjin Myeonmok-ro is kept only as an outer storehouse", replace: 'The conference building on Gwangjin Myeonmok-ro is kept only as an outer storehouse', source: '§4 금지(bishops) — ko 주교회의→회의 청사 치환과 대응' },
+    { find: 'as the Arc register custodian deacon', replace: 'as the Arc register custodian', source: '§4 금지(deacon) — 직능 접미만 제거' },
+    { find: 'as the election vote-count witness deacon', replace: 'as the election vote-count witness', source: '§4 금지(deacon)' },
+    { find: 'Served as election clerk deacon at the Myeongdong Station congregation office', replace: 'Served as election clerk at the Myeongdong Station congregation office', source: '§4 금지(deacon)' },
+    { find: 'Served as election witness deacon at the Myeongdong Station congregation office', replace: 'Served as election witness at the Myeongdong Station congregation office', source: '§4 금지(deacon)' },
+    { find: "the safekeeping of priests' voting records", replace: "the safekeeping of the believers' voting records", source: '§4 금지(priests) — ko 원문 “신도단 투표 기록 보관”과 한영 정합' },
+    { find: "priests' assembly messenger", replace: "the believers' assembly messenger", source: '§4 금지(priests) — ko 원문 “신도단 소집 전령”과 한영 정합' },
+  ];
+  const ruleCounts = new Map(CLERGY_RULES.map((r) => [r.find, 0]));
+  const applyRules = (s) => {
+    for (const r of CLERGY_RULES) {
+      let c = 0;
+      s = s.replaceAll(r.find, () => { c++; return r.replace; });
+      if (c) ruleCounts.set(r.find, ruleCounts.get(r.find) + c);
+    }
+    return s;
+  };
+
+  const affiliationChanges = []; const orgChanges = { en: 0, ko: 0 };
   const remapTree = (lang) => (obj, where) => {
-    walk(obj, (o) => {
-      if ('stateId' in o && typeof o.stateId === 'string' && o.stateId) o.stateId = mapId(o.stateId, `${where}.stateId`);
-      if (o.affiliation && typeof o.affiliation === 'object' && o.affiliation.kind === 'state') {
-        const a = o.affiliation;
-        if (!a.stateId) fail('TREE_AFFIL_WITHOUT_ID', where);
-        const fac = mapId(a.stateId, `${where}.affiliation.stateId`);
-        if (!KEEP_IDS.has(fac)) a.name = nameOfFaction(lang, fac);
+    for (const n of obj.nodes ?? []) {
+      // verifier defect 2: linked affiliations follow the person's CURRENT record
+      if (n.affiliation) {
+        const pid = (n.detailRoute ?? '').match(/person-\d+/)?.[0] ?? null;
+        if (!pid) {
+          log.remainingOldNames.push({ file: f, table: 'family_tree', id: `${where}/${n.id}`, column: 'affiliation', classification: 'unlinked-historical (인물 연결 없는 역사 노드 — 변환값 유지)' });
+        } else {
+          const outcome = personOutcome050.get(pid);
+          if (!outcome) fail('TREE_PERSON_MISSING', `${where} ${n.id} → ${pid}`);
+          const sid = outcome.state_id;
+          const kind = kindForState(sid);
+          const name = nameForState(sid, lang);
+          const neu = kind === 'unaffiliated' ? { kind, name } : { kind, stateId: sid, name };
+          if (JSON.stringify(n.affiliation) !== JSON.stringify(neu)) {
+            affiliationChanges.push({ clan: where, node: n.id, person: pid, lang, before: n.affiliation, after: neu });
+            n.affiliation = neu;
+          }
+        }
       }
-    });
+      // verifier defect 3: timeline summaries — clergy rules + org mapping
+      for (const tl of n.timeline ?? []) {
+        if (typeof tl.summary !== 'string') continue;
+        const s0 = applyRules(tl.summary);
+        const s1 = replaceOrg(s0, lang);
+        if (s1 !== s0) orgChanges[lang]++;
+        tl.summary = s1;
+      }
+    }
   };
   let n = 0;
   for (const r of all('SELECT clan_id, json, json_ko FROM family_tree')) {
@@ -724,7 +885,11 @@ const remapControl = (lang) => (obj, where) => {
       if (editCell(f, stmt, col, neu)) n++;
     }
   }
-  tableLog(f, 'family_tree').note = `node/affiliation의 "stateId":"S02·S06"(736회) → 세력 id, affiliation.name → 세력 이름 (${n}/296열)`;
+  for (const [find, c] of ruleCounts) if (c === 0) fail('RULE_NO_MATCH', find.slice(0, 60));
+  const affByKind = affiliationChanges.reduce((m, x) => { const k = `${x.before.kind}→${x.after.kind}`; m[k] = (m[k] ?? 0) + 1; return m; }, {});
+  log.decisions.treeAffiliationSync = { rule: '인물 연결 노드의 affiliation을 현재 wiki_person 기록(종류·id·이름)으로 동기 — 미연결 역사 노드는 유지', changed: affiliationChanges.length, byKindTransition: affByKind, changes: affiliationChanges };
+  log.decisions.treeOrgProse = { rule: '타임라인 요약의 옛 조직명 → 세력 표기명(전 노드) + §4 성직 어휘 13문장 규칙', timelineOrgReplacements: orgChanges, clergyRuleCounts: Object.fromEntries([...ruleCounts].map(([k, v]) => [k.slice(0, 44), v])) };
+  tableLog(f, 'family_tree').note = `affiliation 동기 ${affiliationChanges.length}건(인물 현재 소속 기준), 타임라인 조직명 치환 ${orgChanges.en + orgChanges.ko}건, §4 성직 문장 치환 ${[...ruleCounts.values()].reduce((a, b) => a + b, 0)}회 (${n}/296열)`;
 }
 
 // =========================== 115-retainer-graph.sql ========================
@@ -758,6 +923,77 @@ for (const f of ['010-meta.sql', '020-wiki-categories.sql', '100-clans.sql', '12
     }
   }
   fileLog(f).note = 'audit only: 모든 열에서 S01..S16 id 0건 — 변경 없음';
+}
+
+// ============ 090 handoff list (READ ONLY — the CK3 stat branch owns 090) =
+// The verifier defect 3 asked for a precise handoff so the integration wave
+// can patch 090 on top of the merged stat branch. Generated deterministically
+// from the CURRENT 090 content and the 050 values this script just wrote.
+{
+  const HANDOFF = arg('handoff', path.join(REPO, 'docs/drafts/reports/w5-25-handoff-090.md'));
+  const SILLAENG = /살육|인류 말살|인류 감축|바이러스로 판단|\bslaughter\b|\bgenocide\b/i;
+  const tokenClass = (v) => {
+    if (SIXTEEN_RE.test(v)) return 'sixteen';
+    if (CLERGY_KO_RE.test(v) || CLERGY_EN_RE.test(v)) return 'clergy';
+    if (MARTIAL_RE.test(v)) return 'martial';
+    if (SILLAENG.test(v)) return 'slaughter';
+    if (hasOrg(v)) return 'org';
+    return null;
+  };
+  const rows = [];
+  const walkH = (o, p, lang, pid, out) => {
+    if (Array.isArray(o)) { o.forEach((v, i) => walkH(v, `${p}[${i}]`, lang, pid, out)); return; }
+    if (o && typeof o === 'object') { for (const [k, v] of Object.entries(o)) walkH(v, `${p}.${k}`, lang, pid, out); return; }
+    if (typeof o !== 'string') return;
+    const cls = tokenClass(o);
+    if (cls) out.push({ path: p, cls, sample: o });
+  };
+  for (const r of all('SELECT person_id, json, json_ko FROM person_detail ORDER BY person_id')) {
+    const p = people050.find((x) => x.id === r.person_id);
+    if (!p) fail('HANDOFF_PERSON', r.person_id);
+    const outcome = personOutcome050.get(r.person_id);
+    const hits = [];
+    walkH(JSON.parse(r.json), '$', 'en', r.person_id, hits);
+    walkH(JSON.parse(r.json_ko), '$', 'ko', r.person_id, hits);
+    if (!hits.length) continue;
+    const grouped = new Map();
+    for (const h of hits) {
+      const key = h.path.replace(/\[\d+\]/g, '[]');
+      if (!grouped.has(key)) grouped.set(key, { cls: new Set(), n: 0, samples: [] });
+      const g = grouped.get(key);
+      g.cls.add(h.cls); g.n++;
+      if (g.samples.length < 2 && !g.samples.includes(h.sample)) g.samples.push(h.sample);
+    }
+    rows.push({ person: r.person_id, name: p.name_ko, outcome, grouped: [...grouped.entries()] });
+  }
+  const suggestion = (cls, path, lang, p, outcome) => {
+    if (path === '$.state' || path === '$.stateName' || path === '$.state' ) return `050 확정값으로 교체: state_id=${outcome?.state_id ?? p.state_id}`;
+    if (/\.title/.test(path) && PERSON_TEXT[p.id]?.[lang === 'ko' ? 'title_ko' : 'title'] !== undefined) return `050 확정값: “${PERSON_TEXT[p.id][lang === 'ko' ? 'title_ko' : 'title']}”`;
+    if (/\.position/.test(path) && PERSON_TEXT[p.id]?.[lang === 'ko' ? 'position_ko' : 'position'] !== undefined) return `050 확정값: “${PERSON_TEXT[p.id][lang === 'ko' ? 'position_ko' : 'position']}”(빈 값 포함)`;
+    if (cls === 'org') return '옛 조직명 → 세력 표기명 매핑(aux-rules.md §1·§5 표)';
+    if (cls === 'clergy') return '§4 금지 어휘 — 아크 정본 용어(교주·세례·총회 의장) 또는 일반 시설명; 잔여 재직함은 Q22·Q23·Q26 대기';
+    if (cls === 'sixteen') return '세 세력·25공작령 표현으로 재작성(십육국 프레임 제거)';
+    if (cls === 'martial') return `“낭인/Ronin” → “귀환 일행 지휘자/Leader of the Returning Party”(050 확정값)`;
+    if (cls === 'slaughter') return 'W4 정본 문장으로 교체: “최초의 AI는 인류가 줄어야 한다고 답했고 겨울을 내렸으며 직접 죽인 사람은 없다”';
+    return '—';
+  };
+  const lines = [];
+  lines.push('# 090 person_detail 핸드오프 목록 (W5-25 → CK3 스탯 과제 뒤 통합 웨이브)', '');
+  lines.push('작성: scripts/pages/aux-edit.mjs가 090을 읽기 전용으로 스캔해 결정적으로 생성(2026-11-11).');
+  lines.push('대상: 인물 상세 JSON에서 아직 옛 정본 표기를 담은 필드. 090은 이 과제에서 편집하지 않았다(CK3 스탯 브랜치 소관).');
+  lines.push('기준: 매 항목의 “기준/제안” 열 — 050 확정값(같은 인물의 로스터 행) 또는 CANON-BIBLE §2–§5.');
+  lines.push(`요약: 인물 ${rows.length}명, 위반 그룹 ${rows.reduce((a, r) => a + r.grouped.length, 0)}건.`); '';
+  lines.push('', '| person | 이름 | JSON 경로 | 클래스 | 현재 텍스트(발췌) | 기준/제안 |', '|---|---|---|---|---|---|');
+  for (const r of rows) {
+    for (const [path, g] of r.grouped) {
+      const lang = path.endsWith('_ko') || /_ko\./.test(path) ? 'ko' : 'en';
+      lines.push(`| ${r.person} | ${r.name} | ${path} | ${[...g.cls].join('+')} (${g.n}회) | ${g.samples.map((s) => s.replace(/\|/g, '\\|').slice(0, 110)).join(' ／ ')} | ${suggestion([...g.cls][0], path, lang, people050.find((x) => x.id === r.person), r.outcome)} |`);
+    }
+  }
+  fs.mkdirSync(path.dirname(HANDOFF), { recursive: true });
+  fs.writeFileSync(HANDOFF, lines.join('\n') + '\n');
+  log.decisions.handoff090 = { file: path.relative(REPO, HANDOFF), people: rows.length, groups: rows.reduce((a, r) => a + r.grouped.length, 0) };
+  console.log(`  090 handoff: ${rows.length} people, ${rows.reduce((a, r) => a + r.grouped.length, 0)} field groups -> ${path.relative(REPO, HANDOFF)}`);
 }
 
 // ---------------------------------------------------------------------------
@@ -826,7 +1062,69 @@ for (const f of FILES) {
   for (const r of vall('SELECT data, data_ko FROM map_holding')) { JSON.parse(r.data); JSON.parse(r.data_ko); }
   for (const r of vall('SELECT json, json_ko FROM family_tree')) { JSON.parse(r.json); JSON.parse(r.json_ko); }
   for (const r of vall('SELECT json, json_ko FROM retainer_graph')) { JSON.parse(r.json); JSON.parse(r.json_ko); }
-  log.verification = { rowCounts: expect, residualChecks: Object.fromEntries(checks.map(([sql, n]) => [sql.replace('SELECT COUNT(*) n FROM ', ''), n])) };
+
+  // ---- verifier defect 1: faction_id consistency with the confirmed mapping ----
+  {
+    let bad = 0;
+    for (const p of people050) {
+      const cur = vdb.prepare('SELECT faction_id, state_id FROM wiki_person WHERE id = ?').get(p.id);
+      const expected = TO_FACTION.get(p.state_id) ?? (KEEP_IDS.has(p.state_id) ? 'independent' : null);
+      if (!expected) fail('FACTION_EXPECTED', `${p.id}: ${p.state_id}`);
+      if (cur.faction_id !== expected) { bad++; if (bad <= 5) console.error(`faction mismatch ${p.id}: ${cur.faction_id} != ${expected}`); }
+      const oc = personOutcome050.get(p.id);
+      if (cur.state_id !== oc.state_id) fail('STATE_OUTCOME', `${p.id}: ${cur.state_id} != ${oc.state_id}`);
+    }
+    if (bad) fail('FACTION_CONSISTENCY', `${bad} rows`);
+  }
+  // ---- verifier defect 2: tree affiliations match the linked person's record ----
+  log.verification ??= {};
+  {
+    let bad = 0; const checked = new Set();
+    const kindFor = (sid) => (sid === 'S00' ? 'unaffiliated' : sid === 'polity:daejeon' ? 'neutral' : 'state');
+    for (const r of vall('SELECT clan_id, json, json_ko FROM family_tree')) {
+      for (const [col, lang] of [['json', 'en'], ['json_ko', 'ko']]) {
+        for (const nd of JSON.parse(r[col]).nodes ?? []) {
+          if (!nd.affiliation) continue;
+          const pid = (nd.detailRoute ?? '').match(/person-\d+/)?.[0];
+          if (!pid) continue;
+          checked.add(pid);
+          const oc = personOutcome050.get(pid);
+          if (!oc) fail('TREE_PERSON_RELOAD', `${r.clan_id} ${nd.id} → ${pid}`);
+          const want = kindFor(oc.state_id) === 'unaffiliated' ? { kind: 'unaffiliated', name: lang === 'ko' ? '무소속' : 'Unaffiliated' } : { kind: kindFor(oc.state_id), stateId: oc.state_id, name: null };
+          if (nd.affiliation.kind !== want.kind || (want.stateId && nd.affiliation.stateId !== want.stateId)) { bad++; if (bad <= 5) console.error(`tree aff mismatch ${r.clan_id}/${nd.id} ${pid}: ${JSON.stringify(nd.affiliation)} vs ${JSON.stringify(want)}`); }
+        }
+      }
+    }
+    if (bad) fail('TREE_AFFILIATION_CONSISTENCY', `${bad} nodes`);
+    log.verification.treeAffiliationLinkedPersons = checked.size;
+  }
+  // ---- verifier defect 3: reader-visible old-world tokens are gone (except the
+  //      owner-question keep list) ----
+  {
+    const qKeep = new Set(log.decisions.orgProse050.keptQPending);
+    for (const p of vall('SELECT id, title, title_ko, position, position_ko, rank, rank_ko, occupation, occupation_ko FROM wiki_person')) {
+      if (qKeep.has(p.id)) continue;
+      const hay = `${p.title ?? ''} ${p.title_ko ?? ''} ${p.position ?? ''} ${p.position_ko ?? ''} ${p.rank ?? ''} ${p.rank_ko ?? ''} ${p.occupation ?? ''} ${p.occupation_ko ?? ''}`;
+      if (CLERGY_KO_RE.test(hay) || CLERGY_EN_RE.test(hay) || MARTIAL_RE.test(hay) || SIXTEEN_RE.test(hay)) fail('PERSON_FORBIDDEN_TOKEN', `${p.id}`);
+      if (!qKeep.has(p.id) && hasOrg(hay)) fail('PERSON_ORG_TOKEN', `${p.id}`);
+    }
+    const walkStr = (o, fn) => { if (Array.isArray(o)) { for (const v of o) walkStr(v, fn); } else if (o && typeof o === 'object') { for (const v of Object.values(o)) walkStr(v, fn); } else if (typeof o === 'string') fn(o); };
+    for (const r of vall('SELECT json, json_ko FROM family_tree')) {
+      for (const s of [r.json, r.json_ko]) {
+        walkStr(JSON.parse(s), (v) => {
+          if (CLERGY_KO_RE.test(v) || CLERGY_EN_RE.test(v) || MARTIAL_RE.test(v) || SIXTEEN_RE.test(v)) fail('TREE_FORBIDDEN_TOKEN', v.slice(0, 60));
+          if (hasOrg(v)) fail('TREE_ORG_TOKEN', v.slice(0, 60));
+        });
+      }
+    }
+    for (const r of vall('SELECT id, detail, detail_ko FROM map_landmark')) {
+      if (hasOrg(r.detail) || hasOrg(r.detail_ko)) fail('LANDMARK_ORG_TOKEN', r.id);
+    }
+    for (const r of vall('SELECT id, summary, summary_ko FROM map_region')) {
+      if (hasOrg(r.summary ?? '') || hasOrg(r.summary_ko ?? '')) fail('REGION_ORG_TOKEN', r.id);
+    }
+  }
+  Object.assign(log.verification, { rowCounts: expect, residualChecks: Object.fromEntries(checks.map(([sql, n]) => [sql.replace('SELECT COUNT(*) n FROM ', ''), n])) });
 }
 
 // unchanged-line guarantee: line-by-line walk over before/after
