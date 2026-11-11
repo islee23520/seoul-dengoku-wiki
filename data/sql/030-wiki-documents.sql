@@ -6707,7 +6707,7 @@ Common species and special variants that share a habitat are read apart. Machine
 | [G07 · Yongsan Raiders](/wiki/Hostile-Group-G07/) | Hostile human groups | 3 |
 | [G08 · Dongdaemun Raiders](/wiki/Hostile-Group-G08/) | Hostile human groups | 3 |
 | [G09 · Sangam Deserters](/wiki/Hostile-Group-G09/) | Hostile human groups | 3 |
-| [G10 · Bogukmun Zealots](/wiki/Hostile-Group-G10/) | Hostile human groups | 3 |
+| [G10 · Bogukmun group](/wiki/Hostile-Group-G10/) | Hostile human groups | 3 |
 | [G11 · Gangnam Stray Humanoids](/wiki/Hostile-Group-G11/) | Hostile human groups | 3 |
 | [G12 · Sinnae Deserters](/wiki/Hostile-Group-G12/) | Hostile human groups | 3 |
 | [G13 · Pincer Arm](/wiki/Hostile-Group-G13/) | Surviving automatic machines | 16 |
@@ -7585,15 +7585,15 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 <a id="Hostile-Ecology-Index-heading-0282"></a>
 
-## G10 · Bogukmun Zealots
+## G10 · Bogukmun group
 
-- Modern anxiety: On days when the zealots stand before the door, the ration watch leaves the lower issue shut and calls names from the upper level. At the hour when the sea wind enters, the corridor watch leaves only the outer-stair lamps on. The seed watch keeps the seed bags on a shelf apart from the ration sacks.
-- Territory: The Bogukmun Zealots gather on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors.
-- Economy: At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the zealots'' side. At the Garak vent, the flashlights and rain capes are on the Zealot Elite Squad''s side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door.
-- Life cycle: On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Zealot Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle.
-- Hierarchy: The Zealot Leader stands on the threshold of the corridor junction. The Zealot Elite Squad takes the drain and the granary doors. The Zealot Scouts stand on the vents and the ration route and face the leader''s side. Attendants hold sacks and water cans on the dry tread behind the leader.
+- Modern anxiety: On days when the group stands before the door, the ration watch leaves the lower issue shut and calls names from the upper level. At the hour when the sea wind enters, the corridor watch leaves only the outer-stair lamps on. The seed watch keeps the seed bags on a shelf apart from the ration sacks.
+- Territory: The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors.
+- Economy: At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the group''s side. At the Garak vent, the flashlights and rain capes are on the Elite Squad''s side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door.
+- Life cycle: On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle.
+- Hierarchy: The Group leader stands on the threshold of the corridor junction. The Elite Squad takes the drain and the granary doors. The Scouts stand on the vents and the ration route and face the leader''s side. Attendants hold sacks and water cans on the dry tread behind the leader.
 - Links: {"corporations_successor_only":["HC10"],"houses":["HC10"],"states":["government"],"synthetics":["H10"],"theaters":["XT05"]}
-- Escalation 1-3: In the Bukhansan Bogukmun shelter corridor the Zealot Leader and the attendants stand on the threshold. When the monsoon begins, the Zealot Elite Squad lines both sides of the drain where the water reaches the knee and blocks the passage. When the ration cycle overlaps, the Zealot Scouts line up from the corridor to the door of the Garak lower granary, and sacks lie piled inside the door.
+- Escalation 1-3: In the Bukhansan Bogukmun shelter corridor the Group leader and the attendants stand on the threshold. When the monsoon begins, the Elite Squad lines both sides of the drain where the water reaches the knee and blocks the passage. When the ration cycle overlaps, the Scouts line up from the corridor to the door of the Garak lower granary, and sacks lie piled inside the door.
 - Scenarios: [G10-SC1](/wiki/Hostile-Group-G10/), [G10-SC2](/wiki/Hostile-Group-G10/), [G10-SC3](/wiki/Hostile-Group-G10/)
 
 <a id="Hostile-Ecology-Index-heading-0284"></a>
@@ -7601,11 +7601,11 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G10-SC1 · Bags at the Corridor Threshold
 
 - Stage: 1
-- Trigger: On an early-summer night the Zealot Leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
+- Trigger: On an early-summer night the Group leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
 - Actors: government, HC10, H10
 - Ecological mechanism: The Anguk Order corridor watch watches the iron door''s lock and the people on the stair, and the Magok Seed House ration watch watches the shelf of bags. Once the Magok Seed House passes the list to the watch, the Yunsaeron side stays in front of the door and the attendants stand beside the bags on the threshold.
 - Choices: The Anguk Order corridor watch locks the iron door, and the Magok Seed House places the seed bags on the upper shelves. / The watch opens the iron door only in the morning and sends out only the bags written on the Yunsaeron side''s list. / The watch stands on the threshold and carries the issue forward, passing the bags into the corridor.
-- Outcomes: After the iron door is locked, the bags are on the upper shelves and the Zealot Leader stands outside the door. After the door is opened only in the morning, only the bags on the list are outside the door, the remaining bags are on the shelves, and the attendants stand beside the bags outside. After the issue goes forward, the bags are piled past the threshold on the attendants'' side, and the ration watch''s empty cart is in the corridor.
+- Outcomes: After the iron door is locked, the bags are on the upper shelves and the Group leader stands outside the door. After the door is opened only in the morning, only the bags on the list are outside the door, the remaining bags are on the shelves, and the attendants stand beside the bags outside. After the issue goes forward, the bags are piled past the threshold on the attendants'' side, and the ration watch''s empty cart is in the corridor.
 - Moral cost: After the morning opening, the people waiting outside the list remain on the stair, and part of the day''s seed bags stay tied on the upper level. After the issue is passed across, the Magok Seed House''s empty cart is in the corridor and the places on the shelves are bare.
 - Source dossier: G10
 
@@ -7624,9 +7624,9 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 - Stage: 3
 - Actors: government, XT05, HC10, H10
-- Ecological mechanism: While the sea wind comes in, the number on the outer stair grows and attendants remain inside the corridor holding water cans. The Zealot Leader is on the threshold toward Bukhansan Bogukmun, and the Zealot Scouts stand facing the leader''s side. The Yunsaeron side stands in front of the door until the Magok Seed House passes the issue list to the ration watch.
+- Ecological mechanism: While the sea wind comes in, the number on the outer stair grows and attendants remain inside the corridor holding water cans. The Group leader is on the threshold toward Bukhansan Bogukmun, and the Scouts stand facing the leader''s side. The Yunsaeron side stands in front of the door until the Magok Seed House passes the issue list to the ration watch.
 - Choices: The corridor watch leaves only the outer-stair lamps on and locks the inner iron door. / The Magok Seed House seed watch places the seed bags on a shelf apart from the ration sacks and stops lower-level issue. / The ration watch opens the morning door only after receiving the Yunsaeron side''s list and sends out the bags on the list.
-- Outcomes: After only the outer lamps are left on, the Zealot Scouts stand on the lit stair and the attendants on the inner threshold are on the dark side. After the bags are placed on another shelf, the seed bags are tied on the upper level and the lower sacks are in front of the Zealot Scouts. After the door is opened once the list is received, only the bags written there are outside the door, the Yunsaeron side stands beside those bags, and the Zealot Leader looks toward the bags from the threshold.
+- Outcomes: After only the outer lamps are left on, the Scouts stand on the lit stair and the attendants on the inner threshold are on the dark side. After the bags are placed on another shelf, the seed bags are tied on the upper level and the lower sacks are in front of the Scouts. After the door is opened once the list is received, only the bags written there are outside the door, the Yunsaeron side stands beside those bags, and the Group leader looks toward the bags from the threshold.
 - Source dossier: G10
 
 <a id="Hostile-Ecology-Index-heading-0290"></a>
@@ -9241,7 +9241,7 @@ The weight of the choice lies not in whether to possess powerful machines, but i
 | [G07 · 용산 약탈단](/wiki/Hostile-Group-G07/) | 적대 사람 집단 | 3 |
 | [G08 · 동대문 약탈단](/wiki/Hostile-Group-G08/) | 적대 사람 집단 | 3 |
 | [G09 · 상암 탈영병](/wiki/Hostile-Group-G09/) | 적대 사람 집단 | 3 |
-| [G10 · 보국문 광신도](/wiki/Hostile-Group-G10/) | 적대 사람 집단 | 3 |
+| [G10 · 보국문 집단](/wiki/Hostile-Group-G10/) | 적대 사람 집단 | 3 |
 | [G11 · 강남 이탈 인간형](/wiki/Hostile-Group-G11/) | 적대 사람 집단 | 3 |
 | [G12 · 신내 탈영병](/wiki/Hostile-Group-G12/) | 적대 사람 집단 | 3 |
 | [G13 · 집게팔](/wiki/Hostile-Group-G13/) | 잔존 자동 기계 | 16 |
@@ -10119,15 +10119,15 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 
 <a id="Hostile-Ecology-Index-heading-0282"></a>
 
-## G10 · 보국문 광신도
+## G10 · 보국문 집단
 
-- 현대 불안: 배급 당직은 광신도가 문 앞에 서 있는 날 하층 출고를 열지 않고 윗층에서 이름을 부른다. 회랑 당직은 해풍이 들어오는 시각에 외곽 계단의 등만 켜 둔다. 종자 당직은 종자 포대를 배급 자루와 다른 선반에 둔다.
-- 영역: 보국문 광신도는 북한산보국문 대피 회랑의 배수 불량 구간에 모인다. 장마와 배급 주기에는 가락과 잠실의 하층 배급고와 환기구에 선다. 인천신탁전구의 해풍이 들어오면 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 남는다. 회랑이 마르면 인원이 배급고 문 쪽으로 빠진다.
-- 경제: 잠실 하층 배급고에서 곡물 자루와 마른 반찬 통을 광신도 쪽으로 넘긴다. 가락 환기구의 손전등과 우의는 광신도 정예조 쪽에 있다. 마곡종자가가 출고를 멈춘 뒤 윗층 선반의 종자 포대는 묶인 채 있고 아래층 자루만 문 앞에 있다.
-- 생애: 배급일 낮에는 북한산보국문 회랑 쪽 인원이 가락과 잠실 하층에 붙는다. 인천신탁전구 쪽 해풍이 회랑으로 들어오면 외곽 계단의 인원이 늘고 안쪽 문턱에는 수행이 남는다. 회랑이 마르면 광신도 정예조가 배급고 문 앞에 서고 배수로 손잡이에는 표식 천만 매여 있다.
-- 위계: 광신도 인도자는 회랑 분기 문턱에 선다. 광신도 정예조는 배수로와 배급고 문짝을 맡는다. 광신도 척후조는 환기구와 배급 동선에 서서 인도자 쪽을 향한다. 수행은 인도자 뒤 마른 발판에서 자루와 물통을 든다.
+- 현대 불안: 배급 당직은 집단이 문 앞에 서 있는 날 하층 출고를 열지 않고 윗층에서 이름을 부른다. 회랑 당직은 해풍이 들어오는 시각에 외곽 계단의 등만 켜 둔다. 종자 당직은 종자 포대를 배급 자루와 다른 선반에 둔다.
+- 영역: 보국문 집단은 북한산보국문 대피 회랑의 배수 불량 구간에 모인다. 장마와 배급 주기에는 가락과 잠실의 하층 배급고와 환기구에 선다. 인천신탁전구의 해풍이 들어오면 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 남는다. 회랑이 마르면 인원이 배급고 문 쪽으로 빠진다.
+- 경제: 잠실 하층 배급고에서 곡물 자루와 마른 반찬 통을 집단 쪽으로 넘긴다. 가락 환기구의 손전등과 우의는 정예조 쪽에 있다. 마곡종자가가 출고를 멈춘 뒤 윗층 선반의 종자 포대는 묶인 채 있고 아래층 자루만 문 앞에 있다.
+- 생애: 배급일 낮에는 북한산보국문 회랑 쪽 인원이 가락과 잠실 하층에 붙는다. 인천신탁전구 쪽 해풍이 회랑으로 들어오면 외곽 계단의 인원이 늘고 안쪽 문턱에는 수행이 남는다. 회랑이 마르면 정예조가 배급고 문 앞에 서고 배수로 손잡이에는 표식 천만 매여 있다.
+- 위계: 집단 인도자는 회랑 분기 문턱에 선다. 정예조는 배수로와 배급고 문짝을 맡는다. 척후조는 환기구와 배급 동선에 서서 인도자 쪽을 향한다. 수행은 인도자 뒤 마른 발판에서 자루와 물통을 든다.
 - 연결: {"corporations_successor_only":["HC10"],"houses":["HC10"],"states":["government"],"synthetics":["H10"],"theaters":["XT05"]}
-- 상승 1-3: 북한산보국문 대피 회랑에서는 광신도 인도자와 수행이 문턱에 서 있다. 장마가 시작되면 광신도 정예조가 무릎까지 물이 찬 배수로 양쪽에 늘어서 통로를 막는다. 배급 주기가 겹치면 광신도 척후조가 회랑에서 가락 하층 배급고 문앞까지 늘어서고 문 안에는 자루가 쌓여 있다.
+- 상승 1-3: 북한산보국문 대피 회랑에서는 집단 인도자와 수행이 문턱에 서 있다. 장마가 시작되면 정예조가 무릎까지 물이 찬 배수로 양쪽에 늘어서 통로를 막는다. 배급 주기가 겹치면 척후조가 회랑에서 가락 하층 배급고 문앞까지 늘어서고 문 안에는 자루가 쌓여 있다.
 - 시나리오: [G10-SC1](/wiki/Hostile-Group-G10/#g10-sc1-회랑-문턱의-포대), [G10-SC2](/wiki/Hostile-Group-G10/#g10-sc2-하층-배급고의-문), [G10-SC3](/wiki/Hostile-Group-G10/#g10-sc3-해풍이-닿는-외곽-계단)
 
 <a id="Hostile-Ecology-Index-heading-0284"></a>
@@ -10135,11 +10135,11 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ### G10-SC1 · 회랑 문턱의 포대
 
 - 단계: 1
-- 촉발: 초여름 밤 광신도 인도자가 북한산보국문 대피 회랑 문턱에 서 있고, 마곡종자가가 종자 포대를 그 문으로 내보내게 되어 있다. 윤새론 쪽이 출고 목록을 들고 문 앞에 서 있다.
+- 촉발: 초여름 밤 집단 인도자가 북한산보국문 대피 회랑 문턱에 서 있고, 마곡종자가가 종자 포대를 그 문으로 내보내게 되어 있다. 윤새론 쪽이 출고 목록을 들고 문 앞에 서 있다.
 - 관련 세력: government, HC10, H10
 - 생태 기제: 안국총림 회랑 당직이 철문의 잠금과 계단의 인원을 보고 마곡종자가 배급 당직이 포대의 선반을 본다. 마곡종자가가 목록을 당직에게 넘기면 윤새론 쪽이 문 앞에 남고 수행이 문턱의 포대 옆에 선다.
 - 선택지: 안국총림 회랑 당직이 철문을 잠그고 마곡종자가가 종자 포대를 윗층 선반에 둔다. / 당직이 오전에만 철문을 열고 윤새론 쪽 목록에 적힌 포대만 문 밖으로 낸다. / 당직이 문턱에 선 채로 출고를 진행하고 포대를 회랑으로 넘긴다.
-- 결과: 철문을 잠근 뒤에는 포대가 윗층 선반에 있고 광신도 인도자는 문 밖에 서 있다. 오전만 연 뒤에는 목록의 포대만 문 밖에 있고 나머지 포대는 선반에 있으며 수행이 문 밖 포대 옆에 서 있다. 출고를 진행한 뒤에는 포대를 문턱 너머 수행 쪽에 쌓아 두고 배급 당직의 빈 수레가 회랑에 있다.
+- 결과: 철문을 잠근 뒤에는 포대가 윗층 선반에 있고 집단 인도자는 문 밖에 서 있다. 오전만 연 뒤에는 목록의 포대만 문 밖에 있고 나머지 포대는 선반에 있으며 수행이 문 밖 포대 옆에 서 있다. 출고를 진행한 뒤에는 포대를 문턱 너머 수행 쪽에 쌓아 두고 배급 당직의 빈 수레가 회랑에 있다.
 - 도덕 비용: 오전 개방 뒤 목록 밖 대기 인원이 계단에 남고 당일 종자 포대의 일부가 윗층에 묶여 있다. 출고를 넘긴 뒤 마곡종자가의 빈 수레가 회랑에 있고 선반의 자리가 비어 있다.
 - 원본 항목: G10
 
@@ -10158,9 +10158,9 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 
 - 단계: 3
 - 관련 세력: government, XT05, HC10, H10
-- 생태 기제: 해풍이 들어오는 동안 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 물통을 들고 남는다. 광신도 인도자는 북한산보국문 쪽 문턱에 있으며 광신도 척후조는 인도자 쪽을 향해 선다. 윤새론 쪽은 마곡종자가가 출고 목록을 배급 당직에게 넘기기 전까지 문 앞에 서 있다.
+- 생태 기제: 해풍이 들어오는 동안 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 물통을 들고 남는다. 집단 인도자는 북한산보국문 쪽 문턱에 있으며 척후조는 인도자 쪽을 향해 선다. 윤새론 쪽은 마곡종자가가 출고 목록을 배급 당직에게 넘기기 전까지 문 앞에 서 있다.
 - 선택지: 회랑 당직이 외곽 계단의 등만 켜 두고 안쪽 철문을 잠근다. / 마곡종자가 종자 당직이 종자 포대를 배급 자루와 다른 선반에 두고 하층 출고를 멈춘다. / 배급 당직이 윤새론 쪽 목록을 받은 뒤에만 오전 문을 열고 목록의 포대를 낸다.
-- 결과: 외곽 등만 켠 뒤에는 광신도 척후조가 밝은 계단에 서 있고 안쪽 문턱의 수행이 어두운 쪽에 있다. 포대를 다른 선반에 둔 뒤에는 종자 포대가 윗층에 묶여 있고 아래층 자루가 광신도 척후조 앞에 있다. 목록을 받은 뒤에 문을 연 뒤에는 적힌 포대만 문 밖에 있고 윤새론 쪽이 그 포대 옆에 서 있으며 광신도 인도자는 문턱에서 포대 쪽을 본다.
+- 결과: 외곽 등만 켠 뒤에는 척후조가 밝은 계단에 서 있고 안쪽 문턱의 수행이 어두운 쪽에 있다. 포대를 다른 선반에 둔 뒤에는 종자 포대가 윗층에 묶여 있고 아래층 자루가 척후조 앞에 있다. 목록을 받은 뒤에 문을 연 뒤에는 적힌 포대만 문 밖에 있고 윤새론 쪽이 그 포대 옆에 서 있으며 집단 인도자는 문턱에서 포대 쪽을 본다.
 - 원본 항목: G10
 
 <a id="Hostile-Ecology-Index-heading-0290"></a>

@@ -16,7 +16,7 @@ Common species and special variants that share a habitat are read apart. Machine
 | [G07 · Yongsan Raiders](/wiki/Hostile-Group-G07/) | Hostile human groups | 3 |
 | [G08 · Dongdaemun Raiders](/wiki/Hostile-Group-G08/) | Hostile human groups | 3 |
 | [G09 · Sangam Deserters](/wiki/Hostile-Group-G09/) | Hostile human groups | 3 |
-| [G10 · Bogukmun Zealots](/wiki/Hostile-Group-G10/) | Hostile human groups | 3 |
+| [G10 · Bogukmun group](/wiki/Hostile-Group-G10/) | Hostile human groups | 3 |
 | [G11 · Gangnam Stray Humanoids](/wiki/Hostile-Group-G11/) | Hostile human groups | 3 |
 | [G12 · Sinnae Deserters](/wiki/Hostile-Group-G12/) | Hostile human groups | 3 |
 | [G13 · Pincer Arm](/wiki/Hostile-Group-G13/) | Surviving automatic machines | 16 |
@@ -894,15 +894,15 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 <a id="Hostile-Ecology-Index-heading-0282"></a>
 
-## G10 · Bogukmun Zealots
+## G10 · Bogukmun group
 
-- Modern anxiety: On days when the zealots stand before the door, the ration watch leaves the lower issue shut and calls names from the upper level. At the hour when the sea wind enters, the corridor watch leaves only the outer-stair lamps on. The seed watch keeps the seed bags on a shelf apart from the ration sacks.
-- Territory: The Bogukmun Zealots gather on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors.
-- Economy: At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the zealots' side. At the Garak vent, the flashlights and rain capes are on the Zealot Elite Squad's side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door.
-- Life cycle: On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Zealot Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle.
-- Hierarchy: The Zealot Leader stands on the threshold of the corridor junction. The Zealot Elite Squad takes the drain and the granary doors. The Zealot Scouts stand on the vents and the ration route and face the leader's side. Attendants hold sacks and water cans on the dry tread behind the leader.
+- Modern anxiety: On days when the group stands before the door, the ration watch leaves the lower issue shut and calls names from the upper level. At the hour when the sea wind enters, the corridor watch leaves only the outer-stair lamps on. The seed watch keeps the seed bags on a shelf apart from the ration sacks.
+- Territory: The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors.
+- Economy: At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the group's side. At the Garak vent, the flashlights and rain capes are on the Elite Squad's side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door.
+- Life cycle: On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle.
+- Hierarchy: The Group leader stands on the threshold of the corridor junction. The Elite Squad takes the drain and the granary doors. The Scouts stand on the vents and the ration route and face the leader's side. Attendants hold sacks and water cans on the dry tread behind the leader.
 - Links: {"corporations_successor_only":["HC10"],"houses":["HC10"],"states":["government"],"synthetics":["H10"],"theaters":["XT05"]}
-- Escalation 1-3: In the Bukhansan Bogukmun shelter corridor the Zealot Leader and the attendants stand on the threshold. When the monsoon begins, the Zealot Elite Squad lines both sides of the drain where the water reaches the knee and blocks the passage. When the ration cycle overlaps, the Zealot Scouts line up from the corridor to the door of the Garak lower granary, and sacks lie piled inside the door.
+- Escalation 1-3: In the Bukhansan Bogukmun shelter corridor the Group leader and the attendants stand on the threshold. When the monsoon begins, the Elite Squad lines both sides of the drain where the water reaches the knee and blocks the passage. When the ration cycle overlaps, the Scouts line up from the corridor to the door of the Garak lower granary, and sacks lie piled inside the door.
 - Scenarios: [G10-SC1](/wiki/Hostile-Group-G10/), [G10-SC2](/wiki/Hostile-Group-G10/), [G10-SC3](/wiki/Hostile-Group-G10/)
 
 <a id="Hostile-Ecology-Index-heading-0284"></a>
@@ -910,11 +910,11 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G10-SC1 · Bags at the Corridor Threshold
 
 - Stage: 1
-- Trigger: On an early-summer night the Zealot Leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
+- Trigger: On an early-summer night the Group leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
 - Actors: government, HC10, H10
 - Ecological mechanism: The Anguk Order corridor watch watches the iron door's lock and the people on the stair, and the Magok Seed House ration watch watches the shelf of bags. Once the Magok Seed House passes the list to the watch, the Yunsaeron side stays in front of the door and the attendants stand beside the bags on the threshold.
 - Choices: The Anguk Order corridor watch locks the iron door, and the Magok Seed House places the seed bags on the upper shelves. / The watch opens the iron door only in the morning and sends out only the bags written on the Yunsaeron side's list. / The watch stands on the threshold and carries the issue forward, passing the bags into the corridor.
-- Outcomes: After the iron door is locked, the bags are on the upper shelves and the Zealot Leader stands outside the door. After the door is opened only in the morning, only the bags on the list are outside the door, the remaining bags are on the shelves, and the attendants stand beside the bags outside. After the issue goes forward, the bags are piled past the threshold on the attendants' side, and the ration watch's empty cart is in the corridor.
+- Outcomes: After the iron door is locked, the bags are on the upper shelves and the Group leader stands outside the door. After the door is opened only in the morning, only the bags on the list are outside the door, the remaining bags are on the shelves, and the attendants stand beside the bags outside. After the issue goes forward, the bags are piled past the threshold on the attendants' side, and the ration watch's empty cart is in the corridor.
 - Moral cost: After the morning opening, the people waiting outside the list remain on the stair, and part of the day's seed bags stay tied on the upper level. After the issue is passed across, the Magok Seed House's empty cart is in the corridor and the places on the shelves are bare.
 - Source dossier: G10
 
@@ -933,9 +933,9 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 - Stage: 3
 - Actors: government, XT05, HC10, H10
-- Ecological mechanism: While the sea wind comes in, the number on the outer stair grows and attendants remain inside the corridor holding water cans. The Zealot Leader is on the threshold toward Bukhansan Bogukmun, and the Zealot Scouts stand facing the leader's side. The Yunsaeron side stands in front of the door until the Magok Seed House passes the issue list to the ration watch.
+- Ecological mechanism: While the sea wind comes in, the number on the outer stair grows and attendants remain inside the corridor holding water cans. The Group leader is on the threshold toward Bukhansan Bogukmun, and the Scouts stand facing the leader's side. The Yunsaeron side stands in front of the door until the Magok Seed House passes the issue list to the ration watch.
 - Choices: The corridor watch leaves only the outer-stair lamps on and locks the inner iron door. / The Magok Seed House seed watch places the seed bags on a shelf apart from the ration sacks and stops lower-level issue. / The ration watch opens the morning door only after receiving the Yunsaeron side's list and sends out the bags on the list.
-- Outcomes: After only the outer lamps are left on, the Zealot Scouts stand on the lit stair and the attendants on the inner threshold are on the dark side. After the bags are placed on another shelf, the seed bags are tied on the upper level and the lower sacks are in front of the Zealot Scouts. After the door is opened once the list is received, only the bags written there are outside the door, the Yunsaeron side stands beside those bags, and the Zealot Leader looks toward the bags from the threshold.
+- Outcomes: After only the outer lamps are left on, the Scouts stand on the lit stair and the attendants on the inner threshold are on the dark side. After the bags are placed on another shelf, the seed bags are tied on the upper level and the lower sacks are in front of the Scouts. After the door is opened once the list is received, only the bags written there are outside the door, the Yunsaeron side stands beside those bags, and the Group leader looks toward the bags from the threshold.
 - Source dossier: G10
 
 <a id="Hostile-Ecology-Index-heading-0290"></a>

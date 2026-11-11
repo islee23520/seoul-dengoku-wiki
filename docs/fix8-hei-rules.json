@@ -1,0 +1,119 @@
+{
+ "generatedBy": "scripts/pages/fix5-origin-edit.mjs (reused, --rules docs/fix8-hei-rules.json)",
+ "purpose": "W5-28 fix8 — Hostile-Ecology-Index(적대 생태 색인)의 G10 광신도/Zealot 표기를 fix7(74c256b85, c5aae7f19)이 중립화한 Hostile-Group-G10 문서의 명칭과 정확히 맞춘다. 두 공개 문서가 같은 현행 집단을 서로 다르게 부르는 독자 가시 모순과 비Arc 종교 프레임 위반(소유자 정본: 종교 서술은 Arc에만 존재)을 해소한다.",
+ "policy": "정확 문장 치환: 각 초안 파일에서 old가 정확히 expect회 나올 때만 전부 치환한다. 위반 시 exit 21, 아무 파일도 쓰지 않는다. 앵커 id·마크다운 제목 수·행동 사실은 보존하고 G10 문서가 이미 사용하는 중립 명칭(보국문 집단/Bogukmun group, 집단 인도자/Group leader, 정예조/Elite Squad, 척후조/Scouts)으로만 바꾼다. 색인 행 링크 텍스트와 '## G10 ·' 절 제목은 G10 문서 제목 텍스트와 동일하게 한다. 기저 트리 a2ed6f98280ad7ad26a7be6e68e7256b961002d4.",
+ "rules": [
+  {
+   "id": "HKO-01",
+   "file": "Hostile-Ecology-Index.ko.md",
+   "old": "G10 · 보국문 광신도",
+   "new": "G10 · 보국문 집단",
+   "expect": 2,
+   "reason": "색인 행 링크 텍스트·절 제목을 G10 문서 제목(G10 · 보국문 집단)과 동일하게"
+  },
+  {
+   "id": "HKO-02",
+   "file": "Hostile-Ecology-Index.ko.md",
+   "old": "보국문 광신도는",
+   "new": "보국문 집단은",
+   "expect": 1,
+   "reason": "집단 명칭 중립화(G10 문서 서식·이동 기록과 동일 문장)"
+  },
+  {
+   "id": "HKO-03",
+   "file": "Hostile-Ecology-Index.ko.md",
+   "old": "광신도 인도자",
+   "new": "집단 인도자",
+   "expect": 6,
+   "reason": "지도자 역할명 중립화(모든 위치 동일 단어)"
+  },
+  {
+   "id": "HKO-04",
+   "file": "Hostile-Ecology-Index.ko.md",
+   "old": "광신도 정예조",
+   "new": "정예조",
+   "expect": 4,
+   "reason": "정예조 명칭의 광신 수식 제거"
+  },
+  {
+   "id": "HKO-05",
+   "file": "Hostile-Ecology-Index.ko.md",
+   "old": "광신도 척후조",
+   "new": "척후조",
+   "expect": 5,
+   "reason": "척후조 명칭의 광신 수식 제거"
+  },
+  {
+   "id": "HKO-06",
+   "file": "Hostile-Ecology-Index.ko.md",
+   "old": "광신도 쪽으로",
+   "new": "집단 쪽으로",
+   "expect": 1,
+   "reason": "광신도 지시 → 집단(G10 경제 기록과 동일 문장)"
+  },
+  {
+   "id": "HKO-07",
+   "file": "Hostile-Ecology-Index.ko.md",
+   "old": "광신도가 문 앞에",
+   "new": "집단이 문 앞에",
+   "expect": 1,
+   "reason": "산문 지시 중립화(조사 가→이 교정)"
+  },
+  {
+   "id": "HEN-01",
+   "file": "Hostile-Ecology-Index.en.md",
+   "old": "G10 · Bogukmun Zealots",
+   "new": "G10 · Bogukmun group",
+   "expect": 2,
+   "reason": "index-row link text and section heading = G10 document title"
+  },
+  {
+   "id": "HEN-02",
+   "file": "Hostile-Ecology-Index.en.md",
+   "old": "The Bogukmun Zealots gather",
+   "new": "The Bogukmun group gathers",
+   "expect": 1,
+   "reason": "group name, same sentence as G10 habitat record"
+  },
+  {
+   "id": "HEN-03",
+   "file": "Hostile-Ecology-Index.en.md",
+   "old": "Zealot Leader",
+   "new": "Group leader",
+   "expect": 6,
+   "reason": "leader role, same word everywhere"
+  },
+  {
+   "id": "HEN-04",
+   "file": "Hostile-Ecology-Index.en.md",
+   "old": "Zealot Elite Squad",
+   "new": "Elite Squad",
+   "expect": 4,
+   "reason": "elite squad name"
+  },
+  {
+   "id": "HEN-05",
+   "file": "Hostile-Ecology-Index.en.md",
+   "old": "Zealot Scouts",
+   "new": "Scouts",
+   "expect": 5,
+   "reason": "scouts name"
+  },
+  {
+   "id": "HEN-06",
+   "file": "Hostile-Ecology-Index.en.md",
+   "old": "the zealots' side",
+   "new": "the group's side",
+   "expect": 1,
+   "reason": "zealots -> group (G10 economy row)"
+  },
+  {
+   "id": "HEN-07",
+   "file": "Hostile-Ecology-Index.en.md",
+   "old": "when the zealots stand",
+   "new": "when the group stands",
+   "expect": 1,
+   "reason": "zealots plural -> group singular, verb agrees"
+  }
+ ]
+}
