@@ -1,6 +1,12 @@
+// 재실행 가드(2026-11-10): data/sql/*.sql이 단독 정본이다. 이 일회용 내보내기를 다시 돌리면 SQL 쪽 수정이
+// 옛 PostgreSQL 상태로 덮어쓰인다. 실제 재동기화가 필요할 때만 --force-resync를 붙여라.
+// (원래 3행째에 있던 shebang은 주석 뒤 중간 위치라 파싱을 막는 죽은 토큰이라 뺐다 — 가드가 실행되려면 파일이 파싱돼야 한다.)
+if (!process.argv.includes('--force-resync')) {
+  process.stderr.write('export-sql.mjs is archived: data/sql is the source of truth; re-running overwrites SQL-side edits. Pass --force-resync only to resync from PostgreSQL.\n');
+  process.exit(1);
+}
 // ARCHIVED 2026-11-10: one-time exporter from the old PostgreSQL projection. data/sql/*.sql is now the source of truth;
 // re-running this overwrites SQL-side edits with the old database state. See docs/GITHUB-PAGES-MIGRATION.md section 0.
-#!/usr/bin/env node
 // Exports the PUBLIC wiki + GDD projections into raw SQL files (data/sql/*.sql), in English and Korean.
 // Source of truth for GitHub Pages is data/sql; the site build never touches PostgreSQL.
 //

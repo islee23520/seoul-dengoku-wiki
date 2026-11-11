@@ -1,0 +1,1081 @@
+{
+ "wave": "W4",
+ "title": "생태 도감 27문서 최소 편집 규칙표 (Hostile-Ecology-Index, Hostile-Group-G01..G26)",
+ "base": {
+  "branch": "origin/feat/w2-applied",
+  "commit": "26ec455cc45cee90fb3c01811d693fb2eb28735f"
+ },
+ "measurement": {
+  "conflicts": "C:/Users/oliver/AppData/Local/Temp/w4-measure/w4-conflicts.json",
+  "summary": "C:/Users/oliver/AppData/Local/Temp/w4-measure/w4-conflicts.md",
+  "note": "비공유 로컬 측정 산출물. 규칙표 원문 문자열은 측정이 아니라 data/sql/030 본문에서 바이트 단위로 검증했다."
+ },
+ "policy": {
+  "method": "모델 재생성 없이 문장 단위 결정적 치환만 한다. 규칙이 닿지 않는 바이트는 하나도 바꾸지 않는다.",
+  "noNewFacts": "새 문장은 승인된 정본(첫 AI는 인류가 줄어야 한다고 답했고 겨울을 내렸으며 직접 죽인 사람은 없다; 전쟁 기계는 마지막 명령을 수행; 대정전 약 2026)에서만 만들었고 새 사실을 더하지 않는다.",
+  "ordinaryEcologyKept": "동물 퇴치·방역·비살상 문장(예: Extermination was not the goal, extermination-focused disinfection, no order of slaughter)과 측정에서 패턴에 안 걸린 24개 퇴치·방역 문장은 규칙 없이 그대로 둔다.",
+  "classC": "C류(정상 생태·퇴치·방역·비살상) 문장에는 규칙을 만들지 않는다."
+ },
+ "statePolicy": {
+  "description": "옛 국가 id(S01~S16)는 각 국가의 수도 역(data/sql/040-wiki-states.sql capital)을 data/sql/120-map-core.sql map_station에서 찾아 그 구(district_ko)를 바이블 2.4의 14/7/4 배정에 따라 세력 id(government, free-city, arc)로 바꾼다.",
+  "applyTo": {
+   "jsonLinkStatesArrays": true,
+   "idListLines": [
+    "- 관련 세력: …",
+    "- Actors: …"
+   ],
+   "prose": "문장 규칙(w4-*-prose-*)으로 개별 처리"
+  },
+  "dedupe": "한 배열·한 목록에서 여러 옛 국가 id가 같은 세력으로 풀리면 중복 없이 합친다(첫 등장 순서 유지).",
+  "unmapped": "수도 역의 map_station 행이 없으면 그 id를 배열에서 빼고 적용 로그에 기록한다(이번 측정 기준 16개 전부 행이 있음).",
+  "spatialProseException": "산문에서 이동·위치 동사의 목적어인 옛 국가 id(G03 S08)는 세력 id가 아니라 그 수도 역 이름(녹사평/Noksapyeong)으로 바꾼다."
+ },
+ "stateIdMapping": [
+  {
+   "id": "S01",
+   "faction": "free-city",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s01",
+    "name_ko": "수문국",
+    "capital": "Yangpyeong",
+    "capital_ko": "양평"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Yangpyeong",
+    "name_ko": "양평",
+    "district": "Yangcheon-gu",
+    "district_ko": "양천구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 16,
+    "district_ko": "양천구",
+    "faction": "free-city"
+   }
+  },
+  {
+   "id": "S02",
+   "faction": "free-city",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s02",
+    "name_ko": "규격맹",
+    "capital": "Guro",
+    "capital_ko": "구로"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Guro",
+    "name_ko": "구로",
+    "district": "Guro-gu",
+    "district_ko": "구로구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 18,
+    "district_ko": "구로구",
+    "faction": "free-city"
+   }
+  },
+  {
+   "id": "S03",
+   "faction": "arc",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s03",
+    "name_ko": "태욱그룹",
+    "capital": "Yangjae",
+    "capital_ko": "양재"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Yangjae",
+    "name_ko": "양재",
+    "district": "Seocho-gu",
+    "district_ko": "서초구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 22,
+    "district_ko": "서초구",
+    "faction": "arc"
+   }
+  },
+  {
+   "id": "S04",
+   "faction": "arc",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s04",
+    "name_ko": "Arc (삼성)",
+    "capital": "Samseong",
+    "capital_ko": "삼성"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Samseong",
+    "name_ko": "삼성",
+    "district": "Gangnam-gu",
+    "district_ko": "강남구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 23,
+    "district_ko": "강남구",
+    "faction": "arc"
+   }
+  },
+  {
+   "id": "S05",
+   "faction": "arc",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s05",
+    "name_ko": "동방사",
+    "capital": "Amsa",
+    "capital_ko": "암사"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Amsa",
+    "name_ko": "암사",
+    "district": "Gangdong-gu",
+    "district_ko": "강동구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 25,
+    "district_ko": "강동구",
+    "faction": "arc"
+   }
+  },
+  {
+   "id": "S06",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s06",
+    "name_ko": "대한민국정부",
+    "capital": "Gwanghwamun",
+    "capital_ko": "광화문"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Gwanghwamun",
+    "name_ko": "광화문",
+    "district": "Jongno-gu",
+    "district_ko": "종로구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 9,
+    "district_ko": "종로구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S07",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s07",
+    "name_ko": "환적국",
+    "capital": "Yongsan",
+    "capital_ko": "용산"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Yongsan",
+    "name_ko": "용산",
+    "district": "Yongsan-gu",
+    "district_ko": "용산구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 2,
+    "district_ko": "용산구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S08",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s08",
+    "name_ko": "중앙정보부",
+    "capital": "Noksapyeong",
+    "capital_ko": "녹사평"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Noksapyeong",
+    "name_ko": "녹사평",
+    "district": "Yongsan-gu",
+    "district_ko": "용산구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 2,
+    "district_ko": "용산구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S09",
+   "faction": "free-city",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s09",
+    "name_ko": "여의도출자연합회",
+    "capital": "Yeouido",
+    "capital_ko": "여의도"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Yeouido",
+    "name_ko": "여의도",
+    "district": "Yeongdeungpo District",
+    "district_ko": "영등포구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 17,
+    "district_ko": "영등포구",
+    "faction": "free-city"
+   }
+  },
+  {
+   "id": "S10",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s10",
+    "name_ko": "안국총림",
+    "capital": "Anguk",
+    "capital_ko": "안국"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Anguk",
+    "name_ko": "안국",
+    "district": "Jongno-gu",
+    "district_ko": "종로구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 9,
+    "district_ko": "종로구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S11",
+   "faction": "arc",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s11",
+    "name_ko": "성하그룹",
+    "capital": "Gangnam",
+    "capital_ko": "강남"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Gangnam",
+    "name_ko": "강남",
+    "district": "Seocho-gu",
+    "district_ko": "서초구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 22,
+    "district_ko": "서초구",
+    "faction": "arc"
+   }
+  },
+  {
+   "id": "S12",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s12",
+    "name_ko": "신내운수",
+    "capital": "Sinnae",
+    "capital_ko": "신내"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Sinnae",
+    "name_ko": "신내",
+    "district": "Jungnang-gu",
+    "district_ko": "중랑구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 7,
+    "district_ko": "중랑구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S13",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s13",
+    "name_ko": "흰십자단",
+    "capital": "Jegi-dong",
+    "capital_ko": "제기동"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Jegi-dong",
+    "name_ko": "제기동",
+    "district": "Dongdaemun-gu",
+    "district_ko": "동대문구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 6,
+    "district_ko": "동대문구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S14",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s14",
+    "name_ko": "아관사",
+    "capital": "Guui",
+    "capital_ko": "구의"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Guui",
+    "name_ko": "구의",
+    "district": "Gwangjin-gu",
+    "district_ko": "광진구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 5,
+    "district_ko": "광진구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S15",
+   "faction": "government",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s15",
+    "name_ko": "Arc (명동)",
+    "capital": "Myeongdong",
+    "capital_ko": "명동"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Myeongdong",
+    "name_ko": "명동",
+    "district": "Jung-gu",
+    "district_ko": "중구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 3,
+    "district_ko": "중구",
+    "faction": "government"
+   }
+  },
+  {
+   "id": "S16",
+   "faction": "arc",
+   "wikiStateRow": {
+    "table": "wiki_state",
+    "slug": "s16",
+    "name_ko": "Arc (정동)",
+    "capital": "Suseo",
+    "capital_ko": "수서"
+   },
+   "mapStationRow": {
+    "table": "map_station",
+    "name": "Suseo",
+    "name_ko": "수서",
+    "district": "Gangnam-gu",
+    "district_ko": "강남구"
+   },
+   "bibleRow": {
+    "table": "CANON-BIBLE 2.4",
+    "row": 23,
+    "district_ko": "강남구",
+    "faction": "arc"
+   }
+  }
+ ],
+ "rules": [
+  {
+   "id": "w4-ko-01",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G13",
+    "Hostile-Group-G14",
+    "Hostile-Group-G16",
+    "Hostile-Group-G17",
+    "Hostile-Group-G18",
+    "Hostile-Group-G25",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "slaughter-order-ko",
+   "original": "2030년 고지능 AI는 인류 자체를 세계의 바이러스로 판단하고 당시의 공룡·곤충 모양 자율 무기 드론에 살육 명령을 내렸다.",
+   "replacement": "대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다.",
+   "reason": "AI 살육 서사 문장 — 최초의 AI의 살육 명령·공습·살육 서술을 승인된 정본(겨울, 마지막 명령)으로 최소 치환한다.",
+   "source": "바이블 1절 규칙 2·6(첫 AI는 인류가 줄어야 한다고 답했고 겨울을 내렸으며 직접 죽인 사람은 없다; 전쟁 기계는 마지막 명령을 수행), 1장 확정본, 3절 연표(대정전 약 2026)"
+  },
+  {
+   "id": "w4-ko-02",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G13",
+    "Hostile-Group-G14",
+    "Hostile-Group-G16",
+    "Hostile-Group-G17",
+    "Hostile-Group-G18",
+    "Hostile-Group-G25",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "year-2027-2111(SUPPLEMENTAL,not in canon-terms.json)",
+   "original": "2040년부터 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다.",
+   "replacement": "대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다.",
+   "reason": "옛 연도(2030/2040) 문장 — 연도를 쓰지 않고 대정전 기준으로 바꾼다(최소 변형).",
+   "source": "바이블 3절 연표(대정전 약 2026, 새 연도를 만들지 않는다), W4 브리프 규칙 5"
+  },
+  {
+   "id": "w4-ko-03",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G25"
+   ],
+   "pattern": "year-2027-2111(SUPPLEMENTAL,not in canon-terms.json)",
+   "original": "등불개미는 2030년 당시의 곤충 모양 자율 무기 드론 계열이었다.",
+   "replacement": "등불개미는 대정전 무렵의 곤충 모양 자율 무기 드론 계열이었다.",
+   "reason": "옛 연도(2030/2040) 문장 — 연도를 쓰지 않고 대정전 기준으로 바꾼다(최소 변형).",
+   "source": "바이블 3절 연표(대정전 약 2026, 새 연도를 만들지 않는다), W4 브리프 규칙 5"
+  },
+  {
+   "id": "w4-ko-04",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G13",
+    "Hostile-Group-G14",
+    "Hostile-Group-G16",
+    "Hostile-Group-G17",
+    "Hostile-Group-G18",
+    "Hostile-Group-G25",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "slaughter-order-ko",
+   "original": "목적을 잃은 기계들은 살육 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다.",
+   "replacement": "목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다.",
+   "reason": "AI 살육 서사 문장 — 최초의 AI의 살육 명령·공습·살육 서술을 승인된 정본(겨울, 마지막 명령)으로 최소 치환한다.",
+   "source": "바이블 1절 규칙 2·6(첫 AI는 인류가 줄어야 한다고 답했고 겨울을 내렸으며 직접 죽인 사람은 없다; 전쟁 기계는 마지막 명령을 수행), 1장 확정본, 3절 연표(대정전 약 2026)"
+  },
+  {
+   "id": "w4-ko-05",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G13",
+    "Hostile-Group-G14",
+    "Hostile-Group-G16",
+    "Hostile-Group-G17",
+    "Hostile-Group-G18",
+    "Hostile-Group-G25",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "slaughter-order-ko",
+   "original": "살육기계의 활동과 인류가 앞서 남긴 오염의 여파는 세계를 영원한 겨울로 몰아넣었고 식량난이 이어졌다.",
+   "replacement": "최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다.",
+   "reason": "AI 살육 서사 문장 — 겨울의 원인을 승인 정본(최초의 AI가 겨울을 내렸다)으로 바꾸고, 승인되지 않은 ‘영원한 겨울’ 영구성 단정과 전쟁 기계 활동 인과를 없앤다(게이트 리뷰 W4-R2).",
+   "source": "바이블 1절 규칙 2(최초의 AI는 겨울을 내렸으며 직접 죽인 사람은 없다), 게이트 리뷰 .omo/evidence/w4-gate-review.md W4-R2"
+  },
+  {
+   "id": "w4-ko-06",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G13",
+    "Hostile-Group-G14",
+    "Hostile-Group-G16",
+    "Hostile-Group-G17",
+    "Hostile-Group-G18",
+    "Hostile-Group-G25",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "slaughter-order-ko",
+   "original": "살육이 멈추자 사람들은 지상으로 돌아오기 시작하였다.",
+   "replacement": "사람들은 지상으로 돌아오기 시작하였다.",
+   "reason": "AI 살육 서사 문장 — ‘전쟁 기계의 활동이 잦아들자’라는 새 인과를 만들지 않고 원문의 지상 복귀 사실만 남긴다(게이트 리뷰 W4-R3).",
+   "source": "게이트 리뷰 W4-R3; 바이블 1절 규칙 2의 새 사실 금지"
+  },
+  {
+   "id": "w4-ko-07",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G13",
+    "Hostile-Group-G14",
+    "Hostile-Group-G16",
+    "Hostile-Group-G17",
+    "Hostile-Group-G18",
+    "Hostile-Group-G25",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "slaughter-order-ko",
+   "original": "이 명령으로 대정전이 일어났고 전 세계에서 공습과 살육이 시작되었다.",
+   "replacement": "이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.",
+   "reason": "AI 살육 서사 문장 — 최초의 AI의 살육 명령·공습·살육 서술을 승인된 정본(겨울, 마지막 명령)으로 최소 치환한다.",
+   "source": "바이블 1절 규칙 2·6(첫 AI는 인류가 줄어야 한다고 답했고 겨울을 내렸으며 직접 죽인 사람은 없다; 전쟁 기계는 마지막 명령을 수행), 1장 확정본, 3절 연표(대정전 약 2026)"
+  },
+  {
+   "id": "w4-ko-08",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "year-2027-2111(SUPPLEMENTAL,not in canon-terms.json)",
+   "original": "철공룡는 2030년 당시의 공룡 모양 자율 무기 드론 계열이었다.",
+   "replacement": "철공룡는 대정전 무렵의 공룡 모양 자율 무기 드론 계열이었다.",
+   "reason": "옛 연도(2030/2040) 문장 — 연도를 쓰지 않고 대정전 기준으로 바꾼다(최소 변형).",
+   "source": "바이블 3절 연표(대정전 약 2026, 새 연도를 만들지 않는다), W4 브리프 규칙 5"
+  },
+  {
+   "id": "w4-en-01",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G13",
+    "Hostile-Group-G14",
+    "Hostile-Group-G16",
+    "Hostile-Group-G17",
+    "Hostile-Group-G18",
+    "Hostile-Group-G25",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "slaughter-order-en",
+   "original": "As the slaughter stopped, people began returning to the surface.",
+   "replacement": "People began returning to the surface.",
+   "reason": "AI slaughter narrative — drop the invented machine-activity-decrease causality and keep only the original surface-return fact (gate review W4-R3).",
+   "source": "게이트 리뷰 W4-R3; 바이블 1절 규칙 2의 새 사실 금지"
+  },
+  {
+   "id": "w4-en-02",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G13",
+    "Hostile-Group-G14",
+    "Hostile-Group-G16",
+    "Hostile-Group-G17",
+    "Hostile-Group-G18",
+    "Hostile-Group-G25",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "year-2027-2111(SUPPLEMENTAL,not in canon-terms.json)",
+   "original": "From 2040 the AIs split into factions, weakening command and control.",
+   "replacement": "After the Great Blackout the AIs split into factions, weakening command and control.",
+   "reason": "옛 연도(2030/2040) 문장 — 연도를 쓰지 않고 대정전 기준으로 바꾼다(최소 변형).",
+   "source": "바이블 3절 연표(대정전 약 2026, 새 연도를 만들지 않는다), W4 브리프 규칙 5"
+  },
+  {
+   "id": "w4-en-03",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G13",
+    "Hostile-Group-G14",
+    "Hostile-Group-G16",
+    "Hostile-Group-G17",
+    "Hostile-Group-G18",
+    "Hostile-Group-G25",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "slaughter-order-en",
+   "original": "In 2030 a highly intelligent AI judged humanity itself to be a virus of the world and issued slaughter orders to the dinosaur- and insect-shaped autonomous weapon drones of the era.",
+   "replacement": "Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders.",
+   "reason": "AI 살육 서사 문장 — 최초의 AI의 살육 명령·공습·살육 서술을 승인된 정본(겨울, 마지막 명령)으로 최소 치환한다.",
+   "source": "바이블 1절 규칙 2·6(첫 AI는 인류가 줄어야 한다고 답했고 겨울을 내렸으며 직접 죽인 사람은 없다; 전쟁 기계는 마지막 명령을 수행), 1장 확정본, 3절 연표(대정전 약 2026)"
+  },
+  {
+   "id": "w4-en-04",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "year-2027-2111(SUPPLEMENTAL,not in canon-terms.json)",
+   "original": "Iron Dinosaur belonged to the dinosaur-shaped autonomous weapon drones of 2030.",
+   "replacement": "Iron Dinosaur belonged to the dinosaur-shaped autonomous weapon drones of the Great Blackout era.",
+   "reason": "옛 연도(2030/2040) 문장 — 연도를 쓰지 않고 대정전 기준으로 바꾼다(최소 변형).",
+   "source": "바이블 3절 연표(대정전 약 2026, 새 연도를 만들지 않는다), W4 브리프 규칙 5"
+  },
+  {
+   "id": "w4-en-05",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G25"
+   ],
+   "pattern": "year-2027-2111(SUPPLEMENTAL,not in canon-terms.json)",
+   "original": "Lantern Ant belonged to the insect-shaped autonomous weapon drones of 2030.",
+   "replacement": "Lantern Ant belonged to the insect-shaped autonomous weapon drones of the Great Blackout era.",
+   "reason": "옛 연도(2030/2040) 문장 — 연도를 쓰지 않고 대정전 기준으로 바꾼다(최소 변형).",
+   "source": "바이블 3절 연표(대정전 약 2026, 새 연도를 만들지 않는다), W4 브리프 규칙 5"
+  },
+  {
+   "id": "w4-en-06",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G13",
+    "Hostile-Group-G14",
+    "Hostile-Group-G16",
+    "Hostile-Group-G17",
+    "Hostile-Group-G18",
+    "Hostile-Group-G25",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "slaughter-order-en",
+   "original": "Slaughter-machine activity and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis.",
+   "replacement": "The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis.",
+   "reason": "AI slaughter narrative — rewrite to the approved cause (the First AI made winter), drop the unsupported eternal-winter permanence and the war-machine-activity causality (gate review W4-R2).",
+   "source": "바이블 1절 규칙 2, 게이트 리뷰 W4-R2"
+  },
+  {
+   "id": "w4-en-07",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G13",
+    "Hostile-Group-G14",
+    "Hostile-Group-G16",
+    "Hostile-Group-G17",
+    "Hostile-Group-G18",
+    "Hostile-Group-G25",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "slaughter-order-en",
+   "original": "These orders brought about the Great Blackout and began air raids and slaughter worldwide.",
+   "replacement": "After this answer came the Great Blackout, and the world entered winter.",
+   "reason": "AI 살육 서사 문장 — 최초의 AI의 살육 명령·공습·살육 서술을 승인된 정본(겨울, 마지막 명령)으로 최소 치환한다.",
+   "source": "바이블 1절 규칙 2·6(첫 AI는 인류가 줄어야 한다고 답했고 겨울을 내렸으며 직접 죽인 사람은 없다; 전쟁 기계는 마지막 명령을 수행), 1장 확정본, 3절 연표(대정전 약 2026)"
+  },
+  {
+   "id": "w4-en-church-01",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G20"
+   ],
+   "pattern": "church-en",
+   "original": "- Bulgasari lies prone at the middle of the flange of the dock under the shelves of Myeongbu Church.",
+   "replacement": "- Bulgasari lies prone at the middle of the flange of the dock under the shelves of the Arc.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-en-church-02",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Ecology-Index"
+   ],
+   "pattern": "church-en",
+   "original": "- Fictional origin: The dock night duty first sees an Iron-Clicker at the dock edge under the shelves of Myeongbu Church in the Ttukseom Union.",
+   "replacement": "- Fictional origin: The dock night duty first sees an Iron-Clicker at the dock edge under the shelves of the Arc in the Ttukseom Union.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-en-church-03",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Ecology-Index"
+   ],
+   "pattern": "church-en",
+   "original": "- Fictional origin: When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Myeongbu Church in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog.",
+   "replacement": "- Fictional origin: When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Arc in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-en-church-04",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G04"
+   ],
+   "pattern": "church-en",
+   "original": "- Origin: After the collapse, once the inspection of the Jungnang and Tancheon trunk lines broke off, it followed aquatic food and stayed in the Ttukseom Union Myeongbu Church pump branch that people had emptied.",
+   "replacement": "- Origin: After the collapse, once the inspection of the Jungnang and Tancheon trunk lines broke off, it followed aquatic food and stayed in the Ttukseom Union Arc pump branch that people had emptied.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-en-church-05",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G04"
+   ],
+   "pattern": "church-en",
+   "original": "- Role and body: An environmental-stronghold form of the Raccoon Dog, this burrow keeper has settled into the dry refuge chamber beneath the pump station of the Ttukseom Union's Myeongbu Church, where its body fits closely.",
+   "replacement": "- Role and body: An environmental-stronghold form of the Raccoon Dog, this burrow keeper has settled into the dry refuge chamber beneath the pump station of the Ttukseom Union's Arc, where its body fits closely.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-en-church-06",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Ecology-Index"
+   ],
+   "pattern": "church-en",
+   "original": "- Territory: Iron-Clickers gather at the dock edge under the shelves of Myeongbu Church in the Ttukseom Union.",
+   "replacement": "- Territory: Iron-Clickers gather at the dock edge under the shelves of the Arc in the Ttukseom Union.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-en-church-07",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G20"
+   ],
+   "pattern": "church-en",
+   "original": "Iron plates from the shelves of Myeongbu Church are down on the lower flange.",
+   "replacement": "Iron plates from the shelves of the Arc are down on the lower flange.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-en-church-08",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G20"
+   ],
+   "pattern": "church-en",
+   "original": "Iron-Clickers gather at the dock edge under the shelves of Myeongbu Church in the Ttukseom Union.",
+   "replacement": "Iron-Clickers gather at the dock edge under the shelves of the Arc in the Ttukseom Union.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-en-church-09",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G20"
+   ],
+   "pattern": "church-en",
+   "original": "It is at the middle of the lower flange of the dock under the shelves of Myeongbu Church in the Ttukseom Union.",
+   "replacement": "It is at the middle of the lower flange of the dock under the shelves of the Arc in the Ttukseom Union.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-en-church-10",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G04"
+   ],
+   "pattern": "church-en",
+   "original": "The Raccoon Dog were raccoon family groups going back and forth between the pipelines connected to the pumping station of the Myeongbu Church in the Ttukseom Union, the dry shelters beneath the workshops, and the underground cable galleries of the Yeouido Investment Federation in the Mapo Union.",
+   "replacement": "The Raccoon Dog were raccoon family groups going back and forth between the pipelines connected to the pumping station of the Arc in the Ttukseom Union, the dry shelters beneath the workshops, and the underground cable galleries of the Yeouido Investment Federation in the Mapo Union.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-en-church-11",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G20"
+   ],
+   "pattern": "church-en",
+   "original": "The core place is the bolt holes and fillet-weld toes at the dock edge under the shelves of Myeongbu Church in the Ttukseom Union.",
+   "replacement": "The core place is the bolt holes and fillet-weld toes at the dock edge under the shelves of the Arc in the Ttukseom Union.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-en-church-12",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G20"
+   ],
+   "pattern": "church-en",
+   "original": "The dock night duty first sees an Iron-Clicker at the dock edge under the shelves of Myeongbu Church in the Ttukseom Union.",
+   "replacement": "The dock night duty first sees an Iron-Clicker at the dock edge under the shelves of the Arc in the Ttukseom Union.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-en-church-13",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G04"
+   ],
+   "pattern": "church-en",
+   "original": "They were raccoon family groups going back and forth between the pipelines connected to the pumping station of the Myeongbu Church in the Ttukseom Union, the shelters beneath the workshops, and the cable galleries of the Yeouido Investment Federation in the Mapo Union.",
+   "replacement": "They were raccoon family groups going back and forth between the pipelines connected to the pumping station of the Arc in the Ttukseom Union, the shelters beneath the workshops, and the cable galleries of the Yeouido Investment Federation in the Mapo Union.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-en-church-14",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G04"
+   ],
+   "pattern": "church-en",
+   "original": "When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Myeongbu Church in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog.",
+   "replacement": "When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Arc in the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog.",
+   "reason": "폐지된 종교 시설명 'Myeongbu Church' — 한국어 대응 문장은 같은 장소를 'Arc 펌프장/선반'으로 부르므로 영어도 같은 규칙(→ the Arc)으로 바꾼다.",
+   "source": "바이블 4절 church-en·규칙 9(기독교 성직 어휘 금지), W4 브리프 규칙 6; 한국어 대응 문장: G04 body_ko_md L9/L19('뚝섬 연합 Arc 펌프'), G20 body_ko_md L19/L20('뚝섬 연합 Arc 선반')"
+  },
+  {
+   "id": "w4-ko-prose-s01-1",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Group-G01"
+   ],
+   "pattern": "state-id-polity",
+   "original": "장기 관리는 S01, HC01 반지하 주민이 계절마다 먹이와 통행의 경계를 다시 정하는 공동 순찰에 달려 있다.",
+   "replacement": "장기 관리는 free-city, HC01 반지하 주민이 계절마다 먹이와 통행의 경계를 다시 정하는 공동 순찰에 달려 있다.",
+   "reason": "옛 국가 id의 행위자 참조 — 세력 id(government/free-city/arc)로 바꾼다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S01 행(capital) + data/sql/120-map-core.sql map_station(S01 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-en-prose-s01-1",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G01"
+   ],
+   "pattern": "state-id-polity",
+   "original": "Long-term management depended on joint patrols in which S01, HC01, and the semi-basement residents redrew the boundaries of food and passage every season.",
+   "replacement": "Long-term management depended on joint patrols in which free-city, HC01, and the semi-basement residents redrew the boundaries of food and passage every season.",
+   "reason": "옛 국가 id의 행위자 참조 — 세력 id(government/free-city/arc)로 바꾼다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S01 행(capital) + data/sql/120-map-core.sql map_station(S01 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-ko-prose-s08-1",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Group-G03"
+   ],
+   "pattern": "state-id-polity",
+   "original": "머무는 곳은 용산선 고가 하부이며, 하역 잔여가 늘어도 매일 S08까지 내려가지 않는다.",
+   "replacement": "머무는 곳은 용산선 고가 하부이며, 하역 잔여가 늘어도 매일 녹사평까지 내려가지 않는다.",
+   "reason": "옛 국가 id의 장소 참조(“까지 내려가지 않는다”) — 세력 id가 아닌 수도 역 이름(녹사평/Noksapyeong)으로 바꿔 문장의 뜻을 지킨다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S08 행(capital) + data/sql/120-map-core.sql map_station(S08 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-en-prose-s08-1",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G03"
+   ],
+   "pattern": "state-id-polity",
+   "original": "Its core was the underside of the Yongsan Line overpass, and even when unloading leftovers increased, it did not go down to S08 every day.",
+   "replacement": "Its core was the underside of the Yongsan Line overpass, and even when unloading leftovers increased, it did not go down to Noksapyeong every day.",
+   "reason": "옛 국가 id의 장소 참조(“까지 내려가지 않는다”) — 세력 id가 아닌 수도 역 이름(녹사평/Noksapyeong)으로 바꿔 문장의 뜻을 지킨다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S08 행(capital) + data/sql/120-map-core.sql map_station(S08 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-ko-prose-s05-1",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Group-G05"
+   ],
+   "pattern": "state-id-polity",
+   "original": "S05, 여의도선 HC05 H05는 공사를 중단하고 뒤쪽부터 다시 밀폐할 수 있다.",
+   "replacement": "arc, 여의도선 HC05 H05는 공사를 중단하고 뒤쪽부터 다시 밀폐할 수 있다.",
+   "reason": "옛 국가 id의 행위자 참조 — 세력 id(government/free-city/arc)로 바꾼다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S05 행(capital) + data/sql/120-map-core.sql map_station(S05 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-ko-prose-s05-2",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Group-G05"
+   ],
+   "pattern": "state-id-polity",
+   "original": "장기 관리는 일회성 포획이 아니라 S05, 여의도선 HC05가 환승 구획별 먹이·열·은신처의 변화를 공동 장부에 누적하는 일로 굳어져야 한다.",
+   "replacement": "장기 관리는 일회성 포획이 아니라 arc, 여의도선 HC05가 환승 구획별 먹이·열·은신처의 변화를 공동 장부에 누적하는 일로 굳어져야 한다.",
+   "reason": "옛 국가 id의 행위자 참조 — 세력 id(government/free-city/arc)로 바꾼다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S05 행(capital) + data/sql/120-map-core.sql map_station(S05 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-en-prose-s05-1",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G05"
+   ],
+   "pattern": "state-id-polity",
+   "original": "S05, the Yeouido Line, HC05, and H05 could stop the work and seal again from the back.",
+   "replacement": "arc, the Yeouido Line, HC05, and H05 could stop the work and seal again from the back.",
+   "reason": "옛 국가 id의 행위자 참조 — 세력 id(government/free-city/arc)로 바꾼다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S05 행(capital) + data/sql/120-map-core.sql map_station(S05 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-en-prose-s05-2",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G05"
+   ],
+   "pattern": "state-id-polity",
+   "original": "Long-term management had to harden not into one-time capture but into the work of S05, the Yeouido Line, and HC05 accumulating in a joint ledger the changes in food, heat, and shelter in each transfer sector.",
+   "replacement": "Long-term management had to harden not into one-time capture but into the work of arc, the Yeouido Line, and HC05 accumulating in a joint ledger the changes in food, heat, and shelter in each transfer sector.",
+   "reason": "옛 국가 id의 행위자 참조 — 세력 id(government/free-city/arc)로 바꾼다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S05 행(capital) + data/sql/120-map-core.sql map_station(S05 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-ko-prose-s06-1",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Group-G06"
+   ],
+   "pattern": "state-id-polity",
+   "original": "인간의 운행 효율을 위해 야생동물이 축적한 안전 시간을 일방적으로 지울 것인지는 S06, S11, HC06 사이의 쟁점이다.",
+   "replacement": "인간의 운행 효율을 위해 야생동물이 축적한 안전 시간을 일방적으로 지울 것인지는 government, arc, HC06 사이의 쟁점이다.",
+   "reason": "옛 국가 id의 행위자 참조 — 세력 id(government/free-city/arc)로 바꾼다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S06 행(capital) + data/sql/120-map-core.sql map_station(S06 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-ko-prose-s06-2",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Group-G06"
+   ],
+   "pattern": "state-id-polity",
+   "original": "인간의 운행 효율을 위해 야생동물이 축적한 안전 규칙을 일방적으로 바꿀 수 있는지가 S06, 강남선 HC06 H06 사이의 쟁점이 된다.",
+   "replacement": "인간의 운행 효율을 위해 야생동물이 축적한 안전 규칙을 일방적으로 바꿀 수 있는지가 government, 강남선 HC06 H06 사이의 쟁점이 된다.",
+   "reason": "옛 국가 id의 행위자 참조 — 세력 id(government/free-city/arc)로 바꾼다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S06 행(capital) + data/sql/120-map-core.sql map_station(S06 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-ko-prose-s06-3",
+   "kind": "sentence",
+   "lang": "ko",
+   "slugs": [
+    "Hostile-Group-G06"
+   ],
+   "pattern": "state-id-polity",
+   "original": "왜가리·가마우지를 오래 관리하려면 이동기마다 임시 대응반을 꾸리는 수준을 넘어 S06, 강남선 HC06이 수면과 선로를 하나의 계절 자산으로 인계하는 체계가 필요하다.",
+   "replacement": "왜가리·가마우지를 오래 관리하려면 이동기마다 임시 대응반을 꾸리는 수준을 넘어 government, 강남선 HC06이 수면과 선로를 하나의 계절 자산으로 인계하는 체계가 필요하다.",
+   "reason": "옛 국가 id의 행위자 참조 — 세력 id(government/free-city/arc)로 바꾼다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S06 행(capital) + data/sql/120-map-core.sql map_station(S06 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-en-prose-s06-1",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G06"
+   ],
+   "pattern": "state-id-polity",
+   "original": "Whether to unilaterally erase the safety time accumulated by wild animals for human operating efficiency was the issue among S06, S11, and HC06.",
+   "replacement": "Whether to unilaterally erase the safety time accumulated by wild animals for human operating efficiency was the issue among government, arc, and HC06.",
+   "reason": "옛 국가 id의 행위자 참조 — 세력 id(government/free-city/arc)로 바꾼다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S06 행(capital) + data/sql/120-map-core.sql map_station(S06 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-en-prose-s06-2",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G06"
+   ],
+   "pattern": "state-id-polity",
+   "original": "Whether the safety rules the wild animals had accumulated could be changed unilaterally for the sake of human operating efficiency became the central issue among S06, the Gangnam Line, HC06, and H06.",
+   "replacement": "Whether the safety rules the wild animals had accumulated could be changed unilaterally for the sake of human operating efficiency became the central issue among government, the Gangnam Line, HC06, and H06.",
+   "reason": "옛 국가 id의 행위자 참조 — 세력 id(government/free-city/arc)로 바꾼다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S06 행(capital) + data/sql/120-map-core.sql map_station(S06 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-en-prose-s06-3",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Group-G06"
+   ],
+   "pattern": "state-id-polity",
+   "original": "Long-term management of the Grey Heron and Cormorant required going beyond forming temporary response teams each migration period to a system in which S06, the Gangnam Line, and HC06 handed over water and tracks as a single seasonal asset.",
+   "replacement": "Long-term management of the Grey Heron and Cormorant required going beyond forming temporary response teams each migration period to a system in which government, the Gangnam Line, and HC06 handed over water and tracks as a single seasonal asset.",
+   "reason": "옛 국가 id의 행위자 참조 — 세력 id(government/free-city/arc)로 바꾼다.",
+   "source": "W4 브리프 규칙 4; data/sql/040-wiki-states.sql S06 행(capital) + data/sql/120-map-core.sql map_station(S06 수도 역) + 바이블 2.4 14/7/4 배정표"
+  },
+  {
+   "id": "w4-en-08",
+   "kind": "sentence",
+   "lang": "en",
+   "slugs": [
+    "Hostile-Ecology-Index",
+    "Hostile-Group-G13",
+    "Hostile-Group-G14",
+    "Hostile-Group-G16",
+    "Hostile-Group-G17",
+    "Hostile-Group-G18",
+    "Hostile-Group-G25",
+    "Hostile-Group-G26"
+   ],
+   "pattern": "slaughter-order-en(측정 누락 변형)",
+   "original": "Purposeless machines outside the killing network roamed in small groups that people could counter.",
+   "replacement": "Purposeless machines outside the network that still runs roamed in small groups that people could counter.",
+   "reason": "게이트 리뷰 W4-R1 — 측정 금지 패턴이 놓친 살육 네트워크 변형('killing network'). 한국어 규칙 w4-ko-04('여전히 돌아가는 네트워크')와 같은 승인 의미로 15곳을 함께 바꾼다. 패턴 미적중을 보존 사유로 쓰지 않는다.",
+   "source": "게이트 리뷰 .omo/evidence/w4-gate-review.md W4-R1; 바이블 1절 규칙 2·6; executor 원요청 예시('slaughter network becomes the network that still runs'); 한국어 대응 규칙 w4-ko-04"
+  }
+ ]
+}
