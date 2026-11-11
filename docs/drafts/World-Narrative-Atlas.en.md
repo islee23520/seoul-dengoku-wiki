@@ -1,5 +1,5 @@
 ---
-model: cpa/claude-opus-5-5 (effective_model from task json; agent-authored by hand in the task session; 0 completion calls; people table rows generated from data/sql/050-wiki-people.sql); not from a Gemini model
+model: cpa/claude-opus-5-5
 ---
 <a id="world-narrative-atlas-title"></a>
 
