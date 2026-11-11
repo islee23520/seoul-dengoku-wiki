@@ -1,5 +1,5 @@
 /**
- * 서울:전국 — 영원한 겨울의 연대기 (Motion Storybook VN) · story script v3
+ * 서울:전국 — 겨울의 연대기 (Motion Storybook VN) · story script v3
  *
  * Every voiced line lives here. Line IDs carry the `v3-` prefix so no clip from
  * the retired v1 script (p1, f1, government-m1 ...) can ever be matched.
@@ -128,7 +128,7 @@ export const SCENES: StoryScene[] = [
     ],
   },
   {
-    id: "winter", act: { ko: "서장", en: "Prologue" }, title: { ko: "영원한 겨울", en: "The Eternal Winter" },
+    id: "winter", act: { ko: "서장", en: "Prologue" }, title: { ko: "겨울", en: "Winter" },
     place: { ko: "남산이 보이는 길", en: "Road below Namsan" }, year: "대정전 뒤", bg: "namsan",
     lines: [
       N("v3-win-01", "AI들이 서로 갈라지면서 지휘가 약해졌다. 사람들은 지상으로 돌아오기 시작했다.", "The AIs split apart and their command weakened. People began returning to the surface."),

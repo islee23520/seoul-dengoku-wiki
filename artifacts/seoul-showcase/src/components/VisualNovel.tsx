@@ -483,8 +483,8 @@ function Title({ onBegin, subs: sb }: { onBegin: () => void; subs: boolean }) {
     <main data-layout="title" className="wrap-text relative z-20 flex flex-1 flex-col justify-end px-6 pb-14 pt-6 md:justify-center md:px-16 md:pb-10">
       <p className="rise font-mono text-[10px] uppercase tracking-[0.5em] text-[hsl(var(--ember))]">모션 그림 동화 · 2026 — 2126</p>
       <h1 className="rise mt-4 font-display text-6xl font-extrabold leading-[0.95] text-[hsl(var(--parchment))] md:text-8xl lg:text-[8.5rem]" style={{ animationDelay: "200ms" }}>서울<span className="text-[hsl(var(--ember))]">:</span>전국</h1>
-      <p className="rise mt-3 font-display text-2xl text-[hsl(var(--parchment)/0.9)] md:text-4xl" style={{ animationDelay: "350ms" }}>영원한 겨울의 연대기</p>
-      {sb && <p className="rise font-en text-lg italic text-[hsl(var(--frost))] md:text-2xl" style={{ animationDelay: "420ms" }}>A Chronicle of the Eternal Winter</p>}
+      <p className="rise mt-3 font-display text-2xl text-[hsl(var(--parchment)/0.9)] md:text-4xl" style={{ animationDelay: "350ms" }}>겨울의 연대기</p>
+      {sb && <p className="rise font-en text-lg italic text-[hsl(var(--frost))] md:text-2xl" style={{ animationDelay: "420ms" }}>A Chronicle of the Winter</p>}
       <p className="rise mt-6 max-w-md text-base leading-relaxed text-[hsl(var(--parchment)/0.85)]" style={{ animationDelay: "550ms" }}>
         전령 이연이 얼어붙은 서울로 당신을 안내한다. 기록실, 차량기지, 무전 당직, 수서 창구, 분공방에서 다섯 사람을 만나며 나라들이 세 국가로 묶인 과정을 듣는다.
       </p>
