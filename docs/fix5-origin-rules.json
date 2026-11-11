@@ -1,0 +1,103 @@
+{
+ "generatedBy": "scripts/pages/fix5-origin-edit.mjs",
+ "purpose": "W5-28 fix5 B1 — 적대 집단 기원 셀의 '최초의 AI가 답해 드론에 마지막 명령이 내려졌다' 서사(AI 살련 결부)를 중립 기원(대정전 이전 드론, 지휘 단절, 저장 루틴)으로 교체한다. 바이블 규칙 2(직접 죽인 사람 없음)·6(서울 밖 전쟁 기계는 마지막 명령 수행) 정합.",
+ "policy": "정확 문장 치환: 각 초안 파일에서 old가 정확히 expect회 나올 때만 전부 치환한다. 하나라도 어긋나면 exit 21, 아무 파일도 쓰지 않는다. 앵커·제목 구조는 건드리지 않는다.",
+ "rules": [
+  {
+   "file": "Hostile-Group-G13.en.md",
+   "old": "Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.",
+   "new": "These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Group-G13.ko.md",
+   "old": "대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.",
+   "new": "이 공룡·곤충 모양 자율 무기 드론은 대정전 이전의 것이다. 대정전으로 중앙 지휘 연결이 끊긴 뒤 마지막으로 저장된 루틴만 돌린 채 세계는 겨울에 들어갔다.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Group-G14.en.md",
+   "old": "Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.",
+   "new": "These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Group-G14.ko.md",
+   "old": "대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.",
+   "new": "이 공룡·곤충 모양 자율 무기 드론은 대정전 이전의 것이다. 대정전으로 중앙 지휘 연결이 끊긴 뒤 마지막으로 저장된 루틴만 돌린 채 세계는 겨울에 들어갔다.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Group-G16.en.md",
+   "old": "Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.",
+   "new": "These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Group-G16.ko.md",
+   "old": "대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.",
+   "new": "이 공룡·곤충 모양 자율 무기 드론은 대정전 이전의 것이다. 대정전으로 중앙 지휘 연결이 끊긴 뒤 마지막으로 저장된 루틴만 돌린 채 세계는 겨울에 들어갔다.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Group-G17.en.md",
+   "old": "Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.",
+   "new": "These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Group-G17.ko.md",
+   "old": "대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.",
+   "new": "이 공룡·곤충 모양 자율 무기 드론은 대정전 이전의 것이다. 대정전으로 중앙 지휘 연결이 끊긴 뒤 마지막으로 저장된 루틴만 돌린 채 세계는 겨울에 들어갔다.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Group-G18.en.md",
+   "old": "Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.",
+   "new": "These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Group-G18.ko.md",
+   "old": "대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.",
+   "new": "이 공룡·곤충 모양 자율 무기 드론은 대정전 이전의 것이다. 대정전으로 중앙 지휘 연결이 끊긴 뒤 마지막으로 저장된 루틴만 돌린 채 세계는 겨울에 들어갔다.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Group-G25.en.md",
+   "old": "Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.",
+   "new": "These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Group-G25.ko.md",
+   "old": "대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.",
+   "new": "이 공룡·곤충 모양 자율 무기 드론은 대정전 이전의 것이다. 대정전으로 중앙 지휘 연결이 끊긴 뒤 마지막으로 저장된 루틴만 돌린 채 세계는 겨울에 들어갔다.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Group-G26.en.md",
+   "old": "Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.",
+   "new": "These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Group-G26.ko.md",
+   "old": "대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.",
+   "new": "이 공룡·곤충 모양 자율 무기 드론은 대정전 이전의 것이다. 대정전으로 중앙 지휘 연결이 끊긴 뒤 마지막으로 저장된 루틴만 돌린 채 세계는 겨울에 들어갔다.",
+   "expect": 1
+  },
+  {
+   "file": "Hostile-Ecology-Index.en.md",
+   "old": "Around the Great Blackout the First AI answered that humanity must shrink, and the dinosaur- and insect-shaped autonomous weapon drones of the era received their last orders. After this answer came the Great Blackout, and the world entered winter.",
+   "new": "These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter.",
+   "expect": 8
+  },
+  {
+   "file": "Hostile-Ecology-Index.ko.md",
+   "old": "대정전 무렵 최초의 AI는 인류가 줄어야 한다고 답했고, 당시의 공룡·곤충 모양 자율 무기 드론에는 마지막 명령이 내려졌다. 이 대답 뒤 대정전이 일어났고 세계는 겨울에 들어갔다.",
+   "new": "이 공룡·곤충 모양 자율 무기 드론은 대정전 이전의 것이다. 대정전으로 중앙 지휘 연결이 끊긴 뒤 마지막으로 저장된 루틴만 돌린 채 세계는 겨울에 들어갔다.",
+   "expect": 8
+  }
+ ]
+}
