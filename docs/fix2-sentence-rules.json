@@ -14,7 +14,7 @@
   "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
  },
  "counts": {
-  "rules": 4321,
+  "rules": 4348,
   "kept": 1180,
   "keepByReason": {
    "소속 표기": 461,
@@ -30,8 +30,8 @@
    "강남·서초 아크 공작령(정본 2.4 정합)": 4
   },
   "byColumn": {
-   "json": 723,
-   "json_ko": 1053
+   "json": 736,
+   "json_ko": 1067
   },
   "personsTouched": 273,
   "skippedAlreadyFixed": 44,
@@ -52,7 +52,8 @@
   "fix16Gate7GovAideRules": 44,
   "fix16AmsaRules": 22,
   "fix16BujeGeoRules": 2,
-  "fix18OutsideLordRules": 160
+  "fix18OutsideLordRules": 160,
+  "fix19Gate9StandardsLeagueRules": 27
  },
  "rules": [
   {
@@ -39738,6 +39739,249 @@
    "old": " · 포천시 영주",
    "new": "",
    "reason": "fix18 — Q18 승인 기본값: 서울 밖 영주 직위 문구를 지우고 실직만 남긴다(25공작령 외 영주 불인정)"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json_ko",
+   "path": "$.title",
+   "old": "규격맹 봉신 · 통신 정비·배분 담당(전 대전선 군주, 왕격 보존)",
+   "new": "통신 정비·배분 담당(전 대전선 군주)",
+   "reason": "fix19 게이트9 — 폐지 규격맹 봉신 직함을 로스터 현재 역할(독립 대전)·전 대전선 군주 연혁로"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json_ko",
+   "path": "$.position",
+   "old": "규격맹 봉신 · 통신 정비·배분 담당(전 대전선 군주, 왕격 보존)",
+   "new": "통신 정비·배분 담당(전 대전선 군주)",
+   "reason": "fix19 게이트9 — 폐지 규격맹 봉신 직함을 로스터 현재 역할(독립 대전)·전 대전선 군주 연혁로"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json_ko",
+   "path": "$.fields.소속",
+   "old": "규격맹 봉신(전 중립 대전; 2026-10-22 세력 이동)",
+   "new": "무소속(전 중립 대전; 2026-10-22 세력 이동)",
+   "reason": "fix19 게이트9 — 소속을 형제 독립 인물(0038·0039)의 무소속 표기로"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json_ko",
+   "path": "$.fields.민간·공동체 직무",
+   "old": "왕격은 규격맹 봉신의 개인 정치 등급으로 보존된다",
+   "new": "왕격은 이전 정치 등급의 기록으로만 남는다",
+   "reason": "fix19 게이트9 — 규격맹 봉신 정치 등급 현재형을 연혁으로"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "규격맹 봉신(전 중립 대전; 2026-10-22 세력 이동)",
+   "new": "무소속(전 중립 대전; 2026-10-22 세력 이동)",
+   "reason": "fix19 게이트9 — 연혁 소속 불릿 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "왕격은 규격맹 봉신의 개인 정치 등급으로 보존된다",
+   "new": "왕격은 이전 정치 등급의 기록으로만 남는다",
+   "reason": "fix19 게이트9 — 연혁 직무 불릿 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "2026-10-22 규격맹 세력 이동으로 해소하고, 왕격은 규격맹 봉신의 개인 정치 등급으로 보존한다. 세 직속 관계(장우석·허다온·구찬솔)는 규격맹 조합 안에서 보존하며",
+   "new": "2026-10-22 세력 이동으로 해소하고, 왕격은 이전 정치 등급의 기록으로만 남긴다. 세 직속 관계(장우석·허다온·구찬솔)는 보존하며",
+   "reason": "fix19 게이트9 — 연혁 본문: 규격맹 봉신·조합 현재형 제거(직속 관계는 규격맹 소속 문구만 빼고 보존)"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json",
+   "path": "$.title",
+   "old": "Vassal of the Standards League · in charge of communications maintenance and distribution (former lord of the Daejeon Line, royal rank preserved)",
+   "new": "In charge of communications maintenance and distribution (former lord of the Daejeon Line)",
+   "reason": "fix19 게이트9 — EN 직함 동일 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json",
+   "path": "$.position",
+   "old": "Vassal of the Standards League · in charge of communications maintenance and distribution (former lord of the Daejeon Line, royal rank preserved)",
+   "new": "In charge of communications maintenance and distribution (former lord of the Daejeon Line)",
+   "reason": "fix19 게이트9 — EN 직함 동일 정합"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json",
+   "path": "$.fields.Affiliation",
+   "old": "Vassal of the Standards League (formerly neutral Daejeon; faction shift of 2026-10-22)",
+   "new": "Unaffiliated (formerly neutral Daejeon; faction shift of 2026-10-22)",
+   "reason": "fix19 게이트9 — EN 소속"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json",
+   "path": "$.fields.Civil and Community Duties",
+   "old": "Wanggyeok is preserved as a personal political rank of a Standards League vassal",
+   "new": "Wanggyeok survives only as a record of a former political rank",
+   "reason": "fix19 게이트9 — EN 직무"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json",
+   "path": "$.biography",
+   "old": "Affiliation: Vassal of the Standards League (formerly neutral Daejeon; faction shift of 2026-10-22)",
+   "new": "Affiliation: Unaffiliated (formerly neutral Daejeon; faction shift of 2026-10-22)",
+   "reason": "fix19 게이트9 — EN 연혁 소속 불릿"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json",
+   "path": "$.biography",
+   "old": "was dissolved by the faction shift of 2026-10-22, and Wanggyeok is preserved as a personal political rank of a Standards League vassal.",
+   "new": "was dissolved by the faction shift of 2026-10-22, and Wanggyeok survives only as a record of a former political rank.",
+   "reason": "fix19 게이트9 — EN 연혁 직무 불릿"
+  },
+  {
+   "file": "090",
+   "id": "person-1008",
+   "column": "json",
+   "path": "$.biography",
+   "old": "dissolved by the Standards League faction shift of 2026-10-22, and Wanggyeok is preserved as a personal political rank of a Standards League vassal. The three direct relationships (Jang Useok, Heo Daon, Gu Chansol) are preserved within the Standards League union and",
+   "new": "dissolved by the faction shift of 2026-10-22, and Wanggyeok survives only as a record of a former political rank. The three direct relationships (Jang Useok, Heo Daon, Gu Chansol) are preserved and",
+   "reason": "fix19 게이트9 — EN 연혁 본문"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json_ko",
+   "path": "$.sections.생애",
+   "old": "직속 주군은 규격맹 봉신이 된 민웅기로 보존한다",
+   "new": "전 상관은 민웅기로 보존한다",
+   "reason": "fix19 게이트9 — 직속 주군/규격맹 봉신 현재형을 전 상관으로"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "직속 주군은 규격맹 봉신이 된 민웅기로 보존한다",
+   "new": "전 상관은 민웅기로 보존한다",
+   "reason": "fix19 게이트9 — 연혁 생애 문단 동일"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json",
+   "path": "$.sections.Life",
+   "old": "His direct lord is preserved as Min Ungi, who became a vassal of the Standards League.",
+   "new": "His former superior is preserved as Min Ungi.",
+   "reason": "fix19 게이트9 — EN 생애"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json",
+   "path": "$.biography",
+   "old": "His direct lord is preserved as Min Ungi, who became a vassal of the Standards League.",
+   "new": "His former superior is preserved as Min Ungi.",
+   "reason": "fix19 게이트9 — EN 연혁 생애 문단"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[0].stress",
+   "old": "규격맹이 부품 봉쇄로 쪼개지는 것",
+   "new": "규격 체계가 부품 봉쇄로 쪼개지는 것",
+   "reason": "fix19 게이트9 — 규격맹을 현재 조직으로 쓰는 공포 문장을 규격 체계로"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json_ko",
+   "path": "$.characterProfile.traits[1].stress",
+   "old": "규격맹이 부품 봉쇄로 쪼개지는 것",
+   "new": "규격 체계가 부품 봉쇄로 쪼개지는 것",
+   "reason": "fix19 게이트9 — 규격맹을 현재 조직으로 쓰는 공포 문장을 규격 체계로"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json_ko",
+   "path": "$.sections.공포",
+   "old": "규격맹이 부품 봉쇄로 쪼개지는 것",
+   "new": "규격 체계가 부품 봉쇄로 쪼개지는 것",
+   "reason": "fix19 게이트9 — 규격맹을 현재 조직으로 쓰는 공포 문장을 규격 체계로"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "규격맹이 부품 봉쇄로 쪼개지는 것",
+   "new": "규격 체계가 부품 봉쇄로 쪼개지는 것",
+   "reason": "fix19 게이트9 — 규격맹을 현재 조직으로 쓰는 공포 문장을 규격 체계로"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json_ko",
+   "path": "$.biography",
+   "old": "규격맹의 모든 개정에 감사 날인과",
+   "new": "모든 규격 개정에 감사 날인과",
+   "reason": "fix19 게이트9 — 야망 문장"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json",
+   "path": "$.sections.Fear",
+   "old": "split the Standards League into parts blockades",
+   "new": "split the standards system into parts blockades",
+   "reason": "fix19 게이트9 — EN 공포"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json",
+   "path": "$.biography",
+   "old": "split the Standards League into parts blockades",
+   "new": "split the standards system into parts blockades",
+   "reason": "fix19 게이트9 — EN 연혁 공포"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json",
+   "path": "$.sections.Ambition",
+   "old": "every revision of the Standards League to carry",
+   "new": "every standards revision to carry",
+   "reason": "fix19 게이트9 — EN 야망"
+  },
+  {
+   "file": "090",
+   "id": "person-0035",
+   "column": "json",
+   "path": "$.biography",
+   "old": "every revision of the Standards League to carry",
+   "new": "every standards revision to carry",
+   "reason": "fix19 게이트9 — EN 연혁 야망"
   }
  ],
  "kept": [
