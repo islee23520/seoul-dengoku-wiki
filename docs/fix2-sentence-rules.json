@@ -14,7 +14,7 @@
   "d1aCells": "D1a 61셀(json_ko characterProfile.traits[0].behavior, 문장 family 2종)은 ko-place-of-org 부류로 그대로 잡혀 전량 복원된다."
  },
  "counts": {
-  "rules": 2035,
+  "rules": 2053,
   "kept": 1180,
   "keepByReason": {
    "소속 표기": 461,
@@ -39,7 +39,8 @@
   "d3ResidenceRules": 12,
   "d2CorrectiveRules": 12,
   "fix9VassalageRules": 5,
-  "fix12DuchyFactionRules": 24
+  "fix12DuchyFactionRules": 24,
+  "fix13KingdomNameRules": 18
  },
  "rules": [
   {
@@ -18374,6 +18375,168 @@
    "old": "arc",
    "new": "government",
    "reason": "fix12 가신도 노드 state 정합 — person-0286(노원구(바이블 §2.4 #14) 정부 영주, 050 faction_id와 동일 근거)"
+  },
+  {
+   "file": "090",
+   "id": "person-0100",
+   "column": "json",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "Arc Kingdom",
+   "new": "The Government Kingdom",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0100(성동구(바이블 §2.4 #4) 정부 영주); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0100",
+   "column": "json_ko",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "Arc 왕국",
+   "new": "정부 왕국",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0100(성동구(바이블 §2.4 #4) 정부 영주); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0287",
+   "column": "json",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "The Government Kingdom",
+   "new": "Arc Kingdom",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0287(서초구(§2.4 #22) 아크 영주); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0287",
+   "column": "json_ko",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "정부 왕국",
+   "new": "Arc 왕국",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0287(서초구(§2.4 #22) 아크 영주); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0235",
+   "column": "json",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "Standards League Kingdom",
+   "new": "The Government Kingdom",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0235(서대문구(§2.4 #10) 정부 영주); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0235",
+   "column": "json_ko",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "규격맹 왕국",
+   "new": "정부 왕국",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0235(서대문구(§2.4 #10) 정부 영주); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0236",
+   "column": "json",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "Standards League Kingdom",
+   "new": "The Government Kingdom",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0236(마포구(§2.4 #1) 정부 영주); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0236",
+   "column": "json_ko",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "규격맹 왕국",
+   "new": "정부 왕국",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0236(마포구(§2.4 #1) 정부 영주); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0070",
+   "column": "json",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "Standards League Kingdom",
+   "new": "Arc Kingdom",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0070(서초구(§2.4 #22) 아크 영주); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0070",
+   "column": "json_ko",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "규격맹 왕국",
+   "new": "Arc 왕국",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0070(서초구(§2.4 #22) 아크 영주); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0116",
+   "column": "json",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "Government of the Republic of Korea Kingdom",
+   "new": "Arc Kingdom",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0116(강동구(§2.4 #25) 아크 영주); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0116",
+   "column": "json_ko",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "대한민국정부 왕국",
+   "new": "Arc 왕국",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0116(강동구(§2.4 #25) 아크 영주); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0061",
+   "column": "json",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "Standards League Kingdom",
+   "new": "Arc Kingdom",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0061(아크 소속(faction arc)); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0061",
+   "column": "json_ko",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "규격맹 왕국",
+   "new": "Arc 왕국",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0061(아크 소속(faction arc)); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0288",
+   "column": "json",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "The Government Kingdom",
+   "new": "Arc Kingdom",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0288(아크 소속(faction arc)); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0288",
+   "column": "json_ko",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "정부 왕국",
+   "new": "Arc 왕국",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0288(아크 소속(faction arc)); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "Arc Kingdom",
+   "new": "The Government Kingdom",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0389(정부 소속(faction government)); 안정 id title:kingdom-sNN·parentTitleId는 불변"
+  },
+  {
+   "file": "090",
+   "id": "person-0389",
+   "column": "json_ko",
+   "path": "$.openingTitles[0].parentTitle.name",
+   "old": "Arc 왕국",
+   "new": "정부 왕국",
+   "reason": "fix13 개막 타이틀 상위 왕국 표기명을 본인 세력 표기로 정합 — person-0389(정부 소속(faction government)); 안정 id title:kingdom-sNN·parentTitleId는 불변"
   }
  ],
  "kept": [
