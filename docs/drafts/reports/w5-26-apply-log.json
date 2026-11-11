@@ -1,10 +1,10 @@
 {
- "applied_at": "2026-11-11T00:26:33.217Z",
+ "applied_at": "2026-11-11T00:35:16.949Z",
  "sql_dir": "C:/Users/oliver/AppData/Local/Temp/wt-w5-26",
  "rules_file": "docs/gdd-rules.json",
  "dry_run": false,
  "row_count": 129,
- "rules_total": 45,
+ "rules_total": 47,
  "rules_applied_detail": [
   {
    "id": "s01",
@@ -320,6 +320,20 @@
     "doc.Home"
    ],
    "replacement": "reword"
+  },
+  {
+   "id": "r3a",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
+  },
+  {
+   "id": "r3b",
+   "documents": [
+    "doc.Home"
+   ],
+   "replacement": "reword"
   }
  ],
  "documents_touched": [
@@ -340,11 +354,11 @@
   "doc.mechanism-design-index-d12"
  ],
  "file_sha256_before": "3270c1dacb9b388b2feb91d19970afac424f538f571c2a8d44a9c9a6b2fcdea9",
- "file_sha256_after": "743ffe8f5e2adce19b42458dce41fce7717910cb021ec7f5b762b9578eb0f29e",
+ "file_sha256_after": "34495b19dd318741123fc5a0d36c1f9a1c386ca2e8f9c19a04e370a2c805e1c3",
  "file_chars_before": 7943281,
- "file_chars_after": 7942617,
+ "file_chars_after": 7942605,
  "file_disk_bytes_before": 9220025,
- "file_disk_bytes_after": 9219218,
+ "file_disk_bytes_after": 9219200,
  "roundtrip_precheck": "ok (129/129 INSERT 재직렬화 바이트 일치)",
  "per_document": [
   {
@@ -631,9 +645,9 @@
    "document": "doc.Home",
    "touched": true,
    "chars_before": 9959,
-   "chars_after": 9907,
+   "chars_after": 9895,
    "disk_bytes_before": 12959,
-   "disk_bytes_after": 12891
+   "disk_bytes_after": 12873
   },
   {
    "document": "doc.Issue-101-Ui-Ux-Decisions",

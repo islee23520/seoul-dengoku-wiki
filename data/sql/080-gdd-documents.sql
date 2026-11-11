@@ -6994,7 +6994,7 @@ Write in the style of the character sections of Namuwiki''s [Bird That Drinks Bl
 
 | Document | Description |
 | --- | --- |
-| Characters | The Sixteen Suryeong and the Chamha |
+| Characters | The Suryeong and the Chamha |
 | Character Compendium | Named People |
 | Character Card Contract | Field Rules |
 | Character Registration Template | Empty Field |
@@ -7096,7 +7096,7 @@ Generated art slots are not yet connected to the runtime screens. Approving and 
 
 | 문서 | 설명 |
 | --- | --- |
-| 등장인물 | 수령 열여섯과 참하 |
+| 등장인물 | 수령과 참하 |
 | 인물 총람 | 이름 있는 사람 |
 | 인물 카드 계약 | 칸 규칙 |
 | 인물 등록 템플릿 | 빈 칸 |
