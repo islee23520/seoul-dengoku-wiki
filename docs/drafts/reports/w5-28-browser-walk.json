@@ -1,7 +1,9 @@
 {
- "base": "http://127.0.0.1:43426",
+ "base": "http://127.0.0.1:63666",
  "edge": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe (CDP)",
- "pages": 29,
+ "gddSlug": "architecture/unity-architecture",
+ "gddNested": true,
+ "pages": 36,
  "results": [
   {
    "lang": "en",
@@ -90,7 +92,7 @@
    "probeErrors": 0,
    "consoleErrors": 0,
    "consoleErrorSample": [],
-   "h1": "Seoul Subway States Timeline 2030–2126 ​",
+   "h1": "Century Annals ​",
    "langToggle": true
   },
   {
@@ -238,6 +240,17 @@
   },
   {
    "lang": "en",
+   "name": "Sindorim-Junction-Cargo-Gate",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "Sindorim Junction Cargo Gate ​"
+  },
+  {
+   "lang": "en",
    "name": "person-0145",
    "status": 200,
    "cdpErrors": 0,
@@ -271,6 +284,50 @@
   },
   {
    "lang": "en",
+   "name": "person-0170",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "Bak Tae-gyeom ​"
+  },
+  {
+   "lang": "en",
+   "name": "person-0195",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "Oh Hae-rin ​"
+  },
+  {
+   "lang": "en",
+   "name": "person-0406",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "Seon Chobyeol ​"
+  },
+  {
+   "lang": "en",
+   "name": "person-1017",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "Ji Yeon-hui ​"
+  },
+  {
+   "lang": "en",
    "name": "person-1018",
    "status": 200,
    "cdpErrors": 0,
@@ -280,6 +337,17 @@
    "consoleErrorSample": [],
    "h1": "Go Ye-jin ​",
    "langToggle": true
+  },
+  {
+   "lang": "en",
+   "name": "person-1019",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "Bak Seong-su ​"
   },
   {
    "lang": "en",
@@ -324,6 +392,17 @@
    "consoleErrors": 0,
    "consoleErrorSample": [],
    "h1": "서울:전국"
+  },
+  {
+   "lang": "en",
+   "name": "gdd-doc-nested",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "Unity Structure ​"
   },
   {
    "lang": "ko",
@@ -412,7 +491,7 @@
    "probeErrors": 0,
    "consoleErrors": 0,
    "consoleErrorSample": [],
-   "h1": "서울전국 연표 2030–2126 ​",
+   "h1": "서울전국 연표 ​",
    "langToggle": true
   },
   {
@@ -560,6 +639,17 @@
   },
   {
    "lang": "ko",
+   "name": "Sindorim-Junction-Cargo-Gate",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "신도림 연결부 화물문 ​"
+  },
+  {
+   "lang": "ko",
    "name": "person-0145",
    "status": 200,
    "cdpErrors": 0,
@@ -593,6 +683,50 @@
   },
   {
    "lang": "ko",
+   "name": "person-0170",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "박태겸 ​"
+  },
+  {
+   "lang": "ko",
+   "name": "person-0195",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "오해린 ​"
+  },
+  {
+   "lang": "ko",
+   "name": "person-0406",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "선초별 ​"
+  },
+  {
+   "lang": "ko",
+   "name": "person-1017",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "지연희 ​"
+  },
+  {
+   "lang": "ko",
    "name": "person-1018",
    "status": 200,
    "cdpErrors": 0,
@@ -602,6 +736,17 @@
    "consoleErrorSample": [],
    "h1": "고예진 ​",
    "langToggle": true
+  },
+  {
+   "lang": "ko",
+   "name": "person-1019",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "박성수 ​"
   },
   {
    "lang": "ko",
@@ -640,6 +785,17 @@
    "lang": "ko",
    "name": "showcase",
    "status": 404
+  },
+  {
+   "lang": "ko",
+   "name": "gdd-doc-nested",
+   "status": 200,
+   "cdpErrors": 0,
+   "cdpErrorSample": [],
+   "probeErrors": 0,
+   "consoleErrors": 0,
+   "consoleErrorSample": [],
+   "h1": "유니티 구조 ​"
   }
  ],
  "shots": [
@@ -649,15 +805,15 @@
   },
   {
    "file": "en-home-390.png",
-   "bytes": 59274
+   "bytes": 59285
   },
   {
    "file": "en-factions-index-1280.png",
-   "bytes": 118920
+   "bytes": 118911
   },
   {
    "file": "en-factions-index-390.png",
-   "bytes": 60781
+   "bytes": 60787
   },
   {
    "file": "en-person-1018-1280.png",
@@ -665,7 +821,7 @@
   },
   {
    "file": "en-person-1018-390.png",
-   "bytes": 44029
+   "bytes": 43953
   },
   {
    "file": "en-Hostile-Ecology-Index-1280.png",
@@ -673,7 +829,7 @@
   },
   {
    "file": "en-Hostile-Ecology-Index-390.png",
-   "bytes": 60380
+   "bytes": 60368
   },
   {
    "file": "ko-home-1280.png",
@@ -681,15 +837,15 @@
   },
   {
    "file": "ko-home-390.png",
-   "bytes": 33289
+   "bytes": 33287
   },
   {
    "file": "ko-factions-index-1280.png",
-   "bytes": 53761
+   "bytes": 53751
   },
   {
    "file": "ko-factions-index-390.png",
-   "bytes": 28739
+   "bytes": 28745
   },
   {
    "file": "ko-person-1018-1280.png",
@@ -707,5 +863,9 @@
    "file": "ko-Hostile-Ecology-Index-390.png",
    "bytes": 36330
   }
- ]
+ ],
+ "edgeCleanup": {
+  "browserClose": true,
+  "killRounds": 0
+ }
 }
