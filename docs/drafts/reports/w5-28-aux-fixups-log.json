@@ -294,6 +294,14 @@
  "scan110": {
   "fixedCells": 4,
   "postFixScanHits": 0,
-  "preFixScan": "변경 셀 2,128개(w2-applied 대비) 휴리스틱: midCap 1(=c624 수정 대상), doubled 0, article 0, particle 0, hangul-in-en 0 — scripts/pages/w5-28-inspect-110d.mjs"
+  "preFixScan": {
+   "changedCells": 2128,
+   "midCapEN": 1,
+   "doubled": 0,
+   "article": 0,
+   "particle": 0,
+   "hangulInEN": 0
+  },
+  "preFixScanNote": "변경 셀 = w2-applied(사전 상태)와의 경로 단위 비교. midCapEN 1건과 ko/en 드리프트 1건(Council of Elders)이 (b)의 수정 대상, 나머지 지표 0건."
  }
 }

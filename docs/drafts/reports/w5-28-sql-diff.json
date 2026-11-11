@@ -1,0 +1,794 @@
+{
+ "baseRef": "origin/main",
+ "fileDelta": {
+  "added": [],
+  "removed": []
+ },
+ "rowCounts": {
+  "clan": {
+   "base": 177,
+   "head": 177
+  },
+  "clan_member": {
+   "base": 955,
+   "head": 955
+  },
+  "faction": {
+   "base": 4,
+   "head": 4
+  },
+  "family_tree": {
+   "base": 148,
+   "head": 148
+  },
+  "gdd_category": {
+   "base": 8,
+   "head": 8
+  },
+  "gdd_document": {
+   "base": 129,
+   "head": 129
+  },
+  "map_edge": {
+   "base": 381,
+   "head": 381
+  },
+  "map_holding": {
+   "base": 50,
+   "head": 50
+  },
+  "map_landmark": {
+   "base": 19,
+   "head": 19
+  },
+  "map_line": {
+   "base": 24,
+   "head": 24
+  },
+  "map_meta": {
+   "base": 8,
+   "head": 8
+  },
+  "map_rail": {
+   "base": 2826,
+   "head": 2826
+  },
+  "map_region": {
+   "base": 427,
+   "head": 427
+  },
+  "map_state": {
+   "base": 16,
+   "head": 3
+  },
+  "map_station": {
+   "base": 312,
+   "head": 312
+  },
+  "map_title": {
+   "base": 80,
+   "head": 80
+  },
+  "map_underground": {
+   "base": 312,
+   "head": 312
+  },
+  "nonkorean_family": {
+   "base": 62,
+   "head": 62
+  },
+  "person_detail": {
+   "base": 511,
+   "head": 1022
+  },
+  "retainer_graph": {
+   "base": 1,
+   "head": 1
+  },
+  "site_meta": {
+   "base": 6,
+   "head": 6
+  },
+  "wiki_category": {
+   "base": 23,
+   "head": 23
+  },
+  "wiki_document": {
+   "base": 59,
+   "head": 59
+  },
+  "wiki_person": {
+   "base": 1022,
+   "head": 1022
+  },
+  "wiki_state": {
+   "base": 16,
+   "head": 3
+  },
+  "wiki_update": {
+   "base": 5,
+   "head": 6
+  }
+ },
+ "tableDiff": {
+  "faction": {
+   "changedRows": 1,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "ai_position",
+     1
+    ],
+    [
+     "ai_position_ko",
+     1
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "arc",
+     "cols": [
+      "ai_position",
+      "ai_position_ko"
+     ]
+    }
+   ]
+  },
+  "family_tree": {
+   "changedRows": 148,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "json",
+     148
+    ],
+    [
+     "json_ko",
+     148
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "ac10-cc3d-c6d0",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "ac15-c9c4-c8fc",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "ace0-d55c-c591",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "acfd-d604-d48d",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "ad6c-b2a5-c131",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    }
+   ]
+  },
+  "gdd_document": {
+   "changedRows": 15,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "body_md",
+     15
+    ],
+    [
+     "body_ko_md",
+     14
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "doc.Unity-Architecture",
+     "cols": [
+      "body_md",
+      "body_ko_md"
+     ]
+    },
+    {
+     "key": "doc.Narrative-Direction",
+     "cols": [
+      "body_md",
+      "body_ko_md"
+     ]
+    },
+    {
+     "key": "doc.Development-Roadmap",
+     "cols": [
+      "body_md",
+      "body_ko_md"
+     ]
+    },
+    {
+     "key": "doc.Game-References",
+     "cols": [
+      "body_md",
+      "body_ko_md"
+     ]
+    },
+    {
+     "key": "doc.Home",
+     "cols": [
+      "body_md",
+      "body_ko_md"
+     ]
+    }
+   ]
+  },
+  "map_edge": {
+   "changedRows": 381,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "control",
+     381
+    ],
+    [
+     "control_ko",
+     381
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "segment:서울역~연신내",
+     "cols": [
+      "control",
+      "control_ko"
+     ]
+    },
+    {
+     "key": "segment:도봉~도봉산",
+     "cols": [
+      "control",
+      "control_ko"
+     ]
+    },
+    {
+     "key": "segment:도봉~방학",
+     "cols": [
+      "control",
+      "control_ko"
+     ]
+    },
+    {
+     "key": "segment:방학~창동",
+     "cols": [
+      "control",
+      "control_ko"
+     ]
+    },
+    {
+     "key": "segment:녹천~창동",
+     "cols": [
+      "control",
+      "control_ko"
+     ]
+    }
+   ]
+  },
+  "map_holding": {
+   "changedRows": 50,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "state_id",
+     50
+    ],
+    [
+     "data",
+     50
+    ],
+    [
+     "data_ko",
+     50
+    ],
+    [
+     "name",
+     10
+    ],
+    [
+     "name_ko",
+     10
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "holding:capital-s01",
+     "cols": [
+      "state_id",
+      "data",
+      "data_ko"
+     ]
+    },
+    {
+     "key": "holding:capital-s02",
+     "cols": [
+      "state_id",
+      "data",
+      "data_ko"
+     ]
+    },
+    {
+     "key": "holding:capital-s03",
+     "cols": [
+      "state_id",
+      "data",
+      "data_ko"
+     ]
+    },
+    {
+     "key": "holding:capital-s04",
+     "cols": [
+      "state_id",
+      "data",
+      "data_ko"
+     ]
+    },
+    {
+     "key": "holding:capital-s05",
+     "cols": [
+      "state_id",
+      "data",
+      "data_ko"
+     ]
+    }
+   ]
+  },
+  "map_landmark": {
+   "changedRows": 19,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "holder_id",
+     19
+    ],
+    [
+     "detail",
+     8
+    ],
+    [
+     "detail_ko",
+     7
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "cheong-wa-dae",
+     "cols": [
+      "holder_id",
+      "detail",
+      "detail_ko"
+     ]
+    },
+    {
+     "key": "government-complex-seoul",
+     "cols": [
+      "holder_id"
+     ]
+    },
+    {
+     "key": "fki-hall",
+     "cols": [
+      "holder_id"
+     ]
+    },
+    {
+     "key": "jogyesa",
+     "cols": [
+      "holder_id",
+      "detail",
+      "detail_ko"
+     ]
+    },
+    {
+     "key": "myeongdong-sanctuary",
+     "cols": [
+      "holder_id"
+     ]
+    }
+   ]
+  },
+  "map_region": {
+   "changedRows": 424,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "polities",
+     424
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "region:1111051500",
+     "cols": [
+      "polities"
+     ]
+    },
+    {
+     "key": "region:1111053000",
+     "cols": [
+      "polities"
+     ]
+    },
+    {
+     "key": "region:1111054000",
+     "cols": [
+      "polities"
+     ]
+    },
+    {
+     "key": "region:1111055000",
+     "cols": [
+      "polities"
+     ]
+    },
+    {
+     "key": "region:1111056000",
+     "cols": [
+      "polities"
+     ]
+    }
+   ]
+  },
+  "map_state": {
+   "changedRows": 0,
+   "addedRows": 3,
+   "removedRows": 16,
+   "colDelta": null,
+   "changedColumnsHistogram": [],
+   "changedSample": []
+  },
+  "map_station": {
+   "changedRows": 312,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "control",
+     312
+    ],
+    [
+     "control_ko",
+     312
+    ],
+    [
+     "surface_polity_ids",
+     310
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "4.19민주묘지",
+     "cols": [
+      "surface_polity_ids",
+      "control",
+      "control_ko"
+     ]
+    },
+    {
+     "key": "Guro",
+     "cols": [
+      "surface_polity_ids",
+      "control",
+      "control_ko"
+     ]
+    },
+    {
+     "key": "Sindorim",
+     "cols": [
+      "surface_polity_ids",
+      "control",
+      "control_ko"
+     ]
+    },
+    {
+     "key": "Yeongdeungpo",
+     "cols": [
+      "surface_polity_ids",
+      "control",
+      "control_ko"
+     ]
+    },
+    {
+     "key": "가락시장",
+     "cols": [
+      "surface_polity_ids",
+      "control",
+      "control_ko"
+     ]
+    }
+   ]
+  },
+  "person_detail": {
+   "changedRows": 511,
+   "addedRows": 511,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "json",
+     511
+    ],
+    [
+     "json_ko",
+     511
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "person-0001",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "person-0002",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "person-0003",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "person-0004",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    },
+    {
+     "key": "person-0005",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    }
+   ]
+  },
+  "retainer_graph": {
+   "changedRows": 1,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "json",
+     1
+    ],
+    [
+     "json_ko",
+     1
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "retainer",
+     "cols": [
+      "json",
+      "json_ko"
+     ]
+    }
+   ]
+  },
+  "wiki_document": {
+   "changedRows": 58,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "body_md",
+     58
+    ],
+    [
+     "body_ko_md",
+     56
+    ],
+    [
+     "title",
+     2
+    ],
+    [
+     "title_ko",
+     2
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "Ailments",
+     "cols": [
+      "body_md",
+      "body_ko_md"
+     ]
+    },
+    {
+     "key": "Building-Reuse-Geography",
+     "cols": [
+      "body_md",
+      "body_ko_md"
+     ]
+    },
+    {
+     "key": "Century-Annals",
+     "cols": [
+      "body_md",
+      "body_ko_md"
+     ]
+    },
+    {
+     "key": "Chaebol-Houses-and-Century-Factions",
+     "cols": [
+      "title",
+      "title_ko",
+      "body_md",
+      "body_ko_md"
+     ]
+    },
+    {
+     "key": "Characters-Factions-and-Professions",
+     "cols": [
+      "body_md",
+      "body_ko_md"
+     ]
+    }
+   ]
+  },
+  "wiki_person": {
+   "changedRows": 1016,
+   "addedRows": 0,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [
+    [
+     "state_id",
+     1014
+    ],
+    [
+     "state_name",
+     1014
+    ],
+    [
+     "state_name_ko",
+     888
+    ],
+    [
+     "faction_id",
+     314
+    ],
+    [
+     "position",
+     69
+    ],
+    [
+     "position_ko",
+     68
+    ],
+    [
+     "occupation",
+     13
+    ],
+    [
+     "occupation_ko",
+     13
+    ],
+    [
+     "rank",
+     10
+    ],
+    [
+     "rank_ko",
+     10
+    ],
+    [
+     "title",
+     6
+    ],
+    [
+     "title_ko",
+     6
+    ]
+   ],
+   "changedSample": [
+    {
+     "key": "person-0001",
+     "cols": [
+      "state_id",
+      "state_name",
+      "state_name_ko"
+     ]
+    },
+    {
+     "key": "person-0002",
+     "cols": [
+      "state_id",
+      "state_name",
+      "state_name_ko"
+     ]
+    },
+    {
+     "key": "person-0003",
+     "cols": [
+      "state_id",
+      "state_name",
+      "state_name_ko"
+     ]
+    },
+    {
+     "key": "person-0004",
+     "cols": [
+      "state_id",
+      "state_name",
+      "state_name_ko"
+     ]
+    },
+    {
+     "key": "person-0005",
+     "cols": [
+      "state_id",
+      "state_name",
+      "state_name_ko"
+     ]
+    }
+   ]
+  },
+  "wiki_state": {
+   "changedRows": 0,
+   "addedRows": 3,
+   "removedRows": 16,
+   "colDelta": null,
+   "changedColumnsHistogram": [],
+   "changedSample": []
+  },
+  "wiki_update": {
+   "changedRows": 0,
+   "addedRows": 1,
+   "removedRows": 0,
+   "colDelta": null,
+   "changedColumnsHistogram": [],
+   "changedSample": []
+  }
+ }
+}
