@@ -75,7 +75,7 @@ export function ExhibitDetail({ exhibit, subs, onClose }: { exhibit: Exhibit; su
               </div>
               <figcaption className="p-3">
                 <p className="font-display text-base font-bold text-[hsl(var(--parchment))]">{img.name.ko}{subs && <span className="font-en ml-2 text-sm font-normal italic text-[hsl(var(--frost)/0.8)]">{img.name.en}</span>}</p>
-                <p className="font-mono text-[10px] text-[hsl(var(--frost)/0.6)]">{img.ref}</p>
+                {img.kind === "portrait" && <p className="font-mono text-[10px] text-[hsl(var(--frost)/0.6)]">{img.ref}</p>}
                 <p className="mt-1 font-ui text-xs text-[hsl(var(--parchment)/0.9)]">{img.role.ko}</p>
                 {subs && <p className="font-en text-xs italic text-[hsl(var(--frost)/0.75)]">{img.role.en}</p>}
                 {subs && <p className="mt-1 font-en text-[10px] text-[hsl(var(--ember)/0.8)]">{KIND_LABEL[img.kind].en}</p>}
