@@ -3,6 +3,8 @@
 //   (1) 기본: data/sql의 wiki_document 본문(ko=body_ko_md, en=body_md, node:sqlite)
 //   (2) --html <dist-dir>: 빌드된 정적 페이지의 가시 텍스트(script/style/HTML 주석/태그 제거, href 속성 미검사)
 //   (3) --url <base>: 같은 가시 텍스트 추출 모듈로 라이브 페이지를 가져와 검사
+//   (4) --md <경로[,경로…]>: SQL 밖의 마크다운 파일(경로가 디렉터리면 안의 *.md 전부)을 검사한다. docs/design·docs/research 게이트용.
+//       파일 하나가 페이지 하나이고 ko·en 금지 패턴을 모두 적용한다(필수 표는 적용하지 않는다). 원문 그대로 스캔하므로 URL 속 이름도 잡는다.
 // 위키 문서 페이지는 <base>/wiki/<slug>/(en)·<base>/ko/wiki/<slug>/(ko) 구조다(site/build.mjs 기준).
 // 승인된 금지 패턴은 기존 히트 기준선과 무관하게 항상 검사한다 — 기준선이 0이어도 1건이면 exit 1.
 import fs from 'node:fs';
@@ -17,6 +19,7 @@ const EXIT = { VIOLATION: 1, USAGE: 2 };
 function usage() {
   console.error('사용법: node scripts/pages/scan-terms.mjs --terms docs/canon-terms.json (--scope slug,slug | --all)');
   console.error('                                [--sql-dir <dir> | --html <dist-dir> | --url <base>] [--json <out>]');
+  console.error('       node scripts/pages/scan-terms.mjs --terms docs/canon-terms.json --md <file|dir>[,<file|dir>…] [--json <out>]');
 }
 
 function parseArgs(argv) {
@@ -33,6 +36,7 @@ function parseArgs(argv) {
     else if (t === '--scope') { a.scope = val(i, '--scope'); i++; }
     else if (t === '--html') { a.html = val(i, '--html'); i++; }
     else if (t === '--url') { a.url = val(i, '--url'); i++; }
+    else if (t === '--md') { a.md = val(i, '--md'); i++; }
     else if (t === '--sql-dir') { a.sqlDir = val(i, '--sql-dir'); i++; }
     else if (t === '--json') { a.json = val(i, '--json'); i++; }
     else { console.error(`E_ARG: 알 수 없는 인자: ${t}`); usage(); process.exit(EXIT.USAGE); }
@@ -119,13 +123,27 @@ async function collectUrlPages(base, rows, scopeSet) {
   return { pages, skipped };
 }
 
+function collectMdPages(spec) {
+  const pages = [], skipped = [];
+  const walk = (p) => {
+    if (!fs.existsSync(p)) { skipped.push(`${p} -> 없음`); return; }
+    if (fs.statSync(p).isDirectory()) {
+      for (const name of fs.readdirSync(p).sort()) if (!name.startsWith('.') && name !== 'node_modules') walk(path.join(p, name));
+    } else if (p.toLowerCase().endsWith('.md')) {
+      pages.push({ slug: p.replace(/\\/g, '/'), lang: 'md', text: fs.readFileSync(p, 'utf8'), origin: p });
+    }
+  };
+  for (const x of spec.split(',').map((v) => v.trim()).filter(Boolean)) walk(path.resolve(x));
+  return { pages, skipped };
+}
+
 // ---- 검사 -----------------------------------------------------------------
 function scan(pages, terms, scopeSet) {
   const forbiddenHits = [], requiredViolations = [];
   let allowedExemptions = 0;
   for (const term of terms.forbidden) {
     for (const page of pages) {
-      if (term.lang !== 'both' && term.lang !== page.lang) continue;
+      if (page.lang !== 'md' && term.lang !== 'both' && term.lang !== page.lang) continue; // md 페이지는 ko·en 패턴을 모두 받는다
       for (const m of page.text.matchAll(term.re)) {
         const i = m.index;
         const win = page.text.slice(Math.max(0, i - 100), i + 100);
@@ -153,6 +171,23 @@ function scan(pages, terms, scopeSet) {
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   if (!args.terms) { console.error('E_ARG: --terms <file> 는 필수다'); usage(); process.exit(EXIT.USAGE); }
+  if (args.md) {
+    if (args.scope || args.all || args.html || args.url || args.sqlDir) { console.error('E_ARG: --md는 --scope/--all/--html/--url/--sql-dir과 함께 쓸 수 없다'); usage(); process.exit(EXIT.USAGE); }
+    let mdTerms;
+    try { mdTerms = loadTerms(args.terms); } catch (e) { console.error(`E_TERMS: ${e.message} (${args.terms})`); process.exit(EXIT.USAGE); }
+    const { pages, skipped } = collectMdPages(args.md);
+    if (!pages.length) { console.error(`E_ARG: --md 경로에서 .md 파일을 찾지 못했다: ${args.md}`); process.exit(EXIT.USAGE); }
+    const { forbiddenHits } = scan(pages, { forbidden: mdTerms.forbidden, required: [] }, null);
+    for (const v of forbiddenHits) console.log(`[금지] ${v.slug} ${v.id}: ${JSON.stringify(v.context)}`);
+    for (const sk of skipped) console.log(`[건너뜀] ${sk}`);
+    console.log(`스캔 완료: 마크다운 ${pages.length}개 (원천 md:${args.md}) — 금지 위반 ${forbiddenHits.length}, 건너뜀 ${skipped.length}`);
+    if (args.json) {
+      fs.writeFileSync(args.json, JSON.stringify({ ok: forbiddenHits.length === 0, source: `md:${args.md}`, pages: pages.length, skipped, forbiddenHits }, null, 1));
+      console.log(`보고서: ${args.json}`);
+    }
+    process.exitCode = forbiddenHits.length ? EXIT.VIOLATION : 0;
+    return;
+  }
   if (!args.scope && !args.all) {
     console.error('E_ARG: --scope slug,slug 또는 --all 중 하나는 필수다');
     usage();
