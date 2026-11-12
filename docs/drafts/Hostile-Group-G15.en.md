@@ -41,13 +41,13 @@ A care wheel reads the slow breathing of a sleeper as an emergency. If one membe
 
 The threat is 3. Care wheels do not strike people. But a person strapped down in a frozen ward with no power freezes to death within days. A person who goes in alone usually does not come back.
 
-A work party that enters a hospital never goes in alone. One person always stays outside the ward to keep the door, and those inside do not sleep inside. They drive a wedge into every door so the care wheels cannot lock it, and when the work is done they disconnect the battery first and then come out.
+No one goes into a hospital alone; people go in as a work party. One person always stays outside the ward to keep the door, and those inside do not sleep inside. They drive a wedge into every door so the care wheels cannot lock it, and when the work is done they disconnect the battery first and then come out.
 
 ## What Can Be Salvaged
 
 Medicine, bandages and medical tools. Medicine is among the most precious things in Seoul. The medicine that saves a person bitten by a raccoon dog usually comes from hospital basements like these.
 
-Inside a care wheel's body is an old record device: the patient lists and bed records up to the day of the Great Blackout. The Government and the Arc want them as old records.
+Inside a care wheel's body is an old record device: the patient lists and bed records up to the day of the Great Blackout. The Government and the Arc both prize these as records of the old days.
 
 ## The Three Polities and the Care Wheels
 
@@ -59,7 +59,7 @@ Inside a care wheel's body is an old record device: the patient lists and bed re
 
 The name is just what they do: they go about on wheels and give care.
 
-People who go into hospitals say, "Care wheels are kind. They just don't let go." The person outside the ward calls the names of those inside, and if no answer comes, takes it that the person has fallen asleep and goes straight in to wake them.
+People who go into hospitals say, "Care wheels are kind. They just don't let go." The person outside the ward calls the names of those inside, and if someone does not answer, takes it that they have fallen asleep and goes straight in to wake them.
 
 ## See Also
 

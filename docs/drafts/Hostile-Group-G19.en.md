@@ -31,7 +31,7 @@ A few broken ones have crossed the forecourt and drifted as far as the area arou
 
 ## How It Behaves
 
-A person found out inside the band by a one-eye tower or a ground-knocker soon has a growler racing toward them. A growler chases what moves and what is warm, and stops it. But it does not chase out of the band, toward Seoul. The way to live for someone crossing back from the perimeter is to get out of the band before a growler catches them.
+A person spotted inside the band by a one-eye tower or a ground-knocker soon has a growler racing toward them. A growler chases what moves and what is warm, and stops it. But it does not chase out of the band, toward Seoul. For someone crossing back from the perimeter, the only way to survive is to get out of the band before a growler catches them.
 
 A strayed growler is different. It does not know the band it is to keep, and it circles the boundary stations chasing anything that moves. If you hear a growler inside Seoul, it is a strayed growler.
 

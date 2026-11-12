@@ -6,7 +6,7 @@ section_checkpoint: v3 task 15 complete
 ---
 [Hostile Ecology Compendium](/wiki/Hostile-Ecology-Index/)
 
-Ground-knockers are perimeter machines. They are listening stakes driven into the ground of the band. They hear footsteps, digging and movement in tunnels. Now and then they knock on the ground and probe what lies beneath by the echo. The knocking that carries along the tunnel walls of boundary stations is this. Because they hear even in a blizzard, they narrow people's window for crossing the perimeter.
+Ground-knockers are perimeter machines. They are listening stakes driven into the ground of the band. They hear footsteps, digging and movement in tunnels. Now and then they knock on the ground and probe what lies beneath by the echo. This is the knocking that carries along the tunnel walls of boundary stations. Because they hear even in a blizzard, they narrow people's window for crossing the perimeter.
 
 ## At a Glance
 
@@ -47,7 +47,7 @@ Small power cores and listening devices. They are driven deep into the ground, s
 
 ## The Three Polities and the Ground-Knockers
 
-- **All three polities.** Wherever there is a boundary station, people know the echo. The tunnel walls are knocked at the Government's Dobongsan and Gupabal, the Free Cities' Onsu and Geumcheon-gu Office, and the Arc's Gangil and Bokjeong.
+- **All three polities.** Wherever there is a boundary station, people know the echo. The tunnel walls ring with the knocking at the Government's Dobongsan and Gupabal, the Free Cities' Onsu and Geumcheon-gu Office, and the Arc's Gangil and Bokjeong.
 - **The Government.** The army's rim postings set the distance between crossers in a number of paces.
 - **The Free Cities.** Geumcheon's edge crews wrap cloth round the soles of their boots when they cross.
 - **The Arc.** The rim watchers of Gangil and Sangil-dong count and record the knocks in the tunnel walls.
@@ -56,7 +56,7 @@ Small power cores and listening devices. They are driven deep into the ground, s
 
 The name comes from what they do: they knock on the ground.
 
-They used to be called wall-knockers too, because the knocking came from the walls of boundary-station tunnels. The thing that knocks on walls in the old stories is this very echo. Boundary-station people still say "It's knocking again" when the walls ring at night, and on that day they do not go to the end of the tunnel.
+They used to be called wall-knockers too, because the knocking came from the walls of boundary-station tunnels. The knocking on the walls in the old stories is this very echo. Boundary-station people still say "It's knocking again" when the walls ring at night, and on that day they do not go to the end of the tunnel.
 
 ## See Also
 

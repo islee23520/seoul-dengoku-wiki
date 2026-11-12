@@ -57,7 +57,7 @@ An udukeoni's power core is almost unused and so still full, because it has done
 
 "Udukeoni" is a word for standing blankly, lost in thought. Standing blankly at a choke point became the name itself.
 
-In the old stories, the thing that stands with frost on it is this. When boundary-station people see a frozen person standing in the distance, they do not call out a name. There is a saying: "An udukeoni doesn't answer."
+The frost-covered figure that stands in the old stories is an udukeoni. When boundary-station people see a frozen person standing in the distance, they do not call out a name. There is a saying: "An udukeoni doesn't answer."
 
 ## See Also
 
