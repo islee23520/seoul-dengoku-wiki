@@ -1,0 +1,893 @@
+{
+  "corrections": [
+    {
+      "from": "Hansan Yi Clan",
+      "to": "Hansan I Clan",
+      "reason": "090 $.clan.name 한산 이씨: the surname disagrees with the clan table row (surname \"I\") and with the other four 이씨 clan labels (\"... I Clan\"). The member's own name is \"I Seo-dam\".",
+      "at": [
+        "people[id=person-0002].en.clan.name"
+      ]
+    },
+    {
+      "from": "Pungi Jin Clan",
+      "to": "Punggi Jin Clan",
+      "reason": "090 $.clan.name 풍기 진씨: 풍기 is \"Punggi\" (the clan table bongwan already reads Punggi).",
+      "at": [
+        "people[id=person-0012].en.clan.name",
+        "people[id=person-0040].en.clan.name",
+        "people[id=person-0068].en.clan.name",
+        "people[id=person-0740].en.clan.name"
+      ]
+    },
+    {
+      "from": "Choe clan of Suseong",
+      "to": "Choe Clan of Suseong",
+      "reason": "090 $.clan.name 수성 최씨: lowercase typo \"clan\". Every other label capitalizes Clan.",
+      "at": [
+        "people[id=person-0034].en.clan.name"
+      ]
+    },
+    {
+      "from": "Heo of Yangcheon",
+      "to": "Heo Clan of Yangcheon",
+      "reason": "090 $.clan.name 양천 허씨: the word \"Clan\" is missing (every other Korean clan label has it).",
+      "at": [
+        "people[id=person-0074].en.clan.name"
+      ]
+    },
+    {
+      "from": "Yeon of Goksan",
+      "to": "Yeon Clan of Goksan",
+      "reason": "090 $.clan.name 곡산 연씨: the word \"Clan\" is missing (every other Korean clan label has it).",
+      "at": [
+        "people[id=person-0153].en.clan.name",
+        "people[id=person-0161].en.clan.name",
+        "people[id=person-0211].en.clan.name"
+      ]
+    },
+    {
+      "from": "Martin Horak",
+      "to": "Martin Horák",
+      "reason": "person-0188: the surname differs from the family record DIV-K187 \"Horák\". The data keeps diacritics elsewhere (Müller, Wiśniewska, Zielińska).",
+      "at": [
+        "people[id=person-0188].name",
+        "people[id=person-0188].en.name"
+      ]
+    },
+    {
+      "from": "Ana Hierophantscu",
+      "to": "Ana Popescu",
+      "reason": "person-0190 아나 포페스쿠: a global Pope->Hierophant rename corrupted the surname Popescu.",
+      "at": [
+        "people[id=person-0190].name",
+        "people[id=person-0190].en.name"
+      ]
+    },
+    {
+      "from": "Su Choreong",
+      "to": "Su Chorong",
+      "reason": "Wrong romanization of the Korean name; 수초롱: 롱 is \"rong\" (Chorong), not \"reong\".",
+      "at": [
+        "people[id=person-0332].name",
+        "people[id=person-0332].en.name",
+        "trees[clan_id=c218-d55c-c591].nodes[id=K331].name"
+      ]
+    },
+    {
+      "from": "Yeong Clan by Birth",
+      "to": "Seoncheon Yeong Clan",
+      "reason": "090 $.clan.name 선천 영씨: the bongwan 선천 (Seoncheon) was translated as \"by birth\". Corrected to the \"<Bongwan> <Surname> Clan\" pattern.",
+      "at": [
+        "people[id=person-0357].en.clan.name",
+        "people[id=person-0365].en.clan.name"
+      ]
+    },
+    {
+      "from": "Jang Dowon",
+      "to": "Jang Dorwon",
+      "reason": "Wrong romanization of the Korean name; 장돌원: the ㄹ of 돌 was dropped (\"Dowon\" reads as 도원). The data's own liaison pattern for 달원 is \"Darwon\" (Bae Darwon, Jo Darwon), so 돌원 -> Dorwon.",
+      "at": [
+        "people[id=person-0471].name",
+        "people[id=person-0471].en.name"
+      ]
+    },
+    {
+      "from": "Pavel Nemets",
+      "to": "Pavel Němec",
+      "reason": "person-0526: Russian-style spelling of a Czech surname. The family record DIV-K526 reads \"Němec\" (Korean 네메츠).",
+      "at": [
+        "people[id=person-0526].name",
+        "people[id=person-0526].en.name"
+      ]
+    },
+    {
+      "from": "Millicent Mensa",
+      "to": "Millicent Mensah",
+      "reason": "person-0558: the surname must match her family record, nonkorean_family DIV-K558 \"Mensah\" (the Ghanaian surname; Korean 멘사). \"Mensa\" is a typo.",
+      "at": [
+        "people[id=person-0558].name",
+        "people[id=person-0558].en.name"
+      ]
+    },
+    {
+      "from": "Simon Kaminski",
+      "to": "Simon Kamiński",
+      "reason": "person-0606: the surname differs from the family record DIV-K606 \"Kamiński\".",
+      "at": [
+        "people[id=person-0606].name",
+        "people[id=person-0606].en.name"
+      ]
+    },
+    {
+      "from": "Zofia Dobrowska",
+      "to": "Zofia Dąbrowska",
+      "reason": "person-0638: misspelled. The family record DIV-K638 reads \"Dąbrowska\".",
+      "at": [
+        "people[id=person-0638].name",
+        "people[id=person-0638].en.name"
+      ]
+    },
+    {
+      "from": "Ryu Bipyeon",
+      "to": "Ryu Bichyeon",
+      "reason": "Wrong romanization of the Korean name; 류빛현: there is no p sound in 빛현. The data's own pattern for 빛+ㅎ is \"Bichun\" (최빛훈 Choe Bichun), so 빛현 -> Bichyeon.",
+      "at": [
+        "people[id=person-0641].name",
+        "people[id=person-0641].en.name"
+      ]
+    },
+    {
+      "from": "Viktor Stanescu",
+      "to": "Viktor Stănescu",
+      "reason": "person-0862: the surname differs from the family record DIV-K862 \"Stănescu\".",
+      "at": [
+        "people[id=person-0862].name",
+        "people[id=person-0862].en.name"
+      ]
+    },
+    {
+      "from": "Sangnak Kim Clan",
+      "to": "Sangnak Gim Clan",
+      "reason": "090 $.clan.name 상락 김씨: the surname disagrees with the clan table row (surname \"Gim\") and with every other 김씨 clan label (\"Gyeongju Gim Clan\", \"Gwangsan Gim Clan\", ...).",
+      "at": [
+        "people[id=person-0932].en.clan.name"
+      ]
+    },
+    {
+      "from": "Barbora Prohaskova",
+      "to": "Barbora Procházková",
+      "reason": "person-0958: misspelled (missing the c of \"ch\"). The family record DIV-K958 reads \"Procházková\" (Korean 프로하스코바).",
+      "at": [
+        "people[id=person-0958].name",
+        "people[id=person-0958].en.name"
+      ]
+    },
+    {
+      "from": "Isabel Garcia",
+      "to": "Isabel García",
+      "reason": "person-0990: the surname differs from the family record DIV-K990 \"García\".",
+      "at": [
+        "people[id=person-0990].name",
+        "people[id=person-0990].en.name"
+      ]
+    },
+    {
+      "from": "Jeonui Lee",
+      "to": "Jeonui I Clan",
+      "reason": "090 $.clan.name 전의 이씨: \"Clan\" is missing and the surname disagrees with the clan table (surname \"I\"; the other 이씨 clans are \"Yeonan I Clan\", \"Gyeongju I Clan\", \"Gwangju I Clan\", \"Seongju I Clan\").",
+      "at": [
+        "people[id=person-0998].en.clan.name"
+      ]
+    },
+    {
+      "from": "State",
+      "to": "Guk",
+      "reason": "clan 담양 국씨: the surname 국 (Guk) was translated as the word \"state\". The person clan label already reads \"Damyang Guk Clan\".",
+      "at": [
+        "clans[id=ad6d-b2f4-c591].surname"
+      ]
+    },
+    {
+      "from": "Gang Eum",
+      "to": "Gangeum",
+      "reason": "clan 강음 단씨: the bongwan 강음 was split into two words. Every other bongwan is one word, and the person clan label already reads \"Gangeum Dan Clan\".",
+      "at": [
+        "clans[id=b2e8-ac15-c74c].bongwan"
+      ]
+    },
+    {
+      "from": "Culture",
+      "to": "Munhwa",
+      "reason": "clan 문화 류씨: the bongwan place name 문화 (文化, Munhwa) was translated as the word \"culture\". The person clan label already reads \"Munhwa Ryu Clan\".",
+      "at": [
+        "clans[id=b958-bb38-d654-67f3].bongwan"
+      ]
+    },
+    {
+      "from": "By Birth",
+      "to": "Seoncheon",
+      "reason": "clan 선천 영씨: the bongwan place name 선천 (Seoncheon) was translated as the word 先天 \"by birth\".",
+      "at": [
+        "clans[id=c601-c120-cc9c-5f71].bongwan"
+      ]
+    },
+    {
+      "from": "Elderly",
+      "to": "Goryeong",
+      "reason": "clan 고령 신씨: the bongwan place name 고령 (Goryeong) was translated as the word \"elderly\". The person clan label already reads \"Goryeong Sin Clan\".",
+      "at": [
+        "clans[id=goryeong-shin].bongwan"
+      ]
+    },
+    {
+      "from": "Hierophantscu",
+      "to": "Popescu",
+      "reason": "nonkorean_family 포페스쿠: a global Pope->Hierophant rename corrupted the Romanian surname Popescu (Korean 포페스쿠 = Popescu).",
+      "at": [
+        "nonKorean[id=DIV-K189].surname"
+      ]
+    },
+    {
+      "from": "Gim Mimi",
+      "to": "Gim Minmi",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 김민미: the syllable 민 was dropped (Minmi).",
+      "at": [
+        "trees[clan_id=ae40-acbd-c8fc-91d1].nodes[id=FH-K1007-P-02].name"
+      ]
+    },
+    {
+      "from": "O Doug",
+      "to": "O Douk",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 오도욱: 도욱 was replaced by the English name \"Doug\". RR is Douk.",
+      "at": [
+        "trees[clan_id=b958-bb38-d654-67f3].nodes[id=FH-K836-M-01].name"
+      ]
+    },
+    {
+      "from": "Bak Doug",
+      "to": "Bak Douk",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 박도욱: 도욱 was replaced by the English name \"Doug\". RR is Douk.",
+      "at": [
+        "trees[clan_id=bc15-bc00-c591].nodes[id=FH-K820-P-02].name"
+      ]
+    },
+    {
+      "from": "Bak Dohyeon",
+      "to": "Bak Doheon",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 박도헌 (K169 line): 헌 is \"heon\"; \"Dohyeon\" would be 도현. The node's own nameEn already reads \"Park Doheon\".",
+      "at": [
+        "trees[clan_id=bc15-bc00-c591].nodes[id=FH-K169-P-03].name"
+      ]
+    },
+    {
+      "from": "Yun Hyeonggyeong",
+      "to": "Yun Hyeongyeong",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 윤현경: \"Hyeonggyeong\" would be 형경. RR is Hyeongyeong.",
+      "at": [
+        "trees[clan_id=c724-d30c-d3c9].nodes[id=FH-K196-P-03].name"
+      ]
+    },
+    {
+      "from": "Gwak Hyeonggyeong",
+      "to": "Gwak Hyeongyeong",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 곽현경: \"Hyeonggyeong\" would be 형경. RR is Hyeongyeong.",
+      "at": [
+        "trees[clan_id=c724-d30c-d3c9].nodes[id=FH-K196-M-02].name"
+      ]
+    },
+    {
+      "from": "Yun Mingwei",
+      "to": "Yun Mingwi",
+      "reason": "family_tree historical node 윤밍위 (K1011 Lin family): wrong romanization. \"Mingwei\" would be 밍웨이. The node name field follows RR of the Korean (윤 Yun), and RR of 밍위 is Mingwi (위 = wi). The pinyin nameEn \"Yin Mingyu\" is a separate self-spelling field and is not the basis.",
+      "at": [
+        "trees[clan_id=c784-b300-b9bc-6797].nodes[id=FH-K1011-M-02].name"
+      ]
+    },
+    {
+      "from": "Yun Chunzhi",
+      "to": "Yun Chunji",
+      "reason": "family_tree historical node 윤춘지 (K1011 Lin family): the given name disagrees with the Korean 춘지 and with the node's own nameEn \"Yin Chunji\". \"Chunzhi\" would be 춘즈. Corrected to Chunji.",
+      "at": [
+        "trees[clan_id=c784-b300-b9bc-6797].nodes[id=FH-K1011-M-03].name"
+      ]
+    },
+    {
+      "from": "Song Jaeseob",
+      "to": "Song Jaeseop",
+      "reason": "Wrong romanization of the Korean name; family_tree historical node 송재섭: a final ㅂ is \"p\" in RR (cf. surname Seop, 섭). Jaeseop.",
+      "at": [
+        "trees[clan_id=d5c8-d558-c591-8a31].nodes[id=FH-K728-M-02].name"
+      ]
+    },
+    {
+      "from": "Cheongun-hyoja-dong",
+      "to": "Cheongunhyoja-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Cheongunhyoja-dong.",
+      "at": [
+        "geography.regions[id=region:1111051500].name"
+      ]
+    },
+    {
+      "from": "Myeongdong",
+      "to": "Myeong-dong",
+      "reason": "Station 명동 and dong 명동 are written without the hyphen. The MOIS administrative name is Myeong-dong, and the Seoul Metro Line 4 station is \"Myeong-dong\" (https://en.wikipedia.org/wiki/Seoul_Subway_Line_4). Every other dong in the data uses \"-dong\".",
+      "at": [
+        "geography.regions[id=region:1114055000].name",
+        "geography.stations[id=명동].name"
+      ]
+    },
+    {
+      "from": "Wonhyo-ro 1-dong",
+      "to": "Wonhyoro 1-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Wonhyoro 1-dong.",
+      "at": [
+        "geography.regions[id=region:1117056000].name"
+      ]
+    },
+    {
+      "from": "Wonhyo-ro 2-dong",
+      "to": "Wonhyoro 2-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Wonhyoro 2-dong.",
+      "at": [
+        "geography.regions[id=region:1117057000].name"
+      ]
+    },
+    {
+      "from": "Hangang-ro-dong",
+      "to": "Hangangno-dong",
+      "reason": "map_region: written letter by letter. Revised Romanization (MOIS administrative name) applies the sound change at the syllable boundary (강로 -> nasalization \"gangno\", as in the data's own Jongno and Chungjeongno). Official Hangangno-dong.",
+      "at": [
+        "geography.regions[id=region:1117062500].name"
+      ]
+    },
+    {
+      "from": "Wangsimni-Doseon-dong",
+      "to": "Wangsimnidoseon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Wangsimnidoseon-dong.",
+      "at": [
+        "geography.regions[id=region:1120053500].name"
+      ]
+    },
+    {
+      "from": "Myeonmok-bon-dong",
+      "to": "Myeonmokbon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Myeonmokbon-dong.",
+      "at": [
+        "geography.regions[id=region:1126056500].name"
+      ]
+    },
+    {
+      "from": "Mangu-bon-dong",
+      "to": "Mangubon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Mangubon-dong.",
+      "at": [
+        "geography.regions[id=region:1126065500].name"
+      ]
+    },
+    {
+      "from": "Junggye-bon-dong",
+      "to": "Junggyebon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Junggyebon-dong.",
+      "at": [
+        "geography.regions[id=region:1135061900].name"
+      ]
+    },
+    {
+      "from": "Bukahyeon-dong",
+      "to": "Bugahyeon-dong",
+      "reason": "map_region: written letter by letter. Revised Romanization (MOIS administrative name) applies the sound change at the syllable boundary (북아 -> liaison \"buga\"). Official Bugahyeon-dong.",
+      "at": [
+        "geography.regions[id=region:1141055500].name"
+      ]
+    },
+    {
+      "from": "Hwagok-bondong",
+      "to": "Hwagokbon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Hwagokbon-dong.",
+      "at": [
+        "geography.regions[id=region:1150059000].name"
+      ]
+    },
+    {
+      "from": "Yeongdeungpo-bondong",
+      "to": "Yeongdeungpobon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Yeongdeungpobon-dong.",
+      "at": [
+        "geography.regions[id=region:1156051500].name"
+      ]
+    },
+    {
+      "from": "Yeongdeungpo District",
+      "to": "Yeongdeungpo-gu",
+      "reason": "영등포구 is the only one of the 25 gu rendered \"District\"; the other 24 use the administrative romanization \"-gu\" (map_region.district, map_station.district, duchy map_title). Official Yeongdeungpo-gu.",
+      "at": [
+        "geography.regions[id=region:1156051500].district",
+        "geography.regions[id=region:1156053500].district",
+        "geography.regions[id=region:1156054000].district",
+        "geography.regions[id=region:1156055000].district",
+        "geography.regions[id=region:1156056000].district",
+        "geography.regions[id=region:1156058500].district",
+        "geography.regions[id=region:1156060500].district",
+        "geography.regions[id=region:1156061000].district",
+        "geography.regions[id=region:1156062000].district",
+        "geography.regions[id=region:1156063000].district",
+        "geography.regions[id=region:1156065000].district",
+        "geography.regions[id=region:1156066000].district",
+        "geography.regions[id=region:1156067000].district",
+        "geography.regions[id=region:1156068000].district",
+        "geography.regions[id=region:1156069000].district",
+        "geography.regions[id=region:1156070000].district",
+        "geography.regions[id=region:1156071000].district",
+        "geography.regions[id=region:1156072000].district",
+        "geography.stations[id=Yeongdeungpo].district",
+        "geography.stations[id=구로디지털단지].district",
+        "geography.stations[id=국회의사당].district",
+        "geography.stations[id=당산].district",
+        "geography.stations[id=대방].district",
+        "geography.stations[id=도림천].district",
+        "geography.stations[id=문래].district",
+        "geography.stations[id=보라매].district",
+        "geography.stations[id=보라매공원].district",
+        "geography.stations[id=샛강].district",
+        "geography.stations[id=서울지방병무청].district",
+        "geography.stations[id=선유도].district",
+        "geography.stations[id=신길].district",
+        "geography.stations[id=신풍].district",
+        "geography.stations[id=여의나루].district",
+        "geography.stations[id=여의도].district",
+        "geography.stations[id=영등포구청].district",
+        "geography.stations[id=영등포시장].district",
+        "geography.titles[id=geography:duchy:11560].name"
+      ]
+    },
+    {
+      "from": "Ilwonbon-dong",
+      "to": "Irwonbon-dong",
+      "reason": "map_region: written letter by letter. Revised Romanization (MOIS administrative name) applies the sound change at the syllable boundary (일원 -> \"irwon\"). Official Irwonbon-dong.",
+      "at": [
+        "geography.regions[id=region:1168072000].name"
+      ]
+    },
+    {
+      "from": "Ilwon 1-dong",
+      "to": "Irwon 1-dong",
+      "reason": "map_region: written letter by letter. Revised Romanization (MOIS administrative name) applies the sound change at the syllable boundary (일원 -> \"irwon\"). Official Irwon 1-dong; matches station Irwon, which Seoul Metro Line 3 also writes Irwon (https://en.wikipedia.org/wiki/Seoul_Subway_Line_3).",
+      "at": [
+        "geography.regions[id=region:1168073000].name"
+      ]
+    },
+    {
+      "from": "Olyun-dong",
+      "to": "Oryun-dong",
+      "reason": "map_region 오륜동: 륜 is \"ryun\" in RR. The data itself writes Dunchon Oryun station and Oryun elsewhere. Official Oryun-dong.",
+      "at": [
+        "geography.regions[id=region:1171056600].name"
+      ]
+    },
+    {
+      "from": "Garak-bondong",
+      "to": "Garakbon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Garakbon-dong.",
+      "at": [
+        "geography.regions[id=region:1171062000].name"
+      ]
+    },
+    {
+      "from": "Jamsil-bondong",
+      "to": "Jamsilbon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Jamsilbon-dong.",
+      "at": [
+        "geography.regions[id=region:1171065000].name"
+      ]
+    },
+    {
+      "from": "4.19 Democratic Cemetery",
+      "to": "April 19th National Cemetery",
+      "reason": "map_station 4.19민주묘지: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Ui_LRT. Official: \"April 19th National Cemetery\". (Listed with everywhere/fields because the station id contains a dot, which the at-path syntax cannot express; the value occurs only once.)",
+      "everywhere": true,
+      "fields": [
+        "name"
+      ]
+    },
+    {
+      "from": "Geondae-ipgu",
+      "to": "Konkuk Univ.",
+      "reason": "map_station 건대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2, https://en.wikipedia.org/wiki/Seoul_Subway_Line_7. Official: \"Konkuk Univ.\".",
+      "at": [
+        "geography.stations[id=건대입구].name"
+      ]
+    },
+    {
+      "from": "Gyeongchalbyeongwon",
+      "to": "National Police Hospital",
+      "reason": "map_station 경찰병원: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_3. Official: \"National Police Hospital\".",
+      "at": [
+        "geography.stations[id=경찰병원].name"
+      ]
+    },
+    {
+      "from": "Goryeodae",
+      "to": "Korea Univ.",
+      "reason": "map_station 고려대: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_6. Official: \"Korea Univ.\".",
+      "at": [
+        "geography.stations[id=고려대].name"
+      ]
+    },
+    {
+      "from": "Gosok Terminal",
+      "to": "Express Bus Terminal",
+      "reason": "map_station 고속터미널: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_3, https://en.wikipedia.org/wiki/Seoul_Subway_Line_7, https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"Express Bus Terminal\".",
+      "at": [
+        "geography.stations[id=고속터미널].name"
+      ]
+    },
+    {
+      "from": "Gonghang Sijang",
+      "to": "Airport Market",
+      "reason": "map_station 공항시장: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"Airport Market\".",
+      "at": [
+        "geography.stations[id=공항시장].name"
+      ]
+    },
+    {
+      "from": "Gwangundae",
+      "to": "Kwangwoon Univ.",
+      "reason": "map_station 광운대: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Kwangwoon_University_station. Official: \"Kwangwoon Univ.\".",
+      "at": [
+        "geography.stations[id=광운대].name"
+      ]
+    },
+    {
+      "from": "Gyodae",
+      "to": "Seoul Nat'l Univ. of Education",
+      "reason": "map_station 교대: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_3. Official: \"Seoul Nat'l Univ. of Education\".",
+      "at": [
+        "geography.stations[id=교대].name"
+      ]
+    },
+    {
+      "from": "National Assembly Building",
+      "to": "National Assembly",
+      "reason": "map_station 국회의사당: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"National Assembly\".",
+      "at": [
+        "geography.stations[id=국회의사당].name"
+      ]
+    },
+    {
+      "from": "Geumcheon District Office",
+      "to": "Geumcheon-gu Office",
+      "reason": "map_station 금천구청: \"District\" breaks the X-gu Office pattern of the other gu-office stations. Official Geumcheon-gu Office (Seoul-Station-Catalog).",
+      "at": [
+        "geography.stations[id=금천구청].name"
+      ]
+    },
+    {
+      "from": "Gimpo Airport",
+      "to": "Gimpo Int'l Airport",
+      "reason": "map_station 김포공항: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"Gimpo Int'l Airport\".",
+      "at": [
+        "geography.stations[id=김포공항].name"
+      ]
+    },
+    {
+      "from": "Nambu Terminal",
+      "to": "Nambu Bus Terminal",
+      "reason": "map_station 남부터미널: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_3. Official: \"Nambu Bus Terminal\".",
+      "at": [
+        "geography.stations[id=남부터미널].name"
+      ]
+    },
+    {
+      "from": "Male",
+      "to": "Namseong",
+      "reason": "map_station 남성 (Line 7 Namseong): the place name was machine-translated as the word 남성 \"male\" instead of romanized. Official station name Namseong (Seoul-Station-Catalog 영문 column; the station control deltaId already reads S08-TRANSFER-2126-Namseong).",
+      "at": [
+        "geography.stations[id=남성].name"
+      ]
+    },
+    {
+      "from": "Daemosanipgu",
+      "to": "Daemosan",
+      "reason": "map_station 대모산입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: operator signage as listed in the project Seoul-Station-Catalog 영문 column (not independently fetched). Official: \"Daemosan\".",
+      "at": [
+        "geography.stations[id=대모산입구].name"
+      ]
+    },
+    {
+      "from": "Dongdaeipgu",
+      "to": "Dongguk Univ.",
+      "reason": "map_station 동대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_3. Official: \"Dongguk Univ.\".",
+      "at": [
+        "geography.stations[id=동대입구].name"
+      ]
+    },
+    {
+      "from": "Dongmyoap",
+      "to": "Dongmyo",
+      "reason": "map_station 동묘앞: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_6. Official: \"Dongmyo\".",
+      "at": [
+        "geography.stations[id=동묘앞].name"
+      ]
+    },
+    {
+      "from": "Magoknaru",
+      "to": "Magongnaru",
+      "reason": "map_station 마곡나루: nasal assimilation is missing (곡+나 is pronounced [공나]). The rest of the data applies it. Official Magongnaru (Seoul-Station-Catalog).",
+      "at": [
+        "geography.stations[id=마곡나루].name"
+      ]
+    },
+    {
+      "from": "Mapogucheong",
+      "to": "Mapo-gu Office",
+      "reason": "map_station 마포구청: untranslated, unlike the other gu-office stations (Gangnam-gu Office, Gangdong-gu Office, Yangcheon-gu Office, Yeongdeungpo-gu Office). Official Mapo-gu Office (Seoul-Station-Catalog; the lore already says \"Mapo-gu Office Station\").",
+      "at": [
+        "geography.stations[id=마포구청].name"
+      ]
+    },
+    {
+      "from": "Mokdong",
+      "to": "Mok-dong",
+      "reason": "map_station 목동: Station that is also a dong name, written without the hyphen. The operator writes it with the dong hyphen, as does the data's own convention for dong-named stations (Gil-dong, Jegi-dong, Gaepo-dong, Sangil-dong, Sinseol-dong). Source: Seoul Metro Line 5 (\"Mok-dong\"), also the project Seoul-Station-Catalog. Official: \"Mok-dong\".",
+      "at": [
+        "geography.stations[id=목동].name"
+      ]
+    },
+    {
+      "from": "Boramaegongwon",
+      "to": "Boramae Park",
+      "reason": "map_station 보라매공원: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Sillim_Line. Official: \"Boramae Park\".",
+      "at": [
+        "geography.stations[id=보라매공원].name"
+      ]
+    },
+    {
+      "from": "Boramaebyeongwon",
+      "to": "Boramae Medical Center",
+      "reason": "map_station 보라매병원: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Sillim_Line. Official: \"Boramae Medical Center\".",
+      "at": [
+        "geography.stations[id=보라매병원].name"
+      ]
+    },
+    {
+      "from": "Seogangdae",
+      "to": "Sogang Univ.",
+      "reason": "map_station 서강대: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: operator signage as listed in the project Seoul-Station-Catalog 영문 column (not independently fetched). Official: \"Sogang Univ.\".",
+      "at": [
+        "geography.stations[id=서강대].name"
+      ]
+    },
+    {
+      "from": "Seoul National University Venture Town",
+      "to": "Seoul Nat'l Univ. Venture Town",
+      "reason": "map_station 서울대벤처타운: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Sillim_Line. Official: \"Seoul Nat'l Univ. Venture Town\".",
+      "at": [
+        "geography.stations[id=서울대벤처타운].name"
+      ]
+    },
+    {
+      "from": "Seoul National University Entrance",
+      "to": "Seoul Nat'l Univ.",
+      "reason": "map_station 서울대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2. Official: \"Seoul Nat'l Univ.\".",
+      "at": [
+        "geography.stations[id=서울대입구].name"
+      ]
+    },
+    {
+      "from": "Seoulsup",
+      "to": "Seoul Forest",
+      "reason": "map_station 서울숲: The station 서울숲 (Korail Suin-Bundang K211) is written as the romanization \"Seoulsup\" instead of the English station name. The current Korail name is \"Seoul Forest\" (the older signage form \"Seoul-forest\" is not used). Source: https://en.wikipedia.org/wiki/Suin%E2%80%93Bundang_Line. Official: \"Seoul Forest\".",
+      "at": [
+        "geography.stations[id=서울숲].name"
+      ]
+    },
+    {
+      "from": "Seouljibangbyeongmucheong",
+      "to": "Seoul Regional Office of Military Manpower",
+      "reason": "map_station 서울지방병무청: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Regional_Office_of_Military_Manpower_station, https://en.wikipedia.org/wiki/Sillim_Line. Official: \"Seoul Regional Office of Military Manpower\".",
+      "at": [
+        "geography.stations[id=서울지방병무청].name"
+      ]
+    },
+    {
+      "from": "Seokchongobun",
+      "to": "Seokchon Gobun",
+      "reason": "map_station 석촌고분: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"Seokchon Gobun\".",
+      "at": [
+        "geography.stations[id=석촌고분].name"
+      ]
+    },
+    {
+      "from": "Seongsinyeodaeipgu",
+      "to": "Sungshin Women's Univ.",
+      "reason": "map_station 성신여대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_4, https://en.wikipedia.org/wiki/Sungshin_Women%27s_University_station. Official: \"Sungshin Women's Univ.\".",
+      "at": [
+        "geography.stations[id=성신여대입구].name"
+      ]
+    },
+    {
+      "from": "Solbatgongwon",
+      "to": "Solbat Park",
+      "reason": "map_station 솔밭공원: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Ui_LRT. Official: \"Solbat Park\".",
+      "at": [
+        "geography.stations[id=솔밭공원].name"
+      ]
+    },
+    {
+      "from": "Sukdaeipgu",
+      "to": "Sookmyung Women's Univ.",
+      "reason": "map_station 숙대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_4. Official: \"Sookmyung Women's Univ.\".",
+      "at": [
+        "geography.stations[id=숙대입구].name"
+      ]
+    },
+    {
+      "from": "Sungsildaeipgu",
+      "to": "Soongsil Univ.",
+      "reason": "map_station 숭실대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_7. Official: \"Soongsil Univ.\".",
+      "at": [
+        "geography.stations[id=숭실대입구].name"
+      ]
+    },
+    {
+      "from": "Sicheong",
+      "to": "City Hall",
+      "reason": "map_station 시청: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2. Official: \"City Hall\".",
+      "at": [
+        "geography.stations[id=시청].name"
+      ]
+    },
+    {
+      "from": "Amsa Historic Park",
+      "to": "Amsa History Park",
+      "reason": "map_station 암사역사공원: 암사역사공원 (Line 8 extension): the operator English name is \"Amsa History Park\". It is not a literal \"Historic Park\"; the project Seoul-Station-Catalog already uses \"Amsa History Park\". Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_8. Official: \"Amsa History Park\".",
+      "at": [
+        "geography.stations[id=암사역사공원].name"
+      ]
+    },
+    {
+      "from": "Ollimpikgongwon",
+      "to": "Olympic Park",
+      "reason": "map_station 올림픽공원: the English loanword \"Olympic\" was romanized back from its Hangul spelling. Official Olympic Park (Seoul-Station-Catalog; the station summary already says \"Olympic Park Station\").",
+      "at": [
+        "geography.stations[id=올림픽공원].name"
+      ]
+    },
+    {
+      "from": "Oedaeap",
+      "to": "Hankuk Univ. of Foreign Studies",
+      "reason": "map_station 외대앞: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: operator signage as listed in the project Seoul-Station-Catalog 영문 column (not independently fetched). Official: \"Hankuk Univ. of Foreign Studies\".",
+      "at": [
+        "geography.stations[id=외대앞].name"
+      ]
+    },
+    {
+      "from": "Yong Du",
+      "to": "Yongdu",
+      "reason": "map_station 용두 (Line 2 branch): a one-word place name split as if it were a surname and a given name. Official Yongdu (Seoul-Station-Catalog). The person 용두 (person-0263, surname 용 + given name 두) stays \"Yong Du\".",
+      "at": [
+        "geography.stations[id=용두].name"
+      ]
+    },
+    {
+      "from": "Woldeukeopgyeonggijang",
+      "to": "World Cup Stadium",
+      "reason": "map_station 월드컵경기장: the English loanword \"World Cup\" was romanized back from Hangul. Official World Cup Stadium (Seoul-Station-Catalog; the lore already says \"World Cup Stadium Station\").",
+      "at": [
+        "geography.stations[id=월드컵경기장].name"
+      ]
+    },
+    {
+      "from": "Euljiro-ipgu",
+      "to": "Euljiro 1-ga",
+      "reason": "map_station 을지로입구: 을지로입구 is written as a romanization with \"ipgu\" (entrance) instead of the operator English name \"Euljiro 1(il)-ga\" (Seoul Metro Line 2, https://en.wikipedia.org/wiki/Seoul_Subway_Line_2). Written without the numeral reading, as \"Euljiro 1-ga\", to match the data's existing \"Euljiro 3-ga\", \"Euljiro 4-ga\", \"Jongno 3-ga\" and \"Jongno 5-ga\". Official: \"Euljiro 1-ga\".",
+      "at": [
+        "geography.stations[id=을지로입구].name"
+      ]
+    },
+    {
+      "from": "Idae",
+      "to": "Ewha Womans Univ.",
+      "reason": "map_station 이대: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2. Official: \"Ewha Womans Univ.\".",
+      "at": [
+        "geography.stations[id=이대].name"
+      ]
+    },
+    {
+      "from": "Jonghap Undongjang",
+      "to": "Sports Complex",
+      "reason": "map_station 종합운동장: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2, https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"Sports Complex\".",
+      "at": [
+        "geography.stations[id=종합운동장].name"
+      ]
+    },
+    {
+      "from": "Jungang Bohun Byeongwon",
+      "to": "VHS Medical Center",
+      "reason": "map_station 중앙보훈병원: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"VHS Medical Center\".",
+      "at": [
+        "geography.stations[id=중앙보훈병원].name"
+      ]
+    },
+    {
+      "from": "Changdong",
+      "to": "Chang-dong",
+      "reason": "map_station 창동: Station that is also a dong name, written without the hyphen. The operator writes it with the dong hyphen, as does the data's own convention for dong-named stations (Gil-dong, Jegi-dong, Gaepo-dong, Sangil-dong, Sinseol-dong). Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_4 (\"Chang-dong\"). Official: \"Chang-dong\".",
+      "at": [
+        "geography.stations[id=창동].name"
+      ]
+    },
+    {
+      "from": "Cheonggyesan-ipgu",
+      "to": "Cheonggyesan",
+      "reason": "map_station 청계산입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Cheonggyesan_station. Official: \"Cheonggyesan\".",
+      "at": [
+        "geography.stations[id=청계산입구].name"
+      ]
+    },
+    {
+      "from": "Chongsindae-ipgu (Isu)",
+      "to": "Chongshin Univ. (Isu)",
+      "reason": "map_station 총신대입구(이수): The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_4, https://en.wikipedia.org/wiki/Seoul_Subway_Line_7. Official: \"Chongshin Univ. (Isu)\".",
+      "at": [
+        "geography.stations[id=총신대입구(이수)].name"
+      ]
+    },
+    {
+      "from": "Taereung-ipgu",
+      "to": "Taereung",
+      "reason": "map_station 태릉입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_6, https://en.wikipedia.org/wiki/Seoul_Subway_Line_7. Official: \"Taereung\".",
+      "at": [
+        "geography.stations[id=태릉입구].name"
+      ]
+    },
+    {
+      "from": "Hakdong",
+      "to": "Hak-dong",
+      "reason": "map_station 학동: Station that is also a dong name, written without the hyphen. The operator writes it with the dong hyphen, as does the data's own convention for dong-named stations (Gil-dong, Jegi-dong, Gaepo-dong, Sangil-dong, Sinseol-dong). Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_7 (\"Hak-dong\"). Official: \"Hak-dong\".",
+      "at": [
+        "geography.stations[id=학동].name"
+      ]
+    },
+    {
+      "from": "Hakyeoul",
+      "to": "Hangnyeoul",
+      "reason": "map_station 학여울: letter-by-letter transliteration. The data elsewhere applies RR sound changes (Gongneung, Dongnimmun, Seolleung). Official Hangnyeoul (Seoul-Station-Catalog).",
+      "at": [
+        "geography.stations[id=학여울].name"
+      ]
+    },
+    {
+      "from": "Hansungdaeipgu",
+      "to": "Hansung Univ.",
+      "reason": "map_station 한성대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_4. Official: \"Hansung Univ.\".",
+      "at": [
+        "geography.stations[id=한성대입구].name"
+      ]
+    },
+    {
+      "from": "Hanyangdae",
+      "to": "Hanyang Univ.",
+      "reason": "map_station 한양대: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2. Official: \"Hanyang Univ.\".",
+      "at": [
+        "geography.stations[id=한양대].name"
+      ]
+    },
+    {
+      "from": "Hongdaeipgu",
+      "to": "Hongik Univ.",
+      "reason": "map_station 홍대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2. Official: \"Hongik Univ.\".",
+      "at": [
+        "geography.stations[id=홍대입구].name"
+      ]
+    },
+    {
+      "from": "Hyochanggongwonap",
+      "to": "Hyochang Park",
+      "reason": "map_station 효창공원앞: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_6. Official: \"Hyochang Park\".",
+      "at": [
+        "geography.stations[id=효창공원앞].name"
+      ]
+    }
+  ]
+}

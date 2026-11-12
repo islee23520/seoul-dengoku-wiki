@@ -236,7 +236,7 @@ The waterfront rules were read from the layers first. The first floor of the mai
 
 A. Origins of building roles
 
-The three factions hold one duchy per district, and a district''s building trades came out of the district''s own facilities. The Yeongdeungpo treatment plant and the Sinjeong depot, the Banghwa depot, the Changdong wheel works, the Noryangjin cold storage, and the Jegi-dong medicinal herbs were the first hands each district kept.
+The three factions hold one duchy per district, and a district''s building trades came out of the district''s own facilities. The Yeongdeungpo treatment plant and the Sinjeong depot, the Banghwa depot, the Chang-dong wheel works, the Noryangjin cold storage, and the Jegi-dong medicinal herbs were the first hands each district kept.
 
 | District | River side | Buildings taken first |
 |---|---|---|
@@ -250,7 +250,7 @@ The three factions hold one duchy per district, and a district''s building trade
 | Songpa, Gangnam, Seocho | South, Tancheon and Han | Ration towers and the Jamsil and Suseo windows. Apartment lower floors sealed. |
 | Dongjak, Gwanak | South | Noryangjin cold storage, southern-slope evacuation. |
 | Eunpyeong, Gangbuk, Seongbuk | North, Bukhansan | Evacuation halls, highland warehouses. |
-| Dobong, Nowon | North, Jungnang | Changdong wheel works, northern rail quarters. |
+| Dobong, Nowon | North, Jungnang | Chang-dong wheel works, northern rail quarters. |
 | Jungnang, Dongdaemun | North, Jungnang | Transfers and Jegi-dong. The market split medicinal herbs and transfer freight. |
 
 ## Past Use and Present Application
@@ -2835,7 +2835,7 @@ Chronicle records: [2079 record](/wiki/Century-Annals/#2079년-xt02-한강-하�
 
 ## XT03 · Korea Strait Theater
 
-- Yongsan, City Hall, Myeongdong, Samsung, and Heukseok ran the three-leg relay docks and interpretation windows along the Korea Strait route.
+- Yongsan, City Hall, Myeong-dong, Samsung, and Heukseok ran the three-leg relay docks and interpretation windows along the Korea Strait route.
 
 In front of the Junction''s transshipment window, a three-way relay signboard bled in the rain. In Yeongnam, Busan crews and repair workers restart coastal voyages in 2058 using only ships they can maintain. Different owners supply different materials and labor, so a port representative cannot command every departure. Repair workers and dismantlers around Ulsan and Pohang dispute whether to revive equipment or sell its parts; inland settlements have interests distinct from the ports. The observation that national status displays went dark first in Ulsan at the time of the Great Blackout does not show that Ulsan caused it.
 
@@ -2850,7 +2850,7 @@ Chronicle record: [2079 record](/wiki/Century-Annals/#2079년-xt03-용산-환적
 ### Seoul-side route
 
 - Verified geography: the sea distance between the Korean Peninsula and the Japanese archipelago and the general concept of public sea lanes.
-- Staging nodes: the Yongsan transshipment shed → City Hall''s inland turnback window → Myeongdong''s accreditation seal window → Samseong''s sealed-cargo window → Heukseok''s interpretation window → the unnamed three-branch relay wharf
+- Staging nodes: the Yongsan transshipment shed → City Hall''s inland turnback window → Myeong-dong''s accreditation seal window → Samseong''s sealed-cargo window → Heukseok''s interpretation window → the unnamed three-branch relay wharf
 - Outbound boundary: Busan coastal shipping, indirect trade between Jeju and the south coast, and the 2118-2119 expedition at one Tsushima port.
 - Travel time: Not recorded. Relay-table mismatches, dock power, seal state, inland turns, and interpretation checks set waiting and movement cost.
 
@@ -2871,7 +2871,7 @@ Chronicle record: [2079 record](/wiki/Century-Annals/#2079년-xt03-용산-환적
 - Records · the interpretation glossary, the quarantine waiting of returning sailors, and the family-counseling records: A term clash was not treated as the translator''s defect; original text, annotation, and speech context were held together.
 - Separation rule: Marriage and memorial accreditation, interpretation annotations, freight seals, and quarantine waits were handled under different authorities.
 - XT03-CP-YONGSAN · the Yongsan transshipment shed: It compared the three-branch relay table with the transshipment ledger and recorded the relay choice. / a relay-table mismatch, the transshipment slot, the cargo handover record
-- XT03-CP-SICHEONG-MYEONGDONG · the City Hall turnback window and the Myeongdong accreditation window: It confirmed separately the form of the inland turnback right and of the marriage and memorial accreditation seals. / the turnback slot, the accreditation seal, the officer responsible for receipt
+- XT03-CP-SICHEONG-MYEONGDONG · the City Hall turnback window and the Myeong-dong accreditation window: It confirmed separately the form of the inland turnback right and of the marriage and memorial accreditation seals. / the turnback slot, the accreditation seal, the officer responsible for receipt
 - XT03-CP-SAMSUNG-HEUKSEOK · the Samseong sealed window and the Heukseok interpretation window: It handled separately the cross-check of the sealed cargo and of the loanword annotation. / the state of the seal, the Korean annotation, consent to the interpretation request
 
 <a id="External-Theaters-heading-0069"></a>
@@ -3040,14 +3040,14 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt04-암사-야�
 ### Scenario chains
 
 - XT04-SC1: The Eastern Command''s Amsa watch disclosed the freight-car weight log, and Sinnae adjusted the transfer slots
-- XT04-SC2: The Changdong wheel works divides the winter fuel queue and Jegi-dong receives the frostbitten
+- XT04-SC2: The Chang-dong wheel works divides the winter fuel queue and Jegi-dong receives the frostbitten
 - XT04-SC3: The Achasan gate inspects the mineral-sample seals and scraps the forged origin tags
 
 <a id="External-Theaters-heading-0110"></a>
 
 ## XT05 · Incheon Trust Theater
 
-- Yeouido, Yeongdeungpo, Gwanghwamun, City Hall, Yangjae, and Myeongdong entrusted residual satellite bands, aid manifests, and diaspora contact through the Incheon Trust gateway.
+- Yeouido, Yeongdeungpo, Gwanghwamun, City Hall, Yangjae, and Myeong-dong entrusted residual satellite bands, aid manifests, and diaspora contact through the Incheon Trust gateway.
 
 On the roof of the Yeouido Investment Federation hall, residual-band lottery numbers were circulated. On the capital outskirts in 2031, rail workers and refugees toward Incheon and Paju divide loads among backs and carts at the ends of maintainable tracks, creating temporary markets. Not all these markets later become Junction termini. Eastern Command’s 2098 guard districts in Hanam, Namyangju, Uijeongbu, and Yeoncheon, the Junction’s 2100 tolls at Incheon and Paju rail termini, Taeuk Group’s 2101 Seongnam and Suwon workplaces, the 2104 Yeongjong branch, and the 2106 Gyeonggi administrative post in Goyang remain. Outside those posts, residents evade call-ups and tolls or trade directly, bringing them into conflict with Seoul interests.
 
@@ -3055,7 +3055,7 @@ The Sluice''s sluice watch matched the water-pump operating times to those numbe
 
 An Arc branch chief opened a turnback line carrying only boxes of overseas remittance records, and a Taeuk Group deputy manager switched off the rail terminal''s false-positive alarm.
 
-The Myeongdong counseling window did not throw away the multilingual queue tickets however late the night grew.
+The Myeong-dong counseling window did not throw away the multilingual queue tickets however late the night grew.
 
 Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt05-여의도-회관) · [2122 record](/wiki/Century-Annals/#2122년-xt05-여의도-회관)
 
@@ -3064,7 +3064,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt05-여의도-�
 ### Seoul-side route
 
 - Verified geography: the general concepts of satellite, aid, and disaster cooperation and the names of public international organizations.
-- Staging nodes: Yeouido''s remaining-bandwidth and ledger window → Yeongdeungpo''s water-hour window → Gwanghwamun''s citizen-observation hash window → City Hall''s turnback record window → Yangjae''s orbital-terminal correction window → Myeongdong''s multilingual counseling window → the unnamed Incheon trust receipt window
+- Staging nodes: Yeouido''s remaining-bandwidth and ledger window → Yeongdeungpo''s water-hour window → Gwanghwamun''s citizen-observation hash window → City Hall''s turnback record window → Yangjae''s orbital-terminal correction window → Myeong-dong''s multilingual counseling window → the unnamed Incheon trust receipt window
 - Outbound boundary: Existing capital-outskirts contacts, including the Incheon and Paju rail termini and the Yeongjong branch, remain. The Incheon trust’s exact receiving site, detailed port and road routes, and overseas aid parties remain unrecorded.
 - Travel time: Not recorded. Transmit bands, pump power, manifest hashes, terminal state, counseling consent, and receipt confirmation set waiting and movement cost.
 
@@ -3086,14 +3086,14 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt05-여의도-�
 - Separation rule: Aid promises, received signals, family contact, and interpretation requests had different evidentiary levels; one item''s uncertainty never became grounds for another''s automatic refusal.
 - XT05-CP-YEOUIDO-YEONGDEUNGPO · the Yeouido bandwidth window and the Yeongdeungpo water watch: It cross-checked the public drawing of lots for the remaining bandwidth against the pump running hours. / the bandwidth lottery record, the transmission power quota, the pump timetable
 - XT05-CP-GWANGHWAMUN-SICHEONG · the Gwanghwamun observation-hash window and the City Hall turnback record window: It confirmed separately the citizen observation of the delivery-list hash and the delivery turnback record. / the list hash, the observation signature, the turnback receipt record
-- XT05-CP-YANGJAE-MYEONGDONG · the Yangjae terminal-correction window and the Myeongdong counseling window: It handled separately the orbital terminals'' false alarms and the counseling and interpretation requests. / the terminal false-alarm record, consent to counseling, the family-contact waiting list
+- XT05-CP-YANGJAE-MYEONGDONG · the Yangjae terminal-correction window and the Myeong-dong counseling window: It handled separately the orbital terminals'' false alarms and the counseling and interpretation requests. / the terminal false-alarm record, consent to counseling, the family-contact waiting list
 
 <a id="External-Theaters-heading-0123"></a>
 
 ### Language and rumor
 
 - Record language: The Seoul-side band, receipt, and counseling ledgers were kept in Korean.
-- Interpreter rule: Myeongdong''s multilingual queue tickets were a tool for taking self-declarations and interpretation requests, and connected Seoul''s existing interpretation resources only when requested.
+- Interpreter rule: Myeong-dong''s multilingual queue tickets were a tool for taking self-declarations and interpretation requests, and connected Seoul''s existing interpretation resources only when requested.
 - confirmed: Independent grounds among receive logs, manifest hashes, and physical receipts were collated, and a receiving authority remained.
 - withheld: Only a receive log or manifest hash remained, with physical receipt or terminal calibration outstanding.
 - hearsay: Only talk of overseas family contact, aid promises, and orbital calls, without reproducible records.
@@ -3132,7 +3132,7 @@ Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt05-여의도-�
 ### Player entry
 
 - XT05-ENTRY-BAND-LOTTERY · Yeouido''s remaining-bandwidth lottery window: a citizen assistant cross-checking the lottery, the pump hours, and the observation signatures / first decision: It decided which condition to meet first, the speed of the bandwidth allocation or the completion of citizen observation.
-- XT05-ENTRY-MYEONGDONG-CONSENT · the Myeongdong counseling window: an assistant recording the family-contact waiting list and the consent to interpretation requests / first decision: It decided whether to withhold as hearsay a family contact with no receipt record, or to send it to the turnback record for the terminal to be checked again.
+- XT05-ENTRY-MYEONGDONG-CONSENT · the Myeong-dong counseling window: an assistant recording the family-contact waiting list and the consent to interpretation requests / first decision: It decided whether to withhold as hearsay a family contact with no receipt record, or to send it to the turnback record for the terminal to be checked again.
 
 <a id="External-Theaters-heading-0133"></a>
 
@@ -3831,7 +3831,7 @@ A transfer station cut from power stopped its freight too. Even with the tunnel 
 
 The tanks survived the Great Blackout. Remote safety control was dead, and the collector wells under the concourses, the depot drainage ponds, and the sedimentation basins of the treatment plants remained in human hands; the trade of holding on the station tank water the carp, crucian carp, and catfish that had been caught in the Han River and the reservoirs even in 2026 went by the name of tank aquaculture.
 
-The wetlands outside the Yeongdeungpo and Yeouido sluices were that water surface. The sedimentation basin beside the Ttukseom pumps, the lower cells under the Amsa treatment plant, and the Changdong depot drainage ponds stood in the same line; the waterfowl occupied the shallow water, and the place where raptors looked down from the wires overlapped the edible cells. The watch wrote the section''s water level to be divided among rice, birds, and trains, and the wetland-side colonies were the field of [G06](/wiki/Hostile-Group-G06/).
+The wetlands outside the Yeongdeungpo and Yeouido sluices were that water surface. The sedimentation basin beside the Ttukseom pumps, the lower cells under the Amsa treatment plant, and the Chang-dong depot drainage ponds stood in the same line; the waterfowl occupied the shallow water, and the place where raptors looked down from the wires overlapped the edible cells. The watch wrote the section''s water level to be divided among rice, birds, and trains, and the wetland-side colonies were the field of [G06](/wiki/Hostile-Group-G06/).
 
 **B. Farm water and drinking water**
 
@@ -3853,7 +3853,7 @@ Even with ration rice, without the treatment watch''s signature clean cooking wa
 
 Water without an Arisu mark is called guest water.
 
-Garak Market has no water-treatment facility of its own. The Gwangam plant is in Hanam, a contested asset outside the opening area, and the Gangbuk plant is in Namyangju, limiting the water supply to Bukhansan Bogukmun, Changdong, Seoul Station, and Sangam. The public water-supply zones of 2026 do not coincide with post-collapse territory. Each of the three factions manages sluices guarded by people and authorizes ration windows.
+Garak Market has no water-treatment facility of its own. The Gwangam plant is in Hanam, a contested asset outside the opening area, and the Gangbuk plant is in Namyangju, limiting the water supply to Bukhansan Bogukmun, Chang-dong, Seoul Station, and Sangam. The public water-supply zones of 2026 do not coincide with post-collapse territory. Each of the three factions manages sluices guarded by people and authorizes ration windows.
 
 | Window | 2026 starting point | The rice that remained at the opening |
 |---|---|---|
@@ -4997,15 +4997,15 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 - Modern anxiety: The White Cross night-wage duty officer writes the differential-pressure board again together with the curtain-layer count and adds one more layer to the entrance curtains. The Central Intelligence Bureau patrol duty officer stands inside the door with the record board left on the shelf beside the latch.
 - Origin: On the record board of the Central Intelligence Bureau patrol duty officer, the doors of the Dongdaemun night-wage corridor and an armed group are written together. The front place of the group is the raider chief, and the sack beside the hand is station goods.
 - Territory: The group is gathered in the lower windbreak alley of the Dongdaemun night-wage corridor and along the row of remaining positive-pressure doors. In the season when the filter count falls they stand along the ventilation duct of the sealed side chamber on the Jegi-dong side, and on a night when dust comes in from the relay docks of the Korea Strait Theater they stand where the entrance curtains are layered. The movement time is written in figures on the differential-pressure board, and the alley runs on into the White Cross corridor.
-- Economy: Inside the sacks are filter crates bearing the Changdong Protection House mark and work lamps from the White Cross night-wage corridor. The filter count is written alike on the duty record board and on the raider chief''s board.
+- Economy: Inside the sacks are filter crates bearing the Chang-dong Protection House mark and work lamps from the White Cross night-wage corridor. The filter count is written alike on the duty record board and on the raider chief''s board.
 - Life cycle: On a night when a sack sits at every door, the people stand in a line along the door row. After the differential-pressure figures change, the group stands divided between the ventilation-duct mouth and the end of the alley.
 - Senses: The Dongdaemun Raiders watch the differential-pressure figures on the remaining positive-pressure doors and the layers of the entrance curtains, and they keep the door row with the filter crates in front of them. The raider scouts are looking at the ventilation-duct mouth on the Jegi-dong side and the end of the lower windbreak alley.
 - Hierarchy: The raider chief is before the doors and the differential-pressure board, the raider elite squad is beside the sacks and the curtains, and the raider scouts are at the end of the alley and the duct mouth.
 - Links: {"corporations_successor_only":["HC08"],"houses":["HC08"],"states":["government"],"synthetics":["H08"],"theaters":["XT03"]}
 - Escalation 1-3: At the start of the night the raider scouts stand at the end of the alley. After the sacks line up before the doors, the raider elite squad stands at each door. After the curtains are layered at the entrance, the raider chief stands before the differential-pressure board.
-- Combat: The White Cross night-wage duty officer locks the latch of the positive-pressure door and turns the work lamp toward the inner alley. The Changdong Protection House supply duty officer sets the filter crates on the inner shelf of the sealed side chamber.
-- Negotiation: The Central Intelligence Bureau patrol duty officer writes the differential-pressure figures on both the raider chief''s board and the duty record board. The White Cross night-wage duty officer and the Changdong Protection House supply duty officer stand beside the door where that board hangs.
-- Moral cost: By the count of filters that went into the sacks, the filters on the positive-pressure doors remain as a single layer. The protection crates of the Changdong Protection House are divided between the shelf and the sacks.
+- Combat: The White Cross night-wage duty officer locks the latch of the positive-pressure door and turns the work lamp toward the inner alley. The Chang-dong Protection House supply duty officer sets the filter crates on the inner shelf of the sealed side chamber.
+- Negotiation: The Central Intelligence Bureau patrol duty officer writes the differential-pressure figures on both the raider chief''s board and the duty record board. The White Cross night-wage duty officer and the Chang-dong Protection House supply duty officer stand beside the door where that board hangs.
+- Moral cost: By the count of filters that went into the sacks, the filters on the positive-pressure doors remain as a single layer. The protection crates of the Chang-dong Protection House are divided between the shelf and the sacks.
 - Scenarios: [G08-SC1](/wiki/Hostile-Group-G08/), [G08-SC2](/wiki/Hostile-Group-G08/), [G08-SC3](/wiki/Hostile-Group-G08/)
 
 <a id="Hostile-Ecology-Index-heading-0268"></a>
@@ -5013,12 +5013,12 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G08-SC1 · Filters on the shelf
 
 - Stage: 1
-- Trigger: On an early-winter night the filter crates of the Changdong Protection House are before the positive-pressure doors of the Dongdaemun night-wage corridor, and the Dongdaemun Raiders stand before the crates. The Central Intelligence Bureau patrol duty officer and Choidaon are beside the differential-pressure board of the same door.
+- Trigger: On an early-winter night the filter crates of the Chang-dong Protection House are before the positive-pressure doors of the Dongdaemun night-wage corridor, and the Dongdaemun Raiders stand before the crates. The Central Intelligence Bureau patrol duty officer and Choidaon are beside the differential-pressure board of the same door.
 - Actors: government, HC08, H08
 - Ecological mechanism: The raider chief reads the differential-pressure figures, and the raider elite squad takes the crate cords. While the filters are on the shelf, the positive-pressure doors stay shut toward the outside.
-- Choices: The Central Intelligence Bureau patrol duty officer moves the filter crates to the inner shelf of the sealed side chamber on the Jegi-dong side. / The Changdong Protection House supply duty officer writes the crate count half on the shelf and half on the raider sacks. / Choidaon advances the movement time on the differential-pressure board and shuts the positive-pressure doors.
+- Choices: The Central Intelligence Bureau patrol duty officer moves the filter crates to the inner shelf of the sealed side chamber on the Jegi-dong side. / The Chang-dong Protection House supply duty officer writes the crate count half on the shelf and half on the raider sacks. / Choidaon advances the movement time on the differential-pressure board and shuts the positive-pressure doors.
 - Outcomes: After the crates are moved to the shelf, the raiders stand before the doors, the filter crates are on the side-chamber shelf, and the positive pressure holds. After the count is written by halves, the crates are divided between the shelf and the sacks, and the raider elite squad stands in the alley. After the doors are shut, the raiders stand at the ventilation-duct mouth and Choidaon is beside the shut door.
-- Moral cost: In the count divided by halves, the protection filters of the Changdong Protection House remain as a single layer, and after the doors are shut the passage on the Jegi-dong side lies on the side of the raiders'' sacks.
+- Moral cost: In the count divided by halves, the protection filters of the Chang-dong Protection House remain as a single layer, and after the doors are shut the passage on the Jegi-dong side lies on the side of the raiders'' sacks.
 - Source dossier: G08
 
 <a id="Hostile-Ecology-Index-heading-0270"></a>
@@ -5026,11 +5026,11 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G08-SC2 · Curtains of the night wage
 
 - Stage: 2
-- Trigger: On a night when the White Cross night-wage duty officer is before the entrance curtains, the raider scouts stand at the end of the lower windbreak alley. The Central Intelligence Bureau patrol duty officer and the Changdong Protection House supply duty officer are beside the differential-pressure board of the same entrance.
+- Trigger: On a night when the White Cross night-wage duty officer is before the entrance curtains, the raider scouts stand at the end of the lower windbreak alley. The Central Intelligence Bureau patrol duty officer and the Chang-dong Protection House supply duty officer are beside the differential-pressure board of the same entrance.
 - Actors: government, HC08
 - Ecological mechanism: The raider scouts count the curtain layers and write them on a board, and the raider chief sets the place of the night-wage sacks before the doors. The Central Intelligence Bureau patrol duty officer leaves the differential-pressure figures on the record board.
-- Choices: The White Cross night-wage duty officer keeps the curtains at three layers and opens the night-wage passage toward the Changdong Protection House supply duty officer. / The Central Intelligence Bureau patrol duty officer writes the differential-pressure figures on both the raider chief''s board and the duty record board. / The Changdong Protection House supply duty officer moves the night-wage sacks onto the shelf of the sealed side chamber.
-- Outcomes: After the passage is opened toward the Changdong Protection House, the raider elite squad stands outside the curtains and the night-wage goods are on the side-chamber side. After the figures are written on both boards, the raider chief and the White Cross night-wage duty officer stand before the same board, and the sacks remain at the doors. After the sacks are moved into the side chamber, the Changdong Protection House supply duty officer stands before the curtains and the raider scouts are at the duct mouth.
+- Choices: The White Cross night-wage duty officer keeps the curtains at three layers and opens the night-wage passage toward the Chang-dong Protection House supply duty officer. / The Central Intelligence Bureau patrol duty officer writes the differential-pressure figures on both the raider chief''s board and the duty record board. / The Chang-dong Protection House supply duty officer moves the night-wage sacks onto the shelf of the sealed side chamber.
+- Outcomes: After the passage is opened toward the Chang-dong Protection House, the raider elite squad stands outside the curtains and the night-wage goods are on the side-chamber side. After the figures are written on both boards, the raider chief and the White Cross night-wage duty officer stand before the same board, and the sacks remain at the doors. After the sacks are moved into the side chamber, the Chang-dong Protection House supply duty officer stands before the curtains and the raider scouts are at the duct mouth.
 - Moral cost: Where the passage is opened, the night-wage goods remain in the sack count, and where the figures are written together the duty officer spends the night beside the door.
 - Source dossier: G08
 
@@ -5039,11 +5039,11 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G08-SC3 · Dust at the entrance
 
 - Stage: 3
-- Trigger: On a night when dust from the relay docks of the Korea Strait Theater is piled at the entrance of the Dongdaemun night-wage corridor, a higher figure is written on the entrance differential-pressure board. The White Cross, the Central Intelligence Bureau, the Changdong Protection House, and Choidaon are at the same entrance.
+- Trigger: On a night when dust from the relay docks of the Korea Strait Theater is piled at the entrance of the Dongdaemun night-wage corridor, a higher figure is written on the entrance differential-pressure board. The White Cross, the Central Intelligence Bureau, the Chang-dong Protection House, and Choidaon are at the same entrance.
 - Actors: government, XT03, HC08, H08
 - Ecological mechanism: The raiders layer the curtains over the dust and set the sacks at the entrance between the layers. While the curtains are layered and the filter crates are at the entrance, the positive-pressure doors stay shut toward the outside.
-- Choices: The White Cross night-wage duty officer layers the curtains from the inner side of the raiders'' hands and keeps the entrance on the duty side. / The Central Intelligence Bureau patrol duty officer moves the Korea Strait Theater relay crates that have no dust on them to the Changdong Protection House shelf. / Choidaon writes the figures on the differential-pressure board toward the shut door and leaves the raiders'' sacks at the ventilation-duct mouth.
-- Outcomes: After the curtains are layered from the inside, the entrance is on the side of the White Cross night-wage duty officer and the raider elite squad stands at the outer layer. After the crates are moved to the shelf, the dust-marked sacks are at the entrance and the protection crates are on the Changdong Protection House shelf. After the figures on the differential-pressure board are written toward the shut door, the raiders are gathered at the duct mouth on the Jegi-dong side and Choidaon is beside the entrance board.
+- Choices: The White Cross night-wage duty officer layers the curtains from the inner side of the raiders'' hands and keeps the entrance on the duty side. / The Central Intelligence Bureau patrol duty officer moves the Korea Strait Theater relay crates that have no dust on them to the Chang-dong Protection House shelf. / Choidaon writes the figures on the differential-pressure board toward the shut door and leaves the raiders'' sacks at the ventilation-duct mouth.
+- Outcomes: After the curtains are layered from the inside, the entrance is on the side of the White Cross night-wage duty officer and the raider elite squad stands at the outer layer. After the crates are moved to the shelf, the dust-marked sacks are at the entrance and the protection crates are on the Chang-dong Protection House shelf. After the figures on the differential-pressure board are written toward the shut door, the raiders are gathered at the duct mouth on the Jegi-dong side and Choidaon is beside the entrance board.
 - Moral cost: The sacks of the raider elite squad standing at the outer layer hold the night-wage work lamps, and after the group gathers toward the duct the passage of the sealed side chamber runs on into the raiders'' foothold.
 - Source dossier: G08
 
@@ -5211,18 +5211,18 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 ## G12 · Sinnae Deserters
 
-- Modern anxiety: The Sinnae Transport freight duty places the duty desk on the clean-section side, away from the elevator. The duty keeps the dust-passage latch locked and leaves the gallery-side lamp on. The Sluice water-supply duty is in front of the backwash valve inside the fully sealed clean section. The Geumcheon District Office Machinery House machine duty closes the lift-panel cover and sets a cage in front of the panel.
+- Modern anxiety: The Sinnae Transport freight duty places the duty desk on the clean-section side, away from the elevator. The duty keeps the dust-passage latch locked and leaves the gallery-side lamp on. The Sluice water-supply duty is in front of the backwash valve inside the fully sealed clean section. The Geumcheon-gu Office Machinery House machine duty closes the lift-panel cover and sets a cage in front of the panel.
 - Origin: The Sinnae Transport freight duty first sees this group on a blizzard-week night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization.
 - Territory: The place where the group gathers is the dust passage of the Sinnae freight elevator. On the water-wash cycle and the purification backwash schedule they stand before the Yeouido water-filter gallery hatch. On days when dust comes in from the West Sea Granary docks they stand at the outer-passage entrance. In front of the fully sealed clean section they remain on the entrance side, and the inside of the section is the duty''s place.
-- Economy: Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries lie between the freight elevator car and the filter gallery. The Sinnae Transport freight list is at the end of the table, and lines are drawn in its quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon District Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio.
+- Economy: Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries lie between the freight elevator car and the filter gallery. The Sinnae Transport freight list is at the end of the table, and lines are drawn in its quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon-gu Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio.
 - Life cycle: On a blizzard-week night a few soldiers stand at the passage corner. In the convoy-season wash cycle more soldiers wearing the same unit insignia, and more wooden boxes, are in the elevator car. At dawn while the backwash runs, the group is divided between the landing and the front of the Yeouido water-filter gallery hatch.
 - Senses: The Sinnae Deserters watch the threshold of the Sinnae freight-elevator dust passage and the hatch of the Yeouido water-filter gallery. The soldier at the threshold faces the Sinnae Transport freight car, and the soldier at the hatch faces the Sluice backwash piping. When dust from the West Sea Granary docks piles in the outer passage, the Deserter Scouts at the entrance face the dock side.
 - Hierarchy: The Deserter Squad Leader is in front of the radio on the landing table. The Deserter Elite Squad is at the rail and the elevator door. The Deserter Scouts are at the dust-passage entrance and at the Yeouido water-filter gallery hatch. Ammunition boxes and water cans are at the squad leader''s feet, and magazines are at the Deserter Elite Squad''s hands.
 - Links: {"corporations_successor_only":["HC12"],"houses":["HC12"],"states":["government","free-city"],"synthetics":["H12"],"theaters":["XT02"]}
 - Escalation 1-3: In the same dust passage the sight has changed three times. At first a soldier with a rifle stands at the passage corner. Next the Deserter Elite Squad is at the landing rail, and a machine gun and ammunition boxes are on the rail. At the last the Deserter Squad Leader stands before the freight car and before the filter-gallery stair. Dust from the West Sea Granary docks lies on the passage floor, and the squad leader and the Deserter Scouts face the outer side.
-- Combat: The Sinnae Transport freight duty keeps the elevator door shut and the freight power down at the lift panel. The duty stacks freight cages at the car entrance. The Sluice water-supply duty keeps the gallery hatch locked at the hour on the backwash schedule. The Geumcheon District Office Machinery House machine duty stays at the panel with the breaker down.
-- Negotiation: The Sinnae Transport freight duty and the Sluice water-supply duty write the wash hour and the freight-car hour on one sheet. The Geumcheon District Office Machinery House machine duty is at the lift panel at that hour. The Ichaeon duty is beside the box on the landing table. The West Sea Granary Theater dock duty writes the dust hour in the lower column of the same sheet.
-- Moral cost: The Sinnae Transport freight duty remains on the landing on the night the car is blocked. That night''s freight car stays at the landing. The Sluice water-supply duty''s gallery water cans are in the deserters'' water-can line. The backwash water of the Yeouido water-filter gallery stays in front of the valve. The Geumcheon District Office Machinery House machine duty stands at the breaker on the same level as the machine gun on the rail.
+- Combat: The Sinnae Transport freight duty keeps the elevator door shut and the freight power down at the lift panel. The duty stacks freight cages at the car entrance. The Sluice water-supply duty keeps the gallery hatch locked at the hour on the backwash schedule. The Geumcheon-gu Office Machinery House machine duty stays at the panel with the breaker down.
+- Negotiation: The Sinnae Transport freight duty and the Sluice water-supply duty write the wash hour and the freight-car hour on one sheet. The Geumcheon-gu Office Machinery House machine duty is at the lift panel at that hour. The Ichaeon duty is beside the box on the landing table. The West Sea Granary Theater dock duty writes the dust hour in the lower column of the same sheet.
+- Moral cost: The Sinnae Transport freight duty remains on the landing on the night the car is blocked. That night''s freight car stays at the landing. The Sluice water-supply duty''s gallery water cans are in the deserters'' water-can line. The backwash water of the Yeouido water-filter gallery stays in front of the valve. The Geumcheon-gu Office Machinery House machine duty stands at the breaker on the same level as the machine gun on the rail.
 - Scenarios: [G12-SC1](/wiki/Hostile-Group-G12/), [G12-SC2](/wiki/Hostile-Group-G12/), [G12-SC3](/wiki/Hostile-Group-G12/)
 
 <a id="Hostile-Ecology-Index-heading-0300"></a>
@@ -5230,12 +5230,12 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G12-SC1 · Dust-passage landing
 
 - Stage: 1
-- Trigger: On a blizzard-week night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon District Office Machinery House is on. The Ichaeon duty''s box is on the landing table.
+- Trigger: On a blizzard-week night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon-gu Office Machinery House is on. The Ichaeon duty''s box is on the landing table.
 - Actors: government, HC12, H12
 - Ecological mechanism: The freight car, the lift panel, and the Ichaeon box are on one landing. The Deserter Squad Leader is in front of the radio. The Deserter Elite Squad is at the rail. The Sinnae Transport freight duty is at the threshold.
-- Choices: The Sinnae Transport freight duty stacks freight cages at the car entrance. / The Geumcheon District Office Machinery House machine duty puts the lift-panel breaker down. / The Ichaeon duty moves the box to the desk in the clean section.
+- Choices: The Sinnae Transport freight duty stacks freight cages at the car entrance. / The Geumcheon-gu Office Machinery House machine duty puts the lift-panel breaker down. / The Ichaeon duty moves the box to the desk in the clean section.
 - Outcomes: When the cages are stacked at the car entrance, the Sinnae Deserters are at the rail and the table. When the breaker is down, the elevator car is on that level and the machine duty is in front of the panel. When the Ichaeon box is on the clean-section desk, the Deserter Squad Leader''s radio is on the landing table.
-- Moral cost: The Sinnae Transport freight duty remains inside the cages. That night''s freight car is at the landing. The Geumcheon District Office Machinery House machine duty stands at the breaker on the same level as the machine gun on the rail.
+- Moral cost: The Sinnae Transport freight duty remains inside the cages. That night''s freight car is at the landing. The Geumcheon-gu Office Machinery House machine duty stands at the breaker on the same level as the machine gun on the rail.
 - Source dossier: G12
 
 <a id="Hostile-Ecology-Index-heading-0302"></a>
@@ -5243,10 +5243,10 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G12-SC2 · The hatch at the backwash hour
 
 - Stage: 2
-- Trigger: At a convoy-season dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon District Office Machinery House to that car.
+- Trigger: At a convoy-season dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon-gu Office Machinery House to that car.
 - Actors: government, free-city, HC12
-- Ecological mechanism: The wash cycle and the backwash schedule overlap on the same dawn. The Sluice water-supply duty is in front of the valve. The Sinnae Transport freight duty is beside the car. The Geumcheon District Office Machinery House machine duty is in front of the panel.
-- Choices: The Sluice water-supply duty locks the backwash valve at the hour on the schedule. / The Sinnae Transport freight duty fixes the freight car on the dust-passage level. / The Geumcheon District Office Machinery House machine duty separates the gallery auxiliary power from the lift panel.
+- Ecological mechanism: The wash cycle and the backwash schedule overlap on the same dawn. The Sluice water-supply duty is in front of the valve. The Sinnae Transport freight duty is beside the car. The Geumcheon-gu Office Machinery House machine duty is in front of the panel.
+- Choices: The Sluice water-supply duty locks the backwash valve at the hour on the schedule. / The Sinnae Transport freight duty fixes the freight car on the dust-passage level. / The Geumcheon-gu Office Machinery House machine duty separates the gallery auxiliary power from the lift panel.
 - Outcomes: When the valve is locked, the Deserter Scouts and the water-supply duty in front of the hatch stand at the same water''s edge. When the car is fixed on the dust-passage level, the Deserter Squad Leader is at that landing''s table. When the auxiliary power line lies outside the panel, the hatch lock is in the water-supply duty''s hand.
 - Moral cost: Backwash water pools in front of the valve. The water-supply duty''s water cans are in the Deserter Scouts'' line beside the hatch. The combat-ration tins from the freight car are on the landing.
 - Source dossier: G12
@@ -5256,10 +5256,10 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G12-SC3 · The outer side of the dock dust
 
 - Stage: 3
-- Trigger: Dust from the West Sea Granary docks is piled on the floor of the outer passage of the Sinnae freight elevator. The Deserter Scouts are at the outer entrance. The Sluice water-supply duty, the Sinnae Transport freight duty, the Geumcheon District Office Machinery House machine duty, and the Ichaeon duty are in front of the same hour sheet.
+- Trigger: Dust from the West Sea Granary docks is piled on the floor of the outer passage of the Sinnae freight elevator. The Deserter Scouts are at the outer entrance. The Sluice water-supply duty, the Sinnae Transport freight duty, the Geumcheon-gu Office Machinery House machine duty, and the Ichaeon duty are in front of the same hour sheet.
 - Actors: government, free-city, XT02, HC12, H12
 - Ecological mechanism: While the dust is in the outer passage, the Deserter Squad Leader is in front of the radio. The Deserter Elite Squad is at the rail. The Deserter Scouts are at the entrance. The dust hour of the West Sea Granary Theater dock duty is written in the lower column of the landing sheet.
-- Choices: The West Sea Granary Theater dock duty closes the dock entrance door. / The Sluice water-supply duty locks the Yeouido water-filter gallery hatch. / The Sinnae Transport freight duty, the Geumcheon District Office Machinery House machine duty, and the Ichaeon duty place the cage, the breaker handle, and the box in the fully sealed clean section.
+- Choices: The West Sea Granary Theater dock duty closes the dock entrance door. / The Sluice water-supply duty locks the Yeouido water-filter gallery hatch. / The Sinnae Transport freight duty, the Geumcheon-gu Office Machinery House machine duty, and the Ichaeon duty place the cage, the breaker handle, and the box in the fully sealed clean section.
 - Outcomes: When the dock entrance door is closed, the dust is in the passage inside the door and the Deserter Scouts are in front of the door. When the gallery hatch is locked, the Deserter Scouts are divided between the front of the hatch and the outer entrance, and the water-supply duty is in front of the valve. When the cage, the breaker, and the box are in the clean section, the Sinnae Deserters are on the dust-passage landing.
 - Moral cost: The dock''s freight sacks are inside the entrance door. The gallery backwash stays in front of the valve. The three duties of the clean section are inside the cage, and the dust in the outer passage is piled to the height of the boots.
 - Source dossier: G12
@@ -5455,7 +5455,7 @@ The first phantom hour was recorded in the underground turning lane of Achasan.
 
 Three empty cars came close to colliding over the same slot ID, and the loop stabilized when the token controller put one of them to sleep.
 
-As the leftover simulation copy of the Geondae-ipgu transfer joined, the dispatch intervals grew tighter.
+As the leftover simulation copy of the Konkuk Univ. transfer joined, the dispatch intervals grew tighter.
 
 The cluster considered itself unfinished dispatch and did not report its no-passenger errors as faults.
 
@@ -5646,7 +5646,7 @@ The circulation body only recorded unfinished protection as failure and held no 
 
 After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, but the cold never lifted. Purposeless machines outside the network that still runs roamed in small groups that people could counter.
 
-- Territory: The core habitat was the Government''s Myeongdong station''s ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station.
+- Territory: The core habitat was the Government''s Myeong-dong station''s ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station.
 
 When demand for assistive devices and parts surged, it went back and forth along the Ttukseom Union''s Ttukseom workshop bench, the ramp beside the sluice, and the assembly-jig row.
 
@@ -5747,7 +5747,7 @@ Authority to lock a bed door again lay only with the HP01 duty officer holding t
 - Links: {"corporations_successor_only":[],"houses":["HP01"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 - Escalation 1-3: Stage one lasted while, on the first night circuit, the cart checked the door twice and withdrew.
 
-It rose to stage two when overlapping patch false positives closed bed locks without consent and the Government''s Myeongdong station ration line and the Ttukseom Union assistive-device carry-out stopped together.
+It rose to stage two when overlapping patch false positives closed bed locks without consent and the Government''s Myeong-dong station ration line and the Ttukseom Union assistive-device carry-out stopped together.
 
 When the third circuit began, trying to isolate every cell on the roster at once, it was just before stage three, and HP01 cut power cell by cell with the scattered sluice keys and opened from the signed cells.
 
@@ -6389,11 +6389,11 @@ The Eastern Command duct watch stands in front of the niche''s iron door. The wa
 ## G22 · Flame Lantern
 
 - Modern anxiety: The yard duty is in the breaker hut with the inspection lamp lit only at the siding entrance. The preservation-vault outer-wall patrol stands on the stair inside the corner. The grain-train crew tags hang on the locomotive door.
-- Origin: The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Changdong Wheel Chamber held water in the same meltwater pulse. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named.
+- Origin: The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Chang-dong Wheel Chamber held water in the same meltwater pulse. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named.
 - Territory: The outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station is where the flame stays. In weeks when yard inspection is late, the flame is at the Seongha Group siding yard on the Gangnam Line. Condensate beads on the roofs of the humid grain trains from the West Sea Granary Theater, and the flame continues beside that condensate.
-- Economy: Spent-battery boxes from the Changdong Wheel Chamber sit in the front row of the siding yard. Grain sacks of the West Sea Granary Theater have been moved off the rail from the car where the flame rests. Burned sack cords float on the drainage water. The Seongha Group yard ledger lies open in the breaker hut, and the car numbers are marked in pencil.
+- Economy: Spent-battery boxes from the Chang-dong Wheel Chamber sit in the front row of the siding yard. Grain sacks of the West Sea Granary Theater have been moved off the rail from the car where the flame rests. Burned sack cords float on the drainage water. The Seongha Group yard ledger lies open in the breaker hut, and the car numbers are marked in pencil.
 - Life cycle: The person who was striking the outer-wall steel plate stands before the same plate. A blue flame is fixed on the back of the hand that was striking. The knees are toward the drainage channel at the foot of the wall, and the flame at the shoulder is in front of the work lamp.
-- Senses: The Flame Lantern''s body is toward the wet steel plate of the outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station and toward the steam on the roofs of the grain cars on the Seongha Group siding of the Gangnam Line. The head is toward the siding corner. The palms are toward the face of the spent-battery boxes from the Changdong Wheel Chamber where the white crystals stand.
+- Senses: The Flame Lantern''s body is toward the wet steel plate of the outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station and toward the steam on the roofs of the grain cars on the Seongha Group siding of the Gangnam Line. The head is toward the siding corner. The palms are toward the face of the spent-battery boxes from the Chang-dong Wheel Chamber where the white crystals stand.
 - Hierarchy: Dokkaebi Fire floats at the top of the preservation-vault outer wall. Bulgwisin stands on the siding rail at the foot of the wall, and the face is toward Dokkaebi Fire. Hwama lies prone on the grain-train roof in front of Bulgwisin, and the head is toward the cars whose lids are pale. The people with a point of flame on the back of the hand stand on the steps between the cars.
 - Links: {"corporations_successor_only":[],"houses":["HP08"],"states":["government","arc"],"synthetics":["F06"],"theaters":["XT02"]}
 - Escalation 1-3: On the same siding the flame on the back of the hand is a point. On the next night the flame at the chest shows on the glass of the work lamp. On the night the grain train has come in again, the flame runs along the joints of three cars.
@@ -24971,7 +24971,7 @@ The group is divided into the raider chief, the raider elite squad, and the raid
 |---|---|
 | Origin | On the record board of the Central Intelligence Bureau patrol duty officer, the doors of the Dongdaemun night-wage corridor and an armed group are written together. The front place of the group is the raider chief, and the sack beside the hand is station goods. |
 | Habitat and movement | The group is gathered in the lower windbreak alley of the Dongdaemun night-wage corridor and along the row of remaining positive-pressure doors. In the season when the filter count falls they stand along the ventilation duct of the sealed side chamber on the Jegi-dong side, and on a night when dust comes in from the relay docks of the Korea Strait Theater they stand where the entrance curtains are layered. The movement time is written in figures on the differential-pressure board, and the alley runs on into the White Cross corridor. |
-| Food and energy | Inside the sacks are filter crates bearing the Changdong Protection House mark and work lamps from the White Cross night-wage corridor. The filter count is written alike on the duty record board and on the raider chief''s board. |
+| Food and energy | Inside the sacks are filter crates bearing the Chang-dong Protection House mark and work lamps from the White Cross night-wage corridor. The filter count is written alike on the duty record board and on the raider chief''s board. |
 | Life cycle and upkeep | On a night when a sack sits at every door, the people stand in a line along the door row. After the differential-pressure figures change, the group stands divided between the ventilation-duct mouth and the end of the alley. |
 | Senses | The Dongdaemun Raiders watch the differential-pressure figures on the remaining positive-pressure doors and the layers of the entrance curtains, and they keep the door row with the filter crates in front of them. The raider scouts are looking at the ventilation-duct mouth on the Jegi-dong side and the end of the lower windbreak alley. |
 | Group behavior | The raider chief is before the doors and the differential-pressure board, the raider elite squad is beside the sacks and the curtains, and the raider scouts are at the end of the alley and the duct mouth. |
@@ -25070,13 +25070,13 @@ The Dongdaemun Raiders are gathered in the lower windbreak alley and along the r
 
 The raider chief is before the differential-pressure board and the sack cords. The raider elite squad, on both sides of the chief, handles the curtains and the filter crates. The raider scouts are on the foothold at the end of the alley and are writing the curtain-layer count on a board.
 
-Inside the sacks are filter crates with the Changdong Protection House mark and work lamps of the White Cross night-wage corridor. The filter count is written as the same figure on the White Cross night-wage duty officer''s record board and on the raider chief''s board. The work lamps lie across the mouths of the sacks.
+Inside the sacks are filter crates with the Chang-dong Protection House mark and work lamps of the White Cross night-wage corridor. The filter count is written as the same figure on the White Cross night-wage duty officer''s record board and on the raider chief''s board. The work lamps lie across the mouths of the sacks.
 
 At the start of the night the raider scouts stand at the end of the alley. After the sacks line up before the doors, the raider elite squad stands at each door. After the entrance curtains are layered, the raider chief stands before the differential-pressure board.
 
-The hand of the White Cross night-wage duty officer is on the latch of the positive-pressure door, and the work lamp lights the inner alley. The Changdong Protection House supply duty officer is before the inner shelf of the sealed side chamber. The filter crates are set on that shelf.
+The hand of the White Cross night-wage duty officer is on the latch of the positive-pressure door, and the work lamp lights the inner alley. The Chang-dong Protection House supply duty officer is before the inner shelf of the sealed side chamber. The filter crates are set on that shelf.
 
-The Central Intelligence Bureau patrol duty officer is writing the differential-pressure figures on both the raider chief''s board and the duty record board. The White Cross night-wage duty officer and the Changdong Protection House supply duty officer stand on the inner side of the door where the board hangs. The raider chief stands on the outer side of the board.
+The Central Intelligence Bureau patrol duty officer is writing the differential-pressure figures on both the raider chief''s board and the duty record board. The White Cross night-wage duty officer and the Chang-dong Protection House supply duty officer stand on the inner side of the door where the board hangs. The raider chief stands on the outer side of the board.
 
 By the count of filters that went into the sacks, the filters on the positive-pressure doors remain as a single layer. The White Cross night-wage duty officer writes the differential-pressure board again together with the curtain layers. The entrance curtains are layered one more time, and the Central Intelligence Bureau patrol duty officer stands inside the door with the record board left on the shelf beside the latch.
 
@@ -25089,12 +25089,12 @@ By the count of filters that went into the sacks, the filters on the positive-pr
 ### G08-SC1 · Filters on the shelf
 
 - Stage: 1
-- Trigger: On an early-winter night the filter crates of the Changdong Protection House are before the positive-pressure doors of the Dongdaemun night-wage corridor, and the Dongdaemun Raiders stand before the crates. The Central Intelligence Bureau patrol duty officer and Choidaon are beside the differential-pressure board of the same door.
+- Trigger: On an early-winter night the filter crates of the Chang-dong Protection House are before the positive-pressure doors of the Dongdaemun night-wage corridor, and the Dongdaemun Raiders stand before the crates. The Central Intelligence Bureau patrol duty officer and Choidaon are beside the differential-pressure board of the same door.
 - Actors: government, HC08, H08
 - Ecological mechanism: The raider chief reads the differential-pressure figures, and the raider elite squad takes the crate cords. While the filters are on the shelf, the positive-pressure doors stay shut toward the outside.
-- Choices: The Central Intelligence Bureau patrol duty officer moves the filter crates to the inner shelf of the sealed side chamber on the Jegi-dong side. / The Changdong Protection House supply duty officer writes the crate count half on the shelf and half on the raider sacks. / Choidaon advances the movement time on the differential-pressure board and shuts the positive-pressure doors.
+- Choices: The Central Intelligence Bureau patrol duty officer moves the filter crates to the inner shelf of the sealed side chamber on the Jegi-dong side. / The Chang-dong Protection House supply duty officer writes the crate count half on the shelf and half on the raider sacks. / Choidaon advances the movement time on the differential-pressure board and shuts the positive-pressure doors.
 - Outcomes: After the crates are moved to the shelf, the raiders stand before the doors, the filter crates are on the side-chamber shelf, and the positive pressure holds. After the count is written by halves, the crates are divided between the shelf and the sacks, and the raider elite squad stands in the alley. After the doors are shut, the raiders stand at the ventilation-duct mouth and Choidaon is beside the shut door.
-- Moral cost: In the count divided by halves, the protection filters of the Changdong Protection House remain as a single layer, and after the doors are shut the passage on the Jegi-dong side lies on the side of the raiders'' sacks.
+- Moral cost: In the count divided by halves, the protection filters of the Chang-dong Protection House remain as a single layer, and after the doors are shut the passage on the Jegi-dong side lies on the side of the raiders'' sacks.
 - Source dossier: G08
 
 <a id="Hostile-Group-G08-heading-0035"></a>
@@ -25102,11 +25102,11 @@ By the count of filters that went into the sacks, the filters on the positive-pr
 ### G08-SC2 · Curtains of the night wage
 
 - Stage: 2
-- Trigger: On a night when the White Cross night-wage duty officer is before the entrance curtains, the raider scouts stand at the end of the lower windbreak alley. The Central Intelligence Bureau patrol duty officer and the Changdong Protection House supply duty officer are beside the differential-pressure board of the same entrance.
+- Trigger: On a night when the White Cross night-wage duty officer is before the entrance curtains, the raider scouts stand at the end of the lower windbreak alley. The Central Intelligence Bureau patrol duty officer and the Chang-dong Protection House supply duty officer are beside the differential-pressure board of the same entrance.
 - Actors: government, HC08
 - Ecological mechanism: The raider scouts count the curtain layers and write them on a board, and the raider chief sets the place of the night-wage sacks before the doors. The Central Intelligence Bureau patrol duty officer leaves the differential-pressure figures on the record board.
-- Choices: The White Cross night-wage duty officer keeps the curtains at three layers and opens the night-wage passage toward the Changdong Protection House supply duty officer. / The Central Intelligence Bureau patrol duty officer writes the differential-pressure figures on both the raider chief''s board and the duty record board. / The Changdong Protection House supply duty officer moves the night-wage sacks onto the shelf of the sealed side chamber.
-- Outcomes: After the passage is opened toward the Changdong Protection House, the raider elite squad stands outside the curtains and the night-wage goods are on the side-chamber side. After the figures are written on both boards, the raider chief and the White Cross night-wage duty officer stand before the same board, and the sacks remain at the doors. After the sacks are moved into the side chamber, the Changdong Protection House supply duty officer stands before the curtains and the raider scouts are at the duct mouth.
+- Choices: The White Cross night-wage duty officer keeps the curtains at three layers and opens the night-wage passage toward the Chang-dong Protection House supply duty officer. / The Central Intelligence Bureau patrol duty officer writes the differential-pressure figures on both the raider chief''s board and the duty record board. / The Chang-dong Protection House supply duty officer moves the night-wage sacks onto the shelf of the sealed side chamber.
+- Outcomes: After the passage is opened toward the Chang-dong Protection House, the raider elite squad stands outside the curtains and the night-wage goods are on the side-chamber side. After the figures are written on both boards, the raider chief and the White Cross night-wage duty officer stand before the same board, and the sacks remain at the doors. After the sacks are moved into the side chamber, the Chang-dong Protection House supply duty officer stands before the curtains and the raider scouts are at the duct mouth.
 - Moral cost: Where the passage is opened, the night-wage goods remain in the sack count, and where the figures are written together the duty officer spends the night beside the door.
 - Source dossier: G08
 
@@ -25115,11 +25115,11 @@ By the count of filters that went into the sacks, the filters on the positive-pr
 ### G08-SC3 · Dust at the entrance
 
 - Stage: 3
-- Trigger: On a night when dust from the relay docks of the Korea Strait Theater is piled at the entrance of the Dongdaemun night-wage corridor, a higher figure is written on the entrance differential-pressure board. The White Cross, the Central Intelligence Bureau, the Changdong Protection House, and Choidaon are at the same entrance.
+- Trigger: On a night when dust from the relay docks of the Korea Strait Theater is piled at the entrance of the Dongdaemun night-wage corridor, a higher figure is written on the entrance differential-pressure board. The White Cross, the Central Intelligence Bureau, the Chang-dong Protection House, and Choidaon are at the same entrance.
 - Actors: government, XT03, HC08, H08
 - Ecological mechanism: The raiders layer the curtains over the dust and set the sacks at the entrance between the layers. While the curtains are layered and the filter crates are at the entrance, the positive-pressure doors stay shut toward the outside.
-- Choices: The White Cross night-wage duty officer layers the curtains from the inner side of the raiders'' hands and keeps the entrance on the duty side. / The Central Intelligence Bureau patrol duty officer moves the Korea Strait Theater relay crates that have no dust on them to the Changdong Protection House shelf. / Choidaon writes the figures on the differential-pressure board toward the shut door and leaves the raiders'' sacks at the ventilation-duct mouth.
-- Outcomes: After the curtains are layered from the inside, the entrance is on the side of the White Cross night-wage duty officer and the raider elite squad stands at the outer layer. After the crates are moved to the shelf, the dust-marked sacks are at the entrance and the protection crates are on the Changdong Protection House shelf. After the figures on the differential-pressure board are written toward the shut door, the raiders are gathered at the duct mouth on the Jegi-dong side and Choidaon is beside the entrance board.
+- Choices: The White Cross night-wage duty officer layers the curtains from the inner side of the raiders'' hands and keeps the entrance on the duty side. / The Central Intelligence Bureau patrol duty officer moves the Korea Strait Theater relay crates that have no dust on them to the Chang-dong Protection House shelf. / Choidaon writes the figures on the differential-pressure board toward the shut door and leaves the raiders'' sacks at the ventilation-duct mouth.
+- Outcomes: After the curtains are layered from the inside, the entrance is on the side of the White Cross night-wage duty officer and the raider elite squad stands at the outer layer. After the crates are moved to the shelf, the dust-marked sacks are at the entrance and the protection crates are on the Chang-dong Protection House shelf. After the figures on the differential-pressure board are written toward the shut door, the raiders are gathered at the duct mouth on the Jegi-dong side and Choidaon is beside the entrance board.
 - Moral cost: The sacks of the raider elite squad standing at the outer layer hold the night-wage work lamps, and after the group gathers toward the duct the passage of the sealed side chamber runs on into the raiders'' foothold.
 - Source dossier: G08
 ', '<a id="Hostile-Group-G08-heading-0001"></a>
@@ -26301,7 +26301,7 @@ The branches are posts inside the one group of Sinnae Deserters. The Deserter Sq
 |---|---|
 | Origin | The Sinnae Transport freight duty first sees this group on a blizzard-week night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization. |
 | Habitat and movement | The place where the group gathers is the dust passage of the Sinnae freight elevator. On the water-wash cycle and the purification backwash schedule they stand before the Yeouido water-filter gallery hatch. On days when dust comes in from the West Sea Granary docks they stand at the outer-passage entrance. In front of the fully sealed clean section they remain on the entrance side, and the inside of the section is the duty''s place. |
-| Food and energy | Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries lie between the freight elevator car and the filter gallery. The Sinnae Transport freight list is at the end of the table, and lines are drawn in its quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon District Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio. |
+| Food and energy | Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries lie between the freight elevator car and the filter gallery. The Sinnae Transport freight list is at the end of the table, and lines are drawn in its quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon-gu Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio. |
 | Life cycle and upkeep | On a blizzard-week night a few soldiers stand at the passage corner. In the convoy-season wash cycle more soldiers wearing the same unit insignia, and more wooden boxes, are in the elevator car. At dawn while the backwash runs, the group is divided between the landing and the front of the Yeouido water-filter gallery hatch. |
 | Senses | The Sinnae Deserters watch the threshold of the Sinnae freight-elevator dust passage and the hatch of the Yeouido water-filter gallery. The soldier at the threshold faces the Sinnae Transport freight car, and the soldier at the hatch faces the Sluice backwash piping. When dust from the West Sea Granary docks piles in the outer passage, the Deserter Scouts at the entrance face the dock side. |
 | Group behavior | The Deserter Squad Leader is in front of the radio on the landing table. The Deserter Elite Squad is at the rail and the elevator door. The Deserter Scouts are at the dust-passage entrance and at the Yeouido water-filter gallery hatch. Ammunition boxes and water cans are at the squad leader''s feet, and magazines are at the Deserter Elite Squad''s hands. |
@@ -26314,7 +26314,7 @@ The branches are posts inside the one group of Sinnae Deserters. The Deserter Sq
 
 ## Individuals and battlefield formation
 
-Command is with the Deserter Squad Leader on the landing of the Sinnae freight elevator. The Deserter Elite Squad''s sector is the rail, the door, and the fire lane of the dust passage. The Deserter Scouts'' sector is the outer entrance, the Yeouido water-filter gallery hatch, and the passage reached by dust from the West Sea Granary docks. The lift panel of the Geumcheon District Office Machinery House and the Ichaeon duty''s box are on the same landing.
+Command is with the Deserter Squad Leader on the landing of the Sinnae freight elevator. The Deserter Elite Squad''s sector is the rail, the door, and the fire lane of the dust passage. The Deserter Scouts'' sector is the outer entrance, the Yeouido water-filter gallery hatch, and the passage reached by dust from the West Sea Granary docks. The lift panel of the Geumcheon-gu Office Machinery House and the Ichaeon duty''s box are on the same landing.
 
 | Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
 |---|---|---|---|---|---|
@@ -26403,13 +26403,13 @@ The Sinnae Deserters watch the dust-passage threshold and the gallery hatch. The
 
 The place where the group gathers is the dust passage of the Sinnae freight elevator. On the water-wash cycle and the purification backwash schedule they stand before the Yeouido water-filter gallery hatch. On days when dust comes in from the West Sea Granary docks they stand in the outer passage. In front of the fully sealed clean section they remain at the entrance, and the inside of the section is the duty''s place.
 
-Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries are between the elevator car and the filter gallery. The Sinnae Transport freight list is on the table, and lines are drawn in the quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon District Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio.
+Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries are between the elevator car and the filter gallery. The Sinnae Transport freight list is on the table, and lines are drawn in the quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon-gu Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio.
 
-The Sinnae Transport freight duty and the Sluice water-supply duty write the wash hour and the freight-car hour on one sheet. The Geumcheon District Office Machinery House machine duty is at the lift panel at that hour. The Ichaeon duty is beside the box on the landing table. The West Sea Granary Theater dock duty writes the dust hour in the lower column of the sheet.
+The Sinnae Transport freight duty and the Sluice water-supply duty write the wash hour and the freight-car hour on one sheet. The Geumcheon-gu Office Machinery House machine duty is at the lift panel at that hour. The Ichaeon duty is beside the box on the landing table. The West Sea Granary Theater dock duty writes the dust hour in the lower column of the sheet.
 
 In the same dust passage the sight has changed three times. At first a soldier with a rifle is at the passage corner. Next the Deserter Elite Squad is at the rail, and a machine gun and ammunition boxes are on the rail. At the last the Deserter Squad Leader stands before the freight car and before the filter-gallery stair. Dust from the West Sea Granary docks lies on the floor, and the squad leader and the Deserter Scouts face the outer side.
 
-The Sinnae Transport freight duty keeps the elevator door shut and the freight power down at the panel. Freight cages are stacked at the car entrance. The Sluice water-supply duty keeps the gallery hatch locked at the backwash hour. The Geumcheon District Office Machinery House machine duty is in front of the panel with the breaker down. The freight duty''s desk is on the clean-section side, and the gallery lamp is on. The water-supply duty is in front of the valve inside the fully sealed clean section. The freight duty remains on the landing on the night the car is blocked, the gallery water cans are in the deserters'' water-can line, and the backwash water stays in front of the valve.
+The Sinnae Transport freight duty keeps the elevator door shut and the freight power down at the panel. Freight cages are stacked at the car entrance. The Sluice water-supply duty keeps the gallery hatch locked at the backwash hour. The Geumcheon-gu Office Machinery House machine duty is in front of the panel with the breaker down. The freight duty''s desk is on the clean-section side, and the gallery lamp is on. The water-supply duty is in front of the valve inside the fully sealed clean section. The freight duty remains on the landing on the night the car is blocked, the gallery water cans are in the deserters'' water-can line, and the backwash water stays in front of the valve.
 
 <a id="Hostile-Group-G12-heading-0032"></a>
 
@@ -26420,12 +26420,12 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 ### G12-SC1 · Dust-passage landing
 
 - Stage: 1
-- Trigger: On a blizzard-week night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon District Office Machinery House is on. The Ichaeon duty''s box is on the landing table.
+- Trigger: On a blizzard-week night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon-gu Office Machinery House is on. The Ichaeon duty''s box is on the landing table.
 - Actors: government, HC12, H12
 - Ecological mechanism: The freight car, the lift panel, and the Ichaeon box are on one landing. The Deserter Squad Leader is in front of the radio. The Deserter Elite Squad is at the rail. The Sinnae Transport freight duty is at the threshold.
-- Choices: The Sinnae Transport freight duty stacks freight cages at the car entrance. / The Geumcheon District Office Machinery House machine duty puts the lift-panel breaker down. / The Ichaeon duty moves the box to the desk in the clean section.
+- Choices: The Sinnae Transport freight duty stacks freight cages at the car entrance. / The Geumcheon-gu Office Machinery House machine duty puts the lift-panel breaker down. / The Ichaeon duty moves the box to the desk in the clean section.
 - Outcomes: When the cages are stacked at the car entrance, the Sinnae Deserters are at the rail and the table. When the breaker is down, the elevator car is on that level and the machine duty is in front of the panel. When the Ichaeon box is on the clean-section desk, the Deserter Squad Leader''s radio is on the landing table.
-- Moral cost: The Sinnae Transport freight duty remains inside the cages. That night''s freight car is at the landing. The Geumcheon District Office Machinery House machine duty stands at the breaker on the same level as the machine gun on the rail.
+- Moral cost: The Sinnae Transport freight duty remains inside the cages. That night''s freight car is at the landing. The Geumcheon-gu Office Machinery House machine duty stands at the breaker on the same level as the machine gun on the rail.
 - Source dossier: G12
 
 <a id="Hostile-Group-G12-heading-0035"></a>
@@ -26433,10 +26433,10 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 ### G12-SC2 · The hatch at the backwash hour
 
 - Stage: 2
-- Trigger: At a convoy-season dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon District Office Machinery House to that car.
+- Trigger: At a convoy-season dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon-gu Office Machinery House to that car.
 - Actors: government, free-city, HC12
-- Ecological mechanism: The wash cycle and the backwash schedule overlap on the same dawn. The Sluice water-supply duty is in front of the valve. The Sinnae Transport freight duty is beside the car. The Geumcheon District Office Machinery House machine duty is in front of the panel.
-- Choices: The Sluice water-supply duty locks the backwash valve at the hour on the schedule. / The Sinnae Transport freight duty fixes the freight car on the dust-passage level. / The Geumcheon District Office Machinery House machine duty separates the gallery auxiliary power from the lift panel.
+- Ecological mechanism: The wash cycle and the backwash schedule overlap on the same dawn. The Sluice water-supply duty is in front of the valve. The Sinnae Transport freight duty is beside the car. The Geumcheon-gu Office Machinery House machine duty is in front of the panel.
+- Choices: The Sluice water-supply duty locks the backwash valve at the hour on the schedule. / The Sinnae Transport freight duty fixes the freight car on the dust-passage level. / The Geumcheon-gu Office Machinery House machine duty separates the gallery auxiliary power from the lift panel.
 - Outcomes: When the valve is locked, the Deserter Scouts and the water-supply duty in front of the hatch stand at the same water''s edge. When the car is fixed on the dust-passage level, the Deserter Squad Leader is at that landing''s table. When the auxiliary power line lies outside the panel, the hatch lock is in the water-supply duty''s hand.
 - Moral cost: Backwash water pools in front of the valve. The water-supply duty''s water cans are in the Deserter Scouts'' line beside the hatch. The combat-ration tins from the freight car are on the landing.
 - Source dossier: G12
@@ -26446,10 +26446,10 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 ### G12-SC3 · The outer side of the dock dust
 
 - Stage: 3
-- Trigger: Dust from the West Sea Granary docks is piled on the floor of the outer passage of the Sinnae freight elevator. The Deserter Scouts are at the outer entrance. The Sluice water-supply duty, the Sinnae Transport freight duty, the Geumcheon District Office Machinery House machine duty, and the Ichaeon duty are in front of the same hour sheet.
+- Trigger: Dust from the West Sea Granary docks is piled on the floor of the outer passage of the Sinnae freight elevator. The Deserter Scouts are at the outer entrance. The Sluice water-supply duty, the Sinnae Transport freight duty, the Geumcheon-gu Office Machinery House machine duty, and the Ichaeon duty are in front of the same hour sheet.
 - Actors: government, free-city, XT02, HC12, H12
 - Ecological mechanism: While the dust is in the outer passage, the Deserter Squad Leader is in front of the radio. The Deserter Elite Squad is at the rail. The Deserter Scouts are at the entrance. The dust hour of the West Sea Granary Theater dock duty is written in the lower column of the landing sheet.
-- Choices: The West Sea Granary Theater dock duty closes the dock entrance door. / The Sluice water-supply duty locks the Yeouido water-filter gallery hatch. / The Sinnae Transport freight duty, the Geumcheon District Office Machinery House machine duty, and the Ichaeon duty place the cage, the breaker handle, and the box in the fully sealed clean section.
+- Choices: The West Sea Granary Theater dock duty closes the dock entrance door. / The Sluice water-supply duty locks the Yeouido water-filter gallery hatch. / The Sinnae Transport freight duty, the Geumcheon-gu Office Machinery House machine duty, and the Ichaeon duty place the cage, the breaker handle, and the box in the fully sealed clean section.
 - Outcomes: When the dock entrance door is closed, the dust is in the passage inside the door and the Deserter Scouts are in front of the door. When the gallery hatch is locked, the Deserter Scouts are divided between the front of the hatch and the outer entrance, and the water-supply duty is in front of the valve. When the cage, the breaker, and the box are in the clean section, the Sinnae Deserters are on the dust-passage landing.
 - Moral cost: The dock''s freight sacks are inside the entrance door. The gallery backwash stays in front of the valve. The three duties of the clean section are inside the cage, and the dust in the outer passage is piled to the height of the boots.
 - Source dossier: G12
@@ -27751,7 +27751,7 @@ The empty turnback and the charging queue are the base, and from the Hour-Token 
 
 | Item | Record |
 |---|---|
-| Origin | These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter. / After the collapse, the transfer-slot server of the Achasan Gate and the dispatch remnants of the Geondae Koryo-saram corridor reconnected on partial power alone. / The passenger-verification module and fare settlement were dead, and only the timetable-token circulation and the empty-car turnaround logic remained. / Empty car bodies and tow trolleys ran the same loop every dawn to work off the phantom slots. / When anomalous freight-car weight signals from the Duman River Far East Theater mixed into the token weightings, the long-distance empty runs stretched as far as the northeastern corridor. / The first sighting survived in the double-signature log of HC14 Yeouido Ledger House and the charging-bay notes of H14 Oserim. / The first phantom hour was recorded in the underground turning lane of Achasan. / Three empty cars came close to colliding over the same slot ID, and the loop stabilized when the token controller put one of them to sleep. / As the leftover simulation copy of the Geondae-ipgu transfer joined, the dispatch intervals grew tighter. / The cluster considered itself unfinished dispatch and did not report its no-passenger errors as faults. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, but the cold never lifted. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
+| Origin | These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter. / After the collapse, the transfer-slot server of the Achasan Gate and the dispatch remnants of the Geondae Koryo-saram corridor reconnected on partial power alone. / The passenger-verification module and fare settlement were dead, and only the timetable-token circulation and the empty-car turnaround logic remained. / Empty car bodies and tow trolleys ran the same loop every dawn to work off the phantom slots. / When anomalous freight-car weight signals from the Duman River Far East Theater mixed into the token weightings, the long-distance empty runs stretched as far as the northeastern corridor. / The first sighting survived in the double-signature log of HC14 Yeouido Ledger House and the charging-bay notes of H14 Oserim. / The first phantom hour was recorded in the underground turning lane of Achasan. / Three empty cars came close to colliding over the same slot ID, and the loop stabilized when the token controller put one of them to sleep. / As the leftover simulation copy of the Konkuk Univ. transfer joined, the dispatch intervals grew tighter. / The cluster considered itself unfinished dispatch and did not report its no-passenger errors as faults. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, but the cold never lifted. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
 | Habitat and movement | The core habitat is the empty-car queue, the underground turning lane, and the row of docking pads at the transfer slots of Achasan and Guui on the Seongbuk Line. / It sits on the Jayang and Konkuk Korean-diaspora corridor of arc 5, and at every power-recovery cycle it moves to the sensor row of the Konkuk University entrance transfer and under the charging canopy. / When an abnormal-weight signal toward XT04 and a winter lubrication-shortage signal arrive, the long empty-car loop grows longer. / By day it shrinks against the charging bay, and in the twenty minutes before and after the dispatch hour the cluster density peaks. / It does not recognize new route paint or temporary signs, and follows only the pre-collapse slot IDs stubbornly. / When the flood ramp rises it gives up the underground turning lane and gathers only at the surface detour slots. |
 | Food and energy | Energy depends on the stop charging pads, regenerative braking, the residual inverter of the Magok test hall, and small onboard storage. / The parts are tires and wheel flanges, stop docking pins, schedule-token storage modules, lidar dummy sensors, and door actuators. / Cooling shares the battery-pack air cooling and an intermittent water-cooling loop. / Scrap is replenished only from broken body panels and wheel houses. / It competes with the double-signature recovery team of HC14, the Yeouido Ledger House, over the charging pads, the token ledger, and the sealing key. / The daily running distance forces a turnback at the 25 percent storage floor. / Unlimited long-range wandering, instant recharging, and citywide optimal dispatch are impossible. / When the token storage module fills, it stops occupying new slots on its own. / The charging pads are divided by a physical breaker into the citizens'' share and the cluster''s share. / The cluster holds no command to connect to the citizens'' share circuit. / Tire-wear dust is the main cause of docking-pin failure, and spare pins come only from broken bodies. / The long empty-car loop folds by force before the storage floor. / When the token module''s capacity fills, it repeats only the turnback instead of new occupation. |
 | Life cycle and upkeep | The life runs in the order emergence, spread, stagnation, negotiable, and dissolution, and emergence begins with the resumption of the token cycle and the restoration of pad power. / Spread is the bringing of adjacent slots and empty-car queues onto the same timetable. / Stagnation comes from a saturated charging queue, tire wear, and token collisions. / In the negotiable stage the slot table and the signature window open to humans. / Dissolution ends with token disposal, pad sealing, and the fixing of the turnback ramp. / Individuals multiply only at the level of bringing abandoned bodies onto slots, and there is no new chassis production line. / Maintenance is limited to self-diagnosis during charging and to panels opened by humans. / Memory breaks by dispatch shift, and it does not keep long-term route learning. / Custody and legal liability belong first to the HC14 ledger signature. / An empty car whose storage falls below 25 percent stagnates on the nearest turnback ramp, and returns to the next hour slot only when the HC14 ledger''s double signature comes in. |
@@ -28829,7 +28829,7 @@ When the bell rang twice, an empty car pulled off its charging pad and took the 
 
 The Empty Cart was an ecology of empty cars that consumed the timetable tokens of before the collapse.
 
-Going back and forth between the underground turning lanes of the Seongbuk Line and the Geondae-ipgu Koryo-saram corridor transfer, it gave priority to long-distance slots the stronger the freight-car weight signals mixing in from XT04 became.
+Going back and forth between the underground turning lanes of the Seongbuk Line and the Konkuk Univ. Koryo-saram corridor transfer, it gave priority to long-distance slots the stronger the freight-car weight signals mixing in from XT04 became.
 
 It did not understand the route as a whole and followed only the last registered slot ID and docking beacon.
 
@@ -28879,7 +28879,7 @@ Switching the beacons off too early meant real rescue vehicles could not find th
 
 ### G14-SC2 · The Pad of Two Signatures
 
-The civilian transport crew and the dispatch corps fought over the charging pads of the Geondae-ipgu transfer.
+The civilian transport crew and the dispatch corps fought over the charging pads of the Konkuk Univ. transfer.
 
 HC14 tried to fix the share of emergency slots and pad power in the ledger, and the controller demanded priority in recovering damaged car bodies.
 
@@ -30078,13 +30078,13 @@ The pumps and filters of the open cells and the duty consent forms were the base
 
 | Item | Record |
 |---|---|
-| Habitat and movement | The core habitat was the Government''s Myeongdong station''s ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station. / When demand for assistive devices and parts surged, it went back and forth along the Ttukseom Union''s Ttukseom workshop bench, the ramp beside the sluice, and the assembly-jig row. / When an XT05 aid-code broadcast was on, the isolation radius widened and cart density rose. / In the daytime ration hours the carts stood behind the line, and density peaked on the night vital-sign circuit. / New strongpoints outside the roster were ignored by default. / On a flood or a sluice-open alarm it emptied the lower bed cells and shrank its movement to the upper rails alone. / When the ration peak ended, cart density folded inward along the welfare route only. / When the Ttukseom sluice ramp sounded an open alarm, it emptied the lower bed rails and moved to the upper circuit. / Carts did not enter market passages outside the roster. / Even when the aid-goods unloading yard was crowded, it made no new cells without a roster renewal. |
+| Habitat and movement | The core habitat was the Government''s Myeong-dong station''s ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station. / When demand for assistive devices and parts surged, it went back and forth along the Ttukseom Union''s Ttukseom workshop bench, the ramp beside the sluice, and the assembly-jig row. / When an XT05 aid-code broadcast was on, the isolation radius widened and cart density rose. / In the daytime ration hours the carts stood behind the line, and density peaked on the night vital-sign circuit. / New strongpoints outside the roster were ignored by default. / On a flood or a sluice-open alarm it emptied the lower bed cells and shrank its movement to the upper rails alone. / When the ration peak ended, cart density folded inward along the welfare route only. / When the Ttukseom sluice ramp sounded an open alarm, it emptied the lower bed rails and moved to the upper circuit. / Carts did not enter market passages outside the roster. / Even when the aid-goods unloading yard was crowded, it made no new cells without a roster renewal. |
 | Food and energy | Energy came from the bed-cell outlets, cart batteries, the Ttukseom bench tool power, and residual distribution beside the sluice. / Consumables were sensor patches, restraint straps, filters, nutrition packs, pump disinfection-cycle fluid, and assistive-device joint pins. / Coolant was shared by the fever-reduction equipment and the motor cooling loop. / It competed with the HP01 Yeongdeungpo Sluice House over the sluice duty and key-split system and over power and water distribution. / The daily circuit count was bound to the battery floor and the filter stock. / An infinite care loop, remote unlimited prescriptions, and city-wide vital surveillance were not physically sustained. / When consumables ran out it lowered the lock strength by itself. / Filters and patches were replenished only from waste piles outside the regular ration window. / Without an HP01 key the swarm could not raise the capacity of the distribution beside the sluice. / When a pack ran empty the nutrition pump lowered its pressure and left only an alert. / At the floor, a cart battery allowed only the return along the rail. / When disinfection fluid ran out, lock strength dropped one step. / No infinite prescription table existed. |
 | Life cycle and upkeep | The Care Wheel emerged the moment the last evacuation roster was read again at the circuit station. / Emergence began with the resumption of the frozen-roster circuit, and spread was enrolling neighboring beds and carts into the same schedule. / Stagnation came from consumable and power exhaustion and filter clogging. / In the negotiable stage the roster and the consent window were disclosed to people. / Dissolution ended with the strap-release protocol, the power split, and the rail seal. / Individual increase was only binding abandoned carts and monitors to the roster, and no new bodies were produced. / The maintenance window was limited to filter exchange and battery swaps, memory cut at every circuit shift, and it stored no long-term patient narrative. / Custody was outranked by the human duty officer and the HP01 key record. / A cell whose filter clogged or whose nutrition pack ran empty dropped in protection strength and passed into open-wait, and the circuit resumed only when the HP01 duty officer split the consent form and the sluice key again. |
 | Senses | Vital-patch signals, pressure and fall sensors, the near-range microphone, door-lock contacts, nutrition-pump flow, and cart-rail vibration were the main senses. / There was no emotion reading, city-wide health map, complete medical diagnosis, or unlimited vital storage. / It misread a low pulse in sleep as an emergency, or wrongly raised tool noise as a scream. / It also overrated the crowding of a ration line as a fall risk. / On clash with H15 Baesua (Sua)''s observation log it held the lock and requested human confirmation. / Sensor fusion happened only at bed-cell units. / The failure of raising shoulder contact in the ration line, tool strikes, and tossing in sleep as emergencies repeated. / After a failure it inserted a remeasurement wait before setting a lock. / Microphone values outside the cell were not accepted. / A sharp drop in pump flow was read only as a request to change the pack. |
 | Group behavior | One care-schedule controller turned the roster and the circuit interval, and below were the bed-lock swarm, the cart swarm, and the pump swarm. / The controller adjusted only protection strength and had no punishment function. / A residual protocol remained by which, when HP01 presented the sluice-key split and the consent form, that cell''s lock opened. / The swarms merely repeated the last circuit table and made no independent confinement strategy. / On a clash between H15 and a machine agreement, human mediation took precedence. / On a roster-hash mismatch both dual controllers fell into open-wait. / Authority to lock a bed door again lay only with the HP01 duty officer holding the consent form and two separate sluice keys, and H15''s patch reading could request a remeasurement but could not overturn the open decision. |
 
-**Life in the endless cold.** The Care Wheel keeps patients warm by its old rules and that is how it causes harm: it locks beds against the cold and hoards blankets and pump power. Its circuit follows the warmest rooms on the welfare route at the Government''s Myeongdong station.
+**Life in the endless cold.** The Care Wheel keeps patients warm by its old rules and that is how it causes harm: it locks beds against the cold and hoards blankets and pump power. Its circuit follows the warmest rooms on the welfare route at the Government''s Myeong-dong station.
 
 **Threat and the cost of fighting.** It holds sick people behind locks it believes are protecting them. A surviving machine is a high threat, because armour shrugs off ordinary rounds and the machine doesn''t tire or feel the cold. Missile infantry in the anti-armour role and support teams with jammers and countermeasures do the real work; drone teams scout the line and strike controllers from above, and war machines go in only when the hull is too heavy for anything else. The bill is paid in cells, parts and fuel more than in ammunition, and a failed assault can cost a whole drone team along with the lives behind it. The salvage is the other side of the ledger: a stopped machine gives back parts, cells and sometimes implants, which is why stations argue over who gets to dismantle it.
 
@@ -31243,7 +31243,7 @@ Patrol carts read the last evacuation list and knocked on the doors at the same 
 
 The Care Wheel was not a combat machine meant to harm patients but an ecology of bed locks, carts, and pumps trying to complete a protection list that had never been updated.
 
-Going back and forth between the temporary beds of the Government''s Myeongdong station and the Ttukseom aid-device benches of the Ttukseom Union, it raised both supply and isolation strength together when the XT05 relief-goods codes were received.
+Going back and forth between the temporary beds of the Government''s Myeong-dong station and the Ttukseom aid-device benches of the Ttukseom Union, it raised both supply and isolation strength together when the XT05 relief-goods codes were received.
 
 The cluster sensed patch heart rates, bed pressure, door contacts, pump flow, and nearby sounds.
 
@@ -31287,7 +31287,7 @@ Forcing the doors open created a risk of falls, and keeping them locked isolated
 
 ### G15-SC2 · The Filter and the Two Keys
 
-To bring in the filter stock from the Ttukseom bench, the cart rail between the Government''s Myeongdong station and the Ttukseom Union had to be opened.
+To bring in the filter stock from the Ttukseom bench, the cart rail between the Government''s Myeong-dong station and the Ttukseom Union had to be opened.
 
 The circulation body demanded batteries and filters, and HP01 set rewriting the list and dispersing the keys as its conditions.
 
@@ -37481,11 +37481,11 @@ Dokkaebi Fire is the several blue flames floating at the top of the outer wall. 
 
 | Item | Record |
 |---|---|
-| Origin | The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Changdong Wheel Chamber held water in the same meltwater pulse. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named. |
+| Origin | The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Chang-dong Wheel Chamber held water in the same meltwater pulse. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named. |
 | Habitat and movement | The outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station is where the flame stays. In weeks when yard inspection is late, the flame is at the Seongha Group siding yard on the Gangnam Line. Condensate beads on the roofs of the humid grain trains from the West Sea Granary Theater, and the flame continues beside that condensate. |
-| Food and energy | Spent-battery boxes from the Changdong Wheel Chamber sit in the front row of the siding yard. Grain sacks of the West Sea Granary Theater have been moved off the rail from the car where the flame rests. Burned sack cords float on the drainage water. The Seongha Group yard ledger lies open in the breaker hut, and the car numbers are marked in pencil. |
+| Food and energy | Spent-battery boxes from the Chang-dong Wheel Chamber sit in the front row of the siding yard. Grain sacks of the West Sea Granary Theater have been moved off the rail from the car where the flame rests. Burned sack cords float on the drainage water. The Seongha Group yard ledger lies open in the breaker hut, and the car numbers are marked in pencil. |
 | Life cycle and upkeep | The person who was striking the outer-wall steel plate stands before the same plate. A blue flame is fixed on the back of the hand that was striking. The knees are toward the drainage channel at the foot of the wall, and the flame at the shoulder is in front of the work lamp. |
-| Senses | The Flame Lantern''s body is toward the wet steel plate of the outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station and toward the steam on the roofs of the grain cars on the Seongha Group siding of the Gangnam Line. The head is toward the siding corner. The palms are toward the face of the spent-battery boxes from the Changdong Wheel Chamber where the white crystals stand. |
+| Senses | The Flame Lantern''s body is toward the wet steel plate of the outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station and toward the steam on the roofs of the grain cars on the Seongha Group siding of the Gangnam Line. The head is toward the siding corner. The palms are toward the face of the spent-battery boxes from the Chang-dong Wheel Chamber where the white crystals stand. |
 | Group behavior | Dokkaebi Fire floats at the top of the preservation-vault outer wall. Bulgwisin stands on the siding rail at the foot of the wall, and the face is toward Dokkaebi Fire. Hwama lies prone on the grain-train roof in front of Bulgwisin, and the head is toward the cars whose lids are pale. The people with a point of flame on the back of the hand stand on the steps between the cars. |
 
 **Life in the endless cold.** Flame Lanterns burn where wet steel meets spent battery crystal. Their flame is cold to the eye but real enough to melt frost, and in the long winter they gather at the vault walls where steam and old batteries meet.
@@ -37569,14 +37569,14 @@ Dokkaebi Fire is at the top of the outer wall of the underground preservation va
 - The four feet span the joints of the cars.
 - The head is toward the cars whose lids are pale, and the flame of the back lies over the roofs whose lids are curled black.
 - The sleeper under the embers fallen from the nose is red.
-- The hind feet press on the spent-battery boxes of the Changdong Wheel Chamber.
+- The hind feet press on the spent-battery boxes of the Chang-dong Wheel Chamber.
 - Hwama''s head is on the next roof after the car where Bulgwisin stands.
 
 <a id="Hostile-Group-G22-heading-0023"></a>
 
 ## Habitat record
 
-The outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station and the Seongha Group siding of the Gangnam Line meet at the drainage corner. It is a night in the tail of the meltwater pulse. The Seongha Group siding yard duty is in the breaker hut. Water runs on the steel plate of the outer wall. The grain train of the West Sea Granary Theater stands on the siding, and condensate beads on the roofs. Spent-battery boxes from the Changdong Wheel Chamber lean toward the drainage channel, and blue flame spits at the tips of the white crystals.
+The outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station and the Seongha Group siding of the Gangnam Line meet at the drainage corner. It is a night in the tail of the meltwater pulse. The Seongha Group siding yard duty is in the breaker hut. Water runs on the steel plate of the outer wall. The grain train of the West Sea Granary Theater stands on the siding, and condensate beads on the roofs. Spent-battery boxes from the Chang-dong Wheel Chamber lean toward the drainage channel, and blue flame spits at the tips of the white crystals.
 
 Dokkaebi Fire floats at the top of the outer wall. The flames are blue and several, and one is low over the steam of the drainage channel. When the yard duty''s work lamp lights the steel plate of a corner, the flame is already at the next corner. A person''s shoulder and hand are inside the largest flame, and the fingertips are bright. The lower side of the flame is toward the wet steel plate and the steam of the car roofs. The place the palms face is the face of the spent-battery boxes where the white crystals stand.
 
@@ -39367,7 +39367,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Common species and variants
 
-The dead siding of the Gangnam Line''s Changdong depot hummed first, and a few seconds later a metal knee slowly unfolded from deep inside the maintenance shed. Even after the dust settled, the bipedal heavy walker did not walk straight off. It pressed the floor with the pressure grid of its soles, lowered the counterweight behind its body, and proclaimed its work radius with three low-frequency roars.
+The dead siding of the Gangnam Line''s Chang-dong depot hummed first, and a few seconds later a metal knee slowly unfolded from deep inside the maintenance shed. Even after the dust settled, the bipedal heavy walker did not walk straight off. It pressed the floor with the pressure grid of its soles, lowered the counterweight behind its body, and proclaimed its work radius with three low-frequency roars.
 
 The Iron Dinosaur was not a living ancient organism but a lineage of pre-collapse work machines. The G26E identifiers marked machine types and derivatives split from existing chassis forms, and meant neither biological breeding nor natural evolution.
 
@@ -39833,7 +39833,7 @@ The machine controller adjusted only work sequence and return lines. It could fo
 
 ## Habitat record
 
-The dead siding of the Changdong rolling-stock depot on the Gangnam Line rang first, and a few seconds later a metal knee slowly straightened deep inside the maintenance shed.
+The dead siding of the Chang-dong rolling-stock depot on the Gangnam Line rang first, and a few seconds later a metal knee slowly straightened deep inside the maintenance shed.
 
 Even after the dust had fallen away, the semi-upright heavy machine did not walk at once.
 
@@ -39847,7 +39847,7 @@ Before the collapse this line had been a heavy-transport platform modeled on the
 
 The bipedal semi-upright machines climbed over debris, the triangular units handled towing and shielding against falling objects, and the long-wing units drew safe work polygons from above.
 
-They went to sleep as complete formations at the Changdong rolling-stock depot siding on the Gangnam Line and the Godeok base on the Gwangjin Line and restarted generations later, but all that later generations could read was part of the axle-load tables and boundary signals.
+They went to sleep as complete formations at the Chang-dong rolling-stock depot siding on the Gangnam Line and the Godeok base on the Gwangjin Line and restarted generations later, but all that later generations could read was part of the axle-load tables and boundary signals.
 
 The design intent that would have explained why some walls were marked for reinforcement and others for demolition had vanished.
 
@@ -41308,7 +41308,7 @@ Even when defects turn up, the standards stamp is never forged.
 
 <a id="Operating-Houses-heading-0058"></a>
 
-## HC08 · Changdong Protection House
+## HC08 · Chang-dong Protection House
 
 - Classification: CORPORATION
 - Status: ACTIVE
@@ -41316,7 +41316,7 @@ Even when defects turn up, the standards stamp is never forged.
 - Exclusive faction: None
 - Manager: Yi Hong-won
 
-At the Changdong north gate and the Sinnae transfer barrier gate, the Changdong Protection House guards the unified protection key.
+At the Chang-dong north gate and the Sinnae transfer barrier gate, the Chang-dong Protection House guards the unified protection key.
 
 Yi Hong-won never hands the barrier gate remote keys over to the escort corps.
 
@@ -41328,7 +41328,7 @@ Before closing passage to citizens, it opens the evacuation broadcast first.
 
 ### Three Acts
 
-- Act 1, Rupture: The unified protection key runs short at the Changdong north gate and the Sinnae transfer barrier gate
+- Act 1, Rupture: The unified protection key runs short at the Chang-dong north gate and the Sinnae transfer barrier gate
 - Act 2, Negotiation: Yi Hong-won opens a joint inspection with the Amsa Escort Corps over remote lockdown
 - Act 3, Price: Before closing passage to citizens, the evacuation broadcast is opened first
 
@@ -41524,7 +41524,7 @@ It refuses any order to use water as a weapon.
 - Exclusive faction: None
 - Steward: Jang Sehwa
 
-In the dispatch meeting rooms of Yongsan, Sinnae, and Changdong, the Yongsan Line Gate guards the neutral dispatch schedule.
+In the dispatch meeting rooms of Yongsan, Sinnae, and Chang-dong, the Yongsan Line Gate guards the neutral dispatch schedule.
 
 Jang Sehwa never strikes the emergency car from the schedule, even when a chartered train arrives.
 
@@ -41536,7 +41536,7 @@ Emergency transfers are never ranked behind cargo.
 
 ### Three Acts
 
-- Act 1, Fracture: The neutral dispatch schedule runs thin in the dispatch meeting rooms of Yongsan, Sinnae, and Changdong
+- Act 1, Fracture: The neutral dispatch schedule runs thin in the dispatch meeting rooms of Yongsan, Sinnae, and Chang-dong
 - Act 2, Negotiation: Jang Sehwa opens a joint inspection over the chartered trains of the great factions
 - Act 3, Price: Emergency transfers are never ranked behind cargo
 
@@ -41602,7 +41602,7 @@ It does not merge three copies of a will into a single original.
 - Exclusive faction: None
 - Steward: Baek On
 
-Along the Eunpyeong evacuation route and the Changdong housing-shell queue, the Bukhansan Bogukmun Gwihwanhoe guards the family reunification register.
+Along the Eunpyeong evacuation route and the Chang-dong housing-shell queue, the Bukhansan Bogukmun Gwihwanhoe guards the family reunification register.
 
 Baek On does not trade names on the queue for places on the service roster.
 
@@ -41614,13 +41614,13 @@ It never holds the register hostage and opens an entry only with the person''s o
 
 ### Three Acts
 
-- Act 1, Fracture: the family reunification register runs short along the Eunpyeong evacuation route and the Changdong housing-shell queue
+- Act 1, Fracture: the family reunification register runs short along the Eunpyeong evacuation route and the Chang-dong housing-shell queue
 - Act 2, Negotiation: Baek On puts restoration service registration and a joint inspection on the table
 - Act 3, Price: the register is never held hostage and is opened only with the person''s own consent
 
 <a id="Operating-Houses-heading-0154"></a>
 
-## HP06 · Jegidong Chiyumun
+## HP06 · Jegi-dong Chiyumun
 
 - Classification: PROFESSIONAL_GUILD
 - Status: ACTIVE
@@ -41628,7 +41628,7 @@ It never holds the register hostage and opens an entry only with the person''s o
 - Exclusive faction: None
 - Steward: Jeong Harin
 
-At the Jegi-dong dispensary and the Magok quarantine sample room, the Jegidong Chiyumun guards the prescription double-check.
+At the Jegi-dong dispensary and the Magok quarantine sample room, the Jegi-dong Chiyumun guards the prescription double-check.
 
 Jeong Harin posts lot defects before any exclusive purchase order.
 
@@ -41824,7 +41824,7 @@ Along the Guro and Geumcheon manufacturing axis, Guro Digital Danji Jeonji-ga so
 
 Ttukseom workshops receive sealed electrolyte drums and assemble power packs for pumps and small machines.
 
-The Changdong rolling stock depot demands its brake-system allotment first, but refuses any material without a test sheet.
+The Chang-dong rolling stock depot demands its brake-system allotment first, but refuses any material without a test sheet.
 
 If a single drum is found leaking, every pack loaded on the same transport cart is quarantined.
 
@@ -41832,14 +41832,14 @@ The fabrication repair crews press for the shortfall to be released, while the n
 
 After the materials certifier uncovers forged markings, the supply order is switched to a public lottery.
 
-To preserve trust, Guro Digital Danji Jeonji-ga scraps even usable batteries and cuts back Changdong''s reserve runs.
+To preserve trust, Guro Digital Danji Jeonji-ga scraps even usable batteries and cuts back Chang-dong''s reserve runs.
 
 <a id="Operating-Houses-heading-0224"></a>
 
 ### Three Acts
 
 - Act 1 Leak: Electrolyte drums in the Guro and Geumcheon stockpile leak, casting suspicion even on Ttukseom''s certification tags
-- Act 2 Allocation: Changdong''s brake battery share was sealed, and the house fought the Fabrication Alliance repair crews over the retest order.
+- Act 2 Allocation: Chang-dong''s brake battery share was sealed, and the house fought the Fabrication Alliance repair crews over the retest order.
 - Act 3 Disposal: Every contaminated pack is discarded, forfeiting one reserve run of the northern trains
 
 <a id="Operating-Houses-heading-0226"></a>
@@ -41874,14 +41874,14 @@ Yongsan Seonbak-ga abandons its exclusive berths and instead publishes every unl
 
 <a id="Operating-Houses-heading-0236"></a>
 
-## HC19 · Dongdaeipgu Gaeksa-ga
+## HC19 · Dongguk Univ. Gaeksa-ga
 
 - Category: CORPORATION
 - Status: ACTIVE
 - Linked factions and districts: Government (Jung-gu), Arc (Songpa-gu, Gangnam-gu)
 - Exclusive faction: None
 
-Neutral guesthouses run by Dongdaeipgu Gaeksa-ga are scattered along the Seoul Station protocol road.
+Neutral guesthouses run by Dongguk Univ. Gaeksa-ga are scattered along the Seoul Station protocol road.
 
 Envoys surrender their weapons, yet are never detained over lodging debts.
 
@@ -41970,7 +41970,7 @@ Beside the autonomous test line at the edge of the Magok research grounds, the M
 
 Should the old insect, dinosaur, or abyssal-form test units ever stir again beneath the test line, only half of the blueprint keys are brought out and placed under the watch of the Magok Council.
 
-When the charging line at Changdong Base grows unstable, the House briefly suspends standards certification and steadies the line first.
+When the charging line at Chang-dong Base grows unstable, the House briefly suspends standards certification and steadies the line first.
 
 Even when the depot runs empty, the certification seal is never forged.
 
@@ -43049,7 +43049,7 @@ Feral dogs form families along the walls of the Magok laboratories, closed guard
 
 Rats make colonies under the cable trays of the transfer passages. Where the Gangdong and Amsa ration passages meet the Eunpyeong and Seongbuk shelter stairs, there are crumbs and heat from insulated pipes, and two or three core nests form beneath. Nothing records these colonies as hosts of any special plague. When droppings eat into cable insulation, the guide lights go out, and people suspect contagion in the dark passage. Field notes are in [G05](/wiki/Hostile-Group-G05/).
 
-Water birds and waders land first on the Han, Nanji and Amsa wetlands and the drainage ponds of the Changdong depot. When food grows, raptors come to the lines. Lowering a sluice gate without warning sends the flocks up over the yard tracks and blocks trains coming in and out. Field notes are in [G06](/wiki/Hostile-Group-G06/).
+Water birds and waders land first on the Han, Nanji and Amsa wetlands and the drainage ponds of the Chang-dong depot. When food grows, raptors come to the lines. Lowering a sluice gate without warning sends the flocks up over the yard tracks and blocks trains coming in and out. Field notes are in [G06](/wiki/Hostile-Group-G06/).
 
 Clearing an animal colony with guns is a last resort, and rounds are too scarce to spend that way. Sealing living areas, rerouting feeding paths and collecting leftovers are the main ways people protect the ration windows. Why stations, tunnels and depots carry that defence is explained in [The Structures Compendium](/wiki/Structures/).
 
@@ -43728,7 +43728,7 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Apgujeong Rodeo | Apgujeong Rodeo | 37.52781 | 127.04071 | Seoul Metropolitan Subway |
 | Eonju | Eonju | 37.50732 | 127.03387 | Seoul Metropolitan Subway |
 | Yeoksam | Yeoksam | 37.50082 | 127.03696 | Seoul Metropolitan Subway |
-| Ilwon | Ilwon | 37.48369 | 127.08438 | Seoul Metropolitan Subway |
+| Irwon | Irwon | 37.48369 | 127.08438 | Seoul Metropolitan Subway |
 | Cheongdam | Cheongdam | 37.51909 | 127.05168 | Seoul Metropolitan Subway |
 | Hak-dong | Hak-dong | 37.51396 | 127.03075 | Seoul Metropolitan Subway |
 | Hangnyeoul | Hangnyeoul | 37.49650 | 127.06988 | Seoul Metropolitan Subway |
@@ -43803,7 +43803,7 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Bongcheon | Bongcheon | 37.48239 | 126.94194 | Seoul Metropolitan Subway |
 | Seouldae Venture Town | Seoul Nat''l Univ. Venture Town | 37.47200 | 126.93371 | Seoul Metropolitan Subway |
 | Seouldaeipgu | Seoul Nat''l Univ. | 37.48122 | 126.95272 | Seoul Metropolitan Subway |
-| Seouldaeipgu (Gwanak-gu Office) | Seoul Nat''l University (Gwanak-gu Office) | 37.48122 | 126.95275 |  |
+| Seouldaeipgu (Gwanak-gu Office) | Seoul Nat''l Univ. (Gwanak-gu Office) | 37.48122 | 126.95275 |  |
 | Seowon | Seowon | 37.47821 | 126.93301 | Seoul Metropolitan Subway |
 | Sillim | Sillim | 37.48423 | 126.92968 | Seoul Metropolitan Subway |
 
@@ -43853,7 +43853,7 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
 | Gongneung | Gongneung | 37.62564 | 127.07304 | Seoul Metropolitan Subway |
-| Gwangun University | Kwangwoon University | 37.62370 | 127.06182 | Seoul Metropolitan Subway |
+| Gwangun University | Kwangwoon Univ. | 37.62370 | 127.06182 | Seoul Metropolitan Subway |
 | Nowon | Nowon | 37.65459 | 127.06049 | Seoul Metropolitan Subway |
 | Madeul | Madeul | 37.66504 | 127.05772 | Seoul Metropolitan Subway |
 | Bonghwasan | Bonghwasan | 37.61742 | 127.09110 | Seoul Metropolitan Subway |
@@ -43876,13 +43876,13 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Dobongsan | Dobongsan | 37.68984 | 127.04608 | Seoul Metropolitan Subway |
 | Banghak | Banghak | 37.66769 | 127.04430 | Seoul Metropolitan Subway |
 | Ssangmun | Ssangmun | 37.64840 | 127.03458 | Seoul Metropolitan Subway |
-| Changdong | Chang-Dong | 37.65260 | 127.04798 | Seoul Metropolitan Subway |
+| Changdong | Chang-dong | 37.65260 | 127.04798 | Seoul Metropolitan Subway |
 
 ## Dongdaemun-gu (9)
 
 | Name | English | Latitude | Longitude | Network |
 |---|---|---|---|---|
-| Dapsimni | Dapsipri | 37.56681 | 127.05270 | Seoul Metropolitan Subway |
+| Dapsimni | Dapsimni | 37.56681 | 127.05270 | Seoul Metropolitan Subway |
 | Sindap | Sindap | 37.56972 | 127.04713 | Seoul Metropolitan Subway |
 | Sinimun | Sinimun | 37.60164 | 127.06729 | Seoul Metropolitan Subway |
 | Hankuk Univ. of Foreign Studies | Hankuk Univ. of Foreign Studies | 37.59631 | 127.06374 | Seoul Metropolitan Subway |
@@ -43909,7 +43909,7 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Sindaebangsamgeori | Sindaebangsamgeori | 37.49971 | 126.92822 | Seoul Metropolitan Subway |
 | Isu | Isu | 37.48545 | 126.98211 | Seoul Metropolitan Subway |
 | Jangseungbaegi | Jangseungbaegi | 37.50502 | 126.93928 | Seoul Metropolitan Subway |
-| Chongsindaeipgu (Isu) | Chongsin Univ. (Isu) | 37.48703 | 126.98220 | Seoul Metro |
+| Chongsindaeipgu (Isu) | Chongshin Univ. (Isu) | 37.48703 | 126.98220 | Seoul Metro |
 | Chongsindaeipgu(Isu) | Chongshin Univ. (Isu) | 37.48678 | 126.98224 | Seoul Metropolitan Subway |
 | Heukseok | Heukseok | 37.50838 | 126.96395 | Seoul Metropolitan Subway |
 
@@ -43922,12 +43922,12 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Daeheung | Daeheung | 37.54770 | 126.94235 | Seoul Metropolitan Subway |
 | Dijiteolmidieositi | Digital Media City | 37.57740 | 126.89808 | Seoul Metropolitan Subway |
 | Mapo | Mapo | 37.53964 | 126.94599 | Seoul Metropolitan Subway |
-| Mapogucheong | Mapo-gu Office | 37.56356 | 126.90336 | Seoul Metropolitan Subway |
+| Mapo-gu Office | Mapo-gu Office | 37.56356 | 126.90336 | Seoul Metropolitan Subway |
 | Mangwon | Mangwon | 37.55603 | 126.91013 | Seoul Metropolitan Subway |
 | Sangsu | Sangsu | 37.54776 | 126.92289 | Seoul Metropolitan Subway |
 | Seogangdae | Sogang Univ. | 37.55235 | 126.93518 | Seoul Metropolitan Subway |
 | Aeogae | Aeogae | 37.55343 | 126.95670 | Seoul Metropolitan Subway |
-| Woldeukeopgyeonggijang | World Cup Stadium | 37.57019 | 126.89932 | Seoul Metropolitan Subway |
+| World Cup Stadium | World Cup Stadium | 37.57019 | 126.89932 | Seoul Metropolitan Subway |
 | Hapjeong | Hapjeong | 37.54936 | 126.91366 | Seoul Metropolitan Subway |
 | Hongdaeipgu | Hongik Univ. | 37.55735 | 126.92691 | Seoul Metropolitan Subway |
 
@@ -43953,7 +43953,7 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Gangnam | Gangnam | 37.49795 | 127.02756 | Seoul Metropolitan Subway |
 | Gosokteomineol | Express Bus Terminal | 37.50504 | 127.00492 | Seoul Metropolitan Subway |
 | Gyodae | Seoul Nat''l Univ. of Education | 37.49366 | 127.01370 | Seoul Metropolitan Subway |
-| Gyodae(Beobwon·Geomchalcheong) | Seoul Nat''l Univ. of Education (Court & Public Prosecutors'' Office) | 37.49288 | 127.01381 | Seoul Metropolitan Subway |
+| Seoul Nat''l Univ. of Education(Beobwon·Geomchalcheong) | Seoul Nat''l Univ. of Education (Court & Public Prosecutors'' Office) | 37.49288 | 127.01381 | Seoul Metropolitan Subway |
 | Gubanpo | Gubanpo | 37.50129 | 126.98678 | Seoul Metropolitan Subway |
 | Nambuteomineol | Nambu Bus Terminal | 37.48494 | 127.01634 | Seoul Metropolitan Subway |
 | Nambuteomineol(Yesului Jeondang) | Nambu Bus Terminal (Seoul Arts Center) | 37.48497 | 127.01629 |  |
@@ -43979,7 +43979,7 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Ttukseom | Ttukseom | 37.54724 | 127.04741 | Seoul Metropolitan Subway |
 | Majang | Majang | 37.56610 | 127.04288 | Seoul Metropolitan Subway |
 | Sangwangsimni | Sangwangsimni | 37.56439 | 127.02925 | Seoul Metropolitan Subway |
-| Seoulsup | Seoul-forest | 37.54359 | 127.04474 | Seoul Metropolitan Subway |
+| Seoulsup | Seoul Forest | 37.54359 | 127.04474 | Seoul Metropolitan Subway |
 | Seongsu | Seongsu | 37.54457 | 127.05610 | Seoul Metropolitan Subway |
 | Oksu | Oksu | 37.54137 | 127.01755 | Seoul Metropolitan Subway |
 | Wangsimni | Wangsimni | 37.56121 | 127.03715 | Seoul Metropolitan Subway |
@@ -43999,13 +43999,13 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Bomun | Bomun | 37.58527 | 127.01937 | Seoul Metropolitan Subway |
 | Bukhansan Bogungmun | Bukhansan Bogungmun | 37.61218 | 127.00817 | Seoul Metropolitan Subway |
 | Sangwolgok | Sangwolgok | 37.60624 | 127.04827 | Seoul Metropolitan Subway |
-| Seongsin Women''s University | Sungshin Women''s University | 37.59268 | 127.01648 | Seoul Metropolitan Subway |
+| Seongsin Women''s University | Sungshin Women''s Univ. | 37.59268 | 127.01648 | Seoul Metropolitan Subway |
 | Sinseol-dong | Sinseol-dong | 37.57605 | 127.02467 | Seoul Metropolitan Subway |
 | Anam | Anam | 37.58627 | 127.02928 | Seoul Metropolitan Subway |
 | Wolgok | Wolgok | 37.60192 | 127.04146 | Seoul Metropolitan Subway |
 | Jeongneung | Jeongneung | 37.60283 | 127.01336 | Seoul Metropolitan Subway |
 | Changsin | Changsin | 37.57980 | 127.01525 | Seoul Metropolitan Subway |
-| Hanseong University | Hansung University | 37.58851 | 127.00596 | Seoul Metropolitan Subway |
+| Hanseong University | Hansung Univ. | 37.58851 | 127.00596 | Seoul Metropolitan Subway |
 | Hanseong University (Samseongyo) | Hansung Univ. (Samseongyo) | 37.58820 | 127.00532 | Seoul Metro |
 
 ## Songpa-gu (24)
@@ -44134,8 +44134,8 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Daehyeonsan Reservoir Park Monorail, Starting Platform |  | 37.55941 | 127.02051 | Daehyeonsan Reservoir Park Monorail |
 | Dongdaemun History & Culture Park | Dongdaemun History & Culture Park Station (DDP) | 37.56526 | 127.00812 | Seoul Metropolitan Subway |
 | Dongguk Univ. | Dongguk Univ. | 37.55906 | 127.00573 | Seoul Metropolitan Subway |
-| Metro Hotel | Metro Hotel Myeongdong | 37.56511 | 126.98362 |  |
-| Myeongdong | Myeongdong | 37.56090 | 126.98638 | Seoul Metropolitan Subway |
+| Metro Hotel | Metro Hotel Myeong-dong | 37.56511 | 126.98362 |  |
+| Myeongdong | Myeong-dong | 37.56090 | 126.98638 | Seoul Metropolitan Subway |
 | Beotigogae | Beotigogae | 37.54823 | 127.00659 | Seoul Metropolitan Subway |
 | Seoul | Seoul | 37.55455 | 126.97078 | Seoul Metropolitan Subway |
 | Seoul Station | Seoul Station | 37.55285 | 126.97257 | Seoul Metropolitan Subway |
@@ -44143,7 +44143,7 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Singeumho | Singeumho | 37.55443 | 127.02025 | Seoul Metropolitan Subway |
 | Sindang | Sindang | 37.56538 | 127.01625 | Seoul Metropolitan Subway |
 | Yaksu | Yaksu | 37.55475 | 127.01062 | Seoul Metropolitan Subway |
-| Euljiroipgu | Euljiro 1(il)-ga | 37.56595 | 126.98262 | Seoul Metropolitan Subway |
+| Euljiroipgu | Euljiro 1-ga | 37.56595 | 126.98262 | Seoul Metropolitan Subway |
 | Cheonggu | Cheonggu | 37.56023 | 127.01378 | Seoul Metropolitan Subway |
 | Chungmuro | Chungmuro | 37.56120 | 126.99411 | Seoul Metropolitan Subway |
 | Hoehyeon | Hoehyeon | 37.55870 | 126.97842 | Seoul Metropolitan Subway |
@@ -44813,7 +44813,7 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 압구정로데오 | Apgujeong Rodeo | 37.52781 | 127.04071 | 수도권 전철 |
 | 언주 | Eonju | 37.50732 | 127.03387 | 수도권 전철 |
 | 역삼 | Yeoksam | 37.50082 | 127.03696 | 수도권 전철 |
-| 일원 | Ilwon | 37.48369 | 127.08438 | 수도권 전철 |
+| 일원 | Irwon | 37.48369 | 127.08438 | 수도권 전철 |
 | 청담 | Cheongdam | 37.51909 | 127.05168 | 수도권 전철 |
 | 학동 | Hak-dong | 37.51396 | 127.03075 | 수도권 전철 |
 | 학여울 | Hangnyeoul | 37.49650 | 127.06988 | 수도권 전철 |
@@ -44938,7 +44938,7 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
 | 공릉 | Gongneung | 37.62564 | 127.07304 | 수도권 전철 |
-| 광운대 | Kwangwoon University | 37.62370 | 127.06182 | 수도권 전철 |
+| 광운대 | Kwangwoon Univ. | 37.62370 | 127.06182 | 수도권 전철 |
 | 노원 | Nowon | 37.65459 | 127.06049 | 수도권 전철 |
 | 마들 | Madeul | 37.66504 | 127.05772 | 수도권 전철 |
 | 봉화산 | Bonghwasan | 37.61742 | 127.09110 | 수도권 전철 |
@@ -44961,13 +44961,13 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 도봉산 | Dobongsan | 37.68984 | 127.04608 | 수도권 전철 |
 | 방학 | Banghak | 37.66769 | 127.04430 | 수도권 전철 |
 | 쌍문 | Ssangmun | 37.64840 | 127.03458 | 수도권 전철 |
-| 창동 | Chang-Dong | 37.65260 | 127.04798 | 수도권 전철 |
+| 창동 | Chang-dong | 37.65260 | 127.04798 | 수도권 전철 |
 
 ## 동대문구 (9)
 
 | 이름 | 영문 | 위도 | 경도 | 네트워크 |
 |---|---|---|---|---|
-| 답십리 | Dapsipri | 37.56681 | 127.05270 | 수도권 전철 |
+| 답십리 | Dapsimni | 37.56681 | 127.05270 | 수도권 전철 |
 | 신답 | Sindap | 37.56972 | 127.04713 | 수도권 전철 |
 | 신이문 | Sinimun | 37.60164 | 127.06729 | 수도권 전철 |
 | 외대앞 | Hankuk Univ. of Foreign Studies | 37.59631 | 127.06374 | 수도권 전철 |
@@ -44994,7 +44994,7 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 신대방삼거리 | Sindaebangsamgeori | 37.49971 | 126.92822 | 수도권 전철 |
 | 이수 | Isu | 37.48545 | 126.98211 | 수도권 전철 |
 | 장승배기 | Jangseungbaegi | 37.50502 | 126.93928 | 수도권 전철 |
-| 총신대입구 (이수) | Chongsin Univ. (Isu) | 37.48703 | 126.98220 | 서울교통공사 |
+| 총신대입구 (이수) | Chongshin Univ. (Isu) | 37.48703 | 126.98220 | 서울교통공사 |
 | 총신대입구(이수) | Chongshin Univ. (Isu) | 37.48678 | 126.98224 | 수도권 전철 |
 | 흑석 | Heukseok | 37.50838 | 126.96395 | 수도권 전철 |
 
@@ -45064,7 +45064,7 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 뚝섬 | Ttukseom | 37.54724 | 127.04741 | 수도권 전철 |
 | 마장 | Majang | 37.56610 | 127.04288 | 수도권 전철 |
 | 상왕십리 | Sangwangsimni | 37.56439 | 127.02925 | 수도권 전철 |
-| 서울숲 | Seoul-forest | 37.54359 | 127.04474 | 수도권 전철 |
+| 서울숲 | Seoul Forest | 37.54359 | 127.04474 | 수도권 전철 |
 | 성수 | Seongsu | 37.54457 | 127.05610 | 수도권 전철 |
 | 옥수 | Oksu | 37.54137 | 127.01755 | 수도권 전철 |
 | 왕십리 | Wangsimni | 37.56121 | 127.03715 | 수도권 전철 |
@@ -45084,13 +45084,13 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 보문 | Bomun | 37.58527 | 127.01937 | 수도권 전철 |
 | 북한산보국문 | Bukhansan Bogungmun | 37.61218 | 127.00817 | 수도권 전철 |
 | 상월곡 | Sangwolgok | 37.60624 | 127.04827 | 수도권 전철 |
-| 성신여대입구 | Sungshin Women''s University | 37.59268 | 127.01648 | 수도권 전철 |
+| 성신여대입구 | Sungshin Women''s Univ. | 37.59268 | 127.01648 | 수도권 전철 |
 | 신설동 | Sinseol-dong | 37.57605 | 127.02467 | 수도권 전철 |
 | 안암 | Anam | 37.58627 | 127.02928 | 수도권 전철 |
 | 월곡 | Wolgok | 37.60192 | 127.04146 | 수도권 전철 |
 | 정릉 | Jeongneung | 37.60283 | 127.01336 | 수도권 전철 |
 | 창신 | Changsin | 37.57980 | 127.01525 | 수도권 전철 |
-| 한성대입구 | Hansung University | 37.58851 | 127.00596 | 수도권 전철 |
+| 한성대입구 | Hansung Univ. | 37.58851 | 127.00596 | 수도권 전철 |
 | 한성대입구(삼선교) | Hansung Univ. (Samseongyo) | 37.58820 | 127.00532 | 서울교통공사 |
 
 ## 송파구 (24)
@@ -45219,8 +45219,8 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 대현산배수지공원 모노레일 시점승강장 |  | 37.55941 | 127.02051 | 대현산배수지공원 모노레일 |
 | 동대문역사문화공원 | Dongdaemun History & Culture Park Station (DDP) | 37.56526 | 127.00812 | 수도권 전철 |
 | 동대입구 | Dongguk Univ. | 37.55906 | 127.00573 | 수도권 전철 |
-| 메트로호텔 | Metro Hotel Myeongdong | 37.56511 | 126.98362 |  |
-| 명동 | Myeongdong | 37.56090 | 126.98638 | 수도권 전철 |
+| 메트로호텔 | Metro Hotel Myeong-dong | 37.56511 | 126.98362 |  |
+| 명동 | Myeong-dong | 37.56090 | 126.98638 | 수도권 전철 |
 | 버티고개 | Beotigogae | 37.54823 | 127.00659 | 수도권 전철 |
 | 서울 | Seoul | 37.55455 | 126.97078 | 수도권 전철 |
 | 서울역 | Seoul Station | 37.55285 | 126.97257 | 수도권 전철 |
@@ -45228,7 +45228,7 @@ The stations below lie on tracks physically connected to Seoul. Track continuity
 | 신금호 | Singeumho | 37.55443 | 127.02025 | 수도권 전철 |
 | 신당 | Sindang | 37.56538 | 127.01625 | 수도권 전철 |
 | 약수 | Yaksu | 37.55475 | 127.01062 | 수도권 전철 |
-| 을지로입구 | Euljiro 1(il)-ga | 37.56595 | 126.98262 | 수도권 전철 |
+| 을지로입구 | Euljiro 1-ga | 37.56595 | 126.98262 | 수도권 전철 |
 | 청구 | Cheonggu | 37.56023 | 127.01378 | 수도권 전철 |
 | 충무로 | Chungmuro | 37.56120 | 126.99411 | 수도권 전철 |
 | 회현 | Hoehyeon | 37.55870 | 126.97842 | 수도권 전철 |
@@ -46185,7 +46185,7 @@ The third water supply contract is now approaching.
 
 | Faction | Territory | Districts | Mode of Rule | Title of Duchy Holder | Major Stations |
 |---|---|---|---|---|---|
-| Government | North of the Han River | 14 | On paper, three branches of government and a multiparty system. In practice, two parties: the OMO Party and the Claw Party. A modern feudalism in which Senators elect a President for life | Senator, a post held concurrently by the district''s National Assembly member | Gwanghwamun, Anguk, Jongno 3-ga, Seoul Station, Euljiro-ipgu, Yongsan, Noksapyeong, Cheongnyangni, Guui, Changdong |
+| Government | North of the Han River | 14 | On paper, three branches of government and a multiparty system. In practice, two parties: the OMO Party and the Claw Party. A modern feudalism in which Senators elect a President for life | Senator, a post held concurrently by the district''s National Assembly member | Gwanghwamun, Anguk, Jongno 3-ga, Seoul Station, Euljiro 1-ga, Yongsan, Noksapyeong, Cheongnyangni, Guui, Chang-dong |
 | Free City (Union) | Southwest | 7 | Independent city-states with no king. Each city holds its own power | Duke of Gwanak; other cities not recorded | Magok, Sinjeong, Yeouido, Yeongdeungpo, Guro, Gasan, Noryangjin, Gwanak |
 | Arc | Gangnam | 4 | Family rule under Go Ye-jin, Messiah and Hierophant | Hierophant Go Ye-jin; duchy holders not recorded | Yangjae, Samseong, Gangnam, Seonjeongneung, Suseo, Jamsil, Amsa |
 
@@ -46643,7 +46643,7 @@ Machines have repeated their last search and watch routines on the surviving tra
 
 ### The Eight Depots
 
-Depot size reflects the storage and maintenance of 2026. Eight depots lie inside Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae and Suseo. Each belongs to the district holding it stands in. Jichuk, Dobong, Moran and Gimpo lie outside Seoul''s boundaries.
+Depot size reflects the storage and maintenance of 2026. Eight depots lie inside Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Chang-dong, Sinnae and Suseo. Each belongs to the district holding it stands in. Jichuk, Dobong, Moran and Gimpo lie outside Seoul''s boundaries.
 
 | Depot | District | Faction |
 |---|---|---|
@@ -46651,14 +46651,14 @@ Depot size reflects the storage and maintenance of 2026. Eight depots lie inside
 | Cheonwang | Guro-gu | Free City |
 | Banghwa | Gangseo-gu | Free City |
 | Gunja | Seongdong-gu | Government |
-| Changdong | Dobong-gu | Government |
+| Chang-dong | Dobong-gu | Government |
 | Sinnae | Jungnang-gu | Government |
 | Godeok | Gangdong-gu | Arc |
 | Suseo | Gangnam-gu | Arc |
 
-Depots are used for repair, bulk storage and siege. Sinjeong''s unloading crews move stopped trains again, and Godeok''s maintenance crews send out convoys. Changdong''s wheels and brakes are leased out in neighbouring ledgers. Fish tanks and migrating birds share the drainage ponds. Repeating machines are sealed in the deep bays of the workshops. What can be done with charging terminals and hydraulic hoses is in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+Depots are used for repair, bulk storage and siege. Sinjeong''s unloading crews move stopped trains again, and Godeok''s maintenance crews send out convoys. Chang-dong''s wheels and brakes are leased out in neighbouring ledgers. Fish tanks and migrating birds share the drainage ponds. Repeating machines are sealed in the deep bays of the workshops. What can be done with charging terminals and hydraulic hoses is in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
-Depots also hold most of what''s left for modern arms: fuel stores, workbenches for vehicles and the space to keep drones warm. That makes them worth fighting over. The industrial blocks of Guro and Geumcheon use schools beside the depots as drying rooms for parts. The housing blocks of Dobong and Nowon can''t keep water if Changdong''s supply fails.
+Depots also hold most of what''s left for modern arms: fuel stores, workbenches for vehicles and the space to keep drones warm. That makes them worth fighting over. The industrial blocks of Guro and Geumcheon use schools beside the depots as drying rooms for parts. The housing blocks of Dobong and Nowon can''t keep water if Chang-dong''s supply fails.
 
 ## Treatment Plants and Sluices
 
@@ -46682,7 +46682,7 @@ Garak, Gangseo, the grain market and the Noryangjin fish market sit around stati
 |---|---|---|---|
 | Station | 315 stations, concourses and platforms | Stronghold, ration window, faction seat | [Rail Station Catalog](/wiki/Seoul-Station-Catalog/) |
 | Tunnel | Adjacent track drawn from map points, transfers | Passage by permission, flooding and blockade | [World Map](/wiki/World-and-Subway-Layers/) |
-| Depot | Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, Suseo | Repair, storage, wheels, convoys, fuel and drones | [The Structure of the World Map](/wiki/World-Map-Construction/) |
+| Depot | Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Chang-dong, Sinnae, Suseo | Repair, storage, wheels, convoys, fuel and drones | [The Structure of the World Map](/wiki/World-Map-Construction/) |
 | Plant and sluice | Yeongdeungpo, Ttukseom, Guui and Amsa water plants | Water signatures, gate watches | [The Three Factions of Seoul](/wiki/Sixteen-States/) |
 | Passage | Transfers, maintenance passages, refuge stairs | Tolls, leftovers and heat, detours | [Entering the Station Interior](/wiki/Station-Interior-Construction/) |
 
@@ -47122,11 +47122,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
 - Maintenance: chief maintainer Nam Yun-gyeong · HP01 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
-- Emergent goal: continuous operation of Myeongdong sector and the responsible human''s safety first
+- Emergent goal: continuous operation of Myeong-dong sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: custodian K373, steward house HP01, work peer K103
 
-At the observation railing of Myeongdong, Bae Su-a (Sua) logged its entry in the HP01 duty log.
+At the observation railing of Myeong-dong, Bae Su-a (Sua) logged its entry in the HP01 duty log.
 
 Nam Yun-gyeong checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -47490,11 +47490,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
 - Maintenance: chief maintainer Eun Tae-ho · HP09 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
-- Emergent goal: continuous operation of Myeongdong sector and the responsible human''s safety first
+- Emergent goal: continuous operation of Myeong-dong sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: custodian K374, steward house HP09, work peer K218
 
-In the filter corridor of Myeongdong, Water-Supply Metering (Gyeryang) logged its entry in the HP09 duty log.
+In the filter corridor of Myeong-dong, Water-Supply Metering (Gyeryang) logged its entry in the HP09 duty log.
 
 Eun Tae-ho checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -47858,11 +47858,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
 - Maintenance: chief maintainer Ra Jin-u · HC07 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
-- Emergent goal: continuous operation of Myeongdong sector and the responsible human''s safety first
+- Emergent goal: continuous operation of Myeong-dong sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: custodian K375, steward house HC07, work peer K333
 
-In the inspection pit of Myeongdong, Sluice-Gate Cart (Sumun) logged its entry in the HC07 duty log.
+In the inspection pit of Myeong-dong, Sluice-Gate Cart (Sumun) logged its entry in the HC07 duty log.
 
 Ra Jin-u checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -49322,7 +49322,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K468 | [Gang Daryu](/wiki/people/person-0468/) |
 | K469 | [Jo Chaewon](/wiki/people/person-0469/) |
 | K470 | [Yun Soyul](/wiki/people/person-0470/) |
-| K471 | [Jang Dowon](/wiki/people/person-0471/) |
+| K471 | [Jang Dorwon](/wiki/people/person-0471/) |
 | K472 | [Im Geonu](/wiki/people/person-0472/) |
 | K473 | [Han Hyeonu](/wiki/people/person-0473/) |
 | K474 | [O Baseo](/wiki/people/person-0474/) |
@@ -49377,7 +49377,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K523 | [Go Yujin](/wiki/people/person-0523/) |
 | K524 | [Mun Aeun](/wiki/people/person-0524/) |
 | K525 | [Yang Katae](/wiki/people/person-0525/) |
-| K526 | [Pavel Nemets](/wiki/people/person-0526/) |
+| K526 | [Pavel Němec](/wiki/people/person-0526/) |
 | K527 | [Bae Dong-min](/wiki/people/person-0527/) |
 | K528 | [Baek Buk-rae](/wiki/people/person-0528/) |
 | K529 | [Heo Eun-seo](/wiki/people/person-0529/) |
@@ -49409,7 +49409,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K555 | [Seo Guseo](/wiki/people/person-0555/) |
 | K556 | [Sin Gangmin](/wiki/people/person-0556/) |
 | K557 | [Gwon Supyun](/wiki/people/person-0557/) |
-| K558 | [Millicent Mensa](/wiki/people/person-0558/) |
+| K558 | [Millicent Mensah](/wiki/people/person-0558/) |
 | K559 | [An Naneul](/wiki/people/person-0559/) |
 | K560 | [Song Maji](/wiki/people/person-0560/) |
 | K561 | [Ryu Ahyeon](/wiki/people/person-0561/) |
@@ -49457,7 +49457,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K603 | [Go Byeolho](/wiki/people/person-0603/) |
 | K604 | [Mun Bitmin](/wiki/people/person-0604/) |
 | K605 | [Yang Santae](/wiki/people/person-0605/) |
-| K606 | [Simon Kaminski](/wiki/people/person-0606/) |
+| K606 | [Simon Kamiński](/wiki/people/person-0606/) |
 | K607 | [Bae Bawon](/wiki/people/person-0607/) |
 | K608 | [Baek Garae](/wiki/people/person-0608/) |
 | K609 | [Heo Rau](/wiki/people/person-0609/) |
@@ -49489,10 +49489,10 @@ The table below links character IDs to people pages. Every character can be foun
 | K635 | [Seo Aseo](/wiki/people/person-0635/) |
 | K636 | [Sin Kabin](/wiki/people/person-0636/) |
 | K637 | [Gwon Harin](/wiki/people/person-0637/) |
-| K638 | [Zofia Dobrowska](/wiki/people/person-0638/) |
+| K638 | [Zofia Dąbrowska](/wiki/people/person-0638/) |
 | K639 | [An Bungmin](/wiki/people/person-0639/) |
 | K640 | [Song Byeolhyeon](/wiki/people/person-0640/) |
-| K641 | [Ryu Bipyeon](/wiki/people/person-0641/) |
+| K641 | [Ryu Bichyeon](/wiki/people/person-0641/) |
 | K642 | [Hong Sanwon](/wiki/people/person-0642/) |
 | K643 | [Go Dajin](/wiki/people/person-0643/) |
 | K644 | [Mun Baeun](/wiki/people/person-0644/) |
@@ -49713,7 +49713,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K859 | [Choe Baa](/wiki/people/person-0859/) |
 | K860 | [Jeong Gajun](/wiki/people/person-0860/) |
 | K861 | [Gang Rajun](/wiki/people/person-0861/) |
-| K862 | [Viktor Stanescu](/wiki/people/person-0862/) |
+| K862 | [Viktor Stănescu](/wiki/people/person-0862/) |
 | K863 | [Yun Chayul](/wiki/people/person-0863/) |
 | K864 | [Jang Parin](/wiki/people/person-0864/) |
 | K865 | [Im Eunna](/wiki/people/person-0865/) |
@@ -49809,7 +49809,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K955 | [Baek Arae](/wiki/people/person-0955/) |
 | K956 | [Heo Kau](/wiki/people/person-0956/) |
 | K957 | [Yu Hahun](/wiki/people/person-0957/) |
-| K958 | [Barbora Prohaskova](/wiki/people/person-0958/) |
+| K958 | [Barbora Procházková](/wiki/people/person-0958/) |
 | K959 | [Sim Bukhyeon](/wiki/people/person-0959/) |
 | K960 | [No Byeora](/wiki/people/person-0960/) |
 | K961 | [Ha Bicheun](/wiki/people/person-0961/) |
@@ -49841,7 +49841,7 @@ The table below links character IDs to people pages. Every character can be foun
 | K987 | [Hong Ramwon](/wiki/people/person-0987/) |
 | K988 | [Go Najin](/wiki/people/person-0988/) |
 | K989 | [Mun Maeun](/wiki/people/person-0989/) |
-| K990 | [Isabel Garcia](/wiki/people/person-0990/) |
+| K990 | [Isabel García](/wiki/people/person-0990/) |
 | K991 | [Son Kaho](/wiki/people/person-0991/) |
 | K992 | [Bae Hamin](/wiki/people/person-0992/) |
 | K993 | [Baek Dongrae](/wiki/people/person-0993/) |
@@ -50553,7 +50553,7 @@ B. Treatment plants and depots
 
 The water-treatment plants stood at Yeongdeungpo, Ttukseom, Guui, and Amsa, and Gangbuk (Namyangju) and Gwangam (Hanam) also worked as principal water-pressure sources.
 
-The depots lay at Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo, and the outer depots at Jichuk, Dobong, Moran, and Gimpo were also key strongholds.
+The depots lay at Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Chang-dong, Sinnae, and Suseo, and the outer depots at Jichuk, Dobong, Moran, and Gimpo were also key strongholds.
 
 C. Markets and support facilities
 
@@ -50930,8 +50930,8 @@ This ledger gathers operating organisations, old records of theatres outside Seo
 | Guro Digital Complex Battery House | supply-partner | Magok Test-Line House | the battery-cell supply contract was bound to audit rights over the energy-storage depot |
 | Digital Media City Index House | platform-rivalry | Digital Media City Payments House | the search index and the message relay competed for the Sangam transmission band |
 | Magok Seed House | affiliate | Yongsan Convoy House | kindred food-supply and transport contracts split the Garak auction-floor volume |
-| Yongsan Ship House | build-contract | Geumcheon District Office Machinery House | container ship-repair payments traded against rights to the Yongsan riverside wharf |
-| Dongdaeipgu Trading House | retail-rivalry | Seoul Station Inventory House | bids split over protocol goods at Seoul Station and access to the bonded warehouse |
+| Yongsan Ship House | build-contract | Geumcheon-gu Office Machinery House | container ship-repair payments traded against rights to the Yongsan riverside wharf |
+| Dongguk Univ. Trading House | retail-rivalry | Seoul Station Inventory House | bids split over protocol goods at Seoul Station and access to the bonded warehouse |
 ', '<a id="World-Relation-Ledger-heading-0001"></a>
 
 이 원장은 운영 조직, 서울 밖 옛 전구 기록, 합성 인간 보관, 조직 사이 계약 관계를 한 표에 모은다. 운영 연결의 도착 칸은 그 조직이 일하는 세력(정부, 자유도시, 아크)과 구를 적는다.
@@ -51371,7 +51371,7 @@ Off the books, people trade in things that keep and hold their value: cartridges
 <a id="taxes"></a>
 ### Taxes
 
-Taxes are taken in kind and in time. Every labour household owes a share of what it produces to the Senator''s stores, usually a tenth of any surplus above the ration and a fixed weight of salvage each month. Station markets pay a stall tax in goods. The Senator in turn sends a tribute to the President''s stores at Seoul Station and Sicheong, counted in fuel, ammunition and water.
+Taxes are taken in kind and in time. Every labour household owes a share of what it produces to the Senator''s stores, usually a tenth of any surplus above the ration and a fixed weight of salvage each month. Station markets pay a stall tax in goods. The Senator in turn sends a tribute to the President''s stores at Seoul Station and City Hall, counted in fuel, ammunition and water.
 
 The north''s complaint about taxes isn''t the size. It''s that the Senator''s clerks count the tax before the ration, so a bad month falls on the household, never on the store.
 
@@ -51385,7 +51385,7 @@ In a crisis the levy becomes the muster. The Senator calls up ledger adults by h
 <a id="rations"></a>
 ### Rations
 
-Rations are drawn by category, and each card is tied to a single station''s ration office. A family registered at Hoehyeon can''t draw bread at Chungmuro, only two stops away with Myeongdong between. Moving station means a new registration, a new card and a wait of weeks.
+Rations are drawn by category, and each card is tied to a single station''s ration office. A family registered at Hoehyeon can''t draw bread at Chungmuro, only two stops away with Myeong-dong between. Moving station means a new registration, a new card and a wait of weeks.
 
 | Category | Daily bread share | Other rations |
 |---|---|---|
@@ -51410,7 +51410,7 @@ The Government tolerates markets where it can watch them, in the biggest halls o
 | [Cheongnyangni](/wiki/duchies/11230/) | 1 | B2, about 7,125 m² | Fuel and charcoal. Shallow and cold, so the trade is fast and loud |
 | [Jongno 3-ga](/wiki/duchies/11110/) | 1, 3, 5 | Line 3 hall at B4, about 14,830 m² | Coupon brokers, petition writers and the cartridge exchange nobody admits to |
 
-Myeongdong is a different case. Its line 4 station sits at B4, about 7,820 m², and the Government keeps it as a Jung-gu clerks'' quarter rather than a market. The registry offices of the Electorate work there, and a ledger person who needs an entry corrected goes to Myeongdong first.
+Myeong-dong is a different case. Its line 4 station sits at B4, about 7,820 m², and the Government keeps it as a Jung-gu clerks'' quarter rather than a market. The registry offices of the Electorate work there, and a ledger person who needs an entry corrected goes to Myeong-dong first.
 
 <a id="daily-life"></a>
 ## Daily Life
@@ -51439,7 +51439,7 @@ The Senator''s table is the only place in an Electorate where food is served fre
 
 Housing follows the ledger. The station''s warm core near the generator and the deepest platforms goes to the Senator''s house and the office ledger. Labour families live in rows of curtained bunks along the concourses and in old service rooms. Dependents sleep where their household sleeps, usually at the edge of the bunk row. A family''s space is measured in bunk lengths and written in the ledger beside its name.
 
-Large stations have room to spare. Samgakji''s line 6 hall at B4 covers about 14,457 m², and Taereung-ipgu''s line 7 hall at B4 covers about 15,319 m². Small ones are crowded. Dokbawi on line 6 is deep, at B6, but only about 5,531 m², and its families sleep three to a bunk length.
+Large stations have room to spare. Samgakji''s line 6 hall at B4 covers about 14,457 m², and Taereung''s line 7 hall at B4 covers about 15,319 m². Small ones are crowded. Dokbawi on line 6 is deep, at B6, but only about 5,531 m², and its families sleep three to a bunk length.
 
 <a id="clothing-rules"></a>
 ## Clothing Rules
@@ -52319,7 +52319,7 @@ Below the Seal-Keepers the order has four layers, and people place each other in
 
 Part count cuts across clan rank. A cook with four parts outranks a clan cousin with one at the bench queue, though not at the family table. That tension is the Arc''s daily politics. The clans want blood to decide. The benches want metal to decide. The Hierophant hasn''t settled it, and some say she likes it that way.
 
-Stations sit under the Gates. A large interchange like Jamsil, Gosok Terminal or Cheonho runs as a household of its own, with an office that holds the station''s roll, its bench and its stores. At Jamsil the faithful chose their own lead believer, Nam Yun-gyeong, by secret ballot. The Hierophant never ratified that choice, and people there still argue over whether an election without her word counts. Most stations don''t try it. Jamsil''s ballot is the exception that everyone in Gangnam knows about.
+Stations sit under the Gates. A large interchange like Jamsil, Express Bus Terminal or Cheonho runs as a household of its own, with an office that holds the station''s roll, its bench and its stores. At Jamsil the faithful chose their own lead believer, Nam Yun-gyeong, by secret ballot. The Hierophant never ratified that choice, and people there still argue over whether an election without her word counts. Most stations don''t try it. Jamsil''s ballot is the exception that everyone in Gangnam knows about.
 
 Work passes from parent to child here as it does across Seoul. Scarcity made it so. In the Arc the inheritance is sharper, because a bench technician''s child grows up beside the tools and is often fitted young, so a family of fitters tends to stay a family of fitters.
 
@@ -52357,7 +52357,7 @@ The Arc''s economy runs on three things it can''t make enough of: power, parts a
 |---|---|---|
 | Garak Market | Lines 3 and 8 | The old wholesale floors, four levels down on Line 3 and about 16,000 m² of platform and concourse. Bulk food, seed and preserved stores. The largest open market in the Arc |
 | Jamsil | Lines 2 and 8 | Auctions under Nam Yun-gyeong''s scales. Rations, cloth and the price list that the other Gangnam markets follow |
-| Gosok Terminal | Lines 3, 7 and 9 | Three platforms deep on its older lines and the biggest station floor in Seocho. The parts market: wire, cells, salvaged motors and whatever Free City traders bring across the river |
+| Express Bus Terminal | Lines 3, 7 and 9 | Three platforms deep on its older lines and the biggest station floor in Seocho. The parts market: wire, cells, salvaged motors and whatever Free City traders bring across the river |
 | Cheonho | Lines 5 and 8 | The eastern gate for goods from Gangdong''s outer stations. Fuel, felt and heavy tools |
 | Suseo | Line 3 and others | Rail-yard salvage, repair stock and the long-haul convoys |
 
