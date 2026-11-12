@@ -160,3 +160,36 @@ Government-Society, a new document. Each entry gives the section heading and the
 | 16 | Government-Society | en: "Soldiers' Look", "Government soldiers look like what they are" / ko: "병사의 겉모습", "정부 병사는 보이는 그대로, 총을 든 장부 사람들이다." | the kit and dress per kind follow roster framework sections 9 and 11 examples; no unit ids or numbers are set here, task 13 owns them |
 | 17 | Government-Society | en: "Civilians' Look", "An ordinary northern resident is wrapped and grey." / ko: "주민의 겉모습", "북쪽의 보통 주민은 둘둘 감싸고 잿빛이다." | civilian appearance details and wedding clothes rented at Euljiro 3-ga are provisional |
 | 18 | Government-Society | en: "Cyberware Access", "In the north, cyberware follows the ledger." / ko: "사이버웨어 접근", "북쪽에서 사이버웨어는 장부를 따른다." | the access table by rank repeats task 8 ledger items 3 and 4 and adds per-rank terms; provisional |
+
+## task 14
+
+Free City roster data (data/sql/131-units-free-city.sql, 24 units). Each entry gives the unit id and English name. Every unit name, weapon and machine below is an invented provisional item; the roster numbers follow roster-framework.md, and the wording of equipment and appearance follows Free-City-Society.
+
+| # | Unit | Provisional item |
+|---|---|---|
+| 1 | company-captain-guard / Company Captain's Guard | the contract-company captain's guard as the Free City's tier 3 commander escort, with its sealed contract tin, is an invented unit and name |
+| 2 | city-charter-escort / City Charter Escort | a city-paid tier 4 escort chosen from the best-kept companies, wearing plate cut from old riot gear, is an invented unit; "Charter House" is the framework building name |
+| 3 | hired-hand-pole-crews / Hired Hand Pole Crews | hands hired by the shift fighting with hauling poles and porter harnesses, as the Free City's only tier 1 infantry, follows Free-City-Society "Hand" and is an invented unit and name |
+| 4 | contract-shield-company / Contract Shield Company | patrol shields mended with rail clips, and the company mark on helmet and left shoulder, extend Free-City-Society "Contract Companies" and "Soldiers' Look"; invented name |
+| 5 | tunnel-axe-crews / Tunnel Axe Crews | axes and pry bars for stairwell fighting, with knee pads of tyre rubber, are an invented unit and name |
+| 6 | contract-storm-company / Contract Storm Company | a contract company whose members carry guild-fitted reinforced legs and plated ribs paid off from the season's pay (tag wired-body), follows Free-City-Society "Who Gets Metal"; invented unit and name |
+| 7 | charter-heavy-company / Charter Heavy Company | a tier 4 heavy line company that does not leave the line before the contract ends (last-to-leave) is an invented unit and name |
+| 8 | brass-count-riflemen / Brass-Count Riflemen | dawn magazine counts and fines for left brass follow Free-City-Society "Contract Companies"; hand-refilled rounds follow research section 3; invented name |
+| 9 | workshop-crossbow-crews / Workshop Crossbow Crews | spring-steel crossbows built from rail clips, with bolts cut from rebar, are an invented unit; Era-Arms lists crossbows as conditional and rare, so the unit is a provisional default |
+| 10 | rail-spike-throwers / Rail Spike Throwers | rail spikes thrown from spear-throwers at plate and engine housings are an invented weapon and unit name |
+| 11 | passage-marksmen / Passage Marksmen | paired marksmen with salvaged scopes who sign for every round are an invented unit and name |
+| 12 | workshop-mortar-crews / Workshop Mortar Crews | light mortars made from salvaged pipe on a rail-steel base plate, carried in three parts, are an invented weapon and unit; Era-Arms names squad support weapons only at faction scale |
+| 13 | rail-trolley-raiders / Rail Trolley Raiders | hand-pumped rail trolleys with boarding hooks follow the framework example, with the Carters' routes of Free-City-Society as basis; the name is provisional |
+| 14 | sled-scouts / Sled Scouts | plank sleds towed by rope over surface ice, with scouts carrying knives and signal lamps, are an invented unit; the framework names sleds as a fast-category carrier |
+| 15 | flywheel-cart-shock-crews / Flywheel Cart Shock Crews | rail carts driven by hand-cranked flywheels and fitted with ram bars are an invented machine and unit name |
+| 16 | fibre-scout-drones / Fibre Scout Drones | cable-steered rotor airframes on a hand reel that jamming cannot reach (fibre-guided) are an invented unit and name |
+| 17 | workshop-drop-drones / Workshop Drop Drones | six drop-charge airframes rebuilt from salvaged motors follow the framework example and Free-City-Society "Drones and Engineers"; invented name |
+| 18 | relay-strike-flight / Relay Strike Flight | a relay-mast flight that strikes beyond one pilot's reach is an invented unit and name |
+| 19 | plated-ore-cart-rams / Plated Ore Cart Rams | ore carts plated with rail steel and pushed by cell-driven motors, with a three-person crew, are an invented machine and unit name |
+| 20 | plated-gun-cars / Plated Gun Cars | rail cars with a short gun firing salvaged shells counted from a locked box are an invented machine and unit; Era-Arms marks heavy weapons as held at faction sites |
+| 21 | builders-breach-crews / Builders' Breach Crews | wall saws, wedge bars and shaped charges carried by the Builders guild as a breaching crew are an invented unit; the guild list is a task 11 provisional item |
+| 22 | machinists-field-repair-crews / Machinists' Field Repair Crews | field repair by Machinists guild crews, including cable hands that need no charge, follows Free-City-Society "Drones and Engineers" and Cyberware and Scarcity; invented unit and name |
+| 23 | builders-net-crews / Builders' Net Crews | weighted nets thrown from stair heads, the same nets the Builders hang across exits, are an invented unit and name |
+| 24 | linesmen-static-veil-teams / Linesmen Static Veil Teams | jammers carried on frames by Linesmen guild teams, switched on only while an enemy airframe is up, are an invented unit and name |
+| 25 | all rows / recruit_building | each row's recruit_building is a framework 4.3 building name; which building opens which unit follows the tier gates in that table |
+| 26 | all rows / hired-company ratios | hired-company units sit in the lower half of their tier cost band with 28 to 30 percent upkeep, as framework 5.1 sets; the framework marks this as a design choice, not a Total War figure |
