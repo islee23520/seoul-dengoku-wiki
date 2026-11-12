@@ -6,7 +6,7 @@ section_checkpoint: G12 all sections done
 ---
 [Hostile Ecology Compendium](/wiki/Hostile-Ecology-Index/) · Hostile human groups
 
-Engineers and workers of the Free Cities who lost their surety. They have skill in their hands, but without someone to stand surety no one in the Free Cities can take on work. They gathered on the buried factory grounds of Geumcheon, at Seoul's southern end.
+Engineers and workers of the Free Cities who lost their surety. They have skill in their hands, but without someone to stand surety for them they cannot take on work in the Free Cities. They gathered on the buried factory grounds of Geumcheon, at Seoul's southern end.
 
 ## At a glance
 

@@ -49,7 +49,7 @@ They avoid fights. Only when defending a workshop do they become dangerous enoug
 
 ## How the Government treats them
 
-Altering the ledger is one of the gravest crimes in Government law. Forging an entry, forging coupons and drawing rations on someone else's coupon all count. Government people say, "We do not kill; we erase." The heaviest punishment is striking-off as a penalty: erased from the ledger, the tag cut, and put out of the station.
+Altering the ledger is one of the gravest crimes in Government law. Forging an entry, forging coupons and drawing rations on someone else's coupon all count. Government people say, "We do not kill; we erase." The heaviest punishment is the sentence strike-off: erased from the ledger, the tag cut, and put out of the station.
 
 The coupon-forgers last longer than other bands because most of them are still inside the ledger. By day a coupon-forger is a registered person no different from anyone else.
 

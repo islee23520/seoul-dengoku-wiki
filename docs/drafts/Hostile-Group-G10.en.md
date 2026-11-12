@@ -30,7 +30,7 @@ They live on the mountain slopes around Bukhansan Bogungmun, Bukhansan Ui and Je
 
 ## What they do
 
-- **They go into the perimeter.** The perimeter machines see movement and heat. The two to four days when a blizzard blinds them are the only window. In that window the perimeter-runners go into the perimeter and strip power cores and parts from wrecked machines. But the ground-knockers driven into the ground hear even in a blizzard. So perimeter-runners do not drag their feet and walk one at a time, spaced apart.
+- **They go into the perimeter.** The perimeter machines see movement and heat. The two to four days when a blizzard blinds them are the only window. In that window the perimeter-runners go into the perimeter and strip power cores and parts from wrecked machines. But the ground-knockers driven into the ground hear even in a blizzard. So perimeter-runners never drag their feet, and they walk one at a time, spaced apart.
 - **They hide their paths.** They hide their own paths, and when others come onto those paths they mislead or ambush them.
 - **They sell.** They sell what they strip to anyone. The Arc pays best, because power cores go into the charging and maintenance of the baptized.
 

@@ -13,7 +13,7 @@ Descended from house dogs abandoned at the Great Blackout. For a hundred years t
 | Item | Detail |
 |---|---|
 | Kind | Animals |
-| Threat | 3 (Danger). A pack kills a person alone |
+| Threat | 3 (Danger). A pack will kill a lone person |
 | Number in all of Seoul | 2,000-4,000, in 150-250 packs |
 | Where it lives | Closed exits in the concourse, basements of buried factories and warehouses, abandoned sections |
 | Polity that meets it most | The Free Cities |
@@ -44,7 +44,7 @@ Feral dogs have no light half of their own. But in the hungry long-dark half the
 
 ## The danger
 
-A pack kills a person alone. A work party can fight back but loses its loads. A party whose loads were taken by feral dogs on a fibre route goes home empty-handed. What a party fears more than the dogs is going home empty-handed.
+A pack will kill a lone person. A work party can fight back but loses its loads. A party whose loads were taken by feral dogs on a fibre route goes home empty-handed. What a party fears more than the dogs is going home empty-handed.
 
 ## Tamed dogs
 

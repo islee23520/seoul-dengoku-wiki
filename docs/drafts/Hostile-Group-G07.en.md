@@ -46,7 +46,7 @@ Mostly knives, clubs and hand-made bows. Only a few firearms, and too little amm
 
 ## How the Government treats them
 
-Government people are taught that harming someone outside the ledger is no crime. The struck-off carry no mark. Government people wear a trade badge sewn on the left breast, and on a struck-off person's clothes the needle holes where that badge was torn off remain. Station people call it "the torn place" and know the struck-off by it.
+Government people are taught that harming someone outside the ledger is no crime. The struck-off carry no mark. People of the skilled and labour households wear a trade badge sewn on their clothes (the skilled on the left breast). On a struck-off person's clothes the needle holes where that badge was torn off remain. Station people call it "the torn place" and know the struck-off by it.
 
 Crossing the river without the stamps is one of the gravest crimes in Government law. Going across the river, or trading with people outside the ledger without permission, is read as having left the ledger. So whoever buys a struck-off guide also becomes struck off if caught.
 
