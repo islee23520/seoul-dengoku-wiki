@@ -29,7 +29,7 @@ together** or **phases in which some events are invalid**. Each machine lives in
 | Phase | Accepts | Goes to |
 | --- | --- | --- |
 | loading | `loaded` / `failed` | ready / failed |
-| ready | `mode`, `layer`, `rank`, `line`, `holding`, `select`, `segments`, `toggle`, `detail`, `view`, `escape` | ready |
+| ready | `mode`, `layer`, `rank`, `line`, `holding`, `select`, `segments`, `toggle`, `detail`, `view`, `gesture`, `escape` | ready |
 | failed | `retry` | loading (state fully reset) |
 
 Cross-field rules (the part the old React component spread over many click handlers):
@@ -43,6 +43,28 @@ Cross-field rules (the part the old React component spread over many click handl
 | `select` | segment choices; opens the detail panel unless the selection is none |
 | `holding` | selection; opens the panel when a holding is chosen |
 | `escape` | segment choices first, then the detail panel |
+| `view` | nothing; the box is clamped to the zoom limits (1x to `MAX_ZOOM` = 12x, map aspect kept) and to the map extent, so the map never leaves the screen |
+
+Pan and zoom follow a standard map app. `zoomAt(box, factor, extent, point)` keeps the map point under the cursor (wheel),
+between the fingers (pinch) or at the tap (double-click, double-tap) fixed on screen; `panBy` moves by map units. Every
+result goes through `view`, so the limits hold for every input: drag, wheel, pinch, buttons, keys and inertia.
+
+Pointer gesture (`gesture` action, field `gesture`). It replaces the old `dragged` flag in the component:
+
+| Gesture | `press` | `drag` | `pinch` | `release` |
+| --- | --- | --- | --- | --- |
+| idle | pressing | | | |
+| pressing | pressing | dragging | pinching | idle (a click or tap: selects, and a second tap within 350 ms zooms in) |
+| dragging | | dragging | pinching | dragged (light inertia) |
+| pinching | | dragging | pinching | dragged |
+| dragged | pressing | | | |
+
+`drag` is sent only after the pointer moves more than `CLICK_SLOP` (5 CSS px). While the gesture is `dragged`, the
+click that the browser fires after the release selects nothing, so a drag that starts on a region never opens it.
+Inputs: left mouse drag or one finger pans; wheel, trackpad scroll and Ctrl+wheel (trackpad pinch) zoom at the cursor;
+two fingers pinch; double-click or double-tap zooms in 2x; the buttons zoom in, zoom out and show all of Seoul; with
+focus on the map, arrows pan, `+`/`-` zoom and `0` resets. The map surface has `touch-action: none` and the wheel
+handler calls `preventDefault`, so the page scrolls normally everywhere except over the map.
 
 ### Locale preference (`localePref.ts`)
 
@@ -71,8 +93,8 @@ They are treated as black boxes: the site does not read or write their state.
 
 ## Still implicit in the new code, and why
 
-- `TerritoryMap.vue`: `dragged` (a pointer-up that ended a drag must not count as a click) and `railFailed` (the rail file failed to load). Both are single booleans with no dependent fields, so a machine would add code without removing a bug.
-- Pan/zoom `box` is held in the map machine (`view`), but the gesture in progress (`drag`) is a local variable because it never outlives one pointer interaction.
+- `TerritoryMap.vue`: `railFailed` (the rail file failed to load), a single boolean with no dependent fields, so a machine would add code without removing a bug.
+- Pan/zoom `box` and the gesture phase are held in the map machine (`view`, `gesture`). The raw pointer positions, the velocity trail for inertia and the running animation frame stay local because they never outlive one interaction.
 
 ## How to add a machine
 

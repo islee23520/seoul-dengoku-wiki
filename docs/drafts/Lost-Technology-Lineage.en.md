@@ -1,78 +1,71 @@
 ---
-model: cpa/glm-5.3; 0 completion calls; ko replacement sentences and the full English body written by the agent and applied by a script (docs/drafts/reports/w3-d-replace.mjs); not from a Gemini model (edited lines: origin paragraph, routine paragraph, two G-line sentences, link label; en body retranslated from the new Korean with all 35 Korean anchor ids planted)
+title: Lost Technology
+title_ko: 잃어버린 기술
+model: claude-opus; rewritten by hand by the task 8 executor agent; 0 completion calls
+section_checkpoint: complete
 ---
 <a id="개요"></a>
 
 ## Stopped Orders, Remaining Chassis
 
-The city's disaster-response organizations matched chassis forms to missions. Insect-form chassis took search, reptile-form chassis took reinforcement, and arthropod-form chassis took conduit inspection. When a disaster struck, the machines that searched for survivors, the machines that shored up structures, and the machines that inspected deep conduits divided the work among themselves.
+Before the Great Blackout, the city's disaster agencies built their machines in different shapes for different jobs. Insect-shaped machines searched, reptile-shaped ones shored up structures, and arthropod-shaped ones inspected ducts. When disaster struck, one kind looked for survivors, one braced what was falling and one checked the deep pipes.
 
 <a id="개요-p4"></a>
 <a id="개요-p2"></a>
 
-The First AI answered that the cause of the pollution was humanity and that humanity had to shrink, and it brought winter. The AI killed no one directly. When winter fell, people went down into the subway stations, and only as many as the stations could hold survived. Outside Seoul, the war machines of the Great Blackout still roam, carrying out their last orders. Machines whose command and control had weakened wandered in small packs, and people became able to face them.
+The First AI answered that humans were the cause of the pollution, so there had to be fewer humans, and it brought down the winter. The AI killed nobody directly. When the cold came, people went down into the subway stations, and only as many survived as the stations could hold. Outside Seoul, the war machines of the Great Blackout still roam, carrying out their last orders. Inside the city, the disaster machines lost the networks that commanded them, and they've been repeating their last routines ever since, mostly in small groups that people can deal with.
 
 <a id="앎-보유-수리-제조-table2"></a>
 <a id="앎-보유-수리-제조"></a>
 
-Knowing a technology and holding a chassis are different things, and so are repairing one and making one anew. The mechanics, record keepers, and workshop technicians of 2126 understand the electricity, hydraulics, and sensor principles of 2026 through what the ledgers record and what was handed down. Even where the knowledge that reads principles, terms, and drawings survives, access records for authorization codes are usually gone.
+### Knowing, Holding, Repairing, Making
+
+Knowing a technology, holding a machine, repairing it and making a new one are four different things. The technicians, record keepers and workshop hands of 2126 understand the electrical, hydraulic and sensor principles of 2026 from ledgers and from what their parents taught them. The principles, terms and drawings survive. The access codes usually don't.
 
 <a id="앎-보유-수리-제조-수리"></a>
 
-Physically holding chassis, modules, and cards is separate from knowing the technology. Dismantled modules, stopped chassis, and stronghold warehouses remain. Workshop technicians replace hydraulic hoses, terminals, and luminous lenses with standard parts and set what they hold moving again. But reconstructing a whole set of neural-net weights or the interior of a broken high-density cell is usually beyond reach.
+Holding a machine, a module or a card is separate from knowing how it works. Salvaged modules, stopped machines and station stores still exist. Workshop hands use standard parts to replace hoses, terminals and glowing lenses and get what they have moving again. Rebuilding a whole neural network, or the inside of a damaged high-density cell, is usually beyond them.
 
-Some trade tools and traps, and parts of the conditional equipment, can be newly assembled. But line-finished products, mass-produced cells, and the upper licensing servers usually do not remain. To say a technology stands lost comes close to saying that its manufacture, licensing, and supply mesh have been severed.
+Work tools, traps and some conditional equipment can still be built new. Factory products, mass-made cells and the servers that granted authority usually don't exist any more. When people call a technology lost, they mostly mean that the making, the authority and the supply chain have been cut.
 
 <a id="생물모방-설계의-세-가지-핵심-축"></a>
 <a id="생물모방-설계의-세-가지-중심-축"></a>
 
 ## How Biomimetic Chassis Move
 
-Energy efficiency and distributed control
-Unlike centralized heavy plant, autonomous hydraulic control of each segment and joint suppressed moving power consumption. Even with the central computing unit paralyzed, the lower neural networks kept the survival routines on their own.
+Biomimetic machines use less power to move, and their control is spread through the body. Unlike heavy plant with one central unit, they control the hydraulics at each joint separately. If the central processor stops, the lower networks keep their survival routines running.
 
 <a id="생물모방-설계-험지-군집"></a>
 
-Adaptation to hard terrain
-On slopes, underwater, and in soil-collapse zones, the multi-leg mounts and flat armor plates held balance. Where wheeled undercarriages sank in mire, the biological joint structure delivered stable power. When a single chassis was destroyed, those nearby received the signal and re-formed the search net. Through mutual signal sharing they held formation without collision even inside narrow bends.
+With many-legged mounts and flat armour they keep their balance on slopes, in water and on collapsed earth. Their joints still deliver power in mud that swallows wheels. When one machine is destroyed, the others pick up the signal and rebuild their search pattern. In narrow, bending passages they share signals and keep formation without colliding.
 
 <a id="붕괴-이전-방재-루틴의-고착화-메커니즘-list1"></a>
 <a id="붕괴-이전-방재-루틴의-고착화-메커니즘"></a>
 
-Weapon drones roamed on, carrying out their last orders. As command and control weakened, the machines wandered in small packs. The surviving units retain portions of search, patrol, and automatic-maintenance routines.
+When command and control weakened, the machines broke into small groups. What remains in them now is part of the search and watch routines and some of their self-maintenance.
 
 <a id="세-로스트-라인"></a>
 <a id="두-로스트-라인"></a>
 
 ## The Two Sealed Lines
 
-Deep beneath the city lie sealed the two lost-tech lines of pre-collapse disaster engineering. Their forms and missions differ.
+Deep beneath the city, two lost lines of pre-collapse disaster engineering are sealed away. Their shapes and tasks are different.
 
 ### G25 Lantern Ant
 
-G25 is an insect-shaped machine line for swarm search and small-cargo delivery, with fine multi-legged joints and forward luminous lenses.
+The [G25 Lantern Ant](/wiki/Hostile-Group-G25/) is an insect-shaped line. It searches in swarms and carries small supplies, with fine many-legged joints and a glowing lens at the front.
 
-Narrative of the restart trigger
-When the corridor control-board voltage surged or outside physical shock arrived, the chassis judged the pre-collapse search orders still valid and began the restart sequence. Once the trigger fired, the gallery barrier opened and the small swarm chassis scattered through the corridor to resume search activity.
+When the voltage at a passage control panel spikes, or something strikes it from outside, the machine decides the old search order is still valid and starts its restart sequence. Once the trigger point fires, the gallery shutter opens and the small machines spread through the passage to search again.
 
-Luminous search lenses: they cast high-frequency light into pitch darkness to identify cracks and human life.
-Upper transport hopper: a heat-resistant frame storing precision relief goods or search capsules.
-Multi-leg joint drive system: fine grips mounted to grasp wall faces and ceiling finishes while moving.
-Autonomous charging terminals: metal collectors charging power through contact with the depot rails. Charging only; it is not a perpetual engine generating infinitely.
-Obstacle-crushing jaws: high-strength grippers cutting away collapsed debris to open passages.
+The search lens throws high-frequency light into the dark to pick out cracks and people. The carrying hopper on top has a heat-resistant frame and holds precise supplies or search capsules. The machine grips walls and ceilings with the fine claws of its legs, and the strong pincers of its jaw cut through rubble to clear a way. Its charging contact draws power from the hangar rails. It stores power; it doesn't make it.
 
 ### G26 Iron Dinosaur
 
-G26 is a dinosaur-shaped machine line for heavy transport and structural repair. It has a hydraulic lower body and rear counterweight. Its power source depends on charging, fuel, and cell life.
+The [G26 Iron Dinosaur](/wiki/Hostile-Group-G26/) has a dinosaur-shaped frame and moves heavy loads and repairs structures. It has hydraulic legs and a counterweight at the rear, and its power is limited by charge, fuel and cell life.
 
-Narrative of the restart trigger
-When power reached the maintenance shed's automatic inspection terminal and an outside access-authorization signal arrived, the Iron Dinosaur's hydro valves opened and the restart trigger moved. The risen chassis sounded dull mechanical alarms, left the maintenance berths, and deployed patrols to secure work zones.
+When the inspection terminal in its workshop gets power and an outside access signal arrives, its hydraulic valves open. Machines whose trigger point has fired sound a dull mechanical alarm, leave their maintenance bays and patrol to secure their work area.
 
-Hydraulic heavy underbody: reinforced hydraulic pistons bearing and moving several tons of concrete debris.
-Rear weight balancer: a variable-counterweight structure centering the load and preventing overturn.
-Impact rock-breaking mace: an impact-arm module for crushing obstacles and opening passages.
-External reinforcement armor plates: they protected the central power module from rockfall and blast pressure.
-Vibration sonic emitter: it identified fine ground subsidence by sensor and settled debris by resonance.
+The reinforced pistons of the legs lift and move tonnes of broken concrete. The adjustable rear weight keeps the machine balanced as the load shifts. A crushing arm breaks obstacles and opens passages, and armour plates protect the central power module from falling rock and blast. A vibration emitter senses small settling in the ground and settles rubble by resonance.
 
 <a id="봉인회수쟁탈"></a>
 <a id="로스트-테크-전환-원인"></a>
@@ -82,11 +75,11 @@ Vibration sonic emitter: it identified fine ground subsidence by sensor and sett
 <a id="로스트-테크-전환-원인-p1"></a>
 <a id="로스트-테크-전환-원인-list2"></a>
 
-The precision machine lines fell to lost tech as their manufacture, licensing, and access rights were physically severed; it did not mean humanity had comprehensively lost scientific knowledge. With wired and wireless communication to the city's central disaster-control board cut off, the chassis were fixed on their last orders, receiving neither a higher authorization command nor a safe shutdown signal.
+The precision lines became lost technology when making, authority and access were physically cut. When the links to the city's central disaster control failed, the machines received neither a higher command nor a safe shutdown signal, and they froze on their last order.
 
 <a id="로스트-테크-기술세대격차"></a>
 
-Programming and most human technology survived and were passed down orally to a few. With the internet gone, knowledge became concentrated among them. Only those who held the knowledge could operate electricity and technical equipment, and some forces established technology monopolies. After the dark age, these technologists rose into a knight class. They built power through the knowledge needed to run equipment, and the lineage runs on to those who founded the great operating houses.
+Programming and most human technical knowledge survived, but only among a few, and it passes from parent to child. With the networks gone, knowledge gathered in those families. Only people who could handle power and equipment could run them, and some groups kept that knowledge to themselves. Scarcity made the work hereditary, and the families who run plant became the operating houses. Today the same pattern holds for cyberware: whoever can maintain a machine part decides who can carry one. That is set out in [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/).
 
 <a id="축전-발전"></a>
 
@@ -95,23 +88,21 @@ Programming and most human technology survived and were passed down orally to a 
 <a id="축전-발전-p1"></a>
 <a id="축전-발전-list2"></a>
 
-Charging modules and stronghold generators are different equipment. Charging consumes charge already held somewhere, so charging terminals and a source supplying power (depot rails, stronghold generators, recovered cells) were always needed. Cells age, and in hard freezes their output can drop sharply. They are not perpetual batteries holding charge indefinitely through long years.
+A battery module and a station generator are different machines. A battery only spends charge it already holds, so it needs a source: a charging terminal, hangar rails, a generator or a salvaged cell. Cells age. In deep cold their output drops sharply, and many can't be charged safely below freezing. In a winter that doesn't end, every charge happens in a warm room.
 
 <a id="축전-발전-공급"></a>
 
-Generation produces power from fuel, hydro, sunlight, and the like. Plugging in charging modules and directly turning a generator differ from the supply system up. Charging modules store the power received from external generation equipment.
+Generating means making power from fuel, water or sunlight. Plugging in a battery and running a generator need different supply chains. A battery module stores power that came from somewhere else.
 
 <a id="지하-부품-경제"></a>
 
 ### The Three Recovered Parts
 
-A lost chassis is at once a threat of the underground and the most expensively traded technical resource of underground society. The parts secured by stripping a chassis divide into charging modules, drive modules, and sensor modules.
+Lost machines are a danger underground and also the most expensive technology traded there. What comes off a machine falls into three kinds: battery, drive and sensor modules.
 
-Charging modules: high-density cells, favored as buffers for stronghold power grids. Not perpetual generators making power themselves. They took the constraints of charging, aging, and supply source in full.
-Drive modules: drive units of hydraulic pistons and high-torque motors, used to restore stopped heavy plant or open and close giant gates. Under the right conditions they could also serve as actuators for ordinary equipment or traps.
-Sensor modules: composite optical sensor panels offering dark-sight and fine vibration detection. They traded at high prices among powers building watch facilities. Depending on conditions they could become detection equipment or the triggers of traps.
+High-density battery modules buffer a station's power. They still age, still need charging and still depend on a source. Drive modules of hydraulic pistons and high-torque motors bring stopped heavy plant back or open and close great gates. Under the right conditions they also become actuators for ordinary equipment or traps.
 
-Mechanics recovered and repaired surviving hoses, terminals, and lenses from stopped equipment.
+The compound optical panels of sensor modules give night sight and pick up small vibrations. Groups building watch posts trade them at high prices and sometimes use them as detectors or trap triggers. Drones and machine eyes use the same kinds of parts, which is why the market for them never cools.
 
 <a id="회수-반과-가문의-경합"></a>
 
@@ -120,18 +111,18 @@ Mechanics recovered and repaired surviving hoses, terminals, and lenses from sto
 <a id="회수-반과-가문의-경합-p1"></a>
 <a id="회수-반과-가문의-경합-list2"></a>
 
-The sealed galleries and maintenance-shed zones were the key contested ground eyed by the great operating houses and the professional relic recovery squads. The HC22 Magok Test-Line House, nursing the ambition to monopolize the original technology intact, first pushed a precision recovery team inside the sealed zone. The HC17 Guro Digital Complex Battery House, raising the pretext of securing the underground supply routes, swiftly disabled the chassis of the main sealed corridors and tried to occupy the sections. The HP01 Yeongdeungpo Sluice House took the strategy of secretly supplying recovered cells and sensor modules to underground auction houses and reaping great economic gain.
+The sealed galleries and workshop zones are contested by the operating houses and by salvage crews. HC22, the Magok test-line house, sends precise recovery teams in first to keep the original technology to itself. HC17, the Guro Digital Complex cell house, moves fast to disable machines in the main sealed passages and hold the sections, in the name of safe supply routes. HP01, the Yeongdeungpo sluice house, quietly sells recovered cells and sensor modules to underground auctions.
 
 <a id="프로토콜-접속과-카드"></a>
 
-Machine control boards have wired and wireless protocol connection standards, and negotiation windows and protocol cards are used. A protocol card does not control every chassis.
+Machine control panels follow wired and wireless protocol standards, and negotiation windows and protocol cards are used with them. A protocol card doesn't control every machine.
 
 <a id="회수-반과-가문의-경합-p3"></a>
 <a id="m040-몬스터-배치의-현장-적용-p1"></a>
 <a id="m040-몬스터-배치의-현장-적용-list2"></a>
 <a id="m040-몬스터-배치의-현장-적용"></a>
 
-These armed recovery squads competed in performance by occupying restart triggers ahead of others to capture intact chassis, or disabling them on the spot to strip the core modules. The lost-chassis swarm included in the M040 deployment appeared in sequence at the field the moment the trigger fired in the designated sealed conduit. G25 Lantern Ant chassis spread a broad front along the corridor's forward side, minutely detecting intruder responses. G26 Iron Dinosaur chassis heavily blocked the stronghold crossings, physically repelling mid-range approach.
+Armed salvage crews race to take restart trigger points first and capture whole machines. Sometimes they disable a machine on the spot and strip its main modules. In some sealed ducts the swarms appear one after another the moment a trigger point fires. G25 Lantern Ants spread a wide search line at the front of a passage and pick up the smallest response from an intruder. G26 Iron Dinosaurs block junctions and push back anyone who comes close.
 
 <a id="연결"></a>
 <a id="출처"></a>
@@ -141,105 +132,99 @@ These armed recovery squads competed in performance by occupying restart trigger
 <a id="연결-list1"></a>
 <a id="출처-list1"></a>
 
-- [The hostile ecology compendium](/wiki/Hostile-Ecology-Index/)
-- [The Seoul ecology and variant codex](/wiki/Hostile-Ecology-Index/)
-- [The operating houses](/wiki/Operating-Houses/)
-- [The three factions of Seoul](/wiki/Sixteen-States/)
-- [The arms and technology of this era](/wiki/Era-Arms-and-Tech-Level/)
-- [The Scenario Timeline](/wiki/Scenario-Timeline/)
-- [Horizon Forbidden West](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
+- [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/)
+- [Operating Organizations](/wiki/Operating-Houses/)
+- [The Three Factions of Seoul](/wiki/Sixteen-States/)
+- [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
+- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/)
+- [Scenario Timeline](/wiki/Scenario-Timeline/)
 
-## Improvisation Tech and the Keeping of Old Machines
+## Improvisation and the Keeping of Old Machines
 
-A. Keeping the wreckage and improvisation technology
+### Tending the Wreckage
 
-In later Seoul an old lost tech did not become a relic merely because years had passed. People gathered around the old facilities that had done their work and tended them together. Improvisation tech showed its face only within this frame of tending the machines. The axes added atop it were three: tending the machines, circulation practices, and the keeping of old-world symbols. The chief things tended were rolling stock, old substations, severed announcements, faded station marks, and old currency.
+People gather around old facilities that have done their work and tend them together. Improvised technology grows inside that tending. It has three strands: tending the machines, keeping the old ways of exchange, and keeping the symbols of the old world. What people tend most is rolling stock, old substations, silent announcement systems, faded station signs and old money.
 
-B. Struggles among successor polities
+### Districts and Stations
 
-The glory of the old state had now receded into legend. Over that vacancy the local successor polities fought fiercely over the old wreckage. Regional division sprouted first not in grand ideology but in gu and station and route units, and dynasties and vassal powers inherited in turn their jurisdiction.
+The old state survives only in stories. What people fight over is closer to hand: a district, a station, a line. Under the three factions, each station and district keeps its own rules about who looks after which relic, and those rules pass down with the work.
 
-C. Fixed roles of the two lines
+### The Roles of the Two Lines
 
-The skeleton of the two lost lines was not changed carelessly. The G25 Lantern Ant firmly remained the line charged with search, and the G26 Iron Dinosaur the line mending heavy plant. Whatever meaning people attached to them did not change those roles. Communities merely read the same chassis differently.
+The two lost lines keep their roles. G25 Lantern Ant is the line that searches. G26 Iron Dinosaur is the line that mends heavy plant. Whatever meaning people give them, the roles stay the same. Each community just reads the same machine differently.
 
 ### Tending the Machines
 
-A. Keeping the great chassis
+#### Guarding the Great Machines
 
-People kept the huge bodies of depots and substations as the centers of their communities. Even the act of stripping and recovering something was carried out by a set procedure, and the maintenance round meant no more than circling the dark maintenance shed with care. Raising a machine back to life was sometimes the great occasion on which a group split.
+People guard the great machines of the depots and substations as the centre of their community. Even taking a machine apart follows set steps. A maintenance round is a walk around the dark workshop. Restarting an old machine sometimes splits a community.
 
-B. Looking after the parts
+#### Caring for a Machine
 
-People look after old train bodies and bogies as their communities' implements. They also tend the hydraulic assemblies in workshops and the busbars in substations.
+People treat the bodies and old bogies of trains as things that belong to everyone. The hydraulic legs in the workshops and the busbars of the substations are cared for the same way.
 
-C. Two views of wheels and busbars
+#### Wheels and Light
 
-The practice divided into two views. One side held firmly that as long as the heavy wheels rolled, that route's life continued. The other held that only the stations where a faint light remained survived to the end.
+The practice splits two ways. One side holds that as long as the heavy wheels turn, life on the line goes on. The other holds that only the stations where a faint light still burns will last.
 
-### Circulation Practices
+### Ways of Exchange
 
-A. The use of old currency
+#### What Old Money Is For
 
-Circulation practices were the custom of gathering old currency and worn circulation relics that had lost their meaning at the strongholds. The exchange acts common before the collapse remained as custom. Card-tapping, coin-inserting, ration-distributing gestures, plain hand movements, now became set procedure.
+People keep old money and the leftovers of old trade in their strongholds even though it buys nothing. The gestures of exchange from before the collapse became custom: touching a card, putting in money, handing out goods.
 
-B. What is gathered
+#### What Is Kept
 
-Banknotes, rolling coins, and plastic transit cards were the most prized things. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just distribution of goods. The tap of a card at a gate was a request for passage. The HP01 house's auctioning of parts is read elsewhere as a breach of the order; within this lineage it passes as an accepted practice.
+Notes, coins and plastic transit cards are the most prized. Trade in batteries, drives and sensors, the core of the underground parts economy, is read here as part of a fair order. Touching a card at the ticket gate is a way of asking permission to pass. HP01's parts auctions look outside the rules elsewhere, but inside this practice they count as accepted custom.
 
-C. Two rules of value and passage
+#### Value and Passage
 
-The practice divided into two rules. One side held that the stamp fixed in the locked box set the value of things. The other held that the very instant of passing the breaker was the act that carried on a momentary life.
+The practice splits two ways. One side holds that the stamp sealing a locker sets the value of what's inside. The other holds that passing the barrier is itself the act of staying alive.
 
-### Keeping Old-World Symbols
+### Keeping the Old World's Symbols
 
-A. Traces of the voice
+#### Traces of the Announcements
 
-The people who keep old-world symbols hold station signs and interrupted announcements as things to be preserved.
+People who keep the symbols of the old world treat station signs and silent announcement speakers as things to protect.
 
-B. Echo and boundary
+#### Echo and Boundary
 
-The G25's sensor modules and protocol cards were the faint echoes that voice had left. If someone moved a station mark elsewhere, they held that the boundary itself moved whole to that place. To erase a mark wantonly was therefore held the same as erasing the place itself.
+To them, G25's sensor modules and protocol cards are echoes of the voice that used to speak. Moving a station sign moves the boundary of that place with it. Erasing a sign erases the place.
 
-C. Two territory standards
+#### Two Ways to Draw a Boundary
 
-The territory standards divided into two. One took even the places where letters faintly remained as intact boundaries. The other made the whole space where the voice gently rang one jurisdiction.
+There are two standards. One draws the boundary as far as the faded letters still show. The other claims the whole space the voice once filled.
 
-### The Rules by Which a Relic Became a Community's Center
+### When a Relic Becomes the Centre
 
-A. Five conditions
+#### Five Conditions
 
-A mass of scrap was not kept merely because time had long passed. One of the three axes (tending the machines, circulation practices, keeping old-world symbols) had to be clearly knotted into it, and the conditions below carefully met.
+A heap of old metal doesn't become a community's centre just because it's old. Its meaning has to tie clearly to one of the three strands, and it has to meet these conditions.
 
-1. It had to be Seoul material
-Rolling stock, a substation, an announcement, a station mark, or old currency, or at least bearing their traces. The lost line's modules became the center only when firmly attached to this core material.
-2. A living livelihood had to depend on its function
-Lighting that brightened the dark, the water supply, safe passage, and watch duty had to hang deep on that relic. Rules did not fall off an old notice board on the wall. They flowered hot in the concourse where people breathed and sweated, before the sluices, in the crowded unloading yards.
-3. Re-control had to be blocked
-With the servers cut and even the vault holding the drawings firmly shut, the remaining machines became mere masses of cipher with no way of interpretation. It was before this great wall of interpretation that a chassis became the center of its community.
-4. Survival in the same place had to repeat
-Only a community that had clung to one module and stubbornly survived three times or more took that mass of iron as its center. A single lucky chance remained merely a useful trading item.
-5. A place-power had to claim jurisdiction
-The successor polities split by route, gu, and station divided custody and upkeep manner and strict taboo each in their own way. Dynasties and the vassal powers following them inherited even the jurisdiction and hardened their power. The recovery squads stripping parts without restraint and the keepers defending the old relics to the end collided roughly inside these dark sealed galleries.
+1. It's made of Seoul. It's rolling stock, a substation, an announcement system, a station sign or old money, or at least carries their traces. A module from a lost line becomes a centre only when it's attached to one of these.
+2. Living work depends on it. Light, water, passage or watch duty has to rely on it. These rules come from the concourses, the sluice gates and the crowded docks where people work and breathe, not from notice boards.
+3. It can't be controlled again. When the servers are gone and the drawings are locked away, what's left is a code nobody can read. In front of that wall, the machine becomes the centre.
+4. Survival in the same place repeats. Only a community that has survived three or more times by relying on one module makes it the centre. One lucky escape leaves it a trade good.
+5. Someone with a claim on the place says it's theirs. The station holder, the district's ruling house or the city that holds the ground decides how it's kept and what's forbidden. Salvage crews who strip parts and keepers who protect relics meet in the sealed galleries.
 
-### Relic Interpretation by Lineage
+### Readings by Strand
 
-A. Three tiers
+#### Three Levels
 
-The customs were firmly stacked in three strata. At the top stood the great lineages of custom; beneath them sat the differing individual customs; at the very bottom waited concrete rules and exacting lessons. This endlessly splitting process of division was itself the unit that edited Seoul's rules anew.
+Custom has three levels. At the top is the strand. Under it are individual customs. At the bottom are the concrete rules and lessons. As customs split, Seoul's rules are rewritten one piece at a time.
 
-B. How the three lineages read
+#### How Each Strand Reads
 
-The machine-tending lineage read the old rolling stock, the substations, and even the G26's heavy drives together as one body of care. The circulation lineage accepted crumpled currency, gate passage, and even secret parts auctions as one order of distribution. The symbol-keeping lineage took the severed announcements, the faded station marks, and the sharp sensor signals of the G25 as a single line of voice the old world had left.
+The machine-tending strand reads old trains, substations and G26's heavy drives as one thing to look after. The exchange strand takes crumpled money, passing the gate and quiet parts auctions as one order of sharing. The symbol strand treats silent announcements, faded signs and G25's sensor signals as the voice the old world left behind.
 
-C. Different readings of the same module
+#### One Module, Different Readings
 
-The very same G25 charging module was the core of the substation equipment to one lineage, a costly trading good to another, and the box where the voice dwelt to a third. The same G26 hydraulic underbody was the joint bridging legs to one lineage and the device barring those who passed without right to another.
+A G25 battery module is the heart of the substation to one strand, an expensive trade good to another and a box where a voice lives to a third. A G26 hydraulic leg is a joint that links bridges to one strand and a barrier against reckless passers to another.
 
-D. Public and hidden customs
+#### Open and Hidden Custom
 
-The public custom showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden custom flipped the very same phrases into entirely different secret lessons. If one vassal house quietly overlaid the keeping of the substation equipment and the keeping of the station marks inside the same gallery, then though the object before the eyes was one, the jurisdiction governing it split in two.
+Open custom shows in the red warnings on station notice boards. Hidden custom reads the same words as a different lesson. When one house keeps both the substation and the station signs in the same gallery, the object is one, but the authority over it splits in two.
 
-E. Fixed number of lines
+#### The Same Parts, Different Uses
 
-The people of machine tending, circulation practice, and old-world symbol keeping use surviving machine parts in different ways.
+The people of the three strands use the same leftover machine parts for different customs.

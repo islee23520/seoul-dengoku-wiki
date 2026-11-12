@@ -1,73 +1,89 @@
 ---
-model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agent and applied by a script (docs/drafts/reports/w3-c-replace.mjs); not from a Gemini model
+title: The Structures Compendium
+title_ko: 구조물 총람
+model: claude-opus; rewritten by hand by the task 8 executor agent; 0 completion calls
+section_checkpoint: complete
 ---
 
-**A. How stations and tunnels are laid out**
+Seoul in 2126 isn't a flat map of districts. It's a web of stations, tunnels, depots and sluices. In 2026 people already crossed districts by subway, and the purification plants and depots were the heavy points of that web. On the night of [the Great Blackout](/wiki/World-Unbinding/), remote control stopped. Then the winter came and didn't leave. People went down into the stations, and only as many survived as the stations could hold. Stations became strongholds, tunnels became passages that need permission, and sluices became gates that open only under signature.
 
-The Seoul of the time was not a flat administrative map but a graph of stations, tunnels, and sluices. Even in 2026 people crossed gu by subway, and the treatment centers and depots sat as the heavy nodes of that graph. On the night of [The Great Blackout](/wiki/World-Unbinding/), when remote control died, stations became fortresses and faction strongholds, tunnels became licensed passage, and treatment plants and sluices became lock gates that opened only under signature. A century on, the three factions of 2126 read those points and lines as living spheres, and each duchy is called by its gu name.
+A century on, the three factions hold these points and lines as the places where they live. The Government holds the fourteen districts north of the river, the Free City the seven in the southwest, and the Arc the four in Gangnam. Each faction's holding goes by its district's name: the Government calls a district an Electorate held by a Senator, a Free City district is a Polis led by an Archon, and an Arc district is a Gate held by one of its clans.
 
-The [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed-name rows for 315 stations. [The Structure of the World Map](/wiki/World-Map-Construction/) records 25 gu and their assembly order; [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) records six layers. Building use is recorded in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
+The [Rail Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed station names for 315 stations. [The Structure of the World Map](/wiki/World-Map-Construction/) records the 25 districts and how they fit together, and the [World Map](/wiki/World-and-Subway-Layers/) records six layers. How buildings are reused is in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
 ## Stations
 
-**A. Station strongholds**
+### Station Strongholds
 
-A station brought people, facilities, and connections back into use. In a dong with a subway station, the station building was the core facility; distribution, passage tolls, lodging, and refuge were handled there. Schools, community centers, and hospitals supported it. After the March 14, 2053 agreement, the Yeouido houses managed eleven water facilities around Yeongdeungpo Station. From 2106, passes for Jongno and Junggu carried the Government Seoul Complex stamp from Gwanghwamun. Amsa Station administered water and escort protection from its platform. Sindorim was the bottleneck between Yeongdeungpo and Guro, while Suseo held a southern depot and contract administration. The parties and signatures of the 2053 agreement were recorded in [the oral records](/wiki/Oral-Stories/#the-2053-yeongdeungpo-water-agreement).
+A station is where people, plant and connections are kept running. In a neighbourhood with a subway station, the station is the core facility. Rations, tolls, lodging and refuge are handled there. Schools, community centres and hospitals above ground support it. North of the river, passes for Jongno and Jung-gu carry the stamp of the old government complex at Gwanghwamun. Amsa administers water and escort protection from its platform. Sindorim is the bottleneck between Yeongdeungpo and Guro, and Suseo has a southern depot and contract offices.
 
-A station has six layers: surface ruins, the concourse, platforms and tracks, transfer corridors, deep tunnels, and depot adjacency. Markets, homes, and offices occupy the concourse; people and freight move through the platforms; toll collectors hold the transfer corridors. The facilities adjoining each station are recorded in [Entering the Station Interior](/wiki/Station-Interior-Construction/). The terms by which a stronghold holds its territory are recorded in Strongholds and Territory.
+A station has six layers: surface ruins, the concourse, platforms and tracks, transfer passages, deep tunnels and the areas beside the depots. Markets, homes and offices fill the concourse. People and freight move along the platforms, and tolls are collected in the transfer passages. What each station holds inside is in [Entering the Station Interior](/wiki/Station-Interior-Construction/).
 
-In 2106, Jongno and Junggu passes and commercial contracts received a Government Seoul Complex stamp. A counterfeit medicine box appeared at a Seoul Station auction in 2124.
+### Heat and the Cold Above
+
+The surface belongs to the cold. Every station keeps its warmest rooms deep, where the earth holds heat, and that's where cells are charged, the sick are treated and the old sleep. Exits are kept few and narrow. Over the busiest ones, stations stretch nets and wire so that a diving drone tangles before it reaches anyone. Keeping those nets mended is ordinary work, like clearing snow.
 
 ## Tunnels
 
-**A. Track and repair status**
+### Track and Repair Status
 
-Between station and station lay lines that were never erased. Only the states changed — normal, hazardous, controlled, blockaded, flooded, collapsed, provisional repair — and cause and repair conditions followed. Yeongdeungpo–Sindorim and Sindorim–Guro were adjacencies the current map already knew, and no line skipped Yeongdeungpo–Guro in one cell. The full catalog's adjacencies went up as design data as 435 drawn from map points.
+The lines between stations are kept. Only their state changes: open, hazardous, controlled, blockaded, flooded, collapsed or under temporary repair, each with a cause and a condition for reopening. Yeongdeungpo to Sindorim and Sindorim to Guro are adjacent on the map, and no line jumps straight from Yeongdeungpo to Guro. The full catalog lists 435 adjacencies drawn from map points.
 
-A transfer station cut from power stopped the traction freight flow even with both tunnels sound. Provisional repair passed only foot and light freight; heavy freight and armed passage took separate approval. The deeps were the seat of covert movement and maintenance, but flooding and communications loss came first. The formulas of throughput, isolation, and overreach were locked in Logistics and Infrastructure.
+When a transfer station loses power, electric freight stops even if both tunnels are sound. Under temporary repair, only people on foot and light freight pass, and heavy freight and armed parties need separate approval. The deep tunnels have room for hidden movement and maintenance, but they flood and lose contact.
 
-Since 2026, machines have repeated their last search and guard routines on surviving tracks, while rat colonies nest in cable trays beneath the transfer shops. Machines working or moving beside people are recorded in [People and Machines](/wiki/People-and-Machines/). The tracks retain their 2026 connections.
+Machines have repeated their last search and watch routines on the surviving track since 2026, and rat colonies nest in the cable trays under the transfer arcades. Machines that work or move beside people are described in [People and Machines](/wiki/People-and-Machines/).
 
 ## Depots
 
-**A. The eight depots**
+### The Eight Depots
 
-Depot area reflects the rolling-stock storage and maintenance scale of 2026. Eight depots lie within Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo. Each depot belongs to the duchy of the gu it stands in. Jichuk, Dobong, Moran, and Gimpo lie outside the Seoul slots.
+Depot size reflects the storage and maintenance of 2026. Eight depots lie inside Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae and Suseo. Each belongs to the district holding it stands in. Jichuk, Dobong, Moran and Gimpo lie outside Seoul's boundaries.
 
-A depot was the seat of repair, bulk storage, and siege. Sinjeong's unloading and Godeok's train maintenance became a faction's arms of legitimacy because the hands that moved a stopped train again or sent a convoy were there; Changdong's wheels and brakes lost their owner and remained only as leases in neighboring heads' ledgers. The drainage ponds became the water surface where tank aquaculture and migratory birds overlapped, and in the deep bays of maintenance sheds looping chassis are sealed. The charging terminals and hydraulic hoses were the repair layer of [Lost Technology](/wiki/Lost-Technology-Lineage/).
+| Depot | District | Faction |
+|---|---|---|
+| Sinjeong | Yangcheon-gu | Free City |
+| Cheonwang | Guro-gu | Free City |
+| Banghwa | Gangseo-gu | Free City |
+| Gunja | Seongdong-gu | Government |
+| Changdong | Dobong-gu | Government |
+| Sinnae | Jungnang-gu | Government |
+| Godeok | Gangdong-gu | Arc |
+| Suseo | Gangnam-gu | Arc |
 
-The industrial blocks of Guro and Geumcheon clung to the depots and used schools for drying parts, and the residential shells of Dobong and Nowon could not hold water without Changdong.
+Depots are used for repair, bulk storage and siege. Sinjeong's unloading crews move stopped trains again, and Godeok's maintenance crews send out convoys. Changdong's wheels and brakes are leased out in neighbouring ledgers. Fish tanks and migrating birds share the drainage ponds. Repeating machines are sealed in the deep bays of the workshops. What can be done with charging terminals and hydraulic hoses is in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+
+Depots also hold most of what's left for modern arms: fuel stores, workbenches for vehicles and the space to keep drones warm. That makes them worth fighting over. The industrial blocks of Guro and Geumcheon use schools beside the depots as drying rooms for parts. The housing blocks of Dobong and Nowon can't keep water if Changdong's supply fails.
 
 ## Treatment Plants and Sluices
 
-**A. Water plants and their watches**
+### Water Plants and Their Watches
 
-Right after the Great Blackout, Yeongdeungpo waterworks officer Han Jeonghun operated valves manually after remote control failed. Under the March 14, 2053 agreement, Yeouido families took management of eleven water facilities near Yeongdeungpo Station. The waterworks staff moved their base to Yangpyeong Station underground on March 20.
+Right after the Great Blackout, Han Jeong-hun, the duty head at the Yeongdeungpo purification centre, lost remote control and turned the valves by hand. His staff later moved their base to the store beneath Yangpyeong station. By most accounts, the first winter's trade of water for generator parts started there, and stations still tell it as [Water for Parts](/wiki/Oral-Stories/#2026년-물과-부품-거래).
 
-On November 6, 2026, Han Jeonghun received two emergency-generator parts and agreed to open the water-pipe valve toward Yeouido every day. The transaction was recorded in [the oral records](/wiki/Oral-Stories/#the-2026-water-and-parts-exchange). Representatives of both sides also signed the March 14, 2053 transfer of water-facility management rights.
-
-The first floors north and south of the Han, and the tributaries Jungnang, Anyang, Tan, Cheonggye, and Hongje, decided which dongs got wet. Yeouido, Ichon, Banpo, Jamsil, Mangwon, Hapjeong, Amsa, Guui, and Jayang were read as main-channel waterfront. Habitation pushed above the third floor and the ration windows sat inside the embankment. The details of the waterfront rules were already written by [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
+Ground floors on both sides of the Han, and along the Jungnangcheon, Anyangcheon, Tancheon, Cheonggyecheon and Hongjecheon, decide which neighbourhoods flood. Yeouido, Ichon, Banpo, Jamsil, Mangwon, Hapjeong, Amsa, Guui and Jayang sit on the main river. People live above the third floor and keep ration windows inside the embankment. The waterfront rules are in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
 ## Passages
 
-**A. Transfers and evacuation**
+### Transfers and Evacuation
 
-Passages were the narrow lines where transfer, maintenance, and refuge overlapped. The transfer corridors were the hubs of politics and logistics between lines, and blockades, transit tolls, and congestion came first. The junctions where the Gangdong and Amsa ration corridors met the Eunpyeong and Seongbuk evacuation stairs became the warm nests of the rat colonies, and the Sindorim junction split the main freight door from the maintenance passage that took only people and packloads, using siege as its stage. This junction is not among the catalog's 334 observed-name rows. The Sindorim incident's location is recorded in [the Scenario Timeline](/wiki/Scenario-Timeline/).
+Passages are where transfer, maintenance and refuge overlap. Blockades, tolls and crowding happen first in the transfer passages. Where the Gangdong and Amsa ration passages meet the Eunpyeong and Seongbuk shelter stairs, rat colonies keep warm nests. At Sindorim the junction splits into the main freight door and a maintenance passage for people and packs only. That junction isn't one of the 334 observed names in the catalog. Where the Sindorim events happen is in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
-The vertical connections were stairs, elevators, and ventilation shafts. Flooded floors showed cause and repair conditions and kept people out — that was the design. The Bukhansan Bogukmun mountain refuge roads, the Jegi-dong herb unloading, and the lower passages under the Noryangjin elevated joined the same graph from outside the stations. Connections were never deleted. Their states changed, and those states changed the times of rice, medicine, and convoys.
+Vertical links are stairs, lifts and ventilation shafts. Flooded floors are marked with a cause and a condition for repair, and they're closed by design. The mountain refuge paths at Bukhansan Bogukmun, the herb docks at Jegi-dong and the low passages under the Noryangjin overpass join the same web from outside the stations. No connection is erased. When a state changes, the time it takes food, medicine and escorts to arrive changes with it.
 
-Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are facilities around station hubs. Garak handles price discovery rather than production. Noryangjin relies on refrigeration and ice credit, so it cannot keep goods frozen when power fails. Convenience stores and clinics remain trades around the stations.
+Garak, Gangseo, the grain market and the Noryangjin fish market sit around station strongholds. Garak is where prices are set, not where food is grown. Noryangjin depends on cold storage and ice credit, so it can't keep anything frozen when the power fails. Corner shops and clinics survive as trades around the stations.
 
-| Structure | 2026 starting point | Work at the opening | Details |
+| Structure | Starting point in 2026 | Work at the opening | Details |
 |---|---|---|---|
-| Station | The 315 stations, concourses and platforms | Fortress, ration windows, faction strongholds | [the Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
-| Tunnel | Adjacent lines drawn from map points, transfers | Licensed passage, the states of flooding and blockade | [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) |
-| Depot | Sinjeong·Cheonwang·Banghwa·Gunja·Godeok·Changdong·Sinnae·Suseo | Repair, rolling stock, wheels and convoys | [The Structure of the World Map](/wiki/World-Map-Construction/) |
-| Treatment plant · sluice | Yeongdeungpo·Ttukseom·Guui·Amsa Arisu | Water signatures, lock-gate watches | [the Three Factions of Seoul](/wiki/Sixteen-States/) |
-| Passage | Transfers, maintenance corridors, refuge stairs | Transit tolls, leftovers and heat, detours | Logistics and Infrastructure |
+| Station | 315 stations, concourses and platforms | Stronghold, ration window, faction seat | [Rail Station Catalog](/wiki/Seoul-Station-Catalog/) |
+| Tunnel | Adjacent track drawn from map points, transfers | Passage by permission, flooding and blockade | [World Map](/wiki/World-and-Subway-Layers/) |
+| Depot | Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, Suseo | Repair, storage, wheels, convoys, fuel and drones | [The Structure of the World Map](/wiki/World-Map-Construction/) |
+| Plant and sluice | Yeongdeungpo, Ttukseom, Guui and Amsa water plants | Water signatures, gate watches | [The Three Factions of Seoul](/wiki/Sixteen-States/) |
+| Passage | Transfers, maintenance passages, refuge stairs | Tolls, leftovers and heat, detours | [Entering the Station Interior](/wiki/Station-Interior-Construction/) |
 
-## Sources
+## Related Pages
 
 - [Ailments and Symptoms](/wiki/Ailments/)
 - [Food Culture](/wiki/Food-Culture/)
 - [The Stories](/wiki/Oral-Stories/)
+- [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
+- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/)
