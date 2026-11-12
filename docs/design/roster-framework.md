@@ -64,7 +64,7 @@
 
 | 범주 | `squad_size` 띠 | 세는 대상 | TW:WH 기준 |
 |---|---|---|---|
-| `commander` | 6-16 | 호위 병사. 영웅 본인은 세지 않는다 | 해당 없음. TW 군주는 한 덩어리 1이고 호위 분대가 없다([verify-task-6](../../.omo/evidence/w2v/verify-task-6.md)) |
+| `commander` | 6-16 | 호위 병사. 영웅 본인은 세지 않는다 | 해당 없음. TW 군주는 한 덩어리 1이고 호위 분대가 없다([표본 M](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=679&prop=text&format=json), 한 덩어리 1) |
 | `infantry` | 20-80 | 병사 | 20~180. [표본 A](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=645&prop=text&format=json) 30/60/90/120 ([조사 B 4.3절](../research/w2v-life-economy-rosters.md) A행) |
 | `missile` | 12-48 | 사수 | 23~90. [표본 B](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5357&prop=text&format=json) 23/45/68/90 (B행). 화기반 7~32 |
 | `fast` | 8-24 | 탑승자 또는 스키병 | 기병 8~60. [표본 E](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=656&prop=text&format=json) 15/30/45/60 (E행) |
@@ -144,7 +144,7 @@
 | 2 | 50-70 | 2등급 50~70(B·C행, [표본 H](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=651&prop=text&format=json) 50) |
 | 3 | 60-80 | 3등급 보병·기병 75(D·E행, [표본 E](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=656&prop=text&format=json) 75) |
 | 4 | 75-90 | 정예 보병 80~90([표본 N](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=10066&prop=text&format=json) 80, [표본 Q](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5328&prop=text&format=json) 85) |
-| 5 | 70-100 | 최고 정예와 영웅 70~100([verify-task-6](../../.omo/evidence/w2v/verify-task-6.md) 보정표. 이 등급 귀속은 추정이다) |
+| 5 | 70-100 | 최고 정예와 영웅 70~100([표본 M](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=679&prop=text&format=json) 100, [표본 P](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5341&prop=text&format=json) 85. 이 등급 귀속은 추정이다) |
 
 `war-machine` 범주와 `artillery` 역할은 어느 등급이든 100을 쓸 수 있다. TW:WH의 포와 장갑 차량이 100이기 때문이다(F·G행, [표본 G](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=668&prop=text&format=json) 100). 드론과 전쟁 기계의 리더십은 조종수와 조원의 사기다. 그 밖의 병종은 등급 띠를 지키고, 100은 5등급만 쓴다.
 
@@ -236,7 +236,7 @@
 | 건물 1단계 | 비용 750, 1 유지 간격 | 1단계 750 금화, 1턴([건물 표](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=7429&prop=wikitext&format=json), [조사 B 4.5절](../research/w2v-life-economy-rosters.md)) |
 | 건물 2단계 | 비용 1500, 2 유지 간격 | 2단계 1,500, 2턴 |
 | 건물 3단계 | 비용 2500, 3 유지 간격 | 3단계 2,500, 3턴 |
-| 건물 4단계 | 비용 4000-8000, 4-5 유지 간격 | 병영 계열 표본은 3단계까지이고, 모집 건물 4단계 체인 표본이 있다: 1,500/2,500/4,000/8,000 금화, 2/3/4/5턴([건물 표](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=7429&prop=wikitext&format=json)). 아래 끝 4000/4는 그 체인의 3단계 값이고 위 끝 8000/5는 4단계 값이다. 어느 값을 쓸지는 건물 표가 정한다[틀] |
+| 건물 4단계 | 비용 8000, 5 유지 간격 | 모집 건물 4단계 체인의 4단계: 8,000 금화, 5턴([건물 표](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=7429&prop=wikitext&format=json)) |
 
 - 한 지휘관이 3개를 넘게 주문하면 넘는 분대는 다음 유지 간격으로 밀린다.
 - 건물 비용은 병종 `cost`와 같은 단위를 쓴다(P13).
@@ -462,7 +462,7 @@
 - 근접 교전에 들어간 분대는 그 교전이 끝날 때까지 새 명령을 받지 않는다(GDD).
 - 후퇴는 분대 명령이 아니라 전투 전체 명령이다(GDD).
 - **명령 거리 제한은 없다.** 지휘관은 전장 어디에 있든 모든 분대에 즉시 명령한다. GDD SP-1.0.0 "본체가 전투 지휘관이면 지휘에 배속된 모든 전투맵 분대를 직접 조정·명령한다"와 같다.
-- **존재 반경은 있다.** [틀][대기] 지휘관 호위 분대 반경 50m 안의 아군 분대는 사기 보너스를 받는다. 기본값은 +8이다. 이것은 명령 거리가 아니라 사기 효과의 거리다. TW:WH 군주의 사기 효과는 있지만 반경과 값이 공개되지 않았다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5584&prop=wikitext&format=json), [verify-task-6](../../.omo/evidence/w2v/verify-task-6.md)). 그래서 50m와 +8은 TW 숫자 없이 [대기]다.
+- **존재 반경은 있다.** [틀][대기] 지휘관 호위 분대 반경 50m 안의 아군 분대는 사기 보너스를 받는다. 기본값은 +8이다. 이것은 명령 거리가 아니라 사기 효과의 거리다. TW:WH 군주의 사기 효과는 있지만 반경과 값이 공개되지 않았다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5584&prop=wikitext&format=json)). 그래서 50m와 +8은 TW 숫자 없이 [대기]다.
 
 ### 10.4 사기와 패주
 
@@ -784,7 +784,7 @@ GDD 아트 방향을 따른다.
 | P8 | 임하준(펌프기술)과 아크 기술 병종 | Q22 | 특정 인물을 병종에 묶지 않는다 |
 | P9 | 류은비 "의료단"과 정부 의무 체인 | Q27 | 정부 의무 체인 이름을 "장부 의무소", "장부 야전 병원"으로 두고 의료단과 묶지 않는다 |
 | P10 | 군대 분대 상한 20칸 | D3, 2026-11-12 소유자 지시, GDD `hero-squads-and-time-based-movement`의 "고정 상한 없음"과 부딪힌다 | 20칸(지휘관 호위 포함, 배속 영웅 1칸씩). 숫자는 소유자 지시대로 TW:WH 군대 1~20유닛([Armies](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5578&prop=wikitext&format=json))에서 왔다. 남은 것은 GDD와의 충돌뿐이며, 19번 과제가 GDD 수정 제안을 함께 낸다 |
-| P11 | 흔들림 문턱, 존재 반경과 값, 지휘관 사망 충격, 도주 전파, 군대 붕괴 문턱, 결투 결과 사기, 호명 반경, `iron-dread` 값 | GDD가 수치를 미정으로 둔다. TW:WH도 이 숫자를 공개하지 않는다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5584&prop=wikitext&format=json), [Encourage](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=38158&prop=wikitext&format=json), [verify-task-6](../../.omo/evidence/w2v/verify-task-6.md)) | 10.3~10.6절과 7절의 값. TW 출처가 없으므로 [대기]로 둔다. 흩어짐(네 번째 붕괴)과 호명 +4는 TW 값을 따랐으므로 이 목록에서 뺐다 |
+| P11 | 흔들림 문턱, 존재 반경과 값, 지휘관 사망 충격, 도주 전파, 군대 붕괴 문턱, 결투 결과 사기, 호명 반경, `iron-dread` 값 | GDD가 수치를 미정으로 둔다. TW:WH도 이 숫자를 공개하지 않는다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5584&prop=wikitext&format=json), [Encourage](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=38158&prop=wikitext&format=json)) | 10.3~10.6절과 7절의 값. TW 출처가 없으므로 [대기]로 둔다. 흩어짐(네 번째 붕괴)과 호명 +4는 TW 값을 따랐으므로 이 목록에서 뺐다 |
 | P12 | 배속 영웅의 지휘 승계 | 이전 기본값(영웅이 지휘를 맡음)은 TW:WH와 맞지 않아 없앴다 | 승계하지 않는다. 지휘는 GDD 임시 분대장이 맡고 배속 영웅은 자기 +4만 유지한다(10.5절 4번). 이 항목은 이제 [틀]이며, 소유자가 다른 규칙을 원할 때만 다시 연다 |
 | P13 | 비용 단위와 유지 간격 이름 | 조사 B 6절(화폐 단위 제안) | 이름 없는 "비용" 숫자. 간격은 18·19번 과제가 정한다 |
 | P14 | 공작령 본역 | 바이블에 없음 | 구 안에서 `degree`가 가장 큰 역, 같으면 `sort`가 작은 역 |

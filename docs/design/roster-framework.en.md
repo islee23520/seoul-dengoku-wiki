@@ -64,7 +64,7 @@ Scarcity and population collapse make squads smaller than TW:WH's large unit-siz
 
 | Category | `squad_size` band | Counts | TW:WH reference |
 |---|---|---|---|
-| `commander` | 6-16 | Escort soldiers. The hero is not counted | n/a. A TW lord is a single entity with no escort squad ([verify-task-6](../../.omo/evidence/w2v/verify-task-6.md)) |
+| `commander` | 6-16 | Escort soldiers. The hero is not counted | n/a. A TW lord is a single entity with no escort squad ([Sample M](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=679&prop=text&format=json), unit size 1) |
 | `infantry` | 20-80 | Soldiers | 20-180. [Sample A](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=645&prop=text&format=json) 30/60/90/120 ([research B 4.3](../research/w2v-life-economy-rosters.md) row A) |
 | `missile` | 12-48 | Shooters | 23-90. [Sample B](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5357&prop=text&format=json) 23/45/68/90 (row B). Weapon teams 7-32 |
 | `fast` | 8-24 | Riders or skiers | Cavalry 8-60. [Sample E](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=656&prop=text&format=json) 15/30/45/60 (row E) |
@@ -144,7 +144,7 @@ Use one of these `role` values that fits the category. The task 5 role icons rea
 | 2 | 50-70 | Tier 2 50-70 (rows B and C, [Sample H](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=651&prop=text&format=json) 50) |
 | 3 | 60-80 | Tier 3 infantry and cavalry 75 (rows D and E, [Sample E](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=656&prop=text&format=json) 75) |
 | 4 | 75-90 | Elite infantry 80-90 ([Sample N](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=10066&prop=text&format=json) 80, [Sample Q](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5328&prop=text&format=json) 85) |
-| 5 | 70-100 | Top elites and heroes 70-100 ([verify-task-6](../../.omo/evidence/w2v/verify-task-6.md) calibration table; this tier attribution is inferred) |
+| 5 | 70-100 | Top elites and heroes 70-100 ([Sample M](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=679&prop=text&format=json) 100, [Sample P](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5341&prop=text&format=json) 85; this tier attribution is inferred) |
 
 The `war-machine` category and the `artillery` role may use 100 at any tier, because TW:WH artillery and armoured vehicles have 100 (rows F and G, [Sample G](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=668&prop=text&format=json) 100). Drone and war-machine leadership is the morale of the operators and crew. All other units keep their tier band, and only tier 5 uses 100.
 
@@ -236,7 +236,7 @@ Basis: the Arc is the four Gangnam districts (2.3 [approved]), ruled by houses (
 | Building stage 1 | Cost 750, 1 upkeep interval | Stage 1 750 gold, 1 turn ([building table](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=7429&prop=wikitext&format=json), [research B 4.5](../research/w2v-life-economy-rosters.md)) |
 | Building stage 2 | Cost 1500, 2 upkeep intervals | Stage 2 1,500, 2 turns |
 | Building stage 3 | Cost 2500, 3 upkeep intervals | Stage 3 2,500, 3 turns |
-| Building stage 4 | Cost 4000-8000, 4-5 upkeep intervals | The barracks-type sample stops at stage 3, and a recruit-building chain sample has a stage 4: 1,500/2,500/4,000/8,000 gold over 2/3/4/5 turns ([building table](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=7429&prop=wikitext&format=json)). The lower end 4000/4 is that chain's stage 3 and the upper end 8000/5 is its stage 4. The building table picks which value applies [frame] |
+| Building stage 4 | Cost 8000, 5 upkeep intervals | Stage 4 of the 4-stage recruit-building chain: 8,000 gold, 5 turns ([building table](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=7429&prop=wikitext&format=json)) |
 
 - If one commander orders more than 3, the extra squads move to the next upkeep interval.
 - Building costs use the same unit as a unit's `cost` (P13).
@@ -462,7 +462,7 @@ Target roster size is 18-26 units per faction. The "category counts" below are t
 - A squad in melee takes no new orders until that melee ends (GDD).
 - Retreat is an order to the whole battle, not to a squad (GDD).
 - **No command range.** The commander orders every squad instantly wherever it is on the field. This matches GDD SP-1.0.0: a player who is the battle commander directly controls every battle-map squad attached to the command.
-- **There is a presence radius.** [frame][pending] Friendly squads within 50 m of the commander's escort squad gain a morale bonus, default +8. This is a morale effect range, not an order range. TW:WH lords have a morale aura, but its radius and value are not published ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5584&prop=wikitext&format=json), [verify-task-6](../../.omo/evidence/w2v/verify-task-6.md)), so 50 m and +8 have no TW number and stay [pending].
+- **There is a presence radius.** [frame][pending] Friendly squads within 50 m of the commander's escort squad gain a morale bonus, default +8. This is a morale effect range, not an order range. TW:WH lords have a morale aura, but its radius and value are not published ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5584&prop=wikitext&format=json)), so 50 m and +8 have no TW number and stay [pending].
 
 ### 10.4 Morale and rout
 
@@ -784,7 +784,7 @@ These items have no owner answer and use provisional defaults. A default is not 
 | P8 | Im Ha-jun (pump technology) and Arc technical units | Q22 | No unit is tied to a specific person |
 | P9 | Ryu Eun-bi's "medical corps" and the Government medical chain | Q27 | The chain is named Ledger Aid Post / Ledger Field Hospital and is not tied to the medical corps |
 | P10 | 20-slot army limit | D3 and the 2026-11-12 owner instruction, against the GDD `hero-squads-and-time-based-movement` rule of no fixed cap | 20 slots (commander escort included, one slot per attached hero). The number comes from the TW:WH army of 1-20 units ([Armies](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5578&prop=wikitext&format=json)) per the owner instruction. Only the GDD conflict remains; task 19 also proposes the GDD amendment |
-| P11 | Wavering threshold, presence radius and value, commander death shock, flight spread, army collapse threshold, duel result morale, roll-call radius, `iron-dread` value | The GDD leaves the numbers open. TW:WH does not publish these numbers either ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5584&prop=wikitext&format=json), [Encourage](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=38158&prop=wikitext&format=json), [verify-task-6](../../.omo/evidence/w2v/verify-task-6.md)) | The values in sections 10.3-10.6 and 7. No TW source exists, so they stay [pending]. Shattering (fourth break) and roll-call +4 follow TW values and are no longer on this list |
+| P11 | Wavering threshold, presence radius and value, commander death shock, flight spread, army collapse threshold, duel result morale, roll-call radius, `iron-dread` value | The GDD leaves the numbers open. TW:WH does not publish these numbers either ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5584&prop=wikitext&format=json), [Encourage](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=38158&prop=wikitext&format=json)) | The values in sections 10.3-10.6 and 7. No TW source exists, so they stay [pending]. Shattering (fourth break) and roll-call +4 follow TW values and are no longer on this list |
 | P12 | An attached hero taking over command | The old default (the hero takes command) did not match TW:WH and was removed | No takeover. The GDD temporary squad leader commands and the attached hero keeps only its own +4 (section 10.5 step 4). This is now [frame] and reopens only if the owner wants another rule |
 | P13 | Cost unit and upkeep interval names | Research B section 6 (currency proposals) | An unnamed "cost" number. Tasks 18 and 19 set the interval |
 | P14 | Duchy seat station | Not in the bible | The highest-`degree` station in the district, ties to the lower `sort` |
