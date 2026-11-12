@@ -5455,7 +5455,7 @@ The first phantom hour was recorded in the underground turning lane of Achasan.
 
 Three empty cars came close to colliding over the same slot ID, and the loop stabilized when the token controller put one of them to sleep.
 
-As the leftover simulation copy of the Geondae-ipgu transfer joined, the dispatch intervals grew tighter.
+As the leftover simulation copy of the Konkuk Univ. transfer joined, the dispatch intervals grew tighter.
 
 The cluster considered itself unfinished dispatch and did not report its no-passenger errors as faults.
 
@@ -27751,7 +27751,7 @@ The empty turnback and the charging queue are the base, and from the Hour-Token 
 
 | Item | Record |
 |---|---|
-| Origin | These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter. / After the collapse, the transfer-slot server of the Achasan Gate and the dispatch remnants of the Geondae Koryo-saram corridor reconnected on partial power alone. / The passenger-verification module and fare settlement were dead, and only the timetable-token circulation and the empty-car turnaround logic remained. / Empty car bodies and tow trolleys ran the same loop every dawn to work off the phantom slots. / When anomalous freight-car weight signals from the Duman River Far East Theater mixed into the token weightings, the long-distance empty runs stretched as far as the northeastern corridor. / The first sighting survived in the double-signature log of HC14 Yeouido Ledger House and the charging-bay notes of H14 Oserim. / The first phantom hour was recorded in the underground turning lane of Achasan. / Three empty cars came close to colliding over the same slot ID, and the loop stabilized when the token controller put one of them to sleep. / As the leftover simulation copy of the Geondae-ipgu transfer joined, the dispatch intervals grew tighter. / The cluster considered itself unfinished dispatch and did not report its no-passenger errors as faults. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, but the cold never lifted. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
+| Origin | These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter. / After the collapse, the transfer-slot server of the Achasan Gate and the dispatch remnants of the Geondae Koryo-saram corridor reconnected on partial power alone. / The passenger-verification module and fare settlement were dead, and only the timetable-token circulation and the empty-car turnaround logic remained. / Empty car bodies and tow trolleys ran the same loop every dawn to work off the phantom slots. / When anomalous freight-car weight signals from the Duman River Far East Theater mixed into the token weightings, the long-distance empty runs stretched as far as the northeastern corridor. / The first sighting survived in the double-signature log of HC14 Yeouido Ledger House and the charging-bay notes of H14 Oserim. / The first phantom hour was recorded in the underground turning lane of Achasan. / Three empty cars came close to colliding over the same slot ID, and the loop stabilized when the token controller put one of them to sleep. / As the leftover simulation copy of the Konkuk Univ. transfer joined, the dispatch intervals grew tighter. / The cluster considered itself unfinished dispatch and did not report its no-passenger errors as faults. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, but the cold never lifted. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
 | Habitat and movement | The core habitat is the empty-car queue, the underground turning lane, and the row of docking pads at the transfer slots of Achasan and Guui on the Seongbuk Line. / It sits on the Jayang and Konkuk Korean-diaspora corridor of arc 5, and at every power-recovery cycle it moves to the sensor row of the Konkuk University entrance transfer and under the charging canopy. / When an abnormal-weight signal toward XT04 and a winter lubrication-shortage signal arrive, the long empty-car loop grows longer. / By day it shrinks against the charging bay, and in the twenty minutes before and after the dispatch hour the cluster density peaks. / It does not recognize new route paint or temporary signs, and follows only the pre-collapse slot IDs stubbornly. / When the flood ramp rises it gives up the underground turning lane and gathers only at the surface detour slots. |
 | Food and energy | Energy depends on the stop charging pads, regenerative braking, the residual inverter of the Magok test hall, and small onboard storage. / The parts are tires and wheel flanges, stop docking pins, schedule-token storage modules, lidar dummy sensors, and door actuators. / Cooling shares the battery-pack air cooling and an intermittent water-cooling loop. / Scrap is replenished only from broken body panels and wheel houses. / It competes with the double-signature recovery team of HC14, the Yeouido Ledger House, over the charging pads, the token ledger, and the sealing key. / The daily running distance forces a turnback at the 25 percent storage floor. / Unlimited long-range wandering, instant recharging, and citywide optimal dispatch are impossible. / When the token storage module fills, it stops occupying new slots on its own. / The charging pads are divided by a physical breaker into the citizens'' share and the cluster''s share. / The cluster holds no command to connect to the citizens'' share circuit. / Tire-wear dust is the main cause of docking-pin failure, and spare pins come only from broken bodies. / The long empty-car loop folds by force before the storage floor. / When the token module''s capacity fills, it repeats only the turnback instead of new occupation. |
 | Life cycle and upkeep | The life runs in the order emergence, spread, stagnation, negotiable, and dissolution, and emergence begins with the resumption of the token cycle and the restoration of pad power. / Spread is the bringing of adjacent slots and empty-car queues onto the same timetable. / Stagnation comes from a saturated charging queue, tire wear, and token collisions. / In the negotiable stage the slot table and the signature window open to humans. / Dissolution ends with token disposal, pad sealing, and the fixing of the turnback ramp. / Individuals multiply only at the level of bringing abandoned bodies onto slots, and there is no new chassis production line. / Maintenance is limited to self-diagnosis during charging and to panels opened by humans. / Memory breaks by dispatch shift, and it does not keep long-term route learning. / Custody and legal liability belong first to the HC14 ledger signature. / An empty car whose storage falls below 25 percent stagnates on the nearest turnback ramp, and returns to the next hour slot only when the HC14 ledger''s double signature comes in. |
@@ -28829,7 +28829,7 @@ When the bell rang twice, an empty car pulled off its charging pad and took the 
 
 The Empty Cart was an ecology of empty cars that consumed the timetable tokens of before the collapse.
 
-Going back and forth between the underground turning lanes of the Seongbuk Line and the Geondae-ipgu Koryo-saram corridor transfer, it gave priority to long-distance slots the stronger the freight-car weight signals mixing in from XT04 became.
+Going back and forth between the underground turning lanes of the Seongbuk Line and the Konkuk Univ. Koryo-saram corridor transfer, it gave priority to long-distance slots the stronger the freight-car weight signals mixing in from XT04 became.
 
 It did not understand the route as a whole and followed only the last registered slot ID and docking beacon.
 
@@ -28879,7 +28879,7 @@ Switching the beacons off too early meant real rescue vehicles could not find th
 
 ### G14-SC2 · The Pad of Two Signatures
 
-The civilian transport crew and the dispatch corps fought over the charging pads of the Geondae-ipgu transfer.
+The civilian transport crew and the dispatch corps fought over the charging pads of the Konkuk Univ. transfer.
 
 HC14 tried to fix the share of emergency slots and pad power in the ledger, and the controller demanded priority in recovering damaged car bodies.
 
@@ -41874,14 +41874,14 @@ Yongsan Seonbak-ga abandons its exclusive berths and instead publishes every unl
 
 <a id="Operating-Houses-heading-0236"></a>
 
-## HC19 · Dongdaeipgu Gaeksa-ga
+## HC19 · Dongguk Univ. Gaeksa-ga
 
 - Category: CORPORATION
 - Status: ACTIVE
 - Linked factions and districts: Government (Jung-gu), Arc (Songpa-gu, Gangnam-gu)
 - Exclusive faction: None
 
-Neutral guesthouses run by Dongdaeipgu Gaeksa-ga are scattered along the Seoul Station protocol road.
+Neutral guesthouses run by Dongguk Univ. Gaeksa-ga are scattered along the Seoul Station protocol road.
 
 Envoys surrender their weapons, yet are never detained over lodging debts.
 
@@ -43953,7 +43953,7 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Gangnam | Gangnam | 37.49795 | 127.02756 | Seoul Metropolitan Subway |
 | Gosokteomineol | Express Bus Terminal | 37.50504 | 127.00492 | Seoul Metropolitan Subway |
 | Gyodae | Seoul Nat''l Univ. of Education | 37.49366 | 127.01370 | Seoul Metropolitan Subway |
-| Gyodae(Beobwon·Geomchalcheong) | Seoul Nat''l Univ. of Education (Court & Public Prosecutors'' Office) | 37.49288 | 127.01381 | Seoul Metropolitan Subway |
+| Seoul Nat''l Univ. of Education(Beobwon·Geomchalcheong) | Seoul Nat''l Univ. of Education (Court & Public Prosecutors'' Office) | 37.49288 | 127.01381 | Seoul Metropolitan Subway |
 | Gubanpo | Gubanpo | 37.50129 | 126.98678 | Seoul Metropolitan Subway |
 | Nambuteomineol | Nambu Bus Terminal | 37.48494 | 127.01634 | Seoul Metropolitan Subway |
 | Nambuteomineol(Yesului Jeondang) | Nambu Bus Terminal (Seoul Arts Center) | 37.48497 | 127.01629 |  |
@@ -46185,7 +46185,7 @@ The third water supply contract is now approaching.
 
 | Faction | Territory | Districts | Mode of Rule | Title of Duchy Holder | Major Stations |
 |---|---|---|---|---|---|
-| Government | North of the Han River | 14 | On paper, three branches of government and a multiparty system. In practice, two parties: the OMO Party and the Claw Party. A modern feudalism in which Senators elect a President for life | Senator, a post held concurrently by the district''s National Assembly member | Gwanghwamun, Anguk, Jongno 3-ga, Seoul Station, Euljiro-ipgu, Yongsan, Noksapyeong, Cheongnyangni, Guui, Changdong |
+| Government | North of the Han River | 14 | On paper, three branches of government and a multiparty system. In practice, two parties: the OMO Party and the Claw Party. A modern feudalism in which Senators elect a President for life | Senator, a post held concurrently by the district''s National Assembly member | Gwanghwamun, Anguk, Jongno 3-ga, Seoul Station, Euljiro 1(il)-ga, Yongsan, Noksapyeong, Cheongnyangni, Guui, Changdong |
 | Free City (Union) | Southwest | 7 | Independent city-states with no king. Each city holds its own power | Duke of Gwanak; other cities not recorded | Magok, Sinjeong, Yeouido, Yeongdeungpo, Guro, Gasan, Noryangjin, Gwanak |
 | Arc | Gangnam | 4 | Family rule under Go Ye-jin, Messiah and Hierophant | Hierophant Go Ye-jin; duchy holders not recorded | Yangjae, Samseong, Gangnam, Seonjeongneung, Suseo, Jamsil, Amsa |
 
@@ -50931,7 +50931,7 @@ This ledger gathers operating organisations, old records of theatres outside Seo
 | Digital Media City Index House | platform-rivalry | Digital Media City Payments House | the search index and the message relay competed for the Sangam transmission band |
 | Magok Seed House | affiliate | Yongsan Convoy House | kindred food-supply and transport contracts split the Garak auction-floor volume |
 | Yongsan Ship House | build-contract | Geumcheon-gu Office Machinery House | container ship-repair payments traded against rights to the Yongsan riverside wharf |
-| Dongdaeipgu Trading House | retail-rivalry | Seoul Station Inventory House | bids split over protocol goods at Seoul Station and access to the bonded warehouse |
+| Dongguk Univ. Trading House | retail-rivalry | Seoul Station Inventory House | bids split over protocol goods at Seoul Station and access to the bonded warehouse |
 ', '<a id="World-Relation-Ledger-heading-0001"></a>
 
 이 원장은 운영 조직, 서울 밖 옛 전구 기록, 합성 인간 보관, 조직 사이 계약 관계를 한 표에 모은다. 운영 연결의 도착 칸은 그 조직이 일하는 세력(정부, 자유도시, 아크)과 구를 적는다.
@@ -51371,7 +51371,7 @@ Off the books, people trade in things that keep and hold their value: cartridges
 <a id="taxes"></a>
 ### Taxes
 
-Taxes are taken in kind and in time. Every labour household owes a share of what it produces to the Senator''s stores, usually a tenth of any surplus above the ration and a fixed weight of salvage each month. Station markets pay a stall tax in goods. The Senator in turn sends a tribute to the President''s stores at Seoul Station and Sicheong, counted in fuel, ammunition and water.
+Taxes are taken in kind and in time. Every labour household owes a share of what it produces to the Senator''s stores, usually a tenth of any surplus above the ration and a fixed weight of salvage each month. Station markets pay a stall tax in goods. The Senator in turn sends a tribute to the President''s stores at Seoul Station and City Hall, counted in fuel, ammunition and water.
 
 The north''s complaint about taxes isn''t the size. It''s that the Senator''s clerks count the tax before the ration, so a bad month falls on the household, never on the store.
 
@@ -51439,7 +51439,7 @@ The Senator''s table is the only place in an Electorate where food is served fre
 
 Housing follows the ledger. The station''s warm core near the generator and the deepest platforms goes to the Senator''s house and the office ledger. Labour families live in rows of curtained bunks along the concourses and in old service rooms. Dependents sleep where their household sleeps, usually at the edge of the bunk row. A family''s space is measured in bunk lengths and written in the ledger beside its name.
 
-Large stations have room to spare. Samgakji''s line 6 hall at B4 covers about 14,457 m², and Taereung-ipgu''s line 7 hall at B4 covers about 15,319 m². Small ones are crowded. Dokbawi on line 6 is deep, at B6, but only about 5,531 m², and its families sleep three to a bunk length.
+Large stations have room to spare. Samgakji''s line 6 hall at B4 covers about 14,457 m², and Taereung''s line 7 hall at B4 covers about 15,319 m². Small ones are crowded. Dokbawi on line 6 is deep, at B6, but only about 5,531 m², and its families sleep three to a bunk length.
 
 <a id="clothing-rules"></a>
 ## Clothing Rules
@@ -52319,7 +52319,7 @@ Below the Seal-Keepers the order has four layers, and people place each other in
 
 Part count cuts across clan rank. A cook with four parts outranks a clan cousin with one at the bench queue, though not at the family table. That tension is the Arc''s daily politics. The clans want blood to decide. The benches want metal to decide. The Hierophant hasn''t settled it, and some say she likes it that way.
 
-Stations sit under the Gates. A large interchange like Jamsil, Gosok Terminal or Cheonho runs as a household of its own, with an office that holds the station''s roll, its bench and its stores. At Jamsil the faithful chose their own lead believer, Nam Yun-gyeong, by secret ballot. The Hierophant never ratified that choice, and people there still argue over whether an election without her word counts. Most stations don''t try it. Jamsil''s ballot is the exception that everyone in Gangnam knows about.
+Stations sit under the Gates. A large interchange like Jamsil, Express Bus Terminal or Cheonho runs as a household of its own, with an office that holds the station''s roll, its bench and its stores. At Jamsil the faithful chose their own lead believer, Nam Yun-gyeong, by secret ballot. The Hierophant never ratified that choice, and people there still argue over whether an election without her word counts. Most stations don''t try it. Jamsil''s ballot is the exception that everyone in Gangnam knows about.
 
 Work passes from parent to child here as it does across Seoul. Scarcity made it so. In the Arc the inheritance is sharper, because a bench technician''s child grows up beside the tools and is often fitted young, so a family of fitters tends to stay a family of fitters.
 

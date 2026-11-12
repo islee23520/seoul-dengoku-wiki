@@ -300,6 +300,22 @@
       ]
     },
     {
+      "from": "Hangang-ro-dong",
+      "to": "Hangangno-dong",
+      "reason": "map_region: written letter by letter. Revised Romanization (MOIS administrative name) applies the sound change at the syllable boundary (강로 -> nasalization \"gangno\", as in the data's own Jongno and Chungjeongno). Official Hangangno-dong.",
+      "at": [
+        "geography.regions[id=region:1117062500].name"
+      ]
+    },
+    {
+      "from": "Bukahyeon-dong",
+      "to": "Bugahyeon-dong",
+      "reason": "map_region: written letter by letter. Revised Romanization (MOIS administrative name) applies the sound change at the syllable boundary (북아 -> liaison \"buga\"). Official Bugahyeon-dong.",
+      "at": [
+        "geography.regions[id=region:1141055500].name"
+      ]
+    },
+    {
       "from": "Yeongdeungpo District",
       "to": "Yeongdeungpo-gu",
       "reason": "영등포구 is the only one of the 25 gu rendered \"District\"; the other 24 use the administrative romanization \"-gu\" (map_region.district, map_station.district, duchy map_title). Official Yeongdeungpo-gu.",
@@ -344,11 +360,100 @@
       ]
     },
     {
+      "from": "Ilwonbon-dong",
+      "to": "Irwonbon-dong",
+      "reason": "map_region: written letter by letter. Revised Romanization (MOIS administrative name) applies the sound change at the syllable boundary (일원 -> \"irwon\"). Official Irwonbon-dong.",
+      "at": [
+        "geography.regions[id=region:1168072000].name"
+      ]
+    },
+    {
+      "from": "Ilwon 1-dong",
+      "to": "Irwon 1-dong",
+      "reason": "map_region: written letter by letter. Revised Romanization (MOIS administrative name) applies the sound change at the syllable boundary (일원 -> \"irwon\"). Official Irwon 1-dong; matches station Irwon, which Seoul Metro Line 3 also writes Irwon (https://en.wikipedia.org/wiki/Seoul_Subway_Line_3).",
+      "at": [
+        "geography.regions[id=region:1168073000].name"
+      ]
+    },
+    {
       "from": "Olyun-dong",
       "to": "Oryun-dong",
       "reason": "map_region 오륜동: 륜 is \"ryun\" in RR. The data itself writes Dunchon Oryun station and Oryun elsewhere. Official Oryun-dong.",
       "at": [
         "geography.regions[id=region:1171056600].name"
+      ]
+    },
+    {
+      "from": "4.19 Democratic Cemetery",
+      "to": "April 19th National Cemetery",
+      "reason": "map_station 4.19민주묘지: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Ui_LRT. Official: \"April 19th National Cemetery\". (Listed with everywhere/fields because the station id contains a dot, which the at-path syntax cannot express; the value occurs only once.)",
+      "everywhere": true,
+      "fields": [
+        "name"
+      ]
+    },
+    {
+      "from": "Geondae-ipgu",
+      "to": "Konkuk Univ.",
+      "reason": "map_station 건대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2, https://en.wikipedia.org/wiki/Seoul_Subway_Line_7. Official: \"Konkuk Univ.\".",
+      "at": [
+        "geography.stations[id=건대입구].name"
+      ]
+    },
+    {
+      "from": "Gyeongchalbyeongwon",
+      "to": "National Police Hospital",
+      "reason": "map_station 경찰병원: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_3. Official: \"National Police Hospital\".",
+      "at": [
+        "geography.stations[id=경찰병원].name"
+      ]
+    },
+    {
+      "from": "Goryeodae",
+      "to": "Korea Univ.",
+      "reason": "map_station 고려대: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_6. Official: \"Korea Univ.\".",
+      "at": [
+        "geography.stations[id=고려대].name"
+      ]
+    },
+    {
+      "from": "Gosok Terminal",
+      "to": "Express Bus Terminal",
+      "reason": "map_station 고속터미널: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_3, https://en.wikipedia.org/wiki/Seoul_Subway_Line_7, https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"Express Bus Terminal\".",
+      "at": [
+        "geography.stations[id=고속터미널].name"
+      ]
+    },
+    {
+      "from": "Gonghang Sijang",
+      "to": "Airport Market",
+      "reason": "map_station 공항시장: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"Airport Market\".",
+      "at": [
+        "geography.stations[id=공항시장].name"
+      ]
+    },
+    {
+      "from": "Gwangundae",
+      "to": "Kwangwoon Univ.",
+      "reason": "map_station 광운대: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Kwangwoon_University_station. Official: \"Kwangwoon Univ.\".",
+      "at": [
+        "geography.stations[id=광운대].name"
+      ]
+    },
+    {
+      "from": "Gyodae",
+      "to": "Seoul Nat'l Univ. of Education",
+      "reason": "map_station 교대: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_3. Official: \"Seoul Nat'l Univ. of Education\".",
+      "at": [
+        "geography.stations[id=교대].name"
+      ]
+    },
+    {
+      "from": "National Assembly Building",
+      "to": "National Assembly",
+      "reason": "map_station 국회의사당: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"National Assembly\".",
+      "at": [
+        "geography.stations[id=국회의사당].name"
       ]
     },
     {
@@ -360,11 +465,51 @@
       ]
     },
     {
+      "from": "Gimpo Airport",
+      "to": "Gimpo Int'l Airport",
+      "reason": "map_station 김포공항: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"Gimpo Int'l Airport\".",
+      "at": [
+        "geography.stations[id=김포공항].name"
+      ]
+    },
+    {
+      "from": "Nambu Terminal",
+      "to": "Nambu Bus Terminal",
+      "reason": "map_station 남부터미널: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_3. Official: \"Nambu Bus Terminal\".",
+      "at": [
+        "geography.stations[id=남부터미널].name"
+      ]
+    },
+    {
       "from": "Male",
       "to": "Namseong",
       "reason": "map_station 남성 (Line 7 Namseong): the place name was machine-translated as the word 남성 \"male\" instead of romanized. Official station name Namseong (Seoul-Station-Catalog 영문 column; the station control deltaId already reads S08-TRANSFER-2126-Namseong).",
       "at": [
         "geography.stations[id=남성].name"
+      ]
+    },
+    {
+      "from": "Daemosanipgu",
+      "to": "Daemosan",
+      "reason": "map_station 대모산입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: operator signage as listed in the project Seoul-Station-Catalog 영문 column (not independently fetched). Official: \"Daemosan\".",
+      "at": [
+        "geography.stations[id=대모산입구].name"
+      ]
+    },
+    {
+      "from": "Dongdaeipgu",
+      "to": "Dongguk Univ.",
+      "reason": "map_station 동대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_3. Official: \"Dongguk Univ.\".",
+      "at": [
+        "geography.stations[id=동대입구].name"
+      ]
+    },
+    {
+      "from": "Dongmyoap",
+      "to": "Dongmyo",
+      "reason": "map_station 동묘앞: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_6. Official: \"Dongmyo\".",
+      "at": [
+        "geography.stations[id=동묘앞].name"
       ]
     },
     {
@@ -384,11 +529,123 @@
       ]
     },
     {
+      "from": "Boramaegongwon",
+      "to": "Boramae Park",
+      "reason": "map_station 보라매공원: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Sillim_Line. Official: \"Boramae Park\".",
+      "at": [
+        "geography.stations[id=보라매공원].name"
+      ]
+    },
+    {
+      "from": "Boramaebyeongwon",
+      "to": "Boramae Medical Center",
+      "reason": "map_station 보라매병원: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Sillim_Line. Official: \"Boramae Medical Center\".",
+      "at": [
+        "geography.stations[id=보라매병원].name"
+      ]
+    },
+    {
+      "from": "Seogangdae",
+      "to": "Sogang Univ.",
+      "reason": "map_station 서강대: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: operator signage as listed in the project Seoul-Station-Catalog 영문 column (not independently fetched). Official: \"Sogang Univ.\".",
+      "at": [
+        "geography.stations[id=서강대].name"
+      ]
+    },
+    {
+      "from": "Seoul National University Venture Town",
+      "to": "Seoul Nat'l Univ. Venture Town",
+      "reason": "map_station 서울대벤처타운: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Sillim_Line. Official: \"Seoul Nat'l Univ. Venture Town\".",
+      "at": [
+        "geography.stations[id=서울대벤처타운].name"
+      ]
+    },
+    {
+      "from": "Seoul National University Entrance",
+      "to": "Seoul Nat'l Univ.",
+      "reason": "map_station 서울대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2. Official: \"Seoul Nat'l Univ.\".",
+      "at": [
+        "geography.stations[id=서울대입구].name"
+      ]
+    },
+    {
+      "from": "Seoulsup",
+      "to": "Seoul-forest",
+      "reason": "map_station 서울숲: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul-forest_station. Official: \"Seoul-forest\".",
+      "at": [
+        "geography.stations[id=서울숲].name"
+      ]
+    },
+    {
+      "from": "Seouljibangbyeongmucheong",
+      "to": "Seoul Regional Office of Military Manpower",
+      "reason": "map_station 서울지방병무청: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Regional_Office_of_Military_Manpower_station, https://en.wikipedia.org/wiki/Sillim_Line. Official: \"Seoul Regional Office of Military Manpower\".",
+      "at": [
+        "geography.stations[id=서울지방병무청].name"
+      ]
+    },
+    {
+      "from": "Seokchongobun",
+      "to": "Seokchon Gobun",
+      "reason": "map_station 석촌고분: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"Seokchon Gobun\".",
+      "at": [
+        "geography.stations[id=석촌고분].name"
+      ]
+    },
+    {
+      "from": "Seongsinyeodaeipgu",
+      "to": "Sungshin Women's Univ.",
+      "reason": "map_station 성신여대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_4, https://en.wikipedia.org/wiki/Sungshin_Women%27s_University_station. Official: \"Sungshin Women's Univ.\".",
+      "at": [
+        "geography.stations[id=성신여대입구].name"
+      ]
+    },
+    {
+      "from": "Solbatgongwon",
+      "to": "Solbat Park",
+      "reason": "map_station 솔밭공원: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Ui_LRT. Official: \"Solbat Park\".",
+      "at": [
+        "geography.stations[id=솔밭공원].name"
+      ]
+    },
+    {
+      "from": "Sukdaeipgu",
+      "to": "Sookmyung Women's Univ.",
+      "reason": "map_station 숙대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_4. Official: \"Sookmyung Women's Univ.\".",
+      "at": [
+        "geography.stations[id=숙대입구].name"
+      ]
+    },
+    {
+      "from": "Sungsildaeipgu",
+      "to": "Soongsil Univ.",
+      "reason": "map_station 숭실대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_7. Official: \"Soongsil Univ.\".",
+      "at": [
+        "geography.stations[id=숭실대입구].name"
+      ]
+    },
+    {
+      "from": "Sicheong",
+      "to": "City Hall",
+      "reason": "map_station 시청: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2. Official: \"City Hall\".",
+      "at": [
+        "geography.stations[id=시청].name"
+      ]
+    },
+    {
       "from": "Ollimpikgongwon",
       "to": "Olympic Park",
       "reason": "map_station 올림픽공원: the English loanword \"Olympic\" was romanized back from its Hangul spelling. Official Olympic Park (Seoul-Station-Catalog; the station summary already says \"Olympic Park Station\").",
       "at": [
         "geography.stations[id=올림픽공원].name"
+      ]
+    },
+    {
+      "from": "Oedaeap",
+      "to": "Hankuk Univ. of Foreign Studies",
+      "reason": "map_station 외대앞: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: operator signage as listed in the project Seoul-Station-Catalog 영문 column (not independently fetched). Official: \"Hankuk Univ. of Foreign Studies\".",
+      "at": [
+        "geography.stations[id=외대앞].name"
       ]
     },
     {
@@ -408,11 +665,99 @@
       ]
     },
     {
+      "from": "Euljiro-ipgu",
+      "to": "Euljiro 1(il)-ga",
+      "reason": "map_station 을지로입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2. Official: \"Euljiro 1(il)-ga\".",
+      "at": [
+        "geography.stations[id=을지로입구].name"
+      ]
+    },
+    {
+      "from": "Idae",
+      "to": "Ewha Womans Univ.",
+      "reason": "map_station 이대: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2. Official: \"Ewha Womans Univ.\".",
+      "at": [
+        "geography.stations[id=이대].name"
+      ]
+    },
+    {
+      "from": "Jonghap Undongjang",
+      "to": "Sports Complex",
+      "reason": "map_station 종합운동장: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2, https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"Sports Complex\".",
+      "at": [
+        "geography.stations[id=종합운동장].name"
+      ]
+    },
+    {
+      "from": "Jungang Bohun Byeongwon",
+      "to": "VHS Medical Center",
+      "reason": "map_station 중앙보훈병원: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_9. Official: \"VHS Medical Center\".",
+      "at": [
+        "geography.stations[id=중앙보훈병원].name"
+      ]
+    },
+    {
+      "from": "Cheonggyesan-ipgu",
+      "to": "Cheonggyesan",
+      "reason": "map_station 청계산입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Cheonggyesan_station. Official: \"Cheonggyesan\".",
+      "at": [
+        "geography.stations[id=청계산입구].name"
+      ]
+    },
+    {
+      "from": "Chongsindae-ipgu (Isu)",
+      "to": "Chongshin Univ. (Isu)",
+      "reason": "map_station 총신대입구(이수): The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_4, https://en.wikipedia.org/wiki/Seoul_Subway_Line_7. Official: \"Chongshin Univ. (Isu)\".",
+      "at": [
+        "geography.stations[id=총신대입구(이수)].name"
+      ]
+    },
+    {
+      "from": "Taereung-ipgu",
+      "to": "Taereung",
+      "reason": "map_station 태릉입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_6, https://en.wikipedia.org/wiki/Seoul_Subway_Line_7. Official: \"Taereung\".",
+      "at": [
+        "geography.stations[id=태릉입구].name"
+      ]
+    },
+    {
       "from": "Hakyeoul",
       "to": "Hangnyeoul",
       "reason": "map_station 학여울: letter-by-letter transliteration. The data elsewhere applies RR sound changes (Gongneung, Dongnimmun, Seolleung). Official Hangnyeoul (Seoul-Station-Catalog).",
       "at": [
         "geography.stations[id=학여울].name"
+      ]
+    },
+    {
+      "from": "Hansungdaeipgu",
+      "to": "Hansung Univ.",
+      "reason": "map_station 한성대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_4. Official: \"Hansung Univ.\".",
+      "at": [
+        "geography.stations[id=한성대입구].name"
+      ]
+    },
+    {
+      "from": "Hanyangdae",
+      "to": "Hanyang Univ.",
+      "reason": "map_station 한양대: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2. Official: \"Hanyang Univ.\".",
+      "at": [
+        "geography.stations[id=한양대].name"
+      ]
+    },
+    {
+      "from": "Hongdaeipgu",
+      "to": "Hongik Univ.",
+      "reason": "map_station 홍대입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2. Official: \"Hongik Univ.\".",
+      "at": [
+        "geography.stations[id=홍대입구].name"
+      ]
+    },
+    {
+      "from": "Hyochanggongwonap",
+      "to": "Hyochang Park",
+      "reason": "map_station 효창공원앞: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_6. Official: \"Hyochang Park\".",
+      "at": [
+        "geography.stations[id=효창공원앞].name"
       ]
     }
   ]
