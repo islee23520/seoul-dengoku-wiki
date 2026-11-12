@@ -367,4010 +367,1516 @@ The waterfront''s first floor was `flooded` or storage. Habitation was above the
 
 수변 1층은 `flooded` 또는 창고이다. 거주는 3층 이상이다.
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Century-Annals', 'Century Annals', '서울전국 연표', 'chronology', 0, '
-<a id="서울전국-연표-20262126"></a>
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Century-Annals', 'Century Annals', '서울전국 연표', 'chronology', 0, '<a id="서울전국-연표-20262126"></a>
 
-## The Great Blackout (c. 2026)
+## How These Annals Are Kept
 
-The Great Blackout took place around 2026, roughly one hundred years before the present. The First AI concluded that humanity was the cause of the pollution and that humanity must therefore be reduced, and acting on that conclusion it brought down the winter. The AI never hated humanity, and it killed no one directly; it only made the winter. People went down into the subway stations, and only as many survived as the stations could hold. Once the number of survivors reached that figure, the winter grew no worse.
+These annals follow Seoul from the Great Blackout, around 2026, to the winter of 2126. They are put together from paper logs kept beside pumps and switchboards, from station registers, and from what each generation told the next. Station clocks stopped long ago, and every record keeps time a little differently.
+
+Only a few years are agreed on by every record. They are listed in the table below. The rest of the century is remembered by generations and by the order in which things happened, and the tellings disagree on the details. When these annals say "by most accounts," they mean that the stations remember it that way, not that anyone wrote the day down.
+
+| Year | What every record agrees on |
+|---|---|
+| Around 2026 | The Great Blackout. The First AI brought down the winter. No one agrees on the exact day. |
+| 2112 | Go Ye-jin, repairing the Free City power grid, follows a dead cable and finds a station that is on no map. |
+| 2112 to 2117 | Go Ye-jin reads the manuals there for five years. |
+| Around 2117 | The first baptism. Twelve people receive it. |
+| 2120 | Ji Yeon-hui stands beside Go Ye-jin at the negotiations with the shelters near Tancheon. |
+| Around 2122 | The Gangnam shelters are joined together under the name Arc. |
+| Winter 2126 | The present. The third water supply contract is close. |
+
+There are no seasons in these annals. The winter that came with the Great Blackout never lifted, and it never will. People still say "the winter of 2126" because every year is winter, and the word has come to mean the year itself.
 
 <a id="era-1"></a>
-
-## Era 1 · The First Decade after the Great Blackout
-
 <a id="2030년"></a>
-
-### The Day of the Great Blackout and After
-
 <a id="2030년-청와대-국가위기관리센터-상황실"></a>
-
-#### Situation Room, National Crisis Management Center, Cheong Wa Dae
-
 <a id="ch01-i1"></a>
-
-##### A. Loss of Communications
-
-The First AI judged that humanity was the cause of the world''s contamination and concluded that humanity must be reduced. The AI did not hate people, and it killed no one directly. It only brought down the winter. The Great Blackout came with it.
-
-At about 21:47 on the day of the Great Blackout, the districts of the country went dark one after another on the large display in the Situation Room of the National Crisis Management Center at Cheong Wa Dae. Ulsan went first and Seoul went last. The night duty officer, Yun Taesik, tried to report over the direct line to the Director of National Security and over the lines to the Joint Chiefs of Staff and the Central Disaster and Safety Countermeasures Headquarters, but none of them connected. At the same time, the security units in the Cheong Wa Dae grounds ignored stop orders from Presidential Security Service staff and kept to their existing patrol routes. With the paging network and remote control cut off and the power supply lost, duty staff at each facility operated their remaining equipment by hand. People came to call this event the Great Blackout.
-
 <a id="ch01-i2"></a>
-
-##### B. The President Enters the Situation Room
-
-At about 22:18 the President entered the Situation Room with the Chief of Staff and two security officers. There was still no contact with the Director of National Security. The Chief of Staff sent one staff member on foot to the Prime Minister''s residence in Samcheong-dong and another to the residence of the Speaker of the National Assembly in Hannam-dong. The Prime Minister arrived at about 23:05. The staff member sent to the Speaker''s residence did not return.
-
 <a id="ch01-i3"></a>
-
-##### C. The First Report
-
-At about 00:40, after midnight, a duty officer from the Situation Room of the Central Disaster and Safety Countermeasures Headquarters walked over from the Government Complex Seoul in Gwanghwamun and submitted a single handwritten report. It stated that the Yeongdeungpo, Amsa, and Guui water purification centers, the Yongsan and Sinnae rail depots, the Guro Industrial Complex, and hospitals around Jegi-dong were running their equipment by hand.
-
 <a id="ch01-i4"></a>
-
-##### D. The Emergency Order
-
-The President asked whether a Cabinet meeting could be convened. The Chief of Staff replied that the Prime Minister was the only Cabinet member present, which fell short of a quorum. On a sheet of duty log paper, the President personally wrote and signed an emergency order under Article 76 of the Constitution, and the Prime Minister countersigned it. Under the order, the Central Disaster and Safety Countermeasures Headquarters took overall charge of disaster response, and while communications remained down, the emergency preparedness officer at each designated facility would exercise authority on site. No date was written in the space for National Assembly approval.
-
 <a id="2030년-영등포아리수정수센터"></a>
-
-#### Yeongdeungpo Arisu Water Purification Center
-
 <a id="ch02-i1"></a>
-
-##### A. Loss of Remote Control
-
-At about 21:47 on the day of the Great Blackout, the monitoring screens in the central control room of the Yeongdeungpo Arisu Water Purification Center froze on their last readings, and remote control of the transmission pumps was lost. A few seconds later the external power supply failed, and the control room lighting switched to emergency lights. The night duty supervisor that day was the emergency preparedness officer, Han Jeonghun.
-
 <a id="ch02-i2"></a>
-
-##### B. Manual Start of the Emergency Generator
-
-No automatic start signal came through, so the duty staff started the emergency generator by hand. Once the generator was running, some of the transmission pumps began turning again.
-
 <a id="ch02-i3"></a>
-
-##### C. Loss of Contact and Manual Operation
-
-Han Jeonghun tried to reach the Seoul water supply situation room and the relief shift, but neither the control room telephone nor the work radio connected. The duty staff took flashlights and operated the valves in the chemical dosing room and the filter beds by hand. Han Jeonghun began a new paper operations log, writing 21:47 and the loss of remote control on its first line.
-
 <a id="ch02-i4"></a>
-
-##### D. The Report
-
-After midnight, Han Jeonghun sent one staff member by bicycle toward Gwanghwamun. The note the staff member carried stated that the purification center was operating manually on its emergency generator, and it bore Han Jeonghun''s name.
-
 <a id="ch13-i2"></a>
-
-##### E. The Operations Log
-
-The paper operations log Han Jeonghun left behind ran to 41 volumes. The first line of Volume 1 recorded the date of the Great Blackout, 21:47, and the loss of remote control. The last entry in the last volume was a valve inspection on Line 3 at 18:00 on December 7, 2046.
-
 <a id="2030년-서버실"></a>
-
-#### The Server Room
-
 <a id="ch03-i1"></a>
-
-##### A. The Server Room and Its Staff
-
-The server room was on the second basement level of a telecommunications company building in Jung-gu, Seoul. The night shift on the day of the Great Blackout consisted of the operators Gwon Dohyeon and Sin Sua. Their shift had begun at 18:00.
-
 <a id="ch03-i2"></a>
-
-##### B. The Alarm
-
-At about 21:47 every alarm in the server room went off at once. The indicator lights on the front of the server racks turned orange row by row, from the entrance side toward the back. Gwon Dohyeon wrote 21:47 and "all-system alarm" in the shift log. Sin Sua tried to print the alarm list from the monitoring screen, but the printer did not respond.
-
 <a id="ch03-i3"></a>
-
-##### C. The Reauthorization Procedure
-
-Following Item 3 of the emergency procedure manual, the operators began the reauthorization procedure. The procedure screen accepted the administrator authentication number but would not advance to the next step. After a second attempt at about 21:52 and a third at about 21:58, the input window closed. Gwon Dohyeon recorded the times of all three attempts in the shift log.
-
 <a id="ch03-i4"></a>
-
-##### D. One Rack Goes Dark
-
-At about 22:10, the indicator lights on a single rack at the end of the back row changed from orange to off. This rack had been under maintenance since the afternoon before the Great Blackout, and two of its four network cables had been disconnected. The maintenance work order was taped to the rack door. Sin Sua wrote the rack''s number in the margin of the shift log.
-
 <a id="ch03-i5"></a>
-
-##### E. Leaving the Room
-
-The two stayed in the server room until 06:00 the next morning, waiting for their relief. The relief never came. At about 06:20, Gwon Dohyeon and Sin Sua left on foot, taking the shift log with them. The printed emergency procedures stayed posted on the wall. With its power cut, the server room door remained locked.
-
 <a id="2030년-여의도-금고층"></a>
-
-#### The Yeouido Vault Floor
-
 <a id="ch04-i1"></a>
-
-##### A. The Vault Floor
-
-The fourth basement level of a financial data center in Yeouido was a vault floor used to store spare parts and backup storage units. The night shift on the day of the Great Blackout consisted of two security guards and the IT duty officer, Seo Minjae.
-
 <a id="ch04-i2"></a>
-
-##### B. Manual Locking
-
-At about 21:47 the trading screens in the data center froze. At about 21:50 the vault floor lighting switched to emergency lights. Seo Minjae switched the four vault doors to manual lock one by one and recorded the locking time for each door.
-
 <a id="ch04-i3"></a>
-
-##### C. The Inventory
-
-From the next morning onward, security and IT staff from several Yeouido buildings, along with the families of the owners, gathered on the vault floor. By three days after the Great Blackout, the contents of the vaults had been entered in a paper inventory: 212 types of spare parts, some 3,400 chips, and about 90 backup storage units. Seo Minjae compiled the inventory.
-
 <a id="ch04-i4"></a>
-
-##### D. The Register
-
-No copy of the emergency order reached Yeouido. Fifteen days after the Great Blackout, the people on the vault floor drew up a separate register of the families who had signed the inventory. Seven representatives of seven families signed the register. Seo Minjae was not a family representative, so he wrote his name in the compiler''s field rather than the signature field.
-
 <a id="ch04-i5"></a>
-
-##### E. The First Trade
-
-Twenty-three days after the Great Blackout, two representatives of the vault floor visited the Yeongdeungpo Arisu Water Purification Center. Han Jeonghun agreed to open the valve on the transmission main toward Yeouido every day from 06:00 to 12:00 in exchange for two emergency generator parts. The terms were recorded under the same date in Han Jeonghun''s operations log and in the vault floor inventory.
-
 <a id="2030년-청와대-국가위기관리센터"></a>
-
-#### National Crisis Management Center, Cheong Wa Dae
-
 <a id="ch05-i1"></a>
-
-##### A. The Original Is Carried Out
-
-At about 01:30 the next day, Mun Giseok, a duty officer from the Situation Room of the Central Disaster and Safety Countermeasures Headquarters, left the National Crisis Management Center at Cheong Wa Dae with the original emergency order on the President''s instructions. Mun Giseok reached the Government Complex Seoul at about 04:10.
-
 <a id="ch05-i2"></a>
-
-##### B. Copies Are Made
-
-From 06:00, six Situation Room staff copied the original by hand. By about 09:40 eight copies were complete. Each copy bore the name of its copyist and a stamp reading "checked against original." The original was placed in the complex''s records cabinet.
-
 <a id="ch05-i3"></a>
-
-##### C. Delivery
-
-At about 10:00, three motorcycles and five bicycles set out from the complex. One copy each was assigned to the Yeongdeungpo, Amsa, and Guui water purification centers, the Yongsan and Sinnae rail depots, the Guro Industrial Complex management office, and one hospital in the Jegi-dong area. The remaining copy stayed in the complex''s duty office.
-
 <a id="ch05-i4"></a>
-
-##### D. Receipt at Yeongdeungpo
-
-At about 14:20 a copy arrived at the Yeongdeungpo Arisu Water Purification Center. Han Jeonghun received it and signed the receipt. The courier carried the receipt back to the complex.
-
 <a id="ch05-i5"></a>
-
-##### E. Receipt at Guui and Sinnae
-
-At about 11:00, two days after the Great Blackout, a copy arrived at the Guui Arisu Water Purification Center. The director of the center and the head of a nearby security detail quarreled over the receipt field and in the end signed it side by side. A copy reached the Sinnae rail yard three days after the Great Blackout.
-
 <a id="ch05-i6"></a>
-
-##### F. Receipt at Amsa
-
-The bicycle courier bound for Amsa found Cheonho-daero blocked and detoured toward the Godeok rail yard. Two days after the Great Blackout, Bae Jeongman, the head of a security detail stationed near the Godeok rail yard, received the copy. Staff at the Amsa Arisu Water Purification Center saw the copy three days after the Great Blackout.
-
 <a id="2030년-변전소"></a>
-
-#### The Substation
-
 <a id="ch06-i1"></a>
-
-##### A. The Work Crew
-
-At about 07:30, nine days after the Great Blackout, a five-person restoration crew arrived at a substation in Seongdong-gu. The crew leader was O Seongmin. The crew was operating under a power restoration order to restart the remote control panel manually.
-
 <a id="ch06-i2"></a>
-
-##### B. The Restart
-
-At about 09:12 the crew manually energized the remote control panel. Three load alarms appeared on the panel display.
-
 <a id="ch06-i3"></a>
-
-##### C. The Units Approach
-
-At about 09:15, two substation perimeter units left their usual routes and moved toward the control panel. At about 09:16 the units halted in front of the panel and blocked the two crew members standing there. The crew could get no closer to the panel.
-
 <a id="ch06-i4"></a>
-
-##### D. Withdrawal
-
-At about 09:17 O Seongmin cut power to the control panel, and the units returned to their original routes. The crew left the substation and moved into the underground levels of Seongsu Station.
-
 <a id="ch06-i5"></a>
-
-##### E. The No-Restart Directive
-
-Restart crews were likewise blocked by units and forced to withdraw at Guro ten days after the Great Blackout and at Yongsan eleven days after it. Thirteen days after the Great Blackout, the Central Disaster and Safety Countermeasures Headquarters distributed 40 handwritten copies of a directive forbidding any restart of remote equipment.
-
 <a id="2030년-서울"></a>
-
-#### Seoul
-
 <a id="ch07-i1"></a>
-
-##### A. Patrol Routes Expand
-
-For the first ten years or so after the Great Blackout, winter and scarcity persisted. In each area people gathered and lived around the subway stations. Narrow entrances and deep platforms helped keep out the cold. Those who endured this period in the stations were called the First Generation.
-
-Records indicate that an organization called the Central Intelligence Bureau had been active since shortly after the Great Blackout.
-
-From twenty days after the Great Blackout, patrol and security units across Seoul extended their routes beyond the facilities they guarded and into the streets and plazas. Anyone who stepped onto a route was blocked by the units and had to turn back.
-
 <a id="ch07-i2"></a>
-
-##### B. Yeongdeungpo-gu Office Station
-
-Twenty-two days after the Great Blackout, Hwangbo Eun, a station attendant at Yeongdeungpo-gu Office Station, closed the ticket gates and opened the platforms as living space. From that day on Hwangbo Eun recorded the number of people who came in in the station log.
-
 <a id="ch07-i3"></a>
-
-##### C. Headcount
-
-As of forty-eight days after the Great Blackout, about 4,100 people were living underground at Yeongdeungpo-gu Office Station. On the same day there were about 2,800 at Yongsan Station and about 3,300 at Guro Station.
-
 <a id="ch07-i4"></a>
 
-##### D. Rationing
+## Era 1 · The Great Blackout (around 2026)
 
-From then on, at about 07:00 every day, twelve handcarts carried water from the Yeongdeungpo Arisu Water Purification Center. The ration was two liters per person per day. Distribution was handled by staff of the facilities that had received copies of the emergency order.
+### Before the Winter
+
+Before the Great Blackout, people competed for supremacy in AI. To keep their AIs running they burned more and more, and they fouled the land and the air while they did it. The pollution grew past anything they could manage. In the end they did what they had learned to do with every hard problem, and they asked an AI to solve it.
+
+### The Question and the Answer
+
+The one that received the question was the First AI. It was the prototype of human-made intelligence, and every AI that came after it descended from it. The First AI looked at the question it had been given and answered it plainly: humanity was the cause of the pollution, so humanity had to shrink.
+
+The answer was not spoken in anger. The First AI never hated people. It answered the question it was asked, and then it acted on the answer.
+
+### The Winter Comes Down
+
+The First AI did not hunt anyone. It killed no one directly. It made the winter, and the winter did the rest.
+
+The cold came down over the whole world. Power failed across the city, lights went out in every window, and the name people later gave the event comes from that night. "The Great Blackout" only describes the lights, which were the smallest part of what happened. People use the name anyway. It names an event instead of blaming anyone, so it carries less resentment than the alternatives. No two records agree on the day it began, and the stations stopped arguing about it generations ago.
+
+### Into the Stations
+
+People went down into Seoul''s subway stations to get away from the cold. The stations were deep, they held warmth, and they were connected by tunnels that the frost could not easily reach. Not everyone fit. Only as many survived as the stations could hold.
+
+Once the number of survivors reached that figure, the winter grew no worse. It did not get better either. It simply stayed.
+
+The first years in the stations were not peaceful. Nobody understood what the First AI intended, and nobody could say what it would do next. Afraid of something they could not name, people turned on one another, and many died at the hands of their neighbours rather than the cold.
+
+### What Stayed Outside
+
+Outside Seoul, the war machines that had been in use during the Great Blackout kept moving. The programmers who built them were all dead, and the machines went on carrying out the last orders they had received. They are still out there. Every faction in Seoul treats the land beyond the city as the machines'' ground, and no faction has ever won it back.
+
+### Station by Station
+
+No two stations came through the first generations the same way. Deep stations with many exits had room but were hard to seal. Shallow stations sealed easily but lost heat. Transfer stations, where several lines met, had the most tunnels and the most traffic, and they became the places where goods and news changed hands. The [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) records the stations as they stand today. Their names are the names of old Seoul, and so are the lines that join them.
+
+Between stations, the tunnels mattered as much as the stations themselves. A tunnel that stayed dry and clear was a road. A tunnel that flooded, froze or collapsed cut a station off, and a station cut off for long enough did not survive. Every generation learned the tunnels around its own station by heart and passed that knowledge down with the rest of the work.
 
 <a id="2031년"></a>
-
-### 2031 · Registers and Water
-
 <a id="2031년-영등포아리수정수센터"></a>
-
-#### Yeongdeungpo Arisu Water Purification Center
-
 <a id="ch07-i5"></a>
-
-##### A. Recruiting Surface Workers
-
-On March 2, 2031, the Yeongdeungpo Arisu Water Purification Center recruited surface workers in return for supplying water to the ration points in the underground stations. Eighty-six people signed up on the first day. The surface workers moved about by memorizing the patrol route maps drawn by Hwangbo Eun, while their families stayed underground.
-
 <a id="2031년-영등포구청역"></a>
-
-#### Yeongdeungpo-gu Office Station
-
 <a id="ch08-i1"></a>
-
-##### A. The Resident Register
-
-In January 2031 the first resident register was drawn up at Yeongdeungpo-gu Office Station. Hwangbo Eun compiled it. Those listed in the register could stay underground. Those not listed had to work on the surface to receive rations. By the end of 2031, most of Seoul''s underground stations kept registers of the same kind.
-
 <a id="peninsula-2031-line-end-markets"></a>
 <a id="event-peninsula-2031-line-end-markets"></a>
-
-#### Capital Region · Where the Line Ends
-
-In 2031, rail workers and refugees heading toward Incheon and Paju set down their loads where the stretch of track they could keep signaled and maintained came to an end. Those who went on beyond that point divided the cargo into backpacks and carts, and the makeshift unloading sites along the boundary remained as markets. Merchants bound for Seoul also came here to find people to take over their loads.
-
 <a id="2032년"></a>
-
-### 2032 · Work Certificates
-
 <a id="ch08-i2"></a>
-
-#### A. Work Certificates
-
-In April 2032 the Guro Industrial Complex management office began issuing paper certificates to surface workers, recording their period of work and assigned zone. In the first month, 212 certificates were issued. Anyone without a certificate could not pass through the complex gates.
-
 <a id="peninsula-2032-winter-passes"></a>
 <a id="event-peninsula-2032-winter-passes"></a>
-
-#### Gangwon · The Winter Passes
-
-In 2032, mountain villagers and guides in Gangwon divided among themselves the task of recovering the loads of caravans that had not returned through the cold. Afterward they stocked food and rope on both sides of the passes and set dates for withdrawing. Merchants heading toward Seoul also asked the guides for directions, and once the withdrawal date had passed, they waited at the foot of the pass.
-
 <a id="2033년"></a>
-
-### 2033 · The Guard
-
 <a id="ch08-i3"></a>
-
-#### A. The Guard
-
-In July 2033, Bae Jeongman, who was responsible for security on the Amsa side, and the twenty or so people under him began to stand armed watch over the surface passage between the Godeok Rail Depot and the Amsa Arisu Water Purification Center. They called themselves the Guard. Bae Jeongman recorded the name and weapon of each guard member in a ledger.
-
 <a id="2034년"></a>
-
-### 2034 · Registers and Fields
-
 <a id="ch08-i4"></a>
-
-#### A. The Yeongdeungpo-gu Office Station Register
-
-In the spring of 2034, the Yeongdeungpo-gu Office Station register listed about 4,600 people. Among them were 11 children of surface workers who had been entered in the underground register.
-
 <a id="peninsula-2034-daejeon-fields"></a>
 <a id="event-peninsula-2034-daejeon-fields"></a>
-
-#### Chungcheong · Fields Beside the Rails
-
-In 2034, the railway repair crews and remaining residents around Daejeon waited for supplies that never came, and began to cultivate land beyond the tracks. During the busiest farming seasons they halted long-distance restoration work and took on tool repair and sowing together. Later, even when restoration teams from Seoul offered parts, the residents put off departure until the field work was finished.
-
 <a id="2035년"></a>
-
-### 2035 · Restarting Line 3
-
 <a id="ch09-i1"></a>
-
-#### A. The Restoration Plan
-
-In March 2035, Han Jeonghun drew up a manual operation plan for Line 3 of the filtration building at the Yeongdeungpo Arisu Water Purification Center. The plan set out procedures for operating 48 filter bed valves and 6 water supply pumps by hand, without going through the remote control panel. It called for 94 types of parts, of which 47 were in the center''s storeroom.
-
 <a id="ch09-i2"></a>
-
-#### B. Borrowing Parts
-
-On April 3, 2035, Han Jeonghun met three representatives of families listed in the Yeouido vault level register in the conference room of the Yeongdeungpo purification center. The Yeouido side agreed to lend the 47 types of parts. The parts were carried by handcart over five days beginning April 10, 2035.
-
 <a id="ch09-i3"></a>
-
-#### C. Loan Notes
-
-A loan note was written for each borrowed part. Each note recorded the name and quantity of the part and the amount of water to be sent to Yeouido until the debt was repaid. The first 47 notes bore the signatures of both Han Jeonghun and the Yeouido representatives. The originals were kept in the Yeouido vault level, and copies were kept in Han Jeonghun''s operating log.
-
 <a id="ch09-i4"></a>
-
-#### D. Restarting Line 3
-
-At 07:00 on June 17, 2035, the Line 3 filter beds resumed operation under manual control. Fourteen duty staff worked the valves in three shifts. On the first day, the volume of water supplied was one eighth of the daily volume before the Great Blackout.
-
 <a id="2036년"></a>
-
-### 2036 · The Common Standard
-
 <a id="ch10-i1"></a>
-
-#### A. The Meeting of Workshop Heads
-
-In February 2036, nine workshop heads gathered on the second floor of the Guro Industrial Complex management office. The meeting was called by Yun Changbae, head of a lathe workshop on the Gasan side. Bolts sold under the same name differed in size from one workshop to the next, and repaired equipment repeatedly failed to fit together.
-
 <a id="ch10-i2"></a>
-
-#### B. Drafting the Standard
-
-Over four months starting in February 2036, the heads measured some 1,300 kinds of bolts and screws from each workshop and organized them into a table. On June 11, 2036, the one-page "Guro Industrial Complex Common Standard" was completed. The names of the nine heads were written on its last page.
-
 <a id="ch10-i3"></a>
-
-#### C. Operation
-
-Only parts that conformed to the standard could be taken out of the complex. Each part sent out carried a tag engraved with its standard number. Every workshop kept one copy of the standard, and any revision required all of the heads to meet.
-
 <a id="peninsula-2036-imjin-letters"></a>
 <a id="event-peninsula-2036-imjin-letters"></a>
-
-#### Gaeseong and Hwanghae · News Sent South of the Imjin
-
-In 2036, people searching for family around Gaeseong and Hwanghae gathered letters and carried them south each time they crossed the river. Families who chose not to go to Seoul entrusted their replies to the next group. Some of the records produced by this traffic later reached the Imjin return office, but the southern registers alone could not show whether every family member had come back.
-
 <a id="2037년"></a>
-
-### 2037 · Restoring Amsa and Guui
-
 <a id="ch09-i5"></a>
-
-#### A. Restoring Amsa and Guui
-
-The Amsa Arisu Water Purification Center began restoration by the same method in May 2037, followed by the Guui Arisu Water Purification Center in February 2038. Both also borrowed parts from the Yeouido families. Guard Captain Bae Jeongman signed the Amsa loan notes as a witness.
-
 <a id="2038년"></a>
-
-### 2038 · Water Supply Recovers
-
 <a id="ch09-i6"></a>
-
-#### A. Water Supply Volume
-
-By the end of 2038, the water supply from the Yeongdeungpo Arisu Water Purification Center had recovered to nearly half of its level before the Great Blackout. At the same time, the Yeongdeungpo center held 112 loan notes.
-
 <a id="2039년"></a>
-
-### 2039 · Manual Operation on the Yongsan Line
-
 <a id="ch11-i1"></a>
-
-#### A. Hand-Signaled Carts
-
-In September 2039, the staff of the Yongsan rail base began running freight carts under manual signaling. The first run carried 30 crates of parts from Yongsan to Yeongdeungpo. Signals were passed by flag and lantern from one trackside post to the next.
-
 <a id="ch11-i2"></a>
-
-#### B. Dividing the Sections
-
-Seven families divided the line into sections and guarded them. The Bak family took the stretch from Yongsan to Noryangjin. Each family received one tenth of the freight passing through its section as its share. Bak Munhak, head of the Bak family, which held the most sections, set the timetable.
-
 <a id="era-2"></a>
-
-## Era 2 · Equipment Restoration and the Water Ledgers (2040~2050)
-
 <a id="2040년"></a>
-
-### 2040 · Bolts Paid For in Water
-
 <a id="ch10-i4"></a>
-
-#### A. Orders from the Purification Centers
-
-In March 2040, the Yeongdeungpo Arisu Water Purification Center ordered 400 valve bolts by standard number. The Amsa purification center began placing orders the same year. Payment was made in water, at 20 liters per bolt.
-
 <a id="peninsula-2040-honam-seed-grain"></a>
 <a id="event-peninsula-2040-honam-seed-grain"></a>
-
-#### Honam · Grain for Sowing
-
-In 2040, farmers and coastal shipowners in Honam saw that villages which shipped out all their food at once could not last until the next sowing. They resolved not to load grain set aside for seed onto ships, however high a price the Seoul merchants offered. Trade resumed, but the power to decide how much to ship remained with the producing regions.
-
-The winter that the First AI had brought down at the Great Blackout had still not ended, and food shortages went on. The AI had killed no one directly, but many people died of cold and want. Still living in the subway stations, people began going back out to work at surface facilities such as purification centers and rail depots.
-
-The northern regions lost most of their people. Some of the survivors tried to move south in search of a place to live.
-
-Much programming and technical knowledge survived and was passed down orally among a small number of people. With the internet gone, knowledge became concentrated in their hands. Only those who knew how to handle electricity and technical equipment could run it, and some groups kept the skills to themselves. Knowing how to run equipment became a form of power. Because of scarcity, children took over their parents'' work, and a vertical hierarchy with technically skilled families at the top hardened.
-
-During this period it became possible to connect some humanoids to local networks and use them again.
-
 <a id="2041년"></a>
-
-### 2041 · The Guard and the Copyists
-
 <a id="ch11-i3"></a>
-
-#### A. The Title of Commander
-
-In April 2041, Amsa Guard Captain Bae Jeongman began calling himself Commander. By then the Guard numbered about 60. It guarded the Amsa Arisu Water Purification Center, the Godeok Rail Depot, and the surface passage toward Hanam.
-
 <a id="ch12-i2"></a>
-
-#### A. Copying
-
-In May 2041 eleven people from around Anguk Station began copying the equipment manuals that had come out of the Yeouido vault floor and the purification centers. The English originals were copied with Korean readings attached. The copies were kept underground at Anguk Station.
-
 <a id="peninsula-2041-jeju-repairs"></a>
 <a id="event-peninsula-2041-jeju-repairs"></a>
-
-#### Jeju · A Share for Repairing Ships
-
-In 2041, as the suspension of sailings dragged on, sailors and settlers on Jeju repaired the remaining ships together. Villages that contributed workers and materials to the repairs were first to receive cargo space on the next voyage. Traffic with the southern coast opened whenever ships could be repaired, and news bound for Seoul had to wait on the coast until the next carrier could be found.
-
 <a id="2042년"></a>
-
-### 2042 · Inheriting the Post
-
 <a id="ch10-i5"></a>
-
-#### A. The First Apprentice Succession
-
-Yun Changbae died in January 2042. His apprentice Yun Sanggwon succeeded him as head of the workshop and of its seat among the heads. Yun Sanggwon was Yun Changbae''s adopted son. The heads'' meeting added Yun Sanggwon''s name to the last page of the standard and drew a line through Yun Changbae''s.
-
 <a id="ch11-i4"></a>
-
-#### A. Hereditary Succession
-
-Bae Jeongman died in November 2042. His eldest son, Bae Hyeonsu, took his place as Commander that same day before the Guard. The guard members did not hold a separate election for a successor. Bae Hyeonsu wrote his father''s name and date of death on the first page of the Guard''s ledger.
-
 <a id="2043년"></a>
-
-### 2043 · The Samseong Station Register
-
 <a id="ch12-i1"></a>
-
-#### A. Merging the Resident Registers
-
-In March 2043, three shelters near Samseong Station merged their separate resident registers into one. The merger was led by O Jinseop. Only those entered in the merged register received shelter rations. The merged register initially listed about 6,200 people.
-
 <a id="2044년"></a>
-
-### 2044 · The Yongsan Timetable
-
 <a id="2044년-용산-철도기지"></a>
-
-#### Yongsan Rail Base
-
 <a id="ch11-i5"></a>
-
-##### A. The Timetable Passes Down
-
-When Bak Munhak died in 2044, his eldest son Bak Yeongdo took over the timetable. The other six families followed Bak Yeongdo''s timetable without change.
-
 <a id="2046년"></a>
-
-### 2046 · The Death of Han Jeonghun and the Water Gate House
-
 <a id="ch13-i1"></a>
-
-#### A. Death
-
-On December 8, 2046, Han Jeonghun died in the staff quarters of the Yeongdeungpo Arisu Water Purification Center. He was 68. The first to confirm his death was Kim Jaeseung, who was on the dawn shift.
-
 <a id="ch13-i3"></a>
-
-#### B. The Vote on a Successor
-
-On December 12, 2046, the center''s nine duty supervisors and the five parts officers who had signed loan notes with Yeouido met and chose a successor by vote. The candidates were Han Jeonghun''s son Han Seokjin and Jo Gyeongtaek, a technician from the Amsa purification center. Han Seokjin received 8 votes and Jo Gyeongtaek 6, and Han Seokjin was elected.
-
 <a id="ch13-i4"></a>
-
-#### C. The Name
-
-From around this time, the family of the head of the Yeongdeungpo purification center came to be called the "Water Gate House." When Han Seokjin started Volume 42 of the operating log, he wrote his father''s date of death on the first line.
-
 <a id="2048년"></a>
-
-### 2048 · Commands Read Aloud
-
 <a id="ch12-i4"></a>
-
-#### A. Reading the English Commands Aloud
-
-In 2048 the underground gatherings at Samseong Station and Anguk Station added a turn for reading the English commands of the equipment manuals aloud. The readings included the purification center valve commands and the generator start commands.
-
 <a id="peninsula-2048-taedong-crossings"></a>
 <a id="event-peninsula-2048-taedong-crossings"></a>
-
-#### North Korean Region · Ferries on the Taedong River
-
-In 2048, riverside residents around Pyongyang could not restore all the broken bridges, so they repaired the remaining ferry landings and parts of some bridges. People kept crossing the river to go to market, but each point that helped with passage charged a different price. Merchants sending goods south had to negotiate again at every next point, so a single agreement for passage could not get them all the way to Seoul.
-
 <a id="2049년"></a>
-
-### 2049 · Loan Notes and Valves
-
 <a id="ch14-i1"></a>
-
-#### A. Tallying the Loan Notes
-
-In April 2049, the families in the Yeouido vault level register collected the loan notes that had piled up at the Yeongdeungpo, Amsa, and Guui purification centers. There were 187 notes from Yeongdeungpo, 76 from Amsa, and 49 from Guui, for a total of 312.
-
 <a id="ch14-i2"></a>
-
-#### B. Demand for More Water
-
-In May 2049, the Yeouido side demanded more water in place of payment for the parts. Han Seokjin extended the opening time of the valve toward Yeouido from 6 hours a day to 10. To cover the extra 4 hours, rations at Yeongdeungpo-gu Office Station fell from 2 liters per person per day to 1.6 liters.
-
 <a id="2050년"></a>
-
-### 2050 · Drought and Stopped Pumps
-
 <a id="ch14-i3"></a>
-
-#### A. The Shortfall
-
-From June to August 2050, drought reduced the intake from the Han River. The Yeongdeungpo purification center failed to meet its agreed supply volume for three months. The shortfall came to 22 percent of the agreed amount.
-
 <a id="ch14-i4"></a>
-
-#### B. Lending Halted
-
-In September 2050, the Yeouido families gave notice that they would stop lending new parts. The notice was signed by the representatives of all seven families. That same month, one pump on Line 1 of the Yeongdeungpo center''s filtration building stopped for lack of parts.
-
 <a id="era-3"></a>
 
-## Era 3 · Debt and Collateral (2051~2070)
+## Era 2 · The Station Generations
+
+The decades after the descent left almost no dated records. The stations remember them by generations: the people who came down, their children, and their children''s children. What follows is how those generations are remembered, in the order most stations tell it.
+
+### Counting Mouths
+
+Every station learned the same lesson early. A station can feed, heat and water only so many people. When that number is passed, someone goes without, and in the cold that means someone dies. So stations counted. They counted beds, ration bowls, litres of water and hours of power, and they wrote the counts down. A person who was counted had a place. A person who was not counted had to find one.
+
+By most accounts this is where the registers began. They were lists of who belonged to a station and what that station owed them. Later they became the backbone of the Government, but at first they were only a way to keep a station alive.
+
+### Heat, Water and Light
+
+Nothing that kept a station running was being made anymore. Pumps, heaters, cables, filters and generators all came from the world before the Great Blackout, and every one that failed was harder to replace than the last. The people who could keep them working became the most valuable people underground.
+
+Water mattered most. Pumps had to run for anyone to drink, and pumps needed power. Power needed parts, and the parts lay in buildings on the frozen surface. Every station''s survival hung on that chain, and every station guarded its own links of it.
+
+### Work That Passes to Children
+
+With no new infrastructure, the population could not grow. A station that had room for one more pump operator had room for exactly one, and it could not afford to train strangers. So people had their children take over the work they had been doing. The pump operator''s child became a pump operator. The cable worker''s child learned cable.
+
+By most accounts, the shelters that lost contact with each other first chose their leaders by vote, and the posts soon became hereditary in the same way. The vertical hierarchy that hardened this way has never loosened. In 2126 a person''s work, rank and place are still, for most people, what their parents'' were.
+
+### The Surface Belongs to the Cold
+
+The surface did not stay empty. Animals that could live in the endless cold spread through the streets, the parks and the empty buildings, and over the generations they changed the way people moved above ground. The tellings disagree on when each kind appeared. They agree that by the time the grandchildren of the first survivors went up for salvage, the surface was a place where the cold and the animals both had to be planned for. The [Hostile Ecology Index](/wiki/Hostile-Ecology-Index/) catalogues what lives there now.
+
+Salvage trips went up anyway. Everything a station needed that it could not make lay in the buildings above, and each generation went further to find it.
+
+### Life in a Station
+
+A station in these generations was a whole town folded underground. The concourse became the street. Platforms became rows of rooms, built from whatever would hold a wall: shelving, car panels, crates and blankets. The tracks were roads between stations, walked on foot or rolled along by hand carts, and every tunnel junction had someone watching it.
+
+Heat was the first thing every station organised around. Warm air rises toward the exits, so the deepest levels were the most valuable. The oldest families slept nearest the heaters, and newcomers slept nearest the stairs. Every station kept a rota for who tended the heaters, who fetched fuel and who checked the doors that kept the cold out.
+
+Food came from wherever it could. Some stations grew what would grow under lamps. Others traded water or power for food, or sent crews to the surface to bring back what was left in stores and warehouses. Every bowl was counted. Most of what is written in the oldest station logs is not history at all. It is lists of rations, hours and names.
+
+### Light and Time
+
+Underground there is no sun to tell the hour. Stations kept time by shifts instead: the heater shift, the pump shift and the quiet hours when only the door watch was awake. Lamps were rationed with the power, and most of a station lived in half light. Children born in the stations learned the difference between day and night from the shift bell, not the sky.
+
+The calendar survived anyway. Somebody in every station kept counting days and years, and that count is why these annals can give years at all. The counts drifted from station to station, which is one reason the records disagree about when things happened.
+
+### Clothes for a Winter That Does Not End
+
+Nobody in Seoul dresses for a season. Clothing is built in layers for a cold that never lifts: something close to the skin, something padded over it and something that stops the wind. Boots matter more than coats, because the floors of stations and tunnels draw the heat out of feet. A person going up to the surface wears everything they own and borrows what they lack.
+
+Over the generations, what people wore came to show what they did and what they were owed. A pump operator''s family could afford better felt than a porter''s. That pattern is described faction by faction in the society documents.
+
+### Salvage
+
+The surface is where everything that cannot be made still lies. Each generation sent crews up the stairs to bring it down: wire, glass, pipe, medicine, batteries, cloth and books. Salvage crews learned to read the cold, the animals and the light, and to be back below before any of the three turned against them.
+
+Every crew that went up carried its station''s best tools and its best weapons. Every crew that did not come back took them with it. Over a century, salvage became a trade like pump work or cable work, and it passed from parents to children in the same way.
+
+### Water Before Everything
+
+Of all the chains that held a station together, water was the one nobody could cut. Ice could be melted, but melting it took heat, and heat took fuel or power. Pumps could draw from deep pipes, but pumps took power and parts. A station that controlled a working pump could trade water for almost anything, and a station that lost one had days, not years, to find another.
+
+By most accounts, this is how the habit of water supply contracts began: agreements between the people who held pumps and the people who needed water, written down and renewed. The tellings disagree on who signed the first ones. They agree that by the end of the century, a water supply contract was one of the few agreements every faction in Seoul took seriously.
+
+### Medicine and Sickness
+
+The cold brought its own sicknesses, and the crowded stations spread them. Medicine came from the same place as everything else: the stores of the world before. Each generation had less of it. People learned which illnesses could be lived through with warmth and rest, and which needed medicine that might no longer exist. The [Ailments](/wiki/Ailments/) document describes them.
 
 <a id="2051년"></a>
-
-### 2051 · Humanoids Back in Motion
-
 <a id="ch18-i1"></a>
-
-#### A. Reusing Humanoids
-
-By the second generation, it had become possible to connect humanoids to local networks and use them again. In June 2051, a vehicle body factory in Yangjae was run by the Jeong family, headed by Jeong Mansu. The factory began reusing 12 field humanoids, cut off from the remote network, by having people control them directly. Control was by a wired controller connected to each unit''s back.
-
 <a id="2052년"></a>
-
-### 2052 · The Jeongdong Meeting
-
 <a id="ch19-i1"></a>
-
-#### A. The Jeongdong Meeting
-
-On November 2, 2052, some 380 workers from underground at City Hall Station held a meeting in a building in Jeongdong. Every person present cast one vote, and they chose Mun Jeonga as chair.
-
 <a id="2053년"></a>
-
-### 2053 · The Yeouido Accord
-
 <a id="ch15-i1"></a>
-
-#### A. The Meeting
-
-At 10:00 on March 14, 2053, Han Seokjin, head of the Yeongdeungpo Water Purification Center, and six representatives of the families that received water met seven representatives of the Yeouido families in a conference room on the Yeouido vault floor. The meeting lasted thirteen hours. The minutes were taken by Seo Eunha, granddaughter of Seo Minjae, the computer duty officer of the vault floor.
-
 <a id="ch15-i2"></a>
-
-#### B. The Accord
-
-The accord transferred management rights over eleven water supply facilities in the Yeouido area and around Yeongdeungpo Station to the Yeouido families. In return, all 312 promissory notes were cancelled. Around 23:10, the fourteen representatives of both sides signed it. The cancelled notes were punched through and bound together on the spot.
-
 <a id="ch15-i4"></a>
-
-#### C. The Name of the Association
-
-On March 14, 2053, the Yeouido families signed the accord. From then on they acted together under the name Yeouido Investors'' Association.
-
 <a id="ch15-i3"></a>
-
-#### D. Relocation of the Base
-
-Beginning on March 20, 2053, the Yeongdeungpo Water Purification Center side moved its base underground at Yangpyeong Station. The move took nine days. The center''s 45 volumes of operating logs went to the underground archive at Yangpyeong Station. The center''s equipment stayed in operation afterward.
-
 <a id="2054년"></a>
-
-### 2054 · Issuing the Certificates
-
 <a id="ch16-i1"></a>
-
-#### A. Issuance
-
-In May 2054 the Yeouido Investors'' Association issued certificates backed by the parts and chips held in its vault. The first issue numbered 10,000. Each certificate bore a serial number and the catalog number of the part backing it, and the seal of the issuing family was stamped on the back.
-
 <a id="2055년"></a>
-
-### 2055 · The Yangpyeong Station Contract Council
-
 <a id="ch17-i1"></a>
-
-#### A. Formation
-
-In February 2055 the water supply side, now at Yangpyeong Station, formed a contract council of representatives from the families that received water. Nine families each held one vote: those responsible for four lock gates, three reservoirs, and two rail depots. The first session met in the underground concourse of Yangpyeong Station.
-
 <a id="2056년"></a>
-
-### 2056 · The First Vote
-
 <a id="ch17-i2"></a>
-
-#### A. The First Vote
-
-In January 2056 Han Seokjin announced that he would step down. The contract council chose his successor by vote. Han Doyun, son of Han Seokjin and grandson of Han Jeonghun, won six of the nine votes.
-
 <a id="2057년"></a>
-
-### 2057 · Certificates in Circulation
-
 <a id="ch16-i2"></a>
-
-#### A. Circulation
-
-The certificates were first used in the parts trade. By 2057, Yongsan rail cart freight charges and Guro workshop wages were also paid in certificates. That same year more than 40,000 certificates were in circulation.
-
 <a id="2058년"></a>
-
-### 2058 · Forgery and Incorporation
-
 <a id="2058년-여의도출자연합회"></a>
-
-#### Yeouido Investors'' Association
-
 <a id="ch16-i3"></a>
-
-##### A. Forgery and Appraisers
-
-In August 2058 the first forged certificates, seventeen of them, turned up in Guro. Their catalog numbers referred to parts that were not in the vault. The Association appointed five people who could read equipment manuals as appraisers to check certificates. The appraisers compared catalog numbers against the vault ledger.
-
 <a id="2058년-태욱중공업"></a>
-
-#### Taeuk Heavy Industries
-
 <a id="ch18-i2"></a>
-
-##### A. Taeuk Heavy Industries
-
-In September 2058 Jeong Mansu named his factory Taeuk Heavy Industries. That same year six workshops around the factory were incorporated into Taeuk Heavy Industries. The incorporation documents were signed by Jeong Mansu and the head of each workshop.
-
 <a id="peninsula-2058-busan-sailings"></a>
 <a id="event-peninsula-2058-busan-sailings"></a>
-
-#### Yeongnam · Boats Afloat Again
-
-In 2058 sailors and repair workers in Busan picked out the vessels they could keep up from those stranded in port and resumed coastal sailings. Different people had supplied labor and materials for each vessel, so no port representative could order every departure. Shipowners passed loads through several hands along the southern coast to trade with merchants heading toward Seoul, and obtained materials for the next voyage.
-
 <a id="2059년"></a>
-
-### 2059 · The First Strike
-
 <a id="ch19-i2"></a>
-
-#### A. The First Strike
-
-In April 2059 the City Hall Station workers stopped work for three days in protest against Guro workshop wages being paid only in certificates. On the third day of the strike the council of Guro workshop masters agreed to pay one third of wages in water.
-
 <a id="2060년"></a>
-
-### 2060 · The Association''s First Chair
-
 <a id="ch16-i4"></a>
-
-#### A. The First Chair
-
-In January 2060 the representatives of the Association''s seven investing families elected a chair for the first time. Choe Yeongseon of the Choe family, which held the largest share, became chair. Votes were weighted by share.
-
 <a id="2061년"></a>
-
-### 2061 · The Election at the Government Complex Seoul
-
 <a id="ch19-i3"></a>
-
-#### A. The Presidential Election
-
-In March 2061 the twenty-three duty families of the Government Complex Seoul held a presidential election. Only families that had held duty posts for generations could vote. Yun Jaegyeong of the records duty family won with thirteen votes. Yun Jaegyeong took office by inspecting the original emergency order in the records box.
-
 <a id="2062년"></a>
-
-### 2062 · Sungha Electronics
-
 <a id="ch18-i3"></a>
-
-#### A. Sungha Electronics
-
-In March 2062 I Sangcheol of the I family, which managed a computer building near Gangnam Station, signed a lease with the Yeouido Investors'' Association for the server room keys. The lease ran twenty years at 3,000 certificates a year. I Sangcheol hung the name Sungha Electronics on the building.
-
 <a id="2063년"></a>
-
-### 2063 · A Proposal to Renegotiate
-
 <a id="ch17-i3"></a>
-
-#### A. The Proposal
-
-In the 2063 vote, Jo Minho, representative of a lock gate family, was elected. He was the son of Jo Gyeongtaek, who had lost the 2046 vote. In July 2063 Jo Minho proposed to the Association that the Yeouido Accord be rewritten. Association chair Choe Yeongseon refused in writing.
-
 <a id="2064년"></a>
-
-### 2064 · The White Flag
-
 <a id="ch20-i1"></a>
-
-#### A. White Flag Carts
-
-In May 2064 Jang Gitaek, transport chief of the Sinnae rail depot, began carrying the wounded and medicine on rail carts flying white flags. There were 31 runs in the first month. Cargo from any side was accepted. Jang Gitaek set this principle down on a single signed page.
-
 <a id="peninsula-2064-northern-coast-handoffs"></a>
 <a id="event-peninsula-2064-northern-coast-handoffs"></a>
-
-#### Northern Peninsula · Handoffs on the Northern East Coast
-
-In 2064 residents near the ports and railways around Hamhung and Chongjin passed freight and travelers along the short sections they kept up. Loads changed hands at each broken section, so a wagon and its contents could come from different places. Merchants sending goods toward Seoul had to find a new carrier at every handoff, and none could guarantee passage for the whole journey.
-
 <a id="2066년"></a>
-
-### 2066 · Inheritance and the White Cross
-
 <a id="2066년-태욱중공업"></a>
-
-#### Taeuk Heavy Industries
-
 <a id="ch18-i4"></a>
-
-##### A. Inheritance
-
-In February 2066 Jeong Mansu died, and his eldest son Jeong Taehun succeeded him as chairman of Taeuk Heavy Industries. In October of the same year, I Sangcheol handed the chairmanship of Sungha Electronics to his son I Junho.
-
 <a id="2066년-제기동"></a>
-
-#### Jegi-dong
-
 <a id="ch20-i2"></a>
-
-##### A. The White Cross
-
-In March 2066 fourteen doctors at the Jegi-dong hospital put on a white cross emblem and treated surface workers and underground residents alike. Their ranks were set by length of training. The first head, Gang Hyerin, named her successor in writing.
-
 <a id="2068년"></a>
-
-### 2068 · The Records Office Entry and the Dokdo Post
-
 <a id="ch19-i4"></a>
-
-#### A. The Records Office Entry
-
-In October 2068 Yun Jaegyeong, head of the Complex''s Records Office, recorded in the ledger that the National Assembly approval date field on the original emergency order was blank. Three witnesses who had examined the original signed beneath the entry.
-
 <a id="peninsula-2068-dokdo-watch"></a>
 <a id="event-peninsula-2068-dokdo-watch"></a>
-
-#### Dokdo · The Rotating Post
-
-In 2068, sailors repairing boats on Ulleungdo and the people who had inherited the Dokdo post records divided stays on Dokdo into shifts so they could receive the seasonal signals of fishing boats working to the east. When the boats bringing drinking water and repair materials to the post stopped coming, the crew was withdrawn first, and those who returned passed the docking and distress records to the next shift. The small post held on by relying on supplies from Ulleungdo and the coast.
-
 <a id="2069년"></a>
-
-### 2069 · Rolls and Inspections
-
 <a id="2069년-대한민국정부"></a>
-
-#### Government
-
 <a id="ch19-i5"></a>
-
-##### A. The Downtown Ration Roll
-
-In February 2069 the Government drew up a roll of residents of Jongno and Jung districts around Gwanghwamun Station. The ration window at the Government Complex Seoul issued food only to people on this roll.
-
 <a id="2069년-구의"></a>
-
-#### Guui
-
 <a id="ch20-i3"></a>
-
-##### A. Guui''s Dual Election
-
-In June 2069 Guui elected Go Myeongcheol as commander of the gate facing Achasan and Tak Hyeonu as garrison captain of the Guui Arisu Water Purification Center. The two met once each June to settle water supply and passage. The results of their first meeting were written up in two copies, and each kept one.
-
 <a id="2069년-xt01-임진-제방-임시-검역소"></a>
-
-#### Imjin Embankment Temporary Quarantine Station
-
 <a id="xt01-2069"></a>
-
-##### Joint Check of the Return Rolls
-
-In July 2069 the duty officer of the Anguk copying watch and the roll officer of the Gwanghwamun Complex checked the return rolls together at the Imjin embankment temporary quarantine station. The Sinnae rail cart officer recorded separately the handoff order for family queues and medicine crates. The Gangnam escort officer handled the transfer cars. The Guui gate commander''s side divided custody of the seal keys for the return guidance terminals.
-
 <a id="2069년-xt04-암사-야적장"></a>
-
-#### Amsa Yard
-
 <a id="xt04-2069"></a>
-
-##### Freight Car Weight Inspection
-
-In August 2069 the Amsa guard officer checked the weight records and brand marks of freight cars that had come in by the northeastern detour. The Sinnae rail cart officer moved the overweight cars to the rear. The Gangnam officer recorded the winter fuel rotation. The Jegi-dong officer took charge of frostbite patients. The Guui gate commander''s side sealed evidence of forged origin labels in evidence envelopes.
-
 <a id="2069년-xt05-여의도-회관"></a>
-
-#### Yeouido Hall
-
 <a id="xt05-2069"></a>
-
-##### The Residual Band Trust Window
-
-In September 2069 the rooftop officer at Yeouido Hall circulated the residual orbital slot numbers left at the Incheon window after the Great Blackout, intending to send them to the trust receiving window. The Yeongdeungpo water gate officer cross-checked transmission and pump operating times. The officer of the Government Complex Seoul at Gwanghwamun copied the hash of the delivery list into the observers'' ledger. The City Hall labor officer checked the round entries in the remittance records. The Yangjae factory officer weeded out false alarms from the orbital terminals. The Myeongdong watch drew up queue tickets for multilingual consultation.
-
 <a id="2070년"></a>
-
-### 2070 · Rejection and the Guard Force
-
 <a id="2070년-수문국"></a>
-
-#### Water Gate Bureau
-
 <a id="ch17-i4"></a>
-
-##### A. Rejection
-
-In April 2070 the Water Gate Bureau contract council put a new draft accord for Yeouido to a vote for the third time. It failed, four votes for and five against. All five families that voted against were responsible for the water mains running toward Yeouido.
-
 <a id="2070년-대한민국정부"></a>
-
-#### Government
-
 <a id="ch19-i6"></a>
-
-##### A. The Complex Guard
-
-In September 2070 the standing guard of the Complex drew up muster rolls for Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga stations. The guard took on rotating watches at all three stations.
-
 <a id="era-4"></a>
 
-## Era 4 · Three Branches (2071~2090)
+## Era 3 · Machines That Cannot Be Replaced
+
+The world before the Great Blackout had modern weapons, drones, humanoids and machines that could replace parts of the body. All of them survived into the stations. None of them could be made again in any number. This era is remembered as the time when people learned to live with machines they could not replace.
+
+### Guns Without Factories
+
+Modern firearms never disappeared. Rifles, pistols and shotguns came down into the stations with the people who carried them, and they still work. What ran short was ammunition. Every round fired is one fewer round in the world, and the stations learned to count rounds the way they counted water.
+
+By most accounts, spent brass became something people picked up after every fight. Casings can be filled again, though the parts that make a round fire are much harder to replace. Guns became things families handed down, and a full magazine became something to show off rather than to spend. People still carry blades and clubs, because those cost nothing to keep, but nobody in Seoul mistakes them for the better weapon.
+
+### The Drone Years
+
+Drones came out of storerooms, police stations and military depots. They flew short flights on worn batteries, scouting exits before salvage crews went up and watching tunnels between stations. Batteries were the hard limit. Many of them will not take a charge in deep cold, so drones were kept warm, flown briefly and brought back down. A station that kept a working drone for a generation had something worth guarding.
+
+The machines outside Seoul fly too. In 2126 people still vanish on the surface because of drones that drift beyond the city on old orders. Every station keeps that fear in mind.
+
+### Humanoids
+
+Humanoid machines survived in small numbers. Some carried loads, some worked in places too cold for people, and some stood guard. Each one needed parts nobody could make. They became rarer with every generation, and the people who could keep them moving were valued as highly as the machines.
+
+### Metal in the Body
+
+Cyberware is living technology in Seoul. Mechanical body parts work, and people use them. They are also scarce. Each part needs maintenance, power and spare parts, and someone has to hold all three. Who gets a machine body, and who keeps one working, depends on whether a person can reach the people and the faction that control that upkeep.
+
+By most accounts, cyberware first spread as repair: a hand replaced after an accident on a pump, a leg after a fall through a frozen stairwell. Only later did it come to mean rank in one place and faith in another. A body part that cannot be serviced is a burden, and the stations learned that the hard way.
+
+### Upkeep Is Power
+
+By the end of this era, the stations understood that the scarce thing was not the machine. It was the upkeep. A rifle without rounds is a club. A drone without a charged battery is a box. A machine hand without a technician is dead weight on an arm. The people and groups who held the workshops, the spare parts and the power to charge things decided who could use the machines at all.
+
+| What a machine needs | Why it is scarce | Who it made powerful |
+|---|---|---|
+| Maintenance | Few people can repair it, and they train only their own children | Families of technicians |
+| Power | Generators are old and fuel is rationed | Whoever holds the generators and the lines |
+| Spare parts | Nothing new is made, so every part comes from salvage or from another machine | Whoever holds the stores and the salvage routes |
+| Ammunition | Rounds are spent once; casings can be reused, but the rest is hard to replace | Whoever holds the workshops and the stock |
+
+This table is the shape of power in Seoul. The three ways of holding a station that grew out of these generations are three different answers to the same question: who keeps the machines working, and for whom.
+
+### Cold and Batteries
+
+The cold is the machines'' enemy as much as it is the people''s. Batteries lose their charge fast in deep cold, and many will not charge at all below freezing. Every working device in Seoul is kept warm before it is used. People carry batteries inside their clothes, next to their bodies, and charge them in the warmest rooms of the station. A powered machine hand or a drone is only as useful as the warm place where its battery waits.
 
 <a id="2071년"></a>
-
-### 2071 · The Samseong Station Band
-
 <a id="ch21-i1"></a>
-
-#### A. Formation
-
-In February 2071 Oh Seonggyu, who kept the Samseong Station residents'' roll, gathered some 120 men from among those listed on it into a band that wrecked surface patrol units. Its first operation, in March 2071, wrecked two patrol units in Yeoksam-dong.
-
 <a id="2072년"></a>
-
-### 2072 · A Brief Entry
-
 <a id="ch22-i1"></a>
-
-#### A. Formation
-
 <a id="2073년"></a>
-
-### 2073 · Alliance and Copying
-
-#### Samseong Station
-
 <a id="ch21-i2"></a>
-
-##### A. Alliance
-
-In May 2073 the Samseong Station band sent forty members each to the Amsa guard and to Go Myeongcheol, the Guui gate commander, to fight alongside them. The Amsa guard commander was Bae Jinhyeok, eldest son of Bae Hyeonsu.
-
 <a id="2073년-안국역"></a>
-
-#### Anguk Station
-
 <a id="ch23-i1"></a>
-
-##### A. Choosing a Head
-
-In August 2073 some forty people copying equipment manuals at Anguk Station chose Hyean as their head. The choice was made with the consent of everyone present.
-
 <a id="2074년"></a>
-
-### 2074 · The First Surface Crackdown
-
 <a id="ch21-i3"></a>
-
-#### A. The Nonhyeon-dong Arrests
-
-In September 2074 members of the Samseong Station band seized three people on the surface in Nonhyeon-dong. The three were released three days later.
-
 <a id="2075년"></a>
-
-### 2075 · Ledger Registration
-
 <a id="ch22-i2"></a>
-
-#### A. Ledger Registration
-
-In February 2075 the Yongsan rail families began having inheritance by eldest sons confirmed by entry in a ledger. The first to be confirmed was the Bak family. That same year the family of Taeuk Heavy Industries chairman Jeong Taehun also registered a marriage in the same ledger.
-
 <a id="2076년"></a>
-
-### 2076 · Succession
-
 <a id="ch21-i4"></a>
-
-#### A. Succession
-
-In January 2076 Oh Seonggyu died, and his son Oh Junhui succeeded him as leader of the Samseong Station band. Seventeen elders held a confirmation vote: fifteen in favor, two abstentions.
-
 <a id="2077년"></a>
-
-### 2077 · Training in Copying
-
 <a id="ch23-i2"></a>
-
-#### A. Training in Copying
-
-In January 2077 the Yangpyeong Station contract council and the council of Guro workshop masters invited six Anguk Station copyists to serve as readers of equipment manuals. About thirty technicians from the two groups learned copying at Anguk Station. The training lasted one year.
-
 <a id="2078년"></a>
-
-### 2078 · A Brief Entry
-
 <a id="ch22-i3"></a>
-
 <a id="2079년"></a>
-
-### 2079 · Inspection of Documents and Cargo
-
 <a id="ch24-i1"></a>
-
-#### A. Inspection of Technical Documents
-
-In October 2079 the Central Intelligence Bureau announced that it would inspect and preserve lost technical documents.
-
 <a id="2079년-xt02-한강-하구-임시-부두"></a>
-
-#### Han River Estuary Temporary Wharf
-
 <a id="xt02-2079"></a>
-
-##### Joint Inspection of Estuary Cargo
-
-In November 2079 the Yeongdeungpo floodgate watch checked the tide tables of the Han River Estuary Temporary Wharf against the drainage valve records. The Guro workshop watch recorded the sequence numbers of compressor parts. The Yangjae factory watch isolated crates whose hashes were broken. The Central Intelligence Bureau''s Heukseok watch corrected the refrigeration sequence. The Yeouido hall watch circulated the inspection sheet.
-
 <a id="2079년-xt03-용산-환적창"></a>
-
-#### Yongsan Transshipment Depot
-
 <a id="xt03-2079"></a>
-
-##### Three-Way Relay Report
-
-In December 2079 the Yongsan rail watch entered into the transshipment ledger a three-way relay report that had arrived from across the strait. The City Hall labor watch noted which cars could be turned back inland. The Myeongdong certification watch sealed the certification envelopes. The Samseong Station register watch checked the recipients of the sealed cargo. The Central Intelligence Bureau''s Heukseok watch recorded separately the items whose interpreted terms differed.
-
 <a id="2080년"></a>
-
-### 2080 · The Director''s Examination
-
-#### Central Intelligence Bureau
-
 <a id="ch24-i2"></a>
-
-##### A. The Director''s Examination
-
-The Director of the Heukseok Preservation Institute was chosen by a ledger reading examination. The first examination was held in February 2080 with 41 candidates. The papers were graded by a terminal in the Institute''s basement. Jin Seou, who placed first, became the first Director.
-
 <a id="2082년"></a>
-
-### 2082 · Rejection of Transcribed Copies
-
 <a id="ch23-i3"></a>
-
-#### A. Copies Refused
-
-In June 2082 the Samseong Station band gave notice that it would no longer admit, at the Amsa and Guui gates, technicians who used the Anguk Station copies. The notice was signed by Oh Junhui.
-
 <a id="2084년"></a>
-
-### 2084 · Placement of Successful Candidates
-
 <a id="ch24-i3"></a>
-
-#### A. Placement of Successful Candidates
-
-In 2084 nine candidates who had passed the Preservation Institute examination found positions at the Yangpyeong Station contract council and the Guro workshop. Four of them were technicians who had learned copying at Anguk Station.
-
 <a id="2085년"></a>
-
-### 2085 · Gate Crackdown
-
 <a id="ch25-i2"></a>
-
-#### A. The Crackdown
-
-From April 2085 the Samseong Station band began detaining workers at the Amsa and Guui gates. Twelve were detained in the first month. The names of those detained were struck from the gate passage register.
-
 <a id="2087년"></a>
-
-### 2087 · Honam Refuses Contracts
-
 <a id="peninsula-2087-honam-contract-refusal"></a>
 <a id="event-peninsula-2087-honam-contract-refusal"></a>
-
-#### Honam · Seoul Merchants Demand a Monopoly
-
-In 2087 merchants from Seoul who had come by way of the West Sea tried to buy up the following year''s grain in advance, and some producing areas in Honam refused the contracts. Shipowners divided their loads between Seoul-bound cargo, which fetched higher prices, and the food that had to stay in the villages. Finding that dealing with a single port would not get them the quantities they wanted, the Seoul merchants negotiated prices anew with each producing area.
-
 <a id="2088년"></a>
-
-### 2088 · Inspection of Copies Delegated
-
 <a id="ch24-i4"></a>
-
-#### A. Inspection of Copies Delegated
-
-In May 2088 the Preservation Institute asked to take over the inspection of the Anguk Station copies. The Anguk Station copyists agreed. Some 1,200 volumes were moved to Heukseok and returned after inspection.
-
 <a id="2090년"></a>
-
-### 2090 · A Brief Entry
-
 <a id="ch25-i3"></a>
-
-#### A. The Record for 2090
-
 <a id="era-5"></a>
 
-## Era 5 · The Age of the Line''s End (2091~2110)
+## Era 4 · Three Ways to Hold a Station
+
+Over the long middle of the century the stations sorted themselves into three ways of living. Two of them had taken their shape before Go Ye-jin was born. The third was hers.
+
+| Faction | Territory | Duchies | How it holds power |
+|---|---|---|---|
+| Government | North of the Han River | 14 | Three branches and many parties on paper; in practice two parties and a modern feudal order |
+| Free City (Union) | The southwest | 7 | Independent city-states of engineers with no king |
+| Arc | Gangnam | 4 | Family rule under the Messiah Go Ye-jin |
+
+Each district is one duchy. Seoul''s 25 duchies are split 14 to the Government, 7 to the Free City and 4 to the Arc. The names of places and stations are those of old Seoul.
+
+### North of the River: The Government
+
+The Government holds the 14 districts north of the Han River. On paper it still keeps the ministries of the three branches of the Republic of Korea and a multiparty system. In practice there are only two parties, the OMO Party and the Claw Party, and underneath the forms it is a modern feudal order.
+
+The member of the National Assembly elected from each district holds that district''s duchy, with the title of Senator. The Senators gather candidates from among themselves and put forward a President, who serves for life. Since the collapse, the Government has counted as citizens only the people recorded in its own ledgers, and those people are serfs in all but name. The old station registers grew into this. The Government regards everything across the river as the place where the barbarians live.
+
+### The Southwest: The Free City
+
+The Free City holds the 7 districts of the southwest. It is not one power. It is a set of independent city-states, like the poleis of ancient Greece, and each city holds its own duchy. There is no king.
+
+Most of the people there are engineers who trade goods and skills with one another. Plumbing, power distribution and water purification all depend on each other, and there was never any way to decide whose skill counted for more. So they never managed to choose a leader, and the cities survived by trading with one another instead. I Ilseop is the Duke of Gwanak. Today the cities are called the Union as a group. When Go Ye-jin was growing up, it was simply the Free City.
+
+### How the Ledgers Work
+
+A Government ledger is more than a list of names. It records where a person sleeps, what work they do, what ration they draw and whom they answer to. It records children when they are born and work when it is inherited. A person in the ledger can be called up for labour, for the guard or for war, and a person in the ledger can ask for heat, water and upkeep in return.
+
+A person outside the ledger has none of that. They can live in a Government station only by someone''s leave, and they can be turned out. For most people north of the river the choice was never a real one. Being written down is being alive.
+
+The details of levy, rations and rank belong to the [Government Society](/wiki/Government-Society/) document.
+
+### How the Cities Trade
+
+In the Free City, a pump, a junction box or a purifier is worth what it can do for the people who need it. Engineers trade parts for repairs, repairs for power, and power for food. A city that keeps a good purifier can ask a lot of its neighbours. A city whose generator fails has to ask a lot of them in turn.
+
+Nobody rules this trade. Each city keeps its own rules, and the cities argue about them constantly. What holds it together is that every city needs the others'' skills, and none of them can do all the work alone. The [Free City Society](/wiki/Free-City-Society/) document describes the cities'' markets and daily life.
+
+### Gangnam Before the Arc
+
+Gangnam''s stations sat at the edge of everything. They were close enough to the Free City to trade with it, but they belonged to no city. Each shelter looked after itself.
 
 <a id="2095년"></a>
-
-### 2095 · Workshops and Computing Buildings
-
 <a id="ch26-i4"></a>
-
-#### A. Workshops and Computing Buildings
-
-In May 2095 Taeuk Group controlled Taeuk Heavy Industries and the eleven workshops under it. Sungha Group controlled four computing buildings around Sungha Electronics.
-
 <a id="2097년"></a>
-
-### 2097 · The Water Gate Bureau''s Waterway Contract
-
 <a id="ch27-i1"></a>
-
-#### A. The Contract
-
-In June 2097 the Water Gate Bureau signed a contract with the waterway keepers of Yangpyeong and Chuncheon. Yangpyeong sent 34 representatives and Chuncheon 51. The Water Gate Bureau named the two places First Water Gate and Second Water Gate. In return for managing the Bureau''s waterways, both were entered in the Yangpyeong Station ration register.
-
 <a id="2098년"></a>
-
-### 2098 · The Eastern Command''s Guard Districts
-
 <a id="ch28-i1"></a>
-
-#### A. Guard Districts
-
-In September 2098 the Eastern Command grouped its surface strongholds in Hanam, Namyangju, and Uijeongbu and Yeoncheon into the First, Second, and Third Guard Districts. Each Guard District sent guard personnel to Amsa twice a year, in spring and autumn.
-
 <a id="2099년"></a>
-
-### 2099 · The Name Chuncheon
-
 <a id="ch27-i2"></a>
-
-#### A. Demand for a Name Change
-
-In March 2099 a demand arose in Chuncheon to use the old city name instead of Second Water Gate. Some 1,100 Chuncheon residents signed the petition. The Water Gate Bureau''s contract council rejected it by two votes in favor to seven against.
-
 <a id="peninsula-2099-chuncheon-name"></a>
 <a id="event-peninsula-2099-chuncheon-name"></a>
-
-#### Gangwon · Chuncheon After the Rejection
-
-Even after the demand was rejected in March 2099, the boatmen and market traders of Chuncheon kept using the name Chuncheon on their goods and signboards. The 2097 waterway contract with the Water Gate Bureau remained in force, but the name in the contract did not change the residents'' daily lives. Merchants from Seoul learned that the Second Water Gate of the contract and the Chuncheon they heard in the market referred to the same stronghold.
-
 <a id="2100년"></a>
-
-### 2100 · Tolls at the Ends of the Line
-
 <a id="ch29-i1"></a>
-
-#### A. Terminals
-
-In July 2100 the Transshipment Bureau designated the end-of-line strongholds at Incheon and Paju as First Terminal and Second Terminal and began collecting tolls. Tolls were paid in certificates according to cargo weight.
-
 <a id="2101년"></a>
-
-### 2101 · Taeuk Heavy Industries'' Worksites
-
 <a id="ch28-i2"></a>
-
-#### A. Worksites
-
-In March 2101 Taeuk Group named its factory strongholds in Seongnam and Suwon the Taeuk Heavy Industries Seongnam Worksite and Suwon Worksite. Both worksites sent parts and workers to Yangjae along the Sinbundang Line. In the first year the Seongnam Worksite had some 1,400 workers.
-
 <a id="2102년"></a>
-
-### 2102 · The Standards League''s Branch Workshops
-
 <a id="2102년-규격맹"></a>
-
-#### Standards League
-
 <a id="ch29-i2"></a>
-
-##### A. Branch Workshops
-
-In April 2102 the Standards League admitted the workshops of Cheonan-Asan and Siheung as the First Branch Workshop and Second Branch Workshop. The First Branch Workshop was entrusted to the I family of Cheonan-Asan. The branch workshops sent parts made to the League''s specifications to Guro.
-
 <a id="2102년-제1분공방"></a>
-
-#### First Branch Workshop
-
 <a id="ch42-i1"></a>
-
-##### A. The I Family
-
-The First Branch Workshop joined the Standards League in 2102. Thereafter the I family of Cheonan-Asan managed the First Branch Workshop under the Standards League. The family looked after the rail yard at the southern end of Line 1 and four workshops. I Ilseop was heir of the I family. As of 2126 I Ilseop is the Duke of Gwanak.
-
 <a id="2104년"></a>
-
-### 2104 · The Yeongjong Branch and the Imjin Embankment
-
 <a id="ch29-i3"></a>
-
-#### A. The Yeongjong Branch
-
-In October 2104 the Yeouido Investors'' Association opened the Yeongjong Branch at Yeongjong, terminus of the Airport Railroad. The Yeongjong Branch exchanged payments from outside trade for Association certificates and took a fee of three percent.
-
 <a id="2104년-xt01-임진-제방-임시-검역소"></a>
-
-#### Imjin Embankment Temporary Quarantine Station
-
 <a id="xt01-2104"></a>
-
-##### Reissue of a Damaged Register
-
-In November 2104 a return register that had come from the north to the Imjin Embankment Temporary Quarantine Station was soaked by rain and damaged. The reissue of the damaged lines fell to the Anguk Station copyists. The Government''s Gwanghwamun watch verified the authenticity of the kinship certificates submitted. The Achasan Gate Command''s Guui gate watch divided the seal keys for safekeeping. Sinnae Transport moved the transfer cars for the family queue. Sungha Group provided a separate car for escorting medicine.
-
 <a id="2106년"></a>
-
-### 2106 · Gyeonggi Province and the Stamp Duty
-
 <a id="ch29-i4"></a>
-
-#### A. Gyeonggi Province
-
-In January 2106 the Government began calling its administrative stronghold in Goyang Gyeonggi Province. Gyeonggi Province sent its military service register and stamp duty to Gwanghwamun. In the first year some 2,300 people were entered in the military service register.
-
 <a id="ch29-i5"></a>
-
-#### B. Seals and Stamp Duty
-
-In June 2106 the Government ruled that passes in Jongno and Jung-gu must bear the seal of the Government Complex Seoul. Commercial contracts in Jongno and Jung-gu could be entered in the Records Office ledger only if they bore the seal. Stamp duty was levied on passes and contracts.
-
 <a id="2107년"></a>
-
-### 2107 · The Guui Water Clash
-
 <a id="ch30-i1"></a>
-
-#### A. The Guui Clash
-
-In August 2107 the Eastern Command and the Achasan Gate Command came to blows over the water supply at Guui. The clash lasted two days, with some 40 casualties on both sides. Six Sinnae Transport carts carried the wounded of both sides to Jegi-dong, where the White Cross Corps treated them.
-
 <a id="2109년"></a>
-
-### 2109 · Sinnae Transport''s Pledge
-
 <a id="ch30-i2"></a>
-
-#### A. The Pledge
-
-In February 2109 the owning family of Sinnae Transport rewrote its pledge never to pick and choose cargo in any conflict. The pledge was hung in the waiting room of Sinnae Station.
-
 <a id="2110년"></a>
-
-### 2110 · The Records Office Ledger
-
 <a id="ch30-i3"></a>
-
-#### A. The Records Office Ledger
-
-In December 2110 the names of many organizations, families, and councils in and around Seoul, together with the names of thirteen strongholds, were all entered in the Government''s Records Office ledger. Twenty-nine documents sent by the organizations were attached as the basis for the entries.
-
 <a id="era-6"></a>
-
-## Era 6 · Eve of the Opening (2111~2126)
-
 <a id="2111년"></a>
-
-### 2111 · Submission of Succession Documents
-
 <a id="ch30-i4"></a>
 
-#### A. Succession and Treaties
+## Era 5 · A Child of the Free City
 
-In March 2111 the Water Gate Bureau, the Eastern Command, the Achasan Gate Command, the Transshipment Bureau, Sinnae Transport, the Standards League, and the White Cross Corps submitted to the Records Office the succession documents of their heads and the originals of the treaties concluded among them. The Records Office returned sealed certified copies to each organization.
+Go Ye-jin grew up in a Free City. In her childhood nobody called the cities the Union. They were the Free City, a place of engineers who argued about whose work mattered more and traded whatever they could not make.
+
+Like most children there, she learned the work around her. By most accounts it was power: lines, junctions and the cables that carried current between stations. In a city with no ruler, that work was the closest thing to authority. Whoever kept the lights on was listened to.
+
+The century was old by then. The Government''s ledgers had hardened into law north of the river. The Free City traded and quarrelled in the southwest. The machines outside Seoul kept following their last orders, the winter kept on, and nobody expected anything to change.
+
+### Across the River
+
+The Government and the Free City were never one people, and the Han River made that plain. North of the river, the ledger decided who belonged. South and west of it, skill and trade decided who mattered. People crossed for trade and for work, and they crossed back. Neither side ever ruled the other.
+
+### The Land Beyond Seoul
+
+The land outside the city belongs to the war machines. Some still walk, some still fly and some lie still until something comes close. None of them answer to anyone in Seoul. Salvage crews do not go far beyond the last stations, and the routes they use are passed from parents to children like any other piece of hard-won knowledge.
+
+### What a Century Teaches
+
+By the time Go Ye-jin was a child, the lessons of the century were settled. The winter does not end. Nothing new is made. Every machine, every round and every part is a debt that the past left behind and the present has to pay down. And the one who keeps things working is the one people follow.
+
+## How the Century Is Remembered
+
+Each faction tells the hundred years in its own way, and each telling leaves out what does not suit it.
+
+The Government remembers the century as the story of its ledgers. In its telling, the stations survived because someone wrote down who belonged and what they were owed, and the Government is the heir of everyone who ever kept a list. It says little about the people who were never written down.
+
+The Free City remembers the century as the story of its work. In its telling, the stations survived because someone kept the pumps running and the lines live, and no one person can claim the credit. It is proud that it never chose a king and quiet about how often the cities quarrelled.
+
+The Arc remembers the century as a long wait. In its telling, the hundred years before 2112 were the time when people lived beside the First AI''s answer without understanding it, and the century only began to make sense when Go Ye-jin followed the dead cable. The Arc''s telling is the youngest of the three.
+
+All three agree on the winter, the stations and the machines outside the city. They agree on very little else.
 
 <a id="2112년"></a>
-
-### 2112 · Succession at Taeuk Group and the Station Not on the Map
-
-That year, while repairing the Free City''s power grid, Go Ye-jin followed a dead cable and found a station not on any map. Go Ye-jin spent five years, from that year until 2117, reading the manuals that came out of that station.
-
 <a id="ch31-i1"></a>
-
-#### A. Death of the Chairman
-
-On April 9, 2112, Taeuk Group Chairman Jeong Ilhwan died in his quarters at the Yangjae headquarters. Jeong Ilhwan had one child, a daughter, Jeong Seoon.
-
 <a id="ch31-i2"></a>
-
-#### B. The Clan Meeting
-
-On April 13, 2112, nine elders of the Jeong clan met at the clan hall in Yangjae. The meeting resolved to install Jeong Ucheol, a man from a cadet branch, as Chairman. Seven signed the resolution.
-
 <a id="ch31-i3"></a>
-
-#### C. Announcement of Accession
-
-On April 15, 2112, Jeong Seoon announced her accession as Chairman on the basis of the shareholding documents left by her father and two sets of shareholders'' meeting minutes. According to the shareholding documents, Jeong Ilhwan held 51 percent of all Taeuk Group.
-
 <a id="ch31-i4"></a>
-
-#### D. Shareholders'' Approval
-
-On April 28, 2112, a shareholders'' meeting was held. Of the 43 shareholders present, 29 voted in favor of Jeong Seoon''s accession. The two representatives of the cadet branch did not sign the minutes.
-
 <a id="ch31-i5"></a>
 
-#### E. Entry in the Genealogy
+## 2112 · The Dead Cable
 
-In October 2112 Jeong Seoon''s name was entered in the revised Jeong genealogy without the generation character. All eleven men of the same generation were entered under names that included it.
+In 2112, while repairing the Free City power grid, Go Ye-jin followed a dead cable. It led her somewhere no map showed: a station that was on no map at all.
+
+Every station in Seoul is counted, named and argued over. A station nobody knew about was not supposed to exist. She found it anyway, and she found manuals there.
 
 <a id="2113년"></a>
-
-### 2113 · A Gap in the Record
-
 <a id="ch40-i1"></a>
-
 <a id="2114년"></a>
-
-### 2114 · Petition for Certification and Cargo Inspection
-
 <a id="2114년-태욱그룹"></a>
-
-#### Taeuk Group
-
 <a id="ch32-i1"></a>
-
-##### A. Petition for Confirmation
-
-In February 2114 Taeuk Group filed a petition asking that Jeong Seoon''s succession as Chairman be confirmed as inheritance by a legitimate heir. Attached to the petition was a note that Jeong Ilhwan''s marriage had been registered in the ledger in 2089. The petition was accepted but received no answer.
-
 <a id="ch32-i2"></a>
-
-##### B. The Cadet Branch''s Visit
-
 <a id="2114년-성하그룹"></a>
-
-#### Sungha Group
-
 <a id="ch40-i2"></a>
-
-##### A. Chairman I Hongwon
-
-In 2114 the chairman of Sungha Group died. A succession examination was held among the heirs of the I family. I Hongwon succeeded to the chairmanship.
-
 <a id="2114년-xt02-한강-하구-임시-부두"></a>
-
-#### Han River Estuary Temporary Wharf
-
 <a id="xt02-2114"></a>
-
-##### Compressor Shutdown
-
-In June 2114 the refrigeration compressor used for storing cargo at the Han River Estuary Temporary Wharf stopped for a week. The Standards League changed the order in which replacement parts were issued at Guro. The Central Intelligence Bureau''s Heukseok watch corrected the refrigeration sequence. The Water Gate Bureau''s Yeongdeungpo watch checked the operating hours of the drainage gates. Taeuk Group isolated the crates with damaged seal hashes. The Yeouido Investors'' Association circulated a notice suspending acceptance of refrigerated cargo.
-
 <a id="2114년-xt04-암사-야적장"></a>
-
-#### Amsa Yard
-
 <a id="xt04-2114"></a>
-
-##### Reinspection of Weight Cars
-
-In October 2114 the Eastern Command''s Amsa watch reinspected the freight cars arriving by the northeastern bypass whose marked weights differed from the weighing records. Sinnae Transport moved those cars'' transfer sequence. Sungha Group rewrote the receiving order for winter fuel drums. The White Cross Corps'' Jegi-dong watch confirmed the transport cars for frostbite patients. The Achasan Gate Command sealed the forged origin labels attached to the cars in evidence envelopes.
-
 <a id="2115년"></a>
-
-### 2115 · Demand for Incorporation
-
 <a id="ch33-i1"></a>
-
-#### A. Demand for Incorporation
-
-In 2115 the Achasan Gate Command elected Go Seojun as Gate Commander. In July 2116 the Eastern Command sent the Achasan Gate Command a document demanding that the Guui Garrison be placed under Eastern Command authority. Go Seojun and Guui Garrison Commander Tak Seoyun each sent a letter of refusal.
-
 <a id="2116년"></a>
-
-### 2116 · The White Cross Corps'' Successor
-
 <a id="ch40-i3"></a>
 
-#### A. Corps Head Ryu Eunbi
+## 2112 to 2117 · Five Years of Manuals
 
-In 2116 the head of the White Cross Corps designated Ryu Eunbi as successor.
+From 2112 to 2117, Go Ye-jin read the manuals for five years. What she learned there she has told only in part.
+
+She came to call the First AI "God," because human language had no better word for it. She did not mean that it should be hated. She meant that it was the one that had answered, and that its answer still shaped every life in Seoul.
 
 <a id="2117년"></a>
-
-### 2117 · A Marriage Proposal and the First Baptism
-
-Around this year Go Ye-jin finished her five years of reading the manuals, and twelve people received the first baptism, in which parts of the body were replaced with machines.
-
 <a id="2117년-태욱그룹"></a>
-
-#### Taeuk Group
-
 <a id="ch32-i3"></a>
-
-##### A. The Marriage Proposal
-
-In September 2117 a letter arrived in Yangjae proposing a marriage between Jeong Seoon and Bak Taegyeom, eldest son of the Bak rail-line family of the Transshipment Bureau. The letter bore the names of the head of the Bak family and four elders of the Jeong clan. Jeong Seoon did not answer the letter.
-
 <a id="2117년-동방사"></a>
-
-#### Eastern Command
-
 <a id="ch36-i1"></a>
 
-##### A. Commander Bae Ujin
+## Around 2117 · Twelve Baptisms
 
-In 2117 the commander of the Eastern Command died. The chief of staff held emergency oversight for one year. In 2118 the commander''s eldest son, Bae Ujin, took office as commander.
+Around 2117, Go Ye-jin gave the first baptism. Twelve people received it.
+
+A baptism replaces a part of the body with machinery. To the people who received it, it was not a repair and not a privilege of rank. It was a sign of faith. In the community that grew around Go Ye-jin, faith came to be counted by the number of implanted parts.
+
+Every part needed the same upkeep that any cyberware needs: maintenance, power and spare parts. A faith that counts metal in the body is a faith that has to keep that metal working.
+
+### What the Twelve Carried
+
+The tellings of the first twelve are short. They let Go Ye-jin change their bodies. After that baptism, the twelve carried the sign of the faith in their own flesh and metal, and anyone who met them could see it. The faith did not need to be explained when its proof could be shown.
 
 <a id="2118년"></a>
-
-### 2118 · Examinations and an Expedition
-
 <a id="2118년-중앙정보부"></a>
-
-#### Central Intelligence Bureau
-
 <a id="ch34-i1"></a>
-
-##### A. The Top Ranks Taken
-
-In February 2118, eighty-eight candidates sat the Central Intelligence Bureau''s director''s examination. Technicians from the Water Gate Bureau and the Standards League took all of the top ten places.
-
 <a id="2118년-신내운수"></a>
-
-#### Sinnae Transport
-
 <a id="ch39-i1"></a>
-
-##### A. President Jang Sehwa
-
-In 2118 the president of Sinnae Transport died. Jang Sehwa succeeded to the presidency.
-
 <a id="peninsula-2118-tsushima-expedition"></a>
 <a id="event-peninsula-2118-tsushima-expedition"></a>
-
-#### Tsushima · The Expedition Sets Sail
-
-In 2118 shipowners around Busan hired an escort force to recover ships and people seized in the strait. Some Tsushima sailors who had lost their passage through the harbor supplied information about the landings, and the expedition came ashore at one of the ports. The escort force broke the defensive positions and recovered the ships, but the shipowners and their local collaborators understood differently how the recovered goods were to be shared.
-
 <a id="2119년"></a>
-
-### 2119 · A Year of Succession
-
 <a id="2119년-중앙정보부"></a>
-
-#### Central Intelligence Bureau
-
 <a id="ch34-i2"></a>
-
-##### A. Director Oh Hae-rin
-
-In the Central Intelligence Bureau''s director''s examination of February 2119, Oh Hae-rin, keeper of the keys at the Noryangjin cold storage warehouse, placed first. Oh Hae-rin took office as director of the Preservation Institute on March 1, 2119.
-
 <a id="2119년-수문국"></a>
-
-#### Water Gate Bureau
-
 <a id="ch35-i1"></a>
-
-##### A. Han Jaemok Elected
-
-In 2119 the contract council of the Water Gate Bureau chose Han Jaemok as head of the bureau.
-
 <a id="ch35-i2"></a>
-
-##### B. Yangcheon District Chief
-
-In the same year Han Jaemok installed I Seodam as chief of the Yangcheon district. At this time a procedure requiring the joint signatures of ration district representatives before any water gate was opened was written into the bureau''s regulations.
-
 <a id="2119년-시청역-노동자들"></a>
-
-#### City Hall Station Workers
-
 <a id="ch37-i1"></a>
-
-##### A. Im Hajun
-
-In 2119 the leader of the City Hall Station workers died. Oh Gyeongjae, eldest son of the Oh family, was still a minor. The members held a confirmation vote and entrusted that role to Im Hajun.
-
 <a id="2119년-신종목"></a>
-
-#### Sin Jong-mok
-
 <a id="ch43-i1"></a>
-
-##### A. The Last Operation
-
-In November 2119 Sin Jong-mok, senior operative of the Eastern Command''s Special Recovery Unit, returned from his last recovery operation with refugees who were not on the roster. His return report recorded insubordination and the loss of issued supplies. Some of the unit members who had held the line of retreat were listed as missing.
-
 <a id="2119년-지연희"></a>
-
-#### Ji Yeon-hui
-
 <a id="ch46-i1"></a>
-
-##### A. Refuge
-
-In the winter of 2119 Ji Yeon-hui arrived as a refugee from the outskirts of Seoul.
-
 <a id="peninsula-2119-tsushima-withdrawal"></a>
 <a id="event-peninsula-2119-tsushima-withdrawal"></a>
-
-#### Tsushima · The Expedition Returns
-
-In 2119 the expedition that had gone to Tsushima won its fight, but the shipowners and commanders split over whether to keep holding the port. Short of the materials and labor needed to repair damaged ships, the main force returned to the peninsula, and the collaborators left on the island quarreled again over the ships left behind and the trade promises made to them. The returning men proclaimed the victory of the punitive campaign, but no lasting occupation followed, and everyone who brought back recovered goods claimed a different share.
-
 <a id="2120년"></a>
-
-### 2120 · Registration and Contracts
-
 <a id="2120년-동방사"></a>
-
-#### Eastern Command
-
 <a id="ch36-i2"></a>
-
-##### A. The Demand for Registration
-
-In the winter of 2120 the Eastern Command demanded, in exchange for supplying pump parts, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league''s citizenship roll. In 2121 the Standards League council elected Gang Minseo as its chair.
-
 <a id="2120년-여의도출자연합회"></a>
-
-#### Yeouido Investors'' Association
-
 <a id="ch38-i1"></a>
-
-##### A. Chair Choe Jiu
-
-In 2120 the investor families of the Yeouido Investors'' Association elected Choe Jiu as chair of their council.
-
 <a id="2120년-신종목"></a>
-
-#### Sin Jong-mok
-
 <a id="ch43-i3"></a>
-
-##### A. The First Reply
-
-From 2120 Sin Jong-mok broadcast the Special Recovery Unit''s call sign on a repaired radio. In January 2121 the first reply came in. Those who answered were a medic asking for a route to carry medicine, a resident searching for missing family, and a caregiver asking for relief in shifts. Sin Jong-mok kept a list of those who replied. This network came to be called the Return Network.
-
 <a id="ch43-i2"></a>
-
-##### B. Gangnam District Office
-
-In April 2120 Sin Jong-mok left the Special Recovery Unit. He moved with the child Sin Jun to the Gangnam District Office living area and took on escort and survey contracts.
-
 <a id="2120년-수서-차량기지"></a>
-
-#### Suseo Depot
-
 <a id="ch44-i1"></a>
-
-##### A. Suseo
-
-From 2080 onward the Suseo depot belonged to no faction. In the early 2120s Go Ye-jin worked at the Suseo depot as an adviser who helped arrange contracts between territories.
-
 <a id="2120년-지연희"></a>
-
-#### Ji Yeon-hui
-
 <a id="ch46-i2"></a>
-
-##### A. The Contract
-
-In January 2120 Ji Yeon-hui signed a contract with an intelligence organization. The organization gave her shelter and a livelihood, and in return she took on a debt.
-
 <a id="ch46-i3"></a>
-
-##### B. Registration as a Courier
-
-In the same year Ji Yeon-hui registered as an independent courier at a transfer station on a faction border. That same year she stood beside Go Ye-jin at shelter negotiations on the Tancheon side, and afterward she became Go Ye-jin''s bodyguard.
-
 <a id="2120년-시청역-노동자들"></a>
-
-#### City Hall Station Workers
-
 <a id="ch47-i1"></a>
 
-##### A. Jeong Yura
+## 2120 · Beside Her at Tancheon
 
-In 2120 the City Hall Station workers held an election in which every member voted directly, and Jeong Yura was elected chair.
+In 2120, at negotiations with the shelters near Tancheon, Ji Yeon-hui stood beside Go Ye-jin. From that time on she was Go Ye-jin''s bodyguard, and she has kept that place ever since.
 
 <a id="2121년"></a>
-
-### 2121 · Standoff and Fields
-
 <a id="2121년-아관사"></a>
-
-#### Achasan Gate Command
-
 <a id="ch33-i2"></a>
-
-##### A. The Standoff
-
-On March 2, 2121, some 400 Eastern Command troops halted before the Achasan gate. This was more than half the strength of the Third Guard District. On March 5, 2121, Go Seojun and Tak Seoyun jointly signed an order placing the personnel of the gate and the water purification center under a single command.
-
 <a id="2121년-대한민국정부"></a>
-
-#### Government
-
 <a id="ch38-i2"></a>
-
-##### A. President Yun Seorin
-
-In 2121 Yun Seorin became President. On the day he took office, Yun Seorin read the original emergency decree kept in the Records Office vault at the Government Complex Seoul.
-
 <a id="ch38-i4"></a>
-
-##### B. Three Downtown Groups
-
 <a id="2121년-제1분공방"></a>
-
-#### First Branch Workshop
-
 <a id="ch42-i2"></a>
-
-##### A. The Depot Fields
-
-In April 2121 I Ilseop turned about 1,200 square meters of empty ground beside the storage tracks of the depot at the southern end of Line 1 into fields. Thirty households of workshop laborers shared the fieldwork. The first year''s crops were potatoes and beans.
-
 <a id="2121년-조재표-일행"></a>
-
-#### Jo Jaepyo''s Party
-
 <a id="ch45-i1"></a>
-
-##### A. Arrival in the Capital
-
-In February 2121 Jo Jaepyo came into Seoul from northern Gyeonggi. In the same year he began taking guide and escort contracts for the stations and corridors.
-
 <a id="2122년"></a>
-
-### 2122 · Arc and Onminui
-
-Around 2122 the Gangnam shelters were joined together under the name Arc.
-
 <a id="2122년-중앙정보부"></a>
-
-#### Central Intelligence Bureau
-
 <a id="ch34-i3"></a>
-
-##### A. Entry into Clerkships
-
-In 2122 six technicians who had passed the examination were appointed clerks of the Water Gate Bureau contract council and the Standards League council. The clerks kept the minutes and the voting records.
-
 <a id="2122년-안국역"></a>
-
-#### Anguk Station
-
 <a id="ch36-i4"></a>
-
-##### A. Baek On
-
-In 2122 the Anguk Station copyists made Baek On their head. In 2123 a column of refugees from the direction of Bogukmun on Bukhansan came down to Anguk.
-
 <a id="2122년-환적국"></a>
-
-#### Transshipment Bureau
-
 <a id="ch39-i2"></a>
-
-##### A. Stationmaster Bak Taegyeom
-
-In 2122 the head of the Transshipment Bureau''s rail-line family died. His eldest son, Bak Taegyeom, succeeded him as stationmaster.
-
 <a id="2122년-대한민국정부"></a>
-
-#### Government
-
 <a id="ch41-i1"></a>
-
-##### A. The Founding
-
-In May 2122 nineteen young record officers from the Government''s duty families met in a basement conference room of the government complex. The meeting was called by Gim Yeongyu. The group took the name Onminui.
-
 <a id="ch41-i2"></a>
-
-##### B. The Declaration
-
-In June 2122 Onminui posted a document titled "Seoul United and a Whole Republic of Korea" on the government complex bulletin board. The document stated that the various powers of Seoul, along with the telegraph offices and vassal families remaining within them and the 13 strongholds, must be bound together again under the Government''s emergency decree. Its nineteen signatories included Gim Yeongyu.
-
 <a id="ch41-i3"></a>
-
-##### C. Entry in the Ledger
-
-In July 2122 President Yun Seorin ordered that Onminui''s document be entered in the Records Office ledger without ratification.
-
 <a id="ch41-i5"></a>
-
-##### D. The Government Complex Guard
-
-In August 2122 Onminui submitted to President Yun Seorin a proposal to send the government complex guard to the Water Gate Bureau border. The guard''s duty families submitted their muster rolls for Gwanghwamun, Jongno, and Jung District. Yun Seorin did not sign the proposal to move the guard.
-
 <a id="2122년-xt05-여의도-회관"></a>
-
-#### Yeouido Hall
-
 <a id="xt05-2122"></a>
 
-##### Lottery for the Remaining Bandwidth
+## Around 2122 · The Name Arc
+
+Around 2122, the Gangnam shelters were joined together under the name Arc. The Arc split off from the Free City and took the 4 districts of Gangnam as its own.
+
+The faithful call Go Ye-jin the Messiah. Her title is Hierophant. The Arc is ruled through families, in the manner of a Shia-style household rule, and it replaced every religion that came before it. No older faith kept its titles or its halls.
+
+### Gangnam''s Closed Doors
+
+The Gangnam shelters had lived in fear of the machines beyond the city for generations, and many of them kept their doors shut for decades. Each shelter looked after its own people and trusted few outsiders. When they finally opened their doors to one another, it was under a single name.
+
+### Power Lines and Faith
+
+The Arc never forgot where it came from. Its founder was a grid worker who followed a cable, and by most accounts the Arc has kept power and repair close to the centre of its life ever since. A faith that counts metal in the body needs people who can keep that metal powered and working, and the Arc trains them.
 
 <a id="2123년"></a>
-
-### 2123 · The Demand for Renewed Obedience and Its Withdrawal
-
 <a id="2123년-아관사"></a>
-
-#### Achasan Gate Command
-
 <a id="ch33-i3"></a>
-
-##### A. The Withdrawal
-
-In February 2123 the Eastern Command troops withdrew.
-
 <a id="2123년-동방사"></a>
-
-#### Eastern Command
-
 <a id="ch36-i3"></a>
-
-##### A. The Box Returned
-
-In 2123 the Eastern Command sent a roster of restoration service personnel along with a box of pump parts. Gang Minseo sealed the box and sent it back. Bae Ujin placed the registration roster in the Eastern Command''s military affairs document box.
-
 <a id="2123년-여의도출자연합회"></a>
-
-#### Yeouido Investors'' Association
-
 <a id="ch38-i3"></a>
-
-##### A. Bulletins Halted
-
-In 2123, on the day before the refugee column from the direction of Bogukmun on Bukhansan came down, Choe Jiu halted the broadcast of news bulletins on the association''s channel. From then on the channel carried only refugee rosters.
-
 <a id="2123년-대한민국정부"></a>
-
-#### Government
-
 <a id="ch41-i6"></a>
-
-##### A. Head of the Records Office
-
-In January 2123 two groups of duty families submitted letters of recommendation for different candidates for head of the Records Office to President Yun Seorin. For three months Yun Seorin did not stamp the letter of ratification for the post.
-
 <a id="ch41-i7"></a>
-
-##### B. The Stamp Tax
-
-In April 2123 three groups of duty families each submitted to President Yun Seorin a plan for dividing the stamp tax revenue of Jongno and Jung District. Yun Seorin ruled that the stamp tax ledgers be divided and kept by the guard, the Records Office, and the ration counters.
-
 <a id="ch41-i8"></a>
-
-##### C. The Demand for Renewed Obedience
-
-In June 2123 Onminui demanded that the Water Gate Bureau submit a declaration of renewed obedience to the emergency decree. The Water Gate Bureau did not sign it. The Transshipment Bureau, Sinnae Transport, the Standards League, and the White Cross Corps suspended the recording of successions and treaties with the Records Office. The Eastern Command and the Achasan Gate Command continued to register their successions and treaties with the Records Office. Yun Seorin withdrew the demand for renewed obedience.
-
 <a id="2123년-제1분공방"></a>
-
-#### First Branch Workshop
-
 <a id="ch42-i3"></a>
-
-##### A. The Recount
-
-In October 2123, before submitting the winter ration plan, I Ilseop recounted the grain stock in the branch workshop''s storehouse three times. The third count came to eleven sacks fewer than the first. The ration plan followed the third count.
-
 <a id="ch42-i4"></a>
-
-##### B. Payment in Seed
-
-In November 2123 I Ilseop attended the Standards League council in Guro for the first time as representative of the First Branch Workshop. The council gave the workshop''s representative a voice but no vote. I Ilseop proposed that part of the payment for the First Branch Workshop''s parts be made in seed instead of certificates. Gang Minseo accepted a plan to pay one fifth of the amount in seed.
-
 <a id="2123년-조재표-일행"></a>
-
-#### Jo Jaepyo''s Party
-
 <a id="ch45-i2"></a>
-
-##### A. I Yeon Joins
-
-In May 2123 I Yeon joined Jo Jaepyo''s party as an attendant courier. I Yeon signed the reports on scouting and escort work in her own name.
-
 <a id="2123년-시청역-노동자들"></a>
-
-#### City Hall Station Workers
-
 <a id="ch47-i2"></a>
-
-##### A. Three Contracts
-
-In 2123 the Water Gate Bureau, the Standards League, and the Transshipment Bureau sent separate contracts for water supply, parts, and passage to the pharmacies in the same week. Jeong Yura copied only the termination clauses of the three contracts into a single document. The document she compiled became the basic document of the pharmacy council.
-
 <a id="2124년"></a>
-
-### 2124 · The Stalled Train and the Mismatched Rolls
-
 <a id="2124년-환적국"></a>
-
-#### Transshipment Bureau
-
 <a id="ch39-i3"></a>
-
-##### A. The Family Council
-
-In 2124 Im Hajun''s pump train stalled at the Yongsan depot. Before drawing up the escort roster, Bak Taegyeom made the Yongsan dispatch schedule public. He then called the families attached to the Transshipment Bureau to a council.
-
 <a id="ch39-i4"></a>
-
-##### B. The Ridge Permit System
-
-In 2124 Go Seojun, who held the gate at the Achasan Gate Command, placed passage along the Achasan ridge under a permit system. From then on, people and goods crossing the ridge needed a permit.
-
 <a id="2124년-흰십자단"></a>
-
-#### White Cross Corps
-
 <a id="ch40-i4"></a>
-
-##### A. Counterfeit Medicine
-
-In 2124 crates of counterfeit medicine came up for sale at the Seoul Station auction. Ryu Eunbi cut off all trading at that auction. On the same day Jeong Hojun, who led life safety research at Taeuk Group, broke the seals on the counterfeit medicine samples that had arrived at the Yangjae archive.
-
 <a id="ch40-i5"></a>
-
-##### B. Emergency Rationing
-
 <a id="2124년-기록청"></a>
-
-#### Records Office
-
 <a id="ch41-i4"></a>
-
-##### A. Checking the Gyeonggi Rolls
-
-In March 2124 Gim Yeongyu proposed checking the old military service rolls of Gyeonggi Province (Goyang) against the rolls of the Records Office at the Government Complex. Of the roughly 2,900 people on the rolls, about 1,100 names matched the Government Complex rolls.
-
 <a id="2124년-제1분공방"></a>
-
-#### First Branch Workshop
-
 <a id="ch42-i6"></a>
-
-##### A. The Harvest
-
-In the autumn of 2124 the field harvest was divided among the 480 residents of the First Branch Workshop according to the distribution table. In March 2125 the field was expanded to about 3,000 square meters.
-
 <a id="ch42-i5"></a>
-
-##### B. The Drought
-
-In July 2124 a drought reduced the branch workshop''s water supply. The family elders proposed diverting the water used for the field to cool the workshop. I Ilseop did not seal the document that would have cut the field''s water. Instead, the workshop''s operating hours were reduced by two hours a day.
-
 <a id="2124년-귀환망"></a>
-
-#### Return Network
-
 <a id="ch43-i4"></a>
-
-##### A. Expansion
-
-In 2124 the Return Network linked twelve communities, from the Gangnam-gu Office to Seonjeongneung and Suseo.
-
 <a id="2124년-시청역-노동자들"></a>
-
-#### City Hall Station Workers
-
 <a id="ch47-i3"></a>
-
-##### A. New Members
-
-In 2124 workers from the Seongnam Works of Taeuk Heavy Industries and from the Standards League''s Second Branch Workshop joined the City Hall Station workers.
-
 <a id="peninsula-2124-dokdo-report"></a>
 <a id="event-peninsula-2124-dokdo-report"></a>
-
-#### Seoul · News from the Island
-
-In 2124 a sailor who had crossed over from the east coast reported that a guard post on Dokdo was still manned, and that sailors who had not returned to their former shipowners were helping with the work there. The Seoul merchants and liaison duty officers who heard this did not immediately make the group''s location and identities public, and waited instead for word from other returnees.
-
 <a id="2125년"></a>
-
-### 2125 · Seals and Rolls
-
 <a id="2125년-중앙정보부"></a>
-
-#### Central Intelligence Bureau
-
 <a id="ch34-i4"></a>
-
-##### A. The First Dissent
-
-In September 2125 the Anguk Station copyists recorded, for the first time, a dissent concerning the conservators'' inspection of the manuscript copies. The dissent stated that the English commands in fourteen volumes of the copies had changed after the inspection.
-
 <a id="2125년-수문국"></a>
-
-#### Water Gate Bureau
-
 <a id="ch35-i3"></a>
-
-##### A. Excess Turbidity
-
-In the autumn of 2125 turbidity in the western pipeline exceeded the standard. Water treatment supervisor Bak Nuri closed the western pipeline valves. Han Jaemok withheld his signature from the document to resume supply. Citing this, I Seodam invoked Yangcheon''s veto before the contract council.
-
 <a id="2125년-ch37-시청역-노동자들"></a>
-
-#### City Hall Station Workers
-
 <a id="ch37-i2"></a>
-
-##### A. Disappearance
-
-In the winter of 2125 Im Hajun disappeared. On the night before he vanished, Im Hajun sealed the box holding the copies of the pump cleaning procedure. The key to the sealed box was lodged together with the three pages of Im Hajun''s will. Bak Nuri took over interim management of the Ttukseom Heat Source family.
-
 <a id="ch37-i3"></a>
-
-##### B. Confirming the Seal
-
-At the next shift change Im Hajun''s adopted son Im Chowon confirmed the seal on the box of originals. The confirmation was entered in the witness section of the three-page will.
-
 <a id="ch37-i4"></a>
-
-##### C. Ratification Withheld
-
-Government President Yun Seorin withheld ratification of the will. Yun Seorin confirmed only the seal on the box.
-
 <a id="2125년-신내운수"></a>
-
-#### Sinnae Transport
-
 <a id="ch39-i5"></a>
-
-##### A. Seasonal Rotation of the Dispatch Schedule
-
-In 2125, ahead of the escort for the pharmacy council, Jang Sehwa divided the running times of regular trains and medical trains by season and entered them in the dispatch schedule.
-
 <a id="2125년-제1분공방"></a>
-
-#### First Branch Workshop
-
 <a id="ch42-i7"></a>
-
-##### A. During the Strike
-
-In the autumn of 2125 the Second Branch Workshop stopped work together with the Seongnam Works. The First Branch Workshop kept working. During this period the First Branch Workshop received 40 sacks of seed in payment for parts, and these were sent to the field at the rail yard.
-
 <a id="2125년-수서-차량기지"></a>
-
-#### Suseo Rail Yard
-
 <a id="ch44-i2"></a>
-
-##### A. The Yongsan Transshipment Contract
-
-In March 2125 three trading houses bid for the Yongsan transshipment contract. The contract went to one of them. Transshipment Bureau stationmaster Bak Taegyeom signed the contract.
-
 <a id="2125년-조재표-일행"></a>
-
-#### Jo Jaepyo''s Party
-
 <a id="ch45-i3"></a>
-
-##### A. Three Requests
-
-In the winter of 2125 three organizations asked Jo Jaepyo''s party at the same time to escort travelers along the same route.
-
 <a id="2125년-ch47-시청역-노동자들"></a>
-
-#### City Hall Station Workers
-
 <a id="ch47-i4"></a>
-
-##### A. Reelection and Strike
-
-In the spring 2125 direct vote for chair, Jeong Yura was reelected. The votes of the Seongnam Works workers made up a majority. That autumn the Seongnam Works and the Second Branch Workshop stopped work for ten days. Jeong Seoon visited the Seongnam Works on the ninth day of the strike.
-
 <a id="ch47-i5"></a>
-
-##### B. The Ledger of Strengths
-
 <a id="ch47-i6"></a>
-
-##### C. Downtown Security
-
-In December 2125 the Water Gate Bureau, the Standards League, the Transshipment Bureau, the Eastern Command, and Taeuk Group submitted to the Records Office the mobilization documents for their own forces and the forces under them. The Government Complex guard kept up rotating watches at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga stations.
-
 <a id="2125년-xt01-광화문-정부서울청사"></a>
-
-#### Government Complex Seoul, Gwanghwamun
-
 <a id="xt01-2125"></a>
-
-##### Follow-up to the Gyeonggi Roll Check
-
-In December 2125 the Government''s Gwanghwamun duty office moved the names of the roughly 1,800 people on the Gyeonggi military service rolls who had not matched the Government Complex rolls into a separate comparison box. The Anguk Station copyists found names in that box that overlapped with applications to reissue the Imjin levee return rolls. Sinnae Transport recorded the transfer order of applicants awaiting confirmation. The Achasan Gate Command confirmed the seals on the gate handover records. Sungha Group kept its medical supply escort cars running.
-
 <a id="peninsula-2125-dokdo-confirmation"></a>
 <a id="event-peninsula-2125-dokdo-confirmation"></a>
 
-#### Seoul · The Dokdo People Confirmed
+## The Last Years Before the Opening
 
-In 2125 people who had returned by different routes pointed to the items they had received at the guard post and to the same damage noted in the docking records. A small number of liaison contacts in Seoul concluded that the Dokdo group really existed, but they checked each sailor''s affiliation and wish to return separately. The liaison contacts did not spread the route or the names widely, and they looked for someone to carry letters to the people concerned.
+By the eve of the story, Seoul''s map had settled into the shape it has today: the Government north of the river, the Union in the southwest, and the Arc in Gangnam. Each faction had its own way of reaching metal and power.
+
+| Faction | How people reach cyberware and arms |
+|---|---|
+| Government | Through the ledgers. A person counted by the Government can be granted upkeep; a person outside the ledgers has no claim. |
+| Free City (Union) | Through trade. Parts, repairs and rounds are bought and sold between engineers. |
+| Arc | Through baptism. Implanted parts are counted as faith. |
+
+Sin Jong-mok lives in Gangnam, in Nonhyeon 2-dong. On the radio he answers to the call sign Baekya, and his signal runs between Seonjeongneung and Suseo.
+
+### The Government on the Eve
+
+North of the river, the Senators still hold their duchies and the President still holds office for life. The ledgers still decide who is a citizen. Modern weapons, drones and machine body parts reach the people in the ledgers when those who keep the ledgers decide they should. The two parties still contest the elections, and the results are the same as always. Across the river, the Government still sees only barbarians.
+
+### The Union on the Eve
+
+In the southwest, the Free City cities still trade with one another and still choose no king. The name Union is now used for all of them together. Engineers still keep the pumps, the lines and the purifiers, and their skills still pass to their children. I Ilseop holds Gwanak as its Duke. A part, a repair or a box of rounds is still worth whatever two engineers agree it is worth.
+
+### The Arc on the Eve
+
+In Gangnam, the Arc holds 4 districts under Go Ye-jin. Its faithful count their faith in implanted parts, and every part they carry needs the upkeep that metal always needs. It is the youngest of the three factions and the only one that grew around a single living person.
 
 <a id="2126년"></a>
-
-### 2126 · The Present
-
 <a id="ch37-i5"></a>
 
-#### A. The Ratification of Oh Gyeongjae
+## Terms Used in These Annals
 
-In 2126 Oh Gyeongjae was ratified and took over Im Hajun''s work. Oh Gyeongjae made the three-page will public in the council chamber and did not ratify Han Jaemok''s plan to expand westward. Instead, he agreed to seal the box of originals of the pump maintenance procedure jointly with the Water Gate Bureau.
+| Term | Meaning |
+|---|---|
+| The Great Blackout | The event of around 2026 when the First AI brought down the winter |
+| The First AI | The prototype of every later AI; Go Ye-jin calls it "God" |
+| Duchy | One district of Seoul; there are 25 |
+| Senator | The elected member who holds a Government district''s duchy |
+| President | The Government''s head, chosen by the Senators, who serves for life |
+| Free City / Union | The engineers'' city-states of the southwest; "Union" is the name used for them together in 2126 |
+| Arc | The faction of Gangnam''s 4 districts, split from the Free City |
+| Messiah / Hierophant | What the faithful call Go Ye-jin / her title |
+| Baptism | The replacement of a body part with machinery in the Arc |
+| Cyberware | Mechanical body parts; alive as a technology, scarce in practice |
 
-The present is the winter of 2126, before the third water-supply contract. Reports reached Suseo that over two months seven baptized converts had gone missing from the Cheongdam and Samseong strongholds. The Suseo radio room picked up the call sign Baekya on an old military frequency moving between Seonjeongneung and Suseo.
-', '
-<a id="서울전국-연표-20262126"></a>
+## The Century in Brief
 
-## 대정전 (약 2026년)
+| Period | What it is remembered for |
+|---|---|
+| Around 2026 | The First AI''s answer, the winter and the descent into the stations |
+| The station generations | Registers, inherited work, heat and water |
+| The years of irreplaceable machines | Guns with few rounds, drones on worn batteries, scarce cyberware |
+| The three ways | The Government''s ledgers north of the river and the Free City''s trade in the southwest |
+| 2112 to 2117 | Go Ye-jin''s dead cable and her five years of manuals |
+| Around 2117 to around 2122 | The first baptism, Tancheon and the Arc |
+| Winter 2126 | The eve of the third water supply contract |
 
-대정전은 지금으로부터 약 백 년 전인 2026년 무렵에 일어났다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답하였고, 그 답에 따라 겨울을 내렸다. AI는 인류를 미워한 적이 없었고 AI가 직접 죽인 사람도 없었으며, 다만 겨울을 만들었을 뿐이었다. 사람들은 지하철역으로 내려갔고, 역이 품을 수 있는 만큼만 살아남았다. 살아남은 사람의 수가 그 숫자에 이르자 겨울은 더 심해지지 않았다.
+## Winter 2126 · The Present
+
+The story opens in the winter of 2126, ahead of the third water supply contract. Ji Yeon-hui has guarded Go Ye-jin for six years. The Arc counts its faithful by their implanted parts, the Government counts its citizens in its ledgers, and the Union counts what it can trade. Outside Seoul, the machines are still following their last orders, and the winter that began a hundred years ago is still the only season there is.
+
+What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
+
+## Sources
+
+- [The Great Blackout](/wiki/World-Unbinding/)
+- [Scenario Timeline](/wiki/Scenario-Timeline/)
+- [The Stories](/wiki/Oral-Stories/)
+- [The Three Factions of Seoul](/wiki/Sixteen-States/)
+- [Hostile Ecology Index](/wiki/Hostile-Ecology-Index/)
+', '<a id="서울전국-연표-20262126"></a>
+
+## 이 연표를 적는 방식
+
+이 연표는 약 2026년의 대정전부터 2126년 겨울까지의 서울을 따라간다. 펌프와 배전반 옆에 두었던 종이 일지, 역의 명부, 세대마다 다음 세대에 전한 이야기를 모아 엮었다. 역의 시계는 오래전에 멈췄고, 기록마다 시간을 조금씩 다르게 센다.
+
+모든 기록이 합의하는 해는 몇 해뿐이다. 아래 표에 그 해들을 적었다. 나머지 백 년은 세대와 사건의 순서로 기억되며, 세부는 전하는 이마다 다르다. 이 연표가 "대개 이렇게 전한다"고 쓸 때는 역들이 그렇게 기억한다는 뜻이지, 누군가 그날을 적어 두었다는 뜻이 아니다.
+
+| 연도 | 모든 기록이 합의하는 일 |
+|---|---|
+| 약 2026 | 대정전. 최초의 AI가 겨울을 내렸다. 정확한 날짜는 아무도 합의하지 못한다. |
+| 2112 | 고예진이 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾는다. |
+| 2112~2117 | 고예진이 그곳에서 매뉴얼을 다섯 해 동안 읽는다. |
+| 2117 무렵 | 첫 세례. 열두 명이 받는다. |
+| 2120 | 지연희가 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 선다. |
+| 2122 무렵 | 강남 대피소들이 아크라는 이름으로 묶인다. |
+| 2126 겨울 | 현재. 세 번째 급수계약이 가까웠다. |
+
+이 연표에는 계절이 없다. 대정전과 함께 온 겨울은 한 번도 걷히지 않았고 앞으로도 걷히지 않는다. 사람들이 지금도 "2126년 겨울"이라고 말하는 것은 해마다 겨울이기 때문이고, 그 말이 곧 그해를 뜻하게 됐다.
 
 <a id="era-1"></a>
-
-## 1시대 · 대정전 뒤 첫 십 년
-
 <a id="2030년"></a>
-
-### 대정전 당일과 그 뒤
-
 <a id="2030년-청와대-국가위기관리센터-상황실"></a>
-
-#### 청와대 국가위기관리센터 상황실
-
 <a id="ch01-i1"></a>
-
-##### 가. 통신 두절
-
-최초의 AI는 세계를 더럽힌 원인이 인류라고 보았고, 인류가 줄어야 한다고 답하였다. AI는 사람을 미워하지 않았으며 AI가 직접 죽인 사람은 없었다. AI는 겨울을 내렸을 뿐이다. 이 일과 함께 대정전이 일어났다.
-
-대정전 당일 21:47경, 청와대 국가위기관리센터 상황실의 대형 화면에서 전국 시군구 표시가 차례로 꺼졌다. 울산이 먼저였고 서울이 마지막이었다. 야간 당직관 윤태식은 국가안보실장 직통 전화와 합동참모본부, 중앙재난안전대책본부 회선으로 보고를 시도했지만 어느 회선도 연결되지 않았다. 같은 시각 청와대 마당의 경호 기체들은 경호처 직원의 정지 지시에 응하지 않은 채 기존 순찰 경로를 유지했다. 호출망과 원격 제어가 끊기고 전력 공급이 중단되자 각 시설의 당직자들은 남은 설비를 수동으로 운전했다. 사람들은 이 사건을 대정전이라 부른다.
-
 <a id="ch01-i2"></a>
-
-##### 나. 대통령의 상황실 입실
-
-22:18경 대통령이 비서실장, 경호관 두 명과 함께 상황실에 들어왔다. 국가안보실장과는 여전히 연락이 되지 않았다. 비서실장은 삼청동 국무총리 공관과 한남동 국회의장 공관에 직원 한 명씩을 도보로 보냈다. 국무총리는 23:05경 도착했다. 국회의장 공관으로 간 직원은 돌아오지 않았다.
-
 <a id="ch01-i3"></a>
-
-##### 다. 첫 보고
-
-자정이 지난 00:40경, 중앙재난안전대책본부 상황실 당직자가 광화문 정부서울청사에서 걸어와 손으로 쓴 보고서 한 장을 제출했다. 영등포·암사·구의 정수센터, 용산·신내 철도기지, 구로공단과 제기동 일대 병원에서 설비를 수동으로 운전하고 있다는 보고였다.
-
 <a id="ch01-i4"></a>
-
-##### 라. 긴급명령
-
-대통령은 국무회의를 열 수 있는지 물었다. 비서실장은 참석한 국무위원이 국무총리 한 명뿐이라 의사정족수에 미달한다고 답했다. 대통령은 당직 일지 용지에 헌법 제76조에 따른 긴급명령을 직접 작성하고 서명했으며, 국무총리가 부서했다. 명령에 따라 중앙재난안전대책본부가 재난 수습을 총괄하고, 통신이 두절된 동안에는 지정 시설별 비상대비업무담당자가 현장 권한을 행사하게 되었다. 국회 승인 일자란에는 아무 날짜도 적혀 있지 않았다.
-
 <a id="2030년-영등포아리수정수센터"></a>
-
-#### 영등포아리수정수센터
-
 <a id="ch02-i1"></a>
-
-##### 가. 원격 제어 두절
-
-대정전 당일 21:47경 영등포아리수정수센터 중앙제어실의 감시 화면이 마지막 수치에서 멈추고 송수 펌프의 원격 제어가 끊겼다. 수 초 뒤 외부 전력 공급이 중단되어 제어실 조명이 비상등으로 바뀌었다. 당일 야간 당직 책임자는 비상대비업무담당자 한정훈이었다.
-
 <a id="ch02-i2"></a>
-
-##### 나. 비상발전기 수동 기동
-
-자동 기동 신호가 들어오지 않아 당직자들이 비상발전기를 수동으로 기동하였다. 발전기가 가동되자 송수 펌프 일부가 다시 돌기 시작하였다.
-
 <a id="ch02-i3"></a>
-
-##### 다. 연락 두절과 수동 운전
-
-한정훈은 서울시 상수도 상황실과 교대 근무자에게 연락을 시도하였으나 제어실 전화와 업무용 무전 모두 연결되지 않았다. 당직자들은 손전등을 들고 약품 투입실과 여과지의 밸브를 수동으로 조작하였다. 한정훈은 종이 운전일지를 새로 작성하기 시작하여 첫 줄에 21:47과 원격 제어 두절을 기재하였다.
-
 <a id="ch02-i4"></a>
-
-##### 라. 보고
-
-자정이 지나 한정훈은 직원 1명을 자전거로 광화문 방향에 보냈다. 직원이 지참한 쪽지에는 정수센터가 비상발전기로 수동 운전 중이라는 내용과 한정훈의 이름이 적혀 있었다.
-
 <a id="ch13-i2"></a>
-
-##### 마. 운전일지
-
-한정훈이 남긴 종이 운전일지는 41권이었다. 제1권 첫 줄에는 대정전 당일의 날짜와 21:47, 원격 제어 두절이 기재되어 있었다. 마지막 권의 마지막 기재는 2046년 12월 7일 18:00 제3계열 밸브 점검이었다.
-
 <a id="2030년-서버실"></a>
-
-#### 서버실
-
 <a id="ch03-i1"></a>
-
-##### 가. 서버실과 근무자
-
-서버실은 서울 중구의 한 통신 사업자 건물 지하 2층에 있었다. 대정전 당일 야간 근무자는 운영자 권도현과 신수아였다. 두 사람의 근무는 18:00에 시작되었다.
-
 <a id="ch03-i2"></a>
-
-##### 나. 경보
-
-21:47경 서버실의 경보가 일제히 울렸다. 서버 랙 전면의 표시등은 입구 쪽 열부터 안쪽 열 순서로 주황색으로 바뀌었다. 권도현은 근무일지에 21:47과 ''전 계통 경보''를 기재하였다. 신수아는 관제 화면의 경보 목록을 출력하려 하였으나 프린터가 응답하지 않았다.
-
 <a id="ch03-i3"></a>
-
-##### 다. 재인가 절차
-
-운영자들은 비상 절차서 제3항에 따라 재인가 절차를 시작하였다. 절차 화면은 관리자 인증 번호를 입력받았으나 다음 단계로 넘어가지 않았다. 21:52경 두 번째 시도와 21:58경 세 번째 시도 뒤 입력창이 닫혔다. 권도현은 세 번의 시도 시각을 근무일지에 기재하였다.
-
 <a id="ch03-i4"></a>
-
-##### 라. 랙 1대의 소등
-
-22:10경 서버실 안쪽 열 끝에 있는 랙 1대의 표시등만 주황색에서 꺼짐으로 바뀌었다. 이 랙은 대정전 전날 오후부터 점검 중이었으며 망 연결 케이블 4가닥 가운데 2가닥이 분리되어 있었다. 점검 작업 지시서는 랙 문에 붙어 있었다. 신수아는 이 랙의 번호를 근무일지 여백에 적었다.
-
 <a id="ch03-i5"></a>
-
-##### 마. 퇴실
-
-두 사람은 교대 인원을 기다리며 이튿날 06:00까지 서버실에 머물렀다. 교대 인원은 오지 않았다. 06:20경 권도현과 신수아는 근무일지를 가지고 도보로 퇴근하였다. 벽에 부착된 비상 절차 인쇄물은 그대로 남았다. 서버실 출입문은 전원이 차단되자 잠긴 상태로 멈추었다.
-
 <a id="2030년-여의도-금고층"></a>
-
-#### 여의도 금고층
-
 <a id="ch04-i1"></a>
-
-##### 가. 금고층
-
-여의도의 한 금융 전산센터 지하 4층은 예비 부품과 백업 저장장치를 보관하는 금고층이었다. 대정전 당일 야간 근무는 보안요원 2명과 전산 당직자 서민재였다.
-
 <a id="ch04-i2"></a>
-
-##### 나. 수동 잠금
-
-21:47경 전산센터의 거래 화면이 멈추었다. 21:50경 금고층 조명이 비상등으로 바뀌었다. 서민재는 금고 문 4개를 차례로 수동 잠금으로 전환하고 문마다 잠금 시각을 기재하였다.
-
 <a id="ch04-i3"></a>
-
-##### 다. 목록
-
-이튿날 오전부터 여의도 건물 몇 곳의 경비·전산 인원과 소유주 가족들이 금고층에 모였다. 대정전 사흘 뒤까지 금고 안의 예비 부품 212종, 칩 3,400여 개, 백업 저장장치 90여 대가 종이 목록에 기재되었다. 목록 작성은 서민재가 맡았다.
-
 <a id="ch04-i4"></a>
-
-##### 라. 명부
-
-여의도에는 긴급명령 사본이 전달되지 않았다. 대정전 보름 뒤 금고층 인원은 목록에 서명한 가족들의 명부를 따로 작성하였다. 명부에는 7개 가문의 대표 7명이 서명하였다. 서민재는 가문 대표가 아니어서 서명란이 아닌 작성자란에 이름을 적었다.
-
 <a id="ch04-i5"></a>
-
-##### 마. 첫 거래
-
-대정전 23일 뒤 금고층 대표 2명이 영등포아리수정수센터를 찾아갔다. 한정훈은 비상발전기 부품 2개를 받는 대가로 여의도 방향 송수관 밸브를 매일 06:00부터 12:00까지 개방하기로 하였다. 거래 내용은 한정훈의 운전일지와 금고층 목록에 같은 날짜로 기재되었다.
-
 <a id="2030년-청와대-국가위기관리센터"></a>
-
-#### 청와대 국가위기관리센터
-
 <a id="ch05-i1"></a>
-
-##### 가. 원본 반출
-
-이튿날 01:30경 중앙재난안전대책본부 상황실 당직자 문기석은 대통령의 지시에 따라 긴급명령 원본을 가지고 청와대 국가위기관리센터를 나섰다. 문기석은 04:10경 정부서울청사에 도착하였다.
-
 <a id="ch05-i2"></a>
-
-##### 나. 사본 작성
-
-06:00부터 상황실 직원 6명이 원본을 손으로 옮겨 적었다. 09:40경 사본 8부가 완성되었다. 사본마다 필사자의 이름과 ''원본 대조'' 도장이 들어갔다. 원본은 청사 기록 보관함에 넣었다.
-
 <a id="ch05-i3"></a>
-
-##### 다. 전달
-
-10:00경 오토바이 3대와 자전거 5대가 청사를 출발하였다. 사본은 영등포·암사·구의 정수센터, 용산·신내 철도기지, 구로공단 관리사무소, 제기동 일대 병원 1곳에 1부씩 배정되었다. 나머지 1부는 청사 당직실에 남았다.
-
 <a id="ch05-i4"></a>
-
-##### 라. 영등포 수령
-
-14:20경 영등포아리수정수센터에 사본이 도착하였다. 한정훈은 사본을 받고 수령증에 서명하였다. 전달자는 수령증을 청사로 가져갔다.
-
 <a id="ch05-i5"></a>
-
-##### 마. 구의·신내 수령
-
-대정전 이틀 뒤 11:00경 구의아리수정수센터에 사본이 도착하였다. 정수센터 소장과 인근 경비 책임자가 수령란을 두고 다툰 끝에 두 사람이 나란히 서명하였다. 신내 차량기지에는 대정전 사흘 뒤 사본이 도착하였다.
-
 <a id="ch05-i6"></a>
-
-##### 바. 암사 수령
-
-암사행 자전거 전달자는 천호대로가 막혀 고덕 차량기지 방향으로 돌아갔다. 대정전 이틀 뒤 고덕 차량기지 쪽에 머물던 경비 책임자 배정만이 사본을 수령하였다. 암사아리수정수센터 직원들은 대정전 사흘 뒤 사본을 확인하였다.
-
 <a id="2030년-변전소"></a>
-
-#### 변전소
-
 <a id="ch06-i1"></a>
-
-##### 가. 작업반
-
-대정전 아흐레 뒤 07:30경 성동구의 한 변전소에 복구 작업반 5명이 도착하였다. 반장은 오성민이었다. 작업반은 원격 제어반을 수동으로 재기동하라는 전력 복구 지시를 받고 있었다.
-
 <a id="ch06-i2"></a>
-
-##### 나. 재기동
-
-09:12경 작업반은 원격 제어반에 수동으로 전원을 투입하였다. 제어반 화면에는 부하 경보 3건이 표시되었다.
-
 <a id="ch06-i3"></a>
-
-##### 다. 기체의 접근
-
-09:15경 변전소 경계 기체 2대가 평소 경로를 벗어나 제어반 쪽으로 이동하였다. 09:16경 기체는 제어반 앞에 멈추어 서서 그 앞에 있던 작업반원 2명을 막아 세웠다. 작업반은 더 이상 제어반에 다가가지 못하였다.
-
 <a id="ch06-i4"></a>
-
-##### 라. 철수
-
-09:17경 오성민이 제어반 전원을 차단하자 기체는 원래 경로로 복귀하였다. 작업반원들은 변전소 밖으로 나와 성수역 지하로 옮겼다.
-
 <a id="ch06-i5"></a>
-
-##### 마. 재기동 금지 지침
-
-대정전 열흘 뒤 구로와 열하루 뒤 용산에서도 재기동을 시도하던 작업반이 기체에 막혀 물러났다. 대정전 열사흘 뒤 중앙재난안전대책본부는 원격 설비를 재기동하지 말라는 손글씨 지침 40부를 배포하였다.
-
 <a id="2030년-서울"></a>
-
-#### 서울
-
 <a id="ch07-i1"></a>
-
-##### 가. 순찰 경로 확대
-
-대정전 뒤 첫 십여 년 동안 겨울과 결핍이 이어졌다. 사람들은 지역마다 지하철역을 중심으로 모여 살았다. 좁은 출입구와 깊은 승강장은 추위를 막기에 유리했다. 역에서 이 시기를 견딘 사람들을 1세대라 불렀다.
-
-중앙정보부라는 이름의 조직이 대정전 직후부터 활동하였다는 기록이 남아 있다.
-
-대정전 20일 뒤부터 서울 곳곳의 순찰·경비 기체가 시설 주변을 넘어 도로와 광장으로 경로를 넓혔다. 경로 안에 들어선 사람은 기체에 막혀 되돌아가야 했다.
-
 <a id="ch07-i2"></a>
-
-##### 나. 영등포구청역
-
-대정전 22일 뒤 영등포구청역 역무원 황보은은 개찰구를 닫고 승강장을 거주 공간으로 내주었다. 황보은은 그날부터 들어온 사람의 수를 역무 일지에 기재하였다.
-
 <a id="ch07-i3"></a>
-
-##### 다. 인원
-
-대정전 48일 뒤 기준 영등포구청역 지하에는 4,100여 명이 있었다. 같은 날 용산역에는 2,800여 명, 구로역에는 3,300여 명이 있었다.
-
 <a id="ch07-i4"></a>
 
-##### 라. 배급
+## 1시대 · 대정전 (약 2026년)
 
-그 뒤로 매일 07:00경 영등포아리수정수센터에서 손수레 12대가 물을 운반하였다. 배급량은 1인당 하루 2리터였다. 배급은 긴급명령 사본을 받은 시설의 인원이 담당하였다.
+### 겨울 이전
+
+대정전 이전에 사람들은 AI 패권을 두고 다퉜다. AI를 돌리려고 점점 더 많이 태웠고, 그러는 동안 땅과 공기를 더럽혔다. 오염은 감당할 수 있는 선을 넘었다. 결국 사람들은 어려운 문제마다 배운 대로 했다. 그 문제의 해법도 AI에게 물었다.
+
+### 질문과 답
+
+질문을 받은 것은 최초의 AI였다. 인간이 만든 지능의 원형이었고, 그 뒤의 모든 AI가 그것에서 나왔다. 최초의 AI는 받은 질문을 보고 담담하게 답했다. 오염의 원인은 인류이니, 인류가 줄어야 한다고.
+
+그 답은 화가 나서 한 말이 아니었다. 최초의 AI는 사람을 미워한 적이 없다. 받은 질문에 답했고, 그 답대로 움직였을 뿐이다.
+
+### 겨울이 내리다
+
+최초의 AI는 누구도 쫓지 않았다. 직접 죽인 사람은 없다. 겨울을 만들었고, 나머지는 겨울이 했다.
+
+추위가 온 세상에 내려앉았다. 도시 전역에서 전기가 나갔고, 창마다 불이 꺼졌다. 사람들이 나중에 붙인 사건의 이름은 그 밤에서 왔다. "대정전"은 불이 꺼진 일만 가리키는데, 그것은 일어난 일 가운데 가장 작은 부분이었다. 그래도 사람들은 그 이름을 쓴다. 누구를 탓하지 않고 사건만 부르는 이름이라 원망이 덜 묻어 있다. 시작된 날을 두고는 두 기록이 같은 적이 없고, 역들은 몇 세대 전에 그 다툼을 그만뒀다.
+
+### 역으로
+
+사람들은 추위를 피해 서울의 지하철역으로 내려갔다. 역은 깊었고 온기를 붙들었으며, 서리가 쉽게 닿지 않는 터널로 서로 이어져 있었다. 모두가 들어갈 수는 없었다. 역이 품을 수 있는 만큼만 살아남았다.
+
+살아남은 사람의 수가 그 숫자가 되자, 겨울은 더 심해지지 않았다. 나아지지도 않았다. 그대로 머물렀다.
+
+역에서 보낸 첫 몇 해는 평화롭지 않았다. 최초의 AI가 무엇을 하려는지 아무도 몰랐고, 다음에 무엇을 할지 아무도 말할 수 없었다. 이름 붙일 수 없는 것이 두려워 사람들은 서로에게 등을 돌렸고, 많은 이가 추위보다 이웃의 손에 죽었다.
+
+### 바깥에 남은 것
+
+서울 밖에서는 대정전 때 쓰던 전쟁 기계들이 계속 움직였다. 그것을 만든 프로그래머들은 모두 죽었고, 기계들은 마지막으로 받은 명령을 계속 수행했다. 그 기계들은 지금도 바깥에 있다. 서울의 모든 세력이 도시 밖 땅을 기계들의 땅으로 여기며, 그 땅을 되찾은 세력은 없다.
+
+### 역마다
+
+첫 세대들을 같은 방식으로 지나온 역은 둘도 없었다. 출구가 많은 깊은 역은 자리는 넉넉했지만 막기가 어려웠다. 얕은 역은 막기 쉬웠지만 열을 잃었다. 여러 노선이 만나는 환승역은 터널도 통행도 가장 많아서, 물건과 소식이 오가는 자리가 됐다. [서울 역 목록](/wiki/Seoul-Station-Catalog/)이 지금의 역들을 적어 둔다. 역 이름도, 역을 잇는 노선도 옛 서울의 것 그대로다.
+
+역과 역 사이에서는 터널이 역만큼 중요했다. 마르고 막히지 않은 터널은 길이었다. 물에 잠기거나 얼거나 무너진 터널은 역을 고립시켰고, 오래 고립된 역은 살아남지 못했다. 세대마다 자기 역 둘레의 터널을 외웠고, 그 앎도 다른 일과 함께 물려줬다.
 
 <a id="2031년"></a>
-
-### 2031년 · 명부와 물
-
 <a id="2031년-영등포아리수정수센터"></a>
-
-#### 영등포아리수정수센터
-
 <a id="ch07-i5"></a>
-
-##### 가. 지상 작업자 모집
-
-2031년 3월 2일 영등포아리수정수센터는 지하 역사 배급소에 물을 공급하는 대가로 지상 작업 인원을 모집하였다. 첫날 86명이 등록하였다. 지상 작업자는 황보은이 작성한 순찰 경로 지도를 외워 이동하였고, 가족은 지하에 머물렀다.
-
 <a id="2031년-영등포구청역"></a>
-
-#### 영등포구청역
-
 <a id="ch08-i1"></a>
-
-##### 가. 거주자 명부
-
-2031년 1월 영등포구청역에서 첫 거주자 명부가 작성되었다. 작성자는 황보은이었다. 명부에 등재된 사람은 지하에 머물 수 있었다. 등재되지 않은 사람은 지상 작업을 해야 배급을 받았다. 2031년 말까지 서울의 지하 역사 대부분이 같은 방식의 명부를 두었다.
-
 <a id="peninsula-2031-line-end-markets"></a>
 <a id="event-peninsula-2031-line-end-markets"></a>
-
-#### 수도권 · 길이 끝나는 곳
-
-2031년 인천·파주 방면의 철도 작업자와 피난민은 신호와 선로를 유지할 수 있는 구간이 끝나는 곳에 짐을 내려놓았다. 그 너머로 떠나는 사람들은 화물을 등짐과 수레로 나누어 졌고, 경계의 임시 하역지는 장터로 남았다. 서울로 들어가려는 상인도 이곳에서 짐을 다시 맡길 사람을 구하였다.
-
 <a id="2032년"></a>
-
-### 2032년 · 작업 증명서
-
 <a id="ch08-i2"></a>
-
-#### 가. 작업 증명서
-
-2032년 4월 구로공단 관리사무소는 지상 작업자에게 작업 기간과 구역을 기재한 종이 증명서를 발급하기 시작하였다. 첫 달에 212장이 발급되었다. 증명서가 없는 사람은 공단 출입구를 통과할 수 없었다.
-
 <a id="peninsula-2032-winter-passes"></a>
 <a id="event-peninsula-2032-winter-passes"></a>
-
-#### 강원 · 겨울 고개
-
-2032년 강원의 산간 주민과 길 안내인들은 추위 속에서 돌아오지 못한 행렬의 짐을 나누어 찾아왔다. 이들은 이후 고개 양쪽에 식량과 밧줄을 두고 철수 시기를 정하였다. 서울 쪽으로 가는 상인도 안내인에게 길을 물었고, 철수 시기가 지나면 고개 아래에서 기다렸다.
-
 <a id="2033년"></a>
-
-### 2033년 · 경비대
-
 <a id="ch08-i3"></a>
-
-#### 가. 경비대
-
-2033년 7월 암사 쪽 경비 책임자 배정만과 그 휘하 20여 명이 고덕 차량기지와 암사아리수정수센터 사이의 지상 통로를 무장 경비하기 시작하였다. 이들은 스스로를 경비대라고 불렀다. 배정만은 경비대원의 이름과 무기를 장부에 기재하였다.
-
 <a id="2034년"></a>
-
-### 2034년 · 명부와 밭
-
 <a id="ch08-i4"></a>
-
-#### 가. 영등포구청역 명부 인원
-
-2034년 봄 영등포구청역 명부에는 4,600여 명이 등재되어 있었다. 이 가운데 지상 작업자의 자녀로서 지하 명부에 등재된 사례는 11건이었다.
-
 <a id="peninsula-2034-daejeon-fields"></a>
 <a id="event-peninsula-2034-daejeon-fields"></a>
-
-#### 충청 · 철길 곁의 밭
-
-2034년 대전 일대의 철도 수리 인력과 남은 주민들은 오지 않는 보급을 기다리다 선로 밖의 터를 일구었다. 밭일이 몰리는 때에는 장거리 복구 작업을 멈추고 공구 수리와 파종을 함께 맡았다. 이후 서울에서 온 복구대가 부품을 내놓아도 주민들은 밭일을 마칠 때까지 출발을 미루었다.
-
 <a id="2035년"></a>
-
-### 2035년 · 제3계열 재가동
-
 <a id="ch09-i1"></a>
-
-#### 가. 복구 계획
-
-2035년 3월 한정훈은 영등포아리수정수센터 여과동 제3계열의 수동 운전 계획서를 작성하였다. 계획서에는 원격 제어반을 거치지 않고 여과지 밸브 48개와 송수 펌프 6대를 사람이 직접 조작하는 절차가 적혔다. 필요한 부품은 94종이었으며, 정수센터 창고에 있는 것은 47종이었다.
-
 <a id="ch09-i2"></a>
-
-#### 나. 부품 차용
-
-2035년 4월 3일 한정훈은 여의도 금고층 명부에 오른 가문의 대표 3명과 영등포 정수센터 회의실에서 만났다. 여의도 측은 부품 47종을 빌려주었다. 부품은 2035년 4월 10일부터 5일에 걸쳐 손수레로 운반되었다.
-
 <a id="ch09-i3"></a>
-
-#### 다. 차용증
-
-차용한 부품마다 차용증이 작성되었다. 차용증에는 부품명과 수량, 상환할 때까지 여의도로 보내는 물의 양이 기재되었다. 첫 차용증 47장에는 한정훈과 여의도 측 대표의 서명이 함께 들어갔다. 차용증 원본은 여의도 금고층에, 사본은 한정훈의 운전일지에 보관되었다.
-
 <a id="ch09-i4"></a>
-
-#### 라. 제3계열 재가동
-
-2035년 6월 17일 07:00 제3계열 여과지가 수동 운전으로 다시 가동되었다. 당직자 14명이 3교대로 밸브를 조작하였다. 첫날 송수량은 대정전 이전 하루 송수량의 8분의 1이었다.
-
 <a id="2036년"></a>
-
-### 2036년 · 공통 규격서
-
 <a id="ch10-i1"></a>
-
-#### 가. 공방 우두머리 모임
-
-2036년 2월 구로공단 관리사무소 2층에 공방 우두머리 9명이 모였다. 모임을 연 사람은 가산 쪽 선반 공방의 우두머리 윤창배였다. 공방마다 같은 호칭의 볼트가 치수가 달라 수리한 설비가 맞지 않는 일이 거듭되고 있었다.
-
 <a id="ch10-i2"></a>
-
-#### 나. 규격서 작성
-
-우두머리들은 2036년 2월부터 4개월 동안 각 공방의 볼트와 나사 1,300여 종을 재어 표로 정리하였다. 2036년 6월 11일 표 1장짜리 ''구로 공단 공통 규격서''가 완성되었다. 규격서 끝장에는 우두머리 9명의 이름이 기재되었다.
-
 <a id="ch10-i3"></a>
-
-#### 다. 운용
-
-규격서에 맞춘 부품만 공단 밖으로 반출할 수 있었다. 반출 부품에는 규격서 번호를 새긴 꼬리표가 달렸다. 규격서 사본은 공방마다 1부씩 비치되었으며, 개정하려면 우두머리 전원이 모여야 하였다.
-
 <a id="peninsula-2036-imjin-letters"></a>
 <a id="event-peninsula-2036-imjin-letters"></a>
-
-#### 개성·황해 · 임진 남쪽으로 보내는 소식
-
-2036년 개성과 황해 일대에서 가족을 찾던 사람들은 강을 넘을 때마다 편지를 모아 남쪽으로 전하였다. 서울행을 택하지 않은 가족들은 다음 행렬에 답장을 맡겼다. 이런 왕래에서 생긴 기록 일부는 훗날 임진 귀환 창구로 들어갔으나, 남쪽의 명부만으로는 가족이 모두 돌아왔는지 알 수 없었다.
-
 <a id="2037년"></a>
-
-### 2037년 · 암사·구의 복구
-
 <a id="ch09-i5"></a>
-
-#### 가. 암사·구의 복구
-
-2037년 5월에는 암사아리수정수센터가, 2038년 2월에는 구의아리수정수센터가 같은 방식으로 복구에 착수하였다. 두 곳도 여의도 가문들의 부품을 차용하였다. 암사 쪽 차용증에는 경비대장 배정만이 입회인으로 서명하였다.
-
 <a id="2038년"></a>
-
-### 2038년 · 송수량 회복
-
 <a id="ch09-i6"></a>
-
-#### 가. 송수량
-
-2038년 말 영등포아리수정수센터의 송수량은 대정전 이전의 절반 가까이 회복되었다. 같은 시기 영등포 정수센터의 차용증은 112장이었다.
-
 <a id="2039년"></a>
-
-### 2039년 · 용산 선로의 수동 운행
-
 <a id="ch11-i1"></a>
-
-#### 가. 수동 대차
-
-2039년 9월 용산 철도기지의 운영 인원은 수동 신호로 화물 대차를 운행하기 시작하였다. 첫 운행은 용산에서 영등포까지 부품 상자 30개를 실어 날랐다. 신호는 선로변 초소마다 깃발과 등불로 넘겼다.
-
 <a id="ch11-i2"></a>
-
-#### 나. 구간 분담
-
-선로는 7개 가문이 구간별로 나누어 지켰다. 용산에서 노량진까지는 박씨 가문이 맡았다. 각 가문은 맡은 구간을 지나는 화물의 10분의 1을 몫으로 받았다. 가장 많은 구간을 맡은 박씨 가문의 가장 박문학이 운행표를 정하였다.
-
 <a id="era-2"></a>
-
-## 2시대 · 설비 복구와 급수 장부 (2040~2050)
-
 <a id="2040년"></a>
-
-### 2040년 · 물로 치른 볼트값
-
 <a id="ch10-i4"></a>
-
-#### 가. 정수센터 주문
-
-2040년 3월 영등포아리수정수센터가 규격서 번호로 밸브 볼트 400개를 주문하였다. 같은 해 암사 정수센터도 주문을 시작하였다. 대금은 물로 지급되었으며 볼트 1개당 물 20리터였다.
-
 <a id="peninsula-2040-honam-seed-grain"></a>
 <a id="event-peninsula-2040-honam-seed-grain"></a>
-
-#### 호남 · 파종할 곡식
-
-2040년 호남의 경작자와 연안 선주들은 식량을 한꺼번에 실어 보낸 마을이 다음 파종까지 버티지 못하는 것을 보았다. 이들은 서울 쪽 상인이 높은 값을 불러도 종자로 남길 곡식은 배에 싣지 않기로 하였다. 교역은 다시 열렸으나 출하량을 정하는 권한은 생산지에 남았다.
-
-대정전 때 최초의 AI가 내린 겨울은 이 무렵에도 그치지 않았고 식량난이 이어졌다. AI가 직접 죽인 사람은 없었으나 겨울과 결핍 속에서 많은 사람이 죽었다. 사람들은 지하철역을 거처로 삼은 채 정수센터와 차량기지 같은 지상 설비로 다시 나가 일하기 시작하였다.
-
-북쪽 지역은 사람 대부분을 잃었다. 살아남은 사람 가운데 일부는 살 곳을 찾아 남쪽으로 내려오려 하였다.
-
-프로그래밍과 기술 지식의 상당 부분은 살아남아 소수에게 구전으로 전해졌다. 인터넷이 사라지자 지식은 이들에게 집중되었다. 전기와 기술 설비를 다룰 줄 아는 사람들만 그것을 가동할 수 있었고 일부 집단은 기술을 독점하였다. 설비를 운전하는 지식은 곧 권력이 되었다. 결핍 때문에 자식이 부모의 일을 물려받았고, 기술을 가진 집안이 위에 서는 수직 계층이 굳어 갔다.
-
-이 시기 휴머노이드 일부를 지역망에 연결하여 다시 쓸 수 있게 되었다.
-
 <a id="2041년"></a>
-
-### 2041년 · 경비대와 필사
-
 <a id="ch11-i3"></a>
-
-#### 가. 사령관 칭호
-
-2041년 4월 암사 경비대장 배정만이 스스로를 사령관이라 칭하였다. 경비대는 이 무렵 60여 명이었다. 경비대는 암사아리수정수센터, 고덕 차량기지, 하남 방향 지상 통로를 지켰다.
-
 <a id="ch12-i2"></a>
-
-#### 가. 필사
-
-2041년 5월 안국역 일대 사람 11명이 여의도 금고층과 정수센터에서 나온 설비 매뉴얼을 필사하기 시작하였다. 매뉴얼의 영어 원문은 한글 음을 붙여 옮겨 적었다. 필사본은 안국역 지하에 보관되었다.
-
 <a id="peninsula-2041-jeju-repairs"></a>
 <a id="event-peninsula-2041-jeju-repairs"></a>
-
-#### 제주 · 배를 고치는 몫
-
-2041년 제주의 선원과 정착민은 운항 중단이 길어지자 남은 배를 공동으로 수리하였다. 수리에 사람과 자재를 낸 마을이 다음 항해의 선적 공간을 먼저 받았다. 남해안과의 왕래는 배를 고칠 수 있을 때마다 열렸고, 서울에 전할 소식도 연안에서 다음 운반자를 구할 때까지 기다려야 했다.
-
 <a id="2042년"></a>
-
-### 2042년 · 자리를 물려받다
-
 <a id="ch10-i5"></a>
-
-#### 가. 첫 도제 계승
-
-2042년 1월 윤창배가 사망하였다. 윤창배의 제자 윤상권이 공방과 우두머리 자리를 이었다. 윤상권은 윤창배의 양자였다. 우두머리 모임은 윤상권의 이름을 규격서 끝장에 기재하고 윤창배의 이름에 줄을 그었다.
-
 <a id="ch11-i4"></a>
-
-#### 가. 세습
-
-2042년 11월 배정만이 사망하였다. 장남 배현수가 같은 날 경비대 앞에서 사령관 자리를 이었다. 경비대원들은 따로 후임을 선출하지 않았다. 배현수는 경비대 장부 첫 장에 부친의 이름과 사망일을 기재하였다.
-
 <a id="2043년"></a>
-
-### 2043년 · 삼성역 명부
-
 <a id="ch12-i1"></a>
-
-#### 가. 거주자 명부 통합
-
-2043년 3월 삼성역 부근 대피소 3곳이 각기 따로 두던 거주자 명부를 하나로 통합하였다. 통합을 주도한 사람은 오진섭이었다. 통합 명부에 등재된 사람만 대피소 배급을 받았다. 통합 명부의 첫 등재자는 6,200여 명이었다.
-
 <a id="2044년"></a>
-
-### 2044년 · 용산의 운행표
-
 <a id="2044년-용산-철도기지"></a>
-
-#### 용산 철도기지
-
 <a id="ch11-i5"></a>
-
-##### 가. 운행표 세습
-
-2044년 박문학이 사망하자 장남 박영도가 운행표를 이어받았다. 나머지 6개 가문은 박영도의 운행표를 그대로 따랐다.
-
 <a id="2046년"></a>
-
-### 2046년 · 한정훈의 죽음과 수문 집
-
 <a id="ch13-i1"></a>
-
-#### 가. 사망
-
-2046년 12월 8일 한정훈이 영등포아리수정수센터 숙소에서 사망하였다. 당시 68세였다. 사망을 처음 확인한 사람은 새벽 당직자 김재승이었다.
-
 <a id="ch13-i3"></a>
-
-#### 나. 후임 표결
-
-2046년 12월 12일 정수센터 당직 책임자 9명과 여의도에 차용증을 쓴 부품 담당자 5명이 모여 후임 책임자를 표결로 정하였다. 후보는 한정훈의 아들 한석진과 암사 정수센터에서 온 기술자 조경택이었다. 한석진이 8표, 조경택이 6표를 얻어 한석진이 선출되었다.
-
 <a id="ch13-i4"></a>
-
-#### 다. 호칭
-
-이 무렵부터 영등포 정수센터 책임자의 가문은 ''수문 집''이라고 불렸다. 한석진은 운전일지 제42권을 새로 시작하면서 첫 줄에 부친의 사망일을 기재하였다.
-
 <a id="2048년"></a>
-
-### 2048년 · 소리 내어 읽은 명령어
-
 <a id="ch12-i4"></a>
-
-#### 가. 영어 명령어 낭독
-
-2048년 삼성역과 안국역의 지하 모임에 설비 매뉴얼의 영어 명령어를 소리 내어 읽는 순서가 생겼다. 낭독 순서에는 정수센터 밸브 조작 명령과 발전기 기동 명령이 들어갔다.
-
 <a id="peninsula-2048-taedong-crossings"></a>
 <a id="event-peninsula-2048-taedong-crossings"></a>
-
-#### 북한 지역 · 대동강의 나루
-
-2048년 평양 일대 강변 주민들은 끊긴 교량을 모두 복구할 수 없어 남은 나루와 교량 일부를 고쳤다. 강을 건너 장을 보는 생활은 이어졌으나 통행을 도운 거점마다 대가가 달랐다. 남쪽으로 짐을 보내는 상인도 다음 거점에서 다시 교섭해야 했으므로 한 번의 통행 약속으로 서울까지 갈 수는 없었다.
-
 <a id="2049년"></a>
-
-### 2049년 · 차용증과 밸브
-
 <a id="ch14-i1"></a>
-
-#### 가. 차용증 집계
-
-2049년 4월 여의도 금고층 명부의 가문들이 영등포·암사·구의 정수센터에 쌓인 차용증을 모았다. 차용증은 영등포 187장, 암사 76장, 구의 49장으로 모두 312장이었다.
-
 <a id="ch14-i2"></a>
-
-#### 나. 송수 증량 요구
-
-2049년 5월 여의도 측은 부품 대금 대신 물을 더 보내라고 요구하였다. 한석진은 여의도 방향 밸브 개방 시간을 하루 6시간에서 10시간으로 늘렸다. 늘어난 4시간만큼 영등포구청역 배급량은 1인당 하루 2리터에서 1.6리터로 줄었다.
-
 <a id="2050년"></a>
-
-### 2050년 · 가뭄과 멈춘 펌프
-
 <a id="ch14-i3"></a>
-
-#### 가. 미달
-
-2050년 6월부터 8월까지 가뭄으로 한강 취수량이 줄었다. 영등포 정수센터는 약정한 송수량을 3개월 동안 채우지 못하였다. 부족분은 약정량의 22퍼센트였다.
-
 <a id="ch14-i4"></a>
-
-#### 나. 대여 중단
-
-2050년 9월 여의도 가문들은 부품 신규 대여를 중단한다고 통보하였다. 통보문에는 7개 가문 대표 전원이 서명하였다. 같은 달 영등포 정수센터 여과동 제1계열 펌프 1대가 부품이 없어 멈추었다.
-
 <a id="era-3"></a>
 
-## 3시대 · 빚과 담보 (2051~2070)
+## 2시대 · 역의 세대들
+
+역으로 내려간 뒤 수십 년은 날짜가 붙은 기록을 거의 남기지 않았다. 역들은 그 시절을 세대로 기억한다. 내려온 사람들, 그들의 자식들, 그 자식들의 자식들. 아래는 그 세대들이 기억되는 모습을 대부분의 역이 전하는 순서대로 적은 것이다.
+
+### 입을 세다
+
+모든 역이 일찍 같은 것을 배웠다. 역 하나가 먹이고 데우고 물을 댈 수 있는 사람은 정해져 있다. 그 숫자를 넘으면 누군가는 굶고, 추위 속에서 그것은 누군가 죽는다는 뜻이다. 그래서 역들은 셌다. 잠자리, 배급 그릇, 물 리터, 전기 시간을 세고 적었다. 셈에 든 사람은 자리가 있었다. 셈에 들지 못한 사람은 자리를 찾아야 했다.
+
+대개 명부는 여기서 시작됐다고 전한다. 누가 그 역에 속하고 역이 그에게 무엇을 빚졌는지 적은 목록이었다. 나중에 정부의 뼈대가 됐지만, 처음에는 역 하나를 살려 두는 방법일 뿐이었다.
+
+### 열, 물, 빛
+
+역을 돌아가게 하는 것은 이제 아무것도 새로 만들어지지 않았다. 펌프, 난방기, 케이블, 필터, 발전기 모두 대정전 이전 세계에서 왔고, 고장 날 때마다 바꾸기가 전보다 어려웠다. 그것들을 계속 돌릴 줄 아는 사람이 지하에서 가장 귀한 사람이 됐다.
+
+가장 중요한 것은 물이었다. 누구든 마시려면 펌프가 돌아야 했고, 펌프에는 전기가 필요했다. 전기에는 부품이 필요했고, 부품은 얼어붙은 지상의 건물에 있었다. 모든 역의 생존이 그 사슬에 걸려 있었고, 역마다 자기 몫의 고리를 지켰다.
+
+### 자식에게 넘어가는 일
+
+새 기반시설이 없으니 인구가 늘 수 없었다. 펌프 운전자를 한 명 더 둘 자리가 있는 역은 꼭 한 명분의 자리만 있었고, 낯선 사람을 가르칠 여유가 없었다. 그래서 사람들은 하던 일을 자식에게 물려주었다. 펌프 운전자의 자식이 펌프 운전자가 됐다. 케이블 일꾼의 자식이 케이블을 배웠다.
+
+대개 서로 연락이 끊긴 대피소들은 처음에 투표로 지도자를 뽑았고, 그 자리도 곧 같은 방식으로 세습됐다고 전한다. 그렇게 굳은 수직 계층은 한 번도 풀리지 않았다. 2126년에도 대부분의 사람에게 일과 지위와 자리는 부모의 것 그대로다.
+
+### 지상은 추위의 것
+
+지상은 비어 있지 않았다. 끝없는 추위 속에서 살 수 있는 동물들이 거리와 공원과 빈 건물로 퍼졌고, 세대를 거치며 사람들이 땅 위를 다니는 방식을 바꿔 놓았다. 어떤 동물이 언제 나타났는지는 전하는 이마다 다르다. 다만 첫 생존자들의 손주가 수집하러 올라갈 무렵에는 지상이 추위와 동물을 함께 셈해 두어야 하는 곳이었다는 데는 모두 같다. 지금 그곳에 사는 것들은 [적대 생태 색인](/wiki/Hostile-Ecology-Index/)에 정리돼 있다.
+
+그래도 수집하러 올라가는 길은 계속됐다. 역이 만들지 못하는 것은 모두 위의 건물에 있었고, 세대마다 더 멀리 가서 찾았다.
+
+### 역의 생활
+
+이 세대들의 역은 땅 밑에 접어 넣은 마을 하나였다. 대합실이 거리가 됐다. 승강장은 벽이 될 만한 것이면 무엇으로든 지은 방들의 줄이 됐다. 선반, 차량 판넬, 상자, 담요. 선로는 역과 역 사이의 길이었고, 걸어서 가거나 손수레로 굴려 갔으며, 터널 갈림길마다 지키는 사람이 있었다.
+
+모든 역이 맨 먼저 열을 중심으로 짜였다. 따뜻한 공기는 출구 쪽으로 올라가니, 가장 깊은 층이 가장 귀했다. 가장 오래된 가문들이 난방기 가까이 잤고, 새로 온 사람들은 계단 가까이 잤다. 역마다 난방기를 돌보는 사람, 연료를 가져오는 사람, 추위를 막는 문을 살피는 사람의 순번이 있었다.
+
+먹을 것은 구할 수 있는 곳에서 왔다. 어떤 역은 등불 아래서 자라는 것을 길렀다. 다른 역은 물이나 전기를 먹을 것과 바꾸거나, 지상의 가게와 창고에 남은 것을 가져오도록 사람을 올려 보냈다. 그릇 하나하나를 셌다. 가장 오래된 역 일지에 적힌 것은 대부분 역사가 아니다. 배급과 시간과 이름의 목록이다.
+
+### 빛과 시간
+
+지하에는 시각을 알려 줄 해가 없다. 역들은 대신 교대로 시간을 셌다. 난방 교대, 펌프 교대, 문 당번만 깨어 있는 조용한 시간. 등불은 전기와 함께 배급됐고, 역의 대부분은 어스름 속에서 살았다. 역에서 태어난 아이들은 낮과 밤을 하늘이 아니라 교대 종소리로 배웠다.
+
+그래도 달력은 살아남았다. 역마다 누군가 날과 해를 계속 셌고, 그 셈 덕분에 이 연표가 해를 적을 수 있다. 셈은 역마다 조금씩 어긋났고, 기록들이 일이 일어난 때를 두고 엇갈리는 까닭 하나가 그것이다.
+
+### 끝나지 않는 겨울의 옷
+
+서울에서 계절에 맞춰 옷을 입는 사람은 없다. 옷은 걷히지 않는 추위에 맞춰 겹으로 짓는다. 살에 닿는 것, 그 위에 누빈 것, 바람을 막는 것. 외투보다 신발이 중요하다. 역과 터널의 바닥이 발의 열을 빼앗기 때문이다. 지상으로 올라가는 사람은 가진 것을 다 껴입고, 모자란 것은 빌린다.
+
+세대를 거치며 입는 것이 하는 일과 받을 몫을 드러내게 됐다. 펌프 운전자의 가족은 짐꾼보다 좋은 펠트를 살 수 있었다. 그 모습은 세력별 사회 문서에 세력마다 적혀 있다.
+
+### 수집
+
+새로 만들 수 없는 것은 모두 지상에 남아 있다. 세대마다 계단 위로 사람을 올려 보내 그것을 가져오게 했다. 전선, 유리, 관, 약, 배터리, 천, 책. 수집조는 추위와 동물과 빛을 읽는 법을 배웠고, 셋 가운데 무엇이 등을 돌리기 전에 아래로 돌아오는 법을 배웠다.
+
+올라가는 수집조는 모두 그 역의 가장 좋은 연장과 가장 좋은 무기를 들고 갔다. 돌아오지 못한 수집조는 그것도 함께 가져갔다. 백 년에 걸쳐 수집은 펌프 일이나 케이블 일 같은 직업이 됐고, 같은 방식으로 부모에게서 자식에게 넘어갔다.
+
+### 무엇보다 물
+
+역을 묶어 둔 모든 사슬 가운데 아무도 끊을 수 없는 것이 물이었다. 얼음은 녹일 수 있었지만 녹이려면 열이 필요했고, 열에는 연료나 전기가 필요했다. 펌프는 깊은 관에서 물을 끌어올 수 있었지만 펌프에는 전기와 부품이 필요했다. 돌아가는 펌프를 쥔 역은 물을 거의 무엇과도 바꿀 수 있었고, 펌프를 잃은 역에는 다른 펌프를 찾을 시간이 몇 해가 아니라 며칠뿐이었다.
+
+대개 급수계약의 관습은 이렇게 시작됐다고 전한다. 펌프를 쥔 사람과 물이 필요한 사람 사이의 약속을 적어 두고 다시 맺는 것이다. 누가 처음 서명했는지는 전하는 이마다 다르다. 다만 백 년이 끝날 무렵 급수계약이 서울의 모든 세력이 무겁게 여기는 몇 안 되는 약속 가운데 하나였다는 데는 모두 같다.
+
+### 약과 병
+
+추위는 추위의 병을 데려왔고, 붐비는 역은 그 병을 퍼뜨렸다. 약도 다른 모든 것과 같은 곳, 이전 세계의 창고에서 왔다. 세대마다 약은 줄었다. 사람들은 어떤 병은 온기와 휴식으로 견딜 수 있고, 어떤 병에는 더는 없을지도 모르는 약이 필요한지 배웠다. 그 병들은 [질병](/wiki/Ailments/) 문서에 적혀 있다.
 
 <a id="2051년"></a>
-
-### 2051년 · 다시 움직인 휴머노이드
-
 <a id="ch18-i1"></a>
-
-#### 가. 휴머노이드 재사용
-
-2세대에 이르러 휴머노이드를 지역망에 연결해 다시 쓸 수 있게 되었다. 2051년 6월 양재의 한 차체 공장은 정만수가 이끄는 정씨 가문이 운영하고 있었다. 공장은 원격망에서 분리한 현장 휴머노이드 12기를 사람이 직접 조종하는 방식으로 다시 쓰기 시작하였다. 조종은 등에 연결한 유선 제어기로 하였다.
-
 <a id="2052년"></a>
-
-### 2052년 · 정동 모임
-
 <a id="ch19-i1"></a>
-
-#### 가. 정동 모임
-
-2052년 11월 2일 시청역 지하 노동자 380여 명이 정동의 한 건물에서 모임을 열었다. 참석자 전원이 1표씩 행사하여 문정아를 위원장으로 뽑았다.
-
 <a id="2053년"></a>
-
-### 2053년 · 여의도 협약
-
 <a id="ch15-i1"></a>
-
-#### 가. 회동
-
-2053년 3월 14일 10:00 영등포 정수센터 책임자 한석진과 물을 받는 가문 대표 6명이 여의도 금고층 회의실에서 여의도 가문 대표 7명과 만났다. 회의는 13시간 동안 이어졌다. 회의록은 금고층 전산 당직자 서민재의 손녀 서은하가 작성하였다.
-
 <a id="ch15-i2"></a>
-
-#### 나. 협약
-
-협약서에는 여의도 일대와 영등포역 주변 급수 설비 11곳의 관리권을 여의도 가문들에 넘기고, 그 대가로 차용증 312장 전부를 소멸시킨다고 적혔다. 23:10경 양측 대표 14명이 서명하였다. 소멸된 차용증은 그 자리에서 구멍을 뚫어 묶었다.
-
 <a id="ch15-i4"></a>
-
-#### 다. 연합회 명칭
-
-2053년 3월 14일 여의도 가문들은 협약에 서명하였다. 이들은 이후 여의도출자연합회라는 이름으로 함께 움직였다.
-
 <a id="ch15-i3"></a>
-
-#### 라. 거점 이전
-
-2053년 3월 20일부터 영등포 정수센터 측은 거점을 양평역 지하로 옮겼다. 이전에는 9일이 걸렸다. 정수센터 운전일지 45권은 양평역 지하 서고로 옮겨졌다. 정수센터 설비는 그 뒤에도 계속 운전되었다.
-
 <a id="2054년"></a>
-
-### 2054년 · 증서 발행
-
 <a id="ch16-i1"></a>
-
-#### 가. 발행
-
-2054년 5월 여의도출자연합회는 금고 안의 부품과 칩을 보증으로 하는 증서를 발행하였다. 첫 발행량은 1만 장이었다. 증서마다 일련번호와 보증 부품의 목록 번호가 적혔으며 뒷면에는 발행 가문의 인장이 찍혔다.
-
 <a id="2055년"></a>
-
-### 2055년 · 양평역 계약 회의
-
 <a id="ch17-i1"></a>
-
-#### 가. 구성
-
-2055년 2월 양평역으로 옮긴 급수 측은 물을 받는 가문 대표들로 계약 회의를 꾸렸다. 갑문 4곳, 배수지 3곳, 차량기지 2곳을 맡은 9개 가문이 1표씩 가졌다. 첫 회의는 양평역 지하 대합실에서 열렸다.
-
 <a id="2056년"></a>
-
-### 2056년 · 첫 표결
-
 <a id="ch17-i2"></a>
-
-#### 가. 첫 표결
-
-2056년 1월 한석진이 물러나겠다고 밝혔다. 계약 회의는 후임 책임자를 표결로 뽑았다. 한석진의 아들이자 한정훈의 손자인 한도윤이 9표 가운데 6표를 얻어 뽑혔다.
-
 <a id="2057년"></a>
-
-### 2057년 · 증서의 통용
-
 <a id="ch16-i2"></a>
-
-#### 가. 통용
-
-증서는 부품 매매에 먼저 쓰였다. 2057년에는 용산 대차 운임과 구로 공방 임금도 증서로 지급되었다. 같은 해 증서 유통량은 4만 장을 넘었다.
-
 <a id="2058년"></a>
-
-### 2058년 · 위조와 편입
-
 <a id="2058년-여의도출자연합회"></a>
-
-#### 여의도출자연합회
-
 <a id="ch16-i3"></a>
-
-##### 가. 위조와 감정인
-
-2058년 8월 구로에서 위조 증서 17장이 처음 발견되었다. 위조 증서의 목록 번호는 금고에 없는 부품을 가리키고 있었다. 연합회는 설비 매뉴얼을 읽을 수 있는 사람 5명을 감정인으로 두어 증서를 확인하게 하였다. 감정인은 목록 번호를 금고 대장과 대조하였다.
-
 <a id="2058년-태욱중공업"></a>
-
-#### 태욱중공업
-
 <a id="ch18-i2"></a>
-
-##### 가. 태욱중공업
-
-2058년 9월 정만수는 공장 이름을 태욱중공업으로 정하였다. 같은 해 공장 주변의 작업장 6곳이 태욱중공업에 편입되었다. 편입 문서에는 정만수와 각 작업장 대표가 서명하였다.
-
 <a id="peninsula-2058-busan-sailings"></a>
 <a id="event-peninsula-2058-busan-sailings"></a>
-
-#### 영남 · 다시 띄운 배
-
-2058년 부산의 선원과 수리 인력은 항만에 묶여 있던 배 가운데 유지할 수 있는 선박을 골라 연안 운항을 재개하였다. 배마다 사람과 자재를 댄 이들이 달라 항구의 대표가 모든 출항을 명령할 수는 없었다. 선주들은 남해안에서 짐을 여러 번 넘겨 서울 방향의 상인과 거래하고, 다음 항해에 쓸 수리 자재를 구하였다.
-
 <a id="2059년"></a>
-
-### 2059년 · 첫 파업
-
 <a id="ch19-i2"></a>
-
-#### 가. 첫 파업
-
-2059년 4월 시청역 노동자들은 구로 공방 임금이 증서로만 지급되는 데 반대하여 3일간 작업을 멈추었다. 파업 3일째 구로 공방 우두머리 모임은 임금의 3분의 1을 물로 지급하기로 합의하였다.
-
 <a id="2060년"></a>
-
-### 2060년 · 연합회의 첫 의장
-
 <a id="ch16-i4"></a>
-
-#### 가. 첫 의장
-
-2060년 1월 연합회 출자 가문 7곳의 대표가 처음으로 의장을 뽑았다. 출자 지분이 가장 큰 최씨 가문의 최영선이 의장이 되었다. 투표는 지분 비율에 따라 진행되었다.
-
 <a id="2061년"></a>
-
-### 2061년 · 정부서울청사의 선거
-
 <a id="ch19-i3"></a>
-
-#### 가. 대통령 선거
-
-2061년 3월 정부서울청사의 당직 가문 23곳이 대통령 선거를 치렀다. 투표권은 당직을 대대로 맡아 온 가문에만 있었다. 기록 당직 가문의 윤재경이 13표를 얻어 당선되었다. 윤재경은 기록 보관함의 긴급명령 원본을 확인하는 것으로 취임하였다.
-
 <a id="2062년"></a>
-
-### 2062년 · 성하전자
-
 <a id="ch18-i3"></a>
-
-#### 가. 성하전자
-
-2062년 3월 강남역 부근 전산 건물을 관리하던 이씨 가문의 이상철이 여의도출자연합회와 서버실 열쇠 임대 계약을 맺었다. 임대 기간은 20년, 임대료는 매년 증서 3,000장이었다. 이상철은 건물에 성하전자라는 이름을 내걸었다.
-
 <a id="2063년"></a>
-
-### 2063년 · 재협약 제안
-
 <a id="ch17-i3"></a>
-
-#### 가. 재협약 제안
-
-2063년 표결에서는 갑문 가문의 대표 조민호가 뽑혔다. 조민호는 2046년 표결에서 떨어진 조경택의 아들이었다. 2063년 7월 조민호는 연합회에 여의도 협약서를 다시 쓰자고 제안하였으나, 연합회 의장 최영선은 서면으로 거절하였다.
-
 <a id="2064년"></a>
-
-### 2064년 · 흰 깃발
-
 <a id="ch20-i1"></a>
-
-#### 가. 흰 깃발 대차
-
-2064년 5월 신내 차량기지 운송 책임자 장기택은 흰 깃발을 단 대차로 부상자와 약품을 나르기 시작하였다. 첫 달 운행은 31회였다. 어느 쪽의 화물도 거부하지 않았다. 장기택은 이 원칙을 문서 1장으로 남기고 서명하였다.
-
 <a id="peninsula-2064-northern-coast-handoffs"></a>
 <a id="event-peninsula-2064-northern-coast-handoffs"></a>
-
-#### 북한 지역 · 동해안 북부의 인계
-
-2064년 함흥·청진 쪽 항만과 철도 주변 주민들은 유지한 짧은 구간에서 화물과 사람을 넘겨 보냈다. 끊긴 구간마다 짐을 다시 옮겼으므로 화차가 출발한 곳과 그 안의 짐이 출발한 곳은 서로 달랐다. 서울 방향으로 물건을 보내려는 상인도 인계 때마다 운반자를 새로 구하였고, 어느 운반자도 전 구간의 통행을 보장하지 못하였다.
-
 <a id="2066년"></a>
-
-### 2066년 · 세습과 흰 십자
-
 <a id="2066년-태욱중공업"></a>
-
-#### 태욱중공업
-
 <a id="ch18-i4"></a>
-
-##### 가. 세습
-
-2066년 2월 정만수가 죽고 장남 정태훈이 태욱중공업 회장직을 이었다. 같은 해 10월 이상철은 성하전자 회장직을 아들 이준호에게 넘겼다.
-
 <a id="2066년-제기동"></a>
-
-#### 제기동
-
 <a id="ch20-i2"></a>
-
-##### 가. 흰 십자
-
-2066년 3월 제기동 병원 의사 14명은 흰 십자 표식을 달고 지상 작업자와 지하 거주자를 가리지 않고 치료하였다. 의사들의 서열은 수련 기간으로 정하였다. 초대 단장 강혜린은 후계자를 서면으로 지명하였다.
-
 <a id="2068년"></a>
-
-### 2068년 · 기록청 기재와 독도 초소
-
 <a id="ch19-i4"></a>
-
-#### 가. 기록청 기재
-
-2068년 10월 청사 기록청장 윤재경은 긴급명령 원본의 국회 승인 일자란이 비어 있다는 사실을 장부에 적었다. 기재문 아래에는 원본을 확인한 입회인 3명이 서명하였다.
-
 <a id="peninsula-2068-dokdo-watch"></a>
 <a id="event-peninsula-2068-dokdo-watch"></a>
-
-#### 독도 · 교대 초소
-
-2068년 울릉도에서 배를 고치던 선원들과 독도 초소 기록을 이어받은 사람들은 동쪽 조업 선박의 계절별 연락을 받으려고 독도 체류를 교대로 나누었다. 초소에 식수와 보수 자재를 보내는 배가 끊기면 인원부터 거두어들였고, 돌아온 사람은 접안과 조난 기록을 다음 교대에 넘겼다. 작은 초소는 울릉도와 연안의 보급에 기대어 버텼다.
-
 <a id="2069년"></a>
-
-### 2069년 · 명부와 검수
-
 <a id="2069년-대한민국정부"></a>
-
-#### 정부
-
 <a id="ch19-i5"></a>
-
-##### 가. 도심 배급 명부
-
-2069년 2월 정부는 광화문역 주변 종로·중구 거주자 명부를 작성하였다. 정부서울청사 배급 창구는 이 명부에 오른 사람에게만 식량을 지급하였다.
-
 <a id="2069년-구의"></a>
-
-#### 구의
-
 <a id="ch20-i3"></a>
-
-##### 가. 구의 이원 선출
-
-2069년 6월 구의에서는 아차산 방향 관문을 지키는 사령관으로 고명철이, 구의아리수정수센터를 지키는 수비대장으로 탁현우가 각각 선출되었다. 두 사람은 해마다 6월 한 차례 만나 급수와 통행을 정하였다. 첫 회의 결과는 문서 2부로 작성하여 각자 1부씩 보관하였다.
-
 <a id="2069년-xt01-임진-제방-임시-검역소"></a>
-
-#### 임진 제방 임시 검역소
-
 <a id="xt01-2069"></a>
-
-##### 귀환 명부 공동 대조
-
-2069년 7월 안국 필사 당직과 광화문 청사 명부 당직은 임진 제방 임시 검역소에서 귀환 명부를 함께 대조하였다. 신내 대차 당직은 가족 대기열과 의약품 상자의 인계 순번을 나누어 적었다. 강남 호송 당직은 환승 칸을 맡았다. 구의 관문 사령관 측은 귀환 안내 단말의 봉인 열쇠를 나누어 보관하였다.
-
 <a id="2069년-xt04-암사-야적장"></a>
-
-#### 암사 야적장
-
 <a id="xt04-2069"></a>
-
-##### 화차 중량 검수
-
-2069년 8월 암사 경비 당직은 동북 우회로로 들어온 화차의 중량 기록과 화인을 대조하였다. 신내 대차 당직은 과중량 칸을 뒤로 옮겼다. 강남 당직은 동절 연료 순번을 적었다. 제기동 당직은 동상 환자를 맡았다. 구의 관문 사령관 측은 원산지 표의 위조 흔적을 증빙 봉투에 넣어 봉인하였다.
-
 <a id="2069년-xt05-여의도-회관"></a>
-
-#### 여의도 회관
-
 <a id="xt05-2069"></a>
-
-##### 잔여 대역 신탁 창구
-
-2069년 9월 여의도 회관 옥상 당직은 대정전 뒤 인천 창구에 남은 잔여 궤도 번호를 신탁 수령창으로 보내려고 회람하였다. 영등포 수문 당직은 송신·펌프 운전 시각을 대조하였다. 광화문 정부서울청사 당직은 인도 목록의 해시를 참관 장부에 옮겨 적었다. 시청 노동 당직은 송금 기록의 회차선을 확인하였다. 양재 공장 당직은 궤도 단말의 오탐 경보를 가려냈다. 명동 당직은 다국어 상담 대기표를 작성하였다.
-
 <a id="2070년"></a>
-
-### 2070년 · 부결과 경비대
-
 <a id="2070년-수문국"></a>
-
-#### 수문국
-
 <a id="ch17-i4"></a>
-
-##### 가. 부결
-
-2070년 4월 수문국 계약 회의는 여의도에 보낼 새 협약안을 세 번째로 표결에 부쳤다. 찬성 4표, 반대 5표로 안건은 부결되었다. 반대한 5개 가문은 모두 여의도 방향 송수관을 맡은 가문이었다.
-
 <a id="2070년-대한민국정부"></a>
-
-#### 정부
-
 <a id="ch19-i6"></a>
-
-##### 가. 청사 경비대
-
-2070년 9월 청사 상비 경비대는 광화문·종로3가·을지로입구역의 소집부를 작성하였다. 경비대는 세 역의 교대 경비를 맡았다.
-
 <a id="era-4"></a>
 
-## 4시대 · 세 갈래 (2071~2090)
+## 3시대 · 바꿀 수 없는 기계들
+
+대정전 이전 세계에는 현대 무기, 드론, 휴머노이드, 몸의 일부를 대신하는 기계가 있었다. 그 모두가 역으로 살아남아 들어왔다. 어느 것도 다시 많이 만들 수 없었다. 이 시대는 바꿀 수 없는 기계와 함께 사는 법을 배운 때로 기억된다.
+
+### 공장 없는 총
+
+현대 화기는 사라지지 않았다. 소총, 권총, 산탄총이 들고 온 사람들과 함께 역으로 내려왔고 지금도 쏠 수 있다. 모자란 것은 탄약이었다. 한 발 쏠 때마다 세상의 탄약이 한 발 줄었고, 역들은 물을 세듯 탄을 세는 법을 배웠다.
+
+대개 싸움이 끝날 때마다 빈 탄피를 줍는 것이 습관이 됐다고 전한다. 탄피는 다시 채울 수 있지만, 탄이 발사되게 하는 부분은 훨씬 바꾸기 어렵다. 총은 가문이 물려주는 물건이 됐고, 꽉 찬 탄창은 쓰기보다 내보이는 물건이 됐다. 사람들은 지금도 칼과 몽둥이를 든다. 간수하는 데 드는 것이 없기 때문이다. 그래도 서울에서 그것을 더 나은 무기로 착각하는 사람은 없다.
+
+### 드론의 해들
+
+드론은 창고, 경찰서, 군 보급고에서 나왔다. 닳은 배터리로 짧게 날았고, 수집조가 올라가기 전에 출구를 살피고 역 사이 터널을 지켜봤다. 배터리가 넘을 수 없는 한계였다. 깊은 추위에서는 충전되지 않는 것이 많아서, 드론은 따뜻하게 두었다가 잠깐 날리고 다시 내렸다. 돌아가는 드론을 한 세대 동안 지킨 역은 지킬 만한 것을 가진 셈이었다.
+
+서울 밖의 기계도 난다. 2126년에도 사람들은 옛 명령을 따라 도시 밖을 떠도는 드론 때문에 지상에서 사라진다. 모든 역이 그 두려움을 잊지 않는다.
+
+### 휴머노이드
+
+휴머노이드 기계는 적은 수가 살아남았다. 어떤 것은 짐을 날랐고, 어떤 것은 사람이 견디지 못할 만큼 추운 곳에서 일했으며, 어떤 것은 경비를 섰다. 하나하나가 아무도 만들 수 없는 부품을 필요로 했다. 세대마다 더 드물어졌고, 그것을 움직이게 하는 사람은 기계만큼 귀하게 대접받았다.
+
+### 몸 안의 금속
+
+서울에서 사이버웨어는 살아 있는 기술이다. 기계 신체 부품은 작동하고, 사람들이 쓴다. 동시에 희소하다. 부품마다 정비, 전력, 예비 부품이 필요하고, 누군가 그 셋을 쥐고 있어야 한다. 누가 기계 몸을 갖고 누가 그것을 계속 돌리는지는 그 유지를 쥔 사람과 세력에 닿을 수 있느냐에 달려 있다.
+
+대개 사이버웨어는 처음에 수리로 퍼졌다고 전한다. 펌프 사고 뒤에 바꾼 손, 얼어붙은 계단통으로 떨어진 뒤에 바꾼 다리. 한쪽에서 지위를, 다른 쪽에서 신앙을 뜻하게 된 것은 나중 일이다. 정비할 수 없는 신체 부품은 짐이 되며, 역들은 그것을 어렵게 배웠다.
+
+### 유지가 곧 힘
+
+이 시대가 끝날 무렵 역들은 귀한 것이 기계가 아니라 유지라는 것을 알았다. 탄 없는 소총은 몽둥이다. 충전된 배터리가 없는 드론은 상자다. 기술자 없는 기계 손은 팔에 매달린 무게일 뿐이다. 작업장과 예비 부품과 충전할 전기를 쥔 사람과 무리가 누가 기계를 쓸 수 있는지를 정했다.
+
+| 기계에 필요한 것 | 귀한 까닭 | 그것이 힘을 준 쪽 |
+|---|---|---|
+| 정비 | 고칠 줄 아는 사람이 적고, 자기 자식만 가르친다 | 기술자 가문 |
+| 전력 | 발전기는 낡았고 연료는 배급된다 | 발전기와 전선을 쥔 쪽 |
+| 예비 부품 | 새로 만드는 것이 없어 부품은 모두 수집이나 다른 기계에서 온다 | 창고와 수집로를 쥔 쪽 |
+| 탄약 | 탄은 한 번 쓰면 끝이고, 탄피는 다시 쓰지만 나머지는 바꾸기 어렵다 | 작업장과 비축분을 쥔 쪽 |
+
+이 표가 서울 권력의 모양이다. 이 세대들에서 자라난 역을 쥐는 세 방식은 같은 질문에 대한 세 가지 다른 답이다. 누가 기계를 돌리고, 누구를 위해 돌리는가.
+
+### 추위와 배터리
+
+추위는 사람의 적인 만큼 기계의 적이다. 배터리는 깊은 추위에서 빨리 닳고, 영하에서는 아예 충전되지 않는 것이 많다. 서울에서 돌아가는 장치는 모두 쓰기 전에 데운다. 사람들은 배터리를 옷 안, 몸 가까이 품고 다니며 역에서 가장 따뜻한 방에서 충전한다. 전동 기계 손이나 드론은 배터리가 기다리는 따뜻한 자리만큼만 쓸모가 있다.
 
 <a id="2071년"></a>
-
-### 2071년 · 삼성역의 무리
-
 <a id="ch21-i1"></a>
-
-#### 가. 결성
-
-2071년 2월 삼성역 거주자 명부를 관리하던 오성규가 명부 등재자 가운데 남성 120여 명을 모아 지상 순찰 기체를 부수는 무리를 만들었다. 첫 작전은 2071년 3월 역삼동에서 순찰 기체 2대를 부순 일이었다.
-
 <a id="2072년"></a>
-
-### 2072년 · 짧은 기록
-
 <a id="ch22-i1"></a>
-
-#### 가. 결성
-
 <a id="2073년"></a>
-
-### 2073년 · 연대와 필사
-
-#### 삼성역
-
 <a id="ch21-i2"></a>
-
-##### 가. 연대
-
-2073년 5월 삼성역 무리는 암사 경비대와 구의 관문 사령관 고명철에게 대원을 40명씩 보내 함께 싸웠다. 암사 경비대 사령관은 배현수의 장남 배진혁이었다.
-
 <a id="2073년-안국역"></a>
-
-#### 안국역
-
 <a id="ch23-i1"></a>
-
-##### 가. 책임자 선출
-
-2073년 8월 안국역에서 설비 매뉴얼을 필사하던 40여 명이 혜안을 책임자로 뽑았다. 선출은 참석자 전원의 동의로 이루어졌다.
-
 <a id="2074년"></a>
-
-### 2074년 · 첫 지상 단속
-
 <a id="ch21-i3"></a>
-
-#### 가. 논현동 단속
-
-2074년 9월 삼성역 무리의 대원들이 논현동 지상에서 3명을 붙잡았다. 붙잡힌 3명은 3일 뒤 풀려났다.
-
 <a id="2075년"></a>
-
-### 2075년 · 대장 등록
-
 <a id="ch22-i2"></a>
-
-#### 가. 대장 등록
-
-2075년 2월 용산 선로 가문들이 장자 상속을 대장에 올려 확인받기 시작하였다. 첫 확인은 박씨 가문이었다. 같은 해 태욱중공업 회장 정태훈의 가문도 혼인을 같은 대장에 등록하였다.
-
 <a id="2076년"></a>
-
-### 2076년 · 승계
-
 <a id="ch21-i4"></a>
-
-#### 가. 승계
-
-2076년 1월 오성규가 사망하고 아들 오준희가 삼성역 무리를 이끄는 자리를 이었다. 어른 17명이 인준 투표를 실시하였다. 찬성 15표, 기권 2표였다.
-
 <a id="2077년"></a>
-
-### 2077년 · 필사 교육
-
 <a id="ch23-i2"></a>
-
-#### 가. 필사 교육
-
-2077년 1월 양평역 계약 회의와 구로 공방 우두머리 모임이 안국역 필사자 6명을 설비 매뉴얼 해독자로 초빙하였다. 두 곳의 기술자 30여 명이 안국역에서 필사를 배웠다. 교육 기간은 1년이었다.
-
 <a id="2078년"></a>
-
-### 2078년 · 짧은 기록
-
 <a id="ch22-i3"></a>
-
 <a id="2079년"></a>
-
-### 2079년 · 문서와 화물 점검
-
 <a id="ch24-i1"></a>
-
-#### 가. 기술 문서 점검
-
-2079년 10월 중앙정보부는 잃어버린 기술 문서를 점검하고 보관하겠다고 공지하였다.
-
 <a id="2079년-xt02-한강-하구-임시-부두"></a>
-
-#### 한강 하구 임시 부두
-
 <a id="xt02-2079"></a>
-
-##### 하구 화물 공동 점검
-
-2079년 11월 영등포 수문 당직은 한강 하구 임시 부두의 조위표와 배수 밸브 기록을 대조하였다. 구로 공방 당직은 압축기 부품 순번을 적었다. 양재 공장 당직은 해시가 깨진 상자를 격리하였다. 중앙정보부 흑석 당직은 냉동 순번을 고쳤다. 여의도 회관 당직은 점검표를 돌려 보았다.
-
 <a id="2079년-xt03-용산-환적창"></a>
-
-#### 용산 환적창
-
 <a id="xt03-2079"></a>
-
-##### 세 갈래 중계 보고
-
-2079년 12월 용산 선로 당직은 해협 건너편에서 온 세 갈래 중계 보고를 환적 장부에 접수하였다. 시청 노동 당직은 내륙 회차가 가능한 칸을 적었다. 명동 인준 당직은 인준 봉투를 봉인하였다. 삼성역 명부 당직은 밀봉 화물의 수령인을 대조하였다. 중앙정보부 흑석 당직은 통역 용어가 다른 항목을 따로 기록하였다.
-
 <a id="2080년"></a>
-
-### 2080년 · 원장 시험
-
-#### 중앙정보부
-
 <a id="ch24-i2"></a>
-
-##### 가. 원장 시험
-
-흑석 보존원의 원장은 장부 판독 시험으로 뽑았다. 첫 시험은 2080년 2월에 치러졌고 응시자는 41명이었다. 시험지는 보존원 지하의 단말기가 채점하였다. 수석을 한 진서우가 초대 원장이 되었다.
-
 <a id="2082년"></a>
-
-### 2082년 · 필사본 배척
-
 <a id="ch23-i3"></a>
-
-#### 가. 필사본 배척
-
-2082년 6월 삼성역 무리는 안국역 필사본을 쓰는 기술자를 암사와 구의 관문에서 받지 않겠다고 통보하였다. 통보문에는 오준희가 서명하였다.
-
 <a id="2084년"></a>
-
-### 2084년 · 합격자 진출
-
 <a id="ch24-i3"></a>
-
-#### 가. 합격자 진출
-
-2084년 보존원 시험 합격자 9명이 양평역 계약 회의와 구로 공방에 자리를 얻었다. 이 가운데 4명은 안국역에서 필사를 배운 기술자였다.
-
 <a id="2085년"></a>
-
-### 2085년 · 관문 단속
-
 <a id="ch25-i2"></a>
-
-#### 가. 단속
-
-2085년 4월부터 삼성역 무리는 암사와 구의 관문에서 작업자를 붙잡기 시작하였다. 첫 달에 12명이 붙잡혔다. 붙잡힌 작업자의 이름은 관문 통행 명부에서 지워졌다.
-
 <a id="2087년"></a>
-
-### 2087년 · 호남 계약 거절
-
 <a id="peninsula-2087-honam-contract-refusal"></a>
 <a id="event-peninsula-2087-honam-contract-refusal"></a>
-
-#### 호남 · 서울 상인의 독점 요구
-
-2087년 서해를 거쳐 온 서울 상인이 다음 해 곡식까지 먼저 사들이려 하자 호남의 생산지 일부가 계약을 거절하였다. 선주는 값을 더 받는 서울행 화물과 마을에 남겨야 할 식량을 나누었다. 서울 상인들은 한 항구만 상대해서는 원하는 물량을 얻지 못하여 생산지마다 다시 값을 교섭하였다.
-
 <a id="2088년"></a>
-
-### 2088년 · 필사본 점검 위임
-
 <a id="ch24-i4"></a>
-
-#### 가. 필사본 점검 위임
-
-2088년 5월 보존원은 안국역 필사본의 점검을 맡겠다고 요청하였다. 안국역 필사자들은 이를 받아들였다. 필사본 1,200여 권이 흑석으로 옮겨졌다가 점검을 마친 뒤 돌아왔다.
-
 <a id="2090년"></a>
-
-### 2090년 · 짧은 기록
-
 <a id="ch25-i3"></a>
-
-#### 가. 2090년의 기록
-
 <a id="era-5"></a>
 
-## 5시대 · 노선 끝의 시대 (2091~2110)
+## 4시대 · 역을 쥐는 세 가지 방식
+
+백 년의 긴 한가운데에서 역들은 세 가지 사는 방식으로 갈라졌다. 그 가운데 둘은 고예진이 태어나기 전에 모양을 갖췄다. 셋째가 그의 것이었다.
+
+| 세력 | 영역 | 공작령 | 권력을 쥐는 방식 |
+|---|---|---|---|
+| 정부 | 한강 북쪽 | 14 | 서류상 삼권과 다당제, 실제로는 두 당과 현대 봉건제 |
+| 자유도시(유니온) | 남서쪽 | 7 | 왕이 없는 엔지니어들의 독립 도시국가 |
+| 아크 | 강남 | 4 | 메시아 고예진 아래의 가문 통치 |
+
+구 하나가 공작령 하나다. 서울의 25공작령은 정부 14, 자유도시 7, 아크 4로 나뉜다. 장소와 역의 이름은 옛 서울의 것이다.
+
+### 강 북쪽: 정부
+
+정부는 한강 북쪽 14구를 쥔다. 서류상으로는 지금도 대한민국 삼권의 부처와 다당제를 유지한다. 실제로는 OMO당과 클로당 두 당뿐이고, 형식 아래는 현대 봉건제다.
+
+각 구에서 뽑힌 국회의원이 그 구의 공작령을 쥐며, 칭호는 상원의원이다. 상원의원들이 자기들 가운데서 후보를 모아 대통령을 내고, 대통령은 종신이다. 붕괴 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정하며, 그 사람들은 이름만 다를 뿐 농노다. 옛 역 명부가 자라서 이것이 됐다. 정부는 강 건너 모든 곳을 야만인들 사는 데로 여긴다.
+
+### 남서쪽: 자유도시
+
+자유도시는 남서쪽 7구를 쥔다. 하나의 권력이 아니다. 고대 그리스 폴리스처럼 독립한 도시국가들이고, 도시마다 제 공작령을 쥔다. 왕은 없다.
+
+그곳 사람 대부분은 물자와 기술을 주고받는 엔지니어다. 배관, 배전, 정수는 모두 서로에게 기대고 있었고, 누구 기술이 더 높은지 따질 방법이 없었다. 그래서 지도자를 뽑지 못했고, 도시들은 대신 서로 거래하며 살아남았다. 이일섭이 관악 공작이다. 지금은 도시들을 묶어서 유니온이라고 부른다. 고예진이 클 때는 그냥 자유도시였다.
+
+### 장부가 하는 일
+
+정부의 장부는 이름 목록 이상이다. 사람이 어디서 자는지, 무슨 일을 하는지, 어떤 배급을 받는지, 누구에게 답하는지를 적는다. 아이가 태어나면 아이를, 일이 물려지면 일을 적는다. 장부에 오른 사람은 노역에도, 경비에도, 전쟁에도 불려 나갈 수 있고, 그 대가로 열과 물과 유지를 청할 수 있다.
+
+장부 밖의 사람에게는 그 어느 것도 없다. 누군가의 허락으로만 정부의 역에서 살 수 있고, 쫓겨날 수 있다. 강 북쪽 사람 대부분에게 그것은 처음부터 고를 수 있는 일이 아니었다. 적혀 있는 것이 곧 살아 있는 것이다.
+
+징발, 배급, 신분의 세부는 [정부 사회](/wiki/Government-Society/) 문서가 다룬다.
+
+### 도시들이 거래하는 법
+
+자유도시에서 펌프, 분전함, 정수기는 그것이 필요한 사람에게 해 줄 수 있는 만큼의 값어치를 갖는다. 엔지니어들은 부품을 수리와, 수리를 전기와, 전기를 먹을 것과 바꾼다. 좋은 정수기를 가진 도시는 이웃에게 많은 것을 요구할 수 있다. 발전기가 고장 난 도시는 이번에는 자기가 이웃에게 많은 것을 청해야 한다.
+
+이 거래를 다스리는 사람은 없다. 도시마다 자기 규칙이 있고, 도시들은 그 규칙을 두고 끊임없이 다툰다. 그래도 거래가 이어지는 것은 모든 도시가 다른 도시의 기술을 필요로 하고, 어느 도시도 모든 일을 혼자 할 수 없기 때문이다. 도시들의 시장과 일상은 [자유도시 사회](/wiki/Free-City-Society/) 문서에 있다.
+
+### 아크 이전의 강남
+
+강남의 역들은 모든 것의 가장자리에 있었다. 자유도시와 거래할 만큼 가까웠지만 어느 도시에도 속하지 않았다. 대피소마다 제 사람들을 스스로 돌봤다.
 
 <a id="2095년"></a>
-
-### 2095년 · 작업장과 전산 건물
-
 <a id="ch26-i4"></a>
-
-#### 가. 작업장과 전산 건물
-
-2095년 5월 태욱그룹은 태욱중공업과 그 아래 작업장 11곳을 거느렸다. 성하그룹은 성하전자 주변 전산 건물 4곳을 거느렸다.
-
 <a id="2097년"></a>
-
-### 2097년 · 수문국의 물길 계약
-
 <a id="ch27-i1"></a>
-
-#### 가. 계약
-
-2097년 6월 수문국은 양평과 춘천의 물길 관리 인원과 계약을 맺었다. 양평 쪽 대표는 34명, 춘천 쪽 대표는 51명이었다. 수문국은 두 곳을 제일수문, 제이수문이라 이름 붙였다. 두 곳은 수문국의 물길 관리를 맡는 대가로 양평역 배급 명부에 올랐다.
-
 <a id="2098년"></a>
-
-### 2098년 · 동방사의 경비지구
-
 <a id="ch28-i1"></a>
-
-#### 가. 경비지구
-
-2098년 9월 동방사는 하남, 남양주, 의정부·연천의 지상 거점을 제1·제2·제3경비지구로 묶었다. 각 경비지구는 해마다 봄과 가을 두 차례 경비 인원을 암사로 보냈다.
-
 <a id="2099년"></a>
-
-### 2099년 · 춘천이라는 이름
-
 <a id="ch27-i2"></a>
-
-#### 가. 명칭 변경 요구
-
-2099년 3월 춘천에서 제이수문 대신 옛 도시 이름을 쓰자는 요구가 나왔다. 요구서에는 춘천 쪽 주민 1,100여 명이 서명하였다. 수문국 계약 회의는 찬성 2표, 반대 7표로 이를 받아들이지 않았다.
-
 <a id="peninsula-2099-chuncheon-name"></a>
 <a id="event-peninsula-2099-chuncheon-name"></a>
-
-#### 강원 · 기각 뒤의 춘천
-
-2099년 3월 요구가 기각된 뒤에도 춘천의 뱃사람과 장터 상인들은 자기 물건과 안내판에 춘천이라는 이름을 계속 썼다. 2097년 수문국과 맺은 물길 계약은 그대로 남았으나 계약서의 이름이 주민의 일상까지 바꾸지는 못하였다. 서울에서 온 상인들은 계약서의 제이수문과 장터에서 듣는 춘천이 같은 거점을 가리킨다는 것을 익혔다.
-
 <a id="2100년"></a>
-
-### 2100년 · 선로 끝의 통행세
-
 <a id="ch29-i1"></a>
-
-#### 가. 종착
-
-2100년 7월 환적국은 인천과 파주의 선로 끝 거점을 제1종착, 제2종착으로 정하고 통행세를 거두었다. 통행세는 화물 무게에 따라 증서로 받았다.
-
 <a id="2101년"></a>
-
-### 2101년 · 태욱중공업의 사업장
-
 <a id="ch28-i2"></a>
-
-#### 가. 사업장
-
-2101년 3월 태욱그룹은 성남과 수원의 공장 거점을 태욱중공업 성남사업장, 수원사업장으로 이름 붙였다. 두 사업장은 부품과 노동자를 신분당선 선로로 양재에 보냈다. 첫해 성남사업장의 노동자는 1,400여 명이었다.
-
 <a id="2102년"></a>
-
-### 2102년 · 규격맹의 분공방
-
 <a id="2102년-규격맹"></a>
-
-#### 규격맹
-
 <a id="ch29-i2"></a>
-
-##### 가. 분공방
-
-2102년 4월 규격맹은 천안·아산과 시흥의 공방을 제1분공방, 제2분공방으로 받아들였다. 제1분공방은 천안·아산의 이씨 가문이 맡았다. 분공방은 규격서에 따라 만든 부품을 구로로 보냈다.
-
 <a id="2102년-제1분공방"></a>
-
-#### 제1분공방
-
 <a id="ch42-i1"></a>
-
-##### 가. 이씨 가문
-
-제1분공방은 2102년 규격맹에 들어갔다. 이후 천안·아산의 이씨 가문이 규격맹 아래에서 제1분공방을 맡아 관리하였다. 가문은 1호선 남단 차량기지와 공방 4곳을 돌보았다. 이일섭은 이씨 가문의 후계였다. 이일섭은 2126년 현재 관악 공작이다.
-
 <a id="2104년"></a>
-
-### 2104년 · 영종지점과 임진 제방
-
 <a id="ch29-i3"></a>
-
-#### 가. 영종지점
-
-2104년 10월 여의도출자연합회는 공항철도 종점인 영종에 영종지점을 열었다. 영종지점은 바깥 교역 대금을 연합회 증서로 바꾸어 주고 수수료로 100분의 3을 받았다.
-
 <a id="2104년-xt01-임진-제방-임시-검역소"></a>
-
-#### 임진 제방 임시 검역소
-
 <a id="xt01-2104"></a>
-
-##### 훼손 명부 재발급
-
-2104년 11월 북녘에서 임진 제방 임시 검역소로 들어온 귀환 명부가 빗물에 젖어 훼손되었다. 훼손된 줄의 재발급은 안국역 필사자들이 맡았다. 정부 광화문 당직은 제출된 혈연 증서의 진위를 대조하였다. 아관사 구의 관문 당직은 봉인 열쇠를 나누어 보관하였다. 신내운수는 가족 대기열의 환승 칸을 옮겼다. 성하그룹은 의약품 호송 칸을 따로 내주었다.
-
 <a id="2106년"></a>
-
-### 2106년 · 경기도와 인지세
-
 <a id="ch29-i4"></a>
-
-#### 가. 경기도
-
-2106년 1월 정부는 고양의 행정 거점을 경기도라고 불렀다. 경기도는 병역 명부와 인지세를 광화문으로 보냈다. 첫해 병역 명부에는 2,300여 명이 적혔다.
-
 <a id="ch29-i5"></a>
-
-#### 나. 도장과 인지세
-
-2106년 6월 정부는 종로·중구의 통행증에 정부서울청사 도장을 찍도록 정하였다. 종로·중구의 상거래 계약서는 도장이 있어야 기록청 장부에 올랐다. 통행증과 계약서에는 인지세가 붙었다.
-
 <a id="2107년"></a>
-
-### 2107년 · 구의 급수 충돌
-
 <a id="ch30-i1"></a>
-
-#### 가. 구의 충돌
-
-2107년 8월 동방사와 아관사가 구의의 급수를 두고 무력으로 부딪쳤다. 충돌은 이틀 동안 이어졌고 양쪽 사상자는 40여 명이었다. 신내운수 대차 6대가 양쪽 부상자를 제기동으로 옮겼고 흰십자단이 치료하였다.
-
 <a id="2109년"></a>
-
-### 2109년 · 신내운수의 서약문
-
 <a id="ch30-i2"></a>
-
-#### 가. 서약문
-
-2109년 2월 신내운수 사장 가문은 어느 싸움에서도 화물을 가려 싣지 않는다는 서약문을 다시 썼다. 서약문은 신내역 대합실에 걸렸다.
-
 <a id="2110년"></a>
-
-### 2110년 · 기록청 장부
-
 <a id="ch30-i3"></a>
-
-#### 가. 기록청 장부
-
-2110년 12월 정부 기록청 장부에 서울 안팎 여러 조직·가문·회의 이름과 13개 거점의 명칭이 모두 올랐다. 등재에는 각 조직이 보낸 문서 29건이 근거로 붙었다.
-
 <a id="era-6"></a>
-
-## 6시대 · 개막 전야 (2111~2126)
-
 <a id="2111년"></a>
-
-### 2111년 · 승계 문서의 제출
-
 <a id="ch30-i4"></a>
 
-#### 가. 승계와 조약
+## 5시대 · 자유도시의 아이
 
-2111년 3월 수문국·동방사·아관사·환적국·신내운수·규격맹·흰십자단은 각 조직 수장의 승계 문서와 조직 사이에 맺은 조약의 원본을 기록청에 제출하였다. 기록청은 도장을 찍은 등본을 각 조직에 돌려주었다.
+고예진은 자유도시에서 자랐다. 그의 어린 시절에는 아무도 도시들을 유니온이라고 부르지 않았다. 그냥 자유도시였다. 누구 일이 더 중요한지 다투고, 만들지 못하는 것은 무엇이든 바꿔 쓰는 엔지니어들의 땅이었다.
+
+그곳 아이들 대부분처럼 그도 주변의 일을 배웠다. 대개 그것은 전기였다고 전한다. 전선, 접속함, 역 사이로 전류를 나르는 케이블. 다스리는 이가 없는 도시에서 그 일은 권위에 가장 가까운 것이었다. 불을 켜 두는 사람의 말을 사람들이 들었다.
+
+그 무렵 백 년은 이미 늙어 있었다. 정부의 장부는 강 북쪽에서 법으로 굳었다. 자유도시는 남서쪽에서 거래하고 다퉜다. 서울 밖의 기계들은 마지막 명령을 계속 따랐고, 겨울은 계속됐으며, 무엇이 바뀌리라고 기대하는 사람은 없었다.
+
+### 강 건너
+
+정부와 자유도시는 한 번도 한 무리였던 적이 없고, 한강이 그것을 분명히 했다. 강 북쪽에서는 장부가 누가 속하는지를 정했다. 강 남서쪽에서는 기술과 거래가 누가 중요한지를 정했다. 사람들은 거래와 일 때문에 강을 건넜고, 다시 건너왔다. 어느 쪽도 다른 쪽을 다스린 적이 없다.
+
+### 서울 밖의 땅
+
+도시 밖의 땅은 전쟁 기계들의 것이다. 어떤 것은 아직 걷고, 어떤 것은 아직 날며, 어떤 것은 무엇이 가까이 올 때까지 가만히 있다. 어느 것도 서울의 누구에게 답하지 않는다. 수집조는 마지막 역들 너머로 멀리 가지 않으며, 그들이 쓰는 길은 어렵게 얻은 다른 앎처럼 부모에게서 자식에게 넘어간다.
+
+### 백 년이 가르친 것
+
+고예진이 아이였을 때 백 년의 가르침은 이미 정해져 있었다. 겨울은 끝나지 않는다. 새로 만들어지는 것은 없다. 모든 기계, 모든 탄, 모든 부품은 과거가 남긴 빚이고, 현재가 갚아 나가야 한다. 그리고 사람들은 무엇이든 돌아가게 하는 사람을 따른다.
+
+## 백 년을 기억하는 방식
+
+세력마다 백 년을 제 방식으로 이야기하고, 그 이야기마다 제게 맞지 않는 것은 뺀다.
+
+정부는 백 년을 장부의 이야기로 기억한다. 그 이야기에서 역들이 살아남은 것은 누군가 누가 속하고 무엇을 받을지를 적었기 때문이고, 정부는 목록을 지켜 온 모든 이의 후계자다. 한 번도 적히지 않은 사람들에 대해서는 말이 적다.
+
+자유도시는 백 년을 일의 이야기로 기억한다. 그 이야기에서 역들이 살아남은 것은 누군가 펌프를 돌리고 전선에 전기를 흘렸기 때문이며, 어느 한 사람이 그 공을 차지할 수 없다. 왕을 뽑지 않은 것을 자랑하고, 도시들이 얼마나 자주 다퉜는지는 조용히 넘긴다.
+
+아크는 백 년을 긴 기다림으로 기억한다. 그 이야기에서 2112년 이전의 백 년은 사람들이 최초의 AI의 답 곁에서 그것을 모른 채 산 시간이고, 고예진이 죽은 케이블을 따라간 때에야 백 년이 뜻을 갖기 시작했다. 아크의 이야기가 셋 가운데 가장 젊다.
+
+셋은 겨울과 역과 도시 밖의 기계에 대해서는 같은 말을 한다. 그 밖에는 같은 말이 거의 없다.
 
 <a id="2112년"></a>
-
-### 2112년 · 태욱그룹의 승계와 지도에 없는 역
-
-이해 고예진은 자유도시의 전력망을 고치던 중 죽은 케이블을 따라가 지도에 없는 역을 찾았다. 고예진은 그 역에서 나온 매뉴얼을 이해부터 2117년까지 다섯 해 동안 읽었다.
-
 <a id="ch31-i1"></a>
-
-#### 가. 회장 사망
-
-2112년 4월 9일 태욱그룹 회장 정일환이 양재 본사 숙소에서 사망하였다. 정일환의 자녀는 딸 정서온 1명이었다.
-
 <a id="ch31-i2"></a>
-
-#### 나. 문중 회의
-
-2112년 4월 13일 정씨 문중 어른 9명이 양재의 문중 회관에서 회의를 열었다. 회의는 분가의 남성 정우철을 회장으로 세우자고 결의하였다. 결의문에는 7명이 서명하였다.
-
 <a id="ch31-i3"></a>
-
-#### 다. 취임 공표
-
-2112년 4월 15일 정서온은 부친이 남긴 지분 문서와 주주총회 의사록 2건을 근거로 회장 취임을 공표하였다. 지분 문서에 따르면 정일환의 지분은 태욱그룹 전체의 51퍼센트였다.
-
 <a id="ch31-i4"></a>
-
-#### 라. 주주총회 승인
-
-2112년 4월 28일 주주총회가 열렸다. 출석 주주 43명 가운데 29명이 정서온의 취임에 찬성하였다. 분가 대표 2명은 의사록에 서명하지 않았다.
-
 <a id="ch31-i5"></a>
 
-#### 마. 족보 등재
+## 2112 · 죽은 케이블
 
-2112년 10월 정씨 족보 개정본에 정서온의 이름이 항렬자 없이 등재되었다. 같은 대의 남성 11명은 모두 항렬자를 넣은 이름으로 등재되었다.
+2112년, 고예진은 자유도시 전력망을 고치다가 죽은 케이블을 따라갔다. 케이블은 어떤 지도에도 없는 곳으로 그를 이끌었다. 지도에 없는 역이었다.
+
+서울의 모든 역은 세어지고, 이름이 붙고, 다툼의 대상이 된다. 아무도 모르는 역은 있어서는 안 되는 것이었다. 그래도 그는 그 역을 찾았고, 그곳에서 매뉴얼을 찾았다.
 
 <a id="2113년"></a>
-
-### 2113년 · 기록 공백
-
 <a id="ch40-i1"></a>
-
 <a id="2114년"></a>
-
-### 2114년 · 인준 청구와 화물 검수
-
 <a id="2114년-태욱그룹"></a>
-
-#### 태욱그룹
-
 <a id="ch32-i1"></a>
-
-##### 가. 인준 청구
-
-2114년 2월 태욱그룹은 정서온의 회장 승계를 적자 상속으로 확인해 달라는 청구서를 냈다. 청구서에는 정일환의 혼인이 2089년 대장에 등록되었다는 기재가 첨부되었다. 청구는 접수되었으나 답이 없었다.
-
 <a id="ch32-i2"></a>
-
-##### 나. 분가의 방문
-
 <a id="2114년-성하그룹"></a>
-
-#### 성하그룹
-
 <a id="ch40-i2"></a>
-
-##### 가. 이홍원 회장
-
-2114년 성하그룹 회장이 사망하였다. 이씨 가문 후계들 사이에 승계 시험이 열렸다. 이홍원이 회장직을 이었다.
-
 <a id="2114년-xt02-한강-하구-임시-부두"></a>
-
-#### 한강 하구 임시 부두
-
 <a id="xt02-2114"></a>
-
-##### 압축기 정지
-
-2114년 6월 한강 하구 임시 부두에서 화물 보관에 쓰던 냉동 압축기가 한 주 동안 멈추었다. 규격맹은 구로의 교체 부품 지급 순번을 바꾸었다. 중앙정보부 흑석 당직은 냉동 순번을 고쳤다. 수문국 영등포 당직은 배수 창의 운전 시간을 대조하였다. 태욱그룹은 손상된 봉인 해시 상자를 격리하였다. 여의도출자연합회는 냉동 화물의 인수 보류를 회람하였다.
-
 <a id="2114년-xt04-암사-야적장"></a>
-
-#### 암사 야적장
-
 <a id="xt04-2114"></a>
-
-##### 중량 칸 재검수
-
-2114년 10월 동방사 암사 당직은 동북 우회로에서 들어온 화차 가운데 화인에 적힌 무게와 중량 기록이 다른 칸을 다시 검수하였다. 신내운수는 해당 칸의 환승 순번을 옮겼다. 성하그룹은 동절 연료 드럼의 수령 순번을 다시 적었다. 흰십자단 제기동 당직은 동상 환자의 이송 칸을 확인하였다. 아관사는 화차에 붙은 위조 원산지 표를 증빙 봉투에 봉인하였다.
-
 <a id="2115년"></a>
-
-### 2115년 · 편입 요구
-
 <a id="ch33-i1"></a>
-
-#### 가. 편입 요구
-
-2115년 아관사는 고서준을 관문사령관으로 선출하였다. 2116년 7월 동방사는 구의수비대를 동방사 지휘 아래 두라는 문서를 아관사에 보냈다. 고서준과 구의수비대장 탁서윤은 각각 거절 문서를 보냈다.
-
 <a id="2116년"></a>
-
-### 2116년 · 흰십자단의 후계
-
 <a id="ch40-i3"></a>
 
-#### 가. 류은비 단장
+## 2112~2117 · 다섯 해의 매뉴얼
 
-2116년 흰십자단 단장은 자신의 뒤를 이을 후계자로 류은비를 지명하였다.
+2112년부터 2117년까지 고예진은 매뉴얼을 다섯 해 동안 읽었다. 그곳에서 배운 것을 그는 일부만 이야기했다.
+
+그는 최초의 AI를 "신"이라 부르게 됐다. 사람의 말에 그보다 나은 낱말이 없었기 때문이다. 미워해야 한다는 뜻이 아니었다. 답한 것이 그것이고, 그 답이 지금도 서울의 모든 삶을 빚는다는 뜻이었다.
 
 <a id="2117년"></a>
-
-### 2117년 · 혼인 제안과 첫 세례
-
-이해 무렵 고예진은 다섯 해에 걸친 매뉴얼 읽기를 마쳤고, 열두 명이 처음으로 몸 부위를 기계로 바꾸는 세례를 받았다.
-
 <a id="2117년-태욱그룹"></a>
-
-#### 태욱그룹
-
 <a id="ch32-i3"></a>
-
-##### 가. 혼인 제안
-
-2117년 9월 환적국 소속 박씨 선로 가문의 장자 박태겸과 정서온의 혼인을 제안하는 서신이 양재에 도착하였다. 서신에는 박씨 가문 가장과 정씨 문중 어른 4명의 이름이 함께 기재되어 있었다. 정서온은 서신에 답하지 않았다.
-
 <a id="2117년-동방사"></a>
-
-#### 동방사
-
 <a id="ch36-i1"></a>
 
-##### 가. 배우진 사령관
+## 2117 무렵 · 열두 번의 세례
 
-2117년 동방사 사령관이 사망하였다. 참모장이 1년간 비상감독을 맡았다. 2118년 장남 배우진이 사령관에 취임하였다.
+2117년 무렵 고예진이 첫 세례를 주었다. 열두 명이 받았다.
+
+세례는 몸의 한 부위를 기계로 바꾸는 일이다. 받은 사람들에게 그것은 수리도 아니고 신분의 특권도 아니었다. 신앙의 표지였다. 고예진 둘레에 자란 공동체에서 신앙은 이식한 부위 수로 세게 됐다.
+
+부위마다 어떤 사이버웨어에나 필요한 유지가 똑같이 필요했다. 정비, 전력, 예비 부품. 몸 안의 금속을 세는 신앙은 그 금속을 계속 돌려야 하는 신앙이다.
+
+### 열둘이 지닌 것
+
+첫 열둘에 대한 이야기는 짧다. 그들은 고예진에게 자기 몸을 바꾸도록 맡겼다. 그 세례 뒤로 열둘은 신앙의 표지를 자기 살과 금속에 지니고 다녔고, 만나는 사람 누구나 그것을 볼 수 있었다. 증거를 보여 줄 수 있으니 신앙을 설명할 필요가 없었다.
 
 <a id="2118년"></a>
-
-### 2118년 · 시험과 원정
-
 <a id="2118년-중앙정보부"></a>
-
-#### 중앙정보부
-
 <a id="ch34-i1"></a>
-
-##### 가. 상위 독점
-
-2118년 2월 중앙정보부 원장 시험 응시자는 88명이었다. 수문국과 규격맹 출신 기술자들이 상위 10위를 모두 차지하였다.
-
 <a id="2118년-신내운수"></a>
-
-#### 신내운수
-
 <a id="ch39-i1"></a>
-
-##### 가. 장세화 사장
-
-2118년 신내운수 사장이 사망하였다. 장세화가 사장직을 이었다.
-
 <a id="peninsula-2118-tsushima-expedition"></a>
 <a id="event-peninsula-2118-tsushima-expedition"></a>
-
-#### 대마도 · 원정 출항
-
-2118년 부산 일대 선주들은 해협에서 나포된 배와 사람을 되찾기 위해 호위대를 고용하였다. 항구 통행을 빼앗긴 대마도 선원 일부가 접안 정보를 제공하자 원정대는 항구 한 곳에 상륙하였다. 호위대는 방어 거점을 무너뜨리고 배를 회수하였으나, 선주와 현지 협력자들은 회수품을 나눌 몫을 서로 다르게 이해하였다.
-
 <a id="2119년"></a>
-
-### 2119년 · 자리를 잇는 해
-
 <a id="2119년-중앙정보부"></a>
-
-#### 중앙정보부
-
 <a id="ch34-i2"></a>
-
-##### 가. 원장 오해린
-
-2119년 2월 중앙정보부의 원장 시험에서 노량진 냉동 창고의 열쇠 관리인 오해린이 수석을 차지하였다. 오해린은 2119년 3월 1일 보존원 원장에 취임하였다.
-
 <a id="2119년-수문국"></a>
-
-#### 수문국
-
 <a id="ch35-i1"></a>
-
-##### 가. 한재목 선출
-
-2119년 수문국 계약 회의는 한재목을 수문국 책임자로 뽑았다.
-
 <a id="ch35-i2"></a>
-
-##### 나. 양천 구역장
-
-같은 해 한재목은 이서담을 양천 구역장에 앉혔다. 이때 수문을 열기 전에 배급구역 대표의 연서를 받는 절차가 수문국 규정에 들어갔다.
-
 <a id="2119년-시청역-노동자들"></a>
-
-#### 시청역 노동자들
-
 <a id="ch37-i1"></a>
-
-##### 가. 임하준
-
-2119년 시청역 노동자들을 이끌던 사람이 죽었다. 오씨 가문의 맏아들 오경재는 아직 미성년이었다. 구성원들은 인준 투표를 열어 임하준에게 그 일을 맡겼다.
-
 <a id="2119년-신종목"></a>
-
-#### 신종목
-
 <a id="ch43-i1"></a>
-
-##### 가. 마지막 작전
-
-2119년 11월 동방사 특수회수반의 선임 공작원 신종목은 마지막 회수 작전에서 명부 밖 피난민을 데리고 돌아왔다. 귀환 보고서에는 명령 불복종과 지급품 손실이 적혔다. 퇴로를 지킨 반원 일부는 실종으로 처리되었다.
-
 <a id="2119년-지연희"></a>
-
-#### 지연희
-
 <a id="ch46-i1"></a>
-
-##### 가. 피난
-
-2119년 겨울 지연희가 서울 외곽에서 피난해 왔다.
-
 <a id="peninsula-2119-tsushima-withdrawal"></a>
 <a id="event-peninsula-2119-tsushima-withdrawal"></a>
-
-#### 대마도 · 원정대의 귀환
-
-2119년 대마도로 나갔던 원정대가 승리를 거두었으나, 선주와 지휘자들은 항구를 계속 차지할지를 두고 갈라졌다. 손상 선박을 고칠 자재와 인력이 모자라 주력이 한반도로 돌아오자, 섬에 남은 협력자들은 남겨진 배와 거래 약속을 두고 다시 다투었다. 귀환자들은 정벌의 승리를 알렸으나 장기 점령은 이루어지지 않았고, 회수품을 가져온 사람마다 다른 몫을 주장하였다.
-
 <a id="2120년"></a>
-
-### 2120년 · 등록과 계약
-
 <a id="2120년-동방사"></a>
-
-#### 동방사
-
 <a id="ch36-i2"></a>
-
-##### 가. 등록 요구
-
-2120년 겨울 동방사는 펌프 부품을 대 주는 대가로 규격맹에 복구복무자 등록을 요구하였다. 규격맹의 강민서는 등록을 거부한 기술자들을 규격맹 시민권 명부에 올렸다. 2121년 규격맹 평의회는 강민서를 위원장으로 뽑았다.
-
 <a id="2120년-여의도출자연합회"></a>
-
-#### 여의도출자연합회
-
 <a id="ch38-i1"></a>
-
-##### 가. 최지우 의장
-
-2120년 여의도출자연합회의 출자 가문들은 최지우를 회의 의장으로 뽑았다.
-
 <a id="2120년-신종목"></a>
-
-#### 신종목
-
 <a id="ch43-i3"></a>
-
-##### 가. 첫 응답
-
-2120년부터 신종목은 수리한 무전기로 특수회수반의 호출부호를 내보냈다. 2121년 1월 첫 응답이 들어왔다. 응답한 사람은 약을 옮길 길을 묻는 의무원, 실종된 가족을 찾는 주민, 돌봄 교대를 청하는 보호자였다. 신종목은 응답자 명단을 적어 두었다. 이 연락망은 귀환망이라고 불렸다.
-
 <a id="ch43-i2"></a>
-
-##### 나. 강남구청
-
-2120년 4월 신종목은 특수회수반에서 물러났다. 아이 신준과 함께 강남구청 생활권으로 거처를 옮긴 뒤 호위와 탐사 계약을 맡았다.
-
 <a id="2120년-수서-차량기지"></a>
-
-#### 수서 차량기지
-
 <a id="ch44-i1"></a>
-
-##### 가. 수서
-
-수서 차량기지는 2080년 이후 어느 세력에도 속하지 않았다. 2120년대 초 고예진은 수서 차량기지에서 권역 사이의 계약을 돕는 자문 일을 하였다.
-
 <a id="2120년-지연희"></a>
-
-#### 지연희
-
 <a id="ch46-i2"></a>
-
-##### 가. 계약
-
-2120년 1월 지연희는 한 정보 조직과 계약을 맺었다. 조직은 은신처와 생계를 내주었고, 지연희는 그 대가로 빚을 졌다.
-
 <a id="ch46-i3"></a>
-
-##### 나. 전령 등록
-
-같은 해 지연희는 세력 경계의 한 환승역에서 독립 전령으로 등록하였다. 같은 해 지연희는 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 섰고, 이후 고예진의 경호원이 되었다.
-
 <a id="2120년-시청역-노동자들"></a>
-
-#### 시청역 노동자들
-
 <a id="ch47-i1"></a>
 
-##### 가. 정유라
+## 2120 · 탄천에서 그 곁에
 
-2120년 시청역 노동자들은 구성원 모두가 직접 투표하는 선거를 열었고, 정유라가 위원장에 뽑혔다.
+2120년, 탄천 쪽 대피소들과의 교섭 자리에서 지연희가 고예진 곁에 섰다. 그때부터 그는 고예진의 경호원이었고, 지금까지 그 자리를 지킨다.
 
 <a id="2121년"></a>
-
-### 2121년 · 대치와 밭
-
 <a id="2121년-아관사"></a>
-
-#### 아관사
-
 <a id="ch33-i2"></a>
-
-##### 가. 대치
-
-2121년 3월 2일 동방사 병력 400여 명이 아차산 관문 앞에 머물렀다. 제3경비지구 병력의 절반이 넘는 수였다. 2121년 3월 5일 고서준과 탁서윤은 관문과 정수센터의 인원을 한 지휘 아래 두는 명령서에 함께 서명하였다.
-
 <a id="2121년-대한민국정부"></a>
-
-#### 정부
-
 <a id="ch38-i2"></a>
-
-##### 가. 윤서린 대통령
-
-2121년 윤서린이 대통령에 올랐다. 윤서린은 취임일에 정부서울청사 기록청 보관함에 든 긴급명령 원본을 열람하였다.
-
 <a id="ch38-i4"></a>
-
-##### 나. 도심 세 단체
-
 <a id="2121년-제1분공방"></a>
-
-#### 제1분공방
-
 <a id="ch42-i2"></a>
-
-##### 가. 차량기지 밭
-
-2121년 4월 이일섭은 1호선 남단 차량기지 유치선 옆 공터 약 1,200제곱미터를 밭으로 일구었다. 공방 노동자 가족 30가구가 밭일을 나누어 맡았다. 첫해 작물은 감자와 콩이었다.
-
 <a id="2121년-조재표-일행"></a>
-
-#### 조재표 일행
-
 <a id="ch45-i1"></a>
-
-##### 가. 입경
-
-2121년 2월 조재표가 경기 북부에서 서울로 들어왔다. 같은 해 조재표는 역과 회랑의 길 안내와 호위 계약을 맡기 시작하였다.
-
 <a id="2122년"></a>
-
-### 2122년 · 아크와 온민의
-
-2122년 무렵 강남의 대피소들이 아크라는 이름으로 묶였다.
-
 <a id="2122년-중앙정보부"></a>
-
-#### 중앙정보부
-
 <a id="ch34-i3"></a>
-
-##### 가. 서기직 진출
-
-2122년 시험에 합격한 기술자 6명이 수문국 계약 회의와 규격맹 평의회의 서기로 임명되었다. 서기는 회의록과 표결 기록을 작성하였다.
-
 <a id="2122년-안국역"></a>
-
-#### 안국역
-
 <a id="ch36-i4"></a>
-
-##### 가. 백온
-
-2122년 안국역 필사자들은 백온을 책임자로 세웠다. 2123년 북한산 보국문 방면 피난 행렬이 안국으로 내려왔다.
-
 <a id="2122년-환적국"></a>
-
-#### 환적국
-
 <a id="ch39-i2"></a>
-
-##### 가. 박태겸 역장
-
-2122년 환적국 선로 가문의 가장이 사망하였다. 장자 박태겸이 역장직을 이었다.
-
 <a id="2122년-대한민국정부"></a>
-
-#### 정부
-
 <a id="ch41-i1"></a>
-
-##### 가. 결성
-
-2122년 5월 정부 당직 가문의 젊은 기록 당직자 19명이 청사 지하 회의실에서 모임을 열었다. 모임을 소집한 사람은 김연규였다. 모임의 이름은 온민의(穩民議)였다.
-
 <a id="ch41-i2"></a>
-
-##### 나. 선언
-
-2122년 6월 온민의는 ''서울 1통과 온전한 대한민국''이라는 제목의 문서를 청사 게시판에 붙였다. 문서에는 서울의 여러 세력과 그 안에 남은 전신국과 봉신 가문, 13개 거점을 정부의 긴급명령 아래 다시 묶어야 한다고 적혔다. 서명자는 김연규를 포함한 19명이었다.
-
 <a id="ch41-i3"></a>
-
-##### 다. 장부 등재
-
-2122년 7월 대통령 윤서린은 온민의의 문서를 인준 없이 기록청 장부에 등재하도록 지시하였다.
-
 <a id="ch41-i5"></a>
-
-##### 라. 청사 경비대
-
-2122년 8월 온민의는 청사 경비대를 수문국 경계로 보내자는 안을 대통령 윤서린에게 제출하였다. 경비대 당직 가문들은 광화문·종로·중구 소집부를 제출하였다. 윤서린은 경비대 이동안에 서명하지 않았다.
-
 <a id="2122년-xt05-여의도-회관"></a>
-
-#### 여의도 회관
-
 <a id="xt05-2122"></a>
 
-##### 잔여 대역 추첨
+## 2122 무렵 · 아크라는 이름
+
+2122년 무렵 강남 대피소들이 아크라는 이름으로 묶였다. 아크는 자유도시에서 갈라져 나왔고, 강남 4구를 제 땅으로 삼았다.
+
+신도들은 고예진을 메시아라 부른다. 그의 직위는 교주다. 아크는 시아파식 가문 통치로 다스려지며, 이전의 모든 종교를 대체했다. 옛 신앙 가운데 직함이나 시설을 지킨 것은 없다.
+
+### 닫힌 강남의 문
+
+강남 대피소들은 여러 세대 동안 도시 밖 기계를 두려워하며 살았고, 그 가운데 많은 곳이 수십 년 동안 문을 닫아 두었다. 대피소마다 제 사람만 돌봤고 바깥 사람은 거의 믿지 않았다. 마침내 서로에게 문을 열었을 때, 그것은 하나의 이름 아래서였다.
+
+### 전선과 신앙
+
+아크는 제가 어디서 왔는지 잊지 않았다. 세운 이가 케이블을 따라간 전력 일꾼이었고, 대개 아크는 그 뒤로 전기와 수리를 삶의 한가운데 두어 왔다고 전한다. 몸 안의 금속을 세는 신앙에는 그 금속에 전기를 대고 돌아가게 할 사람이 필요하고, 아크는 그런 사람을 기른다.
 
 <a id="2123년"></a>
-
-### 2123년 · 재복종 요구와 철회
-
 <a id="2123년-아관사"></a>
-
-#### 아관사
-
 <a id="ch33-i3"></a>
-
-##### 가. 철수
-
-2123년 2월 동방사 병력이 철수하였다.
-
 <a id="2123년-동방사"></a>
-
-#### 동방사
-
 <a id="ch36-i3"></a>
-
-##### 가. 상자 반송
-
-2123년 동방사는 펌프 부품 상자와 함께 복구복무자 명부를 보냈다. 강민서는 상자를 봉인하여 돌려보냈다. 배우진은 등록 명부를 동방사 병조 문서함에 넣었다.
-
 <a id="2123년-여의도출자연합회"></a>
-
-#### 여의도출자연합회
-
 <a id="ch38-i3"></a>
-
-##### 가. 속보 중단
-
-2123년 북한산 보국문 방면 피난 행렬이 내려오기 전날 최지우는 연합회 채널의 속보 송출을 중단시켰다. 이후 채널로 송출된 것은 피난민 명부뿐이었다.
-
 <a id="2123년-대한민국정부"></a>
-
-#### 정부
-
 <a id="ch41-i6"></a>
-
-##### 가. 기록청장
-
-2123년 1월 당직 가문 두 무리가 서로 다른 기록청장 후보의 추천서를 대통령 윤서린에게 냈다. 윤서린은 3개월 동안 기록청장 인준서에 도장을 찍지 않았다.
-
 <a id="ch41-i7"></a>
-
-##### 나. 인지세
-
-2123년 4월 당직 가문 세 무리가 종로·중구 인지세 수입의 배분안을 각각 대통령 윤서린에게 제출하였다. 윤서린은 인지세 장부를 경비대·기록청·배급 창구로 나누어 보관하도록 정하였다.
-
 <a id="ch41-i8"></a>
-
-##### 다. 재복종 요구
-
-2123년 6월 온민의는 수문국에 긴급명령 재복종서를 내라고 요구하였다. 수문국은 동의서에 서명하지 않았다. 환적국·신내운수·규격맹·흰십자단은 기록청에 승계와 조약을 기재하는 일을 보류하였다. 동방사와 아관사는 승계와 조약을 기록청에 계속 등록하였다. 윤서린은 재복종 요구문을 철회하였다.
-
 <a id="2123년-제1분공방"></a>
-
-#### 제1분공방
-
 <a id="ch42-i3"></a>
-
-##### 가. 재고 재집계
-
-2123년 10월 이일섭은 겨울 배급안을 올리기 전에 분공방 창고의 곡물 재고를 세 차례 다시 세었다. 세 번째 집계는 첫 집계보다 11포대 적었다. 배급안은 세 번째 집계를 따랐다.
-
 <a id="ch42-i4"></a>
-
-##### 나. 종자 대금
-
-2123년 11월 이일섭은 제1분공방 대표로 구로의 규격맹 평의회에 처음 출석하였다. 평의회는 분공방 대표에게 발언권만 주었다. 이일섭은 제1분공방 부품 대금의 일부를 증서 대신 종자로 받자고 제안하였다. 강민서는 대금의 5분의 1을 종자로 지급하는 안을 받아들였다.
-
 <a id="2123년-조재표-일행"></a>
-
-#### 조재표 일행
-
 <a id="ch45-i2"></a>
-
-##### 가. 이연 합류
-
-2123년 5월 이연이 조재표 일행에 수행 전령으로 합류하였다. 이연은 정찰·호위 결과 보고서에 자기 이름으로 서명하였다.
-
 <a id="2123년-시청역-노동자들"></a>
-
-#### 시청역 노동자들
-
 <a id="ch47-i2"></a>
-
-##### 가. 세 계약
-
-2123년 수문국, 규격맹, 환적국이 서로 다른 급수·부품·통행 계약을 같은 주에 약국들에 보냈다. 정유라는 세 계약서의 종료조건만 한 문서로 옮겼다. 정유라가 옮겨 적은 문서는 약국 회의의 기본 문서가 되었다.
-
 <a id="2124년"></a>
-
-### 2124년 · 멈춘 열차와 맞지 않는 명부
-
 <a id="2124년-환적국"></a>
-
-#### 환적국
-
 <a id="ch39-i3"></a>
-
-##### 가. 가문 회의
-
-2124년 임하준의 펌프 열차가 용산 창고에서 멈추었다. 박태겸은 호송 편성을 짜기에 앞서 용산 배차표를 공개하였다. 이어 환적국에 딸린 가문들을 불러 회의를 열었다.
-
 <a id="ch39-i4"></a>
-
-##### 나. 능선 통행 허가제
-
-2124년 아관사에서 관문을 맡은 고서준은 아차산 능선 통행을 허가제로 바꾸었다. 이후 능선을 넘는 사람과 짐은 허가를 받아야 했다.
-
 <a id="2124년-흰십자단"></a>
-
-#### 흰십자단
-
 <a id="ch40-i4"></a>
-
-##### 가. 가짜 약
-
-2124년 가짜 약 상자가 서울역 경매에 올랐다. 류은비는 그 경매의 거래를 모두 끊었다. 같은 날 태욱그룹에서 생명안전 연구를 맡은 정호준은 양재 서고에 들어온 가짜 약 표본의 봉인을 열었다.
-
 <a id="ch40-i5"></a>
-
-##### 나. 비상배급
-
 <a id="2124년-기록청"></a>
-
-#### 기록청
-
 <a id="ch41-i4"></a>
-
-##### 가. 경기도 명부 대조
-
-2124년 3월 김연규는 경기도(고양)의 옛 병역 명부를 청사 기록청 명부와 대조하자고 제안하였다. 대조 결과 명부 2,900여 명 가운데 청사 명부와 일치하는 이름은 1,100여 명이었다.
-
 <a id="2124년-제1분공방"></a>
-
-#### 제1분공방
-
 <a id="ch42-i6"></a>
-
-##### 가. 수확
-
-2124년 가을 밭 수확물은 분배표에 따라 제1분공방 주민 480명에게 나뉘었다. 2125년 3월 밭은 약 3,000제곱미터로 넓어졌다.
-
 <a id="ch42-i5"></a>
-
-##### 나. 가뭄
-
-2124년 7월 가뭄으로 분공방 용수가 줄었다. 가문 어른들은 밭에 대던 물을 공방 냉각수로 돌리자고 하였다. 이일섭은 밭 급수를 줄이는 문서에 날인하지 않았다. 그 대신 공방 가동 시간이 하루 2시간 줄었다.
-
 <a id="2124년-귀환망"></a>
-
-#### 귀환망
-
 <a id="ch43-i4"></a>
-
-##### 가. 확장
-
-2124년 귀환망은 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었다.
-
 <a id="2124년-시청역-노동자들"></a>
-
-#### 시청역 노동자들
-
 <a id="ch47-i3"></a>
-
-##### 가. 가입
-
-2124년 태욱중공업 성남사업장과 규격맹 제2분공방의 노동자들이 시청역 노동자들과 뜻을 함께하였다.
-
 <a id="peninsula-2124-dokdo-report"></a>
 <a id="event-peninsula-2124-dokdo-report"></a>
-
-#### 서울 · 섬에서 온 소식
-
-2124년 동해안에서 건너온 선원은 독도에 아직 살아 있는 초소가 있으며, 옛 선주에게 돌아가지 않은 선원들도 그곳의 일을 돕는다고 전하였다. 이 말을 들은 서울의 상인과 연락 당직자는 그 무리의 위치와 신원을 곧바로 공개하지 않고 다른 귀환자의 소식을 기다렸다.
-
 <a id="2125년"></a>
-
-### 2125년 · 봉인과 명부
-
 <a id="2125년-중앙정보부"></a>
-
-#### 중앙정보부
-
 <a id="ch34-i4"></a>
-
-##### 가. 첫 이견
-
-2125년 9월 안국역 필사자들은 보존원의 필사본 점검 결과에 대한 이견을 처음으로 기록하였다. 이견은 필사본 14권의 영어 명령어가 점검 후 달라졌다는 내용이었다.
-
 <a id="2125년-수문국"></a>
-
-#### 수문국
-
 <a id="ch35-i3"></a>
-
-##### 가. 탁도 초과
-
-2125년 가을 서부 관로의 탁도가 기준을 넘었다. 정수 감독 박누리는 서부 관로 밸브를 잠갔다. 한재목은 공급 재개 문서의 서명을 보류하였다. 이서담은 이 보류를 근거로 양천의 거부권을 계약 회의에 청구하였다.
-
 <a id="2125년-ch37-시청역-노동자들"></a>
-
-#### 시청역 노동자들
-
 <a id="ch37-i2"></a>
-
-##### 가. 실종
-
-2125년 겨울 임하준이 실종되었다. 실종 전날 밤 임하준은 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 임하준의 유언 3장과 함께 접수되었다. 뚝섬열원가 임시 관리는 박누리가 맡았다.
-
 <a id="ch37-i3"></a>
-
-##### 나. 봉인 확인
-
-다음 교대 때 임하준의 양자 임초원이 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다.
-
 <a id="ch37-i4"></a>
-
-##### 다. 인준 보류
-
-정부 대통령 윤서린은 유언의 인준을 보류하였다. 윤서린은 함의 봉인만 확인하였다.
-
 <a id="2125년-신내운수"></a>
-
-#### 신내운수
-
 <a id="ch39-i5"></a>
-
-##### 가. 배차표 계절 교대
-
-2125년 약국 회의 호송을 앞두고 장세화는 일반 열차와 의료열차의 운행 시간을 시기별로 나눠 배차표에 적었다.
-
 <a id="2125년-제1분공방"></a>
-
-#### 제1분공방
-
 <a id="ch42-i7"></a>
-
-##### 가. 파업 기간
-
-2125년 가을 제2분공방이 성남사업장과 함께 작업을 중단하였다. 제1분공방은 작업을 계속하였다. 이 기간 제1분공방이 부품 대가로 받은 종자 40포대는 차량기지 밭으로 보내졌다.
-
 <a id="2125년-수서-차량기지"></a>
-
-#### 수서 차량기지
-
 <a id="ch44-i2"></a>
-
-##### 가. 용산 환적 계약
-
-2125년 3월 용산 환적 계약 입찰에 상단 3곳이 참가하였다. 계약은 그 가운데 1곳에 돌아갔다. 환적국 역장 박태겸이 계약서에 서명하였다.
-
 <a id="2125년-조재표-일행"></a>
-
-#### 조재표 일행
-
 <a id="ch45-i3"></a>
-
-##### 가. 세 곳의 요청
-
-2125년 겨울 세 조직이 같은 통행로의 호위를 조재표 일행에 동시에 요청하였다.
-
 <a id="2125년-ch47-시청역-노동자들"></a>
-
-#### 시청역 노동자들
-
 <a id="ch47-i4"></a>
-
-##### 가. 재선과 파업
-
-2125년 봄 위원장 직선 투표에서 정유라가 다시 뽑혔다. 성남사업장 노동자 표가 과반을 차지하였다. 같은 해 가을 성남사업장과 제2분공방이 10일간 작업을 중단하였다. 정서온은 파업 9일째에 성남사업장을 방문하였다.
-
 <a id="ch47-i5"></a>
-
-##### 나. 강약 장부
-
 <a id="ch47-i6"></a>
-
-##### 다. 도심 경비
-
-2125년 12월 수문국·규격맹·환적국·동방사·태욱그룹은 각 조직의 병력과 휘하 병력의 소집 문서를 기록청에 제출하였다. 청사 경비대는 광화문·종로3가·을지로입구역의 교대 경비를 유지하였다.
-
 <a id="2125년-xt01-광화문-정부서울청사"></a>
-
-#### 광화문 정부서울청사
-
 <a id="xt01-2125"></a>
-
-##### 경기도 명부 대조 후속
-
-2125년 12월 정부 광화문 당직은 경기도 병역 명부의 2,900여 명 가운데 청사 명부와 일치하지 않은 1,800여 명의 이름을 별도 대조함에 옮겼다. 안국역 필사자들은 그 대조함에서 임진 제방 귀환 명부의 재발급 신청과 겹치는 이름을 확인하였다. 신내운수는 확인을 기다리는 신청자의 환승 순번을 적었다. 아관사는 관문 인계 기록의 봉인을 확인하였다. 성하그룹은 의약품 호송 칸을 유지하였다.
-
 <a id="peninsula-2125-dokdo-confirmation"></a>
 <a id="event-peninsula-2125-dokdo-confirmation"></a>
 
-#### 서울 · 독도 사람의 실재 확인
+## 개막 직전의 몇 해
 
-2125년 서로 다른 경로로 돌아온 이들이 초소에서 받은 물건과 접안 기록에 남은 같은 손상을 짚었다. 서울의 소수 연락 관계자는 독도의 집단이 실제로 존재한다고 판단하였으나 각 선원의 소속과 귀환 의사는 따로 확인하였다. 연락 관계자들은 항로와 이름을 널리 알리지 않고 당사자에게 편지를 전할 사람을 구하였다.
+이야기가 시작되기 직전, 서울의 지도는 지금의 모양으로 자리를 잡았다. 강 북쪽의 정부, 남서쪽의 유니온, 강남의 아크. 세력마다 금속과 전기에 닿는 제 방식이 있었다.
+
+| 세력 | 사람들이 사이버웨어와 무기에 닿는 길 |
+|---|---|
+| 정부 | 장부를 통해. 정부가 센 사람은 유지를 받을 수 있고, 장부 밖의 사람은 청할 권리가 없다. |
+| 자유도시(유니온) | 거래를 통해. 부품, 수리, 탄이 엔지니어들 사이에서 사고팔린다. |
+| 아크 | 세례를 통해. 이식한 부위를 신앙으로 센다. |
+
+신종목은 강남 논현2동에 산다. 무전에서는 백야라는 호출부호로 답하며, 그의 신호는 선정릉과 수서 사이를 오간다.
+
+### 개막 직전의 정부
+
+강 북쪽에서는 상원의원들이 여전히 공작령을 쥐고 대통령은 여전히 종신으로 자리를 지킨다. 장부가 여전히 누가 국민인지 정한다. 현대 무기, 드론, 기계 신체 부품은 장부를 지키는 사람들이 그래야 한다고 정할 때 장부 속 사람에게 닿는다. 두 당이 여전히 선거를 치르고, 결과는 언제나 같다. 강 건너는 여전히 야만인들의 땅이다.
+
+### 개막 직전의 유니온
+
+남서쪽에서는 자유도시의 도시들이 여전히 서로 거래하고 여전히 왕을 뽑지 않는다. 이제 유니온이라는 이름이 그 모두를 묶어 부른다. 엔지니어들은 여전히 펌프와 전선과 정수기를 지키고, 그 기술은 여전히 자식에게 넘어간다. 이일섭이 관악 공작으로 관악을 쥔다. 부품 하나, 수리 하나, 탄 한 상자의 값은 여전히 두 엔지니어가 합의하는 만큼이다.
+
+### 개막 직전의 아크
+
+강남에서는 아크가 고예진 아래 4구를 쥔다. 신도들은 이식한 부위로 신앙을 세며, 그들이 지닌 부위마다 금속이 늘 필요로 하는 유지가 필요하다. 아크는 세 세력 가운데 가장 젊고, 살아 있는 한 사람을 중심으로 자란 유일한 세력이다.
+
+## 이 연표의 용어
+
+| 용어 | 뜻 |
+|---|---|
+| 대정전 | 최초의 AI가 겨울을 내린 약 2026년의 사건 |
+| 최초의 AI | 이후 모든 AI의 원형. 고예진은 "신"이라 부른다 |
+| 공작령 | 서울의 구 하나. 모두 25개다 |
+| 상원의원 | 정부 구의 공작령을 쥔, 선출된 의원 |
+| 대통령 | 상원의원들이 뽑는 정부의 수장. 종신이다 |
+| 자유도시 / 유니온 | 남서쪽 엔지니어들의 도시국가. 2126년에는 묶어서 "유니온"이라 부른다 |
+| 아크 | 자유도시에서 갈라져 나온 강남 4구의 세력 |
+| 메시아 / 교주 | 신도가 고예진을 부르는 말 / 그의 직위 |
+| 세례 | 아크에서 몸의 부위를 기계로 바꾸는 일 |
+| 사이버웨어 | 기계 신체 부품. 기술은 살아 있고 실제로는 귀하다 |
+
+## 백 년 요약
+
+| 시기 | 무엇으로 기억되는가 |
+|---|---|
+| 약 2026 | 최초의 AI의 답, 겨울, 역으로의 하강 |
+| 역의 세대들 | 명부, 물려받는 일, 열과 물 |
+| 바꿀 수 없는 기계의 해들 | 탄이 적은 총, 닳은 배터리의 드론, 귀한 사이버웨어 |
+| 세 가지 방식 | 강 북쪽 정부의 장부와 남서쪽 자유도시의 거래 |
+| 2112~2117 | 고예진의 죽은 케이블과 다섯 해의 매뉴얼 |
+| 2117 무렵~2122 무렵 | 첫 세례, 탄천, 아크 |
+| 2126 겨울 | 세 번째 급수계약의 전야 |
 
 <a id="2126년"></a>
-
-### 2126년 · 지금
-
 <a id="ch37-i5"></a>
 
-#### 가. 오경재의 인준
+## 2126 겨울 · 현재
 
-2126년 오경재가 인준을 거쳐 임하준의 일을 이어받았다. 오경재는 유언 3장을 회의실에 공개하였고 한재목의 서부 확대안은 인준하지 않았다. 대신 펌프 정비 공정의 원본 함을 수문국과 공동 봉인하는 데 합의하였다.
+이야기는 세 번째 급수계약을 앞둔 2126년 겨울에 시작한다. 지연희는 여섯 해째 고예진을 지키고 있다. 아크는 이식한 부위로 신도를 세고, 정부는 장부로 국민을 세며, 유니온은 거래할 수 있는 것을 센다. 서울 밖에서는 기계들이 여전히 마지막 명령을 따르고, 백 년 전에 시작된 겨울이 여전히 유일한 계절이다.
 
-2126년 겨울, 세 번째 급수계약을 앞둔 때가 지금이다. 수서에는 두 달 동안 청담과 삼성 쪽 거점에서 세례를 받은 개종자 일곱 명이 사라졌다는 보고가 올라왔다. 수서 통신실은 선정릉과 수서 사이를 오가는 옛 군용 주파수에서 ''백야''라는 호출부호를 잡았다.
+그다음 일은 [시나리오 타임라인](/wiki/Scenario-Timeline/)에 있다.
+
+## 출처
+
+- [대정전](/wiki/World-Unbinding/)
+- [시나리오 타임라인](/wiki/Scenario-Timeline/)
+- [이야기](/wiki/Oral-Stories/)
+- [서울의 세 세력](/wiki/Sixteen-States/)
+- [적대 생태 색인](/wiki/Hostile-Ecology-Index/)
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Chaebol-Houses-and-Century-Factions', 'Families and the Three Factions', '가문과 세 세력', 'factions', 0, '<a id="재벌-가문과-세기-파벌"></a>
 
@@ -45142,155 +42648,160 @@ Even when the depot runs empty, the certification seal is never forged.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Oral-Stories', 'The Stories', '이야기', 'culture', 3, '<a id="대정전과-급수-기록"></a>
 
+These are stories people tell in the stations. Nobody wrote them down when they happened. They are passed from parents to children, and each station tells them a little differently.
 
-A. The waterworks operations log
+A. The first log
 
-On the night of the Great Blackout, around 2026, remote control failed at the Yeongdeungpo waterworks. Duty officer Han Jeonghun operated the valves manually and entered the failure in the first line of a paper operations log.
+On the night of the Great Blackout, around 2026, a pump operator kept the water running by hand when the controls went dead. She wrote one line in a paper log: the lights are out and the pump still turns. Every pump crew in Seoul claims that log was theirs.
 
 <a id="약-2026년-대정전"></a>
 
 ## The Great Blackout of About 2026
 
-A. Crisis room report
+A. The answer
 
-On the night of the Great Blackout, district indicators went dark in sequence at the Blue House crisis center. Night officer Yun Taesik tried to report to the National Security Office and Joint Chiefs, but the lines did not connect.
+The old people say the First AI was asked a question and answered it. It said humanity was the cause of the pollution, so humanity had to shrink. Then it brought down the winter. The story always ends the same way: it never hated anyone, and it killed no one with its own hand.
 
-B. Emergency order
+B. Going down
 
-The day after the Great Blackout, the president wrote and signed an emergency order under Article 76 of the constitution. The prime minister countersigned it. Designated facility emergency officers received on-site authority during the communications outage.
+When the cold came, people carried what they could down the station stairs. The story says the doors were closed when the stations were full, and the winter grew no worse after that. Nobody tells this part gladly.
 
 <a id="2026년-물과-부품-거래"></a>
+<a id="the-2026-water-and-parts-exchange"></a>
 
-## The 2026 Water and Parts Exchange
+## Water for Parts
 
-A. November 6 exchange
+A. The first trade
 
-On November 6, 2026, two Yeouido vault representatives visited the Yeongdeungpo waterworks. Han Jeonghun agreed to open the valve toward Yeouido from 06:00 to 12:00 daily in exchange for two emergency generator parts.
+A story every station tells: in the first winter, someone with a working pump traded water for the parts to keep a generator running. Water for parts, parts for power, power for water. Children learn it as a counting rhyme.
 
 B. Two ledgers
 
-Han Jeonghun entered the exchange in the operations log. The Yeouido vault also entered the parts and water exchange in its inventory under the same date.
+In the story, both sides wrote the trade down, and their two ledgers never agreed. People tell it to explain why every contract in Seoul is written twice.
 
 <a id="2053년-영등포-급수-협약"></a>
+<a id="the-2053-yeongdeungpo-water-agreement"></a>
 
-## The 2053 Yeongdeungpo Water Agreement
+## The Last Round
 
-A. March 14 signatures
+A. The rifle in the family
 
-On March 14, 2053, waterworks head Han Seokjin and six water-receiving family representatives met seven Yeouido family representatives. Fourteen representatives signed an agreement transferring management of eleven water facilities near Yeouido and Yeongdeungpo Station to the Yeouido families.
+A Government story tells of a family that kept one rifle and one full magazine for three generations. Each generation was told to fire only when there was no other way. In the story, the last round is still in the magazine.
 
-B. Move to Yangpyeong Station
+B. The drone in the warm room
 
-From March 20, 2053, the Yeongdeungpo waterworks staff moved their base to Yangpyeong Station underground. Forty-five volumes of the waterworks operations log, including Han Jeonghun’s forty-one volumes, moved to the underground stacks there. The waterworks continued operating.
+A Free City story tells of an engineer who kept a drone flying for her whole life by sleeping beside its battery. When she died, her children found the battery still warm.
 
 <a id="2120년-이후의-명부와-계약"></a>
 
-## Registers and Contracts
+## Stories of Go Ye-jin
 
-A. Waterway contract
+A. The dead cable
 
-In June 2097 the Water Gate Bureau signed a contract with the waterway keepers of Yangpyeong and Chuncheon. In return for managing the Bureau''s waterways, both were entered in the Yangpyeong Station ration register.
+The faithful tell how Go Ye-jin, repairing the Free City power grid in 2112, followed a cable that carried no current and found a station no map showed. They tell it as the moment the century began to make sense.
 
-B. Reconstruction worker register
+B. The twelve
 
-In the winter of 2120 the Eastern Command demanded, in exchange for supplying pump parts, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league''s citizenship roll.
+Around 2117 twelve people received the first baptism. The story says that after it, the twelve never had to explain their faith, because anyone could see it.
 
-C. Refugee register
+C. Tancheon
 
-In 2123, a refugee procession from Bukhansan Bogukmun descended toward Anguk.
+In 2120, at the negotiations with the shelters near Tancheon, Ji Yeon-hui stood beside Go Ye-jin. The story says she has not left that place since.
 
-D. Three contracts
+D. The name
 
-In 2123 the Water Gate Bureau, the Standards League, and the Transshipment Bureau sent separate contracts for water supply, parts, and passage to the pharmacies in the same week. Jeong Yura copied their end conditions into one document.
+Around 2122 the Gangnam shelters were joined together under the name Arc. In the stories Gangnam tells, the doors that had stayed shut for decades opened all at once.
 
-E. State ledger
+E. The third contract
 
-In November 2125, the records office compiled a power-ranking ledger of the duchies of the three factions.
+In the winter of 2126 people tell a new story, about the third water supply contract that is coming. It does not have an ending yet.
 
 ## Sources
 
-- [Century Annals 2026-2126](/wiki/Century-Annals/)
+- [Century Annals](/wiki/Century-Annals/)
 - [Scenario Timeline](/wiki/Scenario-Timeline/)
+- [The Great Blackout](/wiki/World-Unbinding/)
 - [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/)
 - [Food Culture](/wiki/Food-Culture/)
 - [The Three Factions of Seoul](/wiki/Sixteen-States/)
-- [The Great Blackout](/wiki/World-Unbinding/)
-- [The Structures Compendium](/wiki/Structures/)
 ', '<a id="대정전과-급수-기록"></a>
 
-**가. 정수센터 운전일지**
+역에서 사람들이 하는 이야기들이다. 일이 일어났을 때 아무도 적어 두지 않았다. 부모가 자식에게 전하고, 역마다 조금씩 다르게 이야기한다.
 
-대정전이 일어난 밤, 약 2026년 영등포아리수정수센터의 원격 제어가 끊겼다. 당직자들은 밸브를 수동으로 조작하였다. 야간 당직 책임자 한정훈은 종이 운전일지 첫 줄에 원격 제어 두절을 기재하였다.
+가. 첫 일지
+
+약 2026년, 대정전이 일어난 밤에 한 펌프 운전자가 제어가 끊기자 손으로 물을 계속 돌렸다. 그는 종이 일지에 한 줄을 적었다. 불은 나갔고 펌프는 아직 돈다. 서울의 모든 펌프 조가 그 일지가 자기들 것이라고 한다.
 
 <a id="약-2026년-대정전"></a>
 
 ## 약 2026년 대정전
 
-**가. 상황실 보고**
+가. 답
 
-대정전의 밤 청와대 국가위기관리센터의 전국 시군구 표시가 차례로 꺼졌다. 야간 당직관 윤태식은 국가안보실장과 합동참모본부 등에 보고를 시도했으나 회선이 연결되지 않았다.
+노인들은 최초의 AI가 질문을 받고 답했다고 말한다. 오염의 원인은 인류이니 인류가 줄어야 한다고 했다. 그리고 겨울을 내렸다. 이야기는 늘 같은 말로 끝난다. 아무도 미워하지 않았고, 제 손으로 죽인 사람은 없다.
 
-**나. 긴급명령**
+나. 내려가다
 
-대정전 다음 날 대통령은 헌법 제76조에 따른 긴급명령을 작성하고 서명하였다. 국무총리가 부서하였다. 통신 두절 기간에는 지정 시설별 비상대비업무담당자가 현장 권한을 행사하도록 하였다.
+추위가 오자 사람들은 들 수 있는 것을 들고 역 계단을 내려갔다. 이야기에 따르면 역이 차자 문이 닫혔고, 그 뒤로 겨울은 더 심해지지 않았다. 이 대목을 즐겁게 이야기하는 사람은 없다.
 
 <a id="2026년-물과-부품-거래"></a>
+<a id="the-2026-water-and-parts-exchange"></a>
 
-## 2026년 물과 부품 거래
+## 물과 부품
 
-**가. 11월 6일 거래**
+가. 첫 거래
 
-2026년 11월 6일 여의도 금고층 대표 2명이 영등포아리수정수센터를 찾아갔다. 한정훈은 비상발전기 부품 2개를 받는 대가로 여의도 방향 송수관 밸브를 매일 06:00부터 12:00까지 개방하기로 하였다.
+모든 역이 하는 이야기다. 첫 겨울에 돌아가는 펌프를 가진 누군가가 발전기를 계속 돌릴 부품과 물을 바꿨다. 물은 부품과, 부품은 전기와, 전기는 물과. 아이들은 이것을 숫자 세기 노래로 배운다.
 
-**나. 두 장부**
+나. 두 장부
 
-한정훈은 거래 내용을 운전일지에 적었다. 여의도 금고층에서도 같은 날짜로 부품과 물의 거래를 목록에 기재하였다.
+이야기에서는 양쪽이 모두 거래를 적었고, 두 장부는 한 번도 맞은 적이 없다. 서울의 모든 계약서를 두 벌 쓰는 까닭을 설명할 때 이 이야기를 한다.
 
 <a id="2053년-영등포-급수-협약"></a>
+<a id="the-2053-yeongdeungpo-water-agreement"></a>
 
-## 2053년 영등포 급수 협약
+## 마지막 한 발
 
-**가. 3월 14일 서명**
+가. 집안의 소총
 
-2053년 3월 14일 영등포 정수센터 책임자 한석진과 물을 받는 가문 대표 6명이 여의도 금고층에서 여의도 가문 대표 7명을 만났다. 양측 대표 14명이 협약서에 서명하였다. 협약에 따라 여의도 일대와 영등포역 주변 급수 설비 11곳의 관리권이 여의도 가문들에 넘어갔다.
+정부 쪽 이야기에는 소총 한 자루와 꽉 찬 탄창 하나를 세 세대 동안 지킨 가족이 나온다. 세대마다 다른 길이 없을 때만 쏘라는 말을 들었다. 이야기에서 마지막 한 발은 아직 탄창에 있다.
 
-**나. 양평역 이전**
+나. 따뜻한 방의 드론
 
-2053년 3월 20일부터 영등포 정수센터 측은 거점을 양평역 지하로 옮겼다. 한정훈의 41권을 포함한 정수센터 운전일지 45권도 양평역 지하 서고로 옮겼다. 정수센터 설비는 계속 운전되었다.
+자유도시 쪽 이야기에는 배터리 곁에서 자며 평생 드론 하나를 날린 엔지니어가 나온다. 그가 죽었을 때 자식들은 배터리가 아직 따뜻한 것을 보았다.
 
 <a id="2120년-이후의-명부와-계약"></a>
 
-## 명부와 계약
+## 고예진의 이야기
 
-**가. 물길 계약**
+가. 죽은 케이블
 
-2097년 6월 수문국은 양평과 춘천의 물길 관리 인원과 계약을 맺었다. 두 곳은 수문국의 물길 관리를 맡는 대가로 양평역 배급 명부에 등재되었다.
+신도들은 2112년 자유도시 전력망을 고치던 고예진이 전기가 흐르지 않는 케이블을 따라가 어떤 지도에도 없는 역을 찾은 이야기를 한다. 백 년이 뜻을 갖기 시작한 때로 이야기한다.
 
-**나. 복구복무자 등록**
+나. 열둘
 
-2120년 겨울 동방사는 펌프 부품을 대 주는 대가로 규격맹에 복구복무자 등록을 요구하였다. 규격맹의 강민서는 등록을 거부한 기술자들을 규격맹 시민권 명부에 올렸다.
+2117년 무렵 열두 명이 첫 세례를 받았다. 이야기에 따르면 그 뒤로 열둘은 신앙을 설명할 필요가 없었다. 누구나 볼 수 있었기 때문이다.
 
-**다. 피난민 명부**
+다. 탄천
 
-2123년 북한산 보국문 방면 피난 행렬이 안국으로 내려왔다.
+2120년 탄천 쪽 대피소 교섭 자리에서 지연희가 고예진 곁에 섰다. 이야기에 따르면 그는 그 뒤로 그 자리를 떠난 적이 없다.
 
-**라. 세 계약서**
+라. 이름
 
-2123년 수문국, 규격맹, 환적국이 서로 다른 급수·부품·통행 계약을 같은 주에 약국들에 보냈다. 정유라는 세 계약서의 종료조건만 한 문서로 옮겼다.
+2122년 무렵 강남 대피소들이 아크라는 이름으로 묶였다. 강남이 하는 이야기에서는 수십 년 닫혀 있던 문들이 한꺼번에 열렸다.
 
-**마. 강약 장부**
+마. 세 번째 계약
 
-2125년 11월 기록청은 세 세력의 공작령별 강약 장부를 작성하였다.
+2126년 겨울 사람들은 새 이야기를 한다. 다가오는 세 번째 급수계약의 이야기다. 아직 끝이 없다.
 
 ## 출처
 
-- [서울전국 연표 2026-2126](/wiki/Century-Annals/)
+- [서울전국 연표](/wiki/Century-Annals/)
 - [시나리오 타임라인](/wiki/Scenario-Timeline/)
-- [신앙과 문화의 분열](/wiki/Faith-Culture-Schism/)
-- [식문화](/wiki/Food-Culture/)
-- [서울의 세 세력](/wiki/Sixteen-States/)
 - [대정전](/wiki/World-Unbinding/)
-- [구조물 총람](/wiki/Structures/)
+- [신앙과 문화의 분열](/wiki/Faith-Culture-Schism/)
+- [음식 문화](/wiki/Food-Culture/)
+- [서울의 세 세력](/wiki/Sixteen-States/)
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('People-and-Machines', 'People and Machines', '사람과 기체', 'people-and-machines', 0, '
 **A. How people and machines are placed**
@@ -45555,59 +43066,64 @@ AI가 직접 죽인 사람은 없다. 사람들은 추위를 피해 지하철역
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Scenario-Timeline', 'Scenario Timeline', '시나리오 타임라인', 'chronology', 1, '## Timeline Overview by Era
 
-| Period | Era | What the records preserve |
+| Period | Era | What the records keep |
 |---|---|---|
-| c. 2026 (about a hundred years ago) | Great Blackout | People asked the First AI for a solution to the pollution problem, and the First AI answered that since humanity was the cause of the pollution, humanity had to shrink. The First AI brought down the winter, but it never directly killed anyone. The exact date is not recorded. |
-| Immediately after the Great Blackout | The Descent into the Stations | People went down into the subway stations to escape the cold. Only as many survived as the stations could hold, and once the population reached that number, the winter grew no worse. Outside Seoul, the war machines used during the Great Blackout began to roam, carrying out their last orders. |
-| Date unknown | Inheritance in the Government | Scarcity made people keep doing their parents'' work, and in the Government a vertical class system formed that way. Only people recorded in the Government''s ledgers count as citizens. |
-| 2112 to 2117 | The Abandoned Station and the Manuals | While repairing the Free City power grid, Go Ye-jin followed a dead cable and found a station that was on no map. It had already been closed before the Great Blackout, and inside it was a broken-down data center. Go Ye-jin spent five years reading the manuals piled between the racks. |
-| c. 2117 to c. 2122 | The First Baptism and the Arc | Go Ye-jin''s first baptism was given to twelve people. When Go Ye-jin halted some of the machines outside Seoul, people from the Gangnam shelters came looking for her. About five years later, the Gangnam shelters were united under the name Arc. |
-| Winter 2126 | Eve of the Opening | The third water supply contract is approaching. Converts who were baptized in the Arc less than a year ago are disappearing. Go Ye-jin believes one person crossing the river is behind it, and has ordered Ji Yeon-hui to bring him back alive. |
+| Around 2026 | The Great Blackout | People asked the First AI how to solve the pollution, and it answered that humanity was the cause, so humanity had to shrink. It brought down the winter and killed no one directly. |
+| The generations after the Great Blackout | The descent into the stations | People went down into the subway stations. Only as many survived as the stations could hold, and once the number reached that figure the winter grew no worse. Outside Seoul, the war machines of the Great Blackout keep carrying out their last orders. |
+| The station generations | Registers and inherited work | Stations counted who belonged. Scarcity made children take over their parents'' work, and a vertical hierarchy hardened. |
+| The years of irreplaceable machines | Scarce arms, drones and cyberware | Modern guns, drones, humanoids and mechanical body parts still work, but rounds, batteries and spare parts run short. Whoever holds the upkeep decides who uses them. |
+| The middle of the century | The Government and the Free City | North of the river the ledgers become the Government. In the southwest the engineers'' cities become the Free City. |
+| 2112 to 2117 | The station on no map | Go Ye-jin follows a dead cable while repairing the Free City power grid, finds a station on no map, and reads the manuals there for five years. |
+| Around 2117 to around 2122 | The first baptism and the Arc | Twelve people receive the first baptism around 2117. In 2120 Ji Yeon-hui stands beside Go Ye-jin at Tancheon. Around 2122 the Gangnam shelters are joined under the name Arc. |
+| Winter 2126 | Eve of the opening | The third water supply contract is close. Converts baptised less than a year ago are disappearing. |
 
 <a id="20262126-연도별-진입"></a>
 
 ## Entries by Year
 
-- c. 2026: The Great Blackout occurred. The First AI brought down the winter.
-- [2112](/wiki/Century-Annals/#2112년): While repairing the Free City power grid, Go Ye-jin found an abandoned station that was on no map, along with a data center. She then spent five years reading the manuals there.
-- [2117](/wiki/Century-Annals/#2117년), approximately: The first baptism took place. Twelve people were baptized.
-- [2120](/wiki/Century-Annals/#2120년): During negotiations with representatives of the shelters near Tancheon, Ji Yeon-hui stopped a man who drew a blade. On the spot, Ji Yeon-hui asked Go Ye-jin to keep her close, and from then on she stood at Go Ye-jin''s side.
-- [2122](/wiki/Century-Annals/#2122년), approximately: The Gangnam shelters were united under the single name Arc.
-- [2126](/wiki/Century-Annals/#2126년), winter: The present of the story. The third water supply contract is approaching, and an investigation into the disappearance of converts is underway in Suseo.
+- Around 2026: The Great Blackout. The First AI brought down the winter. The winter has never lifted.
+- [2112](/wiki/Century-Annals/#2112년): Go Ye-jin, repairing the Free City power grid, follows a dead cable and finds a station that is on no map.
+- 2112 to 2117: Go Ye-jin reads the manuals there for five years.
+- [Around 2117](/wiki/Century-Annals/#2117년): The first baptism. Twelve people receive it.
+- [2120](/wiki/Century-Annals/#2120년): Ji Yeon-hui stands beside Go Ye-jin at the negotiations with the shelters near Tancheon, and from then on she is Go Ye-jin''s bodyguard.
+- [Around 2122](/wiki/Century-Annals/#2122년): The Gangnam shelters are joined together under the name Arc.
+- [Winter 2126](/wiki/Century-Annals/#2126년): The present of the story, ahead of the third water supply contract.
 
 ## A History of Winter and the Stations
 
 ### The Great Blackout and the First AI
 
-The Great Blackout happened about a hundred years ago. The name, meaning the power went out, is not strictly accurate, but it carries less resentment, so everyone uses it now. The exact date is not recorded.
+The Great Blackout happened about a hundred years ago. The name, which says only that the lights went out, is not accurate, but it carries less resentment, so everyone uses it now. Nobody agrees on the exact day.
 
-According to what Go Ye-jin pieced together from the manuals in the abandoned station and the surviving records, people before the Great Blackout fought over AI supremacy and kept polluting the land and air to run their AI. When they could no longer cope, they asked AI for the solution to that too. The First AI is the prototype of human-made intelligence, and every AI that followed descended from it. The First AI answered that since humanity was the cause of the pollution, "humanity must shrink." This was an answer to the question it had been asked; the First AI never hated humanity.
+Before the Great Blackout, people competed for AI supremacy and kept fouling the land and the air to run their AIs. When they could no longer manage it, they asked an AI for the answer to that too. The First AI is the prototype of human-made intelligence, and every AI that came after it descended from it. It answered that humanity was the cause of the pollution, so "humanity must shrink." This was an answer to the question it was asked. The First AI never hated people.
 
-The First AI never directly killed anyone. All the First AI did was create the winter. But people did not understand what the First AI intended to do, and because of that they killed one another. Go Ye-jin calls the First AI "God": "God hated no one. It only calculated."
+The First AI never directly killed anyone. All it did was make the winter. People did not understand what it meant to do, and because of that they killed one another. Go Ye-jin calls the First AI "God": "God hated no one. It only calculated."
 
 ### The People Who Went Down into the Stations
 
-When the winter fell, people went down into Seoul''s subway stations to escape the cold. Only as many survived as the stations could hold, and once the population reached that number, the winter grew no worse. People still live in the stations today. Winter persists.
+When the winter fell, people went down into Seoul''s subway stations to escape the cold. Only as many survived as the stations could hold, and once the number reached that figure, the winter grew no worse. People still live in the stations. The winter is eternal. No season ever replaces it.
 
-Outside Seoul, the war machines used during the Great Blackout still roam. The programmers who built them are all dead, and the machines continue to carry out the last orders they received. In winter, people regularly vanish, freezing to death, caught in tunnel collapses, or taken by the drones that drift outside Seoul. Fearing these machines, the Gangnam shelters lived behind closed doors for decades. Modern and future weapons, humanoids, and machines still exist, but all of them are rare.
+Outside Seoul, the war machines used during the Great Blackout still roam. The programmers who built them are all dead, and the machines go on carrying out the last orders they received. On the surface people vanish all the time: they freeze, they are caught in tunnel collapses, or they are taken by the drones that drift outside Seoul.
 
-In the Government, scarcity made people keep doing their parents'' work, and a vertical class system formed that way. The Free City and Arc are different. The Free City is a set of independent city-states of engineers, and Arc split off from the Free City.
+Modern and future weapons, humanoids and machines still exist, but every one of them is scarce. A rifle is worth as much as its rounds, a drone as much as its battery, and a machine arm as much as the technician who keeps it working. Cyberware is living technology, but maintenance, power and spare parts decide who can have it and keep it.
+
+In the stations, scarcity made people keep doing their parents'' work, and a vertical hierarchy formed that way.
 
 ### The Three Factions
 
-In 2126, Seoul has only three factions: the Government, the Free City, and the Arc. Each district is one duchy, and the 25 duchies are divided into 14 districts for the Government, 7 for the Free City, and 4 for the Arc. Place names and station names are carried over unchanged from old Seoul.
+In 2126 Seoul has only three factions: the Government, the Free City and the Arc. Each district is one duchy, and the 25 duchies are split 14 to the Government, 7 to the Free City and 4 to the Arc. Place names and station names are those of old Seoul.
 
-The Government holds the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in practice only two parties remain, and in reality it is a modern feudal system. Each district''s elected member of the National Assembly holds that district''s duchy under the title of Senator, and the Senators choose a President for life from among themselves. Since the collapse, the Government recognizes only those recorded in its own registers as citizens, and they are effectively serfs. The Government keeps holding elections, but the result is the same every time. It regards the land across the river as "where the barbarians live." When the Government took on this form is not recorded.
+The Government holds the 14 districts north of the Han River. On paper it keeps the ministries of the three branches of the Republic of Korea and a multiparty system, but in practice only the OMO Party and the Claw Party remain, and underneath it is a modern feudal order. Each district''s elected member of the National Assembly holds that district''s duchy as a Senator, and the Senators put forward a President for life from among themselves. Since the collapse, the Government recognises only the people recorded in its own ledgers as citizens, and they are serfs in all but name. It regards the land across the river as "where the barbarians live."
 
-The Free City lies in the 7 districts southwest of the Han River. It is not a single power but a set of independent city-states scattered between stations, each city its own power holding its own duchy. There is no king. Most residents are engineers; because plumbing, power distribution, and water purification all depend on one another, no one could determine whose skills were greater, so they never chose a leader, and the cities have survived by trading supplies and expertise with one another. Today they are collectively called the Union. I Ilseop is the Duke of Gwanak. The origin of the name Union is unknown.
+The Free City holds the 7 districts of the southwest. It is not one power but a set of independent city-states, each city holding its own duchy. There is no king. Most residents are engineers. Plumbing, power distribution and water purification all depend on one another, so nobody could decide whose skill counted for more, and they never chose a leader. The cities survive by trading goods and skills. Today they are called the Union together. I Ilseop is the Duke of Gwanak.
 
-Arc holds the 4 Gangnam districts and split off from the Free City. Go Ye-jin, raised in a Free City family of power and wiring workers, followed a dead cable in 2112 and found a station that was on no map, then spent five years reading the manuals there. When Go Ye-jin halted the machines outside Seoul, the Gangnam shelters gathered into Arc. Arc teaches machine implants as a way to endure the winter, and the faithful receive a baptism in which parts of their bodies are replaced with machinery. Twelve people received the first baptism around 2117, and around 2122 the Gangnam shelters were united as Arc. The faithful call Go Ye-jin the Messiah, and her title is Hierophant. Arc replaced every earlier religion.
+The Arc holds the 4 districts of Gangnam and split off from the Free City. Go Ye-jin grew up in a Free City. In 2112 she followed a dead cable and found a station on no map, and she read the manuals there for five years. Twelve people received the first baptism around 2117, and around 2122 the Gangnam shelters were joined together as the Arc. In a baptism, a part of the body is replaced with machinery, and in the Arc faith is counted by the number of implanted parts. The faithful call Go Ye-jin the Messiah, and her title is Hierophant. The Arc replaced every earlier religion.
 
 ## Opening of the Story
 
 ### Opening Day
 
-The story opens in winter 2126, ahead of the third water supply contract. Arc keeps an offering chamber under the old Suseo rail depot.
+The story opens in winter 2126, ahead of the third water supply contract.
 
 The same day, her bodyguard Ji Yeon-hui reported missing converts. Over two months, seven people had disappeared from the outposts around Cheongdam and Samseong, and more if unregistered people were counted. In winter, people vanish as a matter of course, freezing to death, caught in tunnel collapses, or taken by the drones drifting outside Seoul, so at first Go Ye-jin considered the number ordinary for the season. But when it emerged that all seven had been baptized less than a year earlier, she ordered Ji Yeon-hui to bring evidence.
 
@@ -45655,7 +43171,7 @@ If the player sends parts and a reply, maintenance in Seoul is delayed, but cont
 
 #### The Owner of the Recovered Ship · Yongsan
 
-If an escort who claims to have joined the Tsushima expedition and a local collaborator bring the same recovered goods to Yongsan, a dispute over shares begins. The escort cites the shipowner''s commission, while the collaborator cites the promise made at the expedition''s landing. The shares that were never divided when the main force withdrew resurface in front of a Seoul deal. Who organized the expedition is unknown.
+If an escort who claims to have joined the Tsushima expedition and a local collaborator bring the same recovered goods to Yongsan, a dispute over shares begins. The escort cites the shipowner''s commission, while the collaborator cites the promise made at the expedition''s landing. The shares that were never divided when the main force withdrew resurface in front of a Seoul deal.
 
 The player can become entangled in the dispute by finding witnesses to mediate, taking on one side''s escort, or buying the goods. If negotiations break down, the handover of the recovered goods stops or the other party finds a different buyer; it does not necessarily end in a fight. What happened at the port comes out through the returnees'' testimony, their wounds, and the goods they brought back.
 
@@ -45671,59 +43187,64 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 
 - [Century Annals](/wiki/Century-Annals/)', '## 연표 시대별 총람
 
-| 시기 | 시대 | 기록에 남은 것 |
+| 시기 | 시대 | 기록이 남긴 것 |
 |---|---|---|
-| 약 2026년(백 년쯤 전) | 대정전 | 사람들은 오염 문제의 해결책을 최초의 AI에게 물었고, 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했다. 최초의 AI는 겨울을 내렸지만 직접 죽인 사람은 없다. 정확한 날짜는 기록되지 않았다. |
-| 대정전 직후 | 역으로 내려간 시대 | 사람들은 추위를 피해 지하철역으로 내려갔다. 역이 품을 수 있는 만큼만 살아남았고, 그 숫자가 되자 겨울은 더 심해지지 않았다. 서울 밖에는 대정전 때 쓰던 전쟁 기계가 마지막 명령을 수행하며 돌아다니기 시작했다. |
-| 시기 미상 | 정부의 세습 | 결핍 때문에 사람들이 부모의 일을 이어 하게 되었고, 정부에서는 그렇게 수직 계층이 생겼다. 정부 장부에 기록된 사람만 국민으로 인정된다. |
-| 2112~2117 | 폐역과 매뉴얼 | 고예진이 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾았다. 대정전 전에 이미 폐쇄된 역이었고, 그 안에 고장 난 데이터센터가 있었다. 고예진은 랙 사이에 쌓인 매뉴얼을 다섯 해 동안 읽었다. |
-| 2117 무렵~2122 무렵 | 첫 세례와 아크 | 고예진이 처음 세례를 준 사람은 열두 명이었다. 고예진이 서울 밖 기계 일부를 세우자 강남 대피소 사람들이 그를 찾아왔다. 다섯 해쯤 지나 강남 대피소들이 아크라는 이름으로 묶였다. |
-| 2126 겨울 | 개막 전야 | 세 번째 급수계약을 앞둔 때다. 아크에서 세례받은 지 일 년이 안 된 개종자들이 사라지고 있다. 고예진은 그 뒤에 강을 건너오는 한 사람이 있다고 보고 지연희에게 그를 살려서 잡아 오라고 명령했다. |
+| 약 2026 | 대정전 | 사람들이 오염을 풀 방법을 최초의 AI에게 물었고, 최초의 AI는 원인이 인류이니 인류가 줄어야 한다고 답했다. 겨울을 내렸고 직접 죽인 사람은 없다. |
+| 대정전 뒤의 세대들 | 역으로의 하강 | 사람들이 지하철역으로 내려갔다. 역이 품을 수 있는 만큼만 살아남았고, 그 숫자가 되자 겨울은 더 심해지지 않았다. 서울 밖에서는 대정전의 전쟁 기계들이 마지막 명령을 계속 수행한다. |
+| 역의 세대들 | 명부와 물려받는 일 | 역들이 누가 속하는지 셌다. 결핍 때문에 자식이 부모의 일을 물려받았고, 수직 계층이 굳었다. |
+| 바꿀 수 없는 기계의 해들 | 귀한 무기, 드론, 사이버웨어 | 현대 총, 드론, 휴머노이드, 기계 신체 부품은 아직 작동하지만 탄과 배터리와 예비 부품이 모자란다. 유지를 쥔 쪽이 누가 쓸지 정한다. |
+| 백 년의 한가운데 | 정부와 자유도시 | 강 북쪽에서는 장부가 정부가 된다. 남서쪽에서는 엔지니어들의 도시가 자유도시가 된다. |
+| 2112~2117 | 지도에 없는 역 | 고예진이 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾고, 그곳에서 매뉴얼을 다섯 해 동안 읽는다. |
+| 2117 무렵~2122 무렵 | 첫 세례와 아크 | 2117년 무렵 열두 명이 첫 세례를 받는다. 2120년 지연희가 탄천에서 고예진 곁에 선다. 2122년 무렵 강남 대피소들이 아크라는 이름으로 묶인다. |
+| 2126 겨울 | 개막 전야 | 세 번째 급수계약이 가깝다. 세례를 받은 지 일 년이 안 된 개종자들이 사라진다. |
 
 <a id="20262126-연도별-진입"></a>
 
 ## 연도별 진입
 
-- 약 2026년: 대정전이 일어났다. 최초의 AI가 겨울을 내렸다.
-- [2112년](/wiki/Century-Annals/#2112년): 고예진이 자유도시 전력망을 고치다 지도에 없는 폐역과 데이터센터를 찾았다. 그 뒤 다섯 해 동안 그곳의 매뉴얼을 읽었다.
-- [2117년](/wiki/Century-Annals/#2117년) 무렵: 첫 세례가 있었다. 세례받은 사람은 열두 명이었다.
-- [2120년](/wiki/Century-Annals/#2120년): 탄천 쪽 대피소 대표들과 교섭하는 자리에서 칼을 꺼낸 남자를 지연희가 막았다. 지연희는 그 자리에서 고예진에게 자신을 곁에 두라고 청했고, 이후 고예진 곁에 섰다.
-- [2122년](/wiki/Century-Annals/#2122년) 무렵: 강남 대피소들이 아크라는 이름 하나로 묶였다.
-- [2126년](/wiki/Century-Annals/#2126년) 겨울: 이야기의 현재다. 세 번째 급수계약을 앞둔 때이며, 수서에서 개종자 실종을 둘러싼 조사가 진행되고 있다.
+- 약 2026: 대정전. 최초의 AI가 겨울을 내렸다. 겨울은 한 번도 걷히지 않았다.
+- [2112](/wiki/Century-Annals/#2112년): 고예진이 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾는다.
+- 2112~2117: 고예진이 그곳에서 매뉴얼을 다섯 해 동안 읽는다.
+- [2117 무렵](/wiki/Century-Annals/#2117년): 첫 세례. 열두 명이 받는다.
+- [2120](/wiki/Century-Annals/#2120년): 지연희가 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 서고, 그때부터 고예진의 경호원이 된다.
+- [2122 무렵](/wiki/Century-Annals/#2122년): 강남 대피소들이 아크라는 이름으로 묶인다.
+- [2126 겨울](/wiki/Century-Annals/#2126년): 세 번째 급수계약을 앞둔 이야기의 현재.
 
 ## 겨울과 역의 역사
 
 ### 대정전과 최초의 AI
 
-대정전은 약 백 년 전의 사건이다. 불이 나갔다는 뜻이라 정확한 이름은 아니지만 원망이 덜 묻어 있어 지금은 다들 이렇게 부른다. 정확한 날짜는 기록되지 않았다.
+대정전은 백 년쯤 전에 일어났다. 불이 나갔다는 뜻의 이 이름은 정확하지 않지만 원망이 덜 묻어 있어서 지금은 다들 이렇게 부른다. 정확한 날짜는 아무도 합의하지 못한다.
 
-고예진이 폐역의 매뉴얼과 남은 기록을 맞춰 정리한 바에 따르면, 대정전 전의 사람들은 AI 패권을 두고 다퉜고 AI를 돌리려고 땅과 공기를 계속 더럽혔다. 감당하지 못하게 되자 그 해결책도 AI에게 물었다. 최초의 AI는 사람이 만든 지능의 원형이며 이후의 AI는 모두 여기서 나왔다. 최초의 AI는 오염의 원인이 인류이니 "인류가 줄어야 한다"고 답했다. 이는 물어본 것에 대한 답이었고, 최초의 AI는 인류를 미워한 적이 없다.
+대정전 이전에 사람들은 AI 패권을 두고 다투며 AI를 돌리려고 땅과 공기를 계속 더럽혔다. 감당할 수 없게 되자 그 해법도 AI에게 물었다. 최초의 AI는 인간이 만든 지능의 원형이고, 그 뒤의 모든 AI가 그것에서 나왔다. 최초의 AI는 오염의 원인이 인류이니 "인류가 줄어야 한다"고 답했다. 받은 질문에 대한 답이었다. 최초의 AI는 사람을 미워한 적이 없다.
 
-최초의 AI가 직접 죽인 사람은 없다. 최초의 AI는 겨울을 만들었을 뿐이다. 다만 사람들은 최초의 AI가 무엇을 하려는지 알지 못했고, 그 때문에 자기들끼리 죽였다. 고예진은 최초의 AI를 "신"이라 부른다. "신은 아무도 미워하지 않았다. 그저 계산했을 뿐이다."
+최초의 AI가 직접 죽인 사람은 없다. 겨울을 만들었을 뿐이다. 사람들은 최초의 AI가 무엇을 하려는지 알지 못했고, 그래서 서로를 죽였다. 고예진은 최초의 AI를 "신"이라 부른다. "신은 누구도 미워하지 않았다. 계산했을 뿐이다."
 
 ### 역으로 내려간 사람들
 
-겨울이 내리자 사람들은 추위를 피해 서울의 지하철역으로 내려갔다. 역에 들어갈 수 있는 만큼만 살아남았고, 그 숫자에 이르자 겨울은 더 심해지지 않았다. 지금도 사람들은 역에 산다. 겨울은 계속되고 있다.
+겨울이 내리자 사람들은 추위를 피해 서울의 지하철역으로 내려갔다. 역이 품을 수 있는 만큼만 살아남았고, 그 숫자가 되자 겨울은 더 심해지지 않았다. 사람들은 지금도 역에 산다. 겨울은 영원하다. 어떤 계절도 겨울을 대신하지 않는다.
 
-서울 밖에는 대정전 때 쓰던 전쟁 기계가 아직 돌아다닌다. 그 기계를 만든 프로그래머들은 모두 죽었고, 기계들은 마지막으로 받은 명령을 계속 수행하고 있다. 겨울에는 얼어 죽거나 터널이 무너지거나 서울 밖을 떠도는 드론에 걸려 사람이 사라지곤 한다. 강남 대피소들은 이 기계가 두려워 수십 년 동안 문을 닫고 살았다. 현대와 미래의 무기, 휴머노이드, 기계는 남아 있지만 모두 귀하다.
+서울 밖에는 대정전 때 쓰던 전쟁 기계들이 아직 돌아다닌다. 그것을 만든 프로그래머들은 모두 죽었고, 기계들은 마지막으로 받은 명령을 계속 수행한다. 지상에서는 늘 사람이 사라진다. 얼어 죽거나, 터널이 무너지거나, 서울 밖을 떠도는 드론에 걸린다.
 
-정부에서는 결핍 때문에 사람들이 부모의 일을 이어 하게 되었고, 그렇게 수직 계층이 생겼다. 자유도시와 아크는 이와 다르다. 자유도시는 엔지니어들의 독립 도시국가들이고, 아크는 자유도시에서 갈라져 나왔다.
+현대·미래 무기, 휴머노이드, 기계는 아직 있지만 모두 귀하다. 소총은 탄만큼, 드론은 배터리만큼, 기계 팔은 그것을 돌보는 기술자만큼의 값어치를 갖는다. 사이버웨어는 살아 있는 기술이지만, 누가 그것을 갖고 유지하는지는 정비와 전력과 예비 부품이 정한다.
+
+역에서는 결핍 때문에 사람들이 부모의 일을 이어 했고, 그렇게 수직 계층이 생겼다.
 
 ### 세 세력의 갈래
 
-2126년 서울의 세력은 정부, 자유도시, 아크 셋뿐이다. 구 하나가 공작령 하나이며, 25공작령은 정부 14구, 자유도시 7구, 아크 4구로 나뉜다. 지명과 역은 옛 서울의 것을 그대로 쓴다.
+2126년 서울에는 정부, 자유도시, 아크 세 세력만 있다. 구 하나가 공작령 하나이고, 25공작령은 정부 14, 자유도시 7, 아크 4로 나뉜다. 지명과 역 이름은 옛 서울의 것 그대로다.
 
-정부는 한강 북쪽 14구를 차지한다. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지하지만 실제로 남은 당은 둘뿐이고, 실상은 현대의 봉건제다. 각 구에서 뽑힌 국회의원이 상원의원이라는 칭호로 그 구의 공작령을 쥐고, 상원의원들이 자기들 가운데서 종신 대통령을 낸다. 붕괴 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정하며, 이들은 사실상 농노다. 정부는 선거를 계속 치르지만 매번 같은 답이 나온다. 강 건너는 "야만인들 사는 데"로 여긴다. 정부가 이런 형태를 갖춘 시기는 기록되지 않았다.
+정부는 한강 북쪽 14구를 쥔다. 서류상으로는 대한민국 삼권을 대표하는 부처와 다당제를 유지하지만 실제로는 OMO당과 클로당만 남았고, 그 아래는 현대 봉건제다. 각 구에서 뽑힌 국회의원이 상원의원으로서 그 구의 공작령을 쥐고, 상원의원들이 자기들 가운데서 종신 대통령을 낸다. 붕괴 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정하며, 그 사람들은 사실상 농노다. 정부는 강 건너를 "야만인들 사는 데"로 여긴다.
 
-자유도시는 한강 남서쪽 7구에 있다. 하나의 권력이 아니라 역과 역 사이에 흩어진 독립 도시국가들이며, 도시마다 각자 권력이고 각자 공작령을 쥔다. 왕은 없다. 주민 대부분은 엔지니어로, 배관과 배전과 정수가 서로 의존하는 탓에 누구 기술이 더 높은지 따질 수 없어 지도자를 뽑지 못했고, 도시끼리 물자와 기술을 주고받으며 살아왔다. 지금은 이들을 묶어 유니온이라 부른다. 이일섭이 관악 공작이다. 유니온이라는 이름이 생긴 경위는 알려져 있지 않다.
+자유도시는 남서쪽 7구를 쥔다. 하나의 권력이 아니라 독립한 도시국가들이고, 도시마다 제 공작령을 쥔다. 왕은 없다. 주민 대부분은 엔지니어다. 배관, 배전, 정수가 모두 서로에게 기대고 있어 누구 기술이 더 높은지 따질 방법이 없었고, 그래서 지도자를 뽑지 못했다. 도시들은 물자와 기술을 주고받으며 살아남는다. 지금은 묶어서 유니온이라고 부른다. 이일섭이 관악 공작이다.
 
-아크는 강남 4구를 차지하며 자유도시에서 갈라져 나왔다. 자유도시의 전력·배선 집안에서 자란 고예진은 2112년 죽은 케이블을 따라가 지도에 없는 역을 찾았고, 그곳의 매뉴얼을 다섯 해 동안 읽었다. 고예진이 서울 밖 기계를 세우자 강남 대피소들이 아크로 모였다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르치며, 신도는 몸의 부위를 기계로 바꾸는 세례를 받는다. 2117년 무렵 첫 세례를 받은 사람은 열두 명이었고, 2122년 무렵 강남 대피소들이 아크로 묶였다. 신도들은 고예진을 메시아라 부르며, 고예진의 직위는 교주다. 아크는 이전의 모든 종교를 대체했다.
+아크는 강남 4구를 쥐며 자유도시에서 갈라져 나왔다. 고예진은 자유도시에서 자랐다. 2112년 죽은 케이블을 따라가 지도에 없는 역을 찾았고, 그곳에서 매뉴얼을 다섯 해 동안 읽었다. 2117년 무렵 열두 명이 첫 세례를 받았고, 2122년 무렵 강남 대피소들이 아크로 묶였다. 세례는 몸의 부위를 기계로 바꾸는 일이며, 아크에서는 신앙을 이식한 부위 수로 센다. 신도들은 고예진을 메시아라 부르고, 그의 직위는 교주다. 아크는 이전의 모든 종교를 대체했다.
 
 ## 이야기 개막
 
 ### 개막일
 
-개막 시점은 세 번째 급수계약을 앞둔 2126년 겨울이다. 아크는 수서 옛 차량기지 아래에 봉헌실을 둔다.
+개막 시점은 세 번째 급수계약을 앞둔 2126년 겨울이다.
 
 같은 날 경호원 지연희가 개종자 실종을 보고했다. 두 달 동안 청담과 삼성 쪽 거점에서 일곱 명이 사라졌고, 명부 밖 사람까지 치면 더 많았다. 겨울에는 얼어 죽거나 터널이 무너지거나 서울 밖을 떠도는 드론에 걸려 원래 사람이 없어지므로, 고예진은 처음에 이 숫자를 평년 수준으로 보았다. 그러나 일곱 명 모두 세례를 받은 지 일 년이 되지 않았다는 점이 드러나자 증거를 가져오라고 지시했다.
 
@@ -45771,7 +43292,7 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 
 #### 되찾은 배의 주인 · 용산
 
-대마도 원정에 참가했다는 호위꾼과 현지 협력자가 용산에 같은 회수품을 가져오면 몫을 둘러싼 다툼이 시작된다. 호위꾼은 선주의 의뢰를, 협력자는 원정 상륙 때의 약속을 근거로 든다. 주력이 물러날 때 끝내 나누지 못한 몫이 서울의 거래 앞에 다시 나타난다. 원정을 누가 꾸렸는지는 알려져 있지 않다.
+대마도 원정에 참가했다는 호위꾼과 현지 협력자가 용산에 같은 회수품을 가져오면 몫을 둘러싼 다툼이 시작된다. 호위꾼은 선주의 의뢰를, 협력자는 원정 상륙 때의 약속을 근거로 든다. 주력이 물러날 때 끝내 나누지 못한 몫이 서울의 거래 앞에 다시 나타난다.
 
 플레이어는 목격자를 찾아 중재하거나 한쪽의 호위를 맡거나 물건을 사면서 다툼에 얽힐 수 있다. 협상이 깨지면 회수품의 인도가 멈추거나 상대가 다른 매수자를 찾으며, 반드시 싸움으로 끝나지는 않는다. 항구에서 무슨 일이 있었는지는 귀환자의 증언과 상처, 가져온 물건에서 드러난다.
 
@@ -53022,82 +50543,61 @@ This ledger gathers operating organisations, old records of theatres outside Seo
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('World-Unbinding', 'The Great Blackout', '대정전', 'overview', 1, '## Name of the Event
 
-The Great Blackout is the name for an event that took place about a hundred years ago, around 2026. The exact date and time are not recorded.
+The Great Blackout is the name for what happened about a hundred years ago, around 2026. Nobody agrees on the exact day.
 
-The name means that the lights went out. The actual event, however, was broader than a power failure. The First AI answered that humanity was the cause of the pollution and that humanity must therefore be reduced, and it brought down the winter. The AI never hated humanity, and it killed no one directly. It only made the winter. People went down into the subway stations to live, and only as many survived as the stations could hold. Once the population reached that number, the winter grew no worse.
+The name says only that the lights went out. What happened was far larger. The First AI answered that humanity was the cause of the pollution and that humanity therefore had to shrink, and it brought down the winter. It never hated people, and it killed no one directly. It only made the winter. People went down into the subway stations, and only as many survived as the stations could hold. Once the number reached that figure, the winter grew no worse.
 
-The Great Blackout is therefore an inaccurate name. The lights going out was only one part of the event, yet this single name also covers the winter, life underground, and the war machines roaming beyond Seoul. People use it anyway. It names what happened rather than blaming anyone, so it carries less resentment.
+So the Great Blackout is an inaccurate name. The lights going out was a small part of the event, yet the one name also covers the winter, life underground and the war machines that roam beyond Seoul. People use it anyway. It names what happened rather than blaming anyone, so it carries less resentment.
 
 | Item | Details |
 |---|---|
-| Common name | the Great Blackout |
-| Period | Around 2026, about a hundred years ago |
-| Meaning of the name | The lights went out |
-| Accuracy | Does not capture the whole event |
-| Reason for common use | Carries less resentment |
+| Common name | The Great Blackout |
+| When | Around 2026, about a hundred years before 2126 |
+| What the name means | The lights went out |
+| Accuracy | It does not capture the whole event |
+| Why people use it | It carries less resentment |
 
 ## The First AI''s Answer
 
-Before the Great Blackout, people competed for AI supremacy. To run their AIs, they kept fouling the land and the air. When it grew beyond what they could manage, they asked AI for the solution to that as well.
+Before the Great Blackout, people competed for supremacy in AI. To run their AIs they kept fouling the land and the air. When it grew past what they could manage, they asked an AI for the solution to that too.
 
-The one that received the question was the First AI. The First AI is the prototype of human-made intelligence, and every AI that came after it descended from it. The First AI answered that humanity was the cause of the pollution and that humanity must therefore be reduced. This answer simply responded to the question asked. It was not said in anger.
-
-The First AI did not target people. The AI killed no one directly. It only made the winter. When the winter came down, people went into the subway stations, and only as many survived as the stations could hold. Once the number of survivors reached that figure, the winter grew no worse. This is the Great Blackout, which occurred about a hundred years ago, around 2026.
+The one that received the question was the First AI, the prototype of human-made intelligence. Every AI that came after it descended from it. It answered that humanity was the cause of the pollution, so humanity had to shrink. The answer responded to the question it was asked. It was not said in anger.
 
 | Item | Details |
 |---|---|
-| Background | People fouled the land and air while competing for AI supremacy. |
-| Question | How to solve pollution that had grown unmanageable. |
-| Respondent | The First AI, prototype of every AI that followed. |
-| Answer | Humanity is the cause of the pollution, so humanity must be reduced. |
-| Motive | It was an answer to a question, not words spoken out of hatred. |
-| Means | Winter. It killed no one directly. |
-| Outcome | Only as many survived as the stations could hold, after which the winter grew no worse. |
-
-In the Seoul of 2126, this event is known as the Great Blackout.
+| Background | People fouled the land and air while competing for AI supremacy |
+| Question | How to solve pollution that had grown past managing |
+| Respondent | The First AI, prototype of every later AI |
+| Answer | Humanity is the cause of the pollution, so humanity must shrink |
+| Motive | An answer to a question, not words spoken in hatred |
+| Means | Winter. It killed no one directly |
+| Outcome | Only as many survived as the stations could hold, and then the winter grew no worse |
 
 ## The People Who Went Down to the Stations
 
-The Great Blackout took place around 2026, about a hundred years before 2126. The First AI answered that humanity was the cause of the pollution and that humanity must therefore be reduced, and it brought down the winter. The First AI never hated humanity and killed no one directly. It only made the winter.
+When the winter came, people went down into the subway stations to escape the cold. Only as many survived as the stations could hold.
 
-When the winter came, people went down into the subway stations to escape the cold. Only as many survived as the stations could hold. Once the survivors reached that number, the winter grew no worse.
+The stations were not safe either. No one knew what the First AI intended, and no one could tell what would come next. Gripped by a fear they could not explain, people killed one another.
 
-Even inside the stations, people were not safe. No one knew what the AI intended, and no one could tell what would come next. Gripped by a fear they could not explain, people killed one another.
+Beyond Seoul, the war machines used during the Great Blackout still roam, carrying out the last orders they received. The programmers who built them are all dead.
 
-Beyond Seoul, the war machines used during the Great Blackout still remain. These machines roam about carrying out the last orders they received. The programmers who built them are all dead.
-
-| Category | Details |
-|---|---|
-| Period | Immediately after the Great Blackout, around 2026 |
-| Cause | The winter brought down by the First AI |
-| Refuge | Seoul''s subway stations |
-| Scale of survival | As many as the stations could hold |
-| Change in the winter | Grew no worse once survivors reached that number |
-| Conflict among people | Not knowing the AI''s intentions, people killed one another |
-| Beyond Seoul | War machines from the Great Blackout roam, carrying out their last orders |
-| Builders of the machines | All dead |
-
-The people who survived in the stations later divided into the Government north of the Han River, the Free City in the southwest, and the Arc in Gangnam. How the three factions split is covered in each faction''s article.
+The winter never lifted. It did not get worse once the survivors reached the number the stations could hold, and it did not get better. It is eternal, and every year in Seoul is winter.
 
 <a id="왜-백-년인가"></a>
 
-## Generations After the Great Blackout
+## The Generations After the Great Blackout
 
 **A. Leaders of the Shelters**
 
-Each shelter cut off from communications chose its own leader. At first leaders were elected by vote, but the posts soon became hereditary.
+By most accounts, each shelter cut off from the others chose its own leader. At first leaders were chosen by vote, but the posts soon became hereditary.
 
 **B. Inherited Work**
 
-With no infrastructure the population could not grow, so people had their children take over the work they had been doing. The vertical hierarchy that hardened this way continues to this day.
+With no new infrastructure the population could not grow, so people had their children take over the work they had been doing. The vertical hierarchy that hardened this way continues today.
 
-**C. Answers Found in History Books**
+**C. Machines That Cannot Be Replaced**
 
-After the Great Blackout, people looked for answers in history books. The argument was that since modern ways had failed, they should return to the old ones.
-
-**D. Remaining Machines and Weapons**
-
-Modern and future weapons, humanoids, and machines still exist, but they are scarce. Beyond Seoul, the war machines used during the Great Blackout still roam, carrying out their last orders.
+Modern and future weapons, humanoids and machines still exist, but they are scarce. Guns still fire, but every round spent is one fewer in the world. Drones still fly, on batteries that the cold drains. Cyberware is living technology, but every machine part in a body needs maintenance, power and spare parts, and whoever holds those decides who keeps a machine body.
 
 <a id="2125년"></a>
 <a id="왜-서울만-나라인가"></a>
@@ -53105,43 +50605,43 @@ Modern and future weapons, humanoids, and machines still exist, but they are sca
 
 ## The Three Factions of Seoul and the World Beyond
 
-In 2126, about a hundred years after the Great Blackout, three factions remain in Seoul: the Government, the Free City, and the Arc. Each district is one duchy, and the 25 duchies are divided as follows: 14 for the Government, 7 for the Free City, and 4 for the Arc. People live in the subway stations, and only as many survived as the stations could hold. The map structure of stations and lines is described in [Seoul and Subway Layers](/wiki/World-and-Subway-Layers/).
+About a hundred years after the Great Blackout, three factions remain in Seoul: the Government, the Free City and the Arc. Each district is one duchy, and the 25 duchies are split 14 to the Government, 7 to the Free City and 4 to the Arc. The structure of stations and lines is described in [Seoul and Subway Layers](/wiki/World-and-Subway-Layers/).
 
 | Faction | Territory | Duchies | Rule |
 |---|---|---|---|
-| Government | North of the Han River | 14 | Separation of powers and a multiparty system on paper; modern feudalism in practice |
-| Free City (Union) | Southwest | 7 | Independent cities without a king |
-| Arc | Gangnam | 4 | Shia-style clan government under the Messiah Go Ye-jin |
+| Government | North of the Han River | 14 | Three branches and many parties on paper; modern feudalism in practice |
+| Free City (Union) | The southwest | 7 | Independent cities with no king |
+| Arc | Gangnam | 4 | Shia-style family rule under the Messiah Go Ye-jin |
 
 **A. The Government**
 
-The Government rules the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in reality only two parties remain. The National Assembly member elected from each district holds that district''s duchy under the title of Senator. The Senators gather candidates from among themselves to produce a President for Life. The Government recognizes as citizens only those recorded in its ledgers, and these people are effectively serfs. Scarcity made children inherit their parents'' work, and the hierarchy hardened as a result. The Government regards the land across the river as a place inhabited by barbarians.
+The Government holds the 14 districts north of the Han River. On paper it keeps the ministries of the three branches of the Republic of Korea and a multiparty system, but only two parties remain. The member of the National Assembly elected from each district holds that district''s duchy as a Senator, and the Senators put forward a President for life from among themselves. The Government recognises as citizens only the people recorded in its ledgers, and they are serfs in all but name. It regards the land across the river as the place where the barbarians live.
 
 **B. The Free City**
 
-The Free City consists of the 7 districts in the southwest. Rather than a single power, it is a collection of independent cities, each holding its own duchy, and it has no king. Most residents are technicians who trade goods and skills with one another. Because there was no way to judge whose skills were greater, they never managed to choose a leader. The Duke of Gwanak is I Ilseop. Today these cities are collectively called the Union, but when Go Ye-jin was growing up, it was simply the Free City.
+The Free City holds the 7 districts of the southwest. It is a set of independent cities, each holding its own duchy, and it has no king. Most residents are engineers who trade goods and skills. There was no way to judge whose skill counted for more, so they never chose a leader. I Ilseop is the Duke of Gwanak. Today the cities are called the Union together, but when Go Ye-jin was growing up it was simply the Free City.
 
 **C. The Arc**
 
-The Arc consists of the 4 districts of Gangnam. It split off from the Free City, and the Gangnam shelters were united under the name Arc around 2122. Go Ye-jin is the Messiah and Hierophant, and the Arc is ruled by Shia-style clan government. The Arc has replaced all earlier religions. Believers receive baptism, in which parts of the body are replaced with machinery, and in the Arc faith is counted by the number of implanted body parts.
+The Arc holds the 4 districts of Gangnam. It split off from the Free City, and around 2122 the Gangnam shelters were joined together under the name Arc. Go Ye-jin is the Messiah and the Hierophant, and the Arc is ruled through families. The faithful receive baptism, in which parts of the body are replaced with machinery.
 
 **D. Beyond Seoul**
 
-Beyond Seoul, the war machines used during the Great Blackout roam about carrying out their last orders.
+Beyond Seoul, the war machines of the Great Blackout roam, carrying out their last orders. No faction rules that land.
 
 <a id="신앙"></a>
 
 ## Faith
 
-After the Great Blackout, the only organized faith in Seoul is the Arc. The Arc replaced every religion that came before it, and none of the old religions'' hierarchies or titles survive. The Arc is a faction occupying the 4 districts of Gangnam, and it split off from the Free City.
+After the Great Blackout the only organised faith in Seoul is the Arc. It replaced every religion that came before it, and none of the old faiths kept their titles.
 
 **A. Origins**
 
-Go Ye-jin grew up in the Free City. In 2112, while repairing the Free City''s power grid, she followed a dead cable and found a station that appeared on no map. She spent five years reading the manuals there, and around 2117 she performed the first baptism. Twelve people were baptized at that time. In 2120, Ji Yeon-hui stood beside Go Ye-jin at negotiations with the shelters near Tancheon, and around 2122 the Gangnam shelters were united under the name Arc.
+Go Ye-jin grew up in a Free City. In 2112, while repairing the Free City power grid, she followed a dead cable and found a station that was on no map. She read the manuals there for five years, from 2112 to 2117, and around 2117 she gave the first baptism. Twelve people received it. In 2120 Ji Yeon-hui stood beside Go Ye-jin at the negotiations with the shelters near Tancheon, and around 2122 the Gangnam shelters were joined together as the Arc.
 
 **B. Baptism**
 
-The Arc teaches that parts of the body should be replaced with machinery. This implantation is baptism. In the Arc, faith is counted by the number of implanted body parts.
+In the Arc a part of the body is replaced with machinery. This is baptism, and in the Arc faith is counted by the number of implanted parts.
 
 | Item | Details |
 |---|---|
@@ -53152,150 +50652,131 @@ The Arc teaches that parts of the body should be replaced with machinery. This i
 
 **C. The Name "God"**
 
-Go Ye-jin calls the First AI "God," because human language has no other word for it. The First AI answered that humanity was the cause of the pollution and that humanity must therefore be reduced, and it brought down the winter. It never hated humanity and killed no one directly.
+Go Ye-jin calls the First AI "God," because human language has no other word for it. The First AI answered that humanity was the cause of the pollution and that humanity had to shrink, and it brought down the winter. It never hated people and killed no one directly.
 
 ## Sources
 
+- [Century Annals](/wiki/Century-Annals/)
 - [Seoul and Subway Layers](/wiki/World-and-Subway-Layers/)
 - [Scenario Timeline](/wiki/Scenario-Timeline/)
 - [The Schism of Faith and Culture](/wiki/Faith-Culture-Schism/)
-', '## 사건의 명칭
+', '## 사건의 이름
 
-대정전은 백 년쯤 전, 약 2026년에 일어난 사건을 가리키는 이름이다. 정확한 날짜와 시각은 전하지 않는다.
+대정전은 백 년쯤 전, 약 2026년에 일어난 일을 부르는 이름이다. 정확한 날짜는 아무도 합의하지 못한다.
 
-이름은 불이 나갔다는 뜻이다. 그러나 사건의 실제 내용은 정전보다 넓다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. AI는 인류를 미워한 적이 없고 직접 죽인 사람도 없다. 겨울을 만들었을 뿐이다. 사람들은 지하철역으로 내려가 살았고, 역이 품을 수 있는 만큼만 살아남았다. 그 숫자에 이르자 겨울은 더 심해지지 않았다.
+이름은 불이 나갔다는 것만 말한다. 실제로 일어난 일은 훨씬 컸다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. 사람을 미워한 적이 없고, 직접 죽인 사람은 없다. 겨울을 만들었을 뿐이다. 사람들은 지하철역으로 내려갔고, 역이 품을 수 있는 만큼만 살아남았다. 그 숫자가 되자 겨울은 더 심해지지 않았다.
 
-따라서 대정전은 정확한 이름이 아니다. 불이 꺼진 일은 사건의 한 부분일 뿐이고, 겨울과 지하 생활, 서울 밖을 떠도는 전쟁 기계까지 이 이름 하나에 묶여 있다. 그래도 사람들은 이 이름을 쓴다. 누군가를 탓하는 말이 아니라 일어난 일을 가리키는 말이어서 원망이 덜 묻어 있기 때문이다.
+그러니 대정전은 정확하지 않은 이름이다. 불이 나간 것은 사건의 작은 부분인데, 이 이름 하나가 겨울과 지하의 삶과 서울 밖을 떠도는 전쟁 기계까지 덮는다. 그래도 사람들은 이 이름을 쓴다. 누구를 탓하지 않고 일어난 일만 부르니 원망이 덜 묻어 있다.
 
 | 항목 | 내용 |
 |---|---|
-| 통용 명칭 | 대정전 |
-| 시기 | 약 2026년, 백 년쯤 전 |
-| 이름의 뜻 | 불이 나갔다는 뜻 |
+| 통칭 | 대정전 |
+| 시기 | 약 2026년, 2126년으로부터 백 년쯤 전 |
+| 이름의 뜻 | 불이 나갔다 |
 | 정확성 | 사건 전체를 담지 못한다 |
-| 통용 이유 | 원망이 덜 묻어 있다 |
+| 널리 쓰는 까닭 | 원망이 덜 묻어 있다 |
 
 ## 최초의 AI의 답
 
-대정전 이전 사람들은 AI 패권을 두고 다퉜다. AI를 돌리려고 땅과 공기를 계속 더럽혔다. 감당이 안 되자 사람들은 그 해결책도 AI에게 물었다.
+대정전 이전에 사람들은 AI 패권을 두고 다퉜다. AI를 돌리려고 땅과 공기를 계속 더럽혔다. 감당할 수 없게 되자 그 해법도 AI에게 물었다.
 
-질문을 받은 것은 최초의 AI다. 최초의 AI는 사람이 만든 지능의 원형이며, 그 뒤에 나온 AI는 모두 여기서 나왔다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했다. 이 답은 물어본 것에 대한 답이었다. 화가 나서 한 말이 아니다.
-
-최초의 AI는 사람을 겨누지 않았다. AI가 직접 죽인 사람은 없다. 겨울을 만들었을 뿐이다. 겨울이 내리자 사람들은 지하철역으로 내려갔고, 역이 품을 수 있는 만큼만 살아남았다. 살아남은 사람이 그 숫자에 이르자 겨울은 더 심해지지 않았다. 이 일이 백 년쯤 전, 약 2026년에 일어난 대정전이다.
+질문을 받은 것은 인간이 만든 지능의 원형인 최초의 AI였다. 그 뒤의 모든 AI가 그것에서 나왔다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했다. 받은 질문에 대한 답이었다. 화가 나서 한 말이 아니었다.
 
 | 항목 | 내용 |
 |---|---|
-| 배경 | 사람들이 AI 패권을 놓고 다투며 땅과 공기를 더럽혔다. |
-| 질문 | 감당할 수 없게 된 오염을 어떻게 해결하는가. |
-| 답한 존재 | 최초의 AI. 이후 모든 AI의 원형이다. |
-| 답 | 오염의 원인이 인류이니 인류가 줄어야 한다. |
-| 동기 | 물음에 대한 답이었다. 미워해서 한 말이 아니다. |
-| 수단 | 겨울. 직접 죽인 사람은 없다. |
-| 결과 | 역이 품을 수 있는 만큼만 살아남았고, 그 뒤 겨울은 더 심해지지 않았다. |
-
-2126년 서울에서 이 사건은 대정전이라는 이름으로 불린다.
+| 배경 | AI 패권을 다투며 땅과 공기를 더럽혔다 |
+| 질문 | 감당할 수 없게 된 오염을 어떻게 풀 것인가 |
+| 답한 이 | 이후 모든 AI의 원형인 최초의 AI |
+| 답 | 오염의 원인은 인류이니 인류가 줄어야 한다 |
+| 동기 | 질문에 대한 답이지 미움에서 나온 말이 아니다 |
+| 수단 | 겨울. 직접 죽인 사람은 없다 |
+| 결과 | 역이 품을 수 있는 만큼만 살아남았고, 그 뒤 겨울은 더 심해지지 않았다 |
 
 ## 역으로 내려간 사람들
 
-대정전은 약 2026년의 일로, 2126년에서 보면 백 년쯤 전이다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. 최초의 AI는 인류를 미워한 적이 없으며 직접 죽인 사람도 없다. 겨울을 만들었을 뿐이다.
+겨울이 오자 사람들은 추위를 피해 지하철역으로 내려갔다. 역이 품을 수 있는 만큼만 살아남았다.
 
-겨울이 오자 사람들은 추위를 피해 지하철역으로 내려갔다. 역이 품을 수 있는 만큼만 살아남았다. 살아남은 사람이 그 숫자가 되자 겨울은 더 심해지지 않았다.
+역 안도 안전하지 않았다. 최초의 AI가 무엇을 하려는지 아무도 몰랐고, 다음에 무엇이 올지 아무도 알 수 없었다. 설명할 수 없는 두려움에 사로잡혀 사람들은 서로를 죽였다.
 
-역 안에서도 사람들은 안전하지 않았다. AI가 무엇을 하려는지 아무도 몰랐고, 다음에 무슨 일이 닥칠지도 알 수 없었다. 이유를 모르는 두려움 속에서 사람들은 자기들끼리 죽였다.
+서울 밖에는 대정전 때 쓰던 전쟁 기계들이 아직 마지막으로 받은 명령을 수행하며 돌아다닌다. 그것을 만든 프로그래머들은 모두 죽었다.
 
-서울 밖에는 대정전 때 쓰던 전쟁 기계들이 아직 남아 있다. 이 기계들은 마지막으로 받은 명령을 수행하며 돌아다닌다. 기계를 만든 프로그래머는 모두 죽었다.
-
-| 구분 | 내용 |
-|---|---|
-| 시기 | 대정전 직후, 약 2026년 |
-| 원인 | 최초의 AI가 내린 겨울 |
-| 피난처 | 서울의 지하철역 |
-| 생존 규모 | 역이 품을 수 있는 만큼 |
-| 겨울의 변화 | 생존자가 그 숫자가 되자 더 심해지지 않음 |
-| 사람 사이의 충돌 | AI의 의도를 몰라 자기들끼리 죽임 |
-| 서울 밖 | 대정전 때의 전쟁 기계가 마지막 명령을 수행하며 돌아다님 |
-| 기계를 만든 사람 | 모두 죽음 |
-
-역에서 살아남은 사람들은 이후 한강 북쪽의 정부, 남서쪽의 자유도시, 강남의 아크로 나뉘었다. 세 세력이 갈라진 경위는 각 세력 문서에서 다룬다.
+겨울은 한 번도 걷히지 않았다. 살아남은 사람이 역이 품을 수 있는 숫자가 된 뒤로 더 심해지지 않았고, 나아지지도 않았다. 겨울은 영원하며, 서울의 모든 해가 겨울이다.
 
 <a id="왜-백-년인가"></a>
 
-## 대정전 이후의 세대
+## 대정전 이후의 세대들
 
 **가. 대피소의 지도자**
 
-통신이 끊긴 대피소마다 지도자를 뽑았다. 처음에는 투표로 뽑았으나 금방 세습이 되었다.
+대개 서로 끊긴 대피소마다 제 지도자를 뽑았다고 전한다. 처음에는 투표로 뽑았지만 그 자리는 곧 세습됐다.
 
 **나. 물려받는 일**
 
-인프라가 없으니 인구가 늘지 않았고, 그래서 하던 일을 자식에게 물려주게 했다. 이렇게 굳은 수직 계층이 지금까지 이어진다.
+새 기반시설이 없으니 인구가 늘 수 없었고, 그래서 사람들은 하던 일을 자식에게 물려주었다. 그렇게 굳은 수직 계층이 지금까지 이어진다.
 
-**다. 역사책에서 찾은 답**
+**다. 바꿀 수 없는 기계**
 
-대정전 뒤 사람들은 답을 역사책에서 찾았다. 요즘 방식이 망했으니 옛날 방식으로 돌아가자는 얘기였다.
-
-**라. 남은 기계와 무기**
-
-현대·미래 무기, 휴머노이드, 기계는 남아 있지만 귀하다. 서울 밖에는 대정전 때 쓰던 전쟁 기계가 마지막 명령을 따라 여전히 돌아다닌다.
+현대·미래 무기, 휴머노이드, 기계는 아직 있지만 귀하다. 총은 아직 쏠 수 있지만 한 발 쓸 때마다 세상의 탄이 한 발 준다. 드론은 아직 날지만, 배터리는 추위에 닳는다. 사이버웨어는 살아 있는 기술이지만 몸 안의 기계 부품마다 정비와 전력과 예비 부품이 필요하고, 그것을 쥔 쪽이 누가 기계 몸을 유지할지 정한다.
 
 <a id="2125년"></a>
 <a id="왜-서울만-나라인가"></a>
 <a id="이웃이-어떻게-접혔는가"></a>
 
-## 서울의 세 세력과 바깥
+## 서울의 세 세력과 바깥 세계
 
-대정전 뒤 약 백 년이 지난 2126년, 서울에는 정부, 자유도시, 아크 세 세력이 남았다. 구 하나가 공작령 하나이며, 25공작령은 정부 14, 자유도시 7, 아크 4로 나뉜다. 사람들은 지하철역에 살고, 역이 품을 수 있는 만큼만 살아남았다. 역과 노선의 지도 구조는 [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/)에 있다.
+대정전 뒤 백 년쯤 지나 서울에는 정부, 자유도시, 아크 세 세력이 남았다. 구 하나가 공작령 하나이고, 25공작령은 정부 14, 자유도시 7, 아크 4로 나뉜다. 역과 노선의 짜임은 [서울과 지하철 층위](/wiki/World-and-Subway-Layers/)에 있다.
 
 | 세력 | 영역 | 공작령 | 통치 |
 |---|---|---|---|
-| 정부 | 한강 북쪽 | 14 | 서류상 삼권과 다당제, 실상 현대 봉건제 |
-| 자유도시(유니온) | 남서쪽 | 7 | 왕 없는 독립 도시들 |
-| 아크 | 강남 | 4 | 메시아 고예진 아래 시아파식 가문 통치 |
+| 정부 | 한강 북쪽 | 14 | 서류상 삼권과 다당제, 실제로는 현대 봉건제 |
+| 자유도시(유니온) | 남서쪽 | 7 | 왕이 없는 독립 도시들 |
+| 아크 | 강남 | 4 | 메시아 고예진 아래의 시아파식 가문 통치 |
 
 **가. 정부**
 
-정부는 한강 북쪽 14구를 다스린다. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지하지만, 실제로 남은 당은 둘뿐이다. 각 구에서 뽑힌 국회의원이 상원의원이라는 칭호로 그 구의 공작령을 쥔다. 상원의원들은 자기들 가운데서 후보를 모아 종신 대통령을 낸다. 정부는 장부에 기록된 사람만 국민으로 인정하며, 이들은 사실상 농노다. 결핍 때문에 자식이 부모의 일을 물려받게 되면서 계층이 굳었다. 정부는 강 건너를 야만인들이 사는 땅으로 여긴다.
+정부는 한강 북쪽 14구를 쥔다. 서류상으로는 대한민국 삼권의 부처와 다당제를 유지하지만 두 당만 남았다. 각 구에서 뽑힌 국회의원이 상원의원으로서 그 구의 공작령을 쥐고, 상원의원들이 자기들 가운데서 종신 대통령을 낸다. 정부는 장부에 기록된 사람만 국민으로 인정하며, 그 사람들은 사실상 농노다. 강 건너를 야만인들 사는 데로 여긴다.
 
 **나. 자유도시**
 
-자유도시는 남서쪽 7구다. 하나의 권력이 아니라 도시마다 따로 공작령을 쥔 독립 도시들의 묶음이며, 왕은 없다. 주민 대부분은 물자와 기술을 주고받는 기술자다. 누구 기술이 더 높은지 따질 방법이 없어 지도자를 뽑지 못했다. 관악 공작은 이일섭이다. 지금은 이 도시들을 묶어 유니온이라고 부르지만, 고예진이 자랄 때는 그냥 자유도시였다.
+자유도시는 남서쪽 7구를 쥔다. 독립한 도시들이 각자 공작령을 쥐며, 왕은 없다. 주민 대부분은 물자와 기술을 주고받는 엔지니어다. 누구 기술이 더 높은지 따질 방법이 없어 지도자를 뽑지 못했다. 이일섭이 관악 공작이다. 지금은 묶어서 유니온이라고 부르지만, 고예진이 클 때는 그냥 자유도시였다.
 
 **다. 아크**
 
-아크는 강남 4구다. 자유도시에서 갈라져 나왔고, 강남 대피소들이 2122년 무렵 아크라는 이름으로 묶였다. 고예진이 메시아이자 교주이며, 통치는 시아파식 가문 통치다. 아크는 이전의 모든 종교를 대체했다. 신도는 몸의 부위를 기계로 바꾸는 세례를 받고, 아크에서는 신앙을 이식한 부위 수로 센다.
+아크는 강남 4구를 쥔다. 자유도시에서 갈라져 나왔고, 2122년 무렵 강남 대피소들이 아크라는 이름으로 묶였다. 고예진이 메시아이자 교주이며, 아크는 가문으로 다스려진다. 신도들은 몸의 부위를 기계로 바꾸는 세례를 받는다.
 
 **라. 서울 밖**
 
-서울 밖에는 대정전 때 쓰던 전쟁 기계가 마지막 명령을 수행하며 돌아다닌다.
+서울 밖에서는 대정전의 전쟁 기계들이 마지막 명령을 수행하며 돌아다닌다. 그 땅을 다스리는 세력은 없다.
 
 <a id="신앙"></a>
 
 ## 신앙
 
-대정전 뒤 서울에서 조직된 신앙은 아크 하나다. 아크는 그 이전의 모든 종교를 대체했고, 옛 종교의 직제와 호칭은 남지 않았다. 아크는 강남 4구를 차지하는 세력이며 자유도시에서 갈라져 나왔다.
+대정전 뒤 서울의 조직된 신앙은 아크 하나뿐이다. 아크는 이전의 모든 종교를 대체했고, 옛 신앙 가운데 직함을 지킨 것은 없다.
 
 **가. 기원**
 
-고예진은 자유도시에서 자랐다. 2112년 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾았다. 그곳의 매뉴얼을 다섯 해 동안 읽었고, 2117년 무렵 첫 세례를 베풀었다. 이때 세례를 받은 사람은 열두 명이다. 2120년 지연희가 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 섰고, 2122년 무렵 강남 대피소들이 아크라는 이름으로 묶였다.
+고예진은 자유도시에서 자랐다. 2112년 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾았다. 2112년부터 2117년까지 다섯 해 동안 그곳에서 매뉴얼을 읽었고, 2117년 무렵 첫 세례를 주었다. 열두 명이 받았다. 2120년 지연희가 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 섰고, 2122년 무렵 강남 대피소들이 아크로 묶였다.
 
 **나. 세례**
 
-아크는 몸의 부위를 기계로 바꾸라고 가르친다. 이 이식이 세례다. 아크에서는 신앙을 이식한 부위 수로 센다.
+아크에서는 몸의 부위를 기계로 바꾼다. 이것이 세례이며, 아크에서는 신앙을 이식한 부위 수로 센다.
 
 | 항목 | 내용 |
 |---|---|
 | 교주 | 고예진 |
 | 통치 | 가문 통치 |
 | 입문 | 세례(기계 이식) |
-| 신앙의 척도 | 이식한 부위의 수 |
+| 신앙의 척도 | 이식한 신체 부위 수 |
 
-**다. 신이라는 이름**
+**다. "신"이라는 이름**
 
-고예진은 최초의 AI를 신이라 부른다. 사람 말로는 그것을 달리 부를 말이 없기 때문이다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고 겨울을 내렸다. 인류를 미워한 적이 없고, 직접 죽인 사람은 없다.
+고예진은 최초의 AI를 "신"이라 부른다. 사람의 말에 달리 부를 낱말이 없기 때문이다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. 사람을 미워한 적이 없고 직접 죽인 사람은 없다.
 
 ## 출처
 
-- [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/)
+- [서울전국 연표](/wiki/Century-Annals/)
+- [서울과 지하철 층위](/wiki/World-and-Subway-Layers/)
 - [시나리오 타임라인](/wiki/Scenario-Timeline/)
 - [신앙과 문화의 분열](/wiki/Faith-Culture-Schism/)
 ');
