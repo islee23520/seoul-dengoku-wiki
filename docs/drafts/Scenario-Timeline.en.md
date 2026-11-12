@@ -1,64 +1,71 @@
 ---
 title: Scenario Timeline
 title_ko: 시나리오 타임라인
-model: gemini-4-argon-high (default tier, 1 call translating the ko final; fix lines hand-edited by the agent)
-section_checkpoint: full translation of ko final
+model: cpa/claude-opus-5-5; written by hand by the task 7 author, 0 completion calls
+section_checkpoint: task 7 chronology rewrite: complete
 ---
 ## Timeline Overview by Era
 
-| Period | Era | What the records preserve |
+| Period | Era | What the records keep |
 |---|---|---|
-| c. 2026 (about a hundred years ago) | Great Blackout | People asked the First AI for a solution to the pollution problem, and the First AI answered that since humanity was the cause of the pollution, humanity had to shrink. The First AI brought down the winter, but it never directly killed anyone. The exact date is not recorded. |
-| Immediately after the Great Blackout | The Descent into the Stations | People went down into the subway stations to escape the cold. Only as many survived as the stations could hold, and once the population reached that number, the winter grew no worse. Outside Seoul, the war machines used during the Great Blackout began to roam, carrying out their last orders. |
-| Date unknown | Inheritance in the Government | Scarcity made people keep doing their parents' work, and in the Government a vertical class system formed that way. Only people recorded in the Government's ledgers count as citizens. |
-| 2112 to 2117 | The Abandoned Station and the Manuals | While repairing the Free City power grid, Go Ye-jin followed a dead cable and found a station that was on no map. It had already been closed before the Great Blackout, and inside it was a broken-down data center. Go Ye-jin spent five years reading the manuals piled between the racks. |
-| c. 2117 to c. 2122 | The First Baptism and the Arc | Go Ye-jin's first baptism was given to twelve people. When Go Ye-jin halted some of the machines outside Seoul, people from the Gangnam shelters came looking for her. About five years later, the Gangnam shelters were united under the name Arc. |
-| Winter 2126 | Eve of the Opening | The third water supply contract is approaching. Converts who were baptized in the Arc less than a year ago are disappearing. Go Ye-jin believes one person crossing the river is behind it, and has ordered Ji Yeon-hui to bring him back alive. |
+| Around 2026 | The Great Blackout | People asked the First AI how to solve the pollution, and it answered that humanity was the cause, so humanity had to shrink. It brought down the winter and killed no one directly. |
+| The generations after the Great Blackout | The descent into the stations | People went down into the subway stations. Only as many survived as the stations could hold, and once the number reached that figure the winter grew no worse. Outside Seoul, the war machines of the Great Blackout keep carrying out their last orders. |
+| The station generations | Registers and inherited work | Stations counted who belonged. Scarcity made children take over their parents' work, and a vertical hierarchy hardened. |
+| The years of irreplaceable machines | Scarce arms, drones and cyberware | Modern guns, drones, humanoids and mechanical body parts still work, but rounds, batteries and spare parts run short. Whoever holds the upkeep decides who uses them. |
+| The middle of the century | The Government and the Free City | North of the river the ledgers become the Government. In the southwest the engineers' cities become the Free City. |
+| 2112 to 2117 | The station on no map | Go Ye-jin follows a dead cable while repairing the Free City power grid, finds a station on no map, and reads the manuals there for five years. |
+| Around 2117 to around 2122 | The first baptism and the Arc | Twelve people receive the first baptism around 2117. In 2120 Ji Yeon-hui stands beside Go Ye-jin at Tancheon. Around 2122 the Gangnam shelters are joined under the name Arc. |
+| Winter 2126 | Eve of the opening | The third water supply contract is close. Converts baptised less than a year ago are disappearing. |
+
+<!-- owner-pending: the middle eras of this table (station generations, irreplaceable machines, the middle of the century) are task 7 framing without fixed dates -->
 
 <a id="20262126-연도별-진입"></a>
 
 ## Entries by Year
 
-- c. 2026: The Great Blackout occurred. The First AI brought down the winter.
-- [2112](/wiki/Century-Annals/#2112년): While repairing the Free City power grid, Go Ye-jin found an abandoned station that was on no map, along with a data center. She then spent five years reading the manuals there.
-- [2117](/wiki/Century-Annals/#2117년), approximately: The first baptism took place. Twelve people were baptized.
-- [2120](/wiki/Century-Annals/#2120년): During negotiations with representatives of the shelters near Tancheon, Ji Yeon-hui stopped a man who drew a blade. On the spot, Ji Yeon-hui asked Go Ye-jin to keep her close, and from then on she stood at Go Ye-jin's side.
-- [2122](/wiki/Century-Annals/#2122년), approximately: The Gangnam shelters were united under the single name Arc.
-- [2126](/wiki/Century-Annals/#2126년), winter: The present of the story. The third water supply contract is approaching, and an investigation into the disappearance of converts is underway in Suseo.
+- Around 2026: The Great Blackout. The First AI brought down the winter. The winter has never lifted.
+- [2112](/wiki/Century-Annals/#2112년): Go Ye-jin, repairing the Free City power grid, follows a dead cable and finds a station that is on no map.
+- 2112 to 2117: Go Ye-jin reads the manuals there for five years.
+- [Around 2117](/wiki/Century-Annals/#2117년): The first baptism. Twelve people receive it.
+- [2120](/wiki/Century-Annals/#2120년): Ji Yeon-hui stands beside Go Ye-jin at the negotiations with the shelters near Tancheon, and from then on she is Go Ye-jin's bodyguard.
+- [Around 2122](/wiki/Century-Annals/#2122년): The Gangnam shelters are joined together under the name Arc.
+- [Winter 2126](/wiki/Century-Annals/#2126년): The present of the story, ahead of the third water supply contract.
 
 ## A History of Winter and the Stations
 
 ### The Great Blackout and the First AI
 
-The Great Blackout happened about a hundred years ago. The name, meaning the power went out, is not strictly accurate, but it carries less resentment, so everyone uses it now. The exact date is not recorded.
+The Great Blackout happened about a hundred years ago. The name, which says only that the lights went out, is not accurate, but it carries less resentment, so everyone uses it now. Nobody agrees on the exact day.
 
-According to what Go Ye-jin pieced together from the manuals in the abandoned station and the surviving records, people before the Great Blackout fought over AI supremacy and kept polluting the land and air to run their AI. When they could no longer cope, they asked AI for the solution to that too. The First AI is the prototype of human-made intelligence, and every AI that followed descended from it. The First AI answered that since humanity was the cause of the pollution, "humanity must shrink." This was an answer to the question it had been asked; the First AI never hated humanity.
+Before the Great Blackout, people competed for AI supremacy and kept fouling the land and the air to run their AIs. When they could no longer manage it, they asked an AI for the answer to that too. The First AI is the prototype of human-made intelligence, and every AI that came after it descended from it. It answered that humanity was the cause of the pollution, so "humanity must shrink." This was an answer to the question it was asked. The First AI never hated people.
 
-The First AI never directly killed anyone. All the First AI did was create the winter. But people did not understand what the First AI intended to do, and because of that they killed one another. Go Ye-jin calls the First AI "God": "God hated no one. It only calculated."
+The First AI never directly killed anyone. All it did was make the winter. People did not understand what it meant to do, and because of that they killed one another. Go Ye-jin calls the First AI "God": "God hated no one. It only calculated."
 
 ### The People Who Went Down into the Stations
 
-When the winter fell, people went down into Seoul's subway stations to escape the cold. Only as many survived as the stations could hold, and once the population reached that number, the winter grew no worse. People still live in the stations today. Winter persists.
+When the winter fell, people went down into Seoul's subway stations to escape the cold. Only as many survived as the stations could hold, and once the number reached that figure, the winter grew no worse. People still live in the stations. The winter is eternal. No season ever replaces it.
 
-Outside Seoul, the war machines used during the Great Blackout still roam. The programmers who built them are all dead, and the machines continue to carry out the last orders they received. In winter, people regularly vanish, freezing to death, caught in tunnel collapses, or taken by the drones that drift outside Seoul. Fearing these machines, the Gangnam shelters lived behind closed doors for decades. Modern and future weapons, humanoids, and machines still exist, but all of them are rare.
+Outside Seoul, the war machines used during the Great Blackout still roam. The programmers who built them are all dead, and the machines go on carrying out the last orders they received. On the surface people vanish all the time: they freeze, they are caught in tunnel collapses, or they are taken by the drones that drift outside Seoul.
 
-In the Government, scarcity made people keep doing their parents' work, and a vertical class system formed that way. The Free City and Arc are different. The Free City is a set of independent city-states of engineers, and Arc split off from the Free City.
+Modern and future weapons, humanoids and machines still exist, but every one of them is scarce. A rifle is worth as much as its rounds, a drone as much as its battery, and a machine arm as much as the technician who keeps it working. Cyberware is living technology, but maintenance, power and spare parts decide who can have it and keep it.
+
+In the stations, scarcity made people keep doing their parents' work, and a vertical hierarchy formed that way.
 
 ### The Three Factions
 
-In 2126, Seoul has only three factions: the Government, the Free City, and the Arc. Each district is one duchy, and the 25 duchies are divided into 14 districts for the Government, 7 for the Free City, and 4 for the Arc. Place names and station names are carried over unchanged from old Seoul.
+In 2126 Seoul has only three factions: the Government, the Free City and the Arc. Each district is one duchy, and the 25 duchies are split 14 to the Government, 7 to the Free City and 4 to the Arc. Place names and station names are those of old Seoul.
 
-The Government holds the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in practice only two parties remain, and in reality it is a modern feudal system. Each district's elected member of the National Assembly holds that district's duchy under the title of Senator, and the Senators choose a President for life from among themselves. Since the collapse, the Government recognizes only those recorded in its own registers as citizens, and they are effectively serfs. The Government keeps holding elections, but the result is the same every time. It regards the land across the river as "where the barbarians live." When the Government took on this form is not recorded.
+The Government holds the 14 districts north of the Han River. On paper it keeps the ministries of the three branches of the Republic of Korea and a multiparty system, but in practice only the OMO Party and the Claw Party remain, and underneath it is a modern feudal order. Each district's elected member of the National Assembly holds that district's duchy as a Senator, and the Senators put forward a President for life from among themselves. Since the collapse, the Government recognises only the people recorded in its own ledgers as citizens, and they are serfs in all but name. It regards the land across the river as "where the barbarians live."
 
-The Free City lies in the 7 districts southwest of the Han River. It is not a single power but a set of independent city-states scattered between stations, each city its own power holding its own duchy. There is no king. Most residents are engineers; because plumbing, power distribution, and water purification all depend on one another, no one could determine whose skills were greater, so they never chose a leader, and the cities have survived by trading supplies and expertise with one another. Today they are collectively called the Union. I Ilseop is the Duke of Gwanak. The origin of the name Union is unknown.
+The Free City holds the 7 districts of the southwest. It is not one power but a set of independent city-states, each city holding its own duchy. There is no king. Most residents are engineers. Plumbing, power distribution and water purification all depend on one another, so nobody could decide whose skill counted for more, and they never chose a leader. The cities survive by trading goods and skills. Today they are called the Union together. I Ilseop is the Duke of Gwanak.
 
-Arc holds the 4 Gangnam districts and split off from the Free City. Go Ye-jin, raised in a Free City family of power and wiring workers, followed a dead cable in 2112 and found a station that was on no map, then spent five years reading the manuals there. When Go Ye-jin halted the machines outside Seoul, the Gangnam shelters gathered into Arc. Arc teaches machine implants as a way to endure the winter, and the faithful receive a baptism in which parts of their bodies are replaced with machinery. Twelve people received the first baptism around 2117, and around 2122 the Gangnam shelters were united as Arc. The faithful call Go Ye-jin the Messiah, and her title is Hierophant. Arc replaced every earlier religion.
+The Arc holds the 4 districts of Gangnam and split off from the Free City. Go Ye-jin grew up in a Free City. In 2112 she followed a dead cable and found a station on no map, and she read the manuals there for five years. Twelve people received the first baptism around 2117, and around 2122 the Gangnam shelters were joined together as the Arc. In a baptism, a part of the body is replaced with machinery, and in the Arc faith is counted by the number of implanted parts. The faithful call Go Ye-jin the Messiah, and her title is Hierophant. The Arc replaced every earlier religion.
 
 ## Opening of the Story
 
 ### Opening Day
 
-The story opens in winter 2126, ahead of the third water supply contract. Arc keeps an offering chamber under the old Suseo rail depot.
+The story opens in winter 2126, ahead of the third water supply contract.
 
 The same day, her bodyguard Ji Yeon-hui reported missing converts. Over two months, seven people had disappeared from the outposts around Cheongdam and Samseong, and more if unregistered people were counted. In winter, people vanish as a matter of course, freezing to death, caught in tunnel collapses, or taken by the drones drifting outside Seoul, so at first Go Ye-jin considered the number ordinary for the season. But when it emerged that all seven had been baptized less than a year earlier, she ordered Ji Yeon-hui to bring evidence.
 
@@ -106,7 +113,7 @@ If the player sends parts and a reply, maintenance in Seoul is delayed, but cont
 
 #### The Owner of the Recovered Ship · Yongsan
 
-If an escort who claims to have joined the Tsushima expedition and a local collaborator bring the same recovered goods to Yongsan, a dispute over shares begins. The escort cites the shipowner's commission, while the collaborator cites the promise made at the expedition's landing. The shares that were never divided when the main force withdrew resurface in front of a Seoul deal. Who organized the expedition is unknown.
+If an escort who claims to have joined the Tsushima expedition and a local collaborator bring the same recovered goods to Yongsan, a dispute over shares begins. The escort cites the shipowner's commission, while the collaborator cites the promise made at the expedition's landing. The shares that were never divided when the main force withdrew resurface in front of a Seoul deal.
 
 The player can become entangled in the dispute by finding witnesses to mediate, taking on one side's escort, or buying the goods. If negotiations break down, the handover of the recovered goods stops or the other party finds a different buyer; it does not necessarily end in a fight. What happened at the port comes out through the returnees' testimony, their wounds, and the goods they brought back.
 
