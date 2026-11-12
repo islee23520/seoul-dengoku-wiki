@@ -87,6 +87,38 @@
       "lang": "both",
       "allowedContext": [],
       "note": "[정본 바이블 4절] 옛 국가 id S01~S16을 정치체로 쓰는 것. 대체: 세력 id(government, free-city, arc)와 구 이름. 근거: 십육국 폐지. 데이터 컬럼 값과 이관 기록은 이 스캔 대상이 아니다."
+    },
+    {
+      "id": "brand-cyber-en",
+      "pattern": "\\b(?:Arasaka|Militech|Kang Tao|Biotechnica|Sandevistan|Kiroshi|Mantis Blades?|Gorilla Arms?|Netrunners?|Ripperdocs?)\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 실제 상표·다른 게임 고유명사(사이버펑크 계열). 대체: 세계 안에서 지은 일반 명칭. 근거: 소유자 결정(2026-11-12), 병종 원칙 2.5절."
+    },
+    {
+      "id": "brand-cyber-ko",
+      "pattern": "아라사카|밀리테크|캉 ?타오|바이오테크니카|산데비스탄|키로시|맨티스 ?블레이드|고릴라 ?암즈?|넷러너|리퍼닥",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] same. 대체: 세계 안에서 지은 일반 명칭. 근거: 소유자 결정(2026-11-12), 병종 원칙 2.5절."
+    },
+    {
+      "id": "game-units-en",
+      "pattern": "\\b(?:Ironbreakers?|Skavenslaves?|Hammerers|Thunderers|Hellcannons?|Steam Tanks?|Grave Guard)\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 다른 게임의 병종 이름. 대체: 세계 안에서 지은 일반 명칭. 근거: 소유자 결정(2026-11-12), 병종 원칙 2.5절."
+    },
+    {
+      "id": "game-units-ko",
+      "pattern": "아이언브레이커|스카븐 ?슬레이브|해머러|썬더러|선더러|헬캐논|스팀 ?탱크|그레이브 ?가드",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] same. 대체: 세계 안에서 지은 일반 명칭. 근거: 소유자 결정(2026-11-12), 병종 원칙 2.5절."
     }
   ],
   "required": [
@@ -122,6 +154,13 @@
         "World-Unbinding"
       ],
       "note": "[정본 바이블 4절] English name of the event is the Great Blackout."
+    }
+  ],
+  "allowedTerms": [
+    {
+      "id": "eternal-winter",
+      "pattern": "영원한 겨울|eternal winter|permanent winter",
+      "note": "허용 기록(스캔 대상 아님). 소유자 결정 D1(2026-11-12) \"영원한 겨울 확정 (추천)\"으로 영원한 겨울이 정본이 됐다. 이 표현을 금지 항목에 넣지 않는다."
     }
   ]
 }
