@@ -1,635 +1,181 @@
 ---
-model: cpa/claude-opus-5-5
+title: World Index: the Three Polities and the 25 Duchies
+title_ko: 세계 색인: 세 정체와 25공작령
+model: claude-opus-5-5; written by the agent from the v3 bible (task 10), English mirror of the Korean draft
+section_checkpoint: v3 task 10 complete
 ---
-<a id="World-Expansion-Index-heading-0001"></a>
+<a id="index-read"></a>
 
-This index gathers the wiki's articles and entry points by category. To read the world's structure in order, start with the [World Narrative Atlas](/wiki/World-Narrative-Atlas/); look up word meanings in the [Glossary](/wiki/Glossary/).
+This index gives Seoul's 25 districts one line each: which polity each district belongs to, which station its head works from, what the person who rules it is called, what the district holds, and which documents to read next. One district is one duchy. Place names, stations and geography stay as they are; only the rule over them is divided district by district.
 
-- Entry points: [World Narrative Atlas](/wiki/World-Narrative-Atlas/) · [The Three Factions of Seoul](/wiki/Sixteen-States/) · [Factions](/wiki/factions/) · [People](/wiki/people/) · [Territory Map](/wiki/map/) · [Update History](/wiki/updates/)
-- 59 articles · 26 ecology group dossiers (G01 to G26) · 22 operating organizations · 48 synthetic personas · 5 theaters outside Seoul
+## How to Read
 
-## Articles by Category
+- **Seat station** is the station where the district's head works. For the Government it is the station in the district where the most lines meet; for the Free Cities, the seat station each city has chosen; for the Arc, the station where the Head of the Near House lives.
+- **Stations** is the number of stations on the map. A few entries appear on the map but are not joined to any line, and nobody lives there.
+- **Ruling title** is the title of the person who holds the district. Member of the National Assembly and Duke of Gwanak are settled titles. The rest are the titles in use, but they are not yet settled.
+- Who sits in each seat is not recorded in this index. The only settled holder is I Ilseop, Duke of Gwanak. The people in the other seats are in [People, Factions and Trades](/wiki/Characters-Factions-and-Professions/).
 
-- **Overview**: [Regional and Physical AI Arcs](/wiki/Regional-Physical-AI-Arcs/) · [The Great Blackout](/wiki/World-Unbinding/) · [World Narrative Atlas](/wiki/World-Narrative-Atlas/) · [Glossary](/wiki/Glossary/)
-- **Timeline**: [Century Annals](/wiki/Century-Annals/) · [Scenario Timeline](/wiki/Scenario-Timeline/) · [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/)
-- **Character**: [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/) · [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/)
-- **Faction**: [Families and the Three Factions](/wiki/Chaebol-Houses-and-Century-Factions/) · [The Three Factions of Seoul](/wiki/Sixteen-States/) · [World Expansion Relation Ledger](/wiki/World-Relation-Ledger/) · [Operating Organizations](/wiki/Operating-Houses/) · [Diaspora Corridors](/wiki/Diaspora-Corridors/)
-- **Offices**: [Offices and Ranks](/wiki/Offices-and-Ranks/)
-- **Geography**: [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/) · [Outside](/wiki/External-Theaters/) · [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/) · [World Map](/wiki/World-and-Subway-Layers/) · [The Structure of the World Map](/wiki/World-Map-Construction/) · [Entering the Station Interior](/wiki/Station-Interior-Construction/)
-- **Culture**: [Values and Policy Scales](/wiki/Values-and-Policy-Scales/) · [Food Culture](/wiki/Food-Culture/) · [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/) · [The Stories](/wiki/Oral-Stories/)
-- **Items**: [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
-- **Structures**: [The Structures Compendium](/wiki/Structures/)
-- **Technology**: [Lost Technology](/wiki/Lost-Technology-Lineage/)
-- **Disease**: [Ailments and Symptoms](/wiki/Ailments/)
-- **People and Machines**: [People and Machines](/wiki/People-and-Machines/) · [Synthetic Social Personas](/wiki/Synthetic-Actors/)
-- **Ecology Compendium**: [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/); group dossiers [G01](/wiki/Hostile-Group-G01/) · [G02](/wiki/Hostile-Group-G02/) · [G03](/wiki/Hostile-Group-G03/) · [G04](/wiki/Hostile-Group-G04/) · [G05](/wiki/Hostile-Group-G05/) · [G06](/wiki/Hostile-Group-G06/) · [G07](/wiki/Hostile-Group-G07/) · [G08](/wiki/Hostile-Group-G08/) · [G09](/wiki/Hostile-Group-G09/) · [G10](/wiki/Hostile-Group-G10/) · [G11](/wiki/Hostile-Group-G11/) · [G12](/wiki/Hostile-Group-G12/) · [G13](/wiki/Hostile-Group-G13/) · [G14](/wiki/Hostile-Group-G14/) · [G15](/wiki/Hostile-Group-G15/) · [G16](/wiki/Hostile-Group-G16/) · [G17](/wiki/Hostile-Group-G17/) · [G18](/wiki/Hostile-Group-G18/) · [G19](/wiki/Hostile-Group-G19/) · [G20](/wiki/Hostile-Group-G20/) · [G21](/wiki/Hostile-Group-G21/) · [G22](/wiki/Hostile-Group-G22/) · [G23](/wiki/Hostile-Group-G23/) · [G24](/wiki/Hostile-Group-G24/) · [G25](/wiki/Hostile-Group-G25/) · [G26](/wiki/Hostile-Group-G26/)
+<a id="index-overview"></a>
 
-<a id="World-Expansion-Index-heading-0003"></a>
-<a id="무소속"></a>
+## The Three Polities at a Glance
 
-## Additional People
+| Polity | Districts | Stations on the map | People (2126) | Who holds a district | Seat of the whole polity | At the top |
+|---|---|---|---|---|---|---|
+| Government | The 14 districts north of the Han | 157 | About 160,000 | Member of the National Assembly | The National Assembly (one chamber) | The life president |
+| The Free Cities | The 7 southwestern districts | 77 | About 75,000 | Different in each city; in Gwanak, the Duke | None; a contract meeting called for the occasion, and its Host | None |
+| Arc | The 4 Gangnam districts | 78 | About 65,000 | Head of the Near House | The Seat of the Four Near Houses | The Hierophant |
+| Seoul | 25 districts | 312 | About 300,000 | | | |
 
-The table below links character IDs to people pages. Every character can be found on the [People](/wiki/people/) page.
+An overview of each polity is in [The Three Polities of Seoul](/wiki/Sixteen-States/), and the ladder of titles in [Titles and Offices](/wiki/Offices-and-Ranks/).
 
-| Character ID | Person |
+<a id="index-government"></a>
+
+## The 14 Government Districts
+
+The Member of the National Assembly elected in each district holds that district's duchy. One seat per district. The Members choose the life president from among themselves. The President holds no district and works at Gwanghwamun, where the Government Complex Seoul stands. In 2126 the seats are OMO Party 6, Claw Party 8.
+
+| District | Seat station | Stations | Party | Ruling title | What the district holds |
+|---|---|---|---|---|---|
+| Jongno-gu | Jongno 3-ga | 13 | Claw | Member of the National Assembly | Government Complex Seoul (the ministries and the Assembly chamber), Gwanghwamun station. The head of the Government |
+| Jung-gu | Seoul Station | 17 | OMO | Member of the National Assembly | Seoul Station (the largest station), the Bank of Korea, City Hall, the markets of Dongdaemun History & Culture Park and Hoehyeon |
+| Yongsan-gu | Samgakji | 12 | OMO | Member of the National Assembly | The Ministry of National Defense and the Capital Defense Command (Samgakji), the north ends of the Yongsan-Noryangjin and Ichon-Dongjak bridges |
+| Mapo-gu | Gongdeok | 13 | OMO | Member of the National Assembly | The Mapo-Yeouinaru under-river tunnel, the north ends of the Hapjeong-Dangsan and Digital Media City-Magongnaru bridges, the Gongdeok market |
+| Seongdong-gu | Wangsimni | 11 | OMO | Member of the National Assembly | The Ttukdo intake, the Seoul Forest-Apgujeong Rodeo under-river tunnel, the north end of the Oksu-Apgujeong bridge |
+| Gwangjin-gu | Konkuk Univ. | 9 | OMO | Member of the National Assembly | The Guui intake, the north end of the Jamsil weir, the Gwangnaru-Cheonho under-river tunnel, the north ends of the Gangbyeon-Jamsillaru and Jayang-Cheongdam bridges |
+| Seodaemun-gu | Chungjeongno | 8 | OMO | Member of the National Assembly | The passage between Mapo and Jongno, Chungjeongno and Sinchon |
+| Dongdaemun-gu | Cheongnyangni | 9 | Claw | Member of the National Assembly | Cheongnyangni (where many lines meet), the fuel market |
+| Jungnang-gu | Sangbong | 10 | Claw | Member of the National Assembly | Sangbong and Mangu, the Mangu burial ground |
+| Seongbuk-gu | Bomun | 13 | Claw | Member of the National Assembly | The rim watchposts toward Bukhansan, schools on old university grounds |
+| Eunpyeong-gu | Yeonsinnae | 11 | Claw | Member of the National Assembly | Yeonsinnae (a station on a deep line), Bukhansan firewood, the rim toward Bukhansan |
+| Gangbuk-gu | April 19th National Cemetery | 11 | Claw | Member of the National Assembly | The April 19th National Cemetery grounds, the rim toward Bukhansan |
+| Dobong-gu | Chang-dong | 6 | Claw | Member of the National Assembly | The Chang-dong depot, Dobongsan firewood and rim |
+| Nowon-gu | Nowon | 14 | Claw | Member of the National Assembly | The Hwarangdae Korea Military Academy, the rim toward Suraksan and Buramsan, the district with the widest light-fields |
+
+- The four districts on the Han (Mapo, Yongsan, Seongdong, Gwangjin) are all OMO Party. They hold the bridges, tunnels and intakes, so they are hurt first if a contract breaks. Jung-gu and Seodaemun-gu, though not on the river, live off goods from across the river through their markets, so they are OMO Party too. The eight mountain and inland districts are Claw Party.
+- The annexes of the third water supply contract hang on the seals of the four districts on the Han.
+- The districts of the northern foothills (Seongbuk, Eunpyeong, Gangbuk, Dobong, Nowon) face the rim outside Seoul and hold the mountains' firewood.
+
+How the Government rules is in [Government Society](/wiki/Government-Society/).
+
+<a id="index-free-cities"></a>
+
+## The 7 Free City Districts
+
+The Free Cities are not one power. Each city is its own power and holds its own duchy. No single ruler stands over the Free Cities, and they have no collective name. There was no way to judge whose skill was higher, so each city found something in its own work that could be measured, and chose its head by that.
+
+| City (district) | Head's title | How the head is chosen | Seat station | Stations | Sections | People (2126) | Livelihood |
+|---|---|---|---|---|---|---|---|
+| Gangseo | Wind Keeper | Elected by the wind-field bench owners. For life, but steps down if the wind fields fail to deliver the contracted watts | Gimpo Int'l Airport | 18 | 4 | About 17,000 | Wind-machine electricity, wide light-fields |
+| Yangcheon | Depot Master | Handed down within one depot family | Sinjeongnegeori | 7 | 2 | About 4,200 | Rebuilding motors and wheels at the Sinjeong depot, track carts |
+| Yeongdeungpo | Market Master | The market families take turns three years at a time in a fixed order | Yeongdeungpo | 18 | 4 | About 20,600 | The great market, water from the Yangpyeong-dong intake, the contract meeting seat |
+| Guro | Works Master | The bench owner with the most sureties kept | Guro | 9 | 2 | About 9,600 | Parts and pumps from the old factory sites and the Line 1 depot |
+| Geumcheon | Edge Warden | Chosen by the border crews from among those who crossed the rim and came back | Gasan Digital Complex | 3 | 1 | About 3,200 | Power cores brought from outside, well-drilling machines |
+| Dongjak | Ferry Keeper | Chosen by the crossing chiefs from among themselves | Noryangjin | 14 | 4 | About 14,000 | Crossing tolls, fish from under the ice |
+| Gwanak | Duke | Handed down in I Ilseop's family | Sillim | 8 | 2 | About 6,200 | Firewood and wood fibre from Gwanaksan, drilling the mountain rock |
+
+- The title Duke of Gwanak, and that I Ilseop is the present Duke of Gwanak, are settled. The titles of the other six cities come from the work each lives by, and are not yet settled.
+- When the Government across the river called its districts duchies and handed them to Members of the National Assembly, Gwanak took the same word and declared it would sit in the same seat as the Government. So when Gwanak contracts with the Government, it insists on stamping "duchy to duchy".
+- Dongjak is where the three polities meet. Toward the river it faces the Government, toward the land the Arc. Dongjak station joins the Government's Ichon by Line 4 and the Arc's Gubanpo by Line 9.
+- Gangseo, Guro, Geumcheon and Gwanak, which have stations at Seoul's edge, face the rim of the machines outside.
+
+How each city is run is in [Free City Society](/wiki/Free-City-Society/), and Guro's line junction at Sindorim in [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/).
+
+<a id="index-arc"></a>
+
+## The 4 Arc Districts
+
+At the head of the Arc is the Hierophant, Go Ye-jin. Believers call her the Messiah. Each of the four districts is held by one of the families that stand beside the Hierophant, the four Near Houses. The gathering of the four Heads of the Near Houses before the Hierophant is called the Seat of the Four Near Houses.
+
+| District | Near House | Seat station | Stations | People (2126) | What the district holds |
+|---|---|---|---|---|---|
+| Seocho-gu | The Seocho Near House, "the house of the border" | Express Bus Terminal | 18 | About 15,000 | The Arc-side stations of the three land border links with the Free Cities (Bangbae, Naebang, Gubanpo), the exchange post at Express Bus Terminal, watching the rim from Cheonggyesan |
+| Gangnam-gu | The Gangnam Near House, "the house of the deep levels" | Suseo | 23 | About 18,000 | Suseo's deep line level and the parts store of the old depot, large stations such as Seolleung, Samseong and Dogok, the south mouth of the Seoul Forest-Apgujeong Rodeo under-river tunnel |
+| Songpa-gu | The Songpa Near House, "the house of the current" | Jamsil | 23 | About 21,000 | The south end of the Jamsil weir water wheels, the exchange posts of Garak Market and Jamsil, the south end of the Gangbyeon-Jamsillaru bridge |
+| Gangdong-gu | The Gangdong Near House, "the house at the gate" | Cheonho | 14 | About 11,000 | The Amsa intake and the river water under the ice, the south mouth of the Gwangnaru-Cheonho under-river tunnel, the Godeok depot, watching the rim at the eastern edge |
+
+- The Hierophant's house is at Jamsil. The Songpa Near House controls the electricity, so it is the strongest of the four, and it shares a station with the Hierophant's house.
+- The Seocho Near House came from the family that was closest to the Free Cities. It is the house in which Free City workshop talk survives most strongly.
+- The Gangdong Near House joined last, when the Gangnam shelters were bound into the Arc in 2122, and brought the Amsa intake with it.
+- The Arc calls a dong by its old name, "shelter". Each shelter from before the Arc was bound together is a shelter today.
+- Who heads each Near House is not yet settled.
+
+How the Arc is ruled, and baptism, are in [Arc Society](/wiki/Arc-Society/).
+
+<a id="index-borders"></a>
+
+## The Thirteen Border Links
+
+There are thirteen line links where the polity changes. By district, the borders are kept on the Government side by the four districts Mapo, Yongsan, Seongdong and Gwangjin; on the Free City side by the three districts Gangseo, Yeongdeungpo and Dongjak; and on the Arc side by the four districts Seocho, Gangnam, Songpa and Gangdong.
+
+| Border | Link (line) | Way across | District at the north or west end | District at the south or east end |
+|---|---|---|---|---|
+| Government ↔ Free City | Yongsan-Noryangjin (Line 1) | Bridge | Yongsan-gu | Dongjak-gu |
+| Government ↔ Free City | Hapjeong-Dangsan (Line 2) | Bridge | Mapo-gu | Yeongdeungpo-gu |
+| Government ↔ Free City | Ichon-Dongjak (Line 4) | Bridge | Yongsan-gu | Dongjak-gu |
+| Government ↔ Free City | Digital Media City-Magongnaru (Airport Railroad) | Bridge | Mapo-gu | Gangseo-gu |
+| Government ↔ Free City | Mapo-Yeouinaru (Line 5) | Under-river tunnel | Mapo-gu | Yeongdeungpo-gu |
+| Government ↔ Arc | Gangbyeon-Jamsillaru (Line 2) | Bridge | Gwangjin-gu | Songpa-gu |
+| Government ↔ Arc | Oksu-Apgujeong (Line 3) | Bridge | Seongdong-gu | Gangnam-gu |
+| Government ↔ Arc | Jayang-Cheongdam (Line 7) | Bridge | Gwangjin-gu | Gangnam-gu |
+| Government ↔ Arc | Gwangnaru-Cheonho (Line 5) | Under-river tunnel | Gwangjin-gu | Gangdong-gu |
+| Government ↔ Arc | Seoul Forest-Apgujeong Rodeo (Suin-Bundang Line) | Under-river tunnel | Seongdong-gu | Gangnam-gu |
+| Free City ↔ Arc | Sadang-Bangbae (Line 2) | Land border | Dongjak-gu | Seocho-gu |
+| Free City ↔ Arc | Chongshin Univ. (Isu)-Naebang (Line 7) | Land border | Dongjak-gu | Seocho-gu |
+| Free City ↔ Arc | Dongjak-Gubanpo (Line 9) | Land border | Dongjak-gu | Seocho-gu |
+
+- Of the ten links between the Government and the south, seven are bridges exposed to wind and blizzard, and only three are warm, covered under-river tunnels. The Government keeps ledger checkpoints at the north mouths of the three tunnels.
+- There is no river between the Free Cities and the Arc. The Free City end of all three links (Sadang, Chongshin Univ. (Isu), Dongjak) lies in Dongjak-gu. Gwanak touches Seocho by land but has no line link.
+
+How people cross is in [Crossings and Smuggling](/wiki/Diaspora-Corridors/), and how the map is built in [How the World Map Is Built](/wiki/World-Map-Construction/).
+
+<a id="index-ladder"></a>
+
+## The Ladder of Titles at a Glance
+
+| Level | Government | The Free Cities | Arc |
+|---|---|---|---|
+| Station | Stationmaster | Station Foreman | Bench Keeper |
+| Dong | Dong Chief | Section Chief (sections instead of dongs) | Shelter Head |
+| District (duchy) | Member of the National Assembly | Different in each city (Duke of Gwanak, Ferry Keeper, Market Master, Works Master, Edge Warden, Depot Master, Wind Keeper) | Head of the Near House |
+| Whole polity | The National Assembly | None (the contract meeting and its Host) | The Seat of the Four Near Houses |
+| At the top | The life president | None | The Hierophant |
+
+Member of the National Assembly, the life-long seat of the President, Duke of Gwanak and Hierophant are settled. The other titles are the words in use, but they are not yet settled. More is in [Titles and Offices](/wiki/Offices-and-Ranks/).
+
+<a id="index-documents"></a>
+
+## Documents by Topic
+
+| Topic | Documents |
 |---|---|
-| K423 | [O Gyeongjae](/wiki/people/person-0088/) |
-| K424 | [I Minseok](/wiki/people/person-0424/) |
-| K425 | [Bak Doyun](/wiki/people/person-0425/) |
-| K426 | [Choe Sua](/wiki/people/person-0426/) |
-| K427 | [Jeong Yeeun](/wiki/people/person-0427/) |
-| K428 | [Gang Jiyu](/wiki/people/person-0428/) |
-| K429 | [Jo Yejun](/wiki/people/person-0429/) |
-| K430 | [Ellis Harris](/wiki/people/person-0430/) |
-| K431 | [Jang Juwon](/wiki/people/person-0431/) |
-| K432 | [Im Yuna](/wiki/people/person-0432/) |
-| K433 | [Han Minseo](/wiki/people/person-0433/) |
-| K434 | [O Yunseo](/wiki/people/person-0434/) |
-| K435 | [Seo Junseo](/wiki/people/person-0435/) |
-| K436 | [Sin Seungmin](/wiki/people/person-0436/) |
-| K437 | [Gwon Taeyun](/wiki/people/person-0437/) |
-| K438 | [Hwang Jia](/wiki/people/person-0438/) |
-| K439 | [An Haneul](/wiki/people/person-0439/) |
-| K440 | [Song Eunji](/wiki/people/person-0440/) |
-| K441 | [Ryu Donghyeon](/wiki/people/person-0441/) |
-| K442 | [Hong Sanghun](/wiki/people/person-0442/) |
-| K443 | [Go Yeongho](/wiki/people/person-0443/) |
-| K444 | [Mun Gaeun](/wiki/people/person-0444/) |
-| K445 | [Yang Seohyeon](/wiki/people/person-0445/) |
-| K446 | [Antoine Lefebvre](/wiki/people/person-0446/) |
-| K447 | [Bae Taemin](/wiki/people/person-0447/) |
-| K448 | [Baek Hyeonseok](/wiki/people/person-0448/) |
-| K449 | [Heo Jinu](/wiki/people/person-0449/) |
-| K450 | [Yu Hayeong](/wiki/people/person-0450/) |
-| K451 | [Nam Sieun](/wiki/people/person-0451/) |
-| K452 | [Sim Dahyeon](/wiki/people/person-0452/) |
-| K453 | [No Yunho](/wiki/people/person-0453/) |
-| K454 | [Ha Minjae](/wiki/people/person-0454/) |
-| K455 | [Gwak Seongho](/wiki/people/person-0455/) |
-| K456 | [Seong Suhyeon](/wiki/people/person-0456/) |
-| K457 | [Cha Yewon](/wiki/people/person-0457/) |
-| K458 | [Ju Dain](/wiki/people/person-0458/) |
-| K459 | [U Gyeongmin](/wiki/people/person-0459/) |
-| K460 | [Gu Hangyeol](/wiki/people/person-0460/) |
-| K461 | [Min Sihyeon](/wiki/people/person-0461/) |
-| K462 | [Agnieszka Zielińska](/wiki/people/person-0462/) |
-| K463 | [Kim Seoyeon](/wiki/people/person-0463/) |
-| K464 | [I Jimin](/wiki/people/person-0464/) |
-| K465 | [Bak Eunyun](/wiki/people/person-0465/) |
-| K466 | [Choe Jihun](/wiki/people/person-0466/) |
-| K467 | [Jeong Seojun](/wiki/people/person-0467/) |
-| K468 | [Gang Daryu](/wiki/people/person-0468/) |
-| K469 | [Jo Chaewon](/wiki/people/person-0469/) |
-| K470 | [Yun Soyul](/wiki/people/person-0470/) |
-| K471 | [Jang Dowon](/wiki/people/person-0471/) |
-| K472 | [Im Geonu](/wiki/people/person-0472/) |
-| K473 | [Han Hyeonu](/wiki/people/person-0473/) |
-| K474 | [O Baseo](/wiki/people/person-0474/) |
-| K475 | [Seo Daeun](/wiki/people/person-0475/) |
-| K476 | [Sin Subin](/wiki/people/person-0476/) |
-| K477 | [Gwon Geumyun](/wiki/people/person-0477/) |
-| K478 | [Benjamin Clark](/wiki/people/person-0478/) |
-| K479 | [An Seongmin](/wiki/people/person-0479/) |
-| K480 | [Song Solji](/wiki/people/person-0480/) |
-| K481 | [Ryu Soyeon](/wiki/people/person-0481/) |
-| K482 | [Hong Hyewon](/wiki/people/person-0482/) |
-| K483 | [Go Supho](/wiki/people/person-0483/) |
-| K484 | [Mun Cheolmin](/wiki/people/person-0484/) |
-| K485 | [Yang Gitae](/wiki/people/person-0485/) |
-| K486 | [Son Mayeon](/wiki/people/person-0486/) |
-| K487 | [Bae Jiwon](/wiki/people/person-0487/) |
-| K488 | [Baek Mirae](/wiki/people/person-0488/) |
-| K489 | [Heo Hau](/wiki/people/person-0489/) |
-| K490 | [Yu Sehun](/wiki/people/person-0490/) |
-| K491 | [Nam Jaewon](/wiki/people/person-0491/) |
-| K492 | [Sim Byeolhyeon](/wiki/people/person-0492/) |
-| K493 | [No Jua](/wiki/people/person-0493/) |
-| K494 | [David Fischer](/wiki/people/person-0494/) |
-| K495 | [Gwak Daho](/wiki/people/person-0495/) |
-| K496 | [Seong Daehyeon](/wiki/people/person-0496/) |
-| K497 | [Cha Jihwan](/wiki/people/person-0497/) |
-| K498 | [Ju Rain](/wiki/people/person-0498/) |
-| K499 | [U Hajin](/wiki/people/person-0499/) |
-| K500 | [Gu Sohui](/wiki/people/person-0500/) |
-| K501 | [Min Pahyeon](/wiki/people/person-0501/) |
-| K502 | [Jin Junhyeok](/wiki/people/person-0502/) |
-| K503 | [Kim Junho](/wiki/people/person-0503/) |
-| K504 | [I Neulmin](/wiki/people/person-0504/) |
-| K505 | [Bak Haeun](/wiki/people/person-0505/) |
-| K506 | [Choe Reuma](/wiki/people/person-0506/) |
-| K507 | [Jeong Bajun](/wiki/people/person-0507/) |
-| K508 | [Kang Hajun](/wiki/people/person-0508/) |
-| K509 | [Jo Saejun](/wiki/people/person-0509/) |
-| K510 | [Chiara Ricci](/wiki/people/person-0510/) |
-| K511 | [Jang Harin](/wiki/people/person-0511/) |
-| K512 | [Im Jana](/wiki/people/person-0512/) |
-| K513 | [Han Tau](/wiki/people/person-0513/) |
-| K514 | [O Jiho](/wiki/people/person-0514/) |
-| K515 | [Seo Seoseo](/wiki/people/person-0515/) |
-| K516 | [Sin Habin](/wiki/people/person-0516/) |
-| K517 | [Gwon Yerin](/wiki/people/person-0517/) |
-| K518 | [Hwang Gua](/wiki/people/person-0518/) |
-| K519 | [An Gangmin](/wiki/people/person-0519/) |
-| K520 | [Song Jaehyeon](/wiki/people/person-0520/) |
-| K521 | [Ryu Ramhyeon](/wiki/people/person-0521/) |
-| K522 | [Hong Nawon](/wiki/people/person-0522/) |
-| K523 | [Go Yujin](/wiki/people/person-0523/) |
-| K524 | [Mun Aeun](/wiki/people/person-0524/) |
-| K525 | [Yang Katae](/wiki/people/person-0525/) |
-| K526 | [Pavel Nemets](/wiki/people/person-0526/) |
-| K527 | [Bae Dong-min](/wiki/people/person-0527/) |
-| K528 | [Baek Buk-rae](/wiki/people/person-0528/) |
-| K529 | [Heo Eun-seo](/wiki/people/person-0529/) |
-| K530 | [Yu Bit-yeong](/wiki/people/person-0530/) |
-| K531 | [Nam San-won](/wiki/people/person-0531/) |
-| K532 | [Sim Tae-yang](/wiki/people/person-0532/) |
-| K533 | [No Ba-ho](/wiki/people/person-0533/) |
-| K534 | [Ha Ga-eun](/wiki/people/person-0534/) |
-| K535 | [Gwak Ji-hyeon](/wiki/people/person-0535/) |
-| K536 | [Seong Sa-hyeon](/wiki/people/person-0536/) |
-| K537 | [Cha Cha-hwan](/wiki/people/person-0537/) |
-| K538 | [Ju U-seok](/wiki/people/person-0538/) |
-| K539 | [U Eun-min](/wiki/people/person-0539/) |
-| K540 | [Gu Nam-hui](/wiki/people/person-0540/) |
-| K541 | [Min Yeon-u](/wiki/people/person-0541/) |
-| K542 | [Andrei Ivanov](/wiki/people/person-0542/) |
-| K543 | [Kim Reum-ho](/wiki/people/person-0543/) |
-| K544 | [I Ba-seok](/wiki/people/person-0544/) |
-| K545 | [Bak Dol-yun](/wiki/people/person-0545/) |
-| K546 | [Choe Sae-a](/wiki/people/person-0546/) |
-| K547 | [Jeong Da-eun](/wiki/people/person-0547/) |
-| K548 | [Gang Bayu](/wiki/people/person-0548/) |
-| K549 | [Jo Jajun](/wiki/people/person-0549/) |
-| K550 | [Yun Tau](/wiki/people/person-0550/) |
-| K551 | [Jang Geumwon](/wiki/people/person-0551/) |
-| K552 | [Im Seona](/wiki/people/person-0552/) |
-| K553 | [Han Haseo](/wiki/people/person-0553/) |
-| K554 | [O Solseo](/wiki/people/person-0554/) |
-| K555 | [Seo Guseo](/wiki/people/person-0555/) |
-| K556 | [Sin Gangmin](/wiki/people/person-0556/) |
-| K557 | [Gwon Supyun](/wiki/people/person-0557/) |
-| K558 | [Millicent Mensa](/wiki/people/person-0558/) |
-| K559 | [An Naneul](/wiki/people/person-0559/) |
-| K560 | [Song Maji](/wiki/people/person-0560/) |
-| K561 | [Ryu Ahyeon](/wiki/people/person-0561/) |
-| K562 | [Hong Kahun](/wiki/people/person-0562/) |
-| K563 | [Go Haho](/wiki/people/person-0563/) |
-| K564 | [Mun Dongeun](/wiki/people/person-0564/) |
-| K565 | [Yang Bukhyeon](/wiki/people/person-0565/) |
-| K566 | [Son Byeolyeon](/wiki/people/person-0566/) |
-| K567 | [Bae Bitmin](/wiki/people/person-0567/) |
-| K568 | [Baek Sanseok](/wiki/people/person-0568/) |
-| K569 | [Heo Dau](/wiki/people/person-0569/) |
-| K570 | [Yu Bayeong](/wiki/people/person-0570/) |
-| K571 | [Nam Gaeun](/wiki/people/person-0571/) |
-| K572 | [Sim Rahyeon](/wiki/people/person-0572/) |
-| K573 | [No Saho](/wiki/people/person-0573/) |
-| K574 | [Colin Murphy](/wiki/people/person-0574/) |
-| K575 | [Gwak Paho](/wiki/people/person-0575/) |
-| K576 | [Seong Eunhyeon](/wiki/people/person-0576/) |
-| K577 | [Cha Namwon](/wiki/people/person-0577/) |
-| K578 | [Ju Neurin](/wiki/people/person-0578/) |
-| K579 | [U Dalmin](/wiki/people/person-0579/) |
-| K580 | [Gu Reumgyeol](/wiki/people/person-0580/) |
-| K581 | [Min Bahyeon](/wiki/people/person-0581/) |
-| K582 | [Jin Dollin](/wiki/people/person-0582/) |
-| K583 | [Kim Saeyeon](/wiki/people/person-0583/) |
-| K584 | [I Damin](/wiki/people/person-0584/) |
-| K585 | [Bak Bayun](/wiki/people/person-0585/) |
-| K586 | [Choe Jahun](/wiki/people/person-0586/) |
-| K587 | [Jeong Tajun](/wiki/people/person-0587/) |
-| K588 | [Gang Geumyu](/wiki/people/person-0588/) |
-| K589 | [Jo Seowon](/wiki/people/person-0589/) |
-| K590 | [Juliana Reed](/wiki/people/person-0590/) |
-| K591 | [Jang Solwon](/wiki/people/person-0591/) |
-| K592 | [Im Guu](/wiki/people/person-0592/) |
-| K593 | [Han Gangu](/wiki/people/person-0593/) |
-| K594 | [O Supseo](/wiki/people/person-0594/) |
-| K595 | [Seo Rameun](/wiki/people/person-0595/) |
-| K596 | [Sin Nabin](/wiki/people/person-0596/) |
-| K597 | [Gwon Mayun](/wiki/people/person-0597/) |
-| K598 | [Hwang Ajin](/wiki/people/person-0598/) |
-| K599 | [An Kamin](/wiki/people/person-0599/) |
-| K600 | [Song Haji](/wiki/people/person-0600/) |
-| K601 | [Ryu Dongyeon](/wiki/people/person-0601/) |
-| K602 | [Hong Bugwon](/wiki/people/person-0602/) |
-| K603 | [Go Byeolho](/wiki/people/person-0603/) |
-| K604 | [Mun Bitmin](/wiki/people/person-0604/) |
-| K605 | [Yang Santae](/wiki/people/person-0605/) |
-| K606 | [Simon Kaminski](/wiki/people/person-0606/) |
-| K607 | [Bae Bawon](/wiki/people/person-0607/) |
-| K608 | [Baek Garae](/wiki/people/person-0608/) |
-| K609 | [Heo Rau](/wiki/people/person-0609/) |
-| K610 | [Yu Sahun](/wiki/people/person-0610/) |
-| K611 | [Nam Chawon](/wiki/people/person-0611/) |
-| K612 | [Sim Pahyeon](/wiki/people/person-0612/) |
-| K613 | [No Euna](/wiki/people/person-0613/) |
-| K614 | [Ha Nameun](/wiki/people/person-0614/) |
-| K615 | [Gwak Neulho](/wiki/people/person-0615/) |
-| K616 | [Seong Dalhyeon](/wiki/people/person-0616/) |
-| K617 | [Cha Reumhwan](/wiki/people/person-0617/) |
-| K618 | [Ju Bain](/wiki/people/person-0618/) |
-| K619 | [U Doljin](/wiki/people/person-0619/) |
-| K620 | [Gu Saehui](/wiki/people/person-0620/) |
-| K621 | [Min Dahyeon](/wiki/people/person-0621/) |
-| K622 | [Mihai Ionescu](/wiki/people/person-0622/) |
-| K623 | [Kim Jaho](/wiki/people/person-0623/) |
-| K624 | [I Tamin](/wiki/people/person-0624/) |
-| K625 | [Bak Geumeun](/wiki/people/person-0625/) |
-| K626 | [Choe Seoa](/wiki/people/person-0626/) |
-| K627 | [Jeong Hajun](/wiki/people/person-0627/) |
-| K628 | [Kang Soljun](/wiki/people/person-0628/) |
-| K629 | [Jo Gujun](/wiki/people/person-0629/) |
-| K630 | [Yun Gangyul](/wiki/people/person-0630/) |
-| K631 | [Jang Sumnin](/wiki/people/person-0631/) |
-| K632 | [Im Ramna](/wiki/people/person-0632/) |
-| K633 | [Han Nau](/wiki/people/person-0633/) |
-| K634 | [O Maho](/wiki/people/person-0634/) |
-| K635 | [Seo Aseo](/wiki/people/person-0635/) |
-| K636 | [Sin Kabin](/wiki/people/person-0636/) |
-| K637 | [Gwon Harin](/wiki/people/person-0637/) |
-| K638 | [Zofia Dobrowska](/wiki/people/person-0638/) |
-| K639 | [An Bungmin](/wiki/people/person-0639/) |
-| K640 | [Song Byeolhyeon](/wiki/people/person-0640/) |
-| K641 | [Ryu Bipyeon](/wiki/people/person-0641/) |
-| K642 | [Hong Sanwon](/wiki/people/person-0642/) |
-| K643 | [Go Dajin](/wiki/people/person-0643/) |
-| K644 | [Mun Baeun](/wiki/people/person-0644/) |
-| K645 | [Yang Gatae](/wiki/people/person-0645/) |
-| K646 | [Son Raho](/wiki/people/person-0646/) |
-| K647 | [Bae Samin](/wiki/people/person-0647/) |
-| K648 | [Baek Charae](/wiki/people/person-0648/) |
-| K649 | [Heo Paseo](/wiki/people/person-0649/) |
-| K650 | [Yu Eunyeong](/wiki/people/person-0650/) |
-| K651 | [Nam Namwon](/wiki/people/person-0651/) |
-| K652 | [Sim Neuryang](/wiki/people/person-0652/) |
-| K653 | [No Dalho](/wiki/people/person-0653/) |
-| K654 | [Dimitar Georgiev](/wiki/people/person-0654/) |
-| K655 | [Gwak Bahyeon](/wiki/people/person-0655/) |
-| K656 | [Seong Dolhyeon](/wiki/people/person-0656/) |
-| K657 | [Cha Saehwan](/wiki/people/person-0657/) |
-| K658 | [Ju Daseok](/wiki/people/person-0658/) |
-| K659 | [U Bamin](/wiki/people/person-0659/) |
-| K660 | [Gu Jahui](/wiki/people/person-0660/) |
-| K661 | [Min Tau](/wiki/people/person-0661/) |
-| K662 | [Jin Geumnin](/wiki/people/person-0662/) |
-| K663 | [Kim Seoho](/wiki/people/person-0663/) |
-| K664 | [I Haseok](/wiki/people/person-0664/) |
-| K665 | [Bak Solyun](/wiki/people/person-0665/) |
-| K666 | [Choe Gua](/wiki/people/person-0666/) |
-| K667 | [Jeong Gangeun](/wiki/people/person-0667/) |
-| K668 | [Kang Supyu](/wiki/people/person-0668/) |
-| K669 | [Jo Ramjun](/wiki/people/person-0669/) |
-| K670 | [Hanna Weber](/wiki/people/person-0670/) |
-| K671 | [Jang Mawon](/wiki/people/person-0671/) |
-| K672 | [Im Ana](/wiki/people/person-0672/) |
-| K673 | [Han Kaseo](/wiki/people/person-0673/) |
-| K674 | [O Haseo](/wiki/people/person-0674/) |
-| K675 | [Seo Dongseo](/wiki/people/person-0675/) |
-| K676 | [Sin Bungmin](/wiki/people/person-0676/) |
-| K677 | [Gwon Byeoryun](/wiki/people/person-0677/) |
-| K678 | [Hwang Bicha](/wiki/people/person-0678/) |
-| K679 | [An Sanneul](/wiki/people/person-0679/) |
-| K680 | [Song Daji](/wiki/people/person-0680/) |
-| K681 | [Ryu Bahyeon](/wiki/people/person-0681/) |
-| K682 | [Hong Gahun](/wiki/people/person-0682/) |
-| K683 | [Go Raho](/wiki/people/person-0683/) |
-| K684 | [Mun Saeun](/wiki/people/person-0684/) |
-| K685 | [Yang Chahyeon](/wiki/people/person-0685/) |
-| K686 | [Théodore Durand](/wiki/people/person-0686/) |
-| K687 | [Bae Eunmin](/wiki/people/person-0687/) |
-| K688 | [Baek Namseok](/wiki/people/person-0688/) |
-| K689 | [Heo Neuru](/wiki/people/person-0689/) |
-| K690 | [Yu Daryeong](/wiki/people/person-0690/) |
-| K691 | [Nam Reumeun](/wiki/people/person-0691/) |
-| K692 | [Sim Bahyeon](/wiki/people/person-0692/) |
-| K693 | [No Dolho](/wiki/people/person-0693/) |
-| K694 | [Ha Saejae](/wiki/people/person-0694/) |
-| K695 | [Seong Bahyeon](/wiki/people/person-0695/) |
-| K696 | [Cha Jawon](/wiki/people/person-0696/) |
-| K697 | [Ju Tain](/wiki/people/person-0697/) |
-| K698 | [U Geummin](/wiki/people/person-0698/) |
-| K699 | [Gu Seogyeol](/wiki/people/person-0699/) |
-| K700 | [Min Hahyeon](/wiki/people/person-0700/) |
-| K701 | [Jin Sollin](/wiki/people/person-0701/) |
-| K702 | [Owen Kelly](/wiki/people/person-0702/) |
-| K703 | [I Gangmin](/wiki/people/person-0703/) |
-| K704 | [Bak Supyun](/wiki/people/person-0704/) |
-| K705 | [Choe Ramhun](/wiki/people/person-0705/) |
-| K706 | [Jeong Najun](/wiki/people/person-0706/) |
-| K707 | [Gang Mayu](/wiki/people/person-0707/) |
-| K708 | [Jo Awon](/wiki/people/person-0708/) |
-| K709 | [Yun Kayul](/wiki/people/person-0709/) |
-| K710 | [Jang Hawon](/wiki/people/person-0710/) |
-| K711 | [Im Dongu](/wiki/people/person-0711/) |
-| K712 | [Han Bugu](/wiki/people/person-0712/) |
-| K713 | [O Byeolseo](/wiki/people/person-0713/) |
-| K714 | [Seo Bicheun](/wiki/people/person-0714/) |
-| K715 | [Sin Sanbin](/wiki/people/person-0715/) |
-| K716 | [Gwon Dayun](/wiki/people/person-0716/) |
-| K717 | [Hwang Bajin](/wiki/people/person-0717/) |
-| K718 | [Abigail Robinson](/wiki/people/person-0718/) |
-| K719 | [Song Dohyeon](/wiki/people/person-0719/) |
-| K720 | [Ryu Sayeon](/wiki/people/person-0720/) |
-| K721 | [Hong Chawon](/wiki/people/person-0721/) |
-| K722 | [Go Paho](/wiki/people/person-0722/) |
-| K723 | [Mun Eunmin](/wiki/people/person-0723/) |
-| K724 | [Yang Namtae](/wiki/people/person-0724/) |
-| K725 | [Son Neuryeon](/wiki/people/person-0725/) |
-| K726 | [Bae Darwon](/wiki/people/person-0726/) |
-| K727 | [Baek Reumrae](/wiki/people/person-0727/) |
-| K728 | [Heo Bau](/wiki/people/person-0728/) |
-| K729 | [Yu Dolhun](/wiki/people/person-0729/) |
-| K730 | [Nam Saewon](/wiki/people/person-0730/) |
-| K731 | [No Baa](/wiki/people/person-0731/) |
-| K732 | [Ha Jaeun](/wiki/people/person-0732/) |
-| K733 | [Gwak Taho](/wiki/people/person-0733/) |
-| K734 | [Christopher Scott](/wiki/people/person-0734/) |
-| K735 | [Cha Seohwan](/wiki/people/person-0735/) |
-| K736 | [Ju Hain](/wiki/people/person-0736/) |
-| K737 | [U Soljin](/wiki/people/person-0737/) |
-| K738 | [Gu Gu-hui](/wiki/people/person-0738/) |
-| K739 | [Min Gang-hyeon](/wiki/people/person-0739/) |
-| K740 | [Jin Sup-hyeok](/wiki/people/person-0740/) |
-| K741 | [Kim Ram-ho](/wiki/people/person-0741/) |
-| K742 | [I Na-min](/wiki/people/person-0742/) |
-| K743 | [Bak Ma-eun](/wiki/people/person-0743/) |
-| K744 | [Choe A-a](/wiki/people/person-0744/) |
-| K745 | [Jeong Ka-jun](/wiki/people/person-0745/) |
-| K746 | [Jo Dong-jun](/wiki/people/person-0746/) |
-| K747 | [Yun Buk-yul](/wiki/people/person-0747/) |
-| K748 | [Jang Byeol-lin](/wiki/people/person-0748/) |
-| K749 | [Im Bit-na](/wiki/people/person-0749/) |
-| K750 | [Olena Melnyk](/wiki/people/person-0750/) |
-| K751 | [O Da-ho](/wiki/people/person-0751/) |
-| K752 | [Seo Ba-seo](/wiki/people/person-0752/) |
-| K753 | [Sin Ga-bin](/wiki/people/person-0753/) |
-| K754 | [Gwon Ra-rin](/wiki/people/person-0754/) |
-| K755 | [Hwang Sa-a](/wiki/people/person-0755/) |
-| K756 | [An Cha-min](/wiki/people/person-0756/) |
-| K757 | [Song Pa-hyeon](/wiki/people/person-0757/) |
-| K758 | [Ryu Eun-hyeon](/wiki/people/person-0758/) |
-| K759 | [Hong Nam-won](/wiki/people/person-0759/) |
-| K760 | [Go Neul-jin](/wiki/people/person-0760/) |
-| K761 | [Mun Dal-eun](/wiki/people/person-0761/) |
-| K762 | [Yang Reum-tae](/wiki/people/person-0762/) |
-| K763 | [Son Ba-ho](/wiki/people/person-0763/) |
-| K764 | [Bae Dol-min](/wiki/people/person-0764/) |
-| K765 | [Baek Sae-rae](/wiki/people/person-0765/) |
-| K766 | [Lorenzo Conti](/wiki/people/person-0766/) |
-| K767 | [Nam Ja-won](/wiki/people/person-0767/) |
-| K768 | [Sim Ta-yang](/wiki/people/person-0768/) |
-| K769 | [No Geum-ho](/wiki/people/person-0769/) |
-| K770 | [Ha Seo-eun](/wiki/people/person-0770/) |
-| K771 | [Gwak Ha-hyeon](/wiki/people/person-0771/) |
-| K772 | [Seong Sol-hyeon](/wiki/people/person-0772/) |
-| K773 | [Cha Gu-hwan](/wiki/people/person-0773/) |
-| K774 | [Ju Gang-seok](/wiki/people/person-0774/) |
-| K775 | [U Sup-min](/wiki/people/person-0775/) |
-| K776 | [Gu Ram-hui](/wiki/people/person-0776/) |
-| K777 | [Min Na-u](/wiki/people/person-0777/) |
-| K778 | [Jin Ma-rin](/wiki/people/person-0778/) |
-| K779 | [Kim A-ho](/wiki/people/person-0779/) |
-| K780 | [I Ka-seok](/wiki/people/person-0780/) |
-| K781 | [Bak Ha-yun](/wiki/people/person-0781/) |
-| K782 | [Nikita Volkov](/wiki/people/person-0782/) |
-| K783 | [Jeong Buk-eun](/wiki/people/person-0783/) |
-| K784 | [Gang Byeol-yu](/wiki/people/person-0784/) |
-| K785 | [Jo Bit-jun](/wiki/people/person-0785/) |
-| K786 | [Yun San-u](/wiki/people/person-0786/) |
-| K787 | [Jang Da-won](/wiki/people/person-0787/) |
-| K788 | [Im Ba-na](/wiki/people/person-0788/) |
-| K789 | [Han Ga-seo](/wiki/people/person-0789/) |
-| K790 | [O Ra-seo](/wiki/people/person-0790/) |
-| K791 | [Seo Sa-seo](/wiki/people/person-0791/) |
-| K792 | [Sin Cha-min](/wiki/people/person-0792/) |
-| K793 | [Gwon Payun](/wiki/people/person-0793/) |
-| K794 | [Hwang Euna](/wiki/people/person-0794/) |
-| K795 | [An Namneul](/wiki/people/person-0795/) |
-| K796 | [Song Neulji](/wiki/people/person-0796/) |
-| K797 | [Ryu Dalhyeon](/wiki/people/person-0797/) |
-| K798 | [Emma King](/wiki/people/person-0798/) |
-| K799 | [Go Baho](/wiki/people/person-0799/) |
-| K800 | [Mun Doreun](/wiki/people/person-0800/) |
-| K801 | [Yang Saehyeon](/wiki/people/person-0801/) |
-| K802 | [Bae Bamin](/wiki/people/person-0802/) |
-| K803 | [Baek Jaseok](/wiki/people/person-0803/) |
-| K804 | [Heo Tau](/wiki/people/person-0804/) |
-| K805 | [Yu Geumyeong](/wiki/people/person-0805/) |
-| K806 | [Nam Seoeun](/wiki/people/person-0806/) |
-| K807 | [Sim Hahyeon](/wiki/people/person-0807/) |
-| K808 | [No Solho](/wiki/people/person-0808/) |
-| K809 | [Ha Gujae](/wiki/people/person-0809/) |
-| K810 | [Gwak Gangho](/wiki/people/person-0810/) |
-| K811 | [Seong Supyeon](/wiki/people/person-0811/) |
-| K812 | [Cha Ramwon](/wiki/people/person-0812/) |
-| K813 | [Ju Nain](/wiki/people/person-0813/) |
-| K814 | [Tomáš Svoboda](/wiki/people/person-0814/) |
-| K815 | [Gu Agyeol](/wiki/people/person-0815/) |
-| K816 | [Min Kahyeon](/wiki/people/person-0816/) |
-| K817 | [Jin Harin](/wiki/people/person-0817/) |
-| K818 | [Kim Dongyeon](/wiki/people/person-0818/) |
-| K819 | [I Bungmin](/wiki/people/person-0819/) |
-| K820 | [Bak Byeoryun](/wiki/people/person-0820/) |
-| K821 | [Choe Bichun](/wiki/people/person-0821/) |
-| K822 | [Jeong Sanjun](/wiki/people/person-0822/) |
-| K823 | [Gang Dayu](/wiki/people/person-0823/) |
-| K824 | [Jo Bawon](/wiki/people/person-0824/) |
-| K825 | [Yun Gayul](/wiki/people/person-0825/) |
-| K826 | [Jang Rawon](/wiki/people/person-0826/) |
-| K827 | [Im Sau](/wiki/people/person-0827/) |
-| K828 | [Han Chau](/wiki/people/person-0828/) |
-| K829 | [O Paseo](/wiki/people/person-0829/) |
-| K830 | [Amina Ndiaye](/wiki/people/person-0830/) |
-| K831 | [Sin Nambin](/wiki/people/person-0831/) |
-| K832 | [Gwon Neuryun](/wiki/people/person-0832/) |
-| K833 | [Hwang Daljin](/wiki/people/person-0833/) |
-| K834 | [An Reummin](/wiki/people/person-0834/) |
-| K835 | [Song Baji](/wiki/people/person-0835/) |
-| K836 | [Ryu Doryeon](/wiki/people/person-0836/) |
-| K837 | [Hong Saewon](/wiki/people/person-0837/) |
-| K838 | [Go Daho](/wiki/people/person-0838/) |
-| K839 | [Mun Bamin](/wiki/people/person-0839/) |
-| K840 | [Yang Jatae](/wiki/people/person-0840/) |
-| K841 | [Son Tayeon](/wiki/people/person-0841/) |
-| K842 | [Bae Geumwon](/wiki/people/person-0842/) |
-| K843 | [Baek Seorae](/wiki/people/person-0843/) |
-| K844 | [Yu Solhun](/wiki/people/person-0844/) |
-| K845 | [Nam Guwon](/wiki/people/person-0845/) |
-| K846 | [Jacob Thomas](/wiki/people/person-0846/) |
-| K847 | [No Supa](/wiki/people/person-0847/) |
-| K848 | [Ha Rameun](/wiki/people/person-0848/) |
-| K849 | [Gwak Naho](/wiki/people/person-0849/) |
-| K850 | [Seong Mahyeon](/wiki/people/person-0850/) |
-| K851 | [Cha Ahwan](/wiki/people/person-0851/) |
-| K852 | [Ju Kain](/wiki/people/person-0852/) |
-| K853 | [Gu Donghui](/wiki/people/person-0853/) |
-| K854 | [Min Bukhyeon](/wiki/people/person-0854/) |
-| K855 | [Jin Byeolhyeok](/wiki/people/person-0855/) |
-| K856 | [Kim Bitho](/wiki/people/person-0856/) |
-| K857 | [I Sanmin](/wiki/people/person-0857/) |
-| K858 | [Bak Daeun](/wiki/people/person-0858/) |
-| K859 | [Choe Baa](/wiki/people/person-0859/) |
-| K860 | [Jeong Gajun](/wiki/people/person-0860/) |
-| K861 | [Gang Rajun](/wiki/people/person-0861/) |
-| K862 | [Viktor Stanescu](/wiki/people/person-0862/) |
-| K863 | [Yun Chayul](/wiki/people/person-0863/) |
-| K864 | [Jang Parin](/wiki/people/person-0864/) |
-| K865 | [Im Eunna](/wiki/people/person-0865/) |
-| K866 | [Han Namu](/wiki/people/person-0866/) |
-| K867 | [O Neulho](/wiki/people/person-0867/) |
-| K868 | [Seo Dalseo](/wiki/people/person-0868/) |
-| K869 | [Sin Reumbin](/wiki/people/person-0869/) |
-| K870 | [Gwon Barin](/wiki/people/person-0870/) |
-| K871 | [Hwang Dora](/wiki/people/person-0871/) |
-| K872 | [An Saemin](/wiki/people/person-0872/) |
-| K873 | [Song Dahyeon](/wiki/people/person-0873/) |
-| K874 | [Hong Jawon](/wiki/people/person-0874/) |
-| K875 | [Go Tajin](/wiki/people/person-0875/) |
-| K876 | [Mun Geumeun](/wiki/people/person-0876/) |
-| K877 | [Yang Seotae](/wiki/people/person-0877/) |
-| K878 | [Camilla Mazur](/wiki/people/person-0878/) |
-| K879 | [Bae Solmin](/wiki/people/person-0879/) |
-| K880 | [Baek Gurae](/wiki/people/person-0880/) |
-| K881 | [Heo Gangseo](/wiki/people/person-0881/) |
-| K882 | [Yu Supyeong](/wiki/people/person-0882/) |
-| K883 | [Nam Ramwon](/wiki/people/person-0883/) |
-| K884 | [Sim Nayang](/wiki/people/person-0884/) |
-| K885 | [No Maho](/wiki/people/person-0885/) |
-| K886 | [Ha Aeun](/wiki/people/person-0886/) |
-| K887 | [Gwak Kahyeon](/wiki/people/person-0887/) |
-| K888 | [Seong Hahyeon](/wiki/people/person-0888/) |
-| K889 | [Cha Donghwan](/wiki/people/person-0889/) |
-| K890 | [Ju Bukseok](/wiki/people/person-0890/) |
-| K891 | [U Byeolmin](/wiki/people/person-0891/) |
-| K892 | [Gu Bithui](/wiki/people/person-0892/) |
-| K893 | [Min Sanu](/wiki/people/person-0893/) |
-| K894 | [Sebastian Braun](/wiki/people/person-0894/) |
-| K895 | [Kim Baho](/wiki/people/person-0895/) |
-| K896 | [I Gaseok](/wiki/people/person-0896/) |
-| K897 | [Bak Rayun](/wiki/people/person-0897/) |
-| K898 | [Choe Saa](/wiki/people/person-0898/) |
-| K899 | [Jeong Chaeun](/wiki/people/person-0899/) |
-| K900 | [Gang Payu](/wiki/people/person-0900/) |
-| K901 | [Jo Eunjun](/wiki/people/person-0901/) |
-| K902 | [Yun Namu](/wiki/people/person-0902/) |
-| K903 | [Jang Neulwon](/wiki/people/person-0903/) |
-| K904 | [Im Dalla](/wiki/people/person-0904/) |
-| K905 | [Han Reumseo](/wiki/people/person-0905/) |
-| K906 | [Seo Dolseo](/wiki/people/person-0906/) |
-| K907 | [Sin Saemin](/wiki/people/person-0907/) |
-| K908 | [Hwang Baa](/wiki/people/person-0908/) |
-| K909 | [An Janeul](/wiki/people/person-0909/) |
-| K910 | [Mariya Kovalenko](/wiki/people/person-0910/) |
-| K911 | [Ryu Geumhyeon](/wiki/people/person-0911/) |
-| K912 | [Hong Seohun](/wiki/people/person-0912/) |
-| K913 | [Mun Soreun](/wiki/people/person-0913/) |
-| K914 | [Yang Guhyeon](/wiki/people/person-0914/) |
-| K915 | [Son Gangyeon](/wiki/people/person-0915/) |
-| K916 | [Bae Summin](/wiki/people/person-0916/) |
-| K917 | [Baek Ramseok](/wiki/people/person-0917/) |
-| K918 | [Heo Nau](/wiki/people/person-0918/) |
-| K919 | [Yu Mayeong](/wiki/people/person-0919/) |
-| K920 | [Nam Aeun](/wiki/people/person-0920/) |
-| K921 | [Sim Kahyeon](/wiki/people/person-0921/) |
-| K922 | [No Haho](/wiki/people/person-0922/) |
-| K923 | [Ha Dongjae](/wiki/people/person-0923/) |
-| K924 | [Gwak Bukho](/wiki/people/person-0924/) |
-| K925 | [Seong Byeolhyeon](/wiki/people/person-0925/) |
-| K926 | [Étienne Moreau](/wiki/people/person-0926/) |
-| K927 | [Ju Sanin](/wiki/people/person-0927/) |
-| K928 | [U Damin](/wiki/people/person-0928/) |
-| K929 | [Gu Bagyeol](/wiki/people/person-0929/) |
-| K930 | [Min Gahyeon](/wiki/people/person-0930/) |
-| K931 | [Jin Rarin](/wiki/people/person-0931/) |
-| K932 | [Kim Sayeon](/wiki/people/person-0932/) |
-| K933 | [I Chamin](/wiki/people/person-0933/) |
-| K934 | [Bak Payun](/wiki/people/person-0934/) |
-| K935 | [Choe Eunhun](/wiki/people/person-0935/) |
-| K936 | [Jeong Namjun](/wiki/people/person-0936/) |
-| K937 | [Gang Neuryu](/wiki/people/person-0937/) |
-| K938 | [Jo Darwon](/wiki/people/person-0938/) |
-| K939 | [Yun Reumyul](/wiki/people/person-0939/) |
-| K940 | [Jang Bawon](/wiki/people/person-0940/) |
-| K941 | [Im Doru](/wiki/people/person-0941/) |
-| K942 | [George Anderson](/wiki/people/person-0942/) |
-| K943 | [O Daseo](/wiki/people/person-0943/) |
-| K944 | [Seo Baeun](/wiki/people/person-0944/) |
-| K945 | [Sin Jabin](/wiki/people/person-0945/) |
-| K946 | [Gwon Tayun](/wiki/people/person-0946/) |
-| K947 | [Hwang Geumjin](/wiki/people/person-0947/) |
-| K948 | [An Seomin](/wiki/people/person-0948/) |
-| K949 | [Ryu Soryeon](/wiki/people/person-0949/) |
-| K950 | [Hong Guwon](/wiki/people/person-0950/) |
-| K951 | [Go Gangho](/wiki/people/person-0951/) |
-| K952 | [Mun Summin](/wiki/people/person-0952/) |
-| K953 | [Yang Ramtae](/wiki/people/person-0953/) |
-| K954 | [Bae Mawon](/wiki/people/person-0954/) |
-| K955 | [Baek Arae](/wiki/people/person-0955/) |
-| K956 | [Heo Kau](/wiki/people/person-0956/) |
-| K957 | [Yu Hahun](/wiki/people/person-0957/) |
-| K958 | [Barbora Prohaskova](/wiki/people/person-0958/) |
-| K959 | [Sim Bukhyeon](/wiki/people/person-0959/) |
-| K960 | [No Byeora](/wiki/people/person-0960/) |
-| K961 | [Ha Bicheun](/wiki/people/person-0961/) |
-| K962 | [Gwak Sanho](/wiki/people/person-0962/) |
-| K963 | [Seong Dahyeon](/wiki/people/person-0963/) |
-| K964 | [Cha Bahwan](/wiki/people/person-0964/) |
-| K965 | [Ju Gain](/wiki/people/person-0965/) |
-| K966 | [U Rajin](/wiki/people/person-0966/) |
-| K967 | [Gu Sahui](/wiki/people/person-0967/) |
-| K968 | [Min Chahyeon](/wiki/people/person-0968/) |
-| K969 | [Jin Pahyeok](/wiki/people/person-0969/) |
-| K970 | [Kim Eunho](/wiki/people/person-0970/) |
-| K971 | [I Nammin](/wiki/people/person-0971/) |
-| K972 | [Bak Neureun](/wiki/people/person-0972/) |
-| K973 | [Choe Dara](/wiki/people/person-0973/) |
-| K974 | [Miguel Torres](/wiki/people/person-0974/) |
-| K975 | [Gang Bajun](/wiki/people/person-0975/) |
-| K976 | [Jo Doljun](/wiki/people/person-0976/) |
-| K977 | [Yun Saeyul](/wiki/people/person-0977/) |
-| K978 | [Jang Darin](/wiki/people/person-0978/) |
-| K979 | [Han Jau](/wiki/people/person-0979/) |
-| K980 | [O Taho](/wiki/people/person-0980/) |
-| K981 | [Seo Geumseo](/wiki/people/person-0981/) |
-| K982 | [Sin Seobin](/wiki/people/person-0982/) |
-| K983 | [Hwang Sora](/wiki/people/person-0983/) |
-| K984 | [An Gumin](/wiki/people/person-0984/) |
-| K985 | [Song Ganghyeon](/wiki/people/person-0985/) |
-| K986 | [Ryu Sup-hyeon](/wiki/people/person-0986/) |
-| K987 | [Hong Ramwon](/wiki/people/person-0987/) |
-| K988 | [Go Najin](/wiki/people/person-0988/) |
-| K989 | [Mun Maeun](/wiki/people/person-0989/) |
-| K990 | [Isabel Garcia](/wiki/people/person-0990/) |
-| K991 | [Son Kaho](/wiki/people/person-0991/) |
-| K992 | [Bae Hamin](/wiki/people/person-0992/) |
-| K993 | [Baek Dongrae](/wiki/people/person-0993/) |
-| K994 | [Heo Bukseo](/wiki/people/person-0994/) |
-| K995 | [Yu Byeoryeong](/wiki/people/person-0995/) |
-| K996 | [Nam Bichwon](/wiki/people/person-0996/) |
-| K997 | [Sim Sanyang](/wiki/people/person-0997/) |
-| K998 | [I Ilseop](/wiki/people/person-0998/) |
-| K999 | [No Daho](/wiki/people/person-0999/) |
-| K1000 | [Ha Baeun](/wiki/people/person-1000/) |
-| K1001 | [Gwak Gahyeon](/wiki/people/person-1001/) |
-| K1002 | [Seong Rahyeon](/wiki/people/person-1002/) |
-| unaffiliated-jaepyo-jo | [Jo Jaepyo](/wiki/people/person-1003/) |
-| iyen | [I Yeon](/wiki/people/person-1004/) |
-| K1005 | [Jeong Seoon](/wiki/people/person-1005/) |
-| K1006 | [Tak Seoyun](/wiki/people/person-1006/) |
-| K1007 | [Kim Yeongyu](/wiki/people/person-1007/) |
-| K1008 | [Min Ung-gi](/wiki/people/person-1008/) |
-| K1009 | [Sin Jong-mok](/wiki/people/person-1009/) |
-| K1010 | [Sin Jun](/wiki/people/person-1010/) |
-| K1011 | [Lin Xiaomei](/wiki/people/person-1011/) |
-| K1012 | [Pham Van Duc](/wiki/people/person-1012/) |
-| K1013 | [Amira Qasim](/wiki/people/person-1013/) |
-| K1014 | [Joel Park](/wiki/people/person-1014/) |
-| K1015 | [Nargiza Yusupova](/wiki/people/person-1015/) |
-| K1016 | [Choe Il-seok](/wiki/people/person-1016/) |
-| K1017 | [Ji Yeon-hui](/wiki/people/person-1017/) |
-| K1018 | [Go Ye-jin](/wiki/people/person-1018/) |
-| K1019 | [Bak Seong-su](/wiki/people/person-1019/) |
-| K1020 | [Han Seo-gyeong](/wiki/people/person-1020/) |
-| K1021 | [Cha Yu-seon](/wiki/people/person-1021/) |
-| K1022 | [Mun Do-hyeon](/wiki/people/person-1022/) |
+| The roots of the world | [World Narrative Atlas](/wiki/World-Narrative-Atlas/), [The Great Blackout and the Eternal Winter](/wiki/World-Unbinding/), [The First AI and the Machines Outside](/wiki/Regional-Physical-AI-Arcs/), [Glossary](/wiki/Glossary/) |
+| Time | [Century Annals 2026-2126](/wiki/Century-Annals/), [The Opening: Winter 2126](/wiki/Scenario-Timeline/), [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/) |
+| The three polities | [The Three Polities of Seoul](/wiki/Sixteen-States/), [Government Society](/wiki/Government-Society/), [Free City Society](/wiki/Free-City-Society/), [Arc Society](/wiki/Arc-Society/) |
+| Between the polities | [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/), [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/), [The Hands That Run a Station](/wiki/Operating-Houses/) |
+| Land and stations | [Seoul under the Snow](/wiki/Building-Reuse-Geography/), [Beyond Seoul: the Rim](/wiki/External-Theaters/), [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/), [Inside a Station](/wiki/Station-Interior-Construction/), [How the World Map Is Built](/wiki/World-Map-Construction/), [The Surface and Underground](/wiki/World-and-Subway-Layers/), [Structures](/wiki/Structures/) |
+| People | [People, Factions and Trades](/wiki/Characters-Factions-and-Professions/), [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/), [Values and Policy Scales](/wiki/Values-and-Policy-Scales/), [Titles and Offices](/wiki/Offices-and-Ranks/) |
+| Life | [Faith and Rites](/wiki/Faith-Culture-Schism/), [Meals and Food](/wiki/Food-Culture/), [The Stories](/wiki/Oral-Stories/), [Ailments of the Cold](/wiki/Ailments/) |
+| Technology and machines | [What Still Runs](/wiki/Lost-Technology-Lineage/), [Machine Bodies and Scarcity](/wiki/Cyberware-and-Scarcity/), [Guns, Rounds and Drones](/wiki/Era-Arms-and-Tech-Level/), [People and Machines](/wiki/People-and-Machines/), [Humanoids](/wiki/Synthetic-Actors/) |
+| Dangers inside Seoul | [Hostile Ecology Compendium](/wiki/Hostile-Ecology-Index/) |
+| Beasts | [G01](/wiki/Hostile-Group-G01/), [G02](/wiki/Hostile-Group-G02/), [G03](/wiki/Hostile-Group-G03/), [G04](/wiki/Hostile-Group-G04/), [G05](/wiki/Hostile-Group-G05/), [G06](/wiki/Hostile-Group-G06/) |
+| Hostile human bands | [G07](/wiki/Hostile-Group-G07/), [G08](/wiki/Hostile-Group-G08/), [G09](/wiki/Hostile-Group-G09/), [G10](/wiki/Hostile-Group-G10/), [G11](/wiki/Hostile-Group-G11/), [G12](/wiki/Hostile-Group-G12/) |
+| Old machines inside Seoul | [G13](/wiki/Hostile-Group-G13/), [G14](/wiki/Hostile-Group-G14/), [G15](/wiki/Hostile-Group-G15/), [G16](/wiki/Hostile-Group-G16/), [G25](/wiki/Hostile-Group-G25/) |
+| Rim machines | [G17](/wiki/Hostile-Group-G17/), [G18](/wiki/Hostile-Group-G18/), [G19](/wiki/Hostile-Group-G19/), [G20](/wiki/Hostile-Group-G20/), [G21](/wiki/Hostile-Group-G21/), [G22](/wiki/Hostile-Group-G22/), [G23](/wiki/Hostile-Group-G23/), [G24](/wiki/Hostile-Group-G24/), [G26](/wiki/Hostile-Group-G26/) |
+
+<a id="index-districts-related"></a>
+
+## Further Reading by District
+
+| District | Further reading |
+|---|---|
+| Jongno-gu, Jung-gu | [Government Society](/wiki/Government-Society/), [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
+| Yongsan-gu, Mapo-gu, Seongdong-gu, Gwangjin-gu | [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/) |
+| Seodaemun-gu, Dongdaemun-gu, Jungnang-gu | [Government Society](/wiki/Government-Society/), [The Hands That Run a Station](/wiki/Operating-Houses/) |
+| Seongbuk-gu, Eunpyeong-gu, Gangbuk-gu, Dobong-gu, Nowon-gu | [Beyond Seoul: the Rim](/wiki/External-Theaters/), [The First AI and the Machines Outside](/wiki/Regional-Physical-AI-Arcs/) |
+| Gangseo-gu, Yangcheon-gu | [Free City Society](/wiki/Free-City-Society/), [People and Machines](/wiki/People-and-Machines/) |
+| Yeongdeungpo-gu | [Free City Society](/wiki/Free-City-Society/), [The Opening: Winter 2126](/wiki/Scenario-Timeline/) |
+| Guro-gu | [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/), [What Still Runs](/wiki/Lost-Technology-Lineage/) |
+| Geumcheon-gu | [Beyond Seoul: the Rim](/wiki/External-Theaters/), [Hostile Ecology Compendium](/wiki/Hostile-Ecology-Index/) |
+| Dongjak-gu | [Crossings and Smuggling](/wiki/Diaspora-Corridors/), [How the World Map Is Built](/wiki/World-Map-Construction/) |
+| Gwanak-gu | [Free City Society](/wiki/Free-City-Society/), [Titles and Offices](/wiki/Offices-and-Ranks/) |
+| Seocho-gu, Gangnam-gu, Songpa-gu, Gangdong-gu | [Arc Society](/wiki/Arc-Society/), [Machine Bodies and Scarcity](/wiki/Cyberware-and-Scarcity/), [Faith and Rites](/wiki/Faith-Culture-Schism/) |
