@@ -139,7 +139,7 @@ The first baptism comes only after sixteen, though a baptism that repairs a lost
 
 Of the Arc's roughly 65,000 people in 2126, about 11,000 are baptised, one in six. At Jamsil it is 900, 29% of the station's people, because the baptised gather in stations where the wheel's power comes in. About half of the baptised carry one part and about a quarter two. Those with five or more number about 770 in the whole Arc, mostly Bench Keepers, Near House people and baptised fighters.
 
-Why only one in six is baptised is simple: there are only so many parts, maintenance turns and so much power. One baptised person uses on average 8 watts for charging; 11,000 of them use about 88 kilowatts. About an eighth of the power the Arc uses goes into bodies.
+Why only one in six is baptised is simple: there are only so many parts and maintenance turns, and only so much power. One baptised person uses on average 8 watts for charging; 11,000 of them use about 88 kilowatts. About an eighth of the power the Arc uses goes into bodies.
 
 <a id="the-roll"></a>
 ### The list of the baptised and the unbaptised

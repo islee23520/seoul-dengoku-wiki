@@ -112,7 +112,7 @@ Pumps, heat and watch never stop, so there are three shifts of eight hours. Memb
 <a id="government-hands"></a>
 ### The Government's hands
 
-The hands that run a station sit in two classes of the ledger. **Skilled households** are pump crews, heat-pump maintenance, fibre-sugar vat tenders, electricians and menders. **Labour households** are entrance workers, salvage and fibre gatherers, light-field workers, porters and woodcutters. Labour households are about two in every three Government people.
+The hands that run a station sit in two classes of the ledger. **Skilled households** are pump crews, heat-pump maintenance, fibre-sugar vat tenders, electricians and menders. **Labour households** are entrance workers, salvage and fibre gatherers, light-field workers, porters and woodcutters. Labour households hold about two in every three Government people.
 
 Every registered adult owes one day in seven as labour duty: opening entrance shafts, clearing snow, gathering fibre, building light-field banks. Each dong has a different duty day, so that no day empties every dong at once. Key skilled occupations such as pump crews and intake maintenance do not take up rifles at nineteen; they do eighteen months of alternative service at the intakes or the bridge wind machines. Government people say a pump is worth more than a rifle.
 
@@ -140,7 +140,7 @@ A workbench's promises are written in figures. Not "we will fix the pump", but "
 <a id="wind-hours"></a>
 ### Wind hours
 
-If the Government's day is divided by the hours the lights go on and off, the Free City day is divided by the wind. More than half of Seoul's electricity comes from wind machines, so when the wind is strong power is left over and when it drops power runs short. So the workbenches run when the wind blows and rest when it falls. The time of strong wind is called **wind hours**. When wind hours come, the benches light up and the hands get up even at night; when the wind dies, they put out the lights and sleep. A Free City greeting begins, "How's the wind?"
+If the Government's day is divided by the hours the lights go on and off, the Free City day is divided by the wind. More than half of Seoul's electricity comes from wind machines, so when the wind is strong power is left over and when it drops power runs short. So the workbenches run when the wind blows and rest when it falls. The time of strong wind is called **wind hours**. When wind hours come, the benches light up and the hands get up even at night; when the wind dies, they put out the lights and sleep. A Free City person's first greeting is "How's the wind?"
 
 <a id="empty-pot"></a>
 ### The empty vat

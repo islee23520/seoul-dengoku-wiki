@@ -34,7 +34,7 @@ The Government ledger lists 157 stations on the map. Four of them have no runnin
 <a id="government"></a>
 ## The Government: the country of the ledger
 
-To Government people the Government is not a new country. It is the Republic of Korea. The National Assembly, the ministries, the district offices, the dong community centres and resident registration kept their names and their seals even as scarcity hollowed them out. When the river froze, the National Assembly left Yeouido for the Government Complex Seoul at Gwanghwamun, and the country became as far as the clerks and the rations could reach. The river was its end.
+To Government people the Government is not a new country. It is the Republic of Korea. The National Assembly, the ministries, the district offices, the dong community centres and resident registration kept their names and their seals even as scarcity hollowed them out. When the river froze, the National Assembly left Yeouido for the Government Complex Seoul at Gwanghwamun, and the country came to reach only as far as the clerks and the rations could. The river was its end.
 
 - In each district one Member of the National Assembly holds that district's duchy. Elections remain, but the winner is known before the vote. Assembly Member houses hand down their seats.
 - The fourteen Members acclaim a President from among themselves, and the President holds the post until death. An acclamation succeeds only when all fourteen seals are set.

@@ -134,7 +134,7 @@ Government work begins at the station and ends at the district office. The line 
 
 - The **district office** is the office of the Member's house. Its head, the **Head of the District Office**, is a post the Member appoints. The Head stamps the Member's seal, issues district notices and holds petition hearings. The Head of the District Office holds no land.
 - The **dong community centre** is the **Dong Chief**'s ration office, with three counters: rations, entries and petitions. The official Government people meet most often is the clerk at these counters. One ration clerk can decide a household's meals for the month.
-- The **Stationmaster** holds the station's heat and air, and so ranks below the Dong Chief and is more feared. The post is handed down within the Stationmaster's house.
+- The **Stationmaster** ranks below the Dong Chief but is more feared, because the Stationmaster holds the station's heat and air. The post is handed down within the Stationmaster's house.
 
 How a station turns through its day is in [The Hands That Run a Station](/wiki/Operating-Houses/).
 
