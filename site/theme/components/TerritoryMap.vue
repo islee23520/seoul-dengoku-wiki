@@ -234,9 +234,14 @@ function up(e: PointerEvent) {
     const now = performance.now()
     if (lastTap && now - lastTap.t < 350 && Math.hypot(e.clientX - lastTap.x, e.clientY - lastTap.y) < 30) { lastTap = null; zoomBy(0.5, { x: e.clientX, y: e.clientY }) }
     else lastTap = { x: e.clientX, y: e.clientY, t: now }
-  } else if (was === 'dragging' && trail.length > 1) {
-    const a = trail[0], z = trail[trail.length - 1], dt = Math.max(1, z.t - a.t)
-    startGlide((z.x - a.x) / dt, (z.y - a.y) / dt)
+  } else if (was === 'dragging') {
+    // only movement in the last 100 ms counts: a drag that stopped and was held before release does not fling
+    const now = performance.now()
+    const recent = trail.filter((p) => now - p.t < 100)
+    if (recent.length > 1) {
+      const a = recent[0], z = recent[recent.length - 1], dt = Math.max(1, z.t - a.t)
+      startGlide((z.x - a.x) / dt, (z.y - a.y) / dt)
+    }
   }
 }
 // a mouse press that leaves the map before it became a drag is dropped (a drag holds pointer capture and never leaves)
