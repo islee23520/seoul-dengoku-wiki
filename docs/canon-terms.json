@@ -105,6 +105,30 @@
       "note": "[정본 바이블 4절] same. 대체: 세계 안에서 지은 일반 명칭. 근거: 소유자 결정(2026-11-12), 병종 원칙 2.5절."
     },
     {
+      "id": "brand-cyber-names-en",
+      "pattern": "\\b(?:Kerenzikov|Projectile[ -]Launch[ -]System|Synaptic[ -]Accelerator|Zetatech|Dynalar|Monowire|Braindance|Tyger[ -]Claws|Voodoo[ -]Boys|Johnny[ -]Silverhand|Kendachi)\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 사이버펑크 2077 제품·조직 고유명 추가(영어, 대소문자 무시). 대체: 세계 안에서 지은 일반 명칭. 근거: 계획 과제 30(.omo/evidence/w2v/verify-task-6b.md N1: 과제 6 문서에 TW:WH 병종·인물 이름 약 19개가 노출됐으나 기존 금지어가 못 잡았다), 소유자 결정(2026-11-12). brand-cyber-en을 보완한다."
+    },
+    {
+      "id": "brand-cyber-names-en-proper",
+      "pattern": "\\b(?:Trauma[ -]Team|Night[ -]City|Netwatch)\\b",
+      "flags": "",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 사이버펑크 2077 고유명 중 일반 영어 구와 겹치는 것(Trauma Team, Night City, Netwatch). 대소문자 구분, 대문자 고유명사 표기만 잡는다. 일반 영어 trauma team, night city는 잡지 않는다. 근거: 계획 과제 30(.omo/evidence/w2v/verify-task-6b.md N1: 과제 6 문서에 TW:WH 병종·인물 이름 약 19개가 노출됐으나 기존 금지어가 못 잡았다)."
+    },
+    {
+      "id": "brand-cyber-names-ko",
+      "pattern": "(?<![가-힣])(?:케렌지코프|시냅스 ?가속기|시냅틱 ?가속기|프로젝타일 ?런(?:치 ?시스템|처)|제타텍|다이날러|트라우마 ?팀|나이트 ?시티|넷워치|모노와이어|사이버사이코|브레인댄스|조니 ?실버핸드|타이거 ?클로|부두 ?보이즈|켄다치)",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 사이버펑크 2077 고유명의 한국어 표기(케렌지코프, 시냅스·시냅틱 가속기, 제타텍, 다이날러, 트라우마 팀, 나이트 시티, 넷워치 등). 근거: 계획 과제 30(.omo/evidence/w2v/verify-task-6b.md N1: 과제 6 문서에 TW:WH 병종·인물 이름 약 19개가 노출됐으나 기존 금지어가 못 잡았다), 소유자 결정(2026-11-12). brand-cyber-ko를 보완한다."
+    },
+    {
       "id": "game-units-en",
       "pattern": "\\b(?:Ironbreakers?|Skavenslaves?|Hammerers|Thunderers|Hellcannons?)\\b",
       "flags": "i",
@@ -127,6 +151,70 @@
       "lang": "ko",
       "allowedContext": [],
       "note": "[정본 바이블 4절] same. 대체: 세계 안에서 지은 일반 명칭. 근거: 소유자 결정(2026-11-12), 병종 원칙 2.5절."
+    },
+    {
+      "id": "tw-factions-en",
+      "pattern": "\\b(?:Skaven|Vampire[ -]Counts|Bretonnia|Bretonnian|Lizardmen|Tomb[ -]Kings|Wood[ -]Elves|High[ -]Elves|Dark[ -]Elves|Chaos[ -]Dwarfs|Norscan|Kislevite|Grand[ -]Cathay|Ogre[ -]Kingdoms|Vampire[ -]Coast|Warriors[ -]of[ -]Chaos|Daemons[ -]of[ -]Chaos|Slaanesh|Tzeentch|Nurgle|Khorne|Skavenblight|Naggarond|Drakenhof|Clan[ -]Skryre|Clan[ -]Pestilens|Clan[ -]Eshin|Clan[ -]Moulder)s?\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 토탈 워: 워해머 진영·지명 고유명(영어, 대소문자 무시). 대체: 세계 안에서 지은 세력·지명. 근거: 계획 과제 30(.omo/evidence/w2v/verify-task-6b.md N1: 과제 6 문서에 TW:WH 병종·인물 이름 약 19개가 노출됐으나 기존 금지어가 못 잡았다), 소유자 결정(2026-11-12), 병종 원칙 2.5절. 출처 목록: Fandom API 병종·진영 분류."
+    },
+    {
+      "id": "tw-factions-en-proper",
+      "pattern": "\\b(?:Beastmen|Greenskins|Norsca|Kislev|Lustria)s?\\b",
+      "flags": "",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 토탈 워: 워해머 진영 이름 중 일반 영어와 겹치는 것(Beastmen, Greenskins, Norsca, Kislev, Lustria). 대소문자 구분, 대문자 고유명사 표기만 잡는다. 근거: 계획 과제 30(.omo/evidence/w2v/verify-task-6b.md N1: 과제 6 문서에 TW:WH 병종·인물 이름 약 19개가 노출됐으나 기존 금지어가 못 잡았다). 소문자 일반어는 잡지 않는다."
+    },
+    {
+      "id": "tw-lords-en",
+      "pattern": "\\b(?:Karl[ -]Franz|Balthasar[ -]Gelt|Volkmar[ -]the[ -]Grim|Louen[ -]Leoncoeur|Ungrim[ -]Ironfist|Thorgrim[ -]Grudgebearer|Grombrindal|Belegar[ -]Ironhammer|Settra|Khalida|Khatep|Arkhan[ -]the[ -]Black|Nagash|Mannfred|Isabella[ -]von[ -]Carstein|Vlad[ -]von[ -]Carstein|von[ -]Carstein|Kemmler|Helman[ -]Ghorst|Neferata|Mazdamundi|Kroq-Gar|Gor-Rok|Tehenhauin|Tiktaq['’]to|Lord[ -]Kroak|Grimgor|Azhag|Skarsnik|Wurrzag|Gorbad[ -]Ironclaw|Queek|Skrolk|Ikit[ -]Claw|Tretch[ -]Craventail|Throt[ -]the[ -]Unclean|Snikch|Thanquol|Malekith|Morathi|Hellebron|Malus[ -]Darkblade|Lokhir[ -]Fellheart|Tyrion|Teclis|Alarielle|Alith[ -]Anar|Eltharion|Alastar|Archaon|Kholek|Sigvald|Valkia|Festus[ -]the[ -]Leechlord|Be['’]lakor|Skarbrand|Kairos[ -]Fateweaver|Ku['’]gath|Gotrek|Todbringer|Greasus|Wulfrik|Aranessa[ -]Saltspite|Cylostra|Count[ -]Noctilus|Luthor[ -]Harkon|Tamurkhan|Tzarina[ -]Katarin|Boris[ -]Ursus|Kostaltyn|Thorek[ -]Ironbrow|Kazador|Malakai[ -]Makaisson|Gorduz[ -]Backstabber|Imrik|Drycha|Durthu|Repanse[ -]de[ -]Lyonesse|Alberic[ -]de[ -]Bordeleaux|Markus[ -]Wulfhart|Dechala|Taurox|Skulltaker|Epidemius|Lahmizzash|Walach[ -]Harkon|Ulrika[ -]Magdova|Gutrot[ -]Spume|Burplesmirk[ -]Spewpit|Mother[ -]Ostankya|Nakai[ -]the[ -]Wanderer|Oxyotl|Elspeth[ -]von[ -]Draken)s?\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 토탈 워: 워해머 군주·영웅 이름(영어, 성·이름·별칭 중 구별되는 부분). 대체: 세계 안에서 지은 인물. 근거: 계획 과제 30(.omo/evidence/w2v/verify-task-6b.md N1: 과제 6 문서에 TW:WH 병종·인물 이름 약 19개가 노출됐으나 기존 금지어가 못 잡았다), 소유자 결정(2026-11-12). 인물 예외는 바이블이 정한 것만 따른다."
+    },
+    {
+      "id": "tw-units-en",
+      "pattern": "\\b(?:Clanrat|Stormvermin|Gutter[ -]Runner|Plague[ -]Monk|Warlock[ -]Engineer|Warpfire[ -]Thrower|Warplock[ -]Jezzail|Doomwheel|Ratling[ -]Gun|Warp[ -]Lightning[ -]Cannon|Rat[ -]Ogre|Doom-Flayer|Warp-Grinder|Poisoned[ -]Wind[ -]Globadier|Hell[ -]Pit[ -]Abomination|Brood[ -]Horror|Saurus|Kroxigor|Chameleon[ -]Skink|Skink[ -]Cohort|Skink[ -]Skirmisher|Slann|Stegadon|Bastiladon|Troglodon|Ripperdactyl|Terradon|Razordon|Reiksguard|Demigryph|Helblaster|Helstorm|Luminark|Grail[ -]Guardian|Grail[ -]Reliquae|Irondrake|Grudge[ -]Thrower|Doomseeker|Slayer[ -]Pirate|Swordmasters[ -]of[ -]Hoeth|Sisters[ -]of[ -]Avelorn|Ellyrian[ -]Reaver|White[ -]Lions[ -]of[ -]Chrace|Lothern[ -]Sea[ -]Guard|Wardancer|Waystalker|Waywatcher|Sisters[ -]of[ -]the[ -]Thorn|Har[ -]Ganeth[ -]Executioner|Dreadspear|Bleakswords|Darkshards|Black[ -]Guard[ -]of[ -]Naggarond|Black[ -]Ark[ -]Corsair|Kharibdyss|Doomfire[ -]Warlock|Necropolis[ -]Knights|Crypt[ -]Ghoul|Crypt[ -]Horror|Hexwraith|Cairn[ -]Wraith|Mortis[ -]Engine|Varghulf|Vargheist|Terrorgheist|Tomb[ -]Scorpion|Necrosphinx|Warsphinx|Daemonette|Plaguebearer|Pink[ -]Horror|Blue[ -]Horror|Flesh[ -]Hound|Soul[ -]Grinder|Bloodthirster|Great[ -]Unclean[ -]One|Ghorgon|Cygor|Jabberslythe|Bestigor|Tzaangor|Centigor|Khorngor|Pestigor|Slaangor|Razorgor|Tuskgor|Hellforged|Infernal[ -]Ironsworn|Dreadquake[ -]Mortar|Gnoblar|Snotling|Arachnarok|Ironguts|Leadbelchers|Thundertusk|Mournfang|Yhetee|Wu[ -]Xing[ -]War[ -]Compass|Kossovite|Tzar[ -]Guard|Gyrobomber)s?\\b",
+      "flags": "i",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 토탈 워: 워해머 병종 이름 중 구별되는 고유 명칭(영어, 대소문자 무시, 복수형 포함). 대체: 세계 안에서 지은 일반 명칭. 근거: 계획 과제 30(.omo/evidence/w2v/verify-task-6b.md N1: 과제 6 문서에 TW:WH 병종·인물 이름 약 19개가 노출됐으나 기존 금지어가 못 잡았다), 소유자 결정(2026-11-12), 병종 원칙 2.5절."
+    },
+    {
+      "id": "tw-units-en-proper",
+      "pattern": "\\b(?:Spearmen|Crossbowmen|Handgunners|Swordsmen|Halberdiers|Knights|Archers|Greatswords|Quarrellers|Zombies|Outriders|Pistoliers|Flagellants|Questing[ -]Knights|Knights[ -]Errant|Battle[ -]Pilgrims|Grail[ -]Knights|Longbeards|Dragon[ -]Princes|Phoenix[ -]Guard|Glade[ -]Guard|Pegasus[ -]Knights|Black[ -]Orcs|Savage[ -]Orcs|Night[ -]Goblins|Orc[ -]Boyz|Squigs|Blood[ -]Knights|Chaos[ -]Warriors|Chaos[ -]Knights|Chaos[ -]Spawn|Chaos[ -]Trolls|Chaos[ -]Warhounds|Chaos[ -]Chariots|Skeleton[ -]Warriors|Skeleton[ -]Archers|Marauder[ -]Horsemen|Marauder[ -]Horsemasters|Witch[ -]Elves|Ogre[ -]Bulls|Maneaters|Flame[ -]Cannons|Doom[ -]Divers|Frost[ -]Maidens|Jade[ -]Warriors|Gryphon[ -]Legion|Iron[ -]Daemon)s?\\b",
+      "flags": "",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 토탈 워: 워해머 병종 이름 중 일반 영어 명사와 겹치는 것(Spearmen, Crossbowmen, Handgunners, Swordsmen, Halberdiers, Knights, Archers 등). 대소문자 구분, 대문자 고유명사 표기만 잡는다. 일반 영어 spearmen, archers, knights of the old guard는 잡지 않는다. 근거: 계획 과제 30(.omo/evidence/w2v/verify-task-6b.md N1: 과제 6 문서에 TW:WH 병종·인물 이름 약 19개가 노출됐으나 기존 금지어가 못 잡았다). game-units-en-proper와 같은 방식."
+    },
+    {
+      "id": "tw-factions-ko",
+      "pattern": "(?<![가-힣])(?:스케이븐|뱀파이어 ?카운트|브레토니아|브레토니안|리자드 ?맨|툼 ?킹즈?|우드 ?엘프|하이 ?엘프|다크 ?엘프|카오스 ?드워프|비스트 ?맨|그린스킨|노르스카|키슬레프|그랜드 ?캐세이|오거 ?킹덤|뱀파이어 ?코스트|슬라네쉬|슬라니쉬|젠치|틴치|스케이븐블라이트|나가로스|드라켄호프|러스트리아|스크라이어 ?클랜|에신 ?클랜|페스틸런스 ?클랜|몰더 ?클랜)",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 토탈 워: 워해머 진영·지명의 한국어 표기. 일반 군사 용어(창병, 석궁병, 총병, 기사, 궁수)는 넣지 않는다. 근거: 계획 과제 30(.omo/evidence/w2v/verify-task-6b.md N1: 과제 6 문서에 TW:WH 병종·인물 이름 약 19개가 노출됐으나 기존 금지어가 못 잡았다). 한국어 표기는 나무위키·우만위키 토탈 워: 워해머 문서에서 확인했다."
+    },
+    {
+      "id": "tw-lords-ko",
+      "pattern": "(?<![가-힣])(?:카를 ?프란츠|발타자르 ?겔트|볼크마르|루엔 ?레옹쾨르|웅그림|운그림|옹그림|토르그림|토그림|그루지베어러|그러지베어러|그롬브린달|벨레가르|세트라|칼리다|카테프|아르칸|나가쉬|만프레드|만프레트|이사벨라 ?폰 ?칼슈타인|블라드 ?폰 ?칼슈타인|폰 ?칼슈타인|켐믈러|헬만 ?고스트|네페라타|마즈다문디|크로크가르|테헨하우인|틱타크토|로드 ?크로악|그림고르|그림고어|아자그|스카스닉|워르작|고르바드|스크롤크|이킷 ?클로|스닉치|탄쿠올|말레키스|모라시|헬레브론|말루스 ?다크블레이드|로키르|티리온|테클리스|알라리엘|알리스 ?아나르|엘타리온|아카온|시그발드|발키아|벨라코르|스카브란드|카이로스|쿠가스|고트렉|토드브링어|그리서스|울프릭|아라네사|킬로스트라|녹틸루스|루터 ?하콘|타무르칸|코스탈틴|토렉 ?아이언브로우|카자도르|말라카이 ?마카이손|고두즈|이므릭|드라이카|두르투|마르쿠스 ?울프하트|데찰라|타우록스|스컬테이커|에피데미우스)",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 토탈 워: 워해머 군주·영웅 이름의 한국어 표기(표기 변이 포함). 앞 글자가 한글이면 잡지 않는다. 근거: 계획 과제 30(.omo/evidence/w2v/verify-task-6b.md N1: 과제 6 문서에 TW:WH 병종·인물 이름 약 19개가 노출됐으나 기존 금지어가 못 잡았다). 한국어 표기 변이(웅그림·운그림·옹그림 등)는 커뮤니티 문서에서 확인했다."
+    },
+    {
+      "id": "tw-units-ko",
+      "pattern": "(?<![가-힣])(?:클랜랫|스톰버민|플레이그 ?몽크|둠 ?휠|랫 ?오거|워프 ?파이어 ?스로어|워프록 ?제잘|래틀링 ?건|레이트링 ?건|가터 ?러너|사우루스|크록시고르|스테가돈|바실라돈|스킹크|템플 ?가드|라이크스 ?가드|라이크스가드|헬스톰|헬블래스터|피스톨리어|플래절런트|데미그리프|피닉스 ?가드|실버 ?헬름|드래곤 ?프린스|글레이드 ?가드|워댄서|네크로폴리스 ?나이트|크립트 ?구울|헥스레이스|블러드서스터|플레이그베어러|핑크 ?호러|소울 ?그라인더|카오스 ?워리어|카오스 ?나이트|비스티거|스퀴그|노블라|스노틀링|아라크나록|아이언가트|리드벨처|선더터스크|아이언드레이크|둠시커|워프 ?그라인더)",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 토탈 워: 워해머 병종 이름 중 구별되는 고유 명칭의 한국어 표기. 일반 군사 용어(창병, 석궁병, 총병, 기사, 궁수)는 넣지 않는다. 근거: 계획 과제 30(.omo/evidence/w2v/verify-task-6b.md N1: 과제 6 문서에 TW:WH 병종·인물 이름 약 19개가 노출됐으나 기존 금지어가 못 잡았다). 스팀 탱크·그레이브 가드 같은 기존 항목은 game-units-ko·game-units-en-proper가 맡는다."
     }
   ],
   "required": [
