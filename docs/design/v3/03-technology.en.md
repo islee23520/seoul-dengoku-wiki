@@ -469,7 +469,7 @@ Basis: 01-core 2.2 (Government words "token, ration"; Free City words "watt, lit
 
 ### 11.2 The Free Cities: kilos and hand-hours
 
-- The Free Cities count value in **electricity**. Market price boards are written in kilowatt-hours (kWh), which people shorten to "kilo". What actually passes hand to hand is charged battery packs, and contract slips on which a workbench writes and stamps a promise to supply electricity (provisional T04-51).
+- The Free Cities count value in **electricity**. Market price boards are written in kilowatt-hours (kWh), which people shorten to "kilo". What actually passes hand to hand is charged battery packs, and contract slips on which a workbench writes and stamps a promise to supply electricity (provisional T04-51). Chapter 05 calls the two by their in-world names, **full packs** and **surety tags** (chapter 05 section 6.3). This bible uses those names.
 - Work is counted in **hand-hours**: one hour of one pair of hands under surety. At market 1 hand-hour is usually 0.5 kWh; a board hand's or body fitter's hand-hour is 2 to 4 kWh.
 - Water is contracted in litres and heat in watts. Contracts such as "20 kW of outside heat to this station for a season" or "30 m³ a day" are the backbone of the Free City economy.
 - Prices differ a little from city to city. In Gangseo, which holds the wind-machine fields, electricity is cheap; in Yeongdeungpo, which hosts the market, goods are cheap. Traders live on closing the gap between the two.

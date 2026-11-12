@@ -533,6 +533,7 @@ Concepts from the old wiki (`docs/drafts/*.ko.md`, `data/sql`) that v3 does not 
 | A world with only hand-to-hand weapons | the old premise of the era arms document | Modern and future weapons exist but are scarce (Bible 1, rows 5 and 15) |
 | Great Blackout date 2030-10-14 | old timelines | About 2026, no date (Bible section 3, Q2) |
 | Martial-arts schools and titles | old people's titles | Job names (Bible section 4) |
+| The old "Infected" group (the old compendium's reading of G19-G24 as changed people) | the old hostile ecology compendium and its category name | Rim machines (chapter 02 sections 1 and 6.6). No sickness turns people into something else (added by task 9 from chapter 02 section 10, item 9) |
 
 On hold: **the return network** (귀환망) is the name in Sin Jong-mok's title ("return network field contractor"), and Bible section 6 records keeping his title. It is not retired; chapter 07 sets its place inside v3 (provisional T02-92).
 

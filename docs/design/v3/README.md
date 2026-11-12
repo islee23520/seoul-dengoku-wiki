@@ -1,6 +1,6 @@
 # v3 세계 생태계 바이블 (World Ecosystem Bible v3)
 
-상태: 작성 중. 계획 `.omo/plans/wiki-lore-rebuild-v3.md`.
+상태: 01~09장 통합(과제 9, 2026-11-13). 10장은 설계 적용 프로필. 계획 `.omo/plans/wiki-lore-rebuild-v3.md`.
 
 소유자 목표(2026-11-12, 원문): "...must re think from very beggining all of eco system ecept the name of the poeple and the potirait face and the sex of it". 추가 답: "바이블 골격 유지, 나머지 재설계", 고정 "서울 실제 지리·역 이름, 인물 나이·가족 관계".
 
@@ -41,6 +41,10 @@ node scripts/pages/v3-fixed-facts.mjs --check   # 고정 사실이 스냅샷과 
 | `05-free-city.md` | 자유도시 사회 | 6 |
 | `06-arc.md` | 아크 사회 | 7 |
 | `07-people-and-war.md` | 인물 배치 규칙, 세력 간 생활, 병종 교리 | 8 |
-| `08-document-map.md` | 63개 slug의 v3 주제와 제목 | 9 |
+| `08-document-map.md` | 63개 slug의 v3 주제, 새 제목, 근거 절, 문서 과제 10~15 묶음. 새 slug 없음 | 9 |
+| `09-ck3-systems.md` | CK3 역공학 근거: 캠페인 층과 전장 층의 결합 계약, 세력별 CK3 대응 | 29 |
+| `10-design-profile.md` | 설계 지침(`.agents/skills/game-design-practice/SKILL.md`)을 이 프로젝트에 적용하는 값(한국어만) | 오케스트레이터(4ee82a33c) |
 
-각 장은 한국어 원문(`.md`)과 영어 미러(`.en.md`)를 둔다. 지어낸 항목은 모두 `docs/drafts/reports/v3-provisional-ledger.md`에 올린다.
+통합 기록: `docs/drafts/reports/v3-integration-log.md`(과제 9가 찾고 고친 장 사이의 어긋남, 이긴 쪽과 까닭). 정본 바이블 `docs/CANON-BIBLE.md` 0절이 이 디렉터리를 골격 아래의 권위로 가리킨다.
+
+각 장은 한국어 원문(`.md`)과 영어 미러(`.en.md`)를 둔다. 지어낸 항목은 모두 `docs/drafts/reports/v3-provisional-ledger.md`와 과제별 조각 `docs/drafts/reports/v3-ledger-parts/t<NN>.md`에 올린다(과제 24가 합친다).

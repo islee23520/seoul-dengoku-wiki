@@ -13,7 +13,7 @@
 | 1 | 사람날 환산이 둘이었다: 03장 표는 1 kWh = 약 0.7 사람날, 같은 표 비고와 05장은 1 사람날 = 약 1.5 kWh. 그래서 우물물 1 m³가 05장에서 2.9 킬로, 1.5로 셈하면 3.0 킬로. 전동 손 첫 해 충전도 0.7로 셈해 74(합 335) | 03:491, 03:509, 03:531, 05:207, 장부 조각 t04(T04-54, T04-55), t06(T06-32) | 1 사람날 = 1.5 kWh를 정의로 두고 1 kWh = 약 0.67 사람날로 고쳤다. 우물물 1 m³ = 2 사람날 = 3 킬로. 충전 105 kWh ÷ 1.5 = 70, 첫 해 합 330 | 03장 11.4절의 정의(하루 끼니와 물이 장터에서 1.5 kWh)가 근본이다. 0.7은 1/1.5를 반올림한 값이라 그것으로 다시 셈하면 값이 미끄러진다 |
 | 2 | 03장 영어의 "Fitter"(맞춤이)가 다른 장의 fitter(정비공, bench fitter)와 겹쳤다. 05장 영어는 판공·맞춤이를 "fitter or matcher"로 옮겼고, 판공·맞춤이의 하루를 "four or five times"로 적어 한국어 "네 배에서 여덟 배"와 달랐다 | 03.en:441, 444, 473, 527; 05.en:197, 209 | 맞춤이 = Body fitter, 판공 = board hand로 통일. 05 영어의 배수를 "four to eight times"로 | 03장 10.1절이 낱말의 정본이다. 정비공은 06·07장대로 bench fitter |
 | 3 | 01-core 영어 8.3절 표의 한국어 칸이 "곁집 어른"이었다 | 01.en:467 | "곁집장"으로 | 한국어 원문과 06장. 06장은 "곁집 어른"을 곁집장의 윗세대에만 쓴다 |
-| 4 | 모든 장 영어의 역 이름이 바로잡기 전 값이었다(Sicheong, Changdong, Seoulsup, Euljiro-ipgu, Myeongdong, Mokdong, Amsa Historic Park, Gosok Terminal, Geondae-ipgu, Gimpo Airport, Magoknaru, Daemosanipgu, Chongsindae-ipgu (Isu), 4.19 Democratic Cemetery 등 102곳) | 01~07 `.en.md` | `docs/design/v3/fixed-facts.corrections.json`의 `geography.stations` 바로잡은 값으로 바꿨다(City Hall, Chang-dong, Seoul Forest, Euljiro 1-ga, Myeong-dong, Mok-dong, Amsa History Park, Express Bus Terminal, Konkuk Univ., Gimpo Int'l Airport, Magongnaru, Daemosan, Chongshin Univ. (Isu), April 19th National Cemetery 등). 04.en:40의 "National Assembly Building on Yeouido"는 역이 아니라 건물이라 그대로 뒀다 | 고친 데이터가 정본이다 |
+| 4 | 모든 장 영어의 역 이름이 바로잡기 전 값이었다(Sicheong, Changdong, Seoulsup, Euljiro-ipgu, Myeongdong, Mokdong, Amsa Historic Park, Gosok Terminal, Geondae-ipgu, Gimpo Airport, Magoknaru, Daemosanipgu, Chongsindae-ipgu (Isu), 4.19 Democratic Cemetery 등 102군데) | 01~07 `.en.md` | `docs/design/v3/fixed-facts.corrections.json`의 `geography.stations` 바로잡은 값으로 바꿨다(City Hall, Chang-dong, Seoul Forest, Euljiro 1-ga, Myeong-dong, Mok-dong, Amsa History Park, Express Bus Terminal, Konkuk Univ., Gimpo Int'l Airport, Magongnaru, Daemosan, Chongshin Univ. (Isu), April 19th National Cemetery 등). 04.en:40의 "National Assembly Building on Yeouido"는 역이 아니라 건물이라 그대로 뒀다 | 고친 데이터가 정본이다 |
 | 5 | 09장 7절 1번: 후퇴 시점 | roster 10.3 | "언제든 내릴 수 있다(14일 제한 없음), 물러나는 분대는 추격을 받는다"를 더함 | 09장 3.3절 |
 | 6 | 09장 7절 2번: 전투 결과 계약 | roster 10.5 7번(새 항) | 돌려받음 묶음(사상자 30%/100%, 다친 사람 귀환, 붙잡힌 인물, 형세, 투입물, 기계, 역의 주인)을 계약으로 넣음 | 09장 3.5절 |
 | 7 | 09장 7절 3번: 보충 비율 | roster 6.3, 13절 P20 | [대기] 징발형 턴당 3%, 상비형 턴당 10% | 09장 3.5.2절 |
@@ -23,7 +23,7 @@
 | 11 | 09장 7절 7번: 정비공을 잃은 아크 군대 | roster 9.3; 06:516 | 캠페인 규칙 "지원 분대의 야전 정비공을 모두 잃은 아크 군대는 그 턴 끝에 본역 쪽으로 물러난다"를 더함 | 06장 11.4절 교리를 캠페인 규칙으로 |
 | 12 | 09장 7절 8번: 지휘 한 장 밖 도시의 분대 | 05:404; roster 10.1 | 같은 전장에서는 플레이어 지휘 밖의 AI 아군 | 09장 3.11절 |
 | 13 | 09장 7절 9번: roster에 2026-11-13 정정 전 정부 칭호(상원의원, Senate Guard Hall)와 비유 낱말(도시국가, 왕, 봉건)이 남아 있었다 | roster 4.2(근거·건물), 4.3, 4.4(가문 본청), 8.3, 9.2, 11.1, 13 P1 | 국회의원 / Member of the National Assembly, 국회의원 근위청 / Assembly Member's Guard Hall, 곁집 본청 / Near House Seat Hall, "따로 선 도시들, 윗자리가 없다", "장부의 군대". 130~132 행 이름은 과제 20이 맞춘다(07:1194에 적음) | 바이블 9.4절 2026-11-13 국회의원 결정, 01-core 2.4절 |
-| 14 | 09장 7절 10번: "형세"가 낱말표에 없었다 | CANON-BIBLE 5.4 | 형세(전황) [제안]으로 더함 | 09장 3.6절 |
+| 14 | 09장 7절 10번: "형세"가 낱말표에 없었다 | CANON-BIBLE 5.1 | 형세(전황) [제안]으로 더함 | 09장 3.6절 |
 | 15 | 09장 7절 11번: 플레이어 인물의 전장 사망 | roster 13절 P19, 바이블 9.5절 | 기본값 "막지 않는다"를 대기 목록과 소유자 목록에 | 09장 3.12절 |
 | 16 | 세력 인원: 07장은 무소속 8명 가운데 넷을 자유도시 구로 줄에, 하나를 아크 교주의 집 줄에 더해 504/194/321/3인데, 05·06장 표는 더함 전의 190/320만 보였다 | 05:449, 06:548, 04:526 | 05·06장 정원표에 "07장 배정"과 "배정 뒤 합" 줄을 더하고, 04장에 무소속 셋이 어느 표에도 들지 않는다는 문장과 504 + 194 + 321 + 3 = 1,022를 적었다 | 07장 3.3절 |
 | 17 | 다리 북쪽 끝을 07장은 "정부의 동장"이 지킨다고 했다 | 07:1036 | 국군(수도방위사령부 직할대) | 04장 14.1절과 16.2절 정원표가 국군을 거기 세웠다 |
@@ -54,6 +54,9 @@
 | 42 | 01-core 안: 빛밭 1인당 90 m² × 1 m²당 한 해 1,000 kcal = 하루 약 247 kcal, 2,600 kcal의 9.5%인데 표는 12% | 01:273, 원장 T02-36 | 1 m²당 한 해 약 1,250 kcal(하루 약 310 kcal, 12%). 90 m²와 열 수지는 그대로 | 12%와 90 m²(날숨 열 수지)가 다른 장에 걸려 있어 수확 값을 맞췄다 |
 | 43 | 01-core 6.3절 표와 03장 8절은 "서울 안의 기계" 목록을 G13~G26으로 적었다. 02장은 G17~G24·G26을 서울에 들어오지 않는 테두리 기계로 둔다 | 01:334, 03:382 | 서울 안 G13~G16·G25, 흘러든 G19·G23. 테두리 기계 G17~G24·G26 | 02장 1절·6.1절. 01-core 6.3절 스스로 "기계는 서울 안으로 들어오지 않는다"고 했다 |
 | 44 | 동력 덩이의 이름: 04장 한국어 "연료 덩이", 영어는 04장 "power cells", 06·07장 "power packs"(05장 "pack"은 전지 꾸러미) | 04:254, 06.en:350·358·393·404·585, 07:529 | 동력 덩이 / power core로 통일 | 03장 2.1절과 01-core |
+| 45 | 자유도시의 돈 이름: 03장 "전지 꾸러미"와 "계약 쪽지", 05장 "찬 꾸러미"와 "보증표"(05장 14.2절 2번이 통합 과제에 넘김) | 03:472 | 03장에 05장의 세계 안의 말을 쓴다는 문장을 더함 | 05장 6.3절. 01-core 2.3절대로 세계 안의 말이 앞선다 |
+| 46 | 02장 10절 9항: 옛 "감염자" 갈래를 01-core 폐기 목록에 더해 달라 | 01:536 | 폐기 개념 목록에 행을 더함. 금지 어휘에도 감염자를 넣었다 | 02장 1절 |
+| 47 | 06장 영어 12.4절 표의 "Elders 40"(대문자 Elder가 아크 칭호처럼 읽힌다) | 06.en:578 | "Near House elders 40" | 01-core 8.3절, 금지 어휘 arc-elder-title-en |
 
 ## 2. 고치지 않은 것
 

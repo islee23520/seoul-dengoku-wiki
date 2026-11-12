@@ -575,7 +575,7 @@ Each district leans differently. Seocho has many in exchange and negotiation bec
 
 | Group | Titles and occupations (Korean / English) | Stage | Minimum age |
 |---|---|---|---|
-| Ruling | 교주 / Hierophant [Approved]. 곁집장 / Head of the Near House. 맞수 (the next person in the Near House, or one who reaches for the Head's seat; a position, not a title) / rival heir. 곁집 어른 (the Head's siblings' and parents' generation) / Near House elder | Hierophant, Heads and rivals Key; elders S1-S2 | Heads: two parts instead of an age (3.5). Elders 40 |
+| Ruling | 교주 / Hierophant [Approved]. 곁집장 / Head of the Near House. 맞수 (the next person in the Near House, or one who reaches for the Head's seat; a position, not a title) / rival heir. 곁집 어른 (the Head's siblings' and parents' generation) / Near House elder | Hierophant, Heads and rivals Key; elders S1-S2 | Heads: two parts instead of an age (3.5). Near House elders 40 |
 | Shelter Heads, Bench Keepers | 대피소장 / Shelter Head. 정비장 / Bench Keeper | Seat-station Bench Keepers and Shelter Heads of large shelters S1, the rest S2 | Shelter Head 28, Bench Keeper 25 |
 | Fitting and care | 정비공 / bench fitter. 야전 정비공 / field fitter. 돌봄이 (tends the ailing baptised) / recovery carer | S2-S4 | fitter 18 |
 | Fighting | 호위장 / Guard Captain. 세례 전투원 / baptised fighter. 가문 징집병 / house levy. 교주 호위 / Hierophant's guard | Guard Captain S1, the rest S2-S4 | Guard Captain 30, baptised fighter 20, levy 17 |
