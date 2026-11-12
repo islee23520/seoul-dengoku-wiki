@@ -55,7 +55,7 @@ function extract() {
       identity: pick(t.identity ?? {}, ['name', 'gender', 'ethnicity', 'age', 'ageAsOf']) };
   }
   return {
-    schema: 'v3-fixed-facts.3',
+    schema: 'v3-fixed-facts.4',
     faces,
     people,
     clans,
@@ -70,7 +70,7 @@ function extract() {
       lines: all('SELECT id, name, name_ko, color FROM map_line ORDER BY id'),
       landmarks: all('SELECT id, region_id, x, y FROM map_landmark ORDER BY id'),
       titles: all('SELECT id, rank, name, name_ko, parent_id, county_ids, path FROM map_title ORDER BY id'),
-      states: all('SELECT state_id, label_x, label_y, capital_x, capital_y, capital_station_id, capital_region_id, exclusive_districts FROM map_state ORDER BY state_id'),
+      states: all('SELECT state_id, label_x, label_y, exclusive_districts FROM map_state ORDER BY state_id'),
       meta: all("SELECT key, value FROM map_meta WHERE key IN ('width','height','projection','attribution','attribution_ko','major_station_ids') ORDER BY key"),
       rail: crypto.createHash('sha256').update(JSON.stringify(all('SELECT * FROM map_rail ORDER BY id'))).digest('hex'),
       underground: crypto.createHash('sha256').update(JSON.stringify(all('SELECT * FROM map_underground ORDER BY station_id'))).digest('hex'),
@@ -93,6 +93,8 @@ function diff(a, b, at, out) {
 
 const mode = process.argv[2];
 const now = extract();
+// An added age must be the same in en and ko.
+const ageMismatch = now.people.filter((p) => ['birthDate', 'birthday', 'age', 'ageAsOf'].some((k) => JSON.stringify(p.en[k]) !== JSON.stringify(p.ko[k]))).map((p) => p.id);
 if (mode === '--write') {
   if (fs.existsSync(SNAP) && !process.argv.includes('--force')) throw new Error(`E_SNAPSHOT_EXISTS: ${SNAP} is frozen; it is written once (task 1)`);
   fs.mkdirSync(path.dirname(SNAP), { recursive: true });
@@ -102,6 +104,7 @@ if (mode === '--write') {
   const snap = JSON.parse(fs.readFileSync(SNAP, 'utf8'));
   const out = [];
   diff(snap, now, '$', out);
+  if (ageMismatch.length) out.push(...ageMismatch.slice(0, 20).map((id) => `${id}: age fields differ between en and ko`));
   if (out.length) { console.error(`E_FIXED_FACT_CHANGED (${out.length}${out.length >= 50 ? '+' : ''}):\n${out.join('\n')}`); process.exit(1); }
   console.log('fixed facts unchanged');
 } else {
