@@ -43803,7 +43803,7 @@ Seolleung and Samseong in Gangnam-gu, Gyeongbokgung in Jongno-gu, City Hall in J
 | Bongcheon | Bongcheon | 37.48239 | 126.94194 | Seoul Metropolitan Subway |
 | Seouldae Venture Town | Seoul Nat''l Univ. Venture Town | 37.47200 | 126.93371 | Seoul Metropolitan Subway |
 | Seouldaeipgu | Seoul Nat''l Univ. | 37.48122 | 126.95272 | Seoul Metropolitan Subway |
-| Seoul Nat''l Univ. (Gwanak-gu Office) | Seoul Nat''l University (Gwanak-gu Office) | 37.48122 | 126.95275 |  |
+| Seouldaeipgu (Gwanak-gu Office) | Seoul Nat''l Univ. (Gwanak-gu Office) | 37.48122 | 126.95275 |  |
 | Seowon | Seowon | 37.47821 | 126.93301 | Seoul Metropolitan Subway |
 | Sillim | Sillim | 37.48423 | 126.92968 | Seoul Metropolitan Subway |
 
