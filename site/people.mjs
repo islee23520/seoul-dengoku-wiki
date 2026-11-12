@@ -49,7 +49,7 @@ const STR = {
   ko: {
     profile: '역량과 특성', ability: '역량', base: '기본', final: '최종', skills: '행동 숙련', skill: '숙련', level: '수준', traits: '특성', behavior: '행동', stress: '스트레스', relationship: '관계', health: '신체 상태', unassessed: '신체 상태는 아직 평가되지 않았습니다.', part: '부위', severity: '손상 정도',
     abilityNote: '기본 역량 10은 해당 분야 숙련자 수준입니다. 기본 상한은 20, 모든 효과를 반영한 최종 상한은 100입니다.',
-    basics: '기본 정보', name: '이름', state: '소속 단체', stateId: '정체 ID', faction: '세력', birth: '생년월일', age: '만 나이', ageAsOf: '나이 기준일', position: '직위', tier: '등급', rank: '품계', occupation: '직업', gender: '성별', stage: '단계', generation: '세대',
+    basics: '기본 정보', name: '이름', state: '소속 정체', stateId: '정체 ID', faction: '세력', birth: '생년월일', age: '만 나이', ageAsOf: '나이 기준일', position: '직위', tier: '등급', rank: '품계', occupation: '직업', gender: '성별', stage: '단계', generation: '세대',
     relations: '관계와 접점', liege: '직속 주군', contact: '업무 접점', courtVassal: '궁정 가신', canon: '정본 상세', fullCard: '정본 카드 원문 전체',
     values: '가치관', desire: '욕망', orientation: '지향', union: '결합', household: '가정과 신앙', personFaith: '개인 신앙', houseFaith: '가문 신앙', humanoid: '휴머노이드 가정 반입', humanoidExcluded: '소속 정체가 반입을 막음', humanoidReview: '개별 심사',
     titles: '2126년 겨울의 자리와 위 관할', holdings: '직접 보유한 땅과 시설', subHoldings: '이 공작령 안 가신의 보유지', retinue: '가신',
@@ -58,7 +58,7 @@ const STR = {
     clanIndex: '본관 가문 색인', clanLead: (c, n) => `본관 가문 ${c}개, 등록 인물 ${n}명. 각 가문 페이지에서 구성원과 가계도를 볼 수 있습니다.`, nonKorean: '본관을 적용하지 않는 가계', nonKoreanLead: '한국 문중의 본관이나 항렬을 적용하지 않는 가계입니다.',
     members: (n) => `가문 인물 (${n}명)`, branches: '재합의한 가계', treeTitle: '가계도', generation_n: (n) => `${n}세대`, unknownParent: '부모 미기록', person: '인물', historical: '역사 속 선대', preserved: '보존', authored: '저작', bio: '출생', died: '사망', open: '페이지 열기',
     peopleTitle: '인물', search: '검색', searchPh: '예: 고예진, 급수, 주요', filters: '등장인물 필터', all: '전체', reset: '필터 초기화', resultCount: (n) => `검색 결과 ${n}명`, sortHint: '이름순',
-    f: { faction: '세력', state: '소속 단체', tier: '등급', occupation: '직업', gender: '성별' }, cols: { name: '이름', title: '직함', state: '소속 단체', occupation: '직업', rank: '품계' },
+    f: { faction: '세력', state: '소속 정체', tier: '등급', occupation: '직업', gender: '성별' }, cols: { name: '이름', title: '직함', state: '소속 정체', occupation: '직업', rank: '품계' },
     noscript: '필터는 자바스크립트가 필요합니다. 전체 목록은 아래에 있습니다.', unregistered: '미등록',
   },
 };
