@@ -51334,8 +51334,6 @@ The Government''s first rule is simple. A person exists if the ledger says so. L
 
 In winter 2126 that bank has a new name in northern talk. The stations of Gangnam bound themselves into the Arc four years ago, and the woman they call Hierophant, Go Ye-jin, grew up in the Free City and has never stood in a Government ledger. Northern clerks write the word "Arc" in the margins of their reports, as if keeping it out of the columns kept it out of the world. The third water contract is coming, and the north will sit across a table from people it doesn''t count.
 
-This page covers the Government''s people as they live: who ranks where, what the law asks, how goods and labour move, what a day in the stations is like, and what soldiers and residents wear against a winter that never ends.
-
 <a id="social-structure"></a>
 ## Social Structure
 
@@ -51397,7 +51395,7 @@ In a crisis the levy becomes the muster. The Senator calls up ledger adults by h
 <a id="rations"></a>
 ### Rations
 
-Rations are drawn by category, and each card is tied to a single station''s ration office. A family registered at Hoehyeon can''t draw bread at Chungmuro, even one stop away. Moving station means a new registration, a new card and a wait of weeks.
+Rations are drawn by category, and each card is tied to a single station''s ration office. A family registered at Hoehyeon can''t draw bread at Chungmuro, only two stops away with Myeongdong between. Moving station means a new registration, a new card and a wait of weeks.
 
 | Category | Daily bread share | Other rations |
 |---|---|---|
@@ -51552,8 +51550,6 @@ Government soldiers almost never carry machine parts. The clinics keep their few
 
 2126년 겨울, 강 건너에는 북쪽 말로 새 이름이 붙어 있다. 강남의 역들은 네 해 전 아크로 묶였고, 그들이 교주라 부르는 고예진은 자유도시에서 자랐으며 정부 장부에 한 번도 오른 적이 없다. 북쪽 서기들은 보고서 여백에 "아크"라고 적는다. 칸 안에 넣지 않으면 세상에도 없는 것처럼. 세 번째 급수계약이 다가오고, 북쪽은 자기가 세지 않는 사람들과 한 탁자에 앉게 된다.
 
-이 문서는 정부 사람들이 사는 모습을 다룬다. 누가 어디에 서는지, 법이 무엇을 요구하는지, 물자와 노동이 어떻게 오가는지, 역의 하루가 어떤지, 그리고 끝나지 않는 겨울을 견디려고 병사와 주민이 무엇을 입는지다.
-
 <a id="social-structure"></a>
 ## 사회 구조
 
@@ -51615,7 +51611,7 @@ Government soldiers almost never carry machine parts. The clinics keep their few
 <a id="rations"></a>
 ### 배급
 
-배급은 범주별로 받고, 배급표는 역 배급소 한 곳에 묶인다. 회현에 등록된 가구는 한 정거장 떨어진 충무로에서도 빵을 받을 수 없다. 역을 옮기면 새로 등록하고 새 배급표를 받기까지 몇 주를 기다린다.
+배급은 범주별로 받고, 배급표는 역 배급소 한 곳에 묶인다. 회현에 등록된 가구는 명동을 사이에 두고 두 정거장 떨어진 충무로에서도 빵을 받을 수 없다. 역을 옮기면 새로 등록하고 새 배급표를 받기까지 몇 주를 기다린다.
 
 | 범주 | 하루 빵 몫 | 다른 배급 |
 |---|---|---|
@@ -51689,7 +51685,7 @@ Government soldiers almost never carry machine parts. The clinics keep their few
 
 모피가 가장 분명한 규칙이다. 머리에 진짜 모피를 쓸 수 있는 것은 상원의원 가문뿐이고, 사무 서기는 모피처럼 보이는 털 천 모자를 쓴다. 둘째 규칙은 밝은 색이다. 옅은 천은 때와 추위를 그대로 드러내서 따뜻한 중심부에 사는 사람만 깨끗이 지킬 수 있고, 법은 그것을 그들 몫으로 남긴다.
 
-규칙은 샌다. 상원의원 가문의 헌 외투는 신당 장터로 되팔리고, 혼례 날 밝은 외투를 입은 근로 가구의 딸은 모두가 알아보지만 누구도 고발하지 않는 광경이다.
+규칙은 샌다. 상원의원 가문의 헌 외투는 신당 장터로 되팔리고, 근로 가구의 딸이 혼례 날 밝은 외투를 입고 나서면 모두가 알아보지만, 누구도 고발하지 않는다.
 
 <a id="winter-layers"></a>
 ### 겨울 겹옷
@@ -51708,7 +51704,7 @@ Government soldiers almost never carry machine parts. The clinics keep their few
 <a id="soldiers-look"></a>
 ## 병사의 겉모습
 
-정부 병사는 생긴 그대로다. 총을 든 장부 사람들이다. 군대는 얇은 예산 위의 연합 병과다. 싼 징발 분대가 많고, 훈련받은 소총수는 그보다 적고, 국가 포창이 살려 둔 포와 장갑차가 있고, 드론을 다루는 작은 국가 비행반이 있다. 기계 몸을 단 전사는 없고, 고용한 부대도 없다. 정부는 장부 밖에서 병사를 사지 않는다.
+정부 병사는 보이는 그대로, 총을 든 장부 사람들이다. 군대는 얇은 예산 위의 연합 병과다. 싼 징발 분대가 많고, 훈련받은 소총수는 그보다 적고, 국가 포창이 살려 둔 포와 장갑차가 있고, 드론을 다루는 작은 국가 비행반이 있다. 기계 몸을 단 전사는 없고, 고용한 부대도 없다. 정부는 장부 밖에서 병사를 사지 않는다.
 
 | 병과 | 드는 것 | 입는 것 |
 |---|---|---|

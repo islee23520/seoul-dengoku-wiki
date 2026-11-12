@@ -16,8 +16,6 @@ The Government's first rule is simple. A person exists if the ledger says so. Le
 
 In winter 2126 that bank has a new name in northern talk. The stations of Gangnam bound themselves into the Arc four years ago, and the woman they call Hierophant, Go Ye-jin, grew up in the Free City and has never stood in a Government ledger. Northern clerks write the word "Arc" in the margins of their reports, as if keeping it out of the columns kept it out of the world. The third water contract is coming, and the north will sit across a table from people it doesn't count.
 
-This page covers the Government's people as they live: who ranks where, what the law asks, how goods and labour move, what a day in the stations is like, and what soldiers and residents wear against a winter that never ends.
-
 <a id="social-structure"></a>
 ## Social Structure
 
@@ -79,7 +77,7 @@ In a crisis the levy becomes the muster. The Senator calls up ledger adults by h
 <a id="rations"></a>
 ### Rations
 
-Rations are drawn by category, and each card is tied to a single station's ration office. A family registered at Hoehyeon can't draw bread at Chungmuro, even one stop away. Moving station means a new registration, a new card and a wait of weeks.
+Rations are drawn by category, and each card is tied to a single station's ration office. A family registered at Hoehyeon can't draw bread at Chungmuro, only two stops away with Myeongdong between. Moving station means a new registration, a new card and a wait of weeks.
 
 | Category | Daily bread share | Other rations |
 |---|---|---|
