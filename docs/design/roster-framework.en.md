@@ -131,7 +131,7 @@ Use one of these `role` values that fits the category. The task 5 role icons rea
 | Tier | What makes a unit this tier | Typical |
 |---|---|---|
 | 1 | Briefly gathered people with basic arms. Runs without any scarce input | Ledger conscripts, house levies |
-| 2 | Squads in standing training, or common squads that use one scarce input | Rifle sections, contract spearmen |
+| 2 | Squads in standing training, or common squads that use one scarce input | Rifle sections, contract spear companies |
 | 3 | Skilled crews, rare equipment, first-stage implants. May carry a cap | Baptised breakers, workshop strike drones |
 | 4 | Faction elite. Always capped, and badly weakened when its scarce input runs out | Guards, armoured cars, jamming teams |
 | 5 | One or two per faction. Hard to replace once lost | Restored old war machines, top baptised fighters |
