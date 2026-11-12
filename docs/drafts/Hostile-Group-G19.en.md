@@ -9,7 +9,7 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 ## Common species and variants
 
-On a midsummer night the people in the cooling corridor have wet mouths and necks, blue grime on the fingertips, and a gurgle with every breath. Cold water has pooled under the valve, in the floor pipe, and in the condensate drain.
+On a blizzard-week night the people in the cooling corridor have wet mouths and necks, blue grime on the fingertips, and a gurgle with every breath. Cold water has pooled under the valve, in the floor pipe, and in the condensate drain.
 
 The Water Ghost, the Water Cough, and the Pipe Apparatus are in the same valve room. The Water Ghost is in the pooled water, the Water Cough is in front of the valve, and the Pipe Apparatus is on the pipe. The Gurglers standing on each pipe are on the branch side of the Pipe Apparatus.
 
@@ -19,8 +19,8 @@ The Water Ghost, the Water Cough, and the Pipe Apparatus are in the same valve r
 
 | Item | Record |
 |---|---|
-| Origin | The Sluice Bureau supply watch sees a person on a midsummer night in the valve room of the Taeuk Group underground cooling corridor. The person is standing in the valve room. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. / Footsteps sound beyond the corner of the corridor. At the threshold of the valve room a voice rings the iron plate of the pipe. The Sluice Bureau supply watch is on the side of the Noryangjin Line bypass water main. The eyes under the work lamp are narrow. |
-| Habitat and movement | On a midsummer night the Sluice Bureau supply watch stands in the valve room of the Taeuk Group underground cooling corridor. Gurglers gather in the valve room and on the side of the Noryangjin Line bypass water main. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. The eyes under the work lamp are narrow. / Water stands to the knee in the floor pipe of the cooling corridor. The Water Ghost is in that water, and the part above the shoulders is out. The flesh is swollen, and the spaces between the fingers are white. The Water Cough stands in front of the valve. With each cough a handful of cold water falls from the throat to the floor. The boots of the Sluice Bureau supply watch are at the water's edge. / The Pipe Apparatus lies prone on the bypass water main. The knees and the hands are at the joint, and the body is toward the supply branch. A Gurgler of the same pipe stands on the branch side. On the pipes where an iron plate lies across the joint, a Gurgler stands on every pipe. The needle of the Noryangjin Line bypass water-supply pressure gauge has fallen. |
+| Origin | The Sluice Bureau supply watch sees a person on a blizzard-week night in the valve room of the Taeuk Group underground cooling corridor. The person is standing in the valve room. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. / Footsteps sound beyond the corner of the corridor. At the threshold of the valve room a voice rings the iron plate of the pipe. The Sluice Bureau supply watch is on the side of the Noryangjin Line bypass water main. The eyes under the work lamp are narrow. |
+| Habitat and movement | On a blizzard-week night the Sluice Bureau supply watch stands in the valve room of the Taeuk Group underground cooling corridor. Gurglers gather in the valve room and on the side of the Noryangjin Line bypass water main. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. The eyes under the work lamp are narrow. / Water stands to the knee in the floor pipe of the cooling corridor. The Water Ghost is in that water, and the part above the shoulders is out. The flesh is swollen, and the spaces between the fingers are white. The Water Cough stands in front of the valve. With each cough a handful of cold water falls from the throat to the floor. The boots of the Sluice Bureau supply watch are at the water's edge. / The Pipe Apparatus lies prone on the bypass water main. The knees and the hands are at the joint, and the body is toward the supply branch. A Gurgler of the same pipe stands on the branch side. On the pipes where an iron plate lies across the joint, a Gurgler stands on every pipe. The needle of the Noryangjin Line bypass water-supply pressure gauge has fallen. |
 | Food and energy | Coolant is inside the shut valve. The wet rag and the gloves are in the bucket. The pressure of the Noryangjin Line bypass supply is below the mark. Condensate from the Duman River Far East Theater cold-cargo train has pooled on the iron plate of the drain. |
 | Life cycle and upkeep | The same person is at the joint of the bypass water main. The work clothes on the shoulders are dry. The mouth and the neck are wet. A gurgle comes from the throat with every breath drawn in. |
 | Senses | The person in the valve room faces the pipe where cold water has pooled. The chest is toward the vibrating iron plate. The eyes under the work lamp are narrow. The head is toward the Noryangjin Line bypass water-supply pressure gauge. |
@@ -56,7 +56,7 @@ The Water Ghost is in the knee-deep water on the floor of the cooling corridor. 
 | Type | Infected person |
 | Battlefield unit | Single individual |
 | Battlefield role | From the pooled water it draws boot tops into the pipe. |
-| Common species, variants and command scope | It is the water of the floor pipe in the cooling corridor on a midsummer night. The boots of the Sluice Bureau supply watch are at the edge of that water. |
+| Common species, variants and command scope | It is the water of the floor pipe in the cooling corridor on a blizzard-week night. The boots of the Sluice Bureau supply watch are at the edge of that water. |
 
 - Water stands to the knee in the floor pipe of the cooling corridor.
 - The Water Ghost is in that water, and the part above the shoulders is out.
@@ -78,7 +78,7 @@ The Water Ghost is in the knee-deep water on the floor of the cooling corridor. 
 | Type | Infected person |
 | Battlefield unit | Single individual |
 | Battlefield role | In front of the valve it drops cold water on the floor with each cough. |
-| Common species, variants and command scope | It is in front of the coolant valve in the valve room on a midsummer night. The Sluice Bureau supply watch is beside that valve. |
+| Common species, variants and command scope | It is in front of the coolant valve in the valve room on a blizzard-week night. The Sluice Bureau supply watch is beside that valve. |
 
 - The Water Cough stands in front of the valve.
 - With each cough a handful of cold water falls from the throat to the floor.
@@ -100,7 +100,7 @@ The Water Ghost is in the knee-deep water on the floor of the cooling corridor. 
 | Type | Infected person |
 | Battlefield unit | Single individual |
 | Battlefield role | It lies prone on the bypass water main, and its body is toward the supply branch. |
-| Common species, variants and command scope | It is on the Noryangjin Line bypass water main on a midsummer night. The Sluice Bureau supply watch is on the side of the pressure gauge. |
+| Common species, variants and command scope | It is on the Noryangjin Line bypass water main on a blizzard-week night. The Sluice Bureau supply watch is on the side of the pressure gauge. |
 
 - The Pipe Apparatus lies prone on the bypass water main.
 - The knees and the hands are at the joint.
@@ -112,7 +112,7 @@ The Water Ghost is in the knee-deep water on the floor of the cooling corridor. 
 
 ## Habitat record
 
-It is the valve room of the Taeuk Group underground cooling corridor. It is a midsummer night. The Sluice Bureau supply watch is on the side of the Noryangjin Line bypass water main.
+It is the valve room of the Taeuk Group underground cooling corridor. It is a blizzard-week night. The Sluice Bureau supply watch is on the side of the Noryangjin Line bypass water main.
 
 A person is standing in the valve room. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. The eyes under the work lamp are narrow. The chest is toward the vibrating pipe.
 
@@ -126,4 +126,4 @@ The Water Cough stands in front of the valve. With each cough a handful of cold 
 
 The Pipe Apparatus lies prone on the bypass water main. The knees and the hands are at the joint, and the body is toward the supply branch. On the pipes where an iron plate lies across the joint, a Gurgler stands on every pipe. Those standing places are higher than the Water Ghost on the floor.
 
-The midsummer wetness is in the stagnant section of the bypass water main on the Central Intelligence Bureau side and in the condensate drain of the cold-cargo train of the Duman River Far East Theater. The Bukhansan Bogukmun Return Society duty roster is beside the valve handle. The Taeuk Group water-supply log and the Central Intelligence Bureau water-supply log are stacked under the pressure gauge.
+The blizzard-week wetness is in the stagnant section of the bypass water main on the Central Intelligence Bureau side and in the condensate drain of the cold-cargo train of the Duman River Far East Theater. The Bukhansan Bogukmun Return Society duty roster is beside the valve handle. The Taeuk Group water-supply log and the Central Intelligence Bureau water-supply log are stacked under the pressure gauge.

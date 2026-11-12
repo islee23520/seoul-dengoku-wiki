@@ -16,7 +16,7 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 | Item | Record |
 |---|---|
-| Habitat and movement | The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors. |
+| Habitat and movement | The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the meltwater pulse and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors. |
 | Food and energy | At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the group's side. At the Garak vent, the flashlights and rain capes are on the Elite Squad's side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door. |
 | Life cycle and upkeep | On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle. |
 | Group behavior | The Group leader stands on the threshold of the corridor junction. The Elite Squad takes the drain and the granary doors. The Scouts stand on the vents and the ration route and face the leader's side. Attendants hold sacks and water cans on the dry tread behind the leader. |
@@ -97,7 +97,7 @@ The Group leader's post is the junction of the Bukhansan Bogukmun shelter corrid
 | Type | Person |
 | Battlefield unit | Single individual |
 | Battlefield role | Lines the vent walkways and the ration route and takes the side where the sacks are carried out and the outer stair. |
-| Common species, variants and command scope | The Garak and Jamsil lower levels when the monsoon and the ration cycle overlap, and the outer stair that the sea wind from the Incheon Trust Theater reaches. |
+| Common species, variants and command scope | The Garak and Jamsil lower levels when the meltwater pulse and the ration cycle overlap, and the outer stair that the sea wind from the Incheon Trust Theater reaches. |
 
 - Ration sack
 - Ration name list
@@ -112,7 +112,7 @@ The Group leader's post is the junction of the Bukhansan Bogukmun shelter corrid
 
 At the same hour the Group leader faces the junction and the attendants face the leader's back. The Elite Squad stands in one line at the drain joint. The squad has left the flashlights off and set the wooden staves beside their feet.
 
-On a monsoon night the water in the drain reaches the knee. The Elite Squad stands on both sides of the water, and the rain capes touch the water. The Anguk Order corridor watch is on the stair on the dry side, and the iron door is locked. The marker cloth on the door handle is wet.
+On a meltwater night the water in the drain reaches the knee. The Elite Squad stands on both sides of the water, and the rain capes touch the water. The Anguk Order corridor watch is on the stair on the dry side, and the iron door is locked. The marker cloth on the door handle is wet.
 
 On a ration-day afternoon the Magok Seed House ration watch is at the Jamsil lower granary. The Scouts fill the space before the door, and grain sacks and tins of dry side dishes are inside the door. The watch calls the names of the waiting people from the upper level. The people whose names are called stand on the stair, and the sacks are on the Scouts' side.
 
@@ -129,7 +129,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 ### G10-SC1 · Bags at the Corridor Threshold
 
 - Stage: 1
-- Trigger: On an early-summer night the Group leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
+- Trigger: On a power-ration night the Group leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
 - Actors: government, HC10, H10
 - Ecological mechanism: The Anguk Order corridor watch watches the iron door's lock and the people on the stair, and the Magok Seed House ration watch watches the shelf of bags. Once the Magok Seed House passes the list to the watch, the Yunsaeron side stays in front of the door and the attendants stand beside the bags on the threshold.
 - Choices: The Anguk Order corridor watch locks the iron door, and the Magok Seed House places the seed bags on the upper shelves. / The watch opens the iron door only in the morning and sends out only the bags written on the Yunsaeron side's list. / The watch stands on the threshold and carries the issue forward, passing the bags into the corridor.
@@ -143,7 +143,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 
 - Stage: 2
 - Actors: government, HC10
-- Moral cost: The day's ration sacks dwindle, and the waiting line runs up to the upper stair. One shift of the Anguk Order corridor watch spends the night on the stair outside the poorly drained stretch. The people outside the vent stand in the monsoon without rain capes.
+- Moral cost: The day's ration sacks dwindle, and the waiting line runs up to the upper stair. One shift of the Anguk Order corridor watch spends the night on the stair outside the poorly drained stretch. The people outside the vent stand in the meltwater pulse without rain capes.
 - Source dossier: G10
 
 <a id="Hostile-Group-G10-heading-0037"></a>

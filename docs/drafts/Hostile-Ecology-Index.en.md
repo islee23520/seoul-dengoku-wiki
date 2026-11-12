@@ -34,7 +34,7 @@ Common species and special variants that share a habitat are read apart. Machine
 | [G25 · Lantern Ant](/wiki/Hostile-Group-G25/) | Surviving automatic machines | 16 |
 | [G26 · Iron Dinosaur](/wiki/Hostile-Group-G26/) | Surviving automatic machines | 16 |
 
-**Hostiles in the endless cold.** Nothing on this list hibernates toward a spring, because no spring comes. Animals live on the heat people leave behind: vents, warm outflow, boiler roofs and waste heaps. Hostile groups live on what keeps people alive in the cold, which is fuel, filters, food and power. Surviving machines are limited by their cells, which freeze, and by parts no one makes any more. The infected gather where warm water and warm walls are.
+**Hostiles in the endless cold.** Nothing on this list sleeps waiting for warmer days, because none come. Animals live on the heat people leave behind: vents, warm outflow, boiler roofs and waste heaps. Hostile groups live on what keeps people alive in the cold, which is fuel, filters, food and power. Surviving machines are limited by their cells, which freeze, and by parts no one makes any more. The infected gather where warm water and warm walls are.
 
 **Threat against the tech doctrine.** Every fight is paid for in ammunition, fuel, cells, parts, implants and lives, and none of these is easy to replace. Animals are a low threat, handled mostly by support teams with nets and fences and by missile infantry when a crossing must be cleared. Hostile people are the costliest threat, because they shoot back; infantry, marksmen and recon drone teams carry those fights, and talking comes first. The infected are a middle threat met with infantry, medicine and isolation. Surviving machines are a high threat for anti-armour missile infantry, drone teams and jamming support teams, and only the heaviest of them justify the fuel that war machines burn. Each dossier gives its own reading.
 
@@ -51,7 +51,7 @@ The cooling-waste heaps sealed by HC01 Yeouido Computing House came to serve the
 
 - Territory: The core habitat was the wetland and waste slopes outside the sluices of the Sluice.
 
-In the dry season and winter they moved along the green fragments toward the Government of the Republic of Korea at central Seoul Station and along the axis of night-market leftovers, and the northwestern edge stirred in response to the food traces of the refugee columns pushed down from the XT01 Imjin River Gate Theater.
+In the deep-cold weeks they moved along the green fragments toward the Government of the Republic of Korea at central Seoul Station and along the axis of night-market leftovers, and the northwestern edge stirred in response to the food traces of the refugee columns pushed down from the XT01 Imjin River Gate Theater.
 
 When the flood level crossed the sluice warning line, the herd was pushed up the upland stairs step by step and cut across the walkways.
 
@@ -61,7 +61,7 @@ When the HC01 recovery trough delays the scrap-sealing cycle, the band's density
 
 The energy cycle runs from feeding to dung to the wetland microbial film, and unsanctioned hunting for meat and hide, instead of a short-term gain, makes the remaining band more aggressive.
 
-- Life cycle: Before the monsoon rains, family groups split by sow scatter and scout the feeding grounds, and right after a flood they join the high-ground scrap axis for a time.
+- Life cycle: Before the meltwater pulse, family groups split by sow scatter and scout the feeding grounds, and right after a flood they join the high-ground scrap axis for a time.
 
 A family group splits only when the survival rate of the young stays high for two seasons in a row, and when the winter salt sources and the mud baths shrink they choose long-distance movement over breeding.
 
@@ -121,7 +121,7 @@ Choosing coexistence leaves short-term threat reports behind, but the sluice wor
 ### G01-SC1 · The First Hoof Outside the Sluice
 
 - Stage: 1
-- Trigger: On the day before the monsoon forecast, the prints of a sow and her young appeared at the Sluice collection yard.
+- Trigger: On the day before the meltwater forecast, the prints of a sow and her young appeared at the Sluice collection yard.
 - Actors: free-city, HC01, H01
 - Ecological mechanism: A family group that has remembered the sealing hours approaches in the gap when the sluice vibration stops.
 - Choices: Delay the collection yard's night operation / Open a wetland detour with a scent lure / Capture only the sow
@@ -178,7 +178,7 @@ The shorter the cycle on which the Sinjeong Wheel House (HC02) replaces wire she
 
 The cycle in which droppings contaminate the insulators connects directly to communications uptime.
 
-- Life cycle: In spring a breeding pair defends one pylon, and in the non-breeding season several families join a communal roost.
+- Life cycle: In the less-cold weeks a breeding pair defends one pylon, and in the non-breeding season several families join a communal roost.
 
 Repeated safety signals and food rewards, more than nest success, decide the return site the next year, and after a forced removal the young individuals test a new roost on the adjacent school route.
 
@@ -397,7 +397,7 @@ When HC04 the Ttukseom Heat-Source House skipped dredging the pipe deposits, the
 
 Droppings and biofilm masked the water-quality sensor readings and delayed pump judgment.
 
-- Life cycle: In the dry season each family group used its own dry hiding place and feeding ground, and before the rain they moved their kits into the high ventilation rooms along trunks where the water rose first.
+- Life cycle: In the deep-cold weeks each family group used its own dry hiding place and feeding ground, and before the rain they moved their kits into the high ventilation rooms along trunks where the water rose first.
 
 After a flood, when the food film thickened, several families shared the same pipe by time slot, and when hiding places flooded in succession they dispersed into the surface alleys.
 
@@ -632,7 +632,7 @@ When HC06 the Noryangjin Delivery House drained the wetland water level one-side
 
 Fixing the water level raised stopover density and the risk of train-bird collision on the depot yard tracks together.
 
-- Life cycle: In spring and autumn the waterfowl and waders stopped first on the shallow water, and when food density rose the raptors followed.
+- Life cycle: In the less-cold weeks and the storm season the waterfowl and waders stopped first on the shallow water, and when food density rose the raptors followed.
 
 The breeding grounds were in a separate protected area, and the depot ponds were used only as an intermediate stopover.
 
@@ -730,14 +730,14 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ## G07 · Yongsan Raiders
 
 - Modern anxiety: Before the door of a West Sea Granary Theater refrigerated car is visible in the alley, the Junction's Itaewon freight duty watch moves the water drums behind the shaft door and keeps the inventory board at chest height. Boxes with a Guro Alloy House seal band pressed in two layers stand toward the wall of the lower level of the Yongsan stabling siding. The lamp in the Itaewon passage alley lights the floor at the entrance, and the leak pallets lie outside that light.
-- Origin: The place where the Junction's Itaewon freight duty watch first saw this group is the lower level of the Yongsan stabling siding on a rainy-season night. People stand along the rows of leak pallets, rods are at their waists, and box hooks are in their hands. A West Sea Granary Theater refrigeration slip is on the box in front of them and the lid is open. That box number is written in the same night's column on the duty watch's inventory board.
-- Territory: The place where the group gathers is the lower level of the Yongsan stabling siding and the rows of leak pallets in the Itaewon passage alley. In the rainy season and the thaw, people stand along the Yongsan–Itaewon transfer freight elevator shaft. When a West Sea Granary Theater refrigerated container reaches the alley, a West Sea Granary Theater signal is written on the duty board and the Yongsan Raiders are in front of the container door. In the dry season the footprints lie inside three pallet rows and the rows where people stand in the rainy season, the thaw, and the dry season are written on the inventory board.
+- Origin: The place where the Junction's Itaewon freight duty watch first saw this group is the lower level of the Yongsan stabling siding on a meltwater-pulse night. People stand along the rows of leak pallets, rods are at their waists, and box hooks are in their hands. A West Sea Granary Theater refrigeration slip is on the box in front of them and the lid is open. That box number is written in the same night's column on the duty watch's inventory board.
+- Territory: The place where the group gathers is the lower level of the Yongsan stabling siding and the rows of leak pallets in the Itaewon passage alley. In the meltwater pulse and the less-cold weeks, people stand along the Yongsan–Itaewon transfer freight elevator shaft. When a West Sea Granary Theater refrigerated container reaches the alley, a West Sea Granary Theater signal is written on the duty board and the Yongsan Raiders are in front of the container door. In the deep-cold weeks the footprints lie inside three pallet rows and the rows where people stand in the meltwater pulse, the less-cold weeks and the deep-cold weeks are written on the inventory board.
 - Economy: The Yongsan Raiders move food sacks from West Sea Granary Theater refrigerated containers, Guro Alloy House sealed boxes, and transport slips from Sinnae Transport cars through the Itaewon passage alley. The Junction's Itaewon freight duty watch rewrites the remainder column on the inventory board by the count that enters the raiders' sacks. The duty watch counts the water drums beside the shaft door and writes that count on the board. A Jeonguram sequence slip lies on the sacks that remain.
-- Life cycle: In the rainy season people stand on every row of leak pallets in the Itaewon passage alley and a sack hangs at each car. In the thaw the Raider Elite Squad has gone up into the Yongsan–Itaewon transfer freight elevator shaft and an empty sack hangs on every step of the ladder. In the dry season the same people are gathered toward the wall of the lower level of the Yongsan stabling siding, and the Raider Scouts at the alley entrance stand in a single line.
+- Life cycle: In the meltwater pulse people stand on every row of leak pallets in the Itaewon passage alley and a sack hangs at each car. In the less-cold weeks the Raider Elite Squad has gone up into the Yongsan–Itaewon transfer freight elevator shaft and an empty sack hangs on every step of the ladder. In the deep-cold weeks the same people are gathered toward the wall of the lower level of the Yongsan stabling siding, and the Raider Scouts at the alley entrance stand in a single line.
 - Senses: From the place where the Junction's Itaewon freight duty watch stands, the Yongsan Raiders check the box count on the leak pallets and the door state of the Yongsan–Itaewon transfer freight elevator. The Raider Scouts face the entrance of the Itaewon passage alley, and the Raider Chief stands on the inner row of pallets. The door of a West Sea Granary Theater refrigerated container and a Guro Alloy House seal band lie in the same line of sight.
 - Hierarchy: The Raider Chief is on the inner side of the leak pallets and sets the box count. The Raider Elite Squad takes the elevator door, the ladder, and the sacks. The Raider Scouts stand at the entrance of the Itaewon passage alley and watch the arrival of cars. The column on the inventory board where the Junction is written is in front of the Junction's Itaewon freight duty watch.
 - Links: {"corporations_successor_only":["HC07"],"houses":["HC07"],"states":["government"],"synthetics":["H07"],"theaters":["XT02"]}
-- Escalation 1-3: The places where people stand change three times in the same Itaewon passage alley. On a rainy-season night the Yongsan Raiders stand along every row of leak pallets and the lids of the food boxes are open. On a thaw morning the Raider Elite Squad is on the shaft ladder and the corner of a Guro Alloy House seal on a Sinnae Transport car is lifted. On a dry-season day the group is gathered inside three pallet rows and the water drums are locked beside the shaft door.
+- Escalation 1-3: The places where people stand change three times in the same Itaewon passage alley. On a meltwater-pulse night the Yongsan Raiders stand along every row of leak pallets and the lids of the food boxes are open. On a less-cold morning the Raider Elite Squad is on the shaft ladder and the corner of a Guro Alloy House seal on a Sinnae Transport car is lifted. On a deep-cold day the group is gathered inside three pallet rows and the water drums are locked beside the shaft door.
 - Combat: The Junction's Itaewon freight duty watch locks the shaft door of the Yongsan–Itaewon transfer freight elevator and leaves the car on the lower level of the Yongsan stabling siding. Guro Alloy House sealed boxes with lifted corners stand against the lower-level wall. Water drums are behind the door, the caps are locked, and the drum count is written in the side column of the inventory board.
 - Negotiation: The Junction inventory board, the Guro Alloy House seal check, the Jeonguram sequence slip, and the Sinnae Transport slip lie on the threshold of the lower level of the Yongsan stabling siding. The Junction's Itaewon freight duty watch aligns the box counts of the four slips on one board. The aligned board is fixed to the lower-level wall. The Raider Chief stands on the leak-pallet side, outside that board.
 - Moral cost: On a day when the sequence is aligned, the remainder of the food sacks and water drums that left the alley by the count on the slip is written on the inventory board. On a day when the shaft door is locked, the Jeonguram sequence slip is fixed to the wall of the lower level of the Yongsan stabling siding. On a day when the pallet place is left empty, the same box number is written in the raiders' sack column and the Raider Scouts stand facing those sacks.
@@ -748,7 +748,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G07-SC1 · Sealed Boxes at the Leak Pallets
 
 - Stage: 1
-- Trigger: On a rainy-season night the Yongsan–Itaewon transfer freight elevator is stopped in the Itaewon passage alley and Guro Alloy House sealed boxes are in front of the leak pallets. The Raider Scouts stand along the pallet rows. A Jeonguram sequence slip is on the boxes.
+- Trigger: On a meltwater-pulse night the Yongsan–Itaewon transfer freight elevator is stopped in the Itaewon passage alley and Guro Alloy House sealed boxes are in front of the leak pallets. The Raider Scouts stand along the pallet rows. A Jeonguram sequence slip is on the boxes.
 - Actors: government, HC07, H07
 - Ecological mechanism: The Junction's Itaewon freight duty watch counts the boxes in front of the shaft door. The Raider Chief is on the inner side of the pallets and the Raider Elite Squad holds the box hooks. The corner of the Guro Alloy House seal band is wet.
 - Choices: Leave the elevator car on the lower level of the Yongsan stabling siding, lock the shaft door, and set the boxes against the lower-level wall. / After the duty watch checks the Guro Alloy House seal, pass the boxes out of the Itaewon passage alley according to the Jeonguram sequence slip. / Leave the duty-watch place on the leak-pallet rows empty and set the boxes where the raiders stand.
@@ -758,10 +758,10 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 <a id="Hostile-Ecology-Index-heading-0262"></a>
 
-### G07-SC2 · The Thaw of the Sinnae Transport Car
+### G07-SC2 · The Melt of the Sinnae Transport Car
 
 - Stage: 2
-- Trigger: On a thaw morning a Sinnae Transport freight car enters the Yongsan–Itaewon transfer freight elevator shaft and a Guro Alloy House seal band is on the car door. The Raider Elite Squad stands on the ladder.
+- Trigger: On a less-cold morning a Sinnae Transport freight car enters the Yongsan–Itaewon transfer freight elevator shaft and a Guro Alloy House seal band is on the car door. The Raider Elite Squad stands on the ladder.
 - Actors: government, HC07
 - Ecological mechanism: Moisture on the car floor runs to the leak pallets of the Itaewon passage alley. The Junction inventory board and the Sinnae Transport slip lie on the threshold, and the box counts on the two slips differ. The Raider Chief sets down sacks beside the car for that difference.
 - Choices: Align the Sinnae Transport slip with the Junction inventory board and lower the boxes of the difference onto the lower level of the Yongsan stabling siding. / Press the Guro Alloy House seal band down again and send the car to the upper stop line of the shaft. / Load the boxes of the difference into the raiders' sacks, and the duty watch writes the corrected count on the Sinnae Transport slip.
@@ -774,7 +774,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G07-SC3 · The West Sea Granary Refrigerated Car
 
 - Stage: 3
-- Trigger: On the night when the rainy season turns to the thaw, a West Sea Granary Theater refrigerated container has been pushed as far as the Itaewon passage alley. A West Sea Granary Theater signal is written on the Junction duty board. The Yongsan Raiders are gathered in front of the container door.
+- Trigger: On the night when the meltwater pulse gives way to the less-cold weeks, a West Sea Granary Theater refrigerated container has been pushed as far as the Itaewon passage alley. A West Sea Granary Theater signal is written on the Junction duty board. The Yongsan Raiders are gathered in front of the container door.
 - Actors: government, XT02, HC07, H07
 - Ecological mechanism: Salt residue runs from the container floor to the leak pallets. A Sinnae Transport car and Guro Alloy House sealed boxes are in the same row, and a Jeonguram sequence slip is on the food sacks. The Raider Chief counts the sacks, the Raider Elite Squad holds the door, and the Raider Scouts stand at the alley entrance.
 - Choices: Leave the refrigerated car on the lower level of the Yongsan stabling siding, and the Junction's Itaewon freight duty watch leaves only the figures of the West Sea Granary Theater signal on the inventory board. / Align the Jeonguram sequence with the Sinnae Transport slip, then pass the Guro Alloy House sealed boxes out of the Itaewon passage alley first. / Leave the refrigerated container door open and set the food sacks on the side where the raiders stand.
@@ -845,13 +845,13 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 - Modern anxiety: At night the inventory watch of the Seoul Station Inventory House counts the shelf columns twice and leaves work lamps lit on both the valve and the door. The inspection watch of the Achasan Gate adds a bar to the door of the Achasan inspection window and keeps the staff standing inside the cold warehouse. The equity watch of the Yeouido Investment Federation writes the cold-quantity column again at each train time.
 - Origin: The inventory watch of the Seoul Station Inventory House sees this group on a midwinter night in the cold corridor of the Sangam cooling annex. People with cold-weather outer layers over their uniforms stand before the inventory shelves, and at their feet are fuel drums and ammunition boxes marked by the Seoul Station Inventory House. The person standing in the center has set a radio set beside the feet and is looking toward the removal passage.
-- Territory: The group gathers in the cold corridor of the Sangam cooling annex. When the thaw comes and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the mineral and fuel trains of the Duman River Far East Theater pass the outer track carrying the cold, the deserter scouts stand at the outer door of the corridor and the deserter elite squad is inside the cold warehouse.
+- Territory: The group gathers in the cold corridor of the Sangam cooling annex. When the less-cold weeks come and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the mineral and fuel trains of the Duman River Far East Theater pass the outer track carrying the cold, the deserter scouts stand at the outer door of the corridor and the deserter elite squad is inside the cold warehouse.
 - Economy: The fuel drums, cooling tools, and cold-weather clothing marked by the Seoul Station Inventory House, which were on the shelves of the cold corridor, lie at the feet of the Sangam Deserters. Those quantities are written in the removal column of the inventory ledger, and the same quantities are written as the cold quantity in the equity column of the Yeouido Investment Federation. On a day when a train of the Duman River Far East Theater stands, a row of mineral boxes is on the floor of the Achasan inspection window, and the number of fuel drums matches the number written in the removal column of the ledger.
-- Life cycle: In midwinter uniforms and cold-weather outer layers lie between the shelves of the cold corridor, and the equipment piles lie as far as the front of the valve. When the thaw comes and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the train passes carrying the cold, the deserter elite squad remains at the inspection window and the deserter scouts gather at the door of the cold warehouse.
+- Life cycle: In midwinter uniforms and cold-weather outer layers lie between the shelves of the cold corridor, and the equipment piles lie as far as the front of the valve. When the less-cold weeks come and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the train passes carrying the cold, the deserter elite squad remains at the inspection window and the deserter scouts gather at the door of the cold warehouse.
 - Senses: The Sangam Deserters watch the removal passage and the cooling-valve side of the cold corridor in the Sangam cooling annex. The group stands beside the shelves that carry the Seoul Station Inventory House mark, with the fuel drums and tool shelves in the middle, and stands with its back toward the Achasan inspection window. When a train of the Duman River Far East Theater stands on the track outside the corridor, the deserter scouts watch the track-side door.
 - Hierarchy: The deserter squad leader stands in the center of the cold corridor, and ammunition boxes and a radio set are at the squad leader's feet. The deserter elite squad stands at the shelves to the squad leader's left and right, beside the fuel drums and tool piles. The deserter scouts stand divided between the removal passage and the track-side door, facing the squad leader's side while watching the outside.
 - Links: {"corporations_successor_only":["HC09"],"houses":["HC09"],"states":["free-city","government"],"synthetics":["H09"],"theaters":["XT04"]}
-- Escalation 1-3: On a midwinter night the deserter squad leader and the deserter elite squad stand before the shelves in the cold corridor. Around the thaw fewer fuel drums remain in the same corridor, and the deserter elite squad leaves an equipment pile in the passage toward the Achasan inspection window. After a mineral and fuel train of the Duman River Far East Theater passes the outer track carrying the cold, the deserter scouts line up before the corridor door and the deserter squad leader stands beside the remaining fuel drums.
+- Escalation 1-3: On a midwinter night the deserter squad leader and the deserter elite squad stand before the shelves in the cold corridor. Around the less-cold weeks fewer fuel drums remain in the same corridor, and the deserter elite squad leaves an equipment pile in the passage toward the Achasan inspection window. After a mineral and fuel train of the Duman River Far East Theater passes the outer track carrying the cold, the deserter scouts line up before the corridor door and the deserter squad leader stands beside the remaining fuel drums.
 - Combat: The inventory watch of the Seoul Station Inventory House bars the removal passage of the cold corridor and sets the work lamp in front of the valve. The inventory watch writes the fuel drums and tools on the shelves into the inventory ledger column by column, and writes the count of ammunition boxes in front of the deserter squad leader in the lower column of the same ledger. The inspection watch of the Achasan Gate locks the door of the Achasan inspection window and stands the inspection staff inside the cold warehouse.
 - Negotiation: The equity watch of the Yeouido Investment Federation and the inspection watch of the Achasan Gate divide the warehouse time columns at the door of the cold warehouse. The equity watch writes the cold quantity in the column on the train side, and the inspection watch writes the access time of the Achasan inspection window in the daytime column. The inventory watch of the Seoul Station Inventory House copies both columns onto one page of the inventory ledger, and the deserter squad leader stands in front of that page.
 - Moral cost: At the Achasan inspection window the entrance stays locked through the day, and the inspection staff stand inside the cold warehouse. The fuel drums and tools of the Seoul Station Inventory House stay in the cold corridor, written in the removal column. The equity watch of the Yeouido Investment Federation has written the cold quantity in the train column of the Duman River Far East Theater. Personnel on the Joharam side have stepped back from the floor of the inspection window and stand against the inner wall of the warehouse.
@@ -875,7 +875,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G09-SC2 · The equipment pile at the inspection window
 
 - Stage: 2
-- Trigger: At dawn around the thaw an equipment pile is on the floor of the Achasan inspection window, and the heat needle on the inspection-window panel sits in a high mark. The inspection watch of the Achasan Gate stands in the doorway, the inventory watch of the Seoul Station Inventory House holds the ledger, and the equity watch of the Yeouido Investment Federation holds the cold column.
+- Trigger: At dawn around the less-cold weeks an equipment pile is on the floor of the Achasan inspection window, and the heat needle on the inspection-window panel sits in a high mark. The inspection watch of the Achasan Gate stands in the doorway, the inventory watch of the Seoul Station Inventory House holds the ledger, and the equity watch of the Yeouido Investment Federation holds the cold column.
 - Actors: free-city, government, HC09
 - Ecological mechanism: The deserter elite squad stands on both sides of the pile, and the deserter squad leader stands between the pile and the door of the cold warehouse. The mark of the Seoul Station Inventory House remains on the fuel drums and tools in the pile. The inspection watch, the inventory watch, and the equity watch stand in the same doorway.
 - Choices: The inspection watch of the Achasan Gate locks the door of the Achasan inspection window and stands the inspection staff inside the cold warehouse. / The inventory watch of the Seoul Station Inventory House writes the quantity of the equipment pile in the removal column and sets the ledger in front of the pile. / The equity watch of the Yeouido Investment Federation moves the cold quantity from the daytime column of the inspection window to the night column of the cold warehouse.
@@ -901,12 +901,12 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ## G10 · Bogukmun group
 
 - Modern anxiety: On days when the group stands before the door, the ration watch leaves the lower issue shut and calls names from the upper level. At the hour when the sea wind enters, the corridor watch leaves only the outer-stair lamps on. The seed watch keeps the seed bags on a shelf apart from the ration sacks.
-- Territory: The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors.
+- Territory: The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the meltwater pulse and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors.
 - Economy: At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the group's side. At the Garak vent, the flashlights and rain capes are on the Elite Squad's side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door.
 - Life cycle: On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle.
 - Hierarchy: The Group leader stands on the threshold of the corridor junction. The Elite Squad takes the drain and the granary doors. The Scouts stand on the vents and the ration route and face the leader's side. Attendants hold sacks and water cans on the dry tread behind the leader.
 - Links: {"corporations_successor_only":["HC10"],"houses":["HC10"],"states":["government"],"synthetics":["H10"],"theaters":["XT05"]}
-- Escalation 1-3: In the Bukhansan Bogukmun shelter corridor the Group leader and the attendants stand on the threshold. When the monsoon begins, the Elite Squad lines both sides of the drain where the water reaches the knee and blocks the passage. When the ration cycle overlaps, the Scouts line up from the corridor to the door of the Garak lower granary, and sacks lie piled inside the door.
+- Escalation 1-3: In the Bukhansan Bogukmun shelter corridor the Group leader and the attendants stand on the threshold. When the meltwater pulse begins, the Elite Squad lines both sides of the drain where the water reaches the knee and blocks the passage. When the ration cycle overlaps, the Scouts line up from the corridor to the door of the Garak lower granary, and sacks lie piled inside the door.
 - Scenarios: [G10-SC1](/wiki/Hostile-Group-G10/), [G10-SC2](/wiki/Hostile-Group-G10/), [G10-SC3](/wiki/Hostile-Group-G10/)
 
 <a id="Hostile-Ecology-Index-heading-0284"></a>
@@ -914,7 +914,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G10-SC1 · Bags at the Corridor Threshold
 
 - Stage: 1
-- Trigger: On an early-summer night the Group leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
+- Trigger: On a power-ration night the Group leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
 - Actors: government, HC10, H10
 - Ecological mechanism: The Anguk Order corridor watch watches the iron door's lock and the people on the stair, and the Magok Seed House ration watch watches the shelf of bags. Once the Magok Seed House passes the list to the watch, the Yunsaeron side stays in front of the door and the attendants stand beside the bags on the threshold.
 - Choices: The Anguk Order corridor watch locks the iron door, and the Magok Seed House places the seed bags on the upper shelves. / The watch opens the iron door only in the morning and sends out only the bags written on the Yunsaeron side's list. / The watch stands on the threshold and carries the issue forward, passing the bags into the corridor.
@@ -928,7 +928,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 - Stage: 2
 - Actors: government, HC10
-- Moral cost: The day's ration sacks dwindle, and the waiting line runs up to the upper stair. One shift of the Anguk Order corridor watch spends the night on the stair outside the poorly drained stretch. The people outside the vent stand in the monsoon without rain capes.
+- Moral cost: The day's ration sacks dwindle, and the waiting line runs up to the upper stair. One shift of the Anguk Order corridor watch spends the night on the stair outside the poorly drained stretch. The people outside the vent stand in the meltwater pulse without rain capes.
 - Source dossier: G10
 
 <a id="Hostile-Ecology-Index-heading-0288"></a>
@@ -1004,10 +1004,10 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ## G12 · Sinnae Deserters
 
 - Modern anxiety: The Sinnae Transport freight duty places the duty desk on the clean-section side, away from the elevator. The duty keeps the dust-passage latch locked and leaves the gallery-side lamp on. The Sluice water-supply duty is in front of the backwash valve inside the fully sealed clean section. The Geumcheon District Office Machinery House machine duty closes the lift-panel cover and sets a cage in front of the panel.
-- Origin: The Sinnae Transport freight duty first sees this group on a midsummer night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization.
+- Origin: The Sinnae Transport freight duty first sees this group on a blizzard-week night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization.
 - Territory: The place where the group gathers is the dust passage of the Sinnae freight elevator. On the water-wash cycle and the purification backwash schedule they stand before the Yeouido water-filter gallery hatch. On days when dust comes in from the West Sea Granary docks they stand at the outer-passage entrance. In front of the fully sealed clean section they remain on the entrance side, and the inside of the section is the duty's place.
 - Economy: Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries lie between the freight elevator car and the filter gallery. The Sinnae Transport freight list is at the end of the table, and lines are drawn in its quantity columns. The Sluice water-supply duty's gallery water cans are in the same car. A tool box from the Geumcheon District Office Machinery House is open beside the lift panel. The Ichaeon duty's box is beside the radio.
-- Life cycle: On a midsummer night a few soldiers stand at the passage corner. In the early-autumn wash cycle more soldiers wearing the same unit insignia, and more wooden boxes, are in the elevator car. At dawn while the backwash runs, the group is divided between the landing and the front of the Yeouido water-filter gallery hatch.
+- Life cycle: On a blizzard-week night a few soldiers stand at the passage corner. In the convoy-season wash cycle more soldiers wearing the same unit insignia, and more wooden boxes, are in the elevator car. At dawn while the backwash runs, the group is divided between the landing and the front of the Yeouido water-filter gallery hatch.
 - Senses: The Sinnae Deserters watch the threshold of the Sinnae freight-elevator dust passage and the hatch of the Yeouido water-filter gallery. The soldier at the threshold faces the Sinnae Transport freight car, and the soldier at the hatch faces the Sluice backwash piping. When dust from the West Sea Granary docks piles in the outer passage, the Deserter Scouts at the entrance face the dock side.
 - Hierarchy: The Deserter Squad Leader is in front of the radio on the landing table. The Deserter Elite Squad is at the rail and the elevator door. The Deserter Scouts are at the dust-passage entrance and at the Yeouido water-filter gallery hatch. Ammunition boxes and water cans are at the squad leader's feet, and magazines are at the Deserter Elite Squad's hands.
 - Links: {"corporations_successor_only":["HC12"],"houses":["HC12"],"states":["government","free-city"],"synthetics":["H12"],"theaters":["XT02"]}
@@ -1022,7 +1022,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G12-SC1 · Dust-passage landing
 
 - Stage: 1
-- Trigger: On a midsummer night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon District Office Machinery House is on. The Ichaeon duty's box is on the landing table.
+- Trigger: On a blizzard-week night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon District Office Machinery House is on. The Ichaeon duty's box is on the landing table.
 - Actors: government, HC12, H12
 - Ecological mechanism: The freight car, the lift panel, and the Ichaeon box are on one landing. The Deserter Squad Leader is in front of the radio. The Deserter Elite Squad is at the rail. The Sinnae Transport freight duty is at the threshold.
 - Choices: The Sinnae Transport freight duty stacks freight cages at the car entrance. / The Geumcheon District Office Machinery House machine duty puts the lift-panel breaker down. / The Ichaeon duty moves the box to the desk in the clean section.
@@ -1035,7 +1035,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G12-SC2 · The hatch at the backwash hour
 
 - Stage: 2
-- Trigger: At an early-autumn dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon District Office Machinery House to that car.
+- Trigger: At a convoy-season dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon District Office Machinery House to that car.
 - Actors: government, free-city, HC12
 - Ecological mechanism: The wash cycle and the backwash schedule overlap on the same dawn. The Sluice water-supply duty is in front of the valve. The Sinnae Transport freight duty is beside the car. The Geumcheon District Office Machinery House machine duty is in front of the panel.
 - Choices: The Sluice water-supply duty locks the backwash valve at the hour on the schedule. / The Sinnae Transport freight duty fixes the freight car on the dust-passage level. / The Geumcheon District Office Machinery House machine duty separates the gallery auxiliary power from the lift panel.
@@ -2103,11 +2103,11 @@ It borrowed no real railway accident to make fear, and the cost arose between th
 ## G19 · Gurgler
 
 - Modern anxiety: The Sluice Bureau supply watch stands on the threshold with gloves on. The wet rag is inside the bucket. The coolant valve is shut. The watch's remaining boot lies at the water's edge.
-- Origin: The Sluice Bureau supply watch sees a person on a midsummer night in the valve room of the Taeuk Group underground cooling corridor. The person is standing in the valve room. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in.
+- Origin: The Sluice Bureau supply watch sees a person on a blizzard-week night in the valve room of the Taeuk Group underground cooling corridor. The person is standing in the valve room. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in.
 
 Footsteps sound beyond the corner of the corridor. At the threshold of the valve room a voice rings the iron plate of the pipe. The Sluice Bureau supply watch is on the side of the Noryangjin Line bypass water main. The eyes under the work lamp are narrow.
 
-- Territory: On a midsummer night the Sluice Bureau supply watch stands in the valve room of the Taeuk Group underground cooling corridor. Gurglers gather in the valve room and on the side of the Noryangjin Line bypass water main. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. The eyes under the work lamp are narrow.
+- Territory: On a blizzard-week night the Sluice Bureau supply watch stands in the valve room of the Taeuk Group underground cooling corridor. Gurglers gather in the valve room and on the side of the Noryangjin Line bypass water main. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. The eyes under the work lamp are narrow.
 
 Water stands to the knee in the floor pipe of the cooling corridor. The Water Ghost is in that water, and the part above the shoulders is out. The flesh is swollen, and the spaces between the fingers are white. The Water Cough stands in front of the valve. With each cough a handful of cold water falls from the throat to the floor. The boots of the Sluice Bureau supply watch are at the water's edge.
 
@@ -2181,7 +2181,7 @@ The Eastern Command duct watch stands in front of the niche's iron door. The wat
 ## G22 · Flame Lantern
 
 - Modern anxiety: The yard duty is in the breaker hut with the inspection lamp lit only at the siding entrance. The preservation-vault outer-wall patrol stands on the stair inside the corner. The grain-train crew tags hang on the locomotive door.
-- Origin: The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Changdong Wheel Chamber held water in the same rainy season. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named.
+- Origin: The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Changdong Wheel Chamber held water in the same meltwater pulse. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named.
 - Territory: The outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station is where the flame stays. In weeks when yard inspection is late, the flame is at the Seongha Group siding yard on the Gangnam Line. Condensate beads on the roofs of the humid grain trains from the West Sea Granary Theater, and the flame continues beside that condensate.
 - Economy: Spent-battery boxes from the Changdong Wheel Chamber sit in the front row of the siding yard. Grain sacks of the West Sea Granary Theater have been moved off the rail from the car where the flame rests. Burned sack cords float on the drainage water. The Seongha Group yard ledger lies open in the breaker hut, and the car numbers are marked in pencil.
 - Life cycle: The person who was striking the outer-wall steel plate stands before the same plate. A blue flame is fixed on the back of the hand that was striking. The knees are toward the drainage channel at the foot of the wall, and the flame at the shoulder is in front of the work lamp.
@@ -2205,7 +2205,7 @@ The work lamp is at the corridor entrance. The cold-store watch is on the thresh
 
 - Territory: Udukeoni stand gathered in the defrost corridor. At midwinter dawn, the cold-store watch sees that line from the threshold of the barrier door. The people are along the cold wall, and the gaps between shoulders are much like one another. Frost sits on the shoulders and the hair, and both arms hang at the sides. The chest is still, and the mouth is closed. The head is toward the coil housing. The boots stand in one line of defrost water. The work lamp is at the corridor entrance.
 
-When the season changes and the water on the corridor floor has thawed, the cold-store watch sees the same person from the entrance side. The shoulders are wet, and dried water marks are on the chin and the nape. Drops from the coil housing fall in front of the boots.
+When the season changes and the water on the corridor floor has warmed, the cold-store watch sees the same person from the entrance side. The shoulders are wet, and dried water marks are on the chin and the nape. Drops from the coil housing fall in front of the boots.
 
 Before the compartment at the end of the corridor, the people face the dark. The water on the compartment floor is frozen. The cold-store watch's flashlight lies on the threshold.
 
@@ -2427,7 +2427,7 @@ Long-winged surveillance craft take off only when a short runway or towing launc
 
 When heavy mineral freight cars or winter fuel arrive from the XT04 Tumen River–Far East Theater, axle loads resembling those on old materials-receipt sheets are detected and activity on the Gangnam Line siding increases. On the Gwangjin Line, the units try to incorporate eastern bridges and the approach to Godeok base into a new work zone.
 
-During the spring thaw they avoid sidings with weak ground; in severe cold, increased hydraulic viscosity shortens their operating range.
+In the less-cold weeks they avoid sidings with weak ground; in severe cold, increased hydraulic viscosity shortens their operating range.
 
 Large units cannot sustain entry into narrow unpaved alleys, basements with unverified load capacity, or dense areas beyond the long-winged craft's line of observation.
 

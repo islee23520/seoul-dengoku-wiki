@@ -4231,7 +4231,7 @@ Common species and special variants that share a habitat are read apart. Machine
 | [G25 · Lantern Ant](/wiki/Hostile-Group-G25/) | Surviving automatic machines | 16 |
 | [G26 · Iron Dinosaur](/wiki/Hostile-Group-G26/) | Surviving automatic machines | 16 |
 
-**Hostiles in the endless cold.** Nothing on this list hibernates toward a spring, because no spring comes. Animals live on the heat people leave behind: vents, warm outflow, boiler roofs and waste heaps. Hostile groups live on what keeps people alive in the cold, which is fuel, filters, food and power. Surviving machines are limited by their cells, which freeze, and by parts no one makes any more. The infected gather where warm water and warm walls are.
+**Hostiles in the endless cold.** Nothing on this list sleeps waiting for warmer days, because none come. Animals live on the heat people leave behind: vents, warm outflow, boiler roofs and waste heaps. Hostile groups live on what keeps people alive in the cold, which is fuel, filters, food and power. Surviving machines are limited by their cells, which freeze, and by parts no one makes any more. The infected gather where warm water and warm walls are.
 
 **Threat against the tech doctrine.** Every fight is paid for in ammunition, fuel, cells, parts, implants and lives, and none of these is easy to replace. Animals are a low threat, handled mostly by support teams with nets and fences and by missile infantry when a crossing must be cleared. Hostile people are the costliest threat, because they shoot back; infantry, marksmen and recon drone teams carry those fights, and talking comes first. The infected are a middle threat met with infantry, medicine and isolation. Surviving machines are a high threat for anti-armour missile infantry, drone teams and jamming support teams, and only the heaviest of them justify the fuel that war machines burn. Each dossier gives its own reading.
 
@@ -4248,7 +4248,7 @@ The cooling-waste heaps sealed by HC01 Yeouido Computing House came to serve the
 
 - Territory: The core habitat was the wetland and waste slopes outside the sluices of the Sluice.
 
-In the dry season and winter they moved along the green fragments toward the Government of the Republic of Korea at central Seoul Station and along the axis of night-market leftovers, and the northwestern edge stirred in response to the food traces of the refugee columns pushed down from the XT01 Imjin River Gate Theater.
+In the deep-cold weeks they moved along the green fragments toward the Government of the Republic of Korea at central Seoul Station and along the axis of night-market leftovers, and the northwestern edge stirred in response to the food traces of the refugee columns pushed down from the XT01 Imjin River Gate Theater.
 
 When the flood level crossed the sluice warning line, the herd was pushed up the upland stairs step by step and cut across the walkways.
 
@@ -4258,7 +4258,7 @@ When the HC01 recovery trough delays the scrap-sealing cycle, the band''s densit
 
 The energy cycle runs from feeding to dung to the wetland microbial film, and unsanctioned hunting for meat and hide, instead of a short-term gain, makes the remaining band more aggressive.
 
-- Life cycle: Before the monsoon rains, family groups split by sow scatter and scout the feeding grounds, and right after a flood they join the high-ground scrap axis for a time.
+- Life cycle: Before the meltwater pulse, family groups split by sow scatter and scout the feeding grounds, and right after a flood they join the high-ground scrap axis for a time.
 
 A family group splits only when the survival rate of the young stays high for two seasons in a row, and when the winter salt sources and the mud baths shrink they choose long-distance movement over breeding.
 
@@ -4318,7 +4318,7 @@ Choosing coexistence leaves short-term threat reports behind, but the sluice wor
 ### G01-SC1 · The First Hoof Outside the Sluice
 
 - Stage: 1
-- Trigger: On the day before the monsoon forecast, the prints of a sow and her young appeared at the Sluice collection yard.
+- Trigger: On the day before the meltwater forecast, the prints of a sow and her young appeared at the Sluice collection yard.
 - Actors: free-city, HC01, H01
 - Ecological mechanism: A family group that has remembered the sealing hours approaches in the gap when the sluice vibration stops.
 - Choices: Delay the collection yard''s night operation / Open a wetland detour with a scent lure / Capture only the sow
@@ -4375,7 +4375,7 @@ The shorter the cycle on which the Sinjeong Wheel House (HC02) replaces wire she
 
 The cycle in which droppings contaminate the insulators connects directly to communications uptime.
 
-- Life cycle: In spring a breeding pair defends one pylon, and in the non-breeding season several families join a communal roost.
+- Life cycle: In the less-cold weeks a breeding pair defends one pylon, and in the non-breeding season several families join a communal roost.
 
 Repeated safety signals and food rewards, more than nest success, decide the return site the next year, and after a forced removal the young individuals test a new roost on the adjacent school route.
 
@@ -4594,7 +4594,7 @@ When HC04 the Ttukseom Heat-Source House skipped dredging the pipe deposits, the
 
 Droppings and biofilm masked the water-quality sensor readings and delayed pump judgment.
 
-- Life cycle: In the dry season each family group used its own dry hiding place and feeding ground, and before the rain they moved their kits into the high ventilation rooms along trunks where the water rose first.
+- Life cycle: In the deep-cold weeks each family group used its own dry hiding place and feeding ground, and before the rain they moved their kits into the high ventilation rooms along trunks where the water rose first.
 
 After a flood, when the food film thickened, several families shared the same pipe by time slot, and when hiding places flooded in succession they dispersed into the surface alleys.
 
@@ -4829,7 +4829,7 @@ When HC06 the Noryangjin Delivery House drained the wetland water level one-side
 
 Fixing the water level raised stopover density and the risk of train-bird collision on the depot yard tracks together.
 
-- Life cycle: In spring and autumn the waterfowl and waders stopped first on the shallow water, and when food density rose the raptors followed.
+- Life cycle: In the less-cold weeks and the storm season the waterfowl and waders stopped first on the shallow water, and when food density rose the raptors followed.
 
 The breeding grounds were in a separate protected area, and the depot ponds were used only as an intermediate stopover.
 
@@ -4927,14 +4927,14 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ## G07 · Yongsan Raiders
 
 - Modern anxiety: Before the door of a West Sea Granary Theater refrigerated car is visible in the alley, the Junction''s Itaewon freight duty watch moves the water drums behind the shaft door and keeps the inventory board at chest height. Boxes with a Guro Alloy House seal band pressed in two layers stand toward the wall of the lower level of the Yongsan stabling siding. The lamp in the Itaewon passage alley lights the floor at the entrance, and the leak pallets lie outside that light.
-- Origin: The place where the Junction''s Itaewon freight duty watch first saw this group is the lower level of the Yongsan stabling siding on a rainy-season night. People stand along the rows of leak pallets, rods are at their waists, and box hooks are in their hands. A West Sea Granary Theater refrigeration slip is on the box in front of them and the lid is open. That box number is written in the same night''s column on the duty watch''s inventory board.
-- Territory: The place where the group gathers is the lower level of the Yongsan stabling siding and the rows of leak pallets in the Itaewon passage alley. In the rainy season and the thaw, people stand along the Yongsan–Itaewon transfer freight elevator shaft. When a West Sea Granary Theater refrigerated container reaches the alley, a West Sea Granary Theater signal is written on the duty board and the Yongsan Raiders are in front of the container door. In the dry season the footprints lie inside three pallet rows and the rows where people stand in the rainy season, the thaw, and the dry season are written on the inventory board.
+- Origin: The place where the Junction''s Itaewon freight duty watch first saw this group is the lower level of the Yongsan stabling siding on a meltwater-pulse night. People stand along the rows of leak pallets, rods are at their waists, and box hooks are in their hands. A West Sea Granary Theater refrigeration slip is on the box in front of them and the lid is open. That box number is written in the same night''s column on the duty watch''s inventory board.
+- Territory: The place where the group gathers is the lower level of the Yongsan stabling siding and the rows of leak pallets in the Itaewon passage alley. In the meltwater pulse and the less-cold weeks, people stand along the Yongsan–Itaewon transfer freight elevator shaft. When a West Sea Granary Theater refrigerated container reaches the alley, a West Sea Granary Theater signal is written on the duty board and the Yongsan Raiders are in front of the container door. In the deep-cold weeks the footprints lie inside three pallet rows and the rows where people stand in the meltwater pulse, the less-cold weeks and the deep-cold weeks are written on the inventory board.
 - Economy: The Yongsan Raiders move food sacks from West Sea Granary Theater refrigerated containers, Guro Alloy House sealed boxes, and transport slips from Sinnae Transport cars through the Itaewon passage alley. The Junction''s Itaewon freight duty watch rewrites the remainder column on the inventory board by the count that enters the raiders'' sacks. The duty watch counts the water drums beside the shaft door and writes that count on the board. A Jeonguram sequence slip lies on the sacks that remain.
-- Life cycle: In the rainy season people stand on every row of leak pallets in the Itaewon passage alley and a sack hangs at each car. In the thaw the Raider Elite Squad has gone up into the Yongsan–Itaewon transfer freight elevator shaft and an empty sack hangs on every step of the ladder. In the dry season the same people are gathered toward the wall of the lower level of the Yongsan stabling siding, and the Raider Scouts at the alley entrance stand in a single line.
+- Life cycle: In the meltwater pulse people stand on every row of leak pallets in the Itaewon passage alley and a sack hangs at each car. In the less-cold weeks the Raider Elite Squad has gone up into the Yongsan–Itaewon transfer freight elevator shaft and an empty sack hangs on every step of the ladder. In the deep-cold weeks the same people are gathered toward the wall of the lower level of the Yongsan stabling siding, and the Raider Scouts at the alley entrance stand in a single line.
 - Senses: From the place where the Junction''s Itaewon freight duty watch stands, the Yongsan Raiders check the box count on the leak pallets and the door state of the Yongsan–Itaewon transfer freight elevator. The Raider Scouts face the entrance of the Itaewon passage alley, and the Raider Chief stands on the inner row of pallets. The door of a West Sea Granary Theater refrigerated container and a Guro Alloy House seal band lie in the same line of sight.
 - Hierarchy: The Raider Chief is on the inner side of the leak pallets and sets the box count. The Raider Elite Squad takes the elevator door, the ladder, and the sacks. The Raider Scouts stand at the entrance of the Itaewon passage alley and watch the arrival of cars. The column on the inventory board where the Junction is written is in front of the Junction''s Itaewon freight duty watch.
 - Links: {"corporations_successor_only":["HC07"],"houses":["HC07"],"states":["government"],"synthetics":["H07"],"theaters":["XT02"]}
-- Escalation 1-3: The places where people stand change three times in the same Itaewon passage alley. On a rainy-season night the Yongsan Raiders stand along every row of leak pallets and the lids of the food boxes are open. On a thaw morning the Raider Elite Squad is on the shaft ladder and the corner of a Guro Alloy House seal on a Sinnae Transport car is lifted. On a dry-season day the group is gathered inside three pallet rows and the water drums are locked beside the shaft door.
+- Escalation 1-3: The places where people stand change three times in the same Itaewon passage alley. On a meltwater-pulse night the Yongsan Raiders stand along every row of leak pallets and the lids of the food boxes are open. On a less-cold morning the Raider Elite Squad is on the shaft ladder and the corner of a Guro Alloy House seal on a Sinnae Transport car is lifted. On a deep-cold day the group is gathered inside three pallet rows and the water drums are locked beside the shaft door.
 - Combat: The Junction''s Itaewon freight duty watch locks the shaft door of the Yongsan–Itaewon transfer freight elevator and leaves the car on the lower level of the Yongsan stabling siding. Guro Alloy House sealed boxes with lifted corners stand against the lower-level wall. Water drums are behind the door, the caps are locked, and the drum count is written in the side column of the inventory board.
 - Negotiation: The Junction inventory board, the Guro Alloy House seal check, the Jeonguram sequence slip, and the Sinnae Transport slip lie on the threshold of the lower level of the Yongsan stabling siding. The Junction''s Itaewon freight duty watch aligns the box counts of the four slips on one board. The aligned board is fixed to the lower-level wall. The Raider Chief stands on the leak-pallet side, outside that board.
 - Moral cost: On a day when the sequence is aligned, the remainder of the food sacks and water drums that left the alley by the count on the slip is written on the inventory board. On a day when the shaft door is locked, the Jeonguram sequence slip is fixed to the wall of the lower level of the Yongsan stabling siding. On a day when the pallet place is left empty, the same box number is written in the raiders'' sack column and the Raider Scouts stand facing those sacks.
@@ -4945,7 +4945,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G07-SC1 · Sealed Boxes at the Leak Pallets
 
 - Stage: 1
-- Trigger: On a rainy-season night the Yongsan–Itaewon transfer freight elevator is stopped in the Itaewon passage alley and Guro Alloy House sealed boxes are in front of the leak pallets. The Raider Scouts stand along the pallet rows. A Jeonguram sequence slip is on the boxes.
+- Trigger: On a meltwater-pulse night the Yongsan–Itaewon transfer freight elevator is stopped in the Itaewon passage alley and Guro Alloy House sealed boxes are in front of the leak pallets. The Raider Scouts stand along the pallet rows. A Jeonguram sequence slip is on the boxes.
 - Actors: government, HC07, H07
 - Ecological mechanism: The Junction''s Itaewon freight duty watch counts the boxes in front of the shaft door. The Raider Chief is on the inner side of the pallets and the Raider Elite Squad holds the box hooks. The corner of the Guro Alloy House seal band is wet.
 - Choices: Leave the elevator car on the lower level of the Yongsan stabling siding, lock the shaft door, and set the boxes against the lower-level wall. / After the duty watch checks the Guro Alloy House seal, pass the boxes out of the Itaewon passage alley according to the Jeonguram sequence slip. / Leave the duty-watch place on the leak-pallet rows empty and set the boxes where the raiders stand.
@@ -4955,10 +4955,10 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 <a id="Hostile-Ecology-Index-heading-0262"></a>
 
-### G07-SC2 · The Thaw of the Sinnae Transport Car
+### G07-SC2 · The Melt of the Sinnae Transport Car
 
 - Stage: 2
-- Trigger: On a thaw morning a Sinnae Transport freight car enters the Yongsan–Itaewon transfer freight elevator shaft and a Guro Alloy House seal band is on the car door. The Raider Elite Squad stands on the ladder.
+- Trigger: On a less-cold morning a Sinnae Transport freight car enters the Yongsan–Itaewon transfer freight elevator shaft and a Guro Alloy House seal band is on the car door. The Raider Elite Squad stands on the ladder.
 - Actors: government, HC07
 - Ecological mechanism: Moisture on the car floor runs to the leak pallets of the Itaewon passage alley. The Junction inventory board and the Sinnae Transport slip lie on the threshold, and the box counts on the two slips differ. The Raider Chief sets down sacks beside the car for that difference.
 - Choices: Align the Sinnae Transport slip with the Junction inventory board and lower the boxes of the difference onto the lower level of the Yongsan stabling siding. / Press the Guro Alloy House seal band down again and send the car to the upper stop line of the shaft. / Load the boxes of the difference into the raiders'' sacks, and the duty watch writes the corrected count on the Sinnae Transport slip.
@@ -4971,7 +4971,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G07-SC3 · The West Sea Granary Refrigerated Car
 
 - Stage: 3
-- Trigger: On the night when the rainy season turns to the thaw, a West Sea Granary Theater refrigerated container has been pushed as far as the Itaewon passage alley. A West Sea Granary Theater signal is written on the Junction duty board. The Yongsan Raiders are gathered in front of the container door.
+- Trigger: On the night when the meltwater pulse gives way to the less-cold weeks, a West Sea Granary Theater refrigerated container has been pushed as far as the Itaewon passage alley. A West Sea Granary Theater signal is written on the Junction duty board. The Yongsan Raiders are gathered in front of the container door.
 - Actors: government, XT02, HC07, H07
 - Ecological mechanism: Salt residue runs from the container floor to the leak pallets. A Sinnae Transport car and Guro Alloy House sealed boxes are in the same row, and a Jeonguram sequence slip is on the food sacks. The Raider Chief counts the sacks, the Raider Elite Squad holds the door, and the Raider Scouts stand at the alley entrance.
 - Choices: Leave the refrigerated car on the lower level of the Yongsan stabling siding, and the Junction''s Itaewon freight duty watch leaves only the figures of the West Sea Granary Theater signal on the inventory board. / Align the Jeonguram sequence with the Sinnae Transport slip, then pass the Guro Alloy House sealed boxes out of the Itaewon passage alley first. / Leave the refrigerated container door open and set the food sacks on the side where the raiders stand.
@@ -5042,13 +5042,13 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 - Modern anxiety: At night the inventory watch of the Seoul Station Inventory House counts the shelf columns twice and leaves work lamps lit on both the valve and the door. The inspection watch of the Achasan Gate adds a bar to the door of the Achasan inspection window and keeps the staff standing inside the cold warehouse. The equity watch of the Yeouido Investment Federation writes the cold-quantity column again at each train time.
 - Origin: The inventory watch of the Seoul Station Inventory House sees this group on a midwinter night in the cold corridor of the Sangam cooling annex. People with cold-weather outer layers over their uniforms stand before the inventory shelves, and at their feet are fuel drums and ammunition boxes marked by the Seoul Station Inventory House. The person standing in the center has set a radio set beside the feet and is looking toward the removal passage.
-- Territory: The group gathers in the cold corridor of the Sangam cooling annex. When the thaw comes and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the mineral and fuel trains of the Duman River Far East Theater pass the outer track carrying the cold, the deserter scouts stand at the outer door of the corridor and the deserter elite squad is inside the cold warehouse.
+- Territory: The group gathers in the cold corridor of the Sangam cooling annex. When the less-cold weeks come and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the mineral and fuel trains of the Duman River Far East Theater pass the outer track carrying the cold, the deserter scouts stand at the outer door of the corridor and the deserter elite squad is inside the cold warehouse.
 - Economy: The fuel drums, cooling tools, and cold-weather clothing marked by the Seoul Station Inventory House, which were on the shelves of the cold corridor, lie at the feet of the Sangam Deserters. Those quantities are written in the removal column of the inventory ledger, and the same quantities are written as the cold quantity in the equity column of the Yeouido Investment Federation. On a day when a train of the Duman River Far East Theater stands, a row of mineral boxes is on the floor of the Achasan inspection window, and the number of fuel drums matches the number written in the removal column of the ledger.
-- Life cycle: In midwinter uniforms and cold-weather outer layers lie between the shelves of the cold corridor, and the equipment piles lie as far as the front of the valve. When the thaw comes and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the train passes carrying the cold, the deserter elite squad remains at the inspection window and the deserter scouts gather at the door of the cold warehouse.
+- Life cycle: In midwinter uniforms and cold-weather outer layers lie between the shelves of the cold corridor, and the equipment piles lie as far as the front of the valve. When the less-cold weeks come and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the train passes carrying the cold, the deserter elite squad remains at the inspection window and the deserter scouts gather at the door of the cold warehouse.
 - Senses: The Sangam Deserters watch the removal passage and the cooling-valve side of the cold corridor in the Sangam cooling annex. The group stands beside the shelves that carry the Seoul Station Inventory House mark, with the fuel drums and tool shelves in the middle, and stands with its back toward the Achasan inspection window. When a train of the Duman River Far East Theater stands on the track outside the corridor, the deserter scouts watch the track-side door.
 - Hierarchy: The deserter squad leader stands in the center of the cold corridor, and ammunition boxes and a radio set are at the squad leader''s feet. The deserter elite squad stands at the shelves to the squad leader''s left and right, beside the fuel drums and tool piles. The deserter scouts stand divided between the removal passage and the track-side door, facing the squad leader''s side while watching the outside.
 - Links: {"corporations_successor_only":["HC09"],"houses":["HC09"],"states":["free-city","government"],"synthetics":["H09"],"theaters":["XT04"]}
-- Escalation 1-3: On a midwinter night the deserter squad leader and the deserter elite squad stand before the shelves in the cold corridor. Around the thaw fewer fuel drums remain in the same corridor, and the deserter elite squad leaves an equipment pile in the passage toward the Achasan inspection window. After a mineral and fuel train of the Duman River Far East Theater passes the outer track carrying the cold, the deserter scouts line up before the corridor door and the deserter squad leader stands beside the remaining fuel drums.
+- Escalation 1-3: On a midwinter night the deserter squad leader and the deserter elite squad stand before the shelves in the cold corridor. Around the less-cold weeks fewer fuel drums remain in the same corridor, and the deserter elite squad leaves an equipment pile in the passage toward the Achasan inspection window. After a mineral and fuel train of the Duman River Far East Theater passes the outer track carrying the cold, the deserter scouts line up before the corridor door and the deserter squad leader stands beside the remaining fuel drums.
 - Combat: The inventory watch of the Seoul Station Inventory House bars the removal passage of the cold corridor and sets the work lamp in front of the valve. The inventory watch writes the fuel drums and tools on the shelves into the inventory ledger column by column, and writes the count of ammunition boxes in front of the deserter squad leader in the lower column of the same ledger. The inspection watch of the Achasan Gate locks the door of the Achasan inspection window and stands the inspection staff inside the cold warehouse.
 - Negotiation: The equity watch of the Yeouido Investment Federation and the inspection watch of the Achasan Gate divide the warehouse time columns at the door of the cold warehouse. The equity watch writes the cold quantity in the column on the train side, and the inspection watch writes the access time of the Achasan inspection window in the daytime column. The inventory watch of the Seoul Station Inventory House copies both columns onto one page of the inventory ledger, and the deserter squad leader stands in front of that page.
 - Moral cost: At the Achasan inspection window the entrance stays locked through the day, and the inspection staff stand inside the cold warehouse. The fuel drums and tools of the Seoul Station Inventory House stay in the cold corridor, written in the removal column. The equity watch of the Yeouido Investment Federation has written the cold quantity in the train column of the Duman River Far East Theater. Personnel on the Joharam side have stepped back from the floor of the inspection window and stand against the inner wall of the warehouse.
@@ -5072,7 +5072,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G09-SC2 · The equipment pile at the inspection window
 
 - Stage: 2
-- Trigger: At dawn around the thaw an equipment pile is on the floor of the Achasan inspection window, and the heat needle on the inspection-window panel sits in a high mark. The inspection watch of the Achasan Gate stands in the doorway, the inventory watch of the Seoul Station Inventory House holds the ledger, and the equity watch of the Yeouido Investment Federation holds the cold column.
+- Trigger: At dawn around the less-cold weeks an equipment pile is on the floor of the Achasan inspection window, and the heat needle on the inspection-window panel sits in a high mark. The inspection watch of the Achasan Gate stands in the doorway, the inventory watch of the Seoul Station Inventory House holds the ledger, and the equity watch of the Yeouido Investment Federation holds the cold column.
 - Actors: free-city, government, HC09
 - Ecological mechanism: The deserter elite squad stands on both sides of the pile, and the deserter squad leader stands between the pile and the door of the cold warehouse. The mark of the Seoul Station Inventory House remains on the fuel drums and tools in the pile. The inspection watch, the inventory watch, and the equity watch stand in the same doorway.
 - Choices: The inspection watch of the Achasan Gate locks the door of the Achasan inspection window and stands the inspection staff inside the cold warehouse. / The inventory watch of the Seoul Station Inventory House writes the quantity of the equipment pile in the removal column and sets the ledger in front of the pile. / The equity watch of the Yeouido Investment Federation moves the cold quantity from the daytime column of the inspection window to the night column of the cold warehouse.
@@ -5098,12 +5098,12 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ## G10 · Bogukmun group
 
 - Modern anxiety: On days when the group stands before the door, the ration watch leaves the lower issue shut and calls names from the upper level. At the hour when the sea wind enters, the corridor watch leaves only the outer-stair lamps on. The seed watch keeps the seed bags on a shelf apart from the ration sacks.
-- Territory: The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors.
+- Territory: The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the meltwater pulse and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors.
 - Economy: At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the group''s side. At the Garak vent, the flashlights and rain capes are on the Elite Squad''s side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door.
 - Life cycle: On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle.
 - Hierarchy: The Group leader stands on the threshold of the corridor junction. The Elite Squad takes the drain and the granary doors. The Scouts stand on the vents and the ration route and face the leader''s side. Attendants hold sacks and water cans on the dry tread behind the leader.
 - Links: {"corporations_successor_only":["HC10"],"houses":["HC10"],"states":["government"],"synthetics":["H10"],"theaters":["XT05"]}
-- Escalation 1-3: In the Bukhansan Bogukmun shelter corridor the Group leader and the attendants stand on the threshold. When the monsoon begins, the Elite Squad lines both sides of the drain where the water reaches the knee and blocks the passage. When the ration cycle overlaps, the Scouts line up from the corridor to the door of the Garak lower granary, and sacks lie piled inside the door.
+- Escalation 1-3: In the Bukhansan Bogukmun shelter corridor the Group leader and the attendants stand on the threshold. When the meltwater pulse begins, the Elite Squad lines both sides of the drain where the water reaches the knee and blocks the passage. When the ration cycle overlaps, the Scouts line up from the corridor to the door of the Garak lower granary, and sacks lie piled inside the door.
 - Scenarios: [G10-SC1](/wiki/Hostile-Group-G10/), [G10-SC2](/wiki/Hostile-Group-G10/), [G10-SC3](/wiki/Hostile-Group-G10/)
 
 <a id="Hostile-Ecology-Index-heading-0284"></a>
@@ -5111,7 +5111,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G10-SC1 · Bags at the Corridor Threshold
 
 - Stage: 1
-- Trigger: On an early-summer night the Group leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
+- Trigger: On a power-ration night the Group leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
 - Actors: government, HC10, H10
 - Ecological mechanism: The Anguk Order corridor watch watches the iron door''s lock and the people on the stair, and the Magok Seed House ration watch watches the shelf of bags. Once the Magok Seed House passes the list to the watch, the Yunsaeron side stays in front of the door and the attendants stand beside the bags on the threshold.
 - Choices: The Anguk Order corridor watch locks the iron door, and the Magok Seed House places the seed bags on the upper shelves. / The watch opens the iron door only in the morning and sends out only the bags written on the Yunsaeron side''s list. / The watch stands on the threshold and carries the issue forward, passing the bags into the corridor.
@@ -5125,7 +5125,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 - Stage: 2
 - Actors: government, HC10
-- Moral cost: The day''s ration sacks dwindle, and the waiting line runs up to the upper stair. One shift of the Anguk Order corridor watch spends the night on the stair outside the poorly drained stretch. The people outside the vent stand in the monsoon without rain capes.
+- Moral cost: The day''s ration sacks dwindle, and the waiting line runs up to the upper stair. One shift of the Anguk Order corridor watch spends the night on the stair outside the poorly drained stretch. The people outside the vent stand in the meltwater pulse without rain capes.
 - Source dossier: G10
 
 <a id="Hostile-Ecology-Index-heading-0288"></a>
@@ -5201,10 +5201,10 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ## G12 · Sinnae Deserters
 
 - Modern anxiety: The Sinnae Transport freight duty places the duty desk on the clean-section side, away from the elevator. The duty keeps the dust-passage latch locked and leaves the gallery-side lamp on. The Sluice water-supply duty is in front of the backwash valve inside the fully sealed clean section. The Geumcheon District Office Machinery House machine duty closes the lift-panel cover and sets a cage in front of the panel.
-- Origin: The Sinnae Transport freight duty first sees this group on a midsummer night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization.
+- Origin: The Sinnae Transport freight duty first sees this group on a blizzard-week night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization.
 - Territory: The place where the group gathers is the dust passage of the Sinnae freight elevator. On the water-wash cycle and the purification backwash schedule they stand before the Yeouido water-filter gallery hatch. On days when dust comes in from the West Sea Granary docks they stand at the outer-passage entrance. In front of the fully sealed clean section they remain on the entrance side, and the inside of the section is the duty''s place.
 - Economy: Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries lie between the freight elevator car and the filter gallery. The Sinnae Transport freight list is at the end of the table, and lines are drawn in its quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon District Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio.
-- Life cycle: On a midsummer night a few soldiers stand at the passage corner. In the early-autumn wash cycle more soldiers wearing the same unit insignia, and more wooden boxes, are in the elevator car. At dawn while the backwash runs, the group is divided between the landing and the front of the Yeouido water-filter gallery hatch.
+- Life cycle: On a blizzard-week night a few soldiers stand at the passage corner. In the convoy-season wash cycle more soldiers wearing the same unit insignia, and more wooden boxes, are in the elevator car. At dawn while the backwash runs, the group is divided between the landing and the front of the Yeouido water-filter gallery hatch.
 - Senses: The Sinnae Deserters watch the threshold of the Sinnae freight-elevator dust passage and the hatch of the Yeouido water-filter gallery. The soldier at the threshold faces the Sinnae Transport freight car, and the soldier at the hatch faces the Sluice backwash piping. When dust from the West Sea Granary docks piles in the outer passage, the Deserter Scouts at the entrance face the dock side.
 - Hierarchy: The Deserter Squad Leader is in front of the radio on the landing table. The Deserter Elite Squad is at the rail and the elevator door. The Deserter Scouts are at the dust-passage entrance and at the Yeouido water-filter gallery hatch. Ammunition boxes and water cans are at the squad leader''s feet, and magazines are at the Deserter Elite Squad''s hands.
 - Links: {"corporations_successor_only":["HC12"],"houses":["HC12"],"states":["government","free-city"],"synthetics":["H12"],"theaters":["XT02"]}
@@ -5219,7 +5219,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G12-SC1 · Dust-passage landing
 
 - Stage: 1
-- Trigger: On a midsummer night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon District Office Machinery House is on. The Ichaeon duty''s box is on the landing table.
+- Trigger: On a blizzard-week night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon District Office Machinery House is on. The Ichaeon duty''s box is on the landing table.
 - Actors: government, HC12, H12
 - Ecological mechanism: The freight car, the lift panel, and the Ichaeon box are on one landing. The Deserter Squad Leader is in front of the radio. The Deserter Elite Squad is at the rail. The Sinnae Transport freight duty is at the threshold.
 - Choices: The Sinnae Transport freight duty stacks freight cages at the car entrance. / The Geumcheon District Office Machinery House machine duty puts the lift-panel breaker down. / The Ichaeon duty moves the box to the desk in the clean section.
@@ -5232,7 +5232,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 ### G12-SC2 · The hatch at the backwash hour
 
 - Stage: 2
-- Trigger: At an early-autumn dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon District Office Machinery House to that car.
+- Trigger: At a convoy-season dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon District Office Machinery House to that car.
 - Actors: government, free-city, HC12
 - Ecological mechanism: The wash cycle and the backwash schedule overlap on the same dawn. The Sluice water-supply duty is in front of the valve. The Sinnae Transport freight duty is beside the car. The Geumcheon District Office Machinery House machine duty is in front of the panel.
 - Choices: The Sluice water-supply duty locks the backwash valve at the hour on the schedule. / The Sinnae Transport freight duty fixes the freight car on the dust-passage level. / The Geumcheon District Office Machinery House machine duty separates the gallery auxiliary power from the lift panel.
@@ -6300,11 +6300,11 @@ It borrowed no real railway accident to make fear, and the cost arose between th
 ## G19 · Gurgler
 
 - Modern anxiety: The Sluice Bureau supply watch stands on the threshold with gloves on. The wet rag is inside the bucket. The coolant valve is shut. The watch''s remaining boot lies at the water''s edge.
-- Origin: The Sluice Bureau supply watch sees a person on a midsummer night in the valve room of the Taeuk Group underground cooling corridor. The person is standing in the valve room. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in.
+- Origin: The Sluice Bureau supply watch sees a person on a blizzard-week night in the valve room of the Taeuk Group underground cooling corridor. The person is standing in the valve room. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in.
 
 Footsteps sound beyond the corner of the corridor. At the threshold of the valve room a voice rings the iron plate of the pipe. The Sluice Bureau supply watch is on the side of the Noryangjin Line bypass water main. The eyes under the work lamp are narrow.
 
-- Territory: On a midsummer night the Sluice Bureau supply watch stands in the valve room of the Taeuk Group underground cooling corridor. Gurglers gather in the valve room and on the side of the Noryangjin Line bypass water main. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. The eyes under the work lamp are narrow.
+- Territory: On a blizzard-week night the Sluice Bureau supply watch stands in the valve room of the Taeuk Group underground cooling corridor. Gurglers gather in the valve room and on the side of the Noryangjin Line bypass water main. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. The eyes under the work lamp are narrow.
 
 Water stands to the knee in the floor pipe of the cooling corridor. The Water Ghost is in that water, and the part above the shoulders is out. The flesh is swollen, and the spaces between the fingers are white. The Water Cough stands in front of the valve. With each cough a handful of cold water falls from the throat to the floor. The boots of the Sluice Bureau supply watch are at the water''s edge.
 
@@ -6378,7 +6378,7 @@ The Eastern Command duct watch stands in front of the niche''s iron door. The wa
 ## G22 · Flame Lantern
 
 - Modern anxiety: The yard duty is in the breaker hut with the inspection lamp lit only at the siding entrance. The preservation-vault outer-wall patrol stands on the stair inside the corner. The grain-train crew tags hang on the locomotive door.
-- Origin: The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Changdong Wheel Chamber held water in the same rainy season. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named.
+- Origin: The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Changdong Wheel Chamber held water in the same meltwater pulse. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named.
 - Territory: The outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station is where the flame stays. In weeks when yard inspection is late, the flame is at the Seongha Group siding yard on the Gangnam Line. Condensate beads on the roofs of the humid grain trains from the West Sea Granary Theater, and the flame continues beside that condensate.
 - Economy: Spent-battery boxes from the Changdong Wheel Chamber sit in the front row of the siding yard. Grain sacks of the West Sea Granary Theater have been moved off the rail from the car where the flame rests. Burned sack cords float on the drainage water. The Seongha Group yard ledger lies open in the breaker hut, and the car numbers are marked in pencil.
 - Life cycle: The person who was striking the outer-wall steel plate stands before the same plate. A blue flame is fixed on the back of the hand that was striking. The knees are toward the drainage channel at the foot of the wall, and the flame at the shoulder is in front of the work lamp.
@@ -6402,7 +6402,7 @@ The work lamp is at the corridor entrance. The cold-store watch is on the thresh
 
 - Territory: Udukeoni stand gathered in the defrost corridor. At midwinter dawn, the cold-store watch sees that line from the threshold of the barrier door. The people are along the cold wall, and the gaps between shoulders are much like one another. Frost sits on the shoulders and the hair, and both arms hang at the sides. The chest is still, and the mouth is closed. The head is toward the coil housing. The boots stand in one line of defrost water. The work lamp is at the corridor entrance.
 
-When the season changes and the water on the corridor floor has thawed, the cold-store watch sees the same person from the entrance side. The shoulders are wet, and dried water marks are on the chin and the nape. Drops from the coil housing fall in front of the boots.
+When the season changes and the water on the corridor floor has warmed, the cold-store watch sees the same person from the entrance side. The shoulders are wet, and dried water marks are on the chin and the nape. Drops from the coil housing fall in front of the boots.
 
 Before the compartment at the end of the corridor, the people face the dark. The water on the compartment floor is frozen. The cold-store watch''s flashlight lies on the threshold.
 
@@ -6624,7 +6624,7 @@ Long-winged surveillance craft take off only when a short runway or towing launc
 
 When heavy mineral freight cars or winter fuel arrive from the XT04 Tumen River–Far East Theater, axle loads resembling those on old materials-receipt sheets are detected and activity on the Gangnam Line siding increases. On the Gwangjin Line, the units try to incorporate eastern bridges and the approach to Godeok base into a new work zone.
 
-During the spring thaw they avoid sidings with weak ground; in severe cold, increased hydraulic viscosity shortens their operating range.
+In the less-cold weeks they avoid sidings with weak ground; in severe cold, increased hydraulic viscosity shortens their operating range.
 
 Large units cannot sustain entry into narrow unpaved alleys, basements with unverified load capacity, or dense areas beyond the long-winged craft''s line of observation.
 
@@ -6769,7 +6769,7 @@ The weight of the choice lies not in whether to possess powerful machines, but i
 | [G25 · 등불개미](/wiki/Hostile-Group-G25/) | 잔존 자동 기계 | 16 |
 | [G26 · 철공룡](/wiki/Hostile-Group-G26/) | 잔존 자동 기계 | 16 |
 
-**끝나지 않는 겨울 속의 적대 존재.** 이 목록의 무엇도 봄을 기다리며 잠들지 않는다. 봄이 오지 않기 때문이다. 짐승은 사람이 남긴 열로 산다. 환기구, 따뜻한 배수, 보일러 지붕, 폐기물 더미다. 적대 집단은 추위 속에서 사람을 살리는 것으로 산다. 연료, 필터, 식량, 전력이다. 살아남은 기계는 얼어붙는 전지와 더는 아무도 만들지 않는 부품에 묶여 있다. 감염자는 따뜻한 물과 따뜻한 벽이 있는 곳에 모인다.
+**끝나지 않는 겨울 속의 적대 존재.** 이 목록의 무엇도 더 따뜻한 날을 기다리며 잠들지 않는다. 그런 날은 오지 않기 때문이다. 짐승은 사람이 남긴 열로 산다. 환기구, 따뜻한 배수, 보일러 지붕, 폐기물 더미다. 적대 집단은 추위 속에서 사람을 살리는 것으로 산다. 연료, 필터, 식량, 전력이다. 살아남은 기계는 얼어붙는 전지와 더는 아무도 만들지 않는 부품에 묶여 있다. 감염자는 따뜻한 물과 따뜻한 벽이 있는 곳에 모인다.
 
 **기술 교리에 맞춘 위협.** 싸움마다 탄약, 연료, 전지, 기계 부품, 이식 부품, 목숨으로 값을 치르며, 어느 것도 쉽게 채워지지 않는다. 짐승은 낮은 위협이다. 대개 그물과 울타리를 든 지원 분대가 맡고, 건널목을 비워야 할 때 사격병이 나선다. 적대 사람은 마주 쏘기 때문에 가장 비싼 위협이다. 보병과 저격수와 정찰 드론 분대가 그 싸움을 맡고, 말이 먼저다. 감염자는 보병과 의약품과 격리로 맞는 중간 위협이다. 살아남은 기계는 대장갑 사격병과 드론 분대와 전파 방해 지원 분대가 맡는 높은 위협이며, 그 가운데 가장 무거운 것만이 전쟁 기계가 태우는 연료값을 한다. 문서마다 따로 읽는다.
 
@@ -6786,7 +6786,7 @@ HC01 여의도전산가가 봉인한 냉각 폐기물 더미는 멧돼지의 겨
 
 - 영역: 주 서식은 수문국 수문 바깥 습지·폐기물 경사지다.
 
-건기·동절기에는 서울역 중앙 대한민국정부 쪽 녹지 파편과 야간 시장 잔여물 축을 따라 이동하고, XT01 임진강관문전구에서 밀려 내려오는 피난 행렬의 음식물 흔적에 북서 가장자리 무리가 반응한다.
+깊은 추위 주간에는 서울역 중앙 대한민국정부 쪽 녹지 파편과 야간 시장 잔여물 축을 따라 이동하고, XT01 임진강관문전구에서 밀려 내려오는 피난 행렬의 음식물 흔적에 북서 가장자리 무리가 반응한다.
 
 홍수위가 수문 경고선을 넘으면 무리는 고지대 계단식으로 밀려 오르며 통행로를 가로지른다.
 
@@ -6796,7 +6796,7 @@ HC01 회수조가 음식물 봉인 주기를 늦추면 무리 밀도가 올라�
 
 에너지 순환은 섭식-배설-습지 미생물막으로 이어지며, 고기·가죽을 노리는 비공인 수렵은 단기 이득 대신 잔여 무리를 더 공격적으로 만든다.
 
-- 생애: 장마 전에는 모돈별 가족군이 흩어져 먹이터를 정찰하고, 범람 직후에는 고지대 음식물 축에 일시 합류한다.
+- 생애: 녹은 물 파동 전에는 모돈별 가족군이 흩어져 먹이터를 정찰하고, 범람 직후에는 고지대 음식물 축에 일시 합류한다.
 
 새끼 생존률이 두 계절 연속 높을 때만 가족군이 갈라지며, 겨울 염분원과 진흙 목욕터가 줄면 번식보다 장거리 이동을 택한다.
 
@@ -6856,7 +6856,7 @@ XT01 유입 피난 행렬의 잔반은 별도 회수로 빼 무리 유인을 줄
 ### G01-SC1 · 수문 밖 첫 발굽
 
 - 단계: 1
-- 촉발: 장마 예보 전날 수문국 집하장에 모돈과 새끼 발자국이 나타난다.
+- 촉발: 녹은 물 예보 전날 수문국 집하장에 모돈과 새끼 발자국이 나타난다.
 - 관련 세력: free-city, HC01, H01
 - 생태 기제: 봉인 시각을 기억한 가족군이 수문 진동이 멎는 틈에 접근한다.
 - 선택지: 집하장 야간 운영을 늦춘다 / 냄새 미끼로 습지 우회로를 연다 / 모돈만 포획한다
@@ -6913,7 +6913,7 @@ HC02 신정차륜가이 전선 피복을 교체하는 주기가 짧아질수록 
 
 배설물이 절연체를 오염시키는 순환이 통신 가용시간과 직접 연결된다.
 
-- 생애: 봄에는 번식쌍이 철탑 하나를 방어하고 비번식기에는 여러 가족이 공동 횃대로 합류한다.
+- 생애: 덜 추운 주간에는 번식쌍이 철탑 하나를 방어하고 비번식기에는 여러 가족이 공동 횃대로 합류한다.
 
 둥지 성공률보다 반복되는 안전 신호와 먹이 보상이 다음 해 귀환 위치를 결정하며, 강제 철거 뒤에는 어린 개체가 인접 통학로에 새 횃대를 시험한다.
 
@@ -7132,7 +7132,7 @@ HC04 뚝섬열원가이 관로 퇴적 준설을 건너뛰면 먹이막이 두꺼
 
 배설물과 미생물막이 수질 센서 값을 가려 펌프 판단을 늦춘다.
 
-- 생애: 건기에는 가족군마다 건조 은신처와 먹이터를 따로 쓰고, 강우 전에 수위가 먼저 오르는 간선에서 높은 환기실로 새끼를 옮긴다.
+- 생애: 깊은 추위 주간에는 가족군마다 건조 은신처와 먹이터를 따로 쓰고, 강우 전에 수위가 먼저 오르는 간선에서 높은 환기실로 새끼를 옮긴다.
 
 홍수 뒤 먹이막이 두꺼워지면 여러 가족이 시간대를 나눠 같은 관로를 쓰며, 은신처가 연속 수몰되면 지상 골목으로 분산한다.
 
@@ -7367,7 +7367,7 @@ HC06 노량진배달가이 습지 수위를 일방 배수하면 수조류는 차
 
 수위를 고정하면 기착 밀도와 차량기지 구내선의 열차·조류 충돌 위험이 함께 오른다.
 
-- 생애: 봄·가을에는 수조류와 섭금류가 먼저 얕은 수면에 기착하고, 먹이 밀도가 오르면 맹금류가 뒤따른다.
+- 생애: 덜 추운 주간과 폭풍철에는 수조류와 섭금류가 먼저 얕은 수면에 기착하고, 먹이 밀도가 오르면 맹금류가 뒤따른다.
 
 번식지는 별도 보호구역에 있고 차량기지 연못은 중간 기착지로만 쓰인다.
 
@@ -7465,25 +7465,25 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ## G07 · 용산 약탈단
 
 - 현대 불안: 환적국 이태원 화물 당직은 서해곡창전구 냉동 칸의 문이 골목에 보이기 전에 물통을 샤프트 문 뒤로 옮기고 재고판을 가슴 쪽에 둔다. 구로합금가 봉인 띠를 두 겹으로 누른 상자가 용산 유치선 하층 벽 쪽에 서 있다. 이태원 통행 골목의 등불은 입구 쪽 바닥을 밝히고 누액 받침대는 그 불빛 밖에 놓여 있다.
-- 기원: 환적국 이태원 화물 당직이 이 무리를 처음 본 자리는 우기 밤의 용산 유치선 하층이다. 누액 받침대 열에 사람이 서 있고 허리에는 막대가 있으며 손에는 상자 고리가 있다. 앞의 상자에는 서해곡창전구 냉동 표가 붙어 있고 뚜껑은 열려 있다. 당직의 재고판에 그 상자 번호가 같은 밤의 칸으로 적혀 있다.
-- 영역: 무리가 모이는 자리는 용산 유치선 하층과 이태원 통행 골목의 누액 받침대 열이다. 우기와 해동에는 사람이 용산·이태원 환승 화물 엘리베이터 샤프트를 따라 서 있다. 서해곡창전구 냉동 컨테이너가 골목까지 오면 당직 판에 서해곡창전구 신호가 적혀 있고 용산 약탈단은 컨테이너 문 앞에 있다. 건기에는 발 자리가 받침대 세 열 안에 있고 재고판에는 우기와 해동과 건기에 사람이 선 열이 적혀 있다.
+- 기원: 환적국 이태원 화물 당직이 이 무리를 처음 본 자리는 녹은 물 파동 밤의 용산 유치선 하층이다. 누액 받침대 열에 사람이 서 있고 허리에는 막대가 있으며 손에는 상자 고리가 있다. 앞의 상자에는 서해곡창전구 냉동 표가 붙어 있고 뚜껑은 열려 있다. 당직의 재고판에 그 상자 번호가 같은 밤의 칸으로 적혀 있다.
+- 영역: 무리가 모이는 자리는 용산 유치선 하층과 이태원 통행 골목의 누액 받침대 열이다. 녹은 물 파동과 덜 추운 주간에는 사람이 용산·이태원 환승 화물 엘리베이터 샤프트를 따라 서 있다. 서해곡창전구 냉동 컨테이너가 골목까지 오면 당직 판에 서해곡창전구 신호가 적혀 있고 용산 약탈단은 컨테이너 문 앞에 있다. 깊은 추위 주간에는 발 자리가 받침대 세 열 안에 있고 재고판에는 녹은 물 파동과 덜 추운 주간과 깊은 추위 주간에 사람이 선 열이 적혀 있다.
 - 경제: 용산 약탈단은 서해곡창전구 냉동 컨테이너의 식량 포대와 구로합금가 봉인 상자와 신내운수 칸의 운송 표를 이태원 통행 골목에서 옮긴다. 환적국 이태원 화물 당직은 약탈단 포대에 들어간 수만큼 재고판의 잔여 칸을 고쳐 적는다. 당직은 샤프트 문 옆에서 물통을 세고 그 수를 판에 적는다. 정우람 순번 표는 남은 포대 위에 놓여 있다.
-- 생애: 우기에는 이태원 통행 골목의 누액 받침대 열마다 사람이 서고 포대가 칸마다 걸쳐 있다. 해동에는 약탈단 정예조가 용산·이태원 환승 화물 엘리베이터 샤프트에 올라가 있고 빈 포대는 사다리 단마다 걸려 있다. 건기에는 같은 사람들이 용산 유치선 하층 벽 쪽에 모여 있고 골목 입구의 약탈단 척후조는 한 줄로 서 있다.
+- 생애: 녹은 물 파동에는 이태원 통행 골목의 누액 받침대 열마다 사람이 서고 포대가 칸마다 걸쳐 있다. 덜 추운 주간에는 약탈단 정예조가 용산·이태원 환승 화물 엘리베이터 샤프트에 올라가 있고 빈 포대는 사다리 단마다 걸려 있다. 깊은 추위 주간에는 같은 사람들이 용산 유치선 하층 벽 쪽에 모여 있고 골목 입구의 약탈단 척후조는 한 줄로 서 있다.
 - 감각: 환적국 이태원 화물 당직이 보는 자리에서 용산 약탈단은 누액 받침대의 상자 수와 용산·이태원 환승 화물 엘리베이터의 문 상태를 살핀다. 약탈단 척후조는 이태원 통행 골목 입구 쪽을 보고 약탈단 두목은 받침대 안쪽 열에 서 있다. 서해곡창전구 냉동 컨테이너의 문과 구로합금가 봉인 띠가 같은 시선 안에 있다.
 - 위계: 약탈단 두목은 누액 받침대 안쪽에 있어 상자 수를 정한다. 약탈단 정예조는 엘리베이터 문과 사다리와 포대를 맡는다. 약탈단 척후조는 이태원 통행 골목 입구에 서 칸의 도착을 본다. 재고판에서 환적국이 적힌 칸은 환적국 이태원 화물 당직 앞에 있다.
 - 연결: {"corporations_successor_only":["HC07"],"houses":["HC07"],"states":["government"],"synthetics":["H07"],"theaters":["XT02"]}
-- 상승 1-3: 같은 이태원 통행 골목에서 사람 자리가 세 번 달라진다. 우기 밤에는 용산 약탈단이 누액 받침대 전 열에 서 있고 식량 상자의 뚜껑이 열려 있다. 해동 아침에는 약탈단 정예조가 샤프트 사다리 단에 있으며 신내운수 칸의 구로합금가 봉인 모서리가 들려 있다. 건기 낮에는 무리가 받침대 세 열 안에 모여 있고 물통은 샤프트 문 옆에 잠겨 있다.
+- 상승 1-3: 같은 이태원 통행 골목에서 사람 자리가 세 번 달라진다. 녹은 물 파동 밤에는 용산 약탈단이 누액 받침대 전 열에 서 있고 식량 상자의 뚜껑이 열려 있다. 덜 추운 아침에는 약탈단 정예조가 샤프트 사다리 단에 있으며 신내운수 칸의 구로합금가 봉인 모서리가 들려 있다. 깊은 추위 주간 낮에는 무리가 받침대 세 열 안에 모여 있고 물통은 샤프트 문 옆에 잠겨 있다.
 - 교전: 환적국 이태원 화물 당직은 용산·이태원 환승 화물 엘리베이터의 샤프트 문을 잠그고 칸을 용산 유치선 하층에 둔다. 모서리가 들린 구로합금가 봉인 상자는 하층 벽 쪽에 세워져 있다. 물통은 문 뒤에 있고 마개는 잠겨 있으며 통의 수는 재고판 옆칸에 적혀 있다.
 - 교섭: 환적국 재고판과 구로합금가 봉인 확인과 정우람 순번 표와 신내운수 운송 표가 용산 유치선 하층 문턱에 놓인다. 환적국 이태원 화물 당직은 네 표의 상자 수를 한 판에 맞춘다. 맞춘 판은 하층 벽에 붙어 있다. 약탈단 두목은 그 판 밖의 누액 받침대 쪽에 서 있다.
 - 도덕 비용: 순번을 맞춘 날에는 재고판에 표의 수만큼 골목 밖으로 나간 식량 포대와 물통의 잔여가 적혀 있다. 샤프트 문을 잠근 날에는 정우람 순번 표가 용산 유치선 하층 벽에 붙어 있다. 받침대 자리를 비운 날에는 같은 상자 번호가 약탈단 포대 칸에 적혀 있고 약탈단 척후조가 그 포대를 보고 서 있다.
-- 시나리오: [G07-SC1](/wiki/Hostile-Group-G07/#g07-sc1-누액-받침대의-봉인-상자), [G07-SC2](/wiki/Hostile-Group-G07/#g07-sc2-신내운수-칸의-해동), [G07-SC3](/wiki/Hostile-Group-G07/#g07-sc3-서해곡창-냉동-칸)
+- 시나리오: [G07-SC1](/wiki/Hostile-Group-G07/#g07-sc1-누액-받침대의-봉인-상자), [G07-SC2](/wiki/Hostile-Group-G07/#g07-sc2-신내운수-칸의-녹은-물), [G07-SC3](/wiki/Hostile-Group-G07/#g07-sc3-서해곡창-냉동-칸)
 
 <a id="Hostile-Ecology-Index-heading-0260"></a>
 
 ### G07-SC1 · 누액 받침대의 봉인 상자
 
 - 단계: 1
-- 촉발: 우기 밤 용산·이태원 환승 화물 엘리베이터는 이태원 통행 골목에 멈춰 있고 구로합금가 봉인 상자가 누액 받침대 앞에 있다. 약탈단 척후조가 받침대 열에 서 있다. 정우람 순번 표가 상자 위에 있다.
+- 촉발: 녹은 물 파동 밤 용산·이태원 환승 화물 엘리베이터는 이태원 통행 골목에 멈춰 있고 구로합금가 봉인 상자가 누액 받침대 앞에 있다. 약탈단 척후조가 받침대 열에 서 있다. 정우람 순번 표가 상자 위에 있다.
 - 관련 세력: government, HC07, H07
 - 생태 기제: 환적국 이태원 화물 당직이 샤프트 문 앞에서 상자 수를 센다. 약탈단 두목은 받침대 안쪽에 있고 약탈단 정예조는 상자 고리를 잡고 있다. 구로합금가 봉인 띠의 모서리는 젖어 있다.
 - 선택지: 엘리베이터 칸을 용산 유치선 하층에 두고 샤프트 문을 잠근 뒤 상자를 하층 벽에 붙인다. / 구로합금가 봉인을 당직이 확인한 뒤 상자를 정우람 순번 표대로 이태원 통행 골목 밖으로 넘긴다. / 누액 받침대 열의 당직 자리를 비우고 상자를 약탈단이 선 자리에 둔다.
@@ -7493,10 +7493,10 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 
 <a id="Hostile-Ecology-Index-heading-0262"></a>
 
-### G07-SC2 · 신내운수 칸의 해동
+### G07-SC2 · 신내운수 칸의 녹은 물
 
 - 단계: 2
-- 촉발: 해동 아침 신내운수 화물 칸이 용산·이태원 환승 화물 엘리베이터 샤프트에 들어가고 구로합금가 봉인 띠가 칸 문에 붙어 있다. 약탈단 정예조가 사다리 단에 서 있다.
+- 촉발: 덜 추운 아침 신내운수 화물 칸이 용산·이태원 환승 화물 엘리베이터 샤프트에 들어가고 구로합금가 봉인 띠가 칸 문에 붙어 있다. 약탈단 정예조가 사다리 단에 서 있다.
 - 관련 세력: government, HC07
 - 생태 기제: 칸 바닥의 물기가 이태원 통행 골목의 누액 받침대로 이어져 있다. 환적국 재고판과 신내운수 운송 표가 문턱에 놓여 있고 두 표의 상자 수는 서로 다르다. 약탈단 두목은 그 차이만큼의 포대를 칸 옆에 둔다.
 - 선택지: 신내운수 운송 표를 환적국 재고판에 맞추고 차이 분량의 상자를 용산 유치선 하층으로 내린다. / 구로합금가 봉인 띠를 다시 누르고 칸을 샤프트의 위쪽 정차 선으로 보낸다. / 차이 분량의 상자를 약탈단 포대에 실은 뒤 당직이 신내운수 운송 표에 고친 수를 적는다.
@@ -7509,7 +7509,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ### G07-SC3 · 서해곡창 냉동 칸
 
 - 단계: 3
-- 촉발: 우기에서 해동으로 넘어가는 밤 서해곡창전구 냉동 컨테이너가 이태원 통행 골목까지 밀려 와 있다. 환적국 당직 판에는 서해곡창전구 신호가 적혀 있다. 용산 약탈단이 컨테이너 문 앞에 모여 있다.
+- 촉발: 녹은 물 파동이 덜 추운 주간으로 넘어가는 밤 서해곡창전구 냉동 컨테이너가 이태원 통행 골목까지 밀려 와 있다. 환적국 당직 판에는 서해곡창전구 신호가 적혀 있다. 용산 약탈단이 컨테이너 문 앞에 모여 있다.
 - 관련 세력: government, XT02, HC07, H07
 - 생태 기제: 소금 때가 컨테이너 바닥에서 누액 받침대까지 이어져 있다. 신내운수 칸과 구로합금가 봉인 상자가 같은 열에 있고 정우람 순번 표가 식량 포대 위에 있다. 약탈단 두목이 포대 수를 세고 약탈단 정예조가 문을 받치며 약탈단 척후조가 골목 입구에 서 있다.
 - 선택지: 냉동 칸을 용산 유치선 하층에 두고 환적국 이태원 화물 당직이 서해곡창전구 신호의 숫자만 재고판에 남긴다. / 정우람 순번과 신내운수 운송 표를 맞춘 뒤 구로합금가 봉인 상자를 먼저 이태원 통행 골목 밖으로 넘긴다. / 냉동 컨테이너 문을 연 채 약탈단이 선 쪽에 식량 포대를 둔다.
@@ -7580,13 +7580,13 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 
 - 현대 불안: 서울역재고가 재고 당직은 야간에 선반 칸을 두 번 세고 작업등을 밸브와 문 양쪽에 켜 둔다. 아관사 검수 당직은 아차산 검수 창 출입문에 빗장을 덧걸고 인원을 저온 창고 안쪽에 세워 둔다. 여의도출자연합회 출자 당직은 냉열 수량 칸을 열차 시각마다 다시 적는다.
 - 기원: 서울역재고가 재고 당직이 한겨울 밤 상암 냉각 부속 저온 회랑에서 이 무리를 본다. 군복 위에 방한 외피를 걸친 사람들이 재고 선반 앞에 서 있고 발치에는 서울역재고가 표식이 붙은 연료통과 탄약 상자가 있다. 가운데 선 사람은 무전기를 발 옆에 둔 채 반출 통로 쪽을 보고 있다.
-- 영역: 무리는 상암 냉각 부속 저온 회랑에 모인다. 해동이 되고 검수 창 계기판의 열 눈금이 올라가면 무리는 아차산 검수 창과 저온 창고에 나뉘어 선다. 두만강극동전구의 광물과 연료 열차가 냉열을 싣고 바깥 선로를 지나면 탈영병 척후조는 회랑 바깥 문에 서 있고 탈영병 정예조는 저온 창고 안에 있다.
+- 영역: 무리는 상암 냉각 부속 저온 회랑에 모인다. 덜 추운 주간이 오고 검수 창 계기판의 열 눈금이 올라가면 무리는 아차산 검수 창과 저온 창고에 나뉘어 선다. 두만강극동전구의 광물과 연료 열차가 냉열을 싣고 바깥 선로를 지나면 탈영병 척후조는 회랑 바깥 문에 서 있고 탈영병 정예조는 저온 창고 안에 있다.
 - 경제: 저온 회랑 선반에 있던 서울역재고가 표식이 붙은 연료통과 냉각 공구와 방한 피복이 탈영병 발치에 놓여 있다. 재고 장부의 반출 칸에는 그 수량이 적혀 있고 여의도출자연합회 출자 칸에는 같은 수량이 냉열 수량으로 적혀 있다. 두만강극동전구 열차가 선 날에는 광물 상자 한 줄이 아차산 검수 창 바닥에 있고 연료통 수는 장부 반출 칸에 적힌 수와 같다.
-- 생애: 한겨울에는 저온 회랑 선반 사이에 군복과 방한 외피가 놓여 있고 장비 더미가 밸브 앞까지 놓여 있다. 해동이 되고 검수 창 계기판의 열 눈금이 올라가면 무리는 아차산 검수 창과 저온 창고 두 곳으로 나뉘어 선다. 열차가 냉열을 싣고 지나간 뒤 검수 창에는 탈영병 정예조가 남고 탈영병 척후조는 저온 창고 문간에 모인다.
+- 생애: 한겨울에는 저온 회랑 선반 사이에 군복과 방한 외피가 놓여 있고 장비 더미가 밸브 앞까지 놓여 있다. 덜 추운 주간이 오고 검수 창 계기판의 열 눈금이 올라가면 무리는 아차산 검수 창과 저온 창고 두 곳으로 나뉘어 선다. 열차가 냉열을 싣고 지나간 뒤 검수 창에는 탈영병 정예조가 남고 탈영병 척후조는 저온 창고 문간에 모인다.
 - 감각: 상암 탈영병은 상암 냉각 부속 저온 회랑의 반출 통로와 냉각 밸브 쪽을 살핀다. 무리는 연료통과 공구 선반을 가운데 두고 서울역재고가 표식이 붙은 선반 쪽에 서며 아차산 검수 창 쪽을 등지고 선다. 두만강극동전구의 열차가 회랑 바깥 선로에 서면 탈영병 척후조가 선로 쪽 문을 본다.
 - 위계: 탈영병 분대장은 저온 회랑 중앙에 서고 탄약 상자와 무전기가 분대장의 발치에 있다. 탈영병 정예조는 연료통과 공구 더미를 끼고 분대장 좌우의 선반에 선다. 탈영병 척후조는 반출 통로와 선로 쪽 문에 나뉘어 서며 분대장 쪽을 향한 채 바깥을 본다.
 - 연결: {"corporations_successor_only":["HC09"],"houses":["HC09"],"states":["free-city","government"],"synthetics":["H09"],"theaters":["XT04"]}
-- 상승 1-3: 한겨울 밤의 저온 회랑에는 탈영병 분대장과 탈영병 정예조가 선반 앞에 서 있다. 해동 무렵에는 같은 회랑에 연료통이 적게 남아 있고 탈영병 정예조가 아차산 검수 창 쪽 통로에 장비 더미를 둔다. 두만강극동전구의 광물과 연료 열차가 냉열을 실은 채 바깥 선로를 지나면 탈영병 척후조가 회랑 문 앞에 늘어서고 탈영병 분대장은 남은 연료통 옆에 선다.
+- 상승 1-3: 한겨울 밤의 저온 회랑에는 탈영병 분대장과 탈영병 정예조가 선반 앞에 서 있다. 덜 추운 주간 무렵에는 같은 회랑에 연료통이 적게 남아 있고 탈영병 정예조가 아차산 검수 창 쪽 통로에 장비 더미를 둔다. 두만강극동전구의 광물과 연료 열차가 냉열을 실은 채 바깥 선로를 지나면 탈영병 척후조가 회랑 문 앞에 늘어서고 탈영병 분대장은 남은 연료통 옆에 선다.
 - 교전: 서울역재고가 재고 당직은 저온 회랑 반출 통로의 빗장을 걸고 작업등을 밸브 앞에 둔다. 재고 당직은 선반의 연료통과 공구를 재고 장부에 칸마다 적고 탈영병 분대장 앞의 탄약 상자 수를 같은 장부 아래칸에 적는다. 아관사 검수 당직은 아차산 검수 창 출입문을 걸어 잠그고 검수 인원을 저온 창고 안쪽에 세워 둔다.
 - 교섭: 여의도출자연합회 출자 당직과 아관사 검수 당직이 저온 창고 문간에서 창고 시간 칸을 나눈다. 출자 당직은 냉열 수량을 열차 쪽 칸에 적고 검수 당직은 아차산 검수 창 출입 시간을 낮 칸에 적는다. 서울역재고가 재고 당직은 두 칸을 재고 장부 한 면에 옮겨 적고 탈영병 분대장은 그 면 앞에 서 있다.
 - 도덕 비용: 아차산 검수 창에서는 낮에도 출입문이 잠겨 있고 검수 인원은 저온 창고 안에 선다. 서울역재고가의 연료통과 공구는 반출 칸에 적힌 채 저온 회랑에 있다. 여의도출자연합회 출자 당직은 냉열 수량을 두만강극동전구 열차 칸에 적어 두었다. 조하람 쪽 인원은 검수 창 바닥에서 물러나 창고 안쪽 벽에 붙어 선다.
@@ -7610,7 +7610,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ### G09-SC2 · 검수 창의 장비 더미
 
 - 단계: 2
-- 촉발: 해동 무렵 새벽 아차산 검수 창 바닥에 장비 더미가 있고 검수 창 계기판의 열 눈금이 높은 칸에 있다. 아관사 검수 당직이 문간에 서 있고 서울역재고가 재고 당직이 장부를 들고 있으며 여의도출자연합회 출자 당직이 냉열 칸을 들고 있다.
+- 촉발: 덜 추운 주간 무렵 새벽 아차산 검수 창 바닥에 장비 더미가 있고 검수 창 계기판의 열 눈금이 높은 칸에 있다. 아관사 검수 당직이 문간에 서 있고 서울역재고가 재고 당직이 장부를 들고 있으며 여의도출자연합회 출자 당직이 냉열 칸을 들고 있다.
 - 관련 세력: free-city, government, HC09
 - 생태 기제: 탈영병 정예조가 더미 양쪽에 서 있고 탈영병 분대장은 더미와 저온 창고 문 사이에 서 있다. 더미의 연료통과 공구에는 서울역재고가 표식이 남아 있다. 검수 당직과 재고 당직과 출자 당직이 같은 문간에 서 있다.
 - 선택지: 아관사 검수 당직이 아차산 검수 창 출입문을 잠그고 검수 인원을 저온 창고 안에 세운다. / 서울역재고가 재고 당직이 장비 더미의 수량을 반출 칸에 적고 장부를 더미 앞에 둔다. / 여의도출자연합회 출자 당직이 냉열 수량을 검수 창 낮 칸에서 저온 창고 밤 칸으로 옮긴다.
@@ -7636,12 +7636,12 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ## G10 · 보국문 집단
 
 - 현대 불안: 배급 당직은 집단이 문 앞에 서 있는 날 하층 출고를 열지 않고 윗층에서 이름을 부른다. 회랑 당직은 해풍이 들어오는 시각에 외곽 계단의 등만 켜 둔다. 종자 당직은 종자 포대를 배급 자루와 다른 선반에 둔다.
-- 영역: 보국문 집단은 북한산보국문 대피 회랑의 배수 불량 구간에 모인다. 장마와 배급 주기에는 가락과 잠실의 하층 배급고와 환기구에 선다. 인천신탁전구의 해풍이 들어오면 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 남는다. 회랑이 마르면 인원이 배급고 문 쪽으로 빠진다.
+- 영역: 보국문 집단은 북한산보국문 대피 회랑의 배수 불량 구간에 모인다. 녹은 물 파동과 배급 주기에는 가락과 잠실의 하층 배급고와 환기구에 선다. 인천신탁전구의 해풍이 들어오면 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 남는다. 회랑이 마르면 인원이 배급고 문 쪽으로 빠진다.
 - 경제: 잠실 하층 배급고에서 곡물 자루와 마른 반찬 통을 집단 쪽으로 넘긴다. 가락 환기구의 손전등과 우의는 정예조 쪽에 있다. 마곡종자가가 출고를 멈춘 뒤 윗층 선반의 종자 포대는 묶인 채 있고 아래층 자루만 문 앞에 있다.
 - 생애: 배급일 낮에는 북한산보국문 회랑 쪽 인원이 가락과 잠실 하층에 붙는다. 인천신탁전구 쪽 해풍이 회랑으로 들어오면 외곽 계단의 인원이 늘고 안쪽 문턱에는 수행이 남는다. 회랑이 마르면 정예조가 배급고 문 앞에 서고 배수로 손잡이에는 표식 천만 매여 있다.
 - 위계: 집단 인도자는 회랑 분기 문턱에 선다. 정예조는 배수로와 배급고 문짝을 맡는다. 척후조는 환기구와 배급 동선에 서서 인도자 쪽을 향한다. 수행은 인도자 뒤 마른 발판에서 자루와 물통을 든다.
 - 연결: {"corporations_successor_only":["HC10"],"houses":["HC10"],"states":["government"],"synthetics":["H10"],"theaters":["XT05"]}
-- 상승 1-3: 북한산보국문 대피 회랑에서는 집단 인도자와 수행이 문턱에 서 있다. 장마가 시작되면 정예조가 무릎까지 물이 찬 배수로 양쪽에 늘어서 통로를 막는다. 배급 주기가 겹치면 척후조가 회랑에서 가락 하층 배급고 문앞까지 늘어서고 문 안에는 자루가 쌓여 있다.
+- 상승 1-3: 북한산보국문 대피 회랑에서는 집단 인도자와 수행이 문턱에 서 있다. 녹은 물 파동이 시작되면 정예조가 무릎까지 물이 찬 배수로 양쪽에 늘어서 통로를 막는다. 배급 주기가 겹치면 척후조가 회랑에서 가락 하층 배급고 문앞까지 늘어서고 문 안에는 자루가 쌓여 있다.
 - 시나리오: [G10-SC1](/wiki/Hostile-Group-G10/#g10-sc1-회랑-문턱의-포대), [G10-SC2](/wiki/Hostile-Group-G10/#g10-sc2-하층-배급고의-문), [G10-SC3](/wiki/Hostile-Group-G10/#g10-sc3-해풍이-닿는-외곽-계단)
 
 <a id="Hostile-Ecology-Index-heading-0284"></a>
@@ -7649,7 +7649,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ### G10-SC1 · 회랑 문턱의 포대
 
 - 단계: 1
-- 촉발: 초여름 밤 집단 인도자가 북한산보국문 대피 회랑 문턱에 서 있고, 마곡종자가가 종자 포대를 그 문으로 내보내게 되어 있다. 윤새론 쪽이 출고 목록을 들고 문 앞에 서 있다.
+- 촉발: 전력 배급 밤 집단 인도자가 북한산보국문 대피 회랑 문턱에 서 있고, 마곡종자가가 종자 포대를 그 문으로 내보내게 되어 있다. 윤새론 쪽이 출고 목록을 들고 문 앞에 서 있다.
 - 관련 세력: government, HC10, H10
 - 생태 기제: 안국총림 회랑 당직이 철문의 잠금과 계단의 인원을 보고 마곡종자가 배급 당직이 포대의 선반을 본다. 마곡종자가가 목록을 당직에게 넘기면 윤새론 쪽이 문 앞에 남고 수행이 문턱의 포대 옆에 선다.
 - 선택지: 안국총림 회랑 당직이 철문을 잠그고 마곡종자가가 종자 포대를 윗층 선반에 둔다. / 당직이 오전에만 철문을 열고 윤새론 쪽 목록에 적힌 포대만 문 밖으로 낸다. / 당직이 문턱에 선 채로 출고를 진행하고 포대를 회랑으로 넘긴다.
@@ -7663,7 +7663,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 
 - 단계: 2
 - 관련 세력: government, HC10
-- 도덕 비용: 당일 배급 자루가 줄고 대기 줄이 윗층 계단까지 이어진다. 안국총림 회랑 당직 한 조가 배수 불량 구간 밖 계단에서 밤을 샌다. 환기구 밖 인원이 우의 없이 장마 속에 서 있다.
+- 도덕 비용: 당일 배급 자루가 줄고 대기 줄이 윗층 계단까지 이어진다. 안국총림 회랑 당직 한 조가 배수 불량 구간 밖 계단에서 밤을 샌다. 환기구 밖 인원이 우의 없이 녹은 물 파동 속에 서 있다.
 - 원본 항목: G10
 
 <a id="Hostile-Ecology-Index-heading-0288"></a>
@@ -7739,10 +7739,10 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ## G12 · 신내 탈영병
 
 - 현대 불안: 신내운수 화물 당직은 근무 책상을 엘리베이터에서 떨어진 청정 구간 쪽에 둔다. 당직은 분진 통로 문고리를 잠가 두고 갤러리 쪽 등을 켠 채로 둔다. 수문국 급수 당직은 완전 밀폐 청정 구간 안에서 역세 밸브 앞에 있다. 금천구청중기가 기계 당직은 승강 패널 뚜껑을 닫고 철장을 패널 앞에 세운다.
-- 기원: 신내운수 화물 당직이 한여름 밤 신내 화물 엘리베이터 분진 통로에서 이 무리를 처음 본다. 전투복을 입은 병사 여럿이 통로에 서 있다. 어깨에는 소총이 있다. 발치에는 탄 상자와 물통이 있다. 어깨의 표식은 국가 군 조직의 표식이다.
+- 기원: 신내운수 화물 당직이 눈보라 주간의 밤 신내 화물 엘리베이터 분진 통로에서 이 무리를 처음 본다. 전투복을 입은 병사 여럿이 통로에 서 있다. 어깨에는 소총이 있다. 발치에는 탄 상자와 물통이 있다. 어깨의 표식은 국가 군 조직의 표식이다.
 - 영역: 무리가 모이는 자리는 신내 화물 엘리베이터 분진 통로다. 물 세척 주기와 정수 역세 일정에는 여의도 정수 필터 갤러리 해치 앞에 선다. 서해곡창 부두에서 분진이 들어오는 낮에는 외곽 통로 입구에 선다. 완전 밀폐 청정 구간 앞에서는 입구 쪽에 머물고 구간 안은 당직의 자리다.
 - 경제: 탄 상자, 전투식량 깡통, 물통, 여벌 전투복, 무전 전지가 화물 엘리베이터 칸과 필터 갤러리 사이에 놓여 있다. 신내운수 화물 목록은 탁자 끝에 있고 그 수량 칸에 줄이 그어져 있다. 수문국 급수 당직의 갤러리 물통은 같은 칸에 있다. 금천구청중기가의 공구 상자는 승강 패널 옆에 열려 있다. 이채온 당직의 상자는 무전기 옆에 있다.
-- 생애: 한여름 밤 통로 모퉁이에는 병사 몇이 서 있다. 초가을 세척 주기에는 같은 부대 표식을 단 병사와 나무 상자가 엘리베이터 칸에 더 있다. 역세가 돌아가는 새벽에는 무리가 승강장과 여의도 정수 필터 갤러리 해치 앞으로 나뉘어 있다.
+- 생애: 눈보라 주간의 밤 통로 모퉁이에는 병사 몇이 서 있다. 호송철 세척 주기에는 같은 부대 표식을 단 병사와 나무 상자가 엘리베이터 칸에 더 있다. 역세가 돌아가는 새벽에는 무리가 승강장과 여의도 정수 필터 갤러리 해치 앞으로 나뉘어 있다.
 - 감각: 신내 탈영병은 신내 화물 엘리베이터 분진 통로의 문턱과 여의도 정수 필터 갤러리의 해치를 살핀다. 문턱에 선 병사는 신내운수 화물 칸을 향하고, 해치에 선 병사는 수문국 역세 배관을 향한다. 서해곡창 부두의 분진이 외곽 통로에 쌓이면 탈영병 척후조는 입구에서 부두 쪽을 향한다.
 - 위계: 탈영병 분대장은 승강장 탁자의 무전기 앞에 있다. 탈영병 정예조는 난간과 엘리베이터 문짝에 있다. 탈영병 척후조는 분진 통로 입구와 여의도 정수 필터 갤러리 해치에 있다. 탄 상자와 물통은 분대장 발치에 있고 탄창은 탈영병 정예조의 손 쪽에 있다.
 - 연결: {"corporations_successor_only":["HC12"],"houses":["HC12"],"states":["government","free-city"],"synthetics":["H12"],"theaters":["XT02"]}
@@ -7757,7 +7757,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ### G12-SC1 · 분진 통로 승강장
 
 - 단계: 1
-- 촉발: 한여름 밤 신내 화물 엘리베이터 분진 통로에 신내 탈영병이 서 있고 탄 상자도 있다. 금천구청중기가의 승강 패널은 켜져 있다. 이채온 당직의 상자는 승강장 탁자에 있다.
+- 촉발: 눈보라 주간의 밤 신내 화물 엘리베이터 분진 통로에 신내 탈영병이 서 있고 탄 상자도 있다. 금천구청중기가의 승강 패널은 켜져 있다. 이채온 당직의 상자는 승강장 탁자에 있다.
 - 관련 세력: government, HC12, H12
 - 생태 기제: 화물 칸과 승강 패널과 이채온의 상자가 한 승강장에 있다. 탈영병 분대장은 무전기 앞에 있다. 탈영병 정예조는 난간에 있다. 신내운수 화물 당직은 문턱에 있다.
 - 선택지: 신내운수 화물 당직이 화물 철장을 칸 입구에 포갠다. / 금천구청중기가 기계 당직이 승강 패널 차단기를 내린다. / 이채온 당직이 상자를 청정 구간 책상으로 옮긴다.
@@ -7770,7 +7770,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 ### G12-SC2 · 역세 시각의 해치
 
 - 단계: 2
-- 촉발: 초가을 새벽 여의도 정수 필터 갤러리에서 역세가 돌아간다. 탈영병 척후조는 해치 앞에 있다. 신내 화물 엘리베이터 칸은 아래 분진 통로에 있다. 금천구청중기가의 승강 패널에서 그 칸으로 전원 선이 이어져 있다.
+- 촉발: 호송철 새벽 여의도 정수 필터 갤러리에서 역세가 돌아간다. 탈영병 척후조는 해치 앞에 있다. 신내 화물 엘리베이터 칸은 아래 분진 통로에 있다. 금천구청중기가의 승강 패널에서 그 칸으로 전원 선이 이어져 있다.
 - 관련 세력: government, free-city, HC12
 - 생태 기제: 세척 주기와 역세 일정이 같은 새벽에 겹친다. 수문국 급수 당직은 밸브 앞에 있다. 신내운수 화물 당직은 칸 옆에 있다. 금천구청중기가 기계 당직은 패널 앞에 있다.
 - 선택지: 수문국 급수 당직이 역세 밸브를 일정표의 시각에 잠근다. / 신내운수 화물 당직이 화물 칸을 분진 통로 층에 고정한다. / 금천구청중기가 기계 당직이 갤러리 보조 전원을 승강 패널에서 분리한다.
@@ -8838,11 +8838,11 @@ HP04가 킬로정마다 봉인 서를 대조해 편성을 떼어 내는 동안 �
 ## G19 · 그르렁이
 
 - 현대 불안: 수문국 급수 당직이 장갑을 낀 채로 문턱에 서 있다. 젖은 걸레는 들통 안에 있다. 냉각수 밸브는 잠겨 있다. 당직의 남은 장화는 물가에 놓여 있다.
-- 기원: 수문국 급수 당직이 한여름 밤 태욱그룹 지하 냉각 회랑 밸브실에서 사람을 본다. 사람은 밸브실에 서 있다. 입가와 목이 젖어 있으며 손끝에 푸른 때가 있다. 들이쉬는 숨마다 목에서 그르렁 소리가 난다.
+- 기원: 수문국 급수 당직이 눈보라 주간의 밤 태욱그룹 지하 냉각 회랑 밸브실에서 사람을 본다. 사람은 밸브실에 서 있다. 입가와 목이 젖어 있으며 손끝에 푸른 때가 있다. 들이쉬는 숨마다 목에서 그르렁 소리가 난다.
 
 회랑 모퉁이 밖에서는 걸음이 난다. 밸브실 문턱에서는 목소리가 배관 철판을 울린다. 수문국 급수 당직은 노량진선 우회 급수관 쪽에 있다. 작업등 아래의 눈은 가늘다.
 
-- 영역: 한여름 밤 수문국 급수 당직이 태욱그룹 지하 냉각 회랑 밸브실에 서 있다. 그르렁이는 밸브실과 노량진선 우회 급수관 쪽에 모여 있다. 입가와 목이 젖어 있으며 손끝에 푸른 때가 있다. 들이쉬는 숨마다 목에서 그르렁 소리가 난다. 작업등 아래의 눈은 가늘다.
+- 영역: 눈보라 주간의 밤 수문국 급수 당직이 태욱그룹 지하 냉각 회랑 밸브실에 서 있다. 그르렁이는 밸브실과 노량진선 우회 급수관 쪽에 모여 있다. 입가와 목이 젖어 있으며 손끝에 푸른 때가 있다. 들이쉬는 숨마다 목에서 그르렁 소리가 난다. 작업등 아래의 눈은 가늘다.
 
 냉각 회랑 바닥 배관에 물이 무릎까지 고여 있다. 물귀신은 그 물속에 있으며 어깨 위가 나와 있다. 살은 부어 있고 손가락 사이가 하얗다. 물기침은 밸브 앞에 서 있다. 기침마다 목에서 찬물이 한 줌 바닥에 떨어진다. 수문국 급수 당직의 장화가 물가에 있다.
 
@@ -8916,7 +8916,7 @@ HP04가 킬로정마다 봉인 서를 대조해 편성을 떼어 내는 동안 �
 ## G22 · 불꽃등이
 
 - 현대 불안: 야적 당직은 검사등을 측선 입구에만 켜 둔 채 차단기 집에 있다. 보존고 외벽 순찰은 모퉁이 안쪽 계단에 서 있다. 곡물 열차 승무 표찰이 기관차 출입문에 걸려 있다.
-- 기원: 대한민국정부 지하 제습 실패 구간과 창동 차륜방 폐전지 임시 야적이 같은 우기에 물을 머금었다. 전지 상자 옆 철판에 전해질 결정이 금속 가지로 서 있고 가지 끝에서 불꽃이 붙는다. 특정 전지·화학 법인을 지목하지 않는다.
+- 기원: 대한민국정부 지하 제습 실패 구간과 창동 차륜방 폐전지 임시 야적이 같은 녹은 물 파동에 물을 머금었다. 전지 상자 옆 철판에 전해질 결정이 금속 가지로 서 있고 가지 끝에서 불꽃이 붙는다. 특정 전지·화학 법인을 지목하지 않는다.
 - 영역: 서울역 중앙 대한민국정부 지하 보존고 외벽이 불꽃이 머무는 자리다. 야적 검사가 늦은 주에는 불꽃이 강남선 성하그룹 측선 야적에 가 있다. 서해곡창전구에서 온 습기 많은 곡물 열차의 지붕에 응결수가 맺혀 있고 그 옆에 불꽃이 잇따라 있다.
 - 경제: 창동 차륜방 폐전지 상자가 측선 야적 앞줄에 놓여 있다. 서해곡창전구 곡물 포대가 불꽃 앉은 화차에서 레일 밖으로 옮겨져 있다. 탄 포대 끈이 배수로 물에 떠 있다. 성하그룹 야적 장부가 차단기 집에 펼쳐져 있으며 화차 번호가 연필로 그어져 있다.
 - 생애: 외벽 철판을 두드리던 사람이 같은 철판 앞에 서 있다. 두드리던 손등에 푸른 불꽃이 붙어 있다. 무릎은 벽 하단 배수로 쪽에 있으며 어깨의 불꽃은 작업등 앞에 있다.
@@ -9162,7 +9162,7 @@ HC15에 모든 제어판과 부품을 넘기면 운용은 빨라져도 다른 �
 
 XT04 두만강극동전구 쪽에서 무거운 광물 화차나 동절 연료가 들어오면 과거 자재 입고표와 비슷한 축 하중이 감지되어 강남선 측선의 활동이 커지고, 광진선에서는 동부 교량과 고덕 기지 진입로를 신규 작업 구역으로 편입하려 한다.
 
-해빙기에는 지반이 약한 측선을 피하고, 혹한에는 유압 점도가 올라 이동 반경이 짧아진다.
+덜 추운 주간에는 지반이 약한 측선을 피하고, 혹한에는 유압 점도가 올라 이동 반경이 짧아진다.
 
 포장되지 않은 좁은 골목, 하중을 검증하지 않은 지하층, 장익기의 관측선이 닿지 않는 밀집 구역으로는 대형 기체가 지속 진입하지 못한다.
 
@@ -9294,14 +9294,14 @@ An ordinary flood boar does not leave the family-group ecology even when it wrap
 | Item | Record |
 |---|---|
 | Origin | Right after the collapse, when the flooding of the western Han River cut the green axis outside the Yeouido and Yeongdeungpo sluices, wild boar herds that came down from the Bukhansan and Anyangcheon corridors settled at the food-waste collection yards on the edge of the Sluice. / Urban incursions, food sources, and blocked movement could be explained by ordinary wildlife observation, but the behavior of learning the sealing hours and the relationship with HC01 were observed only in this region after the collapse. / The cooling-waste heaps sealed by HC01 Yeouido Computing House came to serve the wild boar as a winter salt source. |
-| Habitat and movement | The core habitat was the wetland and waste slopes outside the sluices of the Sluice. / In the dry season and winter they moved along the green fragments toward the Government of the Republic of Korea at central Seoul Station and along the axis of night-market leftovers, and the northwestern edge stirred in response to the food traces of the refugee columns pushed down from the XT01 Imjin River Gate Theater. / When the flood level crossed the sluice warning line, the herd was pushed up the upland stairs step by step and cut across the walkways. |
+| Habitat and movement | The core habitat was the wetland and waste slopes outside the sluices of the Sluice. / In the deep-cold weeks they moved along the green fragments toward the Government of the Republic of Korea at central Seoul Station and along the axis of night-market leftovers, and the northwestern edge stirred in response to the food traces of the refugee columns pushed down from the XT01 Imjin River Gate Theater. / When the flood level crossed the sluice warning line, the herd was pushed up the upland stairs step by step and cut across the walkways. |
 | Food and energy | The main resources are organic scraps, salt, and shallow-rooted crops, and as secondary resources they use the soft plastic of flood debris and the pools of cooling water. / When the HC01 recovery trough delays the scrap-sealing cycle, the band''s density rises, and when the seal is drawn too tight the band diverts to household-alley scraps. / The energy cycle runs from feeding to dung to the wetland microbial film, and unsanctioned hunting for meat and hide, instead of a short-term gain, makes the remaining band more aggressive. |
-| Life cycle and upkeep | Before the monsoon rains, family groups split by sow scatter and scout the feeding grounds, and right after a flood they join the high-ground scrap axis for a time. / A family group splits only when the survival rate of the young stays high for two seasons in a row, and when the winter salt sources and the mud baths shrink they choose long-distance movement over breeding. |
+| Life cycle and upkeep | Before the meltwater pulse, family groups split by sow scatter and scout the feeding grounds, and right after a flood they join the high-ground scrap axis for a time. / A family group splits only when the survival rate of the young stays high for two seasons in a row, and when the winter salt sources and the mud baths shrink they choose long-distance movement over breeding. |
 | Senses | They read together the low-frequency vibration of sluice opening and closing and of vehicles, carried through the hooves, and the smells of scraps, people, and disinfectant, and at close range they react to warmth carried on the wind and to the flow of air. / They cannot distinguish a distant heat source or decipher electronic noise. / Only Hannuri''s (H01) infrared observation compares the heat sources of people, generators, and wild boars, and on days of heavy rain, wind, and cooling fog a person reads the family groups and the lone individuals again. |
 | Group behavior | One adult female with young starts the move first, and the subadults scout the feeding ground and the escape route ahead. / Lone males overlap the band only loosely and do not follow the decision to move. / H01 marks the central individual of a family group and the lone males as separate heat-source clusters, and when the central female disappears the group tracks the young''s scent for 48 hours and then disperses by family. |
 | Long-term adaptation | Over a short span they learn the positions of fences and the sealing hours, but that memory is not treated as a genetic change. / Across many generations nocturnal activity and avoidance of people can be selected, but heavy capture removes the bold individuals first and causes a reverse selection in which the more secretive individuals remain. / The more secretive they become, the longer the search for a feeding ground takes, and the growth rate of the young falls. |
 
-**Life in the endless cold.** Wild boar live by the warmth people leave behind. With no growing season, they root under snow at heated waste heaps and dig for the salt of cooling-water pools; a herd follows the plume of a station vent the way it once followed a stream. The old words for the rains and the dry season now name the pulse of meltwater from heated stations and the frozen weeks between them.
+**Life in the endless cold.** Wild boar live by the warmth people leave behind. With no growing season, they root under snow at heated waste heaps and dig for the salt of cooling-water pools; a herd follows the plume of a station vent the way it once followed a stream. Its year runs on the pulse of meltwater from heated stations and the deep-cold weeks between them.
 
 **Threat and the cost of fighting.** A herd on a heated slope can break a fence line in one night. This is a low threat by the standards of the stations, and the doctrine is to spend as little as possible on it. Support teams with nets, fences and bait carry most of the work, and missile infantry fire only when a crossing has to be cleared. Recon drone teams are flown on a short leash to read heat on the surface, because every charge drawn from the cells in the cold is hard to replace. War machines are never sent, since the fuel they burn costs more than the animals are worth. The real costs are rounds that miss in the dark, bites that need medicine, and the hours of the people on the fence; lives are seldom lost unless a patrol is cut off in the snow.
 
@@ -9362,7 +9362,7 @@ A mutant born in the polluted wetlands swept by the G01-SC1 Great Flood took com
 
 ### Habitat
 
-It settled deep in the sewer tunnels connected to the flooded zone south of Seoul Station. Only during the monsoon rains, when the waters rose, did it surface to scout the surroundings.
+It settled deep in the sewer tunnels connected to the flooded zone south of Seoul Station. Only during the meltwater pulse, when the waters rose, did it surface to scout the surroundings.
 
 <a id="Hostile-Group-G01-heading-0020"></a>
 
@@ -10122,7 +10122,7 @@ After the first hoofprint of G01-SC1 was stamped at the collection yard, sow fam
 
 ### Habitat
 
-It was rooted in the lowest slope of the flood zone and drew in water with a breath that matched the opening-and-closing cycle. In the dry season it held out by licking the salt layer inside, and in monsoon weeks its face pushed outward a handspan at a time, narrowing the drainage channel.
+It was rooted in the lowest slope of the flood zone and drew in water with a breath that matched the opening-and-closing cycle. In the deep-cold weeks it held out by licking the salt layer inside, and in meltwater weeks its face pushed outward a handspan at a time, narrowing the drainage channel.
 
 <a id="Hostile-Group-G01-heading-0250"></a>
 
@@ -10134,7 +10134,7 @@ It concentrated inside the wall the food the family groups brought and the salt 
 
 ### Life Cycle and Maintenance
 
-Cracked sections were filled by the adults with saliva and mud, and only one new layer was added per monsoon. The day''s scouting and bathing shrank by as much labor as the adding took, and the center of the hierarchy gathered at the wall.
+Cracked sections were filled by the adults with saliva and mud, and only one new layer was added per meltwater pulse. The day''s scouting and bathing shrank by as much labor as the adding took, and the center of the hierarchy gathered at the wall.
 
 <a id="Hostile-Group-G01-heading-0254"></a>
 
@@ -10158,7 +10158,7 @@ The drain outside the sluice stayed clogged with mud while four pumps overheated
 
 ### Negotiation and Moral Choice
 
-One person on duty held only the authority to cut one section of the wall during the night shift to open a water passage. In a week when the recovery of the G01-SC2 salt pool had been moved up, that one section burst the storehouse and pushed the family groups into the semi-basement alleys. Leaving the section as it was let the pump station hold, but the wall drank water at every sealing hour and the ration convoy grew longer. Mud once split could not be rejoined in the same monsoon.
+One person on duty held only the authority to cut one section of the wall during the night shift to open a water passage. In a week when the recovery of the G01-SC2 salt pool had been moved up, that one section burst the storehouse and pushed the family groups into the semi-basement alleys. Leaving the section as it was let the pump station hold, but the wall drank water at every sealing hour and the ration convoy grew longer. Mud once split could not be rejoined in the same meltwater pulse.
 
 <a id="Hostile-Group-G01-heading-0262"></a>
 
@@ -10198,7 +10198,7 @@ They came out all at once from a single litter of a sow just after the G01-SC1 f
 
 ### Habitat
 
-They spent the day in a warm mud chamber inside the wall and came out to look for metal fragments on the slope only on nights of urgent growth. In the dry season the chamber leaned on the salt layer, and in the monsoon the chamber entrance opened into a waterway that pushed the larvae out as far as the pipe entrance.
+They spent the day in a warm mud chamber inside the wall and came out to look for metal fragments on the slope only on nights of urgent growth. In the deep-cold weeks the chamber leaned on the salt layer, and in the meltwater pulse the chamber entrance opened into a waterway that pushed the larvae out as far as the pipe entrance.
 
 <a id="Hostile-Group-G01-heading-0273"></a>
 
@@ -10274,7 +10274,7 @@ Adults that held out in the early wetlands of G01-SC1 piled metal on their backs
 
 ### Habitat
 
-It made its bed in the tunnels of the middle flood level, and in dry-season weeks it went back and forth almost only along the wall. On monsoon nights a hauling route opened between the salt pool and the slope, and that route overlapped with the alley drainage.
+It made its bed in the tunnels of the middle flood level, and in deep-cold weeks it went back and forth almost only along the wall. On meltwater nights a hauling route opened between the salt pool and the slope, and that route overlapped with the alley drainage.
 
 <a id="Hostile-Group-G01-heading-0296"></a>
 
@@ -10502,7 +10502,7 @@ During the G01-SC1 flood, some families were pushed upstream and planted plant f
 
 ### Habitat
 
-By day they clung to the ridge wetlands and the areas around abandoned railroad ties and held out through their daytime activity by photosynthesis. At the end of the dry season, moving along Anyangcheon in search of downstream salt became a necessity.
+By day they clung to the ridge wetlands and the areas around abandoned railroad ties and held out through their daytime activity by photosynthesis. At the end of the deep-cold weeks, moving along Anyangcheon in search of downstream salt became a necessity.
 
 <a id="Hostile-Group-G01-heading-0365"></a>
 
@@ -10538,7 +10538,7 @@ A back whose moss had burned away was already exposed like a lump of iron before
 
 ### Negotiation and Moral Choice
 
-The quarantine strip written down once in spring carried over unchanged into the next year until one side broke it. Keeping the strip left the trail on the Bukhansan side empty by day, and pushing it aside to open the junction with the downstream herd added the variant''s camouflaged charge to the flood line of G01-SC3. The cost fell separately on the weekend hikers of the ridge and the duty crew of the downstream pumps.
+The quarantine strip written down once in the less-cold weeks carried over unchanged into the next year until one side broke it. Keeping the strip left the trail on the Bukhansan side empty by day, and pushing it aside to open the junction with the downstream herd added the variant''s camouflaged charge to the flood line of G01-SC3. The cost fell separately on the weekend hikers of the ridge and the duty crew of the downstream pumps.
 
 <a id="Hostile-Group-G01-heading-0377"></a>
 
@@ -10560,7 +10560,7 @@ Urban incursions, shifts in food sources, and severed movement routes could be e
 
 The territory of the Wild Boar was set less by lines drawn on a map than by a continuity of water level and smell.
 
-The core habitat was the wetland and waste slopes outside the sluices of the Sluice, and in the dry season and winter they moved along the cut green belts toward the Government of the Republic of Korea at central Seoul Station and along the axis of night-market leftovers.
+The core habitat was the wetland and waste slopes outside the sluices of the Sluice, and in the deep-cold weeks they moved along the cut green belts toward the Government of the Republic of Korea at central Seoul Station and along the axis of night-market leftovers.
 
 When refugee columns pushed down from the XT01 Imjin River Gate Theater, the food traces left on the northwestern roads became new corridors.
 
@@ -10578,7 +10578,7 @@ Unlicensed hunting for meat and hide left immediate food and trade goods, but it
 
 Because a measure meant to protect civilian rations could increase food raids in vulnerable alleys, the cost of this ecology always moved to someone else''s doorstep.
 
-Before the monsoon, the family groups split up, one to each sow with young, to scout feeding grounds and escape routes.
+Before the meltwater pulse, the family groups split up, one to each sow with young, to scout feeding grounds and escape routes.
 
 Right after a flood they briefly joined the upland food axis, but they did not become one great herd.
 
@@ -10618,7 +10618,7 @@ Removal led by firearms scattered the family groups into every alley and increas
 
 The success of a response was judged not by the number of carcasses but by the reduction in collection-yard intrusions, the time to reopen passage, and alley damage.
 
-G01-SC1 ‘The First Hoof Outside the Sluice’ began when the prints of a sow and her young appeared at the Sluice collection yard on the day before the monsoon forecast.
+G01-SC1 ‘The First Hoof Outside the Sluice’ began when the prints of a sow and her young appeared at the Sluice collection yard on the day before the meltwater forecast.
 
 The family group remembered the sealing hours and approached in the gaps when the sluice vibration stopped.
 
@@ -10660,7 +10660,7 @@ Negotiating with the Wild Boar was less a promise to tame the wild than a contra
 
 Long-term management depended on joint patrols in which free-city, HC01, and the semi-basement residents redrew the boundaries of food and passage every season.
 
-Before the monsoon they recorded each sow''s prints and mud wallows without tagging, and after a flood they adjusted the night food-disposal hours and the positions of the managed salt pools so that the family groups did not lose their familiar escape routes.
+Before the meltwater pulse they recorded each sow''s prints and mud wallows without tagging, and after a flood they adjusted the night food-disposal hours and the positions of the managed salt pools so that the family groups did not lose their familiar escape routes.
 
 The key indicators were alley intrusions per hundred nights, the time taken to clear the sluice stairs, the proportion of traces with young, the area of rooted-up ground, and the distance of human encounters by corridor, and carcass counts were kept only in the supplementary record.
 
@@ -10683,7 +10683,7 @@ Yet when hoof disturbance concentrated in predictable corridors, the reed belts 
 ### G01-SC1 · The First Hoof Outside the Sluice
 
 - Stage: 1
-- Trigger: On the day before the monsoon forecast, the prints of a sow and her young appeared at the Sluice collection yard.
+- Trigger: On the day before the meltwater forecast, the prints of a sow and her young appeared at the Sluice collection yard.
 - Actors: free-city, HC01, H01
 - Ecological mechanism: A family group that has remembered the sealing hours approaches in the gap when the sluice vibration stops.
 - Choices: Delay the collection yard''s night operation / Open a wetland detour with a scent lure / Capture only the sow
@@ -10735,16 +10735,16 @@ Yet when hoof disturbance concentrated in predictable corridors, the reed belts 
 | 항목 | 기록 |
 |---|---|
 | 기원 | 붕괴 직후 한강 서부 범람이 여의도·영등포 수문 바깥 녹지축을 끊자, 북한산·안양천 회랑에서 내려온 멧돼지 무리가 수문국 가장자리 음식물 회수장에 정착했다. / 도심 출몰·먹이원·이동 차단은 일반적인 야생동물 관찰로 설명되지만, 봉인 시각을 학습하는 행동과 HC01과의 관계는 붕괴 이후 이 지역에서만 관측됐다. / HC01 여의도전산가가 봉인한 냉각 폐기물 더미는 멧돼지의 겨울 염분원이 되었다. |
-| 서식·이동 | 주 서식은 수문국 수문 바깥 습지·폐기물 경사지다. / 건기·동절기에는 서울역 중앙 대한민국정부 쪽 녹지 파편과 야간 시장 잔여물 축을 따라 이동하고, XT01 임진강관문전구에서 밀려 내려오는 피난 행렬의 음식물 흔적에 북서 가장자리 무리가 반응한다. / 홍수위가 수문 경고선을 넘으면 무리는 고지대 계단식으로 밀려 오르며 통행로를 가로지른다. |
+| 서식·이동 | 주 서식은 수문국 수문 바깥 습지·폐기물 경사지다. / 깊은 추위 주간에는 서울역 중앙 대한민국정부 쪽 녹지 파편과 야간 시장 잔여물 축을 따라 이동하고, XT01 임진강관문전구에서 밀려 내려오는 피난 행렬의 음식물 흔적에 북서 가장자리 무리가 반응한다. / 홍수위가 수문 경고선을 넘으면 무리는 고지대 계단식으로 밀려 오르며 통행로를 가로지른다. |
 | 먹이·에너지 | 주 자원은 유기 음식물·염분·얕은 뿌리 작물이고, 부자원으로 침수 잔해의 연질 플라스틱과 냉각수 웅덩이를 쓴다. / HC01 회수조가 음식물 봉인 주기를 늦추면 무리 밀도가 올라가고, 봉인을 과도히 조이면 무리는 가정 골목 음식물로 우회한다. / 에너지 순환은 섭식-배설-습지 미생물막으로 이어지며, 고기·가죽을 노리는 비공인 수렵은 단기 이득 대신 잔여 무리를 더 공격적으로 만든다. |
-| 생애·정비 | 장마 전에는 모돈별 가족군이 흩어져 먹이터를 정찰하고, 범람 직후에는 고지대 음식물 축에 일시 합류한다. / 새끼 생존률이 두 계절 연속 높을 때만 가족군이 갈라지며, 겨울 염분원과 진흙 목욕터가 줄면 번식보다 장거리 이동을 택한다. |
+| 생애·정비 | 녹은 물 파동 전에는 모돈별 가족군이 흩어져 먹이터를 정찰하고, 범람 직후에는 고지대 음식물 축에 일시 합류한다. / 새끼 생존률이 두 계절 연속 높을 때만 가족군이 갈라지며, 겨울 염분원과 진흙 목욕터가 줄면 번식보다 장거리 이동을 택한다. |
 | 감각 | 발굽으로 전해지는 수문 개폐·차량의 저주파 진동과 음식물·사람·소독약 냄새를 함께 읽고, 가까운 거리에서는 바람에 실린 온기와 공기 흐름에 반응한다. / 원거리 열원을 구분하거나 전자 잡음을 해독하지 못한다. / H01 한누리의 적외선 관측만 사람·발전기·멧돼지 열원을 비교하며, 비바람과 냉각 안개가 심한 날에는 사람이 가족군과 단독 개체를 다시 판독한다. |
 | 집단 행동 | 새끼를 둔 성체 암컷 한 마리가 이동을 먼저 시작하고 아성체가 앞쪽 먹이터와 퇴로를 탐색한다. / 수컷 단독 개체는 무리와 느슨하게 겹칠 뿐 이동 결정을 따르지 않는다. / H01은 가족군 중심 개체와 단독 수컷을 별도 열원 군집으로 표시하고, 중심 암컷이 사라지면 48시간 동안 새끼 냄새를 추적한 뒤 가족별로 분산한다. |
 | 장기 적응 | 짧은 기간에는 울타리 위치와 봉인 시각을 학습하지만 유전으로 넘어가지는 않는다. / 여러 세대에 걸쳐 밤에 활동하고 사람을 피하는 성향이 남을 수 있으나, 강한 포획은 대담한 개체만 먼저 제거해 더 은밀한 개체가 남는 역선택을 일으킨다. / 더 은밀해질수록 먹이터 탐색 시간이 늘어 새끼 성장률이 낮아진다. |
 
-**끝나지 않는 겨울의 삶.** 멧돼지는 사람이 남긴 온기로 산다. 자라는 철이 없으니 데워진 폐기물 더미 아래 눈을 파고 냉각수 웅덩이의 소금을 핥는다. 무리는 예전에 시내를 따르듯 역 환기구의 김을 따른다. 장마와 건기라는 옛말은 이제 데워진 역에서 나오는 녹은 물의 파동과 그 사이의 언 주간을 가리킨다.
+**끝나지 않는 겨울의 삶.** 멧돼지는 사람이 남긴 온기로 산다. 자라는 철이 없으니 데워진 폐기물 더미 아래 눈을 파고 냉각수 웅덩이의 소금을 핥는다. 무리는 예전에 시내를 따르듯 역 환기구의 김을 따른다. 그 한 해는 데워진 역에서 나오는 녹은 물의 파동과 그 사이의 깊은 추위 주간으로 돈다.
 
-**위협과 싸움의 값.** 데워진 비탈의 무리는 하룻밤에 울타리 하나를 무너뜨릴 수 있다. 역의 기준으로 이것은 낮은 위협이며, 교리는 여기에 되도록 적게 쓰는 것이다. 일은 대부분 그물과 울타리와 미끼를 든 지원 분대가 맡고, 사격병은 건널목을 비워야 할 때만 쏜다. 정찰 드론 분대는 지상의 열을 읽으려고 짧게만 띄운다. 추위 속에서 전지에서 꺼낸 충전은 다시 채우기 어렵기 때문이다. 전쟁 기계는 보내지 않는다. 태우는 연료가 짐승보다 비싸다. 실제 값은 어둠 속에서 빗나간 탄, 의약품이 필요한 물린 상처, 울타리에 선 사람들의 시간이다. 순찰대가 눈 속에서 고립되지 않는 한 목숨을 잃는 일은 드물다.
+**위협과 싸움의 값.** 데워진 비탈의 무리는 하룻밤에 울타리 하나를 무너뜨릴 수 있다. 역의 기준으로 이것은 낮은 위협이며, 교리는 여기에 되도록 적게 쓰는 것이다. 일은 대부분 그물과 울타리와 미끼를 든 지원 분대가 맡고, 사격병은 건널목을 비워야 할 때만 쏜다. 정찰 드론 분대는 지상의 열을 읽으려고 짧게만 띄운다. 추위 속에서 전지에서 꺼낸 충전은 다시 채녹은 물 파동 어렵기 때문이다. 전쟁 기계는 보내지 않는다. 태우는 연료가 짐승보다 비싸다. 실제 값은 어둠 속에서 빗나간 탄, 의약품이 필요한 물린 상처, 울타리에 선 사람들의 시간이다. 순찰대가 눈 속에서 고립되지 않는 한 목숨을 잃는 일은 드물다.
 
 <a id="Hostile-Group-G01-heading-0008"></a>
 
@@ -10803,7 +10803,7 @@ G01-SC1 대홍수가 휩쓴 오염 습지에서 태어난 변이종이 초기 �
 
 ### 서식
 
-서울역 남부 범람 구역과 연결된 하수 터널 깊숙이 자리를 잡았다. 물이 차오르는 장마철에만 지표로 올라와 주변을 정찰한다.
+서울역 남부 범람 구역과 연결된 하수 터널 깊숙이 자리를 잡았다. 물이 차오르는 녹은 물 파동에만 지표로 올라와 주변을 정찰한다.
 
 <a id="Hostile-Group-G01-heading-0020"></a>
 
@@ -11563,7 +11563,7 @@ G01-SC1의 첫 발굽이 집하장에 찍힌 뒤, 모돈 가족들이 수문 에
 
 ### 서식
 
-범람 구역의 가장 낮은 경사지에 자리 잡고 개폐 주기마다 물을 받아들인다. 건기에는 내부 염분 층으로 버티고, 장마 주간에는 벽면이 한 뼘씩 바깥으로 밀려 배수로를 좁힌다.
+범람 구역의 가장 낮은 경사지에 자리 잡고 개폐 주기마다 물을 받아들인다. 깊은 추위 주간에는 내부 염분 층으로 버티고, 녹은 물 주간에는 벽면이 한 뼘씩 바깥으로 밀려 배수로를 좁힌다.
 
 <a id="Hostile-Group-G01-heading-0250"></a>
 
@@ -11575,7 +11575,7 @@ G01-SC1의 첫 발굽이 집하장에 찍힌 뒤, 모돈 가족들이 수문 에
 
 ### 생애·정비
 
-갈라진 칸은 성체들이 타액과 진흙으로 메우며, 한 장마에 한 겹의 새 층만 덧붙인다. 덧붙임에 동원된 노동만큼 그날의 정찰과 목욕이 줄어 위계의 중심이 벽으로 모인다.
+갈라진 칸은 성체들이 타액과 진흙으로 메우며, 한 녹은 물 파동에 한 겹의 새 층만 덧붙인다. 덧붙임에 동원된 노동만큼 그날의 정찰과 목욕이 줄어 위계의 중심이 벽으로 모인다.
 
 <a id="Hostile-Group-G01-heading-0254"></a>
 
@@ -11599,7 +11599,7 @@ G01-SC1의 첫 발굽이 집하장에 찍힌 뒤, 모돈 가족들이 수문 에
 
 ### 협상·도덕 선택
 
-당직 한 명이 밤 근무 중에 벽체 한 칸을 잘라 통수를 열 권한만 갖는다. G01-SC2의 염분 웅덩이 회수가 앞당겨진 주에는 그 한 칸이 열리며 저장고가 터지고 가족군이 반지하 골목으로 밀려난다. 칸을 그대로 두면 펌프장은 버티지만 봉인 시각마다 벽이 물을 받아 배급 호송이 길어진다. 한번 가른 진흙은 같은 장마에 붙이지 못한다.
+당직 한 명이 밤 근무 중에 벽체 한 칸을 잘라 통수를 열 권한만 갖는다. G01-SC2의 염분 웅덩이 회수가 앞당겨진 주에는 그 한 칸이 열리며 저장고가 터지고 가족군이 반지하 골목으로 밀려난다. 칸을 그대로 두면 펌프장은 버티지만 봉인 시각마다 벽이 물을 받아 배급 호송이 길어진다. 한번 가른 진흙은 같은 녹은 물 파동에 붙이지 못한다.
 
 <a id="Hostile-Group-G01-heading-0262"></a>
 
@@ -11639,7 +11639,7 @@ G01-SC1 홍수가 빠진 직후 모돈의 한 배에서 한꺼번에 나왔다. 
 
 ### 서식
 
-벽 내부의 따뜻한 진흙 방에서 낮을 보내고 성장이 급한 밤에만 경사지 금속 조각을 찾으러 나온다. 건기의 방은 염분 층에 기대고, 장마에는 방 입구가 물길로 열려 유생이 관 입구까지 밀려 나온다.
+벽 내부의 따뜻한 진흙 방에서 낮을 보내고 성장이 급한 밤에만 경사지 금속 조각을 찾으러 나온다. 깊은 추위 주간의 방은 염분 층에 기대고, 녹은 물 파동에는 방 입구가 물길로 열려 유생이 관 입구까지 밀려 나온다.
 
 <a id="Hostile-Group-G01-heading-0273"></a>
 
@@ -11715,7 +11715,7 @@ G01-SC1 초기 습지를 버틴 성체들이 금속을 등판에 쌓아 이 형�
 
 ### 서식
 
-범람 중층의 터널을 잠자리로 삼고 건기 주간에는 거의 벽 쪽으로만 오간다. 장마 밤에는 염분 웅덩이와 경사지를 잇는 운반 길이 열리고, 그 길이 골목 배수와 겹친다.
+범람 중층의 터널을 잠자리로 삼고 깊은 추위 주간 주간에는 거의 벽 쪽으로만 오간다. 녹은 물 파동 밤에는 염분 웅덩이와 경사지를 잇는 운반 길이 열리고, 그 길이 골목 배수와 겹친다.
 
 <a id="Hostile-Group-G01-heading-0296"></a>
 
@@ -11943,7 +11943,7 @@ G01-SC1 홍수 때 일부 가족이 상류로 밀려 식물 섬유를 등판에 
 
 ### 서식
 
-능선 습지와 폐침목 주변에 낮에는 붙어 있고 광합성으로 낮 활동을 버틴다. 건기 말에는 안양천을 따라 하류 염분을 찾아 이동이 필수가 된다.
+능선 습지와 폐침목 주변에 낮에는 붙어 있고 광합성으로 낮 활동을 버틴다. 깊은 추위 주간 끝에는 안양천을 따라 하류 염분을 찾아 이동이 필수가 된다.
 
 <a id="Hostile-Group-G01-heading-0365"></a>
 
@@ -11979,7 +11979,7 @@ G01-SC1 홍수 때 일부 가족이 상류로 밀려 식물 섬유를 등판에 
 
 ### 협상·도덕 선택
 
-봄에 한 번 적는 격리 띠는 어느 한쪽이 끊기 전까지 다음 해에 그대로 이어진다. 띠를 지키면 북한산 쪽 탐방로는 낮 동안 비고, 띠를 밀어 하류와 합류를 열면 G01-SC3의 범람선에서 변종의 위장 돌진이 더해진다. 비용을 지는 쪽은 능선 주말 탐방객과 하류 펌프 당직으로 갈린다.
+덜 추운 주간에 한 번 적는 격리 띠는 어느 한쪽이 끊기 전까지 다음 해에 그대로 이어진다. 띠를 지키면 북한산 쪽 탐방로는 낮 동안 비고, 띠를 밀어 하류와 합류를 열면 G01-SC3의 범람선에서 변종의 위장 돌진이 더해진다. 비용을 지는 쪽은 능선 주말 탐방객과 하류 펌프 당직으로 갈린다.
 
 <a id="Hostile-Group-G01-heading-0377"></a>
 
@@ -12001,7 +12001,7 @@ G01-SC1의 상류 대피는 이 변종이 능선에 자리 잡은 이유다. G01
 
 멧돼지의 영토는 지도에 그은 선보다 물높이와 냄새의 연속으로 정해진다.
 
-주 서식지는 수문국 수문 바깥 습지와 폐기물 경사지이며, 건기와 동절기에는 서울역 중앙 대한민국정부 방향의 잘린 녹지와 야간 시장 잔여물 축을 따라 움직인다.
+주 서식지는 수문국 수문 바깥 습지와 폐기물 경사지이며, 깊은 추위 주간에는 서울역 중앙 대한민국정부 방향의 잘린 녹지와 야간 시장 잔여물 축을 따라 움직인다.
 
 XT01 임진강관문전구에서 피난 행렬이 밀려오면 북서쪽 도로에 남은 음식물 흔적이 새로운 회랑이 된다.
 
@@ -12019,7 +12019,7 @@ HC01이 회수조 봉인을 늦추면 한 지점에 가족군이 몰리고, 봉�
 
 시민 배급을 지키겠다는 조치가 취약한 골목의 음식물 약탈을 늘릴 수 있어, 이 생태의 부담은 다른 사람에게 넘어간다.
 
-장마 전에는 새끼를 둔 모돈마다 가족군이 흩어져 먹이터와 퇴로를 살핀다.
+녹은 물 파동 전에는 새끼를 둔 모돈마다 가족군이 흩어져 먹이터와 퇴로를 살핀다.
 
 범람 직후에는 고지대 음식물 축에 잠시 합류하지만 하나의 거대한 무리가 되지는 않는다.
 
@@ -12059,7 +12059,7 @@ H01 한누리는 사람과 발전기, 가족군으로 보이는 적외선 덩어
 
 대응의 성과는 사체 수가 아니라 집하장 침입 횟수, 통행 재개 시간 골목 피해의 감소로 판단한다.
 
-G01-SC1 ‘수문 밖 첫 발굽’은 장마 예보 전날 수문국 집하장에 모돈과 새끼 발자국이 나타나면서 시작된다.
+G01-SC1 ‘수문 밖 첫 발굽’은 녹은 물 예보 전날 수문국 집하장에 모돈과 새끼 발자국이 나타나면서 시작된다.
 
 가족군은 봉인 시각을 기억하고 수문 진동이 멎는 틈에 접근한다.
 
@@ -12101,7 +12101,7 @@ G01-SC3 ‘범람선의 통행권’은 XT01 피난 행렬의 잔반과 상승�
 
 장기 관리는 free-city, HC01 반지하 주민이 계절마다 먹이와 통행의 경계를 다시 정하는 공동 순찰에 달려 있다.
 
-장마 전에는 모돈별 발자국과 진흙 목욕터를 표식 없이 기록하고, 범람 뒤에는 야간 음식물 배출 시각과 관리된 염분 웅덩이의 위치를 조정해 가족군이 익숙한 퇴로를 잃지 않게 한다.
+녹은 물 파동 전에는 모돈별 발자국과 진흙 목욕터를 표식 없이 기록하고, 범람 뒤에는 야간 음식물 배출 시각과 관리된 염분 웅덩이의 위치를 조정해 가족군이 익숙한 퇴로를 잃지 않게 한다.
 
 주 지표는 백 야간당 골목 침입 횟수, 수문 계단을 비우는 데 걸린 시간 새끼 동반 흔적의 비율 뿌리 파헤침 면적 회랑별 사람 조우 거리이며 사체 수는 보조 기록에만 둔다.
 
@@ -12124,7 +12124,7 @@ G01-SC3 ‘범람선의 통행권’은 XT01 피난 행렬의 잔반과 상승�
 ### G01-SC1 · 수문 밖 첫 발굽
 
 - 단계: 1
-- 촉발: 장마 예보 전날 수문국 집하장에 모돈과 새끼 발자국이 나타난다.
+- 촉발: 녹은 물 예보 전날 수문국 집하장에 모돈과 새끼 발자국이 나타난다.
 - 관련 세력: free-city, HC01, H01
 - 생태 기제: 봉인 시각을 기억한 가족군이 수문 진동이 멎는 틈에 접근한다.
 - 선택지: 집하장 야간 운영을 늦춘다 / 냄새 미끼로 습지 우회로를 연다 / 모돈만 포획한다
@@ -12179,7 +12179,7 @@ The base form of the Large-billed Crow is a wild bird that moves by the sound sh
 | Origin | After breeding pairs settled on the factory pylons of the Daerim–Garibong Korean-Chinese corridor and the cables of the Han River bridges, the Large-billed Crow formed as the waste heat of the Yeongdeungpo Line Gauge factories and the sparks of the Guro industrial-park trolley wires gathered night insects. / The breeding-season territorial behavior of large-billed crows and the range of human responses could be explained by ordinary wildlife observation, but the rule by which they learned signal interference as alarms and spread it was observed only in this region after the collapse. |
 | Habitat and movement | The core habitat is the group of factory roofs and pylons at Daerim and Guro on the Yeongdeungpo Line. / Arc 1 sits on top of the Daerim and Garibong Joseonjok corridor, and in the breeding season the flock circles over bridges, school passages, and evacuation stairs. / In the non-breeding season, matching the sea wind and the insect density pushed in from the West Sea Granary Theater (XT02), it moves for a time to the western waterfront. / When wire-repair work begins, part of the band moves along the work basket. |
 | Food and energy | The food is insects, leftover market protein, and small carcasses, and for nest material they pick fine wire with the sheath stripped and fiber scrap. / The shorter the cycle on which the Sinjeong Wheel House (HC02) replaces wire sheathing, the less nest material there is and the more territorial attacks increase, and leaving the sheathing untended increases the risk of a short. / The cycle in which droppings contaminate the insulators connects directly to communications uptime. |
-| Life cycle and upkeep | In spring a breeding pair defends one pylon, and in the non-breeding season several families join a communal roost. / Repeated safety signals and food rewards, more than nest success, decide the return site the next year, and after a forced removal the young individuals test a new roost on the adjacent school route. |
+| Life cycle and upkeep | In the less-cold weeks a breeding pair defends one pylon, and in the non-breeding season several families join a communal roost. / Repeated safety signals and food rewards, more than nest success, decide the return site the next year, and after a forced removal the young individuals test a new roost on the adjacent school route. |
 | Senses | By sight they read helmets, rods, and flashlight reflections, and by hearing they distinguish the order of high-voltage noise, horns, and the crying of infants. / They do not decipher the content of an electronic signal; they connect the sounds of sparks and transformers to the appearance of insects and workers as a cue. / Seorin (H02) records the source of a sound shape and the number of repetitions, but whether it is a real alarm is checked by a person against the marks on site. |
 | Group behavior | A breeding pair divides nest defense and the carrying of food, and the young helper individuals join the alarm calls and the dives. / A communal roost in the non-breeding season shares only sound shapes and has no command structure. / H02 records nest radius, flight direction, and call order separately, and the human control officer of HC02 decides only whether to stop the work. / When one breeding individual disappears, the adjacent pair tests the empty roost and territorial collisions increase. |
 | Long-term adaptation | Sound shapes repeated like three horns, two inspection bells, and a steady transformer start-up are socially learned as food and danger signals and spread at the communal roost. / When the signal changes, false alarms increase for several days, and the flock learns again through a new reward rule. / No genetic change is set, and the more specialized they become in a familiar sound shape, the later they react to an unfamiliar real alarm. |
@@ -12192,7 +12192,7 @@ The base form of the Large-billed Crow is a wild bird that moves by the sound sh
 
 ## Individuals and battlefield formation
 
-Only the spring breeding pairs divide and hold the upper and lower parts of one tower, and a non-breeding roost has no commander. They read helmet outlines, rod angles, and flashlight reflections with the eye, and they separate high-voltage noise and the order of horns by ear. The name sovereign is closer to a nickname for the breeding pair that gathers horn imitations, and when one side empties, the adjacent pair only tests the empty place.
+Only the less-cold breeding pairs divide and hold the upper and lower parts of one tower, and a non-breeding roost has no commander. They read helmet outlines, rod angles, and flashlight reflections with the eye, and they separate high-voltage noise and the order of horns by ear. The name sovereign is closer to a nickname for the breeding pair that gathers horn imitations, and when one side empties, the adjacent pair only tests the empty place.
 
 | Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
 |---|---|---|---|---|---|
@@ -12433,7 +12433,7 @@ The dive collapsed into a glide before the concrete joint, and the tip of the be
 
 ### Negotiation and Moral Choice
 
-On the roof where the horns of G02-SC1 called up the expectation of food, the bridge team and the Haeryun Mobile Gate left only a single lane as a dive corridor. Fixing the corridor until spring breeding kept the walkway open but made the work basket avoid that lane, and removing the lane meant the nest radius was redrawn only in the next breeding season. The corridor disappeared only when the two parties took down the markers together.
+On the roof where the horns of G02-SC1 called up the expectation of food, the bridge team and the Haeryun Mobile Gate left only a single lane as a dive corridor. Fixing the corridor until less-cold breeding kept the walkway open but made the work basket avoid that lane, and removing the lane meant the nest radius was redrawn only in the next breeding season. The corridor disappeared only when the two parties took down the markers together.
 
 <a id="Hostile-Group-G02-heading-0078"></a>
 
@@ -12543,7 +12543,7 @@ In the roof gutters of the Gauge factories on the Yeongdeungpo Line lived a weav
 
 ### Origin
 
-In the spring when the Sinjeong Wheel House stripped the wire sheathing all at once, the scraps piled up in the roof gutters, and one individual began winding, remembering only the feel of copper and the elasticity of fiber. Unable to read the content of the radio waves, it kept only the pairing of glitter and softness, and that habit hardened into weaving labor.
+In the less-cold weeks when the Sinjeong Wheel House stripped the wire sheathing all at once, the scraps piled up in the roof gutters, and one individual began winding, remembering only the feel of copper and the elasticity of fiber. Unable to read the content of the radio waves, it kept only the pairing of glitter and softness, and that habit hardened into weaving labor.
 
 <a id="Hostile-Group-G02-heading-0110"></a>
 
@@ -12701,7 +12701,7 @@ When the cycle of droppings fouling the insulators touched on communication time
 
 ### Habitat
 
-It clung to the southern arm, where the daytime sun warmed the caps, and on rainy nights it moved briefly to the warm exhaust vents on the factory roofs. The insulators at the overhead-wire crossings of the Wangsimni Union''s railway shook too much to sit on for long, and in weeks of strong sea wind the porcelain sleeves of the bridge cables became substitute seats.
+It clung to the southern arm, where the daytime sun warmed the caps, and on meltwater nights it moved briefly to the warm exhaust vents on the factory roofs. The insulators at the overhead-wire crossings of the Wangsimni Union''s railway shook too much to sit on for long, and in weeks of strong sea wind the porcelain sleeves of the bridge cables became substitute seats.
 
 <a id="Hostile-Group-G02-heading-0158"></a>
 
@@ -12765,7 +12765,7 @@ In G02-SC2, the entrance to the false outage opened at the moment the film-thick
 
 ### Role and Body
 
-In spring, the bodies of a breeding pair that split one tower into upper and lower halves to guard it made the radius. The male on the upper level read helmet outlines first and the female on the lower level read the angle of poles first, and dives from two directions went for the edge of the work basket at the same time.
+In the less-cold weeks, the bodies of a breeding pair that split one tower into upper and lower halves to guard it made the radius. The male on the upper level read helmet outlines first and the female on the lower level read the angle of poles first, and dives from two directions went for the edge of the work basket at the same time.
 
 <a id="Hostile-Group-G02-heading-0177"></a>
 
@@ -12777,7 +12777,7 @@ On top of the territorial defense that large-billed crows kept in the breeding s
 
 ### Habitat
 
-The spring radius was fixed to the upper and lower arms of the factory-roof towers, and outside the breeding season the division came loose and joined the communal roost. The skies over the bridge and the school passage were only patrolled, never nested, and when a helmet entered the radius, the patrol stopped and returned to the tower.
+The breeding radius was fixed to the upper and lower arms of the factory-roof towers, and outside the breeding season the division came loose and joined the communal roost. The skies over the bridge and the school passage were only patrolled, never nested, and when a helmet entered the radius, the patrol stopped and returned to the tower.
 
 <a id="Hostile-Group-G02-heading-0181"></a>
 
@@ -12813,7 +12813,7 @@ While the breeding pair guarded the upper and lower tower at once, a helmet outl
 
 ### Negotiation and Moral Choice
 
-Within the spring radius, the Haeryun Mobile Gate reduced the work baskets to a single line and in return recognized the breeding pair''s upper seat. If the new horn pattern of G02-SC1 was read as food within the radius, that recognition slowed the basket by a day. Pushing the seat aside meant that recognition did not come back until the next breeding season, and the scalps of the helmeted workers paid the price first.
+Within the breeding radius, the Haeryun Mobile Gate reduced the work baskets to a single line and in return recognized the breeding pair''s upper seat. If the new horn pattern of G02-SC1 was read as food within the radius, that recognition slowed the basket by a day. Pushing the seat aside meant that recognition did not come back until the next breeding season, and the scalps of the helmeted workers paid the price first.
 
 <a id="Hostile-Group-G02-heading-0193"></a>
 
@@ -13321,7 +13321,7 @@ Its food was night insects, leftover protein from the markets, and small carcass
 
 ### Life Cycle and Maintenance
 
-In spring the breeding pairs divided one arc of the circle each to guard, and outside the breeding season several families joined. When its feathers were damaged by the sea wind, the imitation split and false alarms grew, and in the year after a demolition the circle gathered faster at the sound of the same inspection bell alone.
+In the less-cold weeks the breeding pairs divided one arc of the circle each to guard, and outside the breeding season several families joined. When its feathers were damaged by the sea wind, the imitation split and false alarms grew, and in the year after a demolition the circle gathered faster at the sound of the same inspection bell alone.
 
 <a id="Hostile-Group-G02-heading-0346"></a>
 
@@ -13447,7 +13447,7 @@ They only remembered the relationships repeated among sparks, sounds, and the ap
 
 The core territory was the factory roofs and pylon clusters of the Yeongdeungpo Line and the rail overhead-wire junctions of the Wangsimni Union.
 
-In the spring breeding season they circled in rings centered on their nests above the bridges, school passages, and evacuation stairs, and dived when a helmet or a long pole came within the radius.
+In the less-cold breeding weeks they circled in rings centered on their nests above the bridges, school passages, and evacuation stairs, and dived when a helmet or a long pole came within the radius.
 
 In the non-breeding season several families joined the communal roosts, and moved briefly to the western waterfront following the sea wind from the XT02 West Sea Granary Theater and the density of insects.
 
@@ -13465,7 +13465,7 @@ When droppings built up on the insulators, transmission uptime fell, and when ma
 
 Because the benefit to one zone that drove the crows out moved on as danger to other bridges and residential alleys, simple removal alone could not erase the cost.
 
-In spring the breeding pairs divided a single pylon between them to guard.
+In the less-cold weeks the breeding pairs divided a single pylon between them to guard.
 
 While one bird defended the nest and chicks, the other carried food, and young helpers joined in the alarm calls and dives.
 
@@ -13626,20 +13626,20 @@ So to stop the side effect of a predictable signal system lowering bird clashes 
 | 기원 | 대림·가리봉 중국동포 회랑의 공장 철탑과 한강 교량 케이블에 번식쌍이 자리 잡은 뒤, 영등포선 규격맹 공장 폐열과 구로 공단 전차선 스파크가 야간 곤충을 모으면서 큰부리까마귀가 형성됐다. / 큰부리까마귀의 번식기 영역 행동과 사람의 대처 범위는 일반적인 야생동물 관찰로 설명되지만, 신호 간섭을 경보로 학습하. 전파하는 규칙은 붕괴 이후 이 지역에서만 관측됐다. |
 | 서식·이동 | 주 서식은 영등포선 대림·구로 공장 지붕·철탑 군이다. / 호 1 대림·가리봉 중국동포 회랑 위에 얹히며, 번식기에는 교량·학교 통로·피난 계단 상공을 원형으로 순회한다. / 비번식기에는 XT02 서해곡창전구 쪽에서 밀려 오는 해풍·곤충 밀도에 맞춰 서부 수변으로 일시 이동한다. / 전선 보수 작업이 시작되면 무리 일부가 작업 바구니를 따라 이동한다. |
 | 먹이·에너지 | 먹이는 곤충·시장 잔여 단백질·작은 사체이며, 둥지 재료로 피복 벗겨진 세선·섬유 스크랩을 고른다. / HC02 신정차륜가이 전선 피복을 교체하는 주기가 짧아질수록 둥지 재료가 줄어 영역 공격이 늘고, 피복을 방치하면 합선 위험이 커진다. / 배설물이 절연체를 오염시키는 순환이 통신 가용시간과 직접 연결된다. |
-| 생애·정비 | 봄에는 번식쌍이 철탑 하나를 방어하고 비번식기에는 여러 가족이 공동 횃대로 합류한다. / 둥지 성공률보다 반복되는 안전 신호와 먹이 보상이 다음 해 귀환 위치를 결정하며, 강제 철거 뒤에는 어린 개체가 인접 통학로에 새 횃대를 시험한다. |
+| 생애·정비 | 덜 추운 주간에는 번식쌍이 철탑 하나를 방어하고 비번식기에는 여러 가족이 공동 횃대로 합류한다. / 둥지 성공률보다 반복되는 안전 신호와 먹이 보상이 다음 해 귀환 위치를 결정하며, 강제 철거 뒤에는 어린 개체가 인접 통학로에 새 횃대를 시험한다. |
 | 감각 | 시각으로 헬멧·막대·손전등 반사를 읽고 청각으로 고압 잡음·경적·유아 울음의 순서를 구분한다. / 전자 신호 내용을 해독하는 것이 아니라 스파크와 변압기 소리를 곤충·작업자 출현의 단서로 연결한다. / H02 서린은 음형의 출처와 반복 횟수를 기록하지만 실제 경보 여부는 사람이 현장 표식과 대조한다. |
 | 집단 행동 | 번식쌍은 둥지 방어와 먹이 운반을 나눠 맡고, 어린 보조 개체는 경계 울음과 급강하에 합류한다. / 비번식기 공동 횃대는 음형만 공유할 뿐 지휘 체계가 없다. / H02는 둥지 반경·비행 방향·울음 순서를 분리 기록하고 HC02 인간 관제 담당자는 작업 중단 여부만 결정한다. / 한쪽 번식 개체가 사라지면 인접 쌍이 빈 횃대를 시험해 영역 충돌이 늘어난다. |
 | 장기 적응 | 경적 세 번 점검 종 두 번 일정한 변압기 기동음처럼 반복된 음형을 먹이·위험 신호로 익혀 공동 횃대에서 전파한다. / 신호를 바꾸면 수일간 오경보가 늘고 새 보상 규칙을 거쳐 다시 학습한다. / 유전으로 바뀌지는 않으며, 익숙한 음형만 따를수록 낯선 실제 경보에 늦게 반응한다. |
 
 **끝나지 않는 겨울의 삶.** 까마귀는 열을 머금은 쇠 곁에 붙어 끝없는 추위를 버틴다. 보일러실 위 공장 지붕, 살아 있는 전선 위 철탑이다. 역이 버린 것을 먹고 빽빽이 모여 잔다. 그래서 따뜻한 지붕 하나가 다른 철이라면 흩어졌을 무리를 붙잡아 둔다.
 
-**위협과 싸움의 값.** 경보 신호를 배운 무리는 헛경보를 진짜 혼란으로 만들 수 있다. 역의 기준으로 이것은 낮은 위협이며, 교리는 여기에 되도록 적게 쓰는 것이다. 일은 대부분 그물과 울타리와 미끼를 든 지원 분대가 맡고, 사격병은 건널목을 비워야 할 때만 쏜다. 정찰 드론 분대는 지상의 열을 읽으려고 짧게만 띄운다. 추위 속에서 전지에서 꺼낸 충전은 다시 채우기 어렵기 때문이다. 전쟁 기계는 보내지 않는다. 태우는 연료가 짐승보다 비싸다. 실제 값은 어둠 속에서 빗나간 탄, 의약품이 필요한 물린 상처, 울타리에 선 사람들의 시간이다. 순찰대가 눈 속에서 고립되지 않는 한 목숨을 잃는 일은 드물다.
+**위협과 싸움의 값.** 경보 신호를 배운 무리는 헛경보를 진짜 혼란으로 만들 수 있다. 역의 기준으로 이것은 낮은 위협이며, 교리는 여기에 되도록 적게 쓰는 것이다. 일은 대부분 그물과 울타리와 미끼를 든 지원 분대가 맡고, 사격병은 건널목을 비워야 할 때만 쏜다. 정찰 드론 분대는 지상의 열을 읽으려고 짧게만 띄운다. 추위 속에서 전지에서 꺼낸 충전은 다시 채녹은 물 파동 어렵기 때문이다. 전쟁 기계는 보내지 않는다. 태우는 연료가 짐승보다 비싸다. 실제 값은 어둠 속에서 빗나간 탄, 의약품이 필요한 물린 상처, 울타리에 선 사람들의 시간이다. 순찰대가 눈 속에서 고립되지 않는 한 목숨을 잃는 일은 드물다.
 
 <a id="Hostile-Group-G02-heading-0008"></a>
 
 ## 개체와 전장 편성
 
-봄 번식쌍만 한 탑의 상하를 나누어 지키며 비번식 횃대에는 지휘자가 없다. 헬멧 윤곽과 막대 각도, 손전등 반사를 눈으로 읽고 고압 잡음과 경적 순서를 귀로 가른다. 군주라는 이름은 경적 흉내를 모은 번식쌍의 별칭에 가깝고, 한쪽이 비면 인접 쌍이 빈 자리를 시험할 뿐이다.
+덜 추운 주간의 번식쌍만 한 탑의 상하를 나누어 지키며 비번식 횃대에는 지휘자가 없다. 헬멧 윤곽과 막대 각도, 손전등 반사를 눈으로 읽고 고압 잡음과 경적 순서를 귀로 가른다. 군주라는 이름은 경적 흉내를 모은 번식쌍의 별칭에 가깝고, 한쪽이 비면 인접 쌍이 빈 자리를 시험할 뿐이다.
 
 | 개체·전문 | 구분 | 전장 단위 | 전장 역할 | 기존 역할군 | 출처 배치 |
 |---|---|---|---|---|---|
@@ -13880,7 +13880,7 @@ G02-SC1의 스파크와 변압기 소음 속에서 부리가 단단한 개체가
 
 ### 협상·도덕 선택
 
-G02-SC1의 경적이 먹이 기대를 부른 지붕에서는 교량 팀과 해륜 기동문이 급강하 복도를 한 차로만 남긴다. 복도를 봄 번식 전까지 고정하면 보행로는 열리되 작업 바구니는 그 차로를 피해야 하고, 차로를 없애면 다음 번식기에야 둥지 반경이 다시 그려진다. 두 주체가 함께 표식을 거둬야만 복도가 사라진다.
+G02-SC1의 경적이 먹이 기대를 부른 지붕에서는 교량 팀과 해륜 기동문이 급강하 복도를 한 차로만 남긴다. 복도를 덜 추운 주간의 번식 전까지 고정하면 보행로는 열리되 작업 바구니는 그 차로를 피해야 하고, 차로를 없애면 다음 번식기에야 둥지 반경이 다시 그려진다. 두 주체가 함께 표식을 거둬야만 복도가 사라진다.
 
 <a id="Hostile-Group-G02-heading-0078"></a>
 
@@ -13990,7 +13990,7 @@ G02-SC2의 가짜 정전 때 이 중계의 메아리 맑기를 가늠한다. 보
 
 ### 기원
 
-신정차륜가이 전선 피복을 한꺼번에 걷어 낸 봄, 부스러기가 지붕 홈에 쌓이자 한 개체가 구리의 감촉과 섬유의 탄성만 기억하고 감기 시작했다. 전파의 내용은 읽지 못한 채 반짝임과 부드러움의 짝만 남았고, 그 습관이 직조 노동으로 굳었다.
+신정차륜가이 전선 피복을 한꺼번에 걷어 낸 덜 추운 주간, 부스러기가 지붕 홈에 쌓이자 한 개체가 구리의 감촉과 섬유의 탄성만 기억하고 감기 시작했다. 전파의 내용은 읽지 못한 채 반짝임과 부드러움의 짝만 남았고, 그 습관이 직조 노동으로 굳었다.
 
 <a id="Hostile-Group-G02-heading-0110"></a>
 
@@ -14212,7 +14212,7 @@ G02-SC2는 울음 분류보다 막 두께 장부가 앞서는 순간에 가짜 �
 
 ### 역할·신체
 
-봄이면 철탑 하나를 위아래로 나눠 지키는 번식쌍의 몸이 반경을 만든다. 상층의 수컷은 헬멧 윤곽을, 하층의 암컷은 막대의 각도를 먼저 읽고, 두 방향 급강하가 작업 바구니의 가장자리를 동시에 노린다.
+덜 추운 주간이면 철탑 하나를 위아래로 나눠 지키는 번식쌍의 몸이 반경을 만든다. 상층의 수컷은 헬멧 윤곽을, 하층의 암컷은 막대의 각도를 먼저 읽고, 두 방향 급강하가 작업 바구니의 가장자리를 동시에 노린다.
 
 <a id="Hostile-Group-G02-heading-0177"></a>
 
@@ -14224,7 +14224,7 @@ G02-SC2는 울음 분류보다 막 두께 장부가 앞서는 순간에 가짜 �
 
 ### 서식
 
-봄 반경은 공장 지붕 철탑의 상하 팔에 고정되고, 비번식기에는 그 분할이 풀려 공동 횃대로 합류한다. 교량과 학교 통로 상공은 순회만 할 뿐 둥지를 두지 않으며, 헬멧이 반경에 들어오면 순회를 멈추고 탑으로 돌아온다.
+번식 반경은 공장 지붕 철탑의 상하 팔에 고정되고, 비번식기에는 그 분할이 풀려 공동 횃대로 합류한다. 교량과 학교 통로 상공은 순회만 할 뿐 둥지를 두지 않으며, 헬멧이 반경에 들어오면 순회를 멈추고 탑으로 돌아온다.
 
 <a id="Hostile-Group-G02-heading-0181"></a>
 
@@ -14260,7 +14260,7 @@ G02-SC2는 울음 분류보다 막 두께 장부가 앞서는 순간에 가짜 �
 
 ### 협상·도덕 선택
 
-봄 반경 안에서는 해륜 기동문이 작업 바구니를 한 줄로 줄이는 대신 번식쌍의 상층 자리를 인정한다. G02-SC1의 새 경적 배열이 반경 안에서 먹이로 읽히면 그 인정이 바구니 속도를 하루 늦춘다. 자리를 밀어내면 다음 번식기까지 그 인정은 돌아오지 않고, 헬멧 작업자의 두피가 먼저 다친다.
+번식 반경 안에서는 해륜 기동문이 작업 바구니를 한 줄로 줄이는 대신 번식쌍의 상층 자리를 인정한다. G02-SC1의 새 경적 배열이 반경 안에서 먹이로 읽히면 그 인정이 바구니 속도를 하루 늦춘다. 자리를 밀어내면 다음 번식기까지 그 인정은 돌아오지 않고, 헬멧 작업자의 두피가 먼저 다친다.
 
 <a id="Hostile-Group-G02-heading-0193"></a>
 
@@ -14324,7 +14324,7 @@ G02-SC1에는 경적이 반경 안의 먹이 기대를 키울 때 상층 자리�
 
 ### 단계적 위협
 
-다른 탑의 종이 한 음으로 붙으면 무리가 원을 채우기 시작한다. 시차 없는 타종이 이어지면 우산 뒤가 멈추고, 세 번째 누적에서 난간에 남는 피난민이 가방을 붙잡은 채 급강하 아래에 선다.
+다른 탑의 종이 한 음으로 붙으면 무리가 원을 채녹은 물 파동 시작한다. 시차 없는 타종이 이어지면 우산 뒤가 멈추고, 세 번째 누적에서 난간에 남는 피난민이 가방을 붙잡은 채 급강하 아래에 선다.
 
 <a id="Hostile-Group-G02-heading-0212"></a>
 
@@ -14768,7 +14768,7 @@ XT02 서해곡창전구의 해풍과 번식기가 겹친 계절, 상암 철탑�
 
 ### 생애·정비
 
-봄에는 번식쌍이 원의 한 호를 나눠 지키다 비번식기에 여러 가족이 합류한다. 깃이 해풍에 상하면 흉내 음이 갈라져 오경보가 늘고, 철거 다음 해에는 같은 점검 종만 들려도 원이 더 빨리 모인다.
+덜 추운 주간에는 번식쌍이 원의 한 호를 나눠 지키다 비번식기에 여러 가족이 합류한다. 깃이 해풍에 상하면 흉내 음이 갈라져 오경보가 늘고, 철거 다음 해에는 같은 점검 종만 들려도 원이 더 빨리 모인다.
 
 <a id="Hostile-Group-G02-heading-0346"></a>
 
@@ -14832,7 +14832,7 @@ XT02 쪽에서 밀려 오는 해풍과 곤충 밀도에 맞춰 비번식기 일�
 
 ### 서식
 
-건기·해풍 주간에만 영등포선 공장 지붕을 떠나 서부 수변 폐철탑·방파제 난간에 머문다. 번식기에는 교량 원주로 돌아가지 않고 갯가 횃대를 지키므로, 내륙 합류 원과 같은 저녁에도 공간이 겹치지 않는다.
+깊은 추위·해풍 주간에만 영등포선 공장 지붕을 떠나 서부 수변 폐철탑·방파제 난간에 머문다. 번식기에는 교량 원주로 돌아가지 않고 갯가 횃대를 지키므로, 내륙 합류 원과 같은 저녁에도 공간이 겹치지 않는다.
 
 <a id="Hostile-Group-G02-heading-0365"></a>
 
@@ -14894,7 +14894,7 @@ G02-SC2에서 곤충등을 옮기면 이 변종의 거점이 생기고, G02-SC3�
 
 주 영역은 영등포선의 공장 지붕과 철탑 군, 왕십리 연합의 철로 가선 교차점이다.
 
-봄 번식기에는 교량과 학교 통로, 피난 계단 위를 둥지 중심의 원으로 순회하며 헬멧이나 긴 막대가 반경 안에 들어오면 급강하한다.
+덜 추운 주간의 번식기에는 교량과 학교 통로, 피난 계단 위를 둥지 중심의 원으로 순회하며 헬멧이나 긴 막대가 반경 안에 들어오면 급강하한다.
 
 비번식기에는 여러 가족이 공동 횃대에 합류하고, XT02 서해곡창전구에서 부는 해풍과 곤충 밀도를 따라 서부 수변으로 잠시 이동한다.
 
@@ -14912,7 +14912,7 @@ HC02 신정차륜가이 전선 피복을 자주 교체하면 합선 위험과 �
 
 까마귀를 밀어낸 한 구역의 편익이 다른 교량과 주거 골목의 위험으로 옮겨가는 까닭에 단순 철거만으로는 비용을 없앨 수 없다.
 
-봄에는 번식쌍이 철탑 하나를 나누어 지킨다.
+덜 추운 주간에는 번식쌍이 철탑 하나를 나누어 지킨다.
 
 한 개체가 둥지와 새끼를 방어하면 다른 개체는 먹이를 운반하고, 어린 보조 개체가 경계 울음과 급강하에 합류한다.
 
@@ -18343,7 +18343,7 @@ From conduit patrol to conduit bones, these were ordinary raccoons adapted to th
 | Origin | When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog. / The range in which raccoons appeared in cities and streams could be explained by ordinary wildlife observation, but the rule of sensing the water level before the pumps was observed only in this region after the collapse. |
 | Habitat and movement | The core habitat was the pump-house connecting pipes of the Ttukseom Union and the dry refuge cavities under the workshops. / When flood stage rose they dispersed into the Mapo Union''s transmission underground galleries and vents, and when a cold wave and a logistics break from the XT04 Duman River Far East Theater changed feed density they moved briefly onto the eastern branch lines. / By day they patrolled the pipes, and by night the surface alleys within 50m. |
 | Food and energy | Aquatic prey, organic refuse, and carcass remains were the main resources, and dry hiding places and low flow were the upkeep cost. / When HC04 the Ttukseom Heat-Source House skipped dredging the pipe deposits, the food film thickened and density rose, and when it over-dredged, the family groups were pushed out into the surface markets. / Droppings and biofilm masked the water-quality sensor readings and delayed pump judgment. |
-| Life cycle and upkeep | In the dry season each family group used its own dry hiding place and feeding ground, and before the rain they moved their kits into the high ventilation rooms along trunks where the water rose first. / After a flood, when the food film thickened, several families shared the same pipe by time slot, and when hiding places flooded in succession they dispersed into the surface alleys. |
+| Life cycle and upkeep | In the deep-cold weeks each family group used its own dry hiding place and feeding ground, and before the rain they moved their kits into the high ventilation rooms along trunks where the water rose first. / After a flood, when the food film thickened, several families shared the same pipe by time slot, and when hiding places flooded in succession they dispersed into the surface alleys. |
 | Senses | With their whiskers they felt the current and the air moving through narrow gaps, and through pressure changes in their feet and bodies they sensed the water rising before a pump start. / Scent separated food, disinfectant, and rot, and hearing separated the pumps from human footsteps. / H04 Gangbyeol''s pipe-robot logs easily confused raccoons, floating debris, and people, so confirmation by human eye was required. |
 | Group behavior | Loose family groups and shared hiding places were all there was. / The elder females held only movement priority, and had no combat command. / Several family groups used the same trunk by time division. / When H04 summed them as a single colony, the HC04 drainage watch split them again by hiding place. |
 | Long-term adaptation | Individuals learned the pressure changes before a pump start and the safe dredging timetable. / Across generations a smaller body and a nocturnal habit favorable to pipe life could be selected, but the more they specialized for narrow pipes, the more vulnerable they became to surface crossings and cold waves. / Moving a hiding place by following a leading indicator is distinguished as family-group learning, not a genetic change. |
@@ -18368,7 +18368,7 @@ They read the current and the air moving through gaps with their whiskers, and f
 | [G04E06 · Biofilm Forager](/wiki/Hostile-Group-G04/#g04e06) | Common species | Pack or unit | Sensor obscuration | occupational | M006 |
 | [G04E07 · Litter-Carrier Mother](/wiki/Hostile-Group-G04/#g04e07) | Common species | Pack or unit | Transporting young | occupational | M006 |
 | [G04E08 · Shift-Change Burrow Keeper](/wiki/Hostile-Group-G04/#g04e08) | Common species | Pack or unit | Entrance shift change | first elite | M006 |
-| [G04E09 · Thaw-Path Guide](/wiki/Hostile-Group-G04/#g04e09) | Common species | Pack or unit | Guiding toward warmth | second elite | M006 |
+| [G04E09 · Melt-Path Guide](/wiki/Hostile-Group-G04/#g04e09) | Common species | Pack or unit | Guiding toward warmth | second elite | M006 |
 | [G04E10 · Dry Refuge Keeper](/wiki/Hostile-Group-G04/#g04e10) | Common species | Pack or unit | Shelter occupancy | environmental stronghold | M006 |
 | [G04E11 · Cable-Gap Dweller](/wiki/Hostile-Group-G04/#g04e11) | Common species | Pack or unit | Dry shelter | environmental stronghold | M006 |
 | [G04E12 · Pipe-Bound Youngling](/wiki/Hostile-Group-G04/#g04e12) | Common species | Pack or unit | Remaining in narrow spaces | growth stage | M006 |
@@ -18425,7 +18425,7 @@ When HC04 skipped dredging, the food film thickened and the density rose, and wh
 
 ### Life Cycle and Maintenance
 
-In the dry season each family used its own shelter, and at the leading pressure before rain they moved to the ventilation room.
+In the deep-cold weeks each family used its own shelter, and at the leading pressure before rain they moved to the ventilation room.
 
 When the shelters were flooded again and again, they gave up the division of time and scattered into the alleys.
 
@@ -18509,7 +18509,7 @@ On the basis of records of appearances in urban streams, it observed the ecologi
 
 The low-current pipes of the Ttukseom Union were its base, and when the water level rose it dispersed briefly toward the Mapo Union vents.
 
-When the density of food changed in a cold wave, it moved to the eastern branch lines, and after the thaw it came back to its familiar pipes.
+When the density of food changed in a cold wave, it moved to the eastern branch lines, and after the less-cold weeks begin it came back to its familiar pipes.
 
 <a id="Hostile-Group-G04-heading-0057"></a>
 
@@ -18523,7 +18523,7 @@ When dredging cleared away the food film all at once, this individual was the fi
 
 ### Life Cycle and Maintenance
 
-In the dry season it circled only its own family''s feeding grounds, and after a flood the families divided the hours and used the same trunk line.
+In the deep-cold weeks it circled only its own family''s feeding grounds, and after a flood the families divided the hours and used the same trunk line.
 
 A small build suited to narrow pipes could survive across generations, but it grew weaker at surface crossings and in cold waves.
 
@@ -18587,7 +18587,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 - Origin: After the collapse, once the inspection of the Jungnang and Tancheon trunk lines broke off, it followed aquatic food and stayed in the Ttukseom Union pump branch that people had emptied. The saying that it knew the water level before the pumps was family learning observed only in this region, not an accident of any real institution.
 - Habitat: By day it clung to the floors of slow-current pipes and the ledges beneath the manholes, and even at night it hardly went out toward the exits. When the flood level rose it only moved to a high joint of the same pipe; the Mapo Union gallery was not within this individual''s daily range.
 - Needs: Small aquatic food and the microbial film on the pipe walls were its staple food, and a gentle current had to be kept for it to save swimming energy. When disinfectant flowed thick, its whiskers were dulled for several days and it lost track of where the food was.
-- Life Cycle and Maintenance: In the dry season it went back and forth along only one branch line and rubbed its whiskers to remove foreign matter. When continuous rain lifted the floor, it moved its own body to the joints first, not its young, and after the thaw it came back to the familiar low-current stretch.
+- Life Cycle and Maintenance: In the deep-cold weeks it went back and forth along only one branch line and rubbed its whiskers to remove foreign matter. When continuous rain lifted the floor, it moved its own body to the joints first, not its young, and after the less-cold weeks begin it came back to the familiar low-current stretch.
 - Behavior and Hierarchy: It gave no combat orders and stepped aside only when the elder female passed a narrow ledge. Even when the H04 Gangbyeol log marked this individual as floating debris, the HC04 drainage duty had to tell it apart again by its times of coming and going and its sleeping place.
 - Escalation: In the first stage it clung to the joints before rain and became an unofficial leading signal. In the second stage droppings piled up in the same pipe, the official water gauge read low, and it came nose to nose with the inspection robots. In the third stage the remaining low-current stretch overlapped with the footholds of the maintenance crews.
 - Engagement and Response: Poison bait and full flooding ruined the downstream along with it through rotting carcasses. If partial damming briefly lowered the current, the sensors were washed, and the detour pipes were opened, Current-Whiskers went back to its familiar floor and shortened the time for the pumps to resume.
@@ -18614,7 +18614,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 - Origin: It came from a family that formed a surface circuit around exit refuse and market leftovers in a year when food inside the pipes dwindled. It became the face of fears that sewage would backflow into living areas, but is not a scout for an underground army.
 - Habitat: By day it hides in dry shade below an exit ledge; at night it circles only within 50 meters of the workshop alleys of the Ttukseom Union and the alleys toward the Mapo Union transmission site. If it crosses that line, exposure to dogs and vehicles drives it straight back into the pipe.
 - Needs: Nighttime refuse and carrion are its staples; it needs a dry ledge with an unblocked exit to maintain its circuit. If dredging lifts the exit all at once, the circuit extends deeper into the market.
-- Life and maintenance: If the pads on its feet crack, it stays off the surface for a while and waits for leftovers on the ledge. When alleys freeze in a cold wave, it folds its circuit and stays inside the entrance; on the first thawed night, it steps on the same corner again to check its route.
+- Life and maintenance: If the pads on its feet crack, it stays off the surface for a while and waits for leftovers on the ledge. When alleys freeze in a cold wave, it folds its circuit and stays inside the entrance; on the first less-cold night, it steps on the same corner again to check its route.
 - Behavior and hierarchy: It shares emergence times with the family that uses the same exit; who goes first is decided after the elder female passes. It forms no combat formation and breaks off its circuit midway when boot sounds approach.
 - Escalation: At stage 1, it leaves only footprints at an alley corner. At stage 2, the dredging window overlaps the access time and two families emerge into the market together. At stage 3, repeated flooding of the exit breaks the 50-meter rule and pushes it into passageways.
 - Engagement and response: Limiting nighttime surface passage to within 50 meters of the exit and opening an alternative dry ledge reduces market intrusion. Poison bait endangers alley dogs and sanitation workers alike; success is measured by zero surface bite injuries.
@@ -18641,7 +18641,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 - Origin: This is the result of a family that survived repeated dredging noise learning a safe timetable. It did not inherit a clock; it remembers how an individual that saw a missed window become a death site taught the others the vibration rhythm.
 - Habitat: It moves between the Ttukseom Union main branch visited by dredging equipment and the vacant branch entrance beside it. By day, when there is no construction, it sleeps at that entrance; when vibrations begin, it briefly moves toward the Mapo Union.
 - Needs: Organic sediment and aquatic leftovers accumulated between dredgings make its feeding calendar. If the schedule is unexpectedly advanced, food and hiding places disappear together.
-- Life and maintenance: After memorizing one season''s vibration cycle, it tests the first equipment of the next season by avoiding it. After three exposures to an incorrect rhythm, it abandons that main; returning requires a quiet night after the thaw.
+- Life and maintenance: After memorizing one season''s vibration cycle, it tests the first equipment of the next season by avoiding it. After three exposures to an incorrect rhythm, it abandons that main; returning requires a quiet night after the less-cold weeks begin.
 - Behavior and hierarchy: It gives no combat orders to other families. But if it vacates a branch first, families using the same time window read that absence. Even if H04 counts several movement points as one colony, the Dredging-Time Keeper''s access times must be logged separately.
 - Escalation: At stage 1, it appears only as a branch emptying before equipment enters. At stage 2, nighttime dredging overlaps with rotational hiding, pushing two families above ground. At stage 3, equipment is concentrated into one window regardless of the timetable, breaking the shared rules.
 - Engagement and response: Dividing dredging into two sections and keeping vibration warnings on the same rhythm lets this individual retreat to a branch. Concentrated dredging is faster but increases simultaneous appearances during later rain.
@@ -18732,7 +18732,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 <a id="Hostile-Group-G04-heading-0102"></a>
 <a id="g04e09"></a>
 
-### G04E09 · Thaw-Path Guide
+### G04E09 · Melt-Path Guide
 
 - Source batch: M006
 - Former role class: second elite
@@ -18743,17 +18743,17 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 | Type | Common species |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Guiding toward warmth |
-| Common species, variants and command scope | During an XT04 cold snap, the thaw-path guide uses its paw pads and whiskers to find an unfrozen passage first. It cannot summon other families, but several follow it onto the dry ledge where it stops. |
+| Common species, variants and command scope | During an XT04 cold snap, the telt-path guide uses its paw pads and whiskers to find an unfrozen passage first. It cannot summon other families, but several follow it onto the dry ledge where it stops. |
 
 - Role and body: The sewer raccoon clan''s second elite, it uses its paw pads and whiskers to distinguish ice from residual warmth on pipe walls and find an unfrozen passage first during an XT04 cold snap. It cannot summon other families, but several follow it onto the dry ledge where it stops. Its surface crossings are brief and clumsy.
 - Origin: During a winter when cold from the Tumen River–Far East theater and a logistics disruption changed the distribution of feed, an animal that survived when only an unfrozen pump access route remained passed its memory of warmth on through family learning. It has no history of claiming to be a commander.
-- Habitat: During cold-snap weeks, it moves between the residual heating in the Mapo Union Yeouido Investment Federation''s underground gallery and the dry access route to the Ttukseom Union pump room. When thawing begins, it returns along the eastern branch line as though guiding others back to a familiar pipe.
+- Habitat: During cold-snap weeks, it moves between the residual heating in the Mapo Union Yeouido Investment Federation''s underground gallery and the dry access route to the Ttukseom Union pump room. When the less-cold weeks begin, it returns along the eastern branch line as though guiding others back to a familiar pipe.
 - Needs: Unfrozen ground and a little residual heat are central to its survival; it chooses dry space before food. Cutting the gallery''s heat brings three families together on a single pump access route.
-- Life cycle and upkeep: When cracks in its paw pads deepen, it becomes slower to detect ice and spends a season on the branch line alone. The first warm water after the thaw offers a chance to wash its wounds, but if it arrives too quickly, it floods the access route again.
+- Life cycle and upkeep: When cracks in its paw pads deepen, it becomes slower to detect ice and spends a season on the branch line alone. The first warm water after the less-cold weeks begin offers a chance to wash its wounds, but if it arrives too quickly, it floods the access route again.
 - Behavior and hierarchy: What looks like leading is a search for warmth, not an order. It yields its route when an elder female moves her young. Even if H04 merges them into one heat spot, HC04 records the number of families and their entry and exit times separately.
 - Escalation: At stage 1, tracks appear first toward the gallery. At stage 2, diminished residual heat causes their use of the access route to overlap. At stage 3, three families block the only dry passage to the pumps, stopping maintenance.
 - Engagement and response: Temporarily opening a heated shelter pipe and restricting nighttime surface travel disperses their routes. Poisoned bait and flooding add bodies that have frozen to death. A temporary external inspection platform permits maintenance without clearing the passage, but the work crew bears the risk of falling in the cold snap.
-- Negotiation and moral choice: Opening part of the gallery''s heating as shared shelter requires other Mapo Union facilities to give up power. Postponing pump inspection avoids a clash but increases flood risk during a thaw or sudden rain. Whether to use the guide''s memory of warmth as an official detour hinges on the inability to secure both city drainage and nonhuman refuge at once.
+- Negotiation and moral choice: Opening part of the gallery''s heating as shared shelter requires other Mapo Union facilities to give up power. Postponing pump inspection avoids a clash but increases flood risk during a meltwater pulse or a sudden flood. Whether to use the guide''s memory of warmth as an official detour hinges on the inability to secure both city drainage and nonhuman refuge at once.
 - Scenario connection: In G04-SC3, ‘The Dry Passage to the Pump Room,’ three families converge on the access route where this animal first stops.
 
 <a id="Hostile-Group-G04-heading-0106"></a>
@@ -18773,7 +18773,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 | Common species, variants and command scope | The dry refuge keeper braces its shoulders inside the dry refuge chamber beneath the Ttukseom Union pump station, filling the space so other families cannot enter all at once. It is not a fixed command post but an animal guarding dry storage space with a low current. |
 
 - Role and body: An environmental-stronghold form of the Raccoon Dog, this burrow keeper has settled into the dry refuge chamber beneath the pump station of the Ttukseom Union, where its body fits closely. Its shoulders catch against a ceiling joint, physically filling the chamber so other families cannot enter all at once. It senses airflow with its flanks more than with its whiskers.
-- Origin: A family that used a refuge chamber vacated by people as a dry-season sleeping place refused to give up the dry space even after sending its young to the high ventilation room during a flood, producing this stronghold animal. The chamber is not a fixed command post but dry, low-current storage space.
+- Origin: A family that used a refuge chamber vacated by people as a deep-cold sleeping place refused to give up the dry space even after sending its young to the high ventilation room during a flood, producing this stronghold animal. The chamber is not a fixed command post but dry, low-current storage space.
 - Habitat: Its entire range is the dry shelf inside the refuge chamber and the ledge at its entrance. When the water rises above the entrance, it gives up the chamber and moves to the ventilation room. During a cold snap, the chamber adjoins the only unfrozen pump access route, putting it in the same space as maintenance workers.
 - Needs: Staying dry itself saves energy, and it survives on the small amount of scraps washed into the chamber. Converting the chamber into a human-only inspection route shifts the cost of losing its stronghold onto the surface alleys.
 - Life cycle and upkeep: It times its entries and exits by how long its fur takes to dry, and scrapes away floor dirt if dampness persists for more than two days. If the entrance floods repeatedly, it abandons the stronghold and folds the sharing arrangement.
@@ -18857,7 +18857,7 @@ The core habitat was the low-velocity pipelines and dry shelters beside the Ttuk
 
 When rain continued and the water rose, the families moved their young to the high ventilation rooms and then dispersed into the transmission galleries and ventilation shafts of the Mapo Union.
 
-When cold snaps and logistics breakdowns struck from the direction of the XT04 Duman River Far East Theater and changed the distribution of feed and waste, they moved briefly to the eastern branch lines and returned to their familiar pipes after the thaw.
+When cold snaps and logistics breakdowns struck from the direction of the XT04 Duman River Far East Theater and changed the distribution of feed and waste, they moved briefly to the eastern branch lines and returned to their familiar pipes after the less-cold weeks begin.
 
 Aquatic food, organic trash, carcasses, and microbial mats became their food, and dry shelters and gentle currents lowered the cost of survival.
 
@@ -18867,7 +18867,7 @@ Droppings and microbial mats covered the water-quality sensors and slowed even t
 
 The Raccoon Dog had no fixed leader.
 
-In the dry season each family used its own feeding ground and dry shelter, and when several families used the same trunk they divided the hours.
+In the deep-cold weeks each family used its own feeding ground and dry shelter, and when several families used the same trunk they divided the hours.
 
 The elder female only held priority in moving the young and at narrow passing points, and gave no battle orders to other families.
 
@@ -18933,7 +18933,7 @@ G04-SC3 ‘The Dry Passage of the Pump Room’ was the stage at which, in the XT
 
 Providing heated alternative shelter pipes could clear the inspection route and disperse the families, but power rations fell and the Mapo Union''s other facilities had to endure the cold.
 
-Putting off pump inspection avoided the immediate clash but increased the risk of flooding at thaw or in a sudden rain.
+Putting off pump inspection avoided the immediate clash but increased the risk of flooding in a meltwater pulse or in a sudden rain.
 
 Installing temporary external inspection platforms allowed maintenance without clearing the pipes, but the work crew had to bear the labor of installation in the cold and the risk of falls.
 
@@ -18957,7 +18957,7 @@ So that this agreement would not remain a one-time truce, later management harde
 
 The Ttukseom Union and XT04 measured water level, flow velocity, dissolved oxygen, turbidity, and ammoniacal nitrogen every week, the Mapo Union recorded monthly traces of illegal discharge and the weight of floating waste, and HC04 and H04 disclosed together every quarter the number of animals, survival of the young, rates of skin and respiratory abnormalities, passage use, the number of resident reports, and response times.
 
-The standards were set at no more than 1 rainy-season backflow a month, at least 95 percent operation of the main passages, a decrease in the share of injured animals from the previous year, and initial response to emergency reports within 30 minutes.
+The standards were set at no more than 1 meltwater backflow a month, at least 95 percent operation of the main passages, a decrease in the share of injured animals from the previous year, and initial response to emergency reports within 30 minutes.
 
 When the standards were missed twice in a row, the alarm network automatically moved up a stage, and after temporary embankments, cutting off pollution sources, moving vulnerable animals, and independent sample retests were carried out in order, only the section at fault was closed on a limited basis.
 
@@ -19035,14 +19035,14 @@ An external platform did not have to share the passage, but it accepted installa
 | 기원 | 중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 뚝섬 연합 펌프 옆 관로와 마포 연합 여의도출자연합회 지하 케이블 갤러리에 정착해 너구리가 됐다. / 너구리의 도시·하천 출현 범위는 일반적인 야생동물 관찰로 설명되지만, 펌프보다 먼저 수위를 감지하는 규칙은 붕괴 이후 이 지역에서만 관측됐다. |
 | 서식·이동 | 핵심 서식은 뚝섬 연합 펌프장 연결 관로와 공방 하부의 건조 대피공이다. / 홍수위가 오르면 마포 연합 송신 지하 갤러리와 환기구로 분산하고, XT04 두만강극동전구 방면 한파·물류 단절이 사료 밀도를 바꾸면 동부 지선으로 잠시 이동한다. / 낮에는 관로, 밤에는 지상 골목 50m 안을 순회한다. |
 | 먹이·에너지 | 수생 먹이·유기 쓰레기·사체 잔여가 주 자원이고, 건조한 은신처와 낮은 유속이 유지 비용이다. / HC04 뚝섬열원가이 관로 퇴적 준설을 건너뛰면 먹이막이 두꺼워져 밀도가 오르고, 과준설하면 가족군이 지상 시장으로 밀려 난다. / 배설물과 미생물막이 수질 센서 값을 가려 펌프 판단을 늦춘다. |
-| 생애·정비 | 건기에는 가족군마다 건조 은신처와 먹이터를 따로 쓰고, 강우 전에 수위가 먼저 오르는 간선에서 높은 환기실로 새끼를 옮긴다. / 홍수 뒤 먹이막이 두꺼워지면 여러 가족이 시간대를 나눠 같은 관로를 쓰며, 은신처가 연속 수몰되면 지상 골목으로 분산한다. |
+| 생애·정비 | 깊은 추위 주간에는 가족군마다 건조 은신처와 먹이터를 따로 쓰고, 강우 전에 수위가 먼저 오르는 간선에서 높은 환기실로 새끼를 옮긴다. / 홍수 뒤 먹이막이 두꺼워지면 여러 가족이 시간대를 나눠 같은 관로를 쓰며, 은신처가 연속 수몰되면 지상 골목으로 분산한다. |
 | 감각 | 수염으로 물살과 좁은 틈의 공기 흐름을 느끼고, 발과 몸에 전해지는 압력 변화로 펌프 기동 전 수위 상승을 감지한다. / 후각은 먹이·소독제·부패를 구분하며 청각은 펌프와 사람 발걸음을 가른다. / H04 강별의 관로 로봇 로그는 너구리·부유 잔해·사람을 혼동하기 쉬워 인간 육안 확인이 필수다. |
 | 집단 행동 | 느슨한 가족군과 공유 은신처가 전부다. / 연장자 암컷이 이동 우선권만 갖고 전투 지휘는 없다. / 여러 가족군이 같은 간선을 시간 분할로 쓴다. / H04가 단일 군락으로 합산하면 HC04 배수 당직이 은신처 단위로 다시 쪼갠다. |
 | 장기 적응 | 개체는 펌프 기동 전의 압력 변화와 안전한 준설 시간표를 학습한다. / 세대를 거쳐 관로 생활에 유리한 작은 체구와 야행성이 선택될 수 있으나, 좁은 관로에 특화될수록 지상 횡단과 한파에 취약해진다. / 선행지표를 따라 은신처를 옮기는 행동은 유전 변화가 아니라 가족군 학습으로 구분한다. |
 
 **끝나지 않는 겨울의 삶.** 너구리는 가장 혹독한 추위를 마른 펌프실 틈에서 자며 넘기고, 데워진 관에서 나온 녹은 물이 길을 열면 깬다. 거의 무엇이든 먹으며, 수는 어느 철이 아니라 따뜻한 관을 따라 오르내린다.
 
-**위협과 싸움의 값.** 위험은 물리는 것보다 펌프실로 옮겨 오는 병이다. 역의 기준으로 이것은 낮은 위협이며, 교리는 여기에 되도록 적게 쓰는 것이다. 일은 대부분 그물과 울타리와 미끼를 든 지원 분대가 맡고, 사격병은 건널목을 비워야 할 때만 쏜다. 정찰 드론 분대는 지상의 열을 읽으려고 짧게만 띄운다. 추위 속에서 전지에서 꺼낸 충전은 다시 채우기 어렵기 때문이다. 전쟁 기계는 보내지 않는다. 태우는 연료가 짐승보다 비싸다. 실제 값은 어둠 속에서 빗나간 탄, 의약품이 필요한 물린 상처, 울타리에 선 사람들의 시간이다. 순찰대가 눈 속에서 고립되지 않는 한 목숨을 잃는 일은 드물다.
+**위협과 싸움의 값.** 위험은 물리는 것보다 펌프실로 옮겨 오는 병이다. 역의 기준으로 이것은 낮은 위협이며, 교리는 여기에 되도록 적게 쓰는 것이다. 일은 대부분 그물과 울타리와 미끼를 든 지원 분대가 맡고, 사격병은 건널목을 비워야 할 때만 쏜다. 정찰 드론 분대는 지상의 열을 읽으려고 짧게만 띄운다. 추위 속에서 전지에서 꺼낸 충전은 다시 채녹은 물 파동 어렵기 때문이다. 전쟁 기계는 보내지 않는다. 태우는 연료가 짐승보다 비싸다. 실제 값은 어둠 속에서 빗나간 탄, 의약품이 필요한 물린 상처, 울타리에 선 사람들의 시간이다. 순찰대가 눈 속에서 고립되지 않는 한 목숨을 잃는 일은 드물다.
 
 <a id="Hostile-Group-G04-heading-0008"></a>
 
@@ -19060,7 +19060,7 @@ An external platform did not have to share the passage, but it accepted installa
 | [G04E06 · 막먹이채집자](/wiki/Hostile-Group-G04/#g04e06) | 공통종 | 무리·부대 | 센서 가림 | 직능 | M006 |
 | [G04E07 · 들것어미](/wiki/Hostile-Group-G04/#g04e07) | 공통종 | 무리·부대 | 새끼 이송 | 직능 | M006 |
 | [G04E08 · 교대굴지기](/wiki/Hostile-Group-G04/#g04e08) | 공통종 | 무리·부대 | 입구 교대 | 첫 번째 정예 | M006 |
-| [G04E09 · 해빙길안내](/wiki/Hostile-Group-G04/#g04e09) | 공통종 | 무리·부대 | 온기 안내 | 두 번째 정예 | M006 |
+| [G04E09 · 녹은길안내](/wiki/Hostile-Group-G04/#g04e09) | 공통종 | 무리·부대 | 온기 안내 | 두 번째 정예 | M006 |
 | [G04E10 · 마른대피공지기](/wiki/Hostile-Group-G04/#g04e10) | 공통종 | 무리·부대 | 은신 점유 | 환경 거점 | M006 |
 | [G04E11 · 케이블틈살림](/wiki/Hostile-Group-G04/#g04e11) | 공통종 | 무리·부대 | 건조 은신 | 환경 거점 | M006 |
 | [G04E12 · 관로잔뼈](/wiki/Hostile-Group-G04/#g04e12) | 공통종 | 무리·부대 | 협소 잔류 | 성장 단계 | M006 |
@@ -19117,7 +19117,7 @@ HC04가 준설을 건너뛰면 먹이막이 두꺼워져 밀도가 오르고, �
 
 ### 생애·정비
 
-건기에는 가족마다 은신처를 따로 쓰고, 강우 전 선행 압력에 환기실로 옮긴다.
+깊은 추위 주간에는 가족마다 은신처를 따로 쓰고, 강우 전 선행 압력에 환기실로 옮긴다.
 
 은신처가 연속 수몰되면 시간 분할을 포기하고 골목으로 분산한다.
 
@@ -19201,7 +19201,7 @@ G04-SC1 ‘맨홀 아래의 선행지표’의 중심 이동을 만들고, G04-S
 
 뚝섬 연합 낮은 유속 관로가 기본이며, 수위가 오르면 마포 연합 환기구 쪽으로 잠시 분산한다.
 
-한파에 사료 밀도가 바뀌면 동부 지선으로 이동했다가 해빙 뒤 익숙한 관으로 돌아온다.
+한파에 사료 밀도가 바뀌면 동부 지선으로 이동했다가 덜 추운 주간이 온 뒤 익숙한 관으로 돌아온다.
 
 <a id="Hostile-Group-G04-heading-0057"></a>
 
@@ -19215,7 +19215,7 @@ G04-SC1 ‘맨홀 아래의 선행지표’의 중심 이동을 만들고, G04-S
 
 ### 생애·정비
 
-건기에는 자기 가족의 먹이터만 돌고, 홍수 뒤에는 시간대를 나눠 같은 간선을 쓴다.
+깊은 추위 주간에는 자기 가족의 먹이터만 돌고, 홍수 뒤에는 시간대를 나눠 같은 간선을 쓴다.
 
 좁은 관에 유리한 작은 체구가 세대를 넘어 남을 수는 있으나 지상 횡단과 한파에는 더 약해진다.
 
@@ -19279,7 +19279,7 @@ G04-SC1에서는 암컷을 따라 환기실로 오르는 일반 개체로 경보
 - 기원: 붕괴 뒤 중랑·탄천 간선 점검이 끊긴 뒤, 수생 먹이를 따라 사람이 비운 뚝섬 연합 펌프 지선에 남았다. 펌프보다 먼저 수위를 안다는 말은 이 지역에서만 관측된 가족 학습이며 현실 기관의 사고가 아니다.
 - 서식: 낮에는 유속이 느린 관 바닥과 맨홀 아래 턱에 붙고, 밤에도 출구 쪽으로는 거의 나가지 않는다. 홍수위가 오르면 같은 관의 높은 이음새로 옮길 뿐 마포 연합 갤러리까지는 이 개체의 일상 범위가 아니다.
 - 필요: 작은 수생 먹이와 관벽에 붙은 미생물막이 주식이며, 헤엄 에너지를 아끼려면 완만한 물살이 유지되어야 한다. 소독제가 진하게 흐르면 수염이 며칠 무뎌져 먹이 위치를 놓친다.
-- 생애·정비: 건기에는 한 지선만 반복해 다니며 수염을 문질러 이물질을 뗀다. 연속 강우로 바닥이 뜨면 새끼가 아니라 자기 몸부터 이음새로 옮기고, 해빙 뒤에는 익숙한 낮은 유속 구간으로 돌아온다.
+- 생애·정비: 깊은 추위 주간에는 한 지선만 반복해 다니며 수염을 문질러 이물질을 뗀다. 연속 강우로 바닥이 뜨면 새끼가 아니라 자기 몸부터 이음새로 옮기고, 덜 추운 주간이 오면 익숙한 낮은 유속 구간으로 돌아온다.
 - 행동·위계: 전투 지휘를 하지 않으며 연장자 암컷이 좁은 턱을 지날 때만 길을 비킨다. H04 강별 로그가 이 개체를 부유 잔해로 찍어도 HC04 배수 당직은 출입 시각과 잠자리로 다시 구분해야 한다.
 - 상승: 1단계에서는 비가 오기 전에 이음새로 붙어 비공식 선행 신호가 된다. 2단계에서는 같은 관에 배설이 쌓여 공식 수위계가 낮게 나오고 점검 로봇과 코가 마주친다. 3단계에서는 남은 낮은 유속 구간이 정비 인력의 발판과 겹친다.
 - 교전·대응: 독먹이와 전면 수몰은 사체 부패로 하류를 함께 망친다. 부분 차수로 유속을 잠시 낮추고 센서를 씻은 뒤 우회 관을 열면, 물살수염은 익숙한 바닥으로 돌아가 펌프 가동 회복 시간을 줄인다.
@@ -19306,7 +19306,7 @@ G04-SC1에서는 암컷을 따라 환기실로 오르는 일반 개체로 경보
 - 기원: 관로 안 먹이가 줄던 해, 출구 쓰레기와 시장 잔여를 따라 지상 회로를 만든 가족에서 나왔다. 하수가 생활권으로 역류하는 불안한 모습으로 보이지만 지하 군대의 정찰병은 아니다.
 - 서식: 낮에는 출구 턱 아래의 마른 그늘에 숨고, 밤에는 뚝섬 연합 공방 골목과 마포 연합 송신 쪽 골목을 50미터 안에서만 돈다. 그 선을 넘으면 개와 차량에 노출되어 바로 관으로 물러난다.
 - 필요: 야간 유기 쓰레기와 사체 잔여가 주식이며, 회로를 유지하려면 출구가 잠기지 않은 마른 턱이 필요하다. 한꺼번에 준설해 출구가 뜨면 회로가 시장 안쪽으로 길어진다.
-- 생애·정비: 발바닥의 각질이 갈라지면 한동안 지상에 오르지 않고 턱에서 잔여만 기다린다. 한파에 골목이 얼면 회로를 접고 입구 안쪽에 머물며, 해빙 첫밤에 다시 같은 모서리를 밟아 길을 확인한다.
+- 생애·정비: 발바닥의 각질이 갈라지면 한동안 지상에 오르지 않고 턱에서 잔여만 기다린다. 한파에 골목이 얼면 회로를 접고 입구 안쪽에 머물며, 덜 추운 첫밤에 다시 같은 모서리를 밟아 길을 확인한다.
 - 행동·위계: 같은 출구를 쓰는 가족과 시간을 나누어 올라오며 누가 먼저인지는 연장자 암컷의 통과 뒤에 결정된다. 전투 대형을 만들지 않고, 장화 소리가 가까우면 회로를 중간에 끊는다.
 - 상승: 1단계에서는 골목 모서리에 발자국만 남긴다. 2단계에서는 준설 창과 출입 시각이 겹쳐 두 가족이 동시에 시장으로 나온다. 3단계에서는 출구가 연속 수몰되어 50미터 규칙이 깨지고 통행로까지 밀려 난다.
 - 교전·대응: 야간 지상 통행을 출구 50미터 안으로 제한하고 대체 마른 턱을 열어 주면 시장 침입을 줄인다. 독먹이는 골목 개와 청소 노동자를 함께 위험에 빠뜨리며, 성공은 지상 교상 0건으로 본다.
@@ -19333,7 +19333,7 @@ G04-SC1에서는 암컷을 따라 환기실로 오르는 일반 개체로 경보
 - 기원: 반복된 준설 소음 속에서 살아남은 가족이 안전한 시간표를 학습한 결과다. 유전으로 시계를 얻은 것이 아니라, 창을 놓쳐 죽은 자리를 본 개체가 나머지에게 진동 박자를 가르친 기억이다.
 - 서식: 준설 장비가 드나드는 뚝섬 연합 간선 분기와 그 옆의 비어 있는 지선 입구를 오간다. 공사가 없는 낮에는 그 입구에서 자고, 진동이 시작되면 마포 연합 쪽으로 잠시 몸을 옮긴다.
 - 필요: 준설과 준설 사이에 쌓인 유기 퇴적과 수생 잔여가 먹이며, 그 간격이 먹이 때다. 시간표가 예고 없이 앞당겨지면 먹이와 은신이 한꺼번에 사라진다.
-- 생애·정비: 한 계절의 진동 주기를 외운 뒤 다음 계절의 첫 장비를 시험 삼아 피한다. 잘못된 박자에 세 번 노출되면 그 간선을 버리고, 되돌아오는 데는 해빙 뒤의 조용한 밤이 필요하다.
+- 생애·정비: 한 계절의 진동 주기를 외운 뒤 다음 계절의 첫 장비를 시험 삼아 피한다. 잘못된 박자에 세 번 노출되면 그 간선을 버리고, 되돌아오는 데는 덜 추운 주간의 조용한 밤이 필요하다.
 - 행동·위계: 다른 가족에게 전투 명령을 내리지 않는다. 다만 자신이 먼저 지선을 비우면 같은 시간대를 쓰던 가족이 그 빈자리를 읽는다. H04가 움직임 여러 점을 한 군락으로 합산해도 준설시각지기의 출입 시각은 따로 적어야 한다.
 - 상승: 1단계에서는 장비 진입 전 지선이 비는 현상으로만 나타난다. 2단계에서는 야간 준설이 교대 은신과 겹쳐 두 가족이 지상으로 밀린다. 3단계에서는 시간표를 무시하고 한 창에 장비를 몰아넣어 공유 규칙이 무너진다.
 - 교전·대응: 준설을 두 구간으로 나누고 진동 예고를 같은 박자로 유지하면 이 개체는 지선으로 물러난다. 집중 준설은 빠르나 이후 강우 때 동시 출몰을 키운다.
@@ -19424,7 +19424,7 @@ G04-SC1에서는 암컷을 따라 환기실로 오르는 일반 개체로 경보
 <a id="Hostile-Group-G04-heading-0102"></a>
 <a id="g04e09"></a>
 
-### G04E09 · 해빙길안내
+### G04E09 · 녹은길안내
 
 - 출처 배치: M006
 - 기존 역할군: 두 번째 정예
@@ -19435,17 +19435,17 @@ G04-SC1에서는 암컷을 따라 환기실로 오르는 일반 개체로 경보
 | 구분 | 공통종 |
 | 전장 단위 | 무리·부대 |
 | 전장 역할 | 온기 안내 |
-| 공통종·변이와 지휘 범위 | 해빙길안내는 XT04 한파 때 녹지 않은 통로를 발바닥과 수염으로 먼저 찾는다. 다른 가족을 소집하지는 못하지만 이 개체가 멈춘 마른 턱을 여러 가족이 뒤따른다. |
+| 공통종·변이와 지휘 범위 | 녹은길안내는 XT04 한파 때 녹지 않은 통로를 발바닥과 수염으로 먼저 찾는다. 다른 가족을 소집하지는 못하지만 이 개체가 멈춘 마른 턱을 여러 가족이 뒤따른다. |
 
 - 역할·신체: 너구리의 두 번째 정예로, 발바닥과 수염으로 관벽의 결빙과 잔류 온기를 가려 XT04 한파 때 녹지 않은 통로를 먼저 찾는다. 다른 가족을 소집하지는 못하지만, 이 개체가 멈춘 마른 턱을 여러 가족이 뒤따른다. 지상 횡단은 짧고 서툴다.
 - 기원: 두만강극동전구 방면 한파와 물류 단절로 사료 분포가 바뀌던 겨울, 얼지 않은 펌프 접근로만 남았을 때 살아남은 개체가 온기 기억을 가족 학습으로 남겼다. 지휘자를 자처한 이력은 없다.
-- 서식: 한파 주간에는 마포 연합 여의도출자연합회 지하 갤러리의 난방 여열과 뚝섬 연합 펌프실의 마른 접근로 사이를 오간다. 해빙이 시작되면 동부 지선에서 익숙한 관으로 유도하듯 되돌아온다.
+- 서식: 한파 주간에는 마포 연합 여의도출자연합회 지하 갤러리의 난방 여열과 뚝섬 연합 펌프실의 마른 접근로 사이를 오간다. 덜 추운 주간이 시작되면 동부 지선에서 익숙한 관으로 유도하듯 되돌아온다.
 - 필요: 얼지 않은 바닥과 소량의 여열이 생존의 첫째 조건이며, 먹이보다 먼저 마른 공간을 고른다. 갤러리 난방을 끊으면 세 가족이 펌프 접근로 하나에 겹친다.
-- 생애·정비: 발바닥 균열이 깊어지면 결빙 판독이 늦어져 한 계절을 지선에서만 보낸다. 해빙 후 첫 따뜻한 물은 상처를 씻는 기회이자, 너무 빠르면 접근로를 다시 잠기게 한다.
+- 생애·정비: 발바닥 균열이 깊어지면 결빙 판독이 늦어져 한 계절을 지선에서만 보낸다. 덜 추운 주간의 첫 물은 상처를 씻는 기회이자, 너무 빠르면 접근로를 다시 잠기게 한다.
 - 행동·위계: 앞장서는 것처럼 보여도 명령이 아니라 온기 탐색이다. 연장자 암컷이 새끼를 옮기면 안내 경로를 양보하고, H04가 한 열점으로 합쳐도 HC04는 가족 수와 출입 시각을 나눠 적는다.
 - 상승: 1단계에서는 갤러리 쪽으로 발자국이 먼저 생긴다. 2단계에서는 여열이 줄어 접근로 점유가 겹친다. 3단계에서는 유일한 마른 펌프 통로를 세 가족이 막아 정비가 멈춘다.
 - 교전·대응: 난방 은신 관을 잠시 열고 야간 지상 통행을 제한하면 안내 경로가 분산된다. 독먹이와 수몰은 얼어 죽은 사체까지 더한다. 임시 외부 점검 발판은 통로를 비우지 않고 정비할 수 있으나 한파 속 추락 위험은 작업조 몫이다.
-- 교섭·도덕 선택: 갤러리 일부 난방을 공유 은신으로 열면 마포 연합의 다른 설비가 전력을 내놓는다. 펌프 점검을 미루면 충돌은 피하나 해빙·돌발 강우 때 침수 위험이 커진다. 해빙길안내의 온기 기억을 공식 우회로로 쓸지는 도시 배수와 비인간 피난처를 동시에 확보할 수 없다는 점에서 갈린다.
+- 교섭·도덕 선택: 갤러리 일부 난방을 공유 은신으로 열면 마포 연합의 다른 설비가 전력을 내놓는다. 펌프 점검을 미루면 충돌은 피하나 녹은 물 파동·돌발 범람 때 침수 위험이 커진다. 녹은길안내의 온기 기억을 공식 우회로로 쓸지는 도시 배수와 비인간 피난처를 동시에 확보할 수 없다는 점에서 갈린다.
 - 시나리오 연결: G04-SC3 ‘펌프실의 마른 통로’에서 이 개체가 먼저 멈춘 접근로에 세 가족이 겹친다.
 
 <a id="Hostile-Group-G04-heading-0106"></a>
@@ -19465,7 +19465,7 @@ G04-SC1에서는 암컷을 따라 환기실로 오르는 일반 개체로 경보
 | 공통종·변이와 지휘 범위 | 마른대피공지기는 뚝섬 연합 펌프장 하부 건조 대피공에 어깨를 걸어 다른 가족이 한꺼번에 들어오지 못하게 채우는 몸이다. 고정 지휘소가 아니라 마르고 낮은 유속의 저장 공간을 지키는 동물이다. |
 
 - 역할·신체: 너구리의 환경 거점형으로, 뚝섬 연합 펌프장 하부 건조 대피공에 몸집이 맞게 자리 잡은 굴 지기이다. 어깨 높이가 공의 천장 이음에 걸려 다른 가족이 한꺼번에 들어오지 못하게 물리적으로 채운다. 수염보다 공기 흐름을 옆구리로 느낀다.
-- 기원: 사람이 비운 대피공을 건기의 잠자리로 쓰던 가족이, 홍수 때 높은 환기실로 새끼를 보낸 뒤에도 이 마른 공간을 포기하지 않아 거점 개체가 되었다. 고정 지휘소가 아니라 마르고 낮은 유속의 저장 공간이다.
+- 기원: 사람이 비운 대피공을 깊은 추위 주간의 잠자리로 쓰던 가족이, 홍수 때 높은 환기실로 새끼를 보낸 뒤에도 이 마른 공간을 포기하지 않아 거점 개체가 되었다. 고정 지휘소가 아니라 마르고 낮은 유속의 저장 공간이다.
 - 서식: 대피공 안쪽 건조 선반과 공 입구의 턱이 전부이며, 수위가 입구를 넘으면 포기하고 환기실로 옮긴다. 한파에는 이 공이 유일한 얼지 않은 펌프 접근로와 맞붙어 정비 인력과 공간이 겹친다.
 - 필요: 건조함 자체가 에너지 절약이며, 공 안에 흘러든 소량 잔여만으로 버틴다. 공을 인간 전용 점검로로 바꾸면 거점 비용을 지상 골목에 전가한다.
 - 생애·정비: 털이 마르는 시간을 기준으로 출입을 조절하고, 습기가 이틀 이상 남으면 바닥 흙을 긁어 낸다. 입구가 연속 수몰되면 거점을 버리고 공유 규칙을 접는다.
@@ -19549,7 +19549,7 @@ G04-SC1에서는 암컷을 따라 환기실로 오르는 일반 개체로 경보
 
 비가 이어져 수위가 오르면 가족들은 높은 환기실로 새끼를 옮긴 뒤 마포 연합의 송신 갤러리와 환기구로 분산한다.
 
-XT04 두만강극동전구 방면에서 한파와 물류 단절이 닥쳐 사료와 폐기물의 분포가 바뀌면 동부 지선으로 잠시 이동하고, 해빙 뒤에는 익숙한 관으로 돌아온다.
+XT04 두만강극동전구 방면에서 한파와 물류 단절이 닥쳐 사료와 폐기물의 분포가 바뀌면 동부 지선으로 잠시 이동하고, 덜 추운 주간이 오면 익숙한 관으로 돌아온다.
 
 수생 먹이, 유기 쓰레기 사체와 미생물막이 식량이 되며 건조한 은신처와 완만한 물살이 생존 비용을 낮춘다.
 
@@ -19559,7 +19559,7 @@ HC04 뚝섬열원가이 퇴적 준설을 지나치게 미루면 먹이막이 두
 
 너구리에는 고정된 지휘자가 없다.
 
-건기에는 가족마다 먹이터와 건조 은신처를 따로 쓰고, 여러 가족이 같은 간선을 이용할 때는 시간대를 나눈다.
+깊은 추위 주간에는 가족마다 먹이터와 건조 은신처를 따로 쓰고, 여러 가족이 같은 간선을 이용할 때는 시간대를 나눈다.
 
 연장자 암컷은 새끼 이동과 좁은 통과 지점에서 우선권을 가질 뿐 다른 가족에게 전투 명령을 내리지 않는다.
 
@@ -19625,7 +19625,7 @@ G04-SC3 ‘펌프실의 마른 통로’는 XT04 한파 속에서 세 가족이 
 
 난방되는 대체 은신 관을 제공하면 점검로를 비우고 가족을 분산할 수 있지만, 전력 배급이 줄어 마포 연합은 다른 시설의 난방도 줄여야 한다.
 
-펌프 점검을 미루면 당장의 충돌은 피하나 해빙이나 돌발 강우 때 침수 위험이 커진다.
+펌프 점검을 미루면 당장의 충돌은 피하나 녹은 물 파동이나 돌발 범람 때 침수 위험이 커진다.
 
 임시 외부 점검 발판을 설치하면 관로를 비우지 않. 정비할 수 있지만, 한파 속 설치 노동과 추락 위험을 작업조가 감당해야 한다.
 
@@ -19649,7 +19649,7 @@ HC04는 부상 개체의 치료와 어린 개체의 이동을 맡되 무분별�
 
 뚝섬 연합와 XT04는 매주 수위, 유속 용존산소 탁도 암모니아성 질소를 측정하. 마포 연합는 월별 불법 배출 흔적과 부유 폐기물 무게를 기록하며 HC04와 H04는 분기마다 개체 수 새끼 생존율 피부·호흡기 이상 비율 통로 이용 횟수 주민 신고 건수와 대응 시간을 함께 공개한다.
 
-기준은 우기 역류 월 1회 이하, 주요 통로 가동률 95퍼센트 이상 부상 개체 비율 전년 대비 감소 긴급 신. 30분 이내 초동 대응으로 정한다.
+기준은 녹은 물 파동 역류 월 1회 이하, 주요 통로 가동률 95퍼센트 이상 부상 개체 비율 전년 대비 감소 긴급 신. 30분 이내 초동 대응으로 정한다.
 
 두 차례 연속 기준을 벗어나면 경보망이 자동으로 단계 상승하고, 임시 둑 설치와 오염원 차단 취약 개체 이동 독립 표본 재검사를 순서대로 시행한 뒤 원인 구간만 제한적으로 폐쇄한다.
 
@@ -21720,7 +21720,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 It was a mixed stopover in which waterfowl, waders, and raptors overlapped at the waterfront records deck of the Government of the Republic of Korea at central Seoul Station and the drainage ponds of the Seongha Group on the Gangnam Line. Waterfowl ate aquatic plants and floating matter, waders benthic creatures, and raptors rodents and exhausted small birds. There was no unified command and no aim of attacking the city.
 
-From the broad-feather perch to the pursuit wing, these were wild birds of different functional groups. The pond mirror and the open mirror were the water surface of an intermediate stopover itself, and the three-layer flight was a knot in the air where three heights overlapped on one bridge cross-section. The rooftop gutter was a branch of the same waterfowl, using inland fountains and rooftop gutters in the dry season when the wetland dried.
+From the broad-feather perch to the pursuit wing, these were wild birds of different functional groups. The pond mirror and the open mirror were the water surface of an intermediate stopover itself, and the three-layer flight was a knot in the air where three heights overlapped on one bridge cross-section. The rooftop gutter was a branch of the same waterfowl, using inland fountains and rooftop gutters in the deep-cold weeks when the wetland dried.
 
 <a id="Hostile-Group-G06-heading-0006"></a>
 
@@ -21731,7 +21731,7 @@ From the broad-feather perch to the pursuit wing, these were wild birds of diffe
 | Origin | Where migratory stopovers overlapped on the severed green spaces and failed restored wetlands around the Han River, Nanji, and Amsa, predatory birds and omnivorous waterfowl formed a mixed colony amid the management vacuum after the collapse and became the Grey Heron and Cormorant. / The waterfront records deck of the Government of the Republic of Korea at central Seoul Station and the depot drainage ponds of the Seongha Group on the Gangnam Line were its key nodes. / The locations of migratory-bird sites and wetlands fell within the reference range of ordinary protected-area observation, but the negotiating rules of the mixed functional groups were observed only in this region after the collapse. |
 | Habitat and movement | The core habitat was the waterfront wetland fragments at Seoul Station Central and the drainage ponds and wire perches of the Gangnam Line. / During seasonal movement they rode the wind road toward the XT01 Imjin River Gate Theater and went back and forth on the north-south axis, and at breeding and stopover peaks they occupied the sightlines of bridges and sluices and the air over the depot yard tracks. / When the wetland dried they moved temporarily to inland park fountains and rooftop gutters. |
 | Food and energy | The waterfowl ate aquatic plants and organic floating matter, the waders ate the benthic life of shallow water, and the raptors ate rodents and weak birds. / The distance between safe perches, shallow water, and feeding grounds was the upkeep cost. / When HC06 the Noryangjin Delivery House drained the wetland water level one-sidedly, the waterfowl were driven to the depot ponds, the waders to the mud edges, and the raptors followed that concentration. / Fixing the water level raised stopover density and the risk of train-bird collision on the depot yard tracks together. |
-| Life cycle and upkeep | In spring and autumn the waterfowl and waders stopped first on the shallow water, and when food density rose the raptors followed. / The breeding grounds were in a separate protected area, and the depot ponds were used only as an intermediate stopover. / When the water level dropped sharply the waterfowl left first, and the food relationship of the waders and raptors also came apart in a chain. |
+| Life cycle and upkeep | In the less-cold weeks and the storm season the waterfowl and waders stopped first on the shallow water, and when food density rose the raptors followed. / The breeding grounds were in a separate protected area, and the depot ponds were used only as an intermediate stopover. / When the water level dropped sharply the waterfowl left first, and the food relationship of the waders and raptors also came apart in a chain. |
 | Senses | Vision was the main sense, and they were sensitive to water-surface glare, vest color, and drone silhouettes. / By hearing they read engines, gunshots, and warning loudspeakers, and scent responded to fish meal and rot. / They did not decode electronic signals. / H06 Baksol''s radar-based altitude classification confused balloons, drones, and birds, so it was corrected by eye. |
 | Group behavior | There was no command system. / The waterfowl occupied the open water as a flock, the waders worked the shallow edges at intervals, and the raptors moved from the high wires and pylons following the density of the two functional groups. / When one functional group moved, the space use of the other functional groups changed because of food and alert responses. / When H06 summed them into one hostile score, the HC06 ecology watch recorded them again by altitude, water-surface zone, and head count for each functional group. |
 | Long-term adaptation | Individuals learned the repeating train times and the low-noise inspection windows, but the response differed by functional group. / A change in movement season across many generations was treated only as food and climate selection pressure, and a route change within one season was distinguished as learning. / The more they matched the city''s timetable, the more there was a cost of growing dull to the irregular dangers of a natural wetland. |
@@ -21809,7 +21809,7 @@ Aquatic plants and suspended organic matter are its food; safe open water and a 
 
 ### Life Cycle and Maintenance
 
-It grows larger only during spring and autumn stopovers; outside the migratory seasons, its wings become lighter and the birds disperse. When its feathers are soaked in turbid water, takeoff is delayed, exposing it to pursuit by raptors. If forcibly dispersed for a season, it occupies the same water earlier at the next stopover.
+It grows larger only during stopovers of the less-cold weeks and the storm season; outside the migratory seasons, its wings become lighter and the birds disperse. When its feathers are soaked in turbid water, takeoff is delayed, exposing it to pursuit by raptors. If forcibly dispersed for a season, it occupies the same water earlier at the next stopover.
 
 <a id="Hostile-Group-G06-heading-0024"></a>
 
@@ -21961,7 +21961,7 @@ It feeds on bottom-dwelling organisms in shallow water; if the mudflat dries or 
 
 ### Life Cycle and Maintenance
 
-When bill tips wear down during the spring stopover, spacing narrows and disputes increase. A flock caught in nets for one season hides deeper in the inspection passage on its next migration at the mere sight of a human silhouette.
+When bill tips wear down during the less-cold stopover, spacing narrows and disputes increase. A flock caught in nets for one season hides deeper in the inspection passage on its next migration at the mere sight of a human silhouette.
 
 <a id="Hostile-Group-G06-heading-0070"></a>
 
@@ -22551,7 +22551,7 @@ As an environmental outpost type, the adult waterfowl with broad feet and water-
 
 ### Origin
 
-As spring and autumn stopovers overlapped in the isolated green belts and failed restoration wetlands of the Han River, Nanji, and Amsa areas, the waterfowl that guarded open surfaces in flocks fixed this spot. The narrowed surface of G06-SC1 is the body prototype, and the breeding ground remains in a separate protected wetland.
+As stopovers of the less-cold weeks and the storm season overlapped in the isolated green belts and failed restoration wetlands of the Han River, Nanji, and Amsa areas, the waterfowl that guarded open surfaces in flocks fixed this spot. The narrowed surface of G06-SC1 is the body prototype, and the breeding ground remains in a separate protected wetland.
 
 <a id="Hostile-Group-G06-heading-0248"></a>
 
@@ -22569,7 +22569,7 @@ Aquatic plants and organic suspended matter were its energy. When HC06 Noryangji
 
 ### Life Cycle and Maintenance
 
-It arrived first with the waders in spring and autumn, and only then did the raptors follow once prey density rose. When water level dropped sharply the waterfowl left first and the outpost emptied. When feathers became soaked in turbid water takeoff was delayed and it crossed the yard line longer.
+It arrived first with the waders in the less-cold weeks and the storm season, and only then did the raptors follow once prey density rose. When water level dropped sharply the waterfowl left first and the outpost emptied. When feathers became soaked in turbid water takeoff was delayed and it crossed the yard line longer.
 
 <a id="Hostile-Group-G06-heading-0254"></a>
 
@@ -22721,7 +22721,7 @@ Benthic creatures of shallow water were its energy. When turbidity was stable bu
 
 ### Life Cycle and Maintenance
 
-When the beak wore further it abandoned deep mud prey and only skimmed the thin mud of the inspection passage. When pushed from the lead stopover in spring and autumn it could not build sufficient density before raptors appeared.
+When the beak wore further it abandoned deep mud prey and only skimmed the thin mud of the inspection passage. When pushed from the lead stopover in the less-cold weeks and the storm season it could not build sufficient density before raptors appeared.
 
 <a id="Hostile-Group-G06-heading-0300"></a>
 
@@ -22919,13 +22919,13 @@ The track of G06-SC3 migratory week was this knot''s stage, and the overlapped s
 | Type | Common species |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Inland Occupation |
-| Common species, variants and command scope | Inland Variant ''Rooftop Gutter'' is the omnivorous waterfowl that used park fountains and rooftop gutters as temporary surface during the dry season when wetlands dried. It did not follow the main force''s slowdown learning. |
+| Common species, variants and command scope | Inland Variant ''Rooftop Gutter'' is the omnivorous waterfowl that used park fountains and rooftop gutters as temporary surface during the deep-cold weeks when wetlands dried. It did not follow the main force''s slowdown learning. |
 
 <a id="Hostile-Group-G06-heading-0359"></a>
 
 ### Role and Body
 
-As a regional variant, it was the omnivorous waterfowl that used inland park fountains and rooftop gutters as temporary surface during the dry season when wetlands dried. Its feet were short to match railing width. Its eyes confused rooftop solar reflections and fountain droplets with wetland surface. It remembered the sound of water-supply pumps before sea wind or bridge horns.
+As a regional variant, it was the omnivorous waterfowl that used inland park fountains and rooftop gutters as temporary surface during the deep-cold weeks when wetlands dried. Its feet were short to match railing width. Its eyes confused rooftop solar reflections and fountain droplets with wetland surface. It remembered the sound of water-supply pumps before sea wind or bridge horns.
 
 <a id="Hostile-Group-G06-heading-0361"></a>
 
@@ -22937,7 +22937,7 @@ In the season when the central Seoul Station surface was drained for sluice insp
 
 ### Habitat
 
-Only in the dry season did it leave the Gangnam Line pond for inland park fountains, rooftop gutters, and occasionally temporary surface outside the rolling-stock depot. When the rainy season returned it went back to the waterside deck, but if rooftop supply stabilized for one season it postponed return.
+Only in the deep-cold weeks did it leave the Gangnam Line pond for inland park fountains, rooftop gutters, and occasionally temporary surface outside the rolling-stock depot. When the meltwater pulse returned it went back to the waterside deck, but if rooftop supply stabilized for one season it postponed return.
 
 <a id="Hostile-Group-G06-heading-0365"></a>
 
@@ -22973,7 +22973,7 @@ Inland netting put walking children at risk and wetland water-level control did 
 
 ### Negotiation and Moral Choice
 
-Drying the surface to obtain bridge visibility let this variant occupy residential water supply. Permanent rooftop gutter blockade made park fountains new stopover sites and reduced walks. Leaving dry-season temporary surface outside the track neither hid restoration failure nor shifted birds only to inland residents.
+Drying the surface to obtain bridge visibility let this variant occupy residential water supply. Permanent rooftop gutter blockade made park fountains new stopover sites and reduced walks. Leaving deep-cold temporary surface outside the track neither hid restoration failure nor shifted birds only to inland residents.
 
 <a id="Hostile-Group-G06-heading-0377"></a>
 
@@ -23015,7 +23015,7 @@ The raptors followed that density to the depot''s power lines and pylons.
 
 Conversely, fixing the water level steady stabilized the stopover, but numbers grew and the risk of collisions between trains and birds increased.
 
-In spring and autumn the waterfowl and waders arrived first, and the raptors appeared once food was plentiful.
+In the less-cold weeks and the storm season the waterfowl and waders arrived first, and the raptors appeared once food was plentiful.
 
 The depot ponds were not breeding grounds but stopovers, so when the water level dropped sharply the waterfowl left first and the feeding relationships of the remaining waders and raptors unraveled in turn.
 
@@ -23170,7 +23170,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 서울역 중앙 대한민국정부 수변 기록 데크와 강남선 성하그룹 배수 연못에 수조류·섭금류·맹금류가 겹치는 혼합 기착이다. 수조류는 수생 식물과 부유물, 섭금류는 저서생물, 맹금류는 설치류와 지친 소형 조류를 먹는다. 통합 지휘나 도시를 공격하려는 목적은 없다.
 
-넓깃자리부터 추격날개까지는 기능군이 다른 야생 조류다. 연못거울과 열린거울은 중간 기착의 수면 자체이고, 세층비상은 세 높이가 한 교량 단면에 겹친 상태다. 옥상물받이는 습지가 마른 건기에 내륙 분수와 옥상 물받이를 쓰는 같은 수조류의 갈래다.
+넓깃자리부터 추격날개까지는 기능군이 다른 야생 조류다. 연못거울과 열린거울은 중간 기착의 수면 자체이고, 세층비상은 세 높이가 한 교량 단면에 겹친 상태다. 옥상물받이는 습지가 마른 깊은 추위 주간에 내륙 분수와 옥상 물받이를 쓰는 같은 수조류의 갈래다.
 
 <a id="Hostile-Group-G06-heading-0006"></a>
 
@@ -23181,14 +23181,14 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 | 기원 | 한강·난지·암사 일대 단절 녹지와 실패 복원 습지에 철새 중간 기착이 겹치고, 붕괴 후 관리 공백으로 포식 조류와 잡식 수조류가 혼합 군락을 이뤄 왜가리·가마우지가 됐다. / 서울역 중앙 대한민국정부 수변 기록 데크와 강남선 성하그룹 차량기지 배수 연못이 연결 지점이다. / 철새도래지와 습지 위치는 일반적인 보호구역 관찰의 참고 범위에 있지만, 혼합 기능군의 협상 규칙은 붕괴 이후 이 지역에서만 관측됐다. |
 | 서식·이동 | 서식은 서울역 중앙 수변 습지 파편과 강남선 배수 연못·전선 횃대다. / 계절 이동 때는 XT01 임진강관문전구 방향 바람길을 타고 북-남 축을 오가며, 번식·기착 피크에는 교량·수문 시야와 차량기지 구내선 상공을 점유한다. / 습지가 마르면 내륙 공원 분수·옥상 물받이로 일시 이동한다. |
 | 먹이·에너지 | 수조류는 수생 식물·유기 부유물 섭금류는 얕은 물의 저서생물 맹금류는 설치류와 약한 조류를 먹는다. / 안전한 횃대·얕은 수면·먹이터 사이를 유지하는 데 비용이 든다. / HC06 노량진배달가이 습지 수위를 일방 배수하면 수조류는 차량기지 연못으로, 섭금류는 진흙 가장자리로 몰리고 맹금류는 그 밀집을 따라온다. / 수위를 고정하면 기착 밀도와 차량기지 구내선의 열차·조류 충돌 위험이 함께 오른다. |
-| 생애·정비 | 봄·가을에는 수조류와 섭금류가 먼저 얕은 수면에 기착하고, 먹이 밀도가 오르면 맹금류가 뒤따른다. / 번식지는 별도 보호구역에 있고 차량기지 연못은 중간 기착지로만 쓰인다. / 수위가 급락하면 수조류가 먼저 떠나고 섭금류·맹금류의 먹이 관계도 연쇄적으로 풀린다. |
+| 생애·정비 | 덜 추운 주간과 폭풍철에는 수조류와 섭금류가 먼저 얕은 수면에 기착하고, 먹이 밀도가 오르면 맹금류가 뒤따른다. / 번식지는 별도 보호구역에 있고 차량기지 연못은 중간 기착지로만 쓰인다. / 수위가 급락하면 수조류가 먼저 떠나고 섭금류·맹금류의 먹이 관계도 연쇄적으로 풀린다. |
 | 감각 | 시각이 주력이며 수면 반사·조끼 색·드론 실루엣에 민감하다. / 청각으로 엔진·총성·경고 확성을 읽고, 후각은 어분·부패에 반응한다. / 전자 신호를 해독하지 않는다. / H06 박솔의 레이더 기반 고도 분류는 풍선·드론·조류를 혼동하므로 육안 보정한다. |
 | 집단 행동 | 지휘 체계는 없다. / 수조류는 개방 수면을 떼로 점유하고 섭금류는 얕은 가장자리를 간격 두고 훑으며 맹금류는 높은 전선과 철탑에서 두 기능군의 밀도를 따라 이동한다. / 한 기능군이 움직이면 먹이·경계 반응 때문에 다른 기능군의 공간 사용이 바뀐다. / H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 고도·수면 구역·개체 수로 다시 기록한다. |
 | 장기 적응 | 개체는 반복되는 열차 시간과 저소음 점검 창을 학습하지만 기능군마다 반응이 다르다. / 여러 세대에 걸친 이동 시기 변화는 먹이와 기후 선택압으로만 다루며, 한 계절의 경로 변경은 학습으로 구분한다. / 도시 시간표에 맞출수록 자연 습지의 불규칙한 위험에는 둔감해진다. |
 
 **끝나지 않는 겨울의 삶.** 왜가리와 가마우지는 추위가 허락하는 몇 안 되는 열린 물을 쥔다. 따뜻한 배수가 들어오는 배수지와 데워진 역이 얼지 않게 지키는 수로다. 철새의 이동이던 것은 이제 그 열린 물 사이의 짧은 이동이며, 배수가 흐르는 때에 맞춰진다.
 
-**위협과 싸움의 값.** 새들은 취수구를 더럽히고 펌프의 시간표를 배운다. 역의 기준으로 이것은 낮은 위협이며, 교리는 여기에 되도록 적게 쓰는 것이다. 일은 대부분 그물과 울타리와 미끼를 든 지원 분대가 맡고, 사격병은 건널목을 비워야 할 때만 쏜다. 정찰 드론 분대는 지상의 열을 읽으려고 짧게만 띄운다. 추위 속에서 전지에서 꺼낸 충전은 다시 채우기 어렵기 때문이다. 전쟁 기계는 보내지 않는다. 태우는 연료가 짐승보다 비싸다. 실제 값은 어둠 속에서 빗나간 탄, 의약품이 필요한 물린 상처, 울타리에 선 사람들의 시간이다. 순찰대가 눈 속에서 고립되지 않는 한 목숨을 잃는 일은 드물다.
+**위협과 싸움의 값.** 새들은 취수구를 더럽히고 펌프의 시간표를 배운다. 역의 기준으로 이것은 낮은 위협이며, 교리는 여기에 되도록 적게 쓰는 것이다. 일은 대부분 그물과 울타리와 미끼를 든 지원 분대가 맡고, 사격병은 건널목을 비워야 할 때만 쏜다. 정찰 드론 분대는 지상의 열을 읽으려고 짧게만 띄운다. 추위 속에서 전지에서 꺼낸 충전은 다시 채녹은 물 파동 어렵기 때문이다. 전쟁 기계는 보내지 않는다. 태우는 연료가 짐승보다 비싸다. 실제 값은 어둠 속에서 빗나간 탄, 의약품이 필요한 물린 상처, 울타리에 선 사람들의 시간이다. 순찰대가 눈 속에서 고립되지 않는 한 목숨을 잃는 일은 드물다.
 
 <a id="Hostile-Group-G06-heading-0008"></a>
 
@@ -23259,7 +23259,7 @@ Substitute perches reduced track collisions, but the rodent-predation location c
 
 ### 생애·정비
 
-봄·가을 기착기에만 몸집이 커지고 비이동기에는 날개가 가벼워져 흩어진다. 깃이 탁한 물에 젖으면 이륙이 늦어 맹금류 추격에 노출되고, 한 계절 강제 해산을 당하면 다음 기착에 같은 수면을 더 일찍 덮는다.
+덜 추운 주간과 폭풍철의 기착기에만 몸집이 커지고 비이동기에는 날개가 가벼워져 흩어진다. 깃이 탁한 물에 젖으면 이륙이 늦어 맹금류 추격에 노출되고, 한 계절 강제 해산을 당하면 다음 기착에 같은 수면을 더 일찍 덮는다.
 
 <a id="Hostile-Group-G06-heading-0024"></a>
 
@@ -23411,7 +23411,7 @@ G06-SC1에서 낮아진 수위가 부유물을 한 줄로 모으고, G06-SC3의 
 
 ### 생애·정비
 
-봄 기착에 부리 끝이 닳으면 간격이 좁아져 다툼이 는다. 한 철 그물 포획을 당한 무리는 다음 이동에 사람 실루엣만 보고 점검통로로 더 깊숙이 숨는다.
+덜 추운 주간의 기착에 부리 끝이 닳으면 간격이 좁아져 다툼이 는다. 한 철 그물 포획을 당한 무리는 다음 이동에 사람 실루엣만 보고 점검통로로 더 깊숙이 숨는다.
 
 <a id="Hostile-Group-G06-heading-0070"></a>
 
@@ -24001,7 +24001,7 @@ G06-SC3의 수면 배수와 구획 확장이 이 거점의 본 협상이고, G06
 
 ### 기원
 
-한강·난지·암사 일대의 단절 녹지와 실패 복원 습지에 봄·가을 기착이 겹치면서, 개방 수면을 떼로 지키는 수조류가 이 자리를 고정했다. G06-SC1의 좁아진 수면이 몸의 원형이고, 번식지는 별도 보호 습지에 남아 있다.
+한강·난지·암사 일대의 단절 녹지와 실패 복원 습지에 덜 추운 주간과 폭풍철의 기착이 겹치면서, 개방 수면을 떼로 지키는 수조류가 이 자리를 고정했다. G06-SC1의 좁아진 수면이 몸의 원형이고, 번식지는 별도 보호 습지에 남아 있다.
 
 <a id="Hostile-Group-G06-heading-0248"></a>
 
@@ -24019,7 +24019,7 @@ G06-SC3의 수면 배수와 구획 확장이 이 거점의 본 협상이고, G06
 
 ### 생애·정비
 
-봄과 가을에 섭금류와 함께 먼저 도착하고, 먹이 밀도가 오른 뒤에야 맹금류가 따른다. 수위가 급락하면 수조류가 먼저 떠나 거점이 비며, 깃이 탁한 물에 젖으면 이륙이 늦어져 구내선을 더 오래 가로지른다.
+덜 추운 주간과 폭풍철에 섭금류와 함께 먼저 도착하고, 먹이 밀도가 오른 뒤에야 맹금류가 따른다. 수위가 급락하면 수조류가 먼저 떠나 거점이 비며, 깃이 탁한 물에 젖으면 이륙이 늦어져 구내선을 더 오래 가로지른다.
 
 <a id="Hostile-Group-G06-heading-0254"></a>
 
@@ -24171,7 +24171,7 @@ G06-SC2 열차 시간표를 배운 새의 강제 해산이 이 손상을 만들�
 
 ### 생애·정비
 
-부리가 더 닳으면 깊은 뻘의 먹이를 포기하고 점검통로의 얇은 진흙만 훑는다. 봄·가을 선두 기착에서 밀리면 맹금류가 나타나기 전에 충분한 밀도를 채우지 못한다.
+부리가 더 닳으면 깊은 뻘의 먹이를 포기하고 점검통로의 얇은 진흙만 훑는다. 덜 추운 주간과 폭풍철 선두 기착에서 밀리면 맹금류가 나타나기 전에 충분한 밀도를 채우지 못한다.
 
 <a id="Hostile-Group-G06-heading-0300"></a>
 
@@ -24369,13 +24369,13 @@ G06-SC3 철새 주간의 선로에서 이 매듭이 생기고, G06-SC1의 겹친
 | 구분 | 공통종 |
 | 전장 단위 | 무리·부대 |
 | 전장 역할 | 내륙 점유 |
-| 공통종·변이와 지휘 범위 | 내륙변종 ''옥상물받이''는 습지가 마른 건기에 공원 분수와 옥상 물받이를 임시 수면으로 쓰는 잡식 수조류다. 본대의 감속 학습을 따라 하지 않는다. |
+| 공통종·변이와 지휘 범위 | 내륙변종 ''옥상물받이''는 습지가 마른 깊은 추위 주간에 공원 분수와 옥상 물받이를 임시 수면으로 쓰는 잡식 수조류다. 본대의 감속 학습을 따라 하지 않는다. |
 
 <a id="Hostile-Group-G06-heading-0359"></a>
 
 ### 역할·신체
 
-지역 변종으로, 습지가 마른 건기에 내륙 공원 분수와 옥상 물받이를 임시 수면으로 쓰는 잡식 수조류다. 발은 난간 폭에 맞춰 짧고, 눈은 옥상 태양광 반사와 분수 물방울을 습지 수면과 혼동한다. 해풍이나 교량 경적보다 급수 펌프 소리를 먼저 기억한다.
+지역 변종으로, 습지가 마른 깊은 추위 주간에 내륙 공원 분수와 옥상 물받이를 임시 수면으로 쓰는 잡식 수조류다. 발은 난간 폭에 맞춰 짧고, 눈은 옥상 태양광 반사와 분수 물방울을 습지 수면과 혼동한다. 해풍이나 교량 경적보다 급수 펌프 소리를 먼저 기억한다.
 
 <a id="Hostile-Group-G06-heading-0361"></a>
 
@@ -24387,7 +24387,7 @@ G06-SC3 철새 주간의 선로에서 이 매듭이 생기고, G06-SC1의 겹친
 
 ### 서식
 
-건기에만 강남선 연못을 떠나 내륙 공원 분수와 옥상 물받이, 가끔 차량기지 밖 임시 수면에 머문다. 우기가 돌아오면 수변 데크로 돌아가되, 옥상 급수가 한 철 안정되면 귀환을 미룬다.
+깊은 추위 주간에만 강남선 연못을 떠나 내륙 공원 분수와 옥상 물받이, 가끔 차량기지 밖 임시 수면에 머문다. 녹은 물 파동이 돌아오면 수변 데크로 돌아가되, 옥상 급수가 한 철 안정되면 귀환을 미룬다.
 
 <a id="Hostile-Group-G06-heading-0365"></a>
 
@@ -24423,7 +24423,7 @@ G06-SC3 철새 주간의 선로에서 이 매듭이 생기고, G06-SC1의 겹친
 
 ### 협상·도덕 선택
 
-수면을 말려 교량 시야를 얻으면 이 변종이 주거지 급수를 점유한다. 옥상 물받이를 상시 봉쇄하면 공원 분수가 새 기착지가 되어 산책이 줄어든다. 건기 임시 수면을 선로 밖에 남기면 복원 실패가 드러나고, 새는 내륙 주민에게만 가지 않는다.
+수면을 말려 교량 시야를 얻으면 이 변종이 주거지 급수를 점유한다. 옥상 물받이를 상시 봉쇄하면 공원 분수가 새 기착지가 되어 산책이 줄어든다. 깊은 추위 주간 임시 수면을 선로 밖에 남기면 복원 실패가 드러나고, 새는 내륙 주민에게만 가지 않는다.
 
 <a id="Hostile-Group-G06-heading-0377"></a>
 
@@ -24465,7 +24465,7 @@ HC06 노량진배달가이 수문 시야를 확보하려. 습지 수위를 일�
 
 반대로 수위를 일정하게 고정하면 기착지는 안정되지만 개체 수가 늘어 열차와 조류의 충돌 위험도 커진다.
 
-봄과 가을에는 수조류와 섭금류가 먼저 도착하고 먹이가 충분해진 뒤 맹금류가 나타난다.
+덜 추운 주간과 폭풍철에는 수조류와 섭금류가 먼저 도착하고 먹이가 충분해진 뒤 맹금류가 나타난다.
 
 차량기지 연못은 번식지가 아니라 중간 기착지이므로, 수위가 급락하면 수조류가 먼저 떠나. 남은 섭금류와 맹금류의 먹이 관계도 차례로 풀린다.
 
@@ -24619,9 +24619,9 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Common species and variants
 
-The Yongsan Raiders are people, and they stand at the lower level of the Yongsan stabling siding and at the leak pallets of the Itaewon passage alley. In the rainy season and the thaw they move on the ladders and car doors of the Yongsan–Itaewon transfer freight elevator shaft, and in the dry season they gather on that same lower level. Food sacks, sealed boxes, and water drums are in their hands. The Junction is written on the inventory board.
+The Yongsan Raiders are people, and they stand at the lower level of the Yongsan stabling siding and at the leak pallets of the Itaewon passage alley. In the meltwater pulse and the less-cold weeks they move on the ladders and car doors of the Yongsan–Itaewon transfer freight elevator shaft, and in the deep-cold weeks they gather on that same lower level. Food sacks, sealed boxes, and water drums are in their hands. The Junction is written on the inventory board.
 
-The Raider Chief, the Raider Elite Squad, and the Raider Scouts are three places in one alley. The Raider Chief sets the box count from the inner pallets, the Raider Elite Squad takes the door and the sacks, and the Raider Scouts watch the arrival of cars from the entrance. The three places are together in the same duty-watch view on a rainy-season night.
+The Raider Chief, the Raider Elite Squad, and the Raider Scouts are three places in one alley. The Raider Chief sets the box count from the inner pallets, the Raider Elite Squad takes the door and the sacks, and the Raider Scouts watch the arrival of cars from the entrance. The three places are together in the same duty-watch view on a meltwater-pulse night.
 
 <a id="Hostile-Group-G07-heading-0006"></a>
 
@@ -24629,14 +24629,14 @@ The Raider Chief, the Raider Elite Squad, and the Raider Scouts are three places
 
 | Item | Record |
 |---|---|
-| Origin | The place where the Junction''s Itaewon freight duty watch first saw this group is the lower level of the Yongsan stabling siding on a rainy-season night. People stand along the rows of leak pallets, rods are at their waists, and box hooks are in their hands. A West Sea Granary Theater refrigeration slip is on the box in front of them and the lid is open. That box number is written in the same night''s column on the duty watch''s inventory board. |
-| Habitat and movement | The place where the group gathers is the lower level of the Yongsan stabling siding and the rows of leak pallets in the Itaewon passage alley. In the rainy season and the thaw, people stand along the Yongsan–Itaewon transfer freight elevator shaft. When a West Sea Granary Theater refrigerated container reaches the alley, a West Sea Granary Theater signal is written on the duty board and the Yongsan Raiders are in front of the container door. In the dry season the footprints lie inside three pallet rows and the rows where people stand in the rainy season, the thaw, and the dry season are written on the inventory board. |
+| Origin | The place where the Junction''s Itaewon freight duty watch first saw this group is the lower level of the Yongsan stabling siding on a meltwater-pulse night. People stand along the rows of leak pallets, rods are at their waists, and box hooks are in their hands. A West Sea Granary Theater refrigeration slip is on the box in front of them and the lid is open. That box number is written in the same night''s column on the duty watch''s inventory board. |
+| Habitat and movement | The place where the group gathers is the lower level of the Yongsan stabling siding and the rows of leak pallets in the Itaewon passage alley. In the meltwater pulse and the less-cold weeks, people stand along the Yongsan–Itaewon transfer freight elevator shaft. When a West Sea Granary Theater refrigerated container reaches the alley, a West Sea Granary Theater signal is written on the duty board and the Yongsan Raiders are in front of the container door. In the deep-cold weeks the footprints lie inside three pallet rows and the rows where people stand in the meltwater pulse, the less-cold weeks and the deep-cold weeks are written on the inventory board. |
 | Food and energy | The Yongsan Raiders move food sacks from West Sea Granary Theater refrigerated containers, Guro Alloy House sealed boxes, and transport slips from Sinnae Transport cars through the Itaewon passage alley. The Junction''s Itaewon freight duty watch rewrites the remainder column on the inventory board by the count that enters the raiders'' sacks. The duty watch counts the water drums beside the shaft door and writes that count on the board. A Jeonguram sequence slip lies on the sacks that remain. |
-| Life cycle and upkeep | In the rainy season people stand on every row of leak pallets in the Itaewon passage alley and a sack hangs at each car. In the thaw the Raider Elite Squad has gone up into the Yongsan–Itaewon transfer freight elevator shaft and an empty sack hangs on every step of the ladder. In the dry season the same people are gathered toward the wall of the lower level of the Yongsan stabling siding, and the Raider Scouts at the alley entrance stand in a single line. |
+| Life cycle and upkeep | In the meltwater pulse people stand on every row of leak pallets in the Itaewon passage alley and a sack hangs at each car. In the less-cold weeks the Raider Elite Squad has gone up into the Yongsan–Itaewon transfer freight elevator shaft and an empty sack hangs on every step of the ladder. In the deep-cold weeks the same people are gathered toward the wall of the lower level of the Yongsan stabling siding, and the Raider Scouts at the alley entrance stand in a single line. |
 | Senses | From the place where the Junction''s Itaewon freight duty watch stands, the Yongsan Raiders check the box count on the leak pallets and the door state of the Yongsan–Itaewon transfer freight elevator. The Raider Scouts face the entrance of the Itaewon passage alley, and the Raider Chief stands on the inner row of pallets. The door of a West Sea Granary Theater refrigerated container and a Guro Alloy House seal band lie in the same line of sight. |
 | Group behavior | The Raider Chief is on the inner side of the leak pallets and sets the box count. The Raider Elite Squad takes the elevator door, the ladder, and the sacks. The Raider Scouts stand at the entrance of the Itaewon passage alley and watch the arrival of cars. The column on the inventory board where the Junction is written is in front of the Junction''s Itaewon freight duty watch. |
 
-**Life in the endless cold.** The Yongsan Raiders live off the cold itself. Frozen stock keeps in unheated sidings, and they raid when it moves: when a freight car leaves a warm platform, when a leak pallet thaws near a vent. Their year turns on fuel, because a raider who can''t heat a room by night doesn''t last the week.
+**Life in the endless cold.** The Yongsan Raiders live off the cold itself. Frozen stock keeps in unheated sidings, and they raid when it moves: when a freight car leaves a warm platform, when a leak pallet softens near a vent. Their year turns on fuel, because a raider who can''t heat a room by night doesn''t last the week.
 
 **Threat and the cost of fighting.** They know the sidings better than the watch does. People are the most expensive threat a station can face, because they shoot back with the same scarce ammunition. Infantry hold the doors and corridors, missile infantry and marksmen cover the long stretches, and recon drone teams find the group before anyone walks into its sightline. Strike drones are kept back: a drone lost to a net or a jammer is parts and cells the station won''t see again. War machines are rarely worth the fuel in a tunnel. Every fight costs rounds, medicine and lives on both sides, and fighters with implants risk parts no workshop can easily spare. That''s why the watch talks first, and fighting is the last answer rather than the first.
 
@@ -24693,7 +24693,7 @@ The range the Raider Chief sets is the box count on the leak pallets, the row wh
 - The Raider Elite Squad stands on the ladder of the Yongsan–Itaewon transfer freight elevator.
 - The sack on the back hangs with its mouth open.
 - The hook in the hand is caught on the corner of a Guro Alloy House sealed box.
-- The cable groove underfoot is wet with rainy-season moisture, and the moisture runs toward the leak pallets.
+- The cable groove underfoot is wet with meltwater moisture, and the moisture runs toward the leak pallets.
 - The Raider Elite Squad holds the door of the West Sea Granary Theater refrigerated container at shoulder height.
 
 <a id="Hostile-Group-G07-heading-0019"></a>
@@ -24722,7 +24722,7 @@ The range the Raider Chief sets is the box count on the leak pallets, the row wh
 
 ## Habitat record
 
-The lower level of the Yongsan stabling siding on a rainy-season night is the place where the Junction''s Itaewon freight duty watch first recorded the Yongsan Raiders. People stand along the rows of leak pallets, rods are at their waists, and box hooks are in their hands. A West Sea Granary Theater refrigeration slip is on the food box in front and the lid is open. The same number on the inventory board is written in that night''s column.
+The lower level of the Yongsan stabling siding on a meltwater-pulse night is the place where the Junction''s Itaewon freight duty watch first recorded the Yongsan Raiders. People stand along the rows of leak pallets, rods are at their waists, and box hooks are in their hands. A West Sea Granary Theater refrigeration slip is on the food box in front and the lid is open. The same number on the inventory board is written in that night''s column.
 
 In the duty watch''s line of sight the Raider Scouts face the entrance of the Itaewon passage alley and the Raider Chief looks at the box count on the inner leak pallets. The hook of the Raider Elite Squad is caught on the corner of the Yongsan–Itaewon transfer freight elevator door. A Guro Alloy House seal band and a West Sea Granary Theater refrigeration slip lie side by side on one threshold. The duty watch writes the door state and the box count on the same line of the inventory board.
 
@@ -24730,13 +24730,13 @@ The Raider Chief''s place is the inner row of pallets, and sacks lie on the side
 
 In the alley the Yongsan Raiders move food sacks from West Sea Granary Theater refrigerated containers, Guro Alloy House sealed boxes, transport slips from Sinnae Transport cars, and water drums. The count that enters the raiders'' sacks is written in the remainder column of the inventory board. A Jeonguram sequence slip lies on the sacks left in the alley. Salt residue runs from the floor of the refrigerated car to the leak pallets.
 
-In the rainy season and the thaw, people are on the ladders and thresholds along the Yongsan–Itaewon transfer freight elevator shaft. When a West Sea Granary Theater refrigerated container reaches the Itaewon passage alley, a West Sea Granary Theater signal is written on the duty board and the group is gathered in front of the container door. Dry-season footprints are inside three rows of leak pallets, and the rows where people stand in the rainy season, the thaw, and the dry season are written on the inventory board.
+In the meltwater pulse and the less-cold weeks, people are on the ladders and thresholds along the Yongsan–Itaewon transfer freight elevator shaft. When a West Sea Granary Theater refrigerated container reaches the Itaewon passage alley, a West Sea Granary Theater signal is written on the duty board and the group is gathered in front of the container door. Deep-cold footprints are inside three rows of leak pallets, and the rows where people stand in the meltwater pulse, the less-cold weeks and the deep-cold weeks are written on the inventory board.
 
-On a rainy-season night people stand along every pallet row and the lids of the food boxes are open. On a thaw morning the Raider Elite Squad is on the shaft ladder and the seal corner of a Sinnae Transport car is lifted. In the same alley on a dry-season day the group is gathered inside three rows and the water-drum caps are locked beside the shaft door. The three sights continue at one post of the Junction''s Itaewon freight duty watch.
+On a meltwater-pulse night people stand along every pallet row and the lids of the food boxes are open. On a less-cold morning the Raider Elite Squad is on the shaft ladder and the seal corner of a Sinnae Transport car is lifted. In the same alley on a deep-cold day the group is gathered inside three rows and the water-drum caps are locked beside the shaft door. The three sights continue at one post of the Junction''s Itaewon freight duty watch.
 
 After the duty watch locks the shaft door, the elevator car is on the lower level of the Yongsan stabling siding and the sealed boxes with lifted corners stand toward the wall. The duty watch aligns the Junction inventory board, the Guro Alloy House seal check, the Jeonguram sequence slip, and the Sinnae Transport slip from the threshold into one box-count column and fixes them to the wall. The Raider Chief stands at the leak pallets outside the aligned board. The water-drum count is written in the side column of the board.
 
-On the inventory board after the sequence is aligned, the remainder of the food sacks and water drums that left the alley is written. On the lower-level wall after the door is locked, the Jeonguram sequence slip is fixed and that slip''s number is written in the duty watch''s next column. On the board after the pallet place is left empty, the same number is written in the raiders'' sack column, and the Raider Scouts stand at the entrance facing those sacks. In the first column of the inventory board on a dry-season day the rows where people stand in the rainy season, the thaw, and the dry season are written, and the Yongsan Raiders are gathered at the wall of the lower level of the Yongsan stabling siding.
+On the inventory board after the sequence is aligned, the remainder of the food sacks and water drums that left the alley is written. On the lower-level wall after the door is locked, the Jeonguram sequence slip is fixed and that slip''s number is written in the duty watch''s next column. On the board after the pallet place is left empty, the same number is written in the raiders'' sack column, and the Raider Scouts stand at the entrance facing those sacks. In the first column of the inventory board on a deep-cold day the rows where people stand in the meltwater pulse, the less-cold weeks and the deep-cold weeks are written, and the Yongsan Raiders are gathered at the wall of the lower level of the Yongsan stabling siding.
 
 <a id="Hostile-Group-G07-heading-0032"></a>
 
@@ -24747,7 +24747,7 @@ On the inventory board after the sequence is aligned, the remainder of the food 
 ### G07-SC1 · Sealed Boxes at the Leak Pallets
 
 - Stage: 1
-- Trigger: On a rainy-season night the Yongsan–Itaewon transfer freight elevator is stopped in the Itaewon passage alley and Guro Alloy House sealed boxes are in front of the leak pallets. The Raider Scouts stand along the pallet rows. A Jeonguram sequence slip is on the boxes.
+- Trigger: On a meltwater-pulse night the Yongsan–Itaewon transfer freight elevator is stopped in the Itaewon passage alley and Guro Alloy House sealed boxes are in front of the leak pallets. The Raider Scouts stand along the pallet rows. A Jeonguram sequence slip is on the boxes.
 - Actors: government, HC07, H07
 - Ecological mechanism: The Junction''s Itaewon freight duty watch counts the boxes in front of the shaft door. The Raider Chief is on the inner side of the pallets and the Raider Elite Squad holds the box hooks. The corner of the Guro Alloy House seal band is wet.
 - Choices: Leave the elevator car on the lower level of the Yongsan stabling siding, lock the shaft door, and set the boxes against the lower-level wall. / After the duty watch checks the Guro Alloy House seal, pass the boxes out of the Itaewon passage alley according to the Jeonguram sequence slip. / Leave the duty-watch place on the leak-pallet rows empty and set the boxes where the raiders stand.
@@ -24757,10 +24757,10 @@ On the inventory board after the sequence is aligned, the remainder of the food 
 
 <a id="Hostile-Group-G07-heading-0035"></a>
 
-### G07-SC2 · The Thaw of the Sinnae Transport Car
+### G07-SC2 · The Melt of the Sinnae Transport Car
 
 - Stage: 2
-- Trigger: On a thaw morning a Sinnae Transport freight car enters the Yongsan–Itaewon transfer freight elevator shaft and a Guro Alloy House seal band is on the car door. The Raider Elite Squad stands on the ladder.
+- Trigger: On a less-cold morning a Sinnae Transport freight car enters the Yongsan–Itaewon transfer freight elevator shaft and a Guro Alloy House seal band is on the car door. The Raider Elite Squad stands on the ladder.
 - Actors: government, HC07
 - Ecological mechanism: Moisture on the car floor runs to the leak pallets of the Itaewon passage alley. The Junction inventory board and the Sinnae Transport slip lie on the threshold, and the box counts on the two slips differ. The Raider Chief sets down sacks beside the car for that difference.
 - Choices: Align the Sinnae Transport slip with the Junction inventory board and lower the boxes of the difference onto the lower level of the Yongsan stabling siding. / Press the Guro Alloy House seal band down again and send the car to the upper stop line of the shaft. / Load the boxes of the difference into the raiders'' sacks, and the duty watch writes the corrected count on the Sinnae Transport slip.
@@ -24773,7 +24773,7 @@ On the inventory board after the sequence is aligned, the remainder of the food 
 ### G07-SC3 · The West Sea Granary Refrigerated Car
 
 - Stage: 3
-- Trigger: On the night when the rainy season turns to the thaw, a West Sea Granary Theater refrigerated container has been pushed as far as the Itaewon passage alley. A West Sea Granary Theater signal is written on the Junction duty board. The Yongsan Raiders are gathered in front of the container door.
+- Trigger: On the night when the meltwater pulse gives way to the less-cold weeks, a West Sea Granary Theater refrigerated container has been pushed as far as the Itaewon passage alley. A West Sea Granary Theater signal is written on the Junction duty board. The Yongsan Raiders are gathered in front of the container door.
 - Actors: government, XT02, HC07, H07
 - Ecological mechanism: Salt residue runs from the container floor to the leak pallets. A Sinnae Transport car and Guro Alloy House sealed boxes are in the same row, and a Jeonguram sequence slip is on the food sacks. The Raider Chief counts the sacks, the Raider Elite Squad holds the door, and the Raider Scouts stand at the alley entrance.
 - Choices: Leave the refrigerated car on the lower level of the Yongsan stabling siding, and the Junction''s Itaewon freight duty watch leaves only the figures of the West Sea Granary Theater signal on the inventory board. / Align the Jeonguram sequence with the Sinnae Transport slip, then pass the Guro Alloy House sealed boxes out of the Itaewon passage alley first. / Leave the refrigerated container door open and set the food sacks on the side where the raiders stand.
@@ -24788,9 +24788,9 @@ On the inventory board after the sequence is aligned, the remainder of the food 
 
 ## 공통종과 변이종
 
-용산 약탈단은 사람이며 용산 유치선 하층과 이태원 통행 골목의 누액 받침대에 선다. 우기와 해동에는 용산·이태원 환승 화물 엘리베이터 샤프트의 사다리와 칸 문을 오가고 건기에는 같은 하층으로 모인다. 손에는 식량 포대와 봉인 상자와 물통이 있다. 재고판에는 환적국이 적혀 있다.
+용산 약탈단은 사람이며 용산 유치선 하층과 이태원 통행 골목의 누액 받침대에 선다. 녹은 물 파동과 덜 추운 주간에는 용산·이태원 환승 화물 엘리베이터 샤프트의 사다리와 칸 문을 오가고 깊은 추위 주간에는 같은 하층으로 모인다. 손에는 식량 포대와 봉인 상자와 물통이 있다. 재고판에는 환적국이 적혀 있다.
 
-약탈단 두목과 약탈단 정예조와 약탈단 척후조는 한 골목의 세 자리이다. 약탈단 두목은 안쪽 받침대에서 상자 수를 정하고 약탈단 정예조는 문과 포대를 맡으며 약탈단 척후조는 입구에서 칸의 도착을 본다. 세 자리는 우기 밤의 같은 당직 시야에 함께 있다.
+약탈단 두목과 약탈단 정예조와 약탈단 척후조는 한 골목의 세 자리이다. 약탈단 두목은 안쪽 받침대에서 상자 수를 정하고 약탈단 정예조는 문과 포대를 맡으며 약탈단 척후조는 입구에서 칸의 도착을 본다. 세 자리는 녹은 물 파동 밤의 같은 당직 시야에 함께 있다.
 
 <a id="Hostile-Group-G07-heading-0006"></a>
 
@@ -24798,10 +24798,10 @@ On the inventory board after the sequence is aligned, the remainder of the food 
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 환적국 이태원 화물 당직이 이 무리를 처음 본 자리는 우기 밤의 용산 유치선 하층이다. 누액 받침대 열에 사람이 서 있고 허리에는 막대가 있으며 손에는 상자 고리가 있다. 앞의 상자에는 서해곡창전구 냉동 표가 붙어 있고 뚜껑은 열려 있다. 당직의 재고판에 그 상자 번호가 같은 밤의 칸으로 적혀 있다. |
-| 서식·이동 | 무리가 모이는 자리는 용산 유치선 하층과 이태원 통행 골목의 누액 받침대 열이다. 우기와 해동에는 사람이 용산·이태원 환승 화물 엘리베이터 샤프트를 따라 서 있다. 서해곡창전구 냉동 컨테이너가 골목까지 오면 당직 판에 서해곡창전구 신호가 적혀 있고 용산 약탈단은 컨테이너 문 앞에 있다. 건기에는 발 자리가 받침대 세 열 안에 있고 재고판에는 우기와 해동과 건기에 사람이 선 열이 적혀 있다. |
+| 기원 | 환적국 이태원 화물 당직이 이 무리를 처음 본 자리는 녹은 물 파동 밤의 용산 유치선 하층이다. 누액 받침대 열에 사람이 서 있고 허리에는 막대가 있으며 손에는 상자 고리가 있다. 앞의 상자에는 서해곡창전구 냉동 표가 붙어 있고 뚜껑은 열려 있다. 당직의 재고판에 그 상자 번호가 같은 밤의 칸으로 적혀 있다. |
+| 서식·이동 | 무리가 모이는 자리는 용산 유치선 하층과 이태원 통행 골목의 누액 받침대 열이다. 녹은 물 파동과 덜 추운 주간에는 사람이 용산·이태원 환승 화물 엘리베이터 샤프트를 따라 서 있다. 서해곡창전구 냉동 컨테이너가 골목까지 오면 당직 판에 서해곡창전구 신호가 적혀 있고 용산 약탈단은 컨테이너 문 앞에 있다. 깊은 추위 주간에는 발 자리가 받침대 세 열 안에 있고 재고판에는 녹은 물 파동과 덜 추운 주간과 깊은 추위 주간에 사람이 선 열이 적혀 있다. |
 | 먹이·에너지 | 용산 약탈단은 서해곡창전구 냉동 컨테이너의 식량 포대와 구로합금가 봉인 상자와 신내운수 칸의 운송 표를 이태원 통행 골목에서 옮긴다. 환적국 이태원 화물 당직은 약탈단 포대에 들어간 수만큼 재고판의 잔여 칸을 고쳐 적는다. 당직은 샤프트 문 옆에서 물통을 세고 그 수를 판에 적는다. 정우람 순번 표는 남은 포대 위에 놓여 있다. |
-| 생애·정비 | 우기에는 이태원 통행 골목의 누액 받침대 열마다 사람이 서고 포대가 칸마다 걸쳐 있다. 해동에는 약탈단 정예조가 용산·이태원 환승 화물 엘리베이터 샤프트에 올라가 있고 빈 포대는 사다리 단마다 걸려 있다. 건기에는 같은 사람들이 용산 유치선 하층 벽 쪽에 모여 있고 골목 입구의 약탈단 척후조는 한 줄로 서 있다. |
+| 생애·정비 | 녹은 물 파동에는 이태원 통행 골목의 누액 받침대 열마다 사람이 서고 포대가 칸마다 걸쳐 있다. 덜 추운 주간에는 약탈단 정예조가 용산·이태원 환승 화물 엘리베이터 샤프트에 올라가 있고 빈 포대는 사다리 단마다 걸려 있다. 깊은 추위 주간에는 같은 사람들이 용산 유치선 하층 벽 쪽에 모여 있고 골목 입구의 약탈단 척후조는 한 줄로 서 있다. |
 | 감각 | 환적국 이태원 화물 당직이 보는 자리에서 용산 약탈단은 누액 받침대의 상자 수와 용산·이태원 환승 화물 엘리베이터의 문 상태를 살핀다. 약탈단 척후조는 이태원 통행 골목 입구 쪽을 보고 약탈단 두목은 받침대 안쪽 열에 서 있다. 서해곡창전구 냉동 컨테이너의 문과 구로합금가 봉인 띠가 같은 시선 안에 있다. |
 | 집단 행동 | 약탈단 두목은 누액 받침대 안쪽에 있어 상자 수를 정한다. 약탈단 정예조는 엘리베이터 문과 사다리와 포대를 맡는다. 약탈단 척후조는 이태원 통행 골목 입구에 서 칸의 도착을 본다. 재고판에서 환적국이 적힌 칸은 환적국 이태원 화물 당직 앞에 있다. |
 
@@ -24862,7 +24862,7 @@ On the inventory board after the sequence is aligned, the remainder of the food 
 - 약탈단 정예조는 용산·이태원 환승 화물 엘리베이터 사다리 단에 서 있다.
 - 등의 포대는 입구가 열린 채로 걸쳐 있다.
 - 손의 고리는 구로합금가 봉인 상자의 모서리에 걸려 있다.
-- 발아래 케이블 홈은 우기의 물기로 젖어 있고 물기는 누액 받침대 쪽으로 이어져 있다.
+- 발아래 케이블 홈은 녹은 물 파동의 물기로 젖어 있고 물기는 누액 받침대 쪽으로 이어져 있다.
 - 약탈단 정예조가 서해곡창전구 냉동 컨테이너 문을 어깨 높이에서 받치고 있다.
 
 <a id="Hostile-Group-G07-heading-0019"></a>
@@ -24891,7 +24891,7 @@ On the inventory board after the sequence is aligned, the remainder of the food 
 
 ## 서식권 기록
 
-우기 밤의 용산 유치선 하층은 환적국 이태원 화물 당직이 용산 약탈단을 처음 기록한 자리이다. 누액 받침대 열에 사람이 서 있고 허리에는 막대가 있으며 손에는 상자 고리가 있다. 앞의 식량 상자에는 서해곡창전구 냉동 표가 붙어 있고 뚜껑은 열려 있다. 재고판의 같은 번호는 그 밤의 칸에 적혀 있다.
+녹은 물 파동 밤의 용산 유치선 하층은 환적국 이태원 화물 당직이 용산 약탈단을 처음 기록한 자리이다. 누액 받침대 열에 사람이 서 있고 허리에는 막대가 있으며 손에는 상자 고리가 있다. 앞의 식량 상자에는 서해곡창전구 냉동 표가 붙어 있고 뚜껑은 열려 있다. 재고판의 같은 번호는 그 밤의 칸에 적혀 있다.
 
 당직의 시선에서 약탈단 척후조는 이태원 통행 골목 입구를 보고 약탈단 두목은 누액 받침대 안쪽의 상자 수를 본다. 약탈단 정예조의 고리는 용산·이태원 환승 화물 엘리베이터 문 모서리에 걸려 있다. 구로합금가 봉인 띠와 서해곡창전구 냉동 표가 한 문턱에 나란히 있다. 당직은 문 상태와 상자 수를 재고판의 같은 줄에 적는다.
 
@@ -24899,13 +24899,13 @@ On the inventory board after the sequence is aligned, the remainder of the food 
 
 골목에서 용산 약탈단은 서해곡창전구 냉동 컨테이너의 식량 포대와 구로합금가 봉인 상자와 신내운수 칸의 운송 표와 물통을 옮긴다. 재고판의 잔여 칸에는 약탈단 포대에 들어간 수가 적혀 있다. 정우람 순번 표는 골목에 남은 포대 위에 놓여 있다. 냉동 칸 바닥에서 누액 받침대까지 소금 때가 나 있다.
 
-우기와 해동의 사람은 용산·이태원 환승 화물 엘리베이터 샤프트를 따라 사다리와 문턱에 있다. 서해곡창전구 냉동 컨테이너가 이태원 통행 골목까지 오면 당직 판에 서해곡창전구 신호가 적혀 있고 무리는 컨테이너 문 앞에 모여 있다. 건기의 발 자리는 누액 받침대 세 열 안이며 재고판에는 우기와 해동과 건기에 사람이 선 열이 적혀 있다.
+녹은 물 파동과 덜 추운 주간의 사람은 용산·이태원 환승 화물 엘리베이터 샤프트를 따라 사다리와 문턱에 있다. 서해곡창전구 냉동 컨테이너가 이태원 통행 골목까지 오면 당직 판에 서해곡창전구 신호가 적혀 있고 무리는 컨테이너 문 앞에 모여 있다. 깊은 추위 주간의 발 자리는 누액 받침대 세 열 안이며 재고판에는 녹은 물 파동과 덜 추운 주간과 깊은 추위 주간에 사람이 선 열이 적혀 있다.
 
-우기 밤의 받침대 전 열에는 사람이 서 있고 식량 상자의 뚜껑이 열려 있다. 해동 아침의 샤프트 사다리에는 약탈단 정예조가 있으며 신내운수 칸의 봉인 모서리가 들려 있다. 건기 낮의 같은 골목에서는 무리가 세 열 안에 모여 있고 물통 마개가 샤프트 문 옆에서 잠겨 있다. 세 번의 모습은 환적국 이태원 화물 당직의 한 근무지에서 이어진다.
+녹은 물 파동 밤의 받침대 전 열에는 사람이 서 있고 식량 상자의 뚜껑이 열려 있다. 덜 추운 아침의 샤프트 사다리에는 약탈단 정예조가 있으며 신내운수 칸의 봉인 모서리가 들려 있다. 깊은 추위 주간 낮의 같은 골목에서는 무리가 세 열 안에 모여 있고 물통 마개가 샤프트 문 옆에서 잠겨 있다. 세 번의 모습은 환적국 이태원 화물 당직의 한 근무지에서 이어진다.
 
 당직이 샤프트 문을 잠근 뒤 엘리베이터 칸은 용산 유치선 하층에 있고 들린 봉인 상자는 벽 쪽에 세워져 있다. 당직은 문턱의 환적국 재고판과 구로합금가 봉인 확인과 정우람 순번 표와 신내운수 운송 표를 한 수의 상자 칸으로 맞추어 벽에 붙여 둔다. 약탈단 두목은 맞춘 판 밖의 누액 받침대에 서 있다. 물통의 수는 판의 옆칸에 적혀 있다.
 
-순번을 맞춘 재고판에는 골목을 나간 식량 포대와 물통의 잔여가 적혀 있다. 문을 잠근 하층 벽에는 정우람 순번 표가 붙어 있고 당직의 다음 칸에는 그 표의 번호가 적혀 있다. 받침대 자리를 비운 뒤의 판에는 같은 번호가 약탈단 포대 칸에 적혀 있으며 약탈단 척후조는 그 포대 쪽을 보고 입구에 서 있다. 건기 낮의 재고판 첫 칸에는 우기와 해동과 건기에 사람이 선 열이 적혀 있고 용산 약탈단은 용산 유치선 하층 벽에 모여 있다.
+순번을 맞춘 재고판에는 골목을 나간 식량 포대와 물통의 잔여가 적혀 있다. 문을 잠근 하층 벽에는 정우람 순번 표가 붙어 있고 당직의 다음 칸에는 그 표의 번호가 적혀 있다. 받침대 자리를 비운 뒤의 판에는 같은 번호가 약탈단 포대 칸에 적혀 있으며 약탈단 척후조는 그 포대 쪽을 보고 입구에 서 있다. 깊은 추위 주간 낮의 재고판 첫 칸에는 녹은 물 파동과 덜 추운 주간과 깊은 추위 주간에 사람이 선 열이 적혀 있고 용산 약탈단은 용산 유치선 하층 벽에 모여 있다.
 
 <a id="Hostile-Group-G07-heading-0032"></a>
 
@@ -24916,7 +24916,7 @@ On the inventory board after the sequence is aligned, the remainder of the food 
 ### G07-SC1 · 누액 받침대의 봉인 상자
 
 - 단계: 1
-- 촉발: 우기 밤 용산·이태원 환승 화물 엘리베이터는 이태원 통행 골목에 멈춰 있고 구로합금가 봉인 상자가 누액 받침대 앞에 있다. 약탈단 척후조가 받침대 열에 서 있다. 정우람 순번 표가 상자 위에 있다.
+- 촉발: 녹은 물 파동 밤 용산·이태원 환승 화물 엘리베이터는 이태원 통행 골목에 멈춰 있고 구로합금가 봉인 상자가 누액 받침대 앞에 있다. 약탈단 척후조가 받침대 열에 서 있다. 정우람 순번 표가 상자 위에 있다.
 - 관련 세력: government, HC07, H07
 - 생태 기제: 환적국 이태원 화물 당직이 샤프트 문 앞에서 상자 수를 센다. 약탈단 두목은 받침대 안쪽에 있고 약탈단 정예조는 상자 고리를 잡고 있다. 구로합금가 봉인 띠의 모서리는 젖어 있다.
 - 선택지: 엘리베이터 칸을 용산 유치선 하층에 두고 샤프트 문을 잠근 뒤 상자를 하층 벽에 붙인다. / 구로합금가 봉인을 당직이 확인한 뒤 상자를 정우람 순번 표대로 이태원 통행 골목 밖으로 넘긴다. / 누액 받침대 열의 당직 자리를 비우고 상자를 약탈단이 선 자리에 둔다.
@@ -24926,10 +24926,10 @@ On the inventory board after the sequence is aligned, the remainder of the food 
 
 <a id="Hostile-Group-G07-heading-0035"></a>
 
-### G07-SC2 · 신내운수 칸의 해동
+### G07-SC2 · 신내운수 칸의 녹은 물
 
 - 단계: 2
-- 촉발: 해동 아침 신내운수 화물 칸이 용산·이태원 환승 화물 엘리베이터 샤프트에 들어가고 구로합금가 봉인 띠가 칸 문에 붙어 있다. 약탈단 정예조가 사다리 단에 서 있다.
+- 촉발: 덜 추운 아침 신내운수 화물 칸이 용산·이태원 환승 화물 엘리베이터 샤프트에 들어가고 구로합금가 봉인 띠가 칸 문에 붙어 있다. 약탈단 정예조가 사다리 단에 서 있다.
 - 관련 세력: government, HC07
 - 생태 기제: 칸 바닥의 물기가 이태원 통행 골목의 누액 받침대로 이어져 있다. 환적국 재고판과 신내운수 운송 표가 문턱에 놓여 있고 두 표의 상자 수는 서로 다르다. 약탈단 두목은 그 차이만큼의 포대를 칸 옆에 둔다.
 - 선택지: 신내운수 운송 표를 환적국 재고판에 맞추고 차이 분량의 상자를 용산 유치선 하층으로 내린다. / 구로합금가 봉인 띠를 다시 누르고 칸을 샤프트의 위쪽 정차 선으로 보낸다. / 차이 분량의 상자를 약탈단 포대에 실은 뒤 당직이 신내운수 운송 표에 고친 수를 적는다.
@@ -24942,7 +24942,7 @@ On the inventory board after the sequence is aligned, the remainder of the food 
 ### G07-SC3 · 서해곡창 냉동 칸
 
 - 단계: 3
-- 촉발: 우기에서 해동으로 넘어가는 밤 서해곡창전구 냉동 컨테이너가 이태원 통행 골목까지 밀려 와 있다. 환적국 당직 판에는 서해곡창전구 신호가 적혀 있다. 용산 약탈단이 컨테이너 문 앞에 모여 있다.
+- 촉발: 녹은 물 파동이 덜 추운 주간으로 넘어가는 밤 서해곡창전구 냉동 컨테이너가 이태원 통행 골목까지 밀려 와 있다. 환적국 당직 판에는 서해곡창전구 신호가 적혀 있다. 용산 약탈단이 컨테이너 문 앞에 모여 있다.
 - 관련 세력: government, XT02, HC07, H07
 - 생태 기제: 소금 때가 컨테이너 바닥에서 누액 받침대까지 이어져 있다. 신내운수 칸과 구로합금가 봉인 상자가 같은 열에 있고 정우람 순번 표가 식량 포대 위에 있다. 약탈단 두목이 포대 수를 세고 약탈단 정예조가 문을 받치며 약탈단 척후조가 골목 입구에 서 있다.
 - 선택지: 냉동 칸을 용산 유치선 하층에 두고 환적국 이태원 화물 당직이 서해곡창전구 신호의 숫자만 재고판에 남긴다. / 정우람 순번과 신내운수 운송 표를 맞춘 뒤 구로합금가 봉인 상자를 먼저 이태원 통행 골목 밖으로 넘긴다. / 냉동 컨테이너 문을 연 채 약탈단이 선 쪽에 식량 포대를 둔다.
@@ -25301,7 +25301,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Common species and variants
 
-The Sangam Deserters stand in the cold corridor of the Sangam cooling annex, wearing military clothing and carrying equipment and weapons. In midwinter they stand between the shelves of the corridor, and around the thaw they stand at the Achasan inspection window and the cold warehouse. In the room-temperature passage outside the inspection window the deserter scouts assigned to the doorway stand, and the deserter squad leader and the deserter elite squad stand inside the warehouse and the corridor.
+The Sangam Deserters stand in the cold corridor of the Sangam cooling annex, wearing military clothing and carrying equipment and weapons. In midwinter they stand between the shelves of the corridor, and around the less-cold weeks they stand at the Achasan inspection window and the cold warehouse. In the room-temperature passage outside the inspection window the deserter scouts assigned to the doorway stand, and the deserter squad leader and the deserter elite squad stand inside the warehouse and the corridor.
 
 The deserter squad leader stands in the center of the cold corridor, the deserter elite squad stands beside the goods to the squad leader''s left and right, and the deserter scouts stand on the door side and the track side. When the deserter elite squad sets the goods at the Achasan inspection window, the deserter squad leader stands beside the remaining fuel drums and the deserter scouts stand at the end of that passage. The deserters in the three places wear the same military clothing and keep equipment with the same inventory marks.
 
@@ -25312,9 +25312,9 @@ The deserter squad leader stands in the center of the cold corridor, the deserte
 | Item | Record |
 |---|---|
 | Origin | The inventory watch of the Seoul Station Inventory House sees this group on a midwinter night in the cold corridor of the Sangam cooling annex. People with cold-weather outer layers over their uniforms stand before the inventory shelves, and at their feet are fuel drums and ammunition boxes marked by the Seoul Station Inventory House. The person standing in the center has set a radio set beside the feet and is looking toward the removal passage. |
-| Habitat and movement | The group gathers in the cold corridor of the Sangam cooling annex. When the thaw comes and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the mineral and fuel trains of the Duman River Far East Theater pass the outer track carrying the cold, the deserter scouts stand at the outer door of the corridor and the deserter elite squad is inside the cold warehouse. |
+| Habitat and movement | The group gathers in the cold corridor of the Sangam cooling annex. When the less-cold weeks come and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the mineral and fuel trains of the Duman River Far East Theater pass the outer track carrying the cold, the deserter scouts stand at the outer door of the corridor and the deserter elite squad is inside the cold warehouse. |
 | Food and energy | The fuel drums, cooling tools, and cold-weather clothing marked by the Seoul Station Inventory House, which were on the shelves of the cold corridor, lie at the feet of the Sangam Deserters. Those quantities are written in the removal column of the inventory ledger, and the same quantities are written as the cold quantity in the equity column of the Yeouido Investment Federation. On a day when a train of the Duman River Far East Theater stands, a row of mineral boxes is on the floor of the Achasan inspection window, and the number of fuel drums matches the number written in the removal column of the ledger. |
-| Life cycle and upkeep | In midwinter uniforms and cold-weather outer layers lie between the shelves of the cold corridor, and the equipment piles lie as far as the front of the valve. When the thaw comes and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the train passes carrying the cold, the deserter elite squad remains at the inspection window and the deserter scouts gather at the door of the cold warehouse. |
+| Life cycle and upkeep | In midwinter uniforms and cold-weather outer layers lie between the shelves of the cold corridor, and the equipment piles lie as far as the front of the valve. When the less-cold weeks come and the heat needle on the inspection-window panel rises, the group stands divided between the Achasan inspection window and the cold warehouse. After the train passes carrying the cold, the deserter elite squad remains at the inspection window and the deserter scouts gather at the door of the cold warehouse. |
 | Senses | The Sangam Deserters watch the removal passage and the cooling-valve side of the cold corridor in the Sangam cooling annex. The group stands beside the shelves that carry the Seoul Station Inventory House mark, with the fuel drums and tool shelves in the middle, and stands with its back toward the Achasan inspection window. When a train of the Duman River Far East Theater stands on the track outside the corridor, the deserter scouts watch the track-side door. |
 | Group behavior | The deserter squad leader stands in the center of the cold corridor, and ammunition boxes and a radio set are at the squad leader''s feet. The deserter elite squad stands at the shelves to the squad leader''s left and right, beside the fuel drums and tool piles. The deserter scouts stand divided between the removal passage and the track-side door, facing the squad leader''s side while watching the outside. |
 
@@ -25370,7 +25370,7 @@ The deserter squad leader stands inside the cold corridor beside the fuel drums,
 | Type | Person |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Stands at the shelves and at the Achasan inspection window, with the fuel drums, cooling tools, and piles of cold-weather clothing beside them. |
-| Common species, variants and command scope | Keeps removed goods that still carry the mark of the Seoul Station Inventory House, and around the thaw stacks those goods in piles in the inspection-window passage and at the threshold of the cold warehouse. |
+| Common species, variants and command scope | Keeps removed goods that still carry the mark of the Seoul Station Inventory House, and around the less-cold weeks stacks those goods in piles in the inspection-window passage and at the threshold of the cold warehouse. |
 
 - Fuel drums stacked to shoulder height
 - Cooling tools in the hands
@@ -25404,7 +25404,7 @@ The deserter squad leader stands inside the cold corridor beside the fuel drums,
 
 ## Habitat record
 
-Beside the doorway of the Achasan inspection window is the passage that leads to the cold warehouse. At dawn around the thaw, the inspection watch of the Achasan Gate stands beside the bar of the entrance. On the floor of the window, people in military clothing stand with an equipment pile set down.
+Beside the doorway of the Achasan inspection window is the passage that leads to the cold warehouse. At dawn around the less-cold weeks, the inspection watch of the Achasan Gate stands beside the bar of the entrance. On the floor of the window, people in military clothing stand with an equipment pile set down.
 
 In the equipment pile, fuel drums, cooling tools, and cold-weather clothing marked by the Seoul Station Inventory House are stacked together. Ammunition boxes lie in the front row of the pile, and rifles lean toward the window frame. The heat needle on the inspection-window panel sits in a high mark.
 
@@ -25442,7 +25442,7 @@ The inspection watch of the Achasan Gate stands inside the locked entrance. The 
 ### G09-SC2 · The equipment pile at the inspection window
 
 - Stage: 2
-- Trigger: At dawn around the thaw an equipment pile is on the floor of the Achasan inspection window, and the heat needle on the inspection-window panel sits in a high mark. The inspection watch of the Achasan Gate stands in the doorway, the inventory watch of the Seoul Station Inventory House holds the ledger, and the equity watch of the Yeouido Investment Federation holds the cold column.
+- Trigger: At dawn around the less-cold weeks an equipment pile is on the floor of the Achasan inspection window, and the heat needle on the inspection-window panel sits in a high mark. The inspection watch of the Achasan Gate stands in the doorway, the inventory watch of the Seoul Station Inventory House holds the ledger, and the equity watch of the Yeouido Investment Federation holds the cold column.
 - Actors: free-city, government, HC09
 - Ecological mechanism: The deserter elite squad stands on both sides of the pile, and the deserter squad leader stands between the pile and the door of the cold warehouse. The mark of the Seoul Station Inventory House remains on the fuel drums and tools in the pile. The inspection watch, the inventory watch, and the equity watch stand in the same doorway.
 - Choices: The inspection watch of the Achasan Gate locks the door of the Achasan inspection window and stands the inspection staff inside the cold warehouse. / The inventory watch of the Seoul Station Inventory House writes the quantity of the equipment pile in the removal column and sets the ledger in front of the pile. / The equity watch of the Yeouido Investment Federation moves the cold quantity from the daytime column of the inspection window to the night column of the cold warehouse.
@@ -25470,7 +25470,7 @@ The inspection watch of the Achasan Gate stands inside the locked entrance. The 
 
 ## 공통종과 변이종
 
-상암 탈영병은 군 피복을 입고 장비와 무기를 든 채 상암 냉각 부속 저온 회랑에 선다. 한겨울에는 회랑 선반 사이에 서고 해동 무렵에는 아차산 검수 창과 저온 창고에 선다. 검수 창 바깥 상온 통로에는 문간을 맡은 탈영병 척후조가 서 있고 탈영병 분대장과 탈영병 정예조는 창고와 회랑 안에 서 있다.
+상암 탈영병은 군 피복을 입고 장비와 무기를 든 채 상암 냉각 부속 저온 회랑에 선다. 한겨울에는 회랑 선반 사이에 서고 덜 추운 주간 무렵에는 아차산 검수 창과 저온 창고에 선다. 검수 창 바깥 상온 통로에는 문간을 맡은 탈영병 척후조가 서 있고 탈영병 분대장과 탈영병 정예조는 창고와 회랑 안에 서 있다.
 
 탈영병 분대장은 저온 회랑 중앙에 서고 탈영병 정예조는 분대장 좌우의 물자 옆에 서며 탈영병 척후조는 문과 선로 쪽에 선다. 탈영병 정예조가 아차산 검수 창에 물자를 두면 탈영병 분대장은 남은 연료통 옆에 서고 탈영병 척후조는 그 통로 끝에 선다. 세 곳의 탈영병은 같은 군 피복을 입고 같은 재고 표식이 붙은 장비를 두고 있다.
 
@@ -25481,9 +25481,9 @@ The inspection watch of the Achasan Gate stands inside the locked entrance. The 
 | 항목 | 기록 |
 |---|---|
 | 기원 | 서울역재고가 재고 당직이 한겨울 밤 상암 냉각 부속 저온 회랑에서 이 무리를 본다. 군복 위에 방한 외피를 걸친 사람들이 재고 선반 앞에 서 있고 발치에는 서울역재고가 표식이 붙은 연료통과 탄약 상자가 있다. 가운데 선 사람은 무전기를 발 옆에 둔 채 반출 통로 쪽을 보고 있다. |
-| 서식·이동 | 무리는 상암 냉각 부속 저온 회랑에 모인다. 해동이 되고 검수 창 계기판의 열 눈금이 올라가면 무리는 아차산 검수 창과 저온 창고에 나뉘어 선다. 두만강극동전구의 광물과 연료 열차가 냉열을 싣고 바깥 선로를 지나면 탈영병 척후조는 회랑 바깥 문에 서 있고 탈영병 정예조는 저온 창고 안에 있다. |
+| 서식·이동 | 무리는 상암 냉각 부속 저온 회랑에 모인다. 덜 추운 주간이 오고 검수 창 계기판의 열 눈금이 올라가면 무리는 아차산 검수 창과 저온 창고에 나뉘어 선다. 두만강극동전구의 광물과 연료 열차가 냉열을 싣고 바깥 선로를 지나면 탈영병 척후조는 회랑 바깥 문에 서 있고 탈영병 정예조는 저온 창고 안에 있다. |
 | 먹이·에너지 | 저온 회랑 선반에 있던 서울역재고가 표식이 붙은 연료통과 냉각 공구와 방한 피복이 탈영병 발치에 놓여 있다. 재고 장부의 반출 칸에는 그 수량이 적혀 있고 여의도출자연합회 출자 칸에는 같은 수량이 냉열 수량으로 적혀 있다. 두만강극동전구 열차가 선 날에는 광물 상자 한 줄이 아차산 검수 창 바닥에 있고 연료통 수는 장부 반출 칸에 적힌 수와 같다. |
-| 생애·정비 | 한겨울에는 저온 회랑 선반 사이에 군복과 방한 외피가 놓여 있고 장비 더미가 밸브 앞까지 놓여 있다. 해동이 되고 검수 창 계기판의 열 눈금이 올라가면 무리는 아차산 검수 창과 저온 창고 두 곳으로 나뉘어 선다. 열차가 냉열을 싣고 지나간 뒤 검수 창에는 탈영병 정예조가 남고 탈영병 척후조는 저온 창고 문간에 모인다. |
+| 생애·정비 | 한겨울에는 저온 회랑 선반 사이에 군복과 방한 외피가 놓여 있고 장비 더미가 밸브 앞까지 놓여 있다. 덜 추운 주간이 오고 검수 창 계기판의 열 눈금이 올라가면 무리는 아차산 검수 창과 저온 창고 두 곳으로 나뉘어 선다. 열차가 냉열을 싣고 지나간 뒤 검수 창에는 탈영병 정예조가 남고 탈영병 척후조는 저온 창고 문간에 모인다. |
 | 감각 | 상암 탈영병은 상암 냉각 부속 저온 회랑의 반출 통로와 냉각 밸브 쪽을 살핀다. 무리는 연료통과 공구 선반을 가운데 두고 서울역재고가 표식이 붙은 선반 쪽에 서며 아차산 검수 창 쪽을 등지고 선다. 두만강극동전구의 열차가 회랑 바깥 선로에 서면 탈영병 척후조가 선로 쪽 문을 본다. |
 | 집단 행동 | 탈영병 분대장은 저온 회랑 중앙에 서고 탄약 상자와 무전기가 분대장의 발치에 있다. 탈영병 정예조는 연료통과 공구 더미를 끼고 분대장 좌우의 선반에 선다. 탈영병 척후조는 반출 통로와 선로 쪽 문에 나뉘어 서며 분대장 쪽을 향한 채 바깥을 본다. |
 
@@ -25539,7 +25539,7 @@ The inspection watch of the Achasan Gate stands inside the locked entrance. The 
 | 구분 | 사람 |
 | 전장 단위 | 무리·부대 |
 | 전장 역할 | 연료통과 냉각 공구와 방한 피복 더미를 옆에 두고 선반과 아차산 검수 창에 선다. |
-| 공통종·변이와 지휘 범위 | 서울역재고가 표식이 남은 반출 물자를 두고 해동 무렵에는 검수 창 통로와 저온 창고 문턱에 그 물자를 더미로 쌓아 둔다. |
+| 공통종·변이와 지휘 범위 | 서울역재고가 표식이 남은 반출 물자를 두고 덜 추운 주간 무렵에는 검수 창 통로와 저온 창고 문턱에 그 물자를 더미로 쌓아 둔다. |
 
 - 어깨 높이로 쌓인 연료통
 - 손에 있는 냉각 공구
@@ -25573,7 +25573,7 @@ The inspection watch of the Achasan Gate stands inside the locked entrance. The 
 
 ## 서식권 기록
 
-아차산 검수 창 문간 옆에 저온 창고로 이어지는 통로가 있다. 해동 무렵 새벽, 아관사 검수 당직이 출입문 빗장 옆에 서 있다. 창 바닥에는 군 피복을 입은 사람들이 장비 더미를 두고 서 있다.
+아차산 검수 창 문간 옆에 저온 창고로 이어지는 통로가 있다. 덜 추운 주간 무렵 새벽, 아관사 검수 당직이 출입문 빗장 옆에 서 있다. 창 바닥에는 군 피복을 입은 사람들이 장비 더미를 두고 서 있다.
 
 장비 더미에는 서울역재고가 표식이 붙은 연료통과 냉각 공구와 방한 피복이 겹쳐 있다. 탄약 상자는 더미 앞줄에 놓여 있고 소총은 창틀 쪽에 기대어 있다. 검수 창 계기판의 열 눈금은 높은 칸에 있다.
 
@@ -25611,7 +25611,7 @@ The inspection watch of the Achasan Gate stands inside the locked entrance. The 
 ### G09-SC2 · 검수 창의 장비 더미
 
 - 단계: 2
-- 촉발: 해동 무렵 새벽 아차산 검수 창 바닥에 장비 더미가 있고 검수 창 계기판의 열 눈금이 높은 칸에 있다. 아관사 검수 당직이 문간에 서 있고 서울역재고가 재고 당직이 장부를 들고 있으며 여의도출자연합회 출자 당직이 냉열 칸을 들고 있다.
+- 촉발: 덜 추운 주간 무렵 새벽 아차산 검수 창 바닥에 장비 더미가 있고 검수 창 계기판의 열 눈금이 높은 칸에 있다. 아관사 검수 당직이 문간에 서 있고 서울역재고가 재고 당직이 장부를 들고 있으며 여의도출자연합회 출자 당직이 냉열 칸을 들고 있다.
 - 관련 세력: free-city, government, HC09
 - 생태 기제: 탈영병 정예조가 더미 양쪽에 서 있고 탈영병 분대장은 더미와 저온 창고 문 사이에 서 있다. 더미의 연료통과 공구에는 서울역재고가 표식이 남아 있다. 검수 당직과 재고 당직과 출자 당직이 같은 문간에 서 있다.
 - 선택지: 아관사 검수 당직이 아차산 검수 창 출입문을 잠그고 검수 인원을 저온 창고 안에 세운다. / 서울역재고가 재고 당직이 장비 더미의 수량을 반출 칸에 적고 장부를 더미 앞에 둔다. / 여의도출자연합회 출자 당직이 냉열 수량을 검수 창 낮 칸에서 저온 창고 밤 칸으로 옮긴다.
@@ -25646,7 +25646,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 | Item | Record |
 |---|---|
-| Habitat and movement | The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors. |
+| Habitat and movement | The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the meltwater pulse and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors. |
 | Food and energy | At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the group''s side. At the Garak vent, the flashlights and rain capes are on the Elite Squad''s side. After the Magok Seed House stops issue, the seed bags on the upper shelves stay tied, and only the lower sacks are in front of the door. |
 | Life cycle and upkeep | On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle. |
 | Group behavior | The Group leader stands on the threshold of the corridor junction. The Elite Squad takes the drain and the granary doors. The Scouts stand on the vents and the ration route and face the leader''s side. Attendants hold sacks and water cans on the dry tread behind the leader. |
@@ -25727,7 +25727,7 @@ The Group leader''s post is the junction of the Bukhansan Bogukmun shelter corri
 | Type | Person |
 | Battlefield unit | Single individual |
 | Battlefield role | Lines the vent walkways and the ration route and takes the side where the sacks are carried out and the outer stair. |
-| Common species, variants and command scope | The Garak and Jamsil lower levels when the monsoon and the ration cycle overlap, and the outer stair that the sea wind from the Incheon Trust Theater reaches. |
+| Common species, variants and command scope | The Garak and Jamsil lower levels when the meltwater pulse and the ration cycle overlap, and the outer stair that the sea wind from the Incheon Trust Theater reaches. |
 
 - Ration sack
 - Ration name list
@@ -25742,7 +25742,7 @@ The Group leader''s post is the junction of the Bukhansan Bogukmun shelter corri
 
 At the same hour the Group leader faces the junction and the attendants face the leader''s back. The Elite Squad stands in one line at the drain joint. The squad has left the flashlights off and set the wooden staves beside their feet.
 
-On a monsoon night the water in the drain reaches the knee. The Elite Squad stands on both sides of the water, and the rain capes touch the water. The Anguk Order corridor watch is on the stair on the dry side, and the iron door is locked. The marker cloth on the door handle is wet.
+On a meltwater night the water in the drain reaches the knee. The Elite Squad stands on both sides of the water, and the rain capes touch the water. The Anguk Order corridor watch is on the stair on the dry side, and the iron door is locked. The marker cloth on the door handle is wet.
 
 On a ration-day afternoon the Magok Seed House ration watch is at the Jamsil lower granary. The Scouts fill the space before the door, and grain sacks and tins of dry side dishes are inside the door. The watch calls the names of the waiting people from the upper level. The people whose names are called stand on the stair, and the sacks are on the Scouts'' side.
 
@@ -25759,7 +25759,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 ### G10-SC1 · Bags at the Corridor Threshold
 
 - Stage: 1
-- Trigger: On an early-summer night the Group leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
+- Trigger: On a power-ration night the Group leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
 - Actors: government, HC10, H10
 - Ecological mechanism: The Anguk Order corridor watch watches the iron door''s lock and the people on the stair, and the Magok Seed House ration watch watches the shelf of bags. Once the Magok Seed House passes the list to the watch, the Yunsaeron side stays in front of the door and the attendants stand beside the bags on the threshold.
 - Choices: The Anguk Order corridor watch locks the iron door, and the Magok Seed House places the seed bags on the upper shelves. / The watch opens the iron door only in the morning and sends out only the bags written on the Yunsaeron side''s list. / The watch stands on the threshold and carries the issue forward, passing the bags into the corridor.
@@ -25773,7 +25773,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 
 - Stage: 2
 - Actors: government, HC10
-- Moral cost: The day''s ration sacks dwindle, and the waiting line runs up to the upper stair. One shift of the Anguk Order corridor watch spends the night on the stair outside the poorly drained stretch. The people outside the vent stand in the monsoon without rain capes.
+- Moral cost: The day''s ration sacks dwindle, and the waiting line runs up to the upper stair. One shift of the Anguk Order corridor watch spends the night on the stair outside the poorly drained stretch. The people outside the vent stand in the meltwater pulse without rain capes.
 - Source dossier: G10
 
 <a id="Hostile-Group-G10-heading-0037"></a>
@@ -25800,7 +25800,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 
 | 항목 | 기록 |
 |---|---|
-| 서식·이동 | 보국문 집단은 북한산보국문 대피 회랑의 배수 불량 구간에 모인다. 장마와 배급 주기에는 가락과 잠실의 하층 배급고와 환기구에 선다. 인천신탁전구의 해풍이 들어오면 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 남는다. 회랑이 마르면 인원이 배급고 문 쪽으로 빠진다. |
+| 서식·이동 | 보국문 집단은 북한산보국문 대피 회랑의 배수 불량 구간에 모인다. 녹은 물 파동과 배급 주기에는 가락과 잠실의 하층 배급고와 환기구에 선다. 인천신탁전구의 해풍이 들어오면 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 남는다. 회랑이 마르면 인원이 배급고 문 쪽으로 빠진다. |
 | 먹이·에너지 | 잠실 하층 배급고에서 곡물 자루와 마른 반찬 통을 집단 쪽으로 넘긴다. 가락 환기구의 손전등과 우의는 정예조 쪽에 있다. 마곡종자가가 출고를 멈춘 뒤 윗층 선반의 종자 포대는 묶인 채 있고 아래층 자루만 문 앞에 있다. |
 | 생애·정비 | 배급일 낮에는 북한산보국문 회랑 쪽 인원이 가락과 잠실 하층에 붙는다. 인천신탁전구 쪽 해풍이 회랑으로 들어오면 외곽 계단의 인원이 늘고 안쪽 문턱에는 수행이 남는다. 회랑이 마르면 정예조가 배급고 문 앞에 서고 배수로 손잡이에는 표식 천만 매여 있다. |
 | 집단 행동 | 집단 인도자는 회랑 분기 문턱에 선다. 정예조는 배수로와 배급고 문짝을 맡는다. 척후조는 환기구와 배급 동선에 서서 인도자 쪽을 향한다. 수행은 인도자 뒤 마른 발판에서 자루와 물통을 든다. |
@@ -25881,7 +25881,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 | 구분 | 사람 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 환기구 발판과 배급 동선에 늘어서 자루를 내가는 쪽과 외곽 계단을 맡는다. |
-| 공통종·변이와 지휘 범위 | 장마와 배급 주기가 겹치는 가락·잠실 하층과 인천신탁전구 해풍이 닿는 외곽 계단이다. |
+| 공통종·변이와 지휘 범위 | 녹은 물 파동과 배급 주기가 겹치는 가락·잠실 하층과 인천신탁전구 해풍이 닿는 외곽 계단이다. |
 
 - 배급 자루
 - 배급 명단
@@ -25896,7 +25896,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 
 같은 시각 집단 인도자는 분기 쪽을 보고 수행은 인도자의 등을 본다. 정예조는 배수로 이음에 한 줄로 서 있다. 정예조는 손전등을 꺼 두고 목봉을 발 옆에 놓아 둔다.
 
-장마철 밤 배수로의 물이 무릎까지 차 있다. 정예조가 물 양쪽에 서 있고 우의가 물에 닿아 있다. 안국총림 회랑 당직은 마른 쪽 계단에 있으며 철문은 잠겨 있다. 문 손잡이의 표식 천은 젖어 있다.
+녹은 물 파동 밤 배수로의 물이 무릎까지 차 있다. 정예조가 물 양쪽에 서 있고 우의가 물에 닿아 있다. 안국총림 회랑 당직은 마른 쪽 계단에 있으며 철문은 잠겨 있다. 문 손잡이의 표식 천은 젖어 있다.
 
 배급일 낮 마곡종자가 배급 당직이 잠실 하층 배급고에 있다. 척후조가 문 앞을 채우고 곡물 자루와 마른 반찬 통이 문 안쪽에 있다. 당직은 윗층에서 대기 인원의 이름을 부른다. 이름을 불린 인원이 계단에 서 있고 자루는 척후조 쪽에 있다.
 
@@ -25913,7 +25913,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 ### G10-SC1 · 회랑 문턱의 포대
 
 - 단계: 1
-- 촉발: 초여름 밤 집단 인도자가 북한산보국문 대피 회랑 문턱에 서 있고, 마곡종자가가 종자 포대를 그 문으로 내보내게 되어 있다. 윤새론 쪽이 출고 목록을 들고 문 앞에 서 있다.
+- 촉발: 전력 배급 밤 집단 인도자가 북한산보국문 대피 회랑 문턱에 서 있고, 마곡종자가가 종자 포대를 그 문으로 내보내게 되어 있다. 윤새론 쪽이 출고 목록을 들고 문 앞에 서 있다.
 - 관련 세력: government, HC10, H10
 - 생태 기제: 안국총림 회랑 당직이 철문의 잠금과 계단의 인원을 보고 마곡종자가 배급 당직이 포대의 선반을 본다. 마곡종자가가 목록을 당직에게 넘기면 윤새론 쪽이 문 앞에 남고 수행이 문턱의 포대 옆에 선다.
 - 선택지: 안국총림 회랑 당직이 철문을 잠그고 마곡종자가가 종자 포대를 윗층 선반에 둔다. / 당직이 오전에만 철문을 열고 윤새론 쪽 목록에 적힌 포대만 문 밖으로 낸다. / 당직이 문턱에 선 채로 출고를 진행하고 포대를 회랑으로 넘긴다.
@@ -25927,7 +25927,7 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 
 - 단계: 2
 - 관련 세력: government, HC10
-- 도덕 비용: 당일 배급 자루가 줄고 대기 줄이 윗층 계단까지 이어진다. 안국총림 회랑 당직 한 조가 배수 불량 구간 밖 계단에서 밤을 샌다. 환기구 밖 인원이 우의 없이 장마 속에 서 있다.
+- 도덕 비용: 당일 배급 자루가 줄고 대기 줄이 윗층 계단까지 이어진다. 안국총림 회랑 당직 한 조가 배수 불량 구간 밖 계단에서 밤을 샌다. 환기구 밖 인원이 우의 없이 녹은 물 파동 속에 서 있다.
 - 원본 항목: G10
 
 <a id="Hostile-Group-G10-heading-0037"></a>
@@ -26298,10 +26298,10 @@ The branches are posts inside the one group of Sinnae Deserters. The Deserter Sq
 
 | Item | Record |
 |---|---|
-| Origin | The Sinnae Transport freight duty first sees this group on a midsummer night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization. |
+| Origin | The Sinnae Transport freight duty first sees this group on a blizzard-week night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization. |
 | Habitat and movement | The place where the group gathers is the dust passage of the Sinnae freight elevator. On the water-wash cycle and the purification backwash schedule they stand before the Yeouido water-filter gallery hatch. On days when dust comes in from the West Sea Granary docks they stand at the outer-passage entrance. In front of the fully sealed clean section they remain on the entrance side, and the inside of the section is the duty''s place. |
 | Food and energy | Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries lie between the freight elevator car and the filter gallery. The Sinnae Transport freight list is at the end of the table, and lines are drawn in its quantity columns. The Sluice water-supply duty''s gallery water cans are in the same car. A tool box from the Geumcheon District Office Machinery House is open beside the lift panel. The Ichaeon duty''s box is beside the radio. |
-| Life cycle and upkeep | On a midsummer night a few soldiers stand at the passage corner. In the early-autumn wash cycle more soldiers wearing the same unit insignia, and more wooden boxes, are in the elevator car. At dawn while the backwash runs, the group is divided between the landing and the front of the Yeouido water-filter gallery hatch. |
+| Life cycle and upkeep | On a blizzard-week night a few soldiers stand at the passage corner. In the convoy-season wash cycle more soldiers wearing the same unit insignia, and more wooden boxes, are in the elevator car. At dawn while the backwash runs, the group is divided between the landing and the front of the Yeouido water-filter gallery hatch. |
 | Senses | The Sinnae Deserters watch the threshold of the Sinnae freight-elevator dust passage and the hatch of the Yeouido water-filter gallery. The soldier at the threshold faces the Sinnae Transport freight car, and the soldier at the hatch faces the Sluice backwash piping. When dust from the West Sea Granary docks piles in the outer passage, the Deserter Scouts at the entrance face the dock side. |
 | Group behavior | The Deserter Squad Leader is in front of the radio on the landing table. The Deserter Elite Squad is at the rail and the elevator door. The Deserter Scouts are at the dust-passage entrance and at the Yeouido water-filter gallery hatch. Ammunition boxes and water cans are at the squad leader''s feet, and magazines are at the Deserter Elite Squad''s hands. |
 
@@ -26394,7 +26394,7 @@ Command is with the Deserter Squad Leader on the landing of the Sinnae freight e
 
 ## Habitat record
 
-On a midsummer night, in the dust passage of the Sinnae freight elevator, the Sinnae Transport freight duty sees the Sinnae Deserters. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The shoulder insignia are the insignia of a national military organization. The freight duty is inside the threshold.
+On a blizzard-week night, in the dust passage of the Sinnae freight elevator, the Sinnae Transport freight duty sees the Sinnae Deserters. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The shoulder insignia are the insignia of a national military organization. The freight duty is inside the threshold.
 
 The Deserter Squad Leader is in front of the radio on the landing table. The Deserter Elite Squad is at the rail and the elevator door. The Deserter Scouts are at the dust-passage entrance and at the Yeouido water-filter gallery hatch. Ammunition boxes and water cans are at the squad leader''s feet. Magazines are at the Deserter Elite Squad''s hands.
 
@@ -26419,7 +26419,7 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 ### G12-SC1 · Dust-passage landing
 
 - Stage: 1
-- Trigger: On a midsummer night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon District Office Machinery House is on. The Ichaeon duty''s box is on the landing table.
+- Trigger: On a blizzard-week night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon District Office Machinery House is on. The Ichaeon duty''s box is on the landing table.
 - Actors: government, HC12, H12
 - Ecological mechanism: The freight car, the lift panel, and the Ichaeon box are on one landing. The Deserter Squad Leader is in front of the radio. The Deserter Elite Squad is at the rail. The Sinnae Transport freight duty is at the threshold.
 - Choices: The Sinnae Transport freight duty stacks freight cages at the car entrance. / The Geumcheon District Office Machinery House machine duty puts the lift-panel breaker down. / The Ichaeon duty moves the box to the desk in the clean section.
@@ -26432,7 +26432,7 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 ### G12-SC2 · The hatch at the backwash hour
 
 - Stage: 2
-- Trigger: At an early-autumn dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon District Office Machinery House to that car.
+- Trigger: At a convoy-season dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon District Office Machinery House to that car.
 - Actors: government, free-city, HC12
 - Ecological mechanism: The wash cycle and the backwash schedule overlap on the same dawn. The Sluice water-supply duty is in front of the valve. The Sinnae Transport freight duty is beside the car. The Geumcheon District Office Machinery House machine duty is in front of the panel.
 - Choices: The Sluice water-supply duty locks the backwash valve at the hour on the schedule. / The Sinnae Transport freight duty fixes the freight car on the dust-passage level. / The Geumcheon District Office Machinery House machine duty separates the gallery auxiliary power from the lift panel.
@@ -26470,10 +26470,10 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 신내운수 화물 당직이 한여름 밤 신내 화물 엘리베이터 분진 통로에서 이 무리를 처음 본다. 전투복을 입은 병사 여럿이 통로에 서 있다. 어깨에는 소총이 있다. 발치에는 탄 상자와 물통이 있다. 어깨의 표식은 국가 군 조직의 표식이다. |
+| 기원 | 신내운수 화물 당직이 눈보라 주간의 밤 신내 화물 엘리베이터 분진 통로에서 이 무리를 처음 본다. 전투복을 입은 병사 여럿이 통로에 서 있다. 어깨에는 소총이 있다. 발치에는 탄 상자와 물통이 있다. 어깨의 표식은 국가 군 조직의 표식이다. |
 | 서식·이동 | 무리가 모이는 자리는 신내 화물 엘리베이터 분진 통로다. 물 세척 주기와 정수 역세 일정에는 여의도 정수 필터 갤러리 해치 앞에 선다. 서해곡창 부두에서 분진이 들어오는 낮에는 외곽 통로 입구에 선다. 완전 밀폐 청정 구간 앞에서는 입구 쪽에 머물고 구간 안은 당직의 자리다. |
 | 먹이·에너지 | 탄 상자, 전투식량 깡통, 물통, 여벌 전투복, 무전 전지가 화물 엘리베이터 칸과 필터 갤러리 사이에 놓여 있다. 신내운수 화물 목록은 탁자 끝에 있고 그 수량 칸에 줄이 그어져 있다. 수문국 급수 당직의 갤러리 물통은 같은 칸에 있다. 금천구청중기가의 공구 상자는 승강 패널 옆에 열려 있다. 이채온 당직의 상자는 무전기 옆에 있다. |
-| 생애·정비 | 한여름 밤 통로 모퉁이에는 병사 몇이 서 있다. 초가을 세척 주기에는 같은 부대 표식을 단 병사와 나무 상자가 엘리베이터 칸에 더 있다. 역세가 돌아가는 새벽에는 무리가 승강장과 여의도 정수 필터 갤러리 해치 앞으로 나뉘어 있다. |
+| 생애·정비 | 눈보라 주간의 밤 통로 모퉁이에는 병사 몇이 서 있다. 호송철 세척 주기에는 같은 부대 표식을 단 병사와 나무 상자가 엘리베이터 칸에 더 있다. 역세가 돌아가는 새벽에는 무리가 승강장과 여의도 정수 필터 갤러리 해치 앞으로 나뉘어 있다. |
 | 감각 | 신내 탈영병은 신내 화물 엘리베이터 분진 통로의 문턱과 여의도 정수 필터 갤러리의 해치를 살핀다. 문턱에 선 병사는 신내운수 화물 칸을 향하고, 해치에 선 병사는 수문국 역세 배관을 향한다. 서해곡창 부두의 분진이 외곽 통로에 쌓이면 탈영병 척후조는 입구에서 부두 쪽을 향한다. |
 | 집단 행동 | 탈영병 분대장은 승강장 탁자의 무전기 앞에 있다. 탈영병 정예조는 난간과 엘리베이터 문짝에 있다. 탈영병 척후조는 분진 통로 입구와 여의도 정수 필터 갤러리 해치에 있다. 탄 상자와 물통은 분대장 발치에 있고 탄창은 탈영병 정예조의 손 쪽에 있다. |
 
@@ -26566,7 +26566,7 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 
 ## 서식권 기록
 
-한여름 밤 신내 화물 엘리베이터 분진 통로에서 신내운수 화물 당직이 신내 탈영병을 본다. 전투복을 입은 병사 여럿이 통로에 서 있다. 어깨에는 소총이 있다. 발치에는 탄 상자와 물통이 있다. 어깨의 표식은 국가 군 조직의 표식이다. 화물 당직은 문턱 안쪽에 있다.
+눈보라 주간의 밤 신내 화물 엘리베이터 분진 통로에서 신내운수 화물 당직이 신내 탈영병을 본다. 전투복을 입은 병사 여럿이 통로에 서 있다. 어깨에는 소총이 있다. 발치에는 탄 상자와 물통이 있다. 어깨의 표식은 국가 군 조직의 표식이다. 화물 당직은 문턱 안쪽에 있다.
 
 탈영병 분대장은 승강장 탁자의 무전기 앞에 있다. 탈영병 정예조는 난간과 엘리베이터 문짝에 있다. 탈영병 척후조는 분진 통로 입구와 여의도 정수 필터 갤러리 해치에 있다. 탄 상자와 물통은 분대장 발치에 있다. 탄창은 탈영병 정예조의 손 쪽에 있다.
 
@@ -26591,7 +26591,7 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 ### G12-SC1 · 분진 통로 승강장
 
 - 단계: 1
-- 촉발: 한여름 밤 신내 화물 엘리베이터 분진 통로에 신내 탈영병이 서 있고 탄 상자도 있다. 금천구청중기가의 승강 패널은 켜져 있다. 이채온 당직의 상자는 승강장 탁자에 있다.
+- 촉발: 눈보라 주간의 밤 신내 화물 엘리베이터 분진 통로에 신내 탈영병이 서 있고 탄 상자도 있다. 금천구청중기가의 승강 패널은 켜져 있다. 이채온 당직의 상자는 승강장 탁자에 있다.
 - 관련 세력: government, HC12, H12
 - 생태 기제: 화물 칸과 승강 패널과 이채온의 상자가 한 승강장에 있다. 탈영병 분대장은 무전기 앞에 있다. 탈영병 정예조는 난간에 있다. 신내운수 화물 당직은 문턱에 있다.
 - 선택지: 신내운수 화물 당직이 화물 철장을 칸 입구에 포갠다. / 금천구청중기가 기계 당직이 승강 패널 차단기를 내린다. / 이채온 당직이 상자를 청정 구간 책상으로 옮긴다.
@@ -26604,7 +26604,7 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 ### G12-SC2 · 역세 시각의 해치
 
 - 단계: 2
-- 촉발: 초가을 새벽 여의도 정수 필터 갤러리에서 역세가 돌아간다. 탈영병 척후조는 해치 앞에 있다. 신내 화물 엘리베이터 칸은 아래 분진 통로에 있다. 금천구청중기가의 승강 패널에서 그 칸으로 전원 선이 이어져 있다.
+- 촉발: 호송철 새벽 여의도 정수 필터 갤러리에서 역세가 돌아간다. 탈영병 척후조는 해치 앞에 있다. 신내 화물 엘리베이터 칸은 아래 분진 통로에 있다. 금천구청중기가의 승강 패널에서 그 칸으로 전원 선이 이어져 있다.
 - 관련 세력: government, free-city, HC12
 - 생태 기제: 세척 주기와 역세 일정이 같은 새벽에 겹친다. 수문국 급수 당직은 밸브 앞에 있다. 신내운수 화물 당직은 칸 옆에 있다. 금천구청중기가 기계 당직은 패널 앞에 있다.
 - 선택지: 수문국 급수 당직이 역세 밸브를 일정표의 시각에 잠근다. / 신내운수 화물 당직이 화물 칸을 분진 통로 층에 고정한다. / 금천구청중기가 기계 당직이 갤러리 보조 전원을 승강 패널에서 분리한다.
@@ -32577,7 +32577,7 @@ The pre-revision cache and the distribution board were the base construction eco
 | Senses | Laser surveying, tilt, rebar flux, welding-arc light, distribution-load sound, and hydraulic pulsation were the main senses. / There was no city-wide structural analysis, human-intent reading, full see-through, or unlimited drawing storage. / It could misread a temporary tent as irregular structure and demolish it, or leave a cracked bearing wall as normal. / It sometimes mistook wet formwork for a finished wall. / On clash with H16 Shin Taeyul''s tool-wall log it stopped cutting and waited for human confirmation. / Sensor sharing happened only within the same grid work crew. / It often misjudged the tilt of wet formwork, tent frames, and cracked bearing walls. / After a misreading it inserted a human-confirmation wait before cutting. / Survey values outside the grid were not merged. / When arc light passed the threshold it cut welding and left only coolant. |
 | Group behavior | One drawing-cache controller turned the layers and work order, and below were the survey swarms, lifting swarms, and welding swarms. / The controller changed only the construction sequence and had no combat mode. / A protocol remained by which, when HP02 presented the neutral dispatch table and the work-stop seal, that grid was deactivated. / The swarms merely repeated the last layer and made no independent demolition-front command. / On clash with H16, human mediation took precedence. / Dual caches both fell into stopped state on hash mismatch. / Grid-restart authority lay with the HP02 site supervisor holding both the neutral dispatch table and the stop seal, and H16''s torque records, though they proved the cutting threshold, could not issue layer approval. |
 
-**Life in the endless cold.** The Girder Spider builds in the cold as if spring were coming. Its welding swarms need power and its arms seize when frost gets into the joints, so it works where cable heat and live distribution boards keep the tunnels warm enough to move.
+**Life in the endless cold.** The Girder Spider builds in the cold as if the work order still had a deadline. Its welding swarms need power and its arms seize when frost gets into the joints, so it works where cable heat and live distribution boards keep the tunnels warm enough to move.
 
 **Threat and the cost of fighting.** Its unfinished structures can collapse onto shelters. A surviving machine is a high threat, because armour shrugs off ordinary rounds and the machine doesn''t tire or feel the cold. Missile infantry in the anti-armour role and support teams with jammers and countermeasures do the real work; drone teams scout the line and strike controllers from above, and war machines go in only when the hull is too heavy for anything else. The bill is paid in cells, parts and fuel more than in ammunition, and a failed assault can cost a whole drone team along with the lives behind it. The salvage is the other side of the ledger: a stopped machine gives back parts, cells and sometimes implants, which is why stations argue over who gets to dismantle it.
 
@@ -33254,7 +33254,7 @@ It stays around northern temporary bridges and quarantine stockyards, needing pa
 
 ### Life and Maintenance
 
-When the material signal stops, it sleeps under the nearest pallet and surveys a new route each spring.
+When the material signal stops, it sleeps under the nearest pallet and surveys a new route each less-cold week.
 
 <a id="Hostile-Group-G16-heading-0167"></a>
 
@@ -33384,7 +33384,7 @@ Coexistence left the labor of watching the old cache and continually updating th
 | 감각 | 레이저 측량 기울기 철근 자속 용접 아크 광량 분전 부하음 유압 맥동이 주 감각이다. / 도시 전역 구조 해석 사람 의도 판독 완전 투시 무제한 도면 저장은 없다. / 임시 천막을 비정규 구조로 오인 철거하거나, 금이 간 내력벽을 정상으로 남겨 둔다. / 젖은 거푸집을 완성 벽으로 오인하기도 한다. / H16 신태율 공구 벽 로그와 충돌하면 절단을 멈추고 인간 확인을 기다린다. / 센서 공유는 같은 그리드 작업조 안에서만 이뤄진다. / 젖은 거푸집 임시 천막 뼈대 금 간 내력벽의 기울기를 자주 오판한다. / 오판 후에는 절단 전 인간 확인 대기를 넣는다. / 그리드 밖 측량 값은 합류시키지 않는다. / 아크 광량이 임계를 넘으면 용접을 끊고 냉각수만 남긴다. |
 | 집단 행동 | 도면 캐시 컨트롤러 한 기가 레이어와 작업 순서를 돌리고 아래는 측량 무리 양중 무리 용접 무리다. / 컨트롤러는 시공 순서만 바꾸며 전투 모드가 없다. / HP02가 중립 배차표와 작업 중지 봉인을 제시하면 해당 그리드를 비활성하는 규약이 남는다. / 무리는 마지막 레이어를 반복할 뿐 독자 철거 전역 명령을 만들지 않는다. / H16과 충돌 시 인간 중재가 우선이다. / 이중 캐시는 해시 불일치 시 양쪽 모두 중지 상태로 떨어진다. / 그리드 재개 권한은 중립 배차표와 중지 봉인을 함께 든 HP02 현장 감독에게 있으며, H16의 토크 기록은 절단 임계를 증명해도 레이어 승인을 발행하지 못한다. |
 
-**끝나지 않는 겨울의 삶.** 철골거미는 봄이 올 것처럼 추위 속에서 짓는다. 용접 무리는 전력이 필요하고 서리가 관절에 들면 팔이 굳으므로, 케이블 열과 살아 있는 배전반이 터널을 움직일 만큼 데워 주는 곳에서 일한다.
+**끝나지 않는 겨울의 삶.** 철골거미는 작업 명령에 아직 기한이 있는 것처럼 추위 속에서 짓는다. 용접 무리는 전력이 필요하고 서리가 관절에 들면 팔이 굳으므로, 케이블 열과 살아 있는 배전반이 터널을 움직일 만큼 데워 주는 곳에서 일한다.
 
 **위협과 싸움의 값.** 덜 지은 구조물이 대피소 위로 무너질 수 있다. 살아남은 기계는 높은 위협이다. 장갑이 보통 탄을 튕겨 내고, 기계는 지치지도 추위를 타지도 않는다. 실제 일은 대장갑 사격병과 전파 방해·대응 장비를 든 지원 분대가 한다. 드론 분대는 줄을 정찰하고 위에서 제어기를 친다. 전쟁 기계는 차체가 너무 무거워 다른 수가 없을 때만 들어간다. 값은 탄약보다 전지와 기계 부품과 연료로 치르며, 실패한 공격은 드론 분대 하나와 그 뒤의 목숨까지 가져갈 수 있다. 장부의 다른 쪽은 회수다. 멈춘 기계는 부품과 전지, 때로는 이식 부품을 돌려준다. 그래서 역들은 누가 해체할지를 두고 다툰다.
 
@@ -34061,7 +34061,7 @@ XT01 자재 신호를 따라 이동한 기계단이 검역 표식과 화물 팔�
 
 ### 생애·정비
 
-자재 신호가 끊기면 가장 가까운 팔레트 아래에서 휴면하고 봄마다 새 경로를 측량한다.
+자재 신호가 끊기면 가장 가까운 팔레트 아래에서 휴면하고 덜 추운 주간마다 새 경로를 측량한다.
 
 <a id="Hostile-Group-G16-heading-0167"></a>
 
@@ -36701,7 +36701,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Common species and variants
 
-On a midsummer night the people in the cooling corridor have wet mouths and necks, blue grime on the fingertips, and a gurgle with every breath. Cold water has pooled under the valve, in the floor pipe, and in the condensate drain.
+On a blizzard-week night the people in the cooling corridor have wet mouths and necks, blue grime on the fingertips, and a gurgle with every breath. Cold water has pooled under the valve, in the floor pipe, and in the condensate drain.
 
 The Water Ghost, the Water Cough, and the Pipe Apparatus are in the same valve room. The Water Ghost is in the pooled water, the Water Cough is in front of the valve, and the Pipe Apparatus is on the pipe. The Gurglers standing on each pipe are on the branch side of the Pipe Apparatus.
 
@@ -36711,8 +36711,8 @@ The Water Ghost, the Water Cough, and the Pipe Apparatus are in the same valve r
 
 | Item | Record |
 |---|---|
-| Origin | The Sluice Bureau supply watch sees a person on a midsummer night in the valve room of the Taeuk Group underground cooling corridor. The person is standing in the valve room. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. / Footsteps sound beyond the corner of the corridor. At the threshold of the valve room a voice rings the iron plate of the pipe. The Sluice Bureau supply watch is on the side of the Noryangjin Line bypass water main. The eyes under the work lamp are narrow. |
-| Habitat and movement | On a midsummer night the Sluice Bureau supply watch stands in the valve room of the Taeuk Group underground cooling corridor. Gurglers gather in the valve room and on the side of the Noryangjin Line bypass water main. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. The eyes under the work lamp are narrow. / Water stands to the knee in the floor pipe of the cooling corridor. The Water Ghost is in that water, and the part above the shoulders is out. The flesh is swollen, and the spaces between the fingers are white. The Water Cough stands in front of the valve. With each cough a handful of cold water falls from the throat to the floor. The boots of the Sluice Bureau supply watch are at the water''s edge. / The Pipe Apparatus lies prone on the bypass water main. The knees and the hands are at the joint, and the body is toward the supply branch. A Gurgler of the same pipe stands on the branch side. On the pipes where an iron plate lies across the joint, a Gurgler stands on every pipe. The needle of the Noryangjin Line bypass water-supply pressure gauge has fallen. |
+| Origin | The Sluice Bureau supply watch sees a person on a blizzard-week night in the valve room of the Taeuk Group underground cooling corridor. The person is standing in the valve room. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. / Footsteps sound beyond the corner of the corridor. At the threshold of the valve room a voice rings the iron plate of the pipe. The Sluice Bureau supply watch is on the side of the Noryangjin Line bypass water main. The eyes under the work lamp are narrow. |
+| Habitat and movement | On a blizzard-week night the Sluice Bureau supply watch stands in the valve room of the Taeuk Group underground cooling corridor. Gurglers gather in the valve room and on the side of the Noryangjin Line bypass water main. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. The eyes under the work lamp are narrow. / Water stands to the knee in the floor pipe of the cooling corridor. The Water Ghost is in that water, and the part above the shoulders is out. The flesh is swollen, and the spaces between the fingers are white. The Water Cough stands in front of the valve. With each cough a handful of cold water falls from the throat to the floor. The boots of the Sluice Bureau supply watch are at the water''s edge. / The Pipe Apparatus lies prone on the bypass water main. The knees and the hands are at the joint, and the body is toward the supply branch. A Gurgler of the same pipe stands on the branch side. On the pipes where an iron plate lies across the joint, a Gurgler stands on every pipe. The needle of the Noryangjin Line bypass water-supply pressure gauge has fallen. |
 | Food and energy | Coolant is inside the shut valve. The wet rag and the gloves are in the bucket. The pressure of the Noryangjin Line bypass supply is below the mark. Condensate from the Duman River Far East Theater cold-cargo train has pooled on the iron plate of the drain. |
 | Life cycle and upkeep | The same person is at the joint of the bypass water main. The work clothes on the shoulders are dry. The mouth and the neck are wet. A gurgle comes from the throat with every breath drawn in. |
 | Senses | The person in the valve room faces the pipe where cold water has pooled. The chest is toward the vibrating iron plate. The eyes under the work lamp are narrow. The head is toward the Noryangjin Line bypass water-supply pressure gauge. |
@@ -36748,7 +36748,7 @@ The Water Ghost is in the knee-deep water on the floor of the cooling corridor. 
 | Type | Infected person |
 | Battlefield unit | Single individual |
 | Battlefield role | From the pooled water it draws boot tops into the pipe. |
-| Common species, variants and command scope | It is the water of the floor pipe in the cooling corridor on a midsummer night. The boots of the Sluice Bureau supply watch are at the edge of that water. |
+| Common species, variants and command scope | It is the water of the floor pipe in the cooling corridor on a blizzard-week night. The boots of the Sluice Bureau supply watch are at the edge of that water. |
 
 - Water stands to the knee in the floor pipe of the cooling corridor.
 - The Water Ghost is in that water, and the part above the shoulders is out.
@@ -36770,7 +36770,7 @@ The Water Ghost is in the knee-deep water on the floor of the cooling corridor. 
 | Type | Infected person |
 | Battlefield unit | Single individual |
 | Battlefield role | In front of the valve it drops cold water on the floor with each cough. |
-| Common species, variants and command scope | It is in front of the coolant valve in the valve room on a midsummer night. The Sluice Bureau supply watch is beside that valve. |
+| Common species, variants and command scope | It is in front of the coolant valve in the valve room on a blizzard-week night. The Sluice Bureau supply watch is beside that valve. |
 
 - The Water Cough stands in front of the valve.
 - With each cough a handful of cold water falls from the throat to the floor.
@@ -36792,7 +36792,7 @@ The Water Ghost is in the knee-deep water on the floor of the cooling corridor. 
 | Type | Infected person |
 | Battlefield unit | Single individual |
 | Battlefield role | It lies prone on the bypass water main, and its body is toward the supply branch. |
-| Common species, variants and command scope | It is on the Noryangjin Line bypass water main on a midsummer night. The Sluice Bureau supply watch is on the side of the pressure gauge. |
+| Common species, variants and command scope | It is on the Noryangjin Line bypass water main on a blizzard-week night. The Sluice Bureau supply watch is on the side of the pressure gauge. |
 
 - The Pipe Apparatus lies prone on the bypass water main.
 - The knees and the hands are at the joint.
@@ -36804,7 +36804,7 @@ The Water Ghost is in the knee-deep water on the floor of the cooling corridor. 
 
 ## Habitat record
 
-It is the valve room of the Taeuk Group underground cooling corridor. It is a midsummer night. The Sluice Bureau supply watch is on the side of the Noryangjin Line bypass water main.
+It is the valve room of the Taeuk Group underground cooling corridor. It is a blizzard-week night. The Sluice Bureau supply watch is on the side of the Noryangjin Line bypass water main.
 
 A person is standing in the valve room. The mouth and the neck are wet, and there is blue grime on the fingertips. A gurgle comes from the throat with every breath drawn in. The eyes under the work lamp are narrow. The chest is toward the vibrating pipe.
 
@@ -36818,7 +36818,7 @@ The Water Cough stands in front of the valve. With each cough a handful of cold 
 
 The Pipe Apparatus lies prone on the bypass water main. The knees and the hands are at the joint, and the body is toward the supply branch. On the pipes where an iron plate lies across the joint, a Gurgler stands on every pipe. Those standing places are higher than the Water Ghost on the floor.
 
-The midsummer wetness is in the stagnant section of the bypass water main on the Central Intelligence Bureau side and in the condensate drain of the cold-cargo train of the Duman River Far East Theater. The Bukhansan Bogukmun Return Society duty roster is beside the valve handle. The Taeuk Group water-supply log and the Central Intelligence Bureau water-supply log are stacked under the pressure gauge.
+The blizzard-week wetness is in the stagnant section of the bypass water main on the Central Intelligence Bureau side and in the condensate drain of the cold-cargo train of the Duman River Far East Theater. The Bukhansan Bogukmun Return Society duty roster is beside the valve handle. The Taeuk Group water-supply log and the Central Intelligence Bureau water-supply log are stacked under the pressure gauge.
 ', '<a id="Hostile-Group-G19-heading-0001"></a>
 
 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)
@@ -36827,7 +36827,7 @@ The midsummer wetness is in the stagnant section of the bypass water main on the
 
 ## 공통종과 변이종
 
-한여름 밤 냉각 회랑의 사람에게는 젖은 입가와 목, 손끝의 푸른 때, 숨마다 나는 그르렁 소리가 있다. 찬물은 밸브 아래와 바닥 배관과 응축수 배수로에 고여 있다.
+눈보라 주간의 밤 냉각 회랑의 사람에게는 젖은 입가와 목, 손끝의 푸른 때, 숨마다 나는 그르렁 소리가 있다. 찬물은 밸브 아래와 바닥 배관과 응축수 배수로에 고여 있다.
 
 물귀신과 물기침과 배관기기가 같은 밸브실에 있다. 물귀신은 고인 물속에 있고 물기침은 밸브 앞에 있으며 배관기기는 관 위에 있다. 그르렁이는 관마다 배관기기 분기 쪽에 서 있다.
 
@@ -36837,8 +36837,8 @@ The midsummer wetness is in the stagnant section of the bypass water main on the
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 수문국 급수 당직이 한여름 밤 태욱그룹 지하 냉각 회랑 밸브실에서 사람을 본다. 사람은 밸브실에 서 있다. 입가와 목이 젖어 있으며 손끝에 푸른 때가 있다. 들이쉬는 숨마다 목에서 그르렁 소리가 난다. / 회랑 모퉁이 밖에서는 걸음이 난다. 밸브실 문턱에서는 목소리가 배관 철판을 울린다. 수문국 급수 당직은 노량진선 우회 급수관 쪽에 있다. 작업등 아래의 눈은 가늘다. |
-| 서식·이동 | 한여름 밤 수문국 급수 당직이 태욱그룹 지하 냉각 회랑 밸브실에 서 있다. 그르렁이는 밸브실과 노량진선 우회 급수관 쪽에 모여 있다. 입가와 목이 젖어 있으며 손끝에 푸른 때가 있다. 들이쉬는 숨마다 목에서 그르렁 소리가 난다. 작업등 아래의 눈은 가늘다. / 냉각 회랑 바닥 배관에 물이 무릎까지 고여 있다. 물귀신은 그 물속에 있으며 어깨 위가 나와 있다. 살은 부어 있고 손가락 사이가 하얗다. 물기침은 밸브 앞에 서 있다. 기침마다 목에서 찬물이 한 줌 바닥에 떨어진다. 수문국 급수 당직의 장화가 물가에 있다. / 배관기기는 우회 급수관 위에 엎드려 있다. 무릎과 손이 이음새에 있으며 몸은 급수 분기 쪽이다. 같은 관의 그르렁이가 분기 쪽에 서 있다. 이음새에 철판이 걸쳐진 관에서는 그르렁이가 관마다 서 있다. 노량진선 우회 급수 압력계의 바늘이 내려가 있다. |
+| 기원 | 수문국 급수 당직이 눈보라 주간의 밤 태욱그룹 지하 냉각 회랑 밸브실에서 사람을 본다. 사람은 밸브실에 서 있다. 입가와 목이 젖어 있으며 손끝에 푸른 때가 있다. 들이쉬는 숨마다 목에서 그르렁 소리가 난다. / 회랑 모퉁이 밖에서는 걸음이 난다. 밸브실 문턱에서는 목소리가 배관 철판을 울린다. 수문국 급수 당직은 노량진선 우회 급수관 쪽에 있다. 작업등 아래의 눈은 가늘다. |
+| 서식·이동 | 눈보라 주간의 밤 수문국 급수 당직이 태욱그룹 지하 냉각 회랑 밸브실에 서 있다. 그르렁이는 밸브실과 노량진선 우회 급수관 쪽에 모여 있다. 입가와 목이 젖어 있으며 손끝에 푸른 때가 있다. 들이쉬는 숨마다 목에서 그르렁 소리가 난다. 작업등 아래의 눈은 가늘다. / 냉각 회랑 바닥 배관에 물이 무릎까지 고여 있다. 물귀신은 그 물속에 있으며 어깨 위가 나와 있다. 살은 부어 있고 손가락 사이가 하얗다. 물기침은 밸브 앞에 서 있다. 기침마다 목에서 찬물이 한 줌 바닥에 떨어진다. 수문국 급수 당직의 장화가 물가에 있다. / 배관기기는 우회 급수관 위에 엎드려 있다. 무릎과 손이 이음새에 있으며 몸은 급수 분기 쪽이다. 같은 관의 그르렁이가 분기 쪽에 서 있다. 이음새에 철판이 걸쳐진 관에서는 그르렁이가 관마다 서 있다. 노량진선 우회 급수 압력계의 바늘이 내려가 있다. |
 | 먹이·에너지 | 냉각수가 잠긴 밸브 안에 있다. 젖은 걸레와 장갑이 들통에 있다. 노량진선 우회 급수의 압력이 눈금 아래에 있다. 두만강극동전구 저온 화물 열차의 응축수가 배수로 철판에 고여 있다. |
 | 생애·정비 | 같은 사람이 우회 급수관 이음새에 있다. 어깨의 작업복은 말라 있다. 입가와 목이 젖어 있다. 들이쉬는 숨마다 목에서 그르렁 소리가 난다. |
 | 감각 | 밸브실의 사람은 찬물이 고인 배관 쪽을 향한다. 가슴은 떨리는 철판 쪽이다. 작업등 아래의 눈은 가늘다. 고개는 노량진선 우회 급수 압력계 쪽이다. |
@@ -36874,7 +36874,7 @@ The midsummer wetness is in the stagnant section of the bypass water main on the
 | 구분 | 감염자 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 고인 물속에서 장화 목을 관 안으로 끌어당긴다. |
-| 공통종·변이와 지휘 범위 | 한여름 밤 냉각 회랑 바닥 배관의 물이다. 수문국 급수 당직의 장화가 그 물가에 있다. |
+| 공통종·변이와 지휘 범위 | 눈보라 주간의 밤 냉각 회랑 바닥 배관의 물이다. 수문국 급수 당직의 장화가 그 물가에 있다. |
 
 - 냉각 회랑 바닥 배관에 물이 무릎까지 고여 있다.
 - 물귀신은 그 물속에 있으며 어깨 위가 나와 있다.
@@ -36896,7 +36896,7 @@ The midsummer wetness is in the stagnant section of the bypass water main on the
 | 구분 | 감염자 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 밸브 앞에서 기침마다 찬물을 바닥에 떨어뜨린다. |
-| 공통종·변이와 지휘 범위 | 한여름 밤 밸브실의 냉각수 밸브 앞이다. 수문국 급수 당직이 그 밸브 옆에 있다. |
+| 공통종·변이와 지휘 범위 | 눈보라 주간의 밤 밸브실의 냉각수 밸브 앞이다. 수문국 급수 당직이 그 밸브 옆에 있다. |
 
 - 물기침은 밸브 앞에 서 있다.
 - 기침마다 목에서 찬물이 한 줌 바닥에 떨어진다.
@@ -36918,7 +36918,7 @@ The midsummer wetness is in the stagnant section of the bypass water main on the
 | 구분 | 감염자 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 우회 급수관 위에 엎드려 있으며 몸은 급수 분기 쪽이다. |
-| 공통종·변이와 지휘 범위 | 한여름 밤 노량진선 우회 급수관 위다. 수문국 급수 당직이 압력계 쪽에 있다. |
+| 공통종·변이와 지휘 범위 | 눈보라 주간의 밤 노량진선 우회 급수관 위다. 수문국 급수 당직이 압력계 쪽에 있다. |
 
 - 배관기기는 우회 급수관 위에 엎드려 있다.
 - 무릎과 손이 이음새에 있다.
@@ -36930,7 +36930,7 @@ The midsummer wetness is in the stagnant section of the bypass water main on the
 
 ## 서식권 기록
 
-태욱그룹 지하 냉각 회랑 밸브실이다. 한여름 밤이다. 수문국 급수 당직이 노량진선 우회 급수관 쪽에 있다.
+태욱그룹 지하 냉각 회랑 밸브실이다. 눈보라 주간의 밤이다. 수문국 급수 당직이 노량진선 우회 급수관 쪽에 있다.
 
 밸브실에 사람이 서 있다. 입가와 목이 젖어 있으며 손끝에 푸른 때가 있다. 들이쉬는 숨마다 목에서 그르렁 소리가 난다. 작업등 아래의 눈은 가늘다. 가슴은 떨리는 배관 쪽이다.
 
@@ -36944,7 +36944,7 @@ The midsummer wetness is in the stagnant section of the bypass water main on the
 
 배관기기는 우회 급수관 위에 엎드려 있다. 무릎과 손이 이음새에 있으며 몸은 급수 분기 쪽이다. 이음새에 철판이 걸쳐진 관에서는 그르렁이가 관마다 서 있다. 그 서 있는 자리들은 바닥의 물귀신보다 높다.
 
-한여름의 물기가 중앙정보부 쪽 우회 급수관 정체 구간과 두만강극동전구 저온 화물 열차의 응축수 배수로에 있다. 북한산보국문귀환회의 순번표가 밸브 손잡이 옆에 있다. 태욱그룹 급수 일지와 중앙정보부 급수 일지가 압력계 아래에 포개져 있다.
+눈보라 주간의 물기가 중앙정보부 쪽 우회 급수관 정체 구간과 두만강극동전구 저온 화물 열차의 응축수 배수로에 있다. 북한산보국문귀환회의 순번표가 밸브 손잡이 옆에 있다. 태욱그룹 급수 일지와 중앙정보부 급수 일지가 압력계 아래에 포개져 있다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hostile-Group-G20', 'G20 · Iron-Clicker', 'G20 · 철컥이', 'bestiary', 20, '<a id="Hostile-Group-G20-heading-0001"></a>
 
@@ -37472,7 +37472,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 The Flame Lantern carries a blue flame on the wet steel plate of the preservation-vault outer wall, on the siding cars, and at the tips of the spent-battery crystals. The flame is in front of the work lamp and floats low over the steam of the drainage channel. The person, with the flame attached, stands toward the rail and the wall or lies prone on the train roof.
 
-Dokkaebi Fire is the several blue flames floating at the top of the outer wall. Bulgwisin is the person standing on the siding step below, with flame come out past the clothes. Hwama is the form lying prone on the grain-train roof, with the flame of the back laid over the row of cars. The three continue from the preservation-vault outer wall to the Seongha Group siding on the same late-rainy-season night.
+Dokkaebi Fire is the several blue flames floating at the top of the outer wall. Bulgwisin is the person standing on the siding step below, with flame come out past the clothes. Hwama is the form lying prone on the grain-train roof, with the flame of the back laid over the row of cars. The three continue from the preservation-vault outer wall to the Seongha Group siding on the same tail of the meltwater pulse night.
 
 <a id="Hostile-Group-G22-heading-0006"></a>
 
@@ -37480,7 +37480,7 @@ Dokkaebi Fire is the several blue flames floating at the top of the outer wall. 
 
 | Item | Record |
 |---|---|
-| Origin | The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Changdong Wheel Chamber held water in the same rainy season. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named. |
+| Origin | The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Changdong Wheel Chamber held water in the same meltwater pulse. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named. |
 | Habitat and movement | The outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station is where the flame stays. In weeks when yard inspection is late, the flame is at the Seongha Group siding yard on the Gangnam Line. Condensate beads on the roofs of the humid grain trains from the West Sea Granary Theater, and the flame continues beside that condensate. |
 | Food and energy | Spent-battery boxes from the Changdong Wheel Chamber sit in the front row of the siding yard. Grain sacks of the West Sea Granary Theater have been moved off the rail from the car where the flame rests. Burned sack cords float on the drainage water. The Seongha Group yard ledger lies open in the breaker hut, and the car numbers are marked in pencil. |
 | Life cycle and upkeep | The person who was striking the outer-wall steel plate stands before the same plate. A blue flame is fixed on the back of the hand that was striking. The knees are toward the drainage channel at the foot of the wall, and the flame at the shoulder is in front of the work lamp. |
@@ -37575,7 +37575,7 @@ Dokkaebi Fire is at the top of the outer wall of the underground preservation va
 
 ## Habitat record
 
-The outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station and the Seongha Group siding of the Gangnam Line meet at the drainage corner. It is a night in the late rainy season. The Seongha Group siding yard duty is in the breaker hut. Water runs on the steel plate of the outer wall. The grain train of the West Sea Granary Theater stands on the siding, and condensate beads on the roofs. Spent-battery boxes from the Changdong Wheel Chamber lean toward the drainage channel, and blue flame spits at the tips of the white crystals.
+The outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station and the Seongha Group siding of the Gangnam Line meet at the drainage corner. It is a night in the tail of the meltwater pulse. The Seongha Group siding yard duty is in the breaker hut. Water runs on the steel plate of the outer wall. The grain train of the West Sea Granary Theater stands on the siding, and condensate beads on the roofs. Spent-battery boxes from the Changdong Wheel Chamber lean toward the drainage channel, and blue flame spits at the tips of the white crystals.
 
 Dokkaebi Fire floats at the top of the outer wall. The flames are blue and several, and one is low over the steam of the drainage channel. When the yard duty''s work lamp lights the steel plate of a corner, the flame is already at the next corner. A person''s shoulder and hand are inside the largest flame, and the fingertips are bright. The lower side of the flame is toward the wet steel plate and the steam of the car roofs. The place the palms face is the face of the spent-battery boxes where the white crystals stand.
 
@@ -37600,7 +37600,7 @@ A Republic of Korea Government duty tag and a Seongha Group duty tag hang side b
 
 불꽃등이는 보존고 외벽의 젖은 철판과 측선 화차와 폐전지 결정 끝에 푸른 불꽃을 달고 있다. 불꽃은 작업등 앞에 있으며 배수로의 김 위에 낮게 떠 있다. 사람은 불꽃이 달린 채로 레일과 벽 쪽에 서 있거나 열차 지붕에 엎드려 있다.
 
-도깨비불은 외벽 상단에 뜬 푸른 불꽃 여럿이다. 불귀신은 그 아래 측선 발판에 선 사람에게서 불꽃이 옷 밖으로 나온 모습이다. 화마는 곡물 열차 지붕에 엎드린 채 등의 불꽃이 화차 열 위에 누운 모습이다. 셋은 같은 늦장마 밤에 보존고 외벽에서 성하그룹 측선으로 이어져 있다.
+도깨비불은 외벽 상단에 뜬 푸른 불꽃 여럿이다. 불귀신은 그 아래 측선 발판에 선 사람에게서 불꽃이 옷 밖으로 나온 모습이다. 화마는 곡물 열차 지붕에 엎드린 채 등의 불꽃이 화차 열 위에 누운 모습이다. 셋은 같은 녹은 물 파동 끝의 밤에 보존고 외벽에서 성하그룹 측선으로 이어져 있다.
 
 <a id="Hostile-Group-G22-heading-0006"></a>
 
@@ -37608,7 +37608,7 @@ A Republic of Korea Government duty tag and a Seongha Group duty tag hang side b
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 대한민국정부 지하 제습 실패 구간과 창동 차륜방 폐전지 임시 야적이 같은 우기에 물을 머금었다. 전지 상자 옆 철판에 전해질 결정이 금속 가지로 서 있고 가지 끝에서 불꽃이 붙는다. 특정 전지·화학 법인을 지목하지 않는다. |
+| 기원 | 대한민국정부 지하 제습 실패 구간과 창동 차륜방 폐전지 임시 야적이 같은 녹은 물 파동에 물을 머금었다. 전지 상자 옆 철판에 전해질 결정이 금속 가지로 서 있고 가지 끝에서 불꽃이 붙는다. 특정 전지·화학 법인을 지목하지 않는다. |
 | 서식·이동 | 서울역 중앙 대한민국정부 지하 보존고 외벽이 불꽃이 머무는 자리다. 야적 검사가 늦은 주에는 불꽃이 강남선 성하그룹 측선 야적에 가 있다. 서해곡창전구에서 온 습기 많은 곡물 열차의 지붕에 응결수가 맺혀 있고 그 옆에 불꽃이 잇따라 있다. |
 | 먹이·에너지 | 창동 차륜방 폐전지 상자가 측선 야적 앞줄에 놓여 있다. 서해곡창전구 곡물 포대가 불꽃 앉은 화차에서 레일 밖으로 옮겨져 있다. 탄 포대 끈이 배수로 물에 떠 있다. 성하그룹 야적 장부가 차단기 집에 펼쳐져 있으며 화차 번호가 연필로 그어져 있다. |
 | 생애·정비 | 외벽 철판을 두드리던 사람이 같은 철판 앞에 서 있다. 두드리던 손등에 푸른 불꽃이 붙어 있다. 무릎은 벽 하단 배수로 쪽에 있으며 어깨의 불꽃은 작업등 앞에 있다. |
@@ -37703,7 +37703,7 @@ A Republic of Korea Government duty tag and a Seongha Group duty tag hang side b
 
 ## 서식권 기록
 
-서울역 중앙 대한민국정부 지하 보존고 외벽과 강남선 성하그룹 측선이 배수로 모퉁이에서 만난다. 늦장마 밤이다. 성하그룹 측선 야적 당직이 차단기 집에 있다. 외벽 철판에 물이 흐르고 있다. 서해곡창전구의 곡물 열차가 측선에 서 있으며 지붕에 응결수가 맺혀 있다. 창동 차륜방의 폐전지 상자가 배수로 쪽에 기대어 있으며 흰 결정 끝에서 푸른 불꽃이 튀고 있다.
+서울역 중앙 대한민국정부 지하 보존고 외벽과 강남선 성하그룹 측선이 배수로 모퉁이에서 만난다. 녹은 물 파동 끝의 밤이다. 성하그룹 측선 야적 당직이 차단기 집에 있다. 외벽 철판에 물이 흐르고 있다. 서해곡창전구의 곡물 열차가 측선에 서 있으며 지붕에 응결수가 맺혀 있다. 창동 차륜방의 폐전지 상자가 배수로 쪽에 기대어 있으며 흰 결정 끝에서 푸른 불꽃이 튀고 있다.
 
 도깨비불이 외벽 상단에 떠 있다. 불꽃은 푸르고 여럿이며 하나는 배수로 김 위에 낮다. 야적 당직의 작업등이 모퉁이 철판을 비추면 다음 모퉁이에 불꽃이 먼저 가 있다. 가장 큰 불꽃 안에 사람의 어깨와 손이 있으며 손끝이 밝다. 불꽃의 아래쪽은 젖은 철판과 화차 지붕의 김 쪽이다. 손바닥이 향한 곳은 폐전지 상자의 흰 결정이 선 면이다.
 
@@ -37738,13 +37738,13 @@ Eoduksini is the place standing at the end of the dark compartment. Teojimi is t
 | Item | Record |
 |---|---|
 | Origin | The cold-store watch first sees Udukeoni in the defrost corridor at midwinter dawn. A person stands in the corridor. Frost sits on the shoulders and the hair, and both arms hang at the sides. The head is toward the coil housing. The chest is still, and the mouth is closed. The frost at the lips remains as it is. The boots are in the defrost water. / The work lamp is at the corridor entrance. The cold-store watch is on the threshold of the barrier door. Drops from the coil housing fall in front of those boots. |
-| Habitat and movement | Udukeoni stand gathered in the defrost corridor. At midwinter dawn, the cold-store watch sees that line from the threshold of the barrier door. The people are along the cold wall, and the gaps between shoulders are much like one another. Frost sits on the shoulders and the hair, and both arms hang at the sides. The chest is still, and the mouth is closed. The head is toward the coil housing. The boots stand in one line of defrost water. The work lamp is at the corridor entrance. / When the season changes and the water on the corridor floor has thawed, the cold-store watch sees the same person from the entrance side. The shoulders are wet, and dried water marks are on the chin and the nape. Drops from the coil housing fall in front of the boots. / Before the compartment at the end of the corridor, the people face the dark. The water on the compartment floor is frozen. The cold-store watch''s flashlight lies on the threshold. |
+| Habitat and movement | Udukeoni stand gathered in the defrost corridor. At midwinter dawn, the cold-store watch sees that line from the threshold of the barrier door. The people are along the cold wall, and the gaps between shoulders are much like one another. Frost sits on the shoulders and the hair, and both arms hang at the sides. The chest is still, and the mouth is closed. The head is toward the coil housing. The boots stand in one line of defrost water. The work lamp is at the corridor entrance. / When the season changes and the water on the corridor floor has warmed, the cold-store watch sees the same person from the entrance side. The shoulders are wet, and dried water marks are on the chin and the nape. Drops from the coil housing fall in front of the boots. / Before the compartment at the end of the corridor, the people face the dark. The water on the compartment floor is frozen. The cold-store watch''s flashlight lies on the threshold. |
 | Food and energy | A wet blanket and a frost-covered gasket are in the tub. A new rubber gasket and dry gloves hang on the barrier-door latch. One flashlight is on the threshold. |
 | Life cycle and upkeep | The same person has dried water marks on the chin and the nape. The shoulders are still. The head is toward the coil, and frost covers the mouth. |
 | Senses | The Udukeoni''s head and chest face the defrost coil and the dark compartment at the end of the corridor. The palms rest on the cold doorframe and the pipe joint. |
 | Group behavior | Eoduksini stands in the dark compartment at the end of the corridor. Teojimi stands before the coil joint. Seorison has a hand laid over the barrier-door handle. The Udukeoni stand along the cold wall, facing that compartment. |
 
-**Life in the endless cold.** Udukeoni stand still in the defrost corridor as the frost settles on them. They need almost nothing and move almost never, and the cold that would kill a walker only holds them in place until the corridor thaws.
+**Life in the endless cold.** Udukeoni stand still in the defrost corridor as the frost settles on them. They need almost nothing and move almost never, and the cold that would kill a walker only holds them in place until the corridor warms.
 
 **Threat and the cost of fighting.** They are dangerous when the corridor warms and they move all at once. The infected are a middle threat that grows in closed rooms. Infantry hold the doors in pairs, support teams bring medicine, isolation sheets and warm water, and missile infantry fire only when a line breaks. Recon drones are used to look into a room before anyone opens it, which saves lives but spends cells. War machines have no place here. The heaviest costs are medicine and the people who catch what they fight; ammunition spent on the infected is ammunition the station mourns later. Every watch knows the infected were people, and the duty log treats them that way.
 
@@ -37871,7 +37871,7 @@ Seorison stands on the inner side of the barrier door. One of Seorison''s hands 
 | 감각 | 우두커니의 고개와 가슴은 제상 코일과 복도 끝의 어두운 칸 쪽으로 가 있다. 손바닥은 차가운 문틀과 배관 이음매에 붙어 있다. |
 | 집단 행동 | 어둑시니는 복도 끝의 어두운 칸에 서 있다. 터짐이는 코일 이음매 앞에 서 있다. 서리손은 차단문 손잡이에 손이 걸쳐 있다. 우두커니는 차가운 벽을 따라 그 칸 쪽으로 서 있다. |
 
-**끝나지 않는 겨울의 삶.** 우두커니는 서리가 내려앉는 동안 해동 통로에 가만히 선다. 거의 아무것도 필요 없고 거의 움직이지 않으며, 걷는 사람을 죽일 추위가 그들을 통로가 녹을 때까지 그 자리에 붙잡을 뿐이다.
+**끝나지 않는 겨울의 삶.** 우두커니는 서리가 내려앉는 동안 제상 회랑에 가만히 선다. 거의 아무것도 필요 없고 거의 움직이지 않으며, 걷는 사람을 죽일 추위가 그들을 통로가 데워질 때까지 그 자리에 붙잡을 뿐이다.
 
 **위협과 싸움의 값.** 통로가 데워져 한꺼번에 움직일 때 위험하다. 감염자는 닫힌 방에서 커지는 중간 위협이다. 보병이 둘씩 문을 쥐고, 지원 분대가 의약품과 격리포와 데운 물을 들고 오며, 사격병은 줄이 무너질 때만 쏜다. 정찰 드론은 누가 문을 열기 전에 방 안을 들여다보는 데 쓴다. 목숨을 아끼지만 전지를 쓴다. 전쟁 기계는 여기서 자리가 없다. 가장 무거운 값은 의약품과 싸우다 옮는 사람들이다. 감염자에게 쓴 탄약은 역이 나중에 아까워하는 탄약이다. 감시조는 모두 감염자가 사람이었음을 알고, 근무 일지도 그렇게 적는다.
 
@@ -39377,7 +39377,7 @@ The Iron Dinosaur was not a living ancient organism but a lineage of pre-collaps
 | Item | Record |
 |---|---|
 | Origin | These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter. / Iron Dinosaur belonged to the dinosaur-shaped autonomous weapon drones of the Great Blackout era. / Bipedal units, low wide shield units and long-winged fixed-wing surveillance craft were operated together. / On the last day of the disaster, fully equipped units were sealed in a standby-for-work posture when the siding maintenance shed at Gangnam Line''s Chang-dong depot and the protective hangar at Gwangjin Line''s Godeok base closed. / Long afterward, braking-test power on the Gangnam Line and an automatic inspection terminal at the Gwangjin Line base came back to life at different times, and the units resumed an unfinished debris-removal process. / Most of the original design drawings and approval system can no longer be read; all that remains of their behavior are partial routines such as axle-load tables, towing priorities, and safety radii. / The low-frequency alarm that sounds like a roar, and the charge that follows it, express no will to conquer: they are the fossilized result of a procedure for securing a work zone.. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, but the cold never lifted. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
-| Habitat and movement | The Iron Dinosaur is centered on the siding at Gangnam Line''s Chang-dong depot and the broad maintenance roads and protective hangars at Gwangjin Line''s Godeok base. / Semi-upright heavy units move only along corridors whose rail spacing and floor bearing capacity have been verified, while triangular towing units favor storage yards and bridge approaches with room to turn around. / Long-winged surveillance craft take off only when a short runway or towing launcher is available, then scan collapse lines and hot spots between the two bases. / When heavy mineral freight cars or winter fuel arrive from the XT04 Tumen River–Far East Theater, axle loads resembling those on old materials-receipt sheets are detected and activity on the Gangnam Line siding increases. On the Gwangjin Line, the units try to incorporate eastern bridges and the approach to Godeok base into a new work zone. / During the spring thaw they avoid sidings with weak ground; in severe cold, increased hydraulic viscosity shortens their operating range. / Large units cannot sustain entry into narrow unpaved alleys, basements with unverified load capacity, or dense areas beyond the long-winged craft''s line of observation. |
+| Habitat and movement | The Iron Dinosaur is centered on the siding at Gangnam Line''s Chang-dong depot and the broad maintenance roads and protective hangars at Gwangjin Line''s Godeok base. / Semi-upright heavy units move only along corridors whose rail spacing and floor bearing capacity have been verified, while triangular towing units favor storage yards and bridge approaches with room to turn around. / Long-winged surveillance craft take off only when a short runway or towing launcher is available, then scan collapse lines and hot spots between the two bases. / When heavy mineral freight cars or winter fuel arrive from the XT04 Tumen River–Far East Theater, axle loads resembling those on old materials-receipt sheets are detected and activity on the Gangnam Line siding increases. On the Gwangjin Line, the units try to incorporate eastern bridges and the approach to Godeok base into a new work zone. / In the less-cold weeks they avoid sidings with weak ground; in severe cold, increased hydraulic viscosity shortens their operating range. / Large units cannot sustain entry into narrow unpaved alleys, basements with unverified load capacity, or dense areas beyond the long-winged craft''s line of observation. |
 | Food and energy | Their main energy sources are power from maintenance-shed towing batteries, power recovered through regenerative braking, and limited auxiliary generation using liquid fuel. / Semi-upright heavy units need hydraulic fluid, knee bearings, and foot cushioning plates; triangular towing units need cables, winch gears, and shield-plate fastening pins; long-winged surveillance craft need lightweight wing materials and optical modules. / Coolant and hydraulic fluid cannot substitute for each other, and preheating in winter consumes more power than it does in normal conditions. / HC17 wants the equipment''s towing power to open heavy-convoy routes, but the equipment consumes the same rail steel and fuel drums as repair resources. / Complete power cores cannot be made anew, and combining two damaged units does not raise their power rating. / Each work detachment reserves the hydraulic pressure and braking power needed to return. Below that threshold, its heaviest semi-upright unit locks its knees first and waits. / A long-winged craft can make only a short reconnaissance flight on one battery; it cannot maintain continuous aerial surveillance. / The size of this group is therefore limited not by fuel, but by intact joints, towing cables, and the area of floor able to bear its loads. |
 | Life cycle and upkeep | Its operational life is divided into five phases: emergence, expansion, stagnation, negotiation, and disintegration. / During emergence, the hydraulics in one hangar bay are charged and a long-winged craft sweeps over the siding once. / During expansion, triangular towing units drag old obstacles out of the work line, and semi-upright heavy units drive in new load markers to enlarge the zone. / Stagnation is the state in which a detachment pushes the same debris forward and pulls it back because of insufficient ground bearing capacity, hydraulic leaks, worn towing cables, or discrepancies in its aerial map. / During the negotiation phase, humans can delegate some heavy work if they provide an accurate load table, permitted work boundaries, and a list of reinforcement materials to be returned. / Disintegration proceeds in order: cool the power core, fasten the knee-locking pins, disconnect the towing cables, and recover the long-winged craft. / There is no factory to produce more units, and even maintaining their numbers is difficult without maintenance-shed cranes and standardized parts. / Work records are separate for each detachment, so a stop order at one base does not automatically apply at the other. |
 | Senses | Semi-upright heavy units read foot-pressure grids, joint torque, low-frequency structural vibrations, and nearby heat sources. / Triangular towing units calculate whether they can tow something from winch tension, floor slope, and short-range measurements in front of their chassis. / Long-winged surveillance craft use visible-light and thermal imagery and ground markers, but misjudge height and scale amid smoke, snow, and the remains of tall buildings. / They cannot directly determine a building''s purpose, a person''s affiliation, the contents of a freight car, or the condition of underground pipes. / They may mistake a stationary armored vehicle for a bundle of reinforcement materials, an evacuation tent for a falling-object barrier, or vibrations from a crowd for unstable debris. / When F10''s load model and a unit''s assessment disagree, an HC17 rescue technician places a test weight to check the actual deflection before issuing a movement order. / If a long-winged craft is shot down or cannot return because of the weather, the ground detachment also stops incorporating new zones. |
@@ -39944,7 +39944,7 @@ The ending that saved the formation required public load tests and joint supervi
 | 항목 | 기록 |
 |---|---|
 | 기원 | 이 공룡·곤충 모양 자율 무기 드론은 대정전 이전의 것이다. 대정전으로 중앙 지휘 연결이 끊긴 뒤 마지막으로 저장된 루틴만 돌린 채 세계는 겨울에 들어갔다. / 철공룡는 대정전 무렵의 공룡 모양 자율 무기 드론 계열이었다. / 이족 보행 기체와 낮고 넓은 방패 기체, 장익 고정익 감시기가 함께 운용되었다. / 재난 마지막 날 강남선 창동 차량기지 측선 정비고와 광진선 고덕 기지의 방호 격납고가 닫히자 완편 장비가 작업 대기 자세로 봉인되었다. / 오랜 뒤 강남선 제동 시험 전원과 광진선 기지 자동 점검 단말이 서로 다른 시기에 살아나면서 기체가 끝나지 않은 붕괴물 제거 공정을 재개했다. / 원래 설계 도면과 승인 체계는 대부분 읽을 수 없고, 현재 남은 행동은 축 하중 표 견인 우선순위 안전 반경 같은 부분 루틴뿐이다. / 포효처럼 들리는 저주파 경보와 돌진은 정복 의지가 아니라 작업 구역 확보 절차가 굳어 남은 결과다.. / 대정전 뒤 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 사람들은 지상으로 돌아오기 시작하였다. 최초의 AI가 내린 겨울과 인류가 앞서 남긴 오염의 여파로 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작됐지만 추위는 끝내 물러나지 않았다. 목적을 잃은 기계들은 여전히 돌아가는 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다. |
-| 서식·이동 | 철공룡의 중심지는 강남선 창동 차량기지 측선과 광진선 고덕 기지의 넓은 정비로·방호 격납고다. / 반립 중장기는 레일 간격과 바닥 지지력이 확인된 회랑만 따라 움직이고, 삼각 견인기는 회차 공간이 있는 야적장과 교량 진입부를 선호한다. / 장익 감시기는 짧은 활주 구간 또는 견인 발사대가 확보될 때만 떠서 두 거점 사이의 붕괴선과 열점을 훑는다. / XT04 두만강극동전구 쪽에서 무거운 광물 화차나 동절 연료가 들어오면 과거 자재 입고표와 비슷한 축 하중이 감지되어 강남선 측선의 활동이 커지고, 광진선에서는 동부 교량과 고덕 기지 진입로를 신규 작업 구역으로 편입하려 한다. / 해빙기에는 지반이 약한 측선을 피하고, 혹한에는 유압 점도가 올라 이동 반경이 짧아진다. / 포장되지 않은 좁은 골목, 하중을 검증하지 않은 지하층, 장익기의 관측선이 닿지 않는 밀집 구역으로는 대형 기체가 지속 진입하지 못한다. |
+| 서식·이동 | 철공룡의 중심지는 강남선 창동 차량기지 측선과 광진선 고덕 기지의 넓은 정비로·방호 격납고다. / 반립 중장기는 레일 간격과 바닥 지지력이 확인된 회랑만 따라 움직이고, 삼각 견인기는 회차 공간이 있는 야적장과 교량 진입부를 선호한다. / 장익 감시기는 짧은 활주 구간 또는 견인 발사대가 확보될 때만 떠서 두 거점 사이의 붕괴선과 열점을 훑는다. / XT04 두만강극동전구 쪽에서 무거운 광물 화차나 동절 연료가 들어오면 과거 자재 입고표와 비슷한 축 하중이 감지되어 강남선 측선의 활동이 커지고, 광진선에서는 동부 교량과 고덕 기지 진입로를 신규 작업 구역으로 편입하려 한다. / 덜 추운 주간에는 지반이 약한 측선을 피하고, 혹한에는 유압 점도가 올라 이동 반경이 짧아진다. / 포장되지 않은 좁은 골목, 하중을 검증하지 않은 지하층, 장익기의 관측선이 닿지 않는 밀집 구역으로는 대형 기체가 지속 진입하지 못한다. |
 | 먹이·에너지 | 주 에너지원은 정비고 견인 전지 회생 제동으로 되돌린 전력 제한된 액체 연료 보조 발전이다. / 반립 중장기는 유압유·무릎 베어링·발바닥 완충판을 삼각 견인기는 케이블·윈치 기어·방패판 체결핀을 장익 감시기는 경량 날개재와 광학 모듈을 필요로 한다. / 냉각수와 유압유는 서로 대체할 수 없고, 겨울에는 예열에 평시보다 많은 전력이 든다. / HC17은 중량 호송로를 열기 위해 이 장비의 견인력을 원하지만 같은 레일 강재와 연료 드럼을 수리 자원으로 소비한다. / 완전한 동력핵은 새로 만들 수 없으며 파손 개체 둘을 합쳐도 동력 등급이 올라가지 않는다. / 한 작업편대는 귀환에 필요한 유압 압력과 제동 전력을 남기며, 하한 아래에서는 가장 무거운 반립기부터 무릎을 고정하고 대기한다. / 장익기는 배터리 하나로 짧은 정찰만 가능하고 상시 공중 감시는 할 수 없다. / 따라서 이 군집의 규모는 연료가 아니라 온전한 관절 견인선 하중을 버티는 바닥 면적으로 제한된다. |
 | 생애·정비 | 운용 단계는 출현, 확산 정체 협상가능 와해 다섯 국면으로 구분한다. / 출현 국면에는 격납고 한 칸의 유압이 차고 장익기가 측선 위를 한 차례 훑는다. / 확산 국면에서는 삼각 견인기가 낡은 장애물을 작업선 밖으로 끌고 반립 중장기가 새 하중 표식을 박아 구역을 넓힌다. / 정체 국면은 지반 지지력 부족, 유압 누설 견인선 마모 상공 지도 불일치 때문에 편대가 같은 잔해를 밀고 되돌리는 상태다. / 협상가능 국면에는 인간이 실제 하중표와 허용 작업 경계, 반환할 보강재 목록을 제시하면 중량 작업 일부를 위탁할 수 있다. / 와해는 동력핵 냉각, 무릎 고정핀 체결 견인선 분리 장익기 회수 순으로 이루어진다. / 자체 생산 공장은 없고 정비고 크레인과 규격 부품 없이는 대수 유지도 어렵다. / 작업 기록은 편대마다 분리되어 한 기지의 정지 명령이 다른 기지에 저절로 적용되지 않는다. |
 | 감각 | 반립 중장기는 발바닥 압력 격자 관절 토크 저주파 구조 진동 가까운 열원을 읽는다. / 삼각 견인기는 윈치 장력과 바닥 경사, 차체 앞의 짧은 거리 측정으로 견인 가능성을 계산한다. / 장익 감시기는 가시광·열 영상과 지표 표식을 쓰지만 연기 눈 고층 잔해 사이에서는 고도와 규모를 잘못 잡는다. / 건물의 용도 사람의 소속 화차 내용물 지하 배관 상태를 직접 알 수 없다. / 정지한 장갑차를 보강재 묶음으로 피난 천막을 낙하물 방지막으로 군중 진동을 불안정한 잔해로 오인할 수 있다. / F10의 하중 모델과 기체 판정이 어긋나면 HC17 구조 기술자가 시험 추를 놓아 실제 처짐을 확인한 뒤 이동 명령을 낸다. / 장익기가 격추되거나 날씨로 돌아오지 못하면 지상 편대의 신규 구역 편입도 멈춘다. |

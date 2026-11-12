@@ -11,7 +11,7 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 It was a mixed stopover in which waterfowl, waders, and raptors overlapped at the waterfront records deck of the Government of the Republic of Korea at central Seoul Station and the drainage ponds of the Seongha Group on the Gangnam Line. Waterfowl ate aquatic plants and floating matter, waders benthic creatures, and raptors rodents and exhausted small birds. There was no unified command and no aim of attacking the city.
 
-From the broad-feather perch to the pursuit wing, these were wild birds of different functional groups. The pond mirror and the open mirror were the water surface of an intermediate stopover itself, and the three-layer flight was a knot in the air where three heights overlapped on one bridge cross-section. The rooftop gutter was a branch of the same waterfowl, using inland fountains and rooftop gutters in the dry season when the wetland dried.
+From the broad-feather perch to the pursuit wing, these were wild birds of different functional groups. The pond mirror and the open mirror were the water surface of an intermediate stopover itself, and the three-layer flight was a knot in the air where three heights overlapped on one bridge cross-section. The rooftop gutter was a branch of the same waterfowl, using inland fountains and rooftop gutters in the deep-cold weeks when the wetland dried.
 
 <a id="Hostile-Group-G06-heading-0006"></a>
 
@@ -22,7 +22,7 @@ From the broad-feather perch to the pursuit wing, these were wild birds of diffe
 | Origin | Where migratory stopovers overlapped on the severed green spaces and failed restored wetlands around the Han River, Nanji, and Amsa, predatory birds and omnivorous waterfowl formed a mixed colony amid the management vacuum after the collapse and became the Grey Heron and Cormorant. / The waterfront records deck of the Government of the Republic of Korea at central Seoul Station and the depot drainage ponds of the Seongha Group on the Gangnam Line were its key nodes. / The locations of migratory-bird sites and wetlands fell within the reference range of ordinary protected-area observation, but the negotiating rules of the mixed functional groups were observed only in this region after the collapse. |
 | Habitat and movement | The core habitat was the waterfront wetland fragments at Seoul Station Central and the drainage ponds and wire perches of the Gangnam Line. / During seasonal movement they rode the wind road toward the XT01 Imjin River Gate Theater and went back and forth on the north-south axis, and at breeding and stopover peaks they occupied the sightlines of bridges and sluices and the air over the depot yard tracks. / When the wetland dried they moved temporarily to inland park fountains and rooftop gutters. |
 | Food and energy | The waterfowl ate aquatic plants and organic floating matter, the waders ate the benthic life of shallow water, and the raptors ate rodents and weak birds. / The distance between safe perches, shallow water, and feeding grounds was the upkeep cost. / When HC06 the Noryangjin Delivery House drained the wetland water level one-sidedly, the waterfowl were driven to the depot ponds, the waders to the mud edges, and the raptors followed that concentration. / Fixing the water level raised stopover density and the risk of train-bird collision on the depot yard tracks together. |
-| Life cycle and upkeep | In spring and autumn the waterfowl and waders stopped first on the shallow water, and when food density rose the raptors followed. / The breeding grounds were in a separate protected area, and the depot ponds were used only as an intermediate stopover. / When the water level dropped sharply the waterfowl left first, and the food relationship of the waders and raptors also came apart in a chain. |
+| Life cycle and upkeep | In the less-cold weeks and the storm season the waterfowl and waders stopped first on the shallow water, and when food density rose the raptors followed. / The breeding grounds were in a separate protected area, and the depot ponds were used only as an intermediate stopover. / When the water level dropped sharply the waterfowl left first, and the food relationship of the waders and raptors also came apart in a chain. |
 | Senses | Vision was the main sense, and they were sensitive to water-surface glare, vest color, and drone silhouettes. / By hearing they read engines, gunshots, and warning loudspeakers, and scent responded to fish meal and rot. / They did not decode electronic signals. / H06 Baksol's radar-based altitude classification confused balloons, drones, and birds, so it was corrected by eye. |
 | Group behavior | There was no command system. / The waterfowl occupied the open water as a flock, the waders worked the shallow edges at intervals, and the raptors moved from the high wires and pylons following the density of the two functional groups. / When one functional group moved, the space use of the other functional groups changed because of food and alert responses. / When H06 summed them into one hostile score, the HC06 ecology watch recorded them again by altitude, water-surface zone, and head count for each functional group. |
 | Long-term adaptation | Individuals learned the repeating train times and the low-noise inspection windows, but the response differed by functional group. / A change in movement season across many generations was treated only as food and climate selection pressure, and a route change within one season was distinguished as learning. / The more they matched the city's timetable, the more there was a cost of growing dull to the irregular dangers of a natural wetland. |
@@ -100,7 +100,7 @@ Aquatic plants and suspended organic matter are its food; safe open water and a 
 
 ### Life Cycle and Maintenance
 
-It grows larger only during spring and autumn stopovers; outside the migratory seasons, its wings become lighter and the birds disperse. When its feathers are soaked in turbid water, takeoff is delayed, exposing it to pursuit by raptors. If forcibly dispersed for a season, it occupies the same water earlier at the next stopover.
+It grows larger only during stopovers of the less-cold weeks and the storm season; outside the migratory seasons, its wings become lighter and the birds disperse. When its feathers are soaked in turbid water, takeoff is delayed, exposing it to pursuit by raptors. If forcibly dispersed for a season, it occupies the same water earlier at the next stopover.
 
 <a id="Hostile-Group-G06-heading-0024"></a>
 
@@ -252,7 +252,7 @@ It feeds on bottom-dwelling organisms in shallow water; if the mudflat dries or 
 
 ### Life Cycle and Maintenance
 
-When bill tips wear down during the spring stopover, spacing narrows and disputes increase. A flock caught in nets for one season hides deeper in the inspection passage on its next migration at the mere sight of a human silhouette.
+When bill tips wear down during the less-cold stopover, spacing narrows and disputes increase. A flock caught in nets for one season hides deeper in the inspection passage on its next migration at the mere sight of a human silhouette.
 
 <a id="Hostile-Group-G06-heading-0070"></a>
 
@@ -842,7 +842,7 @@ As an environmental outpost type, the adult waterfowl with broad feet and water-
 
 ### Origin
 
-As spring and autumn stopovers overlapped in the isolated green belts and failed restoration wetlands of the Han River, Nanji, and Amsa areas, the waterfowl that guarded open surfaces in flocks fixed this spot. The narrowed surface of G06-SC1 is the body prototype, and the breeding ground remains in a separate protected wetland.
+As stopovers of the less-cold weeks and the storm season overlapped in the isolated green belts and failed restoration wetlands of the Han River, Nanji, and Amsa areas, the waterfowl that guarded open surfaces in flocks fixed this spot. The narrowed surface of G06-SC1 is the body prototype, and the breeding ground remains in a separate protected wetland.
 
 <a id="Hostile-Group-G06-heading-0248"></a>
 
@@ -860,7 +860,7 @@ Aquatic plants and organic suspended matter were its energy. When HC06 Noryangji
 
 ### Life Cycle and Maintenance
 
-It arrived first with the waders in spring and autumn, and only then did the raptors follow once prey density rose. When water level dropped sharply the waterfowl left first and the outpost emptied. When feathers became soaked in turbid water takeoff was delayed and it crossed the yard line longer.
+It arrived first with the waders in the less-cold weeks and the storm season, and only then did the raptors follow once prey density rose. When water level dropped sharply the waterfowl left first and the outpost emptied. When feathers became soaked in turbid water takeoff was delayed and it crossed the yard line longer.
 
 <a id="Hostile-Group-G06-heading-0254"></a>
 
@@ -1012,7 +1012,7 @@ Benthic creatures of shallow water were its energy. When turbidity was stable bu
 
 ### Life Cycle and Maintenance
 
-When the beak wore further it abandoned deep mud prey and only skimmed the thin mud of the inspection passage. When pushed from the lead stopover in spring and autumn it could not build sufficient density before raptors appeared.
+When the beak wore further it abandoned deep mud prey and only skimmed the thin mud of the inspection passage. When pushed from the lead stopover in the less-cold weeks and the storm season it could not build sufficient density before raptors appeared.
 
 <a id="Hostile-Group-G06-heading-0300"></a>
 
@@ -1210,13 +1210,13 @@ The track of G06-SC3 migratory week was this knot's stage, and the overlapped su
 | Type | Common species |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Inland Occupation |
-| Common species, variants and command scope | Inland Variant 'Rooftop Gutter' is the omnivorous waterfowl that used park fountains and rooftop gutters as temporary surface during the dry season when wetlands dried. It did not follow the main force's slowdown learning. |
+| Common species, variants and command scope | Inland Variant 'Rooftop Gutter' is the omnivorous waterfowl that used park fountains and rooftop gutters as temporary surface during the deep-cold weeks when wetlands dried. It did not follow the main force's slowdown learning. |
 
 <a id="Hostile-Group-G06-heading-0359"></a>
 
 ### Role and Body
 
-As a regional variant, it was the omnivorous waterfowl that used inland park fountains and rooftop gutters as temporary surface during the dry season when wetlands dried. Its feet were short to match railing width. Its eyes confused rooftop solar reflections and fountain droplets with wetland surface. It remembered the sound of water-supply pumps before sea wind or bridge horns.
+As a regional variant, it was the omnivorous waterfowl that used inland park fountains and rooftop gutters as temporary surface during the deep-cold weeks when wetlands dried. Its feet were short to match railing width. Its eyes confused rooftop solar reflections and fountain droplets with wetland surface. It remembered the sound of water-supply pumps before sea wind or bridge horns.
 
 <a id="Hostile-Group-G06-heading-0361"></a>
 
@@ -1228,7 +1228,7 @@ In the season when the central Seoul Station surface was drained for sluice insp
 
 ### Habitat
 
-Only in the dry season did it leave the Gangnam Line pond for inland park fountains, rooftop gutters, and occasionally temporary surface outside the rolling-stock depot. When the rainy season returned it went back to the waterside deck, but if rooftop supply stabilized for one season it postponed return.
+Only in the deep-cold weeks did it leave the Gangnam Line pond for inland park fountains, rooftop gutters, and occasionally temporary surface outside the rolling-stock depot. When the meltwater pulse returned it went back to the waterside deck, but if rooftop supply stabilized for one season it postponed return.
 
 <a id="Hostile-Group-G06-heading-0365"></a>
 
@@ -1264,7 +1264,7 @@ Inland netting put walking children at risk and wetland water-level control did 
 
 ### Negotiation and Moral Choice
 
-Drying the surface to obtain bridge visibility let this variant occupy residential water supply. Permanent rooftop gutter blockade made park fountains new stopover sites and reduced walks. Leaving dry-season temporary surface outside the track neither hid restoration failure nor shifted birds only to inland residents.
+Drying the surface to obtain bridge visibility let this variant occupy residential water supply. Permanent rooftop gutter blockade made park fountains new stopover sites and reduced walks. Leaving deep-cold temporary surface outside the track neither hid restoration failure nor shifted birds only to inland residents.
 
 <a id="Hostile-Group-G06-heading-0377"></a>
 
@@ -1306,7 +1306,7 @@ The raptors followed that density to the depot's power lines and pylons.
 
 Conversely, fixing the water level steady stabilized the stopover, but numbers grew and the risk of collisions between trains and birds increased.
 
-In spring and autumn the waterfowl and waders arrived first, and the raptors appeared once food was plentiful.
+In the less-cold weeks and the storm season the waterfowl and waders arrived first, and the raptors appeared once food was plentiful.
 
 The depot ponds were not breeding grounds but stopovers, so when the water level dropped sharply the waterfowl left first and the feeding relationships of the remaining waders and raptors unraveled in turn.
 

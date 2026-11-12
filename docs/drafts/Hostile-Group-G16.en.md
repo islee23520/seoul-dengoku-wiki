@@ -26,7 +26,7 @@ The pre-revision cache and the distribution board were the base construction eco
 | Senses | Laser surveying, tilt, rebar flux, welding-arc light, distribution-load sound, and hydraulic pulsation were the main senses. / There was no city-wide structural analysis, human-intent reading, full see-through, or unlimited drawing storage. / It could misread a temporary tent as irregular structure and demolish it, or leave a cracked bearing wall as normal. / It sometimes mistook wet formwork for a finished wall. / On clash with H16 Shin Taeyul's tool-wall log it stopped cutting and waited for human confirmation. / Sensor sharing happened only within the same grid work crew. / It often misjudged the tilt of wet formwork, tent frames, and cracked bearing walls. / After a misreading it inserted a human-confirmation wait before cutting. / Survey values outside the grid were not merged. / When arc light passed the threshold it cut welding and left only coolant. |
 | Group behavior | One drawing-cache controller turned the layers and work order, and below were the survey swarms, lifting swarms, and welding swarms. / The controller changed only the construction sequence and had no combat mode. / A protocol remained by which, when HP02 presented the neutral dispatch table and the work-stop seal, that grid was deactivated. / The swarms merely repeated the last layer and made no independent demolition-front command. / On clash with H16, human mediation took precedence. / Dual caches both fell into stopped state on hash mismatch. / Grid-restart authority lay with the HP02 site supervisor holding both the neutral dispatch table and the stop seal, and H16's torque records, though they proved the cutting threshold, could not issue layer approval. |
 
-**Life in the endless cold.** The Girder Spider builds in the cold as if spring were coming. Its welding swarms need power and its arms seize when frost gets into the joints, so it works where cable heat and live distribution boards keep the tunnels warm enough to move.
+**Life in the endless cold.** The Girder Spider builds in the cold as if the work order still had a deadline. Its welding swarms need power and its arms seize when frost gets into the joints, so it works where cable heat and live distribution boards keep the tunnels warm enough to move.
 
 **Threat and the cost of fighting.** Its unfinished structures can collapse onto shelters. A surviving machine is a high threat, because armour shrugs off ordinary rounds and the machine doesn't tire or feel the cold. Missile infantry in the anti-armour role and support teams with jammers and countermeasures do the real work; drone teams scout the line and strike controllers from above, and war machines go in only when the hull is too heavy for anything else. The bill is paid in cells, parts and fuel more than in ammunition, and a failed assault can cost a whole drone team along with the lives behind it. The salvage is the other side of the ledger: a stopped machine gives back parts, cells and sometimes implants, which is why stations argue over who gets to dismantle it.
 
@@ -703,7 +703,7 @@ It stays around northern temporary bridges and quarantine stockyards, needing pa
 
 ### Life and Maintenance
 
-When the material signal stops, it sleeps under the nearest pallet and surveys a new route each spring.
+When the material signal stops, it sleeps under the nearest pallet and surveys a new route each less-cold week.
 
 <a id="Hostile-Group-G16-heading-0167"></a>
 

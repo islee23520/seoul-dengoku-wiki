@@ -22,7 +22,7 @@ From conduit patrol to conduit bones, these were ordinary raccoons adapted to th
 | Origin | When the Jungnang, Tancheon, and inner storm-water trunks were pushed out of the inspection cycle after the collapse, raccoon family groups that had moved following aquatic food, trash, and carcasses settled in the pipelines beside the pumps of the Ttukseom Union and in the underground cable galleries of the Yeouido Investment Federation in the Mapo Union, and became the Raccoon Dog. / The range in which raccoons appeared in cities and streams could be explained by ordinary wildlife observation, but the rule of sensing the water level before the pumps was observed only in this region after the collapse. |
 | Habitat and movement | The core habitat was the pump-house connecting pipes of the Ttukseom Union and the dry refuge cavities under the workshops. / When flood stage rose they dispersed into the Mapo Union's transmission underground galleries and vents, and when a cold wave and a logistics break from the XT04 Duman River Far East Theater changed feed density they moved briefly onto the eastern branch lines. / By day they patrolled the pipes, and by night the surface alleys within 50m. |
 | Food and energy | Aquatic prey, organic refuse, and carcass remains were the main resources, and dry hiding places and low flow were the upkeep cost. / When HC04 the Ttukseom Heat-Source House skipped dredging the pipe deposits, the food film thickened and density rose, and when it over-dredged, the family groups were pushed out into the surface markets. / Droppings and biofilm masked the water-quality sensor readings and delayed pump judgment. |
-| Life cycle and upkeep | In the dry season each family group used its own dry hiding place and feeding ground, and before the rain they moved their kits into the high ventilation rooms along trunks where the water rose first. / After a flood, when the food film thickened, several families shared the same pipe by time slot, and when hiding places flooded in succession they dispersed into the surface alleys. |
+| Life cycle and upkeep | In the deep-cold weeks each family group used its own dry hiding place and feeding ground, and before the rain they moved their kits into the high ventilation rooms along trunks where the water rose first. / After a flood, when the food film thickened, several families shared the same pipe by time slot, and when hiding places flooded in succession they dispersed into the surface alleys. |
 | Senses | With their whiskers they felt the current and the air moving through narrow gaps, and through pressure changes in their feet and bodies they sensed the water rising before a pump start. / Scent separated food, disinfectant, and rot, and hearing separated the pumps from human footsteps. / H04 Gangbyeol's pipe-robot logs easily confused raccoons, floating debris, and people, so confirmation by human eye was required. |
 | Group behavior | Loose family groups and shared hiding places were all there was. / The elder females held only movement priority, and had no combat command. / Several family groups used the same trunk by time division. / When H04 summed them as a single colony, the HC04 drainage watch split them again by hiding place. |
 | Long-term adaptation | Individuals learned the pressure changes before a pump start and the safe dredging timetable. / Across generations a smaller body and a nocturnal habit favorable to pipe life could be selected, but the more they specialized for narrow pipes, the more vulnerable they became to surface crossings and cold waves. / Moving a hiding place by following a leading indicator is distinguished as family-group learning, not a genetic change. |
@@ -47,7 +47,7 @@ They read the current and the air moving through gaps with their whiskers, and f
 | [G04E06 · Biofilm Forager](/wiki/Hostile-Group-G04/#g04e06) | Common species | Pack or unit | Sensor obscuration | occupational | M006 |
 | [G04E07 · Litter-Carrier Mother](/wiki/Hostile-Group-G04/#g04e07) | Common species | Pack or unit | Transporting young | occupational | M006 |
 | [G04E08 · Shift-Change Burrow Keeper](/wiki/Hostile-Group-G04/#g04e08) | Common species | Pack or unit | Entrance shift change | first elite | M006 |
-| [G04E09 · Thaw-Path Guide](/wiki/Hostile-Group-G04/#g04e09) | Common species | Pack or unit | Guiding toward warmth | second elite | M006 |
+| [G04E09 · Melt-Path Guide](/wiki/Hostile-Group-G04/#g04e09) | Common species | Pack or unit | Guiding toward warmth | second elite | M006 |
 | [G04E10 · Dry Refuge Keeper](/wiki/Hostile-Group-G04/#g04e10) | Common species | Pack or unit | Shelter occupancy | environmental stronghold | M006 |
 | [G04E11 · Cable-Gap Dweller](/wiki/Hostile-Group-G04/#g04e11) | Common species | Pack or unit | Dry shelter | environmental stronghold | M006 |
 | [G04E12 · Pipe-Bound Youngling](/wiki/Hostile-Group-G04/#g04e12) | Common species | Pack or unit | Remaining in narrow spaces | growth stage | M006 |
@@ -104,7 +104,7 @@ When HC04 skipped dredging, the food film thickened and the density rose, and wh
 
 ### Life Cycle and Maintenance
 
-In the dry season each family used its own shelter, and at the leading pressure before rain they moved to the ventilation room.
+In the deep-cold weeks each family used its own shelter, and at the leading pressure before rain they moved to the ventilation room.
 
 When the shelters were flooded again and again, they gave up the division of time and scattered into the alleys.
 
@@ -188,7 +188,7 @@ On the basis of records of appearances in urban streams, it observed the ecologi
 
 The low-current pipes of the Ttukseom Union were its base, and when the water level rose it dispersed briefly toward the Mapo Union vents.
 
-When the density of food changed in a cold wave, it moved to the eastern branch lines, and after the thaw it came back to its familiar pipes.
+When the density of food changed in a cold wave, it moved to the eastern branch lines, and after the less-cold weeks begin it came back to its familiar pipes.
 
 <a id="Hostile-Group-G04-heading-0057"></a>
 
@@ -202,7 +202,7 @@ When dredging cleared away the food film all at once, this individual was the fi
 
 ### Life Cycle and Maintenance
 
-In the dry season it circled only its own family's feeding grounds, and after a flood the families divided the hours and used the same trunk line.
+In the deep-cold weeks it circled only its own family's feeding grounds, and after a flood the families divided the hours and used the same trunk line.
 
 A small build suited to narrow pipes could survive across generations, but it grew weaker at surface crossings and in cold waves.
 
@@ -266,7 +266,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 - Origin: After the collapse, once the inspection of the Jungnang and Tancheon trunk lines broke off, it followed aquatic food and stayed in the Ttukseom Union pump branch that people had emptied. The saying that it knew the water level before the pumps was family learning observed only in this region, not an accident of any real institution.
 - Habitat: By day it clung to the floors of slow-current pipes and the ledges beneath the manholes, and even at night it hardly went out toward the exits. When the flood level rose it only moved to a high joint of the same pipe; the Mapo Union gallery was not within this individual's daily range.
 - Needs: Small aquatic food and the microbial film on the pipe walls were its staple food, and a gentle current had to be kept for it to save swimming energy. When disinfectant flowed thick, its whiskers were dulled for several days and it lost track of where the food was.
-- Life Cycle and Maintenance: In the dry season it went back and forth along only one branch line and rubbed its whiskers to remove foreign matter. When continuous rain lifted the floor, it moved its own body to the joints first, not its young, and after the thaw it came back to the familiar low-current stretch.
+- Life Cycle and Maintenance: In the deep-cold weeks it went back and forth along only one branch line and rubbed its whiskers to remove foreign matter. When continuous rain lifted the floor, it moved its own body to the joints first, not its young, and after the less-cold weeks begin it came back to the familiar low-current stretch.
 - Behavior and Hierarchy: It gave no combat orders and stepped aside only when the elder female passed a narrow ledge. Even when the H04 Gangbyeol log marked this individual as floating debris, the HC04 drainage duty had to tell it apart again by its times of coming and going and its sleeping place.
 - Escalation: In the first stage it clung to the joints before rain and became an unofficial leading signal. In the second stage droppings piled up in the same pipe, the official water gauge read low, and it came nose to nose with the inspection robots. In the third stage the remaining low-current stretch overlapped with the footholds of the maintenance crews.
 - Engagement and Response: Poison bait and full flooding ruined the downstream along with it through rotting carcasses. If partial damming briefly lowered the current, the sensors were washed, and the detour pipes were opened, Current-Whiskers went back to its familiar floor and shortened the time for the pumps to resume.
@@ -293,7 +293,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 - Origin: It came from a family that formed a surface circuit around exit refuse and market leftovers in a year when food inside the pipes dwindled. It became the face of fears that sewage would backflow into living areas, but is not a scout for an underground army.
 - Habitat: By day it hides in dry shade below an exit ledge; at night it circles only within 50 meters of the workshop alleys of the Ttukseom Union and the alleys toward the Mapo Union transmission site. If it crosses that line, exposure to dogs and vehicles drives it straight back into the pipe.
 - Needs: Nighttime refuse and carrion are its staples; it needs a dry ledge with an unblocked exit to maintain its circuit. If dredging lifts the exit all at once, the circuit extends deeper into the market.
-- Life and maintenance: If the pads on its feet crack, it stays off the surface for a while and waits for leftovers on the ledge. When alleys freeze in a cold wave, it folds its circuit and stays inside the entrance; on the first thawed night, it steps on the same corner again to check its route.
+- Life and maintenance: If the pads on its feet crack, it stays off the surface for a while and waits for leftovers on the ledge. When alleys freeze in a cold wave, it folds its circuit and stays inside the entrance; on the first less-cold night, it steps on the same corner again to check its route.
 - Behavior and hierarchy: It shares emergence times with the family that uses the same exit; who goes first is decided after the elder female passes. It forms no combat formation and breaks off its circuit midway when boot sounds approach.
 - Escalation: At stage 1, it leaves only footprints at an alley corner. At stage 2, the dredging window overlaps the access time and two families emerge into the market together. At stage 3, repeated flooding of the exit breaks the 50-meter rule and pushes it into passageways.
 - Engagement and response: Limiting nighttime surface passage to within 50 meters of the exit and opening an alternative dry ledge reduces market intrusion. Poison bait endangers alley dogs and sanitation workers alike; success is measured by zero surface bite injuries.
@@ -320,7 +320,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 - Origin: This is the result of a family that survived repeated dredging noise learning a safe timetable. It did not inherit a clock; it remembers how an individual that saw a missed window become a death site taught the others the vibration rhythm.
 - Habitat: It moves between the Ttukseom Union main branch visited by dredging equipment and the vacant branch entrance beside it. By day, when there is no construction, it sleeps at that entrance; when vibrations begin, it briefly moves toward the Mapo Union.
 - Needs: Organic sediment and aquatic leftovers accumulated between dredgings make its feeding calendar. If the schedule is unexpectedly advanced, food and hiding places disappear together.
-- Life and maintenance: After memorizing one season's vibration cycle, it tests the first equipment of the next season by avoiding it. After three exposures to an incorrect rhythm, it abandons that main; returning requires a quiet night after the thaw.
+- Life and maintenance: After memorizing one season's vibration cycle, it tests the first equipment of the next season by avoiding it. After three exposures to an incorrect rhythm, it abandons that main; returning requires a quiet night after the less-cold weeks begin.
 - Behavior and hierarchy: It gives no combat orders to other families. But if it vacates a branch first, families using the same time window read that absence. Even if H04 counts several movement points as one colony, the Dredging-Time Keeper's access times must be logged separately.
 - Escalation: At stage 1, it appears only as a branch emptying before equipment enters. At stage 2, nighttime dredging overlaps with rotational hiding, pushing two families above ground. At stage 3, equipment is concentrated into one window regardless of the timetable, breaking the shared rules.
 - Engagement and response: Dividing dredging into two sections and keeping vibration warnings on the same rhythm lets this individual retreat to a branch. Concentrated dredging is faster but increases simultaneous appearances during later rain.
@@ -411,7 +411,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 <a id="Hostile-Group-G04-heading-0102"></a>
 <a id="g04e09"></a>
 
-### G04E09 · Thaw-Path Guide
+### G04E09 · Melt-Path Guide
 
 - Source batch: M006
 - Former role class: second elite
@@ -422,17 +422,17 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 | Type | Common species |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Guiding toward warmth |
-| Common species, variants and command scope | During an XT04 cold snap, the thaw-path guide uses its paw pads and whiskers to find an unfrozen passage first. It cannot summon other families, but several follow it onto the dry ledge where it stops. |
+| Common species, variants and command scope | During an XT04 cold snap, the telt-path guide uses its paw pads and whiskers to find an unfrozen passage first. It cannot summon other families, but several follow it onto the dry ledge where it stops. |
 
 - Role and body: The sewer raccoon clan's second elite, it uses its paw pads and whiskers to distinguish ice from residual warmth on pipe walls and find an unfrozen passage first during an XT04 cold snap. It cannot summon other families, but several follow it onto the dry ledge where it stops. Its surface crossings are brief and clumsy.
 - Origin: During a winter when cold from the Tumen River–Far East theater and a logistics disruption changed the distribution of feed, an animal that survived when only an unfrozen pump access route remained passed its memory of warmth on through family learning. It has no history of claiming to be a commander.
-- Habitat: During cold-snap weeks, it moves between the residual heating in the Mapo Union Yeouido Investment Federation's underground gallery and the dry access route to the Ttukseom Union pump room. When thawing begins, it returns along the eastern branch line as though guiding others back to a familiar pipe.
+- Habitat: During cold-snap weeks, it moves between the residual heating in the Mapo Union Yeouido Investment Federation's underground gallery and the dry access route to the Ttukseom Union pump room. When the less-cold weeks begin, it returns along the eastern branch line as though guiding others back to a familiar pipe.
 - Needs: Unfrozen ground and a little residual heat are central to its survival; it chooses dry space before food. Cutting the gallery's heat brings three families together on a single pump access route.
-- Life cycle and upkeep: When cracks in its paw pads deepen, it becomes slower to detect ice and spends a season on the branch line alone. The first warm water after the thaw offers a chance to wash its wounds, but if it arrives too quickly, it floods the access route again.
+- Life cycle and upkeep: When cracks in its paw pads deepen, it becomes slower to detect ice and spends a season on the branch line alone. The first warm water after the less-cold weeks begin offers a chance to wash its wounds, but if it arrives too quickly, it floods the access route again.
 - Behavior and hierarchy: What looks like leading is a search for warmth, not an order. It yields its route when an elder female moves her young. Even if H04 merges them into one heat spot, HC04 records the number of families and their entry and exit times separately.
 - Escalation: At stage 1, tracks appear first toward the gallery. At stage 2, diminished residual heat causes their use of the access route to overlap. At stage 3, three families block the only dry passage to the pumps, stopping maintenance.
 - Engagement and response: Temporarily opening a heated shelter pipe and restricting nighttime surface travel disperses their routes. Poisoned bait and flooding add bodies that have frozen to death. A temporary external inspection platform permits maintenance without clearing the passage, but the work crew bears the risk of falling in the cold snap.
-- Negotiation and moral choice: Opening part of the gallery's heating as shared shelter requires other Mapo Union facilities to give up power. Postponing pump inspection avoids a clash but increases flood risk during a thaw or sudden rain. Whether to use the guide's memory of warmth as an official detour hinges on the inability to secure both city drainage and nonhuman refuge at once.
+- Negotiation and moral choice: Opening part of the gallery's heating as shared shelter requires other Mapo Union facilities to give up power. Postponing pump inspection avoids a clash but increases flood risk during a meltwater pulse or a sudden flood. Whether to use the guide's memory of warmth as an official detour hinges on the inability to secure both city drainage and nonhuman refuge at once.
 - Scenario connection: In G04-SC3, ‘The Dry Passage to the Pump Room,’ three families converge on the access route where this animal first stops.
 
 <a id="Hostile-Group-G04-heading-0106"></a>
@@ -452,7 +452,7 @@ In G04-SC1 it made the density of the alarm as an ordinary individual climbing t
 | Common species, variants and command scope | The dry refuge keeper braces its shoulders inside the dry refuge chamber beneath the Ttukseom Union pump station, filling the space so other families cannot enter all at once. It is not a fixed command post but an animal guarding dry storage space with a low current. |
 
 - Role and body: An environmental-stronghold form of the Raccoon Dog, this burrow keeper has settled into the dry refuge chamber beneath the pump station of the Ttukseom Union, where its body fits closely. Its shoulders catch against a ceiling joint, physically filling the chamber so other families cannot enter all at once. It senses airflow with its flanks more than with its whiskers.
-- Origin: A family that used a refuge chamber vacated by people as a dry-season sleeping place refused to give up the dry space even after sending its young to the high ventilation room during a flood, producing this stronghold animal. The chamber is not a fixed command post but dry, low-current storage space.
+- Origin: A family that used a refuge chamber vacated by people as a deep-cold sleeping place refused to give up the dry space even after sending its young to the high ventilation room during a flood, producing this stronghold animal. The chamber is not a fixed command post but dry, low-current storage space.
 - Habitat: Its entire range is the dry shelf inside the refuge chamber and the ledge at its entrance. When the water rises above the entrance, it gives up the chamber and moves to the ventilation room. During a cold snap, the chamber adjoins the only unfrozen pump access route, putting it in the same space as maintenance workers.
 - Needs: Staying dry itself saves energy, and it survives on the small amount of scraps washed into the chamber. Converting the chamber into a human-only inspection route shifts the cost of losing its stronghold onto the surface alleys.
 - Life cycle and upkeep: It times its entries and exits by how long its fur takes to dry, and scrapes away floor dirt if dampness persists for more than two days. If the entrance floods repeatedly, it abandons the stronghold and folds the sharing arrangement.
@@ -536,7 +536,7 @@ The core habitat was the low-velocity pipelines and dry shelters beside the Ttuk
 
 When rain continued and the water rose, the families moved their young to the high ventilation rooms and then dispersed into the transmission galleries and ventilation shafts of the Mapo Union.
 
-When cold snaps and logistics breakdowns struck from the direction of the XT04 Duman River Far East Theater and changed the distribution of feed and waste, they moved briefly to the eastern branch lines and returned to their familiar pipes after the thaw.
+When cold snaps and logistics breakdowns struck from the direction of the XT04 Duman River Far East Theater and changed the distribution of feed and waste, they moved briefly to the eastern branch lines and returned to their familiar pipes after the less-cold weeks begin.
 
 Aquatic food, organic trash, carcasses, and microbial mats became their food, and dry shelters and gentle currents lowered the cost of survival.
 
@@ -546,7 +546,7 @@ Droppings and microbial mats covered the water-quality sensors and slowed even t
 
 The Raccoon Dog had no fixed leader.
 
-In the dry season each family used its own feeding ground and dry shelter, and when several families used the same trunk they divided the hours.
+In the deep-cold weeks each family used its own feeding ground and dry shelter, and when several families used the same trunk they divided the hours.
 
 The elder female only held priority in moving the young and at narrow passing points, and gave no battle orders to other families.
 
@@ -612,7 +612,7 @@ G04-SC3 ‘The Dry Passage of the Pump Room’ was the stage at which, in the XT
 
 Providing heated alternative shelter pipes could clear the inspection route and disperse the families, but power rations fell and the Mapo Union's other facilities had to endure the cold.
 
-Putting off pump inspection avoided the immediate clash but increased the risk of flooding at thaw or in a sudden rain.
+Putting off pump inspection avoided the immediate clash but increased the risk of flooding in a meltwater pulse or in a sudden rain.
 
 Installing temporary external inspection platforms allowed maintenance without clearing the pipes, but the work crew had to bear the labor of installation in the cold and the risk of falls.
 
@@ -636,7 +636,7 @@ So that this agreement would not remain a one-time truce, later management harde
 
 The Ttukseom Union and XT04 measured water level, flow velocity, dissolved oxygen, turbidity, and ammoniacal nitrogen every week, the Mapo Union recorded monthly traces of illegal discharge and the weight of floating waste, and HC04 and H04 disclosed together every quarter the number of animals, survival of the young, rates of skin and respiratory abnormalities, passage use, the number of resident reports, and response times.
 
-The standards were set at no more than 1 rainy-season backflow a month, at least 95 percent operation of the main passages, a decrease in the share of injured animals from the previous year, and initial response to emergency reports within 30 minutes.
+The standards were set at no more than 1 meltwater backflow a month, at least 95 percent operation of the main passages, a decrease in the share of injured animals from the previous year, and initial response to emergency reports within 30 minutes.
 
 When the standards were missed twice in a row, the alarm network automatically moved up a stage, and after temporary embankments, cutting off pollution sources, moving vulnerable animals, and independent sample retests were carried out in order, only the section at fault was closed on a limited basis.
 

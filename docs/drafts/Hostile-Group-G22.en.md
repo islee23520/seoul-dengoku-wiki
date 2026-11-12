@@ -11,7 +11,7 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 The Flame Lantern carries a blue flame on the wet steel plate of the preservation-vault outer wall, on the siding cars, and at the tips of the spent-battery crystals. The flame is in front of the work lamp and floats low over the steam of the drainage channel. The person, with the flame attached, stands toward the rail and the wall or lies prone on the train roof.
 
-Dokkaebi Fire is the several blue flames floating at the top of the outer wall. Bulgwisin is the person standing on the siding step below, with flame come out past the clothes. Hwama is the form lying prone on the grain-train roof, with the flame of the back laid over the row of cars. The three continue from the preservation-vault outer wall to the Seongha Group siding on the same late-rainy-season night.
+Dokkaebi Fire is the several blue flames floating at the top of the outer wall. Bulgwisin is the person standing on the siding step below, with flame come out past the clothes. Hwama is the form lying prone on the grain-train roof, with the flame of the back laid over the row of cars. The three continue from the preservation-vault outer wall to the Seongha Group siding on the same tail of the meltwater pulse night.
 
 <a id="Hostile-Group-G22-heading-0006"></a>
 
@@ -19,7 +19,7 @@ Dokkaebi Fire is the several blue flames floating at the top of the outer wall. 
 
 | Item | Record |
 |---|---|
-| Origin | The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Changdong Wheel Chamber held water in the same rainy season. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named. |
+| Origin | The failed-dehumidifying stretch under the Government of the Republic of Korea and the temporary spent-battery yard of the Changdong Wheel Chamber held water in the same meltwater pulse. Electrolyte crystals stand as metal branches on the steel plate beside the battery boxes, and flame catches at the branch tips. No particular battery or chemical corporation is named. |
 | Habitat and movement | The outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station is where the flame stays. In weeks when yard inspection is late, the flame is at the Seongha Group siding yard on the Gangnam Line. Condensate beads on the roofs of the humid grain trains from the West Sea Granary Theater, and the flame continues beside that condensate. |
 | Food and energy | Spent-battery boxes from the Changdong Wheel Chamber sit in the front row of the siding yard. Grain sacks of the West Sea Granary Theater have been moved off the rail from the car where the flame rests. Burned sack cords float on the drainage water. The Seongha Group yard ledger lies open in the breaker hut, and the car numbers are marked in pencil. |
 | Life cycle and upkeep | The person who was striking the outer-wall steel plate stands before the same plate. A blue flame is fixed on the back of the hand that was striking. The knees are toward the drainage channel at the foot of the wall, and the flame at the shoulder is in front of the work lamp. |
@@ -114,7 +114,7 @@ Dokkaebi Fire is at the top of the outer wall of the underground preservation va
 
 ## Habitat record
 
-The outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station and the Seongha Group siding of the Gangnam Line meet at the drainage corner. It is a night in the late rainy season. The Seongha Group siding yard duty is in the breaker hut. Water runs on the steel plate of the outer wall. The grain train of the West Sea Granary Theater stands on the siding, and condensate beads on the roofs. Spent-battery boxes from the Changdong Wheel Chamber lean toward the drainage channel, and blue flame spits at the tips of the white crystals.
+The outer wall of the underground preservation vault of the Government of the Republic of Korea at central Seoul Station and the Seongha Group siding of the Gangnam Line meet at the drainage corner. It is a night in the tail of the meltwater pulse. The Seongha Group siding yard duty is in the breaker hut. Water runs on the steel plate of the outer wall. The grain train of the West Sea Granary Theater stands on the siding, and condensate beads on the roofs. Spent-battery boxes from the Changdong Wheel Chamber lean toward the drainage channel, and blue flame spits at the tips of the white crystals.
 
 Dokkaebi Fire floats at the top of the outer wall. The flames are blue and several, and one is low over the steam of the drainage channel. When the yard duty's work lamp lights the steel plate of a corner, the flame is already at the next corner. A person's shoulder and hand are inside the largest flame, and the fingertips are bright. The lower side of the flame is toward the wet steel plate and the steam of the car roofs. The place the palms face is the face of the spent-battery boxes where the white crystals stand.
 

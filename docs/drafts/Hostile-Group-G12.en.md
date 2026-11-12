@@ -19,10 +19,10 @@ The branches are posts inside the one group of Sinnae Deserters. The Deserter Sq
 
 | Item | Record |
 |---|---|
-| Origin | The Sinnae Transport freight duty first sees this group on a midsummer night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization. |
+| Origin | The Sinnae Transport freight duty first sees this group on a blizzard-week night in the dust passage of the Sinnae freight elevator. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The insignia on the shoulders are the insignia of a national military organization. |
 | Habitat and movement | The place where the group gathers is the dust passage of the Sinnae freight elevator. On the water-wash cycle and the purification backwash schedule they stand before the Yeouido water-filter gallery hatch. On days when dust comes in from the West Sea Granary docks they stand at the outer-passage entrance. In front of the fully sealed clean section they remain on the entrance side, and the inside of the section is the duty's place. |
 | Food and energy | Ammunition boxes, combat-ration tins, water cans, spare combat uniforms, and radio batteries lie between the freight elevator car and the filter gallery. The Sinnae Transport freight list is at the end of the table, and lines are drawn in its quantity columns. The Sluice water-supply duty's gallery water cans are in the same car. A tool box from the Geumcheon District Office Machinery House is open beside the lift panel. The Ichaeon duty's box is beside the radio. |
-| Life cycle and upkeep | On a midsummer night a few soldiers stand at the passage corner. In the early-autumn wash cycle more soldiers wearing the same unit insignia, and more wooden boxes, are in the elevator car. At dawn while the backwash runs, the group is divided between the landing and the front of the Yeouido water-filter gallery hatch. |
+| Life cycle and upkeep | On a blizzard-week night a few soldiers stand at the passage corner. In the convoy-season wash cycle more soldiers wearing the same unit insignia, and more wooden boxes, are in the elevator car. At dawn while the backwash runs, the group is divided between the landing and the front of the Yeouido water-filter gallery hatch. |
 | Senses | The Sinnae Deserters watch the threshold of the Sinnae freight-elevator dust passage and the hatch of the Yeouido water-filter gallery. The soldier at the threshold faces the Sinnae Transport freight car, and the soldier at the hatch faces the Sluice backwash piping. When dust from the West Sea Granary docks piles in the outer passage, the Deserter Scouts at the entrance face the dock side. |
 | Group behavior | The Deserter Squad Leader is in front of the radio on the landing table. The Deserter Elite Squad is at the rail and the elevator door. The Deserter Scouts are at the dust-passage entrance and at the Yeouido water-filter gallery hatch. Ammunition boxes and water cans are at the squad leader's feet, and magazines are at the Deserter Elite Squad's hands. |
 
@@ -115,7 +115,7 @@ Command is with the Deserter Squad Leader on the landing of the Sinnae freight e
 
 ## Habitat record
 
-On a midsummer night, in the dust passage of the Sinnae freight elevator, the Sinnae Transport freight duty sees the Sinnae Deserters. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The shoulder insignia are the insignia of a national military organization. The freight duty is inside the threshold.
+On a blizzard-week night, in the dust passage of the Sinnae freight elevator, the Sinnae Transport freight duty sees the Sinnae Deserters. Several soldiers in combat uniforms stand in the passage. Rifles are on their shoulders. Ammunition boxes and water cans are at their feet. The shoulder insignia are the insignia of a national military organization. The freight duty is inside the threshold.
 
 The Deserter Squad Leader is in front of the radio on the landing table. The Deserter Elite Squad is at the rail and the elevator door. The Deserter Scouts are at the dust-passage entrance and at the Yeouido water-filter gallery hatch. Ammunition boxes and water cans are at the squad leader's feet. Magazines are at the Deserter Elite Squad's hands.
 
@@ -140,7 +140,7 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 ### G12-SC1 · Dust-passage landing
 
 - Stage: 1
-- Trigger: On a midsummer night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon District Office Machinery House is on. The Ichaeon duty's box is on the landing table.
+- Trigger: On a blizzard-week night the Sinnae Deserters stand with ammunition boxes in the dust passage of the Sinnae freight elevator. The lift panel of the Geumcheon District Office Machinery House is on. The Ichaeon duty's box is on the landing table.
 - Actors: government, HC12, H12
 - Ecological mechanism: The freight car, the lift panel, and the Ichaeon box are on one landing. The Deserter Squad Leader is in front of the radio. The Deserter Elite Squad is at the rail. The Sinnae Transport freight duty is at the threshold.
 - Choices: The Sinnae Transport freight duty stacks freight cages at the car entrance. / The Geumcheon District Office Machinery House machine duty puts the lift-panel breaker down. / The Ichaeon duty moves the box to the desk in the clean section.
@@ -153,7 +153,7 @@ The Sinnae Transport freight duty keeps the elevator door shut and the freight p
 ### G12-SC2 · The hatch at the backwash hour
 
 - Stage: 2
-- Trigger: At an early-autumn dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon District Office Machinery House to that car.
+- Trigger: At a convoy-season dawn the backwash runs in the Yeouido water-filter gallery. The Deserter Scouts are in front of the hatch. The Sinnae freight elevator car is in the dust passage below. A power line runs from the lift panel of the Geumcheon District Office Machinery House to that car.
 - Actors: government, free-city, HC12
 - Ecological mechanism: The wash cycle and the backwash schedule overlap on the same dawn. The Sluice water-supply duty is in front of the valve. The Sinnae Transport freight duty is beside the car. The Geumcheon District Office Machinery House machine duty is in front of the panel.
 - Choices: The Sluice water-supply duty locks the backwash valve at the hour on the schedule. / The Sinnae Transport freight duty fixes the freight car on the dust-passage level. / The Geumcheon District Office Machinery House machine duty separates the gallery auxiliary power from the lift panel.

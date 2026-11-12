@@ -22,7 +22,7 @@ The base form of the Large-billed Crow is a wild bird that moves by the sound sh
 | Origin | After breeding pairs settled on the factory pylons of the Daerim–Garibong Korean-Chinese corridor and the cables of the Han River bridges, the Large-billed Crow formed as the waste heat of the Yeongdeungpo Line Gauge factories and the sparks of the Guro industrial-park trolley wires gathered night insects. / The breeding-season territorial behavior of large-billed crows and the range of human responses could be explained by ordinary wildlife observation, but the rule by which they learned signal interference as alarms and spread it was observed only in this region after the collapse. |
 | Habitat and movement | The core habitat is the group of factory roofs and pylons at Daerim and Guro on the Yeongdeungpo Line. / Arc 1 sits on top of the Daerim and Garibong Joseonjok corridor, and in the breeding season the flock circles over bridges, school passages, and evacuation stairs. / In the non-breeding season, matching the sea wind and the insect density pushed in from the West Sea Granary Theater (XT02), it moves for a time to the western waterfront. / When wire-repair work begins, part of the band moves along the work basket. |
 | Food and energy | The food is insects, leftover market protein, and small carcasses, and for nest material they pick fine wire with the sheath stripped and fiber scrap. / The shorter the cycle on which the Sinjeong Wheel House (HC02) replaces wire sheathing, the less nest material there is and the more territorial attacks increase, and leaving the sheathing untended increases the risk of a short. / The cycle in which droppings contaminate the insulators connects directly to communications uptime. |
-| Life cycle and upkeep | In spring a breeding pair defends one pylon, and in the non-breeding season several families join a communal roost. / Repeated safety signals and food rewards, more than nest success, decide the return site the next year, and after a forced removal the young individuals test a new roost on the adjacent school route. |
+| Life cycle and upkeep | In the less-cold weeks a breeding pair defends one pylon, and in the non-breeding season several families join a communal roost. / Repeated safety signals and food rewards, more than nest success, decide the return site the next year, and after a forced removal the young individuals test a new roost on the adjacent school route. |
 | Senses | By sight they read helmets, rods, and flashlight reflections, and by hearing they distinguish the order of high-voltage noise, horns, and the crying of infants. / They do not decipher the content of an electronic signal; they connect the sounds of sparks and transformers to the appearance of insects and workers as a cue. / Seorin (H02) records the source of a sound shape and the number of repetitions, but whether it is a real alarm is checked by a person against the marks on site. |
 | Group behavior | A breeding pair divides nest defense and the carrying of food, and the young helper individuals join the alarm calls and the dives. / A communal roost in the non-breeding season shares only sound shapes and has no command structure. / H02 records nest radius, flight direction, and call order separately, and the human control officer of HC02 decides only whether to stop the work. / When one breeding individual disappears, the adjacent pair tests the empty roost and territorial collisions increase. |
 | Long-term adaptation | Sound shapes repeated like three horns, two inspection bells, and a steady transformer start-up are socially learned as food and danger signals and spread at the communal roost. / When the signal changes, false alarms increase for several days, and the flock learns again through a new reward rule. / No genetic change is set, and the more specialized they become in a familiar sound shape, the later they react to an unfamiliar real alarm. |
@@ -35,7 +35,7 @@ The base form of the Large-billed Crow is a wild bird that moves by the sound sh
 
 ## Individuals and battlefield formation
 
-Only the spring breeding pairs divide and hold the upper and lower parts of one tower, and a non-breeding roost has no commander. They read helmet outlines, rod angles, and flashlight reflections with the eye, and they separate high-voltage noise and the order of horns by ear. The name sovereign is closer to a nickname for the breeding pair that gathers horn imitations, and when one side empties, the adjacent pair only tests the empty place.
+Only the less-cold breeding pairs divide and hold the upper and lower parts of one tower, and a non-breeding roost has no commander. They read helmet outlines, rod angles, and flashlight reflections with the eye, and they separate high-voltage noise and the order of horns by ear. The name sovereign is closer to a nickname for the breeding pair that gathers horn imitations, and when one side empties, the adjacent pair only tests the empty place.
 
 | Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
 |---|---|---|---|---|---|
@@ -276,7 +276,7 @@ The dive collapsed into a glide before the concrete joint, and the tip of the be
 
 ### Negotiation and Moral Choice
 
-On the roof where the horns of G02-SC1 called up the expectation of food, the bridge team and the Haeryun Mobile Gate left only a single lane as a dive corridor. Fixing the corridor until spring breeding kept the walkway open but made the work basket avoid that lane, and removing the lane meant the nest radius was redrawn only in the next breeding season. The corridor disappeared only when the two parties took down the markers together.
+On the roof where the horns of G02-SC1 called up the expectation of food, the bridge team and the Haeryun Mobile Gate left only a single lane as a dive corridor. Fixing the corridor until less-cold breeding kept the walkway open but made the work basket avoid that lane, and removing the lane meant the nest radius was redrawn only in the next breeding season. The corridor disappeared only when the two parties took down the markers together.
 
 <a id="Hostile-Group-G02-heading-0078"></a>
 
@@ -386,7 +386,7 @@ In the roof gutters of the Gauge factories on the Yeongdeungpo Line lived a weav
 
 ### Origin
 
-In the spring when the Sinjeong Wheel House stripped the wire sheathing all at once, the scraps piled up in the roof gutters, and one individual began winding, remembering only the feel of copper and the elasticity of fiber. Unable to read the content of the radio waves, it kept only the pairing of glitter and softness, and that habit hardened into weaving labor.
+In the less-cold weeks when the Sinjeong Wheel House stripped the wire sheathing all at once, the scraps piled up in the roof gutters, and one individual began winding, remembering only the feel of copper and the elasticity of fiber. Unable to read the content of the radio waves, it kept only the pairing of glitter and softness, and that habit hardened into weaving labor.
 
 <a id="Hostile-Group-G02-heading-0110"></a>
 
@@ -544,7 +544,7 @@ When the cycle of droppings fouling the insulators touched on communication time
 
 ### Habitat
 
-It clung to the southern arm, where the daytime sun warmed the caps, and on rainy nights it moved briefly to the warm exhaust vents on the factory roofs. The insulators at the overhead-wire crossings of the Wangsimni Union's railway shook too much to sit on for long, and in weeks of strong sea wind the porcelain sleeves of the bridge cables became substitute seats.
+It clung to the southern arm, where the daytime sun warmed the caps, and on meltwater nights it moved briefly to the warm exhaust vents on the factory roofs. The insulators at the overhead-wire crossings of the Wangsimni Union's railway shook too much to sit on for long, and in weeks of strong sea wind the porcelain sleeves of the bridge cables became substitute seats.
 
 <a id="Hostile-Group-G02-heading-0158"></a>
 
@@ -608,7 +608,7 @@ In G02-SC2, the entrance to the false outage opened at the moment the film-thick
 
 ### Role and Body
 
-In spring, the bodies of a breeding pair that split one tower into upper and lower halves to guard it made the radius. The male on the upper level read helmet outlines first and the female on the lower level read the angle of poles first, and dives from two directions went for the edge of the work basket at the same time.
+In the less-cold weeks, the bodies of a breeding pair that split one tower into upper and lower halves to guard it made the radius. The male on the upper level read helmet outlines first and the female on the lower level read the angle of poles first, and dives from two directions went for the edge of the work basket at the same time.
 
 <a id="Hostile-Group-G02-heading-0177"></a>
 
@@ -620,7 +620,7 @@ On top of the territorial defense that large-billed crows kept in the breeding s
 
 ### Habitat
 
-The spring radius was fixed to the upper and lower arms of the factory-roof towers, and outside the breeding season the division came loose and joined the communal roost. The skies over the bridge and the school passage were only patrolled, never nested, and when a helmet entered the radius, the patrol stopped and returned to the tower.
+The breeding radius was fixed to the upper and lower arms of the factory-roof towers, and outside the breeding season the division came loose and joined the communal roost. The skies over the bridge and the school passage were only patrolled, never nested, and when a helmet entered the radius, the patrol stopped and returned to the tower.
 
 <a id="Hostile-Group-G02-heading-0181"></a>
 
@@ -656,7 +656,7 @@ While the breeding pair guarded the upper and lower tower at once, a helmet outl
 
 ### Negotiation and Moral Choice
 
-Within the spring radius, the Haeryun Mobile Gate reduced the work baskets to a single line and in return recognized the breeding pair's upper seat. If the new horn pattern of G02-SC1 was read as food within the radius, that recognition slowed the basket by a day. Pushing the seat aside meant that recognition did not come back until the next breeding season, and the scalps of the helmeted workers paid the price first.
+Within the breeding radius, the Haeryun Mobile Gate reduced the work baskets to a single line and in return recognized the breeding pair's upper seat. If the new horn pattern of G02-SC1 was read as food within the radius, that recognition slowed the basket by a day. Pushing the seat aside meant that recognition did not come back until the next breeding season, and the scalps of the helmeted workers paid the price first.
 
 <a id="Hostile-Group-G02-heading-0193"></a>
 
@@ -1164,7 +1164,7 @@ Its food was night insects, leftover protein from the markets, and small carcass
 
 ### Life Cycle and Maintenance
 
-In spring the breeding pairs divided one arc of the circle each to guard, and outside the breeding season several families joined. When its feathers were damaged by the sea wind, the imitation split and false alarms grew, and in the year after a demolition the circle gathered faster at the sound of the same inspection bell alone.
+In the less-cold weeks the breeding pairs divided one arc of the circle each to guard, and outside the breeding season several families joined. When its feathers were damaged by the sea wind, the imitation split and false alarms grew, and in the year after a demolition the circle gathered faster at the sound of the same inspection bell alone.
 
 <a id="Hostile-Group-G02-heading-0346"></a>
 
@@ -1290,7 +1290,7 @@ They only remembered the relationships repeated among sparks, sounds, and the ap
 
 The core territory was the factory roofs and pylon clusters of the Yeongdeungpo Line and the rail overhead-wire junctions of the Wangsimni Union.
 
-In the spring breeding season they circled in rings centered on their nests above the bridges, school passages, and evacuation stairs, and dived when a helmet or a long pole came within the radius.
+In the less-cold breeding weeks they circled in rings centered on their nests above the bridges, school passages, and evacuation stairs, and dived when a helmet or a long pole came within the radius.
 
 In the non-breeding season several families joined the communal roosts, and moved briefly to the western waterfront following the sea wind from the XT02 West Sea Granary Theater and the density of insects.
 
@@ -1308,7 +1308,7 @@ When droppings built up on the insulators, transmission uptime fell, and when ma
 
 Because the benefit to one zone that drove the crows out moved on as danger to other bridges and residential alleys, simple removal alone could not erase the cost.
 
-In spring the breeding pairs divided a single pylon between them to guard.
+In the less-cold weeks the breeding pairs divided a single pylon between them to guard.
 
 While one bird defended the nest and chicks, the other carried food, and young helpers joined in the alarm calls and dives.
 

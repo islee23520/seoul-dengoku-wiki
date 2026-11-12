@@ -20,14 +20,14 @@ An ordinary flood boar does not leave the family-group ecology even when it wrap
 | Item | Record |
 |---|---|
 | Origin | Right after the collapse, when the flooding of the western Han River cut the green axis outside the Yeouido and Yeongdeungpo sluices, wild boar herds that came down from the Bukhansan and Anyangcheon corridors settled at the food-waste collection yards on the edge of the Sluice. / Urban incursions, food sources, and blocked movement could be explained by ordinary wildlife observation, but the behavior of learning the sealing hours and the relationship with HC01 were observed only in this region after the collapse. / The cooling-waste heaps sealed by HC01 Yeouido Computing House came to serve the wild boar as a winter salt source. |
-| Habitat and movement | The core habitat was the wetland and waste slopes outside the sluices of the Sluice. / In the dry season and winter they moved along the green fragments toward the Government of the Republic of Korea at central Seoul Station and along the axis of night-market leftovers, and the northwestern edge stirred in response to the food traces of the refugee columns pushed down from the XT01 Imjin River Gate Theater. / When the flood level crossed the sluice warning line, the herd was pushed up the upland stairs step by step and cut across the walkways. |
+| Habitat and movement | The core habitat was the wetland and waste slopes outside the sluices of the Sluice. / In the deep-cold weeks they moved along the green fragments toward the Government of the Republic of Korea at central Seoul Station and along the axis of night-market leftovers, and the northwestern edge stirred in response to the food traces of the refugee columns pushed down from the XT01 Imjin River Gate Theater. / When the flood level crossed the sluice warning line, the herd was pushed up the upland stairs step by step and cut across the walkways. |
 | Food and energy | The main resources are organic scraps, salt, and shallow-rooted crops, and as secondary resources they use the soft plastic of flood debris and the pools of cooling water. / When the HC01 recovery trough delays the scrap-sealing cycle, the band's density rises, and when the seal is drawn too tight the band diverts to household-alley scraps. / The energy cycle runs from feeding to dung to the wetland microbial film, and unsanctioned hunting for meat and hide, instead of a short-term gain, makes the remaining band more aggressive. |
-| Life cycle and upkeep | Before the monsoon rains, family groups split by sow scatter and scout the feeding grounds, and right after a flood they join the high-ground scrap axis for a time. / A family group splits only when the survival rate of the young stays high for two seasons in a row, and when the winter salt sources and the mud baths shrink they choose long-distance movement over breeding. |
+| Life cycle and upkeep | Before the meltwater pulse, family groups split by sow scatter and scout the feeding grounds, and right after a flood they join the high-ground scrap axis for a time. / A family group splits only when the survival rate of the young stays high for two seasons in a row, and when the winter salt sources and the mud baths shrink they choose long-distance movement over breeding. |
 | Senses | They read together the low-frequency vibration of sluice opening and closing and of vehicles, carried through the hooves, and the smells of scraps, people, and disinfectant, and at close range they react to warmth carried on the wind and to the flow of air. / They cannot distinguish a distant heat source or decipher electronic noise. / Only Hannuri's (H01) infrared observation compares the heat sources of people, generators, and wild boars, and on days of heavy rain, wind, and cooling fog a person reads the family groups and the lone individuals again. |
 | Group behavior | One adult female with young starts the move first, and the subadults scout the feeding ground and the escape route ahead. / Lone males overlap the band only loosely and do not follow the decision to move. / H01 marks the central individual of a family group and the lone males as separate heat-source clusters, and when the central female disappears the group tracks the young's scent for 48 hours and then disperses by family. |
 | Long-term adaptation | Over a short span they learn the positions of fences and the sealing hours, but that memory is not treated as a genetic change. / Across many generations nocturnal activity and avoidance of people can be selected, but heavy capture removes the bold individuals first and causes a reverse selection in which the more secretive individuals remain. / The more secretive they become, the longer the search for a feeding ground takes, and the growth rate of the young falls. |
 
-**Life in the endless cold.** Wild boar live by the warmth people leave behind. With no growing season, they root under snow at heated waste heaps and dig for the salt of cooling-water pools; a herd follows the plume of a station vent the way it once followed a stream. The old words for the rains and the dry season now name the pulse of meltwater from heated stations and the frozen weeks between them.
+**Life in the endless cold.** Wild boar live by the warmth people leave behind. With no growing season, they root under snow at heated waste heaps and dig for the salt of cooling-water pools; a herd follows the plume of a station vent the way it once followed a stream. Its year runs on the pulse of meltwater from heated stations and the deep-cold weeks between them.
 
 **Threat and the cost of fighting.** A herd on a heated slope can break a fence line in one night. This is a low threat by the standards of the stations, and the doctrine is to spend as little as possible on it. Support teams with nets, fences and bait carry most of the work, and missile infantry fire only when a crossing has to be cleared. Recon drone teams are flown on a short leash to read heat on the surface, because every charge drawn from the cells in the cold is hard to replace. War machines are never sent, since the fuel they burn costs more than the animals are worth. The real costs are rounds that miss in the dark, bites that need medicine, and the hours of the people on the fence; lives are seldom lost unless a patrol is cut off in the snow.
 
@@ -88,7 +88,7 @@ A mutant born in the polluted wetlands swept by the G01-SC1 Great Flood took com
 
 ### Habitat
 
-It settled deep in the sewer tunnels connected to the flooded zone south of Seoul Station. Only during the monsoon rains, when the waters rose, did it surface to scout the surroundings.
+It settled deep in the sewer tunnels connected to the flooded zone south of Seoul Station. Only during the meltwater pulse, when the waters rose, did it surface to scout the surroundings.
 
 <a id="Hostile-Group-G01-heading-0020"></a>
 
@@ -848,7 +848,7 @@ After the first hoofprint of G01-SC1 was stamped at the collection yard, sow fam
 
 ### Habitat
 
-It was rooted in the lowest slope of the flood zone and drew in water with a breath that matched the opening-and-closing cycle. In the dry season it held out by licking the salt layer inside, and in monsoon weeks its face pushed outward a handspan at a time, narrowing the drainage channel.
+It was rooted in the lowest slope of the flood zone and drew in water with a breath that matched the opening-and-closing cycle. In the deep-cold weeks it held out by licking the salt layer inside, and in meltwater weeks its face pushed outward a handspan at a time, narrowing the drainage channel.
 
 <a id="Hostile-Group-G01-heading-0250"></a>
 
@@ -860,7 +860,7 @@ It concentrated inside the wall the food the family groups brought and the salt 
 
 ### Life Cycle and Maintenance
 
-Cracked sections were filled by the adults with saliva and mud, and only one new layer was added per monsoon. The day's scouting and bathing shrank by as much labor as the adding took, and the center of the hierarchy gathered at the wall.
+Cracked sections were filled by the adults with saliva and mud, and only one new layer was added per meltwater pulse. The day's scouting and bathing shrank by as much labor as the adding took, and the center of the hierarchy gathered at the wall.
 
 <a id="Hostile-Group-G01-heading-0254"></a>
 
@@ -884,7 +884,7 @@ The drain outside the sluice stayed clogged with mud while four pumps overheated
 
 ### Negotiation and Moral Choice
 
-One person on duty held only the authority to cut one section of the wall during the night shift to open a water passage. In a week when the recovery of the G01-SC2 salt pool had been moved up, that one section burst the storehouse and pushed the family groups into the semi-basement alleys. Leaving the section as it was let the pump station hold, but the wall drank water at every sealing hour and the ration convoy grew longer. Mud once split could not be rejoined in the same monsoon.
+One person on duty held only the authority to cut one section of the wall during the night shift to open a water passage. In a week when the recovery of the G01-SC2 salt pool had been moved up, that one section burst the storehouse and pushed the family groups into the semi-basement alleys. Leaving the section as it was let the pump station hold, but the wall drank water at every sealing hour and the ration convoy grew longer. Mud once split could not be rejoined in the same meltwater pulse.
 
 <a id="Hostile-Group-G01-heading-0262"></a>
 
@@ -924,7 +924,7 @@ They came out all at once from a single litter of a sow just after the G01-SC1 f
 
 ### Habitat
 
-They spent the day in a warm mud chamber inside the wall and came out to look for metal fragments on the slope only on nights of urgent growth. In the dry season the chamber leaned on the salt layer, and in the monsoon the chamber entrance opened into a waterway that pushed the larvae out as far as the pipe entrance.
+They spent the day in a warm mud chamber inside the wall and came out to look for metal fragments on the slope only on nights of urgent growth. In the deep-cold weeks the chamber leaned on the salt layer, and in the meltwater pulse the chamber entrance opened into a waterway that pushed the larvae out as far as the pipe entrance.
 
 <a id="Hostile-Group-G01-heading-0273"></a>
 
@@ -1000,7 +1000,7 @@ Adults that held out in the early wetlands of G01-SC1 piled metal on their backs
 
 ### Habitat
 
-It made its bed in the tunnels of the middle flood level, and in dry-season weeks it went back and forth almost only along the wall. On monsoon nights a hauling route opened between the salt pool and the slope, and that route overlapped with the alley drainage.
+It made its bed in the tunnels of the middle flood level, and in deep-cold weeks it went back and forth almost only along the wall. On meltwater nights a hauling route opened between the salt pool and the slope, and that route overlapped with the alley drainage.
 
 <a id="Hostile-Group-G01-heading-0296"></a>
 
@@ -1228,7 +1228,7 @@ During the G01-SC1 flood, some families were pushed upstream and planted plant f
 
 ### Habitat
 
-By day they clung to the ridge wetlands and the areas around abandoned railroad ties and held out through their daytime activity by photosynthesis. At the end of the dry season, moving along Anyangcheon in search of downstream salt became a necessity.
+By day they clung to the ridge wetlands and the areas around abandoned railroad ties and held out through their daytime activity by photosynthesis. At the end of the deep-cold weeks, moving along Anyangcheon in search of downstream salt became a necessity.
 
 <a id="Hostile-Group-G01-heading-0365"></a>
 
@@ -1264,7 +1264,7 @@ A back whose moss had burned away was already exposed like a lump of iron before
 
 ### Negotiation and Moral Choice
 
-The quarantine strip written down once in spring carried over unchanged into the next year until one side broke it. Keeping the strip left the trail on the Bukhansan side empty by day, and pushing it aside to open the junction with the downstream herd added the variant's camouflaged charge to the flood line of G01-SC3. The cost fell separately on the weekend hikers of the ridge and the duty crew of the downstream pumps.
+The quarantine strip written down once in the less-cold weeks carried over unchanged into the next year until one side broke it. Keeping the strip left the trail on the Bukhansan side empty by day, and pushing it aside to open the junction with the downstream herd added the variant's camouflaged charge to the flood line of G01-SC3. The cost fell separately on the weekend hikers of the ridge and the duty crew of the downstream pumps.
 
 <a id="Hostile-Group-G01-heading-0377"></a>
 
@@ -1286,7 +1286,7 @@ Urban incursions, shifts in food sources, and severed movement routes could be e
 
 The territory of the Wild Boar was set less by lines drawn on a map than by a continuity of water level and smell.
 
-The core habitat was the wetland and waste slopes outside the sluices of the Sluice, and in the dry season and winter they moved along the cut green belts toward the Government of the Republic of Korea at central Seoul Station and along the axis of night-market leftovers.
+The core habitat was the wetland and waste slopes outside the sluices of the Sluice, and in the deep-cold weeks they moved along the cut green belts toward the Government of the Republic of Korea at central Seoul Station and along the axis of night-market leftovers.
 
 When refugee columns pushed down from the XT01 Imjin River Gate Theater, the food traces left on the northwestern roads became new corridors.
 
@@ -1304,7 +1304,7 @@ Unlicensed hunting for meat and hide left immediate food and trade goods, but it
 
 Because a measure meant to protect civilian rations could increase food raids in vulnerable alleys, the cost of this ecology always moved to someone else's doorstep.
 
-Before the monsoon, the family groups split up, one to each sow with young, to scout feeding grounds and escape routes.
+Before the meltwater pulse, the family groups split up, one to each sow with young, to scout feeding grounds and escape routes.
 
 Right after a flood they briefly joined the upland food axis, but they did not become one great herd.
 
@@ -1344,7 +1344,7 @@ Removal led by firearms scattered the family groups into every alley and increas
 
 The success of a response was judged not by the number of carcasses but by the reduction in collection-yard intrusions, the time to reopen passage, and alley damage.
 
-G01-SC1 ‘The First Hoof Outside the Sluice’ began when the prints of a sow and her young appeared at the Sluice collection yard on the day before the monsoon forecast.
+G01-SC1 ‘The First Hoof Outside the Sluice’ began when the prints of a sow and her young appeared at the Sluice collection yard on the day before the meltwater forecast.
 
 The family group remembered the sealing hours and approached in the gaps when the sluice vibration stopped.
 
@@ -1386,7 +1386,7 @@ Negotiating with the Wild Boar was less a promise to tame the wild than a contra
 
 Long-term management depended on joint patrols in which free-city, HC01, and the semi-basement residents redrew the boundaries of food and passage every season.
 
-Before the monsoon they recorded each sow's prints and mud wallows without tagging, and after a flood they adjusted the night food-disposal hours and the positions of the managed salt pools so that the family groups did not lose their familiar escape routes.
+Before the meltwater pulse they recorded each sow's prints and mud wallows without tagging, and after a flood they adjusted the night food-disposal hours and the positions of the managed salt pools so that the family groups did not lose their familiar escape routes.
 
 The key indicators were alley intrusions per hundred nights, the time taken to clear the sluice stairs, the proportion of traces with young, the area of rooted-up ground, and the distance of human encounters by corridor, and carcass counts were kept only in the supplementary record.
 
@@ -1409,7 +1409,7 @@ Yet when hoof disturbance concentrated in predictable corridors, the reed belts 
 ### G01-SC1 · The First Hoof Outside the Sluice
 
 - Stage: 1
-- Trigger: On the day before the monsoon forecast, the prints of a sow and her young appeared at the Sluice collection yard.
+- Trigger: On the day before the meltwater forecast, the prints of a sow and her young appeared at the Sluice collection yard.
 - Actors: free-city, HC01, H01
 - Ecological mechanism: A family group that has remembered the sealing hours approaches in the gap when the sluice vibration stops.
 - Choices: Delay the collection yard's night operation / Open a wetland detour with a scent lure / Capture only the sow
