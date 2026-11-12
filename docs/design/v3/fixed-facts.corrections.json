@@ -277,8 +277,8 @@
     },
     {
       "from": "Yun Mingwei",
-      "to": "Yun Mingyu",
-      "reason": "family_tree historical node 윤밍위 (K1011 Lin family): the given name disagrees with the Korean 밍위 and with the node's own nameEn \"Yin Mingyu\". \"Mingwei\" would be 밍웨이. Corrected to Mingyu; the surname Yun follows the node name convention.",
+      "to": "Yun Mingwi",
+      "reason": "family_tree historical node 윤밍위 (K1011 Lin family): wrong romanization. \"Mingwei\" would be 밍웨이. The node name field follows RR of the Korean (윤 Yun), and RR of 밍위 is Mingwi (위 = wi). The pinyin nameEn \"Yin Mingyu\" is a separate self-spelling field and is not the basis.",
       "at": [
         "trees[clan_id=c784-b300-b9bc-6797].nodes[id=FH-K1011-M-02].name"
       ]
@@ -300,6 +300,39 @@
       ]
     },
     {
+      "from": "Cheongun-hyoja-dong",
+      "to": "Cheongunhyoja-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Cheongunhyoja-dong.",
+      "at": [
+        "geography.regions[id=region:1111051500].name"
+      ]
+    },
+    {
+      "from": "Myeongdong",
+      "to": "Myeong-dong",
+      "reason": "Station 명동 and dong 명동 are written without the hyphen. The MOIS administrative name is Myeong-dong, and the Seoul Metro Line 4 station is \"Myeong-dong\" (https://en.wikipedia.org/wiki/Seoul_Subway_Line_4). Every other dong in the data uses \"-dong\".",
+      "at": [
+        "geography.regions[id=region:1114055000].name",
+        "geography.stations[id=명동].name"
+      ]
+    },
+    {
+      "from": "Wonhyo-ro 1-dong",
+      "to": "Wonhyoro 1-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Wonhyoro 1-dong.",
+      "at": [
+        "geography.regions[id=region:1117056000].name"
+      ]
+    },
+    {
+      "from": "Wonhyo-ro 2-dong",
+      "to": "Wonhyoro 2-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Wonhyoro 2-dong.",
+      "at": [
+        "geography.regions[id=region:1117057000].name"
+      ]
+    },
+    {
       "from": "Hangang-ro-dong",
       "to": "Hangangno-dong",
       "reason": "map_region: written letter by letter. Revised Romanization (MOIS administrative name) applies the sound change at the syllable boundary (강로 -> nasalization \"gangno\", as in the data's own Jongno and Chungjeongno). Official Hangangno-dong.",
@@ -308,11 +341,59 @@
       ]
     },
     {
+      "from": "Wangsimni-Doseon-dong",
+      "to": "Wangsimnidoseon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Wangsimnidoseon-dong.",
+      "at": [
+        "geography.regions[id=region:1120053500].name"
+      ]
+    },
+    {
+      "from": "Myeonmok-bon-dong",
+      "to": "Myeonmokbon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Myeonmokbon-dong.",
+      "at": [
+        "geography.regions[id=region:1126056500].name"
+      ]
+    },
+    {
+      "from": "Mangu-bon-dong",
+      "to": "Mangubon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Mangubon-dong.",
+      "at": [
+        "geography.regions[id=region:1126065500].name"
+      ]
+    },
+    {
+      "from": "Junggye-bon-dong",
+      "to": "Junggyebon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Junggyebon-dong.",
+      "at": [
+        "geography.regions[id=region:1135061900].name"
+      ]
+    },
+    {
       "from": "Bukahyeon-dong",
       "to": "Bugahyeon-dong",
       "reason": "map_region: written letter by letter. Revised Romanization (MOIS administrative name) applies the sound change at the syllable boundary (북아 -> liaison \"buga\"). Official Bugahyeon-dong.",
       "at": [
         "geography.regions[id=region:1141055500].name"
+      ]
+    },
+    {
+      "from": "Hwagok-bondong",
+      "to": "Hwagokbon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Hwagokbon-dong.",
+      "at": [
+        "geography.regions[id=region:1150059000].name"
+      ]
+    },
+    {
+      "from": "Yeongdeungpo-bondong",
+      "to": "Yeongdeungpobon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Yeongdeungpobon-dong.",
+      "at": [
+        "geography.regions[id=region:1156051500].name"
       ]
     },
     {
@@ -381,6 +462,22 @@
       "reason": "map_region 오륜동: 륜 is \"ryun\" in RR. The data itself writes Dunchon Oryun station and Oryun elsewhere. Official Oryun-dong.",
       "at": [
         "geography.regions[id=region:1171056600].name"
+      ]
+    },
+    {
+      "from": "Garak-bondong",
+      "to": "Garakbon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Garakbon-dong.",
+      "at": [
+        "geography.regions[id=region:1171062000].name"
+      ]
+    },
+    {
+      "from": "Jamsil-bondong",
+      "to": "Jamsilbon-dong",
+      "reason": "map_region: wrong RR form of a dong name. MOIS administrative names join every part before \"-dong\" into one word, including 본 (the data's own Banpobon-dong, Bangbaebon-dong, Irwonbon-dong). Official Jamsilbon-dong.",
+      "at": [
+        "geography.regions[id=region:1171065000].name"
       ]
     },
     {
@@ -529,6 +626,14 @@
       ]
     },
     {
+      "from": "Mokdong",
+      "to": "Mok-dong",
+      "reason": "map_station 목동: Station that is also a dong name, written without the hyphen. The operator writes it with the dong hyphen, as does the data's own convention for dong-named stations (Gil-dong, Jegi-dong, Gaepo-dong, Sangil-dong, Sinseol-dong). Source: Seoul Metro Line 5 (\"Mok-dong\"), also the project Seoul-Station-Catalog. Official: \"Mok-dong\".",
+      "at": [
+        "geography.stations[id=목동].name"
+      ]
+    },
+    {
       "from": "Boramaegongwon",
       "to": "Boramae Park",
       "reason": "map_station 보라매공원: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Sillim_Line. Official: \"Boramae Park\".",
@@ -570,8 +675,8 @@
     },
     {
       "from": "Seoulsup",
-      "to": "Seoul-forest",
-      "reason": "map_station 서울숲: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul-forest_station. Official: \"Seoul-forest\".",
+      "to": "Seoul Forest",
+      "reason": "map_station 서울숲: The station 서울숲 (Korail Suin-Bundang K211) is written as the romanization \"Seoulsup\" instead of the English station name. The current Korail name is \"Seoul Forest\" (the older signage form \"Seoul-forest\" is not used). Source: https://en.wikipedia.org/wiki/Suin%E2%80%93Bundang_Line. Official: \"Seoul Forest\".",
       "at": [
         "geography.stations[id=서울숲].name"
       ]
@@ -633,6 +738,14 @@
       ]
     },
     {
+      "from": "Amsa Historic Park",
+      "to": "Amsa History Park",
+      "reason": "map_station 암사역사공원: 암사역사공원 (Line 8 extension): the operator English name is \"Amsa History Park\". It is not a literal \"Historic Park\"; the project Seoul-Station-Catalog already uses \"Amsa History Park\". Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_8. Official: \"Amsa History Park\".",
+      "at": [
+        "geography.stations[id=암사역사공원].name"
+      ]
+    },
+    {
       "from": "Ollimpikgongwon",
       "to": "Olympic Park",
       "reason": "map_station 올림픽공원: the English loanword \"Olympic\" was romanized back from its Hangul spelling. Official Olympic Park (Seoul-Station-Catalog; the station summary already says \"Olympic Park Station\").",
@@ -666,8 +779,8 @@
     },
     {
       "from": "Euljiro-ipgu",
-      "to": "Euljiro 1(il)-ga",
-      "reason": "map_station 을지로입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_2. Official: \"Euljiro 1(il)-ga\".",
+      "to": "Euljiro 1-ga",
+      "reason": "map_station 을지로입구: 을지로입구 is written as a romanization with \"ipgu\" (entrance) instead of the operator English name \"Euljiro 1(il)-ga\" (Seoul Metro Line 2, https://en.wikipedia.org/wiki/Seoul_Subway_Line_2). Written without the numeral reading, as \"Euljiro 1-ga\", to match the data's existing \"Euljiro 3-ga\", \"Euljiro 4-ga\", \"Jongno 3-ga\" and \"Jongno 5-ga\". Official: \"Euljiro 1-ga\".",
       "at": [
         "geography.stations[id=을지로입구].name"
       ]
@@ -697,6 +810,14 @@
       ]
     },
     {
+      "from": "Changdong",
+      "to": "Chang-dong",
+      "reason": "map_station 창동: Station that is also a dong name, written without the hyphen. The operator writes it with the dong hyphen, as does the data's own convention for dong-named stations (Gil-dong, Jegi-dong, Gaepo-dong, Sangil-dong, Sinseol-dong). Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_4 (\"Chang-dong\"). Official: \"Chang-dong\".",
+      "at": [
+        "geography.stations[id=창동].name"
+      ]
+    },
+    {
       "from": "Cheonggyesan-ipgu",
       "to": "Cheonggyesan",
       "reason": "map_station 청계산입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Cheonggyesan_station. Official: \"Cheonggyesan\".",
@@ -718,6 +839,14 @@
       "reason": "map_station 태릉입구: The station is written as a romanization or literal rendering of the Korean name instead of the operator's official English station name. Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_6, https://en.wikipedia.org/wiki/Seoul_Subway_Line_7. Official: \"Taereung\".",
       "at": [
         "geography.stations[id=태릉입구].name"
+      ]
+    },
+    {
+      "from": "Hakdong",
+      "to": "Hak-dong",
+      "reason": "map_station 학동: Station that is also a dong name, written without the hyphen. The operator writes it with the dong hyphen, as does the data's own convention for dong-named stations (Gil-dong, Jegi-dong, Gaepo-dong, Sangil-dong, Sinseol-dong). Source: https://en.wikipedia.org/wiki/Seoul_Subway_Line_7 (\"Hak-dong\"). Official: \"Hak-dong\".",
+      "at": [
+        "geography.stations[id=학동].name"
       ]
     },
     {

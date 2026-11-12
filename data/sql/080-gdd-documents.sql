@@ -8445,7 +8445,7 @@ The two tables below are legacy material preserved as they are, with the values 
 | 08 Noryangjin | Defense | Citizenship | Contract | Contract | Cross-Verification | License Sharing | Open Market | Adoptive Apprenticeship |
 | 09 Sangam | Defense | Quarantine Intake | Contract | Contract | Full Disclosure | License Sharing | Permit | Public Examination |
 | 10 Bukhansan Bogukmun | Defense | Citizenship | Minimum Line | Civic Service | Cross-Verification | License Sharing | Permit | Public Examination |
-| 11 Changdong | Defense | Quarantine Intake | Contract | Contract | Cross-Verification | Family Secret | Permit | Public Examination |
+| 11 Chang-dong | Defense | Quarantine Intake | Contract | Contract | Cross-Verification | Family Secret | Permit | Public Examination |
 | 12 Sinnae | Defense | Citizenship | Minimum Line | Contract | Cross-Verification | License Sharing | Permit | Adoptive Apprenticeship |
 | 13 Jegi-dong | Defense | Citizenship | Minimum Line | Contract | Cross-Verification | Joint Ledger | Permit | Public Examination |
 | 14 Achasan | Limited War | Exile | Contract | Forced Service | Undisclosed | License Sharing | Blockade | Bloodline |
@@ -8464,7 +8464,7 @@ The two tables below are legacy material preserved as they are, with the values 
 | 08 Noryangjin | Defense | Citizenship | Contract | Contract | Cross-verified | Licensed sharing | Open market | Adoptive apprenticeship |
 | 09 Sangam | Defense | Quarantine admission | Contract | Contract | Fully public | Licensed sharing | Licensed | Open examination |
 | 10 Bukhansan Bogukmun | Defense | Citizenship | Minimum line | Civic service | Cross-verified | Licensed sharing | Licensed | Open examination |
-| 11 Changdong | Defense | Quarantine admission | Contract | Contract | Cross-verified | House secret | Licensed | Open examination |
+| 11 Chang-dong | Defense | Quarantine admission | Contract | Contract | Cross-verified | House secret | Licensed | Open examination |
 | 12 Sinnae | Defense | Citizenship | Minimum line | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
 | 13 Jegi-dong | Defense | Citizenship | Minimum line | Contract | Cross-verified | Joint ledger | Licensed | Open examination |
 | 14 Achasan | Limited war | Expulsion | Contract | Forced service | Closed | Licensed sharing | Blockade | Bloodline |
@@ -8694,7 +8694,7 @@ flowchart LR
 | 08 Noryangjin | Defense | Citizenship | Contract | Contract | Cross-verified | Licensed sharing | Open market | Adoptive apprenticeship |
 | 09 Sangam | Defense | Quarantine admission | Contract | Contract | Fully public | Licensed sharing | Licensed | Open examination |
 | 10 Bukhansan Bogukmun | Defense | Citizenship | Minimum line | Civic service | Cross-verified | Licensed sharing | Licensed | Open examination |
-| 11 Changdong | Defense | Quarantine admission | Contract | Contract | Cross-verified | House secret | Licensed | Open examination |
+| 11 Chang-dong | Defense | Quarantine admission | Contract | Contract | Cross-verified | House secret | Licensed | Open examination |
 | 12 Sinnae | Defense | Citizenship | Minimum line | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
 | 13 Jegi-dong | Defense | Citizenship | Minimum line | Contract | Cross-verified | Joint ledger | Licensed | Open examination |
 | 14 Achasan | Limited war | Expulsion | Contract | Forced service | Closed | Licensed sharing | Blockade | Bloodline |
