@@ -106,8 +106,12 @@ if (errors.length) {
 }
 
 // 4) audio mapping: voiced rules -> registered bundled clips -> mp3 file names
-const narrationSrc = fs.readFileSync(path.join(REPO, 'artifacts/seoul-showcase/src/data/narration.ts'), 'utf8');
-const bundledIds = new Set([...narrationSrc.matchAll(/"(v[0-9][^"]*)"/g)].map((m) => m[1]));
+// 음성 드롭(2026-11-12, 원본 지시 "음성은 드롭 한다"): narration.ts와 mp3가 제거된 뒤에는
+// 오디오 매핑이 비는 것이 정상이다(과거 규칙표 재현 시에도 빈 목록으로 끝난다).
+const narrationPath = path.join(REPO, 'artifacts/seoul-showcase/src/data/narration.ts');
+const bundledIds = new Set(fs.existsSync(narrationPath)
+  ? [...fs.readFileSync(narrationPath, 'utf8').matchAll(/"(v[0-9][^"]*)"/g)].map((m) => m[1])
+  : []);
 const audioMap = [];
 const seenIds = new Set();
 for (const r of results.filter((x) => x.voiced)) {

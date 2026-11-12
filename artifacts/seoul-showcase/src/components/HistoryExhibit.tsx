@@ -5,11 +5,11 @@ import { EXHIBIT_CREDIT, KIND_LABEL, type Exhibit, type ExhibitImage } from "@/d
 const BASE = import.meta.env.BASE_URL;
 
 function Thumb({ img, className }: { img: ExhibitImage; className: string }) {
-  const portrait = img.kind === "portrait";
+  const portrait = img.kind === "portrait"; // scene plates render landscape
   return (
     <div className={`relative shrink-0 overflow-hidden bg-[hsl(214_30%_10%)] ${className}`}>
-      <img src={`${BASE}${img.src}`} alt={`${img.name.ko} ${portrait ? "초상" : "깃발"} — ${KIND_LABEL[img.kind].ko}`} draggable={false}
-        className={`h-full w-full ${portrait ? "object-cover object-top" : "object-contain p-1"}`} />
+      <img src={`${BASE}${img.src}`} alt={`${img.name.ko} ${img.kind === "portrait" ? "초상" : "장면"} — ${KIND_LABEL[img.kind].ko}`} draggable={false}
+        className={`h-full w-full ${img.kind === "portrait" ? "object-cover object-top" : "object-contain p-1"}`} />
     </div>
   );
 }

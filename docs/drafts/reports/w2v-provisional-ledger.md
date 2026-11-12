@@ -228,6 +228,7 @@ Free City roster data (data/sql/131-units-free-city.sql, 24 units). Each entry g
 | 162 | all rows / recruit_building | each row's recruit_building is a framework 4.3 building name; which building opens which unit follows the tier gates in that table |
 | 163 | all rows / hired-company ratios | hired-company units sit in the lower half of their tier cost band with 28 to 30 percent upkeep, as framework 5.1 sets; the framework marks this as a design choice, not a Total War figure |
 
+
 ## task 15
 
 Arc roster (data/sql/132-units-arc.sql, 22 rows). Every unit name below is an invented plain-word name, provisional until the owner approves it. Each entry gives the unit id, the English name and the Korean name. Numbers follow docs/design/roster-framework.md (TW:WH-calibrated bands), a design document and not bible canon.
@@ -260,3 +261,20 @@ Arc roster (data/sql/132-units-arc.sql, 22 rows). Every unit name below is an in
 | 187 | wiki_unit (132-units-arc.sql) | arc-relic-tracked-carrier, arc-revived-relic-walker | the two relic machines (a salvaged armoured carrier and a revived two-legged war machine) and their bench crews are a provisional reading of the "machine relics" slot in roster framework 9.1; how they were recovered is not stated |
 | 188 | wiki_unit (132-units-arc.sql) | arc-clan-head-guard, arc-hierophant-escort | clan head and Hierophant guard detachments are provisional units built on the four-layer order of Arc-Society; no person is tied to a unit (framework P8) |
 | 189 | wiki_unit (132-units-arc.sql) | counters column | every counters entry names an Arc unit only (framework 8.3 and P16); the cross-faction ids come from the final roster merge |
+
+## task 17
+
+Showcase script rewrite + voice drop (artifacts/seoul-showcase, storyScript v6). The script is bilingual; each entry gives the file, the speaker or line id, and the ko phrase. The story player is text only (owner, 2026-11-12: "쇼케이스 대본도 전부 수정하자. 음성은 안만들거임 음성은 드롭 한다"): the 206 narration mp3s, the narration manifest, speech synthesis, ambient sound and every audio control were removed, and the retired old-state flags and old-state portrait exhibits went with the canon rewrite.
+
+| # | Document | Location (speaker / line) | Provisional item |
+|---|---|---|---|
+| 190 | storyScript.ts | speaker k1007, "기록 당직 · 서기" | Kim Yeon-gyu's published record still holds "온민의 수장" (an old-canon office); presenting him as a Myeongdong registry clerk is a new-canon staging. The registry quarter itself is canon (Government-Society "Markets by Station") |
+| 191 | storyScript.ts | speaker k998, "관악의 아르콘 · 제1분공방 이씨 가문" | Archon of Gwanak is the task 32 provisional title; the approved data value is Duke of Gwanak (관악 공작). The showcase follows the 2026-11-12 no-duke wording and uses the task 32 title |
+| 192 | storyScript.ts | speaker iyen, "수행 전령 · 귀환 일행" | her title follows the published person-1004/1003 records (Q20's wording is already applied in data); the guided walk and her asides (v6-cbl-04, v6-tan-02, v6-win-04) are showcase fiction covered by the title-screen disclaimer |
+| 193 | storyScript.ts | v6-open-02/04, v6-cho-01, v6-now-04 | the frame that keeps Go Ye-jin at the centre and offers a three-faction visit (registry · workshop · radio watch) is showcase staging; the events and dates it walks through are canon |
+| 194 | storyScript.ts | v6-end-reg-01/02, v6-end-wks-01/02, v6-end-wat-01/02 | the 2126 ending scenes at the Myeongdong registry, the Gwanak First Branch Workshop and the Nonhyeon 2-dong radio watch are invented moments on canon ground; the fur-hat rule and "the fields are not family land" come from Government-Society and person-0998 |
+| 195 | storyScript.ts | v6-bk-02, v6-man-04 | the phrasings "미워한 적이 없고" and "신" are the bible's public framing; no sanctuary, sealing, first-brain or output-reading detail appears (Q12 kept out) |
+| 196 | historyExhibits.ts | kind "scene", KIND_LABEL | scene illustrations used as exhibit images (labelled 장면 일러스트 · 기록 사진 아님) are a new exhibit kind replacing the retired old-state flags and old-state portraits |
+| 197 | VisualNovel.tsx | title card, "영원한 겨울의 연대기 / A Chronicle of the Eternal Winter" | restores the eternal-winter wording that W5-28 B2 removed while Q16 was open; bible row 4 / D1 now fixes eternal winter |
+| 198 | index.html | meta description | the new description (eternal winter, three factions, one linesman's cable) is showcase copy, not canon text |
+| 199 | storyScript.ts | cast list (dropped speakers) | Jo Jaepyo (person-1003) stays off-stage and Min Ung-gi (person-1008) was dropped: his record still holds the old-canon "대전 군주" (Q18/Q29 owner-pending), so no role was invented for him |

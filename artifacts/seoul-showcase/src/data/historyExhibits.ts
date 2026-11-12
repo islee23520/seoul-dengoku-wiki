@@ -1,26 +1,25 @@
 /**
- * Supplemental image panels for the history scenes (fractures / succession /
- * reorganization) and the later lines that cite 2116–2120 annals events.
+ * Supplemental reference panels for the Go Ye-jin chronicle scenes (v6).
  *
- * HONESTY RULE: the public wiki contains NO photographs or depictions of these
- * events. Every image here is either (a) a published wiki portrait of a person
- * the Century Annals names as a participant, or (b) a published state flag.
- * Each panel therefore carries kind "portrait" | "flag" and the UI always shows
- * "관련 인물 초상 · 사건 현장 사진 아님" / "국가 깃발 · 사건 현장 사진 아님".
+ * HONESTY RULE: the public wiki contains NO photographs of these events.
+ * Every image here is either (a) a published wiki portrait of a person the
+ * script names, or (b) one of the showcase's own scene illustrations. Each
+ * panel carries kind "portrait" | "scene" and the UI labels it as not a
+ * record of the event.
  *
- * Files are local re-encodes (webp, 720px) of artifacts/seoul-wiki/public
- * portraits/*.png and straight copies of state-flags/*.webp. Portraits are
- * art-proposal status (portrait-reviews: canonPromotion false).
+ * The retired v5 panels (old-state flags and old-state succession exhibits)
+ * were removed with the 2026-11-12 canon rewrite: only the three factions
+ * exist, so no abolished polity's flag appears.
  *
- * Spoken text and line IDs are untouched; panels attach by line ID only.
+ * Panels attach by line ID only; spoken text is untouched.
  */
 import { WIKI_URL } from "@/data/storyScript";
 
-export type ExhibitKind = "portrait" | "flag";
+export type ExhibitKind = "portrait" | "scene";
 export interface ExhibitImage {
   kind: ExhibitKind;
   src: string;
-  /** Wiki person / state id */
+  /** Wiki person id, or the scene plate name */
   ref: string;
   name: { ko: string; en: string };
   /** Role as recorded, with date evidence */
@@ -39,151 +38,96 @@ export interface Exhibit {
 }
 
 const ANNALS = `${WIKI_URL}/world/Century-Annals`;
-const SIXTEEN = `${WIKI_URL}/world/Sixteen-States`;
+const ARCS = `${WIKI_URL}/world/Regional-Physical-AI-Arcs`;
+const GOV = `${WIKI_URL}/world/Government-Society`;
+const FREECITY = `${WIKI_URL}/world/Free-City-Society`;
+const ARCSOC = `${WIKI_URL}/world/Arc-Society`;
 const person = (id: string) => `${WIKI_URL}/people/${id}`;
 
-const flag = (id: string, ko: string, en: string, roleKo: string, roleEn: string): ExhibitImage => ({
-  kind: "flag", src: `history/flags/${id}.webp`, ref: id, name: { ko, en }, role: { ko: roleKo, en: roleEn }, href: SIXTEEN,
+const scene = (src: string, ko: string, en: string, roleKo: string, roleEn: string): ExhibitImage => ({
+  kind: "scene", src: `scenes/${src}.jpg`, ref: `scenes/${src}.jpg`, name: { ko, en }, role: { ko: roleKo, en: roleEn }, href: ANNALS,
+});
+
+const portrait = (src: string, ref: string, ko: string, en: string, roleKo: string, roleEn: string, href: string): ExhibitImage => ({
+  kind: "portrait", src, ref, name: { ko, en }, role: { ko: roleKo, en: roleEn }, href,
 });
 
 const EX: Record<string, Exhibit> = {
-  camps: {
-    id: "camps", date: "2106",
-    heading: { ko: "2106년의 진영과 2116년의 소속", en: "Camps of 2106 vs. affiliations of 2116" },
-    note: { ko: "같은 깃발이 10년 사이 다른 진영에 서 있었다. 깃발은 국가 식별용 위키 도안이다.", en: "The same flags stood in different camps a decade apart. Flags are wiki designs used for identification." },
-    images: [
-      flag("S12", "신내운수", "Sinnae Transport", "2106 규격맹 쪽 → 2116 정부", "League camp in 2106 → Government in 2116"),
-      flag("S13", "흰십자단", "White Cross", "2106 규격맹 쪽 → 2116 정부", "League camp in 2106 → Government in 2116"),
-    ],
-    sources: [{ label: { ko: "백년 연대기 · 2106 진영 구성", en: "Century Annals · 2106 camps" }, href: ANNALS }],
+  deadCable: {
+    id: "deadCable", date: "2112",
+    heading: { ko: "죽은 케이블이 이끈 곳", en: "Where the Dead Cable Led" },
+    note: { ko: "고예진은 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾았다. 그 안에는 버려진 데이터센터와 인쇄 매뉴얼이 있었다. 실제 현장의 기록 이미지는 위키에 없다.", en: "Repairing the Free City grid, Go Ye-jin followed a dead cable to a station on no map. Inside were an abandoned data centre and printed manuals. The wiki holds no record image of the place." },
+    images: [scene("tunnel", "터널", "Tunnel", "2112 · 케이블이 지나간 터널 (장면 일러스트)", "2112 · the tunnel the cable ran through (scene illustration)")],
+    sources: [{ label: { ko: "백년 연대기 · 2112 죽은 케이블", en: "Century Annals · 2112, the dead cable" }, href: ANNALS }],
   },
-  guui: {
-    id: "guui", date: "2107.08",
-    heading: { ko: "구의 급수 충돌의 두 당사국", en: "The two parties at Guui" },
-    note: { ko: "연대기는 이 충돌에 관여한 개인의 이름을 적지 않았다. 그래서 인물 대신 당사국 깃발만 둔다. 동방사 배우진은 2118년에야 사령관이 되었으므로 이 사건의 인물로 쓰지 않았다.", en: "The annals name no individuals in this clash, so only the parties' flags are shown. Dongbang-sa's Bae Woo-jin became commander only in 2118 and is deliberately not used here." },
-    images: [
-      flag("S05", "동방사", "Dongbang-sa", "충돌 당사국 · 2107년 8월", "Party to the clash · Aug 2107"),
-      flag("S14", "아관사", "Agwan-sa", "충돌 당사국 · 2107년 8월", "Party to the clash · Aug 2107"),
-    ],
-    sources: [{ label: { ko: "백년 연대기 · 2107 가. 구의 충돌", en: "Century Annals · 2107 Guui clash" }, href: ANNALS }],
-  },
-  neutralAid: {
-    id: "neutralAid", date: "2107 · 2109",
-    heading: { ko: "부상자를 옮기고 치료한 쪽", en: "Who carried and treated the wounded" },
-    note: { ko: "신내운수 대차 6대가 양측 부상자를 제기동으로 옮겼고 흰십자단이 치료했다. 2109년 2월 신내운수 사장 가문이 서약문을 다시 썼다.", en: "Six Sinnae carts moved the wounded of both sides to Jegi-dong; the White Cross treated them. In Feb 2109 Sinnae's ruling family renewed its pledge." },
-    images: [
-      flag("S12", "신내운수", "Sinnae Transport", "부상자 이송 · 2109 서약문", "Moved the wounded · 2109 pledge"),
-      flag("S13", "흰십자단", "White Cross", "부상자 치료 · 2107", "Treated the wounded · 2107"),
-    ],
-    sources: [{ label: { ko: "백년 연대기 · 2107 구의 충돌, 2109 서약문", en: "Century Annals · 2107 clash, 2109 pledge" }, href: ANNALS }],
-  },
-  seoon: {
-    id: "seoon", date: "2112.04 – 2114.05",
-    heading: { ko: "정서온 · 태욱그룹 승계 분쟁의 당사자", en: "Jeong Seo-on · party to the Taeuk succession dispute" },
-    note: { ko: "2112.4.9 부친 정일환 사망 · 4.13 문중 9명 회의, 정우철 추대 결의(7명 서명) · 4.15 정서온 취임 공표(지분 51%) · 4.28 주주 43명 중 29명 찬성 · 2114.2 정통회 인준 청구, 무응답. 정우철·정일환의 공개 초상은 없다.", en: "9 Apr 2112 father Jeong Il-hwan dies · 13 Apr clan of nine backs Jeong Woo-cheol (7 sign) · 15 Apr Seo-on announces succession (51% stake) · 28 Apr 29 of 43 shareholders approve · Feb 2114 petition to Jeongtonghoe, no reply. No public portraits exist for Woo-cheol or Il-hwan." },
-    images: [{
-      kind: "portrait", src: "history/portraits/person-1005.webp", ref: "person-1005 · K1005",
-      name: { ko: "정서온", en: "Jeong Seo-on" },
-      role: { ko: "태욱그룹 회장 · 2112년 취임 공표 당사자", en: "Chair, Taeuk Group · announced her succession in 2112" },
-      href: person("person-1005"),
-    }, flag("S03", "태욱그룹", "Taeuk Group", "승계 분쟁이 일어난 나라", "State where the dispute occurred")],
+  manuals: {
+    id: "manuals", date: "2112–2117",
+    heading: { ko: "다섯 해의 매뉴얼", en: "Five Years of Manuals" },
+    note: { ko: "고예진은 그 역에서 다섯 해 동안 매뉴얼을 읽었다. '대부분은 냉각에 대한 것이었다. 생각하다 스스로 부서지지 않을 만큼 차갑게 유지하는 법.' 그가 무엇을 다 배웠는지는 정본에도 남아 있지 않다.", en: "Go Ye-jin read the manuals there for five years. 'Most of it was about cooling. How to keep a thing thinking cold enough that it does not break itself.' What else he learned is not recorded anywhere public." },
+    images: [scene("archive", "서고", "The archive", "2112–2117 · 매뉴얼의 방 (장면 일러스트)", "2112–2117 · the room of manuals (scene illustration)")],
     sources: [
-      { label: { ko: "백년 연대기 · 2112 태욱그룹 회장 승계", en: "Century Annals · 2112 Taeuk succession" }, href: ANNALS },
-      { label: { ko: "인물 기록 person-1005", en: "Person record person-1005" }, href: person("person-1005") },
+      { label: { ko: "권역 연대기 · 버려진 역과 매뉴얼", en: "Regional chronicle · the abandoned station and the manuals" }, href: ARCS },
+      { label: { ko: "백년 연대기 · 다섯 해의 매뉴얼", en: "Century Annals · five years of manuals" }, href: ANNALS },
+    ],
+  },
+  baptism: {
+    id: "baptism", date: "2117 무렵",
+    heading: { ko: "첫 열둘의 세례", en: "The Baptism of the First Twelve" },
+    note: { ko: "세례는 몸의 한 부위를 기계로 바꾸는 일이다. 첫 열둘은 대부분 추위나 사고나 전쟁 기계에 팔다리를 잃은 사람들이었다. 신앙은 이식한 부위 수로 센다.", en: "A baptism replaces one part of the body with a machine. Most of the first twelve had lost limbs to cold, accident or the war machines. Faith is counted in implanted parts." },
+    images: [scene("platform", "승강장", "Platform", "2117 무렵 · 첫 세례 (장면 일러스트)", "Around 2117 · the first baptisms (scene illustration)")],
+    sources: [
+      { label: { ko: "백년 연대기 · 열두 번의 세례", en: "Century Annals · twelve baptisms" }, href: ANNALS },
+      { label: { ko: "아크 사회 · 사이버웨어 접근", en: "Arc Society · cyberware access" }, href: ARCSOC },
     ],
   },
   registry: {
-    id: "registry", date: "2110 – 2111",
-    heading: { ko: "기록청에 원본을 낸 나라들 중 둘", en: "Two of the states that filed originals" },
-    note: { ko: "제출국은 수문국·동방사·아관사·환적국·신내운수·규격맹·흰십자단. 기록청은 정부 소관이다.", en: "Filers: Sumun-guk, Dongbang-sa, Agwan-sa, Hwanjeok-guk, Sinnae, the League and the White Cross. The records office belonged to the Government." },
-    images: [
-      flag("S06", "대한민국정부", "ROK Government", "기록청 소관국 · 2110 등재", "Ran the records office · 2110"),
-      flag("S02", "규격맹", "Standard League", "2111 원본 제출국", "Filed originals in 2111"),
-    ],
-    sources: [{ label: { ko: "백년 연대기 · 2110 등재, 2111 원본 제출", en: "Century Annals · 2110–2111 registry" }, href: ANNALS }],
-  },
-  dangsan: {
-    id: "dangsan", date: "2114",
-    heading: { ko: "당산 냉동 압축기 정지 · 조정에 참여한 나라", en: "Dangsan refrigeration failure · coordinating states" },
-    note: { ko: "이 다섯 나라 중 셋(규격맹·수문국·태욱그룹)이 2116년 규격맹 진영이 된다. 공동 작업은 합병이 아니다.", en: "Three of these five became the 2116 League bloc. Shared work was not a merger." },
-    images: [
-      flag("S02", "규격맹", "Standard League", "부품·순번 조정 · 2114", "Parts and schedules · 2114"),
-      flag("S03", "태욱그룹", "Taeuk Group", "조정 참여 · 2114", "Coordination · 2114"),
-    ],
-    sources: [{ label: { ko: "백년 연대기 · 2114 당산", en: "Century Annals · 2114 Dangsan" }, href: ANNALS }],
-  },
-  amsa: {
-    id: "amsa", date: "2114",
-    heading: { ko: "암사 화차 재검수", en: "Amsa freight re-inspection" },
-    note: { ko: "동방사가 재검수했고 신내운수·성하그룹·흰십자단·아관사가 환승, 연료, 환자 이송, 증빙을 나눠 맡았다.", en: "Dongbang-sa re-inspected; Sinnae, Seongha, the White Cross and Agwan-sa split transfers, fuel, patients and evidence." },
-    images: [
-      flag("S05", "동방사", "Dongbang-sa", "재검수 · 2114", "Re-inspection · 2114"),
-      flag("S14", "아관사", "Agwan-sa", "증빙 처리 참여 · 2114", "Evidence handling · 2114"),
-    ],
-    sources: [{ label: { ko: "백년 연대기 · 2114 암사", en: "Century Annals · 2114 Amsa" }, href: ANNALS }],
-  },
-  three: {
-    id: "three", date: "2116",
-    heading: { ko: "옛 세 국가의 패권국과 종교 연합", en: "The three old blocs of 2116" },
-    note: { ko: "옛 규격맹 · 정부 · 옛 종교 진영, 그리고 중립의 중앙정보부. 기존 수장과 관직은 봉신으로 존속했다.", en: "The old League, the Government and the old religious camp, with the Central Intelligence Division neutral. Existing rulers and offices remained as vassals." },
-    images: [
-      flag("S02", "규격맹", "Standard League", "패권국 · 2116", "Hegemon · 2116"),
-      flag("S06", "대한민국정부", "ROK Government", "패권국 · 2116", "Hegemon · 2116"),
-    ],
+    id: "registry", date: "2126",
+    heading: { ko: "명동 · 등록 사무소 거리", en: "Myeongdong · the Registry Quarter" },
+    note: { ko: "명동은 강 북쪽 중구의 등록 사무소 거리다. 장부를 고치러 오는 사람들이 모이는 곳이지 장터가 아니다. 아크의 땅은 아니다.", en: "Myeongdong, in Jung-gu north of the river, is the Government's street of registry offices — where people come to correct their ledger entries, not a market. It is not Arc land." },
+    images: [portrait("portraits/person-1007.webp", "person-1007 · K1007", "김연규", "Kim Yeon-gyu", "기록 당직 · 문서 등재 (공개 인물 기록)", "Records duty · document registration (published person record)", person("person-1007"))],
     sources: [
-      { label: { ko: "백년 연대기 · 2116 세 국가 성립", en: "Century Annals · 2116 formation" }, href: ANNALS },
-      { label: { ko: "세 세력", en: "The Three Factions" }, href: SIXTEEN },
+      { label: { ko: "정부 사회 · 역별 장터와 명동", en: "Government Society · markets and Myeongdong" }, href: GOV },
+      { label: { ko: "인물 기록 person-1007", en: "Person record person-1007" }, href: person("person-1007") },
     ],
   },
-  koSeojun: {
-    id: "koSeojun", date: "2115 – 2116.07",
-    heading: { ko: "고서준 · 구의수비대 이관 거절", en: "Ko Seo-jun · refused to hand over the Guui Garrison" },
-    note: { ko: "2115년 아관사 관문사령관 선출 · 2116년 7월 동방사의 이관 문서에 거절 문서 발송. 함께 거절한 구의수비대장 탁서윤(person-1006)은 공개 초상이 없다.", en: "Elected Agwan-sa gate commander in 2115 · refused Dongbang-sa's transfer order in Jul 2116. Garrison Captain Tak Seo-yun (person-1006), who also refused, has no public portrait." },
-    images: [{
-      kind: "portrait", src: "history/portraits/person-0349.webp", ref: "person-0349 · K348",
-      name: { ko: "고서준", en: "Ko Seo-jun" },
-      role: { ko: "아관사 관문사령관 · 2116년 거절 문서 발신", en: "Gate Commander, Agwan-sa · sent refusal in 2116" },
-      href: person("person-0349"),
-    }, flag("S05", "동방사", "Dongbang-sa", "이관 요구국 · 2116.07", "Demanded the transfer · Jul 2116")],
+  gwanak: {
+    id: "gwanak", date: "2126",
+    heading: { ko: "관악 폴리스와 그 아르콘", en: "The Polis of Gwanak and Its Archon" },
+    note: { ko: "구 하나가 폴리스 하나다. 이일섭은 스물둘에 물 재활용기 시연으로 시민권을 얻고, 급수 집정관과 평의회를 거쳐 아르콘이 됐다. 아르콘은 시민회가 뽑는 자리다.", en: "Each district is one polis. I Ilseop earned citizenship at twenty-two by demonstrating a water recycler, served as water magistrate and on the council, and then became Archon. An Archon is elected by the citizens' assembly." },
+    images: [portrait("portraits/person-0998.webp", "person-0998 · K998", "이일섭", "I Ilseop", "관악의 아르콘 · 제1분공방 이씨 가문", "Archon of Gwanak · I Clan, First Branch Workshop", person("person-0998"))],
     sources: [
-      { label: { ko: "백년 연대기 · 2115 편입 요구", en: "Century Annals · 2115–2116 transfer demand" }, href: ANNALS },
-      { label: { ko: "인물 기록 person-0349", en: "Person record person-0349" }, href: person("person-0349") },
+      { label: { ko: "권역 연대기 · 이일섭은 어떻게 관악의 아르콘이 됐는가", en: "Regional chronicle · how I Ilseop became Archon of Gwanak" }, href: ARCS },
+      { label: { ko: "자유도시 사회 · 폴리스의 제도", en: "Free City Society · institutions of a polis" }, href: FREECITY },
+      { label: { ko: "인물 기록 person-0998", en: "Person record person-0998" }, href: person("person-0998") },
     ],
   },
-  kangMinseo: {
-    id: "kangMinseo", date: "2120 겨울",
-    heading: { ko: "강민서 · 복구복무자 등록 거부 기술자 시민권 등재", en: "Kang Min-seo · enrolled the refusing technicians" },
-    note: { ko: "2120년 겨울 동방사의 등록 요구 → 강민서가 거부 기술자를 규격맹 시민권 명부에 올림 · 2121년 평의회가 위원장으로 선출.", en: "Winter 2120: Dongbang-sa's demand → Kang put refusing technicians on the League's citizenship rolls · elected council chair in 2121." },
-    images: [{
-      kind: "portrait", src: "history/portraits/person-0029.webp", ref: "person-0029 · K029",
-      name: { ko: "강민서", en: "Kang Min-seo" },
-      role: { ko: "규격맹 · 2120년 명부 등재 당사자, 2121년 위원장", en: "Standard League · acted in 2120, chair from 2121" },
-      href: person("person-0029"),
-    }],
+  baekya: {
+    id: "baekya", date: "2126",
+    heading: { ko: "백야 · 논현2동의 무전", en: "Baekya · the Radio at Nonhyeon 2-dong" },
+    note: { ko: "신종목은 강남 논현2동에 살고, 무전에서는 백야라는 호출부호로 답한다. 그의 신호는 선정릉과 수서 사이를 오간다. 강남에 산다고 아크 소속은 아니다.", en: "Sin Jong-mok lives in Nonhyeon 2-dong, Gangnam, and answers on the radio as Baekya. His signal moves between Seonjeongneung and Suseo. Living in Gangnam does not make him Arc." },
+    images: [portrait("portraits/person-1009.webp", "person-1009 · K1009", "신종목", "Sin Jong-mok", "귀환망 현장 계약자 · 호출부호 백야", "Return-network contractor · callsign Baekya", person("person-1009"))],
     sources: [
-      { label: { ko: "백년 연대기 · 2120 등록 요구", en: "Century Annals · 2120 registration demand" }, href: ANNALS },
-      { label: { ko: "인물 기록 person-0029", en: "Person record person-0029" }, href: person("person-0029") },
+      { label: { ko: "백년 연대기 · 개막 직전의 몇 해", en: "Century Annals · the last years before the opening" }, href: ANNALS },
+      { label: { ko: "인물 기록 person-1009", en: "Person record person-1009" }, href: person("person-1009") },
     ],
   },
 };
 
 /** Line ID → panel. Only attaches; never alters spoken lines. */
 export const EXHIBIT_BY_LINE: Record<string, Exhibit> = {
-  "v5-hook-01": EX.guui, "v5-hook-02": EX.three,
-  "v5-hist-01": EX.camps, "v4-hist-02": EX.camps,
-  "v5-hist-03": EX.guui, "v4-hist-04": EX.neutralAid,
-  "v5-hist-05": EX.registry,
-  "v5-hist-06": EX.seoon, "v5-hist-07": EX.seoon, "v5-hist-08": EX.seoon, "v5-hist-09": EX.seoon,
-  "v5-hist-10": EX.dangsan, "v5-hist-11": EX.amsa, "v5-hist-12": EX.three, "v5-hist-13": EX.three,
-  "v3-sig-05": EX.koSeojun, "v3-sig-06": EX.koSeojun,
-  "v4-rte-05": EX.kangMinseo, "v4-rte-06": EX.kangMinseo,
+  "v6-cbl-01": EX.deadCable, "v6-cbl-03": EX.deadCable,
+  "v6-man-01": EX.manuals, "v6-man-02": EX.manuals,
+  "v6-bap-01": EX.baptism,
+  "v6-gov-02": EX.registry, "v6-end-reg-01": EX.registry,
+  "v6-fc-03": EX.gwanak, "v6-end-wks-01": EX.gwanak,
+  "v6-end-wat-01": EX.baekya,
 };
 
 export const KIND_LABEL: Record<ExhibitKind, { ko: string; en: string }> = {
-  portrait: { ko: "관련 인물 초상 · 사건 현장 사진 아님", en: "Related person's portrait · not an image of the event" },
-  flag: { ko: "국가 깃발 · 사건 현장 사진 아님", en: "State flag · not an image of the event" },
+  portrait: { ko: "관련 인물 초상 · 기록 사진 아님", en: "Related person's portrait · not a record image" },
+  scene: { ko: "장면 일러스트 · 기록 사진 아님", en: "Scene illustration · not a record image" },
 };
 export const EXHIBIT_CREDIT = {
-  ko: "이미지: 서울:전국 위키 공개 초상(art-proposal, 정본 승인 아님)과 국가 깃발. 이 사건들의 실제 현장 이미지는 위키에 없다.",
-  en: "Images: published wiki portraits (art-proposal, not canon-approved) and state flags. The wiki holds no actual depiction of these events.",
+  ko: "이미지: 서울:전국 위키 공개 초상(art-proposal, 정본 승인 아님)과 쇼케이스 장면 일러스트. 이 사건들의 실제 기록 이미지는 위키에 없다.",
+  en: "Images: published wiki portraits (art-proposal, not canon-approved) and the showcase's own scene illustrations. The wiki holds no actual record image of these events.",
 };

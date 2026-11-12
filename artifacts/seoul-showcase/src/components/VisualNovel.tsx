@@ -1,15 +1,12 @@
 import type { ReactNode } from "react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ChevronLeft, ExternalLink, FastForward, History, Play, Pause, RotateCcw, RotateCw, Subtitles, Volume2, VolumeX, X } from "lucide-react";
+import { ChevronLeft, ExternalLink, FastForward, History, Play, Pause, RotateCcw, Subtitles, X } from "lucide-react";
 import {
   CHOICE, CODA, ENDINGS, PORTRAIT_CREDIT, SCENES, SPEAKERS, WIKI_URL,
   type BgId, type ChoiceId, type SpeakerId, type StoryLine,
 } from "@/data/storyScript";
-import { BUNDLED_CLIPS, clipUrl } from "@/data/narration";
-import { sound } from "@/utils/sound";
 import { EXHIBIT_BY_LINE } from "@/data/historyExhibits";
 import { ExhibitPanel, ExhibitDetail } from "@/components/HistoryExhibit";
-import { speak, stopSpeech, useVoices, type VoiceMode } from "@/utils/speech";
 
 const BASE = import.meta.env.BASE_URL;
 const BG: Record<BgId, { src: string; kb: string }> = {
@@ -40,16 +37,10 @@ export default function VisualNovel() {
   const [choice, setChoice] = useState<ChoiceId | null>(null);
   const [revealed, setRevealed] = useState(0);
   const [auto, setAuto] = useState(false);
-  const [muted, setMuted] = useState(false);
   const [subs, setSubs] = useState(true);
   const [log, setLog] = useState(false);
-  const [voiceMode, setVoiceMode] = useState<VoiceMode>("off");
-  const [voiceDone, setVoiceDone] = useState(true);
-  const [replay, setReplay] = useState(0);
   const [showEx, setShowEx] = useState(true);
   const [exOpen, setExOpen] = useState(false);
-  const voices = useVoices();
-  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const steps = useMemo<Step[]>(() => {
     const s: Step[] = [...BASE_STEPS, { kind: "choice", line: CHOICE.prompt, frame: CHOICE_FRAME }];
@@ -57,7 +48,7 @@ export default function VisualNovel() {
       const e = ENDINGS[choice];
       const ef: Frame = { key: `end-${choice}`, act: "결말", actEn: "Ending", title: e.title.ko, titleEn: e.title.en, place: CHOICE.place.ko, placeEn: CHOICE.place.en, year: "2126", bg: e.bg };
       e.lines.forEach((line) => s.push({ kind: "line", line, frame: ef }));
-      const cf: Frame = { key: "coda", act: "종장", actEn: "Coda", title: "남은 나라들", titleEn: "The States That Remained", place: "남산", placeEn: "Namsan", year: "2116 → 2126", bg: "namsan" };
+      const cf: Frame = { key: "coda", act: "종장", actEn: "Coda", title: "백 년을 기억하는 방식", titleEn: "How the Century Is Remembered", place: "남산", placeEn: "Namsan", year: "2026 → 2126", bg: "namsan" };
       CODA.forEach((line) => s.push({ kind: "line", line, frame: cf }));
     }
     return s;
@@ -84,60 +75,32 @@ export default function VisualNovel() {
     let i = 0;
     const id = window.setInterval(() => {
       i += 1; setRevealed(i);
-      if (i % 2 === 0 && line.ko[i - 1]?.trim()) sound.click();
       if (i >= line.ko.length) window.clearInterval(id);
     }, 34);
     return () => window.clearInterval(id);
   }, [started, line]);
 
-  // Voice
-  const voiceSource: "bundled" | "synth" | "none" =
-    voiceMode === "off" ? "none" : clipUrl(line.id, voiceMode) ? "bundled" : voices[voiceMode] ? "synth" : "none";
-  const stopVoice = useCallback(() => {
-    stopSpeech();
-    if (audioRef.current) { audioRef.current.pause(); audioRef.current.src = ""; audioRef.current = null; }
-    sound.duck(false);
-  }, []);
-  useEffect(() => {
-    stopVoice();
-    if (!started || muted || voiceSource === "none") { setVoiceDone(true); return; }
-    setVoiceDone(false);
-    let alive = true;
-    const finish = () => { if (!alive) return; sound.duck(false); setVoiceDone(true); };
-    sound.duck(true);
-    if (voiceSource === "bundled") {
-      const a = new Audio(clipUrl(line.id, voiceMode as "ko" | "en")!);
-      audioRef.current = a; a.onended = finish; a.onerror = finish; a.play().catch(finish);
-    } else {
-      const v = voices[voiceMode as "ko" | "en"];
-      if (v) speak(voiceMode === "en" ? line.en : line.ko, v, finish); else finish();
-    }
-    return () => { alive = false; stopVoice(); };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [started, muted, voiceMode, voiceSource, line.id, replay]);
-  useEffect(() => () => { stopVoice(); sound.dispose(); }, [stopVoice]);
-  useEffect(() => { sound.setMuted(muted); }, [muted]);
-
   const next = useCallback(() => {
     if (!isDone) { setRevealed(line.ko.length); return; }
     if (step.kind === "choice") return;
-    if (pos < last) { if (steps[pos + 1].frame.key !== step.frame.key) sound.chime(); setPos(pos + 1); }
-  }, [isDone, line, step, pos, last, steps]);
+    if (pos < last) setPos(pos + 1);
+  }, [isDone, line, step, pos, last]);
   const back = useCallback(() => setPos((p) => Math.max(0, p - 1)), []);
   const skip = useCallback(() => {
-    if (pos < CHOICE_INDEX) { setPos(CHOICE_INDEX); sound.chime(); } else if (choice) setPos(last);
+    if (pos < CHOICE_INDEX) setPos(CHOICE_INDEX);
+    else if (choice) setPos(last);
   }, [pos, choice, last]);
-  const choose = (c: ChoiceId) => { setChoice(c); setPos(CHOICE_INDEX + 1); sound.chime(); };
+  const choose = (c: ChoiceId) => { setChoice(c); setPos(CHOICE_INDEX + 1); };
   const restart = () => { setChoice(null); setAuto(false); setPos(0); };
   useEffect(() => { if (pos > last) setPos(last); }, [pos, last]);
 
   // Auto
   useEffect(() => {
-    if (!auto || !started || log || exOpen || step.kind !== "line" || !isDone || !voiceDone || pos >= last) return;
-    const wait = voiceSource !== "none" ? 900 : Math.max(2600, line.ko.length * 75 + (subs ? line.en.length * 30 : 0));
+    if (!auto || !started || log || exOpen || step.kind !== "line" || !isDone || pos >= last) return;
+    const wait = Math.max(2600, line.ko.length * 75 + (subs ? line.en.length * 30 : 0));
     const id = window.setTimeout(() => setPos((p) => p + 1), wait);
     return () => window.clearTimeout(id);
-  }, [auto, started, log, exOpen, step, isDone, voiceDone, pos, last, subs, voiceSource, line]);
+  }, [auto, started, log, exOpen, step, isDone, pos, last, subs, line]);
 
   const keys = useRef({ next, back });
   keys.current = { next, back };
@@ -154,9 +117,7 @@ export default function VisualNovel() {
     return () => window.removeEventListener("keydown", onKey);
   }, [started, log, exOpen]);
 
-  const begin = () => { sound.start(); sound.setMuted(muted); setStarted(true); };
-  const voiceOk = (m: "ko" | "en") => BUNDLED_CLIPS[m].size > 0 || !!voices[m];
-  const voiceLabel = voiceMode === "off" ? null : muted ? "음소거 · Muted" : voiceSource === "bundled" ? "AI 생성 내레이션 · AI narration" : voiceSource === "synth" ? "브라우저 합성 음성 · Browser speech, not a recording" : "음성 없음 · Voice unavailable";
+  const begin = () => setStarted(true);
 
   const cast: SpeakerId[] = step.kind === "choice" ? [] : line.cast ?? [];
   const frame = step.frame;
@@ -176,8 +137,7 @@ export default function VisualNovel() {
       </div>
 
       <div className="relative z-10 flex min-h-[720px] flex-col">
-        <TopBar started={started} subs={subs} setSubs={setSubs} muted={muted} setMuted={setMuted} voiceMode={voiceMode}
-          setVoiceMode={(m) => { setVoiceMode(m); if (!started && m !== "off") begin(); }} koOk={voiceOk("ko")} enOk={voiceOk("en")} openLog={() => setLog(true)} />
+        <TopBar started={started} subs={subs} setSubs={setSubs} openLog={() => setLog(true)} />
 
         {!started ? <Title onBegin={begin} subs={subs} /> : (
           <>
@@ -201,7 +161,7 @@ export default function VisualNovel() {
 
             {showChoice ? <ChoiceRow onChoose={choose} subs={subs} />
               : showFinale ? <Finale subs={subs} onRestart={restart} onReselect={() => { setChoice(null); setPos(CHOICE_INDEX); }} />
-              : <Stage cast={cast} speaker={line.speaker} speaking={!isDone || !voiceDone} />}
+              : <Stage cast={cast} speaker={line.speaker} speaking={!isDone} />}
 
             {!showChoice && !showFinale && (introFor || exhibit) && (
               <div data-layout="info-strip" className="flex shrink-0 flex-col gap-2 px-3 pb-2 md:px-8 lg:flex-row lg:items-end lg:justify-between">
@@ -218,9 +178,8 @@ export default function VisualNovel() {
             )}
 
             <Dialogue line={line} revealed={revealed} subs={subs} isDone={isDone} onNext={next} onBack={back} canBack={pos > 0}
-              auto={auto} toggleAuto={() => setAuto((v) => !v)} onSkip={skip} voiceLabel={voiceLabel}
-              onReplay={() => setReplay((n) => n + 1)} replayOff={voiceSource === "none" || muted} isChoice={step.kind === "choice"}
-              progress={(pos + 1) / (choice ? steps.length : steps.length + 4)} />
+              auto={auto} toggleAuto={() => setAuto((v) => !v)} onSkip={skip}
+              isChoice={step.kind === "choice"} progress={(pos + 1) / (choice ? steps.length : steps.length + 3)} />
           </>
         )}
       </div>
@@ -328,7 +287,7 @@ function Intro({ id, subs }: { id: SpeakerId; subs: boolean }) {
 
 function Dialogue(p: {
   line: StoryLine; revealed: number; subs: boolean; isDone: boolean; onNext: () => void; onBack: () => void; canBack: boolean;
-  auto: boolean; toggleAuto: () => void; onSkip: () => void; voiceLabel: string | null; onReplay: () => void; replayOff: boolean; isChoice: boolean; progress: number;
+  auto: boolean; toggleAuto: () => void; onSkip: () => void; isChoice: boolean; progress: number;
 }) {
   const s = SPEAKERS[p.line.speaker];
   const narr = p.line.speaker === "narrator";
@@ -339,7 +298,7 @@ function Dialogue(p: {
           <span className="font-display text-xl font-extrabold md:text-2xl" style={{ color: s.tint }}>{s.name.ko}</span>
           {p.subs && <span className="font-en text-base italic text-[hsl(var(--frost)/0.8)]">{s.name.en}</span>}
           {!narr && s.title && <span className="hidden font-ui text-[11px] text-[hsl(var(--frost)/0.6)] md:inline">{s.title.ko}</span>}
-          {p.line.source && <span className="ml-auto font-mono text-[9px] uppercase tracking-widest text-[hsl(var(--frost)/0.45)]">{p.line.source === "profile" ? "공개 인물 기록 기반" : p.line.source === "annals" ? "세기 연대기" : "세력 문서"}</span>}
+          {p.line.source && <span className="ml-auto font-mono text-[9px] uppercase tracking-widest text-[hsl(var(--frost)/0.45)]">{p.line.source === "profile" ? "공개 인물 기록 기반" : p.line.source === "arcs" ? "권역 연대기" : p.line.source === "society" ? "세력 사회 문서" : "백년 연대기"}</span>}
         </div>
         <p lang="ko" className={`mt-2 min-h-[3.4em] text-lg leading-relaxed text-[hsl(var(--parchment))] md:text-[1.4rem] ${narr ? "" : ""} ${p.isDone && !p.isChoice ? "caret" : ""}`}>
           {p.line.ko.slice(0, p.revealed)}<span className="opacity-0">{p.line.ko.slice(p.revealed)}</span>
@@ -350,8 +309,6 @@ function Dialogue(p: {
           <Btn onClick={p.onBack} disabled={!p.canBack} label="이전 / Back"><ChevronLeft className="h-4 w-4" /></Btn>
           <Btn onClick={p.toggleAuto} pressed={p.auto} label="자동 진행 / Auto">{p.auto ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}<span>자동</span></Btn>
           <Btn onClick={p.onSkip} label="스킵 / Skip"><FastForward className="h-3.5 w-3.5" /><span>스킵</span></Btn>
-          <Btn onClick={p.onReplay} disabled={p.replayOff} label="다시 듣기 / Replay voice"><RotateCw className="h-3.5 w-3.5" /></Btn>
-          {p.voiceLabel && <span className="ml-1 text-[10px] text-[hsl(var(--ember)/0.85)]">{p.voiceLabel}</span>}
           <div className="ml-auto flex items-center gap-2">
             <div className="h-px w-24 bg-[hsl(var(--frost)/0.2)] md:w-40"><div className="h-px bg-[hsl(var(--ember))] transition-[width] duration-700" style={{ width: `${Math.min(100, p.progress * 100)}%` }} /></div>
             {!p.isChoice && <button type="button" onClick={p.onNext} className="rounded-sm px-3 py-1.5 font-ui text-xs font-semibold text-[hsl(var(--parchment))] hover:bg-[hsl(var(--parchment)/0.1)]">다음 {p.subs && <span className="opacity-60">Next</span>}</button>}
@@ -364,11 +321,11 @@ function Dialogue(p: {
 
 function ChoiceRow({ onChoose, subs: sb }: { onChoose: (c: ChoiceId) => void; subs: boolean }) {
   return (
-    <section data-layout="choice" className="wrap-text grid flex-1 grid-cols-1 content-end gap-2 px-3 pb-3 sm:grid-cols-2 md:px-8 lg:grid-cols-5" role="group" aria-label="갈 곳 선택 / Choose a path">
+    <section data-layout="choice" className="wrap-text grid flex-1 grid-cols-1 content-end gap-2 px-3 pb-3 sm:grid-cols-2 md:px-8 lg:grid-cols-3" role="group" aria-label="갈 곳 선택 / Choose a path">
       {CHOICE.options.map((o, i) => {
         const s = SPEAKERS[o.speaker];
         return (
-          <button key={o.id} type="button" onClick={() => onChoose(o.id)} className="rise group relative flex min-h-[170px] min-w-0 items-end overflow-hidden border border-[hsl(var(--parchment)/0.12)] text-left last:sm:col-span-2 last:lg:col-span-1 lg:min-h-[min(56cqh,460px)]" style={{ animationDelay: `${i * 140}ms` }}>
+          <button key={o.id} type="button" onClick={() => onChoose(o.id)} className="rise group relative flex min-h-[170px] min-w-0 items-end overflow-hidden border border-[hsl(var(--parchment)/0.12)] text-left lg:min-h-[min(56cqh,460px)]" style={{ animationDelay: `${i * 140}ms` }}>
             <img src={`${BASE}${s.portrait}`} alt="" className="portrait-mask absolute inset-0 h-full w-full object-cover object-top opacity-55 transition-[opacity,transform] duration-700 group-hover:scale-[1.04] group-hover:opacity-100 group-focus-visible:opacity-100" />
             <div className="absolute inset-0 bg-gradient-to-t from-[hsl(214_40%_4%)] via-[hsl(214_40%_4%/0.3)] to-transparent" />
             <div className="relative min-w-0 p-4">
@@ -449,20 +406,12 @@ function Backlog({ steps, subs: sb, onClose, onJump }: { steps: Step[]; subs: bo
   );
 }
 
-function TopBar(p: { started: boolean; subs: boolean; setSubs: (f: (v: boolean) => boolean) => void; muted: boolean; setMuted: (f: (v: boolean) => boolean) => void; voiceMode: VoiceMode; setVoiceMode: (m: VoiceMode) => void; koOk: boolean; enOk: boolean; openLog: () => void }) {
-  const opts: { m: VoiceMode; l: string; ok: boolean }[] = [{ m: "off", l: "OFF", ok: true }, { m: "ko", l: "한", ok: p.koOk }, { m: "en", l: "EN", ok: p.enOk }];
+function TopBar(p: { started: boolean; subs: boolean; setSubs: (f: (v: boolean) => boolean) => void; openLog: () => void }) {
   return (
     <header data-layout="topbar" className="sticky top-0 z-[60] flex shrink-0 items-center gap-2 bg-gradient-to-b from-[hsl(214_40%_3%/0.85)] to-transparent px-4 py-3 md:px-8">
       <p className="font-display text-base font-extrabold text-[hsl(var(--parchment))] md:text-lg">서울<span className="text-[hsl(var(--ember))]">:</span>전국</p>
       <div className="ml-auto flex items-center gap-1 font-ui">
-        <div role="radiogroup" aria-label="음성 / Voice" className="mr-1 flex border border-[hsl(var(--parchment)/0.2)] p-0.5">
-          {opts.map((o) => (
-            <button key={o.m} type="button" role="radio" aria-checked={p.voiceMode === o.m} disabled={!o.ok} onClick={() => p.setVoiceMode(o.m)} title={o.ok ? `음성 ${o.l}` : "이 브라우저에서 사용 불가 / Unavailable"}
-              className={`h-7 min-w-8 px-1.5 font-mono text-[10px] font-bold disabled:opacity-30 ${p.voiceMode === o.m ? "bg-[hsl(var(--parchment))] text-[hsl(214_40%_6%)]" : "text-[hsl(var(--frost))]"}`}>{o.l}</button>
-          ))}
-        </div>
         <Btn onClick={() => p.setSubs((v) => !v)} pressed={p.subs} label="영어 자막 / English subtitles"><Subtitles className="h-4 w-4" /></Btn>
-        <Btn onClick={() => p.setMuted((v) => !v)} pressed={p.muted} label="음소거 / Mute">{p.muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}</Btn>
         {p.started && <Btn onClick={p.openLog} label="지난 이야기 / Backlog"><History className="h-4 w-4" /></Btn>}
       </div>
     </header>
@@ -483,19 +432,19 @@ function Title({ onBegin, subs: sb }: { onBegin: () => void; subs: boolean }) {
     <main data-layout="title" className="wrap-text relative z-20 flex flex-1 flex-col justify-end px-6 pb-14 pt-6 md:justify-center md:px-16 md:pb-10">
       <p className="rise font-mono text-[10px] uppercase tracking-[0.5em] text-[hsl(var(--ember))]">모션 그림 동화 · 2026 — 2126</p>
       <h1 className="rise mt-4 font-display text-6xl font-extrabold leading-[0.95] text-[hsl(var(--parchment))] md:text-8xl lg:text-[8.5rem]" style={{ animationDelay: "200ms" }}>서울<span className="text-[hsl(var(--ember))]">:</span>전국</h1>
-      <p className="rise mt-3 font-display text-2xl text-[hsl(var(--parchment)/0.9)] md:text-4xl" style={{ animationDelay: "350ms" }}>겨울의 연대기</p>
-      {sb && <p className="rise font-en text-lg italic text-[hsl(var(--frost))] md:text-2xl" style={{ animationDelay: "420ms" }}>A Chronicle of the Winter</p>}
+      <p className="rise mt-3 font-display text-2xl text-[hsl(var(--parchment)/0.9)] md:text-4xl" style={{ animationDelay: "350ms" }}>영원한 겨울의 연대기</p>
+      {sb && <p className="rise font-en text-lg italic text-[hsl(var(--frost))] md:text-2xl" style={{ animationDelay: "420ms" }}>A Chronicle of the Eternal Winter</p>}
       <p className="rise mt-6 max-w-md text-base leading-relaxed text-[hsl(var(--parchment)/0.85)]" style={{ animationDelay: "550ms" }}>
-        전령 이연이 얼어붙은 서울로 당신을 안내한다. 기록실, 차량기지, 무전 당직, 수서 창구, 분공방에서 다섯 사람을 만나며 나라들이 세 국가로 묶인 과정을 듣는다.
+        전령 이연이 얼어붙은 서울로 당신을 안내한다. 대정전에서 시작해 세 세력이 선 자리까지, 죽은 케이블 하나를 따라간 전선공 고예진의 길을 중심에 두고 백 년을 걷는다.
       </p>
-      {sb && <p className="rise font-en mt-1 max-w-md italic text-[hsl(var(--frost)/0.8)]" style={{ animationDelay: "600ms" }}>The courier Iyen takes you through frozen Seoul to meet five people, at a records room, a depot, a radio watch, a ration counter and a workshop, and hear how the states became three.</p>}
+      {sb && <p className="rise font-en mt-1 max-w-md italic text-[hsl(var(--frost)/0.8)]" style={{ animationDelay: "600ms" }}>The courier Iyen takes you through frozen Seoul, from the Great Blackout to the rise of the three factions — a hundred years walked around one linesman, Go Ye-jin, and the dead cable he followed.</p>}
       <button type="button" onClick={onBegin} autoFocus className="rise group mt-8 flex w-fit max-w-full flex-wrap items-center gap-x-4 gap-y-1 border-b border-[hsl(var(--parchment)/0.5)] pb-2 text-[hsl(var(--parchment))]" style={{ animationDelay: "750ms" }}>
         <span className="font-display text-2xl font-extrabold">이야기 시작</span>
         <span className="font-en italic opacity-70">Begin the story</span>
         <span className="h-px w-10 bg-[hsl(var(--ember))] transition-transform duration-500 group-hover:scale-x-150" style={{ transformOrigin: "left" }} />
       </button>
       <p className="rise mt-8 max-w-lg font-ui text-[10px] leading-relaxed text-[hsl(var(--frost)/0.55)]" style={{ animationDelay: "900ms" }}>
-        인물 대사는 공개 인물 기록에 근거한 쇼케이스 창작이며 정본 인용이 아닙니다. 음성은 기본 꺼짐.<br />{PORTRAIT_CREDIT.ko}<br />{PORTRAIT_CREDIT.en}
+        인물 대사는 공개 인물 기록에 근거한 쇼케이스 창작이며 정본 인용이 아닙니다.<br />{PORTRAIT_CREDIT.ko}<br />{PORTRAIT_CREDIT.en}
       </p>
     </main>
   );
