@@ -1,106 +1,145 @@
 ---
-model: cpa/glm-5.3; 0 completion calls; written by the agent by hand; not from a Gemini model
-section_checkpoint: W3-A final
+title: People, Factions and Trades
+title_ko: 인물·세력·생업
+model: cpa/claude-opus-5-5; written by the agent by hand from the v3 bible (plan wiki-lore-rebuild-v3 task 12); not from a Gemini model
+section_checkpoint: v3 task 12 complete
 ---
-<a id="세-세력"></a>
+This wiki holds the records of 1,022 people of Seoul in 2126. This document explains where those people are placed: whose ledger they are on, which tier of seat they hold, what title they use, at which station they sleep and work, and what work they live by. In Seoul a person's place is mostly settled at birth. Scarcity made children take over their parents' work, and so the strata hardened.
 
-## The Three Factions
+## The People on Record
 
-At the opening in 2126, Seoul is divided among three factions. The fourteen districts north of the Han River are the **Government**'s; the seven southwestern districts are the **Free City**'s; the four Gangnam districts are **Arc**'s. One district is one duchy, and Seoul holds twenty-five duchies in all.
+Of the 1,022 people on record, 504 are Government people, 320 are Arc people and 190 are Free City people. The remaining eight were recorded on no ledger at all. Some of them have since attached themselves to a polity by way of their work; some belong to no side to the end.
 
-**A. The Government**
+There are only three factions: the Government, the Free Cities and Arc. A person who belongs to none of them is recorded not as a faction but as **unaffiliated**. These are people whose work would break if they joined one side, such as a party that crosses the rim and sells whatever it brings to any side, or a negotiator who sits at a contract meeting holding the shares of traders from several cities at once.
 
-On paper the Government keeps the ministries of the three branches of the Republic of Korea and a multiparty system. In practice there are only two parties, the OMO Party and the Claw Party. The assembly member elected in each district holds that district's duchy and bears the title Senator. The Senators gather candidates from among themselves and produce the President, who serves for life. The Government recognizes as citizens only the people entered in its own registers. It regards the land across the river as where barbarians live.
+A person's faction goes with the land they live on. One district is one duchy, and every district has a set polity that holds it. So Government people mostly live in the 14 districts north of the Han, Free City people in the 7 districts of the southwest, and Arc people in the 4 districts of Gangnam.
 
-**B. The Free City**
+## The Five Tiers of Seats
 
-The Free City is not a single power. Each city is its own power and holds its own duchy; there is no king. Most residents are engineers who trade goods and skills. Together they are now called the Union. The Duke of Gwanak is I Ilseop.
+The "tier" field on a person's page is the tier of the seat that person holds. There are five tiers.
 
-**C. Arc**
+| Tier | Meaning | Government | The Free Cities | Arc |
+|---|---|---|---|---|
+| T1 | Heads and districts | President for Life, Members of the National Assembly | The seven city heads | Hierophant, Heads of the Near Houses |
+| T2 | Offices of the polity and district households | Ministers, agency chiefs, the Governor of the Bank of Korea, the Director of the National Intelligence Service, the Capital Defense Commander, vice-ministers, heads of district offices, heirs of Assembly Member houses | The heir of a city head, Yangcheon's shift chiefs, Dongjak's crossing chiefs, holders of large workbenches | Near House elders, the Guard Captain and Word Keepers of the Hierophant's household, negotiators who handle large dealings |
+| T3 | Dong | Dong Chief | Section Chief | Shelter Head |
+| T4 | Station | Stationmaster | Station Foreman | Bench Keeper |
+| T5 | All other work | Clerks, police officers, soldiers, skilled and labour hands, market traders, health workers, dependants | Workbench holders, crew chiefs, hands, apprentices, trade and contract, guards, labour hands | Bench workers, baptised workers and fighters, the unbaptised |
 
-Arc is a faith community that split from the Free City and settled in the four Gangnam districts. Its Hierophant is Go Ye-jin, and the believers call her the Messiah. Believers receive baptism, the replacement of body parts with machines. The culture of the faith is treated separately in [Faith and Culture](/wiki/Faith-Culture-Schism/).
+There are twenty-seven T1 seats: fifteen for the Government (fourteen Members of the National Assembly and the President for Life), seven for the Free Cities, and five for Arc (four Heads of the Near Houses and the Hierophant). When a Member of the National Assembly becomes President, the seat passes to the heir of that household. So the fourteen Members and the President for Life are fifteen different people, and the fourteen Members come from fourteen different households.
 
-<a id="세습-생업"></a>
+## Titles and Positions
 
-## Hereditary Trades
+Only the holders of T1, T3 and T4 seats use titles. Everyone else uses, instead of a title, the name of the work they do. A title carries the real name of the seat's land.
 
-Scarcity made people take up their parents' work. Without infrastructure the population did not grow, and parents handed their work down to their children. The vertical ranks that hardened this way became an institution in the Government's land. The Government still holds elections, and every election returns the same answer.
+| Seat | How the title is written | Example |
+|---|---|---|
+| Member of the National Assembly | Member of the National Assembly for + district | Member of the National Assembly for Jongno-gu |
+| President for Life | President for Life | |
+| Free City head | City name + title | Duke of Gwanak, Dongjak Ferry Keeper, Guro Works Master |
+| Head of a Near House | Head of the + district name + Near House | Head of the Songpa Near House |
+| Hierophant | Hierophant | |
+| Dong seat | Dong Chief / Shelter Head of + dong name | |
+| Section seat | Section Chief of + section name | Section Chief of Sindorim |
+| Station seat | Stationmaster / Station Foreman / Bench Keeper of + station name | Stationmaster of Seoul Station |
 
-The Free City is bound by the exchange of skills more than by inheritance. A person who does plumbing does not know power distribution; a person who does power distribution does not know the water purifiers. There was no way to judge whose skill ranked higher, so the cities chose no leader. They traded goods with one another and each lived its own life.
+A position adds the station where the person works after the title or work name, as in "ration clerk · Seoul Station" or "hand · Sindorim Station". A person whose seat's land is itself the place of work adds the faction name after the title instead, as in "Duke of Gwanak · the Free Cities" or "Member of the National Assembly for Jongno-gu · Government".
 
-## Trades
+## The Station Where One Lives and Works
 
-Facilities such as water treatment plants, depots, hospitals, and workshops put people of different trades on duty together. Even within one trade, people differ in organization, titled domain, and personal taste, in clothing as in tools.
+Everyone has two real stations: the station where they work and the station where they sleep. Usually they are the same.
 
-<a id="깊이와-생업에-따른-옷차림"></a>
+- **Seat holders.** The holder of a district works at that district's seat station. The President for Life works at Gwanghwamun, where the Government Complex Seoul stands, and the Hierophant at Jamsil. Dong Chiefs and Shelter Heads are at the station of their dong with the most links to neighbouring stations, Section Chiefs at the first station of their section, and station seat holders at their station.
+- **Everyone else.** They live at a station in the district they belong to.
+- **People living on another faction's land.** These are few: Free City technicians and guarantors of the water contracts staying at Government stations, Government traders with coupons staying at Free City markets, Government people who keep the return network's radios and shelters, envoys, and Arc people who maintain the machines in bodies at Free City workshops.
 
-## Clothing by Depth and Trade
+Sin Jong-mok, a field contractor of the return network, lives in Nonhyeon 2-dong in Gangnam. His callsign is Baekya, and he links Seonjeongneung and Suseo.
 
-Clothing follows the basic silhouettes of the 1940s, during the Second World War. Higher-tier characters wear thinner clothing, while people who go above ground often or spend longer exposed to cold wear thicker winter clothes. Someone dressed lightly underground still puts on outerwear suited to the local cold before going outdoors.
+## Age
 
-Clothing varies with life on the surface, at intermediate depth, or deep underground. A heated room and a draughty passage can call for different layers on the same floor; insulation follows the temperature of the space a person actually occupies. At the same temperature, activity, working conditions, and individual sensitivity to cold create further differences. Garment cuts, pockets, and equipment reflect trades, while thickness, fabric, and removable layers adapt to the surroundings. Regional temperature differences affect clothing more strongly on the surface than underground.
+Age bars the way to a seat. Each of the three polities sets the youngest age at which a seat can be held.
 
-People in the same trade dress differently according to their organization, titled domain, and personal taste. Couriers share a need for mobility and storage without sharing every jacket cut, colour, or pocket arrangement. The same garment may illustrate regional differences in insulation, but a shared trade does not give everyone an identical outfit.
-
-<a id="지상의-복장"></a>
-
-### Surface Quarters
-
-On the surface in Seoul, people dress for severe cold of −18.6°C. Couriers and porters retain the familiar cut of their work jackets while adding wind-resistant fabric and insulating liners, gloves, and neck coverings. Guards standing watch and merchants at outdoor stalls add more insulation than people on the move. Porters close loosened collars and fastenings when they set down their loads to rest.
-
-Even for the same female courier, the Gangwon surface reference of −21.9°C calls for a thick insulating liner that fills out the jacket torso and sleeves, with visible thickness at the collar and cuffs. At Jeju’s −2.7°C surface reference, the same pocket and equipment layout remains, while thinner lining reduces bulk, producing narrower sleeves and more flexible folds. Wind-resistant outer fabric, gloves, and insulating leg coverings remain necessary in Jeju’s subzero setting. Regional differences appear in the coat’s volume and fabric as well as accessories such as scarves.
-
-Mechanics working above ground add insulating lining to clothing that protects their arms and hands. People handling water also insulate beneath water-resistant aprons and inside boots. Fabric and thickness preserve the hand movement and protection their work requires, while men and women maintain similar levels of protection from the cold.
-
-On the surface, exposure to wind and time spent outdoors matter as well as air temperature. On draughty platforms, outer fabric and fastenings block cold air; in sheltered workplaces, people adjust layers to the heat generated by their work. A small temperature difference between two regions alone does not produce a dramatic difference in coat bulk.
-
-<a id="중간-깊이의-복장"></a>
-
-### Intermediate Underground Quarters
-
-Intermediate underground quarters have a baseline range of 8-18°C, but entrance passages admitting much outdoor air in cold regions can fall below 8°C. Even these remain warmer than the local surface, and people dress for the space rather than its floor label. Couriers and porters wear work jackets over insulating base layers, removing outer layers and tying them to their bags while moving continuously in warmer areas. Clerks and advisers seated for long periods on the same level add wool base layers, vests, or cardigans; patrolling guards put insulation back on when they stop to stand watch.
-
-Mechanics and workshop workers at the same depth choose lining thickness for their activity while retaining protective long sleeves and work gloves. Medical workers wear washable long sleeves with the protection their tasks require; water-treatment workers adjust insulation beneath water-resistant aprons and inside boots. At the same air temperature, people still need different layers and fabrics because their movement, exposure to water, and contact with materials differ.
-
-<a id="깊은-지하의-복장"></a>
-
-### Deep Underground Quarters
-
-In deep underground quarters with a baseline of 18-22°C, active couriers and porters wear thin shirts, rolling their sleeves or choosing short sleeves when their tasks permit. Seated clerks and merchants sensitive to cold retain thin long sleeves and light outer layers in the same area. Greater depth does not make everyone expose skin or wear the same number of layers.
-
-Even in deep areas, mechanics keep clothing that covers their hands and arms, and workers handling water retain their aprons and boots. Anyone going outdoors above ground obtains outerwear suited to the local cold and puts it on before stepping outside. This also applies to clerks and merchants who normally work underground. Someone visiting only an indoor ground-level entrance dresses for its indoor temperature rather than automatically adding an outdoor coat.
-
-<a id="같은-깊이의-개인차"></a>
-
-### Individual Differences at the Same Depth
-
-Underground, men doing comparable work tend to dress more lightly than women, but that tendency does not override their tasks or individual comfort. A male clerk sensitive to cold may wear a vest, while a busy female courier may remove her jacket. Above ground, both use a comparable level of cold-weather protection rather than keeping their light underground clothing.
-
-Insulation shows through coat volume, folds, and lining visible at an open collar or sleeve end. Hidden lining does not distinguish one person from another. When a coat is added or removed, the face, hairstyle, physique, and visible distinctive features remain, preserving the impression of the same person across outfits.
-
-<a id="인물"></a>
-
-## People
-
-The people known by name at the opening are listed below. English spellings follow the people ledger.
-
-| Name | What is known |
+| Polity | Age thresholds |
 |---|---|
-| Go Ye-jin | Hierophant of Arc. The believers call her the Messiah. She comes from the Free City. |
-| I Ilseop | Duke of Gwanak. |
-| Ji Yeon-hui | Go Ye-jin's bodyguard since 2120. |
-| Sin Jong-mok | Callsign Baekya, linking Seonjeongneung and Suseo. |
-| Sin Jun | Sin Jong-mok's son. |
-| Jo Jaepyo | Figure of the Yeouido grand council. |
-| Oh Hae-rin | Director. |
+| Government | On the sixteenth birthday a child is registered under the household head's trade (inheritance registration). Conscription comes at nineteen. A Member of the National Assembly can hold the seat by inheritance from eighteen. Dong Chiefs and Stationmasters from twenty-five, ministers and heads of district offices from thirty |
+| The Free Cities | Around twelve a child joins the family's workbench as an apprentice. A child who shows the skill becomes a hand from sixteen. Station Foremen and workbench holders from twenty, city heads and Section Chiefs from twenty-five |
+| Arc | The first baptism comes only after sixteen, though a baptism that repairs a lost part of the body is given at any age. Bench Keepers from twenty-five, Shelter Heads from twenty-eight, Near House elders from forty. For the Head of a Near House the part count matters instead of age: the next Head must have two or more parts |
 
-## Sources
+## Households and Inheritance
 
-- [The Three Factions of Seoul](/wiki/Sixteen-States/)
-- [World Map](/wiki/World-and-Subway-Layers/)
-- [Scenario Timeline](/wiki/Scenario-Timeline/)
+People of the same clan within the same faction are called a **house**. The house is the unit that hands work down. People of one house do the same work as far as they can, and a person whose parents are on record follows the parents' work first.
+
+| Polity | What is inherited | Who receives it |
+|---|---|---|
+| Government | The seat of a Member of the National Assembly. Elections for the National Assembly remain, but the households that can gather the votes are fixed. A Stationmaster's seat also passes within the Stationmaster's house. Dong Chiefs are appointed by the Member of the National Assembly | The heir of the house. The President's seat goes to the heir of the President's house |
+| The Free Cities | It differs from city to city. In Yangcheon and Gwanak a house inherits; in Gangseo the workbench holders of the wind fields decide, in Guro the count of sureties kept, in Geumcheon the edge crews from among those who have crossed the rim and come back, in Dongjak the crossing chiefs, and in Yeongdeungpo the turn of the market houses. Workbenches are inherited within the holder's house | A child who has shown the skill. An eldest child who cannot show the skill does not inherit the bench |
+| Arc | The seat of the Head of a Near House. It follows blood, but the heir must have two or more parts. The Hierophant can appoint and remove a Near House | The heir within the Near House. Whether blood or steel comes first is the daily politics of Arc |
+
+Among the people on record, only three groups of living people are recorded as one household. Sin Jong-mok and his son Sin Jun are one of them. The records of clans and generation names are in [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/).
+
+## The Trades of the Three Polities
+
+**Government.** The ledger records a trade for each person, and what is recorded hardens. The household head's trade is the household's stratum.
+
+| Stratum | Who | Share of Government people |
+|---|---|---|
+| Assembly Member houses | Members of the National Assembly, their households and close kin households. The fourteen houses and the President's house | About 0.5% |
+| Civil servant households | Dong Chiefs, clerks, Stationmasters, police officers, ministry staff | About 8% |
+| Military households | Households of professional soldiers (non-commissioned and commissioned officers) | About 7% |
+| Skilled households | Pump crews, heat-pump maintenance, fibre-sugar vat keepers, electricians, menders | About 18% |
+| Labour households | Entrance hands, scrap and fibre gatherers, light-field hands, porters, woodcutters | About 66.5% |
+
+The only way up is the civil service examination held each year at the Government Complex Seoul. A few dozen pass each year. Going down is easy. A clerk who gets the ledger wrong goes to a labour household.
+
+**The Free Cities.** What is inherited is not a trade but a **workbench**. A workbench is a workshop a house holds down the generations, and the skill of that house. Each bench does one kind of work, like the motor benches, pump benches and boring benches.
+
+| Stratum | Who | What they have |
+|---|---|---|
+| Workbench houses | Bench holders and their families | The right to contract and issue surety tags in their own name, the bench's seal |
+| Hands | Technicians attached to a bench | Wages and shares, the right to contract under their bench holder's surety |
+| Labour hands | People who have not shown a skill, people who broke a surety and lost their seal, people who fled the Government's ledger, people who came back from Arc | Wages. They cannot contract in their own name |
+
+A labour hand can become a hand by doing a bench's work alone in front of any bench holder. But few bench holders take in labour hands to teach. A bench holder teaches his own children first.
+
+**Arc.** Its hands grow up at the maintenance bench. Every station has one, run by a Bench Keeper. The bench's children help tend the joins from an early age and grow up to be body fitters, who fit machines to bodies, and board hands, who bring circuit boards back to life. One Arc person in six has been baptised; the rest are unbaptised. The unbaptised take on much of the entrance, vat and surface work.
+
+## Kinds of Work
+
+The "occupation" field on a person's page is the work that person does. Work in Seoul either keeps the job names of the Republic of Korea or is named after what it handles. This wiki groups work into the following kinds.
+
+| Kind | Work |
+|---|---|
+| Governance | State affairs, administration, management, command of a body of people |
+| Fighting | Infantry, shooting, artillery, drone piloting, staff work, command, conscription |
+| Guarding | Watch, patrol, close protection, policing |
+| Care | Treatment, emergency care, medicines |
+| Fitting | Fitting machines to bodies, performing baptisms, charging |
+| Provision | Fibre sugar, light-fields, mushrooms, grubs, fishing, sprouts, kitchens |
+| Labour | Opening snow shafts, clearing snow, firewood, stoves, methane, carrying, making clothes |
+| Trade | Rationing, trading, negotiating, weighing, distributing goods, coupons |
+| Carrying word | Messengers, escorts, dispatch, radio, crossings |
+| Repair | Maintenance, pumps, water wheels, making and machining parts |
+| Scouting | Gathering, reconnaissance, exploration, intelligence |
+| Record | Ledgers, copying, records, teaching, rate boards |
+
+Each kind of repair work has its own name: wind-machine hand, heat-pump hand, well hand, water-wheel hand, line hand, winder, lathe hand, battery hand, board hand, gunsmith, cartridge hand and net hand. Net hands are the most common, and board hands, who bring circuit boards back to life, are the rarest. Every time skill crosses a generation, something falls away. The people of Seoul say, "My grandfather brought this board back to life, my father moved it, and I keep it."
+
+## People Known by Name
+
+| Name | Place |
+|---|---|
+| Go Ye-jin | Hierophant of Arc. Believers call her the Messiah. She grew up in a Free City |
+| I Ilseop | Duke of Gwanak |
+| Ji Yeon-hui | In 2120 she stood beside Go Ye-jin at the shelter negotiations by the Tancheon, and has been her bodyguard ever since |
+| Sin Jong-mok | Field contractor of the return network. Lives in Nonhyeon 2-dong in Gangnam. Callsign Baekya |
+
+## Related Documents
+
+- [Titles and Offices](/wiki/Offices-and-Ranks/)
+- [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/)
 - [Values and Policy Scales](/wiki/Values-and-Policy-Scales/)
-- [Families and the Three Factions](/wiki/Chaebol-Houses-and-Century-Factions/)
-- [Diaspora Corridors](/wiki/Diaspora-Corridors/)
-- [Faith and Culture](/wiki/Faith-Culture-Schism/)
-- [Glossary](/wiki/Glossary/)
+- [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/)
+- [The Hands That Run a Station](/wiki/Operating-Houses/)
+- [Government Society](/wiki/Government-Society/)
+- [Free City Society](/wiki/Free-City-Society/)
+- [Arc Society](/wiki/Arc-Society/)

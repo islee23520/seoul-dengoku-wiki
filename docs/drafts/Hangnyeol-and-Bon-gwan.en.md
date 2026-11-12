@@ -1,50 +1,75 @@
 ---
-model: original drafts by cpa/claude-opus-5-5; rework by cpa/glm-5.3; 0 completion calls in both rounds; agent-authored text with scripted edits; not from a Gemini model
-section_checkpoint: complete
+title: Bon-gwan and Hangnyeol
+title_ko: 본관과 항렬
+model: cpa/claude-opus-5-5; written by the agent by hand from the v3 bible (plan wiki-lore-rebuild-v3 task 12); not from a Gemini model
+section_checkpoint: v3 task 12 complete
 ---
+In 2126 the people of Seoul still tell families apart by surname and bon-gwan, as before the Great Blackout. The bon-gwan is the place name that separates the lines of a surname, and the hangnyeol is the single syllable that people of the same generation in the same family share in their names. For a hundred years the stations have been divided and the river frozen and families scattered, but these two things in a name have survived. So when two people living on opposite banks of the river share a bon-gwan and a generation syllable, they are kin of the same generation even if they have never met.
 
-Bon-gwan identified a lineage within a surname, while hangnyeol was a rule marking generations from the founder with one character in names within the same clan. Surname, bon-gwan, branch, family line, generation count, and hangnyeol character were separate fields. People with the same surname were not necessarily from the same family, and people of the same age did not necessarily belong to the same generation.
+## Clan Records
 
-## Examples of Family Hangnyeol
+This wiki's clan records do not change. Like a person's name, sex and age, surname, bon-gwan and family ties are kept as fixed facts. However the politics of 2126 change, these records stay as they are.
 
-In 2126, Yi Hong-won belongs to the Gyeongju Yi clan, Jeong Seoon to the Jinyang Jeong clan, and Choe Ji-u to the Changnyeong Choe clan.
+| Record | Number |
+|---|---|
+| Clans (pairs of surname and bon-gwan) | 177 |
+| People on clan rolls | 955 |
+| Families that do not use the bon-gwan and generation names of Korean clans | 62 |
+| Generation lines | 126, with 515 people |
 
-1. Yi Hong-won: Gyeongju Yi clan
-2. Jeong Seoon: Jinyang Jeong clan
-3. Choe Ji-u: Changnyeong Choe clan
+Each clan has a surname, a bon-gwan, hanja characters and a crest motif, and generation lines below it. People with the same surname but a different bon-gwan are of different families. Even the same bon-gwan written in Hangul may be a different line if its hanja differ.
 
-| Item | Confirmed value | Interpretation |
+## Bon-gwan
+
+A bon-gwan is the name of the place where a family's founder was born or first settled. When the people of Seoul hear a new acquaintance's surname, they ask for the bon-gwan. The Government's ledger records the bon-gwan as an item of resident registration. Free City people call one another by city, bench and household, as in "the Gim family's second from the Guro motor bench", but when a marriage is made they look into the bon-gwan. Arc people put a part count before a name, but in Near House marriages they look at the bon-gwan first.
+
+Most bon-gwan names are the names of old towns outside Seoul. For the people of Seoul in 2126 those places lie beyond the rim, and nobody has been there. A bon-gwan is now a way of carrying, inside a name, a land no one can visit.
+
+## Hangnyeol
+
+A generation syllable is a character that people of the same generation in the same family share in the same position of their names. This wiki groups the people of one clan who use the same character in the same position of their names into one **generation line**. A line is named "<syllable> generation line". The same hangnyeol means the same generation, so the people of one line are usually close in age.
+
+Generation lines are inferred from the records. Most of the genealogies from before the Great Blackout were buried in old homes under the snow, or disappeared as fibre. The Government does not eat old official documents, but the genealogies families kept at home did not fall under that taboo. So the hangnyeol of 2126 is something people have pieced together again by laying their names side by side. This wiki marks the state of each line as "inferred".
+
+Many people have single-syllable given names, and many families named their children without a generation syllable. Having a bon-gwan does not mean a family has set a hangnyeol.
+
+## Kin Divided across the River
+
+Of the 126 generation lines, 92 have people scattered across two or more polities. There are two reasons.
+
+1. **When the ledger was bound together.** Between 2036 and 2045 the stations north of the river bound their ledgers into one around the Gwanghwamun Government complex. Even within one family, those at stations the clerks reached became the registered, and those across the river went off the ledger. From then on the registered could not change where they lived at will.
+2. **When Arc split away.** Around 2122 the Gangnam shelters were bound together as Arc. Free City families who lived in the Gangnam shelters became Arc as they were.
+
+So cousins of the same generation live on both banks of the river and on both sides of the Dongjak and Seocho border. The "Ho" generation line of the Gwangju No Clan is an example. Of the same generation, No Ba-ho lives under the Government, No Solho in the Free Cities and No Haho in Arc. The three share one syllable in their names, yet live under different ledgers and in different ways of speaking.
+
+Kin across the river are the most common thread between the three polities. The paths that goods are smuggled along, and the paths along which envoys first open talks, mostly follow this thread. The Government's ledger records kin across the river as people off the ledger. A marriage with a person off the ledger is registered only if that person passes a registration review.
+
+## Houses and Inheritance
+
+People of the same clan within the same polity are called a **house**. In Seoul work pools in houses, because scarcity made children take over their parents' work.
+
+| Polity | What a house holds | Marriage |
 |---|---|---|
-| Total surnames surveyed | 5,582 | Included naturalized and non-Hanja spellings |
-| Surnames representable in Hanja | 1,507 | The same Hangul spelling could represent separate lineages when the Hanja differed |
-| Surnames without Hanja | 4,075 | Reflected a large increase in modern naturalized and foreign-origin spellings |
-| Surnames by bon-gwan | 36,744 | Increased from 4,179 in 2000 |
-| Major bon-gwan listed in the table | 408 | Only bon-gwan accounting for a majority of each surname's population were listed |
-| Surname rows with a blank major bon-gwan field | 263 | This did not mean there was no bon-gwan; no majority bon-gwan existed or the table did not list it |
+| Government | An Assembly Member's house passes down a district's seat. One house holds only one seat. A Stationmaster's seat also passes within the Stationmaster's house. Other households pass down the trade written in the ledger | Valid only once the Dong Chief registers it in the ledger. A marriage between strata needs the Dong Chief's approval, and a marriage in an Assembly Member's house needs the Member's approval. Marriage between Assembly Member houses is the commonest way of gathering in advance the seals that will acclaim a President |
+| The Free Cities | A workbench house passes down its bench and its seal. A child who cannot show the skill does not inherit the bench, and then the bench holder brings in someone from another household who has shown it, by marriage or by contract | A household contract made between two houses. A marriage that joins the skills of two benches is counted the best marriage. Marriages between cities are common |
+| Arc | A Near House is a family of the Hierophant's blood, or one that came close to the Hierophant through marriage and long service at her side. The seat of the Head of a Near House follows blood, but the heir must have two or more parts | Arranged between houses. A Near House marriage is politics. A marriage with a bench worker's house is counted the best marriage. Baptism is not a condition of marriage |
 
-The bon-gwan in use in 2126 belong to 169 clans. Of these, 166 are old clans, and three are clans newly agreed upon after the collapse. The clans of the Ran and the Heung are the Dobong Ran clan and the Susaek Heung clan, respectively.
+## Families without Bon-gwan or Hangnyeol
 
-## The Clan Register
-
-The clan register listed all 1,022 people on the person register; 1,017 of them had bon-gwan and clan IDs. No bon-gwan, clan, or hangnyeol was recorded for Go Ye-jin, Han Seo-gyeong, Cha Yu-seon, and Mun Do-hyeon.
-
-Bon-gwan and clans are recorded for **1,017 people**. The Ran and Heung belong to the new clans above. Im Somae, Beom Bandeuk, Amira Qasim, and Nargiz Yusupova opened new naturalized bon-gwan named after the places where they settled. I Yeon, a synthetic humanoid, has no paternal line and so no bon-gwan. Having a bon-gwan did not mean a hangnyeol was settled.
-
-| Status | People | Meaning |
-|---|---|---|
-| `applied` | 3 | Two names matched the generation count of a branch agreed upon after the collapse; one matched a documented clan hangnyeol table |
-| `inferred` | 516 | Families of one clan that share a character in the same name position agreed on a new hangnyeol after the collapse. They are the first generation of that agreed table |
-| `free` | 447 | Families that named their children without a hangnyeol, because no other household in the clan shares a name character |
-| `unused` | 51 | The name does not use the hangnyeol: it is a single-character name or does not contain the existing generation character |
-| `no-bongwan` | 1 | No paternal line, so no bon-gwan, clan, or hangnyeol |
-
-The applied examples were Seong Suhyeon and Seong Sa-hyeon of the Changnyeong Seong Train-Maintenance Branch. They were children of the same parent, Seong Dowon; the count was Founder Seong Changrip, generation 40 → Seong Dowon, generation 41 → the two children, generation 42. This branch was a family line newly agreed upon after the collapse, and it followed the five-element generating cycle. The two used the second character `hyeon` as their generation character.
-
-The bon-gwan and generational elements of the three people above were these: Yi Hong-won was Gyeongju Yi, Water; Jeong Seoon was Jinyang Jeong, Metal; and Choe Ji-u was Changnyeong Choe, Fire. These elements were the hangnyeol rules for the opening generation; the characters `hong`, `seo`, and `ji` were not retrospectively identified as hangnyeol characters.
+Sixty-two families are on record that do not use the bon-gwan and generation names of Korean clans. Most are descendants of immigrant communities that lived in Seoul before the Great Blackout. In 2126 they have no land of their own where they live apart. They are ordinary households living in the stations of each polity, and like other people of Seoul they are registered people of the Government, people of Free City workbenches or believers of Arc. They keep the surnames handed down to them.
 
 ## Sources
 
+The general meaning of bon-gwan and hangnyeol follows these references.
+
 - [Encyclopedia of Korean Culture: Bon-gwan](https://encykorea.aks.ac.kr/Article/E0023741)
-- [Wikipedia: Jokbo](https://ko.wikipedia.org/wiki/jokbo)
-- [Wikipedia: Korean surnames](https://ko.wikipedia.org/wiki/hangugui_seongssi)
-- [Wikipedia: Hangnyeol](https://ko.wikipedia.org/wiki/hangnyeol)
+- [Korean Wikipedia: Jokbo](https://ko.wikipedia.org/wiki/%EC%A1%B1%EB%B3%B4)
+- [Korean Wikipedia: Korean surnames](https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8)
+- [Korean Wikipedia: Hangnyeol](https://ko.wikipedia.org/wiki/%ED%95%AD%EB%A0%AC)
+
+## Related Documents
+
+- [People, Factions and Trades](/wiki/Characters-Factions-and-Professions/)
+- [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/)
+- [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
+- [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/)
