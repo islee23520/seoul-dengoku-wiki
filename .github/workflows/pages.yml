@@ -32,6 +32,7 @@ jobs:
         env:
           SITE_BASE: ${{ steps.pages.outputs.base_path }}/
           SITE_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+          SITE_ORIGIN: ${{ steps.pages.outputs.origin }}
         run: node site/build.mjs
       - name: Check output
         env:

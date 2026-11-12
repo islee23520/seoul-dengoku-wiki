@@ -10,7 +10,7 @@ together** or **phases in which some events are invalid**. Each machine lives in
 | --- | --- | --- | --- |
 | People search | `peopleFilter.ts` | `loading`, `ready`, `error` | filtering before data arrives; a stale or corrupt saved filter crashing the page (restore falls back to defaults); rendering 1,022 rows at once (paged by 100) |
 | Territory map | `territoryMap.ts` | `loading`, `ready`, `failed` | two selections at once (selection is a union of one kind); a title selected while the underground layer is shown; a detail panel open with nothing selected; a late event arriving in the wrong phase |
-| Locale preference | `localePref.ts` | none (pure decision table) | guessing the browser language; rewriting a shared deep link; losing the choice after a reload |
+| Locale preference | `localePref.ts` + inline head script (`langScript` in `site/build.mjs`) | none (pure decision table) | overriding an explicit choice; redirecting to a page that does not exist; redirect loops; a flash of the wrong language; losing the choice after a reload |
 
 ## Transition tables
 
@@ -46,13 +46,20 @@ Cross-field rules (the part the old React component spread over many click handl
 
 ### Locale preference (`localePref.ts`)
 
+The entry decision runs in an inline `<head>` script before the page renders; the theme only records choices. Storage key `sdw-lang`.
+
 | When | Do |
 | --- | --- |
-| nothing stored | stay (English is the default; the browser language is never guessed) |
+| `?lang=en` or `?lang=ko` in the URL | store it, show that locale (other values are ignored) |
 | stored equals the URL's locale | stay |
 | stored differs and the URL is a locale home (`/` or `/ko/`) | redirect to the stored locale home |
-| stored differs and the URL is any other page | stay (a shared deep link is never rewritten) |
-| navigation changes the URL's locale | store the new locale |
+| stored differs and the URL is any other page | stay (a shared deep link is never rewritten; browser language is no longer read) |
+| nothing stored | first entry of `navigator.languages` whose primary tag is `en` or `ko` picks the locale; anything else is English |
+| the equivalent page (`/wiki/x/` <-> `/ko/wiki/x/`) is missing from the build | stay |
+| showcase (`/wiki/seoul-showcase/`) or a non-HTML path | stay |
+| navigation changes the URL's locale (the language switch) | store the new locale |
+
+Redirects use `location.replace` (Back does not bounce) and the target page reaches the same decision, so a second hop never happens. Every page also carries `<link rel="alternate" hreflang="en|ko|x-default">` (x-default = English).
 
 ## Left to the default theme on purpose
 

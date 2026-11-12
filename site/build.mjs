@@ -21,6 +21,8 @@ let BASE = process.env.SITE_BASE ?? '/seoul-dengoku-wiki/';
 if (!BASE.startsWith('/')) BASE = `/${BASE}`;
 if (!BASE.endsWith('/')) BASE += '/';
 const REPO_URL = process.env.SITE_REPO_URL ?? 'https://github.com/islee23520/seoul-dengoku-wiki';
+// Absolute origin for hreflang links (Pages: configure-pages outputs.origin). Unset -> root-relative links.
+const ORIGIN = (process.env.SITE_ORIGIN ?? '').replace(/\/+$/, '');
 const SHOWCASE_DIR = path.join(REPO, 'artifacts/seoul-showcase');
 const SHOWCASE_ROUTE = 'wiki/seoul-showcase/';
 
@@ -303,6 +305,34 @@ const searchLocales = {
   root: { translations: { button: { buttonText: UI.en.search, buttonAriaLabel: UI.en.search }, modal: { noResultsText: UI.en.noResults, resetButtonTitle: UI.en.reset, footer: { selectText: UI.en.toSelect, navigateText: UI.en.toNavigate, closeText: UI.en.toClose } } } },
   ko: { translations: { button: { buttonText: UI.ko.search, buttonAriaLabel: UI.ko.search }, modal: { noResultsText: UI.ko.noResults, resetButtonTitle: UI.ko.reset, footer: { selectText: UI.ko.toSelect, navigateText: UI.ko.toNavigate, closeText: UI.ko.toClose } } } },
 };
+// ---- language selection (plan w2v task 29) -------------------------------
+// Every route is written once per locale, so a page's twin (/wiki/x/ <-> /ko/wiki/x/) exists unless listed in NO_TWIN.
+// The inline head script runs before the page renders (no flash of the wrong language):
+//   ?lang=en|ko -> explicit choice, stored under sdw-lang; a stored choice turns browser detection off for good and
+//   only moves a locale home (/ <-> /ko/); with no choice the first en/ko entry of navigator.languages picks the
+//   locale (anything else -> English). It redirects only to a twin that exists, with location.replace, and the target
+//   page reaches the same decision, so it cannot loop. The showcase and non-HTML paths are skipped.
+const srcRoutes = new Set();
+(function walk(d, rel) {
+  for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+    if (e.isDirectory()) { if (!rel && (e.name === '.vitepress' || e.name === 'public')) continue; walk(path.join(d, e.name), `${rel}${e.name}/`); }
+    else if (e.name === 'index.md') srcRoutes.add(rel);
+  }
+})(SRC, '');
+const twinOf = (r) => (r === 'ko/' || r.startsWith('ko/') ? r.slice(3) : `ko/${r}`);
+const NO_TWIN = [...srcRoutes].filter((r) => !srcRoutes.has(twinOf(r))).sort();
+const langScript = `(function(){if(window.__sdwLang)return;window.__sdwLang=1;try{
+var B=${JSON.stringify(BASE)},N=${JSON.stringify(NO_TWIN)},K='sdw-lang',p=location.pathname;if(p.indexOf(B)!==0)return;
+var r=p.slice(B.length),k=/^ko(\\/|$)/.test(r),cur=k?'ko':'en',rest=k?r.replace(/^ko\\/?/,''):r;
+if(/^wiki\\/seoul-showcase(\\/|$)/.test(rest)||/\\.(?!html$)[a-z0-9]+$/i.test(rest))return;
+var q=(location.search.match(/[?&]lang=([^&#]*)/)||[])[1],s=null,w;
+try{s=localStorage.getItem(K);if(s!=='en'&&s!=='ko')s=localStorage.getItem('smd-locale')}catch(e){}
+if(q==='en'||q==='ko'){w=q;try{localStorage.setItem(K,q)}catch(e){}}
+else if(s==='en'||s==='ko'){if(rest.replace(/index\\.html$/,'')!=='')return;w=s}
+else{var L=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||''];w='en';
+for(var i=0;i<L.length;i++){var t=String(L[i]).toLowerCase().split('-')[0];if(t==='en'||t==='ko'){w=t;break}}}
+if(w===cur)return;var c=decodeURI(r).replace(/index\\.html$/,'');if(c&&c.slice(-1)!=='/')c+='/';if(N.indexOf(c)>=0)return;
+location.replace(B+(w==='ko'?'ko/'+rest:rest)+location.search+location.hash)}catch(e){}})()`;
 const config = {
   title: meta.title, description: meta.tagline, base: BASE, cleanUrls: false, srcDir: '.', outDir: OUT,
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: `${BASE}favicon.svg` }], ['meta', { name: 'theme-color', content: '#b63c32' }]],
@@ -315,7 +345,26 @@ const config = {
     search: { provider: 'local', options: { locales: searchLocales } },
   },
 };
-write('.vitepress/config.mjs', `export default ${JSON.stringify(config, (k, v) => (v instanceof RegExp ? { __re: v.source } : v), 1).replace(/\{\s*"__re":\s*"([^"]+)"\s*\}/g, '/$1/')}\n`);
+write('.vitepress/config.mjs', `const config = ${JSON.stringify(config, (k, v) => (v instanceof RegExp ? { __re: v.source } : v), 1).replace(/\{\s*"__re":\s*"([^"]+)"\s*\}/g, '/$1/')};
+// hreflang alternates per page (in frontmatter.head, so client navigation keeps them current); x-default = English.
+const NO_TWIN = new Set(${JSON.stringify(NO_TWIN)});
+const HREF = ${JSON.stringify(`${ORIGIN}${BASE}`)};
+// The language script goes into the SSR head of every page except 404 (a missing page has no twin to go to).
+const LANG_SCRIPT = ${JSON.stringify(langScript)};
+config.transformHead = ({ pageData }) => (pageData.relativePath === '404.md' ? [] : [['script', {}, LANG_SCRIPT]]);
+config.transformPageData = (pageData) => {
+  const route = pageData.relativePath.replace(/index\\.md$/, '');
+  const ko = route === 'ko/' || route.startsWith('ko/');
+  const en = ko ? route.slice(3) : route;
+  const alt = {};
+  if (!ko || !NO_TWIN.has(route)) alt.en = en;
+  if (ko || !NO_TWIN.has(route)) alt.ko = 'ko/' + en;
+  const links = Object.entries(alt).map(([lang, r]) => ['link', { rel: 'alternate', hreflang: lang, href: HREF + r }]);
+  if (alt.en !== undefined) links.push(['link', { rel: 'alternate', hreflang: 'x-default', href: HREF + alt.en }]);
+  pageData.frontmatter.head = [...(pageData.frontmatter.head ?? []), ...links];
+};
+export default config;
+`);
 
 // ---- build --------------------------------------------------------------
 fs.rmSync(OUT, { recursive: true, force: true });
