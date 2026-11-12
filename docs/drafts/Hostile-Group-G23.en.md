@@ -1,130 +1,69 @@
 ---
-model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/pages/w4-edit.mjs; not from a Gemini model
+title: G23 · Udukeoni
+title_ko: G23 · 우두커니
+model: claude-opus-5-5; written directly in the task 15 worktree from docs/design/v3/02-ecology.md (v3 bible chapter 2)
+section_checkpoint: v3 task 15 complete
 ---
-<a id="Hostile-Group-G23-heading-0001"></a>
+[Hostile Ecology Compendium](/wiki/Hostile-Ecology-Index/)
 
-[Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
+Udukeoni are perimeter machines. They are war machines that stand still at the band's choke points and wait. They are a person's height or a little taller, and they stand covered in snow and frost, so that from a distance they look like frozen people. They do not move for years, then wake when something comes within a certain distance. Because they look like broken wrecks, most of the people they kill are those who come up to salvage them.
 
-<a id="Hostile-Group-G23-heading-0003"></a>
+## At a Glance
 
-## Common species and variants
-
-At midwinter dawn the Udukeoni stand along the cold wall and the coil joints of the defrost corridor. Frost sits on the shoulders and the hair. The chest is still, and the head faces the dark compartment at the end of the corridor. The boots are sunk in the defrost water.
-
-Eoduksini is the place standing at the end of the dark compartment. Teojimi is the place before the joint, with the forearm and the side split. Seorison is the place where frost-covered hands lie across the barrier-door handle and the doorframe. The three are within the line of Udukeoni in the same corridor.
-
-<a id="Hostile-Group-G23-heading-0006"></a>
-
-## Ecology
-
-| Item | Record |
+| Item | Details |
 |---|---|
-| Origin | The cold-store watch first sees Udukeoni in the defrost corridor at midwinter dawn. A person stands in the corridor. Frost sits on the shoulders and the hair, and both arms hang at the sides. The head is toward the coil housing. The chest is still, and the mouth is closed. The frost at the lips remains as it is. The boots are in the defrost water. / The work lamp is at the corridor entrance. The cold-store watch is on the threshold of the barrier door. Drops from the coil housing fall in front of those boots. |
-| Habitat and movement | Udukeoni stand gathered in the defrost corridor. At midwinter dawn, the cold-store watch sees that line from the threshold of the barrier door. The people are along the cold wall, and the gaps between shoulders are much like one another. Frost sits on the shoulders and the hair, and both arms hang at the sides. The chest is still, and the mouth is closed. The head is toward the coil housing. The boots stand in one line of defrost water. The work lamp is at the corridor entrance. / When the season changes and the water on the corridor floor has warmed, the cold-store watch sees the same person from the entrance side. The shoulders are wet, and dried water marks are on the chin and the nape. Drops from the coil housing fall in front of the boots. / Before the compartment at the end of the corridor, the people face the dark. The water on the compartment floor is frozen. The cold-store watch's flashlight lies on the threshold. |
-| Food and energy | A wet blanket and a frost-covered gasket are in the tub. A new rubber gasket and dry gloves hang on the barrier-door latch. One flashlight is on the threshold. |
-| Life cycle and upkeep | The same person has dried water marks on the chin and the nape. The shoulders are still. The head is toward the coil, and frost covers the mouth. |
-| Senses | The Udukeoni's head and chest face the defrost coil and the dark compartment at the end of the corridor. The palms rest on the cold doorframe and the pipe joint. |
-| Group behavior | Eoduksini stands in the dark compartment at the end of the corridor. Teojimi stands before the coil joint. Seorison has a hand laid over the barrier-door handle. The Udukeoni stand along the cold wall, facing that compartment. |
+| Kind | Perimeter machine. Some broken ones drift into the forecourt and around boundary stations inside Seoul |
+| Threat | 4 (Grave danger). Strayed ones are 4 too |
+| Where | The perimeter's choke points, passes and bridges |
+| Where strayed ones are many | The Arc's southeastern boundary (Bokjeong, Jangji, Macheon, Geoyeo) |
+| Polity that meets it most | All three. The Arc meets the strayed ones most often |
+| Salvage | A power core almost unused and so still full. Armour plate, sensors, armament |
 
-**Life in the endless cold.** Udukeoni stand still in the defrost corridor as the frost settles on them. They need almost nothing and move almost never, and the cold that would kill a walker only holds them in place until the corridor warms.
+## Where It Came From
 
-**Threat and the cost of fighting.** They are dangerous when the corridor warms and they move all at once. The infected are a middle threat that grows in closed rooms. Infantry hold the doors in pairs, support teams bring medicine, isolation sheets and warm water, and missile infantry fire only when a line breaks. Recon drones are used to look into a room before anyone opens it, which saves lives but spends cells. War machines have no place here. The heaviest costs are medicine and the people who catch what they fight; ammunition spent on the infected is ammunition the station mourns later. Every watch knows the infected were people, and the duty log treats them that way.
+They are war machines that people used around the time of the Great Blackout. Following the capital blockade order people gave, they keep the band's choke points. What an udukeoni does is wait. They are not machines of the First AI.
 
-<a id="Hostile-Group-G23-heading-0008"></a>
+## Where It Is Found
 
-## Individuals and battlefield formation
+Udukeoni stand at the perimeter's choke points, passes and bridges: the places a person must go through to cross the band.
 
-Eoduksini is in the dark compartment at the end of the defrost corridor. The Udukeoni stand in one line from the defrost water at the entrance to that compartment. Teojimi is at the joint midway along the line. Seorison is at the barrier door by the entrance.
+Some broke down, lost their place, and drifted into the forecourt and around the boundary stations inside Seoul. Strayed udukeoni are many on the Arc's southeastern boundary, around Bokjeong, Jangji, Macheon and Geoyeo.
 
-| Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
-|---|---|---|---|---|---|
-| [G23E01 · Eoduksini](/wiki/Hostile-Group-G23/#g23e01) | Infected person | Single individual | Far end of the dark compartment | Boss | M036 |
-| [G23E08 · Teojimi](/wiki/Hostile-Group-G23/#g23e08) | Infected person | Single individual | Before the joint | Elite | M036 |
-| [G23E15 · Seorison](/wiki/Hostile-Group-G23/#g23e15) | Infected person | Single individual | Hands at the barrier door | Strategic encounter | M037 |
+## How It Behaves
 
-<a id="Hostile-Group-G23-heading-0011"></a>
-<a id="g23e01"></a>
+An udukeoni does not move for a long time, for years. Snow piles on it and frost settles, and it looks like a frozen person, or like a broken wreck.
 
-### G23E01 · Eoduksini
+When something comes within a certain distance, it wakes. Even awake, it does not chase far. It stops what came near, then goes back to its place and stands again. A strayed udukeoni stands in just the same way. Only, it stands in the wrong place, not at a choke point it is meant to keep.
 
-- Source batch: M036
-- Former role class: Boss
-- Links: {"houses":["HP09"],"states":["government"],"theaters":["XT03"]}
+## When You Meet It
 
-| Bestiary item | Record |
-|---|---|
-| Type | Infected person |
-| Battlefield unit | Single individual |
-| Battlefield role | Far end of the dark compartment |
-| Common species, variants and command scope | The state the cold-store watch sees in the compartment at the end of the defrost corridor at midwinter dawn. |
+The threat is 4. Strayed ones are 4 as well.
 
-- Eoduksini stands in the dark compartment at the end of the defrost corridor.
-- Eoduksini's face is in the cold inside the compartment.
-- Eoduksini's shoulder line meets the work-lamp light from the entrance.
-- The people before the compartment have their bodies toward Eoduksini.
-- Boot marks on the ice of the compartment floor run up to the front of Eoduksini.
-- Both of Eoduksini's hands are fixed to the refrigeration pipe.
+People die in front of an udukeoni for one reason: they take it for a stopped wreck and go up to salvage it. So for perimeter-runners and edge crews, the heart of the craft is telling a dead udukeoni from a waiting one. They look at how evenly the frost has settled, whether there are old marks in the snow around it, and whether a very small heat is leaking from its body. If they cannot tell, they do not go near.
 
-<a id="Hostile-Group-G23-heading-0015"></a>
-<a id="g23e08"></a>
+When a strayed udukeoni stands near a boundary station, station people mark the distance with stakes around it and do not go inside.
 
-### G23E08 · Teojimi
+## What Can Be Salvaged
 
-- Source batch: M036
-- Former role class: Elite
-- Links: {"houses":["HP09"],"states":["government"],"synthetics":["F07"],"theaters":["XT03"]}
+An udukeoni's power core is almost unused and so still full, because it has done nothing for years but stand and wait. That makes it the most coveted wreck on the perimeter. Armour plate, sensors and armament come from it too.
 
-| Bestiary item | Record |
-|---|---|
-| Type | Infected person |
-| Battlefield unit | Single individual |
-| Battlefield role | Before the joint |
-| Common species, variants and command scope | The state the cold-store watch sees before the coil joint at midwinter dawn. |
+## The Three Polities and the Udukeoni
 
-- Teojimi stands before the coil joint.
-- Teojimi's forearm is split lengthwise.
-- The flesh at the split is pale and wet.
-- Teojimi's side is wet where the clothing has opened.
-- The iron plate of the joint is bent out toward the corridor.
-- The person behind Teojimi stands toward the same side as that plate.
+- **The Arc.** Meets strayed udukeoni most often. The rim watchers of Bokjeong, Jangji, Macheon and Geoyeo write down the place of each udukeoni beyond the boundary one by one, and report at once when the shape of the frost on one changes.
+- **The Government.** Knows the udukeoni beyond the northern passes and bridges. The army's rim postings learn as their first rule: do not go near anything that looks like an udukeoni.
+- **The Free Cities.** Know the udukeoni at the western and southern choke points. The stripes sewn on the sleeves of Geumcheon's edge crews were mostly earned by an eye that could tell udukeoni apart.
 
-<a id="Hostile-Group-G23-heading-0019"></a>
-<a id="g23e15"></a>
+## Stories and Names
 
-### G23E15 · Seorison
+"Udukeoni" is a word for standing blankly, lost in thought. Standing blankly at a choke point became the name itself.
 
-- Source batch: M037
-- Former role class: Strategic encounter
-- Links: {"states":["government"],"synthetics":["F07"],"theaters":["XT03"]}
+The frost-covered figure that stands in the old stories is an udukeoni. When boundary-station people see a frozen person standing in the distance, they do not call out a name. There is a saying: "An udukeoni doesn't answer."
 
-| Bestiary item | Record |
-|---|---|
-| Type | Infected person |
-| Battlefield unit | Single individual |
-| Battlefield role | Hands at the barrier door |
-| Common species, variants and command scope | The state the cold-store watch sees at the barrier door at midwinter dawn. |
+## See Also
 
-- Seorison's hand lies across the handle on the inner side of the barrier door.
-- Frost sits thick on the back of Seorison's hand and between the fingers.
-- Seorison stands beside the door.
-- Seorison's shoulder meets the doorframe.
-- The frost at the fingertips runs past the rubber gasket to the groove under the door.
-- Seorison's other hand is fixed to the metal of the doorframe.
-
-<a id="Hostile-Group-G23-heading-0023"></a>
-
-## Habitat record
-
-The defrost corridor of the underground cold store is the cold-store watch's post at midwinter dawn. The defrost water on the corridor floor reaches the boot tops. The cold-store watch is on the dry floor outside the barrier door.
-
-A person stands in the middle of the corridor. Frost sits on the hair and the eyebrows. The eyes are open. Both arms are at the sides. The palms face the cold wall.
-
-The same person has dried water marks on the chin and the nape. The same person's shoulders are still. The clothing on the chest is dry. Frost remains on the collar.
-
-People stand along the cold wall. The gaps between shoulders are much like one another. Their heads face the dark compartment at the end of the corridor. Their boots are inside the same line of defrost water.
-
-Eoduksini stands in the dark compartment. Eoduksini's face is in the cold inside the compartment. Eoduksini's shoulder line meets the light from the entrance. Boot marks on the ice of the compartment floor run up to the front of Eoduksini.
-
-Teojimi stands before the coil joint. Teojimi's forearm is split lengthwise. The split flesh is pale and wet. The iron plate of the joint is bent out toward the corridor. Frost is lodged on the edge of the plate.
-
-Seorison stands on the inner side of the barrier door. One of Seorison's hands lies across the handle. The frost on the back of the hand runs past the rubber gasket to the groove under the door. The wet gasket is in the cold-store watch's tub. The key is in the hand of the boundary watch of the next corridor.
+- [Hostile Ecology Compendium](/wiki/Hostile-Ecology-Index/)
+- [Beyond Seoul: the Rim](/wiki/External-Theaters/)
+- [G10 · Bogungmun Perimeter-Runners](/wiki/Hostile-Group-G10/)
+- [G11 · Suseo Gone-Dark](/wiki/Hostile-Group-G11/)
+- [G19 · Growlers](/wiki/Hostile-Group-G19/)
+- [Arc Society](/wiki/Arc-Society/)
