@@ -5,7 +5,27 @@
 ## 1. 사전 전수 조사 (변경 전, node:sqlite 18개 SQL 적재)
 
 - 대상 어휘(양언어): 수문국/The Sluice·Floodgate Bureau·State, 규격맹/The Gauge·Standards League, 태욱그룹/Taeuk Group, 동방사/Eastern Command, 환적국/The Junction·Transshipment Bureau·State·Realm, 중앙정보국·중앙정보부/Central Intelligence Bureau·Agency, 여의도출자연합회/Yeouido Investment Federation·Investors' Association, 안국단·안국총림/Anguk Order·Anguk Grand Monastery·Anguk Monastic Grove, 성하그룹·성하전자/Seongha Group·Seongha Electronics, 신내운수/Sinnae Transport, 흰십자단/White Cross( Corps·Order·Society), 아관사·아찬산문/Achasan Gate·Agwansa·**Russian Legation Command**, 정동연맹·정동노동연맹/Jeongdong Federation·Jeongdong Labor Federation, 길목·길목사무소/Crossroads Office. (Russian Legation Command·Transshipment Realm·Central Intelligence Agency는 1차 스캔 뒤 영문 번역표기를 놓친 것을 KO↔EN 쌍 대조로 발견해 어휘에 추가했다.)
-- 각 조직은 로스터상 정확히 한 세력으로만 대응한다(불일치 0): 수문국·규격맹·여의도출자연합회→자유도시, 태욱그룹·동방사·성하그룹·성하전자·정동연맹→Arc, 환적국·중앙정보부·안국총림·신내운수·흰십자단·아관사→정부, 길목→독립.
+- **정정(이 보고서의 앞선 판 "각 조직은 로스터상 정확히 한 세력으로만 대응한다(불일치 0)"는 틀렸다).** 그 문장은 부분집합(대표 인물)만 보고 쓴 것이고 전수 대조가 아니었다. 아래는 origin/main(5aaa09d3b)의 18개 SQL을 node:sqlite로 적재해, **소속 잎(`$.fields.소속`·`$.fields.Affiliation`)과 `$.stateName` 잎**만 대상으로 옛 값이 위 어휘의 조직명을 담은 인물을 `wiki_person.faction_id`(변경 전후 동일)와 대조한 표다. 서술·생애 잎은 한 잎에 두 조직이 함께 나올 수 있어(예: person-0119·0121은 Arc 인물인데 서술에 규격맹 어휘가 있다) 조직×세력 표를 부풀리므로 제외했다. 셀 수는 (소속 / stateName), 양언어 합산 아닌 KO 기준이고 EN이 다르면 따로 적는다.
+
+| 조직 | 로스터 세력(KO 소속/stateName) | 비고 |
+|---|---|---|
+| 수문국 | 자유도시 1/30 | 단일 |
+| 규격맹 | 자유도시 2/28 | KO 단일. **EN만** person-1016(정부) 1건 추가(아래 §4-1) — EN 소속 3/28(자유도시) + 정부 1 |
+| 태욱그룹 | Arc 0/40 | 단일 |
+| 동방사 | Arc 18/47 | 단일 |
+| 환적국 | 정부 33/31 | 단일(EN 소속 1) |
+| 중앙정보국·부 | 정부 0/43 | 단일 |
+| 여의도출자연합회 | 자유도시 23/36, **정부 2/0** | **두 세력**: 정부 인물은 person-0235·person-0236(소유자 과업 예외, KO·EN 소속 잎) |
+| 안국단·안국총림 | 정부 2/35 | 단일 |
+| 성하그룹·성하전자 | Arc 1/37 | 단일 |
+| 신내운수 | 정부 0/32 | 단일 |
+| 흰십자단 | 정부 62/0 | 단일 |
+| 아관사 | 정부 19/36 | 단일(EN 소속 7) |
+| 정동연맹·정동노동연맹 | Arc 0/0 (EN만: 소속 1/stateName 34) | 단일. KO 옛 값은 이미 중립 표기 |
+| 길목 | 독립 1/0 | 단일 |
+
+- **둘 이상의 세력에 대응하는 조직(소속·stateName 잎 한정)**: 여의도출자연합회(자유도시 59 / 정부 2: person-0235·0236), 규격맹(EN 한정, 자유도시 / 정부 1: person-1016). 이 밖의 조직은 단일 세력이다. 이전 판의 "불일치 0"은 철회한다.
+- **소수 셀의 옛→새(KO / EN)와 로스터 표기와의 관계**: person-0235·0236은 '여의도출자연합회→정부' / 'Yeouido Investment Federation→The Government'로 로스터(정부/The Government)와 같은 표기다. person-1016은 소속 문장 속 'Standards League ledger'를 'Free City ledger'로만 바꿨고 로스터 표기(정부)와 다른, 외부 장부 서술의 **유지된 절**이다(§4-1). 지정된 다른 인물은 소수 셀이 아니다: person-0029(로스터 자유도시)는 소속 '규격맹→자유도시' / 'Standards League→Free City'로 로스터와 같고 직함 '규격맹 위원장'은 §4 보존 목록(소유자 대기)에 남는다. person-0116(Arc)은 소속 '동방사→Arc' / 'Eastern Command→Arc'로 로스터와 같고 직함 '동방사 사령관'은 보존. person-0249는 소속·stateName이 변경 전부터 '정부'/'The Government'로 이미 중립이라 이번에 바뀐 셀이 없다.
 - PR #726 본문 24항 계수(소속 줄 243인 = 규격맹 30·태욱그룹 40·동방사 65·안국총림 37·성하그룹 38·신내운수 32·길목 1)는 이번 측정에서 소속 잎 + stateName 잎의 합과 정확히 일치했다(예: 동방사 소속 18 + stateName 47 = 65).
 - family_tree(110)·retainer_graph(115)에서 조직명 셀 0건 — (C) 항목의 변경 없음.
 
@@ -1820,6 +1840,12 @@ wiki_person 변경 열은 position 2·position_ko 1뿐(faction·stage·state 계
 - **person-0235·0236**: 소속 '여의도출자연합회'/'Yeouido Investment Federation' → 로스터 세력 표기 '정부'/'The Government'로 바꾸고 이 목록에 올린다(과업 지시).
 - **person-0246(백온)**: 소속 '안국총림'→'정부'·'Anguk Grand Monastery'→'The Government'(Q26 예외 조항: 잎이 정확히 조직명 소속 줄), 직함 '안국총림 방장'은 Q26 대기로 보존.
 
+## 4-1. person-1016 — 정부 서기의 자유도시 장부 기재(소유자 대기 메모, 수정 아님)
+
+- person-1016은 로스터 세력 정부(stateName '정부'/'The Government')다. origin/main의 한국어 소속 문장은 이미 "서울특별시 지방공무원 조직. 구로·금천 축 동원잔존 서기. 자유도시 장부에는 「외부 무장」"이었다 — 구로·금천 축 동원잔존의 정부 서기가 자유도시 장부에는 '외부 무장'으로 올라 있다는 서술이다.
+- 규칙 #5936·#5937은 영문 절 'Listed in the Standards League ledger as "External Armed"'만 같은 자유도시 표기('Listed in the Free City ledger …')로 맞췄다. 이제 KO/EN이 일치하며 로스터 세력은 정부 그대로다.
+- **소유자 확인 필요**: 정부 서기가 자유도시 장부에 기재되는 것이 맞는가? 이는 수정 사항이 아니라 대기 메모이며, 이 PR은 이름만 바꾸고 서술 내용은 유지했다.
+
 ## 5. 소유자 대기 — 문서·서술 잔존(이번 범위 밖)
 
 - **문서 본문(wiki_document 29건·gdd_document 4건, 매치 합계 1226)**: Century-Annals 301, Hostile-Ecology-Index 313, External-Theaters 80, G07 60, G08 52, G11 52, G12 50, G09 46, G21 36, G22 28, G19 31, Oral-Stories 14, Ailments 7, Era-Arms 2, Scenario-Timeline 1, G01 11, G02 10, G03 8, G04 10, G05 16, G06 8, G10 10, G13 2, G14 2, G16 3, G17 3, G18 2, G20 4, G24 4; gdd doc.mechanism-design-index-d09 30, doc.Singleplayer-Design-SP-1-0-0 22, doc.mechanism-design-index-d11 7, doc.mechanism-design-index-d01 1. 연대기·생태 도감의 역사 서술은 별도 판단이 필요하다(과업 지시: 문서는 별도 패스).
@@ -1833,7 +1859,7 @@ wiki_person 변경 열은 position 2·position_ko 1뿐(faction·stage·state 계
 
 - **데이터 diff(origin/main 대비, node:sqlite, `w5-28-compare-sql.mjs`)**: 26개 표 행수 전부 불변. 변경은 person_detail 634행(json 607·json_ko 570 셀)과 wiki_person 2행(position 2·position_ko 1)뿐. 대상 잎(소속·직위·직함·stateName)의 조직명 잔존: 보존 목록 외 0. 로스터 조직명 셀: 보존 24셀 외 0.
 - **재현성·실패 증명**: origin/main 트리 + 최종 규칙 JSON으로 `FIX2_FROM=4348` 재실행 → 090·050·110·115 **SHA-256 바이트 동일**, 적용 로그 perRule 1,601건 동일. 변조 규칙(rules[4348].old에 허위 접미) → **exit 21** `E_NO_UNIQUE_MATCH` + data/sql 무기록·무로그.
-- **빌드·검사**: `w5-28-run-build.mjs --out <repo 밖>` → **BUILD_EXIT=0**, check-site exit 0 — 단편 32955 링크, **known-broken 0, new-broken 0**(EN 1,428 + KO 1,428 + showcase 1). 중복 id 검사 → **2858페이지(= index.html 2,857 + 404.html 1), 중복 0**. `scan-terms --all` → 문서 59·페이지 118, **금지 0·필수 0**. `w5-28-scan-built` 재생성 → 2858페이지·매치 분류 합계 1571(sixteen 19, church 22, old-org 1447, y2030 78, slaughter 6) — JSON 내용이 달라져 커밋한다.
+- **빌드·검사**: `w5-28-run-build.mjs --out <repo 밖>` → **BUILD_EXIT=0**, check-site exit 0 — 단편 32955 링크, **known-broken 0, new-broken 0**(EN 1,428 + KO 1,428 + showcase 1). 중복 id 검사 → **2858페이지(= index.html 2,857 + 404.html 1), 중복 0**. `scan-terms --all` → 문서 59·페이지 118, **금지 0·필수 0**. `w5-28-scan-built` 재생성 → 2858페이지·매치 분류 합계 1,571(`docs/drafts/reports/w5-28-scan-built.json` byClass: sixteen 19, church 21, old-org 1447, y2030 78, slaughter 6; 앞선 판의 church 22는 오기) — JSON 내용이 달라져 커밋한다.
 - **빌드 산출 페이지(양언어)**: person-0117·0129·0035·0029·0246·0272·0070·0399·0235·0352. 0117('Arc 참모장'/'Arc Chief of Staff', '직함은 Arc 참모장', 'Title: Arc Chief of Staff'), 0129('Arc 전령'/'Arc Messenger'·'Arc Herald'), 0035(stateName '자유도시'), 0070('Arc 회장 전령 · 서초구 영주'), 0399(소속 'Arc', EN 직위 'Arc Chairperson'), 0235(소속 '정부'/'The Government'), 0352(소속 '정부'/'The Government')는 카드 소속·직함·직무가 세력 표기다. 0029·0246·0272은 소속 줄이 각각 '자유도시'·'정부'·'Arc'로 바뀌었고 직함은 위 보존 목록(Q26·Q29 대기)대로 남는다. 관계·야망 서술의 조직 언급은 §5의 서술 잔존이다. 스크린샷 2매 생성·열람: person-0117(ko), person-0272(ko).
 - 실행 모델: cpa/glm-5.3(작업 JSON 직독). 개인 경로·도구 호출 id 없음.
 
