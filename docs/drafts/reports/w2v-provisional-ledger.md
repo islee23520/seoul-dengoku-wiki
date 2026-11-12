@@ -87,6 +87,29 @@ Hostile ecology patch (Hostile-Ecology-Index, Hostile-Group-G01 to G26).
 | 5 | Hostile-Group-G15 | en: "Life in the endless cold.", "the Government's Myeongdong station" / ko: "정부 명동역" | the former Myeongdong Union habitat is restated as Government land per owner rule; the station-level wording is provisional |
 | 6 | Hostile-Ecology-Index, G13, G14, G16, G17, G18, G25, G26 | en: "Ecology" origin row, "but the cold never lifted." / ko: "추위는 끝내 물러나지 않았다." | replaces the old "slightly warmer temperatures" line to fit eternal winter |
 
+## task 11
+
+Free-City-Society, a new document. Each entry gives the section heading and a phrase quoted from the page, in en and ko.
+
+| # | Document | Location (section, phrase) | Provisional item |
+|---|---|---|---|
+| 1 | Free-City-Society | en: "Where Authority Comes From", "By most accounts this is how a habit of witnessing became the right to rule." / ko: "권위는 어디서 오는가", "대개 이렇게 증인 서던 습관이 다스릴 권리가 됐다고 전한다." | the origin of polis authority in witnessed bargains on platforms, and the three grounds of authority (shown skill, public labour, the vote), are a task 11 framing built on the task 32 institutions |
+| 2 | Free-City-Society | en: "Citizens, Residents and Hands", "Someone who lives in the polis under its protection" / ko: "시민, 거주민, 일손", "폴리스의 보호 아래 살지만 시민권은 없는 사람" | the five standings (citizen, resident, apprentice, hand, outsider), their rights and duties are provisional defaults |
+| 3 | Free-City-Society | en: "Guild Houses and Bench Families", "The real social unit is the" / ko: "조합 회관과 작업대 집안", "진짜 사회 단위는" | the bench as the inherited social unit, the guild deciding inheritance, and the seven-guild table with its names are provisional |
+| 4 | Free-City-Society | en: "Old Rolls and Closed Rolls", "Some cities have started to close." / ko: "옛 명부와 닫힌 명부", "어떤 도시들은 닫히기 시작했다." | closed skill rolls in larger poleis follow the Venetian Golden Book proposal in research section 6; not canon |
+| 5 | Free-City-Society | en: "Courts and Juries", "Nobody argues for pay." / ko: "재판과 배심", "돈을 받고 남의 편을 들어 주는 사람은 없다." | self-pleading and guild-first dispute handling extend the task 32 jury of twenty-one; provisional |
+| 6 | Free-City-Society | en: "Punishments", "Prisons are a waste of heat and food." / ko: "벌", "감옥은 열과 식량의 낭비다." | the punishment list (restitution, loss of standing, loss of the bench, exile) is provisional |
+| 7 | Free-City-Society | en: "Scrip", "one chit is a promise that the city will deliver" / ko: "증표", "쪽지 한 장은 도시가 지닌 사람의 작업대에" | power-hour scrip, water scrip, discounting between cities and charged cells and primers as trusted coin are research-grounded provisional details (research sections 3.2 to 3.4 and 6) |
+| 8 | Free-City-Society | en: "Markets and Stalls", "keeps the oldest open market" / ko: "장터와 노점", "가장 오래된 열린 장터를 둔다" | the trade roles of Yeongdeungpo Market, Sindorim, Gasan Digital Complex and Noryangjin stations, and floor and ceiling prices set by the Market Magistrate, are provisional |
+| 9 | Free-City-Society | en: "Guild Halls Abroad", "Larger guilds keep" / ko: "바깥 도시의 조합 회관", "큰 조합은 다른 도시에" | guild halls in other cities follow the Hanseatic Kontor and Steelyard pattern in research section 3.4; provisional |
+| 10 | Free-City-Society | en: "Contract Companies", "Companies come in three sizes" / ko: "계약대", "크기는 셋이다." | contract company sizes, pay by the round and League hiring follow roster framework (hired-company) and research section 6; the names contract company and contract fighter follow roster framework P7; provisional |
+| 11 | Free-City-Society | en: "Holidays and Ceremonies", "Reading Day" / ko: "명절과 의례", "낭독일" | Reading Day, Test Days and Contract Night are provisional civic customs |
+| 12 | Free-City-Society | en: "Children", "By her own telling, she was better at tracing lines than at talking to people." / ko: "아이들", "그 자신의 말로는 사람과 이야기하는 것보다 선을 따라가는 걸 더 잘했다." | Go Ye-jin holding linesmen's lamps as a child is a provisional inference from bible section 3 (2112 grid work); her city stays open (Q6) |
+| 13 | Free-City-Society | en: "Guild Marks", "The Linesmen's is a twist of copper wire" / ko: "조합 표지", "전선 조합의 표지는 꼬아 놓은 구리선이고" | guild marks, sleeve bands, the Archon's sash and seal, and the custom against fur are provisional clothing customs |
+| 14 | Free-City-Society | en: "City Crews", "A city crew looks less like an army than a repair team that brought rifles." / ko: "도시 작업조", "도시 작업조는 군대라기보다 총을 챙겨 온 수리반처럼 보인다." | soldiers' kit and look follow roster framework 9.2 identity (drones, repair, light heavy armour); details are provisional |
+| 15 | Free-City-Society | en: "The Surgeon's Account", "A part fitted in the Free City comes with an" / ko: "집도의의 계정", "자유도시에서 단 부품에는" | the surgeon's account, the rule against cutting out unpaid parts and the who-gets-metal table extend task 8 entry 5; provisional |
+| 16 | Free-City-Society | en: "The Shadow of the Arc", "Some people in the Free City say that's why she went south" / ko: "아크의 그림자", "자유도시의 어떤 이들은 그래서 그가 남쪽으로 가서" | the Free City's tellings of why Go Ye-jin left are told opinions, not a fixed motive |
+
 ## task 10
 
 Government-Society, a new document. Each entry gives the section heading and the opening phrase of the sentence, in en and ko.
