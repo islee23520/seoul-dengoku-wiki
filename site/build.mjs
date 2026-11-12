@@ -164,7 +164,8 @@ for (const L of [UI.en, UI.ko]) {
 
   // wiki articles
   raw.docs.forEach((d) => {
-    const bodyMd = (L === UI.ko ? d.body_ko_md : d.body_md).replace(/^#\s+.+\n+/, '');
+    // HTML comments (e.g. owner-pending markers) live in the drafts and SQL for tooling but never render.
+    const bodyMd = (L === UI.ko ? d.body_ko_md : d.body_md).replace(/<!--[\s\S]*?-->\n?/g, '').replace(/^#\s+.+\n+/, '');
     write(`${L.prefix}wiki/${d.slug}/index.md`, page(g(d, 'title'), `# ${g(d, 'title')}\n\n${body(bodyMd, L)}`));
   });
   const wikiGroups = raw.cats.filter((c) => !c.parent_id).map((c) => ({ text: g(c, 'label'), collapsed: true, items: docsOf(c.id).map((d) => ({ text: g(d, 'title'), link: P(`wiki/${d.slug}/`) })) })).filter((x) => x.items.length);
