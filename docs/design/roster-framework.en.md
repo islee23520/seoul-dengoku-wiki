@@ -188,7 +188,7 @@ Jongno, Jung-gu and Yongsan are picked because the map data puts the Government'
 
 ### 4.3 Free City
 
-Basis: the Free Cities are cities that stand apart, each holding its own duchy, with no seat above them (2.2 [approved], 01-core 2.4). Most residents are engineers who trade goods and skills (2.2 [approved]). So troops come from the guard shares owed by every bench and from contracts rather than from a state, and elite buildings exist once per city (duchy) (chapter 05 11.1). Following chapter 07 12.4, the building names use chapter 05's words (guard share, contract, bench, crew, bench master). "Workshop" and "guild" are not used, because no organisation stands across the cities (chapter 05 5.1) (provisional T20-4).
+Basis: the Free Cities are cities that stand apart, each holding its own duchy, with no seat above them (2.2 [approved], 01-core 2.4). Most residents are engineers who trade goods and skills (2.2 [approved]). So troops come from the watch shares owed by every bench and from contracts rather than from a state, and elite buildings exist once per city (duchy) (chapter 05 11.1). Following chapter 07 12.4, the building names use chapter 05's words (watch share, contract, bench, crew, bench master). "Workshop" and "guild" are not used, because no organisation stands across the cities (chapter 05 5.1) (provisional T20-4).
 
 | Chain | Stage | Building (en / ko) | Where | Opens |
 |---|---|---|---|---|
@@ -259,6 +259,7 @@ Chapter 06 does not call the revived machines "relics"; it calls them "revived o
 - Within a tier, units that use a scarce input sit in the upper half of the cost band.
 - Free City contract units (`hired-company` tag) sit low in the cost band but use a 28-30% upkeep ratio: cheap to hire, expensive to keep.
 - Arc house levies use a 20-22% upkeep ratio: the house feeds and clothes them.
+- Free City watch-share units (squads of hands owed by the benches, not contract companies) use a 22% upkeep ratio, below the Government's 25%: a watch share is owed days, and the city pays only food. There is no standing army (chapter 05 11.1), so the head's own watch is a watch-share unit too (provisional T20-23).
 - These two ratio adjustments are design adjustments for faction identity, not TW:WH numbers [frame].
 
 ### 5.2 Upkeep interval
@@ -290,7 +291,7 @@ Upkeep and scarce inputs are paid each campaign "upkeep interval". Tasks 19 and 
 | `ammo` | 탄약 | Firearm rounds. Brass is reused; primers and propellant are the bottleneck | Bible section 1 row 15 [approved]: ammunition and parts are scarce, every round and every machine counts. Research A section 3 |
 | `cells` | 전지 | Batteries and accumulators. Charging stops below freezing | Research A section 2.4 |
 | `implants` | 이식 부품 | Spare parts and maintenance for cyberware | Bible section 1 row 14 [approved] |
-| `fuel` | 연료 | Fuel for engines and generators | Bible section 1 row 15, "war equipment" |
+| `fuel` | 연료 | Power for armoured cars and tracked vehicles. v3 has no oil, so this is the charge of their large batteries and power blocks (chapter 07 12.3, chapter 03 7.1) | Bible section 1 row 15, "war equipment" |
 | `parts` | 기계 부품 | Spare parts for machines and drones | Bible section 1 row 15 [approved] |
 | `medicine` | 의약품 | Antibiotics and first-aid drugs | Research A section 2.1 (infection care) |
 
@@ -331,7 +332,7 @@ Examples: a Government armoured car with a gun matches Scarce-3 (`ammo`) and Sca
 | `medicine` | People squads replenish at half rate. Wounded do not return after battle | n/a. No TW counterpart resource |
 
 - **Visible.** The recruitment and army screens show the input icon and the number of intervals left (screen design is task 18). The player chooses between one more elite unit and a longer stockpile.
-- **Replenishment rates.** [pending] Levy-type squads (Government conscript infantry and reserves, Free City guard shares, Arc house levies) refill 3% of their full strength per turn; standing-type squads (Government professional soldiers, Free City contract companies, Arc baptised fighters) refill 10% per turn. The wounded come back separately, the next turn. The `medicine` and `implants` effects of the table above apply to these rates first. Basis: chapter 09 section 3.5.2 (provisional T29-11).
+- **Replenishment rates.** [pending] Levy-type squads (Government conscript infantry and reserves, Free City watch shares, Arc house levies) refill 3% of their full strength per turn; standing-type squads (Government professional soldiers, Free City contract companies, Arc baptised fighters) refill 10% per turn. The wounded come back separately, the next turn. The `medicine` and `implants` effects of the table above apply to these rates first. Basis: chapter 09 section 3.5.2 (provisional T29-11).
 - **A different bottleneck per faction.** The Government burns `ammo` and `fuel`, the Free City `cells` and `parts`, the Arc `implants`. This ties into the identity matrix in section 9.
 
 ## 7. Attribute tags
@@ -434,7 +435,7 @@ Target roster size is 18-26 units per faction. The "category counts" below are t
 | Faction | Identity | Strengths | Deliberate gaps | Canon basis |
 |---|---|---|---|---|
 | Government | The army of the ledger: combined arms built on the numbers of ledger conscripts and remnant modern arms. A defending army that does not cross the river as an army (chapter 04 14.4) | Many cheap conscript infantry and reservists. Checkpoint garrisons. Mountain rim patrols. Guns and armoured cars. A few Capital Defence Command drones. Assembly Members' guards | **No machine-body units** (`wired-body` 0). **No hired units.** Thin engineering and repair (support 1-2, no engineer). Low morale for tier 1-2 conscripts | Only people on its ledger are citizens (2.1) → it does not hire people off the ledger for money. Scarcity made work hereditary and froze a vertical hierarchy (section 1 row 12) → a wide morale gap between conscripts and guards. Cyberware depends on access to maintenance and to the faction that holds it (section 1 row 14) → the Government is neither the engineer community (Free City) nor the baptised community (Arc), so it fields no implant units [frame]. v3: only the Arc can maintain machine bodies (chapter 04 13.3, 14.4 item 5), and the hands that mend bridges and tunnels are borrowed from the Free Cities under the water contract (chapter 04 14.5) |
-| Free City | The armies of cities that stand apart: workbench engineers, contract companies and skilled crews | Drones and jamming. Field repair and engineers. Rail mobility. Skilled shooters | **No ledger-style mass levy** (at most 1 tier 1 infantry). **No tier 5.** Heavy armour stops at tier 4. Few commander escorts (1-2). **No machine-body heavy infantry** (`wired-body` 0) | Cities that stand apart, not one power, with no seat above them (2.2) → no power to levy people across cities. They could not even choose a leader (2.2, chapter 1 quote) → few command units to bind one army. Most residents are engineers (2.2) → strong in drones, repair and engineering. v3: no standing army; they fight with guard shares and contract companies (chapter 05 11.1). Fighting in baptised bodies belongs to the Arc, and there are no shells to feed big guns (chapter 05 11.5, provisional T20-6) |
+| Free City | The armies of cities that stand apart: workbench engineers, contract companies and skilled crews | Drones and jamming. Field repair and engineers. Rail mobility. Skilled shooters | **No ledger-style mass levy** (at most 1 tier 1 infantry). **No tier 5.** Heavy armour stops at tier 4. Few commander escorts (1-2). **No machine-body heavy infantry** (`wired-body` 0) | Cities that stand apart, not one power, with no seat above them (2.2) → no power to levy people across cities. They could not even choose a leader (2.2, chapter 1 quote) → few command units to bind one army. Most residents are engineers (2.2) → strong in drones, repair and engineering. v3: no standing army; they fight with watch shares and contract companies (chapter 05 11.1). Fighting in baptised bodies belongs to the Arc, and there are no shells to feed big guns (chapter 05 11.5, provisional T20-6) |
 | Arc | Clan hierarchy and baptised implant warriors | Baptised melee infantry across tiers 1-5. High morale. Many commander escorts. Restored old machines | **No drones** (0). **No artillery** (`artillery` 0). Few missile units, capped at tier 3. Only four districts, so the roster is small (18-22) | Faith is counted by the number of implanted parts (2.3) → resources go into bodies. House rule (2.3) → many house escorts and high morale. Four Gangnam districts (2.3) → the smallest production base. No drones and no artillery is a design choice drawn from this basis [frame]. v3: cells and parts go first to baptism charging and fitting, and in close tunnel fights baptised fighters beat guns and drones (chapter 06 11.2) |
 
 ### 9.3 Scarcity bottleneck per faction
@@ -513,7 +514,7 @@ Target roster size is 18-26 units per faction. The "category counts" below are t
 ### 11.1 Naming rules
 
 - `name` is plain functional English in Title Case. `name_ko` is plain Korean. Example: Ledger Levy Spears / 장부 징발 창병.
-- Pattern: [origin marker] + [weapon or function] + [squad word]. Markers differ by faction: Government uses Conscript, Reserve, District, Ledger, Assembly Member's, State, Capital Defence; Free City uses Guard-Share, Contract, Bench, Crew, Rail/Track and bench names such as Digging Bench; Arc uses House, Baptised, Near House, Hierophant's, Revived and part counts.
+- Pattern: [origin marker] + [weapon or function] + [squad word]. Markers differ by faction: Government uses Conscript, Reserve, District, Ledger, Assembly Member's, State, Capital Defence; Free City uses Watch-Share, Contract, Bench, Crew, Rail/Track and bench names such as Digging Bench; Arc uses House, Baptised, Near House, Hierophant's, Revived and part counts.
 - Never use: real brands, companies or weapon model names; unit or attribute names from other games; any entry of the bible section 4 forbidden vocabulary table; words that evoke clergy or monastic orders for Arc units; titles not yet approved (the proposed titles of bible 9.1, section 13).
 - Free City mercenaries are called "contract company" (계약대) or "contract soldiers" (계약병).
 
