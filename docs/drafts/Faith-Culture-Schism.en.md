@@ -4,7 +4,7 @@ title_ko: 믿음과 의례
 model: cpa/claude-opus-5-5; written by the agent by hand from the v3 bible (plan wiki-lore-rebuild-v3 task 12); not from a Gemini model
 section_checkpoint: v3 task 12 complete
 ---
-In Seoul in 2126 the only organised faith is Arc. Arc has taken the place of every religion that came before it. The Government has no state religion; instead it has the national rite performed every day. The Free Cities have no organised faith, and people believe in what can be measured. This document records what the three polities believe, what they do every day, and how they send off their dead. It also tells, from both sides, how Arc split away from the Free Cities.
+In Seoul in 2126 the only organised faith is Arc. Arc has taken the place of every religion that came before it. The Government has no state religion; instead it has the national ceremony performed every day. The Free Cities have no organised faith, and people believe in what can be measured. This document records what the three polities believe, what they do every day, and how they send off their dead. It also tells, from both sides, how Arc split away from the Free Cities.
 
 ## Three Sayings about the Winter
 
@@ -14,25 +14,25 @@ For the first six years after the Great Blackout the winter grew colder every ye
 |---|---|
 | Government | "When the ledger matched the quota, the winter stopped." |
 | The Free Cities | "The heat balance came out even." |
-| Arc | "god received all the answers it was waiting for." |
+| Arc | "God received all the answers it was waiting for." |
 
 These three sayings show the faith of the three polities as it is. The Government believes in the ledger, the Free Cities in the count, and Arc in god.
 
-## Government: The National Rite
+## Government: The National Ceremony
 
-The Government has no state religion. The constitution's article separating religion and state remains. Instead, the day of a Government person contains the **national rite**.
+The Government has no state religion. The constitution's article separating religion and state remains. Instead, the day of a Government person contains the **national ceremony**.
 
-- **The morning national rite.** After the lights-on siren at 06:00, people salute the national flag in front of the community service centre, sing the first verse of the national anthem and stand in silent tribute. It takes one minute. The silent tribute is for those struck off the ledger by death in the past day. The Dong Chief reads their names.
-- **The Day of Disaster.** The Government does not know the exact date of the Great Blackout. So it made the shortest day of the year the Day of Disaster. At noon on that day every Government station in Seoul sounds a long siren and keeps three minutes of silence.
+- **The morning national ceremony.** After the lights-on siren at 06:00, people salute the national flag in front of the dong centre, sing the first verse of the national anthem and stand in silent tribute. It takes one minute. The silent tribute is for those struck off the ledger by death in the past day. The Dong Chief reads their names.
+- **Disaster Day.** The Government does not know the exact date of the Great Blackout. So it made the shortest day of the year Disaster Day. At noon on that day every Government station in Seoul sounds a long siren and keeps three minutes of silence.
 - **The New Year's Eve bell.** On the night the year turns, the Bosingak bell, moved and hung in the concourse of Jonggak station, is struck thirty-three times. The President strikes the first. The sound of the bell is carried to every district office by tunnel telephone.
 
 The faith of Government people is mostly faith in the ledger: that the winter counts people, and that keeping to the quota stops the winter from tightening further. The Government does not call this faith. It calls it administration.
 
 ### Death in the Government
 
-When someone dies, the household head files a death report at the community service centre, and the Dong Chief draws the red line of death striking-off in the ledger. The next morning the name is read at the silent tribute of the national rite.
+When someone dies, the household head files a death report at the dong centre, and the Dong Chief draws the red line of death striking-off in the ledger. The next morning the name is read at the silent tribute of the national ceremony.
 
-In the cold a body does not rot. Every district has a set **snow cemetery** on the surface, and a funeral crew from the labour households hauls the body there on a sled and buries it in the snow. The plot number is written in the death striking-off column of the ledger. The people of Jungnang-gu are buried in the Mangu cemetery. People of Assembly Member households and those who served the nation are buried at the site of the April 19th National Cemetery in Gangbuk-gu. The Seoul National Cemetery in Dongjak-dong lies across the river, and for a hundred years the Government has been unable to bury anyone there.
+In the cold a body does not rot. Every district has a set **snow cemetery** on the surface, and a funeral crew from the labour households hauls the body there on a sled and buries it in the snow. The plot number is written in the death striking-off column of the ledger. The people of Jungnang-gu are buried in the Mangu cemetery. People of Assembly Member houses and those who served the nation are buried at the site of the April 19th National Cemetery in Gangbuk-gu. The Seoul National Cemetery in Dongjak-dong lies across the river, and for a hundred years the Government has been unable to bury anyone there.
 
 Bodies and the clothes of the dead are never put into the fibre-sugar vats. Together with not eating ledgers and old official documents, this is the Government's oldest taboo.
 

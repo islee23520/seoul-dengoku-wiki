@@ -70,7 +70,7 @@ A station is a place to live and also a place where goods change hands. Each of 
 
 **Free City markets.** The Free Cities do not ration. People buy meals with wages or surety tags, and goods move by market and contract. The largest market of the seven cities is held on the platforms and in the concourse between Yeongdeungpo and Yeongdeungpo Market, with the old warehouses of Yeouido as its storehouse. The rate board, the price board of the market, is there too. The ice-hole fish market at Noryangjin is where more fish change hands than anywhere else in Seoul.
 
-**Arc exchange posts.** There is no market inside Arc. Meals, sleeping places and parts are shared out by the Near Houses and the maintenance benches. Only trade with outsiders is done, at five fixed stations.
+**Arc exchange posts.** There is no market inside Arc. Meals, sleeping places and parts are shared out by the Near Houses and the maintenance benches. Goods are exchanged with outsiders only at five set stations.
 
 | Station | District | Exchange post |
 |---|---|---|

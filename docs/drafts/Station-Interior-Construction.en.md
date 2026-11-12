@@ -53,7 +53,7 @@ Below 25 metres is the warmest part of a station. Below 35 metres the frozen gro
 
 The deep level is short of air. On the upper levels air moves by itself because of the difference between the warm station and the cold outside, but the deep level needs fans, and fans eat electricity. So the number of people the deep level can take is usually set by the air. The far end of a deep tunnel is always dark.
 
-At a Government station the deep tunnel level is where the Assembly Member's household and the civil servants' households sleep. In Arc the people of the Near Houses and the households of the bench workers use the deep bays. In every polity, depth is standing.
+At a Government station the deep tunnel level is where the Assembly Member's house and the civil servants' households sleep. In Arc the people of the Near Houses and the households of the bench workers use the deep bays. In every polity, depth is standing.
 
 ## The Thaw Pocket
 
@@ -92,7 +92,7 @@ Places inside a station are divided by depth. The deeper, the warmer, and the wa
 
 | Polity | Deep places | Shallow places |
 |---|---|---|
-| Government | The deep tunnel level for the Assembly Member's household and civil servants' households; the inner platform for skilled households and the army barracks | The outer platform and the end near the concourse for labour households. A sleeping-place number is the last line of an address |
+| Government | The deep tunnel level for the Assembly Member's house and the civil servants' households; the inner platform for skilled households and the army barracks | The outer platform and the end near the concourse for labour households. A sleeping-place number is the last line of an address |
 | The Free Cities | The households that hold a workbench live beside it. On marriage, the side with the smaller bench moves to the platform of the larger | Labour hands, who cannot sign a contract in their own name |
 | Arc | People of the Near Houses and bench workers' households use the deep platform bays and the deep tunnel level. The heat from the machines of the maintenance bench and the charging place is taken as a gift, so sleeping places cluster around the bench | The lower the standing, the nearer the concourse and the entrance |
 

@@ -52,7 +52,7 @@ Fish and hunting make up about 6% of calories. Most of that is fish raised in ta
 | Crucian carp and carp caught through holes in the river ice | About 0.3% |
 | Hunting wild animals (brown rats, wild boar, raccoon dogs, birds) | About 0.2% |
 
-The river is dark and its flow has fallen, so all of Seoul cannot catch more than a few hundred tonnes a year. Even so, ice-hole fishing is the work of riverside stations. The ice-hole fish market at Noryangjin is where more fish change hands than anywhere else in Seoul, and the people of Dongjak eat more fish than other cities do. The riverbanks of Amsa and Jamsil in Arc and the Government's market at Konkuk Univ. also sell river fish.
+The river is dark and its flow has fallen, so Seoul as a whole catches no more than a few hundred tonnes a year. Even so, ice-hole fishing is the work of riverside stations. The ice-hole fish market at Noryangjin is where more fish change hands than anywhere else in Seoul, and the people of Dongjak eat more fish than other cities do. The riverbanks of Amsa and Jamsil in Arc and the Government's market at Konkuk Univ. also sell river fish.
 
 Wild animals feed people only a small share. They are prized not for their calories but for these.
 
@@ -73,7 +73,7 @@ After coupons, salt is the thing most used in the markets, because, like needles
 
 Meals come from the same chain everywhere in Seoul. How they are shared out differs between the polities.
 
-**Government: coupons and rations.** The Government's money is the ration coupon. The unit printed on a coupon is still the won, and the Bank of Korea sets its notified value. At the notified value of 2126, one bowl of fibre-sugar porridge (about 600 kilocalories) costs 1,000 won. Government people count one person's daily meal coupons plus a water coupon for 10 litres as "one meal". Coupons are issued monthly by household at the community service centre, and can be exchanged for meals only at the centre where the household is registered.
+**Government: coupons and rations.** The Government's money is the ration coupon. The unit printed on a coupon is still the won, and the Bank of Korea sets its notified value. At the notified value of 2126, one bowl of fibre-sugar porridge (about 600 kilocalories) costs 1,000 won. Government people count one person's daily meal coupons plus a water coupon for 10 litres as "one meal". Coupons are issued monthly by household at the dong centre, and can be exchanged for meals only at the dong centre where the household is registered.
 
 | Ration grade | Who | Daily food |
 |---|---|---|
@@ -84,7 +84,7 @@ Meals come from the same chain everywhere in Seoul. How they are shared out diff
 | Dependant (children) | Under sixteen | About 1,800 kilocalories |
 | Dependant (the old and the sick) | Those unable to work | About 1,700 kilocalories |
 
-Assembly Member households have no grade. They eat from their own stores. When the stores run short, the community service centre cuts the office share first, then the dependants' share, and the labour and skilled shares last, because pumps and entrances cannot stop. Nobody lives on rations alone, and the market value of coupons is set at the Hoehyeon market.
+Assembly Member houses have no grade. They eat from their own stores. When the stores run short, the dong centre cuts the office share first, then the dependants' share, and the labour and skilled shares last, because pumps and entrances cannot stop. Nobody lives on rations alone, and the market value of coupons is set at the Hoehyeon market.
 
 **The Free Cities: wages and the empty vat.** The Free Cities do not ration. People buy their meals with wages or surety tags. Instead, at every station the Station Foreman keeps one fibre-sugar vat as the **empty vat**, so that a labour hand who found no work that day can have a bowl of porridge from it. Keeping the empty vat filled is a share borne by all the workbenches of the station together. The people of Dongjak eat more fish, and the people of Gangseo more light-field greens.
 
@@ -94,9 +94,9 @@ Arc's own custom is the **bench meal**. When someone has just been baptised and 
 
 ## What Is Not Eaten
 
-- **Ledgers and old official documents.** However scarce fibre is, the Government does not eat its ledgers or old official documents. Of the paper dug out of old offices, anything bearing a seal is handed in separately at the community service centre and kept by the Ministry of the Interior and Safety. That is why there are years when the Government, which has more fibre than anyone in Seoul, goes hungrier than anyone.
+- **Ledgers and old official documents.** However scarce fibre is, the Government does not eat its ledgers or old official documents. Of the paper dug out of old offices, anything bearing a seal is handed in separately at the dong centre and kept by the Ministry of the Interior and Safety. That is why there are years when the Government, which has more fibre than anyone in Seoul, goes hungrier than anyone.
 - **The dead.** All three polities guard their dead from animals and never put them into the fibre-sugar vats. The Government does not put the clothes of the dead into the vats either.
-- **Cotton that is worn.** Cotton is food. So the people of Seoul mend and wear cloth that cannot be eaten, the synthetic clothes from before the Great Blackout. In the Government, making new cotton clothes takes from the meals, so only Assembly Member households do it. In the Free Cities a person in cotton clothes is told they are "walking around wearing food".
+- **Cotton that is worn.** Cotton is food. So the people of Seoul mend and wear cloth that cannot be eaten, the synthetic clothes from before the Great Blackout. In the Government, making new cotton clothes takes from the meals, so only Assembly Member houses do it. In the Free Cities a person in cotton clothes is told they are "walking around wearing food".
 
 ## Related Documents
 
