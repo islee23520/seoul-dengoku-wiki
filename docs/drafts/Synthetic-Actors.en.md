@@ -48,7 +48,7 @@ Humanoids follow the battery rules too. Charging is never done below freezing, s
 
 Most of the hands that keep humanoids alive are in the Free Cities. A board hand to transplant circuit boards, a winder to rewind motors and a lathe hand to machine joints must all attend for one to keep running. So a humanoid usually belongs to a workbench. One workbench beside the Cheonwang depot keeps several humanoids and takes contracts to carry goods and scrap with them.
 
-The Arc's maintenance benches also tend humanoids. But the hands of a bench put machines on human bodies first. A humanoid is tended only after the maintenance turns of the baptised have all come round.
+The Arc's maintenance benches also tend humanoids. But a bench's hands see to the machines on human bodies first. A humanoid is tended only after the maintenance turns of the baptised have all come round.
 
 ## How each polity sees humanoids
 

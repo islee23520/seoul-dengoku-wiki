@@ -92,4 +92,4 @@ In a world where machines are scarce, people stand beside them. A battery hand g
 - [Humanoids](/wiki/Synthetic-Actors/): human-shaped machines
 - [What Still Runs](/wiki/Lost-Technology-Lineage/): the four words of technology and the names of repair work
 - [Structures](/wiki/Structures/): entrance shafts and winches, wind fields and water wheels
-- [Hostile Ecology Index](/wiki/Hostile-Ecology-Index/): sleeping machines and rim machines
+- [Hostile Ecology Compendium](/wiki/Hostile-Ecology-Index/): sleeping machines and rim machines

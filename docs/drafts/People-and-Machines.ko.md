@@ -92,4 +92,4 @@ section_checkpoint: v3 과제 13 완료
 - [휴머노이드](/wiki/Synthetic-Actors/): 사람 꼴 기계
 - [아직 도는 것](/wiki/Lost-Technology-Lineage/): 기술의 네 낱말과 고치는 일의 이름
 - [구조물](/wiki/Structures/): 출입구 굴과 권양기, 바람틀 밭과 수차
-- [적대 생태 색인](/wiki/Hostile-Ecology-Index/): 잠든 기계와 테두리 기계
+- [적대 생태 도감](/wiki/Hostile-Ecology-Index/): 잠든 기계와 테두리 기계

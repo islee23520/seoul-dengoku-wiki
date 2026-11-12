@@ -72,4 +72,4 @@ In the cold nothing rots. Frozen ground cannot be dug, and wood is too precious 
 - [Machine Bodies and Scarcity](/wiki/Cyberware-and-Scarcity/): rejection and infection, cold wounds
 - [The Great Blackout and the Eternal Winter](/wiki/World-Unbinding/): temperatures by depth and blizzards
 - [Meals and Food](/wiki/Food-Culture/): fibre sugar and light-fields
-- [Hostile Ecology Index](/wiki/Hostile-Ecology-Index/): animals that carry illness and sleeping machines
+- [Hostile Ecology Compendium](/wiki/Hostile-Ecology-Index/): animals that carry illness and sleeping machines

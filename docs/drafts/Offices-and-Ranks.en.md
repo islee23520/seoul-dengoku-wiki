@@ -79,7 +79,7 @@ The Free Cities are not one power. They are cities independent of one another, a
 
 | City | Title | How chosen |
 |---|---|---|
-| Gwanak | Duke | Handed down in I Ilseop's household. When the Government across the river called its districts duchies and gave them to its Members, Gwanak's leading household took the same word and declared it would sit in the same place as the Government |
+| Gwanak | Duke | Handed down in I Ilseop's household. When the Government across the river called its districts duchies and gave them to its Members, Gwanak's leading household took the same word and declared that it sat at the same height as the Government |
 | Dongjak | Ferry Keeper | Chosen by the Crossing Chiefs of the five crossings from among themselves. A Ferry Keeper is Ferry Keeper only while holding a crossing |
 | Yeongdeungpo | Market Master | Market households take it in turn, three years each, in a fixed order |
 | Guro | Works Master | The workbench owner who has kept the most sureties |
