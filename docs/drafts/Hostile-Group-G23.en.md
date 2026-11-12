@@ -51,7 +51,7 @@ An udukeoni's power core is almost unused and so still full, because it has done
 
 - **The Arc.** Meets strayed udukeoni most often. The rim watchers of Bokjeong, Jangji, Macheon and Geoyeo write down the place of each udukeoni beyond the boundary one by one, and report at once when the shape of the frost on one changes.
 - **The Government.** Knows the udukeoni beyond the northern passes and bridges. The army's rim postings learn as their first rule: do not go near anything that looks like an udukeoni.
-- **The Free Cities.** Know the udukeoni at the western and southern choke points. The stripes sewn on the sleeves of Geumcheon's edge crews are mostly the price of an eye that could tell udukeoni apart.
+- **The Free Cities.** Know the udukeoni at the western and southern choke points. The stripes sewn on the sleeves of Geumcheon's edge crews were mostly earned by an eye that could tell udukeoni apart.
 
 ## Stories and Names
 

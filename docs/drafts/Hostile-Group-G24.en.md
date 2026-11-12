@@ -45,7 +45,7 @@ To stop people drawn by the voices, boundary stations post someone at the surfac
 
 ## What Can Be Salvaged
 
-Record devices. The old broadcasts and voices in them are among the few records of the time of the Great Blackout. A doenoemi stands on high ground, and when its voice rises a growler comes, so it is rare for anyone to have brought one's record device back.
+Record devices. The old broadcasts and voices in them are among the few records of the time of the Great Blackout. A doenoemi stands on high ground, and when its voice rises a growler comes, so few people have ever brought a doenoemi's record device back.
 
 ## The Three Polities and the Doenoemi
 
@@ -57,7 +57,7 @@ Record devices. The old broadcasts and voices in them are among the few records 
 
 The name means "saying it over again".
 
-The child crying heard from the direction of the perimeter in the old stories is the doenoemi's voice fragments. That is why it used to be called the weeper too. Boundary-station children grow up hearing, "If something outside calls your name at night, don't answer. That's a doenoemi."
+The child heard crying from the direction of the perimeter in the old stories is really the doenoemi's fragments of recorded voice. That is why it used to be called the weeper too. Boundary-station children grow up hearing, "If something outside calls your name at night, don't answer. That's a doenoemi."
 
 ## See Also
 

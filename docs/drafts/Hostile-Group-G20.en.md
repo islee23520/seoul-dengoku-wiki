@@ -54,7 +54,7 @@ Finding such a pile is the perimeter-runner's dream, and meeting the bulgasari t
 
 The bulgasari is the beast of the old tales that eats iron and grows. Of all the names station people gave to machines, only two are borrowed from old tales: bulgasari and dokkaebi lights. A machine that tears up iron and brings other machines back to life looks like that beast.
 
-It used to be called the iron-clicker too, after the sound it makes tearing metal. Among perimeter-runners, saying "there's an iron-clicker" still means giving up that wreck.
+It used to be called the clanker too, after the sound it makes tearing metal. Among perimeter-runners, saying "there's a clanker" still means giving up that wreck.
 
 ## See Also
 

@@ -55,7 +55,7 @@ Almost nothing. No one is known to have salvaged a tunnel-stopper. All that rema
 
 ## Stories and Names
 
-The name means "the one that blocks the tunnel". It used to be called the fire-leg train as well. When boundary-station people hear someone suggest slipping out of Seoul through the warm tunnels, they answer, "Go ask the tunnel-stopper."
+The name means "the one that blocks the tunnel". It used to be called the fire-bridge train as well. When boundary-station people hear someone suggest slipping out of Seoul through the warm tunnels, they answer, "Go ask the tunnel-stopper."
 
 ## See Also
 

@@ -57,7 +57,7 @@ Small motors, sensors, batteries, and sometimes an explosive load. A fallen dokk
 
 The dokkaebi light is the blue fire of the old tales that drifts over the fields at night. Of all the names station people gave to machines, only two are borrowed from old tales: bulgasari and dokkaebi lights. Many blue lights floating and swaying in the night sky look just like that tale.
 
-They used to be called flame lanterns too. Gangseo's older wind-machine workers still use that name.
+They used to be called spark-bearers too. Gangseo's older wind-machine wrights still use that name.
 
 ## See Also
 
