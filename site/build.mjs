@@ -53,26 +53,64 @@ const raw = {
 };
 
 // ---- units (wiki_unit): category order, labels and build-failing checks ----
-// Every unit row comes from SQL; these are only the category vocabulary and its labels, in display order.
+// Every unit row comes from SQL. The vocabularies below are the contract of docs/design/roster-framework.md
+// (section 2.1 categories in page order, 2.2 roles, 6.1 scarce inputs); only their ids and labels live here.
 const UNIT_CATEGORIES = [
-  { id: 'Commanders and Heroes', en: 'Commanders and Heroes', ko: '지휘관·영웅' },
-  { id: 'Infantry', en: 'Infantry', ko: '보병' },
-  { id: 'Missile', en: 'Missile', ko: '원거리' },
-  { id: 'Fast/Mounted', en: 'Fast/Mounted', ko: '고속·기승' },
-  { id: 'Drones', en: 'Drones', ko: '드론' },
-  { id: 'Armour/War machines', en: 'Armour/War machines', ko: '장갑·전쟁 기계' },
-  { id: 'Support', en: 'Support', ko: '지원' },
+  { id: 'commander', en: 'Commanders and Heroes', ko: '지휘관과 영웅' },
+  { id: 'infantry', en: 'Infantry', ko: '보병' },
+  { id: 'missile', en: 'Missile', ko: '사격병' },
+  { id: 'fast', en: 'Fast and Mounted', ko: '기동병' },
+  { id: 'drone', en: 'Drones', ko: '드론' },
+  { id: 'war-machine', en: 'Armour and War Machines', ko: '장갑과 전쟁 기계' },
+  { id: 'support', en: 'Support', ko: '지원' },
 ];
+// Section 2.2: role id -> labels, the categories it may be used in, and the text glyph of its badge.
+const UNIT_ROLES = {
+  command: { ko: '지휘', en: 'Command', cats: ['commander'], icon: '★' },
+  champion: { ko: '투사', en: 'Champion', cats: ['commander'], icon: '✦' },
+  line: { ko: '전열', en: 'Line', cats: ['infantry'], icon: '▮' },
+  shock: { ko: '충격', en: 'Shock', cats: ['infantry', 'fast'], icon: '➤' },
+  'anti-armour': { ko: '대장갑', en: 'Anti-armour', cats: ['infantry', 'missile'], icon: '⊗' },
+  skirmish: { ko: '산개', en: 'Skirmish', cats: ['missile', 'fast'], icon: '∴' },
+  rifle: { ko: '소총', en: 'Rifle', cats: ['missile'], icon: '•' },
+  marksman: { ko: '저격', en: 'Marksman', cats: ['missile'], icon: '◎' },
+  artillery: { ko: '포격', en: 'Artillery', cats: ['missile', 'war-machine'], icon: '⌒' },
+  recon: { ko: '정찰', en: 'Recon', cats: ['fast', 'drone'], icon: '◉' },
+  raider: { ko: '습격', en: 'Raider', cats: ['fast'], icon: '↯' },
+  strike: { ko: '타격', en: 'Strike', cats: ['drone'], icon: '✕' },
+  armour: { ko: '장갑', en: 'Armour', cats: ['war-machine'], icon: '■' },
+  breacher: { ko: '돌파', en: 'Breacher', cats: ['infantry', 'support'], icon: '⇥' },
+  engineer: { ko: '공병', en: 'Engineer', cats: ['support'], icon: '⚙' },
+  medic: { ko: '구호', en: 'Medic', cats: ['support'], icon: '✚' },
+  countermeasure: { ko: '대응', en: 'Countermeasure', cats: ['support'], icon: '⊘' },
+};
+// Section 6.1: the only scarce_input words, with their page labels.
+const SCARCE_INPUTS = {
+  ammo: { ko: '탄약', en: 'Ammunition' }, cells: { ko: '전지', en: 'Cells' }, implants: { ko: '이식 부품', en: 'Implants' },
+  fuel: { ko: '연료', en: 'Fuel' }, parts: { ko: '기계 부품', en: 'Machine parts' }, medicine: { ko: '의약품', en: 'Medicine' },
+};
+// Section 6.2: the rules in priority order (Scarce-1 > ... > Scarce-5). Each matching rule gives one value; Scarce-4
+// gives fuel for the Government and the Arc, cells for the Free City. expectedScarce() runs the 6.2 steps:
+// matched values in priority order, duplicates keep the higher priority, a single value on a drone or war-machine
+// gets ',parts', and only the top two are kept. A unit matching no rule must be NULL. The build requires
+// scarce_input to equal that result exactly (values and order).
+const SCARCE4_BY_FACTION = { government: 'fuel', arc: 'fuel', 'free-city': 'cells' };
+const SCARCE_RULES = [
+  { id: 'Scarce-1', when: (u) => u.category === 'drone', value: () => 'cells', text: 'category drone gives cells' },
+  { id: 'Scarce-2', when: (u) => u.attrs.includes('baptised') || u.attrs.includes('wired-body'), value: () => 'implants', text: 'baptised or wired-body gives implants' },
+  { id: 'Scarce-3', when: (u) => u.ammo !== null && u.category !== 'drone' && !u.attrs.includes('muscle-powered'), value: () => 'ammo', text: 'non-NULL ammo on a non-drone without muscle-powered gives ammo' },
+  { id: 'Scarce-4', when: (u) => u.category === 'war-machine', value: (u) => SCARCE4_BY_FACTION[u.faction_id], text: 'war-machine gives fuel (Government, Arc) or cells (Free City)' },
+  { id: 'Scarce-5', when: (u) => u.role === 'medic', value: () => 'medicine', text: 'role medic gives medicine' },
+];
+const expectedScarce = (u) => {
+  const matched = SCARCE_RULES.filter((r) => r.when(u));
+  const values = [];
+  for (const r of matched) { const v = r.value(u); if (v && !values.includes(v)) values.push(v); }
+  if (values.length === 1 && (u.category === 'drone' || u.category === 'war-machine') && values[0] !== 'parts') values.push('parts');
+  return { matched, values: values.slice(0, 2) };
+};
 // The society document of each faction (wiki_document slug); linked only when the row exists.
 const FACTION_SOCIETY_DOC = { government: 'Government-Society', 'free-city': 'Free-City-Society', arc: 'Arc-Society' };
-// Rule (d) detection: a unit must name its scarce_input when ANY of these holds:
-//   1. category is exactly 'Drones';
-//   2. an attributes tag matches SCARCE_ATTR_RE (cyberware, implant, firearm or drone, case-insensitive substring);
-//   3. equipment (en) or equipment_ko names a firearm or a drone (SCARCE_EQUIP_RE: whole English words such as
-//      rifle, carbine, pistol, revolver, shotgun, musket, gun, firearm, SMG, machine gun, drone; Korean nouns
-//      드론, 총기, 소총, 권총, 산탄총, 기관총, 기관단총, 카빈, 엽총).
-const SCARCE_ATTR_RE = /cyberware|implant|firearm|drone/i;
-const SCARCE_EQUIP_RE = /\b(?:drones?|firearms?|guns?|rifles?|carbines?|pistols?|revolvers?|shotguns?|muskets?|smgs?|submachine[- ]guns?|machine[- ]guns?)\b|드론|총기|소총|권총|산탄총|기관총|기관단총|카빈|엽총/i;
 const UNIT_KO_PAIRS = ['name', 'recruit_building', 'equipment', 'appearance'];
 {
   const errs = [];
@@ -88,7 +126,10 @@ const UNIT_KO_PAIRS = ['name', 'recruit_building', 'equipment', 'appearance'];
     u.attrs = list(u, 'attributes');
     u.counterIds = list(u, 'counters');
     if (!raw.factions.some((x) => x.id === u.faction_id)) errs.push(`${u.id}: faction_id '${u.faction_id}' is not a faction`);
-    if (!UNIT_CATEGORIES.some((c) => c.id === u.category)) errs.push(`${u.id}: category '${u.category}' is not one of ${UNIT_CATEGORIES.map((c) => c.id).join(' | ')}`);
+    if (!UNIT_CATEGORIES.some((c) => c.id === u.category)) errs.push(`${u.id}: [category] '${u.category}' is not one of ${UNIT_CATEGORIES.map((c) => c.id).join(' | ')}`);
+    const role = Object.hasOwn(UNIT_ROLES, u.role) ? UNIT_ROLES[u.role] : null;
+    if (!role) errs.push(`${u.id}: [role] '${u.role}' is not one of ${Object.keys(UNIT_ROLES).join(' | ')}`);
+    else if (!role.cats.includes(u.category)) errs.push(`${u.id}: [role] '${u.role}' is not allowed in category '${u.category}' (allowed: ${role.cats.join(', ')})`);
     // Rule (b): an *_ko partner may not be empty while its English value is set (and the reverse).
     for (const k of UNIT_KO_PAIRS) {
       const en = String(u[k] ?? '').trim(), ko = String(u[`${k}_ko`] ?? '').trim();
@@ -97,9 +138,32 @@ const UNIT_KO_PAIRS = ['name', 'recruit_building', 'equipment', 'appearance'];
     }
     // Rule (a): every counters id must be an existing unit.
     for (const c of u.counterIds) if (!unitIds.has(c)) errs.push(`${u.id}: counters names unknown unit id '${c}'`);
-    // Rule (d), see SCARCE_* above.
-    const needsScarce = u.category === 'Drones' || u.attrs.some((a) => SCARCE_ATTR_RE.test(a)) || SCARCE_EQUIP_RE.test(u.equipment) || SCARCE_EQUIP_RE.test(u.equipment_ko);
-    if (needsScarce && !String(u.scarce_input ?? '').trim()) errs.push(`${u.id}: scarce_input is empty but the unit uses drones, cyberware or firearms (category/attributes/equipment)`);
+    // Rule (d): scarce_input is NULL or 1-2 section 6.1 words joined by ',' with no space; then Scarce-1..5.
+    u.scarce = [];
+    if (u.scarce_input !== null) {
+      const s = String(u.scarce_input);
+      const words = s.split(',');
+      if (!/^[a-z]+(?:,[a-z]+)?$/.test(s)) errs.push(`${u.id}: [Scarce-format] scarce_input '${s}' must be one value or two joined by ',' with no space`);
+      else if (words.some((w) => !Object.hasOwn(SCARCE_INPUTS, w))) errs.push(`${u.id}: [Scarce-vocab] scarce_input '${s}' uses a word outside ${Object.keys(SCARCE_INPUTS).join(', ')}`);
+      else if (words[0] === words[1]) errs.push(`${u.id}: [Scarce-format] scarce_input '${s}' repeats a value`);
+      else u.scarce = words;
+    }
+    if (u.scarce_input === null || u.scarce.length) {
+      const { matched, values } = expectedScarce(u);
+      const got = u.scarce_input === null ? 'NULL' : `'${u.scarce_input}'`, want = values.length ? `'${values.join(',')}'` : 'NULL';
+      if (matched.some((r) => r.id === 'Scarce-1') && matched.some((r) => r.id === 'Scarce-2')) errs.push(`${u.id}: [Scarce-1+2] a drone may not also be baptised or wired-body (section 6.2 step 6)`);
+      else if (u.category === 'war-machine' && !SCARCE4_BY_FACTION[u.faction_id]) errs.push(`${u.id}: [Scarce-4] no Scarce-4 value for faction '${u.faction_id}'`);
+      else if (u.scarce.join(',') !== values.join(',')) {
+        // Name the rule that explains the difference: a matched rule whose value is missing, then the step 5 parts
+        // value, then an order or extra-value problem.
+        const missing = matched.filter((r) => values.includes(r.value(u)) && !u.scarce.includes(r.value(u)));
+        const rule = missing.length ? missing.map((r) => `${r.id}: ${r.text}`).join('; ')
+          : values.includes('parts') && !u.scarce.includes('parts') ? 'Scarce-parts: a drone or war-machine with one input adds parts second (step 5)'
+          : u.scarce.length === values.length && u.scarce.every((w) => values.includes(w)) ? 'Scarce-order: the higher-priority value comes first (steps 1-4)'
+          : matched.length ? 'Scarce-extra: only the values the matched rules give (steps 2-6)' : 'Scarce-none: no Scarce rule matches, so scarce_input must be NULL';
+        errs.push(`${u.id}: [${rule.split(':')[0]}] ${rule.slice(rule.indexOf(':') + 2)}; scarce_input is ${got}, section 6.2 gives ${want}`);
+      }
+    }
   }
   // Rule (c): tier 4-5 units may be at most 30% of a faction's roster.
   for (const fid of new Set(raw.units.map((u) => u.faction_id))) {
@@ -257,6 +321,12 @@ for (const L of [UI.en, UI.ko]) {
     const num = (v) => (v === null || v === undefined || v === '' ? '-' : String(v));
     const txt = (v) => (v === null || v === undefined || String(v).trim() === '' ? '-' : cell(v));
     const catLabel = (c) => c[L === UI.ko ? 'ko' : 'en'];
+    const lk = L === UI.ko ? 'ko' : 'en';
+    // Role badge: a text glyph plus the localized role label (CSS in theme/custom.css, no image assets).
+    // body() escapes '<' in prose, so the markdown carries a @@ROLE:<id>@@ token that is swapped for the badge afterwards.
+    const roleBadge = (u) => `@@ROLE:${u.role}@@`;
+    const badgeHtml = (role) => `<span class="unit-role unit-role-${role}" title="${UNIT_ROLES[role][lk]}"><span class="unit-role-icon" aria-hidden="true">${UNIT_ROLES[role].icon}</span>${UNIT_ROLES[role][lk]}</span>`;
+    const scarceText = (u) => (u.scarce.length ? u.scarce.map((w) => SCARCE_INPUTS[w][lk]).join(' · ') : '-');
     const present = UNIT_CATEGORIES.filter((c) => us.some((u) => u.category === c.id));
     const absent = UNIT_CATEGORIES.filter((c) => !present.includes(c));
     const high = us.filter((u) => u.tier >= 4).length;
@@ -264,7 +334,7 @@ for (const L of [UI.en, UI.ko]) {
     const unitName = (id) => g(raw.units.find((u) => u.id === id), 'name');
     const counterLinks = (u) => (u.counterIds.length ? u.counterIds.map((id) => `[${cell(unitName(id))}](${raw.units.find((v) => v.id === id).faction_id === x.id ? '' : P(`wiki/factions/${raw.units.find((v) => v.id === id).faction_id}/units/`)}#unit-${id})`).join(', ') : '-');
     const head = [U.unit, U.role, U.tier, U.squad, U.hp, U.ma, U.md, U.ws, U.armour, U.missile, U.range, U.ammo, U.speed, U.ldr, U.cost, U.upkeep, U.cap, U.counters];
-    const row = (u) => [`[${cell(g(u, 'name'))}](#unit-${u.id})`, txt(u.role), num(u.tier), num(u.squad_size), num(u.hp), num(u.melee_attack), num(u.melee_defence), num(u.weapon_strength), num(u.armour), num(u.missile_damage), num(u.range), num(u.ammo), num(u.speed), num(u.leadership), num(u.cost), num(u.upkeep), num(u.unit_cap), counterLinks(u)];
+    const row = (u) => [`[${cell(g(u, 'name'))}](#unit-${u.id})`, roleBadge(u), num(u.tier), num(u.squad_size), num(u.hp), num(u.melee_attack), num(u.melee_defence), num(u.weapon_strength), num(u.armour), num(u.missile_damage), num(u.range), num(u.ammo), num(u.speed), num(u.leadership), num(u.cost), num(u.upkeep), num(u.unit_cap), counterLinks(u)];
     const table = (rows) => `| ${head.join(' | ')} |\n| ${head.map((_, i) => (i < 2 || i === head.length - 1 ? '---' : '---:')).join(' | ')} |\n${rows.map((u) => `| ${row(u).join(' | ')} |`).join('\n')}\n`;
     const summary = [
       soc ? `- ${U.society}: [${cell(g(soc, 'title'))}](${P(`wiki/${soc.slug}/`)})` : '',
@@ -274,9 +344,9 @@ for (const L of [UI.en, UI.ko]) {
       `- ${U.gaps}: ${absent.length ? absent.map(catLabel).join(' · ') : U.none}`,
       `- ${U.highTier}: ${high}/${us.length}`,
     ].filter(Boolean).join('\n');
-    const detail = (u) => `### ${cell(g(u, 'name'))} {#unit-${u.id}}\n\n| ${L === UI.ko ? '항목' : 'Field'} | ${L === UI.ko ? '값' : 'Value'} |\n| --- | --- |\n| ${U.category} | ${catLabel(UNIT_CATEGORIES.find((c) => c.id === u.category))} |\n| ${U.role} | ${txt(u.role)} |\n| ${U.tier} | ${num(u.tier)} |\n| ${U.recruit} | ${txt(g(u, 'recruit_building'))} |\n| ${U.scarce} | ${txt(u.scarce_input)} |\n| ${U.attributes} | ${u.attrs.length ? u.attrs.map((a) => `\`${cell(a)}\``).join(' ') : '-'} |\n| ${U.counters} | ${counterLinks(u)} |\n| ${U.equipment} | ${txt(g(u, 'equipment'))} |\n| ${U.look} | ${txt(g(u, 'appearance'))} |\n| ${U.gdd} | ${u.gdd_ref ? `\`${cell(u.gdd_ref)}\`` : '-'} |\n`;
+    const detail = (u) => `### ${cell(g(u, 'name'))} {#unit-${u.id}}\n\n| ${L === UI.ko ? '항목' : 'Field'} | ${L === UI.ko ? '값' : 'Value'} |\n| --- | --- |\n| ${U.category} | ${catLabel(UNIT_CATEGORIES.find((c) => c.id === u.category))} |\n| ${U.role} | ${roleBadge(u)} |\n| ${U.tier} | ${num(u.tier)} |\n| ${U.recruit} | ${txt(g(u, 'recruit_building'))} |\n| ${U.scarce} | ${scarceText(u)} |\n| ${U.attributes} | ${u.attrs.length ? u.attrs.map((a) => `\`${cell(a)}\``).join(' ') : '-'} |\n| ${U.counters} | ${counterLinks(u)} |\n| ${U.equipment} | ${txt(g(u, 'equipment'))} |\n| ${U.look} | ${txt(g(u, 'appearance'))} |\n| ${U.gdd} | ${u.gdd_ref ? `\`${cell(u.gdd_ref)}\`` : '-'} |\n`;
     const md = `## ${U.identity}\n\n${summary}\n\n${present.map((c) => `## ${catLabel(c)}\n\n${table(us.filter((u) => u.category === c.id))}`).join('\n')}\n## ${U.details}\n\n${present.flatMap((c) => us.filter((u) => u.category === c.id)).map(detail).join('\n')}`;
-    write(`${L.prefix}wiki/factions/${x.id}/units/index.md`, page(U.title(name), `# ${U.title(name)}\n\n${U.lead(us.length)}\n\n<div class="unit-roster">\n\n${body(md, L)}\n</div>\n`, { outline: [2, 2] }));
+    write(`${L.prefix}wiki/factions/${x.id}/units/index.md`, page(U.title(name), `# ${U.title(name)}\n\n${U.lead(us.length)}\n\n<div class="unit-roster">\n\n${body(md, L).replace(/@@ROLE:([a-z-]+)@@/g, (m, role) => badgeHtml(role))}\n</div>\n`, { outline: [2, 2] }));
   });
 
   // states
