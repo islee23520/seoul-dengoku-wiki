@@ -160,3 +160,36 @@ Government-Society, a new document. Each entry gives the section heading and the
 | 16 | Government-Society | en: "Soldiers' Look", "Government soldiers look like what they are" / ko: "병사의 겉모습", "정부 병사는 보이는 그대로, 총을 든 장부 사람들이다." | the kit and dress per kind follow roster framework sections 9 and 11 examples; no unit ids or numbers are set here, task 13 owns them |
 | 17 | Government-Society | en: "Civilians' Look", "An ordinary northern resident is wrapped and grey." / ko: "주민의 겉모습", "북쪽의 보통 주민은 둘둘 감싸고 잿빛이다." | civilian appearance details and wedding clothes rented at Euljiro 3-ga are provisional |
 | 18 | Government-Society | en: "Cyberware Access", "In the north, cyberware follows the ledger." / ko: "사이버웨어 접근", "북쪽에서 사이버웨어는 장부를 따른다." | the access table by rank repeats task 8 ledger items 3 and 4 and adds per-rank terms; provisional |
+
+## task 15
+
+Arc roster (data/sql/132-units-arc.sql, 22 rows). Every unit name below is an invented plain-word name, provisional until the owner approves it. Each entry gives the unit id, the English name and the Korean name. Numbers follow docs/design/roster-framework.md (TW:WH-calibrated bands), a design document and not bible canon.
+
+| # | Document | Location (section, phrase) | Provisional item |
+|---|---|---|---|
+| 1 | wiki_unit (132-units-arc.sql) | en: "Baptised Duelist Escort" / ko: "세례 결투 호위대" (arc-baptised-duelist-escort) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 2 | wiki_unit (132-units-arc.sql) | en: "Clan Head's Guard" / ko: "가문 수장 호위대" (arc-clan-head-guard) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 3 | wiki_unit (132-units-arc.sql) | en: "Hierophant's Escort" / ko: "교주 호위대" (arc-hierophant-escort) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 4 | wiki_unit (132-units-arc.sql) | en: "Clan Levy Hooks" / ko: "가문 징집 갈고리병" (arc-clan-levy-hooks) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 5 | wiki_unit (132-units-arc.sql) | en: "Clan Levy Cleavers" / ko: "가문 징집 도끼병" (arc-clan-levy-cleavers) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 6 | wiki_unit (132-units-arc.sql) | en: "House Shield Bearers" / ko: "가문 방패병" (arc-house-shield-bearers) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 7 | wiki_unit (132-units-arc.sql) | en: "House Hatch Breakers" / ko: "가문 해치 돌파병" (arc-house-hatch-breakers) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 8 | wiki_unit (132-units-arc.sql) | en: "Baptised Hammer Arms" / ko: "세례 망치팔대" (arc-baptised-hammer-arms) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 9 | wiki_unit (132-units-arc.sql) | en: "Baptised Spike Arms" / ko: "세례 쐐기팔대" (arc-baptised-spike-arms) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 10 | wiki_unit (132-units-arc.sql) | en: "Baptised Clan Guard" / ko: "세례 가문 호위병" (arc-baptised-clan-guard) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 11 | wiki_unit (132-units-arc.sql) | en: "Refitted Guard Warriors" / ko: "완전 이식 호위 전사" (arc-refitted-guard-warriors) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 12 | wiki_unit (132-units-arc.sql) | en: "Clan Levy Carbines" / ko: "가문 징집 기병총반" (arc-clan-levy-carbines) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 13 | wiki_unit (132-units-arc.sql) | en: "Clan Crossbow Skirmishers" / ko: "가문 석궁 산개병" (arc-clan-crossbow-skirmishers) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 14 | wiki_unit (132-units-arc.sql) | en: "Baptised Eye Marksmen" / ko: "세례 눈 저격조" (arc-baptised-eye-marksmen) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 15 | wiki_unit (132-units-arc.sql) | en: "Levy Ski Scouts" / ko: "징집 스키 정찰병" (arc-levy-ski-scouts) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 16 | wiki_unit (132-units-arc.sql) | en: "Clan Sled Raiders" / ko: "가문 썰매 습격대" (arc-clan-sled-raiders) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 17 | wiki_unit (132-units-arc.sql) | en: "Baptised Spring Legs" / ko: "세례 용수철다리대" (arc-baptised-spring-legs) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 18 | wiki_unit (132-units-arc.sql) | en: "Relic Tracked Carrier" / ko: "유물 궤도 운반차" (arc-relic-tracked-carrier) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 19 | wiki_unit (132-units-arc.sql) | en: "Revived Relic Walker" / ko: "되살린 유물 보행기" (arc-revived-relic-walker) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 20 | wiki_unit (132-units-arc.sql) | en: "Net Casting Crews" / ko: "그물 투척조" (arc-net-casting-crews) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 21 | wiki_unit (132-units-arc.sql) | en: "Warm Bench Aid Crews" / ko: "온기 정비대 구호조" (arc-warm-bench-aid-crews) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 22 | wiki_unit (132-units-arc.sql) | en: "Field Fitters" / ko: "야전 정비조" (arc-field-fitters) | the unit name is a provisional descriptive name; the id and name are not approved canon |
+| 23 | wiki_unit (132-units-arc.sql) | all rows, equipment and appearance | the weapon, shield and cell-pack details (hooked poles, door-panel shields, spring-driven legs, replaced forearms, field fitter kits) are provisional gear inventions built on the Arc-Society clothing rule that a part must be seen and reached; no implant is named |
+| 24 | wiki_unit (132-units-arc.sql) | arc-relic-tracked-carrier, arc-revived-relic-walker | the two relic machines (a salvaged armoured carrier and a revived two-legged war machine) and their bench crews are a provisional reading of the "machine relics" slot in roster framework 9.1; how they were recovered is not stated |
+| 25 | wiki_unit (132-units-arc.sql) | arc-clan-head-guard, arc-hierophant-escort | clan head and Hierophant guard detachments are provisional units built on the four-layer order of Arc-Society; no person is tied to a unit (framework P8) |
+| 26 | wiki_unit (132-units-arc.sql) | counters column | every counters entry names an Arc unit only (framework 8.3 and P16); the cross-faction ids come from the final roster merge |
