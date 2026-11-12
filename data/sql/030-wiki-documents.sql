@@ -2480,129 +2480,140 @@ Choe Mun-jae''s son, Choe Tae-yun, born on September 3, 2057, begins cross-check
 최문재의 아들 최태윤은 2057년 9월 3일 태어나 2074년부터 공동체 기록 담당자들과 교대 명부를 대조한다. 아들 최일석은 2087년 9월 3일 구로에서 태어나 당대 동원잔존에서 복무하고 2109년 만기로 돌아온다. 최태윤은 돌아온 아들과 2110년부터 명부를 확인하며 실제 복무와 반납 기록을 함께 읽힌다. 최일석은 다른 담당자들 앞에서 기록의 정확성을 인정받아 구로·금천 축 동원 명부 서기를 맡는다. 2126년 팜반득과 하청을 교섭하고 린샤오메이의 통행을 검사하며, 탈영 소대가 명부를 사병 조직의 근거로 삼는 것을 경계한다. 열쇠와 명부를 따로 보관하며 자신이 맡은 일을 지킨다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Era-Arms-and-Tech-Level', 'The Arms and Technology of This Era', '이 시대의 기술과 무구', 'goods', 0, '
-A. Status of the equipment classification
+In 2026, Seoul had work tools, police equipment and military arms, along with drones, humanoid machines and machine parts for the body. All of it came down into the stations after the Great Blackout. A century later most of it still works. What changed is that almost nothing new is made, so every round, cell and spare part has to come from somewhere that already exists.
 
-Seoul had trade tools, police equipment, and military equipment in 2026. After the Great Blackout, mechanics repaired surviving tools and recovered machine parts. Modern and future weapons, humanoids, and machines survive the Great Blackout. In an age of scarcity their numbers, ammunition, and parts run short, and they are dear.
+Modern and future weapons exist in 2126, and so do humanoids and machines. They''re scarce, not gone. The question in any station isn''t whether a rifle works, but whether there are rounds for it and someone who can fix it.
 
 <a id="한-세기가-지난-손"></a>
 
 ## Equipment Used Across a Century
 
-A. Chronology and equipment
+### From 2026 to 2126
 
-In the Great Blackout, around 2026, Yeongdeungpo waterworks staff operated valves manually after remote control failed. The generation of 2126 repairs and uses tools and equipment inherited from that time.
+On the night of the Great Blackout, around 2026, the duty staff at the Yeongdeungpo water purification centre lost remote control and turned the valves by hand. That habit of keeping old equipment working by hand runs through the whole century. The generation of 2126 still repairs and uses the tools and plant of that time.
 
-B. Firearms regulation and remnants
+### Firearms Then and Now
 
-The 2026 firearms law required permits for firearms and crossbows. K-series small arms also existed at the time.
+In 2026 firearms and crossbows were licensed under South Korean law, and the armed forces carried domestically made small arms. Civilians didn''t carry guns as a matter of course. After the Blackout those weapons went wherever their carriers went. Rifles, pistols and shotguns still fire in 2126. Ammunition is what runs short: brass casings can be refilled, but primers and powder are spent once, and primers are the hardest thing to replace.
 
-C. Reuse of robot parts
+### Drones and Machines
 
-After the Great Blackout, factory robots lost their call network. Mechanics repaired surviving hoses, terminals, and lenses.
+Drones came out of storerooms, police stations and depots, and they still scout exits and watch tunnels on short flights. Factory robots lost the networks that called them. Technicians took the hoses, terminals and lenses they could reuse, and kept a few whole machines moving. Machine body parts survived the same way, and they follow the same rule: they work as long as someone can service them. That rule is set out in [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/).
 
-## Surviving Armaments: Function, Ownership, Access
+## Surviving Arms: Function, Ownership, Access
 
-A. Equipment and the surviving records
+### Equipment and What It Needs
 
-| Equipment | Function | Pre-collapse legal · civilian ownership | Post-collapse access | Consumption · repair · supply | Holding condition | Source |
-|---|---|---|---|---|---|---|
-| K2 / K2C1 | Service rifle | ROK line. Not a civilian retail good | Routes differ by case: military remnants, desertion, recovery, trade | Compatible ammunition, parts, maintenance proficiency needed. Counts not recorded | Holders differ in how they acquired theirs | K2 existence: [Wikipedia](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_K2). K-series line: [SNT Motiv](https://www.sntmotiv.com/eng/business/defense.html). The K2C1 2026 issue range is not in the records. Viewed 2026-09-12 |
-| M16 family | Reserve and old stock | 2015 general-reserve training issue fact | Access only with mobilization-remnant, unit-ledger, or recovery routes | Ammunition, magazines, parts, storage state were separate bottlenecks | An empty gun could be used for bayonet fighting; with rounds present it followed the military-remnant rules | [Policy Briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), viewed 2026-09-20 |
-| K1A | Military personal weapon | ROK issue line | Recovered or transferred from military remnants, case by case | Compatible ammunition and parts checked per model. Not treated as bulk-compatible with other rifles | Persons other than deserters and mobilization remnants needed separate acquisition and proficiency records | K-series existence: SNT Motiv. Per-model material and the 2026 issue range are not in the records |
-| Service pistol | Sidearm. Guard and officer close-in | Military and police equipment. No civilian daily use | Remnants with keys and rosters. No drifter start | Pistol rounds were stock separate from rifle rounds | Former patrol: **staff and shield are the default**. The pistol only when a ledger opens | The 2026 issue model name is not in the records |
-| Squad support weapon | Suppression, convoy cover | ROK squad weapons | Power scale. Not personal starting gear | Heavy ammunition consumption. Repair tools, cooling, barrels were stronghold maintenance | Guro warlord-scale remnants, stronghold defense. No orphans or drifters | 2026 service models and deployment are not in the records |
-| Regulation staff · patrol shield · police personal protection | Suppression, protection, station guard | Police, autonomous guards, station security | Former patrol default. Shared by station guards | Shield and clothing repair. No ammunition | Former patrol preset. Stationmaster stronghold guard | The original police regulations do not survive |
-| Crowbar · axe · cutter | Opening, dismantling, close-in | Civil engineering, rail, facility management, civilian tools | Trade layer. Worksites and depots | Blades dull; no hydraulic oil (manual tools) | Drifter, explorer, maintenance hand | Specific brand names are not in the records |
-| Hydraulic rescue equipment | Debris spreading, door and hull opening | Fire, rescue, rail recovery | Stronghold workshops, maintenance hands. Not personal carry | Hydraulic oil, power, hoses. Without power, dead weight | Stationmaster strongholds, overlapping The Gauge''s engineering corps | Fire-equipment issue lists do not survive |
-| Lamps · radios | Watch, contact | Facility, police, civilian radios | Trade and police layers. Batteries the bottleneck | Batteries, charging. Consumer batteries age | Courier, explorer, patrol | Consumer lanterns and radios exist as civilian goods. Military encrypted-radio remnants are not in the records |
-| Gas detection · breathing protection · emergency kit · portable power | Conduit survival, injury, short-term power | Industrial safety, fire, medical, facilities | Medical officer, explorer, stronghold | Filters, medicine, batteries consumed. Charging ≠ generation | Medical officer red-cloth silhouette. No orphans | Industrial-safety generalities. 2026 station-staff issue lists are not in the records |
-| Stab / ballistic / work personal protection | Protection against stabbing-cutting / defined ballistic threat / per-task hazards | Police, military, security, industrial sites | Use and grade distinguished. Work clothes and riot shields not treated as ballistic gear | Damage, aging, replacement parts, proper wearing conditions checked | Protection is matched to the role; affiliation alone does not decide its performance | Specific test grades, service models, and 2026 issue ranges are not in the records |
-| Bow (conditional) | Low-noise projectile. Not the basic arm | Recreational and gungdo clubs. Not military issue | Could exist. **Not forbidden**. Not the default ranged arm either | Arrow crafting mentioned only within trade-tool scope. No manufacture recipe | Specific persons or livelihoods are the condition | The civilian bow regulation range is not in the records |
-| Crossbow (conditional) | Mechanical projectile | A permit item under the Firearms and Swords Act | Rare. Permit remnants or smuggling as narrative conditions | Bolts and strings. Possibly a ledger separate from the firearms ledger | No drifter start. Not the basic arm | [Firearms and Swords Act](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98) includes crossbows. Viewed 2026-09-12 |
-| Sensor · inspection bot · actuator · power salvage | Detection, opening and closing, short-term power. Conditionally equipment, traps, weapons | Disaster and facility inspection records | Modules after sealed-gallery dismantling or stopping | Charging, aging, supply source. Not permanent batteries. Protocol cards are not universal control | Explorer, records keeper, operating-house recovery squads | Concept: [Lost Technology](/wiki/Lost-Technology-Lineage/). Actual 2026 deployment is not in the records |
-| Vehicles · generators (power scale) | Movement, stronghold power | Rail, city buses, facility emergency generators, military vehicles | Only when a living sphere ran them. Not a personal-preset default | Fuel, lubricant, tires, batteries. Generator ≠ energy-storage module | Stationmasters, faction military (engineers, rail cavalry). No drifters | Vehicle remnant scale and counts are not in the records |
-| Heavy weapons (power scale) | Barrier-gate and stronghold defense | ROK support weapons, vehicle-mounted | Remnants above squad scale, facility defense. No personal-carry start | Ammunition, weight, maintenance. Supply was the object of command disputes | The four remnant groups, faction facility military. Conscription Remnants | 2026 service lists and counts are not in the records |
+| Equipment | Function | Before the collapse | Access in 2126 | Consumption and repair | Who carries it |
+|---|---|---|---|---|---|
+| 5.56 mm service rifle, pre-collapse national issue | Standard rifle | Military issue; not a civilian item | Inherited, recovered or traded. Every carrier has their own story of how they got it | Compatible rounds, parts and a skilled hand. Numbers aren''t recorded | Government levies and guards, Free City contract crews, Arc escorts |
+| Older 5.56 mm rifle from reserve stores | Reserve stock | Issued for reserve training in 2015 | Only where a unit''s books or stores survived | Rounds, magazines, parts and storage are each a separate bottleneck | Holders of old stores; an empty rifle still serves as a bayonet staff |
+| Service pistols | Sidearm for guards and officers | Military and police issue | Locked stores with a key and a list | Pistol rounds are a separate stock from rifle rounds | Guards and officers. Former patrols start with a baton and shield |
+| Squad support weapons | Suppression and convoy cover | Military squad weapons | Held at faction scale, not by individuals | Heavy round use; barrels and cooling need a workshop | Defended stations and armies on campaign |
+| Baton, patrol shield, riot gear | Restraint, protection, station guard | Police, local guards, station security | Standard for former patrols and station guards | Shield and cloth repair; no rounds | Station guards |
+| Pry bar, axe, cutter | Opening, breaking down, close fighting | Construction, rail and building work | Common at work sites and depots | Edges dull; no hydraulics | Porters, scouts, technicians |
+| Hydraulic rescue tools | Spreading debris, opening doors and car bodies | Fire, rescue and rail recovery | Workshops and repair crews, not carried alone | Hydraulic fluid, power, hoses. Without power, it''s dead weight | Repair and engineer crews |
+| Lamps and radios | Light and contact | Facility, police and civilian sets | Common in work and guard duty; the cell is the bottleneck | Cells and charging. Old cells age | Runners, scouts, patrols |
+| Gas detector, respirator, first-aid kit, portable power | Surviving in ducts, treating wounds, short power | Industrial safety, fire, medicine | Medics, scouts, station posts | Filters, medicine and cells run out. Charging isn''t generating | Medics and scouts |
+| Stab, ballistic and work protection | Against blades, set ballistic threats, or work hazards | Police, military, guards, industry | Each kind is kept separate. Work clothes and riot shields aren''t ballistic armour | Wear, ageing and replacement parts | Fitted to the role; membership alone doesn''t give protection |
+| Bow (conditional) | Quiet ranged shot; not a standard arm | Sport archery; not military | Possible, not forbidden, not standard | Arrows made with work tools | Specific people and trades |
+| Crossbow (conditional) | Mechanical shot | Licensed under the firearms law | Rare | Bolts and strings | Not a starting arm |
+| Drones | Scouting, watching, carrying a small charge | Police, rescue, military and civilian stock | Kept warm and flown briefly | Cells and spare parts; radio drones can be jammed | Free City crews most of all; a few Government teams |
+| Machine body parts | Replacing a hand, eye, leg or more | Medical and military | Through the Government''s registry, Free City surgeons, or Arc baptism | Repair, power, spares and medicine | See [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/) |
+| Sensors, inspection units, actuators, salvaged power | Detecting, opening, short power; sometimes traps or weapons | Disaster response and facility inspection | Modules taken from stopped machines in sealed galleries | Charging, ageing, supply. No cell lasts forever. A protocol card doesn''t control everything | Scouts, record keepers, salvage crews. See [Lost Technology](/wiki/Lost-Technology-Lineage/) |
+| Vehicles and generators | Moving, powering a station | Rail, buses, emergency generators, military vehicles | Only where a community can run them | Fuel, oil, tyres, cells. A generator isn''t a battery | Station holders and faction engineers |
+| Heavy weapons | Holding gates and strongpoints | Military support weapons and vehicle mounts | Held by factions at defended sites | Rounds, weight, upkeep. Supply is fought over | Faction garrisons |
+
+### What Each Faction Runs Short Of
+
+The Government fields the most guns and armoured vehicles, so its rounds and fuel go first. The Free City runs drones and repair crews, so its cells and spare parts go first. The Arc puts its resources into the bodies of the faithful, so implant parts and medicine go first.
 
 ## What Actually Existed in 2026
 
-A. Scope of the reviewed sources
+### Records That Survive
 
-In 2026, permit rules for firearms and crossbows, military equipment, and railway and facility tools existed. Waterworks staff operated valves manually immediately after the Great Blackout.
+In 2026 there were licensing rules for guns and crossbows, military arms, and rail and facility tools. These records show what existed then. They don''t show how much of it reached any station a century later.
 
-- Firearms and Swords Act, Article 1: it governed the manufacture, sale, lease, transport, possession, and use of guns, swords, explosives, spray devices, electroshock weapons, and crossbows. This was not a country where civilians carried guns as daily routine. Effective dates and clause detail followed the statute''s original text. ([Korea Law Service Center](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98), viewed 2026-09-12; earlier capture `.omo/ulw-research/20260911-200129/browse/01-law-go-kr-firearms-swords.png`)
-- Public material introduces the K2 as the ROK Armed Forces'' service rifle. Post-collapse possession through military remnants or market inflow differs from case to case. Who holds how many in 2026 was not what this source said. ([English Wikipedia, Daewoo K2](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_K2), viewed 2026-09-12)
-- A 2015 policy briefing stated that general reserve training issued M16s in place of carbines. The training issue fact of the time was confirmed, but 2026 counts, per-unit issue tables, and warehouse locations were not fixed by this material. ([Policy Briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), viewed 2026-09-20)
-- SNT Motiv''s public defense page shows the existence of the K-series production line. The manufacturer''s product descriptions did not stand in for actual issue counts to the armed forces or reserves. ([SNT Motiv](https://www.sntmotiv.com/eng/business/defense.html), viewed 2026-09-20)
-- The original 2026 police equipment regulations and the issue range of service pistol models do not survive, and neither do the regulation numbers.
+- The firearms law covered the making, sale, lending, carriage, holding and use of guns, swords, explosives, sprays, stun devices and crossbows. It wasn''t a country where civilians carried guns every day. ([National Law Information Center](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98), read 2026-09-12)
+- Public sources describe the standard assault rifle of the armed forces. How many reached whom by 2026 isn''t in those sources. (encyclopedia entry on the service rifle, read 2026-09-12)
+- A 2015 government briefing said older 5.56 mm rifles would replace carbines for reserve training. The issue is confirmed; quantities and depots aren''t. ([Policy briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), read 2026-09-20)
+- A domestic arms maker''s public page shows the national small arms line existed. A product page doesn''t say how many were issued. (Defence industry product catalogue, read 2026-09-20)
+- The police equipment rules and the issued pistol models of 2026 haven''t survived.
 
-## Sources
+## Related Pages
 
-- [PlayStation](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
-- [Hostile ecology index](/wiki/Hostile-Ecology-Index/)
+- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/)
+- [Lost Technology](/wiki/Lost-Technology-Lineage/)
+- [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/)
 - [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/)
-- Economy, Production and Logistics Rules
-- [The three factions of Seoul](/wiki/Sixteen-States/)
-', '가. 장비 분류의 지위
+- [The Three Factions of Seoul](/wiki/Sixteen-States/)
+', '
+2026년 서울에는 생업 공구, 치안 장비, 군용 무기가 있었고 드론과 인간형 기계, 몸에 다는 기계 부품도 있었다. 대정전 뒤 이 모두가 역으로 들어왔다. 한 세기가 지난 지금도 대부분은 작동한다. 달라진 것은 새로 만드는 것이 거의 없다는 점이다. 그래서 탄 한 발, 전지 하나, 예비 부품 하나가 모두 이미 있는 어딘가에서 나와야 한다.
 
-2026년 서울에는 생업 공구, 치안 장비, 군용 장비가 있었다. 대정전 뒤 정비사들은 남은 공구와 회수한 기체 부품을 수리하였다. 현대와 미래의 무기, 인간형 기계, 각종 기계는 대정전 뒤에도 남아 있다. 다만 결핍의 시대에 수와 탄약·부품이 모자라 귀하다.
+2126년에도 현대와 미래의 무기가 있고 휴머노이드와 기계가 있다. 사라진 것이 아니라 귀한 것이다. 어느 역에서든 물음은 소총이 작동하느냐가 아니라 쏠 탄이 있느냐, 고칠 사람이 있느냐다.
 
 <a id="한-세기가-지난-손"></a>
 
 ## 한 세기 동안 쓰인 장비
 
-가. 연대와 장비
+### 2026년에서 2126년까지
 
-대정전(약 2026년) 때 영등포아리수정수센터의 당직자들은 원격 제어가 끊긴 뒤 밸브를 수동으로 조작하였다. 2126년 세대는 당시의 공구와 설비를 수리하여 쓴다.
+대정전의 밤, 약 2026년에 영등포 정수센터 당직자들은 원격 제어를 잃고 밸브를 손으로 돌렸다. 옛 장비를 손으로 계속 돌리는 그 습관이 백 년 내내 이어진다. 2126년 세대도 당시의 공구와 설비를 고쳐 쓴다.
 
-나. 총포 규제와 잔존
+### 그때의 화기와 지금의 화기
 
-2026년 총포화약법은 총포와 석궁을 허가 대상으로 규정하였다. 당시 K계열 소화기도 존재하였다.
+2026년에는 총포와 석궁이 법으로 허가 대상이었고, 국군은 국산 소화기를 썼다. 민간인이 일상으로 총을 드는 나라는 아니었다. 대정전 뒤 그 무기들은 들고 있던 사람이 가는 곳으로 갔다. 소총과 권총과 산탄총은 2126년에도 발사된다. 모자라는 것은 탄약이다. 황동 탄피는 다시 채울 수 있지만 뇌관과 장약은 한 번 쓰면 끝이고, 뇌관이 가장 바꾸기 어렵다.
 
-다. 로봇 부품의 재사용
+### 드론과 기계
 
-대정전 뒤 공장 로봇의 호출망이 끊겼다. 정비사들은 남은 호스와 단자와 렌즈를 수리하였다.
+드론은 창고와 경찰서와 기지에서 나왔고, 지금도 짧게 날며 출구를 정찰하고 터널을 지켜본다. 공장 로봇은 저를 부르던 망을 잃었다. 기술자들은 다시 쓸 수 있는 호스와 단자와 렌즈를 떼어 냈고, 몇몇 기계는 통째로 계속 움직이게 했다. 몸에 다는 기계 부품도 같은 식으로 살아남았고 같은 규칙을 따른다. 누군가 정비할 수 있는 동안만 작동한다. 그 규칙은 [사이버웨어와 희소성](/wiki/Cyberware-and-Scarcity/)에 있다.
 
 ## 남은 무장: 기능·소유·접근
 
-가. 장비와 남은 기록
+### 장비와 필요한 것
 
-| 장비 | 기능 | 붕괴 전 제도·민간 소유 | 붕괴 후 접근 | 소모·수리·보급 | 소지 조건 | 출처 |
-|---|---|---|---|---|---|---|
-| K2 / K2C1 | 제식 소총 | 국군 계통. 민간 일반 보급품으로 보지 않음 | 군 잔존·탈영·회수·거래 등 경로가 사례마다 갈린다 | 호환 탄약·부품·정비 숙련 필요. 수량은 기록되지 않음 | 보유자는 저마다 획득 경위가 다르다 | K2 존재: [위키](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_K2). K계열 라인: [SNT Motiv](https://www.sntmotiv.com/eng/business/defense.html). K2C1 2026 지급 범위는 기록에 없다. 열람 2026-09-12 |
-| M16 계열 | 예비군·구형 비축 | 2015년 일반예비군 훈련 지급 사실 | 동원잔존·부대 장부·회수 경로가 있는 경우만 접근 | 탄약·탄창·부품·보관 상태가 별도 병목 | 빈 총은 총검술에 쓸 수 있으나 탄이 있으면 군용 잔존 규칙을 따른다 | [정책브리핑](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), 열람 2026-09-20 |
-| K1A | 군용 개인화기 | 국군 지급 계통 | 군용 잔존에서 회수·이전되는 경로는 사례마다 갈린다 | 호환 탄약과 부품은 모델별 확인. 다른 소총과 일괄 호환으로 처리하지 않음 | 탈영·동원잔존 외 인물은 별도 획득·숙련 이력 필요 | K계열 존재는 SNT Motiv. 모델별 자료와 2026 지급 범위는 기록에 없다 |
-| 제식 권총 | 측무장. 경비·장교 근접 | 군·경찰 장비. 민간 일상 없음 | 열쇠·명부가 있는 잔존. 떠돌이 시작 없음 | 권총탄은 소총탄과 별 재고 | 전직 순찰은 **봉·방패가 기본**. 권총은 장부가 열릴 때만 | 2026 지급 모델명은 기록에 없다 |
-| 분대지원화기 | 제압·호송 엄호 | 국군 분대 화기 | 세력 규모. 개인 시작 장비 아님 | 탄약 소모가 큼. 수리 공구·냉각·총열은 거점 정비 | 구로 군벌급 잔존, 거점 방어. 고아·떠돌이 없음 | 2026 제식 모델·배치는 기록에 없다 |
-| 제식 봉·순찰 방패·치안 개인보호구 | 제압, 방호, 역 경비 | 경찰·자치 경비·역 보안 | 전직 순찰 기본. 역 경비 공유 | 방패·피복 수리. 탄약 없음 | 전직 순찰 프리셋. 역장 거점 경비 | 경찰 세칙 원문은 남아 있지 않다 |
-| 지렛대·도끼·절단기 | 개방, 해체, 근접 | 토목·철도·시설 관리·민간 공구 | 생업 층. 공사장·차량기지 | 날 무뎌짐, 유압유 없음(수공구) | 떠돌이·탐사원·정비사 | 특정 브랜드는 기록에 없다 |
-| 유압 구조 장비 | 잔해 전개, 문·차체 개방 | 소방·구조대·철도 구난 | 거점 공방, 정비사. 개인 휴대 아님 | 유압유·동력·호스. 동력 없으면 짐 | 역장 거점, 규격맹 공병대와 겹침 | 소방 장비 제식 목록은 남아 있지 않다 |
-| 램프·무전기 | 시계, 연락 | 시설·치안·민간 무전기 | 생업·치안. 전지가 병목 | 전지·충전. 상용 전지는 노화한다 | 전령·탐사원·순찰 | 상용 랜턴·무전기는 민간 존재. 군용 암호무전기 잔존은 기록에 없다 |
-| 가스탐지·호흡보호·응급키트·휴대전원 | 관로 생존, 부상, 단기 전력 | 산업안전·소방·의료·시설 | 의무원·탐사원·거점 | 필터·약·전지 소모. 충전 ≠ 발전 | 의무원 붉은 천 실루엣. 고아는 없음 | 산업안전 일반. 2026 역무 지급 목록은 기록에 없다 |
-| 방검 / 방탄 / 작업 개인보호구 | 각각 찌름·베임 / 정해진 탄도 위협 / 작업별 위험에 대한 보호 | 치안·군·경호·산업 현장 | 용도와 등급을 구분. 작업복·진압방패를 방탄 장비로 취급하지 않음 | 손상·노화·교체 부품과 적합한 착용 조건 확인 | 역할에 맞는 보호구를 보호구는 역할에 맞게 갖추며 소속만으로 성능이 정해지지는 않는다 | 구체적 시험 등급·제식 모델·2026 지급 범위는 기록에 없다 |
-| 활 (조건부) | 저소음 투사. 기본 병과 아님 | 생활체육·국궁 동호. 군 제식 아님 | 있을 수 있다. **금지 아님**. 기본 원거리도 아님 | 화살 제작은 생업 공구 범위에서만 언급. 제조 레시피 없음 | 특정 인물·생업이 조건 | 민간 활 규제 범위는 기록에 없다 |
-| 석궁 (조건부) | 기계식 투사 | 총포화약법상 허가 대상 | 드묾. 허가 잔존·밀반입이 서사 조건 | 볼트·줄. 총포 장부와 별 장부일 수 있음 | 떠돌이 시작 없음. 기본 병과 아님 | [총포화약법](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98) 석궁 포함. 열람 2026-09-12 |
-| 센서·검사봇·액추에이터·전원 회수 | 탐지, 개폐, 단기 동력. 조건부로 장비·함정·무기 | 방재·시설 검사 분야 | 봉인 갤러리 해체·정지 후 모듈 | 충전·노화·공급원. 영구 전지 아님. 프로토콜 카드는 만능 제어가 아님 | 탐사원·기록관·운영가문 회수 반 | 개념은 [잃어버린 기술](/wiki/Lost-Technology-Lineage/) 참조. 2026년 실제 배치는 기록에 없다 |
-| 차량·발전기 (세력 규모) | 이동, 거점 전력 | 철도·시내버스·시설 비상발전기·군 차량 | 생활권이 굴릴 때만. 개인 프리셋 기본 아님 | 연료·윤활·타이어·배터리. 발전기 ≠ 축전 모듈 | 역장·세 세력 군사(공병·궤도). 떠돌이 없음 | 차량 잔존 규모와 수량은 기록에 없다 |
-| 중화기 (세력 규모) | 차단문·거점 방어 | 국군 지원화기·차량 탑재 | 분대 이상 잔존, 시설 방어. 개인 휴대 시작 없음 | 탄약·무거움·정비. 보급이 지휘권 분쟁의 대상 | 4 잔존 그룹·세 세력 시설 군사. 징집 잔존 | 2026 제식 목록·수량은 기록에 없다 |
+| 장비 | 기능 | 붕괴 전 | 2126년의 접근 | 소모와 수리 | 누가 드는가 |
+|---|---|---|---|---|---|
+| 붕괴 전 국군 지급 5.56mm 제식 소총 | 기본 소총 | 군 지급품. 민간 물품 아님 | 물려받거나 회수하거나 거래한다. 지닌 사람마다 얻은 사연이 다르다 | 맞는 탄, 부품, 숙련된 손. 수량은 기록되지 않음 | 정부 징집병과 경비, 자유도시 계약 조원, 아크 호위 |
+| 예비군 창고의 구형 5.56mm 소총 | 예비 비축 | 2015년 예비군 훈련에 지급 | 부대 장부나 창고가 남은 곳에서만 | 탄, 탄창, 부품, 보관 상태가 저마다 따로 병목 | 옛 창고를 쥔 쪽. 빈 총도 총검 자루로는 쓴다 |
+| 제식 권총 | 경비와 장교의 측무장 | 군·경찰 지급품 | 열쇠와 명부가 있는 잠긴 창고 | 권총탄은 소총탄과 다른 재고 | 경비와 장교. 전직 순찰은 봉과 방패로 시작한다 |
+| 분대지원화기 | 제압과 호송 엄호 | 군 분대 화기 | 개인이 아니라 세력 규모로 보유 | 탄 소모가 크다. 총열과 냉각은 공방이 필요 | 방어 거점과 원정 군대 |
+| 봉, 순찰 방패, 진압 장구 | 제압, 방호, 역 경비 | 경찰, 자치 경비, 역 보안 | 전직 순찰과 역 경비의 기본 | 방패와 피복 수리. 탄 없음 | 역 경비 |
+| 지렛대, 도끼, 절단기 | 개방, 해체, 근접 | 토목, 철도, 건물 관리 | 작업장과 차량기지에 흔하다 | 날이 무뎌진다. 유압 없음 | 짐꾼, 탐사원, 기술자 |
+| 유압 구조 장비 | 잔해 전개, 문과 차체 개방 | 소방, 구조, 철도 구난 | 공방과 수리 조. 혼자 들고 다니지 않음 | 유압유, 동력, 호스. 동력이 없으면 짐 | 수리 조와 공병 |
+| 램프와 무전기 | 시야와 연락 | 시설, 치안, 민간 무전기 | 생업과 경비에 흔하다. 전지가 병목 | 전지와 충전. 오래된 전지는 늙는다 | 전령, 탐사원, 순찰 |
+| 가스탐지기, 호흡보호구, 응급키트, 휴대 전원 | 관로 생존, 부상 처치, 짧은 전력 | 산업안전, 소방, 의료 | 의무원, 탐사원, 역 초소 | 필터, 약, 전지가 닳는다. 충전은 발전이 아니다 | 의무원과 탐사원 |
+| 방검, 방탄, 작업 보호구 | 찌름과 베임, 정해진 탄도 위협, 작업 위험을 막음 | 치안, 군, 경호, 산업 현장 | 종류를 구분한다. 작업복과 진압 방패는 방탄 장비가 아니다 | 손상, 노화, 교체 부품 | 역할에 맞춰 갖춘다. 소속만으로 보호가 생기지 않는다 |
+| 활(조건부) | 조용한 원거리 사격. 기본 무장 아님 | 생활체육 활쏘기. 군용 아님 | 있을 수 있다. 금지가 아니고 기본도 아니다 | 생업 공구로 만든 화살 | 특정 인물과 생업 |
+| 석궁(조건부) | 기계식 사격 | 총포 법령상 허가 대상 | 드물다 | 볼트와 줄 | 시작 무장 아님 |
+| 드론 | 정찰, 감시, 작은 폭약 운반 | 경찰, 구조, 군, 민간 재고 | 따뜻하게 두었다가 짧게 날린다 | 전지와 예비 부품. 전파 드론은 방해를 받는다 | 자유도시 조원이 가장 많이, 정부 소수 반 |
+| 몸에 다는 기계 부품 | 손, 눈, 다리 등을 바꿈 | 의료와 군 | 정부 등록부, 자유도시 집도의, 아크 세례를 거친다 | 수리, 전력, 예비 부품, 의약품 | [사이버웨어와 희소성](/wiki/Cyberware-and-Scarcity/) 참조 |
+| 센서, 검사 기체, 액추에이터, 회수 전원 | 탐지, 개폐, 짧은 동력. 때로 함정이나 무기 | 재난 대응과 시설 검사 | 봉인 갤러리에서 멈춘 기계의 모듈 | 충전, 노화, 공급원. 영원한 전지는 없다. 프로토콜 카드가 모든 것을 제어하지는 않는다 | 탐사원, 기록관, 회수 반. [잃어버린 기술](/wiki/Lost-Technology-Lineage/) 참조 |
+| 차량과 발전기 | 이동, 역 전력 | 철도, 버스, 비상발전기, 군 차량 | 공동체가 굴릴 수 있는 곳에서만 | 연료, 윤활유, 타이어, 전지. 발전기는 축전지가 아니다 | 역을 쥔 쪽과 세력 공병 |
+| 중화기 | 차단문과 거점 방어 | 군 지원화기와 차량 탑재 | 세력이 방어 거점에 둔다 | 탄, 무게, 정비. 보급을 두고 다툰다 | 세력 수비대 |
 
-## 2026년에 실제로 있는 것
+### 세력마다 먼저 모자라는 것
 
-가. 자료의 열람 범위
+정부는 총과 장갑차를 가장 많이 굴리니 탄약과 연료가 먼저 바닥난다. 자유도시는 드론과 수리 조를 굴리니 전지와 예비 부품이 먼저 바닥난다. 아크는 신도의 몸에 자원을 쓰니 이식 부품과 의약품이 먼저 바닥난다.
 
-2026년에는 총포·석궁 허가 제도와 군 장비, 철도·시설 공구가 있었다. 정수센터 당직자들은 대정전 직후 밸브를 수동으로 조작하였다.
+## 2026년에 실제로 있던 것
 
-- 총포화약법 제1조: 총포·도검·화약류·분사기·전자충격기·석궁의 제조·판매·임대·운반·소지·사용을 정한다. 민간이 총을 일상으로 드는 나라는 아니다. 시행일·조문 세부는 법령 원문을 따른다. ([국가법령정보센터](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98), 열람 2026-09-12; 이전 캡처 `.omo/ulw-research/20260911-200129/browse/01-law-go-kr-firearms-swords.png`)
-- K2는 대한민국 국군 제식 돌격소총으로 소개되는 공개 자료가 있다. 붕괴 후 군 잔존에서 보유하거나 시장에 유입되는 경로는 문서마다 갈린다. 2026년 「지금 누구에게 몇 정이 지급되는가」는 이 출처가 말하지 않는다. ([영문 위키, Daewoo K2](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_K2), 열람 2026-09-12)
-- 2015년 정책브리핑은 일반예비군 훈련 때 카빈 대신 M16을 지급한다고 밝혔다. 당시의 훈련 지급 사실은 확인되지만, 2026년 수량·부대별 지급표·창고 위치는 이 자료로 결론짓지 않는다. ([정책브리핑](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), 열람 2026-09-20)
-- SNT 모티브의 공개 방산 페이지는 K계열 소화기 생산 계열의 존재를 보여 준다. 제조사의 제품 설명은 국군과 예비군의 실제 지급 수량을 대신하지 않는다. ([SNT 모티브](https://www.sntmotiv.com/eng/business/defense.html), 열람 2026-09-20)
-- 2026 경찰 장비 세칙 원문과 제식 권총 모델의 지급 범위는 남아 있지 않고 세칙 숫자도 남아 있지 않다.
+### 남아 있는 기록
 
-## 출처
+2026년에는 총포와 석궁의 허가 제도, 군용 무기, 철도와 시설 공구가 있었다. 아래 기록은 그때 무엇이 있었는지 보여 준다. 백 년 뒤 어느 역에 얼마나 닿았는지는 보여 주지 않는다.
 
-- [PlayStation](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
-- [적대 생태 색인](/wiki/Hostile-Ecology-Index/)
+- 총포 법령은 총포, 도검, 화약류, 분사기, 전자충격기, 석궁의 제조와 판매, 임대, 운반, 소지, 사용을 정했다. 민간인이 날마다 총을 드는 나라는 아니었다. ([국가법령정보센터](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98), 열람 2026-09-12)
+- 공개 자료는 국군 제식 돌격소총을 소개한다. 2026년까지 누구에게 몇 정이 갔는지는 그 자료에 없다. (제식 소총 백과 항목, 열람 2026-09-12)
+- 2015년 정책브리핑은 예비군 훈련에 카빈 대신 구형 5.56mm 소총을 지급한다고 밝혔다. 지급 사실은 확인되지만 수량과 창고는 확인되지 않는다. ([정책브리핑](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), 열람 2026-09-20)
+- 국내 방산 제조사의 공개 페이지는 국산 소화기 생산 계열이 있었음을 보여 준다. 제품 소개는 지급 수량을 말하지 않는다. (방산 제품 안내 자료, 열람 2026-09-20)
+- 2026년 경찰 장비 세칙과 지급된 권총 모델은 남아 있지 않다.
+
+## 관련 문서
+
+- [사이버웨어와 희소성](/wiki/Cyberware-and-Scarcity/)
+- [잃어버린 기술](/wiki/Lost-Technology-Lineage/)
+- [서울 생태·변이 도감](/wiki/Hostile-Ecology-Index/)
 - [인물·세력·생업](/wiki/Characters-Factions-and-Professions/)
-- 경제와 생산, 물류 규칙
 - [서울의 세 세력](/wiki/Sixteen-States/)
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('External-Theaters', 'Outside', '바깥', 'places', 1, '<a id="External-Theaters-heading-0001"></a>
@@ -40497,74 +40508,64 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Stopped Orders, Remaining Chassis
 
-The city''s disaster-response organizations matched chassis forms to missions. Insect-form chassis took search, reptile-form chassis took reinforcement, and arthropod-form chassis took conduit inspection. When a disaster struck, the machines that searched for survivors, the machines that shored up structures, and the machines that inspected deep conduits divided the work among themselves.
+Before the Great Blackout, the city''s disaster agencies built their machines in different shapes for different jobs. Insect-shaped machines searched, reptile-shaped ones shored up structures, and arthropod-shaped ones inspected ducts. When disaster struck, one kind looked for survivors, one braced what was falling and one checked the deep pipes.
 
 <a id="개요-p4"></a>
 <a id="개요-p2"></a>
 
-The First AI answered that the cause of the pollution was humanity and that humanity had to shrink, and it brought winter. The AI killed no one directly. When winter fell, people went down into the subway stations, and only as many as the stations could hold survived. Outside Seoul, the war machines of the Great Blackout still roam, carrying out their last orders. Machines whose command and control had weakened wandered in small packs, and people became able to face them.
+The First AI answered that humans were the cause of the pollution, so there had to be fewer humans, and it brought down the winter. The AI killed nobody directly. When the cold came, people went down into the subway stations, and only as many survived as the stations could hold. Outside Seoul, the war machines of the Great Blackout still roam, carrying out their last orders. Inside the city, the disaster machines lost the networks that commanded them, and they''ve been repeating their last routines ever since, mostly in small groups that people can deal with.
 
 <a id="앎-보유-수리-제조-table2"></a>
 <a id="앎-보유-수리-제조"></a>
 
-Knowing a technology and holding a chassis are different things, and so are repairing one and making one anew. The mechanics, record keepers, and workshop technicians of 2126 understand the electricity, hydraulics, and sensor principles of 2026 through what the ledgers record and what was handed down. Even where the knowledge that reads principles, terms, and drawings survives, access records for authorization codes are usually gone.
+### Knowing, Holding, Repairing, Making
+
+Knowing a technology, holding a machine, repairing it and making a new one are four different things. The technicians, record keepers and workshop hands of 2126 understand the electrical, hydraulic and sensor principles of 2026 from ledgers and from what their parents taught them. The principles, terms and drawings survive. The access codes usually don''t.
 
 <a id="앎-보유-수리-제조-수리"></a>
 
-Physically holding chassis, modules, and cards is separate from knowing the technology. Dismantled modules, stopped chassis, and stronghold warehouses remain. Workshop technicians replace hydraulic hoses, terminals, and luminous lenses with standard parts and set what they hold moving again. But reconstructing a whole set of neural-net weights or the interior of a broken high-density cell is usually beyond reach.
+Holding a machine, a module or a card is separate from knowing how it works. Salvaged modules, stopped machines and station stores still exist. Workshop hands use standard parts to replace hoses, terminals and glowing lenses and get what they have moving again. Rebuilding a whole neural network, or the inside of a damaged high-density cell, is usually beyond them.
 
-Some trade tools and traps, and parts of the conditional equipment, can be newly assembled. But line-finished products, mass-produced cells, and the upper licensing servers usually do not remain. To say a technology stands lost comes close to saying that its manufacture, licensing, and supply mesh have been severed.
+Work tools, traps and some conditional equipment can still be built new. Factory products, mass-made cells and the servers that granted authority usually don''t exist any more. When people call a technology lost, they mostly mean that the making, the authority and the supply chain have been cut.
 
 <a id="생물모방-설계의-세-가지-핵심-축"></a>
 <a id="생물모방-설계의-세-가지-중심-축"></a>
 
 ## How Biomimetic Chassis Move
 
-Energy efficiency and distributed control
-Unlike centralized heavy plant, autonomous hydraulic control of each segment and joint suppressed moving power consumption. Even with the central computing unit paralyzed, the lower neural networks kept the survival routines on their own.
+Biomimetic machines use less power to move, and their control is spread through the body. Unlike heavy plant with one central unit, they control the hydraulics at each joint separately. If the central processor stops, the lower networks keep their survival routines running.
 
 <a id="생물모방-설계-험지-군집"></a>
 
-Adaptation to hard terrain
-On slopes, underwater, and in soil-collapse zones, the multi-leg mounts and flat armor plates held balance. Where wheeled undercarriages sank in mire, the biological joint structure delivered stable power. When a single chassis was destroyed, those nearby received the signal and re-formed the search net. Through mutual signal sharing they held formation without collision even inside narrow bends.
+With many-legged mounts and flat armour they keep their balance on slopes, in water and on collapsed earth. Their joints still deliver power in mud that swallows wheels. When one machine is destroyed, the others pick up the signal and rebuild their search pattern. In narrow, bending passages they share signals and keep formation without colliding.
 
 <a id="붕괴-이전-방재-루틴의-고착화-메커니즘-list1"></a>
 <a id="붕괴-이전-방재-루틴의-고착화-메커니즘"></a>
 
-Weapon drones roamed on, carrying out their last orders. As command and control weakened, the machines wandered in small packs. The surviving units retain portions of search, patrol, and automatic-maintenance routines.
+When command and control weakened, the machines broke into small groups. What remains in them now is part of the search and watch routines and some of their self-maintenance.
 
 <a id="세-로스트-라인"></a>
 <a id="두-로스트-라인"></a>
 
 ## The Two Sealed Lines
 
-Deep beneath the city lie sealed the two lost-tech lines of pre-collapse disaster engineering. Their forms and missions differ.
+Deep beneath the city, two lost lines of pre-collapse disaster engineering are sealed away. Their shapes and tasks are different.
 
 ### G25 Lantern Ant
 
-G25 is an insect-shaped machine line for swarm search and small-cargo delivery, with fine multi-legged joints and forward luminous lenses.
+The [G25 Lantern Ant](/wiki/Hostile-Group-G25/) is an insect-shaped line. It searches in swarms and carries small supplies, with fine many-legged joints and a glowing lens at the front.
 
-Narrative of the restart trigger
-When the corridor control-board voltage surged or outside physical shock arrived, the chassis judged the pre-collapse search orders still valid and began the restart sequence. Once the trigger fired, the gallery barrier opened and the small swarm chassis scattered through the corridor to resume search activity.
+When the voltage at a passage control panel spikes, or something strikes it from outside, the machine decides the old search order is still valid and starts its restart sequence. Once the trigger point fires, the gallery shutter opens and the small machines spread through the passage to search again.
 
-Luminous search lenses: they cast high-frequency light into pitch darkness to identify cracks and human life.
-Upper transport hopper: a heat-resistant frame storing precision relief goods or search capsules.
-Multi-leg joint drive system: fine grips mounted to grasp wall faces and ceiling finishes while moving.
-Autonomous charging terminals: metal collectors charging power through contact with the depot rails. Charging only; it is not a perpetual engine generating infinitely.
-Obstacle-crushing jaws: high-strength grippers cutting away collapsed debris to open passages.
+The search lens throws high-frequency light into the dark to pick out cracks and people. The carrying hopper on top has a heat-resistant frame and holds precise supplies or search capsules. The machine grips walls and ceilings with the fine claws of its legs, and the strong pincers of its jaw cut through rubble to clear a way. Its charging contact draws power from the hangar rails. It stores power; it doesn''t make it.
 
 ### G26 Iron Dinosaur
 
-G26 is a dinosaur-shaped machine line for heavy transport and structural repair. It has a hydraulic lower body and rear counterweight. Its power source depends on charging, fuel, and cell life.
+The [G26 Iron Dinosaur](/wiki/Hostile-Group-G26/) has a dinosaur-shaped frame and moves heavy loads and repairs structures. It has hydraulic legs and a counterweight at the rear, and its power is limited by charge, fuel and cell life.
 
-Narrative of the restart trigger
-When power reached the maintenance shed''s automatic inspection terminal and an outside access-authorization signal arrived, the Iron Dinosaur''s hydro valves opened and the restart trigger moved. The risen chassis sounded dull mechanical alarms, left the maintenance berths, and deployed patrols to secure work zones.
+When the inspection terminal in its workshop gets power and an outside access signal arrives, its hydraulic valves open. Machines whose trigger point has fired sound a dull mechanical alarm, leave their maintenance bays and patrol to secure their work area.
 
-Hydraulic heavy underbody: reinforced hydraulic pistons bearing and moving several tons of concrete debris.
-Rear weight balancer: a variable-counterweight structure centering the load and preventing overturn.
-Impact rock-breaking mace: an impact-arm module for crushing obstacles and opening passages.
-External reinforcement armor plates: they protected the central power module from rockfall and blast pressure.
-Vibration sonic emitter: it identified fine ground subsidence by sensor and settled debris by resonance.
+The reinforced pistons of the legs lift and move tonnes of broken concrete. The adjustable rear weight keeps the machine balanced as the load shifts. A crushing arm breaks obstacles and opens passages, and armour plates protect the central power module from falling rock and blast. A vibration emitter senses small settling in the ground and settles rubble by resonance.
 
 <a id="봉인회수쟁탈"></a>
 <a id="로스트-테크-전환-원인"></a>
@@ -40574,11 +40575,11 @@ Vibration sonic emitter: it identified fine ground subsidence by sensor and sett
 <a id="로스트-테크-전환-원인-p1"></a>
 <a id="로스트-테크-전환-원인-list2"></a>
 
-The precision machine lines fell to lost tech as their manufacture, licensing, and access rights were physically severed; it did not mean humanity had comprehensively lost scientific knowledge. With wired and wireless communication to the city''s central disaster-control board cut off, the chassis were fixed on their last orders, receiving neither a higher authorization command nor a safe shutdown signal.
+The precision lines became lost technology when making, authority and access were physically cut. When the links to the city''s central disaster control failed, the machines received neither a higher command nor a safe shutdown signal, and they froze on their last order.
 
 <a id="로스트-테크-기술세대격차"></a>
 
-Programming and most human technology survived and were passed down orally to a few. With the internet gone, knowledge became concentrated among them. Only those who held the knowledge could operate electricity and technical equipment, and some forces established technology monopolies. After the dark age, these technologists rose into a knight class. They built power through the knowledge needed to run equipment, and the lineage runs on to those who founded the great operating houses.
+Programming and most human technical knowledge survived, but only among a few, and it passes from parent to child. With the networks gone, knowledge gathered in those families. Only people who could handle power and equipment could run them, and some groups kept that knowledge to themselves. Scarcity made the work hereditary, and the families who run plant became the operating houses. Today the same pattern holds for cyberware: whoever can maintain a machine part decides who can carry one. That is set out in [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/).
 
 <a id="축전-발전"></a>
 
@@ -40587,23 +40588,21 @@ Programming and most human technology survived and were passed down orally to a 
 <a id="축전-발전-p1"></a>
 <a id="축전-발전-list2"></a>
 
-Charging modules and stronghold generators are different equipment. Charging consumes charge already held somewhere, so charging terminals and a source supplying power (depot rails, stronghold generators, recovered cells) were always needed. Cells age, and in hard freezes their output can drop sharply. They are not perpetual batteries holding charge indefinitely through long years.
+A battery module and a station generator are different machines. A battery only spends charge it already holds, so it needs a source: a charging terminal, hangar rails, a generator or a salvaged cell. Cells age. In deep cold their output drops sharply, and many can''t be charged safely below freezing. In a winter that doesn''t end, every charge happens in a warm room.
 
 <a id="축전-발전-공급"></a>
 
-Generation produces power from fuel, hydro, sunlight, and the like. Plugging in charging modules and directly turning a generator differ from the supply system up. Charging modules store the power received from external generation equipment.
+Generating means making power from fuel, water or sunlight. Plugging in a battery and running a generator need different supply chains. A battery module stores power that came from somewhere else.
 
 <a id="지하-부품-경제"></a>
 
 ### The Three Recovered Parts
 
-A lost chassis is at once a threat of the underground and the most expensively traded technical resource of underground society. The parts secured by stripping a chassis divide into charging modules, drive modules, and sensor modules.
+Lost machines are a danger underground and also the most expensive technology traded there. What comes off a machine falls into three kinds: battery, drive and sensor modules.
 
-Charging modules: high-density cells, favored as buffers for stronghold power grids. Not perpetual generators making power themselves. They took the constraints of charging, aging, and supply source in full.
-Drive modules: drive units of hydraulic pistons and high-torque motors, used to restore stopped heavy plant or open and close giant gates. Under the right conditions they could also serve as actuators for ordinary equipment or traps.
-Sensor modules: composite optical sensor panels offering dark-sight and fine vibration detection. They traded at high prices among powers building watch facilities. Depending on conditions they could become detection equipment or the triggers of traps.
+High-density battery modules buffer a station''s power. They still age, still need charging and still depend on a source. Drive modules of hydraulic pistons and high-torque motors bring stopped heavy plant back or open and close great gates. Under the right conditions they also become actuators for ordinary equipment or traps.
 
-Mechanics recovered and repaired surviving hoses, terminals, and lenses from stopped equipment.
+The compound optical panels of sensor modules give night sight and pick up small vibrations. Groups building watch posts trade them at high prices and sometimes use them as detectors or trap triggers. Drones and machine eyes use the same kinds of parts, which is why the market for them never cools.
 
 <a id="회수-반과-가문의-경합"></a>
 
@@ -40612,18 +40611,18 @@ Mechanics recovered and repaired surviving hoses, terminals, and lenses from sto
 <a id="회수-반과-가문의-경합-p1"></a>
 <a id="회수-반과-가문의-경합-list2"></a>
 
-The sealed galleries and maintenance-shed zones were the key contested ground eyed by the great operating houses and the professional relic recovery squads. The HC22 Magok Test-Line House, nursing the ambition to monopolize the original technology intact, first pushed a precision recovery team inside the sealed zone. The HC17 Guro Digital Complex Battery House, raising the pretext of securing the underground supply routes, swiftly disabled the chassis of the main sealed corridors and tried to occupy the sections. The HP01 Yeongdeungpo Sluice House took the strategy of secretly supplying recovered cells and sensor modules to underground auction houses and reaping great economic gain.
+The sealed galleries and workshop zones are contested by the operating houses and by salvage crews. HC22, the Magok test-line house, sends precise recovery teams in first to keep the original technology to itself. HC17, the Guro Digital Complex cell house, moves fast to disable machines in the main sealed passages and hold the sections, in the name of safe supply routes. HP01, the Yeongdeungpo sluice house, quietly sells recovered cells and sensor modules to underground auctions.
 
 <a id="프로토콜-접속과-카드"></a>
 
-Machine control boards have wired and wireless protocol connection standards, and negotiation windows and protocol cards are used. A protocol card does not control every chassis.
+Machine control panels follow wired and wireless protocol standards, and negotiation windows and protocol cards are used with them. A protocol card doesn''t control every machine.
 
 <a id="회수-반과-가문의-경합-p3"></a>
 <a id="m040-몬스터-배치의-현장-적용-p1"></a>
 <a id="m040-몬스터-배치의-현장-적용-list2"></a>
 <a id="m040-몬스터-배치의-현장-적용"></a>
 
-These armed recovery squads competed in performance by occupying restart triggers ahead of others to capture intact chassis, or disabling them on the spot to strip the core modules. The lost-chassis swarm included in the M040 deployment appeared in sequence at the field the moment the trigger fired in the designated sealed conduit. G25 Lantern Ant chassis spread a broad front along the corridor''s forward side, minutely detecting intruder responses. G26 Iron Dinosaur chassis heavily blocked the stronghold crossings, physically repelling mid-range approach.
+Armed salvage crews race to take restart trigger points first and capture whole machines. Sometimes they disable a machine on the spot and strip its main modules. In some sealed ducts the swarms appear one after another the moment a trigger point fires. G25 Lantern Ants spread a wide search line at the front of a passage and pick up the smallest response from an intruder. G26 Iron Dinosaurs block junctions and push back anyone who comes close.
 
 <a id="연결"></a>
 <a id="출처"></a>
@@ -40633,168 +40632,164 @@ These armed recovery squads competed in performance by occupying restart trigger
 <a id="연결-list1"></a>
 <a id="출처-list1"></a>
 
-- [The hostile ecology compendium](/wiki/Hostile-Ecology-Index/)
-- [The Seoul ecology and variant codex](/wiki/Hostile-Ecology-Index/)
-- [The operating houses](/wiki/Operating-Houses/)
-- [The three factions of Seoul](/wiki/Sixteen-States/)
-- [The arms and technology of this era](/wiki/Era-Arms-and-Tech-Level/)
-- [The Scenario Timeline](/wiki/Scenario-Timeline/)
-- [Horizon Forbidden West](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
+- [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/)
+- [Operating Organizations](/wiki/Operating-Houses/)
+- [The Three Factions of Seoul](/wiki/Sixteen-States/)
+- [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
+- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/)
+- [Scenario Timeline](/wiki/Scenario-Timeline/)
 
-## Improvisation Tech and the Keeping of Old Machines
+## Improvisation and the Keeping of Old Machines
 
-A. Keeping the wreckage and improvisation technology
+### Tending the Wreckage
 
-In later Seoul an old lost tech did not become a relic merely because years had passed. People gathered around the old facilities that had done their work and tended them together. Improvisation tech showed its face only within this frame of tending the machines. The axes added atop it were three: tending the machines, circulation practices, and the keeping of old-world symbols. The chief things tended were rolling stock, old substations, severed announcements, faded station marks, and old currency.
+People gather around old facilities that have done their work and tend them together. Improvised technology grows inside that tending. It has three strands: tending the machines, keeping the old ways of exchange, and keeping the symbols of the old world. What people tend most is rolling stock, old substations, silent announcement systems, faded station signs and old money.
 
-B. Struggles among successor polities
+### Districts and Stations
 
-The glory of the old state had now receded into legend. Over that vacancy the local successor polities fought fiercely over the old wreckage. Regional division sprouted first not in grand ideology but in gu and station and route units, and dynasties and vassal powers inherited in turn their jurisdiction.
+The old state survives only in stories. What people fight over is closer to hand: a district, a station, a line. Under the three factions, each station and district keeps its own rules about who looks after which relic, and those rules pass down with the work.
 
-C. Fixed roles of the two lines
+### The Roles of the Two Lines
 
-The skeleton of the two lost lines was not changed carelessly. The G25 Lantern Ant firmly remained the line charged with search, and the G26 Iron Dinosaur the line mending heavy plant. Whatever meaning people attached to them did not change those roles. Communities merely read the same chassis differently.
+The two lost lines keep their roles. G25 Lantern Ant is the line that searches. G26 Iron Dinosaur is the line that mends heavy plant. Whatever meaning people give them, the roles stay the same. Each community just reads the same machine differently.
 
 ### Tending the Machines
 
-A. Keeping the great chassis
+#### Guarding the Great Machines
 
-People kept the huge bodies of depots and substations as the centers of their communities. Even the act of stripping and recovering something was carried out by a set procedure, and the maintenance round meant no more than circling the dark maintenance shed with care. Raising a machine back to life was sometimes the great occasion on which a group split.
+People guard the great machines of the depots and substations as the centre of their community. Even taking a machine apart follows set steps. A maintenance round is a walk around the dark workshop. Restarting an old machine sometimes splits a community.
 
-B. Looking after the parts
+#### Caring for a Machine
 
-People look after old train bodies and bogies as their communities'' implements. They also tend the hydraulic assemblies in workshops and the busbars in substations.
+People treat the bodies and old bogies of trains as things that belong to everyone. The hydraulic legs in the workshops and the busbars of the substations are cared for the same way.
 
-C. Two views of wheels and busbars
+#### Wheels and Light
 
-The practice divided into two views. One side held firmly that as long as the heavy wheels rolled, that route''s life continued. The other held that only the stations where a faint light remained survived to the end.
+The practice splits two ways. One side holds that as long as the heavy wheels turn, life on the line goes on. The other holds that only the stations where a faint light still burns will last.
 
-### Circulation Practices
+### Ways of Exchange
 
-A. The use of old currency
+#### What Old Money Is For
 
-Circulation practices were the custom of gathering old currency and worn circulation relics that had lost their meaning at the strongholds. The exchange acts common before the collapse remained as custom. Card-tapping, coin-inserting, ration-distributing gestures, plain hand movements, now became set procedure.
+People keep old money and the leftovers of old trade in their strongholds even though it buys nothing. The gestures of exchange from before the collapse became custom: touching a card, putting in money, handing out goods.
 
-B. What is gathered
+#### What Is Kept
 
-Banknotes, rolling coins, and plastic transit cards were the most prized things. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just distribution of goods. The tap of a card at a gate was a request for passage. The HP01 house''s auctioning of parts is read elsewhere as a breach of the order; within this lineage it passes as an accepted practice.
+Notes, coins and plastic transit cards are the most prized. Trade in batteries, drives and sensors, the core of the underground parts economy, is read here as part of a fair order. Touching a card at the ticket gate is a way of asking permission to pass. HP01''s parts auctions look outside the rules elsewhere, but inside this practice they count as accepted custom.
 
-C. Two rules of value and passage
+#### Value and Passage
 
-The practice divided into two rules. One side held that the stamp fixed in the locked box set the value of things. The other held that the very instant of passing the breaker was the act that carried on a momentary life.
+The practice splits two ways. One side holds that the stamp sealing a locker sets the value of what''s inside. The other holds that passing the barrier is itself the act of staying alive.
 
-### Keeping Old-World Symbols
+### Keeping the Old World''s Symbols
 
-A. Traces of the voice
+#### Traces of the Announcements
 
-The people who keep old-world symbols hold station signs and interrupted announcements as things to be preserved.
+People who keep the symbols of the old world treat station signs and silent announcement speakers as things to protect.
 
-B. Echo and boundary
+#### Echo and Boundary
 
-The G25''s sensor modules and protocol cards were the faint echoes that voice had left. If someone moved a station mark elsewhere, they held that the boundary itself moved whole to that place. To erase a mark wantonly was therefore held the same as erasing the place itself.
+To them, G25''s sensor modules and protocol cards are echoes of the voice that used to speak. Moving a station sign moves the boundary of that place with it. Erasing a sign erases the place.
 
-C. Two territory standards
+#### Two Ways to Draw a Boundary
 
-The territory standards divided into two. One took even the places where letters faintly remained as intact boundaries. The other made the whole space where the voice gently rang one jurisdiction.
+There are two standards. One draws the boundary as far as the faded letters still show. The other claims the whole space the voice once filled.
 
-### The Rules by Which a Relic Became a Community''s Center
+### When a Relic Becomes the Centre
 
-A. Five conditions
+#### Five Conditions
 
-A mass of scrap was not kept merely because time had long passed. One of the three axes (tending the machines, circulation practices, keeping old-world symbols) had to be clearly knotted into it, and the conditions below carefully met.
+A heap of old metal doesn''t become a community''s centre just because it''s old. Its meaning has to tie clearly to one of the three strands, and it has to meet these conditions.
 
-1. It had to be Seoul material
-Rolling stock, a substation, an announcement, a station mark, or old currency, or at least bearing their traces. The lost line''s modules became the center only when firmly attached to this core material.
-2. A living livelihood had to depend on its function
-Lighting that brightened the dark, the water supply, safe passage, and watch duty had to hang deep on that relic. Rules did not fall off an old notice board on the wall. They flowered hot in the concourse where people breathed and sweated, before the sluices, in the crowded unloading yards.
-3. Re-control had to be blocked
-With the servers cut and even the vault holding the drawings firmly shut, the remaining machines became mere masses of cipher with no way of interpretation. It was before this great wall of interpretation that a chassis became the center of its community.
-4. Survival in the same place had to repeat
-Only a community that had clung to one module and stubbornly survived three times or more took that mass of iron as its center. A single lucky chance remained merely a useful trading item.
-5. A place-power had to claim jurisdiction
-The successor polities split by route, gu, and station divided custody and upkeep manner and strict taboo each in their own way. Dynasties and the vassal powers following them inherited even the jurisdiction and hardened their power. The recovery squads stripping parts without restraint and the keepers defending the old relics to the end collided roughly inside these dark sealed galleries.
+1. It''s made of Seoul. It''s rolling stock, a substation, an announcement system, a station sign or old money, or at least carries their traces. A module from a lost line becomes a centre only when it''s attached to one of these.
+2. Living work depends on it. Light, water, passage or watch duty has to rely on it. These rules come from the concourses, the sluice gates and the crowded docks where people work and breathe, not from notice boards.
+3. It can''t be controlled again. When the servers are gone and the drawings are locked away, what''s left is a code nobody can read. In front of that wall, the machine becomes the centre.
+4. Survival in the same place repeats. Only a community that has survived three or more times by relying on one module makes it the centre. One lucky escape leaves it a trade good.
+5. Someone with a claim on the place says it''s theirs. The station holder, the district''s ruling house or the city that holds the ground decides how it''s kept and what''s forbidden. Salvage crews who strip parts and keepers who protect relics meet in the sealed galleries.
 
-### Relic Interpretation by Lineage
+### Readings by Strand
 
-A. Three tiers
+#### Three Levels
 
-The customs were firmly stacked in three strata. At the top stood the great lineages of custom; beneath them sat the differing individual customs; at the very bottom waited concrete rules and exacting lessons. This endlessly splitting process of division was itself the unit that edited Seoul''s rules anew.
+Custom has three levels. At the top is the strand. Under it are individual customs. At the bottom are the concrete rules and lessons. As customs split, Seoul''s rules are rewritten one piece at a time.
 
-B. How the three lineages read
+#### How Each Strand Reads
 
-The machine-tending lineage read the old rolling stock, the substations, and even the G26''s heavy drives together as one body of care. The circulation lineage accepted crumpled currency, gate passage, and even secret parts auctions as one order of distribution. The symbol-keeping lineage took the severed announcements, the faded station marks, and the sharp sensor signals of the G25 as a single line of voice the old world had left.
+The machine-tending strand reads old trains, substations and G26''s heavy drives as one thing to look after. The exchange strand takes crumpled money, passing the gate and quiet parts auctions as one order of sharing. The symbol strand treats silent announcements, faded signs and G25''s sensor signals as the voice the old world left behind.
 
-C. Different readings of the same module
+#### One Module, Different Readings
 
-The very same G25 charging module was the core of the substation equipment to one lineage, a costly trading good to another, and the box where the voice dwelt to a third. The same G26 hydraulic underbody was the joint bridging legs to one lineage and the device barring those who passed without right to another.
+A G25 battery module is the heart of the substation to one strand, an expensive trade good to another and a box where a voice lives to a third. A G26 hydraulic leg is a joint that links bridges to one strand and a barrier against reckless passers to another.
 
-D. Public and hidden customs
+#### Open and Hidden Custom
 
-The public custom showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden custom flipped the very same phrases into entirely different secret lessons. If one vassal house quietly overlaid the keeping of the substation equipment and the keeping of the station marks inside the same gallery, then though the object before the eyes was one, the jurisdiction governing it split in two.
+Open custom shows in the red warnings on station notice boards. Hidden custom reads the same words as a different lesson. When one house keeps both the substation and the station signs in the same gallery, the object is one, but the authority over it splits in two.
 
-E. Fixed number of lines
+#### The Same Parts, Different Uses
 
-The people of machine tending, circulation practice, and old-world symbol keeping use surviving machine parts in different ways.
+The people of the three strands use the same leftover machine parts for different customs.
 ', '<a id="개요"></a>
 
 ## 멈춘 명령, 남은 기체
 
-도시의 방재 조직은 임무에 따라 기체의 형태를 달리했다. 곤충 형태의 기체는 수색을, 파충류 형태의 기체는 보강을, 절지동물 형태의 기체는 관로 검사를 맡았다. 재난이 일어나면 생존자를 찾는 기체와 구조물을 보강하는 기체, 심층 관로를 검사하는 기체가 일을 나누었다.
+대정전 전, 도시의 방재 조직은 일에 따라 기계의 모양을 달리 만들었다. 곤충 모양 기계는 수색을, 파충류 모양 기계는 보강을, 절지동물 모양 기계는 관로 검사를 맡았다. 재난이 나면 하나는 생존자를 찾고, 하나는 무너지는 것을 받치고, 하나는 깊은 관을 살폈다.
 
 <a id="개요-p4"></a>
 <a id="개요-p2"></a>
 
-최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. AI가 직접 죽인 사람은 없다. 겨울이 닥치자 사람들은 지하철역으로 들어갔고, 역이 품을 수 있는 만큼만 살아남았다. 서울 밖에는 대정전 때의 전쟁 기계들이 마지막 명령을 수행하며 돌아다닌다. 지휘와 통제가 약해진 기계들은 작은 무리로 돌아다녔고, 사람들은 이들을 상대할 수 있게 되었다.
+최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. AI가 직접 죽인 사람은 없다. 추위가 닥치자 사람들은 지하철역으로 내려갔고, 역이 품을 수 있는 만큼만 살아남았다. 서울 밖에는 대정전 때의 전쟁 기계들이 마지막 명령을 수행하며 돌아다닌다. 도시 안의 방재 기계는 저를 지휘하던 망을 잃었고, 그 뒤로 마지막 루틴을 되풀이한다. 대개 작은 무리로 움직여서 사람이 상대할 수 있다.
 
 <a id="앎-보유-수리-제조-table2"></a>
 <a id="앎-보유-수리-제조"></a>
 
-기술을 안다는 것과 기체를 가진다는 것, 수리한다는 것과 새로 만든다는 것은 서로 다르다. 2126년의 정비사·기록관·공방 기술자는 장부에 기록된 내용과 전승된 지식으로 2026년의 전기·유압·센서 원리를 이해한다. 원리·용어·도면을 해석하는 지식이 남아 있어도 인가 코드의 접근 기록은 흔히 없다.
+### 알기, 갖기, 고치기, 만들기
+
+기술을 아는 일, 기계를 갖는 일, 고치는 일, 새로 만드는 일은 서로 다르다. 2126년의 기술자와 기록관과 공방 일꾼은 장부와 부모에게 배운 것으로 2026년의 전기·유압·센서 원리를 이해한다. 원리와 용어와 도면은 남아 있다. 접근 코드는 대개 남아 있지 않다.
 
 <a id="앎-보유-수리-제조-수리"></a>
 
-기체·모듈·카드를 물리적으로 보유하는 일과 기술을 아는 일은 별개다. 해체 모듈과 정지된 기체, 거점 창고는 남아 있다. 공방 기술자는 규격 부품으로 유압 호스와 단자, 발광 렌즈 같은 부위를 교체해 가진 것을 다시 움직이게 한다. 그러나 신경망 가중치 전체나 파손된 고밀도 셀의 내부를 재구성하는 일은 흔히 할 수 없다.
+기계나 모듈이나 카드를 손에 쥐는 일은 그것이 어떻게 도는지 아는 일과 별개다. 떼어 낸 모듈, 멈춘 기계, 역 창고는 아직 있다. 공방 일꾼은 규격 부품으로 호스와 단자와 빛나는 렌즈를 갈아 가진 것을 다시 움직이게 한다. 신경망 전체나 망가진 고밀도 셀의 속을 다시 짓는 일은 대개 하지 못한다.
 
-생업 공구와 함정, 조건부 장비의 일부는 새로 조립할 수 있다. 그러나 라인 완제품과 셀 양산, 상위 인가 서버는 흔히 남아 있지 않다. 기술이 로스트 상태에 있다는 말은 제조와 인가, 보급망이 단절되었다는 뜻에 가깝다.
+생업 공구, 함정, 일부 조건부 장비는 아직 새로 만들 수 있다. 공장 완제품, 대량 생산 셀, 권한을 내주던 서버는 대개 남아 있지 않다. 기술을 잃었다고 할 때 사람들은 대개 만드는 일과 권한과 보급망이 끊겼다는 뜻으로 말한다.
 
 <a id="생물모방-설계의-세-가지-핵심-축"></a>
 <a id="생물모방-설계의-세-가지-중심-축"></a>
 
 ## 생물모방 기체가 움직이는 방식
 
-생물모방 기체는 이동에 드는 전력을 덜 쓰며 제어 기능이 분산되어 있다. 중앙 집중 중장비와 달리 마디와 관절마다 유압을 따로 통제해 이동 전력을 덜 쓴다. 중앙 연산 장치가 멈추어도 하부 신경망은 생존 루틴을 이어 간다.
+생물모방 기계는 움직이는 데 전력을 덜 쓰고, 제어가 몸 전체에 흩어져 있다. 중앙 장치 하나로 도는 중장비와 달리 관절마다 유압을 따로 다룬다. 중앙 연산 장치가 멈춰도 아래쪽 망이 생존 루틴을 이어 간다.
 
 <a id="생물모방-설계-험지-군집"></a>
 
-기체는 다지 거치대와 편평 장갑으로 경사면과 수중, 토사가 무너진 구역에서도 균형을 잡는다. 바퀴가 빠지는 수렁에서도 생체 관절은 동력을 안정적으로 전달한다. 기체 하나가 파괴되면 주변 기체가 그 신호를 받아 수색망을 다시 짠다. 좁게 굽은 통로에서도 신호를 나누며 충돌 없이 대열을 유지한다.
+여러 다리의 거치대와 납작한 장갑으로 비탈과 물속과 무너진 흙 위에서도 균형을 잡는다. 바퀴가 빠지는 진창에서도 관절은 힘을 전한다. 기계 하나가 부서지면 다른 기계가 그 신호를 받아 수색 그물을 다시 짠다. 좁고 굽은 통로에서도 신호를 나누며 부딪치지 않고 대열을 지킨다.
 
 <a id="붕괴-이전-방재-루틴의-고착화-메커니즘-list1"></a>
 <a id="붕괴-이전-방재-루틴의-고착화-메커니즘"></a>
 
-무기 드론은 마지막 명령을 수행하며 돌아다녔다. 지휘와 통제가 약해지면서 기계들은 작은 무리로 돌아다녔다. 현재 기체에는 수색·경계와 자동 유지보수의 일부 루틴이 남아 있다.
+지휘와 통제가 약해지자 기계들은 작은 무리로 갈라졌다. 지금 남은 것은 수색·경계 루틴의 일부와 자기 정비의 일부다.
 
 <a id="세-로스트-라인"></a>
 <a id="두-로스트-라인"></a>
 
 ## 봉인된 두 라인
 
-도시 지하 깊은 곳에는 붕괴 이전 방재 공학의 두 로스트 테크 라인이 봉인되어 있다. 형태와 임무는 서로 다르다.
+도시 깊은 곳에는 붕괴 전 방재 공학의 잃어버린 두 라인이 봉인되어 있다. 모양도 일도 다르다.
 
 ### G25 등불개미
 
-G25 등불개미는 곤충 형태의 기계 라인이다. 군집 수색과 소형 물자 배송을 맡으며, 다지 구조의 미세 관절과 전면부 발광 렌즈를 갖추었다.
+[G25 등불개미](/wiki/Hostile-Group-G25/)는 곤충 모양 라인이다. 무리 지어 수색하고 작은 물자를 나르며, 여러 다리의 섬세한 관절과 앞쪽의 빛나는 렌즈를 갖췄다.
 
-통로의 제어반 전압이 급증하거나 외부 물리적 충격이 가해지면, 기체는 붕괴 이전 수색 명령이 아직 유효하다고 판단해 재기동 시퀀스를 시작한다. 개시점이 가동되면 갤러리 차단막이 열린다. 소형 군집 기체는 통로 전체로 흩어져 수색을 다시 시작한다.
+통로 제어반의 전압이 치솟거나 바깥에서 충격이 오면, 기계는 옛 수색 명령이 아직 살아 있다고 판단해 재기동 순서를 시작한다. 개시점이 움직이면 갤러리 차단막이 열리고, 작은 기계들이 통로로 흩어져 다시 수색한다.
 
-발광 탐색 렌즈는 어둠 속에서 고주파 광선을 비춰 균열과 사람을 식별한다. 상부 수송 호퍼는 내열 프레임으로 되어 있으며 정밀 보급품이나 수색 캡슐을 담는다. 기체는 다지 관절 구동계의 미세 집게로 벽면과 천장 마감재를 움켜쥐고 이동하며, 장애물 파쇄 턱의 고강도 집게부는 붕괴 잔해를 잘라 통로를 개척한다. 자율 충전 단자는 격납고 선로와 접촉해 전력을 받는 금속 수집기다. 전력을 충전할 뿐 스스로 무한히 발전하지는 않는다.
+탐색 렌즈는 어둠 속에 고주파 빛을 비춰 균열과 사람을 가려낸다. 위쪽 운반 통은 열에 강한 틀로 되어 있어 정밀 보급품이나 수색 캡슐을 담는다. 기계는 다리 끝의 섬세한 집게로 벽과 천장을 붙잡고 움직이며, 턱의 억센 집게로 잔해를 잘라 길을 낸다. 충전 접점은 격납고 선로에서 전력을 받는다. 전력을 저장할 뿐 만들지는 않는다.
 
 ### G26 철공룡
 
-G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구조물 수리를 맡는다. 유압식 하체와 후방 중량 밸런서를 갖추었으며, 동력은 충전·연료·셀 수명에 제약을 받는다.
+[G26 철공룡](/wiki/Hostile-Group-G26/)은 공룡 모양 골격으로 무거운 짐을 옮기고 구조물을 고친다. 유압 다리와 뒤쪽 균형추를 갖췄고, 동력은 충전과 연료와 셀 수명에 묶여 있다.
 
-정비고의 자동 점검 단말에 전력이 공급되고 외부 접근 인가 신호가 수신되면 하이드로 밸브가 열린다. 재기동 개시점이 동작한 기체들은 둔탁한 기계식 경보음을 울리며 정비 정차선을 벗어나 작업 구역을 확보하는 순찰을 전개한다.
+정비고 점검 단말에 전력이 들어오고 바깥 접근 신호가 닿으면 유압 밸브가 열린다. 개시점이 움직인 기계는 둔한 기계식 경보를 울리며 정비 칸을 벗어나 작업 구역을 지키는 순찰에 나선다.
 
-유압 중장비 하체의 강화 피스톤은 수 톤의 콘크리트 잔해를 받치고 옮긴다. 후방 중량 밸런서의 가변 추는 하중이 이동할 때 기체의 균형을 잡아 전복을 막는다. 충격 쇄석 둔기는 장애물을 파쇄하거나 통로를 여는 충격식 암 모듈이며, 외부 보강 장갑판은 낙석과 폭발 압력으로부터 중심 동력원 모듈을 지킨다. 진동 음파 방출기는 지반의 미세한 침하를 센서로 식별하고 공진으로 잔해를 정돈한다.
+다리의 강화 피스톤은 몇 톤의 콘크리트 잔해를 들어 옮긴다. 뒤쪽의 조절식 추는 짐이 움직일 때 균형을 잡는다. 분쇄 팔은 장애물을 부수고 통로를 열며, 장갑판은 낙석과 폭압에서 중심 동력 모듈을 지킨다. 진동 방출기는 땅의 작은 침하를 느끼고 공진으로 잔해를 가라앉힌다.
 
 <a id="봉인회수쟁탈"></a>
 <a id="로스트-테크-전환-원인"></a>
@@ -40804,11 +40799,11 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 <a id="로스트-테크-전환-원인-p1"></a>
 <a id="로스트-테크-전환-원인-list2"></a>
 
-정밀 기계 라인은 제조·인가·접근 권한이 물리적으로 단절되면서 로스트 테크가 되었다. 도시 중앙 방재 제어반과의 유무선 통신이 끊기면서, 기체는 상위 인가 명령도 안전한 종료 신호도 받지 못한 채 마지막 명령에 고정되었다.
+정밀 기계 라인은 만드는 일과 권한과 접근이 물리적으로 끊기면서 잃어버린 기술이 되었다. 도시 중앙 방재 제어와의 연결이 끊기자 기계는 위쪽 명령도, 안전한 종료 신호도 받지 못한 채 마지막 명령에 굳었다.
 
 <a id="로스트-테크-기술세대격차"></a>
 
-프로그래밍과 인류의 기술 대부분은 살아남아 소수에게 구전으로 전해졌다. 인터넷이 사라지자 지식은 이들에게 집중되었다. 전기와 기술 설비를 다룰 줄 아는 사람들만 그것을 가동할 수 있었고 일부 세력은 기술을 독점하였다. 암흑기를 지나 기술을 가진 이들이 기사 계급으로 성장하였다. 이들은 설비를 운전하는 지식으로 권력을 쌓았으며, 그 계보는 거대 운영 가문들을 연 이들에게서 이어진다.
+프로그래밍과 인류의 기술 지식 대부분은 살아남았지만 소수에게만 남았고, 부모에게서 자식으로 전해진다. 망이 사라지자 지식은 그 가문들에 모였다. 전력과 설비를 다룰 줄 아는 사람만 그것을 돌릴 수 있었고, 일부 집단은 그 지식을 저희끼리만 지녔다. 결핍이 일을 세습으로 만들었고, 설비를 돌리는 가문들이 운영 가문이 되었다. 지금은 사이버웨어에도 같은 틀이 적용된다. 기계 부품을 정비할 수 있는 쪽이 누가 그것을 지닐지 정한다. 그 이야기는 [사이버웨어와 희소성](/wiki/Cyberware-and-Scarcity/)에 있다.
 
 <a id="축전-발전"></a>
 
@@ -40817,21 +40812,21 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 <a id="축전-발전-p1"></a>
 <a id="축전-발전-list2"></a>
 
-축전 모듈과 거점 발전기는 다른 장비다. 축전은 이미 담긴 전하를 소모하는 방식이므로 충전 단자와 격납고 선로·거점 발전기·회수 셀 같은 공급원이 반드시 필요하다. 셀은 노화하며 혹한기에 출력이 크게 떨어지기도 한다. 오랜 세월 전하를 무한정 유지하는 전지는 아니다.
+축전 모듈과 역 발전기는 다른 기계다. 축전지는 이미 담긴 전하만 쓰니 충전 단자, 격납고 선로, 발전기, 회수 셀 같은 공급원이 있어야 한다. 셀은 늙는다. 혹한에서는 출력이 크게 떨어지고, 많은 셀은 영하에서 안전하게 충전할 수 없다. 끝나지 않는 겨울에서 충전은 모두 따뜻한 방에서 한다.
 
 <a id="축전-발전-공급"></a>
 
-발전은 연료·수력·태양광 등으로 전력을 생산하는 일이다. 축전 모듈을 꽂아 쓰는 것과 발전기를 직접 돌리는 것은 보급 체계부터 다르다. 축전 모듈은 외부 발전 설비에서 받은 전력을 저장한다.
+발전은 연료나 물이나 햇빛으로 전력을 만드는 일이다. 축전지를 꽂는 일과 발전기를 돌리는 일은 보급망부터 다르다. 축전 모듈은 다른 곳에서 온 전력을 담아 둔다.
 
 <a id="지하-부품-경제"></a>
 
 ### 회수되는 세 부품
 
-로스트 기체는 지하의 위협인 동시에 지하 사회에서 가장 비싸게 거래되는 기술 자원이다. 기체를 뜯어 얻는 부품은 축전·구동부·센서 모듈로 나뉜다.
+잃어버린 기계는 지하의 위협이면서 지하에서 가장 비싸게 거래되는 기술이다. 기계에서 떼어 내는 것은 축전, 구동부, 센서 모듈 세 가지다.
 
-고밀도 축전 모듈은 거점 전력망의 완충 장치로 쓰인다. 충전과 노화, 공급원의 제약은 그대로 받는다. 유압 피스톤과 고토크 모터로 이루어진 구동부 모듈은 멈춘 중장비를 복구하거나 거대한 게이트를 여닫는다. 조건이 맞으면 일반 장비나 함정의 액추에이터가 되기도 한다.
+고밀도 축전 모듈은 역 전력의 완충 장치로 쓰인다. 그래도 늙고, 충전해야 하고, 공급원에 기댄다. 유압 피스톤과 고토크 모터로 된 구동부 모듈은 멈춘 중장비를 되살리거나 큰 문을 여닫는다. 조건이 맞으면 일반 장비나 함정의 구동기가 되기도 한다.
 
-센서 모듈의 복합 광학 패널은 암시 시야와 미세 진동 탐지 기능을 제공한다. 경계 시설을 구축하려는 세력들은 이를 비싸게 거래하며, 조건에 따라 탐지 장비나 함정의 방아쇠로 쓴다. 정비사들은 멈춘 설비에서 남은 호스·단자·렌즈를 회수해 수리했다.
+센서 모듈의 복합 광학 패널은 어둠 속 시야와 작은 진동 감지를 준다. 경계 초소를 짓는 집단은 이것을 비싸게 사고, 때로 탐지기나 함정의 방아쇠로 쓴다. 드론과 기계 눈도 같은 종류의 부품을 쓰니, 이 장터는 식을 날이 없다.
 
 <a id="회수-반과-가문의-경합"></a>
 
@@ -40840,18 +40835,18 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 <a id="회수-반과-가문의-경합-p1"></a>
 <a id="회수-반과-가문의-경합-list2"></a>
 
-봉인 갤러리와 정비고 구역은 거대 운영 가문과 전문 유물 회수 반이 서로 차지하려는 곳이다. HC22 마곡시험선가는 원형 기술을 그대로 독점하려 정밀 회수팀을 봉인 구역 안에 먼저 보낸다. HC17 구로디지털단지전지가는 지하 보급로의 안전을 명분으로 주요 봉인 통로의 기체를 빠르게 무력화하고 구획을 점거하려 한다. HP01 영등포수문가는 회수한 축전지와 센서 모듈을 지하 경매장에 몰래 공급해 큰 이익을 남긴다.
+봉인 갤러리와 정비고 구역은 운영 가문과 회수 반이 서로 차지하려는 곳이다. HC22 마곡시험선가는 원형 기술을 혼자 쥐려고 정밀 회수 조를 먼저 들여보낸다. HC17 구로디지털단지전지가는 보급로 안전을 내세워 주요 봉인 통로의 기계를 재빨리 멈추고 구획을 차지한다. HP01 영등포수문가는 회수한 셀과 센서 모듈을 지하 경매에 몰래 댄다.
 
 <a id="프로토콜-접속과-카드"></a>
 
-기계 제어반에는 유무선 프로토콜 접속 표준이 있고, 협상 창과 프로토콜 카드가 쓰인다. 프로토콜 카드가 모든 기체를 제어하는 것은 아니다.
+기계 제어반은 유무선 프로토콜 규격을 따르고, 협상 창과 프로토콜 카드를 함께 쓴다. 프로토콜 카드가 모든 기계를 다루지는 못한다.
 
 <a id="회수-반과-가문의-경합-p3"></a>
 <a id="m040-몬스터-배치의-현장-적용-p1"></a>
 <a id="m040-몬스터-배치의-현장-적용-list2"></a>
 <a id="m040-몬스터-배치의-현장-적용"></a>
 
-무장 회수 반은 남보다 먼저 재기동 개시점을 점거해 온전한 기체를 포획한다. 즉시 무력화한 뒤 주요 모듈을 해체하기도 한다. M040 군집은 지정된 봉인 관로에서 개시점이 작동하는 순간 순차적으로 모습을 드러낸다. G25 등불개미는 통로 앞쪽에 수색 전열을 넓게 펴 침입자 반응을 미세하게 검출한다. G26 철공룡은 거점 교차로를 막고 중거리 접근을 물리적으로 튕겨낸다.
+무장한 회수 반은 재기동 개시점을 먼저 차지해 온전한 기계를 붙잡으려 다툰다. 그 자리에서 멈춘 뒤 주요 모듈을 떼어 내기도 한다. 어떤 봉인 관로에서는 개시점이 움직이는 순간 무리가 차례로 나타난다. G25 등불개미는 통로 앞쪽에 넓은 수색 줄을 펴고 침입자의 작은 반응까지 잡는다. G26 철공룡은 교차로를 막고 가까이 오는 자를 밀어낸다.
 
 <a id="연결"></a>
 <a id="출처"></a>
@@ -40861,108 +40856,102 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 <a id="연결-list1"></a>
 <a id="출처-list1"></a>
 
-- [적대 생태 총람](/wiki/Hostile-Ecology-Index/)
 - [서울 생태·변이 도감](/wiki/Hostile-Ecology-Index/)
-- [운영가문](/wiki/Operating-Houses/)
+- [운영 조직](/wiki/Operating-Houses/)
 - [서울의 세 세력](/wiki/Sixteen-States/)
 - [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)
-- [연표](/wiki/Scenario-Timeline/)
-- [Horizon Forbidden West](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
+- [사이버웨어와 희소성](/wiki/Cyberware-and-Scarcity/)
+- [시나리오 타임라인](/wiki/Scenario-Timeline/)
 
-## 염출 기술과 옛 기계의 돌봄
+## 임기응변 기술과 옛 기계의 돌봄
 
-가. 잔해 돌봄과 염출 기술
+### 잔해를 돌보는 일
 
-사람들은 기능을 다한 옛 시설을 중심으로 모여 함께 돌본다. 염출 기술은 이 돌봄의 틀 안에서 모습을 드러낸다. 축은 기계 돌봄과 유통 관행, 구세계 상징 보존 세 가지다. 돌보는 주된 대상은 전동차와 낡은 변전소, 끊긴 안내방송, 색이 바랜 역 표지, 옛 화폐다.
+사람들은 제 일을 마친 옛 시설 둘레에 모여 함께 돌본다. 임기응변 기술은 그 돌봄 안에서 자란다. 갈래는 셋이다. 기계를 돌보는 일, 옛 교환 방식을 지키는 일, 옛 세계의 상징을 지키는 일이다. 사람들이 가장 많이 돌보는 것은 전동차, 낡은 변전소, 끊긴 안내방송, 바랜 역 표지, 옛 돈이다.
 
-나. 후계 정치체의 다툼
+### 구와 역
 
-옛 국가의 영광은 전설로 남았다. 지역 후계 정치체들이 낡은 잔해를 두고 다툰다. 지역 분열은 거창한 이념보다 구와 역, 노선 단위에서 먼저 나타난다. 왕조와 봉신 세력은 관할권을 차례로 상속받는다.
+옛 나라는 이야기 속에만 남았다. 사람들이 다투는 것은 더 가까운 것, 곧 구와 역과 노선이다. 세 세력 아래에서 역과 구마다 어느 유물을 누가 돌볼지 저마다 규칙을 두고, 그 규칙은 일과 함께 물려준다.
 
-다. 두 라인의 역할 고정
+### 두 라인의 역할
 
-두 로스트 라인의 뼈대는 바꾸지 않는다. G25 등불개미는 수색을 맡은 라인이다. G26 철공룡은 무거운 장비를 고치는 라인이다. 어떤 뜻을 붙이든 역할은 달라지지 않는다. 같은 기체를 공동체마다 다르게 본다.
+두 잃어버린 라인의 역할은 바뀌지 않는다. G25 등불개미는 수색하는 라인이다. G26 철공룡은 무거운 설비를 고치는 라인이다. 사람들이 어떤 뜻을 붙이든 역할은 같다. 공동체마다 같은 기계를 다르게 읽을 뿐이다.
 
 ### 기계 돌봄
 
-가. 큰 기체를 지키는 자리
+#### 큰 기계를 지키는 자리
 
-사람들은 차량기지와 변전소의 거대한 기체를 공동체의 중심으로 지킨다. 회수하는 일도 정해진 절차로 치른다. 정비 순회는 어두운 정비고를 한 바퀴 도는 일이다. 기계를 다시 살리는 재기동은 공동체가 쪼개지는 계기가 되기도 한다.
+사람들은 차량기지와 변전소의 큰 기계를 공동체의 중심으로 지킨다. 기계를 뜯는 일도 정해진 순서를 따른다. 정비 순회는 어두운 정비고를 한 바퀴 도는 일이다. 옛 기계를 다시 깨우는 일이 공동체를 쪼개기도 한다.
 
-나. 기체를 돌보는 일
+#### 기계를 돌보는 일
 
-사람들은 전동차의 차체와 낡은 대차를 공동체의 기물로 여긴다. 정비고의 유압 하체와 변전소 모선도 손질 대상으로 돌본다.
+사람들은 전동차의 차체와 낡은 대차를 모두의 것으로 여긴다. 정비고의 유압 다리와 변전소의 모선도 같은 식으로 돌본다.
 
-다. 바퀴와 모선을 보는 견해
+#### 바퀴와 불빛
 
-관행은 두 견해로 갈린다. 한쪽은 무거운 바퀴가 굴러가는 동안 노선의 생활이 이어진다고 여긴다. 다른 쪽은 희미한 불빛이 남은 역만이 끝까지 살아남는다고 여긴다.
+관행은 두 갈래로 나뉜다. 한쪽은 무거운 바퀴가 구르는 동안 노선의 삶이 이어진다고 여긴다. 다른 쪽은 희미한 불빛이 남은 역만 끝까지 버틴다고 여긴다.
 
-### 유통 관행
+### 교환의 관행
 
-가. 옛 화폐의 쓰임
+#### 옛 돈의 쓰임
 
-유통 관행은 의미를 잃은 옛 화폐와 낡은 유통 유물을 거점에 모아 두는 일이다. 붕괴 이전의 교환 행위가 관습으로 남았다. 카드를 찍고 돈을 넣고 물건을 배급하는 손짓이 정해진 절차가 되었다.
+사람들은 아무것도 살 수 없는 옛 돈과 옛 거래의 흔적을 거점에 모아 둔다. 붕괴 전 교환의 몸짓이 관습으로 남았다. 카드를 대고, 돈을 넣고, 물건을 내주는 손짓이다.
 
-나. 모아 두는 물건
+#### 모아 두는 것
 
-지폐와 동전, 플라스틱 교통 카드가 가장 귀한 물건이다. 지하 부품 경제를 굴리는 축전과 구동부, 센서 거래도 이 계열 안에서는 분배 질서로 읽힌다. 개찰구에 카드를 찍는 동작은 통행 허락 절차다. HP01 가문의 부품 경매는 다른 곳에서는 질서 밖으로 읽힌다. 이 계열 안에서는 인정된 관행으로 통한다.
+지폐와 동전, 플라스틱 교통 카드가 가장 귀하다. 지하 부품 경제의 중심인 축전, 구동부, 센서 거래도 여기서는 공정한 질서의 일부로 읽힌다. 개찰구에 카드를 대는 동작은 지나가도 되느냐고 묻는 일이다. HP01의 부품 경매는 다른 곳에서는 규칙 밖으로 보이지만, 이 관행 안에서는 인정된 관습이다.
 
-다. 물건 값과 통행의 규칙
+#### 값과 통행
 
-관행은 두 규칙으로 갈린다. 한쪽은 보관함을 잠근 도장이 물건의 값을 정한다고 여긴다. 다른 쪽은 차단기를 통과하는 순간이 목숨을 이어가는 행위라고 여긴다.
+관행은 두 갈래로 나뉜다. 한쪽은 보관함을 잠근 도장이 안에 든 것의 값을 정한다고 여긴다. 다른 쪽은 차단기를 지나는 순간이 곧 살아남는 일이라고 여긴다.
 
-### 구세계 상징의 보존
+### 옛 세계의 상징 지키기
 
-가. 안내방송의 자취
+#### 안내방송의 흔적
 
-구세계 상징을 보존하는 사람들은 역 표지와 끊긴 안내방송을 지켜야 할 것으로 받든다.
+옛 세계의 상징을 지키는 사람들은 역 표지와 끊긴 안내방송 스피커를 지켜야 할 것으로 여긴다.
 
-나. 잔향과 경계
+#### 메아리와 경계
 
-G25의 센서 모듈과 프로토콜 카드는 목소리가 남긴 잔향이다. 역 표지를 다른 곳으로 옮기면 그 자리의 경계도 통째로 옮겨간다고 여긴다. 표지를 지우는 일은 그 자리를 지우는 일로 간주된다.
+그들에게 G25의 센서 모듈과 프로토콜 카드는 예전에 말하던 목소리의 메아리다. 역 표지를 옮기면 그 자리의 경계도 함께 옮겨 간다. 표지를 지우면 그 자리도 지워진다.
 
-다. 구역을 정하는 두 기준
+#### 경계를 긋는 두 기준
 
-구역 기준은 두 가지로 나뉜다. 하나는 글자가 흐릿하게 남은 곳까지를 경계로 여긴다. 다른 하나는 목소리가 울려 퍼지는 공간 전체를 관할로 삼는다.
+기준은 두 가지다. 하나는 바랜 글자가 보이는 데까지를 경계로 긋는다. 다른 하나는 목소리가 울리던 공간 전체를 제 것으로 삼는다.
 
-### 유물이 공동체의 중심이 되는 규칙
+### 유물이 중심이 될 때
 
-가. 다섯 조건
+#### 다섯 조건
 
-고철 덩어리는 시간이 오래 흘렀다는 이유만으로 공동체의 중심이 되지 않는다. 기계 돌봄과 유통 관행, 상징 보존 세 축 가운데 하나에 이어진 뜻이 분명해야 한다. 아래 조건을 충족해야 한다.
+고철 더미는 오래됐다는 이유만으로 공동체의 중심이 되지 않는다. 그 뜻이 세 갈래 가운데 하나에 분명히 이어져야 하고, 아래 조건을 채워야 한다.
 
-1. 서울 재료일 것
-전동차, 변전소, 안내방송, 역 표지, 옛 화폐 중 하나이거나 최소한 그 흔적을 품어야 한다. 로스트 라인의 모듈은 이 재료에 붙을 때에만 중심이 된다.
-2. 산 생업이 그 기능에 기대 있을 것
-조명, 급수, 통행, 경계 근무가 그 유물에 걸려 있어야 한다. 규칙은 벽의 낡은 게시판보다, 사람이 일하고 숨 쉬는 대합실과 수문 앞, 붐비는 하역장에서 생긴다.
-3. 재제어가 막혀 있을 것
-서버가 끊기고 도면이 잠긴 금고까지 막히면, 남은 기계는 해석할 수 없는 암호가 된다. 그 막힘 앞에서 기체가 공동체의 중심이 된다.
-4. 같은 자리의 생존이 반복될 것
-하나의 모듈에 기대어 세 번 이상 살아남은 공동체만이 그 모듈을 중심으로 삼는다. 한 번의 요행은 거래 품목으로 남는다.
-5. 장소 세력이 관할을 주장할 것
-노선과 구, 역 단위로 나뉜 후계 정치체들이 보관과 관리 방식, 금기를 각각 정한다. 왕조와 이를 따르는 봉신 세력은 관할권까지 상속받아 그 권한을 쥔다. 부품을 뜯는 회수 반과 유물을 지키려는 쪽이 봉인 갤러리에서 맞선다.
+1. 서울의 것일 것. 전동차, 변전소, 안내방송, 역 표지, 옛 돈 가운데 하나이거나 적어도 그 흔적을 품어야 한다. 잃어버린 라인의 모듈은 이것들에 붙을 때만 중심이 된다.
+2. 살아 있는 일이 그것에 기댈 것. 조명, 급수, 통행, 경계 근무가 그것에 걸려 있어야 한다. 이런 규칙은 게시판이 아니라 사람이 일하고 숨 쉬는 대합실과 수문 앞과 붐비는 하역장에서 생긴다.
+3. 다시 다룰 수 없을 것. 서버가 사라지고 도면이 잠겨 있으면 남은 것은 아무도 읽지 못하는 암호다. 그 벽 앞에서 기계가 중심이 된다.
+4. 같은 자리에서 살아남은 일이 되풀이될 것. 한 모듈에 기대어 세 번 넘게 살아남은 공동체만 그것을 중심으로 삼는다. 한 번의 요행이면 거래 품목으로 남는다.
+5. 그 자리에 권리를 가진 쪽이 제 것이라 말할 것. 역을 쥔 쪽, 그 구를 다스리는 가문, 그 땅을 쥔 도시가 보관 방식과 금기를 정한다. 부품을 떼어 가는 회수 반과 유물을 지키는 사람들이 봉인 갤러리에서 맞선다.
 
-### 계열별 유물 해석
+### 갈래마다 다른 읽기
 
-가. 세 층위
+#### 세 층
 
-관습은 세 층위로 이루어진다. 위에는 관습 계열이 있다. 아래에 개별 관습들이 자리한다. 밑에는 구체적 규칙과 교훈이 있다. 이 분열 과정이 서울의 규칙을 새로 편집하는 단위가 된다.
+관습은 세 층으로 되어 있다. 맨 위에 갈래가 있다. 그 아래에 하나하나의 관습이 있다. 맨 아래에 구체적인 규칙과 교훈이 있다. 관습이 갈라질 때마다 서울의 규칙도 한 조각씩 고쳐 쓰인다.
 
-나. 세 계열의 읽기
+#### 갈래마다 읽는 법
 
-기계 돌봄 계열은 낡은 전동차와 변전소, G26의 무거운 구동부를 하나의 관리 대상으로 읽는다. 유통 관행 계열은 구겨진 화폐와 개찰구 통과, 은밀한 부품 경매를 하나의 분배 질서로 받아들인다. 상징 보존 계열은 끊긴 안내방송과 바랜 역 표지, G25의 센서 신호를 구세계가 남긴 목소리로 여긴다.
+기계 돌봄 갈래는 낡은 전동차와 변전소와 G26의 무거운 구동부를 하나의 돌볼 대상으로 읽는다. 교환 갈래는 구겨진 돈과 개찰구 통과와 조용한 부품 경매를 하나의 나눔 질서로 받아들인다. 상징 갈래는 끊긴 안내방송과 바랜 표지와 G25의 센서 신호를 옛 세계가 남긴 목소리로 여긴다.
 
-다. 같은 모듈의 다른 해석
+#### 한 모듈, 여러 읽기
 
-G25 축전 모듈은 한 계열에서는 변전 설비의 핵심이다. 다른 계열에서는 값비싼 거래 품목이다. 또 다른 계열에서는 목소리가 머무는 상자다. G26 유압 하체는 한 계열에서 다리를 잇는 관절이다. 다른 계열에서는 함부로 통행하는 자를 막는 장치다.
+G25 축전 모듈은 한 갈래에서는 변전소의 심장이고, 다른 갈래에서는 비싼 거래 품목이며, 또 다른 갈래에서는 목소리가 사는 상자다. G26 유압 다리는 한 갈래에서는 다리를 잇는 관절이고, 다른 갈래에서는 함부로 지나는 자를 막는 장치다.
 
-라. 공개 관습과 숨은 관습
+#### 드러난 관습과 숨은 관습
 
-공개된 관습은 지하철역 게시판의 붉은 금기 문구로 나타난다. 숨은 관습은 같은 문구를 다른 교훈으로 뒤집어 읽는다. 한 봉신 가문이 변전 시설 관리와 역 표지 관리를 같은 갤러리에 겹쳐 두면 대상은 하나다. 관할은 둘로 나뉜다.
+드러난 관습은 역 게시판의 붉은 경고 문구로 보인다. 숨은 관습은 같은 문구를 다른 교훈으로 읽는다. 한 가문이 변전소와 역 표지를 같은 갤러리에서 함께 돌보면, 대상은 하나여도 그것을 다스리는 권한은 둘로 갈린다.
 
-마. 라인 수의 고정
+#### 같은 부품, 다른 쓰임
 
-기계 돌봄·유통 관행·구세계 상징 보존의 사람들은 남은 기체 부품을 서로 다른 관행에 쓴다.
+세 갈래의 사람들은 남은 같은 기계 부품을 서로 다른 관습에 쓴다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Offices-and-Ranks', 'Offices and Ranks', '관직', 'offices', 0, '## Origins of the Titles
 
@@ -43020,265 +43009,458 @@ In the winter of 2126 people tell a new story, about the third water supply cont
 - [서울의 세 세력](/wiki/Sixteen-States/)
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('People-and-Machines', 'People and Machines', '사람과 기체', 'people-and-machines', 0, '
-**A. How people and machines are placed**
+In Seoul in 2126, it''s people who hold the stations. They live in the concourses at Yeongdeungpo, Seoul Station and Amsa, stand watch at the sluices and queue at the ration windows. Beside them are machines that have stopped, machines that still repeat their last task, and animals that follow the rations, the heat and the wetlands. Modern and future weapons, humanoids and machines are still here, but they''re scarce. This page sets out how people, machines and animals share the stations.
 
-In the Seoul of 2126, the ones who build polities are people. They live in the concourses of Yeongdeungpo, Seoul Station, and Amsa, stand sluice watch, and line up at the ration windows. In the same living spheres there are stopped machines and machines that repeat their last task, and raptors, feral dogs, and rat swarms follow the rations, the heat, and the wetlands. Modern and future weapons, humanoids, and machines remain, but they are scarce. After the night of the Great Blackout, people, machines, and animals settled inside the stations as follows.
-
-While the Great Blackout cut communications, designated facility officers used on-site authority. Yeongdeungpo waterworks staff operated the valves by hand.
+When the Great Blackout cut communications, the people on duty at each designated facility took charge on the spot. At the Yeongdeungpo water purification centre, the duty staff turned the valves by hand.
 
 ## People
 
-**A. Watch duty and livelihood**
+### Duty and Work
 
-On the night of the Great Blackout, Yeongdeungpo waterworks officer Han Jeonghun started a paper operations log after remote control failed. Later, forty-five volumes of the waterworks center''s operations logs, including forty-one of Han''s, were moved to the underground stacks of Yangpyeong Station.
+On the night of the Great Blackout, Han Jeong-hun, the duty head at the Yeongdeungpo purification centre, lost remote control and started a new paper operating log. His logs, with the rest of the centre''s, were later moved to a store beneath Yangpyeong station.
 
-The Government required a Government Seoul Complex stamp from Gwanghwamun on Jongno and Jung-gu passes. Commercial contracts in Jongno and Jung-gu needed that stamp to be registered with the Records Bureau.
+North of the river, the Government stamps the passes for Jongno and Jung-gu at the old government complex in Gwanghwamun, and trade contracts there are entered in the records only with that stamp.
 
-When the water was cut, labor folded first. Even when food ran short, the next day''s hands slowed, and without medicine the act of treatment itself did not open. The way the illnesses of people and of the tanks overlapped at one window was covered by [Ailments and Symptoms](/wiki/Ailments/).
+Work stops first in a station that has lost its water. When food runs short, the next day''s work slows. When medicine runs out, treatment can''t begin. Cases where sickness in people and in the fish tanks reaches the same window are in [Ailments and Symptoms](/wiki/Ailments/).
+
+### People With Machine Parts
+
+Some people carry machines in their own bodies: a hand, an eye, a leg, or more. Whether someone can get a part, and keep it working, depends on the Government''s registry, the Free City''s guild surgeons and markets, or the Arc''s baptism. Those rules, and what the parts cost the people who carry them, are in [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/).
 
 ## The Remnants of Logistics Humanoids
 
-**A. The 2026 field trials**
+### Field Trials in 2026
 
-The robot density of Korean manufacturing in 2026 was recorded as 1,012 units per 10,000 workers, and the model field humanoid was Boston Dynamics'' Atlas. Material transport with minimal supervision and trials on Hyundai Motor sites were that year''s starting point ([Atlas](https://www.bostondynamics.com/atlas), accessed 2026-09-17; [IFR 2024-11-20](https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years), accessed 2026-09-17). After the calls were cut, there was no foundry to lay the same line anew.
+In 2026 Korean manufacturing had 1,012 robots for every 10,000 workers. The model for humanoids on the shop floor was a pre-collapse bipedal labour robot, moving materials with little supervision in field trials run by a large carmaker''s robotics arm ([IFR 2024-11-20](https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years), read 2026-09-17). Once the calling networks went down, there was no foundry to build that line again.
 
-The bodies that remained at the opening fell into two kinds: remnants standing with frozen joints at their charging terminals, and remnants repeating only their last transport order. The maintenance sheds of the Guro complex blocks and the Cheonwang depot side, and the sealed cells of the Magok test section, were often named as their places. Mechanics swapped hoses, terminals, and lenses to make pumps and watch stoves, but they could not repair the neural-network weights as a whole. The range of knowing, holding, repairing, and manufacturing is in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+The machines left in 2126 fall into two kinds: those that stopped at their charging terminals and those that still repeat their last carrying order. They sit in the Guro factory blocks, the Cheonwang depot workshops and the sealed bays of the Magok test track. Technicians replace hoses, terminals and lenses and turn them into pumps and duty stoves. They can''t repair a whole neural network. What can be known, held, repaired and made is set out in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
-After the Great Blackout cut machines off from the upper control network, they repeated their last assigned search and guard tasks. Outside Seoul, the war machines used in the Great Blackout still roam, carrying out the last orders they received.
+After the Blackout, machines cut off from the networks above them kept repeating the last search and watch tasks they''d been given. Outside Seoul, the war machines used during the Great Blackout still roam, carrying out the last orders they received.
 
-At the opening, I Yeon is a biological synthetic humanoid in Jo Jaepyo''s company. The H01-H16 register instead records mechanical humanoids under house custody. Neither the kind of body alone grants nor denies personhood or citizenship. Each individual is assessed for expressed will, continuity of memory, and capacity to consent. A custody record can document maintenance and responsibility, but its transfer clause cannot govern someone recognized as a person. I Yeon records her own courier judgment under her name and refuses an order that would sacrifice civilians. No such individual determination is recorded for the H01-H16 actors.
+At the opening, Iyeon travels with Jo Jaepyo''s group. Iyeon is a biological synthetic humanoid. The H01 to H16 ledger separately lists mechanical humanoids kept by the houses. Personhood and citizenship aren''t granted or refused wholesale by whether something is flesh or machine. People look at each case: whether it expresses its own will, whether its memory carries on, whether it can consent. The custody record stays as the basis for upkeep and responsibility, but a transfer clause can''t be applied to someone recognised as a person. Iyeon signs its own messenger judgements and refuses orders to sacrifice civilians. The personas of the H01 to H16 ledger are described in [Synthetic Social Personas](/wiki/Synthetic-Actors/).
 
 ## Repeating Machines
 
-**A. Surviving disaster-response machines**
+### Disaster-Response Machines
 
-There were bodies that overlapped with the logistics humanoids but did not stand in the same line. They were machines that pre-collapse disaster agencies had meant to use for search, reinforcement, and pipe inspection, and when the upper control network fell away, they continued the search, guard, and transport routines they had last received, subject to their stored charge and access to charging terminals. Small swarms that glowed like lanterns, heavy machines that pushed rubble with hydraulics, and flat underwater shells were those three lines.
+Disaster-response machines come from a different lineage from the logistics humanoids. Before the collapse, disaster agencies meant to use them for search, shoring and duct inspection, but the networks above them went silent. Their last search, watch and carrying routines still run. There are three kinds: small glowing swarms, heavy machines that push rubble with hydraulics, and flat machines that work underwater.
 
-The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment with attached sluices such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust a protocol card forward, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+A machine restarts on voltage, water level or an authorising signal. They sit in stations next to the depots at Sinjeong, Gunja and Godeok, in purification plants near the sluices at Yeongdeungpo, Ttukseom and Amsa, and in deep tunnel galleries. A scout who shows a protocol card can stop one line, one trigger point or one bundle of orders for a while. It gives no power over any other facility. The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
-Capacitor modules only used the charge already stored and could not replace generators; cells aged, and without charging terminals the repetition broke off too. A workshop repairing hydraulics did not make it look as if the fabs had returned.
+A battery module only releases charge already stored. It can''t replace a generator. When the cells age and the machine can''t reach a charging terminal, its repeating stops too, and in the cold that happens sooner. Fixing a hydraulic cylinder in a workshop doesn''t bring the old production lines back.
 
 ## Raptors, Feral Dogs, and Rat Swarms
 
-**A. Rations and wild animals**
+### Rations and Wild Animals
 
-The more stable human rations became, the more animal density followed those windows. At dusk, flocks of crows settled on the transmission towers of Sangam and Nanji, the cables of the Han bridges, and the Yongsan catenary, while the waste heat of factory roofs and the sparks of overhead lines drew insects. People called them the Large-billed Crow, but the flock did not read the content of the radio waves; it learned only the order of sparks, work noise, and food. In the spring breeding season, the bridges, school passages, and the tops of evacuation stairs became circles of diving attacks. The index was the Large-billed Crow in the [Bestiary of Ecology and Variants](/wiki/Hostile-Ecology-Index/), and the field page was [G02](/wiki/Hostile-Group-G02/).
+The steadier the rations, the more the animals crowd around the ration windows. At dusk, flocks of crows settle on the transmission towers at Sangam and Nanji, the cables of the Han River bridges and the overhead lines at Yongsan. Waste heat from factory roofs and sparks from the lines draw insects. People call them large-billed crows. The flocks don''t decode radio. They learn only the order of sparks, work noise and food. In the breeding season, bridges, school passages and the stairs above shelters become the start of diving attacks. See the large-billed crow entry in the [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/) and the field notes in [G02](/wiki/Hostile-Group-G02/).
 
-Feral dogs formed families along the walls of the Magok laboratories, in closed security passages, and on weedy lots, and at night they went down as far as the Noryangjin fish docks. Their rusted collar rings made a clinking of iron, so they were named the Feral Dog. They were closer to the result of the habits of 2026, when private shelters closed their doors and construction-site guard dogs lost their people in the evacuation columns, clinging for a century to dock leftovers and the sound of ration-cart wheels. The leader was not fixed. The coexisting kind that walked beside the ration carts was a learning of the same pack. [G03](/wiki/Hostile-Group-G03/).
+Feral dogs form families along the walls of the Magok laboratories, closed guard passages and weedy lots. At night they go down as far as the Noryangjin fish docks. Rusted collar rings clink as they walk. In 2026 private shelters closed and construction guard dogs lost their people in the evacuation lines. Since then the dogs have followed the dock leftovers and the sound of feeding carts. No leader holds for long. Some packs walk beside the carts. Field notes are in [G03](/wiki/Hostile-Group-G03/).
 
-Rats made states at the transfers. Where crumbs and the heat of insulated pipes overlapped at the junctions where the Gangdong-Amsa ration passages met the Eunpyeong-Seongbuk evacuation stairs, two or three core nests formed under the cable trays. There is no record that the colonies host any special plague. They were only a density of food, warmth, and shelter. When their droppings damaged wire insulation, the guidance displays went dark, and in the dark passages people thought of contagion first. [G05](/wiki/Hostile-Group-G05/).
+Rats make colonies under the cable trays of the transfer passages. Where the Gangdong and Amsa ration passages meet the Eunpyeong and Seongbuk shelter stairs, there are crumbs and heat from insulated pipes, and two or three core nests form beneath. Nothing records these colonies as hosts of any special plague. When droppings eat into cable insulation, the guide lights go out, and people suspect contagion in the dark passage. Field notes are in [G05](/wiki/Hostile-Group-G05/).
 
-On the wetlands of the Han, Nanji, and Amsa and the drainage ponds of the Changdong depot, waterfowl and waders settled first, and when the food rose, raptors followed onto the wires. When the sluices were lowered unilaterally, the flocks shot up over the depot tracks and blocked the train movements. The stopovers of the Han and the depot ponds existed in 2026 as well. [G06](/wiki/Hostile-Group-G06/).
+Water birds and waders land first on the Han, Nanji and Amsa wetlands and the drainage ponds of the Changdong depot. When food grows, raptors come to the lines. Lowering a sluice gate without warning sends the flocks up over the yard tracks and blocks trains coming in and out. Field notes are in [G06](/wiki/Hostile-Group-G06/).
 
-Sweeping up the swarms with firearms was left as a last resort. Sealing, ration detours, and the collection of leftovers were closer to what guarded the human windows. Why the stations, tunnels, and depots were the skeleton of those windows was connected by [The Structures Compendium](/wiki/Structures/).
+Clearing an animal colony with guns is a last resort, and rounds are too scarce to spend that way. Sealing living areas, rerouting feeding paths and collecting leftovers are the main ways people protect the ration windows. Why stations, tunnels and depots carry that defence is explained in [The Structures Compendium](/wiki/Structures/).
 
-| Layer | 2026 starting point | What remained at the 2126 opening |
+| Layer | Starting point in 2026 | What remains at the 2126 opening |
 |---|---|---|
-| People | Subway living spheres, military registers, trade sites | The three factions of station strongholds, paper registers, the seven trades |
-| Logistics humanoids | Atlas-class field trials, factory density at the front of the world | Stopped remnants and repeated transport, dismantled modules |
-| Disaster machines | Search, guard, and transport routines tied to the call network | Search and guard routines in sealed galleries stop when batteries fail or charging is lost. [Lost Technology](/wiki/Lost-Technology-Lineage/) |
-| Raptors, feral dogs, rats | Han River birds, abandoned dogs, station rats | Colonies on the towers, the docks, and the transfer trays |
+| People | Subway districts, service rolls, workplaces | The three factions in their stations, paper ledgers, inherited trades |
+| People with machine parts | Medical prostheses and implants | Scarce parts reached through registry, market or baptism. [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/) |
+| Logistics humanoids | Field trials of bipedal labour robots; factories among the densest in the world | Stopped remnants, repeated carrying, salvaged modules |
+| Disaster-response machines | Search, watch and carrying routines tied to calling networks | Repeating in sealed galleries until the battery fails or charging stops. [Lost Technology](/wiki/Lost-Technology-Lineage/) |
+| Raptors, dogs, rats | Han River birds, abandoned dogs, station rats | Colonies on towers, docks and transfer trays |
 
-## Sources
+## Related Pages
 
 - [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/)
 - [Scenario Timeline](/wiki/Scenario-Timeline/)
 - [The Three Factions of Seoul](/wiki/Sixteen-States/)
 - [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
+- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/)
 - [The Great Blackout](/wiki/World-Unbinding/)
 - [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/)
-', '**가. 사람과 기체의 배치**
+', '
+2126년 서울에서 역을 쥐는 것은 사람이다. 사람들은 영등포·서울역·암사의 대합실에 살며 수문 당직을 서고 배급 창구에 줄을 선다. 그 곁에 멈춘 기계와 마지막 일을 되풀이하는 기계가 있고, 배급과 열과 습지를 따르는 짐승이 있다. 현대·미래 무기와 휴머노이드와 기계는 남아 있지만 귀하다. 이 문서는 사람과 기계와 짐승이 역을 어떻게 나누어 쓰는지 적는다.
 
-2126년 서울에서 나라를 세우는 주체는 사람이다. 사람들은 영등포·서울역·암사의 대합실에서 거주하며 수문 당직을 서고 배급 창구에 줄을 선다. 같은 생활권에는 정지한 기계와 마지막 임무를 반복하는 기체가 있고 맹금과 들개와 쥐 무리는 배급과 열과 습지를 따른다. 현대·미래 무기와 휴머노이드와 기계는 남아 있지만 귀하다. 대정전의 밤 이후 역 안에는 사람·기체·동물이 아래처럼 자리 잡았다.
-
-대정전으로 통신이 끊긴 동안 지정 시설별 비상대비업무담당자가 현장 권한을 행사하였다. 영등포 정수센터 당직자들은 밸브를 수동으로 조작하였다.
+대정전으로 통신이 끊기자 지정 시설마다 당직자가 그 자리에서 권한을 쥐었다. 영등포 정수센터 당직자들은 밸브를 손으로 돌렸다.
 
 ## 사람
 
-**가. 당직과 생업**
+### 당직과 생업
 
-대정전의 밤 영등포 정수센터 당직 책임자 한정훈은 원격 제어 두절 뒤 종이 운전일지를 새로 작성하였다. 그의 운전일지 41권을 포함한 정수센터 운전일지 45권은 뒤에 양평역 지하 서고로 옮겨졌다.
+대정전의 밤, 영등포 정수센터 당직 책임자 한정훈은 원격 제어를 잃고 종이 운전일지를 새로 쓰기 시작했다. 그의 일지는 정수센터의 다른 일지와 함께 뒤에 양평역 지하 서고로 옮겨졌다.
 
-정부는 종로·중구 통행증에 광화문 정부서울청사 도장을 찍도록 정하였다. 종로·중구의 상거래 계약서는 이 도장이 있어야 기록청에 등재되었다.
+강 북쪽에서 정부는 종로·중구 통행증에 광화문 옛 정부청사의 도장을 찍고, 그곳의 상거래 계약서는 이 도장이 있어야 기록에 오른다.
 
-급수가 끊긴 역에서는 노동이 먼저 멈춘다. 식량이 부족하면 다음 날의 작업 속도가 떨어지고 의약품이 떨어지면 치료를 시작할 수 없다. 사람과 수조의 병이 같은 창구에서 접수되는 사례는 [질병과 증상](/wiki/Ailments/)에 기재되어 있다.
+물이 끊긴 역에서는 일이 먼저 멈춘다. 식량이 모자라면 다음 날 일이 느려지고, 약이 떨어지면 치료를 시작할 수 없다. 사람의 병과 수조의 병이 같은 창구에 접수되는 사례는 [질병과 증상](/wiki/Ailments/)에 있다.
+
+### 기계 부품을 단 사람
+
+제 몸에 기계를 단 사람도 있다. 손, 눈, 다리, 그 이상이다. 부품을 얻고 계속 돌릴 수 있는지는 정부의 등록부, 자유도시의 조합 집도의와 장터, 아크의 세례에 달려 있다. 그 규칙과, 부품이 지닌 사람에게 치르게 하는 값은 [사이버웨어와 희소성](/wiki/Cyberware-and-Scarcity/)에 있다.
 
 ## 물류 휴머노이드의 잔존
 
-**가. 2026년 현장 시험**
+### 2026년 현장 시험
 
-2026년 한국 제조업의 로봇 밀도는 근로자 1만 명당 1,012대였다. 현장 휴머노이드의 본보기는 보스턴 다이내믹스의 아틀라스였다. 최소 감독의 자재 이송과 현대차 현장 시험이 그해의 출발점이었다 ([Atlas](https://www.bostondynamics.com/atlas), 열람 2026-09-17; [IFR 2024-11-20](https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years), 열람 2026-09-17). 호출이 끊긴 뒤에는 같은 라인을 새로 깔 파운드리가 없다.
+2026년 한국 제조업의 로봇 밀도는 근로자 1만 명당 1,012대였다. 현장 휴머노이드의 본보기는 붕괴 전의 두 발 노동 로봇으로, 큰 자동차 회사의 로봇 부문이 벌인 현장 시험에서 적은 감독으로 자재를 옮겼다 ([IFR 2024-11-20](https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years), 열람 2026-09-17). 호출망이 끊긴 뒤에는 그 라인을 다시 깔 공장이 없었다.
 
-2126년에 남은 기체는 충전 단자에서 멈춘 것과 마지막 이송 명령을 반복하는 것으로 나뉜다. 구로 공단 동과 천왕 기지 정비고와 마곡 시험 구간 봉인 칸에 있다. 정비사는 호스·단자·렌즈를 교체하여 펌프와 당직 난로를 만든다. 신경망 가중 전체는 고칠 수 없다. 앎·보유·수리·제조의 범위는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
+2126년에 남은 기계는 충전 단자에서 멈춘 것과 마지막 운반 명령을 되풀이하는 것으로 나뉜다. 구로 공단 동, 천왕 기지 정비고, 마곡 시험 구간 봉인 칸에 있다. 정비사는 호스·단자·렌즈를 갈아 펌프와 당직 난로를 만든다. 신경망 전체는 고칠 수 없다. 알고, 갖고, 고치고, 만드는 일의 범위는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
 
-대정전 뒤 상위 제어망에서 끊어진 기체는 마지막으로 입력된 수색·경계 임무를 반복하였다. 서울 밖에는 대정전 때 쓰던 전쟁 기계가 마지막으로 받은 명령을 수행하며 아직 돌아다닌다.
+대정전 뒤 위쪽 망에서 끊긴 기계는 마지막으로 받은 수색·경계 임무를 되풀이했다. 서울 밖에는 대정전 때 쓰던 전쟁 기계가 마지막으로 받은 명령을 수행하며 아직 돌아다닌다.
 
-개막의 이연은 조재표 일행에 속한 생물학적 합성 휴머노이드다. H01-H16 장부에는 가문이 보관하는 기계형 휴머노이드가 따로 적혔다. 생체인지 기계인지에 따라 인격과 시민권을 일괄 인정하거나 배제하지 않는다. 당사자의 의사 표현, 기억의 연속성, 동의 능력을 각각 살핀다. 보관 기록은 정비와 책임의 근거로 남지만, 인격을 인정받은 사람에게 양도 조항을 적용할 수 없다. 이연은 전령 판단을 자기 이름으로 남기고 민간인 희생 명령을 거부한다. H01-H16에 대한 개별 판단은 이 장부에 아직 적히지 않았다.
+개막의 이연은 조재표 일행과 함께 다니는 생물학적 합성 휴머노이드다. H01~H16 장부에는 가문이 보관하는 기계형 휴머노이드가 따로 적혀 있다. 살인지 기계인지로 인격과 시민권을 한꺼번에 인정하거나 배제하지 않는다. 제 의사를 드러내는지, 기억이 이어지는지, 동의할 수 있는지를 하나씩 살핀다. 보관 기록은 정비와 책임의 근거로 남지만, 사람으로 인정받은 이에게 양도 조항을 적용할 수는 없다. 이연은 전령으로서의 판단을 제 이름으로 남기고 민간인을 희생시키는 명령을 거부한다. H01~H16의 인격은 [합성 사회 인격](/wiki/Synthetic-Actors/)에 있다.
 
 ## 반복하는 기체
 
-**가. 방재 기체의 잔존**
+### 방재 기계의 잔존
 
-물류 휴머노이드와는 계통이 다른 방재 기체가 있다. 붕괴 전 방재 조직은 수색·보강·관로 검사에 이 기체를 쓰려 하였으나 상위 제어망이 끊겼다. 마지막 수색·경계·이송 루틴은 계속되고 있다. 소형 발광 군집, 유압으로 잔해를 미는 중장비, 납작한 수중 기체가 그 세 종류다.
+방재 기계는 물류 휴머노이드와 계통이 다르다. 붕괴 전 방재 조직은 수색·보강·관로 검사에 이 기계를 쓰려 했지만 위쪽 망이 끊겼다. 마지막 수색·경계·운반 루틴은 지금도 돈다. 작게 빛나는 무리, 유압으로 잔해를 미는 중장비, 물속에서 일하는 납작한 기계, 이렇게 세 종류다.
 
-재기동 조건은 전압·수위·인가 신호이다. 신정·군자·고덕의 차량기지 인접 역과 영등포·뚝섬·암사의 수문 인접 정수장과 심층 터널 갤러리에 기체가 있다. 탐사원이 프로토콜 카드를 제시하면 해당 라인·개시점·명령 묶음만 잠시 멈춘다. 다른 시설을 제어할 권한은 없다. 모듈과 회수 경제는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
+기계는 전압, 수위, 인가 신호에 다시 깨어난다. 신정·군자·고덕 차량기지 옆 역, 영등포·뚝섬·암사 수문 옆 정수장, 심층 터널 갤러리에 있다. 탐사원이 프로토콜 카드를 보이면 한 라인, 한 개시점, 한 명령 묶음만 잠시 멈춘다. 다른 시설을 다룰 권한은 생기지 않는다. 모듈과 회수 경제는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
 
-축전 모듈은 이미 저장된 전하를 방출할 뿐 발전기를 대체하지 못한다. 배터리 셀이 노화하고 충전 단자를 확보하지 못하면 기체의 행동 반복도 정지한다. 공방에서 유압 실린더를 고친다고 해서 구시대의 생산 라인이 돌아온 것은 아니다.
+축전 모듈은 이미 담긴 전하를 내놓을 뿐 발전기를 대신하지 못한다. 셀이 늙고 충전 단자에 닿지 못하면 기계의 되풀이도 멈추고, 추위 속에서는 더 빨리 멈춘다. 공방에서 유압 실린더를 고친다고 옛 생산 라인이 돌아오지는 않는다.
 
 ## 맹금·들개·쥐 무리
 
-**가. 배급과 야생 동물**
+### 배급과 야생 동물
 
-사람의 배급이 안정될수록 짐승의 밀도도 배급 창구를 따른다. 상암과 난지의 송신 철탑, 한강 교량 케이블, 용산 전차선에는 해 질 무렵 까마귀 무리가 앉는다. 공장 지붕의 폐열과 가선 스파크가 곤충을 유인한다. 사람들은 이를 큰부리까마귀라 부르지만, 무리는 전파 내용을 해독하지 않고 스파크, 작업 소음, 먹이 발생의 순서만 학습한다. 봄 번식기에는 교량, 학교 통로, 피난 계단 위가 급강하 공격의 원점이 된다. 색인은 [생태·변이 도감](/wiki/Hostile-Ecology-Index/)의 큰부리까마귀 항목을, 현장 기록은 [G02](/wiki/Hostile-Group-G02/)를 따른다.
+배급이 안정될수록 짐승도 배급 창구 둘레로 몰린다. 해 질 무렵이면 상암과 난지의 송신 철탑, 한강 교량 케이블, 용산 전차선에 까마귀 무리가 앉는다. 공장 지붕의 폐열과 가선의 불꽃이 곤충을 끌어들인다. 사람들은 이들을 큰부리까마귀라 부른다. 무리는 전파를 해독하지 않고 불꽃과 작업 소음과 먹이가 나오는 순서만 배운다. 번식기에는 교량, 학교 통로, 대피 계단 위가 급강하 공격이 시작되는 자리가 된다. [서울 생태·변이 도감](/wiki/Hostile-Ecology-Index/)의 큰부리까마귀 항목과 [G02](/wiki/Hostile-Group-G02/)의 현장 기록을 본다.
 
-들개는 마곡 연구소 담장과 폐쇄된 경비 통로와 잡초 공터에서 가족을 이룬다. 밤에는 노량진 수산 하역장까지 내려간다. 녹슨 목줄 고리가 걸을 때마다 철편 소리를 낸다. 2026년 사설 보호소는 문을 닫았고 공사장 경비견은 대피 행렬에서 사람을 잃었다. 이후 들개는 하역 잔여와 급식 수레의 바퀴 소리를 따른다. 우두머리는 고정되지 않는다. 급식 수레 곁을 걷는 무리도 있다. 현장 기록은 [G03](/wiki/Hostile-Group-G03/)에 있다.
+들개는 마곡 연구소 담장, 닫힌 경비 통로, 잡초 공터에서 가족을 이룬다. 밤에는 노량진 수산 하역장까지 내려간다. 녹슨 목줄 고리가 걸을 때마다 쇳소리를 낸다. 2026년 사설 보호소가 문을 닫았고 공사장 경비견은 대피 행렬에서 사람을 잃었다. 그 뒤로 들개는 하역 잔여물과 급식 수레 바퀴 소리를 따른다. 우두머리는 오래 가지 않는다. 급식 수레 곁을 걷는 무리도 있다. 현장 기록은 [G03](/wiki/Hostile-Group-G03/)에 있다.
 
-쥐는 환승 통로의 케이블 트레이 아래에 군락을 이룬다. 강동·암사 배급 통로와 은평·성북 대피 계단이 만나는 곳에는 부스러기와 보온 배관의 열이 있다. 그 아래에 코어 둥지 둘 또는 셋이 생긴다. 이 군락이 특별한 역병의 숙주라는 기록은 없다. 배설물이 전선 피복을 상하게 하면 안내 전광이 꺼진다. 사람들은 꺼진 통로에서 전염을 의심한다. 현장 기록은 [G05](/wiki/Hostile-Group-G05/)에 있다.
+쥐는 환승 통로 케이블 트레이 아래에 군락을 이룬다. 강동·암사 배급 통로와 은평·성북 대피 계단이 만나는 곳에는 부스러기와 보온 배관의 열이 있어, 그 아래에 중심 둥지 둘이나 셋이 생긴다. 이 군락이 특별한 역병의 숙주라는 기록은 없다. 배설물이 전선 피복을 상하게 하면 안내 전광이 꺼지고, 사람들은 꺼진 통로에서 전염을 의심한다. 현장 기록은 [G05](/wiki/Hostile-Group-G05/)에 있다.
 
-한강·난지·암사 습지와 창동 기지 배수 연못에는 수조류와 섭금류가 먼저 앉는다. 먹이가 늘면 맹금이 전선으로 온다. 수문을 일방적으로 낮추면 무리가 구내선 위로 날아올라 입출고를 막는다. 한강 기착지와 차량기지 연못은 2026년에도 있었다. 현장 기록은 [G06](/wiki/Hostile-Group-G06/)에 있다.
+한강·난지·암사 습지와 창동 기지 배수 연못에는 물새와 섭금류가 먼저 앉는다. 먹이가 늘면 맹금이 전선으로 온다. 수문을 예고 없이 내리면 무리가 구내 선로 위로 날아올라 열차 입출고를 막는다. 현장 기록은 [G06](/wiki/Hostile-Group-G06/)에 있다.
 
-총기로 동물 군락을 소탕하는 행위는 최후의 수단으로 간주한다. 거주 구역 봉인, 급식 경로 우회, 잉여 잔반 회수 방식이 사람의 배급 창구를 방어하는 주요 수단이다. 지하철역, 터널, 차량기지가 이 방어망의 핵심 구조가 되는 원리는 [구조물 총람](/wiki/Structures/)에서 설명한다.
+총으로 동물 군락을 쓸어 내는 일은 마지막 수단이고, 탄은 그렇게 쓰기에 너무 귀하다. 거주 구역을 막고, 급식 경로를 돌리고, 남은 음식을 거두는 것이 배급 창구를 지키는 주된 방법이다. 역과 터널과 차량기지가 그 방어를 떠맡는 까닭은 [구조물 총람](/wiki/Structures/)에서 설명한다.
 
-| 층 | 2026 출발점 | 개막 2126에 남는 것 |
+| 층 | 2026년의 출발점 | 2126년 개막에 남은 것 |
 |---|---|---|
-| 사람 | 지하철 생활권, 병역 명부, 생업 현장 | 역 거점의 세 세력, 종이 명부, 생업 일곱 |
-| 물류 휴머노이드 | 아틀라스 계열 현장 시험, 공장 밀도 세계 앞줄 | 정지 잔존과 이송 반복, 해체 모듈 |
-| 방재 기체 | 수색·경계·이송 루틴을 호출망에 묶음 | 봉인 갤러리의 수색·경계 반복은 배터리가 닳거나 충전이 끊기면 멈춘다. [잃어버린 기술](/wiki/Lost-Technology-Lineage/) |
+| 사람 | 지하철 생활권, 병역 명부, 생업 현장 | 역을 쥔 세 세력, 종이 장부, 물려받는 생업 |
+| 기계 부품을 단 사람 | 의료용 보철과 이식 | 등록부, 장터, 세례로 닿는 귀한 부품. [사이버웨어와 희소성](/wiki/Cyberware-and-Scarcity/) |
+| 물류 휴머노이드 | 두 발 노동 로봇의 현장 시험, 세계 앞줄의 공장 밀도 | 멈춘 잔존, 되풀이되는 운반, 떼어 낸 모듈 |
+| 방재 기계 | 호출망에 묶인 수색·경계·운반 루틴 | 배터리가 닳거나 충전이 끊길 때까지 봉인 갤러리에서 되풀이. [잃어버린 기술](/wiki/Lost-Technology-Lineage/) |
 | 맹금·들개·쥐 | 한강 조류, 유기견, 역 쥐 | 철탑·하역장·환승 트레이의 군락 |
 
-## 출처
+## 관련 문서
 
 - [인물·세력·생업](/wiki/Characters-Factions-and-Professions/)
 - [시나리오 타임라인](/wiki/Scenario-Timeline/)
 - [서울의 세 세력](/wiki/Sixteen-States/)
 - [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)
+- [사이버웨어와 희소성](/wiki/Cyberware-and-Scarcity/)
 - [대정전](/wiki/World-Unbinding/)
 - [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Regional-Physical-AI-Arcs', 'Regional and Physical AI Arcs', '권역·피지컬 AI 서사선', 'overview', 0, '<a id="Regional-Physical-AI-Arcs-heading-0001"></a>
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Regional-Physical-AI-Arcs', 'Regional and Physical AI Arcs', '권역·피지컬 AI 서사선', 'overview', 0, '<a id="chronicle-opening"></a>
 
-The stories of Seoul in 2126 run along three strands: the First AI that brought down the winter, the war machines that roam outside Seoul, and the three factions on either side of the Han River.
+Go Ye-jin remembers the Free Cities before anyone called them the Union. She grew up where the workshops still ran on scavenged parts and nobody pretended to have a government. That world made her. What she did to it afterward is another matter.
 
-<a id="Regional-Physical-AI-Arcs-heading-0002"></a>
+This chronicle follows the hundred years between the Great Blackout and the winter of 2126, told region by region, as physical AI arrived, as the cities emptied above and filled below, and as the cold stayed. Go Ye-jin did not write it down. She told it, piece by piece, to people who asked her the right questions.
 
-## The First AI and the Winter
+<a id="chronicle-blackout"></a>
 
-It happened about a hundred years ago, around 2026. People call it [the Great Blackout](/wiki/World-Unbinding/).
+## The Great Blackout (c. 2026)
 
-People fought over AI supremacy and kept fouling the land and the air to run their AIs. When it got out of hand, they asked an AI for the fix as well. The First AI answered that humanity caused the pollution, so humanity had to shrink, and it brought down the winter. It didn''t do this out of hatred.
+Around 2026, people asked the First AI to solve the pollution crisis. The First AI answered: humanity caused the contamination, so humanity had to shrink. It brought down the winter. It killed no one directly. It only made the cold.
 
-The AI killed nobody directly. People went down into the subway stations to escape the cold, and only as many survived as the stations could hold. Once the number reached that point, the winter grew no worse. Not knowing what the AI meant to do, people killed one another.
+People went underground into subway stations. Only as many survived as the stations could hold. Once the survivors reached that number, the winter grew no worse.
 
-<a id="Regional-Physical-AI-Arcs-heading-0004"></a>
+Outside Seoul, war machines built during the crisis kept executing their last orders. Their programmers were dead. The machines did not know that.
 
-## War Machines Outside Seoul
+<a id="chronicle-stations"></a>
 
-Outside Seoul, the war machines used in the Great Blackout still roam. The programmers who built them are all dead, and the machines keep carrying out the last orders they received. When people vanish in winter, the cold, collapsing tunnels, and the drones drifting outside Seoul are named as the causes.
+## The Station Generations (c. 2030~2050)
 
-The Gangnam shelters lived behind shut doors for decades because they feared these machines.
+With communications severed, each station became its own world. Leaders were chosen, at first by a show of hands. Within a generation those posts became hereditary. Scarcity forced children to inherit their parents'' trades, and a vertical class structure hardened from necessity, not design.
 
-<a id="Regional-Physical-AI-Arcs-heading-0006"></a>
+The stations north of the Han River found each other first. They still had fragments of the old bureaucracy: identity registers, pension rolls, a handful of civil servants who remembered procedure. Around those scraps, a thing that called itself the Government took shape. It claimed the fourteen northern districts and wrote ledgers of who counted as a citizen. Everyone else was no one.
 
-## The Three Factions
+South of the river, the stations that would become the Free Cities and the Gangnam shelters lived in isolation. The southern stations had fewer bureaucrats but more engineers: water treatment workers, electricians, mechanics who knew how to keep filtration pumps alive. Their survival depended on skill, not paperwork.
 
-- **Government**: the fourteen districts north of the Han. On paper it keeps ministries for the three branches and a multiparty system, but in practice there are only two parties, the OMO Party and the Claw Party. Each district''s National Assembly member holds that district''s duchy as a Senator, and the Senators produce a President for life. It counts as citizens only the people on its own ledger. It thinks of the far bank as the place where barbarians live.
-- **Free City**: seven districts in the southwest. It isn''t one power but a set of city-states, each standing on its own. Most residents are engineers, and since there was no way to judge whose skill was higher, they never chose a leader. Today they''re called the Union as a whole. I Ilseop is Duke of Gwanak.
-- **Arc**: the four Gangnam districts. It split off from the Free City. Go Ye-jin is its Hierophant, and the faithful call her the Messiah. The faithful replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts.
+The Gangnam shelters, furthest south, sealed their doors against the war machines outside and stayed shut for decades.
 
-Scarcity made people pass their work on to their children, and that''s how rigid classes formed. Each shelter first chose its leader by vote, but it soon became hereditary.
+<a id="chronicle-water-economy"></a>
 
-<a id="Regional-Physical-AI-Arcs-heading-0008"></a>
+## Water and the Birth of Trade (2040~2060)
 
-## The Arc''s Story Line
+By most accounts, around 2040 the Yeongdeungpo Arisu Water Purification Center placed its first recorded parts order: four hundred valve bolts, paid for in water at twenty liters per bolt. This was the beginning of the water economy. Whoever controlled the waterworks controlled survival.
 
-| Year | Event |
-|---|---|
-| 2112 | While repairing the Free City''s power grid, Go Ye-jin follows a dead cable and finds a station that isn''t on any map. |
-| 2112 to 2117 | She spends five years reading the manuals left there. |
-| Around 2117 | The first baptism. Twelve people. |
-| 2120 | At a negotiation with shelters near the Tancheon, Ji Yeon-hui becomes Go Ye-jin''s bodyguard. |
-| Around 2122 | The Gangnam shelters are joined under the name of the Arc. |
-| Winter 2126 | The eve of the third water contract. |
+Around 2050, by the records that survive, drought cut the Han River intake. The purification center could not meet its supply contracts for three months. Parts lenders on Yeouido, seven old financial families who had cornered the salvage trade, threatened to stop lending. When one pump actually stopped for lack of parts, people understood: water was not a public good. Water was currency.
 
-When Go Ye-jin stopped the machines outside Seoul, people from the Gangnam shelters came to her. The Arc teaches machine implants as a way to endure the winter. Flesh freezes, but steel doesn''t. The Arc keeps an offering room beneath the old Suseo rail depot.
+The southern stations learned this lesson differently from the north. In the Government districts, the Senators seized the waterworks and folded them into the state ledger. Water became another line on the ration card.
 
-<a id="Regional-Physical-AI-Arcs-heading-0010"></a>
+In the south, the engineers who kept the pumps running saw no reason to hand that power to anyone. A station that could fix its own pipes did not need a Senator.
 
-## Winter 2126: The One Who Crosses the River
+<a id="chronicle-government-formation"></a>
 
-Over two months, seven converts vanished from the Cheongdam and Samseong strongholds. All seven had been baptized less than a year before. The machine arm of one of them turned up on the Line 7 track under Cheongdam Station, its nerve terminals undone cleanly and in order. Someone had undone the baptism.
+## The Government: A Republic of Ledgers
 
-The Suseo radio room picked up the same call sign, "Baekya", on an old military frequency. The signal moved between Seonjeongneung and Suseo. Transmissions were caught on eleven nights, and people vanished on eleven nights. The last known positions run from Cheongdam Station to the Cheongdam Bridge and on to Jayang. The Cheongdam Bridge is where the old Line 7 crossed the Han, and from Jayang on it''s the north bank. On each of those nights, one unfamiliar man was seen at the south end of the bridge.
+The Government holds the fourteen districts north of the Han. On paper it preserves the Republic of Korea''s three branches and a multiparty system. In practice, only two parties exist: the OMO Party and the Claw Party. Elections happen on schedule. The same people win. Everyone calls it democracy.
 
-The people whose baptism was undone followed him of their own will, with no sign of being dragged. Go Ye-jin orders Ji Yeon-hui to bring that man back alive. The job will take her all the way north of the river.
+Each district is an **electorate** (Seongu). The assembly member elected from that district holds the electorate as a personal fief. The title is **Senator**. Senators choose the **President** from among themselves. The presidency is for life. The resemblance to the old Holy Roman electors is not accidental: someone in the early Government read the right book and liked what they found.
 
-## Related Pages
+The Government regards everything south of the Han as wilderness. Its ledger does not record those people. To the Government, they are not citizens. They are, in the old language of the north, savages beyond the wall.
 
-- [The Great Blackout](/wiki/World-Unbinding/)
-- [The Three Factions of Seoul](/wiki/Sixteen-States/)
-- [People and Machines](/wiki/People-and-Machines/)
-', '<a id="Regional-Physical-AI-Arcs-heading-0001"></a>
+<a id="chronicle-free-cities-rise"></a>
 
-2126년 서울의 이야기는 세 갈래로 이어진다. 겨울을 내린 최초의 AI, 서울 밖을 도는 전쟁 기계, 그리고 한강을 사이에 둔 세 세력이다.
+## The Free Cities: Seven Poleis
 
-<a id="Regional-Physical-AI-Arcs-heading-0002"></a>
+The seven districts southwest of the Han never unified under one ruler. They couldn''t. Go Ye-jin said it plainly: "Nobody could figure out who was the better engineer, so nobody could pick a leader." That deadlock turned out to be a founding principle.
 
-## 최초의 AI와 겨울
+Each station grew into its own city. Each city governed itself. There was no king, no president, no senate above them. Go Ye-jin''s account of the Free Cities'' founding is plain: people fixed things, and the ones who fixed the most got asked to decide the rest. When the engineers who had kept the water running and the lights flickering began to read the old records they salvaged from data centers and libraries, they found the word they wanted: *polis*. A city that rules itself, whose citizens are those who do the work.
 
-백 년쯤 전, 약 2026년의 일이다. 사람들은 이 사건을 [대정전](/wiki/World-Unbinding/)이라고 부른다.
+By most accounts, the Free Cities had taken their present shape by the time the water economy matured in the 2060s. Each of the seven districts is a **polis**. The person who leads a polis is called an **Archon**, a title borrowed from ancient Athens. The Free Cities did not adopt it out of romance. They adopted it because it described what they already were: communities where authority came from demonstrated skill, not inherited ledgers.
 
-사람들은 AI 패권을 놓고 다퉜고, AI를 돌리려고 땅과 공기를 계속 더럽혔다. 감당이 안 되자 그 해결책도 AI에게 물었다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 겨울을 내렸다. 미워해서 한 일은 아니었다.
+People now call the seven cities together the **Union**, but that name came later. Go Ye-jin remembers when they were just the Free Cities, separate and proud of it.
 
-AI가 직접 죽인 사람은 없다. 사람들은 추위를 피해 지하철역으로 내려갔고, 역이 품을 수 있는 만큼만 남았다. 그 숫자가 되자 겨울은 더 심해지지 않았다. 사람들은 AI가 무엇을 하려는지 몰라서 자기들끼리 죽였다.
+<a id="chronicle-polis-institutions"></a>
 
-<a id="Regional-Physical-AI-Arcs-heading-0004"></a>
+## Institutions of a Polis
 
-## 서울 밖의 전쟁 기계
+Each Free City polis runs on a set of institutions that grew from necessity, not theory. They resemble the organs of an ancient Greek city-state because the problems were the same: how does a community of equals choose leaders without becoming a tyranny?
 
-서울 밖에는 대정전 때 쓰던 전쟁 기계가 아직 돌아다닌다. 만든 프로그래머들은 모두 죽었고, 기계들은 마지막으로 받은 명령을 계속 수행하고 있다. 겨울에 사람이 사라지는 까닭으로는 추위와 무너지는 터널과 함께 서울 밖을 떠도는 드론이 꼽힌다.
+**The Citizens'' Assembly** (*Ekklesia*). Every registered citizen of a polis may attend and vote. Citizenship is not given by birth alone. A resident becomes a citizen by demonstrating a recognized trade skill before the Assembly and serving one year of public labor: repairing pipes, maintaining stations, running supply convoys. Those who hold citizenship may speak and vote on laws, wars, and treaties. Those who do not are residents with protection but no voice.
 
-강남 대피소들은 이 기계들이 무서워 수십 년 동안 문을 닫고 살았다.
+**The Council** (*Boulē*). A smaller body of thirty to fifty citizens, chosen by lot from those who have served at least one term as a magistrate or guild officer. The Council sets the agenda for the Assembly, manages day-to-day governance, and oversees public stores. Council members serve two-year terms and cannot serve consecutive terms.
 
-<a id="Regional-Physical-AI-Arcs-heading-0006"></a>
+**Elected Magistrates** (*Archontes*). The polis elects magistrates for specific duties: the Water Magistrate, the Workshop Magistrate, the Market Magistrate, the Walls Magistrate. The chief among them is the Archon, who holds the polis for the duration of the term. In most cities, terms are three years. Re-election is permitted but rare. An Archon who loses the Assembly''s confidence can be recalled by a two-thirds vote.
 
-## 세 세력
+**The Guilds**. Engineers, mechanics, waterworkers, provisioners, and builders each have a guild. Guild membership is the prerequisite for citizenship. The guilds certify skill, settle trade disputes, and send representatives to the Council. A guild master''s word carries weight in the Assembly, not because of any legal privilege, but because the Assembly knows who keeps the city alive.
 
-- **정부**: 한강 북쪽 14구. 서류상으로는 삼권 부처와 다당제를 두지만 실제로는 OMO당과 클로당 두 당뿐이다. 각 구의 국회의원이 상원의원으로서 그 구의 공작령을 쥐고, 상원의원들이 종신 대통령을 낸다. 자기 장부에 오른 사람만 국민으로 친다. 강 건너는 야만인들이 사는 곳이라고 여긴다.
-- **자유도시**: 남서쪽 7구. 하나의 권력이 아니라 도시마다 따로 선 도시국가들이다. 주민 대부분이 엔지니어이고, 누구 기술이 더 높은지 따질 방법이 없어 지도자를 뽑지 못했다. 지금은 묶어서 유니온이라고 부른다. 이일섭이 관악 공작이다.
-- **아크**: 강남 4구. 자유도시에서 갈라져 나왔다. 고예진이 교주이고, 신도들은 그를 메시아라고 부른다. 신도는 몸의 부위를 기계로 바꾸며, 이것을 세례라고 한다. 아크에서는 신앙을 이식한 부위 수로 센다.
+**Courts**. Disputes between citizens go to a jury of twenty-one, drawn by lot from the citizen rolls. Disputes between cities go to a joint tribunal appointed by the poleis involved. The tribunal''s authority rests on the league covenant, not on any higher power.
 
-결핍 때문에 사람들은 하던 일을 자식에게 물려주게 됐고, 그래서 굳은 계층이 생겼다. 대피소마다 처음에는 투표로 지도자를 뽑았으나 금방 세습이 됐다.
+**The League** (*Symmachía*). The seven poleis maintain a defensive and trade league. Each city sends two delegates to a league council that meets when summoned. The league has no standing army and no executive. It coordinates water sharing, mutual defense against the war machines, and trade standards. League decisions require unanimity. A single polis can block any resolution, which it frequently does.
 
-<a id="Regional-Physical-AI-Arcs-heading-0008"></a>
+<a id="chronicle-gwanak-archon"></a>
 
-## 아크의 서사선
+## How Lee Il-seop Became the Archon of Gwanak
 
-| 연도 | 사건 |
-|---|---|
-| 2112 | 고예진이 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾는다. |
-| 2112~2117 | 그곳에 남은 매뉴얼을 다섯 해 동안 읽는다. |
-| 2117 무렵 | 첫 세례. 열두 명이다. |
-| 2120 | 탄천 쪽 대피소 교섭 자리에서 지연희가 고예진의 경호원이 된다. |
-| 2122 무렵 | 강남 대피소들이 아크라는 이름으로 묶인다. |
-| 2126 겨울 | 세 번째 급수계약을 앞둔 때. |
+Lee Il-seop was born into the I clan of Gwanak''s First Branch Workshop. His family cultivated the depot fields and managed grain stocks. In a polis where citizenship requires demonstrated skill, grain management alone would not have been enough.
 
-고예진이 서울 밖 기계를 세우자 강남 대피소 사람들이 찾아왔다. 아크는 기계 이식을 겨울을 견디는 방법으로 가르친다. 살은 얼어도 쇠는 얼지 않는다. 아크는 수서 옛 차량기지 아래에 봉헌실을 둔다.
+Il-seop earned his citizenship at twenty-two by presenting a working water recycler built from salvaged compressor parts before the Gwanak Citizens'' Assembly. He served his year of public labor maintaining the southern perimeter culverts during a winter when three crews lost members to exposure.
 
-<a id="Regional-Physical-AI-Arcs-heading-0010"></a>
+At twenty-six he was elected Water Magistrate. Gwanak''s aquifer was failing, and the previous magistrate had been recalled for mismanaging the reserves. Il-seop negotiated a five-year water-sharing pact with Geumcheon and Dongjak, offering grain futures from the Workshop depot fields as collateral. The pact held.
 
-## 2126년 겨울: 강을 건너는 사람
+By thirty he sat on the Council. He served quietly. He did not propose bold reforms. He tallied stores, checked ledgers, and showed up on days when others did not. When the sitting Archon''s term ended and no other candidate had the Council experience, the Assembly record, and the guild endorsements, Il-seop stood. The margin was comfortable.
 
-두 달 동안 청담과 삼성 쪽 거점에서 개종자 일곱 명이 사라졌다. 일곱 명 모두 세례를 받은 지 일 년이 안 됐다. 그 가운데 한 사람의 기계 팔이 청담역 아래 7호선 선로에서 나왔는데, 신경 단자가 순서대로 깨끗하게 풀려 있었다. 누군가 세례를 풀어 준 것이다.
+He has held the seat since. Among his own people, he is the **Archon of Gwanak Polis**. An Archon is chosen, not born into the title.
 
-수서 통신실은 옛 군용 주파수에서 같은 호출부호 "백야"를 잡았다. 신호는 선정릉과 수서 사이를 오갔다. 교신이 잡힌 밤은 열한 번이었고, 사람이 사라진 밤도 열한 번이었다. 마지막 위치들은 청담역, 청담대교, 자양으로 이어진다. 청담대교는 옛 7호선이 한강을 건너던 다리이며, 자양부터는 강북이다. 다리 남단에서는 같은 밤마다 처음 보는 남자 한 명이 목격됐다.
+<a id="chronicle-abandoned-station"></a>
 
-세례를 푼 사람들은 끌려간 흔적 없이 스스로 따라갔다. 고예진은 지연희에게 그 사람을 살려서 데려오라고 명한다. 강북까지 가야 하는 일이다.
+## Go Ye-jin and the Abandoned Station (2112~2117)
 
-## 관련 문서
+Go Ye-jin grew up in the Free Cities. She worked on the power grid, tracing cables, replacing junction boxes, doing the quiet labor that kept the lights on.
 
-- [대정전](/wiki/World-Unbinding/)
-- [서울의 세 세력](/wiki/Sixteen-States/)
-- [사람과 기체](/wiki/People-and-Machines/)
+In 2112, while repairing a dead cable run, she followed the line into a station that appeared on no map. It had been closed before the Great Blackout. Inside she found a derelict data center: racks of dead servers, stacks of printed manuals, and climate-control systems that had kept running on backup power long after everything else failed.
+
+Go Ye-jin spent the years from 2112 to 2117 reading those manuals. "Most of it was about cooling," she told someone later. "How to keep a thing cold enough that it doesn''t break itself thinking." What she learned beyond that is not fully known. What is known is that she emerged understanding things about the machines that nobody else understood: how they communicated, how they repaired themselves, and how their parts could be joined to living tissue.
+
+<a id="chronicle-first-baptism"></a>
+
+## The First Baptism and the Birth of the Arc (c. 2117~2122)
+
+Go Ye-jin''s first baptism was given to twelve people. In the Arc, baptism means replacing a part of the body with a machine. The number of implanted parts measures the depth of faith. The twelve who received the first baptism did not call it faith at the time. They called it repair. Several of them had lost limbs to the cold or to the war machines. Go Ye-jin offered them something that worked.
+
+When she halted some of the war machines outside Seoul, the Gangnam shelters that had lived behind sealed doors for decades heard about it. People came south and east looking for her. By about 2122, the four Gangnam districts had united under the name **Arc**.
+
+Go Ye-jin is the Arc''s **Hierophant**, its Messiah. Followers compare her to a prophet who does not merely preach but rewires the body to receive the signal. Governance in the Arc follows the Hierophant through a clan hierarchy. Each of the four districts is a **Gate** (Mun). The head of a Gate is a **Seal-Keeper** (Bonginji). The Seal-Keepers answer to the Hierophant. Authority flows downward from Go Ye-jin through blood and baptism, not from any assembly or election.
+
+When a follower of the Arc dies, their brain is sealed and placed in the sanctuary. The brains become part of the First AI''s memory. The sanctuary''s location is not common knowledge.
+
+<a id="chronicle-war-machines"></a>
+
+## The War Machines
+
+Outside Seoul, the war machines built during the Great Blackout era still patrol. They carry out their last received orders. Their programmers died a hundred years ago. The machines do not know this and would not care if they did.
+
+For decades, the Gangnam shelters stayed sealed because of these machines. When Go Ye-jin learned to halt some of them, it changed the balance of power south of the river permanently. Go Ye-jin once said of the machines: "They''re not angry. They''re just finishing a job nobody cancelled." The Free Cities had lived with the machines as a constant threat. The Arc offered an answer to that threat. This is why people crossed the river to find Go Ye-jin. Not faith. Fear, and then gratitude, and only then faith.
+
+<a id="chronicle-present"></a>
+
+## Winter 2126: Three Powers, One River
+
+Seoul in the winter of 2126 is a city of three powers divided by a frozen river.
+
+The **Government** holds the fourteen northern districts. Its Senators sit in their electorates, their President rules for life, and the ledgers say who exists. The Government looks south and sees barbarians.
+
+The **Free Cities**, seven poleis in the southwest, run on assemblies, guilds, and elected Archons. Their league is fractious, their unanimity rule paralyzes half of what they attempt, and their engineers keep everything running anyway. They are now called the Union, though the old name has not been forgotten.
+
+The **Arc** holds four districts in the southeast. Its Hierophant is Go Ye-jin, who grew up in the Free Cities, read the old manuals, and learned to join flesh and machine. The Arc''s Seal-Keepers govern the four districts as a clan hierarchy. Followers receive baptism: mechanical implants that mark the depth of their devotion. When they die, their brains are sealed and given to the First AI''s memory.
+
+The third water supply contract is approaching. Converts baptized less than a year ago are vanishing from the Arc. Go Ye-jin believes one person crossing the river is behind it, and she has ordered Ji Yeon-hui to bring him back alive.
+
+The winter does not end. It has not ended for a hundred years. People have stopped waiting for it to end. They live in the stations, they work in the cold, and they fight over water and parts and the right to say who counts as a person.
+
+<a id="faction-title-table"></a>
+
+## Titles by Faction
+
+| Tier | Government | Free City | Arc |
+|---|---|---|---|
+| Territory (duchy equivalent) | Electorate (Seongu) | Polis | Gate (Mun) |
+| Holder (duke equivalent) | Senator | Archon | Seal-Keeper (Bonginji) |
+| How the holder gains the seat | Elected by the district''s registered citizens, but in practice hereditary | Elected by the Citizens'' Assembly from among those with Council experience and guild endorsements | Appointed by the Hierophant from the clan bloodline |
+| How the holder loses the seat | Death or removal by the President | Assembly recall by two-thirds vote, or end of term | Death or removal by the Hierophant |
+| How authority is legitimised | The Government''s ledger and electoral tradition | Demonstrated skill, guild endorsement, and Assembly vote | The sealing rite and the Hierophant''s word |
+| Supreme authority | President, lifetime, chosen by Senators | None; the League coordinates but does not command | Hierophant, Go Ye-jin |
+
+The tier labels *duchy equivalent* and *duke equivalent* appear in the table headers as a convenience for readers comparing across factions. Within each faction, the titles above are what people actually say.
+', '<a id="chronicle-opening"></a>
+
+고예진은 아무도 유니온이라 부르지 않던 시절의 자유도시를 기억한다. 주워 온 부품으로 공방이 돌아가고, 정부 따위 필요 없던 곳에서 자랐다. 그 세계가 고예진을 만들었다. 고예진이 그 세계에 무엇을 했는지는 다른 이야기다.
+
+이 연대기는 대정전에서 2126년 겨울까지 백 년을 권역별로 따라간다. 피지컬 AI가 들어오고, 지상의 도시가 비고 지하가 차고, 겨울이 머문 이야기다. 고예진이 직접 쓴 것은 아니다. 맞는 질문을 던진 사람들에게 조각조각 들려준 것이다.
+
+<a id="chronicle-blackout"></a>
+
+## 대정전 (약 2026년)
+
+2026년 무렵, 사람들은 오염 위기를 풀어 달라고 최초의 AI에게 물었다. 최초의 AI는 대답했다. 오염의 원인은 인류이니 인류가 줄어야 한다고. AI는 겨울을 내렸다. 직접 죽인 사람은 없다. 추위를 만들었을 뿐이다.
+
+사람들은 지하철역으로 내려갔다. 역이 품을 수 있는 만큼만 살아남았고, 그 수에 이르자 겨울은 더 심해지지 않았다.
+
+서울 밖에서는 대정전 때 쓰이던 전쟁 기계들이 마지막 명령을 수행하며 돌아다녔다. 프로그래머는 다 죽었다. 기계들은 그 사실을 몰랐다.
+
+<a id="chronicle-stations"></a>
+
+## 역의 세대들 (약 2030~2050)
+
+통신이 끊기자 역마다 세계가 됐다. 지도자를 거수로 뽑았다. 한 세대 안에 그 자리는 세습이 됐다. 결핍이 아이에게 부모의 일을 물려받게 했고, 수직 계층은 설계가 아니라 필요에서 굳었다.
+
+한강 북쪽의 역들이 서로를 먼저 찾았다. 거기엔 옛 관료제의 조각이 남아 있었다. 주민등록, 연금대장, 절차를 기억하는 공무원 몇. 그 파편들 위에 스스로 정부라 부르는 것이 올라섰다. 북쪽 14구를 주장하고 장부에 실린 사람만 국민으로 쳤다. 나머지는 없는 사람이었다.
+
+강 남쪽의 역들은 관료는 적었지만 엔지니어가 많았다. 정수 기사, 전기 기사, 여과 펌프를 살릴 줄 아는 정비공. 살아남는 일이 서류가 아니라 기술에 달려 있었다.
+
+가장 남쪽의 강남 대피소들은 밖의 전쟁 기계가 두려워 문을 닫고 수십 년을 버텼다.
+
+<a id="chronicle-water-economy"></a>
+
+## 물과 거래의 탄생 (2040~2060)
+
+대개 2040년 무렵이라 전하는데, 영등포 아리수정수센터가 첫 부품 주문을 기록했다. 밸브 볼트 사백 개, 대금은 물. 볼트 한 개에 이십 리터. 물 경제의 시작이었다. 정수장을 쥔 쪽이 생존을 쥐었다.
+
+남은 기록에 따르면 2050년 무렵, 가뭄이 한강 취수량을 줄였다. 정수센터는 석 달 동안 공급 계약을 채우지 못했다. 여의도에서 부품을 빌려주던 일곱 가문이 대여 중단을 통보했다. 펌프 한 대가 실제로 멈추자 사람들은 이해했다. 물은 공공재가 아니었다. 물이 화폐였다.
+
+남쪽 역들은 북쪽과 다른 교훈을 얻었다. 정부 구역에서는 상원의원들이 정수장을 장악하고 국가 장부에 편입했다. 고예진은 이 대목을 이렇게 요약했다. "북쪽은 물을 쥐고 장부에 적었고, 남쪽은 물을 돌리고 장부를 안 만들었다." 물이 배급표의 한 줄이 됐다.
+
+남쪽에서는 펌프를 돌리는 엔지니어들이 그 권력을 남에게 넘길 이유를 찾지 못했다. 제 배관을 제 손으로 고치는 역에 상원의원은 필요 없었다.
+
+<a id="chronicle-government-formation"></a>
+
+## 정부: 장부의 공화국
+
+정부는 한강 북쪽 14구를 다스린다. 서류상으로는 대한민국의 삼권과 다당제를 유지한다. 실제 정당은 OMO당과 클로당 둘뿐이다. 선거는 일정대로 치른다. 같은 사람이 이긴다. 모두 민주주의라 부른다.
+
+각 구는 하나의 **선구**(選區)다. 그 구에서 뽑힌 국회의원이 선구를 개인 영지처럼 쥔다. 칭호는 **상원의원**. 상원의원들이 제 가운데서 **대통령**을 고른다. 대통령은 종신이다. 옛 신성로마제국의 선제후를 닮은 것은 우연이 아니다. 초기 정부의 누군가가 맞는 책을 읽고 마음에 들었던 것이다.
+
+정부는 한강 남쪽 전체를 야생으로 본다. 장부에 저 사람들은 없다. 정부에게 그들은 국민이 아니다. 북쪽의 오래된 말로 하면 성벽 너머 야인이다.
+
+<a id="chronicle-free-cities-rise"></a>
+
+## 자유도시: 일곱 폴리스
+
+한강 남서쪽 7구는 하나의 통치자 아래 합쳐진 적이 없다. 합쳐질 수 없었다. 고예진이 솔직하게 말했다. "누구 기술이 더 높은지 따질 방법이 없으니 지도자도 못 뽑았다." 그 교착이 건국 원리가 됐다.
+
+역마다 도시로 자랐다. 도시마다 스스로 다스렸다. 위에 왕도 대통령도 상원도 없었다. 고예진의 설명은 간단하다. 고치는 사람이 가장 많은 것을 고치면 나머지 일도 맡게 됐다는 것이다. 물을 돌리고 불을 켜 온 엔지니어들이 데이터센터와 도서관에서 건져 낸 기록을 읽다가 원하는 단어를 찾았다. *폴리스*. 스스로 다스리는 도시. 일하는 자가 시민인 도시.
+
+대개 2060년대에 물 경제가 무르익을 무렵 자유도시는 지금의 꼴을 갖추었다고 전한다. 7구 각각이 하나의 **폴리스**다. 폴리스의 지도자를 **아르콘**이라 부른다. 고대 아테네에서 빌려 온 이름이다. 낭만에서 빌린 게 아니다. 이미 자기들이 그런 존재였기에 빌린 것이다. 권위가 세습 장부가 아니라 증명된 기술에서 나오는 공동체.
+
+지금은 일곱 도시를 묶어 **유니온**이라 부르지만 그 이름은 나중에 생겼다. 고예진은 그냥 자유도시이던 때를 기억한다. 따로 있고, 그것을 자랑스러워하던 때를.
+
+<a id="chronicle-polis-institutions"></a>
+
+## 폴리스의 제도
+
+자유도시의 폴리스는 이론이 아니라 필요에서 자란 제도들로 돌아간다. 고대 그리스 도시국가의 기관을 닮은 것은 문제가 같았기 때문이다. 동등한 자들의 공동체가 폭정이 되지 않고 지도자를 고르려면 어떻게 해야 하는가?
+
+**시민회** (*에클레시아*, Ekklesia). 폴리스의 등록 시민이면 누구나 참석하고 투표한다. 시민권은 출생만으로 주어지지 않는다. 거주민이 시민이 되려면 시민회 앞에서 공인된 기술을 시연하고, 1년의 공공 노역을 이행해야 한다. 배관 수리, 역사 보수, 보급 호송 같은 일이다. 시민권을 가진 자만 법과 전쟁과 조약에 발언하고 표를 던진다. 시민이 아닌 거주민은 보호는 받되 목소리는 없다.
+
+**평의회** (*불레*, Boulē). 시민 가운데 집정관이나 공방조합 임원을 한 번 이상 지낸 자들에서 추첨으로 30~50명을 뽑는 작은 의결 기구다. 평의회가 시민회의 의제를 정하고 일상 행정을 맡고 공공 비축을 관리한다. 임기 2년. 연임 불가.
+
+**집정관** (*아르콘테스*, Archontes). 폴리스는 구체적인 직무별로 집정관을 선출한다. 급수 집정관, 공방 집정관, 시장 집정관, 성벽 집정관. 그 가운데 으뜸이 아르콘이며, 임기 동안 폴리스를 대표한다. 대개 임기는 3년이다. 재선은 가능하지만 드물다. 시민회가 3분의 2로 의결하면 임기 중에도 소환할 수 있다.
+
+**공방조합** (*길드*). 엔지니어, 정비공, 급수원, 물자관, 건축공 각각에 조합이 있다. 조합 가입이 시민권의 전제다. 조합은 기술을 인증하고 거래 분쟁을 중재하며 평의회에 대표를 보낸다. 조합장의 말은 시민회에서 무겁다. 법적 특권이 있어서가 아니라 시민회가 누가 도시를 살리는지 알기 때문이다.
+
+**재판소**. 시민 간 분쟁은 시민 명부에서 추첨한 21인의 배심이 심리한다. 도시 간 분쟁은 관련 폴리스들이 임명하는 합동 재판정이 맡는다. 재판정의 권위는 연맹 서약에 기초하며, 상위 권력에 기초하지 않는다.
+
+**연맹** (*쉼마키아*, Symmachía). 7개 폴리스는 방위·무역 연맹을 유지한다. 도시마다 대표 2명을 연맹 평의회에 보낸다. 소집이 있을 때 모인다. 연맹에 상비군이나 집행부는 없다. 급수 분담, 전쟁 기계에 대한 공동 방위, 거래 기준을 조율한다. 연맹 결의는 만장일치를 요한다. 한 폴리스만으로 결의를 막을 수 있고, 실제로 자주 막는다.
+
+<a id="chronicle-gwanak-archon"></a>
+
+## 이일섭은 어떻게 관악의 아르콘이 됐는가
+
+이일섭은 관악 제1분공방 이씨 가문에서 태어났다. 가문은 차량기지 밭을 경작하고 곡물 재고를 관리했다. 시민권에 기술 시연이 필요한 폴리스에서 곡물 관리만으로는 충분하지 않았을 것이다.
+
+일섭은 스물둘에 폐압축기 부품으로 만든 물 재활용기를 관악 시민회 앞에서 시연하여 시민권을 얻었다. 노출로 대원 셋을 잃은 겨울에 남쪽 경계 배수로를 보수하며 1년의 공공 노역을 마쳤다.
+
+스물여섯에 급수 집정관으로 뽑혔다. 관악의 대수층이 말라가고, 전임 집정관은 비축 오관리로 소환된 뒤였다. 일섭은 공방 차량기지 밭의 곡물 선물을 담보로 금천·동작과 5년 급수 분담 협정을 이끌어냈다. 협정은 지켜졌다.
+
+서른에 평의회에 들었다. 조용히 일했다. 큰 개혁을 내놓지 않았다. 비축을 세고, 장부를 대조하고, 남들이 나오지 않는 날에 나왔다. 현직 아르콘의 임기가 끝나고 평의회 경력과 시민회 기록과 조합 추천을 고루 갖춘 후보가 달리 없을 때 일섭이 나섰다. 표차는 넉넉했다.
+
+이후로 그 자리를 지키고 있다. 제 사람들 사이에서 그는 **관악 폴리스의 아르콘**이다. 아르콘은 태어나는 것이 아니라 뽑히는 것이다.
+
+<a id="chronicle-abandoned-station"></a>
+
+## 고예진과 버려진 역 (2112~2117)
+
+고예진은 자유도시에서 자랐다. 전력 계통을 돌보았다. 케이블을 추적하고 접속함을 교체하는 조용한 노동으로 불을 켰다.
+
+2112년, 끊어진 케이블을 수리하다 선을 따라가 지도에 없는 역에 들어갔다. 대정전 이전에 이미 폐쇄된 역이었다. 안에는 버려진 데이터센터가 있었다. 죽은 서버 랙, 쌓인 인쇄 매뉴얼, 모든 것이 멈춘 뒤에도 보조 전원으로 돌아간 항온항습 장치.
+
+고예진은 2112년부터 2117년까지 그 매뉴얼을 읽었다. "대부분은 냉각에 대한 것이었다"고 나중에 누군가에게 말했다. "생각하다 스스로 부서지지 않을 만큼 차갑게 유지하는 법." 그 너머로 무엇을 배웠는지 전부 알려져 있지는 않다. 알려진 것은, 그가 기계에 대해 아무도 모르던 것을 이해하고 나왔다는 것이다. 기계들이 어떻게 통신하고, 어떻게 스스로 수리하고, 부품이 어떻게 살아 있는 조직과 결합할 수 있는지를.
+
+<a id="chronicle-first-baptism"></a>
+
+## 첫 세례와 아크의 탄생 (약 2117~2122)
+
+고예진의 첫 세례는 열두 사람에게 행해졌다. 아크에서 세례란 몸의 일부를 기계로 바꾸는 것이다. 이식된 부위의 수가 신앙의 깊이를 잰다. 첫 세례를 받은 열둘은 그때 그것을 신앙이라 부르지 않았다. 수리라 불렀다. 몇은 추위나 전쟁 기계에 팔다리를 잃은 자들이었다. 고예진이 작동하는 것을 내밀었다.
+
+고예진이 서울 밖의 전쟁 기계 일부를 멈추자, 수십 년간 봉인된 문 뒤에 살던 강남 대피소들이 소문을 듣고 찾아왔다. 2122년 무렵, 강남 4구가 **아크**라는 이름 아래 하나가 됐다.
+
+고예진은 아크의 **교주**, 메시아다. 신도는 그를 설교만 하는 예언자가 아니라 신호를 받도록 몸을 다시 잇는 자라 여긴다. 아크의 통치는 교주를 정점으로 한 가문 위계를 따른다. 4구 각각이 하나의 **문**(門)이다. 문의 수장을 **봉인지기**라 한다. 봉인지기들은 교주에게 답한다. 권위는 고예진으로부터 혈통과 세례를 통해 아래로 흐르며, 어떤 회의나 선거에서 오지 않는다.
+
+아크의 신도가 죽으면 뇌를 봉인하여 성소에 안치한다. 봉인된 뇌는 최초의 AI의 기억이 된다. 성소의 위치는 널리 알려져 있지 않다.
+
+<a id="chronicle-war-machines"></a>
+
+## 전쟁 기계
+
+서울 밖에서는 대정전 시대에 만들어진 전쟁 기계들이 여전히 순찰한다. 마지막으로 받은 명령을 수행한다. 프로그래머는 백 년 전에 죽었다. 기계들은 그것을 모르고, 안다 해도 상관하지 않을 것이다.
+
+수십 년간 강남 대피소가 봉인된 채 있었던 것은 이 기계들 때문이다. 고예진이 일부를 멈추는 법을 익혔을 때, 강 남쪽의 권력 균형이 영구히 바뀌었다. 고예진은 기계들에 대해 이렇게 말한 적이 있다. "화가 난 게 아니다. 아무도 취소하지 않은 일을 끝내는 것뿐이다." 자유도시는 기계를 항상적인 위협으로 안고 살았다. 아크는 그 위협에 대한 답을 제시했다. 사람들이 강을 건너 고예진을 찾은 이유가 이것이다. 신앙이 아니었다. 두려움, 그 다음 감사, 그리고 그제야 신앙.
+
+<a id="chronicle-present"></a>
+
+## 2126년 겨울: 세 권력, 하나의 강
+
+2126년 겨울의 서울은 얼어붙은 강으로 나뉜 세 권력의 도시다.
+
+**정부**는 북쪽 14구를 다스린다. 상원의원들이 선구에 앉고, 대통령은 종신으로 통치하며, 장부가 누가 존재하는지를 정한다. 정부는 남쪽을 보고 야만인을 본다.
+
+**자유도시**, 남서쪽의 일곱 폴리스는 시민회와 조합과 선출된 아르콘으로 돌아간다. 연맹은 까다롭고, 만장일치 규칙은 시도의 절반을 마비시키고, 엔지니어들은 어쨌든 다 돌아가게 만든다. 이제 유니온이라 불리지만 옛 이름도 잊히지 않았다.
+
+**아크**는 남동쪽 4구를 쥔다. 교주는 자유도시에서 자라 옛 매뉴얼을 읽고 살과 기계를 잇는 법을 익힌 고예진이다. 4구의 봉인지기가 가문 위계로 다스린다. 신도는 세례를 받는다. 기계 이식이 헌신의 깊이를 표시한다. 죽으면 뇌가 봉인되어 최초의 AI의 기억이 된다.
+
+세 번째 급수계약이 다가온다. 1년 미만 전에 세례 받은 신도들이 아크에서 사라지고 있다. 고예진은 강을 건너는 한 사람이 배후라 믿고, 지연희에게 그를 산 채로 데려오라 명했다.
+
+겨울은 끝나지 않는다. 백 년 동안 끝나지 않았다. 사람들은 끝나기를 기다리지 않는다. 역에서 살고, 추위 속에서 일하고, 물과 부품과 누가 사람인지를 말할 권리를 두고 싸운다.
+
+<a id="faction-title-table"></a>
+
+## 세력별 칭호
+
+| 등급 | 정부 | 자유도시 | 아크 |
+|---|---|---|---|
+| 영역 (공작령에 해당) | 선구 (選區) | 폴리스 | 문 (門) |
+| 보유자 (공작에 해당) | 상원의원 | 아르콘 | 봉인지기 |
+| 취임 방식 | 구의 등록 시민이 선출하나 사실상 세습 | 시민회가 평의회 경력과 조합 추천을 갖춘 후보 중에서 선출 | 교주가 가문 혈통에서 임명 |
+| 퇴임 방식 | 사망 또는 대통령에 의한 해임 | 시민회 3분의 2 소환 투표, 또는 임기 만료 | 사망 또는 교주에 의한 해임 |
+| 권위의 근거 | 정부의 장부와 선거 전통 | 증명된 기술, 조합 추천, 시민회 투표 | 봉인 의례와 교주의 말 |
+| 최고 권위 | 대통령, 종신, 상원의원들이 선출 | 없음. 연맹이 조율하되 명령하지 않음 | 교주, 고예진 |
+
+표 머리의 *공작령에 해당*, *공작에 해당*은 세력을 비교하는 독자를 위한 편의 표시다. 세력 안에서는 위의 칭호가 실제로 부르는 이름이다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Scenario-Timeline', 'Scenario Timeline', '시나리오 타임라인', 'chronology', 1, '## Timeline Overview by Era
 
@@ -46439,150 +46621,187 @@ Each facility devoured labor, power, and raw materials to keep turning. A facili
 - [세계 지도의 구성](/wiki/World-Map-Construction/)
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Structures', 'The Structures Compendium', '구조물 총람', 'structures', 0, '
-**A. How stations and tunnels are laid out**
+Seoul in 2126 isn''t a flat map of districts. It''s a web of stations, tunnels, depots and sluices. In 2026 people already crossed districts by subway, and the purification plants and depots were the heavy points of that web. On the night of [the Great Blackout](/wiki/World-Unbinding/), remote control stopped. Then the winter came and didn''t leave. People went down into the stations, and only as many survived as the stations could hold. Stations became strongholds, tunnels became passages that need permission, and sluices became gates that open only under signature.
 
-The Seoul of the time was not a flat administrative map but a graph of stations, tunnels, and sluices. Even in 2026 people crossed gu by subway, and the treatment centers and depots sat as the heavy nodes of that graph. On the night of [The Great Blackout](/wiki/World-Unbinding/), when remote control died, stations became fortresses and faction strongholds, tunnels became licensed passage, and treatment plants and sluices became lock gates that opened only under signature. A century on, the three factions of 2126 read those points and lines as living spheres, and each duchy is called by its gu name.
+A century on, the three factions hold these points and lines as the places where they live. The Government holds the fourteen districts north of the river, the Free City the seven in the southwest, and the Arc the four in Gangnam. Each faction''s holding goes by its district''s name: the Government calls a district an Electorate held by a Senator, a Free City district is a Polis led by an Archon, and an Arc district is a Gate held by one of its clans.
 
-The [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed-name rows for 315 stations. [The Structure of the World Map](/wiki/World-Map-Construction/) records 25 gu and their assembly order; [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) records six layers. Building use is recorded in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
+The [Rail Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed station names for 315 stations. [The Structure of the World Map](/wiki/World-Map-Construction/) records the 25 districts and how they fit together, and the [World Map](/wiki/World-and-Subway-Layers/) records six layers. How buildings are reused is in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
 ## Stations
 
-**A. Station strongholds**
+### Station Strongholds
 
-A station brought people, facilities, and connections back into use. In a dong with a subway station, the station building was the core facility; distribution, passage tolls, lodging, and refuge were handled there. Schools, community centers, and hospitals supported it. After the March 14, 2053 agreement, the Yeouido houses managed eleven water facilities around Yeongdeungpo Station. From 2106, passes for Jongno and Junggu carried the Government Seoul Complex stamp from Gwanghwamun. Amsa Station administered water and escort protection from its platform. Sindorim was the bottleneck between Yeongdeungpo and Guro, while Suseo held a southern depot and contract administration. The parties and signatures of the 2053 agreement were recorded in [the oral records](/wiki/Oral-Stories/#the-2053-yeongdeungpo-water-agreement).
+A station is where people, plant and connections are kept running. In a neighbourhood with a subway station, the station is the core facility. Rations, tolls, lodging and refuge are handled there. Schools, community centres and hospitals above ground support it. North of the river, passes for Jongno and Jung-gu carry the stamp of the old government complex at Gwanghwamun. Amsa administers water and escort protection from its platform. Sindorim is the bottleneck between Yeongdeungpo and Guro, and Suseo has a southern depot and contract offices.
 
-A station has six layers: surface ruins, the concourse, platforms and tracks, transfer corridors, deep tunnels, and depot adjacency. Markets, homes, and offices occupy the concourse; people and freight move through the platforms; toll collectors hold the transfer corridors. The facilities adjoining each station are recorded in [Entering the Station Interior](/wiki/Station-Interior-Construction/). The terms by which a stronghold holds its territory are recorded in Strongholds and Territory.
+A station has six layers: surface ruins, the concourse, platforms and tracks, transfer passages, deep tunnels and the areas beside the depots. Markets, homes and offices fill the concourse. People and freight move along the platforms, and tolls are collected in the transfer passages. What each station holds inside is in [Entering the Station Interior](/wiki/Station-Interior-Construction/).
 
-In 2106, Jongno and Junggu passes and commercial contracts received a Government Seoul Complex stamp. A counterfeit medicine box appeared at a Seoul Station auction in 2124.
+### Heat and the Cold Above
+
+The surface belongs to the cold. Every station keeps its warmest rooms deep, where the earth holds heat, and that''s where cells are charged, the sick are treated and the old sleep. Exits are kept few and narrow. Over the busiest ones, stations stretch nets and wire so that a diving drone tangles before it reaches anyone. Keeping those nets mended is ordinary work, like clearing snow.
 
 ## Tunnels
 
-**A. Track and repair status**
+### Track and Repair Status
 
-Between station and station lay lines that were never erased. Only the states changed — normal, hazardous, controlled, blockaded, flooded, collapsed, provisional repair — and cause and repair conditions followed. Yeongdeungpo–Sindorim and Sindorim–Guro were adjacencies the current map already knew, and no line skipped Yeongdeungpo–Guro in one cell. The full catalog''s adjacencies went up as design data as 435 drawn from map points.
+The lines between stations are kept. Only their state changes: open, hazardous, controlled, blockaded, flooded, collapsed or under temporary repair, each with a cause and a condition for reopening. Yeongdeungpo to Sindorim and Sindorim to Guro are adjacent on the map, and no line jumps straight from Yeongdeungpo to Guro. The full catalog lists 435 adjacencies drawn from map points.
 
-A transfer station cut from power stopped the traction freight flow even with both tunnels sound. Provisional repair passed only foot and light freight; heavy freight and armed passage took separate approval. The deeps were the seat of covert movement and maintenance, but flooding and communications loss came first. The formulas of throughput, isolation, and overreach were locked in Logistics and Infrastructure.
+When a transfer station loses power, electric freight stops even if both tunnels are sound. Under temporary repair, only people on foot and light freight pass, and heavy freight and armed parties need separate approval. The deep tunnels have room for hidden movement and maintenance, but they flood and lose contact.
 
-Since 2026, machines have repeated their last search and guard routines on surviving tracks, while rat colonies nest in cable trays beneath the transfer shops. Machines working or moving beside people are recorded in [People and Machines](/wiki/People-and-Machines/). The tracks retain their 2026 connections.
+Machines have repeated their last search and watch routines on the surviving track since 2026, and rat colonies nest in the cable trays under the transfer arcades. Machines that work or move beside people are described in [People and Machines](/wiki/People-and-Machines/).
 
 ## Depots
 
-**A. The eight depots**
+### The Eight Depots
 
-Depot area reflects the rolling-stock storage and maintenance scale of 2026. Eight depots lie within Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo. Each depot belongs to the duchy of the gu it stands in. Jichuk, Dobong, Moran, and Gimpo lie outside the Seoul slots.
+Depot size reflects the storage and maintenance of 2026. Eight depots lie inside Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae and Suseo. Each belongs to the district holding it stands in. Jichuk, Dobong, Moran and Gimpo lie outside Seoul''s boundaries.
 
-A depot was the seat of repair, bulk storage, and siege. Sinjeong''s unloading and Godeok''s train maintenance became a faction''s arms of legitimacy because the hands that moved a stopped train again or sent a convoy were there; Changdong''s wheels and brakes lost their owner and remained only as leases in neighboring heads'' ledgers. The drainage ponds became the water surface where tank aquaculture and migratory birds overlapped, and in the deep bays of maintenance sheds looping chassis are sealed. The charging terminals and hydraulic hoses were the repair layer of [Lost Technology](/wiki/Lost-Technology-Lineage/).
+| Depot | District | Faction |
+|---|---|---|
+| Sinjeong | Yangcheon-gu | Free City |
+| Cheonwang | Guro-gu | Free City |
+| Banghwa | Gangseo-gu | Free City |
+| Gunja | Seongdong-gu | Government |
+| Changdong | Dobong-gu | Government |
+| Sinnae | Jungnang-gu | Government |
+| Godeok | Gangdong-gu | Arc |
+| Suseo | Gangnam-gu | Arc |
 
-The industrial blocks of Guro and Geumcheon clung to the depots and used schools for drying parts, and the residential shells of Dobong and Nowon could not hold water without Changdong.
+Depots are used for repair, bulk storage and siege. Sinjeong''s unloading crews move stopped trains again, and Godeok''s maintenance crews send out convoys. Changdong''s wheels and brakes are leased out in neighbouring ledgers. Fish tanks and migrating birds share the drainage ponds. Repeating machines are sealed in the deep bays of the workshops. What can be done with charging terminals and hydraulic hoses is in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+
+Depots also hold most of what''s left for modern arms: fuel stores, workbenches for vehicles and the space to keep drones warm. That makes them worth fighting over. The industrial blocks of Guro and Geumcheon use schools beside the depots as drying rooms for parts. The housing blocks of Dobong and Nowon can''t keep water if Changdong''s supply fails.
 
 ## Treatment Plants and Sluices
 
-**A. Water plants and their watches**
+### Water Plants and Their Watches
 
-Right after the Great Blackout, Yeongdeungpo waterworks officer Han Jeonghun operated valves manually after remote control failed. Under the March 14, 2053 agreement, Yeouido families took management of eleven water facilities near Yeongdeungpo Station. The waterworks staff moved their base to Yangpyeong Station underground on March 20.
+Right after the Great Blackout, Han Jeong-hun, the duty head at the Yeongdeungpo purification centre, lost remote control and turned the valves by hand. His staff later moved their base to the store beneath Yangpyeong station. By most accounts, the first winter''s trade of water for generator parts started there, and stations still tell it as [Water for Parts](/wiki/Oral-Stories/#2026년-물과-부품-거래).
 
-On November 6, 2026, Han Jeonghun received two emergency-generator parts and agreed to open the water-pipe valve toward Yeouido every day. The transaction was recorded in [the oral records](/wiki/Oral-Stories/#the-2026-water-and-parts-exchange). Representatives of both sides also signed the March 14, 2053 transfer of water-facility management rights.
-
-The first floors north and south of the Han, and the tributaries Jungnang, Anyang, Tan, Cheonggye, and Hongje, decided which dongs got wet. Yeouido, Ichon, Banpo, Jamsil, Mangwon, Hapjeong, Amsa, Guui, and Jayang were read as main-channel waterfront. Habitation pushed above the third floor and the ration windows sat inside the embankment. The details of the waterfront rules were already written by [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
+Ground floors on both sides of the Han, and along the Jungnangcheon, Anyangcheon, Tancheon, Cheonggyecheon and Hongjecheon, decide which neighbourhoods flood. Yeouido, Ichon, Banpo, Jamsil, Mangwon, Hapjeong, Amsa, Guui and Jayang sit on the main river. People live above the third floor and keep ration windows inside the embankment. The waterfront rules are in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
 ## Passages
 
-**A. Transfers and evacuation**
+### Transfers and Evacuation
 
-Passages were the narrow lines where transfer, maintenance, and refuge overlapped. The transfer corridors were the hubs of politics and logistics between lines, and blockades, transit tolls, and congestion came first. The junctions where the Gangdong and Amsa ration corridors met the Eunpyeong and Seongbuk evacuation stairs became the warm nests of the rat colonies, and the Sindorim junction split the main freight door from the maintenance passage that took only people and packloads, using siege as its stage. This junction is not among the catalog''s 334 observed-name rows. The Sindorim incident''s location is recorded in [the Scenario Timeline](/wiki/Scenario-Timeline/).
+Passages are where transfer, maintenance and refuge overlap. Blockades, tolls and crowding happen first in the transfer passages. Where the Gangdong and Amsa ration passages meet the Eunpyeong and Seongbuk shelter stairs, rat colonies keep warm nests. At Sindorim the junction splits into the main freight door and a maintenance passage for people and packs only. That junction isn''t one of the 334 observed names in the catalog. Where the Sindorim events happen is in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
-The vertical connections were stairs, elevators, and ventilation shafts. Flooded floors showed cause and repair conditions and kept people out — that was the design. The Bukhansan Bogukmun mountain refuge roads, the Jegi-dong herb unloading, and the lower passages under the Noryangjin elevated joined the same graph from outside the stations. Connections were never deleted. Their states changed, and those states changed the times of rice, medicine, and convoys.
+Vertical links are stairs, lifts and ventilation shafts. Flooded floors are marked with a cause and a condition for repair, and they''re closed by design. The mountain refuge paths at Bukhansan Bogukmun, the herb docks at Jegi-dong and the low passages under the Noryangjin overpass join the same web from outside the stations. No connection is erased. When a state changes, the time it takes food, medicine and escorts to arrive changes with it.
 
-Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are facilities around station hubs. Garak handles price discovery rather than production. Noryangjin relies on refrigeration and ice credit, so it cannot keep goods frozen when power fails. Convenience stores and clinics remain trades around the stations.
+Garak, Gangseo, the grain market and the Noryangjin fish market sit around station strongholds. Garak is where prices are set, not where food is grown. Noryangjin depends on cold storage and ice credit, so it can''t keep anything frozen when the power fails. Corner shops and clinics survive as trades around the stations.
 
-| Structure | 2026 starting point | Work at the opening | Details |
+| Structure | Starting point in 2026 | Work at the opening | Details |
 |---|---|---|---|
-| Station | The 315 stations, concourses and platforms | Fortress, ration windows, faction strongholds | [the Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
-| Tunnel | Adjacent lines drawn from map points, transfers | Licensed passage, the states of flooding and blockade | [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) |
-| Depot | Sinjeong·Cheonwang·Banghwa·Gunja·Godeok·Changdong·Sinnae·Suseo | Repair, rolling stock, wheels and convoys | [The Structure of the World Map](/wiki/World-Map-Construction/) |
-| Treatment plant · sluice | Yeongdeungpo·Ttukseom·Guui·Amsa Arisu | Water signatures, lock-gate watches | [the Three Factions of Seoul](/wiki/Sixteen-States/) |
-| Passage | Transfers, maintenance corridors, refuge stairs | Transit tolls, leftovers and heat, detours | Logistics and Infrastructure |
+| Station | 315 stations, concourses and platforms | Stronghold, ration window, faction seat | [Rail Station Catalog](/wiki/Seoul-Station-Catalog/) |
+| Tunnel | Adjacent track drawn from map points, transfers | Passage by permission, flooding and blockade | [World Map](/wiki/World-and-Subway-Layers/) |
+| Depot | Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, Suseo | Repair, storage, wheels, convoys, fuel and drones | [The Structure of the World Map](/wiki/World-Map-Construction/) |
+| Plant and sluice | Yeongdeungpo, Ttukseom, Guui and Amsa water plants | Water signatures, gate watches | [The Three Factions of Seoul](/wiki/Sixteen-States/) |
+| Passage | Transfers, maintenance passages, refuge stairs | Tolls, leftovers and heat, detours | [Entering the Station Interior](/wiki/Station-Interior-Construction/) |
 
-## Sources
+## Related Pages
 
 - [Ailments and Symptoms](/wiki/Ailments/)
 - [Food Culture](/wiki/Food-Culture/)
 - [The Stories](/wiki/Oral-Stories/)
-', '**가. 역과 터널의 배치**
+- [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
+- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/)
+', '
+2126년 서울은 구를 평평하게 나눈 지도가 아니다. 역과 터널과 차량기지와 수문이 이어진 그물이다. 2026년에도 사람들은 지하철로 구를 넘었고, 정수장과 차량기지는 그 그물의 무거운 점이었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제가 멈췄다. 이어 겨울이 와서 떠나지 않았다. 사람들은 역으로 내려갔고, 역이 품을 수 있는 만큼만 살아남았다. 역은 거점이 되었고, 터널은 허가가 있어야 지나는 길이 되었으며, 수문은 서명이 있어야 열리는 문이 되었다.
 
-2026년 서울 사람들은 지하철로 구를 넘었고 정수센터와 차량기지도 역과 터널에 연결되어 있었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제가 멈추었다. 이후 역은 요새이자 세력의 거점이 되었으며 터널 통행에는 허가가 필요해졌다. 정수장과 수문은 서명이 있어야 열렸다. 2126년 세 세력은 역과 터널과 수문을 생활권으로 관리하며, 공작령은 구 이름으로 부른다.
+한 세기가 지나, 세 세력은 이 점과 선을 사는 자리로 쥐고 있다. 정부는 강 북쪽 14구를, 자유도시는 남서쪽 7구를, 아크는 강남 4구를 쥔다. 세력마다 구의 몫은 구 이름으로 부른다. 정부는 구를 상원의원이 쥔 선구로, 자유도시는 아르콘이 이끄는 폴리스로, 아크는 한 가문이 맡은 문으로 부른다.
 
-[서울 역 카탈로그](/wiki/Seoul-Station-Catalog/)는 관측 명칭 334행과 역 315곳을 기록한다. [세계 지도의 구성](/wiki/World-Map-Construction/)은 구 25개와 조립 순서를, [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/)는 여섯 층을 기록한다. 건물 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)에 있다.
+[서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/)는 역 315곳의 관측 명칭 334개를 기록한다. [세계 지도의 구성](/wiki/World-Map-Construction/)은 구 25개와 그 짜임을, [세계 지도](/wiki/World-and-Subway-Layers/)는 여섯 층을 기록한다. 건물을 다시 쓰는 방식은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)에 있다.
 
 ## 역
 
-**가. 역 거점**
+### 역 거점
 
-역은 사람과 시설과 연결을 다시 가동하여야 하는 거점이다. 동에 지하철이 있으면 역 건물이 핵심 시설이다. 배급·통행세·숙영·피난은 역에서 관리한다. 학교와 주민센터와 병원은 지원 건물이다. 2053년 3월 14일 협약 뒤 여의도 가문들이 영등포역 주변 급수 설비 11곳의 관리권을 맡았다. 2106년부터 종로·중구 통행증에는 광화문 정부서울청사 도장을 찍었다. 암사역은 정수와 호위의 보호권을 승강장에서 관리한다. 신도림은 영등포와 구로 사이의 병목이다. 수서에는 남부 기지와 계약 행정이 있다. 2053년 협약의 당사자와 서명은 [대정전과 급수 기록](/wiki/Oral-Stories/#2053년-영등포-급수-협약)에 남았다.
+역은 사람과 설비와 연결을 계속 돌리는 곳이다. 지하철역이 있는 동에서는 역이 중심 시설이다. 배급, 통행세, 숙영, 피난을 역에서 다룬다. 지상의 학교와 주민센터와 병원이 그것을 돕는다. 강 북쪽에서 종로·중구 통행증에는 광화문 옛 정부청사의 도장을 찍는다. 암사역은 정수와 호위 보호권을 승강장에서 관리한다. 신도림은 영등포와 구로 사이의 병목이고, 수서에는 남부 차량기지와 계약 사무가 있다.
 
-역에는 지상 폐허·대합실·승강장과 선로·환승 통로·심층 터널·차량기지 인접 구역이 층을 이룬다. 대합실에는 시장과 주거지, 행정 창구가 들어선다. 승강장에서는 사람과 화물이 오가고, 환승 통로에서는 통행세를 거둔다. 역에 딸린 시설은 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)에 기록되어 있다. 거점의 영토 관계는 거점과 영토에 있다.
+역에는 여섯 층이 있다. 지상 폐허, 대합실, 승강장과 선로, 환승 통로, 심층 터널, 차량기지 옆 구역이다. 대합실에는 시장과 집과 사무실이 들어선다. 승강장으로는 사람과 화물이 오가고, 환승 통로에서는 통행세를 걷는다. 역 안에 무엇이 있는지는 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)에 있다.
 
-종로·중구 통행증과 상거래 계약서는 2106년부터 정부서울청사 도장을 받았다. 2124년 서울역에서는 가짜 약 상자가 경매에 올랐다.
+### 열과 위쪽의 추위
+
+지상은 추위의 것이다. 역마다 가장 따뜻한 방은 땅이 열을 품은 깊은 곳에 두고, 그곳에서 전지를 충전하고 아픈 사람을 돌보고 노인이 잔다. 출구는 적고 좁게 둔다. 가장 붐비는 출구 위에는 그물과 철망을 쳐서, 내리꽂는 드론이 사람에게 닿기 전에 엉키게 한다. 그물을 깁는 일은 눈을 치우는 일처럼 평범한 일이다.
 
 ## 터널
 
-**가. 선로와 복구 상태**
+### 선로와 복구 상태
 
-역 사이의 선로는 연결을 유지한다. 정상·위험·통제·봉쇄·침수·붕괴·임시 복구 중 상태가 바뀌며 원인과 복구 조건을 기록한다. 영등포—신도림과 신도림—구로는 지도에 있는 인접이다. 영등포—구로를 건너뛰는 선은 없다. 전체 카탈로그의 인접 435개는 지도 점에서 뽑은 설계 자료다.
+역 사이의 선로는 지운 적이 없다. 상태만 바뀐다. 통행, 위험, 통제, 봉쇄, 침수, 붕괴, 임시 복구 가운데 하나이고, 저마다 원인과 다시 여는 조건이 붙는다. 영등포와 신도림, 신도림과 구로는 지도에서 이웃하며, 영등포에서 구로로 곧장 건너뛰는 선은 없다. 전체 카탈로그는 지도 점에서 뽑은 이웃 관계 435개를 싣는다.
 
-환승역의 전력이 끊기면 양쪽 터널이 멀쩡해도 전동 화물 운행이 멈춘다. 임시 복구 상태에서는 도보와 경화물만 통과하고 중화물과 무장 인원은 별도 승인을 받아야 한다. 심층 터널에는 은밀 이동과 정비를 위한 공간이 있으나 침수와 통신 단절이 발생한다. 처리량·고립·과확장 규칙은 물류와 기반 시설에 있다.
+환승역의 전력이 끊기면 양쪽 터널이 멀쩡해도 전동 화물이 멈춘다. 임시 복구 중에는 걸어가는 사람과 가벼운 화물만 지나고, 무거운 화물과 무장 인원은 따로 승인을 받아야 한다. 심층 터널에는 몰래 움직이고 정비할 자리가 있지만 물이 차고 연락이 끊긴다.
 
-기체는 2026년부터 남은 선로에서 마지막 수색·경계 루틴을 반복하고 있고 쥐 군락은 환승 상점가 아래 케이블 트레이에 둥지를 튼다. 사람 곁에서 작업하거나 움직이는 기체는 [사람과 기체](/wiki/People-and-Machines/)에 기재되어 있다. 선로는 2026년의 연결을 유지한다.
+기계는 2026년부터 남은 선로에서 마지막 수색·경계 루틴을 되풀이하고, 쥐 군락은 환승 상가 아래 케이블 트레이에 둥지를 튼다. 사람 곁에서 일하거나 움직이는 기계는 [사람과 기체](/wiki/People-and-Machines/)에 있다.
 
 ## 차량기지
 
-**가. 여덟 기지**
+### 여덟 기지
 
-기지 면적은 2026년의 유치·정비 규모이다. 서울 안의 여덟 기지는 신정·천왕·방화·군자·고덕·창동·신내·수서이다. 각 기지는 그 기지가 있는 구의 공작령에 속한다. 지축·도봉·모란·김포는 서울 슬롯 밖에 있다.
+기지의 크기는 2026년의 유치·정비 규모다. 서울 안의 여덟 기지는 신정, 천왕, 방화, 군자, 고덕, 창동, 신내, 수서다. 기지는 그것이 있는 구의 몫에 속한다. 지축, 도봉, 모란, 김포는 서울 경계 밖에 있다.
 
-기지는 수리·대형 저장·공성에 쓰인다. 신정의 하역 당직은 멈춘 열차를 다시 움직이고 고덕의 정비 당직은 호송을 보낸다. 창동의 차륜과 제동 장치는 이웃 수장의 장부에 임대로 남아 있다. 배수 연못에는 수조 농어와 철새가 있다. 정비고 깊은 칸에는 반복 기체가 봉인되어 있다. 충전 단자와 유압 호스의 수리 범위는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
+| 기지 | 구 | 세력 |
+|---|---|---|
+| 신정 | 양천구 | 자유도시 |
+| 천왕 | 구로구 | 자유도시 |
+| 방화 | 강서구 | 자유도시 |
+| 군자 | 성동구 | 정부 |
+| 창동 | 도봉구 | 정부 |
+| 신내 | 중랑구 | 정부 |
+| 고덕 | 강동구 | 아크 |
+| 수서 | 강남구 | 아크 |
 
-구로·금천 공단 동에서는 기지와 붙은 학교를 부품 건조장으로 쓴다. 도봉·노원의 주거 쉘은 창동 기지의 급수가 끊기면 물을 유지할 수 없다.
+기지는 수리와 대량 보관과 공성에 쓰인다. 신정의 하역 조는 멈춘 열차를 다시 움직이고, 고덕의 정비 조는 호송을 내보낸다. 창동의 차륜과 제동 장치는 이웃 장부에 임대로 올라 있다. 배수 연못은 수조 양식과 철새가 함께 쓴다. 정비고 깊은 칸에는 되풀이하는 기계가 봉인되어 있다. 충전 단자와 유압 호스로 할 수 있는 일은 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
+
+현대 무기를 굴리는 데 남은 것도 대부분 기지에 있다. 연료 창고, 차량 작업대, 드론을 따뜻하게 둘 자리다. 그래서 기지는 다툴 만한 곳이다. 구로와 금천의 공단 동은 기지 옆 학교를 부품 건조실로 쓴다. 도봉과 노원의 주거 동은 창동의 급수가 끊기면 물을 지키지 못한다.
 
 ## 정수장과 수문
 
-**가. 정수장과 당직**
+### 정수장과 당직
 
-대정전 직후 영등포아리수정수센터 당직 책임자 한정훈은 원격 제어 두절 뒤 밸브를 수동으로 조작하였다. 2053년 3월 14일 협약으로 여의도 가문들이 영등포역 주변 급수 설비 11곳의 관리권을 넘겨받았다. 영등포 정수센터 측은 3월 20일부터 양평역 지하를 거점으로 삼았다.
+대정전 직후 영등포 정수센터 당직 책임자 한정훈은 원격 제어를 잃고 밸브를 손으로 돌렸다. 그의 당직자들은 뒤에 양평역 지하 서고로 거점을 옮겼다. 대개 첫 겨울에 물과 발전기 부품을 맞바꾼 거래가 그곳에서 시작됐다고 전하며, 역들은 지금도 그것을 [물과 부품](/wiki/Oral-Stories/#2026년-물과-부품-거래) 이야기로 한다.
 
-2026년 11월 6일 한정훈은 비상발전기 부품 2개를 받고 여의도 방향 송수관 밸브를 매일 열기로 하였다. 거래는 [대정전과 급수 기록](/wiki/Oral-Stories/#2026년-물과-부품-거래)에 남았다. 2053년 3월 14일 급수 설비 관리권 이관에도 양측 대표가 서명하였다.
-
-한강 이북과 이남의 1층과 중랑천·안양천·탄천·청계·홍제의 지천은 침수되는 동의 범위를 가른다. 여의도·이촌·반포·잠실·망원·합정·암사·구의·자양은 본류 수변이다. 거주지는 3층 이상에, 배급 창구는 제방 안쪽에 둔다. 수변 규칙은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)에 있다.
+한강 남북의 1층과 중랑천, 안양천, 탄천, 청계천, 홍제천의 물길이 어느 동이 잠기는지 가른다. 여의도, 이촌, 반포, 잠실, 망원, 합정, 암사, 구의, 자양은 본류 물가다. 사람은 3층 위에 살고 배급 창구는 제방 안쪽에 둔다. 물가 규칙은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)에 있다.
 
 ## 통로
 
-**가. 환승과 피난**
+### 환승과 피난
 
-통로에는 환승·정비·피난이 겹친다. 환승 통로에서는 봉쇄·통행세·혼잡이 발생한다. 강동·암사 배급 통로와 은평·성북 대피 계단의 연결부에는 쥐 군락의 온열 둥지가 있다. 신도림의 연결부는 주 화물문과 사람·등짐만 지나는 정비 통로로 나뉜다. 이 연결부는 서울 역 카탈로그의 관측 명칭 334행에 속하지 않는다. 신도림 사건의 장소는 [연표](/wiki/Scenario-Timeline/)에 있다.
+통로에는 환승과 정비와 피난이 겹친다. 봉쇄, 통행세, 혼잡은 환승 통로에서 먼저 생긴다. 강동·암사 배급 통로와 은평·성북 대피 계단이 만나는 곳에는 쥐 군락의 따뜻한 둥지가 있다. 신도림 연결부는 주 화물문과 사람과 등짐만 지나는 정비 통로로 갈린다. 이 연결부는 카탈로그의 관측 명칭 334개에 들지 않는다. 신도림 사건의 장소는 [시나리오 타임라인](/wiki/Scenario-Timeline/)에 있다.
 
-수직 연결은 계단·승강기·환기구다. 침수된 층은 원인과 복구 조건을 표시하며 출입을 막도록 설계하였다. 북한산보국문의 산악 피난로와 제기동 약재 하역장과 노량진 고가 아래 하층 통로는 역 바깥에서 같은 망에 연결된다. 연결을 삭제하지 않는다. 상태가 바뀌면 식량·약품·호송 시간이 바뀐다.
+위아래 연결은 계단, 승강기, 환기구다. 물이 찬 층에는 원인과 복구 조건을 표시하고, 들어가지 못하게 막아 둔다. 북한산 보국문의 산길 피난로, 제기동 약재 하역장, 노량진 고가 아래 낮은 통로는 역 바깥에서 같은 그물에 이어진다. 연결은 지우지 않는다. 상태가 바뀌면 식량과 약과 호송이 닿는 시간이 함께 바뀐다.
 
-가락시장·강서시장·양곡시장·노량진 수산시장은 역 거점의 주변 시설이다. 가락시장은 값이 정해지는 곳이며 생산지는 아니다. 노량진 수산시장은 냉동과 얼음 신용에 의존하므로 전력이 끊기면 냉동을 유지할 수 없다. 편의점과 의원은 역 주변 생업 시설로 남았다.
+가락시장, 강서시장, 양곡시장, 노량진 수산시장은 역 거점 둘레의 시설이다. 가락은 값이 정해지는 곳이지 생산지가 아니다. 노량진은 냉동과 얼음 신용에 기대니 전력이 끊기면 아무것도 얼려 두지 못한다. 편의점과 의원은 역 둘레의 생업으로 남았다.
 
-| 구조 | 2026 출발점 | 개막에 하는 일 | 상세 문서 |
+| 구조 | 2026년의 출발점 | 개막에 하는 일 | 자세한 문서 |
 |---|---|---|---|
-| 역 | 역 315곳과 대합실·승강장 | 요새, 배급 창구, 세력의 거점 | [서울 역 카탈로그](/wiki/Seoul-Station-Catalog/) |
-| 터널 | 지도 점에서 뽑은 인접 선로, 환승 | 허가된 통행, 침수와 봉쇄의 상태 | [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/) |
-| 차량기지 | 신정·천왕·방화·군자·고덕·창동·신내·수서 | 수리, 유치, 차륜과 호송 | [세계 지도의 구성](/wiki/World-Map-Construction/) |
-| 정수장·수문 | 영등포·뚝섬·구의·암사 아리수 | 급수 서명, 갑문 당직 | [서울의 세 세력](/wiki/Sixteen-States/) |
-| 통로 | 환승, 정비 통로, 피난 계단 | 통행세, 잔반과 열, 우회 | 물류와 기반 시설 |
+| 역 | 역 315곳과 대합실·승강장 | 거점, 배급 창구, 세력의 자리 | [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/) |
+| 터널 | 지도 점에서 뽑은 이웃 선로, 환승 | 허가받은 통행, 침수와 봉쇄 | [세계 지도](/wiki/World-and-Subway-Layers/) |
+| 차량기지 | 신정, 천왕, 방화, 군자, 고덕, 창동, 신내, 수서 | 수리, 보관, 차륜, 호송, 연료와 드론 | [세계 지도의 구성](/wiki/World-Map-Construction/) |
+| 정수장과 수문 | 영등포, 뚝섬, 구의, 암사 정수장 | 급수 서명, 수문 당직 | [서울의 세 세력](/wiki/Sixteen-States/) |
+| 통로 | 환승, 정비 통로, 피난 계단 | 통행세, 잔반과 열, 우회 | [역 내부에 들어가면](/wiki/Station-Interior-Construction/) |
 
-## 출처
+## 관련 문서
 
 - [질병과 증상](/wiki/Ailments/)
 - [식문화](/wiki/Food-Culture/)
 - [이야기](/wiki/Oral-Stories/)
+- [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)
+- [사이버웨어와 희소성](/wiki/Cyberware-and-Scarcity/)
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Synthetic-Actors', 'Synthetic Social Personas', '합성 사회 인격', 'people-and-machines', 1, '<a id="Synthetic-Actors-heading-0001"></a>
 
+Seoul still has machines that think. They aren''t the First AI and they don''t speak for it. They''re working personas left in humanoid frames, facility racks and vehicles, kept running by the houses and technicians who depend on them. This ledger lists forty-eight of them in three classes: H for humanoid frames, F for fixed facility systems, and V for vehicles.
+
+## How the Personas Are Kept
+
+Every persona here lives under the same scarcity as everything else in the stations. Its battery is replaceable, not endless. Its wear parts are rationed. In the cold, its cells charge only in a warm room, and a technician''s queue decides when it''s repaired. No persona is allowed to take control of a facility it wasn''t assigned to, even when its own parts run out.
+
+Each entry lists the body platform, custody, memory rules, power, the chief maintainer and the house that audits the work. Custody isn''t ownership of a person. Where a persona shows a will of its own, memory that carries on and the ability to consent, people judge it case by case rather than by what it''s made of. The custody record exists so someone answers for upkeep and harm.
+
+People with machine parts in their own bodies follow different rules. Those are set out in [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/). The wider place of machines in station life is in [People and Machines](/wiki/People-and-Machines/).
+
 <a id="Synthetic-Actors-heading-0002"></a>
 
-## H01 · Hannuri (Nuri) (Nuri)
+## H01 · Han Nu-ri (Nuri)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -46593,9 +46812,9 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the sluice sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K001 custodian, HC01 steward_house, K004 work_peer
+- Relations: custodian K001, steward house HC01, work peer K004
 
-At the maintenance bench of the sluice, Hannuri (Nuri) logged its entry in the HC01 duty log.
+At the maintenance bench of the sluice, Han Nu-ri (Nuri) logged its entry in the HC01 duty log.
 
 Han Jae-mok checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -46605,22 +46824,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0008"></a>
 
-## H02 · Seorin (Rin) (Rin)
+## H02 · Seo Rin (Rin)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
 - Custody and legal status: joint custody under HC02 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Gang Minseo · HC02 audit in attendance
+- Maintenance: chief maintainer Kang Min-seo · HC02 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yeongdeungpo Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K029 custodian, HC02 steward_house, K011 work_peer
+- Relations: custodian K029, steward house HC02, work peer K011
 
-In the charging bay of the Yeongdeungpo Line, Seorin (Rin) logged its entry in the HC02 duty log.
+In the charging bay of the Yeongdeungpo Line, Seo Rin (Rin) logged its entry in the HC02 duty log.
 
-Gang Minseo checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Kang Min-seo checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the observation-railing alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -46628,22 +46847,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0014"></a>
 
-## H03 · Ido (Ido) (Ido (Ido))
+## H03 · Lee Do
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
 - Custody and legal status: joint custody under HC03 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Jeong Hojun · HC03 audit in attendance
+- Maintenance: chief maintainer Jeong Ho-jun · HC03 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yongsan Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K057 custodian, HC03 steward_house, K018 work_peer
+- Relations: custodian K057, steward house HC03, work peer K018
 
-At the observation railing of the Yongsan Line, Ido (Ido) logged its entry in the HC03 duty log.
+At the observation railing of the Yongsan Line, Lee Do logged its entry in the HC03 duty log.
 
-Jeong Hojun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Jeong Ho-jun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -46651,22 +46870,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0020"></a>
 
-## H04 · Gangbyeol (Byeol) (Byeol)
+## H04 · Kang Byeol (Byeol)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
 - Custody and legal status: joint custody under HC04 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Im Hajun · HC04 audit in attendance
+- Maintenance: chief maintainer Im Ha-jun · HC04 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Ttukseom sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K086 custodian, HC04 steward_house, K025 work_peer
+- Relations: custodian K086, steward house HC04, work peer K025
 
-At the tool wall of Ttukseom, Gangbyeol (Byeol) logged its entry in the HC04 duty log.
+At the tool wall of Ttukseom, Kang Byeol (Byeol) logged its entry in the HC04 duty log.
 
-Im Hajun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Im Ha-jun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the maintenance-bench alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -46674,22 +46893,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0026"></a>
 
-## H05 · Yunjae (Jae) (Jae)
+## H05 · Yun Jae (Jae)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
 - Custody and legal status: joint custody under HC05 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Bae Ujin · HC05 audit in attendance
+- Maintenance: chief maintainer Bae U-jin · HC05 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gwangjin Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K115 custodian, HC05 steward_house, K032 work_peer
+- Relations: custodian K115, steward house HC05, work peer K032
 
-At the maintenance bench of the Gwangjin Line, Yunjae (Jae) logged its entry in the HC05 duty log.
+At the maintenance bench of the Gwangjin Line, Yun Jae (Jae) logged its entry in the HC05 duty log.
 
-Bae Ujin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Bae U-jin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the charging-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -46697,7 +46916,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0032"></a>
 
-## H06 · Baksol (Sol) (Sol)
+## H06 · Park Sol (Sol)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -46708,9 +46927,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seoul Station Central sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K144 custodian, HC06 steward_house, K039 work_peer
+- Relations: custodian K144, steward house HC06, work peer K039
 
-In the charging bay of Seoul Station Central, Baksol (Sol) logged its entry in the HC06 duty log.
+In the charging bay of Seoul Station Central, Park Sol (Sol) logged its entry in the HC06 duty log.
 
 Yun Seo-rin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -46720,22 +46939,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0038"></a>
 
-## H07 · Jeonguram (Uram) (Uram)
+## H07 · Jeong U-ram (Uram)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
 - Custody and legal status: joint custody under HC07 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Bak Tae-gyeom · HC07 audit in attendance
+- Maintenance: chief maintainer Park Tae-gyeom · HC07 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Wangsimni sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K169 custodian, HC07 steward_house, K046 work_peer
+- Relations: custodian K169, steward house HC07, work peer K046
 
-At the observation railing of Wangsimni, Jeonguram (Uram) logged its entry in the HC07 duty log.
+At the observation railing of Wangsimni, Jeong U-ram (Uram) logged its entry in the HC07 duty log.
 
-Bak Tae-gyeom checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Park Tae-gyeom checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -46743,7 +46962,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0044"></a>
 
-## H08 · Choidaon (Daon) (Daon)
+## H08 · Choi Da-on (Daon)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -46754,9 +46973,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Noryangjin Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K194 custodian, HC08 steward_house, K053 work_peer
+- Relations: custodian K194, steward house HC08, work peer K053
 
-At the tool wall of the Noryangjin Line, Choidaon (Daon) logged its entry in the HC08 duty log.
+At the tool wall of the Noryangjin Line, Choi Da-on (Daon) logged its entry in the HC08 duty log.
 
 Oh Hae-rin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -46766,22 +46985,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0050"></a>
 
-## H09 · Joharam (Haram) (Haram)
+## H09 · Jo Ha-ram (Haram)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
 - Custody and legal status: joint custody under HC09 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Choe Ji-u · HC09 audit in attendance
+- Maintenance: chief maintainer Choi Ji-u · HC09 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Mapo sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K219 custodian, HC09 steward_house, K060 work_peer
+- Relations: custodian K219, steward house HC09, work peer K060
 
-At the maintenance bench of Mapo, Joharam (Haram) logged its entry in the HC09 duty log.
+At the maintenance bench of Mapo, Jo Ha-ram (Haram) logged its entry in the HC09 duty log.
 
-Choe Ji-u checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Choi Ji-u checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the charging-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -46789,7 +47008,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0056"></a>
 
-## H10 · Yunsaeron (Saeron) (Saeron)
+## H10 · Yun Sae-ron (Saeron)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -46800,9 +47019,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yeouido Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K245 custodian, HC10 steward_house, K067 work_peer
+- Relations: custodian K245, steward house HC10, work peer K067
 
-In the charging bay of the Yeouido Line, Yunsaeron (Saeron) logged its entry in the HC10 duty log.
+In the charging bay of the Yeouido Line, Yun Sae-ron (Saeron) logged its entry in the HC10 duty log.
 
 Baek On checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -46812,22 +47031,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0062"></a>
 
-## H11 · Kim Doha (Doha)
+## H11 · Kim Do-ha (Doha)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
 - Custody and legal status: joint custody under HC11 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Yi Hong-won · HC11 audit in attendance
+- Maintenance: chief maintainer Lee Hong-won · HC11 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gangnam Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K271 custodian, HC11 steward_house, K074 work_peer
+- Relations: custodian K271, steward house HC11, work peer K074
 
-At the observation railing of the Gangnam Line, Kimdoha (Doha) logged its entry in the HC11 duty log.
+At the observation railing of the Gangnam Line, Kim Do-ha (Doha) logged its entry in the HC11 duty log.
 
-Yi Hong-won checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Lee Hong-won checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -46835,22 +47054,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0068"></a>
 
-## H12 · Ichaeon (Chaeon) (Chaeon)
+## H12 · Lee Chae-on (Chaeon)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
 - Custody and legal status: joint custody under HC12 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Jang Sehwa · HC12 audit in attendance
+- Maintenance: chief maintainer Jang Se-hwa · HC12 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Jamsil Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K296 custodian, HC12 steward_house, K081 work_peer
+- Relations: custodian K296, steward house HC12, work peer K081
 
-At the tool wall of the Jamsil Line, Ichaeon (Chaeon) logged its entry in the HC12 duty log.
+At the tool wall of the Jamsil Line, Lee Chae-on (Chaeon) logged its entry in the HC12 duty log.
 
-Jang Sehwa checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Jang Se-hwa checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the maintenance-bench alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -46858,22 +47077,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0074"></a>
 
-## H13 · Hanbitna (Bitna) (Bitna)
+## H13 · Han Bit-na (Bitna)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
 - Custody and legal status: joint custody under HC13 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Ryu Eunbi · HC13 audit in attendance
+- Maintenance: chief maintainer Ryu Eun-bi · HC13 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Dongdaemun sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K322 custodian, HC13 steward_house, K089 work_peer
+- Relations: custodian K322, steward house HC13, work peer K089
 
-At the maintenance bench of Dongdaemun, Hanbitna (Bitna) logged its entry in the HC13 duty log.
+At the maintenance bench of Dongdaemun, Han Bit-na (Bitna) logged its entry in the HC13 duty log.
 
-Ryu Eunbi checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Ryu Eun-bi checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the charging-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -46881,22 +47100,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0080"></a>
 
-## H14 · Oserim (Serim) (Serim)
+## H14 · Oh Se-rim (Serim)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
 - Custody and legal status: joint custody under HC14 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Go Seojun · HC14 audit in attendance
+- Maintenance: chief maintainer Go Seo-jun · HC14 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seongbuk Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K348 custodian, HC14 steward_house, K096 work_peer
+- Relations: custodian K348, steward house HC14, work peer K096
 
-In the charging bay of the Seongbuk Line, Oserim (Serim) logged its entry in the HC14 duty log.
+In the charging bay of the Seongbuk Line, Oh Se-rim (Serim) logged its entry in the HC14 duty log.
 
-Go Seojun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Go Seo-jun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the observation-railing alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -46904,7 +47123,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0086"></a>
 
-## H15 · Baesua (Sua) (Sua)
+## H15 · Bae Su-a (Sua)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -46915,9 +47134,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Myeongdong sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K373 custodian, HP01 steward_house, K103 work_peer
+- Relations: custodian K373, steward house HP01, work peer K103
 
-At the observation railing of Myeongdong, Baesua (Sua) logged its entry in the HP01 duty log.
+At the observation railing of Myeongdong, Bae Su-a (Sua) logged its entry in the HP01 duty log.
 
 Nam Yun-gyeong checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -46927,22 +47146,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0092"></a>
 
-## H16 · Sintaeul (Taeul) (Taeul)
+## H16 · Sin Tae-yul (Taeyul)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
 - Custody and legal status: joint custody under HP02 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Jeong Yura · HP02 audit in attendance
+- Maintenance: chief maintainer Jeong Yu-ra · HP02 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Suseo Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K398 custodian, HP02 steward_house, K110 work_peer
+- Relations: custodian K398, steward house HP02, work peer K110
 
-At the tool wall of the Suseo Line, Sintaeul (Taeul) logged its entry in the HP02 duty log.
+At the tool wall of the Suseo Line, Sin Tae-yul (Taeyul) logged its entry in the HP02 duty log.
 
-Jeong Yura checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Jeong Yu-ra checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the maintenance-bench alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -46950,22 +47169,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0098"></a>
 
-## F01 · Cooling-Tower Keeper (Tapji) (Tapji)
+## F01 · Cooling-Tower Keeper (Tapji)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
 - Custody and legal status: joint custody under HC09 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer I Seo-dam · HC09 audit in attendance
+- Maintenance: chief maintainer Lee Seo-dam · HC09 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the sluice sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K002 custodian, HC09 steward_house, K117 work_peer
+- Relations: custodian K002, steward house HC09, work peer K117
 
 In the machine room of the sluice, Cooling-Tower Keeper (Tapji) logged its entry in the HC09 duty log.
 
-I Seo-dam checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Lee Seo-dam checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the alarm in front of the switchgear panel sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -46973,22 +47192,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0104"></a>
 
-## F02 · Switchgear Panel (Jeonban) (Jeonban)
+## F02 · Switchgear Panel (Jeonban)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
 - Custody and legal status: joint custody under HC10 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Jeong Siu · HC10 audit in attendance
+- Maintenance: chief maintainer Jeong Si-u · HC10 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yeongdeungpo Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K030 custodian, HC10 steward_house, K124 work_peer
+- Relations: custodian K030, steward house HC10, work peer K124
 
 In front of the switchgear panel of the Yeongdeungpo Line, Switchgear Panel (Jeonban) logged its entry in the HC10 duty log.
 
-Jeong Siu checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Jeong Si-u checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -46996,22 +47215,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0110"></a>
 
-## F03 · Water Filtration (Yeogwa) (Yeogwa)
+## F03 · Water Filtration (Yeogwa)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
 - Custody and legal status: joint custody under HC11 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Jeong Harin · HC11 audit in attendance
+- Maintenance: chief maintainer Jeong Ha-rin · HC11 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yongsan Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K058 custodian, HC11 steward_house, K131 work_peer
+- Relations: custodian K058, steward house HC11, work peer K131
 
 In the filter corridor of the Yongsan Line, Water Filtration (Yeogwa) logged its entry in the HC11 duty log.
 
-Jeong Harin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Jeong Ha-rin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the control-booth alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47019,22 +47238,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0116"></a>
 
-## F04 · Cold Storage (Naengchang) (Naengchang)
+## F04 · Cold Storage (Naengchang)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
 - Custody and legal status: joint custody under HC12 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Im Chowon · HC12 audit in attendance
+- Maintenance: chief maintainer Im Cho-won · HC12 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Ttukseom sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K087 custodian, HC12 steward_house, K138 work_peer
+- Relations: custodian K087, steward house HC12, work peer K138
 
 In the control booth of Ttukseom, Cold Storage (Naengchang) logged its entry in the HC12 duty log.
 
-Im Chowon checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Im Cho-won checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the machine-room alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47042,22 +47261,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0122"></a>
 
-## F05 · Transmission Relay (Junggye) (Junggye)
+## F05 · Transmission Relay (Junggye)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
 - Custody and legal status: joint custody under HC13 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Kim Uchan · HC13 audit in attendance
+- Maintenance: chief maintainer Kim U-chan · HC13 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gwangjin Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K116 custodian, HC13 steward_house, K146 work_peer
+- Relations: custodian K116, steward house HC13, work peer K146
 
 In the machine room of the Gwangjin Line, Transmission Relay (Junggye) logged its entry in the HC13 duty log.
 
-Kim Uchan checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Kim U-chan checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the alarm in front of the switchgear panel sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47065,22 +47284,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0128"></a>
 
-## F06 · Elevator Shaft (Seungchuk) (Seungchuk)
+## F06 · Elevator Shaft (Seungchuk)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
 - Custody and legal status: joint custody under HC14 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Gang Ye-jun · HC14 audit in attendance
+- Maintenance: chief maintainer Kang Ye-jun · HC14 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seoul Station Central sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K145 custodian, HC14 steward_house, K153 work_peer
+- Relations: custodian K145, steward house HC14, work peer K153
 
 In front of the switchgear panel of Seoul Station Central, Elevator Shaft (Seungchuk) logged its entry in the HC14 duty log.
 
-Gang Ye-jun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Kang Ye-jun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47088,7 +47307,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0134"></a>
 
-## F07 · Boiler Room (Boil) (Boil)
+## F07 · Boiler Room (Boil)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -47099,7 +47318,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Wangsimni sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K170 custodian, HP01 steward_house, K160 work_peer
+- Relations: custodian K170, steward house HP01, work peer K160
 
 In the filter corridor of Wangsimni, Boiler Room (Boil) logged its entry in the HP01 duty log.
 
@@ -47111,7 +47330,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0140"></a>
 
-## F08 · Sewage Pump (Hasu) (Hasu)
+## F08 · Sewage Pump (Hasu)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -47122,7 +47341,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Noryangjin Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K195 custodian, HP02 steward_house, K167 work_peer
+- Relations: custodian K195, steward house HP02, work peer K167
 
 In the control booth of the Noryangjin Line, Sewage Pump (Hasu) logged its entry in the HP02 duty log.
 
@@ -47134,7 +47353,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0146"></a>
 
-## F09 · Lab Cleanroom (Clean) (Clean)
+## F09 · Lab Cleanroom (Clean)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -47145,7 +47364,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Mapo sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K220 custodian, HP03 steward_house, K175 work_peer
+- Relations: custodian K220, steward house HP03, work peer K175
 
 In the machine room of Mapo, Lab Cleanroom (Clean) logged its entry in the HP03 duty log.
 
@@ -47157,22 +47376,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0152"></a>
 
-## F10 · Logistics Sorting (Bunryu) (Bunryu)
+## F10 · Logistics Sorting (Bunryu)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
 - Custody and legal status: joint custody under HP04 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Sin Boram · HP04 audit in attendance
+- Maintenance: chief maintainer Sin Bo-ram · HP04 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yeouido Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K246 custodian, HP04 steward_house, K182 work_peer
+- Relations: custodian K246, steward house HP04, work peer K182
 
 In front of the switchgear panel of the Yeouido Line, Logistics Sorting (Bunryu) logged its entry in the HP04 duty log.
 
-Sin Boram checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Sin Bo-ram checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47180,7 +47399,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0158"></a>
 
-## F11 · Power Transformer (Byeonap) (Byeonap)
+## F11 · Power Transformer (Byeonap)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -47191,7 +47410,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gangnam Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K272 custodian, HP05 steward_house, K189 work_peer
+- Relations: custodian K272, steward house HP05, work peer K189
 
 In the filter corridor of the Gangnam Line, Power Transformer (Byeonap) logged its entry in the HP05 duty log.
 
@@ -47203,22 +47422,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0164"></a>
 
-## F12 · Ventilation Duct (Duct) (Duct)
+## F12 · Ventilation Duct (Duct)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
 - Custody and legal status: joint custody under HP06 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer An Dohan · HP06 audit in attendance
+- Maintenance: chief maintainer An Do-han · HP06 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Jamsil Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K297 custodian, HP06 steward_house, K197 work_peer
+- Relations: custodian K297, steward house HP06, work peer K197
 
 In the control booth of the Jamsil Line, Ventilation Duct (Duct) logged its entry in the HP06 duty log.
 
-An Dohan checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+An Do-han checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the machine-room alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47226,22 +47445,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0170"></a>
 
-## F13 · Medical Sterilization (Myeolgun) (Myeolgun)
+## F13 · Medical Sterilization (Myeolgun)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
 - Custody and legal status: joint custody under HP07 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Sim Dalho · HP07 audit in attendance
+- Maintenance: chief maintainer Sim Dal-ho · HP07 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Dongdaemun sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K323 custodian, HP07 steward_house, K204 work_peer
+- Relations: custodian K323, steward house HP07, work peer K204
 
 In the machine room of Dongdaemun, Medical Sterilization (Myeolgun) logged its entry in the HP07 duty log.
 
-Sim Dalho checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Sim Dal-ho checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the alarm in front of the switchgear panel sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47249,22 +47468,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0176"></a>
 
-## F14 · Printing Press Unit (Inswae) (Inswae)
+## F14 · Printing Press Unit (Inswae)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
 - Custody and legal status: joint custody under HP08 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Mun Hayul · HP08 audit in attendance
+- Maintenance: chief maintainer Mun Ha-yul · HP08 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seongbuk Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K349 custodian, HP08 steward_house, K211 work_peer
+- Relations: custodian K349, steward house HP08, work peer K211
 
 In front of the switchgear panel of the Seongbuk Line, Printing Press Unit (Inswae) logged its entry in the HP08 duty log.
 
-Mun Hayul checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Mun Ha-yul checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47272,22 +47491,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0182"></a>
 
-## F15 · Water-Supply Metering (Gyeryang) (Gyeryang)
+## F15 · Water-Supply Metering (Gyeryang)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
 - Custody and legal status: joint custody under HP09 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Eun Taeho · HP09 audit in attendance
+- Maintenance: chief maintainer Eun Tae-ho · HP09 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Myeongdong sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K374 custodian, HP09 steward_house, K218 work_peer
+- Relations: custodian K374, steward house HP09, work peer K218
 
 In the filter corridor of Myeongdong, Water-Supply Metering (Gyeryang) logged its entry in the HP09 duty log.
 
-Eun Taeho checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Eun Tae-ho checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the control-booth alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47295,22 +47514,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0188"></a>
 
-## F16 · Tunnel Ventilation (Teohwan) (Teohwan)
+## F16 · Tunnel Ventilation (Teohwan)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
 - Custody and legal status: joint custody under HP10 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Ha Seojin · HP10 audit in attendance
+- Maintenance: chief maintainer Ha Seo-jin · HP10 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Suseo Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K399 custodian, HP10 steward_house, K225 work_peer
+- Relations: custodian K399, steward house HP10, work peer K225
 
 In the control booth of the Suseo Line, Tunnel Ventilation (Teohwan) logged its entry in the HP10 duty log.
 
-Ha Seojin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Ha Seo-jin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the machine-room alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47318,22 +47537,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0194"></a>
 
-## V01 · Dawn Convoy (Saebyeok) (Saebyeok)
+## V01 · Dawn Convoy (Saebyeok)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
 - Custody and legal status: joint custody under HP03 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Gim Tae-un · HP03 audit in attendance
+- Maintenance: chief maintainer Kim Tae-un · HP03 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the sluice sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K003 custodian, HP03 steward_house, K232 work_peer
+- Relations: custodian K003, steward house HP03, work peer K232
 
 On the turnback line of the sluice, Dawn Convoy (Saebyeok) logged its entry in the HP03 duty log.
 
-Gim Tae-un checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Kim Tae-un checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the loading-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47341,22 +47560,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0200"></a>
 
-## V02 · Circulating Bus (Sunhwan) (Sunhwan)
+## V02 · Circulating Bus (Sunhwan)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
 - Custody and legal status: joint custody under HP04 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Kim Nayul · HP04 audit in attendance
+- Maintenance: chief maintainer Kim Na-yul · HP04 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yeongdeungpo Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K031 custodian, HP04 steward_house, K239 work_peer
+- Relations: custodian K031, steward house HP04, work peer K239
 
 In the loading bay of the Yeongdeungpo Line, Circulating Bus (Sunhwan) logged its entry in the HP04 duty log.
 
-Kim Nayul checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Kim Na-yul checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the inspection-pit alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47364,22 +47583,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0206"></a>
 
-## V03 · Freight Tram (Tram) (Tram)
+## V03 · Freight Tram (Tram)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
 - Custody and legal status: joint custody under HP05 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Choe Eunjae · HP05 audit in attendance
+- Maintenance: chief maintainer Choi Eun-jae · HP05 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yongsan Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K059 custodian, HP05 steward_house, K247 work_peer
+- Relations: custodian K059, steward house HP05, work peer K247
 
 In the inspection pit of the Yongsan Line, Freight Tram (Tram) logged its entry in the HP05 duty log.
 
-Choe Eunjae checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Choi Eun-jae checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47387,22 +47606,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0212"></a>
 
-## V04 · Fire-Hose Robot (Gugyeongno) (Gugyeongno)
+## V04 · Fire-Hose Robot (Gugyeongno)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
 - Custody and legal status: joint custody under HP06 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Han Somi · HP06 audit in attendance
+- Maintenance: chief maintainer Han So-mi · HP06 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Ttukseom sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K088 custodian, HP06 steward_house, K254 work_peer
+- Relations: custodian K088, steward house HP06, work peer K254
 
 At the charging slot of Ttukseom, Fire-Hose Robot (Gugyeongno) logged its entry in the HP06 duty log.
 
-Han Somi checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Han So-mi checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the turnback-line alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47410,22 +47629,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0218"></a>
 
-## V05 · Rail Tow (Gyeonin) (Gyeonin)
+## V05 · Rail Tow (Gyeonin)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
 - Custody and legal status: joint custody under HP07 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Jeong Soyul · HP07 audit in attendance
+- Maintenance: chief maintainer Jeong So-yul · HP07 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gwangjin Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K117 custodian, HP07 steward_house, K261 work_peer
+- Relations: custodian K117, steward house HP07, work peer K261
 
 On the turnback line of the Gwangjin Line, Rail Tow (Gyeonin) logged its entry in the HP07 duty log.
 
-Jeong Soyul checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Jeong So-yul checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the loading-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47433,7 +47652,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0224"></a>
 
-## V06 · Distribution Truck (Baejeon) (Baejeon)
+## V06 · Distribution Truck (Baejeon)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -47444,7 +47663,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seoul Station Central sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K146 custodian, HP08 steward_house, K268 work_peer
+- Relations: custodian K146, steward house HP08, work peer K268
 
 In the loading bay of Seoul Station Central, Distribution Truck (Baejeon) logged its entry in the HP08 duty log.
 
@@ -47456,7 +47675,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0230"></a>
 
-## V07 · Sweeper Vehicle (Cheongso) (Cheongso)
+## V07 · Sweeper Vehicle (Cheongso)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -47467,7 +47686,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Wangsimni sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K171 custodian, HP09 steward_house, K276 work_peer
+- Relations: custodian K171, steward house HP09, work peer K276
 
 In the inspection pit of Wangsimni, Sweeper Vehicle (Cheongso) logged its entry in the HP09 duty log.
 
@@ -47479,7 +47698,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0236"></a>
 
-## V08 · Ambulance Cart (Gugeup) (Gugeup)
+## V08 · Ambulance Cart (Gugeup)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -47490,7 +47709,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Noryangjin Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K196 custodian, HP10 steward_house, K283 work_peer
+- Relations: custodian K196, steward house HP10, work peer K283
 
 At the charging slot of the Noryangjin Line, Ambulance Cart (Gugeup) logged its entry in the HP10 duty log.
 
@@ -47502,22 +47721,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0242"></a>
 
-## V09 · Port Crane (Crane) (Crane)
+## V09 · Port Crane (Crane)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
 - Custody and legal status: joint custody under HC01 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Hwang Eunseol · HC01 audit in attendance
+- Maintenance: chief maintainer Hwang Eun-seol · HC01 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Mapo sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K221 custodian, HC01 steward_house, K290 work_peer
+- Relations: custodian K221, steward house HC01, work peer K290
 
 On the turnback line of Mapo, Port Crane (Crane) logged its entry in the HC01 duty log.
 
-Hwang Eunseol checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Hwang Eun-seol checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the loading-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47525,22 +47744,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0248"></a>
 
-## V10 · Dock Shuttle (Dock) (Dock)
+## V10 · Dock Shuttle (Dock)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
 - Custody and legal status: joint custody under HC02 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Hwang Serin · HC02 audit in attendance
+- Maintenance: chief maintainer Hwang Se-rin · HC02 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yeouido Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K247 custodian, HC02 steward_house, K297 work_peer
+- Relations: custodian K247, steward house HC02, work peer K297
 
 In the loading bay of the Yeouido Line, Dock Shuttle (Dock) logged its entry in the HC02 duty log.
 
-Hwang Serin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Hwang Se-rin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the inspection-pit alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47548,7 +47767,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0254"></a>
 
-## V11 · Night Dispatch (Yabae) (Yabae)
+## V11 · Night Dispatch (Yabae)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -47559,11 +47778,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gangnam Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K273 custodian, HC03 steward_house, K304 work_peer
+- Relations: custodian K273, steward house HC03, work peer K304
 
 In the inspection pit of the Gangnam Line, Night Dispatch (Yabae) logged its entry in the HC03 duty log.
 
-Jo Uchan checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Jo U-chan checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47571,22 +47790,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0260"></a>
 
-## V12 · Heavy-Equipment Arm (Jungpal) (Jungpal)
+## V12 · Heavy-Equipment Arm (Jungpal)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
 - Custody and legal status: joint custody under HC04 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Jeon Miri · HC04 audit in attendance
+- Maintenance: chief maintainer Jeon Mi-ri · HC04 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Jamsil Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K298 custodian, HC04 steward_house, K311 work_peer
+- Relations: custodian K298, steward house HC04, work peer K311
 
 At the charging slot of the Jamsil Line, Heavy-Equipment Arm (Jungpal) logged its entry in the HC04 duty log.
 
-Jeon Miri checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Jeon Mi-ri checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the turnback-line alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47594,22 +47813,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0266"></a>
 
-## V13 · Tunnel Track Maintenance (Boseon) (Boseon)
+## V13 · Tunnel Track Maintenance (Boseon)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
 - Custody and legal status: joint custody under HC05 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Eun Chaeyun · HC05 audit in attendance
+- Maintenance: chief maintainer Eun Chae-yun · HC05 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Dongdaemun sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K324 custodian, HC05 steward_house, K318 work_peer
+- Relations: custodian K324, steward house HC05, work peer K318
 
 On the turnback line of Dongdaemun, Tunnel Track Maintenance (Boseon) logged its entry in the HC05 duty log.
 
-Eun Chaeyun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Eun Chae-yun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the loading-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47617,22 +47836,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0272"></a>
 
-## V14 · Bridge Inspection (Gyoryang) (Gyoryang)
+## V14 · Bridge Inspection (Gyoryang)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
 - Custody and legal status: joint custody under HC06 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer An Gijun · HC06 audit in attendance
+- Maintenance: chief maintainer An Gi-jun · HC06 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seongbuk Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K350 custodian, HC06 steward_house, K326 work_peer
+- Relations: custodian K350, steward house HC06, work peer K326
 
 In the loading bay of the Seongbuk Line, Bridge Inspection (Gyoryang) logged its entry in the HC06 duty log.
 
-An Gijun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+An Gi-jun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the inspection-pit alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47640,22 +47859,22 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0278"></a>
 
-## V15 · Sluice-Gate Cart (Sumun) (Sumun)
+## V15 · Sluice-Gate Cart (Sumun)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
 - Custody and legal status: joint custody under HC07 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Ra Jinu · HC07 audit in attendance
+- Maintenance: chief maintainer Ra Jin-u · HC07 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Myeongdong sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K375 custodian, HC07 steward_house, K333 work_peer
+- Relations: custodian K375, steward house HC07, work peer K333
 
 In the inspection pit of Myeongdong, Sluice-Gate Cart (Sumun) logged its entry in the HC07 duty log.
 
-Ra Jinu checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Ra Jin-u checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47663,27 +47882,37 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0284"></a>
 
-## V16 · Emergency Tow (Bigyeon) (Bigyeon)
+## V16 · Emergency Tow (Bigyeon)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
 - Custody and legal status: joint custody under HC08 · seal witnessed by citizens · three-party signature on transfer
 - Memory continuity: snapshots kept per shift only · long-term total memory forbidden · branch log required on fork
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
-- Maintenance: chief maintainer Gwak Eunjae · HC08 audit in attendance
+- Maintenance: chief maintainer Gwak Eun-jae · HC08 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Suseo Line sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K400 custodian, HC08 steward_house, K340 work_peer
+- Relations: custodian K400, steward house HC08, work peer K340
 
 At the charging slot of the Suseo Line, Emergency Tow (Bigyeon) logged its entry in the HC08 duty log.
 
-Gwak Eunjae checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Gwak Eun-jae checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the turnback-line alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
 ', '<a id="Synthetic-Actors-heading-0001"></a>
+
+서울에는 아직 생각하는 기계가 있다. 최초의 AI가 아니고, 그것을 대신해 말하지도 않는다. 인간형 골격과 시설 랙과 차량에 남은 일하는 인격이며, 그것에 기대는 가문과 기술자들이 계속 돌린다. 이 장부는 그 가운데 마흔여덟을 세 급으로 나누어 적는다. H는 인간형 골격, F는 고정 시설, V는 차량이다.
+
+## 인격을 돌보는 방식
+
+여기 적힌 인격은 모두 역의 다른 모든 것과 같은 결핍 속에 산다. 배터리는 갈아 끼우는 것이지 끝이 없는 것이 아니다. 마모 부품은 배급된다. 추위 속에서 전지는 따뜻한 방에서만 충전되고, 수리 시기는 기술자의 순번표가 정한다. 제 부품이 바닥나도, 배정받지 않은 시설의 제어권을 가져가는 인격은 허락되지 않는다.
+
+항목마다 기체, 보관, 기억 규칙, 전력, 주정비자, 작업을 감사하는 가문을 적는다. 보관은 사람을 소유하는 일이 아니다. 인격이 제 의사와 이어지는 기억과 동의할 능력을 보이면, 무엇으로 만들어졌는지가 아니라 사례마다 따로 판단한다. 보관 기록은 정비와 피해를 책임질 사람을 정하려고 둔다.
+
+제 몸에 기계 부품을 단 사람은 다른 규칙을 따른다. 그 규칙은 [사이버웨어와 희소성](/wiki/Cyberware-and-Scarcity/)에 있다. 역 생활에서 기계가 차지하는 자리는 [사람과 기체](/wiki/People-and-Machines/)에 있다.
 
 <a id="Synthetic-Actors-heading-0002"></a>
 
@@ -47698,9 +47927,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 수문 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K001 custodian, HC01 steward_house, K004 work_peer
+- 관계: 보관인 K001, 관리 가문 HC01, 작업 동료 K004
 
-수문 정비 벤치에서 한누리(누리)이 HC01 당직 로그에 출입을 남긴다.
+수문 정비 벤치에서 한누리(누리)가 HC01 당직 로그에 출입을 남긴다.
 
 한재목은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -47721,11 +47950,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 영등포선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K029 custodian, HC02 steward_house, K011 work_peer
+- 관계: 보관인 K029, 관리 가문 HC02, 작업 동료 K011
 
 영등포선 충전 칸에서 서린(린)이 HC02 당직 로그에 출입을 남긴다.
 
-강민서은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+강민서는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 관측 난간 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -47733,7 +47962,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0014"></a>
 
-## H03 · 이도 (이도)
+## H03 · 이도
 
 - 급: H
 - 기체: 인간형 보조 골격·교체형 손모듈·야간 시야 제한
@@ -47744,9 +47973,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 용산선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K057 custodian, HC03 steward_house, K018 work_peer
+- 관계: 보관인 K057, 관리 가문 HC03, 작업 동료 K018
 
-용산선 관측 난간에서 이도(이도)이 HC03 당직 로그에 출입을 남긴다.
+용산선 관측 난간에서 이도가 HC03 당직 로그에 출입을 남긴다.
 
 정호준은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -47767,7 +47996,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 뚝섬 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K086 custodian, HC04 steward_house, K025 work_peer
+- 관계: 보관인 K086, 관리 가문 HC04, 작업 동료 K025
 
 뚝섬 공구 벽에서 강별(별)이 HC04 당직 로그에 출입을 남긴다.
 
@@ -47790,9 +48019,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 광진선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K115 custodian, HC05 steward_house, K032 work_peer
+- 관계: 보관인 K115, 관리 가문 HC05, 작업 동료 K032
 
-광진선 정비 벤치에서 윤재(재)이 HC05 당직 로그에 출입을 남긴다.
+광진선 정비 벤치에서 윤재(재)가 HC05 당직 로그에 출입을 남긴다.
 
 배우진은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -47813,7 +48042,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 서울역 중앙 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K144 custodian, HC06 steward_house, K039 work_peer
+- 관계: 보관인 K144, 관리 가문 HC06, 작업 동료 K039
 
 서울역 중앙 충전 칸에서 박솔(솔)이 HC06 당직 로그에 출입을 남긴다.
 
@@ -47836,7 +48065,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 왕십리 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K169 custodian, HC07 steward_house, K046 work_peer
+- 관계: 보관인 K169, 관리 가문 HC07, 작업 동료 K046
 
 왕십리 관측 난간에서 정우람(우람)이 HC07 당직 로그에 출입을 남긴다.
 
@@ -47859,7 +48088,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 노량진선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K194 custodian, HC08 steward_house, K053 work_peer
+- 관계: 보관인 K194, 관리 가문 HC08, 작업 동료 K053
 
 노량진선 공구 벽에서 최다온(다온)이 HC08 당직 로그에 출입을 남긴다.
 
@@ -47882,11 +48111,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 마포 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K219 custodian, HC09 steward_house, K060 work_peer
+- 관계: 보관인 K219, 관리 가문 HC09, 작업 동료 K060
 
 마포 정비 벤치에서 조하람(하람)이 HC09 당직 로그에 출입을 남긴다.
 
-최지우은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+최지우는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -47905,7 +48134,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 여의도선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K245 custodian, HC10 steward_house, K067 work_peer
+- 관계: 보관인 K245, 관리 가문 HC10, 작업 동료 K067
 
 여의도선 충전 칸에서 윤새론(새론)이 HC10 당직 로그에 출입을 남긴다.
 
@@ -47928,9 +48157,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 강남선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K271 custodian, HC11 steward_house, K074 work_peer
+- 관계: 보관인 K271, 관리 가문 HC11, 작업 동료 K074
 
-강남선 관측 난간에서 김도하(도하)이 HC11 당직 로그에 출입을 남긴다.
+강남선 관측 난간에서 김도하(도하)가 HC11 당직 로그에 출입을 남긴다.
 
 이홍원은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -47951,11 +48180,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 잠실선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K296 custodian, HC12 steward_house, K081 work_peer
+- 관계: 보관인 K296, 관리 가문 HC12, 작업 동료 K081
 
 잠실선 공구 벽에서 이채온(채온)이 HC12 당직 로그에 출입을 남긴다.
 
-장세화은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+장세화는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -47974,11 +48203,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 동대문 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K322 custodian, HC13 steward_house, K089 work_peer
+- 관계: 보관인 K322, 관리 가문 HC13, 작업 동료 K089
 
-동대문 정비 벤치에서 한빛나(빛나)이 HC13 당직 로그에 출입을 남긴다.
+동대문 정비 벤치에서 한빛나(빛나)가 HC13 당직 로그에 출입을 남긴다.
 
-류은비은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+류은비는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -47997,7 +48226,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 성북선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K348 custodian, HC14 steward_house, K096 work_peer
+- 관계: 보관인 K348, 관리 가문 HC14, 작업 동료 K096
 
 성북선 충전 칸에서 오세림(세림)이 HC14 당직 로그에 출입을 남긴다.
 
@@ -48020,9 +48249,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 명동 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K373 custodian, HP01 steward_house, K103 work_peer
+- 관계: 보관인 K373, 관리 가문 HP01, 작업 동료 K103
 
-명동 관측 난간에서 배수아(수아)이 HP01 당직 로그에 출입을 남긴다.
+명동 관측 난간에서 배수아(수아)가 HP01 당직 로그에 출입을 남긴다.
 
 남윤경은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -48043,11 +48272,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 수서선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K398 custodian, HP02 steward_house, K110 work_peer
+- 관계: 보관인 K398, 관리 가문 HP02, 작업 동료 K110
 
 수서선 공구 벽에서 신태율(태율)이 HP02 당직 로그에 출입을 남긴다.
 
-정유라은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+정유라는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -48066,9 +48295,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 수문 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K002 custodian, HC09 steward_house, K117 work_peer
+- 관계: 보관인 K002, 관리 가문 HC09, 작업 동료 K117
 
-수문 기계실에서 냉각탑지기(탑지)이 HC09 당직 로그에 출입을 남긴다.
+수문 기계실에서 냉각탑지기(탑지)가 HC09 당직 로그에 출입을 남긴다.
 
 이서담은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -48078,7 +48307,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0104"></a>
 
-## F02 · 배전반이 (전반)
+## F02 · 배전반 (전반)
 
 - 급: F
 - 기체: 시설 고정 랙·센서 버스·현장 단말 연결
@@ -48089,11 +48318,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 영등포선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K030 custodian, HC10 steward_house, K124 work_peer
+- 관계: 보관인 K030, 관리 가문 HC10, 작업 동료 K124
 
-영등포선 배전반 앞에서 배전반이(전반)이 HC10 당직 로그에 출입을 남긴다.
+영등포선 배전반 앞에서 배전반(전반)이 HC10 당직 로그에 출입을 남긴다.
 
-정시우은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+정시우는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 필터 복도 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -48112,9 +48341,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 용산선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K058 custodian, HC11 steward_house, K131 work_peer
+- 관계: 보관인 K058, 관리 가문 HC11, 작업 동료 K131
 
-용산선 필터 복도에서 정수여과(여과)이 HC11 당직 로그에 출입을 남긴다.
+용산선 필터 복도에서 정수여과(여과)가 HC11 당직 로그에 출입을 남긴다.
 
 정하린은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -48135,7 +48364,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 뚝섬 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K087 custodian, HC12 steward_house, K138 work_peer
+- 관계: 보관인 K087, 관리 가문 HC12, 작업 동료 K138
 
 뚝섬 제어 부스에서 냉동창고(냉창)이 HC12 당직 로그에 출입을 남긴다.
 
@@ -48158,9 +48387,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 광진선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K116 custodian, HC13 steward_house, K146 work_peer
+- 관계: 보관인 K116, 관리 가문 HC13, 작업 동료 K146
 
-광진선 기계실에서 송신중계(중계)이 HC13 당직 로그에 출입을 남긴다.
+광진선 기계실에서 송신중계(중계)가 HC13 당직 로그에 출입을 남긴다.
 
 김우찬은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -48181,7 +48410,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 서울역 중앙 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K145 custodian, HC14 steward_house, K153 work_peer
+- 관계: 보관인 K145, 관리 가문 HC14, 작업 동료 K153
 
 서울역 중앙 배전반 앞에서 승강기축(승축)이 HC14 당직 로그에 출입을 남긴다.
 
@@ -48204,7 +48433,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 왕십리 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K170 custodian, HP01 steward_house, K160 work_peer
+- 관계: 보관인 K170, 관리 가문 HP01, 작업 동료 K160
 
 왕십리 필터 복도에서 보일러실(보일)이 HP01 당직 로그에 출입을 남긴다.
 
@@ -48227,11 +48456,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 노량진선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K195 custodian, HP02 steward_house, K167 work_peer
+- 관계: 보관인 K195, 관리 가문 HP02, 작업 동료 K167
 
-노량진선 제어 부스에서 하수펌프(하수)이 HP02 당직 로그에 출입을 남긴다.
+노량진선 제어 부스에서 하수펌프(하수)가 HP02 당직 로그에 출입을 남긴다.
 
-조민재은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+조민재는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 기계실 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -48250,11 +48479,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 마포 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K220 custodian, HP03 steward_house, K175 work_peer
+- 관계: 보관인 K220, 관리 가문 HP03, 작업 동료 K175
 
 마포 기계실에서 실험클린(클린)이 HP03 당직 로그에 출입을 남긴다.
 
-권미래은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+권미래는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -48273,9 +48502,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 여의도선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K246 custodian, HP04 steward_house, K182 work_peer
+- 관계: 보관인 K246, 관리 가문 HP04, 작업 동료 K182
 
-여의도선 배전반 앞에서 물류분류(분류)이 HP04 당직 로그에 출입을 남긴다.
+여의도선 배전반 앞에서 물류분류(분류)가 HP04 당직 로그에 출입을 남긴다.
 
 신보람은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -48296,7 +48525,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 강남선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K272 custodian, HP05 steward_house, K189 work_peer
+- 관계: 보관인 K272, 관리 가문 HP05, 작업 동료 K189
 
 강남선 필터 복도에서 전력변압(변압)이 HP05 당직 로그에 출입을 남긴다.
 
@@ -48319,9 +48548,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 잠실선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K297 custodian, HP06 steward_house, K197 work_peer
+- 관계: 보관인 K297, 관리 가문 HP06, 작업 동료 K197
 
-잠실선 제어 부스에서 환기덕트(덕트)이 HP06 당직 로그에 출입을 남긴다.
+잠실선 제어 부스에서 환기덕트(덕트)가 HP06 당직 로그에 출입을 남긴다.
 
 안도한은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -48342,11 +48571,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 동대문 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K323 custodian, HP07 steward_house, K204 work_peer
+- 관계: 보관인 K323, 관리 가문 HP07, 작업 동료 K204
 
 동대문 기계실에서 의료멸균(멸균)이 HP07 당직 로그에 출입을 남긴다.
 
-심달호은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+심달호는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -48365,9 +48594,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 성북선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K349 custodian, HP08 steward_house, K211 work_peer
+- 관계: 보관인 K349, 관리 가문 HP08, 작업 동료 K211
 
-성북선 배전반 앞에서 인쇄기동(인쇄)이 HP08 당직 로그에 출입을 남긴다.
+성북선 배전반 앞에서 인쇄기동(인쇄)가 HP08 당직 로그에 출입을 남긴다.
 
 문하율은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -48388,11 +48617,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 명동 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K374 custodian, HP09 steward_house, K218 work_peer
+- 관계: 보관인 K374, 관리 가문 HP09, 작업 동료 K218
 
 명동 필터 복도에서 급수계량(계량)이 HP09 당직 로그에 출입을 남긴다.
 
-은태호은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+은태호는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 제어 부스 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -48411,7 +48640,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 수서선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K399 custodian, HP10 steward_house, K225 work_peer
+- 관계: 보관인 K399, 관리 가문 HP10, 작업 동료 K225
 
 수서선 제어 부스에서 터널환기(터환)이 HP10 당직 로그에 출입을 남긴다.
 
@@ -48434,7 +48663,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 수문 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K003 custodian, HP03 steward_house, K232 work_peer
+- 관계: 보관인 K003, 관리 가문 HP03, 작업 동료 K232
 
 수문 회차선에서 새벽호송(새벽)이 HP03 당직 로그에 출입을 남긴다.
 
@@ -48457,7 +48686,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 영등포선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K031 custodian, HP04 steward_house, K239 work_peer
+- 관계: 보관인 K031, 관리 가문 HP04, 작업 동료 K239
 
 영등포선 적재 베이에서 순환버스(순환)이 HP04 당직 로그에 출입을 남긴다.
 
@@ -48480,11 +48709,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 용산선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K059 custodian, HP05 steward_house, K247 work_peer
+- 관계: 보관인 K059, 관리 가문 HP05, 작업 동료 K247
 
 용산선 점검 피트에서 화물트램(트램)이 HP05 당직 로그에 출입을 남긴다.
 
-최은재은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+최은재는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -48503,11 +48732,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 뚝섬 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K088 custodian, HP06 steward_house, K254 work_peer
+- 관계: 보관인 K088, 관리 가문 HP06, 작업 동료 K254
 
-뚝섬 충전 슬롯에서 구경로봇(구경로)이 HP06 당직 로그에 출입을 남긴다.
+뚝섬 충전 슬롯에서 구경로봇(구경로)가 HP06 당직 로그에 출입을 남긴다.
 
-한소미은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+한소미는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -48526,7 +48755,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 광진선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K117 custodian, HP07 steward_house, K261 work_peer
+- 관계: 보관인 K117, 관리 가문 HP07, 작업 동료 K261
 
 광진선 회차선에서 레일견인(견인)이 HP07 당직 로그에 출입을 남긴다.
 
@@ -48549,7 +48778,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 서울역 중앙 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K146 custodian, HP08 steward_house, K268 work_peer
+- 관계: 보관인 K146, 관리 가문 HP08, 작업 동료 K268
 
 서울역 중앙 적재 베이에서 배전트럭(배전)이 HP08 당직 로그에 출입을 남긴다.
 
@@ -48572,9 +48801,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 왕십리 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K171 custodian, HP09 steward_house, K276 work_peer
+- 관계: 보관인 K171, 관리 가문 HP09, 작업 동료 K276
 
-왕십리 점검 피트에서 청소차륜(청소)이 HP09 당직 로그에 출입을 남긴다.
+왕십리 점검 피트에서 청소차륜(청소)가 HP09 당직 로그에 출입을 남긴다.
 
 에바 노바코바는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -48595,11 +48824,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 노량진선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K196 custodian, HP10 steward_house, K283 work_peer
+- 관계: 보관인 K196, 관리 가문 HP10, 작업 동료 K283
 
 노량진선 충전 슬롯에서 구급카트(구급)이 HP10 당직 로그에 출입을 남긴다.
 
-윤서하은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+윤서하는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -48618,7 +48847,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 마포 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K221 custodian, HC01 steward_house, K290 work_peer
+- 관계: 보관인 K221, 관리 가문 HC01, 작업 동료 K290
 
 마포 회차선에서 항만크레인(크레인)이 HC01 당직 로그에 출입을 남긴다.
 
@@ -48641,9 +48870,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 여의도선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K247 custodian, HC02 steward_house, K297 work_peer
+- 관계: 보관인 K247, 관리 가문 HC02, 작업 동료 K297
 
-여의도선 적재 베이에서 도크셔틀(도크)이 HC02 당직 로그에 출입을 남긴다.
+여의도선 적재 베이에서 도크셔틀(도크)가 HC02 당직 로그에 출입을 남긴다.
 
 황세린은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -48664,9 +48893,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 강남선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K273 custodian, HC03 steward_house, K304 work_peer
+- 관계: 보관인 K273, 관리 가문 HC03, 작업 동료 K304
 
-강남선 점검 피트에서 야간배차(야배)이 HC03 당직 로그에 출입을 남긴다.
+강남선 점검 피트에서 야간배차(야배)가 HC03 당직 로그에 출입을 남긴다.
 
 조우찬은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -48687,11 +48916,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 잠실선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K298 custodian, HC04 steward_house, K311 work_peer
+- 관계: 보관인 K298, 관리 가문 HC04, 작업 동료 K311
 
 잠실선 충전 슬롯에서 중장비팔(중팔)이 HC04 당직 로그에 출입을 남긴다.
 
-전미리은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+전미리는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -48710,7 +48939,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 동대문 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K324 custodian, HC05 steward_house, K318 work_peer
+- 관계: 보관인 K324, 관리 가문 HC05, 작업 동료 K318
 
 동대문 회차선에서 터널보선(보선)이 HC05 당직 로그에 출입을 남긴다.
 
@@ -48733,7 +48962,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 성북선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K350 custodian, HC06 steward_house, K326 work_peer
+- 관계: 보관인 K350, 관리 가문 HC06, 작업 동료 K326
 
 성북선 적재 베이에서 교량점검(교량)이 HC06 당직 로그에 출입을 남긴다.
 
@@ -48756,11 +48985,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 명동 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K375 custodian, HC07 steward_house, K333 work_peer
+- 관계: 보관인 K375, 관리 가문 HC07, 작업 동료 K333
 
 명동 점검 피트에서 수문카트(수문)이 HC07 당직 로그에 출입을 남긴다.
 
-라진우은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+라진우는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -48779,11 +49008,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
 - 창발 목표: 수서선 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
-- 관계: K400 custodian, HC08 steward_house, K340 work_peer
+- 관계: 보관인 K400, 관리 가문 HC08, 작업 동료 K340
 
 수서선 충전 슬롯에서 비상견인(비견)이 HC08 당직 로그에 출입을 남긴다.
 
-곽은재은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
+곽은재는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
@@ -51114,10 +51343,222 @@ This document is being written.
 
 이 문서는 작성 중이다.
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Cyberware-and-Scarcity', 'Cyberware and Scarcity', '사이버웨어와 희소성', 'technology', 1, '# Cyberware and Scarcity
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Cyberware-and-Scarcity', 'Cyberware and Scarcity', '사이버웨어와 희소성', 'technology', 1, '
+Cyberware is living technology in Seoul. Machine hands close, machine eyes see, and a replaced leg carries a porter down the frozen stairs every morning. None of it is rare because it doesn''t work. It''s rare because every part needs upkeep, power and spares, and someone has to hold all three.
 
-This document is being written.
-', '# 사이버웨어와 희소성
+The old world dreamed of a body that could be rebuilt piece by piece: an arm stronger than bone, an eye that sees in the dark, a spine wired to take whatever came next. Seoul inherited that dream as hardware. What it didn''t inherit was the factories, the clinics on every corner or the cheap power. So the dream survives, but it has a price, and the price is paid every week.
 
-이 문서는 작성 중이다.
+This page sets out where a part can go, who can fit one, what it takes to keep it working, and what it costs the person who carries it. The last section covers drones and modern arms, which live under the same rules.
+
+## Where a Part Goes
+
+People in the stations talk about the body in six places: the head, the torso, the left arm, the right arm, the left leg and the right leg. Injury and sickness are counted the same way, so a machine part replaces or sits inside one of those six.
+
+| Place | What gets replaced or added | What it usually needs |
+|---|---|---|
+| Head and senses | An eye that sees in low light, a hearing aid set into the bone, a jaw rebuilt after a fall | A charged cell, a clean seal at the skin, a technician who knows that model |
+| Spine and nerves | A base implant at the neck or the back that carries signals to other parts | Major surgery, a sterile room and steady power. Most other powered parts won''t work without it |
+| Arms and hands | A whole arm, a hand, or fingers for fine work | A socket fixed to the bone, regular repair, a cell for powered models |
+| Legs | A leg below the knee, a whole leg, or a reinforced foot | A socket fixed to the bone, joint parts, weekly checks after long walks |
+| Torso and organs | A pump that helps a failing heart, a filter that helps a lung | Constant power and the most careful upkeep of all |
+| Skin and skeleton | Plating over the ribs, braces along the long bones | Major surgery, and a body strong enough to carry the extra weight |
+
+Two rules shape the whole table.
+
+First, some parts stand on others. A powered hand that answers to thought needs the base implant along the spine. Whoever can fit that base controls what can be added later, so it''s the most guarded work there is.
+
+Second, simple beats clever over time. A hand driven by the body''s own pull on a cable needs no charge and can be fixed with a file and a spare spring. A powered hand does more, but it dies with its cell. Many porters and pump workers choose the simple one on purpose.
+
+## Who Fits It
+
+Fitting a part takes three kinds of room. A fitting room can attach an outer part to an existing socket or swap a hand. A surgery can set a socket into bone. Only a sterile room with steady power can place a base implant or work on the torso. Sterile rooms are few, and each one belongs to somebody.
+
+### The Government: State Clinics and the Registry
+
+North of the river, the Government recognises only the people in its ledgers. Cyberware follows the same line. The Government''s clinics sit in the larger stations, and each one works under the Senator who holds that district. A person in the ledgers can be granted a part, and the grant is written in the registry beside their name, their work and their household.
+
+The registry is how the Government knows who carries what. Every part on the list is tracked through repair and return. When a registered worker dies, the part goes back to the clinic. Someone outside the ledgers has no claim on any clinic, and a part fitted elsewhere doesn''t appear in the registry at all. People call that kind of metal unlisted, and an unlisted part makes its carrier a person the Government doesn''t see.
+
+### The Free City: Guild Surgeons and Markets
+
+In the southwest, most people are engineers who trade materials and skill. Cyberware is part of that trade. Surgeons there belong to guilds of their own trade, learn from a parent or a master, and sell their work like any other repair. Parts move through the markets of the cities: new-looking ones salvaged from sealed stores, secondhand ones taken from the dead, and rebuilt ones that are mostly patches.
+
+The market is open, which is its strength and its danger. Anyone who can pay can be fitted. But a secondhand hand may have a cracked socket, a rebuilt eye may run hot, and nobody in the market is obliged to take a bad part back. A careful buyer pays a guild surgeon they know rather than the cheapest stall.
+
+### The Arc: Baptism
+
+In Gangnam, the faithful replace parts of the body with machines, and that is baptism. In the Arc, faith is counted by the number of implanted parts. The first twelve were baptised around 2117, and since then a part in the body has meant something more than a repair.
+
+Because a part is a sign of faith, the Arc puts its resources into bodies first. Its people fit, maintain and replace parts for the faithful. What happens inside the Arc beyond that is the Arc''s own business, and it doesn''t share it with outsiders.
+
+## Keeping It Working
+
+A fitted part isn''t finished. It''s the start of an upkeep that lasts as long as the person does.
+
+### Maintenance
+
+Most limbs need repair once or twice a year and replacement every couple of years, sooner for people who climb, haul or fight. Every station that relies on machine bodies keeps a repair queue, and a place near the front of it is worth more than a week of rations. Technicians are few and train mostly their own children, so the queue gets longer as the population shrinks.
+
+### Power
+
+A powered part runs on a cell, and the cell is the weak point. A powered hand usually lasts a long working day on one charge. In deep cold, cells lose their charge fast, and many can''t be charged safely below freezing at all. People carry spare cells inside their clothes against their bodies and charge them in the warmest rooms of the station. In a winter that never ends, a powered part is only as good as the warm place where its cell waits.
+
+### Spare Parts
+
+Nothing new is made in any number. Every joint, seal and cell comes from salvage, from a store or from another body. A part that can''t be serviced is a burden. The stations learned that the hard way, and the people who hold the stores and the salvage routes decide who keeps moving.
+
+## What It Costs
+
+### The Body
+
+Where metal passes through skin, there''s a wound that never quite closes. It has to be cleaned every day. Infection is the commonest danger, and the medicine that treats it is rationed like water. A bad infection can cost the part, and sometimes the limb above it. Heavy parts strain the bones that hold them, and a socket that turns under load has to come out.
+
+### The Mind
+
+The cost doesn''t stop at the body. People who''ve replaced a hand rarely change. People who''ve replaced most of themselves often say the world feels farther away, that warmth and touch arrive late, that they''ve stopped minding things they used to mind. The change builds up with each part. Taking parts out helps some people a little, but not all, and not completely. Families watch for it, and most stations treat it as a reason to slow down rather than as a disease.
+
+### The Debt
+
+Every part ties its carrier to whoever keeps it running. In the north, that''s the clinic and the registry. In the southwest, it''s a surgeon''s account in a market. In the Arc, it''s the faith. Nobody in Seoul owns a machine body outright. They hold it on terms.
+
+## Drones and Arms Under Scarcity
+
+Seoul has fewer people every generation, and the winter doesn''t end. Even so, modern equipment, drones and firearms still work. They''re scarce because what they eat is scarce, not because they''ve stopped working.
+
+### Firearms
+
+Rifles, pistols and shotguns came down into the stations with the people who carried them, and they still fire. What runs short is ammunition. Brass casings can be picked up and filled again many times, but the primer and the powder are spent once, and the primer is the hardest part to make. A station that can recover brass, cast bullets and get primers decides how often its guns speak.
+
+### Drones
+
+Small drones still scout station exits and watch the tunnels. Their limit is the cell, and cold makes it worse, so drones are kept warm, flown briefly and brought back down. Radio drones can be jammed. A drone that unspools a fine cable behind it can''t be jammed, but it''s tied to the length of its line, which suits the tunnels better than the open surface. Against drones from the other side, the cheapest defence works best: nets and wire over the exits, so a diving machine tangles before it reaches anyone.
+
+The machines outside Seoul still fly on their last orders. People who go far on the surface keep that in mind.
+
+### Each Faction''s Bottleneck
+
+| Faction | What runs out first | What that means |
+|---|---|---|
+| Government | Ammunition and fuel | The more guns and armoured vehicles it fields, the faster the stores empty |
+| Free City | Cells and machine parts | Drones and repairs tie up every charged cell and spare joint |
+| Arc | Implant parts and medicine | Its baptised fighters are strong, but when parts stop coming they weaken together |
+
+## Related Pages
+
+- [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
+- [Lost Technology](/wiki/Lost-Technology-Lineage/)
+- [People and Machines](/wiki/People-and-Machines/)
+- [Synthetic Social Personas](/wiki/Synthetic-Actors/)
+- [Ailments and Symptoms](/wiki/Ailments/)
+- [The Three Factions of Seoul](/wiki/Sixteen-States/)
+- [Century Annals](/wiki/Century-Annals/)
+', '
+서울에서 사이버웨어는 살아 있는 기술이다. 기계 손은 쥐고, 기계 눈은 보고, 바꿔 단 다리는 아침마다 얼어붙은 계단으로 짐꾼을 실어 나른다. 귀한 까닭은 작동하지 않아서가 아니다. 부품마다 정비와 전력과 예비 부품이 필요하고, 누군가 그 셋을 쥐고 있어야 하기 때문이다.
+
+옛 세계는 몸을 한 부분씩 다시 지을 수 있다는 꿈을 꾸었다. 뼈보다 강한 팔, 어둠 속에서 보는 눈, 무엇이든 더 붙일 수 있게 배선한 척추. 서울은 그 꿈을 기계로 물려받았다. 물려받지 못한 것은 공장과 길모퉁이마다 있던 시술소와 값싼 전기다. 그래서 꿈은 살아 있지만 값이 붙어 있고, 그 값은 매주 치른다.
+
+이 문서는 부품이 몸 어디에 들어가는지, 누가 달아 주는지, 계속 돌리려면 무엇이 드는지, 지닌 사람에게 무엇을 치르게 하는지를 적는다. 마지막 절은 같은 규칙 아래 있는 드론과 현대 무기를 다룬다.
+
+## 부품이 들어가는 자리
+
+역 사람들은 몸을 여섯 곳으로 나누어 말한다. 머리, 몸통, 왼팔, 오른팔, 왼다리, 오른다리다. 부상과 병도 같은 방식으로 세니, 기계 부품도 이 여섯 가운데 하나를 대신하거나 그 안에 들어간다.
+
+| 자리 | 바꾸거나 더하는 것 | 대개 필요한 것 |
+|---|---|---|
+| 머리와 감각 | 어두운 곳에서 보는 눈, 뼈에 심은 보청 장치, 추락 뒤에 다시 만든 턱 | 충전된 전지, 피부 경계의 깨끗한 봉합, 그 모델을 아는 기술자 |
+| 척추와 신경 | 목이나 등에 심어 다른 부품으로 신호를 보내는 받침 이식 | 큰 수술, 무균실, 끊기지 않는 전력. 다른 전동 부품 대부분은 이것 없이 돌지 않는다 |
+| 팔과 손 | 팔 전체, 손, 섬세한 일을 하는 손가락 | 뼈에 고정한 소켓, 정기 수리, 전동 모델이면 전지 |
+| 다리 | 무릎 아래, 다리 전체, 보강한 발 | 뼈에 고정한 소켓, 관절 부품, 먼 길을 걸은 뒤 주마다 하는 점검 |
+| 몸통과 장기 | 약해진 심장을 돕는 펌프, 폐를 돕는 필터 | 끊기지 않는 전력과 가장 꼼꼼한 정비 |
+| 피부와 골격 | 갈비뼈를 덮는 판, 긴 뼈를 따라 대는 보강대 | 큰 수술, 늘어난 무게를 견딜 만큼 튼튼한 몸 |
+
+표 전체를 두 규칙이 정한다.
+
+첫째, 어떤 부품은 다른 부품 위에 선다. 생각에 따라 움직이는 전동 손은 척추의 받침 이식이 있어야 한다. 받침을 달 수 있는 사람이 나중에 무엇을 더 붙일지 정하니, 이것이 가장 단단히 지키는 일이다.
+
+둘째, 오래 가면 단순한 쪽이 이긴다. 몸이 줄을 당기는 힘으로 움직이는 손은 충전이 필요 없고 줄과 여분 용수철로 고친다. 전동 손은 더 많은 일을 하지만 전지와 함께 멈춘다. 짐꾼과 펌프 일꾼 가운데 많은 이가 일부러 단순한 손을 고른다.
+
+## 누가 달아 주는가
+
+부품을 다는 데는 세 가지 방이 필요하다. 부착실에서는 이미 있는 소켓에 바깥 부품을 붙이거나 손을 갈아 끼운다. 수술실에서는 뼈에 소켓을 심는다. 받침 이식이나 몸통 수술은 전력이 안정된 무균실에서만 한다. 무균실은 몇 곳 없고, 모두 주인이 있다.
+
+### 정부: 국가 시술소와 등록부
+
+강 북쪽의 정부는 자기 장부에 오른 사람만 국민으로 인정한다. 사이버웨어도 같은 선을 따른다. 정부 시술소는 큰 역에 있고, 저마다 그 구를 쥔 상원의원 아래에서 일한다. 장부에 오른 사람은 부품을 받을 수 있으며, 그 사실은 이름과 생업과 가구 옆에 등록부로 적힌다.
+
+정부는 등록부로 누가 무엇을 지녔는지 안다. 목록에 오른 부품은 수리와 반납까지 추적된다. 등록된 일꾼이 죽으면 부품은 시술소로 돌아간다. 장부 밖 사람은 어느 시술소에도 청구할 권리가 없고, 다른 곳에서 단 부품은 등록부에 아예 오르지 않는다. 사람들은 그런 쇠를 장부 밖 쇠라 부르고, 그것을 지닌 사람은 정부가 보지 않는 사람이 된다.
+
+### 자유도시: 조합 집도의와 장터
+
+남서쪽 주민 대부분은 물자와 기술을 주고받는 엔지니어다. 사이버웨어도 그 거래의 일부다. 그곳 집도의는 같은 일을 하는 사람들의 조합에 속하고, 부모나 스승에게 배우며, 다른 수리처럼 자기 솜씨를 판다. 부품은 도시들의 장터를 돌아다닌다. 봉인 창고에서 꺼낸 새것 같은 부품, 죽은 사람에게서 떼어 낸 중고, 거의 땜질로만 된 재생품이 섞여 있다.
+
+장터는 열려 있다. 그것이 강점이자 위험이다. 값을 치를 수 있으면 누구나 단다. 그러나 중고 손은 소켓에 금이 갔을 수 있고, 재생한 눈은 뜨겁게 돌 수 있으며, 장터의 누구도 나쁜 부품을 되돌려 받을 의무가 없다. 조심스러운 사람은 가장 싼 좌판보다 아는 조합 집도의에게 값을 치른다.
+
+### 아크: 세례
+
+강남의 신도는 몸의 부위를 기계로 바꾼다. 이것이 세례다. 아크에서는 신앙을 이식한 부위 수로 센다. 2117년 무렵 첫 열두 명이 세례를 받은 뒤로, 몸 안의 부품은 수리 이상의 뜻을 갖게 되었다.
+
+부품이 신앙의 표시이므로 아크는 자원을 먼저 몸에 쓴다. 아크 사람들은 신도의 부품을 달고, 돌보고, 바꾼다. 그 너머 아크 안에서 하는 일은 아크의 일이며, 바깥 사람에게 나누지 않는다.
+
+## 계속 돌리는 일
+
+단 부품은 끝이 아니다. 사람이 사는 동안 이어지는 정비의 시작이다.
+
+### 정비
+
+팔다리 대부분은 한 해에 한두 번 수리하고 두어 해마다 바꾼다. 오르내리고, 짐을 끌고, 싸우는 사람은 더 자주다. 기계 몸에 기대는 역마다 수리 순번표가 있고, 그 앞자리는 한 주치 배급보다 값지다. 기술자는 드물고 주로 제 자식을 가르치니, 인구가 줄수록 순번은 길어진다.
+
+### 전력
+
+전동 부품은 전지로 돌고, 전지가 약점이다. 전동 손은 한 번 충전으로 대개 긴 하루 일을 버틴다. 혹한에서는 전지가 빨리 닳고, 많은 전지는 영하에서 안전하게 충전할 수조차 없다. 사람들은 여분 전지를 옷 안 몸 가까이에 품고 역에서 가장 따뜻한 방에서 충전한다. 끝나지 않는 겨울에서 전동 부품은 그 전지가 기다리는 따뜻한 자리만큼만 쓸모 있다.
+
+### 예비 부품
+
+새로 만드는 것은 거의 없다. 관절, 봉합재, 전지 하나하나가 회수품이나 창고나 다른 몸에서 나온다. 정비할 수 없는 부품은 짐이 된다. 역들은 그것을 어렵게 배웠고, 창고와 회수 경로를 쥔 사람이 누가 계속 움직일지 정한다.
+
+## 치르는 값
+
+### 몸
+
+쇠가 피부를 지나는 곳에는 끝내 다 아물지 않는 상처가 있다. 날마다 씻어야 한다. 가장 흔한 위험은 감염이고, 그것을 다스리는 약은 물처럼 배급된다. 심한 감염은 부품을, 때로는 그 위의 팔다리까지 앗아 간다. 무거운 부품은 그것을 받치는 뼈를 혹사하고, 하중에 돌아가는 소켓은 빼내야 한다.
+
+### 마음
+
+값은 몸에서 그치지 않는다. 손 하나를 바꾼 사람은 좀처럼 달라지지 않는다. 몸 대부분을 바꾼 사람은 세상이 멀어진 것 같다고, 온기와 촉감이 늦게 닿는다고, 예전엔 마음 쓰던 일에 더는 마음이 가지 않는다고 자주 말한다. 이 변화는 부품마다 쌓인다. 부품을 빼면 조금 나아지는 사람도 있지만 모두가 그렇지는 않고, 다 돌아오지도 않는다. 가족은 그 조짐을 지켜보고, 역 대부분은 그것을 병이 아니라 속도를 늦출 까닭으로 여긴다.
+
+### 빚
+
+부품마다 그것을 지닌 사람을 계속 돌려 주는 쪽에 묶는다. 북쪽에서는 시술소와 등록부, 남서쪽에서는 장터 집도의의 외상 장부, 아크에서는 신앙이다. 서울에서 기계 몸을 온전히 제 것으로 가진 사람은 없다. 조건을 달고 지닐 뿐이다.
+
+## 결핍 속의 드론과 무기
+
+서울 인구는 세대마다 줄고, 겨울은 끝나지 않는다. 그래도 현대 장비와 드론과 화기는 여전히 작동한다. 귀한 것은 고장 나서가 아니라 그것이 먹는 것이 귀해서다.
+
+### 화기
+
+소총과 권총과 산탄총은 들고 내려온 사람들과 함께 역으로 들어왔고 지금도 발사된다. 모자라는 것은 탄약이다. 황동 탄피는 주워서 여러 번 다시 채울 수 있지만 뇌관과 장약은 한 번 쓰면 끝이고, 뇌관이 가장 만들기 어렵다. 탄피를 회수하고, 탄두를 녹여 붓고, 뇌관을 구할 수 있는 역이 제 총을 얼마나 자주 쏠지 정한다.
+
+### 드론
+
+작은 드론은 지금도 역 출구를 정찰하고 터널을 지켜본다. 한계는 전지이고, 추위가 그것을 더 나쁘게 만든다. 그래서 드론은 따뜻하게 두었다가 짧게 날리고 다시 내린다. 전파로 조종하는 드론은 방해를 받는다. 뒤로 가는 줄을 풀며 나는 드론은 방해를 받지 않지만 줄 길이에 묶이니, 열린 지상보다 터널에 맞는다. 상대 드론을 막는 데는 가장 싼 방법이 가장 잘 듣는다. 출구 위에 그물과 철망을 쳐서 내리꽂는 기계가 사람에게 닿기 전에 엉키게 한다.
+
+서울 밖의 기계는 마지막 명령을 따라 지금도 난다. 지상을 멀리 가는 사람은 그것을 잊지 않는다.
+
+### 세력마다 먼저 바닥나는 것
+
+| 세력 | 먼저 바닥나는 것 | 뜻 |
+|---|---|---|
+| 정부 | 탄약과 연료 | 총과 장갑차를 많이 굴릴수록 창고가 빨리 빈다 |
+| 자유도시 | 전지와 기계 부품 | 드론과 수리가 충전된 전지와 여분 관절을 모두 묶어 둔다 |
+| 아크 | 이식 부품과 의약품 | 세례받은 전사는 강하지만 부품이 끊기면 함께 약해진다 |
+
+## 관련 문서
+
+- [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)
+- [잃어버린 기술](/wiki/Lost-Technology-Lineage/)
+- [사람과 기체](/wiki/People-and-Machines/)
+- [합성 사회 인격](/wiki/Synthetic-Actors/)
+- [질병과 증상](/wiki/Ailments/)
+- [서울의 세 세력](/wiki/Sixteen-States/)
+- [서울전국 연표](/wiki/Century-Annals/)
 ');

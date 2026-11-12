@@ -1,66 +1,74 @@
 ---
-model: cpa/glm-5.3 (original and script edits); one-sentence removal and table-note trimming by cpa/claude-sonnet-5-5 by hand; 0 completion calls; not from a Gemini model
+title: The Arms and Technology of This Era
+title_ko: 이 시대의 기술과 무구
+model: claude-opus; rewritten by hand by the task 8 executor agent; 0 completion calls
+section_checkpoint: complete
 ---
 
-A. Status of the equipment classification
+In 2026, Seoul had work tools, police equipment and military arms, along with drones, humanoid machines and machine parts for the body. All of it came down into the stations after the Great Blackout. A century later most of it still works. What changed is that almost nothing new is made, so every round, cell and spare part has to come from somewhere that already exists.
 
-Seoul had trade tools, police equipment, and military equipment in 2026. After the Great Blackout, mechanics repaired surviving tools and recovered machine parts. Modern and future weapons, humanoids, and machines survive the Great Blackout. In an age of scarcity their numbers, ammunition, and parts run short, and they are dear.
+Modern and future weapons exist in 2126, and so do humanoids and machines. They're scarce, not gone. The question in any station isn't whether a rifle works, but whether there are rounds for it and someone who can fix it.
 
 <a id="한-세기가-지난-손"></a>
 
 ## Equipment Used Across a Century
 
-A. Chronology and equipment
+### From 2026 to 2126
 
-In the Great Blackout, around 2026, Yeongdeungpo waterworks staff operated valves manually after remote control failed. The generation of 2126 repairs and uses tools and equipment inherited from that time.
+On the night of the Great Blackout, around 2026, the duty staff at the Yeongdeungpo water purification centre lost remote control and turned the valves by hand. That habit of keeping old equipment working by hand runs through the whole century. The generation of 2126 still repairs and uses the tools and plant of that time.
 
-B. Firearms regulation and remnants
+### Firearms Then and Now
 
-The 2026 firearms law required permits for firearms and crossbows. K-series small arms also existed at the time.
+In 2026 firearms and crossbows were licensed under South Korean law, and the armed forces carried domestically made small arms. Civilians didn't carry guns as a matter of course. After the Blackout those weapons went wherever their carriers went. Rifles, pistols and shotguns still fire in 2126. Ammunition is what runs short: brass casings can be refilled, but primers and powder are spent once, and primers are the hardest thing to replace.
 
-C. Reuse of robot parts
+### Drones and Machines
 
-After the Great Blackout, factory robots lost their call network. Mechanics repaired surviving hoses, terminals, and lenses.
+Drones came out of storerooms, police stations and depots, and they still scout exits and watch tunnels on short flights. Factory robots lost the networks that called them. Technicians took the hoses, terminals and lenses they could reuse, and kept a few whole machines moving. Machine body parts survived the same way, and they follow the same rule: they work as long as someone can service them. That rule is set out in [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/).
 
-## Surviving Armaments: Function, Ownership, Access
+## Surviving Arms: Function, Ownership, Access
 
-A. Equipment and the surviving records
+### Equipment and What It Needs
 
-| Equipment | Function | Pre-collapse legal · civilian ownership | Post-collapse access | Consumption · repair · supply | Holding condition | Source |
-|---|---|---|---|---|---|---|
-| K2 / K2C1 | Service rifle | ROK line. Not a civilian retail good | Routes differ by case: military remnants, desertion, recovery, trade | Compatible ammunition, parts, maintenance proficiency needed. Counts not recorded | Holders differ in how they acquired theirs | K2 existence: [Wikipedia](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_K2). K-series line: [SNT Motiv](https://www.sntmotiv.com/eng/business/defense.html). The K2C1 2026 issue range is not in the records. Viewed 2026-09-12 |
-| M16 family | Reserve and old stock | 2015 general-reserve training issue fact | Access only with mobilization-remnant, unit-ledger, or recovery routes | Ammunition, magazines, parts, storage state were separate bottlenecks | An empty gun could be used for bayonet fighting; with rounds present it followed the military-remnant rules | [Policy Briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), viewed 2026-09-20 |
-| K1A | Military personal weapon | ROK issue line | Recovered or transferred from military remnants, case by case | Compatible ammunition and parts checked per model. Not treated as bulk-compatible with other rifles | Persons other than deserters and mobilization remnants needed separate acquisition and proficiency records | K-series existence: SNT Motiv. Per-model material and the 2026 issue range are not in the records |
-| Service pistol | Sidearm. Guard and officer close-in | Military and police equipment. No civilian daily use | Remnants with keys and rosters. No drifter start | Pistol rounds were stock separate from rifle rounds | Former patrol: **staff and shield are the default**. The pistol only when a ledger opens | The 2026 issue model name is not in the records |
-| Squad support weapon | Suppression, convoy cover | ROK squad weapons | Power scale. Not personal starting gear | Heavy ammunition consumption. Repair tools, cooling, barrels were stronghold maintenance | Guro warlord-scale remnants, stronghold defense. No orphans or drifters | 2026 service models and deployment are not in the records |
-| Regulation staff · patrol shield · police personal protection | Suppression, protection, station guard | Police, autonomous guards, station security | Former patrol default. Shared by station guards | Shield and clothing repair. No ammunition | Former patrol preset. Stationmaster stronghold guard | The original police regulations do not survive |
-| Crowbar · axe · cutter | Opening, dismantling, close-in | Civil engineering, rail, facility management, civilian tools | Trade layer. Worksites and depots | Blades dull; no hydraulic oil (manual tools) | Drifter, explorer, maintenance hand | Specific brand names are not in the records |
-| Hydraulic rescue equipment | Debris spreading, door and hull opening | Fire, rescue, rail recovery | Stronghold workshops, maintenance hands. Not personal carry | Hydraulic oil, power, hoses. Without power, dead weight | Stationmaster strongholds, overlapping The Gauge's engineering corps | Fire-equipment issue lists do not survive |
-| Lamps · radios | Watch, contact | Facility, police, civilian radios | Trade and police layers. Batteries the bottleneck | Batteries, charging. Consumer batteries age | Courier, explorer, patrol | Consumer lanterns and radios exist as civilian goods. Military encrypted-radio remnants are not in the records |
-| Gas detection · breathing protection · emergency kit · portable power | Conduit survival, injury, short-term power | Industrial safety, fire, medical, facilities | Medical officer, explorer, stronghold | Filters, medicine, batteries consumed. Charging ≠ generation | Medical officer red-cloth silhouette. No orphans | Industrial-safety generalities. 2026 station-staff issue lists are not in the records |
-| Stab / ballistic / work personal protection | Protection against stabbing-cutting / defined ballistic threat / per-task hazards | Police, military, security, industrial sites | Use and grade distinguished. Work clothes and riot shields not treated as ballistic gear | Damage, aging, replacement parts, proper wearing conditions checked | Protection is matched to the role; affiliation alone does not decide its performance | Specific test grades, service models, and 2026 issue ranges are not in the records |
-| Bow (conditional) | Low-noise projectile. Not the basic arm | Recreational and gungdo clubs. Not military issue | Could exist. **Not forbidden**. Not the default ranged arm either | Arrow crafting mentioned only within trade-tool scope. No manufacture recipe | Specific persons or livelihoods are the condition | The civilian bow regulation range is not in the records |
-| Crossbow (conditional) | Mechanical projectile | A permit item under the Firearms and Swords Act | Rare. Permit remnants or smuggling as narrative conditions | Bolts and strings. Possibly a ledger separate from the firearms ledger | No drifter start. Not the basic arm | [Firearms and Swords Act](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98) includes crossbows. Viewed 2026-09-12 |
-| Sensor · inspection bot · actuator · power salvage | Detection, opening and closing, short-term power. Conditionally equipment, traps, weapons | Disaster and facility inspection records | Modules after sealed-gallery dismantling or stopping | Charging, aging, supply source. Not permanent batteries. Protocol cards are not universal control | Explorer, records keeper, operating-house recovery squads | Concept: [Lost Technology](/wiki/Lost-Technology-Lineage/). Actual 2026 deployment is not in the records |
-| Vehicles · generators (power scale) | Movement, stronghold power | Rail, city buses, facility emergency generators, military vehicles | Only when a living sphere ran them. Not a personal-preset default | Fuel, lubricant, tires, batteries. Generator ≠ energy-storage module | Stationmasters, faction military (engineers, rail cavalry). No drifters | Vehicle remnant scale and counts are not in the records |
-| Heavy weapons (power scale) | Barrier-gate and stronghold defense | ROK support weapons, vehicle-mounted | Remnants above squad scale, facility defense. No personal-carry start | Ammunition, weight, maintenance. Supply was the object of command disputes | The four remnant groups, faction facility military. Conscription Remnants | 2026 service lists and counts are not in the records |
+| Equipment | Function | Before the collapse | Access in 2126 | Consumption and repair | Who carries it |
+|---|---|---|---|---|---|
+| 5.56 mm service rifle, pre-collapse national issue | Standard rifle | Military issue; not a civilian item | Inherited, recovered or traded. Every carrier has their own story of how they got it | Compatible rounds, parts and a skilled hand. Numbers aren't recorded | Government levies and guards, Free City contract crews, Arc escorts |
+| Older 5.56 mm rifle from reserve stores | Reserve stock | Issued for reserve training in 2015 | Only where a unit's books or stores survived | Rounds, magazines, parts and storage are each a separate bottleneck | Holders of old stores; an empty rifle still serves as a bayonet staff |
+| Service pistols | Sidearm for guards and officers | Military and police issue | Locked stores with a key and a list | Pistol rounds are a separate stock from rifle rounds | Guards and officers. Former patrols start with a baton and shield |
+| Squad support weapons | Suppression and convoy cover | Military squad weapons | Held at faction scale, not by individuals | Heavy round use; barrels and cooling need a workshop | Defended stations and armies on campaign |
+| Baton, patrol shield, riot gear | Restraint, protection, station guard | Police, local guards, station security | Standard for former patrols and station guards | Shield and cloth repair; no rounds | Station guards |
+| Pry bar, axe, cutter | Opening, breaking down, close fighting | Construction, rail and building work | Common at work sites and depots | Edges dull; no hydraulics | Porters, scouts, technicians |
+| Hydraulic rescue tools | Spreading debris, opening doors and car bodies | Fire, rescue and rail recovery | Workshops and repair crews, not carried alone | Hydraulic fluid, power, hoses. Without power, it's dead weight | Repair and engineer crews |
+| Lamps and radios | Light and contact | Facility, police and civilian sets | Common in work and guard duty; the cell is the bottleneck | Cells and charging. Old cells age | Runners, scouts, patrols |
+| Gas detector, respirator, first-aid kit, portable power | Surviving in ducts, treating wounds, short power | Industrial safety, fire, medicine | Medics, scouts, station posts | Filters, medicine and cells run out. Charging isn't generating | Medics and scouts |
+| Stab, ballistic and work protection | Against blades, set ballistic threats, or work hazards | Police, military, guards, industry | Each kind is kept separate. Work clothes and riot shields aren't ballistic armour | Wear, ageing and replacement parts | Fitted to the role; membership alone doesn't give protection |
+| Bow (conditional) | Quiet ranged shot; not a standard arm | Sport archery; not military | Possible, not forbidden, not standard | Arrows made with work tools | Specific people and trades |
+| Crossbow (conditional) | Mechanical shot | Licensed under the firearms law | Rare | Bolts and strings | Not a starting arm |
+| Drones | Scouting, watching, carrying a small charge | Police, rescue, military and civilian stock | Kept warm and flown briefly | Cells and spare parts; radio drones can be jammed | Free City crews most of all; a few Government teams |
+| Machine body parts | Replacing a hand, eye, leg or more | Medical and military | Through the Government's registry, Free City surgeons, or Arc baptism | Repair, power, spares and medicine | See [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/) |
+| Sensors, inspection units, actuators, salvaged power | Detecting, opening, short power; sometimes traps or weapons | Disaster response and facility inspection | Modules taken from stopped machines in sealed galleries | Charging, ageing, supply. No cell lasts forever. A protocol card doesn't control everything | Scouts, record keepers, salvage crews. See [Lost Technology](/wiki/Lost-Technology-Lineage/) |
+| Vehicles and generators | Moving, powering a station | Rail, buses, emergency generators, military vehicles | Only where a community can run them | Fuel, oil, tyres, cells. A generator isn't a battery | Station holders and faction engineers |
+| Heavy weapons | Holding gates and strongpoints | Military support weapons and vehicle mounts | Held by factions at defended sites | Rounds, weight, upkeep. Supply is fought over | Faction garrisons |
+
+### What Each Faction Runs Short Of
+
+The Government fields the most guns and armoured vehicles, so its rounds and fuel go first. The Free City runs drones and repair crews, so its cells and spare parts go first. The Arc puts its resources into the bodies of the faithful, so implant parts and medicine go first.
 
 ## What Actually Existed in 2026
 
-A. Scope of the reviewed sources
+### Records That Survive
 
-In 2026, permit rules for firearms and crossbows, military equipment, and railway and facility tools existed. Waterworks staff operated valves manually immediately after the Great Blackout.
+In 2026 there were licensing rules for guns and crossbows, military arms, and rail and facility tools. These records show what existed then. They don't show how much of it reached any station a century later.
 
-- Firearms and Swords Act, Article 1: it governed the manufacture, sale, lease, transport, possession, and use of guns, swords, explosives, spray devices, electroshock weapons, and crossbows. This was not a country where civilians carried guns as daily routine. Effective dates and clause detail followed the statute's original text. ([Korea Law Service Center](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98), viewed 2026-09-12; earlier capture `.omo/ulw-research/20260911-200129/browse/01-law-go-kr-firearms-swords.png`)
-- Public material introduces the K2 as the ROK Armed Forces' service rifle. Post-collapse possession through military remnants or market inflow differs from case to case. Who holds how many in 2026 was not what this source said. ([English Wikipedia, Daewoo K2](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_K2), viewed 2026-09-12)
-- A 2015 policy briefing stated that general reserve training issued M16s in place of carbines. The training issue fact of the time was confirmed, but 2026 counts, per-unit issue tables, and warehouse locations were not fixed by this material. ([Policy Briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), viewed 2026-09-20)
-- SNT Motiv's public defense page shows the existence of the K-series production line. The manufacturer's product descriptions did not stand in for actual issue counts to the armed forces or reserves. ([SNT Motiv](https://www.sntmotiv.com/eng/business/defense.html), viewed 2026-09-20)
-- The original 2026 police equipment regulations and the issue range of service pistol models do not survive, and neither do the regulation numbers.
+- The firearms law covered the making, sale, lending, carriage, holding and use of guns, swords, explosives, sprays, stun devices and crossbows. It wasn't a country where civilians carried guns every day. ([National Law Information Center](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98), read 2026-09-12)
+- Public sources describe the standard assault rifle of the armed forces. How many reached whom by 2026 isn't in those sources. (encyclopedia entry on the service rifle, read 2026-09-12)
+- A 2015 government briefing said older 5.56 mm rifles would replace carbines for reserve training. The issue is confirmed; quantities and depots aren't. ([Policy briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), read 2026-09-20)
+- A domestic arms maker's public page shows the national small arms line existed. A product page doesn't say how many were issued. (Defence industry product catalogue, read 2026-09-20)
+- The police equipment rules and the issued pistol models of 2026 haven't survived.
 
-## Sources
+## Related Pages
 
-- [PlayStation](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
-- [Hostile ecology index](/wiki/Hostile-Ecology-Index/)
+- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/)
+- [Lost Technology](/wiki/Lost-Technology-Lineage/)
+- [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/)
 - [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/)
-- Economy, Production and Logistics Rules
-- [The three factions of Seoul](/wiki/Sixteen-States/)
+- [The Three Factions of Seoul](/wiki/Sixteen-States/)

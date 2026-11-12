@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { computed, onMounted, reactive, ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, reactive, ref } from 'vue'
 import { withBase } from 'vitepress'
-import { initialState, panBox, reduce, zoomBox, type Box, type MapAction, type MapState, type Rank } from '../machines/territoryMap'
+import { CLICK_SLOP, MAX_ZOOM, initialState, panBy, reduce, zoomAt, type Box, type MapAction, type MapState, type Point, type Rank } from '../machines/territoryMap'
 
 interface Control { status: string; states: string[]; names: string[]; overlords: string[] }
 interface Core {
@@ -41,7 +41,7 @@ async function load() {
     const [c, g] = await Promise.all([getJson<Core>(`/data/map.core.${props.locale}.json`), getJson<Geometry>('/data/map.geometry.json')])
     core.value = c
     geometry.value = g
-    dispatch({ type: 'loaded', box: { x: 0, y: 0, width: c.width, height: c.height } })
+    dispatch({ type: 'loaded', extent: { width: c.width, height: c.height } })
   } catch (e) {
     dispatch({ type: 'failed', message: String((e as Error).message ?? e) })
   }
@@ -81,7 +81,7 @@ const activeHolding = computed(() => selectableHoldings.value.find((h) => h.id =
 const holdingRegions = computed(() => new Set(activeHolding.value?.regions ?? []))
 const edgeColor = (c: Control) => (c.status === 'held' && c.states[0] ? factionById.value.get(c.states[0])?.color ?? unassigned.value : unassigned.value)
 const statusLabel = (s: string) => L.value.status?.[s] ?? s
-const counts = (status: string) => displayedEdges.value.filter((e) => (status === 'unassigned' ? !['held', 'vacant', 'contested'].includes(e.control.status) : e.control.status === status)).length
+const counts = (status: string) => displayedEdges.value.filter((e) => (status === 'unassigned' ? !['held', 'vacant'].includes(e.control.status) : e.control.status === status)).length
 
 const sel = computed(() => machine.selection)
 const selTitle = computed(() => (sel.value.kind === 'title' ? titleById.value.get(sel.value.id) ?? null : null))
@@ -100,6 +100,7 @@ function selectTitle(id: string) {
   else { if (t.rank !== machine.rank) dispatch({ type: 'rank', rank: t.rank }); dispatch({ type: 'select', selection: { kind: 'title', id } }) }
 }
 function pickSegment(e: MouseEvent) {
+  if (machine.gesture === 'dragged') return
   const t = e.target as Element
   const id = t.getAttribute('data-segment')
   if (!id) return
@@ -109,33 +110,165 @@ function pickSegment(e: MouseEvent) {
 }
 const segmentLabel = (id: string) => { const e = core.value?.edges.find((x) => x.id === id); return e ? `${stationById.value.get(e.a)?.name ?? e.a} – ${stationById.value.get(e.b)?.name ?? e.b} (${e.lines.map((l) => core.value?.lines[l]?.name ?? l).join(', ')})` : id }
 
+// ---- pan and zoom, as in a standard map app -------------------------------------------------------------------
+// The view box and the gesture phase live in the machine; what follows only turns pointer, wheel and key input
+// into `view` and `gesture` actions. Screen <-> map conversion is computed from the machine's box (not the DOM),
+// so several updates inside one event see each other immediately.
 const box = computed(() => machine.box)
 const viewBox = computed(() => `${box.value.x} ${box.value.y} ${box.value.width} ${box.value.height}`)
-const W = computed(() => core.value?.width ?? 1200)
-const H = computed(() => core.value?.height ?? 980)
+const extent = computed(() => machine.extent)
+const atMaxZoom = computed(() => box.value.width <= extent.value.width / MAX_ZOOM + 1e-6)
+const atMinZoom = computed(() => box.value.width >= extent.value.width - 1e-6)
+const reducedMotion = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches
 const setView = (b: Box) => dispatch({ type: 'view', box: b })
-const frame = () => setView({ x: 0, y: 0, width: W.value, height: H.value })
-const zoom = (f: number) => setView(zoomBox(box.value, f, W.value, H.value))
-const pan = (dx: number, dy: number) => setView(panBox(box.value, dx, dy, W.value, H.value))
-let drag: { x: number; y: number; box: Box; moved: boolean } | null = null
-function down(e: PointerEvent) { drag = { x: e.clientX, y: e.clientY, box: { ...box.value }, moved: false }; (e.currentTarget as Element).setPointerCapture?.(e.pointerId) }
+
+/** CSS px per map unit, and where the map origin sits on screen (the SVG letterboxes with xMidYMid meet). */
+function projection(b: Box) {
+  const r = svg.value!.getBoundingClientRect()
+  const s = Math.min(r.width / b.width, r.height / b.height)
+  return { s, left: r.left + (r.width - b.width * s) / 2, top: r.top + (r.height - b.height * s) / 2 }
+}
+function toMap(p: Point, b: Box): Point { const { s, left, top } = projection(b); return { x: b.x + (p.x - left) / s, y: b.y + (p.y - top) / s } }
+function panPx(b: Box, dx: number, dy: number): Box { const { s } = projection(b); return panBy(b, -dx / s, -dy / s, extent.value) }
+
+// short eased transitions for buttons, keys, double-click and mouse-wheel notches; trackpad scroll is applied directly
+let anim: { from: Box; to: Box; start: number; ms: number; raf: number } | null = null
+let glide: { vx: number; vy: number; t: number; raf: number } | null = null
+function stopMotion() {
+  if (anim) cancelAnimationFrame(anim.raf)
+  if (glide) cancelAnimationFrame(glide.raf)
+  anim = null; glide = null
+}
+function animateTo(to: Box, ms = 180) {
+  stopMotion()
+  if (reducedMotion()) { setView(to); return }
+  const a = { from: { ...box.value }, to, start: performance.now(), ms, raf: 0 }
+  const step = (now: number) => {
+    const t = Math.min(1, (now - a.start) / a.ms)
+    const e = 1 - (1 - t) ** 3
+    setView({ x: a.from.x + (a.to.x - a.from.x) * e, y: a.from.y + (a.to.y - a.from.y) * e, width: a.from.width + (a.to.width - a.from.width) * e, height: a.from.height + (a.to.height - a.from.height) * e })
+    if (t < 1) a.raf = requestAnimationFrame(step)
+    else anim = null
+  }
+  anim = a
+  a.raf = requestAnimationFrame(step)
+}
+// light inertia after a drag: the view keeps sliding and slows down
+function startGlide(vx: number, vy: number) {
+  stopMotion()
+  if (reducedMotion() || Math.hypot(vx, vy) < 0.3) return
+  const g = { vx, vy, t: performance.now(), raf: 0 }
+  const step = (now: number) => {
+    const dt = Math.min(48, now - g.t); g.t = now
+    setView(panPx(box.value, g.vx * dt, g.vy * dt))
+    const decay = 0.9 ** (dt / 16); g.vx *= decay; g.vy *= decay
+    if (Math.hypot(g.vx, g.vy) > 0.02) g.raf = requestAnimationFrame(step)
+    else glide = null
+  }
+  glide = g
+  g.raf = requestAnimationFrame(step)
+}
+onBeforeUnmount(stopMotion)
+
+const target = () => anim?.to ?? box.value
+const center = (): Point => { const r = svg.value!.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + r.height / 2 } }
+/** Zoom by `factor` (< 1 zooms in) around a screen point, by default the centre of the map. */
+function zoomBy(factor: number, at: Point = center(), animate = true) {
+  const b = target()
+  const next = zoomAt(b, factor, extent.value, toMap(at, b))
+  if (animate) animateTo(next)
+  else { stopMotion(); setView(next) }
+}
+const zoomIn = () => zoomBy(1 / 1.6)
+const zoomOut = () => zoomBy(1.6)
+const frame = () => animateTo({ x: 0, y: 0, ...extent.value })
+
+const pointers = new Map<number, Point>()
+let pressAt: Point | null = null
+let last: { c: Point; spread: number } | null = null
+let trail: { x: number; y: number; t: number }[] = []
+let lastTap: { x: number; y: number; t: number } | null = null
+const centroid = (): Point => { const ps = [...pointers.values()]; return { x: ps.reduce((a, p) => a + p.x, 0) / ps.length, y: ps.reduce((a, p) => a + p.y, 0) / ps.length } }
+const spread = () => { const [a, b] = [...pointers.values()]; return b ? Math.hypot(a.x - b.x, a.y - b.y) : 0 }
+const snapshot = () => { last = { c: centroid(), spread: spread() } }
+function capture(id: number) { try { svg.value?.setPointerCapture(id) } catch { /* the pointer is already gone */ } }
+
+function down(e: PointerEvent) {
+  if (e.pointerType === 'mouse' && e.button !== 0) return
+  stopMotion()
+  pointers.set(e.pointerId, { x: e.clientX, y: e.clientY })
+  if (pointers.size === 1) { pressAt = { x: e.clientX, y: e.clientY }; trail = []; dispatch({ type: 'gesture', event: 'press' }) }
+  else { pointers.forEach((_, id) => capture(id)); dispatch({ type: 'gesture', event: 'pinch' }) }
+  snapshot()
+}
 function move(e: PointerEvent) {
-  if (!drag || !svg.value) return
-  const r = svg.value.getBoundingClientRect()
-  if (Math.hypot(e.clientX - drag.x, e.clientY - drag.y) > 5) drag.moved = true
-  if (drag.moved) setView(panTo(drag.box, -(e.clientX - drag.x) / r.width * drag.box.width, -(e.clientY - drag.y) / r.height * drag.box.height))
+  if (!pointers.has(e.pointerId) || !last) return
+  pointers.set(e.pointerId, { x: e.clientX, y: e.clientY })
+  const c = centroid()
+  if (machine.gesture === 'pressing') {
+    // under the click slop nothing moves, so a slightly shaky click still opens the region
+    if (pointers.size === 1 && pressAt && Math.hypot(c.x - pressAt.x, c.y - pressAt.y) <= CLICK_SLOP) return
+    capture(e.pointerId)
+    dispatch({ type: 'gesture', event: pointers.size > 1 ? 'pinch' : 'drag' })
+  }
+  let b = panPx(box.value, c.x - last.c.x, c.y - last.c.y)
+  if (pointers.size > 1) {
+    const sp = spread()
+    if (last.spread > 0 && sp > 0) b = zoomAt(b, last.spread / sp, extent.value, toMap(c, b))
+  }
+  setView(b)
+  const now = performance.now()
+  trail.push({ x: c.x, y: c.y, t: now })
+  trail = trail.filter((p) => now - p.t < 100)
+  snapshot()
 }
-function panTo(b: Box, dx: number, dy: number): Box { return panBox({ ...b, x: b.x + dx, y: b.y + dy }, 0, 0, W.value, H.value) }
-const dragged = ref(false)
-function up() { dragged.value = !!drag?.moved; drag = null; setTimeout(() => { dragged.value = false }, 0) }
-function wheel(e: WheelEvent) { e.preventDefault(); zoom(e.deltaY > 0 ? 1.15 : 0.87) }
+function up(e: PointerEvent) {
+  if (!pointers.delete(e.pointerId)) return
+  if (pointers.size) { snapshot(); trail = []; return }
+  const was = machine.gesture
+  dispatch({ type: 'gesture', event: 'release' })
+  last = null
+  if (e.type === 'pointercancel') return
+  if (was === 'pressing') {
+    // a tap or a click: two in quick succession at the same spot zoom in there
+    const now = performance.now()
+    if (lastTap && now - lastTap.t < 350 && Math.hypot(e.clientX - lastTap.x, e.clientY - lastTap.y) < 30) { lastTap = null; zoomBy(0.5, { x: e.clientX, y: e.clientY }) }
+    else lastTap = { x: e.clientX, y: e.clientY, t: now }
+  } else if (was === 'dragging') {
+    // only movement in the last 100 ms counts: a drag that stopped and was held before release does not fling
+    const now = performance.now()
+    const recent = trail.filter((p) => now - p.t < 100)
+    if (recent.length > 1) {
+      const a = recent[0], z = recent[recent.length - 1], dt = Math.max(1, z.t - a.t)
+      startGlide((z.x - a.x) / dt, (z.y - a.y) / dt)
+    }
+  }
+}
+// a mouse press that leaves the map before it became a drag is dropped (a drag holds pointer capture and never leaves)
+function leave(e: PointerEvent) {
+  if (e.pointerType === 'mouse' && machine.gesture === 'pressing' && pointers.delete(e.pointerId) && !pointers.size) { dispatch({ type: 'gesture', event: 'release' }); last = null }
+}
+function wheel(e: WheelEvent) {
+  e.preventDefault()
+  const unit = e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? svg.value!.getBoundingClientRect().height : 1
+  const dy = Math.max(-300, Math.min(300, e.deltaY * unit))
+  if (!dy) return
+  // a mouse-wheel notch (large delta) gets a short eased step; trackpad scroll and pinch (small deltas) apply directly
+  zoomBy(Math.exp(dy * 0.0025), { x: e.clientX, y: e.clientY }, Math.abs(dy) >= 40)
+}
 function keydown(e: KeyboardEvent) {
+  if (e.altKey || e.ctrlKey || e.metaKey) return
+  const r = svg.value!.getBoundingClientRect()
   const dir: Record<string, [number, number]> = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] }
-  if (dir[e.key]) { e.preventDefault(); pan(...dir[e.key]) }
-  else if (e.key === '+' || e.key === '=') zoom(0.8)
-  else if (e.key === '-') zoom(1.25)
+  if (dir[e.key]) { const [dx, dy] = dir[e.key]; animateTo(panPx(target(), -dx * r.width * 0.15, -dy * r.height * 0.15), 150) }
+  else if (e.key === '+' || e.key === '=') zoomIn()
+  else if (e.key === '-' || e.key === '_') zoomOut()
+  else if (e.key === '0') frame()
+  else return
+  e.preventDefault()
 }
-function guarded(fn: () => void) { return () => { if (!dragged.value) fn() } }
+/** Clicks that end a drag or a pinch never select anything. */
+function guarded(fn: () => void) { return () => { if (machine.gesture !== 'dragged') fn() } }
 const personLink = (id: string | null) => (id ? withBase(`/${props.prefix}wiki/people/${id}/`) : null)
 const stateLink = (id: string) => withBase(`/${props.prefix}wiki/factions/${stateById.value.get(id)?.faction ?? ''}/`)
 </script>
@@ -182,15 +315,15 @@ const stateLink = (id: string) => withBase(`/${props.prefix}wiki/factions/${stat
       <p v-if="railFailed" class="tm-status tm-error" role="alert">{{ L.failed }}</p>
 
       <div class="tm-stage">
-        <div class="tm-zoom" role="group" :aria-label="L.whole">
-          <button type="button" @click="frame">{{ L.whole }}</button>
-          <button type="button" :aria-label="L.zoomIn" @click="zoom(0.8)">+</button>
-          <button type="button" :aria-label="L.zoomOut" @click="zoom(1.25)">−</button>
-          <button type="button" :aria-label="L.left" @click="pan(-1, 0)">←</button><button type="button" :aria-label="L.up" @click="pan(0, -1)">↑</button>
-          <button type="button" :aria-label="L.down" @click="pan(0, 1)">↓</button><button type="button" :aria-label="L.right" @click="pan(1, 0)">→</button>
+        <div class="tm-zoom" role="group" :aria-label="L.zoomGroup">
+          <button type="button" data-zoom="in" :aria-label="L.zoomIn" :title="L.zoomIn" :disabled="atMaxZoom" @click="zoomIn"><span aria-hidden="true">+</span></button>
+          <button type="button" data-zoom="out" :aria-label="L.zoomOut" :title="L.zoomOut" :disabled="atMinZoom" @click="zoomOut"><span aria-hidden="true">−</span></button>
+          <button type="button" data-zoom="reset" :aria-label="L.whole" :title="L.whole" @click="frame">
+            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
         </div>
-        <svg ref="svg" class="tm-svg" :viewBox="viewBox" tabindex="0" role="application" :aria-label="L.mapLabel" data-testid="territory-svg"
-             @pointerdown="down" @pointermove="move" @pointerup="up" @pointercancel="up" @wheel="wheel" @keydown="keydown" @click="pickSegment">
+        <svg ref="svg" class="tm-svg" :class="{ 'tm-grabbing': machine.gesture === 'dragging' || machine.gesture === 'pinching' }" :viewBox="viewBox" tabindex="0" role="application" :aria-label="L.mapLabel" data-testid="territory-svg" :data-gesture="machine.gesture"
+             @pointerdown="down" @pointermove="move" @pointerup="up" @pointercancel="up" @pointerleave="leave" @wheel="wheel" @keydown="keydown" @click="pickSegment" @dragstart.prevent>
           <g v-if="machine.layer === 'underground'">
             <path v-for="t in core.titles.filter((x) => x.rank === 'county')" :key="t.id" :d="geometry.titles[t.id]" fill="var(--vp-c-text-3)" fill-opacity="0.2" stroke="var(--vp-c-divider)" stroke-width="0.6" vector-effect="non-scaling-stroke" />
             <line v-for="e in displayedEdges" :key="e.id" :x1="stationById.get(e.a)?.x" :y1="stationById.get(e.a)?.y" :x2="stationById.get(e.b)?.x" :y2="stationById.get(e.b)?.y" :stroke="edgeColor(e.control)" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke" :data-segment="e.id" :class="{ 'tm-selected': sel.kind === 'segment' && sel.id === e.id }" />
@@ -253,7 +386,7 @@ const stateLink = (id: string) => withBase(`/${props.prefix}wiki/factions/${stat
         <span v-for="f in core.factions" :key="f.id" role="listitem"><i :style="{ background: f.color }"></i>{{ f.name }}</span><span role="listitem"><i :style="{ background: unassigned }"></i>{{ L.neutral }}</span>
       </div>
       <div v-if="machine.layer === 'underground'" class="tm-legend" role="list" :aria-label="L.undergroundLegend">
-        <span role="listitem">{{ L.held }} {{ counts('held') }}</span><span role="listitem">{{ L.contested }} {{ counts('contested') }}</span><span role="listitem">{{ L.vacant }} {{ counts('vacant') }}</span><span role="listitem">{{ L.unassigned }} {{ counts('unassigned') }}</span>
+        <span role="listitem">{{ L.held }} {{ counts('held') }}</span><span role="listitem">{{ L.vacant }} {{ counts('vacant') }}</span><span role="listitem">{{ L.unassigned }} {{ counts('unassigned') }}</span>
       </div>
       <p class="tm-attribution">{{ core.epoch }} · {{ core.attribution }}</p>
     </template>
@@ -272,13 +405,22 @@ const stateLink = (id: string) => withBase(`/${props.prefix}wiki/factions/${stat
 .tm-check-group { border: 1px solid var(--vp-c-divider); border-radius: 8px; display: flex; gap: 12px; padding: 4px 10px; font-size: 13px; }
 .tm-check-group legend { font-size: 12px; color: var(--vp-c-text-2); padding: 0 4px; }
 .tm-stage { position: relative; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: var(--vp-c-bg-alt); overflow: hidden; }
-.tm-svg { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 980; max-height: 80vh; touch-action: none; cursor: grab; }
+.tm-svg { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 980; max-height: 80vh; touch-action: none; cursor: grab; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.tm-svg.tm-grabbing, .tm-svg.tm-grabbing .tm-region { cursor: grabbing; }
 .tm-svg:focus-visible { outline: 2px solid var(--vp-c-brand-1); outline-offset: -2px; }
+/* shapes with tabindex=-1 take focus on press; the selection stroke already marks them, so no box outline */
+.tm-svg [tabindex='-1']:focus { outline: none; }
 .tm-region { cursor: pointer; transition: fill-opacity 150ms ease-out; } .tm-region:hover { fill-opacity: 0.95; }
 .tm-selected { stroke: #fff !important; stroke-width: 2.6 !important; fill-opacity: 1 !important; }
 .tm-state-label { font: 600 11px var(--vp-font-family-base); fill: var(--vp-c-text-1); paint-order: stroke; stroke: var(--vp-c-bg); stroke-width: 3px; cursor: pointer; }
-.tm-zoom { position: absolute; top: 8px; left: 8px; z-index: 2; display: flex; flex-wrap: wrap; gap: 4px; max-width: 70%; }
-.tm-zoom button { padding: 4px 9px; border: 1px solid var(--vp-c-divider); border-radius: 6px; background: var(--vp-c-bg); color: var(--vp-c-text-1); cursor: pointer; font: inherit; font-size: 13px; }
+/* map-app zoom stack: one column of square buttons joined into a single card, bottom-right like most map apps */
+.tm-zoom { position: absolute; right: 12px; bottom: 12px; z-index: 2; display: flex; flex-direction: column; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: var(--vp-c-bg); overflow: hidden; }
+.tm-zoom button { display: grid; place-items: center; width: 36px; height: 36px; padding: 0; border: 0; background: transparent; color: var(--vp-c-text-1); cursor: pointer; font: 600 20px/1 var(--vp-font-family-base); transition: background-color 150ms ease-out, color 150ms ease-out; }
+.tm-zoom button + button { border-top: 1px solid var(--vp-c-divider); }
+.tm-zoom button:hover:not(:disabled) { background: var(--vp-c-bg-soft); color: var(--vp-c-brand-1); }
+.tm-zoom button:focus-visible { outline: 2px solid var(--vp-c-brand-1); outline-offset: -2px; }
+.tm-zoom button:disabled { color: var(--vp-c-text-3); cursor: default; }
+@media (pointer: coarse) { .tm-zoom button { width: 44px; height: 44px; } }
 .tm-segments { position: absolute; right: 8px; top: 8px; z-index: 2; display: grid; gap: 4px; max-width: 280px; }
 .tm-segments button { text-align: left; padding: 6px 10px; border: 1px solid var(--vp-c-divider); border-radius: 6px; background: var(--vp-c-bg); color: var(--vp-c-text-1); cursor: pointer; font: inherit; font-size: 13px; }
 .tm-detail-toggle { margin-top: 10px; padding: 6px 12px; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: var(--vp-c-bg-soft); color: var(--vp-c-text-1); cursor: pointer; font: inherit; }

@@ -28,6 +28,52 @@ Chronology rewrite (Century-Annals, Scenario-Timeline, World-Unbinding, Oral-Sto
 | 18 | World-Unbinding | en: "The Generations After the Great Blackout", "By most accounts, each shelter cut off from the others chose its own l" / ko: "대정전 이후의 세대들", "대개 서로 끊긴 대피소마다" | shelter leaders first chosen by vote, then hereditary, is a provisional detail kept from the earlier text |
 | 19 | Oral-Stories | en: "(top)", "These are stories people tell in the stations." / ko: "(top)", "역에서 사람들이 하는 이야기들이다." | every story on this page is a told story; their tellers, places and details are provisional and none adds a dated event |
 
+## task 8
+
+Technology documents (Era-Arms-and-Tech-Level, Lost-Technology-Lineage, People-and-Machines, Synthetic-Actors, Structures) and the new Cyberware-and-Scarcity.
+
+| # | Document | Location (section, phrase) | Provisional item |
+|---|---|---|---|
+| 1 | Cyberware-and-Scarcity | en: "Where a Part Goes", "People in the stations talk about the body in six places" / ko: "부품이 들어가는 자리", "역 사람들은 몸을 여섯 곳으로 나누어 말한다." | the six-place slot taxonomy, the base implant that other powered parts stand on, and the table contents are a provisional framing built on the six body parts of the character contract and research section 1; no part names are approved |
+| 2 | Cyberware-and-Scarcity | en: "Who Fits It", "Fitting a part takes three kinds of room." / ko: "누가 달아 주는가", "부품을 다는 데는 세 가지 방이 필요하다." | the three tiers of fitting room (fitting room, surgery, sterile room) are a research proposal (research section 6 row 3), not canon |
+| 3 | Cyberware-and-Scarcity | en: "The Government: State Clinics and the Registry", "each one works under the Senator who holds that district" / ko: "정부: 국가 시술소와 등록부", "저마다 그 구를 쥔 상원의원 아래에서 일한다." | "the Government's district lord" is a placeholder role term until task 32 names the Government tier titles; the approved holder title is Senator |
+| 4 | Cyberware-and-Scarcity | en: "The Government: State Clinics and the Registry", "When a registered worker dies, the part goes back to the clinic." / ko: "정부: 국가 시술소와 등록부", "등록된 일꾼이 죽으면 부품은 시술소로 돌아간다." | state clinics, the cyberware registry, the return of parts on death and the term "unlisted" metal are provisional defaults built on bible 2.1 (only ledger-listed people are citizens) and research section 6 row 5 |
+| 5 | Cyberware-and-Scarcity | en: "The Free City: Guild Surgeons and Markets", "Surgeons there belong to guilds of their own trade" / ko: "자유도시: 조합 집도의와 장터", "그곳 집도의는 같은 일을 하는 사람들의 조합에 속하고" | Free City guild surgeons and parts markets are a research proposal (research section 6), not canon |
+| 6 | Cyberware-and-Scarcity | en: "The Arc: Baptism", "Its people fit, maintain and replace parts for the faithful." / ko: "아크: 세례", "아크 사람들은 신도의 부품을 달고, 돌보고, 바꾼다." | who performs baptism and maintains Arc parts is left general on purpose; Q12 items stay out of public text |
+| 7 | Cyberware-and-Scarcity | en: "Maintenance", "Most limbs need repair once or twice a year" / ko: "정비", "팔다리 대부분은 한 해에 한두 번 수리하고 두어 해마다 바꾼다." | repair and replacement intervals, the repair queue and charge life are research-grounded provisional details (research sections 2.2 and 2.4) |
+| 8 | Cyberware-and-Scarcity | en: "The Mind", "People who've replaced most of themselves often say the world feels farther away" / ko: "마음", "몸 대부분을 바꾼 사람은 세상이 멀어진 것 같다고" | the cumulative cost to the mind and its partial reversal on removal are a provisional framing from the genre structure in research section 1.3; no rule or number is set |
+| 9 | Cyberware-and-Scarcity | en: "Each Faction's Bottleneck", "What runs out first" / ko: "세력마다 먼저 바닥나는 것", "먼저 바닥나는 것" | the per-faction bottleneck table follows roster framework 9.3, a design document rather than bible canon |
+| 10 | Era-Arms-and-Tech-Level | en: "Equipment and What It Needs", "Who carries it" / ko: "장비와 필요한 것", "누가 드는가" | the per-faction wording in the "who carries it" column (for example drones mostly with Free City crews) is a provisional default following roster framework 9.2 |
+| 11 | People-and-Machines | en: "People With Machine Parts", "Some people carry machines in their own bodies" / ko: "기계 부품을 단 사람", "제 몸에 기계를 단 사람도 있다." | the three faction access routes repeat the provisional defaults recorded for Cyberware-and-Scarcity |
+| 12 | Structures | en: "Heat and the Cold Above", "Over the busiest ones, stations stretch nets and wire" / ko: "열과 위쪽의 추위", "가장 붐비는 출구 위에는 그물과 철망을 쳐서" | nets over station exits and warm deep rooms for charging are research-grounded provisional details (research section 4.6, 2.4) |
+| 13 | Structures | en: "The Eight Depots", "Depots also hold most of what's left for modern arms" / ko: "여덟 기지", "현대 무기를 굴리는 데 남은 것도 대부분 기지에 있다." | depots as the main stores of fuel, vehicle benches and drones are a provisional default; the depot to faction table only applies bible 2.4 district ownership |
+| 14 | Structures | en: "Water Plants and Their Watches", "By most accounts, the first winter's trade of water for generator parts started there" / ko: "정수장과 당직", "대개 첫 겨울에 물과 발전기 부품을 맞바꾼 거래가 그곳에서 시작됐다고 전하며" | tying the Water for Parts story to the Yeongdeungpo staff is a told story, not a dated event; the old 2053 and 2106 dates were removed from this page |
+| 15 | Synthetic-Actors | en: "(top)", "They aren't the First AI and they don't speak for it." / ko: "(top)", "최초의 AI가 아니고, 그것을 대신해 말하지도 않는다." | the personas being separate from the First AI is a provisional framing; any link between machine minds and the First AI stays private (Q15) |
+| 16 | Lost-Technology-Lineage | en: "Districts and Stations", "each station and district keeps its own rules about who looks after which relic" / ko: "구와 역", "역과 구마다 어느 유물을 누가 돌볼지 저마다 규칙을 두고" | the old successor-polity, dynasty and vassal framing was replaced by station and district custom under the three factions; the custom details remain provisional |
+| 17 | Structures | en: "(top)", "the Government calls a district an Electorate held by a Senator" / ko: "(top)", "정부는 구를 상원의원이 쥔 선구로" | the district holding names Electorate (선구), Polis (폴리스) and Archon (아르콘), and Gate (문) are provisional task 32 names (branch task/w2v-32-regional-arcs at 2030ae111); only Senator is approved. The task 32 holder title Gate-Master (문주) is left out because it matches the tw-lords-en-proper and tw-units-en-proper bans in docs/canon-terms.json; the Arc line reads "a Gate held by one of its clans" until the owner picks a title |
+| 18 | Structures | en: "The Eight Depots", "Each belongs to the district holding it stands in." / ko: "여덟 기지", "기지는 그것이 있는 구의 몫에 속한다." | "district holding" is a faction-neutral placeholder wording for the tier label |
+| 19 | People-and-Machines | en: "Field Trials in 2026", "a pre-collapse bipedal labour robot" / ko: "2026년 현장 시험", "붕괴 전의 두 발 노동 로봇" | brand and maker names replaced with generic descriptions; the trial details are kept as a provisional summary |
+
+## task 32
+
+Regional-Physical-AI-Arcs chronicle rewrite and per-faction tier titles. Each entry gives the document, the section heading and the opening phrase of the sentence, in en and ko.
+
+| # | Document | Location (section, phrase) | Provisional item |
+|---|---|---|---|
+| 20 | Regional-Physical-AI-Arcs | en: "Institutions of a Polis", "Every registered citizen of a polis may attend" / ko: "폴리스의 제도", "폴리스의 등록 시민이면 누구나 참석하고" | the Citizens' Assembly (Ekklesia), Council (Boulē), elected magistrates, guilds, courts, and league institutions are provisional; modeled on Greek poleis but not owner-approved |
+| 21 | Regional-Physical-AI-Arcs | en: "Titles by Faction" table, "Electorate (Seongu)" / ko: "세력별 칭호" table, "선구 (選區)" | Government territory name "Electorate" (선구) is provisional. Senator is approved. |
+| 22 | Regional-Physical-AI-Arcs | en: "Titles by Faction" table, "Polis" / ko: "세력별 칭호" table, "폴리스" | Free City territory name "Polis" (폴리스) is provisional |
+| 23 | Regional-Physical-AI-Arcs | en: "Titles by Faction" table, "Archon" / ko: "세력별 칭호" table, "아르콘" | Free City holder name "Archon" (아르콘) is provisional |
+| 24 | Regional-Physical-AI-Arcs | en: "Titles by Faction" table, "Gate (Mun)" / ko: "세력별 칭호" table, "문 (門)" | Arc territory name "Gate" (문, 門) is provisional |
+| 25 | Regional-Physical-AI-Arcs | en: "Titles by Faction" table, "Seal-Keeper (Bonginji)" / ko: "세력별 칭호" table, "봉인지기" | Arc holder name "Seal-Keeper" (봉인지기) is provisional; replaces Gate-Master which is a banned Total War name |
+| 26 | Regional-Physical-AI-Arcs | en: "How Lee Il-seop Became the Archon of Gwanak", "Il-seop earned his citizenship at twenty-two" / ko: "이일섭은 어떻게 관악의 아르콘이 됐는가", "일섭은 스물둘에" | Lee Il-seop's path to Archon (citizenship test, water magistrate, council, election) is a provisional narrative; only "Duke of Gwanak" is approved |
+| 27 | Regional-Physical-AI-Arcs | en: "Institutions of a Polis", "The seven poleis maintain a defensive and trade league" / ko: "폴리스의 제도", "7개 폴리스는 방위·무역 연맹을 유지한다" | the League (Symmachía, 연맹) structure and unanimity rule are provisional |
+| 28 | Regional-Physical-AI-Arcs | en: "The Free Cities: Seven Poleis", "the word they wanted: polis" / ko: "자유도시: 일곱 폴리스", "원하는 단어를 찾았다. 폴리스" | the narrative of engineers finding the word 'polis' in salvaged records is provisional |
+| 29 | Regional-Physical-AI-Arcs | en: "The Government: A Republic of Ledgers", "The title is Senator" / ko: "정부: 장부의 공화국", "칭호는 상원의원" | Government description as "republic of ledgers" with Holy Roman elector analogy is a provisional narrative framing; Senator title is approved |
+| 30 | Regional-Physical-AI-Arcs | en: "The Government: A Republic of Ledgers", "The presidency is for life" / ko: "정부: 장부의 공화국", "대통령은 종신이다" | President title form is provisional (bible section 9 Q-list) |
+| 31 | Regional-Physical-AI-Arcs | en: "Water and the Birth of Trade (2040~2060)", "around 2040 the Yeongdeungpo" / ko: "물과 거래의 탄생 (2040~2060)", "대개 2040년 무렵" | the 2040 bolt order date is from Century-Annals; hedged as approximate |
+| 32 | Regional-Physical-AI-Arcs | en: "Water and the Birth of Trade (2040~2060)", "Around 2050, by the records" / ko: "물과 거래의 탄생 (2040~2060)", "남은 기록에 따르면 2050년" | the 2050 drought date is from Century-Annals; hedged as approximate |
+
 ## task 9
 
 Hostile ecology patch (Hostile-Ecology-Index, Hostile-Group-G01 to G26).
