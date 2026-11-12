@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>서울:전국 — 프로젝트 소개 (초안)</title>
+  <meta name="description" content="서울:전국(Seoul Subway States) 프로젝트 소개 홈페이지 초안. 실제 배포본이 아니다." />
+  <style>
+    /* 토큰은 DESIGN.md §2 색 표를 그대로 사용한다. 새 역할은 추가하지 않았다. */
+    :root {
+      --wiki-canvas: #f7f7f4;
+      --wiki-paper: #ffffff;
+      --wiki-nav: #1a1f2e;
+      --wiki-nav-hover: #2a3045;
+      --wiki-text: #27313d;
+      --wiki-muted: #697586;
+      --wiki-line: #d9dee5;
+      --wiki-accent: #b63c32;
+      --wiki-accent-dark: #8f2d27;
+      --wiki-toc: #fbf4f1;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--wiki-canvas);
+      color: var(--wiki-text);
+      font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      font-size: 1rem;
+      line-height: 1.75;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+    }
+    a { color: var(--wiki-accent); }
+    a:hover { color: var(--wiki-accent-dark); }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--wiki-accent); outline-offset: 2px; }
+    .skip { position: absolute; left: -9999px; }
+    .skip:focus { left: 16px; top: 16px; background: var(--wiki-paper); padding: 8px 12px; z-index: 10; }
+
+    .draft-banner {
+      background: var(--wiki-toc);
+      border-bottom: 1px solid var(--wiki-line);
+      color: var(--wiki-accent-dark);
+      font-size: 0.8rem;
+      line-height: 1.5;
+      padding: 8px 20px;
+      text-align: center;
+    }
+    header.site {
+      background: var(--wiki-nav);
+      color: #fff;
+    }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .topbar {
+      display: flex; flex-wrap: wrap; gap: 12px 24px;
+      align-items: center; justify-content: space-between;
+      padding: 16px 0;
+    }
+    .brand { color: #fff; text-decoration: none; font-weight: 700; font-size: 1.15rem; }
+    .brand small { color: #b9c0cc; font-weight: 400; margin-left: 8px; font-size: 0.8rem; }
+    nav.primary ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px; }
+    nav.primary a {
+      display: block; color: #e6e9ef; text-decoration: none;
+      padding: 6px 12px; border-radius: 4px; font-size: 0.95rem;
+    }
+    nav.primary a:hover { background: var(--wiki-nav-hover); color: #fff; }
+
+    .hero { padding: 40px 0 48px; }
+    .hero h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 12px; }
+    .hero .lede { max-width: 78ch; color: #d5dae3; margin: 0 0 24px; font-size: 1.05rem; }
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      display: inline-block; text-decoration: none; font-weight: 700;
+      padding: 10px 18px; border-radius: 4px; border: 1px solid transparent;
+    }
+    .btn-primary { background: var(--wiki-accent); color: #fff; }
+    .btn-primary:hover { background: var(--wiki-accent-dark); color: #fff; }
+    .btn-ghost { border-color: #5b6478; color: #fff; }
+    .btn-ghost:hover { background: var(--wiki-nav-hover); color: #fff; }
+
+    main section { padding: 40px 0; border-bottom: 1px solid var(--wiki-line); }
+    main section:last-of-type { border-bottom: 0; }
+    h2 { font-size: 1.45rem; line-height: 1.35; margin: 0 0 8px; }
+    h2::after { content: ""; display: block; width: 40px; height: 3px; background: var(--wiki-accent-dark); margin-top: 8px; }
+    h3 { font-size: 1.15rem; line-height: 1.45; margin: 0 0 8px; }
+    .section-lede { max-width: 78ch; color: var(--wiki-muted); margin: 12px 0 24px; }
+    p { max-width: 78ch; margin: 0 0 12px; }
+
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+    .card {
+      background: var(--wiki-paper);
+      border: 1px solid var(--wiki-line);
+      border-radius: 6px;
+      padding: 20px;
+      min-width: 0;
+    }
+    .card p:last-child { margin-bottom: 0; }
+    .source { display: block; color: var(--wiki-muted); font-size: 0.8rem; line-height: 1.5; margin-top: 8px; }
+
+    .tag {
+      display: inline-block; font-size: 0.75rem; line-height: 1.4; font-weight: 700;
+      padding: 2px 8px; border-radius: 999px; vertical-align: middle;
+      border: 1px solid currentColor; margin-right: 6px;
+    }
+    .tag-canon { color: var(--wiki-accent-dark); }
+    .tag-reported { color: #4a5568; background: #eef1f5; border-color: #c4ccd8; }
+    .tag-proposal { color: #7a5b12; background: #fdf6e3; border-color: #e3cf96; }
+
+    .showcase {
+      display: grid; gap: 24px; align-items: center;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      background: var(--wiki-paper); border: 1px solid var(--wiki-line); border-radius: 6px; padding: 24px;
+    }
+    .showcase-frame {
+      aspect-ratio: 16 / 9; width: 100%;
+      background: linear-gradient(135deg, var(--wiki-nav), var(--wiki-nav-hover));
+      border-radius: 4px; display: flex; align-items: center; justify-content: center;
+      color: #d5dae3; text-align: center; padding: 16px; font-size: 0.95rem;
+    }
+
+    table { border-collapse: collapse; width: 100%; background: var(--wiki-paper); }
+    .table-scroll { overflow-x: auto; border: 1px solid var(--wiki-line); border-radius: 6px; }
+    th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--wiki-line); vertical-align: top; }
+    th { background: var(--wiki-toc); font-size: 0.9rem; }
+    tr:last-child td { border-bottom: 0; }
+    .status-col, tbody td:first-child { white-space: nowrap; }
+
+    ul.links { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); }
+    ul.links a { display: block; background: var(--wiki-paper); border: 1px solid var(--wiki-line);
+      border-radius: 6px; padding: 14px 16px; text-decoration: none; }
+    ul.links a:hover { border-color: var(--wiki-accent); }
+    ul.links strong { display: block; color: var(--wiki-text); }
+    ul.links span { display: block; color: var(--wiki-muted); font-size: 0.85rem; line-height: 1.5; }
+
+    footer.site { background: var(--wiki-nav); color: #b9c0cc; font-size: 0.8rem; line-height: 1.5; padding: 24px 0; }
+    footer.site p { max-width: none; }
+
+    @media (max-width: 768px) {
+      .wrap { padding: 0 16px; }
+      .hero { padding: 28px 0 32px; }
+      .hero h1 { font-size: 1.6rem; }
+      main section { padding: 28px 0; }
+      .showcase { grid-template-columns: minmax(0, 1fr); padding: 16px; }
+      nav.primary a { padding: 4px 8px; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main-content">본문으로 건너뛰기</a>
+  <div class="draft-banner" role="note">프로토타입 초안 — 실제 배포본이 아니며 문구는 소유자 검토 전이다. 표식: <b>게시 문서</b>=공개 위키 문서 인용, <b>REPORTED</b>=관측 보고 수치, <b>제안</b>=승인 전 어조·문구.</div>
+
+  <header class="site">
+    <div class="wrap">
+      <div class="topbar">
+        <a class="brand" href="#intro">서울:전국<small>Seoul Subway States</small></a>
+        <nav class="primary" aria-label="주요 메뉴">
+          <ul>
+            <li><a href="#intro">소개</a></li>
+            <li><a href="#showcase">쇼케이스</a></li>
+            <li><a href="#evidence">플레이·기술</a></li>
+            <li><a href="#docs">기획 문서</a></li>
+            <li><a href="#status">개발 상태</a></li>
+            <li><a href="#links">링크</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="hero">
+        <h1>서울:전국</h1>
+        <p class="lede">붕괴 이후 서울의 지하철역을 무대로 한 인물 중심의 대전략·TRPG 기반 CRPG 프로젝트. 세계관은 공식 위키에 공개되어 있다.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://sss.linalab.io/wiki/seoul-showcase/">쇼케이스 보기</a>
+          <a class="btn btn-ghost" href="https://sss.linalab.io/wiki/">공식 위키 읽기</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="intro" aria-labelledby="intro-title">
+      <div class="wrap">
+        <h2 id="intro-title">프로젝트 소개</h2>
+        <p class="section-lede">세계의 출발점과 현재 무대. 아래 문장은 공개 위키 게시 문서에서 인용했다.</p>
+        <div class="grid">
+          <article class="card">
+            <h3><span class="tag tag-canon">게시 문서</span>대정전</h3>
+            <p>2030년 10월 14일 21:47경 청와대 국가위기관리센터의 전국 시군구 표시가 차례로 꺼졌다. 이 사건이 대정전이다.</p>
+            <a class="source" href="https://sss.linalab.io/wiki/world/World-Unbinding">출처: 위키 「대정전」</a>
+          </article>
+          <article class="card">
+            <h3><span class="tag tag-canon">게시 문서</span>지하철역의 사람들</h3>
+            <p>한국인들은 지역마다 지하철역을 중심으로 마련한 방공호에 모였다. 2126년 서울에서 나라를 세우는 주체는 인물이다.</p>
+            <a class="source" href="https://sss.linalab.io/wiki/world/People-and-Machines">출처: 위키 「대정전」·「사람과 기체」</a>
+          </article>
+          <article class="card">
+            <h3><span class="tag tag-canon">게시 문서</span>서울 안의 세계</h3>
+            <p>현재 세계는 서울 안에서만 성립한다. 서울에는 세 정치 세력과 지하철 노선이 있으며, 사람들의 관계와 사건도 그 안에서 이어진다.</p>
+            <a class="source" href="https://sss.linalab.io/wiki/world/Sixteen-States">출처: 위키 「대정전」·「서울 십육국」</a>
+          </article>
+        </div>
+        <p style="margin-top:16px"><span class="tag tag-proposal">제안</span>대표 어조 후보: “절망적이지 않은 쇠퇴” — 승인 전 어조 제안이며 확정 슬로건이 아니다.</p>
+      </div>
+    </section>
+
+    <section id="showcase" aria-labelledby="showcase-title">
+      <div class="wrap">
+        <h2 id="showcase-title">쇼케이스</h2>
+        <p class="section-lede">세계관을 장면과 내레이션으로 보여 주는 독립 웹 쇼케이스. 위키 경로 아래에서 그대로 서비스된다.</p>
+        <div class="showcase">
+          <div class="showcase-frame" aria-hidden="true">쇼케이스 대표 장면 자리<br />(캡처 이미지는 소유자 선택 후 배치)</div>
+          <div>
+            <h3>서울:전국 쇼케이스</h3>
+            <p>장면 전환과 한국어 내레이션으로 세계의 첫인상을 전한다. 등장 초상은 위키 공개 초상이며 정본 승인 이미지가 아니다.</p>
+            <p><a class="btn btn-primary" href="https://sss.linalab.io/wiki/seoul-showcase/">쇼케이스 열기</a></p>
+            <span class="source">경로 보존: https://sss.linalab.io/wiki/seoul-showcase/</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="evidence" aria-labelledby="evidence-title">
+      <div class="wrap">
+        <h2 id="evidence-title">플레이·기술 증거</h2>
+        <p class="section-lede">무엇이 실제로 동작하고 무엇이 공개되어 있는지를 링크로 확인할 수 있게 한다. 수치는 관측일과 함께 표기한다.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>공개 위키와 문서 API</h3>
+            <p>세계관 문서는 PostgreSQL 정본에서 생성되어 공개 위키와 읽기 전용 API로 제공된다.</p>
+            <p><span class="tag tag-reported">REPORTED</span>공개 문서 목록 61건 · 2026-11-04 관측</p>
+            <a class="source" href="https://sss.linalab.io/wiki/">위키 열기</a>
+          </article>
+          <article class="card">
+            <h3>인물 카탈로그</h3>
+            <p>등록 인물은 공개 인물 목록과 상세 페이지로 게시된다. 게시는 설정 승인이나 게임 구현 완료를 뜻하지 않는다.</p>
+            <p><span class="tag tag-reported">REPORTED</span>health 응답 인물 511명 · 2026-11-04 관측</p>
+            <a class="source" href="https://sss.linalab.io/wiki/people">인물 목록</a>
+          </article>
+          <article class="card">
+            <h3>서울 세계 지도</h3>
+            <p>지도에는 개막일의 지상 점유지와 철도 위치가 함께 표시된다. 선로 표시는 개막일 통행 가능 여부를 뜻하지 않는다.</p>
+            <p><span class="tag tag-reported">REPORTED</span>「서울 역 카탈로그」 기재: 관측 위치 332행, 지도 표시 역 307곳</p>
+            <a class="source" href="https://sss.linalab.io/wiki/world/World-and-Subway-Layers">출처: 위키 「세계 지도」·「서울 역 카탈로그」</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="docs" aria-labelledby="docs-title">
+      <div class="wrap">
+        <h2 id="docs-title">기획 문서</h2>
+        <p class="section-lede">세계관 정본은 위키, 게임 설계·규칙은 GDD가 소유한다. 홈페이지는 요약하지 않고 원문으로 연결한다.</p>
+        <ul class="links">
+          <li><a href="https://sss.linalab.io/wiki/world/"><strong>세계관 색인</strong><span>공개 세계관 문서 전체 목록</span></a></li>
+          <li><a href="https://sss.linalab.io/wiki/world/Century-Annals"><strong>서울전국 연표 2030–2126</strong><span>날짜가 있는 사건의 연표</span></a></li>
+          <li><a href="https://sss.linalab.io/wiki/world/Sixteen-States"><strong>서울 십육국</strong><span>세 국가와 봉신, 중립 중앙정보부</span></a></li>
+          <li><a href="https://sss.linalab.io/wiki/world/Scenario-Timeline"><strong>시나리오 타임라인</strong><span>개막일과 개막 이후 사건</span></a></li>
+          <li><a href="https://sss.linalab.io/wiki/world/Glossary"><strong>용어 사전</strong><span>세계관 용어 정의</span></a></li>
+          <li><a href="https://sss.linalab.io/gdd/"><strong>GDD (설계 문서)</strong><span>게임 설계·규칙 정본 · 현재 접근 제한</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="status" aria-labelledby="status-title">
+      <div class="wrap">
+        <h2 id="status-title">개발 상태</h2>
+        <p class="section-lede">상태는 “공개됨 / 접근 제한 / 진행 중”처럼 확인 가능한 사실로만 적는다. 게시는 승인이나 게임 구현 완료를 뜻하지 않는다.</p>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th scope="col">영역</th><th scope="col" class="status-col">상태</th><th scope="col">확인 방법</th></tr></thead>
+            <tbody>
+              <tr><td>공식 위키</td><td class="status-col">공개됨</td><td>/wiki/ 익명 HTTP 200 (2026-11-04 관측)</td></tr>
+              <tr><td>쇼케이스</td><td class="status-col">공개됨</td><td>/wiki/seoul-showcase/ 익명 HTTP 200 (2026-11-04 관측)</td></tr>
+              <tr><td>GDD 뷰어</td><td class="status-col">접근 제한</td><td>/gdd/ 익명 요청은 로그인으로 이동 (2026-11-04 관측)</td></tr>
+              <tr><td>세계관 집필</td><td class="status-col">진행 중</td><td>문서 편집은 draft이며 소유자 승인 절차를 따른다</td></tr>
+              <tr><td>게임 빌드</td><td class="status-col">비공개</td><td>공개 플레이 빌드 없음 — 공개 시 이 행을 갱신</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="links" aria-labelledby="links-title">
+      <div class="wrap">
+        <h2 id="links-title">외부 링크</h2>
+        <ul class="links">
+          <li><a href="https://github.com/islee23520/seoul-dengoku-wiki"><strong>GitHub — seoul-dengoku-wiki</strong><span>공식 위키 저장소</span></a></li>
+          <li><a href="https://sss.linalab.io/wiki/"><strong>공식 위키</strong><span>sss.linalab.io/wiki/</span></a></li>
+          <li><a href="https://sss.linalab.io/wiki/seoul-showcase/"><strong>쇼케이스</strong><span>sss.linalab.io/wiki/seoul-showcase/</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>서울:전국 (Seoul Subway States) · 이 페이지는 docs/homepage-proposal의 프로토타입 초안이다. 문구 근거는 같은 폴더의 proposal.md를 따른다.</p>
+    </div>
+  </footer>
+</body>
+</html>
