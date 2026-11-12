@@ -175,8 +175,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 
 ## 2시대 · 역의 세대들
 
-<!-- owner-pending: the era split of the first century (Eras 2 to 5) and their order are task 7 framing defaults, not bible section 3 dates -->
-
 역으로 내려간 뒤 수십 년은 날짜가 붙은 기록을 거의 남기지 않았다. 역들은 그 시절을 세대로 기억한다. 내려온 사람들, 그들의 자식들, 그 자식들의 자식들. 아래는 그 세대들이 기억되는 모습을 대부분의 역이 전하는 순서대로 적은 것이다.
 
 ### 입을 세다
@@ -195,12 +193,10 @@ section_checkpoint: task 7 chronology rewrite: complete
 
 새 기반시설이 없으니 인구가 늘 수 없었다. 펌프 운전자를 한 명 더 둘 자리가 있는 역은 꼭 한 명분의 자리만 있었고, 낯선 사람을 가르칠 여유가 없었다. 그래서 사람들은 하던 일을 자식에게 물려주었다. 펌프 운전자의 자식이 펌프 운전자가 됐다. 케이블 일꾼의 자식이 케이블을 배웠다.
 
-<!-- owner-pending: the shelters' leaders first chosen by vote and then becoming hereditary is a provisional detail carried from the earlier World-Unbinding text -->
 대개 서로 연락이 끊긴 대피소들은 처음에 투표로 지도자를 뽑았고, 그 자리도 곧 같은 방식으로 세습됐다고 전한다. 그렇게 굳은 수직 계층은 한 번도 풀리지 않았다. 2126년에도 대부분의 사람에게 일과 지위와 자리는 부모의 것 그대로다.
 
 ### 지상은 추위의 것
 
-<!-- owner-pending: the timing of the surface ecology's change after the Great Blackout is a provisional framing, not a bible date -->
 지상은 비어 있지 않았다. 끝없는 추위 속에서 살 수 있는 동물들이 거리와 공원과 빈 건물로 퍼졌고, 세대를 거치며 사람들이 땅 위를 다니는 방식을 바꿔 놓았다. 어떤 동물이 언제 나타났는지는 전하는 이마다 다르다. 다만 첫 생존자들의 손주가 수집하러 올라갈 무렵에는 지상이 추위와 동물을 함께 셈해 두어야 하는 곳이었다는 데는 모두 같다. 지금 그곳에 사는 것들은 [적대 생태 색인](/wiki/Hostile-Ecology-Index/)에 정리돼 있다.
 
 그래도 수집하러 올라가는 길은 계속됐다. 역이 만들지 못하는 것은 모두 위의 건물에 있었고, 세대마다 더 멀리 가서 찾았다.
@@ -223,7 +219,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 
 서울에서 계절에 맞춰 옷을 입는 사람은 없다. 옷은 걷히지 않는 추위에 맞춰 겹으로 짓는다. 살에 닿는 것, 그 위에 누빈 것, 바람을 막는 것. 외투보다 신발이 중요하다. 역과 터널의 바닥이 발의 열을 빼앗기 때문이다. 지상으로 올라가는 사람은 가진 것을 다 껴입고, 모자란 것은 빌린다.
 
-<!-- owner-pending: clothing layers showing rank and work is a provisional detail; per-faction clothing rules belong to the faction society documents -->
 세대를 거치며 입는 것이 하는 일과 받을 몫을 드러내게 됐다. 펌프 운전자의 가족은 짐꾼보다 좋은 펠트를 살 수 있었다. 그 모습은 세력별 사회 문서에 세력마다 적혀 있다.
 
 ### 수집
@@ -236,7 +231,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 
 역을 묶어 둔 모든 사슬 가운데 아무도 끊을 수 없는 것이 물이었다. 얼음은 녹일 수 있었지만 녹이려면 열이 필요했고, 열에는 연료나 전기가 필요했다. 펌프는 깊은 관에서 물을 끌어올 수 있었지만 펌프에는 전기와 부품이 필요했다. 돌아가는 펌프를 쥔 역은 물을 거의 무엇과도 바꿀 수 있었고, 펌프를 잃은 역에는 다른 펌프를 찾을 시간이 몇 해가 아니라 며칠뿐이었다.
 
-<!-- owner-pending: water supply contracts between stations as a long-standing practice before 2126 is a provisional framing; only the third contract in winter 2126 is fixed -->
 대개 급수계약의 관습은 이렇게 시작됐다고 전한다. 펌프를 쥔 사람과 물이 필요한 사람 사이의 약속을 적어 두고 다시 맺는 것이다. 누가 처음 서명했는지는 전하는 이마다 다르다. 다만 백 년이 끝날 무렵 급수계약이 서울의 모든 세력이 무겁게 여기는 몇 안 되는 약속 가운데 하나였다는 데는 모두 같다.
 
 ### 약과 병
@@ -310,15 +304,12 @@ section_checkpoint: task 7 chronology rewrite: complete
 
 ## 3시대 · 바꿀 수 없는 기계들
 
-<!-- owner-pending: the drone years and the later spread of cyberware as a sequence are provisional framing under the tech doctrine (bible rows 14 and 15) -->
-
 대정전 이전 세계에는 현대 무기, 드론, 휴머노이드, 몸의 일부를 대신하는 기계가 있었다. 그 모두가 역으로 살아남아 들어왔다. 어느 것도 다시 많이 만들 수 없었다. 이 시대는 바꿀 수 없는 기계와 함께 사는 법을 배운 때로 기억된다.
 
 ### 공장 없는 총
 
 현대 화기는 사라지지 않았다. 소총, 권총, 산탄총이 들고 온 사람들과 함께 역으로 내려왔고 지금도 쏠 수 있다. 모자란 것은 탄약이었다. 한 발 쏠 때마다 세상의 탄약이 한 발 줄었고, 역들은 물을 세듯 탄을 세는 법을 배웠다.
 
-<!-- owner-pending: brass collection and hand reloading as station practice is a research-grounded provisional detail (docs/research/w2v-tech-scarcity.md section 3) -->
 대개 싸움이 끝날 때마다 빈 탄피를 줍는 것이 습관이 됐다고 전한다. 탄피는 다시 채울 수 있지만, 탄이 발사되게 하는 부분은 훨씬 바꾸기 어렵다. 총은 가문이 물려주는 물건이 됐고, 꽉 찬 탄창은 쓰기보다 내보이는 물건이 됐다. 사람들은 지금도 칼과 몽둥이를 든다. 간수하는 데 드는 것이 없기 때문이다. 그래도 서울에서 그것을 더 나은 무기로 착각하는 사람은 없다.
 
 ### 드론의 해들
@@ -335,7 +326,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 
 서울에서 사이버웨어는 살아 있는 기술이다. 기계 신체 부품은 작동하고, 사람들이 쓴다. 동시에 희소하다. 부품마다 정비, 전력, 예비 부품이 필요하고, 누군가 그 셋을 쥐고 있어야 한다. 누가 기계 몸을 갖고 누가 그것을 계속 돌리는지는 그 유지를 쥔 사람과 세력에 닿을 수 있느냐에 달려 있다.
 
-<!-- owner-pending: cyberware first spreading as repair of the injured, before any faith or rank attached to it, is a provisional ordering -->
 대개 사이버웨어는 처음에 수리로 퍼졌다고 전한다. 펌프 사고 뒤에 바꾼 손, 얼어붙은 계단통으로 떨어진 뒤에 바꾼 다리. 한쪽에서 지위를, 다른 쪽에서 신앙을 뜻하게 된 것은 나중 일이다. 정비할 수 없는 신체 부품은 짐이 되며, 역들은 그것을 어렵게 배웠다.
 
 ### 유지가 곧 힘
@@ -398,9 +388,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 
 ## 4시대 · 역을 쥐는 세 가지 방식
 
-<!-- owner-pending: the order in which the three ways of rule formed before 2112 is a provisional framing; only the Arc's 2122 date is fixed -->
-
-<!-- owner-pending: Go Ye-jin being born after the Government and the Free City took shape is a provisional inference, not a bible date -->
 백 년의 긴 한가운데에서 역들은 세 가지 사는 방식으로 갈라졌다. 그 가운데 둘은 고예진이 태어나기 전에 모양을 갖췄다. 셋째가 그의 것이었다.
 
 | 세력 | 영역 | 공작령 | 권력을 쥐는 방식 |
@@ -429,7 +416,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 
 장부 밖의 사람에게는 그 어느 것도 없다. 누군가의 허락으로만 정부의 역에서 살 수 있고, 쫓겨날 수 있다. 강 북쪽 사람 대부분에게 그것은 처음부터 고를 수 있는 일이 아니었다. 적혀 있는 것이 곧 살아 있는 것이다.
 
-<!-- owner-pending: Government levy and ration practice described here is a provisional default; the Government-Society document owns the details -->
 징발, 배급, 신분의 세부는 [정부 사회](/wiki/Government-Society/) 문서가 다룬다.
 
 ### 도시들이 거래하는 법
@@ -482,7 +468,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 
 고예진은 자유도시에서 자랐다. 그의 어린 시절에는 아무도 도시들을 유니온이라고 부르지 않았다. 그냥 자유도시였다. 누구 일이 더 중요한지 다투고, 만들지 못하는 것은 무엇이든 바꿔 쓰는 엔지니어들의 땅이었다.
 
-<!-- owner-pending: Go Ye-jin learning grid work as a trade before 2112 is a provisional inference from the bible 2112 row -->
 그곳 아이들 대부분처럼 그도 주변의 일을 배웠다. 대개 그것은 전기였다고 전한다. 전선, 접속함, 역 사이로 전류를 나르는 케이블. 다스리는 이가 없는 도시에서 그 일은 권위에 가장 가까운 것이었다. 불을 켜 두는 사람의 말을 사람들이 들었다.
 
 그 무렵 백 년은 이미 늙어 있었다. 정부의 장부는 강 북쪽에서 법으로 굳었다. 자유도시는 남서쪽에서 거래하고 다퉜다. 서울 밖의 기계들은 마지막 명령을 계속 따랐고, 겨울은 계속됐으며, 무엇이 바뀌리라고 기대하는 사람은 없었다.
@@ -501,7 +486,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 
 ## 백 년을 기억하는 방식
 
-<!-- owner-pending: the three factions' different ways of remembering the century are provisional framing -->
 세력마다 백 년을 제 방식으로 이야기하고, 그 이야기마다 제게 맞지 않는 것은 뺀다.
 
 정부는 백 년을 장부의 이야기로 기억한다. 그 이야기에서 역들이 살아남은 것은 누군가 누가 속하고 무엇을 받을지를 적었기 때문이고, 정부는 목록을 지켜 온 모든 이의 후계자다. 한 번도 적히지 않은 사람들에 대해서는 말이 적다.
@@ -564,7 +548,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 
 ### 열둘이 지닌 것
 
-<!-- owner-pending: how the twelve first baptised were chosen and what parts they received are not fixed; this passage stays general on purpose -->
 첫 열둘에 대한 이야기는 짧다. 그들은 고예진에게 자기 몸을 바꾸도록 맡겼다. 그 세례 뒤로 열둘은 신앙의 표지를 자기 살과 금속에 지니고 다녔고, 만나는 사람 누구나 그것을 볼 수 있었다. 증거를 보여 줄 수 있으니 신앙을 설명할 필요가 없었다.
 
 <a id="2118년"></a>
@@ -645,7 +628,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 
 ### 전선과 신앙
 
-<!-- owner-pending: the Arc's early grid and repair work after 2122 is a provisional framing built on Go Ye-jin's grid trade -->
 아크는 제가 어디서 왔는지 잊지 않았다. 세운 이가 케이블을 따라간 전력 일꾼이었고, 대개 아크는 그 뒤로 전기와 수리를 삶의 한가운데 두어 왔다고 전한다. 몸 안의 금속을 세는 신앙에는 그 금속에 전기를 대고 돌아가게 할 사람이 필요하고, 아크는 그런 사람을 기른다.
 
 <a id="2123년"></a>
@@ -720,7 +702,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 | 자유도시(유니온) | 거래를 통해. 부품, 수리, 탄이 엔지니어들 사이에서 사고팔린다. |
 | 아크 | 세례를 통해. 이식한 부위를 신앙으로 센다. |
 
-<!-- owner-pending: the faction access table above follows the tech doctrine (bible rows 14 and 15) but its per-faction wording is a provisional default -->
 신종목은 강남 논현2동에 산다. 무전에서는 백야라는 호출부호로 답하며, 그의 신호는 선정릉과 수서 사이를 오간다.
 
 ### 개막 직전의 정부

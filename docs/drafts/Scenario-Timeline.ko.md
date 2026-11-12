@@ -17,8 +17,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 | 2117 무렵~2122 무렵 | 첫 세례와 아크 | 2117년 무렵 열두 명이 첫 세례를 받는다. 2120년 지연희가 탄천에서 고예진 곁에 선다. 2122년 무렵 강남 대피소들이 아크라는 이름으로 묶인다. |
 | 2126 겨울 | 개막 전야 | 세 번째 급수계약이 가깝다. 세례를 받은 지 일 년이 안 된 개종자들이 사라진다. |
 
-<!-- owner-pending: the middle eras of this table (station generations, irreplaceable machines, the middle of the century) are task 7 framing without fixed dates -->
-
 <a id="20262126-연도별-진입"></a>
 
 ## 연도별 진입

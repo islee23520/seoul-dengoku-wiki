@@ -538,8 +538,6 @@ Between stations, the tunnels mattered as much as the stations themselves. A tun
 
 ## Era 2 · The Station Generations
 
-<!-- owner-pending: the era split of the first century (Eras 2 to 5) and their order are task 7 framing defaults, not bible section 3 dates -->
-
 The decades after the descent left almost no dated records. The stations remember them by generations: the people who came down, their children, and their children''s children. What follows is how those generations are remembered, in the order most stations tell it.
 
 ### Counting Mouths
@@ -558,12 +556,10 @@ Water mattered most. Pumps had to run for anyone to drink, and pumps needed powe
 
 With no new infrastructure, the population could not grow. A station that had room for one more pump operator had room for exactly one, and it could not afford to train strangers. So people had their children take over the work they had been doing. The pump operator''s child became a pump operator. The cable worker''s child learned cable.
 
-<!-- owner-pending: the shelters'' leaders first chosen by vote and then becoming hereditary is a provisional detail carried from the earlier World-Unbinding text -->
 By most accounts, the shelters that lost contact with each other first chose their leaders by vote, and the posts soon became hereditary in the same way. The vertical hierarchy that hardened this way has never loosened. In 2126 a person''s work, rank and place are still, for most people, what their parents'' were.
 
 ### The Surface Belongs to the Cold
 
-<!-- owner-pending: the timing of the surface ecology''s change after the Great Blackout is a provisional framing, not a bible date -->
 The surface did not stay empty. Animals that could live in the endless cold spread through the streets, the parks and the empty buildings, and over the generations they changed the way people moved above ground. The tellings disagree on when each kind appeared. They agree that by the time the grandchildren of the first survivors went up for salvage, the surface was a place where the cold and the animals both had to be planned for. The [Hostile Ecology Index](/wiki/Hostile-Ecology-Index/) catalogues what lives there now.
 
 Salvage trips went up anyway. Everything a station needed that it could not make lay in the buildings above, and each generation went further to find it.
@@ -586,7 +582,6 @@ The calendar survived anyway. Somebody in every station kept counting days and y
 
 Nobody in Seoul dresses for a season. Clothing is built in layers for a cold that never lifts: something close to the skin, something padded over it and something that stops the wind. Boots matter more than coats, because the floors of stations and tunnels draw the heat out of feet. A person going up to the surface wears everything they own and borrows what they lack.
 
-<!-- owner-pending: clothing layers showing rank and work is a provisional detail; per-faction clothing rules belong to the faction society documents -->
 Over the generations, what people wore came to show what they did and what they were owed. A pump operator''s family could afford better felt than a porter''s. That pattern is described faction by faction in the society documents.
 
 ### Salvage
@@ -599,7 +594,6 @@ Every crew that went up carried its station''s best tools and its best weapons. 
 
 Of all the chains that held a station together, water was the one nobody could cut. Ice could be melted, but melting it took heat, and heat took fuel or power. Pumps could draw from deep pipes, but pumps took power and parts. A station that controlled a working pump could trade water for almost anything, and a station that lost one had days, not years, to find another.
 
-<!-- owner-pending: water supply contracts between stations as a long-standing practice before 2126 is a provisional framing; only the third contract in winter 2126 is fixed -->
 By most accounts, this is how the habit of water supply contracts began: agreements between the people who held pumps and the people who needed water, written down and renewed. The tellings disagree on who signed the first ones. They agree that by the end of the century, a water supply contract was one of the few agreements every faction in Seoul took seriously.
 
 ### Medicine and Sickness
@@ -673,15 +667,12 @@ The cold brought its own sicknesses, and the crowded stations spread them. Medic
 
 ## Era 3 · Machines That Cannot Be Replaced
 
-<!-- owner-pending: the drone years and the later spread of cyberware as a sequence are provisional framing under the tech doctrine (bible rows 14 and 15) -->
-
 The world before the Great Blackout had modern weapons, drones, humanoids and machines that could replace parts of the body. All of them survived into the stations. None of them could be made again in any number. This era is remembered as the time when people learned to live with machines they could not replace.
 
 ### Guns Without Factories
 
 Modern firearms never disappeared. Rifles, pistols and shotguns came down into the stations with the people who carried them, and they still work. What ran short was ammunition. Every round fired is one fewer round in the world, and the stations learned to count rounds the way they counted water.
 
-<!-- owner-pending: brass collection and hand reloading as station practice is a research-grounded provisional detail (docs/research/w2v-tech-scarcity.md section 3) -->
 By most accounts, spent brass became something people picked up after every fight. Casings can be filled again, though the parts that make a round fire are much harder to replace. Guns became things families handed down, and a full magazine became something to show off rather than to spend. People still carry blades and clubs, because those cost nothing to keep, but nobody in Seoul mistakes them for the better weapon.
 
 ### The Drone Years
@@ -698,7 +689,6 @@ Humanoid machines survived in small numbers. Some carried loads, some worked in 
 
 Cyberware is living technology in Seoul. Mechanical body parts work, and people use them. They are also scarce. Each part needs maintenance, power and spare parts, and someone has to hold all three. Who gets a machine body, and who keeps one working, depends on whether a person can reach the people and the faction that control that upkeep.
 
-<!-- owner-pending: cyberware first spreading as repair of the injured, before any faith or rank attached to it, is a provisional ordering -->
 By most accounts, cyberware first spread as repair: a hand replaced after an accident on a pump, a leg after a fall through a frozen stairwell. Only later did it come to mean rank in one place and faith in another. A body part that cannot be serviced is a burden, and the stations learned that the hard way.
 
 ### Upkeep Is Power
@@ -761,9 +751,6 @@ The cold is the machines'' enemy as much as it is the people''s. Batteries lose 
 
 ## Era 4 · Three Ways to Hold a Station
 
-<!-- owner-pending: the order in which the three ways of rule formed before 2112 is a provisional framing; only the Arc''s 2122 date is fixed -->
-
-<!-- owner-pending: Go Ye-jin being born after the Government and the Free City took shape is a provisional inference, not a bible date -->
 Over the long middle of the century the stations sorted themselves into three ways of living. Two of them had taken their shape before Go Ye-jin was born. The third was hers.
 
 | Faction | Territory | Duchies | How it holds power |
@@ -792,7 +779,6 @@ A Government ledger is more than a list of names. It records where a person slee
 
 A person outside the ledger has none of that. They can live in a Government station only by someone''s leave, and they can be turned out. For most people north of the river the choice was never a real one. Being written down is being alive.
 
-<!-- owner-pending: Government levy and ration practice described here is a provisional default; the Government-Society document owns the details -->
 The details of levy, rations and rank belong to the [Government Society](/wiki/Government-Society/) document.
 
 ### How the Cities Trade
@@ -845,7 +831,6 @@ Gangnam''s stations sat at the edge of everything. They were close enough to the
 
 Go Ye-jin grew up in a Free City. In her childhood nobody called the cities the Union. They were the Free City, a place of engineers who argued about whose work mattered more and traded whatever they could not make.
 
-<!-- owner-pending: Go Ye-jin learning grid work as a trade before 2112 is a provisional inference from the bible 2112 row -->
 Like most children there, she learned the work around her. By most accounts it was power: lines, junctions and the cables that carried current between stations. In a city with no ruler, that work was the closest thing to authority. Whoever kept the lights on was listened to.
 
 The century was old by then. The Government''s ledgers had hardened into law north of the river. The Free City traded and quarrelled in the southwest. The machines outside Seoul kept following their last orders, the winter kept on, and nobody expected anything to change.
@@ -864,7 +849,6 @@ By the time Go Ye-jin was a child, the lessons of the century were settled. The 
 
 ## How the Century Is Remembered
 
-<!-- owner-pending: the three factions'' different ways of remembering the century are provisional framing -->
 Each faction tells the hundred years in its own way, and each telling leaves out what does not suit it.
 
 The Government remembers the century as the story of its ledgers. In its telling, the stations survived because someone wrote down who belonged and what they were owed, and the Government is the heir of everyone who ever kept a list. It says little about the people who were never written down.
@@ -927,7 +911,6 @@ Every part needed the same upkeep that any cyberware needs: maintenance, power a
 
 ### What the Twelve Carried
 
-<!-- owner-pending: how the twelve first baptised were chosen and what parts they received are not fixed; this passage stays general on purpose -->
 The tellings of the first twelve are short. They let Go Ye-jin change their bodies. After that baptism, the twelve carried the sign of the faith in their own flesh and metal, and anyone who met them could see it. The faith did not need to be explained when its proof could be shown.
 
 <a id="2118년"></a>
@@ -1008,7 +991,6 @@ The Gangnam shelters had lived in fear of the machines beyond the city for gener
 
 ### Power Lines and Faith
 
-<!-- owner-pending: the Arc''s early grid and repair work after 2122 is a provisional framing built on Go Ye-jin''s grid trade -->
 The Arc never forgot where it came from. Its founder was a grid worker who followed a cable, and by most accounts the Arc has kept power and repair close to the centre of its life ever since. A faith that counts metal in the body needs people who can keep that metal powered and working, and the Arc trains them.
 
 <a id="2123년"></a>
@@ -1083,7 +1065,6 @@ By the eve of the story, Seoul''s map had settled into the shape it has today: t
 | Free City (Union) | Through trade. Parts, repairs and rounds are bought and sold between engineers. |
 | Arc | Through baptism. Implanted parts are counted as faith. |
 
-<!-- owner-pending: the faction access table above follows the tech doctrine (bible rows 14 and 15) but its per-faction wording is a provisional default -->
 Sin Jong-mok lives in Gangnam, in Nonhyeon 2-dong. On the radio he answers to the call sign Baekya, and his signal runs between Seonjeongneung and Suseo.
 
 ### The Government on the Eve
@@ -1312,8 +1293,6 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 ## 2시대 · 역의 세대들
 
-<!-- owner-pending: the era split of the first century (Eras 2 to 5) and their order are task 7 framing defaults, not bible section 3 dates -->
-
 역으로 내려간 뒤 수십 년은 날짜가 붙은 기록을 거의 남기지 않았다. 역들은 그 시절을 세대로 기억한다. 내려온 사람들, 그들의 자식들, 그 자식들의 자식들. 아래는 그 세대들이 기억되는 모습을 대부분의 역이 전하는 순서대로 적은 것이다.
 
 ### 입을 세다
@@ -1332,12 +1311,10 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 새 기반시설이 없으니 인구가 늘 수 없었다. 펌프 운전자를 한 명 더 둘 자리가 있는 역은 꼭 한 명분의 자리만 있었고, 낯선 사람을 가르칠 여유가 없었다. 그래서 사람들은 하던 일을 자식에게 물려주었다. 펌프 운전자의 자식이 펌프 운전자가 됐다. 케이블 일꾼의 자식이 케이블을 배웠다.
 
-<!-- owner-pending: the shelters'' leaders first chosen by vote and then becoming hereditary is a provisional detail carried from the earlier World-Unbinding text -->
 대개 서로 연락이 끊긴 대피소들은 처음에 투표로 지도자를 뽑았고, 그 자리도 곧 같은 방식으로 세습됐다고 전한다. 그렇게 굳은 수직 계층은 한 번도 풀리지 않았다. 2126년에도 대부분의 사람에게 일과 지위와 자리는 부모의 것 그대로다.
 
 ### 지상은 추위의 것
 
-<!-- owner-pending: the timing of the surface ecology''s change after the Great Blackout is a provisional framing, not a bible date -->
 지상은 비어 있지 않았다. 끝없는 추위 속에서 살 수 있는 동물들이 거리와 공원과 빈 건물로 퍼졌고, 세대를 거치며 사람들이 땅 위를 다니는 방식을 바꿔 놓았다. 어떤 동물이 언제 나타났는지는 전하는 이마다 다르다. 다만 첫 생존자들의 손주가 수집하러 올라갈 무렵에는 지상이 추위와 동물을 함께 셈해 두어야 하는 곳이었다는 데는 모두 같다. 지금 그곳에 사는 것들은 [적대 생태 색인](/wiki/Hostile-Ecology-Index/)에 정리돼 있다.
 
 그래도 수집하러 올라가는 길은 계속됐다. 역이 만들지 못하는 것은 모두 위의 건물에 있었고, 세대마다 더 멀리 가서 찾았다.
@@ -1360,7 +1337,6 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 서울에서 계절에 맞춰 옷을 입는 사람은 없다. 옷은 걷히지 않는 추위에 맞춰 겹으로 짓는다. 살에 닿는 것, 그 위에 누빈 것, 바람을 막는 것. 외투보다 신발이 중요하다. 역과 터널의 바닥이 발의 열을 빼앗기 때문이다. 지상으로 올라가는 사람은 가진 것을 다 껴입고, 모자란 것은 빌린다.
 
-<!-- owner-pending: clothing layers showing rank and work is a provisional detail; per-faction clothing rules belong to the faction society documents -->
 세대를 거치며 입는 것이 하는 일과 받을 몫을 드러내게 됐다. 펌프 운전자의 가족은 짐꾼보다 좋은 펠트를 살 수 있었다. 그 모습은 세력별 사회 문서에 세력마다 적혀 있다.
 
 ### 수집
@@ -1373,7 +1349,6 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 역을 묶어 둔 모든 사슬 가운데 아무도 끊을 수 없는 것이 물이었다. 얼음은 녹일 수 있었지만 녹이려면 열이 필요했고, 열에는 연료나 전기가 필요했다. 펌프는 깊은 관에서 물을 끌어올 수 있었지만 펌프에는 전기와 부품이 필요했다. 돌아가는 펌프를 쥔 역은 물을 거의 무엇과도 바꿀 수 있었고, 펌프를 잃은 역에는 다른 펌프를 찾을 시간이 몇 해가 아니라 며칠뿐이었다.
 
-<!-- owner-pending: water supply contracts between stations as a long-standing practice before 2126 is a provisional framing; only the third contract in winter 2126 is fixed -->
 대개 급수계약의 관습은 이렇게 시작됐다고 전한다. 펌프를 쥔 사람과 물이 필요한 사람 사이의 약속을 적어 두고 다시 맺는 것이다. 누가 처음 서명했는지는 전하는 이마다 다르다. 다만 백 년이 끝날 무렵 급수계약이 서울의 모든 세력이 무겁게 여기는 몇 안 되는 약속 가운데 하나였다는 데는 모두 같다.
 
 ### 약과 병
@@ -1447,15 +1422,12 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 ## 3시대 · 바꿀 수 없는 기계들
 
-<!-- owner-pending: the drone years and the later spread of cyberware as a sequence are provisional framing under the tech doctrine (bible rows 14 and 15) -->
-
 대정전 이전 세계에는 현대 무기, 드론, 휴머노이드, 몸의 일부를 대신하는 기계가 있었다. 그 모두가 역으로 살아남아 들어왔다. 어느 것도 다시 많이 만들 수 없었다. 이 시대는 바꿀 수 없는 기계와 함께 사는 법을 배운 때로 기억된다.
 
 ### 공장 없는 총
 
 현대 화기는 사라지지 않았다. 소총, 권총, 산탄총이 들고 온 사람들과 함께 역으로 내려왔고 지금도 쏠 수 있다. 모자란 것은 탄약이었다. 한 발 쏠 때마다 세상의 탄약이 한 발 줄었고, 역들은 물을 세듯 탄을 세는 법을 배웠다.
 
-<!-- owner-pending: brass collection and hand reloading as station practice is a research-grounded provisional detail (docs/research/w2v-tech-scarcity.md section 3) -->
 대개 싸움이 끝날 때마다 빈 탄피를 줍는 것이 습관이 됐다고 전한다. 탄피는 다시 채울 수 있지만, 탄이 발사되게 하는 부분은 훨씬 바꾸기 어렵다. 총은 가문이 물려주는 물건이 됐고, 꽉 찬 탄창은 쓰기보다 내보이는 물건이 됐다. 사람들은 지금도 칼과 몽둥이를 든다. 간수하는 데 드는 것이 없기 때문이다. 그래도 서울에서 그것을 더 나은 무기로 착각하는 사람은 없다.
 
 ### 드론의 해들
@@ -1472,7 +1444,6 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 서울에서 사이버웨어는 살아 있는 기술이다. 기계 신체 부품은 작동하고, 사람들이 쓴다. 동시에 희소하다. 부품마다 정비, 전력, 예비 부품이 필요하고, 누군가 그 셋을 쥐고 있어야 한다. 누가 기계 몸을 갖고 누가 그것을 계속 돌리는지는 그 유지를 쥔 사람과 세력에 닿을 수 있느냐에 달려 있다.
 
-<!-- owner-pending: cyberware first spreading as repair of the injured, before any faith or rank attached to it, is a provisional ordering -->
 대개 사이버웨어는 처음에 수리로 퍼졌다고 전한다. 펌프 사고 뒤에 바꾼 손, 얼어붙은 계단통으로 떨어진 뒤에 바꾼 다리. 한쪽에서 지위를, 다른 쪽에서 신앙을 뜻하게 된 것은 나중 일이다. 정비할 수 없는 신체 부품은 짐이 되며, 역들은 그것을 어렵게 배웠다.
 
 ### 유지가 곧 힘
@@ -1535,9 +1506,6 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 ## 4시대 · 역을 쥐는 세 가지 방식
 
-<!-- owner-pending: the order in which the three ways of rule formed before 2112 is a provisional framing; only the Arc''s 2122 date is fixed -->
-
-<!-- owner-pending: Go Ye-jin being born after the Government and the Free City took shape is a provisional inference, not a bible date -->
 백 년의 긴 한가운데에서 역들은 세 가지 사는 방식으로 갈라졌다. 그 가운데 둘은 고예진이 태어나기 전에 모양을 갖췄다. 셋째가 그의 것이었다.
 
 | 세력 | 영역 | 공작령 | 권력을 쥐는 방식 |
@@ -1566,7 +1534,6 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 장부 밖의 사람에게는 그 어느 것도 없다. 누군가의 허락으로만 정부의 역에서 살 수 있고, 쫓겨날 수 있다. 강 북쪽 사람 대부분에게 그것은 처음부터 고를 수 있는 일이 아니었다. 적혀 있는 것이 곧 살아 있는 것이다.
 
-<!-- owner-pending: Government levy and ration practice described here is a provisional default; the Government-Society document owns the details -->
 징발, 배급, 신분의 세부는 [정부 사회](/wiki/Government-Society/) 문서가 다룬다.
 
 ### 도시들이 거래하는 법
@@ -1619,7 +1586,6 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 고예진은 자유도시에서 자랐다. 그의 어린 시절에는 아무도 도시들을 유니온이라고 부르지 않았다. 그냥 자유도시였다. 누구 일이 더 중요한지 다투고, 만들지 못하는 것은 무엇이든 바꿔 쓰는 엔지니어들의 땅이었다.
 
-<!-- owner-pending: Go Ye-jin learning grid work as a trade before 2112 is a provisional inference from the bible 2112 row -->
 그곳 아이들 대부분처럼 그도 주변의 일을 배웠다. 대개 그것은 전기였다고 전한다. 전선, 접속함, 역 사이로 전류를 나르는 케이블. 다스리는 이가 없는 도시에서 그 일은 권위에 가장 가까운 것이었다. 불을 켜 두는 사람의 말을 사람들이 들었다.
 
 그 무렵 백 년은 이미 늙어 있었다. 정부의 장부는 강 북쪽에서 법으로 굳었다. 자유도시는 남서쪽에서 거래하고 다퉜다. 서울 밖의 기계들은 마지막 명령을 계속 따랐고, 겨울은 계속됐으며, 무엇이 바뀌리라고 기대하는 사람은 없었다.
@@ -1638,7 +1604,6 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 ## 백 년을 기억하는 방식
 
-<!-- owner-pending: the three factions'' different ways of remembering the century are provisional framing -->
 세력마다 백 년을 제 방식으로 이야기하고, 그 이야기마다 제게 맞지 않는 것은 뺀다.
 
 정부는 백 년을 장부의 이야기로 기억한다. 그 이야기에서 역들이 살아남은 것은 누군가 누가 속하고 무엇을 받을지를 적었기 때문이고, 정부는 목록을 지켜 온 모든 이의 후계자다. 한 번도 적히지 않은 사람들에 대해서는 말이 적다.
@@ -1701,7 +1666,6 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 ### 열둘이 지닌 것
 
-<!-- owner-pending: how the twelve first baptised were chosen and what parts they received are not fixed; this passage stays general on purpose -->
 첫 열둘에 대한 이야기는 짧다. 그들은 고예진에게 자기 몸을 바꾸도록 맡겼다. 그 세례 뒤로 열둘은 신앙의 표지를 자기 살과 금속에 지니고 다녔고, 만나는 사람 누구나 그것을 볼 수 있었다. 증거를 보여 줄 수 있으니 신앙을 설명할 필요가 없었다.
 
 <a id="2118년"></a>
@@ -1782,7 +1746,6 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 ### 전선과 신앙
 
-<!-- owner-pending: the Arc''s early grid and repair work after 2122 is a provisional framing built on Go Ye-jin''s grid trade -->
 아크는 제가 어디서 왔는지 잊지 않았다. 세운 이가 케이블을 따라간 전력 일꾼이었고, 대개 아크는 그 뒤로 전기와 수리를 삶의 한가운데 두어 왔다고 전한다. 몸 안의 금속을 세는 신앙에는 그 금속에 전기를 대고 돌아가게 할 사람이 필요하고, 아크는 그런 사람을 기른다.
 
 <a id="2123년"></a>
@@ -1857,7 +1820,6 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 | 자유도시(유니온) | 거래를 통해. 부품, 수리, 탄이 엔지니어들 사이에서 사고팔린다. |
 | 아크 | 세례를 통해. 이식한 부위를 신앙으로 센다. |
 
-<!-- owner-pending: the faction access table above follows the tech doctrine (bible rows 14 and 15) but its per-faction wording is a provisional default -->
 신종목은 강남 논현2동에 산다. 무전에서는 백야라는 호출부호로 답하며, 그의 신호는 선정릉과 수서 사이를 오간다.
 
 ### 개막 직전의 정부
@@ -42686,8 +42648,6 @@ Even when the depot runs empty, the certification seal is never forged.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Oral-Stories', 'The Stories', '이야기', 'culture', 3, '<a id="대정전과-급수-기록"></a>
 
-<!-- owner-pending: every story on this page is a told story; their tellers, places and details are provisional and none adds a dated event -->
-
 These are stories people tell in the stations. Nobody wrote them down when they happened. They are passed from parents to children, and each station tells them a little differently.
 
 A. The first log
@@ -42765,8 +42725,6 @@ In the winter of 2126 people tell a new story, about the third water supply cont
 - [Food Culture](/wiki/Food-Culture/)
 - [The Three Factions of Seoul](/wiki/Sixteen-States/)
 ', '<a id="대정전과-급수-기록"></a>
-
-<!-- owner-pending: every story on this page is a told story; their tellers, places and details are provisional and none adds a dated event -->
 
 역에서 사람들이 하는 이야기들이다. 일이 일어났을 때 아무도 적어 두지 않았다. 부모가 자식에게 전하고, 역마다 조금씩 다르게 이야기한다.
 
@@ -43119,8 +43077,6 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 | Around 2117 to around 2122 | The first baptism and the Arc | Twelve people receive the first baptism around 2117. In 2120 Ji Yeon-hui stands beside Go Ye-jin at Tancheon. Around 2122 the Gangnam shelters are joined under the name Arc. |
 | Winter 2126 | Eve of the opening | The third water supply contract is close. Converts baptised less than a year ago are disappearing. |
 
-<!-- owner-pending: the middle eras of this table (station generations, irreplaceable machines, the middle of the century) are task 7 framing without fixed dates -->
-
 <a id="20262126-연도별-진입"></a>
 
 ## Entries by Year
@@ -43241,8 +43197,6 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 | 2112~2117 | 지도에 없는 역 | 고예진이 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾고, 그곳에서 매뉴얼을 다섯 해 동안 읽는다. |
 | 2117 무렵~2122 무렵 | 첫 세례와 아크 | 2117년 무렵 열두 명이 첫 세례를 받는다. 2120년 지연희가 탄천에서 고예진 곁에 선다. 2122년 무렵 강남 대피소들이 아크라는 이름으로 묶인다. |
 | 2126 겨울 | 개막 전야 | 세 번째 급수계약이 가깝다. 세례를 받은 지 일 년이 안 된 개종자들이 사라진다. |
-
-<!-- owner-pending: the middle eras of this table (station generations, irreplaceable machines, the middle of the century) are task 7 framing without fixed dates -->
 
 <a id="20262126-연도별-진입"></a>
 
@@ -50635,7 +50589,6 @@ The winter never lifted. It did not get worse once the survivors reached the num
 
 **A. Leaders of the Shelters**
 
-<!-- owner-pending: shelter leaders first chosen by vote, then hereditary, is a provisional detail kept from the earlier text -->
 By most accounts, each shelter cut off from the others chose its own leader. At first leaders were chosen by vote, but the posts soon became hereditary.
 
 **B. Inherited Work**
@@ -50755,7 +50708,6 @@ Go Ye-jin calls the First AI "God," because human language has no other word for
 
 **가. 대피소의 지도자**
 
-<!-- owner-pending: shelter leaders first chosen by vote, then hereditary, is a provisional detail kept from the earlier text -->
 대개 서로 끊긴 대피소마다 제 지도자를 뽑았다고 전한다. 처음에는 투표로 뽑았지만 그 자리는 곧 세습됐다.
 
 **나. 물려받는 일**

@@ -17,8 +17,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 | Around 2117 to around 2122 | The first baptism and the Arc | Twelve people receive the first baptism around 2117. In 2120 Ji Yeon-hui stands beside Go Ye-jin at Tancheon. Around 2122 the Gangnam shelters are joined under the name Arc. |
 | Winter 2126 | Eve of the opening | The third water supply contract is close. Converts baptised less than a year ago are disappearing. |
 
-<!-- owner-pending: the middle eras of this table (station generations, irreplaceable machines, the middle of the century) are task 7 framing without fixed dates -->
-
 <a id="20262126-연도별-진입"></a>
 
 ## Entries by Year

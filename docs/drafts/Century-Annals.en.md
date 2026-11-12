@@ -175,8 +175,6 @@ Between stations, the tunnels mattered as much as the stations themselves. A tun
 
 ## Era 2 · The Station Generations
 
-<!-- owner-pending: the era split of the first century (Eras 2 to 5) and their order are task 7 framing defaults, not bible section 3 dates -->
-
 The decades after the descent left almost no dated records. The stations remember them by generations: the people who came down, their children, and their children's children. What follows is how those generations are remembered, in the order most stations tell it.
 
 ### Counting Mouths
@@ -195,12 +193,10 @@ Water mattered most. Pumps had to run for anyone to drink, and pumps needed powe
 
 With no new infrastructure, the population could not grow. A station that had room for one more pump operator had room for exactly one, and it could not afford to train strangers. So people had their children take over the work they had been doing. The pump operator's child became a pump operator. The cable worker's child learned cable.
 
-<!-- owner-pending: the shelters' leaders first chosen by vote and then becoming hereditary is a provisional detail carried from the earlier World-Unbinding text -->
 By most accounts, the shelters that lost contact with each other first chose their leaders by vote, and the posts soon became hereditary in the same way. The vertical hierarchy that hardened this way has never loosened. In 2126 a person's work, rank and place are still, for most people, what their parents' were.
 
 ### The Surface Belongs to the Cold
 
-<!-- owner-pending: the timing of the surface ecology's change after the Great Blackout is a provisional framing, not a bible date -->
 The surface did not stay empty. Animals that could live in the endless cold spread through the streets, the parks and the empty buildings, and over the generations they changed the way people moved above ground. The tellings disagree on when each kind appeared. They agree that by the time the grandchildren of the first survivors went up for salvage, the surface was a place where the cold and the animals both had to be planned for. The [Hostile Ecology Index](/wiki/Hostile-Ecology-Index/) catalogues what lives there now.
 
 Salvage trips went up anyway. Everything a station needed that it could not make lay in the buildings above, and each generation went further to find it.
@@ -223,7 +219,6 @@ The calendar survived anyway. Somebody in every station kept counting days and y
 
 Nobody in Seoul dresses for a season. Clothing is built in layers for a cold that never lifts: something close to the skin, something padded over it and something that stops the wind. Boots matter more than coats, because the floors of stations and tunnels draw the heat out of feet. A person going up to the surface wears everything they own and borrows what they lack.
 
-<!-- owner-pending: clothing layers showing rank and work is a provisional detail; per-faction clothing rules belong to the faction society documents -->
 Over the generations, what people wore came to show what they did and what they were owed. A pump operator's family could afford better felt than a porter's. That pattern is described faction by faction in the society documents.
 
 ### Salvage
@@ -236,7 +231,6 @@ Every crew that went up carried its station's best tools and its best weapons. E
 
 Of all the chains that held a station together, water was the one nobody could cut. Ice could be melted, but melting it took heat, and heat took fuel or power. Pumps could draw from deep pipes, but pumps took power and parts. A station that controlled a working pump could trade water for almost anything, and a station that lost one had days, not years, to find another.
 
-<!-- owner-pending: water supply contracts between stations as a long-standing practice before 2126 is a provisional framing; only the third contract in winter 2126 is fixed -->
 By most accounts, this is how the habit of water supply contracts began: agreements between the people who held pumps and the people who needed water, written down and renewed. The tellings disagree on who signed the first ones. They agree that by the end of the century, a water supply contract was one of the few agreements every faction in Seoul took seriously.
 
 ### Medicine and Sickness
@@ -310,15 +304,12 @@ The cold brought its own sicknesses, and the crowded stations spread them. Medic
 
 ## Era 3 · Machines That Cannot Be Replaced
 
-<!-- owner-pending: the drone years and the later spread of cyberware as a sequence are provisional framing under the tech doctrine (bible rows 14 and 15) -->
-
 The world before the Great Blackout had modern weapons, drones, humanoids and machines that could replace parts of the body. All of them survived into the stations. None of them could be made again in any number. This era is remembered as the time when people learned to live with machines they could not replace.
 
 ### Guns Without Factories
 
 Modern firearms never disappeared. Rifles, pistols and shotguns came down into the stations with the people who carried them, and they still work. What ran short was ammunition. Every round fired is one fewer round in the world, and the stations learned to count rounds the way they counted water.
 
-<!-- owner-pending: brass collection and hand reloading as station practice is a research-grounded provisional detail (docs/research/w2v-tech-scarcity.md section 3) -->
 By most accounts, spent brass became something people picked up after every fight. Casings can be filled again, though the parts that make a round fire are much harder to replace. Guns became things families handed down, and a full magazine became something to show off rather than to spend. People still carry blades and clubs, because those cost nothing to keep, but nobody in Seoul mistakes them for the better weapon.
 
 ### The Drone Years
@@ -335,7 +326,6 @@ Humanoid machines survived in small numbers. Some carried loads, some worked in 
 
 Cyberware is living technology in Seoul. Mechanical body parts work, and people use them. They are also scarce. Each part needs maintenance, power and spare parts, and someone has to hold all three. Who gets a machine body, and who keeps one working, depends on whether a person can reach the people and the faction that control that upkeep.
 
-<!-- owner-pending: cyberware first spreading as repair of the injured, before any faith or rank attached to it, is a provisional ordering -->
 By most accounts, cyberware first spread as repair: a hand replaced after an accident on a pump, a leg after a fall through a frozen stairwell. Only later did it come to mean rank in one place and faith in another. A body part that cannot be serviced is a burden, and the stations learned that the hard way.
 
 ### Upkeep Is Power
@@ -398,9 +388,6 @@ The cold is the machines' enemy as much as it is the people's. Batteries lose th
 
 ## Era 4 · Three Ways to Hold a Station
 
-<!-- owner-pending: the order in which the three ways of rule formed before 2112 is a provisional framing; only the Arc's 2122 date is fixed -->
-
-<!-- owner-pending: Go Ye-jin being born after the Government and the Free City took shape is a provisional inference, not a bible date -->
 Over the long middle of the century the stations sorted themselves into three ways of living. Two of them had taken their shape before Go Ye-jin was born. The third was hers.
 
 | Faction | Territory | Duchies | How it holds power |
@@ -429,7 +416,6 @@ A Government ledger is more than a list of names. It records where a person slee
 
 A person outside the ledger has none of that. They can live in a Government station only by someone's leave, and they can be turned out. For most people north of the river the choice was never a real one. Being written down is being alive.
 
-<!-- owner-pending: Government levy and ration practice described here is a provisional default; the Government-Society document owns the details -->
 The details of levy, rations and rank belong to the [Government Society](/wiki/Government-Society/) document.
 
 ### How the Cities Trade
@@ -482,7 +468,6 @@ Gangnam's stations sat at the edge of everything. They were close enough to the 
 
 Go Ye-jin grew up in a Free City. In her childhood nobody called the cities the Union. They were the Free City, a place of engineers who argued about whose work mattered more and traded whatever they could not make.
 
-<!-- owner-pending: Go Ye-jin learning grid work as a trade before 2112 is a provisional inference from the bible 2112 row -->
 Like most children there, she learned the work around her. By most accounts it was power: lines, junctions and the cables that carried current between stations. In a city with no ruler, that work was the closest thing to authority. Whoever kept the lights on was listened to.
 
 The century was old by then. The Government's ledgers had hardened into law north of the river. The Free City traded and quarrelled in the southwest. The machines outside Seoul kept following their last orders, the winter kept on, and nobody expected anything to change.
@@ -501,7 +486,6 @@ By the time Go Ye-jin was a child, the lessons of the century were settled. The 
 
 ## How the Century Is Remembered
 
-<!-- owner-pending: the three factions' different ways of remembering the century are provisional framing -->
 Each faction tells the hundred years in its own way, and each telling leaves out what does not suit it.
 
 The Government remembers the century as the story of its ledgers. In its telling, the stations survived because someone wrote down who belonged and what they were owed, and the Government is the heir of everyone who ever kept a list. It says little about the people who were never written down.
@@ -564,7 +548,6 @@ Every part needed the same upkeep that any cyberware needs: maintenance, power a
 
 ### What the Twelve Carried
 
-<!-- owner-pending: how the twelve first baptised were chosen and what parts they received are not fixed; this passage stays general on purpose -->
 The tellings of the first twelve are short. They let Go Ye-jin change their bodies. After that baptism, the twelve carried the sign of the faith in their own flesh and metal, and anyone who met them could see it. The faith did not need to be explained when its proof could be shown.
 
 <a id="2118년"></a>
@@ -645,7 +628,6 @@ The Gangnam shelters had lived in fear of the machines beyond the city for gener
 
 ### Power Lines and Faith
 
-<!-- owner-pending: the Arc's early grid and repair work after 2122 is a provisional framing built on Go Ye-jin's grid trade -->
 The Arc never forgot where it came from. Its founder was a grid worker who followed a cable, and by most accounts the Arc has kept power and repair close to the centre of its life ever since. A faith that counts metal in the body needs people who can keep that metal powered and working, and the Arc trains them.
 
 <a id="2123년"></a>
@@ -720,7 +702,6 @@ By the eve of the story, Seoul's map had settled into the shape it has today: th
 | Free City (Union) | Through trade. Parts, repairs and rounds are bought and sold between engineers. |
 | Arc | Through baptism. Implanted parts are counted as faith. |
 
-<!-- owner-pending: the faction access table above follows the tech doctrine (bible rows 14 and 15) but its per-faction wording is a provisional default -->
 Sin Jong-mok lives in Gangnam, in Nonhyeon 2-dong. On the radio he answers to the call sign Baekya, and his signal runs between Seonjeongneung and Suseo.
 
 ### The Government on the Eve

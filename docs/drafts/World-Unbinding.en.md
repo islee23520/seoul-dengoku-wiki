@@ -52,7 +52,6 @@ The winter never lifted. It did not get worse once the survivors reached the num
 
 **A. Leaders of the Shelters**
 
-<!-- owner-pending: shelter leaders first chosen by vote, then hereditary, is a provisional detail kept from the earlier text -->
 By most accounts, each shelter cut off from the others chose its own leader. At first leaders were chosen by vote, but the posts soon became hereditary.
 
 **B. Inherited Work**

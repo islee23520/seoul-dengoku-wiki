@@ -52,7 +52,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 
 **가. 대피소의 지도자**
 
-<!-- owner-pending: shelter leaders first chosen by vote, then hereditary, is a provisional detail kept from the earlier text -->
 대개 서로 끊긴 대피소마다 제 지도자를 뽑았다고 전한다. 처음에는 투표로 뽑았지만 그 자리는 곧 세습됐다.
 
 **나. 물려받는 일**

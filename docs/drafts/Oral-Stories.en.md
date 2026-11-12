@@ -6,8 +6,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 ---
 <a id="대정전과-급수-기록"></a>
 
-<!-- owner-pending: every story on this page is a told story; their tellers, places and details are provisional and none adds a dated event -->
-
 These are stories people tell in the stations. Nobody wrote them down when they happened. They are passed from parents to children, and each station tells them a little differently.
 
 A. The first log

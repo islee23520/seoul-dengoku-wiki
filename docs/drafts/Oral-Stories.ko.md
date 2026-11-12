@@ -6,8 +6,6 @@ section_checkpoint: task 7 chronology rewrite: complete
 ---
 <a id="대정전과-급수-기록"></a>
 
-<!-- owner-pending: every story on this page is a told story; their tellers, places and details are provisional and none adds a dated event -->
-
 역에서 사람들이 하는 이야기들이다. 일이 일어났을 때 아무도 적어 두지 않았다. 부모가 자식에게 전하고, 역마다 조금씩 다르게 이야기한다.
 
 가. 첫 일지
