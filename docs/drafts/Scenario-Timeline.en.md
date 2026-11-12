@@ -32,7 +32,7 @@ Things that ran on for a hundred years all come due this winter at once. The gre
 The water supply contract trades what the Government puts in, sites, hands and goods, for what the Free Cities put in, the maintenance and parts of pumps and water wheels. The Free Cities have no collective name, so the contract is not one contract either. Many sheets, each made between the Government and one city, are sealed together at one contract meeting. The first contract was in 2066, the second in 2096. Their history is in [Century Annals 2026-2126](/wiki/Century-Annals/).
 
 - **The Host.** The city that calls the contract meeting is Yeongdeungpo. Yeongdeungpo's head, the Market Master, is Host by turn. The market families hold that seat three years at a time in a fixed order, so the order decided who sits in this seat that comes once in thirty years.
-- **The place.** The empty National Assembly building on Yeouido. When the river froze, the Assembly moved to the Gwanghwamun government complex, and the Yeouido building became Yeongdeungpo ground. The rooms above ground are minus 18 and go unused; the snow-buried lower floors and the level of National Assembly station on Line 9 are heated instead. Government people enter the building their forebears left as guests and stamp their seals.
+- **The place.** The empty National Assembly building on Yeouido. When the river froze, the Assembly moved to the Gwanghwamun government complex, and the Yeouido building became Yeongdeungpo ground. The rooms above ground are minus 18 and go unused; the snow-buried lower floors and the level of National Assembly station on Line 9 are heated instead. Government people enter, as guests, the building their forebears left, and stamp their seals.
 - **The way there.** Government people come through the Mapo-Yeouinaru under-river tunnel. Arc people come from Gubanpo past Dongjak along Line 9. The Arc's way to the contract meeting passes Dongjak's crossing.
 - **No vote.** What is made at the meeting is many contract sheets, and a sheet binds only those who stamped it. Before stamping, anyone may leave.
 - **The Arc sits for the first time.** The Arc holds the power of the Jamsil weir and the Amsa water intake. Now Seoul's water flows only if all three polities put their hands to it.
@@ -112,7 +112,7 @@ People in Seoul do not divide the year into seasons. They call the half-year of 
 - **The blizzard half.** Blizzards are frequent. One lasts 2 to 4 days, and through it the bridges close and work on the surface stops. But the rim machines are blinded too, so the Geumcheon border crews and the perimeter-runners of the north cross the rim now.
 - **Nights on the ice.** People fleeing the ledger and smugglers cross the ice on long-dark nights. Darkness hides the kilometre with nowhere to hide.
 - **The light-fields rest.** The light-fields yield least. Fibre-sugar vats and mushroom tunnels carry the meals. When stores run short, the Government's dong community centres cut the office workers' share first.
-- **Gathering seals.** The Government's Members of the National Assembly size one another up over the seals on the annexes. The Free Cities choose who will go to Yeongdeungpo and what they will leave in pledge. In the Arc, the negotiator of the Hierophant's house settles the numbers of each sheet with the Heads of the Near Houses.
+- **Gathering seals.** The Government's Members of the National Assembly size one another up over the seals on the annexes. The Free Cities choose who will go to Yeongdeungpo and what to entrust to them. In the Arc, the negotiator of the Hierophant's house settles the numbers of each sheet with the Heads of the Near Houses.
 - **The contract meeting.** Yeongdeungpo's Market Master opens the meeting in the Yeouido Assembly building. Sheet by sheet, seals are stamped, or withdrawn.
 
 <a id="opening-long-light"></a>
@@ -128,7 +128,7 @@ People in Seoul do not divide the year into seasons. They call the half-year of 
 
 ### The Long-Dark Half Again
 
-When the year turns and the long-dark half comes again, the price of the sheets stamped and the sheets withdrawn at the meeting shows. Mended pumps run; unmended pumps stop. Which side the Government's President took, whether the land border between the Arc and the Free Cities is quiet, how many technicians crossed over to be baptised: these decide the next year's Seoul. And one thing all three polities know remains. When people outnumber the stations, the winter tightens a notch. The winter does not loosen.
+When the year turns and the long-dark half comes again, the price of the sheets stamped and the sheets withdrawn at the meeting shows. Mended pumps run; unmended pumps stop. Which side the Government's President took, whether the land border between the Arc and the Free Cities is quiet, how many technicians crossed over to be baptised: these decide the next year's Seoul. And one thing all three polities know alike remains: the winter can get worse than it is now, and once it does, there is no going back. People guess that when they outnumber the stations, the winter tightens a notch. The winter does not loosen.
 
 <a id="opening-people"></a>
 

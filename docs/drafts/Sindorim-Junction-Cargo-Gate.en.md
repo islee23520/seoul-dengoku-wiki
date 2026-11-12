@@ -95,7 +95,7 @@ Three of the Free Cities' great roads meet at Sindorim.
 | The western branch | Line 2 Sindorim, Dorimcheon, Yangcheon-gu Office, Sinjeongnegeori, Kkachisan | Guro, Yeongdeungpo, Yangcheon, Gangseo | Yangcheon's track carts and motors, the yield of Gangseo's light-fields |
 | The Line 1 trunk | Noryangjin, Daebang, Singil, Yeongdeungpo, Sindorim, Guro, Gasan Digital Complex, Doksan, Geumcheon-gu Office | Dongjak, Yeongdeungpo, Guro, Geumcheon | Geumcheon's power cores and drilling rigs, Guro's parts |
 
-So if Sindorim is closed, the Free Cities' roads are cut. Gangseo and Yangcheon in the west are cut off from the Yeongdeungpo market and Gwanak's firewood, and Geumcheon in the south from the Guro workshops. That is why Guro, which holds Sindorim, has a loud voice among the Free Cities.
+So if Sindorim is closed, the Free Cities' roads take a long way round. The southern belt, the western branch and the Line 1 trunk part here, so firewood and fibre from Gwanak to Yangcheon and Gangseo, and loads from Geumcheon to the Yeongdeungpo market, must detour along Lines 5 and 9 or Line 7. That is why Guro, which holds Sindorim, has a loud voice among the Free Cities.
 
 <a id="dangers"></a>
 

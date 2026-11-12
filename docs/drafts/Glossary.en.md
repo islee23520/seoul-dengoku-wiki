@@ -53,7 +53,7 @@ The three polities call the same things by different names. The Government uses 
 | Free City, the Free Cities | The cities of the 7 southwestern districts. They are not one power; each city is its own power. They have no collective name | Settled |
 | Arc | The 4 Gangnam districts. It split off from the Free Cities. The Hierophant Go Ye-jin stands at its head | Settled |
 | duchy | One district. Seoul has 25 duchies: Government 14, Free Cities 7, Arc 4 | Settled |
-| the three polities | The Government, the Free Cities and the Arc taken together. There is no other power in Seoul | Settled |
+| the three polities | The Government, the Free Cities and the Arc taken together. There is no other power in Seoul. Also called the three factions | Meaning settled; word proposed |
 | off the ledger, across the river | The Government's words for the south of the river: "off the ledger" in official papers, "across the river" in speech | Proposed |
 
 The names the Government inherited from the Republic of Korea (the National Assembly, the ministries, the district offices, the dong community centres, resident registration) are not figures of speech to its people. They are the names of their own country.

@@ -110,7 +110,7 @@ In the table below, the seven rows marked **settled** are the fixed chronology. 
 
 **The first water supply contract, 2066.** The Government and the Free Cities traded water for maintenance for a term of thirty years. The Government put in intake sites, the old water mains, hands, firewood and salvage; the cities put in the hands and parts that keep pumps, water wheels and heat pumps alive. The cycle for tearing down and rebuilding the great pumps and water wheels is roughly a generation, so the term settled at thirty years.
 
-**On Yeouido.** The first contract meeting was held in the empty National Assembly building on Yeouido. Government people entered the building their forebears had left as guests and stamped their seals. The Government did not go through Assembly ratification. A ministry made a maintenance service annex for each facility, the Member for the district where the facility lay stamped it as well, and the President signed off. On the ledger, the cities across the river were entered not as countries but as work crews engaged for a service.
+**On Yeouido.** The first contract meeting was held in the empty National Assembly building on Yeouido. Government people entered, as guests, the building their forebears had left, and stamped their seals. The Government did not go through Assembly ratification. A ministry made a maintenance service annex for each facility, the Member for the district where the facility lay stamped it as well, and the President signed off. On the ledger, the cities across the river were entered not as countries but as work crews engaged for a service.
 
 **Gwanak withdraws its seal.** Six cities stamped their seals. Gwanak withdrew its seal, saying it could not stamp a duke's seal beneath a Member's. For the thirty years that followed Gwanak made no sheets of its own with the Government, and took part in the contract only by lending hands to other cities' work crews.
 
@@ -198,7 +198,7 @@ Shelter people who refused to be bound, and people dropped from the maintenance 
 
 **Over the weir.** The Arc and the Government first faced off over the Jamsil weir water wheels. The south end of the weir is in the Arc's Songpa; the north end is in the Government's Gwangjin. Block the north end, and half the wheels stop.
 
-**The 47th National Assembly.** In 2124 the Government held its election, held every four years, and opened the 47th National Assembly. It carries on the session numbers of the Republic of Korea's National Assembly. The winning candidates were settled before the vote: the people each district's Member family put forward.
+**The 47th National Assembly.** In 2124 the Government held the election that comes round every four years and opened the 47th National Assembly. It carries on the Republic of Korea's numbering of National Assemblies. The winning candidates were settled before the vote: the people each district's Member family put forward.
 
 <a id="2126년"></a>
 
