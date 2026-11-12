@@ -1,172 +1,75 @@
 ---
-model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/pages/w4-edit.mjs; not from a Gemini model
+title: G11 · Suseo Gone-Dark
+title_ko: G11 · 수서 꺼진 사람들
+model: claude-opus-5-5; task 14 v3 rewrite, written directly from docs/design/v3/02-ecology.md section 5 (G11), 06-arc.md sections 5.5-5.7 and 8.6
+section_checkpoint: G11 all sections done
 ---
-<a id="Hostile-Group-G11-heading-0001"></a>
+[Hostile Ecology Compendium](/wiki/Hostile-Ecology-Index/) · Hostile human groups
 
-[Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
+People whose baptized bodies can no longer get maintenance. The machines fitted to a body run only while it reaches maintenance and charging. The people cut off from that gathered at the Arc's south-eastern end, beyond Suseo. Arc people call them the gone-dark, and their bodies gone-dark bodies.
 
-<a id="Hostile-Group-G11-heading-0003"></a>
+## At a glance
 
-## Common species and variants
-
-The Gangnam Stray Humanoids are a group of humanoid synthetics outside their management records and assigned zones, and at the post they stand as people. They live on the sterile power-outlet row of the Gangnam maintenance siding. At each battery-exchange cycle they go between the Suseo night convoy window and the mouth of the remaining clinic corridors and fill the exchange bays. When the Imjin River Gate Theater tightens quarantine and return-register procedure, they slow their steps on the window step and move inside the parts-wear upper limit. At the window the Seongha Group and the Jeongdong Federation meet, and the Yongsan Convoy House holds the convoy post.
-
-The Stray Humanoid Guard and the Stray Humanoid Scouts are the same group, standing together on the row inside the Stray Humanoid Lead's line of sight. The Stray Humanoid Guard stands in the bays where the battery exchange is open, and the Stray Humanoid Scouts stand on the order of the return-register copy from the Imjin River Gate Theater. One side stands at the exchange place and the other side stands at the register place.
-
-<a id="Hostile-Group-G11-heading-0006"></a>
-
-## Ecology
-
-| Item | Record |
+| Item | Detail |
 |---|---|
-| Origin | On an early-winter night the Yongsan Convoy House convoy duty sees this group at the sterile power-outlet row of the Gangnam maintenance siding. The light of the outlet row is white. The Stray Humanoid Lead stands at the middle of the row and holds a lidded exchange battery in hand. The assignment tag on the work clothes has a bay written on it other than the siding bay on the stand. The Stray Humanoid Guard stands in the bays to the lead's left and right. |
-| Habitat and movement | The Gangnam Stray Humanoids gather on the sterile power-outlet row of the Gangnam maintenance siding. On each battery-exchange cycle they go between the Suseo night convoy window and the mouth of the remaining clinic corridors. On early-winter nights they keep the battery exchange at the window ledge long, and on days when the Imjin River Gate Theater tightens quarantine they set the spacing of that round trip to a single step bay. They move on the siding inside the parts-wear upper limit. |
-| Food and energy | Exchange batteries and the duty consumables of the remaining clinic corridors pass across this window. The Seongha Group maintenance ledger has the outlet-bay count and the battery count written in it. The Yongsan Convoy House sets that many batteries up on the ledge of the Suseo night convoy window. The Jeongdong Federation matches corridor-access time and the consumable count in the neighboring bays of the same ledger. |
-| Life cycle and upkeep | When a battery-exchange cycle begins, the people gather on the sterile power-outlet row of the Gangnam maintenance siding. When the exchange batteries are carried to the ledge of the Suseo night convoy window, the group divides and stands on the window step and at the mouth of the remaining clinic corridors. People who reach the parts-wear upper mark gather at the middle of the outlet row and remain in front of that bay. |
-| Senses | The Gangnam Stray Humanoids watch the bay count on the sterile power-outlet row of the Gangnam maintenance siding and the battery-exchange order at the Suseo night convoy window. They look at the outlet row and at the exchange path that leads to the mouth of the remaining clinic corridors. |
-| Group behavior | The Stray Humanoid Lead stands in front of the middle bay of the outlet row. The Stray Humanoid Guard stands with the battery bays in the direction of the lead's hand. The Stray Humanoid Scouts stand on the sequence numbers of the convoy-window step while the return-register copy from the Imjin River Gate Theater is at the window. The lead sends a hand signal to the people standing on the row inside the line of sight. |
+| Kind | Hostile human groups |
+| Threat | 3 (Danger) |
+| Where they live | The abandoned sections and buried deep buildings between Suseo, Irwon and Daemosan. Beyond the Arc's boundary stations |
+| Polity that meets them most | The Arc |
+| What people get from them | Parts that have stopped in their bodies; knowledge of how a body breaks down outside maintenance |
 
-**Life in the endless cold.** The Gangnam Stray Humanoids need power more than warmth. They live on a row of sterile outlets and move with the battery-exchange cycle, because a synthetic body whose cells freeze stops where it stands. In the cold they cluster around anything still charging.
+## Where they came from
 
-**Threat and the cost of fighting.** They are hard to stop with ordinary rounds and they compete with the stations for the same cells. People are the most expensive threat a station can face, because they shoot back with the same scarce ammunition. Infantry hold the doors and corridors, missile infantry and marksmen cover the long stretches, and recon drone teams find the group before anyone walks into its sightline. Strike drones are kept back: a drone lost to a net or a jammer is parts and cells the station won't see again. War machines are rarely worth the fuel in a tunnel. Every fight costs rounds, medicine and lives on both sides, and fighters with implants risk parts no workshop can easily spare. That's why the watch talks first, and fighting is the last answer rather than the first.
+In the Arc, baptism is fitting machines to the body, and a baptized body lives only while it reaches maintenance and charging. The maintenance turns are set by the Near Houses and the maintenance benches.
 
-<a id="Hostile-Group-G11-heading-0008"></a>
+Around 2122 the Gangnam shelters were bound together under the name of the Arc, and the Near Houses took the districts. Three kinds of people then gathered at Gangnam's south-eastern end.
 
-## Individuals and battlefield formation
+- People from shelters that refused to be bound together.
+- People dropped from the maintenance roll by a Near House ruling.
+- People who had bought parts in secret and fitted them to their bodies, and then had no way to get them maintained.
 
-The Stray Humanoid Lead sends hand signals to the people standing on the outlet row in sight, on the step of the Suseo night convoy window, and at the mouth of the remaining clinic corridors. Within the same exchange cycle the lead counts the ledge's bay count again from the step. Each post's duty holds the convoy-window latch and the order of the Imjin River Gate Theater register.
+Since then, people dropped from the maintenance roll and people who left the Arc of their own accord have kept drifting in.
 
-| Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
-|---|---|---|---|---|---|
-| [G11E01 · Stray Humanoid Lead](/wiki/Hostile-Group-G11/#g11e01) | Humanoid | Single individual | Counts the battery bays from the middle of the outlet row and sets the Stray Humanoid Guard in the direction of the hand. | Leader | M017 |
-| [G11E08 · Stray Humanoid Guard](/wiki/Hostile-Group-G11/#g11e08) | Humanoid | Single individual | With the battery lids open, fills the space between the window ledge and the mouth of the remaining clinic corridors in the direction of the Stray Humanoid Lead's hand. | Elite | M017 |
-| [G11E15 · Stray Humanoid Scouts](/wiki/Hostile-Group-G11/#g11e15) | Humanoid | Single individual | Holds the step of the Suseo night convoy window in quarantine waiting, beside the sequence numbers of the return-register copy from the Imjin River Gate Theater. | Strategic encounter | M018 |
+## Where they live
 
-<a id="Hostile-Group-G11-heading-0011"></a>
-<a id="g11e01"></a>
+They live in the abandoned sections and buried deep buildings between Suseo, Irwon and Daemosan, beyond the Arc's boundary stations. Suseo is the station where the Arc holds the exchange that takes in power cores brought from outside. The gone-dark live right beside the gate through which the Arc takes in power cores.
 
-### G11E01 · Stray Humanoid Lead
+## What they do
 
-- Source batch: M017
-- Former role class: Leader
-- Links: {"houses":["HC11"],"scenarios":["G11-SC1","G11-SC2","G11-SC3"],"states":["arc"],"synthetics":["H11"],"theaters":["XT01"]}
+- **They steal power.** They splice into station cables in secret.
+- **They raid.** They raid maintenance benches and charging places.
+- **They slip in.** They come in among the people as deep as the platform level of Arc stations.
 
-| Bestiary item | Record |
+The machines in their bodies stop one by one from cold and lack of maintenance, so the band is always short of power and parts. Those whose machines still work are stronger and last longer than ordinary people. Those whose machines have all stopped are weaker than ordinary people, because they live carrying heavy machines in their bodies.
+
+## The danger
+
+Each one can be dangerous. But the band is small and always worn out. It can kill a work party, but it cannot fight for long.
+
+## What people get from them
+
+- **Parts that have stopped in their bodies.** The Arc tries to recover them for reuse.
+- **Knowledge.** Knowledge of how a body breaks down outside the maintenance roll. This knowledge is covered in [Machine Bodies and Scarcity](/wiki/Cyberware-and-Scarcity/).
+
+## How the Arc treats them
+
+In the Arc, a body's parts belong to the faith that fitted them. The baptized carry and use their parts but may not sell them or give them away. Selling a part, having it removed at a Free City market, or passing it to the Government side in secret is the gravest crime after harming a person. The punishment is losing one's maintenance turns for a set time. For someone who lives on their parts this can be the same as losing the parts.
+
+So to the Arc, the parts left in a gone-dark body are the faith's share, to be recovered. A part fitted outside counts as baptism only once it is fitted again at an Arc maintenance bench. This is called **refitting**. The Arc's maintenance roll and maintenance turns are covered in [Arc Society](/wiki/Arc-Society/).
+
+## Meeting the three polities
+
+| Polity | Encounters |
 |---|---|
-| Type | Humanoid |
-| Battlefield unit | Single individual |
-| Battlefield role | Counts the battery bays from the middle of the outlet row and sets the Stray Humanoid Guard in the direction of the hand. |
-| Common species, variants and command scope | The lead sends hand signals across the Gangnam maintenance siding outlet row in sight, the step of the Suseo night convoy window, and the mouth of the remaining clinic corridors. Within the same cycle the lead counts the window-ledge bay count again from the step. The post duty holds the convoy-window latch and the order of the Imjin River Gate Theater register. |
+| Government | Rare |
+| Free Cities | Rare |
+| Arc | Meets them most often: Gangnam |
 
-- A lidded exchange battery
-- An assignment tag of a bay other than the siding bay
-- A work light for the outlet row
-- A knee joint cover with a wear mark
-- A slip with the window-ledge bay count written on it
+People in the Government or the Free Cities who bought Arc parts also drift into this band in the end, because the Arc is the only place in Seoul where a body can be maintained.
 
-<a id="Hostile-Group-G11-heading-0015"></a>
-<a id="g11e08"></a>
+## See also
 
-### G11E08 · Stray Humanoid Guard
-
-- Source batch: M017
-- Former role class: Elite
-- Links: {"houses":["HC11"],"scenarios":["G11-SC1","G11-SC2","G11-SC3"],"states":["arc"],"synthetics":["H11"],"theaters":["XT01"]}
-
-| Bestiary item | Record |
-|---|---|
-| Type | Humanoid |
-| Battlefield unit | Single individual |
-| Battlefield role | With the battery lids open, fills the space between the window ledge and the mouth of the remaining clinic corridors in the direction of the Stray Humanoid Lead's hand. |
-| Common species, variants and command scope | The Stray Humanoid Guard works inside the outlet row the Stray Humanoid Lead can see. They carry the exchange on the current bay of the order board in their hands. Access time at the corridor mouth is written on the time sheet of the Jeongdong Federation corridor duty. |
-
-- A spare battery bay with the lid open
-- Gloves for the outlet covers
-- An exchange order board with the current bay marked
-- A pass for the remaining clinic corridors
-- A knee cover with a wear mark
-
-<a id="Hostile-Group-G11-heading-0019"></a>
-<a id="g11e15"></a>
-
-### G11E15 · Stray Humanoid Scouts
-
-- Source batch: M018
-- Former role class: Strategic encounter
-- Links: {"houses":["HC11"],"scenarios":["G11-SC1","G11-SC2","G11-SC3"],"states":["arc"],"synthetics":["H11"],"theaters":["XT01"]}
-
-| Bestiary item | Record |
-|---|---|
-| Type | Humanoid |
-| Battlefield unit | Single individual |
-| Battlefield role | Holds the step of the Suseo night convoy window in quarantine waiting, beside the sequence numbers of the return-register copy from the Imjin River Gate Theater. |
-| Common species, variants and command scope | The Stray Humanoid Scouts stand on the step while the return-register copy is on the stand of the Suseo night convoy window. The waiting number matches the quarantine waiting tag on the chest. The duty inside the window holds the register order and the window latch. |
-
-- A copy of the Imjin River Gate Theater return register
-- A quarantine waiting tag on the chest
-- A sequence-number mark on the convoy-window step
-- A card of the parts-wear upper mark
-- A division slip with battery bays and corridor time written on it
-
-<a id="Hostile-Group-G11-heading-0023"></a>
-
-## Habitat record
-
-On an early-winter night the Yongsan Convoy House convoy duty stands at the Suseo night convoy window at the end of the sterile power-outlet row of the Gangnam maintenance siding. Under the white light the Stray Humanoid Lead stands at the middle of the row. The lead's assignment tag has a bay written on it other than the siding bay on the stand. The lead holds a lidded exchange battery in hand. The Stray Humanoid Guard stands in the bays to the lead's left and right.
-
-The Stray Humanoid Lead looks at the outlet-bay numbers and the batteries on the window ledge. The Stray Humanoid Guard looks at the current bay of the order board and the consumables box at the mouth of the remaining clinic corridors. The Stray Humanoid Scouts look at the sequence numbers of the return-register copy from the Imjin River Gate Theater and the quarantine waiting tags on their chests. The group sets its feet on the outlet row, the window step, and the corridor mouth.
-
-The Stray Humanoid Lead occupies the middle bay of the outlet row. The Stray Humanoid Guard sets the battery bays on the side the lead's hand indicates. While the return-register copy is on the stand, the Stray Humanoid Scouts stand on the sequence numbers of the Suseo night convoy window step. The lead sends a hand signal to the people standing on the row inside the line of sight.
-
-The battery count on the window ledge equals the bay count of the Seongha Group maintenance ledger. The box at the mouth of the remaining clinic corridors holds the consumables of the Jeongdong Federation corridor duty. In one ledger on the stand, the battery count and the corridor time are written in neighboring bays. The Yongsan Convoy House sets that many batteries up on the convoy-window ledge.
-
-In the first part of the early-winter night, the Stray Humanoid Lead and the Stray Humanoid Guard stand on the outlet row and hold the batteries in their hands. In the middle of the night, the Stray Humanoid Guard fills the space between the mouth of the remaining clinic corridors and the window ledge, and the exchange quantity fills each ledger bay. After the register copy from the Imjin River Gate Theater is placed on the stand, the Stray Humanoid Scouts stand beside the sequence numbers, and the wear marks go up into the consumption bays of the Seongha Group maintenance ledger.
-
-When a battery-exchange cycle begins, the people gather on the sterile power-outlet row. When the exchange batteries are carried to the ledge of the Suseo night convoy window, the group divides and stands on the window step and at the mouth of the remaining clinic corridors. People who reach the parts-wear upper mark gather and remain in front of the middle bay of the row. The people who remain move on the Gangnam maintenance siding inside that mark.
-
-The Seongha Group maintenance duty and the Jeongdong Federation corridor duty write the battery count and the corridor time in one ledger. Kim Doha aligns the order of the return-register copy from the Imjin River Gate Theater to the headcount in front of the window. The Yongsan Convoy House convoy duty holds the window latch beside the aligned bays. The ledger has the division written in it for as many bays as the Stray Humanoid Lead counts.
-
-The Yongsan Convoy House convoy duty holds the assignment tags in one hand and sets the other hand on the locked window latch. The Seongha Group maintenance duty writes the battery count back into the ledger bays. The Jeongdong Federation corridor duty opens the mouth of the remaining clinic corridors from the place where the two duty officers stand. The night-convoy departure personnel stand behind the bays whose exchange has finished. The duty-time sheet at the corridor mouth shows the time given over to the exchange path. The consumption bays of the ledger have the quantity of covers that reach the wear upper limit written as a number.
-
-<a id="Hostile-Group-G11-heading-0032"></a>
-
-## Linked scenarios
-
-<a id="Hostile-Group-G11-heading-0033"></a>
-
-### G11-SC1 · Battery bays at the convoy window
-
-- Stage: 1
-- Trigger: A battery-exchange cycle comes due and the Gangnam Stray Humanoids stand on the step of the Suseo night convoy window. The Yongsan Convoy House convoy duty and Kim Doha are inside the window. The Seongha Group maintenance ledger lies open on the stand.
-- Actors: arc, HC11, H11
-- Ecological mechanism: While the battery count on the window ledge and the bay count in the Seongha Group maintenance ledger are the same, they carry out the exchange on the window ledge. The Stray Humanoid Lead counts the bays in sight from the step. The Yongsan Convoy House convoy duty holds the window latch.
-- Choices: Kim Doha locks the latch of the Suseo night convoy window and writes the battery count in front of the window into the Seongha Group maintenance ledger. / The Yongsan Convoy House opens the exchange for as many bays as the outlet row of the Gangnam maintenance siding. / The Seongha Group maintenance duty writes the battery movement toward the remaining clinic corridors into the ledger as bays inside duty time.
-- Outcomes: When Kim Doha locks the latch, the batteries stay inside the window and the Stray Humanoid Lead remains on the step counting the bays. When the Yongsan Convoy House opens the exchange for the outlet-bay count, it sends that quantity of batteries to the middle of the row and reduces the remaining bays in the ledger. When the Seongha Group maintenance duty writes the corridor movement as duty time, it finishes the exchange in the remaining clinic corridors inside that time and sets the night-convoy departure personnel after that time.
-- Moral cost: The night convoy departs late at the window by the time the exchange takes. In the ledger, the duty time of the remaining clinic corridors remains as bays of battery movement.
-- Source dossier: G11
-
-<a id="Hostile-Group-G11-heading-0035"></a>
-
-### G11-SC2 · The division in front of the window
-
-- Stage: 2
-- Trigger: The Jeongdong Federation corridor duty stands at the Suseo night convoy window with the consumable count from the remaining clinic corridors. The Seongha Group maintenance ledger and the window latch of the Yongsan Convoy House lie beside the same stand. The Stray Humanoid Guard of the Gangnam Stray Humanoids stands on the window step.
-- Actors: arc, HC11
-- Ecological mechanism: The battery bays and the corridor time are written together in neighboring bays of one ledger. The Stray Humanoid Guard stands in the direction of the Stray Humanoid Lead's hand on the row the lead can see. They divide by the bay count of that row.
-- Choices: The Seongha Group and the Jeongdong Federation write the battery count and the corridor time together in one ledger in front of the window. / The Jeongdong Federation takes the mouth of the remaining clinic corridors and the Seongha Group takes the bays of the outlet row. / The Yongsan Convoy House postpones departure from the night convoy window until the exchange bays are clear.
-- Outcomes: When they write together, the battery count and the corridor time go into neighboring bays of one ledger. When they divide the corridor and the outlet row, the Jeongdong Federation corridor duty stands at the mouth and the Seongha Group maintenance duty stands at the end of the row. When departure is postponed, the night-convoy personnel stand at the window after the exchange bays are cleared.
-- Moral cost: The Jeongdong Federation passes the corridor consumables into the exchange bays and writes that quantity in the neighboring bays of the ledger. The Yongsan Convoy House keeps the night departure at the window for one exchange cycle.
-- Source dossier: G11
-
-<a id="Hostile-Group-G11-heading-0037"></a>
-
-### G11-SC3 · The return register and the wear upper limit
-
-- Stage: 3
-- Trigger: The Imjin River Gate Theater tightens quarantine and return-register procedure, and a register copy arrives at the Suseo night convoy window. Kim Doha sets that copy on the window stand. The Seongha Group, the Jeongdong Federation, and the Yongsan Convoy House are inside the window. The Stray Humanoid Scouts of the Gangnam Stray Humanoids stand on the step.
-- Actors: arc, XT01, HC11, H11
-- Ecological mechanism: The Stray Humanoid Scouts slow their steps on the step to the waiting numbers on the return-register copy. The wear marks of the knee joint covers go up into the consumption bays of the Seongha Group maintenance ledger. The Gangnam Stray Humanoids move on the Gangnam maintenance siding inside the parts-wear upper limit. Each duty holds the register order of the Imjin River Gate Theater and the convoy-window latch.
-- Choices: The register order of the Imjin River Gate Theater is left as it stands, and the Yongsan Convoy House sets departure from the convoy window after that order ends. / Kim Doha matches the return-register order and the outlet assignment tags in front of the Suseo night convoy window. / The Seongha Group and the Jeongdong Federation divide the battery stock between the outlet row of the Gangnam maintenance siding and the mouth of the remaining clinic corridors.
-- Outcomes: When the register order is left as it stands, the Yongsan Convoy House sets the convoy-window departure line after the quarantine numbers end. When Kim Doha aligns the order, Kim Doha sets the return-register order and the outlet assignment tags on the same stand. When the stock is divided, the Seongha Group and the Jeongdong Federation set the battery bays in two piles, one on the Gangnam maintenance siding row and one at the mouth of the remaining clinic corridors.
-- Moral cost: While the quarantine order continues, the night-convoy departure personnel stand at the Suseo night convoy window. Joint covers that reach the wear upper limit remain in the ledger consumption bays. The duty spends the duty time of the remaining clinic corridors at the mouth on the side of the divided stock.
-- Source dossier: G11
+- [Hostile Ecology Compendium: people outside the polities](/wiki/Hostile-Ecology-Index/#outside-polities)
+- [Arc Society](/wiki/Arc-Society/)
+- [Machine Bodies and Scarcity](/wiki/Cyberware-and-Scarcity/)
+- [G05 · Brown Rat](/wiki/Hostile-Group-G05/)
