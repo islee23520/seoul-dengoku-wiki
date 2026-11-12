@@ -1,129 +1,66 @@
 ---
-model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/pages/w4-edit.mjs; not from a Gemini model
+title: G20 · Bulgasari
+title_ko: G20 · 불가사리
+model: claude-opus-5-5; written directly in the task 15 worktree from docs/design/v3/02-ecology.md (v3 bible chapter 2)
+section_checkpoint: v3 task 15 complete
 ---
-<a id="Hostile-Group-G20-heading-0001"></a>
+[Hostile Ecology Compendium](/wiki/Hostile-Ecology-Index/)
 
-[Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
+Bulgasari are perimeter machines. They are repair machines that strip broken machines to mend other machines. They are named after the iron-eating beast of the old tales. The perimeter machines grow fewer each year yet have not all stopped, and that is because of the bulgasari. Since they go after the very wrecks people go out to salvage, they are also the machines that clash with people most often on the perimeter.
 
-<a id="Hostile-Group-G20-heading-0003"></a>
+## At a Glance
 
-## Common species and variants
-
-The core place is the bolt holes and fillet-weld toes at the dock edge under the shelves of the Ttukseom Union. In a week of thick sea fog the flakes run on into the joint of the ground coil that was brought in. Salt-cargo packing fragments from the Incheon Trust Theater are wedged in those holes. A click sounds wherever the flakes meet.
-
-Bolts and plates gather at Bulgasari's mouth. Duduri is at the place that strikes the web plate. The One-legged Dokkaebi is on the angle where one foot stands. The flakes of the three meet on the same bolt line and sound a click.
-
-<a id="Hostile-Group-G20-heading-0006"></a>
-
-## Ecology
-
-| Item | Record |
+| Item | Details |
 |---|---|
-| Origin | The dock night duty first sees an Iron-Clicker at the dock edge under the shelves of the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes of the dock edge, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty's work light falls on the weld toe. / At the same place the Iron-Clicker's body lies prone on the fillet-weld toe. Thin iron flakes lie layered on the chest and the ribs. A click sounds from the throat. Flange bolt heads are piled in front of the mouth. The flange with the bolts gone is on the mouth side. |
-| Habitat and movement | Iron-Clickers gather at the dock edge under the shelves of the Ttukseom Union. It is a night in a week of thick sea fog. Thin iron flakes lie layered in the bolt holes, and the same flakes lie across the fillet-weld toe. Sea fog beads between the flakes. A click sounds wherever the flakes meet. The dock night duty's work light falls on the weld toe. / On a night after the season has changed, the dock night duty sees the same Iron-Clicker at the lower flange and at the web plate. Bulgasari lies prone at the middle of the lower flange. The snout is long toward the bolt line, and the back plate is thick above the flange. Bolt heads and the edges of register plates are held in the mouth. Thin iron flakes lie layered over the chest, the ribs, and between the claws. Duduri has its back against the web plate in front of Bulgasari. The shoulder strikes the plate, and the sound comes from the whole plate. After the striking sound comes the click of flakes meeting. / On that same night the One-legged Dokkaebi stands on one foot on the angle under the dock rail. The sole spans two bolt heads, and the iron bar in the hand lies across the fillet-weld toe. The wet of the same foot is in the next hole of the angle as well. A click sounds from the flakes at the end of the iron bar. The dock night duty bars the lower shelf passage. The work light and the torque wrench are on the upper shelf. Spare washers are mixed into the flake pile at the weld toe. The flashlight of the upper shelf is above the flakes of the fillet-weld toe. |
-| Food and energy | Register plates, flange bolts, and spare washers are gathered at Bulgasari's mouth. A salt-cargo packing band from the Incheon Trust Theater is wedged in the same bolt holes. A ground coil of the Mapo Union Yeouido Investment Federation lies at the dock intake. |
-| Life cycle and upkeep | A hand is on the wall-side plate, and a knocking sound comes from the plate. The same body lies prone on the fillet-weld toe. A click sounds from the throat. Thin flakes from the wall plate lie layered on the chest. |
-| Senses | The Iron-Clicker's chest is toward the girder where the crane's vibration comes down. The face is toward the fillet-weld toe where the steel and the grounding copper meet. The mouth is toward the holes that still hold bolt heads. The One-legged Dokkaebi's foot is toward the side where the angle's iron overlaps. |
-| Group behavior | Bulgasari is at the middle of the lower flange. Duduri is on the web in front of Bulgasari. The One-legged Dokkaebi is on the angle at the dock edge. The other Iron-Clickers stand off along the bolt line, one hole apart. |
+| Kind | Perimeter machine. Does not come into Seoul |
+| Threat | 4 (Grave danger) |
+| Where | The perimeter. Places with many broken machines, and the sites of old army supply depots. They have no fixed place and go looking for broken machines |
+| Who meets them most | Perimeter-runners. Among polities, the Government (through perimeter-runners) and the Arc (as buyer) |
+| Salvage | The parts piles that bulgasari gather |
 
-**Life in the endless cold.** Iron-Clickers cling to cold steel where sea fog freezes into flakes. They gather on bolt lines and weld seams, and the cold makes their clicking carry far through the dock structure.
+## Where It Came From
 
-**Threat and the cost of fighting.** They damage the metal that holds the dock together. The infected are a middle threat that grows in closed rooms. Infantry hold the doors in pairs, support teams bring medicine, isolation sheets and warm water, and missile infantry fire only when a line breaks. Recon drones are used to look into a room before anyone opens it, which saves lives but spends cells. War machines have no place here. The heaviest costs are medicine and the people who catch what they fight; ammunition spent on the infected is ammunition the station mourns later. Every watch knows the infected were people, and the duty log treats them that way.
+The machines that keep the blockade break down too. The bulgasari are repair machines placed alongside them to mend them. Together with the other perimeter machines, they keep the capital blockade order that people gave around the Great Blackout. But what a bulgasari keeps is not the band; it is the machines that keep the band. Bulgasari are not machines of the First AI either.
 
-<a id="Hostile-Group-G20-heading-0008"></a>
+## Where It Is Found
 
-## Individuals and battlefield formation
+Bulgasari are on the perimeter. They have no fixed place. They seek out wreck fields where many machines have broken down, and the sites of old army supply depots. By day some guard the nests where dokkaebi lights settle to rest.
 
-With the mid-flange where Bulgasari is as the axis, the Iron-Clickers stand along the bolt line. Duduri is on the web in front of the axis. The One-legged Dokkaebi is on the angle at the end of the line. The work light of the upper shelf falls on that line.
+## How It Behaves
 
-| Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
-|---|---|---|---|---|---|
-| [G20E01 · Bulgasari](/wiki/Hostile-Group-G20/#g20e01) | Infected person | Single individual | The place at mid-flange where plates and bolts gather | Boss | M031 |
-| [G20E08 · Duduri](/wiki/Hostile-Group-G20/#g20e08) | Infected person | Single individual | The place that strikes the web plate | Elite | M032 |
-| [G20E15 · One-legged Dokkaebi](/wiki/Hostile-Group-G20/#g20e15) | Infected person | Single individual | The place that stands on an angle one foot wide | Strategic encounter | M032 |
+A bulgasari finds a broken machine, takes off the parts that can still be used, and fits them to another machine. Each time it tears metal, a clanking sound carries far.
 
-<a id="Hostile-Group-G20-heading-0011"></a>
-<a id="g20e01"></a>
+A bulgasari does not chase people. But it takes a person stripping a wreck for something spoiling what is to be mended, and pushes them away. And around a wreck where a bulgasari is working, other machines soon gather: machines to be mended, and machines waiting to be mended.
 
-### G20E01 · Bulgasari
+## When You Meet It
 
-- Source batch: M031
-- Former role class: Boss
-- Links: {"houses":["HP06"],"states":["arc","free-city"],"theaters":["XT05"]}
+The threat is 4. A bulgasari does not try to kill directly. But it is strong, and a person pushed away by it ends up with broken bones. And other machines soon come to a wreck where a bulgasari is.
 
-| Bestiary item | Record |
-|---|---|
-| Type | Infected person |
-| Battlefield unit | Single individual |
-| Battlefield role | The place at mid-flange where plates and bolts gather |
-| Common species, variants and command scope | It is at the middle of the lower flange of the dock under the shelves of the Ttukseom Union. |
+Perimeter-runners listen first before they approach a wreck. If they hear clanking, that wreck already belongs to a bulgasari. They find another wreck, or wait for the bulgasari to finish and leave. If the blizzard lifts while they wait, they come back empty-handed.
 
-- Bulgasari lies prone at the middle of the flange of the dock under the shelves.
-- The snout is long along the bolt line, and the back plate rises above the flange.
-- Bolt heads and register plates are held in the mouth.
-- Thin iron flakes lie layered over the chest and between the claws, and the covered width is greater than the flange.
-- When the girder sounds, a click comes from the flakes on the chest.
+## What Can Be Salvaged
 
-<a id="Hostile-Group-G20-heading-0015"></a>
-<a id="g20e08"></a>
+The parts piles that bulgasari gather. A bulgasari strips usable parts and stacks them in one place. Those piles are the most valuable thing on the perimeter. The power cores, joints and sensors in them have already been sorted.
 
-### G20E08 · Duduri
+Finding such a pile is the perimeter-runner's dream, and meeting the bulgasari that guards it is the commonest reason perimeter-runners get hurt.
 
-- Source batch: M032
-- Former role class: Elite
-- Links: {"houses":["HP06"],"states":["arc","free-city"],"theaters":["XT05"]}
+## The Three Polities and the Bulgasari
 
-| Bestiary item | Record |
-|---|---|
-| Type | Infected person |
-| Battlefield unit | Single individual |
-| Battlefield role | The place that strikes the web plate |
-| Common species, variants and command scope | It is on the web in front of the flange of the same dock. |
+- **The Government.** Rarely meets them directly. It knows them through the perimeter-runners. Many of the parts the perimeter-runners of the Bukhansan slopes bring in come from bulgasari piles.
+- **The Free Cities.** Meet them rarely. Geumcheon's edge crews keep a rule: do not touch a wreck where a bulgasari is.
+- **The Arc.** Is the buyer. The Arc pays the most for the power cores and joints that perimeter-runners bring from bulgasari piles.
 
-- Duduri has its round back against the web plate in front of the flange.
-- The shoulder strikes the plate, and the flakes of the plate are shifted.
-- After the striking sound, a click sounds.
-- Iron dust clings to the hair of the arms, and the knees are caught on the lower bolt line.
-- Behind Duduri's back the wire meets the web.
+## Stories and Names
 
-<a id="Hostile-Group-G20-heading-0019"></a>
-<a id="g20e15"></a>
+The bulgasari is the beast of the old tales that eats iron and grows. Of all the names station people gave to machines, only two are borrowed from old tales: bulgasari and dokkaebi lights. A machine that tears up iron and brings other machines back to life looks like that beast.
 
-### G20E15 · One-legged Dokkaebi
+It used to be called the iron-clicker too, after the sound it makes tearing metal. Among perimeter-runners, saying "there's an iron-clicker" still means giving up that wreck.
 
-- Source batch: M032
-- Former role class: Strategic encounter
-- Links: {"states":["arc","free-city"],"synthetics":["F04"],"theaters":["XT05"]}
+## See Also
 
-| Bestiary item | Record |
-|---|---|
-| Type | Infected person |
-| Battlefield unit | Single individual |
-| Battlefield role | The place that stands on an angle one foot wide |
-| Common species, variants and command scope | It is at the end of the angle under the rail of the same dock. |
-
-- The One-legged Dokkaebi stands on one foot on the angle under the dock rail.
-- The sole spans two bolts, and the angle is the width of that foot.
-- The iron bar in the hand lies across the fillet-weld toe.
-- The wet of the same foot is in the next bolt hole.
-- A click sounds from the end of the iron bar, and that foot is at the very end of the line.
-
-<a id="Hostile-Group-G20-heading-0023"></a>
-
-## Habitat record
-
-On a night in a week of thick sea fog the steel of the dock under the shelves is wet. Fragments of salt-cargo packing from the Incheon Trust Theater are wedged between the flakes in the bolt holes, and the salt on the fragments is white. A click sounds from the holes where the fragments are wedged.
-
-A ground coil lies at the dock intake. The coil's copper meets the fillet of the dock steel, and flakes lie layered where they meet. A Mapo Union Yeouido Investment Federation tag hangs on the coil. A click sounds where the copper and the steel meet.
-
-Iron plates from the shelves are down on the lower flange. The edges of the plates are held in Bulgasari's mouth, and the remaining plates lie under the flakes of the chest. The holes of the plates meet the flange bolt line.
-
-The Iron-Clickers on the bolt line lie prone one hole apart. The middle place is Bulgasari on the flange, and the last hole is the one foot on the angle. Duduri's knee is caught on the lower bolt in front of the line.
-
-The crane hook is above the girder, and the wire meets the web. Each time the wire brushes the plate, the sound from Duduri's back and the sound from the flakes fall together. The hook's safety pin is in the upper-shelf box.
-
-A Ttukseom Union lock hangs on the lower-shelf bar. The dock night duty's hand is on the crane key in the upper-shelf box. One flake from the box lid lies beside the key.
-
-The lower treads are stacked on the upper shelf, and the shelf duty's boots stand in a row on those treads. The night patrol's flashlight hangs on the upper rail. The bolt line of the upper rail is full.
-
-Bolts out of the dock rail are in the flake pile at the weld toe. The dock night duty's spare boots are buried in that pile. The collars of the spare boots stand up above the flakes.
+- [Hostile Ecology Compendium](/wiki/Hostile-Ecology-Index/)
+- [Beyond Seoul: the Rim](/wiki/External-Theaters/)
+- [G10 · Bogungmun Perimeter-Runners](/wiki/Hostile-Group-G10/)
+- [G22 · Dokkaebi Lights](/wiki/Hostile-Group-G22/)
+- [The Stories](/wiki/Oral-Stories/)
+- [Arc Society](/wiki/Arc-Society/)
