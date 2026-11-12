@@ -400,6 +400,7 @@ The cold is the machines' enemy as much as it is the people's. Batteries lose th
 
 <!-- owner-pending: the order in which the three ways of rule formed before 2112 is a provisional framing; only the Arc's 2122 date is fixed -->
 
+<!-- owner-pending: Go Ye-jin being born after the Government and the Free City took shape is a provisional inference, not a bible date -->
 Over the long middle of the century the stations sorted themselves into three ways of living. Two of them had taken their shape before Go Ye-jin was born. The third was hers.
 
 | Faction | Territory | Duchies | How it holds power |
@@ -564,7 +565,7 @@ Every part needed the same upkeep that any cyberware needs: maintenance, power a
 ### What the Twelve Carried
 
 <!-- owner-pending: how the twelve first baptised were chosen and what parts they received are not fixed; this passage stays general on purpose -->
-The tellings of the first twelve are short. They were people who had come to Go Ye-jin during her five years of reading, and they let her change their bodies. After that baptism, the twelve carried the sign of the faith in their own flesh and metal, and anyone who met them could see it. The faith did not need to be explained when its proof could be shown.
+The tellings of the first twelve are short. They let Go Ye-jin change their bodies. After that baptism, the twelve carried the sign of the faith in their own flesh and metal, and anyone who met them could see it. The faith did not need to be explained when its proof could be shown.
 
 <a id="2118년"></a>
 <a id="2118년-중앙정보부"></a>

@@ -763,6 +763,7 @@ The cold is the machines'' enemy as much as it is the people''s. Batteries lose 
 
 <!-- owner-pending: the order in which the three ways of rule formed before 2112 is a provisional framing; only the Arc''s 2122 date is fixed -->
 
+<!-- owner-pending: Go Ye-jin being born after the Government and the Free City took shape is a provisional inference, not a bible date -->
 Over the long middle of the century the stations sorted themselves into three ways of living. Two of them had taken their shape before Go Ye-jin was born. The third was hers.
 
 | Faction | Territory | Duchies | How it holds power |
@@ -927,7 +928,7 @@ Every part needed the same upkeep that any cyberware needs: maintenance, power a
 ### What the Twelve Carried
 
 <!-- owner-pending: how the twelve first baptised were chosen and what parts they received are not fixed; this passage stays general on purpose -->
-The tellings of the first twelve are short. They were people who had come to Go Ye-jin during her five years of reading, and they let her change their bodies. After that baptism, the twelve carried the sign of the faith in their own flesh and metal, and anyone who met them could see it. The faith did not need to be explained when its proof could be shown.
+The tellings of the first twelve are short. They let Go Ye-jin change their bodies. After that baptism, the twelve carried the sign of the faith in their own flesh and metal, and anyone who met them could see it. The faith did not need to be explained when its proof could be shown.
 
 <a id="2118년"></a>
 <a id="2118년-중앙정보부"></a>
@@ -1336,9 +1337,9 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 ### 지상은 추위의 것
 
+<!-- owner-pending: the timing of the surface ecology''s change after the Great Blackout is a provisional framing, not a bible date -->
 지상은 비어 있지 않았다. 끝없는 추위 속에서 살 수 있는 동물들이 거리와 공원과 빈 건물로 퍼졌고, 세대를 거치며 사람들이 땅 위를 다니는 방식을 바꿔 놓았다. 어떤 동물이 언제 나타났는지는 전하는 이마다 다르다. 다만 첫 생존자들의 손주가 수집하러 올라갈 무렵에는 지상이 추위와 동물을 함께 셈해 두어야 하는 곳이었다는 데는 모두 같다. 지금 그곳에 사는 것들은 [적대 생태 색인](/wiki/Hostile-Ecology-Index/)에 정리돼 있다.
 
-<!-- owner-pending: the timing of the surface ecology''s change after the Great Blackout is a provisional framing, not a bible date -->
 그래도 수집하러 올라가는 길은 계속됐다. 역이 만들지 못하는 것은 모두 위의 건물에 있었고, 세대마다 더 멀리 가서 찾았다.
 
 ### 역의 생활
@@ -1536,6 +1537,7 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 
 <!-- owner-pending: the order in which the three ways of rule formed before 2112 is a provisional framing; only the Arc''s 2122 date is fixed -->
 
+<!-- owner-pending: Go Ye-jin being born after the Government and the Free City took shape is a provisional inference, not a bible date -->
 백 년의 긴 한가운데에서 역들은 세 가지 사는 방식으로 갈라졌다. 그 가운데 둘은 고예진이 태어나기 전에 모양을 갖췄다. 셋째가 그의 것이었다.
 
 | 세력 | 영역 | 공작령 | 권력을 쥐는 방식 |
@@ -1700,7 +1702,7 @@ What happens next is told in the [Scenario Timeline](/wiki/Scenario-Timeline/).
 ### 열둘이 지닌 것
 
 <!-- owner-pending: how the twelve first baptised were chosen and what parts they received are not fixed; this passage stays general on purpose -->
-첫 열둘에 대한 이야기는 짧다. 그들은 고예진이 다섯 해 동안 읽는 사이에 그를 찾아온 사람들이었고, 그에게 자기 몸을 바꾸도록 맡겼다. 그 세례 뒤로 열둘은 신앙의 표지를 자기 살과 금속에 지니고 다녔고, 만나는 사람 누구나 그것을 볼 수 있었다. 증거를 보여 줄 수 있으니 신앙을 설명할 필요가 없었다.
+첫 열둘에 대한 이야기는 짧다. 그들은 고예진에게 자기 몸을 바꾸도록 맡겼다. 그 세례 뒤로 열둘은 신앙의 표지를 자기 살과 금속에 지니고 다녔고, 만나는 사람 누구나 그것을 볼 수 있었다. 증거를 보여 줄 수 있으니 신앙을 설명할 필요가 없었다.
 
 <a id="2118년"></a>
 <a id="2118년-중앙정보부"></a>
