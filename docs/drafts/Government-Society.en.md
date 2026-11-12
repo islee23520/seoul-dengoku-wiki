@@ -1,222 +1,346 @@
 ---
 title: Government Society
 title_ko: 정부 사회
-model: claude-opus; written by hand by the task 10 executor agent; 0 completion calls
+model: claude-opus-5-5; written by hand by the task 11 executor agent from the v3 bible; 0 completion calls
 section_checkpoint: complete
 ---
-
 <a id="overview"></a>
 ## Overview
 
-North of the Han River, fourteen districts answer to the Government. On paper it still keeps the three branches of the old Republic and a field of parties. In the stations it is something older: a modern feudal order with ledgers where the oaths used to be.
+The fourteen districts north of the Han belong to the Government. Government people call their country the Republic of Korea. In the hundred years since the Great Blackout, they say, they have never changed its name, the article numbers of its law code, or its seals. Only the size of the country has changed: it reaches as far as the clerks reach, and the river is its end.
 
-Each district is an Electorate (Seongu). Its assembly member holds it as a Senator, and the seat passes down the family in all but name. The Senators choose a President from among themselves, and the President holds office for life. The old electors who chose an emperor would have recognised the arrangement at once. Only two parties are left, the OMO Party and the Claw Party, and everyone knows which family sits in which district before the votes are counted.
+The Government's first rule is simple. If you are on the ledger, you are a person. People on the ledger receive rations, a sleeping place and a water share, and in return they cannot freely change their station or their work. The south of the river is "off the ledger" in official papers and "across the river" in speech. Government people say across the river is where the barbarians live, and most have never been there.
 
-The Government's first rule is simple. A person exists if the ledger says so. Ledger people get rations, heat, a place in a clinic queue and a share of the water. Everyone else is outside, and everything south of the river is outside by definition. People in the north call the far bank the land of the savages, and most of them have never crossed it.
+The Government has the most stations and the most people in Seoul: about 160,000 people in 153 inhabited stations. The mountain firewood, the salvage and fibre of the old downtown, and the Guui and Ttukdo intakes are the Government's too. What it lacks is hands to mend machines.
 
-In winter 2126 that bank has a new name in northern talk. The stations of Gangnam bound themselves into the Arc four years ago, and the woman they call Hierophant, Go Ye-jin, grew up in the Free City and has never stood in a Government ledger. Northern clerks write the word "Arc" in the margins of their reports, as if keeping it out of the columns kept it out of the world. The third water contract is coming, and the north will sit across a table from people it doesn't count.
+<a id="country-of-the-ledger"></a>
+## The country of the ledger
 
-<a id="social-structure"></a>
-## Social Structure
+The Government has never lifted the **state of disaster** it declared in the first year of the Blackout. Every public notice of 2126 opens with the line "Under the state of disaster". The state of disaster is the ground on which the Government decides where people live and what they do, collects goods, and calls people up. Government people do not find this strange. The winter has not ended, so neither has the disaster.
 
-Scarcity made work hereditary, and the Government wrote that down. A child is entered in the ledger under the parent's work, and the entry is the person's place in the world.
+This is how Government people explain the winter: "The winter stopped when the ledger matched the quotas." They believe that counting heads, setting a quota for every station and keeping to the quota is what stops the winter from tightening. So the ledger is the Government's creed before it is a tool of administration.
 
-| Rank | Who | What the ledger gives | What it takes |
-|---|---|---|---|
-| Senator's house | The Senator, spouse, heirs and close kin | First claim on heat, water and clinic places in the Electorate; the right to hold court | Loyalty to the President, a levy quota, the district's accounts |
-| Office ledger | Clerks, registry keepers, ration officers, station managers | Office rations, a sleeping room near the warm core of the station | Exact books, and the blame when the books are short |
-| Labour ledger | Pump crews, power crews, haulers, tunnel diggers, cooks, menders | The largest bread share, a bunk, a place on the work roll | Shifts, the labour levy and service when the levy calls |
-| Dependent ledger | Children, the old, the sick, those who can no longer work | The smallest share, counted against the household | Nothing but the household's obligation to feed them |
-| Unlisted | People with no entry: runaways, the struck-off, anyone from the south | Nothing | Nothing, because the law doesn't see them |
+That is also why the Government hardly coins new words. The National Assembly, the ministries, the district offices, the dong community centres and resident registration are institutions of the Republic of Korea that remain, hollowed out, through scarcity. To Government people these names are not relics; they are the names of their own country.
 
-The President's household and the Senators' houses form a thin court above the stations. Under them, the office ledger is where the Government really lives. A ration officer at Jongno 3-ga can decide whether a family eats this week, and everyone in the station knows his name.
+<a id="assembly-and-president"></a>
+## The National Assembly and the President for Life
 
-Movement between ranks is rare but not impossible. A labour family whose child learns to keep accounts can apply to move that child to the office ledger. The application costs a year of the household's surplus and a Senator's seal. Moving down is easy. A clerk caught with short books goes to the labour ledger, and a labourer who stops working goes to the dependent ledger along with the household's share.
+<a id="assembly"></a>
+### The National Assembly
 
-Being struck off is the worst thing that can happen. The entry is crossed out, the ration card is cut, and the person becomes unlisted. Struck-off people drift toward the edges of the Electorate, to cold surface-level stations and old service tunnels, and some of them go south.
+There is one National Assembly. Like the Republic of Korea's, it has a single chamber, and its only members are Members of the National Assembly. There are fourteen Members, one seat to a district, and each district's Member holds that district's duchy. Before the Blackout the Government's fourteen districts had twenty-four constituencies, but those lines survive only on maps.
+
+The National Assembly building at Yeouido stands empty across the river. The Assembly meets in an old meeting room beneath the main building of the Government Complex Seoul, a room joined to Gwanghwamun station by tunnel. Elections are held every four years, and the session numbering of the Republic's National Assembly carries on, so the Assembly of 2126 is the **47th National Assembly**, opened in 2124. Registered adults stamp their ballots at the dong community centre. Each of the two parties puts up a candidate, but the winner is decided before the vote: whoever the district's Assembly Member house has backed.
+
+The National Assembly does two things. It passes laws with fourteen seals, and it acclaims the President for Life. Agreements with those across the river are not ratified by the Assembly; the ministries make them as annexes. There is no budget. The Government's budget is the ration ledger itself.
+
+<a id="acclamation"></a>
+### Acclamation and the President for Life
+
+The President is put forward by the Members of the National Assembly from among the Members. The President holds office for life. This is called **acclamation**.
+
+- An acclamation opens the day after a President dies. The fourteen Members set their seals one after another beneath a candidate's name, and the acclamation succeeds only when all fourteen have sealed. If even one does not, they meet again the next day. This is called "the fourteen seals".
+- So the President is always someone all fourteen houses can accept. It is rare for someone of the most powerful house to become President.
+- The oldest Member presides over an acclamation and signs off as acting President until it is done.
+- A Member who becomes President gives up the seat, which goes to the heir of the President's house.
+- The President's work is the sign-off: appointing ministers, stamping public notices, and writing the commission of the national army's highest commander. The President holds no district. The President's power is as great as the fourteen Members' willingness to accept those sign-offs.
+
+A new acclamation opens only when the President dies, so through the long years between acclamations the Assembly Member houses gather the seals for the next one in advance. Sharing out the posts of ministers and agency heads among the fourteen houses is the bargaining stuff of acclamation.
+
+<a id="parties"></a>
+### The two parties
+
+On paper there are many parties. The party register still lists eleven. Nine of them have not a single member, or only a membership list. Removing a registration needs a vote of the National Assembly, and nobody tables the motion. In practice there are two parties.
+
+- The **OMO Party** is the party of contracts. It holds that the ledger survives only by contracting across the river to bring in skills and parts.
+- The **Claw Party** is the party of the ledger. It holds that the north must provide for itself with its own land and labour, and that mixing with those off the ledger will bring the ledger down.
+
+A party is a name that binds houses. An Assembly Member house chooses its party, and the registered people of that district follow it. In 2126 the seats stand six for the OMO Party and eight for the Claw Party. The four districts on the Han (Mapo, Yongsan, Seongdong, Gwangjin) are all OMO Party: they hold the bridges, tunnels and intakes, so they are hurt first if a contract breaks. Jung-gu and Seodaemun-gu, though not on the river, are OMO Party too, living on goods from across the river through the markets of Seoul Station, Hoehyeon and Gongdeok. The eight mountain and inland districts are Claw Party.
+
+<a id="fourteen-seats"></a>
+### The fourteen seats
+
+| District | Party | What the district holds |
+|---|---|---|
+| Jongno-gu | Claw Party | The Government Complex Seoul (the ministries and the Assembly's meeting room), Gwanghwamun station. The Government's head |
+| Jung-gu | OMO Party | Seoul Station (the largest station), the Bank of Korea, City Hall, the markets of Dongdaemun History & Culture Park and Hoehyeon |
+| Yongsan-gu | OMO Party | The Ministry of National Defense and Capital Defense Command (Samgakji), the north ends of the Yongsan–Noryangjin and Ichon–Dongjak bridges |
+| Mapo-gu | OMO Party | The Mapo–Yeouinaru under-river tunnel, the north ends of the Hapjeong–Dangsan and Digital Media City–Magongnaru bridges, the Gongdeok market |
+| Seongdong-gu | OMO Party | The Ttukdo intake, the Seoul Forest–Apgujeong Rodeo under-river tunnel, the north end of the Oksu–Apgujeong bridge, Wangsimni |
+| Gwangjin-gu | OMO Party | The Guui intake, the north end of the Jamsil weir, the Gwangnaru–Cheonho under-river tunnel, the north ends of the Gangbyeon–Jamsillaru and Jayang–Cheongdam bridges |
+| Seodaemun-gu | OMO Party | The way between Mapo and Jongno, Chungjeongno and Sinchon |
+| Dongdaemun-gu | Claw Party | Cheongnyangni (where many lines meet), the fuel market |
+| Jungnang-gu | Claw Party | Sangbong and Mangu, the Mangu burial ground |
+| Seongbuk-gu | Claw Party | The rim watchtowers toward Bukhansan, the schools on old university grounds |
+| Eunpyeong-gu | Claw Party | Yeonsinnae (where a deep line runs), Bukhansan firewood, the Bukhansan rim |
+| Gangbuk-gu | Claw Party | The April 19th National Cemetery burial field, the Bukhansan rim |
+| Dobong-gu | Claw Party | The Chang-dong depot, Dobongsan firewood and rim |
+| Nowon-gu | Claw Party | The Korea Military Academy at Hwarangdae, the rim toward Suraksan and Buramsan, the district with the most light-fields |
+
+<a id="ministries"></a>
+## The ministries and central bodies
+
+The ministries of the Government Complex Seoul kept their names and their seals. Their work is far narrower than before the Blackout, and almost all of it concerns the ledger and rations. At the Blackout most of these ministries had their headquarters in Sejong, Gwacheon and Daejeon. When the rim of the outside machines cut those cities off from Seoul, the staff left at the Government Complex Seoul took over the ministries' names and seals.
+
+| Body | Where | What it does in 2126 |
+|---|---|---|
+| Ministry of the Interior and Safety | Government Complex Seoul | Keeps the master copy of resident registration. Notices of the state of disaster, civil defence, oversight of district offices and dong community centres |
+| Ministry of Climate, Energy and Environment | Government Complex Seoul | Water and power: intakes and wells, water allocations by quota, the wind machines on the bridges and floodplains, salvage copper and wire, the working of the water supply contract |
+| Korea Forest Service | Government Complex Seoul | Firewood: felling permits and firewood shares for Bukhansan and Dobongsan |
+| Ministry of Land, Infrastructure and Transport | Government Complex Seoul | Stations and tunnels: the Stationmaster establishment, entrance management, handcarts on the rails, station quotas |
+| Ministry of Agriculture, Food and Rural Affairs | Government Complex Seoul | Meals: fibre-sugar vats and mushroom tunnels, light-field allotments, the fibre levy |
+| Ministry of Health and Welfare | Government Complex Seoul | Health centres and the medical corps, rations for dependants, machine-body registration and permits for Arc maintenance |
+| Ministry of Justice | Government Complex Seoul | Strike-off hearings, carrying out labour sentences, keeping the hand-copied law code |
+| Ministry of National Defense | Samgakji, Yongsan-gu | Administration of the national army: registration of conscripts and reservists, registration of ammunition |
+| National Intelligence Service | The foot of Namsan, Jung-gu | The body said to know the business off the ledger. After the Blackout it abandoned its headquarters across the river and returned to its old site at the foot of Namsan. Whose sign-off it answers to is unclear even inside the Government |
+| Bank of Korea | Jung-gu, near Hoehyeon station | Prints the ration coupons and sets their notice value |
+| Office of the President | Government Complex Seoul | The President's sign-offs and guard |
+| National Assembly Secretariat | Government Complex Seoul | The Assembly's records, the acclamation seal book, the party register |
+
+The Supreme Court, the Constitutional Court, the Prime Minister, the Ministry of Foreign Affairs and many other ministries remain only on the organisation chart, their posts empty. The Government does not erase them: erasing them would weaken the claim that it has carried on the Republic of Korea. The official position is that across the river is not a country and so not a matter for foreign affairs.
+
+<a id="registration"></a>
+## Resident registration: the ledger
+
+**The ledger** is resident registration. The Ministry of the Interior and Safety keeps the master copy in a deep level of the Government Complex Seoul, and each dong community centre keeps a copy for its own dong. Where master and copy differ, the master wins.
+
+| Entry | Content |
+|---|---|
+| Resident registration number | Thirteen digits as before the Blackout; the first six are the date of birth |
+| Address | District, dong, station, level, place number. For example, "Seoul Station platform 3, Hoehyeon-dong, Jung-gu" |
+| Household | Householder and household members. Rations and labour are assessed by household |
+| Occupation | The inherited work. Changing it needs a sign-off |
+| Ration grade | The grade in the ration table below |
+| Military service | Serving, reserve, civil defence, exempt |
+| Machine body | Whether any machine is fitted to the body, and where it is serviced |
+| Sentences | The record of punishments received |
+
+- **Registration token.** The Republic's resident registration card became a registration token, a thin metal plate engraved with the number. It is worn round the neck and shown when drawing rations and when moving between stations. Lose it, and rations stop until a new one is issued.
+- **Moving-in report.** To change one's station, one files a moving-in report and needs three seals: the Stationmaster of the station left, the Dong Chief of the dong left, and the receiving district office.
+- **Quota.** Every station has a quota set by the Ministry of Land, Infrastructure and Transport. When a station goes over its quota, the Dong Chief issues a moving-in order sending one household to a station with room to spare, usually a shallow, cold one.
+
+**Striking off** is being erased from the ledger. There are three kinds.
+
+1. **Death strike-off.** Erasure on receipt of a death report: one red line, and the date.
+2. **Whereabouts-unknown strike-off.** Erasure of someone who has left their registered station and not returned for thirty days.
+3. **Sentence strike-off.** Erasure as punishment: two red lines. One can never be entered again.
+
+Those struck off are off the ledger. They receive no rations, their tokens are cut, and the law no longer sees them. Government people are taught that harming someone off the ledger is no crime. But if that person worked in a registered household, the household is compensated for the labour it lost.
+
+<a id="local-offices"></a>
+## District offices, dong centres and Stationmasters
+
+Government work begins at the station and ends at the district office. The line of sign-off runs "Stationmaster, Dong Chief, Head of the District Office, Member of the National Assembly".
+
+- The **district office** is the office of the Member's house. Its head, the **Head of the District Office**, is a post the Member appoints. The Head stamps the Member's seal, issues district notices and holds petition hearings. The Head of the District Office holds no land.
+- The **dong community centre** is the **Dong Chief**'s ration office, with three counters: rations, entries and petitions. The official Government people meet most often is the clerk at these counters. One ration clerk can decide a household's meals for the month.
+- The **Stationmaster** ranks below the Dong Chief but is more feared, because the Stationmaster holds the station's heat and air. The post is handed down within the Stationmaster's house.
+
+How a station turns through its day is in [The Hands That Run a Station](/wiki/Operating-Houses/).
 
 <a id="law"></a>
-## Law
+## Law and punishment
 
-Law in the north is the Senator's law. Each Electorate keeps its own rulebook under a short common code that the President's office issues, and the common code mostly concerns the ledger.
+<a id="law-layers"></a>
+### The layers of law
 
-- **The ledger is evidence.** If the ledger says a family drew rations on a given day, they did. A person disputing an entry has to bring a clerk's seal to the hearing, not witnesses.
-- **Theft of heat and water is the gravest crime.** Taking fuel or water beyond the ration is treated like taking the lives of the people it was meant for. The usual sentence is forced labour on the coldest roll, and repeat offenders are struck off.
-- **Unlisted people have no standing.** They can't bring a complaint and can't be wronged in law. A ledger person who harms an unlisted person answers only for the lost labour, if the unlisted person was working for a ledger household.
-- **The Senator hears appeals.** In practice the Senator's steward hears them, in a room at the Electorate's seat station, on fixed days. People queue for hours on the platform outside.
-- **Treason is crossing without a pass.** Going south of the river, or dealing with southern traders without a licence, is read as leaving the ledger. Licensed traders exist, and the licence is one of the most valuable papers in the north.
+| Layer | What it is | Who makes it |
+|---|---|---|
+| Constitution | The Constitution of the Republic of Korea. Never amended. Almost nobody reads it, but the Government's legitimacy comes from it | Not amended |
+| Laws | The articles of the Republic's law code, rewritten under their original numbers | Passed by the National Assembly with fourteen seals |
+| Public notices | Orders the ministries issue under the state of disaster: ration grades, quotas, labour hours | Written by a minister and signed off by the President |
+| District notices | Rules that differ by district: market pitch fees, entrance duty, firewood shares | Written by the Head of the District Office and signed off by the Member |
 
-There are no lawyers. There are clerks who know the code, and households pay them in bread to write petitions.
+What actually governs people's lives is public notices and district notices. Changing a law needs fourteen seals and so is rare. The Government's law is old articles with layer upon layer of notices on top.
 
-<a id="market-economy"></a>
-## Market Economy
+<a id="trials"></a>
+### Trials
 
-The Government runs a ration economy with a market growing in its cracks. Nobody in the north lives on the ration alone, and nobody admits it in front of a clerk.
+- **Petition hearing.** Disputes between registered people and minor offences are heard at the district office's petition hearing, held by the Head of the District Office in the Member's name. The ledger counts for more than witnesses: anyone disputing an entry must bring a clerk's seal, not a witness.
+- **Strike-off hearing.** Offences that may end in a sentence strike-off are heard by the Ministry of Justice at the Government Complex Seoul. Three hearing officers listen and receive an opinion from the district's Member. A sentence strike-off is confirmed by the President's sign-off.
+- There are no defence counsel; only clerks who write petitions on people's behalf.
 
-<a id="currency"></a>
-### Currency
+<a id="punishments"></a>
+### The ladder of punishment
 
-There is no coin. The Government's money is the ration coupon: a slip printed on old stock, torn from a monthly sheet, stamped by the station's ration office and signed by a clerk. Coupons come in bread, fuel, water and goods. A goods coupon buys nothing by itself. It has to be presented with the item's ration price in work credit, which is written into the labour ledger.
+Nearly every Government punishment happens on the ledger. A punishment is a change to one's entries.
 
-Off the books, people trade in things that keep and hold their value: cartridges, cell charges, tobacco, needles and spools of thread. A handful of rifle cartridges buys more than a month of goods coupons, and everyone knows it. The office ledger tries to stamp out the cartridge trade every few years, and it never works for long.
+| Step | Punishment | What remains in the ledger |
+|---|---|---|
+| 1 | Warning | One line in the sentences column |
+| 2 | Ration demotion | The ration grade is lowered one step for one to three months |
+| 3 | Labour sentence | The coldest work (opening entrance shafts, hauling surface salvage, breaking river ice) for a set number of days |
+| 4 | Forced transfer | The whole household is moved to a shallow, cold station |
+| 5 | Sentence strike-off | Erased from the ledger; the token is cut and the person is sent out of the station |
+
+The death penalty remains as an article of the code but is never carried out. Instead there is the sentence strike-off. Everyone knows that someone sent off the ledger into the winter does not live long. Government people say, "We do not kill; we erase."
+
+There are five gravest offences: taking more heat or water than one's set share; altering the ledger or tokens, or drawing rations on someone else's token; putting the ledger or old official papers into the fibre-sugar vats; crossing the river without a seal or trading with people off the ledger without permission; and fitting a machine to the body without a permit.
+
+<a id="classes"></a>
+## Classes and inherited work
+
+Under scarcity, the child of a house that ran pumps learned pumps, and the child of a clerk learned the ledger. The Government did not create this; it wrote it down. The ledger recorded it as an occupation, and what was written set hard. A household's class is set by the householder's occupation.
+
+| Class | Who | Share of Government people | What the ledger gives | What the ledger takes |
+|---|---|---|---|---|
+| Assembly Member houses | Members, their households and close kin households | about 0.5% | Sleeping places on the deep levels, their own storehouses, wood fires, ministerial posts | Their seal for the President, the district's levy |
+| Civil-service households | Dong Chiefs, clerks, Stationmasters, police officers, ministry staff | about 8% | Sleeping places in the deep tunnel level, the office ration, the right to sit the examination | A ledger without error, and blame if it errs |
+| Military households | Households of career soldiers | about 7% | Military rations, barracks on the inner platforms | Their sons' and daughters' service as career soldiers |
+| Skilled households | Pump crews, heat-pump maintenance, fibre-sugar vat tenders, electricians, menders | about 18% | Lighter labour duty, alternative service instead of conscription | Shift work; they may not leave their occupation |
+| Labour households | Entrance workers, salvage and fibre gatherers, light-field workers, porters, woodcutters | about 66.5% | The largest meal share, one sleeping place | Labour duty, conscription, the coldest work |
+
+Children under sixteen and old or sick people who cannot work carry a **dependant** mark, about 30% of Government people. On their sixteenth birthday children are entered under the householder's occupation. This is the **succession entry**.
+
+There is only one way up: the civil service examination, held every year in the first month of the long-dark half at the Government Complex Seoul, testing ledger arithmetic and the articles of the law code. A few dozen pass each year. For a child of a labour household to study for it, the household must carry that child's labour share. Marriage between classes needs the Dong Chief's sign-off. Going down is easy: a clerk who gets the ledger wrong goes to a labour household.
+
+<a id="rations-and-taxes"></a>
+## Rations and taxes
+
+<a id="coupons"></a>
+### Coupons
+
+The Government's money is the **ration coupon**, printed by the Bank of Korea beneath its old main building near Hoehyeon station. The unit printed on the coupons is still the **won**. There are four kinds: meal, water, fuel and goods coupons. At the notice value, a bowl of fibre-sugar porridge (about 600 kcal) is 1,000 won. People reckon one person's day of meal coupons plus water coupons for 10 L as **one meal**.
+
+Coupons are collected monthly by household at the dong community centre, and can be exchanged for food only at the centre where that household is registered. In other dongs they can only be spent on goods at the markets. Ammunition, power cores and machine parts cannot be bought with coupons; they are registered goods of the army and the ministries.
+
+<a id="ration-grades"></a>
+### Ration grades
+
+| Grade | Who | Daily food | Other |
+|---|---|---|---|
+| Military service | Soldiers in service and career soldiers | about 3,200 kcal | Fuel coupons, insect protein every ten days |
+| Labour | Working members of labour households | about 3,000 kcal | Fuel coupons |
+| Skilled | Working members of skilled households | about 2,700 kcal | Fuel coupons, one goods coupon a month |
+| Office | Working members of civil-service households | about 2,400 kcal | Fuel coupons, two goods coupons a month |
+| Dependant (child) | Under sixteen | about 1,800 kcal | Counted in the household share |
+| Dependant (old or sick) | Those unable to work | about 1,700 kcal | Counted in the household share |
+
+Water is given as the household's share at 10 L per person a day. Assembly Member houses have no grade and eat from their own storehouses. When stores run short, the dong centre cuts the office share first, then the dependants' share, and the labour and skilled shares last, because the pumps and entrances cannot stop.
+
+Heat is handed out by sleeping depth. The deep tunnel level belongs to Assembly Member houses and civil-service households, the inner platforms to skilled households and military barracks, the outer platforms and the side nearest the concourse to labour households. That is why the sleeping place number is the last part of an address.
 
 <a id="taxes"></a>
 ### Taxes
 
-Taxes are taken in kind and in time. Every labour household owes a share of what it produces to the Senator's stores, usually a tenth of any surplus above the ration and a fixed weight of salvage each month. Station markets pay a stall tax in goods. The Senator in turn sends a tribute to the President's stores at Seoul Station and Sicheong, counted in fuel, ammunition and water.
+Taxes are paid not in money but in work, goods and people.
 
-The north's complaint about taxes isn't the size. It's that the Senator's clerks count the tax before the ration, so a bad month falls on the household, never on the store.
-
-<a id="labour-levy"></a>
-### Labour Levy
-
-Every ledger adult owes the levy. A working person gives three hours after a shift. A person without assigned work gives eight. The levy runs seven days on and four days off, and the work is whatever the Electorate needs most: clearing ice from exits, digging drainage, hauling salvage from the surface, standing night watch at the shutters.
-
-In a crisis the levy becomes the muster. The Senator calls up ledger adults by household, a set number per hundred entries, and they serve until the danger passes. A household that can't send its share loses part of its ration until it does.
-
-<a id="rations"></a>
-### Rations
-
-Rations are drawn by category, and each card is tied to a single station's ration office. A family registered at Hoehyeon can't draw bread at Chungmuro, only two stops away with Myeongdong between. Moving station means a new registration, a new card and a wait of weeks.
-
-| Category | Daily bread share | Other rations |
+| Tax | What | How much |
 |---|---|---|
-| Labour, heavy work | Largest share | Fuel coupon, fat once every ten days |
-| Labour, light work | Two thirds of heavy | Fuel coupon |
-| Office | Half of heavy | Fuel coupon, a goods coupon each month |
-| Dependent | A third of heavy | Counted against the household |
+| Labour duty | The time of registered adults (16-60) | One day in seven: opening entrance shafts, clearing snow, gathering fibre, building light-field banks |
+| Fibre levy | Paper, cardboard, wood and cotton the household gathers | All handed in at the dong centre and received back as fibre sugar; the district office keeps a tenth |
+| Produce share | The yield of fibre-sugar vats, mushroom tunnels, light-fields and insect tunnels | A tenth to the district office's storehouse |
+| Treasury payment | The district office's storehouse | A third of what the district office receives goes to the treasury at the Government Complex Seoul |
+| Pitch fee | Market pitches | Daily, in coupons |
+| Military service | People | See the national army below |
 
-Bread comes daily. Everything else comes in ten-day issues. When stores run short, the office cuts the dependent share first, then the office share, and the labour share last, because the pumps have to keep running.
+The fibre levy carries one taboo: the ledger and old official papers are not fibre. Paper bearing a seal is handed in separately at the dong centre and kept by the Ministry of the Interior and Safety. That is why the Government, which holds more fibre than anyone in Seoul, still has years when it goes hungriest. What Government people complain about in their taxes is not the size but the order: the district office counts the taxes before the rations.
 
-<a id="markets-by-station"></a>
-### Markets by Station
+<a id="markets"></a>
+## Station markets
 
-The Government tolerates markets where it can watch them, in the biggest halls of its biggest stations. A market needs room, so the halls with the widest concourses became the trading floors.
+Nobody lives on rations alone, and nobody admits it in front of a clerk. The Government licenses markets by district notice, and only in the wide concourses of large stations where they can be watched. Traders are people with a trader's entry, and they pay their pitch fees daily in coupons.
 
-| Station | Lines | Hall (depth, area) | What it trades |
-|---|---|---|---|
-| [Sindang](/wiki/duchies/11140/) | 2, 6 | Line 6 hall at B3, about 18,195 m² | The north's largest cloth and mending market. Rags in, quilting out |
-| [Wangsimni](/wiki/duchies/11200/) | 2, 5 | Line 5 hall at B5, about 16,106 m² | Salvage, tools, rail parts. Licensed southern traders set up here |
-| [Dongdaemun History & Culture Park](/wiki/duchies/11140/) | 2, 4, 5 | Line 4 hall at B3, about 14,689 m² | Clothing and boots, sold by stall families who've held their places for generations |
-| [Hoehyeon](/wiki/duchies/11140/) | 4 | B4, about 12,025 m² | Food beyond the ration: dried fish, pickled roots, fat. The busiest food market in Jung-gu |
-| [Cheongnyangni](/wiki/duchies/11230/) | 1 | B2, about 7,125 m² | Fuel and charcoal. Shallow and cold, so the trade is fast and loud |
-| [Jongno 3-ga](/wiki/duchies/11110/) | 1, 3, 5 | Line 3 hall at B4, about 14,830 m² | Coupon brokers, petition writers and the cartridge exchange nobody admits to |
-
-Myeongdong is a different case. Its line 4 station sits at B4, about 7,820 m², and the Government keeps it as a Jung-gu clerks' quarter rather than a market. The registry offices of the Electorate work there, and a ledger person who needs an entry corrected goes to Myeongdong first.
-
-<a id="daily-life"></a>
-## Daily Life
-
-<a id="shifts"></a>
-### Shifts
-
-The station day runs on three eight-hour shifts, because the pumps, the heat and the watch never stop. A labour family's members are often on different shifts and share one bunk in turns. The office keeps day hours. When a hard blizzard closes the exits, the station manager issues a stop paper: surface work is cancelled for the day, and the levy is moved to indoor tasks. Anyone caught outside when the shutters close stays where they are and works until the next shift.
-
-<a id="heating"></a>
-### Heating
-
-Heat comes from small iron stoves, generator heat drawn along the old ventilation ducts, and the bodies of everyone packed into a room. Fuel is rationed by coupon and supplemented by whatever can be burned: furniture from the surface, timber stripped from empty buildings, old books. Deep stations stay warmer. Singeumho on line 5 reaches B8, the deepest platform in the north, and its lower rooms are the warmest sleeping space in Jung-gu. A Senator's household is far likelier to sleep there than a hauler's.
-
-The coldest stations are the ones built above ground. Yongdap on line 2 stands on the second floor of a viaduct, with only about 1,423 m² of hall, and Sindap sits at ground level with about 2,203 m². Struck-off people and the poorest labour households end up there, because no one else wants the draught.
-
-<a id="food"></a>
-### Food
-
-Bread is mixed. In good months it's mostly grain from the deep store rooms. In bad months it's bulked out with root flour and anything that can be ground. People add what the market sells: dried fish, fermented roots, fat when there's fat. Hot water is a meal in itself. Every station has a boiler tap, and the first thing anyone does after a surface shift is queue for a cup.
-
-The Senator's table is the only place in an Electorate where food is served fresh and warm in quantity. Being invited to eat at it is how a family learns it has risen.
-
-<a id="housing"></a>
-### Housing
-
-Housing follows the ledger. The station's warm core near the generator and the deepest platforms goes to the Senator's house and the office ledger. Labour families live in rows of curtained bunks along the concourses and in old service rooms. Dependents sleep where their household sleeps, usually at the edge of the bunk row. A family's space is measured in bunk lengths and written in the ledger beside its name.
-
-Large stations have room to spare. Samgakji's line 6 hall at B4 covers about 14,457 m², and Taereung-ipgu's line 7 hall at B4 covers about 15,319 m². Small ones are crowded. Dokbawi on line 6 is deep, at B6, but only about 5,531 m², and its families sleep three to a bunk length.
-
-<a id="clothing-rules"></a>
-## Clothing Rules
-
-<a id="by-rank"></a>
-### By Rank and Tier
-
-What a person wears in the north is a public statement of the ledger entry, and the rules are written down. The silhouette everywhere is the same: long coats, quilted jackets, puttees, felt boots and ear-flap caps, the cut of an old war long before the Great Blackout.
-
-| Rank | What they may wear | What marks them |
+| Station | District | Market |
 |---|---|---|
-| Senator's house | Fur caps, light-coloured coats, fitted wool, leather boots | A blue-grey sash and the Electorate's seal pin. Pale colours show they rarely go outside |
-| Office ledger | Dark wool coats, felt boots with galoshes | A blue-grey collar stripe, and a cloth pouch for the stamp |
-| Labour ledger | Quilted cotton, padded trousers, felt boots, cloth caps lined with pile | A numbered work tag stitched to the left breast |
-| Dependent | Hand-me-downs from the household | Nothing. Dependents wear no marks |
-| Unlisted | Whatever they can get | No tag. A missing tag is the mark |
+| Jongno 3-ga | Jongno-gu | Coupon brokering and scriveners who write petitions and moving-in papers. The market the Government has turned a blind eye to longest |
+| Dongdaemun | Jongno-gu | Clothes mending and second-hand clothes; synthetic garments resold |
+| Dongdaemun History & Culture Park | Jung-gu | The largest clothes and boots market north of the river |
+| Hoehyeon | Jung-gu | Food: insect protein, dried fish, pickled cabbage and turnip, bean sprouts and barley shoots. The market value of coupons is set here |
+| Seoul Station | Jung-gu | The licensed merchants' waiting post, the only place on Government land where a merchant from across the river may stay on a temporary entry |
+| Gongdeok | Mapo-gu | Parts and tools from across the river that came through the Mapo tunnel; a market the OMO Party guards |
+| Wangsimni | Seongdong-gu | Scrap metal, rail parts, wire |
+| Cheongnyangni | Dongdaemun-gu | Fuel: methane tanks, charcoal, salvage firewood |
+| Jegi-dong | Dongdaemun-gu | Mushrooms and dried herbs |
+| Sangbong | Jungnang-gu | Meat and hides of hunted animals |
+| Yeonsinnae | Eunpyeong-gu | Bukhansan firewood; the servants of Assembly Member houses buy wood for their fires here |
+| Chang-dong | Dobong-gu | Machine parts stripped from the Chang-dong depot |
+| Nowon | Nowon-gu | Light-field vegetables and seed |
+| Konkuk Univ. | Gwangjin-gu | Fish caught through holes in the river ice |
 
-Fur is the clearest rule. Only the Senator's house may wear real fur on the head, and office clerks wear pile caps that only look like it. Light colours are the second rule. Pale cloth shows dirt and cold, so only people who live in the warm core can keep it clean, and the law reserves it for them.
+After coupons, the things most used at market are those that last and hold their value: needles, skeins of thread and salt. Salt is not produced in Seoul and grows scarcer every year.
 
-The rules leak. Old coats from the Senator's house are sold on in the Sindang market, and a labour family's daughter in a pale coat at a wedding is a sight everyone notices and nobody reports.
+<a id="clothing"></a>
+## Clothing
 
-<a id="winter-layers"></a>
-### Winter Layers
+In Seoul, cotton, paper and wood are food. So what Government people wear is fibre they cannot eat: synthetic garments from before the Blackout, taken apart and remade. Making new cotton clothes takes from the meals, so only Assembly Member houses do it. The shape is the same everywhere: a long quilted coat, felt or synthetic rubber boots, a cap with ear flaps, a face cover. The Government's colour is **navy**.
 
-The thickness of clothing follows two things: how often a person goes to the surface, and how high their rank is. The more someone goes outside, the more they wear. The higher they stand, the less they need to.
+Clothes show the entries. The President for Life wears the phoenix emblem; a Member wears the gold badge on the left lapel. Ministers and officials hang a civil servant's card beside the registration token. Stationmasters wear the old station staff cap, and the national army wears remade camouflage cold-weather uniforms from before the Blackout. Skilled households wear grey quilted work clothes with an occupation patch sewn on; labour households pull on the orange work vests of before the Blackout on labour-duty days. People off the ledger wear no mark. The needle holes where an occupation patch was torn off, "the torn place", are how the struck-off are recognised.
 
-| Who | Layers | What they are |
+<a id="day"></a>
+## The day and its rites
+
+The Government's day begins and ends with sirens. At 06:00 the lights-on siren sounds one long blast, and the **national ceremony** is held in front of the dong community centre: the salute to the national flag, the first verse of the national anthem, and a moment of silence. It takes one minute. The silence is for those struck off by death in the past day, and the Dong Chief reads their names. At 22:00 the lights-out siren sounds two long blasts and the platform lights go off. There are three eight-hour shifts. The name Sunday survives, but it is not a day of rest.
+
+The Government has no state religion; the Constitution's article separating religion and state remains. The faith of Government people is mostly faith in the ledger. The Government does not call it faith; it calls it administration.
+
+- **Disaster Day.** The Government does not know the exact date of the Blackout, so it made the shortest day of the year Disaster Day. At noon every Government station in Seoul sounds a long siren and keeps three minutes' silence.
+- **The New Year's Eve bell.** On the night the year turns, the Bosingak bell, moved to the concourse of Jonggak station, is struck thirty-three times. The President strikes the first. The sound is carried to every district office by tunnel telephone.
+- **Death.** When someone dies, the Dong Chief draws the red line of the death strike-off. Bodies do not decay. Each district has a **snow burial field** on the surface, where the funeral crews of labour households haul the dead on sleds and bury them in snow. Jungnang-gu people are buried at the Mangu burial ground. People of Assembly Member houses and those who served the country are buried at the April 19th National Cemetery site in Gangbuk-gu. The Seoul National Cemetery at Dongjak-dong lies across the river, and for a hundred years the Government has buried nobody there. Bodies and the clothes of the dead never go into the fibre-sugar vats.
+
+<a id="arc-and-baptism"></a>
+### The Government's view of the Arc and baptism
+
+The Government ledger records the Arc as **a body off the ledger**. Yet the Government has nowhere to mend machine bodies that run on electricity. A Government clinic can set joins and fit limbs moved by the body's own strength, but fitting and servicing machines that run on electricity means relying on the Arc's maintenance benches. The Government resolves this with **machine-body registration**. Someone fitted with a machine under a permit from the Ministry of Health and Welfare has "machine body" and the place of servicing written into their entries, and on permitted days only, passes the under-river tunnel checkpoint to an Arc maintenance bench.
+
+The Government draws the line on paper: a permitted machine is medical care, and baptism is joining a body off the ledger. Fitting a machine without a permit, and being baptised, are matters for a strike-off hearing. Few Government people are sure the two are really different. The national army dislikes nothing more than a soldier receiving a maintenance permit. Every year a few soldiers who went to a maintenance bench never come back.
+
+<a id="army"></a>
+## The national army
+
+<a id="army-structure"></a>
+### Command structure
+
+The Government's army is the **national army**: the Republic of Korea Armed Forces, shrunk but keeping its name and ranks.
+
+| Body | Where | What it does |
 |---|---|---|
-| Surface haulers and ice crews | Five to six | Undershirt, wool layer, quilted jacket, padded trousers, greatcoat, hood over an ear-flap cap, felt boots in galoshes |
-| Labour ledger, mostly underground | Three to four | Undershirt, quilted jacket, padded trousers, felt boots |
-| Office ledger | Three | Undershirt, wool waistcoat, dark wool coat |
-| Senator's house | One to two | Fitted wool and a light coat, with fur for the rare trip outside |
+| Ministry of National Defense | Samgakji, Yongsan-gu | Registration of conscripts and reservists, registration of ammunition, military rations |
+| Capital Defense Command | Samgakji, Yongsan-gu | The Government's field army. When the river froze it abandoned its headquarters at Namtaeryeong across the river and moved to Samgakji. It keeps the units that guard the three under-river tunnel checkpoints and the north ends of the bridges |
+| District units | Each district office | Raised by the Member from the district's conscripts and reservists. They guard stations, entrances and the rim watchtowers on the mountains |
+| Korea Military Academy | Hwarangdae, Nowon-gu | Raises the children of military households as officers |
 
-Layers are counted in the ledger too. Each labour adult is issued one quilted jacket every three winters and one pair of felt boot liners every winter. Anything else comes from the market or from the dead.
+An army has one commander, and that commander commands every squad of the army. The Government reads this as a sign-off: an army's operation order bears a single seal, the commander's. A squad leader passes orders on and does not give them. So the Government's armies are slow but do not scatter. If the commander falls, the squads hold where they stand until the next commander's seal arrives.
 
-<a id="soldiers-look"></a>
-## Soldiers' Look
+<a id="conscription"></a>
+### Conscription and service
 
-Government soldiers look like what they are: ledger people with guns. The army is combined arms on a thin budget, with many cheap levy squads, a smaller corps of trained riflemen, artillery and armoured vehicles kept alive in the state works, and a small state flight section for drones. It has no fighters with machine bodies and no hired companies. The Government doesn't buy soldiers from outside the ledger.
+- At nineteen every registered person, man or woman, serves 18 months. People are short, so women are called up too.
+- Occupations such as pump crews, intake maintenance and heat-pump maintenance do not take up rifles; they spend their 18 months working at the intakes or the bridge wind machines. A pump is worth more than a rifle.
+- After service one is a reservist until forty and in civil defence until fifty.
+- Non-commissioned and commissioned officers come from military households. Children who will be officers study two years at Hwarangdae.
+- In 2126 the standing force is about 4,000 career soldiers and about 2,500 conscripts in service, with about 20,000 reservists who can be called. There is not that much ammunition.
 
-| Kind | What they carry | What they wear |
-|---|---|---|
-| Ledger levy | Long spears cut from scaffold pipe, shovels, tin helmets | Five layers: greatcoat, quilted jacket over it, padded trousers, felt boots, ear-flap cap, and a blue-grey levy armband |
-| Line riflemen | Bolt-action rifles of mixed origin, a sack for spent brass, a counted handful of rounds | Four layers: long greatcoat over a quilted jacket, puttees over felt boots, a field cap under the hood, a blue-grey collar stripe |
-| Gun crews | Mortars and the few field guns left, with shell loads hauled on sledges | Heavy quilted coats and leather mittens on cords, oil-stained and smelling of the gun works |
-| Vehicle crews | Armoured vehicles from the old depots, run on rationed fuel | Padded leather helmets, short coats that won't snag in a hatch |
-| Flight section | Small drones kept warm inside coats, spare cells sewn into vests | Two or three thin layers under a coat, because cold hands can't fly |
-| Senate guard | The best rifles, a sidearm, the few working radios | Two layers: a fitted dark coat and a short jacket under it, a blue-grey sash, almost no patching |
+<a id="doctrine"></a>
+### How it fights
 
-Wear shows rank as clearly as the cloth. Levy coats are patched and mismatched, with sleeves from one coat and a collar from another. Guard coats are whole. The Government's colour is blue-grey, and it appears only on armbands, collar stripes and sashes, never as a whole uniform, because dyed cloth is too rare to spend on a coat.
+1. **It is an army that holds.** It guards the checkpoints of the three under-river tunnels, the north ends of the seven bridges, and the rim watchtowers on the northern mountains. The soldiers at the checkpoints check the token before they reach for the rifle.
+2. **It does not cross the river as an army.** Not since the ice attack of 2079 was broken by a blizzard. If a blow must be struck across the river, it goes by tunnel.
+3. **It fights with numbers.** The Government has the most people in Seoul, and a broken line is filled with reservists.
+4. **Every round is registered.** Soldiers hand back a casing for every round fired, and a round not accounted for stays in the sentences column.
+5. **There are no machine-bodied soldiers.** No unit is made of soldiers with machines in their bodies. Only Capital Defense Command keeps a few drones for fighting, launched only on the commander's sign-off.
 
-Ammunition and fuel run out first. Every rifleman picks up brass after a fight, and an officer counts it back into the store. A gun crew that loses its sledge of shells loses its reason to be on the field.
+What the Government's army lacks is machine-body units, hired units, and a deep bench of engineers and maintenance; the hands that mend bridges and tunnels are borrowed from the Free Cities under the water supply contract. What it has in plenty is conscript infantry and reservists, checkpoint garrisons, mountain scouts, and the riflemen and mortars of Capital Defense Command.
 
-<a id="civilians-look"></a>
-## Civilians' Look
+<a id="third-contract"></a>
+## The Government before the third water supply contract
 
-An ordinary northern resident is wrapped and grey. On a platform at Seoul Station at shift change, the crowd is all quilting and wool in shades of ash, mud and old navy. Faces are pale from years underground, cheeks chapped red by surface work. Labour adults have the white numbered tag on the left breast, and most have a cup tied to the belt for the boiler tap.
+For the Government, the water supply contract is a matter of the ledger before it is a matter of water. The Government does not record across the river as a country, so the National Assembly does not ratify the contract. The Ministry of Climate, Energy and Environment makes a maintenance service annex for each facility, the Member for the district where the facility stands seals it as well, and the President signs it off. The cities across the river are written in as work crews engaged for the service.
 
-Small things say a lot. A clerk carries a stamp pouch and walks fast. A hauler's coat is dark at the shoulders where the rope sits. Children wear coats cut down from a parent's, the sleeves rolled three times. Old people wear the most layers of anyone, because they don't move enough to stay warm. An unlisted person stands out by what's missing: no tag, no cup, and a coat that doesn't match the station.
+The Government wants one more well and one more deep-level fan at Seoul Station, a full rebuild of the Guui and Ttukdo intake pumps, and deeper wells. It offers intake sites and old mains, seconded labour, firewood, copper and wire. People seconded for labour receive a **secondment entry** and remain registered even while across the river.
 
-Hair is kept short or tied up, because lice spread in bunk rows and water for washing is rationed. Wedding clothes are borrowed, and a few households at Euljiro 3-ga rent them out by the night.
+At the third contract the Arc sits down for the first time. The six OMO Party Members want annexes with the Arc too; the eight Claw Party Members want no seal set with a body off the ledger. The bridges, tunnels and intakes the contract depends on are all in OMO Party districts, and the Claw Party's only way to block an annex is the President's sign-off. A President acclaimed by fourteen seals loses half the Members the day after taking either side. The full scales are in [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/).
 
-<a id="cyberware-access"></a>
-## Cyberware Access
+<a id="unsettled"></a>
+## What is not yet settled
 
-In the north, cyberware follows the ledger. The Government's clinics sit in its larger stations and each works under the Senator of its Electorate. A ledger person can be granted a part, usually a hand or a leg to keep a skilled worker on the roll, and the grant is entered in the registry beside the name, work and household.
+- Who the present President for Life is, and who the fourteen districts' Members of the National Assembly are, is not settled.
+- Apart from Member of the National Assembly and the presidency being for life, the post names on this page such as Stationmaster, Dong Chief and Head of the District Office, and words such as token, striking off and acclamation, are names not yet settled and may change.
+- Whose sign-off the National Intelligence Service answers to is not settled even inside the Government.
 
-| Who | What they can get | On what terms |
-|---|---|---|
-| Senator's house | Whatever the clinic can fit, first in the queue | The Senator's word |
-| Office ledger | Eyes and hands for close work, rarely | A petition and a Senator's seal |
-| Labour ledger | Legs and arms for skilled crews whose loss would stop a pump or a generator | The part belongs to the clinic. It goes back when the worker dies |
-| Dependent | Almost nothing | Only if a household can pay for it from its surplus |
-| Unlisted | Nothing from a clinic | A part fitted elsewhere is unlisted metal, and carrying it is a reason to be questioned |
+<a id="see-also"></a>
+## See also
 
-Government soldiers almost never carry machine parts. The clinics keep their few parts for pumps, power and ledgers, not for the levy. That's why the north fights with numbers and guns, and why northern soldiers stare at baptised fighters from the Arc as if at something out of an old story.
-
-<a id="links"></a>
-## Links
-
-- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/)
-- [Regional and Physical AI Arcs](/wiki/Regional-Physical-AI-Arcs/)
-- [Century Annals](/wiki/Century-Annals/)
-- [Free City Society](/wiki/Free-City-Society/)
-- [Arc Society](/wiki/Arc-Society/)
-- [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/)
-- [Jung-gu](/wiki/duchies/11140/), [Jongno-gu](/wiki/duchies/11110/), [Yongsan-gu](/wiki/duchies/11170/)
-- [Territory Map](/wiki/map/)
+- [The Three Polities of Seoul](/wiki/Sixteen-States/), [Free City Society](/wiki/Free-City-Society/), [Arc Society](/wiki/Arc-Society/)
+- [The Hands That Run a Station](/wiki/Operating-Houses/), [Houses and Inheritance](/wiki/Chaebol-Houses-and-Century-Factions/), [Crossings and Smuggling](/wiki/Diaspora-Corridors/)
+- [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/), [Titles and Offices](/wiki/Offices-and-Ranks/), [Guns, Rounds and Drones](/wiki/Era-Arms-and-Tech-Level/)
