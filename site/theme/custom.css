@@ -47,6 +47,10 @@
 .vp-doc a, .VPSidebarItem.is-active > .item .text { transition: color 150ms ease-out; }
 .VPDocAsideOutline .outline-title { font-weight: 700; }
 .vp-doc table { display: block; overflow-x: auto; }
+/* units pages: wide stat tables scroll sideways; headers and Korean words are never split per character */
+.unit-roster th { white-space: nowrap; }
+.unit-roster td { word-break: keep-all; }
+.unit-roster td:first-child { min-width: 7em; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 
 .person-clan-line { display: flex; align-items: center; gap: 10px; margin: 8px 0 16px; }
