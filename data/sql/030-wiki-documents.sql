@@ -51329,12 +51329,550 @@ This document is being written.
 
 이 문서는 작성 중이다.
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Free-City-Society', 'Free City Society', '자유도시 사회', 'factions', 6, '# Free City Society
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Free-City-Society', 'Free City Society', '자유도시 사회', 'factions', 6, '<a id="overview"></a>
 
-This document is being written.
-', '# 자유도시 사회
+## Overview
 
-이 문서는 작성 중이다.
+Go Ye-jin was a child in the Free City before anyone called it the Union. She remembers it as loud. People argued in the passages about whose pump mattered more, whose wiring had failed and whose daughter should take over a bench. Nobody was in charge of the arguing. That was the point.
+
+The Free City holds the seven districts of the southwest: Gangseo, Yangcheon, Yeongdeungpo, Guro, Geumcheon, Dongjak and Gwanak. It isn''t one power. Like the poleis of ancient Greece, each city is its own state, with its own assembly, its own magistrates and its own quarrels. There is no king and no capital. Go Ye-jin put it plainly: "Nobody could figure out who was the better engineer, so nobody could pick a leader."
+
+That deadlock became a constitution. Each district is a **polis**, and each polis chooses an **Archon** to lead it for a term. I Ilseop is the Archon of Gwanak. The [chronicle](/wiki/Regional-Physical-AI-Arcs/) tells how the cities took the word *polis* from salvaged books and how I Ilseop won his seat. This page describes what living inside one of those cities is like: who counts, how law works, what things cost, what people wear and how a body gets its metal.
+
+### Where Authority Comes From
+
+A polis doesn''t claim authority from a ledger or a bloodline. It claims it from work that can be shown. When the old stations of the southwest found each other, they found that each one depended on the others'' skills. A station with a good purifier needed a station that could rewind motors. A station that could rewind motors needed the station with spare fuses. None of them could force the others, so they bargained.
+
+Bargaining needed witnesses. The first assemblies were crowds gathered on a platform to watch two crews settle a trade and to remember what had been promised. Over time the crowd became the Citizens'' Assembly, and the people who kept the promises written down became magistrates. By most accounts this is how a habit of witnessing became the right to rule.
+
+The authority of a polis rests on three things, and every child learns them:
+
+1. **Shown skill.** A citizen is someone who has shown a trade before the Assembly.
+2. **Public labour.** A citizen has given a year of work to the city.
+3. **The vote.** What the citizens decide together binds the city, and nothing above the city binds it at all.
+
+<a id="social-structure"></a>
+
+## Social Structure
+
+The Free City isn''t equal. It''s open in a way the north isn''t, but scarcity still pushes children into their parents'' trades, and a family that has held a bench for four generations doesn''t give it up easily. What differs is how a person climbs and how a person falls.
+
+### Citizens, Residents and Hands
+
+| Standing | Who | What they can do | What they owe |
+|---|---|---|---|
+| Citizen | Someone who has shown a trade before the Assembly and served a year of public labour | Speak and vote in the Assembly, sit on juries, stand for office, sign contracts in their own name | Jury duty, a share of public labour each year, and service when the city calls its crews |
+| Resident | Someone who lives in the polis under its protection but hasn''t earned citizenship | Work, trade, be fitted with parts, go to court through a citizen sponsor | Rent in water or work, and obedience to the city''s rules |
+| Apprentice | A child or newcomer bound to a guild master to learn a trade | Eat at the master''s bench and learn | Years of work without wages, and a share of earnings once qualified |
+| Hand | Day labour without a trade: haulers, ice cutters, porters | Sell their work by the shift | Nothing beyond the shift, which is both their freedom and their danger |
+| Outsider | People from the Government or the Arc, travellers, the unregistered | Trade in the open markets, hire on as hands or contract fighters | The market toll, and they can be asked to leave |
+
+Most people move between these rows at least once. A hand who learns welding at a contract hall''s bench can become an apprentice, and an apprentice who passes the guild''s test can stand before the Assembly. A citizen who breaks a contract twice can be struck from the rolls and fall back to resident.
+
+### Guild Houses and Bench Families
+
+The real social unit is the **bench**: a workshop space in a station, its tools and the family that works it. Benches are inherited, but not automatically. When a master dies, the guild decides whether the heir has the skill to keep the bench. If not, it goes to the best journeyman.
+
+The guilds are the backbone of every polis. The main ones exist in every city, under slightly different names:
+
+| Guild | Trade | Why it matters |
+|---|---|---|
+| Waterworks | Pumps, purifiers, pipe, ice melting | No water, no city |
+| Linesmen | Power lines, junctions, cells, lighting | Go Ye-jin''s own trade. Whoever keeps the lights on is listened to |
+| Machinists | Motors, bearings, turning, rewinding | They keep every other guild''s tools alive |
+| Builders | Walls, seals, shafts, collapse shoring | The stations themselves |
+| Provisioners | Grow rooms, depot fields, stores, cooking | Food and the city''s reserve |
+| Surgeons | Fitting, wound care, part repair on the body | Rare, rich and watched |
+| Carters | Track carts, haulage, convoys between cities | Trade between poleis runs on their routes |
+
+Each guild sends representatives to the city''s Council, certifies its own members and settles disputes inside its trade. A guild master''s word carries weight in the Assembly, not because the law says so but because everyone knows who keeps the city alive.
+
+### Old Rolls and Closed Rolls
+
+Some cities have started to close. A few old bench families in the larger poleis keep a **skill roll** of houses whose members alone may stand for the Council. In those cities a talented newcomer can still earn citizenship, but not a seat. People in the smaller cities say this is how a polis begins to turn into the north. People in the larger ones say it keeps fools off the Council. Both are partly right.
+
+<a id="law"></a>
+
+## Law
+
+### Who Makes It
+
+Law comes from the **Citizens'' Assembly** (*Ekklesia*). In most cities it meets on a fixed day each month, on the widest platform the city has, and any citizen can speak. The **Council** (*Boulē*), thirty to fifty citizens drawn by lot from those who have held office, sets the agenda and runs the city between meetings. The **magistrates** (*Archontes*) carry out what the Assembly decides: the Water Magistrate, the Workshop Magistrate, the Market Magistrate and the Walls Magistrate, with the Archon first among them.
+
+Laws are short. Most of them are written on boards fixed to the platform wall, and they''re read aloud at the first Assembly of each year so that nobody can claim not to have heard them. Children learn to read from those boards.
+
+### Courts and Juries
+
+A dispute between citizens goes to a jury of twenty-one, drawn by lot from the rolls. The parties speak for themselves. Nobody argues for pay. Guild disputes go first to the guild, and only reach a jury if a member refuses the guild''s ruling.
+
+Disputes between cities go to a joint tribunal named by the poleis involved. Its authority rests on the covenant of the **League** (*Symmachía*), the defensive and trade league of the seven poleis. League decisions need every city''s agreement, so a single polis can block a ruling, and often does.
+
+### Punishments
+
+Prisons are a waste of heat and food. The Free City punishes in other ways:
+
+- **Restitution.** Most wrongs are paid back in work, water or parts, set by the jury.
+- **Loss of standing.** A citizen can lose the vote for a term, or lose citizenship outright.
+- **Loss of the bench.** A master who sells bad work can have the bench taken by the guild.
+- **Exile.** The worst sentence. An exile is walked to the city''s last station and told not to come back. Neighbouring poleis are informed, and most won''t take them.
+
+Exile is feared more than anything. Outside a city''s protection, a person has no market, no surgeon and no warm room.
+
+### Contracts
+
+Nearly everything in a polis is a contract: a repair, an apprenticeship, a convoy, a fighting company''s season. Contracts are spoken before two citizen witnesses and written on whatever is at hand. The Market Magistrate keeps copies of the large ones. Breaking a contract is the most common crime in the Free City and the one people judge most harshly, because the whole city runs on promises being kept.
+
+<a id="market-economy"></a>
+
+## Market Economy
+
+### Skill Is the Currency
+
+In the Free City, a pump or a junction box is worth what it can do for whoever needs it. Engineers trade parts for repairs, repairs for power and power for food. A city with a good purifier can ask a lot of its neighbours. A city whose generator fails has to ask a lot of them in turn.
+
+Skill trade is the heart of it. A linesman''s crew from one polis spends a week rewiring another polis''s grow room, and is paid in grain, water or a promise of machinists'' time later. Most trade between cities is like this: work for work, with the balance carried forward on a guild''s tally board.
+
+### Scrip
+
+Work for work is slow. So the cities issue **scrip**. Each polis''s Market Magistrate stamps chits that count **hours of power**: one chit is a promise that the city will deliver a set amount of current to the bearer''s bench. Because every bench needs power, everyone takes power scrip. Water scrip exists too, mostly in the cities that hold the big purifiers.
+
+Scrip has rules everybody knows:
+
+- It''s good at face value only in the city that stamped it. In a neighbour''s market it trades at a discount that changes with that neighbour''s opinion of the issuing city.
+- Some cities print too much when their generators are failing. Their scrip falls fast, and people start asking for cells, fuses or ammunition instead.
+- Charged cells are the coin everybody trusts. They''re small, they''re always needed and they hold their value across every city line. A sealed box of primers is worth even more, and is rarely spent.
+
+### Markets and Stalls
+
+Every polis has at least one market station. The big ones are known across the southwest:
+
+- **Yeongdeungpo Market** keeps the oldest open market, on its long platforms deep below the street. Food, cloth, cells and secondhand parts change hands there every day.
+- **Sindorim**, where lines meet, is where convoys between the cities load and unload. Carters'' guilds keep their halls there, and the [cargo gate](/wiki/Sindorim-Junction-Cargo-Gate/) is busier than any market.
+- **Gasan Digital Complex** is where the machinists cluster. People go there for motors, bearings and rebuilt tools.
+- **Noryangjin** trades in salvage brought in from the surface along the river, and the prices there are the most honest in the southwest because nobody pretends the goods are new.
+
+Each market has a Market Magistrate who sets **floor and ceiling prices** for the things a city can''t do without: water, grain, lamp oil and medicine. When grain goes up, the bread stays the same price and the loaf gets smaller. Everything else floats.
+
+### Guild Halls Abroad
+
+Larger guilds keep **halls** in other cities: a walled corner of a station with its own store, its own scales, its own seal and its own book of rules, read aloud once a year to the members who live there. A hall settles disputes among its own members and pays for its privileges by maintaining something for the host city, often a stairway or a pump. Visiting engineers sleep and trade there, and a hall is the first place a stranger from that city goes for help.
+
+### Contract Companies
+
+The Free City can''t draft its people. There''s no power above the city that could, and the cities won''t draft across their own lines. So they **hire**. A **contract company** is a crew of fighters who sell their service by the season. Companies come in three sizes: a squad of a dozen, a company of around fifty and a large company of a hundred or more.
+
+A company''s contract says what it will guard, for how long, for what pay and what happens to the dead. Pay is mostly scrip and cells, with ammunition paid separately and counted round by round. Hiring is cheap at first and expensive over time, which every Archon learns. The best companies have names, histories and long memories of who paid them late. When the League faces the war machines, it doesn''t raise an army. Each city hires, and the companies are lent where they''re needed.
+
+Fighters in contract companies are called **contract fighters**. They''re citizens of no city in particular, or of a city that exiled them, and the poleis treat them with the wary respect people give to anyone armed and paid by the season.
+
+<a id="daily-life"></a>
+
+## Daily Life
+
+### A Day in a Polis
+
+The day starts with the lights. In most cities the Linesmen bring the main platforms up to full light at a set hour, and that''s when people wake. There is no sun to wake to.
+
+Morning is water. Households queue at the tap with their marked cans, and the tap keeper writes down who took what. Then work. Benches open, and the passages fill with the noise of grinders and the smell of solder. Children go to the guild bench or to the reading wall, depending on age. Hands gather at the stair heads to be hired for the day''s hauling or ice cutting.
+
+Midday is the shared meal, cooked in a station kitchen and eaten standing or sitting on the platform edge. Afternoons are for contracts and markets. In the evening the lights drop to half, and people talk. That''s when the arguing happens: in the passages, at the stalls, at the edges of the Assembly platform even on days when it isn''t sitting. Free City children grow up hearing adults disagree in public and expecting to be allowed to join in once they''re old enough.
+
+### Heat
+
+Heat is sold like power. A few cities hold large generators, and they pipe warm water to their neighbours'' platforms for a fee. Rooms closest to the generator are the warmest and the most expensive. Families with spare cells keep them close to their bodies, and warm rooms double as charging rooms.
+
+### Children
+
+Children belong to their family''s bench until they''re old enough to be apprenticed, usually around twelve. Before that, every child learns to read the law boards, to count scrip and to recognise the basic parts of a pump, a line and a cell. Go Ye-jin learned the grid this way, following the linesmen through the passages and holding their lamps. By her own telling, she was better at tracing lines than at talking to people.
+
+### Holidays and Ceremonies
+
+There are no religious holidays in the Free City; the Arc took faith south with it. The big days are civic:
+
+- **Reading Day**, the first Assembly of the year, when the laws are read aloud.
+- **Test Days**, when apprentices show their trades and newcomers stand for citizenship. Families gather to watch, and a pass is celebrated with a meal.
+- **Contract Night**, when the season''s contract companies are hired and sworn in, and the companies march through the market station with their colours.
+
+### Death
+
+A citizen''s death is witnessed by the guild. Their tools return to the bench, their contracts are settled by the Market Magistrate, and any machine parts are taken out and either returned to the surgeon''s account or sold to pay the debts. The body goes to the cold, to a sealed surface room where the frost keeps it until there''s room to bury.
+
+<a id="clothing-rules"></a>
+
+## Clothing Rules
+
+The Free City has no laws about who may wear what. It has customs, and customs are harder to break.
+
+### Layers Show Skill
+
+Engineers build their own cold-weather layers, often seven or eight of them, from a thin base layer to an outer shell. A person''s layers show what they can make and maintain. A skilled machinist wears a jacket whose seams have been resewn, patched and reinforced so many times that the original cloth is hard to find. A newcomer wears whatever was handed down.
+
+The commonest garment in the southwest is a quilted inner jacket from old surplus, dark or faded yellow, worn under everything. Nobody in the Free City considers it poor clothing. Everybody has one.
+
+### Guild Marks
+
+Each guild has a mark: a coloured tab, a stitched sign or a particular kind of button sewn at the left shoulder. The Linesmen''s is a twist of copper wire; the Waterworks'' is a blue tab; the Surgeons'' is a white thread sewn in a pattern of their own. Masters wear the mark in metal, journeymen in thread and apprentices in a plain strip of cloth.
+
+Wearing a guild''s mark without membership is one of the few clothing offences people take seriously. The guild can take you to a jury for it.
+
+### Citizenship and Office
+
+Citizens wear their city''s colour as a band on the right sleeve. Residents don''t. On Assembly days, magistrates wear a sash in the city colour, and the Archon wears the same sash with the city''s seal on a cord around the neck. Outside the Assembly an Archon dresses like anyone else of their guild, and most are proud of it.
+
+### What Isn''t Worn
+
+Fur is rare and suspect. In the southwest it''s associated with the north, where Senators'' households wear it, and a citizen in fur is assumed to be either very rich or showing off to someone across the river. Visible metal in the body isn''t hidden, but it isn''t shown off either. Showing metal is an Arc habit, and many in the Free City find it uncomfortable.
+
+<a id="soldiers-look"></a>
+
+## Soldiers'' Look
+
+The Free City has no standing army, so its soldiers look like what they are: crews of engineers and paid fighters, kitted out by their guilds and their contracts.
+
+### City Crews
+
+When a polis calls its crews, citizens turn out in their work clothes with a fighting layer on top: a padded vest or plate panels over the chest, a helmet that is often a converted work helmet, and the city''s colour band. Each crew carries its trade. Linesmen bring cells and jammers. Machinists bring tools to repair what breaks in the field. Builders carry wire and nets for the exits. A city crew looks less like an army than a repair team that brought rifles.
+
+### Contract Companies
+
+Contract fighters are easier to spot. They wear more armour and fewer colours, because they''re paid to stand in front. Each company has its own mark, usually painted on the helmet and the left shoulder, and a strip of the hiring city''s colour tied on for the length of the contract. When the contract ends, the strip comes off.
+
+Their weapons are the best-kept in the southwest. Rifles are cleaned every night, magazines are counted every morning and spent brass is collected after every fight, because the company''s contract pays for ammunition by the round. A contract fighter who leaves brass on the floor is fined.
+
+### Drones and Engineers
+
+The Free City fights with machines more than either of its neighbours. Drone crews wear heavy padded coats with inside pockets for cells, kept close to the body to stay warm. Their drones are flown briefly and brought down quickly. Field engineers carry coils of wire for fixing tracks and shoring, and many have a powered hand or a reinforced leg from the guild surgeons. Nobody in a Free City crew counts parts the way the Arc does, but nobody refuses one that works.
+
+### What They Lack
+
+Free City forces are light on heavy armour and on guards for their commanders. There''s no great noble to protect, and no cavalry of the old style. Their strength is repair and speed: a Free City crew can fix a broken cart under fire and keep moving, which neither the Government''s levies nor the Arc''s faithful can easily do.
+
+<a id="civilians-look"></a>
+
+## Civilians'' Look
+
+An ordinary citizen in a Free City market looks like a person who just stepped off a bench, because they probably did. Clothing is layered, patched and practical. Gloves are fingerless for fine work, with mitts worn over them in the passages. Most people carry a tool roll, a lamp and a water can, and many carry all three at once.
+
+Faces are pale. Nobody has seen the sun in a hundred years. Hair is cut short for work or tied back and covered. Many people have small burns on their hands and forearms, solder scars that show the trade they''ve followed.
+
+Residents look much like citizens, but without the sleeve band. Hands wear the cheapest layers and the heaviest boots, and they often wear old hauling harnesses all day. Outsiders stand out: northerners by their issued clothing, all in the same cut, and people from the Arc by the metal they don''t hide.
+
+Children wear their parents'' cast-offs taken in, and an apprentice''s strip of guild cloth at the shoulder is the first thing a child wears that is theirs alone.
+
+<a id="cyberware-access"></a>
+
+## Cyberware Access
+
+Cyberware in the Free City is a trade like any other. Surgeons belong to their own guild, learn from a parent or a master and sell their work. Parts move through the markets: salvaged from sealed stores, taken from the dead, or rebuilt from patches. Anyone who can pay can be fitted. The general rules of fitting and upkeep are on [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/).
+
+### The Surgeon''s Account
+
+A part fitted in the Free City comes with an **account**. The surgeon who fitted it keeps a record of the part, the price and the upkeep owed. Most people pay off a part over years, in scrip, cells or work for the surgeon''s guild. A person who stops paying doesn''t lose the part, because the law doesn''t allow cutting it out, but no guild surgeon will repair it. In a city of engineers, an unrepaired part is a slow sentence.
+
+### Who Gets Metal
+
+| Who | Usual parts | How they pay |
+|---|---|---|
+| Masters and rich bench families | Fine hands, eyes for close work, the base implant along the spine | Cash in cells and scrip, or a bench''s earnings |
+| Journeymen and crews | A simple hand, a reinforced leg after an accident | A guild loan against future work |
+| Contract fighters | Plating, legs and eyes, often secondhand | The company advances it and takes it out of the season''s pay |
+| Hands | Almost nothing, or a cable hand that needs no charge | What they can scrape together |
+
+Simple parts are common. A hand that runs on the body''s own pull on a cable can be mended with a file and a spring, and many workers prefer it on purpose. Powered parts are for those who can keep cells charged.
+
+### The Market''s Risk
+
+The open market is the Free City''s strength and its danger. A secondhand hand may have a cracked socket. A rebuilt eye may run hot. Nobody in the market is obliged to take a bad part back. A careful buyer pays a guild surgeon they know rather than the cheapest stall, and in the market stations people trade the names of good surgeons the way they trade parts.
+
+### The Shadow of the Arc
+
+Go Ye-jin grew up in this market. She saw people fitted with machines they couldn''t keep, and she saw machines stripped from the dead to pay their debts. Some people in the Free City say that''s why she went south and made the fitting of parts into a faith that pays for itself. Others say she simply found something in the manuals that the market couldn''t sell. Either way, the Free City watches the Arc with the particular unease of a city whose own child left home and became something else.
+
+<a id="links"></a>
+
+## Links
+
+- [Regional and Physical AI Arcs](/wiki/Regional-Physical-AI-Arcs/): the chronicle, the polis institutions and how I Ilseop came to lead Gwanak
+- [Century Annals](/wiki/Century-Annals/): the hundred years, and Go Ye-jin''s childhood in the Free City
+- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/): parts, upkeep and the cost of a machine body
+- [Government Society](/wiki/Government-Society/): life under the ledgers north of the river
+- [Arc Society](/wiki/Arc-Society/): the faith that grew out of the Free City
+- [The Three Factions of Seoul](/wiki/Sixteen-States/)
+- [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/)
+- [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
+- [Food Culture](/wiki/Food-Culture/)
+', '<a id="overview"></a>
+
+## 개요
+
+고예진은 유니온이라는 이름이 생기기 전의 자유도시에서 자랐다. 그는 그곳을 시끄러운 곳으로 기억한다. 통로마다 누구 펌프가 더 중요한지, 누구 배선이 나갔는지, 어느 집 딸이 작업대를 물려받아야 하는지를 두고 사람들이 다퉜다. 그 다툼을 맡아 다스리는 사람은 없었다. 바로 그게 핵심이었다.
+
+자유도시는 남서쪽 일곱 구, 강서, 양천, 영등포, 구로, 금천, 동작, 관악을 쥔다. 하나의 권력이 아니다. 고대 그리스 폴리스처럼 도시 하나하나가 제 나라이고, 저마다 시민회와 집정관과 다툼을 따로 갖는다. 왕도 수도도 없다. 고예진은 이렇게 말했다. "누구 기술이 더 높은지 따질 방법이 없으니 지도자도 못 뽑았다."
+
+그 교착이 헌법이 됐다. 구 하나가 **폴리스** 하나이고, 폴리스마다 임기를 정해 **아르콘**을 뽑는다. 이일섭이 관악의 아르콘이다. 도시들이 주워 온 책에서 *폴리스*라는 말을 찾은 이야기와 이일섭이 자리에 오른 이야기는 [연대기](/wiki/Regional-Physical-AI-Arcs/)에 있다. 이 문서는 그런 도시 안에서 사는 일이 어떤지를 적는다. 누가 셈에 드는지, 법은 어떻게 돌아가는지, 물건값은 어떻게 매기는지, 사람들은 무엇을 입는지, 몸에 금속은 어떻게 들어가는지.
+
+### 권위는 어디서 오는가
+
+폴리스는 장부나 혈통에서 권위를 끌어오지 않는다. 보여 줄 수 있는 일에서 끌어온다. 남서쪽의 옛 역들이 서로를 찾았을 때, 저마다 남의 기술에 기대고 있다는 걸 알게 됐다. 정수기가 좋은 역은 모터를 다시 감을 줄 아는 역이 필요했다. 모터를 감는 역은 여분 퓨즈를 가진 역이 필요했다. 누구도 남을 억지로 부릴 수 없었으니 흥정을 했다.
+
+흥정에는 증인이 필요했다. 첫 시민회는 승강장에 모여 두 작업조가 거래를 매듭짓는 걸 지켜보고 무엇을 약속했는지 기억해 주던 군중이었다. 세월이 흐르며 그 군중이 시민회가 됐고, 약속을 적어 두던 사람들이 집정관이 됐다. 대개 이렇게 증인 서던 습관이 다스릴 권리가 됐다고 전한다.
+
+폴리스의 권위는 세 가지에 기대며, 아이들은 모두 이것을 배운다.
+
+1. **보여 준 기술.** 시민은 시민회 앞에서 제 기술을 보인 사람이다.
+2. **공공 노역.** 시민은 도시에 한 해의 일을 바친 사람이다.
+3. **표결.** 시민이 함께 정한 것은 도시를 묶고, 도시 위의 어떤 것도 도시를 묶지 못한다.
+
+<a id="social-structure"></a>
+
+## 사회 구조
+
+자유도시는 평등하지 않다. 북쪽보다 열려 있을 뿐이다. 결핍은 여기서도 아이들을 부모의 일로 밀어 넣고, 네 대째 작업대를 쥔 집안은 그 자리를 쉽게 내놓지 않는다. 다른 점은 사람이 어떻게 오르고 어떻게 떨어지느냐다.
+
+### 시민, 거주민, 일손
+
+| 신분 | 누구인가 | 할 수 있는 일 | 지는 몫 |
+|---|---|---|---|
+| 시민 | 시민회 앞에서 기술을 보이고 한 해 공공 노역을 마친 사람 | 시민회 발언과 투표, 배심, 공직 출마, 제 이름으로 계약 | 배심 의무, 해마다 공공 노역 몫, 도시가 작업조를 부르면 복무 |
+| 거주민 | 폴리스의 보호 아래 살지만 시민권은 없는 사람 | 일, 거래, 부품 시술, 시민 보증인을 통한 재판 | 물이나 일로 내는 세, 도시 규칙 준수 |
+| 도제 | 기술을 배우러 조합 장인에게 묶인 아이나 새로 온 사람 | 장인의 작업대에서 먹고 배운다 | 몇 해의 무급 노동, 자격을 딴 뒤 벌이의 일부 |
+| 일손 | 기술 없는 날품팔이. 짐꾼, 얼음 깨는 사람, 운반꾼 | 교대 단위로 제 일을 판다 | 교대 이상의 의무는 없다. 그게 자유이자 위험이다 |
+| 바깥사람 | 정부나 아크에서 온 사람, 떠돌이, 등록 안 된 사람 | 열린 장터의 거래, 일손이나 계약병으로 고용 | 장터 통행료. 떠나라는 말을 들을 수 있다 |
+
+대부분은 평생 이 줄 사이를 한 번 이상 오간다. 계약 회관 작업대에서 용접을 배운 일손은 도제가 될 수 있고, 조합 시험을 통과한 도제는 시민회 앞에 설 수 있다. 계약을 두 번 깬 시민은 명부에서 지워져 거주민으로 떨어질 수 있다.
+
+### 조합 회관과 작업대 집안
+
+진짜 사회 단위는 **작업대**다. 역 안의 작업 공간과 그 공구, 그리고 그곳에서 일하는 집안을 묶어 이렇게 부른다. 작업대는 물려주지만 저절로 넘어가지는 않는다. 장인이 죽으면 조합이 상속인에게 그 자리를 지킬 기술이 있는지 판단한다. 없으면 가장 나은 직인에게 간다.
+
+조합은 모든 폴리스의 뼈대다. 주요 조합은 도시마다 이름만 조금씩 다를 뿐 다 있다.
+
+| 조합 | 일 | 왜 중요한가 |
+|---|---|---|
+| 급수 조합 | 펌프, 정수기, 배관, 얼음 녹이기 | 물이 없으면 도시도 없다 |
+| 전선 조합 | 전선, 접속함, 전지, 조명 | 고예진 자신의 일이다. 불을 켜 두는 사람의 말을 사람들이 듣는다 |
+| 기계 조합 | 모터, 베어링, 선반, 재권선 | 다른 모든 조합의 공구를 살려 둔다 |
+| 건축 조합 | 벽, 밀폐, 갱도, 붕괴 버팀 | 역 그 자체 |
+| 물자 조합 | 재배실, 차량기지 밭, 창고, 취사 | 식량과 도시의 비축 |
+| 집도 조합 | 시술, 상처 관리, 몸에 단 부품의 수리 | 드물고, 부유하고, 감시받는다 |
+| 운반 조합 | 궤도 수레, 짐 나르기, 도시 사이 호송 | 폴리스 사이의 거래가 이들의 길로 다닌다 |
+
+조합마다 도시 평의회에 대표를 보내고, 제 조합원을 인증하고, 제 업종 안의 분쟁을 가린다. 조합장의 말이 시민회에서 무거운 건 법이 그렇게 정해서가 아니라 누가 도시를 살리는지 다들 알기 때문이다.
+
+### 옛 명부와 닫힌 명부
+
+어떤 도시들은 닫히기 시작했다. 큰 폴리스 몇 곳에서는 오래된 작업대 집안들이 **기술 명부**를 두고, 그 명부에 오른 집안 사람만 평의회에 나설 수 있게 했다. 그런 도시에서도 재능 있는 새사람은 시민권은 딸 수 있지만 평의회 자리는 얻지 못한다. 작은 도시 사람들은 폴리스가 북쪽처럼 변해 가는 첫걸음이라고 말한다. 큰 도시 사람들은 바보가 평의회에 앉는 걸 막는 장치라고 말한다. 둘 다 얼마쯤 맞다.
+
+<a id="law"></a>
+
+## 법
+
+### 누가 만드는가
+
+법은 **시민회**(*에클레시아*)에서 나온다. 대부분의 도시에서 시민회는 달마다 정해진 날, 도시에서 가장 넓은 승강장에 모이고, 시민이면 누구나 말할 수 있다. 관직을 지낸 사람들 가운데 추첨으로 뽑은 30~50명의 **평의회**(*불레*)가 의제를 정하고 모임 사이의 도시 살림을 맡는다. **집정관**(*아르콘테스*)은 시민회가 정한 일을 집행한다. 급수 집정관, 공방 집정관, 시장 집정관, 성벽 집정관이 있고, 그 가운데 으뜸이 아르콘이다.
+
+법은 짧다. 대부분 승강장 벽에 붙인 판에 적혀 있고, 해마다 첫 시민회에서 소리 내어 읽기 때문에 못 들었다고 우길 수 없다. 아이들은 그 판으로 글을 배운다.
+
+### 재판과 배심
+
+시민끼리의 분쟁은 명부에서 추첨한 21인 배심에게 간다. 당사자는 제 입으로 말한다. 돈을 받고 남의 편을 들어 주는 사람은 없다. 조합 안의 분쟁은 먼저 조합으로 가고, 조합원이 조합의 판정을 거부할 때만 배심으로 넘어간다.
+
+도시 사이의 분쟁은 관련 폴리스들이 지명하는 합동 재판정이 맡는다. 그 권위는 일곱 폴리스의 방위·무역 동맹인 **연맹**(*쉼마키아*)의 서약에서 나온다. 연맹의 결정은 모든 도시가 동의해야 하므로 폴리스 하나가 판정을 막을 수 있고, 실제로 자주 막는다.
+
+### 벌
+
+감옥은 열과 식량의 낭비다. 자유도시는 다른 방법으로 벌한다.
+
+- **배상.** 대부분의 잘못은 배심이 정한 일, 물, 부품으로 갚는다.
+- **신분 박탈.** 시민은 한 임기 동안 투표권을 잃거나 시민권을 아예 잃을 수 있다.
+- **작업대 박탈.** 불량품을 판 장인은 조합에 작업대를 빼앗길 수 있다.
+- **추방.** 가장 무거운 형벌이다. 추방된 사람은 도시의 마지막 역까지 걸어 나가 돌아오지 말라는 말을 듣는다. 이웃 폴리스에도 알리며, 대부분 받아 주지 않는다.
+
+추방은 무엇보다 두렵다. 도시의 보호 밖에서는 장터도, 집도의도, 따뜻한 방도 없다.
+
+### 계약
+
+폴리스의 거의 모든 것이 계약이다. 수리, 도제살이, 호송, 전투 계약대의 한 철 고용. 계약은 시민 증인 둘 앞에서 말로 맺고 손에 잡히는 아무 데나 적는다. 큰 계약은 시장 집정관이 사본을 보관한다. 계약 위반은 자유도시에서 가장 흔한 범죄이자 가장 엄하게 다루는 범죄다. 도시 전체가 약속이 지켜진다는 전제로 돌아가기 때문이다.
+
+<a id="market-economy"></a>
+
+## 시장 경제
+
+### 기술이 화폐다
+
+자유도시에서 펌프나 접속함의 값은 그것을 필요로 하는 사람에게 해 줄 수 있는 일만큼이다. 엔지니어들은 부품을 수리와, 수리를 전력과, 전력을 식량과 바꾼다. 좋은 정수기를 가진 도시는 이웃에게 많은 걸 요구할 수 있다. 발전기가 멈춘 도시는 그만큼 이웃에게 많은 걸 부탁해야 한다.
+
+기술 거래가 그 한가운데 있다. 한 폴리스의 전선 작업조가 다른 폴리스의 재배실 배선을 한 주 동안 새로 깔고, 곡물이나 물이나 나중에 받을 기계 조합의 시간으로 값을 받는다. 도시 사이 거래 대부분이 이렇다. 일과 일을 맞바꾸고, 남은 차액은 조합의 셈판에 넘겨 적는다.
+
+### 증표
+
+일과 일을 바꾸는 건 느리다. 그래서 도시들은 **증표**를 낸다. 폴리스마다 시장 집정관이 **전력 시간**을 세는 쪽지에 도장을 찍는다. 쪽지 한 장은 도시가 지닌 사람의 작업대에 정해진 양의 전류를 보내 주겠다는 약속이다. 작업대라면 모두 전력이 필요하므로 전력 증표는 누구나 받는다. 큰 정수장을 쥔 도시들에서는 물 증표도 돈다.
+
+증표에는 모두가 아는 규칙이 있다.
+
+- 액면대로 쳐 주는 곳은 도장을 찍은 도시뿐이다. 이웃 장터에서는 할인해서 거래되고, 할인 폭은 이웃이 그 도시를 어떻게 보느냐에 따라 바뀐다.
+- 발전기가 시원찮은 도시는 증표를 너무 많이 찍는다. 그 증표는 빠르게 떨어지고, 사람들은 대신 전지, 퓨즈, 탄약을 달라고 한다.
+- 모두가 믿는 화폐는 충전된 전지다. 작고, 늘 필요하고, 어느 도시 경계를 넘어도 값을 지킨다. 밀봉된 뇌관 한 상자는 그보다도 비싸고, 좀처럼 쓰지 않는다.
+
+### 장터와 노점
+
+폴리스마다 장터역이 적어도 하나 있다. 큰 장터는 남서쪽 전체에 이름이 났다.
+
+- **영등포시장**은 거리 깊숙이 아래 긴 승강장에 가장 오래된 열린 장터를 둔다. 먹을 것, 천, 전지, 중고 부품이 날마다 주인을 바꾼다.
+- 노선이 만나는 **신도림**은 도시 사이 호송대가 짐을 싣고 부리는 곳이다. 운반 조합들이 회관을 두고, [화물 관문](/wiki/Sindorim-Junction-Cargo-Gate/)은 어느 장터보다 붐빈다.
+- **가산디지털단지**에는 기계공들이 모여 있다. 모터, 베어링, 다시 짠 공구를 사러 사람들이 그리 간다.
+- **노량진**은 강을 따라 지상에서 들여온 회수품을 거래한다. 아무도 물건이 새것인 척하지 않으니 남서쪽에서 값이 가장 정직한 곳이다.
+
+장터마다 시장 집정관이 도시가 없이는 못 사는 물건, 곧 물, 곡물, 등유, 약에 **최저가와 최고가**를 정한다. 곡물값이 오르면 빵값은 그대로 두고 덩이를 작게 만든다. 나머지는 다 흥정이다.
+
+### 바깥 도시의 조합 회관
+
+큰 조합은 다른 도시에 **회관**을 둔다. 역 한 귀퉁이에 벽을 둘러 제 창고, 제 저울, 제 도장, 제 규칙집을 갖춘 곳이다. 규칙집은 해마다 한 번 그곳에 사는 조합원 앞에서 소리 내어 읽는다. 회관은 제 조합원 사이의 분쟁을 가리고, 특권의 대가로 주인 도시를 위해 무언가를 돌본다. 계단 하나나 펌프 하나인 경우가 많다. 찾아온 엔지니어들은 그곳에서 자고 거래하며, 그 도시에서 온 낯선 사람이 도움을 청하러 가장 먼저 가는 곳도 회관이다.
+
+### 계약대
+
+자유도시는 제 사람을 징발할 수 없다. 도시 위에 그럴 권력이 없고, 도시들은 제 경계를 넘어 징발하지 않는다. 그래서 **고용한다**. **계약대**는 철 단위로 복무를 파는 싸움꾼 무리다. 크기는 셋이다. 열둘 남짓의 분대, 쉰 명 안팎의 계약대, 백 명이 넘는 큰 계약대.
+
+계약서에는 무엇을, 얼마 동안, 얼마에 지키는지와 죽은 사람을 어떻게 하는지가 적힌다. 삯은 대개 증표와 전지이고, 탄약은 따로 한 발씩 세어 치른다. 처음엔 싸게 빌리고 오래 쓰면 비싸다는 걸 아르콘이라면 누구나 배운다. 좋은 계약대는 이름과 내력이 있고, 누가 삯을 늦게 줬는지 오래 기억한다. 연맹이 전쟁 기계와 맞설 때도 군대를 일으키지 않는다. 도시마다 고용하고, 계약대를 필요한 곳에 빌려준다.
+
+계약대의 싸움꾼은 **계약병**이라 부른다. 특정 도시의 시민이 아니거나, 자기를 추방한 도시의 시민이었던 사람들이다. 폴리스는 이들을 무장하고 철마다 돈을 받는 사람에게 보내는 조심스러운 존중으로 대한다.
+
+<a id="daily-life"></a>
+
+## 일상
+
+### 폴리스의 하루
+
+하루는 불빛과 함께 시작한다. 대부분의 도시에서 전선 조합이 정해진 시각에 주 승강장을 환하게 밝히면 사람들이 깬다. 깨워 줄 해는 없다.
+
+아침은 물이다. 집집마다 표시한 통을 들고 꼭지 앞에 줄을 서고, 꼭지지기가 누가 얼마를 받았는지 적는다. 그다음은 일이다. 작업대가 열리고 통로는 연삭기 소리와 납땜 냄새로 찬다. 아이들은 나이에 따라 조합 작업대나 글 판 앞으로 간다. 일손들은 계단 머리에 모여 그날의 짐 나르기나 얼음 깨기에 팔려 간다.
+
+한낮에는 역 부엌에서 지은 밥을 나눠 먹는다. 서서 먹거나 승강장 끝에 걸터앉아 먹는다. 오후는 계약과 장터의 시간이다. 저녁이면 불빛이 반으로 줄고 사람들이 이야기를 한다. 다툼은 이때 벌어진다. 통로에서, 노점에서, 시민회가 열리지 않는 날에도 시민회 승강장 가장자리에서. 자유도시 아이들은 어른들이 남들 앞에서 의견을 달리하는 소리를 들으며 자라고, 나이가 차면 자기도 끼어들 수 있으리라 여긴다.
+
+### 열
+
+열은 전력처럼 판다. 큰 발전기를 쥔 도시 몇 곳이 이웃 승강장에 값을 받고 데운 물을 보낸다. 발전기에 가장 가까운 방이 가장 따뜻하고 가장 비싸다. 여분 전지가 있는 집은 그걸 몸에 붙여 지니고, 따뜻한 방은 충전실을 겸한다.
+
+### 아이들
+
+아이는 도제로 들어갈 나이, 대개 열두 살쯤까지 집안 작업대에 속한다. 그전에 모든 아이가 법 판 읽는 법, 증표 세는 법, 펌프와 전선과 전지의 기본 부품 알아보는 법을 배운다. 고예진도 이렇게 전력망을 배웠다. 전선공들을 따라 통로를 다니며 등을 들어 주었다. 그 자신의 말로는 사람과 이야기하는 것보다 선을 따라가는 걸 더 잘했다.
+
+### 명절과 의례
+
+자유도시에는 신앙의 명절이 없다. 신앙은 아크가 남쪽으로 데려갔다. 큰 날은 모두 도시의 날이다.
+
+- **낭독일.** 한 해의 첫 시민회. 법을 소리 내어 읽는다.
+- **시험일.** 도제가 기술을 보이고 새사람이 시민권을 청하는 날. 가족이 모여 지켜보고, 통과하면 밥을 차려 축하한다.
+- **계약의 밤.** 그 철의 계약대를 고용하고 맹세를 받는 밤. 계약대들이 제 깃발을 들고 장터역을 행진한다.
+
+### 죽음
+
+시민이 죽으면 조합이 지켜본다. 공구는 작업대로 돌아가고, 계약은 시장 집정관이 정리하며, 몸에 단 기계 부품은 떼어 내 집도의의 계정으로 돌려보내거나 팔아서 빚을 갚는다. 몸은 추위에게 간다. 땅에 묻을 자리가 날 때까지 서리가 지켜 주는 지상의 밀폐된 방으로.
+
+<a id="clothing-rules"></a>
+
+## 복식 규칙
+
+자유도시에는 누가 무엇을 입을 수 있는지 정한 법이 없다. 관습이 있고, 관습은 법보다 깨기 어렵다.
+
+### 겹이 기술을 보여 준다
+
+엔지니어는 방한 겹옷을 손수 짓는다. 얇은 속옷부터 겉껍데기까지 일곱 겹, 여덟 겹인 경우가 많다. 겹옷은 그 사람이 무엇을 만들고 돌볼 줄 아는지를 보여 준다. 솜씨 좋은 기계공의 재킷은 솔기를 다시 꿰매고 덧대고 보강하기를 하도 거듭해 원래 천을 찾기 어렵다. 새로 온 사람은 물려받은 걸 입는다.
+
+남서쪽에서 가장 흔한 옷은 옛 군수품에서 나온 누빔 내피다. 어두운 색이거나 바랜 노란색이고, 모든 옷 안에 입는다. 자유도시에서 이걸 가난한 옷으로 여기는 사람은 없다. 누구나 하나씩 있다.
+
+### 조합 표지
+
+조합마다 표지가 있다. 왼쪽 어깨에 꿰매 단 색 천 조각, 수놓은 표시, 특정한 단추 따위다. 전선 조합의 표지는 꼬아 놓은 구리선이고, 급수 조합은 파란 천 조각, 집도 조합은 저들만의 무늬로 놓은 흰 실이다. 장인은 표지를 쇠로 달고, 직인은 실로, 도제는 무늬 없는 천 띠로 단다.
+
+조합원이 아니면서 그 조합의 표지를 다는 것은 사람들이 진지하게 따지는 몇 안 되는 복식 위반이다. 조합이 배심에 넘길 수 있다.
+
+### 시민권과 관직
+
+시민은 오른쪽 소매에 도시 색 띠를 두른다. 거주민은 두르지 않는다. 시민회 날에 집정관은 도시 색 띠를 어깨에 걸치고, 아르콘은 같은 띠에 더해 도시 인장을 끈에 꿰어 목에 건다. 시민회 밖에서 아르콘은 제 조합 사람들과 똑같이 입으며, 대부분 그걸 자랑으로 여긴다.
+
+### 입지 않는 것
+
+모피는 드물고 의심받는다. 남서쪽에서 모피는 상원의원 집안이 입는 북쪽의 물건이다. 모피를 입은 시민은 아주 부자이거나 강 건너 누군가에게 보여 주려는 사람으로 여겨진다. 몸에 단 금속은 감추지 않지만 내보이지도 않는다. 금속을 내보이는 건 아크의 버릇이고, 자유도시의 많은 사람이 그걸 불편해한다.
+
+<a id="soldiers-look"></a>
+
+## 병사의 모습
+
+자유도시에는 상비군이 없다. 그래서 병사들은 생긴 그대로 보인다. 조합과 계약이 꾸려 준 엔지니어 작업조와 돈 받는 싸움꾼들이다.
+
+### 도시 작업조
+
+폴리스가 작업조를 부르면 시민들은 작업복 위에 싸움 겹을 하나 더 걸치고 나온다. 누빔 조끼나 가슴판, 대개 작업용 안전모를 고친 철모, 그리고 도시 색 띠. 작업조마다 제 일을 들고 간다. 전선공은 전지와 방해기를 가져온다. 기계공은 전장에서 망가지는 걸 고칠 공구를 가져온다. 건축공은 출구에 칠 철망과 그물을 멘다. 도시 작업조는 군대라기보다 총을 챙겨 온 수리반처럼 보인다.
+
+### 계약대
+
+계약병은 알아보기 쉽다. 앞에 서라고 돈을 받으니 갑옷은 더 두껍고 색은 더 적다. 계약대마다 제 표지를 대개 철모와 왼쪽 어깨에 칠하고, 계약 기간 동안 고용한 도시의 색 띠를 묶는다. 계약이 끝나면 띠를 푼다.
+
+그들의 무기는 남서쪽에서 가장 잘 손질돼 있다. 소총은 밤마다 닦고, 탄창은 아침마다 세고, 싸움이 끝나면 빈 탄피를 모두 줍는다. 계약대의 계약이 탄약값을 한 발 단위로 치르기 때문이다. 탄피를 바닥에 두고 오는 계약병은 벌금을 문다.
+
+### 드론과 공병
+
+자유도시는 두 이웃보다 기계로 더 많이 싸운다. 드론 조원은 전지를 넣을 안주머니가 달린 두꺼운 누빔 외투를 입고, 전지를 몸에 붙여 따뜻하게 지닌다. 드론은 잠깐 띄우고 빨리 내린다. 야전 공병은 궤도와 버팀을 고칠 철사 뭉치를 메고 다니며, 많은 이가 집도 조합에서 단 동력 손이나 보강한 다리를 갖고 있다. 자유도시 작업조에서 아크처럼 부품 수를 세는 사람은 없지만, 쓸 만한 부품을 마다하는 사람도 없다.
+
+### 없는 것
+
+자유도시 병력에는 무거운 장갑과 지휘관 호위가 얇다. 지켜야 할 큰 귀족이 없고, 옛 방식의 기병도 없다. 강점은 수리와 속도다. 자유도시 작업조는 총탄 아래서 부서진 수레를 고쳐 계속 움직일 수 있다. 정부의 징집병도 아크의 신도도 쉽게 하지 못하는 일이다.
+
+<a id="civilians-look"></a>
+
+## 주민의 모습
+
+자유도시 장터의 평범한 시민은 방금 작업대에서 내려온 사람처럼 보인다. 아마 실제로 그랬을 것이다. 옷은 겹치고, 덧대고, 실용적이다. 장갑은 섬세한 일을 하려고 손가락을 잘라 냈고, 통로를 다닐 때는 그 위에 벙어리장갑을 낀다. 대부분 공구 말이, 등, 물통을 지니고 다니며, 셋을 한꺼번에 든 사람도 많다.
+
+얼굴은 창백하다. 백 년 동안 아무도 해를 보지 못했다. 머리는 일하기 좋게 짧게 자르거나 묶어서 덮는다. 손과 팔뚝에 작은 화상 자국이 있는 사람이 많다. 납땜 흉터가 그 사람이 걸어온 일을 보여 준다.
+
+거주민은 시민과 거의 같아 보이지만 소매 띠가 없다. 일손은 가장 싼 겹옷과 가장 무거운 장화를 신고, 낡은 짐 나르기 멜빵을 온종일 걸치고 있는 경우가 많다. 바깥사람은 눈에 띈다. 북쪽 사람은 모두 같은 재단의 지급품으로, 아크 사람은 감추지 않는 금속으로.
+
+아이들은 부모 옷을 줄여 입는다. 어깨에 다는 도제의 조합 천 띠가 아이가 처음으로 입는 온전히 제 것이다.
+
+<a id="cyberware-access"></a>
+
+## 사이버웨어 접근
+
+자유도시에서 사이버웨어는 다른 거래와 다르지 않다. 집도의는 제 조합에 속하고, 부모나 장인에게 배우고, 제 일을 판다. 부품은 장터를 돌아다닌다. 밀폐된 창고에서 건진 것, 죽은 사람에게서 뗀 것, 땜질로 다시 짠 것. 값을 치를 수 있으면 누구나 시술받는다. 시술과 정비의 일반 규칙은 [사이버웨어와 희소성](/wiki/Cyberware-and-Scarcity/)에 있다.
+
+### 집도의의 계정
+
+자유도시에서 단 부품에는 **계정**이 딸려 온다. 부품을 단 집도의가 부품, 값, 갚아야 할 정비비를 기록해 둔다. 대부분 증표나 전지나 집도 조합을 위한 일로 몇 해에 걸쳐 갚는다. 갚지 않는다고 부품을 잃지는 않는다. 법이 도려내는 걸 허락하지 않는다. 다만 어느 조합 집도의도 그 부품을 고쳐 주지 않는다. 엔지니어의 도시에서 고치지 못하는 부품은 느린 형벌이다.
+
+### 누가 금속을 다는가
+
+| 누구 | 흔한 부품 | 값을 치르는 법 |
+|---|---|---|
+| 장인과 부유한 작업대 집안 | 정교한 손, 세밀한 일을 위한 눈, 척추를 따라 넣는 기반 이식 | 전지와 증표로 바로 치르거나 작업대 벌이로 |
+| 직인과 작업조 | 단순한 손, 사고 뒤 보강한 다리 | 앞으로 할 일을 담보로 조합에서 빌린다 |
+| 계약병 | 판갑, 다리, 눈. 중고가 많다 | 계약대가 미리 대 주고 그 철 삯에서 뺀다 |
+| 일손 | 거의 없다. 충전이 필요 없는 줄 손 정도 | 긁어모을 수 있는 만큼 |
+
+단순한 부품이 흔하다. 몸이 줄을 당기는 힘으로 움직이는 손은 줄칼과 용수철 하나로 고칠 수 있고, 일부러 이걸 고르는 일꾼이 많다. 동력 부품은 전지를 계속 충전할 수 있는 사람의 것이다.
+
+### 장터의 위험
+
+열린 장터는 자유도시의 강점이자 위험이다. 중고 손은 소켓에 금이 가 있을 수 있다. 다시 짠 눈은 뜨겁게 돌 수 있다. 장터의 누구도 나쁜 부품을 도로 받아 줄 의무가 없다. 조심성 있는 사람은 가장 싼 노점보다 아는 조합 집도의에게 돈을 치르고, 장터역 사람들은 부품을 사고팔듯 좋은 집도의의 이름을 주고받는다.
+
+### 아크의 그림자
+
+고예진은 이 장터에서 자랐다. 감당하지 못할 기계를 단 사람들을 봤고, 빚을 갚으려고 죽은 사람에게서 기계를 떼어 내는 것도 봤다. 자유도시의 어떤 이들은 그래서 그가 남쪽으로 가서 부품 다는 일을 스스로 값을 치르는 신앙으로 만들었다고 말한다. 다른 이들은 그가 그저 매뉴얼에서 장터가 팔 수 없는 무언가를 찾았을 뿐이라고 말한다. 어느 쪽이든 자유도시는 제 아이가 집을 떠나 다른 무언가가 된 도시 특유의 불편함으로 아크를 지켜본다.
+
+<a id="links"></a>
+
+## 링크
+
+- [권역·피지컬 AI 서사선](/wiki/Regional-Physical-AI-Arcs/): 연대기, 폴리스의 제도, 이일섭이 관악을 이끌게 된 경위
+- [백 년 연대기](/wiki/Century-Annals/): 백 년의 흐름과 자유도시에서 보낸 고예진의 어린 시절
+- [사이버웨어와 희소성](/wiki/Cyberware-and-Scarcity/): 부품, 정비, 기계 몸의 값
+- [정부 사회](/wiki/Government-Society/): 강 북쪽 장부 아래의 삶
+- [아크 사회](/wiki/Arc-Society/): 자유도시에서 자라난 신앙
+- [서울의 세 세력](/wiki/Sixteen-States/)
+- [신도림 환승 화물 관문](/wiki/Sindorim-Junction-Cargo-Gate/)
+- [이 시대의 무기와 기술](/wiki/Era-Arms-and-Tech-Level/)
+- [음식 문화](/wiki/Food-Culture/)
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Arc-Society', 'Arc Society', '아크 사회', 'factions', 7, '# Arc Society
 
