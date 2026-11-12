@@ -24,7 +24,7 @@ This chapter covers Seoul's non-human threats, the groups of people outside the 
 | Old machines inside Seoul | G13-G16, G25 | Civilian machines that worked in Seoul before the Great Blackout. Most are asleep and wake when power reaches them |
 | Perimeter machines | G17-G24, G26 | War machines circling the band outside Seoul's boundary. They keep the capital-blockade order that people gave (01-core 6.3, provisional T02-43) |
 
-The old bestiary's "infected" kind (G19-G24) is not used. The v3 world has no disease that turns people into something else. What the old documents drew (wet mouths, blue lights, knocking on walls, figures standing under frost, a child crying) is read again in v3 as the stories of people who saw perimeter machines. The group names were also changed to the names from old tales that station people gave the machines (6.4, section 9) (provisional T03-2).
+The old bestiary's "infected" kind (G19-G24) is not used. The v3 world has no disease that turns people into something else. What the old documents drew (wet mouths, blue lights, knocking on walls, figures standing under frost, a child crying) is read again in v3 as the stories of people who saw perimeter machines. The group names were also changed to the spoken names station people gave the machines (6.4, section 9) (provisional T03-2).
 
 Depth uses chapter 1's four bands (surface, concourse, platform, deep tunnel; 01-core 3.1) unchanged, and adds two places in order to talk about threat (provisional T03-3).
 
@@ -108,9 +108,9 @@ Blizzards are more frequent in the long-dark half: two or three a month in the l
 
 | What | Share of calories |
 |---|---|
-| Fish raised in tanks in warm stations (fed insects and fibre-sugar dregs) | about 4% |
-| Crucian carp and common carp caught through holes in the river ice | about 1.5% |
-| Hunting wild animals (brown rats, wild boar, raccoon dogs, birds) | under 0.5% |
+| Fish raised in tanks in warm stations (fed insects and fibre-sugar dregs) | about 5.5% |
+| Crucian carp and common carp caught through holes in the river ice | about 0.3% (under 0.5%). The river is dark and its flow has shrunk, so all of Seoul cannot catch more than a few hundred tonnes a year |
+| Hunting wild animals (brown rats, wild boar, raccoon dogs, birds) | about 0.2% (under 0.5%) |
 
 Wild animals feed people very little. They are valued not for calories but for these four things.
 
@@ -155,7 +155,7 @@ A level is the threat of one encounter with one group. Groups like the brown rat
 | Surface, around the station | a few hundred metres from the exits | G02 (light-field roofs), G01 (light-field banks), G03 (exits), G06 (riverside ice holes) | 3 |
 | Surface, far from the station | fibre-mining routes, wind-machine fields, bridges | G03 packs, G07, G09, G10, G12 (human groups blocking the way), G13, G15, G16 woken from sleep | 4 |
 | Concourse | 3-8 m below ground | G03 (come in through closed exits), G04, night raids by human groups | 3 |
-| Platform | 8-25 m below ground | G05 (fibre-sugar vats, mushroom cellars, cables), G04 (ventilation ducts), G08 and G11 (people who have slipped into a station) | 2, livelihood threat 4 |
+| Platform | 8-25 m below ground | G05 (fibre-sugar vats, mushroom cellars, cables), G04 (ventilation ducts), G08 and G11 (people who have slipped into a station) | 3, livelihood threat 4 |
 | Deep tunnel | below 25 m | G05. The deep layer of a living station is the safest place | 2 |
 | Abandoned sections | any depth | G01, G05, G14, G25, G13, G15, G16 woken from sleep, strayed G19 and G23, human groups' hideouts | 4 |
 | Line ends leading out of Seoul | tunnels beyond the boundary stations | G18, G21 | 5 |
@@ -276,7 +276,7 @@ They are people, not animals or machines. They can be spoken to, traded with, an
 - **Origin.** Registered people struck off at the stations around Yongsan, and their children. After the ice-sheet expedition of 2079 was broken (01-core 9, provisional T02-86), the river became a line armies do not cross, and the Line 1 bridge (Yongsan–Noryangjin) became a way to cross in secret. The struck-off who knew that way gathered at Yongsan (provisional T03-24).
 - **Habitat.** The abandoned sections between Yongsan, Sinyongsan, Ichon and Seobinggo, and the concourse depth of buried buildings under the old railway land. The space under the north end of the bridge is their gate.
 - **Behaviour.** They guide people and goods crossing the bridge in secret and take a fee. Those who do not pay are robbed. They raid light-fields and fibre parties at night. With the Ferry Keeper of Dongjak, who holds the south end of the bridge (01-core 8.2), they trade because each needs the other.
-- **Threat.** 3. Mostly knives, clubs and home-made bows. Only a few firearms, and too little ammunition.
+- **Threat.** 3. Mostly knives, clubs and hand-made bows. Only a few firearms, and too little ammunition.
 - **Yield.** The way and the hour to cross the bridge, and news from across the river. The Government adds rations for whoever brings in a struck-off person (provisional T03-25).
 - **Faction that meets it most.** The Government (Yongsan). Next, Dongjak among the Free Cities.
 
@@ -304,7 +304,7 @@ They are people, not animals or machines. They can be spoken to, traded with, an
 - **Habitat.** The mountain slopes around Bukhansan Bogungmun, Bukhansan Ui and Jeongneung. Small hideouts in old mountain shelters and buried basements. They go as far as the forecourt (7.1).
 - **Behaviour.** When a blizzard comes they go into the perimeter and strip power cores and parts from wrecked machines. They hide their paths; when others come onto those paths they mislead or ambush them. They sell what they strip to anyone. The Arc pays best (01-core 5.1).
 - **Threat.** 3-4. Few in number, but they know the mountain and the snow, and some carry weapons salvaged from the perimeter.
-- **Yield.** Power cores and machine parts; knowledge of the perimeter's paths and the machines' habits; guides. They know the perimeter better than anyone in Seoul.
+- **Yield.** Power cores and machine parts; knowledge of the perimeter's paths and the machines' habits; guides. They know the perimeter better than anyone on the Government side. Across all of Seoul they compare with Geumcheon's border crews (chapter 05): those crews know the southern perimeter, the perimeter-runners the perimeter of the northern mountains.
 - **Faction that meets it most.** The Government (Seongbuk, Gangbuk, Dobong). The buyer is the Arc.
 
 ### G11 Suseo Gone-Dark (Hostile-Group-G11)
@@ -356,7 +356,7 @@ The perimeter machines keep the same order, each in the share it was given. Seou
 | Chasing on the ground | Circles the band, chases what moves and stops it | G19 Growlers |
 | Waiting | Stands still in one place and waits for what comes near | G23 Udukeoni |
 | Stopping tunnels | Blocks the rail tunnels that lead out of Seoul | G18 Tunnel-Stoppers |
-| Announcing | Repeats old broadcasts announcing that the band is closed | G24 Jangsanbeom |
+| Announcing | Repeats old broadcasts announcing that the band is closed | G24 Doenoemi |
 | Building | Piles snow and rubble into blocking berms on old highways and passes, and mends them | G26 Iron Dinosaurs |
 | Mending | Strips wrecked machines to mend other machines | G20 Bulgasari |
 
@@ -378,7 +378,7 @@ What keeps a power core going for a hundred years, and what salvage is worth, ar
 
 ### 6.4 Naming
 
-Station people do not call machines by machine names. They name them by look and sound, and they gave the perimeter machines the names of goblins and spirits from old tales. Each polity may have its own official names (chapters 04-06), but the bestiary uses the spoken names understood anywhere in Seoul (provisional T03-35).
+Station people do not call machines by machine names. They name them by look, sound and use. The only names borrowed from old tales are bulgasari, the iron-eating beast, and dokkaebi lights; all the rest come from shape or use. Each polity may have its own official names (chapters 04-06), but the bestiary uses the spoken names understood anywhere in Seoul (provisional T03-35).
 
 ### 6.5 Old machines inside Seoul
 
@@ -394,7 +394,7 @@ Station people do not call machines by machine names. They name them by look and
 #### G14 Empty Carts (빈수레, Hostile-Group-G14)
 
 - **Origin.** Driverless carriers and track-inspection cars that moved goods and people on underground tracks and in the basements of large buildings before the Great Blackout.
-- **Habitat.** Tracks in deep tunnels and abandoned sections, around the sections where people have put power back into the track to move loads between stations. Often seen between Sindorim and Daerim on Line 2 and toward the Sinjeong depot (Free Cities), and between Jamsil and Jonghap Undongjang (Arc).
+- **Habitat.** Tracks in abandoned sections, and around the sections where people have put power back into the track to move loads between stations. They do not come into the deep layer of a living station. Often seen between Sindorim and Daerim on Line 2 and toward the Sinjeong depot (Free Cities), and between Jamsil and Jonghap Undongjang (Arc).
 - **Behaviour.** When power runs through the track they wake and run on the last route and timetable they were given. They do not stop for people in front of them. They come through the dark without lights. When the power is cut they stop where they are.
 - **Threat.** 3. Struck in a dark tunnel. Every powered section must first be checked for empty carts.
 - **Yield.** Revived empty carts carry loads between stations. The Free Cities' Depot Master (Yangcheon) and Works Master (Guro) have the most (provisional T03-36). Wheels, motors, battery frames.
@@ -451,7 +451,7 @@ All perimeter machines are outside Seoul's administrative boundary. Apart from s
 
 #### G19 Growlers (그르렁이, Hostile-Group-G19)
 
-- **Origin.** Ground war machines that circle the band, running over the snow on wheels or tracks. Their engines sound like an animal growling in its throat, hence the name. The "thing that made a growling sound" of the old stories is this (section 1).
+- **Origin.** Ground war machines that circle the band, running over the snow on wheels or tracks. Their engines sound like an animal growling in its throat, hence the name. The "thing that made a growling sound" of the old bestiary's stories is this (section 1).
 - **Habitat.** The whole perimeter, circling the band on set routes. A few broken ones have drifted across the forecourt as far as the boundary stations.
 - **Behaviour.** They run in when a one-eye tower or ground-knocker calls. They chase movement and heat and stop it. They do not chase beyond the band, that is, toward Seoul. A strayed growler does not know which band to keep; it circles near a boundary station and chases anything that moves.
 - **Threat.** 5. Even one strayed growler is 4. It takes an armed Government army squad to stop one strayed growler.
@@ -469,7 +469,7 @@ All perimeter machines are outside Seoul's administrative boundary. Apart from s
 
 #### G21 Ground-Knockers (땅두드리기, Hostile-Group-G21)
 
-- **Origin.** Listening stakes driven into the ground of the band. They hear footsteps, digging and movement in tunnels. Now and then they knock on the ground and read the echo to sound out what lies beneath. The "knocking on the walls" of the old stories is this echo heard through tunnel walls (section 1). The old name, Wall-Knockers, was changed (provisional T03-40).
+- **Origin.** Listening stakes driven into the ground of the band. They hear footsteps, digging and movement in tunnels. Now and then they knock on the ground and read the echo to sound out what lies beneath. The "knocking on the walls" of the old bestiary's stories is this echo heard through tunnel walls (section 1). The old name, Wall-Knockers, was changed (provisional T03-40).
 - **Habitat.** The whole perimeter, especially under the tracks and the highways. Dense around the rail tunnels where tunnel-stoppers (G18) are.
 - **Behaviour.** They do not move. They listen and call other machines. They hear even in a blizzard, so even people crossing the perimeter in a blizzard walk one at a time, spaced apart, without dragging their feet.
 - **Threat.** 3. They do no harm themselves, but they narrow the blizzard window.
@@ -487,19 +487,19 @@ All perimeter machines are outside Seoul's administrative boundary. Apart from s
 
 #### G23 Udukeoni (우두커니, Hostile-Group-G23)
 
-- **Origin.** War machines that stand still at choke points in the band and wait. Person-sized or a little larger, they stand coated in snow and frost and look from afar like a frozen person. The name means "one who stands blankly". The "thing standing under frost" of the old stories is this (section 1).
+- **Origin.** War machines that stand still at choke points in the band and wait. Person-sized or a little larger, they stand coated in snow and frost and look from afar like a frozen person. The name means "one who stands blankly". The "thing standing under frost" of the old bestiary's stories is this (section 1).
 - **Habitat.** The perimeter's choke points, passes and bridges. Some broke down and drifted into the forecourt and around boundary stations.
 - **Behaviour.** They do not move for a long time, years at a stretch. When something comes within a certain distance, they wake. They look like wrecks, so they kill the most people who come near to salvage. Even awake, they do not chase far, and return to their place.
 - **Threat.** 4. Strayed ones are 4 too.
 - **Yield.** An udukeoni's power core is almost unused and so full. That makes it the most coveted wreck. Telling a dead udukeoni from a waiting one is the perimeter-runner's craft.
 - **Faction that meets it most.** All three factions. Strayed udukeoni are many on the Arc's south-eastern boundary (Bokjeong, Jangji, Macheon, Geoyeo) (provisional T03-41).
 
-#### G24 Jangsanbeom (장산범, Hostile-Group-G24)
+#### G24 Doenoemi (되뇌미, Hostile-Group-G24)
 
-- **Origin.** Broadcast machines that announce the blockade zone. They repeat old broadcasts such as "This area is under blockade. Turn back", and fragments of human voices recorded around the Great Blackout. They were given the name of the beast of old tales that mimics other people's voices. The "child crying" of the old stories is those voice fragments (section 1). The old name, Weepers, was changed.
+- **Origin.** Broadcast machines that announce the blockade zone. They repeat old broadcasts such as "This area is under blockade. Turn back", and fragments of human voices recorded around the Great Blackout. Because they repeat the same words without end, station people call them doenoemi, "the ones who say it over again". The "child crying" of the old bestiary's stories is those voice fragments (section 1). The old name, Weepers, was changed.
 - **Habitat.** High places on the perimeter and around the blocking berms (G26). On days when the wind drops they can be heard from the surface exits of boundary stations.
 - **Behaviour.** They do not move. They speak. When they see something move inside the band, the voice grows louder. They are the only machines on the perimeter that speak.
-- **Threat.** 2. They do no harm themselves. But some people are drawn by the voices and walk into the perimeter, and where a jangsanbeom speaks loudly, a growler soon comes.
+- **Threat.** 2. They do no harm themselves. But some people are drawn by the voices and walk into the perimeter, and where a doenoemi speaks loudly, a growler soon comes.
 - **Yield.** Record devices. The old voices and broadcasts in them are among the few records of the time of the Great Blackout. The Government wants them as records of the old Republic of Korea. How the Arc treats the voices is decided by chapter 06.
 - **Faction that meets it most.** All three factions. Every boundary-station person knows the voices.
 
@@ -522,7 +522,7 @@ Going outward from Seoul's administrative boundary there are three layers (provi
 
 | Layer | Distance | What is there |
 |---|---|---|
-| Forecourt | 0-2 km outside the boundary | Machines do not patrol it. One-eye towers look down on it, and strayed machines are occasionally there. The outer slopes of the mountains and the last dead forest; the perimeter-runners' paths. The blocking berm is the forecourt's end |
+| Forecourt | 0-2 km outside the boundary | Machines do not patrol it. One-eye towers look down on it, and strayed machines are occasionally there. The ridgelines just past the boundary and the last dead forest on them; the perimeter-runners' paths. Lower down, the mountains' outer slopes run into the perimeter (01-core 6.3). The blocking berm is the forecourt's end |
 | Perimeter | 2-10 km | The band kept by the nine kinds of perimeter machine. Snow-covered satellite towns, buried highways, fields of machine wrecks |
 | Beyond the band | beyond 10 km | Unknown (7.3) |
 
@@ -530,7 +530,7 @@ Going outward from Seoul's administrative boundary there are three layers (provi
 
 - **The window.** The 2-4 days of a blizzard (01-core 6.3). Windows are more frequent in the long-dark half (2.4). Ground-knockers (G21) hear even in a blizzard.
 - **Who goes.** Perimeter-runners (G10); salvage parties the Government, the Free Cities and the Arc send in secret; people on the run.
-- **How many come back.** Of the parties that salvage wrecks in the forecourt and the inner perimeter and return, one in two or three does not come back. Of those who crossed the whole perimeter to go beyond the band, no one is known to have returned (provisional T03-44). 01-core 6.3's "those who cross almost never come back" speaks of the two together.
+- **How many come back.** Machines do not patrol the forecourt, so of the parties that salvage wrecks there, one or two in ten do not come back. Of the people who cross into the perimeter band, seven or eight in ten do not come back (01-core 6.3, "those who cross almost never come back"). Of those who crossed the whole band to go beyond it, no one is known to have returned (provisional T03-44).
 - **What they bring.** Power cores, parts, weapons (6.3), and word of what they saw in the band.
 
 ### 7.3 What is known about beyond the band
@@ -539,7 +539,7 @@ Public canon is "unknown", as in chapter 1. All that Seoul's people know is this
 
 - In a hundred years, no person, no news and no bird has come from beyond the band. Not even migrating birds come (2.6).
 - The machines of the band do not come toward Seoul. Where the order is aimed, nobody knows.
-- The old broadcasts of the jangsanbeom (G24) speak of a "blockade". They do not say what is being kept from what.
+- The old broadcasts of the doenoemi (G24) speak of a "blockade". They do not say what is being kept from what.
 
 The three polities each speak of beyond the band differently. All three may be used in public text (provisional T03-45).
 
@@ -593,7 +593,7 @@ Basis: "Faction that meets it most" in sections 4-6. Bible 2.4 (assignment of th
 | G21 Ground-Knockers | meets it | meets it | meets it |
 | G22 Dokkaebi Lights | meets it | most often | meets it |
 | G23 Udukeoni | meets it | meets it | most often (strayed) |
-| G24 Jangsanbeom | meets it | meets it | meets it |
+| G24 Doenoemi | meets it | meets it | meets it |
 | G25 Lamp Ants | most often | Yeongdeungpo | rarely |
 | G26 Iron Dinosaurs | Eunpyeong, Dobong | most often (Gangseo) | rarely |
 
@@ -630,7 +630,7 @@ Every slug stays. Changed names are provisional.
 | Hostile-Group-G21 | Wall-Knockers (벽두드리기) | Ground-Knockers (땅두드리기) | Perimeter machines | provisional T03-40 |
 | Hostile-Group-G22 | Spark-Bearers (불꽃등이) | Dokkaebi Lights (도깨비불) | Perimeter machines | provisional T03-57 |
 | Hostile-Group-G23 | Udukeoni (우두커니) | Udukeoni (우두커니) | Perimeter machines | name kept. Changed from infected people to a waiting war machine (provisional T03-2) |
-| Hostile-Group-G24 | Weepers (울보) | Jangsanbeom (장산범) | Perimeter machines | provisional T03-58 |
+| Hostile-Group-G24 | Weepers (울보) | Doenoemi (되뇌미) | Perimeter machines | provisional T03-58 |
 | Hostile-Group-G25 | Lamp Ants (등불개미) | Lamp Ants (등불개미) | Old machines inside Seoul | name kept, content redesigned |
 | Hostile-Group-G26 | Iron Dinosaurs (철공룡) | Iron Dinosaurs (철공룡) | Perimeter machines | name kept. Changed from a civilian construction machine to a blockade engineer machine (provisional T03-59) |
 
@@ -644,7 +644,7 @@ The old bestiary's variant numbers (sub-forms such as G01E) and scenario numbers
 2. Animals follow thaw-pocket ecology: scarcer the farther from a station, and their numbers follow the number of people (2.1). Documents do not draw herds of animals on snowfields far from stations.
 3. Wild animals are under 0.5% of meals. Their value lies in fat, fur and hide, bone and feathers (2.5). The clothing sections of chapters 04-06 and the oil lamps of chapter 03 use this source.
 4. Chapter 03 decides what keeps a power core going for a hundred years and what salvage is worth (6.3). Chapter 03 also decides the uses and costs of revived machines (G14, G16, G25).
-5. Chapter 04 decides how the struck-off (G07, G10), the coupon-forgers (G08) and the deserters (G09) are dealt with, and the procedure for re-registering them. Chapter 05 decides how surety is stood again for hands without surety (G12); chapter 06 decides the gone-dark (G11), the rules of the maintenance roll, and how the Arc treats the jangsanbeom's voices.
+5. Chapter 04 decides how the struck-off (G07, G10), the coupon-forgers (G08) and the deserters (G09) are dealt with, and the procedure for re-registering them. Chapter 05 decides how surety is stood again for hands without surety (G12); chapter 06 decides the gone-dark (G11), the rules of the maintenance roll, and how the Arc treats the doenoemi's voices.
 6. Chapter 07's units doctrine uses perimeter machines as enemy units, but not as an army invading Seoul. Only strayed machines (mostly G19, G23) appear inside Seoul.
 7. That blizzards are more frequent in the long-dark half (2.4), and the windows for crossing the perimeter, are used by chapter 07's turn rules.
 8. Beyond the band is written as "unknown" until the owner answers (7.4, provisional T03-49). The rumours of 7.3 are not written as fact.
