@@ -6,7 +6,7 @@ section_checkpoint: v3 task 15 complete
 ---
 [Hostile Ecology Compendium](/wiki/Hostile-Ecology-Index/)
 
-Udukeoni are perimeter machines. They are war machines that stand still at the band's choke points and wait. They are a person's height or a little taller, and they stand covered in snow and frost, so that from a distance they look like frozen people. They do not move for years, then wake when something comes within a certain distance. Because they look like broken wrecks, they kill more of the people who come to salvage them than any other machine.
+Udukeoni are perimeter machines. They are war machines that stand still at the band's choke points and wait. They are a person's height or a little taller, and they stand covered in snow and frost, so that from a distance they look like frozen people. They do not move for years, then wake when something comes within a certain distance. Because they look like broken wrecks, most of the people they kill are those who come up to salvage them.
 
 ## At a Glance
 

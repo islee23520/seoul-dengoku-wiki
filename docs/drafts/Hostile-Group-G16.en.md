@@ -56,7 +56,7 @@ A stopped girder spider yields welding tools, joints and steel. But the Arc revi
 
 The name is just what they look like: they climb steel on many legs.
 
-People in Gangnam's deep shelters, when they hear steel being cut on the floor below at night, first put out the lights on that floor. Children grow up hearing "the spider is reading the plan". It means: do not run a line down to the floor below.
+People in Gangnam's deep shelters, when they hear steel being cut on the floor below at night, first put out the lights on that floor. Children grow up hearing "the spider is reading the plan". It means: never run a line down to the floor below without care.
 
 ## See Also
 
