@@ -183,8 +183,14 @@ for (const L of [UI.en, UI.ko]) {
           out += run; i += run.length; continue;
         }
         if (s.startsWith('<!--', i)) {
-          const e = s.indexOf('-->', i + 4);
-          if (e < 0) { out += s.slice(i); break; }
+          // A mid-line <!-- may close only before the next blank line or the next <!--; no comment crosses a fence opening.
+          const rest = s.slice(i + 4);
+          let lim = rest.length;
+          const fm = /\n {0,3}(`{3,}|~{3,})/.exec(rest); if (fm) lim = fm.index;
+          if (!bol) { for (const stop of ['\n\n', '<!--']) { const k = rest.indexOf(stop); if (k >= 0 && k < lim) lim = k; } }
+          const k = rest.indexOf('-->');
+          if (k < 0 || k >= lim) { out += '<!--'; i += 4; continue; }
+          const e = i + 4 + k;
           i = e + 3;
           if (bol && s[i] === '\n') i++;
           continue;
