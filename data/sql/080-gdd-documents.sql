@@ -37669,7 +37669,7 @@ The remaining contract leaves of D16 are preserved as a reference ledger linked 
 - treatyClauseId/legalEffectReceipt/handoverReceipt — separate identities (identity)
 - bodyStateId/bodyRevision/effectId — approved identity and revision (identity/revision)
 
-The data owner is [object Object], and the maintained contracts are score-contribution, score-symmetry, score-deduplication, endpoint, reinforcement-admission, single-loss-settlement, and treaty-stage-separation. The state ownership boundaries are war/CB/fixed beneficiary, score W, battle channel, processed tuple, terminal receipt, siege stages/work/supply, and actual captive location/custodian. Commit rule: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
+The data owner is rules: GDD D16 integration wave; world facts: WIKI/LORE authoring owners; rights and titles: D10/D11; battle results: D15; prices and signatures: D17; same-boundary ordering: D18, and the maintained contracts are score-contribution, score-symmetry, score-deduplication, endpoint, reinforcement-admission, single-loss-settlement, and treaty-stage-separation. The state ownership boundaries are war/CB/fixed beneficiary, score W, battle channel, processed tuple, terminal receipt, siege stages/work/supply, and actual captive location/custodian. Commit rule: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
 
 ## Error and Hold Codes
 
@@ -38481,7 +38481,7 @@ D16의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 - treatyClauseId/legalEffectReceipt/handoverReceipt — separate identities (identity)
 - bodyStateId/bodyRevision/effectId — approved identity and revision (identity/revision)
 
-자료 소유자는 [object Object], 유지 계약은 score-contribution·score-symmetry·score-deduplication·endpoint·reinforcement-admission·single-loss-settlement·treaty-stage-separation다. 상태 소유 경계는 war/CB/fixed beneficiary,score W,battle channel,processed tuple,terminal receipt,siege stages/work/supply,actual captive location/custodian. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
+자료 소유자는 규칙 GDD D16 integration wave; 세계 사실 WIKI/LORE authoring owners; 권리·작위 D10/D11; 전투 결과 D15; 가격·서명 D17; 같은 경계 순서 D18, 유지 계약은 score-contribution·score-symmetry·score-deduplication·endpoint·reinforcement-admission·single-loss-settlement·treaty-stage-separation다. 상태 소유 경계는 war/CB/fixed beneficiary,score W,battle channel,processed tuple,terminal receipt,siege stages/work/supply,actual captive location/custodian. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
 
 ## 오류·보류 코드
 
@@ -40547,7 +40547,7 @@ The remaining contract leaves of D18 are preserved as a reference ledger linked 
 - effectPayload — owner-domain-state-change (owner-defined)
 - drawAddress — tuple (identity)
 
-The data owner is [object Object], and the maintained contracts are same-time-comparator, next-due, goal-boundary, cutoff, and receipt-count. State ownership boundaries: project Tick/clockVersion,accepted ingress,causal graph,pending/residual/reservations,source variants,knowledge,draw addresses/cursors,receipts/checkpoint versions. Commit rules: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
+The data owner is rules: GDD; authored facts: WIKI read-only; campaign: single-campaign state; presentation: current-body knowledge/access projection only, and the maintained contracts are same-time-comparator, next-due, goal-boundary, cutoff, and receipt-count. State ownership boundaries: project Tick/clockVersion,accepted ingress,causal graph,pending/residual/reservations,source variants,knowledge,draw addresses/cursors,receipts/checkpoint versions. Commit rules: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
 
 ## Error and Hold Codes
 
@@ -42425,7 +42425,7 @@ D18의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 - effectPayload — owner-domain-state-change (owner-defined)
 - drawAddress — tuple (identity)
 
-자료 소유자는 [object Object], 유지 계약은 same-time-comparator·next-due·goal-boundary·cutoff·receipt-count다. 상태 소유 경계는 project Tick/clockVersion,accepted ingress,causal graph,pending/residual/reservations,source variants,knowledge,draw addresses/cursors,receipts/checkpoint versions. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
+자료 소유자는 규칙 GDD; 저작 사실 WIKI read-only; 캠페인 single-campaign state; 표현 current-body knowledge/access projection only, 유지 계약은 same-time-comparator·next-due·goal-boundary·cutoff·receipt-count다. 상태 소유 경계는 project Tick/clockVersion,accepted ingress,causal graph,pending/residual/reservations,source variants,knowledge,draw addresses/cursors,receipts/checkpoint versions. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below.
 
 ## 오류·보류 코드
 
