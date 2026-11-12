@@ -52,7 +52,7 @@ One district is one duchy. The Government holds the 14 districts north of the Ha
 | Songpa-gu | Arc | Head of the Near House | Jamsil |
 | Gangdong-gu | Arc | Head of the Near House | Cheonho |
 
-The **seat station** is the station where the district's holder works. Each Free City has a seat station of its own choosing, and in Arc the station where the Head of the Near House lives is called the home station. In a Government district the seat station is the station where the most lines meet. The business of the Government as a whole is done at the Government Complex Seoul in Gwanghwamun, and that of Arc as a whole at Jamsil, where the Hierophant lives.
+The **seat station** is the station where the district's holder works. Each Free City has a seat station of its own choosing, and in Arc the station where the Head of the Near House lives is called the home station. In a Government district the seat station is the station with the most links to neighbouring stations (on a tie, the one listed first in the station catalog). The business of the Government as a whole is done at the Government Complex Seoul in Gwanghwamun, and that of Arc as a whole at Jamsil, where the Hierophant lives.
 
 In the Government's fourteen districts, the Member of the National Assembly elected in each district holds its duchy. In the Free Cities' seven districts, each city has a different title for its head and a different way of choosing one. Only the head of Gwanak borrowed the Government's word and calls himself Duke. Arc's four districts are each held by one of four Near Houses, the families that stand beside the Hierophant.
 

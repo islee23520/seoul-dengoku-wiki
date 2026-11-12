@@ -82,7 +82,7 @@ A station is a place to live and also a place where goods change hands. Each of 
 
 ## Seat Stations
 
-The station where the holder of a district works is called the seat station. Arc calls the station where the Head of the Near House lives the home station. Seat stations are marked in the "Use" column of the catalog. In a Government district the seat station is the station where the most lines meet. Each Free City has a station of its choosing: Gimpo Int'l Airport for Gangseo, Sinjeongnegeori for Yangcheon, Yeongdeungpo for Yeongdeungpo, Guro for Guro, Gasan Digital Complex for Geumcheon, Noryangjin for Dongjak and Sillim for Gwanak. Arc's home stations are Express Bus Terminal in Seocho, Suseo in Gangnam, Jamsil in Songpa and Cheonho in Gangdong.
+The station where the holder of a district works is called the seat station. Arc calls the station where the Head of the Near House lives the home station. Seat stations are marked in the "Use" column of the catalog. In a Government district the seat station is the station with the most links to neighbouring stations (on a tie, the one listed first). Each Free City has a station of its choosing: Gimpo Int'l Airport for Gangseo, Sinjeongnegeori for Yangcheon, Yeongdeungpo for Yeongdeungpo, Guro for Guro, Gasan Digital Complex for Geumcheon, Noryangjin for Dongjak and Sillim for Gwanak. Arc's home stations are Express Bus Terminal in Seocho, Suseo in Gangnam, Jamsil in Songpa and Cheonho in Gangdong.
 
 ## Stations by District
 

@@ -21,7 +21,7 @@ The "tier" field on a person's page is the tier of the seat that person holds. T
 | Tier | Meaning | Government | The Free Cities | Arc |
 |---|---|---|---|---|
 | T1 | Heads and districts | President for Life, Members of the National Assembly | The seven city heads | Hierophant, Heads of the Near Houses |
-| T2 | Offices of the polity and district households | Ministers, agency chiefs, the Governor of the Bank of Korea, the Director of the National Intelligence Service, the Capital Defense Commander, vice-ministers, heads of district offices, heirs of Assembly Member households | The heir of a city head, Yangcheon's shift chiefs, Dongjak's crossing chiefs, holders of large workbenches | Near House seniors, the Hierophant's household guard captain and spokespeople, negotiators who handle large dealings |
+| T2 | Offices of the polity and district households | Ministers, agency chiefs, the Governor of the Bank of Korea, the Director of the National Intelligence Service, the Capital Defense Commander, vice-ministers, heads of district offices, heirs of Assembly Member households | The heir of a city head, Yangcheon's shift chiefs, Dongjak's crossing chiefs, holders of large workbenches | Near House elders, the Guard Captain and Word Keepers of the Hierophant's household, negotiators who handle large dealings |
 | T3 | Dong | Dong Chief | Section Chief | Shelter Head |
 | T4 | Station | Stationmaster | Station Foreman | Bench Keeper |
 | T5 | All other work | Clerks, police officers, soldiers, skilled and labour hands, market traders, health workers, dependants | Workbench holders, crew chiefs, hands, apprentices, trade and contract, guards, labour hands | Bench workers, baptised workers and fighters, the unbaptised |
@@ -49,11 +49,11 @@ A position adds the station where the person works after the title or work name,
 
 Everyone has two real stations: the station where they work and the station where they sleep. Usually they are the same.
 
-- **Seat holders.** The holder of a district works at that district's seat station. The President for Life works at Gwanghwamun, where the Government Complex Seoul stands, and the Hierophant at Jamsil. Dong Chiefs and Shelter Heads are at the station of their dong where the most lines meet, Section Chiefs at the first station of their section, and station seat holders at their station.
+- **Seat holders.** The holder of a district works at that district's seat station. The President for Life works at Gwanghwamun, where the Government Complex Seoul stands, and the Hierophant at Jamsil. Dong Chiefs and Shelter Heads are at the station of their dong with the most links to neighbouring stations, Section Chiefs at the first station of their section, and station seat holders at their station.
 - **Everyone else.** They live at a station in the district they belong to.
 - **People living on another faction's land.** These are few: Free City technicians and guarantors of the water contracts staying at Government stations, Government traders with coupons staying at Free City markets, Government people who keep the return network's radios and shelters, envoys, and Arc people who maintain the machines in bodies at Free City workshops. All three polities keep such people within 3% of their numbers.
 
-Sin Jong-mok, a field contractor of the return network, is a Government man but lives in Nonhyeon 2-dong in Gangnam. His callsign is Baekya, and he links Seonjeongneung and Suseo.
+Sin Jong-mok, a field contractor of the return network, lives in Nonhyeon 2-dong in Gangnam. His callsign is Baekya, and he links Seonjeongneung and Suseo.
 
 ## Age
 
@@ -63,7 +63,7 @@ Age bars the way to a seat. Each of the three polities sets the youngest age at 
 |---|---|
 | Government | On the sixteenth birthday a child is registered under the household head's trade (inheritance registration). Conscription comes at nineteen. A Member of the National Assembly can hold the seat by inheritance from eighteen. Dong Chiefs and Stationmasters from twenty-five, ministers and heads of district offices from thirty |
 | The Free Cities | Around twelve a child joins the family's workbench as an apprentice. A child who shows the skill becomes a hand from sixteen. Station Foremen and workbench holders from twenty, city heads and Section Chiefs from twenty-five |
-| Arc | The first baptism comes only after sixteen, though a baptism that repairs a lost part of the body is given at any age. Bench Keepers from twenty-five, Shelter Heads from twenty-eight, Near House seniors from forty. For the Head of a Near House the part count matters instead of age: the next Head must have two or more parts |
+| Arc | The first baptism comes only after sixteen, though a baptism that repairs a lost part of the body is given at any age. Bench Keepers from twenty-five, Shelter Heads from twenty-eight, Near House elders from forty. For the Head of a Near House the part count matters instead of age: the next Head must have two or more parts |
 
 ## Households and Inheritance
 
@@ -131,7 +131,7 @@ Each kind of repair work has its own name: wind-machine hand, heat-pump hand, we
 | Go Ye-jin | Hierophant of Arc. Believers call her the Messiah. She grew up in a Free City |
 | I Ilseop | Duke of Gwanak |
 | Ji Yeon-hui | In 2120 she stood beside Go Ye-jin at the shelter negotiations by the Tancheon, and has been her bodyguard ever since |
-| Sin Jong-mok | Field contractor of the return network. A Government man who lives in Nonhyeon 2-dong in Gangnam. Callsign Baekya |
+| Sin Jong-mok | Field contractor of the return network. Lives in Nonhyeon 2-dong in Gangnam. Callsign Baekya |
 
 ## Related Documents
 

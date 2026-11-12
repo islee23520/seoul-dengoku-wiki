@@ -4,7 +4,7 @@ title_ko: 끼니와 먹거리
 model: cpa/claude-opus-5-5; written by the agent by hand from the v3 bible (plan wiki-lore-rebuild-v3 task 12); not from a Gemini model
 section_checkpoint: v3 task 12 complete
 ---
-Every meal in Seoul in 2126 comes either from light or from old carbon. Sunlight is a quarter of what it was before the Great Blackout and the surface is minus 18 degrees, so there is no warming wide greenhouses to grow grain. So Seoul eats the carbon stored up before the Great Blackout: paper, cardboard, wood and cotton. Enzymes from mushrooms break the fibre down into sugar, and that sugar feeds yeast. This is **fibre sugar**. This document records what the people of Seoul eat, where it comes from, and how the three polities share out their meals.
+Every meal in Seoul in 2126 comes either from light or from old carbon. Sunlight is a quarter of what it was before the Great Blackout and the surface is minus 18 degrees, so wide greenhouses cannot be heated to grow grain. So Seoul eats the carbon stored up before the Great Blackout: paper, cardboard, wood and cotton. Enzymes from mushrooms break the fibre down into sugar, and that sugar feeds yeast. This is **fibre sugar**. This document records what the people of Seoul eat, where it comes from, and how the three polities share out their meals.
 
 ## The Shares of a Meal
 
@@ -67,13 +67,13 @@ The Government's market at Sangbong sells the meat and hides of hunted animals.
 
 Salt is not made in Seoul. The only salt is what was stored before the Great Blackout and is dug out of the scrap, so it grows scarcer every year. Scrap salt first ran short around 2086 to 2095. Seed too is carried on from what came out of the scrap and what is harvested in the light-fields.
 
-After coupons, salt is the thing most used in the markets, because, like needles and reels of thread, it lasts and its value does not change. The Government binds salt as a rationed good, and the Free Cities as a contracted good. Arc buys salt along with fibre from north of the river. Anyone caught smuggling salt has it confiscated.
+After coupons, salt is the thing most used in the markets, because, like needles and reels of thread, it lasts and its value does not change. The Government treats salt as a rationed good, and the Free Cities treat it as a contract good. Arc buys salt along with fibre from north of the river. Anyone caught smuggling salt has it confiscated.
 
 ## The Tables of the Three Polities
 
 Meals come from the same chain everywhere in Seoul. How they are shared out differs between the polities.
 
-**Government: coupons and rations.** The Government's money is the ration coupon. The unit printed on a coupon is still the won, and the Bank of Korea sets its notified value. At the notified value of 2126, one bowl of fibre-sugar porridge (about 600 kilocalories) costs 1,000 won. Government people count one person's daily meal coupons plus a water coupon for 10 litres as "one kki", one meal's share. Coupons are issued monthly by household at the community service centre, and can be exchanged for meals only at the centre where the household is registered.
+**Government: coupons and rations.** The Government's money is the ration coupon. The unit printed on a coupon is still the won, and the Bank of Korea sets its notified value. At the notified value of 2126, one bowl of fibre-sugar porridge (about 600 kilocalories) costs 1,000 won. Government people count one person's daily meal coupons plus a water coupon for 10 litres as "one meal". Coupons are issued monthly by household at the community service centre, and can be exchanged for meals only at the centre where the household is registered.
 
 | Ration grade | Who | Daily food |
 |---|---|---|

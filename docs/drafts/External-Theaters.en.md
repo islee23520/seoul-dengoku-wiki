@@ -93,7 +93,7 @@ What comes across is gathered in a few places inside Seoul. Arc's Suseo exchange
 
 **The return network** is a chain of radio and shelters that meets people coming back across the rim. The Government funds it by contract. The ledger wants power cores, and wants to record who came back. The rim is everywhere around Seoul, so the return network's field work is done south of the river too.
 
-Sin Jong-mok is a field contractor of the return network. He is a Government man, yet he lives in Nonhyeon 2-dong in Gangnam. His radio callsign is Baekya, and he links Seonjeongneung and Suseo. For people coming back across the rim, Baekya's voice tells them which station they must reach before the blizzard lifts.
+Sin Jong-mok is a field contractor of the return network, which the Government funds. He lives in Nonhyeon 2-dong in Gangnam. His radio callsign is Baekya, and he links Seonjeongneung and Suseo. For people coming back across the rim, Baekya's voice tells them which station they must reach before the blizzard lifts.
 
 A power core that does not pass through the return network leaves no record in the ledger of who came back. On Government land such cores are confiscated; elsewhere a share is taken.
 
@@ -114,10 +114,6 @@ The three polities each speak of beyond the belt in their own way.
 | Arc | "God brought down the winter and nothing more; God does not drive machines. The belt is what people left behind." |
 
 Rumours go round every station: that there are people living in stations beyond the belt too, that the winter is milder beyond the belt, that the people who drive the machines are still alive. None of them has ever been confirmed, because those who went to confirm them did not come back.
-
-## Outside Names in Old Records
-
-Old records list people whose titles carried the names of towns outside Seoul. In 2126 nobody rules outside Seoul. Those people all live in stations inside Seoul and work in places inside Seoul. This wiki records their places by the rules in [People, Factions and Trades](/wiki/Characters-Factions-and-Professions/).
 
 ## Related Documents
 
