@@ -47,6 +47,12 @@
 .vp-doc a, .VPSidebarItem.is-active > .item .text { transition: color 150ms ease-out; }
 .VPDocAsideOutline .outline-title { font-weight: 700; }
 .vp-doc table { display: block; overflow-x: auto; }
+/* units pages: wide stat tables scroll sideways; headers and Korean words are never split per character */
+.unit-roster th { white-space: nowrap; }
+.unit-roster td { word-break: keep-all; }
+.unit-roster td:first-child { min-width: 7em; }
+.unit-role { display: inline-flex; align-items: center; gap: 4px; padding: 1px 8px 1px 4px; border: 1px solid var(--vp-c-divider); border-radius: 10px; background: var(--vp-c-bg-alt); font-size: 0.85em; white-space: nowrap; }
+.unit-role-icon { display: inline-block; width: 1.3em; text-align: center; color: var(--vp-c-brand-1); }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 
 .person-clan-line { display: flex; align-items: center; gap: 10px; margin: 8px 0 16px; }
