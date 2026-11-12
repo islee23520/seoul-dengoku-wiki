@@ -28,7 +28,7 @@ The old bestiary's "infected" kind (G19-G24) is not used. The v3 world has no di
 
 Depth uses chapter 1's four bands (surface, concourse, platform, deep tunnel; 01-core 3.1) unchanged, and adds two places in order to talk about threat (provisional T03-3).
 
-- **Abandoned sections.** Unused tunnels between stations, closed-off exits and frozen upper floors, and the basements of old buildings buried under snow. Whole abandoned stations are rare. The 312 stations of 01-core 4.3 are all counted as lived-in stations (a few map entries with no line are left out of the population count, as chapter 04 section 16.1 does). The frozen stations where the Free Cities lay their dead are abandoned platforms belonging to these stations or old platforms not on the map (chapter 05 section 10.4). What is abandoned is mostly part of a station, or the space between stations.
+- **Abandoned sections.** Unused tunnels between stations, closed-off exits and frozen upper floors, and the basements of old buildings buried under snow. Whole abandoned stations are rare. Of the 312 map entries of 01-core 4.3, the 307 that are not among the five entries with no line are all counted as lived-in stations (01-core 4.3, chapter 04 section 16.1). The frozen stations where the Free Cities lay their dead are abandoned platforms belonging to these stations or old platforms not on the map (chapter 05 section 10.4). What is abandoned is mostly part of a station, or the space between stations.
 - **The perimeter.** The band 2-10 km outside Seoul's administrative boundary (01-core 6.3). The 0-2 km inside it is called the **forecourt** in this chapter (7.1).
 
 ## 2. Thaw-pocket ecology: the food web

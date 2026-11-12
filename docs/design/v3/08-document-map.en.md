@@ -16,7 +16,7 @@ Basis: bible 7.1 (slugs do not change, 63 documents), 9.4 D2 (four new documents
 
 Every topic of the v3 bible was matched against the slugs. Each can be carried by one of the existing 63. In particular the five slugs whose old concept is gone (`Sixteen-States`, Chaebol-Houses-and-Century-Factions, Operating-Houses, Diaspora-Corridors, Synthetic-Actors) take the large topics that v3 newly has (the overview of the three polities, houses and inheritance, station offices and workbenches, crossings and smuggling, humanoids). The water contracts go to World-Relation-Ledger; the physics of the eternal winter go to World-Unbinding and Station-Interior-Construction.
 
-The CK3-based systems of chapter 09 (the contract between the campaign layer and the battlefield layer, the turn of the war, replenishment, captured persons) are design-side. The only thing a wiki reader needs from them to read the world is the word "형세" (the turn of the war), and it goes into the Glossary. So no wiki slug is added. The count in `docs/canon-slugs.json` and bible 7.1 stays 63 (provisional T09-7).
+The CK3-based systems of chapter 09 (the contract between the campaign layer and the battlefield layer, hyeongse, replenishment, captured persons) are design-side. The only thing a wiki reader needs from them to read the world is the word "형세", hyeongse (the standing of the war), and it goes into the Glossary. So no wiki slug is added. The count in `docs/canon-slugs.json` and bible 7.1 stays 63 (provisional T09-7).
 
 ## 3. Document map
 
@@ -26,7 +26,7 @@ Columns: **Task** is the plan's document task number. **Basis** is the bible sec
 
 | slug | Category | Current title | v3 topic | New title (ko / en) | Basis |
 |---|---|---|---|---|---|
-| Glossary | overview | Glossary | The in-world words of the three polities. Approved terms and v3 [proposal] terms are listed apart. The polities' units of account (meals and won, kilos and hand-hours, day-charges and maintenance turns), "형세" (the turn of the war) | 용어 사전 / Glossary | bible 5, 01 2.2-2.4 and 8.4, 03 10.1 and 11, 04 9, 05 6 and 10.7, 06 6.4 and 10.5, 09 3.6 |
+| Glossary | overview | Glossary | The in-world words of the three polities. Approved terms and v3 [proposal] terms are listed apart. The polities' units of account (meals and won, kilos and hand-hours, day-charges and maintenance turns), "형세", hyeongse (the standing of the war) | 용어 사전 / Glossary | bible 5, 01 2.2-2.4 and 8.4, 03 10.1 and 11, 04 9, 05 6 and 10.7, 06 6.4 and 10.5, 09 3.6 |
 | World-Unbinding | overview | The Great Blackout | The Great Blackout and the eternal winter: how the First AI brought down the winter, temperature by depth, light, snow, the river, wind, what changed over a hundred years, the ratchet of winter | 대정전과 영원한 겨울 / The Great Blackout and the Eternal Winter | bible 1, 3, 01 3, 6.1-6.2 and 9 (the 2026 rows) |
 | World-Expansion-Index | overview | World Expansion Index | An index tying the 25 districts to their polity, seat station, ruling title and related documents | 세계 색인: 세 정체와 25공작령 / World Index: the Three Polities and the 25 Duchies | bible 2.4, 01 7 and 8, 04 3.4, 05 2, 06 1 and 4, 07 4.3 |
 | World-Narrative-Atlas | overview | World Narrative Atlas | The root document of the world story: the eternal winter, people living in stations, three polities divided by the Han, why they need and fear one another, the question of winter 2126 | 세계 서사 총람 / World Narrative Atlas | bible 1-2, 01 1 and 7 (including 7.4), 01 9 |

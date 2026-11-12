@@ -743,7 +743,7 @@
     },
     {
       "id": "ruler-king-ko",
-      "pattern": "(?<![가-힣])왕(?:이|은|을|의|과|와|도|국|좌|위|실|권|들|가|처럼|족|조)?(?![가-힣])",
+      "pattern": "(?<!천)왕(?!십리|복|래|릉)",
       "flags": "",
       "lang": "ko",
       "allowedContext": [
@@ -764,15 +764,13 @@
         "\\n\\| No king \\|",
         "\\n\\| Union \\(retired\\) \\|",
         "\\n\\| Muhammad \\|",
-        "\\n\\| Shia-style clan rule \\|",
-        "\\(국왕\\)",
-        "\"[^\"\\n]{0,40}국왕[^\"\\n]{0,40}\""
+        "\\n\\| Shia-style clan rule \\|"
       ],
-      "note": "[과제 9] 이 세계의 지배자를 \"왕\"이라 부르지 않는다. 대체: 01-core 8절 칭호(국회의원, 종신 대통령, 도시 우두머리, 관악 공작, 교주, 곁집장). 앞뒤에 한글이 붙은 낱말(왕십리, 왕복, 국왕, 최왕 같은 이름)은 잡지 않는다. 근거: 계획 과제 9, 소유자 정정(2026-11-13, 바이블 9.4절 \"유니온 폐기\"·\"비유 표현\"·\"국회의원\" 행), 01-core 2.4절."
+      "note": "[과제 9] 이 세계의 지배자를 \"왕\"이라 부르지 않는다. 국왕·여왕·대왕·제왕·군왕·왕자·왕비·왕가·왕관·왕국처럼 앞뒤에 다른 글자가 붙은 꼴도 잡는다. 면제는 실제 이름과 낱말뿐이다: 역 이름 천왕(구로구), 지명 왕십리·상왕십리(성동구), 낱말 왕복·왕래·왕릉. 대체: 01-core 8절 칭호(국회의원, 종신 대통령, 도시 우두머리, 관악 공작, 교주, 곁집장). 근거: 계획 과제 9, 소유자 정정(2026-11-13, 바이블 9.4절 \"유니온 폐기\"·\"비유 표현\"·\"국회의원\" 행), 01-core 2.4절."
     },
     {
       "id": "ruler-king-en",
-      "pattern": "\\bkings?\\b|\\bkingship\\b",
+      "pattern": "\\b(?:kings?|kingship|kingdoms?|queens?|monarchs?|monarchy)\\b",
       "flags": "i",
       "lang": "en",
       "allowedContext": [
@@ -794,15 +792,13 @@
         "\\n\\| Union \\(retired\\) \\|",
         "\\n\\| Muhammad \\|",
         "\\n\\| Shia-style clan rule \\|",
-        "CK3",
         "Crusader Kings",
-        "`[^`\n]*feudal[^`\n]*`",
-        "feudal, republic, clan",
-        "feudal 정부 플래그",
-        "feudal government flag",
-        "feudal_"
+        "kingdom (?:tier|등급)",
+        "duchy, kingdom, empire",
+        "kingdom 500",
+        "\\| Old national offices: "
       ],
-      "note": "[task 9] No ruler of this world is a king. Use the 01-core 8 titles. CK3 analysis exempt by context. 근거: 계획 과제 9, 소유자 정정(2026-11-13, 바이블 9.4절 \"유니온 폐기\"·\"비유 표현\"·\"국회의원\" 행), 01-core 2.4절."
+      "note": "[task 9] No ruler of this world is a king, queen or monarch, and no polity is a kingdom. Use the 01-core 8 titles. Exempt by context only: the game title Crusader Kings, the CK3 title tier \"kingdom\" in chapter 09, and the retired-concept row \"Old national offices\" of 01-core section 10. 근거: 계획 과제 9, 소유자 정정(2026-11-13, 바이블 9.4절 \"유니온 폐기\"·\"비유 표현\"·\"국회의원\" 행), 01-core 2.4절."
     },
     {
       "id": "jangsanbeom",
@@ -896,8 +892,8 @@
     },
     {
       "id": "real-names-wang",
-      "pattern": "왕십리|왕복|국왕|왕릉|최왕",
-      "note": "허용 기록(스캔 대상 아님, 과제 9). ruler-king-ko는 앞뒤에 한글이 붙은 왕을 잡지 않으므로 실제 지명 왕십리(성동구), 낱말 왕복·국왕·왕릉, 이름의 왕 글자는 걸리지 않는다. 실제 역사의 국왕을 인용할 때만 쓴다."
+      "pattern": "천왕|왕십리|상왕십리|왕복|왕래|왕릉",
+      "note": "허용 기록(스캔 대상 아님, 과제 9). ruler-king-ko가 면제하는 것은 이 실제 이름과 낱말뿐이다: 역 이름 천왕(구로구), 지명 왕십리·상왕십리(성동구), 낱말 왕복·왕래·왕릉. 국왕·여왕·왕자 같은 꼴은 모두 잡는다."
     },
     {
       "id": "analogy-table-and-decision-log",

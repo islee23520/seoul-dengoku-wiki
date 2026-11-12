@@ -221,7 +221,7 @@ Station names, districts, lines, depths and exit counts are values from `data/sq
 
 (provisional T02-28)
 
-Counted by surface control in `120-map-core.sql`, the Government has 157 stations, the Free Cities 77 and the Arc 78, 312 in all. Applying the station classes, v3 sets the 2126 population at about 160,000 for the Government, about 75,000 for the Free Cities and about 65,000 for the Arc, about 300,000 for all of Seoul. That is a little over 3% of Seoul's pre-Blackout population (provisional T02-29).
+Counted by surface control in `120-map-core.sql`, the Government has 157 stations, the Free Cities 77 and the Arc 78, 312 in all. That is the number of map entries. The five entries with no line (four Government: the two Daehyeonsan Reservoir Park monorail platforms, Metro Hotel and Sinchon (Underground); one Arc: Saengtaegongwon-ap) are not counted as lived-in stations. So there are 307 lived-in stations (Government 153, Free Cities 77, Arc 77) (provisional T09-32). Applying the station classes, v3 sets the 2126 population at about 160,000 for the Government, about 75,000 for the Free Cities and about 65,000 for the Arc, about 300,000 for all of Seoul. That is a little over 3% of Seoul's pre-Blackout population (provisional T02-29).
 
 ## 5. Energy, water and food chains
 
