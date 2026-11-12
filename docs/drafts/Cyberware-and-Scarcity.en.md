@@ -17,7 +17,7 @@ In 2126 about 14,100 people in Seoul wear machines on their bodies, about one in
 
 ## Place and work
 
-Seoul people do not call the machines on a body by name. They call them by the body's **place** and by the **work** the machine does. They say "the machine below the left arm" or "the one who changed both eyes". The part count the Arc keeps is a count of these places.
+Seoul people do not call the machines on a body by name. They call them by the body's **place** and by the **work** the machine does. They say "the machine on the left forearm" or "the one who had both eyes replaced". The part count the Arc keeps is a count of these places.
 
 | Place | Work | Electricity | What fitting takes |
 |---|---|---|---|
@@ -79,7 +79,7 @@ Charging is done only on warm levels, because a battery charged below freezing i
 
 When power is cut, the machines of the limbs and senses simply stop. A person lives on with one hand or one eye fewer. A machine assisting a trunk organ is different. It alternates between two batteries and is never cut off even for a moment; if both run empty, the wearer dies within hours. So a person with a machine in a trunk organ never goes more than half a day's walk from a maintenance bench and a charging rack. This is the strongest tie binding a person who wears machines to their polity.
 
-At Jamsil, 900 of the station's about 3,100 people are baptised. That is far above the Arc's average, because the baptised gather at the station that the electricity of the Jamsil weir water wheels reaches. The Arc's 88 kW of charging is about 22% of the 400 kW the wheels give when running well. The north end of the weir is in Government hands. For the Arc, the north end of the weir is the day of eleven thousand baptised people.
+At Jamsil, 900 of the station's roughly 3,100 people are baptised. That is far above the Arc's average, because the baptised gather at the station that the electricity of the Jamsil weir water wheels reaches. The Arc's 88 kW of charging is about 22% of the 400 kW the wheels give when running well. The north end of the weir is in Government hands. For the Arc, the north end of the weir is the day of eleven thousand baptised people.
 
 ## Rejection and infection
 

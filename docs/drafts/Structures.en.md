@@ -32,7 +32,7 @@ More than half of Seoul's electricity, about 3.6 MW, comes from wind machines. T
 |---|---|
 | On bridges and the north riverbank | The Government, run by the Ministry of Climate, Energy and Environment. But the hands that build and repair the wind machines belong to the Free Cities |
 | The western riverside plains of Gangseo (Magok, Gayang) | Gangseo. Few buildings are buried there, so wind machines can stand in rows. Gangseo makes the most electricity of the Free Cities and sells the surplus by cable to Yangcheon and Yeongdeungpo |
-| The tops of buried buildings in Gangnam | The Arc. With wind power bought from the Free Cities, one share of the Arc's electricity |
+| The tops of buried buildings in Gangnam | The Arc. Together with wind power bought from the Free Cities, it makes up one share of the Arc's electricity |
 
 Wind machine blades ice up, bearings wear, and blizzards tear the blades. So in a blizzard the blades are folded, which is why electricity falls just when the wind is strongest. There are always thieves after the wire too. Wind-machine wrights, who knock ice off the blades and change bearings, do the coldest work in Seoul.
 

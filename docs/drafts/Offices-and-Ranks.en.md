@@ -100,7 +100,7 @@ The foundation of Free City work is the workbench: a workshop held by one househ
 | Post | Who |
 |---|---|
 | Bench Owner | The person who holds the workbench and its seal. Usually the eldest child succeeds, but an eldest child who has not shown the hands cannot |
-| Hand | Someone who can do the bench's craft with their own hands. When the Bench Owner recognises a hand, they wear the bench's mark |
+| Hand | Someone who can do the bench's craft with their own hands. When the Bench Owner recognises someone as a hand, that person wears the bench's mark |
 | Apprentice | Someone learning to be a hand. Usually joins a bench at about twelve |
 | Crew Chief | Leads a work crew gathered from several benches for one contract. When the contract is paid in full, the crew disperses |
 | Labourer | Someone who has not shown a craft. Earns wages but cannot contract in their own name |

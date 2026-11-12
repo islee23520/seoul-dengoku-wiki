@@ -39,7 +39,7 @@ So keeping the fibre-sugar vats is both keeping the meals and keeping illness aw
 ## Illness carried by animals
 
 - **Rabies from raccoon dogs.** The [raccoon dogs](/wiki/Hostile-Group-G04/) that live in the old pipes and ventilation ducts of riverside stations carry rabies and mange. A person bitten by a mad raccoon dog usually dies, because the medicine to treat it is scarce.
-- **Haemorrhagic fever from rats.** The [rats](/wiki/Hostile-Group-G05/) that live on the platform level of every inhabited station carry haemorrhagic fever with renal syndrome. It is an illness of high fever, bleeding marks under the skin and damaged kidneys. Rats spoil fibre-sugar vats and mushroom cellars and eat into the meals, and gnaw wires until the lights and heat pumps stop. Rat-catching is one of the trades inherited in every polity.
+- **Haemorrhagic fever from brown rats.** The [brown rats](/wiki/Hostile-Group-G05/) that live on the platform level of every inhabited station carry haemorrhagic fever with renal syndrome. It is an illness of high fever, bleeding marks under the skin and damaged kidneys. Rats spoil fibre-sugar vats and mushroom cellars and eat into the meals, and gnaw wires until the lights and heat pumps stop. Rat-catching is one of the trades inherited in every polity.
 
 ## Bodies short of light
 

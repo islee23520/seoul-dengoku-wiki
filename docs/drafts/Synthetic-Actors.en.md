@@ -40,7 +40,7 @@ The only words a humanoid says are a few guidance phrases used in the old wareho
 
 ## What they eat
 
-One humanoid draws about 150 W on average through the day, the platform heating share of four people. Counted in carrying, it does the work of five people, which looks like a good bargain; but that electricity, put into a heat pump, could warm four people. So humanoids are found where hands are short and electricity is spare: the Free Cities and the area around Jamsil. They are rare in the Government, where hands are plentiful.
+One humanoid draws about 150 W on average through the day, the platform heating share of four people. Counted in carrying, it does the work of five people, which looks like a good bargain; but put into a heat pump that electricity would become three times the heat and warm about eleven people. So humanoids are found where hands are short and electricity is spare: the Free Cities and the area around Jamsil. They are rare in the Government, where hands are plentiful.
 
 Humanoids follow the battery rules too. Charging is never done below freezing, so it happens only on warm levels. On the surface the battery gives only half and the joints stiffen, so surface work is cut short. A humanoid holds circuit boards, so it is inspected every 30 days, and board hands and motor winders attend to keep it alive. There are always a few people beside one humanoid.
 
