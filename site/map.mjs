@@ -6,6 +6,9 @@
 
 // Owner rule (CANON-BIBLE 2.4): each district (gu) is one duchy. North of the Han River is the Government (14); the south-west is the Free Cities (7, Gwanak included);
 // the four Gangnam districts in the south-east are Arc (4).
+// Display name of a land-frame title. 121 keeps the fixed admin names; the display drops the old noble ranks.
+export const frameName = (rank, name) => rank === 'kingdom' ? name.replace(/ 왕국$/, ' 권역').replace(/ Kingdom$/, ' Area') : rank === 'county' ? name.replace(/ 백작령$/, '').replace(/ County$/, '') : name;
+
 export const DISTRICT_FACTION = {
   government: ['마포구', '용산구', '중구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '종로구', '서대문구', '은평구', '강북구', '도봉구', '노원구'],
   arc: ['서초구', '강남구', '송파구', '강동구'],
@@ -88,7 +91,7 @@ export function buildMapData(rows, ctx) {
     for (const id of dongIds) { const r = regionById.get(id); if (!r) continue; const f = regionFaction(r); if (f) weight.set(f, (weight.get(f) ?? 0) + (rows.regions.find((x) => x.id === id)?.area_m2 ?? 0)); }
     const faction = [...weight.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0]?.[0] ?? null;
     const slots = JSON.parse(ko ? t.slots_ko : t.slots);
-    return { id: t.id, rank: t.rank, name: pick(t, 'name'), parent: t.parent_id, counties: countyIds, faction, districts: slots.map((s) => s.dongId) };
+    return { id: t.id, rank: t.rank, name: frameName(t.rank, pick(t, 'name')), parent: t.parent_id, counties: countyIds, faction, districts: slots.map((s) => s.dongId) };
   });
 
   const states = ctx.states.map((s) => {

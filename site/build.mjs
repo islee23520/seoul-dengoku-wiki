@@ -9,7 +9,7 @@ import { DatabaseSync } from 'node:sqlite';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { personPage, familyTreeSvg, STR } from './people.mjs';
-import { buildMapData, DISTRICT_FACTION } from './map.mjs';
+import { buildMapData, DISTRICT_FACTION, frameName } from './map.mjs';
 import { relationsPage, licensePage } from './relations.mjs';
 import { collectReleases, renderRelease } from '../scripts/pages/release-notes.mjs';
 
@@ -234,7 +234,7 @@ const DUCHY_HOLDER = {
 };
 const UI = {
   en: {
-    lang: 'en-US', label: 'English', prefix: '', wiki: 'Wiki', states: 'Polities', duchies: 'Duchies', orgs: 'Polity and head', orgsNote: 'Seoul has three polities and no others. Each district is one duchy: fourteen for the Government, seven for the Free Cities, four for Arc. Beyond Seoul no one rules; the old war machines keep the rim.', factions: 'Factions', people: 'People', gdd: 'Design Docs (GDD)', showcase: 'Showcase',
+    lang: 'en-US', label: 'English', prefix: '', wiki: 'Wiki', states: 'Polities', duchies: 'Duchies', orgs: 'Polity and head', orgsNote: 'Seoul has three polities and no others. Each district is one duchy: fourteen for the Government, seven for the Free Cities, four for the Arc. Around Seoul lies the rim, where the old war machines circle; what lies beyond it, no one knows.', factions: 'Factions', people: 'People', gdd: 'Design Docs (GDD)', showcase: 'Showcase',
     updates: 'Update History', wikiHome: 'Wiki Home', gddHome: 'GDD Home', designDocs: 'Design Docs', overview: 'Overview', onThisPage: 'On this page',
     prev: 'Previous page', next: 'Next page', menu: 'Menu', search: 'Search', noResults: 'No results for', reset: 'Reset search', toSelect: 'to select', toNavigate: 'to navigate', toClose: 'to close',
     appearance: 'Appearance', returnTop: 'Return to top', skip: 'Skip to content', footerMsg: 'Public world bible and game design documents.',
@@ -242,13 +242,13 @@ const UI = {
     showcaseCard: 'Interactive Showcase', showcaseDetail: 'An illustrated chronicle of the station world in text. Korean lines with English subtitles.',
     openSource: 'Open Source', openSourceDetail: 'Everything is built from raw SQL data in the public repository.',
     wikiLead: (n) => `${n} articles on the world, its polities, people and history. Pick a category below or use the sidebar.`,
-    statesLead: (n, f) => `Seoul in 2126 has ${f} polities: the Government, the Free Cities and Arc. Each district is one duchy.`,
+    statesLead: (n, f) => `Seoul in 2126 has ${f} polities: the Government, the Free Cities and the Arc. Each district is one duchy.`,
     peopleLead: (n) => `${n} characters. Use the site search or your browser's find (Ctrl+F) to locate a name.`,
     gddLead: (n) => `${n} design documents: rules, architecture, art direction, decision records, references and system design.`,
     cols: { id: 'ID', state: 'Polity', ruler: 'Head', capital: 'Seat', power: 'Territory', faction: 'Faction', name: 'Name', title: 'Title', occupation: 'Occupation', rank: 'Rank' },
     fields: { stateId: 'Polity ID', government: 'How it is governed', power: 'Territory', origin: 'Origin', ruler: 'Head', capital: 'Seat', faction: 'Faction', base: 'Base', position: 'Position', occupation: 'Occupation', gender: 'Gender', stage: 'Stage', state: 'Polity', rank: 'Rank', title: 'Title' },
     members: 'Polity', centerRegion: 'Land', aiPosition: 'Stance toward the First AI', recorded: (n) => `${n} recorded people.`, independentNote: 'These people belong to none of the three polities.',
-    featStates: (n) => `Three polities - the Government, the Free Cities and Arc - and the twenty-five duchies they hold.`, featPeople: (n) => `${n} people with their titles, occupations and polities.`,
+    featStates: (n) => `Three polities - the Government, the Free Cities and the Arc - and the twenty-five duchies they hold.`, featPeople: (n) => `${n} people with their titles, occupations and polities.`,
     featWiki: (n) => `${n} articles on the history, polities, ecology, culture and geography of Seoul in the eternal winter.`, featGdd: (n) => `${n} documents covering rules, systems, art direction and decisions.`,
     featUpdates: 'What changed in the wiki and when.', tagline: meta.tagline, siteTitle: meta.title,
     u: {
@@ -259,7 +259,7 @@ const UI = {
     },
   },
   ko: {
-    lang: 'ko-KR', label: '한국어', prefix: 'ko/', wiki: '위키', states: '정체', duchies: '공작령', orgs: '정체와 수장', orgsNote: '서울에는 세 정체가 있고 그 밖의 나라는 없다. 구 하나가 공작령 하나다. 정부가 열넷, 자유도시들이 일곱, 아크가 넷을 쥔다. 서울 밖에는 다스리는 사람이 없고, 옛 전쟁 기계가 테두리를 지킨다.', factions: '세력', people: '인물', gdd: '설계 문서(GDD)', showcase: '쇼케이스',
+    lang: 'ko-KR', label: '한국어', prefix: 'ko/', wiki: '위키', states: '정체', duchies: '공작령', orgs: '정체와 수장', orgsNote: '서울에는 세 정체가 있고 그 밖의 나라는 없다. 구 하나가 공작령 하나다. 정부가 열넷, 자유도시들이 일곱, 아크가 넷을 쥔다. 서울 둘레의 테두리에는 옛 전쟁 기계가 돌고, 그 너머에 무엇이 남았는지는 아무도 모른다.', factions: '세력', people: '인물', gdd: '설계 문서(GDD)', showcase: '쇼케이스',
     updates: '갱신 이력', wikiHome: '위키 홈', gddHome: 'GDD 홈', designDocs: '설계 문서', overview: '개요', onThisPage: '이 페이지에서',
     prev: '이전 문서', next: '다음 문서', menu: '메뉴', search: '검색', noResults: '결과 없음:', reset: '검색 초기화', toSelect: '선택', toNavigate: '이동', toClose: '닫기',
     appearance: '화면 모드', returnTop: '맨 위로', skip: '본문으로 건너뛰기', footerMsg: '공개 세계관 위키와 게임 설계 문서.',
@@ -409,7 +409,7 @@ for (const L of [UI.en, UI.ko]) {
   write(`${L.prefix}wiki/duchies/index.md`, page(L.duchies, `# ${L.duchies}\n\n${D.lead}\n\n| ${D.duchy} | ${L.fields.faction} | ${D.holder} | ${D.seat} | ${D.stations} |\n| --- | --- | --- | --- | --- |\n${duchyRows.map((t) => `| [${g(t, 'name')}](${P(`wiki/duchies/${duchySlug(t)}/`)}) | [${cell(factionName(guFaction.get(t.name_ko)))}](${P(`wiki/factions/${guFaction.get(t.name_ko)}/`)}) | ${cell(holderTitle(t))} | ${cell(seatOf(t))} | ${stationsOfGu(t.name_ko)} |`).join('\n')}`));
   duchyRows.forEach((t) => {
     const fid = guFaction.get(t.name_ko); const counties = JSON.parse(t.county_ids).map((id) => titleById.get(id)).filter(Boolean);
-    write(`${L.prefix}wiki/duchies/${duchySlug(t)}/index.md`, page(g(t, 'name'), `# ${g(t, 'name')}\n\n- ${L.fields.faction}: [${cell(factionName(fid))}](${P(`wiki/factions/${fid}/`)})\n- ${D.holder}: ${cell(holderTitle(t))}\n- ${D.seat}: ${cell(seatOf(t))}\n- ${D.stations}: ${stationsOfGu(t.name_ko)}\n- ${D.counties}: ${counties.map((c) => cell(g(c, 'name'))).join(' · ')}\n\n${FACTION_STRUCTURE[fid]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n[${D.open}](${P('wiki/map/')})`));
+    write(`${L.prefix}wiki/duchies/${duchySlug(t)}/index.md`, page(g(t, 'name'), `# ${g(t, 'name')}\n\n- ${L.fields.faction}: [${cell(factionName(fid))}](${P(`wiki/factions/${fid}/`)})\n- ${D.holder}: ${cell(holderTitle(t))}\n- ${D.seat}: ${cell(seatOf(t))}\n- ${D.stations}: ${stationsOfGu(t.name_ko)}\n- ${D.counties}: ${counties.map((c) => cell(frameName('county', g(c, 'name')))).join(' · ')}\n\n${FACTION_STRUCTURE[fid]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n[${D.open}](${P('wiki/map/')})`));
   });
   // people: search page (client island) + one rich page per person from person_detail
   const SS = L === UI.ko ? STR.ko : STR.en;
