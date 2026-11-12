@@ -4,8 +4,11 @@
 //   map.titles.json         title polygons (geometry only, locale independent)                         (loaded when titles are shown)
 //   map.rail.json           physical rail polylines already projected to map units                     (loaded when rail is shown)
 
-// Owner rule: each district (gu) is one duchy. North of the Han river is the Government; Gangnam-side east is Arc; Gangnam-side west is the Free City.
-// Gwanak-gu joins the Free City (owner answer 2026-11-10).
+// Owner rule (CANON-BIBLE 2.4): each district (gu) is one duchy. North of the Han River is the Government (14); the south-west is the Free Cities (7, Gwanak included);
+// the four Gangnam districts in the south-east are Arc (4).
+// Display name of a land-frame title. 121 keeps the fixed admin names; the display drops the old noble ranks.
+export const frameName = (rank, name) => rank === 'kingdom' ? name.replace(/ 왕국$/, ' 권역').replace(/ Kingdom$/, ' Area') : rank === 'county' ? name.replace(/ 백작령$/, '').replace(/ County$/, '') : name;
+
 export const DISTRICT_FACTION = {
   government: ['마포구', '용산구', '중구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '종로구', '서대문구', '은평구', '강북구', '도봉구', '노원구'],
   arc: ['서초구', '강남구', '송파구', '강동구'],
@@ -15,39 +18,39 @@ const factionOfDistrict = new Map(Object.entries(DISTRICT_FACTION).flatMap(([f, 
 
 const LABELS = {
   en: {
-    title: 'Territory Map', lead: 'Counties are the smallest selectable unit. Geographic jurisdiction is separate from actual holdings and vassalage.', epoch: 'As of',
-    modeGroup: 'Map type', political: 'Political map', titles: 'Geographic titles', layerGroup: 'Layer', surface: 'Surface', underground: 'Underground',
-    rank: 'Title rank', ranks: { county: 'County', duchy: 'Duchy', kingdom: 'Kingdom', empire: 'Empire' }, line: 'Line filter', allLines: 'All lines',
-    holding: 'Personal domain', noHolding: 'Select a domain', showRail: 'Show subway lines', markers: 'Map markers', stations: 'Stations', landmarks: 'Key sites',
+    title: 'Territory Map', lead: 'Dongs are the smallest unit on the map. Colour shows which of the three polities holds each district; the land frame of old constituencies, districts and areas is fixed geography and says nothing about who holds a seat.', epoch: 'As of',
+    modeGroup: 'Map type', political: 'Political map', titles: 'Land frame', layerGroup: 'Layer', surface: 'Surface', underground: 'Underground',
+    rank: 'Frame level', ranks: { county: 'Old constituency', duchy: 'District (duchy)', kingdom: 'Area', empire: 'Seoul' }, line: 'Line filter', allLines: 'All lines',
+    holding: 'Personal holding', noHolding: 'Select a holding', showRail: 'Show subway lines', markers: 'Map markers', stations: 'Stations', landmarks: 'Key sites',
     whole: 'Show all of Seoul', zoomIn: 'Zoom in', zoomOut: 'Zoom out', zoomGroup: 'Zoom',
     mapLabel: 'Territory map. Drag to move, scroll or pinch to zoom. Keys: arrows move, plus and minus zoom, 0 shows all of Seoul.', detail: 'Selection details', close: 'Close', openDetail: 'Show details', hideDetail: 'Hide details',
     legend: 'Political legend', neutral: 'Neutral', unknown: 'Political affiliation unknown', loading: 'Loading the map…', failed: 'Could not load the map data.', retry: 'Retry', loadingGeometry: 'Loading territory outlines…',
-    statesList: 'Organizations (former states)', states: 'Organization', undergroundLegend: 'Underground segment status', held: 'Held', vacant: 'Vacant', unassigned: 'Unassigned',
+    statesList: 'Polities', states: 'Polity', undergroundLegend: 'Underground segment status', held: 'Held', vacant: 'Vacant', unassigned: 'Unassigned',
     status: { held: 'Held', vacant: 'Vacant', unassigned: 'Unassigned', unassigned_: 'Unassigned' },
-    kTitle: 'Geographic title', kRegion: 'Selected district', kState: 'Selected state', kStation: 'Station', kSegment: 'Underground segment', kLandmark: 'Key site', kHolding: 'Personal domain',
-    ruler: 'Ruler', hegemon: 'Current overlord', faction: 'Faction', government: 'Government', power: 'Power', capital: 'Capital', origin: 'Origin',
-    direct: 'Directly held by', current: 'Current overlord', districtOf: 'District', area: 'Area (km²)', density: 'Density 2126', summary: 'Summary', holder: 'Holder', unknownHolder: 'Holder not confirmed',
-    displayedFaction: 'Displayed faction', politicalNote: 'Political colour shows only the three central factions and neutral. It does not mean title ownership or vassalage.', members: 'Districts in this title',
-    lines: 'Lines', control: 'Control', controlledBy: 'Directly held by', stationsOf: 'Stations', endpoints: 'Between', viewState: 'View state',
-    regionsOfHolding: 'Districts', stationOfHolding: 'Station', directHolding: 'Direct holding', vassalHolding: 'Vassal holding', openPerson: 'Open person page',
+    kTitle: 'Land frame', kRegion: 'Selected dong', kState: 'Polity', kStation: 'Station', kSegment: 'Underground segment', kLandmark: 'Key site', kHolding: 'Personal holding',
+    ruler: 'Head', hegemon: 'Duchy holder', faction: 'Faction', government: 'How it is governed', power: 'Territory', capital: 'Seat', origin: 'Origin',
+    direct: 'Polity', current: 'Duchy holder', districtOf: 'District', area: 'Area (km²)', density: 'Density 2126', summary: 'Summary', holder: 'Holder', unknownHolder: 'Holder not confirmed',
+    displayedFaction: 'Polity shown', politicalNote: 'Political colour shows only the three polities and neutral. It does not show who holds a seat.', members: 'Dongs in this frame',
+    lines: 'Lines', control: 'Control', controlledBy: 'Polity', stationsOf: 'Stations', endpoints: 'Between', viewState: 'Open polity page',
+    regionsOfHolding: 'Dongs', stationOfHolding: 'Station', directHolding: 'Direct holding', vassalHolding: 'Retainer holding', openPerson: 'Open person page',
     count: (n) => `${n}`, attribution: 'Source',
   },
   ko: {
-    title: '서울 영토 지도', lead: '백작령을 최소 선택 단위로 표시합니다. 지리 관할과 실제 보유·봉속은 별개입니다.', epoch: '시점',
-    modeGroup: '지도 종류', political: '정치 지도', titles: '지리 작위', layerGroup: '영토 층', surface: '지상 영토', underground: '지하 영토',
-    rank: '지리 작위 등급', ranks: { county: '백작령', duchy: '공작령', kingdom: '왕국', empire: '제국' }, line: '노선 필터', allLines: '전체 노선',
-    holding: '개인 영지', noHolding: '영지 선택', showRail: '지하철 노선 표시', markers: '지도 표시', stations: '역', landmarks: '주요 시설',
+    title: '서울 영토 지도', lead: '동이 지도의 가장 작은 단위입니다. 색은 세 정체 가운데 누가 그 구를 쥐는지를 보여 줍니다. 옛 지역구, 구, 권역으로 된 땅 틀은 고정된 지리이며 누가 자리를 쥐는지와는 별개입니다.', epoch: '시점',
+    modeGroup: '지도 종류', political: '정치 지도', titles: '땅 틀', layerGroup: '영토 층', surface: '지상 영토', underground: '지하 영토',
+    rank: '땅 틀 층', ranks: { county: '옛 지역구', duchy: '구(공작령)', kingdom: '권역', empire: '서울' }, line: '노선 필터', allLines: '전체 노선',
+    holding: '개인 보유지', noHolding: '보유지 선택', showRail: '지하철 노선 표시', markers: '지도 표시', stations: '역', landmarks: '주요 시설',
     whole: '서울 전체 보기', zoomIn: '지도 확대', zoomOut: '지도 축소', zoomGroup: '확대·축소',
     mapLabel: '영토 지도. 끌어서 옮기고 스크롤이나 두 손가락으로 확대·축소합니다. 방향키로 이동, 더하기·빼기 키로 확대·축소, 0 키로 서울 전체를 봅니다.', detail: '선택 정보', close: '닫기', openDetail: '상세 보기', hideDetail: '상세 숨기기',
     legend: '서울 정치 권역 범례', neutral: '중립', unknown: '정치 관할 미확인', loading: '지도를 불러오는 중…', failed: '지도 자료를 불러오지 못했습니다.', retry: '다시 시도', loadingGeometry: '영토 경계를 불러오는 중…',
-    statesList: '단체(옛 국가)', states: '단체', undergroundLegend: '지하 구간 상태 범례', held: '실효 지배', vacant: '공백', unassigned: '미배정',
+    statesList: '정체', states: '정체', undergroundLegend: '지하 구간 상태 범례', held: '실효 지배', vacant: '공백', unassigned: '미배정',
     status: { held: '실효 지배', vacant: '공백', unassigned: '미배정', unassigned_: '미배정' },
-    kTitle: '지리 작위', kRegion: '선택된 지역', kState: '선택 국가', kStation: '서울 역 정보', kSegment: '지하 역 사이 구간', kLandmark: '주요 시설', kHolding: '개인 영지',
-    ruler: '수장', hegemon: '현재 종주 소속', faction: '세력', government: '정체', power: '국력', capital: '수도', origin: '기원',
-    direct: '직속 보유', current: '현재 상위', districtOf: '자치구', area: '면적(km²)', density: '2126년 밀도', summary: '요약', holder: '보유자', unknownHolder: '소유 미확인',
-    displayedFaction: '표시 권역', politicalNote: '정치 색은 서울 내부의 세 중심 세력과 중립만 표시하며 작위 보유·봉속을 뜻하지 않습니다.', members: '이 작위의 행정동',
-    lines: '노선', control: '지배', controlledBy: '직접 보유', stationsOf: '역', endpoints: '구간', viewState: '국가 보기',
-    regionsOfHolding: '행정동', stationOfHolding: '역', directHolding: '직속 영지', vassalHolding: '봉신 영지', openPerson: '인물 페이지 열기',
+    kTitle: '땅 틀', kRegion: '선택한 동', kState: '정체', kStation: '서울 역 정보', kSegment: '지하 역 사이 구간', kLandmark: '주요 시설', kHolding: '개인 보유지',
+    ruler: '수장', hegemon: '공작령 보유자', faction: '세력', government: '다스리는 법', power: '땅', capital: '자리', origin: '기원',
+    direct: '정체', current: '공작령 보유자', districtOf: '자치구', area: '면적(km²)', density: '2126년 밀도', summary: '요약', holder: '보유자', unknownHolder: '소유 미확인',
+    displayedFaction: '표시한 정체', politicalNote: '정치 색은 세 정체와 중립만 표시하며, 누가 자리를 쥐는지는 보여 주지 않습니다.', members: '이 땅 틀의 동',
+    lines: '노선', control: '지배', controlledBy: '정체', stationsOf: '역', endpoints: '구간', viewState: '정체 문서 보기',
+    regionsOfHolding: '행정동', stationOfHolding: '역', directHolding: '직접 보유', vassalHolding: '가신 보유', openPerson: '인물 페이지 열기',
     count: (n) => `${n}`, attribution: '출처',
   },
 };
@@ -88,7 +91,7 @@ export function buildMapData(rows, ctx) {
     for (const id of dongIds) { const r = regionById.get(id); if (!r) continue; const f = regionFaction(r); if (f) weight.set(f, (weight.get(f) ?? 0) + (rows.regions.find((x) => x.id === id)?.area_m2 ?? 0)); }
     const faction = [...weight.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0]?.[0] ?? null;
     const slots = JSON.parse(ko ? t.slots_ko : t.slots);
-    return { id: t.id, rank: t.rank, name: pick(t, 'name'), parent: t.parent_id, counties: countyIds, faction, districts: slots.map((s) => s.dongId) };
+    return { id: t.id, rank: t.rank, name: frameName(t.rank, pick(t, 'name')), parent: t.parent_id, counties: countyIds, faction, districts: slots.map((s) => s.dongId) };
   });
 
   const states = ctx.states.map((s) => {

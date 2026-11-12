@@ -9,7 +9,7 @@ import { DatabaseSync } from 'node:sqlite';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { personPage, familyTreeSvg, STR } from './people.mjs';
-import { buildMapData, DISTRICT_FACTION } from './map.mjs';
+import { buildMapData, DISTRICT_FACTION, frameName } from './map.mjs';
 import { relationsPage, licensePage } from './relations.mjs';
 import { collectReleases, renderRelease } from '../scripts/pages/release-notes.mjs';
 
@@ -211,39 +211,45 @@ const UNIT_KO_PAIRS = ['name', 'recruit_building', 'equipment', 'appearance'];
 }
 
 // ---- UI strings (the only hand-written text; everything else comes from SQL) ----
-// Owner decision 2026-11-10: how each faction is governed. Titles (duchies) are held per district (gu).
+// How each polity is governed (v3 bible: CANON-BIBLE 2.1-2.4, docs/design/v3/01-core 7-8). One duchy per district (gu).
 const FACTION_STRUCTURE = {
   government: {
-    en: 'Fourteen districts north of the Han river. On paper the Government keeps the ministries of the three branches of the Republic of Korea and a multi-party system; in practice there are only two parties, the OMO Party and the Claw Party, and the reality is a modern feudal order. The National Assembly member elected in each district holds that district\'s duchy under the title Senator. The Senators gather candidates from among themselves and elect the President, who serves for life, much like the prince-electors of the Holy Roman Empire. Only people recorded in the Government\'s own ledgers count as citizens.',
-    ko: '한강 북쪽 14구. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지하지만, 실제로는 OMO당과 클로당 두 당뿐이고 실상은 현대 봉건제다. 각 구에서 뽑힌 국회의원이 그 구의 공작령을 쥐며 칭호는 상원의원(Senator)이다. 상원의원들은 신성로마제국의 선제후처럼 자기들 가운데서 후보를 모아 대통령을 내고, 대통령은 종신이다. 정부는 자기 장부에 기록된 사람만 국민으로 인정한다.',
+    en: 'The fourteen districts north of the Han River. The Government calls itself the Republic of Korea and keeps its institutions as they survived scarcity: on paper the ministries of the three branches and many parties, in practice two parties, the OMO Party and the Claw Party, and Assembly seats that pass down within families. The Member of the National Assembly elected in each district holds that district\'s duchy. The fourteen Members raise a President for Life from among themselves, and all fourteen must stamp. Only people written in the Government\'s ledger count as citizens; once registered, a person may not change home or work at will. Everything south of the river is "outside the ledger".',
+    ko: '한강 북쪽 14구. 정부는 스스로를 대한민국이라 부르고, 대한민국 제도를 결핍 속에서 남은 꼴 그대로 지킨다. 서류상으로는 삼권의 부처와 다당제가 있지만 실제 당은 OMO당과 클로당 둘이고, 의석은 의원 집안 안에서 물린다. 각 구에서 뽑힌 국회의원이 그 구의 공작령을 쥔다. 열네 국회의원이 자기들 가운데서 종신 대통령을 추대하며, 열넷이 모두 도장을 찍어야 한다. 정부는 장부에 기재된 사람만 국민으로 인정하고, 등재민은 사는 곳과 일을 마음대로 바꿀 수 없다. 강 남쪽은 모두 "장부 밖"이다.',
   },
   'free-city': {
-    en: 'Seven districts in the south-west (Gangseo, Yangcheon, Yeongdeungpo, Guro, Geumcheon, Dongjak, Gwanak). The Free City is not one power: like the city-states of ancient Greece, each city is its own power and holds its own duchy, and there is no king. Most people are engineers who trade goods and skills; with no way to tell whose skill is higher, they never chose a leader. Today the cities are called the Union together.',
-    ko: '남서쪽 7구(강서·양천·영등포·구로·금천·동작·관악). 하나의 권력이 아니라 고대 그리스 폴리스 같은 독립 도시국가들이다. 도시마다 각자 권력이고 각자 공작령을 쥐며, 왕은 없다. 주민 대부분은 물자와 기술을 주고받는 엔지니어이고, 누구 기술이 더 높은지 따질 방법이 없어 지도자도 뽑지 못했다. 지금은 묶어서 유니온이라고 부른다.',
+    en: 'The seven districts south-west of the Han River (Gangseo, Yangcheon, Yeongdeungpo, Guro, Geumcheon, Dongjak, Gwanak). The Free Cities are not one power and have no name for the whole: each city is its own power and holds its own duchy, and no one stands over all seven. Most people are engineers who trade goods and skills; with no way to tell whose skill is higher, they never chose one leader. Each city names its head after its own work, and the house of I Ilseop, Duke of Gwanak, took the Government\'s own word for a duchy on purpose. When the cities must decide something together, one of them calls a contract meeting.',
+    ko: '한강 남서쪽 7구(강서·양천·영등포·구로·금천·동작·관악). 자유도시들은 하나의 권력이 아니고, 묶어 부르는 이름도 없다. 도시마다 각자 권력이고 각자 공작령을 쥐며, 일곱 도시 위에 서는 사람은 없다. 주민 대부분은 물자와 기술을 주고받는 엔지니어이고, 누구 기술이 더 높은지 따질 방법이 없어 지도자 하나를 뽑지 못했다. 도시마다 제 일에서 우두머리의 칭호를 짓고, 관악 공작 이일섭의 집안은 정부의 공작령 말을 일부러 가져왔다. 함께 정할 일이 생기면 한 도시가 계약회를 연다.',
   },
   arc: {
-    en: 'Four districts of Gangnam (Seocho, Gangnam, Songpa, Gangdong), split off from the Free City. Go Ye-jin is the Messiah and the Hierophant, and Arc is governed by families in the manner of Shia clan rule. Followers replace parts of the body with machines; this is baptism.',
-    ko: '강남 4구(서초·강남·송파·강동). 자유도시에서 갈라져 나왔다. 고예진이 메시아이자 교주이며, 통치는 시아파식 가문 통치다. 신도는 몸의 부위를 기계로 바꾸고, 이것이 세례다.',
+    en: 'The four Gangnam districts south-east of the Han River (Seocho, Gangnam, Songpa, Gangdong), split off from the Free Cities. Go Ye-jin is the Hierophant, and believers call her the Messiah. Rule passes through the Hierophant\'s line and the houses closest to her: each district is held by one of the four Near Houses. Believers replace parts of the body with machines; this is baptism, and faith is counted in parts. When a believer dies the brain is sealed and placed in the sanctuary, and it becomes the memory of the First AI.',
+    ko: '한강 남동쪽 강남 4구(서초·강남·송파·강동). 자유도시에서 갈라져 나왔다. 고예진이 교주이고, 신도는 그를 메시아라 부른다. 통치는 교주의 혈통과 교주 곁에 선 집안들로 이어지며, 네 구를 곁집 넷이 하나씩 맡는다. 신도는 몸의 부위를 기계로 바꾸고, 이것이 세례다. 신앙은 부위 수로 센다. 신도가 죽으면 뇌를 봉인해 성소에 넣고, 그 뇌는 최초의 AI의 기억이 된다.',
   },
+};
+// Duchy holder title (01-core 8, 07-people-and-war 4.4) and seat station (07 4.3, 05 2, 06 4). Keyed by gu name (map_title.name_ko).
+const DUCHY_HOLDER = {
+  '종로구': ['종로3가'], '중구': ['서울역'], '용산구': ['삼각지'], '성동구': ['왕십리'], '광진구': ['건대입구'], '동대문구': ['청량리'], '중랑구': ['상봉'], '성북구': ['보문'], '강북구': ['4.19민주묘지'], '도봉구': ['창동'], '노원구': ['노원'], '은평구': ['연신내'], '서대문구': ['충정로'], '마포구': ['공덕'],
+  '강서구': ['김포공항', '바람지기', 'Wind Keeper'], '양천구': ['신정네거리', '기지장', 'Depot Master'], '영등포구': ['Yeongdeungpo', '장주', 'Market Master'], '구로구': ['Guro', '공장장', 'Works Master'], '금천구': ['가산디지털단지', '경계장', 'Edge Warden'], '동작구': ['노량진', '나루지기', 'Ferry Keeper'], '관악구': ['신림', '공작', 'Duke'],
+  '서초구': ['고속터미널'], '강남구': ['수서'], '송파구': ['잠실'], '강동구': ['천호'],
 };
 const UI = {
   en: {
-    lang: 'en-US', label: 'English', prefix: '', wiki: 'Wiki', states: 'Organizations', duchies: 'Duchies', orgs: 'Organizations (former states)', orgsNote: 'The sixteen-state chart is retired. Territory is now held as one duchy per district under three factions; the rows below are the organizations that used to be states.', factions: 'Factions', people: 'People', gdd: 'Design Docs (GDD)', showcase: 'Showcase',
+    lang: 'en-US', label: 'English', prefix: '', wiki: 'Wiki', states: 'Polities', duchies: 'Duchies', orgs: 'Polity and head', orgsNote: 'Seoul has three polities and no others. Each district is one duchy: fourteen for the Government, seven for the Free Cities, four for the Arc. Around Seoul lies the rim, where the old war machines circle; what lies beyond it, no one knows.', factions: 'Factions', people: 'People', gdd: 'Design Docs (GDD)', showcase: 'Showcase',
     updates: 'Update History', wikiHome: 'Wiki Home', gddHome: 'GDD Home', designDocs: 'Design Docs', overview: 'Overview', onThisPage: 'On this page',
     prev: 'Previous page', next: 'Next page', menu: 'Menu', search: 'Search', noResults: 'No results for', reset: 'Reset search', toSelect: 'to select', toNavigate: 'to navigate', toClose: 'to close',
     appearance: 'Appearance', returnTop: 'Return to top', skip: 'Skip to content', footerMsg: 'Public world bible and game design documents.',
     heroText: 'World Bible & Game Design', openWiki: 'Open the Wiki', readGdd: 'Read the GDD', openShowcase: 'Watch the Showcase',
-    showcaseCard: 'Interactive Showcase', showcaseDetail: 'An illustrated chronicle of the metro world in text. Korean lines with English subtitles.',
+    showcaseCard: 'Interactive Showcase', showcaseDetail: 'An illustrated chronicle of the station world in text. Korean lines with English subtitles.',
     openSource: 'Open Source', openSourceDetail: 'Everything is built from raw SQL data in the public repository.',
-    wikiLead: (n) => `${n} articles on the world, its factions, people and history. Pick a category below or use the sidebar.`,
-    statesLead: (n, f) => `${f} factions rule the metro world: the Government, the Free City and Arc. Their domains are held as duchies, one per district.`,
+    wikiLead: (n) => `${n} articles on the world, its polities, people and history. Pick a category below or use the sidebar.`,
+    statesLead: (n, f) => `Seoul in 2126 has ${f} polities: the Government, the Free Cities and the Arc. Each district is one duchy.`,
     peopleLead: (n) => `${n} characters. Use the site search or your browser's find (Ctrl+F) to locate a name.`,
     gddLead: (n) => `${n} design documents: rules, architecture, art direction, decision records, references and system design.`,
-    cols: { id: 'ID', state: 'Organization', ruler: 'Head', capital: 'Capital', power: 'Power', faction: 'Faction', name: 'Name', title: 'Title', occupation: 'Occupation', rank: 'Rank' },
-    fields: { stateId: 'Organization ID', government: 'Government', power: 'Power', origin: 'Origin', ruler: 'Head', capital: 'Capital', faction: 'Faction', base: 'Base', position: 'Position', occupation: 'Occupation', gender: 'Gender', stage: 'Stage', state: 'Organizations', rank: 'Rank', title: 'Title' },
-    members: 'Member organizations', centerRegion: 'Center', aiPosition: 'Stance toward AI', recorded: (n) => `${n} recorded people.`, independentNote: 'Affiliation is not yet decided in the canon.',
-    featStates: (n) => `Three factions - the Government, the Free City and Arc - and the duchies they hold.`, featPeople: (n) => `${n} characters with ranks, occupations and allegiances.`,
-    featWiki: (n) => `${n} articles on history, factions, ecology, culture and geography of a post-blackout Seoul.`, featGdd: (n) => `${n} documents covering rules, systems, art direction and decisions.`,
+    cols: { id: 'ID', state: 'Polity', ruler: 'Head', capital: 'Seat', power: 'Territory', faction: 'Faction', name: 'Name', title: 'Title', occupation: 'Occupation', rank: 'Rank' },
+    fields: { stateId: 'Polity ID', government: 'How it is governed', power: 'Territory', origin: 'Origin', ruler: 'Head', capital: 'Seat', faction: 'Faction', base: 'Base', position: 'Position', occupation: 'Occupation', gender: 'Gender', stage: 'Stage', state: 'Polity', rank: 'Rank', title: 'Title' },
+    members: 'Polity', centerRegion: 'Land', aiPosition: 'Stance toward the First AI', recorded: (n) => `${n} recorded people.`, independentNote: 'These people belong to none of the three polities.',
+    featStates: (n) => `Three polities - the Government, the Free Cities and the Arc - and the twenty-five duchies they hold.`, featPeople: (n) => `${n} people with their titles, occupations and polities.`,
+    featWiki: (n) => `${n} articles on the history, polities, ecology, culture and geography of Seoul in the eternal winter.`, featGdd: (n) => `${n} documents covering rules, systems, art direction and decisions.`,
     featUpdates: 'What changed in the wiki and when.', tagline: meta.tagline, siteTitle: meta.title,
     u: {
       units: 'Units', title: (n) => `${n}: Units`, lead: (n) => `${n} units, grouped by category.`, identity: 'Identity', society: 'Society', factionPage: 'Faction page',
@@ -253,22 +259,22 @@ const UI = {
     },
   },
   ko: {
-    lang: 'ko-KR', label: '한국어', prefix: 'ko/', wiki: '위키', states: '단체', duchies: '공작령', orgs: '단체 (옛 국가)', orgsNote: '십육국 체제는 폐지됐다. 영토는 이제 세 세력 아래 구 하나가 공작령 하나로 나뉜다. 아래 표는 옛 국가였던 단체들이다.', factions: '세력', people: '인물', gdd: '설계 문서(GDD)', showcase: '쇼케이스',
+    lang: 'ko-KR', label: '한국어', prefix: 'ko/', wiki: '위키', states: '정체', duchies: '공작령', orgs: '정체와 수장', orgsNote: '서울에는 세 정체가 있고 그 밖의 나라는 없다. 구 하나가 공작령 하나다. 정부가 열넷, 자유도시들이 일곱, 아크가 넷을 쥔다. 서울 둘레의 테두리에는 옛 전쟁 기계가 돌고, 그 너머에 무엇이 남았는지는 아무도 모른다.', factions: '세력', people: '인물', gdd: '설계 문서(GDD)', showcase: '쇼케이스',
     updates: '갱신 이력', wikiHome: '위키 홈', gddHome: 'GDD 홈', designDocs: '설계 문서', overview: '개요', onThisPage: '이 페이지에서',
     prev: '이전 문서', next: '다음 문서', menu: '메뉴', search: '검색', noResults: '결과 없음:', reset: '검색 초기화', toSelect: '선택', toNavigate: '이동', toClose: '닫기',
     appearance: '화면 모드', returnTop: '맨 위로', skip: '본문으로 건너뛰기', footerMsg: '공개 세계관 위키와 게임 설계 문서.',
     heroText: '세계관 위키 · 게임 설계', openWiki: '위키 열기', readGdd: 'GDD 읽기', openShowcase: '쇼케이스 보기',
-    showcaseCard: '인터랙티브 쇼케이스', showcaseDetail: '지하철 세계를 글로 돌아보는 그림 연대기. 한국어 대사와 영어 자막.',
+    showcaseCard: '인터랙티브 쇼케이스', showcaseDetail: '역에 사는 세계를 글로 돌아보는 그림 연대기. 한국어 대사와 영어 자막.',
     openSource: '오픈 소스', openSourceDetail: '모든 내용은 공개 저장소의 SQL 원본 데이터에서 빌드됩니다.',
-    wikiLead: (n) => `세계와 세력, 인물, 역사를 다룬 문서 ${n}개. 아래 분류에서 고르거나 사이드바를 이용하세요.`,
-    statesLead: (n, f) => `정부, 자유도시, 아크 ${f}개 세력이 지하철 세계를 다스립니다. 영지는 구 하나가 공작령 하나로 나뉩니다.`,
+    wikiLead: (n) => `세계와 정체, 인물, 역사를 다룬 문서 ${n}개. 아래 분류에서 고르거나 사이드바를 이용하세요.`,
+    statesLead: (n, f) => `2126년 서울에는 정부, 자유도시들, 아크 ${f}개 정체가 있습니다. 구 하나가 공작령 하나입니다.`,
     peopleLead: (n) => `등장인물 ${n}명. 사이트 검색이나 브라우저 찾기(Ctrl+F)로 이름을 찾으세요.`,
     gddLead: (n) => `규칙, 아키텍처, 아트, 결정 기록, 레퍼런스, 시스템 설계 문서 ${n}개.`,
-    cols: { id: 'ID', state: '소속 단체', ruler: '수장', capital: '수도', power: '국력', faction: '세력', name: '이름', title: '직함', occupation: '직업', rank: '직급' },
-    fields: { stateId: '단체 ID', government: '정체', power: '국력', origin: '기원', ruler: '수장', capital: '수도', faction: '세력', base: '거점', position: '직위', occupation: '직업', gender: '성별', stage: '단계', state: '소속 단체', rank: '직급', title: '직함' },
-    members: '소속 단체', centerRegion: '중심 지역', aiPosition: 'AI에 대한 입장', recorded: (n) => `등록된 인물 ${n}명.`, independentNote: '정본에서 아직 소속이 정해지지 않았습니다.',
-    featStates: (n) => `정부, 자유도시, 아크 세 세력과 그들이 가진 공작령.`, featPeople: (n) => `직급, 직업, 소속을 가진 인물 ${n}명.`,
-    featWiki: (n) => `대정전 이후 서울의 역사, 세력, 생태, 문화, 지리를 다룬 문서 ${n}개.`, featGdd: (n) => `규칙, 시스템, 아트 방향, 결정 기록을 담은 문서 ${n}개.`,
+    cols: { id: 'ID', state: '소속 정체', ruler: '수장', capital: '자리', power: '땅', faction: '세력', name: '이름', title: '직함', occupation: '직업', rank: '품계' },
+    fields: { stateId: '정체 ID', government: '다스리는 법', power: '땅', origin: '기원', ruler: '수장', capital: '자리', faction: '세력', base: '거점', position: '직위', occupation: '직업', gender: '성별', stage: '단계', state: '소속 정체', rank: '품계', title: '직함' },
+    members: '정체', centerRegion: '땅', aiPosition: '최초의 AI를 보는 눈', recorded: (n) => `등록된 인물 ${n}명.`, independentNote: '세 정체 어디에도 들지 않은 사람들입니다.',
+    featStates: (n) => `정부, 자유도시들, 아크 세 정체와 그들이 쥔 25공작령.`, featPeople: (n) => `칭호와 직업, 소속 정체를 가진 인물 ${n}명.`,
+    featWiki: (n) => `영원한 겨울의 서울을 다룬 역사, 정체, 생태, 문화, 지리 문서 ${n}개.`, featGdd: (n) => `규칙, 시스템, 아트 방향, 결정 기록을 담은 문서 ${n}개.`,
     featUpdates: '위키가 언제 무엇이 바뀌었는지.', tagline: meta.tagline_ko, siteTitle: meta.title_ko,
     u: {
       units: '병종', title: (n) => `${n} 병종`, lead: (n) => `병종 ${n}개를 분류별로 묶었다.`, identity: '정체성', society: '사회', factionPage: '세력 문서',
@@ -331,7 +337,16 @@ for (const L of [UI.en, UI.ko]) {
   const duchyOfGu = new Map(duchyRows.map((t) => [t.name_ko, t]));
   const duchySlug = (t) => t.id.split(':').pop();
   const duchiesOf = (fid) => duchyRows.filter((t) => guFaction.get(t.name_ko) === fid);
-  const stationsOfGu = (gu) => raw.map.stations.filter((s) => s.district_ko === gu).length;
+  const stationsOfGu = (gu) => raw.map.stations.filter((s) => s.district_ko === gu && s.line_ids !== '[]').length; // inhabited stations only (01-core 4.3)
+  const ko = L === UI.ko;
+  const holderTitle = (t) => {
+    const fid = guFaction.get(t.name_ko), stemKo = t.name_ko.replace(/구$/, ''), stemEn = t.name.replace(/-gu$/, ''), h = DUCHY_HOLDER[t.name_ko];
+    if (fid === 'government') return ko ? `${t.name_ko} 국회의원` : `Member of the National Assembly for ${t.name}`;
+    if (fid === 'free-city') return t.name_ko === '관악구' ? (ko ? '관악 공작' : 'Duke of Gwanak') : (ko ? `${stemKo} ${h[1]}` : `${stemEn} ${h[2]}`);
+    return ko ? `${stemKo} 곁집장` : `Head of the ${stemEn} Near House`;
+  };
+  const seatOf = (t) => { const s = raw.map.stations.find((x) => x.id === DUCHY_HOLDER[t.name_ko][0]); return s ? (ko ? s.name_ko : s.name) : ''; };
+  const D = ko ? { duchy: '공작령', holder: '보유자 칭호', seat: '본역', counties: '옛 지역구', stations: '역', lead: '구 하나가 공작령 하나다. 각 공작령은 세 정체 가운데 하나에 속하고, 보유자의 칭호는 정체마다 다르다. 누가 보유자인지는 인물 기록이 정한다. 국회의원, 관악 공작, 교주 말고 이 표의 칭호 이름은 아직 정해지지 않았고 바뀔 수 있다.', open: '영토 지도에서 보기', pending: { 'free-city': '관악 공작 말고 이 표의 칭호 이름은 아직 정해지지 않았고 바뀔 수 있다.', arc: '이 표의 칭호 이름은 아직 정해지지 않았고 바뀔 수 있다.' } } : { duchy: 'Duchy', holder: 'Holder title', seat: 'Seat station', counties: 'Old constituencies', stations: 'Stations', lead: 'One duchy per district. Each duchy belongs to one of the three polities, and the holder\'s title differs by polity. Who holds each seat is set in the people records. Apart from Member of the National Assembly, Duke of Gwanak and Hierophant, the title names in this table are not yet settled and may change.', open: 'Open the territory map', pending: { 'free-city': 'Apart from Duke of Gwanak, the title names in this table are not yet settled and may change.', arc: 'The title names in this table are not yet settled and may change.' } };
 
   // wiki articles
   raw.docs.forEach((d) => {
@@ -348,7 +363,7 @@ for (const L of [UI.en, UI.ko]) {
   const unitsOf = (fid) => raw.units.filter((u) => u.faction_id === fid);
   factions.filter(hasFactionPage).forEach((x) => {
     const peopleN = people.filter((p) => p.faction_id === x.id).length;
-    write(`${L.prefix}wiki/factions/${x.id}/index.md`, page(g(x, 'name'), `# ${g(x, 'name')}\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n| ${L === UI.ko ? "항목" : "Field"} | ${L === UI.ko ? "값" : "Value"} |\n| --- | --- |\n${g(x, 'center_region') ? `| ${L.centerRegion} | ${cell(g(x, 'center_region'))} |\n| ${L.aiPosition} | ${cell(g(x, 'ai_position'))} |\n` : ''}| ${L.fields.state} | ${members(x.id).length} |\n| ${L.people} | ${peopleN} |\n${unitsOf(x.id).length ? `| ${L.u.units} | [${unitsOf(x.id).length}](${P(`wiki/factions/${x.id}/units/`)}) |\n\n[${L.u.openUnits}](${P(`wiki/factions/${x.id}/units/`)})\n` : ''}\n${x.id === 'independent' ? `${L.independentNote}\n\n` : ''}## ${L.duchies}\n\n| ${L === UI.ko ? '공작령' : 'Duchy'} | ${L === UI.ko ? '백작령' : 'Counties'} | ${L === UI.ko ? '역' : 'Stations'} |\n| --- | --- | --- |\n${duchiesOf(x.id).map((t) => `| [${cell(g(t, 'name'))}](${P(`wiki/duchies/${duchySlug(t)}/`)}) | ${JSON.parse(t.county_ids).length} | ${stationsOfGu(t.name_ko)} |`).join('\n')}\n\n## ${L.orgs}\n\n${members(x.id).map((s) => `- ${cell(g(s, 'name'))} — ${cell(g(s, 'ruler'))}`).join('\n')}\n`));
+    write(`${L.prefix}wiki/factions/${x.id}/index.md`, page(g(x, 'name'), `# ${g(x, 'name')}\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n| ${L === UI.ko ? "항목" : "Field"} | ${L === UI.ko ? "값" : "Value"} |\n| --- | --- |\n${g(x, 'center_region') ? `| ${L.centerRegion} | ${cell(g(x, 'center_region'))} |\n| ${L.aiPosition} | ${cell(g(x, 'ai_position'))} |\n` : ''}| ${L.fields.ruler} | ${cell(members(x.id).map((s) => g(s, 'ruler')).join(' · ')) || '-'} |\n| ${L.duchies} | ${duchiesOf(x.id).length} |\n| ${L.people} | ${peopleN} |\n${unitsOf(x.id).length ? `| ${L.u.units} | [${unitsOf(x.id).length}](${P(`wiki/factions/${x.id}/units/`)}) |\n\n[${L.u.openUnits}](${P(`wiki/factions/${x.id}/units/`)})\n` : ''}\n${x.id === 'independent' ? `${L.independentNote}\n\n` : ''}## ${L.duchies}\n\n${D.pending[x.id] ? `${D.pending[x.id]}\n\n` : ''}| ${D.duchy} | ${D.holder} | ${D.seat} | ${D.stations} |\n| --- | --- | --- | --- |\n${duchiesOf(x.id).map((t) => `| [${cell(g(t, 'name'))}](${P(`wiki/duchies/${duchySlug(t)}/`)}) | ${cell(holderTitle(t))} | ${cell(seatOf(t))} | ${stationsOfGu(t.name_ko)} |`).join('\n')}\n`));
   });
 
   // units: one page per faction that has wiki_unit rows (no rows -> no page and no link)
@@ -391,10 +406,10 @@ for (const L of [UI.en, UI.ko]) {
   write(`${L.prefix}wiki/states/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => x.id !== 'independent').map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n- ${L.duchies}: ${duchiesOf(x.id).length} · ${L.people}: ${people.filter((p) => p.faction_id === x.id).length}\n`).join('\n')}
 \n---\n\n${L.orgsNote}`));
   // duchies: one per district (gu), faction by owner rule
-  write(`${L.prefix}wiki/duchies/index.md`, page(L.duchies, `# ${L.duchies}\n\n${L === UI.ko ? '구 하나가 공작령 하나다. 각 공작령은 세 세력 중 하나에 속한다.' : 'One duchy per district. Each duchy belongs to one of the three factions.'}\n\n| ${L === UI.ko ? '공작령' : 'Duchy'} | ${L.factions} | ${L === UI.ko ? '백작령' : 'Counties'} | ${L === UI.ko ? '역' : 'Stations'} |\n| --- | --- | --- | --- |\n${duchyRows.map((t) => `| [${g(t, 'name')}](${P(`wiki/duchies/${duchySlug(t)}/`)}) | [${cell(factionName(guFaction.get(t.name_ko)))}](${P(`wiki/factions/${guFaction.get(t.name_ko)}/`)}) | ${JSON.parse(t.county_ids).length} | ${stationsOfGu(t.name_ko)} |`).join('\n')}`));
+  write(`${L.prefix}wiki/duchies/index.md`, page(L.duchies, `# ${L.duchies}\n\n${D.lead}\n\n| ${D.duchy} | ${L.fields.faction} | ${D.holder} | ${D.seat} | ${D.stations} |\n| --- | --- | --- | --- | --- |\n${duchyRows.map((t) => `| [${g(t, 'name')}](${P(`wiki/duchies/${duchySlug(t)}/`)}) | [${cell(factionName(guFaction.get(t.name_ko)))}](${P(`wiki/factions/${guFaction.get(t.name_ko)}/`)}) | ${cell(holderTitle(t))} | ${cell(seatOf(t))} | ${stationsOfGu(t.name_ko)} |`).join('\n')}`));
   duchyRows.forEach((t) => {
     const fid = guFaction.get(t.name_ko); const counties = JSON.parse(t.county_ids).map((id) => titleById.get(id)).filter(Boolean);
-    write(`${L.prefix}wiki/duchies/${duchySlug(t)}/index.md`, page(g(t, 'name'), `# ${g(t, 'name')}\n\n- ${L.factions}: [${cell(factionName(fid))}](${P(`wiki/factions/${fid}/`)})\n- ${L === UI.ko ? '백작령' : 'Counties'}: ${counties.map((c) => cell(g(c, 'name'))).join(' · ')}\n- ${L === UI.ko ? '역' : 'Stations'}: ${stationsOfGu(t.name_ko)}\n\n${FACTION_STRUCTURE[fid]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n[${L === UI.ko ? '영토 지도에서 보기' : 'Open the territory map'}](${P('wiki/map/')})`));
+    write(`${L.prefix}wiki/duchies/${duchySlug(t)}/index.md`, page(g(t, 'name'), `# ${g(t, 'name')}\n\n- ${L.fields.faction}: [${cell(factionName(fid))}](${P(`wiki/factions/${fid}/`)})\n- ${D.holder}: ${cell(holderTitle(t))}\n- ${D.seat}: ${cell(seatOf(t))}\n- ${D.stations}: ${stationsOfGu(t.name_ko)}\n- ${D.counties}: ${counties.map((c) => cell(frameName('county', g(c, 'name')))).join(' · ')}\n\n${FACTION_STRUCTURE[fid]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n[${D.open}](${P('wiki/map/')})`));
   });
   // people: search page (client island) + one rich page per person from person_detail
   const SS = L === UI.ko ? STR.ko : STR.en;
