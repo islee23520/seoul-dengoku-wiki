@@ -1,72 +1,78 @@
 ---
-model: original drafts by cpa/claude-opus-5-5; rework by cpa/glm-5.3; 0 completion calls in both rounds; agent-authored text with scripted edits; not from a Gemini model
+title: People and Machines
+title_ko: 사람과 기체
+model: claude-opus; rewritten by hand by the task 8 executor agent; 0 completion calls
 section_checkpoint: complete
 ---
 
-**A. How people and machines are placed**
+In Seoul in 2126, it's people who hold the stations. They live in the concourses at Yeongdeungpo, Seoul Station and Amsa, stand watch at the sluices and queue at the ration windows. Beside them are machines that have stopped, machines that still repeat their last task, and animals that follow the rations, the heat and the wetlands. Modern and future weapons, humanoids and machines are still here, but they're scarce. This page sets out how people, machines and animals share the stations.
 
-In the Seoul of 2126, the ones who build polities are people. They live in the concourses of Yeongdeungpo, Seoul Station, and Amsa, stand sluice watch, and line up at the ration windows. In the same living spheres there are stopped machines and machines that repeat their last task, and raptors, feral dogs, and rat swarms follow the rations, the heat, and the wetlands. Modern and future weapons, humanoids, and machines remain, but they are scarce. After the night of the Great Blackout, people, machines, and animals settled inside the stations as follows.
-
-While the Great Blackout cut communications, designated facility officers used on-site authority. Yeongdeungpo waterworks staff operated the valves by hand.
+When the Great Blackout cut communications, the people on duty at each designated facility took charge on the spot. At the Yeongdeungpo water purification centre, the duty staff turned the valves by hand.
 
 ## People
 
-**A. Watch duty and livelihood**
+### Duty and Work
 
-On the night of the Great Blackout, Yeongdeungpo waterworks officer Han Jeonghun started a paper operations log after remote control failed. Later, forty-five volumes of the waterworks center's operations logs, including forty-one of Han's, were moved to the underground stacks of Yangpyeong Station.
+On the night of the Great Blackout, Han Jeong-hun, the duty head at the Yeongdeungpo purification centre, lost remote control and started a new paper operating log. His logs, with the rest of the centre's, were later moved to a store beneath Yangpyeong station.
 
-The Government required a Government Seoul Complex stamp from Gwanghwamun on Jongno and Jung-gu passes. Commercial contracts in Jongno and Jung-gu needed that stamp to be registered with the Records Bureau.
+North of the river, the Government stamps the passes for Jongno and Jung-gu at the old government complex in Gwanghwamun, and trade contracts there are entered in the records only with that stamp.
 
-When the water was cut, labor folded first. Even when food ran short, the next day's hands slowed, and without medicine the act of treatment itself did not open. The way the illnesses of people and of the tanks overlapped at one window was covered by [Ailments and Symptoms](/wiki/Ailments/).
+Work stops first in a station that has lost its water. When food runs short, the next day's work slows. When medicine runs out, treatment can't begin. Cases where sickness in people and in the fish tanks reaches the same window are in [Ailments and Symptoms](/wiki/Ailments/).
+
+### People With Machine Parts
+
+Some people carry machines in their own bodies: a hand, an eye, a leg, or more. Whether someone can get a part, and keep it working, depends on the Government's registry, the Free City's guild surgeons and markets, or the Arc's baptism. Those rules, and what the parts cost the people who carry them, are in [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/).
 
 ## The Remnants of Logistics Humanoids
 
-**A. The 2026 field trials**
+### Field Trials in 2026
 
-The robot density of Korean manufacturing in 2026 was recorded as 1,012 units per 10,000 workers, and the model field humanoid was Boston Dynamics' Atlas. Material transport with minimal supervision and trials on Hyundai Motor sites were that year's starting point ([Atlas](https://www.bostondynamics.com/atlas), accessed 2026-09-17; [IFR 2024-11-20](https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years), accessed 2026-09-17). After the calls were cut, there was no foundry to lay the same line anew.
+In 2026 Korean manufacturing had 1,012 robots for every 10,000 workers. The model for humanoids on the shop floor was Boston Dynamics' Atlas, moving materials with little supervision in field trials at Hyundai ([Atlas](https://www.bostondynamics.com/atlas), read 2026-09-17; [IFR 2024-11-20](https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years), read 2026-09-17). Once the calling networks went down, there was no foundry to build that line again.
 
-The bodies that remained at the opening fell into two kinds: remnants standing with frozen joints at their charging terminals, and remnants repeating only their last transport order. The maintenance sheds of the Guro complex blocks and the Cheonwang depot side, and the sealed cells of the Magok test section, were often named as their places. Mechanics swapped hoses, terminals, and lenses to make pumps and watch stoves, but they could not repair the neural-network weights as a whole. The range of knowing, holding, repairing, and manufacturing is in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+The machines left in 2126 fall into two kinds: those that stopped at their charging terminals and those that still repeat their last carrying order. They sit in the Guro factory blocks, the Cheonwang depot workshops and the sealed bays of the Magok test track. Technicians replace hoses, terminals and lenses and turn them into pumps and duty stoves. They can't repair a whole neural network. What can be known, held, repaired and made is set out in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
-After the Great Blackout cut machines off from the upper control network, they repeated their last assigned search and guard tasks. Outside Seoul, the war machines used in the Great Blackout still roam, carrying out the last orders they received.
+After the Blackout, machines cut off from the networks above them kept repeating the last search and watch tasks they'd been given. Outside Seoul, the war machines used during the Great Blackout still roam, carrying out the last orders they received.
 
-At the opening, I Yeon is a biological synthetic humanoid in Jo Jaepyo's company. The H01-H16 register instead records mechanical humanoids under house custody. Neither the kind of body alone grants nor denies personhood or citizenship. Each individual is assessed for expressed will, continuity of memory, and capacity to consent. A custody record can document maintenance and responsibility, but its transfer clause cannot govern someone recognized as a person. I Yeon records her own courier judgment under her name and refuses an order that would sacrifice civilians. No such individual determination is recorded for the H01-H16 actors.
+At the opening, Iyeon travels with Jo Jaepyo's group. Iyeon is a biological synthetic humanoid. The H01 to H16 ledger separately lists mechanical humanoids kept by the houses. Personhood and citizenship aren't granted or refused wholesale by whether something is flesh or machine. People look at each case: whether it expresses its own will, whether its memory carries on, whether it can consent. The custody record stays as the basis for upkeep and responsibility, but a transfer clause can't be applied to someone recognised as a person. Iyeon signs its own messenger judgements and refuses orders to sacrifice civilians. The personas of the H01 to H16 ledger are described in [Synthetic Social Personas](/wiki/Synthetic-Actors/).
 
 ## Repeating Machines
 
-**A. Surviving disaster-response machines**
+### Disaster-Response Machines
 
-There were bodies that overlapped with the logistics humanoids but did not stand in the same line. They were machines that pre-collapse disaster agencies had meant to use for search, reinforcement, and pipe inspection, and when the upper control network fell away, they continued the search, guard, and transport routines they had last received, subject to their stored charge and access to charging terminals. Small swarms that glowed like lanterns, heavy machines that pushed rubble with hydraulics, and flat underwater shells were those three lines.
+Disaster-response machines come from a different lineage from the logistics humanoids. Before the collapse, disaster agencies meant to use them for search, shoring and duct inspection, but the networks above them went silent. Their last search, watch and carrying routines still run. There are three kinds: small glowing swarms, heavy machines that push rubble with hydraulics, and flat machines that work underwater.
 
-The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment with attached sluices such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust a protocol card forward, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+A machine restarts on voltage, water level or an authorising signal. They sit in stations next to the depots at Sinjeong, Gunja and Godeok, in purification plants near the sluices at Yeongdeungpo, Ttukseom and Amsa, and in deep tunnel galleries. A scout who shows a protocol card can stop one line, one trigger point or one bundle of orders for a while. It gives no power over any other facility. The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
-Capacitor modules only used the charge already stored and could not replace generators; cells aged, and without charging terminals the repetition broke off too. A workshop repairing hydraulics did not make it look as if the fabs had returned.
+A battery module only releases charge already stored. It can't replace a generator. When the cells age and the machine can't reach a charging terminal, its repeating stops too, and in the cold that happens sooner. Fixing a hydraulic cylinder in a workshop doesn't bring the old production lines back.
 
 ## Raptors, Feral Dogs, and Rat Swarms
 
-**A. Rations and wild animals**
+### Rations and Wild Animals
 
-The more stable human rations became, the more animal density followed those windows. At dusk, flocks of crows settled on the transmission towers of Sangam and Nanji, the cables of the Han bridges, and the Yongsan catenary, while the waste heat of factory roofs and the sparks of overhead lines drew insects. People called them the Large-billed Crow, but the flock did not read the content of the radio waves; it learned only the order of sparks, work noise, and food. In the spring breeding season, the bridges, school passages, and the tops of evacuation stairs became circles of diving attacks. The index was the Large-billed Crow in the [Bestiary of Ecology and Variants](/wiki/Hostile-Ecology-Index/), and the field page was [G02](/wiki/Hostile-Group-G02/).
+The steadier the rations, the more the animals crowd around the ration windows. At dusk, flocks of crows settle on the transmission towers at Sangam and Nanji, the cables of the Han River bridges and the overhead lines at Yongsan. Waste heat from factory roofs and sparks from the lines draw insects. People call them large-billed crows. The flocks don't decode radio. They learn only the order of sparks, work noise and food. In the breeding season, bridges, school passages and the stairs above shelters become the start of diving attacks. See the large-billed crow entry in the [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/) and the field notes in [G02](/wiki/Hostile-Group-G02/).
 
-Feral dogs formed families along the walls of the Magok laboratories, in closed security passages, and on weedy lots, and at night they went down as far as the Noryangjin fish docks. Their rusted collar rings made a clinking of iron, so they were named the Feral Dog. They were closer to the result of the habits of 2026, when private shelters closed their doors and construction-site guard dogs lost their people in the evacuation columns, clinging for a century to dock leftovers and the sound of ration-cart wheels. The leader was not fixed. The coexisting kind that walked beside the ration carts was a learning of the same pack. [G03](/wiki/Hostile-Group-G03/).
+Feral dogs form families along the walls of the Magok laboratories, closed guard passages and weedy lots. At night they go down as far as the Noryangjin fish docks. Rusted collar rings clink as they walk. In 2026 private shelters closed and construction guard dogs lost their people in the evacuation lines. Since then the dogs have followed the dock leftovers and the sound of feeding carts. No leader holds for long. Some packs walk beside the carts. Field notes are in [G03](/wiki/Hostile-Group-G03/).
 
-Rats made states at the transfers. Where crumbs and the heat of insulated pipes overlapped at the junctions where the Gangdong-Amsa ration passages met the Eunpyeong-Seongbuk evacuation stairs, two or three core nests formed under the cable trays. There is no record that the colonies host any special plague. They were only a density of food, warmth, and shelter. When their droppings damaged wire insulation, the guidance displays went dark, and in the dark passages people thought of contagion first. [G05](/wiki/Hostile-Group-G05/).
+Rats make colonies under the cable trays of the transfer passages. Where the Gangdong and Amsa ration passages meet the Eunpyeong and Seongbuk shelter stairs, there are crumbs and heat from insulated pipes, and two or three core nests form beneath. Nothing records these colonies as hosts of any special plague. When droppings eat into cable insulation, the guide lights go out, and people suspect contagion in the dark passage. Field notes are in [G05](/wiki/Hostile-Group-G05/).
 
-On the wetlands of the Han, Nanji, and Amsa and the drainage ponds of the Changdong depot, waterfowl and waders settled first, and when the food rose, raptors followed onto the wires. When the sluices were lowered unilaterally, the flocks shot up over the depot tracks and blocked the train movements. The stopovers of the Han and the depot ponds existed in 2026 as well. [G06](/wiki/Hostile-Group-G06/).
+Water birds and waders land first on the Han, Nanji and Amsa wetlands and the drainage ponds of the Changdong depot. When food grows, raptors come to the lines. Lowering a sluice gate without warning sends the flocks up over the yard tracks and blocks trains coming in and out. Field notes are in [G06](/wiki/Hostile-Group-G06/).
 
-Sweeping up the swarms with firearms was left as a last resort. Sealing, ration detours, and the collection of leftovers were closer to what guarded the human windows. Why the stations, tunnels, and depots were the skeleton of those windows was connected by [The Structures Compendium](/wiki/Structures/).
+Clearing an animal colony with guns is a last resort, and rounds are too scarce to spend that way. Sealing living areas, rerouting feeding paths and collecting leftovers are the main ways people protect the ration windows. Why stations, tunnels and depots carry that defence is explained in [The Structures Compendium](/wiki/Structures/).
 
-| Layer | 2026 starting point | What remained at the 2126 opening |
+| Layer | Starting point in 2026 | What remains at the 2126 opening |
 |---|---|---|
-| People | Subway living spheres, military registers, trade sites | The three factions of station strongholds, paper registers, the seven trades |
-| Logistics humanoids | Atlas-class field trials, factory density at the front of the world | Stopped remnants and repeated transport, dismantled modules |
-| Disaster machines | Search, guard, and transport routines tied to the call network | Search and guard routines in sealed galleries stop when batteries fail or charging is lost. [Lost Technology](/wiki/Lost-Technology-Lineage/) |
-| Raptors, feral dogs, rats | Han River birds, abandoned dogs, station rats | Colonies on the towers, the docks, and the transfer trays |
+| People | Subway districts, service rolls, workplaces | The three factions in their stations, paper ledgers, inherited trades |
+| People with machine parts | Medical prostheses and implants | Scarce parts reached through registry, market or baptism. [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/) |
+| Logistics humanoids | Atlas-type field trials; factories among the densest in the world | Stopped remnants, repeated carrying, salvaged modules |
+| Disaster-response machines | Search, watch and carrying routines tied to calling networks | Repeating in sealed galleries until the battery fails or charging stops. [Lost Technology](/wiki/Lost-Technology-Lineage/) |
+| Raptors, dogs, rats | Han River birds, abandoned dogs, station rats | Colonies on towers, docks and transfer trays |
 
-## Sources
+## Related Pages
 
 - [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/)
 - [Scenario Timeline](/wiki/Scenario-Timeline/)
 - [The Three Factions of Seoul](/wiki/Sixteen-States/)
 - [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
+- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/)
 - [The Great Blackout](/wiki/World-Unbinding/)
 - [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/)

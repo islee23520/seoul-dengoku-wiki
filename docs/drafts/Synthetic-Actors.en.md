@@ -1,12 +1,24 @@
 ---
-model: original drafts by cpa/claude-opus-5-5; rework by cpa/glm-5.3; 0 completion calls in both rounds; agent-authored text with scripted edits; not from a Gemini model
+title: Synthetic Social Personas
+title_ko: 합성 사회 인격
+model: claude-opus; task 8 executor agent added the opening sections and corrected headings, particles and relation labels by script; 0 completion calls
 section_checkpoint: complete
 ---
 <a id="Synthetic-Actors-heading-0001"></a>
 
+Seoul still has machines that think. They aren't the First AI and they don't speak for it. They're working personas left in humanoid frames, facility racks and vehicles, kept running by the houses and technicians who depend on them. This ledger lists forty-eight of them in three classes: H for humanoid frames, F for fixed facility systems, and V for vehicles.
+
+## How the Personas Are Kept
+
+Every persona here lives under the same scarcity as everything else in the stations. Its battery is replaceable, not endless. Its wear parts are rationed. In the cold, its cells charge only in a warm room, and a technician's queue decides when it's repaired. No persona is allowed to take control of a facility it wasn't assigned to, even when its own parts run out.
+
+Each entry lists the body platform, custody, memory rules, power, the chief maintainer and the house that audits the work. Custody isn't ownership of a person. Where a persona shows a will of its own, memory that carries on and the ability to consent, people judge it case by case rather than by what it's made of. The custody record exists so someone answers for upkeep and harm.
+
+People with machine parts in their own bodies follow different rules. Those are set out in [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/). The wider place of machines in station life is in [People and Machines](/wiki/People-and-Machines/).
+
 <a id="Synthetic-Actors-heading-0002"></a>
 
-## H01 · Hannuri (Nuri) (Nuri)
+## H01 · Hannuri (Nuri)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -17,7 +29,7 @@ section_checkpoint: complete
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the sluice sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K001 custodian, HC01 steward_house, K004 work_peer
+- Relations: custodian K001, steward house HC01, work peer K004
 
 At the maintenance bench of the sluice, Hannuri (Nuri) logged its entry in the HC01 duty log.
 
@@ -29,7 +41,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0008"></a>
 
-## H02 · Seorin (Rin) (Rin)
+## H02 · Seorin (Rin)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -40,7 +52,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yeongdeungpo Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K029 custodian, HC02 steward_house, K011 work_peer
+- Relations: custodian K029, steward house HC02, work peer K011
 
 In the charging bay of the Yeongdeungpo Line, Seorin (Rin) logged its entry in the HC02 duty log.
 
@@ -52,7 +64,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0014"></a>
 
-## H03 · Ido (Ido) (Ido (Ido))
+## H03 · Ido
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -63,9 +75,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yongsan Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K057 custodian, HC03 steward_house, K018 work_peer
+- Relations: custodian K057, steward house HC03, work peer K018
 
-At the observation railing of the Yongsan Line, Ido (Ido) logged its entry in the HC03 duty log.
+At the observation railing of the Yongsan Line, Ido logged its entry in the HC03 duty log.
 
 Jeong Hojun checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
@@ -75,7 +87,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0020"></a>
 
-## H04 · Gangbyeol (Byeol) (Byeol)
+## H04 · Gangbyeol (Byeol)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -86,7 +98,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Ttukseom sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K086 custodian, HC04 steward_house, K025 work_peer
+- Relations: custodian K086, steward house HC04, work peer K025
 
 At the tool wall of Ttukseom, Gangbyeol (Byeol) logged its entry in the HC04 duty log.
 
@@ -98,7 +110,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0026"></a>
 
-## H05 · Yunjae (Jae) (Jae)
+## H05 · Yunjae (Jae)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -109,7 +121,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gwangjin Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K115 custodian, HC05 steward_house, K032 work_peer
+- Relations: custodian K115, steward house HC05, work peer K032
 
 At the maintenance bench of the Gwangjin Line, Yunjae (Jae) logged its entry in the HC05 duty log.
 
@@ -121,7 +133,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0032"></a>
 
-## H06 · Baksol (Sol) (Sol)
+## H06 · Baksol (Sol)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -132,7 +144,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seoul Station Central sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K144 custodian, HC06 steward_house, K039 work_peer
+- Relations: custodian K144, steward house HC06, work peer K039
 
 In the charging bay of Seoul Station Central, Baksol (Sol) logged its entry in the HC06 duty log.
 
@@ -144,7 +156,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0038"></a>
 
-## H07 · Jeonguram (Uram) (Uram)
+## H07 · Jeonguram (Uram)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -155,7 +167,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Wangsimni sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K169 custodian, HC07 steward_house, K046 work_peer
+- Relations: custodian K169, steward house HC07, work peer K046
 
 At the observation railing of Wangsimni, Jeonguram (Uram) logged its entry in the HC07 duty log.
 
@@ -167,7 +179,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0044"></a>
 
-## H08 · Choidaon (Daon) (Daon)
+## H08 · Choidaon (Daon)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -178,7 +190,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Noryangjin Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K194 custodian, HC08 steward_house, K053 work_peer
+- Relations: custodian K194, steward house HC08, work peer K053
 
 At the tool wall of the Noryangjin Line, Choidaon (Daon) logged its entry in the HC08 duty log.
 
@@ -190,7 +202,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0050"></a>
 
-## H09 · Joharam (Haram) (Haram)
+## H09 · Joharam (Haram)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -201,7 +213,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Mapo sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K219 custodian, HC09 steward_house, K060 work_peer
+- Relations: custodian K219, steward house HC09, work peer K060
 
 At the maintenance bench of Mapo, Joharam (Haram) logged its entry in the HC09 duty log.
 
@@ -213,7 +225,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0056"></a>
 
-## H10 · Yunsaeron (Saeron) (Saeron)
+## H10 · Yunsaeron (Saeron)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -224,7 +236,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yeouido Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K245 custodian, HC10 steward_house, K067 work_peer
+- Relations: custodian K245, steward house HC10, work peer K067
 
 In the charging bay of the Yeouido Line, Yunsaeron (Saeron) logged its entry in the HC10 duty log.
 
@@ -247,7 +259,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gangnam Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K271 custodian, HC11 steward_house, K074 work_peer
+- Relations: custodian K271, steward house HC11, work peer K074
 
 At the observation railing of the Gangnam Line, Kimdoha (Doha) logged its entry in the HC11 duty log.
 
@@ -259,7 +271,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0068"></a>
 
-## H12 · Ichaeon (Chaeon) (Chaeon)
+## H12 · Ichaeon (Chaeon)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -270,7 +282,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Jamsil Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K296 custodian, HC12 steward_house, K081 work_peer
+- Relations: custodian K296, steward house HC12, work peer K081
 
 At the tool wall of the Jamsil Line, Ichaeon (Chaeon) logged its entry in the HC12 duty log.
 
@@ -282,7 +294,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0074"></a>
 
-## H13 · Hanbitna (Bitna) (Bitna)
+## H13 · Hanbitna (Bitna)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -293,7 +305,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Dongdaemun sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K322 custodian, HC13 steward_house, K089 work_peer
+- Relations: custodian K322, steward house HC13, work peer K089
 
 At the maintenance bench of Dongdaemun, Hanbitna (Bitna) logged its entry in the HC13 duty log.
 
@@ -305,7 +317,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0080"></a>
 
-## H14 · Oserim (Serim) (Serim)
+## H14 · Oserim (Serim)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -316,7 +328,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seongbuk Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K348 custodian, HC14 steward_house, K096 work_peer
+- Relations: custodian K348, steward house HC14, work peer K096
 
 In the charging bay of the Seongbuk Line, Oserim (Serim) logged its entry in the HC14 duty log.
 
@@ -328,7 +340,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0086"></a>
 
-## H15 · Baesua (Sua) (Sua)
+## H15 · Baesua (Sua)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -339,7 +351,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Myeongdong sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K373 custodian, HP01 steward_house, K103 work_peer
+- Relations: custodian K373, steward house HP01, work peer K103
 
 At the observation railing of Myeongdong, Baesua (Sua) logged its entry in the HP01 duty log.
 
@@ -351,7 +363,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0092"></a>
 
-## H16 · Sintaeul (Taeul) (Taeul)
+## H16 · Sintaeul (Taeul)
 
 - Class: H
 - Body platform: humanoid assist frame · replaceable hand modules · restricted night vision
@@ -362,7 +374,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Suseo Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K398 custodian, HP02 steward_house, K110 work_peer
+- Relations: custodian K398, steward house HP02, work peer K110
 
 At the tool wall of the Suseo Line, Sintaeul (Taeul) logged its entry in the HP02 duty log.
 
@@ -374,7 +386,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0098"></a>
 
-## F01 · Cooling-Tower Keeper (Tapji) (Tapji)
+## F01 · Cooling-Tower Keeper (Tapji)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -385,7 +397,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the sluice sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K002 custodian, HC09 steward_house, K117 work_peer
+- Relations: custodian K002, steward house HC09, work peer K117
 
 In the machine room of the sluice, Cooling-Tower Keeper (Tapji) logged its entry in the HC09 duty log.
 
@@ -397,7 +409,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0104"></a>
 
-## F02 · Switchgear Panel (Jeonban) (Jeonban)
+## F02 · Switchgear Panel (Jeonban)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -408,7 +420,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yeongdeungpo Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K030 custodian, HC10 steward_house, K124 work_peer
+- Relations: custodian K030, steward house HC10, work peer K124
 
 In front of the switchgear panel of the Yeongdeungpo Line, Switchgear Panel (Jeonban) logged its entry in the HC10 duty log.
 
@@ -420,7 +432,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0110"></a>
 
-## F03 · Water Filtration (Yeogwa) (Yeogwa)
+## F03 · Water Filtration (Yeogwa)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -431,7 +443,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yongsan Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K058 custodian, HC11 steward_house, K131 work_peer
+- Relations: custodian K058, steward house HC11, work peer K131
 
 In the filter corridor of the Yongsan Line, Water Filtration (Yeogwa) logged its entry in the HC11 duty log.
 
@@ -443,7 +455,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0116"></a>
 
-## F04 · Cold Storage (Naengchang) (Naengchang)
+## F04 · Cold Storage (Naengchang)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -454,7 +466,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Ttukseom sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K087 custodian, HC12 steward_house, K138 work_peer
+- Relations: custodian K087, steward house HC12, work peer K138
 
 In the control booth of Ttukseom, Cold Storage (Naengchang) logged its entry in the HC12 duty log.
 
@@ -466,7 +478,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0122"></a>
 
-## F05 · Transmission Relay (Junggye) (Junggye)
+## F05 · Transmission Relay (Junggye)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -477,7 +489,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gwangjin Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K116 custodian, HC13 steward_house, K146 work_peer
+- Relations: custodian K116, steward house HC13, work peer K146
 
 In the machine room of the Gwangjin Line, Transmission Relay (Junggye) logged its entry in the HC13 duty log.
 
@@ -489,7 +501,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0128"></a>
 
-## F06 · Elevator Shaft (Seungchuk) (Seungchuk)
+## F06 · Elevator Shaft (Seungchuk)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -500,7 +512,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seoul Station Central sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K145 custodian, HC14 steward_house, K153 work_peer
+- Relations: custodian K145, steward house HC14, work peer K153
 
 In front of the switchgear panel of Seoul Station Central, Elevator Shaft (Seungchuk) logged its entry in the HC14 duty log.
 
@@ -512,7 +524,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0134"></a>
 
-## F07 · Boiler Room (Boil) (Boil)
+## F07 · Boiler Room (Boil)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -523,7 +535,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Wangsimni sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K170 custodian, HP01 steward_house, K160 work_peer
+- Relations: custodian K170, steward house HP01, work peer K160
 
 In the filter corridor of Wangsimni, Boiler Room (Boil) logged its entry in the HP01 duty log.
 
@@ -535,7 +547,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0140"></a>
 
-## F08 · Sewage Pump (Hasu) (Hasu)
+## F08 · Sewage Pump (Hasu)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -546,7 +558,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Noryangjin Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K195 custodian, HP02 steward_house, K167 work_peer
+- Relations: custodian K195, steward house HP02, work peer K167
 
 In the control booth of the Noryangjin Line, Sewage Pump (Hasu) logged its entry in the HP02 duty log.
 
@@ -558,7 +570,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0146"></a>
 
-## F09 · Lab Cleanroom (Clean) (Clean)
+## F09 · Lab Cleanroom (Clean)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -569,7 +581,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Mapo sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K220 custodian, HP03 steward_house, K175 work_peer
+- Relations: custodian K220, steward house HP03, work peer K175
 
 In the machine room of Mapo, Lab Cleanroom (Clean) logged its entry in the HP03 duty log.
 
@@ -581,7 +593,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0152"></a>
 
-## F10 · Logistics Sorting (Bunryu) (Bunryu)
+## F10 · Logistics Sorting (Bunryu)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -592,7 +604,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yeouido Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K246 custodian, HP04 steward_house, K182 work_peer
+- Relations: custodian K246, steward house HP04, work peer K182
 
 In front of the switchgear panel of the Yeouido Line, Logistics Sorting (Bunryu) logged its entry in the HP04 duty log.
 
@@ -604,7 +616,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0158"></a>
 
-## F11 · Power Transformer (Byeonap) (Byeonap)
+## F11 · Power Transformer (Byeonap)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -615,7 +627,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gangnam Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K272 custodian, HP05 steward_house, K189 work_peer
+- Relations: custodian K272, steward house HP05, work peer K189
 
 In the filter corridor of the Gangnam Line, Power Transformer (Byeonap) logged its entry in the HP05 duty log.
 
@@ -627,7 +639,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0164"></a>
 
-## F12 · Ventilation Duct (Duct) (Duct)
+## F12 · Ventilation Duct (Duct)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -638,7 +650,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Jamsil Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K297 custodian, HP06 steward_house, K197 work_peer
+- Relations: custodian K297, steward house HP06, work peer K197
 
 In the control booth of the Jamsil Line, Ventilation Duct (Duct) logged its entry in the HP06 duty log.
 
@@ -650,7 +662,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0170"></a>
 
-## F13 · Medical Sterilization (Myeolgun) (Myeolgun)
+## F13 · Medical Sterilization (Myeolgun)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -661,7 +673,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Dongdaemun sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K323 custodian, HP07 steward_house, K204 work_peer
+- Relations: custodian K323, steward house HP07, work peer K204
 
 In the machine room of Dongdaemun, Medical Sterilization (Myeolgun) logged its entry in the HP07 duty log.
 
@@ -673,7 +685,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0176"></a>
 
-## F14 · Printing Press Unit (Inswae) (Inswae)
+## F14 · Printing Press Unit (Inswae)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -684,7 +696,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seongbuk Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K349 custodian, HP08 steward_house, K211 work_peer
+- Relations: custodian K349, steward house HP08, work peer K211
 
 In front of the switchgear panel of the Seongbuk Line, Printing Press Unit (Inswae) logged its entry in the HP08 duty log.
 
@@ -696,7 +708,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0182"></a>
 
-## F15 · Water-Supply Metering (Gyeryang) (Gyeryang)
+## F15 · Water-Supply Metering (Gyeryang)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -707,7 +719,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Myeongdong sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K374 custodian, HP09 steward_house, K218 work_peer
+- Relations: custodian K374, steward house HP09, work peer K218
 
 In the filter corridor of Myeongdong, Water-Supply Metering (Gyeryang) logged its entry in the HP09 duty log.
 
@@ -719,7 +731,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0188"></a>
 
-## F16 · Tunnel Ventilation (Teohwan) (Teohwan)
+## F16 · Tunnel Ventilation (Teohwan)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -730,7 +742,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Suseo Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K399 custodian, HP10 steward_house, K225 work_peer
+- Relations: custodian K399, steward house HP10, work peer K225
 
 In the control booth of the Suseo Line, Tunnel Ventilation (Teohwan) logged its entry in the HP10 duty log.
 
@@ -742,7 +754,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0194"></a>
 
-## V01 · Dawn Convoy (Saebyeok) (Saebyeok)
+## V01 · Dawn Convoy (Saebyeok)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -753,7 +765,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the sluice sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K003 custodian, HP03 steward_house, K232 work_peer
+- Relations: custodian K003, steward house HP03, work peer K232
 
 On the turnback line of the sluice, Dawn Convoy (Saebyeok) logged its entry in the HP03 duty log.
 
@@ -765,7 +777,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0200"></a>
 
-## V02 · Circulating Bus (Sunhwan) (Sunhwan)
+## V02 · Circulating Bus (Sunhwan)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -776,7 +788,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yeongdeungpo Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K031 custodian, HP04 steward_house, K239 work_peer
+- Relations: custodian K031, steward house HP04, work peer K239
 
 In the loading bay of the Yeongdeungpo Line, Circulating Bus (Sunhwan) logged its entry in the HP04 duty log.
 
@@ -788,7 +800,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0206"></a>
 
-## V03 · Freight Tram (Tram) (Tram)
+## V03 · Freight Tram (Tram)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -799,7 +811,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yongsan Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K059 custodian, HP05 steward_house, K247 work_peer
+- Relations: custodian K059, steward house HP05, work peer K247
 
 In the inspection pit of the Yongsan Line, Freight Tram (Tram) logged its entry in the HP05 duty log.
 
@@ -811,7 +823,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0212"></a>
 
-## V04 · Fire-Hose Robot (Gugyeongno) (Gugyeongno)
+## V04 · Fire-Hose Robot (Gugyeongno)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -822,7 +834,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Ttukseom sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K088 custodian, HP06 steward_house, K254 work_peer
+- Relations: custodian K088, steward house HP06, work peer K254
 
 At the charging slot of Ttukseom, Fire-Hose Robot (Gugyeongno) logged its entry in the HP06 duty log.
 
@@ -834,7 +846,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0218"></a>
 
-## V05 · Rail Tow (Gyeonin) (Gyeonin)
+## V05 · Rail Tow (Gyeonin)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -845,7 +857,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gwangjin Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K117 custodian, HP07 steward_house, K261 work_peer
+- Relations: custodian K117, steward house HP07, work peer K261
 
 On the turnback line of the Gwangjin Line, Rail Tow (Gyeonin) logged its entry in the HP07 duty log.
 
@@ -857,7 +869,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0224"></a>
 
-## V06 · Distribution Truck (Baejeon) (Baejeon)
+## V06 · Distribution Truck (Baejeon)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -868,7 +880,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seoul Station Central sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K146 custodian, HP08 steward_house, K268 work_peer
+- Relations: custodian K146, steward house HP08, work peer K268
 
 In the loading bay of Seoul Station Central, Distribution Truck (Baejeon) logged its entry in the HP08 duty log.
 
@@ -880,7 +892,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0230"></a>
 
-## V07 · Sweeper Vehicle (Cheongso) (Cheongso)
+## V07 · Sweeper Vehicle (Cheongso)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -891,7 +903,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Wangsimni sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K171 custodian, HP09 steward_house, K276 work_peer
+- Relations: custodian K171, steward house HP09, work peer K276
 
 In the inspection pit of Wangsimni, Sweeper Vehicle (Cheongso) logged its entry in the HP09 duty log.
 
@@ -903,7 +915,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0236"></a>
 
-## V08 · Ambulance Cart (Gugeup) (Gugeup)
+## V08 · Ambulance Cart (Gugeup)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -914,7 +926,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Noryangjin Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K196 custodian, HP10 steward_house, K283 work_peer
+- Relations: custodian K196, steward house HP10, work peer K283
 
 At the charging slot of the Noryangjin Line, Ambulance Cart (Gugeup) logged its entry in the HP10 duty log.
 
@@ -926,7 +938,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0242"></a>
 
-## V09 · Port Crane (Crane) (Crane)
+## V09 · Port Crane (Crane)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -937,7 +949,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Mapo sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K221 custodian, HC01 steward_house, K290 work_peer
+- Relations: custodian K221, steward house HC01, work peer K290
 
 On the turnback line of Mapo, Port Crane (Crane) logged its entry in the HC01 duty log.
 
@@ -949,7 +961,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0248"></a>
 
-## V10 · Dock Shuttle (Dock) (Dock)
+## V10 · Dock Shuttle (Dock)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -960,7 +972,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Yeouido Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K247 custodian, HC02 steward_house, K297 work_peer
+- Relations: custodian K247, steward house HC02, work peer K297
 
 In the loading bay of the Yeouido Line, Dock Shuttle (Dock) logged its entry in the HC02 duty log.
 
@@ -972,7 +984,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0254"></a>
 
-## V11 · Night Dispatch (Yabae) (Yabae)
+## V11 · Night Dispatch (Yabae)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -983,7 +995,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Gangnam Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K273 custodian, HC03 steward_house, K304 work_peer
+- Relations: custodian K273, steward house HC03, work peer K304
 
 In the inspection pit of the Gangnam Line, Night Dispatch (Yabae) logged its entry in the HC03 duty log.
 
@@ -995,7 +1007,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0260"></a>
 
-## V12 · Heavy-Equipment Arm (Jungpal) (Jungpal)
+## V12 · Heavy-Equipment Arm (Jungpal)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -1006,7 +1018,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Jamsil Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K298 custodian, HC04 steward_house, K311 work_peer
+- Relations: custodian K298, steward house HC04, work peer K311
 
 At the charging slot of the Jamsil Line, Heavy-Equipment Arm (Jungpal) logged its entry in the HC04 duty log.
 
@@ -1018,7 +1030,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0266"></a>
 
-## V13 · Tunnel Track Maintenance (Boseon) (Boseon)
+## V13 · Tunnel Track Maintenance (Boseon)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -1029,7 +1041,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Dongdaemun sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K324 custodian, HC05 steward_house, K318 work_peer
+- Relations: custodian K324, steward house HC05, work peer K318
 
 On the turnback line of Dongdaemun, Tunnel Track Maintenance (Boseon) logged its entry in the HC05 duty log.
 
@@ -1041,7 +1053,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0272"></a>
 
-## V14 · Bridge Inspection (Gyoryang) (Gyoryang)
+## V14 · Bridge Inspection (Gyoryang)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -1052,7 +1064,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Seongbuk Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K350 custodian, HC06 steward_house, K326 work_peer
+- Relations: custodian K350, steward house HC06, work peer K326
 
 In the loading bay of the Seongbuk Line, Bridge Inspection (Gyoryang) logged its entry in the HC06 duty log.
 
@@ -1064,7 +1076,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0278"></a>
 
-## V15 · Sluice-Gate Cart (Sumun) (Sumun)
+## V15 · Sluice-Gate Cart (Sumun)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -1075,7 +1087,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of Myeongdong sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K375 custodian, HC07 steward_house, K333 work_peer
+- Relations: custodian K375, steward house HC07, work peer K333
 
 In the inspection pit of Myeongdong, Sluice-Gate Cart (Sumun) logged its entry in the HC07 duty log.
 
@@ -1087,7 +1099,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0284"></a>
 
-## V16 · Emergency Tow (Bigyeon) (Bigyeon)
+## V16 · Emergency Tow (Bigyeon)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -1098,7 +1110,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
 - Emergent goal: continuous operation of the Suseo Line sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
-- Relations: K400 custodian, HC08 steward_house, K340 work_peer
+- Relations: custodian K400, steward house HC08, work peer K340
 
 At the charging slot of the Suseo Line, Emergency Tow (Bigyeon) logged its entry in the HC08 duty log.
 
