@@ -4,6 +4,6 @@
 INSERT INTO site_meta (key, value) VALUES ('title', 'Seoul Metro Dynasties');
 INSERT INTO site_meta (key, value) VALUES ('title_ko', '서울 지하철 왕조');
 INSERT INTO site_meta (key, value) VALUES ('language', 'en');
-INSERT INTO site_meta (key, value) VALUES ('tagline', 'A grand-strategy and tabletop-CRPG world bible set in a post-blackout Seoul.');
-INSERT INTO site_meta (key, value) VALUES ('tagline_ko', '대정전 이후의 서울을 무대로 한 대전략·TRPG 기반 CRPG 세계관 위키.');
+INSERT INTO site_meta (key, value) VALUES ('tagline', 'A grand-strategy and tabletop-CRPG world bible: Seoul in 2126, a hundred years into the eternal winter, where people live in the subway stations under three polities.');
+INSERT INTO site_meta (key, value) VALUES ('tagline_ko', '대정전 뒤 백 년, 영원한 겨울의 2126년 서울. 지하철역에 사는 사람들과 세 정체를 다루는 대전략·TRPG 기반 CRPG 세계관 위키.');
 INSERT INTO site_meta (key, value) VALUES ('schema', '2');
