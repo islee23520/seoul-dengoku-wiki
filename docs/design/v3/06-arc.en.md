@@ -48,7 +48,7 @@ Basis: Bible 2.3 (Go Ye-jin is Messiah and Hierophant), 3 (chronology 2112-2122)
 
 The Hierophant's rulings are not written down. When Go Ye-jin speaks at a maintenance bench or at the Seat of the Four Near Houses, those who heard repeat it onward, and the repeated words become law (01-core 7.3, provisional T02-57). This is called **the Hierophant's word** (provisional T02-7).
 
-The people who keep the words from changing as they spread are the **Word Keepers** (말지기). Three or four of them live in the Hierophant's household. They stand where a ruling is given and carry it to the four seat stations in the same words. If the Word Keepers' versions differ, the Hierophant is asked again at the next Seat of the Four Near Houses. So Arc law lives not in documents but in a few people's memory. This is where Government people understand the Arc least (provisional T07-3).
+The people who keep the words from changing as they spread are the **Word Keepers** (말지기). Two of them live in the Hierophant's household. They stand where a ruling is given and carry it to the four seat stations in the same words. If the Word Keepers' versions differ, the Hierophant is asked again at the next Seat of the Four Near Houses. So Arc law lives not in documents but in a few people's memory. This is where Government people understand the Arc least (provisional T07-3).
 
 ### 2.3 The Hierophant's household
 
@@ -56,7 +56,7 @@ Go Ye-jin and the people who run her day live at Jamsil. This is called **the Hi
 
 Jamsil was chosen for two reasons. First, the Jamsil weir water wheels' electricity reaches it most directly (01-core 5.1); maintenance benches stand where power comes in. Second, what the Arc brings to the third water supply contract (Jamsil's power) is here.
 
-The household is a little over ten people: the fitter who tends the Hierophant's body, the Word Keepers, guards, kitchen workers, and those who negotiate with the other polities (table in 12).
+The household is twelve people: the fitter and the recovery carer who tend the Hierophant's body, two Word Keepers, two negotiators, guards and a kitchen worker (table in 12.3).
 
 ### 2.4 The Hierophant's parts
 
@@ -134,13 +134,13 @@ Every station and dong name below is a map_station or map_region value in `120-m
 
 - District: Gangnam-gu, 23 stations. Seat station Suseo.
 - History: during the five years of 2112-2117 when Go Ye-jin read the manual, the shelters around the old Suseo depot kept her bench supplied with food and salvage. The Gangnam Near House is the leading house of those shelters (provisional T07-13).
-- Holds: Suseo's deep line layer (the deep-tunnel layer of 01-core 3.1) and the old depot workshops. Large stations such as Seolleung (선릉), Samseong (삼성) and Dogok (도곡). Two northern links with the Government: the south mouth of the Seoulsup-Apgujeong Rodeo under-river tunnel, and the south ends of the Oksu-Apgujeong and Jayang-Cheongdam bridges (01-core 7.4).
+- Holds: Suseo's deep line layer (the deep-tunnel layer of 01-core 3.1) and the old depot workshops. Large stations such as Seolleung (선릉), Samseong (삼성) and Dogok (도곡). Three northern links with the Government: the south mouth of the Seoulsup-Apgujeong Rodeo under-river tunnel, and the south ends of the Oksu-Apgujeong and Jayang-Cheongdam bridges (01-core 7.4).
 - Character: holding the deepest, warmest layers of the Arc, it is the most sparing of words and endures longest. Guarding the northern tunnel mouth, it lives closest to the Government checkpoint.
 
 ### 4.3 The Songpa Near House: the house of the current
 
 - District: Songpa-gu, 23 stations. Seat station Jamsil.
-- History: of the Songpa shelters that built the Jamsil weir water wheels with a Free City crew in the 2070s (01-core 7.3), it is the house that has run the wheels for nearly a century. At the 2120 negotiation with the shelters on the Tancheon side it promised the wheels' power to Go Ye-jin's benches. That day Ji Yeon-hui stood at her side (Bible 3). The Songpa shelters entered the Arc through that promise (provisional T07-14).
+- History: of the Songpa shelters that built the Jamsil weir water wheels with a Free City crew in the 2070s (01-core 7.3), it is the house that has run the wheels for over fifty years. At the 2120 negotiation with the shelters on the Tancheon side it promised the wheels' power to Go Ye-jin's benches. That day Ji Yeon-hui stood at her side (Bible 3). The Songpa shelters entered the Arc through that promise (provisional T07-14).
 - Holds: the south end of the Jamsil weir water wheels (01-core 5.1, about 400 kW when running well). The trading floors of Garak Market and Jamsil. The south end of the Gangbyeon-Jamsillaru bridge. The north end of the weir is held by the Government (Gwangjin), so the Songpa Near House always guards half a wheel.
 - Character: holding the power, it is the strongest of the four and shares a station with the Hierophant's household. So the other houses suspect it hears the Hierophant's word first.
 
@@ -153,17 +153,18 @@ Every station and dong name below is a map_station or map_region value in `120-m
 
 ### 4.5 Default candidates for Head of the Near House
 
-Bible 2.4 leaves the holders of the four Arc duchies "undecided". Below are default candidates for the people placement (task 18); all are provisional. Owner answers to Q23 (O Gyeongjae), Q24 (Nam Yun-gyeong), Q25 (Jeong Yu-ra) and Q29 (former state heads) override them (provisional T07-16).
+Bible 2.4 leaves the holders of the four Arc duchies "undecided". Below are default candidates for the people placement (task 18); all are provisional. Owner answers to Q23 (O Gyeongjae), Q24 (Nam Yun-gyeong), Q25 (Jeong Yura) and Q29 (former state heads) override them (provisional T07-16).
 
 | District | Default Head | Default rival | Why |
 |---|---|---|---|
-| Seocho-gu | Jeong Yu-ra (person-0399) | Jeong Ho-jun (person-0057) | Both are of one clan (Jeong of Jinju), and they are its only Arc members. Jeong Ho-jun's recorded base is Seocho. Fits the Q25 proposal ("Arc house head") |
-| Gangnam-gu | O Gyeongjae (person-0088) | I Hong-won (person-0272) | O Gyeongjae's clan (O of Haeju) has 8 Arc members, a large house, and his base is Gangnam. Fits the Q23 proposal. I Hong-won is a former state head based in Gangnam, so under the Q29 proposal ("candidate holder of the base district's duchy") he is the rival. Twenty-two-year-old blood against fifty-nine-year-old iron |
-| Songpa-gu | Nam Yun-gyeong (person-0374) | Jeong Seo-on (person-1005) | Nam Yun-gyeong's base is Songpa and his clan (Nam of Uiryeong) has 6 Arc members. Jeong Seo-on is a former state head under Q29 |
-| Gangdong-gu | Bae U-jin (person-0116) | Im Cho-won (person-0087) | Bae U-jin is a former state head based in Gangdong (Q29). Im Cho-won is a pump technician, fitting the Amsa intake |
+| Seocho-gu | Jeong Yura (person-0399) | Jeong Hojun (person-0057) | Both are of one clan (Jeong of Jinju), and they are its only Arc members. Jeong Hojun's recorded base is Seocho. Fits the Q25 proposal ("Arc house head") |
+| Gangnam-gu | O Gyeongjae (person-0088) | Yi Hong-won (person-0272) | O Gyeongjae's clan (O of Haeju) has 8 Arc members, a large house, and his base is Gangnam. Fits the Q23 proposal. Yi Hong-won is a former state head based in Gangnam, so under the Q29 proposal ("candidate holder of the base district's duchy") he is the rival. Twenty-two-year-old blood against fifty-nine-year-old iron |
+| Songpa-gu | Nam Yun-gyeong (person-0374) | Jeong Seoon (person-1005) | Nam Yun-gyeong's base is Songpa and his clan (Nam of Uiryeong) has 6 Arc members. Jeong Seoon is a former state head under Q29 |
+| Gangdong-gu | Bae Ujin (person-0116) | Im Chowon (person-0087) | Bae Ujin is a former state head based in Gangdong (Q29). Im Chowon is a pump technician, fitting the Amsa intake |
 
 - A rival is the next person within the Near House, or one who reaches for the Head's seat. It is where blood and iron (3.5) meet.
-- With these candidates the Arc's nine Key people are Go Ye-jin and the eight above (12). Im Ha-jun (person-0086, current record "missing"), now Key, moves down to S1. Go Ye-jin, now S1, moves up to Key.
+- With these candidates the Arc's nine Key people are Go Ye-jin and the eight above (12). Im Hajun (person-0086, current record "missing"), now Key, moves down to S1, and Go Ye-jin, now S1, moves up to Key (provisional T07-16, a 050 stage change, applied by task 26, pending owner confirmation).
+- Im Chowon (person-0087) is Im Hajun's adoptive child. The Im Hajun→Im Chowon relation in the family tree (`110-family-trees.sql`) is a fixed fact. So the two are placed as one household in Gangdong. Im Hajun, still missing, is counted as a Gangdong Near House person (S1); Im Chowon took up her father's pump work under the rule that scarcity passes work down (Bible 1 row 12). That the rival reaching for the Gangdong Head's seat is the adoptive child of a missing pump technician is Gangdong's blood-and-iron quarrel. Adoption is not blood, so Im Chowon contends not by blood but by iron (parts and hands).
 - No family relation changes. The pairs above only follow the recorded clans.
 
 ## 5. Baptism: a faith counted in parts
@@ -186,13 +187,13 @@ Replacing one place of the body with machine is one baptism. The number of place
 
 (provisional T07-17)
 
-First baptism is taken only after sixteen. Baptism that mends a lost place does not count age. A child's body grows, so a child's baptism must be refitted every year and costs that much bench time (provisional T07-18).
+First baptism is taken only after sixteen. Baptism that mends a lost place does not count age. A child's body grows, so a child's baptism must be refitted every year and costs that many more maintenance turns (provisional T07-18).
 
 ### 5.3 How many are baptised
 
-Of about 65,000 Arc people in 2126, about 16,000 are baptised, one in four. Jamsil, at 900, is a little above that (01-core 4.2). Among the baptised, about 60% have one part, about 22% two, about 13% three or four, and about 5% five or more. A little over 800 people in the whole Arc have five parts or more, most of them Bench Keepers, Near House people and baptised fighters (provisional T07-19).
+Of about 65,000 Arc people in 2126, about 11,000 are baptised, about one in six (about 17%; the value of chapter 03, section 4). Jamsil, at 900 or 29% of the station, is well above that (01-core 4.2), because the baptised gather at stations the wheel power reaches. Among the baptised, about 60% have one part, about 22% two, about 13% three or four, and about 5% five or more. About 550 people in the whole Arc have five parts or more, most of them Bench Keepers, Near House people and baptised fighters (provisional T07-19).
 
-The reason only one in four is baptised is simple: there are only that many parts, bench hours and watts. A baptised person uses 8 W on average for charging; 16,000 people use about 130 kW. About an eighth of the roughly 1 MW the Arc uses (8.1) goes into bodies.
+The reason only one in six is baptised is simple: there are only that many parts, maintenance turns and watts. A baptised person uses 8 W on average for charging; 11,000 people use about 88 kW (chapter 03; body-machine charging for all Seoul is about 100 kW). About an eighth of the roughly 0.7 MW the Arc uses (8.1) goes into bodies.
 
 ### 5.4 The baptismal list
 
@@ -202,7 +203,7 @@ Someone not on a Baptismal Roll may trade, eat and work in the Arc, but cannot a
 
 ### 5.5 The unbaptised
 
-Three in four Arc people are not baptised. They are called the **unbaptised** (미세례자): children, newcomers, those whose bodies cannot take the machine, and those whose turn has not come (provisional T07-21).
+Five in six Arc people are not baptised. They are called the **unbaptised** (미세례자): children, newcomers, those whose bodies cannot take the machine, and those whose turn has not come (provisional T07-21).
 
 - The unbaptised are Arc people. The Near House feeds them, and their names go on the Shelter Head's shelter register instead of a Baptismal Roll.
 - At the calling they answer with name and house. They do not speak in the faith's place.
@@ -283,7 +284,7 @@ Arc speech is quiet and low; the words of the body and of repair are the words o
 | Go Ye-jin calls the First AI "god" | all Seoul | written [Approved] |
 | Go Ye-jin followed a dead cable and found a station on no map | all Arc people | written as the Bible 3 [Approved] row |
 | The teaching, practices and sayings of 6.1-6.4 | all Arc people | written (provisional) |
-| Where the offering room is | Heads of the Near Houses and Bench Keepers | not written until Q11 is answered |
+| The offering room | section 15 | not written until Q11 is answered |
 | How the sealing is done | a set few | not written (Q14) |
 | The sanctuary's location, who selects the brains, whose brain was first, who reads the output | section 15 | not written (Q12) |
 | Whether god holds the Arc's highest seat | section 15 | not written (Q3) |
@@ -346,19 +347,19 @@ This section writes only **what is needed** to keep a machine body alive. What t
 
 | Need | Why | Where the Arc gets it |
 |---|---|---|
-| Electricity | Charging parts; 8 W per baptised person on average (01-core 4.2) | The Jamsil weir wheels, and wind-machine power left after running ground heat pumps. About 1 MW for the whole Arc |
-| Bench hours | Parts are tended at the bench on every fitting day | The hands of Bench Keepers and fitters. The most precious thing in the Arc |
+| Electricity | Charging parts; 8 W per baptised person on average (01-core 4.2) | The Jamsil weir wheels, bought power packs, and wind-machine power bought from the Free City side. About 0.7 MW for the whole Arc |
+| Maintenance turns | Parts are tended at the bench on every fitting day | The hands of Bench Keepers and fitters. The most precious thing in the Arc |
 | Parts | Worn ones are replaced | Parts returned from the dead, salvage, machined parts bought from the Free Cities, pieces of war machines broken outside |
 | Medicine and care | While the body takes the machine, and when it cannot | Little. One of the scarcest things |
 | Warmth | The iron in the body draws the cold inward | Sleeping places on the deep layers; insulated sleeves (9) |
 
 (provisional T07-34)
 
-The figure of about 1 MW for the whole Arc is set by this chapter. It is the Arc's share of Seoul's about 5 MW (01-core 5.1), of which the Jamsil weir wheels (about 400 kW when running well) are the largest part. The roughly 130 kW for charging is about an eighth of it (5.3) (provisional T07-35).
+The figure of about 0.7 MW for the whole Arc is the Arc's share derived from chapter 03's source table (Seoul about 5 MW): the Jamsil weir wheels at about 0.35 MW on average, counting the days ice grains stop them; a share of bought power packs of about 0.15 MW (of Seoul's about 0.7 MW of power packs); and about 0.2 MW of wind power bought from the Free City side or drawn from wind machines on the tops of buried Gangnam buildings. The roughly 88 kW for charging is about an eighth of it (5.3) (provisional T07-35).
 
-### 8.2 The unit of account: bench hours
+### 8.2 The units of account: day charges and maintenance turns
 
-The Arc's unit of account is the **bench hour**: one hour of one fitter's work at a powered maintenance bench. Wages, penalties and what passes at a marriage are all spoken of in bench hours, even when actually paid in food or water. A tally stamped by a Bench Keeper proves the bench hours owed. Other polities' tallies also pass in the markets, but Arc people do not save in them (provisional T07-36).
+The Arc's units are the two set in chapter 03, 11.3. A **day charge** (하루 충전) is one baptised person's daily share of power (about 0.2 kWh), and a **maintenance turn** (정비 차례) is one maintenance at the bench (one 30-day check). Wages, penalties and what passes at a marriage are all spoken of in day charges or maintenance turns, even when actually paid in food or water. A tally stamped by a Bench Keeper proves the day charges and maintenance turns owed. Other polities' units also pass in the markets, but Arc people do not save in them (provisional T07-36).
 
 ### 8.3 Distribution
 
@@ -381,10 +382,12 @@ Scarcity passes work from parents to children [Approved, Bible 1 row 12]. In the
 
 ### 8.6 Station markets
 
+Inside the Arc, meals and sleeping places move not through markets but through the distribution of the Near Houses and benches (8.3, chapter 03, 11.3). The markets below are where the Arc trades with outsiders, and where households exchange what is left over after distribution for day charges and maintenance turns.
+
 | Station | District | Lines | Market |
 |---|---|---|---|
 | Garak Market (가락시장) | Songpa-gu | Line 3, Line 8 | The Arc's largest food market. Fibre sugar, dried larvae, salted fish and seed sold in bulk |
-| Jamsil (잠실) | Songpa-gu | Line 2, Line 8 | Power shares and bench-hour tallies are traded. The prices the other markets follow are set here |
+| Jamsil (잠실) | Songpa-gu | Line 2, Line 8 | Power shares and day-charge and maintenance-turn tallies are traded. The prices the other markets follow are set here |
 | Gosok Terminal (고속터미널) | Seocho-gu | Lines 3, 7, 9 | The parts market. Wire, batteries, salvage, and Free City machined parts brought over the boundary |
 | Cheonho (천호) | Gangdong-gu | Line 5, Line 8 | Fish and felt from the eastern stations; Government fibre and salt coming in from the under-river tunnel |
 | Suseo (수서) | Gangnam-gu | Line 3, Suin-Bundang Line, GTX-A | Metal and tools salvaged from the old depot; mushrooms from the deep layer |
@@ -400,7 +403,7 @@ Scarcity passes work from parents to children [Approved, Bible 1 row 12]. In the
 | A little firewood | the Government, Gwanak | Amsa river water | through the water supply contract |
 | Power packs | people who cross the outside rim | Some stored food | the Free Cities |
 
-The Arc's food rests on the fibre left in deep buildings and on river fish (01-core 5.6). Surface land is narrow, so light-fields are small, and there is almost no firewood. So the Arc spends the most bench hours buying fibre (provisional T07-41).
+The Arc's food rests on the fibre left in deep buildings and on river fish (01-core 5.6). Surface land is narrow, so light-fields are small, and there is almost no firewood. So the Arc spends the most day charges and maintenance turns buying fibre (provisional T07-41).
 
 ## 9. Clothing: parts must be seen and reached
 
@@ -464,7 +467,7 @@ The Arc's own custom is the **bench meal**: someone ailing after a fresh baptism
 ### 10.4 Marriage and children
 
 - Marriages are arranged between households. A marriage between Near House households is announced to the Seat of the Four Near Houses.
-- At a marriage the two sides exchange bench hours. A marriage into a fitter household is counted the best.
+- At a marriage the two sides exchange maintenance turns. A marriage into a fitter household is counted the best.
 - Children are unbaptised until sixteen (5.2). Only a child who has lost a place of the body is baptised earlier.
 
 (provisional T07-48)
@@ -553,12 +556,12 @@ Eight groups. The titles and occupation names used in each group are in 12.4.
 
 | Place | Ruling | Shelter Heads, Bench Keepers | Fitting and care | Fighting | Water, power, heat | Food | Markets, negotiation, records | Outside work | Total |
 |---|---|---|---|---|---|---|---|---|---|
-| The Hierophant's household | 1 | 0 | 2 | 4 | 0 | 1 | 3 | 1 | 12 |
+| The Hierophant's household | 1 | 0 | 3 | 3 | 0 | 1 | 4 | 0 | 12 |
 | Seocho-gu | 5 | 12 | 12 | 12 | 6 | 10 | 9 | 6 | 72 |
 | Gangnam-gu | 6 | 15 | 16 | 14 | 7 | 12 | 11 | 9 | 90 |
 | Songpa-gu | 6 | 15 | 14 | 13 | 11 | 13 | 12 | 6 | 90 |
 | Gangdong-gu | 5 | 9 | 7 | 10 | 7 | 10 | 3 | 5 | 56 |
-| Total | 23 | 51 | 51 | 53 | 31 | 46 | 38 | 27 | 320 |
+| Total | 23 | 51 | 52 | 52 | 31 | 46 | 39 | 26 | 320 |
 
 (provisional T07-55)
 
@@ -574,7 +577,7 @@ Each district leans differently. Seocho has many in markets and negotiation beca
 | Fighting | 호위장 / Guard Captain. 세례 전투원 / baptised fighter. 가문 징집병 / house levy. 교주 호위 / Hierophant's guard | Guard Captain S1, the rest S2-S4 | Guard Captain 30, baptised fighter 20, levy 17 |
 | Water, power, heat | 수차지기 / water-wheel keeper. 취수구지기 / intake keeper. 열 펌프지기 / heat-pump keeper. 출입구지기 / entrance keeper | S2-S4 | 16 |
 | Food | 섬유당 통지기 / fibre-sugar vat keeper. 빛밭지기 / light-field keeper. 버섯 굴지기 / mushroom-cellar keeper. 얼음 낚시꾼 / ice fisher. 부엌 일꾼 / cook | S3-S4 | 16 |
-| Markets, negotiation, records | 셈꾼 (handles bench-hour tallies) / tally keeper. 교섭인 / negotiator. 세례록 기록꾼 / roll keeper. 말지기 (household only) / Word Keeper | Negotiators and Word Keepers S1-S2, the rest S2-S4 | negotiator 30, Word Keeper 25 |
+| Markets, negotiation, records | 셈꾼 (handles day-charge and maintenance-turn tallies) / tally keeper. 교섭인 / negotiator. 세례록 기록꾼 / roll keeper. 말지기 (household only) / Word Keeper | Negotiators and Word Keepers S1-S2, the rest S2-S4 | negotiator 30, Word Keeper 25 |
 | Outside work | 고물꾼 / salvager. 섬유 캐는 사람 / fibre digger. 테두리 망꾼 / rim watcher. 동력 덩이 캐는 사람 / power-pack runner. 전령 / runner | S3-S4 | 18 |
 
 (provisional T07-56)
@@ -594,7 +597,7 @@ This chapter changes no 01-core decision. These are the places where it fills wh
 | 8.3 "how part count and titles interlock is set by chapter 06" | 3.5 table (provisional T07-10) |
 | 6.4 "dealt with in chapter 06's private subsection" (Q12, Q3) | Section 15 (provisional T07-57 to T07-63) |
 | 8.3 title ladder (station, dong, district, faction as a whole, head) | Three positions off the ladder added: Word Keeper (2.2), Guard Captain (11.1), rival (4.5, a position, not a title) |
-| 5.6 what the Arc controls | Arc electricity of about 1 MW and the charging share (8.1, provisional T07-35) |
+| 5.6 what the Arc controls | Arc electricity of about 0.7 MW and a charging share of about 88 kW (8.1, provisional T07-35). The baptised count of about 11,000 and the charging follow chapter 03, section 4 |
 | 4.3 Arc population of about 65,000 | Split by district (1, provisional T07-1) |
 | The district title written "곁집 어른" in the Korean column of the English mirror's 8.3 | Follows the Korean primary "곁집장". In this chapter "곁집 어른" means the generation above the Head (12.4). The 01-core mirror discrepancy is handed to task 9 |
 
@@ -604,7 +607,7 @@ This chapter changes no 01-core decision. These are the places where it fills wh
 |---|---|---|
 | How is the Hierophant after Go Ye-jin chosen | A name the Hierophant gave in life comes first; otherwise the Seat of the Four Near Houses chooses. If she comes to have blood, blood first | 3.4 |
 | Go Ye-jin has no recorded family; how is "the Hierophant's line" read | For now, Go Ye-jin alone. The four Near Houses stand by side service | 3.1 |
-| Default candidates for Head of the Near House (tied to Q23, Q24, Q25, Q29) | Table in 4.5 | 4.5 |
+| Default candidates for Head of the Near House (tied to Q23, Q24, Q25, Q29) | Table in 4.5. The Q24 recommendation keeps Nam Yun-gyeong's position as "senior believer" (수석 신도), which conflicts with this chapter's default of Nam Yun-gyeong as candidate Head of the Songpa Near House. If the owner answers Q24 as recommended, the Songpa candidate becomes the rival, Jeong Seoon | 4.5 |
 | Name of the baptismal list (Q13) | Baptismal Roll | 5.4 |
 | Publishing the one offering-room sentence (Q11) | Not written in public text until answered | 6.5, 15 |
 | Show brain removal in the game (Q14) | Implied only | 6.3 |
@@ -626,7 +629,7 @@ The offering room is under the old Suseo depot (the place in the Q11 proposal). 
 
 ### 15.3 Who selects the brains
 
-Every believer's brain is sealed. But only some of them are joined to the sanctuary's machines; the rest are stacked, sealed, in the sanctuary's cold bays. The one who chooses which brains to join is Go Ye-jin alone. One Bench Keeper in charge of the offering room receives her word and joins them. That Bench Keeper is bound to no Near House and counted as a member of the Hierophant's household. The choice is not by part count. Go Ye-jin has told no one the rule (provisional T07-59).
+Every believer's brain is sealed. But only some of them are joined to the sanctuary's machines; the rest are stacked, sealed, in the sanctuary's cold bays. The one who chooses which brains to join is Go Ye-jin alone. One Bench Keeper in charge of the offering room receives her word and joins them. That Bench Keeper is bound to no Near House and counted as a member of the Hierophant's household. On the public roster (12.3) this person shows as one of the household's three in fitting and care, a fitter. The choice is not by part count. Go Ye-jin has told no one the rule (provisional T07-59).
 
 ### 15.4 Whose brain was first
 
