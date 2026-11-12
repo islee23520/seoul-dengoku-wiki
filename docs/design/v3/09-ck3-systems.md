@@ -72,10 +72,10 @@
 | 공성 행동 가중 30/15/15/20/20, 방어 사기 100 + 75/요새 단계, 공성 단계 20일, 공성 월 소모 1% | `DEF` 970~1000행 | 분석과 같다. 덧붙여 **강습(breach assault)** 의 사상자 비율 2.5/1과 100명 묶음당 진척 0.2가 선언돼 있다 |
 | 상비군 유형 수치(light_footmen, pikemen_unit, armored_horsemen, house_guard) | `MAA` | 분석과 같다. 지형별 피해·강인함 수정이 병종마다 붙는다(예: armored_horsemen 평지 피해 +30, 산 −75) |
 | 지형·보급 우위 수정자 | `GAME/common/combat_effects/00_combat_effects.txt` 1~146행 | 분석과 같다(강 +10, 큰 강 +20, 해협 +30, 보급 부족 −10, 굶주림 −25, 상륙 직후 −30, 집결 중 −5, 부채 −5~−100) |
-| 지휘관 부상 사건 확률 | `GAME/common/combat_phase_events/00_commander_phase_events.txt` 54~86행 | 기본 25. **무용이 확률을 줄인다**: × (40 − 무용) ÷ 40, 최소 0.1. 수가 많으면 줄인다(× 적 세력 ÷ 자기 세력 × 1.4, 최대 1). brave ×2, craven ×0.5. 분석은 무용 계수와 수 계수를 적지 않았다 |
+| 지휘관 부상 사건의 가중 | `GAME/common/combat_phase_events/00_commander_phase_events.txt` 1~86행, `_combat_phase_events.info` 1~14행 | **확률이 아니라 가중이다.** 전투 중 `COMBAT_EVENT_DAYS` 5일마다 유효한 사건 가운데 가중으로 하나를 고른다. 부상 사건 가중 기본 25, 아무 일 없음(`commander_none`) 가중 기본 1000, 불구·사망 사건도 함께 겨룬다. 다른 수정이 없으면 5일마다 약 25 ÷ 1025 ≈ 2.4%다(C, `.info` 설명에서 계산). **무용이 가중을 줄인다**: × (40 − 무용) ÷ 40, 최소 0.1. 세력이 더 큰 쪽은 줄인다(`side_strength`가 적보다 클 때 × 적 세력 ÷ 자기 세력 × 1.4, 최대 1. 승패와 무관). brave ×2, craven ×0.5. 분석은 무용 계수와 세력 계수를 적지 않았다 |
 | 전사 기록 효과 | `GAME/common/scripted_effects/00_death_management_effects.txt` 124행 `save_died_in_battle_variables_effect` | 있다 |
-| 생활 방식 | `GAME/common/lifestyles/00_lifestyles.txt` 1~60행 | **여섯**이다: diplomacy, martial, stewardship, intrigue, learning, wanderer. 각 단계 경험치 1000, 기본 획득 25. 분석의 "다섯"은 wanderer를 빼고 센 것으로 보인다 |
-| 의회 자리 | `GAME/common/council_positions/00_council_positions.txt` | chancellor(외교), steward, marshal, spymaster, 신앙 담당(court chaplain 자리), spouse, vizier |
+| 생활 방식 | `GAME/common/lifestyles/00_lifestyles.txt` 1~60행 | **여섯**이다: diplomacy, martial, stewardship, intrigue, learning, wanderer. 각 단계 경험치 1000, 기본 획득은 다섯이 25, wanderer가 20(64행). 분석의 "다섯"은 wanderer를 빼고 센 것으로 보인다 |
+| 의회 자리 | `GAME/common/council_positions/00_council_positions.txt`, `01_ministry_positions.txt` | chancellor(외교), steward, marshal, spymaster, 신앙 담당(court chaplain 자리), spouse, vizier. 행정 정부의 장관 자리 minister_personnel(외교), minister_justice(학식), minister_works(관리), minister_grand_marshal(군사) |
 | 정부 유형 파일 | `GAME/common/governments/00_government_types.txt` 외 2파일 | feudal, republic, clan, tribal, wanua, mercenary, holy_order, monastic_holy_order, administrative, landless_adventurer, nomad, herder, celestial, mandala, steppe_admin, meritocratic, japan_feudal, theocracy, ecclesiastical. 분석의 경로 `00_government_types.txt`는 `governments/` 아래다 |
 | 정복 명분의 점수 계수 150, 목표 비율 0.8 | `DOM/08` 28행 | 분석과 같다 |
 | 독립 파벌 요구 문턱 80(+20) | `FA/독립-파벌-요구.html` | 분석과 같다 |
@@ -111,7 +111,7 @@ CK3(Crusader Kings III)는 **나라가 아니라 한 사람을 플레이하는**
 | 생식 | 기본 생식력 0.5. 여성 16~45세. 부부당 자녀 상한이 작위 등급별 `{ 1 1 2 3 5 5 8 }`, 통치자면 +2. 임신 280일 | B, `DEF` 149, 353~384행. 출생 훅 A(`child_birth_on_actions.txt` 1~18, 843~945행) |
 | 스트레스(stress) | 단계 최대 3, 단계당 100. 단계에 들면 관리 사건, 3일 뒤 정신 붕괴(mental break) 사건 | A, `DEF` 117~118행, `stress_on_actions.txt` 33~137행. 성격에 어긋난 선택이 스트레스를 올린다는 것은 C(일반 지식). 선택지별 증가값 표는 **공백** |
 | 공포(dread)와 폭정(tyranny) | 공포 최대 100, 매달 0.5씩 기본값으로 돌아간다. 폭정 최대 1000, 매달 −0.25. 처형은 피해자 지위별 공포 30/15/10/5 | 상수 B(`DEF` 120~124행), 처형 A(`FA/ck3-install-reverse-analysis-ko.html`) |
-| 생활 방식(lifestyles)과 특전(perks) | 여섯 생활 방식(1.3절), 단계당 경험치 1000, 기본 획득 25. 관리 생활 방식 부유 집중은 월 수입 배율 0.1. **특전 하나가 새 상호작용이나 음모를 연다**(예: 지불 요구 상호작용, 구실 조작 음모) | B·재확인(`00_lifestyles.txt`), 집중·특전 A(`00_lifestyle_focuses.txt` 550~596행, `00_perk_interactions.txt` 696~738행) |
+| 생활 방식(lifestyles)과 특전(perks) | 여섯 생활 방식(1.3절), 단계당 경험치 1000, 기본 획득은 다섯 생활 방식이 25, wanderer가 20. 관리 생활 방식 부유 집중은 월 수입 배율 0.1. **특전 하나가 새 상호작용이나 음모를 연다**(예: 지불 요구 상호작용, 구실 조작 음모) | B·재확인(`00_lifestyles.txt`), 집중·특전 A(`00_lifestyle_focuses.txt` 550~596행, `00_perk_interactions.txt` 696~738행) |
 | 장례 | 사망 훅이 고인을 상속인의 장례 대상으로 5년간 변수에 둔다. 시신은 변수다 | A, `religious_decision_events.txt` 2122~2151행 |
 
 ### 2.3 가문, 승계, 섭정
@@ -149,7 +149,7 @@ CK3(Crusader Kings III)는 **나라가 아니라 한 사람을 플레이하는**
 | 직할령 한도(domain limit) | 한도를 넘는 영지 하나마다 징집·세금 −20%. 새 영지 365일 유예. 통제 0이면 징집 50%, 세금 0%. 개발도 100이면 +50% | B, `DEF` 1153~1170행 |
 | 정당성(legitimacy) | 등급별 1~6단계(일부 8, 9). 단계마다 파벌·음모 가입 보정 | A, `DOM/06` 3~4절 |
 | 파벌(factions) | 독립 요구 문턱 세력 80(+20). 요구는 5일 뒤 사건으로 간다. 수용하면 독립과 쌍방 휴전 1,825일, 거부하면 전쟁. 불만 문턱 100, 승패 뒤 12개월 휴지 | A·B·재확인, `FA/독립-파벌-요구.html`, `DOM/06` 5절, `DEF` 1171행 이하 |
-| 의회(council)와 과제(tasks) | 자리: chancellor, steward, marshal, spymaster, 신앙 담당, spouse, 행정 정부의 vizier. 과제 정의 4,133개(10파일). 표본은 첩보 비밀 탐색 하나 | A, `DOM/05`, `00_spymaster_tasks.txt` 350~603행. 자리 목록 B·재확인 |
+| 의회(council)와 과제(tasks) | 자리: chancellor, steward, marshal, spymaster, 신앙 담당, spouse, 행정 정부의 vizier와 장관 자리 넷(1.3절). 과제 정의 4,133개(10파일). 표본은 첩보 비밀 탐색 하나 | A, `DOM/05`, `00_spymaster_tasks.txt` 350~603행. 자리 목록 B·재확인 |
 | 궁정 직위(court positions) | 예: 궁정 의사 최대 1자리, 학식 사용, 교체 시 의견 −15, 급여 0.1 × 시대 배율 1.25/1.5/1.75 | A, `PR/05-궁정-의사` |
 | 중앙 권한(crown authority) | feudal 정부 플래그에 있다는 것뿐. 단계별 효과는 **공백** | A(이름), `FA/통치-계약.html` |
 
@@ -198,7 +198,7 @@ CK3(Crusader Kings III)는 **나라가 아니라 한 사람을 플레이하는**
 | 상비군(men-at-arms) | 구매 150, 연대 기본 100명, 보충 월 10%. 등급별 상한 `{ 0 1 2 3 4 5 6 }`, 시작 5. 기본 유형 아홉과 공성 무기(아래 표) | B·재확인, `DEF` 637~650행, `MAA` |
 | 상성(counters) | 상대 연대 묶음의 2.0배 상성 병력이 있으면 상대 피해가 최대 90% 깎인다. 그 아래는 선형이다. 지형·겨울 보너스가 병종마다 붙는다 | B·재확인(`DEF` 604~605행), 지형 A(`DOM/08` 3절, `DOM/14` 4~5절) |
 | 기사(knights) | 무용 1당 피해 50, 강인함 10. AI는 기사 하나를 무용 10, 곧 전투력 1,100으로 센다. 기사 사건 5일마다. 기사는 다치고, 불구가 되고, 죽는다. 용병단 기사 2/3/4, 종교 무장 단체 기사 2 + 영지당 0.5 | B·재확인(`DEF` 585, 614~622행), 사건 A(`FA/전쟁-전투-정정.html` 1번, `00_knight_phase_events.txt` 706~949행), 수 B(`DEF` 1275, 1327~1328행) |
-| 지휘관(commander) | 판정 0~10. 부상 사건 기본 25 × (40 − 무용) ÷ 40(최소 0.1), 수가 많으면 줄어든다, brave ×2, craven ×0.5. 사망 사건은 이전 부상이나 낮은 군사·무용이 조건이고 사망 사유 `death_battle`과 죽인 사람을 남긴다. 군사 능력치가 우위에 들어간다는 것은 일반 규칙이지만 식은 미확정 | B·재확인(`DEF` 602~603행, `00_commander_phase_events.txt` 54~86행), 사망 A(같은 파일 89~149, 341~416행, `PR/08-지휘관-전투`). 우위 식 미확정 |
+| 지휘관(commander) | 판정 0~10. 부상 사건은 5일마다 고르는 가중 사건이다: 가중 기본 25 × (40 − 무용) ÷ 40(최소 0.1), 세력이 큰 쪽은 줄어든다, brave ×2, craven ×0.5. 아무 일 없음 가중 1000과 겨루므로 5일마다 약 2.4%(C). 사망 사건은 이전 부상이나 낮은 군사·무용이 조건이고 사망 사유 `death_battle`과 죽인 사람을 남긴다. 군사 능력치가 우위에 들어간다는 것은 일반 규칙이지만 식은 미확정 | B·재확인(`DEF` 585, 602~603행, `00_commander_phase_events.txt` 1~86행, `_combat_phase_events.info`), 사망 A(같은 파일 89~149, 341~416행, `PR/08-지휘관-전투`). 우위 식 미확정 |
 | 자동 전투(battle resolution) | 기동 3일 → 본전투(사흘마다 판정) → 추격 3일. 피해 눈금 0.03, 우위의 피해 효과 5, 본전투 사상자 가운데 30%가 실제 사망, 추격 중에는 100%. 전투 폭 = 방어자 규모 × 1(최소 100). **플레이어 후퇴는 14일 뒤부터.** 상륙 직후 30일 불리 | B·재확인, `DEF` 582~613행 |
 | 우위 수정자(combat effects) | 방어자 강 +10, 큰 강 +20, 해협 +30, 보급 부족 −10, 굶주림 −25, 상륙 직후 −30, 집결 중 −5, 부채 단계 −5~−100. 지형: 언덕 이동 0.8·폭 0.8·방어 +5·보급 −10%, 산 이동·폭 0.5·방어 +12·보급 −50% | B·재확인(`00_combat_effects.txt`), 지형 A(`DOM/14` 4절). **우위를 피해·사상자·승패로 바꾸는 식은 엔진 안에 있다(미확정)** |
 | 공성(sieges) | 20일마다 행동 하나: 돌파 30, 굶주림 15, 질병 15, 탈영 20, 교착 20(가중). 방어 사기 100 + 요새 단계당 75, 하루 1씩 감소(최소 0.5), 공성 중 월 소모 1%. 요새 단계 4/6/11/16/31마다 공성 등급이 하나 더 필요하고 모자라면 등급마다 속도 ×0.7. 강습(breach assault)이 따로 선언돼 있다 | B·재확인, `DEF` 970~1019행. 포로 목록 A(`siege_events.txt` 14~153행) |
@@ -216,7 +216,8 @@ CK3 상비군 기본 유형(B·재확인, `MAA`. 영어 이름은 CK3 스크립�
 | `pikemen_unit` | pikemen | 22 | 24 | 0 | 0 | 기병 네 유형 1 |
 | `armored_footmen` | heavy_infantry | 32 | 22 | 0 | 0 | pikemen 1, peasant_militia 2 |
 | `armored_horsemen` | heavy_cavalry | 100 | 35 | 20 | 0 | archers 1, gunpowder 1 |
-| `crossbowmen` | archers | 42 | 18 | 0 | 0 | heavy_infantry 1, heavy_cavalry 1 |
+| `crossbowmen` | archers | 42 | 18 | 0 | 0 | heavy_infantry 1, heavy_cavalry 1, archer_cavalry 0.5 |
+| `pikemen_militia` | peasant_militia | 12 | 16 | 10 | 0 | light_cavalry 1, heavy_cavalry 0.5, camel_cavalry 1. 특별 모집 전용, 구매 금 0 |
 | 화약 사수(gunpowder 유형) | gunpowder | 52 | 12 | 0 | 5 | heavy_infantry 1 |
 | `house_guard` | heavy_infantry | 40 | 32 | 0 | 24 | pikemen 2, peasant_militia 4, archers 2. 최대 1연대 |
 | 공성 무기 넷 | siege_weapon | 0 | 12 | – | – | 공성 등급 1~4, 본전투 불참 |
@@ -313,19 +314,21 @@ CK3의 강·해협 우위(+10/+20/+30)와 전투 폭(방어자 규모 × 1, 최�
 
 #### 3.4.2 자동 전투의 지휘관·영웅 부상 위험
 
-수동 전투에서는 전장에서 일어난 일이 결과다. 자동 전투에는 확률이 필요하므로 CK3 지휘관 부상 사건의 꼴(B·재확인, `00_commander_phase_events.txt` 54~86행)을 기본값으로 가져온다 (잠정 T29-6).
+수동 전투에서는 전장에서 일어난 일이 결과다. 자동 전투에는 확률이 필요하다. CK3의 부상 사건은 5일마다 아무 일 없음(가중 1000)과 겨루는 가중 25의 사건이라(B·재확인, `00_commander_phase_events.txt` 1~86행, 확률 해석은 C, `_combat_phase_events.info`) 그대로 확률로 옮길 수 없다. 그래서 v3 자동 전투의 값은 **새로 정한 잠정값**이고, CK3에서는 수정의 꼴만 가져온다 (잠정 T29-6).
 
-- 기본 확률 25%에 × (40 − 무용) ÷ 40(최소 0.1)을 곱한다. v3 능력치는 1~20이라(07장 8.1절) 이 곱은 0.5~0.975다.
-- 이긴 쪽 수가 진 쪽보다 많으면 이긴 쪽 지휘관의 확률에 × (진 쪽 세력 ÷ 이긴 쪽 세력 × 1.4, 최대 1)을 곱한다.
+- 자동 전투 한 판마다 지휘관과 배속 영웅 한 사람의 부상 확률은 기본 10%다. 이 10%는 CK3 값이 아니라 v3의 잠정값이다. CK3에서 5일마다 약 2.4%인 가중이 몇 차례 겨루는 전투 한 판의 크기를 짐작해 둔 것이며, 전투 설계 과제가 고친다.
+- 여기에 CK3 꼴의 무용 계수 × (40 − 무용) ÷ 40(최소 0.1)을 곱한다. v3 능력치는 1~20이라(07장 8.1절) 이 곱은 0.5~0.975다.
+- 전투가 열릴 때 세력이 더 큰 쪽의 지휘관과 영웅에게 × (적 세력 ÷ 자기 세력 × 1.4, 최대 1)을 곱한다. CK3 조건(`side_strength`가 적보다 클 때, 승패와 무관)을 그대로 쓴다. 3af79df9a의 "이긴 쪽"이라는 적음은 원천과 달라서 고쳤다.
 - 07장 8.1절은 특성의 효과를 모두 비워 두었으므로 brave ×2, craven ×0.5에 해당하는 곱은 쓰지 않는다. 쓰려면 7절 4번의 변경이 먼저다.
 - 부상 단계와 사망의 갈림은 `roster-framework.md` 10.5절 6번과 RBATTLE-08·09가 정한다.
 
 ### 3.5 전장이 캠페인에 돌려주는 것: 돌려받음 묶음
 
-(잠정 T29-10, T29-11, T29-12)
+(잠정 T29-10, T29-11, T29-12, T29-25)
 
 | 돌려줄 것 | CK3 원천 | v3 규칙 |
 |---|---|---|
+| **결과** | 승패, 패주한 군대의 퇴각지 가중표(B, `DEF` NRetreat) | 이긴 쪽, 진 쪽이 끝난 꼴(물러남: 후퇴 명령 / 패주: 군대 붕괴나 모든 분대 도주 / 전멸), 살아남은 분대마다 전투 뒤에 있는 곳(싸움터에 남음, 물러난 역). 3.13절의 이동과 퇴각지, 3.6절 형세가 이 칸을 읽는다 |
 | **사상자** | soft/hard 사상자, 본전투 전환 0.3, 추격 전환 1(B) | 분대마다 쓰러진 사람을 죽은 사람과 다친 사람으로 나눈다(3.5.1절) |
 | **보충** | 징집 월 3%, 상비군 월 10%(B) | 3.5.2절 |
 | **지휘관과 영웅의 결과** | 부상 단계, 불구, 사망 사유와 죽인 사람(`save_died_in_battle_variables_effect`, A·B) | 인물 ID에 남긴다: 무사, 다침(단계), 몸을 잃음, 죽음(사유 "싸움터", 죽인 사람의 ID), 붙잡힘. `roster-framework.md` 10.5절 6번과 같다 |
@@ -445,7 +448,7 @@ CK3에서 상속자가 전장에서 죽는 것은 사건 확률이었다(2.10절
 |---|---|---|---|
 | 한 사람을 플레이하고 죽으면 차례를 넘긴다 | 가져온다 | 플레이어는 한 집안의 한 사람이다. 넘김의 규칙은 세력마다 4.2~4.4절 | 바이블 1절 12행 [승인](일을 물려받는다) |
 | 여섯 능력치 | 가져온다(이미 씀) | 외교·군사·관리·음모·학식·무용. 1,022명 전원, 값 1~20, 직업과 품계에서 계산 | 바이블 1절 10행 [승인], 8절 [승인], 07장 8절(잠정 T08-52) |
-| 능력치 등급 경계 4/8/12/16 | 고친다 | v3 값 1~20에서 같은 경계를 화면의 낱말(모자람 / 보통 / 좋음 / 뛰어남)로 쓴다 | `DEF` 210행 이하(B). 07장 12.7절의 "9 이상"은 "좋음"의 안쪽이다 (잠정 T29-23) |
+| 능력치 등급 경계 4/8/12/16 | 고친다 | 네 경계가 다섯 띠를 만든다. v3 값 1~20에서 같은 경계로 화면의 낱말 다섯을 쓴다: 1~3 아주 모자람, 4~7 모자람, 8~11 보통, 12~15 좋음, 16 이상 뛰어남 | `DEF` 210행 이하(B). 07장 12.7절의 "9 이상"은 "보통" 띠 안에서 시작한다 (잠정 T29-23) |
 | 특성 | 고친다 | 성격 특성은 쓴다. 효과는 07장 8.1절대로 지금은 비어 있다. 유전 특성의 자리는 겨울의 몸(추위 견딤, 폐)과 아크의 부위 수로 나눈다 | 07장 8.1절 3항, 06장 3.5절 (잠정 T29-23) |
 | 나이 문턱 | 가져온다 | CK3 청소년 12·성인 16이 v3에 이미 있다: 자유도시 견습 열두 살(05장 5.2절), 정부 전승 기재 열여섯 살(04장 14.3절), 아크 첫 세례 열여섯 살 이후(06장 5.2절, 잠정 T07-18). 정부 징병 열아홉 살(04장 14.3절) | `DEF` 180~186행(B) |
 | 교육 | 고친다 | 6세 배정, 16세 결과의 구조. 후견인은 같은 역 사람. 정부는 학교, 자유도시들은 작업대 견습, 아크는 정비대 | `childhood_on_actions.txt`(A) (잠정 T29-23) |
@@ -637,5 +640,5 @@ CK3에서 상속자가 전장에서 죽는 것은 사건 확률이었다(2.10절
 
 - 연구 기록: `docs/research/v3-ck3-corpus-analysis.md`(분석) 0~5절.
 - 코퍼스: `DOM/01`, `DOM/05`~`DOM/14`, `RUN/ck3-인물-생애-연결조사.md`, `RUN/ck3-관계-혼인-상호작용.md`, `FA/ck3-install-reverse-analysis-ko.html`, `FA/인물-생애.html`, `FA/혈통-전승-출생.html`, `FA/승계-법.html`, `FA/통치-계약.html`, `FA/경제-건설.html`, `FA/음모-정보.html`, `FA/구실-음모.html`, `FA/관계-혼인.html`, `FA/문화-종교.html`, `FA/독립-파벌-요구.html`, `FA/전쟁-정복.html`, `FA/전쟁-전투-정정.html`, `PR/03-종교-이혼`, `PR/05-궁정-의사`, `PR/08-지휘관-전투`, `PR/13-AI-결정`, `FA/ui-research-20261029/interaction-flows.md`, `VC/representative-reconcile.md`, `VC/run-status.json`, `C/web-game/gui-src/ck3-gui-analysis.md`, `C/ck3-web-reconstruction/evidence-map.md`.
-- 설치본(이 과제에서 다시 읽음): `DEF` 582~660, 726~748, 970~1000행, `MAA`, `GAME/common/combat_effects/00_combat_effects.txt`, `GAME/common/combat_phase_events/00_commander_phase_events.txt`, `GAME/common/scripted_effects/00_death_management_effects.txt`, `GAME/common/lifestyles/00_lifestyles.txt`, `GAME/common/council_positions/00_council_positions.txt`, `GAME/common/governments/`.
+- 설치본(이 과제에서 다시 읽음): `DEF` 582~660, 726~748, 970~1000행, `MAA`, `GAME/common/combat_effects/00_combat_effects.txt`, `GAME/common/combat_phase_events/00_commander_phase_events.txt`, `_combat_phase_events.info`, `GAME/common/council_positions/01_ministry_positions.txt`, `GAME/common/scripted_effects/00_death_management_effects.txt`, `GAME/common/lifestyles/00_lifestyles.txt`, `GAME/common/council_positions/00_council_positions.txt`, `GAME/common/governments/`.
 - v3: `docs/CANON-BIBLE.md` 1, 2.5, 8, 9.4절, `docs/design/v3/01-core.md`~`07-people-and-war.md`, `docs/design/roster-framework.md`.
