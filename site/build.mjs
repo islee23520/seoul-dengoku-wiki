@@ -2,7 +2,7 @@
 // Seoul Metro Dynasties - GitHub Pages build.
 // data/sql/*.sql (raw SQL) -> in-memory SQLite -> Markdown sources in site/.vp-src -> VitePress -> dist-pages/
 // Two locales: English at the site root and Korean under /ko/. Both read the same SQL (*_ko columns hold the originals).
-// Env: SITE_BASE (default /seoul-dengoku-wiki/), SITE_REPO_URL, SITE_OUT.
+// Env: SITE_BASE (default /seoul-dengoku-wiki/), SITE_REPO_URL, SITE_OUT, SITE_SQL_DIR (default data/sql; scratch SQL copies for checks).
 import fs from 'node:fs';
 import path from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
@@ -14,7 +14,7 @@ import { relationsPage, licensePage } from './relations.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '..');
-const SQL_DIR = path.join(REPO, 'data/sql');
+const SQL_DIR = path.resolve(process.env.SITE_SQL_DIR ?? path.join(REPO, 'data/sql'));
 const SRC = path.join(HERE, '.vp-src');
 const OUT = path.resolve(process.env.SITE_OUT ?? path.join(REPO, 'dist-pages'));
 let BASE = process.env.SITE_BASE ?? '/seoul-dengoku-wiki/';
@@ -49,7 +49,129 @@ const raw = {
     edges: all('SELECT * FROM map_edge ORDER BY sort'), lines: all('SELECT * FROM map_line ORDER BY sort'), landmarks: all('SELECT * FROM map_landmark ORDER BY sort'), rail: all('SELECT * FROM map_rail ORDER BY sort'),
     holdings: all('SELECT * FROM map_holding ORDER BY sort'), underground: all('SELECT * FROM map_underground ORDER BY sort'), mapStates: all('SELECT * FROM map_state'),
   },
+  units: all('SELECT * FROM wiki_unit ORDER BY faction_id, sort, id'),
 };
+
+// ---- units (wiki_unit): category order, labels and build-failing checks ----
+// Every unit row comes from SQL. The vocabularies below are the contract of docs/design/roster-framework.md
+// (section 2.1 categories in page order, 2.2 roles, 6.1 scarce inputs); only their ids and labels live here.
+const UNIT_CATEGORIES = [
+  { id: 'commander', en: 'Commanders and Heroes', ko: '지휘관과 영웅' },
+  { id: 'infantry', en: 'Infantry', ko: '보병' },
+  { id: 'missile', en: 'Missile', ko: '사격병' },
+  { id: 'fast', en: 'Fast and Mounted', ko: '기동병' },
+  { id: 'drone', en: 'Drones', ko: '드론' },
+  { id: 'war-machine', en: 'Armour and War Machines', ko: '장갑과 전쟁 기계' },
+  { id: 'support', en: 'Support', ko: '지원' },
+];
+// Section 2.2: role id -> labels, the categories it may be used in, and the text glyph of its badge.
+const UNIT_ROLES = {
+  command: { ko: '지휘', en: 'Command', cats: ['commander'], icon: '★' },
+  champion: { ko: '투사', en: 'Champion', cats: ['commander'], icon: '✦' },
+  line: { ko: '전열', en: 'Line', cats: ['infantry'], icon: '▮' },
+  shock: { ko: '충격', en: 'Shock', cats: ['infantry', 'fast'], icon: '➤' },
+  'anti-armour': { ko: '대장갑', en: 'Anti-armour', cats: ['infantry', 'missile'], icon: '⊗' },
+  skirmish: { ko: '산개', en: 'Skirmish', cats: ['missile', 'fast'], icon: '∴' },
+  rifle: { ko: '소총', en: 'Rifle', cats: ['missile'], icon: '•' },
+  marksman: { ko: '저격', en: 'Marksman', cats: ['missile'], icon: '◎' },
+  artillery: { ko: '포격', en: 'Artillery', cats: ['missile', 'war-machine'], icon: '⌒' },
+  recon: { ko: '정찰', en: 'Recon', cats: ['fast', 'drone'], icon: '◉' },
+  raider: { ko: '습격', en: 'Raider', cats: ['fast'], icon: '↯' },
+  strike: { ko: '타격', en: 'Strike', cats: ['drone'], icon: '✕' },
+  armour: { ko: '장갑', en: 'Armour', cats: ['war-machine'], icon: '■' },
+  breacher: { ko: '돌파', en: 'Breacher', cats: ['infantry', 'support'], icon: '⇥' },
+  engineer: { ko: '공병', en: 'Engineer', cats: ['support'], icon: '⚙' },
+  medic: { ko: '구호', en: 'Medic', cats: ['support'], icon: '✚' },
+  countermeasure: { ko: '대응', en: 'Countermeasure', cats: ['support'], icon: '⊘' },
+};
+// Section 6.1: the only scarce_input words, with their page labels.
+const SCARCE_INPUTS = {
+  ammo: { ko: '탄약', en: 'Ammunition' }, cells: { ko: '전지', en: 'Cells' }, implants: { ko: '이식 부품', en: 'Implants' },
+  fuel: { ko: '연료', en: 'Fuel' }, parts: { ko: '기계 부품', en: 'Machine parts' }, medicine: { ko: '의약품', en: 'Medicine' },
+};
+// Section 6.2: the rules in priority order (Scarce-1 > ... > Scarce-5). Each matching rule gives one value; Scarce-4
+// gives fuel for the Government and the Arc, cells for the Free City. expectedScarce() runs the 6.2 steps:
+// matched values in priority order, duplicates keep the higher priority, a single value on a drone or war-machine
+// gets ',parts', and only the top two are kept. A unit matching no rule must be NULL. The build requires
+// scarce_input to equal that result exactly (values and order).
+const SCARCE4_BY_FACTION = { government: 'fuel', arc: 'fuel', 'free-city': 'cells' };
+const SCARCE_RULES = [
+  { id: 'Scarce-1', when: (u) => u.category === 'drone', value: () => 'cells', text: 'category drone gives cells' },
+  { id: 'Scarce-2', when: (u) => u.attrs.includes('baptised') || u.attrs.includes('wired-body'), value: () => 'implants', text: 'baptised or wired-body gives implants' },
+  { id: 'Scarce-3', when: (u) => u.ammo !== null && u.category !== 'drone' && !u.attrs.includes('muscle-powered'), value: () => 'ammo', text: 'non-NULL ammo on a non-drone without muscle-powered gives ammo' },
+  { id: 'Scarce-4', when: (u) => u.category === 'war-machine', value: (u) => SCARCE4_BY_FACTION[u.faction_id], text: 'war-machine gives fuel (Government, Arc) or cells (Free City)' },
+  { id: 'Scarce-5', when: (u) => u.role === 'medic', value: () => 'medicine', text: 'role medic gives medicine' },
+];
+const expectedScarce = (u) => {
+  const matched = SCARCE_RULES.filter((r) => r.when(u));
+  const values = [];
+  for (const r of matched) { const v = r.value(u); if (v && !values.includes(v)) values.push(v); }
+  if (values.length === 1 && (u.category === 'drone' || u.category === 'war-machine') && values[0] !== 'parts') values.push('parts');
+  return { matched, values: values.slice(0, 2) };
+};
+// The society document of each faction (wiki_document slug); linked only when the row exists.
+const FACTION_SOCIETY_DOC = { government: 'Government-Society', 'free-city': 'Free-City-Society', arc: 'Arc-Society' };
+const UNIT_KO_PAIRS = ['name', 'recruit_building', 'equipment', 'appearance'];
+{
+  const errs = [];
+  const unitIds = new Set(raw.units.map((u) => u.id));
+  // Rule (e): attributes and counters are JSON text with no CHECK in the schema; both must be arrays of strings.
+  const list = (u, k) => {
+    let v;
+    try { v = JSON.parse(u[k]); } catch (e) { errs.push(`${u.id}: ${k} is not valid JSON (${e.message})`); return []; }
+    if (!Array.isArray(v) || v.some((x) => typeof x !== 'string')) { errs.push(`${u.id}: ${k} must be a JSON array of strings, got ${u[k]}`); return []; }
+    return v;
+  };
+  for (const u of raw.units) {
+    u.attrs = list(u, 'attributes');
+    u.counterIds = list(u, 'counters');
+    if (!raw.factions.some((x) => x.id === u.faction_id)) errs.push(`${u.id}: faction_id '${u.faction_id}' is not a faction`);
+    if (!UNIT_CATEGORIES.some((c) => c.id === u.category)) errs.push(`${u.id}: [category] '${u.category}' is not one of ${UNIT_CATEGORIES.map((c) => c.id).join(' | ')}`);
+    const role = Object.hasOwn(UNIT_ROLES, u.role) ? UNIT_ROLES[u.role] : null;
+    if (!role) errs.push(`${u.id}: [role] '${u.role}' is not one of ${Object.keys(UNIT_ROLES).join(' | ')}`);
+    else if (!role.cats.includes(u.category)) errs.push(`${u.id}: [role] '${u.role}' is not allowed in category '${u.category}' (allowed: ${role.cats.join(', ')})`);
+    // Rule (b): an *_ko partner may not be empty while its English value is set (and the reverse).
+    for (const k of UNIT_KO_PAIRS) {
+      const en = String(u[k] ?? '').trim(), ko = String(u[`${k}_ko`] ?? '').trim();
+      if (en && !ko) errs.push(`${u.id}: ${k}_ko is empty while ${k} is set`);
+      if (ko && !en) errs.push(`${u.id}: ${k} is empty while ${k}_ko is set`);
+    }
+    // Rule (a): every counters id must be an existing unit.
+    for (const c of u.counterIds) if (!unitIds.has(c)) errs.push(`${u.id}: counters names unknown unit id '${c}'`);
+    // Rule (d): scarce_input is NULL or 1-2 section 6.1 words joined by ',' with no space; then Scarce-1..5.
+    u.scarce = [];
+    if (u.scarce_input !== null) {
+      const s = String(u.scarce_input);
+      const words = s.split(',');
+      if (!/^[a-z]+(?:,[a-z]+)?$/.test(s)) errs.push(`${u.id}: [Scarce-format] scarce_input '${s}' must be one value or two joined by ',' with no space`);
+      else if (words.some((w) => !Object.hasOwn(SCARCE_INPUTS, w))) errs.push(`${u.id}: [Scarce-vocab] scarce_input '${s}' uses a word outside ${Object.keys(SCARCE_INPUTS).join(', ')}`);
+      else if (words[0] === words[1]) errs.push(`${u.id}: [Scarce-format] scarce_input '${s}' repeats a value`);
+      else u.scarce = words;
+    }
+    if (u.scarce_input === null || u.scarce.length) {
+      const { matched, values } = expectedScarce(u);
+      const got = u.scarce_input === null ? 'NULL' : `'${u.scarce_input}'`, want = values.length ? `'${values.join(',')}'` : 'NULL';
+      if (matched.some((r) => r.id === 'Scarce-1') && matched.some((r) => r.id === 'Scarce-2')) errs.push(`${u.id}: [Scarce-1+2] a drone may not also be baptised or wired-body (section 6.2 step 6)`);
+      else if (u.category === 'war-machine' && !SCARCE4_BY_FACTION[u.faction_id]) errs.push(`${u.id}: [Scarce-4] no Scarce-4 value for faction '${u.faction_id}'`);
+      else if (u.scarce.join(',') !== values.join(',')) {
+        // Name the rule that explains the difference: a matched rule whose value is missing, then the step 5 parts
+        // value, then an order or extra-value problem.
+        const missing = matched.filter((r) => values.includes(r.value(u)) && !u.scarce.includes(r.value(u)));
+        const rule = missing.length ? missing.map((r) => `${r.id}: ${r.text}`).join('; ')
+          : values.includes('parts') && !u.scarce.includes('parts') ? 'Scarce-parts: a drone or war-machine with one input adds parts second (step 5)'
+          : u.scarce.length === values.length && u.scarce.every((w) => values.includes(w)) ? 'Scarce-order: the higher-priority value comes first (steps 1-4)'
+          : matched.length ? 'Scarce-extra: only the values the matched rules give (steps 2-6)' : 'Scarce-none: no Scarce rule matches, so scarce_input must be NULL';
+        errs.push(`${u.id}: [${rule.split(':')[0]}] ${rule.slice(rule.indexOf(':') + 2)}; scarce_input is ${got}, section 6.2 gives ${want}`);
+      }
+    }
+  }
+  // Rule (c): tier 4-5 units may be at most 30% of a faction's roster.
+  for (const fid of new Set(raw.units.map((u) => u.faction_id))) {
+    const us = raw.units.filter((u) => u.faction_id === fid), high = us.filter((u) => u.tier >= 4);
+    if (high.length / us.length > 0.3) errs.push(`${high.map((u) => u.id).join(', ')}: tier 4-5 share in faction '${fid}' is ${high.length}/${us.length} (${Math.round((100 * high.length) / us.length)}%), above 30%`);
+  }
+  if (errs.length) { console.error(errs.map((e) => `E_UNIT: ${e}`).join('\n')); console.error(`E_UNIT: ${errs.length} unit problem(s) in wiki_unit (${SQL_DIR})`); process.exit(1); }
+}
 
 // ---- UI strings (the only hand-written text; everything else comes from SQL) ----
 // Owner decision 2026-11-10: how each faction is governed. Titles (duchies) are held per district (gu).
@@ -86,6 +208,12 @@ const UI = {
     featStates: (n) => `Three factions - the Government, the Free City and Arc - and the duchies they hold.`, featPeople: (n) => `${n} characters with ranks, occupations and allegiances.`,
     featWiki: (n) => `${n} articles on history, factions, ecology, culture and geography of a post-blackout Seoul.`, featGdd: (n) => `${n} documents covering rules, systems, art direction and decisions.`,
     featUpdates: 'What changed in the wiki and when.', tagline: meta.tagline, siteTitle: meta.title,
+    u: {
+      units: 'Units', title: (n) => `${n}: Units`, lead: (n) => `${n} units, grouped by category.`, identity: 'Identity', society: 'Society', factionPage: 'Faction page',
+      strengths: 'Strengths (categories fielded)', gaps: 'Deliberate gaps (categories with no unit)', none: 'none', highTier: 'Tier 4-5 share',
+      unit: 'Unit', role: 'Role', tier: 'Tier', squad: 'Squad', hp: 'HP', ma: 'Melee attack', md: 'Melee defence', ws: 'Weapon strength', armour: 'Armour', missile: 'Missile damage', range: 'Range', ammo: 'Ammo', speed: 'Speed', ldr: 'Leadership', cost: 'Cost', upkeep: 'Upkeep', cap: 'Cap',
+      category: 'Category', recruit: 'Recruited at', scarce: 'Scarce input', attributes: 'Attributes', counters: 'Counters', equipment: 'Equipment', look: 'Appearance', gdd: 'Design reference', details: 'Unit details', openUnits: 'Units of this faction',
+    },
   },
   ko: {
     lang: 'ko-KR', label: '한국어', prefix: 'ko/', wiki: '위키', states: '단체', duchies: '공작령', orgs: '단체 (옛 국가)', orgsNote: '십육국 체제는 폐지됐다. 영토는 이제 세 세력 아래 구 하나가 공작령 하나로 나뉜다. 아래 표는 옛 국가였던 단체들이다.', factions: '세력', people: '인물', gdd: '설계 문서(GDD)', showcase: '쇼케이스',
@@ -105,6 +233,12 @@ const UI = {
     featStates: (n) => `정부, 자유도시, 아크 세 세력과 그들이 가진 공작령.`, featPeople: (n) => `직급, 직업, 소속을 가진 인물 ${n}명.`,
     featWiki: (n) => `대정전 이후 서울의 역사, 세력, 생태, 문화, 지리를 다룬 문서 ${n}개.`, featGdd: (n) => `규칙, 시스템, 아트 방향, 결정 기록을 담은 문서 ${n}개.`,
     featUpdates: '위키가 언제 무엇이 바뀌었는지.', tagline: meta.tagline_ko, siteTitle: meta.title_ko,
+    u: {
+      units: '병종', title: (n) => `${n} 병종`, lead: (n) => `병종 ${n}개를 분류별로 묶었다.`, identity: '정체성', society: '사회', factionPage: '세력 문서',
+      strengths: '강점 (갖춘 분류)', gaps: '의도된 공백 (병종이 없는 분류)', none: '없음', highTier: '4~5등급 비율',
+      unit: '병종', role: '역할', tier: '등급', squad: '분대 인원', hp: '체력', ma: '근접 공격', md: '근접 방어', ws: '무기 위력', armour: '장갑', missile: '원거리 피해', range: '사거리', ammo: '탄약', speed: '속도', ldr: '통솔', cost: '비용', upkeep: '유지비', cap: '보유 한도',
+      category: '분류', recruit: '모집 건물', scarce: '희소 자원', attributes: '특성', counters: '상대 우위', equipment: '장비', look: '외형', gdd: '설계 참조', details: '병종 상세', openUnits: '이 세력의 병종',
+    },
   },
 };
 
@@ -173,9 +307,46 @@ for (const L of [UI.en, UI.ko]) {
   // factions: territory = duchies; organizations = former states
   const members = (fid) => states.filter((s) => s.faction_id === fid);
   write(`${L.prefix}wiki/factions/index.md`, page(L.factions, `# ${L.factions}\n\n${L.statesLead(states.length, factionCount)}\n\n${factions.filter((x) => members(x.id).length).map((x) => `## [${g(x, 'name')}](${P(`wiki/factions/${x.id}/`)})\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n${duchiesOf(x.id).map((t) => `- [${g(t, 'name')}](${P(`wiki/duchies/${duchySlug(t)}/`)})`).join('\n')}\n`).join('\n')}`));
-  factions.filter((x) => members(x.id).length || people.some((p) => p.faction_id === x.id)).forEach((x) => {
+  const hasFactionPage = (x) => members(x.id).length || people.some((p) => p.faction_id === x.id);
+  const unitsOf = (fid) => raw.units.filter((u) => u.faction_id === fid);
+  factions.filter(hasFactionPage).forEach((x) => {
     const peopleN = people.filter((p) => p.faction_id === x.id).length;
-    write(`${L.prefix}wiki/factions/${x.id}/index.md`, page(g(x, 'name'), `# ${g(x, 'name')}\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n| ${L === UI.ko ? "항목" : "Field"} | ${L === UI.ko ? "값" : "Value"} |\n| --- | --- |\n${g(x, 'center_region') ? `| ${L.centerRegion} | ${cell(g(x, 'center_region'))} |\n| ${L.aiPosition} | ${cell(g(x, 'ai_position'))} |\n` : ''}| ${L.fields.state} | ${members(x.id).length} |\n| ${L.people} | ${peopleN} |\n\n${x.id === 'independent' ? `${L.independentNote}\n\n` : ''}## ${L.duchies}\n\n| ${L === UI.ko ? '공작령' : 'Duchy'} | ${L === UI.ko ? '백작령' : 'Counties'} | ${L === UI.ko ? '역' : 'Stations'} |\n| --- | --- | --- |\n${duchiesOf(x.id).map((t) => `| [${cell(g(t, 'name'))}](${P(`wiki/duchies/${duchySlug(t)}/`)}) | ${JSON.parse(t.county_ids).length} | ${stationsOfGu(t.name_ko)} |`).join('\n')}\n\n## ${L.orgs}\n\n${members(x.id).map((s) => `- ${cell(g(s, 'name'))} — ${cell(g(s, 'ruler'))}`).join('\n')}\n`));
+    write(`${L.prefix}wiki/factions/${x.id}/index.md`, page(g(x, 'name'), `# ${g(x, 'name')}\n\n${FACTION_STRUCTURE[x.id]?.[L === UI.ko ? 'ko' : 'en'] ?? ''}\n\n| ${L === UI.ko ? "항목" : "Field"} | ${L === UI.ko ? "값" : "Value"} |\n| --- | --- |\n${g(x, 'center_region') ? `| ${L.centerRegion} | ${cell(g(x, 'center_region'))} |\n| ${L.aiPosition} | ${cell(g(x, 'ai_position'))} |\n` : ''}| ${L.fields.state} | ${members(x.id).length} |\n| ${L.people} | ${peopleN} |\n${unitsOf(x.id).length ? `| ${L.u.units} | [${unitsOf(x.id).length}](${P(`wiki/factions/${x.id}/units/`)}) |\n\n[${L.u.openUnits}](${P(`wiki/factions/${x.id}/units/`)})\n` : ''}\n${x.id === 'independent' ? `${L.independentNote}\n\n` : ''}## ${L.duchies}\n\n| ${L === UI.ko ? '공작령' : 'Duchy'} | ${L === UI.ko ? '백작령' : 'Counties'} | ${L === UI.ko ? '역' : 'Stations'} |\n| --- | --- | --- |\n${duchiesOf(x.id).map((t) => `| [${cell(g(t, 'name'))}](${P(`wiki/duchies/${duchySlug(t)}/`)}) | ${JSON.parse(t.county_ids).length} | ${stationsOfGu(t.name_ko)} |`).join('\n')}\n\n## ${L.orgs}\n\n${members(x.id).map((s) => `- ${cell(g(s, 'name'))} — ${cell(g(s, 'ruler'))}`).join('\n')}\n`));
+  });
+
+  // units: one page per faction that has wiki_unit rows (no rows -> no page and no link)
+  const unitFactions = factions.filter((x) => unitsOf(x.id).length);
+  unitFactions.forEach((x) => {
+    const U = L.u, us = unitsOf(x.id), name = g(x, 'name');
+    const num = (v) => (v === null || v === undefined || v === '' ? '-' : String(v));
+    const txt = (v) => (v === null || v === undefined || String(v).trim() === '' ? '-' : cell(v));
+    const catLabel = (c) => c[L === UI.ko ? 'ko' : 'en'];
+    const lk = L === UI.ko ? 'ko' : 'en';
+    // Role badge: a text glyph plus the localized role label (CSS in theme/custom.css, no image assets).
+    // body() escapes '<' in prose, so the markdown carries a @@ROLE:<id>@@ token that is swapped for the badge afterwards.
+    const roleBadge = (u) => `@@ROLE:${u.role}@@`;
+    const badgeHtml = (role) => `<span class="unit-role unit-role-${role}" title="${UNIT_ROLES[role][lk]}"><span class="unit-role-icon" aria-hidden="true">${UNIT_ROLES[role].icon}</span>${UNIT_ROLES[role][lk]}</span>`;
+    const scarceText = (u) => (u.scarce.length ? u.scarce.map((w) => SCARCE_INPUTS[w][lk]).join(' · ') : '-');
+    const present = UNIT_CATEGORIES.filter((c) => us.some((u) => u.category === c.id));
+    const absent = UNIT_CATEGORIES.filter((c) => !present.includes(c));
+    const high = us.filter((u) => u.tier >= 4).length;
+    const soc = FACTION_SOCIETY_DOC[x.id] && raw.docs.find((d) => d.slug === FACTION_SOCIETY_DOC[x.id]);
+    const unitName = (id) => g(raw.units.find((u) => u.id === id), 'name');
+    const counterLinks = (u) => (u.counterIds.length ? u.counterIds.map((id) => `[${cell(unitName(id))}](${raw.units.find((v) => v.id === id).faction_id === x.id ? '' : P(`wiki/factions/${raw.units.find((v) => v.id === id).faction_id}/units/`)}#unit-${id})`).join(', ') : '-');
+    const head = [U.unit, U.role, U.tier, U.squad, U.hp, U.ma, U.md, U.ws, U.armour, U.missile, U.range, U.ammo, U.speed, U.ldr, U.cost, U.upkeep, U.cap, U.counters];
+    const row = (u) => [`[${cell(g(u, 'name'))}](#unit-${u.id})`, roleBadge(u), num(u.tier), num(u.squad_size), num(u.hp), num(u.melee_attack), num(u.melee_defence), num(u.weapon_strength), num(u.armour), num(u.missile_damage), num(u.range), num(u.ammo), num(u.speed), num(u.leadership), num(u.cost), num(u.upkeep), num(u.unit_cap), counterLinks(u)];
+    const table = (rows) => `| ${head.join(' | ')} |\n| ${head.map((_, i) => (i < 2 || i === head.length - 1 ? '---' : '---:')).join(' | ')} |\n${rows.map((u) => `| ${row(u).join(' | ')} |`).join('\n')}\n`;
+    const summary = [
+      soc ? `- ${U.society}: [${cell(g(soc, 'title'))}](${P(`wiki/${soc.slug}/`)})` : '',
+      hasFactionPage(x) ? `- ${U.factionPage}: [${cell(name)}](${P(`wiki/factions/${x.id}/`)})` : '',
+      duchiesOf(x.id).length ? `- ${L.duchies}: ${duchiesOf(x.id).map((t) => `[${cell(g(t, 'name'))}](${P(`wiki/duchies/${duchySlug(t)}/`)})`).join(' · ')}` : '',
+      `- ${U.strengths}: ${present.map((c) => `${catLabel(c)} (${us.filter((u) => u.category === c.id).length})`).join(' · ')}`,
+      `- ${U.gaps}: ${absent.length ? absent.map(catLabel).join(' · ') : U.none}`,
+      `- ${U.highTier}: ${high}/${us.length}`,
+    ].filter(Boolean).join('\n');
+    const detail = (u) => `### ${cell(g(u, 'name'))} {#unit-${u.id}}\n\n| ${L === UI.ko ? '항목' : 'Field'} | ${L === UI.ko ? '값' : 'Value'} |\n| --- | --- |\n| ${U.category} | ${catLabel(UNIT_CATEGORIES.find((c) => c.id === u.category))} |\n| ${U.role} | ${roleBadge(u)} |\n| ${U.tier} | ${num(u.tier)} |\n| ${U.recruit} | ${txt(g(u, 'recruit_building'))} |\n| ${U.scarce} | ${scarceText(u)} |\n| ${U.attributes} | ${u.attrs.length ? u.attrs.map((a) => `\`${cell(a)}\``).join(' ') : '-'} |\n| ${U.counters} | ${counterLinks(u)} |\n| ${U.equipment} | ${txt(g(u, 'equipment'))} |\n| ${U.look} | ${txt(g(u, 'appearance'))} |\n| ${U.gdd} | ${u.gdd_ref ? `\`${cell(u.gdd_ref)}\`` : '-'} |\n`;
+    const md = `## ${U.identity}\n\n${summary}\n\n${present.map((c) => `## ${catLabel(c)}\n\n${table(us.filter((u) => u.category === c.id))}`).join('\n')}\n## ${U.details}\n\n${present.flatMap((c) => us.filter((u) => u.category === c.id)).map(detail).join('\n')}`;
+    write(`${L.prefix}wiki/factions/${x.id}/units/index.md`, page(U.title(name), `# ${U.title(name)}\n\n${U.lead(us.length)}\n\n<div class="unit-roster">\n\n${body(md, L).replace(/@@ROLE:([a-z-]+)@@/g, (m, role) => badgeHtml(role))}\n</div>\n`, { outline: [2, 2] }));
   });
 
   // states
@@ -252,7 +423,7 @@ for (const L of [UI.en, UI.ko]) {
         { text: L.gdd, link: P('gdd/') }, { text: L.showcase, link: showcaseLink, target: '_self' },
       ],
       sidebar: {
-        [P('wiki/')]: [{ text: L.wiki, items: [{ text: L.wikiHome, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L.duchies, link: P('wiki/duchies/') }, { text: L === UI.ko ? '영토 지도' : 'Territory Map', link: P('wiki/map/') }, { text: L.people, link: P('wiki/people/') }, { text: STR[L === UI.ko ? 'ko' : 'en'].clanIndex, link: P('wiki/families/') }, { text: L.updates, link: P('wiki/updates/') }, { text: L === UI.ko ? '가신 관계' : 'Retainers', link: P('wiki/relations/') }, { text: 'License', link: P('wiki/license/') }] }, ...wikiGroups],
+        [P('wiki/')]: [{ text: L.wiki, items: [{ text: L.wikiHome, link: P('wiki/') }, { text: L.factions, link: P('wiki/factions/') }, { text: L.duchies, link: P('wiki/duchies/') }, { text: L === UI.ko ? '영토 지도' : 'Territory Map', link: P('wiki/map/') }, { text: L.people, link: P('wiki/people/') }, { text: STR[L === UI.ko ? 'ko' : 'en'].clanIndex, link: P('wiki/families/') }, { text: L.updates, link: P('wiki/updates/') }, { text: L === UI.ko ? '가신 관계' : 'Retainers', link: P('wiki/relations/') }, { text: 'License', link: P('wiki/license/') }] }, ...(unitFactions.length ? [{ text: L.u.units, collapsed: true, items: unitFactions.map((x) => ({ text: g(x, 'name'), link: P(`wiki/factions/${x.id}/units/`) })) }] : []), ...wikiGroups],
         [P('gdd/')]: [{ text: L.designDocs, items: [{ text: L.gddHome, link: P('gdd/') }] }, ...gddGroups],
       },
       outline: { level: [2, 3], label: L.onThisPage },
