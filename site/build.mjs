@@ -11,6 +11,7 @@ import { spawnSync } from 'node:child_process';
 import { personPage, familyTreeSvg, STR } from './people.mjs';
 import { buildMapData, DISTRICT_FACTION } from './map.mjs';
 import { relationsPage, licensePage } from './relations.mjs';
+import { collectReleases, renderRelease } from '../scripts/pages/release-notes.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '..');
@@ -23,6 +24,8 @@ if (!BASE.endsWith('/')) BASE += '/';
 const REPO_URL = process.env.SITE_REPO_URL ?? 'https://github.com/islee23520/seoul-dengoku-wiki';
 const SHOWCASE_DIR = path.join(REPO, 'artifacts/seoul-showcase');
 const SHOWCASE_ROUTE = 'wiki/seoul-showcase/';
+// Release history is generated from git tags and first-parent history at build time (nothing is committed back). Needs full history + tags.
+const RELEASES = collectReleases({ repo: REPO, repoUrl: REPO_URL });
 
 const db = new DatabaseSync(':memory:');
 const files = fs.readdirSync(SQL_DIR).filter((f) => f.endsWith('.sql')).sort();
@@ -227,10 +230,15 @@ for (const L of [UI.en, UI.ko]) {
   });
 
 
-  // updates
+  // updates: releases generated from git (newest first), then the 6 hand-kept rows from SQL as a 'before automatic versioning' section
   const byDate = new Map();
   for (const u of updates) { if (!byDate.has(u.date)) byDate.set(u.date, []); byDate.get(u.date).push(u); }
-  write(`${L.prefix}wiki/updates/index.md`, page(L.updates, `# ${L.updates}\n\n${[...byDate].map(([d, us]) => `## ${d}\n\n${us.map((u) => `- **${g(u, 'status')}** · ${g(u, 'category')} — ${u.slug && raw.docs.some((x) => x.slug === u.slug) ? `[${g(u, 'title')}](${P(`wiki/${u.slug}/`)})` : g(u, 'title')}`).join('\n')}\n`).join('\n')}`));
+  const U = L === UI.ko
+    ? { intro: '이 페이지는 git 커밋에서 자동으로 만든다. 버전은 main의 git 태그 vX.Y.Z가 정본이며, feat는 minor, 그 밖의 유형은 patch, `!`나 BREAKING 꼬리말은 major로 올린다. 배포되는 main의 병합마다 릴리즈 하나가 만들어진다.', pending: '태그는 배포 뒤에 만들어진다', before: '자동 버저닝 이전', beforeLead: '자동 버저닝 이전에 손으로 관리한 갱신 기록이다.' }
+    : { intro: 'This page is generated from git commits. The version is the git tag vX.Y.Z on main: feat bumps minor, any other type bumps patch, and `!` or a BREAKING footer bumps major. Every merge to main that deploys becomes one release. Commit subjects are the original Korean text, shown unchanged and not machine-translated; only the type labels are English.', pending: 'tag is created after deploy', before: 'Before automatic versioning', beforeLead: 'Update records kept by hand before automatic versioning.' };
+  const releasesMd = RELEASES.releases.slice().reverse().map((r) => renderRelease(r, L === UI.ko ? 'ko' : 'en', { titleLevel: 2, spanKo: L !== UI.ko, pendingLabel: U.pending })).join('\n');
+  const handMd = [...byDate].map(([d, us]) => `### ${d}\n\n${us.map((u) => `- **${g(u, 'status')}** · ${g(u, 'category')} — ${u.slug && raw.docs.some((x) => x.slug === u.slug) ? `[${g(u, 'title')}](${P(`wiki/${u.slug}/`)})` : g(u, 'title')}`).join('\n')}\n`).join('\n');
+  write(`${L.prefix}wiki/updates/index.md`, page(L.updates, `# ${L.updates}\n\n${U.intro}\n\n${releasesMd}\n## ${U.before}\n\n${U.beforeLead}\n\n${handMd}`));
 
   // GDD
   raw.gddDocs.forEach((d) => {
@@ -408,5 +416,5 @@ const decodeHtmlAttr = (v) => v.replace(/&quot;/g, '"').replace(/&#39;|&apos;/g,
   console.log(`fragment href normalization: ${rewritten} href(s) rewritten to real ids`);
 }
 
-fs.writeFileSync(path.join(OUT, 'build.json'), JSON.stringify({ title: meta.title, base: BASE, locales: ['en', 'ko'], wikiDocs: raw.docs.length, gddDocs: raw.gddDocs.length, factions: raw.factions.length, clans: raw.clans.length, mapRegions: raw.map.regions.length, mapTitles: raw.map.titles.length, mapStations: raw.map.stations.length, personDetails: raw.details.size, states: raw.states.length, people: raw.people.length, updates: raw.updates.length, showcase, sqlFiles: files }, null, 1));
+fs.writeFileSync(path.join(OUT, 'build.json'), JSON.stringify({ title: meta.title, base: BASE, locales: ['en', 'ko'], wikiDocs: raw.docs.length, gddDocs: raw.gddDocs.length, factions: raw.factions.length, clans: raw.clans.length, mapRegions: raw.map.regions.length, mapTitles: raw.map.titles.length, mapStations: raw.map.stations.length, personDetails: raw.details.size, states: raw.states.length, people: raw.people.length, updates: raw.updates.length, releases: { head: RELEASES.head, count: RELEASES.releases.length, versions: RELEASES.releases.map((r) => ({ version: r.version, date: r.date, tagged: r.tagged, bump: r.bump, commits: r.counts.commits })), warnings: RELEASES.warnings }, showcase, sqlFiles: files }, null, 1));
 console.log(`built ${meta.title} (en + ko): wiki ${raw.docs.length}, gdd ${raw.gddDocs.length}, factions ${raw.factions.length}, states ${raw.states.length}, people ${raw.people.length}; showcase ${showcase} -> ${path.relative(REPO, OUT)} (base ${BASE})`);

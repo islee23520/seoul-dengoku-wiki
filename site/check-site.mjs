@@ -26,7 +26,8 @@ const knownBroken = new Set(fs.existsSync(baselinePath)
   ? fs.readFileSync(baselinePath, 'utf8').split(/\r?\n/).filter(Boolean)
   : []);
 // The language switcher is labelled in its own language (한국어) on every English page; that label is not page content.
-const visible = (html) => html.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<a [^>]*href="[^"]*\/ko\/[^"]*"[^>]*>[\s\S]*?<\/a>/g, ' ').replace(/<[^>]+>/g, ' ');
+// The Update History page quotes Korean commit subjects verbatim inside <span lang="ko"> on the English page (not machine-translated); that quoted text is not English page prose.
+const visible = (html) => html.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<span lang="ko">[\s\S]*?<\/span>/g, ' ').replace(/<a [^>]*href="[^"]*\/ko\/[^"]*"[^>]*>[\s\S]*?<\/a>/g, ' ').replace(/<[^>]+>/g, ' ');
 
 // Path of a built page relative to OUT, e.g. wiki/foo/index.html -> foo, ko/gdd/a/b/index.html -> a/b.
 const slugOf = (rel) => rel.replace(/^(?:ko\/)?(?:wiki|gdd)\//, '').replace(/\/index\.html$/, '');
