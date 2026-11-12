@@ -19,7 +19,7 @@ On the night of the Great Blackout, around 2026, the duty staff at the Yeongdeun
 
 ### Firearms Then and Now
 
-In 2026 firearms and crossbows were licensed under South Korean law, and the armed forces carried the K-series small arms. Civilians didn't carry guns as a matter of course. After the Blackout those weapons went wherever their carriers went. Rifles, pistols and shotguns still fire in 2126. Ammunition is what runs short: brass casings can be refilled, but primers and powder are spent once, and primers are the hardest thing to replace.
+In 2026 firearms and crossbows were licensed under South Korean law, and the armed forces carried domestically made small arms. Civilians didn't carry guns as a matter of course. After the Blackout those weapons went wherever their carriers went. Rifles, pistols and shotguns still fire in 2126. Ammunition is what runs short: brass casings can be refilled, but primers and powder are spent once, and primers are the hardest thing to replace.
 
 ### Drones and Machines
 
@@ -31,8 +31,8 @@ Drones came out of storerooms, police stations and depots, and they still scout 
 
 | Equipment | Function | Before the collapse | Access in 2126 | Consumption and repair | Who carries it |
 |---|---|---|---|---|---|
-| Service rifles (K2 and related models) | Standard rifle | Military issue; not a civilian item | Inherited, recovered or traded. Every carrier has their own story of how they got it | Compatible rounds, parts and a skilled hand. Numbers aren't recorded | Government levies and guards, Free City contract crews, Arc escorts |
-| Older reserve rifles (M16 family) | Reserve stock | Issued for reserve training in 2015 | Only where a unit's books or stores survived | Rounds, magazines, parts and storage are each a separate bottleneck | Holders of old stores; an empty rifle still serves as a bayonet staff |
+| 5.56 mm service rifle, pre-collapse national issue | Standard rifle | Military issue; not a civilian item | Inherited, recovered or traded. Every carrier has their own story of how they got it | Compatible rounds, parts and a skilled hand. Numbers aren't recorded | Government levies and guards, Free City contract crews, Arc escorts |
+| Older 5.56 mm rifle from reserve stores | Reserve stock | Issued for reserve training in 2015 | Only where a unit's books or stores survived | Rounds, magazines, parts and storage are each a separate bottleneck | Holders of old stores; an empty rifle still serves as a bayonet staff |
 | Service pistols | Sidearm for guards and officers | Military and police issue | Locked stores with a key and a list | Pistol rounds are a separate stock from rifle rounds | Guards and officers. Former patrols start with a baton and shield |
 | Squad support weapons | Suppression and convoy cover | Military squad weapons | Held at faction scale, not by individuals | Heavy round use; barrels and cooling need a workshop | Defended stations and armies on campaign |
 | Baton, patrol shield, riot gear | Restraint, protection, station guard | Police, local guards, station security | Standard for former patrols and station guards | Shield and cloth repair; no rounds | Station guards |
@@ -60,9 +60,9 @@ The Government fields the most guns and armoured vehicles, so its rounds and fue
 In 2026 there were licensing rules for guns and crossbows, military arms, and rail and facility tools. These records show what existed then. They don't show how much of it reached any station a century later.
 
 - The firearms law covered the making, sale, lending, carriage, holding and use of guns, swords, explosives, sprays, stun devices and crossbows. It wasn't a country where civilians carried guns every day. ([National Law Information Center](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98), read 2026-09-12)
-- Public sources describe the K2 as the standard assault rifle of the armed forces. How many reached whom by 2026 isn't in those sources. ([Daewoo K2](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_K2), read 2026-09-12)
-- A 2015 government briefing said M16 rifles would replace carbines for reserve training. The issue is confirmed; quantities and depots aren't. ([Policy briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), read 2026-09-20)
-- A maker's public defence page shows the K-series small arms line existed. A product page doesn't say how many were issued. ([SNT Motiv](https://www.sntmotiv.com/eng/business/defense.html), read 2026-09-20)
+- Public sources describe the standard assault rifle of the armed forces. How many reached whom by 2026 isn't in those sources. (encyclopedia entry on the service rifle, read 2026-09-12)
+- A 2015 government briefing said older 5.56 mm rifles would replace carbines for reserve training. The issue is confirmed; quantities and depots aren't. ([Policy briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), read 2026-09-20)
+- A domestic arms maker's public page shows the national small arms line existed. A product page doesn't say how many were issued. (read 2026-09-20)
 - The police equipment rules and the issued pistol models of 2026 haven't survived.
 
 ## Related Pages

@@ -2494,7 +2494,7 @@ On the night of the Great Blackout, around 2026, the duty staff at the Yeongdeun
 
 ### Firearms Then and Now
 
-In 2026 firearms and crossbows were licensed under South Korean law, and the armed forces carried the K-series small arms. Civilians didn''t carry guns as a matter of course. After the Blackout those weapons went wherever their carriers went. Rifles, pistols and shotguns still fire in 2126. Ammunition is what runs short: brass casings can be refilled, but primers and powder are spent once, and primers are the hardest thing to replace.
+In 2026 firearms and crossbows were licensed under South Korean law, and the armed forces carried domestically made small arms. Civilians didn''t carry guns as a matter of course. After the Blackout those weapons went wherever their carriers went. Rifles, pistols and shotguns still fire in 2126. Ammunition is what runs short: brass casings can be refilled, but primers and powder are spent once, and primers are the hardest thing to replace.
 
 ### Drones and Machines
 
@@ -2506,8 +2506,8 @@ Drones came out of storerooms, police stations and depots, and they still scout 
 
 | Equipment | Function | Before the collapse | Access in 2126 | Consumption and repair | Who carries it |
 |---|---|---|---|---|---|
-| Service rifles (K2 and related models) | Standard rifle | Military issue; not a civilian item | Inherited, recovered or traded. Every carrier has their own story of how they got it | Compatible rounds, parts and a skilled hand. Numbers aren''t recorded | Government levies and guards, Free City contract crews, Arc escorts |
-| Older reserve rifles (M16 family) | Reserve stock | Issued for reserve training in 2015 | Only where a unit''s books or stores survived | Rounds, magazines, parts and storage are each a separate bottleneck | Holders of old stores; an empty rifle still serves as a bayonet staff |
+| 5.56 mm service rifle, pre-collapse national issue | Standard rifle | Military issue; not a civilian item | Inherited, recovered or traded. Every carrier has their own story of how they got it | Compatible rounds, parts and a skilled hand. Numbers aren''t recorded | Government levies and guards, Free City contract crews, Arc escorts |
+| Older 5.56 mm rifle from reserve stores | Reserve stock | Issued for reserve training in 2015 | Only where a unit''s books or stores survived | Rounds, magazines, parts and storage are each a separate bottleneck | Holders of old stores; an empty rifle still serves as a bayonet staff |
 | Service pistols | Sidearm for guards and officers | Military and police issue | Locked stores with a key and a list | Pistol rounds are a separate stock from rifle rounds | Guards and officers. Former patrols start with a baton and shield |
 | Squad support weapons | Suppression and convoy cover | Military squad weapons | Held at faction scale, not by individuals | Heavy round use; barrels and cooling need a workshop | Defended stations and armies on campaign |
 | Baton, patrol shield, riot gear | Restraint, protection, station guard | Police, local guards, station security | Standard for former patrols and station guards | Shield and cloth repair; no rounds | Station guards |
@@ -2535,9 +2535,9 @@ The Government fields the most guns and armoured vehicles, so its rounds and fue
 In 2026 there were licensing rules for guns and crossbows, military arms, and rail and facility tools. These records show what existed then. They don''t show how much of it reached any station a century later.
 
 - The firearms law covered the making, sale, lending, carriage, holding and use of guns, swords, explosives, sprays, stun devices and crossbows. It wasn''t a country where civilians carried guns every day. ([National Law Information Center](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98), read 2026-09-12)
-- Public sources describe the K2 as the standard assault rifle of the armed forces. How many reached whom by 2026 isn''t in those sources. ([Daewoo K2](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_K2), read 2026-09-12)
-- A 2015 government briefing said M16 rifles would replace carbines for reserve training. The issue is confirmed; quantities and depots aren''t. ([Policy briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), read 2026-09-20)
-- A maker''s public defence page shows the K-series small arms line existed. A product page doesn''t say how many were issued. ([SNT Motiv](https://www.sntmotiv.com/eng/business/defense.html), read 2026-09-20)
+- Public sources describe the standard assault rifle of the armed forces. How many reached whom by 2026 isn''t in those sources. (encyclopedia entry on the service rifle, read 2026-09-12)
+- A 2015 government briefing said older 5.56 mm rifles would replace carbines for reserve training. The issue is confirmed; quantities and depots aren''t. ([Policy briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), read 2026-09-20)
+- A domestic arms maker''s public page shows the national small arms line existed. A product page doesn''t say how many were issued. (read 2026-09-20)
 - The police equipment rules and the issued pistol models of 2026 haven''t survived.
 
 ## Related Pages
@@ -2562,7 +2562,7 @@ In 2026 there were licensing rules for guns and crossbows, military arms, and ra
 
 ### 그때의 화기와 지금의 화기
 
-2026년에는 총포와 석궁이 법으로 허가 대상이었고, 국군은 K계열 소화기를 썼다. 민간인이 일상으로 총을 드는 나라는 아니었다. 대정전 뒤 그 무기들은 들고 있던 사람이 가는 곳으로 갔다. 소총과 권총과 산탄총은 2126년에도 발사된다. 모자라는 것은 탄약이다. 황동 탄피는 다시 채울 수 있지만 뇌관과 장약은 한 번 쓰면 끝이고, 뇌관이 가장 바꾸기 어렵다.
+2026년에는 총포와 석궁이 법으로 허가 대상이었고, 국군은 국산 소화기를 썼다. 민간인이 일상으로 총을 드는 나라는 아니었다. 대정전 뒤 그 무기들은 들고 있던 사람이 가는 곳으로 갔다. 소총과 권총과 산탄총은 2126년에도 발사된다. 모자라는 것은 탄약이다. 황동 탄피는 다시 채울 수 있지만 뇌관과 장약은 한 번 쓰면 끝이고, 뇌관이 가장 바꾸기 어렵다.
 
 ### 드론과 기계
 
@@ -2574,8 +2574,8 @@ In 2026 there were licensing rules for guns and crossbows, military arms, and ra
 
 | 장비 | 기능 | 붕괴 전 | 2126년의 접근 | 소모와 수리 | 누가 드는가 |
 |---|---|---|---|---|---|
-| 제식 소총(K2와 관련 모델) | 기본 소총 | 군 지급품. 민간 물품 아님 | 물려받거나 회수하거나 거래한다. 지닌 사람마다 얻은 사연이 다르다 | 맞는 탄, 부품, 숙련된 손. 수량은 기록되지 않음 | 정부 징집병과 경비, 자유도시 계약 조원, 아크 호위 |
-| 구형 예비군 소총(M16 계열) | 예비 비축 | 2015년 예비군 훈련에 지급 | 부대 장부나 창고가 남은 곳에서만 | 탄, 탄창, 부품, 보관 상태가 저마다 따로 병목 | 옛 창고를 쥔 쪽. 빈 총도 총검 자루로는 쓴다 |
+| 붕괴 전 국군 지급 5.56mm 제식 소총 | 기본 소총 | 군 지급품. 민간 물품 아님 | 물려받거나 회수하거나 거래한다. 지닌 사람마다 얻은 사연이 다르다 | 맞는 탄, 부품, 숙련된 손. 수량은 기록되지 않음 | 정부 징집병과 경비, 자유도시 계약 조원, 아크 호위 |
+| 예비군 창고의 구형 5.56mm 소총 | 예비 비축 | 2015년 예비군 훈련에 지급 | 부대 장부나 창고가 남은 곳에서만 | 탄, 탄창, 부품, 보관 상태가 저마다 따로 병목 | 옛 창고를 쥔 쪽. 빈 총도 총검 자루로는 쓴다 |
 | 제식 권총 | 경비와 장교의 측무장 | 군·경찰 지급품 | 열쇠와 명부가 있는 잠긴 창고 | 권총탄은 소총탄과 다른 재고 | 경비와 장교. 전직 순찰은 봉과 방패로 시작한다 |
 | 분대지원화기 | 제압과 호송 엄호 | 군 분대 화기 | 개인이 아니라 세력 규모로 보유 | 탄 소모가 크다. 총열과 냉각은 공방이 필요 | 방어 거점과 원정 군대 |
 | 봉, 순찰 방패, 진압 장구 | 제압, 방호, 역 경비 | 경찰, 자치 경비, 역 보안 | 전직 순찰과 역 경비의 기본 | 방패와 피복 수리. 탄 없음 | 역 경비 |
@@ -2603,9 +2603,9 @@ In 2026 there were licensing rules for guns and crossbows, military arms, and ra
 2026년에는 총포와 석궁의 허가 제도, 군용 무기, 철도와 시설 공구가 있었다. 아래 기록은 그때 무엇이 있었는지 보여 준다. 백 년 뒤 어느 역에 얼마나 닿았는지는 보여 주지 않는다.
 
 - 총포 법령은 총포, 도검, 화약류, 분사기, 전자충격기, 석궁의 제조와 판매, 임대, 운반, 소지, 사용을 정했다. 민간인이 날마다 총을 드는 나라는 아니었다. ([국가법령정보센터](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98), 열람 2026-09-12)
-- 공개 자료는 K2를 국군 제식 돌격소총으로 소개한다. 2026년까지 누구에게 몇 정이 갔는지는 그 자료에 없다. ([Daewoo K2](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_K2), 열람 2026-09-12)
-- 2015년 정책브리핑은 예비군 훈련에 카빈 대신 M16을 지급한다고 밝혔다. 지급 사실은 확인되지만 수량과 창고는 확인되지 않는다. ([정책브리핑](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), 열람 2026-09-20)
-- 제조사의 공개 방산 페이지는 K계열 소화기 생산 계열이 있었음을 보여 준다. 제품 소개는 지급 수량을 말하지 않는다. ([SNT 모티브](https://www.sntmotiv.com/eng/business/defense.html), 열람 2026-09-20)
+- 공개 자료는 국군 제식 돌격소총을 소개한다. 2026년까지 누구에게 몇 정이 갔는지는 그 자료에 없다. (제식 소총 백과 항목, 열람 2026-09-12)
+- 2015년 정책브리핑은 예비군 훈련에 카빈 대신 구형 5.56mm 소총을 지급한다고 밝혔다. 지급 사실은 확인되지만 수량과 창고는 확인되지 않는다. ([정책브리핑](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), 열람 2026-09-20)
+- 국내 방산 제조사의 공개 페이지는 국산 소화기 생산 계열이 있었음을 보여 준다. 제품 소개는 지급 수량을 말하지 않는다. (열람 2026-09-20)
 - 2026년 경찰 장비 세칙과 지급된 권총 모델은 남아 있지 않다.
 
 ## 관련 문서
@@ -42815,7 +42815,7 @@ Some people carry machines in their own bodies: a hand, an eye, a leg, or more. 
 
 ### Field Trials in 2026
 
-In 2026 Korean manufacturing had 1,012 robots for every 10,000 workers. The model for humanoids on the shop floor was Boston Dynamics'' Atlas, moving materials with little supervision in field trials at Hyundai ([Atlas](https://www.bostondynamics.com/atlas), read 2026-09-17; [IFR 2024-11-20](https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years), read 2026-09-17). Once the calling networks went down, there was no foundry to build that line again.
+In 2026 Korean manufacturing had 1,012 robots for every 10,000 workers. The model for humanoids on the shop floor was a pre-collapse bipedal labour robot, moving materials with little supervision in field trials run by a large carmaker''s robotics arm ([IFR 2024-11-20](https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years), read 2026-09-17). Once the calling networks went down, there was no foundry to build that line again.
 
 The machines left in 2126 fall into two kinds: those that stopped at their charging terminals and those that still repeat their last carrying order. They sit in the Guro factory blocks, the Cheonwang depot workshops and the sealed bays of the Magok test track. Technicians replace hoses, terminals and lenses and turn them into pumps and duty stoves. They can''t repair a whole neural network. What can be known, held, repaired and made is set out in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
@@ -42851,7 +42851,7 @@ Clearing an animal colony with guns is a last resort, and rounds are too scarce 
 |---|---|---|
 | People | Subway districts, service rolls, workplaces | The three factions in their stations, paper ledgers, inherited trades |
 | People with machine parts | Medical prostheses and implants | Scarce parts reached through registry, market or baptism. [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/) |
-| Logistics humanoids | Atlas-type field trials; factories among the densest in the world | Stopped remnants, repeated carrying, salvaged modules |
+| Logistics humanoids | Field trials of bipedal labour robots; factories among the densest in the world | Stopped remnants, repeated carrying, salvaged modules |
 | Disaster-response machines | Search, watch and carrying routines tied to calling networks | Repeating in sealed galleries until the battery fails or charging stops. [Lost Technology](/wiki/Lost-Technology-Lineage/) |
 | Raptors, dogs, rats | Han River birds, abandoned dogs, station rats | Colonies on towers, docks and transfer trays |
 
@@ -42887,7 +42887,7 @@ Clearing an animal colony with guns is a last resort, and rounds are too scarce 
 
 ### 2026년 현장 시험
 
-2026년 한국 제조업의 로봇 밀도는 근로자 1만 명당 1,012대였다. 현장 휴머노이드의 본보기는 보스턴 다이내믹스의 아틀라스로, 현대차 현장 시험에서 적은 감독으로 자재를 옮겼다 ([Atlas](https://www.bostondynamics.com/atlas), 열람 2026-09-17; [IFR 2024-11-20](https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years), 열람 2026-09-17). 호출망이 끊긴 뒤에는 그 라인을 다시 깔 공장이 없었다.
+2026년 한국 제조업의 로봇 밀도는 근로자 1만 명당 1,012대였다. 현장 휴머노이드의 본보기는 붕괴 전의 두 발 노동 로봇으로, 큰 자동차 회사의 로봇 부문이 벌인 현장 시험에서 적은 감독으로 자재를 옮겼다 ([IFR 2024-11-20](https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years), 열람 2026-09-17). 호출망이 끊긴 뒤에는 그 라인을 다시 깔 공장이 없었다.
 
 2126년에 남은 기계는 충전 단자에서 멈춘 것과 마지막 운반 명령을 되풀이하는 것으로 나뉜다. 구로 공단 동, 천왕 기지 정비고, 마곡 시험 구간 봉인 칸에 있다. 정비사는 호스·단자·렌즈를 갈아 펌프와 당직 난로를 만든다. 신경망 전체는 고칠 수 없다. 알고, 갖고, 고치고, 만드는 일의 범위는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
 
@@ -42923,7 +42923,7 @@ Clearing an animal colony with guns is a last resort, and rounds are too scarce 
 |---|---|---|
 | 사람 | 지하철 생활권, 병역 명부, 생업 현장 | 역을 쥔 세 세력, 종이 장부, 물려받는 생업 |
 | 기계 부품을 단 사람 | 의료용 보철과 이식 | 등록부, 장터, 세례로 닿는 귀한 부품. [사이버웨어와 희소성](/wiki/Cyberware-and-Scarcity/) |
-| 물류 휴머노이드 | 아틀라스 계열 현장 시험, 세계 앞줄의 공장 밀도 | 멈춘 잔존, 되풀이되는 운반, 떼어 낸 모듈 |
+| 물류 휴머노이드 | 두 발 노동 로봇의 현장 시험, 세계 앞줄의 공장 밀도 | 멈춘 잔존, 되풀이되는 운반, 떼어 낸 모듈 |
 | 방재 기계 | 호출망에 묶인 수색·경계·운반 루틴 | 배터리가 닳거나 충전이 끊길 때까지 봉인 갤러리에서 되풀이. [잃어버린 기술](/wiki/Lost-Technology-Lineage/) |
 | 맹금·들개·쥐 | 한강 조류, 유기견, 역 쥐 | 철탑·하역장·환승 트레이의 군락 |
 
@@ -46223,7 +46223,7 @@ Each facility devoured labor, power, and raw materials to keep turning. A facili
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Structures', 'The Structures Compendium', '구조물 총람', 'structures', 0, '
 Seoul in 2126 isn''t a flat map of districts. It''s a web of stations, tunnels, depots and sluices. In 2026 people already crossed districts by subway, and the purification plants and depots were the heavy points of that web. On the night of [the Great Blackout](/wiki/World-Unbinding/), remote control stopped. Then the winter came and didn''t leave. People went down into the stations, and only as many survived as the stations could hold. Stations became strongholds, tunnels became passages that need permission, and sluices became gates that open only under signature.
 
-A century on, the three factions hold these points and lines as the places where they live. The Government holds the fourteen districts north of the river, the Free City the seven in the southwest, and the Arc the four in Gangnam. Each duchy is called by its district''s name.
+A century on, the three factions hold these points and lines as the places where they live. The Government holds the fourteen districts north of the river, the Free City the seven in the southwest, and the Arc the four in Gangnam. Each faction''s holding goes by its district''s name: the Government calls a district an Electorate held by a Senator, a Free City district is a Polis led by an Archon, and an Arc district is a Gate held by one of its clans.
 
 The [Rail Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed station names for 315 stations. [The Structure of the World Map](/wiki/World-Map-Construction/) records the 25 districts and how they fit together, and the [World Map](/wiki/World-and-Subway-Layers/) records six layers. How buildings are reused is in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
@@ -46253,7 +46253,7 @@ Machines have repeated their last search and watch routines on the surviving tra
 
 ### The Eight Depots
 
-Depot size reflects the storage and maintenance of 2026. Eight depots lie inside Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae and Suseo. Each belongs to the duchy of the district it stands in. Jichuk, Dobong, Moran and Gimpo lie outside Seoul''s boundaries.
+Depot size reflects the storage and maintenance of 2026. Eight depots lie inside Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae and Suseo. Each belongs to the district holding it stands in. Jichuk, Dobong, Moran and Gimpo lie outside Seoul''s boundaries.
 
 | Depot | District | Faction |
 |---|---|---|
@@ -46306,7 +46306,7 @@ Garak, Gangseo, the grain market and the Noryangjin fish market sit around stati
 ', '
 2126년 서울은 구를 평평하게 나눈 지도가 아니다. 역과 터널과 차량기지와 수문이 이어진 그물이다. 2026년에도 사람들은 지하철로 구를 넘었고, 정수장과 차량기지는 그 그물의 무거운 점이었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제가 멈췄다. 이어 겨울이 와서 떠나지 않았다. 사람들은 역으로 내려갔고, 역이 품을 수 있는 만큼만 살아남았다. 역은 거점이 되었고, 터널은 허가가 있어야 지나는 길이 되었으며, 수문은 서명이 있어야 열리는 문이 되었다.
 
-한 세기가 지나, 세 세력은 이 점과 선을 사는 자리로 쥐고 있다. 정부는 강 북쪽 14구를, 자유도시는 남서쪽 7구를, 아크는 강남 4구를 쥔다. 공작령은 구 이름으로 부른다.
+한 세기가 지나, 세 세력은 이 점과 선을 사는 자리로 쥐고 있다. 정부는 강 북쪽 14구를, 자유도시는 남서쪽 7구를, 아크는 강남 4구를 쥔다. 세력마다 구의 몫은 구 이름으로 부른다. 정부는 구를 상원의원이 쥔 선구로, 자유도시는 아르콘이 이끄는 폴리스로, 아크는 한 가문이 맡은 문으로 부른다.
 
 [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/)는 역 315곳의 관측 명칭 334개를 기록한다. [세계 지도의 구성](/wiki/World-Map-Construction/)은 구 25개와 그 짜임을, [세계 지도](/wiki/World-and-Subway-Layers/)는 여섯 층을 기록한다. 건물을 다시 쓰는 방식은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)에 있다.
 
@@ -46336,7 +46336,7 @@ Garak, Gangseo, the grain market and the Noryangjin fish market sit around stati
 
 ### 여덟 기지
 
-기지의 크기는 2026년의 유치·정비 규모다. 서울 안의 여덟 기지는 신정, 천왕, 방화, 군자, 고덕, 창동, 신내, 수서다. 기지는 그것이 있는 구의 공작령에 속한다. 지축, 도봉, 모란, 김포는 서울 경계 밖에 있다.
+기지의 크기는 2026년의 유치·정비 규모다. 서울 안의 여덟 기지는 신정, 천왕, 방화, 군자, 고덕, 창동, 신내, 수서다. 기지는 그것이 있는 구의 몫에 속한다. 지축, 도봉, 모란, 김포는 서울 경계 밖에 있다.
 
 | 기지 | 구 | 세력 |
 |---|---|---|
@@ -46644,7 +46644,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: custodian K271, steward house HC11, work peer K074
 
-At the observation railing of the Gangnam Line, Kimdoha (Doha) logged its entry in the HC11 duty log.
+At the observation railing of the Gangnam Line, Kim Doha (Doha) logged its entry in the HC11 duty log.
 
 Yi Hong-won checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -47382,7 +47382,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 In the inspection pit of the Gangnam Line, Night Dispatch (Yabae) logged its entry in the HC03 duty log.
 
-Jo Uchan checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
+Jo U-chan checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
@@ -47575,7 +47575,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: 보관인 K057, 관리 가문 HC03, 작업 동료 K018
 
-용산선 관측 난간에서 이도(이도)가 HC03 당직 로그에 출입을 남긴다.
+용산선 관측 난간에서 이도가 HC03 당직 로그에 출입을 남긴다.
 
 정호준은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -47907,7 +47907,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 <a id="Synthetic-Actors-heading-0104"></a>
 
-## F02 · 배전반이 (전반)
+## F02 · 배전반 (전반)
 
 - 급: F
 - 기체: 시설 고정 랙·센서 버스·현장 단말 연결
@@ -47920,7 +47920,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: 보관인 K030, 관리 가문 HC10, 작업 동료 K124
 
-영등포선 배전반 앞에서 배전반이(전반)이 HC10 당직 로그에 출입을 남긴다.
+영등포선 배전반 앞에서 배전반(전반)이 HC10 당직 로그에 출입을 남긴다.
 
 정시우는 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -50975,7 +50975,7 @@ Fitting a part takes three kinds of room. A fitting room can attach an outer par
 
 ### The Government: State Clinics and the Registry
 
-North of the river, the Government recognises only the people in its ledgers. Cyberware follows the same line. The Government''s clinics sit in the larger stations, and each one works under the Government''s district lord. A person in the ledgers can be granted a part, and the grant is written in the registry beside their name, their work and their household.
+North of the river, the Government recognises only the people in its ledgers. Cyberware follows the same line. The Government''s clinics sit in the larger stations, and each one works under the Senator who holds that district. A person in the ledgers can be granted a part, and the grant is written in the registry beside their name, their work and their household.
 
 The registry is how the Government knows who carries what. Every part on the list is tracked through repair and return. When a registered worker dies, the part goes back to the clinic. Someone outside the ledgers has no claim on any clinic, and a part fitted elsewhere doesn''t appear in the registry at all. People call that kind of metal unlisted, and an unlisted part makes its carrier a person the Government doesn''t see.
 
@@ -51084,7 +51084,7 @@ The machines outside Seoul still fly on their last orders. People who go far on 
 
 ### 정부: 국가 시술소와 등록부
 
-강 북쪽의 정부는 자기 장부에 오른 사람만 국민으로 인정한다. 사이버웨어도 같은 선을 따른다. 정부 시술소는 큰 역에 있고, 저마다 정부의 구 영주 아래에서 일한다. 장부에 오른 사람은 부품을 받을 수 있으며, 그 사실은 이름과 생업과 가구 옆에 등록부로 적힌다.
+강 북쪽의 정부는 자기 장부에 오른 사람만 국민으로 인정한다. 사이버웨어도 같은 선을 따른다. 정부 시술소는 큰 역에 있고, 저마다 그 구를 쥔 상원의원 아래에서 일한다. 장부에 오른 사람은 부품을 받을 수 있으며, 그 사실은 이름과 생업과 가구 옆에 등록부로 적힌다.
 
 정부는 등록부로 누가 무엇을 지녔는지 안다. 목록에 오른 부품은 수리와 반납까지 추적된다. 등록된 일꾼이 죽으면 부품은 시술소로 돌아간다. 장부 밖 사람은 어느 시술소에도 청구할 권리가 없고, 다른 곳에서 단 부품은 등록부에 아예 오르지 않는다. 사람들은 그런 쇠를 장부 밖 쇠라 부르고, 그것을 지닌 사람은 정부가 보지 않는 사람이 된다.
 

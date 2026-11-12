@@ -27,7 +27,7 @@ Some people carry machines in their own bodies: a hand, an eye, a leg, or more. 
 
 ### Field Trials in 2026
 
-In 2026 Korean manufacturing had 1,012 robots for every 10,000 workers. The model for humanoids on the shop floor was Boston Dynamics' Atlas, moving materials with little supervision in field trials at Hyundai ([Atlas](https://www.bostondynamics.com/atlas), read 2026-09-17; [IFR 2024-11-20](https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years), read 2026-09-17). Once the calling networks went down, there was no foundry to build that line again.
+In 2026 Korean manufacturing had 1,012 robots for every 10,000 workers. The model for humanoids on the shop floor was a pre-collapse bipedal labour robot, moving materials with little supervision in field trials run by a large carmaker's robotics arm ([IFR 2024-11-20](https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years), read 2026-09-17). Once the calling networks went down, there was no foundry to build that line again.
 
 The machines left in 2126 fall into two kinds: those that stopped at their charging terminals and those that still repeat their last carrying order. They sit in the Guro factory blocks, the Cheonwang depot workshops and the sealed bays of the Magok test track. Technicians replace hoses, terminals and lenses and turn them into pumps and duty stoves. They can't repair a whole neural network. What can be known, held, repaired and made is set out in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
@@ -63,7 +63,7 @@ Clearing an animal colony with guns is a last resort, and rounds are too scarce 
 |---|---|---|
 | People | Subway districts, service rolls, workplaces | The three factions in their stations, paper ledgers, inherited trades |
 | People with machine parts | Medical prostheses and implants | Scarce parts reached through registry, market or baptism. [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/) |
-| Logistics humanoids | Atlas-type field trials; factories among the densest in the world | Stopped remnants, repeated carrying, salvaged modules |
+| Logistics humanoids | Field trials of bipedal labour robots; factories among the densest in the world | Stopped remnants, repeated carrying, salvaged modules |
 | Disaster-response machines | Search, watch and carrying routines tied to calling networks | Repeating in sealed galleries until the battery fails or charging stops. [Lost Technology](/wiki/Lost-Technology-Lineage/) |
 | Raptors, dogs, rats | Han River birds, abandoned dogs, station rats | Colonies on towers, docks and transfer trays |
 

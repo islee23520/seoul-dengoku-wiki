@@ -261,7 +261,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: custodian K271, steward house HC11, work peer K074
 
-At the observation railing of the Gangnam Line, Kimdoha (Doha) logged its entry in the HC11 duty log.
+At the observation railing of the Gangnam Line, Kim Doha (Doha) logged its entry in the HC11 duty log.
 
 Yi Hong-won checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
@@ -999,7 +999,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 
 In the inspection pit of the Gangnam Line, Night Dispatch (Yabae) logged its entry in the HC03 duty log.
 
-Jo Uchan checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
+Jo U-chan checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 

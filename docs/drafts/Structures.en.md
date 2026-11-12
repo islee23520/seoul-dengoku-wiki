@@ -7,7 +7,7 @@ section_checkpoint: complete
 
 Seoul in 2126 isn't a flat map of districts. It's a web of stations, tunnels, depots and sluices. In 2026 people already crossed districts by subway, and the purification plants and depots were the heavy points of that web. On the night of [the Great Blackout](/wiki/World-Unbinding/), remote control stopped. Then the winter came and didn't leave. People went down into the stations, and only as many survived as the stations could hold. Stations became strongholds, tunnels became passages that need permission, and sluices became gates that open only under signature.
 
-A century on, the three factions hold these points and lines as the places where they live. The Government holds the fourteen districts north of the river, the Free City the seven in the southwest, and the Arc the four in Gangnam. Each duchy is called by its district's name.
+A century on, the three factions hold these points and lines as the places where they live. The Government holds the fourteen districts north of the river, the Free City the seven in the southwest, and the Arc the four in Gangnam. Each faction's holding goes by its district's name: the Government calls a district an Electorate held by a Senator, a Free City district is a Polis led by an Archon, and an Arc district is a Gate held by one of its clans.
 
 The [Rail Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed station names for 315 stations. [The Structure of the World Map](/wiki/World-Map-Construction/) records the 25 districts and how they fit together, and the [World Map](/wiki/World-and-Subway-Layers/) records six layers. How buildings are reused is in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
@@ -37,7 +37,7 @@ Machines have repeated their last search and watch routines on the surviving tra
 
 ### The Eight Depots
 
-Depot size reflects the storage and maintenance of 2026. Eight depots lie inside Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae and Suseo. Each belongs to the duchy of the district it stands in. Jichuk, Dobong, Moran and Gimpo lie outside Seoul's boundaries.
+Depot size reflects the storage and maintenance of 2026. Eight depots lie inside Seoul: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae and Suseo. Each belongs to the district holding it stands in. Jichuk, Dobong, Moran and Gimpo lie outside Seoul's boundaries.
 
 | Depot | District | Faction |
 |---|---|---|

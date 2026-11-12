@@ -36,7 +36,7 @@ Fitting a part takes three kinds of room. A fitting room can attach an outer par
 
 ### The Government: State Clinics and the Registry
 
-North of the river, the Government recognises only the people in its ledgers. Cyberware follows the same line. The Government's clinics sit in the larger stations, and each one works under the Government's district lord. A person in the ledgers can be granted a part, and the grant is written in the registry beside their name, their work and their household.
+North of the river, the Government recognises only the people in its ledgers. Cyberware follows the same line. The Government's clinics sit in the larger stations, and each one works under the Senator who holds that district. A person in the ledgers can be granted a part, and the grant is written in the registry beside their name, their work and their household.
 
 The registry is how the Government knows who carries what. Every part on the list is tracked through repair and return. When a registered worker dies, the part goes back to the clinic. Someone outside the ledgers has no claim on any clinic, and a part fitted elsewhere doesn't appear in the registry at all. People call that kind of metal unlisted, and an unlisted part makes its carrier a person the Government doesn't see.
 
