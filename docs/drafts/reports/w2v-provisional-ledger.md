@@ -86,3 +86,28 @@ Hostile ecology patch (Hostile-Ecology-Index, Hostile-Group-G01 to G26).
 | 4 | Hostile-Group-G01, G02, G04, G06, G07, G09, G10, G12, G16, G19, G22, G23, G26, Hostile-Ecology-Index | en: tables and scenario lines, "less-cold weeks", "meltwater pulse", "deep-cold weeks", "blizzard-week night", "convoy-season", "power-ration night", "storm season" / ko: "덜 추운 주간", "녹은 물 파동", "깊은 추위 주간", "눈보라 주간의 밤", "호송철", "전력 배급 밤", "폭풍철" | the eternal-winter cycles that replace the old season words (spring, monsoon, dry season, thaw, summer, autumn) are task 9 defaults; their timing is not fixed |
 | 5 | Hostile-Group-G15 | en: "Life in the endless cold.", "the Government's Myeongdong station" / ko: "정부 명동역" | the former Myeongdong Union habitat is restated as Government land per owner rule; the station-level wording is provisional |
 | 6 | Hostile-Ecology-Index, G13, G14, G16, G17, G18, G25, G26 | en: "Ecology" origin row, "but the cold never lifted." / ko: "추위는 끝내 물러나지 않았다." | replaces the old "slightly warmer temperatures" line to fit eternal winter |
+
+## task 10
+
+Government-Society, a new document. Each entry gives the section heading and the opening phrase of the sentence, in en and ko.
+
+| # | Document | Location (section, phrase) | Provisional item |
+|---|---|---|---|
+| 1 | Government-Society | en: "Overview", "Each district is an Electorate (Seongu)." / ko: "개요", "구 하나는 선구(選區) 하나다." | the territory name Electorate (선구) is the provisional task 32 name; Senator is approved |
+| 2 | Government-Society | en: "Overview", "the President holds office for life" / ko: "개요", "대통령은 죽을 때까지 그 자리에 있다" | the title form for the President for life stays provisional (Q1 not answered); only life tenure and election by Senators are approved |
+| 3 | Government-Society | en: "Social Structure", "Scarcity made work hereditary, and the Government wrote that down." / ko: "사회 구조", "결핍이 일을 세습하게 만들었고" | the five ranks (Senator's house, office, labour, dependent ledgers, unlisted) and movement between them are a research proposal (life-economy research section 6), not canon |
+| 4 | Government-Society | en: "Law", "Law in the north is the Senator's law." / ko: "법", "북쪽의 법은 상원의원의 법이다." | the common code, its five rules, crimes, appeals and the southern trade licence are provisional defaults |
+| 5 | Government-Society | en: "Currency", "There is no coin." / ko: "화폐", "동전은 없다." | ration coupons, work credit and the cartridge trade as off-ledger money are provisional, built on research sections 3.1 and 3.2 |
+| 6 | Government-Society | en: "Taxes", "Taxes are taken in kind and in time." / ko: "세금", "세금은 현물과 시간으로 걷는다." | the tenth of surplus, monthly salvage weight, stall tax and tribute to Seoul Station and Sicheong stores are provisional |
+| 7 | Government-Society | en: "Labour Levy", "Every ledger adult owes the levy." / ko: "노역 징발", "장부에 오른 어른은 모두 노역을 진다." | the three-hour and eight-hour levy, seven on four off, and muster per hundred entries borrow research section 1.1 ratios; provisional |
+| 8 | Government-Society | en: "Rations", "Rations are drawn by category" / ko: "배급", "배급은 범주별로 받고" | ration categories, shares, ten-day issues and the cut order are provisional |
+| 9 | Government-Society | en: "Markets by Station", "The Government tolerates markets where it can watch them" / ko: "역별 장터", "정부는 지켜볼 수 있는 곳" | which goods trade at Sindang, Wangsimni, Dongdaemun History & Culture Park, Hoehyeon, Cheongnyangni and Jongno 3-ga, and Myeongdong as a registry quarter, are provisional; depth and area come from the station-architecture CSV |
+| 10 | Government-Society | en: "Shifts", "The station day runs on three eight-hour shifts" / ko: "교대", "역의 하루는 여덟 시간씩 세 교대로 돈다." | three shifts and the stop paper on blizzard days are provisional (research section 1.4) |
+| 11 | Government-Society | en: "Heating", "Heat comes from small iron stoves" / ko: "난방", "열은 작은 철제 난로" | heating sources and who sleeps at Singeumho, Yongdap and Sindap are provisional; platform depth and floors come from the CSV |
+| 12 | Government-Society | en: "Food", "Bread is mixed." / ko: "음식", "빵은 섞어 만든다." | bread mix, boiler tap and the Senator's table are provisional |
+| 13 | Government-Society | en: "Housing", "Housing follows the ledger." / ko: "주거", "주거는 장부를 따른다." | housing by ledger rank, bunk lengths and crowding at Dokbawi are provisional |
+| 14 | Government-Society | en: "By Rank and Tier", "What a person wears in the north is a public statement" / ko: "신분과 등급별", "북쪽에서 입는 옷은 장부 기재를 공개하는 것이고" | the clothing table, fur and pale-colour rules, seal pins and work tags are a provisional sumptuary code (research section 2.3); the 1940s silhouette and tier-thickness rule come from character-art-direction.json |
+| 15 | Government-Society | en: "Winter Layers", "The thickness of clothing follows two things" / ko: "겨울 겹옷", "옷의 두께는 두 가지를 따른다." | layer counts per group and the issue of one jacket every three winters are provisional |
+| 16 | Government-Society | en: "Soldiers' Look", "Government soldiers look like what they are" / ko: "병사의 겉모습", "정부 병사는 생긴 그대로다." | the kit and dress per kind follow roster framework sections 9 and 11 examples; no unit ids or numbers are set here, task 13 owns them |
+| 17 | Government-Society | en: "Civilians' Look", "An ordinary northern resident is wrapped and grey." / ko: "주민의 겉모습", "북쪽의 보통 주민은 둘둘 감싸고 잿빛이다." | civilian appearance details and wedding clothes rented at Euljiro 3-ga are provisional |
+| 18 | Government-Society | en: "Cyberware Access", "In the north, cyberware follows the ledger." / ko: "사이버웨어 접근", "북쪽에서 사이버웨어는 장부를 따른다." | the access table by rank repeats task 8 ledger items 3 and 4 and adds per-rank terms; provisional |
