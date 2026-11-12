@@ -303,42 +303,7 @@ for (const L of [UI.en, UI.ko]) {
 
   // wiki articles
   raw.docs.forEach((d) => {
-    // HTML comments (e.g. owner-pending markers) live in the drafts and SQL for tooling but never render.
-    // Comments inside fenced code and inline code spans are kept; an unterminated <!-- is left as is.
-    const stripComments = (s) => {
-      let out = '', i = 0, fence = null;
-      while (i < s.length) {
-        const bol = i === 0 || s[i - 1] === '\n';
-        if (bol) {
-          const f = /^ {0,3}(`{3,}|~{3,})/.exec(s.slice(i, i + 200));
-          if (f && (!fence || (f[1][0] === fence[0] && f[1].length >= fence.length))) fence = fence ? null : f[1];
-        }
-        if (fence) { const e = s.indexOf('\n', i); const j = e < 0 ? s.length : e + 1; out += s.slice(i, j); i = j; continue; }
-        if (s[i] === '`') {
-          const run = /^`+/.exec(s.slice(i))[0];
-          const close = s.slice(i + run.length).search(new RegExp(`(?<!\`)${run}(?!\`)`));
-          const para = s.indexOf('\n\n', i);
-          if (close >= 0 && (para < 0 || i + run.length + close < para)) { const j = i + run.length + close + run.length; out += s.slice(i, j); i = j; continue; }
-          out += run; i += run.length; continue;
-        }
-        if (s.startsWith('<!--', i)) {
-          // A mid-line <!-- may close only before the next blank line or the next <!--; no comment crosses a fence opening.
-          const rest = s.slice(i + 4);
-          let lim = rest.length;
-          const fm = /\n {0,3}(`{3,}|~{3,})/.exec(rest); if (fm) lim = fm.index;
-          if (!bol) { for (const stop of ['\n\n', '<!--']) { const k = rest.indexOf(stop); if (k >= 0 && k < lim) lim = k; } }
-          const k = rest.indexOf('-->');
-          if (k < 0 || k >= lim) { out += '<!--'; i += 4; continue; }
-          const e = i + 4 + k;
-          i = e + 3;
-          if (bol && s[i] === '\n') i++;
-          continue;
-        }
-        out += s[i]; i++;
-      }
-      return out;
-    };
-    const bodyMd = stripComments(L === UI.ko ? d.body_ko_md : d.body_md).replace(/^#\s+.+\n+/, '');
+    const bodyMd = (L === UI.ko ? d.body_ko_md : d.body_md).replace(/^#\s+.+\n+/, '');
     write(`${L.prefix}wiki/${d.slug}/index.md`, page(g(d, 'title'), `# ${g(d, 'title')}\n\n${body(bodyMd, L)}`));
   });
   const wikiGroups = raw.cats.filter((c) => !c.parent_id).map((c) => ({ text: g(c, 'label'), collapsed: true, items: docsOf(c.id).map((d) => ({ text: g(d, 'title'), link: P(`wiki/${d.slug}/`) })) })).filter((x) => x.items.length);
