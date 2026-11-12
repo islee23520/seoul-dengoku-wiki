@@ -48,7 +48,7 @@ A pack kills a person alone. A work party can fight back but loses its loads. A 
 
 ## Tamed dogs
 
-Some feral dogs have been tamed again. Among the Free Cities, the station foremen around Gangseo's Wind Keeper and Guro's Works Master use dogs for sleds and watch. Between Gangseo's wind-machine fields and along the edge of the Han ice, dog sleds pull loads.
+Some feral dogs have been tamed again. Among the Free Cities, the station crews around Gangseo's Wind Keeper and Guro's Works Master use dogs for sleds and watch. Between Gangseo's wind-machine fields and along the edge of the Han ice, dog sleds pull loads.
 
 A tamed dog notices a feral pack first and barks. Feral-dog fur is also used.
 

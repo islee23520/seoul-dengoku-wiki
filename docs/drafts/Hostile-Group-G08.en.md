@@ -20,7 +20,7 @@ A band that forges the Government's ration coupons and seals and sells them in s
 
 ## Where they came from
 
-The Government's money is the ration coupon. The Bank of Korea prints it, and the unit is still the won. There are four kinds: meal coupons, water coupons, fuel coupons and goods coupons. Coupons are issued monthly per household at the community centre, and they can be exchanged for meals only at the community centre where that household is registered.
+The Government's money is the ration coupon. The Bank of Korea prints it, and the unit is still the won. There are four kinds: meal coupons, water coupons, fuel coupons and goods coupons. Coupons are issued monthly per household at the dong centre, and they can be exchanged for meals only at the dong centre where that household is registered.
 
 In 2086-2095 salvaged salt first ran short. Then a secret market in salt and coupons opened in the basements of the old Dongdaemun market. The band that guarded that market hardened into the coupon-forgers.
 

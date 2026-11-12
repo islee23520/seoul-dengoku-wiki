@@ -55,7 +55,7 @@ Each one can be dangerous. But the band is small and always worn out. It can kil
 
 In the Arc, a body's parts belong to the faith that fitted them. The baptized carry and use their parts but may not sell them or give them away. Selling a part, having it removed at a Free City market, or passing it to the Government side in secret is the gravest crime after harming a person. The punishment is losing one's maintenance turns for a set time. For someone who lives on their parts this can be the same as losing the parts.
 
-So to the Arc, the parts left in a gone-dark body are the faith's share, to be recovered. A part fitted outside counts as baptism only once it is fitted again at an Arc maintenance bench. This is called **refitting**. Whether the gone-dark have a way back onto the maintenance roll, and if so what it is, is in [Arc Society](/wiki/Arc-Society/).
+So to the Arc, the parts left in a gone-dark body are the faith's share, to be recovered. A part fitted outside counts as baptism only once it is fitted again at an Arc maintenance bench. This is called **refitting**. The Arc's maintenance roll and maintenance turns are covered in [Arc Society](/wiki/Arc-Society/).
 
 ## Meeting the three polities
 

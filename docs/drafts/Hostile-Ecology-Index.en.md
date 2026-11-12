@@ -48,7 +48,7 @@ The most common death is none of these. What kills the most people in Seoul is t
 | G25 | [Lamp Ants](/wiki/Hostile-Group-G25/) | Old machines inside Seoul | 2, livelihood threat 3 |
 | G26 | [Iron Dinosaurs](/wiki/Hostile-Group-G26/) | Perimeter machines | 5 |
 
-Seoul has no disease that turns people into something else. The wet mouths, blue lights, knocking on walls, figures standing under frost and a child crying in the stories told at the boundary stations are all stories of people who saw and heard perimeter machines. Station people named those machines by their look and sound.
+The blue lights, knocking on walls, figures standing under frost and a child crying in the stories told at the boundary stations are all stories of people who saw and heard perimeter machines. Station people named those machines by their look and sound.
 
 <a id="thaw-pocket"></a>
 
@@ -183,7 +183,7 @@ In one line: **inside a living station, the deeper the safer; outside the statio
 
 ## The fibre-mining routes
 
-Fibre shrinks every year, and the way to mine it grows longer every year. These routes are where most people in Seoul die.
+Fibre shrinks every year, and the way to mine it grows longer every year. More people in Seoul die on these routes than on any other.
 
 - **Length.** In 2126 a fibre-mining party walks 1-3 km over the snow from its station and digs below the second floor of buried offices and warehouses. The Government's downtown is still near; for the Free Cities and the Arc it is far.
 - **Cold.** The most common death is neither animal nor machine but cold: a party meets a blizzard and does not come back.
@@ -286,7 +286,7 @@ At the boundary stations people say that there are people living in stations bey
 | G12 Geumcheon Hands Without Surety | None | Most often | Rare |
 | G13 Claw Arms | Meets it | Most often | Songpa |
 | G14 Empty Carts | Rare | Most often | Songpa |
-| G15 Care Wheels | Most often | Boramae Hospital | Songpa, Gangdong |
+| G15 Care Wheels | Most often | Boramae Medical Center | Songpa, Gangdong |
 | G16 Girder Spiders | Rare | Rare | Most often |
 | G17 One-Eye Towers | Most often | Gwanak, Geumcheon | Meets it |
 | G18 Tunnel-Stoppers | Most often | Meets it | Meets it |
@@ -302,24 +302,3 @@ At the boundary stations people say that there are people living in stations bey
 In one line: the Government, with the most people, meets the most animals and struck-off; the Free Cities meet the most old machines and feral dogs on their factory grounds and western plain; the Arc meets the most rats and girder spiders in its deep buildings, and the gone-dark and strayed udukeoni on its south-eastern boundary.
 
 How the three polities deal with these groups is in [Government Society](/wiki/Government-Society/), [Free City Society](/wiki/Free-City-Society/) and [Arc Society](/wiki/Arc-Society/).
-
-<a id="renamed"></a>
-
-## Groups that were renamed
-
-The numbers and page addresses are unchanged. The groups called something else in the earlier edition are these. The earlier edition's subtype numbers and incident numbers are no longer used.
-
-| No. | Earlier name | Name now |
-|---|---|---|
-| G07 | Yongsan Raiders | Yongsan Struck-Off |
-| G08 | Dongdaemun Raiders | Dongdaemun Coupon-Forgers |
-| G10 | Bogukmun group | Bogungmun Perimeter-Runners |
-| G11 | Gangnam Stray Humanoids | Suseo Gone-Dark |
-| G12 | Sinnae Deserters | Geumcheon Hands Without Surety. Its place moved from the Government's Sinnae to the Free City of Geumcheon |
-| G18 | Fire-Leg Train | Tunnel-Stoppers |
-| G20 | Iron-Clicker | Bulgasari |
-| G21 | Wall-knocker | Ground-Knockers |
-| G22 | Flame Lantern | Dokkaebi Lights |
-| G24 | Weeper | Doenoemi |
-
-The one-eye towers, growlers, udukeoni and iron dinosaurs kept their names but changed in what they are. All four are perimeter machines.

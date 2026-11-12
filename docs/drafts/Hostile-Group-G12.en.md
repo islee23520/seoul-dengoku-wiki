@@ -47,7 +47,7 @@ The best band in Seoul at traps and ambushes. The abandoned sections of Line 1 w
 
 In the Free Cities the law differs from city to city. But in all seven the heaviest punishment is the same: **breaking the seal**. The seal of the person who broke a surety, or of the bench, is broken so that the person can never again contract in their own name. A person whose seal is broken becomes a day hand. No other city accepts that person's seal either, not because of a law but because no one will make a contract with a broken seal.
 
-A day hand receives only wages and cannot contract in their own name. Even so, a day hand can become a hand by doing a bench's work alone in front of any bench master. But few bench masters take a day hand to teach. How standing surety again for a broken seal works is in [Free City Society](/wiki/Free-City-Society/).
+A day hand receives only wages and cannot contract in their own name. Even so, a day hand can become a hand by doing a bench's work alone in front of any bench master. But few bench masters take a day hand to teach. Surety and seals in the Free Cities are covered in [Free City Society](/wiki/Free-City-Society/).
 
 Hands without surety cannot get onto the Government ledger either. The ledger does not record people from across the river as people.
 

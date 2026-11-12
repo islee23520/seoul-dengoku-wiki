@@ -22,7 +22,7 @@ A Government army checkpoint squad that guarded a bridge left its post with its 
 
 The north ends of the Government's bridges are held by the army. So is the north end of the airport-railway bridge that runs from Digital Media City across the river to Magongnaru.
 
-In the 2110s, in a year of ration cuts, the checkpoint squad guarding that bridge left its post with its weapons. The squad tried to cross the bridge to Magongnaru. But Gangseo's Wind Keeper does not let in armed people without surety, and the Free Cities give no work to people without surety. The squad stayed north of the river, and since then it has taken in other deserters and become a band.
+In the 2110s, in a year of ration cuts, the checkpoint squad guarding that bridge left its post with its weapons. The squad tried to cross the bridge to Magongnaru. But Gangseo's Wind Keeper did not let in armed people without surety; the Free Cities give no work to people without surety. The squad stayed north of the river, and since then it has taken in other deserters and become a band.
 
 ## Where they live
 

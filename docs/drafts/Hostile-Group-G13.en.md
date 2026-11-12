@@ -42,7 +42,7 @@ A woken claw arm cannot move for long. With stiff joints and worn batteries it w
 
 ## The danger
 
-Caught and dragged along a rail, a person's bones break. One woken warehouse becomes a place no work party can enter.
+Anyone caught and dragged along a rail ends up with broken bones. One woken warehouse becomes a place no work party can enter.
 
 Fibre parties look for rails before they open a warehouse door. If there are rails, they find where the rails end before lighting anything, and they work beyond that point. Those hurt by claw arms on the fibre routes are mostly people who lit a light inside the warehouse.
 
