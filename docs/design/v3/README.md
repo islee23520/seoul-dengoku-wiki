@@ -16,7 +16,7 @@
 |---|---|
 | 인물 정체 | `wiki_person` id, name, name_ko, gender, gender_ko. 인원 1,022명 그대로(추가·삭제 없음) |
 | 나이·출생 | `person_detail` json/json_ko의 birthDate, birthday, age, ageAsOf, generation, characterId (기록된 511명). 기록이 없는 511명의 나이는 v3에서 새로 정하고 잠정 원장에 올린다 |
-| 가족·씨족 | `person_detail.clan_id`와 `$.clan`, Kinship 관계의 from·type·to(근거 문장 `basis`는 재설계), `clan`의 id·성·본관·한자·분파 구성원, `clan_member`, `nonkorean_family` 구성원, `family_tree`의 모든 노드 id·personId·kind·이름·생몰일과 모든 간선 |
+| 가족·씨족 | `person_detail.clan_id`와 `$.clan`, Kinship 관계의 from·type·to(근거 문장 `basis`는 재설계), `clan`의 id·성·본관·한자·문장 모티프·분파 id와 구성원(분파 이름·상태 문구는 재설계), `clan_member`, `nonkorean_family` 구성원, `family_tree`의 모든 노드 id·personId·kind·이름·생몰일과 모든 간선 |
 | 초상 얼굴 | `public/portrait-tokens/*.json`의 personId·name·`artProposal.face`·`slots.face`·이미지 sha256·identity(이름·성별·민족·나이), `public/portraits/*`, `artifacts/seoul-showcase/public/portraits/*`, `artifacts/seoul-showcase/public/history/portraits/*` 파일 바이트 |
 | 서울 지리 | `map_region` 이름·구·경로·역 수·면적, `map_station` 이름·구·좌표·차수·노선, `map_edge`, `map_line`, `map_landmark` 위치, `map_title` 위계·실제 행정명·경로, `map_state` 좌표·수도·배타 구 수, `map_meta`의 width·height·projection·attribution·major_station_ids, `map_rail`, `map_underground` |
 

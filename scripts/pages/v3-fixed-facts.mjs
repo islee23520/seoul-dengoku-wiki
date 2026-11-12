@@ -32,7 +32,7 @@ function extract() {
     const ko = d ? JSON.parse(d.json_ko) : {};
     return { ...p, clan_id: d?.clan_id ?? null, en: { ...pick(en, AGE), kin: kin(en) }, ko: { ...pick(ko, AGE), kin: kin(ko) } };
   });
-  const clans = all('SELECT id, surname, surname_ko, bongwan, bongwan_ko, hanja, branches FROM clan ORDER BY id').map((c) => ({
+  const clans = all('SELECT id, surname, surname_ko, bongwan, bongwan_ko, hanja, crest_motif, branches FROM clan ORDER BY id').map((c) => ({
     ...c, branches: JSON.parse(c.branches).map((b) => ({ id: b.id, members: b.members ?? [] })),
   }));
   const NODE = ['id', 'personId', 'kind', 'name', 'nameEn', 'birthDate', 'deathDate'];
