@@ -19,7 +19,7 @@ npm run serve
 Production files are written to `dist/public` and are addressed under the Vite
 base path, which defaults to `/wiki/seoul-showcase/`. Serve that directory at
 `/wiki/seoul-showcase/` (the wiki host mounts it there). All bundled runtime
-assets (`scenes/`, `portraits/`, `history/`, `narration/`, `favicon.svg`) resolve
+assets (`scenes/`, `portraits/`, `favicon.svg`) resolve
 through `import.meta.env.BASE_URL`, so no asset URL is tied to a fixed prefix.
 
 Environment variables (all optional):
@@ -35,3 +35,5 @@ Environment variables (all optional):
 After changing dependencies, regenerate `package-lock.json` with
 `npm install --package-lock-only --ignore-scripts` and re-verify `npm ci`.
 This is the existing reference-card showcase; the map-led redesign is not included.
+The story player is text only: no narration audio and no voice controls
+(owner decision, 2026-11-12).
