@@ -369,7 +369,7 @@ CK3's war score is called **hyeongse** in v3: the plain word all three polities 
 | Time | Attacker 0.055 a day, defender 0.055 a day (from day 365) | Attacker +1.5 per turn, defender +1.5 per turn from turn 12. 0.055 × 30 days ≈ 1.65, trimmed and rounded |
 | Occupation | Occupied ratio × 90 | Share of war-goal stations held × 90 |
 | Battles | Maximum 50 per battle, attacker cap 50, defender cap 100 | The same. A battle's hyeongse is set by the share of men each side lost; the formula is set by the battle design task |
-| Capital | Enemy capital occupied +10 | +10 for holding the enemy's seat station. Government: Gwanghwamun; Arc: Jamsil; Free Cities: that city's seat station (chapter 05 section 2) |
+| Capital | Enemy capital occupied +10 | +10 for holding the enemy's capital station. Government: Gwanghwamun, where the President works (counted apart from Jongno-gu's duchy seat station Jongno 3-ga, chapter 07 section 4.3); Arc: Jamsil, seat of the Hierophant's household; Free Cities: that city's seat station (chapter 05 section 2) |
 | Captured heirs | 50/25/10 | 50/25/10 in the heir order of section 3.5.3 |
 
 - When hyeongse reaches 100, the winner sets the peace terms. Before that, a war ends only on terms both sides agree.
@@ -547,7 +547,7 @@ Basis: Bible 2.3 [Approved], 1 rows 9 and 14, 01-core 7.3 and 8.3, chapter 06 se
 | Marriage | Take | Marriage with the Hierophant's bloodline is one of the ways to become a Near House. None in 2126 | Chapter 06 section 3.2 (provisional T07-7) |
 | Hooks | Adapt | A skipped fitting day, a short giving, a part fitted outside | Chapter 06 sections 5.2, 5.7, 8.4 (provisional T29-22) |
 | Levies | Take | **House levies.** Each Near House sets a head count for each household. Many are unbaptised | Chapter 06 sections 11.1 and 11.5 (provisional T07-53) |
-| Men-at-arms | Adapt | **Baptised fighters** (two parts or more, aged twenty or more, about 1,300) and the five Near House armies. Old machines revived from the old Suseo and Godeok depots | Chapter 06 section 11.1 (provisional T07-49), chapter 07 section 12.2 (provisional T08-79) |
+| Men-at-arms | Adapt | **Baptised fighters** (two parts or more, aged twenty or more, about 1,300) and the five Near House armies. Old machines revived at the old Godeok depot (parts from the Suseo store, chapter 03 section 7.3) | Chapter 06 section 11.1 (provisional T07-49), chapter 07 section 12.2 (provisional T08-79) |
 | knights | Adapt | Heads of the Near Houses, Guard Captains, the Hierophant. The hero's part count goes into the handoff packet | Chapter 06 section 11.1, chapter 07 section 12.5 |
 | Supply and attrition | Adapt | **Back before the parts run dry.** Arc armies do not stay long more than a day from their seat station. An army that loses its field fitters stops fighting and withdraws | Chapter 06 section 11.4 (provisional T07-52), section 7 item 7 |
 | Casus belli | Adapt | Holding the south mouths of the under-river tunnels and the weir's south end, disputes over land border stations, recovering the parts of the dead. The cost of a casus belli is the Hierophant's word | Chapter 06 section 11.3, chapter 03 section 4.7 (provisional T29-19) |

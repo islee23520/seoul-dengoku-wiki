@@ -61,7 +61,7 @@ Stages are the current 050 values (section 4.3).
 | person-0039 | Gu Chansol | 40 | S2 | Free Cities | added to the Guro row. Crew chief (tool carrying) | Guro | His workplace is the Guro tool market. Same as above (provisional T08-1) |
 | person-1008 | Min Ung-gi | 32 | S1 | Free Cities | added to the Guro row. Bench owner of the Cheonwang radio bench (T2) | Cheonwang | The former superior of the three above. His work is radio maintenance and salvage repair, and he holds a bench that keeps humanoids. In a world where machines are scarce, the hands that keep humanoids running are in the Free Cities (chapter 1 section 5.6). Follows Q29's default (candidate head of his base district), but since the Guro head's seat is filled he goes to T2 of the same district (section 7.2) (provisional T08-2) |
 | person-1017 | Ji Yeon-hui | 26 | S1 | Arc | added to the "Hierophant's house" row of the chapter 06 table. Hierophant's guard | Jamsil | Go Ye-jin's bodyguard since 2120 (Bible section 6 [Approved], chapter 1). The Hierophant's house is at Jamsil (chapter 06 section 2.3). Follows the affiliation of Q5's default (Arc), and the location follows chapter 06: Jamsil instead of the Suseo area (provisional T08-3) |
-| person-1003 | Jo Jaepyo | 37 | S1 | kept independent | in no table | Dongjak | Section 7.4. A crossing party that crosses the rim from any polity's edge wherever the blizzard opens and works for whichever side pays. The Government ledger strikes off anyone who crosses the rim, so he cannot be a Government man. A Free City's crossers are Geumcheon's edge crew, bound to Geumcheon's edge and Geumcheon's contracts (chapter 05 section 3.5). The Arc counts people by the baptism roll and bench turns, so an Arc man is bound to the benches' order (chapter 06 section 5.4). Belonging to none of the three is what keeps all three polities' contracts open. He stays at Dongjak, where the three polities meet, under contract (provisional T08-4) |
+| person-1003 | Jo Jaepyo | 37 | S1 | kept independent | in no table | Dongjak | Section 7.4. A crossing party that crosses the rim from any polity's edge wherever the blizzard opens and works for whichever side pays. The Government ledger strikes off anyone who crosses the rim without a permit, and the only permitted crossing is the army's rim posting (section 7.4), so he cannot be a Government man. A Free City's crossers are Geumcheon's edge crew, bound to Geumcheon's edge and Geumcheon's contracts (chapter 05 section 3.5). The Arc counts people by the baptism roll and bench turns, so an Arc man is bound to the benches' order (chapter 06 section 5.4). Belonging to none of the three is what keeps all three polities' contracts open. He stays at Dongjak, where the three polities meet, under contract (provisional T08-4) |
 | person-1004 | I Yeon | 25 | S1 | kept independent | in no table | Dongjak | Jo Jaepyo's attending messenger. Same reason as Jo Jaepyo (provisional T08-4) |
 | person-1021 | Cha Yu-seon | 50 | S1 | kept independent | in no table | Yeongdeungpo | A negotiator mandated jointly by merchants of several cities and stations. At the contract meeting of the third water supply contract (Yeongdeungpo, chapter 05 section 4) she sits holding the merchants' share. Joining any one polity would break the mandate (provisional T08-5) |
 
@@ -105,7 +105,7 @@ A person's `tier` is set by the role they receive. Role names are those of chapt
 | Tier | Meaning | Government (chapter 04) | Free Cities (chapter 05) | Arc (chapter 06) |
 |---|---|---|---|---|
 | T1 | Head and district | President for Life, Member of the National Assembly | the seven city heads | Hierophant, Head of the Near House |
-| T2 | Faction office and district house | Minister, Commissioner, Governor of the Bank of Korea, Director of the National Intelligence Service, Capital Defense Commander, Presidential Chief of Staff, Secretary-General of the Assembly, the two parties' Secretaries-General, Copyist of the Resident Register Master Copy, head of the medical corps, Vice Minister, ministry Director-General, District Office Head, heir of an Assembly Member house | the head's heir, Yangcheon Shift Chiefs, Crossing Chiefs, bench owners of stage S1 | rivals, Near House elders, Guard Captains, Word Keepers, negotiators of stage S1 |
+| T2 | Faction office and district house | Minister, Commissioner, Governor of the Bank of Korea, Director of the National Intelligence Service, Capital Defense Commander, Presidential Chief of Staff, Secretary-General of the Assembly, the two parties' Secretaries-General, Copyist of the Resident Register Master Copy, head of the medical corps, Vice Minister, ministry Director-General, Head of the District Office, heir of an Assembly Member house | the head's heir, Yangcheon Shift Chiefs, Crossing Chiefs, bench owners of stage S1 | rivals, Near House elders, Guard Captains, Word Keepers, negotiators of stage S1 |
 | T3 | Dong | Dong Chief | Section Chief | Shelter Head |
 | T4 | Station | Stationmaster (including the Seoul Station stationmaster) | Station Foreman | Bench Keeper |
 | T5 | All other roles | the other roles of the table (clerks, police, soldiers, skilled and labour work, market traders, health workers, dependants, spouses, kin and children of Assembly Member houses, etc.) | the rest (the head's spouse and elders, bench owners not at S1, crew chiefs, hands, apprentices, trade and contract, watch, labourers and household) | the rest |
@@ -131,13 +131,13 @@ A seat is bound to land. The land frame is the fixed geography (the 25 districts
 | District | Seat station | District | Seat station | District | Seat station |
 |---|---|---|---|---|---|
 | Jongno-gu | Jongno 3-ga | Jung-gu | Seoul Station | Yongsan-gu | Samgakji |
-| Seongdong-gu | Wangsimni | Gwangjin-gu | Geondae-ipgu | Dongdaemun-gu | Cheongnyangni |
-| Jungnang-gu | Sangbong | Seongbuk-gu | Bomun | Gangbuk-gu | 4.19 Democratic Cemetery |
-| Dobong-gu | Changdong | Nowon-gu | Nowon | Eunpyeong-gu | Yeonsinnae |
-| Seodaemun-gu | Chungjeongno | Mapo-gu | Gongdeok | Gangseo-gu | Gimpo Airport (chapter 05) |
+| Seongdong-gu | Wangsimni | Gwangjin-gu | Konkuk Univ. | Dongdaemun-gu | Cheongnyangni |
+| Jungnang-gu | Sangbong | Seongbuk-gu | Bomun | Gangbuk-gu | April 19th National Cemetery |
+| Dobong-gu | Chang-dong | Nowon-gu | Nowon | Eunpyeong-gu | Yeonsinnae |
+| Seodaemun-gu | Chungjeongno | Mapo-gu | Gongdeok | Gangseo-gu | Gimpo Int'l Airport (chapter 05) |
 | Yangcheon-gu | Sinjeongnegeori (chapter 05) | Yeongdeungpo-gu | Yeongdeungpo (chapter 05) | Guro-gu | Guro (chapter 05) |
 | Geumcheon-gu | Gasan Digital Complex (chapter 05) | Dongjak-gu | Noryangjin (chapter 05) | Gwanak-gu | Sillim (chapter 05) |
-| Seocho-gu | Gosok Terminal (chapter 06) | Gangnam-gu | Suseo (chapter 06) | Songpa-gu | Jamsil (chapter 06) |
+| Seocho-gu | Express Bus Terminal (chapter 06) | Gangnam-gu | Suseo (chapter 06) | Songpa-gu | Jamsil (chapter 06) |
 | Gangdong-gu | Cheonho (chapter 06) | | | | |
 
 District heads work at the seat station. The President for Life, however, works at Gwanghwamun, where the Government Complex Seoul stands, and the Hierophant at Jamsil, where the Hierophant's house is.
@@ -156,7 +156,7 @@ Titles (`title`) and positions (`position`) are formed as follows. Where a name 
 | Government Dong Chief, Arc Shelter Head | `<동> 동장` / `<동> 대피소장` | `Dong Chief of <Dong>` / `Shelter Head of <Dong>` |
 | Free City Section Chief | `<section name> 구간장` (e.g. 신도림 구간장) | `Section Chief of <Section>` |
 | Station seat | `<역>역 역장` / `<역>역 역반장` / `<역>역 정비장`. If the station name already ends in "역", nothing is added (서울역 역장) | `Stationmaster of <Station>` / `Station Foreman of <Station>` / `Bench Keeper of <Station>` |
-| District Office Head | `<구> 구청장` | `Head of the <District> Office` |
+| Head of the District Office | `<구> 구청장` | `Head of the <District> Office` |
 | Other roles | the role name of the chapter 04-06 tables (e.g. 수도방위사령관, 주민등록 원부 필사관, 셈판 서기, 건널목장, 호위장, 말지기, 교주 호위). If the role name only names the work, the "person name" of the section 8.2 list | the English of the section 8.7 word table and the section 8.2 list |
 
 - The position (`position_ko`) is `<title_ko> · <work station name>`. The station name uses the "역" rule above (e.g. "배급 서기 · 서울역", "손 · 신도림역"). The English is `<title> · <Station> Station`. If the work station is the seat's own land (district heads, dong, section and station seat holders), the position adds the faction name after the title instead (e.g. "관악 공작 · 자유도시들", "종로구 국회의원 · 정부").
@@ -212,7 +212,7 @@ The minimum age is the youngest age at which a person can hold the rank. The ski
 |---|---|
 | Government | 대통령 25, 국회의원 18 (hereditary, chapter 04 section 16.5), 장관 30, 차관 30, 청장 30, 총재 30, 원장 30, 구청장 30, 동장 25, 역장 25, 서기관 30, 사무관 25, 주사 20, 서기 16 (succession entry, chapter 04 section 8.2), 경찰관 19, 전문의 30, 수련의 24, 교사 22, 이병·일병·상병·병장 19 (conscription, chapter 04 section 14.3), 하사 18, 중사 22, 상사 28, 소위 20, 중위 22, 대위 24, 소령 30, 중령 33, 대령 35, 후계 16, 등재민 0 |
 | Free Cities | the seven heads 25 (chapter 05 section 12.4), 구간장 25, 역반장 20, 대주 20, 작업조장 20, 건널목장 25, 교대장 20, 밭장 20, 손 16, 일손 16, 견습 12, 후계 16 |
-| Arc | 교주 25, 곁집장 18 (hereditary, 2 parts or more, chapter 06 sections 3.3 and 3.5), 곁집 어른 40, 대피소장 28, 정비장 25, 호위장 30, 말지기 25, 정비공 18, 세례자 16, 곁집원 0, 미세례자 0, 후계 16 |
+| Arc | 교주 25, 곁집장 0 (no minimum age; 2 parts or more instead of age, hereditary, chapter 06 sections 3.3, 3.5 and 12.4), 곁집 어른 40, 대피소장 28, 정비장 25, 호위장 30, 말지기 25, 정비공 18, 세례자 16, 곁집원 0, 미세례자 0, 후계 16 |
 | Unaffiliated | 미등록 0 |
 
 There are also minimum ages attached to occupations: chapter 06 section 12.4's negotiator 30, baptised fighter 20, house levy 17, water-power-heat and food 16, outside work 18. If a cell has both a rank and an occupation minimum, the larger is used.
@@ -264,7 +264,7 @@ Within the people set, recorded kin between living people exist in only three ho
 | Household | People | Relation (fixed) | Faction | Station where they sleep |
 |---|---|---|---|---|
 | Im Hajun's household | Im Hajun (0086, head, missing), Im Chowon (0087, adopted child, rival in the Gangdong Near House), Bak Serin (0090, ward living with them) | adoptive and household edges of the family tree, Kinship | Arc (Gangdong) | all three at Cheonho. Im Hajun is missing, so only his place remains |
-| The Jeong household | Jeong Seoon (1005, head, rival in the Songpa Near House), Jeong Yura (0399, Head of the Seocho Near House) | household edge of the family tree, Kinship "distant relative" | Arc | Jeong Seoon at Jamsil, Jeong Yura at Gosok Terminal. Chapter 06 section 4.5 places them in seats of different districts, so they remain one recorded household but sleep apart |
+| The Jeong household | Jeong Seoon (1005, head, rival in the Songpa Near House), Jeong Yura (0399, Head of the Seocho Near House) | household edge of the family tree, Kinship "distant relative" | Arc | Jeong Seoon at Jamsil, Jeong Yura at Express Bus Terminal. Chapter 06 section 4.5 places them in seats of different districts, so they remain one recorded household but sleep apart |
 | The Sin household | Sin Jong-mok (1009, head), Sin Jun (1010, son) | biological edge of the family tree, Kinship | Government (chapter 04 Gangnam-gu row) | Seonjeongneung |
 
 ### 6.2 Houses and the house trade
@@ -315,14 +315,14 @@ The tables below hold the seats chapters 04-06 fill by name, the people of Bible
 | id | Name (age) | Stage | Row | Role | Tier | Rank | Occupation | Work station | Basis | Provisional |
 |---|---|---|---|---|---|---|---|---|---|---|
 | person-0145 | Yun Seo-rin (27) | Key | Jongno-gu | President for Life | T1 | 대통령 | 국정 총괄 | Gwanghwamun | Q28, chapter 04 section 16.4 | T08-28 |
-| person-0195 | Oh Hae-rin (48) | Key | Jung-gu | Director of the National Intelligence Service (title "원장") | T2 | 원장 | 정보 수집 | Myeongdong | Q7, chapter 04 section 4 (foot of Namsan) | T08-38 |
+| person-0195 | Oh Hae-rin (48) | Key | Jung-gu | Director of the National Intelligence Service (title "원장") | T2 | 원장 | 정보 수집 | Myeong-dong | Q7, chapter 04 section 4 (foot of Namsan) | T08-38 |
 | person-0246 | Baek On (24) | Key | Jongno-gu | Copyist of the Resident Register Master Copy, Ministry of the Interior and Safety | T2 | 서기 | 명부 필사 | Gwanghwamun | Q26, chapter 04 section 16.4 | T08-36 |
 | person-0323 | Ryu Eunbi (56) | Key | Jongno-gu | head of the medical corps, Ministry of Health and Welfare | T2 | 전문의 | 진료 | Gwanghwamun | Q27, chapter 04 section 16.4 | T08-37 |
 | person-0170 | Bak Tae-gyeom (55) | Key | Yongsan-gu | Member for Yongsan-gu | T1 | 국회의원 | 구 행정 | Samgakji | chapter 04 section 3.4 (the four river districts are Key) | T08-48 |
 | person-1006 | Tak Seoyun (35) | Key | Yongsan-gu | Capital Defense Commander | T2 | 대령 | 군 지휘 | Samgakji | chapter 04 section 16.3 | T08-87 |
 | person-1007 | Kim Yeongyu (30) | Key | Mapo-gu | Member for Mapo-gu | T1 | 국회의원 | 구 행정 | Gongdeok | chapter 04 section 3.4 | T08-47 |
 | person-0297 | Jang Sehwa (28) | Key | Seongdong-gu | Member for Seongdong-gu | T1 | 국회의원 | 구 행정 | Wangsimni | chapter 04 section 3.4 | T08-46 |
-| person-0349 | Go Seojun (27) | Key | Gwangjin-gu | Member for Gwangjin-gu | T1 | 국회의원 | 구 행정 | Geondae-ipgu | Q29 (anchor Guui, Gwangjin-gu), chapter 04 section 16.4 | T08-45 |
+| person-0349 | Go Seojun (27) | Key | Gwangjin-gu | Member for Gwangjin-gu | T1 | 국회의원 | 구 행정 | Konkuk Univ. | Q29 (anchor Guui, Gwangjin-gu), chapter 04 section 16.4 | T08-45 |
 | person-0250 | Yun Choa (42) | S1 | Jongno-gu | Member for Jongno-gu (heir of the President's house) | T1 | 국회의원 | 구 행정 | Jongno 3-ga | chapter 04 section 3.2 (provisional T05-7) | T08-50 |
 | person-0148 | Yun Ji-yul (62) | S1 | Jongno-gu | Presidential Chief of Staff (elder of the President's house) | T2 | 서기관 | 비서 업무 | Gwanghwamun | the presidential office cell of chapter 04 section 16.2 | T08-50 |
 | person-0197 | Yun Seo-ha (38) | S1 | Jongno-gu | heir of an Assembly Member house (the President's house) | T2 | 후계 | 장터 거래 | Jongno 3-ga | Assembly Member house, chapter 04 section 16.3 | T08-50 |
@@ -331,7 +331,7 @@ The tables below hold the seats chapters 04-06 fill by name, the people of Bible
 
 - Sin Jun keeps an empty title and position, as Q8 says. The occupation "교육" (schooling) is there because the stat calculation (section 8) needs a class.
 - Tak Seoyun's rank is colonel. With the army shrunk, a colonel holds the Capital Defense Command (this is the default, not the rank giving way of section 5.3).
-- Oh Hae-rin's work station Myeongdong is the Government station closest to the foot of Namsan, where the National Intelligence Service stands (chapter 04 section 4).
+- Oh Hae-rin's work station Myeong-dong is the Government station closest to the foot of Namsan, where the National Intelligence Service stands (chapter 04 section 4).
 
 **Free Cities (chapter 05 sections 2, 3 and 12)**
 
@@ -343,7 +343,7 @@ The tables below hold the seats chapters 04-06 fill by name, the people of Bible
 | person-0029 | Gang Minseo (60) | S1 | Guro | Guro Works Master (the bench owner with the most marks on the guarantee board) | T1 | 공장장 | 도시 운영 | Guro | Q29, chapter 05 section 3.4 | T08-43 |
 | person-0002 | I Seo-dam (58) | S1 | Yangcheon | Yangcheon Depot Master (the depot house) | T1 | 기지장 | 도시 운영 | Sinjeongnegeori | chapter 05 section 3.2, old-record anchor Yangcheon | T08-49 |
 | person-0032 | I Gangmuk (42) | S1 | Geumcheon | Geumcheon Edge Warden (chosen by the edge crew among those who crossed the rim and came back) | T1 | 경계장 | 도시 운영 | Gasan Digital Complex | chapter 05 section 3.5, old-record anchor Geumcheon | T08-49 |
-| person-0034 | Choe Dain (35) | S1 | Gangseo | Gangseo Wind Keeper (chosen by the wind-field bench owners) | T1 | 바람지기 | 도시 운영 | Gimpo Airport | chapter 05 section 3.1, the rule of section 4.7 step 3 | T08-49 |
+| person-0034 | Choe Dain (35) | S1 | Gangseo | Gangseo Wind Keeper (chosen by the wind-field bench owners) | T1 | 바람지기 | 도시 운영 | Gimpo Int'l Airport | chapter 05 section 3.1, the rule of section 4.7 step 3 | T08-49 |
 | person-1008 | Min Ung-gi (32) | S1 | Guro (added) | bench owner of the Cheonwang radio bench | T2 | 대주 | 통신 정비 | Cheonwang | Q29, section 3.2 | T08-2 |
 | person-0035 | Jang Useok (55) | S1 | Guro (added) | tally clerk | T5 | 손 | 셈판 기록 | Cheonwang | section 3.2 | T08-1 |
 | person-0038 | Heo Daon (50) | S2 | Guro (added) | crew chief (wheels) | T5 | 작업조장 | 차량 정비 | Cheonwang | section 3.2 | T08-1 |
@@ -359,14 +359,14 @@ The tables below hold the seats chapters 04-06 fill by name, the people of Bible
 | id | Name (age) | Stage | Row | Role | Tier | Rank | Occupation | Work station | Basis | Provisional |
 |---|---|---|---|---|---|---|---|---|---|---|
 | person-1018 | Go Ye-jin (38) | Key | Hierophant's house | Hierophant | T1 | 교주 | 신앙 통솔 | Jamsil | office [Approved], home city Q6, chapter 06 section 2.3 | T08-26 |
-| person-0399 | Jeong Yura (36) | Key | Seocho-gu | Head of the Seocho Near House | T1 | 곁집장 | 곁집 통솔 | Gosok Terminal | Q25, chapter 06 section 4.5 | T08-35 |
+| person-0399 | Jeong Yura (36) | Key | Seocho-gu | Head of the Seocho Near House | T1 | 곁집장 | 곁집 통솔 | Express Bus Terminal | Q25, chapter 06 section 4.5 | T08-35 |
 | person-0088 | O Gyeongjae (22) | Key | Gangnam-gu | Head of the Gangnam Near House | T1 | 곁집장 | 곁집 통솔 | Suseo | Q23, chapter 06 section 4.5 | T08-33 |
 | person-0374 | Nam Yun-gyeong (35) | Key | Songpa-gu | Head of the Songpa Near House. The position also carries the Q24 wording "아크 수석 신도" | T1 | 곁집장 | 곁집 통솔 | Jamsil | Q24, chapter 06 sections 4.5 and 14 | T08-34 |
 | person-0116 | Bae Ujin (43) | Key | Gangdong-gu | Head of the Gangdong Near House | T1 | 곁집장 | 곁집 통솔 | Cheonho | Q29, chapter 06 section 4.5 | T08-40 |
-| person-0057 | Jeong Hojun (25) | Key | Seocho-gu | rival in the Seocho Near House | T2 | 곁집원 | 세례 집도 | Gosok Terminal | chapter 06 section 4.5 | T08-88 |
+| person-0057 | Jeong Hojun (25) | Key | Seocho-gu | rival in the Seocho Near House | T2 | 곁집원 | 세례 집도 | Express Bus Terminal | chapter 06 section 4.5 | T08-88 |
 | person-0272 | Yi Hong-won (59) | Key | Gangnam-gu | rival in the Gangnam Near House | T2 | 곁집 어른 | 곁집 통솔 | Suseo | Q29, chapter 06 section 4.5 | T08-41 |
 | person-1005 | Jeong Seoon (36) | Key | Songpa-gu | rival in the Songpa Near House | T2 | 곁집원 | 계약 교섭 | Jamsil | Q29, chapter 06 section 4.5 | T08-39 |
-| person-0087 | Im Chowon (26) | Key | Gangdong-gu | rival in the Gangdong Near House | T2 | 세례자 | 펌프 정비 | Cheonho | chapter 06 section 4.5 | T08-88 |
+| person-0087 | Im Chowon (26) | Key | Gangdong-gu | rival in the Gangdong Near House | T2 | 곁집원 | 펌프 정비 | Cheonho | chapter 06 section 4.5 | T08-88 |
 | person-0086 | Im Hajun (54) | S1 | Gangdong-gu | member of the Gangdong Near House, missing | T2 | 곁집 어른 | 펌프 정비 | Cheonho | Q22 wording "펌프기술 총관, 현재 실종", chapter 06 section 4.5 | T08-32 |
 | person-1017 | Ji Yeon-hui (26) | S1 | Hierophant's house (added) | Hierophant's guard | T5 | 미세례자 | 경호 | Jamsil | bodyguard [Approved], Q5, section 3.2 | T08-3 |
 
@@ -423,7 +423,7 @@ Chapter 1 section 10 did not retire the return network but handed it to this cha
 In v3 the **return network** is the line that receives people who cross the machines' rim and come back (provisional T08-51).
 
 - The rim can be crossed only in the 2-4 days when a blizzard blinds the machines (chapter 1 section 6.3). Since 2086-2095, bringing back power cores has been a trade (chapter 1 section 9). Those who come back bring the power cores or parts of broken machines, and they live only if they reach a station inside the rim before the blizzard lifts.
-- Crossers come from several places. Geumcheon makes crossing the city's work, so much so that it chooses its Edge Warden among those who crossed and came back (chapter 05 section 3.5). The Arc's Suseo exchange takes power cores brought from outside (chapter 06 section 8.6). Government people who cross are struck off the ledger.
+- Crossers come from several places. Geumcheon makes crossing the city's work, so much so that it chooses its Edge Warden among those who crossed and came back (chapter 05 section 3.5). The Arc's Suseo exchange takes power cores brought from outside (chapter 06 section 8.6). Government people who cross without a permit are struck off the ledger. The only crossing inside the ledger is a rim posting entered by the Ministry of National Defense, paid at 30 meals a trip (chapter 03 section 11.1, provisional T09-4).
 - The return network is a chain of radio and shelter, paid for by the Government under contract, that waits for those coming back. The ledger wants the power cores and wants to record who came back. The rim lies all round Seoul, so the field work is done south of the river too. That is why Sin Jong-mok, a Government man, lives in Gangnam. Baekya is his radio call sign, and he carries the relay between Seonjeongneung and Suseo.
 - Jo Jaepyo's party crosses from any edge and sells what it brings to any side, so it joins no polity (section 3.2). The return network is the line that meets it when it comes back toward the Government side.
 
@@ -435,7 +435,7 @@ Basis: Bible section 1 row 10, section 8, section 9.2 Q17 (calculated by occupat
 
 1. The six stats of all 1,022 people are recomputed from their v3 occupation and rank. The stats of the old detailed records were tied to the old roles and are not used (plan task 8).
 2. The calculation is `deriveTableStats(personId, occupation_ko, rank_ko)` as it is. Read the section 8.3 table from the top against the occupation phrase, take the class of the first matching word, add the section 8.5 rank modifier to the section 8.4 class base, and clamp to 1-20. `effective` equals `base`.
-3. Trait effects (`traits[].effects`) are all empty arrays, so `effective = base` always holds.
+3. Trait effects (`traits[].effects`) are all empty arrays, so `effective = base` always holds. Whether automatic battle should use personality traits (the place of brave and craven) for the commander's injury risk is an owner question. If it does, a separate battle-only effect is added rather than a stat effect, and this item stays as it is (chapter 09 section 3.4.2, section 7 item 4, bible section 9.5).
 4. 090 `sourceStatus` becomes `ck3-table-derived` for all 1,022 people. Then `node scripts/pages/ck3-stats.mjs --dry-run` recomputes the stored values of all 1,022 people from the table and compares them (`E_DERIVED_DRIFT`).
 5. No occupation phrase outside the section 8.2 list is used, and no rank outside the section 8.5 list. Outside the lists the tool fails with `E_UNKNOWN_OCCUPATION` or `E_UNKNOWN_RANK`.
 
@@ -526,7 +526,7 @@ Occupation phrases (`occupation_ko`) are chosen from this list only, one phrase 
 | scout | 테두리 정찰 | Edge watch | 테두리 정찰병, 테두리 망꾼 / Edge watcher, Rim watcher | GFA |
 | scout | 탐사 | Survey | 탐사원 / Surveyor | GFA |
 | scout | 정보 수집 | Intelligence gathering | 정보원, 국가정보원장 / Intelligence agent, NIS Director | GFA |
-| scout | 동력 덩이 채집 | Power-pack running | 동력 덩이 캐는 사람 / Power-pack runner | FA |
+| scout | 동력 덩이 채집 | Power-core running | 동력 덩이 캐는 사람 / Power-core runner | FA |
 | scout | 귀환 탐사 | Return crossing | 귀환 일행 / Return crosser | I |
 | record | 장부 기재 | Ledger entry | 장부 서기, 동주민센터 서기, 구청 서기 / Ledger clerk | G |
 | record | 명부 필사 | Register copying | 주민등록 원부 필사관, 명부 필사관 / Register copyist | G |
@@ -596,7 +596,7 @@ Ranks (`rank_ko`) are chosen from this list only. The 56 old rank words (군주,
 | 청장 | Commissioner | G | Stewardship +2 |
 | 총재 | Governor | G | Stewardship +1, Intrigue +1 |
 | 원장 | Director | G | Intrigue +2 |
-| 구청장 | District Office Head | G | Stewardship +1, Diplomacy +1 |
+| 구청장 | Head of the District Office | G | Stewardship +1, Diplomacy +1 |
 | 동장 | Dong Chief | G | Stewardship +1 |
 | 역장 | Stationmaster | G | Stewardship +1 |
 | 서기관 | Senior Secretary | G | Stewardship +1, Learning +1 |
@@ -680,12 +680,12 @@ export const RANK_MODIFIER = {
 
 | Faction | Role → rank |
 |---|---|
-| Government | Member → 국회의원 (the President: 대통령). Dong Chief → 동장. Stationmaster → 역장. Minister → 장관. Vice Minister → 차관. Commissioner of the Korea Forest Service → 청장. Governor of the Bank of Korea → 총재. NIS Director → 원장. District Office Head → 구청장. Capital Defense Commander → 대령. Heir of an Assembly Member house → 후계. Ministry Director-General, Presidential Chief of Staff, secretaries, Secretaries-General of the Assembly and the parties → 서기관. Head of the medical corps, doctors among the health workers → 수련의 under 33, 전문의 above. District unit commander → 대위 (소령 at 34 or over). Capital Defense Command staff → 소령. Squad leader → 하사 under 26, 중사 above. Army soldiers → 일병 at 19, 병장 at 20 (18 months of conscript service, chapter 04 section 14.3), 하사 at 21-25, 중사 at 26-34, 상사 at 35 or over. Police officer → 경찰관. Clerks (community centre, district office, ministry, Assembly, master copy) → 서기 under 30, 주사 at 30-44, 사무관 at 45 or over. School teacher → 교사. Everyone else (skilled and labour work, market traders, dependants, spouses, kin and children of Assembly Member houses, bodyguards, coupon printers) → 등재민 |
+| Government | Member → 국회의원 (the President: 대통령). Dong Chief → 동장. Stationmaster → 역장. Minister → 장관. Vice Minister → 차관. Commissioner of the Korea Forest Service → 청장. Governor of the Bank of Korea → 총재. NIS Director → 원장. Head of the District Office → 구청장. Capital Defense Commander → 대령. Heir of an Assembly Member house → 후계. Ministry Director-General, Presidential Chief of Staff, secretaries, Secretaries-General of the Assembly and the parties → 서기관. Head of the medical corps, doctors among the health workers → 수련의 under 33, 전문의 above. District unit commander → 대위 (소령 at 34 or over). Capital Defense Command staff → 소령. Squad leader → 하사 under 26, 중사 above. Army soldiers → 일병 at 19, 병장 at 20 (18 months of conscript service, chapter 04 section 14.3), 하사 at 21-25, 중사 at 26-34, 상사 at 35 or over. Police officer → 경찰관. Clerks (community centre, district office, ministry, Assembly, master copy) → 서기 under 30, 주사 at 30-44, 사무관 at 45 or over. School teacher → 교사. Everyone else (skilled and labour work, market traders, dependants, spouses, kin and children of Assembly Member houses, bodyguards, coupon printers) → 등재민 |
 | Free Cities | Head → the city's title. Section Chief → 구간장. Station Foreman → 역반장. Heir → 후계. Yangcheon Shift Chief → 교대장. Crossing Chief → 건널목장. Station Foreman who is also a Gangseo Field Chief → 역반장. Bench owner → 대주. Crew chief, squad leader of the watch duty → 작업조장. Hands, trade and contract, watch, Mountain Keepers, edge crew, the head's spouse and elders → 손. Apprentice → 견습. Labourers and household → 일손 |
-| Arc | Hierophant → 교주. Head of the Near House → 곁집장. Shelter Head → 대피소장. Bench Keeper → 정비장. Near House elder → 곁집 어른. Rival → 곁집원. Guard Captain → 호위장. Word Keeper → 말지기. S1 negotiator → 곁집원. Bench fitters, field fitters → 정비공. Baptised fighters → 세례자. House levies → 미세례자. Other roles → 세례자 if the part count is 1 or more, 미세례자 if 0 |
+| Arc | Hierophant → 교주. Head of the Near House → 곁집장. Shelter Head → 대피소장. Bench Keeper → 정비장. Near House elder → 곁집 어른. Rival → 곁집원 (a rival of the Head's siblings' or parents' generation → 곁집 어른, chapter 06 section 12.4; Yi Hong-won of section 7.2). Guard Captain → 호위장. Word Keeper → 말지기. S1 negotiator → 곁집원. Bench fitters, field fitters → 정비공. Baptised fighters → 세례자. House levies → 미세례자. Other roles → 세례자 if the part count is 1 or more, 미세례자 if 0 |
 | Unaffiliated | 미등록 |
 
-**Part count in the Arc.** The minimum part counts of chapter 06 section 3.5 (Head of the Near House 2, Shelter Head 1, Bench Keeper 3) are kept. To come close to the ratios of chapter 06 section 5.3 (one in six baptised; about 60% of the baptised with one part) these defaults are used, where `n` is the number in the id. The Hierophant's are not counted (no value, chapter 06 section 2.4). Head of the Near House `2 + (n mod 2)`, Bench Keeper `3 + (n mod 2)`, Shelter Head `1 + (n mod 2)`, Guard Captain 3, baptised fighters `2 + (n mod 3)`, Near House elders and rivals 2, fitters `1 + (n mod 2)`, Word Keepers, negotiators and the Hierophant's guards 1, house levies 0, other roles 1 if `n mod 6 = 0`, otherwise 0. People outside the Arc have 0, except that a Free City person doing `이식 정비` (implant maintenance) and a Government licensed machine-body entry (chapter 04 section 13.3) may have 1 (provisional T08-58).
+**Part count in the Arc.** The minimum part counts of chapter 06 section 3.5 (Head of the Near House 2, Shelter Head 1, Bench Keeper 3) are kept. To come close to the ratios of chapter 06 section 5.3 (one in six baptised; about 50% of the baptised with one part) these defaults are used, where `n` is the number in the id. The Hierophant's are not counted (no value, chapter 06 section 2.4). Head of the Near House `2 + (n mod 2)`, Bench Keeper `3 + (n mod 2)`, Shelter Head `1 + (n mod 2)`, Guard Captain 3, baptised fighters `2 + (n mod 3)`, Near House elders and rivals 2, fitters `1 + (n mod 2)`, Word Keepers, negotiators and the Hierophant's guards 1 (except Ji Yeon-hui, who came from the independents: 0, unbaptised, section 7.2), house levies 0, other roles 1 if `n mod 6 = 0`, otherwise 0. People outside the Arc have 0, except that a Free City person doing `이식 정비` (implant maintenance) and a Government licensed machine-body entry (chapter 04 section 13.3) may have 1 (provisional T08-58).
 
 ### 8.7 The words of chapters 04-06 and this chapter's slots
 
@@ -1032,12 +1032,12 @@ The line links where the faction changes are thirteen (chapter 1 section 7.4). T
 
 | How | Where | Who keeps it | When | What crosses |
 |---|---|---|---|---|
-| Under-river tunnel | Mapo–Yeouinaru (Government↔Free City), Gwangnaru–Cheonho, Seoulsup–Apgujeong Rodeo (Government↔Arc) | The Government's ledger checkpoints at the north entrances (since 2079). The south entrances are kept by Yeongdeungpo (Yeouinaru) and the Arc | Any time. Warm and sheltered | Contract workers, envoys, traders with passes, contract goods. The three tunnels carry most legal trade |
-| Bridge | Yongsan–Noryangjin, Hapjeong–Dangsan, Ichon–Dongjak, Digital Media City–Magoknaru (Government↔Free City), Gangbyeon–Jamsillaru, Oksu–Apgujeong, Jayang–Cheongdam (Government↔Arc) | The north end of a bridge is kept by the Government's Dong Chief, the south end by that district's city or Near House. The Noryangjin and Dongjak ends are the work of the Dongjak Ferry Keeper | Daytime in the long-light half, only without a blizzard. Closed when the wind passes 15 metres per second | Heavy loads on sledges (firewood, salvage, bundles of fibre). People trying to avoid the tunnel checkpoints |
+| Under-river tunnel | Mapo–Yeouinaru (Government↔Free City), Gwangnaru–Cheonho, Seoul Forest–Apgujeong Rodeo (Government↔Arc) | The Government's ledger checkpoints at the north entrances (since 2079). The south entrances are kept by Yeongdeungpo (Yeouinaru) and the Arc | Any time. Warm and sheltered | Contract workers, envoys, traders with passes, contract goods. The three tunnels carry most legal trade |
+| Bridge | Yongsan–Noryangjin, Hapjeong–Dangsan, Ichon–Dongjak, Digital Media City–Magongnaru (Government↔Free City), Gangbyeon–Jamsillaru, Oksu–Apgujeong, Jayang–Cheongdam (Government↔Arc) | The north end of a bridge is kept by the Government's army (units directly under the Capital Defense Command, chapter 04 section 14.1), the south end by that district's city or Near House. The Noryangjin and Dongjak ends are the work of the Dongjak Ferry Keeper | Daytime in the long-light half, only without a blizzard. Closed when the wind passes 15 metres per second | Heavy loads on sledges (firewood, salvage, bundles of fibre). People trying to avoid the tunnel checkpoints |
 | Ice | anywhere on the Han | No one keeps it. That is why it is dangerous | Night in the long-dark half. The darkness covers the kilometre with nowhere to hide | Smuggling, flight that accepts being struck off, urgent messages of the return network |
-| Land border | Sadang–Bangbae, Chongsindae-ipgu (Isu)–Naebang, Dongjak–Gubanpo (Free City↔Arc) | The Dongjak Ferry Keeper on the Free City side, the Seocho Near House on the Arc side | Any time | Parts and technicians, charged cells, comings and goings of divided houses. The quarrels of the two polities that split apart are also fought here |
+| Land border | Sadang–Bangbae, Chongshin Univ. (Isu)–Naebang, Dongjak–Gubanpo (Free City↔Arc) | The Dongjak Ferry Keeper on the Free City side, the Seocho Near House on the Arc side | Any time | Parts and technicians, charged cells, comings and goings of divided houses. The quarrels of the two polities that split apart are also fought here |
 
-- **A Government person needs a pass to cross the river.** The Dong Chief issues one for each crossing, and for contract work the seal of the district's Assembly Member is added. A registered resident who crosses without a pass is struck off. A person struck off gets back onto the ledger only through a registration review.
+- **A Government person needs a pass to cross the river.** The Dong Chief issues one for each crossing, and for contract work the seal of the district's Assembly Member is added. A registered resident who crosses without a pass is struck off. Someone struck off as of unknown residence can get back onto the ledger through a registration review, but once the striking-off review confirms a penalty strike-off, they can never return (chapter 04 sections 5 and 7.2).
 - **A person off the ledger needs an invitation pass to enter Government land.** It is issued only at the north checkpoints of the three tunnels. The technicians of the water supply contract are the most common holders of invitation passes.
 - **The Free Cities do not stop people leaving.** Instead each city takes a crossing share (a toll) at its own bridge ends and tunnel entrances. The share is counted in watts and litres, or in hours of work.
 - **The Arc looks at bodies, not papers.** The Bench Keeper of a border station checks the parts of those who cross. The part count of each baptised person is written in the bench roll, so a person carrying a part not on the roll is taken for a person carrying contraband.
@@ -1052,7 +1052,7 @@ Trade comes from the control table of chapter 1 section 5.6, because each holds 
 | Free Cities → Government | Maintenance and parts for pumps, water wheels, heat pumps and windmills, well digging, the hands that build fibre-sugar vats and light fields |
 | Free Cities → Arc | Parts, worked metal, technicians |
 | Arc → Free Cities | Cells charged with power from the Jamsil weir, maintenance of machine bodies |
-| Arc → Government | Maintenance of machine bodies mended at the benches (only Government elites take it, in secret), river fish |
+| Arc → Government | Maintenance of machine bodies mended at the benches (taken under a Ministry of Health and Welfare machine-body registration, chapter 04 section 13.3; taking it without a permit is the forbidden trade below), river fish |
 | Government → Arc | Not blocking the north end of the weir on the Gwangjin side. The biggest thing the Government gives the Arc is not an object but letting the wheel turn |
 
 - Legal trade goes through the three tunnels and the land border to the markets. The big markets are Yeongdeungpo and Yeouido (opened by the Yeongdeungpo Market Master) and Dongjak (where the three polities meet).
@@ -1065,10 +1065,10 @@ Where something is forbidden, there is smuggling (provisional T08-74).
 
 | What | From where to where | Why it is forbidden | If caught |
 |---|---|---|---|
-| People (registered residents fleeing the ledger) | Government → south of the river, over the ice | Registered residents cannot change where they live or what they do (Bible section 2.1 [Approved]) | Struck off. If caught, re-registered to the worst work |
+| People (registered residents fleeing the ledger) | Government → south of the river, over the ice | Registered residents cannot change where they live or what they do (Bible section 2.1 [Approved]) | Struck off. If caught north of the river, sent to the striking-off review; short of a penalty strike-off, given a labour penalty or a forced transfer (chapter 04 section 7.3) |
 | Unlicensed machines and baptism | Arc benches → Government soldiers and elites | The Government registers only licensed machine bodies, as medicine (chapter 04 section 13.3). An unlicensed machine and baptism count as joining an organization off the ledger | Striking-off review (chapter 04 sections 13.3 and 7.3). A licensed machine-body entry is not smuggling |
 | Charged cells | Arc (Jamsil) → Government | The Government does not write in the ledger that it leans on the Arc's power | Confiscated |
-| Old official papers | Government → Free Cities (as fibre) | Not eating ledgers and old official papers is the Government's taboo | Judged by the district's Assembly Member, and treated most heavily |
+| Old official papers | Government → Free Cities (as fibre) | Not eating ledgers and old official papers is the Government's taboo | The Ministry of Justice's striking-off review (the district's Assembly Member submits an opinion, chapter 04 section 7.2). One of the heaviest crimes |
 | Salt and seed | everywhere | Scarcer every year. The Government binds them as rations, the cities as contract goods | Confiscated |
 | Fake parts | Free City workshops → everywhere | Each city sells under a guarantee bearing the name of its bench | That bench is driven out of that city's markets |
 | Power cores brought from outside | rim → Seoul | A power core that did not go through the return network leaves no ledger record of who came back | Confiscated on Government land, a share taken elsewhere |
@@ -1082,9 +1082,9 @@ Where something is forbidden, there is smuggling (provisional T08-74).
 
 ### 11.5 Diplomacy
 
-- **The Government and the Free Cities.** The water supply contract is the centre of diplomacy (Bible section 1 row 11, chapter 1 section 5.2). The Government sends a few Assembly Members as envoys to the contract meeting. The OMO Party wants to widen the contract and the Claw Party to narrow it (chapter 1 section 7.1). Because the Government does not see those off the ledger as its people, it writes the other side in the contract as "a contract party off the ledger".
+- **The Government and the Free Cities.** The water supply contract is the centre of diplomacy (Bible section 1 row 11, chapter 1 section 5.2). The National Assembly does not ratify the contract. A ministry signs a maintenance service annex for each facility, the Assembly Member of the district where the facility stands seals it too, and the President signs it off (chapter 04 section 15). Ministry people and those Assembly Members go to the contract meeting. The OMO Party wants to widen the contract and the Claw Party to narrow it (chapter 1 section 7.1). Because the Government does not see those off the ledger as its people, it writes the cities across the river in the annex as "work crews engaged for the service" (chapter 04 section 15).
 - **Among the Free Cities.** There is no one above them, so when something must be decided together they hold a contract meeting. The head of the hosting city is the Host (chapter 1 section 7.2). What a contract meeting agrees binds only the cities that set their seals to it.
-- **Arc.** Near House people carry the Hierophant's word. The Arc sits at the third water supply contract for the first time (chapter 1 section 5.2). The Arc's envoy is the Seocho Near House, because it faces the Dongjak–Seocho border.
+- **Arc.** Near House people carry the Hierophant's word. The Arc sits at the third water supply contract for the first time (chapter 1 section 5.2). For the water supply contract the negotiating is done by the negotiators of the Hierophant's household, and the seal is set by a Head of the Near House who has received the Hierophant's word (chapter 06 section 7.4). The Seocho Near House, which faces the Dongjak–Seocho border, is the standing envoy for the business of the border.
 - **Guarantors.** What makes a contract hold is a guarantor. For the term of a contract the Free Cities send a few hands to the other side's stations to keep the pumps, and the Government sends gangs of registered workers. A guarantor lives on the other side's land but is a person of their own faction (section 11.6) (provisional T08-77).
 
 ### 11.6 People who live on another faction's land
@@ -1125,15 +1125,15 @@ The hands the Free Cities can call up at once through watch duty are set at abou
 
 ### 12.3 Government
 
-**Doctrine.** The five lines of chapter 04 section 14.4 are the Government's doctrine: an army that holds, that does not cross the river as an army, that fights with numbers, that records every round, and that has no machine-bodied soldiers. The Government is where the arsenals and vehicle depots of the Republic of Korea Armed Forces survived, so it is the only faction with artillery and armoured vehicles. But ammunition and fuel are not newly made (provisional T08-80).
+**Doctrine.** The five lines of chapter 04 section 14.4 are the Government's doctrine: an army that holds, that does not cross the river as an army, that fights with numbers, that records every round, and that has no machine-bodied soldiers. The Government is where the arsenals and vehicle depots of the Republic of Korea Armed Forces survived, so it is the faction with the most artillery and armoured vehicles. But ammunition and the power that moves vehicles (large batteries and power cores, chapter 03 section 7.1) are not newly made (provisional T08-80).
 
 | Item | Content |
 |---|---|
 | Strengths | Many levy infantry and reservists. Checkpoint garrisons. Edge reconnaissance on the mountain side. Riflemen, mortars and a few drones directly under the Capital Defense Command (flown only on the commander's signature) |
 | Deliberately empty slots | **No machine-body units.** Government people can register a licensed machine body with the Ministry of Health and Welfare (chapter 04 section 13.3), but since the only place to maintain it is the Arc, no unit is formed of such soldiers (chapter 04 section 14.4 item 5). **No hired units.** People off the ledger are not taken into the army. **Engineers and maintenance are thin.** The hands that mend bridges and tunnels are borrowed from the Free Cities through the water supply contract (chapter 04 section 14.5). **Tier 1-2 levies have low morale.** They are people called out of inherited work at nineteen |
-| Scarcities | Ammunition, fuel. Cases are returned, and reloading relies on Free City benches |
+| Scarcities | Ammunition, fuel (`fuel`: there is no oil in v3, so it means charge for the large batteries and the power cores that move armoured and rail vehicles, chapter 03 section 7.1). Cases are returned, and reloading relies on Free City benches |
 | Recruitment | The Ministry of National Defense and the district units (chapter 04 section 14.1). The chain shapes are as in `roster-framework.md` section 4.2; only the names change to v3 (section 12.8) |
-| Commanders | President for Life, Capital Defense Commander, Assembly Members (district units), officers of captain and above |
+| Commanders | President for Life, Capital Defense Commander, district unit commanders (recommended by the Assembly Member and appointed by the Ministry of National Defense, chapter 04 section 14.1), officers of captain and above. Assembly Members can go along as attached heroes |
 | Where it fights | The north checkpoints of the three under-river tunnels, the north ends of the seven bridges, the rim watchtowers of the northern mountains |
 
 ### 12.4 Free Cities
@@ -1155,12 +1155,12 @@ The hands the Free Cities can call up at once through watch duty are set at abou
 
 | Item | Content |
 |---|---|
-| Strengths | Baptised melee infantry across tiers 1-5. High morale. Many commander escorts. Old machines revived from the old Suseo and Godeok depots that can never be rebuilt |
+| Strengths | Baptised melee infantry across tiers 1-5. High morale. Many commander escorts. Old machines revived at the old Godeok depot (the parts salvaged from the store of the old Suseo depot, chapter 03 section 7.3) that can never be rebuilt |
 | Deliberately empty slots | **No drones.** Cells and parts go first to the charging and fitting of baptism (chapter 06 section 11.2). **No artillery.** In close tunnel fighting baptised fighters are stronger than guns. **Few missile units, and they stop at tier 3.** **Only four districts of territory, so the roster is small (18-22 units)** |
 | Scarcities | Implant parts, medicine. If parts are cut off, the baptised elite weakens all at once. Charging the bodies is counted as part of implant upkeep (no new scarcity word is made) |
 | Recruitment | The Near Houses and the Hierophant's house. Chain shapes as in `roster-framework.md` section 4.4 |
 | Commanders | Hierophant, Heads of the Near Houses, Guard Captains |
-| Where it fights | The eight boundaries of chapter 06 section 11.3: the three land borders (Seocho), the Gwangnaru–Cheonho tunnel (Gangdong), the Seoulsup–Apgujeong Rodeo tunnel (Gangnam), the south end of the Jamsil weir |
+| Where it fights | The eight boundaries of chapter 06 section 11.3: the three land borders (Seocho), the Gwangnaru–Cheonho tunnel (Gangdong), the Seoul Forest–Apgujeong Rodeo tunnel (Gangnam), the south end of the Jamsil weir |
 
 ### 12.6 Battlefields and seasons
 
@@ -1168,14 +1168,14 @@ The hands the Free Cities can call up at once through watch duty are set at abou
 - **Concourses and entrances.** A fight to take a station begins in the entrance shafts. The Free Cities make a station unbearable with its fans and entrances (chapter 05 section 11.4).
 - **Bridges and the surface.** Wind and cold wear people down before the fighting does. `thin-clad` and `frost-hardened` decide things here.
 - **The ice.** None of the three factions crosses it as an army (the failure of 2079, chapter 1 section 9). Only small raids cross.
-- **Seasons.** In the long-light half, surface operations are easy. In the long-dark half, light runs short and the eyes of drones and marksmen both grow short. During the 2-4 days of a blizzard, surface fighting stops, and above 25 metres per second of wind drones cannot fly. The outside machines are blinded at the same time (provisional T08-83).
+- **Seasons.** In the long-light half, surface operations are easy. In the long-dark half, light runs short and the eyes of drones and marksmen both grow short. During the 2-4 days of a blizzard, surface fighting stops, and drones fly only on days when the wind is under 10 metres per second (chapter 03 section 6.1). The outside machines are blinded at the same time (provisional T08-83).
 
 ### 12.7 Commanders come from the people ledger
 
 Commanders and attached heroes come from among the 1,022 (`roster-framework.md` section 10.2).
 
 - **Who can be a commander.** A person holding a seat or rank listed in the "Commanders" row of sections 12.3-12.5.
-- **Who can be an attached hero.** A Key or S1 person with Martial or Prowess of 9 or more.
+- **Who can be an attached hero.** A Key or S1 person with Martial or Prowess of 9 or more. An army has at most four attached heroes by default (chapter 09 section 3.4, `roster-framework.md` section 10.2, provisional T29-7).
 - The formula by which a commander's Martial sets the presence-radius bonus (the pending default of `roster-framework.md` section 10.6) is calculated with the v3 stats of section 8.
 
 (provisional T08-84)
@@ -1190,6 +1190,8 @@ When task 20 revises `roster-framework.md` and the 130-132 rows to v3, it change
 | The Arc's "가문 수장 호위대" and "가문 본청" | The title of an Arc district head is Head of the Near House (chapter 1 section 8.3) | 곁집장 호위대, 곁집 본청. The name of the house levies (가문 징집병) stays as it is, as chapter 06 section 11.1 says |
 | The owner's comparison words left in the section 9.2 identity table and basis sentences (the words of the third, fifth and sixth rows of the left column of the chapter 1 section 2.4 table) | Comparison words are not used in the world's text (chapter 1 section 2.4) | the army of the ledger / the armies of cities that stand apart / there is no seat above |
 | The old title in the section 4.2 basis sentence | Same reason | Member of the National Assembly |
+
+Task 9 has already changed the framework side of this table (`roster-framework.md` section 4.2 basis and building name, 4.3 basis, the 4.4 House Seat Hall, 8.3, 9.2, the 11.1 markers and 13 P1) (chapter 09 section 7, item 9). Task 20 brings the names and texts of the 130-132 rows into line with the same words.
 
 The four lines each of `FACTION_GAPS` in `site/build.mjs` keep the same meaning in v3, so they need not change. The reason sentences are taken from sections 12.3-12.5 of this chapter.
 
@@ -1221,7 +1223,7 @@ This chapter does not write unanswered questions as approved. For the following 
 
 | Question | This chapter's provisional default | Where used |
 |---|---|---|
-| Q5 Ji Yeon-hui's base and affiliation | Affiliation Arc. Location the Hierophant's house (Jamsil) of chapter 06 section 2.3 | sections 3.2, 7.2 |
+| Q5 Ji Yeon-hui's base and affiliation | Affiliation Arc, as the Q5 recommendation. Location the Hierophant's house (Jamsil) of chapter 06 section 2.3 instead of the Q5 recommendation (the Suseo area) | sections 3.2, 7.2 |
 | Q6 the city where Go Ye-jin grew up | not decided. The biography says only "grew up in a Free City" | section 7.2 |
 | Q7 Oh Hae-rin's title | "원장" kept. NIS Director (chapter 04 section 16.4) | section 7.2 |
 | Q8 Sin Jun | no new role. Title and position empty | section 7.2 |

@@ -168,13 +168,13 @@ The `war-machine` category and the `artillery` role may use 100 at any tier, bec
 
 ### 4.2 Government
 
-Basis: only people on the ledger are citizens (2.1 [approved]), and each district's Senator holds its duchy (2.1 [approved]). So levies start at the ledger and the elite come from the Senator's seat station.
+Basis: only people on the ledger are citizens (2.1 [approved]), and each district's Member of the National Assembly holds its duchy (2.1 [approved], corrected 2026-11-13). So levies start at the ledger and the elite come from the Assembly Member's seat station. The building name "Assembly Member's Guard Hall" is the v3 name of chapter 07 section 12.8 (provisional T08-85). Task 20 renames the `recruit_building` of the 130 rows to it.
 
 | Chain | Stage | Building (en / ko) | Where | Opens |
 |---|---|---|---|---|
 | Levy | 1 | Levy Ledger Office / 징발 장부소 | Any Government station | Tier 1 infantry, missile |
 | Levy | 2 | Ledger Drill Yard / 장부 연병장 | Interchange | Tier 2-3 infantry, tier 2 fast |
-| Levy | 3 | Senate Guard Hall / 상원 근위청 | A Senator's duchy seat station (up to 14) | Tier 3-4 commander, tier 4 infantry |
+| Levy | 3 | Assembly Member's Guard Hall / 국회의원 근위청 | An Assembly Member's duchy seat station (up to 14) | Tier 3-4 commander, tier 4 infantry |
 | Arms | 1 | Firing School / 사격 교습소 | Any Government station | Tier 2 missile |
 | Arms | 2 | Arms Repair Works / 병기 정비창 | Interchange | Tier 3 missile, tier 3 fast, tier 3 war-machine |
 | Arms | 3 | State Gun Works / 국가 포창 | An interchange in Jongno-gu, Jung-gu or Yongsan-gu. 2 per faction | Tier 4 missile (artillery), tier 4 war-machine |
@@ -188,7 +188,7 @@ Jongno, Jung-gu and Yongsan are picked because the map data puts the Government'
 
 ### 4.3 Free City
 
-Basis: the Free Cities are city-states, each holding its own duchy, with no king (2.2 [approved]). Most residents are engineers who trade goods and skills (2.2 [approved]). So troops come from contracts and workshops rather than from a state, and elite buildings exist once per city (duchy).
+Basis: the Free Cities are cities that stand apart, each holding its own duchy, with no seat above them (2.2 [approved], 01-core 2.4). Most residents are engineers who trade goods and skills (2.2 [approved]). So troops come from contracts and workshops rather than from a state, and elite buildings exist once per city (duchy).
 
 | Chain | Stage | Building (en / ko) | Where | Opens |
 |---|---|---|---|---|
@@ -213,7 +213,7 @@ Basis: the Arc is the four Gangnam districts (2.3 [approved]), ruled by houses (
 |---|---|---|---|---|
 | House | 1 | House Muster Hall / 가문 집결소 | Any Arc station | Tier 1-2 infantry, missile, fast |
 | House | 2 | House Guard Yard / 가문 호위 마당 | Interchange | Tier 3 infantry, commander, missile |
-| House | 3 | House Seat Hall / 가문 본청 | An Arc duchy seat station (up to 4) | Tier 4 commander, infantry |
+| House | 3 | Near House Seat Hall / 곁집 본청 | An Arc duchy seat station (up to 4) | Tier 4 commander, infantry |
 | Baptism | 1 | Baptism Training Hall / 세례 수련장 | Interchange | Tier 3 infantry, fast |
 | Baptism | 2 | Baptism Guard Hall / 세례 호위청 | An Arc duchy seat station | Tier 4 infantry, fast |
 | Baptism | 3 | Hierophant's Guard Hall / 교주 호위청 | 1 per faction | Tier 5 commander, infantry |
@@ -329,6 +329,7 @@ Examples: a Government armoured car with a gun matches Scarce-3 (`ammo`) and Sca
 | `medicine` | People squads replenish at half rate. Wounded do not return after battle | n/a. No TW counterpart resource |
 
 - **Visible.** The recruitment and army screens show the input icon and the number of intervals left (screen design is task 18). The player chooses between one more elite unit and a longer stockpile.
+- **Replenishment rates.** [pending] Levy-type squads (Government conscript infantry and reserves, Free City guard shares, Arc house levies) refill 3% of their full strength per turn; standing-type squads (Government professional soldiers, Free City contract companies, Arc baptised fighters) refill 10% per turn. The wounded come back separately, the next turn. The `medicine` and `implants` effects of the table above apply to these rates first. Basis: chapter 09 section 3.5.2 (provisional T29-11).
 - **A different bottleneck per faction.** The Government burns `ammo` and `fuel`, the Free City `cells` and `parts`, the Arc `implants`. This ties into the identity matrix in section 9.
 
 ## 7. Attribute tags
@@ -408,7 +409,7 @@ How to read it:
 ### 8.3 How to fill `counters`
 
 - `counters` lists 1-4 `id`s of units this unit is good against. List only units of a category marked `+` in table 8.2.
-- Pointing at other factions' `id`s is the norm. But tasks 13-15 run in parallel. So each roster first fills `counters` with its own faction's `id`s and passes the build check. Free Cities fight each other, houses fight houses, and Senators fight Senators, so own-faction `id`s are meaningful. After all three rosters merge, the roster task that merges last adds at least one cross-faction `id` per unit. [pending] The orchestrator names that integrator.
+- Pointing at other factions' `id`s is the norm. But tasks 13-15 run in parallel. So each roster first fills `counters` with its own faction's `id`s and passes the build check. Free Cities fight each other, Near Houses fight Near Houses, and Assembly Members fight Assembly Members, so own-faction `id`s are meaningful. After all three rosters merge, the roster task that merges last adds at least one cross-faction `id` per unit. [pending] The orchestrator names that integrator.
 
 ## 9. Faction identity matrix
 
@@ -430,8 +431,8 @@ Target roster size is 18-26 units per faction. The "category counts" below are t
 
 | Faction | Identity | Strengths | Deliberate gaps | Canon basis |
 |---|---|---|---|---|
-| Government | Modern-feudal combined arms: the numbers of ledger conscripts and remnant modern arms | Many cheap conscript infantry. Guns and armoured cars. A small state flight section. Senate guards | **No implant units** (`wired-body` 0). **No mercenaries.** Thin support and field repair (support 1-2). Low morale for tier 1-2 conscripts | Only people on its ledger are citizens (2.1) → it does not hire people off the ledger for money. Scarcity made work hereditary and froze a vertical hierarchy (section 1 row 12) → a wide morale gap between conscripts and guards. Cyberware depends on access to maintenance and to the faction that holds it (section 1 row 14) → the Government is neither the engineer community (Free City) nor the baptised community (Arc), so it fields no implant units [frame] |
-| Free City | Engineer-guild city-states: contract mercenaries and skilled crews | Drones and jamming. Field repair and engineers. Rail mobility. Skilled shooters | **No ledger-style mass levy** (at most 1 tier 1 infantry). **No tier 5.** Heavy armour stops at tier 4. Few commander escorts (1-2) | City-states, not one power, with no king (2.2) → no power to levy people across cities. They could not even choose a leader (2.2, chapter 1 quote) → few command units to bind one army. Most residents are engineers (2.2) → strong in drones, repair and engineering |
+| Government | The army of the ledger: combined arms built on the numbers of ledger conscripts and remnant modern arms | Many cheap conscript infantry. Guns and armoured cars. A small state flight section. Assembly Members' guards | **No implant units** (`wired-body` 0). **No mercenaries.** Thin support and field repair (support 1-2). Low morale for tier 1-2 conscripts | Only people on its ledger are citizens (2.1) → it does not hire people off the ledger for money. Scarcity made work hereditary and froze a vertical hierarchy (section 1 row 12) → a wide morale gap between conscripts and guards. Cyberware depends on access to maintenance and to the faction that holds it (section 1 row 14) → the Government is neither the engineer community (Free City) nor the baptised community (Arc), so it fields no implant units [frame] |
+| Free City | The armies of cities that stand apart: workbench engineers, contract companies and skilled crews | Drones and jamming. Field repair and engineers. Rail mobility. Skilled shooters | **No ledger-style mass levy** (at most 1 tier 1 infantry). **No tier 5.** Heavy armour stops at tier 4. Few commander escorts (1-2) | Cities that stand apart, not one power, with no seat above them (2.2) → no power to levy people across cities. They could not even choose a leader (2.2, chapter 1 quote) → few command units to bind one army. Most residents are engineers (2.2) → strong in drones, repair and engineering |
 | Arc | Clan hierarchy and baptised implant warriors | Baptised melee infantry across tiers 1-5. High morale. Many commander escorts. Restored old machines | **No drones** (0). **No artillery** (`artillery` 0). Few missile units, capped at tier 3. Only four districts, so the roster is small (18-22) | Faith is counted by the number of implanted parts (2.3) → resources go into bodies. House rule (2.3) → many house escorts and high morale. Four Gangnam districts (2.3) → the smallest production base. No drones and no artillery is a design choice drawn from this basis [frame] |
 
 ### 9.3 Scarcity bottleneck per faction
@@ -440,7 +441,7 @@ Target roster size is 18-26 units per faction. The "category counts" below are t
 |---|---|---|
 | Government | `ammo`, `fuel` | The more guns and armoured cars it runs, the faster rounds and fuel run dry |
 | Free City | `cells`, `parts` | Drones and repair tie up cells and parts; cells weaken on the cold surface |
-| Arc | `implants`, `medicine` | Baptised elites are strong, but when implant parts stop, the whole elite falls apart |
+| Arc | `implants`, `medicine` | Baptised elites are strong, but when implant parts stop, the whole elite falls apart. An Arc army that has lost all the field fitters of its support squads withdraws toward its seat station at the end of that turn (chapter 06 section 11.4, chapter 09 section 4.4) |
 
 ## 10. D3 command rules
 
@@ -448,19 +449,21 @@ Target roster size is 18-26 units per faction. The "category counts" below are t
 
 - Owner decision D3: "전투 방식은 토탈워랑 동일하게 지휘관이 모든 분대의 지휘권한을 갖음".
 - One army has one commander. The commander commands every squad in the army. Squads have no authority to act on their own (2.5).
+- When several armies of the same side are on one battlefield, the player commands only their own army; each other army is an ally commanded by its own commander (AI). The squads of a Free City that has not stamped the command sheet are a separate army too, so on the same battlefield they are AI allies (chapter 05 section 11.3, chapter 09 section 3.11, provisional T29-18).
 
 ### 10.2 Commanders and heroes
 
 - The commander is a named hero from the people ledger, matching the GDD rule that an `ExpeditionSquad` needs one formal hero commander.
 - The commander deploys with one `commander` category escort squad. Each attached hero also deploys with one `commander` escort squad. Heroes are not counted in `squad_size` (GDD `SoldierSquad`).
 - Heroes are command targets but are not controlled directly (GDD: direct hero action control is out of scope).
+- [pending] An army has at most four attached heroes by default. Each takes one of the 20 slots of section 10.3 (chapter 09 section 3.4, provisional T29-7).
 
 ### 10.3 Squad limit and orders
 
 - **[frame][pending] An army holds at most 20 slots.** The commander escort takes one slot, and each attached hero (with escort) takes one. This follows D3's "the same as Total War" and the 2026-11-12 owner instruction ("전투 기준 값은 알려진 워해머 토탈워 정보를 기준으로 로스터 잡아서 작업 합니다"). A TW:WH army is 1-20 units led by one lord ([Armies](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5578&prop=wikitext&format=json)). It conflicts with the GDD `hero-squads-and-time-based-movement` rule of no fixed squad cap, so it waits for owner confirmation (section 13).
 - The orders are the four the GDD defines: move, attack target, fire, ambush. Deployment and formation are set before battle.
 - A squad in melee takes no new orders until that melee ends (GDD).
-- Retreat is an order to the whole battle, not to a squad (GDD).
+- Retreat is an order to the whole battle, not to a squad (GDD). It can be given at any time (no CK3-style 14-day limit). Squads that pull back are pursued (chapter 09 section 3.3).
 - **No command range.** The commander orders every squad instantly wherever it is on the field. This matches GDD SP-1.0.0: a player who is the battle commander directly controls every battle-map squad attached to the command.
 - **There is a presence radius.** [frame][pending] Friendly squads within 50 m of the commander's escort squad gain a morale bonus, default +8. This is a morale effect range, not an order range. TW:WH lords have a morale aura, but its radius and value are not published ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5584&prop=wikitext&format=json)), so 50 m and +8 have no TW number and stay [pending].
 
@@ -482,10 +485,11 @@ Target roster size is 18-26 units per faction. The "category counts" below are t
 
 1. **Shock.** Every squad immediately takes −20 morale, regardless of distance. Squads within 50 m take another −10. The presence bonus ends. In TW:WH a lord's death lowers leadership and can rout the army ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5584&prop=wikitext&format=json), [Armies](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5578&prop=wikitext&format=json)). −20, −10 and 50 m: No TW number; stays [pending].
 2. **Rout cascade.** Squads pushed to 0 morale or below by the shock flee, and those flights cost their neighbours morale per section 10.4.
-3. **Temporary squad leader.** If the commander's escort survives, one of its soldiers becomes the temporary squad leader (`TemporaryLeader`); otherwise a soldier from the remaining squad with the highest base leadership does. Per the GDD, the temporary leader can give the same orders as a formal commander but with weaker command effects. [frame][pending] Default: no presence bonus, no class or campaign role of a formal hero, and no hero portrait or class marker (GDD UI contract).
+3. **Temporary squad leader.** If the commander's escort survives, one of its soldiers becomes the temporary squad leader (`TemporaryLeader`); otherwise a soldier from the remaining squad with the highest base leadership does. Per the GDD, the temporary leader can give the same orders as a formal commander but with weaker command effects. [frame][pending] Default: no presence bonus, no class or campaign role of a formal hero, and no hero portrait or class marker (GDD UI contract). In a **Government army** the temporary squad leader cannot give move orders and can only order "hold where you are". This is chapter 04 section 14.2 ("when a commander falls, the squads hold where they are until the next commander's seal arrives") read on the battlefield. The temporary leaders of the other two factions give orders by the default above (chapter 09 section 7, item 6).
 4. **Attached hero.** An attached hero does not take over command. Command goes to the temporary squad leader of step 3 (GDD temporary squad leader rule). The attached hero keeps only its own roll-call effect of +4 (the same value as `roll-call`; it does not stack, the larger applies). TW:WH has no in-battle hero succession either; a new lord is recruited after the battle ([Armies](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=5578&prop=wikitext&format=json), [Encourage](https://totalwarwarhammer.fandom.com/api.php?action=parse&pageid=38158&prop=wikitext&format=json)).
 5. If the commander is knocked out or badly wounded and leaves the battle, use the same steps with the shock reduced to −10.
 6. The commander's life, wounds and capture stay on the person ID (RBATTLE-08, RBATTLE-09). Capture is decided in post-battle custody processing.
+7. **Battle-result contract.** Manual and automatic battles return the same result bundle to the campaign (chapter 09 section 3.5, provisional T29-10 to T29-12): the outcome (withdrawal, rout, destruction), casualties (30% of those who fall in the main engagement are dead, everyone who falls while fleeing is dead), the return of the wounded (they do not come back while the `medicine` stockpile is 0), captured persons (chapter 09 section 3.5.3), hyeongse (형세, the standing of the war, chapter 09 section 3.6), inputs spent, machines lost and the owner of the station.
 
 ### 10.6 Heroes, duels and personal resolution
 
@@ -507,7 +511,7 @@ Target roster size is 18-26 units per faction. The "category counts" below are t
 ### 11.1 Naming rules
 
 - `name` is plain functional English in Title Case. `name_ko` is plain Korean. Example: Ledger Levy Spears / 장부 징발 창병.
-- Pattern: [origin marker] + [weapon or function] + [squad word]. Markers differ by faction: Government uses Ledger, Senate, State; Free City uses Contract, Workshop, Guild, Rail/Track; Arc uses House, Baptised, Hierophant's, Relic.
+- Pattern: [origin marker] + [weapon or function] + [squad word]. Markers differ by faction: Government uses Ledger, Assembly Member's, State; Free City uses Contract, Workshop, Guild, Rail/Track; Arc uses House, Baptised, Hierophant's, Relic.
 - Never use: real brands, companies or weapon model names; unit or attribute names from other games; any entry of the bible section 4 forbidden vocabulary table; words that evoke clergy or monastic orders for Arc units; titles not yet approved (the proposed titles of bible 9.1, section 13).
 - Free City mercenaries are called "contract company" (계약대) or "contract soldiers" (계약병).
 
@@ -774,7 +778,7 @@ These items have no owner answer and use provisional defaults. A default is not 
 
 | # | Item | Bible question or source | Provisional default here |
 |---|---|---|---|
-| P1 | Titles used in building and unit names | Q1 (title ladder, 9.1) | Only approved titles (Senator, Duke of Gwanak, Hierophant) and plain words (house, contract, ledger). No proposed titles such as stationmaster or clan-head |
+| P1 | Titles used in building and unit names | Q1 (title ladder, 9.1), 01-core 8 | Only approved titles (Member of the National Assembly, Duke of Gwanak, Hierophant) and plain words (house, Near House, contract, ledger). No [proposal] titles such as Stationmaster |
 | P2 | Public scope of Arc unit text | Q10, Q11, Q12 | Only the approved fact that baptism replaces body parts with machines. No sanctuary, offering chamber, sealing, brains or the raising of machines outside Seoul in unit text or building conditions |
 | P3 | Name of the Arc roll of the faithful | Q13 | No roll name in unit text |
 | P4 | Depiction of implant surgery | Q14 | No surgery scenes; only the look of parts already replaced |
@@ -791,6 +795,9 @@ These items have no owner answer and use provisional defaults. A default is not 
 | P15 | Location of the Hierophant's Guard Hall | May overlap Q12 | One per faction, location not fixed |
 | P16 | Who integrates cross-faction `counters` | Tasks 13-15 run in parallel | The roster task that merges last, named by the orchestrator |
 | P17 | Duchy holder titles that differ per Free City | Bible 2.4 (differs per city [proposal]) | Building names use only "City" (City Charter House) |
+| P18 | Attached heroes per army | Chapter 09 section 3.4 (provisional T29-7) | Four by default. Each hero takes one of the 20 slots |
+| P19 | When the player character dies on the battlefield | Chapter 09 section 3.12 (provisional T29-17) | Not prevented. Play passes at once to the faction's next person (chapter 09 sections 4.2-4.4) |
+| P20 | Replenishment rates | Chapter 09 section 3.5.2 (provisional T29-11) | Levy-type 3% per turn, standing-type 10% per turn (section 6.3) |
 
 ## 14. Checklist for tasks 13-15
 

@@ -234,7 +234,7 @@ When someone dies, where do the machines in the body go? It differs by polity (p
 
 | Polity | Rule |
 |---|---|
-| Government | A machine entered in the ledger goes back to a Government fitting clinic. "Fitting returned" is entered in the register. A machine not in the ledger (fitted across the river) is confiscated |
+| Government | A machine entered in the ledger goes back to a Government fitting clinic. "Fitting returned" is entered in the register. A machine not in the ledger (fitted across the river without a permit) is confiscated. One fitted at an Arc bench under a licensed machine-body registration (chapter 04 section 13.3) is a machine in the ledger |
 | Free Cities | The machine belongs to the wearer. As the contract says, the household inherits or sells it. If the wearer went into debt to be fitted, the lending workbench takes it first |
 | Arc | The machine goes back to the maintenance bench. And when a believer dies, the brain is sealed and placed in the sanctuary, and the brain becomes a memory of the First AI **[Approved]** (bible section 2.3) |
 
@@ -301,7 +301,7 @@ Flying a drone takes motors (repair), blades (make), batteries (revive), and the
 
 | Item | Value |
 |---|---|
-| Drones in Seoul that can fly | about 1,200. Free Cities about 700, Arc about 300, Government about 200 |
+| Drones in Seoul that can fly | about 1,200. Free Cities about 950, Government about 200 (mostly for watching, held by ministries and district offices; only a few of the Capital Defense Command fly in battle, chapter 04 section 14.4), Arc about 50 (the benches' tunnel scouts; never flown in battle, chapter 06 section 11.2) |
 | Each year | about 150 lost, about 100 newly assembled |
 | One surface flight | 6 to 10 minutes, because batteries give only half below freezing (2.3) |
 | Days they can fly | Days when the wind is under 10 metres a second. They cannot fly in blizzards (over 25 metres a second) |
@@ -363,7 +363,7 @@ Rail vehicles are repaired at the workshops of the old train depots. Seoul's dep
 | Cheonwang | Guro-gu | Free City |
 | Banghwa | Gangseo-gu | Free City |
 | Gunja | Gwangjin-gu | Government |
-| Changdong | Dobong-gu | Government |
+| Chang-dong | Dobong-gu | Government |
 | Godeok | Gangdong-gu | Arc |
 | Suseo | Gangnam-gu | Arc. Line 3 depot. The workshop has been stripped and is used only as a parts store |
 | Seongsu | Seongdong-gu | Government. Line 2 depot. The surface workshop is buried in snow and iced over |
@@ -373,13 +373,13 @@ Rail vehicles are repaired at the workshops of the old train depots. Seoul's dep
 
 The only live workshops are those where people dug out the snow, roofed them over and joined them to the tunnels. The other depots are iced over or stripped.
 
-Of the twelve maintenance locomotives, seven are at the Free Cities' live depots (Sinjeong, Guro, Cheonwang, Banghwa), four at the Government's live depots (Gunja, Changdong) and one at the Arc's live depot (Godeok). Heavy loads on the rails pass through Free City workshops in the end. The Government holds the Gunja and Changdong depots yet cannot repair locomotives itself because it lacks the hands of 3.3.
+Of the twelve maintenance locomotives, seven are at the Free Cities' live depots (Sinjeong, Guro, Cheonwang, Banghwa), four at the Government's live depots (Gunja, Chang-dong) and one at the Arc's live depot (Godeok). Heavy loads on the rails pass through Free City workshops in the end. The Government holds the Gunja and Chang-dong depots yet cannot repair locomotives itself because it lacks the hands of 3.3.
 
 ## 8. Machines inside Seoul
 
 Basis: bible section 1 row 5 (humanoids and machines exist but are scarce), row 6 (war machines outside Seoul). 01-core 6.2, 6.3 row "machines inside Seoul", 10 row "synthetic persona ledger" (whether any thinking persona exists is for chapter 03 to decide).
 
-Machines inside Seoul come in three groups. The ecology of broken machines drifting in from outside and of machine groups inside Seoul (G13 to G26) is set by chapter 02. This chapter covers only machines people use (provisional T04-41).
+Machines inside Seoul come in three groups. The ecology of broken machines drifting in from outside and of machine groups inside Seoul (G13 to G16 and G25 inside Seoul, G19 and G23 drifting in; the rim machines are G17 to G24 and G26) is set by chapter 02. This chapter covers only machines people use (provisional T04-41).
 
 | Group | What it is | Number and state |
 |---|---|---|
@@ -409,7 +409,7 @@ This widens the control table of 01-core 5.6 to the inputs of technology (provis
 | Power cores | Mined across the northern perimeter | Mined across the south-western perimeter | The user. Buys them |
 | Optical fibre and tunnel cable | Tunnels north of the river | South-western tunnels | Gangnam tunnels |
 | Clean rooms | 1 | 2 | 6 |
-| Depot workshops (live) | Gunja, Changdong (Seongsu, Sinnae, Imun iced over or stripped) | Sinjeong, Guro, Cheonwang, Banghwa (Gaehwa iced over) | Godeok (Suseo stripped) |
+| Depot workshops (live) | Gunja, Chang-dong (Seongsu, Sinnae, Imun iced over or stripped) | Sinjeong, Guro, Cheonwang, Banghwa (Gaehwa iced over) | Godeok (Suseo stripped) |
 | Antibiotics | A little old stock | Grows a little from mould | Grows a little from mould |
 | Knowledge on paper | The most | Little | The manuals (not public) |
 | Hands | Few (about 800) | The most (about 3,600) | Hands that work on bodies (about 1,600) |
@@ -438,14 +438,14 @@ Trades keep the occupational names of the Republic of Korea era or are named fro
 | Gunsmith | Repairs and refits guns | The Free Cities, the Government |
 | Reloader | Prepares cases and reloads rounds | The Free Cities, the Government |
 | Net maker | Weaves and mends nets for entrances and light-fields | All three polities. The most common trade |
-| Fitter | Fits machines to bodies and tends their fixing points | The Arc (the most), the Free Cities |
+| Body fitter | Fits machines to bodies and tends their fixing points | The Arc (the most), the Free Cities |
 | Doctor | The medical professional who fits machines to bodies at Government fitting clinics. A name surviving from the Republic of Korea's medical system | Government |
 
-Arc people call these trades in the language of body and repair. "Fitter" is an Arc word ("to fit", 01-core 2.2); in the Free Cities the same worker is simply called by the name of their workbench.
+Arc people call these trades in the language of body and repair. "Body fitter" (맞춤이) is an Arc word ("to fit", 01-core 2.2); in the Free Cities the same worker is simply called by the name of their workbench.
 
 ### 10.2 How hands pass down in each polity
 
-**Government: registered trades** (provisional T04-45). The Government ledger registers each person's trade. A child of a household whose father or mother is registered as "plumbing" is registered at twelve as an apprentice of the same trade. Changing the registration needs the Dong Chief's sign-off and the stamp of the Assembly Member's office. So the Government's hands pool in households: some households have done plumbing for generations, some have climbed wind machines for generations. Maintenance instructions from Government archives go down to these households as notices, and the households copy and keep them. The trouble is that when the households that can repair shrink, no other household can fill the place, because the ledger binds the trade.
+**Government: registered trades** (provisional T04-45). The Government ledger registers each person's trade. A child of a household whose father or mother is registered as "plumbing" apprentices beside the same trade from twelve and is entered under that trade on its sixteenth birthday (succession entry, chapter 04 section 8.2). Changing the registration needs the Dong Chief's sign-off and the stamp of the Assembly Member's office. So the Government's hands pool in households: some households have done plumbing for generations, some have climbed wind machines for generations. Maintenance instructions from Government archives go down to these households as notices, and the households copy and keep them. The trouble is that when the households that can repair shrink, no other household can fill the place, because the ledger binds the trade.
 
 **The Free Cities: the workbench** (provisional T04-46). What is inherited in the Free Cities is not a trade but a **workbench**: the bundle of tools, a place, and the contracts that bench has made. A workbench usually goes to a child of the household, but if the child's hands fall short it goes to an apprentice. An apprentice comes in under a "hand contract": years of work in exchange for learning, and when the learning is done the bench owner **stands surety** for those hands. Only hands under surety take work in their own name at a contract meeting. So Free City strata are less rigid than the Government's, but the good workbenches are usually handed down within a few households.
 
@@ -463,14 +463,14 @@ Basis: 01-core 2.2 (Government words "token, ration"; Free City words "watt, lit
 
 ### 11.1 Government: meals and workdays
 
-- The Government counts value in **meals** (끼). One meal is the daily ration of one person in the ledger: fibre sugar and yeast, light-field vegetables, insects, and 10 L of water. It is stamped on a ration token (provisional T04-50).
-- Work is counted in **workdays**. A day's work in a registered trade is 1 workday, and 1 workday earns 1 meal. Dangerous and skilled work counts for more than 1 meal per workday: wind-machine wrights and plumbers 1.5 meals, doctors 2 meals, a crossing of the perimeter 30 meals per trip.
+- The Government counts value in **meals** (끼). One meal is the daily ration of one person in the ledger: fibre sugar and yeast, light-field vegetables, insects, and 10 L of water. It is stamped on a ration token (provisional T04-50). The unit written on the token is the won (chapter 04 section 9.1); the meal is how people reckon. One meal is a day's meal tokens together with a water token for 10 L (provisional T09-3).
+- Work is counted in **workdays**. A day's work in a registered trade is 1 workday, and 1 workday earns 1 meal. Dangerous and skilled work counts for more than 1 meal per workday: wind-machine wrights and plumbers 1.5 meals, doctors 2 meals, a rim posting entered by the Ministry of National Defense (chapter 07 section 7.4) 30 meals per trip.
 - Meal tokens are used only inside the ledger. Handing a token to someone outside the ledger is forbidden by law. Even so, around the northern checkpoints of the under-river tunnels and at the north ends of the bridges, tokens are secretly traded for Free City batteries.
 
 ### 11.2 The Free Cities: kilos and hand-hours
 
-- The Free Cities count value in **electricity**. Market price boards are written in kilowatt-hours (kWh), which people shorten to "kilo". What actually passes hand to hand is charged battery packs, and contract slips on which a workbench writes and stamps a promise to supply electricity (provisional T04-51).
-- Work is counted in **hand-hours**: one hour of one pair of hands under surety. At market 1 hand-hour is usually 0.5 kWh; a board hand's or fitter's hand-hour is 2 to 4 kWh.
+- The Free Cities count value in **electricity**. Market price boards are written in kilowatt-hours (kWh), which people shorten to "kilo". What actually passes hand to hand is charged battery packs, and contract slips on which a workbench writes and stamps a promise to supply electricity (provisional T04-51). Chapter 05 calls the two by their in-world names, **full packs** and **surety tags** (chapter 05 section 6.3). This bible uses those names.
+- Work is counted in **hand-hours**: one hour of one pair of hands under surety. At market 1 hand-hour is usually 0.5 kWh; a board hand's or body fitter's hand-hour is 2 to 4 kWh.
 - Water is contracted in litres and heat in watts. Contracts such as "20 kW of outside heat to this station for a season" or "30 m³ a day" are the backbone of the Free City economy.
 - Prices differ a little from city to city. In Gangseo, which holds the wind-machine fields, electricity is cheap; in Yeongdeungpo, which hosts the market, goods are cheap. Traders live on closing the gap between the two.
 
@@ -488,7 +488,7 @@ To put the three counts in one table, this bible uses a design yardstick, the **
 |---|---|---|
 | Government 1 meal | 1 person-day | By definition |
 | Government 1 workday (ordinary) | 1 person-day | |
-| Free City 1 kWh | about 0.7 person-day | At market, one person-day of meals and water is about 1.5 kWh |
+| Free City 1 kWh | about 0.67 person-day | By definition: at market, one person-day of meals and water is 1.5 kWh |
 | Free City 1 hand-hour (ordinary) | about 0.33 person-day | 0.5 kWh |
 | Arc 1 day-charge | about 0.13 person-day | about 0.2 kWh |
 | Arc 1 maintenance turn (one electrically driven machine) | about 3 person-days | A few hand-hours and consumables |
@@ -506,7 +506,7 @@ These are Free City market prices of winter 2126, converted to person-days. The 
 |---|---|---|
 | A day's meals and water | 1 | Definition |
 | 1 m³ of water (well water) | about 2 | Well-pump electricity and maintenance |
-| 1 kWh of electricity | about 0.7 | 2.1 |
+| 1 kWh of electricity | about 0.67 | 2.1. 1 person-day = 1.5 kWh |
 | Revived battery pack (holding 1 kWh) | about 30 | Picking live cells and a board hand's work |
 | One power core | about 20,000 | The electricity it gives over its life (about 1.75 kW on average for 5 to 6 years, about 80 MWh) and the lives spent crossing the perimeter. The risk that it may stop suddenly at any time discounts the price heavily |
 | One old rifle round | about 3 | The remaining stock shrinks every year |
@@ -524,11 +524,11 @@ These are Free City market prices of winter 2126, converted to person-days. The 
 | Sense-region machine (one eye) | about 150 | Sensing element |
 | Trunk-organ assist machine | about 600 | Almost impossible to obtain |
 | Spine-and-nerves machine | about 800 | Almost impossible to obtain; other machines stand on it |
-| Surgery setting a fixing point | about 30 | Surgery room and the fitter's hands |
+| Surgery setting a fixing point | about 30 | Surgery room and the body fitter's hands |
 | Clean-room surgery | about 120 | The clean room's electricity and days |
 | Maintenance of a body machine (one year) | about 15% of the machine's price | Intervals of 4.3 |
 
-Fitting one electrically driven hand and keeping it for the first year costs the machine 200, surgery 30, maintenance 30 (15% of the machine's price) and charging about 74 (one electrically driven hand alone draws about 12 W, about 105 kWh a year), about 335 person-days in all. That is close to a year of an ordinary worker's labour. So in all three polities a machine body is not something an individual buys but something a polity, a household or a workbench provides, and whoever provides it holds that body (bible section 1, row 14).
+Fitting one electrically driven hand and keeping it for the first year costs the machine 200, surgery 30, maintenance 30 (15% of the machine's price) and charging about 70 (one electrically driven hand alone draws about 12 W, about 105 kWh a year, at 1.5 kWh per person-day), about 330 person-days in all. That is close to a year of an ordinary worker's labour. So in all three polities a machine body is not something an individual buys but something a polity, a household or a workbench provides, and whoever provides it holds that body (bible section 1, row 14).
 
 ### 11.6 The reckoning of the water supply contract
 

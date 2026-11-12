@@ -87,7 +87,7 @@ Lived-in stations are different. The heat of bodies, stoves and machines has war
 
 | Layer | Depth | Empty | Lived in | Use |
 |---|---|---|---|---|
-| Surface | 0 m | annual mean -18 °C (long-light half -11 °C, long-dark half -25 °C, blizzard night -38 °C) | inside a light-field 0-4 °C | light-fields, wind machines, salvage, entrances |
+| Surface | 0 m | annual mean -18 °C (long-light half -11 °C, long-dark half -25 °C, blizzard night -38 °C) | inside a light-field 0-8 °C | light-fields, wind machines, salvage, entrances |
 | Concourse | 3-8 m below ground | -10 to -7 °C | 0-6 °C | cold stores, entry control, markets, stove exhaust |
 | Platform | 8-25 m below ground | -7 to -4 °C | 8-14 °C | sleeping, kitchens, workshops, mushroom cellars |
 | Deep tunnel | below 25 m | -3 to 4 °C (always above zero below the 35 m frozen-ground line) | 12-16 °C | the warmest sleeping, wells, ground-heat bores |
@@ -221,7 +221,7 @@ Station names, districts, lines, depths and exit counts are values from `data/sq
 
 (provisional T02-28)
 
-Counted by surface control in `120-map-core.sql`, the Government has 157 stations, the Free Cities 77 and the Arc 78, 312 in all. Applying the station classes, v3 sets the 2126 population at about 160,000 for the Government, about 75,000 for the Free Cities and about 65,000 for the Arc, about 300,000 for all of Seoul. That is a little over 3% of Seoul's pre-Blackout population (provisional T02-29).
+Counted by surface control in `120-map-core.sql`, the Government has 157 stations, the Free Cities 77 and the Arc 78, 312 in all. That is the number of map entries. The five entries with no line (four Government: the two Daehyeonsan Reservoir Park monorail platforms, Metro Hotel and Sinchon (Underground); one Arc: Saengtaegongwon-ap) are not counted as lived-in stations. So there are 307 lived-in stations (Government 153, Free Cities 77, Arc 77) (provisional T09-32). Applying the station classes, v3 sets the 2126 population at about 160,000 for the Government, about 75,000 for the Free Cities and about 65,000 for the Arc, about 300,000 for all of Seoul. That is a little over 3% of Seoul's pre-Blackout population (provisional T02-29).
 
 ## 5. Energy, water and food chains
 
@@ -270,7 +270,7 @@ Every meal in this world comes from light or from old carbon. Growing enough to 
 | Sprouts | Bean sprouts and barley shoots grown from light-field beans and barley. Need almost no light | About 4% |
 | Salvage | Pre-Blackout food ran out around 2030. In 2126 salvage yields only long-lasting things such as salt and seeds. Seoul produces no salt, so it grows scarcer every year | Seasoning and seed |
 
-**The light-field heat balance** (provisional T02-36). Light-fields burn no fuel of their own. Daylight and the heat held in the earth banks do most of the work, and at night they are covered with snow blankets. The remaining shortfall (about 1 W per m² on average in the long-dark half) is made up by turning into the light-fields the heat that leaves the station people's bodies with the ventilation air (about 90 W per person). One person's breath heat keeps 90 m² of light-field from freezing, so light-fields take nothing more from the heat budgets of 4.1 and 5.1. Across Seoul, light-fields cover about 27 km², 4.5% of Seoul's area. The harvest is about a third of an old field, about 1,000 kcal per m² a year. That is why the light-field and the station are one body: the more people in the station, the warmer its light-field, and guarding the light-field is the same work as guarding the entrance.
+**The light-field heat balance** (provisional T02-36). Light-fields burn no fuel of their own. Daylight and the heat held in the earth banks do most of the work, and at night they are covered with snow blankets. The remaining shortfall (about 1 W per m² on average in the long-dark half) is made up by turning into the light-fields the heat that leaves the station people's bodies with the ventilation air (about 90 W per person). One person's breath heat keeps 90 m² of light-field from freezing, so light-fields take nothing more from the heat budgets of 4.1 and 5.1. Across Seoul, light-fields cover about 27 km², 4.5% of Seoul's area. The harvest is about a third of an old field, about 1,250 kcal per m² a year. At 90 m² a person that is about 310 kcal a day, about 12% of the calories. That is why the light-field and the station are one body: the more people in the station, the warmer its light-field, and guarding the light-field is the same work as guarding the entrance.
 
 **The fibre is running out** (provisional T02-100). Seoul eats about 110,000 tonnes of fibre a year. For a hundred years Seoul has been eating the paper, furniture, doors and clothes of its homes, offices and warehouses, and the dead trees of its mountains. The near districts are already empty, and the trips to dig fibre get longer every year. The Government, holding the offices and warehouses of the old downtown, has the most fibre. But the ledger and the old official papers are never eaten: that is the Government's taboo.
 
@@ -331,7 +331,7 @@ The war machines' last order is **seal the capital**. In the first weeks of the 
 | The way across | The 2-4 days when a blizzard blinds the machines are the only window. In exchange, people must walk through the blizzard too |
 | What crossing means | Almost nobody who crosses comes back. Those who do come back carry power cores or parts from wrecked machines, worth exactly a life |
 | The world beyond | Seoul's people do not know whether any other city survived. Public canon keeps it at "unknown" |
-| Machines inside Seoul | Broken machines that drifted outside their orders, civilian machines from before the Blackout, and machines people brought back to life. The list is set by chapter 02 (G13-G26) and chapter 03 |
+| Machines inside Seoul | Broken machines that drifted outside their orders, civilian machines from before the Blackout, and machines people brought back to life. The list is set by chapter 02 (G13-G16 and G25 inside Seoul, and G19 and G23 that drift in; G17-G24 and G26 are rim machines that do not enter Seoul) and chapter 03 |
 
 (provisional T02-44)
 
@@ -464,7 +464,7 @@ Rule for the dong tier: a station belongs to the dong where its main entrance is
 |---|---|---|---|
 | Station | 정비장. Keeps the station's maintenance bench and baptismal list | Bench Keeper | provisional T02-77 |
 | Dong | 대피소장. The Arc calls the dong by its old name, "shelter": each shelter from before the Arc was bound together is a dong tier today | Shelter Head | provisional T02-78 |
-| District | 곁집 어른. The head of the Near House holding the district | Head of the Near House | provisional T02-79 |
+| District | 곁집장. The head of the Near House holding the district | Head of the Near House | provisional T02-79 |
 | Faction as a whole | 네 곁집 자리 (where the four Near House heads gather before the Hierophant; no separate title) | the Seat of the Four Near Houses | provisional T02-80 |
 | Head | 교주; believers call her Messiah | Hierophant; believers say Messiah | [Approved] |
 
@@ -523,7 +523,7 @@ Concepts from the old wiki (`docs/drafts/*.ko.md`, `data/sql`) that v3 does not 
 | Old national offices: president of the country, elected monarch, committee chair, speaker, group chairman, commander | people's posts (Yun Seo-rin, Han Jae-mok and others, Q28, Q29) | The Government's President for Life (one person) and the titles of the section 8 ladder. No nation-level offices |
 | The White Cross order and its head | White Cross people's posts | Not as an organisation. Medical work goes into each polity's station administration |
 | The Anguk monastery and its abbot, and other old religious offices | Anguk people's posts, the old faith document | The only organised faith is the Arc (Bible 1, row 9) |
-| The old Myeongdong religious body, and Arc offices named in Christian clergy vocabulary | the old notation of the Arc's top office | Hierophant and Head of the Near House (8.3) |
+| The old Myeong-dong religious body, and Arc offices named in Christian clergy vocabulary | the old notation of the Arc's top office | Hierophant and Head of the Near House (8.3) |
 | Union, the Seven-City Alliance, council, interregnum | Free City documents, old candidates in 9.1 | No binding name. Contract meetings and a Host (7.2, 8.2) |
 | Free City rule built on archons and citizen assemblies (including the Gwanak archon) | v2 Free City society document | City-specific titles; Gwanak has a Duke (8.2) |
 | Seal-keepers and the gate (門) system | v2 Arc society document | Head of the Near House and Shelter Head (8.3) |
@@ -533,6 +533,7 @@ Concepts from the old wiki (`docs/drafts/*.ko.md`, `data/sql`) that v3 does not 
 | A world with only hand-to-hand weapons | the old premise of the era arms document | Modern and future weapons exist but are scarce (Bible 1, rows 5 and 15) |
 | Great Blackout date 2030-10-14 | old timelines | About 2026, no date (Bible section 3, Q2) |
 | Martial-arts schools and titles | old people's titles | Job names (Bible section 4) |
+| The old "Infected" group (the old compendium's reading of G19-G24 as changed people) | the old hostile ecology compendium and its category name | Rim machines (chapter 02 sections 1 and 6.6). No sickness turns people into something else (added by task 9 from chapter 02 section 10, item 9) |
 
 On hold: **the return network** (귀환망) is the name in Sin Jong-mok's title ("return network field contractor"), and Bible section 6 records keeping his title. It is not retired; chapter 07 sets its place inside v3 (provisional T02-92).
 

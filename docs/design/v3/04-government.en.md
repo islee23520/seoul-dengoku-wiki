@@ -70,18 +70,18 @@ Basis: Bible 2.4 (14 Government districts; duchy holder title Assembly Member); 
 | District | Party | Quota-table stage | What this district holds |
 |---|---|---|---|
 | Jongno-gu | Claw Party | S1 | Government Complex Seoul (the ministries and the Assembly meeting room), Gwanghwamun station. The head of the Government |
-| Jung-gu | OMO Party | S1 | Seoul Station (the largest station), the Bank of Korea, Sicheong, the markets at Dongdaemun History & Culture Park and Hoehyeon |
+| Jung-gu | OMO Party | S1 | Seoul Station (the largest station), the Bank of Korea, City Hall, the markets at Dongdaemun History & Culture Park and Hoehyeon |
 | Yongsan-gu | OMO Party | Key | Ministry of National Defense and Capital Defense Command (Samgakji), the north ends of the Yongsan-Noryangjin and Ichon-Dongjak bridges |
-| Mapo-gu | OMO Party | Key | the Mapo-Yeouinaru under-river tunnel, the north ends of the Hapjeong-Dangsan and Digital Media City-Magoknaru bridges, the Gongdeok market |
-| Seongdong-gu | OMO Party | Key | the Ttukdo intake, the Seoulsup-Apgujeong Rodeo under-river tunnel, the north end of the Oksu-Apgujeong bridge, Wangsimni |
+| Mapo-gu | OMO Party | Key | the Mapo-Yeouinaru under-river tunnel, the north ends of the Hapjeong-Dangsan and Digital Media City-Magongnaru bridges, the Gongdeok market |
+| Seongdong-gu | OMO Party | Key | the Ttukdo intake, the Seoul Forest-Apgujeong Rodeo under-river tunnel, the north end of the Oksu-Apgujeong bridge, Wangsimni |
 | Gwangjin-gu | OMO Party | Key | the Guui intake, the north end of the Jamsil weir, the Gwangnaru-Cheonho under-river tunnel, the north ends of the Gangbyeon-Jamsillaru and Jayang-Cheongdam bridges |
 | Seodaemun-gu | OMO Party | S1 | the passage between Mapo and Jongno, Chungjeongno and Sinchon |
 | Dongdaemun-gu | Claw Party | S1 | Cheongnyangni (a station where many lines meet), the fuel market |
 | Jungnang-gu | Claw Party | S1 | Sangbong and Mangu, the Mangu burial field |
 | Seongbuk-gu | Claw Party | S1 | watch posts toward the Bukhansan edge, the school on the old university grounds |
 | Eunpyeong-gu | Claw Party | S1 | Yeonsinnae (a station on a deep line), Bukhansan firewood, the Bukhansan edge |
-| Gangbuk-gu | Claw Party | S1 | the 4.19 Democratic Cemetery burial field, the Bukhansan edge |
-| Dobong-gu | Claw Party | S1 | the Changdong depot, Dobongsan firewood and edge |
+| Gangbuk-gu | Claw Party | S1 | the April 19th National Cemetery burial field, the Bukhansan edge |
+| Dobong-gu | Claw Party | S1 | the Chang-dong depot, Dobongsan firewood and edge |
 | Nowon-gu | Claw Party | S1 | the Korea Military Academy at Hwarangdae, the edge toward Suraksan and Buramsan, the district with the most light-fields |
 
 (provisional T05-11, T05-12)
@@ -158,10 +158,10 @@ The Government's work starts at the station and ends at the district office. Sig
 | Dong | Dong Chief (01-core T02-63) | Runs the dong centre: rations, the ledger copy, petitions, moving-in seals | Appointed by the Assembly Member; usually the head of a civil-servant household |
 | District | Assembly Member [Approved] | The duchy. Holds the district office | The Member house |
 
-- The **district office** is the office of the Assembly Member's house (01-core 7.1). Its head is the **district office chief**. The district office chief is not a tier of the title ladder but a post appointed by the Assembly Member. The chief stamps the Member's seal on the Member's behalf, issues district notices (7.1) and holds petition hearings (7.2). Chiefs usually come from the Member house's kin or from a civil-servant household that has served long. The 01-core 8.1 rule "no separate tier between district and dong" stands: the district office chief holds no land (provisional T05-21).
+- The **district office** is the office of the Assembly Member's house (01-core 7.1). Its head is the **Head of the District Office**. The Head of the District Office is not a tier of the title ladder but a post appointed by the Assembly Member. The chief stamps the Member's seal on the Member's behalf, issues district notices (7.1) and holds petition hearings (7.2). Chiefs usually come from the Member house's kin or from a civil-servant household that has served long. The 01-core 8.1 rule "no separate tier between district and dong" stands: the Head of the District Office holds no land (provisional T05-21).
 - The **dong centre** is the Dong Chief's ration post. It has three windows: rations, registration and petitions. One ration clerk can decide what a household eats this month (01-core 7.1). The official Government people meet most often is not an Assembly Member or a minister but the clerk at that window (provisional T05-22).
 - The **stationmaster** holds the station's heat and air, so ranks below the Dong Chief and is feared more than the Dong Chief. The stationmaster decides whether to close an entrance, whether to stop surface work in a blizzard, which household sleeps on a deep level. The stationmaster's office follows the service rules of the Ministry of Land, Infrastructure and Transport, but the post is handed down inside the stationmaster house, not by the Assembly Member. It is the post the Assembly Member's hand reaches least (provisional T05-23).
-- The signing line is "Stationmaster -> Dong Chief -> district office chief -> Assembly Member". A stationmaster's report reaches the district office only through the Dong Chief. Only sentence strike-offs, marriages in the Member house, and bridge and tunnel matters go all the way to the Assembly Member (provisional T05-24).
+- The signing line is "Stationmaster -> Dong Chief -> Head of the District Office -> Assembly Member". A stationmaster's report reaches the district office only through the Dong Chief. Only sentence strike-offs, marriages in the Member house, and bridge and tunnel matters go all the way to the Assembly Member (provisional T05-24).
 
 ## 7. Law and punishment
 
@@ -176,7 +176,7 @@ Government law has four layers (provisional T05-25).
 | Constitution | The Constitution of the Republic of Korea. Never amended. Almost nobody reads it, but the Government's legitimacy comes from it | Not amended |
 | Statute | Articles of the Republic of Korea statute book, rewritten under their old numbers | The Assembly passes them with fourteen seals |
 | Notice | Orders a ministry issues under the state of disaster: ration grades, quotas, labour hours | The minister writes, the President signs |
-| District notice | Rules that differ by district: market pitch fees, entrance duty, firewood shares | The district office chief writes, the Assembly Member signs |
+| District notice | Rules that differ by district: market pitch fees, entrance duty, firewood shares | The Head of the District Office writes, the Assembly Member signs |
 
 What actually decides people's lives is notices and district notices. Changing a statute needs fourteen seals and is rare. So Government law looks like layer upon layer of notices over old articles. Clerks who know the law are scarce, and households pay them in meal tokens to write their petitions.
 
@@ -184,7 +184,7 @@ What actually decides people's lives is notices and district notices. Changing a
 
 Basis: 01-core 7.1; Bible 2.1.
 
-- **Petition hearing.** Disputes between registered people and light offences are heard at the district office's petition hearing, held by the district office chief in the Assembly Member's name. The evidence is the ledger, not witnesses. Whoever wants to dispute an entry must bring a clerk's seal, not a witness (provisional T05-26).
+- **Petition hearing.** Disputes between registered people and light offences are heard at the district office's petition hearing, held by the Head of the District Office in the Assembly Member's name. The evidence is the ledger, not witnesses. Whoever wants to dispute an entry must bring a clerk's seal, not a witness (provisional T05-26).
 - **Strike-off hearing.** Offences that can lead to a sentence strike-off are heard by the Ministry of Justice at the Government Complex Seoul. Three hearing officers listen and take a written opinion from the district's Assembly Member. A sentence strike-off is confirmed by the President's signature (provisional T05-27).
 - There are no defence counsel, only clerks who write petitions for others.
 
@@ -247,11 +247,11 @@ Basis: 01-core 5.3 (Government rationing by ledger tokens, T02-37; fibre sugar a
 
 ### 9.1 Tokens
 
-The Government's money is the **ration token**. The Bank of Korea prints it below its old main building near Hoehyeon station. The unit written on the token is still the **won**. There are four kinds: meal tokens, water tokens, fuel tokens and goods tokens. The Bank of Korea sets the token value as the **notice value**. At the 2126 notice value, a bowl of fibre-sugar porridge (about 600 kcal) is 1,000 won (provisional T05-37).
+The Government's money is the **ration token**. The Bank of Korea prints it below its old main building near Hoehyeon station. The unit written on the token is still the **won**. There are four kinds: meal tokens, water tokens, fuel tokens and goods tokens. The Bank of Korea sets the token value as the **notice value**. At the 2126 notice value, a bowl of fibre-sugar porridge (about 600 kcal) is 1,000 won (provisional T05-37). The counting word "meal" (끼) of chapter 03 section 11.1 is one person's day of meal tokens together with a water token for 10 L. At an average of about 2,600 kcal a day (9.2), a meal's meal tokens come to about 4,300 won at the notice value (provisional T09-3).
 
 Tokens are collected monthly by household at the dong centre. They can be exchanged for meals only at the dong centre where the household is registered. In other dongs they can be used only for goods at a market. At market the token's value is always below its notice value (section 10).
 
-Ammunition, power cells and machine parts cannot be bought with tokens, because they are registered goods of the army and the ministries. Chapter 03 sets their price.
+Ammunition, power cores and machine parts cannot be bought with tokens, because they are registered goods of the army and the ministries. Chapter 03 sets their price.
 
 ### 9.2 Ration grades
 
@@ -304,9 +304,9 @@ The Government runs a ration economy, and markets grow in its gaps. Nobody lives
 | Jegi-dong | Dongdaemun-gu | Line 1 | Mushrooms and dried herbs |
 | Sangbong | Jungnang-gu | Line 7, Gyeongui-Jungang, Gyeongchun | Meat and hides of hunted animals (which animals, chapter 02) |
 | Yeonsinnae | Eunpyeong-gu | Lines 3, 6, GTX-A | Bukhansan firewood. Servants of Member houses buy the wood for wood fires here |
-| Changdong | Dobong-gu | Lines 1, 4 | Machine parts stripped from the Changdong depot |
+| Chang-dong | Dobong-gu | Lines 1, 4 | Machine parts stripped from the Chang-dong depot |
 | Nowon | Nowon-gu | Lines 4, 7 | Light-field vegetables and seed |
-| Geondae-ipgu | Gwangjin-gu | Lines 2, 7 | Fish caught through holes in the river ice |
+| Konkuk Univ. | Gwangjin-gu | Lines 2, 7 | Fish caught through holes in the river ice |
 
 (provisional T05-42)
 
@@ -382,7 +382,7 @@ Government people's belief is mostly a belief in the ledger: that the winter cou
 Basis: Bible 2.3 (baptism is replacing parts of the body with machines); Bible 1, row 14 (cyberware is kept alive only with access to maintenance and power); 01-core 5.6 (the Government has almost no machine bodies and relies on the Arc); 7.4 (fear that ledger soldiers are drawn to baptism).
 
 - The Government ledger records the Arc as an **off-the-ledger body** (01-core section 9, row 2123-2125). Joining the Arc is joining an off-the-ledger body.
-- Yet the Government has nowhere to mend machine bodies. When Government people are injured or aged and need a machine fitted, they have no choice but to rely on the Arc's maintenance benches. The Government solves this with **machine-body registration**. Someone fitted with a machine under a Ministry of Health and Welfare permit has "machine body" and the place of maintenance written in their entries, and on permitted days only they pass the under-river tunnel checkpoint to the Arc's maintenance bench (provisional T05-53).
+- Yet the Government has nowhere to mend electrically driven machine bodies. Government fitting clinics (about six surgery rooms and one clean room, chapter 03 section 4.2) can set fixing points and fit body-powered hands and feet, but to fit and maintain an electrically driven machine there is no choice but to rely on the Arc's maintenance benches. The Government solves this with **machine-body registration**. Someone fitted with a machine under a Ministry of Health and Welfare permit has "machine body" and the place of maintenance written in their entries, and on permitted days only they pass the under-river tunnel checkpoint to the Arc's maintenance bench (provisional T05-53).
 - Fitting a machine without a permit, and receiving the Arc's baptism (receiving it as faith, as Arc people do), are matters for a strike-off hearing. The Government separates fitting a machine from being baptised on paper: a permitted machine is medicine; baptism is joining an off-the-ledger body. Few Government people are sure the two are really different (provisional T05-54).
 - So the army dislikes nothing more than a soldier getting a maintenance permit. Several times a year a soldier who went to a maintenance bench does not come back.
 
@@ -392,7 +392,7 @@ Basis: 01-core 5.5 (nothing rots in the cold; funerals differ by faction and are
 
 - When a person dies, the head of household files a death report at the dong centre and the Dong Chief draws the red line of the death strike-off. At the next morning's national ceremony the name is read in the silence.
 - Bodies do not rot. Every district has a designated **snow burial field** on the surface, and a labour-household burial crew carries the body there by sled and buries it in the snow. The place number in the burial field is written in the death strike-off entry. Jungnang-gu people are buried in the Mangu burial field (provisional T05-55).
-- People of Member houses and people who did service to the state are buried at the site of the 4.19 Democratic Cemetery in Gangbuk-gu, the national cemetery of the Republic of Korea that remains north of the river. The Seoul National Cemetery at Dongjak-dong lies across the river, and for a hundred years the Government has buried nobody there (provisional T05-56).
+- People of Member houses and people who did service to the state are buried at the site of the April 19th National Cemetery in Gangbuk-gu, the national cemetery of the Republic of Korea that remains north of the river. The Seoul National Cemetery at Dongjak-dong lies across the river, and for a hundred years the Government has buried nobody there (provisional T05-56).
 - Bodies and the clothes of the dead are not put into fibre-sugar vats. With the taboo on official papers, this is the Government's oldest taboo (provisional T05-57).
 
 ## 14. The national army: doctrine and conscription
@@ -416,7 +416,7 @@ In the quota table (16.2), the Capital Defense Command's direct troops who guard
 
 **[Approved]** One army has one commander, and that commander commands every squad in the army. No squad has the authority to move on its own (Bible 2.5, D3).
 
-The Government reads this principle as signing. An army's **operation order** carries a single seal: the commander's. A squad leader carries the order to the squad; a squad leader does not give orders. A squad leader who moves on their own judgement has done something not in the order, and that is a matter for army discipline, not a petition hearing. So Government armies are slow but do not scatter. When a commander falls, the squads hold where they are until the next commander's seal arrives (provisional T05-59).
+The Government reads this principle as signing. An army's **operation order** carries a single seal: the commander's. A squad leader carries the order to the squad; a squad leader does not give orders. A squad leader who moves on their own judgement has done something not in the order, and that is a matter for army discipline, not a petition hearing. So Government armies are slow but do not scatter. When a commander falls, the squads hold where they are until the next commander's seal arrives (provisional T05-59). On the battlefield the temporary squad leader of `roster-framework.md` section 10.5 takes over, but in a Government army that leader cannot give move orders and can only order "hold where you are" (chapter 09 section 7, item 6, provisional T09-1).
 
 Individually resolved combat (duels and fights between heroes) stays separate from this principle (Bible 2.5).
 
@@ -432,11 +432,11 @@ Individually resolved combat (duels and fights between heroes) stays separate fr
 
 How Government armies fight comes down to five lines (provisional T05-65).
 
-1. **It is an army that holds.** Most of what Government armies do is hold: the checkpoints of the three under-river tunnels (Mapo-Yeouinaru, Gwangnaru-Cheonho, Seoulsup-Apgujeong Rodeo), the north ends of the seven bridges, and watch posts on the northern mountains (Bukhansan, Dobongsan, Suraksan, Buramsan) looking over the edge of the outside machines. A checkpoint looks at the ledger. A soldier checks a token before a rifle.
+1. **It is an army that holds.** Most of what Government armies do is hold: the checkpoints of the three under-river tunnels (Mapo-Yeouinaru, Gwangnaru-Cheonho, Seoul Forest-Apgujeong Rodeo), the north ends of the seven bridges, and watch posts on the northern mountains (Bukhansan, Dobongsan, Suraksan, Buramsan) looking over the edge of the outside machines. A checkpoint looks at the ledger. A soldier checks a token before a rifle.
 2. **It does not cross the river as an army.** Not since the attack over the ice was broken by a blizzard in 2079 (01-core section 9). When there is cause to strike across the river, it goes by tunnel. That is why the three tunnels are the board of the Government's wars (01-core 7.4).
 3. **It fights with numbers.** The Government has the most people in Seoul. Its lines of riflemen are thick, and a broken line is refilled with reservists.
 4. **Every round is registered.** Ammunition is a registered good of the Ministry of National Defense. A soldier returns a casing for every round fired, and a round not returned stays in the sentence entry. The pre-Blackout army's casing return became law under scarcity.
-5. **There are no machine-bodied soldiers.** Government armies have no unit made of soldiers fitted with machines, because the only place to maintain them is the Arc (13.3). Only the Capital Defense Command has a few drones, flown only on the commander's signature.
+5. **There are no machine-bodied soldiers.** Government armies have no unit made of soldiers fitted with machines, because the only place to maintain electrically driven machines is the Arc (13.3). Only the Capital Defense Command has a few drones that fly in battle, flown only on the commander's signature. The Government's other drones are watching drones used by ministries and district offices (chapter 03 section 6.1).
 
 ### 14.5 Gaps to hand to the roster
 
@@ -476,7 +476,7 @@ Basis: Bible 2.1, 2.4 (14 Government districts), section 6 (named-person excepti
 - The Government's people are the 504 with faction_id government in `050-wiki-people.sql`. Their current stage distribution is Key 9, S1 44, S2 105, S3 54, S4 292. This table keeps those stage totals, so that task 17 can give everyone a place without changing anyone's stage (provisional T05-71).
 - The current data carries almost no usable district. Fewer than ten of the 504 have a district recorded; the rest carry retired old-polity numbers or just "government". So the district counts are not old places moved over; they were built anew. All roles were built anew too.
 - The district counts were built from three parts. (1) A base of fourteen per district (Assembly Member, Member house, district office, Dong Chief, Stationmaster, dong centre, police, army, skilled work and labour, market, health, dependants). (2) A share proportional to district population. District population is the 153 stations in map_station with Government surface control and a line, each multiplied by the midpoint of its 01-core 4.3 station-class range (small station 400-800: 600; interchange 1,500-3,200: 2,350; large interchange complex 3,000-5,000: 4,000), scaled to the Government's 160,000. One-line stations were counted as small stations, two-line stations as interchanges, stations with three or more lines as large complexes. (3) Additions for the national institutions (Jongno, Jung, Yongsan) and the river border units (Mapo, Seongdong, Gwangjin). District population is the ground the table was built on; the counts are not exactly proportional to it (provisional T05-72).
-- map_station has 157 entries under Government surface control; that is the "157 Government stations" of 01-core 4.3. Of these, four entries with no lines (two monorail platforms, one hotel-named entry, and Sinchon (underground)) were not counted as stations people live in. So this table has 153 stations.
+- map_station has 157 entries under Government surface control; that is the "157 Government stations" of 01-core 4.3. Of these, four entries with no lines (two monorail platforms, one hotel-named entry, and Sinchon (underground)) were not counted as stations people live in. So this table has 153 stations. These 153 are the Government's share of the 307 lived-in stations of 01-core 4.3.
 
 | District | Stations (with lines) | Estimated population |
 |---|---|---|
@@ -508,20 +508,22 @@ People is the number of persons living (registered) in the district. The stage c
 | Jung-gu | 57 | 1 | 4 | 12 | 7 | 33 | National Intelligence Service (Director, staff) 5; Bank of Korea (Governor, token printers) 6; Seoul Station stationmaster's office 4; Assembly Member 1; Member's house 3; district office 3; Dong Chief 2; Stationmaster 3; dong centre clerk 5; police officer 2; army 6; skilled work and labour 9; market trader 6; health 1; dependant 1 |
 | Yongsan-gu | 41 | 2 | 3 | 9 | 4 | 23 | Ministry of National Defense and Capital Defense Command (minister, commander, staff, direct troops) 9; Assembly Member 1; Member's house 3; district office 2; Dong Chief 1; Stationmaster 2; dong centre clerk 2; police officer 1; army (Ichon and Yongsan bridge ends) 10; skilled work and labour 6; market trader 2; health 1; dependant 1 |
 | Mapo-gu | 45 | 1 | 2 | 9 | 5 | 28 | Assembly Member 1; Member's house 3; district office 3; Dong Chief 2; Stationmaster 2; dong centre clerk 3; police officer 2; army (Mapo tunnel checkpoint, Hapjeong and Digital Media City bridge ends) 11; skilled work and labour 9; market trader 5; health 2; dependant 2 |
-| Seongdong-gu | 33 | 1 | 2 | 6 | 4 | 20 | Assembly Member 1; Member's house 3; district office 2; Dong Chief 1; Stationmaster 2; dong centre clerk 2; police officer 1; army (Seoulsup tunnel checkpoint, Oksu bridge end) 6; skilled work and labour (Ttukdo intake) 8; market trader 4; health 1; dependant 2 |
+| Seongdong-gu | 33 | 1 | 2 | 6 | 4 | 20 | Assembly Member 1; Member's house 3; district office 2; Dong Chief 1; Stationmaster 2; dong centre clerk 2; police officer 1; army (Seoul Forest tunnel checkpoint, Oksu bridge end) 6; skilled work and labour (Ttukdo intake) 8; market trader 4; health 1; dependant 2 |
 | Gwangjin-gu | 29 | 1 | 2 | 6 | 4 | 16 | Assembly Member 1; Member's house 3; district office 2; Dong Chief 1; Stationmaster 1; dong centre clerk 2; police officer 1; army (Gwangnaru tunnel checkpoint, Gangbyeon and Jayang bridge ends, north end of the weir) 9; skilled work and labour (Guui intake, north-end turbines of the weir) 6; market trader 2; dependant 1 |
 | Dongdaemun-gu | 31 | 0 | 2 | 6 | 3 | 20 | Assembly Member 1; Member's house 3; district office 2; Dong Chief 1; Stationmaster 2; dong centre clerk 3; police officer 1; army 4; skilled work and labour 7; market trader (Cheongnyangni, Jegi-dong) 5; health 1; dependant 1 |
 | Jungnang-gu | 33 | 0 | 2 | 7 | 3 | 21 | Assembly Member 1; Member's house 3; district office 2; Dong Chief 2; Stationmaster 2; dong centre clerk 3; police officer 1; army 5; skilled work and labour (incl. the Mangu burial field) 8; market trader 3; health 1; dependant 2 |
 | Seongbuk-gu | 34 | 0 | 2 | 7 | 3 | 22 | Assembly Member 1; Member's house 3; district office 2; Dong Chief 2; Stationmaster 2; dong centre clerk 3; police officer 1; army (watch posts toward the Bukhansan edge) 6; skilled work and labour 7; market trader 2; health and school 3; dependant 2 |
 | Seodaemun-gu | 22 | 0 | 2 | 5 | 2 | 13 | Assembly Member 1; Member's house 3; district office 2; Dong Chief 1; Stationmaster 1; dong centre clerk 2; police officer 1; army 4; skilled work and labour 5; market trader 1; dependant 1 |
 | Eunpyeong-gu | 30 | 0 | 2 | 6 | 3 | 19 | Assembly Member 1; Member's house 3; district office 2; Dong Chief 1; Stationmaster 2; dong centre clerk 2; police officer 1; army (watch posts toward the Bukhansan edge) 6; skilled work and labour (Bukhansan firewood) 8; market trader (Yeonsinnae) 2; health 1; dependant 1 |
-| Gangbuk-gu | 23 | 0 | 2 | 5 | 2 | 14 | Assembly Member 1; Member's house 2; district office 2; Dong Chief 1; Stationmaster 2; dong centre clerk 2; police officer 1; army (watch posts toward the Bukhansan edge) 5; skilled work and labour (incl. the 4.19 Democratic Cemetery burial field) 5; market trader 1; dependant 1 |
-| Dobong-gu | 24 | 0 | 2 | 5 | 3 | 14 | Assembly Member 1; Member's house 2; district office 2; Dong Chief 1; Stationmaster 2; dong centre clerk 2; police officer 1; army (watch posts toward the Dobongsan edge) 5; skilled work and labour (Changdong depot, Dobongsan firewood) 6; market trader 1; dependant 1 |
+| Gangbuk-gu | 23 | 0 | 2 | 5 | 2 | 14 | Assembly Member 1; Member's house 2; district office 2; Dong Chief 1; Stationmaster 2; dong centre clerk 2; police officer 1; army (watch posts toward the Bukhansan edge) 5; skilled work and labour (incl. the April 19th National Cemetery burial field) 5; market trader 1; dependant 1 |
+| Dobong-gu | 24 | 0 | 2 | 5 | 3 | 14 | Assembly Member 1; Member's house 2; district office 2; Dong Chief 1; Stationmaster 2; dong centre clerk 2; police officer 1; army (watch posts toward the Dobongsan edge) 5; skilled work and labour (Chang-dong depot, Dobongsan firewood) 6; market trader 1; dependant 1 |
 | Nowon-gu | 33 | 0 | 2 | 7 | 3 | 21 | Assembly Member 1; Member's house 3; district office 2; Dong Chief 1; Stationmaster 2; dong centre clerk 2; police officer 1; army (Korea Military Academy at Hwarangdae, edge toward Suraksan and Buramsan) 9; skilled work and labour 7; market trader (Nowon) 2; health 1; dependant 2 |
 | Gangnam-gu (registered people living outside the ledger land) | 2 | 0 | 2 | 0 | 0 | 0 | registered household living in Nonhyeon 2-dong (bible section 6, Q30) 2 |
 | **Total** | **504** | **9** | **44** | **105** | **54** | **292** | |
 
 The Gangnam-gu row is not Government land. Bible section 6 keeps Sin Jong-mok's (person-1009) Gangnam residence and Nonhyeon 2-dong, and the Q30 default keeps his faction as Government. Sin Jun (person-1010) is taken as the same household. In the Government ledger the two are registered people with a secondment entry (section 15). If the Q30 answer changes, this row moves to the Arc quota table (provisional T05-74).
+
+The assignment of chapter 07 section 3.2 adds no one to the Government. The three who stay unaffiliated (Jo Jaepyo, I Yeon, Cha Yu-seon) are written into task 17's input file but belong neither to these 504 nor to the quota tables of the other two factions. The three factions and the unaffiliated add up to 504 + 194 + 321 + 3 = 1,022 (basis: chapter 07 section 3.3).
 
 ### 16.3 Roles and stages
 
@@ -535,7 +537,7 @@ How each role of the quota table splits into stages is as follows. Task 17 split
 | Copyist of the master resident register at the Ministry of the Interior and Safety, head of the medical corps of the Ministry of Health and Welfare (both Jongno, in the Government Complex Seoul ministries slot) | Key |
 | Ministers (the six ministries at the complex and National Defense), Korea Forest Service head, Governor of the Bank of Korea, presidential chief of staff, Secretary General of the Assembly, the two party secretaries general, Seoul Station stationmaster | S1 |
 | Member house | One heir S1. One spouse or kin S2 (none in Gangbuk and Dobong). One house child S4 |
-| District office | One district office chief: S1 in the four districts whose Assembly Member is Key, S2 elsewhere. District office clerks S3 or S4 |
+| District office | One Head of the District Office: S1 in the four districts whose Assembly Member is Key, S2 elsewhere. District office clerks S3 or S4 |
 | Dong Chief, Stationmaster | S2 |
 | Vice-ministers, ministry directors, senior staff of the Intelligence Service and the Bank of Korea, presidential secretaries | S2 |
 | District unit commanders, Capital Defense Command staff | S2 |
@@ -581,12 +583,12 @@ This chapter changed no 01-core decision. The following are places where it deci
 |---|---|---|
 | 2.4 "fourteen seals" (T02-2) | Acclamation succeeds only with all fourteen seals (unanimity). The oldest Assembly Member presides and is acting President | T05-5, T05-6 |
 | 7.1 "the next acclamation opens only when the President dies" | The seat of an Assembly Member who becomes President is handed down to that house's heir | T05-7 |
-| 8.1 ladder (Stationmaster, Dong Chief, Assembly Member, National Assembly, President for Life) | Posts outside the ladder: district office chief, minister, Secretary General of the Assembly, party secretary general. They hold no land, so "no separate tier between district and dong" (T02-67) stands | T05-10, T05-15, T05-21 |
-| 7.1 "the district office is the office of the Assembly Member's house" | The district office chief's post and the signing line | T05-21, T05-24 |
+| 8.1 ladder (Stationmaster, Dong Chief, Assembly Member, National Assembly, President for Life) | Posts outside the ladder: Head of the District Office, minister, Secretary General of the Assembly, party secretary general. They hold no land, so "no separate tier between district and dong" (T02-67) stands | T05-10, T05-15, T05-21 |
+| 7.1 "the district office is the office of the Assembly Member's house" | The Head of the District Office's post and the signing line | T05-21, T05-24 |
 | 3.7 "the winter stopped when the ledger was brought within quota" | Station quotas, birth reports, and moving-in orders when a station is over quota | T05-19 |
 | 2.4 "leaving one's registered station means being struck off" (T02-4) | A thirty-day grace (whereabouts unknown), and the moving-in report with three seals as the lawful way to move | T05-18, T05-20 |
 | 5.3 "the ledger and old official papers are not eaten" | The taboo became law (a gravest offence). Sealed papers are delivered separately. Bodies and the clothes of the dead are not eaten either | T05-30, T05-41, T05-57 |
-| 5.5 "funerals are decided by chapters 04-06" | The Government's death strike-off, snow burial fields, the 4.19 Democratic Cemetery site | T05-55, T05-56 |
+| 5.5 "funerals are decided by chapters 04-06" | The Government's death strike-off, snow burial fields, the April 19th National Cemetery site | T05-55, T05-56 |
 | 7.1 OMO Party and Claw Party lines (T02-50) | Seats 6:8 and their assignment by district; the two parties' positions at the third contract | T05-11, T05-70 |
 | 7.1 "the two parties split at every water supply contract" | The Assembly does not ratify water supply contracts: a ministry annex per facility, the seal of that district's Assembly Member, the President's signature | T05-67 |
 
