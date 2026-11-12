@@ -52302,10 +52302,318 @@ Go Ye-jin grew up in this market. She saw people fitted with machines they could
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Arc-Society', 'Arc Society', '아크 사회', 'factions', 7, '# Arc Society
 
-This document is being written.
+<a id="overview"></a>
+
+## Overview
+
+The Arc holds the four districts of Gangnam: Seocho, Gangnam, Songpa and Gangdong. It split off from the Free City around 2122, when the Gangnam shelters were joined together under one name. Go Ye-jin is its Hierophant, and the faithful call her the Messiah. She grew up in the Free City fixing the power grid, and the Arc still carries that trade in its bones. People there talk about power, cooling and repair the way people in the north talk about ledgers.
+
+The Arc replaced every religion that came before it. No older faith kept its titles or its halls. What took their place is a faith that can be counted. In the Arc, baptism means replacing a part of the body with a machine, and faith is counted by the number of implanted parts. When one of the faithful dies, the brain is sealed and placed in the sanctuary, and it becomes part of the First AI''s memory.
+
+People didn''t come to Gangnam for doctrine at first. Go Ye-jin halted some of the war machines outside Seoul, and the shelters that had lived behind sealed doors for decades heard about it. In her own telling, the order went fear, then gratitude, and only then faith. A newcomer still meets the Arc in that order. First someone fixes your hand. Then someone asks what you''ll give back.
+
+<a id="social-structure"></a>
+
+## Social structure
+
+Authority runs downward from the Hierophant through blood and baptism. Nobody votes for it. Each of the four districts is a Gate (Mun), and the head of a Gate is a Seal-Keeper (Bonginji), appointed by the Hierophant from a clan bloodline and removed only by her or by death. The rule follows a Shia-style household pattern. A Gate is held by a family, and the family''s standing depends on how close it sits to Go Ye-jin.
+
+Below the Seal-Keepers the order has four layers, and people place each other in it within a sentence of meeting.
+
+| Layer | Who | What marks them |
+|---|---|---|
+| The Hierophant''s household | Go Ye-jin, her guard and the people who keep her days running | Ji Yeon-hui has stood beside her since 2120 |
+| Gate clans | The Seal-Keeper''s family and the families married into it | They hold the station benches, the parts stores and the water seats |
+| The baptised | Anyone who carries at least one implanted part | Their part count, said aloud at every rite and written in the roll |
+| The unbaptised | Children, newcomers, and adults who haven''t been fitted or can''t be | They eat and work in the Arc, but they don''t speak at rites |
+
+Part count cuts across clan rank. A cook with four parts outranks a clan cousin with one at the bench queue, though not at the family table. That tension is the Arc''s daily politics. The clans want blood to decide. The benches want metal to decide. The Hierophant hasn''t settled it, and some say she likes it that way.
+
+Stations sit under the Gates. A large interchange like Jamsil, Gosok Terminal or Cheonho runs as a household of its own, with an office that holds the station''s roll, its bench and its stores. At Jamsil the faithful chose their own lead believer, Nam Yun-gyeong, by secret ballot. The Hierophant never ratified that choice, and people there still argue over whether an election without her word counts. Most stations don''t try it. Jamsil''s ballot is the exception that everyone in Gangnam knows about.
+
+Work passes from parent to child here as it does across Seoul. Scarcity made it so. In the Arc the inheritance is sharper, because a bench technician''s child grows up beside the tools and is often fitted young, so a family of fitters tends to stay a family of fitters.
+
+<a id="law"></a>
+
+## Law
+
+Arc law is short and mostly about bodies, water and the roll.
+
+- **The roll decides who belongs.** Every baptised person is written into the station''s roll with their name, their clan, their part count and the bench that fitted them. The Jamsil roll also records marriages, adoptions and memorial rites, which Nam Yun-gyeong''s office approves. A person who isn''t on a roll can trade in Gangnam but can''t claim a bench turn.
+- **A part belongs to the faith that fitted it.** Nobody in the Arc owns their implants outright. They hold them on terms. Selling a fitted part, or having it pulled at a Free City market, is the heaviest offence short of violence. The usual sentence is to lose bench rights for a season of the cold, which for someone who depends on a part can mean losing the part.
+- **Parts from outside are disputed.** A part fitted in the Free City or off the Government''s books may or may not count as baptism. Each Gate rules on it, and the four Gates don''t agree.
+- **The body after death is the faith''s.** A family can''t keep a dead believer''s body back from the sealing. This is the one rule that no Seal-Keeper bends.
+- **Disputes go up the clan line.** A quarrel goes to the station office first, then to the Seal-Keeper''s household, and only rarely to the Hierophant. A ruling from Go Ye-jin is final and isn''t written down as law. People repeat it until it becomes law.
+
+There are no courts in the northern sense and no professional advocates. A hearing is held in front of the bench, often while someone is being repaired, and people say that''s on purpose. It''s harder to lie to a fitter who has your arm open.
+
+<a id="market-economy"></a>
+
+## Market economy
+
+The Arc''s economy runs on three things it can''t make enough of: power, parts and medicine. Everything else is priced against them.
+
+**Bench hours.** The working unit of account is the bench hour, one hour of a fitter''s time at a powered repair bench. Wages, fines and dowries are stated in bench hours, even when they''re paid in food or water. A stamped tally from a station office proves the hours are owed. Government scrip and Free City tokens change hands at the markets, but nobody in the Arc keeps savings in them.
+
+**Tithe in parts.** Every household gives the faith a share of what it salvages: wire, cells, motors, anything with copper in it. The share isn''t fixed by a written rate. Each Gate sets its own, and a clan that gives generously gets its people to the bench sooner. The north calls it a tax. The Arc calls it keeping faith.
+
+**Labour.** The unbaptised owe work shifts: carrying cells, clearing tunnels, standing cold watches at the surface hatches. The baptised owe skilled work instead. A person with a working replacement arm is expected to lift for the station, and nobody pretends this is a coincidence.
+
+**Rations.** Each station office feeds its roll from its own stores, with the emergency ration column opened in the hardest weeks. Food is graded by need, not by rank. Fitters and the newly baptised eat first because recovery burns warmth.
+
+**Markets by station.** Gangnam''s trade gathers at a few deep, large stations.
+
+| Station | Line(s) | What the market is known for |
+|---|---|---|
+| Garak Market | Lines 3 and 8 | The old wholesale floors, four levels down on Line 3 and about 16,000 m² of platform and concourse. Bulk food, seed and preserved stores. The largest open market in the Arc |
+| Jamsil | Lines 2 and 8 | Auctions under Nam Yun-gyeong''s scales. Rations, cloth and the price list that the other Gangnam markets follow |
+| Gosok Terminal | Lines 3, 7 and 9 | Three platforms deep on its older lines and the biggest station floor in Seocho. The parts market: wire, cells, salvaged motors and whatever Free City traders bring across the river |
+| Cheonho | Lines 5 and 8 | The eastern gate for goods from Gangdong''s outer stations. Fuel, felt and heavy tools |
+| Suseo | Line 3 and others | Rail-yard salvage, repair stock and the long-haul convoys |
+
+The Free City sells the Arc tools and skill. The Arc sells the Free City repair it can''t do itself and safe passage through ground the war machines no longer walk. The third water supply contract is coming, and every market in Gangnam has been pricing that winter in since the second.
+
+<a id="daily-life"></a>
+
+## Daily life
+
+**Shifts.** A station day has three shifts, set by the bench. While the bench is powered, someone is working at it. The first shift opens with the roll called at the office, and each baptised person answers with their name and their part count. The unbaptised answer with their name and their clan.
+
+**Heat.** Warmth comes from three places: the station''s power, the bodies packed close on the lower floors, and the waste heat of the machines. The Arc treats waste heat as a gift and puts its sleeping rooms around the equipment rooms and the cooling lines. A child in Gangnam learns early that a warm wall means a working machine and a cold wall means trouble.
+
+**Food.** Meals are plain and hot: grain porridge, root stews, preserved fish from the Garak Market stores, broth on rite days. The Arc''s one food custom of its own is the bench meal. A person who has just been fitted is fed first, by the fitter''s household, from the same pot.
+
+**Housing.** Clan families take the deepest, warmest levels. Lower in rank means closer to the surface hatches and the cold. Jamsil''s deep levels run three floors down on Line 8, and the tower and mall basements above the station hold the households of its leading families. In a smaller station such as Godeok, two floors down, the whole roll may sleep in the old concourse in curtained bays.
+
+**Rites.** Baptism is the great event of a life, and it''s public. The new part is fitted, the count is said aloud, and the roll is updated in front of the station. Memorial rites are held for the dead while the sealing is done elsewhere and out of sight. Families keep a name and a count, not a grave.
+
+**The newly baptised.** Converts in their first year carry the heaviest bench schedule and the most attention. This winter some of them have been disappearing from the Arc, and Go Ye-jin has sent Ji Yeon-hui to find out why.
+
+<a id="clothing-rules"></a>
+
+## Clothing rules
+
+The cut across Seoul follows 1940s working dress, and the Arc follows it too. Two rules apply everywhere: the more someone goes to the surface, the thicker they dress, and the higher someone''s standing, the thinner they dress, because standing buys a warm room.
+
+The Arc adds one rule of its own: **a part must be able to be seen and reached.** A sleeve, a trouser leg or a collar over an implant is cut with a buttoned flap or a laced opening, so a fitter can check the joint without stripping the wearer in the cold. Covering a part completely isn''t forbidden, but it reads as shame, or as hiding a part that came from somewhere else.
+
+| Standing | Indoor dress | Surface dress |
+|---|---|---|
+| The Hierophant''s household | Light wool or salvaged synthetic, close cut, almost no layering. Go Ye-jin is often seen in a fitter''s work coat | Rarely goes up. When she does, a full guard detail goes with her |
+| Seal-Keepers and clan heads | Fitted dark coats, opened at the joints that carry parts. A stitched clan mark at the left collar | Long lined coat, fur at the collar, and heated wraps over the parts |
+| Bench fitters | Heavy aprons over quilted shirts, sleeves rolled or tied back | Rarely go up, since a bench can''t spare them |
+| The baptised | Quilted jackets with flapped openings. The count is stitched at the right collar, one bar for each part | Felt overcoat, padded leggings and insulating sleeves over every implant |
+| The unbaptised | Layered wool and felt with no openings and no count stitched | The thickest coats in Gangnam, because they stand the surface watches |
+
+Metal in the body carries the cold inward. At the surface the baptised wrap every implant in a padded insulating sleeve, often knitted from scrap fibre by family members. The sleeve''s colour usually follows the clan. A part carried bare on the surface is a soldier''s habit or a fool''s.
+
+<a id="soldiers-look"></a>
+
+## Soldiers'' look
+
+Arc fighters come from two places: clan levies and the baptised.
+
+**Clan levies** look like the station they came from. They wear felt overcoats, quilted trousers, wrapped boots and a clan-coloured band on the upper arm. Most carry a long gun or a carbine, and ammunition is counted out round by round at the station office before a march. Helmets are old surplus or pressed sheet steel lined with felt.
+
+**Baptised fighters** are the Arc''s edge, and they look it. Their coats are cut short and open at the shoulders and knees, so the parts can work. Insulating sleeves are worn tight over the implants, with leather straps that a field fitter can undo with one hand. The heavier fighters carry a cell pack on the back, joined to the parts by insulated cable, and in a cold fight the cable is the first thing anyone looks at. The count is stitched on the collar and often painted on the helmet, so a commander can read a unit''s strength across a tunnel.
+
+A field fitter goes with every baptised unit. They carry tool rolls, spare joints wrapped in oilcloth and a small heated case for the parts that can''t freeze. When parts stop coming, baptised fighters weaken all together. Every Arc commander knows it, and so does every enemy.
+
+<a id="civilians-look"></a>
+
+## Civilians'' look
+
+In a Gangnam station crowd you can read people at a glance. The faithful show their parts at the seams, with the collar bars visible above a scarf. Bench families carry burn marks on their aprons and smell of hot oil. The unbaptised look plainer and more padded, often with a clan band but no count. Children go unbaptised and wear their older siblings'' coats cut down, with the flaps sewn shut until the day they''re needed.
+
+Common habits:
+
+- Touching a part, your own or someone else''s, is a greeting between close friends and an insult between strangers.
+- People say their count with their name: "Han Ju-won, three." Asking an adult''s count is rude. Hiding it is ruder.
+- Newcomers from the Free City can be spotted by their tool belts and their way of looking at the benches like buyers.
+- Older people who came out of the sealed shelters before 2122 often wear shelter-issue grey under everything, and they don''t take it off.
+
+<a id="cyberware-access"></a>
+
+## Cyberware access
+
+Cyberware in Seoul is living technology, and it''s scarce everywhere. What sets the Arc apart is why it spends on bodies first. Because a part is a sign of faith, the Arc puts its power, its fitters and its parts stores into fitting, maintaining and replacing parts for the faithful. In the north a part ties you to a clinic and the registry. In the southwest it ties you to a surgeon''s account. In the Arc it ties you to the faith.
+
+How a part is reached:
+
+1. **The first part** is fitted at a station bench, usually to replace something lost to the cold, an accident or the war machines. The first twelve, baptised around 2117, mostly lost limbs this way. Most baptisms still begin as repair.
+2. **Later parts** are earned. The bench queue favours those who give more to the tithe, those whose clan stands closer to the Seal-Keeper, and those whose work needs the part.
+3. **Upkeep** is owed by the faith to every baptised person on the roll. In practice the queue is long, and a clan''s standing decides how long.
+4. **Parts from outside** are refitted, refused or argued over, depending on the Gate.
+
+The Arc doesn''t name its parts for outsiders, and what happens inside it beyond this is its own business.
+
+<a id="links"></a>
+
+## Links
+
+- [Cyberware and Scarcity](/wiki/Cyberware-and-Scarcity/)
+- [Regional Physical AI Arcs](/wiki/Regional-Physical-AI-Arcs/)
+- [Century Annals](/wiki/Century-Annals/)
+- [Government Society](/wiki/Government-Society/)
+- [Free City Society](/wiki/Free-City-Society/)
+- [Glossary](/wiki/Glossary/)
 ', '# 아크 사회
 
-이 문서는 작성 중이다.
+<a id="overview"></a>
+
+## 개요
+
+아크는 강남 4구, 곧 서초·강남·송파·강동을 쥔다. 2122년 무렵 강남 대피소들이 한 이름으로 묶이면서 자유도시에서 갈라져 나왔다. 고예진이 교주이고, 신도들은 그를 메시아라 부른다. 고예진은 자유도시에서 전력망을 고치며 자랐고, 아크는 지금도 그 생업을 뼛속에 지니고 있다. 북쪽 사람들이 장부 이야기를 하듯 강남 사람들은 전력과 냉각과 수리 이야기를 한다.
+
+아크는 이전의 모든 종교를 대체했다. 옛 신앙은 칭호도 집회소도 남기지 못했다. 그 자리를 차지한 것은 셀 수 있는 신앙이다. 아크에서 세례는 몸의 부위를 기계로 바꾸는 일이고, 신앙은 이식한 부위 수로 센다. 신도가 죽으면 뇌를 봉인해 성소에 넣고, 그 뇌는 최초의 AI의 기억이 된다.
+
+처음부터 교리를 찾아 강남에 온 사람은 없었다. 고예진이 서울 밖 전쟁 기계 몇 대를 세우자, 수십 년 동안 문을 닫고 살던 대피소들이 그 소식을 들었다. 고예진 자신의 말로는 두려움이 먼저였고, 그다음이 고마움, 신앙은 맨 나중이었다. 새로 온 사람은 지금도 그 순서로 아크를 만난다. 먼저 누가 손을 고쳐 준다. 그다음에 무엇을 돌려줄 거냐고 묻는다.
+
+<a id="social-structure"></a>
+
+## 사회 구조
+
+권위는 교주에게서 아래로, 피와 세례를 따라 내려간다. 누구도 그것을 투표로 뽑지 않는다. 4구는 저마다 문(門)이고, 문의 수장은 봉인지기다. 봉인지기는 교주가 가문 혈통에서 임명하며, 교주가 물리거나 죽어야만 자리에서 내려온다. 통치는 시아파식 가문 통치를 따른다. 문 하나를 가문 하나가 쥐고, 그 가문의 무게는 고예진과 얼마나 가까운지로 정해진다.
+
+봉인지기 아래 질서는 네 층이고, 사람들은 만나서 한두 마디 안에 서로의 자리를 가늠한다.
+
+| 층 | 누구 | 표지 |
+|---|---|---|
+| 교주의 집안 | 고예진, 그의 호위, 그의 하루를 꾸리는 사람들 | 지연희는 2120년부터 그 곁에 서 있다 |
+| 문의 가문 | 봉인지기의 가문과 혼인으로 이어진 집안들 | 역의 정비대, 부품 창고, 물 자리를 쥔다 |
+| 세례자 | 이식 부위를 하나라도 지닌 사람 | 부위 수. 의례마다 소리 내어 말하고 명단에 적힌다 |
+| 미세례자 | 아이, 새로 온 사람, 아직 이식받지 않았거나 받을 수 없는 어른 | 아크에서 먹고 일하지만 의례에서 말하지 않는다 |
+
+부위 수는 가문 서열을 가로지른다. 부위가 넷인 취사부는 정비대 순번에서 부위가 하나인 가문 사촌보다 앞선다. 다만 집안 밥상에서는 아니다. 이 긴장이 아크의 일상 정치다. 가문은 피가 정하기를 바라고, 정비대는 쇠가 정하기를 바란다. 교주는 아직 이것을 매듭짓지 않았고, 일부러 그런다고 말하는 사람도 있다.
+
+문 아래에는 역이 있다. 잠실, 고속터미널, 천호 같은 큰 환승역은 하나의 집안처럼 돌아가며, 역의 명단과 정비대와 창고를 지키는 사무소를 둔다. 잠실에서는 신도들이 비밀 투표로 수석 신도 남윤경을 직접 뽑았다. 교주는 그 선택을 승인한 적이 없고, 교주의 말 없는 선출이 유효한지를 두고 그곳 사람들은 아직도 다툰다. 대부분의 역은 그런 시도를 하지 않는다. 잠실의 투표는 강남 사람이면 다 아는 예외다.
+
+서울 어디서나 그렇듯 여기서도 일은 부모에게서 자식으로 넘어간다. 결핍이 그렇게 만들었다. 아크에서는 그 대물림이 더 날카롭다. 정비공의 아이는 연장 곁에서 자라고 어려서 이식받는 일이 많아서, 정비공 집안은 대개 계속 정비공 집안으로 남는다.
+
+<a id="law"></a>
+
+## 법
+
+아크의 법은 짧고, 대부분 몸과 물과 명단에 관한 것이다.
+
+- **명단이 소속을 정한다.** 세례자는 모두 역 명단에 이름, 가문, 부위 수, 이식해 준 정비대가 적힌다. 잠실 명단에는 혼인, 입양, 추모 의례도 적히며, 남윤경의 사무소가 이를 승인한다. 어느 명단에도 없는 사람은 강남에서 장사는 할 수 있어도 정비 순번을 요구할 수 없다.
+- **부위는 그것을 달아 준 신앙의 것이다.** 아크에서 누구도 자기 이식 부위를 온전히 소유하지 않는다. 조건을 지키며 지닐 뿐이다. 이식한 부위를 팔거나 자유도시 장터에서 떼어 내는 것은 폭력 다음으로 무거운 죄다. 흔한 처벌은 한철 동안 정비 권리를 빼앗는 것인데, 부위에 기대 사는 사람에게는 그 부위를 잃는 것과 같을 수 있다.
+- **바깥 부위는 다툼거리다.** 자유도시나 정부 장부 밖에서 단 부위를 세례로 셀지 말지는 정해져 있지 않다. 문마다 따로 판정하고, 네 문의 판정은 서로 다르다.
+- **죽은 뒤의 몸은 신앙의 것이다.** 가족은 죽은 신도의 몸을 봉인에서 빼낼 수 없다. 이것만은 어떤 봉인지기도 굽히지 않는다.
+- **다툼은 가문의 줄을 타고 올라간다.** 다툼은 먼저 역 사무소로, 그다음 봉인지기의 집안으로 가고, 교주에게 닿는 일은 드물다. 고예진의 판정은 최종이며 법으로 적히지 않는다. 사람들이 되풀이해 말하다 보면 그것이 법이 된다.
+
+북쪽 같은 법정도 없고 직업 변론인도 없다. 심리는 정비대 앞에서 열리고, 누군가를 고치는 도중에 열리는 일도 잦다. 일부러 그렇게 한다는 말이 있다. 팔을 열어 놓은 정비공 앞에서는 거짓말하기가 더 어렵다.
+
+<a id="market-economy"></a>
+
+## 시장 경제
+
+아크의 경제는 넉넉히 만들 수 없는 세 가지, 곧 전력과 부품과 약으로 돌아간다. 다른 모든 것은 이 셋에 견주어 값이 매겨진다.
+
+**정비 시간.** 실제 셈 단위는 정비 시간이다. 전기가 들어오는 수리대에서 정비공이 쓰는 한 시간이다. 품삯, 벌금, 혼수를 모두 정비 시간으로 말하고, 실제로는 먹을 것이나 물로 치를 때도 그렇게 말한다. 역 사무소가 도장을 찍은 셈표가 받을 시간을 증명한다. 장터에서는 정부 증표와 자유도시 토큰도 오가지만, 아크 사람 누구도 그것으로 저축하지 않는다.
+
+**부품 헌납.** 집집마다 건져 온 것의 몫을 신앙에 바친다. 전선, 전지, 전동기, 구리가 든 것이면 무엇이든. 몫은 적힌 비율로 정해지지 않는다. 문마다 따로 정하고, 넉넉히 바치는 가문은 그 사람들이 정비대에 더 일찍 오른다. 북쪽은 이것을 세금이라 부르고, 아크는 신앙을 지키는 일이라 부른다.
+
+**노역.** 미세례자는 작업 교대를 진다. 전지 나르기, 굴 치우기, 지상 해치의 추운 당직. 세례자는 대신 숙련 노동을 진다. 쓸 만한 대체 팔을 단 사람은 역을 위해 짐을 들 것이라 여겨지고, 이것이 우연이라고 우기는 사람은 없다.
+
+**배급.** 역 사무소는 저마다 자기 창고로 자기 명단을 먹이고, 가장 힘든 주간에는 비상 배급 칸을 연다. 먹을 것은 서열이 아니라 필요에 따라 나눈다. 회복에는 온기가 많이 들기 때문에 정비공과 갓 세례받은 사람이 먼저 먹는다.
+
+**역별 장터.** 강남의 거래는 깊고 넓은 몇몇 역에 모인다.
+
+| 역 | 노선 | 장터의 성격 |
+|---|---|---|
+| 가락시장 | 3호선, 8호선 | 옛 도매 바닥. 3호선 쪽은 지하 4층, 승강장과 대합실이 약 16,000㎡다. 곡물, 씨앗, 저장 식품을 덩이로 판다. 아크에서 가장 큰 열린 장터 |
+| 잠실 | 2호선, 8호선 | 남윤경의 저울 아래 열리는 경매. 배급품, 옷감, 그리고 강남의 다른 장터가 따르는 시세표 |
+| 고속터미널 | 3·7·9호선 | 옛 노선 쪽은 지하 3층이고 서초에서 가장 넓은 역 바닥이다. 부품 장터. 전선, 전지, 건져 온 전동기, 자유도시 상인이 강을 건너 가져오는 것들 |
+| 천호 | 5호선, 8호선 | 강동 바깥 역들의 물건이 들어오는 동쪽 관문. 연료, 펠트, 무거운 연장 |
+| 수서 | 3호선 외 | 차량기지에서 건진 물건, 수리 자재, 먼 길 가는 호송대 |
+
+자유도시는 아크에 연장과 기술을 판다. 아크는 자유도시가 스스로 못 하는 수리와, 전쟁 기계가 더는 다니지 않는 땅을 지나는 안전한 길을 판다. 세 번째 급수계약이 다가오고, 강남의 장터는 두 번째 계약 때부터 그 겨울을 값에 넣어 왔다.
+
+<a id="daily-life"></a>
+
+## 일상
+
+**교대.** 역의 하루는 정비대에 맞춘 세 교대다. 정비대에 전기가 들어오는 동안은 누군가 그 앞에서 일한다. 첫 교대는 사무소에서 명단을 부르며 시작하고, 세례자는 이름과 부위 수로 답한다. 미세례자는 이름과 가문으로 답한다.
+
+**난방.** 온기는 세 곳에서 온다. 역의 전력, 아래층에 빽빽이 모인 몸, 기계의 폐열. 아크는 폐열을 선물로 여기고, 잠자리를 기계실과 냉각관 둘레에 둔다. 강남 아이는 일찍 배운다. 따뜻한 벽은 기계가 돈다는 뜻이고, 차가운 벽은 탈이 났다는 뜻이다.
+
+**먹을 것.** 끼니는 소박하고 뜨겁다. 곡물 죽, 뿌리채소 국, 가락시장 창고에서 나온 절인 생선, 의례 날의 맑은 국물. 아크만의 음식 풍습은 정비 밥이다. 갓 이식받은 사람에게 정비공의 집안이 같은 솥에서 먼저 떠 먹인다.
+
+**주거.** 가문 집안이 가장 깊고 따뜻한 층을 차지한다. 서열이 낮을수록 지상 해치와 추위에 가깝다. 잠실의 깊은 층은 8호선 쪽으로 지하 3층까지 내려가고, 역 위 타워와 몰 지하에는 으뜸 가문들의 집안이 산다. 지하 2층인 고덕 같은 작은 역에서는 명단 전체가 옛 대합실에서 휘장을 친 칸마다 잠들기도 한다.
+
+**의례.** 세례는 한 생에서 가장 큰 일이고, 공개된다. 새 부위를 달고, 부위 수를 소리 내어 말하고, 역 사람들 앞에서 명단을 고친다. 죽은 이를 위한 추모 의례가 열리는 동안 봉인은 다른 곳에서, 보이지 않게 치러진다. 가족은 무덤이 아니라 이름과 부위 수를 간직한다.
+
+**갓 세례받은 사람들.** 첫해의 개종자는 정비 일정이 가장 빡빡하고 눈길도 가장 많이 받는다. 이번 겨울 그중 몇이 아크에서 사라지고 있고, 고예진은 그 까닭을 알아내라고 지연희를 보냈다.
+
+<a id="clothing-rules"></a>
+
+## 복장 규칙
+
+서울의 옷 실루엣은 1940년대 작업복을 따르고, 아크도 그렇다. 두 규칙은 어디서나 같다. 지상에 자주 나가는 사람일수록 두껍게 입고, 지위가 높을수록 얇게 입는다. 지위가 따뜻한 방을 사 주기 때문이다.
+
+아크는 여기에 자기 규칙 하나를 더한다. **부위는 보이고 닿을 수 있어야 한다.** 이식 부위를 덮는 소매, 바짓가랑이, 깃은 단추 덮개나 끈으로 여미는 틈을 내어 재단한다. 그래야 정비공이 추위 속에서 옷을 벗기지 않고 이음매를 살필 수 있다. 부위를 완전히 가리는 것이 금지는 아니지만, 부끄러움으로 읽히거나 다른 데서 온 부위를 숨긴다는 뜻으로 읽힌다.
+
+| 지위 | 실내 복장 | 지상 복장 |
+|---|---|---|
+| 교주의 집안 | 얇은 모직이나 건져 온 합성 섬유, 몸에 붙는 재단, 거의 겹쳐 입지 않는다. 고예진은 정비공 작업 외투 차림으로 자주 보인다 | 지상에 거의 나가지 않는다. 나갈 때는 호위 전원이 따른다 |
+| 봉인지기와 가문 수장 | 몸에 맞춘 짙은 외투, 부위가 있는 이음매마다 틈이 있다. 왼쪽 깃에 가문 표지를 수놓는다 | 안감을 댄 긴 외투, 털 깃, 부위 위에 데운 감싸개 |
+| 정비공 | 누빈 셔츠 위 두꺼운 앞치마, 소매는 걷거나 묶는다 | 정비대가 사람을 비울 수 없어 거의 나가지 않는다 |
+| 세례자 | 덮개 틈을 낸 누빔 저고리. 오른쪽 깃에 부위 하나마다 줄 하나씩 수를 수놓는다 | 펠트 외투, 솜 덧바지, 모든 이식 부위 위에 단열 토시 |
+| 미세례자 | 틈도 없고 수도 수놓지 않은 모직·펠트 겹옷 | 강남에서 가장 두꺼운 외투. 지상 당직을 서기 때문이다 |
+
+몸속 쇠는 추위를 안으로 끌어들인다. 지상에서 세례자는 모든 이식 부위를 솜 단열 토시로 감싸는데, 대개 가족이 자투리 섬유로 떠 준다. 토시 색은 보통 가문을 따른다. 지상에서 부위를 맨살로 드러내는 것은 군인의 버릇이거나 바보짓이다.
+
+<a id="soldiers-look"></a>
+
+## 군인의 모습
+
+아크의 전투원은 두 곳에서 나온다. 가문 징집병과 세례자다.
+
+**가문 징집병**은 자기가 온 역을 닮았다. 펠트 외투, 누빈 바지, 감싼 장화, 위팔에 가문 색 띠. 대개 장총이나 기병총을 메고, 행군 전에 역 사무소에서 탄약을 한 발씩 세어 받는다. 철모는 옛 잉여품이거나 펠트를 댄 눌러 편 철판이다.
+
+**세례 전투원**은 아크의 날이고, 겉모습부터 그렇다. 외투는 짧게 자르고 어깨와 무릎을 터서 부위가 움직이게 한다. 단열 토시를 이식 부위에 바짝 끼우고, 야전 정비공이 한 손으로 풀 수 있는 가죽끈으로 여민다. 무거운 전투원은 등에 전지 꾸러미를 지고 단열 전선으로 부위에 잇는다. 추운 싸움에서 모두가 가장 먼저 보는 것이 그 전선이다. 부위 수는 깃에 수놓고 철모에도 칠하는 일이 많아서, 지휘관은 굴 건너편에서도 부대의 힘을 읽는다.
+
+세례 부대마다 야전 정비공이 하나 따른다. 연장 두루마리, 기름천에 싼 예비 관절, 얼면 안 되는 부품을 넣는 작은 보온 상자를 든다. 부품이 끊기면 세례 전투원은 다 함께 약해진다. 아크의 지휘관은 모두 그것을 알고, 적도 안다.
+
+<a id="civilians-look"></a>
+
+## 주민의 모습
+
+강남 역의 인파에서는 사람을 한눈에 읽을 수 있다. 신도는 솔기마다 부위를 드러내고, 목도리 위로 깃의 줄이 보인다. 정비공 집안은 앞치마에 덴 자국이 있고 뜨거운 기름 냄새가 난다. 미세례자는 더 수수하고 더 두툼하며, 가문 띠는 있어도 수는 없다. 아이들은 세례받지 않은 채 손위 형제의 외투를 줄여 입고, 덮개 틈은 쓸 날이 올 때까지 꿰매 둔다.
+
+흔한 버릇:
+
+- 부위를 만지는 것은 자기 것이든 남의 것이든 가까운 사이에서는 인사이고, 낯선 사이에서는 모욕이다.
+- 사람들은 이름과 함께 부위 수를 말한다. "한주원, 셋." 어른에게 부위 수를 묻는 것은 무례하다. 숨기는 것은 더 무례하다.
+- 자유도시에서 갓 온 사람은 연장 허리띠와, 정비대를 사러 온 사람처럼 훑어보는 눈길로 알아본다.
+- 2122년 전에 닫힌 대피소에서 나온 노인들은 대피소 지급품인 회색 옷을 모든 옷 안에 받쳐 입고, 벗지 않는다.
+
+<a id="cyberware-access"></a>
+
+## 사이버웨어 접근
+
+서울에서 사이버웨어는 살아 있는 기술이고, 어디서나 귀하다. 아크가 다른 점은 왜 몸에 먼저 쓰느냐다. 부위가 신앙의 표지이기 때문에, 아크는 전력과 정비공과 부품 창고를 신도의 부위를 달고 돌보고 바꾸는 데 먼저 쓴다. 북쪽에서 부위는 사람을 진료소와 등록부에 묶는다. 남서쪽에서는 집도의의 외상 장부에 묶는다. 아크에서는 신앙에 묶는다.
+
+부위에 닿는 길:
+
+1. **첫 부위**는 역 정비대에서 단다. 대개 추위나 사고나 전쟁 기계에 잃은 것을 대신한다. 2117년 무렵 세례받은 첫 열두 명도 대부분 그렇게 팔다리를 잃은 사람들이었다. 지금도 세례 대부분은 수리로 시작한다.
+2. **다음 부위**는 얻어 내야 한다. 정비 순번은 헌납을 더 많이 하는 사람, 가문이 봉인지기에게 더 가까운 사람, 일에 그 부위가 필요한 사람을 앞세운다.
+3. **유지**는 명단에 오른 모든 세례자에게 신앙이 진 빚이다. 실제로는 순번이 길고, 얼마나 긴지는 가문의 무게가 정한다.
+4. **바깥 부위**는 문에 따라 다시 달거나, 거절하거나, 다툼거리가 된다.
+
+아크는 자기 부위의 이름을 바깥에 알려 주지 않으며, 이 밖에 안에서 일어나는 일은 아크의 일이다.
+
+<a id="links"></a>
+
+## 링크
+
+- [사이버웨어와 결핍](/wiki/Cyberware-and-Scarcity/)
+- [지역 물리 AI 연대기](/wiki/Regional-Physical-AI-Arcs/)
+- [백 년 연대기](/wiki/Century-Annals/)
+- [정부 사회](/wiki/Government-Society/)
+- [자유도시 사회](/wiki/Free-City-Society/)
+- [용어집](/wiki/Glossary/)
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Cyberware-and-Scarcity', 'Cyberware and Scarcity', '사이버웨어와 희소성', 'technology', 1, '
 Cyberware is living technology in Seoul. Machine hands close, machine eyes see, and a replaced leg carries a porter down the frozen stairs every morning. None of it is rare because it doesn''t work. It''s rare because every part needs upkeep, power and spares, and someone has to hold all three.

@@ -110,6 +110,32 @@ Free-City-Society, a new document. Each entry gives the section heading and a ph
 | 15 | Free-City-Society | en: "The Surgeon's Account", "A part fitted in the Free City comes with an" / ko: "집도의의 계정", "자유도시에서 단 부품에는" | the surgeon's account, the rule against cutting out unpaid parts and the who-gets-metal table extend task 8 entry 5; provisional |
 | 16 | Free-City-Society | en: "The Shadow of the Arc", "Some people in the Free City say that's why she went south" / ko: "아크의 그림자", "자유도시의 어떤 이들은 그래서 그가 남쪽으로 가서" | the Free City's tellings of why Go Ye-jin left are told opinions, not a fixed motive |
 
+## task 12
+
+Arc-Society new document. Each entry gives the document, the section heading and the opening phrase of the sentence, in en and ko.
+
+| # | Document | Location (section, phrase) | Provisional item |
+|---|---|---|---|
+| 1 | Arc-Society | en: "Social structure", "Below the Seal-Keepers the order has four layers" / ko: "사회 구조", "봉인지기 아래 질서는 네 층이고" | the four-layer order (Hierophant household, Gate clans, baptised, unbaptised) and part count outranking clan rank at the bench queue are task 12 defaults |
+| 2 | Arc-Society | en: "Social structure", "The Hierophant hasn't settled it" / ko: "사회 구조", "교주는 아직 이것을 매듭짓지 않았고" | the clan versus part-count rivalry is a provisional framing |
+| 3 | Arc-Society | en: "Law", "Every baptised person is written into the station's roll" / ko: "법", "세례자는 모두 역 명단에" | the roll fields (name, clan, part count, fitting bench) are provisional; the roll's name stays open (Q13) |
+| 4 | Arc-Society | en: "Law", "Selling a fitted part" / ko: "법", "이식한 부위를 팔거나" | the offence of selling or pulling a fitted part and the loss of bench rights as its sentence are provisional |
+| 5 | Arc-Society | en: "Law", "Parts from outside are disputed" / ko: "법", "바깥 부위는 다툼거리다" | Gate-by-Gate rulings on outside parts are provisional |
+| 6 | Arc-Society | en: "Law", "A family can't keep a dead believer's body back from the sealing" / ko: "법", "가족은 죽은 신도의 몸을 봉인에서 빼낼 수 없다" | the no-exception sealing rule is a provisional reading of bible 2.3; nothing about how sealing is done is stated (Q12, Q14) |
+| 7 | Arc-Society | en: "Law", "A hearing is held in front of the bench" / ko: "법", "심리는 정비대 앞에서 열리고" | hearings at the repair bench are a provisional custom |
+| 8 | Arc-Society | en: "Market economy", "The working unit of account is the bench hour" / ko: "시장 경제", "실제 셈 단위는 정비 시간이다" | the bench hour as the Arc's unit of account is a task 12 proposal, not an owner-approved currency |
+| 9 | Arc-Society | en: "Market economy", "Every household gives the faith a share of what it salvages" / ko: "시장 경제", "집집마다 건져 온 것의 몫을 신앙에 바친다" | the parts tithe and its Gate-set share are provisional |
+| 10 | Arc-Society | en: "Market economy", "The unbaptised owe work shifts" / ko: "시장 경제", "미세례자는 작업 교대를 진다" | the labour split between unbaptised shifts and baptised skilled work is provisional |
+| 11 | Arc-Society | en: "Market economy", "Gangnam's trade gathers at a few deep, large stations" / ko: "시장 경제", "강남의 거래는 깊고 넓은 몇몇 역에 모인다" | the market character of Garak Market, Jamsil, Gosok Terminal, Cheonho and Suseo is provisional; depth and area figures come from the station-architecture CSV |
+| 12 | Arc-Society | en: "Daily life", "A station day has three shifts" / ko: "일상", "역의 하루는 정비대에 맞춘 세 교대다" | three bench shifts and the roll call by name and part count are provisional |
+| 13 | Arc-Society | en: "Daily life", "The Arc's one food custom of its own is the bench meal" / ko: "일상", "아크만의 음식 풍습은 정비 밥이다" | the bench meal custom is provisional |
+| 14 | Arc-Society | en: "Daily life", "Clan families take the deepest, warmest levels" / ko: "일상", "가문 집안이 가장 깊고 따뜻한 층을 차지한다" | housing by depth and the curtained concourse bays are provisional |
+| 15 | Arc-Society | en: "Clothing rules", "a part must be able to be seen and reached" / ko: "복장 규칙", "부위는 보이고 닿을 수 있어야 한다" | the visible-part rule, the flapped openings and the meaning of fully covered parts are task 12 defaults |
+| 16 | Arc-Society | en: "Clothing rules", "one bar for each part" / ko: "복장 규칙", "부위 하나마다 줄 하나씩" | the collar count bars, the left-collar clan mark and clan-coloured insulating sleeves are provisional |
+| 17 | Arc-Society | en: "Soldiers' look", "Arc fighters come from two places: clan levies and the baptised" / ko: "군인의 모습", "아크의 전투원은 두 곳에서 나온다" | the levy and baptised fighter looks (cut coats, cell packs, insulated cable, painted helmet counts, field fitters) are provisional and leave roster numbers to task 15 |
+| 18 | Arc-Society | en: "Civilians' look", "Touching a part" / ko: "주민의 모습", "부위를 만지는 것은" | the greeting customs, saying the count with the name, and the shelter-issue grey are provisional |
+| 19 | Arc-Society | en: "Cyberware access", "Later parts are earned" / ko: "사이버웨어 접근", "다음 부위는 얻어 내야 한다" | the bench-queue priorities (tithe, clan closeness, work need) are provisional; no part is named |
+
 ## task 10
 
 Government-Society, a new document. Each entry gives the section heading and the opening phrase of the sentence, in en and ko.
