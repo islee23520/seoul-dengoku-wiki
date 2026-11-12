@@ -108,7 +108,7 @@ Beside the ladder of titles the Arc has a ladder of part counts. A Bench Keeper,
 <a id="one-person-bloodline"></a>
 ### The Hierophant who is a house alone
 
-Rule in the Arc passes through the Hierophant's bloodline and the houses close to it. Yet in 2126 the Hierophant's bloodline is Go Ye-jin alone. Go Ye-jin has no recorded family. If she has children, their blood becomes the Hierophant's line. Arc people say, "The Hierophant is a house all by herself." That the four Near Houses hold up a seat with no blood behind it is the bedrock of Arc politics in 2126. How the Hierophant after Go Ye-jin will be chosen, nobody yet knows.
+Rule in the Arc passes through the Hierophant's bloodline and the houses close to it. Yet the people of the Arc hold the Hierophant's bloodline today to be Go Ye-jin alone. Go Ye-jin has no recorded family. If she has children, their blood becomes the Hierophant's line. Arc people say, "The Hierophant is a house all by herself." That the four Near Houses hold up a seat with no blood behind it is the bedrock of Arc politics in 2126. How the Hierophant after Go Ye-jin will be chosen, nobody yet knows.
 
 Maintenance work is handed down too. The children of maintenance hands grow up beside the tools and are baptised early. A maintenance house almost always stays a maintenance house. At a marriage the two houses exchange maintenance turns, and a marriage with a maintenance house is counted the best.
 
@@ -128,6 +128,7 @@ So cousins of the same generation live on both banks of the river, and on both s
 - Apart from Member of the National Assembly, Duke of Gwanak and Hierophant, the title names on this page are not yet settled and may change.
 - Which houses now hold the fourteen seats and the four Arc districts, and when I Ilseop took up the Duke's post, are not settled.
 - How the Hierophant after Go Ye-jin is to be chosen is not settled.
+- Whether, with no recorded family, the Hierophant's bloodline is read as Go Ye-jin alone, and so whether all four Near Houses stand by side service, is not settled.
 
 <a id="see-also"></a>
 ## See also

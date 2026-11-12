@@ -135,7 +135,7 @@ The base of Free City work is the **workbench**: a workshop one house holds thro
 
 A **work crew** is a group of hands gathered from several benches for one contract. To strip and rebuild a whole pump, hands from a pump bench, a motor bench and a wire bench must go together. The crew chief is the bench master of the bench that signed the sheet, or a hand that bench master has trusted with it. Once the sheet is paid off, the crew disperses.
 
-A workbench's promises are written in figures. Not "we will fix the pump", but "two intake pumps, 20 m³ an hour at a 30 m water depth, under surety for two long-dark halves". A promise without figures is no promise.
+A workbench's promises are written in figures. Not "we will fix the pump", but "two intake pumps, 20 m³ an hour against a 30 m lift, under surety for two long-dark halves". A promise without figures is no promise.
 
 <a id="wind-hours"></a>
 ### Wind hours

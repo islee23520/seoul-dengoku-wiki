@@ -11,7 +11,7 @@ In the winter of 2126 a little over 300,000 people live in Seoul, about 3% of th
 
 One district is one duchy. The twenty-five duchies divide into fourteen, seven and four. The land and the station names are as they were before the Blackout; what has changed is who holds the land.
 
-Each polity holds one thing Seoul cannot do without, and each lacks something. The Government holds the ledger and the land and people north of the river. The Free Cities hold the hands that mend machines, and the trade. The Arc holds the knowledge that keeps machines fitted to the body alive, and the current-power of Jamsil. So the three need each other, and fear each other.
+Each polity holds one thing Seoul cannot do without, and each lacks something. The Government holds the ledger and the land and people north of the river. The Free Cities hold the hands that mend machines, and the trade. The Arc holds the knowledge that keeps machines fitted to the body alive, and the power of the Jamsil weir. So the three need each other, and fear each other.
 
 This page shows the three polities at a glance and points the way to the pages on each society.
 
@@ -25,7 +25,7 @@ This page shows the three polities at a glance and points the way to the pages o
 | People | about 160,000 | about 75,000 | about 65,000 |
 | At the top | A President for Life, set up together by the fourteen Members of the National Assembly | Nobody. Each city has its own head | The Hierophant Go Ye-jin, whom believers call the Messiah |
 | Who holds a district | A Member of the National Assembly | Differs by city; Gwanak is held by the Duke, I Ilseop | A Head of the Near House |
-| What it holds | The ledger, the land and labour north of the river, mountain firewood, the salvage and fibre of the old downtown, the Guui and Ttukdo intakes | The hands that build and mend wind machines, heat pumps, well pumps and water wheels; the workbenches that cut parts; the markets and contracts; the Yeongdeungpo intake | The knowledge to fit machines to the body and keep them alive, the current-power of the Jamsil weir, the Amsa intake |
+| What it holds | The ledger, the land and labour north of the river, mountain firewood, the salvage and fibre of the old downtown, the Guui and Ttukdo intakes | The hands that build and mend wind machines, heat pumps, well pumps and water wheels; the workbenches that cut parts; the markets and contracts; the Yeongdeungpo intake | The knowledge to fit machines to the body and keep them alive, the power of the Jamsil weir, the Amsa intake |
 | What it lacks | Hands to mend machines, anywhere to service machine bodies | People, land, firewood | People, parts, firewood, surface land for light-fields |
 | How it counts | Meals (a day's ration coupons and water coupons) | Kilos (electricity) and hand-hours | Day charges and maintenance turns |
 
@@ -97,7 +97,7 @@ How people cross, and what trade is forbidden, is in [Crossings and Smuggling](/
 | Free Cities | Need hands, land, firewood and intake sites. Fear the Government's numbers and armies | | Need Jamsil's power. Fear the Arc drawing away their engineers |
 | Arc | The north end of the Jamsil weir is in Government hands. Fears the Government coming through the under-river tunnels | Needs parts and engineers. A land border with no river, so quarrels are most frequent here | |
 
-Because each holds what the others lack, contracts arise. Because the river is there, conquest is a hard choice instead of a contract. The Government and the Free Cities have made a water supply contract every thirty years, and at the third, in the winter of 2126, the Arc sits down for the first time.
+Because each holds what the others lack, contracts arise. Because the river is there, it is hard to choose conquest over a contract. The Government and the Free Cities have made a water supply contract every thirty years, and at the third, in the winter of 2126, the Arc sits down for the first time.
 
 <a id="three-sayings"></a>
 ## Three sayings about the winter
@@ -108,7 +108,7 @@ For the first six years the winter grew colder every year; when the number of pe
 |---|---|---|
 | Government | "The winter stopped when the ledger matched the quotas." | Setting a quota for every station and counting heads became the Government's creed |
 | Free Cities | "The heat balance came out even." | Even the winter is read in figures; the reckoning of heat and power is how one lives |
-| Arc | "God has received all the answers it asked for." | The winter is god's question, and mending the body is how one endures the answer |
+| Arc | "God has received all the answers it asked for." | The winter is god's question; it no longer worsens because the answers are complete |
 
 <a id="winter-2126"></a>
 ## Winter 2126

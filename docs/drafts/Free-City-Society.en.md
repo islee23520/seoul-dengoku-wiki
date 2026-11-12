@@ -140,7 +140,7 @@ The Government's ration coupons are not money in the Free Cities. Only the excha
 <a id="contracts"></a>
 ### Contracts
 
-Every contract is written in figures. Not "we will fix the pump", but "two Guui intake pumps, 20 cubic metres an hour at a 30-metre water depth, under surety for two long-dark halves". In the Free Cities a promise without figures is no promise. Every contract carries a surety: "if someone breaks it, what do they lose".
+Every contract is written in figures. Not "we will fix the pump", but "two Guui intake pumps, 20 cubic metres an hour against a 30-metre lift, under surety for two long-dark halves". In the Free Cities a promise without figures is no promise. Every contract carries a surety: "if someone breaks it, what do they lose".
 
 <a id="water-contract"></a>
 ## The water supply contract
@@ -216,7 +216,7 @@ Free City speech is workshop speech: short, full of numbers, informal among crew
 | "Outside my share." | Not my job |
 | "Any kilos left?" | Have you power to spare? The opening of a favour |
 
-Gangseo people speak in terms of wind, Dongjak people of crossing, Gwanak people of fire. Dongjak people say "you only know once you've crossed"; Gwanak people say "you only know once it's lit". Yeongdeungpo people put everything in rate-board prices. Government people are "the north of the river" or "ledger people"; Arc people are "Gangnam" or "the ones who crossed over".
+Gangseo people speak in terms of wind, Dongjak people of crossing, Gwanak people of fire. Dongjak people say "you only know once you've crossed"; Gwanak people say "you only know once it's lit". Yeongdeungpo people put everything in rate-board prices. They call Government people "the north of the river" or "ledger people", and Arc people "Gangnam" or "the ones who crossed over".
 
 <a id="militia"></a>
 ## Militia and fighting

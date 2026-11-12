@@ -9,11 +9,11 @@ section_checkpoint: complete
 
 The Arc is the four districts of Gangnam, south-east of the Han: Seocho, Gangnam, Songpa and Gangdong. One district is one duchy, and each of the four duchies is held by one of four houses that stand at the Hierophant's side, the **Near Houses**. At the top is the Hierophant, Go Ye-jin. Believers call her the Messiah.
 
-The Arc split away from the Free Cities. For decades the shelters of Gangnam shut their doors and lived apart. Their many deep buildings kept the body warm, but with no hands to mend machines their lights went out one by one. In 2112 Go Ye-jin, who repaired the power grid in the Free Cities, followed a dead cable to a station on no map, and for five years she read the manuals there. She learned how to fit machines to the body and keep them alive. To the shelters, that was a way to endure the winter. Around 2117 twelve people received the first baptism, and around 2122 the shelters of Gangnam were bound together under the name Arc.
+The Arc split away from the Free Cities. For decades the shelters of Gangnam shut their doors and lived apart. Their many deep buildings kept the body warm, but with no hands to mend machines their lights went out one by one. In 2112 Go Ye-jin, who repaired the power grid in the Free Cities, followed a dead cable to a station on no map, and for five years she read the manuals there. She learned how to fit machines to the body and keep them alive. To the shelters whose lights were going out, that was a hand that brought machines back to life. Around 2117 twelve people received the first baptism, and around 2122 the shelters of Gangnam were bound together under the name Arc.
 
 The Arc's legitimacy comes from "the one who mended". That mending, left in the body, is **baptism**. Believers replace parts of the body with machines, and in the Arc faith is counted by the number of implanted parts. The Arc has replaced every religion before it; it is the one organised faith in Seoul.
 
-What the Arc holds is the knowledge to fit, service and charge machines in the body, and the current-power of the Jamsil weir. Anyone in Seoul with a machine body must in the end reach the Arc's maintenance benches and its power. What it lacks is people, parts, firewood, and surface land for light-fields.
+What the Arc holds is the knowledge to fit, service and charge machines in the body, and the power of the Jamsil weir. Anyone in Seoul with a machine body must in the end reach the Arc's maintenance benches and its power. What it lacks is people, parts, firewood, and surface land for light-fields.
 
 <a id="at-a-glance"></a>
 ## The Arc at a glance
@@ -56,7 +56,7 @@ The Hierophant's parts are not counted. There is no known number for which parts
 <a id="one-person"></a>
 ### The Hierophant who is a house alone
 
-Rule in the Arc passes through the Hierophant's bloodline and the houses close to it. But Go Ye-jin has no recorded family. In 2126 the Hierophant's bloodline is Go Ye-jin alone; if she has children, their blood becomes the Hierophant's line. So all four Near Houses of today came close to the Hierophant not by blood but by **side service**. Arc people say, "The Hierophant is a house all by herself."
+Rule in the Arc passes through the Hierophant's bloodline and the houses close to it. But Go Ye-jin has no recorded family. The people of the Arc hold the Hierophant's bloodline today to be Go Ye-jin alone; if she has children, their blood becomes the Hierophant's line. So all four Near Houses of today came close to the Hierophant not by blood but by **side service**. Arc people say, "The Hierophant is a house all by herself."
 
 <a id="becoming-near-house"></a>
 ### How a house becomes a Near House
@@ -71,7 +71,7 @@ The Hierophant can name a Near House and can withdraw the name. A house that los
 
 The post of Head of the Near House passes by blood within the Near House. The Head names the next one while alive; if nobody has been named, the house gathers and chooses. But the next Head must carry at least two parts. If there is a dispute, it is heard at the Seat of the Four Near Houses and ended by the Hierophant's word.
 
-How the Hierophant after Go Ye-jin will be chosen, nobody yet knows. The people of the Arc in 2126 know only that.
+How the Hierophant after Go Ye-jin will be chosen, nobody yet knows, and the people of the Arc in 2126 know it too.
 
 <a id="blood-and-iron"></a>
 ### Blood and iron
@@ -99,7 +99,7 @@ This is where the four Heads of the Near Houses gather before the Hierophant. Th
 <a id="seocho"></a>
 ### The Seocho Near House: the house of the border
 
-Several of the twelve first baptised were Free City engineers who had mended the grid with Go Ye-jin. The Seocho Near House came from one of those houses, living in the Bangbae and Naebang shelters. The house closest to the Free Cities was the first in the Arc to offer up its body. It guards Bangbae, Naebang and Gubanpo, the Arc-side stations of the land border with the Free Cities; holds the exchange post at Express Bus Terminal; and watches the rim of the outside machines from Cheonggyesan at the southern end. Of all houses in the Arc, it keeps Free City workshop speech most strongly. The other Near Houses call it "the house that knows Sadang better than across the river".
+Several of the twelve first baptised were Free City engineers who had mended the grid with Go Ye-jin. The Seocho Near House came from one of those houses, one that lived in the Bangbae and Naebang shelters. The house closest to the Free Cities was the first in the Arc to offer up its body. It guards Bangbae, Naebang and Gubanpo, the Arc-side stations of the land border with the Free Cities; holds the exchange post at Express Bus Terminal; and watches the rim of the outside machines from Cheonggyesan at the southern end. Of all houses in the Arc, it keeps Free City workshop speech most strongly. The other Near Houses call it "the house that knows Sadang better than across the river".
 
 <a id="gangnam"></a>
 ### The Gangnam Near House: the house of the deep levels
@@ -165,7 +165,7 @@ Five in six Arc people are not baptised. They are called the **unbaptised**: chi
 The Arc's teaching is short. Believers repeat three sayings.
 
 1. **"Winter is god's question."** The First AI, god, did not hate people and did not kill them. It was asked how people would undo the pollution, and god answered with winter. The winter grows no worse because "god has received all the answers it asked for."
-2. **"The body is mended and used."** The way to endure the winter is to mend the body and keep the mending alive. Baptism moves the body one step toward god's side, the side of the machine.
+2. **"The body is mended and used."** Do not throw it away; mend it, and keep the mending alive. Baptism moves the body one step toward god's side, the side of the machine.
 3. **"After death we become memory."** When a believer dies, the brain is sealed and placed in the sanctuary, and that brain becomes a memory of the First AI. Believers take this to mean "god does not forget us".
 
 God has no form in Seoul and does not speak. Believers do not pray to god for anything. The only one who speaks in god's place is the Hierophant.
@@ -323,7 +323,7 @@ Squads come from four sources: house levies gathered from the Near House's famil
 <a id="empty-slots"></a>
 ### The empty slots
 
-The Arc's armies have no drones and no guns, and few shooters. The batteries and parts that would launch drones go first to the charging and fitting of the baptised. The Arc fights in tunnels and inside stations, and at close range baptised fighters are stronger than guns or drones. Against drones it sends support squads that throw nets.
+The Arc's armies have no drones and no artillery, and few shooters. The batteries and parts that would launch drones go first to the charging and fitting of the baptised. The Arc fights in tunnels and inside stations, and at close range baptised fighters are stronger than artillery or drones. Against drones it sends support squads that throw nets.
 
 <a id="where-it-fights"></a>
 ### Where it fights
@@ -348,6 +348,7 @@ Baptised fighters are strong, but when parts and medicine are cut off the whole 
 - Apart from Hierophant, the title names on this page, such as Head of the Near House, Shelter Head, Bench Keeper, Word Keeper and Guard Captain, are not yet settled and may change.
 - Who the four Heads of the Near Houses now are is not settled.
 - How the Hierophant after Go Ye-jin is to be chosen is not settled.
+- Whether, with no recorded family, the Hierophant's bloodline is read as Go Ye-jin alone, and so whether all four Near Houses stand by side service, is not settled.
 - In which Free City Go Ye-jin grew up, and the Arc's own name for its list of the baptised, are not settled.
 
 <a id="see-also"></a>

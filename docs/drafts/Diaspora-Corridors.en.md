@@ -9,7 +9,7 @@ section_checkpoint: complete
 
 None of Seoul's three polities can live without what the others hold. So people and goods cross the borders. There are four ways across: the under-river tunnels, the bridges, the ice of the frozen Han, and the land border between the Free Cities and the Arc. Each way has different guards, different times when it can be crossed, and different loads.
 
-Those who cross lawfully carry a token or a contract. Those who cannot cross the ice by night or follow a line of kin. Wherever something is forbidden, someone trades it quietly. This page covers where and how people cross, and the forbidden trade.
+Those who cross lawfully carry a token or a contract. Those who cannot do so cross the ice by night or follow a line of kin. Wherever something is forbidden, someone trades it quietly. This page covers where and how people cross, and the forbidden trade.
 
 <a id="four-ways"></a>
 ## The four ways across
