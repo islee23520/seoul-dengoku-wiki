@@ -98,7 +98,7 @@
     },
     {
       "id": "brand-cyber-ko",
-      "pattern": "아라사카|밀리테크|캉 ?타오|바이오테크니카|산데비스탄|키로시|맨티스 ?블레이드|고릴라 ?암즈?|넷러너|리퍼닥",
+      "pattern": "아라사카|밀리테크|캉 ?타오|바이오테크니카|산데비스탄|키로시|맨티스 ?블레이드|고릴라 ?암즈|넷러너|리퍼닥",
       "flags": "",
       "lang": "ko",
       "allowedContext": [],
@@ -106,15 +106,23 @@
     },
     {
       "id": "game-units-en",
-      "pattern": "\\b(?:Ironbreakers?|Skavenslaves?|Hammerers|Thunderers|Hellcannons?|Steam Tanks?|Grave Guard)\\b",
+      "pattern": "\\b(?:Ironbreakers?|Skavenslaves?|Hammerers|Thunderers|Hellcannons?)\\b",
       "flags": "i",
       "lang": "en",
       "allowedContext": [],
       "note": "[정본 바이블 4절] 다른 게임의 병종 이름. 대체: 세계 안에서 지은 일반 명칭. 근거: 소유자 결정(2026-11-12), 병종 원칙 2.5절."
     },
     {
+      "id": "game-units-en-proper",
+      "pattern": "\\b(?:Steam Tanks?|Grave Guard)\\b",
+      "flags": "",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절] 다른 게임의 병종 이름(대소문자 구분, 고유명사 표기만). 일반 영어 steam tank, grave guard는 잡지 않는다. 한국어 스팀 탱크는 보일러 부품 산문과 구별할 안전한 패턴이 없어 넣지 않는다. 근거: 소유자 결정(2026-11-12), 병종 원칙 2.5절."
+    },
+    {
       "id": "game-units-ko",
-      "pattern": "아이언브레이커|스카븐 ?슬레이브|해머러|썬더러|선더러|헬캐논|스팀 ?탱크|그레이브 ?가드",
+      "pattern": "아이언브레이커|스카븐 ?슬레이브|해머러|썬더러|선더러|헬캐논|그레이브 ?가드",
       "flags": "",
       "lang": "ko",
       "allowedContext": [],
