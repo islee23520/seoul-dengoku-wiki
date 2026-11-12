@@ -216,7 +216,7 @@ Station names, districts, lines, depths and exit counts are values from `data/sq
 | Station class | Example | People held |
 |---|---|---|
 | Small station | one line, 2-4 exits | 400-800 |
-| Interchange | two lines, 5 or more exits | 1,500-3,000 |
+| Interchange | two lines, 5 or more exits | 1,500-3,200 |
 | Large interchange complex | three or more lines, or a deep layer | 3,000-5,000 |
 
 (provisional T02-28)
