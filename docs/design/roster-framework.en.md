@@ -9,7 +9,7 @@ This document holds the rules that the roster tasks 13, 14 and 15 and the battle
 - **[approved]** marks a fact approved by `docs/CANON-BIBLE.md`. This document repeats such facts and does not change them.
 - **[frame]** marks a design rule set by this document. Tasks 13-15 and 19 must follow it. It is not world canon, the owner may change it at any time, and it must not be copied into the public wiki as a world fact.
 - **[pending]** marks an item that waits for an owner answer and uses a provisional default. The full list is in section 13. Pending items are never written as approved.
-- Sources: bible sections 1, 2.1-2.5 and 3. Owner decision D3, verbatim: "전투 방식은 토탈워랑 동일하게 지휘관이 모든 분대의 지휘권한을 갖음" (the battle works the same as Total War: the commander holds command over every squad). Research docs `docs/research/w2v-tech-scarcity.md` and `docs/research/w2v-life-economy-rosters.md` (reference only). The `wiki_unit` table in `data/sql/000-schema.sql` (task 4 branch). GDD `hero-squads-and-time-based-movement.json`, `personal-resolution-battle.json`, `rules-battle-clauses.json`, `character-art-direction.json`. Station data in `data/sql/120-map-core.sql`.
+- Sources: bible sections 1, 2.1-2.5 and 3. Owner decision D3, verbatim: "전투 방식은 토탈워랑 동일하게 지휘관이 모든 분대의 지휘권한을 갖음" (the battle works the same as Total War: the commander holds command over every squad). Owner instruction (2026-11-12), verbatim: "전투 기준 값은 알려진 워해머 토탈워 정보를 기준으로 로스터 잡아서 작업 합니다" (battle numbers are set from known Total War: WARHAMMER information). TW:WH numbers come from Fandom MediaWiki API pages and research B section 4. Unit names from other games are still not used. Research docs `docs/research/w2v-tech-scarcity.md` and `docs/research/w2v-life-economy-rosters.md` (reference only). The `wiki_unit` table in `data/sql/000-schema.sql` (task 4 branch). GDD `hero-squads-and-time-based-movement.json`, `personal-resolution-battle.json`, `rules-battle-clauses.json`, `character-art-direction.json`. Station data in `data/sql/120-map-core.sql`.
 - The stat axes follow Total War-style battle: melee attack, melee defence, weapon strength, armour, missile damage, range, ammunition, speed and leadership. The numbers are a design scale for comparing and balancing units. The actual battle formula belongs to the GDD personal-resolution battle, which says its coefficients and numbers are not yet set. This document does not set a formula either; section 10.6 only states how the two connect.
 
 ## 1. Schema and stat scales
@@ -26,7 +26,7 @@ Column names and NOT NULL rules of `wiki_unit` are not changed. Text columns are
 | `category` | no | One of the seven strings in section 2 |
 | `role` | no | One of the role strings in section 2.2 |
 | `recruit_building`, `recruit_building_ko` | no | The exact building name from the section 4 tables for that tier |
-| `scarce_input` | yes | Section 6 vocabulary. One value, or two joined by a comma with no space, main input first, e.g. `cells,parts` |
+| `scarce_input` | yes | Section 6 vocabulary. One value, or two joined by a comma with no space, main input first. The order and values follow the section 6.2 rule, e.g. `ammo,fuel` |
 | `attributes` | no | JSON array of section 7 tag ids. The empty array `[]` is allowed. At most 4 |
 | `counters` | no | JSON array of 1-4 unit `id`s this unit is good against. Section 8.3 |
 | `equipment`, `equipment_ko` | no | Section 11. One to three sentences |
@@ -35,42 +35,54 @@ Column names and NOT NULL rules of `wiki_unit` are not changed. Text columns are
 
 ### 1.2 Numeric column scales
 
-This table is the range for every numeric column. Values outside the range are not used. Only columns marked "yes" under NULL may be NULL.
+This table is the range for every numeric column. Values outside the range are not used. Only columns marked "yes" under NULL may be NULL. Owner instruction (2026-11-12, verbatim): "전투 기준 값은 알려진 워해머 토탈워 정보를 기준으로 로스터 잡아서 작업 합니다" (battle numbers are set from known Total War: WARHAMMER information). So every battle number range sits inside known Total War: WARHAMMER (TW:WH) values. The last column is the source. Links are Fandom MediaWiki API pages; the page names are source addresses only and are never used as unit names. Pages whose names are on the forbidden list are not linked; the verifier's table is cited instead.
 
-| Column | Range | NULL | Meaning | Interaction |
-|---|---|---|---|---|
-| `sort` | 1-999 | no | Display order inside the faction: category order (section 2), then tier | Unique within a faction |
-| `tier` | 1-5 | no | Tier. Section 3 | Sets the cost band, leadership band and cap rules |
-| `cost` | 150-3200 | no | Recruitment cost. Unit name is [pending] (section 13) | Section 5 tier bands |
-| `upkeep` | 30-900 | no | Upkeep paid each upkeep interval | Must be 20-30% of `cost` |
-| `unit_cap` | 1-8 | yes | Squads of this unit the faction may field at once. NULL means no cap | Section 5.3. Not NULL for tier 4-5, drones and `irreplaceable` |
-| `squad_size` | 1-80 | no | Base fighting strength of the squad (airframes for drones, hulls for war machines). Heroes are not counted | Section 1.3 category bands. Actual size varies with commander, faction and settlement level per the GDD |
-| `hp` | 4-600 | no | Health of one person (or one airframe or hull) | People 8-40, drones 4-30, war machines 150-600. Squad health = `hp` x `squad_size` |
-| `melee_attack` | 1-70 | no | Melee attack skill | Compared with the target's `melee_defence` to set melee hit chance |
-| `melee_defence` | 1-70 | no | Melee defence skill | Higher means hit less in melee. Not used against missiles |
-| `weapon_strength` | 5-300 | no | Power of one melee blow | The target's `armour` blocks part of it. The `plate-biter` tag ignores some armour |
-| `armour` | 0-150 | no | Blocking power of protective gear or hull | Reduces both melee and missile damage. Maximum reduction 90% |
-| `missile_damage` | 5-450 | yes | Power of one shot (one attack for drones) | NULL together with `range` and `ammo`, or all three set |
-| `range` | 15-900 | yes | Range in metres; control range for drones | On tunnel maps the real line of sight may be shorter than the range |
-| `ammo` | 1-40 | yes | Shots per battle; sorties for drones | Section 6 scarcity rules reduce the starting ammunition |
-| `speed` | 10-100 | no | Battlefield movement speed | Infantry 20-40, fast units 50-90, drones 60-100, war machines 10-45 |
-| `leadership` | 15-100 | no | Base morale; the starting value of morale in battle | Section 3.2 tier bands. Section 10 rout rules |
+| Column | Range | NULL | Meaning | Interaction | TW:WH reference |
+|---|---|---|---|---|---|
+| `sort` | 1-999 | no | Display order inside the faction: category order (section 2), then tier | Unique within a faction | n/a (display order, not a TW battle number) |
+| `tier` | 1-5 | no | Tier. Section 3 | Sets the cost band, leadership band and cap rules | Tiers 1-5 ([research B 4.3](../research/w2v-life-economy-rosters.md) rows A-G), [Crossbowmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Crossbowmen&prop=text&format=json) tier 2 |
+| `cost` | 150-3200 | no | Recruitment cost. Unit name is [pending] (section 13) | Section 5.1 tier bands | 300 (tier 1) to 2,100 (tier 4) ([research B 4.3](../research/w2v-life-economy-rosters.md)), [Crossbowmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Crossbowmen&prop=text&format=json) 475 |
+| `upkeep` | 30-960 | no | Upkeep paid each upkeep interval | Must be 20-30% of `cost` | 81-525, 24.8-27% of recruitment cost ([research B 4.3](../research/w2v-life-economy-rosters.md), [Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json) 81, [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 525) |
+| `unit_cap` | 1-8 | yes | Squads of this unit the faction may field at once. NULL means no cap | Section 5.3. Not NULL for tier 4-5, drones and `irreplaceable` | Upkeep-paying factions have no caps; some factions' per-unit caps are not published as numbers ([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)). This column is a design deviation to express scarcity [frame] |
+| `squad_size` | 1-80 | no | Base fighting strength of the squad (airframes for drones, hulls for war machines). Heroes are not counted | Section 1.3 category bands. Actual size varies with commander, faction and settlement level per the GDD | 1 (single-entity machine) to 180 (infantry at the largest unit-size setting). Section 1.3 |
+| `hp` | 50-9500 | no | Health of one person (or one airframe or hull) | Section 1.4 category bands. Squad health = `hp` x `squad_size` | Infantry 50-135 per model ([Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json) 8,280/120 = 69, [Black_Orcs](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Black_Orcs&prop=text&format=json) 10,800/80 = 135), cavalry 89-233 per model ([Demigryph_Knights](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Demigryph_Knights&prop=text&format=json) 233), single-entity machines 3,957-9,102 ([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 9,102, [Doomwheel](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Doomwheel&prop=text&format=json) 6,420) |
+| `melee_attack` | 10-65 | no | Melee attack skill | Compared with the target's `melee_defence` to set melee hit chance | 10 ([Helstorm](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Helstorm_Rocket_Battery&prop=text&format=json)) to 65 ([Ungrim](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Ungrim_Ironfist&prop=text&format=json)). Infantry 12-46 ([Swordmasters](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Swordmasters_of_Hoeth&prop=text&format=json) 46) |
+| `melee_defence` | 6-66 | no | Melee defence skill | Higher means hit less in melee. Not used against missiles | 6 ([Helstorm](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Helstorm_Rocket_Battery&prop=text&format=json), [Zombies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Zombies&prop=text&format=json)) to 66 (verifier report [verify-task-6](../../.omo/evidence/w2v/verify-task-6.md) calibration table; that page's name is on the forbidden list and is not linked). [Thorgrim](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Thorgrim_Grudgebearer&prop=text&format=json) 62, [Chosen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Chosen&prop=text&format=json) 60 |
+| `weapon_strength` | 18-400 | no | Power of one melee blow | The target's `armour` blocks part of it. The `plate-biter` tag ignores some armour | 18 ([Zombies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Zombies&prop=text&format=json)) to 400 ([Doomwheel](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Doomwheel&prop=text&format=json)). Infantry 18-60, single-entity machines 250-400 ([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 250) |
+| `armour` | 0-150 | no | Blocking power of protective gear or hull | Reduces both melee and missile damage. Maximum reduction 90% | 0 ([Zombies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Zombies&prop=text&format=json)) to 160 ([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json)). [Reiksguard](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Reiksguard&prop=text&format=json) 120 |
+| `missile_damage` | 8-465 | yes | Power of one shot (one attack for drones): base plus armour-piercing damage | NULL together with `range` and `ammo`, or all three set | Total 8 ([Outriders](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Outriders&prop=text&format=json)) to 465 ([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 95+370). [Handgunners](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Handgunners&prop=text&format=json) 22 (5+17), [Crossbowmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Crossbowmen&prop=text&format=json) 24 |
+| `range` | 60-480 | yes | Range in metres; control range for drones | `role` `rifle` 145-160, `artillery` 380-480, drones at most 480. On tunnel maps the real line of sight may be shorter than the range | 60 ([Doomwheel](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Doomwheel&prop=text&format=json)) to 480 ([Helstorm](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Helstorm_Rocket_Battery&prop=text&format=json)). Typical 80-200, artillery above 200 ([Range](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Range&prop=wikitext&format=json)). [Handgunners](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Handgunners&prop=text&format=json) 145, [Crossbowmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Crossbowmen&prop=text&format=json) 160, [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 380 |
+| `ammo` | 1-40 | yes | Shots per battle; sorties for drones | Section 6 scarcity rules reduce the starting ammunition | 1 ([Ammunition](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Ammunition&prop=wikitext&format=json)) to 100 ([Irondrakes](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Irondrakes&prop=text&format=json)). Gunpowder infantry 22 ([Handgunners](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Handgunners&prop=text&format=json)), [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 40 |
+| `speed` | 20-90 | no | Battlefield movement speed | Section 1.4 category bands | 20-90. Average 30-60, cavalry above 60, artillery below 30 ([Speed](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Speed&prop=wikitext&format=json)). [Helstorm](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Helstorm_Rocket_Battery&prop=text&format=json) 20, [Pistoliers](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Pistoliers&prop=text&format=json) 90 |
+| `leadership` | 35-100 | no | Base morale; the starting value of morale in battle | Section 3.2 tier bands. Section 10 rout rules | 35 ([Zombies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Zombies&prop=text&format=json)) to 100 ([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json)) |
 
-Reference interaction (for balance checks, not the battle formula): treat melee hit chance as 35 + `melee_attack` − target `melee_defence`, clamped to 8-90%. Damage is `weapon_strength` (or `missile_damage` for shots) reduced by the target's `armour` percent. When task 19 moves this comparison into GDD personal-resolution inputs, it must not subtract the same cause twice (the GDD "no double deduction" rule).
+Reference interaction (for balance checks, not the battle formula): treat melee hit chance as 35 + `melee_attack` − target `melee_defence`, clamped to 8-90%. Damage is `weapon_strength` (or `missile_damage` for shots) reduced by the target's `armour` percent. This formula and the 90% armour cap have no number on the Fandom pages checked, so they are balance aids without a confirmed TW:WH source. When task 19 moves this comparison into GDD personal-resolution inputs, it must not subtract the same cause twice (the GDD "no double deduction" rule).
 
 ### 1.3 Squad size bands by category
 
-Scarcity and population collapse make squads smaller than in Total War. Higher tiers use the lower part of a band.
+Scarcity and population collapse make squads smaller than TW:WH's large unit-size settings. Higher tiers use the lower part of a band. Every band sits inside the TW:WH small-to-ultra unit-size range.
 
-| Category | `squad_size` band | Counts |
-|---|---|---|
-| `commander` | 6-16 | Escort soldiers. The hero is not counted |
-| `infantry` | 20-80 | Soldiers |
-| `missile` | 12-48 | Shooters |
-| `fast` | 6-24 | Riders or skiers |
-| `drone` | 3-12 | Airframes. Operators are not counted |
-| `war-machine` | 1-4 | Hulls or guns. Crew are not counted |
-| `support` | 6-24 | Soldiers |
+| Category | `squad_size` band | Counts | TW:WH reference |
+|---|---|---|---|
+| `commander` | 6-16 | Escort soldiers. The hero is not counted | n/a. A TW lord is a single entity with no escort squad ([verify-task-6](../../.omo/evidence/w2v/verify-task-6.md)) |
+| `infantry` | 20-80 | Soldiers | 20-180. [Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json) 30/60/90/120 ([research B 4.3](../research/w2v-life-economy-rosters.md) row A) |
+| `missile` | 12-48 | Shooters | 23-90. [Handgunners](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Handgunners&prop=text&format=json) 23/45/68/90 (row B). Weapon teams 7-32 |
+| `fast` | 8-24 | Riders or skiers | Cavalry 8-60. [Reiksguard](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Reiksguard&prop=text&format=json) 15/30/45/60 (row E) |
+| `drone` | 3-12 | Airframes. Operators are not counted | n/a. TW has no remote-controlled machine squads |
+| `war-machine` | 1-4 | Hulls or guns. Crew are not counted | Artillery 1-4, armoured vehicles 1 (rows F and G, [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 1) |
+| `support` | 6-24 | Soldiers | n/a. Nearest: weapon teams 7-32 |
+
+### 1.4 Health and speed bands by category
+
+| Category | `hp` band | `speed` band | TW:WH reference |
+|---|---|---|---|
+| `commander` | 50-140 | 26-42 | People, so the infantry reference: 50-135 per model, speed 26-42 |
+| `infantry` | 50-140 | 26-42 | 50-135 per model ([Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json) 69, [Black_Orcs](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Black_Orcs&prop=text&format=json) 135). Speed 26 ([Irondrakes](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Irondrakes&prop=text&format=json)) to 42 ([Clanrats](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Clanrats&prop=text&format=json)) |
+| `missile` | 50-140 | 26-42 | As infantry ([Handgunners](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Handgunners&prop=text&format=json) 6,210/90 = 69, speed 33) |
+| `fast` | 85-235 | 60-90 | Cavalry 89-233 per model ([Demigryph_Knights](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Demigryph_Knights&prop=text&format=json) 233), speed above 60 ([Speed](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Speed&prop=wikitext&format=json)), [Reiksguard](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Reiksguard&prop=text&format=json) 78, [Pistoliers](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Pistoliers&prop=text&format=json) 90 |
+| `drone` | 50-140 | 60-90 | n/a. No TW counterpart, so it stays inside the people health band and the cavalry speed band [frame] |
+| `war-machine` | 3500-9500 | 20-45 | Single entity 3,957-9,102 ([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 9,102, [Doomwheel](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Doomwheel&prop=text&format=json) 6,420). Speed 20 ([Helstorm](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Helstorm_Rocket_Battery&prop=text&format=json)) to 40 ([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json)) |
+| `support` | 50-140 | 26-42 | As infantry |
 
 ## 2. Categories and roles
 
@@ -126,15 +138,15 @@ Use one of these `role` values that fits the category. The task 5 role icons rea
 
 ### 3.2 Leadership bands by tier
 
-| Tier | `leadership` band |
-|---|---|
-| 1 | 15-45 |
-| 2 | 30-55 |
-| 3 | 40-70 |
-| 4 | 50-85 |
-| 5 | 60-100 |
+| Tier | `leadership` band | TW:WH reference |
+|---|---|---|
+| 1 | 35-60 | Tier 1 spearmen 60 ([Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json), [research B 4.3](../research/w2v-life-economy-rosters.md) row A), lowest 35 ([Zombies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Zombies&prop=text&format=json)) |
+| 2 | 50-70 | Tier 2 50-70 (rows B and C, [Crossbowmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Crossbowmen&prop=text&format=json) 50) |
+| 3 | 60-80 | Tier 3 infantry and cavalry 75 (rows D and E, [Reiksguard](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Reiksguard&prop=text&format=json) 75) |
+| 4 | 75-90 | Elite infantry 80-90 ([Swordmasters](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Swordmasters_of_Hoeth&prop=text&format=json) 80, [Chosen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Chosen&prop=text&format=json) 85) |
+| 5 | 70-100 | Top elites and heroes 70-100 ([verify-task-6](../../.omo/evidence/w2v/verify-task-6.md) calibration table; this tier attribution is inferred) |
 
-Drone and war-machine leadership is the morale of the operators and crew. `100` is used only by tier 5 units with `irreplaceable` or `last-to-leave`.
+The `war-machine` category and the `artillery` role may use 100 at any tier, because TW:WH artillery and armoured vehicles have 100 (rows F and G, [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 100). Drone and war-machine leadership is the morale of the operators and crew. All other units keep their tier band, and only tier 5 uses 100.
 
 ### 3.3 Scarcity share
 
@@ -148,9 +160,9 @@ Drone and war-machine leadership is the morale of the operators and crew. `100` 
 
 ### 4.1 Common rules
 
-- Buildings are built at stations. Station type comes from `map_station.degree`: `degree` 1 is a **terminus**, 2 is an **ordinary station**, 3 or more is an **interchange**. Counts in `data/sql/120-map-core.sql` on 2026-11-12: Government 157 stations (40 interchanges, 5 termini), Free City 77 (19, 6), Arc 78 (20, 5).
+- Buildings are built at stations. Station type comes from `map_station.degree`: `degree` 0 is an **isolated stop**, 1 a **terminus**, 2 an **ordinary station**, 3 or more an **interchange**. An isolated stop has no rail link (`line_ids` is an empty array) and, like an ordinary station, takes only buildings marked "any station". Counts in `data/sql/120-map-core.sql` on 2026-11-12: Government 157 stations (40 interchanges, 5 termini, 4 isolated), Free City 77 (19, 6, 0), Arc 78 (20, 5, 1). The five isolated stops are the two Daehyeonsan Reservoir Park monorail platforms and Metro Hotel in Jung-gu, Sinchon (underground) in Seodaemun-gu, and Saengtaegongwon-ap in Gangdong-gu.
 - **Duchy seat station**: one per duchy. [pending] Default: the station with the highest `degree` in the district; ties go to the lower `sort`.
-- Building stages open tiers. Stage 1 opens tiers 1-2, stage 2 tier 3, stage 3 tier 4, stage 4 (where present) tier 5. If a table's "opens" column is narrower, the table wins.
+- Building stages open tiers. Stage 1 opens tiers 1-2, stage 2 tier 3, stage 3 tier 4, stage 4 (where present) tier 5. This is the default. When a building table's "opens" column differs, wider or narrower, the table always wins.
 - A unit row's `recruit_building` is the name of the building stage that first opens that unit.
 - The building names are new names coined by this document [frame]. They are not canon facility names. If the owner renames one, all three rosters change together.
 
@@ -211,22 +223,41 @@ Basis: the Arc is the four Gangnam districts (2.3 [approved]), ruled by houses (
 
 "Hierophant" is Go Ye-jin's approved office (2.3 [approved]). Its station is [pending]; the default is one per faction with no fixed location.
 
+### 4.5 Recruitment rate and building costs
+
+| Item | Value | TW:WH reference |
+|---|---|---|
+| Squads one commander recruits per upkeep interval | 3 | 3 units per lord per turn ([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| Movement of a recruiting commander | Cannot move | A recruiting lord cannot move ([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| Recruitment time, tiers 1-2 | 1 upkeep interval | Common units 1 turn ([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| Recruitment time, tier 3 | 2 upkeep intervals | Heavy infantry and cavalry 2 turns ([research B 4.3](../research/w2v-life-economy-rosters.md) rows E and F) |
+| Recruitment time, tier 4 | 3 upkeep intervals | Armoured vehicle 3 turns (row G) |
+| Recruitment time, tier 5 | 4 upkeep intervals | Monsters, artillery and similar up to 4 turns ([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| Building stage 1 | Cost 750, 1 upkeep interval | Stage 1 750 gold, 1 turn ([The_Empire_buildings](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=The_Empire_buildings&prop=wikitext&format=json), [research B 4.5](../research/w2v-life-economy-rosters.md)) |
+| Building stage 2 | Cost 1500, 2 upkeep intervals | Stage 2 1,500, 2 turns |
+| Building stage 3 | Cost 2500, 3 upkeep intervals | Stage 3 2,500, 3 turns |
+| Building stage 4 | Cost 4000, 4 upkeep intervals | The TW sample stops at stage 3. Stage 4 continues the same step [frame] |
+
+- If one commander orders more than 3, the extra squads move to the next upkeep interval.
+- Building costs use the same unit as a unit's `cost` (P13).
+
 ## 5. Cost, upkeep and caps
 
 ### 5.1 Cost bands by tier
 
-| Tier | `cost` band | `upkeep` band |
-|---|---|---|
-| 1 | 150-350 | 30-105 |
-| 2 | 350-700 | 70-210 |
-| 3 | 700-1200 | 140-360 |
-| 4 | 1200-2000 | 240-600 |
-| 5 | 2000-3200 | 400-900 |
+| Tier | `cost` band | `upkeep` band | TW:WH reference |
+|---|---|---|---|
+| 1 | 150-350 | 30-105 | Tier 1 300 / 81 ([Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json), [research B 4.3](../research/w2v-life-economy-rosters.md) row A) |
+| 2 | 350-700 | 70-210 | Tier 2 475-600 / 119-150 ([Crossbowmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Crossbowmen&prop=text&format=json) 475/119, rows B and C) |
+| 3 | 700-1200 | 140-360 | Tier 3 850-1,200 / 225-300 (rows D, E, F) |
+| 4 | 1200-2200 | 240-660 | Tier 4 2,100 / 525 (row G, [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json)) |
+| 5 | 2200-3200 | 440-960 | No TW tier 5 sample in the research. Continues above tier 4 [frame] |
 
-- `upkeep` is 20-30% of `cost`. The centre is the roughly 25% ratio seen in the seven samples of the research doc (research B section 4.3).
+- `upkeep` is 20-30% of `cost`. The TW:WH samples run at 24.8-27% ([Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json) 81/300 = 27%, [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 525/2,100 = 25%); the band allows ±5 percentage points around that. The upkeep band ends are 20% and 30% of the cost band ends. The tier 5 top is 960, 30% of 3,200.
 - Within a tier, units that use a scarce input sit in the upper half of the cost band.
 - Free City contract units (`hired-company` tag) sit low in the cost band but use a 28-30% upkeep ratio: cheap to hire, expensive to keep.
 - Arc house levies use a 20-22% upkeep ratio: the house feeds and clothes them.
+- These two ratio adjustments are design adjustments for faction identity, not TW:WH numbers [frame].
 
 ### 5.2 Upkeep interval
 
@@ -236,15 +267,15 @@ Upkeep and scarce inputs are paid each campaign "upkeep interval". Tasks 19 and 
 
 `unit_cap` is the number of squads of that unit the whole faction may have at once (not per army).
 
-| Condition | `unit_cap` |
-|---|---|
-| Tier 1-2, no scarce input | NULL (no cap) |
-| Tier 1-2 with a scarce input | NULL or 4-8 |
-| Tier 3 | NULL or 3-8 |
-| Tier 4 | 2-4 (required) |
-| Tier 5 | 1-2 (required) |
-| `drone` category | 2-6 (required) |
-| `irreplaceable` tag | 1 (required) |
+| Condition | `unit_cap` | TW:WH reference |
+|---|---|---|
+| Tier 1-2, no scarce input | NULL (no cap) | n/a. Upkeep-paying TW factions have no caps ([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| Tier 1-2 with a scarce input | NULL or 4-8 | n/a. Upkeep-paying TW factions have no caps ([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| Tier 3 | NULL or 3-8 | n/a. Upkeep-paying TW factions have no caps ([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| Tier 4 | 2-4 (required) | n/a. Upkeep-paying TW factions have no caps ([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| Tier 5 | 1-2 (required) | n/a. Upkeep-paying TW factions have no caps ([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| `drone` category | 2-6 (required) | n/a. Upkeep-paying TW factions have no caps ([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| `irreplaceable` tag | 1 (required) | n/a. Upkeep-paying TW factions have no caps ([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
 
 ## 6. Scarce inputs
 
@@ -271,7 +302,16 @@ Upkeep and scarce inputs are paid each campaign "upkeep interval". Tasks 19 and 
 | Scarce-4 | `category` is `war-machine` | includes `fuel` or `cells` |
 | Scarce-5 | `role` is `medic` | includes `medicine` |
 
-Units matching no condition use NULL. If three or more conditions match, list the two most important, but never drop a value required by Scarce-1 to Scarce-3. The task 5 build check tests Scarce-1 and Scarce-2.
+Units matching no condition use NULL. Values are set in this order, which gives exactly one value for any unit.
+
+1. Find every rule that matches, in order Scarce-1 to Scarce-5. The priority is Scarce-1 > Scarce-2 > Scarce-3 > Scarce-4 > Scarce-5.
+2. Each matching rule gives one value. Scarce-4's value depends on the faction: `fuel` for the Government and the Arc, `cells` for the Free City. Every other rule has the single value in the table.
+3. If a value appears twice, keep only the higher-priority one.
+4. The highest-priority value is the main input and comes first. A second value, if any, follows the comma.
+5. If there is only one value and `category` is `drone` or `war-machine`, add `parts` as the second value: machines do not run without spare parts.
+6. With three or more values, keep the top two by priority. So a matching Scarce-1 to Scarce-3 value is never dropped unless more than two of them match. Do not make units that match both Scarce-1 and Scarce-2 (a drone that is also an implant squad).
+
+Examples: a Government armoured car with a gun matches Scarce-3 (`ammo`) and Scarce-4 (`fuel`), giving `ammo,fuel`; without a gun it is `fuel,parts`. A Free City armoured trolley with a gun is `ammo,cells`, without a gun `cells,parts`. A Free City drone matches only Scarce-1 (`cells`), so by step 5 it is `cells,parts`. A unit matching no rule (e.g. a hand-pumped rail trolley) is always NULL. An Arc baptised shooter matches Scarce-2 (`implants`) and Scarce-3 (`ammo`), giving `implants,ammo`. The task 5 build check tests Scarce-1 and Scarce-2.
 
 ### 6.3 How scarcity is felt in play
 
@@ -279,14 +319,14 @@ Units matching no condition use NULL. If three or more conditions match, list th
 - **Battle use.** When such a squad fights (auto and manual battle alike) it spends 1 more of its main input. Rounds fired are refilled from the stockpile after battle; refilling one squad costs 1 `ammo`.
 - **Running out.** At zero stockpile:
 
-| Input | Effect at zero |
-|---|---|
-| `ammo` | Starting ammunition in the next battle is 25% of `ammo` (rounded up) |
-| `cells` | Drone squads cannot deploy. Other squads lose tag effects that need `cells` |
-| `implants` | `baptised` and `wired-body` squads lose 20% melee attack and melee defence and 10 leadership, and stop replenishing |
-| `fuel` | Engine units move at half speed. War machines that move only by engine cannot deploy |
-| `parts` | Machines and drones do not heal between battles and lost airframes or hulls are not replaced |
-| `medicine` | People squads replenish at half rate. Wounded do not return after battle |
+| Input | Effect at zero | TW:WH reference |
+|---|---|---|
+| `ammo` | Starting ammunition in the next battle is 25% of `ammo` (rounded up) | n/a. TW ammunition refills every battle ([Ammunition](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Ammunition&prop=wikitext&format=json)). The scarcity rule is a design addition [frame] |
+| `cells` | Drone squads cannot deploy. Other squads lose tag effects that need `cells` | n/a. No TW counterpart resource |
+| `implants` | `baptised` and `wired-body` squads lose 20% melee attack and melee defence and 10 leadership, and stop replenishing | n/a. No TW counterpart resource |
+| `fuel` | Engine units move at half speed. War machines that move only by engine cannot deploy | n/a. No TW counterpart resource |
+| `parts` | Machines and drones do not heal between battles and lost airframes or hulls are not replaced | n/a. No TW counterpart resource |
+| `medicine` | People squads replenish at half rate. Wounded do not return after battle | n/a. No TW counterpart resource |
 
 - **Visible.** The recruitment and army screens show the input icon and the number of intervals left (screen design is task 18). The player chooses between one more elite unit and a longer stockpile.
 - **A different bottleneck per faction.** The Government burns `ammo` and `fuel`, the Free City `cells` and `parts`, the Arc `implants`. This ties into the identity matrix in section 9.
@@ -314,7 +354,7 @@ All names are coined by this document. No attribute name from another game is us
 | `rail-borne` | 궤도 기동 | Rail-borne | +30% speed on track, −50% off track |
 | `quiet-step` | 발소리 죽이기 | Quiet step | Stays in ambush while moving |
 | `scout-deploy` | 선발 배치 | Scout deploy | May deploy ahead of the deployment zone |
-| `roll-call` | 호명 | Roll call | +6 morale to friendly squads within 40 m. Does not stack with the commander effect; the larger applies |
+| `roll-call` | 호명 | Roll call | +4 morale to friendly squads within 40 m. Does not stack with the commander effect; the larger applies. +4 is the TW:WH encourage value ([Encourage](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Encourage&prop=wikitext&format=json)). The 40 m radius has no TW number and stays [pending] |
 | `field-repair` | 현장 수리 | Field repair | Heals nearby friendly machines and drones in battle. Does not restore lost airframes. Needs `parts` |
 | `field-dressing` | 응급 처치 | Field dressing | Turns part of the post-battle deaths of nearby people squads into wounds. Never revives the dead (GDD relief rule) |
 | `breach-charge` | 문 따기 | Breach charge | x3 damage to doors, barriers and blockade works |
@@ -417,33 +457,33 @@ Target roster size is 18-26 units per faction. The "category counts" below are t
 
 ### 10.3 Squad limit and orders
 
-- **[frame][pending] An army holds at most 20 slots.** The commander escort takes one slot, and each attached hero (with escort) takes one. This follows D3's "the same as Total War". It conflicts with the GDD `hero-squads-and-time-based-movement` rule of no fixed squad cap, so it waits for owner confirmation (section 13).
+- **[frame][pending] An army holds at most 20 slots.** The commander escort takes one slot, and each attached hero (with escort) takes one. This follows D3's "the same as Total War" and the 2026-11-12 owner instruction ("전투 기준 값은 알려진 워해머 토탈워 정보를 기준으로 로스터 잡아서 작업 합니다"). A TW:WH army is 1-20 units led by one lord ([Armies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Armies&prop=wikitext&format=json)). It conflicts with the GDD `hero-squads-and-time-based-movement` rule of no fixed squad cap, so it waits for owner confirmation (section 13).
 - The orders are the four the GDD defines: move, attack target, fire, ambush. Deployment and formation are set before battle.
 - A squad in melee takes no new orders until that melee ends (GDD).
 - Retreat is an order to the whole battle, not to a squad (GDD).
 - **No command range.** The commander orders every squad instantly wherever it is on the field. This matches GDD SP-1.0.0: a player who is the battle commander directly controls every battle-map squad attached to the command.
-- **There is a presence radius.** [frame][pending] Friendly squads within 50 m of the commander's escort squad gain a morale bonus, default +8. This is a morale effect range, not an order range.
+- **There is a presence radius.** [frame][pending] Friendly squads within 50 m of the commander's escort squad gain a morale bonus, default +8. This is a morale effect range, not an order range. TW:WH lords have a morale aura, but its radius and value are not published ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json), [verify-task-6](../../.omo/evidence/w2v/verify-task-6.md)), so 50 m and +8 have no TW number and stay [pending].
 
 ### 10.4 Morale and rout
 
-| State | Condition [frame][pending] | Result |
-|---|---|---|
-| Steady | Current morale > 25% of base leadership | Follows orders |
-| Wavering | Current morale ≤ 25% of base leadership | Takes orders but −10 melee attack |
-| Fleeing | Current morale ≤ 0 | Takes no orders and runs for the exit. Can rally once safe |
-| Shattered | Third flight in one battle | Never rallies |
+| State | Condition [frame][pending] | Result | TW:WH reference |
+|---|---|---|---|
+| Steady | Current morale > 25% of base leadership | Follows orders | n/a |
+| Wavering | Current morale ≤ 25% of base leadership | Takes orders but −10 melee attack | A wavering state exists ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json)). 25% and −10: No TW number; stays [pending] |
+| Fleeing | Current morale ≤ 0 | Takes no orders and runs for the exit. Can rally once safe | Routed units can rally once safe ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json)) |
+| Shattered | The fourth break in one battle: a squad that has fled three times shatters when it breaks again | Never rallies | A unit that has routed three times shatters the next time its leadership breaks ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json)) |
 
-- Morale loss causes are the GDD's: wounds, friendly deaths, knockouts and flights, and events affecting the commander. Add flank and rear attacks, fatigue and fear tags (`iron-dread`).
-- A fleeing squad costs friendly squads within 30 m −5 morale. Fleeing `ledger-levy` squads cost nothing.
-- **Army collapse.** When half or more of the squads (by count) are fleeing, shattered or destroyed, all remaining squads take −15 morale and cannot rally while that holds. When every squad flees, the battle ends in the GDD "morale rout".
-- All numbers are [pending]. The GDD leaves the fear test and rout thresholds open. Task 19 settles them together with the GDD rule version.
+- Morale loss causes are the GDD's: wounds, friendly deaths, knockouts and flights, and events affecting the commander. Add flank and rear attacks, fatigue and fear tags (`iron-dread`). The list matches TW:WH ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json): encirclement and flank attacks, charges, lord death, fear, fatigue, damage).
+- A fleeing squad costs friendly squads within 30 m −5 morale. Fleeing `ledger-levy` squads cost nothing. Flights hurting neighbours and the expendable exception exist in TW:WH ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json), [Units](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Units&prop=wikitext&format=json)). 30 m and −5: No TW number; stays [pending].
+- **Army collapse.** When half or more of the squads (by count) are fleeing, shattered or destroyed, all remaining squads take −15 morale and cannot rally while that holds. When every squad flees, the battle ends in the GDD "morale rout". TW:WH also has a stage where an army that has lost many units wavers as a whole ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json)). Half and −15: No TW number; stays [pending].
+- Every number except the shatter rule is [pending]. The GDD leaves the fear test and rout thresholds open. Task 19 settles them together with the GDD rule version.
 
 ### 10.5 When the commander dies
 
-1. **Shock.** Every squad immediately takes −20 morale, regardless of distance. Squads within 50 m take another −10. The presence bonus ends.
+1. **Shock.** Every squad immediately takes −20 morale, regardless of distance. Squads within 50 m take another −10. The presence bonus ends. In TW:WH a lord's death lowers leadership and can rout the army ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json), [Armies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Armies&prop=wikitext&format=json)). −20, −10 and 50 m: No TW number; stays [pending].
 2. **Rout cascade.** Squads pushed to 0 morale or below by the shock flee, and those flights cost their neighbours morale per section 10.4.
 3. **Temporary squad leader.** If the commander's escort survives, one of its soldiers becomes the temporary squad leader (`TemporaryLeader`); otherwise a soldier from the remaining squad with the highest base leadership does. Per the GDD, the temporary leader can give the same orders as a formal commander but with weaker command effects. [frame][pending] Default: no presence bonus, no class or campaign role of a formal hero, and no hero portrait or class marker (GDD UI contract).
-4. **Attached hero.** [pending] Default: if an attached hero is alive, that hero takes command instead of a temporary leader, with half the presence bonus. The GDD does not cover this case, so it waits for owner confirmation.
+4. **Attached hero.** An attached hero does not take over command. Command goes to the temporary squad leader of step 3 (GDD temporary squad leader rule). The attached hero keeps only its own roll-call effect of +4 (the same value as `roll-call`; it does not stack, the larger applies). TW:WH has no in-battle hero succession either; a new lord is recruited after the battle ([Armies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Armies&prop=wikitext&format=json), [Encourage](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Encourage&prop=wikitext&format=json)).
 5. If the commander is knocked out or badly wounded and leaves the battle, use the same steps with the shock reduced to −10.
 6. The commander's life, wounds and capture stay on the person ID (RBATTLE-08, RBATTLE-09). Capture is decided in post-battle custody processing.
 
@@ -453,14 +493,14 @@ Target roster size is 18-26 units per faction. The "category counts" below are t
 - **Duel resolution.** The duel uses the GDD personal-resolution battle: the attacker's weapon, the defender's armour, the two people's combat skill difference, their physical state and mood (RBATTLE-24). [pending] Default: the person's Prowess is the combat skill input. The GDD formula is still open.
 - **How the duel result feeds the mass battle.**
 
-| Result | Loser | Winner |
-|---|---|---|
-| Death | A commander triggers all of section 10.5. An attached hero costs every squad of its army −8 morale | +10 morale to friendly squads within 50 m |
-| Knocked out or badly wounded | Leaves the battle. A commander triggers section 10.5 (shock −10) | +6 morale to friendly squads within 50 m |
-| Withdraws | The hero drops back behind its escort; the escort takes −10 morale | No change |
+| Result | Loser | Winner | TW:WH reference |
+|---|---|---|---|
+| Death | A commander triggers all of section 10.5. An attached hero costs every squad of its army −8 morale | +10 morale to friendly squads within 50 m | Hero death lowering morale exists in TW ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json)). −8, +10 and 50 m: No TW number; stays [pending] |
+| Knocked out or badly wounded | Leaves the battle. A commander triggers section 10.5 (shock −10) | +6 morale to friendly squads within 50 m | +6 and 50 m: No TW number; stays [pending] |
+| Withdraws | The hero drops back behind its escort; the escort takes −10 morale | No change | −10: No TW number; stays [pending] |
 
 - **No double counting.** Duel damage applies only to the two heroes. Escort losses come only from aggregate resolution. The same attack is not entered in both channels (GDD no-double-damage rule).
-- **Command ability.** [pending] Default: the commander's Martial sets the size of the presence bonus: +4 + floor(Martial / 4), at most +12. The GDD leaves the squad size formula ("the commander's own skill" input) open, so this document does not set it. How the 511 people without detailed records get stats is Q17.
+- **Command ability.** [pending] Default: the commander's Martial sets the size of the presence bonus: +4 + floor(Martial / 4), at most +12. TW:WH does not publish the lord aura value, so this formula has no TW number and stays [pending]. The GDD leaves the squad size formula ("the commander's own skill" input) open, so this document does not set it. How the 511 people without detailed records get stats is Q17.
 
 ## 11. Names and appearance
 
@@ -521,16 +561,16 @@ Follow the GDD art direction.
 | unit_cap | NULL |
 | scarce_input | NULL |
 | squad_size | 60 |
-| hp | 10 |
+| hp | 69 |
 | melee_attack | 20 |
-| melee_defence | 28 |
-| weapon_strength | 24 |
+| melee_defence | 34 |
+| weapon_strength | 25 |
 | armour | 15 |
 | missile_damage | NULL |
 | range | NULL |
 | ammo | NULL |
-| speed | 32 |
-| leadership | 32 |
+| speed | 30 |
+| leadership | 45 |
 | attributes | ["ledger-levy","charge-breaker"] |
 | counters | ["free-city-rail-trolley-raiders"] |
 | equipment | Long spears cut from scaffold pipe, and a tin helmet; one spare pair of felt-boot liners per squad. |
@@ -558,16 +598,16 @@ Follow the GDD art direction.
 | unit_cap | NULL |
 | scarce_input | ammo |
 | squad_size | 30 |
-| hp | 11 |
-| melee_attack | 14 |
-| melee_defence | 18 |
-| weapon_strength | 16 |
+| hp | 69 |
+| melee_attack | 16 |
+| melee_defence | 17 |
+| weapon_strength | 24 |
 | armour | 18 |
-| missile_damage | 34 |
-| range | 280 |
+| missile_damage | 22 |
+| range | 145 |
 | ammo | 14 |
-| speed | 30 |
-| leadership | 42 |
+| speed | 33 |
+| leadership | 50 |
 | attributes | ["shield-line"] |
 | counters | ["arc-house-levy-hooks"] |
 | equipment | Bolt-action rifles of mixed origin and a sack for recovered brass; each rifleman draws a counted handful of rounds before battle. |
@@ -595,16 +635,16 @@ Follow the GDD art direction.
 | unit_cap | 4 |
 | scarce_input | cells,parts |
 | squad_size | 6 |
-| hp | 6 |
-| melee_attack | 1 |
-| melee_defence | 1 |
-| weapon_strength | 5 |
+| hp | 60 |
+| melee_attack | 10 |
+| melee_defence | 6 |
+| weapon_strength | 18 |
 | armour | 0 |
 | missile_damage | 120 |
-| range | 600 |
+| range | 400 |
 | ammo | 2 |
 | speed | 85 |
-| leadership | 50 |
+| leadership | 60 |
 | attributes | ["radio-linked","skilled-crew"] |
 | counters | ["government-remnant-riflemen"] |
 | equipment | Six small rotor airframes rebuilt from salvaged motors, each carrying one drop charge; the crew keeps the cells warm in padded pouches against their bodies. |
@@ -632,7 +672,7 @@ Follow the GDD art direction.
 | unit_cap | NULL |
 | scarce_input | NULL |
 | squad_size | 16 |
-| hp | 12 |
+| hp | 110 |
 | melee_attack | 30 |
 | melee_defence | 20 |
 | weapon_strength | 30 |
@@ -641,7 +681,7 @@ Follow the GDD art direction.
 | range | NULL |
 | ammo | NULL |
 | speed | 70 |
-| leadership | 45 |
+| leadership | 55 |
 | attributes | ["rail-borne","quiet-step"] |
 | counters | ["government-remnant-riflemen"] |
 | equipment | Hand-pumped rail trolleys with hooked boarding poles and short axes; the pump needs no fuel. |
@@ -669,16 +709,16 @@ Follow the GDD art direction.
 | unit_cap | NULL |
 | scarce_input | NULL |
 | squad_size | 50 |
-| hp | 10 |
+| hp | 72 |
 | melee_attack | 24 |
-| melee_defence | 22 |
+| melee_defence | 24 |
 | weapon_strength | 26 |
 | armour | 12 |
 | missile_damage | NULL |
 | range | NULL |
 | ammo | NULL |
 | speed | 34 |
-| leadership | 40 |
+| leadership | 45 |
 | attributes | ["house-bound","charge-breaker"] |
 | counters | ["free-city-rail-trolley-raiders"] |
 | equipment | Long hooked poles for pulling riders off trolleys and sleds, and a short blade; no firearms. |
@@ -706,16 +746,16 @@ Follow the GDD art direction.
 | unit_cap | 4 |
 | scarce_input | implants |
 | squad_size | 20 |
-| hp | 30 |
+| hp | 120 |
 | melee_attack | 48 |
 | melee_defence | 34 |
-| weapon_strength | 70 |
+| weapon_strength | 55 |
 | armour | 55 |
 | missile_damage | NULL |
 | range | NULL |
 | ammo | NULL |
-| speed | 38 |
-| leadership | 62 |
+| speed | 34 |
+| leadership | 70 |
 | attributes | ["baptised","plate-biter","thin-clad","iron-dread"] |
 | counters | ["government-remnant-riflemen"] |
 | equipment | Heavy breaching hammers swung by machine-replaced arms; each warrior carries a small kit of spare joints for the replaced parts. |
@@ -726,7 +766,7 @@ Follow the GDD art direction.
 
 The examples' `counters` point at other factions' examples to show the counter rules. Real rosters follow the section 8.3 order.
 
-Example check: all six rows keep the section 1.2 ranges, section 1.3 squad bands, section 3.2 leadership bands, section 5.1 cost bands and upkeep ratio, section 5.3 caps and section 6.2 scarcity rules. Each faction has 0 tier 4-5 examples.
+Example check: all six rows keep the section 1.2 ranges and range-by-role rule, section 1.3 squad bands, section 1.4 health and speed bands, section 3.2 leadership bands, section 5.1 cost bands and upkeep ratio, section 5.3 caps and section 6.2 scarcity rules (values and order). Infantry health 69 is the TW:WH tier 1 spearman per-model health, and the riflemen 145/22/14/50 follow the TW:WH gunpowder infantry (Handgunners) range, total missile damage and tier 2 leadership. Each faction has 0 tier 4-5 examples.
 
 ## 13. Owner-pending list
 
@@ -743,9 +783,9 @@ These items have no owner answer and use provisional defaults. A default is not 
 | P7 | Jo Jaepyo's title and Free City mercenary naming | Q20 | Mercenaries are "contract company" / "contract soldiers". No forbidden vocabulary |
 | P8 | Im Ha-jun (pump technology) and Arc technical units | Q22 | No unit is tied to a specific person |
 | P9 | Ryu Eun-bi's "medical corps" and the Government medical chain | Q27 | The chain is named Ledger Aid Post / Ledger Field Hospital and is not tied to the medical corps |
-| P10 | 20-slot army limit | D3 against the GDD `hero-squads-and-time-based-movement` rule of no fixed cap | 20 slots (commander escort included, one slot per attached hero). Task 19 also proposes the GDD amendment |
-| P11 | Morale thresholds, presence radius, commander death shock, temporary leader effect | The GDD leaves the numbers open | The values in sections 10.4-10.5 |
-| P12 | An attached hero taking over command | Not covered in the GDD | The attached hero takes command with half the presence bonus |
+| P10 | 20-slot army limit | D3 and the 2026-11-12 owner instruction, against the GDD `hero-squads-and-time-based-movement` rule of no fixed cap | 20 slots (commander escort included, one slot per attached hero). The number comes from the TW:WH army of 1-20 units ([Armies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Armies&prop=wikitext&format=json)) per the owner instruction. Only the GDD conflict remains; task 19 also proposes the GDD amendment |
+| P11 | Wavering threshold, presence radius and value, commander death shock, flight spread, army collapse threshold, duel result morale, roll-call radius, `iron-dread` value | The GDD leaves the numbers open. TW:WH does not publish these numbers either ([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json), [Encourage](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Encourage&prop=wikitext&format=json), [verify-task-6](../../.omo/evidence/w2v/verify-task-6.md)) | The values in sections 10.3-10.6 and 7. No TW source exists, so they stay [pending]. Shattering (fourth break) and roll-call +4 follow TW values and are no longer on this list |
+| P12 | An attached hero taking over command | The old default (the hero takes command) did not match TW:WH and was removed | No takeover. The GDD temporary squad leader commands and the attached hero keeps only its own +4 (section 10.5 step 4). This is now [frame] and reopens only if the owner wants another rule |
 | P13 | Cost unit and upkeep interval names | Research B section 6 (currency proposals) | An unnamed "cost" number. Tasks 18 and 19 set the interval |
 | P14 | Duchy seat station | Not in the bible | The highest-`degree` station in the district, ties to the lower `sort` |
 | P15 | Location of the Hierophant's Guard Hall | May overlap Q12 | One per faction, location not fixed |
@@ -756,9 +796,9 @@ These items have no owner answer and use provisional defaults. A default is not 
 
 - [ ] 18-26 units, within the section 9.1 category counts.
 - [ ] Tier 4-5 at most 30%; 1-3 tier 5 units (0 for the Free City).
-- [ ] Every number is inside the section 1.2 ranges, section 1.3 squad bands, section 3.2 leadership bands and section 5.1 cost bands. `upkeep` is 20-30% of `cost`.
+- [ ] Every number is inside the section 1.2 ranges, section 1.3 squad bands, section 1.4 health and speed bands, section 3.2 leadership bands, section 5.1 cost bands and the section 1.2 range-by-role rule. `upkeep` is 20-30% of `cost`.
 - [ ] `missile_damage`, `range` and `ammo` are all NULL or all set. `missile` units have them set.
-- [ ] Section 5.3 caps and section 6.2 scarcity rules are kept.
+- [ ] Section 5.3 caps and section 6.2 scarcity rules (values and order) are kept.
 - [ ] `attributes` uses only section 7 ids and the combination rules. `counters` has 1-4 existing `id`s.
 - [ ] `recruit_building` matches the section 4 table name letter for letter.
 - [ ] 0 forbidden-term hits in names and text (patterns from `node scripts/pages/scan-terms.mjs`).

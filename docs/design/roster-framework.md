@@ -9,7 +9,7 @@
 - **[승인]** 표시는 `docs/CANON-BIBLE.md`가 승인한 사실이다. 이 문서는 그 사실을 옮길 뿐 바꾸지 않는다.
 - **[틀]** 표시는 이 문서가 정하는 설계 규칙이다. 13~15번, 19번 과제는 이 규칙을 따라야 한다. 다만 세계 정본이 아니며, 소유자가 언제든 바꿀 수 있다. 공개 위키에 세계 사실로 옮기지 않는다.
 - **[대기]** 표시는 소유자 답이 없어 임시 기본값을 쓰는 항목이다. 전체 목록은 13절에 있다. 대기 항목은 승인된 것처럼 쓰지 않는다.
-- 근거로 쓴 원천은 다음과 같다. 바이블 1, 2.1~2.5, 3절. 소유자 결정 D3 원문: "전투 방식은 토탈워랑 동일하게 지휘관이 모든 분대의 지휘권한을 갖음". 조사 문서 `docs/research/w2v-tech-scarcity.md`, `docs/research/w2v-life-economy-rosters.md`(참고 전용). 스키마 `data/sql/000-schema.sql`의 `wiki_unit`(task 4 브랜치). GDD `hero-squads-and-time-based-movement.json`, `personal-resolution-battle.json`, `rules-battle-clauses.json`, `character-art-direction.json`. 역 자료 `data/sql/120-map-core.sql`.
+- 근거로 쓴 원천은 다음과 같다. 바이블 1, 2.1~2.5, 3절. 소유자 결정 D3 원문: "전투 방식은 토탈워랑 동일하게 지휘관이 모든 분대의 지휘권한을 갖음". 소유자 지시(2026-11-12) 원문: "전투 기준 값은 알려진 워해머 토탈워 정보를 기준으로 로스터 잡아서 작업 합니다". TW:WH 수치는 Fandom MediaWiki API 페이지와 조사 B 4절에서 가져왔다. 다른 게임의 병종 이름은 여전히 쓰지 않는다. 조사 문서 `docs/research/w2v-tech-scarcity.md`, `docs/research/w2v-life-economy-rosters.md`(참고 전용). 스키마 `data/sql/000-schema.sql`의 `wiki_unit`(task 4 브랜치). GDD `hero-squads-and-time-based-movement.json`, `personal-resolution-battle.json`, `rules-battle-clauses.json`, `character-art-direction.json`. 역 자료 `data/sql/120-map-core.sql`.
 - 수치의 축은 Total War 계열 전투(근접 공격, 근접 방어, 무기 위력, 장갑, 사격 피해, 사거리, 탄수, 속도, 리더십)에 맞췄다. 수치는 병종끼리 비교하고 균형을 잡는 설계 눈금이다. 실제 전투 계산식은 GDD 개인 판정 전투가 소유하며, 그 문서는 계수와 수치가 아직 정해지지 않았다고 적는다. 이 문서도 계산식을 확정하지 않는다. 10.6절에 연결 방법만 적는다.
 
 ## 1. 스키마와 수치 눈금
@@ -26,7 +26,7 @@
 | `category` | 불가 | 2절의 일곱 문자열 가운데 하나 |
 | `role` | 불가 | 2.2절 역할 문자열 가운데 하나 |
 | `recruit_building`, `recruit_building_ko` | 불가 | 4절 건물 표에 적힌 그 단계 건물 이름을 글자 그대로 쓴다 |
-| `scarce_input` | 가능 | 6절 어휘. 하나 또는 쉼표로 이은 둘(공백 없음, 앞이 주 투입물). 예: `cells,parts` |
+| `scarce_input` | 가능 | 6절 어휘. 하나 또는 쉼표로 이은 둘(공백 없음, 앞이 주 투입물). 순서와 값은 6.2절 규칙으로 정한다. 예: `ammo,fuel` |
 | `attributes` | 불가 | 7절 태그 id의 JSON 배열. 빈 배열 `[]` 허용. 최대 4개 |
 | `counters` | 불가 | 이 병종이 상대하기 좋은 병종 `id`의 JSON 배열. 1~4개. 8.3절 |
 | `equipment`, `equipment_ko` | 불가 | 11절. 한 문장에서 세 문장 |
@@ -35,42 +35,54 @@
 
 ### 1.2 숫자 컬럼 눈금
 
-아래 표가 모든 숫자 컬럼의 범위다. 범위 밖 값은 쓰지 않는다. "NULL"이 "가능"인 컬럼만 NULL을 쓸 수 있다.
+아래 표가 모든 숫자 컬럼의 범위다. 범위 밖 값은 쓰지 않는다. "NULL"이 "가능"인 컬럼만 NULL을 쓸 수 있다. 소유자 지시(2026-11-12, 원문): "전투 기준 값은 알려진 워해머 토탈워 정보를 기준으로 로스터 잡아서 작업 합니다". 그래서 전투 수치의 범위는 Total War: WARHAMMER(이하 TW:WH)에서 알려진 값 안에 둔다. 마지막 열이 그 근거다. 링크는 Fandom MediaWiki API 페이지이며, 페이지 이름은 출처 주소일 뿐 병종 이름으로 옮기지 않는다. 금지 어휘에 걸리는 이름의 페이지는 링크하지 않고 검증 보고서의 표를 근거로 적었다.
 
-| 컬럼 | 범위 | NULL | 뜻 | 상호작용 |
-|---|---|---|---|---|
-| `sort` | 1-999 | 불가 | 세력 안 표시 순서. 범주 순서(2절) 다음 등급 순서로 매긴다 | 세력 안에서 유일하다 |
-| `tier` | 1-5 | 불가 | 등급. 3절 | 비용 띠, 리더십 띠, 상한 규칙을 정한다 |
-| `cost` | 150-3200 | 불가 | 모집 비용. 단위 이름은 [대기](13절) | 5절 등급별 띠 |
-| `upkeep` | 30-900 | 불가 | 유지 간격마다 내는 유지비 | `cost`의 20~30%여야 한다 |
-| `unit_cap` | 1-8 | 가능 | 세력 전체에서 동시에 둘 수 있는 분대 수. NULL은 상한 없음 | 5.3절. 4~5등급, 드론, `irreplaceable`은 NULL 불가 |
-| `squad_size` | 1-80 | 불가 | 분대의 기본 전투 인원(드론은 기체 수, 전쟁 기계는 차체 수). 영웅은 세지 않는다 | 1.3절 범주별 띠. 실제 정원은 GDD 규칙대로 지휘관·세력·정착지 수준으로 바뀐다 |
-| `hp` | 4-600 | 불가 | 한 사람(또는 한 기체)의 체력 | 사람 8~40, 드론 4~30, 전쟁 기계 150~600. 분대 총체력 = `hp` x `squad_size` |
-| `melee_attack` | 1-70 | 불가 | 근접 공격 기술 | 상대 `melee_defence`와 견주어 근접 명중률을 정한다 |
-| `melee_defence` | 1-70 | 불가 | 근접 방어 기술 | 높을수록 근접에서 덜 맞는다. 사격에는 쓰지 않는다 |
-| `weapon_strength` | 5-300 | 불가 | 근접 한 번의 위력 | 상대 `armour`가 일부를 막는다. `plate-biter` 태그는 장갑을 덜 받는다 |
-| `armour` | 0-150 | 불가 | 방호구·차체의 막는 힘 | 근접과 사격 피해를 모두 줄인다. 최대 감소는 90%로 둔다 |
-| `missile_damage` | 5-450 | 가능 | 사격 한 발(드론은 공격 한 번)의 위력 | `range`, `ammo`와 셋이 함께 NULL이거나 함께 값이 있다 |
-| `range` | 15-900 | 가능 | 사거리(미터). 드론은 조종 거리 | 터널 전장에서는 실제 시야가 사거리보다 짧을 수 있다 |
-| `ammo` | 1-40 | 가능 | 한 전투에서 쏠 수 있는 사격 횟수. 드론은 출격 횟수 | 6절 결핍 규칙이 시작 탄수를 줄인다 |
-| `speed` | 10-100 | 불가 | 전장 이동 속도 | 보병 20~40, 빠른 병종 50~90, 드론 60~100, 전쟁 기계 10~45 |
-| `leadership` | 15-100 | 불가 | 기본 사기. 전투 중 사기의 시작값 | 3.2절 등급별 띠. 10절 패주 규칙 |
+| 컬럼 | 범위 | NULL | 뜻 | 상호작용 | TW:WH 기준 |
+|---|---|---|---|---|---|
+| `sort` | 1-999 | 불가 | 세력 안 표시 순서. 범주 순서(2절) 다음 등급 순서로 매긴다 | 세력 안에서 유일하다 | 해당 없음(표시 순서이며 TW 전투 수치가 아니다) |
+| `tier` | 1-5 | 불가 | 등급. 3절 | 비용 띠, 리더십 띠, 상한 규칙을 정한다 | 1~5등급 표본([조사 B 4.3절](../research/w2v-life-economy-rosters.md) A~G행), [Crossbowmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Crossbowmen&prop=text&format=json) 2등급 |
+| `cost` | 150-3200 | 불가 | 모집 비용. 단위 이름은 [대기](13절) | 5.1절 등급별 띠 | 300(1등급)~2,100(4등급) ([조사 B 4.3절](../research/w2v-life-economy-rosters.md)), [Crossbowmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Crossbowmen&prop=text&format=json) 475 |
+| `upkeep` | 30-960 | 불가 | 유지 간격마다 내는 유지비 | `cost`의 20~30%여야 한다 | 81~525, 모집 비용의 24.8~27% ([조사 B 4.3절](../research/w2v-life-economy-rosters.md), [Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json) 81, [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 525) |
+| `unit_cap` | 1-8 | 가능 | 세력 전체에서 동시에 둘 수 있는 분대 수. NULL은 상한 없음 | 5.3절. 4~5등급, 드론, `irreplaceable`은 NULL 불가 | 유지비를 내는 세력에는 상한이 없다. 일부 세력의 병종별 상한은 숫자가 공개되지 않았다([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)). 이 컬럼은 결핍을 나타내려는 설계 이탈이다[틀] |
+| `squad_size` | 1-80 | 불가 | 분대의 기본 전투 인원(드론은 기체 수, 전쟁 기계는 차체 수). 영웅은 세지 않는다 | 1.3절 범주별 띠. 실제 정원은 GDD 규칙대로 지휘관·세력·정착지 수준으로 바뀐다 | 1(한 덩어리 기계)~180(보병 최대 크기 설정). 1.3절 |
+| `hp` | 50-9500 | 불가 | 한 사람(또는 한 기체, 한 차체)의 체력 | 1.4절 범주별 띠. 분대 총체력 = `hp` x `squad_size` | 보병 1인 50~135([Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json) 8,280/120 = 69, [Black_Orcs](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Black_Orcs&prop=text&format=json) 10,800/80 = 135), 기병 1기 89~233([Demigryph_Knights](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Demigryph_Knights&prop=text&format=json) 233), 한 덩어리 기계 3,957~9,102([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 9,102, [Doomwheel](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Doomwheel&prop=text&format=json) 6,420) |
+| `melee_attack` | 10-65 | 불가 | 근접 공격 기술 | 상대 `melee_defence`와 견주어 근접 명중률을 정한다 | 10([Helstorm](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Helstorm_Rocket_Battery&prop=text&format=json))~65([Ungrim](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Ungrim_Ironfist&prop=text&format=json)). 보병 12~46([Swordmasters](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Swordmasters_of_Hoeth&prop=text&format=json) 46) |
+| `melee_defence` | 6-66 | 불가 | 근접 방어 기술 | 높을수록 근접에서 덜 맞는다. 사격에는 쓰지 않는다 | 6([Helstorm](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Helstorm_Rocket_Battery&prop=text&format=json), [Zombies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Zombies&prop=text&format=json))~66(검증 보고서 [verify-task-6](../../.omo/evidence/w2v/verify-task-6.md) 보정표. 해당 페이지 이름이 금지 어휘라 링크하지 않는다). [Thorgrim](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Thorgrim_Grudgebearer&prop=text&format=json) 62, [Chosen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Chosen&prop=text&format=json) 60 |
+| `weapon_strength` | 18-400 | 불가 | 근접 한 번의 위력 | 상대 `armour`가 일부를 막는다. `plate-biter` 태그는 장갑을 덜 받는다 | 18([Zombies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Zombies&prop=text&format=json))~400([Doomwheel](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Doomwheel&prop=text&format=json)). 보병 18~60, 한 덩어리 기계 250~400([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 250) |
+| `armour` | 0-150 | 불가 | 방호구·차체의 막는 힘 | 근접과 사격 피해를 모두 줄인다. 최대 감소는 90%로 둔다 | 0([Zombies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Zombies&prop=text&format=json))~160([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json)). [Reiksguard](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Reiksguard&prop=text&format=json) 120 |
+| `missile_damage` | 8-465 | 가능 | 사격 한 발(드론은 공격 한 번)의 위력. 기본 피해와 관통 피해의 합이다 | `range`, `ammo`와 셋이 함께 NULL이거나 함께 값이 있다 | 합계 8([Outriders](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Outriders&prop=text&format=json))~465([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 95+370). [Handgunners](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Handgunners&prop=text&format=json) 22(5+17), [Crossbowmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Crossbowmen&prop=text&format=json) 24 |
+| `range` | 60-480 | 가능 | 사거리(미터). 드론은 조종 거리 | `role` `rifle`은 145-160, `artillery`는 380-480, 드론은 480 이하. 터널 전장에서는 실제 시야가 사거리보다 짧을 수 있다 | 60([Doomwheel](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Doomwheel&prop=text&format=json))~480([Helstorm](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Helstorm_Rocket_Battery&prop=text&format=json)). 보통 80~200, 포는 200 초과([Range](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Range&prop=wikitext&format=json)). [Handgunners](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Handgunners&prop=text&format=json) 145, [Crossbowmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Crossbowmen&prop=text&format=json) 160, [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 380 |
+| `ammo` | 1-40 | 가능 | 한 전투에서 쏠 수 있는 사격 횟수. 드론은 출격 횟수 | 6절 결핍 규칙이 시작 탄수를 줄인다 | 1([Ammunition](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Ammunition&prop=wikitext&format=json))~100([Irondrakes](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Irondrakes&prop=text&format=json)). 화약 보병 22([Handgunners](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Handgunners&prop=text&format=json)), [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 40 |
+| `speed` | 20-90 | 불가 | 전장 이동 속도 | 1.4절 범주별 띠 | 20~90. 평균 30~60, 기병 60 초과, 포 30 미만([Speed](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Speed&prop=wikitext&format=json)). [Helstorm](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Helstorm_Rocket_Battery&prop=text&format=json) 20, [Pistoliers](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Pistoliers&prop=text&format=json) 90 |
+| `leadership` | 35-100 | 불가 | 기본 사기. 전투 중 사기의 시작값 | 3.2절 등급별 띠. 10절 패주 규칙 | 35([Zombies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Zombies&prop=text&format=json))~100([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json)) |
 
-참고 상호작용(균형 점검용이며 전투 계산식이 아니다): 근접 명중률은 35 + `melee_attack` − 상대 `melee_defence`로 보고 8~90% 사이로 자른다. 피해는 `weapon_strength`(사격은 `missile_damage`)에서 상대 `armour`%만큼 덜어 낸다. 19번 과제는 이 비교식을 GDD 개인 판정의 입력으로 옮길 때 같은 원인을 두 번 빼지 않는다(GDD "중복 차감 금지").
+참고 상호작용(균형 점검용이며 전투 계산식이 아니다): 근접 명중률은 35 + `melee_attack` − 상대 `melee_defence`로 보고 8~90% 사이로 자른다. 피해는 `weapon_strength`(사격은 `missile_damage`)에서 상대 `armour`%만큼 덜어 낸다. 이 식과 장갑 90% 상한은 확인한 Fandom 페이지에 숫자가 없어 TW:WH 근거가 확인되지 않은 균형 보조값이다. 19번 과제는 이 비교식을 GDD 개인 판정의 입력으로 옮길 때 같은 원인을 두 번 빼지 않는다(GDD "중복 차감 금지").
 
 ### 1.3 범주별 분대 인원 띠
 
-결핍과 인구 붕괴 때문에 분대는 Total War보다 작다. 높은 등급일수록 띠의 아래쪽을 쓴다.
+결핍과 인구 붕괴 때문에 분대는 TW:WH의 큰 크기 설정보다 작다. 높은 등급일수록 띠의 아래쪽을 쓴다. 띠는 모두 TW:WH의 작은 크기~최대 크기 설정 범위 안에 있다.
 
-| 범주 | `squad_size` 띠 | 세는 대상 |
-|---|---|---|
-| `commander` | 6-16 | 호위 병사. 영웅 본인은 세지 않는다 |
-| `infantry` | 20-80 | 병사 |
-| `missile` | 12-48 | 사수 |
-| `fast` | 6-24 | 탑승자 또는 스키병 |
-| `drone` | 3-12 | 기체. 조종수는 세지 않는다 |
-| `war-machine` | 1-4 | 차체나 포. 조원은 세지 않는다 |
-| `support` | 6-24 | 병사 |
+| 범주 | `squad_size` 띠 | 세는 대상 | TW:WH 기준 |
+|---|---|---|---|
+| `commander` | 6-16 | 호위 병사. 영웅 본인은 세지 않는다 | 해당 없음. TW 군주는 한 덩어리 1이고 호위 분대가 없다([verify-task-6](../../.omo/evidence/w2v/verify-task-6.md)) |
+| `infantry` | 20-80 | 병사 | 20~180. [Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json) 30/60/90/120 ([조사 B 4.3절](../research/w2v-life-economy-rosters.md) A행) |
+| `missile` | 12-48 | 사수 | 23~90. [Handgunners](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Handgunners&prop=text&format=json) 23/45/68/90 (B행). 화기반 7~32 |
+| `fast` | 8-24 | 탑승자 또는 스키병 | 기병 8~60. [Reiksguard](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Reiksguard&prop=text&format=json) 15/30/45/60 (E행) |
+| `drone` | 3-12 | 기체. 조종수는 세지 않는다 | 해당 없음. TW에 원격 조종 기계 분대가 없다 |
+| `war-machine` | 1-4 | 차체나 포. 조원은 세지 않는다 | 포 1~4, 장갑 차량 1 (F·G행, [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 1) |
+| `support` | 6-24 | 병사 | 해당 없음. 가장 가까운 화기반 7~32 |
+
+### 1.4 범주별 체력·속도 띠
+
+| 범주 | `hp` 띠 | `speed` 띠 | TW:WH 기준 |
+|---|---|---|---|
+| `commander` | 50-140 | 26-42 | 사람이므로 보병 기준: 1인 50~135, 속도 26~42 |
+| `infantry` | 50-140 | 26-42 | 1인 50~135([Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json) 69, [Black_Orcs](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Black_Orcs&prop=text&format=json) 135). 속도 26([Irondrakes](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Irondrakes&prop=text&format=json))~42([Clanrats](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Clanrats&prop=text&format=json)) |
+| `missile` | 50-140 | 26-42 | 보병과 같다([Handgunners](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Handgunners&prop=text&format=json) 6,210/90 = 69, 속도 33) |
+| `fast` | 85-235 | 60-90 | 기병 1기 89~233([Demigryph_Knights](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Demigryph_Knights&prop=text&format=json) 233), 속도 60 초과([Speed](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Speed&prop=wikitext&format=json)), [Reiksguard](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Reiksguard&prop=text&format=json) 78, [Pistoliers](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Pistoliers&prop=text&format=json) 90 |
+| `drone` | 50-140 | 60-90 | 해당 없음. TW 대응 병종이 없어 사람 체력 띠와 기병 속도 띠 안에 둔다[틀] |
+| `war-machine` | 3500-9500 | 20-45 | 한 덩어리 3,957~9,102([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 9,102, [Doomwheel](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Doomwheel&prop=text&format=json) 6,420). 속도 20([Helstorm](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Helstorm_Rocket_Battery&prop=text&format=json))~40([Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json)) |
+| `support` | 50-140 | 26-42 | 보병과 같다 |
 
 ## 2. 범주와 역할
 
@@ -126,15 +138,15 @@
 
 ### 3.2 등급별 리더십 띠
 
-| 등급 | `leadership` 띠 |
-|---|---|
-| 1 | 15-45 |
-| 2 | 30-55 |
-| 3 | 40-70 |
-| 4 | 50-85 |
-| 5 | 60-100 |
+| 등급 | `leadership` 띠 | TW:WH 기준 |
+|---|---|---|
+| 1 | 35-60 | 1등급 창병 60([Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json), [조사 B 4.3절](../research/w2v-life-economy-rosters.md) A행), 최저 35([Zombies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Zombies&prop=text&format=json)) |
+| 2 | 50-70 | 2등급 50~70(B·C행, [Crossbowmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Crossbowmen&prop=text&format=json) 50) |
+| 3 | 60-80 | 3등급 보병·기병 75(D·E행, [Reiksguard](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Reiksguard&prop=text&format=json) 75) |
+| 4 | 75-90 | 정예 보병 80~90([Swordmasters](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Swordmasters_of_Hoeth&prop=text&format=json) 80, [Chosen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Chosen&prop=text&format=json) 85) |
+| 5 | 70-100 | 최고 정예와 영웅 70~100([verify-task-6](../../.omo/evidence/w2v/verify-task-6.md) 보정표. 이 등급 귀속은 추정이다) |
 
-드론과 전쟁 기계의 리더십은 조종수와 조원의 사기다. `100`은 `irreplaceable` 기계나 `last-to-leave` 태그가 있는 5등급만 쓴다.
+`war-machine` 범주와 `artillery` 역할은 어느 등급이든 100을 쓸 수 있다. TW:WH의 포와 장갑 차량이 100이기 때문이다(F·G행, [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 100). 드론과 전쟁 기계의 리더십은 조종수와 조원의 사기다. 그 밖의 병종은 등급 띠를 지키고, 100은 5등급만 쓴다.
 
 ### 3.3 희소 비율
 
@@ -148,9 +160,9 @@
 
 ### 4.1 공통 규칙
 
-- 건물은 역에 짓는다. 역 유형은 `map_station.degree`로 가른다. `degree` 1은 **종착역**, 2는 **일반역**, 3 이상은 **환승역**이다. 2026-11-12 `data/sql/120-map-core.sql` 기준 수: 정부 역 157(환승 40, 종착 5), 자유도시 77(환승 19, 종착 6), 아크 78(환승 20, 종착 5).
+- 건물은 역에 짓는다. 역 유형은 `map_station.degree`로 가른다. `degree` 0은 **고립역**, 1은 **종착역**, 2는 **일반역**, 3 이상은 **환승역**이다. 고립역은 노선이 이어지지 않은 정류장이며(`line_ids`가 빈 배열) 일반역처럼 "모든 역"에 짓는 건물만 지을 수 있다. 2026-11-12 `data/sql/120-map-core.sql` 기준 수: 정부 역 157(환승 40, 종착 5, 고립 4), 자유도시 77(환승 19, 종착 6, 고립 0), 아크 78(환승 20, 종착 5, 고립 1). 고립역 다섯은 중구의 대현산배수지공원 모노레일 두 승강장과 메트로호텔, 서대문구의 신촌(지하), 강동구의 생태공원앞이다.
 - **공작령 본역(duchy seat station)**: 공작령마다 하나다. [대기] 기본값은 그 구 안에서 `degree`가 가장 큰 역이다. 같으면 `sort`가 작은 역이다.
-- 건물 단계가 등급 문을 연다. 1단계는 1~2등급, 2단계는 3등급, 3단계는 4등급, 4단계(있을 때)는 5등급이다. 건물 표의 "여는 등급"이 이보다 좁으면 표를 따른다.
+- 건물 단계가 등급 문을 연다. 1단계는 1~2등급, 2단계는 3등급, 3단계는 4등급, 4단계(있을 때)는 5등급이다. 이것은 기본 규칙이다. 건물 표의 "여는 등급"이 다르면 넓든 좁든 언제나 표를 따른다.
 - 병종 행의 `recruit_building`은 그 병종을 처음 여는 단계 건물의 이름이다.
 - 건물 이름은 이 문서가 새로 지은 이름이다[틀]. 세계 정본의 시설 이름이 아니며, 소유자가 이름을 바꾸면 세 명단을 함께 고친다.
 
@@ -211,22 +223,41 @@
 
 "교주"는 고예진의 승인 직위다(2.3 [승인]). 건물이 서는 역은 [대기]이며, 기본값은 세력 전체 1곳에 위치 미지정이다.
 
+### 4.5 모집 속도와 건설 비용
+
+| 항목 | 값 | TW:WH 기준 |
+|---|---|---|
+| 지휘관 하나가 한 유지 간격에 모집하는 분대 | 3 | 군주 하나가 한 턴에 3유닛([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| 모집 중인 지휘관의 이동 | 움직이지 못한다 | 모집 중인 군주는 움직이지 못한다([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| 모집 시간 1~2등급 | 1 유지 간격 | 일반 유닛 1턴([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| 모집 시간 3등급 | 2 유지 간격 | 중보병·기병 2턴([조사 B 4.3절](../research/w2v-life-economy-rosters.md) E·F행) |
+| 모집 시간 4등급 | 3 유지 간격 | 장갑 차량 3턴(G행) |
+| 모집 시간 5등급 | 4 유지 간격 | 괴수·포병 등 최대 4턴([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| 건물 1단계 | 비용 750, 1 유지 간격 | 1단계 750 금화, 1턴([The_Empire_buildings](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=The_Empire_buildings&prop=wikitext&format=json), [조사 B 4.5절](../research/w2v-life-economy-rosters.md)) |
+| 건물 2단계 | 비용 1500, 2 유지 간격 | 2단계 1,500, 2턴 |
+| 건물 3단계 | 비용 2500, 3 유지 간격 | 3단계 2,500, 3턴 |
+| 건물 4단계 | 비용 4000, 4 유지 간격 | TW 표본은 3단계까지다. 4단계는 같은 증가 폭을 이은 값이다[틀] |
+
+- 한 지휘관이 3개를 넘게 주문하면 넘는 분대는 다음 유지 간격으로 밀린다.
+- 건물 비용은 병종 `cost`와 같은 단위를 쓴다(P13).
+
 ## 5. 비용, 유지비, 상한
 
 ### 5.1 등급별 비용 띠
 
-| 등급 | `cost` 띠 | `upkeep` 띠 |
-|---|---|---|
-| 1 | 150-350 | 30-105 |
-| 2 | 350-700 | 70-210 |
-| 3 | 700-1200 | 140-360 |
-| 4 | 1200-2000 | 240-600 |
-| 5 | 2000-3200 | 400-900 |
+| 등급 | `cost` 띠 | `upkeep` 띠 | TW:WH 기준 |
+|---|---|---|---|
+| 1 | 150-350 | 30-105 | 1등급 300 / 81([Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json), [조사 B 4.3절](../research/w2v-life-economy-rosters.md) A행) |
+| 2 | 350-700 | 70-210 | 2등급 475~600 / 119~150([Crossbowmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Crossbowmen&prop=text&format=json) 475/119, B·C행) |
+| 3 | 700-1200 | 140-360 | 3등급 850~1,200 / 225~300(D·E·F행) |
+| 4 | 1200-2200 | 240-660 | 4등급 2,100 / 525(G행, [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json)) |
+| 5 | 2200-3200 | 440-960 | TW 5등급 표본은 조사에 없다. 4등급 위를 이은 값이다[틀] |
 
-- `upkeep`은 `cost`의 20~30%다. 조사 문서의 일곱 표본에서 본 25% 안팎의 비율을 가운데로 잡았다(참고 조사 4.3절).
-- 같은 등급 안에서 결핍 투입물을 쓰는 병종은 띠의 위쪽 절반을 쓴다.
+- `upkeep`은 `cost`의 20~30%다. TW:WH 표본의 유지비 비율은 24.8~27%이고([Spearmen](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Spearmen_(The_Empire)&prop=text&format=json) 81/300 = 27%, [Steam_Tank](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Steam_Tank&prop=text&format=json) 525/2,100 = 25%), 띠는 그 둘레에 ±5%포인트를 둔다. 유지비 띠의 위아래 끝은 비용 띠 끝의 20%와 30%다. 5등급 위 끝은 3,200의 30%인 960이다.
+- 같은 등급 안에서 결핍 투입물을 쓰는 병종은 비용 띠의 위쪽 절반을 쓴다.
 - 자유도시의 계약 병종(`hired-company` 태그)은 같은 등급보다 모집 비용을 띠 아래쪽에, 유지비 비율을 28~30%로 둔다. 싸게 빌리고 오래 쓰면 비싸다.
 - 아크의 가문 징집병은 유지비 비율을 20~22%로 둔다. 가문이 먹이고 입힌다.
+- 위 두 비율 조정은 TW:WH 수치가 아니라 세력 정체성을 위한 설계 조정이다[틀].
 
 ### 5.2 유지 간격
 
@@ -236,15 +267,15 @@
 
 `unit_cap`은 세력 전체에서 동시에 존재할 수 있는 그 병종 분대의 수다(군대 하나가 아니다).
 
-| 조건 | `unit_cap` |
-|---|---|
-| 1~2등급이고 결핍 투입물 없음 | NULL(상한 없음) |
-| 1~2등급이고 결핍 투입물 있음 | NULL 또는 4-8 |
-| 3등급 | NULL 또는 3-8 |
-| 4등급 | 2-4(필수) |
-| 5등급 | 1-2(필수) |
-| `drone` 범주 | 2-6(필수) |
-| `irreplaceable` 태그 | 1(필수) |
+| 조건 | `unit_cap` | TW:WH 기준 |
+|---|---|---|
+| 1~2등급이고 결핍 투입물 없음 | NULL(상한 없음) | 해당 없음. 유지비를 내는 TW 세력은 상한이 없다([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| 1~2등급이고 결핍 투입물 있음 | NULL 또는 4-8 | 해당 없음. 유지비를 내는 TW 세력은 상한이 없다([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| 3등급 | NULL 또는 3-8 | 해당 없음. 유지비를 내는 TW 세력은 상한이 없다([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| 4등급 | 2-4(필수) | 해당 없음. 유지비를 내는 TW 세력은 상한이 없다([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| 5등급 | 1-2(필수) | 해당 없음. 유지비를 내는 TW 세력은 상한이 없다([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| `drone` 범주 | 2-6(필수) | 해당 없음. 유지비를 내는 TW 세력은 상한이 없다([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
+| `irreplaceable` 태그 | 1(필수) | 해당 없음. 유지비를 내는 TW 세력은 상한이 없다([Recruitment](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Recruitment&prop=wikitext&format=json)) |
 
 ## 6. 결핍 투입물
 
@@ -267,11 +298,20 @@
 |---|---|---|
 | 결핍-1 | `category`가 `drone` | `cells` 포함 |
 | 결핍-2 | `attributes`에 `baptised` 또는 `wired-body`가 있음 | `implants` 포함 |
-| 결핍-3 | `ammo` 컨럼이 NULL이 아니고, `category`가 `drone`이 아니며, `attributes`에 `muscle-powered`가 없음(화기나 포를 쓰는 병종. 드론의 `ammo`는 출격 횟수다) | `ammo` 포함 |
+| 결핍-3 | `ammo` 컬럼이 NULL이 아니고, `category`가 `drone`이 아니며, `attributes`에 `muscle-powered`가 없음(화기나 포를 쓰는 병종. 드론의 `ammo`는 출격 횟수다) | `ammo` 포함 |
 | 결핍-4 | `category`가 `war-machine` | `fuel` 또는 `cells` 포함 |
 | 결핍-5 | `role`이 `medic` | `medicine` 포함 |
 
-조건에 걸리지 않는 병종은 NULL로 둔다. 걸리는 조건이 셋 이상이면 가장 중요한 둘만 적는다. 그래도 결핍-1~결핍-3에 해당하는 값은 빠뜨리지 않는다. 5번 과제의 빌드 검사는 결핍-1과 결핍-2를 검사한다.
+조건에 걸리지 않는 병종은 NULL로 둔다. 값을 정하는 순서는 다음과 같으며, 이 순서대로 하면 어느 병종이든 값이 하나로 정해진다.
+
+1. 결핍-1부터 결핍-5까지 순서대로 걸리는 규칙을 모두 찾는다. 순위는 결핍-1 > 결핍-2 > 결핍-3 > 결핍-4 > 결핍-5다.
+2. 걸린 규칙마다 값 하나를 정한다. 결핍-4의 값은 세력으로 정한다: 정부와 아크는 `fuel`, 자유도시는 `cells`다. 나머지 규칙은 표의 값 하나뿐이다.
+3. 같은 값이 두 번 나오면 순위가 높은 쪽 하나만 남긴다.
+4. 순위가 가장 높은 값이 주 투입물이고 앞에 쓴다. 두 번째 값이 있으면 쉼표 뒤에 쓴다.
+5. 값이 하나뿐이고 `category`가 `drone` 또는 `war-machine`이면 `parts`를 두 번째 값으로 붙인다. 기계는 예비 부품 없이 굴러가지 않기 때문이다.
+6. 값이 셋 이상이면 순위 상위 둘만 쓴다. 이렇게 하면 결핍-1~결핍-3 가운데 걸린 값은 둘 넘게 걸리지 않는 한 빠지지 않는다. 결핍-1과 결핍-2가 함께 걸리는 병종(드론이면서 이식 분대)은 만들지 않는다.
+
+예: 포를 단 정부 장갑차는 결핍-3(`ammo`)과 결핍-4(`fuel`)에 걸려 `ammo,fuel`이다. 포가 없는 정부 장갑차는 `fuel,parts`다. 자유도시 장갑 수레에 포가 있으면 `ammo,cells`, 포가 없으면 `cells,parts`다. 자유도시 드론은 결핍-1(`cells`)만 걸리므로 5번에 따라 `cells,parts`다. 어느 규칙에도 걸리지 않는 병종(예: 손으로 미는 궤도 수레)은 언제나 NULL이다. 아크 세례 사격병은 결핍-2(`implants`)와 결핍-3(`ammo`)에 걸려 `implants,ammo`다. 5번 과제의 빌드 검사는 결핍-1과 결핍-2를 검사한다.
 
 ### 6.3 놀이에서 결핍이 느껴지는 방식
 
@@ -279,14 +319,14 @@
 - **전투 소모.** 그런 분대가 전투에 나가면(자동 전투와 수동 전투가 같다) 주 투입물 1을 더 쓴다. 쏜 탄수는 전투 뒤 비축에서 채운다. 분대 하나를 채우는 데 `ammo` 1이 든다.
 - **떨어졌을 때.** 비축이 0이면 다음 효과가 생긴다.
 
-| 투입물 | 비축 0의 효과 |
-|---|---|
-| `ammo` | 다음 전투의 시작 탄수가 `ammo`의 25%(올림)다 |
-| `cells` | 드론 분대는 배치할 수 없다. 다른 분대는 `cells`에 기대는 태그 효과를 잃는다 |
-| `implants` | `baptised`, `wired-body` 분대의 근접 공격·근접 방어가 20% 줄고 리더십이 10 줄며, 인원 보충이 멈춘다 |
-| `fuel` | 엔진을 쓰는 분대는 속도가 절반이다. 엔진만으로 움직이는 전쟁 기계는 배치할 수 없다 |
-| `parts` | 기계와 드론의 체력이 전투 사이에 회복되지 않고 잃은 기체·차체를 채우지 않는다 |
-| `medicine` | 사람 분대의 인원 보충이 절반이다. 전투 뒤 부상자가 돌아오지 않는다 |
+| 투입물 | 비축 0의 효과 | TW:WH 기준 |
+|---|---|---|
+| `ammo` | 다음 전투의 시작 탄수가 `ammo`의 25%(올림)다 | 해당 없음. TW 탄약은 전투마다 다시 찬다([Ammunition](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Ammunition&prop=wikitext&format=json)). 결핍 규칙은 설계 추가다[틀] |
+| `cells` | 드론 분대는 배치할 수 없다. 다른 분대는 `cells`에 기대는 태그 효과를 잃는다 | 해당 없음. TW 대응 자원이 없다 |
+| `implants` | `baptised`, `wired-body` 분대의 근접 공격·근접 방어가 20% 줄고 리더십이 10 줄며, 인원 보충이 멈춘다 | 해당 없음. TW 대응 자원이 없다 |
+| `fuel` | 엔진을 쓰는 분대는 속도가 절반이다. 엔진만으로 움직이는 전쟁 기계는 배치할 수 없다 | 해당 없음. TW 대응 자원이 없다 |
+| `parts` | 기계와 드론의 체력이 전투 사이에 회복되지 않고 잃은 기체·차체를 채우지 않는다 | 해당 없음. TW 대응 자원이 없다 |
+| `medicine` | 사람 분대의 인원 보충이 절반이다. 전투 뒤 부상자가 돌아오지 않는다 | 해당 없음. TW 대응 자원이 없다 |
 
 - **보이는 곳.** 모집 화면과 군대 화면에 투입물 아이콘과 남은 유지 간격 수를 띄운다(화면 설계는 18번 과제). 플레이어는 정예 하나를 더 뽑을지, 비축을 아낄지 고르게 된다.
 - **세력마다 다른 병목.** 정부는 `ammo`, `fuel`을 많이 쓴다. 자유도시는 `cells`, `parts`를 많이 쓴다. 아크는 `implants`를 많이 쓴다. 9절의 정체성 표와 맞물린다.
@@ -314,7 +354,7 @@
 | `rail-borne` | 궤도 기동 | Rail-borne | 선로 위에서 속도 +30%, 선로 밖에서 속도 −50% |
 | `quiet-step` | 발소리 죽이기 | Quiet step | 움직이는 동안에도 매복 상태를 유지한다 |
 | `scout-deploy` | 선발 배치 | Scout deploy | 배치 구역 밖 앞쪽에 배치할 수 있다 |
-| `roll-call` | 호명 | Roll call | 반경 40m 안의 아군 분대 사기 +6. 지휘관 효과와 겹치지 않고 큰 쪽만 쓴다 |
+| `roll-call` | 호명 | Roll call | 반경 40m 안의 아군 분대 사기 +4. 지휘관 효과와 겹치지 않고 큰 쪽만 쓴다. +4는 TW:WH의 격려 효과 값이다([Encourage](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Encourage&prop=wikitext&format=json)). 반경 40m는 TW 숫자가 없어 [대기]다 |
 | `field-repair` | 현장 수리 | Field repair | 전투 중 가까운 아군 기계·드론의 체력을 회복한다. 잃은 기체는 되살리지 않는다. `parts`가 필요하다 |
 | `field-dressing` | 응급 처치 | Field dressing | 가까운 아군 사람 분대의 전투 뒤 사망 일부를 부상으로 바꾼다. 죽은 사람을 되살리지 않는다(GDD 구호 원칙) |
 | `breach-charge` | 문 따기 | Breach charge | 문, 방벽, 봉쇄 시설에 주는 피해 x3 |
@@ -417,33 +457,33 @@
 
 ### 10.3 분대 수 상한과 명령
 
-- **[틀][대기] 군대 하나의 분대 상한은 20칸이다.** 지휘관 호위 1칸을 포함하고, 배속 영웅 한 명(호위 포함)이 1칸을 쓴다. D3의 "토탈워랑 동일하게"를 따른 값이다. GDD `hero-squads-and-time-based-movement`의 "분대 수에 고정 상한을 두지 않는다"와 부딪히므로 소유자 확인을 기다린다(13절).
+- **[틀][대기] 군대 하나의 분대 상한은 20칸이다.** 지휘관 호위 1칸을 포함하고, 배속 영웅 한 명(호위 포함)이 1칸을 쓴다. D3의 "토탈워랑 동일하게"와 2026-11-12 소유자 지시("전투 기준 값은 알려진 워해머 토탈워 정보를 기준으로 로스터 잡아서 작업 합니다")를 따른 값이다. TW:WH 군대는 군주 하나가 이끄는 1~20유닛이다([Armies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Armies&prop=wikitext&format=json)). GDD `hero-squads-and-time-based-movement`의 "분대 수에 고정 상한을 두지 않는다"와 부딪히므로 소유자 확인을 기다린다(13절).
 - 명령은 GDD가 정한 네 가지다: 이동, 공격 대상, 사격, 매복. 전투 전에 배치와 진형을 정한다.
 - 근접 교전에 들어간 분대는 그 교전이 끝날 때까지 새 명령을 받지 않는다(GDD).
 - 후퇴는 분대 명령이 아니라 전투 전체 명령이다(GDD).
 - **명령 거리 제한은 없다.** 지휘관은 전장 어디에 있든 모든 분대에 즉시 명령한다. GDD SP-1.0.0 "본체가 전투 지휘관이면 지휘에 배속된 모든 전투맵 분대를 직접 조정·명령한다"와 같다.
-- **존재 반경은 있다.** [틀][대기] 지휘관 호위 분대 반경 50m 안의 아군 분대는 사기 보너스를 받는다. 기본값은 +8이다. 이것은 명령 거리가 아니라 사기 효과의 거리다.
+- **존재 반경은 있다.** [틀][대기] 지휘관 호위 분대 반경 50m 안의 아군 분대는 사기 보너스를 받는다. 기본값은 +8이다. 이것은 명령 거리가 아니라 사기 효과의 거리다. TW:WH 군주의 사기 효과는 있지만 반경과 값이 공개되지 않았다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json), [verify-task-6](../../.omo/evidence/w2v/verify-task-6.md)). 그래서 50m와 +8은 TW 숫자 없이 [대기]다.
 
 ### 10.4 사기와 패주
 
-| 상태 | 조건 [틀][대기] | 결과 |
-|---|---|---|
-| 굳건 | 현재 사기 > 기본 리더십의 25% | 명령대로 움직인다 |
-| 흔들림 | 현재 사기 ≤ 기본 리더십의 25% | 명령은 받지만 근접 공격 −10 |
-| 도주 | 현재 사기 ≤ 0 | 명령을 받지 않고 퇴로로 달아난다. 안전해지면 다시 모일 수 있다 |
-| 흩어짐 | 한 전투에서 세 번째 도주 | 다시 모이지 않는다 |
+| 상태 | 조건 [틀][대기] | 결과 | TW:WH 기준 |
+|---|---|---|---|
+| 굳건 | 현재 사기 > 기본 리더십의 25% | 명령대로 움직인다 | 해당 없음 |
+| 흔들림 | 현재 사기 ≤ 기본 리더십의 25% | 명령은 받지만 근접 공격 −10 | 흔들림 상태는 있다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json)). 25%와 −10은 TW 숫자 없음. 그래서 [대기]다 |
+| 도주 | 현재 사기 ≤ 0 | 명령을 받지 않고 퇴로로 달아난다. 안전해지면 다시 모일 수 있다 | 도주한 유닛은 안전해지면 다시 모인다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json)) |
+| 흩어짐 | 한 전투에서 네 번째로 무너질 때. 세 번 도주한 분대가 다시 무너지면 흩어진다 | 다시 모이지 않는다 | 세 번 도주한 유닛은 다음에 리더십이 무너질 때 흩어진다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json)) |
 
-- 사기를 깎는 원인은 GDD가 정한 것을 쓴다: 부상, 아군의 사망·기절·도주, 지휘관에게 일어난 일. 측후면 공격, 피로, 공포 태그(`iron-dread`)를 더한다.
-- 도주하는 분대는 반경 30m 안의 아군 분대 사기를 −5 깎는다. `ledger-levy` 분대가 도주할 때는 깎지 않는다.
-- **군대 붕괴.** 분대의 절반 이상(수 기준)이 도주, 흩어짐, 전멸 상태이면 남은 모든 분대가 사기 −15를 받고, 그 조건이 이어지는 동안 다시 모이지 못한다. 모든 분대가 도주하면 GDD의 "사기 패주"로 전투가 끝난다.
-- 수치는 모두 [대기]다. GDD는 공포 판정식과 도주 문턱을 미정으로 둔다. 19번 과제가 GDD 규칙 판본과 함께 확정한다.
+- 사기를 깎는 원인은 GDD가 정한 것을 쓴다: 부상, 아군의 사망·기절·도주, 지휘관에게 일어난 일. 측후면 공격, 피로, 공포 태그(`iron-dread`)를 더한다. 원인 목록은 TW:WH와 같다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json): 포위·측후면 공격, 돌격, 군주 전사, 공포, 피로, 피해).
+- 도주하는 분대는 반경 30m 안의 아군 분대 사기를 −5 깎는다. `ledger-levy` 분대가 도주할 때는 깎지 않는다. 도주가 이웃 사기를 깎는 것과 소모품 예외는 TW:WH에 있다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json), [Units](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Units&prop=wikitext&format=json)). 30m와 −5는 TW 숫자 없음. 그래서 [대기]다.
+- **군대 붕괴.** 분대의 절반 이상(수 기준)이 도주, 흩어짐, 전멸 상태이면 남은 모든 분대가 사기 −15를 받고, 그 조건이 이어지는 동안 다시 모이지 못한다. 모든 분대가 도주하면 GDD의 "사기 패주"로 전투가 끝난다. TW:WH에도 군대가 많이 잃으면 모두 흔들리는 단계가 있다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json)). 절반과 −15는 TW 숫자 없음. 그래서 [대기]다.
+- 숫자는 흩어짐 규칙을 빼고 모두 [대기]다. GDD는 공포 판정식과 도주 문턱을 미정으로 둔다. 19번 과제가 GDD 규칙 판본과 함께 확정한다.
 
 ### 10.5 지휘관이 죽었을 때
 
-1. **충격.** 모든 분대가 즉시 사기 −20을 받는다(거리 무관). 반경 50m 안의 분대는 −10을 더 받는다. 존재 반경 보너스가 사라진다.
+1. **충격.** 모든 분대가 즉시 사기 −20을 받는다(거리 무관). 반경 50m 안의 분대는 −10을 더 받는다. 존재 반경 보너스가 사라진다. TW:WH에서 군주 전사는 리더십을 깎고 군대를 무너뜨릴 수 있다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json), [Armies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Armies&prop=wikitext&format=json)). −20, −10, 50m는 TW 숫자 없음. 그래서 [대기]다.
 2. **연쇄 패주.** 충격으로 사기가 0 이하가 된 분대는 도주하고, 그 도주가 10.4절대로 이웃 분대 사기를 깎는다.
 3. **임시 분대장.** 지휘관 호위 분대가 남아 있으면 그 병졸 가운데 한 명이, 없으면 남은 분대 가운데 기본 리더십이 가장 높은 분대의 병졸 한 명이 임시 분대장(`TemporaryLeader`)이 된다. GDD대로 임시 분대장은 정식 지휘관과 같은 명령을 내릴 수 있지만 지휘 효과는 약하다. [틀][대기] 기본값: 존재 반경 보너스가 없다. 정식 영웅의 클래스와 캠페인 역할을 받지 않는다. 영웅 초상과 클래스 표식을 쓰지 않는다(GDD UI 계약).
-4. **배속 영웅.** [대기] 배속 영웅이 살아 있으면 임시 분대장 대신 그 영웅이 지휘를 맡는 안을 기본값으로 둔다. 존재 반경 보너스는 절반이다. GDD에 이 경우가 없으므로 소유자 확인을 기다린다.
+4. **배속 영웅.** 배속 영웅은 지휘를 넘겨받지 않는다. 지휘는 3번의 임시 분대장이 맡는다(GDD 임시 분대장 규칙). 배속 영웅은 자기 호명 효과 +4만 유지한다(`roll-call`과 같은 값, 겹치지 않고 큰 쪽만 쓴다). TW:WH에도 전투 중 영웅이 군주 자리를 넘겨받는 규칙이 없고, 새 군주는 전투 뒤에 모집한다([Armies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Armies&prop=wikitext&format=json), [Encourage](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Encourage&prop=wikitext&format=json)).
 5. 지휘관이 기절하거나 중상을 입어 전투에서 빠져도 같은 순서를 쓴다. 충격만 −10으로 줄인다.
 6. 지휘관의 생사, 부상, 구금은 인물 ID에 남긴다(RBATTLE-08, RBATTLE-09). 포획은 전투 뒤 신병 처리에서 정한다.
 
@@ -453,14 +493,14 @@
 - **결투 판정.** 결투는 GDD 개인 판정 전투로 푼다. 공격자의 무기, 방어자의 방어구, 두 사람의 전투 기술 차이, 몸 상태와 기분이 들어간다(RBATTLE-24). [대기] 인물의 무용(Prowess)을 전투 기술 입력으로 쓰는 것이 기본값이다. 계산식은 GDD에서 아직 미정이다.
 - **결투 결과가 집단 전투로 이어지는 방법.**
 
-| 결과 | 진 쪽 | 이긴 쪽 |
-|---|---|---|
-| 사망 | 지휘관이면 10.5절 전체. 배속 영웅이면 그 영웅 군대의 모든 분대 사기 −8 | 반경 50m 안의 아군 분대 사기 +10 |
-| 기절·중상 | 전투에서 빠진다. 지휘관이면 10.5절(충격 −10) | 반경 50m 안의 아군 분대 사기 +6 |
-| 물러남 | 영웅이 호위 분대 뒤로 빠지고, 그 호위 분대 사기 −10 | 변화 없음 |
+| 결과 | 진 쪽 | 이긴 쪽 | TW:WH 기준 |
+|---|---|---|---|
+| 사망 | 지휘관이면 10.5절 전체. 배속 영웅이면 그 영웅 군대의 모든 분대 사기 −8 | 반경 50m 안의 아군 분대 사기 +10 | 영웅 전사가 사기를 깎는 것은 TW에 있다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json)). −8, +10, 50m는 TW 숫자 없음. 그래서 [대기]다 |
+| 기절·중상 | 전투에서 빠진다. 지휘관이면 10.5절(충격 −10) | 반경 50m 안의 아군 분대 사기 +6 | +6, 50m는 TW 숫자 없음. 그래서 [대기]다 |
+| 물러남 | 영웅이 호위 분대 뒤로 빠지고, 그 호위 분대 사기 −10 | 변화 없음 | −10은 TW 숫자 없음. 그래서 [대기]다 |
 
 - **중복 금지.** 결투의 피해는 두 영웅에게만 적용한다. 호위 분대의 손실은 집계 판정에서만 나온다. 같은 공격을 두 채널에 넣지 않는다(GDD 중복 피해 금지).
-- **지휘 능력.** [대기] 지휘관의 군사(Martial)가 존재 반경 보너스의 크기를 정하는 안을 기본값으로 둔다: +4 + floor(군사 / 4), 최대 +12. 분대 정원 산식은 GDD가 "지휘관의 독자 기량" 입력으로 미정이라 이 문서도 정하지 않는다. 511명의 능력치 산정 방식은 Q17이다.
+- **지휘 능력.** [대기] 지휘관의 군사(Martial)가 존재 반경 보너스의 크기를 정하는 안을 기본값으로 둔다: +4 + floor(군사 / 4), 최대 +12. TW:WH 군주 사기 효과의 값이 공개되지 않아 이 식도 TW 숫자 없이 [대기]다. 분대 정원 산식은 GDD가 "지휘관의 독자 기량" 입력으로 미정이라 이 문서도 정하지 않는다. 511명의 능력치 산정 방식은 Q17이다.
 
 ## 11. 이름과 겉모습
 
@@ -521,16 +561,16 @@ GDD 아트 방향을 따른다.
 | unit_cap | NULL |
 | scarce_input | NULL |
 | squad_size | 60 |
-| hp | 10 |
+| hp | 69 |
 | melee_attack | 20 |
-| melee_defence | 28 |
-| weapon_strength | 24 |
+| melee_defence | 34 |
+| weapon_strength | 25 |
 | armour | 15 |
 | missile_damage | NULL |
 | range | NULL |
 | ammo | NULL |
-| speed | 32 |
-| leadership | 32 |
+| speed | 30 |
+| leadership | 45 |
 | attributes | ["ledger-levy","charge-breaker"] |
 | counters | ["free-city-rail-trolley-raiders"] |
 | equipment | Long spears cut from scaffold pipe, and a tin helmet; one spare pair of felt-boot liners per squad. |
@@ -558,16 +598,16 @@ GDD 아트 방향을 따른다.
 | unit_cap | NULL |
 | scarce_input | ammo |
 | squad_size | 30 |
-| hp | 11 |
-| melee_attack | 14 |
-| melee_defence | 18 |
-| weapon_strength | 16 |
+| hp | 69 |
+| melee_attack | 16 |
+| melee_defence | 17 |
+| weapon_strength | 24 |
 | armour | 18 |
-| missile_damage | 34 |
-| range | 280 |
+| missile_damage | 22 |
+| range | 145 |
 | ammo | 14 |
-| speed | 30 |
-| leadership | 42 |
+| speed | 33 |
+| leadership | 50 |
 | attributes | ["shield-line"] |
 | counters | ["arc-house-levy-hooks"] |
 | equipment | Bolt-action rifles of mixed origin and a sack for recovered brass; each rifleman draws a counted handful of rounds before battle. |
@@ -595,16 +635,16 @@ GDD 아트 방향을 따른다.
 | unit_cap | 4 |
 | scarce_input | cells,parts |
 | squad_size | 6 |
-| hp | 6 |
-| melee_attack | 1 |
-| melee_defence | 1 |
-| weapon_strength | 5 |
+| hp | 60 |
+| melee_attack | 10 |
+| melee_defence | 6 |
+| weapon_strength | 18 |
 | armour | 0 |
 | missile_damage | 120 |
-| range | 600 |
+| range | 400 |
 | ammo | 2 |
 | speed | 85 |
-| leadership | 50 |
+| leadership | 60 |
 | attributes | ["radio-linked","skilled-crew"] |
 | counters | ["government-remnant-riflemen"] |
 | equipment | Six small rotor airframes rebuilt from salvaged motors, each carrying one drop charge; the crew keeps the cells warm in padded pouches against their bodies. |
@@ -632,7 +672,7 @@ GDD 아트 방향을 따른다.
 | unit_cap | NULL |
 | scarce_input | NULL |
 | squad_size | 16 |
-| hp | 12 |
+| hp | 110 |
 | melee_attack | 30 |
 | melee_defence | 20 |
 | weapon_strength | 30 |
@@ -641,7 +681,7 @@ GDD 아트 방향을 따른다.
 | range | NULL |
 | ammo | NULL |
 | speed | 70 |
-| leadership | 45 |
+| leadership | 55 |
 | attributes | ["rail-borne","quiet-step"] |
 | counters | ["government-remnant-riflemen"] |
 | equipment | Hand-pumped rail trolleys with hooked boarding poles and short axes; the pump needs no fuel. |
@@ -669,16 +709,16 @@ GDD 아트 방향을 따른다.
 | unit_cap | NULL |
 | scarce_input | NULL |
 | squad_size | 50 |
-| hp | 10 |
+| hp | 72 |
 | melee_attack | 24 |
-| melee_defence | 22 |
+| melee_defence | 24 |
 | weapon_strength | 26 |
 | armour | 12 |
 | missile_damage | NULL |
 | range | NULL |
 | ammo | NULL |
 | speed | 34 |
-| leadership | 40 |
+| leadership | 45 |
 | attributes | ["house-bound","charge-breaker"] |
 | counters | ["free-city-rail-trolley-raiders"] |
 | equipment | Long hooked poles for pulling riders off trolleys and sleds, and a short blade; no firearms. |
@@ -706,16 +746,16 @@ GDD 아트 방향을 따른다.
 | unit_cap | 4 |
 | scarce_input | implants |
 | squad_size | 20 |
-| hp | 30 |
+| hp | 120 |
 | melee_attack | 48 |
 | melee_defence | 34 |
-| weapon_strength | 70 |
+| weapon_strength | 55 |
 | armour | 55 |
 | missile_damage | NULL |
 | range | NULL |
 | ammo | NULL |
-| speed | 38 |
-| leadership | 62 |
+| speed | 34 |
+| leadership | 70 |
 | attributes | ["baptised","plate-biter","thin-clad","iron-dread"] |
 | counters | ["government-remnant-riflemen"] |
 | equipment | Heavy breaching hammers swung by machine-replaced arms; each warrior carries a small kit of spare joints for the replaced parts. |
@@ -726,7 +766,7 @@ GDD 아트 방향을 따른다.
 
 예시의 `counters`는 상성 규칙을 보이려고 다른 세력 예시를 가리킨다. 실제 명단은 8.3절 순서를 따른다.
 
-예시 점검: 여섯 행 모두 1.2절 범위, 1.3절 인원 띠, 3.2절 리더십 띠, 5.1절 비용 띠와 유지비 비율, 5.3절 상한, 6.2절 결핍 규칙을 지킨다. 세력마다 4~5등급은 0개다.
+예시 점검: 여섯 행 모두 1.2절 범위와 역할별 사거리, 1.3절 인원 띠, 1.4절 체력·속도 띠, 3.2절 리더십 띠, 5.1절 비용 띠와 유지비 비율, 5.3절 상한, 6.2절 결핍 규칙(값과 순서)을 지킨다. 보병 체력 69는 TW:WH 1등급 창병 1인 체력이고, 소총반 145/22/14/50은 TW:WH 화약 보병(Handgunners)의 사거리·사격 피해 합계와 2등급 리더십에 맞춘 값이다. 세력마다 4~5등급은 0개다.
 
 ## 13. 소유자 대기 목록
 
@@ -743,9 +783,9 @@ GDD 아트 방향을 따른다.
 | P7 | 조재표의 직함과 자유도시 용병 이름 | Q20 | 용병은 "계약대", "계약병"으로 부른다. 금지 어휘는 쓰지 않는다 |
 | P8 | 임하준(펌프기술)과 아크 기술 병종 | Q22 | 특정 인물을 병종에 묶지 않는다 |
 | P9 | 류은비 "의료단"과 정부 의무 체인 | Q27 | 정부 의무 체인 이름을 "장부 의무소", "장부 야전 병원"으로 두고 의료단과 묶지 않는다 |
-| P10 | 군대 분대 상한 20칸 | D3와 GDD `hero-squads-and-time-based-movement`의 "고정 상한 없음"이 부딪힌다 | 20칸(지휘관 호위 포함, 배속 영웅 1칸씩). 19번 과제는 GDD 수정 제안을 함께 낸다 |
-| P11 | 사기 문턱, 존재 반경, 지휘관 사망 충격, 임시 분대장 효과 | GDD가 수치를 미정으로 둔다 | 10.4~10.5절의 값 |
-| P12 | 배속 영웅의 지휘 승계 | GDD에 없는 경우 | 배속 영웅이 지휘를 맡고 존재 반경 보너스는 절반 |
+| P10 | 군대 분대 상한 20칸 | D3, 2026-11-12 소유자 지시, GDD `hero-squads-and-time-based-movement`의 "고정 상한 없음"과 부딪힌다 | 20칸(지휘관 호위 포함, 배속 영웅 1칸씩). 숫자는 소유자 지시대로 TW:WH 군대 1~20유닛([Armies](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Armies&prop=wikitext&format=json))에서 왔다. 남은 것은 GDD와의 충돌뿐이며, 19번 과제가 GDD 수정 제안을 함께 낸다 |
+| P11 | 흔들림 문턱, 존재 반경과 값, 지휘관 사망 충격, 도주 전파, 군대 붕괴 문턱, 결투 결과 사기, 호명 반경, `iron-dread` 값 | GDD가 수치를 미정으로 둔다. TW:WH도 이 숫자를 공개하지 않는다([Leadership](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Leadership&prop=wikitext&format=json), [Encourage](https://totalwarwarhammer.fandom.com/api.php?action=parse&page=Encourage&prop=wikitext&format=json), [verify-task-6](../../.omo/evidence/w2v/verify-task-6.md)) | 10.3~10.6절과 7절의 값. TW 출처가 없으므로 [대기]로 둔다. 흩어짐(네 번째 붕괴)과 호명 +4는 TW 값을 따랐으므로 이 목록에서 뺐다 |
+| P12 | 배속 영웅의 지휘 승계 | 이전 기본값(영웅이 지휘를 맡음)은 TW:WH와 맞지 않아 없앴다 | 승계하지 않는다. 지휘는 GDD 임시 분대장이 맡고 배속 영웅은 자기 +4만 유지한다(10.5절 4번). 이 항목은 이제 [틀]이며, 소유자가 다른 규칙을 원할 때만 다시 연다 |
 | P13 | 비용 단위와 유지 간격 이름 | 조사 B 6절(화폐 단위 제안) | 이름 없는 "비용" 숫자. 간격은 18·19번 과제가 정한다 |
 | P14 | 공작령 본역 | 바이블에 없음 | 구 안에서 `degree`가 가장 큰 역, 같으면 `sort`가 작은 역 |
 | P15 | 교주 호위청의 위치 | Q12와 겹칠 수 있다 | 세력 전체 1곳, 위치 미지정 |
@@ -756,9 +796,9 @@ GDD 아트 방향을 따른다.
 
 - [ ] 명단 18~26개, 9.1절 범주 수를 지켰다.
 - [ ] 4~5등급 30% 이하, 5등급 1~3개(자유도시 0개).
-- [ ] 모든 숫자가 1.2절 범위, 1.3절 인원 띠, 3.2절 리더십 띠, 5.1절 비용 띠 안이다. `upkeep`은 `cost`의 20~30%다.
+- [ ] 모든 숫자가 1.2절 범위, 1.3절 인원 띠, 1.4절 체력·속도 띠, 3.2절 리더십 띠, 5.1절 비용 띠, 1.2절 역할별 사거리 안이다. `upkeep`은 `cost`의 20~30%다.
 - [ ] `missile_damage`, `range`, `ammo`는 셋이 함께 NULL이거나 함께 값이 있다. `missile` 범주는 값이 있다.
-- [ ] 5.3절 상한 규칙과 6.2절 결핍 규칙을 지켰다.
+- [ ] 5.3절 상한 규칙과 6.2절 결핍 규칙(값과 순서)을 지켰다.
 - [ ] `attributes`는 7절 id만 쓰고 조합 규칙을 지켰다. `counters`는 1~4개이고 모두 있는 `id`다.
 - [ ] `recruit_building`은 4절 표의 이름과 글자까지 같다.
 - [ ] 이름과 문구에 금지 어휘가 0건이다(`node scripts/pages/scan-terms.mjs` 기준 패턴).
