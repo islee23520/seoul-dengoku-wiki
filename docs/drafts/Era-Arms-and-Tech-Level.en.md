@@ -62,7 +62,7 @@ In 2026 there were licensing rules for guns and crossbows, military arms, and ra
 - The firearms law covered the making, sale, lending, carriage, holding and use of guns, swords, explosives, sprays, stun devices and crossbows. It wasn't a country where civilians carried guns every day. ([National Law Information Center](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98), read 2026-09-12)
 - Public sources describe the standard assault rifle of the armed forces. How many reached whom by 2026 isn't in those sources. (encyclopedia entry on the service rifle, read 2026-09-12)
 - A 2015 government briefing said older 5.56 mm rifles would replace carbines for reserve training. The issue is confirmed; quantities and depots aren't. ([Policy briefing](https://www.korea.kr/briefing/policyBriefingView.do?newsId=148791733), read 2026-09-20)
-- A domestic arms maker's public page shows the national small arms line existed. A product page doesn't say how many were issued. (read 2026-09-20)
+- A domestic arms maker's public page shows the national small arms line existed. A product page doesn't say how many were issued. (Defence industry product catalogue, read 2026-09-20)
 - The police equipment rules and the issued pistol models of 2026 haven't survived.
 
 ## Related Pages
