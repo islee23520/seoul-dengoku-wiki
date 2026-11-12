@@ -34,13 +34,13 @@ South of the river is **off the ledger**: "off the ledger" in official writing, 
 
 ### 3.1 The National Assembly
 
-Basis: Bible 2.1 (an Assembly Member for each district, single chamber, no upper house); 01-core 7.1; 8.1 (one seat per district, T02-67); 2.4 (handed-down seat, T02-3).
+Basis: Bible 2.1 (an Assembly Member for each district, single chamber); 01-core 7.1; 8.1 (one seat per district, T02-67); 2.4 (handed-down seat, T02-3).
 
-- **[Approved]** There is one National Assembly. Like the National Assembly of the Republic of Korea it is single-chamber; there is no upper house and no upper-house member. Each district's Assembly Member holds that district's duchy.
+- **[Approved]** There is one National Assembly. Like the National Assembly of the Republic of Korea it is single-chamber; the only members are Assembly Members. Each district's Assembly Member holds that district's duchy.
 - There are fourteen Assembly Members, one seat per district (01-core 8.1). The National Assembly Building on Yeouido stands empty across the river, and the Assembly sits in an old meeting room below the main building of the Government Complex Seoul, a room joined by tunnel to Gwanghwamun station (provisional T05-2).
 - Elections are held every four years. Carrying on the Republic of Korea's numbering of Assemblies, the Assembly of 2126 is the **47th National Assembly**, opened in 2124. Registered adults stamp a ballot at the dong centre. Each of the two parties puts up one candidate, but the winner is known before the vote: the person the district's Member house backed (provisional T05-3).
 - A seat is handed down like this. When an Assembly Member dies or steps down, the head of household of that house names an heir, and the heir becomes the candidate at the next election. People call this "handing down the seat" (01-core T02-3). Until the election the heir uses the district office's seal as "acting Member" (provisional T05-4).
-- The Assembly does three things. It passes statutes with fourteen seals (7.1), it acclaims the President for Life (3.2), and it ratifies promises made across the river, such as the water supply contract (section 15). There is no budget. The Government's budget is the ration ledger itself (section 9).
+- The Assembly does two things. It passes statutes with fourteen seals (7.1), and it acclaims the President for Life (3.2). Promises made across the river, such as the water supply contract, are not ratified by the Assembly; a ministry makes them as annexes (section 15). There is no budget. The Government's budget is the ration ledger itself (section 9).
 
 ### 3.2 Acclamation and the President for Life
 
@@ -61,7 +61,7 @@ Basis: Bible 2.1 (a multi-party system on paper; in fact the OMO Party and the C
 - The lines of 01-core are used as they are. The **OMO Party** is the party of contracts: the ledger itself survives only by contracting across the river for skills and parts. The **Claw Party** is the party of the ledger: the north must feed itself from its own land and hands, and mixing with what is off the ledger will bring the ledger down.
 - The party register still lists eleven parties. Nine have no members or only a membership roll left. Striking them off needs an Assembly vote, and nobody puts the motion (provisional T05-9).
 - A party is a name that binds houses. A Member house chooses a party, and the registered of that district follow the Member house's party. The party leader is one of that party's Assembly Members; the party's working business is run by a party secretary general who is not an Assembly Member (provisional T05-10).
-- The seats in 2126 are OMO Party 6, Claw Party 8. The river districts are mostly OMO Party: they hold the bridges, tunnels and intakes, so they are hurt first when a contract breaks. The mountain and inland districts are mostly Claw Party (provisional T05-11).
+- The seats in 2126 are OMO Party 6, Claw Party 8. The four districts that touch the Han (Mapo, Yongsan, Seongdong, Gwangjin) are all OMO Party: they hold the bridges, tunnels and intakes, so they are hurt first when a contract breaks. Jung-gu and Seodaemun-gu, which do not touch the river, are OMO Party too: Jung-gu lives off the Seoul Station licensed traders' post and the Hoehyeon market, Seodaemun-gu off goods from across the river that come through the Gongdeok market in Mapo. The eight mountain and inland districts are Claw Party (provisional T05-11).
 
 ### 3.4 The fourteen seats
 
@@ -69,8 +69,8 @@ Basis: Bible 2.4 (14 Government districts; duchy holder title Assembly Member); 
 
 | District | Party | Quota-table stage | What this district holds |
 |---|---|---|---|
-| Jongno-gu | Claw Party | Key | Government Complex Seoul (the ministries and the Assembly meeting room), Gwanghwamun station. The head of the Government |
-| Jung-gu | OMO Party | Key | Seoul Station (the largest station), the Bank of Korea, Sicheong, the markets at Dongdaemun History & Culture Park and Hoehyeon |
+| Jongno-gu | Claw Party | S1 | Government Complex Seoul (the ministries and the Assembly meeting room), Gwanghwamun station. The head of the Government |
+| Jung-gu | OMO Party | S1 | Seoul Station (the largest station), the Bank of Korea, Sicheong, the markets at Dongdaemun History & Culture Park and Hoehyeon |
 | Yongsan-gu | OMO Party | Key | Ministry of National Defense and Capital Defense Command (Samgakji), the north ends of the Yongsan-Noryangjin and Ichon-Dongjak bridges |
 | Mapo-gu | OMO Party | Key | the Mapo-Yeouinaru under-river tunnel, the north ends of the Hapjeong-Dangsan and Digital Media City-Magoknaru bridges, the Gongdeok market |
 | Seongdong-gu | OMO Party | Key | the Ttukdo intake, the Seoulsup-Apgujeong Rodeo under-river tunnel, the north end of the Oksu-Apgujeong bridge, Wangsimni |
@@ -86,13 +86,13 @@ Basis: Bible 2.4 (14 Government districts; duchy holder title Assembly Member); 
 
 (provisional T05-11, T05-12)
 
-The quota-table stage is the person stage used in section 16. The Assembly Members of the five river districts and of Jongno are Key because the third water supply contract hangs on the seals of these six seats (section 15) (provisional T05-12).
+The quota-table stage is the person stage used in section 16. The Assembly Members of the four districts that touch the Han (Mapo, Yongsan, Seongdong, Gwangjin) are Key because the annexes of the third water supply contract hang on the seals of these four seats (section 15): the bridges, tunnels and intakes are all in these four districts. The Assembly Members of Jongno and Jung are S1; the Key slots of those two districts are used by people of the national institutions (16.3) (provisional T05-12).
 
 ## 4. Ministries and national institutions
 
 Basis: Bible 2.1 (ministries of the three branches on paper; Republic of Korea ministries); 01-core 7.1 "What continues from the Republic of Korea" (the ministries at the Gwanghwamun complex became offices for rationing and requisition); 5.6.
 
-The ministries of the Government Complex Seoul kept their names and seals. What they do is far narrower than before the Great Blackout, and almost all of it concerns the ledger and rations. The places that actually work are six ministries and the Korea Forest Service at the Government Complex Seoul, plus five other national institutions. The ministry names are those of the Republic of Korea at the time of the Great Blackout (provisional T05-13).
+The ministries of the Government Complex Seoul kept their names and seals. What they do is far narrower than before the Great Blackout, and almost all of it concerns the ledger and rations. The places that actually work are six ministries and the Korea Forest Service at the Government Complex Seoul, plus five other national institutions. The ministry names are those of the Republic of Korea at the time of the Great Blackout. At the Great Blackout most of these ministries had their headquarters outside Seoul: the Ministry of the Interior and Safety, the Ministry of Land, Infrastructure and Transport, the Ministry of Agriculture, Food and Rural Affairs, the Ministry of Health and Welfare and the Ministry of Climate, Energy and Environment in Sejong, the Ministry of Justice in Gwacheon, the Korea Forest Service in Daejeon. When the edge of the outside machines cut those cities off from Seoul, the staff left at the Government Complex Seoul inherited those ministries' names and seals (provisional T05-13).
 
 | Institution | Seat | What it does in 2126 |
 |---|---|---|
@@ -109,7 +109,7 @@ The ministries of the Government Complex Seoul kept their names and seals. What 
 | Office of the President | Government Complex Seoul | The President's signature and guard |
 | National Assembly Secretariat | Government Complex Seoul | The Assembly's records, the acclamation seal book, the party register |
 
-**Institutions that exist only on paper.** The Supreme Court, the Constitutional Court, the Prime Minister, the Ministry of Foreign Affairs and many other ministries remain on the organisation chart with their posts empty. The Government does not strike them out, because striking them out would weaken the claim that it has carried the Republic of Korea on. The Supreme Court's work is split between the Ministry of Justice and the district offices (7.2). What is left of the Ministry of Foreign Affairs' work, the promises made across the river, is done by the Ministry of Climate, Energy and Environment and the Assembly. The Government's official position is that across the river is not a country and so not a subject of foreign affairs (provisional T05-14).
+**Institutions that exist only on paper.** The Supreme Court, the Constitutional Court, the Prime Minister, the Ministry of Foreign Affairs and many other ministries remain on the organisation chart with their posts empty. The Government does not strike them out, because striking them out would weaken the claim that it has carried the Republic of Korea on. The Supreme Court's work is split between the Ministry of Justice and the district offices (7.2). What is left of the Ministry of Foreign Affairs' work, the promises made across the river, is made by the Ministry of Climate, Energy and Environment as annexes (section 15). The Government's official position is that across the river is not a country and so not a subject of foreign affairs (provisional T05-14).
 
 Ministers and the Forest Service head are appointed by the President, but those posts mostly go to people of Member houses. Sharing the seven minister and head posts at the complex and the defence minister's post among the fourteen houses is what an acclamation is bargained over (provisional T05-15).
 
@@ -225,10 +225,10 @@ Strata are assessed by household. The occupation of the head of household is the
 | Stratum | Who | Share of population | What the ledger gives | What the ledger takes |
 |---|---|---|---|---|
 | Member houses | Assembly Members and their households, close kin households; the fourteen houses and the President's house | about 0.5% | Sleeping places on deep levels, their own stores outside the ration grades, wood fires, ministers' posts | Their seals for the President, the district's requisition share |
-| Civil-servant households | Dong Chiefs, clerks, stationmasters, police officers, ministry staff | about 8% | Sleeping places on the inner platform, office rations, the right to sit the examination | An accurate ledger; responsibility when the ledger is wrong |
-| Army households | Households of career soldiers (NCOs and officers) | about 7% | Army rations, barracks on deep levels | Their sons' and daughters' career service |
+| Civil-servant households | Dong Chiefs, clerks, stationmasters, police officers, ministry staff | about 8% | Sleeping places on the deep-tunnel level, office rations, the right to sit the examination | An accurate ledger; responsibility when the ledger is wrong |
+| Army households | Households of career soldiers (NCOs and officers) | about 7% | Army rations, barracks on the inner platform | Their sons' and daughters' career service |
 | Skilled households | Pump crews, heat-pump maintenance, fibre-sugar vat keepers, electricians, menders | about 18% | Reduced labour duty, alternative service instead of conscription | Shift work; they cannot leave their occupation |
-| Labour households | Entrance workers, salvage and fibre gatherers, light-field workers, porters, fellers | about 66% | The largest meal share, one sleeping place | Labour duty, conscription, the coldest work |
+| Labour households | Entrance workers, salvage and fibre gatherers, light-field workers, porters, fellers | about 66.5% | The largest meal share, one sleeping place | Labour duty, conscription, the coldest work |
 
 People off the ledger are not in this table. Struck-off and whereabouts-unknown people live north of the river too. The Government does not count them. People say there are several thousand in cold surface-level stations and abandoned tunnels (provisional T05-32).
 
@@ -406,9 +406,11 @@ The Government's army is the **national army**: the Republic of Korea Armed Forc
 | Body | Seat | What it does |
 |---|---|---|
 | Ministry of National Defense | Samgakji, Yongsan-gu | Registration of conscripts and reservists, ammunition registration, army rations. The minister is appointed by the President |
-| Capital Defense Command | Samgakji, Yongsan-gu, in the same building as the Ministry | The Government's field army. Has direct units guarding the three under-river tunnel checkpoints and the north ends of the bridges. The commander is appointed by the President |
+| Capital Defense Command | Samgakji, Yongsan-gu, in the same building as the Ministry | The Government's field army. Its headquarters at the Great Blackout was at Namtaeryeong across the river; when the river froze it moved to the Ministry building at Samgakji. Has direct units guarding the three under-river tunnel checkpoints and the north ends of the bridges. The commander is appointed by the President |
 | District units | Each district office | Raised by the Assembly Member from the district's conscripts and reservists. The commander is recommended by the Assembly Member and appointed by the Ministry. Guard stations, entrances and watch posts on the mountain edge |
 | Korea Military Academy | Hwarangdae, Nowon-gu | Trains army-household children as officers |
+
+In the quota table (16.2), the Capital Defense Command's direct troops who guard the under-river tunnel checkpoints and the bridge ends are counted in the "army (...)" entry of the district where the facility stands. The "Ministry of National Defense and Capital Defense Command" entry in the Yongsan-gu row is the people at the Samgakji building (provisional T05-58).
 
 ### 14.2 Signed command: one commander holds every squad
 
@@ -449,7 +451,7 @@ Bible 2.5 decided that the deliberately empty slots of each faction's roster are
 
 Basis: Bible 1, row 11 (winter 2126, before the third water supply contract); 01-core 5.2 (the water supply contract, a thirty-year term, the Arc sits for the first time at the third, T02-33 and T02-34), 7.1 (the two parties split at every water supply contract), 7.4; item 5 of section 11 (chapter 04 writes the Government's negotiating position).
 
-To the Government the water supply contract is a question of the ledger before it is a question of water. The Government does not record across the river as a country. Yet a contract is the exchange of seals. Since the first contract the Government has resolved this contradiction this way: the Assembly does not ratify the body of the contract; the Ministry of Climate, Energy and Environment stamps a "maintenance service annex". The cities across the river are recorded as work crews contracted for the service. In the ledger they are not countries but workers (provisional T05-67).
+To the Government the water supply contract is a question of the ledger before it is a question of water. The Government does not record across the river as a country. Yet a contract is the exchange of seals. Since the first contract the Government has resolved this contradiction this way: the Assembly does not ratify the contract. The Ministry of Climate, Energy and Environment makes a "maintenance service annex" for each facility, the Assembly Member of the district where the facility stands stamps it too, and the President signs. The cities across the river are recorded as work crews contracted for the service. In the ledger they are not countries but workers (provisional T05-67).
 
 **What the Government wants** (provisional T05-68).
 
@@ -461,9 +463,9 @@ To the Government the water supply contract is a question of the ledger before i
 
 **The Arc sits for the first time.** At the third contract the Arc, which holds the Jamsil weir power and the Amsa intake, takes a seat (01-core 5.2). The two parties split here (provisional T05-70).
 
-- The **OMO Party** wants an annex with the Arc too. The north-end turbines of the weir are in Gwangjin, so even half the power has to be run together. The Assembly Members of the five river districts are on this side.
+- The **OMO Party** wants an annex with the Arc too. The north-end turbines of the weir are in Gwangjin, so even half the power has to be run together. The Assembly Members of the four districts that touch the Han and of Jung-gu and Seodaemun-gu, that is the six OMO Party Members, are on this side. Seodaemun-gu does not touch the river, but it is the first district to go hungry if goods from across the river stop coming through the Gongdeok market, so it stands here.
 - The **Claw Party** wants not even an annex with the Arc. If the ledger stamps a seal for an off-the-ledger body, ledger soldiers will read it as the ledger accepting baptism. The Assembly Members of the eight inland districts are on this side.
-- The Claw Party has more seats, but the bridges, tunnels and intakes the contract rests on are all in OMO Party districts. Ratifying the contract does not need all fourteen seals, because it is an annex and not a statute. So the third contract turns into a fight over whether the Gwangjin Assembly Member can stamp the weir's north-end annex alone.
+- The Claw Party has more seats, but the bridges, tunnels and intakes the contract rests on are all in OMO Party districts. An annex is not a statute, so it does not go through an Assembly vote. The Claw Party's only way to block an annex is the President's signature. So the third contract turns into a fight over whether the President signs once the Gwangjin Assembly Member has stamped the weir's north-end annex. A President acclaimed by fourteen seals loses half the Members the next day whichever side the President takes.
 
 ## 16. Where the 504 sit: role-quota table by district
 
@@ -473,26 +475,26 @@ Basis: Bible 2.1, 2.4 (14 Government districts), section 6 (named-person excepti
 
 - The Government's people are the 504 with faction_id government in `050-wiki-people.sql`. Their current stage distribution is Key 9, S1 44, S2 105, S3 54, S4 292. This table keeps those stage totals, so that task 17 can give everyone a place without changing anyone's stage (provisional T05-71).
 - The current data carries almost no usable district. Fewer than ten of the 504 have a district recorded; the rest carry retired old-polity numbers or just "government". So the district counts are not old places moved over; they were built anew. All roles were built anew too.
-- The district counts were built from three parts. (1) A base of fourteen per district (Assembly Member, Member house, district office, Dong Chief, Stationmaster, dong centre, police, army, skilled work and labour, market, health, dependants). (2) A share proportional to district population. District population is the 152 stations in map_station with Government surface control and a line, each multiplied by the midpoint of its 01-core 4.3 station class (one line 600, two lines 2,300, three or more lines 4,000), scaled to the Government's 160,000. (3) Additions for the national institutions (Jongno, Jung, Yongsan) and the river border units (Mapo, Seongdong, Gwangjin) (provisional T05-72).
-- The 152 stations exclude four map_station entries with no lines (two monorail platforms, one hotel-named entry, and Sinchon (underground)). The "157 Government stations" of 01-core 4.3 is counted on a different basis; this table does not change it.
+- The district counts were built from three parts. (1) A base of fourteen per district (Assembly Member, Member house, district office, Dong Chief, Stationmaster, dong centre, police, army, skilled work and labour, market, health, dependants). (2) A share proportional to district population. District population is the 153 stations in map_station with Government surface control and a line, each multiplied by the midpoint of its 01-core 4.3 station-class range (small station 400-800: 600; interchange 1,500-3,200: 2,350; large interchange complex 3,000-5,000: 4,000), scaled to the Government's 160,000. One-line stations were counted as small stations, two-line stations as interchanges, stations with three or more lines as large complexes. (3) Additions for the national institutions (Jongno, Jung, Yongsan) and the river border units (Mapo, Seongdong, Gwangjin). District population is the ground the table was built on; the counts are not exactly proportional to it (provisional T05-72).
+- map_station has 157 entries under Government surface control; that is the "157 Government stations" of 01-core 4.3. Of these, four entries with no lines (two monorail platforms, one hotel-named entry, and Sinchon (underground)) were not counted as stations people live in. So this table has 153 stations.
 
 | District | Stations (with lines) | Estimated population |
 |---|---|---|
 | Jongno-gu | 13 | about 15,900 |
 | Jung-gu | 14 | about 20,900 |
 | Yongsan-gu | 12 | about 12,400 |
-| Mapo-gu | 13 | about 17,400 |
+| Mapo-gu | 13 | about 17,200 |
 | Seongdong-gu | 11 | about 10,300 |
-| Gwangjin-gu | 8 | about 7,200 |
-| Dongdaemun-gu | 9 | about 10,800 |
+| Gwangjin-gu | 9 | about 7,800 |
+| Dongdaemun-gu | 9 | about 10,600 |
 | Jungnang-gu | 10 | about 12,800 |
-| Seongbuk-gu | 13 | about 12,900 |
+| Seongbuk-gu | 13 | about 12,800 |
 | Seodaemun-gu | 7 | about 5,200 |
-| Eunpyeong-gu | 11 | about 10,300 |
+| Eunpyeong-gu | 11 | about 10,200 |
 | Gangbuk-gu | 11 | about 5,800 |
 | Dobong-gu | 6 | about 6,200 |
 | Nowon-gu | 14 | about 11,900 |
-| **Total** | **152** | **about 160,000** |
+| **Total** | **153** | **about 160,000** |
 
 (provisional T05-72)
 
@@ -502,8 +504,8 @@ People is the number of persons living (registered) in the district. The stage c
 
 | District | People | Key | S1 | S2 | S3 | S4 | Title and occupation mix |
 |---|---|---|---|---|---|---|---|
-| Jongno-gu | 67 | 2 | 13 | 16 | 8 | 28 | Office of the President (President for Life, chief of staff, secretaries, guards) 7; National Assembly (Secretary General of the Assembly, the two party secretaries general, Assembly clerks) 6; six ministries and the Korea Forest Service at the Government Complex Seoul (ministers, the Forest Service head, vice-ministers, ministry clerks) 18; Assembly Member 1; Member's house 3; district office 3; Dong Chief 2; Stationmaster 3; dong centre clerk 4; police officer 2; army 5; skilled work and labour 6; market trader 5; health 1; dependant 1 |
-| Jung-gu | 57 | 2 | 4 | 11 | 7 | 33 | National Intelligence Service (Director, staff) 5; Bank of Korea (Governor, token printers) 6; Seoul Station stationmaster's office 4; Assembly Member 1; Member's house 3; district office 3; Dong Chief 2; Stationmaster 3; dong centre clerk 5; police officer 2; army 6; skilled work and labour 9; market trader 6; health 1; dependant 1 |
+| Jongno-gu | 67 | 3 | 13 | 15 | 8 | 28 | Office of the President (President for Life, chief of staff, secretaries, guards) 7; National Assembly (Secretary General of the Assembly, the two party secretaries general, Assembly clerks) 6; six ministries and the Korea Forest Service at the Government Complex Seoul (ministers, the Forest Service head, vice-ministers, ministry clerks) 18; Assembly Member 1; Member's house 3; district office 3; Dong Chief 2; Stationmaster 3; dong centre clerk 4; police officer 2; army 5; skilled work and labour 6; market trader 5; health 1; dependant 1 |
+| Jung-gu | 57 | 1 | 4 | 12 | 7 | 33 | National Intelligence Service (Director, staff) 5; Bank of Korea (Governor, token printers) 6; Seoul Station stationmaster's office 4; Assembly Member 1; Member's house 3; district office 3; Dong Chief 2; Stationmaster 3; dong centre clerk 5; police officer 2; army 6; skilled work and labour 9; market trader 6; health 1; dependant 1 |
 | Yongsan-gu | 41 | 2 | 3 | 9 | 4 | 23 | Ministry of National Defense and Capital Defense Command (minister, commander, staff, direct troops) 9; Assembly Member 1; Member's house 3; district office 2; Dong Chief 1; Stationmaster 2; dong centre clerk 2; police officer 1; army (Ichon and Yongsan bridge ends) 10; skilled work and labour 6; market trader 2; health 1; dependant 1 |
 | Mapo-gu | 45 | 1 | 2 | 9 | 5 | 28 | Assembly Member 1; Member's house 3; district office 3; Dong Chief 2; Stationmaster 2; dong centre clerk 3; police officer 2; army (Mapo tunnel checkpoint, Hapjeong and Digital Media City bridge ends) 11; skilled work and labour 9; market trader 5; health 2; dependant 2 |
 | Seongdong-gu | 33 | 1 | 2 | 6 | 4 | 20 | Assembly Member 1; Member's house 3; district office 2; Dong Chief 1; Stationmaster 2; dong centre clerk 2; police officer 1; army (Seoulsup tunnel checkpoint, Oksu bridge end) 6; skilled work and labour (Ttukdo intake) 8; market trader 4; health 1; dependant 2 |
@@ -528,11 +530,12 @@ How each role of the quota table splits into stages is as follows. Task 17 split
 | Role | Stage |
 |---|---|
 | President for Life | Key |
-| Assembly Member | Key in Jongno, Jung, Yongsan, Mapo, Seongdong, Gwangjin; S1 in the other eight districts |
-| Commander of the Capital Defense Command, Director of the National Intelligence Service | Key |
+| Assembly Member | Key in the four districts that touch the Han (Mapo, Yongsan, Seongdong, Gwangjin); S1 in the other ten districts |
+| Commander of the Capital Defense Command (Yongsan), Director of the National Intelligence Service (Jung) | Key |
+| Copyist of the master resident register at the Ministry of the Interior and Safety, head of the medical corps of the Ministry of Health and Welfare (both Jongno, in the Government Complex Seoul ministries slot) | Key |
 | Ministers (the six ministries at the complex and National Defense), Korea Forest Service head, Governor of the Bank of Korea, presidential chief of staff, Secretary General of the Assembly, the two party secretaries general, Seoul Station stationmaster | S1 |
 | Member house | One heir S1. One spouse or kin S2 (none in Gangbuk and Dobong). One house child S4 |
-| District office | One district office chief: S1 in the six districts whose Assembly Member is Key, S2 elsewhere. District office clerks S3 or S4 |
+| District office | One district office chief: S1 in the four districts whose Assembly Member is Key, S2 elsewhere. District office clerks S3 or S4 |
 | Dong Chief, Stationmaster | S2 |
 | Vice-ministers, ministry directors, senior staff of the Intelligence Service and the Bank of Korea, presidential secretaries | S2 |
 | District unit commanders, Capital Defense Command staff | S2 |
@@ -547,8 +550,8 @@ People waiting on the owner's answer are placed at that question's default. If t
 |---|---|---|
 | Yun Seo-rin (person-0145) | Jongno-gu, President for Life (Key) | Q28, default yes |
 | Oh Hae-rin (person-0195) | Jung-gu, Director of the National Intelligence Service (Key); title "원장" kept | Q7, default yes |
-| Baek On (person-0246) | Jongno-gu, copyist of the master resident register at the Ministry of the Interior and Safety; the old religious post is removed | Q26 |
-| Ryu Eunbi (person-0323) | Jongno-gu, head of the medical corps of the Ministry of Health and Welfare | Q27 |
+| Baek On (person-0246) | Jongno-gu, copyist of the master resident register at the Ministry of the Interior and Safety (Key); the old religious post is removed | Q26 |
+| Ryu Eunbi (person-0323) | Jongno-gu, head of the medical corps of the Ministry of Health and Welfare (Key) | Q27 |
 | Go Seojun (person-0349) | Candidate holder of the duchy of his base district, that is, candidate for that district's Assembly seat; if that district's Assembly Member is Key, he uses the Key slot | Q29 |
 | Sin Jong-mok (person-1009), Sin Jun (person-1010) | The Gangnam-gu row (16.2) | Q30, Q8 |
 
@@ -581,9 +584,11 @@ This chapter changed no 01-core decision. The following are places where it deci
 | 8.1 ladder (Stationmaster, Dong Chief, Assembly Member, National Assembly, President for Life) | Posts outside the ladder: district office chief, minister, Secretary General of the Assembly, party secretary general. They hold no land, so "no separate tier between district and dong" (T02-67) stands | T05-10, T05-15, T05-21 |
 | 7.1 "the district office is the office of the Assembly Member's house" | The district office chief's post and the signing line | T05-21, T05-24 |
 | 3.7 "the winter stopped when the ledger was brought within quota" | Station quotas, birth reports, and moving-in orders when a station is over quota | T05-19 |
+| 2.4 "leaving one's registered station means being struck off" (T02-4) | A thirty-day grace (whereabouts unknown), and the moving-in report with three seals as the lawful way to move | T05-18, T05-20 |
 | 5.3 "the ledger and old official papers are not eaten" | The taboo became law (a gravest offence). Sealed papers are delivered separately. Bodies and the clothes of the dead are not eaten either | T05-30, T05-41, T05-57 |
 | 5.5 "funerals are decided by chapters 04-06" | The Government's death strike-off, snow burial fields, the 4.19 Democratic Cemetery site | T05-55, T05-56 |
 | 7.1 OMO Party and Claw Party lines (T02-50) | Seats 6:8 and their assignment by district; the two parties' positions at the third contract | T05-11, T05-70 |
+| 7.1 "the two parties split at every water supply contract" | The Assembly does not ratify water supply contracts: a ministry annex per facility, the seal of that district's Assembly Member, the President's signature | T05-67 |
 
 ## 19. What is handed to later chapters
 
