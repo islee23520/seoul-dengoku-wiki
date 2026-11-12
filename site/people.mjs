@@ -126,7 +126,7 @@ export function personPage({ p, d, dKo, ko, g, P, stateRow, factionName, clan })
   if (d.openingTitles?.length) out.push(`## ${S.titles}\n\n${d.openingTitles.map((t) => `- **${cell(t.name)}** (${cell(t.rank)})${t.basis ? ` — ${cell(t.basis)}` : ''}`).join('\n')}\n`);
   for (const grp of d.retinueGroups ?? []) out.push(`## ${cell(grp.name)}\n\n${grp.count} · ${(grp.duties ?? []).map(cell).join(' · ')}\n`);
   if (d.confirmedHoldings?.length) out.push(`## ${S.holdings}\n\n${d.confirmedHoldings.map((h) => `### ${cell(typeof h.name === 'object' ? (h.name[ko ? 'ko' : 'en'] ?? h.name.ko) : h.name)}\n\n${h.stationRef ? `${cell(h.stationRef.stationName)}\n\n` : ''}${(h.adminRefs ?? []).length ? `${h.adminRefs.map((r) => `- ${cell(r.name)}`).join('\n')}\n` : ''}${h.facilityRef ? `\n${cell(h.facilityRef.stationName)} · ${cell(h.facilityRef.layerName)}\n` : ''}`).join('\n')}`);
-  if (d.subordinateHoldings?.length) out.push(`## ${S.subHoldings}\n\n${d.subordinateHoldings.map((h) => `### ${cell(h.name)}\n\n${cell(h.holderName ?? '')}\n`).join('\n')}`);
+  if (d.subordinateHoldings?.length) out.push(`## ${S.subHoldings}\n\n${d.subordinateHoldings.map((h) => `### ${cell(typeof h.name === 'object' ? (h.name[ko ? 'ko' : 'en'] ?? h.name.ko) : h.name)}\n\n${cell(h.holderName ?? '')}\n`).join('\n')}`);
   const src = dKo ?? d;
   const vals = axisRows(Object.entries(src.values ?? {}), AXIS.values, 0, ko);
   const des = axisRows(Object.entries(src.desire ?? {}), AXIS.desire, 0, ko);
