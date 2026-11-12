@@ -32,7 +32,7 @@ There is one National Assembly. Like the Republic of Korea's, it has a single ch
 
 The National Assembly building at Yeouido stands empty across the river. The Assembly meets in an old meeting room beneath the main building of the Government Complex Seoul, a room joined to Gwanghwamun station by tunnel. Elections are held every four years, and the session numbering of the Republic's National Assembly carries on, so the Assembly of 2126 is the **47th National Assembly**, opened in 2124. Registered adults stamp their ballots at the dong community centre. Each of the two parties puts up a candidate, but the winner is decided before the vote: whoever the district's Assembly Member house has backed.
 
-The National Assembly does two things. It passes laws with fourteen seals, and it acclaims the President for Life. Promises made with across the river are not ratified by the Assembly; the ministries make them as annexes. There is no budget. The Government's budget is the ration ledger itself.
+The National Assembly does two things. It passes laws with fourteen seals, and it acclaims the President for Life. Agreements with those across the river are not ratified by the Assembly; the ministries make them as annexes. There is no budget. The Government's budget is the ration ledger itself.
 
 <a id="acclamation"></a>
 ### Acclamation and the President for Life
@@ -52,7 +52,7 @@ A new acclamation opens only when the President dies, so through the long years 
 
 On paper there are many parties. The party register still lists eleven. Nine of them have not a single member, or only a membership list. Removing a registration needs a vote of the National Assembly, and nobody tables the motion. In practice there are two parties.
 
-- The **OMO Party** is the party of contracts. It holds that the ledger survives only by contracting with across the river to bring in skills and parts.
+- The **OMO Party** is the party of contracts. It holds that the ledger survives only by contracting across the river to bring in skills and parts.
 - The **Claw Party** is the party of the ledger. It holds that the north must provide for itself with its own land and labour, and that mixing with those off the ledger will bring the ledger down.
 
 A party is a name that binds houses. An Assembly Member house chooses its party, and the registered people of that district follow it. In 2126 the seats stand six for the OMO Party and eight for the Claw Party. The four districts on the Han (Mapo, Yongsan, Seongdong, Gwangjin) are all OMO Party: they hold the bridges, tunnels and intakes, so they are hurt first if a contract breaks. Jung-gu and Seodaemun-gu, though not on the river, are OMO Party too, living on goods from across the river through the markets of Seoul Station, Hoehyeon and Gongdeok. The eight mountain and inland districts are Claw Party.
@@ -314,8 +314,8 @@ An army has one commander, and that commander commands every squad of the army. 
 <a id="doctrine"></a>
 ### How it fights
 
-1. **It is an army that holds.** It guards the checkpoints of the three under-river tunnels, the north ends of the seven bridges, and the rim watchtowers on the northern mountains. The soldiers at the checkpoints look at the token before the rifle.
-2. **It does not cross the river as an army.** Not since the ice attack of 2079 was broken by a blizzard. If across the river must be struck, it goes by tunnel.
+1. **It is an army that holds.** It guards the checkpoints of the three under-river tunnels, the north ends of the seven bridges, and the rim watchtowers on the northern mountains. The soldiers at the checkpoints check the token before they reach for the rifle.
+2. **It does not cross the river as an army.** Not since the ice attack of 2079 was broken by a blizzard. If a blow must be struck across the river, it goes by tunnel.
 3. **It fights with numbers.** The Government has the most people in Seoul, and a broken line is filled with reservists.
 4. **Every round is registered.** Soldiers hand back a casing for every round fired, and a round not accounted for stays in the sentences column.
 5. **There are no machine-bodied soldiers.** No unit is made of soldiers with machines in their bodies. Only Capital Defense Command keeps a few drones for fighting, launched only on the commander's sign-off.

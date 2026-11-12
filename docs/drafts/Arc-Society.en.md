@@ -54,24 +54,24 @@ The Hierophant's parts are not counted. There is no known number for which parts
 ## Bloodline and the Near Houses
 
 <a id="one-person"></a>
-### The Hierophant who is a house alone
+### The Hierophant's bloodline
 
-Rule in the Arc passes through the Hierophant's bloodline and the houses close to it. But Go Ye-jin has no recorded family. The people of the Arc hold the Hierophant's bloodline today to be Go Ye-jin alone; if she has children, their blood becomes the Hierophant's line. So all four Near Houses of today came close to the Hierophant not by blood but by **side service**. Arc people say, "The Hierophant is a house all by herself."
+Rule in the Arc passes through the Hierophant's bloodline and the houses close to it. But Go Ye-jin has no recorded family. So even within the Arc there is no single answer to who counts as the Hierophant's bloodline today. Some say, "The Hierophant is a house all by herself."
 
 <a id="becoming-near-house"></a>
 ### How a house becomes a Near House
 
-| Way | Meaning | In 2126 |
-|---|---|---|
-| Blood | Belonging to the Hierophant's bloodline | None |
-| Marriage | Marrying into the Hierophant's bloodline | None |
-| Side service | Having worked at the Hierophant's side before the Arc stood: guarding the maintenance bench, bringing in a shelter, or receiving the first baptism | All four Near Houses |
+| Way | Meaning |
+|---|---|
+| Blood | Belonging to the Hierophant's bloodline |
+| Marriage | Marrying into the Hierophant's bloodline |
+| Side service | Having worked at the Hierophant's side before the Arc stood: guarding the maintenance bench, bringing in a shelter, or receiving the first baptism |
 
 The Hierophant can name a Near House and can withdraw the name. A house that loses the name gives up its district and becomes an ordinary house. From 2122 to 2126 no Near House has been withdrawn.
 
 The post of Head of the Near House passes by blood within the Near House. The Head names the next one while alive; if nobody has been named, the house gathers and chooses. But the next Head must carry at least two parts. If there is a dispute, it is heard at the Seat of the Four Near Houses and ended by the Hierophant's word.
 
-How the Hierophant after Go Ye-jin will be chosen, nobody yet knows, and the people of the Arc in 2126 know it too.
+How the Hierophant after Go Ye-jin will be chosen, nobody yet knows, and the people of the Arc in 2126 know that they do not know.
 
 <a id="blood-and-iron"></a>
 ### Blood and iron
@@ -331,7 +331,7 @@ The Arc's armies have no drones and no artillery, and few shooters. The batterie
 | Border | Where | Near House | Doctrine |
 |---|---|---|---|
 | Land border with the Free Cities | Sadang–Bangbae, Chongshin Univ. (Isu)–Naebang, Dongjak–Gubanpo | Seocho | No river, so quarrels are most frequent. Hold inside the station; do not pursue across. Dongjak is a trading partner too |
-| Under-river tunnel with the Government | Gwangnaru–Cheonho | Gangdong | A warm, sheltered road, so the board of any fight. The south mouth is held with baptised fighters |
+| Under-river tunnel with the Government | Gwangnaru–Cheonho | Gangdong | A warm, sheltered road, so it is where the fighting is decided. The south mouth is held with baptised fighters |
 | Under-river tunnel with the Government | Seoul Forest–Apgujeong Rodeo | Gangnam | The same. The Government's ledger checkpoint stands at the north mouth |
 | Bridges with the Government | Gangbyeon–Jamsillaru, Oksu–Apgujeong, Jayang–Cheongdam | Songpa, Gangnam | Open to wind and snow, so armies do not cross. Only watchers stand at the south ends |
 

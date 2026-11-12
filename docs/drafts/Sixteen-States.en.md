@@ -38,7 +38,7 @@ To Government people the Government is not a new country. It is the Republic of 
 
 - In each district one Member of the National Assembly holds that district's duchy. Elections remain, but the winner is known before the vote. Assembly Member houses hand down their seats.
 - The fourteen Members acclaim a President from among themselves, and the President holds the post until death. An acclamation succeeds only when all fourteen seals are set.
-- On paper there are many parties, but in practice only two, the OMO Party and the Claw Party. The OMO Party holds that the ledger survives only by contracting with across the river; the Claw Party holds that the north must last on its own land and labour.
+- On paper there are many parties, but in practice only two, the OMO Party and the Claw Party. The OMO Party holds that the ledger survives only by contracting across the river; the Claw Party holds that the north must last on its own land and labour.
 - The Government counts as citizens only those on its ledger. People on the ledger, the registered, cannot freely change their station or their work. Leaving one's registered station means being struck off.
 - The south of the river is "off the ledger" in official papers and "across the river" in speech. Government people say across the river is where the barbarians live.
 
@@ -82,7 +82,7 @@ There are thirteen places in Seoul where a line passes from one polity into anot
 | Government and Arc | Gwangnaru–Cheonho (Line 5), Seoul Forest–Apgujeong Rodeo (Suin-Bundang Line) | Under-river tunnel |
 | Free Cities and Arc | Sadang–Bangbae (Line 2), Chongshin Univ. (Isu)–Naebang (Line 7), Dongjak–Gubanpo (Line 9) | Land border |
 
-Of the ten joins between north and south, seven are bridges exposed to wind and blizzard, and only three are warm, sheltered under-river tunnels. Crossing the ice on foot means a kilometre with nowhere to hide. In 2079 the Government tried to cross the ice and seize the Yeongdeungpo intake and was broken by a blizzard; since then the river has been a line armies do not cross. The Government put ledger checkpoints at the north mouths of the three tunnels. So whoever holds the three tunnels holds the board of any fight.
+Of the ten joins between north and south, seven are bridges exposed to wind and blizzard, and only three are warm, sheltered under-river tunnels. Crossing the ice on foot means a kilometre with nowhere to hide. In 2079 the Government tried to cross the ice and seize the Yeongdeungpo intake and was broken by a blizzard; since then the river has been a line armies do not cross. The Government put ledger checkpoints at the north mouths of the three tunnels. So any fight turns on who holds the three tunnels.
 
 There is no river between the Free Cities and the Arc. Their border is a single line between Dongjak-gu and Seocho-gu, and the three places where the lines touch are all in Dongjak. The Ferry Keeper of Dongjak faces the Government on the river side and the Arc on the land side. Dongjak station is where all three polities meet: Line 4 runs to the Government's Ichon, Line 9 to the Arc's Gubanpo. The quarrels of the two polities that split apart are fought at these three border stations.
 
@@ -108,14 +108,14 @@ For the first six years the winter grew colder every year; when the number of pe
 |---|---|---|
 | Government | "The winter stopped when the ledger matched the quotas." | Setting a quota for every station and counting heads became the Government's creed |
 | Free Cities | "The heat balance came out even." | Even the winter is read in figures; the reckoning of heat and power is how one lives |
-| Arc | "God has received all the answers it asked for." | The winter is god's question; it no longer worsens because the answers are complete |
+| Arc | "God has received all the answers it asked for." | The winter is god's question, and they believe it no longer worsens because the answers are complete |
 
 <a id="winter-2126"></a>
 ## Winter 2126
 
 The third water supply contract is coming. The Government's intake pumps await their first full overhaul in thirty years, and the wells sink 30 centimetres every year. The Free Cities have the hands for that overhaul; the Arc has the power of the Jamsil weir and the Amsa intake. Now water flows only if all three polities put their hands to it.
 
-Inside the Government, the OMO Party and the Claw Party split over whether to set seals across from the Arc. Among the Free Cities, each city says something different about whether to seal the Arc's sheets at the same meeting as the Government's. The Arc demands its own seat for the first time. Nobody yet knows how the contract will be made. What lies on the scales is in [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/).
+Inside the Government, the OMO Party and the Claw Party split over whether to set their seals together with the Arc. Among the Free Cities, each city says something different about whether to seal the Arc's sheets at the same meeting as the Government's. The Arc demands its own seat for the first time. Nobody yet knows how the contract will be made. What lies on the scales is in [The Water Contracts and the Three Polities](/wiki/World-Relation-Ledger/).
 
 <a id="not-in-seoul"></a>
 ## What Seoul does not have

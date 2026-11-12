@@ -87,9 +87,9 @@ The heaviest punishment in the Free Cities is breaking the seal. The seal of som
 <a id="near-houses"></a>
 ### The Near Houses
 
-The Arc's four districts are each held by one of four **Near Houses**, the houses that stand at the Hierophant's side. There are three ways for a house to become a Near House: to be of the Hierophant's blood, to marry into that blood, or to have worked at the Hierophant's side before the Arc stood. All four Near Houses of 2126 stood by the third way, side service: they guarded the maintenance bench, brought in a shelter, or received the first baptism.
+The Arc's four districts are each held by one of four **Near Houses**, the houses that stand at the Hierophant's side. There are three ways for a house to become a Near House: to be of the Hierophant's blood, to marry into that blood, or to have worked at the Hierophant's side before the Arc stood.
 
-| Near House | Seat station | Side service |
+| Near House | Seat station | How it came to the Hierophant's side |
 |---|---|---|
 | Seocho Near House | Express Bus Terminal | A house from the Bangbae and Naebang shelters among the twelve first baptised |
 | Gangnam Near House | Suseo | The leading house of the Suseo shelters, which supplied food and salvage through the five years Go Ye-jin read the manuals |
@@ -106,9 +106,9 @@ The post of Head of the Near House passes by blood within the Near House. The He
 Beside the ladder of titles the Arc has a ladder of part counts. A Bench Keeper, who opens other people's bodies, must carry three parts or more. So a Bench Keeper often has more parts than the Head of the Near House, and a maintenance hand with many parts may come before a Near House cousin in the maintenance queue. Arc people call this **blood and iron**: the quarrel between those who would let blood decide and those who would let the iron in the body decide is the Arc's daily politics.
 
 <a id="one-person-bloodline"></a>
-### The Hierophant who is a house alone
+### The Hierophant's bloodline
 
-Rule in the Arc passes through the Hierophant's bloodline and the houses close to it. Yet the people of the Arc hold the Hierophant's bloodline today to be Go Ye-jin alone. Go Ye-jin has no recorded family. If she has children, their blood becomes the Hierophant's line. Arc people say, "The Hierophant is a house all by herself." That the four Near Houses hold up a seat with no blood behind it is the bedrock of Arc politics in 2126. How the Hierophant after Go Ye-jin will be chosen, nobody yet knows.
+Rule in the Arc passes through the Hierophant's bloodline and the houses close to it. But Go Ye-jin has no recorded family. So even within the Arc there is no single answer to who counts as the Hierophant's bloodline today. Some say, "The Hierophant is a house all by herself." How the Hierophant after Go Ye-jin will be chosen, nobody yet knows.
 
 Maintenance work is handed down too. The children of maintenance hands grow up beside the tools and are baptised early. A maintenance house almost always stays a maintenance house. At a marriage the two houses exchange maintenance turns, and a marriage with a maintenance house is counted the best.
 

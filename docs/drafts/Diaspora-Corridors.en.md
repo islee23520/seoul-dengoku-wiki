@@ -26,7 +26,7 @@ There are thirteen joins where a line passes from one polity into another.
 <a id="tunnels"></a>
 ### The under-river tunnels
 
-The three tunnels run beneath the river, out of reach of wind and blizzard, so armies, merchants and envoys all want them. After the Government's 2079 attempt to cross the ice and seize the Yeongdeungpo intake was broken by a blizzard, the Government put ledger checkpoints at the north mouths of all three. The soldiers there look at the token before the rifle.
+The three tunnels run beneath the river, out of reach of wind and blizzard, so armies, merchants and envoys all want them. After the Government's 2079 attempt to cross the ice and seize the Yeongdeungpo intake was broken by a blizzard, the Government put ledger checkpoints at the north mouths of all three. The soldiers there check the token before they reach for the rifle.
 
 The Free Cities keep no checkpoint at the south mouth of the Mapo–Yeouinaru tunnel. Once a Government person comes through and steps out at Yeouinaru, they are off the ledger. The Arc guards the south mouths of Gwangnaru–Cheonho and Seoul Forest–Apgujeong Rodeo, and services the machine bodies of Government people right there at the south mouths, so that Government people never come deep into Arc land.
 
