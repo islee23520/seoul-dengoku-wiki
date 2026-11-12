@@ -3,7 +3,7 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: [main]
-    paths: ['data/sql/**', 'site/**', '.github/workflows/pages.yml']
+    paths: ['data/sql/**', 'site/**', 'scripts/pages/release-notes.mjs', '.github/workflows/pages.yml']
   workflow_dispatch:
 
 permissions:
@@ -20,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # full history and tags: the Update History page is generated from them
       - uses: actions/setup-node@v7
         with:
           node-version: 24
@@ -51,3 +53,24 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v5
+
+  # One release per deployed merge on main. The git tag vX.Y.Z is the version source; nothing is committed back.
+  # Idempotent: publish exits 0 without creating anything when HEAD is already tagged or contained in a release tag.
+  release:
+    needs: deploy
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - name: Tag and publish the release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node scripts/pages/release-notes.mjs publish --repo-url "${{ github.server_url }}/${{ github.repository }}"
