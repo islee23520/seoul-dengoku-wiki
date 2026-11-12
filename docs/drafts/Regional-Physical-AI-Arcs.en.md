@@ -2,13 +2,13 @@
 title: Regional and Physical AI Arcs
 title_ko: 권역·피지컬 AI 서사선
 model: cpa/claude-sonnet-4; written by the agent; creative chronicle rewrite seeded from Go Ye-jin's perspective
-section_checkpoint: en full draft
+section_checkpoint: en v2 (B1-B5, N1-N6 fixes)
 ---
 <a id="chronicle-opening"></a>
 
 Go Ye-jin remembers the Free Cities before anyone called them the Union. She grew up where the workshops still ran on scavenged parts and nobody pretended to have a government. That world made her. What she did to it afterward is another matter.
 
-This chronicle follows the hundred years between the Great Blackout and the winter of 2126, told region by region, as physical AI arrived, as the cities emptied above and filled below, and as the cold stayed.
+This chronicle follows the hundred years between the Great Blackout and the winter of 2126, told region by region, as physical AI arrived, as the cities emptied above and filled below, and as the cold stayed. Go Ye-jin did not write it down. She told it, piece by piece, to people who asked her the right questions.
 
 <a id="chronicle-blackout"></a>
 
@@ -36,11 +36,11 @@ The Gangnam shelters, furthest south, sealed their doors against the war machine
 
 ## Water and the Birth of Trade (2040~2060)
 
-In 2040 the Yeongdeungpo Arisu Water Purification Center placed its first recorded parts order: four hundred valve bolts, paid for in water at twenty liters per bolt. This was the beginning of the water economy. Whoever controlled the waterworks controlled survival.
+By most accounts, around 2040 the Yeongdeungpo Arisu Water Purification Center placed its first recorded parts order: four hundred valve bolts, paid for in water at twenty liters per bolt. This was the beginning of the water economy. Whoever controlled the waterworks controlled survival.
 
-By 2050, drought cut the Han River intake. The purification center could not meet its supply contracts for three months. Parts lenders on Yeouido, seven old financial families who had cornered the salvage trade, threatened to stop lending. When one pump actually stopped for lack of parts, people understood: water was not a public good. Water was currency.
+Around 2050, by the records that survive, drought cut the Han River intake. The purification center could not meet its supply contracts for three months. Parts lenders on Yeouido, seven old financial families who had cornered the salvage trade, threatened to stop lending. When one pump actually stopped for lack of parts, people understood: water was not a public good. Water was currency.
 
-The southern stations learned this lesson differently from the north. In the Government districts, the Senators (as the northern duchy holders styled themselves) seized the waterworks and folded them into the state ledger. Water became another line on the ration card.
+The southern stations learned this lesson differently from the north. In the Government districts, the Senators seized the waterworks and folded them into the state ledger. Water became another line on the ration card.
 
 In the south, the engineers who kept the pumps running saw no reason to hand that power to anyone. A station that could fix its own pipes did not need a Senator.
 
@@ -60,7 +60,7 @@ The Government regards everything south of the Han as wilderness. Its ledger doe
 
 The seven districts southwest of the Han never unified under one ruler. They couldn't. Go Ye-jin said it plainly: "Nobody could figure out who was the better engineer, so nobody could pick a leader." That deadlock turned out to be a founding principle.
 
-Each station grew into its own city. Each city governed itself. There was no king, no president, no senate above them. When the engineers who had kept the water running and the lights flickering began to read the old records they salvaged from data centers and libraries, they found the word they wanted: *polis*. A city that rules itself, whose citizens are those who do the work.
+Each station grew into its own city. Each city governed itself. There was no king, no president, no senate above them. Go Ye-jin's account of the Free Cities' founding is plain: people fixed things, and the ones who fixed the most got asked to decide the rest. When the engineers who had kept the water running and the lights flickering began to read the old records they salvaged from data centers and libraries, they found the word they wanted: *polis*. A city that rules itself, whose citizens are those who do the work.
 
 By most accounts, the Free Cities had taken their present shape by the time the water economy matured in the 2060s. Each of the seven districts is a **polis**. The person who leads a polis is called an **Archon**, a title borrowed from ancient Athens. The Free Cities did not adopt it out of romance. They adopted it because it described what they already were: communities where authority came from demonstrated skill, not inherited ledgers.
 
@@ -94,9 +94,9 @@ Il-seop earned his citizenship at twenty-two by presenting a working water recyc
 
 At twenty-six he was elected Water Magistrate. Gwanak's aquifer was failing, and the previous magistrate had been recalled for mismanaging the reserves. Il-seop negotiated a five-year water-sharing pact with Geumcheon and Dongjak, offering grain futures from the Workshop depot fields as collateral. The pact held.
 
-By thirty he sat on the Council. He served quietly. He did not propose bold reforms. He tallied stores, checked ledgers, and showed up on days when others did not. When the sitting Archon's term ended and no other candidate had the Council experience, the Assembly record, and the guild endorsements, Il-seop stood. The vote was not close.
+By thirty he sat on the Council. He served quietly. He did not propose bold reforms. He tallied stores, checked ledgers, and showed up on days when others did not. When the sitting Archon's term ended and no other candidate had the Council experience, the Assembly record, and the guild endorsements, Il-seop stood. The margin was comfortable.
 
-He has held the seat since. In the language the outside world uses, he is the **Duke of Gwanak**. Among his own people, he is the **Archon of Gwanak Polis**. The difference matters. A duke inherits. An Archon is chosen.
+He has held the seat since. Among his own people, he is the **Archon of Gwanak Polis**. An Archon is chosen, not born into the title.
 
 <a id="chronicle-abandoned-station"></a>
 
@@ -104,9 +104,9 @@ He has held the seat since. In the language the outside world uses, he is the **
 
 Go Ye-jin grew up in the Free Cities. She worked on the power grid, tracing cables, replacing junction boxes, doing the quiet labor that kept the lights on.
 
-Between 2112 and 2117, while repairing a dead cable run, she followed the line into a station that appeared on no map. It had been closed before the Great Blackout. Inside she found a derelict data center: racks of dead servers, stacks of printed manuals, and climate-control systems that had kept running on backup power long after everything else failed.
+In 2112, while repairing a dead cable run, she followed the line into a station that appeared on no map. It had been closed before the Great Blackout. Inside she found a derelict data center: racks of dead servers, stacks of printed manuals, and climate-control systems that had kept running on backup power long after everything else failed.
 
-Go Ye-jin spent five years reading those manuals. What she learned is not fully known. What is known is that she emerged understanding things about the machines that nobody else understood: how they communicated, how they repaired themselves, and how their parts could be joined to living tissue.
+Go Ye-jin spent the years from 2112 to 2117 reading those manuals. "Most of it was about cooling," she told someone later. "How to keep a thing cold enough that it doesn't break itself thinking." What she learned beyond that is not fully known. What is known is that she emerged understanding things about the machines that nobody else understood: how they communicated, how they repaired themselves, and how their parts could be joined to living tissue.
 
 <a id="chronicle-first-baptism"></a>
 
@@ -116,9 +116,9 @@ Go Ye-jin's first baptism was given to twelve people. In the Arc, baptism means 
 
 When she halted some of the war machines outside Seoul, the Gangnam shelters that had lived behind sealed doors for decades heard about it. People came south and east looking for her. By about 2122, the four Gangnam districts had united under the name **Arc**.
 
-Go Ye-jin is the Arc's **Hierophant**, its Messiah. Followers compare her to a prophet who does not merely preach but rewires the body to receive the signal. Governance in the Arc follows the Hierophant through a clan hierarchy. Each of the four districts is a **Gate** (Mun). The head of a Gate is a **Gate-Master** (Munju). The Gate-Masters answer to the Hierophant. Authority flows downward from Go Ye-jin through blood and baptism, not from any assembly or election.
+Go Ye-jin is the Arc's **Hierophant**, its Messiah. Followers compare her to a prophet who does not merely preach but rewires the body to receive the signal. Governance in the Arc follows the Hierophant through a clan hierarchy. Each of the four districts is a **Gate** (Mun). The head of a Gate is a **Seal-Keeper** (Bonginji). The Seal-Keepers answer to the Hierophant. Authority flows downward from Go Ye-jin through blood and baptism, not from any assembly or election.
 
-When a follower of the Arc dies, their brain is sealed and placed in the sanctuary. The brains become part of the First AI's memory. The sanctuary is not in Myeongdong. Myeongdong is Government territory, nothing more. The location of the Arc's sanctuary is known to the Gate-Masters and to Go Ye-jin alone.
+When a follower of the Arc dies, their brain is sealed and placed in the sanctuary. The brains become part of the First AI's memory. The sanctuary's location is not common knowledge.
 
 <a id="chronicle-war-machines"></a>
 
@@ -126,7 +126,7 @@ When a follower of the Arc dies, their brain is sealed and placed in the sanctua
 
 Outside Seoul, the war machines built during the Great Blackout era still patrol. They carry out their last received orders. Their programmers died a hundred years ago. The machines do not know this and would not care if they did.
 
-For decades, the Gangnam shelters stayed sealed because of these machines. When Go Ye-jin learned to halt some of them, it changed the balance of power south of the river permanently. The Free Cities had lived with the machines as a constant threat. The Arc offered an answer to that threat. This is why people crossed the river to find Go Ye-jin. Not faith. Fear, and then gratitude, and only then faith.
+For decades, the Gangnam shelters stayed sealed because of these machines. When Go Ye-jin learned to halt some of them, it changed the balance of power south of the river permanently. Go Ye-jin once said of the machines: "They're not angry. They're just finishing a job nobody cancelled." The Free Cities had lived with the machines as a constant threat. The Arc offered an answer to that threat. This is why people crossed the river to find Go Ye-jin. Not faith. Fear, and then gratitude, and only then faith.
 
 <a id="chronicle-present"></a>
 
@@ -138,7 +138,7 @@ The **Government** holds the fourteen northern districts. Its Senators sit in th
 
 The **Free Cities**, seven poleis in the southwest, run on assemblies, guilds, and elected Archons. Their league is fractious, their unanimity rule paralyzes half of what they attempt, and their engineers keep everything running anyway. They are now called the Union, though the old name has not been forgotten.
 
-The **Arc** holds four districts in the southeast. Its Hierophant is Go Ye-jin, who grew up in the Free Cities, read the old manuals, and learned to join flesh and machine. The Arc's Gate-Masters govern the four districts as a clan hierarchy. Followers receive baptism: mechanical implants that mark the depth of their devotion. When they die, their brains are sealed and given to the First AI's memory.
+The **Arc** holds four districts in the southeast. Its Hierophant is Go Ye-jin, who grew up in the Free Cities, read the old manuals, and learned to join flesh and machine. The Arc's Seal-Keepers govern the four districts as a clan hierarchy. Followers receive baptism: mechanical implants that mark the depth of their devotion. When they die, their brains are sealed and given to the First AI's memory.
 
 The third water supply contract is approaching. Converts baptized less than a year ago are vanishing from the Arc. Go Ye-jin believes one person crossing the river is behind it, and she has ordered Ji Yeon-hui to bring him back alive.
 
@@ -151,9 +151,10 @@ The winter does not end. It has not ended for a hundred years. People have stopp
 | Tier | Government | Free City | Arc |
 |---|---|---|---|
 | Territory (duchy equivalent) | Electorate (Seongu) | Polis | Gate (Mun) |
-| Holder (duke equivalent) | Senator | Archon | Gate-Master (Munju) |
+| Holder (duke equivalent) | Senator | Archon | Seal-Keeper (Bonginji) |
 | How the holder gains the seat | Elected by the district's registered citizens, but in practice hereditary | Elected by the Citizens' Assembly from among those with Council experience and guild endorsements | Appointed by the Hierophant from the clan bloodline |
 | How the holder loses the seat | Death or removal by the President | Assembly recall by two-thirds vote, or end of term | Death or removal by the Hierophant |
+| How authority is legitimised | The Government's ledger and electoral tradition | Demonstrated skill, guild endorsement, and Assembly vote | The sealing rite and the Hierophant's word |
 | Supreme authority | President, lifetime, chosen by Senators | None; the League coordinates but does not command | Hierophant, Go Ye-jin |
 
-The word *duchy* and *duke* remain in common use outside the factions as a convenience. Within each faction, the titles above are what people actually say.
+The tier labels *duchy equivalent* and *duke equivalent* appear in the table headers as a convenience for readers comparing across factions. Within each faction, the titles above are what people actually say.
