@@ -11,7 +11,7 @@ model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/p
 
 The Flame Lantern carries a blue flame on the wet steel plate of the preservation-vault outer wall, on the siding cars, and at the tips of the spent-battery crystals. The flame is in front of the work lamp and floats low over the steam of the drainage channel. The person, with the flame attached, stands toward the rail and the wall or lies prone on the train roof.
 
-Dokkaebi Fire is the several blue flames floating at the top of the outer wall. Bulgwisin is the person standing on the siding step below, with flame come out past the clothes. Hwama is the form lying prone on the grain-train roof, with the flame of the back laid over the row of cars. The three continue from the preservation-vault outer wall to the Seongha Group siding on the same tail of the meltwater pulse night.
+Dokkaebi Fire is the several blue flames floating at the top of the outer wall. Bulgwisin is the person standing on the siding step below, with flame come out past the clothes. Hwama is the form lying prone on the grain-train roof, with the flame of the back laid over the row of cars. The three continue from the preservation-vault outer wall to the Seongha Group siding on the same night at the tail of the meltwater pulse.
 
 <a id="Hostile-Group-G22-heading-0006"></a>
 
