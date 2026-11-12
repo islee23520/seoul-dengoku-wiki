@@ -32,15 +32,14 @@ function extract() {
     const ko = d ? JSON.parse(d.json_ko) : {};
     return { ...p, clan_id: d?.clan_id ?? null, en: { ...pick(en, AGE), kin: kin(en) }, ko: { ...pick(ko, AGE), kin: kin(ko) } };
   });
-  const clans = all('SELECT id, surname, surname_ko, bongwan, bongwan_ko, hanja, crest_motif, branches FROM clan ORDER BY id').map((c) => ({
-    ...c, branches: JSON.parse(c.branches).map((b) => ({ id: b.id, members: b.members ?? [] })),
+  const branchIds = (raw) => JSON.parse(raw).map((b) => ({ id: b.id, members: b.members ?? [] }));
+  const clans = all('SELECT id, surname, surname_ko, bongwan, bongwan_ko, hanja, crest_motif, branches, branches_ko FROM clan ORDER BY id').map((c) => ({
+    ...c, branches: branchIds(c.branches), branches_ko: branchIds(c.branches_ko),
   }));
   const NODE = ['id', 'personId', 'kind', 'name', 'nameEn', 'birthDate', 'deathDate'];
   const EDGE = ['id', 'from', 'to', 'type', 'parentRole'];
-  const trees = all('SELECT clan_id, json FROM family_tree ORDER BY clan_id').map((t) => {
-    const j = JSON.parse(t.json);
-    return { clan_id: t.clan_id, nodes: (j.nodes ?? []).map((n) => pick(n, NODE)), edges: (j.edges ?? []).map((e) => pick(e, EDGE)) };
-  });
+  const treeFacts = (raw) => { const j = JSON.parse(raw); return { nodes: (j.nodes ?? []).map((n) => pick(n, NODE)), edges: (j.edges ?? []).map((e) => pick(e, EDGE)) }; };
+  const trees = all('SELECT clan_id, json, json_ko FROM family_tree ORDER BY clan_id').map((t) => ({ clan_id: t.clan_id, ...treeFacts(t.json), ko: treeFacts(t.json_ko) }));
   const images = {};
   for (const dir of IMAGE_DIRS) {
     const abs = path.join(REPO, dir);
@@ -56,7 +55,7 @@ function extract() {
       identity: pick(t.identity ?? {}, ['name', 'gender', 'ethnicity', 'age', 'ageAsOf']) };
   }
   return {
-    schema: 'v3-fixed-facts.2',
+    schema: 'v3-fixed-facts.3',
     faces,
     people,
     clans,
