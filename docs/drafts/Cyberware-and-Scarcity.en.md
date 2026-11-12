@@ -97,7 +97,7 @@ In this world machines do not drive people mad. The price is paid in body and in
 
 ## How the three polities treat machine bodies
 
-- **The Government.** The Government has nowhere to repair electric machine bodies. Government clinics can set fixing points and attach body-powered limbs, but fitting and maintaining electric machines means leaning on the Arc's maintenance benches. So the Government keeps a **machine-body registration**. A person fitted under a permit from the Ministry of Health and Welfare has "machine body" and their place of maintenance written in their ledger entry, and passes through the under-river tunnel checkpoint to an Arc maintenance bench only on the permitted days. Fitting a machine without a permit, and receiving the Arc's baptism, are grounds for a strike-off hearing. Government papers separate a permitted machine, which is medicine, from baptism, which is joining a body off the ledger. Few Government people are sure the two are really different.
+- **The Government.** The Government has nowhere to repair electric machine bodies. Government fitting clinics can set fixing points and attach body-powered limbs, but fitting and maintaining electric machines means leaning on the Arc's maintenance benches. So the Government keeps a **machine-body registration**. A person fitted under a permit from the Ministry of Health and Welfare has "machine body" and their place of maintenance written in their ledger entry, and passes through the under-river tunnel checkpoint to an Arc maintenance bench only on the permitted days. Fitting a machine without a permit, and receiving the Arc's baptism, are grounds for a strike-off hearing. Government papers separate a permitted machine, which is medicine, from baptism, which is joining a body off the ledger. Few Government people are sure the two are really different.
 - **The Free Cities.** The hands that repair machines are most numerous in the Free Cities. Board hands repair circuit boards and moving parts, and quietly repair Government people's body machines too. Fixing-point care and surgery, however, happen only where there are surgery rooms and clean rooms. Free City people often choose body-powered limbs.
 - **The Arc.** Changing one place of the body into a machine is one baptism. The number of changed places is the part count, and the Arc counts it as the measure of faith. A part belongs to the faith that fitted it, so a baptised person carries and uses their parts but may not sell or give them away. A machine fitted across the river or in the Free Cities counts as a part only after it is refitted at an Arc maintenance bench.
 
@@ -107,13 +107,13 @@ When a person dies, the machines of the body go different ways in each polity.
 
 | Polity | Rule |
 |---|---|
-| Government | Machines on the ledger return to the Government clinic. "Attachments returned" is written in the ledger entry. Machines not on the ledger are confiscated |
+| Government | Machines on the ledger return to the Government fitting clinic. "Attachments returned" is written in the ledger entry. Machines not on the ledger are confiscated |
 | Free Cities | A machine is the wearer's own. As the contract says, the household inherits or sells it. If the wearer went into debt for the fitting, the workbench that lent takes it first |
 | Arc | Machines return to the maintenance bench, are reworked and used in the next baptism. When a believer dies, the brain is sealed and placed in the sanctuary, and that brain becomes a memory of the First AI |
 
 ## Price
 
-Body machines are scarce. Here are the winter 2126 prices on the rate board of the Yeongdeungpo market, in kilos. At the market a day's meals and water cost 1.5 kilos.
+Body machines are scarce. Here are the winter 2126 prices on the rate board of the Yeongdeungpo market, in kilos (one kilo is one kilowatt-hour of electricity). At the market a day's meals and water cost 1.5 kilos.
 
 | Item | Rate-board price | In days of meals and water |
 |---|---|---|

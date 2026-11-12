@@ -95,7 +95,7 @@ The Government counts every spent case in its ledger and fights by numbers. The 
 
 **The ice is not crossed by armies.** In 2079 the Government tried to cross the ice and take the Yeongdeungpo intake, and was broken on the river by a blizzard. Since then none of the three polities crosses the frozen Han with an army. Only small raids cross. On the river there is nowhere to hide for a kilometre.
 
-**Seasons and weather.** In the long-light half, fighting on the surface is easier. In the long-dark half, light is short, and both drone eyes and marksmen's eyes grow short with it. During the two to four days of a blizzard, fighting on the surface stops.
+**The halves and the weather.** In the long-light half, fighting on the surface is easier. In the long-dark half, light is short, and both drone eyes and marksmen's eyes grow short with it. During the two to four days of a blizzard, fighting on the surface stops.
 
 ## Read together
 

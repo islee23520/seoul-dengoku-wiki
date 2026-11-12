@@ -48,7 +48,7 @@ Almost all electricity, once used, stays inside the station as heat. The heat fr
 
 The numbers say two things. First, half of Seoul's electricity goes into keeping people warm. Lighting one more lamp means running one less heat pump. So light underground is rationed, and a station's day is divided into the hours the lights are on and the hours they are off. Second, charging the machines worn on the body takes only 2% of Seoul's electricity. It still becomes a thing to quarrel over because that 2% is gathered almost entirely in one place, the Arc, and on one source, the Jamsil weir water wheels. The Arc holds the south end of the weir; the Government holds the north end.
 
-Divide Seoul's 5 MW among 300,000 people and each person gets about 0.4 kWh a day. The 1.5 kilos that a day's meals and water cost at a Free City market are four days of one person's share of electricity. That is why electricity is the measure of price.
+Divide Seoul's 5 MW among 300,000 people and each person gets about 0.4 kWh a day. The 1.5 kilos (the Free City market unit of price: one kilo is one kilowatt-hour of electricity) that a day's meals and water cost at a Free City market are four days of one person's share of electricity. That is why electricity is the measure of price.
 
 ## Batteries and cold
 
@@ -90,7 +90,7 @@ Each polity knows technology in its own way.
 
 Of Seoul's 300,000 people, about 6,000, 2%, can do "repair" work alone. About 3,600 are in the Free Cities (about 5% of their people), about 1,600 in the Arc (about 2.5%) and about 800 in the Government (about 0.5%). Of these, about 900 are "revive" hands who can handle circuit boards and battery cells. People who can perform the surgery that fits a machine to a body number about 120 in all of Seoul.
 
-The Government has many people, much land and much paper; the Free Cities have many hands; the Arc has many hands that work on bodies. This lean binds the three polities to one another.
+The Government has many people, much land and much paper; the Free Cities have many hands; the Arc has many hands that work on bodies. This imbalance binds the three polities to one another.
 
 ## The names of repair work
 
@@ -98,20 +98,20 @@ A trade keeps its name from the days of the Republic of Korea, or is named after
 
 | Trade | What it does | Where most are |
 |---|---|---|
-| Wind-machine hand | Raises wind machines, knocks ice off the blades, changes bearings | The Free Cities (Gangseo above all), Government bridges |
-| Heat-pump hand | Handles the compressors and refrigerant of ground heat pumps | The Free Cities |
-| Well hand | Deepens wells and lowers pumps | The Free Cities. The core trade of the water supply contract |
-| Water-wheel hand | Keeps the under-ice water wheels and their channels | The Arc (Jamsil), Free City work crews |
+| Wind-machine wright | Raises wind machines, knocks ice off the blades, changes bearings | The Free Cities (Gangseo above all), Government bridges |
+| Heat-pump fitter | Handles the compressors and refrigerant of ground heat pumps | The Free Cities |
+| Well driller | Deepens wells and lowers pumps | The Free Cities. The core trade of the water supply contract |
+| Water-wheel keeper | Keeps the under-ice water wheels and their channels | The Arc (Jamsil), Free City work crews |
 | Lineworker | Joins wire, cable and talk lines. The work Go Ye-jin did | All three polities |
-| Winder | Rewinds the coils of dead motors | The Free Cities |
+| Motor winder | Rewinds the coils of dead motors | The Free Cities |
 | Lathe hand | Machines shafts, fittings and gun parts from metal | The Free Cities (Guro above all) |
-| Battery hand | Picks live cells from dead batteries and binds them | The Free Cities, the Arc |
+| Battery maker | Picks live cells from dead batteries and binds them | The Free Cities, the Arc |
 | Board hand | Transplants and revives circuit boards. The most precious "revive" trade | The Free Cities, the Arc |
 | Gunsmith | Repairs and fits guns | The Free Cities, the Government |
-| Round hand | Dresses cases and reloads rounds | The Free Cities, the Government |
-| Net hand | Weaves and mends the nets over entrances and light-fields | All three polities. The commonest trade |
+| Reloader | Dresses cases and reloads rounds | The Free Cities, the Government |
+| Net maker | Weaves and mends the nets over entrances and light-fields | All three polities. The commonest trade |
 | Body fitter | Fits machines to bodies and tends their fixing points | The Arc (most), the Free Cities |
-| Doctor | A medical worker who fits machines to bodies in Government clinics. The name survives from the medical ranks of the Republic of Korea | The Government |
+| Doctor | A medical worker who fits machines to bodies in Government fitting clinics. The name survives from the medical ranks of the Republic of Korea | The Government |
 
 "Body fitter" is an Arc word. In the Free Cities a person doing the same work is simply called by the name of their workbench.
 

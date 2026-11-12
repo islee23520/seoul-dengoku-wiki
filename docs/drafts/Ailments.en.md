@@ -52,7 +52,7 @@ Seoul can hardly make antibiotics. The Arc and a few Free City stations grow a l
 | Polity | Where the sick are cared for |
 |---|---|
 | Government | The Ministry of Health and Welfare's health posts and medical corps. "Doctor" is a name left from the medical ranks of the Republic of Korea. Medicine is shared out by ration grade |
-| Free Cities | Body fitters and workbenches that handle medicine. Treatment is a contract too, paid in hand-hours and kilos. But just as each station's Station Foreman keeps an "empty vat", there is a share that keeps those who could not work from going hungry |
+| Free Cities | Body fitters and workbenches that handle medicine. Treatment is a contract too, paid in hand-hours (one hour of one guaranteed hand) and kilos (kilowatt-hours of electricity). But just as each station's Station Foreman keeps an "empty vat", there is a share that keeps those who could not work from going hungry |
 | Arc | Maintenance benches and recovery carers. Food and beds are shared by need, not rank, so the sick, and those newly baptised whose bodies are still taking to the machine, eat first |
 
 People who wear machines have one more illness: fixing-point infection. With daily care about 8% are infected in a year; without care about 35% within two years. When infection reaches the bone, the machine must come out, and fitting it again is harder. Details are in [Machine Bodies and Scarcity](/wiki/Cyberware-and-Scarcity/).

@@ -34,7 +34,7 @@ More than half of Seoul's electricity, about 3.6 MW, comes from wind machines. T
 | The western riverside plains of Gangseo (Magok, Gayang) | Gangseo. Few buildings are buried there, so wind machines can stand in rows. Gangseo makes the most electricity of the Free Cities and sells the surplus by cable to Yangcheon and Yeongdeungpo |
 | The tops of buried buildings in Gangnam | The Arc. With wind power bought from the Free Cities, one share of the Arc's electricity |
 
-Wind machine blades ice up, bearings wear, and blizzards tear the blades. So in a blizzard the blades are folded, which is why electricity falls just when the wind is strongest. There are always thieves after the wire too. Wind-machine hands, who knock ice off the blades and change bearings, do the coldest work in Seoul.
+Wind machine blades ice up, bearings wear, and blizzards tear the blades. So in a blizzard the blades are folded, which is why electricity falls just when the wind is strongest. There are always thieves after the wire too. Wind-machine wrights, who knock ice off the blades and change bearings, do the coldest work in Seoul.
 
 ## The Jamsil weir water wheels
 
@@ -63,7 +63,7 @@ Water comes from four places: melted snow, wells, under-ice river water and wate
 
 ## Ground heat holes
 
-A large share of the heat that warms the stations comes from the ground. Heat pumps draw it up from holes bored 100 to 200 metres deep. Put in 1 of electricity and you get 3 of heat. Every station has them, but the skill to bore and repair them lies with the Free Cities. Compressors wear, refrigerant leaks and the mouths of the holes freeze. Heat-pump hands handle this.
+A large share of the heat that warms the stations comes from the ground. Heat pumps draw it up from holes bored 100 to 200 metres deep. Put in 1 of electricity and you get 3 of heat. Every station has them, but the skill to bore and repair them lies with the Free Cities. Compressors wear, refrigerant leaks and the mouths of the holes freeze. Heat-pump fitters handle this.
 
 ## Under-river tunnel checkpoints
 
@@ -85,7 +85,7 @@ War machines from the time of the Great Blackout circle a band 2 to 10 kilometre
 
 The Government keeps **watchtowers** looking down on the rim from the northern mountains: Bukhansan, Dobongsan, Suraksan and Buramsan. District units man them. A watchtower's work is not fighting but watching: where on the band the machines are circling, and when a blizzard is coming. The machines see movement and heat, so no fire is shown at a watchtower.
 
-On the Free City side, Geumcheon's rim crew, in the city that touches Seoul's boundary, watches the rim from closest. Gangseo at the western edge, Guro at the south-western edge and Gwanak at the southern edge also face the rim. In the Arc, rim watchers keep watch outward from the border stations. The two to four days when a blizzard blinds the machines are the only time to cross the rim, and those who cross hardly ever return. Those who do return carry power cores from broken machines.
+On the Free City side, the rim crew of Geumcheon, the city that touches Seoul's boundary, watches the rim from closest. Gangseo at the western edge, Guro at the south-western edge and Gwanak at the southern edge also face the rim. In the Arc, rim watchers keep watch outward from the border stations. The two to four days when a blizzard blinds the machines are the only time to cross the rim, and those who cross hardly ever return. Those who do return carry power cores from broken machines.
 
 ## Depot workshops
 

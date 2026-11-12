@@ -42,17 +42,17 @@ The only words a humanoid says are a few guidance phrases used in the old wareho
 
 One humanoid draws about 150 W on average through the day, the platform heating share of four people. Counted in carrying, it does the work of five people, which looks like a good bargain; but that electricity, put into a heat pump, could warm four people. So humanoids are found where hands are short and electricity is spare: the Free Cities and the area around Jamsil. They are rare in the Government, where hands are plentiful.
 
-Humanoids follow the battery rules too. Charging is never done below freezing, so it happens only on warm levels. On the surface the battery gives only half and the joints stiffen, so surface work is cut short. A humanoid holds circuit boards, so it is inspected every 30 days, and board hands and winders attend to keep it alive. There are always a few people beside one humanoid.
+Humanoids follow the battery rules too. Charging is never done below freezing, so it happens only on warm levels. On the surface the battery gives only half and the joints stiffen, so surface work is cut short. A humanoid holds circuit boards, so it is inspected every 30 days, and board hands and motor winders attend to keep it alive. There are always a few people beside one humanoid.
 
 ## Who keeps them alive
 
-Most of the hands that keep humanoids alive are in the Free Cities. A board hand to transplant circuit boards, a winder to rewind motors and a lathe hand to machine joints must all attend for one to keep running. So a humanoid usually belongs to a workbench. One workbench beside the Cheonwang depot keeps several humanoids and takes contracts to carry goods and scrap with them.
+Most of the hands that keep humanoids alive are in the Free Cities. A board hand to transplant circuit boards, a motor winder to rewind motors and a lathe hand to machine joints must all attend for one to keep running. So a humanoid usually belongs to a workbench. One workbench beside the Cheonwang depot keeps several humanoids and takes contracts to carry goods and scrap with them.
 
 The Arc's maintenance benches also tend humanoids. But a bench's hands see to the machines on human bodies first. A humanoid is tended only after the maintenance turns of the baptised have all come round.
 
 ## How each polity sees humanoids
 
-- **The Government.** In the Government's ledger a humanoid is entered not as a person but as registered equipment, in the same column as a gun or a radio. Because it is registered equipment, losing one leaves a mark in the sentence column of the person responsible. Government people would rather use that electricity to warm people than run a humanoid.
+- **The Government.** In the Government's ledger a humanoid is entered not as a person but as registered goods, in the same column as a gun or a radio. Because it is registered goods, losing one leaves a mark in the sentence entry of the person responsible. Government people would rather use that electricity to warm people than run a humanoid.
 - **The Free Cities.** Free City contracts write a humanoid down as "five hands' share". A humanoid's work is lent out by the day, and the borrower supplies that day's charge. A humanoid cannot give surety, so the workbench that keeps it gives surety for the work it does.
 - **The Arc.** Arc people count changing one place of the body into a machine as faith. Yet a humanoid, machine through and through, does not count in the number of baptisms. Arc people say of a humanoid, "all parts and no person". Baptism is something a person does, and a humanoid has no body to receive a machine.
 

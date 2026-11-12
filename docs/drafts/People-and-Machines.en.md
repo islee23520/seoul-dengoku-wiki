@@ -85,7 +85,7 @@ The Government has so many people that it needs machines less, the Free Cities h
 
 ## Work beside the machines
 
-In a world where machines are scarce, people stand beside them. A battery hand goes with each battery cart, a depot work crew with each maintenance locomotive, someone to crank each entrance winch. Lineworkers who check the rails and join broken talk lines, winders who rewind dead motors, and board hands who transplant circuit boards keep a machine alive a few more years. Children grow up beside the machines, and the work beside a machine is usually handed down in that household.
+In a world where machines are scarce, people stand beside them. A battery maker goes with each battery cart, a depot work crew with each maintenance locomotive, someone to crank each entrance winch. Lineworkers who check the rails and join broken talk lines, motor winders who rewind dead motors, and board hands who transplant circuit boards keep a machine alive a few more years. Children grow up beside the machines, and the work beside a machine is usually handed down in that household.
 
 ## Read together
 

@@ -115,7 +115,7 @@ Arc titles come from the words of the shelter years and the words of body and re
 
 ### The Hierophant
 
-Go Ye-jin is the Hierophant of the Arc. Believers call the Hierophant the Messiah, and call the Hierophant's rulings "the Hierophant's word". The Hierophant's word is not written down; it becomes law as people repeat it. The Hierophant is not counted by part count.
+Go Ye-jin is the Hierophant of the Arc. Believers call the Hierophant the Messiah, and call the Hierophant's rulings "the Hierophant's word". The Hierophant's word is not written down; it becomes law as people repeat it. The Hierophant's parts are not counted.
 
 ### The Seat of the Four Near Houses and the Heads of the Near Houses
 
