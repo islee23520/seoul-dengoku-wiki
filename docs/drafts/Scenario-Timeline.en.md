@@ -18,7 +18,7 @@ The story opens in the winter of 2126, before the third water supply contract. T
 | People | About 300,000 in all Seoul: Government about 160,000, Free Cities about 75,000, Arc about 65,000 |
 | Stations | 307 stations are lived in: Government 153, Free Cities 77, Arc 77 |
 | Water | Wells are 60 to 80 metres deep, and the water level drops about 30 centimetres a year. The Han's flow also shrinks a little every year |
-| Food | About 60% of every meal is fibre sugar. Seoul eats about 110,000 tonnes of fibre a year, and the road to dig fibre grows longer every year |
+| Food | About 60% of what Seoul eats is fibre sugar. Seoul eats about 110,000 tonnes of fibre a year, and the road to dig fibre grows longer every year |
 | Electricity | All Seoul runs on about 5 MW of steady power. More than half comes from wind machines |
 | Machine bodies | The Arc has about 11,000 baptised, one in six of its people |
 | Outside | The rim machines grow fewer every year but have not all stopped. Crossing the rim in a blizzard to bring back power cores has become a trade |
@@ -29,7 +29,7 @@ Things that ran on for a hundred years all come due this winter at once. The gre
 
 ## The Third Water Supply Contract
 
-The water supply contract trades what the Government puts in, sites, hands and goods, for what the Free City cities put in, the maintenance and parts of pumps and water wheels. The Free Cities have no collective name, so the contract is not one contract either. Many sheets, each made between the Government and one city, are sealed together at one contract meeting. The first contract was in 2066, the second in 2096. Their history is in [Century Annals 2026-2126](/wiki/Century-Annals/).
+The water supply contract trades what the Government puts in, sites, hands and goods, for what the Free Cities put in, the maintenance and parts of pumps and water wheels. The Free Cities have no collective name, so the contract is not one contract either. Many sheets, each made between the Government and one city, are sealed together at one contract meeting. The first contract was in 2066, the second in 2096. Their history is in [Century Annals 2026-2126](/wiki/Century-Annals/).
 
 - **The Host.** The city that calls the contract meeting is Yeongdeungpo. Yeongdeungpo's head, the Market Master, is Host by turn. The market families hold that seat three years at a time in a fixed order, so the order decided who sits in this seat that comes once in thirty years.
 - **The place.** The empty National Assembly building on Yeouido. When the river froze, the Assembly moved to the Gwanghwamun government complex, and the Yeouido building became Yeongdeungpo ground. The rooms above ground are minus 18 and go unused; the snow-buried lower floors and the level of National Assembly station on Line 9 are heated instead. Government people enter the building their forebears left as guests and stamp their seals.
@@ -41,7 +41,7 @@ The water supply contract trades what the Government puts in, sites, hands and g
 
 ## The Government's Position
 
-For the Government, the water supply contract is a question of the ledger before it is a question of water. The Government does not record across the river as a country, yet a contract means stamping seals face to face. So the National Assembly does not ratify the contract. A ministry makes a maintenance service annex for each facility, the Member of the National Assembly for the district where that facility lies stamps it as well, and the President signs off. On the ledger, the cities across the river are not countries but work crews engaged for a service.
+For the Government, the water supply contract is a question of the ledger before it is a question of water. The Government does not record across the river as a country, yet a contract means setting seals side by side. So the National Assembly does not ratify the contract. A ministry makes a maintenance service annex for each facility, the Member of the National Assembly for the district where that facility lies stamps it as well, and the President signs off. On the ledger, the cities across the river are not countries but work crews engaged for a service.
 
 | | What the Government wants | What the Government offers |
 |---|---|---|
@@ -92,7 +92,7 @@ The Free Cities' inner workings are in [Free City Society](/wiki/Free-City-Socie
 | | The Arc's position |
 |---|---|
 | Offers | Part of the electricity of the Jamsil weir wheels and the river water of the Amsa intake |
-| Seeks | Free City hands for major repairs of the wheels and intake pumps; a promise that the Government will not block its end of the weir (Gwangjin); fibre and salt from north of the river |
+| Seeks | Free City hands for major repairs of the wheels and intake pumps; a promise that the Government will not block the north end of the weir on its side (Gwangjin); fibre and salt from north of the river |
 | Will not concede | Baptism and refitting stay out of the contract. It will not accept any demand to enter people living on Arc ground in the Government ledger |
 
 The Arc stamps separately with each Free City. It sits at the contract meeting, but since the Arc is not a city it does not act as Host. The Arc's side is negotiated by the negotiator of the Hierophant's house, and the seal is stamped by a Head of a Near House who has received the Hierophant's word.
@@ -112,7 +112,7 @@ People in Seoul do not divide the year into seasons. They call the half-year of 
 - **The blizzard half.** Blizzards are frequent. One lasts 2 to 4 days, and through it the bridges close and work on the surface stops. But the rim machines are blinded too, so the Geumcheon border crews and the perimeter-runners of the north cross the rim now.
 - **Nights on the ice.** People fleeing the ledger and smugglers cross the ice on long-dark nights. Darkness hides the kilometre with nowhere to hide.
 - **The light-fields rest.** The light-fields yield least. Fibre-sugar vats and mushroom tunnels carry the meals. When stores run short, the Government's dong community centres cut the office workers' share first.
-- **Gathering seals.** The Government's Members of the National Assembly size one another up over the seals on the annexes. The Free City cities choose who will go to Yeongdeungpo and what they will leave in pledge. In the Arc, the negotiator of the Hierophant's house settles the numbers of each sheet with the Heads of the Near Houses.
+- **Gathering seals.** The Government's Members of the National Assembly size one another up over the seals on the annexes. The Free Cities choose who will go to Yeongdeungpo and what they will leave in pledge. In the Arc, the negotiator of the Hierophant's house settles the numbers of each sheet with the Heads of the Near Houses.
 - **The contract meeting.** Yeongdeungpo's Market Master opens the meeting in the Yeouido Assembly building. Sheet by sheet, seals are stamped, or withdrawn.
 
 <a id="opening-long-light"></a>

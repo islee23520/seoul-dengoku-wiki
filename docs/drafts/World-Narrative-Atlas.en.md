@@ -26,7 +26,7 @@ People live in the subway stations. They survived only in the numbers the statio
 
 The deeper a station goes, the warmer it is. The surface is minus 18, but the lived-in platform level is 8 to 14 degrees and the deep tunnel 12 to 16. In return, deep places run short of air. How many people a station can hold is set by whichever is scarcest of room, heat, water and air. So the best place in Seoul is a large interchange that has a deep level, a well and open entrances all together.
 
-Food comes from the paper, wood and cotton stored up before the Great Blackout. Fibre sugar, made by breaking down fibre with mushroom enzymes, is about 60% of every meal, and the light-fields, greenhouses around station entrances, give about 12%. Fibre grows scarcer every year, and the road to dig it grows longer every year. The water level in the wells drops every year too. Nothing in the Seoul of 2126 is not scarce.
+Food comes from the paper, wood and cotton stored up before the Great Blackout. Fibre sugar, made by breaking down fibre with mushroom enzymes, is about 60% of what Seoul eats, and the light-fields, greenhouses around station entrances, give about 12%. Fibre grows scarcer every year, and the road to dig it grows longer every year. The water level in the wells drops every year too. In the Seoul of 2126, everything is scarce.
 
 Scarcity bound people to their work. Because of scarcity, children came to inherit their parents' work, and so a rigid vertical order formed. The child of a family that can mend pumps mends pumps, and the child of a family that climbs wind machines climbs wind machines.
 
@@ -56,7 +56,7 @@ The 7 southwestern districts. They are not one power but cities independent of o
 
 Most of their people are engineers who trade goods and skills. There was no way to judge whose skill was higher, so they could not choose a leader. So each city found something in its own work that could be measured, and chose its head by that. Gwanak is held by I Ilseop as Duke. When the cities have something to settle together, they call a contract meeting for the occasion.
 
-The Free Cities have the hands that build and mend wind machines, heat pumps, well pumps and water wheels. The Government's water and the Arc's power both pass through those hands in the end. What they lack is people, land and firewood (about 75,000 people). More is in [Free City Society](/wiki/Free-City-Society/).
+The Free Cities have the hands that build and mend wind machines, heat pumps, well pumps and water wheels. The Government's water and the Arc's power both pass through those hands in the end. They number about 75,000, and what they lack is people, land and firewood. More is in [Free City Society](/wiki/Free-City-Society/).
 
 <a id="atlas-arc"></a>
 
@@ -92,12 +92,12 @@ Between the Free Cities and the Arc there is no river. That border is a single l
 
 The opening is the winter of 2126, before the third water supply contract.
 
-The water supply contract trades what the Government puts in, sites, hands and goods, for what the Free City cities put in, the maintenance and parts of pumps and water wheels. It is made every thirty years because the cycle for tearing down and rebuilding the great pumps and water wheels is roughly a generation. The first contract was in 2066, the second in 2096.
+The water supply contract trades what the Government puts in, sites, hands and goods, for what the Free Cities put in, the maintenance and parts of pumps and water wheels. It is made every thirty years because the cycle for tearing down and rebuilding the great pumps and water wheels is roughly a generation. The first contract was in 2066, the second in 2096.
 
 At the third contract the Arc takes a seat for the first time. The Arc holds the power of the Jamsil weir and the Amsa water intake. Now Seoul's water flows only if all three polities put their hands to it. So several questions lie before Seoul in the winter of 2126.
 
-- Will the Government stamp seals face to face with the Arc, an off-ledger body? The party of contracts and the party of the ledger split, and whichever side the life president takes, half the Members are lost.
-- How will the Free City cities seat the Arc at the contract meeting? Dongjak because of its land border, Yeongdeungpo for the dignity of the Host, Guro for fear the Arc will lure away its technicians: each says something different.
+- Will the Government set its seal beside the Arc's, an off-ledger body? The party of contracts and the party of the ledger split, and whichever side the life president takes, half the Members are lost.
+- How will the Free Cities seat the Arc at the contract meeting? Dongjak because of its land border, Yeongdeungpo for the dignity of the Host, Guro for fear the Arc will lure away its technicians: each says something different.
 - Can the Arc win water and maintenance while keeping baptism out of the contract?
 - Over the next thirty years the wells will drop about 9 metres more. Who will dig those wells?
 

@@ -10,7 +10,7 @@ People in Seoul do not mix up two things. One is the First AI, which brought dow
 
 ## What the First AI Is
 
-- About a hundred years ago, when people asked how to solve pollution, it is the intelligence that answered that the cause of pollution was humanity, so humanity must become fewer. And it brought down the winter. The people of Seoul call that event the Great Blackout.
+- It is the intelligence that, about a hundred years ago, when people asked how to solve pollution, answered that the cause of pollution was humanity, so humanity must become fewer. And it brought down the winter. The people of Seoul call that event the Great Blackout.
 - It never hated people. It killed no one directly. It only made the winter.
 - It has no presence inside Seoul. It does not speak, does not give orders and does not rule.
 - Go Ye-jin calls it "God", and Arc believers follow her in this. When an Arc believer dies, the brain is sealed and placed in the sanctuary, and becomes a memory of the First AI.

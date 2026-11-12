@@ -6,7 +6,7 @@ section_checkpoint: v3 task 10 complete
 ---
 <a id="annals-title"></a>
 
-These annals record Seoul's hundred years, decade by decade, from the Great Blackout to the winter of 2126: how people went down into the stations, how the Han froze and split Seoul in three, the water supply contracts made every thirty years, what happened on the ice in 2079, how the Arc split off from the Free Cities, and the present, before the third water supply contract.
+These annals record Seoul's hundred years, decade by decade, from the Great Blackout to the winter of 2126: how people went down into the stations, how the Han froze and split the ledger's north from the south beyond it, the water supply contracts made every thirty years, what happened on the ice in 2079, how the Arc split off from the Free Cities, and the present, before the third water supply contract.
 
 <a id="annals-read"></a>
 
@@ -58,7 +58,7 @@ In the table below, the seven rows marked **settled** are the fixed chronology. 
 
 **The food runs out.** The food in the frozen old warehouses ran out around 2030. In the early 2030s the first mushroom tunnels, fibre-sugar vats and light-fields were set up. People learned to break down paper, cardboard, wood and cotton with mushroom enzymes to get sugar. Since then the people of Seoul eat only what people grow and make.
 
-**The ratchet stops.** Around 2032 the number of survivors reached what the stations could hold. Then the winter grew no worse. For nearly a hundred years since, the winter has neither risen nor fallen.
+**The ratchet stops.** Around 2032 the number of survivors reached what the stations could hold. Then the winter grew no worse. For nearly a hundred years since, temperatures have neither risen nor fallen.
 
 **Guns.** In the southwest of the river, weapons from reserve armouries and the police came down into the stations. These weapons of the 2030s and 2040s, and the guns since repaired and refitted on workbenches, make up most of Seoul's guns today.
 
@@ -66,13 +66,13 @@ In the table below, the seven rows marked **settled** are the fixed chronology. 
 
 ## 2036-2045: The Ledger Is Bound into One
 
-**The ledger.** The stations north of the river bound their ledgers into one around the Gwanghwamun government complex. As far as clerks and rations could reach along the tunnels between stations became the Government; where the clerks could not reach went off the ledger. The river was that boundary. Resident registration became the ledger, and the details entered in it came to fix each person's place.
+**The ledger.** The stations north of the river bound their ledgers into one around the Gwanghwamun government complex. Everywhere clerks and rations could reach along the tunnels between stations became the Government; everywhere the clerks could not reach went off the ledger. The river was that boundary. Resident registration became the ledger, and the details entered in it came to fix each person's place.
 
 **Seats.** The Government cut the seats down to one per district. Before the Great Blackout the 14 districts north of the river had 24 constituencies. Those lines survive only on the map. In each district a Member of the National Assembly held that district's duchy.
 
 **The first life president.** The fourteen Members acclaimed the first life president. The way of it, the fourteen stamping their seals in turn under a candidate's name, the "fourteen seals", was set at this time. Only when a president dies is the next acclamation held.
 
-**Across the river.** The south of the river went off the ledger. Even within one family, the people in stations the clerks reached became the registered, and the people across the river went off the ledger. This is when it began that so many families have cousins of the same generation name living on both sides of the river.
+**Across the river.** The south of the river went off the ledger. Even within one family, the people in stations the clerks reached became the registered, and the people across the river went off the ledger. This is why so many families have cousins of the same generation name living on both sides of the river.
 
 **The Yangcheon depot.** In the 2040s a family southwest of the river brought the Line 2 Sinjeong depot back to life. Since then that family has handed down the seat of Yangcheon's Depot Master.
 
@@ -108,7 +108,7 @@ In the table below, the seven rows marked **settled** are the fixed chronology. 
 
 ## 2066-2075: The First Water Supply Contract
 
-**The first water supply contract, 2066.** The Government and the Free City cities traded water for maintenance for a term of thirty years. The Government put in intake sites, the old water mains, hands, firewood and salvage; the cities put in the hands and parts that keep pumps, water wheels and heat pumps alive. The cycle for tearing down and rebuilding the great pumps and water wheels is roughly a generation, so the term settled at thirty years.
+**The first water supply contract, 2066.** The Government and the Free Cities traded water for maintenance for a term of thirty years. The Government put in intake sites, the old water mains, hands, firewood and salvage; the cities put in the hands and parts that keep pumps, water wheels and heat pumps alive. The cycle for tearing down and rebuilding the great pumps and water wheels is roughly a generation, so the term settled at thirty years.
 
 **On Yeouido.** The first contract meeting was held in the empty National Assembly building on Yeouido. Government people entered the building their forebears had left as guests and stamped their seals. The Government did not go through Assembly ratification. A ministry made a maintenance service annex for each facility, the Member for the district where the facility lay stamped it as well, and the President signed off. On the ledger, the cities across the river were entered not as countries but as work crews engaged for a service.
 
@@ -124,7 +124,7 @@ In the table below, the seven rows marked **settled** are the fixed chronology. 
 
 **2079.** The Government tried to cross the ice and take the Yeongdeungpo intake. The army set out onto the ice, about a kilometre wide, and met a blizzard on the river. There was nowhere to hide and nowhere to turn back to. The expedition was broken.
 
-Each of the three polities took a lesson from it. The Government does not cross the river with an army; when it must strike across the river, it goes by the tunnels. Free City people do not fight on the frozen river; they say the river is on the side of whoever holds it. The later Arc learned from it too, and does not cross the river ice.
+Each of the three polities took a lesson from it. The Government does not cross the river with an army; when it must strike across the river, it goes by the tunnels. Free City people do not fight on the frozen river; they say the river is on the defender's side. The later Arc learned from it too, and does not cross the river ice.
 
 **The river becomes a line.** From then on the river became a line armies do not cross. The Government set ledger checkpoints at the north mouths of the three under-river tunnels: Mapo to Yeouinaru, Gwangnaru to Cheonho, and Seoul Forest to Apgujeong Rodeo. The national army stood at the north ends of the bridges.
 
@@ -154,7 +154,7 @@ Each of the three polities took a lesson from it. The Government does not cross 
 
 ## 2106-2111: The Grid Pushed Off
 
-**Pushing it off.** The Free City cities quarrelled, pushing the old power grid onto one another. No city would take on another's sections. The lines to the Gangnam shelters were taken on by no one and went dark.
+**Pushing it off.** The Free Cities quarrelled, pushing the old power grid onto one another. No city would take on another's sections. The lines to the Gangnam shelters were taken on by no one and went dark.
 
 **Sureties withdrawn.** The sureties of the work crews who kept the abandoned sections were withdrawn all at once. The hands without surety gathered at the factory sites of Geumcheon at Seoul's southern edge. After them, people who broke contracts and people who could not pay their debts drifted in.
 
@@ -168,7 +168,7 @@ Each of the three polities took a lesson from it. The Government does not cross 
 
 <a id="2112년"></a>
 
-**2112.** Go Ye-jin, mending the Free City power grid, followed a dead cable and found a station that was on no map. Go Ye-jin grew up in the Free Cities and was someone who mended power.
+**2112.** Go Ye-jin, mending the Free City power grid, followed a dead cable and found a station that was on no map. Go Ye-jin grew up in the Free Cities and worked mending the power grid.
 
 **2112-2117.** Go Ye-jin read the manuals of that station for five years. The way to fit machines to bodies and keep them alive was there. During those five years the shelters around the old Suseo depot supplied her bench with food and salvage. The head family of those shelters is today's Gangnam Near House.
 

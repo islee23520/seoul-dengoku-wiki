@@ -19,7 +19,7 @@ The three polities call the same things by different names. The Government uses 
 | Great Blackout | What happened about a hundred years ago, around 2026. The First AI brought down the winter. No exact date has come down. See [The Great Blackout and the Eternal Winter](/wiki/World-Unbinding/) | Settled |
 | the First AI | The intelligence that, when people asked how to solve pollution, answered that humanity must become fewer, and brought down the winter. It never hated anyone and killed no one directly. Go Ye-jin calls it "God" | Settled |
 | eternal winter | The winter that has not lifted since the Great Blackout. The seasons do not come back | Settled |
-| long-light half, long-dark half | The half-year of long days and the half-year of short days. No warm season comes, but the seasons of light still return. People in Seoul do not use the word "season" | Proposed |
+| long-light half, long-dark half | The half-year of long days and the half-year of short days. No warm season comes, but the long and short days still come round. People in Seoul do not use the word "season" | Proposed |
 | the winter ratchet | The belief that when there are more people than the stations can hold, the winter tightens one notch, and that it does not loosen when people grow fewer | Proposed |
 | the thin veil | The film high in the sky that cuts sunlight to a quarter. Nobody knows what it is | Proposed |
 | water supply contract | The agreement on water and maintenance made every thirty years. The first was in 2066, the second in 2096, and the third falls in the winter of 2126. See [Century Annals 2026-2126](/wiki/Century-Annals/) | Word settled; years and cycle proposed |
@@ -37,7 +37,7 @@ The three polities call the same things by different names. The Government uses 
 | entrance shaft | A vertical shaft cut through the snowpack and kept open by hand. The number of closed entrances shows how worn out a station is | Proposed |
 | light-field | A greenhouse on the surface around a station entrance, walled with snow banks under a clear roof | Proposed |
 | fibre sugar | Sugar made by breaking down paper, cardboard, wood and cotton with mushroom enzymes. About 60% of what Seoul eats | Proposed |
-| fibre digging | Digging paper and wood out of buried offices and warehouses. The road on which the most people in Seoul die | Proposed |
+| fibre digging | Digging paper and wood out of buried offices and warehouses. The work that kills more people in Seoul than any other | Proposed |
 | the rim | The band of war machines circling 2 to 10 kilometres outside Seoul. See [The First AI and the Machines Outside](/wiki/Regional-Physical-AI-Arcs/) | Proposed |
 | power core | A power source pried out of a broken war machine beyond the rim. It is paid for with lives | Proposed |
 | the return network | The chain of radios and shelters that meets people coming back across the rim | Proposed |
@@ -89,7 +89,7 @@ How the seats of the three polities fit together is in [Titles and Offices](/wik
 | the struck-off | People removed from the ledger. In speech, "the erased" | Proposed |
 | acclamation, the fourteen seals | How the life president is made: the fourteen Members stamp their seals under a candidate's name | Proposed |
 | inherited seat | A Member's family passing a district's seat down. People say "the seat is handed down" | Proposed |
-| OMO Party | One of the Government's two parties: the party of contracts, which holds that the ledger survives only by contracting with across the river | Party name settled; line proposed |
+| OMO Party | One of the Government's two parties: the party of contracts, which holds that the ledger survives only by making contracts with the far side of the river | Party name settled; line proposed |
 | Claw Party | One of the Government's two parties: the party of the ledger, which holds that the north must live on its own land and hands | Party name settled; line proposed |
 | coupon | The Government's money. There are meal, water, fuel and goods coupons. The unit printed on them is the won | Proposed |
 | meal, workday | How Government people reckon. One meal is one person's day of meal coupons plus 10 litres of water. One day of registered work is one workday | Proposed |
@@ -122,7 +122,7 @@ Free City people have their sayings too. "How's the wind?" is a greeting, and "N
 | Word | Meaning | Status |
 |---|---|---|
 | baptism | Replacing a part of the body with a machine. In the Arc, faith is counted by the number of implanted parts | Settled |
-| God | What Go Ye-jin and Arc believers call the First AI | Settled |
+| God | What Go Ye-jin calls the First AI; Arc believers use the word too | Word settled; believers' use proposed |
 | part count | The number of machines in a body. Arc people put the part count before a person's name | Proposed |
 | the unbaptised | Arc people who have not received baptism | Proposed |
 | baptismal list | The list of the baptised and their parts. What it is to be called has not yet been decided | Proposed |

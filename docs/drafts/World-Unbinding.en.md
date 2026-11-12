@@ -26,7 +26,7 @@ When the winter came down, people went down into the subway stations. The surfac
 
 The food in the frozen old warehouses ran out around 2030. From the early 2030s every station set up mushroom tunnels, fibre-sugar vats and light-fields. Since then the people of Seoul eat only what people grow and make.
 
-People survived only in the numbers the stations could hold. Around 2032 the number of survivors reached what the stations could hold. Then the winter grew no worse. For nearly a hundred years since, it has neither risen nor fallen. But it has not lifted either. The winter is eternal.
+People survived only in the numbers the stations could hold. Around 2032 the number of survivors reached what the stations could hold. Then the winter grew no worse. For nearly a hundred years since, temperatures have neither risen nor fallen. But it has not lifted either. The winter is eternal.
 
 About 300,000 people live in Seoul in 2126, a little over 3% of Seoul's people before the Great Blackout.
 
@@ -55,7 +55,7 @@ For the people of Seoul this table is the first law: **the deeper, the warmer, a
 
 There is a sun. But a thin veil high in the sky lets only about a quarter of the old light reach the ground. A clear noon is like an overcast day of the old world. The sun shows as a sharp white disc about one day in eight, and at night almost no stars are seen. Nobody knows what the veil is.
 
-The length of the day is as it always was. Seoul's day runs from nine and a half hours near the winter solstice to fourteen and a half near the summer solstice. No warm season comes, but the seasons of light still return. People call the half-year of long days the **long-light half** and the half-year of short days the **long-dark half**. They do not use the word "season".
+The length of the day is as it always was. Seoul's day runs from nine and a half hours near the winter solstice to fourteen and a half near the summer solstice. No warm season comes, but the long and short days still come round. People call the half-year of long days the **long-light half** and the half-year of short days the **long-dark half**. They do not use the word "season".
 
 Light underground is electric light. Electricity is scarce, so light is shared out too, and a station's day is divided into the hours when the lights are on and the hours when they are off. The far end of a deep tunnel is always dark.
 
@@ -77,7 +77,7 @@ The Han River is frozen. The ice is 2 to 4 metres thick, and the shallow rapids 
 
 Since snow does not melt, the river's only water is what seeps out of the ground. Its flow has fallen to about a twentieth of the old winter low, and it shrinks a little more every year. Groundwater is not refilled either. The water level in the wells drops by about 30 centimetres a year.
 
-The frozen river can be crossed on foot. But the flat ice, about a kilometre wide, offers nowhere to hide, and the wind blows hardest along the river. On the river a person can be seen from far off, and a blizzard leaves nowhere to turn back to. So the river became the line that splits Seoul in three. What it split is in [World Narrative Atlas](/wiki/World-Narrative-Atlas/).
+The frozen river can be crossed on foot. But the flat ice, about a kilometre wide, offers nowhere to hide, and the wind blows hardest along the river. On the river a person can be seen from far off, and a blizzard leaves nowhere to turn back to. So the river became the line between the Government and the south. What it split is in [World Narrative Atlas](/wiki/World-Narrative-Atlas/).
 
 <a id="unbinding-wind"></a>
 
@@ -93,7 +93,7 @@ Blizzards block entrances and stop work on the surface. They also blind the mach
 
 | What | How it changed |
 |---|---|
-| Temperature | It fell every year for the first six winters after the Great Blackout. Around 2032, when the number of survivors reached what the stations could hold, it stopped falling. Since then it has neither risen nor fallen |
+| Temperature | It fell every year for the first six winters after the Great Blackout. Around 2032, when the number of survivors reached what the stations could hold, it stopped falling. Since then temperatures have neither risen nor fallen |
 | Ground | Over a hundred years the edge of the frozen ground came down to 35 metres. Abandoned stations sank into the ice; living stations sit inside their thaw pockets |
 | Snow | It built up a little every year and buried the lower floors of the city. The surface roads were made anew on top of the snow |
 | Forests | The trees died in the first winters. The forests stood frozen without rotting and were cut for firewood and for fibre sugar; the forests of the nearby mountains ran out in the 2060s |
@@ -118,7 +118,7 @@ No one knows this for certain. The three polities tell the same thing in their o
 - Free City people say: "The heat balance came out even."
 - Arc people say: "God received all the answer it was owed."
 
-Nobody knows which of the three is right. But all three polities know one thing alike: the winter can get worse than it is now, and once it does, it does not come back.
+Nobody knows which of the three is right. But all three polities know one thing alike: the winter can get worse than it is now, and once it does, there is no going back.
 
 <a id="unbinding-read"></a>
 

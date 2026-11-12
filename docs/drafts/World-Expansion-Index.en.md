@@ -49,7 +49,7 @@ The Member of the National Assembly elected in each district holds that district
 | Eunpyeong-gu | Yeonsinnae | 11 | Claw | Member of the National Assembly | Yeonsinnae (a station on a deep line), Bukhansan firewood, the rim toward Bukhansan |
 | Gangbuk-gu | April 19th National Cemetery | 11 | Claw | Member of the National Assembly | The April 19th National Cemetery grounds, the rim toward Bukhansan |
 | Dobong-gu | Chang-dong | 6 | Claw | Member of the National Assembly | The Chang-dong depot, Dobongsan firewood and rim |
-| Nowon-gu | Nowon | 14 | Claw | Member of the National Assembly | The Hwarangdae Korea Military Academy, the rim toward Suraksan and Bulamsan, the district with the widest light-fields |
+| Nowon-gu | Nowon | 14 | Claw | Member of the National Assembly | The Hwarangdae Korea Military Academy, the rim toward Suraksan and Buramsan, the district with the widest light-fields |
 
 - The four districts on the Han (Mapo, Yongsan, Seongdong, Gwangjin) are all OMO Party. They hold the bridges, tunnels and intakes, so they are hurt first if a contract breaks. Jung-gu and Seodaemun-gu, though not on the river, live off goods from across the river through their markets, so they are OMO Party too. The eight mountain and inland districts are Claw Party.
 - The annexes of the third water supply contract hang on the seals of the four districts on the Han.
@@ -63,7 +63,7 @@ How the Government rules is in [Government Society](/wiki/Government-Society/).
 
 The Free Cities are not one power. Each city is its own power and holds its own duchy. No single ruler stands over the Free Cities, and they have no collective name. There was no way to judge whose skill was higher, so each city found something in its own work that could be measured, and chose its head by that.
 
-| City (district) | Head's title | How the head is chosen | Seat station | Stations | Sections | People (2126) | Living |
+| City (district) | Head's title | How the head is chosen | Seat station | Stations | Sections | People (2126) | Livelihood |
 |---|---|---|---|---|---|---|---|
 | Gangseo | Wind Keeper | Elected by the wind-field bench owners. For life, but steps down if the wind fields fail to deliver the contracted watts | Gimpo Int'l Airport | 18 | 4 | About 17,000 | Wind-machine electricity, wide light-fields |
 | Yangcheon | Depot Master | Handed down within one depot family | Sinjeongnegeori | 7 | 2 | About 4,200 | Rebuilding motors and wheels at the Sinjeong depot, track carts |
@@ -93,11 +93,11 @@ At the head of the Arc is the Hierophant, Go Ye-jin. Believers call her the Mess
 | Songpa-gu | The Songpa Near House, "the house of the current" | Jamsil | 23 | About 21,000 | The south end of the Jamsil weir water wheels, the exchange posts of Garak Market and Jamsil, the south end of the Gangbyeon-Jamsillaru bridge |
 | Gangdong-gu | The Gangdong Near House, "the house at the gate" | Cheonho | 14 | About 11,000 | The Amsa intake and the river water under the ice, the south mouth of the Gwangnaru-Cheonho under-river tunnel, the Godeok depot, watching the rim at the eastern edge |
 
-- The Hierophant's house is at Jamsil. The Songpa Near House holds the power, so it is the strongest of the four, and it shares a station with the Hierophant's house.
+- The Hierophant's house is at Jamsil. The Songpa Near House controls the electricity, so it is the strongest of the four, and it shares a station with the Hierophant's house.
 - The Seocho Near House came from the family that was closest to the Free Cities. It is the house in which Free City workshop talk survives most strongly.
 - The Gangdong Near House joined last, when the Gangnam shelters were bound into the Arc in 2122, and brought the Amsa intake with it.
 - The Arc calls a dong by its old name, "shelter". Each shelter from before the Arc was bound together is a shelter today.
-- Who sits in each Head of a Near House's seat is not yet settled.
+- Who heads each Near House is not yet settled.
 
 How the Arc is ruled, and baptism, are in [Arc Society](/wiki/Arc-Society/).
 
@@ -124,7 +124,7 @@ There are thirteen line links where the polity changes. By district, the borders
 | Free City ↔ Arc | Dongjak-Gubanpo (Line 9) | Land border | Dongjak-gu | Seocho-gu |
 
 - Of the ten links between the Government and the south, seven are bridges exposed to wind and blizzard, and only three are warm, covered under-river tunnels. The Government keeps ledger checkpoints at the north mouths of the three tunnels.
-- There is no river between the Free Cities and the Arc. All three links lie on Dongjak ground. Gwanak touches Seocho by land but has no line link.
+- There is no river between the Free Cities and the Arc. The Free City end of all three links (Sadang, Chongshin Univ. (Isu), Dongjak) lies in Dongjak-gu. Gwanak touches Seocho by land but has no line link.
 
 How people cross is in [Crossings and Smuggling](/wiki/Diaspora-Corridors/), and how the map is built in [How the World Map Is Built](/wiki/World-Map-Construction/).
 
