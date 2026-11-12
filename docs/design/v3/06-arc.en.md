@@ -27,7 +27,7 @@ The Arc is the four districts south-east of the Han: Seocho, Gangnam, Songpa and
 
 (provisional T07-1)
 
-The 78 stations are a map-data value. The total of about 65,000 is 01-core 4.3 (provisional T02-29); the split by district is set by this chapter from station counts and large interchanges (the station grades of 4.3). Songpa is largest because of the Jamsil water-wheel power and the Garak Market (가락시장) trading floor; Gangdong is smallest because it has the fewest stations and its eastern edge touches the Seoul boundary.
+The 78 stations are a map-data value. The total of about 65,000 is 01-core 4.3 (provisional T02-29); the split by district is set by this chapter from station counts and large interchanges (the station grades of 4.3). Songpa is largest because of the Jamsil water-wheel power and the large stores at Garak Market (가락시장); Gangdong is smallest because it has the fewest stations and its eastern edge touches the Seoul boundary.
 
 A **seat station** is the station where the Head of the Near House lives and where the district's maintenance benches and baptismal lists are gathered (provisional T07-2). All four seat stations are interchanges. Gosok Terminal is the widest station in Seocho, where three lines meet; Suseo has a deep line layer and the old depot; Jamsil is the station of about 3,100 people computed in 01-core 4.2; Cheonho is joined by under-river tunnel to the Government's Gwangnaru (광나루).
 
@@ -127,7 +127,7 @@ Every station and dong name below is a map_station or map_region value in `120-m
 
 - District: Seocho-gu, 18 stations. Seat station Gosok Terminal.
 - History: several of the first twelve baptised around 2117 were Free City technicians who had mended the grid with Go Ye-jin (01-core 7.3). The Seocho Near House comes from the households among them who lived in the Bangbae (방배) and Naebang (내방) shelters. The house closest to the Free Cities was the first in the Arc to give its bodies (provisional T07-12).
-- Holds: the Arc-side stations Bangbae, Naebang and Gubanpo (구반포) of the three land boundary links with the Free Cities (Sadang-Bangbae, Chongsindae-ipgu (Isu)-Naebang, Dongjak-Gubanpo; 01-core 7.4). The parts market of Gosok Terminal (8.6). Watching the rim of the outside machines (01-core 6.3) from Cheonggyesan-ipgu (청계산입구) at the south end.
+- Holds: the Arc-side stations Bangbae, Naebang and Gubanpo (구반포) of the three land boundary links with the Free Cities (Sadang-Bangbae, Chongsindae-ipgu (Isu)-Naebang, Dongjak-Gubanpo; 01-core 7.4). The exchange post of Gosok Terminal (8.6). Watching the rim of the outside machines (01-core 6.3) from Cheonggyesan-ipgu (청계산입구) at the south end.
 - Character: the house in which Free City workshop speech survives most strongly. It faces Dongjak's Ferry Keeper every day. The other Near Houses call it "the house that knows Sadang better than across the river".
 
 ### 4.2 The Gangnam Near House: the house of the deep layer
@@ -141,7 +141,7 @@ Every station and dong name below is a map_station or map_region value in `120-m
 
 - District: Songpa-gu, 23 stations. Seat station Jamsil.
 - History: of the Songpa shelters that built the Jamsil weir water wheels with a Free City crew in the 2070s (01-core 7.3), it is the house that has run the wheels for over fifty years. At the 2120 negotiation with the shelters on the Tancheon side it promised the wheels' power to Go Ye-jin's benches. That day Ji Yeon-hui stood at her side (Bible 3). The Songpa shelters entered the Arc through that promise (provisional T07-14).
-- Holds: the south end of the Jamsil weir water wheels (01-core 5.1, about 400 kW when running well). The trading floors of Garak Market and Jamsil. The south end of the Gangbyeon-Jamsillaru bridge. The north end of the weir is held by the Government (Gwangjin), so the Songpa Near House always guards half a wheel.
+- Holds: the south end of the Jamsil weir water wheels (01-core 5.1, about 400 kW when running well). The exchange posts of Garak Market and Jamsil. The south end of the Gangbyeon-Jamsillaru bridge. The north end of the weir is held by the Government (Gwangjin), so the Songpa Near House always guards half a wheel.
 - Character: holding the power, it is the strongest of the four and shares a station with the Hierophant's household. So the other houses suspect it hears the Hierophant's word first.
 
 ### 4.4 The Gangdong Near House: the house of the doorway
@@ -359,7 +359,7 @@ The figure of about 0.7 MW for the whole Arc is the Arc's share derived from cha
 
 ### 8.2 The units of account: day charges and maintenance turns
 
-The Arc's units are the two set in chapter 03, 11.3. A **day charge** (하루 충전) is one baptised person's daily share of power (about 0.2 kWh), and a **maintenance turn** (정비 차례) is one maintenance at the bench (one 30-day check). Wages, penalties and what passes at a marriage are all spoken of in day charges or maintenance turns, even when actually paid in food or water. A tally stamped by a Bench Keeper proves the day charges and maintenance turns owed. Other polities' units also pass in the markets, but Arc people do not save in them (provisional T07-36).
+The Arc's units are the two set in chapter 03, 11.3. A **day charge** (하루 충전) is one baptised person's daily share of power (about 0.2 kWh), and a **maintenance turn** (정비 차례) is one maintenance at the bench (one 30-day check). Wages, penalties and what passes at a marriage are all spoken of in day charges or maintenance turns, even when actually paid in food or water. A tally stamped by a Bench Keeper proves the day charges and maintenance turns owed. Other polities' units also pass at the exchange posts, but Arc people do not save in them (provisional T07-36).
 
 ### 8.3 Distribution
 
@@ -380,17 +380,17 @@ Scarcity passes work from parents to children [Approved, Bible 1 row 12]. In the
 
 (provisional T07-39)
 
-### 8.6 Station markets
+### 8.6 Station exchange posts
 
-Inside the Arc, meals and sleeping places move not through markets but through the distribution of the Near Houses and benches (8.3, chapter 03, 11.3). The markets below are where the Arc trades with outsiders, and where households exchange what is left over after distribution for day charges and maintenance turns.
+There is no market inside the Arc. Arc people do not buy and sell the same goods among themselves; meals, sleeping places and parts are distributed by the Near Houses and benches (8.3, chapter 03, 11.3). Only exchange with outsiders happens, at five set stations. These places are called **exchange posts** (바꿈터). There the tally keepers and negotiators set by the Near House give and take the Arc's share, and what is received goes straight into the Near House stores and benches for distribution (provisional T07-40).
 
-| Station | District | Lines | Market |
+| Station | District | Lines | What is exchanged at the post |
 |---|---|---|---|
-| Garak Market (가락시장) | Songpa-gu | Line 3, Line 8 | The Arc's largest food market. Fibre sugar, dried larvae, salted fish and seed sold in bulk |
-| Jamsil (잠실) | Songpa-gu | Line 2, Line 8 | Power shares and day-charge and maintenance-turn tallies are traded. The prices the other markets follow are set here |
-| Gosok Terminal (고속터미널) | Seocho-gu | Lines 3, 7, 9 | The parts market. Wire, batteries, salvage, and Free City machined parts brought over the boundary |
-| Cheonho (천호) | Gangdong-gu | Line 5, Line 8 | Fish and felt from the eastern stations; Government fibre and salt coming in from the under-river tunnel |
-| Suseo (수서) | Gangnam-gu | Line 3, Suin-Bundang Line, GTX-A | Metal and tools salvaged from the old depot; mushrooms from the deep layer |
+| Garak Market (가락시장) | Songpa-gu | Line 3, Line 8 | Food exchange post. Some of the Arc's stored food (dried larvae, salted fish) goes out; fibre and seed from the Free City and Government sides come in |
+| Jamsil (잠실) | Songpa-gu | Line 2, Line 8 | Power exchange post. Jamsil weir power is given out counted in day charges, and maintenance turns are sold to outsiders. The Arc's share of the water supply contract is reckoned here |
+| Gosok Terminal (고속터미널) | Seocho-gu | Lines 3, 7, 9 | Parts exchange post. Free City machined parts, wire and batteries brought over the boundary come in; maintenance turns go out |
+| Cheonho (천호) | Gangdong-gu | Line 5, Line 8 | Tunnel exchange post. Government fibre and salt from the under-river tunnel come in; maintenance turns for Government machine bodies (7.5) and Amsa fish go out |
+| Suseo (수서) | Gangnam-gu | Line 3, Suin-Bundang Line, GTX-A | Metal exchange post. Some metal and tools salvaged from the old depot go out; power packs brought in from outside come in |
 
 (provisional T07-40)
 
@@ -451,7 +451,7 @@ A station's day is three shifts set by the bench. While the bench has power, som
 | Shift | What happens |
 |---|---|
 | First shift | Begins with the calling (6.2). The bench's busiest time. The unbaptised go to the entrances and fibre-sugar vats |
-| Second shift | The markets open. Children learn tool names and counting beside the bench |
+| Second shift | The Near House stores hand out the day's shares. Stations with an exchange post receive outsiders. Children learn tool names and counting beside the bench |
 | Third shift | Lights are turned down. One bench stays lit, and the ailing are tended |
 
 ### 10.2 Sleeping places
@@ -554,7 +554,7 @@ Basis: Bible 1 row 10, 2.3, 2.4, 6 (rows person-1018, 0086, 0088, 0374, 0399), 9
 
 Eight groups. The titles and occupation names used in each group are in 12.4.
 
-| Place | Ruling | Shelter Heads, Bench Keepers | Fitting and care | Fighting | Water, power, heat | Food | Markets, negotiation, records | Outside work | Total |
+| Place | Ruling | Shelter Heads, Bench Keepers | Fitting and care | Fighting | Water, power, heat | Food | Exchange posts, negotiation, records | Outside work | Total |
 |---|---|---|---|---|---|---|---|---|---|
 | The Hierophant's household | 1 | 0 | 3 | 3 | 0 | 1 | 4 | 0 | 12 |
 | Seocho-gu | 5 | 12 | 12 | 12 | 6 | 10 | 9 | 6 | 72 |
@@ -565,7 +565,7 @@ Eight groups. The titles and occupation names used in each group are in 12.4.
 
 (provisional T07-55)
 
-Each district leans differently. Seocho has many in markets and negotiation because of boundary dealing and the parts market. Gangnam has many in fitting and care and in outside work (salvage) because of its deep-layer benches and the old depot. Songpa has the most in water, power and heat because of the wheels, and many in markets because of Garak Market and Jamsil. Gangdong has many in water and food because of the Amsa intake and river fish, and many in fighting because of the tunnel and the eastern rim.
+Each district leans differently. Seocho has many in exchange and negotiation because of boundary dealing and the Gosok Terminal exchange post. Gangnam has many in fitting and care and in outside work (salvage) because of its deep-layer benches and the old depot. Songpa has the most in water, power and heat because of the wheels, and many in exchange work because of the Garak Market and Jamsil exchange posts. Gangdong has many in water and food because of the Amsa intake and river fish, and many in fighting because of the tunnel and the eastern rim.
 
 ### 12.4 Titles, occupations and stages by group
 
@@ -577,7 +577,7 @@ Each district leans differently. Seocho has many in markets and negotiation beca
 | Fighting | 호위장 / Guard Captain. 세례 전투원 / baptised fighter. 가문 징집병 / house levy. 교주 호위 / Hierophant's guard | Guard Captain S1, the rest S2-S4 | Guard Captain 30, baptised fighter 20, levy 17 |
 | Water, power, heat | 수차지기 / water-wheel keeper. 취수구지기 / intake keeper. 열 펌프지기 / heat-pump keeper. 출입구지기 / entrance keeper | S2-S4 | 16 |
 | Food | 섬유당 통지기 / fibre-sugar vat keeper. 빛밭지기 / light-field keeper. 버섯 굴지기 / mushroom-cellar keeper. 얼음 낚시꾼 / ice fisher. 부엌 일꾼 / cook | S3-S4 | 16 |
-| Markets, negotiation, records | 셈꾼 (handles day-charge and maintenance-turn tallies) / tally keeper. 교섭인 / negotiator. 세례록 기록꾼 / roll keeper. 말지기 (household only) / Word Keeper | Negotiators and Word Keepers S1-S2, the rest S2-S4 | negotiator 30, Word Keeper 25 |
+| Exchange posts, negotiation, records | 셈꾼 (handles day-charge and maintenance-turn tallies) / tally keeper. 교섭인 / negotiator. 세례록 기록꾼 / roll keeper. 말지기 (household only) / Word Keeper | Negotiators and Word Keepers S1-S2, the rest S2-S4 | negotiator 30, Word Keeper 25 |
 | Outside work | 고물꾼 / salvager. 섬유 캐는 사람 / fibre digger. 테두리 망꾼 / rim watcher. 동력 덩이 캐는 사람 / power-pack runner. 전령 / runner | S3-S4 | 18 |
 
 (provisional T07-56)
@@ -585,7 +585,7 @@ Each district leans differently. Seocho has many in markets and negotiation beca
 - The title ladder is 01-core 8.3 unchanged (Bench Keeper, Shelter Head, Head of the Near House, the Seat of the Four Near Houses, Hierophant). The occupation names in this table were made in this chapter under the 01-core 2.3 rule (shelter-era words and words of the body and repair).
 - Chapter 07's general age rules come first. The ages above are the lowest at which someone can hold that place in the Arc, and the lower bound when a new age is given to someone with no recorded age.
 - Clergy vocabulary from old positions and old state titles (chair, commander, speaker, group chairman and the like) are not used (Bible 6, 01-core 10).
-- Stage S3 is someone with one function in the story (a witness, a runner, a well-known tally keeper of a market); S4 is an ordinary worker of the district.
+- Stage S3 is someone with one function in the story (a witness, a runner, a well-known tally keeper of an exchange post); S4 is an ordinary worker of the district.
 
 ## 13. Where this chapter extends 01-core
 
