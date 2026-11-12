@@ -19,7 +19,7 @@ The Arc is the four districts south-east of the Han: Seocho, Gangnam, Songpa and
 
 | District | Stations (`120-map-core.sql`) | Population 2126 | Near House | Seat station |
 |---|---|---|---|---|
-| Seocho-gu | 18 | about 15,000 | the Seocho Near House | Gosok Terminal (고속터미널) |
+| Seocho-gu | 18 | about 15,000 | the Seocho Near House | Express Bus Terminal (고속터미널) |
 | Gangnam-gu | 23 | about 18,000 | the Gangnam Near House | Suseo (수서) |
 | Songpa-gu | 23 | about 21,000 | the Songpa Near House | Jamsil (잠실) |
 | Gangdong-gu | 14 | about 11,000 | the Gangdong Near House | Cheonho (천호) |
@@ -29,7 +29,7 @@ The Arc is the four districts south-east of the Han: Seocho, Gangnam, Songpa and
 
 The 78 stations are a map-data value. The total of about 65,000 is 01-core 4.3 (provisional T02-29); the split by district is set by this chapter from station counts and large interchanges (the station grades of 4.3). Songpa is largest because of the Jamsil water-wheel power and the large stores at Garak Market (가락시장); Gangdong is smallest because it has the fewest stations and its eastern edge touches the Seoul boundary.
 
-A **seat station** is the station where the Head of the Near House lives and where the district's maintenance benches and baptismal lists are gathered (provisional T07-2). All four seat stations are interchanges. Gosok Terminal is the widest station in Seocho, where three lines meet; Suseo has a deep line layer and the old depot; Jamsil is the station of about 3,100 people computed in 01-core 4.2; Cheonho is joined by under-river tunnel to the Government's Gwangnaru (광나루).
+A **seat station** is the station where the Head of the Near House lives and where the district's maintenance benches and baptismal lists are gathered (provisional T07-2). All four seat stations are interchanges. Express Bus Terminal is the widest station in Seocho, where three lines meet; Suseo has a deep line layer and the old depot; Jamsil is the station of about 3,100 people computed in 01-core 4.2; Cheonho is joined by under-river tunnel to the Government's Gwangnaru (광나루).
 
 ## 2. The Hierophant and Messiah
 
@@ -125,16 +125,16 @@ Every station and dong name below is a map_station or map_region value in `120-m
 
 ### 4.1 The Seocho Near House: the house of the border
 
-- District: Seocho-gu, 18 stations. Seat station Gosok Terminal.
+- District: Seocho-gu, 18 stations. Seat station Express Bus Terminal.
 - History: several of the first twelve baptised around 2117 were Free City technicians who had mended the grid with Go Ye-jin (01-core 7.3). The Seocho Near House comes from the households among them who lived in the Bangbae (방배) and Naebang (내방) shelters. The house closest to the Free Cities was the first in the Arc to give its bodies (provisional T07-12).
-- Holds: the Arc-side stations Bangbae, Naebang and Gubanpo (구반포) of the three land boundary links with the Free Cities (Sadang-Bangbae, Chongsindae-ipgu (Isu)-Naebang, Dongjak-Gubanpo; 01-core 7.4). The exchange post of Gosok Terminal (8.6). Watching the rim of the outside machines (01-core 6.3) from Cheonggyesan-ipgu (청계산입구) at the south end.
+- Holds: the Arc-side stations Bangbae, Naebang and Gubanpo (구반포) of the three land boundary links with the Free Cities (Sadang-Bangbae, Chongshin Univ. (Isu)-Naebang, Dongjak-Gubanpo; 01-core 7.4). The exchange post of Express Bus Terminal (8.6). Watching the rim of the outside machines (01-core 6.3) from Cheonggyesan (청계산입구) at the south end.
 - Character: the house in which Free City workshop speech survives most strongly. It faces Dongjak's Ferry Keeper every day. The other Near Houses call it "the house that knows Sadang better than across the river".
 
 ### 4.2 The Gangnam Near House: the house of the deep layer
 
 - District: Gangnam-gu, 23 stations. Seat station Suseo.
 - History: during the five years of 2112-2117 when Go Ye-jin read the manual, the shelters around the old Suseo depot kept her bench supplied with food and salvage. The Gangnam Near House is the leading house of those shelters (provisional T07-13).
-- Holds: Suseo's deep line layer (the deep-tunnel layer of 01-core 3.1) and the old depot workshops. Large stations such as Seolleung (선릉), Samseong (삼성) and Dogok (도곡). Three northern links with the Government: the south mouth of the Seoulsup-Apgujeong Rodeo under-river tunnel, and the south ends of the Oksu-Apgujeong and Jayang-Cheongdam bridges (01-core 7.4).
+- Holds: Suseo's deep line layer (the deep-tunnel layer of 01-core 3.1) and the parts store of the old depot (its workshop has been stripped, chapter 03 section 7.3). Large stations such as Seolleung (선릉), Samseong (삼성) and Dogok (도곡). Three northern links with the Government: the south mouth of the Seoul Forest-Apgujeong Rodeo under-river tunnel, and the south ends of the Oksu-Apgujeong and Jayang-Cheongdam bridges (01-core 7.4).
 - Character: holding the deepest, warmest layers of the Arc, it is the most sparing of words and endures longest. Guarding the northern tunnel mouth, it lives closest to the Government checkpoint.
 
 ### 4.3 The Songpa Near House: the house of the current
@@ -191,7 +191,7 @@ First baptism is taken only after sixteen. Baptism that mends a lost place does 
 
 ### 5.3 How many are baptised
 
-Of about 65,000 Arc people in 2126, about 11,000 are baptised, about one in six (about 17%; the value of chapter 03, section 4). Jamsil, at 900 or 29% of the station, is well above that (01-core 4.2), because the baptised gather at stations the wheel power reaches. Among the baptised, about 60% have one part, about 22% two, about 13% three or four, and about 5% five or more. About 550 people in the whole Arc have five parts or more, most of them Bench Keepers, Near House people and baptised fighters (provisional T07-19).
+Of about 65,000 Arc people in 2126, about 11,000 are baptised, about one in six (about 17%; the value of chapter 03, section 4). Jamsil, at 900 or 29% of the station, is well above that (01-core 4.2), because the baptised gather at stations the wheel power reaches. Among the baptised, about 50% have one part, about 25% two, about 18% three or four, and about 7% five or more. That averages about two parts a person, matching the charging count of chapter 03 section 4.4 (two parts a person, about 8 W). About 770 people in the whole Arc have five parts or more, most of them Bench Keepers, Near House people and baptised fighters (provisional T07-19).
 
 The reason only one in six is baptised is simple: there are only that many parts, maintenance turns and watts. A baptised person uses 8 W on average for charging; 11,000 people use about 88 kW (chapter 03; body-machine charging for all Seoul is about 100 kW). About an eighth of the roughly 0.7 MW the Arc uses (8.1) goes into bodies.
 
@@ -317,7 +317,7 @@ The Free City story and the Arc story differ. Both may appear in public text (pr
 
 ### 7.3 Trade and quarrels now
 
-- Dongjak is the only city that touches the Arc by rail line. Trade and quarrels both happen at the three boundary stations (Sadang, Chongsindae-ipgu (Isu) and Dongjak, opposite Bangbae, Naebang and Gubanpo; 01-core 7.4). Gwanak touches Seocho by land but has no line link.
+- Dongjak is the only city that touches the Arc by rail line. Trade and quarrels both happen at the three boundary stations (Sadang, Chongshin Univ. (Isu) and Dongjak, opposite Bangbae, Naebang and Gubanpo; 01-core 7.4). Gwanak touches Seocho by land but has no line link.
 - The Arc buys machined parts, wind-machine and heat-pump repair, and people who can machine. The Arc sells body maintenance (the Free Cities have machine bodies too, but the hands that keep them alive long are mostly in the Arc), Jamsil's power, and stored food from Garak Market.
 - There are three standing quarrels: Free City technicians crossing over to be baptised, the price of major wheel repairs, and the parts of Free City people refused refitting (5.7) (provisional T07-31).
 
@@ -334,7 +334,7 @@ The Free City story and the Arc story differ. Both may appear in public text (pr
 
 - The Government ledger records the Arc as off the ledger (01-core 9). The Government calls the whole south of the river "across the river", the Arc included.
 - The Government has almost no machine bodies; those who have one end up depending on the Arc (01-core 5.6). The Government's fear is that its soldiers and clerks are drawn to baptism (01-core 7.4).
-- Where the Arc fears the Government is the two under-river tunnels (Gwangnaru-Cheonho, Seoulsup-Apgujeong Rodeo) and the north end of the weir. Since 2079 armies have not crossed the river ice (01-core 9, rows 2076-2085).
+- Where the Arc fears the Government is the two under-river tunnels (Gwangnaru-Cheonho, Seoul Forest-Apgujeong Rodeo) and the north end of the weir. Since 2079 armies have not crossed the river ice (01-core 9, rows 2076-2085).
 - Maintenance of Government machine bodies is taken at the south mouths of the under-river tunnels, so that Government people do not come deep into Arc land. Payment is in fibre and salt (provisional T07-33).
 
 ## 8. Economy: cyberware and maintenance
@@ -347,7 +347,7 @@ This section writes only **what is needed** to keep a machine body alive. What t
 
 | Need | Why | Where the Arc gets it |
 |---|---|---|
-| Electricity | Charging parts; 8 W per baptised person on average (01-core 4.2) | The Jamsil weir wheels, bought power packs, and wind-machine power bought from the Free City side. About 0.7 MW for the whole Arc |
+| Electricity | Charging parts; 8 W per baptised person on average (01-core 4.2) | The Jamsil weir wheels, bought power cores, and wind-machine power bought from the Free City side. About 0.7 MW for the whole Arc |
 | Maintenance turns | Parts are tended at the bench on every fitting day | The hands of Bench Keepers and fitters. The most precious thing in the Arc |
 | Parts | Worn ones are replaced | Parts returned from the dead, salvage, machined parts bought from the Free Cities, pieces of war machines broken outside |
 | Medicine and care | While the body takes the machine, and when it cannot | Little. One of the scarcest things |
@@ -355,7 +355,7 @@ This section writes only **what is needed** to keep a machine body alive. What t
 
 (provisional T07-34)
 
-The figure of about 0.7 MW for the whole Arc is the Arc's share derived from chapter 03's source table (Seoul about 5 MW): the Jamsil weir wheels at about 0.35 MW on average, counting the days ice grains stop them; a share of bought power packs of about 0.15 MW (of Seoul's about 0.7 MW of power packs); and about 0.2 MW of wind power bought from the Free City side or drawn from wind machines on the tops of buried Gangnam buildings. The roughly 88 kW for charging is about an eighth of it (5.3) (provisional T07-35).
+The figure of about 0.7 MW for the whole Arc is the Arc's share derived from chapter 03's source table (Seoul about 5 MW): the Jamsil weir wheels at about 0.35 MW on average, counting the days ice grains stop them; a share of bought power cores of about 0.15 MW (of Seoul's about 0.7 MW of power cores); and about 0.2 MW of wind power bought from the Free City side or drawn from wind machines on the tops of buried Gangnam buildings. The roughly 88 kW for charging is about an eighth of it (5.3) (provisional T07-35).
 
 ### 8.2 The units of account: day charges and maintenance turns
 
@@ -388,9 +388,9 @@ There is no market inside the Arc. Arc people do not buy and sell the same goods
 |---|---|---|---|
 | Garak Market (가락시장) | Songpa-gu | Line 3, Line 8 | Food exchange post. Some of the Arc's stored food (dried larvae, salted fish) goes out; fibre and seed from the Free City and Government sides come in |
 | Jamsil (잠실) | Songpa-gu | Line 2, Line 8 | Power exchange post. Jamsil weir power is given out counted in day charges, and maintenance turns are sold to outsiders. The Arc's share of the water supply contract is reckoned here |
-| Gosok Terminal (고속터미널) | Seocho-gu | Lines 3, 7, 9 | Parts exchange post. Free City machined parts, wire and batteries brought over the boundary come in; maintenance turns go out |
+| Express Bus Terminal (고속터미널) | Seocho-gu | Lines 3, 7, 9 | Parts exchange post. Free City machined parts, wire and batteries brought over the boundary come in; maintenance turns go out |
 | Cheonho (천호) | Gangdong-gu | Line 5, Line 8 | Tunnel exchange post. Government fibre and salt from the under-river tunnel come in; maintenance turns for Government machine bodies (7.5) and Amsa fish go out |
-| Suseo (수서) | Gangnam-gu | Line 3, Suin-Bundang Line, GTX-A | Metal exchange post. Some metal and tools salvaged from the old depot go out; power packs brought in from outside come in |
+| Suseo (수서) | Gangnam-gu | Line 3, Suin-Bundang Line, GTX-A | Metal exchange post. Some metal and tools salvaged from the old depot go out; power cores brought in from outside come in |
 
 (provisional T07-40)
 
@@ -401,7 +401,7 @@ There is no market inside the Arc. Arc people do not buy and sell the same goods
 | Machined parts, wind-machine and heat-pump repair | the Free Cities (Dongjak boundary) | Body maintenance | the Free Cities, the Government |
 | Fibre, salt | the Government (south mouths of the under-river tunnels) | Jamsil power shares | all three polities through the water supply contract |
 | A little firewood | the Government, Gwanak | Amsa river water | through the water supply contract |
-| Power packs | people who cross the outside rim | Some stored food | the Free Cities |
+| Power cores | people who cross the outside rim | Some stored food | the Free Cities |
 
 The Arc's food rests on the fibre left in deep buildings and on river fish (01-core 5.6). Surface land is narrow, so light-fields are small, and there is almost no firewood. So the Arc spends the most day charges and maintenance turns buying fibre (provisional T07-41).
 
@@ -486,7 +486,7 @@ Unit figures and ids are set only by `data/sql/132-units-arc.sql` and task 20. T
 
 - One army has one commander. The commander commands every squad of the army; squads have no authority to move on their own [Approved, D3].
 - Arc armies are raised by the Near Houses. Each Near House keeps one army, commanded by its Head or a **Guard Captain** (호위장) the Head chooses. The Hierophant's household guard is one more. In peacetime these five stand (provisional T07-49).
-- Squads come from four sources: **house levies** raised from the Near House's households (mostly unbaptised), **baptised fighters** drawn from baptised people with two parts or more, support squads led by field fitters, and old machines revived at the old Suseo and Godeok depots (irreplaceable ones only).
+- Squads come from four sources: **house levies** raised from the Near House's households (mostly unbaptised), **baptised fighters** drawn from baptised people with two parts or more, support squads led by field fitters, and old machines revived at the old Godeok depot (irreplaceable ones only; the parts are salvaged from the Suseo store, chapter 03 section 7.3).
 - People judge a commander by the baptised fighters around them. Commanders have many guards because a Near House army is bound by blood.
 
 ### 11.2 The empty slots
@@ -503,9 +503,9 @@ The Arc has eight boundary links (01-core 7.4). Doctrine differs by link (provis
 
 | Boundary | Links | Near House | Doctrine |
 |---|---|---|---|
-| Land boundary with the Free Cities | Sadang-Bangbae, Chongsindae-ipgu (Isu)-Naebang, Dongjak-Gubanpo | Seocho | No river, so quarrels are most frequent. Block inside the station; do not pursue across. Dongjak is also a trading partner |
+| Land boundary with the Free Cities | Sadang-Bangbae, Chongshin Univ. (Isu)-Naebang, Dongjak-Gubanpo | Seocho | No river, so quarrels are most frequent. Block inside the station; do not pursue across. Dongjak is also a trading partner |
 | Under-river tunnel with the Government | Gwangnaru-Cheonho | Gangdong | A warm, covered way, so the field of war. Block the south mouth with baptised fighters |
-| Under-river tunnel with the Government | Seoulsup-Apgujeong Rodeo | Gangnam | The same. The Government's ledger checkpoint is at the north mouth (01-core 9) |
+| Under-river tunnel with the Government | Seoul Forest-Apgujeong Rodeo | Gangnam | The same. The Government's ledger checkpoint is at the north mouth (01-core 9) |
 | Bridges with the Government | Gangbyeon-Jamsillaru, Oksu-Apgujeong, Jayang-Cheongdam | Songpa, Gangnam | Exposed to wind and snow, so armies do not cross. Only watchers are kept at the south ends |
 
 - The river ice is not crossed. The Arc too learned from the Government's 2079 attempt across the ice, broken by a blizzard (01-core 9).
@@ -513,7 +513,7 @@ The Arc has eight boundary links (01-core 7.4). Doctrine differs by link (provis
 
 ### 11.4 It fights short
 
-Baptised fighters are strong, but when parts and medicine are cut off the whole elite weakens together (`implants`, `medicine` in roster-framework 9.3). So Arc doctrine is **back before the parts run dry**. An Arc army does not stay long more than a day's march from its seat station. The long holding fight is the Government's; the Arc blocks, strikes and finishes. Every army has field fitters, and an army that loses its fitters stops fighting and withdraws (provisional T07-52).
+Baptised fighters are strong, but when parts and medicine are cut off the whole elite weakens together (`implants`, `medicine` in roster-framework 9.3). So Arc doctrine is **back before the parts run dry**. An Arc army does not stay long more than a day's march from its seat station. The long holding fight is the Government's; the Arc blocks, strikes and finishes. Every army has field fitters, and an army that loses its fitters stops fighting and withdraws (provisional T07-52). On the campaign map this reads: an Arc army that has lost all the field fitters of its support squads withdraws toward its seat station at the end of that turn (chapter 09 section 4.4, `roster-framework.md` section 9.3, provisional T09-2).
 
 ### 11.5 How it recruits
 
@@ -544,8 +544,12 @@ Basis: Bible 1 row 10, 2.3, 2.4, 6 (rows person-1018, 0086, 0088, 0374, 0399), 9
 | Songpa-gu | 2 | 10 | 17 | 9 | 52 | 90 |
 | Gangdong-gu | 2 | 7 | 10 | 6 | 31 | 56 |
 | Total | 9 | 36 | 60 | 35 | 180 | 320 |
+| Chapter 07 assignment (one independent, Hierophant's household row) | 0 | +1 | 0 | 0 | 0 | +1 |
+| Total after assignment | 9 | 37 | 60 | 35 | 180 | 321 |
 
 (provisional T07-54)
+
+Chapter 07 section 3.2 adds the independent Ji Yeon-hui (person-1017) to the S1 of the Hierophant's household row. So the household has 13 people and the Arc 321. The table of section 12.3 below is the 320 before that addition (basis: chapter 07 section 3.3).
 
 - The household's 12 are based at Jamsil (Songpa-gu) but do not belong to the Songpa Near House (2.3). On the map and people pages they show as Songpa-gu.
 - The 9 Key people are the Hierophant 1, Heads of the Near Houses 4 and rivals 4 (4.5).
@@ -565,7 +569,7 @@ Eight groups. The titles and occupation names used in each group are in 12.4.
 
 (provisional T07-55)
 
-Each district leans differently. Seocho has many in exchange and negotiation because of boundary dealing and the Gosok Terminal exchange post. Gangnam has many in fitting and care and in outside work (salvage) because of its deep-layer benches and the old depot. Songpa has the most in water, power and heat because of the wheels, and many in exchange work because of the Garak Market and Jamsil exchange posts. Gangdong has many in water and food because of the Amsa intake and river fish, and many in fighting because of the tunnel and the eastern rim.
+Each district leans differently. Seocho has many in exchange and negotiation because of boundary dealing and the Express Bus Terminal exchange post. Gangnam has many in fitting and care and in outside work (salvage) because of its deep-layer benches and the old depot. Songpa has the most in water, power and heat because of the wheels, and many in exchange work because of the Garak Market and Jamsil exchange posts. Gangdong has many in water and food because of the Amsa intake and river fish, and many in fighting because of the tunnel and the eastern rim.
 
 ### 12.4 Titles, occupations and stages by group
 
@@ -578,7 +582,7 @@ Each district leans differently. Seocho has many in exchange and negotiation bec
 | Water, power, heat | 수차지기 / water-wheel keeper. 취수구지기 / intake keeper. 열 펌프지기 / heat-pump keeper. 출입구지기 / entrance keeper | S2-S4 | 16 |
 | Food | 섬유당 통지기 / fibre-sugar vat keeper. 빛밭지기 / light-field keeper. 버섯 굴지기 / mushroom-cellar keeper. 얼음 낚시꾼 / ice fisher. 부엌 일꾼 / cook | S3-S4 | 16 |
 | Exchange posts, negotiation, records | 셈꾼 (handles day-charge and maintenance-turn tallies) / tally keeper. 교섭인 / negotiator. 세례록 기록꾼 / roll keeper. 말지기 (household only) / Word Keeper | Negotiators and Word Keepers S1-S2, the rest S2-S4 | negotiator 30, Word Keeper 25 |
-| Outside work | 고물꾼 / salvager. 섬유 캐는 사람 / fibre digger. 테두리 망꾼 / rim watcher. 동력 덩이 캐는 사람 / power-pack runner. 전령 / runner | S3-S4 | 18 |
+| Outside work | 고물꾼 / salvager. 섬유 캐는 사람 / fibre digger. 테두리 망꾼 / rim watcher. 동력 덩이 캐는 사람 / power-core runner. 전령 / runner | S3-S4 | 18 |
 
 (provisional T07-56)
 

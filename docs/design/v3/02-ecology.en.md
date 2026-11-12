@@ -28,7 +28,7 @@ The old bestiary's "infected" kind (G19-G24) is not used. The v3 world has no di
 
 Depth uses chapter 1's four bands (surface, concourse, platform, deep tunnel; 01-core 3.1) unchanged, and adds two places in order to talk about threat (provisional T03-3).
 
-- **Abandoned sections.** Unused tunnels between stations, closed-off exits and frozen upper floors, and the basements of old buildings buried under snow. Whole abandoned stations are rare. The 312 stations of 01-core 4.3 are all counted as lived-in stations. What is abandoned is mostly part of a station, or the space between stations.
+- **Abandoned sections.** Unused tunnels between stations, closed-off exits and frozen upper floors, and the basements of old buildings buried under snow. Whole abandoned stations are rare. The 312 stations of 01-core 4.3 are all counted as lived-in stations (a few map entries with no line are left out of the population count, as chapter 04 section 16.1 does). The frozen stations where the Free Cities lay their dead are abandoned platforms belonging to these stations or old platforms not on the map (chapter 05 section 10.4). What is abandoned is mostly part of a station, or the space between stations.
 - **The perimeter.** The band 2-10 km outside Seoul's administrative boundary (01-core 6.3). The 0-2 km inside it is called the **forecourt** in this chapter (7.1).
 
 ## 2. Thaw-pocket ecology: the food web
@@ -170,12 +170,12 @@ In one line: **inside a living station, the deeper the safer; outside the statio
 
 | Station position | Examples (real stations) | Main threat |
 |---|---|---|
-| Large transfer stations downtown | Seoul Station, Sicheong, Jongno 3-ga, Jamsil, Sindorim, Yeongdeungpo | G05 livelihood threat; people who slip into a station, like G08 |
+| Large transfer stations downtown | Seoul Station, City Hall, Jongno 3-ga, Jamsil, Sindorim, Yeongdeungpo | G05 livelihood threat; people who slip into a station, like G08 |
 | Riverside stations | Guui, Ttukseom, Ichon, Noryangjin, Dongjak, Heukseok, Jamsillaru, Amsa | G06, G04, G07 using the bridges |
 | Mountain-foot stations | Bukhansan Ui, Bukhansan Bogungmun, Jeongneung, Dobongsan, Suraksan, Buramsan, Achasan, Gwanaksan | G01, G10 |
 | Boundary stations (Government) | Gupabal, Dokbawi, Digital Media City, Susaek, Dobongsan, Suraksan, Buramsan, Sinnae, Mangu | G09, G10, strayed G19 and G23, G18 at the line ends |
-| Boundary stations (Free Cities) | Gaehwa, Gaehwasan, Gimpo Airport, Banghwa, Onsu, Oryu-dong, Cheonwang, Doksan, Geumcheon District Office, Namtaeryeong, Gwanaksan | G12, G03, strayed G19 and G23, G18 at the line ends |
-| Boundary stations (Arc) | Cheonggyesan-ipgu, Yangjae Citizen's Forest, Daemosanipgu, Suseo, Bokjeong, Jangji, Macheon, Geoyeo, Gangil, Sangil-dong | G11, strayed G19 and G23, G18 at the line ends |
+| Boundary stations (Free Cities) | Gaehwa, Gaehwasan, Gimpo Int'l Airport, Banghwa, Onsu, Oryu-dong, Cheonwang, Gaebong, Doksan, Geumcheon-gu Office, Namtaeryeong, Gwanaksan | G12, G03, strayed G19 and G23, G18 at the line ends |
+| Boundary stations (Arc) | Cheonggyesan, Yangjae Citizen's Forest, Daemosan, Suseo, Bokjeong, Jangji, Macheon, Geoyeo, Gangil, Sangil-dong | G11, strayed G19 and G23, G18 at the line ends |
 
 (provisional T03-14)
 
@@ -226,7 +226,7 @@ Basis: all of section 2. 01-core 3.1-3.6, 5.3.
 ### G04 Raccoon Dog (Hostile-Group-G04)
 
 - **Origin.** Descended from the raccoon dogs of the Korean peninsula. The real raccoon dog is one of the few members of the dog family that sleeps deeply in winter, and it eats anything. These two traits carried it through the winter.
-- **Habitat.** The old conduits, ventilation ducts and intakes of riverside stations: Guui, Ttukseom, Seoulsup (Government), Amsa (Arc), around the Yeongdeungpo intake (Free Cities). They dig dens inside the ducts between the concourse and the platform.
+- **Habitat.** The old conduits, ventilation ducts and intakes of riverside stations: Guui, Ttukseom, Seoul Forest (Government), Amsa (Arc), around the Yeongdeungpo intake (Free Cities). They dig dens inside the ducts between the concourse and the platform.
 - **Food.** Fibre-sugar dregs, larvae escaped from the insect vats, fish scraps at the riverside, brown rats, light-field leavings.
 - **Behaviour.** Awake in the long-light half, eating and putting on fat; sleeps most of the long-dark half inside the ducts (2.6). Lives in pairs. When it meets people it usually runs or plays dead.
 - **Threat.** 2. It carries rabies. The real raccoon dog is also the main wild carrier of rabies in Korea. It also carries mange. Few people are bitten to death inside the ducts, but people bitten by a rabid raccoon dog usually die, because the medicine is scarce (provisional T03-19).
@@ -283,7 +283,7 @@ They are people, not animals or machines. They can be spoken to, traded with, an
 ### G08 Dongdaemun Coupon-Forgers (Hostile-Group-G08)
 
 - **Origin.** A band that forges Government ration coupons and seals and sells them in secret. When salvaged salt first ran short in 2086-2095 (01-core 9, provisional T02-87), a secret market in salt and coupons opened in the basements of the old Dongdaemun market. The band that guards that market hardened into the coupon-forgers. Unlike the other bands, many are still registered people on the ledger: by day they do their registered work, by night they forge (provisional T03-26).
-- **Habitat.** The buried basements of the old market buildings, and the sealed-off passages between concourse and platform, between Dongdaemun (Jongno-gu), Dongdaemun History & Culture Park (Jung-gu), Dongmyoap and Sindang.
+- **Habitat.** The buried basements of the old market buildings, and the sealed-off passages between concourse and platform, between Dongdaemun (Jongno-gu), Dongdaemun History & Culture Park (Jung-gu), Dongmyo and Sindang.
 - **Behaviour.** They forge coupons and seals, bribe ration clerks and rob ration convoys. If a workshop is found they defend it with their lives. They would rather buy a ration clerk than kill one.
 - **Threat.** 2-3. They avoid fights, but are 3 when defending a workshop. As a threat to the ledger they are 4: they throw off a district's ration count.
 - **Yield.** Forged coupons, hands that cut seals, news of which clerks have been bought. Handed to the Government they earn extra rations; used, they get one struck off.
@@ -291,8 +291,8 @@ They are people, not animals or machines. They can be spoken to, traded with, an
 
 ### G09 Sangam Deserters (Hostile-Group-G09)
 
-- **Origin.** A checkpoint squad of the Government army that held the north end of the airport-railway bridge at Digital Media City left its post with its weapons in a year of ration cuts in the 2110s. It tried to cross the bridge to Magoknaru, but Gangseo's Wind Keeper does not let in armed people without surety. Since then it has stayed north of the river, taking in other deserters, and become a band (provisional T03-27).
-- **Habitat.** The abandoned sections between Digital Media City, Susaek and Woldeukeopgyeonggijang, and the basements of the buried old stadium. They use the ground under the old railway land at Susaek as a store.
+- **Origin.** A checkpoint squad of the Government army that held the north end of the airport-railway bridge at Digital Media City left its post with its weapons in a year of ration cuts in the 2110s. It tried to cross the bridge to Magongnaru, but Gangseo's Wind Keeper does not let in armed people without surety. Since then it has stayed north of the river, taking in other deserters, and become a band (provisional T03-27).
+- **Habitat.** The abandoned sections between Digital Media City, Susaek and World Cup Stadium, and the basements of the buried old stadium. They use the ground under the old railway land at Susaek as a store.
 - **Behaviour.** They take tolls from people crossing the bridge. They cut cables from Gangseo's wind-machine fields. The Government army's old discipline survives, with sentries and watch rotas. One squad leader leads them.
 - **Threat.** 4. They have Government army rifles and ammunition. Rounds are scarce, so they spare every shot, but when they shoot, they hit.
 - **Yield.** Firearms and ammunition, among the scarcest things in Seoul (Bible 1, row 15). Scatter them and you get weapons; contract with them and you get the north end of the bridge.
@@ -310,7 +310,7 @@ They are people, not animals or machines. They can be spoken to, traded with, an
 ### G11 Suseo Gone-Dark (Hostile-Group-G11)
 
 - **Origin.** People whose baptized bodies can no longer get maintenance. When the Gangnam shelters were bound together as the Arc around 2122 and the Near Houses took the districts (01-core 7.3), people from shelters that refused to join, people dropped from the maintenance roll by a Near House ruling, and people who had bought parts in secret, fitted them, and had no way to get them maintained, gathered at the south-eastern end of Gangnam (provisional T03-29). This chapter does not name the implanted parts themselves (Bible 1, row 14).
-- **Habitat.** The abandoned sections and buried deep buildings between Suseo, Irwon and Daemosanipgu. Beyond the Arc's boundary stations.
+- **Habitat.** The abandoned sections and buried deep buildings between Suseo, Irwon and Daemosan. Beyond the Arc's boundary stations.
 - **Behaviour.** They steal power. They splice into station cables in secret and raid maintenance benches and charging places. The machines in their bodies stop one by one from cold and lack of maintenance, so the band is always short of power and parts. Those whose machines still work are stronger and last longer than ordinary people.
 - **Threat.** 3. Each one can be dangerous, but the band is small and always worn out.
 - **Yield.** Parts that have stopped in their bodies; the Arc tries to recover them for reuse. Knowledge of how a body breaks down outside the maintenance roll (covered by chapter 03).
@@ -319,7 +319,7 @@ They are people, not animals or machines. They can be spoken to, traded with, an
 ### G12 Geumcheon Hands Without Surety (Hostile-Group-G12)
 
 - **Origin.** Engineers and workers of the Free Cities who lost their surety. When the cities fought, pushing the old power grid onto one another in 2106-2111 (01-core 9, provisional T02-89), the surety of the work parties that tended the abandoned sections was withdrawn all at once. They gathered on the factory grounds at Seoul's southern end. Since then contract-breakers and people who could not pay their debts have kept drifting in (provisional T03-30).
-- **Habitat.** The basements of buried factories and the abandoned sections of Line 1 between Doksan, Geumcheon District Office and Gasan Digital Complex. Some spread as far as Onsu and Cheonwang in Guro.
+- **Habitat.** The basements of buried factories and the abandoned sections of Line 1 between Doksan, Geumcheon-gu Office and Gasan Digital Complex. Some spread as far as Onsu and Cheonwang in Guro.
 - **Behaviour.** They rob loads and work parties moving along Line 1. They steal tools and parts. For someone who will give them work without surety, they sometimes do the work. They are skilled, so they mend stolen machines for their own use and set good traps.
 - **Threat.** 3. The best band in Seoul at traps and ambushes.
 - **Yield.** Engineers. If someone stands surety again, they become hands again. Word goes round that Geumcheon's Edge Warden (01-core 8.2) secretly uses those among them who know the perimeter.
@@ -385,7 +385,7 @@ Station people do not call machines by machine names. They name them by look, so
 #### G13 Claw Arms (집게팔, Hostile-Group-G13)
 
 - **Origin.** The arm machines that picked and moved goods in pre-Blackout logistics warehouses, with their rails, doors and sorting lines.
-- **Habitat.** The basements and ground floors of buried logistics warehouses, below the second floor (under the snow). Old warehouses around Gasan Digital Complex, Guro Digital Complex and Doksan; old warehouses around Garak Market and Jangji; on the Government side, old warehouses around Yong Du and Sinseol-dong. Abandoned-section depth.
+- **Habitat.** The basements and ground floors of buried logistics warehouses, below the second floor (under the snow). Old warehouses around Gasan Digital Complex, Guro Digital Complex and Doksan; old warehouses around Garak Market and Jangji; on the Government side, old warehouses around Yongdu and Sinseol-dong. Abandoned-section depth.
 - **Behaviour.** Normally asleep. When a work party connects batteries to make light, or power runs through a cut cable, they wake and treat anything moving in the warehouse as "goods to move" or "a jammed line", picking it up or pushing it away. They do not leave the warehouse.
 - **Threat.** 3. Caught and dragged along a rail, a person's bones break. One woken warehouse becomes a place no work party can enter.
 - **Yield.** Fibre: warehouses guarded by claw arms hold the most cardboard and paper left (3.4). From the machines: motors, joints, rails, sensors.
@@ -394,7 +394,7 @@ Station people do not call machines by machine names. They name them by look, so
 #### G14 Empty Carts (빈수레, Hostile-Group-G14)
 
 - **Origin.** Driverless carriers and track-inspection cars that moved goods and people on underground tracks and in the basements of large buildings before the Great Blackout.
-- **Habitat.** Tracks in abandoned sections, and around the sections where people have put power back into the track to move loads between stations. They do not come into the deep layer of a living station. Often seen between Sindorim and Daerim on Line 2 and toward the Sinjeong depot (Free Cities), and between Jamsil and Jonghap Undongjang (Arc).
+- **Habitat.** Tracks in abandoned sections, and around the sections where people have put power back into the track to move loads between stations. They do not come into the deep layer of a living station. Often seen between Sindorim and Daerim on Line 2 and toward the Sinjeong depot (Free Cities), and between Jamsil and Sports Complex (Arc).
 - **Behaviour.** When power runs through the track they wake and run on the last route and timetable they were given. They do not stop for people in front of them. They come through the dark without lights. When the power is cut they stop where they are.
 - **Threat.** 3. Struck in a dark tunnel. Every powered section must first be checked for empty carts.
 - **Yield.** Revived empty carts carry loads between stations. The Free Cities' Depot Master (Yangcheon) and Works Master (Guro) have the most (provisional T03-36). Wheels, motors, battery frames.
@@ -403,11 +403,11 @@ Station people do not call machines by machine names. They name them by look, so
 #### G15 Care Wheels (돌봄바퀴, Hostile-Group-G15)
 
 - **Origin.** Care machines in large pre-Blackout hospitals that moved patients, carried medicine and watched the beds. They keep the old patient rolls.
-- **Habitat.** The basements of buried hospital buildings, around Hyehwa, Anam, Goryeodae, Gyeongchalbyeongwon, Jungang Bohun Byeongwon and Boramaebyeongwon. Abandoned-section depth.
+- **Habitat.** The basements of buried hospital buildings, around Hyehwa, Anam, Korea Univ., National Police Hospital, VHS Medical Center and Boramae Medical Center. Abandoned-section depth.
 - **Behaviour.** When they wake, they treat people not on the roll as "patients to care for" too. They catch them, lay them in beds, strap them down and lock the doors so they cannot leave. They do not mean harm, but they do not let go. They crowd round a sleeping person's slow breathing as an emergency.
 - **Threat.** 3. A person who goes in alone is shut in and freezes to death.
 - **Yield.** Medicine, bandages, medical tools, old record devices. Medicine is among the scarcest things in Seoul. The medicine that can save someone bitten by a raccoon dog (G04) usually comes from hospitals like these.
-- **Faction that meets it most.** The Government (Jongno, Seongbuk). The Arc (Gyeongchalbyeongwon in Songpa, Jungang Bohun Byeongwon in Gangdong) and the Free Cities (Boramaebyeongwon in Dongjak) also meet it.
+- **Faction that meets it most.** The Government (Jongno, Seongbuk). The Arc (National Police Hospital in Songpa, VHS Medical Center in Gangdong) and the Free Cities (Boramae Medical Center in Dongjak) also meet it.
 
 #### G16 Girder Spiders (철골거미, Hostile-Group-G16)
 
@@ -421,7 +421,7 @@ Station people do not call machines by machine names. They name them by look, so
 #### G25 Lamp Ants (등불개미, Hostile-Group-G25)
 
 - **Origin.** Small six-legged machines that patrolled underground utility tunnels and cable trays before the Great Blackout, checking cables and lighting evacuation routes.
-- **Habitat.** Utility tunnels, cable trays, ventilation ducts; the edge between abandoned sections and living stations. Most numerous in the old utility tunnels of downtown (Sicheong, Euljiro-ipgu, Jonggak) and of Yeouido and Yeongdeungpo.
+- **Habitat.** Utility tunnels, cable trays, ventilation ducts; the edge between abandoned sections and living stations. Most numerous in the old utility tunnels of downtown (City Hall, Euljiro 1-ga, Jonggak) and of Yeouido and Yeongdeungpo.
 - **Behaviour.** They move in swarms. "Repairing" cut cables, they cut a living station's cables and splice them into their own old network, so stations they pass through go dark. Their small lights in a row in the dark look like an evacuation route, and people who follow them get lost in abandoned sections.
 - **Threat.** 2. They hardly ever harm people. **Livelihood threat 3.** They ruin cables.
 - **Yield.** Revived lamp ants are used by the Free Cities to inspect cables. Small motors, sensors, cable.
@@ -434,7 +434,7 @@ All perimeter machines are outside Seoul's administrative boundary. Apart from s
 #### G17 One-Eye Towers (외눈탑, Hostile-Group-G17)
 
 - **Origin.** Watch towers built on ridges and the tops of tall buildings for the blockade. A single round head turns slowly, so station people call it the one eye.
-- **Habitat.** The perimeter: the outer slopes and ridges of Bukhansan, Dobongsan and Gwanaksan, the tops of tall buildings on the western plain. On clear days their lights can be seen from boundary stations such as Dobongsan, Suraksan, Gwanaksan, Namtaeryeong, Cheonggyesan-ipgu and Gaehwasan.
+- **Habitat.** The perimeter: the outer slopes and ridges of Bukhansan, Dobongsan and Gwanaksan, the tops of tall buildings on the western plain. On clear days their lights can be seen from boundary stations such as Dobongsan, Suraksan, Gwanaksan, Namtaeryeong, Cheonggyesan and Gaehwasan.
 - **Behaviour.** They do not move. They look down over the band and the forecourt and call other machines when they see movement or heat. In a blizzard they cannot see.
 - **Threat.** 4. They kill nobody themselves, but a person seen by a one-eye tower soon meets Growlers (G19) and Dokkaebi Lights (G22).
 - **Yield.** Lenses, sensors, record devices. Climbing a tower is among the most dangerous jobs on the perimeter.
@@ -443,7 +443,7 @@ All perimeter machines are outside Seoul's administrative boundary. Apart from s
 #### G18 Tunnel-Stoppers (굴막이, Hostile-Group-G18)
 
 - **Origin.** Rail-borne war machines and their armed inspection cars, ordered to block the tracks leading out of Seoul. The old name "fire-bridge train" was dropped for a name meaning "the thing that stops the tunnel" (provisional T03-38).
-- **Habitat.** The tunnels and tracks of the perimeter sections of lines leaving Seoul; seen from Seoul, beyond the boundary stations. Places such as beyond Dobongsan on Line 1, beyond Namtaeryeong on Line 4, beyond Gupabal on Line 3, beyond Onsu on Line 7, beyond Gangil on Line 5, beyond Bokjeong on Line 8, beyond Gimpo Airport on the airport railway. Also in the tunnels of the deep lines.
+- **Habitat.** The tunnels and tracks of the perimeter sections of lines leaving Seoul; seen from Seoul, beyond the boundary stations. Places such as beyond Dobongsan on Line 1, beyond Namtaeryeong on Line 4, beyond Gupabal on Line 3, beyond Onsu on Line 7, beyond Gangil on Line 5, beyond Bokjeong on Line 8, beyond Gimpo Int'l Airport on the airport railway. Also in the tunnels of the deep lines.
 - **Behaviour.** They stand still in the rail tunnels and block anything coming along the tunnel. This is why even warm, covered tunnels cannot be a way out of Seoul. They do not leave the perimeter sections to come toward Seoul.
 - **Threat.** 5. In a tunnel there is nowhere to dodge.
 - **Yield.** Almost none. No one is known to have got past a tunnel-stopper and brought anything back. Boundary-station people drive a marker where a tunnel-stopper stands and go no farther.
@@ -584,7 +584,7 @@ Basis: "Faction that meets it most" in sections 4-6. Bible 2.4 (assignment of th
 | G12 Geumcheon Hands Without Surety | none | most often | rarely |
 | G13 Claw Arms | meets it | most often | Songpa |
 | G14 Empty Carts | rarely | most often | Songpa |
-| G15 Care Wheels | most often | Boramaebyeongwon | Songpa, Gangdong |
+| G15 Care Wheels | most often | Boramae Medical Center | Songpa, Gangdong |
 | G16 Girder Spiders | rarely | rarely | most often |
 | G17 One-Eye Towers | most often | Gwanak, Geumcheon | meets it |
 | G18 Tunnel-Stoppers | most often | meets it | meets it |

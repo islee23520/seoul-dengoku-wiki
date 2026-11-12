@@ -26,7 +26,7 @@ Basis: Bible 2.2, 2.4. 01-core 4.3 (station grades), 7.2, 8.2.
 
 | City (district) | Holder's title | How the holder is chosen | Seat station | Stations | Sections | Population (2126) | Lives by |
 |---|---|---|---|---|---|---|---|
-| Gangseo | Wind Keeper | Chosen by the bench masters of the wind fields. For life, but steps down if the figures are not kept | Gimpo Airport | 18 | 4 | about 17,000 | Wind-machine electricity, wide light-fields |
+| Gangseo | Wind Keeper | Chosen by the bench masters of the wind fields. For life, but steps down if the figures are not kept | Gimpo Int'l Airport | 18 | 4 | about 17,000 | Wind-machine electricity, wide light-fields |
 | Yangcheon | Depot Master | Handed down in one depot house | Sinjeongnegeori | 7 | 2 | about 4,200 | Rebuilding motors and wheels at the Sinjeong depot, rail carts |
 | Yeongdeungpo | Market Master | The market houses take three-year turns in a fixed order | Yeongdeungpo | 18 | 4 | about 20,600 | The great market, water from the Yangpyeong-dong intake, the contract meeting seat |
 | Guro | Works Master | The bench master with the most kept sureties | Guro | 9 | 2 | about 9,600 | Parts and pumps from the old factory sites and the Line 1 depot |
@@ -37,7 +37,7 @@ Basis: Bible 2.2, 2.4. 01-core 4.3 (station grades), 7.2, 8.2.
 
 The titles are those of 01-core 8.2 (Duke of Gwanak [Approved], the rest provisional T02-71 to T02-76). How each holder is chosen, the seat stations, the sections and the population are set by this chapter (provisional T06-1).
 
-The population multiplies the station grades of 01-core 4.3 by middle values: 600 for a one-line station, 2,000 for a two-line interchange, and 4,000 for Gimpo Airport, where five lines meet, as a large interchange complex. The total of about 74,800 agrees with 01-core 4.3, "the Free Cities about 75,000" (provisional T06-2).
+The population multiplies the station grades of 01-core 4.3 by middle values: 600 for a one-line station, 2,000 for a two-line interchange, and 4,000 for Gimpo Int'l Airport, where five lines meet, as a large interchange complex. The total of about 74,800 agrees with 01-core 4.3, "the Free Cities about 75,000" (provisional T06-2).
 
 There is a reason the cities choose their holders in different ways. As chapter 1 says, "there was no way to tell whose skill was higher, so they could not choose a leader either." For the seven cities as a whole, that question had no answer. So each city looked for something it could measure in its own work. Gangseo measures the watts of its wind fields, Guro the number of sureties kept, Geumcheon coming back alive from the perimeter, Dongjak the crossings held. Yangcheon and Gwanak, which found nothing to measure, hand the post down in a house. Yeongdeungpo measures nothing and takes turns. These seven answers are the seven cities' characters (provisional T06-3).
 
@@ -49,24 +49,24 @@ Each city's stations follow `120-map-core.sql`. A section is the Free Cities' na
 
 ### 3.1 Gangseo: the Wind Keeper
 
-- **Stations (18).** Gimpo Airport section: 김포공항 Gimpo Airport, 방화 Banghwa, 개화산 Gaehwasan, 개화 Gaehwa, 송정 Songjeong, 공항시장 Gonghang Sijang, 신방화 Sinbanghwa. Magok section: 마곡 Magok, 마곡나루 Magoknaru, 발산 Balsan, 양천향교 Yangcheon Hyanggyo. Hwagok section: 우장산 Ujangsan, 화곡 Hwagok, 까치산 Kkachisan. Gayang section: 가양 Gayang, 증미 Jeungmi, 등촌 Deungchon, 염창 Yeomchang.
-- **Lives by.** The wind-machine fields on the western riverside plain (01-core 8.2). The open riverside is windy (01-core 3.5), and the plains of Magok and Gayang have few buried buildings, so wind machines can stand there in rows. Gangseo makes the most electricity of the Free Cities. It sells the surplus to Yangcheon and Yeongdeungpo through cables laid along Line 5 and Line 9. The same plain is good for spreading light-fields, so Gangseo's light-fields are the widest of the seven cities. The old hangars of Gimpo Airport are a salvage ground for light metal sheet and long beams. The Line 5 depot at Banghwa is a living depot that handles Gangseo's rail work and keeps a maintenance locomotive; the Line 9 depot at Gaehwa is frozen (chapter 03 7.3, provisional T04-40) (provisional T06-5).
+- **Stations (18).** Gimpo Int'l Airport section: 김포공항 Gimpo Int'l Airport, 방화 Banghwa, 개화산 Gaehwasan, 개화 Gaehwa, 송정 Songjeong, 공항시장 Airport Market, 신방화 Sinbanghwa. Magok section: 마곡 Magok, 마곡나루 Magongnaru, 발산 Balsan, 양천향교 Yangcheon Hyanggyo. Hwagok section: 우장산 Ujangsan, 화곡 Hwagok, 까치산 Kkachisan. Gayang section: 가양 Gayang, 증미 Jeungmi, 등촌 Deungchon, 염창 Yeomchang.
+- **Lives by.** The wind-machine fields on the western riverside plain (01-core 8.2). The open riverside is windy (01-core 3.5), and the plains of Magok and Gayang have few buried buildings, so wind machines can stand there in rows. Gangseo makes the most electricity of the Free Cities. It sells the surplus to Yangcheon and Yeongdeungpo through cables laid along Line 5 and Line 9. The same plain is good for spreading light-fields, so Gangseo's light-fields are the widest of the seven cities. The old hangars of Gimpo Int'l Airport are a salvage ground for light metal sheet and long beams. The Line 5 depot at Banghwa is a living depot that handles Gangseo's rail work and keeps a maintenance locomotive; the Line 9 depot at Gaehwa is frozen (chapter 03 7.3, provisional T04-40) (provisional T06-5).
 - **Rule.** The Wind Keeper is chosen by the bench masters of the wind fields, who meet and choose. Once chosen, the Wind Keeper serves for life. But if the wind fields in the Wind Keeper's charge fail to deliver the watts written in the contracts for two long-dark halves in a row, the Wind Keeper steps down. Gangseo people say, "The wind changes the people." Under the Wind Keeper are four section chiefs and one field head per wind field (provisional T06-6).
-- **Borders.** Magoknaru is linked by the Airport Railroad bridge to the Government's Digital Media City (01-core 7.4). Gimpo Airport, Gaehwa and Banghwa are the western end of Seoul and face the perimeter of the machines outside.
+- **Borders.** Magongnaru is linked by the Airport Railroad bridge to the Government's Digital Media City (01-core 7.4). Gimpo Int'l Airport, Gaehwa and Banghwa are the western end of Seoul and face the perimeter of the machines outside.
 
 ### 3.2 Yangcheon: the Depot Master
 
-- **Stations (7).** Sinjeong section: 신정 Sinjeong, 신정네거리 Sinjeongnegeori, 양천구청 Yangcheon-gu Office. Mokdong section: 목동 Mokdong, 오목교 Omokgyo, 양평 Yangpyeong, 신목동 Sinmokdong.
+- **Stations (7).** Sinjeong section: 신정 Sinjeong, 신정네거리 Sinjeongnegeori, 양천구청 Yangcheon-gu Office. Mok-dong section: 목동 Mok-dong, 오목교 Omokgyo, 양평 Yangpyeong, 신목동 Sinmokdong.
 - **Lives by.** The workshops and stores of the Line 2 Sinjeong depot (01-core 8.2). The wide roofed space of the depot is a warm workshop in itself, and the remaining trains are a store of motors, wheels, axles and steel plate. Yangcheon rewinds old motors and turns wheels back to life. It also builds rail carts, pushed along the tunnel rails by hand or by a small motor. Nearly all freight between the Free Cities moves on Yangcheon's rail carts (provisional T06-7).
 - **Rule.** The smallest of the seven cities. The house that first brought the depot back to life has handed the Depot Master's post down since the 2040s. Depot work runs in four shifts, each with a shift chief. The Depot Master and the four shift chiefs are the whole of Yangcheon's government. The depot house binds the shift chief posts to itself by marriage (provisional T06-8).
 - **A note.** The map data places Yangpyeong station in Yangcheon-gu, and this chapter follows it. The Yangpyeong-dong intake of 01-core 5.2 belongs to Yeongdeungpo and is reached from Seonyudo and Dangsan on the Yeongdeungpo side (3.3).
 
 ### 3.3 Yeongdeungpo: the Market Master
 
-- **Stations (18).** Yeouido section: 여의도 Yeouido, 여의나루 Yeouinaru, 국회의사당 National Assembly Building, 샛강 Saetgang. Dangsan section: 당산 Dangsan, 선유도 Seonyudo, 영등포구청 Yeongdeungpo-gu Office, 문래 Mullae, 도림천 Dorimcheon. Yeongdeungpo section: 영등포 Yeongdeungpo, 영등포시장 Yeongdeungpo Market, 신길 Singil, 대방 Daebang. Boramae section: 보라매 Boramae, 보라매공원 Boramaegongwon, 서울지방병무청 Seouljibangbyeongmucheong, 신풍 Sinpung, 구로디지털단지 Guro Digital Complex.
+- **Stations (18).** Yeouido section: 여의도 Yeouido, 여의나루 Yeouinaru, 국회의사당 National Assembly, 샛강 Saetgang. Dangsan section: 당산 Dangsan, 선유도 Seonyudo, 영등포구청 Yeongdeungpo-gu Office, 문래 Mullae, 도림천 Dorimcheon. Yeongdeungpo section: 영등포 Yeongdeungpo, 영등포시장 Yeongdeungpo Market, 신길 Singil, 대방 Daebang. Boramae section: 보라매 Boramae, 보라매공원 Boramae Park, 서울지방병무청 Seoul Regional Office of Military Manpower, 신풍 Sinpung, 구로디지털단지 Guro Digital Complex.
 - **Lives by.** Three things. First, the largest market of the seven cities: the platforms and concourses between Yeongdeungpo and Yeongdeungpo Market are the market, and the old warehouses of Yeouido are its stores. Second, water. As 01-core 5.2 sets, the south-western under-ice river intake is at Yangpyeong-dong and Yeongdeungpo holds it. Yeongdeungpo uses the water in its own stations and sells the surplus to neighbouring cities. Third, the contract meeting seat. The large contract meetings with the Government are almost always hosted by Yeongdeungpo (section 4) (provisional T06-9).
 - **Rule.** The Market Master's post is taken by the houses that hold places in the market, three years each, in turn. The order is the one fixed when the market first stood, and nobody can change it. So who hosts the water supply contract, which comes once every thirty years, is decided by the turn. The Market Master of 2126 holds the seat because the turn came round. The Market Master keeps the market's place fees and the rate board (6.4) and governs Yeongdeungpo with the four section chiefs (provisional T06-10).
-- **The empty Assembly hall at Yeouido.** As 01-core 7.1 says, when the river froze the National Assembly moved to the Gwanghwamun government complex and the Yeouido Assembly building emptied. National Assembly Building station and the Assembly building above it are now Yeongdeungpo ground. Yeongdeungpo holds its contract meetings with the Government at the Assembly hall. This is custom only, not a fixed rule. The surface rooms are at -18 °C and are not used; the seat is the heated buried lower floors and the Line 9 National Assembly Building station level. Government people come as guests into the building their forebears left, and stamp their seals there (provisional T06-11).
+- **The empty Assembly hall at Yeouido.** As 01-core 7.1 says, when the river froze the National Assembly moved to the Gwanghwamun government complex and the Yeouido Assembly building emptied. National Assembly station and the Assembly building above it are now Yeongdeungpo ground. Yeongdeungpo holds its contract meetings with the Government at the Assembly hall. This is custom only, not a fixed rule. The surface rooms are at -18 °C and are not used; the seat is the heated buried lower floors and the Line 9 National Assembly station level. Government people come as guests into the building their forebears left, and stamp their seals there (provisional T06-11).
 - **Borders.** Dangsan is linked by the Line 2 bridge to the Government's Hapjeong, and Yeouinaru by the Line 5 under-river tunnel to the Government's Mapo (01-core 7.4). Mapo-Yeouinaru is the only under-river tunnel between the Government and the Free Cities, and a Government ledger checkpoint stands at its north entrance (provisional T02-86).
 
 ### 3.4 Guro: the Works Master
@@ -78,22 +78,22 @@ Each city's stations follow `120-map-core.sql`. A section is the Free Cities' na
 
 ### 3.5 Geumcheon: the Edge Warden
 
-- **Stations (3).** Gasan section: 가산디지털단지 Gasan Digital Complex, 독산 Doksan, 금천구청 Geumcheon District Office.
+- **Stations (3).** Gasan section: 가산디지털단지 Gasan Digital Complex, 독산 Doksan, 금천구청 Geumcheon-gu Office.
 - **Lives by.** The fewest stations of the seven cities. It sits on Seoul's boundary and watches the perimeter of the machines outside from closest (01-core 8.2). Geumcheon lives by that nearness. In the 2-4 days when a blizzard blinds the machines, its people cross the perimeter and pull power cores and parts from wrecked war machines (01-core 6.3). And from the large machines salvaged at the old Gasan factory sites it builds well-drilling rigs. Without Geumcheon's drilling rigs, even Gwanak's drilling crews cannot bore the rock (7.3) (provisional T06-15).
 - **Rule.** The Edge Warden is chosen by the edge crews from among those who crossed the perimeter and came back. Few come back, so there are never more than two or three candidates. The Edge Warden serves for life. If the Edge Warden crosses again and does not return, the post falls empty. The Edge Warden need not cross, but an Edge Warden who never crosses loses the edge crews' ear (provisional T06-16).
-- **Borders.** Geumcheon District Office and Doksan are Seoul's southern end stations and face the perimeter that lies 2-10 km beyond (01-core 6.3). Among the cities, Line 1 links it to Guro, and Line 7 to Guro's Namguro (provisional T06-71).
-- **Hands without surety.** Chapter 02 places hostile group G12, "Geumcheon Hands Without Surety", in the buried factory basements between Geumcheon's three stations (Doksan, Geumcheon District Office, Gasan Digital Complex) and on the abandoned stretch of Line 1 (chapter 02 G12, provisional T03-30). Geumcheon lives with people of broken seals (10.6) as its neighbours. Freight and work crews moving on Line 1 buy the escort of Geumcheon's edge crews. How to stand surety again for a broken seal is not set by this chapter (14.2) (provisional T06-72).
+- **Borders.** Geumcheon-gu Office and Doksan are Seoul's southern end stations and face the perimeter that lies 2-10 km beyond (01-core 6.3). Among the cities, Line 1 links it to Guro, and Line 7 to Guro's Namguro (provisional T06-71).
+- **Hands without surety.** Chapter 02 places hostile group G12, "Geumcheon Hands Without Surety", in the buried factory basements between Geumcheon's three stations (Doksan, Geumcheon-gu Office, Gasan Digital Complex) and on the abandoned stretch of Line 1 (chapter 02 G12, provisional T03-30). Geumcheon lives with people of broken seals (10.6) as its neighbours. Freight and work crews moving on Line 1 buy the escort of Geumcheon's edge crews. How to stand surety again for a broken seal is not set by this chapter (14.2) (provisional T06-72).
 
 ### 3.6 Dongjak: the Ferry Keeper
 
-- **Stations (14).** Noryangjin section: 노량진 Noryangjin, 노들 Nodeul, 흑석 Heukseok, 동작 Dongjak. Sadang section: 사당 Sadang, 총신대입구(이수) Chongsindae-ipgu (Isu), 남성 Namseong. Sangdo section: 상도 Sangdo, 장승배기 Jangseungbaegi, 숭실대입구 Sungsildaeipgu, 신대방삼거리 Sindaebangsamgeori. Sindaebang section: 신대방 Sindaebang, 보라매병원 Boramaebyeongwon, 당곡 Danggok.
-- **Lives by.** The crossings. Of the thirteen border links of 01-core 7.4, eight have their Free City end on this side, and five of those eight are in Dongjak: Noryangjin (Line 1, the Government's Yongsan), Dongjak (Line 4, the Government's Ichon), Dongjak (Line 9, the Arc's Gubanpo), Sadang (Line 2, the Arc's Bangbae) and Chongsindae-ipgu (Isu) (Line 7, the Arc's Naebang). Nearly all people and freight of the Government and the Arc that travel to the Free Cities pass through Dongjak. Dongjak takes a passage share from the freight that passes. It also drills holes in the river ice off Noryangjin and Heukseok to catch fish. The ice-hole market at Noryangjin is where more fish change hands than anywhere else in Seoul (provisional T06-17).
+- **Stations (14).** Noryangjin section: 노량진 Noryangjin, 노들 Nodeul, 흑석 Heukseok, 동작 Dongjak. Sadang section: 사당 Sadang, 총신대입구(이수) Chongshin Univ. (Isu), 남성 Namseong. Sangdo section: 상도 Sangdo, 장승배기 Jangseungbaegi, 숭실대입구 Soongsil Univ., 신대방삼거리 Sindaebangsamgeori. Sindaebang section: 신대방 Sindaebang, 보라매병원 Boramae Medical Center, 당곡 Danggok.
+- **Lives by.** The crossings. Of the thirteen border links of 01-core 7.4, eight have their Free City end on this side, and five of those eight are in Dongjak: Noryangjin (Line 1, the Government's Yongsan), Dongjak (Line 4, the Government's Ichon), Dongjak (Line 9, the Arc's Gubanpo), Sadang (Line 2, the Arc's Bangbae) and Chongshin Univ. (Isu) (Line 7, the Arc's Naebang). Nearly all people and freight of the Government and the Arc that travel to the Free Cities pass through Dongjak. Dongjak takes a passage share from the freight that passes. It also drills holes in the river ice off Noryangjin and Heukseok to catch fish. The ice-hole market at Noryangjin is where more fish change hands than anywhere else in Seoul (provisional T06-17).
 - **Rule.** Dongjak counts its crossings as five: Noryangjin, Dongjak river side, Dongjak land side, Sadang and Isu. Each crossing has a crossing head, and the five crossing heads choose the Ferry Keeper from among themselves. The Ferry Keeper is the Ferry Keeper only as long as he holds his own crossing. If he loses or closes it, he gives up the seat (provisional T06-18).
 - **Two faces.** Dongjak's Ferry Keeper faces the Government on the river side and the Arc on the land side (01-core 7.4). Dongjak station is the crossroads where the three polities meet. The land border with the Arc has no river, so disputes are most frequent there. That is why Dongjak keeps the most watch hands of the seven cities (section 12) (provisional T06-73).
 
 ### 3.7 Gwanak: the Duke
 
-- **Stations (8).** Sillim section: 신림 Sillim, 서원 Seowon, 서울대벤처타운 Seoul National University Venture Town, 관악산 Gwanaksan. Bongcheon section: 봉천 Bongcheon, 서울대입구 Seoul National University Entrance, 낙성대 Nakseongdae, 남태령 Namtaeryeong.
+- **Stations (8).** Sillim section: 신림 Sillim, 서원 Seowon, 서울대벤처타운 Seoul Nat'l Univ. Venture Town, 관악산 Gwanaksan. Bongcheon section: 봉천 Bongcheon, 서울대입구 Seoul Nat'l Univ., 낙성대 Nakseongdae, 남태령 Namtaeryeong.
 - **Lives by.** Gwanaksan. As 01-core 5.1 and 5.6 say, the firewood of Gwanaksan belongs to Gwanak. The forest of the near slopes was all cut in the 2060s, and what forest remains is on the outer slopes toward the perimeter. Gwanak's wood crews climb to those slopes and bring back dead trees. The wood sells two ways: as firewood it is a luxury (01-core 5.4), and as fibre it is fibre-sugar stock. Gwanak also knows the mountain's rock. Gwanak's drilling crews bore through granite to dig deep wells (provisional T06-19).
 - **Rule.** Gwanak is held by I Ilseop's house as Duke (01-core 7.2). Around 2056-2065, Gwanak's leading house took the Government's word for duchy from across the river and called itself Duke (provisional T02-54, T02-84). The ducal seat is handed down within that house. Under the Duke are two section chiefs, the wood crew heads, and the mountain watch crew that watches the mountain. I Ilseop (born 2092, 34 in 2126) is the present Duke. [Approved] When he took up the seat is not set by this chapter (chapter 07).
 - **The word Duke.** Gwanak took the title Duke to say that it sat at the same height as the Government. So when Gwanak contracts with the Government, it insists on stamping "duchy to duchy" (7.2). People of the other cities half mock and half envy this insistence.
@@ -194,7 +194,7 @@ With nobody above the seven cities, there is also nobody to mint money. Free Cit
 | Measure | What it is |
 |---|---|
 | Kilo | 1 kilowatt-hour (kWh) of electricity. The basis of the price board |
-| Hand-hour | One hour of one surety-backed hand. On the market usually 0.5 kilo; a fitter's or a matcher's hand-hour is 2-4 kilos |
+| Hand-hour | One hour of one surety-backed hand. On the market usually 0.5 kilo; a board hand's or a body fitter's hand-hour is 2-4 kilos |
 | Litres, m³ | Water. Used in contracts |
 | Watts | Heat. Used in contracts such as "20 kW of outside heat to this station for one half-year" |
 
@@ -204,9 +204,9 @@ With nobody above the seven cities, there is also nobody to mint money. Free Cit
 
 Yeongdeungpo market posts prices on a board every day. This is the **rate board**. Its values are the winter 2126 prices of chapter 03 11.5. Put into chapter 03's design yardstick, the person-day (what one person needs to live one day on the platform level, about 1.5 kilos), a few of them read (provisional T06-32):
 
-> 1 ordinary hand-hour = 0.5 kilo · a day's meals and water = about 1.5 kilos · 1 m³ of well water = about 2 person-days = about 2.9 kilos
+> 1 ordinary hand-hour = 0.5 kilo · a day's meals and water = about 1.5 kilos · 1 m³ of well water = about 2 person-days = about 3 kilos
 
-Eight hours of one ordinary hand come to 4 kilos, a little under three person-days. A day of a fitter or a matcher is four or five times that. Those are the prices of a world where skill is scarce. As chapter 03 11.2 says, prices differ a little from city to city: in Gangseo, which holds the wind fields, the kilo is cheap; in Yeongdeungpo, which hosts the market, goods are cheap. When a long blizzard stops the wind machines, the kilo rises everywhere.
+Eight hours of one ordinary hand come to 4 kilos, a little under three person-days. A day of a board hand or a body fitter is four to eight times that. Those are the prices of a world where skill is scarce. As chapter 03 11.2 says, prices differ a little from city to city: in Gangseo, which holds the wind fields, the kilo is cheap; in Yeongdeungpo, which hosts the market, goods are cheap. When a long blizzard stops the wind machines, the kilo rises everywhere.
 
 ### 6.3 Surety tags and full packs
 
@@ -292,17 +292,17 @@ These are the five Government-Free City links of 01-core 7.4.
 | Digital Media City-Magoknaru | Airport Railroad | Bridge | Gangseo |
 | Mapo-Yeouinaru | Line 5 | Under-river tunnel | Yeongdeungpo |
 
-The bridges are exposed to wind and snow. Since the Government was broken on the ice in 2079 trying to take the Yeongdeungpo intake, the river has been a line no army crosses (provisional T02-86). The watch of the city stands at the Free City end of each bridge. The Government's ledger checkpoint is at the north entrance of the under-river tunnel. The Free Cities keep no checkpoint at the south entrance. When a Government person comes through the tunnel and steps off at Yeouinaru, from there on they are off the ledger. The way most used by people fleeing the Government ledger is also the bridges: they cross on blizzard nights (provisional T06-42).
+The bridges are exposed to wind and snow. Since the Government was broken on the ice in 2079 trying to take the Yeongdeungpo intake, the river has been a line no army crosses (provisional T02-86). The watch of the city stands at the Free City end of each bridge. The Government's ledger checkpoint is at the north entrance of the under-river tunnel. The Free Cities keep no checkpoint at the south entrance. When a Government person comes through the tunnel and steps off at Yeouinaru, from there on they are off the ledger. People fleeing the Government ledger avoid the bridges and cross the ice on long-dark-half nights, because the bridges close in a blizzard and the army stands at their north ends (chapter 07 section 11.1) (provisional T06-42).
 
 ### 8.3 The land border with the Arc
 
-There is no river between the Free Cities and the Arc. The border is a single line between Dongjak-gu and Seocho-gu, and the lines meet it at three places: Sadang-Bangbae (Line 2), Chongsindae-ipgu (Isu)-Naebang (Line 7) and Dongjak-Gubanpo (Line 9) (01-core 7.4). All three are on Dongjak ground. Dongjak keeps a standing watch at these three crossings. Gwanak touches Seocho by land but no line meets there. Even so, Gwanak's mountain watch crew watches the surface east of Nakseongdae and Namtaeryeong, where it touches Seocho, for Arc people crossing over (provisional T06-43).
+There is no river between the Free Cities and the Arc. The border is a single line between Dongjak-gu and Seocho-gu, and the lines meet it at three places: Sadang-Bangbae (Line 2), Chongshin Univ. (Isu)-Naebang (Line 7) and Dongjak-Gubanpo (Line 9) (01-core 7.4). All three are on Dongjak ground. Dongjak keeps a standing watch at these three crossings. Gwanak touches Seocho by land but no line meets there. Even so, Gwanak's mountain watch crew watches the surface east of Nakseongdae and Namtaeryeong, where it touches Seocho, for Arc people crossing over (provisional T06-43).
 
 Because it is a land border, people cross easily. Free City technicians going over to the Arc, Free City people who go to the Arc to have their baptised bodies maintained, and people coming back from the Arc all pass these three crossings (01-core 7.4).
 
 ### 8.4 The perimeter
 
-Gangseo (Gimpo Airport, Gaehwa, Banghwa), Guro (Onsu, Cheonwang, Oryu-dong, Gaebong), Geumcheon (Doksan, Geumcheon District Office) and Gwanak (Namtaeryeong, Gwanaksan) have stations at Seoul's edge and face the perimeter of the machines outside (01-core 6.3). Each city on the perimeter keeps a lookout on high ground at the surface. Crossing the perimeter, that is, going out during a blizzard to bring in power cores, is best known to Geumcheon's edge crews. People of other cities who want to cross buy a guide from Geumcheon's edge crews. The guide's price is not on the rate board. It is paid as a share of whatever comes back (provisional T06-44).
+Gangseo (Gimpo Int'l Airport, Gaehwa, Gaehwasan, Banghwa), Guro (Onsu, Cheonwang, Oryu-dong, Gaebong), Geumcheon (Doksan, Geumcheon-gu Office) and Gwanak (Namtaeryeong, Gwanaksan) have stations at Seoul's edge and face the perimeter of the machines outside (01-core 6.3). Each city on the perimeter keeps a lookout on high ground at the surface. Crossing the perimeter, that is, going out during a blizzard to bring in power cores, is best known to Geumcheon's edge crews. People of other cities who want to cross buy a guide from Geumcheon's edge crews. The guide's price is not on the rate board. It is paid as a share of whatever comes back (provisional T06-44).
 
 ## 9. Clothing
 
@@ -360,7 +360,7 @@ Children join their house's bench as apprentices at about twelve (5.2). Before t
 
 ### 10.4 Death
 
-Frozen ground cannot be dug (01-core 3.1), and wood is a luxury that cannot be burned (01-core 5.4). Free City people lay their dead in a **frozen station**: an old station whose people left and whose thaw pocket froze over (01-core 3.1). The dead wear a cotton shroud and lie on that station's platform. The ice keeps them as they are. On the day of the funeral, the dead person's bench seal and tools pass to the child who inherits. Inheritance takes place at the funeral. Each city has its own frozen station. Which old station it uses is not set by this chapter (it is set together with the station states of chapter 02) (provisional T06-54).
+Frozen ground cannot be dug (01-core 3.1), and wood is a luxury that cannot be burned (01-core 5.4). Free City people lay their dead in a **frozen station**: an old platform whose people left and whose thaw pocket froze over (01-core 3.1). The 312 stations of the map stay lived-in stations (chapter 02 section 1); a frozen station is an abandoned platform belonging to one of them, or an old branch platform not on the map (provisional T09-5). The dead wear a cotton shroud and lie on that station's platform. The ice keeps them as they are. On the day of the funeral, the dead person's bench seal and tools pass to the child who inherits. Inheritance takes place at the funeral. Each city has its own frozen station. Which old station it uses is not set by this chapter (it is set together with the station states of chapter 02) (provisional T06-54).
 
 ### 10.5 Belief
 
@@ -401,7 +401,7 @@ As Bible 2.5 says, an army has one commander, who commands all its squads. In th
 
 ### 11.3 The command sheet
 
-When several cities fight together, it is easy for there to be several armies, which goes against the rule of Bible 2.5. So cities that fight together call a contract meeting and make a **command sheet**. The sheet puts the squads of every city under one person. The squads of a city that has not stamped the command sheet do not join that army; they form an army of their own. That a command sheet takes time to make is the Free Cities' greatest weakness (provisional T06-61).
+When several cities fight together, it is easy for there to be several armies, which goes against the rule of Bible 2.5. So cities that fight together call a contract meeting and make a **command sheet**. The sheet puts the squads of every city under one person. The squads of a city that has not stamped the command sheet do not join that army; they form an army of their own. That a command sheet takes time to make is the Free Cities' greatest weakness (provisional T06-61). The squads of a city that formed its own army can still stand on the same battlefield. They are then outside the player's command: allies commanded by their own city's commander (AI) (chapter 09 section 3.11, provisional T29-18).
 
 ### 11.4 How they fight
 
@@ -445,7 +445,10 @@ The head count per city follows population (section 2), raised a little for the 
 | Dongjak | 33 | 1 | 3 | 6 | 4 | 19 |
 | Gwanak | 20 | 1 | 3 | 3 | 2 | 11 |
 | Total | **190** | **3** | **21** | **33** | **21** | **112** |
+| Chapter 07 assignment (four independents, Guro row) | +4 | 0 | +2 | +2 | 0 | 0 |
+| Total after assignment | **194** | **3** | **23** | **35** | **21** | **112** |
 
+Chapter 07 section 3.2 adds four of the eight independents (Jang Useok, Heo Daon, Gu Chansol, Min Ung-gi) to the Guro row. So Guro has 30 people and the Free Cities 194. The table of section 12.3 below is the 190 before that addition (basis: chapter 07 section 3.3).
 The three Key places are the three holders who weigh most at the third water supply contract: the Market Master of Yeongdeungpo, who is the Host; the Ferry Keeper of Dongjak, who holds the Arc's way in and the land border; and I Ilseop, Duke of Gwanak. The other four holders (Wind Keeper, Depot Master, Works Master, Edge Warden) are S1 (provisional T06-66).
 
 ### 12.3 Quotas by place
@@ -509,7 +512,7 @@ This chapter changes no value of 01-core. But it adds the following on top of 01
 
 ### 14.2 What it hands on to other chapters
 
-1. **Chapter 02.** Match the old stations used as frozen stations with the station states. Match the threats on the perimeter-side slopes (outside Gwanaksan, west of Gimpo Airport, south of Geumcheon) with chapter 02's perimeter design.
+1. **Chapter 02.** Match the old stations used as frozen stations with the station states. Match the threats on the perimeter-side slopes (outside Gwanaksan, west of Gimpo Int'l Airport, south of Geumcheon) with chapter 02's perimeter design.
 2. **Chapter 03.** Units and values are those of chapter 03 section 11. Chapter 03's "contract slip" and "battery pack" are this chapter's surety tag and full pack, and the integration task aligns the names. The technical limits of drilling rigs, rail carts, case reloading and drone rebuilding are set by chapter 03.
 3. **Chapter 04.** The Government's position in the water supply contract, the wording of Government papers, the watch at the north bridge ends, and the running of the north checkpoint of the Mapo under-river tunnel.
 4. **Chapter 06.** What the Arc offers at the third water supply contract, the place of Free City technicians who went over to the Arc, and the Arc-side watch at the three land crossings.
