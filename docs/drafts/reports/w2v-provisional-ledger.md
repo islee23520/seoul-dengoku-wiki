@@ -27,3 +27,20 @@ Chronology rewrite (Century-Annals, Scenario-Timeline, World-Unbinding, Oral-Sto
 | 17 | Scenario-Timeline | en: "Timeline Overview by Era", "Stations counted who belonged." / ko: "연표 시대별 총람", "역들이 누가 속하는지 셌다." | the middle eras of this table (station generations, irreplaceable machines, the middle of the century) are task 7 framing without fixed dates |
 | 18 | World-Unbinding | en: "The Generations After the Great Blackout", "By most accounts, each shelter cut off from the others chose its own l" / ko: "대정전 이후의 세대들", "대개 서로 끊긴 대피소마다" | shelter leaders first chosen by vote, then hereditary, is a provisional detail kept from the earlier text |
 | 19 | Oral-Stories | en: "(top)", "These are stories people tell in the stations." / ko: "(top)", "역에서 사람들이 하는 이야기들이다." | every story on this page is a told story; their tellers, places and details are provisional and none adds a dated event |
+
+## task 32
+
+Regional-Physical-AI-Arcs chronicle rewrite and per-faction tier titles. Each entry gives the document, the section heading and the opening phrase of the sentence, in en and ko.
+
+| # | Document | Location (section, phrase) | Provisional item |
+|---|---|---|---|
+| 20 | Regional-Physical-AI-Arcs | en: "Institutions of a Polis", "Every registered citizen of a polis may attend" / ko: "폴리스의 제도", "폴리스의 등록 시민이면 누구나 참석하고" | the Citizens' Assembly (Ekklesia), Council (Boulē), elected magistrates, guilds, courts, and league institutions are provisional; modeled on Greek poleis but not owner-approved |
+| 21 | Regional-Physical-AI-Arcs | en: "Titles by Faction" table, "Electorate (*선구*, 選區)" / ko: "세력별 칭호" table, "선구 (選區)" | Government territory name "Electorate" (선구) is provisional. Senator is approved. |
+| 22 | Regional-Physical-AI-Arcs | en: "Titles by Faction" table, "Polis (*폴리스*)" / ko: "세력별 칭호" table, "폴리스" | Free City territory name "Polis" (폴리스) is provisional |
+| 23 | Regional-Physical-AI-Arcs | en: "Titles by Faction" table, "Archon (*아르콘*)" / ko: "세력별 칭호" table, "아르콘" | Free City holder name "Archon" (아르콘) is provisional |
+| 24 | Regional-Physical-AI-Arcs | en: "Titles by Faction" table, "Gate (*문*, 門)" / ko: "세력별 칭호" table, "문 (門)" | Arc territory name "Gate" (문, 門) is provisional |
+| 25 | Regional-Physical-AI-Arcs | en: "Titles by Faction" table, "Gate-Master (*문주*, 門主)" / ko: "세력별 칭호" table, "문주 (門主)" | Arc holder name "Gate-Master" (문주, 門主) is provisional |
+| 26 | Regional-Physical-AI-Arcs | en: "How Lee Il-seop Became the Archon of Gwanak", "Il-seop earned his citizenship at twenty-two" / ko: "이일섭은 어떻게 관악의 아르콘이 됐는가", "일섭은 스물둘에" | Lee Il-seop's path to Archon (citizenship test, water magistrate, council, election) is a provisional narrative; only "Duke of Gwanak" is approved |
+| 27 | Regional-Physical-AI-Arcs | en: "Institutions of a Polis", "The seven poleis maintain a defensive and trade league" / ko: "폴리스의 제도", "7개 폴리스는 방위·무역 연맹을 유지한다" | the League (Symmachía, 연맹) structure and unanimity rule are provisional |
+| 28 | Regional-Physical-AI-Arcs | en: "The Free Cities: Seven Poleis", "the word they wanted: polis" / ko: "자유도시: 일곱 폴리스", "원하는 단어를 찾았다. 폴리스" | the narrative of engineers finding the word 'polis' in salvaged records is provisional |
+| 29 | Regional-Physical-AI-Arcs | en: "The Government: A Republic of Ledgers", "The title is Senator" / ko: "정부: 장부의 공화국", "칭호는 상원의원" | Government description as "republic of ledgers" with Holy Roman elector analogy is a provisional narrative framing; Senator title is approved |
